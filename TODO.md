@@ -2,6 +2,31 @@ TODO
 ====
 
 
+## Automation
+
+#### package.json
+
+1. Populate individual module contributors automatically by extracting author info from `git` commits?
+    -   main author could be populated based on highest number of commits? most changes? responsible for most lines of code?
+        -   most lines of code may be best heuristic as likely that the author is thus most knowledgeable/owns the most code
+        -   over time the main author could change...is this a problem?
+2. populate scripts similarly for all modules
+3. augment `keywords` with universal project `keywords`
+4. can add `testling` config, if needed
+5. populate git urls based on destination repo
+6. should be able to scan module code to determine dev and main deps and add them to the `package.json` based on what is installed in the main repo
+    -   [dependency-check](https://github.com/maxogden/dependency-check)
+    -   if a dependency is already included in the `package.json`, keep that dependency, thus allowing local override of a dependency
+        -   how will that work in terms of dep install within the context of the larger project?
+7. 
+
+
+#### LICENSE
+
+1. Read `license` field in `package.json` and generate the appropriate license
+2. 
+
+
 
 ## Notes
 
