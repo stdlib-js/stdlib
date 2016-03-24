@@ -2,8 +2,12 @@
 #############
 # VARIABLES #
 
+# Determine the Makefile's path:
+THIS_FILE := $(lastword $(MAKEFILE_LIST))
+
 NPM ?= npm
 NODE_ENV ?= test
+TRAVIS ?= false
 
 KERNEL ?= $(shell uname -s)
 ifeq ($(KERNEL), Darwin)
@@ -31,6 +35,11 @@ ISTANBUL_OUT ?= ./reports/coverage
 ISTANBUL_REPORT ?= lcov
 ISTANBUL_LCOV_INFO_PATH ?= $(ISTANBUL_OUT)/lcov.info
 ISTANBUL_HTML_REPORT_PATH ?= $(ISTANBUL_OUT)/lcov-report/index.html
+
+
+# CODECOV #
+
+CODECOV ?= ./node_modules/.bin/codecov
 
 
 # BROWSERIFY #
@@ -97,15 +106,49 @@ notes:
 
 # UNIT TESTS #
 
-.PHONY: test test-tape
+.PHONY: test test-local test-tape
 
-test: test-tape
+test:
+ifeq ($(TRAVIS), true)
+	@$(MAKE) -f $(THIS_FILE) test-ci
+else
+	@$(MAKE) -f $(THIS_FILE) test-local
+endif
+
+test-local: test-tape
 
 test-tape: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(TAPE) \
 		"$(TESTS)" \
+	| $(TAP_REPORTER)
+
+
+
+# BROWSER TESTS #
+
+.PHONY: test-browsers test-testling view-browser-tests view-testling
+
+test-browsers: test-testling
+
+test-testling: node_modules
+	NODE_ENV=$(NODE_ENV) \
+	NODE_PATH=$(NODE_PATH_TEST) \
+	$(BROWSERIFY) \
+		$(TESTS) \
+	| $(TESTLING) \
+	| $(TAP_REPORTER)
+
+view-browser-tests: view-testling
+
+view-testling: node_modules
+	NODE_ENV=$(NODE_ENV) \
+	NODE_PATH=$(NODE_PATH_TEST) \
+	$(BROWSERIFY) \
+		$(TESTS) \
+	| $(TESTLING) \
+		--x $(OPEN) \
 	| $(TAP_REPORTER)
 
 
@@ -139,30 +182,20 @@ view-istanbul-report:
 
 
 
-# BROWSER TESTS #
+# CONTINUOUS INTEGRATION #
 
-.PHONY: test-browsers test-testling view-browser-tests view-testling
+.PHONY: test-ci test-ci-browsers
+.PHONY: coverage coverage-codecov
 
-test-browsers: test-testling
+test-ci: test-local test-ci-browsers
 
-test-testling: node_modules
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(BROWSERIFY) \
-		$(TESTS) \
-	| $(TESTLING) \
-	| $(TAP_REPORTER)
+test-ci-browsers: node_modules
+	xvfb-run @$(MAKE) -f $(THIS_FILE) test-browsers
 
-view-browser-tests: view-testling
+coverage: coverage-codecov
 
-view-testling: node_modules
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(BROWSERIFY) \
-		$(TESTS) \
-	| $(TESTLING) \
-		--x $(OPEN) \
-	| $(TAP_REPORTER)
+coverage-codecov: test-cov
+	cat $(ISTANBUL_LCOV_INFO_PATH) | $(CODECOV)
 
 
 
