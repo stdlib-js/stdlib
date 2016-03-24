@@ -190,7 +190,7 @@ view-istanbul-report:
 test-ci: test-local test-ci-browsers
 
 test-ci-browsers: node_modules
-	xvfb-run @$(MAKE) -f $(THIS_FILE) test-browsers
+	xvfb-run make -f $(THIS_FILE) test-browsers
 
 coverage: coverage-codecov
 
