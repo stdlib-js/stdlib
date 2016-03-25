@@ -64,8 +64,8 @@ JSHINT_REPORTER ?= ./node_modules/jshint-stylish
 
 SOURCEDIR ?= ./lib/node_modules
 SOURCES ?= $(shell find $(SOURCEDIR) \( -name '*.js' \) -and \! \( -name 'test*.js' \))
-TESTS ?= $(shell find $(SOURCEDIR) -name 'test*.js')
-
+#TESTS ?= $(shell find $(SOURCEDIR) -name 'test*.js')
+TESTS ?= $(SOURCEDIR)/**/test*.js
 
 
 ###########
