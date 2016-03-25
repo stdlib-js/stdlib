@@ -60,16 +60,16 @@ JSHINT ?= ./node_modules/.bin/jshint
 JSHINT_REPORTER ?= ./node_modules/jshint-stylish
 
 
-
 # FILES #
 
 SOURCEDIR ?= ./lib/node_modules
+TESTDIR ?= ./test
 
 SOURCES_LIST ?= $(shell find $(SOURCEDIR) \( -name '*.js' \) -and \! \( -name 'test*.js' \))
 
 TESTS_FILTER ?= **
 TESTS ?= $(SOURCEDIR)/**/$(TESTS_FILTER)/**/test*.js
-TESTS_LIST ?= $(shell find $(SOURCEDIR) -name 'test*.js')
+TESTS_LIST ?= $(shell find $(SOURCEDIR) $(TESTDIR) -name 'test*.js')
 
 
 
@@ -100,14 +100,12 @@ help:
 	@echo ''
 
 
-
 # NOTES #
 
 .PHONY: notes
 
 notes:
 	grep -Ern $(NOTES) $(SOURCEDIR)
-
 
 
 # UNIT TESTS #
@@ -138,7 +136,6 @@ test-summary: node_modules
 	| $(TAP_SUMMARY)
 
 
-
 # BROWSER TESTS #
 
 .PHONY: test-browsers test-testling view-browser-tests view-testling
@@ -165,7 +162,6 @@ view-testling: node_modules
 	| $(TAP_REPORTER)
 
 
-
 # CODE COVERAGE #
 
 .PHONY: test-cov test-istanbul-tape
@@ -183,7 +179,6 @@ test-istanbul-tape: node_modules
 		"$(TESTS)"
 
 
-
 # COVERAGE REPORT #
 
 .PHONY: view-cov view-istanbul-report
@@ -192,7 +187,6 @@ view-cov: view-istanbul-report
 
 view-istanbul-report:
 	$(OPEN) $(ISTANBUL_HTML_REPORT_PATH)
-
 
 
 # CONTINUOUS INTEGRATION #
@@ -212,7 +206,6 @@ coverage-codecov: test-cov
 	cat $(ISTANBUL_LCOV_INFO_PATH) | $(CODECOV)
 
 
-
 # LINT #
 
 .PHONY: lint lint-jshint
@@ -225,7 +218,6 @@ lint-jshint: node_modules
 		./
 
 
-
 # NODE #
 
 .PHONY: install clean-node
@@ -235,7 +227,6 @@ install: package.json
 
 clean-node:
 	rm -rf node_modules
-
 
 
 # CLEAN #
