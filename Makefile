@@ -63,9 +63,11 @@ JSHINT_REPORTER ?= ./node_modules/jshint-stylish
 # FILES #
 
 SOURCEDIR ?= ./lib/node_modules
-SOURCES ?= $(shell find $(SOURCEDIR) \( -name '*.js' \) -and \! \( -name 'test*.js' \))
-#TESTS ?= $(shell find $(SOURCEDIR) -name 'test*.js')
+
+SOURCES_LIST ?= $(shell find $(SOURCEDIR) \( -name '*.js' \) -and \! \( -name 'test*.js' \))
+
 TESTS ?= $(SOURCEDIR)/**/test*.js
+TESTS_LIST ?= $(shell find $(SOURCEDIR) -name 'test*.js')
 
 
 ###########
@@ -100,7 +102,7 @@ help:
 .PHONY: notes
 
 notes:
-	grep -Ern $(NOTES) $(SOURCES) $(TESTS)
+	grep -Ern $(NOTES) $(SOURCEDIR)
 
 
 
@@ -136,7 +138,7 @@ test-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
-		$(TESTS) \
+		$(TESTS_LIST) \
 	| $(TESTLING) \
 	| $(TAP_REPORTER)
 
@@ -146,7 +148,7 @@ view-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
-		$(TESTS) \
+		$(TESTS_LIST) \
 	| $(TESTLING) \
 		--x $(OPEN) \
 	| $(TAP_REPORTER)
