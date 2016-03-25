@@ -1,6 +1,10 @@
 TODO
 ====
 
+1. Replace `jshint` with `eslint`
+2. add tap consumer to only show test failures
+3. 
+
 
 ---
 ## Automation

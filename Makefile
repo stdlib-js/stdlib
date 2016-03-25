@@ -197,6 +197,7 @@ test-ci-browsers: node_modules
 coverage: coverage-codecov
 
 coverage-codecov: test-cov
+	$(NPM) install codecov
 	cat $(ISTANBUL_LCOV_INFO_PATH) | $(CODECOV)
 
 
