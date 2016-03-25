@@ -7,6 +7,7 @@ THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
 NPM ?= npm
 NODE_ENV ?= test
+NODE_MODULES ?= ./node_modules
 TRAVIS ?= false
 
 KERNEL ?= $(shell uname -s)
@@ -24,15 +25,16 @@ NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE'
 
 # TAPE #
 
-TAPE ?= ./node_modules/.bin/tape
-TAP_REPORTER ?=  ./node_modules/.bin/tap-spec
-TAP_SUMMARY ?= ./node_modules/.bin/tap-summary
+TAPE ?= $(NODE_MODULES)/.bin/tape
+TAP_REPORTER ?=  $(NODE_MODULES)/.bin/tap-spec
+TAP_SUMMARY ?= $(NODE_MODULES)/.bin/tap-summary
 
 
 # ISTANBUL #
 
-ISTANBUL ?= ./node_modules/.bin/istanbul
-ISTANBUL_OUT ?= ./reports/coverage
+REPORTS_DIR ?= ./reports
+ISTANBUL ?= $(NODE_MODULES)/.bin/istanbul
+ISTANBUL_OUT ?= $(REPORTS_DIR)/coverage
 ISTANBUL_REPORT ?= lcov
 ISTANBUL_LCOV_INFO_PATH ?= $(ISTANBUL_OUT)/lcov.info
 ISTANBUL_HTML_REPORT_PATH ?= $(ISTANBUL_OUT)/lcov-report/index.html
@@ -40,36 +42,38 @@ ISTANBUL_HTML_REPORT_PATH ?= $(ISTANBUL_OUT)/lcov-report/index.html
 
 # CODECOV #
 
-CODECOV ?= ./node_modules/.bin/codecov
+CODECOV ?= $(NODE_MODULES)/.bin/codecov
 
 
 # BROWSERIFY #
 
-BROWSERIFY ?= ./node_modules/.bin/browserify
+BROWSERIFY ?= $(NODE_MODULES)/.bin/browserify
 
 
 # TESTLING #
 
-TESTLING ?= ./node_modules/.bin/testling
+TESTLING ?= $(NODE_MODULES)/.bin/testling
 TESTLING_DIR ?= ./
 
 
 # JSHINT #
 
-JSHINT ?= ./node_modules/.bin/jshint
-JSHINT_REPORTER ?= ./node_modules/jshint-stylish
+JSHINT ?= $(NODE_MODULES)/.bin/jshint
+JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
 
 # FILES #
 
-SOURCEDIR ?= ./lib/node_modules
-TESTDIR ?= ./test
+SOURCE_DIR ?= .
 
-SOURCES_LIST ?= $(shell find $(SOURCEDIR) \( -name '*.js' \) -and \! \( -name 'test*.js' \))
+SOURCES ?= $(shell find . -name '*.js' -not -name 'test*.js' -not -path './node_modules/*' -not -path "$(REPORTS_DIR)/*")
 
 TESTS_FILTER ?= **
-TESTS ?= $(SOURCEDIR)/**/$(TESTS_FILTER)/**/test*.js
-TESTS_LIST ?= $(shell find $(SOURCEDIR) $(TESTDIR) -name 'test*.js')
+ifeq ($(TESTS_FILTER), **)
+	TESTS ?= $(shell find $(SOURCE_DIR) -name 'test*.js' -not -path "$(NODE_MODULES)/*")
+else
+	TESTS ?= $(shell find $(SOURCE_DIR) -name 'test*.js' -path "$(SOURCE_DIR)/**/$(TESTS_FILTER)/**" -not -path "$(NODE_MODULES)/*")
+endif
 
 
 
@@ -105,7 +109,7 @@ help:
 .PHONY: notes
 
 notes:
-	grep -Ern $(NOTES) $(SOURCEDIR)
+	grep -Ern $(NOTES) $(SOURCE_DIR) --exclude-dir "$(NODE_MODULES)/*" --exclude $(THIS_FILE) --exclude './.*' --exclude TODO.md
 
 
 # UNIT TESTS #
@@ -125,14 +129,14 @@ test-tape: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(TAPE) \
-		"$(TESTS)" \
+		$(TESTS) \
 	| $(TAP_REPORTER)
 
 test-summary: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(TAPE) \
-		"$(TESTS)" \
+		$(TESTS) \
 	| $(TAP_SUMMARY)
 
 
@@ -146,7 +150,7 @@ test-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
-		$(TESTS_LIST) \
+		$(TESTS) \
 	| $(TESTLING) \
 	| $(TAP_REPORTER)
 
@@ -156,7 +160,7 @@ view-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
-		$(TESTS_LIST) \
+		$(TESTS) \
 	| $(TESTLING) \
 		--x $(OPEN) \
 	| $(TAP_REPORTER)
@@ -169,14 +173,19 @@ view-testling: node_modules
 test-cov: test-istanbul-tape
 
 test-istanbul-tape: node_modules
+	@echo $(TESTS)
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(ISTANBUL) cover \
-		--root $(SOURCEDIR) \
+		--no-default-excludes \
+		-x 'node_modules/**' \
+		-x '**/test/**' \
+		-x '**/tests/**' \
+		-x 'reports/**' \
 		--dir $(ISTANBUL_OUT) \
 		--report $(ISTANBUL_REPORT) \
 	$(TAPE) -- \
-		"$(TESTS)"
+		$(TESTS)
 
 
 # COVERAGE REPORT #
@@ -226,7 +235,7 @@ install: package.json
 	$(NPM) install
 
 clean-node:
-	rm -rf node_modules
+	rm -rf $(NODE_MODULES)
 
 
 # CLEAN #
