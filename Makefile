@@ -26,6 +26,7 @@ NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE'
 
 TAPE ?= ./node_modules/.bin/tape
 TAP_REPORTER ?=  ./node_modules/.bin/tap-spec
+TAP_SUMMARY ?= ./node_modules/.bin/tap-summary
 
 
 # ISTANBUL #
@@ -85,6 +86,7 @@ help:
 	@echo '  make help                Print this message.'
 	@echo '  make notes               Search for code annotations.'
 	@echo '  make test                Run tests.'
+	@echo '  make test-summary        Run tests and output a test summary.'
 	@echo '  make test-cov            Run tests with code coverage.'
 	@echo '  make test-browsers       Run tests in a local web browser.'
 	@echo '  make view-cov            View the most recent code coverage report.'
@@ -108,7 +110,7 @@ notes:
 
 # UNIT TESTS #
 
-.PHONY: test test-local test-tape
+.PHONY: test test-local test-tape test-summary
 
 test:
 ifeq ($(TRAVIS), true)
@@ -125,6 +127,13 @@ test-tape: node_modules
 	$(TAPE) \
 		"$(TESTS)" \
 	| $(TAP_REPORTER)
+
+test-summary: node_modules
+	NODE_ENV=$(NODE_ENV) \
+	NODE_PATH=$(NODE_PATH_TEST) \
+	$(TAPE) \
+		"$(TESTS)" \
+	| $(TAP_SUMMARY)
 
 
 
