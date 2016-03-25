@@ -67,8 +67,10 @@ SOURCEDIR ?= ./lib/node_modules
 
 SOURCES_LIST ?= $(shell find $(SOURCEDIR) \( -name '*.js' \) -and \! \( -name 'test*.js' \))
 
-TESTS ?= $(SOURCEDIR)/**/test*.js
+TESTS_FILTER ?= **
+TESTS ?= $(SOURCEDIR)/**/$(TESTS_FILTER)/**/test*.js
 TESTS_LIST ?= $(shell find $(SOURCEDIR) -name 'test*.js')
+
 
 
 ###########
