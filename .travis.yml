@@ -11,5 +11,6 @@ node_js:
 before_install:
   - npm update -g npm
 after_script:
+  - npm install codecov
   - npm run coverage
 
