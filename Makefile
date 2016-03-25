@@ -173,7 +173,6 @@ view-testling: node_modules
 test-cov: test-istanbul-tape
 
 test-istanbul-tape: node_modules
-	@echo $(TESTS)
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(ISTANBUL) cover \
