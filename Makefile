@@ -1,3 +1,23 @@
+.PHONY: help
+
+help:
+	@echo ''
+	@echo 'Usage: make <cmd>'
+	@echo ''
+	@echo '  make help                Print this message.'
+	@echo '  make notes               Search for code annotations.'
+	@echo '  make test                Run tests.'
+	@echo '  make test-summary        Run tests and output a test summary.'
+	@echo '  make test-cov            Run tests with code coverage.'
+	@echo '  make test-browsers       Run tests in a local web browser.'
+	@echo '  make view-cov            View the most recent code coverage report.'
+	@echo '  make view-browser-tests  View browser tests in a local web browser.'
+	@echo '  make lint                Run code linting.'
+	@echo '  make install             Install dependencies.'
+	@echo '  make clean               Clean the build directory.'
+	@echo '  make clean-node          Remove Node dependencies.'
+	@echo ''
+
 
 #############
 # VARIABLES #
@@ -79,29 +99,6 @@ endif
 
 ###########
 # TARGETS #
-
-
-# HELP #
-
-.PHONY: help
-
-help:
-	@echo ''
-	@echo 'Usage: make <cmd>'
-	@echo ''
-	@echo '  make help                Print this message.'
-	@echo '  make notes               Search for code annotations.'
-	@echo '  make test                Run tests.'
-	@echo '  make test-summary        Run tests and output a test summary.'
-	@echo '  make test-cov            Run tests with code coverage.'
-	@echo '  make test-browsers       Run tests in a local web browser.'
-	@echo '  make view-cov            View the most recent code coverage report.'
-	@echo '  make view-browser-tests  View browser tests in a local web browser.'
-	@echo '  make lint                Run code linting.'
-	@echo '  make install             Install dependencies.'
-	@echo '  make clean               Clean the build directory.'
-	@echo '  make clean-node          Remove Node dependencies.'
-	@echo ''
 
 
 # NOTES #
