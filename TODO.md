@@ -2,6 +2,7 @@ TODO
 ====
 
 
+---
 ## Automation
 
 #### package.json
@@ -28,6 +29,7 @@ TODO
 
 
 
+---
 ## Notes
 
 1. Ideal vs reality
@@ -37,9 +39,10 @@ TODO
         -   @stdmath/generics-special-erf
 2. Under the @stdlib scope...
     -   @stdlib/math-base-special-erf
-    -   @stdlib/math-base-utils-float64-to-binary-string
+    -   @stdlib/math-base-core-float64-to-binary-string
 
 
+---
 ## Project Structure
 > Sample project structure.
 
