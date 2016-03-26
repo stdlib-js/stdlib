@@ -12,7 +12,10 @@ TODO
     -   e.g., `@stdlib/math/base/constants/float64-two-pi`
 4. more extensive tests for `ln`
     -   test against Julia
-5. 
+5. determine a browser testing strategy
+    -   could run into memory issues if all numeric tests are run for all functions, etc.
+    -   one possibility is to loop through all files and run each individually (browserify, testling, and repeat)
+6. 
 
 
 ---
