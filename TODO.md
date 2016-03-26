@@ -15,7 +15,11 @@ TODO
 5. determine a browser testing strategy
     -   could run into memory issues if all numeric tests are run for all functions, etc.
     -   one possibility is to loop through all files and run each individually (browserify, testling, and repeat)
-6. 
+6. std polyfills?
+    -   object-keys
+    -   typed-array
+    -   ...
+7. 
 
 
 ---

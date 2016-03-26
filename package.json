@@ -29,6 +29,7 @@
     "istanbul": "^0.4.1",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
+    "proxyquire": "^1.7.4",
     "tap-spec": "4.x.x",
     "tap-summary": "1.x.x",
     "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
