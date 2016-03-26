@@ -21,7 +21,9 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "object-keys": "^1.0.9"
+  },
   "devDependencies": {
     "browserify": "13.x.x",
     "istanbul": "^0.4.1",
