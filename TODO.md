@@ -22,7 +22,9 @@ TODO
 7. how to handle modules with CLIs?
 8. how to handle browser tests for non-browser fcns
     -   e.g., `fs` functions like `fs/exists`
-9. 
+9. migrate JSDoc
+    -   also, use `dox` or `mrdocs` or...
+10. 
 
 
 ---
