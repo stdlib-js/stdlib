@@ -19,7 +19,10 @@ TODO
     -   object-keys
     -   typed-array
     -   ...
-7. 
+7. how to handle modules with CLIs?
+8. how to handle browser tests for non-browser fcns
+    -   e.g., `fs` functions like `fs/exists`
+9. 
 
 
 ---

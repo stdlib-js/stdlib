@@ -68,6 +68,7 @@ CODECOV ?= $(NODE_MODULES)/.bin/codecov
 # BROWSERIFY #
 
 BROWSERIFY ?= $(NODE_MODULES)/.bin/browserify
+BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
 
 
 # TESTLING #
@@ -147,6 +148,7 @@ test-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
+		-p $(BROWSERIFY_PROXYQUIRE) \
 		$(TESTS) \
 	| $(TESTLING) \
 	| $(TAP_REPORTER)
@@ -157,6 +159,7 @@ view-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
+		-p $(BROWSERIFY_PROXYQUIRE) \
 		$(TESTS) \
 	| $(TESTLING) \
 		--x $(OPEN) \
