@@ -29,7 +29,7 @@
     "jshint-stylish": "2.x.x",
     "tap-spec": "4.x.x",
     "tap-summary": "1.x.x",
-    "tape": "4.x.x",
+    "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
     "testling": "1.x.x"
   },
   "testling": {
