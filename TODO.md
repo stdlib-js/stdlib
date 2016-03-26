@@ -2,11 +2,15 @@ TODO
 ====
 
 1. Replace `jshint` with `eslint`
+    -   add to test command
+    -   support reformatting ala `go fmt`
 2. ability to run tests in an arbitrary directory
     -   will prob want the ability to run tests both from the top-level lib directory, as well as if the `cwd` is otherwise
         -   may be tricky to do if in some mid-level directory
         -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
-3. 
+3. determine how to handle internal `@stdlib` links in READMEs
+    -   e.g., `@stdlib/math/base/constants/float64-two-pi`
+4. 
 
 
 ---
