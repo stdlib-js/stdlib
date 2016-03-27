@@ -28,7 +28,7 @@ TODO
 9. migrate JSDoc
     -   also, use `dox` or `mrdocs` or...
 10. add a CLI to `fs/exists`
-11. 
+11. Replace `compute-roundn` reference in `linspace`.
 
 
 ---
