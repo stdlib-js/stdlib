@@ -1,6 +1,9 @@
 TODO
 ====
 
+0. Once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
+    -   all PRs, etc, should be made against `develop`
+    -   create `issue` and `PR` templates (`.github`)
 1. Replace `jshint` with `eslint`
     -   add to test command
     -   support reformatting ala `go fmt`
@@ -24,7 +27,21 @@ TODO
     -   e.g., `fs` functions like `fs/exists`
 9. migrate JSDoc
     -   also, use `dox` or `mrdocs` or...
-10. 
+10. add a CLI to `fs/exists`
+11. 
+
+
+---
+## Ideas
+
+1. when testing numeric code, would be interesting to test against multiple platforms (ala test fixtures); e.g., Julia, Python, R, Go, Boost, etc.
+    -   ability to run against multiple versions of alternative platforms
+    -   compare results for each alternative platform version
+        -   would allow flagging regressions or improvements in the implementations of other platforms
+    -   would be part of a comprehensive CI before publishing
+        -   suppose could also be done at the individual module level during separation
+    -   generate plots showing results across all platforms
+2. 
 
 
 ---
