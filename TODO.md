@@ -29,6 +29,8 @@ TODO
     -   also, use `dox` or `mrdocs` or...
 10. add a CLI to `fs/exists`
 11. Replace `compute-roundn` reference in `linspace`.
+12. determine strategy for generic validation fcns
+13. 
 
 
 ---
