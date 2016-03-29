@@ -30,7 +30,8 @@ TODO
 10. add a CLI to `fs/exists`
 11. Replace `compute-roundn` reference in `linspace`.
 12. determine strategy for generic validation fcns
-13. 
+13. `roundn` should guard against underflow and overflow!
+14. 
 
 
 ---
