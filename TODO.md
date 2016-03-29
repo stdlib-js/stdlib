@@ -12,7 +12,7 @@ TODO
         -   may be tricky to do if in some mid-level directory
         -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
 3. determine how to handle internal `@stdlib` links in READMEs
-    -   e.g., `@stdlib/math/base/constants/float64-two-pi`
+    -   e.g., `@stdlib/math/constants/float64-two-pi`
 4. more extensive tests for `ln`
     -   test against Julia
 5. determine a browser testing strategy
