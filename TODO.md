@@ -28,7 +28,9 @@ TODO
 9. migrate JSDoc
     -   also, use `dox` or `mrdocs` or...
 10. add a CLI to `fs/exists`
-11. Replace `compute-roundn` reference in `linspace`.
+11. Replace internal module references:
+	-`compute-roundn` reference in `linspace`.
+	-`compute-linspace` and `compute-roundn` references in `incrspace`.
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
 14. 
@@ -44,7 +46,7 @@ TODO
     -   would be part of a comprehensive CI before publishing
         -   suppose could also be done at the individual module level during separation
     -   generate plots showing results across all platforms
-2. 
+2.
 
 
 ---
@@ -64,13 +66,13 @@ TODO
     -   [dependency-check](https://github.com/maxogden/dependency-check)
     -   if a dependency is already included in the `package.json`, keep that dependency, thus allowing local override of a dependency
         -   how will that work in terms of dep install within the context of the larger project?
-7. 
+7.
 
 
 #### LICENSE
 
 1. Read `license` field in `package.json` and generate the appropriate license
-2. 
+2.
 
 
 
