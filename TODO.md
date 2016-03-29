@@ -46,7 +46,9 @@ TODO
     -   would be part of a comprehensive CI before publishing
         -   suppose could also be done at the individual module level during separation
     -   generate plots showing results across all platforms
-2.
+2. a tool which reports which paths are __not__ imported by a file
+    -   use case is ensuring that modules which should be exported by an aggregate file are exported
+3. 
 
 
 ---
