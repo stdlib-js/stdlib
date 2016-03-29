@@ -107,7 +107,7 @@ endif
 .PHONY: notes
 
 notes:
-	grep -Ern $(NOTES) $(SOURCE_DIR) --exclude-dir "$(NODE_MODULES)/*" --exclude $(THIS_FILE) --exclude './.*' --exclude TODO.md
+	grep -Ern $(NOTES) $(SOURCE_DIR) --exclude-dir "$(NODE_MODULES)/*" --exclude $(THIS_FILE) --exclude './.*' --exclude './reports/*' --exclude TODO.md
 
 
 # UNIT TESTS #
