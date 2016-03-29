@@ -32,7 +32,8 @@ TODO
 	-`compute-roundn` reference in `linspace`.
 	-`compute-linspace` and `compute-roundn` references in `incrspace`.
 12. determine strategy for generic validation fcns
-13.
+13. `roundn` should guard against underflow and overflow!
+14. 
 
 
 ---
