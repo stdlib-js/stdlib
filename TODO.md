@@ -33,7 +33,19 @@ TODO
 	-`compute-linspace` and `compute-roundn` references in `incrspace`.
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
-14. 
+14. roll our own `type-name`
+    -   update `type-of`, no need for separate module
+    -   see
+        - `type-name`
+        - [`component/type`](https://github.com/component/type/blob/master/index.js)
+        - [`fn-type`](https://github.com/Kikobeats/fn-type)
+15. export regexps?
+16. another name for `specification-class`?
+    -   `built-in-internal-class`
+    -   `internal-class`
+    -   `spec-class`
+17. should `utils/function-name` support generator functions?
+18. 
 
 
 ---
