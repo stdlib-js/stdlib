@@ -22,8 +22,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "object-keys": "^1.0.9",
-    "type-name": "^2.0.1"
+    "object-keys": "^1.0.9"
   },
   "devDependencies": {
     "browserify": "13.x.x",
