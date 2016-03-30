@@ -45,7 +45,9 @@ TODO
     -   `internal-class`
     -   `spec-class`
 17. should `utils/function-name` support generator functions?
-18. 
+18. Replace require statements of outside compute modules:
+	- `dstructs-matrix` in `is-matrix` and `is-matrix-like`
+19. 
 
 
 ---
@@ -60,7 +62,7 @@ TODO
     -   generate plots showing results across all platforms
 2. a tool which reports which paths are __not__ imported by a file
     -   use case is ensuring that modules which should be exported by an aggregate file are exported
-3. 
+3.
 
 
 ---
