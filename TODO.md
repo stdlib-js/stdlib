@@ -33,7 +33,8 @@ TODO
 	-`compute-linspace` and `compute-roundn` references in `incrspace`.
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
-14. 
+14.  Replace require statements of outside compute modules:
+	- `dstructs-matrix` in `is-matrix` and `is-matrix-like`
 
 
 ---
@@ -48,7 +49,7 @@ TODO
     -   generate plots showing results across all platforms
 2. a tool which reports which paths are __not__ imported by a file
     -   use case is ensuring that modules which should be exported by an aggregate file are exported
-3. 
+3.
 
 
 ---
