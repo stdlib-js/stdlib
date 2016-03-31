@@ -43,6 +43,7 @@ TODO
     -   `built-in-internal-class`
     -   `internal-class`
     -   `spec-class`
+    -   `ecma-class`
 17. should `utils/function-name` support generator functions?
 18. replace `require` statements of external compute modules
 19. port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
