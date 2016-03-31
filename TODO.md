@@ -48,7 +48,7 @@ TODO
 17. should `utils/function-name` support generator functions?
 18. Replace require statements of outside compute modules:
 	- `dstructs-matrix` in `is-matrix` and `is-matrix-like`
-19.
+19. Port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
 
 
 ---
