@@ -1,10 +1,10 @@
 TODO
 ====
 
-0. Once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
+0. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
     -   all PRs, etc, should be made against `develop`
     -   create `issue` and `PR` templates (`.github`)
-1. Replace `jshint` with `eslint`
+1. replace `jshint` with `eslint`
     -   add to test command
     -   support reformatting ala `go fmt`
 2. ability to run tests in an arbitrary directory
@@ -44,9 +44,10 @@ TODO
     -   `internal-class`
     -   `spec-class`
 17. should `utils/function-name` support generator functions?
-18. Replace require statements of outside compute modules:
-	- `dstructs-matrix` in `is-matrix` and `is-matrix-like`
-19. Port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
+18. replace `require` statements of external compute modules
+19. port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
+20. test framework for module CLIs
+21. 
 
 
 ---
