@@ -13,6 +13,7 @@ TODO
         -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
 3. determine how to handle internal `@stdlib` links in READMEs
     -   e.g., `@stdlib/math/constants/float64-two-pi`
+    -   replace internal module references
 4. more extensive tests for `ln`, `sqrt`, etc
     -   test against Julia
 5. determine a browser testing strategy
@@ -28,10 +29,7 @@ TODO
 9. migrate JSDoc
     -   also, use `dox` or `mrdocs` or...
 10. add a CLI to `fs/exists`
-11. Replace internal module references:
-	-`compute-roundn` reference in `linspace`.
-	-`compute-linspace` and `compute-roundn` references in `incrspace`.
-	-`const-pi` and `math-cos` references in `cospi`.
+11. 
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
 14. roll our own `type-name`
