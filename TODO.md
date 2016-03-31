@@ -31,6 +31,7 @@ TODO
 11. Replace internal module references:
 	-`compute-roundn` reference in `linspace`.
 	-`compute-linspace` and `compute-roundn` references in `incrspace`.
+	-`const-pi` and `math-cos` references in `cospi`.
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
 14. roll our own `type-name`
@@ -47,7 +48,7 @@ TODO
 17. should `utils/function-name` support generator functions?
 18. Replace require statements of outside compute modules:
 	- `dstructs-matrix` in `is-matrix` and `is-matrix-like`
-19. 
+19.
 
 
 ---
