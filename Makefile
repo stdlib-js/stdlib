@@ -105,7 +105,7 @@ ifeq ($(KERNEL), Darwin)
 		-name '*.js' \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name 'test*.js' \
-		-not -path './node_modules/*' \
+		-not -path '$(NODE_MODULES)/*' \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
@@ -128,7 +128,7 @@ else
 		-regextype posix-extended \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name 'test*.js' \
-		-not -path './node_modules/*' \
+		-not -path '$(NODE_MODULES)/*' \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
