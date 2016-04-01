@@ -164,7 +164,7 @@ notes:
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude $(THIS_FILE) \
 		--exclude './.*' \
-		--exclude './reports/*' \
+		--exclude '$(REPORTS_DIR)/*' \
 		--exclude TODO.md
 
 
