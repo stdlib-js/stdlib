@@ -101,17 +101,52 @@ EXAMPLES_FILTER ?= .*/.*
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
 ifeq ($(KERNEL), Darwin)
-	SOURCES ?= $(shell find -E $(SOURCE_DIR) -name '*.js' -regex "$(SOURCES_FILTER)" -not -name 'test*.js' -not -path './node_modules/*' -not -path "**/$(EXAMPLES_DIR)/*" -not -path "$(REPORTS_DIR)/*")
+	SOURCES ?= $(shell find -E $(SOURCE_DIR) \
+		-name '*.js' \
+		-regex "$(SOURCES_FILTER)" \
+		-not -name 'test*.js' \
+		-not -path './node_modules/*' \
+		-not -path "**/$(EXAMPLES_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
+	)
 
-	TESTS ?= $(shell find -E $(SOURCE_DIR) -name 'test*.js' -regex "$(TESTS_FILTER)" -not -path "$(NODE_MODULES)/*")
+	TESTS ?= $(shell find -E $(SOURCE_DIR) \
+		-name 'test*.js' \
+		-regex "$(TESTS_FILTER)" \
+		-not -path "$(NODE_MODULES)/*" \
+	)
 
-	EXAMPLES ?= $(shell find -E $(SOURCE_DIR) -name '*.js' -path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" -regex "$(EXAMPLES_FILTER)" -not -path "$(NODE_MODULES)/*")
+	EXAMPLES ?= $(shell find -E $(SOURCE_DIR) \
+		-name '*.js' \
+		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
+		-regex "$(EXAMPLES_FILTER)" \
+		-not -path "$(NODE_MODULES)/*" \
+	)
 else
-	SOURCES ?= $(shell find $(SOURCE_DIR) -name '*.js' -regextype posix-extended -regex "$(SOURCES_FILTER)" -not -name 'test*.js' -not -path './node_modules/*' -not -path "**/$(EXAMPLES_DIR)/*" -not -path "$(REPORTS_DIR)/*")
+	SOURCES ?= $(shell find $(SOURCE_DIR) \
+		-name '*.js' \
+		-regextype posix-extended \
+		-regex "$(SOURCES_FILTER)" \
+		-not -name 'test*.js' \
+		-not -path './node_modules/*' \
+		-not -path "**/$(EXAMPLES_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
+	)
 
-	TESTS ?= $(shell find $(SOURCE_DIR) -name 'test*.js' -regextype posix-extended -regex "$(TESTS_FILTER)" -not -path "$(NODE_MODULES)/*")
+	TESTS ?= $(shell find $(SOURCE_DIR) \
+		-name 'test*.js' \
+		-regextype posix-extended \
+		-regex "$(TESTS_FILTER)" \
+		-not -path "$(NODE_MODULES)/*" \
+	)
 
-	EXAMPLES ?= $(shell find $(SOURCE_DIR) -name '*.js' -path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" -regextype posix-extended -regex "$(EXAMPLES_FILTER)" -not -path "$(NODE_MODULES)/*")
+	EXAMPLES ?= $(shell find $(SOURCE_DIR) \
+		-name '*.js' \
+		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
+		-regextype posix-extended \
+		-regex "$(EXAMPLES_FILTER)" \
+		-not -path "$(NODE_MODULES)/*" \
+	)
 endif
 
 
