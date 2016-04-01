@@ -190,7 +190,7 @@ examples: node_modules
 	for file in $(EXAMPLES); do \
 		echo ""; \
 		echo "Running example: $$file"; \
-		node $$file; \
+		$(NODE) $$file; \
 	done
 
 
