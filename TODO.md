@@ -47,7 +47,14 @@ TODO
 21. clean-up test runners
     -   `log1p` 
     -   `sinpi`
-22. 
+22. `type-of` should check for `toStringTag` support
+23. update `utils/tools`
+24. generic `is-finite` util should include note about how differs from global `isFinite`
+25. create better examples for constants
+    -   e.g., how and why and in what contexts a constant may be used
+26. Avogadro's number
+27. note that generic `is-nan` must check for `numeric` input, as `symbols` do __not__ equal each other
+28. 
 
 
 ---
@@ -103,6 +110,15 @@ TODO
 2. Under the @stdlib scope...
     -   @stdlib/math-base-special-erf
     -   @stdlib/math-base-core-float64-to-binary-string
+3. References on root `global`
+    -   https://github.com/jashkenas/underscore/blob/master/underscore.js#L14
+    -   https://github.com/lodash/lodash/blob/4.6.1/lodash.js#L369
+    -   https://github.com/Raynos/global/blob/master/window.js
+    -   http://stackoverflow.com/questions/7507638/is-there-a-standard-mechanism-for-detecting-if-a-javascript-is-executing-as-a-we
+    -   https://github.com/substack/insert-module-globals/pull/48
+    -   https://github.com/tc39/proposal-global
+    -   https://github.com/ljharb/System.global
+4. 
 
 
 ---
