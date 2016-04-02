@@ -14,7 +14,7 @@ TODO
 3. determine how to handle internal `@stdlib` links in READMEs
     -   e.g., `@stdlib/math/constants/float64-two-pi`
     -   replace internal module references
-4. more extensive tests for `ln`, `sqrt`, etc
+4. more extensive tests for `ln`, `sqrt`, `cos`, `sin`, `cos`, etc
     -   test against Julia
 5. determine a browser testing strategy
     -   could run into memory issues if all numeric tests are run for all functions, etc.
@@ -39,11 +39,7 @@ TODO
         - [`component/type`](https://github.com/component/type/blob/master/index.js)
         - [`fn-type`](https://github.com/Kikobeats/fn-type)
 15. export regexps?
-16. another name for `specification-class`?
-    -   `built-in-internal-class`
-    -   `internal-class`
-    -   `spec-class`
-    -   `ecma-class`
+16. move `@stdlib/tools` to `@stdlib/utils/tools`
 17. should `utils/function-name` support generator functions?
 18. replace `require` statements of external compute modules
 19. port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
