@@ -43,7 +43,7 @@ TODO
 17. should `utils/function-name` support generator functions?
     -   a separate function?
 18. replace `require` statements of external compute modules
-19. port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
+19. ~~port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work~~
 20. test framework for module CLIs
 21. clean-up test runners
     -   `log1p` 
