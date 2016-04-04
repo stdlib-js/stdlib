@@ -1,9 +1,10 @@
 Resolves # . @stdlib-js/reviewers
 
 #### Checklist
-> Please ensure the following tasks are completed before submitting a pull request.
+> Please ensure the following tasks are completed before submitting this pull request.
 
-* [ ] Filed an issue prior to submitting a pull request.
+* [ ] Searched for existing issues and pull requests __before__ submitting this pull request.
+* [ ] Filed an issue (or an issue already existed) __prior to__ submitting this pull request.
 * [ ] Read, understood, and followed the contributing guidelines, including the style guide.
 * [ ] Read and understood the licensing terms.
 * [ ] Rebased onto latest `develop`.
@@ -13,7 +14,7 @@ Resolves # . @stdlib-js/reviewers
 #### Description
 > What is the purpose of this pull request?
 
-This pull request does the following:
+This pull request:
 *   
 *   
 *   
@@ -22,7 +23,7 @@ This pull request does the following:
 #### Related Issues
 > Does this pull request have any related issues?
 
-This pull request
+This pull request:
 *   resolves 
 
 
