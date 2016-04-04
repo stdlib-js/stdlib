@@ -9,7 +9,7 @@
 ## Description
 > Description of the issue (or feature request).
 
-Encountered the following error when .
+Encountered an error when .
 
 
 ## Related Issues
@@ -39,9 +39,9 @@ For a live demo of the issue, see
 > If this issue is a bug report, what steps are required to reproduce the unexpected output? (If this is a feature request, remove this section.)
 
 In order to reproduce this bug, do the following:
-*
-*
-*
+*   
+*   
+*   
 
 
 #### Expected Results
@@ -69,8 +69,8 @@ The following are the actual results:
 
 The following environments are affected:
 *   
-*
-* 
+*   
+*   
 
 
 
