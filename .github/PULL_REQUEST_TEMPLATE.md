@@ -1,4 +1,4 @@
-Resolves # . @stdlib-js/reviewers
+Resolves # .
 
 #### Checklist
 > Please ensure the following tasks are completed before submitting this pull request.
@@ -25,6 +25,7 @@ This pull request:
 
 This pull request:
 *   resolves 
+*   fixes
 
 
 #### Questions
@@ -37,3 +38,7 @@ No.
 > Any other information relevant to this pull request? This may include screenshots, references, and/or implementation notes.
 
 No.
+
+
+---
+@stdlib-js/reviewers
