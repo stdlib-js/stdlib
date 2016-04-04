@@ -28,6 +28,7 @@ TODO
     -   also, use `dox` or `mrdocs` or...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
+    -   PR template should have link to this and the style guide
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
 14. 
