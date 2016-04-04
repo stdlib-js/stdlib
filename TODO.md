@@ -41,6 +41,7 @@ TODO
 15. export regexps?
 16. move `@stdlib/tools` to `@stdlib/utils/tools`
 17. should `utils/function-name` support generator functions?
+    -   a separate function?
 18. replace `require` statements of external compute modules
 19. port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work
 20. test framework for module CLIs
@@ -54,7 +55,9 @@ TODO
     -   e.g., how and why and in what contexts a constant may be used
 26. Avogadro's number
 27. note that generic `is-nan` must check for `numeric` input, as `symbols` do __not__ equal each other
-28. 
+28. consider splitting `float64-smallest` into `float64-smallest-normal` and `float64-smallest-subnormal`
+    -   current construction is a bit odd when compared to other constants
+29. 
 
 
 ---
