@@ -1,6 +1,6 @@
 Resolves # .
 
-#### Checklist
+## Checklist
 > Please ensure the following tasks are completed before submitting this pull request.
 
 * [ ] Searched for existing issues and pull requests __before__ submitting this pull request.
@@ -11,7 +11,7 @@ Resolves # .
 * [ ] Submitted against `develop` branch.
 
 
-#### Description
+## Description
 > What is the purpose of this pull request?
 
 This pull request:
@@ -20,7 +20,7 @@ This pull request:
 *   
 
 
-#### Related Issues
+## Related Issues
 > Does this pull request have any related issues?
 
 This pull request:
@@ -28,13 +28,13 @@ This pull request:
 *   fixes
 
 
-#### Questions
+## Questions
 > Any questions for reviewers of this pull request?
 
 No.
 
 
-#### Other
+## Other
 > Any other information relevant to this pull request? This may include screenshots, references, and/or implementation notes.
 
 No.
