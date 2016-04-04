@@ -3,11 +3,11 @@ Resolves # . @stdlib-js/reviewers
 #### Checklist
 > Please ensure the following tasks are completed before submitting a pull request.
 
-[ ] Filed an issue prior to submitting a pull request.
-[ ] Read, understood, and followed the contributing guidelines, including the style guide.
-[ ] Read and understood the licensing terms.
-[ ] Rebased onto latest `develop`.
-[ ] Submitted against `develop` branch.
+* [ ] Filed an issue prior to submitting a pull request.
+* [ ] Read, understood, and followed the contributing guidelines, including the style guide.
+* [ ] Read and understood the licensing terms.
+* [ ] Rebased onto latest `develop`.
+* [ ] Submitted against `develop` branch.
 
 
 #### Description
