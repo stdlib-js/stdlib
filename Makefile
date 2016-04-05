@@ -83,6 +83,11 @@ TESTLING ?= $(NODE_MODULES)/.bin/testling
 TESTLING_DIR ?= ./
 
 
+# TRAVIS #
+
+TRAVIS_RUN ?= ./.travis.sh
+
+
 # JSHINT #
 
 JSHINT ?= $(NODE_MODULES)/.bin/jshint
@@ -201,9 +206,7 @@ examples: node_modules
 
 test:
 ifeq ($(TRAVIS), true)
-	# @$(MAKE) -f $(THIS_FILE) test-ci
-	chmod 755 ./.travis.sh
-	./.travis.sh
+	@$(MAKE) -f $(THIS_FILE) test-ci
 else
 	@$(MAKE) -f $(THIS_FILE) test-local
 endif
@@ -289,7 +292,9 @@ view-istanbul-report:
 .PHONY: test-ci test-ci-browsers
 .PHONY: coverage coverage-codecov
 
-test-ci: test-local test-ci-browsers
+test-ci: node_modules
+	chmod 755 $(TRAVIS_RUN)
+	$(TRAVIS_RUN)
 
 test-ci-browsers: node_modules
 	xvfb-run make -f $(THIS_FILE) test-browsers
