@@ -83,7 +83,7 @@ touch $CI_OUT
 start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
-echo 'Running local tests...'
+echo 'Running tests...'
 make test-local >> $CI_OUT 2>&1
 
 echo 'Running coverage...'
