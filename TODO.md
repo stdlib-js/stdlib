@@ -38,7 +38,7 @@ TODO
     -   PR template should have link to this and the style guide
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
-14. 
+14. consider changing `isNumber` to `isNumeric`
 15. export regexps?
 16. 
 17. should `utils/function-name` support generator functions?
