@@ -57,8 +57,9 @@ TODO
     -   e.g., how and why and in what contexts a constant may be used
 26. Avogadro's number
 27. 
-28. consider splitting `float64-smallest` into `float64-smallest-normal` and `float64-smallest-subnormal`
+28. Split `float64-smallest` into `float64-smallest-normal` and `float64-smallest-subnormal`
     -   current construction is a bit odd when compared to other constants
+    -   ditto for `float32-smallest`
 29. 
 
 
