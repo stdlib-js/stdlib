@@ -25,7 +25,14 @@ TODO
 8. how to handle browser tests for non-browser fcns
     -   e.g., `fs` functions like `fs/exists`
 9. migrate JSDoc
-    -   also, use `dox` or `mrdocs` or...
+    -   also, use one of
+        -   [`dox`](https://github.com/tj/dox)
+        -   [`mrdoc`](https://github.com/mr-doc/mr-doc) (aka `doxx`)
+        -   [`docco`](https://github.com/jashkenas/docco)
+        -   [`jsdoc`](https://github.com/jsdoc3/jsdoc)
+        -   [documentation.js](http://documentation.js.org/)
+            -   see [turfjs](https://github.com/Turfjs/turf-www)
+        -   ...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
     -   PR template should have link to this and the style guide
