@@ -1,41 +1,95 @@
 #!/bin/bash
 
-# Abort on Error
+# DESCRIPTION #
+
+# Script to run continuous integration on Travis CI.
+
+
+# VARIABLES #
+
+# Define a heartbeat interval to prevent Travis CI from prematurely ending due to long running commands:
+export HEARTBEAT_INTERVAL=30s
+
+# Define the number of lines of logged output to print upon completion:
+export TAIL_LINES=500
+
+# Get the current working directory:
+export WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Define an output file to store log output:
+export CI_OUT=$WORKING_DIR/ci.log
+
+
+# FUNCTIONS #
+
+# Starts a heartbeat.
+start_heartbeat() {
+	echo 'Starting heartbeat...'
+
+	# Create a heartbeat and send to background:
+	heartbeat &
+
+	# Capture the heartbeat pid:
+	HEARTBEAT_PID=$!
+	echo "Heartbeat pid: $HEARTBEAT_PID"
+}
+
+# Runs an infinite print loop in which output is periodically written to `stdout`.
+heartbeat() {
+	while true; do
+		echo "$(date) - heartbeat...";
+		sleep $HEARTBEAT_INTERVAL;
+	done
+}
+
+# Stops the heartbeat print loop.
+stop_heartbeat() {
+	echo 'Stopping heartbeat...'
+	kill $HEARTBEAT_PID
+}
+
+# Defines an error handler.
+on_error() {
+	echo 'ERROR: An error was encountered during execution.'
+	cleanup
+	exit 1
+}
+
+# Tails the log output.
+tail_output() {
+   echo "Printing the last $TAIL_LINES lines of log output..."
+   tail -$TAIL_LINES $CI_OUT
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	tail_output
+	stop_heartbeat
+}
+
+
+# MAIN #
+
+# Exit immediately if one of the executed commands exits with a non-zero status:
 set -e
 
-export PING_SLEEP=30s
-export WORKDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-export BUILD_OUTPUT=$WORKDIR/build.out
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
 
-touch $BUILD_OUTPUT
+# Create an output log file:
+touch $CI_OUT
 
-dump_output() {
-   echo Tailing the last 500 lines of output:
-   tail -500 $BUILD_OUTPUT
-}
-error_handler() {
-  echo ERROR: An error was encountered with the build.
-  dump_output
-  kill $PING_LOOP_PID
-  exit 1
-}
-# If an error occurs, run our error handler to output a tail of the build
-trap 'error_handler' ERR
+# Start a heartbeat:
+start_heartbeat
 
-# Set up a repeating loop to send some output to Travis.
+# Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
+echo 'Running local tests...'
+make test-local >> $CI_OUT 2>&1
 
-bash -c "while true; do echo \$(date) - building ...; sleep $PING_SLEEP; done" &
-PING_LOOP_PID=$!
-echo $PING_LOOP_PID
+echo 'Running coverage...'
+make coverage >> $CI_OUT 2>&1
 
-# Build commands:
-echo Running local tests...
-make test-local >> $BUILD_OUTPUT 2>&1
-echo Running coverage...
-make coverage >> $BUILD_OUTPUT 2>&1
+echo 'Success!'
 
-# The build finished without returning an error so dump a tail of the output
-dump_output
-
-# nicely terminate the ping output loop
-kill $PING_LOOP_PID
+# Run cleanup tasks:
+cleanup
