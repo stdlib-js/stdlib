@@ -10,6 +10,4 @@ node_js:
   - '0.10'
 before_install:
   - npm update -g npm
-after_script:
-  # - npm run coverage
 
