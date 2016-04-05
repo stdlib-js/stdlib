@@ -56,5 +56,8 @@
       "android-browser/4.2..latest"
     ]
   },
+  "engines": {
+    "node": ">=0.10"
+  },
   "license": "MIT"
 }
