@@ -29,6 +29,7 @@ help:
 # Determine the Makefile's path:
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
+GREP ?= grep
 NPM ?= npm
 NODE ?= node
 NODE_ENV ?= test
@@ -45,7 +46,7 @@ endif
 
 # NOTES #
 
-NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE'
+NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
 
 
 # TAPE #
@@ -160,7 +161,7 @@ endif
 .PHONY: notes
 
 notes:
-	grep -Ern $(NOTES) $(SOURCE_DIR) \
+	$(GREP) -Ern $(NOTES) $(SOURCE_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude $(THIS_FILE) \
 		--exclude './.*' \
