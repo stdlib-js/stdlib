@@ -56,7 +56,7 @@ TODO
 25. create better examples for constants
     -   e.g., how and why and in what contexts a constant may be used
 26. Avogadro's number
-27. note that generic `is-nan` must check for `numeric` input, as `symbols` do __not__ equal each other
+27. 
 28. consider splitting `float64-smallest` into `float64-smallest-normal` and `float64-smallest-subnormal`
     -   current construction is a bit odd when compared to other constants
 29. 
