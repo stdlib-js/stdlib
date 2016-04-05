@@ -1,0 +1,18 @@
+{
+	"boolean": [
+		"help",
+		"version"
+	],
+	"string": [
+		"len",
+		"pad"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}
