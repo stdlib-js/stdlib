@@ -3,14 +3,11 @@ TODO
 
 0. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
     -   all PRs, etc, should be made against `develop`
-    -   create `issue` and `PR` templates (`.github`)
 1. replace `jshint` with `eslint`
     -   add to test command
     -   support reformatting ala `go fmt`
-2. ability to run tests in an arbitrary directory
-    -   will prob want the ability to run tests both from the top-level lib directory, as well as if the `cwd` is otherwise
-        -   may be tricky to do if in some mid-level directory
-        -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
+2. ability to run tests from an arbitrary directory
+    -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
 3. determine how to handle internal `@stdlib` links in READMEs
     -   e.g., `@stdlib/math/constants/float64-two-pi`
     -   replace internal module references
@@ -24,30 +21,28 @@ TODO
     -   typed-array
     -   ...
 7. how to handle modules with CLIs?
+    -   will want some sort of CLI test framework to test `stdin`, `stdout`, args, etc.
 8. how to handle browser tests for non-browser fcns
     -   e.g., `fs` functions like `fs/exists`
 9. migrate JSDoc
     -   also, use `dox` or `mrdocs` or...
 10. add a CLI to `fs/exists`
-11. 
+11. add CONTRIBUTING.md
+    -   PR template should have link to this and the style guide
 12. determine strategy for generic validation fcns
 13. `roundn` should guard against underflow and overflow!
-14. roll our own `type-name`
-    -   update `type-of`, no need for separate module
-    -   see
-        - `type-name`
-        - [`component/type`](https://github.com/component/type/blob/master/index.js)
-        - [`fn-type`](https://github.com/Kikobeats/fn-type)
+14. 
 15. export regexps?
-16. move `@stdlib/tools` to `@stdlib/utils/tools`
+16. 
 17. should `utils/function-name` support generator functions?
     -   a separate function?
 18. replace `require` statements of external compute modules
-19. ~~port `math-float64-set-high-word` and `math-float64-get-high-word` for `expm1` to work~~
-20. test framework for module CLIs
+19. 
+20. 
 21. clean-up test runners
     -   `log1p` 
     -   `sinpi`
+    -   etc.
 22. `type-of` should check for `toStringTag` support
 23. update `utils/tools`
 24. generic `is-finite` util should include note about how differs from global `isFinite`
