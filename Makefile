@@ -202,7 +202,8 @@ examples: node_modules
 test:
 ifeq ($(TRAVIS), true)
 	# @$(MAKE) -f $(THIS_FILE) test-ci
-	./.travis.sh
+	chmod 755 .travis.sh
+	.travis.sh
 else
 	@$(MAKE) -f $(THIS_FILE) test-local
 endif
