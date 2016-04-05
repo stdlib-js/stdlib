@@ -26,9 +26,12 @@ trap 'error_handler' ERR
 
 bash -c "while true; do echo \$(date) - building ...; sleep $PING_SLEEP; done" &
 PING_LOOP_PID=$!
+echo $PING_LOOP_PID
 
 # Build commands:
-make test-ci >> $BUILD_OUTPUT 2>&1
+echo Running local tests...
+make test-local >> $BUILD_OUTPUT 2>&1
+echo Running coverage...
 make coverage >> $BUILD_OUTPUT 2>&1
 
 # The build finished without returning an error so dump a tail of the output
