@@ -295,7 +295,8 @@ view-istanbul-report:
 .PHONY: test-ci test-ci-browsers test-ci-testling
 .PHONY: coverage coverage-codecov
 
-test-ci: test-local test-ci-browsers
+# test-ci: test-local test-ci-browsers
+test-ci: test-local
 
 test-ci-browsers: node_modules
 	xvfb-run make -f $(THIS_FILE) test-ci-testling
