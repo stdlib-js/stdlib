@@ -74,7 +74,7 @@ set -e
 trap 'on_error' ERR
 
 # Create an output log file:
-touch $CI_OUT
+sudo touch $CI_OUT
 
 # Start a heartbeat:
 start_heartbeat
