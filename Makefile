@@ -301,11 +301,9 @@ test-ci-browsers: node_modules
 	xvfb-run make -f $(THIS_FILE) test-ci-testling
 
 test-ci-testling: node_modules
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
 	for file in $(TESTS); do \
-		echo ""; \
-		echo "Running test: $$file"; \
+		NODE_ENV=$(NODE_ENV) \
+		NODE_PATH=$(NODE_PATH_TEST) \
 		$(BROWSERIFY) \
 			-p $(BROWSERIFY_PROXYQUIRE) \
 			$$file \
