@@ -9,3 +9,6 @@
 
 [dependencies-image]: http://img.shields.io/david/stdlib-js/stdlib/develop.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop
+
+[dev-dependencies-image]: http://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
+[dev-dependencies-url]: https://david-dm.org/dev/stdlib-js/stdlib/develop
