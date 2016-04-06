@@ -28,6 +28,7 @@
   "devDependencies": {
     "browserify": "13.x.x",
     "istanbul": "^0.4.1",
+    "jsdoc": "^3.4.0",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
     "proxyquire": "^1.7.4",
