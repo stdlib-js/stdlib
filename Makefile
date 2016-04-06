@@ -1,3 +1,5 @@
+# NOTE: this file should be located in the top-level application directory.
+
 .PHONY: help
 
 help:
@@ -26,14 +28,20 @@ help:
 #############
 # VARIABLES #
 
-# Determine the Makefile's path:
+# Determine the Makefile filename:
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
+
+# Determine the absolute path of the Makefile (see http://blog.jgc.org/2007/01/what-makefile-am-i-in.html):
+THIS_DIR := $(dir $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST)))
+
+# Remove the trailing slash:
+THIS_DIR := $(patsubst %/,%,$(THIS_DIR))
 
 GREP ?= grep
 NPM ?= npm
 NODE ?= node
 NODE_ENV ?= test
-NODE_MODULES ?= ./node_modules
+NODE_MODULES ?= $(THIS_DIR)/node_modules
 TRAVIS ?= false
 
 KERNEL ?= $(shell uname -s)
@@ -52,13 +60,13 @@ NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
 # TAPE #
 
 TAPE ?= $(NODE_MODULES)/.bin/tape
-TAP_REPORTER ?=  $(NODE_MODULES)/.bin/tap-spec
+TAP_REPORTER ?= $(NODE_MODULES)/.bin/tap-spec
 TAP_SUMMARY ?= $(NODE_MODULES)/.bin/tap-summary
 
 
 # ISTANBUL #
 
-REPORTS_DIR ?= ./reports
+REPORTS_DIR ?= $(THIS_DIR)/reports
 ISTANBUL ?= $(NODE_MODULES)/.bin/istanbul
 ISTANBUL_OUT ?= $(REPORTS_DIR)/coverage
 ISTANBUL_REPORT ?= lcov
@@ -80,12 +88,7 @@ BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
 # TESTLING #
 
 TESTLING ?= $(NODE_MODULES)/.bin/testling
-TESTLING_DIR ?= ./
-
-
-# TRAVIS #
-
-TRAVIS_CI ?= ./tools/ci/travis.sh
+TESTLING_DIR ?= $(THIS_DIR)/
 
 
 # JSHINT #
@@ -96,7 +99,7 @@ JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
 # FILES #
 
-SOURCE_DIR ?= .
+SOURCE_DIR ?= $(THIS_DIR)
 TESTS_DIR ?= test
 EXAMPLES_DIR ?= examples
 
@@ -111,7 +114,7 @@ ifeq ($(KERNEL), Darwin)
 		-name '*.js' \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name 'test*.js' \
-		-not -path '$(NODE_MODULES)/*' \
+		-not -path "$(NODE_MODULES)/*" \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
@@ -134,7 +137,7 @@ else
 		-regextype posix-extended \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name 'test*.js' \
-		-not -path '$(NODE_MODULES)/*' \
+		-not -path "$(NODE_MODULES)/*" \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
@@ -168,9 +171,9 @@ endif
 notes:
 	$(GREP) -Ern $(NOTES) $(SOURCE_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
-		--exclude $(THIS_FILE) \
-		--exclude './.*' \
-		--exclude '$(REPORTS_DIR)/*' \
+		--exclude "$(THIS_FILE)" \
+		--exclude "$(THIS_DIR)/.*" \
+		--exclude "$(REPORTS_DIR)/*" \
 		--exclude TODO.md
 
 
@@ -292,9 +295,8 @@ view-istanbul-report:
 .PHONY: test-ci test-ci-browsers
 .PHONY: coverage coverage-codecov
 
-test-ci: node_modules
-	chmod 755 $(TRAVIS_CI)
-	$(TRAVIS_CI)
+# test-ci: test-local test-ci-browsers
+test-ci: test-local
 
 test-ci-browsers: node_modules
 	xvfb-run make -f $(THIS_FILE) test-browsers
@@ -315,7 +317,7 @@ lint: lint-jshint
 lint-jshint: node_modules
 	$(JSHINT) \
 		--reporter $(JSHINT_REPORTER) \
-		./
+		$(SOURCE_DIR)/
 
 
 # NODE #
