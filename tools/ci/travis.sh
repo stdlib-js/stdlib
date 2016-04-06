@@ -75,6 +75,7 @@ trap 'on_error' ERR
 
 # Create an output log file:
 sudo touch $CI_OUT
+sudo chown travis $CI_OUT
 
 # Start a heartbeat:
 start_heartbeat
