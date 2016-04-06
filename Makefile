@@ -85,7 +85,7 @@ TESTLING_DIR ?= ./
 
 # TRAVIS #
 
-TRAVIS_RUN ?= ./.travis.sh
+TRAVIS_CI ?= ./tools/ci/travis.sh
 
 
 # JSHINT #
@@ -293,8 +293,8 @@ view-istanbul-report:
 .PHONY: coverage coverage-codecov
 
 test-ci: node_modules
-	chmod 755 $(TRAVIS_RUN)
-	$(TRAVIS_RUN)
+	chmod 755 $(TRAVIS_CI)
+	$(TRAVIS_CI)
 
 test-ci-browsers: node_modules
 	xvfb-run make -f $(THIS_FILE) test-browsers
