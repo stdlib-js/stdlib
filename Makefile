@@ -18,6 +18,8 @@ help:
 	@echo '  make test-browsers       Run tests in a local web browser.'
 	@echo '  make view-cov            View the most recent code coverage report.'
 	@echo '  make view-browser-tests  View browser tests in a local web browser.'
+	@echo '  make docs-src            Generate source documentation.'
+	@echo '  make view-src-docs       View source documentation.'
 	@echo '  make lint                Run code linting.'
 	@echo '  make install             Install dependencies.'
 	@echo '  make clean               Clean the build directory.'
@@ -344,11 +346,11 @@ coverage-codecov: test-cov
 	cat $(ISTANBUL_LCOV_INFO_PATH) | $(CODECOV)
 
 
-# DOCS #
+# SOURCE DOCS #
 
-.PHONY: docs docs-jsdoc view-docs
+.PHONY: docs-src docs-jsdoc view-src-docs
 
-docs: docs-jsdoc
+docs-src: docs-jsdoc
 
 docs-jsdoc: node_modules
 	rm -rf $(JSDOC_OUT)
@@ -359,7 +361,7 @@ docs-jsdoc: node_modules
 		--destination $(JSDOC_OUT) \
 		$(SOURCES)
 
-view-docs:
+view-src-docs:
 	$(OPEN) $(JSDOC_HTML_PATH)
 
 
