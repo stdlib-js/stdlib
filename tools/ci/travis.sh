@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # DESCRIPTION #
 
@@ -84,7 +84,7 @@ start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 echo 'Running tests...'
-make test-local >> $CI_OUT 2>&1
+make test >> $CI_OUT 2>&1
 
 echo 'Running coverage...'
 make coverage >> $CI_OUT 2>&1
