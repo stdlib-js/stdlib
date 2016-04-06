@@ -100,6 +100,7 @@ JSDOC_DIR ?= $(ROOT)/build
 
 # JSHINT #
 
+# TODO: replace with eslint
 JSHINT ?= $(NODE_MODULES)/.bin/jshint
 JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
@@ -127,6 +128,7 @@ ifeq ($(KERNEL), Darwin)
 		-regex "$(SOURCES_FILTER)" \
 		-not -name "$(TESTS_PATTERN)" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
@@ -135,6 +137,7 @@ ifeq ($(KERNEL), Darwin)
 		-name "$(TESTS_PATTERN)" \
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
 	)
 
 	EXAMPLES ?= $(shell find -E $(SOURCE_DIR) \
@@ -142,6 +145,7 @@ ifeq ($(KERNEL), Darwin)
 		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
 		-regex "$(EXAMPLES_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
 	)
 else
 	SOURCES ?= $(shell find $(SOURCE_DIR) \
@@ -150,6 +154,7 @@ else
 		-regex "$(SOURCES_FILTER)" \
 		-not -name "$(TESTS_PATTERN)" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
@@ -159,6 +164,7 @@ else
 		-regextype posix-extended \
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
 	)
 
 	EXAMPLES ?= $(shell find $(SOURCE_DIR) \
@@ -167,6 +173,7 @@ else
 		-regextype posix-extended \
 		-regex "$(EXAMPLES_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
 	)
 endif
 
@@ -183,6 +190,7 @@ endif
 notes:
 	$(GREP) -Ern $(NOTES) $(SOURCE_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
+		--exclude-dir "$(BUILD_DIR)/*" \
 		--exclude "$(THIS_FILE)" \
 		--exclude "$(ROOT)/.*" \
 		--exclude "$(REPORTS_DIR)/*" \
@@ -283,6 +291,7 @@ test-istanbul-tape: node_modules
 	$(ISTANBUL) cover \
 		--no-default-excludes \
 		-x 'node_modules/**' \
+		-x 'build/**' \
 		-x '**/test/**' \
 		-x '**/tests/**' \
 		-x 'reports/**' \
