@@ -1,4 +1,7 @@
+# After changing this file, check it on:
+#   http://lint.travis-ci.org/
 language: node_js
+
 node_js:
   - 'stable'
   - '5'
@@ -8,6 +11,10 @@ node_js:
   - '1'
   - '0.12'
   - '0.10'
+
 before_install:
   - npm update -g npm
+
+script:
+  - ./tools/ci/travis.sh
 
