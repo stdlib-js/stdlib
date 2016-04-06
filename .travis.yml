@@ -2,8 +2,11 @@
 #   http://lint.travis-ci.org/
 language: node_js
 
+# Is `sudo` required? If not, jobs are run on container-based infrastructure.
+sudo: true
+
 node_js:
-  - 'stable'
+  - 'node'
   - '5'
   - '4'
   - '3'
