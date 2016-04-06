@@ -38,6 +38,8 @@ THIS_DIR := $(dir $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST)))
 THIS_DIR := $(patsubst %/,%,$(THIS_DIR))
 
 ROOT ?= $(THIS_DIR)
+CONFIG_DIR ?= $(ROOT)/etc
+
 GREP ?= grep
 NPM ?= npm
 NODE ?= node
@@ -95,7 +97,9 @@ TESTLING_DIR ?= $(ROOT)/
 # JSDOC #
 
 JSDOC ?= $(NODE_MODULES)/.bin/jsdoc
-JSDOC_DIR ?= $(ROOT)/build
+JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc.conf.json
+JSDOC_OUT ?= $(ROOT)/build
+JSDOC_HTML_PATH ?= $(JSDOC_OUT)/index.html
 
 
 # JSHINT #
@@ -342,18 +346,21 @@ coverage-codecov: test-cov
 
 # DOCS #
 
-.PHONY: docs docs-jsdoc
+.PHONY: docs docs-jsdoc view-docs
 
 docs: docs-jsdoc
 
 docs-jsdoc: node_modules
-	rm -rf $(BUILD_DIR)
+	rm -rf $(JSDOC_OUT)
+	mkdir -p $(JSDOC_OUT)
 	$(JSDOC) \
+		--configure $(JSDOC_CONF) \
 		--encoding utf8 \
-		--package $(ROOT)/package.json \
-		--readme $(ROOT)/README.md \
-		--destination $(JSDOC_DIR) \
+		--destination $(JSDOC_OUT) \
 		$(SOURCES)
+
+view-docs:
+	$(OPEN) $(JSDOC_HTML_PATH)
 
 
 # LINT #
