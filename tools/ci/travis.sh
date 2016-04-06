@@ -7,17 +7,17 @@
 
 # VARIABLES #
 
+# Get the directory of this script:
+export SOURCE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Define a heartbeat interval to prevent Travis CI from prematurely ending due to long running commands:
 export HEARTBEAT_INTERVAL=30s
 
 # Define the number of lines of logged output to print upon completion:
 export TAIL_LINES=500
 
-# Get the current working directory:
-export WORKING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 # Define an output file to store log output:
-export CI_OUT=$WORKING_DIR/ci.log
+export CI_OUT=$SOURCE_DIR/ci.log
 
 
 # FUNCTIONS #
