@@ -37,11 +37,12 @@ THIS_DIR := $(dir $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST)))
 # Remove the trailing slash:
 THIS_DIR := $(patsubst %/,%,$(THIS_DIR))
 
+ROOT ?= $(THIS_DIR)
 GREP ?= grep
 NPM ?= npm
 NODE ?= node
 NODE_ENV ?= test
-NODE_MODULES ?= $(THIS_DIR)/node_modules
+NODE_MODULES ?= $(ROOT)/node_modules
 TRAVIS ?= false
 
 KERNEL ?= $(shell uname -s)
@@ -66,7 +67,7 @@ TAP_SUMMARY ?= $(NODE_MODULES)/.bin/tap-summary
 
 # ISTANBUL #
 
-REPORTS_DIR ?= $(THIS_DIR)/reports
+REPORTS_DIR ?= $(ROOT)/reports
 ISTANBUL ?= $(NODE_MODULES)/.bin/istanbul
 ISTANBUL_OUT ?= $(REPORTS_DIR)/coverage
 ISTANBUL_REPORT ?= lcov
@@ -88,7 +89,13 @@ BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
 # TESTLING #
 
 TESTLING ?= $(NODE_MODULES)/.bin/testling
-TESTLING_DIR ?= $(THIS_DIR)/
+TESTLING_DIR ?= $(ROOT)/
+
+
+# JSDOC #
+
+JSDOC ?= $(NODE_MODULES)/.bin/jsdoc
+JSDOC_DIR ?= $(ROOT)/build
 
 
 # JSHINT #
@@ -99,9 +106,14 @@ JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
 # FILES #
 
-SOURCE_DIR ?= $(THIS_DIR)
+SOURCE_DIR ?= $(ROOT)
 TESTS_DIR ?= test
 EXAMPLES_DIR ?= examples
+BUILD_DIR ?= $(ROOT)/build
+
+SOURCES_PATTERN ?= *.js
+TESTS_PATTERN ?= test*.js
+EXAMPLES_PATTERN ?= *.js
 
 SOURCES_FILTER ?= .*/.*
 TESTS_FILTER ?= .*/.*
@@ -111,46 +123,46 @@ EXAMPLES_FILTER ?= .*/.*
 
 ifeq ($(KERNEL), Darwin)
 	SOURCES ?= $(shell find -E $(SOURCE_DIR) \
-		-name '*.js' \
+		-name "$(SOURCES_PATTERN)" \
 		-regex "$(SOURCES_FILTER)" \
-		-not -name 'test*.js' \
+		-not -name "$(TESTS_PATTERN)" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
 
 	TESTS ?= $(shell find -E $(SOURCE_DIR) \
-		-name 'test*.js' \
+		-name "$(TESTS_PATTERN)" \
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
 	)
 
 	EXAMPLES ?= $(shell find -E $(SOURCE_DIR) \
-		-name '*.js' \
+		-name "$(EXAMPLES_PATTERN)" \
 		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
 		-regex "$(EXAMPLES_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
 	)
 else
 	SOURCES ?= $(shell find $(SOURCE_DIR) \
-		-name '*.js' \
+		-name "$(SOURCES_PATTERN)" \
 		-regextype posix-extended \
 		-regex "$(SOURCES_FILTER)" \
-		-not -name 'test*.js' \
+		-not -name "$(TESTS_PATTERN)" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
 
 	TESTS ?= $(shell find $(SOURCE_DIR) \
-		-name 'test*.js' \
+		-name "$(TESTS_PATTERN)" \
 		-regextype posix-extended \
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
 	)
 
 	EXAMPLES ?= $(shell find $(SOURCE_DIR) \
-		-name '*.js' \
+		-name "$(EXAMPLES_PATTERN)" \
 		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
 		-regextype posix-extended \
 		-regex "$(EXAMPLES_FILTER)" \
@@ -172,7 +184,7 @@ notes:
 	$(GREP) -Ern $(NOTES) $(SOURCE_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude "$(THIS_FILE)" \
-		--exclude "$(THIS_DIR)/.*" \
+		--exclude "$(ROOT)/.*" \
 		--exclude "$(REPORTS_DIR)/*" \
 		--exclude TODO.md
 
@@ -319,6 +331,22 @@ coverage-codecov: test-cov
 	cat $(ISTANBUL_LCOV_INFO_PATH) | $(CODECOV)
 
 
+# DOCS #
+
+.PHONY: docs docs-jsdoc
+
+docs: docs-jsdoc
+
+docs-jsdoc: node_modules
+	rm -rf $(BUILD_DIR)
+	$(JSDOC) \
+		--encoding utf8 \
+		--package $(ROOT)/package.json \
+		--readme $(ROOT)/README.md \
+		--destination $(JSDOC_DIR) \
+		$(SOURCES)
+
+
 # LINT #
 
 .PHONY: lint lint-jshint
@@ -347,4 +375,4 @@ clean-node:
 .PHONY: clean
 
 clean:
-	rm -rf build
+	rm -rf $(BUILD_DIR)
