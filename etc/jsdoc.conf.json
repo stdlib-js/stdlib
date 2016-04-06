@@ -1,0 +1,14 @@
+{
+	"opts": {
+		"encoding": "utf8",
+		"destination": "./build/",
+		"package": "",
+		"readme": ""
+	},
+	"plugins": [],
+	"templates": {
+		"default": {
+			"useLongnameInNav": false
+		}
+	}
+}
