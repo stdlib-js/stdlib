@@ -5,7 +5,9 @@
 		"package": "",
 		"readme": ""
 	},
-	"plugins": [],
+	"plugins": [
+		"plugins/markdown"
+	],
 	"templates": {
 		"default": {
 			"useLongnameInNav": false
