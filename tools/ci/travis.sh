@@ -82,10 +82,10 @@ start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 echo 'Running tests...'
-sudo make test >> $CI_OUT 2>&1
+make test >> $CI_OUT 2>&1
 
 echo 'Running coverage...'
-sudo make coverage >> $CI_OUT 2>&1
+make coverage >> $CI_OUT 2>&1
 
 echo 'Success!'
 
