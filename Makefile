@@ -292,14 +292,26 @@ view-istanbul-report:
 
 # CONTINUOUS INTEGRATION #
 
-.PHONY: test-ci test-ci-browsers
+.PHONY: test-ci test-ci-browsers test-ci-testling
 .PHONY: coverage coverage-codecov
 
-# test-ci: test-local test-ci-browsers
-test-ci: test-local
+test-ci: test-local test-ci-browsers
 
 test-ci-browsers: node_modules
-	xvfb-run @$(MAKE) -f $(THIS_FILE) test-browsers
+	xvfb-run @$(MAKE) -f $(THIS_FILE) test-ci-testling
+
+test-ci-testling: node_modules
+	NODE_ENV=$(NODE_ENV) \
+	NODE_PATH=$(NODE_PATH_TEST) \
+	for file in $(TESTS); do \
+		echo ""; \
+		echo "Running test: $$file"; \
+		$(BROWSERIFY) \
+			-p $(BROWSERIFY_PROXYQUIRE) \
+			$$file \
+		| $(TESTLING) \
+		| $(TAP_REPORTER); \
+	done
 
 coverage: coverage-codecov
 
