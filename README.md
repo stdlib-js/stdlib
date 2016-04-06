@@ -1,5 +1,5 @@
 
-[![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
 [build-image]: http://img.shields.io/travis/stdlib-js/stdlib/develop.svg
 [build-url]: https://travis-ci.org/stdlib-js/stdlib
