@@ -7,9 +7,6 @@
 
 # VARIABLES #
 
-# Get the directory of this script:
-SOURCE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 # Define a heartbeat interval to prevent Travis CI from prematurely ending due to long running commands:
 export HEARTBEAT_INTERVAL=30s
 
@@ -17,7 +14,7 @@ export HEARTBEAT_INTERVAL=30s
 export TAIL_LINES=500
 
 # Define an output file to store log output:
-export CI_OUT=$SOURCE_DIR/ci.log
+export CI_OUT=/var/log/travis-ci.log
 
 
 # FUNCTIONS #
@@ -84,10 +81,10 @@ start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 echo 'Running tests...'
-make test >> $CI_OUT 2>&1
+sudo make test >> $CI_OUT 2>&1
 
 echo 'Running coverage...'
-make coverage >> $CI_OUT 2>&1
+sudo make coverage >> $CI_OUT 2>&1
 
 echo 'Success!'
 
