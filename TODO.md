@@ -46,7 +46,7 @@ TODO
 17. should `utils/function-name` support generator functions?
     -   a separate function?
 18. replace `require` statements of external compute modules
-19. 
+19. tests for top-level `tools`; e.g., JSDoc templates, etc
 20. 
 21. clean-up test runners
     -   `log1p` 
