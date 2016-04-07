@@ -100,7 +100,10 @@ TESTLING_DIR ?= $(ROOT)/
 
 JSDOC ?= $(NODE_MODULES)/.bin/jsdoc
 JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc.conf.json
-JSDOC_OUT ?= $(ROOT)/build
+JSDOC_OUT ?= $(ROOT)/build/docs
+JSDOC_JSON_TEMPLATE ?= $(ROOT)/tools/docs/jsdoc/templates/json
+JSDOC_JSON_PATH ?= $(ROOT)/build/docs.json
+JSDOC_HTML_TEMPLATE ?= templates/default
 JSDOC_HTML_PATH ?= $(JSDOC_OUT)/index.html
 
 
@@ -113,7 +116,7 @@ JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
 # FILES #
 
-SOURCE_DIR ?= $(ROOT)
+SOURCE_DIR ?= lib
 TESTS_DIR ?= test
 EXAMPLES_DIR ?= examples
 BUILD_DIR ?= $(ROOT)/build
@@ -129,7 +132,7 @@ EXAMPLES_FILTER ?= .*/.*
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
 ifeq ($(KERNEL), Darwin)
-	SOURCES ?= $(shell find -E $(SOURCE_DIR) \
+	SOURCES ?= $(shell find -E $(ROOT) \
 		-name "$(SOURCES_PATTERN)" \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name "$(TESTS_PATTERN)" \
@@ -139,22 +142,22 @@ ifeq ($(KERNEL), Darwin)
 		-not -path "$(REPORTS_DIR)/*" \
 	)
 
-	TESTS ?= $(shell find -E $(SOURCE_DIR) \
+	TESTS ?= $(shell find -E $(ROOT) \
 		-name "$(TESTS_PATTERN)" \
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
 	)
 
-	EXAMPLES ?= $(shell find -E $(SOURCE_DIR) \
+	EXAMPLES ?= $(shell find -E $(ROOT) \
 		-name "$(EXAMPLES_PATTERN)" \
-		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
+		-path "$(ROOT)/**/$(EXAMPLES_DIR)/**" \
 		-regex "$(EXAMPLES_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
 	)
 else
-	SOURCES ?= $(shell find $(SOURCE_DIR) \
+	SOURCES ?= $(shell find $(ROOT) \
 		-name "$(SOURCES_PATTERN)" \
 		-regextype posix-extended \
 		-regex "$(SOURCES_FILTER)" \
@@ -165,7 +168,7 @@ else
 		-not -path "$(REPORTS_DIR)/*" \
 	)
 
-	TESTS ?= $(shell find $(SOURCE_DIR) \
+	TESTS ?= $(shell find $(ROOT) \
 		-name "$(TESTS_PATTERN)" \
 		-regextype posix-extended \
 		-regex "$(TESTS_FILTER)" \
@@ -173,9 +176,9 @@ else
 		-not -path "$(BUILD_DIR)/*" \
 	)
 
-	EXAMPLES ?= $(shell find $(SOURCE_DIR) \
+	EXAMPLES ?= $(shell find $(ROOT) \
 		-name "$(EXAMPLES_PATTERN)" \
-		-path "$(SOURCE_DIR)/**/$(EXAMPLES_DIR)/**" \
+		-path "$(ROOT)/**/$(EXAMPLES_DIR)/**" \
 		-regextype posix-extended \
 		-regex "$(EXAMPLES_FILTER)" \
 		-not -path "$(NODE_MODULES)/*" \
@@ -194,7 +197,7 @@ endif
 .PHONY: notes
 
 notes:
-	$(GREP) -Ern $(NOTES) $(SOURCE_DIR) \
+	$(GREP) -Ern $(NOTES) $(ROOT) \
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude-dir "$(BUILD_DIR)/*" \
 		--exclude "$(THIS_FILE)" \
@@ -348,7 +351,7 @@ coverage-codecov: test-cov
 
 # SOURCE DOCS #
 
-.PHONY: docs-src docs-jsdoc view-src-docs
+.PHONY: docs-src docs-jsdoc jsdoc-json view-src-docs
 
 docs-src: docs-jsdoc
 
@@ -356,10 +359,22 @@ docs-jsdoc: node_modules
 	rm -rf $(JSDOC_OUT)
 	mkdir -p $(JSDOC_OUT)
 	$(JSDOC) \
+		--template $(JSDOC_HTML_TEMPLATE) \
 		--configure $(JSDOC_CONF) \
 		--encoding utf8 \
 		--destination $(JSDOC_OUT) \
 		$(SOURCES)
+
+jsdoc-json: node_modules
+	rm -f $(JSDOC_JSON_PATH)
+	mkdir -p $(BUILD_DIR)
+	$(JSDOC) \
+		--template $(JSDOC_JSON_TEMPLATE) \
+		--configure $(JSDOC_CONF) \
+		--encoding utf8 \
+		--destination console \
+		$(SOURCES) \
+	> $(JSDOC_JSON_PATH)
 
 view-src-docs:
 	$(OPEN) $(JSDOC_HTML_PATH)
@@ -374,7 +389,7 @@ lint: lint-jshint
 lint-jshint: node_modules
 	$(JSHINT) \
 		--reporter $(JSHINT_REPORTER) \
-		$(SOURCE_DIR)/
+		$(ROOT)/
 
 
 # NODE #
