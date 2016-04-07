@@ -2,7 +2,7 @@ Makefile
 ===
 > Project Makefile.
 
-[`make`][make] is the project's primary development tool. For an overview of `make`, see the [`make` manual][make]. 
+[`make`][make] is the project's primary development tool. For an overview of `make`, see the `make` [manual][make]. 
 
 
 ## Usage
