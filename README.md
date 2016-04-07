@@ -11,4 +11,4 @@
 [dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop
 
 [dev-dependencies-image]: http://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
-[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies`
+[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
