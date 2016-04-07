@@ -2,7 +2,7 @@ Makefile
 ===
 > Project Makefile.
 
-[`make`][make] is the primary development tool. For an overview of `make`, see the [`make` manual][make]. 
+[`make`][make] is the project's primary development tool. For an overview of `make`, see the [`make` manual][make]. 
 
 
 ## Usage
@@ -199,7 +199,7 @@ To limit which tests are run, use the same environment variables recognized by `
 $ make TESTS_FILTER=.*/math/base/utils/.* test-cov
 ```
 
-To view the report in a local web browser,
+To view a generated report in a local web browser,
 
 ``` bash
 $ make view-cov
@@ -223,10 +223,10 @@ $ make view-browser-tests
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
 ``` bash
-# Run base math utils in a headless local web browser...
+# Run base math utils tests in a headless local web browser...
 $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 
-# Run @stdlib utils in a local web browser...
+# Run @stdlib utils tests in a local web browser...
 $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
 ```
 
@@ -234,7 +234,7 @@ $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
 ===
 #### Documentation
 
-To generate documentation from on [JSDoc][jsdoc] source code comments,
+To generate documentation from [JSDoc][jsdoc] source code comments,
 
 ``` bash
 $ make docs-src
