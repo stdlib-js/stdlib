@@ -31,11 +31,13 @@ TODO
         -   [`mrdoc`](https://github.com/mr-doc/mr-doc) (aka `doxx`)
         -   [`docco`](https://github.com/jashkenas/docco)
         -   [`jsdoc`](https://github.com/jsdoc3/jsdoc)
-        -   [documentation.js](http://documentation.js.org/)
+        -   [`documentation.js`](http://documentation.js.org/)
             -   see [turfjs](https://github.com/Turfjs/turf-www)
-        -   [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse)
-        -   [dmd](https://github.com/jsdoc2md/dmd)
-        -   [jsdox](https://github.com/sutoiku/jsdox)
+        -   [`jsdoc-parse`](https://github.com/jsdoc2md/jsdoc-parse)
+        -   [`dmd`](https://github.com/jsdoc2md/dmd)
+        -   [`jsdox`](https://github.com/sutoiku/jsdox)
+        -   [`dokker`](https://github.com/oceanhouse21/dokker)
+        -   [`jsdoc-to-markdown`](https://github.com/jsdoc2md/jsdoc-to-markdown)
         -   ...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
