@@ -67,7 +67,8 @@ TODO
 28. Split `float64-smallest` into `float64-smallest-normal` and `float64-smallest-subnormal`
     -   current construction is a bit odd when compared to other constants
     -   ditto for `float32-smallest`
-29. 
+29. `Makefile` does not list top-level `examples`; is this intentional?
+30. 
 
 
 ---
