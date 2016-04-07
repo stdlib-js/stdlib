@@ -42,12 +42,12 @@ The following annotations are recognized:
 *   __HACK__: annotates fragile/non-general solutions.
 *   __WARNING__: annotates possible pitfalls or gotchas.
 *   __OPTIMIZE__: annotates code which needs optimizing.
-*   __NOTE__: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` which should be brought to a reader's attention.
+*   __NOTE__: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
 
 ===
 #### Files
 
-The `Makefile` exposes several targets (also used internally) for finding project files. For example, to list all project files, excluding the `node_modules`, `build`, `reports`, and hidden directories,
+The `Makefile` exposes several targets (also used internally) for finding project files. For example, to list all project files, excluding `node_modules`, `build`, `reports`, and hidden directories,
 
 ``` bash
 $ make list-files
@@ -67,7 +67,7 @@ To filter based on a file path,
 $ make FILES_FILTER=.*/utils/is-nan/.* list-files
 ```
 
-__Note__: most filters should begin with `.*/` and end with `/.*`, as filters are used as a regular expression to test a file path.
+__Note__: most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
 
 The `Makefile` includes the following common recipes for listing different file types...
 
@@ -150,7 +150,7 @@ To run module examples,
 $ make examples
 ```
 
-To limit which examples are run, use the same environment variables recognized by `make list-examples`.
+To limit which examples are run, use the same environment variables recognized by `list-examples`.
 
 ``` bash
 # Only run the examples for special functions in the base math directory...
@@ -161,7 +161,7 @@ $ make EXAMPLES_FILTER=.*/math/base/special/.* EXAMPLES_PATTERN=index.js example
 ===
 #### Unit Tests
 
-To run module unit tests,
+To run unit tests,
 
 ``` bash
 $ make test
@@ -173,7 +173,7 @@ To generate a test summary,
 $ make test-summary
 ```
 
-To limit which tests are run, use the same environment variables recognized by `make list-tests`.
+To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
 ``` bash
 # Run only the main test file for base math utils...
@@ -192,7 +192,7 @@ To generate a test coverage report,
 $ make test-cov
 ```
 
-To limit which tests are run, use the same environment variables recognized by `make list-tests`.
+To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
 ``` bash
 # Generate a coverage report for base math utils...
@@ -220,7 +220,7 @@ To run and view the tests in a local web browser,
 $ make view-browser-tests
 ```
 
-To limit which tests are run, use the same environment variables recognized by `make list-tests`.
+To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
 ``` bash
 # Run base math utils in a headless local web browser...
