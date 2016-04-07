@@ -1,0 +1,23 @@
+
+Usage: make <cmd>
+
+  make help                Print this message.
+  make notes               Search for code annotations.
+  make list-sources        List all source files (excluding examples and tests).
+  make list-examples       List all example files.
+  make list-tests          List all test files.
+  make list-files          List files.
+  make examples            Run examples.
+  make test                Run tests.
+  make test-summary        Run tests and output a test summary.
+  make test-cov            Run tests with code coverage.
+  make test-browsers       Run tests in a local web browser.
+  make view-cov            View the most recent code coverage report.
+  make view-browser-tests  View browser tests in a local web browser.
+  make docs-src            Generate source documentation.
+  make view-src-docs       View source documentation.
+  make lint                Run code linting.
+  make install             Install dependencies.
+  make clean               Clean the build directory.
+  make clean-node          Remove Node dependencies.
+

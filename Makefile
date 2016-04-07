@@ -3,29 +3,7 @@
 .PHONY: help
 
 help:
-	@echo ''
-	@echo 'Usage: make <cmd>'
-	@echo ''
-	@echo '  make help                     Print this message.'
-	@echo '  make notes                    Search for code annotations.'
-	@echo '  make list-sources             List all source files (excluding examples and tests).'
-	@echo '  make list-examples            List all example files.'
-	@echo '  make list-tests               List all test files.'
-	@echo '  make list-files               List files.'
-	@echo '  make examples                 Run examples.'
-	@echo '  make test                     Run tests.'
-	@echo '  make test-summary             Run tests and output a test summary.'
-	@echo '  make test-cov                 Run tests with code coverage.'
-	@echo '  make test-browsers            Run tests in a local web browser.'
-	@echo '  make view-cov                 View the most recent code coverage report.'
-	@echo '  make view-browser-tests       View browser tests in a local web browser.'
-	@echo '  make docs-src                 Generate source documentation.'
-	@echo '  make view-src-docs            View source documentation.'
-	@echo '  make lint                     Run code linting.'
-	@echo '  make install                  Install dependencies.'
-	@echo '  make clean                    Clean the build directory.'
-	@echo '  make clean-node               Remove Node dependencies.'
-	@echo ''
+	cat ./docs/make/usage.txt
 
 
 #############
