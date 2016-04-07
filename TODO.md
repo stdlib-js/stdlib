@@ -35,6 +35,7 @@ TODO
             -   see [turfjs](https://github.com/Turfjs/turf-www)
         -   [jsdoc-parse](https://github.com/jsdoc2md/jsdoc-parse)
         -   [dmd](https://github.com/jsdoc2md/dmd)
+        -   [jsdox](https://github.com/sutoiku/jsdox)
         -   ...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
