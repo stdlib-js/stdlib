@@ -6,24 +6,25 @@ help:
 	@echo ''
 	@echo 'Usage: make <cmd>'
 	@echo ''
-	@echo '  make help                Print this message.'
-	@echo '  make notes               Search for code annotations.'
-	@echo '  make list-sources        List all source files (excluding examples and tests).'
-	@echo '  make list-examples       List all example files.'
-	@echo '  make list-tests          List all test files.'
-	@echo '  make examples            Run examples.'
-	@echo '  make test                Run tests.'
-	@echo '  make test-summary        Run tests and output a test summary.'
-	@echo '  make test-cov            Run tests with code coverage.'
-	@echo '  make test-browsers       Run tests in a local web browser.'
-	@echo '  make view-cov            View the most recent code coverage report.'
-	@echo '  make view-browser-tests  View browser tests in a local web browser.'
-	@echo '  make docs-src            Generate source documentation.'
-	@echo '  make view-src-docs       View source documentation.'
-	@echo '  make lint                Run code linting.'
-	@echo '  make install             Install dependencies.'
-	@echo '  make clean               Clean the build directory.'
-	@echo '  make clean-node          Remove Node dependencies.'
+	@echo '  make help                     Print this message.'
+	@echo '  make notes                    Search for code annotations.'
+	@echo '  make list-sources             List all source files (excluding examples and tests).'
+	@echo '  make list-examples            List all example files.'
+	@echo '  make list-tests               List all test files.'
+	@echo '  make list-files               List files.'
+	@echo '  make examples                 Run examples.'
+	@echo '  make test                     Run tests.'
+	@echo '  make test-summary             Run tests and output a test summary.'
+	@echo '  make test-cov                 Run tests with code coverage.'
+	@echo '  make test-browsers            Run tests in a local web browser.'
+	@echo '  make view-cov                 View the most recent code coverage report.'
+	@echo '  make view-browser-tests       View browser tests in a local web browser.'
+	@echo '  make docs-src                 Generate source documentation.'
+	@echo '  make view-src-docs            View source documentation.'
+	@echo '  make lint                     Run code linting.'
+	@echo '  make install                  Install dependencies.'
+	@echo '  make clean                    Clean the build directory.'
+	@echo '  make clean-node               Remove Node dependencies.'
 	@echo ''
 
 
@@ -121,10 +122,12 @@ TESTS_DIR ?= test
 EXAMPLES_DIR ?= examples
 BUILD_DIR ?= $(ROOT)/build
 
+FILES_PATTERN ?= *.*
 SOURCES_PATTERN ?= *.js
 TESTS_PATTERN ?= test*.js
 EXAMPLES_PATTERN ?= *.js
 
+FILES_FILTER ?= .*/.*
 SOURCES_FILTER ?= .*/.*
 TESTS_FILTER ?= .*/.*
 EXAMPLES_FILTER ?= .*/.*
@@ -132,57 +135,88 @@ EXAMPLES_FILTER ?= .*/.*
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
 ifeq ($(KERNEL), Darwin)
+	FILES ?= $(shell find -E $(ROOT) \
+		-name "$(FILES_PATTERN)" \
+		-regex "$(FILES_FILTER)" \
+		-not -path "$(ROOT)/.*" \
+		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
+	)
+
 	SOURCES ?= $(shell find -E $(ROOT) \
 		-name "$(SOURCES_PATTERN)" \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name "$(TESTS_PATTERN)" \
+		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
-		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
+		-not -path "**/$(EXAMPLES_DIR)/*" \
 	)
 
 	TESTS ?= $(shell find -E $(ROOT) \
 		-name "$(TESTS_PATTERN)" \
 		-regex "$(TESTS_FILTER)" \
+		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
 	)
 
+	# TODO: does not list top-level examples?
 	EXAMPLES ?= $(shell find -E $(ROOT) \
 		-name "$(EXAMPLES_PATTERN)" \
 		-path "$(ROOT)/**/$(EXAMPLES_DIR)/**" \
 		-regex "$(EXAMPLES_FILTER)" \
+		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
 	)
 else
+	FILES ?= $(shell find $(ROOT) \
+		-name "$(FILES_PATTERN)" \
+		-regextype posix-extended \
+		-regex "$(FILES_FILTER)" \
+		-not -path "$(ROOT)/.*" \
+		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(BUILD_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
+	)
+
 	SOURCES ?= $(shell find $(ROOT) \
 		-name "$(SOURCES_PATTERN)" \
 		-regextype posix-extended \
 		-regex "$(SOURCES_FILTER)" \
 		-not -name "$(TESTS_PATTERN)" \
+		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
-		-not -path "**/$(EXAMPLES_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
+		-not -path "**/$(EXAMPLES_DIR)/*" \
 	)
 
 	TESTS ?= $(shell find $(ROOT) \
 		-name "$(TESTS_PATTERN)" \
 		-regextype posix-extended \
 		-regex "$(TESTS_FILTER)" \
+		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
 	)
 
+	# TODO: does not list top-level examples?
 	EXAMPLES ?= $(shell find $(ROOT) \
 		-name "$(EXAMPLES_PATTERN)" \
 		-path "$(ROOT)/**/$(EXAMPLES_DIR)/**" \
 		-regextype posix-extended \
 		-regex "$(EXAMPLES_FILTER)" \
+		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
 		-not -path "$(BUILD_DIR)/*" \
+		-not -path "$(REPORTS_DIR)/*" \
 	)
 endif
 
@@ -208,7 +242,10 @@ notes:
 
 # FILES #
 
-.PHONY: list-sources list-examples list-tests
+.PHONY: list-files list-sources list-examples list-tests
+
+list-files:
+	@printf '%s\n' $(FILES)
 
 list-sources:
 	@printf '%s\n' $(SOURCES)
