@@ -363,6 +363,7 @@ docs-jsdoc: node_modules
 		--configure $(JSDOC_CONF) \
 		--encoding utf8 \
 		--destination $(JSDOC_OUT) \
+		--verbose \
 		$(SOURCES)
 
 jsdoc-json: node_modules
