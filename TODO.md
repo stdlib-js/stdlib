@@ -64,6 +64,7 @@ TODO
 26. Avogadro's number
 27. project stats
     -   use [ndu](https://github.com/groupon/ndu) to visualize dependency size
+    -   use [disc](https://github.com/hughsk/disc) to visualize browserify output
 28. Split `float64-smallest` into `float64-smallest-normal` and `float64-smallest-subnormal`
     -   current construction is a bit odd when compared to other constants
     -   ditto for `float32-smallest`
