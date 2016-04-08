@@ -51,7 +51,7 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 # To install JSDoc:
 #     $ npm install jsdoc
 #
-# [1] http://usejsdoc.org/
+# [1]: http://usejsdoc.org/
 
 docs-src: docs-jsdoc
 
@@ -68,7 +68,7 @@ docs-jsdoc: node_modules
 # To install JSDoc:
 #     $ npm install jsdoc
 #
-# [1] http://usejsdoc.org/
+# [1]: http://usejsdoc.org/
 
 jsdoc-json: node_modules
 	-rm -f $(JSDOC_JSON_PATH)

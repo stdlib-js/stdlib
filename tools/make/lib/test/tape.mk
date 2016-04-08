@@ -6,7 +6,7 @@
 # To install tape:
 #     $ npm install tape
 #
-# [1] https://github.com/substack/tape
+# [1]: https://github.com/substack/tape
 
 TEST_RUNNER_BIN ?= $(BIN)/tape
 

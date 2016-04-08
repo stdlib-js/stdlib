@@ -33,7 +33,7 @@ ISTANBUL_CMD ?= $(ISTANBUL) cover $(ISTANBUL_FLAGS)
 # To install Istanbul:
 #     $ npm install istanbul
 #
-# [1] https://github.com/gotwarlost/istanbul
+# [1]: https://github.com/gotwarlost/istanbul
 
 test-istanbul: node_modules
 	NODE_ENV=$(NODE_ENV) \

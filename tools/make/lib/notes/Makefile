@@ -25,4 +25,5 @@ notes:
 		--exclude "$(REPORTS_DIR)/*" \
 		--exclude TODO.md
 
+
 .PHONY: notes

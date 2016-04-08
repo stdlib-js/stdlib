@@ -35,9 +35,9 @@ endif
 # To install browserify, proxyquire-universal, and tap-spec:
 #    $ npm install browserify proxyquire-universal tap-spec
 #
-# [1] https://github.com/substack/node-browserify
-# [2] https://github.com/bendrucker/proxyquire-universal
-# [3] https://github.com/scottcorgan/tap-spec
+# [1]: https://github.com/substack/node-browserify
+# [2]: https://github.com/bendrucker/proxyquire-universal
+# [3]: https://github.com/scottcorgan/tap-spec
 
 test-browsers: node_modules
 	NODE_ENV=$(NODE_ENV) \

@@ -9,8 +9,7 @@ NPM ?= npm
 
 # Install node module dependencies.
 #
-# This target installs package dependencies by
-# executing [`npm install`][1]. Packages will be installed in a local `node_modules` directory relative to the project's `package.json` file.
+# This target installs package dependencies by executing [`npm install`][1]. Packages will be installed in a local `node_modules` directory relative to the project's `package.json` file.
 #
 # [1]: https://docs.npmjs.com/cli/install
 

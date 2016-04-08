@@ -16,7 +16,7 @@ CODECOV ?= $(BIN)/codecov
 # To install Codecov:
 #     $ npm install codecov
 #
-# [1] https://codecov.io/
+# [1]: https://codecov.io/
 
 coverage-codecov:
 	$(NPM) install codecov

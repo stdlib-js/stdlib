@@ -251,10 +251,28 @@ $ make view-src-docs
 ===
 #### Lint
 
-To lint all source code,
+To lint all source code, including tests and examples,
 
 ``` bash
-$ make lint
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... lint
+```
+
+To lint only source files,
+
+``` bash
+$ make SOURCES_FILTER=... lint-src
+```
+
+To lint only test files,
+
+``` bash
+$ make TESTS_FILTER=... lint-tests
+``` 
+
+To lint only example files,
+
+``` bash
+$ make EXAMPLES_FILTER=... lint-examples
 ```
 
 

@@ -29,7 +29,7 @@ endif
 # To install tap-spec:
 #     $ npm install tap-spec
 #
-# [1] https://github.com/scottcorgan/tap-spec
+# [1]: https://github.com/scottcorgan/tap-spec
 
 test: test-local
 
@@ -49,7 +49,7 @@ test-local: node_modules
 # To install tap-summary:
 #      $ npm install tap-summary
 #
-# [1] https://github.com/zoubin/tap-summary
+# [1]: https://github.com/zoubin/tap-summary
 
 test-summary: node_modules
 	NODE_ENV=$(NODE_ENV) \

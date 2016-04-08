@@ -6,7 +6,7 @@
 # To install testling:
 #     $ npm install testling
 #
-# [1] https://github.com/substack/testling
+# [1]: https://github.com/substack/testling
 
 BROWSER_TEST_RUNNER_BIN ?= $(BIN)/testling
 
@@ -20,7 +20,7 @@ BROWSER_TEST_RUNNER_FLAGS ?= ''
 #
 # This target runs unit tests in a local web browser using [testling][1].
 #
-# [1] https://github.com/substack/testling
+# [1]: https://github.com/substack/testling
 
 view-testling: node_modules
 	NODE_ENV=$(NODE_ENV) \
