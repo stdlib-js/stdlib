@@ -17,7 +17,7 @@ Usage: make <cmd>
   make docs-src            Generate source documentation.
   make view-src-docs       View source documentation.
   make lint                Run code linting.
-  make install             Install dependencies.
-  make clean               Clean the build directory.
+  make install             Run install sequence.
+  make clean               Run all cleanup tasks.
   make clean-node          Remove Node dependencies.
 
