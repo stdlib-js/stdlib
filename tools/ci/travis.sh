@@ -84,7 +84,7 @@ start_heartbeat
 echo 'Running tests...'
 make test >> $CI_OUT 2>&1
 
-echo 'Generating a test coverage report...'
+echo 'Generating test coverage report...'
 make test-cov >> $CI_OUT 2>&1
 
 echo 'Sending coverage report to coverage service...'
