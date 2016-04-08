@@ -17,6 +17,12 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = false
 
+[*.mk]
+indent_style = tab
+
 [package.json]
 indent_style = space
 indent_size = 2
+
+[Makefile]
+indent_style = tab
