@@ -92,5 +92,19 @@ clean-jsdoc:
 	-rm -rf $(JSDOC_OUT)
 
 
-.PHONY: docs-src docs-jsdoc jsdoc-json view-src-docs clean-jsdoc
+# Rebuild JSDoc HTML documentation.
+#
+# This target removes any current documentation and regenerates source HTML documentation from [JSDoc][1]-style comments.
+#
+# To install JSDoc:
+#     $ npm install jsdoc
+#
+# [1]: http://usejsdoc.org/
+
+rebuild-src-docs:
+	@$(MAKE) -f $(THIS_FILE) clean-jsdoc
+	@$(MAKE) -f $(THIS_FILE) docs-jsdoc
+
+
+.PHONY: docs-src docs-jsdoc jsdoc-json view-src-docs rebuild-src-docs clean-jsdoc
 
