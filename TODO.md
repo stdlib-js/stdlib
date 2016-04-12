@@ -69,7 +69,10 @@ TODO
     -   current construction is a bit odd when compared to other constants
     -   ditto for `float32-smallest`
 29. `Makefile` does not list top-level `examples`; is this intentional?
-30. 
+30. typedefs
+    -   typedarray
+    -   numericarray
+31.
 
 
 ---
