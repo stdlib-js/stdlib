@@ -104,6 +104,7 @@ TODO
     -   [dependency-check](https://github.com/maxogden/dependency-check)
     -   if a dependency is already included in the `package.json`, keep that dependency, thus allowing local override of a dependency
         -   how will that work in terms of dep install within the context of the larger project?
+    -   [module-deps](https://github.com/substack/module-deps)
 7.
 
 
