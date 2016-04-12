@@ -46,16 +46,14 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 
 # Generate JSDoc HTML documentation.
 #
-# This target generates source HTML documentation from [JSDoc][1]-style comments.
+# This target generates source HTML documentation from [JSDoc][1]-style comments using [JSDoc][1].
 #
 # To install JSDoc:
 #     $ npm install jsdoc
 #
 # [1]: http://usejsdoc.org/
 
-docs-src: docs-jsdoc
-
-docs-jsdoc: node_modules
+jsdoc-html: node_modules
 	-rm -rf $(JSDOC_HTML_OUT)
 	mkdir -p $(JSDOC_HTML_OUT)
 	$(JSDOC) $(JSDOC_HTML_FLAGS) $(SOURCES)
@@ -80,7 +78,7 @@ jsdoc-json: node_modules
 #
 # This target opens JSDoc HTML documentation in a local web browser.
 
-view-src-docs:
+view-jsdoc-html:
 	$(OPEN) $(JSDOC_HTML_PATH)
 
 
@@ -101,10 +99,10 @@ clean-jsdoc:
 #
 # [1]: http://usejsdoc.org/
 
-rebuild-src-docs:
+rebuild-jsdoc-html:
 	@$(MAKE) -f $(THIS_FILE) clean-jsdoc
-	@$(MAKE) -f $(THIS_FILE) docs-jsdoc
+	@$(MAKE) -f $(THIS_FILE) jsdoc-html
 
 
-.PHONY: docs-src docs-jsdoc jsdoc-json view-src-docs rebuild-src-docs clean-jsdoc
+.PHONY: jsdoc-html jsdoc-json view-jsdoc-html rebuild-jsdoc-html clean-jsdoc
 

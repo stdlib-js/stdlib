@@ -14,7 +14,7 @@ Usage: make <cmd>
   make test-browsers       Run tests in a local web browser.
   make view-cov            View the most recent code coverage report.
   make view-browser-tests  View browser tests in a local web browser.
-  make docs-src            Generate source documentation.
+  make src-docs            Generate source documentation.
   make view-src-docs       View source documentation.
   make lint                Run code linting.
   make install             Run install sequence.

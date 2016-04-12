@@ -1,7 +1,7 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/docs/jsdoc.mk
+include $(TOOLS_MAKE_DIR)/lib/docs/src.mk
 
 
 # TARGETS #
@@ -10,14 +10,14 @@ include $(TOOLS_MAKE_DIR)/lib/docs/jsdoc.mk
 #
 # This target runs tasks to generate documentation.
 
-docs: docs-jsdoc
+docs: src-docs
 
 
 # Remove generated documentation.
 #
 # This target cleans generated documentation by removing it entirely.
 
-clean-docs: clean-jsdoc
+clean-docs: clean-src-docs
 
 
 .PHONY: docs clean-docs
