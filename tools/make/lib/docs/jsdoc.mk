@@ -8,10 +8,10 @@ JSDOC ?= $(BIN)/jsdoc
 JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc.conf.json
 
 # Define the path to JSDoc type definitions:
-JSDOC_TYPEDEF ?= $(ROOT)/tools/docs/jsdoc/typedefs/*.js
+JSDOC_TYPEDEF ?= $(TOOLS_DIR)/docs/jsdoc/typedefs/*.js
 
 # Define the path to the JSDoc JSON template:
-JSDOC_JSON_TEMPLATE ?= $(ROOT)/tools/docs/jsdoc/templates/json
+JSDOC_JSON_TEMPLATE ?= $(TOOLS_DIR)/docs/jsdoc/templates/json
 
 # Define the output directory for JSDoc:
 JSDOC_OUT ?= $(DOCS_DIR)/jsdoc

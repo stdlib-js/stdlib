@@ -5,7 +5,7 @@
 DOCUMENTATIONJS ?= $(BIN)/documentation
 
 # Define the path to JSDoc type definitions:
-DOCUMENTATIONJS_TYPEDEF ?= $(ROOT)/tools/docs/jsdoc/typedefs/*.js
+DOCUMENTATIONJS_TYPEDEF ?= $(TOOLS_DIR)/docs/jsdoc/typedefs/*.js
 
 # Define the output directory for documentation.js:
 DOCUMENTATIONJS_OUT ?= $(DOCS_DIR)/documentationjs
