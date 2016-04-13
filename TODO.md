@@ -38,6 +38,7 @@ TODO
         -   [`jsdox`](https://github.com/sutoiku/jsdox)
         -   [`dokker`](https://github.com/oceanhouse21/dokker)
         -   [`jsdoc-to-markdown`](https://github.com/jsdoc2md/jsdoc-to-markdown)
+        -   [`yuidoc`](http://yui.github.io/yuidoc/syntax/index.html)
         -   ...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
