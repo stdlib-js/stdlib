@@ -4,6 +4,9 @@
 # Define the path of the documentation.js executable:
 DOCUMENTATIONJS ?= $(BIN)/documentation
 
+# Define the path to JSDoc type definitions:
+DOCUMENTATIONJS_TYPEDEF ?= $(ROOT)/tools/docs/jsdoc/typedefs/*.js
+
 # Define the output directory for documentation.js:
 DOCUMENTATIONJS_OUT ?= $(DOCS_DIR)/documentationjs
 
@@ -42,7 +45,7 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 documentationjs-html: node_modules
 	-rm -rf $(DOCUMENTATIONJS_HTML_OUT)
 	mkdir -p $(DOCUMENTATIONJS_HTML_OUT)
-	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(SOURCES)
+	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
 
 
 # Generate JSDoc JSON.
@@ -58,7 +61,7 @@ documentationjs-html: node_modules
 documentationjs-json: node_modules
 	-rm -f $(DOCUMENTATIONJS_JSON_PATH)
 	mkdir -p $(DOCUMENTATIONJS_JSON_OUT)
-	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(SOURCES) > $(DOCUMENTATIONJS_JSON_PATH)
+	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON_PATH)
 
 
 # View HTML documentation.
