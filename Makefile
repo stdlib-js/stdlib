@@ -19,8 +19,11 @@ THIS_DIR := $(patsubst %/,%,$(THIS_DIR))
 # Define the root project directory:
 ROOT ?= $(THIS_DIR)
 
+# Define the root tools directory:
+TOOLS_DIR ?= $(ROOT)/tools
+
 # Define the directory containing Makefile dependencies:
-TOOLS_MAKE_DIR ?= $(ROOT)/tools/make
+TOOLS_MAKE_DIR ?= $(TOOLS_DIR)/make
 
 # Define the root build directory:
 BUILD_DIR ?= $(ROOT)/build
