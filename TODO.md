@@ -42,6 +42,7 @@ TODO
         -   [`groc`](https://github.com/nevir/groc)
         -   [`jsduck`](https://github.com/senchalabs/jsduck)
         -   [`esdoc`](https://github.com/esdoc/esdoc)
+        -   [`docker.js`](https://github.com/jbt/docker)
         -   ...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
