@@ -7,6 +7,9 @@ JSDOC ?= $(BIN)/jsdoc
 # Define the path to the JSDoc configuration file:
 JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc.conf.json
 
+# Define the path to JSDoc type definitions:
+JSDOC_TYPEDEF ?= $(ROOT)/tools/docs/jsdoc/typedefs/index.js
+
 # Define the path to the JSDoc JSON template:
 JSDOC_JSON_TEMPLATE ?= $(ROOT)/tools/docs/jsdoc/templates/json
 
@@ -56,7 +59,7 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 jsdoc-html: node_modules
 	-rm -rf $(JSDOC_HTML_OUT)
 	mkdir -p $(JSDOC_HTML_OUT)
-	$(JSDOC) $(JSDOC_HTML_FLAGS) $(SOURCES)
+	$(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
 
 
 # Generate JSDoc JSON.
@@ -71,7 +74,7 @@ jsdoc-html: node_modules
 jsdoc-json: node_modules
 	-rm -f $(JSDOC_JSON_PATH)
 	mkdir -p $(JSDOC_JSON_OUT)
-	$(JSDOC) $(JSDOC_JSON_FLAGS) $(SOURCES) > $(JSDOC_JSON_PATH)
+	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON_PATH)
 
 
 # View HTML documentation.

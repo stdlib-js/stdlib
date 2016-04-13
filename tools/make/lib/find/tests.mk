@@ -9,6 +9,7 @@ ifeq ($(KERNEL), Darwin)
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(TOOLS_DIR)/*" \
 		-not -path "$(BUILD_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
@@ -19,6 +20,7 @@ else
 		-regex "$(TESTS_FILTER)" \
 		-not -path "$(ROOT)/.*" \
 		-not -path "$(NODE_MODULES)/*" \
+		-not -path "$(TOOLS_DIR)/*" \
 		-not -path "$(BUILD_DIR)/*" \
 		-not -path "$(REPORTS_DIR)/*" \
 	)
