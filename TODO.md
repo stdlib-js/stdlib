@@ -52,7 +52,12 @@ TODO
 13. `roundn` should guard against underflow and overflow!
 14. consider changing `isNumber` to `isNumeric`
 15. export regexps?
-16. 
+16. `Makefile` target to run test fixtures
+    -   detect script type; e.g., `R`, `python`, `Julia`, `Golang`, `C` or `JS`
+        -   can be as simple as filename extension
+        -   of course, may also want to use a shell script to run tests (`.sh`)
+        -   for files without an extension, assume executable
+    -   run the script
 17. should `utils/function-name` support generator functions?
     -   a separate function?
 18. replace `require` statements of external compute modules
