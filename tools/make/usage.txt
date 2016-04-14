@@ -6,6 +6,7 @@ Usage: make <cmd>
   make list-sources        List all source files (excluding examples and tests).
   make list-examples       List all example files.
   make list-tests          List all test files.
+  make list-test-fixtures  List all test fixture files.
   make list-files          List files.
   make examples            Run examples.
   make test                Run tests.

@@ -50,6 +50,9 @@ SOURCE_DIR ?= lib
 # Define the directory name for test files:
 TESTS_DIR ?= test
 
+# Define the directory name for test fixtures:
+TESTS_FIXTURES_DIR ?= test/fixtures
+
 # Define the directory name for examples files:
 EXAMPLES_DIR ?= examples
 
