@@ -67,7 +67,19 @@ To filter based on a file path,
 $ make FILES_FILTER=.*/utils/is-nan/.* list-files
 ```
 
-__Note__: most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
+__Notes__:
+
+*  Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
+*  The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
+
+    ``` bash
+    # List all `R` test fixtures...
+    $ make TESTS_FIXTURES_PATTERN=*.R
+
+    # List all `R` and `Julia` test fixtures...
+    $ make TESTS_FIXTURES_FILTER='.*/*\.(jl|R)' list-test-fixtures
+    ```
+
 
 The `Makefile` includes the following common recipes for listing different file types...
 
@@ -115,6 +127,29 @@ To filter based on a file path,
 ``` bash
 # List only test files in the fs utils directory...
 $ make TESTS_FILTER=.*/utils/fs/.* list-tests
+```
+
+
+##### Test Fixtures
+
+To list all test fixture files,
+
+``` bash
+$ make list-test-fixtures
+```
+
+To filter based on a file name or pattern,
+
+``` bash
+# List only the Julia test fixtures...
+$ make TESTS_FIXTURES_PATTERN=*.jl list-test-fixtures
+```
+
+To filter based on a file path,
+
+``` bash
+# List only test fixture files in the base math directory for special functions...
+$ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-test-fixtures
 ```
 
 
