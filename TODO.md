@@ -32,7 +32,7 @@ TODO
         -   [`docco`](https://github.com/jashkenas/docco)
         -   [`jsdoc`](https://github.com/jsdoc3/jsdoc)
         -   [`documentation.js`](http://documentation.js.org/)
-            -   see [turfjs](https://github.com/Turfjs/turf-www)
+            -   see [turf-www](https://github.com/Turfjs/turf-www) and [turf](https://github.com/Turfjs/turf)
         -   [`jsdoc-parse`](https://github.com/jsdoc2md/jsdoc-parse)
         -   [`dmd`](https://github.com/jsdoc2md/dmd)
         -   [`jsdox`](https://github.com/sutoiku/jsdox)
@@ -57,7 +57,7 @@ TODO
     -   a separate function?
 18. replace `require` statements of external compute modules
 19. tests for top-level `tools`; e.g., JSDoc templates, etc
-20. 
+20. move style-guide to a `stdlib` repo
 21. clean-up test runners
     -   `log1p` 
     -   `sinpi`
