@@ -58,6 +58,7 @@ TODO
         -   of course, may also want to use a shell script to run tests (`.sh`)
         -   for files without an extension, assume executable
     -   run the script
+        -   may want to `chmod` the script, so do not need to know the system alias for the runner environment (e.g., Julia => `julia`) and can leverage internal shebang
 17. should `utils/function-name` support generator functions?
     -   a separate function?
 18. replace `require` statements of external compute modules
