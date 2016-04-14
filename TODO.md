@@ -43,6 +43,7 @@ TODO
         -   [`jsduck`](https://github.com/senchalabs/jsduck)
         -   [`esdoc`](https://github.com/esdoc/esdoc)
         -   [`docker.js`](https://github.com/jbt/docker)
+        -   [`doctrine`](https://github.com/eslint/doctrine)
         -   ...
 10. add a CLI to `fs/exists`
 11. add CONTRIBUTING.md
@@ -92,6 +93,16 @@ TODO
 
 ---
 ## Automation
+
+#### tools
+
+Will need a `tools` directory to
+*   house `Makefile` dependencies
+*   include CI scripts
+*   house doc tools
+    -   JSDoc templates
+    -   JSDoc typedefs
+
 
 #### package.json
 
@@ -153,28 +164,40 @@ TODO
 |---------complex
 |-----------acos
 |-----------sin
-|---------constants
-|-----------e
-|-----------pi
-|-----------two-pi
+|---------dist
+|-----------norm
+|-------------cdf
+|-------------pdf
+|-----------poisson
 |---------random
 |-----------lcg
 |---------special
 |-----------erf
 |-----------erfc
 |-----------sin
+|---------tools
+|-----------evalpoly
+|-----------evalrational
 |---------utils
 |-----------is-even
 |-----------is-integer
 |-----------is-number
 |-----------is-odd
+|-------constants
+|---------e
+|---------pi
+|---------two-pi
+|-------fastmath
+|---------special
+|-----------cos
+|-----------sin
 |-------generics
 |---------core
 |-----------add
 |-----------mult
 |-----------subtract
 |-----------sum
-|---------distributions
+|---------dist
 |-----------norm
 |-----------poisson
 |---------linalg
@@ -187,6 +210,10 @@ TODO
 |-----------mean
 |-----------stdev
 |-----------variance
+|-----streams
+|-------math
+|---------mean
+|---------stdev
 |-----types
 |-------array
 |-------complex
