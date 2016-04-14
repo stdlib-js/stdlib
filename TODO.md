@@ -58,6 +58,7 @@ TODO
         -   of course, may also want to use a shell script to run tests (`.sh`)
         -   for files without an extension, assume executable
     -   run the script
+    -   target to also list fixtures and an env variable to filter fixtures
 17. should `utils/function-name` support generator functions?
     -   a separate function?
 18. replace `require` statements of external compute modules
