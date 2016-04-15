@@ -47,7 +47,7 @@ When contributing to this project, please follow the provided guidelines.
 (...coming soon...)
 
 
-===
+---
 ## Git
 
 *   All commits should follow the [seven rules][git-seven-rules] of a `git` commit message:
