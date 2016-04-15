@@ -77,7 +77,7 @@ TODO
 27. project stats
     -   use [ndu](https://github.com/groupon/ndu) to visualize dependency size
     -   use [disc](https://github.com/hughsk/disc) to visualize browserify output
-28. 
+28. setup `appveyor` for running CI on windows
 29. `Makefile` does not list top-level `examples`; is this intentional?
 30. 
 
