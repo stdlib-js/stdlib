@@ -1,4 +1,7 @@
 
+# Specify the build version format:
+version: '{build}'
+
 environment:
   matrix:
     # Node.js
