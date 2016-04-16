@@ -64,6 +64,7 @@ before_test:
 
 test_script:
   # Print debug info:
+  - cmd: git --version
   - cmd: node --version
   - cmd: npm --version
 
