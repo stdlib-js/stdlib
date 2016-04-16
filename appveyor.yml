@@ -16,6 +16,9 @@ environment:
 # Clone directory:
 clone_folder: c:\projects\stdlib
 
+# Set the clone depth:
+clone_depth: 5
+
 
 matrix:
   # Flag to immediately finish a build if any one of the jobs fails:
