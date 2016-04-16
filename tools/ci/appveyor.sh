@@ -88,8 +88,9 @@ start_heartbeat
 echo 'Running tests...'
 make test >> $CI_LOG_PATH 2>&1
 
-echo 'Generating test coverage report...'
-make test-cov >> $CI_LOG_PATH 2>&1
+# TODO: uncomment once https://github.com/ForbesLindesay/cmd-shim/issues/17 is resolved.
+# echo 'Generating test coverage report...'
+# make test-cov >> $CI_LOG_PATH 2>&1
 
 echo 'Success!'
 
