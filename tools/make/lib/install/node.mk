@@ -21,6 +21,7 @@ install-node: package.json
 #
 # This target cleans the `node_modules` directory by removing it entirely.
 
+# FIXME: -rm -rf
 clean-node:
 	-rm -rf $(NODE_MODULES)
 

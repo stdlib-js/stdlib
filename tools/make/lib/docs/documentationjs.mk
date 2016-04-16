@@ -76,6 +76,7 @@ view-documentationjs-html:
 #
 # This target cleans up a documentation.js output directory by removing it entirely.
 
+# FIXME: -rm -rf
 clean-documentationjs:
 	-rm -rf $(DOCUMENTATIONJS_OUT)
 

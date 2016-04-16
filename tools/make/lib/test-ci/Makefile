@@ -1,15 +1,14 @@
 
 # VARIABLES #
 
-TRAVIS ?= false
-APPVEYOR ?= false
+CI_SERVICE ?= none
 
 
 # DEPENDENCIES #
 
-ifeq ($(TRAVIS), true)
+ifeq ($(CI_SERVICE), travis)
 	include $(TOOLS_MAKE_DIR)/lib/test-ci/travis.mk
-else ifeq ($(APPVEYOR), true)
+else ifeq ($(CI_SERVICE), appveyor)
 	include $(TOOLS_MAKE_DIR)/lib/test-ci/appveyor.mk
 endif
 

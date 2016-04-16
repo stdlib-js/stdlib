@@ -56,6 +56,7 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 #
 # [1]: http://usejsdoc.org/
 
+# FIXME: -rm -rf
 jsdoc-html: node_modules
 	-rm -rf $(JSDOC_HTML_OUT)
 	mkdir -p $(JSDOC_HTML_OUT)
@@ -71,6 +72,7 @@ jsdoc-html: node_modules
 #
 # [1]: http://usejsdoc.org/
 
+# FIXME: -rm -rf
 jsdoc-json: node_modules
 	-rm -f $(JSDOC_JSON_PATH)
 	mkdir -p $(JSDOC_JSON_OUT)
@@ -89,6 +91,7 @@ view-jsdoc-html:
 #
 # This target cleans up a JSDoc output directory by removing it entirely.
 
+# FIXME: -rm -rf
 clean-jsdoc:
 	-rm -rf $(JSDOC_OUT)
 

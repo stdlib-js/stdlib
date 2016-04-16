@@ -40,6 +40,7 @@ include $(TOOLS_MAKE_DIR)/lib/docs/Makefile
 #
 # This target runs the project's cleanup sequence.
 
+# FIXME: -rm -rf
 clean: clean-node clean-cov clean-docs
 	-rm -rf $(BUILD_DIR)
 	-rm -rf $(REPORTS_DIR)

@@ -4,8 +4,14 @@
 # Define the Node environment:
 NODE_ENV ?= test
 
-# Define whether the make commands are running on Travis CI:
-TRAVIS ?= false
+# Define whether the make commands are running on a hosted continuous integration service:
+ifeq ($(TRAVIS), true)
+	CI_SERVICE ?= travis
+else ifeq ($(APPVEYOR), true)
+	CI_SERVICE ?= appveyor
+else
+	CI_SERVICE ?= none
+endif
 
 # Determine the filename:
 THIS_FILE := $(lastword $(MAKEFILE_LIST))

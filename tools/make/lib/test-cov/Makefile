@@ -37,6 +37,7 @@ endif
 #
 # This target cleans up a coverage directory by removing it entirely.
 
+# FIXME: -rm -rf
 clean-cov:
 	-rm -rf $(COVERAGE_DIR)
 
