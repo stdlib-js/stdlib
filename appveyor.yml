@@ -43,8 +43,8 @@ clone_depth: 5
 
 install:
   # Install updated browsers for browser testing:
-  - cmd: cinst upgrade firefox
-  - cmd: cinst upgrade googlechrome
+  - cmd: choco upgrade firefox
+  - cmd: choco upgrade googlechrome
 
   # Switch to the desired Node version:
   - ps: Install-Product node $env:nodejs_version
