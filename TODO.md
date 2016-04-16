@@ -83,7 +83,7 @@ TODO
 29. `Makefile` does not list top-level `examples`; is this intentional?
 30. move test fixture runners into sub-directories based on language
     -   e.g., `./fixtures/julia/*`
-31. add Saucelabs (?)
+31. add Saucelabs with zuul (?)
 32. [gh-pages](https://github.com/tschaub/gh-pages)
 33. 
 
