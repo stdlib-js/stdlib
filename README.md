@@ -1,8 +1,11 @@
 
-[![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+[![Build Status][build-image]][build-url] [![Windows Build Status][windows-build-image]][windows-build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
 [build-image]: http://img.shields.io/travis/stdlib-js/stdlib/develop.svg
 [build-url]: https://travis-ci.org/stdlib-js/stdlib
+
+[windows-build-image]: https://img.shields.io/appveyor/ci/stdlib-js/stdlib/develop.svg
+[windows-build-url]:  https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stdlib/develop.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stdlib?branch=develop
