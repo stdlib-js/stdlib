@@ -2,15 +2,15 @@
 environment:
   matrix:
     # Node.js
-    - nodejs_version: '0.10'
-    - nodejs_version: '0.12'
-    # io.js
-    - nodejs_version: '1'
-    - nodejs_version: '2'
-    - nodejs_version: '3'
-    # Node.js
-    - nodejs_version: '4'
     - nodejs_version: '5'
+    - nodejs_version: '4'
+    # io.js
+    - nodejs_version: '3'
+    - nodejs_version: '2'
+    - nodejs_version: '1'
+    # Node.js
+    - nodejs_version: '0.12'
+    - nodejs_version: '0.10'
 
 
 # Script commands are run either via [batch][1] (`cmd:`; default) or [PowerShell][2] (`ps:`) script engines.
@@ -42,7 +42,7 @@ test_script:
   - cmd: node --version
   - cmd: npm --version
 
-  # Rely on [MSYS][1], a collection of GNU utilities like `make`, being installed in a `1.0` directory.
+  # Rely on [MSYS][1], a collection of GNU utilities including `make`, being installed in a `1.0` directory.
   #
   # [1]: http://www.mingw.org/wiki/MSYS
   - 'C:\MinGW\msys\1.0\bin\sh --login -c "cd /c/projects/stdlib && make test"'
