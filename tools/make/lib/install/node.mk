@@ -4,6 +4,9 @@
 # Define the command for `npm`:
 NPM ?= npm
 
+# Define the command for removing files and directories:
+DELETE_CMD ?= -rm -rf
+
 
 # TARGETS #
 
@@ -21,9 +24,8 @@ install-node: package.json
 #
 # This target cleans the `node_modules` directory by removing it entirely.
 
-# FIXME: -rm -rf
 clean-node:
-	-rm -rf $(NODE_MODULES)
+	$(DELETE_CMD) $(NODE_MODULES)
 
 
 .PHONY: install-node clean-node

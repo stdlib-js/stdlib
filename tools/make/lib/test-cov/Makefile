@@ -3,6 +3,9 @@
 
 CODE_COV_INSTRUMENTATION ?= istanbul
 
+# Define the command for removing files and directories:
+DELETE_CMD ?= -rm -rf
+
 
 # DEPENDENCIES #
 
@@ -37,9 +40,8 @@ endif
 #
 # This target cleans up a coverage directory by removing it entirely.
 
-# FIXME: -rm -rf
 clean-cov:
-	-rm -rf $(COVERAGE_DIR)
+	$(DELETE_CMD) $(COVERAGE_DIR)
 
 
 .PHONY: test-cov view-cov clean-cov

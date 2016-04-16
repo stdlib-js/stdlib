@@ -62,6 +62,16 @@ TESTS_FIXTURES_DIR ?= test/fixtures
 # Define the directory name for examples files:
 EXAMPLES_DIR ?= examples
 
+# Define whether delete operations should be safe (i.e., deleted items are sent to trash, rather than permanently deleted):
+SAFE_DELETE ?= false
+
+# Define the delete command:
+ifeq ($(SAFE_DELETE), true)
+	# FIXME: -rm -rf
+	DELETE_CMD := -rm -rf
+else
+	DELETE_CMD ?= -rm -rf
+endif
 
 # DEPENDENCIES #
 

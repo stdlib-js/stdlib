@@ -1,6 +1,9 @@
 
 # VARIABLES #
 
+# Define the command for removing files and directories:
+DELETE_CMD ?= -rm -rf
+
 # Define the path of the documentation.js executable:
 DOCUMENTATIONJS ?= $(BIN)/documentation
 
@@ -43,7 +46,7 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 # [2]: https://github.com/documentationjs/documentation
 
 documentationjs-html: node_modules
-	-rm -rf $(DOCUMENTATIONJS_HTML_OUT)
+	$(DELETE_CMD) $(DOCUMENTATIONJS_HTML_OUT)
 	mkdir -p $(DOCUMENTATIONJS_HTML_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
 
@@ -59,7 +62,7 @@ documentationjs-html: node_modules
 # [2]: https://github.com/documentationjs/documentation
 
 documentationjs-json: node_modules
-	-rm -f $(DOCUMENTATIONJS_JSON_PATH)
+	$(DELETE_CMD) $(DOCUMENTATIONJS_JSON_PATH)
 	mkdir -p $(DOCUMENTATIONJS_JSON_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON_PATH)
 
@@ -76,9 +79,8 @@ view-documentationjs-html:
 #
 # This target cleans up a documentation.js output directory by removing it entirely.
 
-# FIXME: -rm -rf
 clean-documentationjs:
-	-rm -rf $(DOCUMENTATIONJS_OUT)
+	$(DELETE_CMD) $(DOCUMENTATIONJS_OUT)
 
 
 # Rebuild HTML documentation.

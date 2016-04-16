@@ -7,6 +7,9 @@ NPM ?= npm
 # Define the command for `node`:
 NODE ?= node
 
+# Define the command for removing files and directories:
+DELETE_CMD ?= -rm -rf
+
 # Determine the host kernel:
 KERNEL ?= $(shell uname -s)
 
@@ -40,10 +43,9 @@ include $(TOOLS_MAKE_DIR)/lib/docs/Makefile
 #
 # This target runs the project's cleanup sequence.
 
-# FIXME: -rm -rf
 clean: clean-node clean-cov clean-docs
-	-rm -rf $(BUILD_DIR)
-	-rm -rf $(REPORTS_DIR)
+	$(DELETE_CMD) $(BUILD_DIR)
+	$(DELETE_CMD) $(REPORTS_DIR)
 
 
 .PHONY: clean

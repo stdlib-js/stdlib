@@ -1,6 +1,9 @@
 
 # VARIABLES #
 
+# Define the command for removing files and directories:
+DELETE_CMD ?= -rm -rf
+
 # Define the path of the JSDoc executable:
 JSDOC ?= $(BIN)/jsdoc
 
@@ -56,9 +59,8 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 #
 # [1]: http://usejsdoc.org/
 
-# FIXME: -rm -rf
 jsdoc-html: node_modules
-	-rm -rf $(JSDOC_HTML_OUT)
+	$(DELETE_CMD) $(JSDOC_HTML_OUT)
 	mkdir -p $(JSDOC_HTML_OUT)
 	$(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
 
@@ -72,9 +74,8 @@ jsdoc-html: node_modules
 #
 # [1]: http://usejsdoc.org/
 
-# FIXME: -rm -rf
 jsdoc-json: node_modules
-	-rm -f $(JSDOC_JSON_PATH)
+	$(DELETE_CMD) $(JSDOC_JSON_PATH)
 	mkdir -p $(JSDOC_JSON_OUT)
 	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON_PATH)
 
@@ -91,9 +92,8 @@ view-jsdoc-html:
 #
 # This target cleans up a JSDoc output directory by removing it entirely.
 
-# FIXME: -rm -rf
 clean-jsdoc:
-	-rm -rf $(JSDOC_OUT)
+	$(DELETE_CMD) $(JSDOC_OUT)
 
 
 # Rebuild JSDoc HTML documentation.
