@@ -13,9 +13,9 @@ environment:
     - nodejs_version: '0.10'
 
 
-# matrix:
+matrix:
   # Flag to immediately finish a build if any one of the jobs fails:
-  # fast_finish: true
+  fast_finish: true
 
 
 # Scripts run before repo cloning...
