@@ -55,10 +55,11 @@ build_script:
 
 
 before_test:
-  # In order to run `make` commands, we can use [MinGW][1], a minimalist GNU for Windows, by adding the application folder to the `PATH` variable. For a reference configuration, see [utf8proc][2].
+  # In order to run `make` commands, we can use [MinGW][1], a minimalist GNU for Windows, by adding the application folder to the `PATH` variable. For a reference configuration, see [utf8proc][2] and [julia][3].
   #
   # [1]: http://www.mingw.org/
   # [2]: http://fossies.org/linux/utf8proc/appveyor.yml
+  # [3]: https://github.com/JuliaLang/julia/blob/master/appveyor.yml
   - cmd: set PATH=C:\MinGW\bin;%PATH%
 
 
