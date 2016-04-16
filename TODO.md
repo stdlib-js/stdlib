@@ -80,6 +80,7 @@ TODO
 28. FIX: security vulnerability when using `rm -rf` in Makefile rules
     -   due to using environment variables. If one is improperly set, could be catastrophic. Safe delete?
         -   consider [trash](https://github.com/sindresorhus/trash) and [trash-cli](https://github.com/sindresorhus/trash-cli)
+            *   No, as Sindre does not provide backwards compatibility. Will need to roll our own.
 29. `Makefile` does not list top-level `examples`; is this intentional?
 30. move test fixture runners into sub-directories based on language
     -   e.g., `./fixtures/julia/*`
