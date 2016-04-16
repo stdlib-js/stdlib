@@ -18,18 +18,19 @@ matrix:
   fast_finish: true
 
 
-# Clone directory:
-clone_folder: c:\projects\stdlib
-
-# Set the clone depth:
-clone_depth: 5
-
-
+# Scripts run before repo cloning...
 init:
   # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
   #
   # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
   - git config --global core.autocrlf input
+
+
+# Clone directory:
+clone_folder: c:\projects\stdlib
+
+# Set the clone depth:
+clone_depth: 5
 
 
 # Script commands are run either via [batch][1] (`cmd:`; default) or [PowerShell][2] (`ps:`) script engines.
