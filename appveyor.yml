@@ -13,6 +13,15 @@ environment:
     - nodejs_version: '0.10'
 
 
+# Clone directory:
+clone_folder: c:\projects\stdlib
+
+
+matrix:
+  # Flag to immediately finish a build if any one of the jobs fails:
+  fast_finish: true
+
+
 # Script commands are run either via [batch][1] (`cmd:`; default) or [PowerShell][2] (`ps:`) script engines.
 #
 # [1]: https://en.wikipedia.org/wiki/Batch_file
