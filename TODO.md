@@ -77,9 +77,13 @@ TODO
 27. project stats
     -   use [ndu](https://github.com/groupon/ndu) to visualize dependency size
     -   use [disc](https://github.com/hughsk/disc) to visualize browserify output
-28. setup `appveyor` for running CI on windows
+28. FIX: security vulnerability when using `rm -rf` in Makefile rules
+    -   due to using environment variables. If one is improperly set, could be catastrophic. Safe delete?
 29. `Makefile` does not list top-level `examples`; is this intentional?
-30. 
+30. move test fixture runners into sub-directories based on language
+    -   e.g., `./fixtures/julia/*`
+31. add Saucelabs (?)
+32. 
 
 
 ---
