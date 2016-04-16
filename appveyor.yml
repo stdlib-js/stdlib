@@ -13,6 +13,11 @@ environment:
     - nodejs_version: '0.10'
 
 
+matrix:
+  # Flag to immediately finish a build if any one of the jobs fails:
+  fast_finish: true
+
+
 # Clone directory:
 clone_folder: c:\projects\stdlib
 
@@ -20,9 +25,11 @@ clone_folder: c:\projects\stdlib
 clone_depth: 5
 
 
-matrix:
-  # Flag to immediately finish a build if any one of the jobs fails:
-  fast_finish: true
+init:
+  # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
+  #
+  # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
+  - git config --global core.autocrlf input
 
 
 # Script commands are run either via [batch][1] (`cmd:`; default) or [PowerShell][2] (`ps:`) script engines.
