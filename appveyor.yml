@@ -70,4 +70,4 @@ test_script:
   # Rely on [MSYS][1], a collection of GNU utilities including `make`, being installed in a `1.0` directory.
   #
   # [1]: http://www.mingw.org/wiki/MSYS
-  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c "cd /c/projects/stdlib && make test"'
+  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor.sh"'
