@@ -20,6 +20,6 @@ install:
 test_script:
   - node --version
   - npm --version
-  - 'C:\MinGW\msys\1.0\bin\sh --login -c "cd /c/projects/stdlib-js/stdlib && make test"'
+  - 'C:\MinGW\msys\1.0\bin\sh --login -c "cd /c/projects/stdlib && make test"'
 
 build: off
