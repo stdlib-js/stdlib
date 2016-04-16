@@ -85,11 +85,11 @@ touch $CI_LOG_PATH
 start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
-# echo 'Running tests...'
-# make test >> $CI_LOG_PATH 2>&1
+echo 'Running tests...'
+make test >> $CI_LOG_PATH 2>&1
 
-echo 'Running browser tests...'
-make test-browsers >> $CI_LOG_PATH 2>&1
+# echo 'Running browser tests...'
+# make test-browsers >> $CI_LOG_PATH 2>&1
 
 # TODO: uncomment once https://github.com/ForbesLindesay/cmd-shim/issues/17 is resolved.
 # echo 'Generating test coverage report...'
