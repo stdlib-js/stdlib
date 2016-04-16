@@ -4,22 +4,49 @@ environment:
     # Node.js
     - nodejs_version: '0.10'
     - nodejs_version: '0.12'
-    - nodejs_version: '4'
-    - nodejs_version: '5'
     # io.js
     - nodejs_version: '1'
     - nodejs_version: '2'
     - nodejs_version: '3'
+    # Node.js
+    - nodejs_version: '4'
+    - nodejs_version: '5'
+
+
+# Script commands are run either via [batch][1] (`cmd:`; default) or [PowerShell][2] (`ps:`) script engines.
+#
+# [1]: https://en.wikipedia.org/wiki/Batch_file
+# [2]: https://en.wikipedia.org/wiki/Windows_PowerShell
 
 install:
-  - set PATH=C:\MinGW\bin;%PATH%
+  # Run a PowerShell command to switch to the desired Node version:
   - ps: Install-Product node $env:nodejs_version
-  - npm update -g npm
-  - npm install
+
+  # Update the npm client. Older clients cannot, e.g., handle scoped modules.
+  - cmd: npm update -g npm
+
+  # Install node module dependencies:
+  - cmd: npm install
+
+
+before_test:
+  # In order to run `make` commands, we can use [MinGW][1], a minimalist GNU for Windows, by adding the application folder to the `PATH` variable. For a reference configuration, see [utf8proc][2].
+  #
+  # [1]: http://www.mingw.org/
+  # [2]: http://fossies.org/linux/utf8proc/appveyor.yml
+  - cmd: set PATH=C:\MinGW\bin;%PATH%
+
 
 test_script:
-  - node --version
-  - npm --version
+  # Print debug info:
+  - cmd: node --version
+  - cmd: npm --version
+
+  # Rely on [MSYS][1], a collection of GNU utilities like `make`, being installed in a `1.0` directory.
+  #
+  # [1]: http://www.mingw.org/wiki/MSYS
   - 'C:\MinGW\msys\1.0\bin\sh --login -c "cd /c/projects/stdlib && make test"'
 
+
+# No build steps to be run.
 build: off
