@@ -43,6 +43,7 @@ clone_depth: 5
 
 install:
   # Install updated browsers for browser testing:
+  # TODO: address 32-bit vs 64-bit installs
   - cmd: choco upgrade firefox
   - cmd: choco upgrade googlechrome
 
