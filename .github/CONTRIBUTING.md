@@ -21,6 +21,8 @@ When contributing to this project, please follow the provided guidelines.
 
 (...coming soon...)
 
+*   Julia [style guide][julia-style-guide].
+
 
 #### Python
 
@@ -65,4 +67,6 @@ When contributing to this project, please follow the provided guidelines.
 <!-- <links> -->
 [git-seven-rules]: http://chris.beams.io/posts/git-commit/
 [imperative-mood]: https://en.wikipedia.org/wiki/Imperative_mood
+
+[julia-style-guide]: http://docs.julialang.org/en/release-0.4/manual/style-guide/
 <!-- </links> -->
