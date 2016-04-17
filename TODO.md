@@ -88,7 +88,13 @@ TODO
 32. [gh-pages](https://github.com/tschaub/gh-pages)
 33. possible issue for [float64-set-high-word](https://ci.appveyor.com/project/kgryte/stdlib/build/job/3nseqtdxqey85wfk)
     -   attempted to debug, but was able to get the right return value; so not sure what happened and why
-34. 
+34. module to identify equations in README files
+    -   parse
+    -   generate svg
+    -   generate html
+    -   commit
+    -   insert into readme (replace anything already existing)
+35. 
 
 
 ---
