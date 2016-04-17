@@ -92,6 +92,20 @@ TODO
 
 
 ---
+## Modules
+
+1. is-finite (generic)
+    -   may need to describe how different from built-in
+2. is-infinite (generic)
+3. is-nan (generic)
+4. is-even
+5. is-odd
+6. incrspace
+7. linspace, logspace, incrspace as generators (?)
+8. 
+
+
+---
 ## Ideas
 
 1. when testing numeric code, would be interesting to test against multiple platforms (ala test fixtures); e.g., Julia, Python, R, Go, Boost, etc.
