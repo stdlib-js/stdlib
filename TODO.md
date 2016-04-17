@@ -102,7 +102,18 @@ TODO
 5. is-odd
 6. incrspace
 7. linspace, logspace, incrspace as generators (?)
-8. 
+8. is-browser
+9. is-node
+10. is-worker
+11. blas routines
+12. is-plain-object (?)
+13. is-object
+14. utils-copy
+15. utils-merge
+16. utils-deep-get
+17. utils-deep-set
+18. stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
+19. 
 
 
 ---
