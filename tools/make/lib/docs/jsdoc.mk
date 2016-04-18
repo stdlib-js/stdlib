@@ -26,7 +26,7 @@ JSDOC_JSON_OUT ?= $(JSDOC_OUT)/json
 JSDOC_JSON_PATH ?= $(JSDOC_JSON_OUT)/jsdoc.json
 
 # Define the path to the JSDoc HTML template:
-JSDOC_HTML_TEMPLATE ?= templates/default
+JSDOC_HTML_TEMPLATE ?= $(TOOLS_DIR)/docs/jsdoc/templates/html
 
 # Define the output directory for JSDoc HTML documentation:
 JSDOC_HTML_OUT ?= $(JSDOC_OUT)/static
