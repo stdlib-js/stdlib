@@ -143,6 +143,7 @@ TODO
     -   per method/module/etc (similar to having a button to view source)
     -   would allow users to test the relatively speed of pathways within a function; e.g., for `erf`, how fast do particular input values compare to other input values?
         - note: naive benchmarks would only provide a single value => `erf(10)`; but this approach is flawed. Need to cover a range of values; otherwise, you could be testing a special case!
+    -   would allow another avenue for crowdsourcing benchmarks
 4. 
 
 
