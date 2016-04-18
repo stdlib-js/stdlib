@@ -16,7 +16,7 @@
         // Get the TeX code:
         tex = el.querySelector( 'code' ).innerHTML;
 
-        // Create a new element for rendering Tex:
+        // Create a new element for rendering TeX:
         newChild = document.createElement( 'div' );
 
         // Set the child's content:
