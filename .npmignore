@@ -2,11 +2,12 @@
 # Files #
 #########
 Makefile
-README.md
 TODO.md
+
 
 # Directories #
 ###############
+.github/
 build/
 docs/
 examples/
@@ -15,14 +16,23 @@ support/
 test/
 benchmark/
 
+# Only top-level directories:
+/etc/
+/tools/
+
+
 # Node.js #
 ###########
 .npmignore
+
+# Only top-level node_modules:
 /node_modules/
+
 
 # Logs #
 ########
 *.log
+
 
 # OS generated files #
 ######################
@@ -36,13 +46,16 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
+
 # Temporary files #
 ###################
 *~
 
+
 # Git #
 #######
 .git*
+
 
 # Utilities #
 #############
@@ -51,4 +64,5 @@ Desktop.ini
 .eslintrc
 .travis.yml
 circle.yml
+appveyor.yml
 .editorconfig
