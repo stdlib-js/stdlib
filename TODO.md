@@ -94,7 +94,11 @@ TODO
     -   generate html
     -   commit
     -   insert into readme (replace anything already existing)
-35. 
+35. jsdoc HTML template
+    -   needs a total refactor
+    -   browserify pipeline
+    -   see documentation.js and turf
+36. 
 
 
 ---
