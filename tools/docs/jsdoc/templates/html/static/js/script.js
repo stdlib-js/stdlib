@@ -20,7 +20,7 @@
         newChild = document.createElement( 'div' );
 
         // Set the child's content:
-        newChild.innerHTML = '$$' + tex + '$$';
+        newChild.innerHTML = '\\[' + tex + '\\]';
 
         // Get a reference to the parent node:
         parent = el.parentNode;
