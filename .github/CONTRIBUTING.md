@@ -28,6 +28,8 @@ When contributing to this project, please follow the provided guidelines.
 
 (...coming soon...)
 
+*   [PEP 8](https://www.python.org/dev/peps/pep-0008/)
+
 
 #### Go
 
