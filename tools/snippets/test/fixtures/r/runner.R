@@ -49,11 +49,11 @@ to_json <- function( x ) {
 #' @examples
 #' filepath <- get_filepath( "data.json" );
 get_filepath <- function( name ) {
-	return( paste( sourceDir, "/", name, sep = "" ) );
+	return( paste( source_dir, "/", name, sep = "" ) );
 }
 
 # Get the directory of this script:
-sourceDir <- dirname( get_script_path() );
+source_dir <- dirname( get_script_path() );
 
 # TODO: generate test fixture data (`x` and `y`), making sure to handle NaNs
 
