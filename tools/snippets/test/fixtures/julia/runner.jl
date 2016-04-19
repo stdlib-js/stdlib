@@ -41,5 +41,5 @@ dir = dirname( file );
 
 # Generate fixture data:
 # TODO: generate input data (`x`)
-out = joinpath( dir, "{{filename}}" );
+out = joinpath( dir, "TODO" );
 gen( x, out );
