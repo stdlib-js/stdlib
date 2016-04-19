@@ -23,12 +23,16 @@ function gen( x, name )
 	# TODO: generate fixtures
 
 
-	# Write fixture data to file as JSON:
+	# Store data to be written to file as a collection:
 	data = Dict([
 		("x", x),
 		("expected", y)
 	]);
+
+	# Based on the script directory, create an output filepath:
 	filepath = joinpath( dir, name );
+
+	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
 	close( outfile );
