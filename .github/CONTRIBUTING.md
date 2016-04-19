@@ -16,6 +16,8 @@ When contributing to this project, please follow the provided guidelines.
 
 (...coming soon...)
 
+*   Hadley's [notes](http://adv-r.had.co.nz/OO-essentials.html), which include a comment on `function` name conventions
+
 
 #### Julia
 
