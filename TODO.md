@@ -97,8 +97,10 @@ TODO
 35. jsdoc HTML template
     -   needs a total refactor
     -   browserify pipeline
+        -   [mathjax](https://github.com/mathjax/MathJax-node)
     -   see documentation.js and turf
-36. 
+36. tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
+37. 
 
 
 ---
