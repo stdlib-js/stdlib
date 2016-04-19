@@ -3,23 +3,23 @@
 import JSON
 
 """
-    gen( x, filepath )
+    gen( x, name )
 
 Generate fixture data and write to file.
 
 # Arguments
 
 * `x`: domain
-* `name::AbstractString`: filepath of the output file
+* `name::AbstractString`: output filename
 
 # Examples
 
 ``` julia
 julia> x = linspace( -1000, 1000, 2001 );
-julia> gen( x, \"./data.json\" );
+julia> gen( x, \"data.json\" );
 ```
 """
-function gen( x, filepath )
+function gen( x, name )
 	# TODO: generate fixtures
 
 
@@ -28,6 +28,7 @@ function gen( x, filepath )
 		("x", x),
 		("expected", y)
 	]);
+	filepath = joinpath( dir, name );
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
 	close( outfile );
@@ -41,5 +42,4 @@ dir = dirname( file );
 
 # Generate fixture data:
 # TODO: generate input data (`x`)
-out = joinpath( dir, "TODO" );
-gen( x, out );
+gen( x, "TODO" );
