@@ -100,7 +100,10 @@ TODO
         -   [mathjax](https://github.com/mathjax/MathJax-node)
     -   see documentation.js and turf
 36. tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
-37. 
+37. str manip [utils](https://github.com/dleitee/strman)
+38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
+    -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
+39. 
 
 
 ---

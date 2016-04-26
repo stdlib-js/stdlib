@@ -43,6 +43,8 @@ When contributing to this project, please follow the provided guidelines.
 
 (...coming soon...)
 
+*   [Core Guidelines](https://github.com/isocpp/CppCoreGuidelines)
+
 
 #### Make
 
