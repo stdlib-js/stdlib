@@ -8,6 +8,7 @@ sudo: true
 node_js:
   # Node.js
   - 'node'
+  - '6'
   - '5'
   - '4'
   # io.js
