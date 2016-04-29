@@ -103,7 +103,10 @@ TODO
 37. str manip [utils](https://github.com/dleitee/strman)
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
-39. 
+39. remove `0.0.0` from individual package.json files
+    -   this field will be set upon push to individual repositories
+40. number theory fcns (see starred repo)
+41. 
 
 
 ---
