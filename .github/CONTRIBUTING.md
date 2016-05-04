@@ -39,11 +39,27 @@ When contributing to this project, please follow the provided guidelines.
 (...coming soon...)
 
 
-#### C/C++
+#### C++
 
 (...coming soon...)
 
 *   [Core Guidelines](https://github.com/isocpp/CppCoreGuidelines)
+*   [FAQ](http://www.stroustrup.com/bs_faq2.html)
+*   [cppdoc](http://www.edparrish.net/common/cppdoc.html)
+*   [cpm](https://github.com/iauns/cpm)
+    -   can also be used for C packages
+
+
+#### C
+
+(...coming soon...)
+
+*   [clib](https://github.com/clibs/clib)
+    *   [package.json](https://github.com/clibs/clib/wiki/Explanation-of-package.json)
+    *   [packages](https://github.com/clibs/clib/wiki/Packages)
+    *   [list](https://github.com/clibs/list)
+    *   [levenshtein.c](https://github.com/wooorm/levenshtein.c)
+
 
 
 #### Make
