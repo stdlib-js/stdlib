@@ -1,11 +1,23 @@
 
-[![Build Status][build-image]][build-url] [![Windows Build Status][windows-build-image]][windows-build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+[![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
-[build-image]: http://img.shields.io/travis/stdlib-js/stdlib/develop.svg
-[build-url]: https://travis-ci.org/stdlib-js/stdlib
+#### Build Status
 
-[windows-build-image]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop&svg=true
-[windows-build-url]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop&svg=true
+| Linux/OS X (master) | Linux/OS X (develop) | Windows (master) | Windows (develop) |
+| --- | --- | --- | --- |
+| [![Linux/OS X Build Status (master)][build-image-master]][build-url-master] | [![Linux/OS X Build Status (develop)][build-image-develop]][build-url-develop] | [![Windows Build Status (master)][windows-build-image-master]][windows-build-url-master] | [![Windows Build Status (develop)][windows-build-image-develop]][windows-build-url-develop] |
+
+[build-image-master]: http://img.shields.io/travis/stdlib-js/stdlib/master.svg
+[build-url-master]: https://travis-ci.org/stdlib-js/stdlib
+
+[build-image-develop]: http://img.shields.io/travis/stdlib-js/stdlib/develop.svg
+[build-url-develop]: https://travis-ci.org/stdlib-js/stdlib
+
+[windows-build-image-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
+[windows-build-url-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
+
+[windows-build-image-develop]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop&svg=true
+[windows-build-url-develop]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop&svg=true
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stdlib/develop.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stdlib?branch=develop
