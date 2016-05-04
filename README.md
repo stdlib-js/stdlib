@@ -1,11 +1,12 @@
 
-[![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+[![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
 #### Build Status
 
-| Linux/OS X (master) | Linux/OS X (develop) | Windows (master) | Windows (develop) |
+| OS | Build Status (master) | Build Status (develop) | Coverage |
 | --- | --- | --- | --- |
-| [![Linux/OS X Build Status (master)][build-image-master]][build-url-master] | [![Linux/OS X Build Status (develop)][build-image-develop]][build-url-develop] | [![Windows Build Status (master)][windows-build-image-master]][windows-build-url-master] | [![Windows Build Status (develop)][windows-build-image-develop]][windows-build-url-develop] |
+| Linux/OS X | [![Linux/OS X Build Status (master)][build-image-master]][build-url-master] | [![Linux/OS X Build Status (develop)][build-image-develop]][build-url-develop] | [![Coverage Status][coverage-image]][coverage-url] |
+| Windows | [![Windows Build Status (master)][windows-build-image-master]][windows-build-url-master] | [![Windows Build Status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![Coverage Status][coverage-image]][coverage-url] |
 
 [build-image-master]: http://img.shields.io/travis/stdlib-js/stdlib/master.svg
 [build-url-master]: https://travis-ci.org/stdlib-js/stdlib
