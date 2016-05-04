@@ -106,7 +106,8 @@ TODO
 39. remove `0.0.0` from individual package.json files
     -   this field will be set upon push to individual repositories
 40. number theory fcns (see starred repo)
-41. 
+41. [hdbscan](https://github.com/lmcinnes/hdbscan)
+42. 
 
 
 ---
