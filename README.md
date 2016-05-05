@@ -1,6 +1,10 @@
 <!-- <badges> -->
 ## Status
 
+#### Version
+
+[![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
+
 #### Build
 
 | OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
@@ -23,7 +27,24 @@ stdlib
 A standard library for JavaScript in JavaScript.
 
 
+---
+## License
+
+See [License][license].
+
+
+## Copyright
+
+Copyright &copy; 2016. The Stdlib Authors.
+
+
 <!-- <links> -->
+
+[npm-image]: http://img.shields.io/npm/v/@stdlib-js/stdlib.svg
+[npm-url]: https://npmjs.org/package/@stdlib-js/stdlib
+
+[node-image]: http://img.shields.io/node/v/@stdlib-js/stdlib.svg
+[node-url]: https://github.com/@stdlib-js/stdlib
 
 [build-image-master]: http://img.shields.io/travis/stdlib-js/stdlib/master.svg
 [build-url-master]: https://travis-ci.org/stdlib-js/stdlib
@@ -48,5 +69,7 @@ A standard library for JavaScript in JavaScript.
 
 [dev-dependencies-image]: http://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
+
+[license]: https://raw.githubusercontent.com/stdlib-js/stdlib/master/LICENSE
 
 <!-- </links> -->
