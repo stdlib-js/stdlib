@@ -60,5 +60,5 @@
   "engines": {
     "node": ">=0.10"
   },
-  "license": "MIT"
+  "license": "MIT AND BSL-1.0"
 }
