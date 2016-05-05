@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # DESCRIPTION #
 
@@ -56,7 +56,7 @@ on_error() {
 # Tails the log output.
 tail_output() {
    echo "Printing the last $TAIL_LINES lines of log output..."
-   tail -$TAIL_LINES $CI_LOG_PATH
+   tail -"$TAIL_LINES" "$CI_LOG_PATH"
 }
 
 # Runs clean-up tasks.
@@ -78,19 +78,19 @@ set -e
 trap 'on_error' ERR
 
 # Create an output log file:
-mkdir -p $CI_LOG_DIR
-touch $CI_LOG_PATH
+mkdir -p "$CI_LOG_DIR"
+touch "$CI_LOG_PATH"
 
 # Start a heartbeat:
 start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 echo 'Running tests...'
-make test >> $CI_LOG_PATH 2>&1
+make test >> "$CI_LOG_PATH" 2>&1
 
 # TODO: uncomment once https://github.com/ForbesLindesay/cmd-shim/issues/17 is resolved.
 # echo 'Generating test coverage report...'
-# make test-cov >> $CI_LOG_PATH 2>&1
+# make test-cov >> "$CI_LOG_PATH" 2>&1
 
 echo 'Success!'
 

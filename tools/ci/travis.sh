@@ -55,7 +55,7 @@ on_error() {
 # Tails the log output.
 tail_output() {
    echo "Printing the last $TAIL_LINES lines of log output..."
-   tail -$TAIL_LINES $CI_OUT
+   tail -"$TAIL_LINES" "$CI_OUT"
 }
 
 # Runs clean-up tasks.
@@ -74,21 +74,21 @@ set -e
 trap 'on_error' ERR
 
 # Create an output log file:
-sudo touch $CI_OUT
-sudo chown travis $CI_OUT
+sudo touch "$CI_OUT"
+sudo chown travis "$CI_OUT"
 
 # Start a heartbeat:
 start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 echo 'Running tests...'
-make test >> $CI_OUT 2>&1
+make test >> "$CI_OUT" 2>&1
 
 echo 'Generating test coverage report...'
-make test-cov >> $CI_OUT 2>&1
+make test-cov >> "$CI_OUT" 2>&1
 
 echo 'Sending coverage report to coverage service...'
-make coverage >> $CI_OUT 2>&1
+make coverage >> "$CI_OUT" 2>&1
 
 echo 'Success!'
 
