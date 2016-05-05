@@ -1,13 +1,21 @@
 
-[![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+---
+## Status
 
-#### Status
+#### Build
 
 | OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
 | --- | --- | --- | --- | --- |
 | Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
 | Windows | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
 
+
+#### Dependencies
+
+[![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+
+
+<!-- <links> -->
 [build-image-master]: http://img.shields.io/travis/stdlib-js/stdlib/master.svg
 [build-url-master]: https://travis-ci.org/stdlib-js/stdlib
 
@@ -31,3 +39,5 @@
 
 [dev-dependencies-image]: http://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
+
+<!-- </links> -->
