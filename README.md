@@ -1,12 +1,12 @@
 
 [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
-#### Build Status
+#### Status
 
-| OS | Build (master) | Build (develop) | Coverage (master) | Coverage (develop) |
+| OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
 | --- | --- | --- | --- | --- |
-| Linux/OS X | [![Linux/OS X Build Status (master)][build-image-master]][build-url-master] | [![Linux/OS X Build Status (develop)][build-image-develop]][build-url-develop] | [![Coverage Status (master)][coverage-image-master]][coverage-url-master] | [![Coverage Status (develop)][coverage-image-develop]][coverage-url-develop]
-| Windows | [![Windows Build Status (master)][windows-build-image-master]][windows-build-url-master] | [![Windows Build Status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![Coverage Status (master)][coverage-image-master]][coverage-url-master] | [![Coverage Status (develop)][coverage-image-develop]][coverage-url-develop] |
+| Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
+| Windows | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
 
 [build-image-master]: http://img.shields.io/travis/stdlib-js/stdlib/master.svg
 [build-url-master]: https://travis-ci.org/stdlib-js/stdlib
