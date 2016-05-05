@@ -1,9 +1,4 @@
-stdlib
-===
-> 
-
 <!-- <badges> -->
----
 ## Status
 
 #### Build
@@ -18,9 +13,14 @@ stdlib
 
 [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
+---
 <!-- </badges> -->
 
----
+stdlib
+===
+> 
+
+
 
 
 <!-- <links> -->
