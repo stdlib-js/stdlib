@@ -3,7 +3,7 @@
 
 #### Version
 
-[![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
+[![NPM version][npm-image]][npm-url] [![git tag][tag-image]][tag-url] [![Node.js version][node-image]][node-url]
 
 #### Build
 
@@ -42,6 +42,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 [npm-image]: http://img.shields.io/npm/v/@stdlib-js/stdlib.svg
 [npm-url]: https://npmjs.org/package/@stdlib-js/stdlib
+
+[tag-image]: https://img.shields.io/github/tag/stdlib-js/stdlib.svg
+[tag-url]: https://github.com/stdlib-js/stdlib/tags
 
 [node-image]: http://img.shields.io/node/v/@stdlib-js/stdlib.svg
 [node-url]: https://github.com/@stdlib-js/stdlib
