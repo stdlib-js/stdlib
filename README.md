@@ -30,12 +30,12 @@ A standard library for JavaScript in JavaScript.
 ---
 ## License
 
-See [License][license].
+See [LICENSE][license].
 
 
 ## Copyright
 
-Copyright &copy; 2016. The Stdlib Authors.
+Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 
 <!-- <links> -->
@@ -70,6 +70,7 @@ Copyright &copy; 2016. The Stdlib Authors.
 [dev-dependencies-image]: http://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
 
+[authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 [license]: https://raw.githubusercontent.com/stdlib-js/stdlib/master/LICENSE
 
 <!-- </links> -->
