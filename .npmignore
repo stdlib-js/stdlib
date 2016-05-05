@@ -66,3 +66,4 @@ Desktop.ini
 circle.yml
 appveyor.yml
 .editorconfig
+.codeclimate.yml
