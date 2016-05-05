@@ -18,9 +18,9 @@
 
 stdlib
 ===
-> 
+> Standard library.
 
-
+A standard library for JavaScript in JavaScript.
 
 
 <!-- <links> -->
