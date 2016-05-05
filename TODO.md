@@ -112,7 +112,8 @@ TODO
     -   temporary `git` tags?
 43. make Travis and Appveyor build badges the same dimensions
     -   currently, Appveyor includes a logo
-44. 
+44. node security badges for dependencies (including dev dependencies) (?)
+45. 
 
 
 ---
