@@ -107,7 +107,12 @@ TODO
     -   this field will be set upon push to individual repositories
 40. number theory fcns (see starred repo)
 41. [hdbscan](https://github.com/lmcinnes/hdbscan)
-42. 
+42. check if `codecov` will accept multiple coverage reports
+    -   would like the ability to distinguish Linux, Windows, and browser coverage reports
+    -   temporary `git` tags?
+43. make Travis and Appveyor build badges the same dimensions
+    -   currently, Appveyor includes a logo
+44. 
 
 
 ---
