@@ -1,0 +1,17 @@
+engines:
+  golint:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+ratings:
+  paths:
+  - lib/**
+exclude_paths:
+- tools/**/*
