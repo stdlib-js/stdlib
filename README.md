@@ -3,7 +3,7 @@
 
 #### Version
 
-[![NPM version][npm-image]][npm-url] [![git tag][tag-image]][tag-url] [![Node.js version][node-image]][node-url]
+[![git tag][tag-image]][tag-url] [![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
 
 #### Build
 
