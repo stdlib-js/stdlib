@@ -119,7 +119,8 @@ TODO
 46. find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
     -   include ESLint rules for each (where applicable) guideline
 47. add code climate badge
-48. 
+48. consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
+49. 
 
 
 ---
