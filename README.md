@@ -40,19 +40,19 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 <!-- <links> -->
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib-js/stdlib.svg
+[npm-image]: https://img.shields.io/npm/v/@stdlib-js/stdlib.svg
 [npm-url]: https://npmjs.org/package/@stdlib-js/stdlib
 
 [tag-image]: https://img.shields.io/github/tag/stdlib-js/stdlib.svg
 [tag-url]: https://github.com/stdlib-js/stdlib/tags
 
-[node-image]: http://img.shields.io/node/v/@stdlib-js/stdlib.svg
+[node-image]: https://img.shields.io/node/v/@stdlib-js/stdlib.svg
 [node-url]: https://github.com/@stdlib-js/stdlib
 
-[build-image-master]: http://img.shields.io/travis/stdlib-js/stdlib/master.svg
+[build-image-master]: https://img.shields.io/travis/stdlib-js/stdlib/master.svg
 [build-url-master]: https://travis-ci.org/stdlib-js/stdlib
 
-[build-image-develop]: http://img.shields.io/travis/stdlib-js/stdlib/develop.svg
+[build-image-develop]: https://img.shields.io/travis/stdlib-js/stdlib/develop.svg
 [build-url-develop]: https://travis-ci.org/stdlib-js/stdlib
 
 [windows-build-image-master]: https://img.shields.io/appveyor/ci/stdlib-js/stdlib/master.svg
@@ -67,10 +67,10 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [coverage-image-develop]: https://img.shields.io/codecov/c/github/stdlib-js/stdlib/develop.svg
 [coverage-url-develop]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[dependencies-image]: http://img.shields.io/david/stdlib-js/stdlib/develop.svg
+[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib/develop.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
+[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
 
 [authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
