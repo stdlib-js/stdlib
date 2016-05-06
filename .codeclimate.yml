@@ -93,7 +93,6 @@ engines:
         - BUG
         - XXX
 
-
   # Disable all other engines:
   brakeman:
     enabled: false
