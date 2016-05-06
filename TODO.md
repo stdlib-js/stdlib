@@ -73,10 +73,12 @@ TODO
 24. generic `is-finite` util should include note about how differs from global `isFinite`
 25. create better examples for constants
     -   e.g., how and why and in what contexts a constant may be used
-26. Avogadro's number
+26. 
 27. project stats
     -   use [ndu](https://github.com/groupon/ndu) to visualize dependency size
     -   use [disc](https://github.com/hughsk/disc) to visualize browserify output
+    -   later project stats can be displayed in a separate webpage
+        -   see visualcinnamon.com for inspiration
 28. FIX: security vulnerability when using `rm -rf` in Makefile rules
     -   due to using environment variables. If one is improperly set, could be catastrophic. Safe delete?
         -   consider [trash](https://github.com/sindresorhus/trash) and [trash-cli](https://github.com/sindresorhus/trash-cli)
@@ -88,23 +90,25 @@ TODO
 32. [gh-pages](https://github.com/tschaub/gh-pages)
 33. possible issue for [float64-set-high-word](https://ci.appveyor.com/project/kgryte/stdlib/build/job/3nseqtdxqey85wfk)
     -   attempted to debug, but was able to get the right return value; so not sure what happened and why
+    -   NOTE: this seems to be a recurring bug; builds continue to occasionally fail on Windows
 34. module to identify equations in README files
     -   parse
     -   generate svg
     -   generate html
     -   commit
     -   insert into readme (replace anything already existing)
+    -   similar to Makefile test targets, include a target to filter and selectively update README equations
 35. jsdoc HTML template
     -   needs a total refactor
     -   browserify pipeline
         -   [mathjax](https://github.com/mathjax/MathJax-node)
     -   see documentation.js and turf
 36. tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
-37. str manip [utils](https://github.com/dleitee/strman)
+37. 
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
 39. 
-40. number theory fcns (see starred repo)
+40. 
 41. 
 42. check if `codecov` will accept multiple coverage reports
     -   would like the ability to distinguish Linux, Windows, and browser coverage reports
@@ -147,6 +151,10 @@ TODO
 17. utils-deep-set
 18. stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 19. [hdbscan](https://github.com/lmcinnes/hdbscan)
+20. number theory fcns (see starred repo)
+21. str manip [utils](https://github.com/dleitee/strman)
+22. Avogadro's number
+23. 
 
 
 ---
@@ -175,7 +183,7 @@ TODO
 
 #### tools
 
-Will need a `tools` directory to
+Will need a `tools` directory in individual repositories to
 *   house `Makefile` dependencies
 *   include CI scripts
 *   house doc tools
@@ -188,7 +196,7 @@ Will need a `tools` directory to
 1. Populate individual module contributors automatically by extracting author info from `git` commits?
     -   main author could be populated based on highest number of commits? most changes? responsible for most lines of code?
         -   most lines of code may be best heuristic as likely that the author is thus most knowledgeable/owns the most code
-        -   over time the main author could change...is this a problem?
+        -   over time the main author could change...is this a problem? => prob not, as the new author should be most familiar with the relevant code
 2. populate scripts similarly for all modules
 3. augment `keywords` with universal project `keywords`
 4. can add `testling` config, if needed
@@ -198,7 +206,8 @@ Will need a `tools` directory to
     -   if a dependency is already included in the `package.json`, keep that dependency, thus allowing local override of a dependency
         -   how will that work in terms of dep install within the context of the larger project?
     -   [module-deps](https://github.com/substack/module-deps)
-7.
+7. can updating the version be automated?
+8. 
 
 
 #### LICENSE
