@@ -7,6 +7,7 @@
 
 #### Build
 
+<!-- TODO: distinguish between Linux and Windows code coverage -->
 | OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
 | --- | --- | --- | --- | --- |
 | Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
@@ -55,6 +56,7 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [build-image-develop]: https://img.shields.io/travis/stdlib-js/stdlib/develop.svg
 [build-url-develop]: https://travis-ci.org/stdlib-js/stdlib
 
+<!-- FIXME: shields.io AppVeyor badges do not seem to work -->
 [windows-build-image-master]: https://img.shields.io/appveyor/ci/stdlib-js/stdlib/master.svg
 [windows-build-url-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
 
