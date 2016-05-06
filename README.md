@@ -36,7 +36,7 @@ See [LICENSE][license].
 
 ## Copyright
 
-Copyright &copy; 2016. The Stdlib [Authors][authors].
+Copyright &copy; 2016. The stdlib [Authors][authors].
 
 
 <!-- <links> -->
