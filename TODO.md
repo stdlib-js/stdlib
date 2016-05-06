@@ -120,6 +120,8 @@ TODO
     -   include ESLint rules for each (where applicable) guideline
 47. add code climate badge
 48. consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
+    -   markdown linting
+    -   js code in markdown linting
 49. 
 
 
