@@ -112,12 +112,14 @@ TODO
     -   temporary `git` tags?
 43. make Travis and Appveyor build badges the same dimensions
     -   currently, Appveyor includes a logo
+    -   could use shields.io
 44. node security badges for dependencies (including dev dependencies) (?)
 45. `*.cpp` vs `*.cc` for C++ files?
     -   use `*.cpp` and `*.hpp`
 46. find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
     -   include ESLint rules for each (where applicable) guideline
-47.  
+47. add code climate badge
+48. 
 
 
 ---
