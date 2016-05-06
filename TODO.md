@@ -103,10 +103,9 @@ TODO
 37. str manip [utils](https://github.com/dleitee/strman)
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
-39. remove `0.0.0` from individual package.json files
-    -   this field will be set upon push to individual repositories
+39. 
 40. number theory fcns (see starred repo)
-41. [hdbscan](https://github.com/lmcinnes/hdbscan)
+41. 
 42. check if `codecov` will accept multiple coverage reports
     -   would like the ability to distinguish Linux, Windows, and browser coverage reports
     -   temporary `git` tags?
@@ -147,7 +146,7 @@ TODO
 16. utils-deep-get
 17. utils-deep-set
 18. stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
-19. 
+19. [hdbscan](https://github.com/lmcinnes/hdbscan)
 
 
 ---
