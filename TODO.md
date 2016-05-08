@@ -109,7 +109,9 @@ TODO
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
 39. 
 40. 
-41. 
+41. for datasets,
+    -   include datapackage.json
+    -   license under CC0
 42. check if `codecov` will accept multiple coverage reports
     -   would like the ability to distinguish Linux, Windows, and browser coverage reports
     -   temporary `git` tags?
@@ -275,6 +277,8 @@ Will need a `tools` directory in individual repositories to
 |---------e
 |---------pi
 |---------two-pi
+|-------datasets
+|---------anscombes-quartet
 |-------fastmath
 |---------special
 |-----------cos
