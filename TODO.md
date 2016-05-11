@@ -108,6 +108,11 @@ TODO
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
 39. [add](https://github.com/vhf/v8-bailout-reasons) to contribution guidelines
+    -   [bluebird](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
+    -   [optimization killers](https://github.com/zhangchiqing/OptimizationKillers)
+    -   [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/v8/)
+    -   [v8-perf](https://github.com/thlorenz/v8-perf)
+    -   [chrome devtools](https://github.com/GoogleChrome/devtools-docs/issues/53)
 40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
     -   for tests, be sure to record the seed so that failed tests can be debugged
 41. for datasets,
