@@ -107,7 +107,7 @@ TODO
 37. 
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
-39. 
+39. [add](https://github.com/vhf/v8-bailout-reasons) to contribution guidelines
 40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
     -   for tests, be sure to record the seed so that failed tests can be debugged
 41. for datasets,
