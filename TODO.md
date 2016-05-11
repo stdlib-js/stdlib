@@ -108,7 +108,8 @@ TODO
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
 39. 
-40. 
+40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
+    -   for tests, be sure to record the seed so that failed tests can be debugged
 41. for datasets,
     -   include datapackage.json
     -   license under CC0
@@ -118,7 +119,7 @@ TODO
 43. make Travis and Appveyor build badges the same dimensions
     -   currently, Appveyor includes a logo
     -   could use shields.io
-44. 
+44. consider using [svgo](https://github.com/svg/svgo) to minimize eqn svgs
 45. `*.cpp` vs `*.cc` for C++ files?
     -   use `*.cpp` and `*.hpp`
 46. find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
