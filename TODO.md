@@ -139,6 +139,8 @@ TODO
 ---
 ## Modules
 
+0. pow implementation
+    -   Math.pow(10,308) is inaccurate; should be 1e308, but instead `1.0000000000000006e+308` ;-( (Node v6.0.0)
 1. is-finite (generic)
     -   may need to describe how different from built-in
 2. is-infinite (generic)
@@ -162,7 +164,10 @@ TODO
 20. number theory fcns (see starred repo)
 21. str manip [utils](https://github.com/dleitee/strman)
 22. Avogadro's number
-23. 
+23. round to number of [sig figs](http://stackoverflow.com/questions/202302/rounding-to-an-arbitrary-number-of-significant-digits)
+    -   see [MFX](http://www.mathworks.com/matlabcentral/fileexchange/26212-round-with-significant-digits)
+    -   see [Julia](https://github.com/JuliaLang/julia/blob/master/base/floatfuncs.jl#L112)
+24. 
 
 
 ---
