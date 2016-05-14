@@ -148,8 +148,8 @@ TODO
     -   may need to describe how different from built-in
 2. is-infinite (generic)
 3. is-nan (generic)
-4. is-even
-5. is-odd
+4. is-even (generic)
+5. is-odd (generic)
 6. incrspace
 7. linspace, logspace, incrspace as generators (?)
 8. is-browser
