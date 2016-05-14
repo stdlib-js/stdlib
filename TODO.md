@@ -104,7 +104,10 @@ TODO
         -   [mathjax](https://github.com/mathjax/MathJax-node)
     -   see documentation.js and turf
 36. tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
-37. 
+37. a project reference manager?
+    -   something akin to bibtec; i.e., a centralized list of references which can be globally referenced (e.g., IEEE754, as the Wikipedia reference, etc)
+    -   an individual module, when created, would get the global link included in the README
+    -   an individual module could override a reference by including a different link, but having the same "tag" in its README
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
 39. [add](https://github.com/vhf/v8-bailout-reasons) to contribution guidelines
