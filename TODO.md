@@ -176,7 +176,9 @@ TODO
     -   max
     -   min subnormal
     -   etc.
-25. 
+25. [fibo](https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.62tfusajl)
+    -   lookup
+26. 
 
 
 ---
