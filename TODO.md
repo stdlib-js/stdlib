@@ -170,7 +170,11 @@ TODO
 23. round to number of [sig figs](http://stackoverflow.com/questions/202302/rounding-to-an-arbitrary-number-of-significant-digits)
     -   see [MFX](http://www.mathworks.com/matlabcentral/fileexchange/26212-round-with-significant-digits)
     -   see [Julia](https://github.com/JuliaLang/julia/blob/master/base/floatfuncs.jl#L112)
-24. 
+24. double decimal exponents
+    -   max
+    -   min subnormal
+    -   etc.
+25. 
 
 
 ---
