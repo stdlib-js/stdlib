@@ -138,7 +138,8 @@ TODO
     -   js code in markdown linting
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
     -   allow a "preview" alongside current prod
-50. 
+50. investigate whether [bit operators](http://www.netlib.org/fdlibm/e_pow.c) would be better for `is-even` and `is-odd`
+51. 
 
 
 ---
