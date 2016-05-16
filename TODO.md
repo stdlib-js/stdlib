@@ -139,7 +139,17 @@ TODO
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
     -   allow a "preview" alongside current prod
 50. investigate whether [bit operators](http://www.netlib.org/fdlibm/e_pow.c) would be better for `is-even` and `is-odd`
-51. 
+51. browserify transform to load all "man" pages (e.g., readmes)
+    -   allow help docs to be loaded into a browser for interactive environments
+    -   store in local storage (?) or in-memory
+52. load modules into a REPL
+    -   man pages can be READMES
+    -   help(blas.copy) (or help("blas.dcopy"))
+        -   with `maps`, should be able to use function reference (symbol) as key
+53. README to man doc
+    -   cannot directly print a raw README, as will contain markup
+    -   will need to transform into plain text
+54. 
 
 
 ---
