@@ -149,7 +149,9 @@ TODO
 53. README to man doc
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
-54. 
+54. utility which scans the project for `package.json` files and validates the file using a defined schema
+    -   can be used as part of a build step to ensure `package.json` files are properly formatted, valid, and have requisite information
+55. 
 
 
 ---
