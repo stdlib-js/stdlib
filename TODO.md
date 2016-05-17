@@ -191,7 +191,8 @@ TODO
     -   lookup
 26. [scalbn](https://github.com/freebsd/freebsd/blob/master/lib/msun/src/s_scalbn.c)
     -   [cppreference](http://en.cppreference.com/w/c/numeric/math/scalbn)
-27. 
+27. float64-to-uint32
+28. 
 
 
 ---
