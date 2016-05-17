@@ -189,7 +189,9 @@ TODO
     -   etc.
 25. [fibo](https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.62tfusajl)
     -   lookup
-26. 
+26. [scalbn](https://github.com/freebsd/freebsd/blob/master/lib/msun/src/s_scalbn.c)
+    -   [cppreference](http://en.cppreference.com/w/c/numeric/math/scalbn)
+27. 
 
 
 ---
