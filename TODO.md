@@ -159,8 +159,6 @@ TODO
 ---
 ## Modules
 
-0. pow implementation
-    -   Math.pow(10,308) is inaccurate; should be 1e308, but instead `1.0000000000000006e+308` ;-( (Node v6.0.0)
 1. is-finite (generic)
     -   may need to describe how different from built-in
 2. is-infinite (generic)
