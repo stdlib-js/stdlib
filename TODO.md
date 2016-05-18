@@ -73,7 +73,7 @@ TODO
 24. generic `is-finite` util should include note about how differs from global `isFinite`
 25. create better examples for constants
     -   e.g., how and why and in what contexts a constant may be used
-26. 
+26. investigate [textlint](https://github.com/textlint/textlint)
 27. project stats
     -   use [ndu](https://github.com/groupon/ndu) to visualize dependency size
     -   use [disc](https://github.com/hughsk/disc) to visualize browserify output
