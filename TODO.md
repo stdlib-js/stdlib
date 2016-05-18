@@ -49,7 +49,7 @@ TODO
 11. add CONTRIBUTING.md
     -   PR template should have link to this and the style guide
 12. determine strategy for generic validation fcns
-13. `roundn` should guard against underflow and overflow!
+13. 
 14. consider changing `isNumber` to `isNumeric`
 15. export regexps?
 16. `Makefile` target to run test fixtures
@@ -105,7 +105,7 @@ TODO
     -   see documentation.js and turf
 36. tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
 37. a project reference manager?
-    -   something akin to bibtec; i.e., a centralized list of references which can be globally referenced (e.g., IEEE754, as the Wikipedia reference, etc)
+    -   something akin to bibtex; i.e., a centralized list of references which can be globally referenced (e.g., IEEE754, as the Wikipedia reference, etc)
     -   an individual module, when created, would get the global link included in the README
     -   an individual module could override a reference by including a different link, but having the same "tag" in its README
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
