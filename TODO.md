@@ -197,7 +197,9 @@ TODO
     -   [cppreference](http://en.cppreference.com/w/c/numeric/math/scalbn)
     -   how would the `FLOAT_RADIX` be supplied?
 27. int32-to-uint32
-28. 
+28. [fast](https://golang.org/src/math/pow.go) pow
+    -   may need to research
+29. 
 
 
 ---
