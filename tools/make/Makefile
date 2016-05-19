@@ -24,6 +24,7 @@ endif
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_DIR)/lib/help/Makefile
+include $(TOOLS_MAKE_DIR)/lib/repl/Makefile
 include $(TOOLS_MAKE_DIR)/lib/find/Makefile
 include $(TOOLS_MAKE_DIR)/lib/lint/Makefile
 include $(TOOLS_MAKE_DIR)/lib/notes/Makefile

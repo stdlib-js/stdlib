@@ -2,6 +2,7 @@
 Usage: make <cmd>
 
   make help                Print this message.
+  make repl                Start a REPL environment.
   make notes               Search for code annotations.
   make list-sources        List all source files (excluding examples and tests).
   make list-examples       List all example files.
