@@ -138,6 +138,7 @@ TODO
 47. add code climate badge
 48. consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
     -   markdown linting
+        -   [alex](https://github.com/wooorm/alex)
     -   js code in markdown linting
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
     -   allow a "preview" alongside current prod
@@ -150,7 +151,7 @@ TODO
         -   can these be dynamically compiled/transformed at runtime, or will startup time be too slow
             -   dynamic would be nice, as then would not need to maintain a separate collection of `man` docs
             -   need some way of determining which modules are exposed in the REPL (could possibly parse the context files a la browserify, find `require` statements, and build), finding their READMEs, transforming, and then building a hash table for printing in the REPL
-    -   help(blas.copy) (or help("blas.dcopy"))
+    -   `help(blas.copy)` (or `help("blas.dcopy")` or `? blas.dcopy` (like Julia)) 
         -   with `maps`, should be able to use function reference (symbol) as key
     -   refs
         -   [docs](https://nodejs.org/api/repl.html)
@@ -163,9 +164,12 @@ TODO
     -   ASCII charts
         -   should be able to create an isomorphic API with browser charts
         -   ability to open chart in browser
+        -   [sparkly](https://github.com/sindresorhus/sparkly)
+        -   [jstrace/chart](https://github.com/jstrace/chart)
+    -   ASCII [tables](https://github.com/sorensen/ascii-table)
     -   should be able to load a REPL context in a browser
         -   meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
-53. README to man doc (see 52)
+53. README to man doc (see above)
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
 54. utility which scans the project for `package.json` files and validates the file using a defined schema
@@ -174,7 +178,11 @@ TODO
     -   could be part of a lint step
 56. refactor module CLIs to match CLI snippet
 57. add the `engines` field to module `package.json` files
-58. 
+58. consider adding a license prefix to each file
+    -   [julia](https://github.com/JuliaLang/julia/blob/master/contrib/add_license_to_files.jl)
+59. intro how-tos
+    -   [gifs](https://github.com/chjj/ttystudio)
+60. 
 
 
 ---
