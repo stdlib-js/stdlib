@@ -1,11 +1,11 @@
 makie
 ===
-> Run project Makefile targets from anywhere in the project.
+> Execute project Makefile commands from anywhere in the project.
 
 <!-- <intro> -->
-Typically, to execute project `Makefile` targets, you must be in the root project directory. While `make` supports specifying a directory from which to run a `Makefile`, this can be cumbersome, especially if a target expects configuration via environment variables.
+Typically, to execute project `Makefile` commands, you must be in the root project directory. While `make` supports specifying a directory from which to run a `Makefile`, this can be cumbersome, especially if a command expects configuration via environment variables.
 
-This utility provides support for executing a subset of `Makefile` targets from anywhere within the project. The list of supported targets includes:
+This utility provides support for executing a subset of `Makefile` commands from anywhere within the project. The list of supported targets includes:
 
 * `repl`
 * `examples`
@@ -14,7 +14,7 @@ This utility provides support for executing a subset of `Makefile` targets from 
 * `test-summary`
 * `view-cov`
 
-When executing a target, the current working directory is used as a filter. Thus, when invoking the `test` target, __only__ those tests in the current working directory and below will be run.
+When executing a command, the current working directory is used as a filter. Thus, when invoking the `test` command, __only__ those tests in the current working directory and below will be run.
 
 <!-- </intro> -->
 
@@ -57,7 +57,7 @@ Options:
 
 ``` bash
 $ makie test-cov
-# => <target_output>
+# => <command_output>
 ```
 <!-- </examples> -->
 <!-- </cli> -->

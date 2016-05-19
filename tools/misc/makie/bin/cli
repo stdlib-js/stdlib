@@ -96,7 +96,7 @@ function make( root, target ) {
 		// Check that we are within the project:
 		path = dir.substring( 0, root.length );
 		if ( path !== root ) {
-			err = 'In order to execute Makefile targets, you must be within the project. Current directory: `' + dir + '`. Project directory: `' + root + '`.\n';
+			err = 'In order to execute Makefile commands, you must be within the project. Current directory: `' + dir + '`. Project directory: `' + root + '`.\n';
 			process.stderr.write( err, 'utf8' );
 			return process.exit( 1 );
 		}
