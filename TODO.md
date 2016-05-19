@@ -167,7 +167,8 @@ TODO
 55. build utility to scan all project dirs for camelcase file names
     -   could be part of a lint step
 56. refactor module CLIs to match CLI snippet
-57. 
+57. add the `engines` field to module `package.json` files
+58. 
 
 
 ---
