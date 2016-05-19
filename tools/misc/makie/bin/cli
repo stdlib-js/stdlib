@@ -84,29 +84,29 @@ function make( root, target ) {
 	var dir;
 	var t;
 
+	// Get the current working directory of the process:
+	dir = cwd();
+
 	t = targets[ target ];
 	if ( t === void 0 ) {
 		err = 'Unrecognized/unsupported Makefile target: `' + target + '`.\n';
 		process.stderr.write( err, 'utf8' );
 		return process.exit( 1 );
 	}
+	// Check that we are within the project...
+	path = dir.substring( 0, root.length );
+	if ( path !== root ) {
+		err = 'In order to execute Makefile commands, you must be within the project. Current directory: `' + dir + '`. Project directory: `' + root + '`.\n';
+		process.stderr.write( err, 'utf8' );
+		return process.exit( 1 );
+	}
 	if ( t ) {
-		// Get the current working directory of the process:
-		dir = cwd();
-
-		// Check that we are within the project:
-		path = dir.substring( 0, root.length );
-		if ( path !== root ) {
-			err = 'In order to execute Makefile commands, you must be within the project. Current directory: `' + dir + '`. Project directory: `' + root + '`.\n';
-			process.stderr.write( err, 'utf8' );
-			return process.exit( 1 );
-		}
 		// Remove the root path (including any beginning slash):
-		dir = dir.substring( root.length+1 );
+		path = dir.substring( root.length+1 );
 
 		// If we are in a sub-directory, use the relative sub-directory path to create a filter...
-		if ( dir ) {
-			filter = t+'=.*/'+dir+'/.*';
+		if ( path ) {
+			filter = t+'=.*/'+path+'/.*';
 		}
 	}
 	// Assemble command-line arguments:
@@ -121,6 +121,7 @@ function make( root, target ) {
 	opts.cwd = root;
 	if ( target === 'repl' ) {
 		opts.stdio = 'inherit';
+		args.unshift( 'REPL_DIR='+dir );
 		proc = spawn( 'make', args, opts );
 	} else {
 		proc = spawn( 'make', args, opts );
