@@ -4,6 +4,9 @@
   "description": "stdlib",
   "author": {},
   "contributors": [],
+  "bin": {
+    "stdlib-repl": "./bin/repl"
+  },
   "scripts": {
     "test": "make test",
     "test-local": "make test-local",
