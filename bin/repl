@@ -11,7 +11,7 @@
 export NODE=node
 
 # Define the path to the stdlib REPL executable:
-export REPL_PATH=./lib/node_modules/\@stdlib/repl/bin/cli
+export REPL_PATH=`dirname "$0"`/../lib/node_modules/\@stdlib/repl/bin/cli
 
 
 # FUNCTIONS #
