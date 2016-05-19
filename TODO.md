@@ -159,7 +159,8 @@ TODO
     -   can be used as part of a build step to ensure `package.json` files are properly formatted, valid, and have requisite information
 55. build utility to scan all project dirs for camelcase file names
     -   could be part of a lint step
-56. 
+56. refactor module CLIs to match CLI snippet
+57. 
 
 
 ---
