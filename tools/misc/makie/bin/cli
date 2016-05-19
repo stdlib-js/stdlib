@@ -18,6 +18,7 @@ var opts = require( './opts.json' );
 // VARIABLES //
 
 var targets = {
+	'repl': null,
 	'examples': 'EXAMPLES_FILTER',
 	'test': 'TESTS_FILTER',
 	'test-summary': 'TESTS_FILTER',
@@ -107,14 +108,12 @@ function make( root, target ) {
 			filter = t+'=.*/'+dir+'/.*';
 		}
 	}
-	if ( filter === void 0 ) {
-		filter = ' ';
-	}
 	// Assemble command-line arguments:
-	args = [
-		filter,
-		target
-	];
+	args = [];
+	if ( filter ) {
+		args.push( filter );
+	}
+	args.push( target );
 
 	// Spawn a new process to execute the command:
 	proc = spawn( 'make', args, {

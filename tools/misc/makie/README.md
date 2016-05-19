@@ -7,6 +7,7 @@ Typically, to execute project `Makefile` targets, you must be in the root projec
 
 This utility provides support for executing a subset of `Makefile` targets from anywhere within the project. The list of supported targets includes:
 
+* `repl`
 * `examples`
 * `test`
 * `test-cov`
