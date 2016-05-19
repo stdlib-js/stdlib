@@ -8,6 +8,7 @@
     "stdlib-repl": "./bin/repl"
   },
   "scripts": {
+    "repl": "make repl",
     "test": "make test",
     "test-local": "make test-local",
     "test-ci": "make test-ci",
