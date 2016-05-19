@@ -1,4 +1,4 @@
-Make Everywhere
+makie
 ===
 > Run project Makefile targets from anywhere in the project.
 
@@ -23,13 +23,13 @@ When executing a target, the current working directory is used as a filter. Thus
 To install the command-line utility, add the following line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS X), making sure to adjust the path based on your project setup.
 
 ```
-alias makie=/path/to/stdlib/tools/misc/make-everywhere/bin/cli
+alias makie=/path/to/stdlib/tools/misc/makie/bin/cli
 ```
 
 and then
 
 ``` bash
-$ chmod +x /path/to/stdlib/tools/misc/make-everywhere/bin/cli
+$ chmod +x /path/to/stdlib/tools/misc/makie/bin/cli
 ```
 
 <!-- </installation> -->
