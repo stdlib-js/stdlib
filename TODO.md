@@ -6,8 +6,7 @@ TODO
 1. replace `jshint` with `eslint`
     -   add to test command
     -   support reformatting ala `go fmt`
-2. ability to run tests from an arbitrary directory
-    -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
+2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) to `.github`
 3. determine how to handle internal `@stdlib` links in READMEs
     -   e.g., `@stdlib/math/constants/float64-two-pi`
     -   replace internal module references
@@ -24,7 +23,7 @@ TODO
 7. how to handle modules with CLIs?
     -   will want some sort of CLI test framework to test `stdin`, `stdout`, args, etc.
 8. how to handle browser tests for non-browser fcns
-    -   e.g., `fs` functions like `fs/exists`
+    -   e.g., `fs` functions like `fs/exists`, or `cwd`
 9. migrate JSDoc
     -   also, use one of
         -   [`dox`](https://github.com/tj/dox)
@@ -45,13 +44,16 @@ TODO
         -   [`docker.js`](https://github.com/jbt/docker)
         -   [`doctrine`](https://github.com/eslint/doctrine)
         -   ...
-10. add a CLI to `fs/exists`
+10. add a CLI to
+    -   `fs/exists`
+    -   `cwd`
 11. add CONTRIBUTING.md
     -   PR template should have link to this and the style guide
 12. determine strategy for generic validation fcns
 13. 
 14. consider changing `isNumber` to `isNumeric`
 15. export regexps?
+    -   can they be exported as constants or are they mutable?
 16. `Makefile` target to run test fixtures
     -   detect script type; e.g., `R`, `python`, `Julia`, `Golang`, `C` or `JS`
         -   can be as simple as filename extension
@@ -64,6 +66,7 @@ TODO
 18. replace `require` statements of external compute modules
 19. tests for top-level `tools`; e.g., JSDoc templates, etc
 20. move style-guide to a `stdlib` repo
+    -   or maybe as a file in `.github` or `docs`
 21. clean-up test runners
     -   `log1p` 
     -   `sinpi`
@@ -144,6 +147,9 @@ TODO
     -   store in local storage (?) or in-memory
 52. load modules into a REPL
     -   man pages can be READMES
+        -   can these be dynamically compiled/transformed at runtime, or will startup time be too slow
+            -   dynamic would be nice, as then would not need to maintain a separate collection of `man` docs
+            -   need some way of determining which modules are exposed in the REPL (could possibly parse the context files a la browserify, find `require` statements, and build), finding their READMEs, transforming, and then building a hash table for printing in the REPL
     -   help(blas.copy) (or help("blas.dcopy"))
         -   with `maps`, should be able to use function reference (symbol) as key
     -   refs
@@ -159,7 +165,7 @@ TODO
         -   ability to open chart in browser
     -   should be able to load a REPL context in a browser
         -   meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
-53. README to man doc
+53. README to man doc (see 52)
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
 54. utility which scans the project for `package.json` files and validates the file using a defined schema
@@ -167,7 +173,8 @@ TODO
 55. build utility to scan all project dirs for camelcase file names
     -   could be part of a lint step
 56. refactor module CLIs to match CLI snippet
-57. 
+57. add the `engines` field to module `package.json` files
+58. 
 
 
 ---
