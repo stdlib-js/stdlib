@@ -197,7 +197,9 @@ TODO
 27. int32-to-uint32
 28. [fast](https://golang.org/src/math/pow.go) pow
     -   may need to research
-29. 
+29. port `upsearch` to `fs`
+    -   requires `is-*` modules
+30. 
 
 
 ---
