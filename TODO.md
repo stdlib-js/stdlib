@@ -154,6 +154,11 @@ TODO
         -   [app-specific-repl](http://derickbailey.com/2014/07/02/build-your-own-app-specific-repl-for-your-nodejs-app/)
         -   [repl over tcp](https://gist.github.com/TooTallNate/2209310)
         -   [repl using curl](https://gist.github.com/TooTallNate/2053342)
+    -   ASCII charts
+        -   should be able to create an isomorphic API with browser charts
+        -   ability to open chart in browser
+    -   should be able to load a REPL context in a browser
+        -   meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
 53. README to man doc
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
