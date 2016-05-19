@@ -44,6 +44,9 @@ COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
 # Define the directory for documentation:
 DOCS_DIR ?= $(ROOT)/docs
 
+# Define the top-level directory containing executables:
+BIN_DIR ?= $(ROOT)/bin
+
 # Define the top-level directory containing node module dependencies:
 NODE_MODULES ?= $(ROOT)/node_modules
 
