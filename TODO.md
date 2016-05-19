@@ -6,8 +6,7 @@ TODO
 1. replace `jshint` with `eslint`
     -   add to test command
     -   support reformatting ala `go fmt`
-2. ability to run tests from an arbitrary directory
-    -   may need a separate module which walks the parent directory, finds the first `package.json` or `Makefile`, and runs the tests using the `cwd` as the root, rather than the top-level lib directory
+2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) to `.github`
 3. determine how to handle internal `@stdlib` links in READMEs
     -   e.g., `@stdlib/math/constants/float64-two-pi`
     -   replace internal module references
