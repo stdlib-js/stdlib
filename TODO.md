@@ -152,6 +152,8 @@ TODO
         -   [repl-start](http://www.2ality.com/2011/11/node-repl-start.html)
         -   [node-repl](http://maxogden.com/node-repl.html)
         -   [app-specific-repl](http://derickbailey.com/2014/07/02/build-your-own-app-specific-repl-for-your-nodejs-app/)
+        -   [repl over tcp](https://gist.github.com/TooTallNate/2209310)
+        -   [repl using curl](https://gist.github.com/TooTallNate/2053342)
 53. README to man doc
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
