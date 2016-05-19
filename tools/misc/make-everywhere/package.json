@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Run project Makefile targets from anywhere in the project.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "makie": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tool",
+    "misc",
+    "makefile",
+    "make",
+    "target"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

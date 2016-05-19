@@ -1,0 +1,176 @@
+#!/usr/bin/env node
+'use strict';
+
+var PREFIX = './../../../../';
+
+
+// MODULES //
+
+var spawn = require( 'child_process' ).spawn;
+var fs = require( 'fs' );
+var path = require( 'path' );
+var parseArgs = require( 'minimist' );
+var cwd = require( PREFIX+'lib/node_modules/@stdlib/utils/cwd' );
+var pkg = require( './../package.json' );
+var opts = require( './opts.json' );
+
+
+// VARIABLES //
+
+var targets = {
+	'examples': 'EXAMPLES_FILTER',
+	'test': 'TESTS_FILTER',
+	'test-summary': 'TESTS_FILTER',
+	'test-cov': 'TESTS_FILTER',
+	'view-cov': null
+};
+var root;
+var args;
+
+
+// INIT //
+
+process.title = pkg.name;
+process.stdout.on( 'error', process.exit );
+
+
+// ARGUMENTS //
+
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+
+// HELP //
+
+function onClose() {
+	process.exit( 0 );
+}
+
+if ( args.help ) {
+	fs.createReadStream( path.join( __dirname, 'usage.txt' ) )
+		.pipe( process.stdout )
+		.on( 'close', onClose );
+    return;
+}
+
+
+// VERSION //
+
+if ( args.version ) {
+	console.log( pkg.version );
+	return;
+}
+
+
+// MAKE //
+
+/**
+* Executes a Makefile target.
+*
+* @private
+* @param {string} root - Makefile directory
+* @param {string} target - Makefile target
+*
+* @example
+* make( '/home/stdlib-js/stdlib', 'test' );
+*/
+function make( root, target ) {
+	var filter;
+	var path;
+	var args;
+	var proc;
+	var err;
+	var dir;
+	var t;
+
+	t = targets[ target ];
+	if ( t === void 0 ) {
+		err = 'Unrecognized/unsupported Makefile target: `' + target + '`.\n';
+		process.stderr.write( err, 'utf8' );
+		return process.exit( 1 );
+	}
+	if ( t ) {
+		// Get the current working directory of the process:
+		dir = cwd();
+
+		// Check that we are within the project:
+		path = dir.substring( 0, root.length );
+		if ( path !== root ) {
+			err = 'In order to execute Makefile targets, you must be within the project. Current directory: `' + dir + '`. Project directory: `' + root + '`.\n';
+			process.stderr.write( err, 'utf8' );
+			return process.exit( 1 );
+		}
+		// Remove the root path (including any beginning slash):
+		dir = dir.substring( root.length+1 );
+
+		// If we are in a sub-directory, use the relative sub-directory path to create a filter...
+		if ( dir ) {
+			filter = t+'=.*/'+dir+'/.*';
+		}
+	}
+	if ( filter === void 0 ) {
+		filter = ' ';
+	}
+	// Assemble command-line arguments:
+	args = [
+		filter,
+		target
+	];
+
+	// Spawn a new process to execute the command:
+	proc = spawn( 'make', args, {
+		'cwd': root
+	});
+
+	proc.on( 'error', onError );
+	proc.stdout.on( 'data', stdout );
+	proc.stderr.on( 'data', stderr );
+	proc.on( 'close', onFinish );
+} // end FUNCTION make()
+
+/**
+* Callback invoked upon encountering an error.
+*
+* @private
+* @param {Error} error - error object
+*/
+function onError( error ) {
+	process.stderr.write( error.message+'\n', 'utf8' );
+	return process.exit( 1 );
+} // end FUNCTION onError()
+
+/**
+* Callback invoked upon child process close.
+*
+* @private
+* @param {number} code - exit code
+*/
+function onFinish( code ) {
+	if ( code !== 0 ) {
+		process.stderr.write( '`make` process exited with code `'+code + '.\n' );
+		return process.exit( code );
+	}
+	process.exit( 0 );
+} // end FUNCTION onFinish()
+
+/**
+* Callback invoked upon receiving data from `stdout`.
+*
+* @private
+* @param {Buffer} data - standard output
+*/
+function stdout( data ) {
+	process.stdout.write( data );
+} // end FUNCTION stdout()
+
+/**
+* Callback invoked upon receiving data from `stderr`.
+*
+* @private
+* @param {Buffer} data - standard error
+*/
+function stderr( data ) {
+	process.stderr.write( data );
+} // end FUNCTION stderr()
+
+root = path.resolve( __dirname, PREFIX );
+make( root, args._[0] );
