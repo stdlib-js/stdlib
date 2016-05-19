@@ -146,6 +146,12 @@ TODO
     -   man pages can be READMES
     -   help(blas.copy) (or help("blas.dcopy"))
         -   with `maps`, should be able to use function reference (symbol) as key
+    -   refs
+        -   [docs](https://nodejs.org/api/repl.html)
+        -   [ultra-repl](https://github.com/Benvie/Node.js-Ultra-REPL)
+        -   [repl-start](http://www.2ality.com/2011/11/node-repl-start.html)
+        -   [node-repl](http://maxogden.com/node-repl.html)
+        -   [app-specific-repl](http://derickbailey.com/2014/07/02/build-your-own-app-specific-repl-for-your-nodejs-app/)
 53. README to man doc
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
