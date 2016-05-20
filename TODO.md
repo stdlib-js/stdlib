@@ -94,6 +94,7 @@ TODO
 33. possible issue for [float64-set-high-word](https://ci.appveyor.com/project/kgryte/stdlib/build/job/3nseqtdxqey85wfk)
     -   attempted to debug, but was able to get the right return value; so not sure what happened and why
     -   NOTE: this seems to be a recurring bug; builds continue to occasionally fail on Windows
+    -   may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
 34. module to identify equations in README files
     -   parse
     -   generate svg
@@ -249,7 +250,26 @@ TODO
     -   would allow users to test the relatively speed of pathways within a function; e.g., for `erf`, how fast do particular input values compare to other input values?
         - note: naive benchmarks would only provide a single value => `erf(10)`; but this approach is flawed. Need to cover a range of values; otherwise, you could be testing a special case!
     -   would allow another avenue for crowdsourcing benchmarks
-4. 
+4. if every module wrapped as a stream, then, via linking, terminal becomes a REPL
+    -   ability to invoke with arg
+
+        ``` bash
+        $ erf 5
+        # => <number>
+        $ erf 5 19 13 1
+        # => <number>\n<number>\n... (could have option to specify delimiter)
+        ```
+
+    -   ability to pipe
+
+        ``` bash
+        $ cat x.txt | erf
+        # => ...
+        ```
+
+    -   may want to prefix with `stdlib-<fcn>` to avoid conflicts with built-ins
+    -   tools script could crawl the project and auto create aliases and links
+5. 
 
 
 ---
