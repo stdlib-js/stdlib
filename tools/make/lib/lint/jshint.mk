@@ -8,7 +8,7 @@
 #
 # [1]: http://jshint.com/
 
-LINTER_BIN ?= $(BIN)/jshint
+JAVASCRIPT_LINTER_BIN ?= $(BIN)/jshint
 
 # Define the path to the [jshint-stylish][1] reporter (pretty printing).
 #
@@ -20,4 +20,4 @@ LINTER_BIN ?= $(BIN)/jshint
 JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
 # Define the command-line options to use when invoking the JSHint executable:
-LINTER_FLAGS ?= --reporter $(JSHINT_REPORTER)
+JAVASCRIPT_LINTER_FLAGS ?= --reporter $(JSHINT_REPORTER)
