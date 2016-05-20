@@ -230,7 +230,10 @@ TODO
     -   may need to research
 29. port `upsearch` to `fs`
     -   requires `is-*` modules
-30. 
+30. is-electron
+    -   [renderer](https://github.com/jprichardson/is-electron-renderer)
+    -   [electron-is](https://github.com/delvedor/electron-is)
+31. 
 
 
 ---
