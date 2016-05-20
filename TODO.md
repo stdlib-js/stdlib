@@ -50,7 +50,8 @@ TODO
 11. add CONTRIBUTING.md
     -   PR template should have link to this and the style guide
 12. determine strategy for generic validation fcns
-13. 
+13. lint filenames
+    -   [eslint plugin](https://github.com/selaux/eslint-plugin-filenames)
 14. consider changing `isNumber` to `isNumeric`
 15. export regexps?
     -   can they be exported as constants or are they mutable?
