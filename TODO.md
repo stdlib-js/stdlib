@@ -233,7 +233,8 @@ TODO
 30. is-electron
     -   [renderer](https://github.com/jprichardson/is-electron-renderer)
     -   [electron-is](https://github.com/delvedor/electron-is)
-31. 
+31. global var detection
+32. 
 
 
 ---
