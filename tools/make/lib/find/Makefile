@@ -31,6 +31,12 @@ EXAMPLES_PATTERN ?= *.js
 # Define a filepath pattern for example files:
 EXAMPLES_FILTER ?= .*/.*
 
+# Define a filename pattern for Markdown files:
+MARKDOWN_PATTERN ?= *.md
+
+# Define a filepath pattern for Markdown files:
+MARKDOWN_FILTER ?= .*/.*
+
 
 # DEPENDENCIES #
 
@@ -39,3 +45,4 @@ include $(TOOLS_MAKE_DIR)/lib/find/sources.mk
 include $(TOOLS_MAKE_DIR)/lib/find/tests.mk
 include $(TOOLS_MAKE_DIR)/lib/find/tests-fixtures.mk
 include $(TOOLS_MAKE_DIR)/lib/find/examples.mk
+include $(TOOLS_MAKE_DIR)/lib/find/markdown.mk
