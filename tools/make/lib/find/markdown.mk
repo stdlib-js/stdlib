@@ -27,7 +27,7 @@ endif
 
 # List all Markdown files.
 #
-# This target prints a list of all Makdown files, excluding the `node_modules`, `build`, and `reports` directories.
+# This target prints a list of all Markdown files, excluding the `node_modules`, `build`, and `reports` directories.
 
 list-markdown-files:
 	@printf '%s\n' $(MARKDOWN_FILES)
