@@ -172,7 +172,7 @@ lint[ 'ordered-list-marker-style' ] = '.';
 // lint[ 'ordered-list-marker-value' ] = 'ordered';
 
 // Define the horizontal rule style:
-lint[ 'rule-style' ] = '___';
+lint[ 'rule-style' ] = '---';
 
 // Define the strong marker:
 lint[ 'strong-marker' ] = '_';
