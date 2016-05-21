@@ -9,6 +9,7 @@ TODO
 
    * add to test command
    * support reformatting ala `go fmt`
+   * move `eslint` config files/modules to this repo (will need to do audit to ensure up-to-date)
 
 2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) to `.github`
 
@@ -343,6 +344,20 @@ TODO
 61. gitter
 
 62. add ability to lint from subdirectories to `makie`
+
+63. `list-modules` Makefile recipe
+
+    * should work similar to other `list-*` targets
+    * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc.
+
+64. should `etc` config files be placed in subdirectories?
+
+    * would require updating Makefile targets
+
+65. `list-required-modules` Makefile recipe
+
+    * should analyze `require` graph (ala `browserify`) to determine dependencies
+    * should work for a single file or a directory
 
 
 ---
