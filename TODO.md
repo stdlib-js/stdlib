@@ -359,6 +359,10 @@ TODO
     * should analyze `require` graph (ala `browserify`) to determine dependencies
     * should work for a single file or a directory
 
+66. investigate [npm-publish-please](https://github.com/inikulin/publish-please)
+
+    * not sure a separate tool is necessary, but may find inspiration
+
 
 ---
 
