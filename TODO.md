@@ -347,7 +347,6 @@ TODO
 
 63. `list-modules` Makefile recipe
 
-    * should work similar to other `list-*` targets
     * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc.
 
 64. should `etc` config files be placed in subdirectories?
@@ -358,10 +357,15 @@ TODO
 
     * should analyze `require` graph (ala `browserify`) to determine dependencies
     * should work for a single file or a directory
+    * see automation/package.json item below
 
 66. investigate [npm-publish-please](https://github.com/inikulin/publish-please)
 
     * not sure a separate tool is necessary, but may find inspiration
+
+67. REPL startup file, similar to `startup.m`
+
+    * either command-line option or via a REPL config file
 
 
 ---
@@ -548,6 +552,16 @@ Will need a `tools` directory in individual repositories to
 6. should be able to scan module code to determine dev and main deps and add them to the `package.json` based on what is installed in the main repo
 
    * [dependency-check](https://github.com/maxogden/dependency-check)
+
+     - uses `node-detective`
+
+   * [node-detective](https://github.com/substack/node-detective)
+
+     - apparently relies on outdated mods, but may still work
+
+   * [node-source-walk](https://github.com/mrjoelkemp/node-source-walk)
+
+     - uses more recent `acorn` version
 
    * if a dependency is already included in the `package.json`, keep that dependency, thus allowing local override of a dependency
 
