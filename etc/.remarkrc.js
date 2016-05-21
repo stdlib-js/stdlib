@@ -5,9 +5,12 @@
 var config = {};
 var plugins = {};
 var lint = {};
+var vlinks = {};
 
 config.plugins = plugins;
-plugins.lint = lint;
+
+plugins[ 'lint' ] = lint;
+plugins[ 'validate-links' ] = vlinks;
 
 
 // LINT RULES //
@@ -185,6 +188,11 @@ lint[ 'table-pipe-alignment' ] = true;
 
 // Define the unordered list marker style:
 // lint[ 'unordered-list-marker-style' ] = 'consistent';
+
+
+// VALIDATE LINKS //
+
+vlinks[ 'repository' ] = '';
 
 
 // EXPORTS //
