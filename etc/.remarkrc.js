@@ -61,7 +61,7 @@ lint[ 'final-newline' ] = true;
 lint[ 'hard-break-spaces' ] = true;
 
 // Warn when headings increment by more than 1 level:
-lint[ 'heading-increment' ] = true;
+// lint[ 'heading-increment' ] = true;
 
 // Define the heading style:
 // lint[ 'heading-style' ] = 'atx';
