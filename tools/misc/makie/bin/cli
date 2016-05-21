@@ -23,7 +23,9 @@ var targets = {
 	'test': 'TESTS_FILTER',
 	'test-summary': 'TESTS_FILTER',
 	'test-cov': 'TESTS_FILTER',
-	'view-cov': null
+	'view-cov': null,
+	'lint-markdown': 'MARKDOWN_FILTER',
+	'list-modules': 'MODULES_FILTER'
 };
 var root;
 var args;
