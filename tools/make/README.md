@@ -1,5 +1,6 @@
 Makefile
 ===
+
 > Development utility.
 
 This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make]. 
@@ -16,6 +17,7 @@ $ make help
 ```
 
 ===
+
 #### Notes
 
 Annotating source code is a useful means for inlining action items and notes. For example,
@@ -37,14 +39,16 @@ $ make notes
 ```
 
 The following annotations are recognized:
-*   __TODO__: annotates a future task.
-*   __FIXME__: annotates a problem.
-*   __HACK__: annotates fragile/non-general solutions.
-*   __WARNING__: annotates possible pitfalls or gotchas.
-*   __OPTIMIZE__: annotates code which needs optimizing.
-*   __NOTE__: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
+
+* __TODO__: annotates a future task.
+* __FIXME__: annotates a problem.
+* __HACK__: annotates fragile/non-general solutions.
+* __WARNING__: annotates possible pitfalls or gotchas.
+* __OPTIMIZE__: annotates code which needs optimizing.
+* __NOTE__: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
 
 ===
+
 #### Files
 
 The `Makefile` exposes several targets (also used internally) for finding project files. For example, to list all project files, excluding `node_modules`, `build`, `reports`, and hidden directories,
@@ -69,8 +73,9 @@ $ make FILES_FILTER=.*/utils/is-nan/.* list-files
 
 __Notes__:
 
-*  Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
-*  The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
+* Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
+
+* The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
 
     ``` bash
     # List all `R` test fixtures...
@@ -79,7 +84,6 @@ __Notes__:
     # List all `R` and `Julia` test fixtures...
     $ make TESTS_FIXTURES_FILTER='.*/*\.(jl|R)' list-test-fixtures
     ```
-
 
 The `Makefile` includes the following common recipes for listing different file types...
 
@@ -106,7 +110,6 @@ To filter based on a file path,
 $ make SOURCES_FILTER=.*/math/.* list-sources
 ```
 
-
 ##### Tests
 
 To list all test files,
@@ -128,7 +131,6 @@ To filter based on a file path,
 # List only test files in the fs utils directory...
 $ make TESTS_FILTER=.*/utils/fs/.* list-tests
 ```
-
 
 ##### Test Fixtures
 
@@ -152,7 +154,6 @@ To filter based on a file path,
 $ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-test-fixtures
 ```
 
-
 ##### Examples
 
 To list all examples files,
@@ -175,9 +176,9 @@ To filter based on a file path,
 $ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
 ```
 
-
 ===
-#### Examples
+
+#### Module Examples
 
 To run module examples,
 
@@ -192,8 +193,8 @@ To limit which examples are run, use the same environment variables recognized b
 $ make EXAMPLES_FILTER=.*/math/base/special/.* EXAMPLES_PATTERN=index.js examples
 ```
 
-
 ===
+
 #### Unit Tests
 
 To run unit tests,
@@ -218,7 +219,6 @@ $ make TESTS_FILTER=.*/math/base/utils/.* TESTS_PATTERN=test.js test
 $ make TESTS_FILTER=.*/math/base/blas/.*  test-summary
 ```
 
-
 #### Test Coverage
 
 To generate a test coverage report,
@@ -239,7 +239,6 @@ To view a generated report in a local web browser,
 ``` bash
 $ make view-cov
 ```
-
 
 #### Browser Tests
 
@@ -265,8 +264,8 @@ $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
 ```
 
-
 ===
+
 #### Documentation
 
 To generate documentation from [JSDoc][jsdoc] source code comments,
@@ -281,9 +280,8 @@ To view the documentation in a local web browser,
 $ make view-src-docs
 ```
 
-
-
 ===
+
 #### Lint
 
 To lint all source code, including tests and examples,
@@ -309,8 +307,6 @@ To lint only example files,
 ``` bash
 $ make EXAMPLES_FILTER=... lint-examples
 ```
-
-
 
 <!-- <links> -->
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
