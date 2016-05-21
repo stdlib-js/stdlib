@@ -36,6 +36,7 @@ include $(TOOLS_MAKE_DIR)/lib/test-ci/Makefile
 include $(TOOLS_MAKE_DIR)/lib/coverage-service/Makefile
 include $(TOOLS_MAKE_DIR)/lib/examples/Makefile
 include $(TOOLS_MAKE_DIR)/lib/docs/Makefile
+include $(TOOLS_MAKE_DIR)/lib/debug/Makefile
 
 
 # TARGETS #
