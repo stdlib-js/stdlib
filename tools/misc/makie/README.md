@@ -1,5 +1,6 @@
 makie
 ===
+
 > Execute project Makefile commands from anywhere in the project.
 
 <!-- <intro> -->
@@ -23,7 +24,7 @@ When executing a command, the current working directory is used as a filter. Thu
 
 To install the command-line utility, add the following line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS X), making sure to adjust the path based on your project setup.
 
-```
+``` text
 alias makie=/path/to/stdlib/tools/misc/makie/bin/cli
 ```
 
@@ -37,6 +38,7 @@ $ chmod +x /path/to/stdlib/tools/misc/makie/bin/cli
 
 <!-- <cli> -->
 ---
+
 ## CLI
 
 <!-- <usage> -->
@@ -50,6 +52,7 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
 ```
+
 <!-- </usage> -->
 
 <!-- <examples> -->
@@ -59,6 +62,7 @@ Options:
 $ makie test-cov
 # => <command_output>
 ```
+
 <!-- </examples> -->
 <!-- </cli> -->
 
