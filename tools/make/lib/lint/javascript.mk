@@ -18,7 +18,7 @@ endif
 #
 # This target lints all JavaScript source code.
 
-lint-javascript:
+lint-javascript: node_modules
 	$(JAVASCRIPT_LINTER_BIN) $(JAVASCRIPT_LINTER_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES)
 
 
