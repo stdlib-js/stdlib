@@ -4,6 +4,9 @@
 # Define the command for removing files and directories:
 DELETE_CMD ?= -rm -rf
 
+# Define the command for recursively creating directories:
+RECURSIVE_MKDIR ?= mkdir -p
+
 # Define the path of the documentation.js executable:
 DOCUMENTATIONJS ?= $(BIN)/documentation
 
@@ -47,7 +50,7 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 
 documentationjs-html: node_modules
 	$(DELETE_CMD) $(DOCUMENTATIONJS_HTML_OUT)
-	mkdir -p $(DOCUMENTATIONJS_HTML_OUT)
+	$(RECURSIVE_MKDIR) $(DOCUMENTATIONJS_HTML_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
 
 
@@ -63,7 +66,7 @@ documentationjs-html: node_modules
 
 documentationjs-json: node_modules
 	$(DELETE_CMD) $(DOCUMENTATIONJS_JSON_PATH)
-	mkdir -p $(DOCUMENTATIONJS_JSON_OUT)
+	$(RECURSIVE_MKDIR) $(DOCUMENTATIONJS_JSON_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON_PATH)
 
 

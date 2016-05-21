@@ -4,6 +4,9 @@
 # Define the command for removing files and directories:
 DELETE_CMD ?= -rm -rf
 
+# Define the command for recursively creating directories:
+RECURSIVE_MKDIR ?= mkdir -p
+
 # Define the path of the JSDoc executable:
 JSDOC ?= $(BIN)/jsdoc
 
@@ -61,7 +64,7 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 
 jsdoc-html: node_modules
 	$(DELETE_CMD) $(JSDOC_HTML_OUT)
-	mkdir -p $(JSDOC_HTML_OUT)
+	$(RECURSIVE_MKDIR) $(JSDOC_HTML_OUT)
 	$(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
 
 
@@ -76,7 +79,7 @@ jsdoc-html: node_modules
 
 jsdoc-json: node_modules
 	$(DELETE_CMD) $(JSDOC_JSON_PATH)
-	mkdir -p $(JSDOC_JSON_OUT)
+	$(RECURSIVE_MKDIR) $(JSDOC_JSON_OUT)
 	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON_PATH)
 
 
