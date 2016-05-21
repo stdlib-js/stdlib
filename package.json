@@ -40,6 +40,8 @@
     "proxyquire": "^1.7.4",
     "proxyquire-universal": "^1.0.8",
     "proxyquireify": "^3.1.1",
+    "remark": "^4.2.2",
+    "remark-lint": "^3.2.1",
     "tap-spec": "4.x.x",
     "tap-summary": "1.x.x",
     "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
