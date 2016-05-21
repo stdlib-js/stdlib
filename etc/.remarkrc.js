@@ -82,7 +82,7 @@ lint[ 'list-item-indent' ] = 'space';
 lint[ 'list-item-spacing' ] = true;
 
 // Enforce a maximum heading length:
-lint[ 'maximum-heading-length' ] = 40; // characters
+lint[ 'maximum-heading-length' ] = 80; // characters
 
 // Enforce a maximum line length:
 lint[ 'maximum-line-length' ] = false;
