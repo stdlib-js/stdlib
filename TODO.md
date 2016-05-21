@@ -342,6 +342,8 @@ TODO
 
 61. gitter
 
+62. add ability to lint from subdirectories to `makie`
+
 
 ---
 
