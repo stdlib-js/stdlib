@@ -19,16 +19,19 @@
 [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
 ---
+
 <!-- </badges> -->
 
 stdlib
 ===
+
 > Standard library.
 
 A standard library for JavaScript in JavaScript.
 
 
 ---
+
 ## License
 
 See [LICENSE][license].
