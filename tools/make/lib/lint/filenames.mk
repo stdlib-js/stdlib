@@ -1,6 +1,9 @@
 
 # VARIABLES #
 
+# Define the command for setting executable permissions:
+MAKE_EXECUTABLE ?= chmod +x
+
 # Define the path of the linter executable:
 FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint.sh
 
@@ -12,7 +15,7 @@ FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint.sh
 # This target lints filenames.
 
 lint-filenames:
-	chmod +x $(FILENAME_LINTER)
+	$(MAKE_EXECUTABLE) $(FILENAME_LINTER)
 	$(FILENAME_LINTER)
 
 
