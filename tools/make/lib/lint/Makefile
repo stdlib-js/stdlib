@@ -2,16 +2,17 @@
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_DIR)/lib/lint/javascript.mk
+include $(TOOLS_MAKE_DIR)/lib/lint/markdown.mk
 include $(TOOLS_MAKE_DIR)/lib/lint/filenames.mk
 
 
 # TARGETS #
 
-# Check code quality.
+# Lint.
 #
-# This target lints all source code.
+# This target lints all files.
 
-lint: lint-filenames lint-javascript
+lint: lint-filenames lint-javascript lint-markdown
 
 
 # Check source code quality.
