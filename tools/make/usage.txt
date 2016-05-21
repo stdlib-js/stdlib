@@ -9,6 +9,7 @@ Usage: make <cmd>
   make list-tests          List all test files.
   make list-test-fixtures  List all test fixture files.
   make list-files          List files.
+  make list-modules        List all modules.
   make examples            Run examples.
   make test                Run tests.
   make test-summary        Run tests and output a test summary.
@@ -18,8 +19,13 @@ Usage: make <cmd>
   make view-browser-tests  View browser tests in a local web browser.
   make src-docs            Generate source documentation.
   make view-src-docs       View source documentation.
-  make lint                Run code linting.
+  make lint                Lint files.
+  make lint-markdown       Lint Markdown files.
+  make lint-javascript     Lint JavaScript files.
+  make lint-filenames      Lint filenames.
+  make check-deps          Check if dependencies are up-to-date.
   make install             Run install sequence.
   make clean               Run all cleanup tasks.
   make clean-node          Remove Node dependencies.
+  make print-VARIABLE      Print the runtime value of a VARIABLE.
 

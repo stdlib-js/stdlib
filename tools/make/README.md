@@ -18,6 +18,16 @@ $ make help
 
 ===
 
+#### REPL
+
+To launch a REPL,
+
+``` bash
+$ make repl
+```
+
+===
+
 #### Notes
 
 Annotating source code is a useful means for inlining action items and notes. For example,
@@ -176,6 +186,21 @@ To filter based on a file path,
 $ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
 ```
 
+##### Modules
+
+To list all modules,
+
+``` bash
+$ make list-modules
+```
+
+To filter based on a file path,
+
+``` bash
+# List only the special function modules in the base math directory...
+$ make MODULES_FILTER=.*/math/base/special/.* list-modules
+```
+
 ===
 
 #### Module Examples
@@ -284,10 +309,10 @@ $ make view-src-docs
 
 #### Lint
 
-To lint all source code, including tests and examples,
+To lint files, including tests, examples, filenames, and Markdown,
 
 ``` bash
-$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... lint
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... MARKDOWN_FILTER=... lint
 ```
 
 To lint only source files,
@@ -307,6 +332,29 @@ To lint only example files,
 ``` bash
 $ make EXAMPLES_FILTER=... lint-examples
 ```
+
+To lint only Markdown files,
+
+``` bash
+$ make MARKDOWN_FILTER=... lint-markdown
+```
+
+To lint only JavaScript files,
+
+``` bash
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... lint-javascript
+```
+
+===
+
+#### Dependencies
+
+To check whether dependencies are up-to-date,
+
+``` bash
+$ make check-deps
+```
+
 
 <!-- <links> -->
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
