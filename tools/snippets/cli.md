@@ -1,5 +1,6 @@
 <!-- <cli> -->
 ---
+
 ## CLI
 
 <!-- <usage> -->
@@ -13,6 +14,7 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
 ```
+
 <!-- </usage> -->
 
 <!-- <examples> -->
@@ -22,5 +24,6 @@ Options:
 $ TODO
 # => TODO
 ```
+
 <!-- </examples> -->
 <!-- </cli> -->

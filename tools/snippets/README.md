@@ -1,5 +1,6 @@
 TODO
 ===
+
 > TODO
 
 <!-- <intro> -->
@@ -21,6 +22,7 @@ TODO
 var v = TODO( 0.0 );
 // returns TODO
 ```
+
 <!-- </usage> -->
 
 <!-- <examples> -->
@@ -31,6 +33,7 @@ var TODO = require( '@stdlib/<TODO: module path>' );
 
 TODO
 ```
+
 <!-- </examples> -->
 
 <!-- <links> -->
