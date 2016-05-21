@@ -37,6 +37,9 @@ MARKDOWN_PATTERN ?= *.md
 # Define a filepath pattern for Markdown files:
 MARKDOWN_FILTER ?= .*/.*
 
+# Define a filepath pattern for modules:
+MODULES_FILTER ?= .*/.*
+
 
 # DEPENDENCIES #
 
@@ -46,3 +49,4 @@ include $(TOOLS_MAKE_DIR)/lib/find/tests.mk
 include $(TOOLS_MAKE_DIR)/lib/find/tests-fixtures.mk
 include $(TOOLS_MAKE_DIR)/lib/find/examples.mk
 include $(TOOLS_MAKE_DIR)/lib/find/markdown.mk
+include $(TOOLS_MAKE_DIR)/lib/find/modules.mk
