@@ -15,7 +15,7 @@ examples: node_modules
 	for file in $(EXAMPLES); do \
 		echo ""; \
 		echo "Running example: $$file"; \
-		$(NODE) $$file; \
+		$(NODE) $$file || exit 1; \
 	done
 
 .PHONY: examples
