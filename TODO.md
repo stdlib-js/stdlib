@@ -379,6 +379,29 @@ TODO
     * [comment-to-assert](https://github.com/azu/comment-to-assert)
     * [doctestjs](https://github.com/ianb/doctestjs)
 
+69. to browser
+
+    * [bpipe](https://github.com/Marak/bpipe)
+    * [bcat](https://github.com/kessler/node-bcat)
+    * [hcat](https://github.com/kessler/node-hcat) => could be inspiration for piping data to a chart
+    * [scat](https://github.com/hughsk/scat)
+
+70. cross-platform open browser
+
+    * [biased-opener](https://github.com/jakub-g/biased-opener)
+    * [opener](https://github.com/domenic/opener)
+    * [browser-launcher](https://github.com/substack/browser-launcher)
+    * [browser-launcher2](https://github.com/benderjs/browser-launcher2)
+
+71. ability to run examples in a browser => Makefile target `examples-browser`
+
+72. build step which runs examples in browsers and catches any errors
+
+    * could possibly listen on `window.onerror` to trap uncaught exceptions
+    * setup similar to `testling`, but without needing `TAP` output; basically, do any errors occur or not
+    * will probably need source maps, otherwise will be difficult to debug
+    * as a half-way measure, could intercept `console` method calls, pipe back to server, and then keep a rolling log cache; when an error is received, could stop running examples and print the cache
+
 
 ---
 
@@ -466,6 +489,8 @@ TODO
     - [electron-is](https://github.com/delvedor/electron-is)
 
 31. global var detection
+
+32. feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
 
 
 ---
