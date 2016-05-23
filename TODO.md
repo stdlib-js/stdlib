@@ -345,6 +345,8 @@ TODO
 
 62. add ability to lint from subdirectories to `makie`
 
+    * for `lint-javascript`, requires setting multiple environment variables (the key value of hash could be an array of env variables which must be set)
+
 63. `list-modules` Makefile recipe
 
     * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc.
@@ -357,6 +359,7 @@ TODO
 
     * should analyze `require` graph (ala `browserify`) to determine dependencies
     * should work for a single file or a directory
+    * for directory, may want to dedupe (flat array), a tree result which states which modules require which modules (similar to a node dependency graph), or, for every found module, the deps for that module (array of arrays)
     * see automation/package.json item below
 
 66. investigate [npm-publish-please](https://github.com/inikulin/publish-please)
@@ -366,6 +369,15 @@ TODO
 67. REPL startup file, similar to `startup.m`
 
     * either command-line option or via a REPL config file
+
+68. [doctest](https://docs.python.org/2/library/doctest.html)
+
+    * [jsdoctest](https://github.com/yamadapc/jsdoctest)
+    * [jsdoced.js](https://github.com/jeromeetienne/jsdoced.js)
+    * [markdown-doctest](https://github.com/Widdershin/markdown-doctest)
+    * [mocha-doctest](https://github.com/andreypopp/mocha-doctest)
+    * [comment-to-assert](https://github.com/azu/comment-to-assert)
+    * [doctestjs](https://github.com/ianb/doctestjs)
 
 
 ---
