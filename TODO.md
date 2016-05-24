@@ -80,9 +80,7 @@ TODO
 
    * ...
 
-10. add a CLI to
-
-    * `cwd`
+10. 
 
 11. add CONTRIBUTING.md
   
