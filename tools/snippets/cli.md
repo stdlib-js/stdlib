@@ -1,9 +1,12 @@
+
 <!-- <cli> -->
+
 ---
 
 ## CLI
 
 <!-- <usage> -->
+
 ### Usage
 
 ``` bash
@@ -18,6 +21,7 @@ Options:
 <!-- </usage> -->
 
 <!-- <examples> -->
+
 ### Examples
 
 ``` bash
@@ -26,4 +30,5 @@ $ TODO
 ```
 
 <!-- </examples> -->
+
 <!-- </cli> -->

@@ -7,7 +7,9 @@ TODO
 
 <!-- </intro> -->
 
+
 <!-- <usage> -->
+
 ## Usage
 
 ``` javascript
@@ -25,7 +27,9 @@ var v = TODO( 0.0 );
 
 <!-- </usage> -->
 
+
 <!-- <examples> -->
+
 ## Examples
 
 ``` javascript
@@ -35,6 +39,7 @@ TODO
 ```
 
 <!-- </examples> -->
+
 
 <!-- <links> -->
 
