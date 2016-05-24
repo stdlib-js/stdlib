@@ -34,6 +34,7 @@
   "devDependencies": {
     "browserify": "13.x.x",
     "david": "^7.0.2",
+    "debug": "^2.2.0",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
     "jshint": "2.x.x",
