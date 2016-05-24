@@ -81,6 +81,9 @@ sudo chown travis "$CI_OUT"
 start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
+echo 'Checking that all dependencies are up-to-date...'
+make check-deps >> "$CI_OUT" 2>&1
+
 echo 'Running tests...'
 make test >> "$CI_OUT" 2>&1
 
