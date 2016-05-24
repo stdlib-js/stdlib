@@ -82,7 +82,6 @@ TODO
 
 10. add a CLI to
 
-    * `fs/exists`
     * `cwd`
 
 11. add CONTRIBUTING.md
@@ -402,6 +401,10 @@ TODO
     * will probably need source maps, otherwise will be difficult to debug
     * as a half-way measure, could intercept `console` method calls, pipe back to server, and then keep a rolling log cache; when an error is received, could stop running examples and print the cache
 
+73. drop `options` requirement for `tools/http-server`
+
+    * make the function polymorphic where it may accept just an `options` arg, a `requestListener` arg, or both args
+
 
 ---
 
@@ -491,6 +494,8 @@ TODO
 31. global var detection
 
 32. feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
+
+33. port `https-server`
 
 
 ---
