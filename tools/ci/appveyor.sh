@@ -85,7 +85,7 @@ touch "$CI_LOG_PATH"
 start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
-echo 'Checking that all dependencies are up-to-date...'
+echo 'Checking dependencies...'
 make check-deps >> "$CI_OUT" 2>&1
 
 echo 'Running tests...'
