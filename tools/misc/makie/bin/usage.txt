@@ -5,4 +5,5 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+  --ls,  --list                List the available targets.
 

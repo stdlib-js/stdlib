@@ -1,7 +1,9 @@
 {
 	"boolean": [
 		"help",
-		"version"
+		"version",
+		"list",
+		"ls"
 	],
 	"alias": {
 		"help": [
@@ -9,6 +11,9 @@
 		],
 		"version": [
 			"V"
+		],
+		"list": [
+			"ls"
 		]
 	}
 }
