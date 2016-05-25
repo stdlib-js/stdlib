@@ -112,10 +112,10 @@ If you feel you have been falsely or unfairly accused of violating this Code of 
 
 Note that we prioritize marginalized people's safety over privileged people's comfort. We will __not__ act on complaints regarding:
 
-* 'Reverse'-isms, including 'reverse racism,' 'reverse sexism,' and 'cisphobia'
+* "Reverse"-isms, including "reverse racism," "reverse sexism," and "cisphobia"
 * Reasonable communication of boundaries, such as "leave me alone," "go away," or "I'm not discussing this with you."
 * Refusal to explain or debate social justice concepts.
-* Communicating in a 'tone' you do not find congenial.
+* Communicating in a "tone" you do not find congenial.
 * Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions.
 
 
