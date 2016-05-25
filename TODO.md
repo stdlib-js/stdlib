@@ -413,6 +413,8 @@ TODO
     * [Open Code of Conduct](https://github.com/todogroup/opencodeofconduct/) and [blog](http://todogroup.org/opencodeofconduct/)
     * Contributor Covenant [1](http://contributor-covenant.org/), [generator](https://github.com/simonv3/covenant-generator), and [repo](https://github.com/ContributorCovenant/contributor_covenant)
 
+75. Should `@stdlib/utils/is-window` and `@stdlib/utils/platform` be functions rather than constants?
+
 
 ---
 
