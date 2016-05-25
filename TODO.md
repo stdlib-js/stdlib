@@ -415,6 +415,8 @@ TODO
 
 75. Should `@stdlib/utils/is-window` and `@stdlib/utils/platform` be functions rather than constants?
 
+76. `@stdlib/regexp/extname`, `*/dirname` export circular references; prob best to clone the regexp and bind to exported object
+
 
 ---
 
