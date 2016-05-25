@@ -139,7 +139,7 @@ This Code of Conduct borrows heavily from
 
 ## License
 
-This document may be reused under a [Creative Commons Attribution-ShareAlike License][license]
+This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
 
 
 
