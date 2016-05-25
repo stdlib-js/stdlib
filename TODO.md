@@ -366,6 +366,7 @@ TODO
 67. REPL startup file, similar to `startup.m`
 
     * either command-line option or via a REPL config file
+    * could possibly use `configstore`, or something similar, to cache the config
 
 68. [doctest](https://docs.python.org/2/library/doctest.html)
 
@@ -402,6 +403,15 @@ TODO
 73. drop `options` requirement for `tools/http-server`
 
     * make the function polymorphic where it may accept just an `options` arg, a `requestListener` arg, or both args
+
+74. Add a Code of Conduct
+
+    * [Citizen Code of Conduct](http://citizencodeofconduct.org/)
+    * [izs on trolling](http://blog.izs.me/post/30036893703/policy-on-trolling)
+    * [rust-lang](https://www.rust-lang.org/conduct.html)
+    * [npm](https://www.npmjs.com/policies/conduct) and on [Github](https://github.com/npm/policies/blob/master/conduct.md)
+    * [Open Code of Conduct](https://github.com/todogroup/opencodeofconduct/) and [blog](http://todogroup.org/opencodeofconduct/)
+    * Contributor Covenant [1](http://contributor-covenant.org/), [generator](https://github.com/simonv3/covenant-generator), and [repo](https://github.com/ContributorCovenant/contributor_covenant)
 
 
 ---
