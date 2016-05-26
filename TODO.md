@@ -420,6 +420,13 @@ TODO
     * `fs` and other filesystem methods should remain the same
     * difference is that files are not written to disk, but to, say, IndexedDB
     * would allow for an "isomorphic" REPL and the ability to run all tests and examples on both the server and client
+    * [filer](https://github.com/filerjs/filer)
+    * [os.js](https://github.com/os-js/OS.js)
+    * [filesystem API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Introduction)
+    * [emscripten](https://github.com/kripken/emscripten/blob/incoming/src/library_fs.js)
+    * [idb.filesystem.js](https://github.com/ebidel/idb.filesystem.js/)
+    * [filer.js](https://github.com/ebidel/filer.js)
+    * [browserFS](https://github.com/jvilk/BrowserFS)
 
 
 ---
