@@ -1950,6 +1950,7 @@ TODO: ESLint rule
 
 
 ---
+
 ## Additional Resources
 
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
@@ -1960,11 +1961,6 @@ TODO: ESLint rule
 * [Semantic Versioning](https://github.com/mojombo/semver/blob/master/semver.md)
 
 
-## Author
-
-Athan Reines [(@kgryte)](http://twitter.com/kgryte). 2014-2015.
-
-
 ## License
 
-[MIT license](http://opensource.org/licenses/MIT). 
+TODO 
