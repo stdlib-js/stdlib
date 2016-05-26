@@ -98,19 +98,19 @@ This project contains an [`.editorconfig`][editorconfig] file to be used in conj
 
 Including `1` space before a leading brace improves readability.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 function query(){
     // Do something...
 }
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 function query() {
     // Do something...
 }
@@ -130,19 +130,19 @@ TODO: ESLint rule
 
 Including `1` space before and after arguments improves readability.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 function test(arg1,arg2,arg3) {
     // Do something...
 }
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 function test( arg1, arg2, arg3 ) {
     // Do something...
 }
@@ -162,17 +162,17 @@ TODO: ESLint rule
 Including `1` space before and after `array` indices improves readability.
 
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 var foo = bar[10];
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 var foo = bar[ 10 ];
 ```
 
@@ -199,17 +199,17 @@ TODO: ESLint rule
 
 Including `1` space before and after operators improves readability.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 var a=1+1;
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 var a = 1 + 1;
 ```
 
@@ -239,18 +239,18 @@ TODO: ESLint rule
 
 Immediate juxtaposition makes evident what is being affected.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 x = ++ y;
 z = z ++;
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 x = ++y;
 z = z++;
 ```
@@ -269,11 +269,11 @@ TODO: ESLint rule
 
 Including `1` space after comment marks improves readability.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
+
 //This is a single-line comment.
 
 /**
@@ -282,9 +282,11 @@ __Do not__
 */
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
+
 // This is a single-line comment.
 
 /**
@@ -307,11 +309,11 @@ TODO
 
 Some IDEs have a tendency to auto-indent based on the previous line, thus pushing all subsequent lines `1` character to the right.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
+
 /**
  * This is a multi-line comment.
  * The comment continues and continues...
@@ -319,9 +321,11 @@ __Do not__
  */
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
+
 /**
 * This is a multi-line comment.
 * The comment continues and continues...
@@ -343,18 +347,17 @@ In general, hard to automatically enforce. Mostly enforced through code review.
 
 Indentation improves readability.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 var svg = d3.select( '.main' ).append( 'svg:svg' ).attr( 'class', 'canvas' ).attr( 'data-id', Date.now() ).attr( 'width', 100 ).attr( 'height', 100 );
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
-// Do:
+// Do...
 var svg = d3.select( '.main' )
     .append( 'svg:svg' )
         .attr( 'class', 'canvas' )
@@ -377,11 +380,10 @@ Hard to automatically enforce. Mostly through code review.
 
 Newline is unnecessary.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 if ( foo === bar ) {
     // Do something...
 }
@@ -390,9 +392,10 @@ else {
 }
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 if ( foo === bar ) {
     // Do something...
 } else {
@@ -405,7 +408,7 @@ if ( foo === bar ) {
 * Use discretion when faced with multiple conditions.
 
     ``` javascript
-    // Do:
+    // Do...
     if ( foo === bar ) {
         // Do something...
     } else if ( foo === beep ) {
@@ -416,7 +419,7 @@ if ( foo === bar ) {
         // Do something different...
     }
 
-    // Okay:
+    // Okay...
     if ( foo === bar ) {
         // Do something...
     }
@@ -426,6 +429,29 @@ if ( foo === bar ) {
     else if ( baz === bar ) {
         // Do something more...
     }
+    else {
+        // Do something different...
+    }
+    ```
+
+* Use discretion when documenting conditions.
+
+    ``` javascript
+    Okay...
+
+    // `bar` can only equal `foo` when...
+    if ( foo === bar ) {
+        // Do something...
+    }
+    // `beep` can only equal `foo` when...
+    else if ( foo === beep ) {
+        // Do something else...
+    }
+    // This pathway should rarely be taken...
+    else if ( baz === bar ) {
+        // Do something more...
+    }
+    // `foo` equals `bap`
     else {
         // Do something different...
     }
@@ -446,11 +472,10 @@ Code review.
 
 Indenting the `case` keyword within `switch` statements results in excessive indentation.
 
-##### Examples
-
-__Do not__
+##### Bad Example
 
 ``` javascript
+// Do not...
 switch( foo ) {
     case 'bar':
         // Do something...
@@ -463,9 +488,10 @@ switch( foo ) {
 }
 ```
 
-__Do__
+##### Good Example
 
 ``` javascript
+// Do...
 switch( foo ) {
 case 'bar':
     // Do something...
