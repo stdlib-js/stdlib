@@ -58,13 +58,17 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 * Keep your code clean. Create feature branches for experimental development, extensive annotations, and/or alternative implementations.
 
 
+<!-- <rule-set> -->
+
 ---
 
 ## Whitespace
 
+<!-- <rule> -->
+
 ### Use tab indentation
 
-#### Reason
+##### Reason
 
 Tab indentation allows the developer to specify the space indentation equivalent in her editor. For example, in [Sublime Text][sublime-text], you can specify in your user preferences
 
@@ -72,11 +76,11 @@ Tab indentation allows the developer to specify the space indentation equivalent
 "tab_width": 4
 ```
 
-#### Notes
+##### Notes
 
 * Even if you must use spaces, __never__ mix tabs and spaces. This is formatting hell, as a simple find-and-replace is useless in the face of such chaos.
 
-#### Enforcement
+##### Enforcement
 
 This project contains an [`.editorconfig`][editorconfig] file to be used in conjunction with IDE and/or browser plugins.
 
@@ -84,27 +88,49 @@ This project contains an [`.editorconfig`][editorconfig] file to be used in conj
 * [atom][atom-editorconfig]
 * [chrome][chrome-editorconfig]
 
-* __Always__ include `1` space before a leading brace.
+<!-- </rule> -->
 
-    ``` javascript
-    // Do:
-    function query() {
-        // Do something...
-    }
+<!-- <rule> -->
 
-    // Don't:
-    function query(){
-        // Do something...
-    }
-    ```
+### Space before leading brace
+
+##### Reason
+
+Including `1` space before a leading brace improves readability.
+
+##### Examples
+
+__Do not__
+
+``` javascript
+function query(){
+    // Do something...
+}
+```
+
+__Do__
+
+``` javascript
+function query() {
+    // Do something...
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### Include spaces around arguments
 
-#### Reason
+##### Reason
 
 Including `1` space before and after arguments improves readability.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -122,18 +148,21 @@ function test( arg1, arg2, arg3 ) {
 }
 ```
 
-#### Enforcement
+##### Enforcement
 
 TODO: ESLint rule
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### Include spaces around array indices  
-#### Reason
+##### Reason
 
 Including `1` space before and after `array` indices improves readability.
 
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -147,7 +176,7 @@ __Do__
 var foo = bar[ 10 ];
 ```
 
-#### Notes
+##### Notes
 
 * Use discretion when using spaces around `array` indices buried in braces.
 
@@ -156,18 +185,21 @@ var foo = bar[ 10 ];
     var foo = myFunction( ( a === b ) ? bar[0] : bar[1] ) );
     ```
 
-#### Enforcement
+##### Enforcement
 
 TODO: ESLint rule
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### Include spaces around operators
 
-#### Reason
+##### Reason
 
 Including `1` space before and after operators improves readability.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -181,7 +213,7 @@ __Do__
 var a = 1 + 1;
 ```
 
-#### Notes
+##### Notes
 
 * Use discretion when operators are contained within complex expressions and `string` concatenation.
 
@@ -193,18 +225,21 @@ var a = 1 + 1;
     var x = (x+y+z)*(t-w-v) + 5;
     ```
 
-#### Enforcement
+##### Enforcement
 
 TODO: ESLint rule
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### No spaces around unary operators
 
-#### Reason
+##### Reason
 
 Immediate juxtaposition makes evident what is being affected.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -220,18 +255,21 @@ x = ++y;
 z = z++;
 ```
 
-#### Enforcement
+##### Enforcement
 
 TODO: ESLint rule
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### Include a space after comment marks
 
-#### Reason
+##### Reason
 
 Including `1` space after comment marks improves readability.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -255,18 +293,21 @@ __Do__
 */
 ```
 
-#### Enforcement
+##### Enforcement
 
 TODO
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### No multi-line comment space indentation
 
-#### Reason
+##### Reason
 
 Some IDEs have a tendency to auto-indent based on the previous line, thus pushing all subsequent lines `1` character to the right.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -288,18 +329,21 @@ __Do__
 */
 ```
 
-#### Enforcement
+##### Enforcement
 
 In general, hard to automatically enforce. Mostly enforced through code review.
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### Indent chained methods
 
-#### Reason
+##### Reason
 
 Indentation improves readability.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -319,18 +363,21 @@ var svg = d3.select( '.main' )
         .attr( 'height', 100 );
 ```
 
-#### Enforcement
+##### Enforcement
 
 Hard to automatically enforce. Mostly through code review.
 
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 ### No newlines between conditions
 
-#### Reason
+##### Reason
 
 Newline is unnecessary.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -353,7 +400,7 @@ if ( foo === bar ) {
 }
 ```
 
-#### Notes
+##### Notes
 
 * Use discretion when faced with multiple conditions.
 
@@ -385,19 +432,21 @@ if ( foo === bar ) {
     ```
 
 
-#### Enforcement
+##### Enforcement
 
 Code review.
 
+<!-- </rule> -->
 
+<!-- <rule> -->
 
 ### No case indentation
 
-#### Reason
+##### Reason
 
 Indenting the `case` keyword within `switch` statements results in excessive indentation.
 
-#### Examples
+##### Examples
 
 __Do not__
 
@@ -429,10 +478,16 @@ default:
 }
 ```
 
-#### Enforcement
+##### Enforcement
 
 TODO: ESLint rule
 
+<!-- </rule> -->
+
+<!-- <rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
 
