@@ -526,7 +526,7 @@ TODO: ESLint rule
 
 ##### Reason
 
-While semicolons are [not required][ecma-262] in most cases due to [automatic semicolon insertion][ecma-262], prefer to be explicit in specifying when a statement ends. Additionally, in REPL environments, semicolons acquire special meaning; notably, silencing return value output.
+While semicolons are [not required][ecma-262] in most cases due to [automatic semicolon insertion][ecma-262], prefer to be explicit in specifying when a statement ends. Additionally, in REPL environments, semicolons acquire special meaning; notably, they silence return value output.
 
 ##### Bad Example
 
@@ -610,6 +610,10 @@ var foo = a === b ? a*3 : b/4;
 // Do...
 var foo = ( a === b ) ? a*3 : b/4;
 ```
+
+##### Enforcement
+
+TODO
 
 <!-- </rule> -->
 
@@ -705,7 +709,7 @@ Code review.
 
 ##### Reason
 
-Adding, removing, and reordering variables is easier.
+Adding, removing, and reordering variables is easier. Additionally, `git` diffs are cleaner.
 
 ##### Bad Example
 
@@ -780,7 +784,7 @@ TODO: ESLint rule
 
 ##### Reason
 
-Reserve double quotes for in-string parenthetical reference or quotes. Additionally, single quotes consume less visual space.
+Reserve double quotes for in-string parenthetical references or quotes. Additionally, single quotes consume less visual space.
 
 ##### Bad Example
 
@@ -811,145 +815,325 @@ TODO: ESLint rule
 
 ## Arrays
 
-*   In general, use `array` literal syntax.
+<!-- <rule> -->
+
+### R: Use literal syntax for empty array
+
+##### Reason
+
+Instantiation with the `new` operator is unnecessary.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var arr = new Array();
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var arr = [];
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Use new keyword when length is known
+
+##### Reason
+
+Allows compiler to pre-allocate memory.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var arr = [];
+var i;
+for ( i = 0; i < 100; i++ ) {
+    arr.push( Math.random() );
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var arr = new Array( 100 );
+var i;
+for ( i = 0; i < arr.length; i++ ) {
+    arr[ i ] = Math.random();
+}
+```
+
+##### Notes
+
+*   Do __not__ use the `new` operator `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
 
     ``` javascript
-    // Do:
-    var arr = [];
-
-    // Don't:
-    var arr = new Array();
-    ```
-
-*   Do instantiate a new `array` when you know the `array` length and the `array` length is [less than](https://github.com/thlorenz/v8-perf/blob/master/data-types.md#fast-elements) `64K` elements.
-
-    ``` javascript
-    // Do:
-    var arr = new Array( 100 );
-    for ( var i = 0; i < arr.length; i++ ) {
+    var len = 100000;
+    var arr;
+    var i;
+    arr = new Array( 64000 );
+    for ( i = 0; i < arr.length; i++ ) {
         arr[ i ] = Math.random();
     }
-
-    // Don't:
-    var arr = [];
-    for ( var i = 0; i < 100; i++ ) {
+    for ( i = arr.length; i < len; i++ ) {
         arr.push( Math.random() );
     }
     ```
 
-*   To convert an array-like object to an `array`, use a `for` loop.
+##### Enforcement
 
-    ``` javascript
-    // Do:
-    var nargs = arguments.length,
-        args = new Array( nargs );
+Code review.
 
-    for ( var i = 0; i < nargs; i++ ) {
-        args[ i ] = arguments[ i ];
-    }
+<!-- </rule> -->
 
-    // Don't:
-    var args = Array.prototype.slice.call( arguments );
-    ```
+<!-- <rule> -->
 
-*   When copying an `array`, for small `arrays` use a `for` loop; for large `arrays`, use `Array#slice()`.
+### R: Use for loop to convert array-like objects
 
-    ``` javascript
-    var arr,
-        out,
-        i;
+##### Reason
 
-    // Small arrays...
-    arr = new Array( 10 );
-    out = new Array( arr.length );
-    for ( i = 0; i < arr.length; i++ ) {
-        out[ i ] = arr[ i ];
-    }
+More explicit and efficient. Additionally, passing the `arguments` object to any function leads to optimization hell.
 
-    // Large arrays...
-    arr = [];
-    for ( i = 0; i < 1e6; i++ ) {
-        arr[ i ] = Math.random();
-    }
-    out = arr.slice();
-    ```
+##### Bad Example
 
+``` javascript
+// Do not...
+var args = Array.prototype.slice.call( arguments );
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var nargs = arguments.length;
+var args = new Array( nargs );
+var i;
+for ( i = 0; i < nargs; i++ ) {
+    args[ i ] = arguments[ i ];
+}
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Copy approach depends on array length
+
+##### Reason
+
+When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus a `for` loop is more efficient. For larger `arrays`, function invocation cost is comparable to or less than loop cost and the runtime engine is able to optimize for copying large chunks of memory. 
+
+##### Small Array Example
+
+``` javascript
+// Do...
+var arr = new Array( 10 );
+var out = new Array( arr.length );
+var i;
+for ( i = 0; i < 1e6; i++ ) {
+    arr[ i ] = Math.random();
+}
+// Copy...
+for ( i = 0; i < arr.length; i++ ) {
+    out[ i ] = arr[ i ];
+}
+```
+
+##### Large Array Example
+
+``` javascript
+// Do...
+var arr = [];
+var out;
+var i;
+for ( i = 0; i < 1e6; i++ ) {
+    arr[ i ] = Math.random();
+}
+// Copy...
+out = arr.slice();
+```
+
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Objects
 
-*   Do split `object` properties over multiple lines.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    var obj;
+### R: Split properties over multiple lines
 
-    obj = {
-        'a': null,
-        'b': 5,
-        'c': function() {
-            return true;
-        },
-        'd': ( foo === bar ) ? foo : bar
-    };
+##### Reason
 
-    // Don't:
-    var obj = { 'a': null, 'b': 5, 'c': function() { return true; }, 'd': ( foo === bar ) ? foo : bar };
-    ```
+Splitting `object` properties over multiple lines improves readability.
 
-*   Do __not__ align `object` values.
+##### Bad Example
 
-    ``` javascript
-    // Do:
-    var obj = {
-        'prop': true,
-        'attribute': 'foo',
-        'name': 'bar'
-    };
+``` javascript
+// Do not...
+var obj = { 'a': null, 'b': 5, 'c': function() { return true; }, 'd': ( foo === bar ) ? foo : bar };
+```
 
-    // Don't:
-    var obj = {
-        'prop'     : true,
-        'attribute': 'foo',
-        'name'     : 'bar'
-    };
-    ```
+##### Good Example
 
-*   Do __not__ include a trailing comma.
+``` javascript
+// Do...
+var obj;
 
-    ``` javascript
-    // Do:
-    var obj = {
-        'prop': true,
-        'attribute': 'foo',
-        'name': 'bar'
-    };
+obj = {
+    'a': null,
+    'b': 5,
+    'c': function() {
+        return true;
+    },
+    'd': ( foo === bar ) ? foo : bar
+};
+```
 
-    // Don't:
-    var obj = {
-        'prop': true,
-        'attribute': 'foo',
-        'name': 'bar', // <= DON'T
-    };
-    ```
+##### Enforcement
 
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: No object value alignment
+
+##### Reason
+
+For complex `objects`, matching properties and their corresponding values becomes more difficult, thus hindering readability.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var obj = {
+    'prop'     : true,
+    'attribute': 'foo',
+    'name'     : 'bar'
+};
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var obj = {
+    'prop': true,
+    'attribute': 'foo',
+    'name': 'bar'
+};
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: No trailing comma
+
+##### Reason
+
+Trailing commas in `objects` is not valid JSON.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var obj = {
+    'prop': true,
+    'attribute': 'foo',
+    'name': 'bar', // <= DON'T
+};
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var obj = {
+    'prop': true,
+    'attribute': 'foo',
+    'name': 'bar'
+};
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- <rule> -->
+
+<!-- <rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Functions
 
-*   In general, do declare `functions` using [function statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function), rather than [function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function). This (1) avoids problems encountered due to [hoisting](https://github.com/buildfirst/buildfirst/tree/master/ch05/04_hoisting) and (2) minimizes the use of anonymous `functions`.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    function beep() {
-        console.log( 'boop' );
-    }
+### R: Declare functions using function statements
 
-    // Don't:
-    var beep = function() {
-        console.log( 'boop' );
-    }
-    ```
+##### Reason
+
+Declaring `functions` using [function statements][function-statements], rather than [function expressions][function-expressions], (1) avoids problems encountered due to [hoisting][hoisting] and (2) minimizes the use of anonymous `functions`.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var beep = function() {
+    console.log( 'boop' );
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function beep() {
+    console.log( 'boop' );
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
 
 *   Do minimize closures and declare `functions` at the highest possible scope.
 
@@ -2047,7 +2231,6 @@ TODO: ESLint rule
     *   Test cases
 
     For most cases, do __not__ place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
-*   Consider maintaining [module](https://github.com/kgryte/awesome-node-modules) and [developer](https://github.com/kgryte/awesome-node-developers) whitelists relevant to the application domain.
 
 
 
