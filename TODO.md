@@ -383,6 +383,9 @@ TODO
     * [bcat](https://github.com/kessler/node-bcat)
     * [hcat](https://github.com/kessler/node-hcat) => could be inspiration for piping data to a chart
     * [scat](https://github.com/hughsk/scat)
+    * [browser-run](https://github.com/juliangruber/browser-run)
+    * [budo](https://github.com/mattdesl/budo)
+    * [simple-html-index](https://github.com/mattdesl/simple-html-index)
 
 70. cross-platform open browser
 
@@ -404,18 +407,19 @@ TODO
 
     * make the function polymorphic where it may accept just an `options` arg, a `requestListener` arg, or both args
 
-74. Add a Code of Conduct
-
-    * [Citizen Code of Conduct](http://citizencodeofconduct.org/)
-    * [izs on trolling](http://blog.izs.me/post/30036893703/policy-on-trolling)
-    * [rust-lang](https://www.rust-lang.org/conduct.html)
-    * [npm](https://www.npmjs.com/policies/conduct) and on [Github](https://github.com/npm/policies/blob/master/conduct.md)
-    * [Open Code of Conduct](https://github.com/todogroup/opencodeofconduct/) and [blog](http://todogroup.org/opencodeofconduct/)
-    * Contributor Covenant [1](http://contributor-covenant.org/), [generator](https://github.com/simonv3/covenant-generator), and [repo](https://github.com/ContributorCovenant/contributor_covenant)
+74. 
 
 75. Should `@stdlib/utils/is-window` and `@stdlib/utils/platform` be functions rather than constants?
 
 76. `@stdlib/regexp/extname`, `*/dirname` export circular references; prob best to clone the regexp and bind to exported object
+
+    * requires porting `utils-copy`
+
+77. for browser REPL, use a virtual filesystem
+
+    * `fs` and other filesystem methods should remain the same
+    * difference is that files are not written to disk, but to, say, IndexedDB
+    * would allow for an "isomorphic" REPL and the ability to run all tests and examples on both the server and client
 
 
 ---
