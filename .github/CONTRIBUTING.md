@@ -5,9 +5,9 @@ Contribution Guidelines
 
 When contributing to this project, please follow the provided guidelines.
 
-* Read and understood the style guides.
 * Read and understand the [Code of Conduct][code-of-conduct].
 * Read and understood the [licensing terms][license].
+* Read and understood the style guides.
 
 ===
 
