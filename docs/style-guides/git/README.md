@@ -4,6 +4,12 @@ Git Style Guide
 > Style guide for git.
 
 
+TODO: add branching policy
+TODO: add note about submitting PR against `develop`
+TODO: add `rebase` note
+TODO: add code review note
+
+
 * All commits should follow the [seven rules][git-seven-rules] of a `git` commit message:
   - Use the [imperative mood][imperative-mood] in the `git` commit subject line.
   - Capitalize the first word of the subject line.

@@ -428,6 +428,8 @@ TODO
     * [filer.js](https://github.com/ebidel/filer.js)
     * [browserFS](https://github.com/jvilk/BrowserFS)
 
+78. Add Markdown style guide, including notes about comment annotations, equations, etc.
+
 
 ---
 
