@@ -1900,164 +1900,317 @@ Code review.
 
 <!-- <rule> -->
 
-*   __Always__ use curly braces. Not using them is a common source of bugs.
+### R: Use curly braces
 
-    ``` javascript
-    // Do:
-    if ( foo === bar ) {
-        return true;
+##### Reason
+
+Not using them is a common source of bugs.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+if ( foo === bar ) return true;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+if ( foo === bar ) {
+    return true;
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Place leading brace on same line
+
+##### Reason
+
+Avoids unnecessary newline character.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+if ( foo === bar )
+{
+    // Do something...
+}
+
+function query()
+{
+    // Do something...
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+if ( foo === bar ) {
+    // Do something...
+}
+
+function query() {
+    // Do something...
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Early return
+
+##### Reason
+
+Doing so reduces code branching and indentation.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function foo( value ) {
+    var str;
+    if ( value === 'bar' ) {
+        str = 'Hello';
+    } else {
+        str = 'Goodbye';
     }
+    return str;
+}
+```
 
-    // Don't:
-    if ( foo === bar ) return true;
-    ```
+##### Good Example
 
-*   __Always__ place the leading brace on the same line.
+``` javascript
+// Do...
+function foo( value ) {
+    if ( value === 'bar' ) {
+        return 'Hello';
+    }
+    return 'Goodbye';
+}
+```
 
-    ``` javascript
-    // Do:
-    if ( foo === bar ) {
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Early continue
+
+##### Reason
+
+Reduces code branching and indentation.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+for ( var i = 0; i < 10; i++ ) {
+    if ( i !== 5 ) {
         // Do something...
     }
+}
+```
 
-    function query() {
-        // Do something...
+##### Good Example
+
+``` javascript
+// Do...
+for ( var i = 0; i < 10; i++ ) {
+    if ( i === 5 ) {
+        continue;
     }
+    // Do something...
+}
+```
 
-    // Don't:
-    if ( foo === bar )
-    {
-        // Do something...
-    }
+##### Enforcement
 
-    function query()
-    {
-        // Do something...
-    }
-    ```
+Code review.
 
-*   Do early `return`.
+<!-- </rule> -->
 
-    ``` javascript
-    // Do:
-    function foo( value ) {
-        if ( value === 'bar' ) {
-            return 'Hello';
-        }
-        return 'Goodbye';
-    }
+<!-- </rule-set> -->
 
-    // Don't:
-    function foo( value ) {
-        var str;
-        if ( value === 'bar' ) {
-            str = 'Hello';
-        } else {
-            str = 'Goodbye';
-        }
-        return str;
-    }
-    ```
 
-*   Do early `continue`.
-
-    ``` javascript
-    // Do:
-    for ( var i = 0; i < 10; i++ ) {
-        if ( i === 5 ) {
-            continue;
-        }
-        // Do something...
-    }
-
-    // Don't:
-    for ( var i = 0; i < 10; i++ ) {
-        if ( i !== 5 ) {
-            // Do something...
-        }
-    }
-    ```
+<!-- <rule-set> -->
 
 ---
+
 ## Equality
 
-*   __Always__ prefer `===` and `!==` to `==` and `!=`. Not enforcing type equality is a source of bugs.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    if ( foo === bar ) {
-        // Do something...
-    }
+### R: Use strict equality
 
-    // Don't:
-    if ( foo != bar ) {
-        // Do something...
-    }
-    ```
+##### Reason
+
+Not enforcing type equality is a source of bugs.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+if ( foo != bar ) {
+    // Do something...
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+if ( foo === bar ) {
+    // Do something...
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Errors
 
-*   __Always__ provide descriptive `error` messages.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    var err = new TypeError( 'invalid input argument. Window option must be a positive integer. Value: `' + value + '`.' );
+### R: Provide descriptive error message
 
-    // Don't:
-    var err = new Error( '1' );
-    ```
+##### Reason
 
-*   __Always__ fail __fast__ (see [programmer errors](https://www.joyent.com/developers/node/design/errors)). A *library* should `throw` and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance.
+Simplifies debugging.
 
-    ``` javascript
-    // Do:
-    /**
-    * @api public
-    */
-    function beep( clbk ) {
-        if ( !arguments.length ) {
-            throw new Error( 'insufficient input arguments. Must provide a callback function.' );
-        }
+##### Bad Example
+
+``` javascript
+// Do not...
+var err = new Error( '1' );
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var err = new TypeError( 'invalid input argument. Window option must be a positive integer. Value: `' + value + '`.' );
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Fail fast
+
+##### Reason
+
+A *library* should `throw` and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://www.joyent.com/developers/node/design/errors)).
+
+##### Bad Example
+
+``` javascript
+// Don't...
+
+/**
+* @api public
+*/
+function boop( clbk ) {
+    clbk();
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+
+/**
+* @api public
+*/
+function beep( clbk ) {
+    if ( !arguments.length ) {
+        throw new Error( 'insufficient input arguments. Must provide a callback function.' );
     }
+    clbk();
+}
+```
 
-    // Don't:
-    /**
-    * @api public
-    */
-    function boop( clbk ) {
-        clbk();
-    }
-    ```
+##### Enforcement
 
-*   For public facing library APIs, __always__ [validate](https://github.com/validate-io/overview) input values. Doing so makes contracts explicit, facilitates testing, and helps mitigate the presence of subtle bugs.
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Perform dynamic type checking
+
+##### Reason
+
+For public facing APIs, dynamic type checking makes contracts explicit, facilitates testing, and helps mitigate the presence of subtle bugs.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function bar( opts ) {
+    // What happens if `opts` or `opts.ssl` are not objects???
+    var key = opts.ssl.key;
+}
+```
+
+##### Good Example 
     
-    ``` javascript
-    // Do:
-    function foo( opts ) {
-        if ( !isObject( opts ) ) {
-            throw new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + opts + '`.' );
-        }
+``` javascript
+// Do...
+function foo( opts ) {
+    if ( !isObject( opts ) ) {
+        throw new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + opts + '`.' );
     }
+}
+```
 
-    // Don't:
-    function bar( opts ) {
-        // What happens if `opts` or `opts.ssl` are not objects???
-        var key = opts.ssl.key;
-    }
-    ```
+##### Notes
 
-*   When validating, __always__ include the invalid value in the `error` message. Doing so makes debugging and logging easier.
+* When performing dynamic type checks, __always__ include the invalid value in the `error` message. Doing so makes debugging and logging easier.
 
     ``` javascript
-    // Do:
+    // Do...
     function bop( len ) {
         if ( !isPositiveInteger( len ) ) {
             throw new TypeError( 'invalid input argument. Length must be a positive integer. Value: `' + len + '`.' );
         }
     }
 
-    // Don't:
+    // Do not...
     function bap( len ) {
         if ( !isPositiveInteger( len ) ) {
             throw new Error( 'invalid value.' );
@@ -2065,67 +2218,133 @@ Code review.
     }
     ```
 
-*   __Never__ trap [uncaught exceptions](https://nodejs.org/api/process.html#process_event_uncaughtexception) without crashing. Not crashing upon encountering an `uncaughtException` leaves your application in an undefined state and can result in memory leaks.
+##### Enforcement
 
-    ``` javascript
-    // Okay:
-    function onError( error ) {
-        console.error( 'Caught exception. Err: %s', error.message );
-        process.exit( 1 ); // <= THIS IS KEY!!!!
+* Unit tests
+* Code review
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Never trap uncaught exceptions
+
+##### Reason
+
+Not crashing upon encountering an [`uncaughtException`][uncaught-exception] leaves your application in an undefined state and can result in memory leaks.
+
+##### Bad Example
+
+``` javascript
+// DO NOT...
+function onError( error ) {
+    console.error( 'Caught exception. Err: %s', error.message );
+}
+process.on( 'uncaughtException', onError );
+```
+
+##### Okay Example
+
+``` javascript
+// Okay...
+function onError( error ) {
+    console.error( 'Caught exception. Err: %s', error.message );
+    process.exit( 1 ); // <= THIS IS KEY!!!!
+}
+process.on( 'uncaughtException', onError );
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Error-first asynchronous callbacks
+
+##### Reason
+
+Designing asynchronous APIs in this fashion matches the [convention][errbacks] found in Node.js core. If no `error` occurs, the first parameter when invoking the callback should be `null`.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function badAsync( clbk ) {
+    setTimeout( done, 1000 );
+    function done() {
+        clbk( 'beep' );
     }
-    process.on( 'uncaughtException', onError );
+}
+```
 
-    // DON'T:
-    function onError( error ) {
-        console.error( 'Caught exception. Err: %s', error.message );
+##### Good Example
+
+``` javascript
+// Do...
+function goodAsync( clbk ) {
+    setTimeout( done, 1000 );
+    function done() {
+        clbk( null, 'beep' );
     }
-    process.on( 'uncaughtException', onError );
-    ```
+}
+``` 
 
-*   __Always__ designate the first argument for asynchronous function APIs as an `error` argument. If no `error` occurs, the value, if set, should be `null`. Designing asynchronous APIs in this fashion matches the [convention](https://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback) found in Node.js core.
+##### Enforcement
 
-    ``` javascript
-    // Do:
-    function goodAsync( clbk ) {
-        setTimeout( done, 1000 );
-        function done() {
-            clbk( null, 'beep' );
-        }
-    }
+Code review.
 
-    // Don't:
-    function badAsync( clbk ) {
-        setTimeout( done, 1000 );
-        function done() {
-            clbk( 'beep' );
-        }
-    }
-    ``` 
+<!-- </rule> -->
 
-*   __Always__ return appropriate [status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    response
-        .status( 502 )
-        .json({
-            'status': 502,
-            'message': 'unable to connect to remote database.'
-        });
+### R: Return status codes
 
-    // Don't:
-    response
-        .send( 200 )
-        .json({
-            'success': false
-        });
-    ```
+##### Reason
+
+[Status codes][http-status-codes] provide information as to the cause and nature of an HTTP request error.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+response
+    .send( 200 )
+    .json({
+        'success': false
+    });
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+response
+    .status( 502 )
+    .json({
+        'status': 502,
+        'message': 'unable to connect to remote database.'
+    });
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
 
 
-
+<!-- <rule-set> -->
 
 ---
+
 ## Comments
+
+<!-- <rule> -->
 
 *   Do use `/** Comments */` for mult-line comments.
 
