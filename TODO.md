@@ -11,7 +11,7 @@ TODO
    * support reformatting ala `go fmt`
    * move `eslint` config files/modules to this repo (will need to do audit to ensure up-to-date)
 
-2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) to `.github`
+2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide)
 
 3. determine how to handle internal `@stdlib` links in READMEs
 
@@ -83,8 +83,6 @@ TODO
 10. 
 
 11. add CONTRIBUTING.md
-  
-    * PR template should have link to this and the style guide
 
 12. determine strategy for generic validation fcns
 
@@ -118,9 +116,10 @@ TODO
 
 19. tests for top-level `tools`; e.g., JSDoc templates, etc
 
-20. move style-guide to a `stdlib` repo
+20. add rule to JavaScript style guide about not using built-in functions, especially math functions
 
-    * or maybe as a file in `.github` or `docs`
+    * link to various accuracy issues
+    * highlight that browsers often sacrifice accuracy for speed
 
 21. clean-up test runners
 
@@ -241,6 +240,7 @@ TODO
 46. find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
 
     * include ESLint rules for each (where applicable) guideline
+    * include references (e.g., perf, fast elements, etc)
 
 47. add code climate badge
 
