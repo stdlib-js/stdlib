@@ -2455,8 +2455,6 @@ var foo = bar || null;
 
 ##### Good Example
 
-*   Do use `//` for single-line comments. Place the comment above the comment subject, and place an empty line above the comment.
-
 ``` javascript
 // Do...
 
@@ -2524,9 +2522,9 @@ function Ctor() {
 Use `// HACK:` to annotate fragile/non-general solutions.
 
 ``` javascript
-// HACK: temporary fix; host and port should be abstracted to another module.
-var host = '127.0.0.1',
-    port = 7331;
+// HACK: temporary fix; host and port should be abstracted to another module handling configuration.
+var host = '127.0.0.1';
+var port = 7331;
 ```
 
 ##### WARNING
@@ -2647,7 +2645,7 @@ function testFunction() {
 
 var myObject = {};
 
-var myInstance = new Instance();
+var myInstance = new Ctor();
 ```
 
 ##### Enforcement
@@ -2983,259 +2981,507 @@ var robo = createRobot();
 
 <!-- <rule> -->
 
-*   Where appropriate, combine set/get into a single method.
+### R: Combine set/get into single method
 
-    ``` javascript
-    // Do:
-    Robot.prototype.name = function( name ) {
-        if ( !arguments.length ) {
-            return this._name;
-        }
-        if ( typeof name !== 'string' ) {
-            throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
-        }
-        this._name = name;
-        return this;
+##### Reason
+
+Simplifies a class interface.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+Robot.prototype.setName = function( name ) {
+    if ( typeof name !== 'string' ) {
+        throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
     }
+    this._name = name;
+    return this;
+}
 
-    // Don't:
-    Robot.prototype.setName = function( name ) {
-        if ( typeof name !== 'string' ) {
-            throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
-        }
-        this._name = name;
-        return this;
-    }
+Robot.prototype.getName = function() {
+    return this._name;
+}
+```
 
-    Robot.prototype.getName = function() {
+##### Good Example
+
+``` javascript
+// Do...
+Robot.prototype.name = function( name ) {
+    if ( !arguments.length ) {
         return this._name;
     }
-    ```
-
-*   For public libraries, do [type](https://github.com/validate-io) and [sanity](https://github.com/validate-io) check input arguments. While checks do incur computational cost, not providing such checks can entail a considerable drain on a developer's time. Subtle bugs can arise from using unexpected types. Be explicit in what you expect and write tests confirming your expectations. Your stringency helps other developers debug their own code.
-
-    ``` javascript
-    // Do:
-    Stream.prototype.window = function( win ) {
-        if ( !arguments.length ) {
-            return this._window;
-        }
-        if ( typeof win !== 'number' ||  win !== win ) {
-            throw new Error( 'invalid input argument. Window size must be numeric. Value: `' + win + '`.' );
-        }
-        if ( Math.floor( win ) !== win || win <= 0 ) {
-            throw new Error( 'invalid input argument. Window size must be a positive integer. Value: `' + win + '`.' );
-        }
-        this._window = win;
-        return this;
+    if ( typeof name !== 'string' ) {
+        throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
     }
+    this._name = name;
+    return this;
+}
+```
 
-    // Don't:
-    Stream.prototype.window = function( win ) {
-        if ( !arguments.length ) {
-            return this._window;
-        }
-        this._window = win;
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Perform dynamic type checking
+
+##### Reason
+
+While checks do incur computational cost, not providing such checks can entail a considerable drain on a developer's time. Subtle bugs can arise from using unexpected types. Be explicit in what you expect and write tests confirming your expectations. Your stringency helps other developers debug their own code.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+Stream.prototype.window = function( win ) {
+    if ( !arguments.length ) {
+        return this._window;
     }
-    ```
+    this._window = win;
+    return this;
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+Stream.prototype.window = function( win ) {
+    if ( !arguments.length ) {
+        return this._window;
+    }
+    if ( typeof win !== 'number' ||  win !== win ) {
+        throw new Error( 'invalid input argument. Window size must be numeric. Value: `' + win + '`.' );
+    }
+    if ( Math.floor( win ) !== win || win <= 0 ) {
+        throw new Error( 'invalid input argument. Window size must be a positive integer. Value: `' + win + '`.' );
+    }
+    this._window = win;
+    return this;
+}
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Method Chaining
 
-*   Return `this` to enable method chaining and to create a [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface).
+<!-- <rule> -->
 
-    ``` javascript
-    function Robot() {
-        if ( !(this instanceof Robot) ) {
-            return new Robot();
-        }
-        this._name = '';
-        this._color = 'black';
-        return this;
+### R: Create fluent interfaces by returning this context
+
+##### Reason
+
+Returning `this` enabling method chaining and creates a [fluent interface][fluent-interface]. Such interfaces provide a terse syntax for describing flow.
+
+##### Good Example
+
+``` javascript
+function Robot() {
+    if ( !(this instanceof Robot) ) {
+        return new Robot();
     }
+    this._name = '';
+    this._color = 'black';
+    return this;
+}
 
-    Robot.prototype.name = function( name ) {
-        if ( !arguments.length ) {
-            return this._name;
-        }
-        if ( typeof name !== 'string' ) {
-            throw new Error( 'invalid input value.' );
-        }
-        this._name = name;
-        return this;
+Robot.prototype.name = function( name ) {
+    if ( !arguments.length ) {
+        return this._name;
     }
-
-    Robot.prototype.color = function( color ) {
-        if ( !arguments.length ) {
-            return this._color;
-        }
-        if ( typeof color !== 'string' ) {
-            throw new Error( 'invalid input value.' );
-        }
-        this._color = color;
-        return this;
+    if ( typeof name !== 'string' ) {
+        throw new Error( 'invalid input value.' );
     }
+    this._name = name;
+    return this;
+}
 
-    var robo = new Robot();
+Robot.prototype.color = function( color ) {
+    if ( !arguments.length ) {
+        return this._color;
+    }
+    if ( typeof color !== 'string' ) {
+        throw new Error( 'invalid input value.' );
+    }
+    this._color = color;
+    return this;
+}
 
-    robo.name( 'Robo' )
-        .color( 'pink' );
-    ```
+var robo = new Robot();
+
+robo.name( 'Robo' )
+    .color( 'pink' );
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Documentation
 
-*   __Always.__
-*   Prefer too much to too little.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
+### R: Always document source code
 
-    /**
-    * FUNCTION: autocorr( vector )
-    *   Given an input data vector, calculate its auto-correlation. To calculate the auto-correlation using an FFT, the data is padded to have length 2^n, where `n` is the next power of 2 greater than the vector length. For more details, consult {@link http://example.com}.
-    *
-    * @param {Number[]} vector - 1d array
-    * @returns {Number} auto-correlation
-    */
-    function autocorr( vector ) {
-        // Calculate...
-    }
+##### Reason
+
+Code is read more often than it is written. Prefer too much documentation to too little.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+
+/**
+* Calculates auto-correlation.
+*/
+function autocorr( vector ) {
+    // Calculate...
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+
+/**
+* Calculate the auto-correlation of an input vector. To calculate the auto-correlation using an FFT, the data is padded to have length 2^n, where `n` is the next power of 2 greater than the vector length. For more details, consult {@link http://example.com}.
+*
+* @param {number[]} vector - 1d array
+* @returns {number} auto-correlation
+*
+* @example
+* var arr = [ 1, 6, 5, 4, 7, 2, 3, 1 ];
+*/
+function autocorr( vector ) {
+    // Calculate...
+}
+```
+
+##### Notes
+
+* For client-side JavaScript, if you are concerned about file size, build/include a distributable file, stripped of comments and minified. Keep source code annotated.
+* __Always__ include example/demo code that is easily runnable.
+* Do __not__ claim that your code is self-documenting. Your code is not. __Period.__
+* Do __not__ rely on tests as your __sole__ source of documentation. While tests are documentation, annotating your source provides greater insight and a means to explain why you made particular design choices.
+* __Always__ make your documentation __beautiful__. Take as much pride in your documentation as you do in your code.
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
 
 
-    // Don't:
-    /**
-    * FUNCTION: autocorr( vector )
-    *   Calculates auto-correlation.
-    */
-    function autocorr( vector ) {
-        // Calculate...
-    }
-    ```
-
-*   For client-side JavaScript, if you are concerned about file size, build/include a distributable file, stripped of comments and minified. Keep your source annotated.
-*   __Always__ include example/demo code that is easily runnable.
-*   Do __not__ claim that your code is self-documenting. Your code is not. __Period.__
-*   Do __not__ rely on tests as your __sole__ source of documentation. While tests are documentation, annotating your source provides greater insight and a means to explain why you made particular design choices.
-*   __Always__ make your documentation __beautiful__. Take as much pride in your documentation as you do in your code.
-
+<!-- <rule-set> -->
 
 ---
+
 ## Performance
 
-*   Prefer simplicity and readability over performance optimization. For example,
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    x = Math.floor( x );
+### R: Prefer simplicity and readability
 
-    // Don't: (avoid using a bitshift unless you really need to)
-    x >> 0;
-    ``` 
+##### Reason
 
-*   Take JSPerf tests with a grain of salt, as results can vary significantly from browser to browser and across browser versions.
+Performance optimization, particularly of the premature variety, often comes with the cost of obscuring implementation details and the presence of more bugs.
 
+##### Bad Example
+
+``` javascript
+// Do not...
+var y = ( x >> 0 );
+
+// Avoid using a bitshift unless you really need to. Possible subtle bug in the above is that `x` is converted to a signed 32-bit integer.
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var y = Math.floor( x );    
+``` 
+
+##### Notes
+
+* Take JSPerf tests with a grain of salt, as results can vary significantly from browser to browser and across browser versions.
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Modularity
 
-*   Every file within a Node module should be __less than__ `200` lines of code. The only exceptions are tests files, which are generally 2-3x the length of the files they test. If a file is longer than `200` lines, the code is undoubtedly too complex, not maintainable, hard to test, and needs to be refactored into smaller sub-modules. Ideally, an individual file should __never__ be longer than `80` lines.
-*   Prefer only __1__ `function` per file. A file which contains fewer functions is easier to test, read, and maintain. This is particularly __true__ for Node modules.
-*   __Always__ bear in mind the single responsibility principle.
-*   __Always__ strive for reusability. 
+### R: Do one thing, do one thing well
+
+##### Reason
+
+Testing, debugging, maintainability, composition, focused interfaces, and interchangeability.
+
+##### Notes
+
+* Every file within a Node module should be __less than__ `200` lines of code. The only exceptions are tests files, which are generally 2-3x the length of the files they test. If a file is longer than `200` lines, the code is undoubtedly too complex, not maintainable, hard to test, and needs to be refactored into smaller sub-modules. Ideally, an individual file should __never__ be longer than `80` lines.
+* Prefer only __1__ `function` per file. A file which contains fewer functions is easier to test, read, and maintain. This is particularly __true__ for Node modules.
+* __Always__ bear in mind the single responsibility principle.
+* __Always__ strive for reusability.
+
+##### Enforcement
+
+* Look for parts of an implementation which can be extracted into reusable components.
+* Code review 
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
 
 
+<!-- <rule-set> -->
 
 ---
+
 ## Client-side JavaScript
 
-*   Forgo dependence on monolithic libraries, such as jQuery, and use native JavaScript [equivalents](http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/) for DOM manipulation. Relying on such libraries leads to code bloat.
+### R: Prefer native equivalents
 
-    ``` javascript
-    // Do:
-    var el = document.querySelector( '#main' );
+##### Reason
 
-    // Don't:
-    var el = $( '#main' );
-    ```
+Relying on monolithic libraries, such as jQuery, for DOM manipulation leads to code bloat. Often the functionality provided by such libraries can be accomplished using either native JavaScript [equivalents][native-dom-equivalents] or a small, focused library.
 
-*   __Always__ wrap client-side scripts in immediately invoked function expressions (IIFE). Doing so prevents variable leakage.
+##### Bad Example
 
-    ``` javascript
-    // Do:
-    (function() {
-        'use strict';
+``` javascript
+// Do not...
+var el = jQuery( '#main' );
+```
 
-        var beep = 'boop';
-        ...
-    })();
-    ```
+##### Good Example
 
-*   __Always__ namespace client-side global variables. Doing so helps minimize global variable name collisions.
+``` javascript
+// Do...
+var el = document.querySelector( '#main' );
+```
 
-    ``` javascript
-    // Do:
-    var myApp = {};
-    myApp.name = 'App';
-    myApp.start = function start(){};
+##### Enforcement
 
-    window.myApp = myApp;
+Code review.
 
-    // Don't:
-    window.start = function start(){};
-    window.name = 'App';
-    ```
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Wrap in immediately invoked function expressions
+
+##### Reason
+
+Prevents variable leakage.
+
+##### Good Example
+
+``` javascript
+// Do...
+(function() {
+    'use strict';
+
+    var beep = 'boop';
+    ...
+})();
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Namespace global variables
+
+##### Reason
+
+Helps minimize global variable name collisions.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+window.start = function start(){};
+window.name = 'App';
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var myApp = {};
+myApp.name = 'App';
+myApp.start = function start(){};
+
+window.myApp = myApp;
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Dependencies
 
-*   __Avoid__ using large (swiss-army knife type) dependencies when only a small subset of functionality is used. In particular, avoid the following libraries:
-    *   underscore
-    *   lodash
-    *   async
+<!-- <rule> -->
 
-    Often smaller, more focused modules are available which can accomplish the same tasks. In general, be __explicit__ in what you require.
-*   __Always__ adequately vet any dependencies used. While Github stars and downloads are rough indicators, place more emphasis on the following:
-    *   Code quality
-        -   conciseness
-        -   maintainability
-    *   Documentation
-        -   APIs
-        -   examples
-    *   Test cases
+### R: Avoid large dependencies
 
-    For most cases, do __not__ place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
+##### Reason
 
+Often, more focused modules are available which can accomplish the same task. In general, be __explicit__ in what you require.
+
+##### Notes
+
+* In particular, avoid the following libraries:
+
+    * underscore
+    * lodash
+    * async
 
 
----
-## Versioning
+##### Enforcement 
 
-*   When creating modules, __always__ use [semantic versioning](https://github.com/mojombo/semver/blob/master/semver.md) (semver) and adhere to its conventions: MAJOR.MINOR.PATCH.
+Code review.
 
-    ``` javascript
-    // Do:
-    {
-        "version": "1.23.5"
-    }
+<!-- </rule> -->
 
-    // Don't:
-    // filename: script_hmm_takes_thingy_and_makes_another_thingy_2000-01-01_version12_updated.js
-    ```
+<!-- <rule> -->
+
+### R: Vet any dependencies used
+
+##### Reason
+
+Any dependency you use becomes your responsibility. Demand the same level of robustness and correctness in your dependencies as you do in your code.
+
+##### Notes
+
+* While Github stars and downloads are rough indicators, place more emphasis on the following:
+
+    * Code quality
+        - conciseness
+        - maintainability
+    * Documentation
+        - APIs
+        - examples
+    * Test cases
+
+* For most cases, do __not__ place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
 
 
 ---
 
 ## Additional Resources
 
-* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-* [Idiomatic.js](https://github.com/rwaldron/idiomatic.js/)
-* [Popular Convention](http://sideeffect.kr/popularconvention/#javascript)
-* [JavaScript Quality Guide](https://github.com/bevacqua/js)
-* [Unix Philosophy](http://www.faqs.org/docs/artu/ch01s06.html)
-* [Semantic Versioning](https://github.com/mojombo/semver/blob/master/semver.md)
+* [Airbnb JavaScript Style Guide][airbnb]
+* [Idiomatic.js][idiomatic-js]
+* [Popular Convention][popular-convention]
+* [JavaScript Quality Guide][quality-guide]
+* [Unix Philosophy][unix-philosophy]
 
 
 ## License
 
-TODO 
+This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
+
+
+<!-- <links> -->
+
+[tab-indentation]: http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/
+
+[sublime-text]: http://www.sublimetext.com/
+
+[editorconfig]: http://editorconfig.org/
+[sublime-text-editorconfig]: https://github.com/sindresorhus/editorconfig-sublime
+
+[atom-editorconfig]: https://github.com/sindresorhus/atom-editorconfig
+[chrome-editorconfig]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
+
+[ecma-262]: http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+
+[array-fast-elements]: https://github.com/thlorenz/v8-perf/blob/master/data-types.md#fast-elements
+
+[function-statements]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
+[function-expressions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
+
+[hoisting]: https://github.com/buildfirst/buildfirst/tree/master/ch05/04_hoisting
+
+[strict-mode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+
+[uncaught-exception]: https://nodejs.org/api/process.html#process_event_uncaughtexception
+[errbacks]: https://nodejs.org/api/fs.html
+[http-status-codes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+[jsdoc]: http://usejsdoc.org/#Getting_Started
+
+[fluent-interface]: http://en.wikipedia.org/wiki/Fluent_interface
+
+[native-dom-equivalents]: http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/
+
+[airbnb]: https://github.com/airbnb/javascript
+[idiomatic-js]: https://github.com/rwaldron/idiomatic.js/
+[popular-convention]: http://sideeffect.kr/popularconvention/#javascript
+[quality-guide]: https://github.com/bevacqua/js
+[unix-philosophy]: http://www.faqs.org/docs/artu/ch01s06.html
+
+[license]: https://creativecommons.org/licenses/by-sa/4.0/
+
+<!-- </links> -->
