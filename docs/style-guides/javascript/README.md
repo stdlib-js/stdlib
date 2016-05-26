@@ -875,7 +875,7 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ##### Notes
 
-*   Do __not__ use the `new` operator `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
+*   Do __not__ use the `new` operator if the `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
 
     ``` javascript
     var len = 100000;
@@ -935,7 +935,7 @@ Code review.
 
 ##### Reason
 
-When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus a `for` loop is more efficient. For larger `arrays`, function invocation cost is comparable to or less than loop cost and the runtime engine is able to optimize for copying large chunks of memory. 
+When copying a small `array`, using `Array#slice()` incurs a function overhead which outweighs benefits. Thus, a `for` loop is more efficient. For larger `arrays`, function cost is comparable to or less than loop cost in addition to the runtime engine being able to optimize for copying large chunks of memory. 
 
 ##### Small Array Example
 
@@ -944,7 +944,7 @@ When copying a small `array`, using `Array#slice()` incurs a function overhead w
 var arr = new Array( 10 );
 var out = new Array( arr.length );
 var i;
-for ( i = 0; i < 1e6; i++ ) {
+for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = Math.random();
 }
 // Copy...
@@ -957,10 +957,10 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ``` javascript
 // Do...
-var arr = [];
+var arr = new Array( 10000 );
 var out;
 var i;
-for ( i = 0; i < 1e6; i++ ) {
+for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = Math.random();
 }
 // Copy...
@@ -1135,219 +1135,475 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-*   Do minimize closures and declare `functions` at the highest possible scope.
+### R: Declare functions at highest possible scope
 
-    ``` javascript
-    // Do:
-    function beep() {
-        boop();
-    }
+##### Reason
 
+Minimizes closures and helps to prevent nested callback hell.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function beep() {
+    boop();
     function boop() {
         // Do something...
     }
+}
+```
 
-    // Don't:
-    function beep() {
-        boop();
-        function boop() {
-            // Do something...
-        }
-    }
-    ```
+##### Good Example
 
-*   Do __not__ declare `functions` inside `for` loops and `conditions`.
+``` javascript
+// Do...
+function beep() {
+    boop();
+}
 
-    ``` javascript
-    // Do:
-    function beep( idx, clbk ) {
-        clbk( 'beep'+i );
-    }
-    function bop( msg ) {
+function boop() {
+    // Do something...
+}
+```
+
+##### Enforcement
+
+Code review. Look for excessive indentation.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: No declarations within loops or conditions
+
+##### Reason
+
+Declaring within loops and conditions may result in repeated function creation and variables in the outer scope may change leading to subtle bugs.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function beep( idx, clbk ) {
+    clbk( 'beep'+i );
+}
+for ( var i = 0; i < 10; i++ ) {
+    beep( i, function bop( msg ) {
         console.log( msg );
-    }
+    });
+}
+```
 
-    for ( var i = 0; i < 10; i++ ) {
-        beep( i, bop );
-    }
+##### Good Example
 
-    // Don't:
-    for ( var i = 0; i < 10; i++ ) {
-        beep( i, function bop( msg ) {
-            console.log( msg );
-        });
-    }
+``` javascript
+// Do...
+function beep( idx, clbk ) {
+    clbk( 'beep'+i );
+}
+function bop( msg ) {
+    console.log( msg );
+}
 
-    // Do:
-    function onTimeout( idx ) {
-        return function onTimeout() {
-            console.log( idx );
-        };
-    }
-    for ( var i = 0; i < 10; i++ ) {
-        setTimeout( onTimeout( i ), 1000 );
-    }
+for ( var i = 0; i < 10; i++ ) {
+    beep( i, bop );
+}
+```
 
-    // Don't:
-    for ( var i = 0; i < 10; i++ ) {
-        setTimeout( function onTimeout() {
-            console.log( i );
-        }, 1000 );
-    }
+##### Bad Example
 
-    // Do:
+``` javascript
+// Do not...
+for ( var i = 0; i < 10; i++ ) {
+    setTimeout( function onTimeout() {
+        console.log( i );
+    }, 1000 );
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function onTimeout( idx ) {
+    return function onTimeout() {
+        console.log( idx );
+    };
+}
+for ( var i = 0; i < 10; i++ ) {
+    setTimeout( onTimeout( i ), 1000 );
+}
+```
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var i = Math.random() * 20;
+if ( i < 11 ) {
+    bap();
     function bap() {
         // Do something...
     }
-    if ( i < 11 ) {
-        bap();
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function bap() {
+    // Do something...
+}
+var i = Math.random() * 20;
+if ( i < 11 ) {
+    bap();
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Parentheses around immediately invoked function expressions
+
+##### Reason
+
+Makes a clear distinction between a `function` declaration and one that is immediately invoked.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function init() {
+    // Do something...
+}();
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+(function init() {
+    // Do something...
+})();
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Enclosed function below return statement
+
+##### Reason
+
+Reduces noise when first attempting understand implementation flow, especially if enclosed functions are documented.
+
+##### Bad Example
+
+``` javascript
+// Don't...
+function getEquation( a, b, c ) {
+    /**
+    * Computes a complex equation.
+    *
+    * @private
+    * @param {number} e - dynamic value
+    * @returns {number} equation output
+    */
+    function eqn( e ) {
+        return e - d + ( 15 * a ) + ( Math.pow( b, 1 / c ) );
     }
+    var d;
 
-    // Don't:
-    if ( i < 11 ) {
-        bap();
-        function bap() {
-            // Do something...
-        }
+    a = 3 * a;
+    b = a / 5;
+    c = Math.pow( b, 3 );
+
+    d = a + ( b / c );
+
+    return eqn;
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function getEquation( a, b, c ) {
+    var d;
+
+    a = 3 * a;
+    b = a / 5;
+    c = Math.pow( b, 3 );
+
+    d = a + ( b / c );
+
+    return eqn;
+
+    /**
+    * Computes a complex equation.
+    *
+    * @private
+    * @param {number} e - dynamic value
+    * @returns {number} equation output
+    */
+    function eqn( e ) {
+        return e - d + ( 15 * a ) + ( Math.pow( b, 1 / c ) );
     }
-    ```
+}   
+```
 
+##### Enforcement
 
-*   Do place parentheses around immediately invoked function expressions (IIFE). Make a clear distinction between a `function` declaration and one that is immediately invoked.
+TODO: ESLint rule
 
-    ``` javascript
-    // Do:
-    (function init() {
-        // Do something...
-    })();
+<!-- </rule> -->
 
-    // Don't:
-    function init() {
-        // Do something...
-    }();
-    ```
+<!-- <rule> -->
 
-*   Do place enclosed `functions` below the `return` statement.
+### R: Primitive expressions over functional counterparts
 
-    ``` javascript
-    // Do:
-    function getEquation( a, b, c ) {
-        var d;
+##### Reason
 
-        a = 3 * a;
-        b = a / 5;
-        c = Math.pow( b, 3 );
+Avoids unnecessary `function` calls introduce additional overhead and, often, functional counterparts do not save space, a frequently cited benefit.
 
-        d = a + ( b / c );
+##### Bad Example
 
-        return eqn;
+``` javascript
+// Do not...
+var squared = arr.map( function square( value ) {
+    return value * value;
+});
+```
 
-        /**
-        * FUNCTION: eqn( e )
-        *   Computes a complex equation.
-        *
-        * @param {Number} e - dynamic value
-        * @returns {Number} equation output
-        */
-        function eqn( e ) {
-            return e - d + ( 15 * a ) + ( Math.pow( b, 1 / c ) );
-        }
-    } // end FUNCTION getEquation()
-    ```
+##### Good Example 
 
-*   Prefer primitive expressions over their functional counterparts. Unnecessary `function` calls introduce additional overhead.
+``` javascript
+var squared = new Array( arr.length );
 
-    ``` javascript
-    var squared = new Array( arr.length );
+// Do...
+for ( var i = 0; i < arr.length; i++ ) {
+    squared[ i ] = arr[ i ] * arr[ i ];
+}
+```
 
-    // Do:
-    for ( var i = 0; i < arr.length; i++ ) {
-        squared[ i ] = arr[ i ] * arr[ i ];
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: No arrow functions
+
+##### Reason
+
+(1) They are not needed. (2) The syntax allows too much style variability.
+
+``` javascript
+// No braces:
+var f = x => x + 1;
+
+// Some braces:
+var f = (x, y) => x + y;
+
+// Some other braces:
+var f = x => { x += 20; return x.toString(); };
+
+// Many braces:
+var f = (x, y) => { x += y; return x.toString(); }
+```
+
+(3) Implicit `returns` can lead to subtle bugs and require a constant mental model as to what is returned and when.
+
+``` javascript
+var y = x => x;
+z = y( 10 );
+// returns 10
+
+y = x => { x };
+z = y( 10 );
+// returns undefined
+
+y = ( x ) => { x };
+z = y( 10 );
+// returns undefined
+
+y = ( x ) => x;
+z = y( 10 );
+// returns 10
+
+y = ( x ) => { return x };
+z = y( 10 );
+// returns 10
+
+y = x => return x;
+z = y( 10 );
+// => Uncaught SyntaxError: Unexpected token return
+```
+
+##### Bad Example
+
+``` javascript
+var squared = arr.map( x => x*x );
+```
+
+##### Good Example
+
+``` javascript
+function square( x ) {
+    return x * x;
+}
+
+var squared = arr.map( square );
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Error-first asynchronous callbacks
+
+##### Reason
+
+This follows the Node.js callback convention.
+
+##### Good Example
+
+``` javascript
+// Do...
+function clbk( error, value ) {
+    if ( error ) {
+        return;
     }
+    console.log( value );
+}
 
-    // Don't:
-    squared = arr.map( function( value ) {
-        return value * value;
-    });
-    ```
-
-*   Asynchronous callbacks requiring error handling should have an `error` parameter as their first argument. If no errors, `error` should be set to `null`.
-
-    ``` javascript
-    // Do:
-    function clbk( error, value ) {
-        if ( error ) {
-            return;
-        }
-        console.log( value );
+function onResponse( error, response, body ) {
+    if ( error ) {
+        clbk( error );
+        return;
     }
+    clbk( null, body );
+}
 
-    function onResponse( error, response, body ) {
-        if ( error ) {
-            clbk( error );
-            return;
-        }
-        clbk( null, body );
-    }
+request({
+    'method': 'GET',
+    'uri': 'http://127.0.0.1'
+}, onResponse );
+```
 
-    request({
-        'method': 'GET',
-        'uri': 'http://127.0.0.1'
-    }, onResponse );
-    ```
+##### Notes
 
-*   Prefer closures and `function` factories rather than nested `functions` and callbacks.
+* If no errors; the `error` argument should be `null`.
 
-    ``` javascript
-    // Do:
-    function mult( x, y ) {
-        return x * y;
-    }
-    function cube( value ) {
-        var v;
-        v = mult( value, value );
-        v = mult( v, value );
-        return v;
-    }
-    function compute( value ) {
-        return function compute() {
-            return cube( value );
-        };
-    }
-    function deferredComputation( value ) {
-        return compute( value );
-    }
 
-    // Don't:
-    function deferredComputation( value ) {
-        return compute;
-        function compute() {
-            return cube();
-            function cube() {
-                var v;
-                v = mult( value, value );
-                v = mult( v, value );
-                return v;
-                function mult( x, y ) {
-                    return x * y;
-                }
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Prefer closure and function factories
+
+##### Reason
+
+Avoids nested callback hell.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function deferredComputation( value ) {
+    return compute;
+    function compute() {
+        return cube();
+        function cube() {
+            var v;
+            v = mult( value, value );
+            v = mult( v, value );
+            return v;
+            function mult( x, y ) {
+                return x * y;
             }
         }
     }
-    ```
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function mult( x, y ) {
+    return x * y;
+}
+function cube( value ) {
+    var v;
+    v = mult( value, value );
+    v = mult( v, value );
+    return v;
+}
+function compute( value ) {
+    return function compute() {
+        return cube( value );
+    };
+}
+function deferredComputation( value ) {
+    return compute( value );
+}
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Strict Mode
 
-*   __Always__ write JavaScript in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode). Doing so discourages bad practices, avoids silent errors, and can result in better performance, as the compiler can make certain assumptions about the code.
+<!-- <rule> -->
 
-    ``` javascript
-    'use strict';
+### R: Use strict mode
 
-    NaN = null; // throws an Error
-    ```
+##### Reason
 
-*   Prefer [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) for a whole script. If not possible, use [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) for each available `function`.
+Writing JavaScript in [strict mode][strict-mode] discourages bad practices, avoids silent errors, and can result in better performance, as the compiler can make certain assumptions about the code.
+
+##### Good Example
+
+``` javascript
+'use strict';
+
+NaN = null; // throws an Error
+```
+
+##### Notes
+
+* Prefer [strict mode][strict-model] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
 
     ``` javascript
     function beep() {
@@ -1356,70 +1612,123 @@ TODO: ESLint rule
     }
     ```
 
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Arguments
 
-*   __Never__ pass the `arguments` variable to another `function`. Doing so automatically puts the `function` in optimization hell.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    function fcn() {
-        var nargs = arguments.length,
-            args = new Array( nargs ),
-            out,
-            i;
+### R: Never pass arguments variable to another function
 
-        for ( i = 0; i < nargs; i++ ) {
-            args[ i ] = arguments[ i ];
-        }
-        out = foo( args );
+##### Reason
+
+Doing so automatically puts the `function` in optimization hell.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function fcn() {
+    var out = foo( arguments );
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do:
+function fcn() {
+    var nargs = arguments.length;
+    var args = new Array( nargs );
+    var out,
+    var i;
+
+    for ( i = 0; i < nargs; i++ ) {
+        args[ i ] = arguments[ i ];
     }
+    out = foo( args );
+}
+```
 
-    // Don't:
-    function fcn() {
-        var out = foo( arguments );
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Reassign input arguments when using arguments variable
+
+##### Reason
+
+Recycling variables when mentioning `arguments` in a `function` body prevents compiler optimization.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function fcn( value, options ) {
+    var err;
+    if ( arguments.length < 2 ) {
+        options = value;
     }
-    ```
-
-*   __Always__ reassign input arguments to new variables when mentioning `arguments` in a `function` body. Recycling variables when mentioning `arguments` in a `function` body prevents compiler optimization.
-
-    ``` javascript
-    // Do:
-    function fcn( value, options ) {
-        var opts,
-            err;
-
-        if ( arguments.length < 2 ) {
-            opts = value;
-        } else {
-            opts = options;
-        }
-        err = validate( opts );
-        if ( err ) {
-            throw err
-        }
-        ...
+    err = validate( options );
+    if ( err ) {
+        throw err
     }
+    ...
+}
+```
 
-    // Don't:
-    function fcn( value, options ) {
-        var err;
-        if ( arguments.length < 2 ) {
-            options = value;
-        }
-        err = validate( options );
-        if ( err ) {
-            throw err
-        }
-        ...
+##### Good Example
+
+``` javascript
+// Do...
+function fcn( value, options ) {
+    var opts;
+    var err;
+
+    if ( arguments.length < 2 ) {
+        opts = value;
+    } else {
+        opts = options;
     }
-    ```
+    err = validate( opts );
+    if ( err ) {
+        throw err
+    }
+    ...
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule-set> -->
 
 
+<!-- <rule-set> -->
 
 ---
+
 ## Regular Expressions
+
+<!-- <rule> -->
 
 *   Do assign regular expressions to variables rather than using them inline.
 
