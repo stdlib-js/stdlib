@@ -66,7 +66,7 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 <!-- <rule> -->
 
-### Use tab indentation
+### R: Use tab indentation
 
 ##### Reason
 
@@ -92,7 +92,7 @@ This project contains an [`.editorconfig`][editorconfig] file to be used in conj
 
 <!-- <rule> -->
 
-### Space before leading brace
+### R: Include space before leading brace
 
 ##### Reason
 
@@ -124,7 +124,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Include spaces around arguments
+### R: Include spaces around arguments
 
 ##### Reason
 
@@ -156,7 +156,8 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Include spaces around array indices  
+### R: Include spaces around array indices  
+
 ##### Reason
 
 Including `1` space before and after `array` indices improves readability.
@@ -193,7 +194,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Include spaces around operators
+### R: Include spaces around operators
 
 ##### Reason
 
@@ -218,10 +219,10 @@ var a = 1 + 1;
 * Use discretion when operators are contained within complex expressions and `string` concatenation.
 
     ``` javascript
-    // Okay:
+    // Okay...
     var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
 
-    // Okay:
+    // Okay...
     var x = (x+y+z)*(t-w-v) + 5;
     ```
 
@@ -233,7 +234,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### No spaces around unary operators
+### R: No spaces around unary operators
 
 ##### Reason
 
@@ -263,7 +264,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Include a space after comment marks
+### R: Include a space after comment marks
 
 ##### Reason
 
@@ -303,7 +304,7 @@ TODO
 
 <!-- <rule> -->
 
-### No multi-line comment space indentation
+### R: No multi-line comment indentation
 
 ##### Reason
 
@@ -341,7 +342,7 @@ In general, hard to automatically enforce. Mostly enforced through code review.
 
 <!-- <rule> -->
 
-### Indent chained methods
+### R: Indent chained methods
 
 ##### Reason
 
@@ -374,7 +375,7 @@ Hard to automatically enforce. Mostly through code review.
 
 <!-- <rule> -->
 
-### No newlines between conditions
+### R: No newlines between conditions
 
 ##### Reason
 
@@ -437,7 +438,7 @@ if ( foo === bar ) {
 * Use discretion when documenting conditions.
 
     ``` javascript
-    Okay...
+    // Okay...
 
     // `bar` can only equal `foo` when...
     if ( foo === bar ) {
@@ -466,7 +467,7 @@ Code review.
 
 <!-- <rule> -->
 
-### No case indentation
+### R: No case indentation
 
 ##### Reason
 
