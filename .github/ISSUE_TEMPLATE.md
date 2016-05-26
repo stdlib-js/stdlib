@@ -3,6 +3,7 @@
 
 > Please ensure the following tasks are completed before filing an issue.
 
+* [ ] Read and understood the [Code of Conduct][code-of-conduct].
 * [ ] Searched for existing issues and pull requests.
 * [ ] If this is a feature request, the issue name begins with `RFC: `.
 
@@ -86,4 +87,4 @@ The following environments are affected:
 * c
 
 
-
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/.github/CODE_OF_CONDUCT.md
