@@ -66,7 +66,7 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 <!-- <rule> -->
 
-### R: Use tab indentation
+### Rule: Use tab indentation
 
 ##### Reason
 
@@ -92,7 +92,7 @@ This project contains an [`.editorconfig`][editorconfig] file to be used in conj
 
 <!-- <rule> -->
 
-### R: Include space before leading brace
+### Rule: Include space before leading brace
 
 ##### Reason
 
@@ -124,7 +124,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Include spaces around arguments
+### Rule: Include spaces around arguments
 
 ##### Reason
 
@@ -156,7 +156,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Include spaces around array indices  
+### Rule: Include spaces around array indices  
 
 ##### Reason
 
@@ -194,7 +194,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Include spaces around operators
+### Rule: Include spaces around operators
 
 ##### Reason
 
@@ -234,7 +234,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: No spaces around unary operators
+### Rule: No spaces around unary operators
 
 ##### Reason
 
@@ -264,7 +264,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Include a space after comment marks
+### Rule: Include a space after comment marks
 
 ##### Reason
 
@@ -304,7 +304,7 @@ TODO
 
 <!-- <rule> -->
 
-### R: No multi-line comment indentation
+### Rule: No multi-line comment indentation
 
 ##### Reason
 
@@ -342,7 +342,7 @@ In general, hard to automatically enforce. Mostly enforced through code review.
 
 <!-- <rule> -->
 
-### R: Indent chained methods
+### Rule: Indent chained methods
 
 ##### Reason
 
@@ -375,7 +375,7 @@ Hard to automatically enforce. Mostly through code review.
 
 <!-- <rule> -->
 
-### R: No newlines between conditions
+### Rule: No newlines between conditions
 
 ##### Reason
 
@@ -467,7 +467,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: No case indentation
+### Rule: No case indentation
 
 ##### Reason
 
@@ -522,7 +522,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Use semicolons
+### Rule: Use semicolons
 
 ##### Reason
 
@@ -563,7 +563,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Include within arithmetic operations
+### Rule: Include within arithmetic operations
 
 ##### Reason
 
@@ -591,7 +591,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Include around ternary test condition
+### Rule: Include around ternary test condition
 
 ##### Reason
 
@@ -628,7 +628,7 @@ TODO
 
 <!-- <rule> -->
 
-### R: Declare variables at top of scope
+### Rule: Declare variables at top of scope
 
 ##### Reason
 
@@ -671,7 +671,7 @@ TODO: ESLint rule (and code review)
 
 <!-- <rule> -->
 
-### R: Declare assigned variables first
+### Rule: Declare assigned variables first
 
 ##### Reason
 
@@ -705,7 +705,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Declare variables separately
+### Rule: Declare variables separately
 
 ##### Reason
 
@@ -739,7 +739,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Declare variables on separate lines
+### Rule: Declare variables on separate lines
 
 ##### Reason
 
@@ -780,7 +780,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Use single quotes
+### Rule: Use single quotes
 
 ##### Reason
 
@@ -808,7 +808,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: No template strings
+### Rule: No template strings
 
 ##### Reason
 
@@ -835,7 +835,7 @@ TODO: ESLint rule. Code review.
 
 <!-- <rule> -->
 
-### R: Use literal syntax for empty array
+### Rule: Use literal syntax for empty array
 
 ##### Reason
 
@@ -863,7 +863,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use new keyword when length is known
+### Rule: Use new keyword when length is known
 
 ##### Reason
 
@@ -916,7 +916,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use for loop to convert array-like objects
+### Rule: Use for loop to convert array-like objects
 
 ##### Reason
 
@@ -949,7 +949,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Copy approach depends on array length
+### Rule: Copy approach depends on array length
 
 ##### Reason
 
@@ -1003,7 +1003,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Split properties over multiple lines
+### Rule: Split properties over multiple lines
 
 ##### Reason
 
@@ -1040,7 +1040,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: No object value alignment
+### Rule: No object value alignment
 
 ##### Reason
 
@@ -1076,7 +1076,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: No trailing comma
+### Rule: No trailing comma
 
 ##### Reason
 
@@ -1112,7 +1112,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: No object literal shorthand
+### Rule: No object literal shorthand
 
 ##### Reason
 
@@ -1160,7 +1160,7 @@ TODO: ESLint rule. Code review.
 
 <!-- <rule> -->
 
-### R: Declare functions using function statements
+### Rule: Declare functions using function statements
 
 ##### Reason
 
@@ -1192,7 +1192,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Declare functions at highest possible scope
+### Rule: Declare functions at highest possible scope
 
 ##### Reason
 
@@ -1231,7 +1231,7 @@ Code review. Look for excessive indentation.
 
 <!-- <rule> -->
 
-### R: No declarations within loops or conditions
+### Rule: No declarations within loops or conditions
 
 ##### Reason
 
@@ -1326,7 +1326,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Parentheses around immediately invoked function expressions
+### Rule: Parentheses around immediately invoked function expressions
 
 ##### Reason
 
@@ -1358,7 +1358,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Enclosed functions below return statement
+### Rule: Enclosed functions below return statement
 
 ##### Reason
 
@@ -1427,7 +1427,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Primitive expressions over functional counterparts
+### Rule: Primitive expressions over functional counterparts
 
 ##### Reason
 
@@ -1461,7 +1461,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: No arrow functions
+### Rule: No arrow functions
 
 ##### Reason
 
@@ -1533,7 +1533,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Error-first asynchronous callbacks
+### Rule: Error-first asynchronous callbacks
 
 ##### Reason
 
@@ -1577,7 +1577,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: No promises
+### Rule: No promises
 
 ##### Reason
 
@@ -1591,7 +1591,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Prefer closure and function factories
+### Rule: Prefer closure and function factories
 
 ##### Reason
 
@@ -1658,7 +1658,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use strict mode
+### Rule: Use strict mode
 
 ##### Reason
 
@@ -1700,7 +1700,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Never pass arguments variable to another function
+### Rule: Never pass arguments variable to another function
 
 ##### Reason
 
@@ -1740,7 +1740,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Reassign input arguments when using arguments variable
+### Rule: Reassign input arguments when using arguments variable
 
 ##### Reason
 
@@ -1801,7 +1801,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Assign to variables
+### Rule: Assign to variables
 
 ##### Reason
 
@@ -1843,7 +1843,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Documentation
+### Rule: Documentation
 
 ##### Reason
 
@@ -1900,7 +1900,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use curly braces
+### Rule: Use curly braces
 
 ##### Reason
 
@@ -1930,7 +1930,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Place leading brace on same line
+### Rule: Place leading brace on same line
 
 ##### Reason
 
@@ -1972,7 +1972,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Early return
+### Rule: Early return
 
 ##### Reason
 
@@ -2013,7 +2013,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Early continue
+### Rule: Early continue
 
 ##### Reason
 
@@ -2059,7 +2059,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use strict equality
+### Rule: Use strict equality
 
 ##### Reason
 
@@ -2100,7 +2100,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Provide descriptive error messages
+### Rule: Provide descriptive error messages
 
 ##### Reason
 
@@ -2128,7 +2128,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Fail fast
+### Rule: Fail fast
 
 ##### Reason
 
@@ -2171,7 +2171,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Perform dynamic type checking
+### Rule: Perform dynamic type checking
 
 ##### Reason
 
@@ -2227,7 +2227,7 @@ function foo( opts ) {
 
 <!-- <rule> -->
 
-### R: Never trap uncaught exceptions
+### Rule: Never trap uncaught exceptions
 
 ##### Reason
 
@@ -2262,7 +2262,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Error-first asynchronous callbacks
+### Rule: Error-first asynchronous callbacks
 
 ##### Reason
 
@@ -2300,7 +2300,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Return status codes
+### Rule: Return status codes
 
 ##### Reason
 
@@ -2346,7 +2346,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use multi-line comment syntax for multi-line comments
+### Rule: Use multi-line comment syntax for multi-line comments
 
 ##### Reason
 
@@ -2390,7 +2390,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use JSDoc
+### Rule: Use JSDoc
 
 ##### Reason
 
@@ -2438,7 +2438,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: use single-line comment syntax for single-line comments
+### Rule: use single-line comment syntax for single-line comments
 
 ##### Reason
 
@@ -2486,7 +2486,7 @@ Code review. TODO: ESLint rule (?).
 
 <!-- <rule> -->
 
-### R: Use annotations
+### Rule: Use annotations
 
 ##### Reason
 
@@ -2570,7 +2570,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Comment closing braces of long code blocks
+### Rule: Comment closing braces of long code blocks
 
 ##### Reason
 
@@ -2616,7 +2616,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Use camelCase for variables
+### Rule: Use camelCase for variables
 
 ##### Reason
 
@@ -2656,7 +2656,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Use PascalCase for constructors and classes
+### Rule: Use PascalCase for constructors and classes
 
 ##### Reason
 
@@ -2694,7 +2694,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Prefix private properties with an underscore
+### Rule: Prefix private properties with an underscore
 
 ##### Reason
 
@@ -2729,7 +2729,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Name all functions
+### Rule: Name all functions
 
 ##### Reason
 
@@ -2786,7 +2786,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Use all CAPS for constants
+### Rule: Use all CAPS for constants
 
 ##### Reason
 
@@ -2833,7 +2833,7 @@ Code review.
 
 ## This
 
-### R: Use self
+### Rule: Use self
 
 ##### Reason
 
@@ -2867,7 +2867,7 @@ TODO: ESLint rule (?)
 
 <!-- <rule> -->
 
-### R: Avoid using bind
+### Rule: Avoid using bind
 
 ##### Reason
 
@@ -2927,7 +2927,7 @@ Code review.
 
 ## Classes
 
-### R: Allow class instantiation without new operator
+### Rule: Allow class instantiation without new operator
 
 ##### Reason
 
@@ -2981,7 +2981,7 @@ var robo = createRobot();
 
 <!-- <rule> -->
 
-### R: Combine set/get into single method
+### Rule: Combine set/get into single method
 
 ##### Reason
 
@@ -3028,7 +3028,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Perform dynamic type checking
+### Rule: Perform dynamic type checking
 
 ##### Reason
 
@@ -3083,11 +3083,11 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Create fluent interfaces by returning this context
+### Rule: Create fluent interfaces by returning this context
 
 ##### Reason
 
-Returning `this` enabling method chaining and creates a [fluent interface][fluent-interface]. Such interfaces provide a terse syntax for describing flow.
+Returning `this` enables method chaining and creates a [fluent interface][fluent-interface]. Such interfaces provide a terse syntax for describing flow.
 
 ##### Good Example
 
@@ -3146,7 +3146,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Always document source code
+### Rule: Always document source code
 
 ##### Reason
 
@@ -3209,7 +3209,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Prefer simplicity and readability
+### Rule: Prefer simplicity and readability
 
 ##### Reason
 
@@ -3250,7 +3250,7 @@ Code review.
 
 ## Modularity
 
-### R: Do one thing, do one thing well
+### Rule: Do one thing, do one thing well
 
 ##### Reason
 
@@ -3279,7 +3279,7 @@ Testing, debugging, maintainability, composition, focused interfaces, and interc
 
 ## Client-side JavaScript
 
-### R: Prefer native equivalents
+### Rule: Prefer native equivalents
 
 ##### Reason
 
@@ -3307,7 +3307,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Wrap in immediately invoked function expressions
+### Rule: Wrap in immediately invoked function expressions
 
 ##### Reason
 
@@ -3333,7 +3333,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Namespace global variables
+### Rule: Namespace global variables
 
 ##### Reason
 
@@ -3375,7 +3375,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Avoid large dependencies
+### Rule: Avoid large dependencies
 
 ##### Reason
 
@@ -3398,7 +3398,7 @@ Code review.
 
 <!-- <rule> -->
 
-### R: Vet any dependencies used
+### Rule: Vet any dependencies used
 
 ##### Reason
 
