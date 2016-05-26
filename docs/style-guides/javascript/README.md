@@ -69,7 +69,7 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 ##### Reason
 
-Tab indentation allows the developer to specify the space indentation equivalent in her editor. For example, in [Sublime Text][sublime-text], you can specify in your user preferences
+Tab indentation allows a developer to specify the space indentation equivalent in her editor. For example, in [Sublime Text][sublime-text], you can specify in your user preferences
 
 ``` text
 "tab_width": 4
@@ -91,7 +91,7 @@ This project contains an [`.editorconfig`][editorconfig] file to be used in conj
 
 <!-- <rule> -->
 
-### Rule: Include space before leading brace
+### Rule: Include a space before leading brace
 
 ##### Reason
 
@@ -525,7 +525,7 @@ TODO: ESLint rule
 
 ##### Reason
 
-While semicolons are [not required][ecma-262] in most cases due to [automatic semicolon insertion][ecma-262], prefer to be explicit in specifying when a statement ends. Additionally, in REPL environments, semicolons acquire special meaning; notably, they silence return value output.
+While semicolons are [not required][ecma-262] in most cases due to [automatic semicolon insertion][ecma-262], prefer to be explicit in specifying when a statement ends. Additionally, in certain REPL environments, semicolons acquire special meaning; notably, they silence return value output.
 
 ##### Bad Example
 
@@ -915,7 +915,7 @@ Code review.
 
 <!-- <rule> -->
 
-### Rule: Use for loop to convert array-like objects
+### Rule: Use a for loop to convert array-like objects
 
 ##### Reason
 
@@ -1079,7 +1079,7 @@ Code review.
 
 ##### Reason
 
-Trailing commas in `objects` is not valid JSON.
+An object which includes a trailing comma is not valid JSON.
 
 ##### Bad Example
 
@@ -1234,7 +1234,7 @@ Code review. Look for excessive indentation.
 
 ##### Reason
 
-Declaring within loops and conditions may result in repeated function creation and variables in the outer scope may change leading to subtle bugs.
+Declaring within loops and conditions may result in repeated function creation, and variables in the outer scope may change leading to subtle bugs.
 
 ##### Bad Example
 
@@ -1357,7 +1357,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Rule: Enclosed functions below return statement
+### Rule: Declare enclosed functions below return statement
 
 ##### Reason
 
@@ -1426,7 +1426,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Rule: Primitive expressions over functional counterparts
+### Rule: Use primitive expressions over functional counterparts
 
 ##### Reason
 
@@ -1565,7 +1565,7 @@ request({
 
 ##### Notes
 
-* If no errors; the `error` argument should be `null`.
+* If no errors, the `error` argument should be `null`.
 
 
 ##### Enforcement
@@ -1590,7 +1590,7 @@ Code review.
 
 <!-- <rule> -->
 
-### Rule: Prefer closure and function factories
+### Rule: Prefer closures and function factories
 
 ##### Reason
 
@@ -1646,6 +1646,49 @@ Code review.
 
 <!-- </rule> -->
 
+<!-- <rule> -->
+
+### Rule: Name all functions
+
+##### Reason
+
+Named `functions` are easier to find in stack traces and consequently debug.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+
+function beep( f ) {
+    f();
+}
+
+beep( function() {
+   console.log( 'boop' ); 
+});
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+
+function beep( f ) {
+    f();
+}
+function boop() {
+   console.log( 'boop' ); 
+}
+
+beep( boop );
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
 <!-- </rule-set> -->
 
 
@@ -1673,7 +1716,7 @@ NaN = null; // throws an Error
 
 ##### Notes
 
-* Prefer [strict mode][strict-model] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
+* Prefer [strict mode][strict-mode] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
 
     ``` javascript
     function beep() {
@@ -1699,7 +1742,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Rule: Never pass arguments variable to another function
+### Rule: Never pass the arguments variable to another function
 
 ##### Reason
 
@@ -1739,7 +1782,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Rule: Reassign input arguments when using arguments variable
+### Rule: Reassign input arguments when using the arguments variable
 
 ##### Reason
 
@@ -1810,28 +1853,28 @@ Ensures a regular expression is only created once and improves readability.
 
 ``` javascript
 // Do not...
-beep();
-
 function beep( str ) {
     if ( /\.+/.test( str ) ) {
         // Do something...
     }
 }
+
+beep();
 ```
 
 ##### Good Example
 
 ``` javascript
 // Do...
-var regex = /\.+/;
-
-beep();
+var RE = /\.+/;
 
 function beep( str ) {
-    if ( regex.test( str ) ) {
+    if ( RE.test( str ) ) {
         // Do something...
     }
 }
+
+beep();
 ```
 
 ##### Enforcement
@@ -1842,7 +1885,7 @@ Code review.
 
 <!-- <rule> -->
 
-### Rule: Documentation
+### Rule: Document regular expressions
 
 ##### Reason
 
@@ -1857,7 +1900,7 @@ Regular expressions are error prone and difficult to understand without thorough
 * Regular expression: `/^\/((?:\\\/|[^\/])+)\/([imgy]*)$/`
 *
 * `/^\/`
-*   - match a string that begins with a /
+*   - match a string that begins with a `/`
 * `()`
 *   - capture
 * `(?:)+`
@@ -2131,7 +2174,7 @@ Code review.
 
 ##### Reason
 
-A library should `throw` and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://www.joyent.com/developers/node/design/errors)).
+Throw and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://www.joyent.com/developers/node/design/errors)).
 
 ##### Bad Example
 
@@ -2428,6 +2471,7 @@ function transform( str ) {
 ##### Notes
 
 * Be sure to include parameters, parameter types, return types (if any), errors (if any can be thrown), and examples.
+* Use Markdown syntax for extended comments.
 
 ##### Enforcement
 
@@ -2551,7 +2595,7 @@ function factorial( x ) {
 
 ##### NOTE
 
-Use `// NOTE:` to annotate questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` which should be brought to a user's attention.
+Use `// NOTE:` to annotate questions, comments, or anything which does not fit under `TODO`, `FIXME`, `HACK`, `WARNING`, `OPTIMIZE` which should be brought to a user's attention.
 
 ``` javascript
 // NOTE: consider optimizing this for large arrays (len > 64K).
@@ -2763,6 +2807,7 @@ request({
 ##### Bad Example
 
 ``` javascript
+// Do not...
 var arr = [ 1, 2, 3 ];
 var out = arr.map( x => x * x );
 ```
@@ -2770,6 +2815,7 @@ var out = arr.map( x => x * x );
 ##### Good Example
 
 ``` javascript
+// Do...
 function square( x ) {
     return x * x;
 }
@@ -2808,12 +2854,14 @@ var VALUE = 3.14;
 ##### Bad Example
 
 ``` javascript
+// Do not...
 const value = 3.14;
 ```
 
 ##### Good Example
 
 ``` javascript
+// Do...
 const VALUE = 3.14;
 ```
 
@@ -3177,6 +3225,7 @@ function autocorr( vector ) {
 *
 * @example
 * var arr = [ 1, 6, 5, 4, 7, 2, 3, 1 ];
+* var v = autocorr( arr );
 */
 function autocorr( vector ) {
     // Calculate...
@@ -3401,7 +3450,7 @@ Code review.
 
 ##### Reason
 
-Any dependency you use becomes your responsibility. Demand the same level of robustness and correctness in your dependencies as you do in your code.
+Any dependency you use becomes __your__ responsibility. Demand the same level of robustness and correctness in your dependencies as you do in your code.
 
 ##### Notes
 
