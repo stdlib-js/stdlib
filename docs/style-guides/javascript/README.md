@@ -806,6 +806,24 @@ TODO: ESLint rule
 
 <!-- </rule> -->
 
+<!-- <rule> -->
+
+### R: No template strings
+
+##### Reason
+
+Immediate evaluation prevents a template being stored in a variable. Token syntax is fixed. Whitespace sensitivity causes alignment issues, especially within nested code blocks.
+
+##### Notes
+
+* A function which performs string concatenation is equivalently effective.
+
+##### Enforcement
+
+TODO: ESLint rule. Code review.
+
+<!-- </rule> -->
+
 <!-- </rule-set> -->
 
 
@@ -1092,6 +1110,45 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
+<!-- <rule> -->
+
+### R: No object literal shorthand
+
+##### Reason
+
+Unnecessary syntactic sugar. In complex objects, shorthand notation decreases readability. Prefer making key-value pairs explicit.
+
+##### Bad Example
+
+``` javascript
+var foo = 'beep';
+var x = true;
+var y = 10;
+
+var obj = { foo, 'baz': 'boop', x, y };
+```
+
+##### Good Example
+
+``` javascript
+var foo = 'beep';
+var x = true;
+var y = 10;
+
+var obj = {
+    'foo': foo,
+    'baz': 'boop',
+    'x': x,
+    'y': y
+};
+```
+
+##### Enforcement
+
+TODO: ESLint rule. Code review.
+
+<!-- </rule> -->
+
 <!-- <rule-set> -->
 
 
@@ -1301,11 +1358,11 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Enclosed function below return statement
+### R: Enclosed functions below return statement
 
 ##### Reason
 
-Reduces noise when first attempting understand implementation flow, especially if enclosed functions are documented.
+Reduces noise when first attempting to understand implementation flow, especially if enclosed functions are documented.
 
 ##### Bad Example
 
@@ -1374,7 +1431,7 @@ TODO: ESLint rule
 
 ##### Reason
 
-Avoids unnecessary `function` calls introduce additional overhead and, often, functional counterparts do not save space, a frequently cited benefit.
+Function calls introduce additional overhead and, often, functional counterparts do not save space, a frequently cited benefit.
 
 ##### Bad Example
 
@@ -1520,6 +1577,20 @@ Code review.
 
 <!-- <rule> -->
 
+### R: No promises
+
+##### Reason
+
+Error handling in `promises` is ill-defined. These primitives originated primarily due to poor coding practices when using callbacks rather than out of existential need.
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
 ### R: Prefer closure and function factories
 
 ##### Reason
@@ -1647,7 +1718,7 @@ function fcn() {
 ##### Good Example
 
 ``` javascript
-// Do:
+// Do...
 function fcn() {
     var nargs = arguments.length;
     var args = new Array( nargs );
@@ -1730,61 +1801,104 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-*   Do assign regular expressions to variables rather than using them inline.
+### R: Assign to variables
 
-    ``` javascript
-    // Do:
-    var regex = /\.+/;
+##### Reason
 
-    beep();
+Ensures a regular expression is only created once and improves readability.
 
-    function beep( str ) {
-        if ( regex.test( str ) ) {
-            // Do something...
-        }
+##### Bad Example
+
+``` javascript
+// Do not...
+beep();
+
+function beep( str ) {
+    if ( /\.+/.test( str ) ) {
+        // Do something...
     }
+}
+```
 
-    // Don't:
-    beep();
+##### Good Example
 
-    function beep( str ) {
-        if ( /\.+/.test( str ) ) {
-            // Do something...
-        }
+``` javascript
+// Do...
+var regex = /\.+/;
+
+beep();
+
+function beep( str ) {
+    if ( regex.test( str ) ) {
+        // Do something...
     }
-    ```
+}
+```
 
-*   __Always__ document regular expressions.
+##### Enforcement
 
-    ``` javascript
-    /**
-    * REGEX: /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/
-    *   Matches parts of a regular expression string.
-    *
-    *   /^\/
-    *       -   match a string that begins with a /
-    *   ()
-    *       -   capture
-    *   (?:)+
-    *       -   capture, but do not remember, a group of characters which occur 1 or more times
-    *   \\\/
-    *       -   match the literal \/
-    *   |
-    *       -   OR
-    *   [^\/]
-    *       -   anything which is not the literal \/
-    *   \/
-    *       -   match the literal /
-    *   ([imgy]*)
-    *       -   capture any characters matching `imgy` occurring 0 or more times
-    *   $/
-    *       -   string end
-    */
-    var re = /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/;
-    ```
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Documentation
+
+##### Reason
+
+Regular expressions are error prone and difficult to understand without thorough examination.
+
+##### Good Example
+
+``` javascript
+/**
+* Matches parts of a regular expression string.
+* 
+* Regular expression: `/^\/((?:\\\/|[^\/])+)\/([imgy]*)$/`
+*
+* `/^\/`
+*   - match a string that begins with a /
+* `()`
+*   - capture
+* `(?:)+`
+*   - capture, but do not remember, a group of characters which occur one or more times
+* `\\\/`
+*   - match the literal `\/`
+* `|`
+*   - OR
+* `[^\/]`
+*   - anything which is not the literal `\/`
+* `\/`
+*   - match the literal `/`
+* `([imgy]*)`
+*   - capture any characters matching `imgy` occurring zero or more times
+* `$/`
+*   - string end
+*
+* @constant
+* @type {RegExp}
+* @default /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/
+*/
+var RE = /^\/((?:\\\/|[^\/])+)\/([imgy]*)$/;
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Blocks
+
+<!-- <rule> -->
 
 *   __Always__ use curly braces. Not using them is a common source of bugs.
 
