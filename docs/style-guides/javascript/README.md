@@ -2100,7 +2100,7 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### R: Provide descriptive error message
+### R: Provide descriptive error messages
 
 ##### Reason
 
@@ -2132,7 +2132,7 @@ Code review.
 
 ##### Reason
 
-A *library* should `throw` and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://www.joyent.com/developers/node/design/errors)).
+A library should `throw` and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://www.joyent.com/developers/node/design/errors)).
 
 ##### Bad Example
 
@@ -2346,310 +2346,642 @@ Code review.
 
 <!-- <rule> -->
 
-*   Do use `/** Comments */` for mult-line comments.
+### R: Use multi-line comment syntax for multi-line comments
 
-    ``` javascript
-    // Do:
+##### Reason
 
-    /**
-    * FUNCTION: beep()
-    *   Beep to go boop.
-    */
-    function beep() {
-        // Do something...
-    }
+Fewer characters per line compared to using multiple single-line comment identifiers.
 
-    // Don't:
+##### Bad Example
 
-    // FUNCTION: beep()
-    //  Beep to go boop.
-    function beep() {
-        // Do something...
-    }
-    ```
+``` javascript
+// Do not...
 
-*   Do use [JSDoc](http://usejsdoc.org/#Getting_Started) and do so for every `function`. Be sure to include descriptions, parameters, and other information.
+// Beep to go boop.
+//
+// @param {number} x
+// @param {number} y
+function beep( x, y ) {
+    // Do something...
+}
+```
 
-    ``` javascript
-    // Do:
+##### Good Example
 
-    /**
-    * FUNCTION: transform( str )
-    *   String transformer.
-    *
-    * @param {String} str - string to be transformed.
-    * @returns {String} transformed string
-    */
-    function transform( str ) {
-        return str + ' has been transformed.';
-    }
+``` javascript
+// Do...
 
-    // Don't:
-    function transform( str ) {
-        return str + ' has been transformed.';
-    }
-    ```
+/**
+* Beep to go boop.
+*
+* @param {number} x
+* @param {number} y
+*/
+function beep( x, y ) {
+    // Do something...
+}
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Use JSDoc
+
+##### Reason
+
+[JSDoc][jsdoc] provides structured source code documentation.
+
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function transform( str ) {
+    return str + ' has been transformed.';
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+
+/**
+* String transformer.
+*
+* @param {string} str - string to be transformed.
+* @returns {string} transformed string
+*
+* @example
+* var out = transform( 'beep' );
+* // returns 'beep has been transformed.'
+*/
+function transform( str ) {
+    return str + ' has been transformed.';
+}
+```
+
+##### Notes
+
+* Be sure to include parameters, parameter types, return types (if any), errors (if any can be thrown), and examples.
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: use single-line comment syntax for single-line comments
+
+##### Reason
+
+Fewer characters than using multi-line syntax for single-line comments.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+
+/* Set the default value to null. */
+var foo = bar || null;
+```
+
+##### Good Example
 
 *   Do use `//` for single-line comments. Place the comment above the comment subject, and place an empty line above the comment.
 
+``` javascript
+// Do...
+
+// Set the default value to null.
+var foo = bar || null;
+```
+
+##### Notes
+
+* In general, prefer placing the comment above the comment subject and place an empty line above the comment.
+
     ``` javascript
-    // Do:
+    // Okay for short comments (sometimes)...
+    var foo = bar || null; // bar can be `0`
 
-    // Set the default value to null.
-    var foo = bar || null;
-
-
-    // Don't:
-    var foo = bar || null; // set the default value to null.
+    // Do not...
+    var beep = 'beep';
+    // Comment about `boop`...
+    var boop = 'boop';
+    // Comment about `bap`...
+    var bap = 'bap';
     ```
 
-*   Use `// FIXME:` to annotate problems.
+##### Enforcement
 
-    ``` javascript
-    // FIXME: misses the case where value is 0. Want to check if value is not numeric.
-    if ( !value ) {
-        return false;
+Code review. TODO: ESLint rule (?).
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Use annotations
+
+##### Reason
+
+Code annotations provide search identifiers.
+
+##### FIXME
+
+Use `// FIXME:` to annotate problems.
+
+``` javascript
+// FIXME: misses the case where value is 0. Want to check if value is not numeric.
+if ( !value ) {
+    return false;
+}
+```
+
+##### TODO
+
+Use `// TODO:` to annotate tasks.
+
+``` javascript
+function Ctor() {
+
+    // TODO: make `name` property value publicly accessible.
+    this.name = 'foobar';
+
+    return this;
+}
+```
+
+##### HACK
+
+Use `// HACK:` to annotate fragile/non-general solutions.
+
+``` javascript
+// HACK: temporary fix; host and port should be abstracted to another module.
+var host = '127.0.0.1',
+    port = 7331;
+```
+
+##### WARNING
+
+Use `// WARNING:` to annotate possible gotchas/pitfalls.
+
+``` javascript
+// WARNING: shared reference of a mutable object; possible side effects.
+var a = b = {};
+```
+
+##### OPTIMIZE
+
+Use `// OPTIMIZE:` to annotate code which needs optimizing.
+
+``` javascript
+// OPTIMIZE: use a loop rather than recursion
+function factorial( x ) {
+    if ( x <= 1 ) {
+        return 1;
     }
-    ```
+    return x * factorial( x-1 );
+}
+```
 
-*   Use `// TODO:` to annotate tasks.
+##### NOTE
 
-    ``` javascript
-    function Ctor() {
+Use `// NOTE:` to annotate questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` which should be brought to a user's attention.
 
-        // TODO: make `name` property value publicly accessible.
-        this.name = 'foobar';
+``` javascript
+// NOTE: consider optimizing this for large arrays (len > 64K).
+var arr = new Array( len );
+for ( var i = 0; i < len; i++ ) {
+    arr[ i ] = Math.random();
+}
+```
 
-        return this;
-    }
-    ```
+##### Enforcement
 
-*   Use `// HACK:` to annotate fragile/non-general solutions.
+Code review.
 
-    ``` javascript
-    // HACK: temporary fix; host and port should be abstracted to another module.
-    var host = '127.0.0.1',
-        port = 7331;
-    ```
+<!-- </rule> -->
 
-*   Use `// WARNING:` to annotate possible gotchas/pitfalls.
+<!-- <rule> -->
 
-    ``` javascript
-    // WARNING: shared reference of a mutable object; possible side effects.
-    var a = b = {};
-    ```
+### R: Comment closing braces of long code blocks
 
-*   Use `// NOTE:` to annotate questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING` which should be brought to a user's attention.
+##### Reason
 
-    ``` javascript
-    // NOTE: consider optimizing this for large arrays (len > 64K).
-    var arr = new Array( len );
-    for ( var i = 0; i < len; i++ ) {
-        arr[ i ] = Math.random();
-    }
-    ```
+Doing so helps lessen bracket hell when dealing with long code blocks.
 
-*   Consider commenting closing braces. Doing so helps lessen bracket hell when dealing with long code blocks.
+##### Good Example
 
-    ``` javascript
-    function longFunction() {
-        
-        // [0] Do first thing.
-        firstThing();
+``` javascript
+function longFunction() {
+    
+    // [0] Do first thing.
+    firstThing();
 
-        // [1] Do second thing.
-        secondThing();
+    // [1] Do second thing.
+    secondThing();
 
-        // [2] Do third thing.
-        thirdThing();
+    // [2] Do third thing.
+    thirdThing();
 
-        // ...
+    // ...
 
-        // [N-1] Do Nth thing.
-        nthThing(); 
+    // [N-1] Do Nth thing.
+    nthThing(); 
 
-        return true;
-    } // end FUNCTION longFunction()
-    ```
+    return true;
+} // end FUNCTION longFunction()
+```
 
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Naming
 
-*   __Always__ use camelCase for `functions`, `objects`, instances, and variables.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    function testFunction() {
-        // Do something...
-    }
+### R: Use camelCase for variables
 
-    var myObject = {};
+##### Reason
 
-    var myInstance = new Instance();
+Standard JavaScript convention for `functions`, `objects`, instances, and variables.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function testfunction() {
+    // Do something...
+}
+
+var MyObject = {};
+
+var reallylongvariablename = 0;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function testFunction() {
+    // Do something...
+}
+
+var myObject = {};
+
+var myInstance = new Instance();
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Use PascalCase for constructors and classes
+
+##### Reason
+
+Standard JavaScript convention for constructors and classes.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function roboRobot() {
+    this.name = 'Boop';
+    return this;
+}
+
+var robo = new roboRobot();
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function RoboRobot() {
+    this.name = 'Beep';
+    return this;
+}
+
+var robo = new RoboRobot();
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Prefix private properties with an underscore
+
+##### Reason
+
+Standard JavaScript convention when naming private properties.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function Robot() {
+    this.__private__ = true;
+    this.private_ = true;
+    return this;
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function Robot() {
+    this._private = true;
+    return this;
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Name all functions
+
+##### Reason
+
+Named `functions` are easier to find in stack traces and consequently debug.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+request({
+    'method': 'GET',
+    'uri': 'http://127.0.0.1'
+}, function( error, response, body ) {
+    // Do something...
+});
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function onResponse( error, response, body ) {
+    // Do something...
+}
+
+request({
+    'method': 'GET',
+    'uri': 'http://127.0.0.1'
+}, onResponse );
+```
+
+##### Bad Example
+
+``` javascript
+var arr = [ 1, 2, 3 ];
+var out = arr.map( x => x * x );
+```
+
+##### Good Example
+
+``` javascript
+function square( x ) {
+    return x * x;
+}
+var arr = [ 1, 2, 3 ];
+var out = arr.map( square );
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Use all CAPS for constants
+
+##### Reason
+
+Standard JavaScript convention when naming constants. Using all capital letters provides a visual identifier as to a variable's nature when reading source code.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var value = 3.14;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var VALUE = 3.14;
+```
+
+##### Bad Example
+
+``` javascript
+const value = 3.14;
+```
+
+##### Good Example
+
+``` javascript
+const VALUE = 3.14;
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
 
 
-    // Don't:
-    function testfunction() {
-        // Do something...
-    }
-
-    var MyObject = {};
-
-    var reallylongvariablename = 0;
-    ```
-
-*   __Always__ use PascalCase for constructors.
-
-    ``` javascript
-    // Do:
-    function RoboRobot() {
-        this.name = 'Beep';
-        return this;
-    }
-
-    var robo = new RoboRobot();
-
-
-    // Don't:
-    function roboRobot() {
-        this.name = 'Boop';
-        return this;
-    }
-
-    var robo = new roboRobot();
-    ```
-
-*   __Always__ use a leading underscore when naming private properties.
-
-    ``` javascript
-    // Do:
-    function Robot() {
-        this._private = true;
-        return this;
-    }
-
-    // Don't:
-    function Robot() {
-        this.__private__ = true;
-        this.private_ = true;
-        return this;
-    }
-    ```
-
-*   __Always__ name all `functions`. Named `functions` are easier to find in stack traces and consequently debug.
-
-    ``` javascript
-    // Do:
-    function onResponse( error, response, body ) {
-        // Do something...
-    }
-
-    request({
-        'method': 'GET',
-        'uri': 'http://127.0.0.1'
-    }, onResponse );
-
-    // Don't:
-    request({
-        'method': 'GET',
-        'uri': 'http://127.0.0.1'
-    }, function( error, response, body ) {
-        // Do something...
-    });
-    ```
-
-*   Do name constants in all CAPS.
-
-    ``` javascript
-    // Do:
-    var VALUE = 3.14;
-
-    // Don't:
-    var value = 3.14;
-    ```
-
+<!-- <rule-set> -->
 
 ---
+
 ## This
 
-*   When caching a reference to `this`, use `self`.
+### R: Use self
 
-    ``` javascript
-    // Do:
-    function Robot( name ) {
-        var self = this;
-        if ( !(this instanceof Robot) ) {
-            return new Robot( name );
-        }
-        this.name = name;
-        this.greet = greet;
+##### Reason
 
-        return this;
+Common JavaScript convention when caching a reference to `this`.
 
-        function greet() {
-            return 'Hello! My name is ' + self.name + '.';
-        }
+##### Good Example
+
+``` javascript
+// Do...
+function Robot( name ) {
+    var self = this;
+    if ( !(this instanceof Robot) ) {
+        return new Robot( name );
     }
-    ```
+    this.name = name;
+    this.greet = greet;
 
-*   Avoid using `bind` (performance).
+    return this;
 
-    ``` javascript
-    // Do:
-    function greet( ctx ) {
-        return function greet() {
-            return 'Hello! My name is ' + ctx.name + '.';
-        };
-    }
-
-    function Robot() {
-        if ( !(this instanceof Robot) ) {
-            return new Robot();
-        }
-        this.name = 'Beep';
-        this.greet = greet( this );
-        return this;
-    }
-
-    // Don't:
     function greet() {
-        return this.name;
+        return 'Hello! My name is ' + self.name + '.';
     }
+}
+```
 
-    function Robot() {
-        var fcn;
-        if ( !(this instanceof Robot) ) {
-            return new Robot();
-        }
-        this.name = 'Beep';
-        this.greet = greet.bind( this );
-        return this;
+##### Enforcement
+
+TODO: ESLint rule (?)
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Avoid using bind
+
+##### Reason
+
+The use of `bind` incurs a significant performance penalty (TODO: ref). Appropriate use of closures can accomplish the same result without performance penalties.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function greet() {
+    return this.name;
+}
+
+function Robot() {
+    var fcn;
+    if ( !(this instanceof Robot) ) {
+        return new Robot();
     }
-    ```
+    this.name = 'Beep';
+    this.greet = greet.bind( this );
+    return this;
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function greet( ctx ) {
+    return function greet() {
+        return 'Hello! My name is ' + ctx.name + '.';
+    };
+}
+
+function Robot() {
+    if ( !(this instanceof Robot) ) {
+        return new Robot();
+    }
+    this.name = 'Beep';
+    this.greet = greet( this );
+    return this;
+}
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Classes
 
-*   __Always__ allow for classes to be instantiated without the `new` operator.
+### R: Allow class instantiation without new operator
 
-    ``` javascript
-    // Do:
-    function Robot() {
-        if ( !(this instanceof Robot) ) {
-            return new Robot();
-        }
-        return this;
+##### Reason
+
+Allows class consumers to alias the class constructor.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+function Robot() {
+    return this;
+}
+
+// Alias:
+var createRobot = Robot;
+
+var robo = createRobot(); // => fails
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+function Robot() {
+    if ( !(this instanceof Robot) ) {
+        return new Robot();
     }
+    return this;
+}
 
-    // Don't:
-    function Robot() {
-        return this;
-    }
-    ```
+// Alias:
+var createRobot = Robot;
 
+var robo = createRobot();
+```
+
+##### Enforcement
+
+* Unit tests
+* Code review
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 ---
+
 ## Setters and Getters
+
+<!-- <rule> -->
 
 *   Where appropriate, combine set/get into a single method.
 
