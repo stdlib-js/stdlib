@@ -32,7 +32,6 @@ JavaScript Style Guide
 1. [Modularity](#modularity)
 1. [Client-side JavaScript](#client-side-javascript)
 1. [Dependencies](#dependencies)
-1. [Versioning](#versioning)
 1. [Additional Resources](#additional-resources)
 1. [License](#license)
 
