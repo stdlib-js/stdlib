@@ -54,6 +54,6 @@ No.
 
 
 
-[contributing]: https://github.com/stdlib-js/stdlib/blob/master/.github/CONTRIBUTING.md
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/.github/CODE_OF_CONDUCT.md
+[contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md
 [license]: https://github.com/stdlib-js/stdlib/blob/master/LICENSE

@@ -87,4 +87,4 @@ The following environments are affected:
 * c
 
 
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/.github/CODE_OF_CONDUCT.md
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md

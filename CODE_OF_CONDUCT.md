@@ -145,7 +145,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 
 
-[git-history]: https://github.com/stdlib-js/stdlib/commits/master/.github/CODE_OF_CONDUCT.md
+[git-history]: https://github.com/stdlib-js/stdlib/commits/master/CODE_OF_CONDUCT.md
 
 [npm-code-of-conduct]: https://www.npmjs.com/policies/conduct
 [nodejs-irc]: http://blog.izs.me/post/30036893703/policy-on-trolling
