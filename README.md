@@ -32,6 +32,11 @@ A standard library for JavaScript in JavaScript.
 
 ---
 
+## Contributing
+
+See the [contributing guidelines][contributing].
+
+
 ## License
 
 See [LICENSE][license].
@@ -60,6 +65,7 @@ Copyright &copy; 2016. The stdlib [Authors][authors].
 [build-url-develop]: https://travis-ci.org/stdlib-js/stdlib
 
 <!-- FIXME: shields.io AppVeyor badges do not seem to work -->
+
 [windows-build-image-master]: https://img.shields.io/appveyor/ci/stdlib-js/stdlib/master.svg
 [windows-build-url-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
 
@@ -78,6 +84,7 @@ Copyright &copy; 2016. The stdlib [Authors][authors].
 [dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
 
+[contributing]: https://github.com/stdlib-js/stdlib/blob/master/.github/CONTRIBUTING.md
 [authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 [license]: https://raw.githubusercontent.com/stdlib-js/stdlib/master/LICENSE
 
