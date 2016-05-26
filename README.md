@@ -84,7 +84,7 @@ Copyright &copy; 2016. The stdlib [Authors][authors].
 [dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
 
-[contributing]: https://github.com/stdlib-js/stdlib/blob/master/.github/CONTRIBUTING.md
+[contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
 [authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 [license]: https://raw.githubusercontent.com/stdlib-js/stdlib/master/LICENSE
 
