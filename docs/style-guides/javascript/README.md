@@ -520,178 +520,295 @@ TODO: ESLint rule
 
 ## Semicolons
 
-*   Use semicolons. While semicolons are [not required](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf) in most cases due to [automatic semicolon insertion](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf), prefer to be explicit in specifying when a statement ends.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    if ( foo === bar ) {
-        return true;
-    }
+### R: Use semicolons
 
-    // Don't:
-    if ( foo === bar ) {
-        return true
-    }
-    ```
+##### Reason
 
+While semicolons are [not required][ecma-262] in most cases due to [automatic semicolon insertion][ecma-262], prefer to be explicit in specifying when a statement ends. Additionally, in REPL environments, semicolons acquire special meaning; notably, silencing return value output.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+if ( foo === bar ) {
+    return true
+}
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+if ( foo === bar ) {
+    return true;
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Parentheses
 
-*   Do include parentheses to visually reinforce order of operations.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    var a = ( b * c ) + 5;
+### R: Include within arithmetic operations
 
-    // Don't:
-    var a = b * c + 5;
-    ```
+##### Reason
 
-*   Do include parentheses around the test condition in ternary operators.
+Including parentheses visually reinforces order of operations, leading to better readability and making the code more maintainable.
 
-    ``` javascript
-    // Do:
-    var foo = ( a === b ) ? a*3 : b/4;
+##### Bad Example
 
-    // Don't:
-    var foo = a === b ? a*3 : b/4;
-    ```
+``` javascript
+// Do not...
+var a = b * c + 5;
+```
 
+##### Good Example
+
+``` javascript
+// Do...
+var a = ( b * c ) + 5;
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Include around ternary test condition
+
+##### Reason
+
+Including parentheses around the test condition in ternary operators improves readability.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var foo = a === b ? a*3 : b/4;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var foo = ( a === b ) ? a*3 : b/4;
+```
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Variables
 
-*   Do declare variables at the top of their scope. Doing so makes variable hoisting explicit.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    function myFunction() {
-        var foo = 3,
-            bar;
+### R: Declare variables at top of scope
 
-        if ( foo ) {
-            // Do something...
-        }
-        bar = foo * 5;
-    }
+##### Reason
 
-    // Okay:
-    function myFunction() {
-        var foo = 3;
-        var bar;
+Doing so makes variable hoisting explicit.
 
-        if ( foo ) {
-            // Do something...
-        }
-        bar = foo * 5;
-    }
+##### Bad Example
 
-    // Don't:
-    function myFunction() {
-        var foo = 3;
-
-        if ( foo ) {
-            // Do something...
-        }
-        var bar = foo * 5;
-    }
-    ```
-
-
-*   Do __not__ use leading commas when declaring multiple variables.
-
-    ``` javascript
-    // Do:
-    var boop = 'hello',
-        beep = false,
-        bar = null,
-        foo = 3;
-
-    // Don't:
-    var boop = 'hello'
-      , beep = false
-      , bar = null
-      , foo = 3;
-    ```
-
-*   Do declare assigned variables first.
-
-    ``` javascript
-    // Do:
-    var bar = null,
-        foo = 3,
-        beep,
-        boop;
-
-    // Don't:
-    var beep, boop,
-        foo = 3,
-        bar = null;
-    ```
-
-*   Prefer using a single `var` statement to declare multiple variables.
-
-    ``` javascript
-    // Do:
-    var boop = 'hello',
-        beep = false,
-        bar = null,
-        foo = 3;
-
-    // Okay:
-    var boop = 'hello';
-    var beep = false;
-    var bar = null;
+``` javascript
+// Do not...
+function myFunction() {
     var foo = 3;
-    ```
 
-*   In general, prefer declaring variables on separate lines.
-
-    ``` javascript
-    // Do:
-    var beep,
-        boop,
-        bop,
-        bap,
-        i;
-    ```
-
-*   Use discretion when declaring 2 or fewer variables.
-
-    ``` javascript
-    // Okay:
-    var out, err;
-    function beep() {
+    if ( foo ) {
         // Do something...
     }
-    ```
+    var bar = foo * 5;
+}
+```
 
-*   Prefer grouping related variables on the same line.
+##### Good Example
 
-    ``` javascript
-    // Do:
-    var boop = 'hello',
-        out,
-        i, j, k; // => iteration vars
-    ```
+``` javascript
+// Do...
+function myFunction() {
+    var foo = 3;
+    var bar;
+
+    if ( foo ) {
+        // Do something...
+    }
+    bar = foo * 5;
+}
+```
+
+##### Enforcement
+
+TODO: ESLint rule (and code review)
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Declare assigned variables first
+
+##### Reason
+
+Visual alignment and thus improved readability.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var beep;
+var foo = 3;
+var boop;
+var bar = null;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var bar = null;
+var foo = 3;
+var beep;
+var boop;
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Declare variables separately
+
+##### Reason
+
+Adding, removing, and reordering variables is easier.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var boop = 'hello',
+    beep = false,
+    bar = null,
+    foo = 3;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var boop = 'hello';
+var beep = false;
+var bar = null;
+var foo = 3;
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### R: Declare variables on separate lines
+
+##### Reason
+
+Declaring variables on separate lines improves readability.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var beep; var boop;
+var bop; var bap; var i;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var beep;
+var boop;
+var bop;
+var bap;
+var i;
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
 
 
+<!-- <rule-set> -->
 ---
+
 ## Strings
 
-*   __Always__ use single quotes for `strings`.
+<!-- <rule> -->
 
-    ``` javascript
-    // Do:
-    var str = 'Hello';
+### R: Use single quotes
 
-    // Don't:
-    var str = "Hello";
-    ```
+##### Reason
 
+Reserve double quotes for in-string parenthetical reference or quotes. Additionally, single quotes consume less visual space.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var str = "Hello";
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var str = 'Hello';
+```
+
+##### Enforcement
+
+TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- </rule-set> -->
+
+
+<!-- <rule-set> -->
 
 ---
+
 ## Arrays
 
 *   In general, use `array` literal syntax.
