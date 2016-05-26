@@ -6,7 +6,7 @@ JavaScript Style Guide
 
 ## Table of Contents
 
-1. [Intro](#intro)
+1. [Introduction](#introduction)
 1. [General Principles](#general-principles)
 1. [Whitespace](#whitespace)
 1. [Semicolons](#semicolons)
@@ -36,7 +36,7 @@ JavaScript Style Guide
 1. [License](#license)
 
 
-## Intro
+## Introduction
 
 Always abide by the __Law of Code Style Consistency__, or, in other words, _when in Rome, do as the Romans do_. 
 
