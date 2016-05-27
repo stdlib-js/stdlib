@@ -98,7 +98,7 @@ TODO
 
 16. `Makefile` target to run test fixtures
 
-    * detect script type; e.g., `R`, `python`, `Julia`, `Golang`, `C` or `JS`
+    * detect script type; e.g., `R`, `python`, `Julia`, `Golang`, `C`, `C++`, or `JS`
 
       - can be as simple as filename extension
       - of course, may also want to use a shell script to run tests (`.sh`)
@@ -107,6 +107,8 @@ TODO
     * run the script
     
       - may want to `chmod` the script, so do not need to know the system alias for the runner environment (e.g., Julia => `julia`) and can leverage internal shebang
+
+    * if part of CI, would allow continuous testing against an updated fixture space and would also allow continuous testing that fixture runners work
 
 17. should `utils/function-name` support generator functions?
 
@@ -471,15 +473,27 @@ TODO
 
     * modify `SimpleHTTPServer` to only serve READMEs converted to HTML
     * for equations, instead of SVG, use MathJax
-    * could also insert live figures
+    * could also insert live figures (main, margin)
     * an extension would be to make the code samples interactive
     * gateway to running benchmarks, tests, and examples in-browser
+    * how would we annotate for reactive documents? inline comments? spans?
+    * how would we annotate asides/notes? maybe not necessary for standard module READMEs. Possibly via spans.
 
 87. remark-insert-svg-equation plugin
 
 88. remark-insert-svg-figure plugin
 
     * requires codifying a comment markup syntax, which can take inspiration from how equations are documented in Markdown
+
+89. `make init` target
+
+    * can setup `makie`
+    * if have `make list-cli-modules`, can use `npm link` to install cli utils
+    * setup git hooks
+    * install deps
+    * run tests, test-coverage, benchmarks, lint, etc
+
+90. add a `run.sh` file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
 
 
 ---
