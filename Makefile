@@ -75,9 +75,9 @@ SAFE_DELETE ?= false
 ifeq ($(SAFE_DELETE), true)
 	# FIXME: -rm -rf
 	DELETE := -rm
-	DELETE_FLAGS := rf
+	DELETE_FLAGS := -rf
 else
-	DELETE ?= -rm -rf
+	DELETE ?= -rm
 	DELETE_FLAGS ?= -rf
 endif
 
