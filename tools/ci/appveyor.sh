@@ -15,7 +15,7 @@ export TAIL_LINES=500
 
 # Define an output file to store log output:
 export CI_LOG_DIR=./var/log
-export CI_LOG_PATH=$CI_OUT_DIR/appveyor.log
+export CI_LOG_PATH=$CI_LOG_DIR/appveyor.log
 
 
 # FUNCTIONS #
@@ -86,13 +86,13 @@ start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 echo 'Checking dependencies...'
-make check-deps >> "$CI_OUT" 2>&1
+make check-deps >> "$CI_LOG_PATH" 2>&1
 
 echo 'Running tests...'
 make test >> "$CI_LOG_PATH" 2>&1
 
 echo 'Running examples...'
-make examples >> "$CI_OUT" 2>&1
+make examples >> "$CI_LOG_PATH" 2>&1
 
 # TODO: uncomment once https://github.com/ForbesLindesay/cmd-shim/issues/17 is resolved.
 # echo 'Generating test coverage report...'
