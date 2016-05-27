@@ -182,7 +182,7 @@ $ make BENCHMARKS_PATTERN=benchmark.js list-benchmarks
 To filter based on a file path,
 
 ``` bash
-# List only benchmark files in for base special math functions...
+# List only benchmark files for base special math functions...
 $ make BENCHMARKS_FILTER=.*/math/base/special/.* list-benchmarks
 ```
 
