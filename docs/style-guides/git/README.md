@@ -8,6 +8,7 @@ TODO: add branching policy
 TODO: add note about submitting PR against `develop`
 TODO: add `rebase` note
 TODO: add code review note
+TODO: add examples and model after JS guide
 
 
 * All commits should follow the [seven rules][git-seven-rules] of a `git` commit message:

@@ -5,3 +5,5 @@ Go Style Guide
 
 
 TODO
+
+* [golint](https://github.com/golang/lint)
