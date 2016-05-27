@@ -301,6 +301,7 @@ TODO
       - ability to open chart in browser
       - [sparkly](https://github.com/sindresorhus/sparkly)
       - [jstrace/chart](https://github.com/jstrace/chart)
+      - [bashplotlib](https://github.com/glamp/bashplotlib)
 
     * ASCII [tables](https://github.com/sorensen/ascii-table)
 
@@ -324,7 +325,7 @@ TODO
 
 55. build utility to scan all project dirs for camelcase file names
 
-    * could be part of a lint step
+    * add to build step, but first requires some modification (e.g., JSDoc generated HTML files)
 
 56. refactor module CLIs to match CLI snippet
 
@@ -409,9 +410,134 @@ TODO
 
     * make the function polymorphic where it may accept just an `options` arg, a `requestListener` arg, or both args
 
-74. 
+74. review CoC for more community oriented policies
 
-75. Should `@stdlib/utils/is-window` and `@stdlib/utils/platform` be functions rather than constants?
+75. add JSDoc style guide to JavaScript style guide
+
+    * include annotations
+
+      ``` text
+      // Strict equality:
+      // returns 3.141592653589793
+
+      // Approximate equality (use roundn(x) and then strict equal):
+      // returns ~3.14
+
+      // Deep equal:
+      // returns {'a':[1,2,3]}
+
+      // Deep equal:
+      /* returns
+           {
+             "a": [1,2,3],
+             "b": {"beep":"boop"}
+           }
+      */
+
+      // Deep approximately equal:
+      /* returns
+           {
+             "a": [~1,~2,~3],
+             "b": {"beep":"boop"}
+           }
+      */
+
+      // Deep equal (matrices):
+      /* returns
+           x[':'] = [ 0 0 
+                      0 0 ]
+      */
+
+      // Deep approximately equal (matrices):
+      /* returns
+           mat[':'] = [ ~3.14       0 
+                            0   ~3.14 ]
+      */
+
+      // Wildcard (matrices):
+      /* returns
+           A[':'] = [...]
+      */
+
+      // Deep equal (ndarrays):
+      /* returns
+           x[':,:,0'] = [ 0 0 
+                          0 0 ]
+
+           x[':,0,:'] = [ 0 0 
+                          0 0 ]
+
+           x['0,:,:'] = [ 0 0 
+                          0 0 ]
+      */
+
+      // Type equality:
+      // returns <boolean>
+
+      // Type equality:
+      // returns <string[]>
+
+      // Type equality (instanceof):
+      // returns <RegExp>
+
+      // Type equality (instanceof):
+      // returns <RangeError>
+
+      // Wildcard (string):
+      // returns '...'
+
+      // Wildcard (array):
+      // returns [1,...,10]
+
+      // Wildcard (object):
+      // returns { "a": ... }
+
+      // Options:
+      // returns true || false
+
+      // Options:
+      // returns <Error> || null
+
+      // Formatted (string) (?):
+      // => printf('%f', ?)
+
+      // Wildcard:
+      // returns ...
+
+      // Throws:
+      // throws <TypeError>
+
+      // Insert figure:
+      // => <figure data=?>
+
+      // Insert figure:
+      // => plot(x, y)
+      ```
+
+      ``` javascript
+      var fs = require( 'fs' );
+      fs.readFile( '/path/to/beep.js', onRead );
+      function onRead( error, data ) {
+        if ( error ) {
+          throw error;
+        }
+        console.log( data.toString() );
+        // returns '...'
+      }
+      ```
+
+      ``` bash
+      $ node ./bin/cli
+      # => '...'
+      # => '...'
+      ```
+
+      ``` bash
+      $ node ./bin/cli
+      # => e.g., 2016-05-24 08:42.34 Beep boop blah blah.
+      ```
+
+    * examples of modules, functions, constants, regexps, etc.
 
 76. `@stdlib/regexp/extname`, `*/dirname` export circular references; prob best to clone the regexp and bind to exported object
 
@@ -445,6 +571,7 @@ TODO
     * python
     * julia
     * go
+    * r
 
 81. Add type specs to `@stdlib/types/` folder
 
@@ -494,6 +621,18 @@ TODO
     * run tests, test-coverage, benchmarks, lint, etc
 
 90. add a `run.sh` file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
+
+91. JS style guide
+
+    * update rule re: parentheses in arithmetic ops
+    * add note about ordering vars based on character length
+    * declare functions using function declarations; also include another note about anon functions
+    * use strict section should add notes re: node vs browser
+    * use self section should include note about dynamic scoping of `this` variable
+    * status code example has a bug (send should be status)
+    * examples should use native built-ins, rather than implicitly rely on modules such as `request` and `express`
+    * comments: "compared to multi-line"
+    * allow style guide code should be runnable
 
 
 ---
