@@ -59,14 +59,17 @@ BIN_DIR ?= $(NODE_MODULES)/.bin
 # Define the top-level folder name containing source files:
 SOURCE_FOLDER ?= lib
 
-# Define the folder name for test files:
+# Define the folder name convention for test files:
 TESTS_FOLDER ?= test
 
-# Define the folder name for test fixtures:
+# Define the folder name convention for test fixtures:
 TESTS_FIXTURES_FOLDER ?= test/fixtures
 
-# Define the folder name for examples files:
+# Define the folder name convention for examples files:
 EXAMPLES_FOLDER ?= examples
+
+# Define the folder name convention for benchmark files:
+BENCHMARKS_FOLDER ?= benchmark
 
 # Define whether delete operations should be safe (i.e., deleted items are sent to trash, rather than permanently deleted):
 SAFE_DELETE ?= false

@@ -164,6 +164,28 @@ To filter based on a file path,
 $ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-tests-fixtures
 ```
 
+##### Benchmarks
+
+To list all benchmark files,
+
+``` bash
+$ make list-benchmarks
+```
+
+To filter based on a file name or pattern,
+
+``` bash
+# List only the main benchmark files...
+$ make BENCHMARKS_PATTERN=benchmark.js list-benchmarks
+```
+
+To filter based on a file path,
+
+``` bash
+# List only benchmark files in for base special math functions...
+$ make BENCHMARKS_FILTER=.*/math/base/special/.* list-benchmarks
+```
+
 ##### Examples
 
 To list all examples files,
@@ -291,6 +313,23 @@ $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
 
 ===
 
+#### Benchmarks
+
+To run benchmarks,
+
+``` bash
+$ make benchmark
+```
+
+To limit which benchmarks are run, use the same environment variables recognized by `list-benchmarks`.
+
+``` bash
+# Run only the benchmarks for base special math functions...
+$ make BENCHMARKS_FILTER=.*/math/base/special/.* BENCHMARKS_PATTERN=benchmark.js benchmark
+```
+
+===
+
 #### Documentation
 
 To generate documentation from [JSDoc][jsdoc] source code comments,
@@ -357,7 +396,9 @@ $ make check-deps
 
 
 <!-- <links> -->
+
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
 [jsdoc]: http://usejsdoc.org/
+
 <!-- </links> -->
 

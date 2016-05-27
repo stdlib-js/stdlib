@@ -25,6 +25,12 @@ TESTS_FIXTURES_PATTERN ?= *.*
 # Define a filepath pattern for test fixture files:
 TESTS_FIXTURES_FILTER ?= .*/.*
 
+# Define a filename pattern for benchmark files:
+BENCHMARKS_PATTERN ?= benchmark*.js
+
+# Define a filepath pattern for benchmark files:
+BENCHMARKS_FILTER ?= .*/.*
+
 # Define a filename pattern for example files:
 EXAMPLES_PATTERN ?= *.js
 
@@ -47,6 +53,7 @@ include $(TOOLS_MAKE_LIB_DIR)/find/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/find/sources.mk
 include $(TOOLS_MAKE_LIB_DIR)/find/tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/find/tests-fixtures.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/benchmarks.mk
 include $(TOOLS_MAKE_LIB_DIR)/find/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/find/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/find/modules.mk
