@@ -43,10 +43,10 @@ MODULES_FILTER ?= .*/.*
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/find/files.mk
-include $(TOOLS_MAKE_DIR)/lib/find/sources.mk
-include $(TOOLS_MAKE_DIR)/lib/find/tests.mk
-include $(TOOLS_MAKE_DIR)/lib/find/tests-fixtures.mk
-include $(TOOLS_MAKE_DIR)/lib/find/examples.mk
-include $(TOOLS_MAKE_DIR)/lib/find/markdown.mk
-include $(TOOLS_MAKE_DIR)/lib/find/modules.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/sources.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/tests.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/tests-fixtures.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/examples.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/markdown.mk
+include $(TOOLS_MAKE_LIB_DIR)/find/modules.mk

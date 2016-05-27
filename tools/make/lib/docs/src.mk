@@ -1,15 +1,16 @@
 
 # VARIABLES #
 
+# Define the source code documentation generator:
 SRC_DOC_GENERATOR ?= jsdoc
 
 
 # DEPENDENCIES #
 
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	include $(TOOLS_MAKE_DIR)/lib/docs/jsdoc.mk
+	include $(TOOLS_MAKE_LIB_DIR)/docs/jsdoc.mk
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	include $(TOOLS_MAKE_DIR)/lib/docs/documentationjs.mk
+	include $(TOOLS_MAKE_LIB_DIR)/docs/documentationjs.mk
 endif
 
 
@@ -23,10 +24,12 @@ endif
 
 src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(THIS_FILE) jsdoc-html
+	@$(MAKE) -f $(this_file) jsdoc-html
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(THIS_FILE) documentationjs-html
+	@$(MAKE) -f $(this_file) documentationjs-html
 endif
+
+.PHONY: src-docs
 
 
 # View HTML documentation.
@@ -35,10 +38,12 @@ endif
 
 view-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(THIS_FILE) view-jsdoc-html
+	@$(MAKE) -f $(this_file) view-jsdoc-html
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(THIS_FILE) view-documentationjs-html
+	@$(MAKE) -f $(this_file) view-documentationjs-html
 endif
+
+.PHONY: view-src-docs
 
 
 # Clean source HTML documentation.
@@ -47,10 +52,12 @@ endif
 
 clean-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(THIS_FILE) clean-jsdoc
+	@$(MAKE) -f $(this_file) clean-jsdoc
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(THIS_FILE) clean-documentationjs
+	@$(MAKE) -f $(this_file) clean-documentationjs
 endif
+
+.PHONY: clean-src-docs
 
 
 # Rebuild source HTML documentation.
@@ -61,10 +68,9 @@ endif
 
 rebuild-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(THIS_FILE) rebuild-jsdoc-html
+	@$(MAKE) -f $(this_file) rebuild-jsdoc-html
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(THIS_FILE) rebuild-documentationjs-html
+	@$(MAKE) -f $(this_file) rebuild-documentationjs-html
 endif
 
-
-.PHONY: src-docs view-src-docs clean-src-docs rebuild-src-docs
+.PHONY: rebuild-src-docs

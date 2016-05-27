@@ -14,56 +14,59 @@ else
 endif
 
 # Determine the filename:
-THIS_FILE := $(lastword $(MAKEFILE_LIST))
+this_file := $(lastword $(MAKEFILE_LIST))
 
 # Determine the absolute path of the Makefile (see http://blog.jgc.org/2007/01/what-makefile-am-i-in.html):
-THIS_DIR := $(dir $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST)))
+this_dir := $(dir $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST)))
 
 # Remove the trailing slash:
-THIS_DIR := $(patsubst %/,%,$(THIS_DIR))
+this_dir := $(patsubst %/,%,$(this_dir))
 
 # Define the root project directory:
-ROOT ?= $(THIS_DIR)
+ROOT_DIR ?= $(this_dir)
 
 # Define the root tools directory:
-TOOLS_DIR ?= $(ROOT)/tools
+TOOLS_DIR ?= $(ROOT_DIR)/tools
 
-# Define the directory containing Makefile dependencies:
+# Define the directory containing the entry point for Makefile dependencies:
 TOOLS_MAKE_DIR ?= $(TOOLS_DIR)/make
 
+# Define the subdirectory containing Makefile dependencies:
+TOOLS_MAKE_LIB_DIR ?= $(TOOLS_MAKE_DIR)/lib
+
 # Define the root build directory:
-BUILD_DIR ?= $(ROOT)/build
+BUILD_DIR ?= $(ROOT_DIR)/build
 
 # Define the root configuration directory:
-CONFIG_DIR ?= $(ROOT)/etc
+CONFIG_DIR ?= $(ROOT_DIR)/etc
 
 # Define the directory for writing reports, including code coverage:
-REPORTS_DIR ?= $(ROOT)/reports
+REPORTS_DIR ?= $(ROOT_DIR)/reports
 COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
 
 # Define the directory for documentation:
-DOCS_DIR ?= $(ROOT)/docs
+DOCS_DIR ?= $(ROOT_DIR)/docs
 
 # Define the top-level directory containing executables:
-BIN_DIR ?= $(ROOT)/bin
+LOCAL_BIN_DIR ?= $(ROOT_DIR)/bin
 
 # Define the top-level directory containing node module dependencies:
-NODE_MODULES ?= $(ROOT)/node_modules
+NODE_MODULES ?= $(ROOT_DIR)/node_modules
 
 # Define the top-level directory containing node module executables:
-BIN ?= $(NODE_MODULES)/.bin
+BIN_DIR ?= $(NODE_MODULES)/.bin
 
-# Define the top-level directory containing source files:
-SOURCE_DIR ?= lib
+# Define the top-level folder name containing source files:
+SOURCE_FOLDER ?= lib
 
-# Define the directory name for test files:
-TESTS_DIR ?= test
+# Define the folder name for test files:
+TESTS_FOLDER ?= test
 
-# Define the directory name for test fixtures:
-TESTS_FIXTURES_DIR ?= test/fixtures
+# Define the folder name for test fixtures:
+TESTS_FIXTURES_FOLDER ?= test/fixtures
 
-# Define the directory name for examples files:
-EXAMPLES_DIR ?= examples
+# Define the folder name for examples files:
+EXAMPLES_FOLDER ?= examples
 
 # Define whether delete operations should be safe (i.e., deleted items are sent to trash, rather than permanently deleted):
 SAFE_DELETE ?= false
@@ -71,9 +74,11 @@ SAFE_DELETE ?= false
 # Define the delete command:
 ifeq ($(SAFE_DELETE), true)
 	# FIXME: -rm -rf
-	DELETE_CMD := -rm -rf
+	DELETE := -rm
+	DELETE_FLAGS := rf
 else
-	DELETE_CMD ?= -rm -rf
+	DELETE ?= -rm -rf
+	DELETE_FLAGS ?= -rf
 endif
 
 

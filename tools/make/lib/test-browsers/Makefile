@@ -4,7 +4,7 @@
 BROWSER_TEST_RUNNER ?= testling
 
 # Define the path to the browserify executable:
-BROWSERIFY ?= $(BIN)/browserify
+BROWSERIFY ?= $(BIN_DIR)/browserify
 
 # Define the path to the browserify plugin which allows proxyquire to be run in a browser:
 BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
@@ -13,7 +13,7 @@ BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
 BROWSERIFY_FLAGS ?= -p $(BROWSERIFY_PROXYQUIRE)
 
 # Define the path to the `tap-spec` executable:
-TAP_REPORTER ?= $(BIN)/tap-spec
+TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 
 
 # DEPENDENCIES #
@@ -22,7 +22,7 @@ TAP_REPORTER ?= $(BIN)/tap-spec
 #
 # All test runners are expected to output TAP.
 ifeq ($(BROWSER_TEST_RUNNER), testling)
-	include $(TOOLS_MAKE_DIR)/lib/test-browsers/testling.mk
+	include $(TOOLS_MAKE_LIB_DIR)/test-browsers/testling.mk
 endif
 
 
@@ -39,14 +39,16 @@ endif
 # [2]: https://github.com/bendrucker/proxyquire-universal
 # [3]: https://github.com/scottcorgan/tap-spec
 
-test-browsers: node_modules
+test-browsers: $(NODE_MODULES)
 	NODE_ENV=$(NODE_ENV) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_FLAGS) \
 		$(TESTS) \
-	| $(BROWSER_TEST_RUNNER_BIN) $(BROWSER_TEST_RUNNER_FLAGS) \
+	| $(BROWSER_TEST) $(BROWSER_TEST_FLAGS) \
 	| $(TAP_REPORTER)
+
+.PHONY: test-browsers
 
 
 # View browser tests in a local web browser.
@@ -55,8 +57,7 @@ test-browsers: node_modules
 
 view-browser-tests:
 ifeq ($(BROWSER_TEST_RUNNER), testling)
-	@$(MAKE) -f $(THIS_FILE) view-testling
+	@$(MAKE) -f $(this_file) view-testling
 endif
 
-
-.PHONY: test-browsers view-browser-tests
+.PHONY: view-browser-tests

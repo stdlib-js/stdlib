@@ -2,13 +2,26 @@
 # VARIABLES #
 
 # Define the command for removing files and directories:
-DELETE_CMD ?= -rm -rf
+DELETE ?= -rm
+DELETE_FLAGS ?= -rf
 
-# Define the command for recursively creating directories:
-RECURSIVE_MKDIR ?= mkdir -p
+# Determine the host kernel:
+KERNEL ?= $(shell uname -s)
+
+# Based on the kernel, determine the `open` command:
+ifeq ($(KERNEL), Darwin)
+	OPEN ?= open
+else
+	OPEN ?= xdg-open
+endif
+# TODO: add Windows command
+
+# Define the command for recursively creating directories (WARNING: possible portability issues on some systems!):
+MKDIR ?= mkdir
+MKDIR_FLAGS ?= -p
 
 # Define the path of the documentation.js executable:
-DOCUMENTATIONJS ?= $(BIN)/documentation
+DOCUMENTATIONJS ?= $(BIN_DIR)/documentation
 
 # Define the path to JSDoc type definitions:
 DOCUMENTATIONJS_TYPEDEF ?= $(TOOLS_DIR)/docs/jsdoc/typedefs/*.js
@@ -20,13 +33,13 @@ DOCUMENTATIONJS_OUT ?= $(DOCS_DIR)/documentationjs
 DOCUMENTATIONJS_JSON_OUT ?= $(DOCUMENTATIONJS_OUT)/json
 
 # Define the output filepath for documentation.js JSON:
-DOCUMENTATIONJS_JSON_PATH ?= $(DOCUMENTATIONJS_JSON_OUT)/documentationjs.json
+DOCUMENTATIONJS_JSON ?= $(DOCUMENTATIONJS_JSON_OUT)/documentationjs.json
 
 # Define the output directory for documentation.js HTML documentation:
 DOCUMENTATIONJS_HTML_OUT ?= $(DOCUMENTATIONJS_OUT)/static
 
 # Define the output filepath for HTML documentation:
-DOCUMENTATIONJS_HTML_PATH ?= $(DOCUMENTATIONJS_HTML_OUT)/index.html
+DOCUMENTATIONJS_HTML ?= $(DOCUMENTATIONJS_HTML_OUT)/index.html
 
 # Define command-line options to be used when invoking the documentation.js executable to generate HTML documentation:
 DOCUMENTATIONJS_HTML_FLAGS ?= --format html \
@@ -48,10 +61,12 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 # [1]: http://usejsdoc.org/
 # [2]: https://github.com/documentationjs/documentation
 
-documentationjs-html: node_modules
-	$(DELETE_CMD) $(DOCUMENTATIONJS_HTML_OUT)
-	$(RECURSIVE_MKDIR) $(DOCUMENTATIONJS_HTML_OUT)
+documentationjs-html: $(NODE_MODULES)
+	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
+	$(MKDIR) $(MKDIR_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
+
+.PHONY: documentationjs-html
 
 
 # Generate JSDoc JSON.
@@ -64,10 +79,12 @@ documentationjs-html: node_modules
 # [1]: http://usejsdoc.org/
 # [2]: https://github.com/documentationjs/documentation
 
-documentationjs-json: node_modules
-	$(DELETE_CMD) $(DOCUMENTATIONJS_JSON_PATH)
-	$(RECURSIVE_MKDIR) $(DOCUMENTATIONJS_JSON_OUT)
-	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON_PATH)
+documentationjs-json: $(NODE_MODULES)
+	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_JSON)
+	$(MKDIR) $(MKDIR_FLAGS) $(DOCUMENTATIONJS_JSON_OUT)
+	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON)
+
+.PHONY: documentationjs-json
 
 
 # View HTML documentation.
@@ -75,7 +92,9 @@ documentationjs-json: node_modules
 # This target opens documentation.js HTML documentation in a local web browser.
 
 view-documentationjs-html:
-	$(OPEN) $(DOCUMENTATIONJS_HTML_PATH)
+	$(OPEN) $(DOCUMENTATIONJS_HTML)
+
+.PHONY: view-documentationjs-html
 
 
 # Remove a documentation.js output directory.
@@ -83,7 +102,9 @@ view-documentationjs-html:
 # This target cleans up a documentation.js output directory by removing it entirely.
 
 clean-documentationjs:
-	$(DELETE_CMD) $(DOCUMENTATIONJS_OUT)
+	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_OUT)
+
+.PHONY: clean-documentationjs
 
 
 # Rebuild HTML documentation.
@@ -97,9 +118,8 @@ clean-documentationjs:
 # [2]: https://github.com/documentationjs/documentation
 
 rebuild-documentationjs-html:
-	@$(MAKE) -f $(THIS_FILE) clean-documentationjs
-	@$(MAKE) -f $(THIS_FILE) documentationjs-html
+	@$(MAKE) -f $(this_file) clean-documentationjs
+	@$(MAKE) -f $(this_file) documentationjs-html
 
-
-.PHONY: documentationjs-html documentationjs-json view-documentationjs-html rebuild-documentationjs-html clean-documentationjs
+.PHONY: rebuild-documentationjs-html
 

@@ -11,7 +11,7 @@ NODE ?= node
 #
 # This target runs a list of examples in sequential order. Note that we assume the examples can be run using Node.js.
 
-examples: node_modules
+examples: $(NODE_MODULES)
 	for file in $(EXAMPLES); do \
 		echo ""; \
 		echo "Running example: $$file"; \

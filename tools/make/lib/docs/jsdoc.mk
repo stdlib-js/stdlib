@@ -2,13 +2,26 @@
 # VARIABLES #
 
 # Define the command for removing files and directories:
-DELETE_CMD ?= -rm -rf
+DELETE ?= -rm
+DELETE_FLAGS ?= -rf
 
-# Define the command for recursively creating directories:
-RECURSIVE_MKDIR ?= mkdir -p
+# Determine the host kernel:
+KERNEL ?= $(shell uname -s)
+
+# Based on the kernel, determine the `open` command:
+ifeq ($(KERNEL), Darwin)
+	OPEN ?= open
+else
+	OPEN ?= xdg-open
+endif
+# TODO: add Windows command
+
+# Define the command for recursively creating directories (WARNING: portability issues on some systems!):
+MKDIR ?= mkdir
+MKDIR_FLAGS ?= -p
 
 # Define the path of the JSDoc executable:
-JSDOC ?= $(BIN)/jsdoc
+JSDOC ?= $(BIN_DIR)/jsdoc
 
 # Define the path to the JSDoc configuration file:
 JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc.conf.json
@@ -26,7 +39,7 @@ JSDOC_OUT ?= $(DOCS_DIR)/jsdoc
 JSDOC_JSON_OUT ?= $(JSDOC_OUT)/json
 
 # Define the output filepath for JSDoc JSON:
-JSDOC_JSON_PATH ?= $(JSDOC_JSON_OUT)/jsdoc.json
+JSDOC_JSON ?= $(JSDOC_JSON_OUT)/jsdoc.json
 
 # Define the path to the JSDoc HTML template:
 JSDOC_HTML_TEMPLATE ?= $(TOOLS_DIR)/docs/jsdoc/templates/html
@@ -35,7 +48,7 @@ JSDOC_HTML_TEMPLATE ?= $(TOOLS_DIR)/docs/jsdoc/templates/html
 JSDOC_HTML_OUT ?= $(JSDOC_OUT)/static
 
 # Define the output filepath for HTML documentation:
-JSDOC_HTML_PATH ?= $(JSDOC_HTML_OUT)/index.html
+JSDOC_HTML ?= $(JSDOC_HTML_OUT)/index.html
 
 # Define command-line options to be used when invoking the JSDoc executable to generate HTML documentation:
 JSDOC_HTML_FLAGS ?= --template $(JSDOC_HTML_TEMPLATE) \
@@ -62,10 +75,12 @@ JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
 #
 # [1]: http://usejsdoc.org/
 
-jsdoc-html: node_modules
-	$(DELETE_CMD) $(JSDOC_HTML_OUT)
-	$(RECURSIVE_MKDIR) $(JSDOC_HTML_OUT)
+jsdoc-html: $(NODE_MODULES)
+	$(DELETE) $(DELETE_FLAGS) $(JSDOC_HTML_OUT)
+	$(MKDIR) $(MKDIR_FLAGS) $(JSDOC_HTML_OUT)
 	$(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
+
+.PHONY: jsdoc-html
 
 
 # Generate JSDoc JSON.
@@ -77,10 +92,12 @@ jsdoc-html: node_modules
 #
 # [1]: http://usejsdoc.org/
 
-jsdoc-json: node_modules
-	$(DELETE_CMD) $(JSDOC_JSON_PATH)
-	$(RECURSIVE_MKDIR) $(JSDOC_JSON_OUT)
-	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON_PATH)
+jsdoc-json: $(NODE_MODULES)
+	$(DELETE) $(DELETE_FLAGS) $(JSDOC_JSON)
+	$(MKDIR) $(MKDIR_FLAGS) $(JSDOC_JSON_OUT)
+	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON)
+
+.PHONY: jsdoc-json
 
 
 # View HTML documentation.
@@ -88,7 +105,9 @@ jsdoc-json: node_modules
 # This target opens JSDoc HTML documentation in a local web browser.
 
 view-jsdoc-html:
-	$(OPEN) $(JSDOC_HTML_PATH)
+	$(OPEN) $(JSDOC_HTML)
+
+.PHONY: view-jsdoc-html
 
 
 # Remove a JSDoc output directory.
@@ -96,7 +115,9 @@ view-jsdoc-html:
 # This target cleans up a JSDoc output directory by removing it entirely.
 
 clean-jsdoc:
-	$(DELETE_CMD) $(JSDOC_OUT)
+	$(DELETE) $(DELETE_FLAGS) $(JSDOC_OUT)
+
+.PHONY: clean-jsdoc
 
 
 # Rebuild JSDoc HTML documentation.
@@ -109,9 +130,8 @@ clean-jsdoc:
 # [1]: http://usejsdoc.org/
 
 rebuild-jsdoc-html:
-	@$(MAKE) -f $(THIS_FILE) clean-jsdoc
-	@$(MAKE) -f $(THIS_FILE) jsdoc-html
+	@$(MAKE) -f $(this_file) clean-jsdoc
+	@$(MAKE) -f $(this_file) jsdoc-html
 
-
-.PHONY: jsdoc-html jsdoc-json view-jsdoc-html rebuild-jsdoc-html clean-jsdoc
+.PHONY: rebuild-jsdoc-html
 

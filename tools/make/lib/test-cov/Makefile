@@ -1,17 +1,7 @@
 
-# VARIABLES #
-
-CODE_COV_INSTRUMENTATION ?= istanbul
-
-# Define the command for removing files and directories:
-DELETE_CMD ?= -rm -rf
-
-
 # DEPENDENCIES #
 
-ifeq ($(CODE_COV_INSTRUMENTATION), istanbul)
-	include $(TOOLS_MAKE_DIR)/lib/test-cov/istanbul.mk
-endif
+include $(TOOLS_MAKE_LIB_DIR)/test-cov/javascript.mk
 
 
 # TARGETS #
@@ -20,28 +10,24 @@ endif
 #
 # This target instruments source code, runs unit tests, and outputs a test coverage report.
 
-test-cov:
-ifeq ($(CODE_COV_INSTRUMENTATION), istanbul)
-	@$(MAKE) -f $(THIS_FILE) test-istanbul
-endif
+test-cov: test-javascript-cov
+
+.PHONY: test-cov
 
 
 # View a test coverage report.
 #
 # This target opens an HTML coverage report in a local web browser.
 
-view-cov:
-ifeq ($(CODE_COV_INSTRUMENTATION), istanbul)
-	@$(MAKE) -f $(THIS_FILE) view-istanbul-report
-endif
+view-cov: view-javascript-cov
+
+.PHONY: view-cov
 
 
-# Remove a coverage directory.
+# Remove a coverage artifacts.
 #
-# This target cleans up a coverage directory by removing it entirely.
+# This target deletes coverage artifacts, such as coverage reports and associated HTML pages.
 
-clean-cov:
-	$(DELETE_CMD) $(COVERAGE_DIR)
+clean-cov: clean-javascript-cov
 
-
-.PHONY: test-cov view-cov clean-cov
+.PHONY: clean-cov

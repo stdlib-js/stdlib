@@ -18,5 +18,4 @@ lint-filenames:
 	$(MAKE_EXECUTABLE) $(FILENAME_LINTER)
 	$(FILENAME_LINTER)
 
-
 .PHONY: lint-filenames

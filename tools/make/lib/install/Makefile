@@ -1,7 +1,7 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/install/node.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 
 
 # TARGETS #
@@ -11,6 +11,5 @@ include $(TOOLS_MAKE_DIR)/lib/install/node.mk
 # This target runs the project's install process.
 
 install: install-node
-
 
 .PHONY: install

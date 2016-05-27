@@ -1,23 +1,16 @@
 
 # VARIABLES #
 
-TEST_RUNNER ?= tape
-
 # Define the path to the `tap-spec` executable:
-TAP_REPORTER ?= $(BIN)/tap-spec
+TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 
 # Define the path to the `tap-summary` executable:
-TAP_SUMMARY ?= $(BIN)/tap-summary
+TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
 
 
 # DEPENDENCIES #
 
-# Test runner.
-#
-# All test runners are expected to output TAP.
-ifeq ($(TEST_RUNNER), tape)
-	include $(TOOLS_MAKE_DIR)/lib/test/tape.mk
-endif
+include $(TOOLS_MAKE_LIB_DIR)/test/javascript.mk
 
 
 # TARGETS #
@@ -33,13 +26,16 @@ endif
 
 test: test-local
 
-test-local: node_modules
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(TEST_RUNNER_BIN) \
-		$(TEST_RUNNER_FLAGS) \
-		$(TESTS) \
-	| $(TAP_REPORTER)
+.PHONY: test
+
+
+# Run unit tests locally.
+#
+# This target runs unit tests in a local environment.
+
+test-local: test-javascript-local
+
+.PHONY: test-local
 
 
 # Generate a test summary.
@@ -51,13 +47,6 @@ test-local: node_modules
 #
 # [1]: https://github.com/zoubin/tap-summary
 
-test-summary: node_modules
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(TEST_RUNNER_BIN) \
-		$(TEST_RUNNER_FLAGS) \
-		$(TESTS) \
-	| $(TAP_SUMMARY)
+test-summary: test-javascript-summary
 
-
-.PHONY: test test-local test-summary
+.PHONY: test-summary

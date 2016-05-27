@@ -8,7 +8,7 @@
 #
 # [1]: https://www.npmjs.com/package/remark
 
-MARKDOWN_LINTER_BIN ?= $(BIN)/remark
+MARKDOWN_LINT ?= $(BIN_DIR)/remark
 
 # Define [remark-lint][1] as the lint plugin.
 #
@@ -26,5 +26,5 @@ REMARK_CONF ?= $(CONFIG_DIR)/.remarkrc.js
 REMARK_IGNORE ?= $(CONFIG_DIR)/.remarkignore
 
 # Define the command-line options when invoking the remark executable:
-MARKDOWN_LINTER_FLAGS ?= --config-path $(REMARK_CONF) \
+MARKDOWN_LINT_FLAGS ?= --config-path $(REMARK_CONF) \
 		--ignore-path $(REMARK_IGNORE)

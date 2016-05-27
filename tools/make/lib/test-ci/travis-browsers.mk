@@ -11,8 +11,7 @@ TRAVIS_HEADLESS_BROWSER ?= xvfb-run
 #
 # This target runs browser tests using a headless browser on Travis CI.
 
-test-browsers-travis: node_modules
-	$(TRAVIS_HEADLESS_BROWSER) make -f $(THIS_FILE) test-browsers
-
+test-browsers-travis: $(NODE_MODULES)
+	$(TRAVIS_HEADLESS_BROWSER) make -f $(this_file) test-browsers
 
 .PHONY: test-browsers-travis

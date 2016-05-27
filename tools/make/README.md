@@ -147,21 +147,21 @@ $ make TESTS_FILTER=.*/utils/fs/.* list-tests
 To list all test fixture files,
 
 ``` bash
-$ make list-test-fixtures
+$ make list-tests-fixtures
 ```
 
 To filter based on a file name or pattern,
 
 ``` bash
 # List only the Julia test fixtures...
-$ make TESTS_FIXTURES_PATTERN=*.jl list-test-fixtures
+$ make TESTS_FIXTURES_PATTERN=*.jl list-tests-fixtures
 ```
 
 To filter based on a file path,
 
 ``` bash
 # List only test fixture files in the base math directory for special functions...
-$ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-test-fixtures
+$ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-tests-fixtures
 ```
 
 ##### Examples

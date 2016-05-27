@@ -1,9 +1,9 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/lint/javascript.mk
-include $(TOOLS_MAKE_DIR)/lib/lint/markdown.mk
-include $(TOOLS_MAKE_DIR)/lib/lint/filenames.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/javascript.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/markdown.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 
 
 # TARGETS #
@@ -14,12 +14,16 @@ include $(TOOLS_MAKE_DIR)/lib/lint/filenames.mk
 
 lint: lint-filenames lint-javascript lint-markdown
 
+.PHONY: lint
+
 
 # Check source code quality.
 #
 # This target lints only source files.
 
 lint-src: lint-javascript-src
+
+.PHONY: lint-src
 
 
 # Check test code quality.
@@ -28,6 +32,8 @@ lint-src: lint-javascript-src
 
 lint-tests: lint-javascript-tests
 
+.PHONY: lint-tests
+
 
 # Check example code quality.
 #
@@ -35,6 +41,5 @@ lint-tests: lint-javascript-tests
 
 lint-examples: lint-javascript-examples
 
-
-.PHONY: lint list-src lint-tests lint-examples
+.PHONY: lint-examples
 

@@ -5,13 +5,13 @@
 COVERAGE_SERVICE ?= codecov
 
 # Define the path of the `lcov.info` file which will be sent to the coverage service:
-LCOV_INFO_PATH ?= $(COVERAGE_DIR)/lcov.info
+LCOV_INFO ?= $(COVERAGE_DIR)/lcov.info
 
 
 # DEPENDENCIES #
 
 ifeq ($(COVERAGE_SERVICE), codecov)
-	include $(TOOLS_MAKE_DIR)/lib/coverage-service/codecov.mk
+	include $(TOOLS_MAKE_LIB_DIR)/coverage-service/codecov.mk
 endif
 
 
@@ -23,8 +23,7 @@ endif
 
 coverage:
 ifeq ($(COVERAGE_SERVICE), codecov)
-	@$(MAKE) -f $(THIS_FILE) coverage-codecov
+	@$(MAKE) -f $(this_file) coverage-codecov
 endif
-
 
 .PHONY: coverage

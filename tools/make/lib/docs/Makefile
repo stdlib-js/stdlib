@@ -1,7 +1,7 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/docs/src.mk
+include $(TOOLS_MAKE_LIB_DIR)/docs/src.mk
 
 
 # TARGETS #
@@ -12,6 +12,8 @@ include $(TOOLS_MAKE_DIR)/lib/docs/src.mk
 
 docs: src-docs
 
+.PHONY: docs
+
 
 # Remove generated documentation.
 #
@@ -19,5 +21,4 @@ docs: src-docs
 
 clean-docs: clean-src-docs
 
-
-.PHONY: docs clean-docs
+.PHONY: clean-docs

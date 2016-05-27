@@ -1,10 +1,12 @@
 
 # VARIABLES #
 
+# Define the command to `cat` a file:
 CAT ?= cat
+CAT_FLAGS ?=
 
 # Define the path to the Makefile usage text file for displaying help information:
-MAKE_USAGE_PATH ?= $(TOOLS_MAKE_DIR)/usage.txt
+MAKE_USAGE ?= $(TOOLS_MAKE_DIR)/usage.txt
 
 
 # TARGETS #
@@ -14,8 +16,7 @@ MAKE_USAGE_PATH ?= $(TOOLS_MAKE_DIR)/usage.txt
 # This target prints a help message and lists available targets.
 
 help:
-	$(CAT) $(MAKE_USAGE_PATH)
-
+	@$(CAT) $(CAT_FLAGS) $(MAKE_USAGE)
 
 .PHONY: help
 

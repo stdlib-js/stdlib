@@ -5,7 +5,11 @@
 NPM ?= npm
 
 # Define the command for removing files and directories:
-DELETE_CMD ?= -rm -rf
+DELETE ?= -rm
+DELETE_FLAGS ?= -rf
+
+# Define the path to the root `package.json`:
+ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 
 
 # TARGETS #
@@ -16,8 +20,10 @@ DELETE_CMD ?= -rm -rf
 #
 # [1]: https://docs.npmjs.com/cli/install
 
-install-node: package.json
+install-node: $(ROOT_PACKAGE_JSON)
 	$(NPM) install
+
+.PHONY: install-node
 
 
 # Remove node module dependencies.
@@ -25,7 +31,6 @@ install-node: package.json
 # This target cleans the `node_modules` directory by removing it entirely.
 
 clean-node:
-	$(DELETE_CMD) $(NODE_MODULES)
+	$(DELETE) $(DELETE_FLAGS) $(NODE_MODULES)
 
-
-.PHONY: install-node clean-node
+.PHONY: clean-node

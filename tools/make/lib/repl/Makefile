@@ -2,10 +2,10 @@
 # VARIABLES #
 
 # Define the path of the REPL executable:
-REPL ?= $(BIN_DIR)/repl
+REPL ?= $(LOCAL_BIN_DIR)/repl
 
 # Define the path of the directory in which to run the REPL:
-REPL_DIR ?= $(ROOT)
+REPL_DIR ?= $(ROOT_DIR)
 
 
 # TARGETS #
@@ -14,7 +14,7 @@ REPL_DIR ?= $(ROOT)
 #
 # This target starts a REPL environment.
 
-repl: node_modules $(REPL)
+repl: $(NODE_MODULES) $(REPL)
 	@cd $(REPL_DIR); \
 	echo "Starting REPL..."; \
 	$(REPL)

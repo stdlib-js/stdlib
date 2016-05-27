@@ -8,8 +8,8 @@
 #
 # [1]: https://github.com/substack/tape
 
-TEST_RUNNER_BIN ?= $(BIN)/tape
+JAVASCRIPT_TEST ?= $(BIN_DIR)/tape
 
 # Define any command-line options to use when invoking the `tape` executable:
-TEST_RUNNER_FLAGS ?= ''
+JAVASCRIPT_TEST_FLAGS ?=
 

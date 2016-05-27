@@ -8,7 +8,7 @@ MARKDOWN_LINTER ?= remark
 # DEPENDENCIES #
 
 ifeq ($(MARKDOWN_LINTER), remark)
-	include $(TOOLS_MAKE_DIR)/lib/lint/remark.mk
+	include $(TOOLS_MAKE_LIB_DIR)/lint/remark.mk
 endif
 
 
@@ -18,8 +18,7 @@ endif
 #
 # This target lints all Markdown files.
 
-lint-markdown: node_modules
-	$(MARKDOWN_LINTER_BIN) $(MARKDOWN_LINTER_FLAGS) $(MARKDOWN_FILES)
-
+lint-markdown: $(NODE_MODULES)
+	$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(MARKDOWN_FILES)
 
 .PHONY: lint-markdown

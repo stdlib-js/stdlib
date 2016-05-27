@@ -7,9 +7,9 @@ CI_SERVICE ?= none
 # DEPENDENCIES #
 
 ifeq ($(CI_SERVICE), travis)
-	include $(TOOLS_MAKE_DIR)/lib/test-ci/travis.mk
+	include $(TOOLS_MAKE_LIB_DIR)/test-ci/travis.mk
 else ifeq ($(CI_SERVICE), appveyor)
-	include $(TOOLS_MAKE_DIR)/lib/test-ci/appveyor.mk
+	include $(TOOLS_MAKE_LIB_DIR)/test-ci/appveyor.mk
 endif
 
 
@@ -21,6 +21,5 @@ endif
 
 # test-ci: test test-browsers
 test-ci: test
-
 
 .PHONY: test-ci

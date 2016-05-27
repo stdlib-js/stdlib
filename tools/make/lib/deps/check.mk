@@ -1,7 +1,7 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/deps/david.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/david.mk
 
 
 # TARGETS #
@@ -11,7 +11,6 @@ include $(TOOLS_MAKE_DIR)/lib/deps/david.mk
 # This target checks dependencies for updates.
 
 check-deps: check-javascript-deps
-
 
 .PHONY: check-deps
 

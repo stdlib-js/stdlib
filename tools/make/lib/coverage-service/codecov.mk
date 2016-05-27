@@ -1,10 +1,12 @@
 
 # VARIABLES #
 
+# Define the command for `cat`:
 CAT ?= cat
+CAT_FLAGS ?=
 
 # Define the path to the Codecov executable:
-CODECOV ?= $(BIN)/codecov
+CODECOV ?= $(BIN_DIR)/codecov
 
 
 # TARGETS #
@@ -20,6 +22,6 @@ CODECOV ?= $(BIN)/codecov
 
 coverage-codecov:
 	$(NPM) install codecov
-	$(CAT) $(LCOV_INFO_PATH) | $(CODECOV)
+	$(CAT) $(CAT_FLAGS) $(LCOV_INFO) | $(CODECOV)
 
 .PHONY: coverage-codecov

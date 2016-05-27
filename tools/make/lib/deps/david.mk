@@ -8,10 +8,10 @@
 #
 # [1]: https://www.npmjs.com/package/david
 
-DAVID_BIN ?= $(BIN)/david
+DAVID_BIN ?= $(BIN_DIR)/david
 
 # Define the path to the root `package.json`:
-ROOT_PACKAGE_JSON ?= $(ROOT)/package.json
+ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 
 # Define the command-line options to use when invoking the david executable:
 DAVID_FLAGS ?= --package $(ROOT_PACKAGE_JSON)
@@ -23,8 +23,7 @@ DAVID_FLAGS ?= --package $(ROOT_PACKAGE_JSON)
 #
 # This target checks JavaScript dependencies for updates and security vulnerabilities.
 
-check-javascript-deps:
+check-javascript-deps: $(NODE_MODULES)
 	$(DAVID_BIN) $(DAVID_FLAGS)
-
 
 .PHONY: check-javascript-deps

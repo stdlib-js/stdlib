@@ -8,7 +8,8 @@ NPM ?= npm
 NODE ?= node
 
 # Define the command for removing files and directories:
-DELETE_CMD ?= -rm -rf
+DELETE ?= -rm
+DELETE_FLAGS ?= -rf
 
 # Determine the host kernel:
 KERNEL ?= $(shell uname -s)
@@ -19,25 +20,26 @@ ifeq ($(KERNEL), Darwin)
 else
 	OPEN ?= xdg-open
 endif
+# TODO: add Windows command
 
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_DIR)/lib/help/Makefile
-include $(TOOLS_MAKE_DIR)/lib/repl/Makefile
-include $(TOOLS_MAKE_DIR)/lib/find/Makefile
-include $(TOOLS_MAKE_DIR)/lib/lint/Makefile
-include $(TOOLS_MAKE_DIR)/lib/deps/Makefile
-include $(TOOLS_MAKE_DIR)/lib/notes/Makefile
-include $(TOOLS_MAKE_DIR)/lib/install/Makefile
-include $(TOOLS_MAKE_DIR)/lib/test/Makefile
-include $(TOOLS_MAKE_DIR)/lib/test-cov/Makefile
-include $(TOOLS_MAKE_DIR)/lib/test-browsers/Makefile
-include $(TOOLS_MAKE_DIR)/lib/test-ci/Makefile
-include $(TOOLS_MAKE_DIR)/lib/coverage-service/Makefile
-include $(TOOLS_MAKE_DIR)/lib/examples/Makefile
-include $(TOOLS_MAKE_DIR)/lib/docs/Makefile
-include $(TOOLS_MAKE_DIR)/lib/debug/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/help/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/repl/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/find/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/deps/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/notes/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/install/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/test/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/test-cov/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/test-browsers/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/test-ci/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/coverage-service/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/examples/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/docs/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/debug/Makefile
 
 
 # TARGETS #
@@ -47,8 +49,7 @@ include $(TOOLS_MAKE_DIR)/lib/debug/Makefile
 # This target runs the project's cleanup sequence.
 
 clean: clean-node clean-cov clean-docs
-	$(DELETE_CMD) $(BUILD_DIR)
-	$(DELETE_CMD) $(REPORTS_DIR)
-
+	$(DELETE) $(DELETE_FLAGS) $(BUILD_DIR)
+	$(DELETE) $(DELETE_FLAGS) $(REPORTS_DIR)
 
 .PHONY: clean
