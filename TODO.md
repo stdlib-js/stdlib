@@ -430,6 +430,57 @@ TODO
 
 78. Add Markdown style guide, including notes about comment annotations, equations, etc.
 
+79. Add note about ES2015 features in JS style guide
+
+    * Backwards compatibility is important
+    * Only use if can polyfill
+    * Must provide a polyfill
+    * No compile steps
+
+80. Function matrix across different environments (equivalents)
+
+    * matlab
+    * python
+    * julia
+    * go
+
+81. Add type specs to `@stdlib/types/` folder
+
+    * `abstract-ndarray`
+    * `abstract-complex`
+    * etc.
+
+82. Add [git hooks](https://cbednarski.com/articles/makefiles-for-everyone/) to Makefile
+
+83. Python linting
+
+    * [pylint](https://github.com/PyCQA/pylint)
+    * [pycodestyle](https://github.com/PyCQA/pycodestyle)
+    * [pyflakes](https://github.com/pyflakes/pyflakes)
+    * prob combo of `pylint` and `pycodestyle`
+
+84. R linting
+
+    * [lintr](https://github.com/jimhester/lintr): no apparent CLI
+
+85. Julia linting
+
+    * [lint.jl](https://github.com/tonyhffong/Lint.jl): no apparent CLI
+
+86. doc viewer
+
+    * modify `SimpleHTTPServer` to only serve READMEs converted to HTML
+    * for equations, instead of SVG, use MathJax
+    * could also insert live figures
+    * an extension would be to make the code samples interactive
+    * gateway to running benchmarks, tests, and examples in-browser
+
+87. remark-insert-svg-equation plugin
+
+88. remark-insert-svg-figure plugin
+
+    * requires codifying a comment markup syntax, which can take inspiration from how equations are documented in Markdown
+
 
 ---
 
@@ -521,6 +572,13 @@ TODO
 32. feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
 
 33. port `https-server`
+
+34. pipe viewer
+
+    * [node-pv](https://github.com/juliangruber/node-pv/blob/master/index.js)
+    * [blog](http://www.catonmat.net/blog/unix-utilities-pipe-viewer/)
+
+35. [downloads-folder](https://github.com/juliangruber/downloads-folder) along with `tmpdir`, `homedir`, etc
 
 
 ---
