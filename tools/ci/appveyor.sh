@@ -91,6 +91,9 @@ make check-deps >> "$CI_LOG_PATH" 2>&1
 echo 'Running tests...'
 make test >> "$CI_LOG_PATH" 2>&1
 
+echo 'Running benchmarks...'
+make benchmark >> "$CI_LOG_PATH" 2>&1
+
 echo 'Running examples...'
 make examples >> "$CI_LOG_PATH" 2>&1
 

@@ -87,6 +87,9 @@ make check-deps >> "$CI_OUT" 2>&1
 echo 'Running tests...'
 make test >> "$CI_OUT" 2>&1
 
+echo 'Running benchmarks...'
+make benchmark >> "$CI_OUT" 2>&1
+
 echo 'Running examples...'
 make examples >> "$CI_OUT" 2>&1
 
