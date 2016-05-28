@@ -633,6 +633,7 @@ TODO
     * examples should use native built-ins, rather than implicitly rely on modules such as `request` and `express`
     * comments: "compared to multi-line"
     * allow style guide code should be runnable
+    * add note about module order (external before internal, etc)
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -738,6 +739,11 @@ TODO
 36. next-tick
 
     * [polyfill](https://github.com/defunctzombie/node-process/blob/master/browser.js)
+
+37. linux utility equivalents
+
+    * cat, mv, rm, ls, touch, etc.
+    * allow for swapping out when using browser virtual filesystem, allowing isomorphic apps (although, filesystem data would prob not be copied to browser)
 
 
 ---
