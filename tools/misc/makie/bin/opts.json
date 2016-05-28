@@ -1,9 +1,11 @@
 {
+	"string": [
+		"config",
+		"dir"
+	],
 	"boolean": [
 		"help",
-		"version",
-		"list",
-		"ls"
+		"version"
 	],
 	"alias": {
 		"help": [
@@ -11,9 +13,6 @@
 		],
 		"version": [
 			"V"
-		],
-		"list": [
-			"ls"
 		]
 	}
 }

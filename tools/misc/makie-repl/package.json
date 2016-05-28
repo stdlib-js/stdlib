@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to launch a REPL.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "repl"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

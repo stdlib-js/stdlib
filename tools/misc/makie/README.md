@@ -32,13 +32,66 @@ When executing a command, the current working directory is used as a filter. Thu
 var makie = require( '/path/to/stdlib/tools/misc/makie' );
 ```
 
-#### makie( dirpath, target )
+#### makie( dirpath, options, target )
 
 Executes a Makefile command where the command is identified by a `target` and the Makefile containing the `target` is located in directory `dirpath`.
 
 ``` javascript
+var spawn = require( 'child_process' ).spawn;
+
+function plugin( dirpath, cwd, subpath ) {
+    var proc = spawn( 'make', [], 'test' );
+}
+
+var opts = {
+    'plugins': {
+        'test': plugin
+    }
+};
+
 // Execute the `test` command:
-makie( '/home/stdlib-js/stdlib', 'test' );
+makie( '/home/stdlib-js/stdlib', opts, 'test' );
+```
+
+The function accepts the following `options`:
+
+* __plugins__: an `object` whose keys correspond to Makefile targets and whose values are `functions` implementing the plugin interface.
+
+
+### Plugins
+
+Plugins are `functions` which execute a Makefile command.
+
+#### plugin( dir, cwd, subpath )
+
+Executes a Makefile target.
+
+* __dir__: the Makefile directory provided above.
+* __cwd__: current working directory of the calling process.
+* __subpath__: subdirectory path, if `makie` is called in a subdirectory; otherwise, an empty `string`.
+
+``` javascript
+var spawn = require( 'child_process' ).spawn;
+
+function plugin( dir, cwd ) {
+    var opts;
+    var args;
+    var proc;
+
+    opts = {};
+    opts.cwd = dir;
+    opts.stdio = 'inherit';
+
+    args = new Array( 2 );
+
+    // Environment variables:
+    args[ 0 ] = 'REPL_DIR='+cwd;
+
+    // Target:
+    args[ 1 ] = 'repl';
+
+    proc = spawn( 'make', args, opts );
+}
 ```
 
 <!-- </usage> -->
@@ -57,13 +110,13 @@ makie( '/home/stdlib-js/stdlib', 'test' );
 To install the command-line utility, add the following line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS X), making sure to adjust the path based on your project setup.
 
 ``` text
-alias makie=/path/to/stdlib/tools/misc/makie/bin/cli
+alias makie=/path/to/stdlib/bin/makie
 ```
 
 and then
 
 ``` bash
-$ chmod +x /path/to/stdlib/tools/misc/makie/bin/cli
+$ chmod +x /path/to/stdlib/bin/makie
 ```
 
 <!-- </installation> -->
@@ -79,7 +132,8 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
-  --ls,  --list                List the available targets.
+         --dir dirpath         Makefile directory.
+         --config path         Path to configuration file.
 ```
 
 <!-- </usage> -->

@@ -1,126 +1,70 @@
 'use strict';
 
-// MODULES //
-
-var spawn = require( 'child_process' ).spawn;
-var targets = require( './targets.js' );
-
-
-// FUNCTIONS //
-
-/**
-* Callback invoked upon encountering an error.
-*
-* @private
-* @param {Error} error - error object
-*/
-function onError( error ) {
-	process.stderr.write( error.message+'\n', 'utf8' );
-	return process.exit( 1 );
-} // end FUNCTION onError()
-
-/**
-* Callback invoked upon child process close.
-*
-* @private
-* @param {number} code - exit code
-*/
-function onFinish( code ) {
-	if ( code !== 0 ) {
-		process.stderr.write( '`make` process exited with code `'+code + '.\n' );
-		return process.exit( code );
-	}
-	process.exit( 0 );
-} // end FUNCTION onFinish()
-
-/**
-* Callback invoked upon receiving data from `stdout`.
-*
-* @private
-* @param {Buffer} data - standard output
-*/
-function stdout( data ) {
-	process.stdout.write( data );
-} // end FUNCTION stdout()
-
-/**
-* Callback invoked upon receiving data from `stderr`.
-*
-* @private
-* @param {Buffer} data - standard error
-*/
-function stderr( data ) {
-	process.stderr.write( data );
-} // end FUNCTION stderr()
-
-
 // MAKIE //
 
 /**
 * Executes a Makefile command.
 *
 * @param {string} dirpath - Makefile directory
+* @param {Object} opts - function options
+* @param {Object} opts.plugins - plugins
 * @param {string} target - Makefile target
 *
 * @example
-* makie( '/home/stdlib-js/stdlib', 'test' );
+* var spawn = require( 'child_process' ).spawn;
+*
+* function plugin( dirpath, cwd, subpath ) {
+*     var proc = spawn( 'make', [], 'test' );
+* }
+*
+* var opts = {
+*     'plugins': {
+*         'test': plugin
+*     }
+* };
+*
+* makie( '/home/stdlib-js/stdlib', opts, 'test' );
 */
-function makie( dirpath, target ) {
-	var filter;
+function makie( dirpath, opts, target ) {
+	var targets;
+	var plugin;
+	var keys;
 	var path;
-	var args;
-	var proc;
-	var opts;
+	var key;
 	var err;
-	var dir;
-	var t;
+	var cwd;
+	var i;
 
-	// Get the working directory of the calling process:
-	dir = process.cwd();
+	targets = {};
 
-	t = targets[ target ];
-	if ( t === void 0 ) {
+	// Load plugins...
+	if ( opts.plugins ) {
+		keys = Object.keys( opts.plugins );
+		for ( i = 0; i < keys.length; i++ ) {
+			key = keys[ i ];
+			targets[ key ] = require( opts.plugins[ key ] );
+		}
+	}
+	plugin = targets[ target ];
+	if ( plugin === void 0 ) {
 		err = 'Unrecognized/unsupported Makefile target: `' + target + '`.\n';
 		process.stderr.write( err, 'utf8' );
 		return process.exit( 1 );
 	}
-	// Check that we are within the project...
-	path = dir.substring( 0, dirpath.length );
+	cwd = process.cwd();
+
+	// Check that we are within either the Makefile directory or a subdirectory...
+	path = cwd.substring( 0, dirpath.length );
 	if ( path !== dirpath ) {
-		err = 'In order to execute Makefile commands, you must be within the project. Current directory: `' + dir + '`. Project directory: `' + dirpath + '`.\n';
+		err = 'In order to execute Makefile commands, you must be either in the Makefile directory or a subdirectory. Current directory: `' + cwd + '`. Makefile directory: `' + dirpath + '`.\n';
 		process.stderr.write( err, 'utf8' );
 		return process.exit( 1 );
 	}
-	if ( t ) {
-		// Remove the `dirpath` path (including any beginning slash):
-		path = dir.substring( dirpath.length+1 );
+	// Remove the `dirpath` path (including any beginning slash):
+	path = cwd.substring( dirpath.length+1 );
 
-		// If we are in a sub-directory, use the relative sub-directory path to create a filter...
-		if ( path ) {
-			filter = t+'=.*/'+path+'/.*';
-		}
-	}
-	// Assemble command-line arguments:
-	args = [];
-	if ( filter ) {
-		args.push( filter );
-	}
-	args.push( target );
-
-	// Spawn a new process to execute the command...
-	opts = {};
-	opts.cwd = dirpath;
-	if ( target === 'repl' ) {
-		opts.stdio = 'inherit';
-		args.unshift( 'REPL_DIR='+dir );
-		proc = spawn( 'make', args, opts );
-	} else {
-		proc = spawn( 'make', args, opts );
-		proc.on( 'error', onError );
-		proc.stdout.on( 'data', stdout );
-		proc.stderr.on( 'data', stderr );
-		proc.on( 'close', onFinish );
-	}
+	// Invoke the plugin:
+	plugin( dirpath, cwd, path || '' );
 } // end FUNCTION makie()
 
 

@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to run examples.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "examples"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

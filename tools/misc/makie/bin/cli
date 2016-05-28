@@ -9,7 +9,6 @@ var parseArgs = require( 'minimist' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
 var makie = require( './../lib' );
-var targets = require( './../lib/targets.js' );
 
 
 // FUNCTIONS //
@@ -47,29 +46,12 @@ function version() {
 	process.exit( 0 );
 } // end FUNCTION version()
 
-/**
-* Lists the available targets.
-*
-* @private
-* @example
-* list();
-* // => '...'
-* // => '...'
-*/
-function list() {
-	var keys;
-	var msg;
-	keys = Object.keys( targets );
-	msg = '\n'+keys.join( '\n' )+'\n\n';
-	process.stdout.write( msg, 'utf8' );
-	process.exit( 0 );
-} // end FUNCTION list()
-
 
 // VARIABLES //
 
 var dirpath;
 var args;
+var cwd;
 
 
 // INIT //
@@ -88,12 +70,20 @@ if ( args.help ) {
 if ( args.version ) {
 	return version();
 }
-if ( args.list || args.ls ) {
-	return list();
+cwd = process.cwd();
+if ( args.dir ) {
+	dirpath = path.resolve( cwd, args.dir );
+} else {
+	// FIXME: this is fragile, as will break if the location of this file changes. Maybe search for first Makefile in a parent dir of `makie`? (similar to a package.json search)
+	dirpath = path.resolve( __dirname, '../../../../' );
+}
+if ( args.config ) {
+	opts = require( path.resolve( cwd, args.config ) );
+} else {
+	opts = {};
 }
 
 
-// MAKE //
+// MAKIE //
 
-dirpath = path.resolve( __dirname, './../../../../' );
-makie( dirpath, args._[0] );
+makie( dirpath, opts, args._[0] );

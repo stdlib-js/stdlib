@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to lint Markdown files.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "lint",
+    "markdown",
+    "mdown",
+    "md"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

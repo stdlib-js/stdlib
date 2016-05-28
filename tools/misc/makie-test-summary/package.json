@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to generate a test summary.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "test",
+    "tests",
+    "summary"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

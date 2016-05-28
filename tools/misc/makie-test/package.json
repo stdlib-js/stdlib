@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to run tests.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "test",
+    "tests"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
