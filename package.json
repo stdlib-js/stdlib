@@ -29,6 +29,7 @@
     "debug": "^2.2.0",
     "minimist": "^1.2.0",
     "object-keys": "^1.0.9",
+    "readable-stream": "^2.1.4",
     "system.global": "^1.0.0",
     "update-notifier": "^0.7.0"
   },
