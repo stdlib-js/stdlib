@@ -637,6 +637,8 @@ TODO
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
+93. check that JSDoc annotations include `@throws`
+
 
 ---
 
