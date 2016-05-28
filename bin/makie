@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# DESCRIPTION #
+
+# Script to run the stdlib `makie` utility.
+
+
+# VARIABLES #
+
+# Define the command for `node`:
+export NODE=node
+
+# Define the path to the `makie` executable:
+export MAKIE=`dirname "$0"`/../tools/misc/makie/bin/cli
+
+# Define the path to the `makie` configuration file:
+export MAKIE_CONFIG=`dirname "$0"`/../etc/.makie.js
+
+# Define the path to the Makefile directory:
+export MAKIE_MAKEFILE_DIR=`dirname "$0"`/../
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+on_error() {
+	echo 'ERROR: An error was encountered during execution.'
+	cleanup
+	exit 1
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo ''
+}
+
+
+# MAIN #
+
+# Exit immediately if one of the executed commands exits with a non-zero status:
+set -e
+
+# Set an error handler to print captured output and perform any clean-up tasks:
+trap 'on_error' ERR
+
+# Run `makie`:
+$NODE "$MAKIE" "--config=$MAKIE_CONFIG" "--dir=$MAKIE_MAKEFILE_DIR" "$@"
+
+# Run cleanup tasks:
+cleanup
