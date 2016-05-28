@@ -11,7 +11,7 @@ TODO
    * support reformatting ala `go fmt`
    * move `eslint` config files/modules to this repo (will need to do audit to ensure up-to-date)
 
-2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide)
+2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) with [versioning info](https://github.com/compute-io/contributing#versioning)
 
 3. determine how to handle internal `@stdlib` links in READMEs
 
@@ -499,7 +499,7 @@ TODO
       // returns <Error> || null
 
       // Formatted (string) (?):
-      // => printf('%f', ?)
+      // returns => printf('%f', ?)
 
       // Wildcard:
       // returns ...
@@ -634,6 +634,8 @@ TODO
     * comments: "compared to multi-line"
     * allow style guide code should be runnable
 
+92. README link to "live" (e.g., gh-pages) docs (badge)
+
 
 ---
 
@@ -733,6 +735,10 @@ TODO
 
 35. [downloads-folder](https://github.com/juliangruber/downloads-folder) along with `tmpdir`, `homedir`, etc
 
+36. next-tick
+
+    * [polyfill](https://github.com/defunctzombie/node-process/blob/master/browser.js)
+
 
 ---
 
@@ -788,6 +794,14 @@ TODO
    * may want to prefix with `stdlib-<fcn>` to avoid conflicts with built-ins
 
      - tools script could crawl the project and auto create aliases and links
+
+5. for modules like generic stats functions which may accept a variety of inputs requiring tailored implementations, instead of dynamic code generation, another possibility is to dynamically compile static code and write to disk
+
+   * would allow static analysis
+   * easier debugging, as can set breakpoints, etc.
+   * would lead, however, to a much larger codebase
+   * in `make init`, could configure to "watch" and dynamically recompile generated files
+   * to discover and identify compile targets, could add a "stdlib" field to a module's `package.json` with a configuration setting relevant to the type of compilation to perform (could lead to a proliferation of tailored settings, which is not necessarily a good thing)
 
 
 
