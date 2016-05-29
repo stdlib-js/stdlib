@@ -21,6 +21,14 @@
 */
 
 /**
+* A half-precision floating-point number.
+*
+* @typedef {number} Float16
+*
+* @see [IEEE 754]{@link https://en.wikipedia.org/wiki/IEEE_754-1985}
+*/
+
+/**
 * A 32-bit signed integer.
 *
 * @typedef {number} Int32
@@ -60,6 +68,45 @@
 * A number primitive which has an integer value.
 *
 * @typedef {number} integer
+*/
+
+/**
+* A number primitive which has an integer value on the interval  `[-2147483648, 2147483647]`. This number may be interpreted by the runtime engine as a 32-bit integer, which may very well be the case after performing bitwise operations; e.g., `3.14|0`.
+*
+* @typedef {number} integer32
+*
+* @see [bitwise operators]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators}
+* @see [asm.js]{@link http://asmjs.org/spec/latest/}
+*/
+
+/**
+* A number primitive which has an integer value on the interval `[0, 4294967295]`.
+*
+* @typedef {number} uinteger32
+*/
+
+/**
+* A number primitive which has an integer value on the interval `[−32768, 32767]`.
+*
+* @typedef {number} integer16
+*/
+
+/**
+* A number primitive which has an integer value on the interval `[0, 65535]`.
+*
+* @typedef {number} uinteger16
+*
+
+/**
+* A number primitive which has an integer value on the interval `[-128,127]`.
+*
+* @typedef {number} integer8
+*/
+
+/**
+* A number primitive which has an integer value on the interval `[0,255]`.
+*
+* @typedef {number} uinteger8
 */
 
 /**
@@ -149,6 +196,12 @@
 */
 
 /**
+* An array containing only number primitives.
+*
+* @typedef {Array<number>} NumberArray
+*/
+
+/**
 * A numeric array containing only integer values.
 *
 * @typedef {(Array<number>|IntegerTypedArray)} IntegerNumericArray
@@ -218,4 +271,20 @@
 * @typedef {(Object|Uint8Array)} Buffer
 *
 * @see [Buffer]{@link https://nodejs.org/api/buffer.html}
+*/
+
+/**
+* An instance of the built-in `Date` object.
+*
+* @typedef {Date} Date
+*
+* @see [Date]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date}
+*/
+
+/**
+* An instance of the built-in `RegExp` object.
+*
+* @typedef {RegExp} RegExp
+*
+* @see [RegExp]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp}
 */
