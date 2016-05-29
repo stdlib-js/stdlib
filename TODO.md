@@ -380,7 +380,7 @@ TODO
     * [comment-to-assert](https://github.com/azu/comment-to-assert)
     * [doctestjs](https://github.com/ianb/doctestjs)
 
-69. to browser
+69. to browser (see tools/simple-http-server)
 
     * [bpipe](https://github.com/Marak/bpipe)
     * [bcat](https://github.com/kessler/node-bcat)
@@ -396,8 +396,13 @@ TODO
     * [opener](https://github.com/domenic/opener)
     * [browser-launcher](https://github.com/substack/browser-launcher)
     * [browser-launcher2](https://github.com/benderjs/browser-launcher2)
+    * [opn](https://github.com/sindresorhus/opn) and [opn-cli](https://github.com/sindresorhus/opn-cli)
+    * [node-open](https://github.com/pwnall/node-open)
+    * [open-url](https://github.com/Jam3/open-url/blob/master/index.js)
 
 71. ability to run examples in a browser => Makefile target `examples-browser`
+
+    - can use `simple-http-server`
 
 72. build step which runs examples in browsers and catches any errors
 
@@ -539,6 +544,10 @@ TODO
 
     * examples of modules, functions, constants, regexps, etc.
 
+    * need a convention for client-side and server-side only examples
+
+      - could use `@browseronly` and `@nodejsonly` special annotations, akin to `@private` and `@public`
+
 76. `@stdlib/regexp/extname`, `*/dirname` export circular references; prob best to clone the regexp and bind to exported object
 
     * requires porting `utils-copy`
@@ -580,6 +589,9 @@ TODO
     * etc.
 
 82. Add [git hooks](https://cbednarski.com/articles/makefiles-for-everyone/) to Makefile
+
+    - on pull, check deps to see if any missing, removed, or out-of-date
+    - will prob want a way to undo setting of hooks (i.e., a reset)
 
 83. Python linting
 
@@ -634,10 +646,23 @@ TODO
     * comments: "compared to multi-line"
     * allow style guide code should be runnable
     * add note about module order (external before internal, etc)
+    * add note about not using `/**` unless JSDoc
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
+    * may also apply in reverse, going from "live" to source
+
 93. check that JSDoc annotations include `@throws`
+
+94. include READMEs in namespace dirs
+
+95. need a convention for defining README examples which are for illustration purposes only and not meant to be run
+
+    * e.g., an example which is path dependent and cannot be known ahead of time, as it depends on user environment, etc.
+
+96. proposal: `stdlib` field to `package.json`
+
+    - allowing setting whether a module is browser-only, nodejs-only, etc and whether a module is suitable for a REPL context, etc.
 
 
 ---
@@ -746,6 +771,10 @@ TODO
 
     * cat, mv, rm, ls, touch, etc.
     * allow for swapping out when using browser virtual filesystem, allowing isomorphic apps (although, filesystem data would prob not be copied to browser)
+
+38. [file-type](https://github.com/sindresorhus/file-type)
+
+    * break into separate mods `is-pdf-file`, etc.
 
 
 ---
