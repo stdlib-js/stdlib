@@ -389,6 +389,8 @@ TODO
     * [browser-run](https://github.com/juliangruber/browser-run)
     * [budo](https://github.com/mattdesl/budo)
     * [simple-html-index](https://github.com/mattdesl/simple-html-index)
+    * [http-server](https://github.com/indexzero/http-server)
+    * [ecstatic](https://github.com/jfhbrook/node-ecstatic)
 
 70. cross-platform open browser
 
@@ -647,6 +649,7 @@ TODO
     * allow style guide code should be runnable
     * add note about module order (external before internal, etc)
     * add note about not using `/**` unless JSDoc
+    * add note that module description should propose action (e.g., "Test ..."), while function descriptions should be in active tense (e.g., "Tests ...")
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -775,6 +778,8 @@ TODO
 38. [file-type](https://github.com/sindresorhus/file-type)
 
     * break into separate mods `is-pdf-file`, etc.
+
+39. move `is-uri` main regex to separate module? Would allow for capturing parts of the scheme. Needs evaluating.
 
 
 ---
