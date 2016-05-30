@@ -23,6 +23,30 @@
 */
 
 /**
+* A 128-bit signed integer.
+*
+* @typedef {number} Int128
+*/
+
+/**
+* A 128-bit unsigned integer.
+*
+* @typedef {number} Uint128
+*/
+
+/**
+* A 64-bit signed integer.
+*
+* @typedef {number} Int64
+*/
+
+/**
+* A 64-bit unsigned integer.
+*
+* @typedef {number} Uint64
+*/
+
+/**
 * A 32-bit signed integer.
 *
 * @typedef {number} Int32
