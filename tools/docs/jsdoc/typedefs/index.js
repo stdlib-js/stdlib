@@ -95,7 +95,7 @@
 * A number primitive which has an integer value on the interval `[0, 65535]`.
 *
 * @typedef {number} uinteger16
-*
+*/
 
 /**
 * A number primitive which has an integer value on the interval `[-128,127]`.
