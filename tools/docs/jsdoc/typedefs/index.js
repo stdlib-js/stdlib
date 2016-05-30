@@ -175,7 +175,7 @@
 */
 
 /**
-* A typed array containing only integers.
+* An integer typed array.
 *
 * @typedef {(Int8Array|Uint8Array|Uint8ClampedArray|Int16Array|Uint16Array|Int32Array|Uint32Array)} IntegerTypedArray
 *
