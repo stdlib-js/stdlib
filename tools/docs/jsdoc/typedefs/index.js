@@ -258,9 +258,9 @@
 */
 
 /**
-* A string which is a valid URI.
+* A string primitive which is a valid URI.
 *
-* @typedef {(string|String)} URI
+* @typedef {string} URI
 *
 * @see [URI]{@link https://en.wikipedia.org/wiki/Uniform_Resource_Identifier}
 */
