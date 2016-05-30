@@ -433,6 +433,9 @@ TODO
       // Deep equal:
       // returns {'a':[1,2,3]}
 
+      // Deep equal (mutation):
+      // x => [ 1, 2, 3, 4, 5 ]
+
       // Deep equal:
       /* returns
            {
@@ -663,7 +666,7 @@ TODO
 
     * e.g., an example which is path dependent and cannot be known ahead of time, as it depends on user environment, etc.
 
-96. proposal: `stdlib` field to `package.json`
+96. proposal: add `stdlib` field to `package.json`
 
     - allowing setting whether a module is browser-only, nodejs-only, etc and whether a module is suitable for a REPL context, etc.
 
