@@ -11,6 +11,7 @@ Typically, to execute project `Makefile` commands, you must be in the root proje
 This utility provides support for executing a subset of `Makefile` commands from anywhere within the project. The list of supported targets includes:
 
 * `repl`
+* `notes`
 * `examples`
 * `test`
 * `test-cov`
