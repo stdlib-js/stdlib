@@ -65,7 +65,7 @@ process.stdout.on( 'error', process.exit );
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args.help ) {
-    return help();
+	return help();
 }
 if ( args.version ) {
 	return version();
