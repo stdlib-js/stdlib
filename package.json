@@ -47,7 +47,7 @@
     "remark-lint": "^3.2.1",
     "remark-validate-links": "^3.0.0",
     "tap-spec": "4.x.x",
-    "tap-summary": "1.x.x",
+    "tap-summary": "2.x.x",
     "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
     "testling": "1.x.x"
   },
