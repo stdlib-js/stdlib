@@ -19,7 +19,7 @@ TODO
    * replace internal module references
 
 4. more extensive tests for `ln`, `sqrt`, `cos`, `sin`, `cos`, etc
-  
+
    * test against Julia
 
 5. determine a browser testing strategy
@@ -80,14 +80,14 @@ TODO
 
    * ...
 
-10. 
+10.
 
 11. add CONTRIBUTING.md
 
 12. determine strategy for generic validation fcns
 
 13. lint filenames
-  
+
     * [eslint plugin](https://github.com/selaux/eslint-plugin-filenames)
 
 14. consider changing `isNumber` to `isNumeric`
@@ -105,7 +105,7 @@ TODO
       - for files without an extension, assume executable
 
     * run the script
-    
+
       - may want to `chmod` the script, so do not need to know the system alias for the runner environment (e.g., Julia => `julia`) and can leverage internal shebang
 
     * if part of CI, would allow continuous testing against an updated fixture space and would also allow continuous testing that fixture runners work
@@ -125,7 +125,7 @@ TODO
 
 21. clean-up test runners
 
-    * `log1p` 
+    * `log1p`
     * `sinpi`
     * etc.
 
@@ -455,13 +455,13 @@ TODO
 
       // Deep equal (matrices):
       /* returns
-           x[':'] = [ 0 0 
+           x[':'] = [ 0 0
                       0 0 ]
       */
 
       // Deep approximately equal (matrices):
       /* returns
-           mat[':'] = [ ~3.14       0 
+           mat[':'] = [ ~3.14       0
                             0   ~3.14 ]
       */
 
@@ -472,13 +472,13 @@ TODO
 
       // Deep equal (ndarrays):
       /* returns
-           x[':,:,0'] = [ 0 0 
+           x[':,:,0'] = [ 0 0
                           0 0 ]
 
-           x[':,0,:'] = [ 0 0 
+           x[':,0,:'] = [ 0 0
                           0 0 ]
 
-           x['0,:,:'] = [ 0 0 
+           x['0,:,:'] = [ 0 0
                           0 0 ]
       */
 
@@ -654,6 +654,7 @@ TODO
     * add note about module order (external before internal, etc)
     * add note about not using `/**` unless JSDoc
     * add note that module description should propose action (e.g., "Test ..."), while function descriptions should be in active tense (e.g., "Tests ...")
+    * add note about file naming conventions (no uppercase, use of snake-case)
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -855,6 +856,7 @@ TODO
 
    * would allow static analysis
    * easier debugging, as can set breakpoints, etc.
+   * would allow for the use of JSDoc annotations, not possible when using dynamic code generation
    * would lead, however, to a much larger codebase
    * in `make init`, could configure to "watch" and dynamically recompile generated files
    * to discover and identify compile targets, could add a "stdlib" field to a module's `package.json` with a configuration setting relevant to the type of compilation to perform (could lead to a proliferation of tailored settings, which is not necessarily a good thing)
@@ -917,7 +919,7 @@ Will need a `tools` directory in individual repositories to
      - [module-deps](https://github.com/substack/module-deps)
 
 7. can updating the version be automated?
- 
+
 
 
 #### LICENSE
