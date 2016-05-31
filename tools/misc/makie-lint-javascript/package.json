@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to lint JavaScript.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "lint",
+    "javascript",
+    "js"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

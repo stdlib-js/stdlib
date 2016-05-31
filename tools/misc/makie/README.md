@@ -17,6 +17,8 @@ This utility provides support for executing a subset of `Makefile` commands from
 * `test-cov`
 * `test-summary`
 * `view-cov`
+* `benchmark`
+* `lint-javascript`
 * `lint-markdown`
 * `list-modules`
 

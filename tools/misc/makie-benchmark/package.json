@@ -1,0 +1,27 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to run benchmarks.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "bench",
+    "benchmark",
+    "benchmarks",
+    "test",
+    "perf",
+    "performance"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
