@@ -21,6 +21,7 @@ config.plugins = plugins;
 // PLUGINS //
 
 plugins[ 'repl' ] = path.join( prefix, 'makie-repl' );
+plugins[ 'notes' ] = path.join( prefix, 'makie-notes' );
 plugins[ 'examples' ] = path.join( prefix, 'makie-examples' );
 plugins[ 'test' ] = path.join( prefix, 'makie-test' );
 plugins[ 'test-summary' ] = path.join( prefix, 'makie-test-summary' );

@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to enumerate source code annotations.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "grep",
+    "notes"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

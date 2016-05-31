@@ -1,14 +1,17 @@
 
 # VARIABLES #
 
+# Define keywords identifying annotations:
+NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
+
 # Define the command for `grep`:
 GREP ?= grep
 
 # Define the command-line options to use when invoking `grep`:
 GREP_FLAGS ?= -Ern
 
-# Define keywords identifying annotations:
-NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
+# Define the search directory:
+GREP_DIR ?= $(ROOT_DIR)
 
 
 # TARGETS #
@@ -18,7 +21,7 @@ NOTES ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
 # This target searches for annotated comments which indicate work that remains to be completed. Annotated comments will be output, along with the filename and line number where they appear.
 
 notes:
-	$(GREP) $(GREP_FLAGS) $(NOTES) $(ROOT_DIR) \
+	$(GREP) $(GREP_FLAGS) $(NOTES) $(GREP_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude-dir "$(BUILD_DIR)/*" \
 		--exclude "$(this_file)" \
