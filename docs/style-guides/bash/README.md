@@ -6,3 +6,5 @@ Bash Style Guide
 
 TODO
 
+* [bash style](https://github.com/progrium/bashstyle)
+* [Google shell guide](https://google.github.io/styleguide/shell.xml)
