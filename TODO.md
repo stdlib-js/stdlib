@@ -213,6 +213,7 @@ TODO
     * [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/v8/)
     * [v8-perf](https://github.com/thlorenz/v8-perf)
     * [chrome devtools](https://github.com/GoogleChrome/devtools-docs/issues/53)
+    * [v8 bailout reasons](https://github.com/vhf/v8-bailout-reasons)
 
 40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
 
@@ -677,6 +678,8 @@ TODO
 
     - could be useful for test runners, etc.
 
+99. investigate [starscope](https://github.com/eapache/starscope)
+
 
 ---
 
@@ -733,11 +736,7 @@ TODO
     - see [MFX](http://www.mathworks.com/matlabcentral/fileexchange/26212-round-with-significant-digits)
     - see [Julia](https://github.com/JuliaLang/julia/blob/master/base/floatfuncs.jl#L112)
 
-24. double decimal exponents
-
-    - max
-    - min subnormal
-    - etc.
+24. testing for `sin`, `ln`, `exp`, `sqrt`, `tan` 
 
 25. [fibo](https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.62tfusajl)
 
