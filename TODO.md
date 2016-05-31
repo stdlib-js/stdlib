@@ -391,6 +391,7 @@ TODO
     * [simple-html-index](https://github.com/mattdesl/simple-html-index)
     * [http-server](https://github.com/indexzero/http-server)
     * [ecstatic](https://github.com/jfhbrook/node-ecstatic)
+    * [glance](https://github.com/jarofghosts/glance)
 
 70. cross-platform open browser
 
@@ -670,6 +671,12 @@ TODO
 
     - allowing setting whether a module is browser-only, nodejs-only, etc and whether a module is suitable for a REPL context, etc.
 
+97. proposal: add `@sync` and `@async` JSDoc annotations to document synchronous and asynchronous functions, respectively
+
+98. investigate [`bpkg`](https://github.com/bpkg/bpkg) as a package manager for `bash` scripts
+
+    - could be useful for test runners, etc.
+
 
 ---
 
@@ -783,6 +790,10 @@ TODO
     * break into separate mods `is-pdf-file`, etc.
 
 39. move `is-uri` main regex to separate module? Would allow for capturing parts of the scheme. Needs evaluating.
+
+40. `kmeans` as an `EventEmitter`
+
+41. bring `debug` in-house
 
 
 ---
