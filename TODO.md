@@ -201,6 +201,28 @@ TODO
     * something akin to bibtex; i.e., a centralized list of references which can be globally referenced (e.g., IEEE754, as the Wikipedia reference, etc)
     * an individual module, when created, would get the global link included in the README
     * an individual module could override a reference by including a different link, but having the same "tag" in its README
+    * [academic markdown and citations](http://www.chriskrycho.com/2015/academic-markdown-and-citations.html)
+    * [scholdoc](https://github.com/timtylin/scholdoc)
+    * [scholarly markdown](http://scholarlymarkdown.com/)
+    * [scholarly markdown guide](http://scholarlymarkdown.com/Scholarly-Markdown-Guide.html)
+    * [R markdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+    * [Citeproc JSON](http://blog.martinfenner.org/2013/08/08/csl-is-more-than-citation-styles/)
+    * [citeproc-js](https://github.com/juris-m/citeproc-js)
+    * [bibjson](http://okfnlabs.org/bibjson/)
+    * [multimarkdown](https://github.com/fletcher/MultiMarkdown-5)
+    * [tidying Markdown reference links](http://www.leancrew.com/all-this/2012/09/tidying-markdown-reference-links/)
+    * ...
+    * separate bib doc(s), which can be readily converted to JSON (e.g., TOML or YAML), thus allowing comments (or maybe even a JSDoc like syntax and something akin to typedefs)
+    * in Markdown, use citation markup strategy similar to scholarly markdown
+    * given a Markdown file, create a list of two things: the unique citation identifiers used throughout the text and any citations included in the `links` section
+    * ignore internal links to other Markdown sections
+    * if an id is found in bib docs, use that reference
+    * will want canonical way to reference project modules, which may be tricky, as modules may move, etc; this is important for automating "see also" type sections
+    * otherwise, leave the existing ref as is
+    * as part of this, should be able to lint (although `remark` does this already)
+    * once finished, save to disk
+    * does require a separate build step, but can be automated `pre-push` or via `watch` 
+    * how would we distinguish (in markup) between just wanting a link and wanting a full-blown reference citation? => maybe if within a `references` section, similar to `links`
 
 38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
 
@@ -213,11 +235,12 @@ TODO
     * [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/v8/)
     * [v8-perf](https://github.com/thlorenz/v8-perf)
     * [chrome devtools](https://github.com/GoogleChrome/devtools-docs/issues/53)
-    * [v8 bailout reasons](https://github.com/vhf/v8-bailout-reasons)
 
 40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
 
     * for tests, be sure to record the seed so that failed tests can be debugged
+    * could have seed be an environment variable, so could be set in CI environment
+    * module to get a seed; one method used could be to check env var
 
 41. for datasets,
 
@@ -363,7 +386,7 @@ TODO
     * for directory, may want to dedupe (flat array), a tree result which states which modules require which modules (similar to a node dependency graph), or, for every found module, the deps for that module (array of arrays)
     * see automation/package.json item below
 
-66. investigate [npm-publish-please](https://github.com/inikulin/publish-please)
+66. investigate [npm-publish-please](https://github.com/inikulin/publish-please) and np (Sindre)
 
     * not sure a separate tool is necessary, but may find inspiration
 
@@ -420,6 +443,8 @@ TODO
     * make the function polymorphic where it may accept just an `options` arg, a `requestListener` arg, or both args
 
 74. review CoC for more community oriented policies
+
+    * add note about right to delete offending comments, etc; e.g., [Chakra core](https://github.com/Microsoft/ChakraCore/blob/master/CODE_OF_CONDUCT.md)
 
 75. add JSDoc style guide to JavaScript style guide
 
@@ -651,11 +676,12 @@ TODO
     * status code example has a bug (send should be status)
     * examples should use native built-ins, rather than implicitly rely on modules such as `request` and `express`
     * comments: "compared to multi-line"
-    * allow style guide code should be runnable
+    * all style guide code should be runnable
     * add note about module order (external before internal, etc)
     * add note about not using `/**` unless JSDoc
     * add note that module description should propose action (e.g., "Test ..."), while function descriptions should be in active tense (e.g., "Tests ...")
     * add note about file naming conventions (no uppercase, use of snake-case)
+    * see #79
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -794,6 +820,8 @@ TODO
 40. `kmeans` as an `EventEmitter`
 
 41. bring `debug` in-house
+
+42. [colorscales](https://github.com/bpostlethwaite/colormap)
 
 
 ---
