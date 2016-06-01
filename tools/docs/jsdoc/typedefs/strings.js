@@ -1,7 +1,7 @@
 /**
 * A string which only contains `'0'` and `'1'` characters.
 *
-* @typedef {string} bitstring
+* @typedef {string} BinaryString
 */
 
 /**
