@@ -18,9 +18,13 @@ TODO
    * e.g., `@stdlib/math/constants/float64-two-pi`
    * replace internal module references
 
-4. more extensive tests for `ln`, `sqrt`, `cos`, `sin`, `cos`, etc
+4. create an `install.md` for developers
 
-   * test against Julia
+   * julia
+   * R
+   * python
+   * golang
+   * boost
 
 5. determine a browser testing strategy
 
@@ -80,7 +84,10 @@ TODO
 
    * ...
 
-10.
+10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
+
+    * [node-inspector](https://github.com/node-inspector/node-inspector)
+    * [source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 
 11. add CONTRIBUTING.md
 
@@ -118,16 +125,12 @@ TODO
 
 19. tests for top-level `tools`; e.g., JSDoc templates, etc
 
-20. add rule to JavaScript style guide about not using built-in functions, especially math functions
+20. 
 
-    * link to various accuracy issues
-    * highlight that browsers often sacrifice accuracy for speed
+21. clean-up cpp test runners
 
-21. clean-up test runners
-
-    * `log1p`
-    * `sinpi`
-    * etc.
+    * `powm1`
+    * `riemann-zeta`
 
 22. `type-of` should check for `toStringTag` support
 
@@ -138,6 +141,7 @@ TODO
 25. create better examples for constants
 
     * e.g., how and why and in what contexts a constant may be used
+    * e.g., `float64-max-exponent` => useful for randomly generating numbers across the entire range of possible numbers (sort of, as only 16 decimals => logspace)
 
 26. investigate [textlint](https://github.com/textlint/textlint)
 
@@ -367,9 +371,7 @@ TODO
 
 61. gitter
 
-62. add ability to lint from subdirectories to `makie`
-
-    * for `lint-javascript`, requires setting multiple environment variables (the key value of hash could be an array of env variables which must be set)
+62. investigate [xonsh](https://github.com/scopatz/xonsh)
 
 63. `list-modules` Makefile recipe
 
@@ -429,7 +431,8 @@ TODO
 
 71. ability to run examples in a browser => Makefile target `examples-browser`
 
-    - can use `simple-http-server`
+    * can use `simple-http-server`
+    * [packify](https://github.com/maxogden/packify)
 
 72. build step which runs examples in browsers and catches any errors
 
@@ -543,6 +546,9 @@ TODO
 
       // Throws:
       // throws <TypeError>
+
+      // Output to terminal:
+      // => 'beep'
 
       // Insert figure:
       // => <figure data=?>
@@ -680,8 +686,12 @@ TODO
     * add note about module order (external before internal, etc)
     * add note about not using `/**` unless JSDoc
     * add note that module description should propose action (e.g., "Test ..."), while function descriptions should be in active tense (e.g., "Tests ...")
-    * add note about file naming conventions (no uppercase, use of snake-case)
+    * add note about file naming conventions (no uppercase, use of snake-case) => need to put in separate style-guide, as not JS specific
     * see #79
+    * add rule to JavaScript style guide about not using built-in functions, especially math functions, linking to various accuracy issues and highlighting that browsers often sacrifice accuracy for speed
+    * add rules about not using `Number`, `String`, and `Boolean` constructors
+    * add rule about using source URL directives in eval'd code
+    * add rule about including decimals when working with numbers; e.g., `3.0`
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -706,6 +716,24 @@ TODO
     - could be useful for test runners, etc.
 
 99. investigate [starscope](https://github.com/eapache/starscope)
+
+100. review
+
+     * [x] math/base/blas
+     * [x] math/base/special
+     * [x] math/base/tools
+     * [ ] math/base/utils
+     * [ ] math/constants
+     * [ ] math/generics/utils
+     * [x] regexp
+     * [x] repl
+     * [x] streams
+     * [x] tools
+     * [ ] utils
+
+101. [v8-profiler](https://github.com/node-inspector/v8-profiler) and [node-inspector](https://github.com/node-inspector/node-inspector)
+
+102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
 
 ---
@@ -763,7 +791,13 @@ TODO
     - see [MFX](http://www.mathworks.com/matlabcentral/fileexchange/26212-round-with-significant-digits)
     - see [Julia](https://github.com/JuliaLang/julia/blob/master/base/floatfuncs.jl#L112)
 
-24. testing for `sin`, `ln`, `exp`, `sqrt`, `tan` 
+24. testing for
+
+    * `sin`
+    * `ln`
+    * `exp`
+    * `sqrt`
+    * `tan` 
 
 25. [fibo](https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.62tfusajl)
 
@@ -822,6 +856,16 @@ TODO
 41. bring `debug` in-house
 
 42. [colorscales](https://github.com/bpostlethwaite/colormap)
+
+43. [datasets](https://github.com/fivethirtyeight/data)
+
+44. utility to convert R `DESCRIPTION` files to JSON
+
+    * [R docs](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file)
+    * [debian control files](https://www.debian.org/doc/debian-policy/ch-controlfields.html)
+    * [debian-control-parser](https://github.com/samcday/node-debian-control-parser)
+    * [readcontrol](https://github.com/evanlucas/node-readcontrol)
+    
 
 
 ---
