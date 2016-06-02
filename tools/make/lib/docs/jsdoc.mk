@@ -33,7 +33,7 @@ JSDOC_TYPEDEF ?= $(TOOLS_DIR)/docs/jsdoc/typedefs/*.js
 JSDOC_JSON_TEMPLATE ?= $(TOOLS_DIR)/docs/jsdoc/templates/json
 
 # Define the output directory for JSDoc:
-JSDOC_OUT ?= $(DOCS_DIR)/jsdoc
+JSDOC_OUT ?= $(SRC_DOCS_DIR)/jsdoc
 
 # Define the output directory for JSDoc JSON:
 JSDOC_JSON_OUT ?= $(JSDOC_OUT)/json

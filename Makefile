@@ -47,6 +47,9 @@ COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
 # Define the directory for documentation:
 DOCS_DIR ?= $(ROOT_DIR)/docs
 
+# Define the directory for generated source code documentation:
+SRC_DOCS_DIR ?= $(BUILD_DIR)/docs
+
 # Define the top-level directory containing executables:
 LOCAL_BIN_DIR ?= $(ROOT_DIR)/bin
 
