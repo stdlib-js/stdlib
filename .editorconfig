@@ -24,5 +24,9 @@ indent_style = tab
 indent_style = space
 indent_size = 2
 
+[datapackage.json]
+indent_style = space
+indent_size = 2
+
 [Makefile]
 indent_style = tab
