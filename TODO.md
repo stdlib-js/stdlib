@@ -246,10 +246,7 @@ TODO
     * could have seed be an environment variable, so could be set in CI environment
     * module to get a seed; one method used could be to check env var
 
-41. for datasets,
-
-    * include datapackage.json
-    * license under CC0
+41. 
 
 42. check if `codecov` will accept multiple coverage reports
 
@@ -480,6 +477,15 @@ TODO
              "a": [~1,~2,~3],
              "b": {"beep":"boop"}
            }
+      */
+
+      // Wild card continuation:
+      /* returns
+            [
+              "beep",
+              "boop",
+              ...
+            ]
       */
 
       // Deep equal (matrices):
@@ -719,11 +725,13 @@ TODO
 
 100. review
 
+     * [x] datasets
      * [x] math/base/blas
      * [x] math/base/special
      * [x] math/base/tools
-     * [ ] math/base/utils
+     * [x] math/base/utils
      * [ ] math/constants
+     * [x] math/generics/statistics
      * [ ] math/generics/utils
      * [x] regexp
      * [x] repl
@@ -734,6 +742,22 @@ TODO
 101. [v8-profiler](https://github.com/node-inspector/v8-profiler) and [node-inspector](https://github.com/node-inspector/node-inspector)
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
+
+103. revisit [fs/read-dir](https://github.com/stdlib-js/stdlib/commit/6677e75465ee493bc4961a98fe21c02acc00f7c4#commitcomment-17726983) CLI output annotation
+
+
+
+---
+
+## Immediate
+
+1. lcg
+2. abstract-ndarray
+3. terminal sparklines
+4. basic stream utilities
+5. kmeans/dbscan
+6. blas routines
+7. all built-in `Math` methods
 
 
 ---
@@ -859,13 +883,31 @@ TODO
 
 43. [datasets](https://github.com/fivethirtyeight/data)
 
-44. utility to convert R `DESCRIPTION` files to JSON
+44. utility to convert R `DESCRIPTION` files to JSON => would streamline getting test fixture R dependencies
 
     * [R docs](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file)
     * [debian control files](https://www.debian.org/doc/debian-policy/ch-controlfields.html)
     * [debian-control-parser](https://github.com/samcday/node-debian-control-parser)
     * [readcontrol](https://github.com/evanlucas/node-readcontrol)
+
+45. accumulators
     
+    * [boost src](https://github.com/boostorg/accumulators/blob/develop/include/boost/accumulators/statistics/mean.hpp)
+    * [boost docs](http://www.boost.org/doc/libs/1_61_0/doc/html/accumulators/user_s_guide.html#accumulators.user_s_guide.the_statistical_accumulators_library)
+    * [handystats](http://handystats.readthedocs.io/en/latest/incremental-statistics.html)
+    * an `incrsummary`, which is effectively a collection of stats accumulators, returning a summary object
+
+
+
+---
+
+## Other
+
+1. units
+
+   * [unit-parser](https://github.com/antimatter15/unit-parser)
+   * [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
+
 
 
 ---
@@ -926,8 +968,8 @@ TODO
 5. for modules like generic stats functions which may accept a variety of inputs requiring tailored implementations, instead of dynamic code generation, another possibility is to dynamically compile static code and write to disk
 
    * would allow static analysis
-   * easier debugging, as can set breakpoints, etc.
-   * would allow for the use of JSDoc annotations, not possible when using dynamic code generation
+   * easier debugging, as can set breakpoints, etc. => some inspectors support using a pragma to allow debugging `eval`'d code, thus debugging is possible as is; nevertheless, visual inspection is easier if non-compiled
+   * would allow for the use of JSDoc annotations, not possible when using dynamic code generation => can, but akin to documenting a "virtual" function
    * would lead, however, to a much larger codebase
    * in `make init`, could configure to "watch" and dynamically recompile generated files
    * to discover and identify compile targets, could add a "stdlib" field to a module's `package.json` with a configuration setting relevant to the type of compilation to perform (could lead to a proliferation of tailored settings, which is not necessarily a good thing)
