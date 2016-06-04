@@ -13,3 +13,4 @@ TODO
   * [list](https://github.com/clibs/list)
   * [levenshtein.c](https://github.com/wooorm/levenshtein.c)
   * [freebsd](https://www.freebsd.org/cgi/man.cgi?query=style&sektion=9)
+  * [example pkg](https://github.com/glisy/math)
