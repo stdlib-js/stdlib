@@ -115,7 +115,7 @@ lint[ 'no-file-name-articles' ] = true;
 lint[ 'no-file-name-consecutive-dashes' ] = true;
 
 // Prevent irregular characters in filenames:
-lint[ 'no-file-name-irregular-characters' ] = true; // NOTE: possibly not, as this excludes underscores
+lint[ 'no-file-name-irregular-characters' ] = '\\.a-zA-Z0-9-_';
 
 // Prevent mixed case filenames:
 lint[ 'no-file-name-mixed-case' ] = true;

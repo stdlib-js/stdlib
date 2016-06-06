@@ -44,7 +44,7 @@
     "proxyquire-universal": "^1.0.8",
     "proxyquireify": "^3.1.1",
     "remark": "^4.2.2",
-    "remark-lint": "^3.2.1",
+    "remark-lint": "^4.0.0",
     "remark-validate-links": "^3.0.0",
     "tap-spec": "4.x.x",
     "tap-summary": "2.x.x",
