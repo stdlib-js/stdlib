@@ -49,7 +49,13 @@
 */
 
 /**
-* A string array.
+* An array containing only string primitives.
 *
 * @typedef {Array<string>} StringArray
+*/
+
+/**
+* An array containing only plain objects.
+*
+* @typedef {Array<Object>} ObjectArray
 */

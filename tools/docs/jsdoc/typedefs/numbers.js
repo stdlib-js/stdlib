@@ -174,3 +174,9 @@
 *
 * @typedef {number} NegativeNumber
 */
+
+/**
+* A finite number primitive; i.e., neither `NaN` or positive or negative infinity.
+*
+* @typedef {number} FiniteNumber
+*/
