@@ -327,6 +327,11 @@ TODO
       - [sparkly](https://github.com/sindresorhus/sparkly)
       - [jstrace/chart](https://github.com/jstrace/chart)
       - [bashplotlib](https://github.com/glamp/bashplotlib)
+      - [node-cli-graph](https://github.com/IonicaBizau/node-cli-graph)
+      - [ASCIIPlots.jl](https://github.com/johnmyleswhite/ASCIIPlots.jl)
+      - [asciiplot](https://github.com/mfouesneau/asciiplot)
+      - [node-clear](https://github.com/bahamas10/node-clear)
+      - [ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
 
     * ASCII [tables](https://github.com/sorensen/ascii-table)
 
@@ -608,6 +613,7 @@ TODO
     * [idb.filesystem.js](https://github.com/ebidel/idb.filesystem.js/)
     * [filer.js](https://github.com/ebidel/filer.js)
     * [browserFS](https://github.com/jvilk/BrowserFS)
+    * [browser-sync-stream](https://github.com/mafintosh/browser-sync-stream)
 
 78. Add Markdown style guide, including notes about comment annotations, equations, etc.
 
@@ -745,6 +751,16 @@ TODO
 
 103. revisit [fs/read-dir](https://github.com/stdlib-js/stdlib/commit/6677e75465ee493bc4961a98fe21c02acc00f7c4#commitcomment-17726983) CLI output annotation
 
+104. benchmarking
+
+     * [chuhai](https://github.com/Hypercubed/chuhai)
+
+105. stability badges
+
+     * may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, locked, or otherwise
+
+106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
+
 
 
 ---
@@ -753,11 +769,13 @@ TODO
 
 1. lcg
 2. abstract-ndarray
-3. terminal sparklines
-4. basic stream utilities
+3. terminal sparklines (toJSON => needs chart spec, cli, colors, support ndarrays => dimension, only 1d?)
+4. basic stream utilities: split, join, map, from-array, [pump](https://github.com/mafintosh/pump) (?), [end-of-stream](https://github.com/mafintosh/end-of-stream)
 5. kmeans/dbscan
 6. blas routines
 7. all built-in `Math` methods
+8. hist/kde
+9. add note to `incr` modules about type-checking
 
 
 ---
