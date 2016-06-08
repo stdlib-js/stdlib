@@ -640,7 +640,7 @@ TODO
 
 82. Add [git hooks](https://cbednarski.com/articles/makefiles-for-everyone/) to Makefile
 
-    - on pull, check deps to see if any missing, removed, or out-of-date
+    - on pull, check deps to see if any missing, removed, or out-of-date; if so, clear and reinstall (?)
     - will prob want a way to undo setting of hooks (i.e., a reset)
 
 83. Python linting
@@ -739,6 +739,8 @@ TODO
      * [ ] math/constants
      * [x] math/generics/statistics
      * [ ] math/generics/utils
+     * [x] namespace
+     * [ ] plot
      * [x] regexp
      * [x] repl
      * [x] streams
@@ -754,6 +756,9 @@ TODO
 104. benchmarking
 
      * [chuhai](https://github.com/Hypercubed/chuhai)
+     * benchmark.js
+     * substack benchmark module
+     * matcha
 
 105. stability badges
 
@@ -768,14 +773,67 @@ TODO
 ## Immediate
 
 1. lcg
+
 2. abstract-ndarray
-3. terminal sparklines (toJSON => needs chart spec, cli, colors, support ndarrays => dimension, only 1d?)
-4. basic stream utilities: split, join, map, from-array, [pump](https://github.com/mafintosh/pump) (?), [end-of-stream](https://github.com/mafintosh/end-of-stream)
+
+3. terminal sparklines
+
+   * toJSON => needs chart spec
+   * colors
+
+     - [ansi-256-colors](https://github.com/jbnicolai/ansi-256-colors)
+     - would require escaping to work in the browser
+     - [ansi_up](https://github.com/drudru/ansi_up)
+     - [ansi-to-html](https://github.com/rburns/ansi-to-html)
+     - but could also detect env and use ansi escape when in terminal mode and use HTML elsewhere (?) => no, too brittle.
+     - maybe this should just be a user concern
+
+   * support ndarrays
+
+     - dimension, only 1d?
+
+4. basic stream utilities
+
+   - split
+   - join
+   - map
+   - from-array
+   - related => [into-stream](https://github.com/sindresorhus/into-stream)
+   - [concat-stream](https://github.com/maxogden/concat-stream) => this is essentially an end sink stream
+   - [pump](https://github.com/mafintosh/pump) (?)
+   - [end-of-stream](https://github.com/mafintosh/end-of-stream)
+
 5. kmeans/dbscan
+
 6. blas routines
+
 7. all built-in `Math` methods
-8. hist/kde
-9. add note to `incr` modules about type-checking
+
+8. kde
+
+   - [scipy](https://github.com/scipy/scipy/blob/v0.17.1/scipy/stats/kde.py#L41-L537)
+   - [smith](https://github.com/Daniel-B-Smith/KDE-for-SciPy)
+   - [kde in python](https://jakevdp.github.io/blog/2013/12/01/kernel-density-estimation/)
+   - [fast computation of kernel estimators](http://www-stat.wharton.upenn.edu/~lzhao/papers/MyPublication/Fast_jcgs.2010.pdf)
+   - [lecture](http://research.cs.tamu.edu/prism/lectures/pr/pr_l7.pdf)
+   - [scikit-learn](http://scikit-learn.org/stable/modules/density.html)
+   - [wikipedia](https://en.wikipedia.org/wiki/Kernel_density_estimation)
+
+9. hist
+
+   * [Matlab deprecates hist and histc](http://www.mathworks.com/help/matlab/creating_plots/replace-discouraged-instances-of-hist-and-histc.html)
+   * [histogram](http://www.mathworks.com/help/matlab/ref/histogram.html)
+   * [histcounts](http://www.mathworks.com/help/matlab/ref/histcounts.html)
+
+10. csv/tsv/dsv
+
+    * [d3-dsv](https://github.com/d3/d3-dsv)
+    * [node-csv](https://github.com/wdavidw/node-csv)
+    * [csv-parse](https://github.com/wdavidw/node-csv-parse)
+    * [csv-spectrum](https://github.com/maxogden/csv-spectrum)
+    * [csv-parser](https://github.com/mafintosh/csv-parser)
+    * [paratext](https://github.com/wiseio/paratext/blob/master/src/csv/rowbased_worker.hpp)
+    * read-csv (file) vs from-csv (stream) vs parse-csv (string or buffer) => some overlap between these
 
 
 ---
@@ -797,6 +855,9 @@ TODO
 6. incrspace
 
 7. linspace, logspace, incrspace as generators (?)
+
+   - should support option to return data of a specified type; e.g., `float32`, etc.
+   - returned value should be compliant with `abstract-ndarray`
 
 8. is-browser
 
@@ -913,7 +974,8 @@ TODO
     * [boost src](https://github.com/boostorg/accumulators/blob/develop/include/boost/accumulators/statistics/mean.hpp)
     * [boost docs](http://www.boost.org/doc/libs/1_61_0/doc/html/accumulators/user_s_guide.html#accumulators.user_s_guide.the_statistical_accumulators_library)
     * [handystats](http://handystats.readthedocs.io/en/latest/incremental-statistics.html)
-    * an `incrsummary`, which is effectively a collection of stats accumulators, returning a summary object
+
+46. [discretize](http://www.mathworks.com/help/matlab/ref/discretize.html)
 
 
 
@@ -925,6 +987,8 @@ TODO
 
    * [unit-parser](https://github.com/antimatter15/unit-parser)
    * [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
+
+2. Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
 
 
 
@@ -1097,6 +1161,8 @@ Will need a `tools` directory in individual repositories to
 
 |-stdlib
 |---lib
+|-----datasets
+|-------anscombes-quartet
 |-----math
 |-------base
 |---------blas
@@ -1127,8 +1193,6 @@ Will need a `tools` directory in individual repositories to
 |---------e
 |---------pi
 |---------two-pi
-|-------datasets
-|---------anscombes-quartet
 |-------fastmath
 |---------special
 |-----------cos
@@ -1152,10 +1216,19 @@ Will need a `tools` directory in individual repositories to
 |-----------mean
 |-----------stdev
 |-----------variance
+|-----namespace
+|-----regexp
+|-------eol
+|-------regexp
+|-----repl
 |-----streams
 |-------math
 |---------mean
 |---------stdev
+|-------utils
+|---------split
+|---------join
+|-----tools
 |-----types
 |-------array
 |-------complex
