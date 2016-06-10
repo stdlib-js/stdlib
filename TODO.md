@@ -82,6 +82,8 @@ TODO
 
    * [`doctrine`](https://github.com/eslint/doctrine)
 
+   * [`doclets`](https://github.com/lipp/doclets)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -118,6 +120,22 @@ TODO
     * [seed-random](https://github.com/ForbesLindesay/seed-random)
     * [random-js](https://github.com/ckknight/random-js)
     * [seedrandom](https://github.com/davidbau/seedrandom)
+    * [modulo bias](http://stackoverflow.com/questions/10984974/why-do-people-say-there-is-modulo-bias-when-using-a-random-number-generator)
+    * [diehard tests](https://github.com/reubenhwk/diehard)
+    * [dieharder](https://github.com/seehuhn/dieharder)
+    * [RNGTest.jl](https://github.com/andreasnoack/RNGTest.jl)
+    * [ziggurat](http://www.doornik.com/research/ziggurat.pdf)
+    * [Matlab's randn](https://arxiv.org/abs/math/0603058v1)
+    * [Gaussian random number generators](http://www.doc.ic.ac.uk/~wl/papers/07/csur07dt.pdf)
+    * [V8's previously poor implementation](http://v8project.blogspot.de/2015/12/theres-mathrandom-and-then-theres.html)
+    * [xorshift+](http://vigna.di.unimi.it/ftp/papers/xorshiftplus.pdf)
+    * [chrome thread](https://bugs.chromium.org/p/chromium/issues/detail?id=246054)
+    * [thenextweb](http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref)
+    * [hackaday](http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/)
+    * [betable post](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.l23p1a9om)
+    * [estimating pi](https://gist.github.com/mmalone/796d959dcf5b780106f4)
+    * [xorshift scratch](https://gist.github.com/mmalone/173e20becc755ebb2658)
+    * [randint](https://gist.github.com/mmalone/d710793137ed0d6b8cb4)
 
 16. `Makefile` target to run test fixtures
 
@@ -141,7 +159,9 @@ TODO
 
 19. tests for top-level `tools`; e.g., JSDoc templates, etc
 
-20. 
+20. deploy `plato` complexity report to gh-pages
+
+    * similar to JSDoc source docs
 
 21. clean-up cpp test runners
 
@@ -793,6 +813,10 @@ TODO
 
      * e.g., => Promise support? No.
 
+108. rename `docs` directory to `doc`?
+
+109. more [datasets](https://github.com/vega/vega-datasets) => some are not that interesting; others possibly
+
 
 
 ---
@@ -829,6 +853,8 @@ TODO
    - [concat-stream](https://github.com/maxogden/concat-stream) => this is essentially an end sink stream
    - [pump](https://github.com/mafintosh/pump) (?)
    - [end-of-stream](https://github.com/mafintosh/end-of-stream)
+   - something akin to [stream-combiner2](https://github.com/substack/stream-combiner2/blob/master/index.js)
+   - [duplexer2](https://github.com/deoxxa/duplexer2)
 
 5. kmeans/dbscan
 
@@ -1011,6 +1037,8 @@ TODO
 48. incrskewness
 
 49. incrkurtosis
+
+50. [buffer-indexof](https://github.com/soldair/node-buffer-indexof) and [buffer-split](https://github.com/soldair/node-buffer-split/blob/master/index.js) => see issues
 
 
 
