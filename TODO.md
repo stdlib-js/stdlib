@@ -18,7 +18,7 @@ TODO
    * e.g., `@stdlib/math/constants/float64-two-pi`
    * replace internal module references
 
-4. create an `install.md` for developers
+4. create an `docs/install.md` for developers
 
    * julia
    * R
@@ -99,9 +99,25 @@ TODO
 
 14. consider changing `isNumber` to `isNumeric`
 
-15. export regexps?
+15. prngs
 
-    * can they be exported as constants or are they mutable?
+    * [pcg](http://www.pcg-random.org/)
+    * [sfmt](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT)
+    * [randamu](https://github.com/PhDP/randamu)
+    * [gsl](https://github.com/ampl/gsl/tree/master/rng)
+    * [collection of lcgs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.3686&rep=rep1&type=pdf)
+    * [Lehmer LCG](https://en.wikipedia.org/wiki/Lehmer_random_number_generator)
+    * [lcgs](https://en.wikipedia.org/wiki/Linear_congruential_generator)
+    * [better rngs for JavaScript](https://github.com/nquinlan/better-random-numbers-for-javascript-mirror)
+    * [d3-random](https://github.com/d3/d3-random)
+    * [gauss-random](https://github.com/scijs/gauss-random)
+    * [lcg-random](https://github.com/remko/lcg-random)
+    * [randy](https://github.com/deestan/randy)
+    * [randgen](https://github.com/robbrit/randgen)
+    * [random.js](https://github.com/ericzhang-cn/random.js)
+    * [seed-random](https://github.com/ForbesLindesay/seed-random)
+    * [random-js](https://github.com/ckknight/random-js)
+    * [seedrandom](https://github.com/davidbau/seedrandom)
 
 16. `Makefile` target to run test fixtures
 
@@ -246,7 +262,9 @@ TODO
     * could have seed be an environment variable, so could be set in CI environment
     * module to get a seed; one method used could be to check env var
 
-41. 
+41. investigate [nbind](https://github.com/charto/nbind)
+
+    * could be useful for, say, Boost bindings
 
 42. check if `codecov` will accept multiple coverage reports
 
@@ -287,18 +305,18 @@ TODO
 
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
-    * allow a "preview" alongside current prod
+    * would allow a "preview" alongside current prod
 
 50. investigate whether [bit operators](http://www.netlib.org/fdlibm/e_pow.c) would be better for `is-even` and `is-odd`
 
-51. browserify transform to load all "man" pages (e.g., readmes)
+51. browserify transform to load all "man" pages (e.g., readmes or actual `man` pages)
 
     * allow help docs to be loaded into a browser for interactive environments
     * store in local storage (?) or in-memory
 
 52. load modules into a REPL
 
-    * man pages can be READMES
+    * man pages can be READMES (or not; may require separate `usage.txt` tailored to REPL env)
 
       - can these be dynamically compiled/transformed at runtime, or will startup time be too slow
 
@@ -338,6 +356,8 @@ TODO
     * should be able to load a REPL context in a browser
 
       - meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
+
+    * [black-screen](https://github.com/shockone/black-screen) terminal emulator
 
 53. README to man doc (see above)
 
@@ -390,7 +410,7 @@ TODO
     * for directory, may want to dedupe (flat array), a tree result which states which modules require which modules (similar to a node dependency graph), or, for every found module, the deps for that module (array of arrays)
     * see automation/package.json item below
 
-66. investigate [npm-publish-please](https://github.com/inikulin/publish-please) and np (Sindre)
+66. investigate [npm-publish-please](https://github.com/inikulin/publish-please) and `np` (Sindre)
 
     * not sure a separate tool is necessary, but may find inspiration
 
@@ -733,6 +753,7 @@ TODO
 
      * [x] datasets
      * [x] math/base/blas
+     * [x] math/base/random
      * [x] math/base/special
      * [x] math/base/tools
      * [x] math/base/utils
@@ -751,7 +772,9 @@ TODO
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
-103. revisit [fs/read-dir](https://github.com/stdlib-js/stdlib/commit/6677e75465ee493bc4961a98fe21c02acc00f7c4#commitcomment-17726983) CLI output annotation
+103. sine browser [example](http://www.thesoftwaresimpleton.com/blog/2016/05/25/sine-wave/)
+
+     * could do something similar for other trigonometric functions
 
 104. benchmarking
 
@@ -766,13 +789,17 @@ TODO
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
+107. Add a `FAQ.md` and link to it in the issues template
+
+     * e.g., => Promise support? No.
+
 
 
 ---
 
 ## Immediate
 
-1. lcg
+1. randn
 
 2. abstract-ndarray
 
@@ -796,7 +823,7 @@ TODO
 
    - split
    - join
-   - map
+   - map!!!!!!
    - from-array
    - related => [into-stream](https://github.com/sindresorhus/into-stream)
    - [concat-stream](https://github.com/maxogden/concat-stream) => this is essentially an end sink stream
@@ -834,6 +861,8 @@ TODO
     * [csv-parser](https://github.com/mafintosh/csv-parser)
     * [paratext](https://github.com/wiseio/paratext/blob/master/src/csv/rowbased_worker.hpp)
     * read-csv (file) vs from-csv (stream) vs parse-csv (string or buffer) => some overlap between these
+
+11. simple server
 
 
 ---
@@ -976,6 +1005,12 @@ TODO
     * [handystats](http://handystats.readthedocs.io/en/latest/incremental-statistics.html)
 
 46. [discretize](http://www.mathworks.com/help/matlab/ref/discretize.html)
+
+47. [gmm](https://github.com/rreusser/gaussian-mixture-estimator)
+
+48. incrskewness
+
+49. incrkurtosis
 
 
 
