@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "",
+  "description": "makie plugin to generate a complexity report.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "makie",
+    "make",
+    "makefile",
+    "plugin",
+    "complexity",
+    "static analysis",
+    "report"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
