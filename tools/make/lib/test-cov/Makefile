@@ -24,7 +24,7 @@ view-cov: view-javascript-cov
 .PHONY: view-cov
 
 
-# Remove a coverage artifacts.
+# Remove coverage artifacts.
 #
 # This target deletes coverage artifacts, such as coverage reports and associated HTML pages.
 

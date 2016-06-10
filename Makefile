@@ -43,6 +43,7 @@ CONFIG_DIR ?= $(ROOT_DIR)/etc
 # Define the directory for writing reports, including code coverage:
 REPORTS_DIR ?= $(ROOT_DIR)/reports
 COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
+COMPLEXITY_DIR ?= $(REPORTS_DIR)/complexity
 
 # Define the directory for documentation:
 DOCS_DIR ?= $(ROOT_DIR)/docs

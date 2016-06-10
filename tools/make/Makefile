@@ -39,6 +39,7 @@ include $(TOOLS_MAKE_LIB_DIR)/test-ci/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/coverage-service/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/benchmark/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/examples/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/complexity/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/docs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/debug/Makefile
 
