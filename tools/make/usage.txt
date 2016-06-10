@@ -1,33 +1,35 @@
 
 Usage: make <cmd>
 
-  make help                Print this message.
-  make repl                Start a REPL environment.
-  make notes               Search for code annotations.
-  make list-sources        List all source files (excluding examples and tests).
-  make list-examples       List all example files.
-  make list-tests          List all test files.
-  make list-tests-fixtures List all test fixture files.
-  make list-benchmarks     List all benchmark files.
-  make list-files          List files.
-  make list-modules        List all modules.
-  make examples            Run examples.
-  make test                Run tests.
-  make test-summary        Run tests and output a test summary.
-  make test-cov            Run tests with code coverage.
-  make test-browsers       Run tests in a local web browser.
-  make view-cov            View the most recent code coverage report.
-  make view-browser-tests  View browser tests in a local web browser.
-  make benchmark           Run benchmarks.
-  make src-docs            Generate source documentation.
-  make view-src-docs       View source documentation.
-  make lint                Lint files.
-  make lint-markdown       Lint Markdown files.
-  make lint-javascript     Lint JavaScript files.
-  make lint-filenames      Lint filenames.
-  make check-deps          Check if dependencies are up-to-date.
-  make install             Run install sequence.
-  make clean               Run all cleanup tasks.
-  make clean-node          Remove Node dependencies.
-  make inspect.VARIABLE    Print the runtime value of a VARIABLE.
+  make help                   Print this message.
+  make repl                   Start a REPL environment.
+  make notes                  Search for code annotations.
+  make list-sources           List all source files (excluding examples and tests).
+  make list-examples          List all example files.
+  make list-tests             List all test files.
+  make list-tests-fixtures    List all test fixture files.
+  make list-benchmarks        List all benchmark files.
+  make list-files             List files.
+  make list-modules           List all modules.
+  make examples               Run examples.
+  make test                   Run tests.
+  make test-summary           Run tests and output a test summary.
+  make test-cov               Run tests with code coverage.
+  make test-browsers          Run tests in a local web browser.
+  make view-cov               View the most recent code coverage report.
+  make view-browser-tests     View browser tests in a local web browser.
+  make benchmark              Run benchmarks.
+  make src-docs               Generate source documentation.
+  make view-src-docs          View source documentation.
+  make lint                   Lint files.
+  make lint-markdown          Lint Markdown files.
+  make lint-javascript        Lint JavaScript files.
+  make lint-filenames         Lint filenames.
+  make complexity             Generate complexity reports.
+  make complexity-javascript  Generate a JavaScript complexity report.
+  make check-deps             Check if dependencies are up-to-date.
+  make install                Run install sequence.
+  make clean                  Run all cleanup tasks.
+  make clean-node             Remove Node dependencies.
+  make inspect.VARIABLE       Print the runtime value of a VARIABLE.
 

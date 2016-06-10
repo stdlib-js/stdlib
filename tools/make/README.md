@@ -386,6 +386,40 @@ $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... lint-javascript
 
 ===
 
+#### Complexity
+
+To analyze code complexity,
+
+``` bash
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... complexity
+```
+
+To analyze only source files,
+
+``` bash
+$ make SOURCES_FILTER=... complexity-src
+```
+
+To analyze only test files,
+
+``` bash
+$ make TESTS_FILTER=... complexity-tests
+``` 
+
+To analyze only example files,
+
+``` bash
+$ make EXAMPLES_FILTER=... complexity-examples
+```
+
+To analyze only JavaScript files,
+
+``` bash
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... complexity-javascript
+```
+
+===
+
 #### Dependencies
 
 To check whether dependencies are up-to-date,
