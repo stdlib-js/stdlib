@@ -1,0 +1,8 @@
+{
+	"objectMode": false,
+	"highWaterMark": 16,
+	"encoding": null,
+	"allowHalfOpen": false,
+	"readableObjectMode": false,
+	"sep": "\n"
+}
