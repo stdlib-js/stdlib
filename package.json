@@ -47,7 +47,7 @@
     "proxyquireify": "^3.1.1",
     "remark-cli": "^1.0.0",
     "remark-lint": "^4.0.0",
-    "remark-validate-links": "^3.0.0",
+    "remark-validate-links": "^4.0.0",
     "tap-spec": "4.x.x",
     "tap-summary": "2.x.x",
     "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
