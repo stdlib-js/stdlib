@@ -31,7 +31,7 @@
     "object-keys": "^1.0.9",
     "readable-stream": "^2.1.4",
     "system.global": "^1.0.0",
-    "update-notifier": "^0.7.0"
+    "update-notifier": "^1.0.0"
   },
   "devDependencies": {
     "browserify": "13.x.x",
