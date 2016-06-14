@@ -84,6 +84,8 @@ TODO
 
    * [`doclets`](https://github.com/lipp/doclets)
 
+   * [`mkdocs`](http://www.mkdocs.org/)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -136,6 +138,7 @@ TODO
     * [estimating pi](https://gist.github.com/mmalone/796d959dcf5b780106f4)
     * [xorshift scratch](https://gist.github.com/mmalone/173e20becc755ebb2658)
     * [randint](https://gist.github.com/mmalone/d710793137ed0d6b8cb4)
+    * [rc4 encryption](http://www.math.washington.edu/~nichifor/310_2008_Spring/Pres_RC4%20Encryption.pdf)
 
 16. `Makefile` target to run test fixtures
 
@@ -186,6 +189,8 @@ TODO
     * use [ndu](https://github.com/groupon/ndu) to visualize dependency size
 
     * use [disc](https://github.com/hughsk/disc) to visualize browserify output
+
+    * could do something akin to [issue stats](https://github.com/hstove/issue_stats) but locally and/or only including project modules/repos
 
     * later project stats can be displayed in a separate webpage
 
@@ -460,6 +465,7 @@ TODO
     * [http-server](https://github.com/indexzero/http-server)
     * [ecstatic](https://github.com/jfhbrook/node-ecstatic)
     * [glance](https://github.com/jarofghosts/glance)
+    * [wzrd](https://github.com/maxogden/wzrd)
 
 70. cross-platform open browser
 
@@ -817,6 +823,30 @@ TODO
 
 109. more [datasets](https://github.com/vega/vega-datasets) => some are not that interesting; others possibly
 
+110. write own `deep-equal` algo
+
+     * when complete, replace any use of `chai` for testing
+
+111. evaluate [bithound](https://www.bithound.io/pricing)
+
+112. utils/copy
+
+     - should `preventExtensions`, `seal`, and `freeze` be extended to `objects` beyond `Object`, `Array`, and class instances?
+     - `WeakMap` support (?) => not convinced this is viable due to weakly held references; i.e., getting a list of `keys` requires maintaining a separate list.
+     - `WeakSet` support (?) => see `WeakMap` above
+     - `Symbol` support => requires the ability to get [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+     - [structured-clone-algorithm](http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#safe-passing-of-structured-data)
+     - `ArrayBuffer` support
+     - `Blob` support
+     - `FileList` support
+     - `ImageData` support
+     - `ImageBitmap` support
+     - `File` support
+
+113. research [pull-streams](https://github.com/pull-stream/pull-stream-docs/blob/master/package.json)
+
+114. see [makefile for the frontend](https://github.com/scriptype/Makefile-for-the-Front-End/blob/master/Makefile) for possible inspiration for frontend tasks
+
 
 
 ---
@@ -845,9 +875,11 @@ TODO
 
 4. basic stream utilities
 
+   - make `utils/debug` a standard stream (cli `name` option; does this module need split and join?)
    - split
-   - join
+   - join => example
    - map!!!!!!
+   - rand
    - from-array
    - related => [into-stream](https://github.com/sindresorhus/into-stream)
    - [concat-stream](https://github.com/maxogden/concat-stream) => this is essentially an end sink stream
@@ -855,6 +887,15 @@ TODO
    - [end-of-stream](https://github.com/mafintosh/end-of-stream)
    - something akin to [stream-combiner2](https://github.com/substack/stream-combiner2/blob/master/index.js)
    - [duplexer2](https://github.com/deoxxa/duplexer2)
+   - [mississippi](https://github.com/maxogden/mississippi)
+   - `to-console` or maybe `to-log` (provide own logger, with default being console using util-inspect) => write stream which writes each chunk to console (either normal or object mode); if object mode, use util-inspect and allow setting of depth
+   - `debug` as a transform stream => could provide name and then toggle debugging based on name!
+   - [tap-stream](https://github.com/thlorenz/tap-stream) and [inspect-stream](https://github.com/thlorenz/inspect-stream/blob/master/inspect-stream.js); see also [sculpt#tap](https://github.com/Medium/sculpt#tap)
+   - [guide](https://gist.github.com/joyrexus/10026630) to node streams
+   - [vstream](https://github.com/joyent/node-vstream) => instrumented streams
+   - [through2-concurrent](https://github.com/almost/through2-concurrent)
+   - log
+   - [ndjson](https://github.com/maxogden/ndjson)
 
 5. kmeans/dbscan
 
@@ -889,6 +930,15 @@ TODO
     * read-csv (file) vs from-csv (stream) vs parse-csv (string or buffer) => some overlap between these
 
 11. simple server
+
+12. review
+
+    * [ ] `sinh`
+    * [ ] `cosh`
+    * [ ] `tanh`
+    * [ ] `cos`
+    * [ ] `incrkurtosis`
+    * [ ] `incrskewness`
 
 
 ---
@@ -1039,6 +1089,16 @@ TODO
 49. incrkurtosis
 
 50. [buffer-indexof](https://github.com/soldair/node-buffer-indexof) and [buffer-split](https://github.com/soldair/node-buffer-split/blob/master/index.js) => see issues
+
+51. base math `swap` (assume array-like) and generics `swap` (check for array-like)
+
+52. [online stats](https://github.com/joshday/OnlineStats.jl)
+
+53. `escape-regexp`
+
+54. hex to ascii
+
+55. arc4 cipher as a stream
 
 
 
