@@ -33,8 +33,9 @@ cleanup() {
 check_node_deps() {
 	echo 'Checking changed files...' >&2
 	local changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
-	echo "${changed_files}" | grep '^package\.json$'
-	if [[ "$?" -ne 0 ]]; then
+	local package_json="$(echo "${changed_files}" | grep '^package\.json$')"
+	if [[ -z "${package_json}" ]]; then
+		echo 'Root package.json changed.' >&2
 		return 1
 	fi
 	return 0

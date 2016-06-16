@@ -47,7 +47,7 @@ cleanup() {
 has_commits() {
 	echo 'Checking for commits to push...' >&2
 	local commits="$(git log origin/${GIT_CURRENT_BRANCH}..${GIT_CURRENT_BRANCH} --oneline)"
-	if [[ -z "$commits" ]]; then
+	if [[ -z "${commits}" ]]; then
 	    return 1
 	fi
 	return 0
