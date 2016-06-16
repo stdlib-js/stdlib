@@ -14,7 +14,7 @@ GIT_HOOKS_DIR ?= $(ROOT_DIR)/.git/hooks
 TOOLS_GIT_HOOKS_DIR ?= $(TOOLS_DIR)/git/hooks
 
 # Define the path of the `git pre-push` hook:
-GIT_HOOK_PRE_PUSH ?= $(TOOLS_GIT_HOOKS_DIR)/pre-push
+GIT_HOOK_PRE_PUSH ?= pre-push
 
 
 # TARGETS #
@@ -24,8 +24,8 @@ GIT_HOOK_PRE_PUSH ?= $(TOOLS_GIT_HOOKS_DIR)/pre-push
 # This target performs initialization tasks, such as installing git hooks, etc.
 
 init:
-	@$(CP) $(GIT_HOOK_PRE_PUSH) $(GIT_HOOKS_DIR)
-	@$(MAKE_EXECUTABLE) $(GIT_HOOK_PRE_PUSH)
+	@$(CP) $(TOOLS_GIT_HOOKS_DIR)/$(GIT_HOOK_PRE_PUSH) $(GIT_HOOKS_DIR)
+	@$(MAKE_EXECUTABLE) $(GIT_HOOKS_DIR)/$(GIT_HOOK_PRE_PUSH)
 
 .PHONY: init
 
