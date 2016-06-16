@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+#
+# A git hook called by `git merge`, which afters when a `git pull` is performed on a local repository.
+#
+# This hook is called with the following parameters:
+#
+# * `$1` - status flag specifying whether or not the merge being done is a squash merge
+#
+# This hook cannot does __not__ affect the outcome of `git merge` and is not executed if merge fails due to conflicts.
+
+
+# VARIABLES #
+
+is_squash="$1"
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo '' >&2
+}
+
+# Checks if Node.js module dependencies have changed.
+check_node_deps() {
+	echo 'Checking changed files...' >&2
+	local changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+	echo "${changed_files}" | grep '^package\.json$'
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	return 0
+}
+
+# Cleans Node.js module dependencies.
+clean_node_deps() {
+	echo 'Removing Node.js module dependencies...' >&2
+	make clean-node
+}
+
+# Installs Node.js module dependencies.
+install_node_deps() {
+	echo 'Installing Node.js module dependencies...'
+	make install
+}
+
+# Main execution sequence.
+main() {
+	check_node_deps
+	if [[ "$?" -ne 0 ]]; then
+		clean_node_deps
+		install_node_deps
+	fi
+	cleanup
+	exit 0
+}
+
+# Run main:
+main
