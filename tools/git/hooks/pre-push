@@ -25,7 +25,7 @@ url="$2"
 export GIT_HOOK_TEST='make test'
 
 # Determine the current branch:
-export GIT_CURRENT_BRANCH=`$(git name-rev --name-only HEAD)`
+export GIT_CURRENT_BRANCH=`git name-rev --name-only HEAD`
 
 
 # FUNCTIONS #
@@ -46,7 +46,7 @@ cleanup() {
 # Checks if commits exist to push, as `git push` will execute regardless of whether commits exist to push or not.
 has_commits() {
 	echo 'Checking for commits to push...'
-	local commits=`git log origin/$GIT_CURRENT_BRANCH..$GIT_CURRENT_BRANCH`
+	local commits=`git log origin/$GIT_CURRENT_BRANCH..$GIT_CURRENT_BRANCH --oneline`
 	if [[ -z "$commits" ]]; then
 	    return 1
 	fi
