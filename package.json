@@ -42,6 +42,7 @@
     "jsdoc": "^3.4.0",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
+    "mkdirp": "^0.5.1",
     "plato": "^1.5.0",
     "proxyquire": "^1.7.4",
     "proxyquire-universal": "^1.0.8",
@@ -55,7 +56,8 @@
     "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
     "testling": "1.x.x",
     "tex-equation-to-svg": "^1.0.1",
-    "to-vfile": "^1.0.0"
+    "to-vfile": "^1.0.0",
+    "unist-util-visit": "^1.1.0"
   },
   "testling": {
     "files": [
