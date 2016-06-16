@@ -51,7 +51,7 @@ function transformer( ast, file ) {
 	function generateSVGs( node ) {
 		var label;
 		var raw;
-		if ( DIV_EQN.test( node.value) === true ) {
+		if ( DIV_EQN.test( node.value ) === true ) {
 			label = LABEL.exec( node.value )[ 1 ];
 			raw = RAW.exec( node.value )[ 1 ];
 			createSVG( raw, label );
