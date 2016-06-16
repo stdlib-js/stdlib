@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "",
+  "description": "remark plugin to insert HTML equation elements",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "markdown",
+    "md",
+    "mdown",
+    "html",
+    "latex",
+    "equations",
+    "compile",
+    "transform",
+    "remark",
+    "mdast",
+    "plugin"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {
+    "mdast-zone": "^2.0.2",
+    "unist-util-visit": "^1.1.0"
+  },
+  "license": "MIT"
+}
