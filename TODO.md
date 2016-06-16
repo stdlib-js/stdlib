@@ -688,6 +688,8 @@ TODO
 
     - on pull, check deps to see if any missing, removed, or out-of-date; if so, clear and reinstall (?)
     - will prob want a way to undo setting of hooks (i.e., a reset)
+    - [intro to git hooks](https://www.sitepoint.com/introduction-git-hooks/)
+    - [git pre-push](http://blog.ittybittyapps.com/blog/2013/09/03/git-pre-push/)
 
 83. Python linting
 
@@ -750,7 +752,7 @@ TODO
     * add rules about not using `Number`, `String`, and `Boolean` constructors
     * add rule about using source URL directives in eval'd code
     * add rule about including decimals when working with numbers; e.g., `3.0`
-    * [principal of least abstraction](https://github.com/habitat-sh/habitat)
+    * [principal of least abstraction](https://github.com/habitat-sh/habitat) => part of "The Stdlib Way" (inspired by The Unix Way)
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -881,6 +883,7 @@ TODO
    - split
    - join => example
    - map!!!!!!
+   - cat
    - rand
    - from-array
    - related => [into-stream](https://github.com/sindresorhus/into-stream)
