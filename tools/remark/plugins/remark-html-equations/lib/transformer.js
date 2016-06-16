@@ -18,12 +18,12 @@ var RAW = /raw="([^"]*)"/;
 // FUNCTIONS //
 
 /**
-*	Insert a HTML equation DIV element into the Markdown file.
+* Insert a HTML equation DIV element into the Markdown file.
 *
 * @private
 * @param {Node} node - reference node
 * @param {number} index - position of `node` in `parent`
-* @param {Node}  - parent - parent of `node`
+* @param {Node} - parent - parent of `node`
 */
 function equationInserter( node, index, parent ) {
 	var newNode;
@@ -32,7 +32,7 @@ function equationInserter( node, index, parent ) {
 	var opts;
 	var alt;
 	var raw;
-	if ( EQN_REGEX_START.test( node.value ) ) {
+	if ( EQN_REGEX_START.test( node.value ) === true ) {
 
 		alt = ALT.exec( node.value )[ 1 ];
 		label = LABEL.exec( node.value )[ 1 ];
