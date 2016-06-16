@@ -20,6 +20,7 @@ var RAW = /raw="([^"]*)"/;
 /**
 *	Insert a HTML equation DIV element into the Markdown file.
 *
+* @private
 * @param {Node} node - reference node
 * @param {number} index - position of `node` in `parent`
 * @param {Node}  - parent - parent of `node`
