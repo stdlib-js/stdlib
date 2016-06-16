@@ -58,9 +58,11 @@ run_tests() {
 	echo 'Running tests...' >&2
 	"$(${GIT_HOOK_TEST})"
 	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
         echo "${GIT_HOOK_TEST} failed." >&2
         return 1
     fi
+    echo '' >&2
     echo 'Tests passed.' >&2
     return 0
 }
