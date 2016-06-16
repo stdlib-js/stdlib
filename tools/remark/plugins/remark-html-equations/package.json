@@ -24,8 +24,6 @@
   "bugs": {},
   "dependencies": {},
   "devDependencies": {
-    "mdast-zone": "^2.0.2",
-    "unist-util-visit": "^1.1.0"
   },
   "license": "MIT"
 }
