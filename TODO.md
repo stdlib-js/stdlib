@@ -750,6 +750,7 @@ TODO
     * add rules about not using `Number`, `String`, and `Boolean` constructors
     * add rule about using source URL directives in eval'd code
     * add rule about including decimals when working with numbers; e.g., `3.0`
+    * [principal of least abstraction](https://github.com/habitat-sh/habitat)
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -847,6 +848,7 @@ TODO
 
 114. see [makefile for the frontend](https://github.com/scriptype/Makefile-for-the-Front-End/blob/master/Makefile) for possible inspiration for frontend tasks
 
+115. should `float64-signbit` return a `boolean` (like Julia) or a `1` or `0`?
 
 
 ---
@@ -930,15 +932,6 @@ TODO
     * read-csv (file) vs from-csv (stream) vs parse-csv (string or buffer) => some overlap between these
 
 11. simple server
-
-12. review
-
-    * [ ] `sinh`
-    * [ ] `cosh`
-    * [ ] `tanh`
-    * [ ] `cos`
-    * [ ] `incrkurtosis`
-    * [ ] `incrskewness`
 
 
 ---
@@ -1084,9 +1077,9 @@ TODO
 
 47. [gmm](https://github.com/rreusser/gaussian-mixture-estimator)
 
-48. incrskewness
+48. incrmkurtosis (windowed)
 
-49. incrkurtosis
+49. incrmskewness (windowed)
 
 50. [buffer-indexof](https://github.com/soldair/node-buffer-indexof) and [buffer-split](https://github.com/soldair/node-buffer-split/blob/master/index.js) => see issues
 
@@ -1099,6 +1092,15 @@ TODO
 54. hex to ascii
 
 55. arc4 cipher as a stream
+
+56. `float64-to-hex`
+
+    * [double-hex](https://github.com/mikolalysenko/double-hex)
+    * [raw fields of float](http://www.exploringbinary.com/displaying-the-raw-fields-of-a-floating-point-number/)
+    * [binary scientific notation](http://www.exploringbinary.com/displaying-ieee-doubles-in-binary-scientific-notation/)
+    * [converting floats](http://www.exploringbinary.com/converting-floating-point-numbers-to-binary-strings-in-c/)
+    * [Python float.hex](https://docs.python.org/3/library/stdtypes.html#float.hex)
+    * [hex floating-point constants](http://www.exploringbinary.com/hexadecimal-floating-point-constants/)
 
 
 
