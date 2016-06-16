@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "",
+  "description": "remark plugin to create SVGs for HTML equation tags",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "markdown",
+    "md",
+    "mdown",
+    "html",
+    "latex",
+    "equations",
+    "svg",
+    "generate",
+    "remark",
+    "mdast",
+    "plugin"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "license": "MIT"
+}
