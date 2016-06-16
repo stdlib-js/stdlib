@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "",
+  "description": "remark plugin to insert rawgit URLs for SVG equations.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "tools",
+    "markdown",
+    "md",
+    "mdown",
+    "html",
+    "latex",
+    "equations",
+    "svg",
+    "rawgit",
+    "remote",
+    "remark",
+    "mdast",
+    "plugin"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "license": "MIT"
+}
