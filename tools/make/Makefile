@@ -26,6 +26,7 @@ endif
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/help/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/init/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/repl/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/find/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/Makefile
@@ -45,6 +46,15 @@ include $(TOOLS_MAKE_LIB_DIR)/debug/Makefile
 
 
 # TARGETS #
+
+# Default target.
+#
+# This target is the default target.
+
+all: help
+
+.PHONY: all
+
 
 # Perform clean-up.
 #
