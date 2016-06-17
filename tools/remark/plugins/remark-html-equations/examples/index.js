@@ -1,28 +1,24 @@
 'use strict';
 
-// MODULES //
-
-var remark = require( 'remark' );
-var path = require( 'path' );
 var fs = require( 'fs' );
+var path = require( 'path' );
+var remark = require( 'remark' );
 var insertEquations = require( './../lib' );
 
+var fpath;
+var opts;
+var file;
+var out;
 
-// VARIABLES //
+// Load a Markdown file...
+fpath = path.join( __dirname, 'fixtures/simple.md' );
+opts = {
+	'encoding': 'utf8'
+};
+file = fs.readFileSync( fpath, opts );
 
-var filePath;
-var markdown;
-var result;
+// Insert HTML equation elements:
+out = remark().use( insertEquations ).process( file );
 
-
-// MAIN //
-
-filePath = path.join( __dirname, 'fixtures/simple.md' );
-
-markdown = fs.readFileSync( filePath ).toString();
-
-result = remark().use([
-	insertEquations
-]).process( markdown );
-
-console.log( result );
+// Print the results:
+console.log( out.contents );

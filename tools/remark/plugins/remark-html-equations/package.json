@@ -1,7 +1,7 @@
 {
   "name": "",
   "version": "",
-  "description": "remark plugin to insert HTML equation elements",
+  "description": "remark plugin to insert HTML equation elements.",
   "author": {},
   "contributors": [],
   "scripts": {},
@@ -15,6 +15,9 @@
     "html",
     "latex",
     "equations",
+    "eqn",
+    "eqns",
+    "math",
     "compile",
     "transform",
     "remark",
@@ -23,7 +26,6 @@
   ],
   "bugs": {},
   "dependencies": {},
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "license": "MIT"
 }
