@@ -1,4 +1,6 @@
+
 <!-- <badges> -->
+
 ## Status
 
 #### Version
@@ -8,6 +10,7 @@
 #### Build
 
 <!-- TODO: distinguish between Linux and Windows code coverage -->
+
 | OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
 | --- | --- | --- | --- | --- |
 | Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
@@ -22,12 +25,106 @@
 
 <!-- </badges> -->
 
+
 stdlib
 ===
 
-> Standard library.
+> Standard library for JavaScript.
 
-A standard library for JavaScript in JavaScript.
+Stdlib is a collection of robust, high performance libraries for numeric computing, streams, and more. This is the GitHub repository of `stdlib` source code and documentation. For `stdlib` development notes, see below.
+
+
+## Development
+
+### Prerequisites
+
+Developing and running `stdlib` __requires__ the following prerequisites:
+
+* [git][git]: version control
+* [GNU make][gnu-make]: development utility and task runner
+* [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
+
+While not required to run `stdlib`, the following dependencies may be required for testing, benchmarking, and general development:
+
+* [julia][julia]: language for technical computing (version `>= 0.4`)
+* [R][r]: language for statistical computing (version `>= 3.0.0`)
+* [Python][python]: general purpose language (version `>= 2.7`)
+* [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.7`; clang version `>= 3.1`)
+
+<!--
+The following external libraries are automatically downloaded and the compiled from source the first you run `make`:
+
+* [Boost][boost]: portable C++ libraries
+
+!-->
+
+
+### Download
+
+To acquire the source code, clone the git repository.
+
+``` bash
+$ git clone https://github.com/stdlib-js/stdlib
+```
+
+If you are behind a firewall, you may need to use the `https` protocol, rather than the `git` protocol.
+
+``` bash
+$ git config --global url."https://".insteadOf git://
+```
+
+### Installation
+
+To install development dependencies,
+
+``` bash
+$ make install
+```
+
+To initialize the development environment,
+
+``` bash
+$ make init
+```
+
+### Update
+
+If you have previously downloaded `stdlib` using `git clone`, you can update an existing source tree using `git pull`.
+
+``` bash
+$ cd ./path/to/stdlib
+$ git pull
+```
+
+If you have initialized the development environment using `make init`, updating the source tree will trigger hooks to ensure all development dependencies are up-to-date.
+
+
+### Organization
+
+The `stdlib` source code is organized as follows:
+
+``` text
+bin        executable binaries
+docs       top-level documentation
+etc        configuration files
+examples   top-level library examples
+lib        library source code
+test       top-level tests
+tools      development utilities
+```
+
+
+### Troubleshooting
+
+* Occasionally, new versions of external dependencies may cause conflicts with existing builds. Most of the time, running
+
+  ``` bash
+  $ make clean
+  $ make install
+  ```
+
+  will be enough to resolve these conflicts.
+
 
 
 ---
@@ -44,7 +141,7 @@ See [LICENSE][license].
 
 ## Copyright
 
-Copyright &copy; 2016. The stdlib [Authors][authors].
+Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 
 <!-- <links> -->
@@ -83,6 +180,16 @@ Copyright &copy; 2016. The stdlib [Authors][authors].
 
 [dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
+
+[git]: http://git-scm.com/
+[gnu-make]: https://www.gnu.org/software/make
+[node-js]: https://nodejs.org/en/
+[julia]: http://julialang.org/
+[r]: https://www.r-project.org/
+[python]: https://www.python.org/
+[gcc]: http://gcc.gnu.org/
+[clang]: http://clang.llvm.org/
+[boost]: http://www.boost.org/
 
 [contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
 [authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
