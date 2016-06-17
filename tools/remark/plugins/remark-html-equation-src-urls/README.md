@@ -30,7 +30,7 @@ By default, the plugin attempts to resolve SVG equations relative to each proces
 
 ``` javascript
 var opts = {
-    'dir': '/path/absolute/dir/with/svg/equations'
+    'dir': '/path/to/absolute/dir/with/svg/equations'
 };
 
 remark.use( insertURLs, opts );
