@@ -12,14 +12,16 @@ var insertURLs = require( './../lib' );
 
 var result;
 var file;
-
+var opts;
 
 // MAIN //
 
 file = toVFile.readSync( path.join( __dirname, 'fixtures/simple.md' ) );
 
-result = remark().use([
-	insertURLs
-]).process( file );
+opts = {
+	'dir': '/docs/img/'
+};
+
+result = remark().use( insertURLs, opts ).process( file );
 
 console.log( result );

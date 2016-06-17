@@ -12,14 +12,16 @@ var createSVGs = require( './../lib' );
 
 var result;
 var file;
-
+var opts;
 
 // MAIN //
 
 file = toVFile.readSync( path.join( __dirname, 'fixtures/simple.md' ) );
 
-result = remark().use([
-	createSVGs
-]).process( file );
+opts = {
+	'dir': '/doc/img/'
+};
+
+result = remark().use( createSVGs, opts ).process( file );
 
 console.log( result );

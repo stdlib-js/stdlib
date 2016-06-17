@@ -19,51 +19,63 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 // TRANSFORMER //
 
 /**
-* Transforms a Markdown file.
+* Factory method that returns transformer functions.
 *
 * @private
-* @param {Node} ast - root node
-* @param {File} file - Virtual file.
+* @param {Object} options - transformer options
+* @param {string} options.dir- resource directory
+* @returns {Function} transformer function
 */
-function transformer( ast, file ) {
-	visit( ast, 'html', insertURLs );
-
+function getTransformer( opts ) {
 	/**
-	* Insert rawgit URLs for SVG equations in the Markdown file.
+	* Transforms a Markdown file.
 	*
 	* @private
-	* @param {Node} node - reference node
+	* @param {Node} ast - root node
+	* @param {File} file - Virtual file.
 	*/
-	function insertURLs( node ) {
-		var topdir;
-		var fpath;
-		var rpath;
-		var label;
-		var url;
-		if ( DIV_EQN.test( node.value ) === true ) {
-			label = LABEL.exec( node.value )[ 1 ];
+	return function transformer( ast, file ) {
+		visit( ast, 'html', insertURLs );
 
-			// [0] Get local git repository path and remove any newline characters:
-			topdir = exec( 'git rev-parse --show-toplevel' ).toString();
-			topdir = topdir.match( /(.+)/ )[ 1 ];
+		/**
+		* Insert rawgit URLs for SVG equations in the Markdown file.
+		*
+		* @private
+		* @param {Node} node - reference node
+		*/
+		function insertURLs( node ) {
+			var topdir;
+			var fpath;
+			var rpath;
+			var label;
+			var url;
+			if ( DIV_EQN.test( node.value ) === true ) {
+				label = LABEL.exec( node.value )[ 1 ];
 
-			// [1] Get absolute file path of current SVG:
-			fpath = path.join( file.directory, '/docs/img/' + label + '.svg' );
+				// [0] Get local git repository path and remove any newline characters:
+				topdir = exec( 'git rev-parse --show-toplevel' ).toString();
+				topdir = topdir.match( /(.+)/ )[ 1 ];
 
-			// [2] Get file path relative to git repository:
-			rpath = fpath.replace( topdir + path.sep, '' );
+				// [1] Get absolute file path of current SVG:
+				fpath = path.join( file.directory, opts.dir + label + '.svg' );
 
-			// [3] Retrieve rawgit URL:
-			url = rawgit({
-				'slug': getSlug(),
-				'file': rpath
-			});
+				// [2] Get file path relative to git repository:
+				rpath = fpath.replace( topdir + path.sep, '' );
 
-			node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
-		}
-	} // end FUNCTION insertURLs()
-} // end FUNCTION transformer()
+				// [3] Retrieve rawgit URL:
+				url = rawgit({
+					'slug': getSlug(),
+					'file': rpath
+				});
+
+				// [4] Replace src attribute in <img> tag:
+				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
+			}
+		}// end FUNCTION insertURLs()
+	}; // end FUNCTION transformer()
+} // end FUNCTION getTransformer()
+
 
 // EXPORTS //
 
-module.exports = transformer;
+module.exports = getTransformer;

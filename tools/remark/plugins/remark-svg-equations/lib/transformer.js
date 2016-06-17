@@ -19,75 +19,84 @@ var RAW = /data-raw-text="([^"]*)"/;
 // TRANSFORMER //
 
 /**
-* Transforms a Markdown file.
+* Factory method that returns transformer functions.
 *
 * @private
-* @param {Node} ast - root node
-* @param {File} file - Virtual file.
+* @param {Object} options - transformer options
+* @param {string} options.dir- resource directory
+* @returns {Function} transformer function
 */
-function transformer( ast, file ) {
-	// Create ./docs/img folder to house SVGs
-	mkdirp( path.join( file.directory, '/docs/img' ), onDone );
-
+function transformerFactory( opts ) {
 	/**
-	* Callback invoked upon creating the /docs/img directory.
+	* Transforms a Markdown file.
 	*
 	* @private
-	* @param {Error|null} err - error object
+	* @param {Node} ast - root node
+	* @param {File} file - Virtual file.
 	*/
-	function onDone( err ) {
-		if ( err ) {
-			throw err;
-		}
-		visit( ast, 'html', generateSVGs );
-	} // end FUNCTION onDone()
+	return function transformer( ast, file ) {
+		// Create ./docs/img folder to house SVGs
+		mkdirp( path.join( file.directory, opts.dir ), onDone );
 
-	/**
-	* Generate SVGs for DIV equations in the Markdown file.
-	*
-	* @private
-	* @param {Node} node - reference node
-	*/
-	function generateSVGs( node ) {
-		var label;
-		var raw;
-		if ( DIV_EQN.test( node.value ) === true ) {
-			label = LABEL.exec( node.value )[ 1 ];
-			raw = RAW.exec( node.value )[ 1 ];
-			createSVG( raw, label );
-		}
-	} // end FUNCTION generateSVGs()
-
-	/**
-	* Create SVG for the respective equation.
-	*
-	* @private
-	* @param {string} tex - equation LaTeX formula
-	* @param {string} label - equation label (used to generate filename)
-	* @param {Function} clbk - callback function
-	*/
-	function createSVG( tex, label, clbk ) {
-		tex2svg( tex, saveSVG );
 		/**
-		* Save created SVG to disk.
+		* Callback invoked upon creating the /docs/img directory.
 		*
 		* @private
 		* @param {Error|null} err - error object
-		* @param {string} svg - SVG code
 		*/
-		function saveSVG( err, svg ) {
-			var outfile;
+		function onDone( err ) {
 			if ( err ) {
 				throw err;
 			}
-			outfile = path.join( file.directory, '/docs/img/' + label + '.svg' );
-			fs.writeFile( outfile, svg, clbk );
-		} // end FUNCTION saveSVG()
-	} // end FUNCTION createSVG()
+			visit( ast, 'html', generateSVGs );
+		} // end FUNCTION onDone()
 
-} // end FUNCTION transformer()
+		/**
+		* Generate SVGs for DIV equations in the Markdown file.
+		*
+		* @private
+		* @param {Node} node - reference node
+		*/
+		function generateSVGs( node ) {
+			var label;
+			var raw;
+			if ( DIV_EQN.test( node.value ) === true ) {
+				label = LABEL.exec( node.value )[ 1 ];
+				raw = RAW.exec( node.value )[ 1 ];
+				createSVG( raw, label );
+			}
+		} // end FUNCTION generateSVGs()
 
+		/**
+		* Create SVG for the respective equation.
+		*
+		* @private
+		* @param {string} tex - equation LaTeX formula
+		* @param {string} label - equation label (used to generate filename)
+		* @param {Function} clbk - callback function
+		*/
+		function createSVG( tex, label, clbk ) {
+			tex2svg( tex, saveSVG );
+			/**
+			* Save created SVG to disk.
+			*
+			* @private
+			* @param {Error|null} err - error object
+			* @param {string} svg - SVG code
+			*/
+			function saveSVG( err, svg ) {
+				var outfile;
+				if ( err ) {
+					throw err;
+				}
+				outfile = path.join( file.directory, opts.dir + label + '.svg' );
+				fs.writeFile( outfile, svg, clbk );
+			} // end FUNCTION saveSVG()
+		} // end FUNCTION createSVG()
+
+	}; // end FUNCTION transformer()
+} // end FUNCTION transformerFactory()
 
 // EXPORTS //
 
-module.exports = transformer;
+module.exports = transformerFactory;
