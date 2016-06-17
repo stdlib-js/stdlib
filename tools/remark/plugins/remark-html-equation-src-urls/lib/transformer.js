@@ -45,6 +45,7 @@ function getTransformer( opts ) {
 		*/
 		function insertURLs( node ) {
 			var topdir;
+			var fname;
 			var fpath;
 			var rpath;
 			var label;
@@ -57,7 +58,8 @@ function getTransformer( opts ) {
 				topdir = topdir.match( /(.+)/ )[ 1 ];
 
 				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
-				fpath = path.resolve( file.directory, opts.dir + label + '.svg' );
+				fpath = path.join( opts.dir, label+'.svg' );
+				fpath = path.resolve( file.directory, fpath );
 
 				// Get file path relative to git repository:
 				rpath = fpath.replace( topdir + path.sep, '' );
