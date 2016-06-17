@@ -852,6 +852,12 @@ TODO
 
 115. should `float64-signbit` return a `boolean` (like Julia) or a `1` or `0`?
 
+116. `make` recipe for checking dep licenses
+
+     - [read-package-tree](https://github.com/npm/read-package-tree)
+     - [licensee.js](https://github.com/jslicense/licensee.js)
+     - make part of `pre-push` git hook
+
 
 ---
 
