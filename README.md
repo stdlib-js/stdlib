@@ -126,6 +126,11 @@ tools      development utilities
   will be enough to resolve these conflicts.
 
 
+### Editors
+
+* This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome]. 
+
+
 
 ---
 
@@ -190,6 +195,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
 [boost]: http://www.boost.org/
+
+[editorconfig]: http://editorconfig.org/
+[editorconfig-chrome]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
 
 [contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
 [authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
