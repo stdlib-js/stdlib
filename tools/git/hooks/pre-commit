@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+#
+# A git hook called by `git commit`. If this scripts exits with a non-zero status, the commit will be aborted.
+#
+# This hook is called with no arguments.
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo '' >&2
+}
+
+# Checks for non-ASCII filenames (to ensure cross platform portability).
+check_filenames() {
+	local commit="$(git rev-parse --verify HEAD)"
+	local against
+	if [[ -z "${commit}" ]]; then
+		# This is the initial commit, so we diff against an empty tree object:
+		against='4b825dc642cb6eb9a060e54bf8d69288fbee4904'
+	else
+		against='HEAD'
+	fi
+	# We exploit the fact that the printable range starts with the space character and ends with the tilde. Note that the use of brackets around a `tr` range is okay here, (it's even required, for portability to Solaris 10's /usr/bin/tr), since the square bracket bytes happen to fall in the designated range.
+	local num_files="$(git diff --cached --name-only --diff-filter=A -z ${against} |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c)"
+
+	if [[ "${num_files}" -ne 0 ]]; then
+		echo 'Error: Attempting to add a non-ASCII filename. Non-ASCII filenames limit cross-platform portability. Please rename offending files before committing.' >&2
+		return 1
+	fi
+	return 0
+}
+
+# Lints staged files.
+run_lint() {
+	local changed_files="$(git diff --name-only --cached)"
+
+	# TODO: if JavaScript files, lint those particular files
+
+	# TODO: if Markdown files, lint those particular files
+
+	# TODO: if package.json, validate via schema
+
+	# TODO: if datapackage.json, validate via schema
+
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	check_filenames
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	run_lint
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	cleanup
+	exit 0
+}
+
+# Run main:
+main
