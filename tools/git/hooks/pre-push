@@ -21,9 +21,6 @@
 remote="$1"
 url="$2"
 
-# Define the command to run tests:
-export GIT_HOOK_TEST='make test'
-
 # Determine the current branch:
 export GIT_CURRENT_BRANCH="$(git name-rev --name-only HEAD)"
 
@@ -48,23 +45,23 @@ has_commits() {
 	echo 'Checking for commits to push...' >&2
 	local commits="$(git log origin/${GIT_CURRENT_BRANCH}..${GIT_CURRENT_BRANCH} --oneline)"
 	if [[ -z "${commits}" ]]; then
+		echo 'No commits to push.'
 	    return 1
 	fi
+	echo 'Found commits to push.'
 	return 0
 }
 
 # Runs tests.
 run_tests() {
 	echo 'Running tests...' >&2
-	"$(${GIT_HOOK_TEST})"
+	make test > /dev/null 2>&1
 	if [[ "$?" -ne 0 ]]; then
-		echo '' >&2
-        echo "${GIT_HOOK_TEST} failed." >&2
+		echo 'Tests failed. Run `make test` to see the failing tests.' >&2
         return 1
     fi
-    echo '' >&2
     echo 'Tests passed.' >&2
-    return 0
+    return 1
 }
 
 # Main execution sequence.
@@ -83,3 +80,5 @@ main() {
 
 # Run main:
 main
+
+exit 1
