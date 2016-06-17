@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* remark plugin to insert rawgit URLs for SVG equations into Markdown HTML equation elements.
+* remark plugin to insert SVG equation rawgit URLs into Markdown HTML equation elements.
 *
 * @module remark-html-equation-src-urls
 *

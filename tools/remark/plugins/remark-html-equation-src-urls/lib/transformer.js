@@ -38,14 +38,13 @@ function getTransformer( opts ) {
 		visit( ast, 'html', insertURLs );
 
 		/**
-		* Insert rawgit URLs for SVG equations in Markdown HTML equation elements.
+		* Insert SVG equation rawgit URLs in Markdown HTML equation elements.
 		*
 		* @private
 		* @param {Node} node - reference node
 		*/
 		function insertURLs( node ) {
 			var topdir;
-			var fname;
 			var fpath;
 			var rpath;
 			var label;

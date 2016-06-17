@@ -1,7 +1,7 @@
 HTML Equation Source URLs
 ===
 
-> [remark][remark] plugin to insert rawgit URLs for SVG equations into Markdown HTML equation elements.
+> [remark][remark] plugin to insert SVG equation [rawgit][rawgit] URLs into Markdown HTML equation elements.
 
 
 <!-- <usage> -->
@@ -14,7 +14,7 @@ var insertURLs = require( 'remark-html-equation-src-urls' );
 
 #### insertURLs( options )
 
-Attaches a plugin to a [remark][remark] processor in order to insert [rawgit][rawgit] URLs for SVG equations into Markdown HTML equation elements.
+Attaches a plugin to a [remark][remark] processor in order to insert SVG equation [rawgit][rawgit] URLs into Markdown HTML equation elements.
 
 ``` javascript
 var remark = require( 'remark' );
