@@ -47,7 +47,7 @@ remark.use( insertURLs, opts );
 
   ``` html
   <div class="equation" align="center" data-raw-text="|x| = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ -x &amp; \textrm{if}\ x < 0\end{cases}" data-equation="eq:absolute_value">
-      <img src="<empty>" alt="Absolute value">
+      <img src="" alt="Absolute value">
       <br>
   </div>
   ```
