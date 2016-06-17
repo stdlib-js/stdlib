@@ -31,20 +31,20 @@ stdlib
 
 > Standard library for JavaScript.
 
-Stdlib is a collection of robust, high performance libraries for numeric computing, streams, and more. This is the GitHub repository of `stdlib` source code and documentation. For `stdlib` development notes, see below.
+Stdlib is a collection of robust, high performance libraries for numeric computing, streams, and more. This is the GitHub repository of stdlib source code and documentation. For stdlib development notes, see below.
 
 
 ## Development
 
 ### Prerequisites
 
-Developing and running `stdlib` __requires__ the following prerequisites:
+Developing and running stdlib __requires__ the following prerequisites:
 
 * [git][git]: version control
 * [GNU make][gnu-make]: development utility and task runner
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 
-While not required to run `stdlib`, the following dependencies may be required for testing, benchmarking, and general development:
+While not required to run stdlib, the following dependencies may be required for testing, benchmarking, and general development:
 
 * [julia][julia]: language for technical computing (version `>= 0.4`)
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
@@ -89,7 +89,7 @@ $ make init
 
 ### Update
 
-If you have previously downloaded `stdlib` using `git clone`, you can update an existing source tree using `git pull`.
+If you have previously downloaded stdlib using `git clone`, you can update an existing source tree using `git pull`.
 
 ``` bash
 $ cd ./path/to/stdlib
@@ -101,7 +101,7 @@ If you have initialized the development environment using `make init`, updating 
 
 ### Organization
 
-The `stdlib` source code is organized as follows:
+The stdlib source code is organized as follows:
 
 ``` text
 bin        executable binaries
