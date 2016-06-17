@@ -56,7 +56,7 @@ function getTransformer( opts ) {
 				topdir = exec( 'git rev-parse --show-toplevel' ).toString();
 				topdir = topdir.match( /(.+)/ )[ 1 ];
 
-				// Get absolute file path of current SVG:
+				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
 				fpath = path.resolve( file.directory, opts.dir + label + '.svg' );
 
 				// Get file path relative to git repository:
