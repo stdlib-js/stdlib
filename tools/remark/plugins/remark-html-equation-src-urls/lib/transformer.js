@@ -6,7 +6,7 @@ var rawgit = require( 'rawgit-url' );
 var visit = require( 'unist-util-visit' );
 var exec = require( 'child_process' ).execSync;
 var path = require( 'path' );
-var getSlug = require( './get_slug' );
+var getSlug = require( './get_slug.js' );
 
 
 // CONSTANTS //
@@ -19,11 +19,11 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 // TRANSFORMER //
 
 /**
-* Factory method that returns transformer functions.
+* Returns a transformer function.
 *
 * @private
-* @param {Object} options - transformer options
-* @param {string} options.dir- resource directory
+* @param {Options} opts - transformer options
+* @param {string} opts.dir- resource directory
 * @returns {Function} transformer function
 */
 function getTransformer( opts ) {
@@ -38,7 +38,7 @@ function getTransformer( opts ) {
 		visit( ast, 'html', insertURLs );
 
 		/**
-		* Insert rawgit URLs for SVG equations in the Markdown file.
+		* Insert rawgit URLs for SVG equations in Markdown HTML equation elements.
 		*
 		* @private
 		* @param {Node} node - reference node
@@ -52,23 +52,23 @@ function getTransformer( opts ) {
 			if ( DIV_EQN.test( node.value ) === true ) {
 				label = LABEL.exec( node.value )[ 1 ];
 
-				// [0] Get local git repository path and remove any newline characters:
+				// Get local git repository path and remove any newline characters:
 				topdir = exec( 'git rev-parse --show-toplevel' ).toString();
 				topdir = topdir.match( /(.+)/ )[ 1 ];
 
-				// [1] Get absolute file path of current SVG:
+				// Get absolute file path of current SVG:
 				fpath = path.join( file.directory, opts.dir + label + '.svg' );
 
-				// [2] Get file path relative to git repository:
+				// Get file path relative to git repository:
 				rpath = fpath.replace( topdir + path.sep, '' );
 
-				// [3] Retrieve rawgit URL:
+				// Retrieve rawgit URL:
 				url = rawgit({
-					'slug': getSlug(),
+					'slug': getSlug( topdir ),
 					'file': rpath
 				});
 
-				// [4] Replace src attribute in <img> tag:
+				// Replace `src` attribute in `<img>` tag:
 				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
 			}
 		}// end FUNCTION insertURLs()

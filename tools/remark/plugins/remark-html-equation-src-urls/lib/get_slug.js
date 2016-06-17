@@ -5,6 +5,12 @@
 var exec = require( 'child_process' ).execSync;
 
 
+// VARIABLES //
+
+// Regular expression to extract a repository slug:
+var RE = /(?:.+github\.com\/)(.+)\.(?:.+)/;
+
+
 // GET SLUG //
 
 /**
@@ -19,19 +25,15 @@ function getSlug( dir ) {
 	var opts;
 	var cmd;
 	var out;
-	var re;
 
 	opts = { 'cwd': dir };
-
-	// Regular expression to extract a repository slug:
-	re = /(?:.+github\.com\/)(.+)\.(?:.+)/;
 
 	// Get the remote origin:
 	cmd = 'git config --get remote.origin.url';
 	out = exec( cmd, opts );
 
 	// Extract the repository slug:
-	slug = out.toString().match( re )[ 1 ];
+	slug = out.toString().match( RE )[ 1 ];
 
 	// Get the current Git hash:
 	cmd = 'git rev-parse HEAD';

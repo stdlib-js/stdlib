@@ -1,7 +1,7 @@
 {
   "name": "",
   "version": "",
-  "description": "remark plugin to insert rawgit URLs for SVG equations.",
+  "description": "remark plugin to insert rawgit URLs for SVG equations into Markdown HTML equation elements.",
   "author": {},
   "contributors": [],
   "scripts": {},
@@ -15,6 +15,8 @@
     "html",
     "latex",
     "equations",
+    "eqn",
+    "eqns",
     "svg",
     "rawgit",
     "remote",
