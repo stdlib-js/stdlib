@@ -57,7 +57,7 @@ function getTransformer( opts ) {
 				topdir = topdir.match( /(.+)/ )[ 1 ];
 
 				// Get absolute file path of current SVG:
-				fpath = path.join( file.directory, opts.dir + label + '.svg' );
+				fpath = path.resolve( file.directory, opts.dir + label + '.svg' );
 
 				// Get file path relative to git repository:
 				rpath = fpath.replace( topdir + path.sep, '' );
