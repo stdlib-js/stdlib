@@ -123,7 +123,7 @@ tools      development utilities
   $ make install
   ```
 
-  will be enough to resolve these conflicts.
+  will be enough to resolve these conflicts. Otherwise, remove the git repository, clone, and reinstall.
 
 
 ### Editors
