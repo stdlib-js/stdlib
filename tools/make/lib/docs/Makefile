@@ -4,6 +4,7 @@
 include $(TOOLS_MAKE_LIB_DIR)/docs/src.mk
 include $(TOOLS_MAKE_LIB_DIR)/docs/eqns.mk
 
+
 # TARGETS #
 
 # Generate documentation.
@@ -22,12 +23,3 @@ docs: src-docs
 clean-docs: clean-src-docs
 
 .PHONY: clean-docs
-
-
-# Generate equations.
-#
-# This target inserts DIVs and generates SVG files for all equations in Markdown file.
-
-equations: generate-equations
-
-.PHONY: equations
