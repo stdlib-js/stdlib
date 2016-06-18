@@ -2,6 +2,7 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'remark-html-equations:transformer' );
 var visit = require( 'unist-util-visit' );
 var insertEquations = require( './insert_equations.js' );
 
@@ -15,6 +16,7 @@ var insertEquations = require( './insert_equations.js' );
 * @param {Node} ast - root node
 */
 function transformer( ast ) {
+	debug( 'Processing virtual file...' );
 	visit( ast, 'html', insertEquations );
 } // end FUNCTION transformer()
 
