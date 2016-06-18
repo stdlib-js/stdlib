@@ -22,6 +22,9 @@ GIT_COMMIT_EQUATIONS ?= $(GIT_COMMIT) -m $(GIT_COMMIT_MESSAGE_EQUATIONS)
 # Define the command to commit staged files after inserting resource URLs:
 GIT_COMMIT_SRC_URLS ?= $(GIT_COMMIT) -m $(GIT_COMMIT_MESSAGE_SRC_URLS)
 
+# Define the path relative to a processed Markdown file for storing equation resources:
+EQUATION_RESOURCES_PATH ?= './docs/img/'
+
 # Define the path to the [remark][1] executable.
 #
 # To install remark:
@@ -37,10 +40,20 @@ REMARK_IGNORE ?= $(CONFIG_DIR)/.remarkignore
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
 
-# Define paths to local plugins:
+# Define the path to a plugin which processes Markdown equation comments:
 REMARK_HTML_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-html-equations
+REMARK_HTML_EQUATIONS_PLUGIN_SETTINGS ?=
+REMARK_HTML_EQUATIONS_PLUGIN_FLAGS ?= '--use '"'""$(REMARK_HTML_EQUATIONS_PLUGIN)$(REMARK_HTML_EQUATIONS_PLUGIN_SETTINGS)""'"
+
+# Define the path to a plugin which creates SVG equations from Markdown equation comments:
 REMARK_SVG_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-svg-equations
+REMARK_SVG_EQUATIONS_PLUGIN_SETTINGS ?= '="dir":''"'"$(EQUATION_RESOURCES_PATH)"'"'
+REMARK_SVG_EQUATIONS_PLUGIN_FLAGS ?= '--use '"'""$(REMARK_SVG_EQUATIONS_PLUGIN)$(REMARK_SVG_EQUATIONS_PLUGIN_SETTINGS)""'"
+
+# Define the path to a plugin which inserts resource URLs into Markdown HTML equation elements:
 REMARK_EQUATION_SRC_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-html-equation-src-urls
+REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS ?= '="dir":''"'"$(EQUATION_RESOURCES_PATH)"'"'
+REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS ?= '--use '"'""$(REMARK_EQUATION_SRC_URLS_PLUGIN)$(REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS)""'"
 
 # Define Markdown extensions:
 REMARK_EXT ?= md
@@ -63,7 +76,7 @@ REMARK_OUTPUT_FLAG ?= --output
 markdown-html-equations: $(NODE_MODULES)
 	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		--use $(REMARK_HTML_EQUATIONS_PLUGIN) \
+		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)
 
 .PHONY: markdown-html-equations
@@ -76,7 +89,7 @@ markdown-html-equations: $(NODE_MODULES)
 markdown-svg-equations: $(NODE_MODULES)
 	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		--use $(REMARK_SVG_EQUATIONS_PLUGIN)
+		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS)
 
 .PHONY: markdown-svg-equations
 
@@ -88,7 +101,7 @@ markdown-svg-equations: $(NODE_MODULES)
 markdown-equation-src-urls: $(NODE_MODULES)
 	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		--use $(REMARK_EQUATION_SRC_URLS_PLUGIN) \
+		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)
 
 .PHONY: markdown-equation-src-urls
@@ -107,14 +120,14 @@ markdown-equation-src-urls: $(NODE_MODULES)
 markdown-equations: $(NODE_MODULES)
 	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		--use $(REMARK_HTML_EQUATIONS_PLUGIN) \
-		--use $(REMARK_SVG_EQUATIONS_PLUGIN) \
+		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
+		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_EQUATIONS) && \
 	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		--use $(REMARK_EQUATION_SRC_URLS_PLUGIN) \
+		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_SRC_URLS)
