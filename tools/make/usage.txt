@@ -32,4 +32,4 @@ Usage: make <cmd>
   make clean                  Run all cleanup tasks.
   make clean-node             Remove Node dependencies.
   make inspect.VARIABLE       Print the runtime value of a VARIABLE.
-
+  make equations              Generate SVGs for equations in Markdown files.
