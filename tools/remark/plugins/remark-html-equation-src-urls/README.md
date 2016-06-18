@@ -43,6 +43,8 @@ remark.use( insertURLs, opts );
 
 ## Notes
 
+* The current working directory of the calling process __must__ be part of a git repository.
+
 * When resolving an SVG equation filepath, the implementation __assumes__ that the HTML equation `label` attribute corresponds to the SVG equation filename.
 
   ``` html
