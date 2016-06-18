@@ -2,7 +2,6 @@
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/docs/src.mk
-include $(TOOLS_MAKE_LIB_DIR)/docs/eqns.mk
 
 
 # TARGETS #

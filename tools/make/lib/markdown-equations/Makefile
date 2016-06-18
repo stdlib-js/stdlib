@@ -69,6 +69,34 @@ REMARK_OUTPUT_FLAG ?= --output
 
 # TARGETS #
 
+# Process Markdown files containing equations.
+#
+# This target processes Markdown files containing Markdown equation elements as follows:
+#
+# 1. Files containing equation elements are transformed to include HTML equation elements.
+# 2. SVG files are generated for each equation.
+# 3. Processed files are committed to source control.
+# 4. Resource URLs are inserted in HTML equation elements.
+# 5. Processed files are committed to source control.
+
+markdown-equations: $(NODE_MODULES)
+	$(REMARK) $(MARKDOWN_FILES) \
+		$(REMARK_FLAGS) \
+		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
+		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
+		$(REMARK_OUTPUT_FLAG) && \
+	$(GIT_ADD) && \
+	$(GIT_COMMIT_EQUATIONS) && \
+	$(REMARK) $(MARKDOWN_FILES) \
+		$(REMARK_FLAGS) \
+		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
+		$(REMARK_OUTPUT_FLAG) && \
+	$(GIT_ADD) && \
+	$(GIT_COMMIT_SRC_URLS)
+
+.PHONY: markdown-equations
+
+
 # Generate HTML equation elements.
 #
 # This target transforms Markdown files containing equation comment markup to include HTML equation elements.
@@ -105,32 +133,4 @@ markdown-equation-src-urls: $(NODE_MODULES)
 		$(REMARK_OUTPUT_FLAG)
 
 .PHONY: markdown-equation-src-urls
-
-
-# Process Markdown files containing equations.
-#
-# This target processes Markdown files containing Markdown equation elements as follows:
-#
-# 1. Files containing equation elements are transformed to include HTML equation elements.
-# 2. SVG files are generated for each equation.
-# 3. Processed files are committed to source control.
-# 4. Resource URLs are inserted in HTML equation elements.
-# 5. Processed files are committed to source control.
-
-markdown-equations: $(NODE_MODULES)
-	$(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
-		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
-		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG) && \
-	$(GIT_ADD) && \
-	$(GIT_COMMIT_EQUATIONS) && \
-	$(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
-		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG) && \
-	$(GIT_ADD) && \
-	$(GIT_COMMIT_SRC_URLS)
-
-.PHONY: markdown-equations
 
