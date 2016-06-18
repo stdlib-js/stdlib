@@ -31,3 +31,11 @@ clean-docs: clean-src-docs
 equations: generate-equations
 
 .PHONY: equations
+
+# Insert rawgit source URLs.
+#
+# This target inserts rawgit source URLs for all equations in Markdown files.
+
+equations-urls: insert-equation-src-urls
+
+.PHONY: equations
