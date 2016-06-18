@@ -46,10 +46,9 @@ remark.use( insertURLs, opts );
 * When resolving an SVG equation filepath, the implementation __assumes__ that the HTML equation `label` attribute corresponds to the SVG equation filename.
 
   ``` html
-  <div class="equation" align="center" data-raw-text="|x| = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ -x &amp; \textrm{if}\ x < 0\end{cases}" data-equation="eq:absolute_value">
-      <img src="" alt="Absolute value">
-      <br>
-  </div>
+  <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
+
+  <!-- </equation> -->
   ```
 
   Here, the implementation would assume that the SVG equation filename is `absolute_value.svg`.

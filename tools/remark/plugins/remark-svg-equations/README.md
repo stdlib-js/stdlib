@@ -46,10 +46,9 @@ remark.use( createSVGs, opts );
 * When generating an output filepath, the implementation uses the HTML equation `label` attribute as the SVG filename. For example, given
 
   ``` html
-  <div class="equation" align="center" data-raw-text="|x| = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ -x &amp; \textrm{if}\ x < 0\end{cases}" data-equation="eq:absolute_value">
-      <img src="" alt="Absolute value">
-      <br>
-  </div>
+  <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
+
+  <!-- </equation> -->
   ```
 
   the SVG equation filename would be `absolute_value.svg`.
