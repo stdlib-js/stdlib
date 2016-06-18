@@ -100,22 +100,22 @@ function transformerFactory( opts ) {
 			* @param {string} svg - SVG string
 			*/
 			function onSVG( error, svg ) {
+				var fopts;
 				var fpath;
-				var opts;
 				if ( error ) {
-					debug( 'Error encountered when attempting to create SVG: %s', error.message );
+					debug( 'Error encountered when attempting to create an SVG: %s', error.message );
 					throw error;
 				}
 				fpath = path.join( opts.dir, label+'.svg' );
 				fpath = path.resolve( file.directory, fpath );
 				debug( 'Absolute filepath: %s', fpath );
 
-				opts = {
+				fopts = {
 					'encoding': 'utf8'
 				};
 
-				debug( 'Writing an SVG to file...' );
-				fs.writeFile( fpath, svg, opts, onWrite );
+				debug( 'Writing SVG to file...' );
+				fs.writeFile( fpath, svg, fopts, onWrite );
 			} // end FUNCTION onSVG()
 
 			/**

@@ -23,4 +23,4 @@ opts = {
 out = remark().use( createSVGs, opts ).process( vfile );
 
 // Output the processed Markdown file:
-console.log( out );
+console.log( out.contents );
