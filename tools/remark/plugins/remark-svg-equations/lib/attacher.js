@@ -23,7 +23,7 @@ var defaults = require( './defaults.json' );
 */
 function attacher( remark, options ) {
 	var opts = copy( defaults );
-	if ( arguments.length > 1 ) {
+	if ( options !== undefined ) {
 		if ( !isObject( options ) ) {
 			throw new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options + '`.' );
 		}
