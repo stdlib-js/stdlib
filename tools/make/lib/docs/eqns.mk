@@ -71,3 +71,4 @@ markdown-equations: $(NODE_MODULES)
 		$(REMARK_OUTPUT_FLAG)
 
 .PHONY: markdown-equations
+
