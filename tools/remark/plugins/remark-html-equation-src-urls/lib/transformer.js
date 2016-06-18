@@ -32,7 +32,7 @@ function getTransformer( opts ) {
 	*
 	* @private
 	* @param {Node} ast - root node
-	* @param {File} file - Virtual file.
+	* @param {File} file - Virtual file
 	*/
 	return function transformer( ast, file ) {
 		debug( 'Processing virtual file...' );
