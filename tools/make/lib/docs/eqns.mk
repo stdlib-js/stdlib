@@ -94,7 +94,7 @@ markdown-equation-src-urls: $(NODE_MODULES)
 .PHONY: markdown-equation-src-urls
 
 
-# Processes Markdown files containing equations.
+# Process Markdown files containing equations.
 #
 # This target processes Markdown files containing Markdown equation elements as follows:
 #
