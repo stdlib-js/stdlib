@@ -2,11 +2,11 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'remark-html-equation-src-urls:transformer' );
 var rawgit = require( 'rawgit-url' );
 var visit = require( 'unist-util-visit' );
-var exec = require( 'child_process' ).execSync;
 var path = require( 'path' );
-var getSlug = require( './get_slug.js' );
+var git = require( './git.js' );
 
 
 // CONSTANTS //
@@ -35,6 +35,7 @@ function getTransformer( opts ) {
 	* @param {File} file - Virtual file.
 	*/
 	return function transformer( ast, file ) {
+		debug( 'Processing virtual file...' );
 		visit( ast, 'html', insertURLs );
 
 		/**
@@ -44,30 +45,32 @@ function getTransformer( opts ) {
 		* @param {Node} node - reference node
 		*/
 		function insertURLs( node ) {
-			var topdir;
 			var fpath;
 			var rpath;
 			var label;
 			var url;
 			if ( DIV_EQN.test( node.value ) === true ) {
 				label = LABEL.exec( node.value )[ 1 ];
-
-				// Get local git repository path and remove any newline characters:
-				topdir = exec( 'git rev-parse --show-toplevel' ).toString();
-				topdir = topdir.match( /(.+)/ )[ 1 ];
+				debug( 'Equation label: %s', label );
 
 				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
+				debug( 'File directory: %s', file.directory );
 				fpath = path.join( opts.dir, label+'.svg' );
+				debug( 'SVG filename: %s', fpath );
+
 				fpath = path.resolve( file.directory, fpath );
+				debug( 'Absolute filepath: %s', fpath );
 
 				// Get file path relative to git repository:
-				rpath = fpath.replace( topdir + path.sep, '' );
+				rpath = fpath.replace( git.dir + path.sep, '' );
+				debug( 'Relative filepath: %s', rpath );
 
 				// Retrieve rawgit URL:
 				url = rawgit({
-					'slug': getSlug( topdir ),
+					'slug': git.hslug,
 					'file': rpath
 				});
+				debug( 'Rawgit URL: %s', url );
 
 				// Replace `src` attribute in `<img>` tag:
 				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );

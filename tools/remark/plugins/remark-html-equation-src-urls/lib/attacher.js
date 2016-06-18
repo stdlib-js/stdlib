@@ -2,6 +2,7 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'remark-html-equation-src-urls:attacher' );
 var stdlib = require( './stdlib.js' );
 var copy = require( stdlib+'@stdlib/utils/copy' );
 var isObject = require( stdlib+'@stdlib/utils/is-object' ); // TODO: plain object
@@ -33,6 +34,7 @@ function attacher( remark, options ) {
 			opts.dir = options.dir;
 		}
 	}
+	debug( 'Attaching a plugin configured with the following options: %s', JSON.stringify( opts ) );
 	return transformerFactory( opts );
 } // end FUNCTION attacher()
 
