@@ -1,27 +1,26 @@
 'use strict';
 
-// MODULES //
-
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
 var path = require( 'path' );
 var createSVGs = require( './../lib' );
 
-
-// VARIABLES //
-
-var result;
-var file;
+var fpath;
+var vfile;
 var opts;
+var out;
 
-// MAIN //
+// Load a Markdown file...
+fpath = path.join( __dirname, 'fixtures/simple.md' );
+vfile = toVFile.readSync( fpath );
 
-file = toVFile.readSync( path.join( __dirname, 'fixtures/simple.md' ) );
-
+// Specify the output directory for SVG equation files...
 opts = {
-	'dir': '/doc/img/'
+	'dir': './doc/img/'
 };
 
-result = remark().use( createSVGs, opts ).process( file );
+// Process a Markdown file and generate SVG equation files:
+out = remark().use( createSVGs, opts ).process( vfile );
 
-console.log( result );
+// Output the processed Markdown file:
+console.log( out );

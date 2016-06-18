@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* remark plugin to create SVGs for HTML equation tags.
+* remark plugin to create SVG equation files from Markdown HTML equation tags.
 *
 * @module remark-svg-equations
 *

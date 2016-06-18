@@ -1,7 +1,7 @@
 {
   "name": "",
   "version": "",
-  "description": "remark plugin to create SVGs for HTML equation tags",
+  "description": "remark plugin to create SVG equation files from Markdown HTML equation tags.",
   "author": {},
   "contributors": [],
   "scripts": {},
@@ -15,8 +15,12 @@
     "html",
     "latex",
     "equations",
+    "eqns",
+    "eqn",
+    "math",
     "svg",
     "generate",
+    "create",
     "remark",
     "mdast",
     "plugin"

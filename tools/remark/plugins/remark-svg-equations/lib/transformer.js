@@ -2,6 +2,7 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'remark-svg-equations:transformer' );
 var tex2svg = require( 'tex-equation-to-svg' );
 var mkdirp = require( 'mkdirp' );
 var visit = require( 'unist-util-visit' );
@@ -19,10 +20,10 @@ var RAW = /data-raw-text="([^"]*)"/;
 // TRANSFORMER //
 
 /**
-* Factory method that returns transformer functions.
+* Returns a transformer function.
 *
 * @private
-* @param {Object} options - transformer options
+* @param {Options} options - transformer options
 * @param {string} options.dir- resource directory
 * @returns {Function} transformer function
 */
@@ -32,27 +33,16 @@ function transformerFactory( opts ) {
 	*
 	* @private
 	* @param {Node} ast - root node
-	* @param {File} file - Virtual file.
+	* @param {File} file - Virtual file
 	*/
 	return function transformer( ast, file ) {
-		// Create ./docs/img folder to house SVGs
-		mkdirp( path.join( file.directory, opts.dir ), onDone );
+		var dirflg;
+
+		debug( 'Processing virtual file...' );
+		visit( ast, 'html', generateSVGs );
 
 		/**
-		* Callback invoked upon creating the /docs/img directory.
-		*
-		* @private
-		* @param {Error|null} err - error object
-		*/
-		function onDone( err ) {
-			if ( err ) {
-				throw err;
-			}
-			visit( ast, 'html', generateSVGs );
-		} // end FUNCTION onDone()
-
-		/**
-		* Generate SVGs for DIV equations in the Markdown file.
+		* Generate SVGs from Markdown HTML equation elements.
 		*
 		* @private
 		* @param {Node} node - reference node
@@ -60,42 +50,90 @@ function transformerFactory( opts ) {
 		function generateSVGs( node ) {
 			var label;
 			var raw;
+			var dir;
 			if ( DIV_EQN.test( node.value ) === true ) {
-				label = LABEL.exec( node.value )[ 1 ];
-				raw = RAW.exec( node.value )[ 1 ];
-				createSVG( raw, label );
-			}
-		} // end FUNCTION generateSVGs()
+				debug( 'Found an HTML equation.' );
 
-		/**
-		* Create SVG for the respective equation.
-		*
-		* @private
-		* @param {string} tex - equation LaTeX formula
-		* @param {string} label - equation label (used to generate filename)
-		* @param {Function} clbk - callback function
-		*/
-		function createSVG( tex, label, clbk ) {
-			tex2svg( tex, saveSVG );
+				label = LABEL.exec( node.value )[ 1 ];
+				debug( 'Equation label: %s', label );
+
+				raw = RAW.exec( node.value )[ 1 ];
+				debug( 'Raw equation: %s', raw );
+
+				// Check if we may need to create a destination directory...
+				if ( !dirflg ) {
+					dir = path.resolve( file.directory, opts.dir );
+					debug( 'Output directory: %s', dir );
+
+					debug( 'Creating output directory...' );
+					mkdirp( dir, onDir );
+
+					dirflg = true;
+				} else {
+					debug( 'Creating SVG...' );
+					tex2svg( raw, onSVG );
+				}
+			}
+
 			/**
-			* Save created SVG to disk.
+			* Callback invoked upon attempting to create a destination directory.
 			*
 			* @private
-			* @param {Error|null} err - error object
-			* @param {string} svg - SVG code
+			* @param {(Error|null)} error - error object
 			*/
-			function saveSVG( err, svg ) {
-				var outfile;
-				if ( err ) {
-					throw err;
+			function onDir( error ) {
+				if ( error ) {
+					debug( 'Error encountered when attempting to create an output directory: %s', error.message );
+					throw error;
 				}
-				outfile = path.join( file.directory, opts.dir + label + '.svg' );
-				fs.writeFile( outfile, svg, clbk );
-			} // end FUNCTION saveSVG()
-		} // end FUNCTION createSVG()
+				debug( 'Output directory created.' );
 
+				debug( 'Creating SVG...' );
+				tex2svg( raw, onSVG );
+			} // end FUNCTION onDir()
+
+			/**
+			* Callback invoked upon creating an SVG.
+			*
+			* @private
+			* @param {(Error|null)} error - error object
+			* @param {string} svg - SVG string
+			*/
+			function onSVG( error, svg ) {
+				var fpath;
+				var opts;
+				if ( error ) {
+					debug( 'Error encountered when attempting to create SVG: %s', error.message );
+					throw error;
+				}
+				fpath = path.join( opts.dir, label+'.svg' );
+				fpath = path.resolve( file.directory, fpath );
+				debug( 'Absolute filepath: %s', fpath );
+
+				opts = {
+					'encoding': 'utf8'
+				};
+
+				debug( 'Writing an SVG to file...' );
+				fs.writeFile( fpath, svg, opts, onWrite );
+			} // end FUNCTION onSVG()
+
+			/**
+			* Callback invoked upon writing an SVG to file.
+			*
+			* @param {(Error|null)} error - error object
+			*/
+			function onWrite( error ) {
+				if ( error ) {
+					debug( 'Error encountered when attempting to write an SVG to file: %s', error.message );
+					throw error;
+				}
+				debug( 'SVG successfully written to file.' );
+			} // end FUNCTION onWrite()
+		} // end FUNCTION createSVG()
 	}; // end FUNCTION transformer()
 } // end FUNCTION transformerFactory()
+
 
 // EXPORTS //
 
