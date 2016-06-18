@@ -1,8 +1,11 @@
-Absolute Value
-===
+# Absolute Value
+
+<!-- <intro> -->
 
 The absolute value is defined as
 
 <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
 
 <!-- </equation> -->
+
+<!-- </intro> -->
