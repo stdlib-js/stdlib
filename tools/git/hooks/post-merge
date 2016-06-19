@@ -40,7 +40,7 @@ check_node_deps() {
 	local package_json="$(echo "${changed_files}" | grep '^package\.json$')"
 
 	# If the root `package.json` changed, return a non-zero status...
-	if [[ -z "${package_json}" ]]; then
+	if [[ -n "${package_json}" ]]; then
 		echo 'Root package.json changed.' >&2
 		return 1
 	fi
