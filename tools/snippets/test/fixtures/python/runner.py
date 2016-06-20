@@ -6,14 +6,14 @@ import math as m
 import json
 import os
 
-"""gen( x, filepath )
+"""gen( x, name )
 
 Generate fixture data and write to file.
 
 # Arguments
 
 * `x`: domain
-* `filepath::AbstractString`: filepath of the output file
+* `name::str`: output filename
 
 # Examples
 
@@ -22,7 +22,7 @@ python> x = linspace( -1000, 1000, 2001 );
 python> gen( x, \"./data.json\" );
 ```
 """
-def gen( x, filepath ):
+def gen( x, name ):
     # TODO: generate fixtures
 
     # Store data to be written to file as a dictionary:
@@ -30,6 +30,10 @@ def gen( x, filepath ):
         "x": x.tolist(),
         "expected": y.tolist()
     };
+
+    # Based on the script directory, create an output filepath:
+    filepath = os.path.join( dir, name )
+
     with open( filepath, 'w' ) as outfile:
         json.dump( data, outfile )
 
