@@ -2,7 +2,10 @@
 # VARIABLES #
 
 # Define the Node environment:
-NODE_ENV ?= test
+NODE_ENV ?=
+
+# Define the Node path:
+NODE_PATH ?=
 
 # Define whether the make commands are running on a hosted continuous integration service:
 ifeq ($(TRAVIS), true)

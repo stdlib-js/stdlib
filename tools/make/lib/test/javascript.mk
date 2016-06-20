@@ -1,6 +1,12 @@
 
 # VARIABLES #
 
+# Define the Node environment:
+NODE_ENV ?= test
+
+# Define the Node path:
+NODE_PATH ?= $(NODE_PATH_TEST)
+
 # Define the test runner to use when running JavaScript tests:
 JAVASCRIPT_TEST_RUNNER ?= tape
 
@@ -33,12 +39,14 @@ test-javascript: test-javascript-local
 # This target runs JavaScript unit tests locally.
 
 test-javascript-local: $(NODE_MODULES)
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(JAVASCRIPT_TEST) \
-		$(JAVASCRIPT_TEST_FLAGS) \
-		$(TESTS) \
-	| $(TAP_REPORTER)
+	for test in $(TESTS); do \
+		echo ''; \
+		echo "Running test: $$test"; \
+		$(JAVASCRIPT_TEST) \
+			$(JAVASCRIPT_TEST_FLAGS) \
+			$$test \
+		| $(TAP_REPORTER) || exit 1; \
+	done
 
 .PHONY: test-javascript-local
 
@@ -53,11 +61,13 @@ test-javascript-local: $(NODE_MODULES)
 # [1]: https://github.com/zoubin/tap-summary
 
 test-javascript-summary: $(NODE_MODULES)
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(JAVASCRIPT_TEST) \
-		$(JAVASCRIPT_TEST_FLAGS) \
-		$(TESTS) \
-	| $(TAP_SUMMARY)
+	for test in $(TESTS); do \
+		echo ''; \
+		echo "Running test: $$test"; \
+		$(JAVASCRIPT_TEST) \
+			$(JAVASCRIPT_TEST_FLAGS) \
+			$$test \
+		| $(TAP_SUMMARY) || exit 1; \
+	done
 
 .PHONY: test-javascript-summary

@@ -1,6 +1,10 @@
 
 # VARIABLES #
 
+# Define the Node environment:
+NODE_ENV ?= test
+
+# Define the browser test runner:
 BROWSER_TEST_RUNNER ?= testling
 
 # Define the path to the browserify executable:
@@ -40,8 +44,6 @@ endif
 # [3]: https://github.com/scottcorgan/tap-spec
 
 test-browsers: $(NODE_MODULES)
-	NODE_ENV=$(NODE_ENV) \
-	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_FLAGS) \
 		$(TESTS) \

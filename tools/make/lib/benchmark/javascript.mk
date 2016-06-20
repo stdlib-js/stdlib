@@ -4,6 +4,9 @@
 # Define the command for `node`:
 NODE ?= node
 
+# Define the Node environment:
+NODE_ENV ?= benchmark
+
 
 # TARGETS #
 
