@@ -814,7 +814,7 @@ TODO
 
 105. stability badges
 
-     * may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, locked, or otherwise
+     * may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, stable, locked, or otherwise
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
@@ -857,6 +857,33 @@ TODO
      - [read-package-tree](https://github.com/npm/read-package-tree)
      - [licensee.js](https://github.com/jslicense/licensee.js)
      - make part of `pre-push` git hook
+     - as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
+
+117. investigate [test-all-versions](https://github.com/watson/test-all-versions)
+
+118. [node-cpp](https://github.com/freezer333/nodecpp-demo)
+
+119. [rr](https://github.com/mozilla/rr): record and replay framework
+
+120. Investigate the concept of [markembed](https://github.com/dominictarr/markembed) for embedding content in Markdown files
+
+121. Use cases for `remark` plugins:
+
+     - reference management
+     - conversion to RST
+     - conversion to HTML
+     - figure (static) insertion (similar to equations)
+     - appending/removing sections en masse
+
+122. [tangle](https://github.com/worrydream/Tangle)
+
+123. GitHub issues as a [blog](https://github.com/0x00A/blog)
+
+124. review Python test runner snippet
+
+125. update the `test-istanbul` target to run each test individually, output `lcov.info` to a `reports` dir, concatenate all `lcov` results, and then generate a HTML report. See [istanbul](https://github.com/gotwarlost/istanbul).
+
+     - for CI, push concatenated `lcov` to coverage service
 
 
 ---
@@ -892,6 +919,7 @@ TODO
    - cat
    - rand
    - from-array
+   - [duplex-json-stream](https://github.com/mafintosh/duplex-json-stream/blob/master/index.js)
    - related => [into-stream](https://github.com/sindresorhus/into-stream)
    - [concat-stream](https://github.com/maxogden/concat-stream) => this is essentially an end sink stream
    - [pump](https://github.com/mafintosh/pump) (?)
@@ -1123,6 +1151,20 @@ TODO
    * [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
 
 2. Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
+
+
+
+---
+
+## References
+
+* [Square root without division](http://people.eecs.berkeley.edu/~wkahan/ieee754status/reciprt.pdf)
+* [Reciproot Algorithm: correctly rounded?](http://www.eecs.berkeley.edu/Pubs/TechRpts/1994/CSD-94-850.pdf)
+* [reciproot implementation](http://ipa.ece.illinois.edu/mif/pubs/web-only/Frank-RawMemo11-1999.html)
+* [glibc sqrt](https://sourceware.org/git/?p=glibc.git;a=blob;f=sysdeps/ieee754/dbl-64/e_sqrt.c;h=8304a2bb6324acc6be7a9c20b6521aed84193c64;hb=HEAD)
+* [IPython: A System for Interactive Scientific Computing](http://fperez.org/papers/ipython07_pe-gr_cise.pdf)
+* [IPython: Sloan Grant](https://ipython.org/_static/sloangrant/sloan-grant.pdf)
+
 
 
 
