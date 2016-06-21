@@ -375,6 +375,7 @@ TODO
       - [asciiplot](https://github.com/mfouesneau/asciiplot)
       - [node-clear](https://github.com/bahamas10/node-clear)
       - [ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
+      - [node-charm](https://github.com/substack/node-charm)
 
     * ASCII [tables](https://github.com/sorensen/ascii-table)
 
@@ -879,11 +880,15 @@ TODO
 
 123. GitHub issues as a [blog](https://github.com/0x00A/blog)
 
-124. review Python test runner snippet
+124. reviews
+
+     - is-empty-array
 
 125. update the `test-istanbul` target to run each test individually, output `lcov.info` to a `reports` dir, concatenate all `lcov` results, and then generate a HTML report. See [istanbul](https://github.com/gotwarlost/istanbul).
 
      - for CI, push concatenated `lcov` to coverage service
+
+126. [regex-adventure](https://github.com/substack/regex-adventure): useful for inspiration
 
 
 ---
@@ -1139,6 +1144,9 @@ TODO
     * [Python float.hex](https://docs.python.org/3/library/stdtypes.html#float.hex)
     * [hex floating-point constants](http://www.exploringbinary.com/hexadecimal-floating-point-constants/)
 
+57. [object inspector](https://github.com/substack/object-inspect); also, Node.js `utils.inspect`
+
+58. [object diffing](https://github.com/substack/difflet)
 
 
 ---

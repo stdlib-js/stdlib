@@ -59,3 +59,9 @@
 *
 * @typedef {Array<Object>} ObjectArray
 */
+
+/**
+* An empty array.
+*
+* @typedef {Array} EmptyArray
+*/
