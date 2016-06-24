@@ -882,13 +882,17 @@ TODO
 
 124. reviews
 
-     - is-empty-array
+     - is-empty-array => should this just be a method off of `isArray`?
 
 125. update the `test-istanbul` target to run each test individually, output `lcov.info` to a `reports` dir, concatenate all `lcov` results, and then generate a HTML report. See [istanbul](https://github.com/gotwarlost/istanbul).
 
      - for CI, push concatenated `lcov` to coverage service
 
 126. [regex-adventure](https://github.com/substack/regex-adventure): useful for inspiration
+
+127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
+
+128. Axis and TimeSeries factory methods (?)
 
 
 ---
@@ -1147,6 +1151,10 @@ TODO
 57. [object inspector](https://github.com/substack/object-inspect); also, Node.js `utils.inspect`
 
 58. [object diffing](https://github.com/substack/difflet)
+
+59. `random/uuid`; various versions
+
+60. [custom](https://github.com/Raynos/error) error classes
 
 
 ---
