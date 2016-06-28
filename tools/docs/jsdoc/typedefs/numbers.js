@@ -180,3 +180,9 @@
 *
 * @typedef {number} FiniteNumber
 */
+
+/**
+* A number primitive in the interval [0,1]
+*
+* @typedef {number} Probability
+*/
