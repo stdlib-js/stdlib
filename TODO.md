@@ -376,6 +376,7 @@ TODO
       - [node-clear](https://github.com/bahamas10/node-clear)
       - [ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
       - [node-charm](https://github.com/substack/node-charm)
+      - [gvz](https://github.com/chrisdickinson/gvz)
 
     * ASCII [tables](https://github.com/sorensen/ascii-table)
 
@@ -894,6 +895,10 @@ TODO
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
 
 128. Axis and TimeSeries factory methods (?)
+
+129. `line` and `timeseries` `x` should also be an array of arrays, like `y`.
+
+     - may need to sniff; if no arrays, then "broadcast"
 
 
 ---
