@@ -467,6 +467,7 @@ TODO
     * [ecstatic](https://github.com/jfhbrook/node-ecstatic)
     * [glance](https://github.com/jarofghosts/glance)
     * [wzrd](https://github.com/maxogden/wzrd)
+    * [serve-static](https://github.com/expressjs/serve-static)
 
 70. cross-platform open browser
 
