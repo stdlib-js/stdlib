@@ -900,6 +900,16 @@ TODO
 
      - may need to sniff; if no arrays, then "broadcast"
 
+130. For `line` and `timeseries`, should annotations be included, or just be a separate `line` or `timeseries` which is overlayed?
+
+     - Granted, annotations are slightly different, as they are `x` values with text; in which case, may need separate plot type to accommodate
+
+131. Evaluate [check-build](https://github.com/FGRibreau/check-build)
+
+132. Evaluate [rewind](https://github.com/gilesbowkett/rewind)
+
+133. [iterables](https://github.com/leebyron/iterall)
+
 
 ---
 
