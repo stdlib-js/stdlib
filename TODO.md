@@ -896,13 +896,11 @@ TODO
 
 128. Axis and TimeSeries factory methods (?)
 
-129. `line` and `timeseries` `x` should also be an array of arrays, like `y`.
+129. 
 
-     - may need to sniff; if no arrays, then "broadcast"
+130. Annotations overlay, 
 
-130. For `line` and `timeseries`, should annotations be included, or just be a separate `line` or `timeseries` which is overlayed?
-
-     - Granted, annotations are slightly different, as they are `x` values with text; in which case, may need separate plot type to accommodate
+     - `x` values with text
 
 131. Evaluate [check-build](https://github.com/FGRibreau/check-build)
 
@@ -1031,9 +1029,9 @@ TODO
 
 13. is-object
 
-14. utils-copy
+14. 
 
-15. utils-merge
+15. 
 
 16. utils-deep-get
 
