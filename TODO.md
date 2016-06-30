@@ -376,6 +376,7 @@ TODO
       - [node-clear](https://github.com/bahamas10/node-clear)
       - [ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
       - [node-charm](https://github.com/substack/node-charm)
+      - [gvz](https://github.com/chrisdickinson/gvz)
 
     * ASCII [tables](https://github.com/sorensen/ascii-table)
 
@@ -893,7 +894,27 @@ TODO
 
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
 
-128. Axis and TimeSeries factory methods (?)
+128. plot svg components should have factory methods
+
+129. [readme-tester](https://github.com/orangemug/readme-tester)
+
+130. Annotations overlay, 
+
+     - `x` values with text
+
+131. Evaluate [check-build](https://github.com/FGRibreau/check-build)
+
+132. Evaluate [rewind](https://github.com/gilesbowkett/rewind)
+
+133. [iterables](https://github.com/leebyron/iterall)
+
+134. [vmd](https://github.com/yoshuawuyts/vmd)
+
+135. when browserifying `@stdlib/plot` should _ignore_ `electron-prebuilt`!!!!
+
+     - may want to have a separate `view` method entirely; one that is catered to browser context
+
+136. [function-plot](https://github.com/maurizzzio/function-plot)
 
 
 ---
@@ -1016,9 +1037,11 @@ TODO
 
 13. is-object
 
-14. utils-copy
+14. [svg2png](https://github.com/domenic/svg2png) without promises and cleaner
 
-15. utils-merge
+     - [svgexport](https://github.com/shakiba/svgexport)
+
+15. 
 
 16. utils-deep-get
 
@@ -1156,6 +1179,8 @@ TODO
 59. `random/uuid`; various versions
 
 60. [custom](https://github.com/Raynos/error) error classes
+
+61. [S&amp;P 500 dataset](https://github.com/datasets/s-and-p-500)
 
 
 ---

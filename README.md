@@ -3,6 +3,8 @@
 
 ## Status
 
+[![stability-experimental][stability-image]][stability-url]
+
 #### Version
 
 [![git tag][tag-image]][tag-url] [![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
@@ -150,6 +152,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 
 <!-- <links> -->
+
+[stability-image]: https://img.shields.io/badge/stability-experimental-orange.svg
+[stability-url]: https://github.com/stdlib-js/stdlib
 
 [npm-image]: https://img.shields.io/npm/v/@stdlib-js/stdlib.svg
 [npm-url]: https://npmjs.org/package/@stdlib-js/stdlib
