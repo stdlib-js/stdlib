@@ -55,6 +55,12 @@
 */
 
 /**
+* An array containing only boolean primitives.
+*
+* @typedef {Array<boolean>} BooleanArray
+*/
+
+/**
 * An array containing only plain objects.
 *
 * @typedef {Array<Object>} ObjectArray
