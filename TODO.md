@@ -916,6 +916,17 @@ TODO
 
 136. [function-plot](https://github.com/maurizzzio/function-plot)
 
+137. see [webtorrent-desktop](https://github.com/feross/webtorrent-desktop) for electron inspiration
+
+138. constant function? similar to identity function but as a factory?
+
+139. svg components: move `methods/render.js` to `render/index.js`
+
+140. sparkline rug plot
+
+141. review steam and leaf unicode plot
+
+
 
 ---
 
