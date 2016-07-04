@@ -926,6 +926,10 @@ TODO
 
 141. review steam and leaf unicode plot
 
+142. add unicode sparklines to namespace => requires abstract interface
+
+143. refactor plot electron renderer
+
 
 
 ---
@@ -1204,6 +1208,23 @@ TODO
    * [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
 
 2. Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
+
+3. Bugs in the built-in `Math` object:
+
+   * [V8 sin/cos](https://bugs.chromium.org/p/v8/issues/detail?id=3006)
+   * [V8 trig fcns](https://bugs.chromium.org/p/chromium/issues/detail?id=320097)
+   * [V8 not obeying IEEE 754-2008](https://bugs.chromium.org/p/v8/issues/detail?id=3089)
+   * [Mozilla discussion on V8 sin/cos](https://bugzilla.mozilla.org/show_bug.cgi?id=967709#c33)
+   * [V8 replaced a trig lookup table and then computes `tan` as `sin/cos`](https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1)
+   * [Browser math accuracy issues](https://github.com/kangax/compat-table/issues/392)
+   * [ES6 accuracy of special functions](https://esdiscuss.org/topic/es6-accuracy-of-special-functions)
+   * [V8 `exp` accuracy](https://bugs.chromium.org/p/v8/issues/detail?id=3468)
+   * [spreadsheet showing trig results across browsers](https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0)
+   * [V8 `pow` accuracy](https://bugs.chromium.org/p/v8/issues/detail?id=3599)
+   * [Mozilla `pow` accumulation of errors](https://bugzilla.mozilla.org/show_bug.cgi?id=618251)
+   * [V8 hyperbolic trig accuracy](https://github.com/paulmillr/es6-shim/issues/334)
+   * [TC39 testing of Math built-ins](https://github.com/tc39/test262/pull/269)
+   * [ES6 shim accuracy issues](https://github.com/paulmillr/es6-shim/issues/314)
 
 
 
