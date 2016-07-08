@@ -583,6 +583,9 @@ TODO
       // Type equality (instanceof):
       // returns <RangeError>
 
+      // Type equality instanceof):
+      // returns <Foo>
+
       // Wildcard (string):
       // returns '...'
 
@@ -929,6 +932,8 @@ TODO
 142. add unicode sparklines to namespace => requires abstract interface
 
 143. refactor plot electron renderer
+
+144. ability to "plot" [tables](http://metricsgraphicsjs.org/examples.htm#experimental)?
 
 
 
