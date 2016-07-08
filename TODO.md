@@ -1024,6 +1024,32 @@ TODO
 
 ---
 
+## Plot
+
+1. plot cli (requires `split`)
+2. rects
+   - x
+   - y
+   - orientation: vert, horz
+   - width calc'd via `x[i+1]-x[i]`
+3. xAxis, yAxis -> true/false; whether to create or not
+4. 
+5. validation; instead of a sep validator folder, when providing an object, just set the props to validate; also allows moving etc files to prop folders
+6. line -> area
+7. readme
+8. xExtendedTicks?
+
+
+1. trig benchmarks
+2. stream from list
+3. map stream which loads an (accuracy) benchmark and runs (requires, say, Julia serving as standard)
+4. map stream which receives results and outputs a plot
+5. concat stream which buffers all plots
+6. map stream which takes list of plots and injects into HTML template
+7. launch a disposable server
+
+---
+
 ## Modules
 
 1. is-finite (generic)
