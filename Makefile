@@ -48,6 +48,9 @@ REPORTS_DIR ?= $(ROOT_DIR)/reports
 COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
 COMPLEXITY_DIR ?= $(REPORTS_DIR)/complexity
 
+# Define the directory for workshops:
+WORKSHOPS_DIR ?= $(ROOT_DIR)/workshops
+
 # Define the directory for documentation:
 DOCS_DIR ?= $(ROOT_DIR)/docs
 
