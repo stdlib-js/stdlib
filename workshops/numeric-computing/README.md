@@ -19,18 +19,18 @@ Note, in order to run `make` commands on Windows, you can use [MinGW][mingw], a 
 $ set PATH=C:\MinGW\bin;%PATH%
 ```
 
-Another alternative is to use [Cygwin][cygwin], a collection of GNU and open source tools, providing functionality similar to a Linux distribution on Windows.
+Another alternative is to use [Cygwin][cygwin], a collection of GNU and open source tools which provide functionality similar to a Linux distribution on Windows.
 
 
 #### Download
 
-To get started, first acquire the [stdlib][stdlib] source code by performing a [shallow clone][git-clone-depth] of the [stdlib][stdlib] repository.
+To get started, acquire the [stdlib][stdlib] source code by performing a [shallow clone][git-clone-depth] of the [stdlib][stdlib] repository
 
 ``` bash
 $ git clone --depth 1 https://github.com/stdlib-js/stdlib
 ```
 
-Navigate to the cloned repository.
+Once cloned, navigate to the cloned repository
 
 ``` bash
 $ cd ./path/to/cloned/stdlib-js/stdlib
@@ -51,7 +51,7 @@ On Windows,
 $ set NODE_PATH=./lib/node_modules
 ```
 
-Note that setting an [environment variable][env-var] via `export` or `set` only affects the current shell. The [environment variable][env-var] will __not__ be available in other shells. To make the [environment variable][env-var] globally available to all shells, edit the platform-specific configuration file for configuring user environments; e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant. Once set, you may need to reload the configuration file in existing shells. For example, in a bash shell,
+Note that setting an [environment variable][env-var] via `export` or `set` only affects the current shell. The [environment variable][env-var] will __not__ be available in other shells. To make the [environment variable][env-var] available to all shells, edit the platform-specific configuration file for configuring user environments; e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant. Once set, you may need to reload the configuration file in existing shells. For example, in a bash shell,
 
 ``` bash
 $ source ~/.bash_profile
@@ -75,7 +75,7 @@ To test that the environment variable is set,
 $ ./node_modules/.bin/tape ./workshops/numeric-computing/test/*.js
 ```
 
-If the tests pass, run the workshop examples.
+If the tests pass, run the workshop examples
 
 ``` bash
 $ node ./workshop/numeric-computing/examples
