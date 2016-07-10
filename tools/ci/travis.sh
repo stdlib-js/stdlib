@@ -7,6 +7,9 @@
 
 # VARIABLES #
 
+# Define the Node path:
+export NODE_PATH=./
+
 # Define a heartbeat interval to prevent Travis CI from prematurely ending due to long running commands:
 export HEARTBEAT_INTERVAL=30s
 
