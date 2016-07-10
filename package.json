@@ -65,7 +65,8 @@
     "testling": "1.x.x",
     "tex-equation-to-svg": "^1.0.1",
     "to-vfile": "^1.0.0",
-    "unist-util-visit": "^1.1.0"
+    "unist-util-visit": "^1.1.0",
+    "xslide": "^1.1.0"
   },
   "testling": {
     "files": [
