@@ -5,10 +5,10 @@
 NODE ?= node
 
 # Define the Node environment:
-NODE_ENV ?= benchmark
+NODE_ENV_BENCHMARK ?= $(NODE_ENV)
 
 # Define the Node path:
-NODE_PATH ?= $(NODE_PATH_BENCHMARK)
+NODE_PATH_BENCHMARK ?= $(NODE_PATH)
 
 
 # TARGETS #
@@ -21,6 +21,8 @@ benchmark-javascript: $(NODE_MODULES)
 	for file in $(BENCHMARKS); do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
+		NODE_ENV=$(NODE_ENV_BENCHMARK) \
+		NODE_PATH=$(NODE_PATH_BENCHMARK) \
 		$(NODE) $$file || exit 1; \
 	done
 

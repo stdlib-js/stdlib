@@ -7,9 +7,6 @@
 
 # VARIABLES #
 
-# Define the Node path:
-export NODE_PATH=./
-
 # Define a heartbeat interval to periodically print messages to `stdout`:
 export HEARTBEAT_INTERVAL=30s
 

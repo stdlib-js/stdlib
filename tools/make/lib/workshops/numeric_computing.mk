@@ -1,6 +1,9 @@
 
 # VARIABLES #
 
+# Define the Node environment:
+NODE_ENV ?= workshop
+
 # Determine the host kernel:
 KERNEL ?= $(shell uname -s)
 
