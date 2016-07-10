@@ -4,6 +4,12 @@
 # Define the command for `node`:
 NODE ?= node
 
+# Define the Node environment:
+NODE_ENV ?= examples
+
+# Define the Node path:
+NODE_PATH ?= $(NODE_PATH_EXAMPLES)
+
 
 # TARGETS #
 

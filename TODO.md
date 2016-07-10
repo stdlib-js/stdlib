@@ -935,6 +935,8 @@ TODO
 
 144. ability to "plot" [tables](http://metricsgraphicsjs.org/examples.htm#experimental)?
 
+145. [heatmap](https://github.com/substack/node-heatmap)
+
 
 
 ---

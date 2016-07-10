@@ -42,6 +42,7 @@ include $(TOOLS_MAKE_LIB_DIR)/benchmark/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/examples/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/complexity/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/docs/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/workshops/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/markdown-equations/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/debug/Makefile
 
