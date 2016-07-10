@@ -2,10 +2,10 @@
 # VARIABLES #
 
 # Define the Node environment:
-NODE_ENV ?= test
+NODE_ENV_TEST ?= $(NODE_ENV)
 
 # Define the Node path:
-NODE_PATH ?= $(NODE_PATH_TEST)
+NODE_PATH_TEST ?= $(NODE_PATH)
 
 # Define the test runner to use when running JavaScript tests:
 JAVASCRIPT_TEST_RUNNER ?= tape
@@ -42,6 +42,8 @@ test-javascript-local: $(NODE_MODULES)
 	for test in $(TESTS); do \
 		echo ''; \
 		echo "Running test: $$test"; \
+		NODE_ENV=$(NODE_ENV_TEST) \
+		NODE_PATH=$(NODE_PATH_TEST) \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
@@ -64,6 +66,8 @@ test-javascript-summary: $(NODE_MODULES)
 	for test in $(TESTS); do \
 		echo ''; \
 		echo "Running test: $$test"; \
+		NODE_ENV=$(NODE_ENV_TEST) \
+		NODE_PATH=$(NODE_PATH_TEST) \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \

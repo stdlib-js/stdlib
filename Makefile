@@ -1,12 +1,6 @@
 
 # VARIABLES #
 
-# Define the Node environment:
-NODE_ENV ?=
-
-# Define the Node path:
-NODE_PATH ?=
-
 # Define whether the make commands are running on a hosted continuous integration service:
 ifeq ($(TRAVIS), true)
 	CI_SERVICE ?= travis
@@ -80,6 +74,29 @@ EXAMPLES_FOLDER ?= examples
 
 # Define the folder name convention for benchmark files:
 BENCHMARKS_FOLDER ?= benchmark
+
+# Define Node paths:
+NODE_PATH ?= $(ROOT_DIR)/lib/node_modules
+NODE_PATH_BENCHMARK ?= $(NODE_PATH)
+NODE_PATH_EXAMPLES ?= $(NODE_PATH)
+NODE_PATH_REPL ?= $(NODE_PATH)
+NODE_PATH_TEST ?= $(NODE_PATH)
+NODE_PATH_WORKSHOPS ?= $(NODE_PATH)
+
+# Define Node environments:
+ifdef ($(NODE_ENV))
+	NODE_ENV_BENCHMARK := $(NODE_ENV)
+	NODE_ENV_EXAMPLES := $(NODE_ENV)
+	NODE_ENV_REPL := $(NODE_ENV)
+	NODE_ENV_TEST := $(NODE_ENV)
+	NODE_ENV_WORKSHOPS := $(NODE_ENV)
+else
+	NODE_ENV_BENCHMARK ?= benchmark
+	NODE_ENV_EXAMPLES ?= examples
+	NODE_ENV_REPL ?= repl
+	NODE_ENV_TEST ?= test
+	NODE_ENV_WORKSHOPS ?= workshop
+endif
 
 # Define whether delete operations should be safe (i.e., deleted items are sent to trash, rather than permanently deleted):
 SAFE_DELETE ?= false

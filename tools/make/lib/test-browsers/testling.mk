@@ -2,7 +2,7 @@
 # VARIABLES #
 
 # Define the Node environment:
-NODE_ENV ?= test
+NODE_ENV_TEST ?= $(NODE_ENV)
 
 # Determine the host kernel:
 KERNEL ?= $(shell uname -s)
@@ -37,6 +37,7 @@ BROWSER_TEST_FLAGS ?=
 # [1]: https://github.com/substack/testling
 
 view-testling: $(NODE_MODULES)
+	NODE_ENV=$(NODE_ENV_TEST) \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_FLAGS) \
 		$(TESTS) \

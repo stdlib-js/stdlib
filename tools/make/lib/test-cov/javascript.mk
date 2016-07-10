@@ -2,10 +2,10 @@
 # VARIABLES #
 
 # Define the Node environment:
-NODE_ENV ?= test
+NODE_ENV_TEST ?= $(NODE_ENV)
 
 # Define the Node path:
-NODE_PATH ?= $(NODE_PATH_TEST)
+NODE_PATH_TEST ?= $(NODE_PATH)
 
 # Define the code coverage instrumentation utility:
 JAVASCRIPT_CODE_INSTRUMENTER ?= istanbul

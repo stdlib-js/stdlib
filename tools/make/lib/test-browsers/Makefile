@@ -2,10 +2,10 @@
 # VARIABLES #
 
 # Define the Node environment:
-NODE_ENV ?= test
+NODE_ENV_TEST ?= $(NODE_ENV)
 
 # Define the Node path:
-NODE_PATH ?= $(NODE_PATH_TEST)
+NODE_PATH_TEST ?= $(NODE_PATH)
 
 # Define the browser test runner:
 BROWSER_TEST_RUNNER ?= testling
@@ -47,6 +47,8 @@ endif
 # [3]: https://github.com/scottcorgan/tap-spec
 
 test-browsers: $(NODE_MODULES)
+	NODE_ENV=$(NODE_ENV_TEST) \
+	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_FLAGS) \
 		$(TESTS) \

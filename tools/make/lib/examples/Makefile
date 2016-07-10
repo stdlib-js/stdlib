@@ -5,10 +5,10 @@
 NODE ?= node
 
 # Define the Node environment:
-NODE_ENV ?= examples
+NODE_ENV_EXAMPLES ?= $(NODE_ENV)
 
 # Define the Node path:
-NODE_PATH ?= $(NODE_PATH_EXAMPLES)
+NODE_PATH_EXAMPLES ?= $(NODE_PATH)
 
 
 # TARGETS #
@@ -21,6 +21,8 @@ examples: $(NODE_MODULES)
 	for file in $(EXAMPLES); do \
 		echo ""; \
 		echo "Running example: $$file"; \
+		NODE_ENV=$(NODE_ENV_EXAMPLES) \
+		NODE_PATH=$(NODE_PATH_EXAMPLES) \
 		$(NODE) $$file || exit 1; \
 	done
 

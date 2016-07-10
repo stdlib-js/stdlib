@@ -2,10 +2,10 @@
 # VARIABLES #
 
 # Define the Node environment:
-NODE_ENV ?= repl
+NODE_ENV_REPL ?= $(NODE_ENV)
 
 # Define the Node path:
-NODE_PATH ?= $(NODE_PATH_REPL)
+NODE_PATH_REPL ?= $(NODE_PATH)
 
 # Define the path of the REPL executable:
 REPL ?= $(LOCAL_BIN_DIR)/repl
@@ -23,6 +23,8 @@ REPL_DIR ?= $(ROOT_DIR)
 repl: $(NODE_MODULES) $(REPL)
 	@cd $(REPL_DIR); \
 	echo "Starting REPL..."; \
+	NODE_ENV=$(NODE_ENV_REPL) \
+	NODE_PATH=$(NODE_PATH_REPL) \
 	$(REPL)
 
 .PHONY: repl
