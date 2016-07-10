@@ -94,6 +94,15 @@ $ make examples
 ```
 
 
+#### Exercises
+
+To begin the exercises, open the following URL in your browser
+
+``` text
+https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/01.md
+```
+
+
 <!-- <links> -->
 
 [stdlib]: https://github.com/stdlib-js/
