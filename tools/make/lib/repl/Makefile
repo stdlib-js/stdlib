@@ -4,6 +4,9 @@
 # Define the Node environment:
 NODE_ENV ?= repl
 
+# Define the Node path:
+NODE_PATH ?= $(NODE_PATH_REPL)
+
 # Define the path of the REPL executable:
 REPL ?= $(LOCAL_BIN_DIR)/repl
 

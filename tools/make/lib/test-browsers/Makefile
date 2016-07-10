@@ -4,6 +4,9 @@
 # Define the Node environment:
 NODE_ENV ?= test
 
+# Define the Node path:
+NODE_PATH ?= $(NODE_PATH_TEST)
+
 # Define the browser test runner:
 BROWSER_TEST_RUNNER ?= testling
 

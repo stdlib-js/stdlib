@@ -7,6 +7,9 @@ NODE ?= node
 # Define the Node environment:
 NODE_ENV ?= benchmark
 
+# Define the Node path:
+NODE_PATH ?= $(NODE_PATH_BENCHMARK)
+
 
 # TARGETS #
 
