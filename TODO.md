@@ -939,6 +939,13 @@ TODO
 
 146. Should plot `autoRender` be "opt-in", rather than "opt-out"?
 
+147. [remarkjs](https://github.com/gnab/remark) for Markdown slide shows for workshop slides?
+
+     - [markdown-to-slides](https://github.com/partageit/markdown-to-slides)
+     - [cleaver](https://github.com/jdan/cleaver)
+
+148. Visual intro to [machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+
 
 
 ---
@@ -1275,6 +1282,7 @@ TODO
    * [V8 fixes Math.random](http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/)
    * [V8 finally returns pseudorandom numbers](http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref)
    * [Webkit switched to weak PRNG for speed](https://bugs.chromium.org/p/chromium/issues/detail?id=246054)
+   * [V8 deopts if Math.floor provided -0](https://bugs.chromium.org/p/v8/issues/detail?id=2890)
 
 
 
