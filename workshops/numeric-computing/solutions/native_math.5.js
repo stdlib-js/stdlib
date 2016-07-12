@@ -5,13 +5,26 @@ var getKeys = require( 'object-keys' ).shim();
 var Plot = require( '@stdlib/plot/plot' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
-var rmse = require( './02.b.js' );
+var rmse = require( './native_math.2.js' );
+
+var FCNS = {
+	'sqrt': require( '@stdlib/math/base/special/sqrt' ),
+	'pow': require( '@stdlib/math/base/special/pow' ),
+	'exp': require( '@stdlib/math/base/special/exp' ),
+	'sin': require( '@stdlib/math/base/special/sin' ),
+	'cos': require( '@stdlib/math/base/special/cos' ),
+	'tan': require( '@stdlib/math/base/special/tan' ),
+	'log': require( '@stdlib/math/base/special/ln' ),
+	'acos': require( '@stdlib/math/base/special/acos' ),
+	'asin': require( '@stdlib/math/base/special/asin' ),
+	'atan': require( '@stdlib/math/base/special/atan' )
+};
 
 /**
-* Compute the deviations between a native JavaScript Math method and a standard and returns a rendered plot.
+* Compute the deviations between a JavaScript implementation and a standard and returns a rendered plot.
 *
 * @private
-* @param {string} method - Math method
+* @param {string} method - method name
 * @param {...NumericArray} args - method arguments
 * @param {NumericArray} expected - expected results
 * @returns {string} rendered plot
@@ -35,11 +48,11 @@ function deviations( method ) {
 		args[ i ] = arguments[ i+1 ];
 	}
 
-	// Compute results when using the native method...
+	// Compute results when using the JavaScript implementation...
 	y = new Float64Array( expected.length );
 	tmp = new Array( args.length );
 	for ( i = 0; i < y.length; i++ ) {
-		f = Math[ method ];
+		f = FCNS[ method ];
 		for ( j = 0; j < args.length; j++ ) {
 			tmp[ j ] = args[ j ][ i ];
 		}
@@ -113,19 +126,7 @@ function main() {
 	var fcns;
 	var out;
 	var i;
-
-	fcns = [
-		'cos',
-		'exp',
-		'log',
-		'pow',
-		'sin',
-		'sqrt',
-		'tan',
-		'acos',
-		'asin',
-		'atan'
-	];
+	fcns = getKeys( FCNS );
 	out = '';
 	for ( i = 0; i < fcns.length; i++ ) {
 		out += compute( fcns[i] );
