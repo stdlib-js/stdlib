@@ -121,7 +121,10 @@ function main() {
 		'pow',
 		'sin',
 		'sqrt',
-		'tan'
+		'tan',
+		'acos',
+		'asin',
+		'atan'
 	];
 	out = '';
 	for ( i = 0; i < fcns.length; i++ ) {

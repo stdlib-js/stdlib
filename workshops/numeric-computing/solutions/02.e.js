@@ -14,7 +14,10 @@ var FCNS = {
 	'sin': require( '@stdlib/math/base/special/sin' ),
 	'cos': require( '@stdlib/math/base/special/cos' ),
 	'tan': require( '@stdlib/math/base/special/tan' ),
-	'log': require( '@stdlib/math/base/special/ln' )
+	'log': require( '@stdlib/math/base/special/ln' ),
+	'acos': require( '@stdlib/math/base/special/acos' ),
+	'asin': require( '@stdlib/math/base/special/asin' ),
+	'atan': require( '@stdlib/math/base/special/atan' )
 };
 
 /**
