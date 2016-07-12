@@ -5,13 +5,13 @@
 
 ## Exercises
 
-### a) Plot Instances
+### 1) Plot Instances
 
 * Create a `plot` instance.
 * Try setting various properties with what you consider expected and unexpected values.
 
 
-### b) Plot Types
+### 2) Plot Types
 
 For each exercise, generate both a `browser` view and a `window` view.
 
@@ -22,7 +22,7 @@ For each exercise, generate both a `browser` view and a `window` view.
 * Create a scatter plot with axes rug plots.
 
 
-### c) Multiple Plots
+### 3) Multiple Plots
 
 * Generate multiple plots and display them as a single web page in your browser.
 
@@ -37,9 +37,10 @@ For each exercise, generate both a `browser` view and a `window` view.
 
 Assuming that each solution is placed in a separate file,
 
-``` javascript
-$ node ./path/to/<solution_a>.js
-$ node ./path/to/<solution_b>.js
+``` bash
+$ node ./path/to/<solution_1>.js
+$ node ./path/to/<solution_2>.js
+# ...
 ```
 
 When all your solutions pass, proceed to the [next exercise][next-exercise].
@@ -52,6 +53,6 @@ When all your solutions pass, proceed to the [next exercise][next-exercise].
 [disposable-http-server]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/tools/disposable-http-server
 [vdom-to-html]: https://github.com/nthtran/vdom-to-html
 
-[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/02.md
+[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/native_math.md
 
 <!-- </links> -->
