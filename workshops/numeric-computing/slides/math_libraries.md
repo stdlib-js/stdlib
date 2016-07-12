@@ -220,7 +220,7 @@ var UINT32_VIEW1 = new Uint32Array( FLOAT64_VIEW1.buffer );
 FLOAT64_VIEW1[ 0 ] = x;
 
 // Assume little endian...
-var words = [ UINT32_VIEW1[1], UINT32_VIEW1[0] ];
+var words = [ UINT32_VIEW1[1], UINT32_VIEW1[0] ]; // [ high, low ]
 // returns [ 0, 0 ]
 
 var highWord = '0 11111111111 10000000000000000000';
