@@ -1,31 +1,31 @@
-# Built-in Math
+# Native Math
 
 > This exercise covers built-in JavaScript Math functions.
 
 
 ## Exercises
 
-### a) Plotting
+### 1) Plotting
 
 * Generate a plot of `Math.sin` over the interval `[0,2π]`.
 * Generate a plot of `Math.cos` over the interval `[0,2π]`.
 
 
-### b) RMSE
+### 2) RMSE
 
 A common measure of numerical accuracy is the [root-mean-square error][rmse] (RMSE). The basic idea is to determine the average deviation of computed values from a known standard. The lower the RMSE, the more accurate the algorithm; the higher the RMSE, the less accurate the algorithm.
 
 * Write a function to compute the [root-mean-square error][rmse] (RMSE).
 
 
-### c) Comparison to Standard
+### 3) Comparison to Standard
 
 * Generate a plot showing the sine computed by `Math.sin` and the sine computed from Julia (Julia results can be found in the [fixtures][fixtures] directory). The `x` values over which to compute the sin are included in the fixtures.
 * Generate a plot showing the deviations (in units of [epsilon][epsilon-difference]) of `Math.sin` from Julia (include the RMSE in the plot title).
 * As a bonus, repeat the test for different Node versions.
 
 
-### d) Testing Native Math
+### 4) Testing Native Math
 
 * Extend the previous solutions to test the following Math functions:
 
@@ -41,7 +41,7 @@ A common measure of numerical accuracy is the [root-mean-square error][rmse] (RM
 * As a bonus, repeat the tests for different browsers, such as Firefox and Internet Explorer.
 
 
-### e) Testing Custom Implementations
+### 5) Testing Custom Implementations
 
 * Extend the previous solution to test custom implementations of the above functions.
 
@@ -66,9 +66,10 @@ A common measure of numerical accuracy is the [root-mean-square error][rmse] (RM
 
 Assuming that each solution is placed in a separate file,
 
-``` javascript
-$ node ./path/to/<solution_a>.js
-$ node ./path/to/<solution_b>.js
+``` bash
+$ node ./path/to/<solution_1>.js
+$ node ./path/to/<solution_2>.js
+# ...
 ```
 
 When all your solutions pass, proceed to the [next exercise][next-exercise].
@@ -84,6 +85,6 @@ When all your solutions pass, proceed to the [next exercise][next-exercise].
 
 [epsilon-difference]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/utils/float64-epsilon-difference
 
-[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/03.md
+[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/repl.md
 
 <!-- </links> -->
