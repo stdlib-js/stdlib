@@ -937,6 +937,8 @@ TODO
 
 145. [heatmap](https://github.com/substack/node-heatmap)
 
+146. Should plot `autoRender` be "opt-in", rather than "opt-out"?
+
 
 
 ---
