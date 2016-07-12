@@ -1050,6 +1050,16 @@ TODO
 6. map stream which takes list of plots and injects into HTML template
 7. launch a disposable server
 
+
+---
+
+## Workshops
+
+#### Numeric Computing
+
+1. Markov simulation and text generator exercise
+2. include links to survey in main README
+
 ---
 
 ## Modules
@@ -1258,6 +1268,7 @@ TODO
    * [V8 hyperbolic trig accuracy](https://github.com/paulmillr/es6-shim/issues/334)
    * [TC39 testing of Math built-ins](https://github.com/tc39/test262/pull/269)
    * [ES6 shim accuracy issues](https://github.com/paulmillr/es6-shim/issues/314)
+   * [V8 Math.random](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc)
 
 
 
