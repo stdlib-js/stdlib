@@ -1269,6 +1269,9 @@ TODO
    * [TC39 testing of Math built-ins](https://github.com/tc39/test262/pull/269)
    * [ES6 shim accuracy issues](https://github.com/paulmillr/es6-shim/issues/314)
    * [V8 Math.random](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc)
+   * [V8 fixes Math.random](http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/)
+   * [V8 finally returns pseudorandom numbers](http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref)
+   * [Webkit switched to weak PRNG for speed](https://bugs.chromium.org/p/chromium/issues/detail?id=246054)
 
 
 
