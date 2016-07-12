@@ -1059,6 +1059,7 @@ TODO
 
 1. Markov simulation and text generator exercise
 2. include links to survey in main README
+3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
 
 ---
 
