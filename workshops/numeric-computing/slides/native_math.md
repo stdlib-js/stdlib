@@ -129,6 +129,12 @@ function max( x ) {
 
 [Webkit switched to weak PRNG for speed](https://bugs.chromium.org/p/chromium/issues/detail?id=246054)
 
+[V8 deopts if Math.floor provided -0](https://bugs.chromium.org/p/v8/issues/detail?id=2890)
+
+[V8 deopts if Math.ceil provided 0](https://bugs.chromium.org/p/v8/issues/detail?id=4059)
+
+[V8 Math.round returns wrong results](https://bugs.chromium.org/p/v8/issues/detail?id=958)
+
 ---
 
 EOF
