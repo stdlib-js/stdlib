@@ -99,7 +99,7 @@ $ make examples
 To begin the exercises, open the following URL in your browser
 
 ``` text
-https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/01.md
+https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/plotting.md
 ```
 
 
