@@ -80,6 +80,9 @@
 
   // Generate a random index:
   var i = floor( randu()*list.length );
+
+  // Grab a random element:
+  var el = list[ i ];
   ```
 
 
