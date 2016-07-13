@@ -18,8 +18,8 @@
   ``` javascript
   var initial = [ 0.2, 0.8 ]; // sums to unity
   var transition = [
-      [ 0.3, 0.7 ], // sums to 1
-      [ 0.4, 0.6 ]  // sums to 1
+      [ 0.3, 0.7 ], // sums to unity
+      [ 0.4, 0.6 ]  // sums to unity
   ];
   ```
 
@@ -38,11 +38,27 @@
 *  Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
 
 
+## Testing
+
+Assuming that each solution is placed in a separate file,
+
+``` bash
+$ node ./path/to/<solution_1>.js
+$ node ./path/to/<solution_2>.js
+# ...
+```
+
+When all your solutions pass, proceed to the [next exercise][next-exercise].
+
 
 <!-- <links> -->
 
 [markov-chain]: https://en.wikipedia.org/wiki/Markov_chain
 
 [randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+
+<!-- TODO -->
+
+[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/
 
 <!-- </links> --> 
