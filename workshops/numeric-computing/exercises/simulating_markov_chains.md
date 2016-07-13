@@ -38,7 +38,7 @@
   - Replace all newline characters (and trailing spaces) with a single space.
   - Replace multiple spaces with a single space.
   - Split the text into separate "words" using a single space as the delimiter.
-  - Build a dictionary where each key is a pair of consecutive words and the key value is an `array` of words which follow the key pair. For example, given the phrase "The quick brown fox jumped over the lazy cat.", the dictionary would be
+  - Build a database (dictionary) where each key is a pair of consecutive words and the key value is an `array` of words which follow the key pair. For example, given the phrase "The quick brown fox jumped over the lazy cat.", the database would be
 
     ``` javascript
     var dict = {
