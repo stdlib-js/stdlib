@@ -74,7 +74,7 @@
 
   ``` javascript
   var randu = require( '@stdlib/math/base/random/randu' );
-  var floor = require( '@stdlib/math/base/random/randu' );
+  var floor = require( '@stdlib/math/base/random/floor' );
 
   var list = [ 1, 2, 3, 4, 5 ];
 
