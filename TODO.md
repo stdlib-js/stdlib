@@ -975,7 +975,7 @@ TODO
 4. basic stream utilities
 
    - make `utils/debug` a standard stream (cli `name` option; does this module need split and join?)
-   - split
+   - split => tests
    - join => example
    - map!!!!!!
    - cat
