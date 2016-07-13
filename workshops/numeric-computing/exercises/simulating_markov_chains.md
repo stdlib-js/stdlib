@@ -69,7 +69,7 @@
 ## Tips
 
 * Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
-* When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][trasnform]) for efficient processing.
+* When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][transform]) for efficient processing.
 * To select a random element from a list,
 
   ``` javascript
