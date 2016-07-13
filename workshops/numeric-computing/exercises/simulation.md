@@ -1,4 +1,4 @@
-# Simulating Markov Chains
+# Simulation
 
 > This exercise covers reproducible simulation, with extension to [discrete-time Markov chains][markov-chain].
 
@@ -38,7 +38,8 @@
   - Replace all newline characters (and trailing spaces) with a single space.
   - Replace multiple spaces with a single space.
   - Split the text into separate "words" using a single space as the delimiter.
-  - Build a dictionary where each key is a pair of consecutive words and the key value is an `array` of words which follow the key pair. For example, given the phrase "The quick brown fox jumped over the lazy cat.", the dictionary would be
+  - Write the word list to file.
+  - Build a database (dictionary) where each key is a pair of consecutive words and the key value is an `array` of words which follow the key pair. For example, given the phrase "The quick brown fox jumped over the lazy cat.", the database would be
 
     ``` javascript
     var dict = {
@@ -52,11 +53,37 @@
     };
     ```
 
+  - Write the database to file as JSON.
+
+
+#### 4) Text Generation
+
+* Using the database and word list from above, create a function to generate text having a maximum word length of `25`. Hints:
+
+  - First seed the text generator with two words from the word list.
+  - Look up the list of possible third words in the database and randomly pick one of them.
+  - Next, use the second and third words to find a fourth word, and so on and so forth.
+  - Stop once you have generated the desired number of words.
+
 
 ## Tips
 
 * Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
-* When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][trasnform]) for efficient processing.
+* When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][transform]) for efficient processing.
+* To select a random element from a list,
+
+  ``` javascript
+  var randu = require( '@stdlib/math/base/random/randu' );
+  var floor = require( '@stdlib/math/base/random/floor' );
+
+  var list = [ 1, 2, 3, 4, 5 ];
+
+  // Generate a random index:
+  var i = floor( randu()*list.length );
+
+  // Grab a random element:
+  var el = list[ i ];
+  ```
 
 
 ## Testing
