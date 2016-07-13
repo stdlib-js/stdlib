@@ -36,6 +36,7 @@
   - Remove the front matter before `Chapter 1`, and remove the end matter after the `Epilogue`.
   - Replace all newline characters with a single space.
   - Replace multiple spaces with a single space.
+  - Split the text into separate "words" using a single space as the delimiter.
 
 
 ## Tips
