@@ -78,7 +78,7 @@ $ ./node_modules/.bin/tape ./workshops/numeric-computing/test/*.js
 If the tests pass, run the workshop examples
 
 ``` bash
-$ node ./workshop/numeric-computing/examples
+$ node ./workshops/numeric-computing/examples
 ```
 
 To run the full test suite,
