@@ -30,7 +30,13 @@
 
 ### 3) Model Training
 
-* 
+* Download and process a training corpus.
+
+  - Download a full plain text copy of [Moby Dick][moby-dick] from [Project Gutenberg][moby-dick].
+  - Remove the front matter before `Chapter 1`, and remove the end matter after the `Epilogue`.
+  - Replace all newline characters with a single space.
+  - Replace multiple spaces with a single space.
+  - Split the text into separate "words" using a single space as the delimiter.
 
 
 ## Tips
@@ -56,6 +62,8 @@ When all your solutions pass, proceed to the [next exercise][next-exercise].
 [markov-chain]: https://en.wikipedia.org/wiki/Markov_chain
 
 [randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+
+[moby-dick]: http://www.gutenberg.org/cache/epub/2701/pg2701.txt
 
 <!-- TODO -->
 
