@@ -28,20 +28,35 @@
 * As a bonus, extend the simulation to `5` states and `1000` steps and plot the state vector.
 
 
-### 3) Model Training
+### 3) Model Generation
 
 * Download and process a training corpus.
 
   - Download a full plain text copy of [Moby Dick][moby-dick] from [Project Gutenberg][moby-dick].
   - Remove the front matter before `Chapter 1`, and remove the end matter after the `Epilogue`.
-  - Replace all newline characters with a single space.
+  - Replace all tab characters with a single space.
+  - Replace all newline characters (and trailing spaces) with a single space.
   - Replace multiple spaces with a single space.
   - Split the text into separate "words" using a single space as the delimiter.
+  - Build a dictionary where each key is a pair of consecutive words and the key value is an `array` of words which follow the key pair. For example, given the phrase "The quick brown fox jumped over the lazy cat.", the dictionary would be
+
+    ``` javascript
+    var dict = {
+        'The quick': ['brown'],
+        'quick brown': ['fox'],
+        'brown fox': ['jumped'],
+        'fox jumped': ['over'],
+        'jumped over': ['the'],
+        'over the': ['lazy'],
+        'the lazy': ['cat.']    
+    };
+    ```
 
 
 ## Tips
 
-*  Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
+* Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
+* When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][trasnform]) for efficient processing.
 
 
 ## Testing
@@ -62,6 +77,9 @@ When all your solutions pass, proceed to the [next exercise][next-exercise].
 [markov-chain]: https://en.wikipedia.org/wiki/Markov_chain
 
 [randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+[split]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/split
+[join]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/join
+[transform]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/transform
 
 [moby-dick]: http://www.gutenberg.org/cache/epub/2701/pg2701.txt
 
