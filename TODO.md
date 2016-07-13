@@ -937,6 +937,15 @@ TODO
 
 145. [heatmap](https://github.com/substack/node-heatmap)
 
+146. Should plot `autoRender` be "opt-in", rather than "opt-out"?
+
+147. [remarkjs](https://github.com/gnab/remark) for Markdown slide shows for workshop slides?
+
+     - [markdown-to-slides](https://github.com/partageit/markdown-to-slides)
+     - [cleaver](https://github.com/jdan/cleaver)
+
+148. Visual intro to [machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+
 
 
 ---
@@ -1049,6 +1058,17 @@ TODO
 5. concat stream which buffers all plots
 6. map stream which takes list of plots and injects into HTML template
 7. launch a disposable server
+
+
+---
+
+## Workshops
+
+#### Numeric Computing
+
+1. Markov simulation and text generator exercise
+2. include links to survey in main README
+3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
 
 ---
 
@@ -1258,6 +1278,13 @@ TODO
    * [V8 hyperbolic trig accuracy](https://github.com/paulmillr/es6-shim/issues/334)
    * [TC39 testing of Math built-ins](https://github.com/tc39/test262/pull/269)
    * [ES6 shim accuracy issues](https://github.com/paulmillr/es6-shim/issues/314)
+   * [V8 Math.random](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc)
+   * [V8 fixes Math.random](http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/)
+   * [V8 finally returns pseudorandom numbers](http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref)
+   * [Webkit switched to weak PRNG for speed](https://bugs.chromium.org/p/chromium/issues/detail?id=246054)
+   * [V8 deopts if Math.floor provided -0](https://bugs.chromium.org/p/v8/issues/detail?id=2890)
+   * [V8 deopts if Math.ceil provided 0](https://bugs.chromium.org/p/v8/issues/detail?id=4059)
+   * [V8 Math.round returns wrong results](https://bugs.chromium.org/p/v8/issues/detail?id=958)
 
 
 
