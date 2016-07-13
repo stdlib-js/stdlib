@@ -1,4 +1,4 @@
-# Simulating Markov Chains
+# Simulation
 
 > This exercise covers reproducible simulation, with extension to [discrete-time Markov chains][markov-chain].
 
