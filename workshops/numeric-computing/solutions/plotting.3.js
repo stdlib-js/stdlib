@@ -2,7 +2,7 @@
 
 var toHTML = require( 'vdom-to-html' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
-var randn = require( '@stdlib/math/base/random/box-muller' );
+var randn = require( '@stdlib/math/base/random/randn' );
 var Plot = require( '@stdlib/plot/plot' );
 
 var plot1;
