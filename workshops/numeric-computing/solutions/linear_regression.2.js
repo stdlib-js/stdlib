@@ -17,9 +17,12 @@ var fit;
 var x1;
 var x2;
 var x3;
+var x4;
 var y1;
 var y2;
 var y3;
+var y4;
+var N;
 var m;
 var b;
 var i;
@@ -55,11 +58,13 @@ opts = {
 	'lineStyle': [
 		'-',
 		'none',
+		'none',
 		'-'
 	],
 	'symbols': [
 		'none',
 		'open-circle',
+		'closed-circle',
 		'none'
 	],
 	'autoRender': false,
@@ -78,36 +83,42 @@ for ( i = 0; i < y1.length; i++ ) {
 	y1[ i ] = model( m, x1[i], b );
 }
 
-// Noisy data...
-sigma = 0.0;
+// Noisy data + fit...
+sigma = 2.5;
+N = 100;
 
-x2 = new Float64Array( 100 );
-y2 = new Float64Array( x2.length );
-for ( i = 0; i < x2.length; i++ ) {
-	x2[ i ] = randu() * opts.xMax;
-	y2[ i ] = model( m, x2[i], b ) + randn()*sigma;
-}
-
-// Fit...
 fit = onlineRegression({
 	'lambda': 1e-4,
 	'loss': 'squaredError',
 	'intercept': true
 });
 
-x3 = new Float64Array( 2 );
-x3[ 0 ] = opts.xMin;
-x3[ 1 ] = opts.xMax;
+x2 = [];
+y2 = [];
+
+x4 = new Float64Array( 2 );
+x4[ 0 ] = opts.xMin;
+x4[ 1 ] = opts.xMax;
 
 html = '';
-for ( i = 0; i < x2.length; i++ ) {
-	fit.update( [ x2[i] ], y2[i] );
-	y3 = new Float64Array( 2 );
-	for ( j = 0; j < x3.length; j++ ) {
-		y3[ j ] = fit.predict( [ x3[j] ] );
+for ( i = 0; i < N; i++ ) {
+	// Generate a new data point:
+	x3 = randu() * opts.xMax;
+	x2.push( x3 );
+
+	y3 = model( m, x3, b ) + randn()*sigma;
+	y2.push( y3 );
+
+	// Update the model:
+	fit.update( [ x3 ], y3 );
+	y4 = new Float64Array( 2 );
+	for ( j = 0; j < x4.length; j++ ) {
+		y4[ j ] = fit.predict( [ x4[j] ] );
 	}
+
+	// Generate a plot:
 	opts.title = 'Fit: '+i;
-	plot = new Plot( [x1,x2,x3], [y1,y2,y3], opts );
+	plot = new Plot( [x1,x2,[x3],x4], [y1,y2,[y3],y4], opts );
 	html += toHTML( plot.render() );
 }
 
