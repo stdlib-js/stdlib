@@ -36,6 +36,12 @@ Once cloned, navigate to the cloned repository
 $ cd ./path/to/cloned/stdlib-js/stdlib
 ```
 
+and checkout the `develop` branch
+
+``` bash
+$ git checkout develop
+```
+
 
 #### Environment Variables
 
