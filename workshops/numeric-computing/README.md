@@ -27,7 +27,7 @@ Another alternative is to use [Cygwin][cygwin], a collection of GNU and open sou
 To get started, acquire the [stdlib][stdlib] source code by performing a [shallow clone][git-clone-depth] of the [stdlib][stdlib] repository
 
 ``` bash
-$ git clone --depth 1 https://github.com/stdlib-js/stdlib
+$ git clone --depth 1 https://github.com/stdlib-js/stdlib -b develop
 ```
 
 Once cloned, navigate to the cloned repository
