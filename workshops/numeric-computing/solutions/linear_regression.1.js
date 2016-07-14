@@ -72,7 +72,7 @@ for ( i = 0; i < y1.length; i++ ) {
 sigma = 100.0;
 
 x2 = new Float64Array( 100 );
-y2 = new Float64Array( 100 );
+y2 = new Float64Array( x2.length );
 for ( i = 0; i < x2.length; i++ ) {
 	x2[ i ] = randu() * opts.xMax;
 	y2[ i ] = model( m, x2[i], b ) + randn()*sigma;
