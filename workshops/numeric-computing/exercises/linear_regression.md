@@ -21,7 +21,7 @@
 * Using the same model, generate `100` "noisy" `(x,y)` pairs, where `x` is sampled from a [uniform][randu] distribution over the interval `[0,100]` and `y` has [Gaussian][randn] noise with standard deviation `sigma = 100.0`.
 
   ``` text
-  y_noisy = y + randn()*sigma = 5.0*(randu()*100) + 3.0 + randn()*sigma 
+  y_noisy[i] = y[i] + randn()*sigma = 5.0*(randu()*100) + 3.0 + randn()*sigma 
   ```
 
   Plot the generated data as a scatter plot on top of the line plot produced above.
