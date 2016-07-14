@@ -33,7 +33,7 @@
 
   - a line representing the true (underlying) model
   - a scatterplot representing the noisy data
-  - a line representing the fitted model (can be obtained via the model coefficients or using the `predict` method)
+  - a line representing the fitted model (if using the [online regression][online-regression] module, can be obtained via the model coefficients or using the `predict` method)
 
   Concatenate all plots into a single report and view in a browser window.
 
