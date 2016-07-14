@@ -51,9 +51,9 @@
 
 # Algorithm
 
-1) Randomly choose an initial state.
-2) Randomly choose the next state.
-3) Repeat (2).
+1. Randomly choose an initial state.
+2. Randomly choose the next state.
+3. Repeat (2).
 
 ---
 
