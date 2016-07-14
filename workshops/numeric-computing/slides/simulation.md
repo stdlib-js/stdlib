@@ -1,14 +1,12 @@
 # Simulation
 
----
-
 > Process of creating and analyzing a digital prototype of a model to predict performance in the physical world.
 
 ---
 
 # Why?
 
-* Aid understanding of both effects and assumptions.
+* Aid understanding of both assumptions and effects.
 * Probe edge cases.
 * Limited by computational power, not acquisition.
 
@@ -28,17 +26,13 @@
 
 # Markov Process
 
----
-
 > Model for a system that changes state according to a transition rule that depends on only the current state.
 
 ---
 
-> A sequence of states through which a Markov process moves.
-
----
-
 # Markov Chain
+
+> A sequence of states through which a Markov process moves.
 
 ---
 
