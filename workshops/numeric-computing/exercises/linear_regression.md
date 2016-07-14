@@ -29,7 +29,13 @@
 
 ### 2) Online Linear Regression
 
-* Incrementally fit a linear model to the noisy data (see [online regression][online-regression]). After updating the linear model with a datum, generate a plot which includes a line representing the true (underlying) model, a scatterplot representing the noisy data, and a line representing the fitted model (obtained via the model coefficients). Concatenate all plots into a single report and view in a browser window.
+* Incrementally fit a linear model to the noisy data above (see [online regression][online-regression]). After each update of the linear model, generate a plot which includes
+
+  - a line representing the true (underlying) model
+  - a scatterplot representing the noisy data
+  - a line representing the fitted model (can be obtained via the model coefficients or using the `predict` method)
+
+  Concatenate all plots into a single report and view in a browser window.
 
 
 ## Tips
