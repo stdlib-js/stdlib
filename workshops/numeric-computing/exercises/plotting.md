@@ -7,7 +7,7 @@
 
 ### 1) Plot Instances
 
-* Create a `plot` instance.
+* Create a [`plot`][plot] instance.
 * Try setting various properties with what you consider expected and unexpected values.
 
 
@@ -15,11 +15,11 @@
 
 For each exercise, generate both a `browser` view and a `window` view.
 
-* Create a `plot` instance configured to plot a single line.
-* Create a `plot` instance configured to generate a scatter plot.
-* Create a `plot` instance configured to plot multiple lines. Experiment with different line styles, colors, and other properties.
-* Create a `plot` instance configured to plot data as a line plot combined with a scatter plot.
-* Create a scatter plot with axes rug plots.
+* Create a [`plot`][plot] instance configured to plot a single line.
+* Create a [`plot`][plot] instance configured to generate a scatter plot.
+* Create a [`plot`][plot] instance configured to plot multiple lines. Experiment with different line styles, colors, and other properties.
+* Create a [`plot`][plot] instance configured to plot data as a line plot combined with a scatter plot.
+* Create a scatter [`plot`][plot] with axes rug plots.
 
 
 ### 3) Multiple Plots
