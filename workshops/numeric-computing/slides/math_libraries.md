@@ -172,7 +172,7 @@ T_11 = T[ T.strides[0]*1 + T.strides[1]*1 ];
 
 ``` javascript
 function isnan( v ) {
-    return ( v === v );
+    return ( v !== v );
 }
 
 function isEqual( x, y ) {
