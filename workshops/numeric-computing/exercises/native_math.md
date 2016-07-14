@@ -72,7 +72,7 @@ $ node ./path/to/<solution_2>.js
 # ...
 ```
 
-When all your solutions pass, proceed to the [next exercise][next-exercise].
+When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 
 <!-- <links> -->
