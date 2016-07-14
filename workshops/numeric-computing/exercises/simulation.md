@@ -56,7 +56,7 @@
   - Write the database to file as JSON.
 
 
-#### 4) Text Generation
+### 4) Text Generation
 
 * Using the database and word list from above, create a function to generate text having a maximum word length of `25`. Hints:
 
