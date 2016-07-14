@@ -51,7 +51,7 @@ opts = {
 	'xLabel': 'x',
 	'yLabel': 'y',
 	'xMin': 0,
-	'xMax': 100,
+	'xMax': 1,
 	'lineStyle': [
 		'-',
 		'none',
