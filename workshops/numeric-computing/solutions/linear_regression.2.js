@@ -106,6 +106,7 @@ for ( i = 0; i < x2.length; i++ ) {
 	for ( j = 0; j < x3.length; j++ ) {
 		y3[ j ] = fit.predict( [ x3[j] ] );
 	}
+	opts.title = 'Fit: '+i;
 	plot = new Plot( [x1,x2,x3], [y1,y2,y3], opts );
 	html += toHTML( plot.render() );
 }
