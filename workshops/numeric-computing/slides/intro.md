@@ -8,15 +8,12 @@
 
 # Timeline
 
-* Introduction
+* Intro
 * Plotting
 * Native math
 * Math libraries
-* ndarrays
-* Streams
+* Simulation
 * Machine learning
-* Sentiment analysis
-* Command-line utilities
 
 ---
 
