@@ -170,6 +170,9 @@ T_11 = T[ T.strides[0]*1 + T.strides[1]*1 ];
 
 # Floating-Point Math
 
+
+---
+
 ``` javascript
 function isnan( v ) {
     return ( v !== v );
@@ -185,6 +188,36 @@ function isEqual( x, y ) {
     return ( x === y );
 }
 ```
+
+---
+
+float64 (64 bits)
+f := fraction (significand/mantissa) (52 bits)
+e := exponent (11 bits)
+s := sign bit (1 bit)
+
+|-------- -------- -------- -------- -------- -------- -------- --------|
+|                                Float64                                |
+|-------- -------- -------- -------- -------- -------- -------- --------|
+|              Uint32               |               Uint32              |
+|-------- -------- -------- -------- -------- -------- -------- --------|
+
+If little endian (more significant bits last):
+
+
+                        <-- lower      higher -->
+|   f7       f6       f5       f4       f3       f2    e2 | f1 |s|  e1  |
+
+
+If big endian (more significant bits first):
+
+
+                        <-- higher      lower -->
+|s| e1    e2 | f1     f2       f3       f4       f5        f6      f7   |
+
+
+In which Uint32 can we find the higher order bits? If little endian, the second; if big endian, the first.
+
 
 ---
 
