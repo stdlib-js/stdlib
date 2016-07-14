@@ -43,7 +43,7 @@ opts = {
 	'xLabel': 'x',
 	'yLabel': 'y',
 	'xMin': 0,
-	'xMax': 100,
+	'xMax': 1,
 	'lineStyle': [
 		'-',
 		'none'
@@ -69,7 +69,7 @@ for ( i = 0; i < y1.length; i++ ) {
 }
 
 // Noisy data...
-sigma = 100.0;
+sigma = 2.5;
 
 x2 = new Float64Array( 100 );
 y2 = new Float64Array( x2.length );
