@@ -42,13 +42,13 @@ $ cd ./path/to/cloned/stdlib-js/stdlib
 For the purposes of this workshop, from the top-level repository directory, set the [`NODE_PATH`][node-path] environment variable. On Linux and Mac OS X,
 
 ``` bash
-$ export NODE_PATH=./lib/node_modules
+$ export NODE_PATH=/path/to/stdlib-js/stdlib/lib/node_modules
 ```
 
 On Windows,
 
 ``` bash
-$ set NODE_PATH=./lib/node_modules
+$ set NODE_PATH=C:\\\\path\\to\\stdlib-js\\stdlib\\lib\\node_modules
 ```
 
 Note that setting an [environment variable][env-var] via `export` or `set` only affects the current shell. The [environment variable][env-var] will __not__ be available in other shells. To make the [environment variable][env-var] available to all shells, edit the platform-specific configuration file for configuring user environments; e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant. Once set, you may need to reload the configuration file in existing shells. For example, in a bash shell,
