@@ -18,7 +18,7 @@
 
   to plot a line over the interval `[0,100]`.
 
-* Using the same model, generate `100` "noisy" x/y data pairs, where `x` is sampled from a uniform distribution over the interval `[0,100]` and `y` has Gaussian noise with standard deviation `sigma = 100.0`.
+* Using the same model, generate `100` "noisy" `(x,y)` pairs, where `x` is sampled from a [uniform][randu] distribution over the interval `[0,100]` and `y` has [Gaussian][randn] noise with standard deviation `sigma = 100.0`.
 
   ``` text
   y_prime = y + randn()*sigma = 5.0*(randu()*100) + 3.0 + randn()*sigma 
@@ -54,6 +54,9 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 [linear-regression]: https://en.wikipedia.org/wiki/Linear_regression
 [online-regression]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/ml/online-sgd-regression
+
+[randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+[randn]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randn
 
 [next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/
 
