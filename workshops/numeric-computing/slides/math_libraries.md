@@ -60,7 +60,7 @@ Basic math functionality + expression parser.
 
 ---
 
-# Poor algorithms
+# Algorithms
 
 ---
 
@@ -114,7 +114,7 @@ function factorial( n ) {
 
 ---
 
-# Poor Data Structures
+# Data Structures
 
 ---
 
@@ -168,7 +168,7 @@ T_11 = T[ T.strides[0]*1 + T.strides[1]*1 ];
 
 ---
 
-# Poor Floating-Point Math
+# Floating-Point Math
 
 ``` javascript
 function isnan( v ) {
