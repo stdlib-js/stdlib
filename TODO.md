@@ -893,7 +893,17 @@ TODO
 
      - for CI, push concatenated `lcov` to coverage service
 
-126. [regex-adventure](https://github.com/substack/regex-adventure): useful for inspiration
+126. adventures / workshoppers
+
+     - [regex-adventure](https://github.com/substack/regex-adventure)
+     - [workshopper-adventure](https://github.com/workshopper/workshopper-adventure)
+     - [demo-workshopper](https://github.com/linclark/demo-workshopper)
+     - [adventure](https://github.com/substack/adventure)
+     - [learnyounode](https://github.com/workshopper/learnyounode)
+     - [workshopper-exercise](https://github.com/workshopper/workshopper-exercise)
+     - [stream-adventure](https://github.com/substack/stream-adventure)
+     - [functional-javascript](https://github.com/timoxley/functional-javascript-workshop/issues/7)
+     - [p2p-workshop](https://github.com/mafintosh/p2p-workshop)
 
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
 
@@ -945,6 +955,12 @@ TODO
      - [cleaver](https://github.com/jdan/cleaver)
 
 148. Visual intro to [machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+
+149. Refactor `make` workshops recipes
+
+150. [mbtaviz](http://mbtaviz.github.io/) and [Github org](https://github.com/mbtaviz)
+
+151. add FAQ with answers to things like, "Why JavaScript?"
 
 
 
@@ -1051,14 +1067,6 @@ TODO
 8. xExtendedTicks?
 
 
-1. trig benchmarks
-2. stream from list
-3. map stream which loads an (accuracy) benchmark and runs (requires, say, Julia serving as standard)
-4. map stream which receives results and outputs a plot
-5. concat stream which buffers all plots
-6. map stream which takes list of plots and injects into HTML template
-7. launch a disposable server
-
 
 ---
 
@@ -1066,7 +1074,7 @@ TODO
 
 #### Numeric Computing
 
-1. Markov simulation and text generator exercise
+1. 
 2. include links to survey in main README
 3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
 
