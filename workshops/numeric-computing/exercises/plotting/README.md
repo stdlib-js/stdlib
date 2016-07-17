@@ -53,6 +53,6 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 [disposable-http-server]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/tools/disposable-http-server
 [vdom-to-html]: https://github.com/nthtran/vdom-to-html
 
-[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/native_math.md
+[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
 <!-- </links> -->

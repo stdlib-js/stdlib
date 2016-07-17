@@ -6,7 +6,7 @@
 
 ---
 
-# Applications
+## Applications
 
 * Computer vision
 * Fraud detection
@@ -18,7 +18,7 @@
 
 ---
 
-# Linear Regression
+## Linear Regression
 
 ---
 
@@ -26,21 +26,21 @@
 
 ---
 
-# Simple Case
+### Simple Case
 
-```
+``` text
 y = mx + b
 ```
 
 ---
 
-# Example
+### Example
 
 [House prices](http://jgscott.github.io/teaching/r/house/house.html)
 
 ---
 
-# ML in JS
+## ML in JS
 
 ---
 

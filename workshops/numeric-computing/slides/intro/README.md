@@ -1,12 +1,8 @@
-# Hello
-
----
-
 # Numeric Computing in JavaScript
 
 ---
 
-# Timeline
+## Timeline
 
 * Intro
 * Plotting
@@ -17,7 +13,7 @@
 
 ---
 
-# Objectives
+## Objectives
 
 * Introduction to numeric computing.
 * Numeric computing in JavaScript.
@@ -26,13 +22,13 @@
 
 ---
 
-# What is numeric computing?
+## What is numeric computing?
 
 > The development, use, and analysis of algorithms to solve numeric problems, particularly those in the fields of mathematics, statistics, science, engineering, and business intelligence.
 
 ---
 
-# Interactive numeric computing
+## Interactive numeric computing
 
 > Numeric computing and analysis as an iterative process.
 

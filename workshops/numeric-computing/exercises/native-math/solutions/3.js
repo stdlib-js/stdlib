@@ -3,7 +3,7 @@
 var Plot = require( '@stdlib/plot/plot' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var data = require( './../fixtures/sin/data.json' );
-var rmse = require( './native_math.2.js' );
+var rmse = require( './2.js' );
 
 var delta;
 var plot;

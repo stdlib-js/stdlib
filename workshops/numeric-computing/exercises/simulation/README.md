@@ -110,6 +110,6 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 [moby-dick]: http://www.gutenberg.org/cache/epub/2701/pg2701.txt
 
-[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/linear_regression.md
+[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
 <!-- </links> --> 

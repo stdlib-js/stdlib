@@ -48,6 +48,6 @@ When you have completed all exercises, proceed to the [next exercise][next-exerc
 [sparkline]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/plot/sparklines/unicode/column
 [randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
 
-[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/simulation.md
+[next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
 <!-- </links> -->

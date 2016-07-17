@@ -4,7 +4,7 @@
 
 ---
 
-# Why?
+## Why?
 
 * Aid understanding of both assumptions and effects.
 * Probe edge cases.
@@ -12,38 +12,38 @@
 
 ---
 
-# Model
+## Model
 
 > A set of assumptions regarding sample data generation, with extension to a larger data population.
 
 ---
 
-# Example
+### Example
 
 * Weather
 
 ---
 
-# Markov Process
+## Markov Process
 
 > Model for a system that changes state according to a transition rule that depends on only the current state.
 
 ---
 
-# Markov Chain
+## Markov Chain
 
 > A sequence of states through which a Markov process moves.
 
 ---
 
-# Markov Chain Simulation
+## Markov Chain Simulation
 
 * Initial probability vector
 * Transition probability matrix
 
 ---
 
-# Algorithm
+### Algorithm
 
 1. Randomly choose an initial state.
 2. Randomly choose the next state.
@@ -51,7 +51,7 @@
 
 ---
 
-# Applications
+## Applications
 
 * Mathematics
 * Statistics

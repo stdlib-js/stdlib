@@ -8,9 +8,9 @@ var floor = require( '@stdlib/math/base/special/floor' );
 
 // FIXTURES //
 
-var DB = require( './../fixtures/moby-dick/db.json' );
+var DB = require( './build/db.json' );
 
-var filepath = path.resolve( __dirname, '../fixtures/moby-dick/list.txt' );
+var filepath = path.join( __dirname, 'build', 'list.txt' );
 var LIST = readFileSync( filepath, {
 	'encoding': 'utf8'
 });
