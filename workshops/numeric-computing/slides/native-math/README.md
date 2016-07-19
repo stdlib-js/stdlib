@@ -2,7 +2,7 @@
 
 ---
 
-# ES5
+## ES5
 
 * max
 * min
@@ -25,7 +25,7 @@
 
 ---
 
-# ES2015
+## ES2015
 
 * sign
 * fround
@@ -47,7 +47,7 @@
 
 ---
 
-# Multi-value Support
+## Multi-value Support
 
 ``` javascript
 var max = Math.max( 3, 1, 4, 1 );
@@ -56,7 +56,7 @@ var max = Math.max( 3, 1, 4, 1 );
 
 ---
 
-# Array Support
+## Array Support
 
 ``` javascript
 var x = [ 3, 1, 4, 1 ];
@@ -66,7 +66,7 @@ var max = Math.max.apply( null, x );
 
 ---
 
-# Performance
+## Performance
 
 ``` javascript
 function max( x ) {
@@ -86,7 +86,7 @@ function max( x ) {
 
 ---
 
-# ECMA-262
+## ECMA-262
 
 * Does not mandate specific Math algorithms (recommends libm).
 * No required precision (speed vs accuracy).
@@ -95,7 +95,7 @@ function max( x ) {
 
 ---
 
-# Implementation Bugs
+## Implementation Bugs
 
 [V8 sin/cos](https://bugs.chromium.org/p/v8/issues/detail?id=3006)
 

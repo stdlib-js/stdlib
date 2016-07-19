@@ -6,14 +6,17 @@ var splitStream = require( '@stdlib/streams/utils/split' );
 var joinStream = require( '@stdlib/streams/utils/join' );
 var transformStream = require( '@stdlib/streams/utils/transform' );
 
+// Create a directory to store artifacts:
+fs.mkdirSync( path.join( __dirname, 'build' ) );
+
 // Create a file read stream:
-var filepath = path.resolve( __dirname, '../fixtures/moby-dick/text.txt' );
+var filepath = path.resolve( __dirname, './build/text.txt' );
 var source = fs.createReadStream( filepath, {
 	'encoding': 'utf8'
 });
 
 // Create a file write stream:
-filepath = path.resolve( __dirname, '../fixtures/moby-dick/list.txt' );
+filepath = path.resolve( __dirname, './build/list.txt' );
 var toFile = fs.createWriteStream(
 	filepath, {
 		'defaultEncoding': 'utf8'
@@ -115,7 +118,7 @@ function createTransform() {
 		console.log( 'Flushing...' );
 
 		// Write the dictionary to file:
-		filepath = path.resolve( __dirname, '../fixtures/moby-dick/db.json' );
+		filepath = path.resolve( __dirname, './build/db.json' );
 		fs.writeFileSync( filepath, JSON.stringify( db ), {
 			'encoding': 'utf8'
 		});

@@ -2,47 +2,47 @@
 
 ---
 
-# History
+## History
 
 ---
 
-# Sylvester (2007)
+### Sylvester (2007)
 
 Vector and matrix library.
 
 ---
 
-# jstat (2010)
+### jstat (2010)
 
 Statistics.
 
 ---
 
-# numeric (2011)
+### numeric (2011)
 
 Math in the browser.
 
 ---
 
-# science.js (2011)
+### science.js (2011)
 
 D3 utilities.
 
 ---
 
-# numbers (2012)
+### numbers (2012)
 
 Basic math + calculus. 
 
 ---
 
-# math.js (2013)
+### math.js (2013)
 
 Basic math functionality + expression parser.
 
 ---
 
-# Deep Learning
+### Deep Learning
 
 [brain (2010)](https://github.com/harthur/brain)
 
@@ -50,17 +50,17 @@ Basic math functionality + expression parser.
 
 ---
 
-# ...many more
+### ...many more
 
 >120 libraries and growing (as of July 2016).
 
 ---
 
-# Shortcomings
+## Shortcomings
 
 ---
 
-# Algorithms
+### Algorithms
 
 ---
 
@@ -114,7 +114,7 @@ function factorial( n ) {
 
 ---
 
-# Data Structures
+### Data Structures
 
 ---
 
@@ -168,7 +168,7 @@ T_11 = T[ T.strides[0]*1 + T.strides[1]*1 ];
 
 ---
 
-# Floating-Point Math
+### Floating-Point Math
 
 
 ---
@@ -221,7 +221,7 @@ In which Uint32 can we find the higher order bits? If little endian, the second;
 
 ---
 
-# What is equality?
+#### What is equality?
 
 ``` javascript
 var toBinaryString = require( '@stdlib/math/base/utils/float64-to-binary-string' );
@@ -232,7 +232,7 @@ var bits = toBinaryString( 4 );
 
 ---
 
-# What is a NaN?
+#### What is a NaN?
 
 * IEEE 754
 * Series of 64 bits (double)
@@ -242,7 +242,7 @@ var bits = toBinaryString( 4 );
 
 ---
 
-# Non-Equal NaNs
+#### Non-Equal NaNs
 
 ``` javascript
 var x = 0; // => '0 00000000000 0000000000000000000000000000000000000000000000000000'
@@ -285,7 +285,7 @@ Are x1 and x2 equal?
 
 ---
 
-# Summary
+## Summary
 
 * Do due diligence => READ THE SOURCE!
 * Most math libraries lack solid fundamentals.

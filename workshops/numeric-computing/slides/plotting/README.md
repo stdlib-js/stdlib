@@ -2,45 +2,45 @@
 
 ---
 
-# Exploratory Data Analysis
+## Exploratory Data Analysis
 
 The first, and most important, element of numeric computing.
 
 ---
 
-# History
+## History
 
 ---
 
-# Playfair
+### Playfair
 
 ![Playfair](/img/william_playfair_time_series.png)
 
 ---
 
-# Minard
+### Minard
 
 ![Minard](/img/minard_napoleans_march.png)
 
 ---
 
-# Nightingale
+### Nightingale
 
 [coxcomb](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets/nightingales-rose)
 
 ---
 
-# Modern Day
+### Modern Day
 
 ---
 
-# Spreadsheets
+### Spreadsheets
 
 [example](https://docs.google.com/spreadsheets/d/1YCSgTTZRPdIv0nDZmEeD_ERxs-rFczFtVdb1bmX7zM8/edit#gid=0)
 
 ---
 
-# MATLAB
+### MATLAB
 
 ``` matlab
 figure
@@ -50,7 +50,7 @@ ylabel( 'random numbers' );
 
 ---
 
-# gnuplot
+### gnuplot
 
 ``` text
 set title "Some Math Functions"
@@ -62,7 +62,7 @@ plot (x/4)**2, sin(x), 1/x
 
 ---
 
-# Python
+### Python
 
 ``` python
 import matplotlib.pyplot as plt
@@ -73,7 +73,7 @@ plt.show()
 
 ---
 
-# R
+### R
 
 ``` r
 plot( 1:10, 1:10, ylab="some numbers" )
@@ -81,7 +81,7 @@ plot( 1:10, 1:10, ylab="some numbers" )
 
 ---
 
-# Julia
+### Julia
 
 ``` julia
 Pkg.add( "PyPlot" );
@@ -95,7 +95,7 @@ plot( x, y, color="red", linewidth=2.0, linestyle="--" );
 
 ---
 
-# Web
+### Web
 
 ---
 
@@ -106,42 +106,42 @@ plot( x, y, color="red", linewidth=2.0, linestyle="--" );
 
 ---
 
-# Raphael
+### Raphael
 
 [SVG](http://dmitrybaranovskiy.github.io/raphael/analytics.html)
 
 
 ---
 
-# Processing
+### Processing
 
 [example](https://processing.org/examples/sinewave.html)
 
 
 ---
 
-# Highcharts
+### Highcharts
 
 [example](http://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/line-basic/)
 
 
 ---
 
-# Protovis
+### Protovis
 
 [example](http://mbostock.github.io/protovis/ex/line.html)
 
 
 ---
 
-# Crossfilter
+### Crossfilter
 
 [demo](http://square.github.io/crossfilter/)
 
 
 ---
 
-# D3
+### D3
 
 [gallery](https://github.com/d3/d3/wiki/Gallery)
 
@@ -214,7 +214,7 @@ function type(d) {
 
 ---
 
-# Vega
+### Vega
 
 [example](http://vega.github.io/vega-editor/index.html?spec=index_chart)
 
@@ -225,7 +225,7 @@ function type(d) {
 
 ---
 
-# MetricsGraphics
+### MetricsGraphics
 
 [example](http://metricsgraphicsjs.org/examples.htm)
 
@@ -246,7 +246,7 @@ MG.data_graphic({
 
 ---
 
-# Plot.ly
+### Plot.ly
 
 [demo](https://plot.ly/javascript/)
 

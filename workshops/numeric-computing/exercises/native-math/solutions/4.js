@@ -5,7 +5,7 @@ var getKeys = require( 'object-keys' ).shim();
 var Plot = require( '@stdlib/plot/plot' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
-var rmse = require( './native_math.2.js' );
+var rmse = require( './2.js' );
 
 /**
 * Compute the deviations between a native JavaScript Math method and a standard and returns a rendered plot.

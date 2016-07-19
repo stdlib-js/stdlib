@@ -75,18 +75,6 @@ $ make install
 
 #### Testing
 
-To test that the environment variable is set,
-
-``` bash
-$ ./node_modules/.bin/tape ./workshops/numeric-computing/test/*.js
-```
-
-If the tests pass, run the workshop examples
-
-``` bash
-$ node ./workshops/numeric-computing/examples
-```
-
 To run the full test suite,
 
 ``` bash
@@ -105,7 +93,7 @@ $ make examples
 To begin the exercises, open the following URL in your browser
 
 ``` text
-https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/plotting.md
+https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/plotting
 ```
 
 
