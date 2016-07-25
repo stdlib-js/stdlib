@@ -86,6 +86,8 @@ TODO
 
    * [`mkdocs`](http://www.mkdocs.org/)
 
+   * [`docpress`](https://github.com/docpress/docpress)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -961,6 +963,10 @@ TODO
 150. [mbtaviz](http://mbtaviz.github.io/) and [Github org](https://github.com/mbtaviz)
 
 151. add FAQ with answers to things like, "Why JavaScript?"
+
+152. Investigate [hyperterm](https://github.com/zeit/hyperterm)
+
+153. For AI inspiration, see [here](https://github.com/umgupta/aima-javascript) and [here](https://github.com/aimacode/aima-javascript)
 
 
 
