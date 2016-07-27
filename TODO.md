@@ -789,20 +789,20 @@ TODO
 100. review
 
      * [x] datasets
-     * [x] math/base/blas
-     * [x] math/base/random
-     * [x] math/base/special
-     * [x] math/base/tools
-     * [x] math/base/utils
+     * [ ] math/base/blas
+     * [ ] math/base/random
+     * [ ] math/base/special
+     * [ ] math/base/tools
+     * [ ] math/base/utils
      * [ ] math/constants
-     * [x] math/generics/statistics
+     * [ ] math/generics/statistics
      * [ ] math/generics/utils
-     * [x] namespace
+     * [ ] namespace
      * [ ] plot
-     * [x] regexp
-     * [x] repl
-     * [x] streams
-     * [x] tools
+     * [ ] regexp
+     * [ ] repl
+     * [ ] streams
+     * [ ] tools
      * [ ] utils
 
 101. [v8-profiler](https://github.com/node-inspector/v8-profiler) and [node-inspector](https://github.com/node-inspector/node-inspector)
@@ -975,6 +975,8 @@ TODO
 156. [cssstats](https://github.com/cssstats/cssstats)
 
 157. [math-input](https://github.com/Khan/math-input) and [mathquill](https://github.com/mathquill/mathquill)
+
+158. For Nightingale's rose dataset, generate an SVG figure with code, rather than use a static image
 
 
 
