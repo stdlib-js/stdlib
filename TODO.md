@@ -968,6 +968,14 @@ TODO
 
 153. For AI inspiration, see [here](https://github.com/umgupta/aima-javascript) and [here](https://github.com/aimacode/aima-javascript)
 
+154. [trymodule](https://github.com/VictorBjelkholm/trymodule)
+
+155. [testron](https://github.com/shama/testron)
+
+156. [cssstats](https://github.com/cssstats/cssstats)
+
+157. [math-input](https://github.com/Khan/math-input) and [mathquill](https://github.com/mathquill/mathquill)
+
 
 
 ---
