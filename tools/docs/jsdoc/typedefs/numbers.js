@@ -182,7 +182,7 @@
 */
 
 /**
-* A number primitive in the interval [0,1]
+* A number primitive on the interval `[0,1]`.
 *
 * @typedef {number} Probability
 */

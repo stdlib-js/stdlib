@@ -25,6 +25,12 @@
 */
 
 /**
+* An object that creates a namespace for its members.
+*
+* @typedef {Object} Namespace
+*/
+
+/**
 * A Node.js `Buffer` instance.
 *
 * @typedef {(Object|Uint8Array)} Buffer
