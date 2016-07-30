@@ -1,7 +1,7 @@
 TODO
 ====
 
-1. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
+0. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
 
    * all PRs, etc, should be made against `develop`
 
@@ -494,9 +494,7 @@ TODO
     * will probably need source maps, otherwise will be difficult to debug
     * as a half-way measure, could intercept `console` method calls, pipe back to server, and then keep a rolling log cache; when an error is received, could stop running examples and print the cache
 
-73. drop `options` requirement for `tools/http-server`
-
-    * make the function polymorphic where it may accept just an `options` arg, a `requestListener` arg, or both args
+73. 
 
 74. review CoC for more community oriented policies
 
@@ -718,7 +716,7 @@ TODO
 
     * modify `SimpleHTTPServer` to only serve READMEs converted to HTML
     * for equations, instead of SVG, use MathJax
-    * could also insert live figures (main, margin)
+    * could also insert live figures (main, as margin notes)
     * an extension would be to make the code samples interactive
     * gateway to running benchmarks, tests, and examples in-browser
     * how would we annotate for reactive documents? inline comments? spans?
@@ -738,7 +736,7 @@ TODO
     * install deps
     * run tests, test-coverage, benchmarks, lint, etc
 
-90. add a `run.sh` file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
+90. add a `run.sh` (`build.sh` ?) file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
 
 91. JS style guide
 
@@ -788,6 +786,7 @@ TODO
 
 100. review
 
+     * [ ] crypto
      * [x] datasets
      * [ ] math/base/blas
      * [ ] math/base/random
@@ -798,11 +797,12 @@ TODO
      * [ ] math/generics/statistics
      * [ ] math/generics/utils
      * [ ] namespace
+     * [x] net
      * [ ] plot
-     * [ ] regexp
-     * [ ] repl
-     * [ ] streams
-     * [ ] tools
+     * [x] regexp
+     * [x] repl
+     * [x] streams
+     * [x] tools
      * [ ] utils
 
 101. [v8-profiler](https://github.com/node-inspector/v8-profiler) and [node-inspector](https://github.com/node-inspector/node-inspector)
@@ -939,7 +939,7 @@ TODO
 
 140. sparkline rug plot
 
-141. review steam and leaf unicode plot
+141. review stem and leaf unicode plot
 
 142. add unicode sparklines to namespace => requires abstract interface
 
@@ -977,6 +977,10 @@ TODO
 157. [math-input](https://github.com/Khan/math-input) and [mathquill](https://github.com/mathquill/mathquill)
 
 158. For Nightingale's rose dataset, generate an SVG figure with code, rather than use a static image
+
+159. [bats](https://github.com/sstephenson/bats): bash automated testing; could also be useful for testing CLI scripts
+
+160. investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
 
 
 
