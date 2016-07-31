@@ -3,11 +3,11 @@
 > Common answers to common questions.
 
 
-* [Why numeric computing in JavaScript?][numeric-computing-in-javascript]
-* [Why reimplement and provide custom Math implementations?][custom-math-implementations]
-* [Promise support?][promise-support]
-* [Why a monorepo?][monorepo]
-* [How can I contribute?][contributing]
+* [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
+* [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
+* [Promise support?](#promise-support)
+* [Why a monorepo?](#monorepo)
+* [How can I contribute?](#contributing)
 
 
 ---
