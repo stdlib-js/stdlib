@@ -902,6 +902,7 @@ TODO
      - [stream-adventure](https://github.com/substack/stream-adventure)
      - [functional-javascript](https://github.com/timoxley/functional-javascript-workshop/issues/7)
      - [p2p-workshop](https://github.com/mafintosh/p2p-workshop)
+     - [webgl-workshop](https://github.com/stackgl/webgl-workshop)
 
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
 
