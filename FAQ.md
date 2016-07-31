@@ -30,6 +30,12 @@ No.
 
 
 
+### How can I contribute?
+
+See the [contributing guide][contributing-guide].
+
+
+
 <!-- <links> -->
 
 [dom]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
@@ -55,9 +61,8 @@ No.
 
 [mdn-math]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
-<!-- TODO: internal project link -->
-
-[native-math-bugs]: https://github.com/stdlib-js/stdlib/docs/native_math_bugs.md
+[native-math-bugs]: https://github.com/stdlib-js/stdlib/blob/master/docs/native_math_bugs.md
+[contributing-guide]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
 
 [ecma-262]: http://www.ecma-international.org/publications/standards/Ecma-262.htm
 
