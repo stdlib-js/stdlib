@@ -30,6 +30,16 @@ No.
 
 
 
+### Why a monorepo?
+
+* __Tooling__: a monorepo facilitates better and more extensive tooling related to actual development. A polyrepo approach requires more tooling orthogonal to development, such as tooling for aggregation and maintaining repository consistency.
+* __Dependencies__: a monorepo enables easier management of project dependencies, particularly development dependencies related to testing and automation.
+* __Coordination__: a monorepo facilitates coordination of changes across multiple modules and/or an entire project.
+* __Issues__: a monorepo centralizes issues and bug reporting. Managing and tracking issues and bug reports across many repositories is time consuming and error prone.
+* __Testing__: a monorepo drastically simplifies continuous, automated testing. Integration testing across multiple repositories requires extensive tooling, which distracts from core library development. Further, individual repositories are frequently tested only when a change happens to code within __that__ repository, which means that bugs caused by changes to other project repositories are caught after-the-fact, rather than pro-actively via continuous testing.
+* __Context__: a monorepo provides a single entry point and context by which new and existing users can access the project. In a polyrepo approach, new and existing users often lack the required context to understand how an individual repository fits within a larger project.
+
+
 ### How can I contribute?
 
 See the [contributing guide][contributing-guide].
