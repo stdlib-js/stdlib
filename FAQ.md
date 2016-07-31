@@ -3,6 +3,21 @@
 > Common answers to common questions.
 
 
+* [Why numeric computing in JavaScript?][numeric-computing-in-javascript]
+* [Why reimplement and provide custom Math implementations?][custom-math-implementations]
+* [Promise support?][promise-support]
+* [Why a monorepo?][monorepo]
+* [How can I contribute?][contributing]
+
+
+---
+
+<!-- <faq-questions> -->
+
+<!-- <faq-question> -->
+
+<a name="numeric-computing-in-javascript"></a>
+
 ### Why numeric computing in JavaScript?
 
 1. __Speed__: JavaScript is fast for a dynamically compiled language. This is largely due to the need for browser vendors to run web applications as fast as possible, thus forcing vendors to make continuous performance improvements and create highly optimized runtime environments.
@@ -12,7 +27,12 @@
 1. __Distribution__: distributing a numeric compute application is considerably easier when compared to traditional numeric computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
 1. __Package Management__: Node.js package management is superior to anything available in other numeric computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, the tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numeric computing environments.
 
+<!-- </faq-question> -->
 
+
+<!-- <faq-question> -->
+
+<a name="custom-math-implementations"></a>
 
 ### Why reimplement and provide custom Math implementations?
 
@@ -22,13 +42,23 @@
 1. Native math functions frequently have bugs (see [docs/native_math_bugs.md][native-math-bugs]).
 1. Native math functions are often buried deep in compiler code and written in languages other than JavaScript. By implementing Math functions purely in JavaScript, the hope is that the underlying algorithms are more transparent, approachable, forkable, and debuggable.
 
+<!-- </faq-question> -->
 
+
+<!-- <faq-question> -->
+
+<a name="promise-support"></a>
 
 ### Promise support?
 
 No.
 
+<!-- </faq-question> -->
 
+
+<!-- <faq-question> -->
+
+<a name="monorepo"></a>
 
 ### Why a monorepo?
 
@@ -39,11 +69,21 @@ No.
 * __Testing__: a monorepo drastically simplifies continuous, automated testing. Integration testing across multiple repositories requires extensive tooling, which distracts from core library development. Further, individual repositories are frequently tested only when a change happens to code within __that__ repository, which means that bugs caused by changes to other project repositories are caught after-the-fact, rather than pro-actively via continuous testing.
 * __Context__: a monorepo provides a single entry point and context by which new and existing users can access the project. In a polyrepo approach, new and existing users often lack the required context to understand how an individual repository fits within a larger project.
 
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+<a name="contributing"></a>
 
 ### How can I contribute?
 
 See the [contributing guide][contributing-guide].
 
+<!-- </faq-question> -->
+
+
+<!-- </faq-questions> -->
 
 
 <!-- <links> -->
