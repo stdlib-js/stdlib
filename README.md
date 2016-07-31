@@ -113,6 +113,7 @@ examples   top-level library examples
 lib        library source code
 test       top-level tests
 tools      development utilities
+workshops  workshops
 ```
 
 
