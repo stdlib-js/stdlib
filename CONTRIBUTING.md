@@ -1,7 +1,7 @@
-Contribution Guidelines
-===
+# Contribution Guidelines
 
 > Project contribution guidelines.
+
 
 When contributing to this project,
 
