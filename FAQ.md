@@ -24,7 +24,7 @@
 
 
 
-### Will we support promises?
+### Promise support?
 
 No.
 
