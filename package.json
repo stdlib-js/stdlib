@@ -43,7 +43,7 @@
   "devDependencies": {
     "browserify": "13.x.x",
     "chai": "^3.5.0",
-    "david": "^7.0.2",
+    "david": "^8.0.0",
     "github-markdown-equation-element": "^2.0.0",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
