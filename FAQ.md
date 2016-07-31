@@ -5,6 +5,7 @@
 
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
+* [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Promise support?](#promise-support)
 * [Why a monorepo?](#monorepo)
 * [How can I contribute?](#contributing)
@@ -41,6 +42,19 @@
 1. Because native Math functions are implementation dependent, numeric computation applications are __not__ portable. By creating a set of standard Math implementations, we ensure that results on one platform are reproducible on every other platform.
 1. Native math functions frequently have bugs (see [docs/native_math_bugs.md][native-math-bugs]).
 1. Native math functions are often buried deep in compiler code and written in languages other than JavaScript. By implementing Math functions purely in JavaScript, the hope is that the underlying algorithms are more transparent, approachable, forkable, and debuggable.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+<a name="reimplementing-existing-packages"></a>
+
+### Why reimplement module functionality already available on npm?
+
+* __Consistency__: package structure, documentation, testing, and code style vary widely, often as artifacts of author taste and eccentricities. By adhering to a single style, library consumers can focus on implementation details, rather than continual and arbitrary style distractions.
+* __Quality__: packages range from extremely high quality to extremely poor quality, with the distribution of packages skewed toward the latter end of the spectrum. Any reimplementation of existing package functionality is done to ensure the same high standard and quality across all project modules.
+* __Control__: bringing functionality "in-house" enables control of release cycles, testing, distribution, interface design, and API changes. 
 
 <!-- </faq-question> -->
 
