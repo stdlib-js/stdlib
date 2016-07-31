@@ -803,7 +803,23 @@ TODO
      * [x] tools
      * [ ] utils
 
-101. [v8-profiler](https://github.com/node-inspector/v8-profiler) and [node-inspector](https://github.com/node-inspector/node-inspector)
+101. profiling
+
+     * [v8-profiler](https://github.com/node-inspector/v8-profiler)
+     * [node-inspector](https://github.com/node-inspector/node-inspector)
+     * [node-webkit-agent](https://github.com/c4milo/node-webkit-agent)
+     * [node-stackvis](https://github.com/joyent/node-stackvis)
+     * [devtool](https://github.com/Jam3/devtool)
+     * [--prof-process](https://nodejs.org/en/docs/guides/simple-profiling/)
+     * [v8-profiling](http://thlorenz.com/v8-profiling/)
+     * [chrome://tracing/](https://rjzaworski.com/2014/12/profiling-node-js-on-linux)
+     * [v8 profiler docs](https://developers.google.com/v8/profiler_example)
+     * [v8 perf](https://github.com/thlorenz/v8-perf/issues/4)
+     * [v8 performance profiling](https://github.com/thlorenz/v8-perf/blob/master/performance-profiling.md#v8-performance-profiling)
+     * [node-tick](https://github.com/sidorares/node-tick)
+     * [node-tick-processor](https://github.com/drewfish/node-tick-processor)
+     * [v8 profiling](https://github.com/thlorenz/v8-profiling)
+     * `make` recipe
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
@@ -980,8 +996,6 @@ TODO
 160. investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
 
 161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
-
-162. `make` recipe for profiling
 
 
 
