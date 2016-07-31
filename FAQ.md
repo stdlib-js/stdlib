@@ -3,7 +3,7 @@
 > Common answers to common questions.
 
 
-#### Why numeric computing in JavaScript?
+### Why numeric computing in JavaScript?
 
 1. __Speed__: JavaScript is fast for a dynamically compiled language. This is largely due to the need for browser vendors to run web applications as fast as possible, thus forcing vendors to make continuous performance improvements and create highly optimized runtime environments.
 1. __Rendering Engine__: web browsers are performant, highly optimized view engines, supporting a range of rendering modes ([DOM][dom], [canvas][canvas], [WebGL][webgl]). The web browser has become the preferred medium for interactive graphics, with most major numeric computing platforms supporting some form of web browser rendering (R: [shiny][shiny]; Python: [bokeh][bokeh]; MATLAB: [plotly][plotly]). Accordingly, if JavaScript is already being used to render data as a plot, supporting numeric manipulation of that data without requiring language context switching and the additional complexity of establishing bridges between different languages and platforms also makes sense.
@@ -14,7 +14,7 @@
 
 
 
-#### Why reimplement and provide custom Math implementations?
+### Why reimplement and provide custom Math implementations?
 
 1. [ECMA-262][ecma-262] does not mandate specific algorithms (only recommends `libm`). Accordingly, JavaScript implementors are free to choose any algorithm, which means that numeric computation results often differ across environments. This renders JavaScript not amenable to reproducible computation.
 1. [ECMA-262][ecma-262] does not require a minimum [precision][mdn-math]. As a result, JavaScript implementors make non-transparent trade-offs between speed and accuracy, frequently favoring speed above all else. While traditional web applications may not require highly accurate Math results, many numeric computation applications do. And because the implementations are not transparent, debugging accuracy issues in numeric computation applications which use native Math built-ins is considerably more difficult.
@@ -24,7 +24,7 @@
 
 
 
-#### Will we support promises?
+### Will we support promises?
 
 No.
 
