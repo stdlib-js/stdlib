@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 #
-# Script to run the stdlib REPL.
+# Script to run the REPL.
 
 
 # VARIABLES #
 
 # Define the command for `node`:
-export NODE=node
+if [[ -z "$NODE" ]]; then
+	cmd=node
+else
+	cmd="$NODE"
+fi
 
-# Define the path to the stdlib REPL executable:
-export STDLIB_REPL=`dirname "$0"`/../lib/node_modules/\@stdlib/repl/bin/cli
+# Define the path to the REPL executable:
+repl=`dirname "$0"`/../lib/node_modules/\@stdlib/repl/bin/cli
 
 # Define any command-line options to use when invoking the REPL executable:
 flags="$REPL_FLAGS"
@@ -18,24 +22,30 @@ flags="$REPL_FLAGS"
 # FUNCTIONS #
 
 # Defines an error handler.
+#
+# $1 - error status
 on_error() {
-	echo 'ERROR: An error was encountered during execution.'
+	echo 'ERROR: An error was encountered during execution.' >&2
 	cleanup
-	exit 1
-}
-
-# Starts the REPL.
-start() {
-	$NODE "$STDLIB_REPL" "$flags"
+	exit "$1"
 }
 
 # Runs clean-up tasks.
 cleanup() {
-	echo ''
+	echo '' >&2
 }
 
+# Starts the REPL.
+start() {
+	"$cmd" "$repl" "$flags"
+}
 
-# MAIN #
+# Main execution sequence.
+main() {
+	start
+	cleanup
+	exit 0
+}
 
 # Exit immediately if one of the executed commands exits with a non-zero status:
 set -e
@@ -43,8 +53,5 @@ set -e
 # Set an error handler to print captured output and perform any clean-up tasks:
 trap 'on_error' ERR
 
-# Start the REPL environment:
-start
-
-# Run cleanup tasks:
-cleanup
+# Run main:
+main
