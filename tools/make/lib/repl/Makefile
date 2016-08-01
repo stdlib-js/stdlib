@@ -25,7 +25,6 @@ REPL_DIR ?= $(ROOT_DIR)
 
 repl: $(NODE_MODULES) $(REPL)
 	@cd $(REPL_DIR); \
-	echo "Starting REPL..."; \
 	NODE_ENV=$(NODE_ENV_REPL) \
 	NODE_PATH=$(NODE_PATH_REPL) \
 	$(REPL) $(REPL_FLAGS)
