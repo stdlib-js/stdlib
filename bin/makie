@@ -1,39 +1,57 @@
 #!/usr/bin/env bash
 #
-# Script to run the stdlib `makie` utility.
+# Script to run the `makie` utility.
 
 
 # VARIABLES #
 
+# Cache provided arguments:
+args="$@"
+
 # Define the command for `node`:
-export NODE=node
+if [[ -z "$NODE" ]]; then
+	cmd=node
+else
+	cmd="$NODE"
+fi
 
 # Define the path to the `makie` executable:
-export MAKIE=`dirname "$0"`/../tools/makie/makie/bin/cli
+makie=`dirname "$0"`/../tools/makie/makie/bin/cli
 
 # Define the path to the `makie` configuration file:
-export MAKIE_CONFIG=`dirname "$0"`/../etc/.makie.js
+makie_config=`dirname "$0"`/../etc/.makie.js
 
 # Define the path to the Makefile directory:
-export MAKIE_MAKEFILE_DIR=`dirname "$0"`/../
+makie_makefile_dir=`dirname "$0"`/../
 
 
 # FUNCTIONS #
 
 # Defines an error handler.
+#
+# $1 - error status
 on_error() {
-	echo 'ERROR: An error was encountered during execution.'
+	echo 'ERROR: An error was encountered during execution.' >&2
 	cleanup
-	exit 1
+	exit "$1"
 }
 
 # Runs clean-up tasks.
 cleanup() {
-	echo ''
+	echo '' >&2
 }
 
+# Runs makie.
+run() {
+	"$cmd" "$makie" "--config=$makie_config" "--dir=$makie_makefile_dir" "$args"
+}
 
-# MAIN #
+# Main execution sequence.
+main() {
+	run
+	cleanup
+	exit 0
+}
 
 # Exit immediately if one of the executed commands exits with a non-zero status:
 set -e
@@ -41,8 +59,5 @@ set -e
 # Set an error handler to print captured output and perform any clean-up tasks:
 trap 'on_error' ERR
 
-# Run `makie`:
-$NODE "$MAKIE" "--config=$MAKIE_CONFIG" "--dir=$MAKIE_MAKEFILE_DIR" "$@"
-
-# Run cleanup tasks:
-cleanup
+# Run main:
+main
