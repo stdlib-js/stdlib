@@ -198,7 +198,7 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/~chat#
+[chat-url]: https://gitter.im/stdlib-js/stdlib/
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make
