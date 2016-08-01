@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-
-# DESCRIPTION #
-
+#
 # Script to run the stdlib `makie` utility.
 
 
@@ -11,7 +9,7 @@
 export NODE=node
 
 # Define the path to the `makie` executable:
-export MAKIE=`dirname "$0"`/../tools/misc/makie/bin/cli
+export MAKIE=`dirname "$0"`/../tools/makie/makie/bin/cli
 
 # Define the path to the `makie` configuration file:
 export MAKIE_CONFIG=`dirname "$0"`/../etc/.makie.js
