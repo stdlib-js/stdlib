@@ -25,7 +25,7 @@ var MATCH = /\@stdlib/;
 * @throws {TypeError} must provide a function
 *
 * @example
-* async( onList );
+* list( onList );
 *
 * function onList( error, names ) {
 *     if ( error ) {
@@ -34,7 +34,7 @@ var MATCH = /\@stdlib/;
 *     console.dir( names );
 * }
 */
-function async( clbk ) {
+function list( clbk ) {
 	var opts;
 	if ( !isFunction( clbk ) ) {
 		throw new TypeError( 'invalid input argument. Must provide a function. Value: `' + clbk + '`.' );
@@ -49,9 +49,9 @@ function async( clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {StringArray} list - list of matching files
+	* @param {StringArray} names - list of matching files
 	*/
-	function onGlob( error, list ) {
+	function onGlob( error, names ) {
 		var match;
 		var name;
 		var out;
@@ -60,19 +60,19 @@ function async( clbk ) {
 			return clbk( error );
 		}
 		out = [];
-		for ( i = 0; i < list.length; i++ ) {
-			match = list[ i ].match( MATCH );
+		for ( i = 0; i < names.length; i++ ) {
+			match = names[ i ].match( MATCH );
 			if ( match ) {
-				name = list[ i ].substring( match.index );
+				name = names[ i ].substring( match.index );
 				name = dirname( name );
 				out.push( name );
 			}
 		}
 		clbk( null, out );
 	} // end FUNCTION onGlob()
-} // end FUNCTION async()
+} // end FUNCTION list()
 
 
 // EXPORTS //
 
-module.exports = async;
+module.exports = list;

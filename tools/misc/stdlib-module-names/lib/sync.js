@@ -15,7 +15,7 @@ var ROOT = path.resolve( __dirname, stdlib );
 var MATCH = /\@stdlib/;
 
 
-// SYNC //
+// LIST //
 
 /**
 * Synchronously generates a list of stdlib module names.
@@ -23,34 +23,34 @@ var MATCH = /\@stdlib/;
 * @returns {StringArray} list of names
 *
 * @example
-* var names = sync();
+* var names = list();
 * // returns [...]
 */
-function sync() {
+function list() {
 	var match;
+	var names;
 	var name;
 	var opts;
-	var list;
 	var out;
 	var i;
 
 	opts = {
 		'cwd': ROOT
 	};
-	list = glob( PATTERN, opts );
+	names = glob( PATTERN, opts );
 	out = [];
-	for ( i = 0; i < list.length; i++ ) {
-		match = list[ i ].match( MATCH );
+	for ( i = 0; i < names.length; i++ ) {
+		match = names[ i ].match( MATCH );
 		if ( match ) {
-			name = list[ i ].substring( match.index );
+			name = names[ i ].substring( match.index );
 			name = dirname( name );
 			out.push( name );
 		}
 	}
 	return out;
-} // end FUNCTION sync()
+} // end FUNCTION list()
 
 
 // EXPORTS //
 
-module.exports = sync;
+module.exports = list;

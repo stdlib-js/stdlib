@@ -28,15 +28,15 @@
 
 var stdlib = require( './stdlib.js' );
 var setReadOnly = require( stdlib+'@stdlib/utils/define-read-only-property' );
-var async = require( './async.js' );
+var list = require( './async.js' );
 var sync = require( './sync.js' );
 
 
 // METHODS //
 
-setReadOnly( async, 'sync', sync );
+setReadOnly( list, 'sync', sync );
 
 
 // EXPORTS //
 
-module.exports = async;
+module.exports = list;
