@@ -740,8 +740,6 @@ TODO
 
 91. JS style guide
 
-    * update rule re: parentheses in arithmetic ops
-    * add note about ordering vars based on character length
     * declare functions using function declarations; also include another note about anon functions
     * use strict section should add notes re: node vs browser
     * use self section should include note about dynamic scoping of `this` variable
@@ -805,7 +803,23 @@ TODO
      * [x] tools
      * [ ] utils
 
-101. [v8-profiler](https://github.com/node-inspector/v8-profiler) and [node-inspector](https://github.com/node-inspector/node-inspector)
+101. profiling
+
+     * [v8-profiler](https://github.com/node-inspector/v8-profiler)
+     * [node-inspector](https://github.com/node-inspector/node-inspector)
+     * [node-webkit-agent](https://github.com/c4milo/node-webkit-agent)
+     * [node-stackvis](https://github.com/joyent/node-stackvis)
+     * [devtool](https://github.com/Jam3/devtool)
+     * [--prof-process](https://nodejs.org/en/docs/guides/simple-profiling/)
+     * [v8-profiling](http://thlorenz.com/v8-profiling/)
+     * [chrome://tracing/](https://rjzaworski.com/2014/12/profiling-node-js-on-linux)
+     * [v8 profiler docs](https://developers.google.com/v8/profiler_example)
+     * [v8 perf](https://github.com/thlorenz/v8-perf/issues/4)
+     * [v8 performance profiling](https://github.com/thlorenz/v8-perf/blob/master/performance-profiling.md#v8-performance-profiling)
+     * [node-tick](https://github.com/sidorares/node-tick)
+     * [node-tick-processor](https://github.com/drewfish/node-tick-processor)
+     * [v8 profiling](https://github.com/thlorenz/v8-profiling)
+     * `make` recipe
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
@@ -826,9 +840,7 @@ TODO
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
-107. Add a `FAQ.md` and link to it in the issues template
-
-     * e.g., => Promise support? No.
+107. Link to FAQ in the issues template
 
 108. rename `docs` directory to `doc`?
 
@@ -906,6 +918,7 @@ TODO
      - [stream-adventure](https://github.com/substack/stream-adventure)
      - [functional-javascript](https://github.com/timoxley/functional-javascript-workshop/issues/7)
      - [p2p-workshop](https://github.com/mafintosh/p2p-workshop)
+     - [webgl-workshop](https://github.com/stackgl/webgl-workshop)
 
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
 
@@ -981,6 +994,8 @@ TODO
 159. [bats](https://github.com/sstephenson/bats): bash automated testing; could also be useful for testing CLI scripts
 
 160. investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
+
+161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
 
 
 
@@ -1278,6 +1293,8 @@ TODO
 
 61. [S&amp;P 500 dataset](https://github.com/datasets/s-and-p-500)
 
+62. sort methods, both numeric and general
+
 
 ---
 
@@ -1289,30 +1306,7 @@ TODO
    * [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
 
 2. Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
-
-3. Bugs in the built-in `Math` object:
-
-   * [V8 sin/cos](https://bugs.chromium.org/p/v8/issues/detail?id=3006)
-   * [V8 trig fcns](https://bugs.chromium.org/p/chromium/issues/detail?id=320097)
-   * [V8 not obeying IEEE 754-2008](https://bugs.chromium.org/p/v8/issues/detail?id=3089)
-   * [Mozilla discussion on V8 sin/cos](https://bugzilla.mozilla.org/show_bug.cgi?id=967709#c33)
-   * [V8 replaced a trig lookup table and then computes `tan` as `sin/cos`](https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1)
-   * [Browser math accuracy issues](https://github.com/kangax/compat-table/issues/392)
-   * [ES6 accuracy of special functions](https://esdiscuss.org/topic/es6-accuracy-of-special-functions)
-   * [V8 `exp` accuracy](https://bugs.chromium.org/p/v8/issues/detail?id=3468)
-   * [spreadsheet showing trig results across browsers](https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0)
-   * [V8 `pow` accuracy](https://bugs.chromium.org/p/v8/issues/detail?id=3599)
-   * [Mozilla `pow` accumulation of errors](https://bugzilla.mozilla.org/show_bug.cgi?id=618251)
-   * [V8 hyperbolic trig accuracy](https://github.com/paulmillr/es6-shim/issues/334)
-   * [TC39 testing of Math built-ins](https://github.com/tc39/test262/pull/269)
-   * [ES6 shim accuracy issues](https://github.com/paulmillr/es6-shim/issues/314)
-   * [V8 Math.random](https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc)
-   * [V8 fixes Math.random](http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/)
-   * [V8 finally returns pseudorandom numbers](http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref)
-   * [Webkit switched to weak PRNG for speed](https://bugs.chromium.org/p/chromium/issues/detail?id=246054)
-   * [V8 deopts if Math.floor provided -0](https://bugs.chromium.org/p/v8/issues/detail?id=2890)
-   * [V8 deopts if Math.ceil provided 0](https://bugs.chromium.org/p/v8/issues/detail?id=4059)
-   * [V8 Math.round returns wrong results](https://bugs.chromium.org/p/v8/issues/detail?id=958)
+   
 
 
 

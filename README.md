@@ -23,6 +23,11 @@
 
 [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
+
+#### Community
+
+[![Chat][chat-image]][chat-url]
+
 ---
 
 <!-- </badges> -->
@@ -113,6 +118,7 @@ examples   top-level library examples
 lib        library source code
 test       top-level tests
 tools      development utilities
+workshops  workshops
 ```
 
 
@@ -190,6 +196,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 [dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
 [dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
+
+[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
+[chat-url]: https://gitter.im/stdlib-js/stdlib/~chat#
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make

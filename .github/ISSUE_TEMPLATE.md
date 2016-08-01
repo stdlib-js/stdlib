@@ -5,6 +5,7 @@
 
 * [ ] Read and understood the [Code of Conduct][code-of-conduct].
 * [ ] Searched for existing issues and pull requests.
+* [ ] If this is a general question, searched the [FAQ][faq] for an existing answer.
 * [ ] If this is a feature request, the issue name begins with `RFC: `.
 
 
@@ -17,7 +18,7 @@ Encountered an error when .
 
 ## Related Issues
 
-> Does this issue (or featured request) have any related issues?
+> Does this issue (or feature request) have any related issues?
 
 Related issues # , # , and # .
 
@@ -87,4 +88,9 @@ The following environments are affected:
 * c
 
 
+<!-- <links> -->
+
 [code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md
+[faq]: https://github.com/stdlib-js/stdlib/blob/master/FAQ.md
+
+<!-- </links> -->
