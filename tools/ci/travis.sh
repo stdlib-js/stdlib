@@ -11,7 +11,7 @@
 export HEARTBEAT_INTERVAL=30s
 
 # Define the number of lines of logged output to print upon completion:
-export TAIL_LINES=500
+export TAIL_LINES=5000
 
 # Define an output file to store log output:
 export CI_OUT=/var/log/travis-ci.log
