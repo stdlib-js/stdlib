@@ -1,5 +1,4 @@
-makie
-===
+# makie
 
 > Execute project Makefile commands from anywhere in the project.
 
@@ -33,7 +32,7 @@ When executing a command, the current working directory is used as a filter. Thu
 ## Usage
 
 ``` javascript
-var makie = require( '/path/to/stdlib/tools/misc/makie' );
+var makie = require( '/path/to/stdlib/tools/makie/makie' );
 ```
 
 #### makie( dirpath, options, target )

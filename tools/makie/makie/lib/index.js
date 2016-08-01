@@ -3,10 +3,10 @@
 /**
 * Run project Makefile targets from anywhere in the project.
 *
-* @module tools/misc/makie
+* @module tools/makie/makie
 *
 * @example
-* var makie = require( 'tools/misc/makie' );
+* var makie = require( 'tools/makie/makie' );
 * var spawn = require( 'child_process' ).spawn;
 *
 * function plugin( dirpath, cwd, subpath ) {
