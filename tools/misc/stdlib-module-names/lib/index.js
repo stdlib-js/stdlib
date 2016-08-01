@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* List of stdlib module names.
+* List stdlib module names.
 *
 * @module @stdlib/tools/misc/stdlib-module-names
 *
