@@ -7,7 +7,7 @@ var path = require( 'path' );
 
 // VARIABLES //
 
-var prefix = path.resolve( __dirname, '../tools/misc' );
+var prefix = path.resolve( __dirname, '../tools/makie/plugins' );
 
 
 // CONFIG //
