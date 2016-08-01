@@ -11,6 +11,9 @@ export NODE=node
 # Define the path to the stdlib REPL executable:
 export STDLIB_REPL=`dirname "$0"`/../lib/node_modules/\@stdlib/repl/bin/cli
 
+# Define any command-line options to use when invoking the REPL executable:
+flags="$REPL_FLAGS"
+
 
 # FUNCTIONS #
 
@@ -23,7 +26,7 @@ on_error() {
 
 # Starts the REPL.
 start() {
-	$NODE "$STDLIB_REPL"
+	$NODE "$STDLIB_REPL" "$flags"
 }
 
 # Runs clean-up tasks.
