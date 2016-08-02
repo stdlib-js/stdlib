@@ -28,7 +28,7 @@ function onList( error, names ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for modules. Default: `/path/to/lib/node_modules/`.
+* __dir__: root directory from which to search for modules. Default: `/path/to/stdlib/lib/node_modules/`.
 
 To search from a descendant directory, set the `dir` option.
 
