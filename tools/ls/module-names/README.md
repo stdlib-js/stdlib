@@ -34,7 +34,7 @@ To search from a descendant directory, set the `dir` option.
 
 ``` javascript
 var opts = {
-    'dir': '/path/to/lib/node_modules/@stdlib/math/base'
+    'dir': '/path/to/stdlib/lib/node_modules/@stdlib/math/base'
 };
 
 ls( opts, onList );
