@@ -6,7 +6,6 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var parseArgs = require( 'minimist' );
-var notifier = require( 'update-notifier' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
 var ls = require( './../lib' );
@@ -59,11 +58,6 @@ process.title = pkg.name;
 process.stdout.on( 'error', process.exit );
 
 
-// PACKAGE UPDATES //
-
-notifier( { 'pkg': pkg } ).notify();
-
-
 // ARGUMENTS //
 
 args = parseArgs( process.argv.slice( 2 ), opts );
@@ -74,11 +68,15 @@ if ( args.help ) {
 if ( args.version ) {
 	return version();
 }
+opts = {};
+if ( args.dir ) {
+	opts.dir = args.dir;
+}
 
 
 // MAIN //
 
-ls( onList );
+ls( opts, onList );
 
 /**
 * Callback invoked after retrieving a list of module names.

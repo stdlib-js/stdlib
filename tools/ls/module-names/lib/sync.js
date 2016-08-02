@@ -3,15 +3,10 @@
 // MODULES //
 
 var glob = require( 'glob' ).sync;
-var path = require( 'path' );
-var stdlib = require( './stdlib.js' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
-
-
-// VARIABLES //
-
-var ROOT = path.resolve( __dirname, stdlib );
+var validate = require( './validate.js' );
+var getRoot = require( './root.js' );
 
 
 // LS //
@@ -19,17 +14,27 @@ var ROOT = path.resolve( __dirname, stdlib );
 /**
 * Synchronously generates a list of stdlib module names.
 *
+* @param {Options} options - function options
+* @param {string} [options.dir] - root directory from which to search for modules
 * @returns {StringArray} list of names
 *
 * @example
 * var names = ls();
 * // returns [...]
 */
-function ls() {
+function ls( options ) {
 	var names;
 	var opts;
+	var err;
+	opts = {};
+	if ( arguments.length ) {
+		err = validate( opts, options );
+		if ( err ) {
+			throw err;
+		}
+	}
 	opts = {
-		'cwd': ROOT
+		'cwd': getRoot( opts.dir || '' )
 	};
 	names = glob( config.pattern, opts );
 	return transform( names );
