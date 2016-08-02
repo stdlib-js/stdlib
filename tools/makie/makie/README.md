@@ -113,13 +113,13 @@ function plugin( dir, cwd ) {
 To install the command-line utility, add the following line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS X), making sure to adjust the path based on your project setup.
 
 ``` text
-alias makie=/path/to/stdlib/bin/makie
+alias makie=/path/to/stdlib/tools/bin/makie
 ```
 
 and then
 
 ``` bash
-$ chmod +x /path/to/stdlib/bin/makie
+$ chmod +x /path/to/stdlib/tools/bin/makie
 ```
 
 <!-- </installation> -->

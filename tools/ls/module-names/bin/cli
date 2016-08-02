@@ -9,7 +9,7 @@ var parseArgs = require( 'minimist' );
 var notifier = require( 'update-notifier' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
-var list = require( './../lib' );
+var ls = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -78,7 +78,7 @@ if ( args.version ) {
 
 // MAIN //
 
-list( onList );
+ls( onList );
 
 /**
 * Callback invoked after retrieving a list of module names.

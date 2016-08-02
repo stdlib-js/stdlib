@@ -3,12 +3,12 @@
 /**
 * List stdlib module names.
 *
-* @module @stdlib/tools/misc/stdlib-module-names
+* @module @stdlib/tools/ls/module-names
 *
 * @example
-* var list = require( '@stdlib/tools/misc/stdlib-module-names' );
+* var ls = require( '@stdlib/tools/ls/module-names' );
 *
-* list( onList );
+* ls( onList );
 *
 * function onList( error, names ) {
 *     if ( error ) {
@@ -18,9 +18,9 @@
 * }
 *
 * @example
-* var list = require( '@stdlib/tools/misc/stdlib-module-names' );
+* var ls = require( '@stdlib/tools/ls/module-names' );
 *
-* var names = list.sync();
+* var names = ls.sync();
 * // returns [...]
 */
 
@@ -28,15 +28,15 @@
 
 var stdlib = require( './stdlib.js' );
 var setReadOnly = require( stdlib+'@stdlib/utils/define-read-only-property' );
-var list = require( './async.js' );
+var ls = require( './async.js' );
 var sync = require( './sync.js' );
 
 
 // METHODS //
 
-setReadOnly( list, 'sync', sync );
+setReadOnly( ls, 'sync', sync );
 
 
 // EXPORTS //
 
-module.exports = list;
+module.exports = ls;

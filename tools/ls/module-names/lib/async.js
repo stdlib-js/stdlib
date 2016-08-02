@@ -6,17 +6,16 @@ var glob = require( 'glob' );
 var path = require( 'path' );
 var stdlib = require( './stdlib.js' );
 var isFunction = require( stdlib+'@stdlib/utils/is-function' );
-var dirname = require( stdlib+'@stdlib/utils/dirname' );
+var transform = require( './transform.js' );
+var config = require( './config.json' );
 
 
 // VARIABLES //
 
-var PATTERN = '**/package.json';
 var ROOT = path.resolve( __dirname, stdlib );
-var MATCH = /\@stdlib/;
 
 
-// ASYNC //
+// LS //
 
 /**
 * Asynchronously generates a list of stdlib module names.
@@ -25,7 +24,7 @@ var MATCH = /\@stdlib/;
 * @throws {TypeError} must provide a function
 *
 * @example
-* list( onList );
+* ls( onList );
 *
 * function onList( error, names ) {
 *     if ( error ) {
@@ -34,7 +33,7 @@ var MATCH = /\@stdlib/;
 *     console.dir( names );
 * }
 */
-function list( clbk ) {
+function ls( clbk ) {
 	var opts;
 	if ( !isFunction( clbk ) ) {
 		throw new TypeError( 'invalid input argument. Must provide a function. Value: `' + clbk + '`.' );
@@ -42,7 +41,7 @@ function list( clbk ) {
 	opts = {
 		'cwd': ROOT
 	};
-	glob( PATTERN, opts, onGlob );
+	glob( config.pattern, opts, onGlob );
 
 	/**
 	* Callback invoked after matching files.
@@ -52,27 +51,14 @@ function list( clbk ) {
 	* @param {StringArray} names - list of matching files
 	*/
 	function onGlob( error, names ) {
-		var match;
-		var name;
-		var out;
-		var i;
 		if ( error ) {
 			return clbk( error );
 		}
-		out = [];
-		for ( i = 0; i < names.length; i++ ) {
-			match = names[ i ].match( MATCH );
-			if ( match ) {
-				name = names[ i ].substring( match.index );
-				name = dirname( name );
-				out.push( name );
-			}
-		}
-		clbk( null, out );
+		clbk( null, transform( names ) );
 	} // end FUNCTION onGlob()
-} // end FUNCTION list()
+} // end FUNCTION ls()
 
 
 // EXPORTS //
 
-module.exports = list;
+module.exports = ls;

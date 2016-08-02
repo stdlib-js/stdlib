@@ -16,13 +16,13 @@ else
 fi
 
 # Define the path to the `makie` executable:
-makie=`dirname "$0"`/../tools/makie/makie/bin/cli
+makie=`dirname "$0"`/../makie/makie/bin/cli
 
 # Define the path to the `makie` configuration file:
-makie_config=`dirname "$0"`/../etc/.makie.js
+makie_config=`dirname "$0"`/../../etc/.makie.js
 
 # Define the path to the Makefile directory:
-makie_makefile_dir=`dirname "$0"`/../
+makie_makefile_dir=`dirname "$0"`/../../
 
 
 # FUNCTIONS #
