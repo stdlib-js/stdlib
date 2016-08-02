@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-
-# DESCRIPTION #
-
+#
 # Script to lint filenames.
 
 

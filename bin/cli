@@ -1,0 +1,123 @@
+#!/usr/bin/env node
+'use strict';
+
+// MODULES //
+
+var fs = require( 'fs' );
+var path = require( 'path' );
+var spawn = require( 'child_process' ).spawn;
+var parseArgs = require( 'minimist' );
+var notifier = require( 'update-notifier' );
+var pkg = require( './../package.json' );
+var opts = require( './opts.json' );
+var commands = require( './commands.json' );
+
+
+// FUNCTIONS //
+
+/**
+* Prints usage information.
+*
+* @private
+* @example
+* help();
+* // => '...'
+*/
+function help() {
+	var fpath = path.join( __dirname, 'usage.txt' );
+	fs.createReadStream( fpath )
+		.pipe( process.stdout )
+		.on( 'close', onClose );
+
+	function onClose() {
+		process.exit( 0 );
+	}
+} // end FUNCTION help()
+
+/**
+* Prints the package version.
+*
+* @private
+* @example
+* version();
+* // => '#.#.#'
+*/
+function version() {
+	var msg = pkg.version.toString()+'\n';
+	process.stdout.write( msg, 'utf8' );
+	process.exit( 0 );
+} // end FUNCTION version()
+
+/**
+* Callback invoked upon encountering an error while running a command.
+*
+* @private
+* @param {Error} error - error object
+* @throws {Error} unexpected error
+*/
+function onError( error ) {
+	throw error;
+} // end FUNCTION onError()
+
+
+// VARIABLES //
+
+var args1;
+var args2;
+var proc;
+var cmd;
+var i;
+
+
+// INIT //
+
+process.title = pkg.name;
+process.stdout.on( 'error', process.exit );
+
+
+// PACKAGE UPDATES //
+
+notifier( { 'pkg': pkg } ).notify();
+
+
+// ARGUMENTS //
+
+args1 = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args1.version ) {
+	return version();
+}
+cmd = args1._[ 0 ];
+
+
+// MAIN //
+
+opts = {
+	'cwd': process.cwd(),
+	'env': process.env,
+	'stdio': 'inherit'
+};
+if ( cmd === 'help' ) {
+	if ( args1._[1] === void 0 ) {
+		return help();
+	}
+	cmd = commands[ args1._[1] ];
+	if ( cmd === void 0 ) {
+		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
+	}
+	args2 = new Array( 2 );
+	args2[ 0 ] = cmd;
+	args2[ 1 ] = '--help';
+} else {
+	if ( cmd === 'repl' ) {
+		args2 = new Array( 1 );
+		args2[ 0 ] = commands[ cmd ];
+	} else {
+		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
+	}
+	for ( i = 1; i < args1._.length; i++ ) {
+		args2.push( args1._[ i ] );
+	}
+}
+proc = spawn( 'node', args2, opts );
+proc.on( 'error', onError );

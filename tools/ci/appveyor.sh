@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-
-# DESCRIPTION #
-
+#
 # Script to run continuous integration on AppVeyor.
 
 

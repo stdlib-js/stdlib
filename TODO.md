@@ -420,13 +420,17 @@ TODO
 
 60. evaluate using [inch](https://github.com/rrrene/inch) for src code documentation evaluation
 
-61. gitter
+61. link gitter to slack (prob requires a hook server)
 
 62. investigate [xonsh](https://github.com/scopatz/xonsh)
 
 63. `list-modules` Makefile recipe
 
-    * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc.
+    * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc; e.g., which modules are not included in a namespace.
+    * add README
+    * add tests
+    * add option to set `root` directory to a child directory (filter)
+    * add option to limit to namespace modules (post-filter or as part of search?)
 
 64. should `etc` config files be placed in subdirectories?
 
@@ -494,7 +498,7 @@ TODO
     * will probably need source maps, otherwise will be difficult to debug
     * as a half-way measure, could intercept `console` method calls, pipe back to server, and then keep a rolling log cache; when an error is received, could stop running examples and print the cache
 
-73. 
+73. bring [`glob`](https://github.com/isaacs/node-glob) in-house
 
 74. review CoC for more community oriented policies
 
@@ -809,7 +813,7 @@ TODO
      * [node-inspector](https://github.com/node-inspector/node-inspector)
      * [node-webkit-agent](https://github.com/c4milo/node-webkit-agent)
      * [node-stackvis](https://github.com/joyent/node-stackvis)
-     * [devtool](https://github.com/Jam3/devtool)
+     * [devtool](https://github.com/Jam3/devtool) ([blog post](https://mattdesl.svbtle.com/debugging-nodejs-in-chrome-devtools))
      * [--prof-process](https://nodejs.org/en/docs/guides/simple-profiling/)
      * [v8-profiling](http://thlorenz.com/v8-profiling/)
      * [chrome://tracing/](https://rjzaworski.com/2014/12/profiling-node-js-on-linux)
@@ -820,6 +824,7 @@ TODO
      * [node-tick-processor](https://github.com/drewfish/node-tick-processor)
      * [v8 profiling](https://github.com/thlorenz/v8-profiling)
      * `make` recipe
+     * bring the V8 log processor in-house ([tools](https://github.com/v8/v8/tree/master/tools), [wiki](https://github.com/v8/v8/wiki/V8%20Profiler), [outfile](https://bugs.chromium.org/p/chromium/issues/detail?id=432457), [node-tick](https://github.com/sidorares/node-tick))
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
@@ -840,9 +845,9 @@ TODO
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
-107. Link to FAQ in the issues template
+107. 
 
-108. rename `docs` directory to `doc`?
+108. 
 
 109. more [datasets](https://github.com/vega/vega-datasets) => some are not that interesting; others possibly
 
@@ -975,7 +980,7 @@ TODO
 
 150. [mbtaviz](http://mbtaviz.github.io/) and [Github org](https://github.com/mbtaviz)
 
-151. add FAQ with answers to things like, "Why JavaScript?"
+151. create separate discrete and continuous distribution namespaces (at same level as general `dist` namespace)
 
 152. Investigate [hyperterm](https://github.com/zeit/hyperterm)
 
@@ -996,6 +1001,8 @@ TODO
 160. investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
 
 161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
+
+162. for `stdlib/bin`, rather than `stdlib-repl`, `stdlib-list-modules`, etc, do `stdlib repl`, `stdlib ls` (similar to `npm ls`), etc => delegate to relevant script
 
 
 
