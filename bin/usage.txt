@@ -1,0 +1,12 @@
+
+Usage: stdlib [options] <command> [args]
+
+Options:
+
+  -V,    --version             Print the package version.
+
+Commands:
+
+  help [command]               Print a help message.
+  repl                         Start a REPL.
+

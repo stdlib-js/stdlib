@@ -1,0 +1,3 @@
+{
+	"repl": "./lib/node_modules/@stdlib/repl/bin/cli"
+}
