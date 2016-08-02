@@ -28,13 +28,13 @@ function onList( error, names ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for modules. Default: `/path/to/stdlib/lib/node_modules/`.
+* __dir__: root directory from which to search for modules. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
 
 To search from a descendant directory, set the `dir` option.
 
 ``` javascript
 var opts = {
-    'dir': '/path/to/stdlib/lib/node_modules/@stdlib/math/base'
+    'dir': '@stdlib/math/base'
 };
 
 ls( opts, onList );
