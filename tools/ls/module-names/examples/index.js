@@ -1,8 +1,8 @@
 'use strict';
 
-var list = require( './../lib' );
+var ls = require( './../lib' );
 
-list( onList );
+ls( onList );
 
 function onList( error, names ) {
 	if ( error ) {
