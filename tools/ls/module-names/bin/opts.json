@@ -1,4 +1,7 @@
 {
+	"string": [
+		"dir"
+	],
 	"boolean": [
 		"help",
 		"version"

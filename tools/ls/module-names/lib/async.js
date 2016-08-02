@@ -3,16 +3,12 @@
 // MODULES //
 
 var glob = require( 'glob' );
-var path = require( 'path' );
 var stdlib = require( './stdlib.js' );
 var isFunction = require( stdlib+'@stdlib/utils/is-function' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
-
-
-// VARIABLES //
-
-var ROOT = path.resolve( __dirname, stdlib );
+var validate = require( './validate.js' );
+var getRoot = require( './root.js' );
 
 
 // LS //
@@ -20,6 +16,8 @@ var ROOT = path.resolve( __dirname, stdlib );
 /**
 * Asynchronously generates a list of stdlib module names.
 *
+* @param {Options} options - function options
+* @param {string} [options.dir] - root directory from which to search for modules
 * @param {Callback} clbk - callback to invoke after finding modules
 * @throws {TypeError} must provide a function
 *
@@ -33,13 +31,28 @@ var ROOT = path.resolve( __dirname, stdlib );
 *     console.dir( names );
 * }
 */
-function ls( clbk ) {
+function ls() {
+	var options;
+	var clbk;
 	var opts;
+	var err;
+
+	opts = {};
+	if ( arguments.length < 2 ) {
+		clbk = arguments[ 0 ];
+	} else {
+		options = arguments[ 0 ];
+		clbk = arguments[ 1 ];
+		err = validate( opts, options );
+		if ( err ) {
+			throw err;
+		}
+	}
 	if ( !isFunction( clbk ) ) {
-		throw new TypeError( 'invalid input argument. Must provide a function. Value: `' + clbk + '`.' );
+		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `' + clbk + '`.' );
 	}
 	opts = {
-		'cwd': ROOT
+		'cwd': getRoot( opts.dir || '' )
 	};
 	glob( config.pattern, opts, onGlob );
 
