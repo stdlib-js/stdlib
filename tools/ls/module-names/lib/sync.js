@@ -34,7 +34,8 @@ function ls( options ) {
 		}
 	}
 	opts = {
-		'cwd': getRoot( opts.dir || '' )
+		'cwd': getRoot( opts.dir || '' ),
+		'realpath': true // return absolute file paths
 	};
 	names = glob( config.pattern, opts );
 	return transform( names );

@@ -34,7 +34,7 @@ To search from a descendant directory, set the `dir` option.
 
 ``` javascript
 var opts = {
-    'dir': '@stdlib/math/base'
+    'dir': './@stdlib/math/base'
 };
 
 ls( opts, onList );
@@ -60,6 +60,15 @@ var names = ls.sync();
 The function accepts the same `options` as `ls()` above.
 
 <!-- </usage> -->
+
+
+<!-- <notes> -->
+
+## Notes
+
+* The function only returns modules under the `@stdlib` scope.
+
+<!-- </notes> -->
 
 
 <!-- <examples> -->
