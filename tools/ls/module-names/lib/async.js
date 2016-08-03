@@ -52,7 +52,8 @@ function ls() {
 		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `' + clbk + '`.' );
 	}
 	opts = {
-		'cwd': getRoot( opts.dir || '' )
+		'cwd': getRoot( opts.dir || '' ),
+		'realpath': true // return absolute file paths
 	};
 	glob( config.pattern, opts, onGlob );
 
