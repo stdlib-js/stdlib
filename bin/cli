@@ -105,13 +105,16 @@ if ( cmd === 'help' ) {
 	if ( cmd === void 0 ) {
 		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
 	}
+	cmd = path.resolve( __dirname, '..', cmd );
 	args2 = new Array( 2 );
 	args2[ 0 ] = cmd;
 	args2[ 1 ] = '--help';
 } else {
 	if ( cmd === 'repl' ) {
+		cmd = commands[ cmd ];
+		cmd = path.resolve( __dirname, '..', cmd );
 		args2 = new Array( 1 );
-		args2[ 0 ] = commands[ cmd ];
+		args2[ 0 ] = cmd;
 	} else {
 		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
 	}
