@@ -6,22 +6,25 @@ language: node_js
 sudo: true
 
 os:
-  - linux
+  # - linux
   - osx
 
 node_js:
   # Node.js
   - 'node'
   - '6'
-  - '5'
-  - '4'
+  - '6.3.1'
+  - '6.3.0'
+  - '6.2.2'
+  # - '5'
+  # - '4'
   # io.js
-  - '3'
-  - '2'
-  - '1'
+  # - '3'
+  # - '2'
+  # - '1'
   # Node.js
-  - '0.12'
-  - '0.10'
+  # - '0.12'
+  # - '0.10'
 
 before_install:
   # Update the npm client. Older clients cannot, e.g., handle scoped modules.
