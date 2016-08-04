@@ -28,7 +28,7 @@ endif
 include $(TOOLS_MAKE_LIB_DIR)/help/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/init/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/repl/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/find/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/deps/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/notes/Makefile

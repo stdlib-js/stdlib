@@ -1,5 +1,4 @@
-Makefile
-===
+# Makefile
 
 > Development utility.
 
@@ -16,7 +15,7 @@ To view a list of available `Makefile` targets,
 $ make help
 ```
 
-===
+---
 
 #### REPL
 
@@ -26,7 +25,7 @@ To launch a REPL,
 $ make repl
 ```
 
-===
+---
 
 #### Notes
 
@@ -57,7 +56,7 @@ The following annotations are recognized:
 * __OPTIMIZE__: annotates code which needs optimizing.
 * __NOTE__: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
 
-===
+---
 
 #### Files
 
@@ -210,7 +209,7 @@ $ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
 
 ##### Modules
 
-To list all modules,
+To list all modules (as absolute paths),
 
 ``` bash
 $ make list-modules
@@ -223,7 +222,20 @@ To filter based on a file path,
 $ make MODULES_FILTER=.*/math/base/special/.* list-modules
 ```
 
-===
+To list all module names under the `@stdlib` scope,
+
+``` bash
+$ make list-module-names
+```
+
+To list all module names under a `@stdlib` descendant directory,
+
+``` bash
+$ make MODULES_NAMES_DIR=./@stdlib/math/base list-module-names
+```
+
+
+---
 
 #### Module Examples
 
@@ -240,7 +252,7 @@ To limit which examples are run, use the same environment variables recognized b
 $ make EXAMPLES_FILTER=.*/math/base/special/.* EXAMPLES_PATTERN=index.js examples
 ```
 
-===
+---
 
 #### Unit Tests
 
@@ -311,7 +323,7 @@ $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
 ```
 
-===
+---
 
 #### Benchmarks
 
@@ -328,7 +340,7 @@ To limit which benchmarks are run, use the same environment variables recognized
 $ make BENCHMARKS_FILTER=.*/math/base/special/.* BENCHMARKS_PATTERN=benchmark.js benchmark
 ```
 
-===
+---
 
 #### Documentation
 
@@ -344,7 +356,7 @@ To view the documentation in a local web browser,
 $ make view-src-docs
 ```
 
-===
+---
 
 #### Lint
 
@@ -384,7 +396,7 @@ To lint only JavaScript files,
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... lint-javascript
 ```
 
-===
+---
 
 #### Complexity
 
@@ -418,7 +430,7 @@ To analyze only JavaScript files,
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... complexity-javascript
 ```
 
-===
+---
 
 #### Dependencies
 
