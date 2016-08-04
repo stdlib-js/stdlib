@@ -231,7 +231,7 @@ $ make list-module-names
 To list all module names under a `@stdlib` descendant directory,
 
 ``` bash
-$ make MODULES_NAMES_DIR=./@stdlib/math/base list-module-names
+$ make MODULE_NAMES_DIR=./@stdlib/math/base list-module-names
 ```
 
 
