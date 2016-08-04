@@ -33,6 +33,7 @@ plugins[ 'lint-markdown' ] = path.join( prefix, 'makie-lint-markdown' );
 plugins[ 'complexity' ] = path.join( prefix, 'makie-complexity' );
 plugins[ 'view-complexity' ] = path.join( prefix, 'makie-view-complexity' );
 plugins[ 'list-modules' ] = path.join( prefix, 'makie-list-modules' );
+plugins[ 'list-module-names' ] = path.join( prefix, 'makie-list-module-names' );
 
 
 // EXPORTS //

@@ -49,11 +49,12 @@ MODULES_FILTER ?= .*/.*
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/find/files.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/sources.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/tests.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/tests_fixtures.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/benchmarks.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/examples.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/markdown.mk
-include $(TOOLS_MAKE_LIB_DIR)/find/modules.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/sources.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/modules.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/module_names.mk

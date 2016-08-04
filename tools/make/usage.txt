@@ -11,6 +11,7 @@ Usage: make <cmd>
   make list-benchmarks        List all benchmark files.
   make list-files             List files.
   make list-modules           List all modules.
+  make list-module-names      List all module names.
   make examples               Run examples.
   make test                   Run tests.
   make test-summary           Run tests and output a test summary.
