@@ -110,12 +110,16 @@ if ( cmd === 'help' ) {
 	args2[ 0 ] = cmd;
 	args2[ 1 ] = '--help';
 } else {
-	if ( cmd === 'repl' ) {
+	if (
+		cmd === 'repl' ||
+		cmd === 'ls'
+	) {
 		cmd = commands[ cmd ];
 		cmd = path.resolve( __dirname, '..', cmd );
 		args2 = new Array( 1 );
 		args2[ 0 ] = cmd;
-	} else {
+	}
+	else {
 		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
 	}
 	for ( i = 1; i < args1._.length; i++ ) {

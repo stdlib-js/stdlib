@@ -1,3 +1,4 @@
 {
+	"ls": "./tools/ls/module-names/bin/cli",
 	"repl": "./lib/node_modules/@stdlib/repl/bin/cli"
 }
