@@ -330,6 +330,8 @@ TODO
 
     * js code in markdown linting
 
+    * [css linting](https://github.com/stylelint/stylelint)
+
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
     * would allow a "preview" alongside current prod
@@ -427,10 +429,6 @@ TODO
 63. `list-modules` Makefile recipe
 
     * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc; e.g., which modules are not included in a namespace.
-    * add README
-    * add tests
-    * add option to set `root` directory to a child directory (filter)
-    * add option to limit to namespace modules (post-filter or as part of search?)
 
 64. should `etc` config files be placed in subdirectories?
 
@@ -845,9 +843,9 @@ TODO
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
-107. 
+107. use [signed commits](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
 
-108. 
+108. string [similarity](https://github.com/tdebatty/java-string-similarity) measures?
 
 109. more [datasets](https://github.com/vega/vega-datasets) => some are not that interesting; others possibly
 
@@ -1003,6 +1001,14 @@ TODO
 161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
 
 162. for `stdlib/bin`, rather than `stdlib-repl`, `stdlib-list-modules`, etc, do `stdlib repl`, `stdlib ls` (similar to `npm ls`), etc => delegate to relevant script
+
+163. [Sieve of Eratosthenes](http://www.mahabal.io/eras)
+
+164. files containing `new Buffer` should `var Buffer = require( 'buffer' ).Buffer`. Note that this will prob require overruling a lint rule against redefining globals.
+
+165. See [casual](https://github.com/boo1ean/casual) for dataset inspiration
+
+166. GitHub issues [Gnatt diagrams](https://github.com/neyric/gh-issues-gantt)
 
 
 
@@ -1327,7 +1333,7 @@ TODO
 * [glibc sqrt](https://sourceware.org/git/?p=glibc.git;a=blob;f=sysdeps/ieee754/dbl-64/e_sqrt.c;h=8304a2bb6324acc6be7a9c20b6521aed84193c64;hb=HEAD)
 * [IPython: A System for Interactive Scientific Computing](http://fperez.org/papers/ipython07_pe-gr_cise.pdf)
 * [IPython: Sloan Grant](https://ipython.org/_static/sloangrant/sloan-grant.pdf)
-
+* [Why not use core streams](https://r.va.gg/2014/06/why-i-dont-use-nodes-core-stream-module.html)
 
 
 
