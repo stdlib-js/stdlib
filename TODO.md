@@ -330,7 +330,7 @@ TODO
 
     * js code in markdown linting
 
-    * [css linting](https://github.com/stylelint/stylelint)
+    * [css linting](https://github.com/stylelint/stylelint) and [stylefmt](https://github.com/morishitter/stylefmt)
 
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
@@ -1010,6 +1010,12 @@ TODO
 
 166. GitHub issues [Gnatt diagrams](https://github.com/neyric/gh-issues-gantt)
 
+167. [gh-board](https://github.com/philschatz/gh-board) - kaban board using GitHub issues
+
+168. investigate [docstrings](https://github.com/noffle/docstrings): useful or not?
+
+169. For running electron tests, see [atom-test-runner](https://github.com/wooorm/atom-tap-test-runner)
+
 
 
 ---
@@ -1114,6 +1120,12 @@ TODO
 7. readme
 8. xExtendedTicks?
 
+
+---
+
+### Tutorials
+
+1. [Image Completion using Neural Networks](http://bamos.github.io/2016/08/09/deep-completion/)
 
 
 ---
