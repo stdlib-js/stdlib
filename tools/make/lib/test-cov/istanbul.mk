@@ -31,6 +31,8 @@ JAVASCRIPT_TEST_COV_FLAGS ?= --no-default-excludes \
 		--dir $(COVERAGE_DIR) \
 		--report $(ISTANBUL_REPORT)
 
+tests := $(NODE_PATH)/@stdlib/utils/unzip/test/test.js \
+
 
 # TARGETS #
 
@@ -46,7 +48,7 @@ JAVASCRIPT_TEST_COV_FLAGS ?= --no-default-excludes \
 test-istanbul: $(NODE_MODULES)
 	NODE_ENV=$(NODE_ENV_TEST) \
 	NODE_PATH=$(NODE_PATH_TEST) \
-	$(JAVASCRIPT_TEST_COV) $(JAVASCRIPT_TEST_COV_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
+	$(JAVASCRIPT_TEST_COV) $(JAVASCRIPT_TEST_COV_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(tests)
 
 .PHONY: test-istanbul
 
