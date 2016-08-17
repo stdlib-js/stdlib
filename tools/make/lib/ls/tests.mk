@@ -17,13 +17,13 @@ find_print_tests_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_TESTS_FLAGS ?= \
-		-name "$(TESTS_PATTERN)" \
-		-regex "$(TESTS_FILTER)" \
-		-not -path "$(ROOT_DIR)/.*" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(TOOLS_DIR)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*"
+	-name "$(TESTS_PATTERN)" \
+	-regex "$(TESTS_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_FLAGS := -regextype posix-extended $(FIND_TESTS_FLAGS)

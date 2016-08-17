@@ -17,12 +17,12 @@ MODULES_FILE ?= package.json
 
 # Define the command flags:
 FIND_MODULES_FLAGS ?= \
-		-name "$(MODULES_FILE)" \
-		-regex "$(MODULES_FILTER)" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*" \
-		-exec dirname {} \;
+	-name "$(MODULES_FILE)" \
+	-regex "$(MODULES_FILTER)" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-exec dirname {} \;
 
 ifneq ($(KERNEL), Darwin)
 	FIND_MODULES_FLAGS := -regextype posix-extended $(FIND_MODULES_FLAGS)

@@ -17,11 +17,11 @@ find_print_markdown_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_MARKDOWN_FLAGS ?= \
-		-name "$(MARKDOWN_PATTERN)" \
-		-regex "$(MARKDOWN_FILTER)" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*"
+	-name "$(MARKDOWN_PATTERN)" \
+	-regex "$(MARKDOWN_FILTER)" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_MARKDOWN_FLAGS := -regextype posix-extended $(FIND_MARKDOWN_FLAGS)

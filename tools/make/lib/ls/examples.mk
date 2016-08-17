@@ -20,15 +20,15 @@ find_print_examples_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_EXAMPLES_FLAGS ?= \
-		-name "$(EXAMPLES_PATTERN)" \
-		-path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/**" \
-		-regex "$(EXAMPLES_FILTER)" \
-		-not -path "$(ROOT_DIR)/.*" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(TOOLS_DIR)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*" \
-		-not -path "**/$(EXAMPLES_FOLDER)/fixtures/*"
+	-name "$(EXAMPLES_PATTERN)" \
+	-path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/**" \
+	-regex "$(EXAMPLES_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "**/$(EXAMPLES_FOLDER)/fixtures/*"
 
 
 ifneq ($(KERNEL), Darwin)

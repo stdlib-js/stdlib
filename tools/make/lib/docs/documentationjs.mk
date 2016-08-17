@@ -42,7 +42,8 @@ DOCUMENTATIONJS_HTML_OUT ?= $(DOCUMENTATIONJS_OUT)/static
 DOCUMENTATIONJS_HTML ?= $(DOCUMENTATIONJS_HTML_OUT)/index.html
 
 # Define command-line options to be used when invoking the documentation.js executable to generate HTML documentation:
-DOCUMENTATIONJS_HTML_FLAGS ?= --format html \
+DOCUMENTATIONJS_HTML_FLAGS ?= \
+	--format html \
 	--output $(DOCUMENTATIONJS_HTML_OUT)
 
 # Define command-line options to be used when invoking the documentation.js executable to generate JSON:

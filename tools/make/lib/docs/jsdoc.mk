@@ -51,17 +51,19 @@ JSDOC_HTML_OUT ?= $(JSDOC_OUT)/static
 JSDOC_HTML ?= $(JSDOC_HTML_OUT)/index.html
 
 # Define command-line options to be used when invoking the JSDoc executable to generate HTML documentation:
-JSDOC_HTML_FLAGS ?= --template $(JSDOC_HTML_TEMPLATE) \
-		--configure $(JSDOC_CONF) \
-		--encoding utf8 \
-		--destination $(JSDOC_HTML_OUT) \
-		--verbose
+JSDOC_HTML_FLAGS ?= \
+	--template $(JSDOC_HTML_TEMPLATE) \
+	--configure $(JSDOC_CONF) \
+	--encoding utf8 \
+	--destination $(JSDOC_HTML_OUT) \
+	--verbose
 
 # Define command-line options to be used when invoking the JSDoc executable to generate JSDoc JSON:
-JSDOC_JSON_FLAGS ?= --template $(JSDOC_JSON_TEMPLATE) \
-		--configure $(JSDOC_CONF) \
-		--encoding utf8 \
-		--destination console
+JSDOC_JSON_FLAGS ?= \
+	--template $(JSDOC_JSON_TEMPLATE) \
+	--configure $(JSDOC_CONF) \
+	--encoding utf8 \
+	--destination console
 
 
 # TARGETS #

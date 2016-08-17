@@ -60,8 +60,8 @@ REMARK_EXT ?= md
 
 # Define command-line options when invoking the remark executable:
 REMARK_FLAGS ?= \
-		--ext $(REMARK_EXT) \
-		--ignore-path $(REMARK_IGNORE)
+	--ext $(REMARK_EXT) \
+	--ignore-path $(REMARK_IGNORE)
 
 # Define the remark output option:
 REMARK_OUTPUT_FLAG ?= --output
