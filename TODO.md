@@ -1010,7 +1010,7 @@ TODO
 
 165. See [casual](https://github.com/boo1ean/casual) for dataset inspiration
 
-166. GitHub issues [Gnatt diagrams](https://github.com/neyric/gh-issues-gantt)
+166. GitHub issues [Gantt diagrams](https://github.com/neyric/gh-issues-gantt)
 
 167. [gh-board](https://github.com/philschatz/gh-board) - kaban board using GitHub issues
 
