@@ -44,9 +44,14 @@ JAVASCRIPT_TEST_COV_FLAGS ?= --no-default-excludes \
 # [1]: https://github.com/gotwarlost/istanbul
 
 test-istanbul: $(NODE_MODULES)
-	NODE_ENV=$(NODE_ENV_TEST) \
-	NODE_PATH=$(NODE_PATH_TEST) \
-	$(JAVASCRIPT_TEST_COV) $(JAVASCRIPT_TEST_COV_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
+	for dir in $(TESTS_DIRS); do \
+		echo ''; \
+		echo "Running tests in directory: $$dir"; \
+		echo ''; \
+		NODE_ENV=$(NODE_ENV_TEST) \
+		NODE_PATH=$(NODE_PATH_TEST) \
+		$(JAVASCRIPT_TEST_COV) $(JAVASCRIPT_TEST_COV_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $$dir/**/$(TESTS_PATTERN); \
+	done
 
 .PHONY: test-istanbul
 
