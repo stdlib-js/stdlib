@@ -332,6 +332,8 @@ TODO
 
     * [css linting](https://github.com/stylelint/stylelint) and [stylefmt](https://github.com/morishitter/stylefmt)
 
+    * [list](https://github.com/SalGnt/cscs) of style guidelines
+
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
     * would allow a "preview" alongside current prod
@@ -923,7 +925,7 @@ TODO
      - [p2p-workshop](https://github.com/mafintosh/p2p-workshop)
      - [webgl-workshop](https://github.com/stackgl/webgl-workshop)
 
-127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service.
+127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service. (note: this means that the `master` branch should never run the dep check to ensure up-to-date dependencies; otherwise, `master` could fail for non-test related reasons)
 
 128. plot svg components should have factory methods
 
@@ -1015,6 +1017,10 @@ TODO
 168. investigate [docstrings](https://github.com/noffle/docstrings): useful or not?
 
 169. For running electron tests, see [atom-test-runner](https://github.com/wooorm/atom-tap-test-runner)
+
+170. Add dev guide for developing on windows
+
+171. add a Makefile recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
 
 
 
