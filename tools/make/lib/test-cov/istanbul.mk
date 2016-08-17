@@ -22,7 +22,7 @@ ISTANBUL_REPORT ?= lcov
 ISTANBUL_HTML_REPORT ?= $(COVERAGE_DIR)/lcov-report/index.html
 
 # Define the command-line options to be used when invoking the Istanbul executable:
-ISTANBUL_TEST_COV_FLAGS ?= --no-default-excludes \
+JAVASCRIPT_TEST_COV_FLAGS ?= --no-default-excludes \
 		-x 'node_modules/**' \
 		-x 'build/**' \
 		-x '**/test/**' \
@@ -46,7 +46,7 @@ ISTANBUL_TEST_COV_FLAGS ?= --no-default-excludes \
 test-istanbul: $(NODE_MODULES)
 	NODE_ENV=$(NODE_ENV_TEST) \
 	NODE_PATH=$(NODE_PATH_TEST) \
-	$(JAVASCRIPT_TEST_COV) $(ISTANBUL_TEST_COV_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
+	$(JAVASCRIPT_TEST_COV) $(JAVASCRIPT_TEST_COV_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
 
 .PHONY: test-istanbul
 
