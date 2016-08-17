@@ -88,6 +88,8 @@ TODO
 
    * [`docpress`](https://github.com/docpress/docpress)
 
+   * [`getdocs`](https://github.com/marijnh/getdocs)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -475,6 +477,7 @@ TODO
     * [glance](https://github.com/jarofghosts/glance)
     * [wzrd](https://github.com/maxogden/wzrd)
     * [serve-static](https://github.com/expressjs/serve-static)
+    * [st](https://github.com/isaacs/st)
 
 70. cross-platform open browser
 
@@ -1002,7 +1005,7 @@ TODO
 
 161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
 
-162. for `stdlib/bin`, rather than `stdlib-repl`, `stdlib-list-modules`, etc, do `stdlib repl`, `stdlib ls` (similar to `npm ls`), etc => delegate to relevant script
+162. 
 
 163. [Sieve of Eratosthenes](http://www.mahabal.io/eras)
 
