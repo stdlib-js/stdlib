@@ -51,6 +51,9 @@ DOCS_DIR ?= $(ROOT_DIR)/docs
 # Define the directory for generated source code documentation:
 SRC_DOCS_DIR ?= $(BUILD_DIR)/docs
 
+# Define the directory for instrumented source code:
+COVERAGE_INSTRUMENTATION_DIR ?= $(BUILD_DIR)/coverage
+
 # Define the top-level directory containing executables:
 LOCAL_BIN_DIR ?= $(ROOT_DIR)/bin
 
@@ -74,6 +77,15 @@ EXAMPLES_FOLDER ?= examples
 
 # Define the folder name convention for benchmark files:
 BENCHMARKS_FOLDER ?= benchmark
+
+# Define the folder name convention for executables:
+BIN_FOLDER ?= bin
+
+# Define the folder name convention for documentation files:
+DOCUMENTATION_FOLDER ?= docs
+
+# Define the folder name convention for configuration files:
+CONFIG_FOLDER ?= etc
 
 # Define Node paths:
 NODE_PATH ?= $(ROOT_DIR)/lib/node_modules
