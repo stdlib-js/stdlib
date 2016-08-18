@@ -1027,6 +1027,8 @@ TODO
 
 172. see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
 
+173. create a bot which tails NPM for math related modules (ditto for RSS feeds of select math repos)
+
 
 
 ---
