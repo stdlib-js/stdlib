@@ -1,6 +1,10 @@
 
 # VARIABLES #
 
+ifndef VERBOSE
+	QUIET := @
+endif
+
 # Define whether the make commands are running on a hosted continuous integration service:
 ifeq ($(TRAVIS), true)
 	CI_SERVICE ?= travis
