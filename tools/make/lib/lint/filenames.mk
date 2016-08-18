@@ -15,7 +15,7 @@ FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint.sh
 # This target lints filenames.
 
 lint-filenames:
-	$(MAKE_EXECUTABLE) $(FILENAME_LINTER)
-	$(FILENAME_LINTER)
+	$(QUIET) $(MAKE_EXECUTABLE) $(FILENAME_LINTER)
+	$(QUIET) $(FILENAME_LINTER)
 
 .PHONY: lint-filenames

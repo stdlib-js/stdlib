@@ -26,7 +26,7 @@ GIT_HOOKS_OUT ?= $(ROOT_DIR)/.git/hooks
 # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
 init-git-hooks:
-	@for file in $(GIT_HOOKS); do \
+	$(QUIET) for file in $(GIT_HOOKS); do \
 		$(CP) $(GIT_HOOKS_DIR)/$$file $(GIT_HOOKS_OUT)/$$file; \
 		$(MAKE_EXECUTABLE) $(GIT_HOOKS_OUT)/$$file; \
 	done

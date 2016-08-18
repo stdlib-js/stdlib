@@ -39,6 +39,6 @@ MODULES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MODULES_FLAGS))
 # This target prints a list of all modules, excluding the `node_modules`, `build`, and `reports` directories.
 
 list-modules:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MODULES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MODULES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-modules

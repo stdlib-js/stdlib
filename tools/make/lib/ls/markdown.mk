@@ -38,6 +38,6 @@ MARKDOWN_FILES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN
 # This target prints a list of all Markdown files, excluding the `node_modules`, `build`, and `reports` directories.
 
 list-markdown-files:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS) $(find_print_markdown_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS) $(find_print_markdown_list)
 
 .PHONY: list-markdown-files

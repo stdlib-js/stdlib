@@ -45,6 +45,6 @@ BENCHMARKS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_F
 # This target prints a newline-delimited list of benchmark files.
 
 list-benchmarks:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS) $(find_print_benchmarks_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS) $(find_print_benchmarks_list)
 
 .PHONY: list-benchmarks

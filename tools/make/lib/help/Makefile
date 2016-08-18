@@ -16,7 +16,7 @@ MAKE_USAGE ?= $(TOOLS_MAKE_DIR)/usage.txt
 # This target prints a help message and lists available targets.
 
 help:
-	@$(CAT) $(CAT_FLAGS) $(MAKE_USAGE)
+	$(QUIET) $(CAT) $(CAT_FLAGS) $(MAKE_USAGE)
 
 .PHONY: help
 

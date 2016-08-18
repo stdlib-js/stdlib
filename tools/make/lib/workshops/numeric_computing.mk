@@ -44,7 +44,7 @@ NUMERIC_COMPUTING_SLIDES ?= $(NUMERIC_COMPUTING_SLIDES_DIR)/00.md
 # This target launches a server for viewing workshop slides.
 
 workshops-numeric-computing-slides: $(NODE_MODULES)
-	$(XSLIDE) $(NUMERIC_COMPUTING_SLIDES) $(XSLIDE_WORKSHOP_FLAGS)
+	$(QUIET) $(XSLIDE) $(NUMERIC_COMPUTING_SLIDES) $(XSLIDE_WORKSHOP_FLAGS)
 
 .PHONY: workshops-numeric-computing-slides
 
@@ -54,6 +54,6 @@ workshops-numeric-computing-slides: $(NODE_MODULES)
 # This target opens workshop slides in a local web browser.
 
 view-workshops-numeric-computing-slides:
-	$(OPEN) http://localhost:$(XSLIDE_WORKSHOP_PORT)
+	$(QUIET) $(OPEN) http://localhost:$(XSLIDE_WORKSHOP_PORT)
 
 .PHONY: view-workshops-numeric-computing-slides

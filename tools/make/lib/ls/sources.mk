@@ -42,6 +42,6 @@ SOURCES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SOURCES_FLAGS))
 # This target prints a newline-delimited list of source files.
 
 list-sources:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SOURCES_FLAGS) $(find_print_sources_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SOURCES_FLAGS) $(find_print_sources_list)
 
 .PHONY: list-sources

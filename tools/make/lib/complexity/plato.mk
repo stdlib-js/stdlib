@@ -40,6 +40,6 @@ JAVASCRIPT_COMPLEXITY_FLAGS ?= \
 # This target opens an HTML complexity report in a local web browser.
 
 view-plato-report:
-	$(OPEN) $(PLATO_HTML_REPORT)
+	$(QUIET) $(OPEN) $(PLATO_HTML_REPORT)
 
 .PHONY: view-plato-report

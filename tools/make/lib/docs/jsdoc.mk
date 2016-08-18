@@ -77,9 +77,9 @@ JSDOC_JSON_FLAGS ?= \
 # [1]: http://usejsdoc.org/
 
 jsdoc-html: $(NODE_MODULES)
-	$(DELETE) $(DELETE_FLAGS) $(JSDOC_HTML_OUT)
-	$(MKDIR_RECURSIVE) $(JSDOC_HTML_OUT)
-	$(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JSDOC_HTML_OUT)
+	$(QUIET) $(MKDIR_RECURSIVE) $(JSDOC_HTML_OUT)
+	$(QUIET) $(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
 
 .PHONY: jsdoc-html
 
@@ -94,9 +94,9 @@ jsdoc-html: $(NODE_MODULES)
 # [1]: http://usejsdoc.org/
 
 jsdoc-json: $(NODE_MODULES)
-	$(DELETE) $(DELETE_FLAGS) $(JSDOC_JSON)
-	$(MKDIR_RECURSIVE) $(JSDOC_JSON_OUT)
-	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JSDOC_JSON)
+	$(QUIET) $(MKDIR_RECURSIVE) $(JSDOC_JSON_OUT)
+	$(QUIET) $(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON)
 
 .PHONY: jsdoc-json
 
@@ -106,7 +106,7 @@ jsdoc-json: $(NODE_MODULES)
 # This target opens JSDoc HTML documentation in a local web browser.
 
 view-jsdoc-html:
-	$(OPEN) $(JSDOC_HTML)
+	$(QUIET) $(OPEN) $(JSDOC_HTML)
 
 .PHONY: view-jsdoc-html
 
@@ -116,7 +116,7 @@ view-jsdoc-html:
 # This target cleans up a JSDoc output directory by removing it entirely.
 
 clean-jsdoc:
-	$(DELETE) $(DELETE_FLAGS) $(JSDOC_OUT)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JSDOC_OUT)
 
 .PHONY: clean-jsdoc
 
@@ -131,8 +131,8 @@ clean-jsdoc:
 # [1]: http://usejsdoc.org/
 
 rebuild-jsdoc-html:
-	@$(MAKE) -f $(this_file) clean-jsdoc
-	@$(MAKE) -f $(this_file) jsdoc-html
+	$(QUIET) $(MAKE) -f $(this_file) clean-jsdoc
+	$(QUIET) $(MAKE) -f $(this_file) jsdoc-html
 
 .PHONY: rebuild-jsdoc-html
 

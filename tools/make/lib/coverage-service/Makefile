@@ -23,7 +23,7 @@ endif
 
 coverage:
 ifeq ($(COVERAGE_SERVICE), codecov)
-	@$(MAKE) -f $(this_file) coverage-codecov
+	$(QUIET) $(MAKE) -f $(this_file) coverage-codecov
 endif
 
 .PHONY: coverage

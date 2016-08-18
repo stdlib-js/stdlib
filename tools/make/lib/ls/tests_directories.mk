@@ -41,6 +41,6 @@ TESTS_DIRS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_DIRS_F
 # This target prints a newline-delimited list of test directories.
 
 list-tests-dirs:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_DIRS_FLAGS) $(find_print_tests_dirs_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_DIRS_FLAGS) $(find_print_tests_dirs_list)
 
 .PHONY: list-tests-dirs

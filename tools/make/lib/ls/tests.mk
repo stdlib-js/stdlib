@@ -40,6 +40,6 @@ TESTS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS))
 # This target prints a newline-delimited list of test files.
 
 list-tests:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS) $(find_print_tests_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS) $(find_print_tests_list)
 
 .PHONY: list-tests

@@ -18,7 +18,7 @@ NODE_PATH_BENCHMARK ?= $(NODE_PATH)
 # This target runs a list of JavaScript benchmarks in sequential order. Note that we assume the benchmarks can be run using Node.js.
 
 benchmark-javascript: $(NODE_MODULES)
-	for file in $(BENCHMARKS); do \
+	$(QUIET) for file in $(BENCHMARKS); do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		NODE_ENV=$(NODE_ENV_BENCHMARK) \

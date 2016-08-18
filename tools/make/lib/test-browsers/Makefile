@@ -64,7 +64,7 @@ test-browsers: $(NODE_MODULES)
 
 view-browser-tests:
 ifeq ($(BROWSER_TEST_RUNNER), testling)
-	@$(MAKE) -f $(this_file) view-testling
+	$(QUIET) $(MAKE) -f $(this_file) view-testling
 endif
 
 .PHONY: view-browser-tests

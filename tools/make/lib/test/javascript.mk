@@ -39,7 +39,7 @@ test-javascript: test-javascript-local
 # This target runs JavaScript unit tests locally.
 
 test-javascript-local: $(NODE_MODULES)
-	for test in $(TESTS); do \
+	$(QUIET) for test in $(TESTS); do \
 		echo ''; \
 		echo "Running test: $$test"; \
 		NODE_ENV=$(NODE_ENV_TEST) \
@@ -63,7 +63,7 @@ test-javascript-local: $(NODE_MODULES)
 # [1]: https://github.com/zoubin/tap-summary
 
 test-javascript-summary: $(NODE_MODULES)
-	for test in $(TESTS); do \
+	$(QUIET) for test in $(TESTS); do \
 		echo ''; \
 		echo "Running test: $$test"; \
 		NODE_ENV=$(NODE_ENV_TEST) \

@@ -24,6 +24,6 @@ DAVID_FLAGS ?= --package $(ROOT_PACKAGE_JSON)
 # This target checks JavaScript dependencies for updates and security vulnerabilities.
 
 check-javascript-deps: $(NODE_MODULES)
-	$(DAVID) $(DAVID_FLAGS)
+	$(QUIET) $(DAVID) $(DAVID_FLAGS)
 
 .PHONY: check-javascript-deps

@@ -21,7 +21,7 @@ CODECOV ?= $(BIN_DIR)/codecov
 # [1]: https://codecov.io/
 
 coverage-codecov:
-	$(NPM) install codecov
-	$(CAT) $(CAT_FLAGS) $(LCOV_INFO) | $(CODECOV)
+	$(QUIET) $(NPM) install codecov
+	$(QUIET) $(CAT) $(CAT_FLAGS) $(LCOV_INFO) | $(CODECOV)
 
 .PHONY: coverage-codecov

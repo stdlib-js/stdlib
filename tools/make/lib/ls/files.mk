@@ -39,6 +39,6 @@ FILES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS))
 # This target prints a list of all files, excluding the `node_modules`, `build`, `reports`, and hidden directories.
 
 list-files:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_files_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_files_list)
 
 .PHONY: list-files

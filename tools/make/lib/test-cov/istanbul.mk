@@ -113,9 +113,9 @@ endef
 # This target instruments source code.
 
 test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
-	$(MKDIR_RECURSIVE) $(ISTANBUL_INSTRUMENT_OUT)
-	$(ISTANBUL_INSTRUMENT) $(ISTANBUL_INSTRUMENT_FLAGS) $(NODE_PATH)
-	$(RSYNC_RECURSIVE) \
+	$(QUIET) $(MKDIR_RECURSIVE) $(ISTANBUL_INSTRUMENT_OUT)
+	$(QUIET) $(ISTANBUL_INSTRUMENT) $(ISTANBUL_INSTRUMENT_FLAGS) $(NODE_PATH)
+	$(QUIET) $(RSYNC_RECURSIVE) \
 		$(ISTANBUL_RSYNC_EXCLUDES_FLAGS) \
 		$(NODE_PATH)/ \
 		$(ISTANBUL_INSTRUMENT_OUT)
@@ -128,7 +128,7 @@ test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 # This target instruments source code, runs unit tests, and outputs a test coverage report.
 
 test-istanbul: $(NODE_MODULES) test-istanbul-instrument
-	for dir in $(get-istanbul-test-dirs); do \
+	$(QUIET) for dir in $(get-istanbul-test-dirs); do \
 		echo ''; \
 		echo "Running tests in directory: $$dir"; \
 		echo ''; \
@@ -145,7 +145,7 @@ test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 # This target opens an HTML coverage report in a local web browser.
 
 view-istanbul-report:
-	$(OPEN) $(ISTANBUL_HTML_REPORT)
+	$(QUIET) $(OPEN) $(ISTANBUL_HTML_REPORT)
 
 .PHONY: view-istanbul-report
 
@@ -155,6 +155,6 @@ view-istanbul-report:
 # This targets removes previously instrumented files by removing the instrumented source code directory entirely.
 
 clean-istanbul-instrument:
-	$(DELETE) $(DELETE_FLAGS) $(COVERAGE_INSTRUMENTATION_DIR)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(COVERAGE_INSTRUMENTATION_DIR)
 
 .PHONY: clean-istanbul-instrument

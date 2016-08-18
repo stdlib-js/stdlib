@@ -21,7 +21,7 @@ ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 # [1]: https://docs.npmjs.com/cli/install
 
 install-node: $(ROOT_PACKAGE_JSON)
-	$(NPM) install
+	$(QUIET) $(NPM) install
 
 .PHONY: install-node
 
@@ -31,6 +31,6 @@ install-node: $(ROOT_PACKAGE_JSON)
 # This target cleans the `node_modules` directory by removing it entirely.
 
 clean-node:
-	$(DELETE) $(DELETE_FLAGS) $(NODE_MODULES)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(NODE_MODULES)
 
 .PHONY: clean-node

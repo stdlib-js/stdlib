@@ -30,7 +30,7 @@ REPL_DIR ?= $(ROOT_DIR)
 # This target starts a REPL environment.
 
 repl: $(NODE_MODULES) $(STDLIB)
-	@cd $(REPL_DIR); \
+	$(QUIET) cd $(REPL_DIR); \
 	NODE_ENV=$(NODE_ENV_REPL) \
 	NODE_PATH=$(NODE_PATH_REPL) \
 	$(NODE) $(STDLIB) $(REPL) -- $(REPL_FLAGS)

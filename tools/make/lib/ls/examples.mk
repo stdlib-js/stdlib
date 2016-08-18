@@ -48,6 +48,6 @@ EXAMPLES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS
 # This target prints a newline-delimited list of example files.
 
 list-examples:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS) $(find_print_examples_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS) $(find_print_examples_list)
 
 .PHONY: list-examples

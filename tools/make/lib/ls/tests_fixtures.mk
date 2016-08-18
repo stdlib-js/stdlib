@@ -41,6 +41,6 @@ TESTS_FIXTURES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FI
 # This target prints a newline-delimited list of test fixture files.
 
 list-tests-fixtures:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS) $(find_print_tests_fixtures_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS) $(find_print_tests_fixtures_list)
 
 .PHONY: list-tests-fixtures
