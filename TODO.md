@@ -1005,7 +1005,7 @@ TODO
 
 161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
 
-162. 
+162. investigate [iron-node](https://github.com/s-a/iron-node)
 
 163. [Sieve of Eratosthenes](http://www.mahabal.io/eras)
 
@@ -1024,6 +1024,8 @@ TODO
 170. Add dev guide for developing on windows
 
 171. add a Makefile recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
+
+172. see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
 
 
 
