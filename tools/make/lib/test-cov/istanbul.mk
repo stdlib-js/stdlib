@@ -123,7 +123,7 @@ test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 .PHONY: test-istanbul-instrument
 
 
-# Run units and generate a test coverage report.
+# Run unit tests and generate a test coverage report.
 #
 # This target instruments source code, runs unit tests, and outputs a test coverage report.
 
@@ -138,6 +138,18 @@ test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 	done
 
 .PHONY: test-istanbul
+
+
+# Run unit tests and generate a test coverage report.
+#
+# This target instruments source code, runs unit tests, and outputs a test coverage report.
+
+test-istanbul-cover: $(NODE_MODULES)
+	$(QUIET) NODE_ENV=$(NODE_ENV_TEST) \
+	NODE_PATH=$(NODE_PATH_TEST) \
+	$(ISTANBUL_COVER) $(ISTANBUL_COVER_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
+
+.PHONY: test-istanbul-cover
 
 
 # View a test coverage report.
