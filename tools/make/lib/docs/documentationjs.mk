@@ -17,8 +17,7 @@ endif
 # TODO: add Windows command
 
 # Define the command for recursively creating directories (WARNING: possible portability issues on some systems!):
-MKDIR ?= mkdir
-MKDIR_FLAGS ?= -p
+MKDIR_RECURSIVE ?= mkdir -p
 
 # Define the path of the documentation.js executable:
 DOCUMENTATIONJS ?= $(BIN_DIR)/documentation
@@ -64,7 +63,7 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 
 documentationjs-html: $(NODE_MODULES)
 	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
-	$(MKDIR) $(MKDIR_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
+	$(MKDIR_RECURSIVE) $(DOCUMENTATIONJS_HTML_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
 
 .PHONY: documentationjs-html
@@ -82,7 +81,7 @@ documentationjs-html: $(NODE_MODULES)
 
 documentationjs-json: $(NODE_MODULES)
 	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_JSON)
-	$(MKDIR) $(MKDIR_FLAGS) $(DOCUMENTATIONJS_JSON_OUT)
+	$(MKDIR_RECURSIVE) $(DOCUMENTATIONJS_JSON_OUT)
 	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON)
 
 .PHONY: documentationjs-json

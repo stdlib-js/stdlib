@@ -4,7 +4,7 @@
 # Define the command to recursively sync directories:
 RSYNC_RECURSIVE ?= rsync -r
 
-# Define the command to recursively create directories:
+# Define the command to recursively create directories (WARNING: possible portability issues on some systems!):
 MKDIR_RECURSIVE ?= mkdir -p
 
 # Define the command for removing files and directories:
@@ -21,6 +21,24 @@ else
 	OPEN ?= xdg-open
 endif
 # TODO: add Windows command
+
+# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
+
+ifeq ($(KERNEL), Darwin)
+	find_kernel_prefix := -E
+else
+	find_kernel_prefix :=
+endif
+
+# Define command-line flags for finding test directories for instrumented source code:
+FIND_ISTANBUL_TESTS_DIRS_FLAGS ?= \
+	-type d \
+	-name "$(TESTS_FOLDER)" \
+	-regex "$(TESTS_FILTER)"
+
+ifneq ($(KERNEL), Darwin)
+	FIND_ISTANBUL_TESTS_DIRS_FLAGS := -regextype posix-extended $(FIND_ISTANBUL_TESTS_DIRS_FLAGS)
+endif
 
 # Define the path to the Istanbul executable.
 #
@@ -77,6 +95,17 @@ ISTANBUL_COVER_FLAGS ?= \
 	--report $(ISTANBUL_REPORT)
 
 
+# FUNCTIONS #
+
+# Macro to retrieve a list of test directories for Istanbul instrumented source code.
+#
+# $(call get-istanbul-test-dirs)
+
+define get-istanbul-test-dirs
+	$(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TESTS_DIRS_FLAGS))
+endef
+
+
 # TARGETS #
 
 # Instruments source code.
@@ -98,14 +127,14 @@ test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 #
 # This target instruments source code, runs unit tests, and outputs a test coverage report.
 
-test-istanbul: $(NODE_MODULES)
-	for dir in $(TESTS_DIRS); do \
+test-istanbul: $(NODE_MODULES) test-istanbul-instrument
+	for dir in $(get-istanbul-test-dirs); do \
 		echo ''; \
 		echo "Running tests in directory: $$dir"; \
 		echo ''; \
 		NODE_ENV=$(NODE_ENV_TEST) \
 		NODE_PATH=$(NODE_PATH_TEST) \
-		$(ISTANBUL_COVER) $(ISTANBUL_COVER_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $$dir/**/$(TESTS_PATTERN); \
+		$(JAVASCRIPT_TEST) $(JAVASCRIPT_TEST_FLAGS) $$dir/**/$(TESTS_PATTERN); \
 	done
 
 .PHONY: test-istanbul

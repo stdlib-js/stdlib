@@ -17,7 +17,7 @@ BROWSERIFY ?= $(BIN_DIR)/browserify
 BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
 
 # Define command-line options to be used when invoking the browserify executable:
-BROWSERIFY_FLAGS ?= -p $(BROWSERIFY_PROXYQUIRE)
+BROWSERIFY_BROWSER_TEST_FLAGS ?= -p $(BROWSERIFY_PROXYQUIRE)
 
 # Define the path to the `tap-spec` executable:
 TAP_REPORTER ?= $(BIN_DIR)/tap-spec
@@ -50,7 +50,7 @@ test-browsers: $(NODE_MODULES)
 	NODE_ENV=$(NODE_ENV_TEST) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
-		$(BROWSERIFY_FLAGS) \
+		$(BROWSERIFY_BROWSER_TEST_FLAGS) \
 		$(TESTS) \
 	| $(BROWSER_TEST) $(BROWSER_TEST_FLAGS) \
 	| $(TAP_REPORTER)

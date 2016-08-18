@@ -17,8 +17,7 @@ endif
 # TODO: add Windows command
 
 # Define the command for recursively creating directories (WARNING: portability issues on some systems!):
-MKDIR ?= mkdir
-MKDIR_FLAGS ?= -p
+MKDIR_RECURSIVE ?= mkdir -p
 
 # Define the path of the JSDoc executable:
 JSDOC ?= $(BIN_DIR)/jsdoc
@@ -79,7 +78,7 @@ JSDOC_JSON_FLAGS ?= \
 
 jsdoc-html: $(NODE_MODULES)
 	$(DELETE) $(DELETE_FLAGS) $(JSDOC_HTML_OUT)
-	$(MKDIR) $(MKDIR_FLAGS) $(JSDOC_HTML_OUT)
+	$(MKDIR_RECURSIVE) $(JSDOC_HTML_OUT)
 	$(JSDOC) $(JSDOC_HTML_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES)
 
 .PHONY: jsdoc-html
@@ -96,7 +95,7 @@ jsdoc-html: $(NODE_MODULES)
 
 jsdoc-json: $(NODE_MODULES)
 	$(DELETE) $(DELETE_FLAGS) $(JSDOC_JSON)
-	$(MKDIR) $(MKDIR_FLAGS) $(JSDOC_JSON_OUT)
+	$(MKDIR_RECURSIVE) $(JSDOC_JSON_OUT)
 	$(JSDOC) $(JSDOC_JSON_FLAGS) $(JSDOC_TYPEDEF) $(SOURCES) > $(JSDOC_JSON)
 
 .PHONY: jsdoc-json
