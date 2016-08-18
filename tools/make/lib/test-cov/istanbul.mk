@@ -31,13 +31,13 @@ else
 endif
 
 # Define command-line flags for finding test directories for instrumented source code:
-FIND_ISTANBUL_TESTS_DIRS_FLAGS ?= \
+FIND_ISTANBUL_TEST_DIRS_FLAGS ?= \
 	-type d \
 	-name "$(TESTS_FOLDER)" \
 	-regex "$(TESTS_FILTER)"
 
 ifneq ($(KERNEL), Darwin)
-	FIND_ISTANBUL_TESTS_DIRS_FLAGS := -regextype posix-extended $(FIND_ISTANBUL_TESTS_DIRS_FLAGS)
+	FIND_ISTANBUL_TEST_DIRS_FLAGS := -regextype posix-extended $(FIND_ISTANBUL_TEST_DIRS_FLAGS)
 endif
 
 # Define the path to the Istanbul executable.
@@ -102,7 +102,7 @@ ISTANBUL_COVER_FLAGS ?= \
 # $(call get-istanbul-test-dirs)
 
 define get-istanbul-test-dirs
-	$(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TESTS_DIRS_FLAGS))
+	$(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TEST_DIRS_FLAGS))
 endef
 
 
