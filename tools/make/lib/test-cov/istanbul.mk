@@ -55,18 +55,18 @@ ISTANBUL_EXCLUDES_FLAGS ?= \
 	-x 'node_modules/**' \
 	-x 'reports/**' \
 	-x 'tmp/**' \
-	-x '**/$(TESTS_FOLDER)/**' \
-	-x '**/$(EXAMPLES_FOLDER)/**' \
-	-x '**/$(BENCHMARKS_FOLDER)/**' \
-	-x '**/$(CONFIG_FOLDER)/**' \
-	-x '**/$(DOCUMENTATION_FOLDER)/**'
+	-x "**/$(TESTS_FOLDER)/**" \
+	-x "**/$(EXAMPLES_FOLDER)/**" \
+	-x "**/$(BENCHMARKS_FOLDER)/**" \
+	-x "**/$(CONFIG_FOLDER)/**" \
+	-x "**/$(DOCUMENTATION_FOLDER)/**"
 
 # Define which files and directories to exclude when syncing the instrumented source code directory:
 ISTANBUL_RSYNC_EXCLUDES_FLAGS ?= \
 	--ignore-existing \
-	--exclude '$(EXAMPLES_FOLDER)/' \
-	--exclude '$(BENCHMARKS_FOLDER)/' \
-	--exclude '$(DOCUMENTATION_FOLDER)/'
+	--exclude "$(EXAMPLES_FOLDER)/" \
+	--exclude "$(BENCHMARKS_FOLDER)/" \
+	--exclude "$(DOCUMENTATION_FOLDER)/"
 
 # Define the command to instrument source code for code coverage:
 ISTANBUL_INSTRUMENT ?= $(ISTANBUL) instrument
