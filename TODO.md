@@ -1027,7 +1027,18 @@ TODO
 
 172. see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
 
-173. create a bot which tails NPM for math related modules (ditto for RSS feeds of select math repos)
+173. create a bot which tails NPM for math related modules
+
+174. bot which tails RSS feeds of select math repos and each day retrieves
+
+     - number of stars/watchers
+     - number of issues (total, open, closed)
+     - number of commits
+     - number of contributors
+
+175. investigate [pkgfiles](https://github.com/timoxley/pkgfiles) as a dev tool to determine which files will be published to npm
+
+176. investigate [slow-deps](https://github.com/nolanlawson/slow-deps) as a dev tool to analyze dependency install times
 
 
 
@@ -1176,7 +1187,7 @@ TODO
 
 8. is-browser
 
-9. is-node
+9. 
 
 10. is-worker
 
