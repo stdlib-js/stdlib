@@ -1040,6 +1040,8 @@ TODO
 
 176. investigate [slow-deps](https://github.com/nolanlawson/slow-deps) as a dev tool to analyze dependency install times
 
+177. consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
+
 
 
 ---
@@ -1185,7 +1187,7 @@ TODO
    - should support option to return data of a specified type; e.g., `float32`, etc.
    - returned value should be compliant with `abstract-ndarray`
 
-8. 
+8. workshop Moby Dick corpus
 
 9. 
 
