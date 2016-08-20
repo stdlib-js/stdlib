@@ -1185,11 +1185,14 @@ TODO
    - should support option to return data of a specified type; e.g., `float32`, etc.
    - returned value should be compliant with `abstract-ndarray`
 
-8. is-browser
+8. 
 
-9. 
+9. is-electron
 
-10. is-worker
+    - [renderer](https://github.com/jprichardson/is-electron-renderer)
+    - [electron-is](https://github.com/delvedor/electron-is)
+
+10. 
 
 11. blas routines
 
@@ -1249,10 +1252,7 @@ TODO
 
     - requires `is-*` modules
 
-30. is-electron
-
-    - [renderer](https://github.com/jprichardson/is-electron-renderer)
-    - [electron-is](https://github.com/delvedor/electron-is)
+30. 
 
 31. global var detection
 
