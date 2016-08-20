@@ -1187,12 +1187,9 @@ TODO
 
 8. 
 
-9. is-electron
+9. 
 
-    - [renderer](https://github.com/jprichardson/is-electron-renderer)
-    - [electron-is](https://github.com/delvedor/electron-is)
-
-10. 
+10. [utils-pad-string](https://github.com/kgryte/utils-pad-string)
 
 11. blas routines
 
