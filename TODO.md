@@ -1042,6 +1042,10 @@ TODO
 
 177. consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
 
+178. `@stdlib/utils/open-url` => should it also include a browser shim?
+
+179. Non-node [platform](https://github.com/bestiejs/platform.js) detection?
+
 
 
 ---
@@ -1163,6 +1167,7 @@ TODO
 1. 
 2. include links to survey in main README
 3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
+
 
 ---
 
