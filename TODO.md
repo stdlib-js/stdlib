@@ -1042,7 +1042,7 @@ TODO
 
 177. consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
 
-178. `@stdlib/utils/open-url` => should it also include a browser shim?
+178. 
 
 179. Non-node [platform](https://github.com/bestiejs/platform.js) detection?
 
