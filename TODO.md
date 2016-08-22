@@ -1046,6 +1046,10 @@ TODO
 
 179. Non-node [platform](https://github.com/bestiejs/platform.js) detection?
 
+180. may be worth investigating [klipse](https://github.com/viebel/klipse) for live code editing
+
+181. update to latest `remark-lint` for linting Markdown files
+
 
 
 ---

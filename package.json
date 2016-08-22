@@ -58,7 +58,7 @@
     "rawgit-url": "^1.0.0",
     "remark": "^6.0.0",
     "remark-cli": "^2.0.0",
-    "remark-lint": "^4.0.0",
+    "remark-lint": "^5.0.0",
     "remark-validate-links": "^5.0.0",
     "tap-spec": "4.x.x",
     "tap-summary": "^3.0.1",
