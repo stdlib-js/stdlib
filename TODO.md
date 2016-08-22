@@ -946,7 +946,7 @@ TODO
 
 134. [vmd](https://github.com/yoshuawuyts/vmd)
 
-135. when browserifying `@stdlib/plot` should _ignore_ `electron-prebuilt`!!!!
+135. when browserifying `@stdlib/plot` should _ignore_ `electron`!!!!
 
      - may want to have a separate `view` method entirely; one that is catered to browser context
 
