@@ -1042,13 +1042,23 @@ TODO
 
 177. consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
 
-178. 
+178. investigate [jailed](https://github.com/asvd/jailed) for running JS code in sandbox
 
 179. Non-node [platform](https://github.com/bestiejs/platform.js) detection?
 
 180. may be worth investigating [klipse](https://github.com/viebel/klipse) for live code editing
 
-181. update to latest `remark-lint` for linting Markdown files
+181. update tools/scripts to latest `remark-lint` API for linting Markdown files
+
+182. [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
+
+183. utils, e.g., `is-string`, need more rigorous testing, especially for things like `isPrimitiveStringArray`
+
+184. `process` as a `stdlib` util (or some other namespaced) module
+
+185. Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js specific
+
+186. [GNU parallel](https://www.gnu.org/software/parallel/man.html)
 
 
 
