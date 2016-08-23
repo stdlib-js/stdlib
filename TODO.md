@@ -1058,7 +1058,7 @@ TODO
 
 185. Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js specific
 
-186. [GNU parallel](https://www.gnu.org/software/parallel/man.html)
+186. [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
 
 
 
