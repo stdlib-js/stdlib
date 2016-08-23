@@ -60,6 +60,7 @@
     "remark-cli": "^2.0.0",
     "remark-lint": "^5.0.0",
     "remark-validate-links": "^5.0.0",
+    "semver": "^5.3.0",
     "tap-spec": "4.x.x",
     "tap-summary": "^3.0.1",
     "tape": "git+https://github.com/kl0tl/tape.git#fix/globby",
