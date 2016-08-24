@@ -138,13 +138,13 @@ main() {
 	start_heartbeat "$heartbeat_interval"
 	if [[ "$task" = "test" ]]; then
 		run_tests "$log_file"
-	else if [[ "$task" = "benchmark" ]]; then
+	elif [[ "$task" = "benchmark" ]]; then
 		run_benchmarks "$log_file"
-	else if [[ "$task" = "examples" ]]; then
+	elif [[ "$task" = "examples" ]]; then
 		run_examples "$log_file"
-	else if [[ "$task" = "test-coverage" ]]; then
+	elif [[ "$task" = "test-coverage" ]]; then
 		run_test_coverage "$log_file"
-	else if [[ "task" = "check-deps" ]]; then
+	elif [[ "task" = "check-deps" ]]; then
 		check_deps "$log_file"
 	else
 		echo "ERROR: unknown task: $task." >&2
