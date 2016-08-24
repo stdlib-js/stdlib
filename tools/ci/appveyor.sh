@@ -84,16 +84,16 @@ start_heartbeat
 
 # Run CI commands, merging `stderr` into `stdout` and redirecting logged output to file...
 # echo 'Checking dependencies...'
-# make check-deps >> "$CI_LOG_PATH" 2>&1
+make check-deps >> "$CI_LOG_PATH" 2>&1
 
 # echo 'Running tests...'
-# make test >> "$CI_LOG_PATH" 2>&1
+make test >> "$CI_LOG_PATH" 2>&1
 
 # echo 'Running benchmarks...'
-# make benchmark >> "$CI_LOG_PATH" 2>&1
+make benchmark >> "$CI_LOG_PATH" 2>&1
 
 # echo 'Running examples...'
-# make examples >> "$CI_LOG_PATH" 2>&1
+make examples >> "$CI_LOG_PATH" 2>&1
 
 echo 'Generating test coverage report...'
 make test-cov >> "$CI_LOG_PATH" 2>&1
