@@ -1,0 +1,11 @@
+
+Usage: stdlib-tape-istanbul [options] <pattern>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --dir dirname         Root directory from which to search.
+         --global variable     Global variable containing coverage information.
+         --output filepath     Output filepath for coverage information.
+
