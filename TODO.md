@@ -911,9 +911,7 @@ TODO
 
      - is-empty-array => should this just be a method off of `isArray`?
 
-125. update the `test-istanbul` target to run each test individually, output `lcov.info` to a `reports` dir, concatenate all `lcov` results, and then generate a HTML report. See [istanbul](https://github.com/gotwarlost/istanbul).
-
-     - for CI, push concatenated `lcov` to coverage service
+125. 
 
 126. adventures / workshoppers
 
@@ -1054,11 +1052,17 @@ TODO
 
 183. utils, e.g., `is-string`, need more rigorous testing, especially for things like `isPrimitiveStringArray`
 
-184. `process` as a `stdlib` util (or some other namespaced) module
+184. `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
 
 185. Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js specific
 
 186. [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
+
+187. FAQ
+
+     - What about web assembly?
+
+188. investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
 
 
 

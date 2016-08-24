@@ -28,7 +28,7 @@ endif
 #
 # This target instruments JavaScript source code, runs unit tests, and outputs a test coverage report.
 
-test-javascript-cov:
+test-javascript-cov: clean-javascript-cov
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	$(QUIET) $(MAKE) -f $(this_file) test-istanbul
 endif
