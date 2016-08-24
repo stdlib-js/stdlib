@@ -42,11 +42,13 @@ cleanup() {
 }
 
 # Starts a heartbeat.
+#
+# $1 - heartbeat interval
 start_heartbeat() {
 	echo 'Starting heartbeat...' >&2
 
 	# Create a heartbeat and send to background:
-	heartbeat &
+	heartbeat "$1" &
 
 	# Capture the heartbeat pid:
 	heartbeat_pid=$!
