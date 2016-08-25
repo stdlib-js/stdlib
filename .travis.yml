@@ -23,10 +23,17 @@ node_js:
   - '0.12'
   - '0.10'
 
+env:
+  - BUILD_TASK='test'
+  - BUILD_TASK='benchmark'
+  - BUILD_TASK='examples'
+  - BUILD_TASK='test-coverage'
+
 before_install:
   # Update the npm client. Older clients cannot, e.g., handle scoped modules.
   - npm update -g npm
 
 script:
-  - ./tools/ci/travis.sh
+  - chmod +x ./tools/ci/travis
+  - "./tools/ci/travis $BUILD_TASK"
 
