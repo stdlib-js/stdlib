@@ -11,7 +11,7 @@
 task="$1"
 
 # Define an output file to store log output:
-log_files=/var/log/travis-ci.log
+log_file=/var/log/travis-ci.log
 
 # Define a heartbeat interval to periodically print messages in order to prevent Travis CI from prematurely ending a build due to long running commands:
 heartbeat_interval=30s
