@@ -845,6 +845,7 @@ TODO
 105. stability badges
 
      * may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, stable, locked, or otherwise
+     * `package.json` field => `"stdlib":{"stability":"experimental"}`
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
@@ -909,7 +910,7 @@ TODO
 
 124. reviews
 
-     - is-empty-array => should this just be a method off of `isArray`?
+     - is-empty-array => should this just be a method off of `isArray`? => `isArray.isEmptyArray`?
 
 125. 
 
@@ -927,6 +928,8 @@ TODO
      - [webgl-workshop](https://github.com/stackgl/webgl-workshop)
 
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service. (note: this means that the `master` branch should never run the dep check to ensure up-to-date dependencies; otherwise, `master` could fail for non-test related reasons)
+
+     - for dep check, build script which acts similar to greenkeeper => creates/updates branch, if check deps fails, auto-installs, runs full build (tests, examples, etc), and checks if fails.
 
 128. plot svg components should have factory methods
 
