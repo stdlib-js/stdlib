@@ -1,6 +1,9 @@
 
 # VARIABLES #
 
+# Define the command for `node`:
+NODE ?= node
+
 # Define the command to recursively sync directories:
 RSYNC_RECURSIVE ?= rsync -r
 
@@ -114,7 +117,7 @@ ISTANBUL_REPORT_FLAGS ?= \
 
 # Define the test runner executable for Istanbul instrumented source code:
 ifeq ($(JAVASCRIPT_TEST_RUNNER), tape)
-	ISTANBUL_TEST_RUNNER ?= node $(TOOLS_DIR)/test-cov/tape-istanbul/bin/cli
+	ISTANBUL_TEST_RUNNER ?= $(NODE) $(TOOLS_DIR)/test-cov/tape-istanbul/bin/cli
 	ISTANBUL_TEST_RUNNER_FLAGS ?= \
 		--dir $(ISTANBUL_INSTRUMENT_OUT) \
 		--global '__coverage__'
