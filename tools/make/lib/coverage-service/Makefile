@@ -4,6 +4,9 @@
 # Define the code coverage service to use:
 COVERAGE_SERVICE ?= codecov
 
+# Define the name of the coverage report:
+COVERAGE_NAME ?= $(NODE_ENV_TEST)
+
 # Define the path of the `lcov.info` file which will be sent to the coverage service:
 LCOV_INFO ?= $(COVERAGE_DIR)/lcov.info
 

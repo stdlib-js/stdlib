@@ -4,6 +4,9 @@
 # Define the command for `npm`:
 NPM ?= npm
 
+# Define the command for `node`:
+NODE ?= node
+
 # Define the command for `cat`:
 CAT ?= cat
 CAT_FLAGS ?=
@@ -14,9 +17,12 @@ CODECOV ?= $(BIN_DIR)/codecov
 # Define the command-line options to be used when reporting coverage statistics:
 CODECOV_FLAGS ?= \
 	-F $(CI_SERVICE) \
-	-F $(KERNEL) \ # TODO: lower case
-	-F $(NODE_ENV) \
-	-F $(NODE_VERSION) # TODO: compute
+	-F $(shell echo $(KERNEL) | tr '[:upper:]' '[:lower:]') \
+	-F $(shell $(NODE) --version | tr '\.' '_' | (printf 'node_' && $(CAT)))
+
+ifdef COVERAGE_NAME
+	CODECOV_FLAGS := $(CODECOV_FLAGS) -F $(COVERAGE_NAME)
+endif
 
 
 # TARGETS #
