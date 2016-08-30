@@ -134,6 +134,14 @@ define get-istanbul-test-dirs
 	$(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TEST_DIRS_FLAGS))
 endef
 
+# Macro to generate a coverage report name.
+#
+# $(call get-istanbul-coverage-report-name)
+
+define get-istanbul-coverage-report-name
+$(shell echo "$(COVERAGE_DIR)/coverage_$$(date +'%Y%m%d_%H%M%S')_$$(bash -c 'echo $$RANDOM').json")
+endef
+
 
 # TARGETS #
 
@@ -158,16 +166,15 @@ test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 
 test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 	$(QUIET) $(MKDIR_RECURSIVE) $(COVERAGE_DIR)
-	$(QUIET) coverage_id=0; for dir in $(get-istanbul-test-dirs); do \
+	$(QUIET) for dir in $(get-istanbul-test-dirs); do \
 		echo ''; \
 		echo "Running tests in directory: $$dir"; \
 		echo ''; \
-		((coverage_id = coverage_id + 1)); \
 		NODE_ENV=$(NODE_ENV_TEST) \
 		NODE_PATH=$(NODE_PATH_TEST) \
 		$(ISTANBUL_TEST_RUNNER) \
 			$(ISTANBUL_TEST_RUNNER_FLAGS) \
-			--output "$(COVERAGE_DIR)/coverage_$$coverage_id.json" \
+			--output "$(get-istanbul-coverage-report-name)" \
 			"$$dir/**/$(TESTS_PATTERN)" \
 		| $(TAP_REPORTER) || exit 1; \
 	done
