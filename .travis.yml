@@ -24,14 +24,30 @@ node_js:
   - '0.10'
 
 env:
-  - BUILD_TASK='test'
-  - BUILD_TASK='benchmark'
-  - BUILD_TASK='examples'
-  - BUILD_TASK='test-coverage'
+  # Environment variables common to all jobs:
+  global:
+    - CXX=g++-4.8
+
+  # Environment variables used to construct build matrix:
+  matrix:
+    - BUILD_TASK='test'
+    - BUILD_TASK='benchmark'
+    - BUILD_TASK='examples'
+    - BUILD_TASK='test-coverage'
+
 
 matrix:
   # Flag to immediately finish a build if any one of the jobs fails:
   fast_finish: true
+
+
+# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5.
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 
 
 # Set the clone depth:
