@@ -16,7 +16,7 @@ CODECOV_FLAGS ?= \
 	-F $(CI_SERVICE) \
 	-F $(shell echo $(KERNEL) | tr '[:upper:]' '[:lower:]') \
 	-F $(shell $(NODE) --version | tr '\.' '_' | (printf 'node_' && $(CAT))) \
-	-X fix
+	-X fix \
 	-Z
 
 ifdef COVERAGE_NAME
