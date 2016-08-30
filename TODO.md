@@ -462,6 +462,8 @@ TODO
     * [mocha-doctest](https://github.com/andreypopp/mocha-doctest)
     * [comment-to-assert](https://github.com/azu/comment-to-assert)
     * [doctestjs](https://github.com/ianb/doctestjs)
+    * [evalmd](https://github.com/reggi/evalmd)
+    * [readme-tester](https://github.com/orangemug/readme-tester)
 
 69. to browser (see tools/simple-http-server)
 
@@ -792,7 +794,7 @@ TODO
 100. review
 
      * [ ] crypto
-     * [x] datasets
+     * [-] datasets
      * [ ] math/base/blas
      * [ ] math/base/random
      * [ ] math/base/special
@@ -933,7 +935,7 @@ TODO
 
 128. plot svg components should have factory methods
 
-129. [readme-tester](https://github.com/orangemug/readme-tester)
+129. 
 
 130. Annotations overlay, 
 
@@ -1024,7 +1026,7 @@ TODO
 
 170. Add dev guide for developing on windows
 
-171. add a Makefile recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
+171. add a Makefile (and `makie`) recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
 
 172. see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
 
