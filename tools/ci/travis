@@ -83,6 +83,7 @@ tail_output() {
 #
 # $1 - log file path
 create_log_file() {
+	echo "Creating an output log file: $1." >&2
 	sudo touch "$1"
 	sudo chown travis "$1"
 }
@@ -98,6 +99,12 @@ print_success() {
 run_tests() {
 	echo 'Running tests...' >&2
 	make test >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		return 1
+	fi
+	echo 'Tests passed.' >&2
+	return 0
 }
 
 # Runs test coverage.
@@ -106,6 +113,12 @@ run_tests() {
 run_test_coverage() {
 	echo 'Running test coverage...' >&2
 	make test-cov >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		return 1
+	fi
+	echo 'Tests passed.' >&2
+	return 0
 }
 
 # Sends test coverage to coverage service.
@@ -115,6 +128,12 @@ run_test_coverage() {
 send_coverage() {
 	echo 'Sending coverage report to coverage service...' >&2
 	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Sending coverage report to coverage service failed.' >&2
+		return 1
+	fi
+	echo 'Coverage report sent to coverage service.' >&2
+	return 0
 }
 
 # Runs benchmarks.
@@ -123,6 +142,12 @@ send_coverage() {
 run_benchmarks() {
 	echo 'Running benchmarks...' >&2
 	make benchmark >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Benchmarks failed.' >&2
+		return 1
+	fi
+	echo 'Successfully ran benchmarks.' >&2
+	return 0
 }
 
 # Runs examples.
@@ -131,6 +156,12 @@ run_benchmarks() {
 run_examples() {
 	echo 'Running examples...' >&2
 	make examples >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Examples failed.' >&2
+		return 1
+	fi
+	echo 'Successfully ran examples.' >&2
+	return 0
 }
 
 # Checks dependencies.
@@ -139,25 +170,54 @@ run_examples() {
 check_deps() {
 	echo 'Checking dependencies...' >&2
 	make check-deps >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Dependencies are out-of-date.' >&2
+		return 1
+	fi
+	echo 'Dependencies are up-to-date.' >&2
+	return 0
 }
 
 # Main execution sequence.
 main() {
 	create_log_file "$log_file"
 	start_heartbeat "$heartbeat_interval"
+
+	echo "Task: $task." >&2
 	if [[ "$task" = "test" ]]; then
 		# FIXME: remove checking deps once separate build environment
 		check_deps "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 		run_tests "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 	elif [[ "$task" = "benchmark" ]]; then
 		run_benchmarks "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 	elif [[ "$task" = "examples" ]]; then
 		run_examples "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 	elif [[ "$task" = "test-coverage" ]]; then
 		run_test_coverage "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 		send_coverage "unit_test" "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 	elif [[ "task" = "check-deps" ]]; then
 		check_deps "$log_file"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 	else
 		echo "ERROR: unknown task: $task." >&2
 		on_error 1
@@ -166,9 +226,6 @@ main() {
 	print_success
 	exit 0
 }
-
-# Exit immediately if one of the executed commands exits with a non-zero status:
-set -e
 
 # Set an error handler to print captured output and perform any clean-up tasks:
 trap 'on_error' ERR
