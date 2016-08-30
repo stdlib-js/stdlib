@@ -1,0 +1,20 @@
+{
+	"boolean": [
+		"help",
+		"version",
+		"cright"
+	],
+	"string": [
+		"len",
+		"lpad",
+		"rpad"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}
