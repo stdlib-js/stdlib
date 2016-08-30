@@ -112,10 +112,11 @@ run_test_coverage() {
 
 # Sends test coverage to coverage service.
 #
-# $1 - log file
+# $1 - report title
+# $2 - log file
 send_coverage() {
 	echo 'Sending coverage report to coverage service...' >&2
-	make coverage >> "$1" 2>&1
+	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
 }
 
 # Runs benchmarks.
@@ -154,7 +155,7 @@ main() {
 		run_examples "$log_file"
 	elif [[ "$task" = "test-coverage" ]]; then
 		run_test_coverage "$log_file"
-		send_coverage "$log_file"
+		send_coverage "unit_test" "$log_file"
 	elif [[ "task" = "check-deps" ]]; then
 		check_deps "$log_file"
 	else
