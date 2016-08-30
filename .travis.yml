@@ -29,9 +29,20 @@ env:
   - BUILD_TASK='examples'
   - BUILD_TASK='test-coverage'
 
+matrix:
+  # Flag to immediately finish a build if any one of the jobs fails:
+  fast_finish: true
+
+
+# Set the clone depth:
+git:
+  depth: 10
+
+
 before_install:
   # Update the npm client. Older clients cannot, e.g., handle scoped modules.
   - npm update -g npm
+
 
 script:
   - chmod +x ./tools/ci/travis
