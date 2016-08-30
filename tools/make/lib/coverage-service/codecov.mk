@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `npm`:
-NPM ?= npm
-
 # Define the command for `node`:
 NODE ?= node
 
@@ -12,7 +9,7 @@ CAT ?= cat
 CAT_FLAGS ?=
 
 # Define the path to the Codecov executable:
-CODECOV ?= $(BIN_DIR)/codecov
+CODECOV ?= bash <(curl -s https://codecov.io/bash)
 
 # Define the command-line options to be used when reporting coverage statistics:
 CODECOV_FLAGS ?= \
@@ -31,13 +28,9 @@ endif
 #
 # This target sends coverage statistics to [Codecov][1].
 #
-# To install Codecov:
-#     $ npm install codecov
-#
 # [1]: https://codecov.io/
 
 coverage-codecov:
-	$(QUIET) $(NPM) install codecov
-	$(QUIET) $(CAT) $(CAT_FLAGS) $(LCOV_INFO) | $(CODECOV) $(CODECOV_FLAGS)
+	$(QUIET) $(CAT) $(CAT_FLAGS) $(LCOV_INFO) | $(CODECOV) $(CODECOV_FLAGS) || echo "Failed to upload coverage reports to Codecov. :("
 
 .PHONY: coverage-codecov
