@@ -5,7 +5,7 @@
 MAKE_EXECUTABLE ?= chmod +x
 
 # Define the path of the linter executable:
-FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint.sh
+FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint
 
 
 # TARGETS #
