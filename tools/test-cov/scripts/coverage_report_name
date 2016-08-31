@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+#
+# Script to generate a coverage report name.
+#
+# This script is called with the following parameters:
+#
+# * `$1` - base directory containing instrumented source code
+# * `$2` - test directory
+# * `$3` - coverage report output directory
+
+
+# VARIABLES #
+
+# Base directory:
+base="$1"
+
+# Test directory:
+testdir="$2"
+
+# Output directory:
+output="$3"
+
+
+# FUNCTIONS #
+
+# Main execution sequence.
+main() {
+	local path
+	local slug
+
+	# Remove the base path from the directory path (using POXIX shell variable expansion):
+	path="${testdir#${base}/}"
+
+	# Slugify the path (basic algorithm):
+	slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+
+	# Generate a filename:
+	echo "${output}/coverage${slug}.json"
+
+	exit 0
+}
+
+# Run main:
+main
