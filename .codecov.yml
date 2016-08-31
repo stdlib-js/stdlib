@@ -73,4 +73,4 @@ status:
 # Comment settings:
 comment:
   layout: "header, diff, changes, sunburst, uncovered, tree"
-  behavor: default
+  behavior: default
