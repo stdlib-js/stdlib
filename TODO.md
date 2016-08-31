@@ -218,11 +218,7 @@ TODO
 
 32. [gh-pages](https://github.com/tschaub/gh-pages)
 
-33. possible issue for [float64-set-high-word](https://ci.appveyor.com/project/kgryte/stdlib/build/job/3nseqtdxqey85wfk)
-
-    * attempted to debug, but was able to get the right return value; so not sure what happened and why
-    * NOTE: this seems to be a recurring bug; builds continue to occasionally fail on Windows
-    * may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
+33. may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
 
 34. module to identify equations in README files
 
