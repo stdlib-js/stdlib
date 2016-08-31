@@ -100,7 +100,7 @@ print_success() {
 # $1 - log file
 run_tests() {
 	echo 'Running tests...' >&2
-	make test >> "$1" 2>&1
+	make TESTS_FILTER=".*/float64-set-low-word/.*" test >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
