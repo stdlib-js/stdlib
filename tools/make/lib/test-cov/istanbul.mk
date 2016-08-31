@@ -10,6 +10,9 @@ RSYNC_RECURSIVE ?= rsync -r
 # Define the command to recursively create directories (WARNING: possible portability issues on some systems!):
 MKDIR_RECURSIVE ?= mkdir -p
 
+# Define the command for setting executable permissions:
+MAKE_EXECUTABLE ?= chmod +x
+
 # Define the command for removing files and directories:
 DELETE ?= -rm
 DELETE_FLAGS ?= -rf
@@ -45,6 +48,9 @@ endif
 
 # Define the path to the `tap-spec` executable:
 TAP_REPORTER ?= $(BIN_DIR)/tap-spec
+
+# Define the executable for generating a coverage report name:
+COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
 
 # Define the path to the Istanbul executable.
 #
@@ -130,17 +136,7 @@ endif
 #
 # $(call get-istanbul-test-dirs)
 
-define get-istanbul-test-dirs
-	$(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TEST_DIRS_FLAGS))
-endef
-
-# Macro to generate a coverage report name.
-#
-# $(call get-istanbul-coverage-report-name)
-
-define get-istanbul-coverage-report-name
-$(shell echo "$(COVERAGE_DIR)/coverage_$$(date +'%Y%m%d_%H%M%S')_$$(bash -c 'echo $$RANDOM').json")
-endef
+get-istanbul-test-dirs = $(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMENT_OUT) $(FIND_ISTANBUL_TEST_DIRS_FLAGS))
 
 
 # TARGETS #
@@ -166,6 +162,7 @@ test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 
 test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 	$(QUIET) $(MKDIR_RECURSIVE) $(COVERAGE_DIR)
+	$(QUIET) $(MAKE_EXECUTABLE) $(COVERAGE_REPORT_NAME)
 	$(QUIET) for dir in $(get-istanbul-test-dirs); do \
 		echo ''; \
 		echo "Running tests in directory: $$dir"; \
@@ -174,7 +171,7 @@ test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 		NODE_PATH=$(NODE_PATH_TEST) \
 		$(ISTANBUL_TEST_RUNNER) \
 			$(ISTANBUL_TEST_RUNNER_FLAGS) \
-			--output "$(get-istanbul-coverage-report-name)" \
+			--output $$($(COVERAGE_REPORT_NAME) $(ISTANBUL_INSTRUMENT_OUT) $$dir $(COVERAGE_DIR)) \
 			"$$dir/**/$(TESTS_PATTERN)" \
 		| $(TAP_REPORTER) || exit 1; \
 	done
