@@ -914,7 +914,7 @@ TODO
 
      - is-empty-array => should this just be a method off of `isArray`? => `isArray.isEmptyArray`?
 
-125. 
+125. include a [creditcard](https://github.com/bendrucker/creditcards) validation module?
 
 126. adventures / workshoppers
 
@@ -1068,6 +1068,8 @@ TODO
      - What about web assembly?
 
 188. investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
+
+189. For `master`, `develop`, and PRs into `master` and `develop`, run full build sequence; for all other branches, just is it necessary to run full sequence or just, say, tests?
 
 
 
