@@ -11,13 +11,13 @@
 task="$1"
 
 # Define an output file to store log output:
-log_file=/var/log/travis-ci.log
+log_file='/var/log/travis-ci.log'
 
 # Define a heartbeat interval to periodically print messages in order to prevent Travis CI from prematurely ending a build due to long running commands:
-heartbeat_interval=30s
+heartbeat_interval='30s'
 
 # Declare a variable for storing the heartbeat process id:
-heartbeat_pid=
+heartbeat_pid=""
 
 # Define the number of lines of logged output to print upon completion:
 tail_num_lines=4000
@@ -36,7 +36,7 @@ on_error() {
 
 # Runs clean-up tasks.
 cleanup() {
-	tail_output "$log_file" "$tail_num_lines"
+	tail_output "${log_file}" "${tail_num_lines}"
 	stop_heartbeat
 }
 
@@ -51,7 +51,7 @@ start_heartbeat() {
 
 	# Capture the heartbeat pid:
 	heartbeat_pid=$!
-	echo "Heartbeat pid: $heartbeat_pid" >&2
+	echo "Heartbeat pid: ${heartbeat_pid}" >&2
 }
 
 # Runs an infinite print loop.
@@ -67,7 +67,7 @@ heartbeat() {
 # Stops the heartbeat print loop.
 stop_heartbeat() {
 	echo 'Stopping heartbeat...' >&2
-	kill "$heartbeat_pid"
+	kill "${heartbeat_pid}"
 }
 
 # Tails a log file.
@@ -180,46 +180,46 @@ check_deps() {
 
 # Main execution sequence.
 main() {
-	create_log_file "$log_file"
-	start_heartbeat "$heartbeat_interval"
+	create_log_file "${log_file}"
+	start_heartbeat "${heartbeat_interval}"
 
-	echo "Task: $task." >&2
-	if [[ "$task" = "test" ]]; then
+	echo "Task: ${task}." >&2
+	if [[ "${task}" = "test" ]]; then
 		# FIXME: remove checking deps once separate build environment
-		check_deps "$log_file"
+		check_deps "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-		run_tests "$log_file"
+		run_tests "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-	elif [[ "$task" = "benchmark" ]]; then
-		run_benchmarks "$log_file"
+	elif [[ "${task}" = "benchmark" ]]; then
+		run_benchmarks "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-	elif [[ "$task" = "examples" ]]; then
-		run_examples "$log_file"
+	elif [[ "${task}" = "examples" ]]; then
+		run_examples "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-	elif [[ "$task" = "test-coverage" ]]; then
-		run_test_coverage "$log_file"
+	elif [[ "${task}" = "test-coverage" ]]; then
+		run_test_coverage "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-		send_coverage "unit_test" "$log_file"
+		send_coverage "unit_test" "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-	elif [[ "task" = "check-deps" ]]; then
-		check_deps "$log_file"
+	elif [[ "${task}" = "check-deps" ]]; then
+		check_deps "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	else
-		echo "ERROR: unknown task: $task." >&2
+		echo "ERROR: unknown task: ${task}." >&2
 		on_error 1
 	fi
 	cleanup
