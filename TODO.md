@@ -792,6 +792,7 @@ TODO
 
      * [ ] crypto
      * [-] datasets
+     * [ ] fs
      * [ ] math/base/blas
      * [ ] math/base/random
      * [ ] math/base/special
@@ -805,7 +806,7 @@ TODO
      * [ ] plot
      * [x] regexp
      * [x] repl
-     * [x] streams
+     * [-] streams
      * [x] tools
      * [ ] utils
 
@@ -1073,6 +1074,8 @@ TODO
 191. convert filename linter to use plugin architecture?
 
 192. generate random strings based on a [regular expression](https://github.com/fent/randexp.js)
+
+193. timed [tape](https://github.com/diasdavid/timed-tape) tests...useful?
 
 
 
