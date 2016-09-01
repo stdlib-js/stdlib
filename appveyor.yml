@@ -87,8 +87,11 @@ install:
   # Switch to the desired Node version:
   - ps: Install-Product node $env:nodejs_version
 
-  # Update the npm client. Older clients cannot, e.g., handle scoped modules.
+  # Update the npm client. Older clients cannot, e.g., handle scoped modules, and on Windows are subject to race conditions (see https://github.com/appveyor/ci/issues/102 and https://www.appveyor.com/docs/lang/nodejs-iojs/#locking-errors-eperm-eexist-tgzlock ).
+  - cmd: npm install -g npm@2
   - cmd: npm update -g npm
+  - cmd: npm --version
+  - cmd: set PATH=%APPDATA%\npm;%PATH%
 
   # Install node module dependencies:
   - cmd: npm install
