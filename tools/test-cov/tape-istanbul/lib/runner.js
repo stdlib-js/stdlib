@@ -16,7 +16,7 @@ var readFile = require( prefix+'@stdlib/utils/fs/read-file' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var compile = require( './compile.js' );
-var createRequire = require( './require.js' );
+var createRequire = require( './create_require.js' );
 var coverage = require( './coverage.js' );
 
 
