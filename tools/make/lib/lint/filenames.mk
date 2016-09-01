@@ -5,7 +5,11 @@
 MAKE_EXECUTABLE ?= chmod +x
 
 # Define the path of the linter executable:
-FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint
+FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/bin/cli
+
+# Define the command-line options to be used when invoking the executable:
+FILENAME_LINTER_FLAGS ?= \
+	--dir $(ROOT_DIR)
 
 
 # TARGETS #
@@ -16,6 +20,6 @@ FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/lint
 
 lint-filenames:
 	$(QUIET) $(MAKE_EXECUTABLE) $(FILENAME_LINTER)
-	$(QUIET) $(FILENAME_LINTER)
+	$(QUIET) $(FILENAME_LINTER) $(FILENAME_LINTER_FLAGS)
 
 .PHONY: lint-filenames
