@@ -1,0 +1,109 @@
+#!/usr/bin/env bash
+#
+# Script to lint a [Travis CI][1] configuration file.
+#
+# This script is called with the following parameters:
+#
+# * `$1` - absolute file path of the configuration file
+#
+# [1]: https://docs.travis-ci.com/user/customizing-the-build
+
+
+# VARIABLES #
+
+# Configuration file absolute file path:
+file="$1"
+
+# Validation URL:
+url='http://lint.travis-ci.org/'
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Lints a configuration file.
+#
+# $1 - file path
+lint() {
+	# Mimic a web browser form request:
+	curl \
+		--silent \
+		-X POST \
+		--header 'Content-Type:application/x-www-form-urlencoded' \
+		--data-urlencode yml@"$1" \
+		"${url}" 2>&1
+}
+
+# Processes an HTML response.
+#
+# $1 - html
+process() {
+	# Raw HTML results content may look as follows:
+	#
+	# Success:
+	#
+	# ```
+	# <p class="result">Hooray, your .travis.yml seems to be solid!</p>
+	# ```
+	#
+	# Errors:
+	#
+	# ```
+	# <ul class="result"><li>in <b class="error">os</b> section: dropping <b class="error">osx</b>, does not support <b class="error">node_js</b></li><li>value for <b class="error">addons</b> section is empty, dropping</li><li>in <b class="error">addons</b> section: unexpected key <b class="error">apt</b>, dropping</li></ul>
+	# ```
+
+	# Processing proceeds as follows:
+	#
+	# 1) Find the lint results.
+	# 2) Replace all `<li>` elements with a temporary character `|`.
+	# 3) Replace all `|` with newline characters
+	# 4) Remove all HTML elements.
+	# 5) Remove empty newlines.
+	echo "$1" \
+	| grep -o '<ul class="result">.*</ul>' \
+	| sed 's/<li>/\|/g' \
+	| tr '|' '\n' \
+	| sed -e 's/<[^>]*>//g' \
+	| awk 'NF'
+}
+
+# Prints lint errors.
+#
+# $1 - results
+print_errors() {
+	echo '' >&2
+	echo 'Lint errors:' >&2
+	echo '' >&2
+	echo "$1" >&2
+	echo '' >&2
+}
+
+# Prints success message.
+print_success() {
+	echo 'No lint errors found.' >&2
+}
+
+# Main execution sequence.
+main() {
+	local results=$(lint "${file}")
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	local errors=$(process "${results}")
+	if [[ -n "${errors}" ]]; then
+		print_errors "${errors}"
+		exit 1
+	fi
+	print_success
+	exit 0
+}
+
+# Run main:
+main

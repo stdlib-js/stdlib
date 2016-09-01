@@ -4,6 +4,7 @@
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
 
 
 # TARGETS #
@@ -12,7 +13,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 #
 # This target lints all files.
 
-lint: lint-filenames lint-javascript lint-markdown
+lint: lint-filenames lint-javascript lint-markdown lint-conf
 
 .PHONY: lint
 

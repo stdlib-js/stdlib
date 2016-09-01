@@ -1,5 +1,10 @@
 # After changing this file, check it on:
 #   http://lint.travis-ci.org/
+#
+# Known lint bugs:
+#   - addons: https://github.com/travis-ci/travis-yaml/issues/58
+#   - osx: https://github.com/travis-ci/travis-yaml/issues/95
+
 language: node_js
 
 # Is `sudo` required? If not, jobs are run on container-based infrastructure.
