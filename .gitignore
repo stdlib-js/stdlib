@@ -14,14 +14,12 @@ lib/node_modules/**/node_modules/
 *.com
 *.class
 *.dll
-*.exe
 *.o
 *.so
 *.slo
 *.lo
 *.obj
 *.dylib
-*.dll
 *.lai
 *.la
 *.a
@@ -138,7 +136,6 @@ acs-*.bib
 *.glg
 *.glo
 *.gls
-*.brf
 *-concordance.tex
 *.tikz
 *-tikzDictionary

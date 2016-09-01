@@ -1,0 +1,27 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Lint filenames.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "lint-filenames": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "lint",
+    "linter",
+    "file",
+    "names",
+    "filenames"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

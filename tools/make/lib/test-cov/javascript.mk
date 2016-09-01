@@ -28,9 +28,9 @@ endif
 #
 # This target instruments JavaScript source code, runs unit tests, and outputs a test coverage report.
 
-test-javascript-cov:
+test-javascript-cov: clean-javascript-cov
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
-	@$(MAKE) -f $(this_file) test-istanbul
+	$(QUIET) $(MAKE) -f $(this_file) test-istanbul
 endif
 
 .PHONY: test-javascript-cov
@@ -42,7 +42,7 @@ endif
 
 view-javascript-cov:
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
-	@$(MAKE) -f $(this_file) view-istanbul-report
+	$(QUIET) $(MAKE) -f $(this_file) view-istanbul-report
 endif
 
 .PHONY: view-javascript-cov
@@ -53,6 +53,6 @@ endif
 # This target cleans up a JavaScript coverage directory by removing it entirely.
 
 clean-javascript-cov:
-	$(DELETE) $(DELETE_FLAGS) $(COVERAGE_DIR)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(COVERAGE_DIR)
 
 .PHONY: clean-javascript-cov

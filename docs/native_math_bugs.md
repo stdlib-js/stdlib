@@ -23,6 +23,7 @@
 * [If `Math.floor` provided `-0`, V8 deoptimizes][19]
 * [If `Math.ceil` provided `0`, V8 deoptimizes][20]
 * [Accuracy of `Math.round` in V8][21]
+* [Observability of distinguishable NaNs][22]
 
 
 <!-- <links> -->
@@ -48,5 +49,6 @@
 [19]: https://bugs.chromium.org/p/v8/issues/detail?id=2890
 [20]: https://bugs.chromium.org/p/v8/issues/detail?id=4059
 [21]: https://bugs.chromium.org/p/v8/issues/detail?id=958
+[22]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
 
 <!-- </links> -->

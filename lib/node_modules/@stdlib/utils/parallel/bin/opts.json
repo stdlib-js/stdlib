@@ -1,0 +1,23 @@
+{
+	"string": [
+		"cmd",
+		"workers",
+		"concurrency",
+		"uid",
+		"gid",
+		"maxbuffer"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"ordered"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

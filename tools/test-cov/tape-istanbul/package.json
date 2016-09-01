@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "version": "",
+  "description": "tape test runner for Istanbul instrumented source code.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "istanbul",
+    "tape",
+    "test",
+    "runner",
+    "coverage",
+    "cov"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

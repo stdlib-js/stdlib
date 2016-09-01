@@ -52,6 +52,7 @@ MODULES_FILTER ?= .*/.*
 include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk

@@ -1,0 +1,15 @@
+
+Usage: parallel [options] <script1> <script2> ...
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --cmd cmd             Executable file/command.
+         --workers num         Number of workers.
+         --concurrency num     Number of scripts to run concurrently.
+         --ordered             Preserve order of script output.
+         --uid uid             Process user identity.
+         --gid gid             Process group identity.
+         --maxbuffer size      Max buffer size for stdout and stderr.
+

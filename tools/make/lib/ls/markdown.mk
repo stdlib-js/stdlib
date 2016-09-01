@@ -17,11 +17,11 @@ find_print_markdown_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_MARKDOWN_FLAGS ?= \
-		-name "$(MARKDOWN_PATTERN)" \
-		-regex "$(MARKDOWN_FILTER)" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*"
+	-name "$(MARKDOWN_PATTERN)" \
+	-regex "$(MARKDOWN_FILTER)" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_MARKDOWN_FLAGS := -regextype posix-extended $(FIND_MARKDOWN_FLAGS)
@@ -38,6 +38,6 @@ MARKDOWN_FILES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN
 # This target prints a list of all Markdown files, excluding the `node_modules`, `build`, and `reports` directories.
 
 list-markdown-files:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS) $(find_print_markdown_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS) $(find_print_markdown_list)
 
 .PHONY: list-markdown-files

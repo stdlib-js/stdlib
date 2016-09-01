@@ -24,9 +24,9 @@ endif
 
 src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(this_file) jsdoc-html
+	$(QUIET) $(MAKE) -f $(this_file) jsdoc-html
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(this_file) documentationjs-html
+	$(QUIET) $(MAKE) -f $(this_file) documentationjs-html
 endif
 
 .PHONY: src-docs
@@ -38,9 +38,9 @@ endif
 
 view-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(this_file) view-jsdoc-html
+	$(QUIET) $(MAKE) -f $(this_file) view-jsdoc-html
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(this_file) view-documentationjs-html
+	$(QUIET) $(MAKE) -f $(this_file) view-documentationjs-html
 endif
 
 .PHONY: view-src-docs
@@ -52,9 +52,9 @@ endif
 
 clean-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(this_file) clean-jsdoc
+	$(QUIET) $(MAKE) -f $(this_file) clean-jsdoc
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(this_file) clean-documentationjs
+	$(QUIET) $(MAKE) -f $(this_file) clean-documentationjs
 endif
 
 .PHONY: clean-src-docs
@@ -68,9 +68,9 @@ endif
 
 rebuild-src-docs:
 ifeq ($(SRC_DOC_GENERATOR), jsdoc)
-	@$(MAKE) -f $(this_file) rebuild-jsdoc-html
+	$(QUIET) $(MAKE) -f $(this_file) rebuild-jsdoc-html
 else ifeq ($(SRC_DOC_GENERATOR), documentationjs)
-	@$(MAKE) -f $(this_file) rebuild-documentationjs-html
+	$(QUIET) $(MAKE) -f $(this_file) rebuild-documentationjs-html
 endif
 
 .PHONY: rebuild-src-docs

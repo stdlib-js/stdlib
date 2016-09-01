@@ -19,6 +19,6 @@ endif
 # This target lints all Markdown files.
 
 lint-markdown: $(NODE_MODULES)
-	$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(MARKDOWN_FILES)
+	$(QUIET) $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(MARKDOWN_FILES)
 
 .PHONY: lint-markdown

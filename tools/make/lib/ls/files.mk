@@ -17,12 +17,12 @@ find_print_files_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_FILES_FLAGS ?= \
-		-name "$(FILES_PATTERN)" \
-		-regex "$(FILES_FILTER)" \
-		-not -path "$(ROOT_DIR)/.*" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*"
+	-name "$(FILES_PATTERN)" \
+	-regex "$(FILES_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_FILES_FLAGS := -regextype posix-extended $(FIND_FILES_FLAGS)
@@ -39,6 +39,6 @@ FILES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS))
 # This target prints a list of all files, excluding the `node_modules`, `build`, `reports`, and hidden directories.
 
 list-files:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_files_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_files_list)
 
 .PHONY: list-files

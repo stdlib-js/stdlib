@@ -30,6 +30,6 @@ REMARK_EXT ?= md
 
 # Define the command-line options when invoking the remark executable:
 MARKDOWN_LINT_FLAGS ?= \
-		--ext $(REMARK_EXT) \
-		--rc-path $(REMARK_CONF) \
-		--ignore-path $(REMARK_IGNORE)
+	--ext $(REMARK_EXT) \
+	--rc-path $(REMARK_CONF) \
+	--ignore-path $(REMARK_IGNORE)

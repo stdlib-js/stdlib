@@ -88,6 +88,8 @@ TODO
 
    * [`docpress`](https://github.com/docpress/docpress)
 
+   * [`getdocs`](https://github.com/marijnh/getdocs)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -216,11 +218,7 @@ TODO
 
 32. [gh-pages](https://github.com/tschaub/gh-pages)
 
-33. possible issue for [float64-set-high-word](https://ci.appveyor.com/project/kgryte/stdlib/build/job/3nseqtdxqey85wfk)
-
-    * attempted to debug, but was able to get the right return value; so not sure what happened and why
-    * NOTE: this seems to be a recurring bug; builds continue to occasionally fail on Windows
-    * may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
+33. may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
 
 34. module to identify equations in README files
 
@@ -460,6 +458,8 @@ TODO
     * [mocha-doctest](https://github.com/andreypopp/mocha-doctest)
     * [comment-to-assert](https://github.com/azu/comment-to-assert)
     * [doctestjs](https://github.com/ianb/doctestjs)
+    * [evalmd](https://github.com/reggi/evalmd)
+    * [readme-tester](https://github.com/orangemug/readme-tester)
 
 69. to browser (see tools/simple-http-server)
 
@@ -475,6 +475,7 @@ TODO
     * [glance](https://github.com/jarofghosts/glance)
     * [wzrd](https://github.com/maxogden/wzrd)
     * [serve-static](https://github.com/expressjs/serve-static)
+    * [st](https://github.com/isaacs/st)
 
 70. cross-platform open browser
 
@@ -789,7 +790,7 @@ TODO
 100. review
 
      * [ ] crypto
-     * [x] datasets
+     * [-] datasets
      * [ ] math/base/blas
      * [ ] math/base/random
      * [ ] math/base/special
@@ -842,6 +843,7 @@ TODO
 105. stability badges
 
      * may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, stable, locked, or otherwise
+     * `package.json` field => `"stdlib":{"stability":"experimental"}`
 
 106. `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
@@ -906,11 +908,9 @@ TODO
 
 124. reviews
 
-     - is-empty-array => should this just be a method off of `isArray`?
+     - is-empty-array => should this just be a method off of `isArray`? => `isArray.isEmptyArray`?
 
-125. update the `test-istanbul` target to run each test individually, output `lcov.info` to a `reports` dir, concatenate all `lcov` results, and then generate a HTML report. See [istanbul](https://github.com/gotwarlost/istanbul).
-
-     - for CI, push concatenated `lcov` to coverage service
+125. include a [creditcard](https://github.com/bendrucker/creditcards) validation module?
 
 126. adventures / workshoppers
 
@@ -927,9 +927,11 @@ TODO
 
 127. build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service. (note: this means that the `master` branch should never run the dep check to ensure up-to-date dependencies; otherwise, `master` could fail for non-test related reasons)
 
+     - for dep check, build script which acts similar to greenkeeper => creates/updates branch, if check deps fails, auto-installs, runs full build (tests, examples, etc), and checks if fails.
+
 128. plot svg components should have factory methods
 
-129. [readme-tester](https://github.com/orangemug/readme-tester)
+129. 
 
 130. Annotations overlay, 
 
@@ -943,7 +945,7 @@ TODO
 
 134. [vmd](https://github.com/yoshuawuyts/vmd)
 
-135. when browserifying `@stdlib/plot` should _ignore_ `electron-prebuilt`!!!!
+135. when browserifying `@stdlib/plot` should _ignore_ `electron`!!!!
 
      - may want to have a separate `view` method entirely; one that is catered to browser context
 
@@ -1002,7 +1004,7 @@ TODO
 
 161. Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
 
-162. for `stdlib/bin`, rather than `stdlib-repl`, `stdlib-list-modules`, etc, do `stdlib repl`, `stdlib ls` (similar to `npm ls`), etc => delegate to relevant script
+162. investigate [iron-node](https://github.com/s-a/iron-node)
 
 163. [Sieve of Eratosthenes](http://www.mahabal.io/eras)
 
@@ -1010,7 +1012,7 @@ TODO
 
 165. See [casual](https://github.com/boo1ean/casual) for dataset inspiration
 
-166. GitHub issues [Gnatt diagrams](https://github.com/neyric/gh-issues-gantt)
+166. GitHub issues [Gantt diagrams](https://github.com/neyric/gh-issues-gantt)
 
 167. [gh-board](https://github.com/philschatz/gh-board) - kaban board using GitHub issues
 
@@ -1020,7 +1022,54 @@ TODO
 
 170. Add dev guide for developing on windows
 
-171. add a Makefile recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
+171. add a Makefile (and `makie`) recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
+
+172. see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
+
+173. create a bot which tails NPM for math related modules
+
+174. bot which tails RSS feeds of select math repos and each day retrieves
+
+     - number of stars/watchers
+     - number of issues (total, open, closed)
+     - number of commits
+     - number of contributors
+
+175. investigate [pkgfiles](https://github.com/timoxley/pkgfiles) as a dev tool to determine which files will be published to npm
+
+176. investigate [slow-deps](https://github.com/nolanlawson/slow-deps) as a dev tool to analyze dependency install times
+
+177. consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
+
+178. investigate [jailed](https://github.com/asvd/jailed) for running JS code in sandbox
+
+179. Non-node [platform](https://github.com/bestiejs/platform.js) detection?
+
+180. may be worth investigating [klipse](https://github.com/viebel/klipse) for live code editing
+
+181. update tools/scripts to latest `remark-lint` API for linting Markdown files
+
+182. [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
+
+183. utils, e.g., `is-string`, need more rigorous testing, especially for things like `isPrimitiveStringArray`
+
+184. `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
+
+185. Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js specific
+
+186. [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
+
+187. FAQ
+
+     - What about web assembly?
+
+188. investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
+
+189. For `master`, `develop`, and PRs into `master` and `develop`, run full build sequence; for all other branches, is it necessary to run full sequence or just, say, tests? or maybe for other branches, only run tests, examples, benchmarks for files which changed (similar to `git` push hook?
+
+190. Linter for dirnames (akin to filenames)?
+
+191. convert filename linter to use plugin architecture?
 
 
 
@@ -1144,6 +1193,7 @@ TODO
 2. include links to survey in main README
 3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
 
+
 ---
 
 ## Modules
@@ -1167,11 +1217,11 @@ TODO
    - should support option to return data of a specified type; e.g., `float32`, etc.
    - returned value should be compliant with `abstract-ndarray`
 
-8. is-browser
+8. workshop Moby Dick corpus
 
-9. is-node
+9. 
 
-10. is-worker
+10. [utils-pad-string](https://github.com/kgryte/utils-pad-string)
 
 11. blas routines
 
@@ -1231,10 +1281,7 @@ TODO
 
     - requires `is-*` modules
 
-30. is-electron
-
-    - [renderer](https://github.com/jprichardson/is-electron-renderer)
-    - [electron-is](https://github.com/delvedor/electron-is)
+30. 
 
 31. global var detection
 

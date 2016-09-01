@@ -17,14 +17,14 @@ find_print_tests_fixtures_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_TESTS_FIXTURES_FLAGS ?= \
-		-name "$(TESTS_FIXTURES_PATTERN)" \
-		-path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/**" \
-		-regex "$(TESTS_FIXTURES_FILTER)" \
-		-not -path "$(ROOT_DIR)/.*" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(TOOLS_DIR)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*"
+	-name "$(TESTS_FIXTURES_PATTERN)" \
+	-path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/**" \
+	-regex "$(TESTS_FIXTURES_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_FIXTURES_FLAGS := -regextype posix-extended $(FIND_TESTS_FIXTURES_FLAGS)
@@ -41,6 +41,6 @@ TESTS_FIXTURES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FI
 # This target prints a newline-delimited list of test fixture files.
 
 list-tests-fixtures:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS) $(find_print_tests_fixtures_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS) $(find_print_tests_fixtures_list)
 
 .PHONY: list-tests-fixtures

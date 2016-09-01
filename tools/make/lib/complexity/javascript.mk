@@ -22,7 +22,7 @@ endif
 # This target analyzes all JavaScript source code.
 
 complexity-javascript: $(NODE_MODULES)
-	$(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES)
 
 .PHONY: complexity-javascript
 
@@ -32,7 +32,7 @@ complexity-javascript: $(NODE_MODULES)
 # This target analyzes only JavaScript source files.
 
 complexity-javascript-src: $(NODE_MODULES)
-	$(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES)
 
 .PHONY: complexity-javascript-src
 
@@ -42,7 +42,7 @@ complexity-javascript-src: $(NODE_MODULES)
 # This target analyzes only JavaScript test files.
 
 complexity-javascript-tests: $(NODE_MODULES)
-	$(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(TESTS)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(TESTS)
 
 .PHONY: complexity-javascript-tests
 
@@ -52,7 +52,7 @@ complexity-javascript-tests: $(NODE_MODULES)
 # This target analyzes only JavaScript example files.
 
 complexity-javascript-examples: $(NODE_MODULES)
-	$(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(EXAMPLES)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(EXAMPLES)
 
 .PHONY: complexity-javascript-examples
 
@@ -63,7 +63,7 @@ complexity-javascript-examples: $(NODE_MODULES)
 
 view-javascript-complexity:
 ifeq ($(JAVASCRIPT_COMPLEXITY_TOOL), plato)
-	@$(MAKE) -f $(this_file) view-plato-report
+	$(QUIET) $(MAKE) -f $(this_file) view-plato-report
 endif
 
 .PHONY: view-javascript-complexity
@@ -74,6 +74,6 @@ endif
 # This target cleans up a JavaScript complexity directory by removing it entirely.
 
 clean-javascript-complexity:
-	$(DELETE) $(DELETE_FLAGS) $(JAVASCRIPT_COMPLEXITY_DIR)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JAVASCRIPT_COMPLEXITY_DIR)
 
 .PHONY: clean-javascript-complexity

@@ -60,8 +60,8 @@ REMARK_EXT ?= md
 
 # Define command-line options when invoking the remark executable:
 REMARK_FLAGS ?= \
-		--ext $(REMARK_EXT) \
-		--ignore-path $(REMARK_IGNORE)
+	--ext $(REMARK_EXT) \
+	--ignore-path $(REMARK_IGNORE)
 
 # Define the remark output option:
 REMARK_OUTPUT_FLAG ?= --output
@@ -80,7 +80,7 @@ REMARK_OUTPUT_FLAG ?= --output
 # 5. Processed files are committed to source control.
 
 markdown-equations: $(NODE_MODULES)
-	$(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
 		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
@@ -102,7 +102,7 @@ markdown-equations: $(NODE_MODULES)
 # This target transforms Markdown files containing equation comment markup to include HTML equation elements.
 
 markdown-html-equations: $(NODE_MODULES)
-	$(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
 		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)
@@ -115,7 +115,7 @@ markdown-html-equations: $(NODE_MODULES)
 # This target generates SVG equations files from Markdown equation elements.
 
 markdown-svg-equations: $(NODE_MODULES)
-	$(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS)
 
@@ -127,7 +127,7 @@ markdown-svg-equations: $(NODE_MODULES)
 # This target inserts resource URLs into Markdown HTML equation elements. Note that this target assumes that SVG equation files already exist and have been committed to source control.
 
 markdown-equation-src-urls: $(NODE_MODULES)
-	$(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
 		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)

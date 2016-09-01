@@ -29,8 +29,8 @@ PLATO_HTML_REPORT ?= $(JAVASCRIPT_COMPLEXITY_DIR)/index.html
 
 # Define the command-line options to use when invoking the plato executable:
 JAVASCRIPT_COMPLEXITY_FLAGS ?= \
-		--dir $(JAVASCRIPT_COMPLEXITY_DIR) \
-		--title $(PLATO_REPORT_TITLE)
+	--dir $(JAVASCRIPT_COMPLEXITY_DIR) \
+	--title $(PLATO_REPORT_TITLE)
 
 
 # TARGETS #
@@ -40,6 +40,6 @@ JAVASCRIPT_COMPLEXITY_FLAGS ?= \
 # This target opens an HTML complexity report in a local web browser.
 
 view-plato-report:
-	$(OPEN) $(PLATO_HTML_REPORT)
+	$(QUIET) $(OPEN) $(PLATO_HTML_REPORT)
 
 .PHONY: view-plato-report

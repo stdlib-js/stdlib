@@ -8,6 +8,6 @@
 # [1]: https://www.appveyor.com/
 
 test-browsers-appveyor: $(NODE_MODULES)
-	@$(MAKE) -f $(this_file) test-browsers
+	$(QUIET) $(MAKE) -f $(this_file) test-browsers
 
 .PHONY: test-browsers-appveyor

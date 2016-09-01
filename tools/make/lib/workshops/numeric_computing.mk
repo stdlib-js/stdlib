@@ -25,10 +25,10 @@ endif
 XSLIDE ?= $(BIN_DIR)/xslide
 
 # Define the port for viewing slides:
-XSLIDE_PORT ?= 8001
+XSLIDE_WORKSHOP_PORT ?= 8001
 
 # Define the command-line options to be used when invoking the `xslide` executable:
-XSLIDE_FLAGS ?= -p $(XSLIDE_PORT)
+XSLIDE_WORKSHOP_FLAGS ?= -p $(XSLIDE_WORKSHOP_PORT)
 
 # Define the slide directory:
 NUMERIC_COMPUTING_SLIDES_DIR ?= $(WORKSHOPS_DIR)/numeric-computing/slides
@@ -44,7 +44,7 @@ NUMERIC_COMPUTING_SLIDES ?= $(NUMERIC_COMPUTING_SLIDES_DIR)/00.md
 # This target launches a server for viewing workshop slides.
 
 workshops-numeric-computing-slides: $(NODE_MODULES)
-	$(XSLIDE) $(NUMERIC_COMPUTING_SLIDES) $(XSLIDE_FLAGS)
+	$(QUIET) $(XSLIDE) $(NUMERIC_COMPUTING_SLIDES) $(XSLIDE_WORKSHOP_FLAGS)
 
 .PHONY: workshops-numeric-computing-slides
 
@@ -54,6 +54,6 @@ workshops-numeric-computing-slides: $(NODE_MODULES)
 # This target opens workshop slides in a local web browser.
 
 view-workshops-numeric-computing-slides:
-	$(OPEN) http://localhost:$(XSLIDE_PORT)
+	$(QUIET) $(OPEN) http://localhost:$(XSLIDE_WORKSHOP_PORT)
 
 .PHONY: view-workshops-numeric-computing-slides

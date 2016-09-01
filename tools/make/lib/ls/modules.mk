@@ -17,12 +17,12 @@ MODULES_FILE ?= package.json
 
 # Define the command flags:
 FIND_MODULES_FLAGS ?= \
-		-name "$(MODULES_FILE)" \
-		-regex "$(MODULES_FILTER)" \
-		-not -path "$(NODE_MODULES)/*" \
-		-not -path "$(BUILD_DIR)/*" \
-		-not -path "$(REPORTS_DIR)/*" \
-		-exec dirname {} \;
+	-name "$(MODULES_FILE)" \
+	-regex "$(MODULES_FILTER)" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-exec dirname {} \;
 
 ifneq ($(KERNEL), Darwin)
 	FIND_MODULES_FLAGS := -regextype posix-extended $(FIND_MODULES_FLAGS)
@@ -39,6 +39,6 @@ MODULES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MODULES_FLAGS))
 # This target prints a list of all modules, excluding the `node_modules`, `build`, and `reports` directories.
 
 list-modules:
-	@find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MODULES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MODULES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-modules

@@ -17,8 +17,7 @@ endif
 # TODO: add Windows command
 
 # Define the command for recursively creating directories (WARNING: possible portability issues on some systems!):
-MKDIR ?= mkdir
-MKDIR_FLAGS ?= -p
+MKDIR_RECURSIVE ?= mkdir -p
 
 # Define the path of the documentation.js executable:
 DOCUMENTATIONJS ?= $(BIN_DIR)/documentation
@@ -42,7 +41,8 @@ DOCUMENTATIONJS_HTML_OUT ?= $(DOCUMENTATIONJS_OUT)/static
 DOCUMENTATIONJS_HTML ?= $(DOCUMENTATIONJS_HTML_OUT)/index.html
 
 # Define command-line options to be used when invoking the documentation.js executable to generate HTML documentation:
-DOCUMENTATIONJS_HTML_FLAGS ?= --format html \
+DOCUMENTATIONJS_HTML_FLAGS ?= \
+	--format html \
 	--output $(DOCUMENTATIONJS_HTML_OUT)
 
 # Define command-line options to be used when invoking the documentation.js executable to generate JSON:
@@ -62,9 +62,9 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 # [2]: https://github.com/documentationjs/documentation
 
 documentationjs-html: $(NODE_MODULES)
-	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
-	$(MKDIR) $(MKDIR_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
-	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_HTML_OUT)
+	$(QUIET) $(MKDIR_RECURSIVE) $(DOCUMENTATIONJS_HTML_OUT)
+	$(QUIET) $(DOCUMENTATIONJS) $(DOCUMENTATIONJS_HTML_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES)
 
 .PHONY: documentationjs-html
 
@@ -80,9 +80,9 @@ documentationjs-html: $(NODE_MODULES)
 # [2]: https://github.com/documentationjs/documentation
 
 documentationjs-json: $(NODE_MODULES)
-	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_JSON)
-	$(MKDIR) $(MKDIR_FLAGS) $(DOCUMENTATIONJS_JSON_OUT)
-	$(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_JSON)
+	$(QUIET) $(MKDIR_RECURSIVE) $(DOCUMENTATIONJS_JSON_OUT)
+	$(QUIET) $(DOCUMENTATIONJS) $(DOCUMENTATIONJS_JSON_FLAGS) $(DOCUMENTATIONJS_TYPEDEF) $(SOURCES) > $(DOCUMENTATIONJS_JSON)
 
 .PHONY: documentationjs-json
 
@@ -92,7 +92,7 @@ documentationjs-json: $(NODE_MODULES)
 # This target opens documentation.js HTML documentation in a local web browser.
 
 view-documentationjs-html:
-	$(OPEN) $(DOCUMENTATIONJS_HTML)
+	$(QUIET) $(OPEN) $(DOCUMENTATIONJS_HTML)
 
 .PHONY: view-documentationjs-html
 
@@ -102,7 +102,7 @@ view-documentationjs-html:
 # This target cleans up a documentation.js output directory by removing it entirely.
 
 clean-documentationjs:
-	$(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_OUT)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DOCUMENTATIONJS_OUT)
 
 .PHONY: clean-documentationjs
 
@@ -118,8 +118,8 @@ clean-documentationjs:
 # [2]: https://github.com/documentationjs/documentation
 
 rebuild-documentationjs-html:
-	@$(MAKE) -f $(this_file) clean-documentationjs
-	@$(MAKE) -f $(this_file) documentationjs-html
+	$(QUIET) $(MAKE) -f $(this_file) clean-documentationjs
+	$(QUIET) $(MAKE) -f $(this_file) documentationjs-html
 
 .PHONY: rebuild-documentationjs-html
 

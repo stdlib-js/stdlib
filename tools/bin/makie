@@ -9,20 +9,23 @@
 args="$@"
 
 # Define the command for `node`:
-if [[ -z "$NODE" ]]; then
+if [[ -z "${NODE}" ]]; then
 	cmd=node
 else
-	cmd="$NODE"
+	cmd="${NODE}"
 fi
 
+# Determine the script directory:
+dir=$(dirname "$0")
+
 # Define the path to the `makie` executable:
-makie=`dirname "$0"`/../makie/makie/bin/cli
+makie="${dir}/../makie/makie/bin/cli"
 
 # Define the path to the `makie` configuration file:
-makie_config=`dirname "$0"`/../../etc/.makie.js
+makie_config="${dir}/../../etc/.makie.js"
 
 # Define the path to the Makefile directory:
-makie_makefile_dir=`dirname "$0"`/../../
+makie_makefile_dir="${dir}/../../"
 
 
 # FUNCTIONS #
@@ -43,7 +46,7 @@ cleanup() {
 
 # Runs makie.
 run() {
-	"$cmd" "$makie" "--config=$makie_config" "--dir=$makie_makefile_dir" "$args"
+	"${cmd}" "${makie}" "--config=${makie_config}" "--dir=${makie_makefile_dir}" "${args}"
 }
 
 # Main execution sequence.

@@ -1,5 +1,4 @@
-JavaScript Style Guide
-===
+# JavaScript Style Guide
 
 > _An opinionated style guide for writing JavaScript._
 
@@ -44,8 +43,7 @@ While the code base to which you want to contribute may be a horrific mess in te
 
 So, even if your peers commit various _faux pas_ outlined below, as long as you are contributing to their code base, abide by their conventions.
 
-A code base--module, repository, application, library, etc--should always appear to have a single author and not be a schizophrenic franken-mess. 
-This stated, for those opportunities where you are the primary author, you should lead by example and write clean, readable, and testable code.
+A code base--module, repository, application, library, etc--should always appear to have a single author and not be a schizophrenic franken-mess. This stated, for those opportunities where you are the primary author, you should lead by example and write clean, readable, and testable code.
 
 Hopefully, most of the conventions outlined below will help enable you to do so.
 
@@ -180,10 +178,10 @@ var foo = bar[ 10 ];
 
 * Use discretion when using spaces around `array` indices buried in braces.
 
-    ``` javascript
-    // Okay:
-    var foo = myFunction( ( a === b ) ? bar[0] : bar[1] ) );
-    ```
+  ``` javascript
+  // Okay:
+  var foo = myFunction( ( a === b ) ? bar[0] : bar[1] ) );
+  ```
 
 ##### Enforcement
 
@@ -217,13 +215,13 @@ var a = 1 + 1;
 
 * Use discretion when operators are contained within complex expressions and `string` concatenation.
 
-    ``` javascript
-    // Okay...
-    var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
+  ``` javascript
+  // Okay...
+  var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
 
-    // Okay...
-    var x = (x+y+z)*(t-w-v) + 5;
-    ```
+  // Okay...
+  var x = (x+y+z)*(t-w-v) + 5;
+  ```
 
 ##### Enforcement
 
@@ -276,7 +274,7 @@ Including `1` space after comment marks improves readability.
 
 //This is a single-line comment.
 
-/**
+/*
 *This is a mult-
 *line comment.
 */
@@ -289,7 +287,7 @@ Including `1` space after comment marks improves readability.
 
 // This is a single-line comment.
 
-/**
+/*
 * This is a multi-
 * line comment.
 */
@@ -314,7 +312,7 @@ Some IDEs have a tendency to auto-indent based on the previous line, thus pushin
 ``` javascript
 // Do not...
 
-/**
+/*
  * This is a multi-line comment.
  * The comment continues and continues...
  * ...until it no longer does.
@@ -326,7 +324,7 @@ Some IDEs have a tendency to auto-indent based on the previous line, thus pushin
 ``` javascript
 // Do...
 
-/**
+/*
 * This is a multi-line comment.
 * The comment continues and continues...
 * ...until it no longer does.
@@ -407,55 +405,55 @@ if ( foo === bar ) {
 
 * Use discretion when faced with multiple conditions.
 
-    ``` javascript
-    // Do...
-    if ( foo === bar ) {
-        // Do something...
-    } else if ( foo === beep ) {
-        // Do something else...
-    } else if ( bar === bar ) {
-        // Do something more...
-    } else {
-        // Do something different...
-    }
+  ``` javascript
+  // Do...
+  if ( foo === bar ) {
+      // Do something...
+  } else if ( foo === beep ) {
+      // Do something else...
+  } else if ( bar === bar ) {
+      // Do something more...
+  } else {
+      // Do something different...
+  }
 
-    // Okay...
-    if ( foo === bar ) {
-        // Do something...
-    }
-    else if ( foo === beep ) {
-        // Do something else...
-    }
-    else if ( baz === bar ) {
-        // Do something more...
-    }
-    else {
-        // Do something different...
-    }
-    ```
+  // Okay...
+  if ( foo === bar ) {
+      // Do something...
+  }
+  else if ( foo === beep ) {
+      // Do something else...
+  }
+  else if ( baz === bar ) {
+      // Do something more...
+  }
+  else {
+      // Do something different...
+  }
+  ```
 
 * Use discretion when documenting conditions.
 
-    ``` javascript
-    // Okay...
+  ``` javascript
+  // Okay...
 
-    // `bar` can only equal `foo` when...
-    if ( foo === bar ) {
-        // Do something...
-    }
-    // `beep` can only equal `foo` when...
-    else if ( foo === beep ) {
-        // Do something else...
-    }
-    // This pathway should rarely be taken...
-    else if ( baz === bar ) {
-        // Do something more...
-    }
-    // `foo` equals `bap`
-    else {
-        // Do something different...
-    }
-    ```
+  // `bar` can only equal `foo` when...
+  if ( foo === bar ) {
+      // Do something...
+  }
+  // `beep` can only equal `foo` when...
+  else if ( foo === beep ) {
+      // Do something else...
+  }
+  // This pathway should rarely be taken...
+  else if ( baz === bar ) {
+      // Do something more...
+  }
+  // `foo` equals `bap`
+  else {
+      // Do something different...
+  }
+  ```
 
 
 ##### Enforcement
@@ -562,34 +560,6 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Rule: Include within arithmetic operations
-
-##### Reason
-
-Including parentheses visually reinforces order of operations, leading to better readability and making the code more maintainable.
-
-##### Bad Example
-
-``` javascript
-// Do not...
-var a = b * c + 5;
-```
-
-##### Good Example
-
-``` javascript
-// Do...
-var a = ( b * c ) + 5;
-```
-
-##### Enforcement
-
-Code review.
-
-<!-- </rule> -->
-
-<!-- <rule> -->
-
 ### Rule: Include around ternary test condition
 
 ##### Reason
@@ -670,40 +640,6 @@ TODO: ESLint rule (and code review)
 
 <!-- <rule> -->
 
-### Rule: Declare assigned variables first
-
-##### Reason
-
-Visual alignment and thus improved readability.
-
-##### Bad Example
-
-``` javascript
-// Do not...
-var beep;
-var foo = 3;
-var boop;
-var bar = null;
-```
-
-##### Good Example
-
-``` javascript
-// Do...
-var bar = null;
-var foo = 3;
-var beep;
-var boop;
-```
-
-##### Enforcement
-
-Code review.
-
-<!-- </rule> -->
-
-<!-- <rule> -->
-
 ### Rule: Declare variables separately
 
 ##### Reason
@@ -766,6 +702,76 @@ var i;
 ##### Enforcement
 
 TODO: ESLint rule
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### Rule: Declare assigned variables first
+
+##### Reason
+
+Visual alignment and thus improved readability.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var beep;
+var foo = 3;
+var boop;
+var bar = null;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var bar = null;
+var foo = 3;
+var beep;
+var boop;
+```
+
+##### Enforcement
+
+Code review.
+
+<!-- </rule> -->
+
+<!-- <rule> -->
+
+### Rule: Order variable declarations based on character length
+
+##### Reason
+
+Visual alignment and thus improved readability.
+
+##### Bad Example
+
+``` javascript
+// Do not...
+var a;
+var foo;
+var b;
+var ii;
+var bar;
+```
+
+##### Good Example
+
+``` javascript
+// Do...
+var foo;
+var bar;
+var ii;
+var a;
+var b;
+```
+
+##### Enforcement
+
+Code review.
 
 <!-- </rule> -->
 
@@ -892,20 +898,20 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ##### Notes
 
-*   Do __not__ use the `new` operator if the `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
+* Do __not__ use the `new` operator if the `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
 
-    ``` javascript
-    var len = 100000;
-    var arr;
-    var i;
-    arr = new Array( 64000 );
-    for ( i = 0; i < arr.length; i++ ) {
-        arr[ i ] = Math.random();
-    }
-    for ( i = arr.length; i < len; i++ ) {
-        arr.push( Math.random() );
-    }
-    ```
+  ``` javascript
+  var len = 100000;
+  var arr;
+  var i;
+  arr = new Array( 64000 );
+  for ( i = 0; i < arr.length; i++ ) {
+      arr[ i ] = Math.random();
+  }
+  for ( i = arr.length; i < len; i++ ) {
+      arr.push( Math.random() );
+  }
+  ```
 
 ##### Enforcement
 
