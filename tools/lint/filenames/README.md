@@ -85,18 +85,21 @@ The function accepts the same `options` as `lint()` above.
 ## Notes
 
 * If all filenames are valid, the returned result is an empty `array`.
-* Only filenames which fail are returned.
+
 * Each failure is returned as an `object` with the following properties:
 
   - __name__: filename.
   - __error__: reason for failure.
 
-    ```
-    {
-        "name": "path/to/failing/filename.abc",
-        "error": "filename must be lowercase."
-    }
-    ```
+  ```
+  {
+      "name": "path/to/failing/filename.abc",
+      "error": "filename must be lowercase."
+  }
+  ```
+
+* Only filenames which fail are returned.
+
 
 <!-- </notes> -->
 
