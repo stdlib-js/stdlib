@@ -21,7 +21,6 @@ lib/node_modules/**/node_modules/
 *.lo
 *.obj
 *.dylib
-*.dll
 *.lai
 *.la
 *.a
