@@ -1,7 +1,7 @@
 'use strict';
 
 var path = require( 'path' );
-var readFileSync = require( '@stdlib/utils/fs/read-file' ).sync;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var createRandom = require( '@stdlib/math/base/random/randu' ).factory;
 var floor = require( '@stdlib/math/base/special/floor' );
 

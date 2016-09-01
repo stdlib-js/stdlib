@@ -486,6 +486,7 @@ TODO
     * [opn](https://github.com/sindresorhus/opn) and [opn-cli](https://github.com/sindresorhus/opn-cli)
     * [node-open](https://github.com/pwnall/node-open)
     * [open-url](https://github.com/Jam3/open-url/blob/master/index.js)
+    * [broser](https://github.com/juliangruber/broser)
 
 71. ability to run examples in a browser => Makefile target `examples-browser`
 
@@ -1070,6 +1071,8 @@ TODO
 190. Linter for dirnames (akin to filenames)?
 
 191. convert filename linter to use plugin architecture?
+
+192. generate random strings based on a [regular expression](https://github.com/fent/randexp.js)
 
 
 

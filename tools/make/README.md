@@ -137,8 +137,8 @@ $ make TESTS_PATTERN=test.js list-tests
 To filter based on a file path,
 
 ``` bash
-# List only test files in the fs utils directory...
-$ make TESTS_FILTER=.*/utils/fs/.* list-tests
+# List only test files in the fs directory...
+$ make TESTS_FILTER=.*/fs/.* list-tests
 ```
 
 ##### Test Fixtures
