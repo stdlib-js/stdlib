@@ -136,7 +136,6 @@ acs-*.bib
 *.glg
 *.glo
 *.gls
-*.brf
 *-concordance.tex
 *.tikz
 *-tikzDictionary
