@@ -89,9 +89,10 @@ tail_output() {
 #
 # $1 - log file path
 create_log_file() {
+	local owner=$(whoami)
 	echo "Creating an output log file: $1." >&2
 	sudo touch "$1"
-	sudo chown "$(whoami):$(whoami)" "$1"
+	sudo chown "${owner}:${owner}" "$1"
 }
 
 # Prints a success message.
