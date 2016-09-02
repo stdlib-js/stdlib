@@ -251,7 +251,7 @@ find_tests() {
 # $2 - node index
 allocate_tests() {
 	# Keep those tests (rows) where the VM index equals the modulo:
-	local tests=$(find_tests | sort | awk "NR % $1 == $2")
+	local tests=$(find_tests | sort | awk -v "n=$1" -v "i=$2" '{if (NR % n == i) printf "%s ", $0} END {print ""}')
 	echo "${tests}"
 }
 
@@ -261,7 +261,6 @@ allocate_tests() {
 # $2 - log file
 run_tests() {
 	echo 'Running tests...' >&2
-	echo "$1"
 	# make TESTS="$1" test-xunit >> "$2" 2>&1
 	make TESTS="$1" test-xunit
 	if [[ "$?" -ne 0 ]]; then
@@ -279,7 +278,6 @@ main() {
 	local task
 	local len
 	local i
-
 
 	TASKS=(check_deps lint)
 	len="${#TASKS[@]}"
@@ -325,6 +323,8 @@ main() {
 
 	echo 'Allocating tests...' >&2
 	tests=$(allocate_tests "${total_nodes}" "${index}")
+	echo "${tests}" >&2
+
 	run_tests "${tests}" "${tests_log_file}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
