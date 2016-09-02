@@ -30,7 +30,8 @@ index="${CIRCLE_NODE_INDEX}"
 log_file='/var/log/circle-ci.log'
 
 # Define an output file to store unit test results:
-tests_log_file="${CIRCLE_TEST_REPORTS}/junit/test-results.xml"
+tests_log_dir="${CIRCLE_TEST_REPORTS}/junit"
+tests_log_file="${tests_log_dir}/test-results.xml"
 
 # Define the pattern for test filenames:
 tests_pattern='test*.js'
@@ -114,6 +115,13 @@ stop_heartbeat() {
 tail_output() {
    echo "Printing the last $2 lines of log output..." >&2
    tail -"$2" "$1"
+}
+
+# Creates a directory.
+#
+# $1 - directory path
+create_dir() {
+	mkdir -p "$1"
 }
 
 # Creates an output log file.
@@ -279,6 +287,7 @@ main() {
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
+	create_dir "${tests_log_dir}"
 	create_log_file "${tests_log_file}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
