@@ -261,8 +261,7 @@ allocate_tests() {
 # $2 - log file
 run_tests() {
 	echo 'Running tests...' >&2
-	# make TESTS="$1" test-xunit >> "$2" 2>&1
-	make TESTS="$1" test-xunit
+	make TESTS="$1" test-xunit >> "$2" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
