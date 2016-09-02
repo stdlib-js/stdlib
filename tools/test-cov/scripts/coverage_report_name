@@ -28,7 +28,7 @@ main() {
 	local path
 	local slug
 
-	# Remove the base path from the directory path (using POXIX shell variable expansion):
+	# Remove the base path from the directory path (using POSIX shell variable expansion):
 	path="${testdir#${base}/}"
 
 	# Slugify the path (basic algorithm):
