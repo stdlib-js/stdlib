@@ -8,7 +8,7 @@
 # DEPENDENCIES #
 
 # Source nvm to ensure that the `nvm` command is available:
-# . /opt/circleci/.nvm/nvm.sh
+. /opt/circleci/.nvm/nvm.sh
 
 
 # VARIABLES #
