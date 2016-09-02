@@ -7,7 +7,7 @@
 
 # DEPENDENCIES #
 
-# Source NVM to ensure that the `nvm` command is available:
+# Source nvm to ensure that the `nvm` command is available:
 . ~/.nvm/nvm.sh
 
 
