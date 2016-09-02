@@ -29,9 +29,8 @@ index="${CIRCLE_NODE_INDEX}"
 # Define an output file to store log output:
 log_file='/var/log/circle-ci.log'
 
-# Define an output file to store unit test results:
+# Define an output directory to store unit test results:
 tests_log_dir="${CIRCLE_TEST_REPORTS}/junit"
-tests_log_file="${tests_log_dir}/test-results.xml"
 
 # Define the pattern for test filenames:
 tests_pattern='test*.js'
@@ -258,14 +257,41 @@ allocate_tests() {
 # Runs unit tests.
 #
 # $1 - tests
-# $2 - log file
+# $2 - log directory
 run_tests() {
+	local log_file
+	local path
+	local slug
+	local dir
+
 	echo 'Running tests...' >&2
-	make TESTS="$1" test-xunit >> "$2" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Tests failed.' >&2
-		return 1
-	fi
+	for test in "$1"; do
+		echo "Running test: ${test}" >&2
+
+		# Extract the test directory:
+		dir=$(dirname ${test})
+
+		# Remove the root directory path from the test directory path (using POSIX shell variable expansion):
+		path="${dir#${root_dir}/}"
+
+		# Slugify the path (basic algorithm):
+		slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+
+		# Define the output log file path:
+		log_file="$2/test_results${slug}.xml"
+
+		# Create the log file:
+		create_log_file "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+		# Run the tests, writing the results to the created log file:
+		make TESTS="${test}" test-xunit >> "${log_file}" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	done
 	echo 'Tests passed.' >&2
 	return 0
 }
@@ -281,13 +307,11 @@ main() {
 	TASKS=(check_deps lint)
 	len="${#TASKS[@]}"
 
-	# Create output log files...
 	create_log_file "${log_file}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
 	create_dir "${tests_log_dir}"
-	create_log_file "${tests_log_file}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
@@ -324,7 +348,7 @@ main() {
 	tests=$(allocate_tests "${total_nodes}" "${index}")
 	echo "${tests}" >&2
 
-	run_tests "${tests}" "${tests_log_file}"
+	run_tests "${tests}" "${tests_log_dir}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
