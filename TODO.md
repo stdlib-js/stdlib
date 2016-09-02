@@ -792,7 +792,7 @@ TODO
 
      * [ ] crypto
      * [-] datasets
-     * [ ] fs
+     * [x] fs
      * [ ] math/base/blas
      * [ ] math/base/random
      * [ ] math/base/special
