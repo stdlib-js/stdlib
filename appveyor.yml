@@ -70,7 +70,7 @@ init:
 clone_folder: c:\projects\stdlib
 
 # Set the clone depth:
-clone_depth: 10
+clone_depth: 50
 
 
 # Script commands are run either via [batch][1] (`cmd:`; default) or [PowerShell][2] (`ps:`) script engines.
