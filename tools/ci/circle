@@ -302,10 +302,11 @@ main() {
 		on_error 1
 	fi
 
-	# Assign nodes (VMs) tasks...
+	echo 'Assigning initial tasks...' >&2
 	i="${index}"
 	while [[ "${i}" -lt "${len}" ]]; do
 		task="${TASKS}[${i}]"
+		echo "Task: ${task}." >&2
 		if [[ "${task}" = "check_deps" ]]; then
 			check_deps "${log_file}"
 			if [[ "$?" -ne 0 ]]; then
@@ -320,7 +321,7 @@ main() {
 		i=$(expr "${i}" + "${len}")
 	done
 
-	# Assign nodes (VMs) tests to run...
+	echo 'Allocating tests...' >&2
 	tests=$(allocate_tests "${total_nodes}" "${index}")
 	run_tests "${tests}" "${tests_log_file}"
 	if [[ "$?" -ne 0 ]]; then
