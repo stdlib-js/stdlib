@@ -261,6 +261,7 @@ allocate_tests() {
 # $2 - log file
 run_tests() {
 	echo 'Running tests...' >&2
+	echo "$1"
 	# make TESTS="$1" test-xunit >> "$2" 2>&1
 	make TESTS="$1" test-xunit
 	if [[ "$?" -ne 0 ]]; then
