@@ -8,7 +8,7 @@
 # DEPENDENCIES #
 
 # Source nvm to ensure that the `nvm` command is available:
-. ~/.nvm/nvm.sh
+. "${HOME}"/nvm/nvm.sh
 
 
 # VARIABLES #
