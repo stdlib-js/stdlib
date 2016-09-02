@@ -1,27 +1,28 @@
+
+# Customize the test machine:
 machine:
+
+  # Version of Node.js to use:
   node:
     version: 6
 
+
+# Custom environment dependencies:
 dependencies:
   override:
-    - 'nvm install 0.10 && nvm use 0.10 && npm update -g npm'
-    - 'nvm install 0.12 && nvm use 0.12 && npm update -g npm'
-    - 'nvm install 1 && nvm use 1 && npm update -g npm'
-    - 'nvm install 2 && nvm use 2 && npm update -g npm'
-    - 'nvm install 3 && nvm use 3 && npm update -g npm'
-    - 'nvm install 4 && nvm use 4 && npm update -g npm'
-    - 'nvm install 5 && nvm use 5 && npm update -g npm'
-    - 'nvm install 6 && nvm use 6 && npm update -g npm'
     - 'nvm install node && nvm use node && npm update -g npm'
+    - 'nvm install 6 && nvm use 6 && npm update -g npm'
+    - 'nvm install 5 && nvm use 5 && npm update -g npm'
+    - 'nvm install 4 && nvm use 4 && npm update -g npm'
+    - 'nvm install 3 && nvm use 3 && npm update -g npm'
+    - 'nvm install 2 && nvm use 2 && npm update -g npm'
+    - 'nvm install 1 && nvm use 1 && npm update -g npm'
+    - 'nvm install 0.12 && nvm use 0.12 && npm update -g npm'
+    - 'nvm install 0.10 && nvm use 0.10 && npm update -g npm'
 
+
+# Custom test commands:
 test:
   override:
-    - 'nvm use 0.10 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 0.12 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 1 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 2 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 3 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 4 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 5 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use 6 && rm -rf node_modules && npm install && make examples'
-    - 'nvm use node && rm -rf node_modules && npm install && make examples'
+    - chmod +x ./tools/ci/circle
+    - ./tools/ci/circle

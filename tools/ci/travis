@@ -185,11 +185,6 @@ main() {
 
 	echo "Task: ${task}." >&2
 	if [[ "${task}" = "test" ]]; then
-		# FIXME: remove checking deps once separate build environment
-		check_deps "${log_file}"
-		if [[ "$?" -ne 0 ]]; then
-			on_error 1
-		fi
 		run_tests "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
