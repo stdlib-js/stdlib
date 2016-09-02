@@ -6,7 +6,7 @@ var basename = require( 'path' ).basename; // TODO: use stdlib module
 var stdlib = require( './stdlib.js' );
 var extname = require( stdlib+'@stdlib/utils/extname' );
 var indexOf = require( stdlib+'@stdlib/utils/index-of' );
-var lowercase = require( stdlib+'@stdlib/utils/lowercase' );
+var lowercase = require( stdlib+'@stdlib/string/lowercase' );
 var EXTENSIONS = require( './extensions.json' );
 var SPECIAL = require( './special.json' );
 
