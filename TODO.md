@@ -807,7 +807,7 @@ TODO
      * [x] regexp
      * [x] repl
      * [-] streams
-     * [x] tools
+     * [-] tools
      * [ ] utils
 
 101. profiling
