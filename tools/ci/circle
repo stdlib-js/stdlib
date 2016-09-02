@@ -283,7 +283,8 @@ run_tests() {
 		# Create the log file:
 		create_log_file "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
-			on_error 1
+			echo "Unable to create log file: ${log_file}." >&2
+			return 1
 		fi
 		# Run the tests, writing the results to the created log file:
 		make TESTS="${test}" test-xunit >> "${log_file}" 2>&1
