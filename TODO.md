@@ -1067,7 +1067,7 @@ TODO
 
 188. investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
 
-189. For `master`, `develop`, and PRs into `master` and `develop`, run full build sequence; for all other branches, is it necessary to run full sequence or just, say, tests? or maybe for other branches, only run tests, examples, benchmarks for files which changed (similar to `git` push hook?
+189. For `master`, `develop`, and PRs into `master` and `develop`, run full build sequence; for all other branches, is it necessary to run full sequence or just, say, tests? or maybe for other branches, only run tests, examples, benchmarks for files which changed (similar to `git` push hook)?
 
 190. Linter for dirnames (akin to filenames)?
 
