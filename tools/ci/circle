@@ -306,7 +306,7 @@ main() {
 	echo 'Assigning initial tasks...' >&2
 	i="${index}"
 	while [[ "${i}" -lt "${len}" ]]; do
-		task="${TASKS}[${i}]"
+		task="${TASKS[${i}]}"
 		echo "Task: ${task}." >&2
 		if [[ "${task}" = "check_deps" ]]; then
 			check_deps "${log_file}"
