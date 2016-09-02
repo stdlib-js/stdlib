@@ -5,6 +5,12 @@
 # [1]: https://circleci.com
 
 
+# DEPENDENCIES #
+
+# Source NVM to ensure that the `nvm` command is available:
+. ~/.nvm/nvm.sh
+
+
 # VARIABLES #
 
 # Define a username:
@@ -106,6 +112,12 @@ print_success() {
 node_version() {
 	echo "Switching to Node.js version: $1..." >&2
 	nvm use "$1"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to set Node.js version to $1." >&2
+		return 1
+	fi
+	echo "Node.js version set to $1." >&2
+	return 0
 }
 
 # Remove node modules.
@@ -142,6 +154,9 @@ install() {
 # $2 - log file
 init() {
 	node_version "$1"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
 	clean_node "$2"
 	if [[ "$?" -ne 0 ]]; then
 		return 1
@@ -184,6 +199,9 @@ lint() {
 # Main execution sequence.
 main() {
 	create_log_file "${log_file}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
 	start_heartbeat "${heartbeat_interval}"
 
 	# Initialize the Node.js environment:
