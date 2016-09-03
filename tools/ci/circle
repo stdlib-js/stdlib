@@ -265,17 +265,13 @@ run_tests() {
 	local log_file
 	local path
 	local slug
-	local dir
 
 	echo 'Running tests...' >&2
 	for test in $(echo "$1"); do
 		echo "Running test: ${test}" >&2
 
-		# Extract the test directory:
-		dir=$(dirname ${test})
-
-		# Remove the base source code directory path from the test directory path (using POSIX shell variable expansion):
-		path="${dir#${base_dir}/}"
+		# Remove the base source code directory path from the test path (using POSIX shell variable expansion):
+		path="${test#${base_dir}/}"
 
 		# Slugify the path (basic algorithm):
 		slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
