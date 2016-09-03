@@ -13,10 +13,6 @@
 
 # VARIABLES #
 
-# Determine the root project directory:
-root_dir=$(dirname "$0")/../..
-root_dir=$(cd "${root_dir}" && echo $PWD)
-
 # Define a username:
 username="${CIRCLE_USERNAME}"
 
@@ -26,11 +22,18 @@ total_nodes="${CIRCLE_NODE_TOTAL}"
 # Get the VM index:
 index="${CIRCLE_NODE_INDEX}"
 
+# Define an output directory to store unit test results:
+tests_log_dir="${CIRCLE_TEST_REPORTS}/junit"
+
 # Define an output file to store log output:
 log_file='/var/log/circle-ci.log'
 
-# Define an output directory to store unit test results:
-tests_log_dir="${CIRCLE_TEST_REPORTS}/junit"
+# Determine the root project directory:
+root_dir=$(dirname "$0")/../..
+root_dir=$(cd "${root_dir}" && echo $PWD)
+
+# Define the project source code directory:
+base_dir="${root_dir}/lib/node_modules"
 
 # Define the pattern for test filenames:
 tests_pattern='test*.js'
@@ -271,14 +274,14 @@ run_tests() {
 		# Extract the test directory:
 		dir=$(dirname ${test})
 
-		# Remove the root directory path from the test directory path (using POSIX shell variable expansion):
-		path="${dir#${root_dir}/}"
+		# Remove the base source code directory path from the test directory path (using POSIX shell variable expansion):
+		path="${dir#${base_dir}/}"
 
 		# Slugify the path (basic algorithm):
 		slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
 
 		# Define the output log file path:
-		log_file="$2/test_results${slug}.xml"
+		log_file="$2/test-results.${slug}.xml"
 
 		# Create the log file:
 		create_log_file "${log_file}"
