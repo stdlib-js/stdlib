@@ -265,7 +265,7 @@ run_tests() {
 	local dir
 
 	echo 'Running tests...' >&2
-	for test in "$1"; do
+	for test in $(echo "$1"); do
 		echo "Running test: ${test}" >&2
 
 		# Extract the test directory:
