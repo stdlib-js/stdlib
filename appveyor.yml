@@ -58,6 +58,17 @@ matrix:
   fast_finish: true
 
 
+# Define build artifacts. To download build artifacts for any build, use the following URL template:
+#
+# https://ci.appveyor.com/api/projects/<account>/<project>/artifacts/<artifact_file_path>?all=<boolean>&job=<job>&branch=<branch>
+
+artifacts:
+  # Push entire `log` directory:
+  - path: var\log
+    name: logs
+    type: zip
+
+
 # Scripts run before repo cloning...
 init:
   # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
