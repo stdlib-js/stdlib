@@ -403,7 +403,7 @@ TODO
 
     * can be used as part of a build step to ensure `package.json` files are properly formatted, valid, and have requisite information
 
-55. 
+55. [flatson](https://github.com/brycebaril/flatson)
 
 56. refactor module CLIs to match CLI snippet
 
@@ -932,7 +932,7 @@ TODO
 
 128. plot svg components should have factory methods
 
-129. 
+129. investigate [nfty](https://github.com/dschep/ntfy) for sending desktop notifications for long-running commands (e.g., `Makefile` recipes => would need to check if CI environment)
 
 130. Annotations overlay, 
 
