@@ -1,6 +1,9 @@
 
 # VARIABLES #
 
+# Define the command for setting executable permissions:
+MAKE_EXECUTABLE ?= chmod +x
+
 # Define the Node environment:
 NODE_ENV_TEST ?= $(NODE_ENV)
 
@@ -9,6 +12,13 @@ NODE_PATH_TEST ?= $(NODE_PATH)
 
 # Define the test runner to use when running JavaScript tests:
 JAVASCRIPT_TEST_RUNNER ?= tape
+
+# Define test runner to use when running JavaScript tests across multiple Node.js versions:
+JAVASCRIPT_TEST_NODE_VERSIONS ?= $(TOOLS_DIR)/test/scripts/test_node_versions
+
+# Define the command-line options to be used when invoking the versions runner:
+JAVASCRIPT_TEST_NODE_VERSIONS_FLAGS ?= \
+	--versions $(NODE_VERSIONS)
 
 
 # DEPENDENCIES #
@@ -98,3 +108,14 @@ test-javascript-xunit: $(NODE_MODULES)
 	done
 
 .PHONY: test-javascript-xunit
+
+
+# Run unit tests against Node.js versions.
+#
+# This targets runs JavaScript unit tests against specific Node.js versions.
+
+test-node-versions: $(NODE_MODULES)
+	$(QUIET) $(MAKE_EXECUTABLE) $(JAVASCRIPT_TEST_NODE_VERSIONS)
+	$(QUIET) $(JAVASCRIPT_TEST_NODE_VERSIONS) $(JAVASCRIPT_TEST_NODE_VERSIONS_FLAGS) $(TESTS)
+
+.PHONY: test-node-versions
