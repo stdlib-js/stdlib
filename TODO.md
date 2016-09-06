@@ -90,6 +90,8 @@ TODO
 
    * [`getdocs`](https://github.com/marijnh/getdocs)
 
+   * [`flow-jsdoc`](https://github.com/Kegsay/flow-jsdoc)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -805,7 +807,7 @@ TODO
      * [x] regexp
      * [x] repl
      * [-] streams
-     * [ ] string
+     * [-] string
      * [-] tools
      * [ ] utils
 
