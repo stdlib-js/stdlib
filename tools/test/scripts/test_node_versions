@@ -67,6 +67,9 @@ install_version() {
 		echo "Unable to install Node.js version: $1." >&2
 		return 1
 	fi
+	# Update the npm client. Older clients cannot, e.g., handle scoped modules.
+	npm update -g npm
+
 	echo "Successfully installed Node.js version: $1." >&2
 	return 0
 }
