@@ -1,0 +1,246 @@
+#!/usr/bin/env bash
+#
+# Script to run unit tests against multiple Node.js versions.
+#
+# Note that this script depends on [nvm][1]. To install `nvm`, see the nvm [documentation][1].
+#
+# [1]: https://github.com/creationix/nvm
+
+
+# DEPENDENCIES #
+
+# Source nvm to ensure that the `nvm` command is available:
+. "${HOME}/.nvm/nvm.sh"
+
+
+# VARIABLES #
+
+# Initialize the test file list:
+tests=''
+
+# Define the Node.js versions to test:
+versions=(0.10 0.12 1 2 3 4 5 6 node)
+
+# Cache the current Node.js version:
+current_version=$(nvm current)
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	init "${current_version}"
+}
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: test_node_versions [options] file1 file2 ...' >&2
+	echo '' >&2
+	echo 'Options:' >&2
+	echo '' >&2
+	echo '  -h,    --help                Print this message.' >&2
+	echo '' >&2
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Installs a Node.js version.
+#
+# $1 - version
+install_version() {
+	echo "Installing Node.js version: $1..." >&2
+	nvm install "$1"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to install Node.js version: $1." >&2
+		return 1
+	fi
+	echo "Successfully installed Node.js version: $1." >&2
+	return 0
+}
+
+# Sets the Node.js version.
+#
+# $1 - version
+set_version() {
+	echo "Switching to Node.js version: $1..." >&2
+	nvm use "$1"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to set Node.js version to $1." >&2
+		return 1
+	fi
+	echo "Node.js version set to $1." >&2
+	return 0
+}
+
+# Removes a Node.js version.
+#
+# $1 - version
+uninstall_version() {
+	echo "Removing Node.js version: $1..." >&2
+	nvm uninstall "$1"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to remove Node.js version: $1." >&2
+		return 1
+	fi
+	echo "Successfully removed Node.js version: $1." >&2
+	return 0
+}
+
+# Remove node modules.
+clean_node() {
+	echo 'Removing node module dependencies...' >&2
+	make clean-node
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error when attempting to remove dependencies.' >&2
+		return 1
+	fi
+	echo 'Dependencies successfully removed.' >&2
+	return 0
+}
+
+# Installs dependencies.
+install() {
+	echo 'Installing...' >&2
+	make install-node
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred during install.' >&2
+		return 1
+	fi
+	echo 'Install successful.' >&2
+	return 0
+}
+
+# Initializes a Node.js environment.
+#
+# $1 - Node.js version
+init() {
+	set_version "$1"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	clean_node
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	install
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	return 0
+}
+
+# Runs unit tests.
+#
+# $1 - list of Node.js versions to test
+run_tests() {
+	local version
+	local flg
+
+	for v in $(echo "$1"); do
+		# Reset the cleanup flag:
+		flg='0'
+
+		# Resolve a version to a locally installed version:
+		version=$(nvm version "${v}")
+		if [[ "${version}" = "N/A" ]]; then
+			echo "Unable to resolve \`${v}\` to a locally installed version." >&2
+			flg='1'
+			install_version "${v}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		else
+			echo "Resolved \`${v}\` to locally installed version \`${version}\`." >&2
+		fi
+		init "${v}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+		make TESTS="'""${tests}""'" test
+		# Note: we don't explicitly handle return values here in order to let tests complete across all versions.
+
+		# If the version was not already installed, reset the current version and remove the recently installed version...
+		if [[ "${flg}" = "1" ]]; then
+			set_version "${current_version}"
+			uninstall_version "${v}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		fi
+	done
+}
+
+# Main execution sequence.
+main() {
+	run_tests "${versions[*]}"
+	print_success
+	cleanup
+	exit 0
+}
+
+# Parse command-line options...
+while :; do
+	case "$1" in
+		'-h' | '--help')
+			usage
+			exit 0
+			;;
+
+		'--versions')
+			if [[ -n "$2" ]]; then
+				versions="$2"
+				shift
+			else
+				printf 'ERROR: "--versions" option requires a non-empty option argument.\n' >&2
+				on_error 1
+			fi
+			;;
+
+		'--versions='?*)
+			# Delete everything up to "=" and assign the remainder:
+			versions="${1#*=}"
+			;;
+
+		'--versions=')
+			# Handle empty `--versions=` option:
+			printf 'ERROR: "--versions" option requires a non-empty option argument.\n' >&2
+				on_error 1
+			;;
+
+		'--')
+			# End of all options:
+			shift
+			break
+			;;
+
+		-?*)
+			printf 'WARNING: unknown option (ignored): %s\n.' "$1" >&2
+			break
+			;;
+
+		*)
+			# Default case (e.g., if no more options) break out of loop:
+			break
+	esac
+
+	shift
+done
+
+# Test file paths are the rest of the positional parameters:
+tests="$@"
+
+# Run main:
+main
