@@ -278,7 +278,7 @@ $ make TESTS_FILTER=.*/math/base/utils/.* TESTS_PATTERN=test.js test
 $ make TESTS_FILTER=.*/math/base/blas/.*  test-summary
 ```
 
-To run unit tests against specific Node.js versions,
+To run unit tests against specific Node.js versions (assuming [`nvm`][nvm] is installed),
 
 ``` bash
 $ make test-node-versions
@@ -458,6 +458,7 @@ $ make check-deps
 
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
 [jsdoc]: http://usejsdoc.org/
+[nvm]: https://github.com/creationix/nvm
 
 <!-- </links> -->
 
