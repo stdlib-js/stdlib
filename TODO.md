@@ -30,7 +30,7 @@ TODO
 
    * could run into memory issues if all numeric tests are run for all functions, etc.
    * one possibility is to loop through all files and run each individually (browserify, testling, and repeat)
-   * may have to punt browser testing to individual repos (!)
+   * may have to punt browser testing to individual repos (!) => that is too late, as module would already be deployed
 
 6. std polyfills?
 
@@ -291,10 +291,9 @@ TODO
 
     * could be useful for, say, Boost bindings
 
-42. check if `codecov` will accept multiple coverage reports
+42. Travis CI, AppVeyor, and other 3rd party integrations with Slack
 
-    * would like the ability to distinguish Linux, Windows, and browser coverage reports
-    * temporary `git` tags?
+    * need to deploy a webhook server
 
 43. make Travis and Appveyor build badges the same dimensions
 
@@ -404,9 +403,7 @@ TODO
 
     * can be used as part of a build step to ensure `package.json` files are properly formatted, valid, and have requisite information
 
-55. build utility to scan all project dirs for camelcase file names
-
-    * add to build step, but first requires some modification (e.g., JSDoc generated HTML files)
+55. 
 
 56. refactor module CLIs to match CLI snippet
 
@@ -490,8 +487,9 @@ TODO
 
 71. ability to run examples in a browser => Makefile target `examples-browser`
 
-    * can use `simple-http-server`
+    * can use `simple-http-server` (or even `disposable-http-server`)
     * [packify](https://github.com/maxogden/packify)
+    * option to stream to multiple browsers (tabs) in parallel (akin to parallel builds)
 
 72. build step which runs examples in browsers and catches any errors
 
@@ -807,6 +805,7 @@ TODO
      * [x] regexp
      * [x] repl
      * [-] streams
+     * [ ] string
      * [-] tools
      * [ ] utils
 
