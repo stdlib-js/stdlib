@@ -278,6 +278,19 @@ $ make TESTS_FILTER=.*/math/base/utils/.* TESTS_PATTERN=test.js test
 $ make TESTS_FILTER=.*/math/base/blas/.*  test-summary
 ```
 
+To run unit tests against specific Node.js versions,
+
+``` bash
+$ make test-node-versions
+```
+
+By default, tests are run against supported Node.js versions. To run against alternative versions, set the `NODE_VERSIONS` environment variable.
+
+``` bash
+$ make NODE_VERSIONS='0.10 4 6' TESTS_FILTER=.*/fs/exists/.* test-node-versions
+```
+
+
 #### Test Coverage
 
 To generate a test coverage report,

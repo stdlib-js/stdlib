@@ -15,6 +15,7 @@ Usage: make <cmd>
   make examples               Run examples.
   make test                   Run tests.
   make test-summary           Run tests and output a test summary.
+  make test-node-versions     Run tests against specific Node.js versions.
   make test-cov               Run tests with code coverage.
   make test-browsers          Run tests in a local web browser.
   make view-cov               View the most recent code coverage report.
