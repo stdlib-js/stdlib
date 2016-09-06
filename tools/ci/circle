@@ -291,8 +291,9 @@ run_tests() {
 			echo 'Tests failed.' >&2
 			return 1
 		fi
+		echo 'Tests passed.' >&2
 	done
-	echo 'Tests passed.' >&2
+	echo 'All tests passed.' >&2
 	return 0
 }
 

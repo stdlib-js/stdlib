@@ -97,6 +97,7 @@ test-javascript-tap: $(NODE_MODULES)
 #
 # This target runs JavaScript unit tests and converts TAP output to xUnit XML.
 
+test-javascript-xunit: SHELL=/bin/bash -o pipefail
 test-javascript-xunit: $(NODE_MODULES)
 	$(QUIET) for test in $(TESTS); do \
 		NODE_ENV=$(NODE_ENV_TEST) \
@@ -104,7 +105,7 @@ test-javascript-xunit: $(NODE_MODULES)
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
-		 | $(TAP_XUNIT) || exit 1; \
+		| $(TAP_XUNIT) || exit 1; \
 	done
 
 .PHONY: test-javascript-xunit
