@@ -293,9 +293,14 @@ TODO
 
     * could be useful for, say, Boost bindings
 
-42. Travis CI, AppVeyor, and other 3rd party integrations with Slack
+42. Deploy a webhook server to aggregate 3rd party tools notifications (?)
 
-    * need to deploy a webhook server
+    * Travis CI
+    * AppVeyor
+    * Codecov
+    * Code Climate
+    * Circle CI
+    * GitHub
 
 43. make Travis and Appveyor build badges the same dimensions
 
@@ -414,6 +419,7 @@ TODO
 58. consider adding a license prefix to each file
 
     * [julia](https://github.com/JuliaLang/julia/blob/master/contrib/add_license_to_files.jl)
+    * [license-check](https://github.com/magemello/license-check)
 
 59. intro how-tos
 
@@ -459,6 +465,7 @@ TODO
     * [doctestjs](https://github.com/ianb/doctestjs)
     * [evalmd](https://github.com/reggi/evalmd)
     * [readme-tester](https://github.com/orangemug/readme-tester)
+    * [jsmd](https://github.com/vesln/jsmd)
 
 69. to browser (see tools/simple-http-server)
 
@@ -698,7 +705,6 @@ TODO
 
 82. Add [git hooks](https://cbednarski.com/articles/makefiles-for-everyone/) to Makefile
 
-    - on pull, check deps to see if any missing, removed, or out-of-date; if so, clear and reinstall (?)
     - will prob want a way to undo setting of hooks (i.e., a reset)
     - [intro to git hooks](https://www.sitepoint.com/introduction-git-hooks/)
     - [git pre-push](http://blog.ittybittyapps.com/blog/2013/09/03/git-pre-push/)
@@ -1086,6 +1092,7 @@ TODO
 
 196. investigate [mancy](https://github.com/princejwesley/Mancy)
 
+197. semver regex
 
 
 ---
@@ -1414,6 +1421,7 @@ TODO
 * [IPython: A System for Interactive Scientific Computing](http://fperez.org/papers/ipython07_pe-gr_cise.pdf)
 * [IPython: Sloan Grant](https://ipython.org/_static/sloangrant/sloan-grant.pdf)
 * [Why not use core streams](https://r.va.gg/2014/06/why-i-dont-use-nodes-core-stream-module.html)
+* [Why JAVA floating-point implementation is bad for everyone](https://people.eecs.berkeley.edu/~wkahan/JAVAhurt.pdf)
 
 
 
