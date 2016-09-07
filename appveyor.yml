@@ -132,3 +132,9 @@ test_script:
   #
   # [1]: http://www.mingw.org/wiki/MSYS
   - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor $BUILD_TASK"'
+
+
+notifications:
+  - provider: Slack
+    incoming_webhook:
+      secure: wn39IgZGtIMkvmXPpo+Slm6QlfpxbARQOw98Xuifd2JtNpLKHms5w1Jvm1QIK0D1Ipg7NLgxbQDt0pKQt4nEpWy6TM30rZUX4tUtYJg0Kmo=
