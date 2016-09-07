@@ -69,14 +69,6 @@ artifacts:
     type: zip
 
 
-# Scripts run before repo cloning...
-init:
-  # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
-  #
-  # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
-  - cmd: git config --global core.autocrlf input
-
-
 # Clone directory:
 clone_folder: c:\projects\stdlib
 
@@ -88,6 +80,14 @@ clone_depth: 50
 #
 # [1]: https://en.wikipedia.org/wiki/Batch_file
 # [2]: https://en.wikipedia.org/wiki/Windows_PowerShell
+
+# Scripts run before repo cloning...
+init:
+  # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
+  #
+  # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
+  - cmd: git config --global core.autocrlf input
+
 
 install:
   # Install updated browsers for browser testing:
