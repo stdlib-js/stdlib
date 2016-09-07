@@ -74,7 +74,7 @@ init:
   # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
   #
   # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
-  - git config --global core.autocrlf input
+  - cmd: git config --global core.autocrlf input
 
 
 # Clone directory:
