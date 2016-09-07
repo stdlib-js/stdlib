@@ -17,7 +17,11 @@ coverage:
   round: down
 
   # Notification settings:
-  # - notify: TODO (slack, gitter)
+  notify:
+    slack:
+      default:
+        url: "secret:JUKJSnol70QPCceIZFokxa1sLK7E0GJrX4ytQfsvCulNLI8QRHVSTRIkntmcCGyON/dYPCc3caSlQKwh6hY5bCaAN3q9Iv3l1krivlvq1/4WsN3qFP/DnbbeFEYypBPeV8yJv0lvxAzD/GQTu+bz0jqrlZhH6Mbzh5hA3j5NkNg="
+        attachments: "sunburst, diff"
 
 
   status:
