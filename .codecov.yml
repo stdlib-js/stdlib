@@ -6,68 +6,68 @@
 
 codecov:
   # Default branch to show (if not set, inherited from repository settings):
-  - branch: develop
+  branch: develop
 
 
 coverage:
   # Number of decimals to display in UI:
-  - precision: 4
+  precision: 4
 
   # How to round coverage percentages (up/down/nearest):
-  - round: down
+  round: down
 
   # Notification settings:
   # - notify: TODO (slack, gitter)
 
 
-status:
-  # Commit status settings for the overall project:
-  project:
-    default:
-      # Enable posting a commit status:
-      enabled: yes
+  status:
+    # Commit status settings for the overall project:
+    project:
+      default:
+        # Enable posting a commit status:
+        enabled: yes
 
-      # Target coverage percentage for a commit (if "auto", must increase from parent commit):
-      target: auto
+        # Target coverage percentage for a commit (if "auto", must increase from parent commit):
+        target: auto
 
-      # Post an "error" commit status if a report is not uploaded for a given commit:
-      if_no_uploads: error
+        # Post an "error" commit status if a report is not uploaded for a given commit:
+        if_no_uploads: error
 
-      # Post an "error" if unable to find parent commit:
-      if_not_found: error
+        # Post an "error" if unable to find parent commit:
+        if_not_found: error
 
-      # If CI fails, report an "error" commit status:
-      if_ci_failed: error
+        # If CI fails, report an "error" commit status:
+        if_ci_failed: error
 
-  # Commit status settings for pull requests:
-  patch:
-    default:
-      # Enable posting a commit status:
-      enabled: yes
+    # Commit status settings for pull requests:
+    patch:
+      default:
+        # Enable posting a commit status:
+        enabled: yes
 
-      # Post an "error" commit status if a report is not uploaded for a given commit:
-      if_no_uploads: error
+        # Post an "error" commit status if a report is not uploaded for a given commit:
+        if_no_uploads: error
 
-      # Post an "error" if unable to find parent commit:
-      if_not_found: error
+        # Post an "error" if unable to find parent commit:
+        if_not_found: error
 
-      # If CI fails, report an "error" commit status:
-      if_ci_failed: error
+        # If CI fails, report an "error" commit status:
+        if_ci_failed: error
 
-  # Commit status settings for "unexpected" changes:
-  changes:
-    default:
-      # Enable posting a commit status:
-      enabled: yes
+    # Commit status settings for "unexpected" changes:
+    changes:
+      default:
+        # Enable posting a commit status:
+        enabled: yes
 
-      # Post an "error" commit status if a report is not uploaded for a given commit:
-      if_no_uploads: error
+        # Post an "error" commit status if a report is not uploaded for a given commit:
+        if_no_uploads: error
 
-      # Post an "error" if unable to find parent commit:
-      if_not_found: error
+        # Post an "error" if unable to find parent commit:
+        if_not_found: error
 
-      # If CI fails, report an "error" commit status:
-      if_ci_failed: error
+        # If CI fails, report an "error" commit status:
+        if_ci_failed: error
 
 
 # Comment settings:
