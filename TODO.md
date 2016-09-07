@@ -793,14 +793,16 @@ TODO
      * [ ] crypto
      * [-] datasets
      * [x] fs
-     * [ ] math/base/blas
+     * [x] math/base/blas
+     * [ ] math/base/dist
      * [ ] math/base/random
      * [ ] math/base/special
      * [ ] math/base/tools
      * [ ] math/base/utils
-     * [ ] math/constants
+     * [x] math/constants
      * [ ] math/generics/statistics
      * [ ] math/generics/utils
+     * [ ] math/ml
      * [ ] namespace
      * [x] net
      * [ ] plot
@@ -1079,6 +1081,10 @@ TODO
 193. timed [tape](https://github.com/diasdavid/timed-tape) tests...useful?
 
 194. [match-case](https://github.com/wooorm/match-casing)
+
+195. Consider setting up [jenkins](https://jenkins.io/) for CI (notably Windows)
+
+196. investigate [mancy](https://github.com/princejwesley/Mancy)
 
 
 
