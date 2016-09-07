@@ -69,3 +69,8 @@ script:
   - chmod +x ./tools/ci/travis
   - "./tools/ci/travis $BUILD_TASK"
 
+
+notifications:
+  slack:
+    rooms:
+      secure: "3r3vY1UbfIMqoWX46XxCxmczqYE9eMe6I4PrYO9V9a03vFfLaZ/GzzdlqrdtL43jRC45xQP4tjnmj6kg4xtn6nUpZ5SzBnMknR41vzOK0wLxAmCBLNKnOWzyrhk7IDuGM9KpwGADxcNaVHY909MZsPTZd+BNm/eJJPINdTEio5F7quLfQSPfWUOW+LTsNeS+tI3pprzy2XiupyTz0OCC1CIXgTzJXvI0I5x6P+GHeTInkmHmLUJV3VCQsEPfmz93x5oCcsnkLyw79TBJlEC+2VyAbubJt+AuYyf/bV55k5GRJnJugaeTAUCBjlKbl1b/IA8dW6cr40ORPe+75bW4oLCsl34284Bwxf/dbyRY13GMqPkWgzW+PXAvwaXHS2z/q9NvOpLbX+LD+N0HHSAZB0WppJqI7ZKo06xLpVHi8RiK615HqALaMX/ujMR8ZZtTQKKSY683YDOYrG2JpjJX70VUMwdKN1ZzDkV9VbxCWAtotPR5u1n+PvQ8ihfLVDX3q5kRkDKvpGMJjZ1EFlbiUBN4hwZ9r9sQnQ5SI9ZIC81JEpfFwkCvdzrbGE6z4XfzfHPw9YMoYaDYQxq4tbyjtLYqrXCOEfBZ+egx0r9/5rrx+k5RnsfMgUXoSog5HfMknoiDFcQKFeGoxWj0NlyAEA44ozH/KMbz2DKSvvjtvS4="
