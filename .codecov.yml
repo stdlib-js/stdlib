@@ -23,9 +23,9 @@ coverage:
         url: "secret:JUKJSnol70QPCceIZFokxa1sLK7E0GJrX4ytQfsvCulNLI8QRHVSTRIkntmcCGyON/dYPCc3caSlQKwh6hY5bCaAN3q9Iv3l1krivlvq1/4WsN3qFP/DnbbeFEYypBPeV8yJv0lvxAzD/GQTu+bz0jqrlZhH6Mbzh5hA3j5NkNg="
         attachments: "sunburst, diff"
 
-
+  # Commit status settings:
   status:
-    # Commit status settings for the overall project:
+    # Settings for the overall project:
     project:
       default:
         # Enable posting a commit status:
@@ -43,7 +43,7 @@ coverage:
         # If CI fails, report an "error" commit status:
         if_ci_failed: error
 
-    # Commit status settings for pull requests:
+    # Settings for pull requests:
     patch:
       default:
         # Enable posting a commit status:
@@ -58,7 +58,7 @@ coverage:
         # If CI fails, report an "error" commit status:
         if_ci_failed: error
 
-    # Commit status settings for "unexpected" changes:
+    # Settings for "unexpected" changes:
     changes:
       default:
         # Enable posting a commit status:
