@@ -23,6 +23,8 @@ var IGNORE = require( './ignore_patterns.json' );
 * @param {string} [options.dir] - root directory from which to search for files
 * @param {string} [options.pattern='**\/*'] - filename pattern
 * @param {Callback} clbk - callback to invoke after linting
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
 * @throws {TypeError} must provide a function
 *
 * @example

@@ -21,6 +21,8 @@ var IGNORE = require( './ignore_patterns.json' );
 * @param {Options} options - function options
 * @param {string} [options.dir] - root directory from which to search for files
 * @param {string} [options.pattern='**\/*'] - filename pattern
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
 * @returns {(ObjectArray|EmptyArray)} list of failing filenames
 *
 * @example
