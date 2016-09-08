@@ -892,8 +892,15 @@ TODO
 
 116. `make` recipe for checking dep licenses
 
-     - [read-package-tree](https://github.com/npm/read-package-tree)
      - [licensee.js](https://github.com/jslicense/licensee.js)
+     - [license-checker](https://github.com/davglass/license-checker)
+     - [.licenserc](https://github.com/licenserc/licenserc-specification/blob/master/licenserc.md)
+     - [licenserc.js](https://github.com/licenserc/licenserc.js)
+     - [licensing](https://github.com/3rd-Eden/licensing)
+     - [licenses](https://github.com/3rd-Eden/licenses)
+     - [licensecheck](https://github.com/marcello3d/node-licensecheck)
+     - [nlf](https://github.com/iandotkelly/nlf)
+     - [license-list](https://www.gnu.org/licenses/license-list.en.html)
      - make part of `pre-push` git hook
      - as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
 

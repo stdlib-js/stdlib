@@ -31,6 +31,7 @@ include $(TOOLS_MAKE_LIB_DIR)/repl/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/deps/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/licenses/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/notes/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/install/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/test/Makefile
