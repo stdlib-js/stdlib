@@ -10,7 +10,7 @@ CHECK_LICENSES ?= $(TOOLS_DIR)/licenses/check
 
 # TARGETS #
 
-# Checks licenses.
+# Check licenses.
 #
 # This target checks the license for each dependency and flags any not fulfilling license criteria.
 
