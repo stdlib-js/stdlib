@@ -903,6 +903,7 @@ TODO
      - [license-list](https://www.gnu.org/licenses/license-list.en.html)
      - make part of `pre-push` git hook
      - as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
+     - recipe to plot license distribution as a bar plot (?) => could be part of public facing docs
 
 117. investigate [test-all-versions](https://github.com/watson/test-all-versions)
 
