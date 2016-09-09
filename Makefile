@@ -8,10 +8,12 @@ endif
 # Define whether the make commands are running on a hosted continuous integration service:
 ifeq ($(TRAVIS), true)
 	CI_SERVICE ?= travis
-else ifeq ($(APPVEYOR), true)
+else
+ifeq ($(APPVEYOR), true)
 	CI_SERVICE ?= appveyor
 else
 	CI_SERVICE ?= none
+endif
 endif
 
 # Define supported Node.js versions:
