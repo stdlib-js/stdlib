@@ -1,0 +1,13 @@
+
+Usage: licenses [options]
+
+Options:
+
+  -h,    --help                      Print this message.
+  -V,    --version                   Print the package version.
+         --dir dirname               Root directory from which to search.
+         --depth level               Search depth.
+         --exclude spdx1,spdx2,...   List of SPDX license identifiers (whitelist).
+         --no-dev                    Exclude dev dependencies.
+         --no-infer                  Do not infer licenses based on file content.
+

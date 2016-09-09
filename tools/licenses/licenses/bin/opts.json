@@ -1,0 +1,21 @@
+{
+	"string": [
+		"dir",
+		"exclude",
+		"depth"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"no-dev",
+		"no-infer"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

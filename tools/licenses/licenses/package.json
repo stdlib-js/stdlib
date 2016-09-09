@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Resolve licenses.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
