@@ -54,8 +54,8 @@ function recurse( cache, pkg ) {
 	// Initialize package results:
 	results = {
 		'id': id,
-		'pkg': pkg.realPath,
 		'parents': ( parent ) ? [ parent ] : [],
+		'pkg': pkg.realPath,
 		'repo': getRepo( pkg )
 	};
 	// Assemble the real filepath of the package's `package.json`:
