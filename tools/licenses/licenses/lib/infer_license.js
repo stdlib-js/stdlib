@@ -36,6 +36,7 @@ function infer( file ) {
 	file = replace( file, RE_LIST_MARKS, '' );
 	file = replace( file, RE_WHITESPACE, '|' );
 
+	// TODO: maybe use distance measure, like lev dist, and threshold (?); could be tricky as some licenses are quite similar and may have to weight based on license length.
 	debug( 'Inferring licenses...' );
 	out = [];
 	for ( i = 0; i < KEYS.length; i++ ) {
