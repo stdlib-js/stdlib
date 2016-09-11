@@ -8,6 +8,7 @@
 	"boolean": [
 		"help",
 		"version",
+		"root",
 		"no-dev",
 		"no-infer"
 	],

@@ -81,6 +81,9 @@ if ( args.exclude ) {
 if ( args.filter ) {
 	opts.filter = args.filter;
 }
+if ( args.root ) {
+	opts.root = args.root;
+}
 if ( args.dev === false ) {
 	opts.dev = args.dev;
 }

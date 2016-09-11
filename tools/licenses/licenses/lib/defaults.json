@@ -1,6 +1,7 @@
 {
 	"dev": true,
 	"depth": null,
+	"root": false,
 	"infer": true,
 	"filter": null,
 	"exclude": [

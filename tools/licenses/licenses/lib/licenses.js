@@ -15,6 +15,7 @@ var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
 var toArray = require( './to_array.js' );
 var infer = require( './infer.js' );
+var rootFilter = require( './filter_root.js' );
 var noLicenseFilter = require( './filter_no_license.js' );
 var ambiguousFilter = require( './filter_ambiguous.js' );
 var excludeFilter = require( './filter_exclude.js' );
@@ -35,6 +36,7 @@ var debug = createDebug( 'licenses:main' );
 * @param {NonNegativeInteger} [options.depth] - search depth
 * @param {StringArray} [options.exclude] - SPDX identifiers used to filter license results
 * @param {string} [options.filter] - filter to apply to raw results
+* @param {boolean} [options.root=false] - boolean indicating whether to only include packages on which the root package directly depends
 * @param {boolean} [options.dev=true] - boolean indicating whether to include dev dependencies
 * @param {boolean} [options.infer=true] - boolean indicating whether to infer licenses from text
 * @param {Callback} clbk - callback to invoke upon completion
@@ -106,6 +108,9 @@ function licenses() {
 		results = recurse( {}, results );
 		results = toArray( results );
 
+		if ( opts.root ) {
+			results = rootFilter( results, opts.dev );
+		}
 		if ( opts.infer ) {
 			debug( 'Attempting to infer license information from package files...' );
 			infer( results, opts.pattern, onInfer );
@@ -138,8 +143,7 @@ function licenses() {
 	function filter( results ) {
 		if ( opts.filter === null ) {
 			// no-op...
-		}
-		else if ( opts.filter === 'no-license' ) {
+		} else if ( opts.filter === 'no-license' ) {
 			results = noLicenseFilter( results );
 		} else if ( opts.filter === 'ambiguous' ) {
 			results = ambiguousFilter( results );

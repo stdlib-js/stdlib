@@ -22,6 +22,7 @@ var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStrin
 * @param {NonNegativeInteger} [options.depth] - search depth
 * @param {StringArray} [options.exclude] - SPDX identifiers used to filter license results
 * @param {string} [options.filter] - filter to apply to raw results
+* @param {boolean} [options.root] - boolean indicating whether to only include packages on which the root package directly depends
 * @param {boolean} [options.dev] - boolean indicating whether to include dev dependencies
 * @param {boolean} [options.infer] - boolean indicating whether to infer licenses from text
 * @returns {(Error|null)} error object or null
@@ -64,6 +65,12 @@ function validate( opts, options ) {
 		opts.filter = options.filter;
 		if ( !isString( opts.filter ) ) {
 			return new TypeError( 'invalid option. `filter` option must be a primitive string. Option: `' + opts.filter + '`.' );
+		}
+	}
+	if ( options.hasOwnProperty( 'root' ) ) {
+		opts.root = options.root;
+		if ( !isBoolean( opts.root ) ) {
+			return new TypeError( 'invalid option. `root` option must be a primitive boolean. Option: `' + opts.root + '`.' );
 		}
 	}
 	if ( options.hasOwnProperty( 'dev' ) ) {

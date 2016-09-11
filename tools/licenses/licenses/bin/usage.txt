@@ -9,6 +9,7 @@ Options:
          --depth level               Search depth.
          --exclude spdx1,spdx2,...   List of SPDX license identifiers (whitelist).
          --filter name               Filter to apply.
+         --root                      Only include direct dependencies.
          --no-dev                    Exclude dev dependencies.
          --no-infer                  Do not infer licenses based on file content.
 

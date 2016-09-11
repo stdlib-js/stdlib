@@ -55,6 +55,7 @@ function recurse( cache, pkg ) {
 	results = {
 		'id': id,
 		'parents': ( parent ) ? [ parent ] : [],
+		'root': ( pkg.root ) ? true : false,
 		'pkg': pkg.realPath,
 		'repo': getRepo( pkg )
 	};
