@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'licenses:main' );
+var createDebug = require( 'debug' );
 var resolve = require( 'path' ).resolve;
 var readInstalled = require( 'read-installed' );
 var prefix = require( './stdlib.js' );
@@ -18,6 +18,11 @@ var infer = require( './infer.js' );
 var noLicenseFilter = require( './filter_no_license.js' );
 var ambiguousFilter = require( './filter_ambiguous.js' );
 var excludeFilter = require( './filter_exclude.js' );
+
+
+// FUNCTIONS //
+
+var debug = createDebug( 'licenses:main' );
 
 
 // LICENSES //
@@ -78,7 +83,8 @@ function licenses() {
 	debug( 'Options: %s.', JSON.stringify( opts ) );
 	options = {
 		'depth': opts.depth,
-		'dev': opts.dev
+		'dev': opts.dev,
+		'log': createDebug( 'licenses:read-installed' )
 	};
 
 	debug( 'Reading installed packages...' );
