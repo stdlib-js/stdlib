@@ -7,7 +7,6 @@ var join = require( 'path' ).join;
 var prefix = require( './stdlib.js' );
 var readFile = require( prefix+'@stdlib/fs/read-file' ).sync;
 var replace = require( prefix+'@stdlib/string/replace' );
-var lowercase = require( prefix+'@stdlib/string/lowercase' );
 var removePuncutation = require( prefix+'@stdlib/string/remove-punctuation' );
 var RE_WHITESPACE = require( './re_whitespace.js' );
 var RE_LIST_MARKS = require( './re_list_marks.js' );
@@ -93,6 +92,7 @@ for ( i = 0; i < names.length; i++ ) {
 	text = removePuncutation( text );
 	text = replace( text, RE_LIST_MARKS, '' );
 	text = replace( text, RE_WHITESPACE, '|' );
+	text = replace( text, /\|$/, '' ); // remove final `|` (if present)
 
 	debug( 'Storing license text using SPDX identifier: %s.', id );
 	LICENSES[ id ] = {
