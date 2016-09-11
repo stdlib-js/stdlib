@@ -2,6 +2,7 @@
 	"dev": true,
 	"depth": null,
 	"infer": true,
+	"filter": null,
 	"exclude": [
 		"Apache-2.0",
 		"Artistic-2.0",

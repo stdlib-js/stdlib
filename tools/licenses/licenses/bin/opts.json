@@ -2,6 +2,7 @@
 	"string": [
 		"dir",
 		"exclude",
+		"filter",
 		"depth"
 	],
 	"boolean": [

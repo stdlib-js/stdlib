@@ -78,15 +78,14 @@ if ( args.depth ) {
 if ( args.exclude ) {
 	opts.exclude = args.exclude.split( ',' );
 }
-if ( args[ 'no-dev' ] ) {
-	opts.dev = false;
-} else {
-	opts.dev = true;
+if ( args.filter ) {
+	opts.filter = args.filter;
 }
-if ( args[ 'no-infer' ] ) {
-	opts.infer = false;
-} else {
-	opts.infer = true;
+if ( args.dev === false ) {
+	opts.dev = args.dev;
+}
+if ( args.infer === false ) {
+	opts.infer = args.infer;
 }
 
 

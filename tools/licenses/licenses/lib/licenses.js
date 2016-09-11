@@ -15,6 +15,9 @@ var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
 var toArray = require( './to_array.js' );
 var infer = require( './infer.js' );
+var noLicenseFilter = require( './filter_no_license.js' );
+var ambiguousFilter = require( './filter_ambiguous.js' );
+var excludeFilter = require( './filter_exclude.js' );
 
 
 // LICENSES //
@@ -26,6 +29,7 @@ var infer = require( './infer.js' );
 * @param {string} [options.dir] - root directory from which to search
 * @param {NonNegativeInteger} [options.depth] - search depth
 * @param {StringArray} [options.exclude] - SPDX identifiers used to filter license results
+* @param {string} [options.filter] - filter to apply to raw results
 * @param {boolean} [options.dev=true] - boolean indicating whether to include dev dependencies
 * @param {boolean} [options.infer=true] - boolean indicating whether to infer licenses from text
 * @param {Callback} clbk - callback to invoke upon completion
@@ -90,7 +94,7 @@ function licenses() {
 	function onRead( error, results ) {
 		if ( error ) {
 			debug( 'Encountered an error while attempting to read installed packages: %s.', error.message );
-			return clbk( error );
+			return done( error );
 		}
 		debug( 'Successfully read installed packages.' );
 		results = recurse( {}, results );
@@ -98,18 +102,55 @@ function licenses() {
 
 		if ( opts.infer ) {
 			debug( 'Attempting to infer license information from package files...' );
-			infer( results, opts.pattern, done );
+			infer( results, opts.pattern, onInfer );
 		} else {
-			done( null, results );
+			filter( results );
 		}
 	} // end FUNCTION onRead()
+
+	/**
+	* Callback invoked upon inferring license information
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {(ObjectArray|EmptyArray)} results - results
+	*/
+	function onInfer( error, results ) {
+		if ( error ) {
+			debug( 'Encountered an error when attempting to infer license information: %s.', error.message );
+			return done( error );
+		}
+		filter( results );
+	} // end FUNCTION onInfer()
+
+	/**
+	* Filters results.
+	*
+	* @private
+	* @param {(ObjectArray|EmptyArray)} results - results
+	*/
+	function filter( results ) {
+		if ( opts.filter === null ) {
+			// no-op...
+		}
+		else if ( opts.filter === 'no-license' ) {
+			results = noLicenseFilter( results );
+		} else if ( opts.filter === 'ambiguous' ) {
+			results = ambiguousFilter( results );
+		} else if ( opts.filter === 'exclude' ) {
+			results = excludeFilter( results, opts.exclude );
+		} else {
+			throw new Error( 'unrecognized/unsupported option. Must provide a recognized `filter` option. Option: `' + opts.filter + '`.' );
+		}
+		done( null, results );
+	} // end FUNCTION filter()
 
 	/**
 	* Callback invoked after resolving licenses.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {Object} results - results
+	* @param {(ObjectArray|EmptyArray)} results - results
 	*/
 	function done( error, results ) {
 		if ( error ) {
