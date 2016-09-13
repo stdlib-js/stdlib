@@ -3,12 +3,12 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:recurse' );
+var prefix = require( './stdlib.js' );
 var join = require( 'path' ).join;
 var getKeys = require( 'object-keys' ).shim();
-var prefix = require( './stdlib.js' );
+var indexOf = require( prefix+'@stdlib/utils/index-of' );
 var getRepo = require( './pkg_repo.js' );
 var getLicense = require( './pkg_license.js' );
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
 
 
 // RECURSE //

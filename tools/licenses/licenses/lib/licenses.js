@@ -84,7 +84,7 @@ function licenses() {
 	readInstalled( opts.dir, options, onRead );
 
 	/**
-	* Callback invoked after reading installed modules.
+	* Callback invoked after reading installed packages.
 	*
 	* @private
 	* @param {(Error|null)} error - error object

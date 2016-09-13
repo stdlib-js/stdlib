@@ -116,6 +116,8 @@ Options:
 
 * License results are printed to `stdout` as newline-delimited JSON.
 
+<!-- </notes> -->
+
 
 <!-- <examples> -->
 
