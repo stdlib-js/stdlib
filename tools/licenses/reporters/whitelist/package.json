@@ -1,0 +1,37 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Reporter which excludes from license results packages which have a license in a provided whitelist.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-whitelist": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies",
+    "reporter",
+    "whitelist",
+    "filter",
+    "exclude",
+    "allowed"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

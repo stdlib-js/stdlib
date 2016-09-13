@@ -7,7 +7,7 @@
 * @param {(ObjectArray|EmptyArray)} results - unfiltered results
 * @returns {(ObjectArray|EmptyArray)} filtered results
 */
-function filter( results ) {
+function reporter( results ) {
 	var licenses;
 	var license;
 	var out;
@@ -27,9 +27,9 @@ function filter( results ) {
 		}
 	}
 	return out;
-} // end FUNCTION filter()
+} // end FUNCTION reporter()
 
 
 // EXPORTS //
 
-module.exports = filter;
+module.exports = reporter;

@@ -1,12 +1,10 @@
 {
 	"string": [
-		"dir",
-		"depth"
+		"exclude"
 	],
 	"boolean": [
 		"help",
-		"version",
-		"no-dev"
+		"version"
 	],
 	"alias": {
 		"help": [

@@ -75,20 +75,8 @@ if ( args.dir ) {
 if ( args.depth ) {
 	opts.depth = parseInt( args.depth, 10 );
 }
-if ( args.exclude ) {
-	opts.exclude = args.exclude.split( ',' );
-}
-if ( args.filter ) {
-	opts.filter = args.filter;
-}
-if ( args.root ) {
-	opts.root = args.root;
-}
 if ( args.dev === false ) {
 	opts.dev = args.dev;
-}
-if ( args.infer === false ) {
-	opts.infer = args.infer;
 }
 
 
@@ -110,6 +98,6 @@ function onResults( error, results ) {
 		throw error;
 	}
 	for ( i = 0; i < results.length; i++ ) {
-		console.error( JSON.stringify( results[ i ] ) );
+		console.log( JSON.stringify( results[ i ] ) );
 	}
 } // end FUNCTION onResults()

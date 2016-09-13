@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Reporter which filters license results for packages having ambiguous license information.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-ambiguous": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies",
+    "reporter",
+    "ambiguous",
+    "conflicting"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

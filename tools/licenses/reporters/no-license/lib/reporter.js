@@ -3,11 +3,10 @@
 /**
 * Filters license results for packages not having a license.
 *
-* @private
 * @param {(ObjectArray|EmptyArray)} results - unfiltered results
 * @returns {(ObjectArray|EmptyArray)} filtered results
 */
-function filter( results ) {
+function reporter( results ) {
 	var out;
 	var i;
 	out = [];
@@ -17,9 +16,9 @@ function filter( results ) {
 		}
 	}
 	return out;
-} // end FUNCTION filter()
+} // end FUNCTION reporter()
 
 
 // EXPORTS //
 
-module.exports = filter;
+module.exports = reporter;

@@ -6,17 +6,17 @@ var prefix = require( './stdlib.js' );
 var indexOf = require( prefix+'@stdlib/utils/index-of' );
 
 
-// FILTER //
+// REPORTER //
 
 /**
-* Excludes packages based on a provided license list from package results.
+* Excludes packages from license results when a package has a license matching a license identifier in a provided license list.
 *
 * @private
 * @param {(ObjectArray|EmptyArray)} results - unfiltered results
-* @param {StringArray} exclude - list of licenses to exclude
+* @param {StringArray} exclude - list of licenses (SPDX identifiers) to exclude
 * @returns {(ObjectArray|EmptyArray)} filtered results
 */
-function filter( results, exclude ) {
+function reporter( results, exclude ) {
 	var licenses;
 	var license;
 	var out;
@@ -52,9 +52,9 @@ function filter( results, exclude ) {
 		}
 	}
 	return out;
-} // end FUNCTION filter()
+} // end FUNCTION reporter()
 
 
 // EXPORTS //
 
-module.exports = filter;
+module.exports = reporter;

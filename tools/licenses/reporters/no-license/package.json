@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Reporter which filters license results for packages not having a license.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-no-license": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies",
+    "reporter"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

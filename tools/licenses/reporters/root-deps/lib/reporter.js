@@ -13,7 +13,7 @@ var indexOf = require( prefix+'@stdlib/utils/index-of' );
 var RE_ID = /(.+)\@([0-9]+\.[0-9]+\.[0-9]+)$/;
 
 
-// FILTER //
+// REPORTER //
 
 /**
 * Filters license results for packages directly depended on by the package root.
@@ -23,7 +23,7 @@ var RE_ID = /(.+)\@([0-9]+\.[0-9]+\.[0-9]+)$/;
 * @param {boolean} bool - boolean indicating whether to include dev dependencies
 * @returns {(ObjectArray|EmptyArray)} filtered results
 */
-function filter( results, bool ) {
+function reporter( results, bool ) {
 	var version;
 	var devDeps;
 	var parts;
@@ -80,9 +80,9 @@ function filter( results, bool ) {
 		}
 	}
 	return out;
-} // end FUNCTION filter()
+} // end FUNCTION reporter()
 
 
 // EXPORTS //
 
-module.exports = filter;
+module.exports = reporter;

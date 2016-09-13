@@ -1,0 +1,27 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Infer license information from file content.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-infer": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "find",
+    "infer",
+    "resolve",
+    "licenses",
+    "license"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

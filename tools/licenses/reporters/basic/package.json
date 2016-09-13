@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Basic license information reporter.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-reporter": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies",
+    "reporter"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

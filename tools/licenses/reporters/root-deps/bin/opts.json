@@ -1,8 +1,4 @@
 {
-	"string": [
-		"dir",
-		"depth"
-	],
 	"boolean": [
 		"help",
 		"version",

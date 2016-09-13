@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Reporter which filters license results for packages directly depended on by the root package.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-deps": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies",
+    "reporter"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

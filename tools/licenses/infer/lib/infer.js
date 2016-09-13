@@ -12,7 +12,7 @@ var inferLicense = require( './infer_license.js' );
 // INFER //
 
 /**
-* Infers licenses from file content.
+* Infers license information from file content.
 *
 * @private
 * @param {ObjectArray} pkgs - package data

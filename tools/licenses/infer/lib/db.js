@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'licenses:db' );
+var debug = require( 'debug' )( 'licenses:infer:db' );
 var join = require( 'path' ).join;
 var prefix = require( './stdlib.js' );
 var readFile = require( prefix+'@stdlib/fs/read-file' ).sync;

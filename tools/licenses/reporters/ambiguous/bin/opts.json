@@ -1,12 +1,7 @@
 {
-	"string": [
-		"dir",
-		"depth"
-	],
 	"boolean": [
 		"help",
-		"version",
-		"no-dev"
+		"version"
 	],
 	"alias": {
 		"help": [
