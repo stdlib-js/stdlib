@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "version": "",
+  "description": "List package dependencies.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "pkgs": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "deps",
+    "dependencies",
+    "pkgs",
+    "packages",
+    "modules",
+    "list"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
