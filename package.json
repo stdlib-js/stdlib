@@ -62,6 +62,7 @@
     "remark-lint": "^5.0.0",
     "remark-validate-links": "^5.0.0",
     "semver": "^5.3.0",
+    "spdx-license-ids": "^1.2.2",
     "tap-spec": "4.x.x",
     "tap-summary": "^3.0.1",
     "tap-xunit": "^1.4.0",
