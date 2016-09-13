@@ -453,6 +453,12 @@ To check whether dependencies are up-to-date,
 $ make check-deps
 ```
 
+To check licenses of installed package dependencies,
+
+``` bash
+$ make check-licenses
+```
+
 
 <!-- <links> -->
 

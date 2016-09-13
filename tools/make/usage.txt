@@ -12,6 +12,8 @@ Usage: make <cmd>
   make list-files             List files.
   make list-modules           List all modules.
   make list-module-names      List all module names.
+  make list-licenses          List licenses of installed package dependencies.
+  make list-dep-licenses      List root package dependency licenses.
   make examples               Run examples.
   make test                   Run tests.
   make test-summary           Run tests and output a test summary.
@@ -31,6 +33,7 @@ Usage: make <cmd>
   make complexity             Generate complexity reports.
   make complexity-javascript  Generate a JavaScript complexity report.
   make check-deps             Check if dependencies are up-to-date.
+  make check-licenses         Check package dependency licenses.
   make install                Run install sequence.
   make clean                  Run all cleanup tasks.
   make clean-node             Remove Node dependencies.
