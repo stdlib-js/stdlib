@@ -19,6 +19,9 @@ INFER_LICENSES_FLAGS ?= --pattern '{readme*,licen[cs]e*,copying*}'
 # Define the command for reporting license information:
 LICENSES_REPORTER ?= $(NODE) $(TOOLS_DIR)/licenses/reporters/basic/bin/cli
 
+# Define the command for reporting licenses by license type:
+LICENSES_REPORTER_GROUP ?= $(NODE) $(TOOLS_DIR)/licenses/reporters/group/bin/cli
+
 # Define the command for reporting root package dependencies:
 LICENSES_REPORTER_DEPS ?= $(NODE) $(TOOLS_DIR)/licenses/reporters/root-deps/bin/cli
 

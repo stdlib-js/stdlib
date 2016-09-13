@@ -15,6 +15,20 @@ list-licenses: $(NODE_MODULES)
 .PHONY: list-licenses
 
 
+# List package licenses by group.
+#
+# This target groups the licenses of package dependencies by license type.
+
+list-licenses-group: $(NODE_MODULES)
+	$(QUIET) $(LIST_LICENSES) \
+		--dir $(ROOT_DIR) \
+	| $(INFER_LICENSES) \
+		$(INFER_LICENSES_FLAGS) \
+	| $(LICENSES_REPORTER_GROUP)
+
+.PHONY: list-licenses-group
+
+
 # List dependency licenses.
 #
 # This target lists the license for each root package dependency.
