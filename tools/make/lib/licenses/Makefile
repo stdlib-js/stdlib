@@ -34,6 +34,9 @@ LICENSES_REPORTER_AMBIGUOUS ?= $(NODE) $(TOOLS_DIR)/licenses/reporters/ambiguous
 # Define the command for reporting excluded licenses:
 LICENSES_REPORTER_EXCLUDED ?= $(NODE) $(TOOLS_DIR)/licenses/reporters/whitelist/bin/cli
 
+# Define the command for generating a license summary:
+LICENSES_REPORTER_SUMMARY ?= $(NODE) $(TOOLS_DIR)/licenses/reporters/summary/bin/cli
+
 
 # DEPENDENCIES #
 

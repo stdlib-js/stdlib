@@ -85,3 +85,17 @@ list-excluded-licenses: $(NODE_MODULES)
 		--exclude $(LICENSES_WHITELIST)
 
 .PHONY: list-excluded-licenses
+
+
+# Generate a license summary.
+#
+# This target summaries package dependency license information.
+
+list-licenses-summary: $(NODE_MODULES)
+	$(QUIET) $(LIST_LICENSES) \
+		--dir $(ROOT_DIR) \
+	| $(INFER_LICENSES) \
+		$(INFER_LICENSES_FLAGS) \
+	| $(LICENSES_REPORTER_SUMMARY)
+
+.PHONY: list-licenses-summary

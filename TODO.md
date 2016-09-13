@@ -1122,6 +1122,8 @@ TODO
 
 205. [print-object-as-tree](https://github.com/notatestuser/treeify) utility
 
+206. Consider something likes [credits](https://github.com/stefanjudis/credits-cli)
+
 
 ---
 

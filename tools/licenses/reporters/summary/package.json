@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Reporter which summarizes license results.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "licenses-summary": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "check",
+    "find",
+    "resolve",
+    "licenses",
+    "license",
+    "validate",
+    "valid",
+    "legal",
+    "deps",
+    "dependencies",
+    "reporter",
+    "summary",
+    "summarize"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
