@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'deps:recurse' );
+var debug = require( 'debug' )( 'pkgs:recurse' );
 var getKeys = require( 'object-keys' ).shim();
 
 
