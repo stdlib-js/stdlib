@@ -21,7 +21,7 @@ LIST_MODULE_NAMES_FLAGS ?= \
 #
 # This target prints a list of all module names.
 
-list-module-names: $(LIST_MODULE_NAMES)
+list-module-names: $(LIST_MODULE_NAMES) $(NODE_MODULES)
 	$(QUIET) $(NODE) $(LIST_MODULE_NAMES) $(LIST_MODULE_NAMES_FLAGS)
 
 .PHONY: list-module-names
