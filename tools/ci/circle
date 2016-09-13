@@ -217,6 +217,20 @@ check_deps() {
 	return 0
 }
 
+# Checks licenses.
+#
+# $1 - log file
+check_licenses() {
+	echo 'Checking licenses...' >&2
+	make check-licenses-production >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Detected dependency licensing issues.' >&2
+		return 1
+	fi
+	echo 'No dependency licensing issues detected.' >&2
+	return 0
+}
+
 # Performs lint tasks.
 #
 # $1 - log file
@@ -305,7 +319,7 @@ main() {
 	local len
 	local i
 
-	TASKS=(check_deps lint)
+	TASKS=(check_deps check_licenses lint)
 	len="${#TASKS[@]}"
 
 	create_log_file "${log_file}"
@@ -333,6 +347,11 @@ main() {
 		echo "Task: ${task}." >&2
 		if [[ "${task}" = "check_deps" ]]; then
 			check_deps "${log_file}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		elif [[ "${task}" = "check_licenses" ]]; then
+			check_licenses "${log_file}"
 			if [[ "$?" -ne 0 ]]; then
 				on_error 1
 			fi
