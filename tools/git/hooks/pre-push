@@ -52,6 +52,18 @@ has_commits() {
 	return 0
 }
 
+# Checks licenses.
+check_licenses() {
+	echo 'Checking licenses...' >&2
+	make check-licenses-production > /dev/null 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Detected dependency licensing issues. Run `make check-licenses-production` to see failing dependency licenses.' >&2
+		return 1
+	fi
+	echo 'No dependency licensing issues detected.' >&2
+	return 0
+}
+
 # Runs tests.
 run_tests() {
 	echo 'Running tests...' >&2
@@ -67,6 +79,10 @@ run_tests() {
 # Main execution sequence.
 main() {
 	has_commits
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	check_licenses
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi

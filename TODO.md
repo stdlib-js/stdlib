@@ -92,6 +92,8 @@ TODO
 
    * [`flow-jsdoc`](https://github.com/Kegsay/flow-jsdoc)
 
+   * [`catharsis`](https://github.com/hegemonic/catharsis)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -901,7 +903,6 @@ TODO
      - [licensecheck](https://github.com/marcello3d/node-licensecheck)
      - [nlf](https://github.com/iandotkelly/nlf)
      - [license-list](https://www.gnu.org/licenses/license-list.en.html)
-     - make part of `pre-push` git hook
      - as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
      - recipe to plot license distribution as a bar plot (?) => could be part of public facing docs
 
@@ -1101,6 +1102,25 @@ TODO
 196. investigate [mancy](https://github.com/princejwesley/Mancy)
 
 197. semver regex
+
+198. Could this [tutorial](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.zc3kqdimf) (and associated tutorials) be made interactive?
+
+199. [fuzzy search](https://github.com/krisk/Fuse)
+
+200. Image datasets
+
+     - [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
+     - [tiny images](https://www.cs.toronto.edu/~kriz/cifar.html)
+
+201. [dependencyci](https://dependencyci.com/)
+
+202. Consider replacing `testling` with [tape-run](https://github.com/juliangruber/tape-run)
+
+203. ccount but generalized to array-like objects
+
+204. [tree](http://linux.die.net/man/1/tree)
+
+205. [print-object-as-tree](https://github.com/notatestuser/treeify) utility
 
 
 ---
