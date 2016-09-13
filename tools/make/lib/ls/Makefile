@@ -59,3 +59,4 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/modules.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/module_names.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs.mk
