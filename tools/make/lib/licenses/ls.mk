@@ -33,7 +33,7 @@ list-licenses-group: $(NODE_MODULES)
 #
 # This target lists the license for each root package dependency.
 
-list-dep-licenses: $(NODE_MODULES)
+list-deps-licenses: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 		--depth 0 \
@@ -41,7 +41,7 @@ list-dep-licenses: $(NODE_MODULES)
 		$(INFER_LICENSES_FLAGS) \
 	| $(LICENSES_REPORTER_DEPS)
 
-.PHONY: list-dep-licenses
+.PHONY: list-deps-licenses
 
 
 # List missing licenses.

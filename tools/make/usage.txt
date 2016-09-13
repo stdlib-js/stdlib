@@ -13,7 +13,7 @@ Usage: make <cmd>
   make list-modules           List all modules.
   make list-module-names      List all module names.
   make list-licenses          List licenses of installed package dependencies.
-  make list-dep-licenses      List root package dependency licenses.
+  make list-deps-licenses     List root package dependency licenses.
   make examples               Run examples.
   make test                   Run tests.
   make test-summary           Run tests and output a test summary.
