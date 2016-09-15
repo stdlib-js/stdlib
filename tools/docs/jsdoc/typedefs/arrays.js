@@ -45,7 +45,31 @@
 /**
 * A numeric array containing only integer values.
 *
-* @typedef {(Array<number>|IntegerTypedArray)} IntegerNumericArray
+* @typedef {(Array<number>|IntegerTypedArray)} IntegerArray
+*/
+
+/**
+* An integer array containing only positive integer values.
+*
+* @typedef {IntegerArray)} PositiveIntegerArray
+*/
+
+/**
+* An integer array containing only negative integer values.
+*
+* @typedef {IntegerArray)} NegativeIntegerArray
+*/
+
+/**
+* An integer array containing only non-positive integer values.
+*
+* @typedef {IntegerArray)} NonPositiveIntegerArray
+*/
+
+/**
+* An integer array containing only nonnegative integer values.
+*
+* @typedef {IntegerArray)} NonNegativeIntegerArray
 */
 
 /**
