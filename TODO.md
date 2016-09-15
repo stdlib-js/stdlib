@@ -892,7 +892,7 @@ TODO
 
 115. should `float64-signbit` return a `boolean` (like Julia) or a `1` or `0`?
 
-116. `make` recipe for checking dep licenses
+116. licenses utilities
 
      - [licensee.js](https://github.com/jslicense/licensee.js)
      - [license-checker](https://github.com/davglass/license-checker)
@@ -1123,6 +1123,8 @@ TODO
 205. [print-object-as-tree](https://github.com/notatestuser/treeify) utility
 
 206. Consider something likes [credits](https://github.com/stefanjudis/credits-cli)
+
+207. NLP [data](https://confluence.cornell.edu/display/NLP/Data/) (note: ambiguous licensing)
 
 
 ---
