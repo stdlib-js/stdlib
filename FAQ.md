@@ -4,7 +4,7 @@
 
 
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
-* [What about Web Assembly?](#web-assembly)
+* [What about WebAssembly?](#web-assembly)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
 * [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Backward compatibility?](#backward-compatibility)
