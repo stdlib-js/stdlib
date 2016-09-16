@@ -9,7 +9,7 @@
 * [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Backward compatibility?](#backward-compatibility)
 * [Promise support?](#promise-support)
-* [ES2015+?](#es2015)
+* [ES2015 and beyond?](#es2015)
 * [Why a monorepo?](#monorepo)
 * [How can I contribute?](#contributing)
 
@@ -40,7 +40,7 @@
 
 ### What about WebAssembly?
 
-[WebAssembly][wasm] proposes to fundamentally change the web platform by providing a low-level compilation target, which, in the future, will allow any language to be compiled to run on the Web. Once [WebAssembly][wasm] is ubiquitously supported, web developers will be able to use, e.g., a numeric computation library from, not just JavaScript, but any language, including traditional languages, such as R, Python, Julia, and C/C++ (provided the library can compile). While the possibility of using libraries like [NumPy][numpy] and [scikit-learn][scikit-learn] on the Web is exciting, this is not viewed as a existential threat for the following reasons:
+[WebAssembly][wasm] proposes to fundamentally change the web platform by providing a low-level compilation target, which, in the future, will allow any language to be compiled to run on the Web. Once [WebAssembly][wasm] is ubiquitously supported, web developers will be able to use, e.g., a numeric computation library from, not just JavaScript, but any language, including traditional languages, such as R, Python, Julia, and C/C++ (provided the library can compile). While the possibility of using libraries like [NumPy][numpy] and [scikit-learn][scikit-learn] on the Web is exciting, this is not viewed as an existential threat for the following reasons:
 
 1. __Compilation__: as developers who have used [asm.js][asm] to compile C and C++ libraries to run on the Web can attest, the process is not as simple as defining input and output targets. Often pre-compiled code has to be massaged into a form suitable for compilation, which means work is involved, requiring both time and labor.
 1. __Timescale__: [WebAssembly][wasm] is not likely to be ubiquitous anytime soon (as of 2016) and a need exists now for numeric computation libraries which work on the Web.
@@ -116,9 +116,9 @@ No.
 
 <a name="es2015"></a>
 
-### ES2015+?
+### ES2015 and beyond?
 
-Only *if* three conditions are met:
+Only __if__ three conditions are met:
 
 1. ES2015+ features can be used __without__ breaking backwards compatibility.
 1. ES2015+ features provide something which is absolutely needed but literally not possible in ES5 and earlier environments.
