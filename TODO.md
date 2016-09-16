@@ -1079,9 +1079,7 @@ TODO
 
 186. [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
 
-187. FAQ
-
-     - What about web assembly?
+187. 
 
 188. investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
 
