@@ -14,11 +14,11 @@
 * [How can I contribute?](#contributing)
 
 
----
-
 <!-- <faq-questions> -->
 
 <!-- <faq-question> -->
+
+---
 
 <a name="numeric-computing-in-javascript"></a>
 
@@ -35,6 +35,8 @@
 
 
 <!-- <faq-question> -->
+
+---
 
 <a name="web-assembly"></a>
 
@@ -53,6 +55,8 @@
 
 <!-- <faq-question> -->
 
+---
+
 <a name="custom-math-implementations"></a>
 
 ### Why reimplement and provide custom Math implementations?
@@ -68,6 +72,8 @@
 
 <!-- <faq-question> -->
 
+---
+
 <a name="reimplementing-existing-packages"></a>
 
 ### Why reimplement module functionality already available on npm?
@@ -80,6 +86,8 @@
 
 
 <!-- <faq-question> -->
+
+---
 
 <a name="backward-compatibility"></a>
 
@@ -103,6 +111,8 @@ This project has every intent on maintaining backward compatibility with older N
 
 <!-- <faq-question> -->
 
+---
+
 <a name="promise-support"></a>
 
 ### Promise support?
@@ -114,13 +124,15 @@ No.
 
 <!-- <faq-question> -->
 
+---
+
 <a name="es2015"></a>
 
 ### ES2015 and beyond?
 
 Only __if__ three conditions are met:
 
-1. ES2015+ features can be used __without__ breaking backwards compatibility.
+1. ES2015+ features can be used __without__ breaking backward compatibility.
 1. ES2015+ features provide something which is absolutely needed but literally not possible in ES5 and earlier environments.
 1. ES2015+ features can be polyfilled in older environments __without__ transpilation.
 
@@ -137,6 +149,8 @@ The reasons are as follows:
 
 <!-- <faq-question> -->
 
+---
+
 <a name="monorepo"></a>
 
 ### Why a monorepo?
@@ -152,6 +166,8 @@ The reasons are as follows:
 
 
 <!-- <faq-question> -->
+
+---
 
 <a name="contributing"></a>
 
