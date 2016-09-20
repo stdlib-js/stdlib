@@ -66,8 +66,8 @@ before_install:
 
 
 script:
-  - chmod +x ./tools/ci/travis/build
-  - "./tools/ci/travis/build $BUILD_TASK"
+  - chmod +x ./tools/ci/travis/script
+  - "./tools/ci/travis/script $BUILD_TASK"
 
 
 notifications:

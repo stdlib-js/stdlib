@@ -131,7 +131,7 @@ test_script:
   # Rely on [MSYS][1], a collection of GNU utilities including `make`, being installed in a `1.0` directory.
   #
   # [1]: http://www.mingw.org/wiki/MSYS
-  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/build $BUILD_TASK"'
+  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
 
 
 notifications:
