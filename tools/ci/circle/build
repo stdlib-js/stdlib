@@ -29,7 +29,7 @@ tests_log_dir="${CIRCLE_TEST_REPORTS}/junit"
 log_file='/var/log/circle-ci.log'
 
 # Determine the root project directory:
-root_dir=$(dirname "$0")/../..
+root_dir=$(dirname "$0")/../../..
 root_dir=$(cd "${root_dir}" && echo $PWD)
 
 # Define the project source code directory:
