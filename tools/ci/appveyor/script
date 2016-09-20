@@ -20,9 +20,6 @@ heartbeat_interval='30s'
 # Declare a variable for storing the heartbeat process id:
 heartbeat_pid=""
 
-# Define the number of lines of logged output to print upon completion:
-tail_num_lines=4000
-
 
 # FUNCTIONS #
 
@@ -37,7 +34,6 @@ on_error() {
 
 # Runs clean-up tasks.
 cleanup() {
-	tail_output "${log_file}" "${tail_num_lines}"
 	stop_heartbeat
 }
 
@@ -69,15 +65,6 @@ heartbeat() {
 stop_heartbeat() {
 	echo 'Stopping heartbeat...' >&2
 	kill "${heartbeat_pid}"
-}
-
-# Tails a log file.
-#
-# $1 - log file to tail
-# $2 - number of lines to tail
-tail_output() {
-   echo "Printing the last $2 lines of log output..." >&2
-   tail -"$2" "$1"
 }
 
 # Creates an output log file.
