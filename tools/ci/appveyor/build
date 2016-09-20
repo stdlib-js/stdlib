@@ -228,7 +228,7 @@ main() {
 trap 'on_error' ERR
 
 # Run in the top-level project directory:
-cd $(dirname "$0")/../..
+cd $(dirname "$0")/../../..
 
 # Run main:
 main
