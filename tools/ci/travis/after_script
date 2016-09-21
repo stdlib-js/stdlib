@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+#
+# Build script to run at the end of the Travis CI build [lifecycle][1].
+#
+# [1]: https://docs.travis-ci.com/user/customizing-the-build#The-Build-Lifecycle
+
+
+# VARIABLES #
+
+# Get the build result (`0` if success; `1` if failure):
+result="${TRAVIS_TEST_RESULT}"
+
+# Define a file containing log output:
+log_file='/var/log/travis-ci.log'
+
+# Define the number of lines of logged output to print:
+tail_num_lines=5000
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit 1
+}
+
+# Tails a log file.
+#
+# $1 - log file to tail
+# $2 - number of lines to tail
+tail_output() {
+   echo "Printing the last $2 lines of log output..." >&2
+   tail -"$2" "$1"
+}
+
+# Main execution sequence.
+main() {
+	# Only tail the log file if the build failed...
+	if [[ "${result}" = "1" ]]; then
+		tail_output "${log_file}" "${tail_num_lines}"
+	fi
+}
+
+# Set an error handler:
+trap 'on_error' ERR
+
+# Run main:
+main

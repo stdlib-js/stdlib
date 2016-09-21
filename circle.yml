@@ -16,5 +16,8 @@ dependencies:
 # Custom test commands:
 test:
   override:
-    - 'chmod +x ./tools/ci/circle/build && ./tools/ci/circle/build':
+    - 'chmod +x ./tools/ci/circle/script && ./tools/ci/circle/script':
+        parallel: true
+  post:
+    - 'chmod +x ./tools/ci/circle/after_script && ./tools/ci/circle/after_script':
         parallel: true

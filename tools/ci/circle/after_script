@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+#
+# Build script to run at the end of the Circle CI test [lifecycle][1].
+#
+# [1]: https://circleci.com/docs/configuration/#test
+
+
+# VARIABLES #
+
+# Define a file containing log output:
+log_file='/var/log/circle-ci.log'
+
+# Define the number of lines of logged output to print:
+tail_num_lines=5000
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit 1
+}
+
+# Tails a log file.
+#
+# $1 - log file to tail
+# $2 - number of lines to tail
+tail_output() {
+   echo "Printing the last $2 lines of log output..." >&2
+   tail -"$2" "$1"
+}
+
+# Main execution sequence.
+main() {
+	tail_output "${log_file}" "${tail_num_lines}"
+}
+
+# Set an error handler:
+trap 'on_error' ERR
+
+# Run main:
+main
