@@ -1079,7 +1079,7 @@ TODO
 
 186. [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
 
-187. 
+187. [stdout-stream](https://github.com/mafintosh/stdout-stream)
 
 188. investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
 
@@ -1127,6 +1127,12 @@ TODO
 208. Fix SOTU raw text where `\&mash;` was converted to a single hyphen `-`
 
 209. [ASTExplorer](https://github.com/fkling/astexplorer)
+
+210. Consider using [shrinkpack](https://github.com/JamieMason/shrinkpack) to create reproducible, more reliable, and faster builds in CI environments
+
+211. pkg which can generate an Anscombe quartet
+
+212. [authors-certificate](https://github.com/berneout/authors-certificate)
 
 
 
