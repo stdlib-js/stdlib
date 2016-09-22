@@ -1,0 +1,37 @@
+{
+  "name": "stdlib-datasets-us-states-names",
+  "version": "",
+  "title": "US State Names",
+  "description": "A list of US state names in alphabetical order.",
+  "resources": [
+    {
+      "name": "us-states-names-json",
+      "title": "US State Names",
+      "description": "A list of US state names in alphabetical order.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "us-states-names-txt",
+      "title": "US State Names",
+      "description": "A list of US state names in alphabetical order.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "us",
+    "united",
+    "states",
+    "names"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
