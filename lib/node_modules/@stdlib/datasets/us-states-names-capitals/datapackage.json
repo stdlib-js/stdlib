@@ -1,0 +1,58 @@
+{
+  "name": "stdlib-datasets-us-states-names-capitals",
+  "version": "",
+  "title": "US State Names and Capitals",
+  "description": "Maps US state names to state capitals.",
+  "resources": [
+    {
+      "name": "us-states-names-capitals-json",
+      "title": "US State Names and Capitals",
+      "description": "Maps US state names to state capitals.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "us-states-names-capitals-csv",
+      "title": "US State Names and Capitals",
+      "description": "US state names and capitals.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "state",
+            "title": "State",
+            "description": "State name.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "capital",
+            "title": "Capital",
+            "description": "State capital.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "us",
+    "united",
+    "states",
+    "names",
+    "capitals",
+    "mapping",
+    "table",
+    "hash"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
