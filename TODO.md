@@ -1134,6 +1134,8 @@ TODO
 
 212. [authors-certificate](https://github.com/berneout/authors-certificate)
 
+213. FAQ: what is decomposable software?
+
 
 
 
