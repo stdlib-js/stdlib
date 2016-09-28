@@ -1144,6 +1144,10 @@ TODO
 
 217. Does `is-typed-array` need to address symbol [toStringTag](https://github.com/ljharb/is-typed-array/blob/master/index.js)? Ditto for [which-typed-array](https://github.com/ljharb/which-typed-array)?
 
+218. single-line-stream
+
+219. [snippet-stream](https://github.com/mafintosh/snippet-stream)
+
 
 
 
