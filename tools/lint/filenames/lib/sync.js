@@ -4,9 +4,9 @@
 
 var glob = require( 'glob' ).sync;
 var resolve = require( 'path' ).resolve;
-var stdlib = require( './stdlib.js' );
-var cwd = require( stdlib+'@stdlib/utils/cwd' );
-var copy = require( stdlib+'@stdlib/utils/copy' );
+var prefix = require( './stdlib.js' );
+var cwd = require( prefix+'@stdlib/utils/cwd' );
+var copy = require( prefix+'@stdlib/utils/copy' );
 var DEFAULTS = require( './defaults.json' );
 var validate = require( './validate.js' );
 var linter = require( './lint.js' );

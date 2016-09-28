@@ -3,10 +3,10 @@
 // MODULES //
 
 var basename = require( 'path' ).basename; // TODO: use stdlib module
-var stdlib = require( './stdlib.js' );
-var extname = require( stdlib+'@stdlib/utils/extname' );
-var indexOf = require( stdlib+'@stdlib/utils/index-of' );
-var lowercase = require( stdlib+'@stdlib/string/lowercase' );
+var prefix = require( './stdlib.js' );
+var extname = require( prefix+'@stdlib/utils/extname' );
+var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var lowercase = require( prefix+'@stdlib/string/lowercase' );
 var EXTENSIONS = require( './extensions.json' );
 var SPECIAL = require( './special.json' );
 

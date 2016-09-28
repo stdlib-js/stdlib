@@ -1,5 +1,6 @@
 {
 	"license": "LICENSE",
+	"notice": "NOTICE",
 	"makefile": "Makefile",
 	"description": "DESCRIPTION",
 	"require": "REQUIRE"
