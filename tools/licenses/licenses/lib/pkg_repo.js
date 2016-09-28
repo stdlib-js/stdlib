@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'licenses:pkg:repo' );
 var prefix = require( './stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-object' ); // TODO: plain object
+var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
 var replace = require( prefix+'@stdlib/string/replace' );
 
 
