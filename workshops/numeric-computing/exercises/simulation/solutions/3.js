@@ -5,6 +5,7 @@ var fs = require( 'fs' );
 var splitStream = require( '@stdlib/streams/utils/split' );
 var joinStream = require( '@stdlib/streams/utils/join' );
 var transformStream = require( '@stdlib/streams/utils/transform' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 
 // Create a directory to store artifacts:
 fs.mkdirSync( path.join( __dirname, 'build' ) );
@@ -85,7 +86,7 @@ function createTransform() {
 		buffer.push( val );
 
 		// If the key does not exist, create it; otherwise, just push onto the stack...
-		if ( db.hasOwnProperty( key ) ) {
+		if ( hasOwnProp( db, key ) ) {
 			db[ key ].push( val );
 		} else {
 			db[ key ] = [ val ];
