@@ -4,6 +4,8 @@
 
 var debug = require( 'debug' )( 'pkgs:recurse' );
 var getKeys = require( 'object-keys' ).shim();
+var prefix = require( './stdlib.js' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 
 
 // RECURSE //
@@ -27,7 +29,7 @@ function recurse( cache, pkg ) {
 	debug( 'Package: %s.', id );
 
 	// Check if we have already processed this package (only process packages once):
-	if ( cache.hasOwnProperty( id ) ) {
+	if ( hasOwnProp( cache, id ) ) {
 		debug( '%s already exists in cache.', id );
 		return cache;
 	}

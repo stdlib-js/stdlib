@@ -2,9 +2,10 @@
 
 // MODULES //
 
-var stdlib = require( './stdlib.js' );
-var isObject = require( stdlib+'@stdlib/utils/is-object' ); // TODO: plain object
-var isString = require( stdlib+'@stdlib/utils/is-string' ).isPrimitive;
+var prefix = require( './stdlib.js' );
+var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 
 
 // VALIDATE //
@@ -34,7 +35,7 @@ function validate( opts, options ) {
 		return new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options +
 			'`.' );
 	}
-	if ( options.hasOwnProperty( 'dir' ) ) {
+	if ( hasOwnProp( options, 'dir' ) ) {
 		opts.dir = options.dir;
 		if ( !isString( opts.dir ) ) {
 			return new TypeError( 'invalid option. `dir` option must be a primitive string. Option: `' + opts.dir + '`.' );

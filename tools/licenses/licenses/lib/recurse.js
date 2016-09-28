@@ -7,6 +7,7 @@ var prefix = require( './stdlib.js' );
 var join = require( 'path' ).join;
 var getKeys = require( 'object-keys' ).shim();
 var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 var getRepo = require( './pkg_repo.js' );
 var getLicense = require( './pkg_license.js' );
 
@@ -40,7 +41,7 @@ function recurse( cache, pkg ) {
 	debug( 'Package: %s. Parent: %s.', id, parent || '(none)' );
 
 	// Check if we have already processed this package (only process packages once):
-	if ( cache.hasOwnProperty( id ) ) {
+	if ( hasOwnProp( cache, id ) ) {
 		debug( '%s already exists in cache.', id );
 		results = cache[ id ];
 

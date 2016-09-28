@@ -6,6 +6,7 @@ var join = require( 'path' ).join;
 var semver = require( 'semver' );
 var prefix = require( './stdlib.js' );
 var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 
 
 // VARIABLES //
@@ -66,14 +67,14 @@ function reporter( results, bool ) {
 		name = parts[ 1 ];
 		version = parts[ 2 ];
 		if (
-			deps.hasOwnProperty( name ) &&
+			hasOwnProp( deps, name ) &&
 			semver.satisfies( version, deps[ name ] )
 		) {
 			out.push( results[ i ] );
 		}
 		else if (
 			bool &&
-			devDeps.hasOwnProperty( name ) &&
+			hasOwnProp( devDeps, name ) &&
 			semver.satisfies( version, devDeps[ name ] )
 		) {
 			out.push( results[ i ] );

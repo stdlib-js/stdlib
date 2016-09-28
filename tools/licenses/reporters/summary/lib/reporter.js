@@ -6,6 +6,7 @@ var getKeys = require( 'object-keys' ).shim();
 var SPDX = require( 'spdx-license-ids' );
 var prefix = require( './stdlib.js' );
 var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 
 
 // REPORTER //
@@ -42,7 +43,7 @@ function reporter( results ) {
 		if ( licenses.length ) {
 			for ( j = 0; j < licenses.length; j++ ) {
 				license = licenses[ j ];
-				if ( !names.hasOwnProperty( license.name ) ) {
+				if ( !hasOwnProp( names, license.name ) ) {
 					ids = [];
 					names[ license.name ] = ids;
 				} else {
@@ -65,7 +66,7 @@ function reporter( results ) {
 				}
 			}
 		} else {
-			if ( !names.hasOwnProperty( 'UNKNOWN' ) ) {
+			if ( !hasOwnProp( names, 'UNKNOWN' ) ) {
 				ids = [];
 				names[ 'UNKNOWN' ] = ids;
 			} else {

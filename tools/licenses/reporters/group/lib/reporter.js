@@ -4,6 +4,7 @@
 
 var prefix = require( './stdlib.js' );
 var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 
 
 // REPORTER //
@@ -31,7 +32,7 @@ function reporter( results ) {
 		if ( licenses.length ) {
 			for ( j = 0; j < licenses.length; j++ ) {
 				license = licenses[ j ];
-				if ( !out.hasOwnProperty( license.name ) ) {
+				if ( !hasOwnProp( out, license.name ) ) {
 					ids = [];
 					out[ license.name ] = ids;
 				} else {
@@ -42,7 +43,7 @@ function reporter( results ) {
 				}
 			}
 		} else {
-			if ( !out.hasOwnProperty( 'UNKNOWN' ) ) {
+			if ( !hasOwnProp( out, 'UNKNOWN' ) ) {
 				ids = [];
 				out[ 'UNKNOWN' ] = ids;
 			} else {

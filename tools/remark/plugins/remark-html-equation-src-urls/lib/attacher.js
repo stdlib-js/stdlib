@@ -3,10 +3,11 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-html-equation-src-urls:attacher' );
-var stdlib = require( './stdlib.js' );
-var copy = require( stdlib+'@stdlib/utils/copy' );
-var isObject = require( stdlib+'@stdlib/utils/is-object' ); // TODO: plain object
-var isString = require( stdlib+'@stdlib/utils/is-string' ).isPrimitive;
+var prefix = require( './stdlib.js' );
+var copy = require( prefix+'@stdlib/utils/copy' );
+var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
+var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 var transformerFactory = require( './transformer.js' );
 var defaults = require( './defaults.json' );
 
@@ -29,7 +30,7 @@ function attacher( remark, options ) {
 		if ( !isObject( options ) ) {
 			throw new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options + '`.' );
 		}
-		if ( options.hasOwnProperty( 'dir' ) ) {
+		if ( hasOwnProp( options, 'dir' ) ) {
 			if ( !isString( options.dir ) ) {
 				throw new TypeError( 'invalid option. `dir` option must be a string primitive. Value: `' + options.dir + '`.' );
 			}
