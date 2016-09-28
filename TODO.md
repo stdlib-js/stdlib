@@ -330,6 +330,8 @@ TODO
 
       - [retext-readability](https://github.com/wooorm/retext-readability)
 
+      - [standard-markdown](https://github.com/zeke/standard-markdown)
+
       - [retext-lint-code](https://github.com/Qard/remark-lint-code)
 
         - uses eslint
@@ -973,7 +975,7 @@ TODO
 
 137. see [webtorrent-desktop](https://github.com/feross/webtorrent-desktop) for electron inspiration
 
-138. constant function? similar to identity function but as a factory?
+138. 
 
 139. svg components: move `methods/render.js` to `render/index.js`
 
@@ -1120,7 +1122,7 @@ TODO
 
 205. [print-object-as-tree](https://github.com/notatestuser/treeify) utility
 
-206. Consider something likes [credits](https://github.com/stefanjudis/credits-cli)
+206. Consider something like [credits](https://github.com/stefanjudis/credits-cli)
 
 207. NLP [data](https://confluence.cornell.edu/display/NLP/Data/) (note: ambiguous licensing)
 
@@ -1147,6 +1149,8 @@ TODO
 218. single-line-stream
 
 219. [snippet-stream](https://github.com/mafintosh/snippet-stream)
+
+220. [gcc-explorer](https://github.com/mattgodbolt/gcc-explorer)
 
 
 
@@ -1299,13 +1303,13 @@ TODO
 
 9. 
 
-10. [utils-pad-string](https://github.com/kgryte/utils-pad-string)
+10. 
 
 11. blas routines
 
-12. is-plain-object (?)
+12. 
 
-13. is-object
+13. 
 
 14. [svg2png](https://github.com/domenic/svg2png) without promises and cleaner
 
@@ -1313,9 +1317,9 @@ TODO
 
 15. 
 
-16. utils-deep-get
+16. 
 
-17. utils-deep-set
+17. 
 
 18. stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 
