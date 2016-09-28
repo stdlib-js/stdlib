@@ -1136,6 +1136,14 @@ TODO
 
 213. FAQ: what is decomposable software?
 
+214. Electoral college [box scores](https://www.archives.gov/federal-register/electoral-college/scores.html#1789)
+
+215. Electoral college votes [by state](https://www.archives.gov/federal-register/electoral-college/votes/votes_by_state.html)
+
+216. `datapackage.json` [schemas](https://github.com/frictionlessdata/schemas)
+
+217. Does `is-typed-array` need to address symbol [toStringTag](https://github.com/ljharb/is-typed-array/blob/master/index.js)? Ditto for [which-typed-array](https://github.com/ljharb/which-typed-array)?
+
 
 
 
