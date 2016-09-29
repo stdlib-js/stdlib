@@ -1395,7 +1395,7 @@ TODO
 
 40. `kmeans` as an `EventEmitter`
 
-41. bring `debug` in-house
+41. bring `debug` in-house; see also [diagnostics](https://github.com/bigpipe/diagnostics)
 
 42. [colorscales](https://github.com/bpostlethwaite/colormap)
 
