@@ -2,8 +2,8 @@
 
 // MODULES //
 
-var stdlib = require( './stdlib.js' );
-var dirname = require( stdlib+'@stdlib/utils/dirname' );
+var prefix = require( './stdlib.js' );
+var dirname = require( prefix+'@stdlib/utils/dirname' );
 
 
 // VARIABLES //

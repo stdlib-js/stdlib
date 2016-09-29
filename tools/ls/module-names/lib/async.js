@@ -3,8 +3,8 @@
 // MODULES //
 
 var glob = require( 'glob' );
-var stdlib = require( './stdlib.js' );
-var isFunction = require( stdlib+'@stdlib/utils/is-function' );
+var prefix = require( './stdlib.js' );
+var isFunction = require( prefix+'@stdlib/utils/is-function' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
@@ -16,10 +16,12 @@ var getRoot = require( './root.js' );
 /**
 * Asynchronously generates a list of stdlib module names.
 *
-* @param {Options} options - function options
+* @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for modules
 * @param {Callback} clbk - callback to invoke after finding modules
-* @throws {TypeError} must provide a function
+* @throws {TypeError} callback argument must be a function
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
 *
 * @example
 * ls( onList );

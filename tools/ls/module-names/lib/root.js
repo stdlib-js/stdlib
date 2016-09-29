@@ -3,12 +3,12 @@
 // MODULES //
 
 var path = require( 'path' );
-var stdlib = require( './stdlib.js' );
+var prefix = require( './stdlib.js' );
 
 
 // VARIABLES //
 
-var ROOT = path.resolve( __dirname, stdlib );
+var ROOT = path.resolve( __dirname, prefix );
 
 
 // ROOT //

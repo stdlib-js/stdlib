@@ -14,8 +14,10 @@ var getRoot = require( './root.js' );
 /**
 * Synchronously generates a list of stdlib module names.
 *
-* @param {Options} options - function options
+* @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for modules
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
 * @returns {StringArray} list of names
 *
 * @example

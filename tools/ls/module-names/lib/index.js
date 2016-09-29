@@ -26,8 +26,8 @@
 
 // MODULES //
 
-var stdlib = require( './stdlib.js' );
-var setReadOnly = require( stdlib+'@stdlib/utils/define-read-only-property' );
+var prefix = require( './stdlib.js' );
+var setReadOnly = require( prefix+'@stdlib/utils/define-read-only-property' );
 var ls = require( './async.js' );
 var sync = require( './sync.js' );
 
