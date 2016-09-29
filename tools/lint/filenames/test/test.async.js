@@ -5,10 +5,10 @@
 var tape = require( 'tape' );
 var join = require( 'path' ).join;
 var proxyquire = require( 'proxyquire' );
-var stdlib = require( './../lib/stdlib.js' );
-var noop = require( stdlib+'@stdlib/utils/noop' );
-var isArray = require( stdlib+'@stdlib/utils/is-array' );
-var isObjectArray = require( stdlib+'@stdlib/utils/is-object' ).isObjectArray;
+var prefix = require( './../lib/stdlib.js' );
+var noop = require( prefix+'@stdlib/utils/noop' );
+var isArray = require( prefix+'@stdlib/utils/is-array' );
+var isObjectArray = require( prefix+'@stdlib/utils/is-plain-object' ).isPlainObjectArray;
 var lint = require( './../lib/async.js' );
 
 
