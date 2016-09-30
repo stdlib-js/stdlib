@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Return a list of stdlib package names.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "stdlib-pkg-names": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "modules",
+    "names",
+    "packages",
+    "pkgs"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

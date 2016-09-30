@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "",
+  "description": "List installed package dependencies.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "installed-pkgs": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "deps",
+    "dependencies",
+    "pkgs",
+    "packages",
+    "modules",
+    "list",
+    "installed"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

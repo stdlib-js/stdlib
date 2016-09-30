@@ -207,39 +207,39 @@ To filter based on a file path,
 $ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
 ```
 
-##### Modules
+##### Packages
 
-To list all modules (as absolute paths),
+To list all packages (as absolute paths),
 
 ``` bash
-$ make list-modules
+$ make list-pkgs
 ```
 
 To filter based on a file path,
 
 ``` bash
-# List only the special function modules in the base math directory...
-$ make MODULES_FILTER=.*/math/base/special/.* list-modules
+# List only the special function packages in the base math directory...
+$ make PACKAGES_FILTER=.*/math/base/special/.* list-pkgs
 ```
 
-To list all module names under the `@stdlib` scope,
+To list all package names under the `@stdlib` scope,
 
 ``` bash
-$ make list-module-names
+$ make list-pkgs-names
 ```
 
-To list all module names under a `@stdlib` descendant directory,
+To list all package names under a `@stdlib` descendant directory,
 
 ``` bash
-$ make MODULE_NAMES_DIR=./@stdlib/math/base list-module-names
+$ make PACKAGES_DIR=./@stdlib/math/base list-pkgs-names
 ```
 
 
 ---
 
-#### Module Examples
+#### Package Examples
 
-To run module examples,
+To run package examples,
 
 ``` bash
 $ make examples
