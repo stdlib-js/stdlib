@@ -41,6 +41,7 @@
     "virtual-dom": "^2.1.1"
   },
   "devDependencies": {
+    "acorn": "^4.0.3",
     "browserify": "13.x.x",
     "chai": "^3.5.0",
     "david": "^9.0.0",
