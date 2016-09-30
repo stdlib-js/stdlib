@@ -10,9 +10,9 @@ Usage: make <cmd>
   make list-tests-fixtures    List all test fixture files.
   make list-benchmarks        List all benchmark files.
   make list-files             List files.
-  make list-modules           List all modules.
-  make list-module-names      List all module names.
-  make list-pkgs              List installed package dependencies.
+  make list-pkgs              List all packages.
+  make list-pkgs-names        List all package names.
+  make list-pkgs-installed    List installed packages.
   make list-licenses          List licenses of installed package dependencies.
   make list-deps-licenses     List root package dependency licenses.
   make list-licenses-summary  Generate a license summary.

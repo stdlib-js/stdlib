@@ -1,0 +1,11 @@
+
+Usage: installed-pkgs [options]
+
+Options:
+
+  -h,    --help                      Print this message.
+  -V,    --version                   Print the package version.
+         --dir dirname               Root directory from which to search.
+         --depth level               Search depth.
+         --no-dev                    Exclude dev dependencies.
+

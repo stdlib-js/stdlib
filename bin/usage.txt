@@ -8,6 +8,6 @@ Options:
 Commands:
 
   help [command]               Print a help message.
-  ls                           List module names.
+  ls                           List package names.
   repl                         Start a REPL.
 

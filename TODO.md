@@ -1152,6 +1152,8 @@ TODO
 
 220. [gcc-explorer](https://github.com/mattgodbolt/gcc-explorer)
 
+221. password datasets [1](https://github.com/skyzyx/bad-passwords) and [2](https://github.com/danielmiessler/SecLists)
+
 
 
 
