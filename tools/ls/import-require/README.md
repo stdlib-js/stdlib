@@ -29,6 +29,11 @@ var results = ls( src );
 console.dir( results );
 ```
 
+The returned `object` has the following fields:
+
+* __literals__: an `array` of literal `string` import and require paths.
+* __expressions__: an `array` of import and require path expressions.
+
 <!-- </usage> -->
 
 
