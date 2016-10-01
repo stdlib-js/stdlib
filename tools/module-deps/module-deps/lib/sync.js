@@ -22,6 +22,7 @@ var analyze = require( './analyze.js' );
 * @param {string} [options.pattern] - file glob pattern
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
+* @returns {(ObjectArray|EmptyArray)} results
 *
 * @example
 * var results = ls( onList );
