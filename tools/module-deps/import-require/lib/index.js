@@ -3,11 +3,11 @@
 /**
 * List import and require paths.
 *
-* @module @stdlib/tools/ls/import-require
+* @module @stdlib/tools/module-deps/import-require
 *
 * @example
 * var readFile = require( '@stdlib/fs/read-file' ).sync;
-* var ls = require( '@stdlib/tools/ls/import-require' );
+* var ls = require( '@stdlib/tools/module-deps/import-require' );
 *
 * var src = readFile( __filename );
 * var results = ls( src );
