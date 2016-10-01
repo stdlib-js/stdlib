@@ -8,6 +8,7 @@ var prefix = require( './stdlib.js' );
 var isFunction = require( prefix+'@stdlib/utils/is-function' );
 var copy = require( prefix+'@stdlib/utils/copy' );
 var readFileList = require( prefix+'@stdlib/fs/read-file-list' );
+var cwd = require( prefix+'@stdlib/utils/cwd' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var analyze = require( './analyze.js' );
@@ -60,7 +61,7 @@ function ls() {
 	debug( 'Options: %s', JSON.stringify( opts ) );
 
 	gopts = {
-		'cwd': opts.dir || '',
+		'cwd': opts.dir || cwd(),
 		'realpath': true // return absolute file paths
 	};
 	debug( 'Glob options: %s', JSON.stringify( gopts ) );
