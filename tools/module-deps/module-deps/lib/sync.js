@@ -21,7 +21,7 @@ var analyze = require( './analyze.js' );
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for files
-* @param {string} [options.pattern] - file glob pattern
+* @param {string} [options.pattern='**\/*.js'] - file glob pattern
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @returns {(ObjectArray|EmptyArray)} results

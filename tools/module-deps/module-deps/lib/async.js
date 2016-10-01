@@ -22,7 +22,7 @@ var analyze = require( './analyze.js' );
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for files
-* @param {string} [options.pattern] - file glob pattern
+* @param {string} [options.pattern='**\/*.js'] - file glob pattern
 * @param {Callback} clbk - callback to invoke upon completion
 * @throws {TypeError} callback argument must be a function
 * @throws {TypeError} options argument must be an object
