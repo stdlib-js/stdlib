@@ -39,11 +39,21 @@ The returned `object` has the following fields:
 
 <!-- <examples> -->
 
-<!-- ## Examples
+## Examples
 
 ``` javascript
+var readFile = require( '@stdlib/fs/read-file' ).sync;
+var ls = require( '/path/to/stdlib/tools/ls/import-require' );
 
-``` -->
+var file = readFile( __filename );
+var results = ls( file );
+
+console.log( 'Literals:' );
+console.dir( results.literals );
+
+console.log( 'Expressions:' );
+console.dir( results.expressions );
+```
 
 <!-- </examples> -->
 

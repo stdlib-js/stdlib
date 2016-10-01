@@ -7,4 +7,8 @@ var ls = require( './../lib' );
 var file = readFile( __filename );
 var results = ls( file );
 
-console.dir( results );
+console.log( 'Literals:' );
+console.dir( results.literals );
+
+console.log( 'Expressions:' );
+console.dir( results.expressions );
