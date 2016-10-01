@@ -66,13 +66,41 @@ tape( 'if provided a `dir` option which is not a `string`, the function returns 
 	t.end();
 });
 
+tape( 'if provided a `pattern` option which is not a `string`, the function returns a type error', function test( t ) {
+	var values;
+	var opts;
+	var err;
+	var i;
+
+	values = [
+		5,
+		NaN,
+		true,
+		null,
+		undefined,
+		[],
+		{},
+		function(){}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		opts = {};
+		err = validate( opts, {
+			'pattern': values[i]
+		});
+		t.equal( err instanceof TypeError, true, 'returns a type error when provided '+values[i] );
+	}
+	t.end();
+});
+
 tape( 'the function returns `null` if all options are valid', function test( t ) {
 	var opts;
 	var obj;
 	var err;
 
 	opts = {
-		'dir': './@stdlib/beep/boop'
+		'dir': './@stdlib/beep/boop',
+		'pattern': '**/*.js'
 	};
 	obj = {};
 	err = validate( obj, opts );
