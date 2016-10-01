@@ -11,8 +11,8 @@ var ls = require( './../lib' );
 
 // FIXTURES //
 
-var REQUIRES = readFile( join( __dirname, './fixtures/require.txt' ) );
-var IMPORTS = readFile( join( __dirname, './fixtures/import.txt' ) );
+var REQUIRES = readFile( join( __dirname, './fixtures/requires.txt' ) );
+var IMPORTS = readFile( join( __dirname, './fixtures/imports.txt' ) );
 
 
 // TESTS //
