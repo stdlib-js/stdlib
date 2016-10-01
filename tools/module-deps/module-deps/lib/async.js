@@ -3,6 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'module-deps:async' );
+var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' );
 var prefix = require( './stdlib.js' );
 var isFunction = require( prefix+'@stdlib/utils/is-function' );
@@ -42,6 +43,7 @@ function ls() {
 	var gopts;
 	var clbk;
 	var opts;
+	var dir;
 	var err;
 
 	opts = copy( defaults );
@@ -59,9 +61,13 @@ function ls() {
 		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `' + clbk + '`.' );
 	}
 	debug( 'Options: %s', JSON.stringify( opts ) );
-
+	if ( opts.dir ) {
+		dir = resolve( cwd(), opts.dir );
+	} else {
+		dir = cwd();
+	}
 	gopts = {
-		'cwd': opts.dir || cwd(),
+		'cwd': dir,
 		'realpath': true // return absolute file paths
 	};
 	debug( 'Glob options: %s', JSON.stringify( gopts ) );

@@ -3,6 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'module-deps:sync' );
+var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' ).sync;
 var prefix = require( './stdlib.js' );
 var copy = require( prefix+'@stdlib/utils/copy' );
@@ -39,6 +40,7 @@ function ls( options ) {
 	var names;
 	var files;
 	var opts;
+	var dir;
 	var err;
 
 	opts = copy( defaults );
@@ -49,9 +51,13 @@ function ls( options ) {
 		}
 	}
 	debug( 'Options: %s', JSON.stringify( opts ) );
-
+	if ( opts.dir ) {
+		dir = resolve( cwd(), opts.dir );
+	} else {
+		dir = cwd();
+	}
 	gopts = {
-		'cwd': opts.dir || cwd(),
+		'cwd': dir,
 		'realpath': true // return absolute file paths
 	};
 	debug( 'Glob options: %s', JSON.stringify( gopts ) );

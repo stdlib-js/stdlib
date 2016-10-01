@@ -42,7 +42,7 @@ Each file is represented by an `object` with the following fields:
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for files.
+* __dir__: root directory from which to search for files. May be either an absolute or relative directory path. Default: current working directory.
 * __pattern__: file glob pattern. Default: `**/*.js`.
 
 By default, the function will search for files in the current working directory. To specify an alternative directory, set the `dir` option.
@@ -91,7 +91,7 @@ var results = ls.sync();
 // returns [{...},{...},...]
 ```
 
-The function accepts the same `options` as [`ls()`](#ls).
+The function accepts the same `options` as [`ls()`](#ls) above.
 
 
 <!-- </usage> -->
