@@ -1154,7 +1154,7 @@ TODO
 
 221. password datasets [1](https://github.com/skyzyx/bad-passwords) and [2](https://github.com/danielmiessler/SecLists)
 
-222. [is-utf8](https://github.com/wayfind/is-utf8/blob/master/is-utf8.js), [strip-bom-buf](https://github.com/sindresorhus/strip-bom-buf/blob/master/index.js), [strip-bom](https://github.com/sindresorhus/strip-bom/blob/master/index.js)
+222. [is-utf8](https://github.com/wayfind/is-utf8/blob/master/is-utf8.js), [is-valid-utf8](http://stackoverflow.com/questions/28270310/how-to-easily-detect-utf8-encoding-in-the-string), [strip-bom-buf](https://github.com/sindresorhus/strip-bom-buf/blob/master/index.js), [strip-bom](https://github.com/sindresorhus/strip-bom/blob/master/index.js)
 
 223. [read-glob](https://github.com/shinnn/node-read-glob)
 
@@ -1612,6 +1612,10 @@ Will need a `tools` directory in individual repositories to
 
      - how will that work in terms of dep install within the context of the larger project?
      - [module-deps](https://github.com/substack/module-deps)
+
+   * [list-broken-requires](https://github.com/Jam3/list-broken-requires/blob/master/index.js)
+
+   * [detect-import-require](https://github.com/Jam3/detect-import-require)
 
 7. can updating the version be automated?
 
