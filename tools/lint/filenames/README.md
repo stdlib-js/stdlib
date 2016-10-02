@@ -152,7 +152,7 @@ Options:
 
 ### Notes
 
-* Filenames which fail are printed to `stderr` as newline-delimited JSON.
+* Filenames which fail are printed to `stderr` as newline-delimited JSON ([NDJSON][ndjson]).
 
 <!-- </notes> -->
 
@@ -174,5 +174,7 @@ $ lint-filenames
 
 
 <!-- <links> -->
+
+[ndjson]: http://ndjson.org/
 
 <!-- </links> -->

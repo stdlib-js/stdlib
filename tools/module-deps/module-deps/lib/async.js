@@ -3,12 +3,16 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'module-deps:async' );
+var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' );
 var prefix = require( './stdlib.js' );
 var isFunction = require( prefix+'@stdlib/utils/is-function' );
 var copy = require( prefix+'@stdlib/utils/copy' );
+var readFileList = require( prefix+'@stdlib/fs/read-file-list' );
+var cwd = require( prefix+'@stdlib/utils/cwd' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
+var analyze = require( './analyze.js' );
 
 
 // LS //
@@ -17,9 +21,9 @@ var validate = require( './validate.js' );
 * Asynchronously generates a list of module dependencies.
 *
 * @param {Options} [options] - function options
-* @param {string} [options.dir] - root directory from which to search for modules
-* @param {string} [options.pattern] - filepath pattern
-* @param {Callback} clbk - callback to invoke after finding module dependencies
+* @param {string} [options.dir] - root directory from which to search for files
+* @param {string} [options.pattern='**\/*.js'] - file glob pattern
+* @param {Callback} clbk - callback to invoke upon completion
 * @throws {TypeError} callback argument must be a function
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
@@ -27,11 +31,11 @@ var validate = require( './validate.js' );
 * @example
 * ls( onList );
 *
-* function onList( error, names ) {
+* function onList( error, results ) {
 *     if ( error ) {
 *         throw error;
 *     }
-*     console.dir( names );
+*     console.dir( results );
 * }
 */
 function ls() {
@@ -39,6 +43,7 @@ function ls() {
 	var gopts;
 	var clbk;
 	var opts;
+	var dir;
 	var err;
 
 	opts = copy( defaults );
@@ -56,9 +61,13 @@ function ls() {
 		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `' + clbk + '`.' );
 	}
 	debug( 'Options: %s', JSON.stringify( opts ) );
-
+	if ( opts.dir ) {
+		dir = resolve( cwd(), opts.dir );
+	} else {
+		dir = cwd();
+	}
 	gopts = {
-		'cwd': opts.dir || '',
+		'cwd': dir,
 		'realpath': true // return absolute file paths
 	};
 	debug( 'Glob options: %s', JSON.stringify( gopts ) );
@@ -74,13 +83,44 @@ function ls() {
 	* @param {StringArray} names - list of matching files
 	*/
 	function onGlob( error, names ) {
+		var opts;
 		if ( error ) {
 			debug( 'Encountered an error when searching for matching files: %s', error.message );
 			return clbk( error );
 		}
+		if ( names.length === 0 ) {
+			debug( 'Found 0 matching files.' );
+			return clbk( null, [] );
+		}
 		debug( 'Found %d matching files: %s', names.length, names.join( ',' ) );
-		read( names, onRead );
+
+		debug( 'Reading file contents...' );
+		opts = {
+			'encoding': 'utf8'
+		};
+		readFileList( names, opts, onRead );
 	} // end FUNCTION onGlob()
+
+	/**
+	* Callback invoked upon reading all file contents.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {ObjectArray} files - file contents
+	*/
+	function onRead( error, files ) {
+		if ( error ) {
+			debug( 'Encountered an error when reading file contents: %s', error.message );
+			return clbk( error );
+		}
+		debug( 'Finished reading file contents.' );
+
+		debug( 'Analyzing file ASTs...' );
+		files = analyze( files );
+		debug( 'Finished analysis.' );
+
+		clbk( null, files );
+	} // end FUNCTION onRead()
 } // end FUNCTION ls()
 
 

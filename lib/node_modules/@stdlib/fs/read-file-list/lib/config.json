@@ -1,0 +1,4 @@
+{
+	"max_retries": 100,
+	"max_delay": 1800000
+}

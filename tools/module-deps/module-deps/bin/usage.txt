@@ -1,0 +1,10 @@
+
+Usage: module-deps [options]
+
+Options:
+
+  -h,    --help                      Print this message.
+  -V,    --version                   Print the package version.
+         --dir dirname               Root directory from which to search.
+         --pattern pattern           File glob pattern.
+

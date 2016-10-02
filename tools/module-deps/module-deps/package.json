@@ -1,0 +1,41 @@
+{
+  "name": "",
+  "version": "",
+  "description": "List module dependencies.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "module-deps": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "import",
+    "require",
+    "requires",
+    "commonjs",
+    "common",
+    "js",
+    "cjs",
+    "ast",
+    "find",
+    "detect",
+    "packages",
+    "pkgs",
+    "pkg",
+    "module",
+    "modules",
+    "dependencies",
+    "deps"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

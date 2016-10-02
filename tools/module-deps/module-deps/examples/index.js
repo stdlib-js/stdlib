@@ -4,9 +4,9 @@ var ls = require( './../lib' );
 
 ls( onList );
 
-function onList( error, names ) {
+function onList( error, results ) {
 	if ( error ) {
 		throw error;
 	}
-	console.log( names.join( '\n' ) );
+	console.dir( results );
 }

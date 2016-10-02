@@ -1154,6 +1154,11 @@ TODO
 
 221. password datasets [1](https://github.com/skyzyx/bad-passwords) and [2](https://github.com/danielmiessler/SecLists)
 
+222. [is-utf8](https://github.com/wayfind/is-utf8/blob/master/is-utf8.js), [strip-bom-buf](https://github.com/sindresorhus/strip-bom-buf/blob/master/index.js), [strip-bom](https://github.com/sindresorhus/strip-bom/blob/master/index.js)
+
+223. [read-glob](https://github.com/shinnn/node-read-glob)
+
+224. bring `minimist` in-house
 
 
 
