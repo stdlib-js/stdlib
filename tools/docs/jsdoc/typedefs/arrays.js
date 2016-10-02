@@ -91,6 +91,12 @@
 */
 
 /**
+* An array containing only other arrays.
+*
+* @typedef {Array<Array>} ArrayArray
+*/
+
+/**
 * An empty array.
 *
 * @typedef {Array} EmptyArray
