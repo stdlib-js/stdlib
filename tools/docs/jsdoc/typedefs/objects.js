@@ -5,6 +5,12 @@
 */
 
 /**
+* A plain object; i.e., either `{}` or an object created via `Object.create( null )`.
+*
+* @typedef {Object} PlainObject
+*/
+
+/**
 * A value which is object-like. Basically, any value which is not `null` and, when operated on by `typeof`, returns `object`.
 *
 * @typedef {Object} ObjectLike
@@ -13,7 +19,7 @@
 /**
 * An object which is valid JSON.
 *
-* @typedef {Object} JSON
+* @typedef {PlainObject} JSON
 *
 * @see [JSON]{@link http://www.json.org/}
 */
@@ -21,7 +27,7 @@
 /**
 * An object containing function options.
 *
-* @typedef {Object} Options
+* @typedef {PlainObject} Options
 */
 
 /**
