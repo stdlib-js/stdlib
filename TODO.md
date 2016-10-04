@@ -1162,6 +1162,8 @@ TODO
 
 225. bring `JSON.parse` in-house to provide better error messages. Can default to native and, on error, re-parse with userland implementation to provide more extensive error messaging.
 
+226. see [static-eval](https://github.com/substack/static-eval)
+
 
 ---
 
