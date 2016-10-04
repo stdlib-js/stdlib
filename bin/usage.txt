@@ -9,5 +9,6 @@ Commands:
 
   help [command]               Print a help message.
   ls                           List package names.
+  tree                         Show package tree.
   repl                         Start a REPL.
 
