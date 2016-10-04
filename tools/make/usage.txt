@@ -12,6 +12,7 @@ Usage: make <cmd>
   make list-files             List files.
   make list-pkgs              List all packages.
   make list-pkgs-names        List all package names.
+  make list-pkgs-namespaces   List all package namespaces.
   make list-pkgs-installed    List installed packages.
   make list-licenses          List licenses of installed package dependencies.
   make list-deps-licenses     List root package dependency licenses.
