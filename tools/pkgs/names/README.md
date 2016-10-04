@@ -1,6 +1,6 @@
 # Package Names
 
-> Return a list of stdlib package names.
+> List of stdlib package names.
 
 
 <!-- <usage> -->

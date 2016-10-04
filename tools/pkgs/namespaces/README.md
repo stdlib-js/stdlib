@@ -1,6 +1,6 @@
 # Namespaces
 
-> Return a list of stdlib namespaces.
+> List stdlib namespaces.
 
 
 <!-- <usage> -->

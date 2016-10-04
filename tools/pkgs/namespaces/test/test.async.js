@@ -85,7 +85,7 @@ tape( 'if provided a callback argument which is not a function, the function thr
 
 tape( 'the function returns an error to a provided callback if an error is encountered while searching a directory', function test( t ) {
 	var ls = proxyquire( './../lib/async.js', {
-		'./../../pkg-names': pkgNames
+		'./../../names': pkgNames
 	});
 
 	ls( clbk );
