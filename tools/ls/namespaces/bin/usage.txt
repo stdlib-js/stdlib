@@ -1,0 +1,9 @@
+
+Usage: stdlib-namespaces [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --dir dirname         Root directory from which to search.
+

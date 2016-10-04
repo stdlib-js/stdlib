@@ -1,6 +1,6 @@
-# Package Names
+# Namespaces
 
-> Return a list of stdlib package names.
+> Return a list of stdlib namespaces.
 
 
 <!-- <usage> -->
@@ -8,12 +8,12 @@
 ## Usage
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/ls/pkg-names' );
+var ls = require( '/path/to/stdlib/tools/ls/namespaces' );
 ```
 
 #### ls( \[options,\] clbk )
 
-Asynchronously returns a list of stdlib package names.
+Asynchronously returns a list of stdlib namespaces.
 
 ``` javascript
 ls( onList );
@@ -28,7 +28,7 @@ function onList( error, names ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
+* __dir__: root directory from which to search for namespaces. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
 
 To search from a descendant directory, set the `dir` option.
 
@@ -50,7 +50,7 @@ function onList( error, names ) {
 
 #### ls.sync( \[options\] )
 
-Synchronously returns a list of stdlib package names.
+Synchronously returns a list of stdlib namespaces.
 
 ``` javascript
 var names = ls.sync();
@@ -66,7 +66,7 @@ The function accepts the same `options` as `ls()` above.
 
 ## Notes
 
-* The function only returns packages under the `@stdlib` scope.
+* The function only returns namespaces under the `@stdlib` scope.
 
 <!-- </notes> -->
 
@@ -76,7 +76,7 @@ The function accepts the same `options` as `ls()` above.
 ## Examples
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/ls/pkg-names' );
+var ls = require( '/path/to/stdlib/tools/ls/namespaces' );
 
 ls( onList );
 
@@ -102,7 +102,7 @@ function onList( error, names ) {
 ### Usage
 
 ``` bash
-Usage: stdlib-pkg-names [options]
+Usage: stdlib-namespaces [options]
 
 Options:
 
@@ -118,7 +118,7 @@ Options:
 ### Examples
 
 ``` bash
-$ stdlib-pkg-names
+$ stdlib-namespaces
 # => <package_name>
 # => <package_name>
 # => ...

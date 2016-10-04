@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Return a list of stdlib namespaces.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "stdlib-namespaces": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "modules",
+    "names",
+    "packages",
+    "pkgs",
+    "namespaces"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
