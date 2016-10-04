@@ -2,11 +2,11 @@
 
 // MODULES //
 
-var path = require( 'path' );
 var prefix = require( './stdlib.js' );
 var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 var isBoolean = require( prefix+'@stdlib/utils/is-boolean' ).isPrimitive;
 var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
+var PATH_SEP = require( prefix+'@stdlib/utils/path-sep' );
 
 
 // FILTER //
@@ -35,7 +35,7 @@ function filter( names ) {
 	root = {};
 	for ( i = 0; i < names.length; i++ ) {
 		trie = root;
-		parts = names[ i ].split( path.sep );
+		parts = names[ i ].split( PATH_SEP );
 		len = parts.length;
 		for ( j = 0; j < len; j++ ) {
 			key = parts[ j ];

@@ -3,9 +3,11 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-html-equation-src-urls:transformer' );
+var path = require( 'path' );
 var rawgit = require( 'rawgit-url' );
 var visit = require( 'unist-util-visit' );
-var path = require( 'path' );
+var prefix = require( './stdlib.js' );
+var PATH_SEP = require( prefix+'@stdlib/utils/path-sep' );
 var git = require( './git.js' );
 
 
@@ -62,7 +64,7 @@ function getTransformer( opts ) {
 				debug( 'Absolute filepath: %s', fpath );
 
 				// Get file path relative to git repository:
-				rpath = fpath.replace( git.dir + path.sep, '' );
+				rpath = fpath.replace( git.dir + PATH_SEP, '' );
 				debug( 'Relative filepath: %s', rpath );
 
 				// Retrieve rawgit URL:

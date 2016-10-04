@@ -1164,6 +1164,10 @@ TODO
 
 226. see [static-eval](https://github.com/substack/static-eval)
 
+227. [farmers market geo data](https://catalog.data.gov/dataset/farmers-markets-geographic-data)
+
+228. [perf](https://github.com/nodejs/node/blob/master/lib/path.js) improvements for `dirname` and `extname`.
+
 
 ---
 
@@ -1281,7 +1285,7 @@ TODO
 
 #### Numeric Computing
 
-1. 
+1. [node-markov](https://github.com/substack/node-markov)
 2. include links to survey in main README
 3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
 
