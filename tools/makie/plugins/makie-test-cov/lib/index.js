@@ -78,6 +78,7 @@ function plugin( dir, cwd, subpath ) {
 
 	// Environment variables:
 	if ( subpath ) {
+		subpath = subpath.replace( 'lib/node_modules/', '' );
 		args.push( 'TESTS_FILTER=.*/'+subpath+'/.*' );
 	}
 	// Target:
