@@ -3,10 +3,10 @@
 /**
 * List stdlib namespaces.
 *
-* @module @stdlib/tools/ls/namespaces
+* @module @stdlib/tools/pkgs/namespaces
 *
 * @example
-* var ls = require( '@stdlib/tools/ls/namespaces' );
+* var ls = require( '@stdlib/tools/pkgs/namespaces' );
 *
 * ls( onList );
 *
@@ -18,7 +18,7 @@
 * }
 *
 * @example
-* var ls = require( '@stdlib/tools/ls/namespaces' );
+* var ls = require( '@stdlib/tools/pkgs/namespaces' );
 *
 * var names = ls.sync();
 * // returns [...]

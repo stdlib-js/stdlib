@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var pkgNames = require( './../../pkg-names' ).sync;
+var pkgNames = require( './../../names' ).sync;
 var filter = require( './filter.js' );
 var validate = require( './validate.js' );
 

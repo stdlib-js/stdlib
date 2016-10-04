@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var pkgNames = require( './../../pkg-names' );
+var pkgNames = require( './../../names' );
 var prefix = require( './stdlib.js' );
 var isFunction = require( prefix+'@stdlib/utils/is-function' );
 var validate = require( './validate.js' );

@@ -3,10 +3,10 @@
 /**
 * List stdlib package names.
 *
-* @module @stdlib/tools/ls/pkg-names
+* @module @stdlib/tools/pkgs/names
 *
 * @example
-* var ls = require( '@stdlib/tools/ls/pkg-names' );
+* var ls = require( '@stdlib/tools/pkgs/names' );
 *
 * ls( onList );
 *
@@ -18,7 +18,7 @@
 * }
 *
 * @example
-* var ls = require( '@stdlib/tools/ls/pkg-names' );
+* var ls = require( '@stdlib/tools/pkgs/names' );
 *
 * var names = ls.sync();
 * // returns [...]
