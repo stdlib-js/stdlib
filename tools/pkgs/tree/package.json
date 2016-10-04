@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Generate a stdlib package tree.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "stdlib-pkg-tree": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "modules",
+    "names",
+    "packages",
+    "pkgs",
+    "tree",
+    "hierarchy"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

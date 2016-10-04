@@ -112,7 +112,8 @@ if ( cmd === 'help' ) {
 } else {
 	if (
 		cmd === 'repl' ||
-		cmd === 'ls'
+		cmd === 'ls' ||
+		cmd === 'ls-tree'
 	) {
 		cmd = commands[ cmd ];
 		cmd = path.resolve( __dirname, '..', cmd );

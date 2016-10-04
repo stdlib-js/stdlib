@@ -13,6 +13,7 @@ Usage: make <cmd>
   make list-pkgs              List all packages.
   make list-pkgs-names        List all package names.
   make list-pkgs-namespaces   List all package namespaces.
+  make list-pkgs-tree         List all packages as a tree.
   make list-pkgs-installed    List installed packages.
   make list-licenses          List licenses of installed package dependencies.
   make list-deps-licenses     List root package dependency licenses.
