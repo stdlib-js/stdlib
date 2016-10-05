@@ -1168,6 +1168,10 @@ TODO
 
 228. [perf](https://github.com/nodejs/node/blob/master/lib/path.js) improvements for `dirname` and `extname`.
 
+229. A constrained RegExp [implementation](https://swtch.com/~rsc/regexp/regexp1.html)?
+
+230. [noderify](https://github.com/dominictarr/noderify) and [depject](https://github.com/dominictarr/depject) -> static linking for JavaScript
+
 
 ---
 
