@@ -13,7 +13,7 @@
 ## Usage
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/module-deps/module-deps' );
+var ls = require( '/path/to/stdlib/tools/module-deps' );
 ```
 
 <a name="ls"></a>
@@ -102,7 +102,7 @@ The function accepts the same `options` as [`ls()`](#ls) above.
 ## Examples
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/module-deps/module-deps' );
+var ls = require( '/path/to/stdlib/tools/module-deps' );
 
 ls( onList );
 
