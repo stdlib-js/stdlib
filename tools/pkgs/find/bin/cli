@@ -1,0 +1,102 @@
+#!/usr/bin/env node
+'use strict';
+
+// MODULES //
+
+var fs = require( 'fs' );
+var path = require( 'path' );
+var parseArgs = require( 'minimist' );
+var pkg = require( './../package.json' );
+var opts = require( './opts.json' );
+var main = require( './../lib' );
+
+
+// FUNCTIONS //
+
+/**
+* Prints usage information.
+*
+* @private
+* @example
+* help();
+* // => '...'
+*/
+function help() {
+	var fpath = path.join( __dirname, 'usage.txt' );
+	fs.createReadStream( fpath )
+		.pipe( process.stdout )
+		.on( 'close', onClose );
+
+	function onClose() {
+		process.exit( 0 );
+	}
+} // end FUNCTION help()
+
+/**
+* Prints the package version.
+*
+* @private
+* @example
+* version();
+* // => '#.#.#'
+*/
+function version() {
+	var msg = pkg.version.toString()+'\n';
+	process.stdout.write( msg, 'utf8' );
+	process.exit( 0 );
+} // end FUNCTION version()
+
+
+// VARIABLES //
+
+var args;
+
+
+// INIT //
+
+process.title = pkg.name;
+process.stdout.on( 'error', process.exit );
+
+
+// ARGUMENTS //
+
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args.help ) {
+	return help();
+}
+if ( args.version ) {
+	return version();
+}
+opts = {};
+if ( args.pattern ) {
+	opts.pattern = args.pattern;
+}
+if ( args.ignore ) {
+	if ( typeof args.ignore === 'string' ) {
+		opts.ignore = [ args.ignore ];
+	} else {
+		opts.ignore = args.ignore;
+	}
+}
+opts.dir = args._[ 0 ];
+
+
+// MAIN //
+
+main( opts, onPkgs );
+
+/**
+* Callback invoked after searching for packages.
+*
+* @private
+* @param {(Error|null)} error - error object
+* @param {StringArray} pkgs - list of packages
+* @throws {Error} unexpected error
+*/
+function onPkgs( error, pkgs ) {
+	if ( error ) {
+		throw error;
+	}
+	console.log( pkgs.join( '\n' ) );
+} // end FUNCTION onPkgs()

@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Find packages.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "find-pkgs": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "find",
+    "search",
+    "modules",
+    "names",
+    "packages",
+    "pkgs"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
