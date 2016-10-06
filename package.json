@@ -62,6 +62,7 @@
     "remark-cli": "^2.0.0",
     "remark-lint": "^5.0.0",
     "remark-validate-links": "^5.0.0",
+    "resolve": "^1.1.7",
     "semver": "^5.3.0",
     "spdx-license-ids": "^1.2.2",
     "tap-spec": "4.x.x",
