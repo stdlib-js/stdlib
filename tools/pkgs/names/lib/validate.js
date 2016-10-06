@@ -16,7 +16,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @private
 * @param {Object} opts - destination object
 * @param {Options} options - function options
-* @param {string} [options.dir] - root directory from which to search for modules
+* @param {string} [options.dir] - root directory from which to search for packages
 * @returns {(Error|null)} error object or null
 *
 * @example
