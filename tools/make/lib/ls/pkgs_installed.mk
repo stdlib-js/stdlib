@@ -5,7 +5,7 @@
 NODE ?= node
 
 # Define the path to the executable to list installed package dependencies:
-LIST_INSTALLED_PACKAGES ?= $(TOOLS_DIR)/ls/installed-pkgs/bin/cli
+LIST_INSTALLED_PACKAGES ?= $(TOOLS_DIR)/pkgs/installed/bin/cli
 
 # Define the command flags:
 LIST_INSTALLED_PACKAGES_FLAGS ?= \

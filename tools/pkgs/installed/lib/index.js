@@ -3,10 +3,10 @@
 /**
 * List installed package dependencies.
 *
-* @module @stdlib/tools/ls/installed-pkgs
+* @module @stdlib/tools/pkgs/installed
 *
 * @example
-* var pkgs = require( '@stdlib/tools/ls/installed-pkgs' );
+* var pkgs = require( '@stdlib/tools/pkgs/installed' );
 *
 * pkgs( onPkgs );
 *
@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var pkgs = require( './installed_pkgs.js' );
+var pkgs = require( './installed.js' );
 
 
 // EXPORTS //

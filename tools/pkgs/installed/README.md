@@ -13,7 +13,7 @@
 ## Usage
 
 ``` javascript
-var pkgs = require( '/path/to/stdlib/tools/ls/installed-pkgs' );
+var pkgs = require( '/path/to/stdlib/tools/pkgs/installed' );
 ```
 
 #### pkgs( \[options\], clbk )

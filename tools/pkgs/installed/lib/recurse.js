@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'pkgs:recurse' );
+var debug = require( 'debug' )( 'installed-pkgs:recurse' );
 var getKeys = require( 'object-keys' ).shim();
 var prefix = require( './stdlib.js' );
 var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );

@@ -1172,6 +1172,16 @@ TODO
 
 230. [noderify](https://github.com/dominictarr/noderify) and [depject](https://github.com/dominictarr/depject) -> static linking for JavaScript
 
+231. [`fs-walk`](https://github.com/coolaj86/node-walk) (see also [`os.walk`](https://docs.python.org/3/library/os.html#os.walk)); [`fs-walk-folder-tree`](https://github.com/overlookmotel/walk-folder-tree); [`module-walker`](https://github.com/kaelzhang/module-walker)
+
+232. [readdirp](https://github.com/thlorenz/readdirp), mkdirp, rmdirp, etc.
+
+233. dependency docs (static site; use simple server)
+
+234. mk recipe to read a dep readme and launch in an electron window/browser
+
+235. nlp levi dist
+
 
 ---
 
