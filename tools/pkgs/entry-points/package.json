@@ -1,11 +1,11 @@
 {
   "name": "",
   "version": "",
-  "description": "Resolve package dependencies.",
+  "description": "Resolve package entry points.",
   "author": {},
   "contributors": [],
   "bin": {
-    "pkg-deps": "./bin/cli"
+    "pkg-entry-points": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",
@@ -14,15 +14,13 @@
     "stdlib",
     "tools",
     "tool",
-    "list",
-    "ls",
     "find",
     "search",
     "modules",
     "packages",
     "pkgs",
-    "dependencies",
-    "deps",
+    "entry",
+    "points",
     "resolve"
   ],
   "bugs": {},
