@@ -22,7 +22,7 @@ var getEntries = require( './entries.js' );
 *
 * @param {StringArray} pkgs - list of packages
 * @param {Options} [options] - function options
-* @param {string} [options.dir] - base directory from which to resolve packages
+* @param {string} [options.dir] - root directory from which to resolve packages
 * @param {Callback} clbk - callback to invoke after resolving entry points
 * @throws {TypeError} first argument must be a string array
 * @throws {TypeError} callback argument must be a function

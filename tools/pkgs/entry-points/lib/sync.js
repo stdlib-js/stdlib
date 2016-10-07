@@ -21,7 +21,7 @@ var getEntries = require( './entries.sync.js' );
 *
 * @param {StringArray} pkgs - list of packages
 * @param {Options} [options] - function options
-* @param {string} [options.dir] - base directory from which to resolve packages
+* @param {string} [options.dir] - root directory from which to resolve packages
 * @throws {TypeError} first argument must be a string array
 * @throws {TypeError} callback argument must be a function
 * @throws {TypeError} options argument must be an object
