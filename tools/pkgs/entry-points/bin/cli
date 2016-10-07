@@ -134,7 +134,7 @@ if ( !process.stdin.isTTY ) {
 }
 pkgs = args._;
 if ( pkgs.length === 0 ) {
-	err = new Error( 'no input. Must provide a list of packages to resolve as command-line arguments or via `stdin`.' );
+	err = new Error( 'no input. Must provide a list of packages as command-line arguments or via `stdin`.' );
 	return exit( err.message );
 }
 process.nextTick( next );
