@@ -138,6 +138,8 @@ tape( 'the function returns `null` if all options are valid', function test( t )
 
 	t.equal( err, null, 'returns null' );
 	t.equal( obj.dir, opts.dir, 'sets dir option' );
+	t.equal( obj.pattern, opts.pattern, 'sets pattern option' );
+	t.deepEqual( obj.ignore, opts.ignore, 'sets ignore option' );
 
 	t.end();
 });
