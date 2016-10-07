@@ -66,7 +66,7 @@ function exit( msg ) {
 * @param {Object} results - results
 */
 function printNDJSON( results ) {
-	console.dir( JSON.stringify( results ) );
+	console.log( JSON.stringify( results ) );
 } // end FUNCTION printNDJSON()
 
 /**
