@@ -21,7 +21,8 @@
     "pkgs",
     "entry",
     "points",
-    "resolve"
+    "resolve",
+    "main"
   ],
   "bugs": {},
   "dependencies": {},
