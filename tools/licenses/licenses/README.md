@@ -114,7 +114,7 @@ Options:
 
 ### Notes
 
-* License results are printed to `stdout` as newline-delimited JSON.
+* License results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 <!-- </notes> -->
 
@@ -137,5 +137,7 @@ $ DEBUG=* licenses
 
 
 <!-- <links> -->
+
+[ndjson]: http://ndjson.org/
 
 <!-- </links> -->
