@@ -1,11 +1,11 @@
 {
   "name": "",
   "version": "",
-  "description": "List module dependencies.",
+  "description": "List import and require paths.",
   "author": {},
   "contributors": [],
   "bin": {
-    "module-deps": "./bin/cli"
+    "import-require-glob": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",
@@ -32,7 +32,8 @@
     "module",
     "modules",
     "dependencies",
-    "deps"
+    "deps",
+    "glob"
   ],
   "bugs": {},
   "dependencies": {},

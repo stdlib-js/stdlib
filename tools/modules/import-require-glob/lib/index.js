@@ -1,12 +1,12 @@
 'use strict';
 
 /**
-* List module dependencies.
+* List import and require paths.
 *
-* @module @stdlib/tools/modules/module-deps
+* @module @stdlib/tools/modules/import-require-glob
 *
 * @example
-* var ls = require( '@stdlib/tools/modules/module-deps' );
+* var ls = require( '@stdlib/tools/modules/import-require-glob' );
 *
 * ls( onList );
 *
@@ -18,7 +18,7 @@
 * }
 *
 * @example
-* var ls = require( '@stdlib/tools/modules/module-deps' ).sync;
+* var ls = require( '@stdlib/tools/modules/import-require-glob' ).sync;
 *
 * var results = ls();
 * if ( results instanceof Error ) {

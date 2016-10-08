@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'module-deps:async' );
+var debug = require( 'debug' )( 'import-require-glob:async' );
 var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' );
 var prefix = require( './stdlib.js' );
@@ -18,7 +18,7 @@ var analyze = require( './analyze.js' );
 // LS //
 
 /**
-* Asynchronously generates a list of module dependencies.
+* Asynchronously generates a list import and require paths.
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for files

@@ -1,6 +1,6 @@
 # Module Dependencies
 
-> List module dependencies.
+> List import and require paths.
 
 
 <!-- <intro> -->
@@ -13,14 +13,14 @@
 ## Usage
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/module-deps' );
+var ls = require( '/path/to/stdlib/tools/import-require-glob' );
 ```
 
 <a name="ls"></a>
 
 #### ls( \[options\], clbk )
 
-Reads files and lists module dependencies.
+Reads files and lists import and require paths.
 
 ``` javascript
 ls( onList );
@@ -84,7 +84,7 @@ function onList( error, results ) {
 
 #### ls.sync( \[options\] )
 
-Synchronously reads files and lists module dependencies.
+Synchronously reads files and lists import and require paths.
 
 ``` javascript
 var results = ls.sync();
@@ -102,7 +102,7 @@ The function accepts the same `options` as [`ls()`](#ls) above.
 ## Examples
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/module-deps' );
+var ls = require( '/path/to/stdlib/tools/import-require-glob' );
 
 ls( onList );
 
@@ -128,13 +128,12 @@ function onList( error, results ) {
 ### Usage
 
 ``` bash
-Usage: module-deps [options]
+Usage: import-require-glob [options] [dirname]
 
 Options:
 
   -h,    --help                      Print this message.
   -V,    --version                   Print the package version.
-         --dir dirname               Root directory from which to search.
          --pattern pattern           File glob pattern.
 ```
 
@@ -155,7 +154,7 @@ Options:
 ### Examples
 
 ``` bash
-$ DEBUG=* module-deps
+$ DEBUG=* import-require-glob
 # => {"file":"...","literals":[...],"expressions":[...]}
 # => {"file":"...","literals":[...],"expressions":[...]}
 # => ...

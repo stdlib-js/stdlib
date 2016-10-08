@@ -69,8 +69,8 @@ if ( args.version ) {
 	return version();
 }
 opts = {};
-if ( args.dir ) {
-	opts.dir = args.dir;
+if ( args._[ 0 ] ) {
+	opts.dir = args._[ 0 ];
 }
 if ( args.pattern ) {
 	opts.pattern = args.pattern;

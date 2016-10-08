@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'module-deps:analyze' );
+var debug = require( 'debug' )( 'import-require-glob:analyze' );
 var getPaths = require( './../../import-require' );
 
 
