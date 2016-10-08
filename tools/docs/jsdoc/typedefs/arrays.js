@@ -43,6 +43,30 @@
 */
 
 /**
+* A numeric array containing only positive values.
+*
+* @typedef {NumericArray} PositiveNumericArray
+*/
+
+/**
+* A numeric array containing only negative values.
+*
+* @typedef {NumericArray} NegativeNumericArray
+*/
+
+/**
+* A numeric array containing only non-positive values.
+*
+* @typedef {NumericArray} NonPositiveNumericArray
+*/
+
+/**
+* A numeric array containing only non-negative values.
+*
+* @typedef {NumericArray} NonNegativeNumericArray
+*/
+
+/**
 * A numeric array containing only integer values.
 *
 * @typedef {(Array<number>|IntegerTypedArray)} IntegerArray
@@ -51,25 +75,25 @@
 /**
 * An integer array containing only positive integer values.
 *
-* @typedef {IntegerArray)} PositiveIntegerArray
+* @typedef {IntegerArray} PositiveIntegerArray
 */
 
 /**
 * An integer array containing only negative integer values.
 *
-* @typedef {IntegerArray)} NegativeIntegerArray
+* @typedef {IntegerArray} NegativeIntegerArray
 */
 
 /**
 * An integer array containing only non-positive integer values.
 *
-* @typedef {IntegerArray)} NonPositiveIntegerArray
+* @typedef {IntegerArray} NonPositiveIntegerArray
 */
 
 /**
 * An integer array containing only nonnegative integer values.
 *
-* @typedef {IntegerArray)} NonNegativeIntegerArray
+* @typedef {IntegerArray} NonNegativeIntegerArray
 */
 
 /**
@@ -103,7 +127,7 @@
 */
 
 /**
-* A numeric array in which the sum of all elements is `1`.
+* A numeric array in which all elements are non-negative and the sum of all elements is `1`.
 *
-* @typedef {NumericArray} ProbabilityArray
+* @typedef {NonNegativeNumericArray} ProbabilityArray
 */
