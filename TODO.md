@@ -1184,7 +1184,16 @@ TODO
 
 236. [travis-deploy-example](https://github.com/bcoe/travis-deploy-example)
 
-237. test-tools mk recipe
+237. test-tools, test-tools-cov mk recipe
+
+238. static stats mk recipe
+
+     - num files (w/ breakdown by extension num/%)
+     - size
+     - num lines
+
+239. Given an import-require tree, should be able to statically detect cyclic deps and flag
+
 
 
 ---
