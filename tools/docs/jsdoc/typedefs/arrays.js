@@ -101,3 +101,9 @@
 *
 * @typedef {Array} EmptyArray
 */
+
+/**
+* A numeric array in which the sum of all elements is `1`.
+*
+* @typedef {NumericArray} ProbabilityArray
+*/
