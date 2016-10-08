@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Resolve package dependencies.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "pkg-deps": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "find",
+    "search",
+    "modules",
+    "packages",
+    "pkgs",
+    "dependencies",
+    "deps",
+    "resolve"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
