@@ -1,0 +1,11 @@
+
+Usage: module-pkg-deps [options] [<file> <file> <file> ...]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --no-builtins         Do not include built-ins.
+         --no-walk             Do not walk relative module dependencies.
+         --split sep           Separator for standard input data. Default: '/\r?\n/'.
+

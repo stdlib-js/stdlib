@@ -1,0 +1,35 @@
+'use strict';
+
+// MODULES //
+
+var getKeys = require( 'object-keys' ).shim();
+
+
+// MAIN //
+
+/**
+* Converts a results cache to an array.
+*
+* @private
+* @param {Object} results - raw results
+* @returns {ObjectArray} results
+*/
+function toArray( results ) {
+	var files;
+	var out;
+	var i;
+	files = getKeys( results );
+	out = new Array( files.length );
+	for ( i = 0; i < files.length; i++ ) {
+		out[ i ] = {
+			'file': files[ i ],
+			'deps': results[ files[ i ] ]
+		};
+	}
+	return out;
+} // end FUNCTION toArray()
+
+
+// EXPORTS //
+
+module.exports = toArray;

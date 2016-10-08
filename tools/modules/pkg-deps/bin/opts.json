@@ -1,0 +1,19 @@
+{
+	"string": [
+		"split"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"no-builtins",
+		"no-walk"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

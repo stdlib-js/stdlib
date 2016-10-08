@@ -3,10 +3,10 @@
 /**
 * List module dependencies.
 *
-* @module @stdlib/tools/module-deps/module-deps
+* @module @stdlib/tools/modules/module-deps
 *
 * @example
-* var ls = require( '@stdlib/tools/module-deps/module-deps' );
+* var ls = require( '@stdlib/tools/modules/module-deps' );
 *
 * ls( onList );
 *
@@ -18,7 +18,7 @@
 * }
 *
 * @example
-* var ls = require( '@stdlib/tools/module-deps/module-deps' ).sync;
+* var ls = require( '@stdlib/tools/modules/module-deps' ).sync;
 *
 * var results = ls();
 * if ( results instanceof Error ) {

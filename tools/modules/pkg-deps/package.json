@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "",
+  "description": "List package dependencies.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "module-pkg-deps": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "find",
+    "search",
+    "modules",
+    "dependencies",
+    "deps",
+    "resolve",
+    "walk"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
