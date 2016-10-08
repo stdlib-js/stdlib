@@ -1,4 +1,4 @@
-# Module Dependencies
+# Import and Require Paths
 
 > List import and require paths.
 
