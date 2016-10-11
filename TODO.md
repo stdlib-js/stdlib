@@ -1194,6 +1194,14 @@ TODO
 
 239. Given an import-require tree, should be able to statically detect cyclic deps and flag
 
+240. pkg keyword force/network diagram where edges are pkgs and nodes are keywords
+
+241. `isNumberArray` is a bit leaky as, currently, really a check for `array`-like
+
+242. [working remotely](https://github.com/lenazun/working-remotely) adapted for project communication
+
+243. [node-help](https://github.com/foundling/node-help): repl docs
+
 
 
 ---
