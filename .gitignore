@@ -143,3 +143,7 @@ acs-*.bib
 *.ilg
 *.ind
 *.ist
+
+# Visual Studio #
+#################
+.vscode/
