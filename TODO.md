@@ -773,6 +773,7 @@ TODO
     * add rule about using source URL directives in eval'd code
     * add rule about including decimals when working with numbers; e.g., `3.0`
     * [principal of least abstraction](https://github.com/habitat-sh/habitat) => part of "The Stdlib Way" (inspired by The Unix Way)
+    * add note about `if(){return;}else{return;}` being unnecessary indentation
 
 92. README link to "live" (e.g., gh-pages) docs (badge)
 
@@ -801,7 +802,7 @@ TODO
 100. review
 
      * [ ] crypto
-     * [-] datasets
+     * [x] datasets
      * [x] fs
      * [x] math/base/blas
      * [ ] math/base/dist
