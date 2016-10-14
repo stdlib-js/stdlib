@@ -147,3 +147,4 @@ acs-*.bib
 # Visual Studio #
 #################
 .vscode/
+jsconfig.json
