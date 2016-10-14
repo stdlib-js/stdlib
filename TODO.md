@@ -905,6 +905,7 @@ TODO
      - [licenses](https://github.com/3rd-Eden/licenses)
      - [licensecheck](https://github.com/marcello3d/node-licensecheck)
      - [nlf](https://github.com/iandotkelly/nlf)
+     - [license-to-fail](https://github.com/behance/license-to-fail)
      - [license-list](https://www.gnu.org/licenses/license-list.en.html)
      - as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
      - recipe to plot license distribution as a bar plot (?) => could be part of public facing docs
@@ -1203,6 +1204,10 @@ TODO
 
 243. [node-help](https://github.com/foundling/node-help): repl docs
 
+244. [RFCs docs](https://github.com/yarnpkg/rfcs)
+
+245. [envify](https://github.com/hughsk/envify) => when browserifying environment dependent tests to be run in the browser, can use to inline env vars
+
 
 
 ---
@@ -1324,6 +1329,17 @@ TODO
 1. [node-markov](https://github.com/substack/node-markov)
 2. include links to survey in main README
 3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
+
+
+---
+
+## Pub
+
+1. decomposable software
+2. multiple build systems
+3. broken math
+4. backward compatibility (and countertrends)
+5. The REPL (why matters)
 
 
 ---
