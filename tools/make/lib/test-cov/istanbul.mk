@@ -169,6 +169,7 @@ test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 		echo ''; \
 		NODE_ENV=$(NODE_ENV_TEST) \
 		NODE_PATH=$(NODE_PATH_TEST) \
+		TEST_MODE=coverage \
 		$(ISTANBUL_TEST_RUNNER) \
 			$(ISTANBUL_TEST_RUNNER_FLAGS) \
 			--output $$($(COVERAGE_REPORT_NAME) $(ISTANBUL_INSTRUMENT_OUT) $$dir $(COVERAGE_DIR)) \
