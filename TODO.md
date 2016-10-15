@@ -1208,6 +1208,12 @@ TODO
 
 245. [envify](https://github.com/hughsk/envify) => when browserifying environment dependent tests to be run in the browser, can use to inline env vars
 
+246. [naming conventions](https://github.com/JuliaPraxis/Naming)
+
+247. [Tyche](https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf) prng
+
+248. typed array [binary string](https://github.com/AndreasMadsen/binary-view/blob/master/binary-view.js)
+
 
 
 ---
