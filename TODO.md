@@ -1214,6 +1214,10 @@ TODO
 
 248. typed array [binary string](https://github.com/AndreasMadsen/binary-view/blob/master/binary-view.js)
 
+249. [JS interpreter](https://github.com/NeilFraser/JS-Interpreter) and [hotswapping interpreter](https://github.com/thomasballinger/hotswapping-js-interp)
+
+250. [chunkify](https://github.com/compute-io/chunkify), [buffer](https://www.mathworks.com/help/signal/ref/buffer.html), [split](http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.split.html), [splitVec](https://www.mathworks.com/matlabcentral/fileexchange/24255-consecutive-vector-spliter/content/SplitVec.m)
+
 
 
 ---
