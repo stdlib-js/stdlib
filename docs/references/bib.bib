@@ -181,7 +181,7 @@
 	year = {2014},
 }
 
-@unpublished{marsaglia:2003,
+@article{marsaglia:2003,
 	abstract = {Description of a class of simple, extremely fast random number generators (RNGs) with periods \\(2^k −1\\) for \\(k = 32, 64, 96, 128, 160, 192\\). These RNGs seem to pass tests of randomness very well.},
 	author = {George Marsaglia},
 	doi = {10.18637/jss.v008.i14},
@@ -190,7 +190,29 @@
 	note = {xoshift},
 	number = {14},
 	title = {{Xorshift RNGs}},
-	url = {},
+	url = {https://www.jstatsoft.org/article/view/v008i14},
 	volume = {8},
 	year = {2003},
 }
+
+@article{panneton:2005,
+	abstract = {G. Marsaglia recently introduced a class of very fast xorshift random number generators, whose implementation uses three “xorshift” operations. They belong to a large family of generators based on linear recurrences modulo 2, which also includes shift-register generators, the Mersenne twister, and several others. In this article, we analyze the theoretical properties of xorshift generators, search for the best ones with respect to the equidistribution criterion, and test them empirically. We find that the vast majority of xorshift generators with only three xorshift operations, including those having good equidistribution, fail several simple statistical tests. We also discuss generators with more than three xorshifts.},
+	acmid = {1113319},
+	address = {New York, NY, USA},
+	author = {Panneton, Fran\c{c}ois and L'Ecuyer, Pierre},
+	doi = {10.1145/1113316.1113319},
+	issn = {1049-3301},
+	journal = {ACM Trans. Model. Comput. Simul.},
+	issue_date = {October 2005},
+	keywords = {random number generation, linear feedback shift register, linear recurrence modulo 2, xorshift, prng, rng, random, rand},
+	month = {oct},
+	number = {4},
+	numpages = {16},
+	pages = {346--361},
+	publisher = {ACM},
+	title = {On the Xorshift Random Number Generators},
+	url = {http://doi.acm.org/10.1145/1113316.1113319},
+	volume = {15},
+	year = {2005},
+}
+
