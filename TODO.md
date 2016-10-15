@@ -1220,6 +1220,8 @@ TODO
 
 251. [random123](http://www.deshawresearch.com/downloads/download_random123.cgi/)
 
+252. [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
+
 
 
 ---
