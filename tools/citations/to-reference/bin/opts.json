@@ -1,0 +1,14 @@
+{
+	"string": [
+		"database",
+		"csl"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

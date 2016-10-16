@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Return a reference corresponding to a citation identifier.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "citation-to-reference": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "citations",
+    "citation",
+    "cite",
+    "references",
+    "reference",
+    "ref",
+    "bibliography",
+    "bib",
+    "csl"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
