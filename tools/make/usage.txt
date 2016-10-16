@@ -30,6 +30,7 @@ Usage: make <cmd>
   make src-docs               Generate source documentation.
   make view-src-docs          View source documentation.
   make markdown-equations     Process Markdown equations.
+  make citation-reference     Return a citation reference.
   make lint                   Lint files.
   make lint-markdown          Lint Markdown files.
   make lint-javascript        Lint JavaScript files.
