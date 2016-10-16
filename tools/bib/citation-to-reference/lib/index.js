@@ -3,10 +3,10 @@
 /**
 * Return a reference corresponding to a citation identifier.
 *
-* @module @stdlib/tools/citations/to-reference
+* @module @stdlib/tools/citation-to-reference
 *
 * @example
-* var toReference = require( '/path/to/stdlib/tools/citations/to-reference' );
+* var toReference = require( '/path/to/stdlib/tools/citation-to-reference' );
 *
 * toReference( '@press1992', clbk );
 *
@@ -18,7 +18,7 @@
 * }
 *
 * @example
-* var toReference = require( '/path/to/stdlib/tools/citations/to-reference' );
+* var toReference = require( '/path/to/stdlib/tools/citation-to-reference' );
 *
 * var ref = toReference.sync( '@press1992' );
 * // returns '...'
