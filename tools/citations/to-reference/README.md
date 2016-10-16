@@ -16,6 +16,8 @@
 var toReference = require( '/path/to/stdlib/tools/citations/to-reference' );
 ```
 
+<a name="to-reference"></a>
+
 #### toReference( id, \[options,\] clbk )
 
 Returns a reference corresponding to a citation identifier.
@@ -70,7 +72,29 @@ function clbk( error, reference ) {
 }
 ```
 
+#### toReference.sync( id\[, options\] )
+
+Synchronously return a reference corresponding to a citation identifier.
+
+``` javascript
+var ref = toReference.sync( '@press:1992' );
+// returns '...'
+```
+
+The method accepts the same `options` as [`toReference()`](#to-reference) above.
+
 <!-- </usage> -->
+
+
+<!-- <notes> -->
+
+## Notes
+
+* System dependencies:
+  - [pandoc][pandoc]
+  - [pandoc-citeproc][pandoc-citeproc]
+
+<!-- </notes> -->
 
 
 <!-- <examples> -->
@@ -133,5 +157,8 @@ $ citation-to-reference '@press:1992'
 <!-- <links> -->
 
 [csl]: http://citationstyles.org/
+
+[pandoc]: http://pandoc.org/
+[pandoc-citeproc]: https://github.com/jgm/pandoc-citeproc
 
 <!-- </links> -->
