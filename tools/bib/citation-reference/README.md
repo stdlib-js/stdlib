@@ -13,7 +13,7 @@
 ## Usage
 
 ``` javascript
-var toReference = require( '/path/to/stdlib/tools/citation-to-reference' );
+var toReference = require( '/path/to/stdlib/tools/citation-reference' );
 ```
 
 <a name="to-reference"></a>
@@ -102,7 +102,7 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 ## Examples
 
 ``` javascript
-var toReference = require( '/path/to/stdlib/tools/citation-to-reference' );
+var toReference = require( '/path/to/stdlib/tools/citation-reference' );
 
 /* bib.bib
 @book{press:1992,
@@ -149,7 +149,7 @@ function clbk( error, reference ) {
 ### Usage
 
 ``` bash
-Usage: citation-to-reference [options] <citation_identifier>
+Usage: citation-reference [options] <citation_identifier>
 
 Options:
 
@@ -166,7 +166,7 @@ Options:
 ### Examples
 
 ``` bash
-$ citation-to-reference '@press:1992'
+$ citation-reference '@press:1992'
 # => '...'
 ```
 

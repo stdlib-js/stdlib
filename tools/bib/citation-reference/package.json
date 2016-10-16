@@ -5,7 +5,7 @@
   "author": {},
   "contributors": [],
   "bin": {
-    "citation-to-reference": "./bin/cli"
+    "citation-reference": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",
