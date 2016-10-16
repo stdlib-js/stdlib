@@ -104,13 +104,34 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 ``` javascript
 var toReference = require( '/path/to/stdlib/tools/citations/to-reference' );
 
-toReference( '@press1992', clbk );
+/* bib.bib
+@book{press:1992,
+    author = {William H. Press and Brian P. Flannery and Saul A. Teukolsky and William T. Vetterling},
+    isbn = {0521431085},
+    keywords = {computing, software, programming},
+    publisher = {Cambridge University Press},
+    title = {{Numerical Recipes in C: The Art of Scientific Computing, Second Edition}},
+    year = {1992},
+}
+*/
+
+var opts = {
+    'database': 'bib.bib',
+    'csl': 'chicago-author-date.csl'
+};
+
+toReference( '@press1992', opts, clbk );
 
 function clbk( error, reference ) {
     if ( error ) {
         throw error;
     }
     console.log( reference );
+    /*
+        (Press et al. 1992)
+
+        Press, William H., Brian P. Flannery, Saul A. Teukolsky, and William T. Vetterling. 1992. *Numerical Recipes in C: The Art of Scientific Computing, Second Edition*. Cambridge University Press.
+    */
 }
 ```
 
