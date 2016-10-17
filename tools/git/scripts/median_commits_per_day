@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Prints the median number of commits per day.
+
+# * `git log`
+#   - Show commit logs.
+# * `grep Date`
+#   - Extract the line which begins with `Date` from each log.
+# * `awk '{}'`
+#   - From each date line, extract the month (`$3`), day (`$4`), and year (`$6`).
+# * `uniq -c`
+#   - Given that same day commits are on consecutive lines, we can remove repeated lines and count the repeats to compute daily totals.
+# * `awk '{}'`
+#   - Extract the total from each line.
+# * `awk '{}'`
+#   - Compute the median number of commits per day.
+git log | grep Date | awk '{print " : "$3" "$4" "$6}' | uniq -c | awk '{print $1}' | awk '
+BEGIN {
+	i = 0
+}
+{
+	a[i++] = $1
+}
+END {
+	j = i/2
+	if ( i%2 == 1 ) {
+		median = a[int(j)]
+	} else {
+		median = (a[j] + a[j-1])/2
+	}
+	print median
+}
+'
