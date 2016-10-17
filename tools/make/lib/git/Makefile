@@ -26,7 +26,7 @@ UPDATE_CONTRIBUTORS_OUT ?= $(ROOT_DIR)/CONTRIBUTORS
 #
 # This target lists contributors.
 
-list-contributors: $(LIST_CONTRIBUTORS)
+list-contributors:
 	$(QUIET) $(MAKE_EXECUTABLE) $(LIST_CONTRIBUTORS)
 	$(QUIET) $(LIST_CONTRIBUTORS) $(LIST_CONTRIBUTORS_FLAGS)
 
@@ -37,7 +37,7 @@ list-contributors: $(LIST_CONTRIBUTORS)
 #
 # This target updates a CONTRIBUTORS file.
 
-update-contributors: $(UPDATE_CONTRIBUTORS)
+update-contributors:
 	$(QUIET) $(MAKE_EXECUTABLE) $(UPDATE_CONTRIBUTORS)
 	$(QUIET) $(UPDATE_CONTRIBUTORS) $(UPDATE_CONTRIBUTORS_FLAGS) $(UPDATE_CONTRIBUTORS_OUT)
 
