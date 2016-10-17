@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Prints the number of commits per month.
+
+# * `git log`
+#   - Show commit logs.
+# * `grep Date`
+#   - Extract the line which begins with `Date` from each log.
+# * `awk '{}'`
+#   - From each date line, extract the month (`$3`).
+# * `sort -M`
+#   - Sort by month name.
+# * `uniq -c`
+#   - Remove repeated lines and count the repeats to show monthly totals.
+git log | grep Date | awk '{print $3}' | sort -M | uniq -c
