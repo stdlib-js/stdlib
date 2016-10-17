@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# List contributors in alphabetical order.
+
+git shortlog -sne | cut -f 2 | sort
