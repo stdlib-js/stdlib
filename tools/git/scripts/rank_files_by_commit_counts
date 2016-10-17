@@ -1,0 +1,135 @@
+#!/usr/bin/env bash
+#
+# Counts the number of times each file has been modified (i.e., included in a commit) and prints a ranked list.
+#
+
+
+# VARIABLES #
+
+# Define a file path filter:
+file_path_filter=''
+
+# Define the number of files to show:
+num_files=20
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	exit "$1"
+}
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: rank_files_by_commit_counts [options]' >&2
+	echo '' >&2
+	echo 'Options:' >&2
+	echo '' >&2
+	echo '  -h,    --help                Print this message.' >&2
+	echo '         --filter filter       File path filter.' >&2
+	echo '  -n,    --numfiles count      Number of files to show.' >&2
+	echo '' >&2
+}
+
+# Ranks files.
+#
+# $1 - filter
+# $2 - number of files to print
+rank() {
+	# * `git log`
+	#   - Get commit logs, reporting renames (`-M`) and copies (`-C`), and only show the names of modified files.
+	# * `grep -v '^$'`
+	#   -  Remove empty lines.
+	# * `grep "$1"`
+	#   - Filter file paths using a provided filter.
+	# * `sort`
+	#   - Sort in alphabetical order.
+	# * `uniq -c`
+	#   - Remove and count repeats.
+	# * `sort -r`
+	#   - Sort in reverse order such that higher counts come first.
+	# * `head`
+	#   - Only show a specified number of files.
+	git log --all -M -C --name-only --format='format:' | grep -v '^$' | grep "$1" | sort | uniq -c | sort -r | head -n "$2"
+}
+
+# Main execution sequence.
+main() {
+	rank "${file_path_filter}" "${num_files}"
+	exit 0
+}
+
+# Parse command-line options...
+while :; do
+	case "$1" in
+		'-h' | '--help')
+			usage
+			exit 0
+			;;
+
+		'-n' | '--numfiles')
+			if [[ -n "$2" ]]; then
+				num_files="$2"
+				shift
+			else
+				printf 'ERROR: "-n, --numfiles" option requires a non-empty option argument.\n' >&2
+				on_error 1
+			fi
+			;;
+		'-n='?* | '--numfiles='?*)
+			# Delete everything up to "=" and assign the remainder:
+			num_files="${1#*=}"
+			;;
+
+		'-n=' | '--numfiles=')
+			# Handle empty `-n=` and `--numfiles=` options:
+			printf 'ERROR: "-n, --numfiles" option requires a non-empty option argument.\n' >&2
+				on_error 1
+			;;
+
+		'--filter')
+			if [[ -n "$2" ]]; then
+				file_path_filter="$2"
+				shift
+			else
+				printf 'ERROR: "--filter" option requires a non-empty option argument.\n' >&2
+				on_error 1
+			fi
+			;;
+
+		'--filter='?*)
+			# Delete everything up to "=" and assign the remainder:
+			file_path_filter="${1#*=}"
+			;;
+
+		'--filter=')
+			# Handle empty `--filter=` option:
+			printf 'ERROR: "--filter" option requires a non-empty option argument.\n' >&2
+				on_error 1
+			;;
+
+		'--')
+			# End of all options:
+			shift
+			break
+			;;
+
+		-?*)
+			printf 'WARNING: unknown option (ignored): %s\n.' "$1" >&2
+			break
+			;;
+
+		*)
+			# Default case (e.g., if no more options) break out of loop:
+			break
+	esac
+
+	shift
+done
+
+# Run main:
+main
