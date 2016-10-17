@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+# Prints the number of commits per day.
+
+# * `git log --reverse`
+#   - Show commit logs in reverse order.
+# * `grep Date`
+#   - Extract the line which begins with `Date` from each log.
+# * `awk '{}'
+#   - From each date line, extract the month (`$3`), day (`$4`), and year (`$6`).
+# * `uniq -c`
+#   - Given that same day commits are on consecutive lines, we can remove repeated lines and count the repeats to show daily totals.
+git log --reverse | grep Date | awk '{print " : "$3" "$4" "$6}' | uniq -c
