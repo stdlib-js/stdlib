@@ -5,7 +5,7 @@
 MAKE_EXECUTABLE ?= chmod +x
 
 # Define the path of the executable for listing contributors:
-LIST_CONTRIBUTORS ?= $(TOOLS_DIR)/git/scripts/contributors
+LIST_CONTRIBUTORS ?= $(TOOLS_DIR)/git/scripts/list_contributors
 
 # Define the command-line options to be used when invoking the executable:
 LIST_CONTRIBUTORS_FLAGS ?=
