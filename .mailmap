@@ -1,5 +1,5 @@
-# This file which maps author and committer names and email addresses to
-# canonical real names and email addresses. For more information, see the
+# This file maps author and committer names and email addresses to canonical
+# real names and email addresses. For more information, see the `git shortlog`
 # [man page][1].
 #
 # [1]: http://schacon.github.io/git/git-shortlog.html
