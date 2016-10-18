@@ -22,7 +22,7 @@ BEGIN {
 	lines[$2] = $2 OFS $1
 }
 END {
-	for ( i = 1; i <= 7; i++ ) {
+	for (i = 1; i <= 7; i++) {
 		print lines[days[i]]
 	}
 }

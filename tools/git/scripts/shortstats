@@ -10,23 +10,23 @@
 #   - Parse the log results and output as a single line, handling edge cases due to missing data.
 git log --format=format:"%at %aN" --shortstat | awk '
 {
-	if ( $0 == "" ) {
+	if ($0 == "") {
 		# Empty lines separate commits (except when no short stats accompany a commit):
 		print line
 		line = ""
-	} else if ( line == "" ) {
-		if ( NF == 2 ) {
+	} else if (line == "") {
+		if (NF == 2) {
 			# <timestamp> <author>
 			line = $1 OFS $2 OFS "(null)"
 		} else {
 			# <timestamp> <author_first_name> <author_last_name>
 			line = $0
 		}
-	} else if ( $0 ~ /changed/ ) {
-		if ( NF < 5 ) {
+	} else if ($0 ~ /changed/) {
+		if (NF < 5) {
 			# <num_files_changed>
 			line = line OFS $1 OFS 0 OFS 0
-		} else if ( NF < 7 ) {
+		} else if (NF < 7) {
 			# <num_files_changed> <additions>
 			line = line OFS $1 OFS $4 OFS 0
 		} else {

@@ -30,7 +30,7 @@ BEGIN {
 	lines[ts,$2,$3] += $5
 }
 END {
-	for ( k in lines ) {
+	for (k in lines) {
 		split(k, keys, SUBSEP)
 		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
 	}

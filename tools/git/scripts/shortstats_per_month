@@ -25,7 +25,7 @@ shortstats="${root}/tools/git/scripts/shortstats"
 	deletions[$2] += $8
 }
 END {
-	for ( mon in files ) {
+	for (mon in files) {
 		print mon OFS files[mon] OFS additions[mon] OFS deletions[mon]
 	}
 }' | sort -M

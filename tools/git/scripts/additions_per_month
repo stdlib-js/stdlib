@@ -23,7 +23,7 @@ shortstats="${root}/tools/git/scripts/shortstats"
 	lines[$2] += $6
 }
 END {
-	for ( mon in lines ) {
+	for (mon in lines) {
 		print mon OFS lines[mon]
 	}
 }' | sort -M

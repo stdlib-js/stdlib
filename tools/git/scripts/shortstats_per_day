@@ -32,7 +32,7 @@ BEGIN {
 	deletions[ts] += $6
 }
 END {
-	for ( ts in files ) {
+	for (ts in files) {
 		print ts OFS files[ts] OFS additions[ts] OFS deletions[ts]
 	}
 }

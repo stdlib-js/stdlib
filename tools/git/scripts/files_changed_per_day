@@ -30,7 +30,7 @@ BEGIN {
 	lines[ts] += $4
 }
 END {
-	for ( ts in lines ) {
+	for (ts in lines) {
 		print ts OFS lines[ts]
 	}
 }
