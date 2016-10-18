@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+#
+# Prints the number of deletions per day per author.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the daily totals.
+# * `sort -n`
+#   - Sort in numeric order.
+# * `perl -pe ''`
+#   - Convert each Unix timestamp to a date string.
+# * `awk '{}'`
+#   - Format the output.
+"${shortstats}" | awk '
+BEGIN {
+	scalar = 60 * 60 * 24
+}
+{
+	# Round a Unix timestamp to the nearest day:
+	ts = int($1/scalar) * scalar
+
+	# Update daily totals:
+	lines[ts,$2,$3] += $6
+}
+END {
+	for ( k in lines ) {
+		split(k, keys, SUBSEP)
+		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
+	}
+}
+' | sort -n | perl -pe 's/(\d+)/gmtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6 OFS $7 OFS $8}'
