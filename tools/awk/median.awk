@@ -5,7 +5,7 @@
 # Usage: median
 #
 # Input:
-#   - a column of numbers
+#   - a sorted column of numbers
 #
 # Output:
 #   - median value
