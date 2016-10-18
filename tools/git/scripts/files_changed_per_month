@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#
+# Prints the number of files changed per month.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Extract the commit timestamp and number of files changed.
+# * `perl -pe ''`
+#   - Convert each Unix timestamp to a date string.
+# * `awk '{}'`
+#   - Tabulate the monthly totals.
+# * `sort -M`
+#   - Sort by month name.
+"${shortstats}" | awk '{print $1 OFS $4}' | perl -pe 's/(\d+)/gmtime($1)/e' | awk '
+{
+	lines[$2] += $6
+}
+END {
+	for ( mon in lines ) {
+		print mon OFS lines[mon]
+	}
+}' | sort -M
