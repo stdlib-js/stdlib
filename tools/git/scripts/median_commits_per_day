@@ -2,6 +2,12 @@
 #
 # Prints the median number of commits per day.
 
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the median:
+median="${root}/tools/awk/median.awk"
+
 # * `git log`
 #   - Show commit logs.
 # * `grep Date`
@@ -14,20 +20,4 @@
 #   - Extract the total from each line.
 # * `awk '{}'`
 #   - Compute the median number of commits per day.
-git log | grep Date | awk '{print " : "$3" "$4" "$6}' | uniq -c | awk '{print $1}' | awk '
-BEGIN {
-	i = 0
-}
-{
-	a[i++] = $1
-}
-END {
-	j = i/2
-	if ( i%2 == 1 ) {
-		median = a[int(j)]
-	} else {
-		median = (a[j] + a[j-1])/2
-	}
-	print median
-}
-'
+git log | grep Date | awk '{print " : "$3" "$4" "$6}' | uniq -c | awk '{print $1}' | "${median}"
