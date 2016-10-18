@@ -12,4 +12,4 @@
 #   - Sort in reverse order.
 # * `uniq -c`
 #   - Remove repeated lines and count the repeats to compute yearly totals.
-git log | grep Date | awk '{print $6}' | sort -r | uniq -c
+git log | grep Date | awk '{print $6}' | sort -r | uniq -c | awk '{print $2 OFS $1}'

@@ -12,4 +12,4 @@
 #   - Sort by month name.
 # * `uniq -c`
 #   - Remove repeated lines and count the repeats to show monthly totals.
-git log | grep Date | awk '{print $3}' | sort -M | uniq -c
+git log | grep Date | awk '{print $3}' | sort -M | uniq -c | awk '{print $2 OFS $1}'

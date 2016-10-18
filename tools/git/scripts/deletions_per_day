@@ -34,4 +34,4 @@ END {
 		print ts OFS lines[ts]
 	}
 }
-' | sort -n | perl -pe 's/(\d+)/gmtime($1)/e' | awk '{print $6 OFS $2 OFS $3 OFS $5}'
+' | sort -n | perl -pe 's/(\d+)/gmtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6}'

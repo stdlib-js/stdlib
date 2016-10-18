@@ -19,7 +19,7 @@ BEGIN {
 	split("Mon Tue Wed Thu Fri Sat Sun", days);
 }
 {
-	lines[$2] = $1 OFS $2
+	lines[$2] = $2 OFS $1
 }
 END {
 	for ( i = 1; i <= 7; i++ ) {
