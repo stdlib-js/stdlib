@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #
 # Counts the number of times each file has been modified (i.e., included in a commit) and prints a ranked list.
-#
 
 
 # VARIABLES #
