@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#
+# Prints the number of deletions per month per author.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Extract timestamp (`$1`), author first name (`$2`) and author last name (`$3`), and number of deletions (`$6`) from each commit.
+# * `perl -pe ''`
+#   - Convert each Unix timestamp to a date string.
+# * `awk '{}'`
+#   - Tabulate the monthly totals.
+# * `sort -M`
+#   - Sort by month.
+"${shortstats}" | awk '{print $1 OFS $2 OFS $3 OFS $6}' | perl -pe 's/(\d+)/localtime($1)/e' | awk '
+{
+	lines[$2,$6,$7] += $8
+}
+END {
+	for (k in lines) {
+		split(k, keys, SUBSEP)
+		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
+	}
+}
+' | sort -M
