@@ -6,10 +6,10 @@
 root="$(git rev-parse --show-toplevel)"
 
 # Define the path to a utility to generate a frequency table:
-frequency_table="${root}/tools/awk/frequency_table.awk"
+tabulate="${root}/tools/awk/tabulate.awk"
 
 # Define the path to a utility to generate commit short stats:
 shortstats="${root}/tools/git/scripts/shortstats"
 
 # Generate shortstats, extract the `files_changed` column, generate a frequency table, and sort in numeric order:
-"${shortstats}" | awk '{print $8}' | "${frequency_table}" | sort -n
+"${shortstats}" | awk '{print $8}' | "${tabulate}" | sort -n
