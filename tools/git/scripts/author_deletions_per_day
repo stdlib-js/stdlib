@@ -35,4 +35,4 @@ END {
 		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
 	}
 }
-' | sort -n | perl -pe 's/(\d+)/gmtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6 OFS $7 OFS $8}'
+' | sort -n | perl -pe 's/(\d+)/localtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6 OFS $7 OFS $8}'

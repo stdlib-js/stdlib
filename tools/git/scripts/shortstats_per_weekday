@@ -16,7 +16,7 @@ shortstats="${root}/tools/git/scripts/shortstats"
 #   - Convert each Unix timestamp to a date string.
 # * `awk '{}'`
 #   - Tabulate the weekday totals.
-"${shortstats}" | awk '{print $1 OFS $4 OFS $5 OFS $6}' | perl -pe 's/(\d+)/gmtime($1)/e' | awk '
+"${shortstats}" | awk '{print $1 OFS $4 OFS $5 OFS $6}' | perl -pe 's/(\d+)/localtime($1)/e' | awk '
 BEGIN {
 	split("Mon Tue Wed Thu Fri Sat Sun", days);
 }

@@ -18,7 +18,7 @@ shortstats="${root}/tools/git/scripts/shortstats"
 #   - Tabulate the monthly totals.
 # * `sort -M`
 #   - Sort by month name.
-"${shortstats}" | awk '{print $1 OFS $5}' | perl -pe 's/(\d+)/gmtime($1)/e' | awk '
+"${shortstats}" | awk '{print $1 OFS $5}' | perl -pe 's/(\d+)/localtime($1)/e' | awk '
 {
 	lines[$2] += $6
 }

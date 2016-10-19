@@ -36,4 +36,4 @@ END {
 		print ts OFS files[ts] OFS additions[ts] OFS deletions[ts]
 	}
 }
-' | sort -n | perl -pe 's/(\d+)/gmtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6 OFS $7 OFS $8}'
+' | sort -n | perl -pe 's/(\d+)/localtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6 OFS $7 OFS $8}'
