@@ -9,12 +9,14 @@
 # * `awk '{}'`
 #   - Parse the log results and output as a single line, handling edge cases due to missing data.
 git log --format=format:"%at %aN" --shortstat | awk '
+BEGIN {
+	line = ""
+}
 {
 	if ($0 == "") {
-		# Empty lines separate commits (except when no short stats accompany a commit):
-		print line
-		line = ""
+		# Empty lines separate commits (except when no short stats accompany a commit).
 	} else if (line == "") {
+		# Begin processing a new commit...
 		if (NF == 2) {
 			# <timestamp> <author>
 			line = $1 OFS $2 OFS "(null)"
@@ -23,6 +25,7 @@ git log --format=format:"%at %aN" --shortstat | awk '
 			line = $0
 		}
 	} else if ($0 ~ /changed/) {
+		# Begin processing commit statistics...
 		if (NF < 5) {
 			# <num_files_changed>
 			line = line OFS $1 OFS 0 OFS 0
@@ -33,9 +36,20 @@ git log --format=format:"%at %aN" --shortstat | awk '
 			# <num_files_changed> <additions> <deletions>
 			line = line OFS $1 OFS $4 OFS $6
 		}
+		print line
+		line = ""
 	} else {
-		# No short stats accompany the commit:
-		print $0 OFS 0 OFS 0 OFS 0
+		# No short stats accompanied the commit processed on the previous line (e.g., commit is a merge):
+		print line OFS 0 OFS 0 OFS 0
+
+		# Begin processing a new commit...
+		if (NF == 2) {
+			# <timestamp> <author>
+			line = $1 OFS $2 OFS "(null)"
+		} else {
+			# <timestamp> <author_first_name> <author_last_name>
+			line = $0
+		}
 	}
 }
 '
