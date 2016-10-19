@@ -11,19 +11,15 @@ shortstats="${root}/tools/git/scripts/shortstats"
 # * `shortstats`
 #   - Get summary statistics for each commit.
 # * `awk '{}'`
-#   - Extract the commit timestamp and statistics.
-# * `perl -pe ''`
-#   - Convert each Unix timestamp to a date string.
-# * `awk '{}'`
 #   - Tabulate the weekday totals.
-"${shortstats}" | awk '{print $1 OFS $4 OFS $5 OFS $6}' | perl -pe 's/(\d+)/localtime($1)/e' | awk '
+"${shortstats}" | awk '
 BEGIN {
 	split("Mon Tue Wed Thu Fri Sat Sun", days);
 }
 {
-	files[$1] += $6
-	additions[$1] += $7
-	deletions[$1] += $8
+	files[$1] += $8
+	additions[$1] += $9
+	deletions[$1] += $10
 }
 END {
 	for (i = 1; i <= 7; i++) {
