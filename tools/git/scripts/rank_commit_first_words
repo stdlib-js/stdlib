@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+#
+# Extracts the first word from each commit message and ranks each word by frequency.
+
+# * `git log --pretty=format:'%s'`
+#   - Show the commit message for each commit
+# * `awk '{}'`
+#   - Extract first word.
+# * `awk '{}'`
+#   - Remove commits which use sed syntax.
+# * `tr A-Z a-z`
+#   - Convert each word to lowercase.
+# * `sort`
+#   - Sort in lexicographic order.
+# * `uniq -c`
+#   - Count repeated lines and then remove repeats.
+# * `sort -nr`
+#   - Sort in reverse numeric order.
+git log --pretty=format:'%s' | awk '
+/^revert/ {
+	print $3
+	next
+}
+/^([A-Za-z0-9]+)(\([A-Za-z0-9]*\))?:/ {
+	print $2
+	next
+}
+{
+	print $1
+}
+' | awk '
+! /^s\/.+\/.+\/$/ {
+	print $0
+}
+' | tr A-Z a-z | sort | uniq -c | sort -nr
