@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+#
+# Prints summary statistic averages.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Compute averages.
+"${shortstats}" | awk '
+BEGIN {
+	# Get the date of the first commit:
+	cmd = "git log --reverse --date=short | grep Date | head -n 1"
+	(cmd | getline tmp)
+	close(cmd)
+
+	split(tmp, date, OFS)
+	split(date[2], t1, "-")
+
+	# Get the date for "now":
+	cmd = "date '\''+%Y %m %d'\''"
+	(cmd | getline now)
+	close(cmd)
+
+	split(now, t2, OFS)
+
+	# Compute the number of days between the first commit and "now":
+	num = daynum(t1[1], t2[1], 0+t1[2], 0+t2[2], 0+t1[3], 0+t2[3])
+}
+{
+	commits += 1
+	files += $8
+	additions += $9
+	deletions += $10
+}
+END {
+	print commits/num OFS files/num OFS additions/num OFS deletions/num
+}
+
+# Computes the number of days between a start date and an end date.
+#
+# Parameters:
+#   y1 - start year
+#   y2 - end year
+#   m1 - start month
+#   m2 - end month
+#   d1 - start day
+#   d2 - end day
+#
+# Returns:
+#   number of days
+#
+function daynum(y1, y2, m1, m2, d1, d2,   days, i, n) {
+	split("31 28 31 30 31 30 31 31 30 31 30 31", days)
+
+	# 365 days in a year, plus one during a leap year:
+	if (y2 > y1) {
+		n = (y2-y1)*365 + int((y2-y1)/4)
+	}
+	# Adjust number of days in February if leap year...
+	if (y2 % 4 == 0) {
+		days[2] += 1
+	}
+	if ( m2 > m1 ) {
+		for (i = m1; i < m2; i++) {
+			n += days[i]
+		}
+	} else if ( m2 < m1 ) {
+		for (i = m1; i >= m2; i--) {
+			n -= days[i]
+		}
+	}
+	return n + d2 - d1
+}'
