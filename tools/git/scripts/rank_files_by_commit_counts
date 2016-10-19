@@ -46,11 +46,11 @@ rank() {
 	# * `grep "$1"`
 	#   - Filter file paths using a provided filter.
 	# * `sort`
-	#   - Sort in alphabetical order.
+	#   - Sort in lexicographic order.
 	# * `uniq -c`
 	#   - Remove and count repeats.
 	# * `sort -r`
-	#   - Sort in reverse order such that higher counts come first.
+	#   - Sort in reverse lexicographic order such that higher counts come first.
 	# * `head`
 	#   - Only show a specified number of files.
 	git log --all -M -C --name-only --format='format:' | grep -v '^$' | grep "$1" | sort | uniq -c | sort -r | head -n "$2"

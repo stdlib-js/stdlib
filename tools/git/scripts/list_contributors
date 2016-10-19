@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# List contributors in alphabetical order.
+# List contributors in lexicographic order.
 
 # * `git shortlog -sne`
 #   -  Generate a log summary with commit counts.
 # * `cut -f 2`
 #   - Keep everything on the line starting from the second column.
 # * `sort`
-#   - Sort in alphabetical order.
+#   - Sort in lexicographic order.
 git shortlog -sne | cut -f 2 | sort

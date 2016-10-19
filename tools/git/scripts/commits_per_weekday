@@ -9,7 +9,7 @@
 # * `awk '{}'`
 #   - From each date line, extract the weekday (`$2`).
 # * `sort`
-#   - Sort in alphabetical order.
+#   - Sort in lexicographic order.
 # * `uniq -c`
 #   - Remove repeated lines and count the repeats to show weekday totals.
 # * `awk '{}'`
