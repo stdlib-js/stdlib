@@ -2,7 +2,7 @@
 #
 # Generates a frequency table.
 #
-# Usage: frequency_table
+# Usage: tabulate
 #
 # Input:
 #   - a column of numbers
