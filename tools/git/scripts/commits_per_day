@@ -10,4 +10,6 @@
 #   - From each date line, extract the month (`$3`), day (`$4`), and year (`$6`).
 # * `uniq -c`
 #   - Given that same day commits are on consecutive lines, we can remove repeated lines and count the repeats to show daily totals.
+# * `awk '{}'`
+#   - Format the output.
 git log --reverse | grep Date | awk '{print $6 OFS $3 OFS $4}' | uniq -c | awk '{print $3 OFS $4 OFS $2 OFS $1}'
