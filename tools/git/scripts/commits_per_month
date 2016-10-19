@@ -7,9 +7,11 @@
 # * `grep Date`
 #   - Extract the line which begins with `Date` from each log.
 # * `awk '{}'`
-#   - From each date line, extract the month (`$3`).
-# * `sort -M`
-#   - Sort by month name.
+#   - From each date line, extract the month (`$3`) and year (`$6`).
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
 # * `uniq -c`
 #   - Remove repeated lines and count the repeats to show monthly totals.
-git log | grep Date | awk '{print $3}' | sort -M | uniq -c | awk '{print $2 OFS $1}'
+# * `awk '{}'`
+#   - Format the output.
+git log | grep Date | awk '{print $6 OFS $3}' | sort -k1n -k2M | uniq -c | awk '{print $3 OFS $2 OFS $1}'
