@@ -20,7 +20,7 @@ shortstats="${root}/tools/git/scripts/shortstats"
 {
 	day = $5 OFS $2 OFS $3
 
-	# Update daily totals:
+	# Update daily totals per author:
 	lines[day,$6,$7] += $9
 }
 END {
