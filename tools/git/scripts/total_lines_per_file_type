@@ -1,0 +1,176 @@
+#!/usr/bin/env bash
+#
+# Prints an approximate number of total lines per file type.
+#
+# Notes:
+#
+# * Results should NOT be confused with source lines of code (SLOC). This implementation measures absolute file length.
+# * `README.md` files are included in Markdown totals.
+
+# * `git ls-files`
+#   - List indexed files.
+# * `xargs wc -l`
+#   - Compute the number of lines within each file.
+# * `awk '{}'`
+#   - Compute totals.
+# * `sort -nr`
+#   - Sort in reverse numeric order.
+git ls-files | xargs wc -l | awk '
+# Special cases...
+$2 ~ /^total$/ {
+	lines["total"] += $1
+	next
+}
+/(LICENSE|NOTICE)$/ {
+	lines["LICENSE"] += $1
+	next
+}
+/datapackage\.json$/ {
+	lines["datapackage.json"] += $1
+	next
+}
+/package\.json$/ {
+	lines["package.json"] += $1
+	next
+}
+
+# Known file extensions (keep in alphabetical order)...
+/\.awk$/ {
+	lines["AWK"] += $1
+	next
+}
+/\.bib$/ {
+	lines["BibTeX"] += $1
+	next
+}
+/\.c$/ {
+	lines["C"] += $1
+	next
+}
+/\.cpp$/ {
+	lines["C++"] += $1
+	next
+}
+/\.csl$/ {
+	lines["CSL"] += $1
+	next
+}
+/\.css$/ {
+	lines["CSS"] += $1
+	next
+}
+/\.csv$/ {
+	lines["CSV"] += $1
+	next
+}
+/\.eot$/ {
+	lines["fonts"] += $1
+	next
+}
+/\.gif$/ {
+	lines["gif"] += $1
+	next
+}
+/\.go$/ {
+	lines["Go"] += $1
+	next
+}
+/\.h$/ {
+	lines["C"] += $1
+	next
+}
+/\.hpp$/ {
+	lines["C++"] += $1
+	next
+}
+/\.html$/ {
+	lines["HTML"] += $1
+	next
+}
+/\.jl$/ {
+	lines["Julia"] += $1
+	next
+}
+/\.jpg$/ {
+	lines["JPG"] += $1
+	next
+}
+/\.js$/ {
+	lines["JavaScript"] += $1
+	next
+}
+/\.json$/ {
+	lines["JSON"] += $1
+	next
+}
+/Makefile$/ {
+	lines["make"] += $1
+	next
+}
+/\.md$/ {
+	if ($2 ~/README\.md$/) {
+		lines["README"] += $1
+	}
+	lines["Markdown"] += $1
+	next
+}
+/\.mk$/ {
+	lines["make"] += $1
+	next
+}
+/\.png$/ {
+	lines["PNG"] += $1
+	next
+}
+/\.py$/ {
+	lines["Python"] += $1
+	next
+}
+/\.R$/ {
+	lines["R"] += $1
+	next
+}
+/\.sh$/ {
+	lines["bash"] += $1
+	next
+}
+/\.svg$/ {
+	lines["SVG"] += $1
+	next
+}
+/\.txt$/ {
+	lines["plaintext"] += $1
+	next
+}
+/\.woff$/ {
+	lines["fonts"] += $1
+	next
+}
+/\.yml$/ {
+	lines["YAML"] += $1
+	next
+}
+
+# Special cases...
+$2 ~ /^\.([A-Za-z])+$|\/\.([A-Za-z])+$/ {
+	lines["dotfiles"] += $1
+	next
+}
+$2 ~ /\/([A-Za-z0-9_-])+$/ {
+	lines["executables"] += $1
+	next
+}
+
+# Everything else...
+{
+	lines["other"] += $1
+}
+
+END {
+	total = lines["total"]
+	for (k in lines) {
+		n = lines[k];
+		print int(n/total*10000)/10000 OFS n OFS k
+	}
+}
+' | sort -nr
