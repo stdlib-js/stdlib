@@ -21,3 +21,5 @@ median="${root}/tools/awk/median.awk"
 # * `awk '{}'`
 #   - Compute the median number of commits per day.
 git log | grep Date | awk '{print $3 OFS $4 OFS $6}' | uniq -c | awk '{print $1}' | "${median}"
+
+# FIXME: does not include days in which no commits are made!
