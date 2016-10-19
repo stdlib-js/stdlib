@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Prints summary statistic averages per day per author.
+# Prints summary statistic averages per author.
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"
@@ -11,7 +11,7 @@ shortstats="${root}/tools/git/scripts/shortstats"
 # * `shortstats`
 #   - Get summary statistics for each commit.
 # * `awk '{}'`
-#   - Compute daily averages.
+#   - Compute averages.
 "${shortstats}" | awk '
 BEGIN {
 	# Get the date of the first commit:
