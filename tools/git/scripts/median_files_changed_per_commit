@@ -12,4 +12,4 @@ median="${root}/tools/awk/median.awk"
 shortstats="${root}/tools/git/scripts/shortstats"
 
 # Generate shortstats, extract the `files_changed` column, and compute the median:
-"${shortstats}" | awk '{print $4}' | "${median}"
+"${shortstats}" | awk '{print $8}' | "${median}"
