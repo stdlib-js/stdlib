@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Prints the number of indexed files.
+
+# * `git ls-files`
+#   - List indexed files
+# * `wc -l`
+#   - Count the number of lines
+git ls-files | wc -l
