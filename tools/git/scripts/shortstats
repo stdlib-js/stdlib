@@ -2,13 +2,13 @@
 #
 # Prints summary statistics for each commit.
 #
-# <timestamp> <author_first> <author_last> <files_changed> <additions> <deletions>
+# <weekday> <month> <day> <time> <year> <author_first> <author_last> <files_changed> <additions> <deletions>
 
 # * `git log --format --shortstat`
-#   - Extract from the commit log the commit timestamp and the author name, as well as commit summary statistics.
+#   - Extract from the commit log the author date and the author name, as well as commit summary statistics.
 # * `awk '{}'`
 #   - Parse the log results and output as a single line, handling edge cases due to missing data.
-git log --format=format:"%at %aN" --shortstat | awk '
+git log --format=format:"%ad %aN" --date=format:"%a %b %d %T %Y" --shortstat --reverse | awk '
 BEGIN {
 	line = ""
 }
@@ -17,11 +17,11 @@ BEGIN {
 		# Empty lines separate commits (except when no short stats accompany a commit).
 	} else if (line == "") {
 		# Begin processing a new commit...
-		if (NF == 2) {
-			# <timestamp> <author>
-			line = $1 OFS $2 OFS "(null)"
+		if (NF == 6) {
+			# <weekday> <month> <day> <time> <year> <author>
+			line = $0 OFS "(null)"
 		} else {
-			# <timestamp> <author_first_name> <author_last_name>
+			# <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name>
 			line = $0
 		}
 	} else if ($0 ~ /changed/) {
@@ -43,11 +43,11 @@ BEGIN {
 		print line OFS 0 OFS 0 OFS 0
 
 		# Begin processing a new commit...
-		if (NF == 2) {
-			# <timestamp> <author>
-			line = $1 OFS $2 OFS "(null)"
+		if (NF == 5) {
+			# <weekday> <month> <day> <time> <year> <author>
+			line = $0 OFS "(null)"
 		} else {
-			# <timestamp> <author_first_name> <author_last_name>
+			# <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name>
 			line = $0
 		}
 	}
