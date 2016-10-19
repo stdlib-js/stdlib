@@ -12,8 +12,8 @@ shortstats="${root}/tools/git/scripts/shortstats"
 #   - Get summary statistics for each commit.
 # * `awk '{}'`
 #   - Tabulate the daily totals.
-# * `sort -k1n -k2m`
-#   - Sort the first key numerically and sort the second key as a month.
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
 # * `awk '{}'`
 #   - Format the output.
 "${shortstats}" | awk '
