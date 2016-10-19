@@ -19,15 +19,11 @@ shortstats="${root}/tools/git/scripts/shortstats"
 # * `awk '{}'`
 #   - Format the output.
 "${shortstats}" | awk '
-BEGIN {
-	scalar = 60 * 60 * 24
-}
 {
-	# Round a Unix timestamp to the nearest day:
-	ts = int($1/scalar) * scalar
+	day = $5 OFS $2 OFS $3
 
 	# Update daily totals:
-	lines[ts,$2,$3] += $5
+	lines[day,$6,$7] += $9
 }
 END {
 	for (k in lines) {
@@ -35,4 +31,4 @@ END {
 		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
 	}
 }
-' | sort -n | perl -pe 's/(\d+)/localtime($1)/e' | awk '{print $2 OFS $3 OFS $5 OFS $6 OFS $7 OFS $8}'
+' | sort -k1n -k2M | awk '{print $2 OFS $3 OFS $1 OFS $4 OFS $5 OFS $6}'
