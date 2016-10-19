@@ -11,19 +11,18 @@ shortstats="${root}/tools/git/scripts/shortstats"
 # * `shortstats`
 #   - Get summary statistics for each commit.
 # * `awk '{}'`
-#   - Extract the commit timestamp and number of deletions.
-# * `perl -pe ''`
-#   - Convert each Unix timestamp to a date string.
-# * `awk '{}'`
 #   - Tabulate the monthly totals.
-# * `sort -M`
-#   - Sort by month name.
-"${shortstats}" | awk '{print $1 OFS $6}' | perl -pe 's/(\d+)/localtime($1)/e' | awk '
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
+# * `awk '{}'`
+#   - Format the output.
+"${shortstats}" | awk '
 {
-	lines[$2] += $6
+	mon = $5 OFS $2
+	lines[mon] += $10
 }
 END {
 	for (mon in lines) {
 		print mon OFS lines[mon]
 	}
-}' | sort -M
+}' | sort -k1n -k2M | awk '{print $2 OFS $1 OFS $3}'
