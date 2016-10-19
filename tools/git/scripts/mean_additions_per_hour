@@ -14,16 +14,16 @@
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"
 
-# Define the path to a utility to generate commit short stats:
-shortstats="${root}/tools/git/scripts/shortstats"
+# Define the path to a utility to compute the number of additions per hour:
+additions="${root}/tools/git/scripts/additions_per_hour"
 
-# * `shortstats`
-#   - Get summary statistics for each commit.
+# * `additions`
+#   - Compute the number of additions per hour.
 # * `awk '{}'`
 #   - Compute hourly averages.
 # * `sort -n`
 #   - Sort in numerical order.
-"${shortstats}" | awk '
+"${additions}" | awk '
 BEGIN {
 	# Get the date of the first commit:
 	cmd = "git log --reverse --date=short | grep Date | head -n 1"
@@ -44,16 +44,7 @@ BEGIN {
 	num = daynum(t1[1], t2[1], 0+t1[2], 0+t2[2], 0+t1[3], 0+t2[3])
 }
 {
-	split($4, time, ":")
-	hr = time[1]
-
-	# Update the hourly totals:
-	lines[hr] += $9
-}
-END {
-	for (hr in lines) {
-		print hr OFS lines[hr]/num
-	}
+	print $1 OFS $2/num
 }
 
 # Computes the number of days between a start date and an end date.
