@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#
+# Prints the sample standard deviation of deletions per commit.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# Define the path to a utility to compute a sample standard deviation:
+stdev="${root}/tools/awk/stdev.awk"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Extract the `deletions` column.
+# * `stdev`
+#   - Compute sample standard deviation.
+"${shortstats}" | awk '{print $10}' | "${stdev}"
