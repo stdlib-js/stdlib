@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of commits per day.
+#
+# <month> <day> <year> <number_of_commits>
 
 # * `git log --reverse`
 #   - Show commit logs in reverse order.
