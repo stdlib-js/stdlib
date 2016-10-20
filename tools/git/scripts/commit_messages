@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+# Prints commits messages.
+#
+# <weekday> <month> <day> <time> <year> <author_first> <author_last> <message>
+
+# * `git log`
+#   - Show the commit message for each commit
+git log --format=format:"%ad %aN %s" --date=format:"%a %b %d %T %Y" --reverse --use-mailmap
