@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+#
+# Computes a commit size distribution.
+#
+# References:
+#
+# * Riehle, Dirk, Carsten Kolassa, and Michel A. Salim. 2012. "Developer Belief vs. Reality: The Case of the Commit Size Distribution." *Software Engineering 2012, GI-Edition Lecture Notes in Informatics* abs/1408.4644: 59–70. <http://arxiv.org/abs/1408.4644>.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Generate distribution.
+# * `sort -n`
+#   - Sort in numeric order.
+"${shortstats}" | awk '
+{
+	lower_bound = max($9,$10)
+	upper_bound = $9 + $10
+	size = (lower_bound + upper_bound) / 2
+
+	sizes[size] += 1
+}
+END {
+	for (s in sizes) {
+		print s OFS sizes[s]
+	}
+}
+
+function max(a, b) {
+	if (a > b) {
+		return a
+	}
+	return b
+}
+' | sort -n
