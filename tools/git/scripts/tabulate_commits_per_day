@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# Prints a frequency table of number of commits per day.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate a frequency table:
+tabulate="${root}/tools/awk/tabulate.awk"
+
+# Define the path to a utility to compute the number of commits per day:
+commits_per_day="${root}/tools/git/scripts/commits_per_day"
+
+# Compute commits per day, extract the counts column, generate a frequency table, and sort in numeric order:
+"${commits_per_day}" | awk '{print $4}' | "${tabulate}" | sort -n
+
+# FIXME: does not account for days with no commits!
