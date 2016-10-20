@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Prints a frequency table of commit message length.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate a frequency table:
+tabulate="${root}/tools/awk/tabulate.awk"
+
+# * `git log`
+#   - Get commit messages
+# * `awk '{}'`
+#   - Compute the message length.
+# * `${tabulate}`
+#   - Generate a frequency table.
+# * `sort -n`
+#   - Sort in numeric order.
+git log --format=format:"%s" | awk '{print length($0)}' | "${tabulate}" | sort -n
