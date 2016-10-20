@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#
+# Prints the average commit message length per hour.
+
+# * `git log`
+#   - Print commit messages.
+# * `awk '{}'`
+#   - Compute hourly averages.
+# * `sort -n`
+#   - Sort in numerical order.
+git log --format=format:"%ad %s" --date=format:"%T" | awk '
+{
+	split($1, time, ":")
+	hr = time[1]
+	sum[hr] += length($0) - 9 # "HH:MM:SS "
+	N[hr] += 1
+}
+END {
+	for (hr in sum) {
+		print hr OFS sum[hr]/N[hr]
+	}
+}
+' | sort -n
