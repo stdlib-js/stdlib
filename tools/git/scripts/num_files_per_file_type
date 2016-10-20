@@ -168,7 +168,8 @@ END {
 	print 1 OFS total OFS "total"
 	for (k in lines) {
 		n = lines[k]
-		print int(n/total*10000)/10000 OFS n OFS k
+		pct = int(n/total*10000)/10000
+		print pct OFS n OFS k
 	}
 }
 ' | sort -nr
