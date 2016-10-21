@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+#
+# Computes a commit interval distribution.
+#
+# References:
+#
+# * Kolassa, Carsten, Dirk Riehle, and Michel A. Salim. 2013. "The Empirical Commit Frequency Distribution of Open Source Projects." In *Proceedings of the 9th International Symposium on Open Collaboration*, 18:1–:8. WikiSym '13. New York, NY, USA: ACM. doi:[10.1145/2491055.2491073](http://dx.doi.org/10.1145/2491055.2491073).
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute commit intervals:
+commit_intervals="${root}/tools/git/scripts/commit_intervals"
+
+# * `commit_intervals`
+#   - Get commit intervals (in seconds).
+# * `awk '{}'`
+#   - Generate distribution.
+# * `sort -n`
+#   - Sort in numeric order.
+"${commit_intervals}" | awk '
+BEGIN {
+	hr = 60 * 60
+}
+
+{
+	# Round interval to nearest hour:
+	bin = int($0/hr + 0.5)
+	hist[bin] += 1
+}
+
+END {
+	for (bin in hist) {
+		print bin OFS hist[bin]
+	}
+}
+' | sort -n
