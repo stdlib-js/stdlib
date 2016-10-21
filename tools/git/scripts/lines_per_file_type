@@ -26,6 +26,7 @@ $3 ~ /README\.md$/ {
 	lines["README"] += $2
 	N["README"] += 1
 }
+
 {
 	lines[$1] += $2
 	N[$1] += 1
