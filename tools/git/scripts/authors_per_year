@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Prints the number of authors per month.
+# Prints the number of authors per year.
 #
 # <year> <number_of_authors>
 
