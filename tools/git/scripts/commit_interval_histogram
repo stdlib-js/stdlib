@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Computes a commit interval distribution.
+# Computes a commit interval histogram.
 #
 # References:
 #
@@ -15,7 +15,7 @@ commit_intervals="${root}/tools/git/scripts/commit_intervals"
 # * `commit_intervals`
 #   - Get commit intervals (in seconds).
 # * `awk '{}'`
-#   - Generate distribution.
+#   - Generate histogram.
 # * `sort -n`
 #   - Sort in numeric order.
 "${commit_intervals}" | awk '
