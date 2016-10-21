@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#
+# Prints the number of authors per day.
+#
+# <weekday> <month> <day> <year> <number_of_authors>
+
+# * `git log`
+#   - Show logs.
+# * `awk '{}'`
+#   - Compute number of authors per day.
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
+# * `awk '{}'`
+#   - Format the output.
+git log --format=format:"%ad %aN" --date=format:"%a %b %d %T %Y" --use-mailmap | awk '
+{
+	day = $5 OFS $2 OFS $3
+	name = $6 $7
+	key = day SUBSEP name
+	if (key in lines) {
+		next
+	}
+	lines[day,name] = 1
+	counts[day] += 1
+}
+
+END {
+	for (day in counts) {
+		print day OFS counts[day]
+	}
+}
+'  | sort -k1n -k2M | awk '{print $2 OFS $3 OFS $1 OFS $4}'
