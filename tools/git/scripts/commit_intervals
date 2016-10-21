@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#
+# Prints commit intervals (in seconds).
+#
+# <interval>
+
+# * `git log`
+#   - Show the commit timestamp for each commit.
+# * `awk '{}'`
+#   - Compute the interval since the last commit,
+git log --format=format:"%at" --reverse | awk '
+NR == 1 {
+	prev = $0
+	next
+}
+
+{
+	print $0 - prev
+	prev = $0
+}
+'
