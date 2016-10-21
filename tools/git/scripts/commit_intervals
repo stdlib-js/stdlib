@@ -10,9 +10,11 @@
 
 # * `git log`
 #   - Show the commit timestamp for each commit.
+# * `sort -n`
+#   - Sort in numeric order.
 # * `awk '{}'`
 #   - Compute the interval since the last commit,
-git log --format=format:"%at" --reverse | awk '
+git log --format=format:"%at" --reverse | sort -n | awk '
 NR == 1 {
 	prev = $0
 	next
