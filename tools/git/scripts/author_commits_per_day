@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of commits per day per author.
+#
+# <month> <day> <year> <author_first_name> <author_last_name> <number_of_commits>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

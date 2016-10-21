@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of additions per month per author.
+#
+# <month> <year> <author_first_name> <author_last_name> <additions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

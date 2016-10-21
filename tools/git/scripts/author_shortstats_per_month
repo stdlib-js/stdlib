@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the summary statistics per month per author.
+#
+# <month> <year> <author_first_name> <author_last_name> <num_commits> <files_changed> <additions> <deletions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"
@@ -32,4 +34,4 @@ END {
 		print keys[1] OFS keys[2] OFS keys[3] OFS commits[k] OFS files[k] OFS additions[k] OFS deletions[k]
 	}
 }
-' | sort -k1n -k2M | awk '{print $2 OFS $1 OFS $3 OFS $4 OFS $5 OFS $6 OFS $7 OFS $8 OFS $9}'
+' | sort -k1n -k2M | awk '{print $2 OFS $1 OFS $3 OFS $4 OFS $5 OFS $6 OFS $7 OFS $8}'

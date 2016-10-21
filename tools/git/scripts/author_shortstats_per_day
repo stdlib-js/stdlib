@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the summary statistics per day per author.
+#
+# <month> <day> <year> <author_first_name> <author_last_name> <num_commits> <files_changed> <additions> <deletions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

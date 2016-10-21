@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
-# Prints the number of deletions per day per author.
+# Prints the number of deletions per day per author
+#
+# <month> <day> <year> <author_first_name> <author_last_name> <deletions>.
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

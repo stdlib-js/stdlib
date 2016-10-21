@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of additions per month.
+#
+# <month> <year> <additions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

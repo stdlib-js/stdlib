@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of additions per hour.
+#
+# <hour> <additions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"
