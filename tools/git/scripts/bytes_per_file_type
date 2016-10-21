@@ -8,199 +8,25 @@
 #
 # * `README.md` files are included in Markdown statistics.
 
-# * `git ls-files`
-#   - List indexed files.
-# * `ls -l`
-#   - Print file info, which includes number of bytes.
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of bytes per file:
+bytes_per_file="${root}/tools/git/scripts/bytes_per_file"
+
+# * `bytes_per_files`
+#   - Compute the number of bytes per file.
 # * `awk '{}'`
 #   - Compute statistics.
 # * `sort -nr`
 #   - Sort in reverse numeric order.
-git ls-files | xargs ls -l | awk '
+"${bytes_per_file}" | awk '
 {
-	bytes["total"] += $5
+	bytes[$1] += $2
+	N[$1] += 1
+
+	bytes["total"] += $2
 	N["total"] += 1
-}
-
-# Special cases...
-/(LICENSE|NOTICE)$/ {
-	bytes["LICENSE"] += $5
-	N["LICENSE"] += 1
-	next
-}
-/datapackage\.json$/ {
-	bytes["datapackage.json"] += $5
-	N["datapackage.json"] += 1
-	next
-}
-/package\.json$/ {
-	bytes["package.json"] += $5
-	N["package.json"] += 1
-	next
-}
-
-# Known file extensions (keep in alphabetical order)...
-/\.awk$/ {
-	bytes["AWK"] += $5
-	N["AWK"] += 1
-	next
-}
-/\.bib$/ {
-	bytes["BibTeX"] += $5
-	N["BibTeX"] += 1
-	next
-}
-/\.c$/ {
-	bytes["C"] += $5
-	N["C"] += 1
-	next
-}
-/\.cpp$/ {
-	bytes["C++"] += $5
-	N["C++"] += 1
-	next
-}
-/\.csl$/ {
-	bytes["CSL"] += $5
-	N["CSL"] += 1
-	next
-}
-/\.css$/ {
-	bytes["CSS"] += $5
-	N["CSS"] += 1
-	next
-}
-/\.csv$/ {
-	bytes["CSV"] += $5
-	N["CSV"] += 1
-	next
-}
-/\.eot$/ {
-	bytes["fonts"] += $5
-	N["fonts"] += 1
-	next
-}
-/\.gif$/ {
-	bytes["gif"] += $5
-	N["gif"] += 1
-	next
-}
-/\.go$/ {
-	bytes["Go"] += $5
-	N["Go"] += 1
-	next
-}
-/\.h$/ {
-	bytes["C"] += $5
-	N["C"] += 1
-	next
-}
-/\.hpp$/ {
-	bytes["C++"] += $5
-	N["C++"] += 1
-	next
-}
-/\.html$/ {
-	bytes["HTML"] += $5
-	N["HTML"] += 1
-	next
-}
-/\.jl$/ {
-	bytes["Julia"] += $5
-	N["Julia"] += 1
-	next
-}
-/\.jpg$/ {
-	bytes["JPG"] += $5
-	N["JPG"] += 1
-	next
-}
-/\.js$/ {
-	bytes["JavaScript"] += $5
-	N["JavaScript"] += 1
-	next
-}
-/\.json$/ {
-	bytes["JSON"] += $5
-	N["JSON"] += 1
-	next
-}
-/Makefile$/ {
-	bytes["make"] += $5
-	N["make"] += 1
-	next
-}
-/\.md$/ {
-	if ($9 ~/README\.md$/) {
-		bytes["README"] += $5
-		N["README"] += 1
-	}
-	bytes["Markdown"] += $5
-	N["Markdown"] += 1
-	next
-}
-/\.mk$/ {
-	bytes["make"] += $5
-	N["make"] += 1
-	next
-}
-/\.png$/ {
-	bytes["PNG"] += $5
-	N["PNG"] += 1
-	next
-}
-/\.py$/ {
-	bytes["Python"] += $5
-	N["Python"] += 1
-	next
-}
-/\.R$/ {
-	bytes["R"] += $5
-	N["R"] += 1
-	next
-}
-/\.sh$/ {
-	bytes["bash"] += $5
-	N["bash"] += 1
-	next
-}
-/\.svg$/ {
-	bytes["SVG"] += $5
-	N["SVG"] += 1
-	next
-}
-/\.txt$/ {
-	bytes["plaintext"] += $5
-	N["plaintext"] += 1
-	next
-}
-/\.woff$/ {
-	bytes["fonts"] += $5
-	N["fonts"] += 1
-	next
-}
-/\.yml$/ {
-	bytes["YAML"] += $5
-	N["YAML"] += 1
-	next
-}
-
-# Special cases...
-$9 ~ /^\.([A-Za-z])+$|\/\.([A-Za-z])+$/ {
-	bytes["dotfiles"] += $5
-	N["dotfiles"] += 1
-	next
-}
-$9 ~ /\/([A-Za-z0-9_-])+$/ {
-	bytes["executables"] += $5
-	N["executables"] += 1
-	next
-}
-
-# Everything else...
-{
-	bytes["other"] += $5
-	N["other"] += 1
 }
 
 END {
