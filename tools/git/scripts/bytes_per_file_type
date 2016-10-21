@@ -21,6 +21,11 @@ bytes_per_file="${root}/tools/git/scripts/bytes_per_file"
 # * `sort -nr`
 #   - Sort in reverse numeric order.
 "${bytes_per_file}" | awk '
+$3 ~ /README\.md$/ {
+	bytes["README"] += $2
+	N["README"] += 1
+}
+
 {
 	bytes[$1] += $2
 	N[$1] += 1
