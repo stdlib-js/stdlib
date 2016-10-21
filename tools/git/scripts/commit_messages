@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Prints commits messages.
+# Prints commit messages.
 #
 # <weekday> <month> <day> <time> <year> <author_first> <author_last> <message>
 
