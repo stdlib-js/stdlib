@@ -1,0 +1,156 @@
+#!/usr/bin/env bash
+#
+# Prints the number of bytes in a file.
+#
+# <file_type> <number_of_bytes> <file_path>
+
+# * `git ls-files`
+#   - List indexed files.
+# * `ls -l`
+#   - Print file info, which includes number of bytes.
+# * `awk '{}'`
+#   - Format output.
+git ls-files | xargs ls -l | awk '
+# Special cases...
+/(LICENSE|NOTICE)$/ {
+	print "LICENSE" OFS $5 OFS $9
+	next
+}
+/datapackage\.json$/ {
+	print "datapackage.json" OFS $5 OFS $9
+	next
+}
+/package\.json$/ {
+	print "package.json" OFS $5 OFS $9
+	next
+}
+
+# Known file extensions (keep in alphabetical order)...
+/\.awk$/ {
+	print "AWK" OFS $5 OFS $9
+	next
+}
+/\.bib$/ {
+	print "BibTeX" OFS $5 OFS $9
+	next
+}
+/\.c$/ {
+	print "C" OFS $5 OFS $9
+	next
+}
+/\.cpp$/ {
+	print "C++" OFS $5 OFS $9
+	next
+}
+/\.csl$/ {
+	print "CSL" OFS $5 OFS $9
+	next
+}
+/\.css$/ {
+	print "CSS" OFS $5 OFS $9
+	next
+}
+/\.csv$/ {
+	print "CSV" OFS $5 OFS $9
+	next
+}
+/\.eot$/ {
+	print "fonts" OFS $5 OFS $9
+	next
+}
+/\.gif$/ {
+	print "gif" OFS $5 OFS $9
+	next
+}
+/\.go$/ {
+	print "Go" OFS $5 OFS $9
+	next
+}
+/\.h$/ {
+	print "C" OFS $5 OFS $9
+	next
+}
+/\.hpp$/ {
+	print "C++" OFS $5 OFS $9
+	next
+}
+/\.html$/ {
+	print "HTML" OFS $5 OFS $9
+	next
+}
+/\.jl$/ {
+	print "Julia" OFS $5 OFS $9
+	next
+}
+/\.jpg$/ {
+	print "JPG" OFS $5 OFS $9
+	next
+}
+/\.js$/ {
+	print "JavaScript" OFS $5 OFS $9
+	next
+}
+/\.json$/ {
+	print "JSON" OFS $5 OFS $9
+	next
+}
+/Makefile$/ {
+	print "make" OFS $5 OFS $9
+	next
+}
+/\.md$/ {
+	print "Markdown" OFS $5 OFS $9
+	next
+}
+/\.mk$/ {
+	print "make" OFS $5 OFS $9
+	next
+}
+/\.png$/ {
+	print "PNG" OFS $5 OFS $9
+	next
+}
+/\.py$/ {
+	print "Python" OFS $5 OFS $9
+	next
+}
+/\.R$/ {
+	print "R" OFS $5 OFS $9
+	next
+}
+/\.sh$/ {
+	print "bash" OFS $5 OFS $9
+	next
+}
+/\.svg$/ {
+	print "SVG" OFS $5 OFS $9
+	next
+}
+/\.txt$/ {
+	print "plaintext" OFS $5 OFS $9
+	next
+}
+/\.woff$/ {
+	print "fonts" OFS $5 OFS $9
+	next
+}
+/\.yml$/ {
+	print "YAML" OFS $5 OFS $9
+	next
+}
+
+# Special cases...
+$9 ~ /^\.([A-Za-z])+$|\/\.([A-Za-z])+$/ {
+	print "dotfiles" OFS $5 OFS $9
+	next
+}
+$9 ~ /\/([A-Za-z0-9_-])+$/ {
+	print "executables" OFS $5 OFS $9
+	next
+}
+
+# Everything else...
+{
+	print "OTHER" OFS $5 OFS $9
+}
+'
