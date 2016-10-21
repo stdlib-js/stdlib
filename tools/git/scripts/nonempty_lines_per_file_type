@@ -22,6 +22,11 @@ nonempty_lines_per_file="${root}/tools/git/scripts/nonempty_lines_per_file"
 # * `sort -nr`
 #   - Sort in reverse numeric order.
 "${nonempty_lines_per_file}" | awk '
+$3 ~ /README\.md$/ {
+	lines["README"] += $2
+	N["README"] += 1
+}
+
 {
 	lines[$1] += $2
 	N[$1] += 1
