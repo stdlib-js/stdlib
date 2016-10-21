@@ -9,201 +9,25 @@
 # * Results should NOT be confused with source lines of code (SLOC). This implementation measures only the number of nonempty lines.
 # * `README.md` files are included in Markdown statistics.
 
-# * `git ls-files`
-#   - List indexed files.
-# * `xargs grep -c -v '^$'`
-#   - Count the number of nonempty lines within each file.
-# * `sed 's//\2 \1/'`
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of nonempty lines per file:
+nonempty_lines_per_file="${root}/tools/git/scripts/nonempty_lines_per_file"
+
+# * `nonempty_lines_per_file`
 #   - Split on the file name and count separator and reverse the arguments.
 # * `awk '{}'`
 #   - Compute statistics.
 # * `sort -nr`
 #   - Sort in reverse numeric order.
-git ls-files |  xargs grep -c -v '^$'| sed 's/\(.*\):\([0-9]\{1,\}\)/\2 \1/' | awk '
+"${nonempty_lines_per_file}" | awk '
 {
-	lines["total"] += $1
+	lines[$1] += $2
+	N[$1] += 1
+
+	lines["total"] += $2
 	N["total"] += 1
-}
-
-# Special cases...
-/(LICENSE|NOTICE)$/ {
-	lines["LICENSE"] += $1
-	N["LICENSE"] += 1
-	next
-}
-/datapackage\.json$/ {
-	lines["datapackage.json"] += $1
-	N["datapackage.json"] += 1
-	next
-}
-/package\.json$/ {
-	lines["package.json"] += $1
-	N["package.json"] += 1
-	next
-}
-
-# Known file extensions (keep in alphabetical order)...
-/\.awk$/ {
-	lines["AWK"] += $1
-	N["AWK"] += 1
-	next
-}
-/\.bib$/ {
-	lines["BibTeX"] += $1
-	N["BibTeX"] += 1
-	next
-}
-/\.c$/ {
-	lines["C"] += $1
-	N["C"] += 1
-	next
-}
-/\.cpp$/ {
-	lines["C++"] += $1
-	N["C++"] += 1
-	next
-}
-/\.csl$/ {
-	lines["CSL"] += $1
-	N["CSL"] += 1
-	next
-}
-/\.css$/ {
-	lines["CSS"] += $1
-	N["CSS"] += 1
-	next
-}
-/\.csv$/ {
-	lines["CSV"] += $1
-	N["CSV"] += 1
-	next
-}
-/\.eot$/ {
-	lines["fonts"] += $1
-	N["fonts"] += 1
-	next
-}
-/\.gif$/ {
-	lines["gif"] += $1
-	N["gif"] += 1
-	next
-}
-/\.go$/ {
-	lines["Go"] += $1
-	N["Go"] += 1
-	next
-}
-/\.h$/ {
-	lines["C"] += $1
-	N["C"] += 1
-	next
-}
-/\.hpp$/ {
-	lines["C++"] += $1
-	N["C++"] += 1
-	next
-}
-/\.html$/ {
-	lines["HTML"] += $1
-	N["HTML"] += 1
-	next
-}
-/\.jl$/ {
-	lines["Julia"] += $1
-	N["Julia"] += 1
-	next
-}
-/\.jpg$/ {
-	lines["JPG"] += $1
-	N["JPG"] += 1
-	next
-}
-/\.js$/ {
-	lines["JavaScript"] += $1
-	N["JavaScript"] += 1
-	next
-}
-/\.json$/ {
-	lines["JSON"] += $1
-	N["JSON"] += 1
-	next
-}
-/Makefile$/ {
-	lines["make"] += $1
-	N["make"] += 1
-	next
-}
-/\.md$/ {
-	if ($2 ~/README\.md$/) {
-		lines["README"] += $1
-		N["README"] += 1
-	}
-	lines["Markdown"] += $1
-	N["Markdown"] += 1
-	next
-}
-/\.mk$/ {
-	lines["make"] += $1
-	N["make"] += 1
-	next
-}
-/\.png$/ {
-	lines["PNG"] += $1
-	N["PNG"] += 1
-	next
-}
-/\.py$/ {
-	lines["Python"] += $1
-	N["Python"] += 1
-	next
-}
-/\.R$/ {
-	lines["R"] += $1
-	N["R"] += 1
-	next
-}
-/\.sh$/ {
-	lines["bash"] += $1
-	N["bash"] += 1
-	next
-}
-/\.svg$/ {
-	lines["SVG"] += $1
-	N["SVG"] += 1
-	next
-}
-/\.txt$/ {
-	lines["plaintext"] += $1
-	N["plaintext"] += 1
-	next
-}
-/\.woff$/ {
-	lines["fonts"] += $1
-	N["fonts"] += 1
-	next
-}
-/\.yml$/ {
-	lines["YAML"] += $1
-	N["YAML"] += 1
-	next
-}
-
-# Special cases...
-$2 ~ /^\.([A-Za-z])+$|\/\.([A-Za-z])+$/ {
-	lines["dotfiles"] += $1
-	N["dotfiles"] += 1
-	next
-}
-$2 ~ /\/([A-Za-z0-9_-])+$/ {
-	lines["executables"] += $1
-	N["executables"] += 1
-	next
-}
-
-# Everything else...
-{
-	lines["other"] += $1
-	N["other"] += 1
 }
 
 END {
