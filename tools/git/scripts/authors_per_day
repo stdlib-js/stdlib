@@ -12,10 +12,10 @@
 #   - Sort the year numerically and sort the second key as a month.
 # * `awk '{}'`
 #   - Format the output.
-git log --format=format:"%ad %aN" --date=format:"%a %b %d %T %Y" --use-mailmap | awk '
+git log --format=format:"%ad %aN" --date=format:"%b %d %Y" --use-mailmap | awk '
 {
-	day = $5 OFS $2 OFS $3
-	name = $6 $7
+	day = $3 OFS $1 OFS $2
+	name = $4 $5
 	key = day SUBSEP name
 	if (key in lines) {
 		next
