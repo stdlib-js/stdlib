@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Computes the mean commit interval.
+# Computes the mean commit interval (in seconds).
 #
 # References:
 #

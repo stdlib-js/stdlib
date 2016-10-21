@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Computes the median commit interval.
+# Computes the median commit interval (in seconds).
 #
 # References:
 #
