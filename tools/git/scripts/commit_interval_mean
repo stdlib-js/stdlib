@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# Computes the mean commit interval.
+#
+# References:
+#
+# * Kolassa, Carsten, Dirk Riehle, and Michel A. Salim. 2013. "The Empirical Commit Frequency Distribution of Open Source Projects." In *Proceedings of the 9th International Symposium on Open Collaboration*, 18:1–:8. WikiSym '13. New York, NY, USA: ACM. doi:[10.1145/2491055.2491073](http://dx.doi.org/10.1145/2491055.2491073).
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute commit intervals:
+commit_intervals="${root}/tools/git/scripts/commit_intervals"
+
+# Define the path to a utility to compute the arithmetic mean:
+mean="${root}/tools/awk/mean.awk"
+
+# * `commit_intervals`
+#   - Compute commit intervals.
+# * `mean`
+#   - Compute the mean.
+"${commit_intervals}" | "${mean}"
