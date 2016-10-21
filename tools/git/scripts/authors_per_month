@@ -2,7 +2,7 @@
 #
 # Prints the number of authors per month.
 #
-# <weekday> <month> <year> <number_of_authors>
+# <month> <year> <number_of_authors>
 
 # * `git log`
 #   - Show logs.
@@ -10,8 +10,6 @@
 #   - Compute number of authors per month.
 # * `sort -k1n -k2M`
 #   - Sort the year numerically and sort the second key as a month.
-# * `awk '{}'`
-#   - Format the output.
 git log --format=format:"%ad %aN" --date=format:"%b %Y" --use-mailmap | awk '
 {
 	mon = $1 OFS $2
