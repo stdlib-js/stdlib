@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Prints the mean commit interval per author.
+#
+# <author_first_name> <author_last_name> <avg_interval>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute commit intervals per author:
+commit_intervals="${root}/tools/git/scripts/author_commit_intervals"
+
+# * `commit_intervals`
+#   - Compute commit intervals.
+# * `awk '{}'`
+#   - Compute averages.
+# * `sort -k3n`
+#   - Sort in numeric order based on average interval.
+"${commit_intervals}" | awk '
+{
+	name = $2 OFS $3
+	intervals[name] += $1
+	N[name] += 1
+}
+
+END {
+	for (k in intervals) {
+		v = intervals[k]
+		n = N[k]
+		print k OFS v/n
+	}
+}
+' | sort -k3n
