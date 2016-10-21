@@ -2,7 +2,7 @@
 #
 # Prints an approximate number of nonempty lines per file type.
 #
-# <proportion> <total_lines> <number_of_files> <average> <file_type>
+# <percentage> <total_lines> <number_of_files> <average> <file_type>
 #
 # Notes:
 #

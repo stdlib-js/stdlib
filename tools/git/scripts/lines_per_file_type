@@ -2,7 +2,7 @@
 #
 # Prints an approximate number of lines per file type.
 #
-# <proportion> <total_lines> <number_of_files> <average_length> <file_type>
+# <percentage> <total_lines> <number_of_files> <average_length> <file_type>
 #
 # Notes:
 #
