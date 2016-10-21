@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints summary statistic averages.
+#
+# <avg_commits> <avg_files_changed> <avg_additions> <avg_deletions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Extracts the first word from each commit message and ranks each word by frequency.
+#
+# <count> <word>
 
 # * `git log --pretty=format:'%s'`
 #   - Show the commit message for each commit

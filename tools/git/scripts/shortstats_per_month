@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints summary statistics for each month.
+#
+# <month> <year> <files_changed> <additions> <deletions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"
