@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of files changed per month.
+#
+# <month> <year> <files_changed>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

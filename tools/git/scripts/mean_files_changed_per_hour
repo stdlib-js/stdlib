@@ -2,6 +2,8 @@
 #
 # Prints the average number of files changed per hour.
 #
+# <hour> <avg_files_changed>
+#
 # Algorithm:
 #
 # * Determine the total number of files changed that have occurred during each hour.

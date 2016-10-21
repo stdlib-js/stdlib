@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of files changed per weekday.
+#
+# <weekday> <files_changed>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

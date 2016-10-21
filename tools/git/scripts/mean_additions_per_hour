@@ -2,6 +2,8 @@
 #
 # Prints the average number of additions per hour.
 #
+# <hour> <avg_additions>
+#
 # Algorithm:
 #
 # * Determine the total number of additions that have occurred during each hour.

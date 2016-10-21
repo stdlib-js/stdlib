@@ -2,6 +2,8 @@
 #
 # Prints the average number of deletions per hour.
 #
+# <hour> <avg_deletions>
+#
 # Algorithm:
 #
 # * Determine the total number of deletions that have occurred during each hour.

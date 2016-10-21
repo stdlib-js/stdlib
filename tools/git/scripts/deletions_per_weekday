@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of deletions per weekday.
+#
+# <weekday> <deletions>
 
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"

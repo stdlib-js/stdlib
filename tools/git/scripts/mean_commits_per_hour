@@ -2,6 +2,8 @@
 #
 # Prints the average number of commits per hour.
 #
+# <hour> <avg_num_commits>
+#
 # Algorithm:
 #
 # * Determine the total number of commits that have occurred during each hour.

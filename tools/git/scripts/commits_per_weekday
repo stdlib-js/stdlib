@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the number of commits per weekday.
+#
+# <weekday> <num_commits>
 
 # * `git log`
 #   - Show commit logs.

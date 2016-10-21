@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # Prints the average commit message length per hour.
+#
+# <hour> <avg_length>
 
 # * `git log`
 #   - Print commit messages.
