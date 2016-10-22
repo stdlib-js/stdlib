@@ -1222,6 +1222,46 @@ TODO
 
 252. [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
 
+253. [more images](https://github.com/heyalexej/awesome-images): good photos of cats, interesting features for training models, etc
+
+254. git stats
+
+     - [churn](https://gist.github.com/coreyhaines/829932)
+     - [churn](https://github.com/danmayer/churn)
+     - [code-maat](https://github.com/adamtornhill/code-maat)
+
+255. link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
+
+256. [lru](https://github.com/rsms/js-lru) and [node-lru](https://github.com/isaacs/node-lru-cache)
+
+257. [commitizen](https://github.com/commitizen/cz-cli): in place of `git commit`
+
+     - See also [lint](https://github.com/marionebl/conventional-changelog-lint)
+     - [angular convention](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md)
+
+258. [mem](https://github.com/sindresorhus/mem)
+
+259. [once](https://github.com/sindresorhus/onetime/blob/master/index.js)
+
+260. [json-depth-stream](https://github.com/indutny/json-depth-stream)
+
+261. [is-iso-8601](https://github.com/ankane/chartkick.js/blob/master/chartkick.js#L59)
+
+262. Generate a [diff](https://github.com/FormidableLabs/publish-diff) before publishing to `npm`
+
+263. loc per language over time (requires investigating repo at each commit; `git log`, extract commit hash, checkout each hash, run script, move to next hash, etc) => use Node to manage async
+
+264. classifying commits based on commit message [keywords](http://www.inf.usi.ch/faculty/lanza/Downloads/Hatt2008a.pdf)
+
+265. Determine a means to distinguish source code, comments, and empty lines when computing SLOC
+
+     - use to derive a [comment-to-source ratio](https://pdfs.semanticscholar.org/b576/916388512085f74065dd42aa0ffe3690b8f3.pdf)
+     - can extend to source-to-test ratio
+
+266. AWK hist fcn
+
+267. [colormap](https://github.com/bpostlethwaite/colormap)
+
 
 
 ---
@@ -1354,6 +1394,8 @@ TODO
 3. broken math
 4. backward compatibility (and countertrends)
 5. The REPL (why matters)
+6. mining git repos
+7. open open source reporting
 
 
 ---
