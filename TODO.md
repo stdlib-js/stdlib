@@ -1264,7 +1264,7 @@ TODO
 
 268. bring `tape` in-house
 
-269. add datasets to main CLI
+269. 
 
 270. [power-divergence](https://github.com/scipy/scipy/blob/master/scipy/stats/stats.py) and other associated tests
 
@@ -1275,7 +1275,7 @@ TODO
 
 ## Immediate
 
-1. randn
+1. 
 
 2. abstract-ndarray
 
