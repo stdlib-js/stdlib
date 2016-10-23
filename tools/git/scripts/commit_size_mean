@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# Computes a commit size mean.
+#
+# References:
+#
+# * Riehle, Dirk, Carsten Kolassa, and Michel A. Salim. 2012. "Developer Belief vs. Reality: The Case of the Commit Size Distribution." *Software Engineering 2012, GI-Edition Lecture Notes in Informatics* abs/1408.4644: 59–70. <http://arxiv.org/abs/1408.4644>.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute commit sizes:
+commit_sizes="${root}/tools/git/scripts/commit_sizes"
+
+# Define the path to a utility to compute the arithmetic mean:
+mean="${root}/tools/awk/mean.awk"
+
+# * `commit_sizes`
+#   - Compute commit sizes.
+# * `mean`
+#   - Compute the mean.
+"${commit_sizes}" | "${mean}"

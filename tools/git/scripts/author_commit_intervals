@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+#
+# Prints author commit intervals (in seconds).
+#
+# <interval> <author_first_name> <author_last_name>
+#
+# References:
+#
+# * Kolassa, Carsten, Dirk Riehle, and Michel A. Salim. 2013. "The Empirical Commit Frequency Distribution of Open Source Projects." In *Proceedings of the 9th International Symposium on Open Collaboration*, 18:1–:8. WikiSym '13. New York, NY, USA: ACM. doi:[10.1145/2491055.2491073](http://dx.doi.org/10.1145/2491055.2491073).
+
+# * `git log`
+#   - Show the commit timestamp and author for each commit.
+# * `sort -n`
+#   - Sort in numeric order.
+# * `awk '{}'`
+#   - Compute the interval since the last commit,
+git log --format=format:"%at %aN" --reverse | sort -n | awk '
+{
+	ts = $1
+	first = $2
+	if (NF == 2) {
+		last = "(null)"
+	} else {
+		last = $3
+	}
+	key = first OFS last
+	if (key in prev) {
+		print (ts - prev[key]) OFS key
+		prev[key] = ts
+	} else {
+		prev[key] = ts
+	}
+}
+'

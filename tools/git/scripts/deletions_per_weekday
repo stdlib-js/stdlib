@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Prints the number of deletions per weekday.
+#
+# <weekday> <deletions>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the weekday totals.
+"${shortstats}" | awk '
+BEGIN {
+	split("Mon Tue Wed Thu Fri Sat Sun", days);
+}
+{
+	lines[$1] += $10
+}
+END {
+	for (i = 1; i <= 7; i++) {
+		print days[i] OFS lines[days[i]]
+	}
+}'

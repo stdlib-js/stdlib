@@ -18,6 +18,7 @@ Usage: make <cmd>
   make list-licenses          List licenses of installed package dependencies.
   make list-deps-licenses     List root package dependency licenses.
   make list-licenses-summary  Generate a license summary.
+  make list-contributors      List contributors.
   make examples               Run examples.
   make test                   Run tests.
   make test-summary           Run tests and output a test summary.
@@ -30,6 +31,7 @@ Usage: make <cmd>
   make src-docs               Generate source documentation.
   make view-src-docs          View source documentation.
   make markdown-equations     Process Markdown equations.
+  make citation-reference     Return a citation reference.
   make lint                   Lint files.
   make lint-markdown          Lint Markdown files.
   make lint-javascript        Lint JavaScript files.

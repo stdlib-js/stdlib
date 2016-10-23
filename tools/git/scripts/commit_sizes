@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+#
+# Computes a commit size.
+#
+# Notes:
+#
+# * This is not an exact implementation of the measure described by Riehle, et al. Notably, here, the size may include empty lines, which are explicitly omitted in their measure.
+#
+# References:
+#
+# * Riehle, Dirk, Carsten Kolassa, and Michel A. Salim. 2012. "Developer Belief vs. Reality: The Case of the Commit Size Distribution." *Software Engineering 2012, GI-Edition Lecture Notes in Informatics* abs/1408.4644: 59–70. <http://arxiv.org/abs/1408.4644>.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Compute commit size.
+"${shortstats}" | awk '
+{
+	lower_bound = max($9,$10)
+	upper_bound = $9 + $10
+	print (lower_bound + upper_bound) / 2
+}
+
+function max(a, b) {
+	if (a > b) {
+		return a
+	}
+	return b
+}
+'

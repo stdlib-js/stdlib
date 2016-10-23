@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+#
+# Computes an intermediate constructive cost model (COCOMO 81).
+#
+# Notes:
+#
+# * COCOMO 81 is meant to include design, specification, review, and management overhead associated with producing quality software.
+# * COCOMO 81 was created to model large institutional projects which may not reflect the nature of distributed open-source projects.
+#
+# References:
+#
+# * [COCOMO](https://en.wikipedia.org/wiki/COCOMO)
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of non-empty lines per file:
+nonempty_lines_per_file="${root}/tools/git/scripts/nonempty_lines_per_file"
+
+#
+"${nonempty_lines_per_file}" | awk '
+BEGIN {
+	# Model coefficients:
+	a_i = 3.2
+	b_i = 1.05
+	c_b = 2.5
+	d_b = 0.38
+
+	# Effort adjustment factors:
+	RSR = 1.15 # required software reliability
+	SAD = 0.94 # size of application database
+	COP = 1.15 # complexity of product
+
+	RTPC = 1.00 # run-time performance constraints
+	MC = 1.00 # memory constraints
+	VVME = 0.87 # volatility of virtual machine environment
+	RTT = 0.87 # required turnabout time
+
+	AC = 0.86 # analyst capability
+	AE = 0.91 # applications experience
+	SEC = 0.86 # software engineer capability
+	VME = 1.00 # virtual machine experience
+	PLE = 0.95 # programming language experience
+
+	ASEM = 0.91 # application of software engineering methods
+	UST = 0.91 # use of software tools
+	RDS = 1.00 # required development schedule
+
+	effort_adjustment_factor = RSR * SAD * COP * RTPC * MC * VVME * RTT * AC * AE * SEC * VME * PLE * ASEM * UST * RDS
+
+	# Assume a ratio of 1:9 delivered code (pkgs) to support code (tests, examples, benchmarks):
+	loc_sf = 0.1;
+
+	# Average annual developer salary (USD):
+	salary = 55000
+}
+
+$1 ~ /JavaScript/ {
+	loc += $2
+}
+
+END {
+	sloc = loc * loc_sf
+	kloc = sloc / 1000
+
+	# Compute the required effort in "man-months":
+	effort_applied = a_i * kloc^b_i * effort_adjustment_factor
+
+	# Compute the development time in months:
+	development_time = c_b * effort_applied^d_b
+
+	# Compute the number of people required:
+	people_required = effort_applied / development_time
+
+	# Compute the cost based on developer salary:
+	cost = people_required * salary * development_time/12
+
+	print "kloc" OFS kloc
+	print "development_time" OFS development_time
+	print "effort_applied" OFS effort_applied
+	print "people_required" OFS people_required
+	print "cost" OFS cost
+}
+'

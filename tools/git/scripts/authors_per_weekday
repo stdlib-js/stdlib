@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+#
+# Prints the number of authors per weekday.
+#
+# <weekday> <total> <average>
+
+# * `git log`
+#   - Show logs.
+# * `awk '{}'`
+#   - Compute average number of authors per weekday.
+git log --format=format:"%ad %aN" --date=format:"%a %b %d %Y" --use-mailmap | awk '
+BEGIN {
+	split("Mon Tue Wed Thu Fri Sat Sun", days);
+
+	# Get the date of the first commit:
+	cmd = "git log --reverse --date=short | grep Date | head -n 1"
+	(cmd | getline tmp)
+	close(cmd)
+
+	split(tmp, date, OFS)
+	split(date[2], t1, "-")
+
+	# Get the date for "now":
+	cmd = "date '\''+%Y %m %d'\''"
+	(cmd | getline now)
+	close(cmd)
+
+	split(now, t2, OFS)
+
+	# Compute the number of days between the first commit and "now":
+	num = daynum(t1[1], t2[1], 0+t1[2], 0+t2[2], 0+t1[3], 0+t2[3])
+}
+
+{
+	day = $4 OFS $2 OFS $3
+	name = $5 $6
+	key = day SUBSEP name
+	if (key in lines) {
+		next
+	}
+	lines[day,name] = 1
+	counts[$1] += 1
+}
+
+END {
+	weeks = int(num/7)
+	for (i = 1; i <= 7; i++) {
+		count = counts[days[i]]
+		print days[i] OFS count OFS count/weeks
+	}
+}
+
+# Computes the number of days between a start date and an end date.
+#
+# Parameters:
+#   y1 - start year
+#   y2 - end year
+#   m1 - start month
+#   m2 - end month
+#   d1 - start day
+#   d2 - end day
+#
+# Returns:
+#   number of days
+#
+function daynum(y1, y2, m1, m2, d1, d2,   days, i, n) {
+	split("31 28 31 30 31 30 31 31 30 31 30 31", days)
+
+	# 365 days in a year, plus one during a leap year:
+	if (y2 > y1) {
+		n = (y2-y1)*365 + int((y2-y1)/4)
+	}
+	# Adjust number of days in February if leap year...
+	if (y2 % 4 == 0) {
+		days[2] += 1
+	}
+	if ( m2 > m1 ) {
+		for (i = m1; i < m2; i++) {
+			n += days[i]
+		}
+	} else if ( m2 < m1 ) {
+		for (i = m1; i >= m2; i--) {
+			n -= days[i]
+		}
+	}
+	return n + d2 - d1
+}
+'

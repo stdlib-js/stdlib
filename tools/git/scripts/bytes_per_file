@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#
+# Prints the number of bytes in a file.
+#
+# <file_type> <number_of_bytes> <file_path>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to annotate a file statistic stream:
+annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
+
+# * `git ls-files`
+#   - List indexed files.
+# * `ls -l`
+#   - Print file info, which includes number of bytes.
+# * `awk '{}'`
+#   - Extract `bytes` and `filename` columns.
+# * `annotate_file_type`
+#   - Prefix each result with a file type.
+git ls-files | xargs ls -l | awk '{print $5 OFS $9}' | "${annotate_file_type}"

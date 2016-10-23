@@ -57,6 +57,7 @@ While not required to run stdlib, the following dependencies may be required for
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
 * [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.7`; clang version `>= 3.1`)
+* [pandoc][pandoc]: universal document converter
 
 <!--
 The following external libraries are automatically downloaded and the compiled from source the first you run `make`:
@@ -209,6 +210,7 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
 [boost]: http://www.boost.org/
+[pandoc]: http://pandoc.org/
 
 [editorconfig]: http://editorconfig.org/
 [editorconfig-chrome]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US

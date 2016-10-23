@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+#
+# Prints the number of additions per month per author.
+#
+# <month> <year> <author_first_name> <author_last_name> <additions>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the monthly totals.
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
+# * `awk '{}'`
+#   - Format the output.
+"${shortstats}" | awk '
+{
+	mon = $5 OFS $2
+
+	# Update monthly totals per author:
+	lines[mon,$6,$7] += $9
+}
+END {
+	for (k in lines) {
+		split(k, keys, SUBSEP)
+		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
+	}
+}
+' | sort -k1n -k2M | awk '{print $2 OFS $1 OFS $3 OFS $4 OFS $5}'

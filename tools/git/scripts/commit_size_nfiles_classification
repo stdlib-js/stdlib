@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+#
+# Classifies commits based on the number of files changed and prints a classification summary.
+#
+# References:
+#
+# * Hattori, Lile P., and Michele Lanza. 2008. "On the nature of commits." In *ASE Workshops 2008. 23rd IEEE/ACM International Conference on Automated Software Engineering - Workshops, 2008.* IEEE. doi:[10.1109/ASEW.2008.4686322](http://dx.doi.org/10.1109/ASEW.2008.4686322).
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Classify sizes.
+# * `sort -k2nr`
+#   - Sort in numeric order.
+"${shortstats}" | awk '
+# Bug fixes, refactorings...
+$8 < 5 {
+	table["tiny"] += 1
+	next
+}
+
+# Adding a new package...
+$8 < 25 {
+	table["small"] += 1
+	next
+}
+
+# Large refactorings...
+$8 < 125 {
+	table["medium"] += 1
+	next
+}
+
+# Everything else...
+{
+	table["large"] += 1
+}
+
+END {
+	for (row in table) {
+		print row OFS table[row]
+	}
+}
+' | sort -k2nr

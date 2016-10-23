@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#
+# Prints the number of files changed per hour.
+#
+# <hour> <files_changed>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the hourly totals.
+# * `sort -n`
+#   - Sort in numerical order.
+"${shortstats}" | awk '
+{
+	split($4, time, ":")
+	hr = time[1]
+	lines[hr] += $8
+}
+END {
+	for (hr in lines) {
+		print hr OFS lines[hr]
+	}
+}
+' | sort -n

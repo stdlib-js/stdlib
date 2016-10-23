@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+#
+# Prints summary statistics for each commit.
+#
+# <weekday> <month> <day> <time> <year> <author_first> <author_last> <files_changed> <additions> <deletions>
+
+# * `git log --format --shortstat`
+#   - Extract from the commit log the author date and the author name, as well as commit summary statistics.
+# * `awk '{}'`
+#   - Parse the log results and output as a single line, handling edge cases due to missing data.
+git log --format=format:"%ad %aN" --date=format:"%a %b %d %T %Y" --shortstat --reverse | awk '
+BEGIN {
+	line = ""
+}
+{
+	if ($0 == "") {
+		# Empty lines separate commits (except when no short stats accompany a commit).
+	} else if (line == "") {
+		# Begin processing a new commit...
+		if (NF == 6) {
+			# <weekday> <month> <day> <time> <year> <author>
+			line = $0 OFS "(null)"
+		} else {
+			# <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name>
+			line = $0
+		}
+	} else if ($0 ~ /changed/) {
+		# Begin processing commit statistics...
+		if (NF < 5) {
+			# <num_files_changed>
+			line = line OFS $1 OFS 0 OFS 0
+		} else if (NF < 7) {
+			# <num_files_changed> <additions>
+			line = line OFS $1 OFS $4 OFS 0
+		} else {
+			# <num_files_changed> <additions> <deletions>
+			line = line OFS $1 OFS $4 OFS $6
+		}
+		print line
+		line = ""
+	} else {
+		# No short stats accompanied the commit processed on the previous line (e.g., commit is a merge):
+		print line OFS 0 OFS 0 OFS 0
+
+		# Begin processing a new commit...
+		if (NF == 5) {
+			# <weekday> <month> <day> <time> <year> <author>
+			line = $0 OFS "(null)"
+		} else {
+			# <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name>
+			line = $0
+		}
+	}
+}
+'
