@@ -1268,6 +1268,8 @@ TODO
 
 270. [power-divergence](https://github.com/scipy/scipy/blob/master/scipy/stats/stats.py) and other associated tests
 
+271. for each push, run an analysis to determine if any SLOC changed. If only comments and/or docs, don't run unit tests.
+
 
 ---
 
