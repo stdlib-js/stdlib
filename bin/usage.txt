@@ -8,6 +8,7 @@ Options:
 Commands:
 
   help [command]               Print a help message.
+  datasets                     Retrieve a dataset.
   ls                           List package names.
   tree                         Show package tree.
   repl                         Start a REPL.

@@ -111,9 +111,10 @@ if ( cmd === 'help' ) {
 	args2[ 1 ] = '--help';
 } else {
 	if (
-		cmd === 'repl' ||
+		cmd === 'datasets' ||
 		cmd === 'ls' ||
-		cmd === 'ls-tree'
+		cmd === 'ls-tree' ||
+		cmd === 'repl'
 	) {
 		cmd = commands[ cmd ];
 		cmd = path.resolve( __dirname, '..', cmd );
