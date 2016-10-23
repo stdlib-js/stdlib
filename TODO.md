@@ -842,6 +842,7 @@ TODO
      * [v8 profiling](https://github.com/thlorenz/v8-profiling)
      * `make` recipe
      * bring the V8 log processor in-house ([tools](https://github.com/v8/v8/tree/master/tools), [wiki](https://github.com/v8/v8/wiki/V8%20Profiler), [outfile](https://bugs.chromium.org/p/chromium/issues/detail?id=432457), [node-tick](https://github.com/sidorares/node-tick))
+     * [heatline](https://github.com/indutny/heatline)
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
