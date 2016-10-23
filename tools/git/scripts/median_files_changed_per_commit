@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Prints the median number of modified files per commit.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the median:
+median="${root}/tools/awk/median.awk"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# Generate shortstats, extract the `files_changed` column, and compute the median:
+"${shortstats}" | awk '{print $8}' | "${median}"

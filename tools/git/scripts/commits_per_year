@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# Prints the number of commits per year.
+#
+# <year> <num_commits>
+
+# * `git log`
+#   - Show commit logs.
+# * `grep Date`
+#   - Extract the line which begins with `Date` from each log
+# * `awk '{}'`
+#   - From each date line, extract the year (`$6`).
+# * `sort -r`
+#   - Sort in reverse lexicographic order.
+# * `uniq -c`
+#   - Remove repeated lines and count the repeats to compute yearly totals.
+git log | grep Date | awk '{print $6}' | sort -r | uniq -c | awk '{print $2 OFS $1}'

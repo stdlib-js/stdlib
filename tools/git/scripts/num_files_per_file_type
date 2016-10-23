@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+#
+# Prints an approximate number of files per file type.
+#
+# <percentage> <total> <file_type>
+#
+# Notes:
+#
+# * For files using alternative filename extensions, no attempt is made to infer the file type. Unrecognized filename extensions are categorized as "other".
+# * `README.md` files are included in Markdown totals.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to annotate a file statistic stream:
+annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
+
+# * `git ls-files`
+#   - List indexed files.
+# * `awk '{}'`
+#   - Prefix each file to match annotation interface.
+# * `annotate_file_type`
+#   - Annotate each file with a file type.
+# * `awk '{}'`
+#   - Compute totals.
+# * `sort -nr`
+#   - Sort in reverse numeric order.
+git ls-files | awk '{print 1 OFS $0}' | "${annotate_file_type}" | awk '
+$3 ~ /README\.md$/ {
+	lines["README"] += 1
+}
+{
+	lines[$1] += 1
+	total += 1
+}
+
+END {
+	print 1 OFS total OFS "total"
+	for (k in lines) {
+		n = lines[k]
+		pct = int(n/total*10000)/10000
+		print pct OFS n OFS k
+	}
+}
+' | sort -nr

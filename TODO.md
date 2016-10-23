@@ -905,6 +905,7 @@ TODO
      - [licenses](https://github.com/3rd-Eden/licenses)
      - [licensecheck](https://github.com/marcello3d/node-licensecheck)
      - [nlf](https://github.com/iandotkelly/nlf)
+     - [license-to-fail](https://github.com/behance/license-to-fail)
      - [license-list](https://www.gnu.org/licenses/license-list.en.html)
      - as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
      - recipe to plot license distribution as a bar plot (?) => could be part of public facing docs
@@ -1203,6 +1204,66 @@ TODO
 
 243. [node-help](https://github.com/foundling/node-help): repl docs
 
+244. [RFCs docs](https://github.com/yarnpkg/rfcs)
+
+245. [envify](https://github.com/hughsk/envify) => when browserifying environment dependent tests to be run in the browser, can use to inline env vars
+
+246. [naming conventions](https://github.com/JuliaPraxis/Naming)
+
+247. [Tyche](https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf) prng
+
+248. typed array [binary string](https://github.com/AndreasMadsen/binary-view/blob/master/binary-view.js)
+
+249. [JS interpreter](https://github.com/NeilFraser/JS-Interpreter) and [hotswapping interpreter](https://github.com/thomasballinger/hotswapping-js-interp)
+
+250. [chunkify](https://github.com/compute-io/chunkify), [buffer](https://www.mathworks.com/help/signal/ref/buffer.html), [split](http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.split.html), [splitVec](https://www.mathworks.com/matlabcentral/fileexchange/24255-consecutive-vector-spliter/content/SplitVec.m)
+
+251. [random123](http://www.deshawresearch.com/downloads/download_random123.cgi/)
+
+252. [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
+
+253. [more images](https://github.com/heyalexej/awesome-images): good photos of cats, interesting features for training models, etc
+
+254. git stats
+
+     - [churn](https://gist.github.com/coreyhaines/829932)
+     - [churn](https://github.com/danmayer/churn)
+     - [code-maat](https://github.com/adamtornhill/code-maat)
+
+255. link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
+
+256. [lru](https://github.com/rsms/js-lru) and [node-lru](https://github.com/isaacs/node-lru-cache)
+
+257. [commitizen](https://github.com/commitizen/cz-cli): in place of `git commit`
+
+     - See also [lint](https://github.com/marionebl/conventional-changelog-lint)
+     - [angular convention](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md)
+
+258. [mem](https://github.com/sindresorhus/mem)
+
+259. [once](https://github.com/sindresorhus/onetime/blob/master/index.js)
+
+260. [json-depth-stream](https://github.com/indutny/json-depth-stream)
+
+261. [is-iso-8601](https://github.com/ankane/chartkick.js/blob/master/chartkick.js#L59)
+
+262. Generate a [diff](https://github.com/FormidableLabs/publish-diff) before publishing to `npm`
+
+263. loc per language over time (requires investigating repo at each commit; `git log`, extract commit hash, checkout each hash, run script, move to next hash, etc) => use Node to manage async
+
+264. classifying commits based on commit message [keywords](http://www.inf.usi.ch/faculty/lanza/Downloads/Hatt2008a.pdf)
+
+265. Determine a means to distinguish source code, comments, and empty lines when computing SLOC
+
+     - use to derive a [comment-to-source ratio](https://pdfs.semanticscholar.org/b576/916388512085f74065dd42aa0ffe3690b8f3.pdf)
+     - can extend to source-to-test ratio
+
+266. AWK hist fcn
+
+267. [colormap](https://github.com/bpostlethwaite/colormap)
+
+268. bring `tape` in-house
+
 
 
 ---
@@ -1324,6 +1385,19 @@ TODO
 1. [node-markov](https://github.com/substack/node-markov)
 2. include links to survey in main README
 3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
+
+
+---
+
+## Pub
+
+1. decomposable software
+2. multiple build systems
+3. broken math
+4. backward compatibility (and countertrends)
+5. The REPL (why matters)
+6. mining git repos
+7. open open source reporting
 
 
 ---

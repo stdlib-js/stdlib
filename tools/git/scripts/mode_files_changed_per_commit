@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Prints the most frequent number of files changed per commit.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the mode:
+mode="${root}/tools/awk/mode.awk"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# Generate shortstats, extract the `files_changed` column, and compute the mode:
+"${shortstats}" | awk '{print $8}' | "${mode}"

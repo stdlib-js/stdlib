@@ -49,6 +49,7 @@ usage() {
 	echo 'Options:' >&2
 	echo '' >&2
 	echo '  -h,    --help                Print this message.' >&2
+	echo '         --versions versions   Versions to test; e.g., `4,5,6`.' >&2
 	echo '' >&2
 }
 

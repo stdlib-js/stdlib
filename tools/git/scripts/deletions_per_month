@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#
+# Prints the number of deletions per month.
+#
+# <month> <year> <deletions>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the monthly totals.
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
+# * `awk '{}'`
+#   - Format the output.
+"${shortstats}" | awk '
+{
+	mon = $5 OFS $2
+	lines[mon] += $10
+}
+END {
+	for (mon in lines) {
+		print mon OFS lines[mon]
+	}
+}' | sort -k1n -k2M | awk '{print $2 OFS $1 OFS $3}'

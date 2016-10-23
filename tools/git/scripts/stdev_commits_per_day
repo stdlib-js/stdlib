@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#
+# Prints the sample standard deviation of commits per day.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of commits per day:
+commits_per_day="${root}/tools/git/scripts/commits_per_day"
+
+# Define the path to a utility to compute a sample standard deviation:
+stdev="${root}/tools/awk/stdev.awk"
+
+# * `commits_per_day`
+#   - Compute the number of commits per day.
+# * `awk '{}'`
+#   - Extract the number of commits.
+# * `stdev`
+#   - Compute sample standard deviation.
+"${commits_per_day}" | awk '{print $4}' | "${stdev}"

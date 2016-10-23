@@ -55,6 +55,7 @@ Desktop.ini
 # Git #
 #######
 .git*
+.mailmap
 
 
 # Utilities #

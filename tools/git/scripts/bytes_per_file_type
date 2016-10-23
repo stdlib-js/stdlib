@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#
+# Prints an approximate number of bytes per file type.
+#
+# <percentage> <total_bytes> <number_of_files> <average> <file_type>
+#
+# Notes:
+#
+# * `README.md` files are included in Markdown statistics.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of bytes per file:
+bytes_per_file="${root}/tools/git/scripts/bytes_per_file"
+
+# * `bytes_per_files`
+#   - Compute the number of bytes per file.
+# * `awk '{}'`
+#   - Compute statistics.
+# * `sort -nr`
+#   - Sort in reverse numeric order.
+"${bytes_per_file}" | awk '
+$3 ~ /README\.md$/ {
+	bytes["README"] += $2
+	N["README"] += 1
+}
+
+{
+	bytes[$1] += $2
+	N[$1] += 1
+
+	bytes["total"] += $2
+	N["total"] += 1
+}
+
+END {
+	total = bytes["total"]
+	for (k in bytes) {
+		len = bytes[k];
+		n = N[k]
+		pct = int(len/total*10000)/10000
+		mu = int(len/n*10000)/10000
+		print pct OFS len OFS n OFS mu OFS k
+	}
+}
+' | sort -nr

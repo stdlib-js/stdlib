@@ -24,6 +24,9 @@
 * [If `Math.ceil` provided `0`, V8 deoptimizes][20]
 * [Accuracy of `Math.round` in V8][21]
 * [Observability of distinguishable NaNs][22]
+* [SpiderMonkey updates `Math.random`][23]
+* [V8 blog on xoshirt implementation][24]
+* [Webkit bug to use a better PRNG][25]
 
 
 <!-- <links> -->
@@ -50,5 +53,8 @@
 [20]: https://bugs.chromium.org/p/v8/issues/detail?id=4059
 [21]: https://bugs.chromium.org/p/v8/issues/detail?id=958
 [22]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
+[23]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529#c99
+[24]: http://v8project.blogspot.com/2015/12/theres-mathrandom-and-then-theres.html
+[25]: https://bugs.webkit.org/show_bug.cgi?id=151641
 
 <!-- </links> -->

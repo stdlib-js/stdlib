@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#
+# Prints the number of lines per author.
+#
+# <author_first_name> <author_last_name> <number_of_lines>
+#
+# Notes:
+#
+# * Beware that this script can take awhile to run.
+
+# * `git ls-files`
+#   - List indexed files.
+# * `xargs -n1 git blame`
+#   - For each file, determine who last modified each line of the file.
+# * `grep`
+#   - Extract the line containing the author name.
+# * `sed`
+#   - Remove the 'author ' prefix.
+# * `sort`
+#   - Sort the author names in lexicographic order.
+# * `uniq -c`
+#   - Count the number of repeats and remove repeated names.
+# * `sort -nr`
+#   - Sort the counts in reverse numerical order.
+# * `awk '{}'`
+#   - Format the output.
+git ls-files | xargs -n1 git blame --line-porcelain | grep 'author ' | sed -n 's/^author //p' | sort | uniq -c | sort -nr | awk '{print $2 OFS $3 OFS $1'

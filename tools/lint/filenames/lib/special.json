@@ -3,5 +3,7 @@
 	"notice": "NOTICE",
 	"makefile": "Makefile",
 	"description": "DESCRIPTION",
-	"require": "REQUIRE"
+	"require": "REQUIRE",
+	"authors": "AUTHORS",
+	"contributors": "CONTRIBUTORS"
 }

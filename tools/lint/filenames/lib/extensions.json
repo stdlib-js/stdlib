@@ -1,6 +1,9 @@
 [
+	".awk",
+	".bib",
 	".c",
 	".cpp",
+	".csl",
 	".css",
 	".csv",
 	".eot",

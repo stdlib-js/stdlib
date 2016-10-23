@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+#
+# Computes a basic constructive cost model (COCOMO 81).
+#
+# Notes:
+#
+# * COCOMO 81 is meant to include design, specification, review, and management overhead associated with producing quality software.
+# * COCOMO 81 was created to model large institutional projects which may not reflect the nature of distributed open-source projects.
+#
+# References:
+#
+# * [COCOMO](https://en.wikipedia.org/wiki/COCOMO)
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the number of non-empty lines per file:
+nonempty_lines_per_file="${root}/tools/git/scripts/nonempty_lines_per_file"
+
+#
+"${nonempty_lines_per_file}" | awk '
+BEGIN {
+	# Model coefficients:
+	a_b = 2.4
+	b_b = 1.05
+	c_b = 2.5
+	d_b = 0.38
+
+	# Assume a ratio of 1:9 delivered code (pkgs) to support code (tests, examples, benchmarks):
+	loc_sf = 0.1;
+
+	# Average annual developer salary (USD):
+	salary = 55000
+}
+
+$1 ~ /JavaScript/ {
+	loc += $2
+}
+
+END {
+	sloc = loc * loc_sf
+	kloc = sloc / 1000
+
+	# Compute the required effort in "man-months":
+	effort_applied = a_b * kloc^b_b
+
+	# Compute the development time in months:
+	development_time = c_b * effort_applied^d_b
+
+	# Compute the number of people required:
+	people_required = effort_applied / development_time
+
+	# Compute the cost based on developer salary:
+	cost = people_required * salary * development_time/12
+
+	print "kloc" OFS kloc
+	print "development_time" OFS development_time
+	print "effort_applied" OFS effort_applied
+	print "people_required" OFS people_required
+	print "cost" OFS cost
+}
+'

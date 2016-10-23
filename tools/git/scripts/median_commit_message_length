@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Prints the median commit message length.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to compute the median:
+median="${root}/tools/awk/median.awk"
+
+# * `git log`
+#   - Get commit messages
+# * `awk '{}'`
+#   - Compute the message length.
+# * `sort -n`
+#   - Sort in numeric order.
+# * `${median}`
+#   - Compute the median.
+git log --format=format:"%s" | awk '{print length($0)}' | sort -n | "${median}"
