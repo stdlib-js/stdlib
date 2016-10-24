@@ -1321,6 +1321,7 @@ TODO
    - [through2-concurrent](https://github.com/almost/through2-concurrent)
    - log
    - [ndjson](https://github.com/maxogden/ndjson)
+   - [one-way multiplexing](https://github.com/mafintosh/stream-channels)
 
 5. kmeans/dbscan
 
