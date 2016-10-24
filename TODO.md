@@ -1265,7 +1265,9 @@ TODO
 
 268. bring `tape` in-house
 
-269. 
+269. lint bib for duplicate ids. If identified, need to search for all references using duplicate ids and disambiguate/update
+
+     - tool to allow searching for author name and return list of refs with identifier so an author can easily find an identifier without needing to search the raw bib file.
 
 270. [power-divergence](https://github.com/scipy/scipy/blob/master/scipy/stats/stats.py) and other associated tests
 
