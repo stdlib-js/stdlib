@@ -1273,6 +1273,8 @@ TODO
 
 271. for each push, run an analysis to determine if any SLOC changed. If only comments and/or docs, don't run unit tests.
 
+272. batch generation of exponential [RVs](http://www.nrbook.com/devroye/Devroye_files/chapter_five.pdf)?
+
 
 ---
 
