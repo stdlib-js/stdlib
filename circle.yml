@@ -10,7 +10,7 @@ machine:
 # Custom environment dependencies:
 dependencies:
   override:
-    - 'nvm install node && nvm use node && npm update -g npm'
+    - 'nvm install 6 && nvm use 6 && npm update -g npm'
 
 
 # Custom test commands:
