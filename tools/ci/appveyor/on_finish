@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Build script to run at the end of the AppVeyor test [lifecycle][1].
+# Build script to run at the end of the AppVeyor build [lifecycle][1].
 #
 # [1]: https://www.appveyor.com/docs/appveyor-yml/
 

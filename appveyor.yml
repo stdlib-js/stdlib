@@ -134,11 +134,12 @@ test_script:
   - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
 
 
-after_test:
+# Scripts run after a build success or failure:
+on_finish:
   # Rely on [MSYS][1], a collection of GNU utilities including `make`, being installed in a `1.0` directory.
   #
   # [1]: http://www.mingw.org/wiki/MSYS
-  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/after_script"'
+  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/on_finish"'
 
 
 notifications:
