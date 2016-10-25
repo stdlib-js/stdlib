@@ -1276,6 +1276,10 @@ TODO
 
 272. batch generation of exponential [RVs](http://www.nrbook.com/devroye/Devroye_files/chapter_five.pdf)?
 
+273. [lowercase](https://github.com/blakeembrey/lower-case/blob/master/lower-case.js), [no-case](https://github.com/blakeembrey/no-case/blob/master/no-case.js), [param-case](https://github.com/blakeembrey/param-case)
+
+274. life expectancy by [country](https://gist.github.com/ivanku/00d2520ba6d92daf97e50d9ebc6eb4cd)
+
 
 ---
 
