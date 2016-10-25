@@ -842,6 +842,7 @@ TODO
      * [v8 profiling](https://github.com/thlorenz/v8-profiling)
      * `make` recipe
      * bring the V8 log processor in-house ([tools](https://github.com/v8/v8/tree/master/tools), [wiki](https://github.com/v8/v8/wiki/V8%20Profiler), [outfile](https://bugs.chromium.org/p/chromium/issues/detail?id=432457), [node-tick](https://github.com/sidorares/node-tick))
+     * [heatline](https://github.com/indutny/heatline)
 
 102. [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
@@ -1264,13 +1265,27 @@ TODO
 
 268. bring `tape` in-house
 
+269. lint bib for duplicate ids. If identified, need to search for all references using duplicate ids and disambiguate/update
+
+     - tool to allow searching for author name and return list of refs with identifier so an author can easily find an identifier without needing to search the raw bib file.
+     - requires bib parser
+
+270. [power-divergence](https://github.com/scipy/scipy/blob/master/scipy/stats/stats.py) and other associated tests
+
+271. for each push, run an analysis to determine if any SLOC changed. If only comments and/or docs, don't run unit tests.
+
+272. batch generation of exponential [RVs](http://www.nrbook.com/devroye/Devroye_files/chapter_five.pdf)?
+
+273. [lowercase](https://github.com/blakeembrey/lower-case/blob/master/lower-case.js), [no-case](https://github.com/blakeembrey/no-case/blob/master/no-case.js), [param-case](https://github.com/blakeembrey/param-case)
+
+274. life expectancy by [country](https://gist.github.com/ivanku/00d2520ba6d92daf97e50d9ebc6eb4cd)
 
 
 ---
 
 ## Immediate
 
-1. randn
+1. 
 
 2. abstract-ndarray
 
@@ -1315,6 +1330,7 @@ TODO
    - [through2-concurrent](https://github.com/almost/through2-concurrent)
    - log
    - [ndjson](https://github.com/maxogden/ndjson)
+   - [one-way multiplexing](https://github.com/mafintosh/stream-channels)
 
 5. kmeans/dbscan
 
