@@ -657,3 +657,168 @@ stats-lines-per-file-type:
 	$(QUIET) $(GIT_SCRIPTS_DIR)/lines_per_file_type
 
 .PHONY: stats-lines-per-file-type
+
+
+# Compute mean additions per hour.
+#
+# This target computes the average number of additions per hour.
+
+stats-mean-additions-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mean_additions_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mean_additions_per_hour
+
+.PHONY: stats-mean-additions-per-hour
+
+
+# Compute mean commit message length per hour.
+#
+# This target computes the average commit message length per hour.
+
+stats-mean-commit-message-length-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mean_commit_message_length_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mean_commit_message_length_per_hour
+
+.PHONY: stats-mean-commit-message-length-per-hour
+
+
+# Compute mean commits per hour.
+#
+# This target computes the average number of commits per hour.
+
+stats-mean-commits-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mean_commits_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mean_commits_per_hour
+
+.PHONY: stats-mean-commits-per-hour
+
+
+# Compute mean deletions per hour.
+#
+# This target computes the average number of deletions per hour.
+
+stats-mean-deletions-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mean_deletions_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mean_deletions_per_hour
+
+.PHONY: stats-mean-deletions-per-hour
+
+
+# Compute mean files changed per hour.
+#
+# This target computes the average number of files changed per hour.
+
+stats-mean-files-changed-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mean_files_changed_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mean_files_changed_per_hour
+
+.PHONY: stats-mean-files-changed-per-hour
+
+
+# Compute mean short stats.
+#
+# This target computes summary statistic averages.
+
+stats-mean-shortstats:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mean_shortstats
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mean_shortstats
+
+.PHONY: stats-mean-shortstats
+
+
+# Compute median additions per commit.
+#
+# This target computes the median number of additions per commit.
+
+stats-median-additions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/median_additions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/median_additions_per_commit
+
+.PHONY: stats-median-additions-per-commit
+
+
+# Compute median commit message length.
+#
+# This target computes the median commit message length.
+
+stats-median-commit-message-length:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/median_commit_message_length
+	$(QUIET) $(GIT_SCRIPTS_DIR)/median_commit_message_length
+
+.PHONY: stats-median-commit-message-length
+
+
+# Compute median commits per day.
+#
+# This target computes the median number of commits per day.
+
+stats-median-commits-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/median_commits_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/median_commits_per_day
+
+.PHONY: stats-median-commits-per-day
+
+
+# Compute median deletions per commit.
+#
+# This target computes the median number of deletions per commit.
+
+stats-median-deletions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/median_deletions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/median_deletions_per_commit
+
+.PHONY: stats-median-deletions-per-commit
+
+
+# Compute median files changed per commit.
+#
+# This target computes the median number of files changed per commit.
+
+stats-median-files-changed-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/median_files_changed_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/median_files_changed_per_commit
+
+.PHONY: stats-median-files-changed-per-commit
+
+
+# Compute mode additions per commit.
+#
+# This target computes the number of additions per commit mode.
+
+stats-mode-additions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mode_additions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mode_additions_per_commit
+
+.PHONY: stats-mode-additions-per-commit
+
+
+# Compute mode commits per day.
+#
+# This target computes the number of commits per day mode.
+
+stats-mode-commits-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mode_commits_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mode_commits_per_day
+
+.PHONY: stats-mode-commits-per-day
+
+
+# Compute mode deletions per commit.
+#
+# This target computes the number of deletions per commit mode.
+
+stats-mode-deletions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mode_deletions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mode_deletions_per_commit
+
+.PHONY: stats-mode-deletions-per-commit
+
+
+# Compute mode files changed per commit.
+#
+# This target computes the number of files changed per commit mode.
+
+stats-mode-files-changed-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/mode_files_changed_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/mode_files_changed_per_commit
+
+.PHONY: stats-mode-files-changed-per-commit
