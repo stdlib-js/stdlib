@@ -822,3 +822,224 @@ stats-mode-files-changed-per-commit:
 	$(QUIET) $(GIT_SCRIPTS_DIR)/mode_files_changed_per_commit
 
 .PHONY: stats-mode-files-changed-per-commit
+
+
+# Compute nonempty lines per file.
+#
+# This target computes the number of nonempty lines per file.
+
+stats-nonempty-lines-per-file:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/nonempty_lines_per_file
+	$(QUIET) $(GIT_SCRIPTS_DIR)/nonempty_lines_per_file
+
+.PHONY: stats-nonempty-lines-per-file
+
+
+# Compute nonempty lines per file type.
+#
+# This target computes the number of nonempty lines per file type.
+
+stats-nonempty-lines-per-file-type:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/nonempty_lines_per_file_type
+	$(QUIET) $(GIT_SCRIPTS_DIR)/nonempty_lines_per_file_type
+
+.PHONY: stats-nonempty-lines-per-file-type
+
+
+# Compute number of files.
+#
+# This target computes the number of indexed files.
+
+stats-num-files:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/num_files
+	$(QUIET) $(GIT_SCRIPTS_DIR)/num_files
+
+.PHONY: stats-num-files
+
+
+# Compute number of files per file type.
+#
+# This target computes the number of indexed files per file type.
+
+stats-num-files-per-file-type:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/num_files_per_file_type
+	$(QUIET) $(GIT_SCRIPTS_DIR)/num_files_per_file_type
+
+.PHONY: stats-num-files-per-file-type
+
+
+# Rank commit first words.
+#
+# This target computes the frequency of commit message first words.
+
+stats-rank-commit-first-words:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/rank_commit_first_words
+	$(QUIET) $(GIT_SCRIPTS_DIR)/rank_commit_first_words
+
+.PHONY: stats-rank-commit-first-words
+
+
+# Rank files by commit counts.
+#
+# This target orders files by commit frequency.
+
+stats-rank-files-by-commit-counts:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/rank_files_by_commit_counts
+	$(QUIET) $(GIT_SCRIPTS_DIR)/rank_files_by_commit_counts
+
+.PHONY: stats-rank-files-by-commit-counts
+
+
+# Compute summary statistics.
+#
+# This target computes summary statistics for each commit.
+
+stats-shortstats:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats
+
+.PHONY: stats-shortstats
+
+
+# Compute summary statistics per day.
+#
+# This target computes summary statistics for each day.
+
+stats-shortstats-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats_per_day
+
+.PHONY: stats-shortstats-per-day
+
+
+# Compute summary statistics per hour.
+#
+# This target computes summary statistics for each hour.
+
+stats-shortstats-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats_per_hour
+
+.PHONY: stats-shortstats-per-hour
+
+
+# Compute summary statistics per month.
+#
+# This target computes summary statistics for each month.
+
+stats-shortstats-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats_per_month
+
+.PHONY: stats-shortstats-per-month
+
+
+# Compute summary statistics per weekday.
+#
+# This target computes summary statistics for each weekday.
+
+stats-shortstats-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats_per_weekday
+
+.PHONY: stats-shortstats-per-weekday
+
+
+# Compute additions per commit standard deviation.
+#
+# This target computes the standard deviation of the number of additions per commit.
+
+stats-stdev-additions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/stdev_additions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/stdev_additions_per_commit
+
+.PHONY: stats-stdev-additions-per-commit
+
+
+# Compute commits per day standard deviation.
+#
+# This target computes the standard deviation of the number of commits per day.
+
+stats-stdev-commits-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/stdev_commits_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/stdev_commits_per_day
+
+.PHONY: stats-stdev-commits-per-day
+
+
+# Compute deletions per commit standard deviation.
+#
+# This target computes the standard deviation of the number of deletions per commit.
+
+stats-stdev-deletions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/stdev_deletions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/stdev_deletions_per_commit
+
+.PHONY: stats-stdev-deletions-per-commit
+
+
+# Tabulates additions per commit.
+#
+# This target tabulates the number of additions per commit.
+
+stats-tabulate-additions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tabulate_additions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tabulate_additions_per_commit
+
+.PHONY: stats-tabulate-additions-per-commit
+
+
+# Tabulates commit message length.
+#
+# This target tabulates the commit message length.
+
+stats-tabulate-commit-message-length:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tabulate_commit_message_length
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tabulate_commit_message_length
+
+.PHONY: stats-tabulate-commit-message-length
+
+
+# Tabulates commits per day.
+#
+# This target tabulates the number of commits per day.
+
+stats-tabulate-commits-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tabulate_commits_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tabulate_commits_per_day
+
+.PHONY: stats-tabulate-commits-per-day
+
+
+# Tabulates deletions per commit.
+#
+# This target tabulates the number of deletions per commit.
+
+stats-tabulate-deletions-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tabulate_deletions_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tabulate_deletions_per_commit
+
+.PHONY: stats-tabulate-deletions-per-commit
+
+
+# Tabulates files changed per commit.
+#
+# This target tabulates the number of files changed per commit.
+
+stats-tabulate-files-changed-per-commit:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tabulate_files_changed_per_commit
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tabulate_files_changed_per_commit
+
+.PHONY: stats-tabulate-files-changed-per-commit
+
+
+# Tabulates total commits per day.
+#
+# This target tabulates the total number of commits per day.
+
+stats-tabulate-total-commits-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tabulate_total_commits_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tabulate_total_commits_per_day
+
+.PHONY: stats-tabulate-total-commits-per-day
+
