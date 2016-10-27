@@ -261,3 +261,399 @@ stats-author-shortstats-per-month:
 	$(QUIET) $(GIT_SCRIPTS_DIR)/author_shortstats_per_month
 
 .PHONY: stats-author-shortstats-per-month
+
+
+# Compute authors per day.
+#
+# This target computes number of authors per day.
+
+stats-authors-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/authors_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/authors_per_day
+
+.PHONY: stats-authors-per-day
+
+
+# Compute authors per hour.
+#
+# This target computes number of authors per hour.
+
+stats-authors-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/authors_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/authors_per_hour
+
+.PHONY: stats-authors-per-hour
+
+
+# Compute authors per month.
+#
+# This target computes number of authors per month.
+
+stats-authors-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/authors_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/authors_per_month
+
+.PHONY: stats-authors-per-month
+
+
+# Compute authors per weekday.
+#
+# This target computes number of authors per weekday.
+
+stats-authors-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/authors_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/authors_per_weekday
+
+.PHONY: stats-authors-per-weekday
+
+
+# Compute authors per year.
+#
+# This target computes number of authors per year.
+
+stats-authors-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/authors_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/authors_per_year
+
+.PHONY: stats-authors-per-year
+
+
+# Compute bytes per file.
+#
+# This target computes number of bytes per file.
+
+stats-bytes-per-file:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/bytes_per_file
+	$(QUIET) $(GIT_SCRIPTS_DIR)/bytes_per_file
+
+.PHONY: stats-bytes-per-file
+
+
+# Compute bytes per file type.
+#
+# This target computes number of bytes per file type.
+
+stats-bytes-per-file-type:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/bytes_per_file_type
+	$(QUIET) $(GIT_SCRIPTS_DIR)/bytes_per_file_type
+
+.PHONY: stats-bytes-per-file-type
+
+
+# Compute basic COCOMO 81.
+#
+# This target computes a basic constructive cost model (COCOMO 81).
+
+stats-cocomo-81-basic:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/cocomo_81_basic
+	$(QUIET) $(GIT_SCRIPTS_DIR)/cocomo_81_basic
+
+.PHONY: stats-cocomo-81-basic
+
+
+# Compute intermediate COCOMO 81.
+#
+# This target computes an intermediate constructive cost model (COCOMO 81).
+
+stats-cocomo-81-intermediate:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/cocomo_81_intermediate
+	$(QUIET) $(GIT_SCRIPTS_DIR)/cocomo_81_intermediate
+
+.PHONY: stats-cocomo-81-intermediate
+
+
+# Generate a commit interval histogram.
+#
+# This target generates a histogram of commit intervals.
+
+stats-commit-interval-histogram:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_interval_histogram
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_interval_histogram
+
+.PHONY: stats-commit-interval-histogram
+
+
+# Compute mean commit interval.
+#
+# This target computes the mean commit interval.
+
+stats-commit-interval-mean:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_interval_mean
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_interval_mean
+
+.PHONY: stats-commit-interval-mean
+
+
+# Compute median commit interval.
+#
+# This target computes the median commit interval.
+
+stats-commit-interval-median:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_interval_median
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_interval_median
+
+.PHONY: stats-commit-interval-median
+
+
+# Compute commit intervals.
+#
+# This target computes the interval between consecutive commits.
+
+stats-commit-intervals:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_intervals
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_intervals
+
+.PHONY: stats-commit-intervals
+
+
+# Print commit messages.
+#
+# This target prints all commit messages.
+
+stats-commit-messages:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_messages
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_messages
+
+.PHONY: stats-commit-messages
+
+
+# Classify commit sizes.
+#
+# This target classifies each commit based on the commit size.
+
+stats-commit-size-classification:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_size_classification
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_size_classification
+
+.PHONY: stats-commit-size-classification
+
+
+# Compute commit size distribution.
+#
+# This target computes the commit size distribution.
+
+stats-commit-size-distribution:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_size_distribution
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_size_distribution
+
+.PHONY: stats-commit-size-distribution
+
+
+# Compute mean commit size.
+#
+# This target computes the average commit size.
+
+stats-commit-size-mean:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_size_mean
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_size_mean
+
+.PHONY: stats-commit-size-mean
+
+
+# Compute commit size mode.
+#
+# This target computes the commit size mode.
+
+stats-commit-size-mode:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_size_mode
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_size_mode
+
+.PHONY: stats-commit-size-mode
+
+
+# Classify commit sizes by number of files changed.
+#
+# This target classifies each commit by commit size, where size is determined based on the number of files changed.
+
+stats-commit-size-nfiles-classification:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_size_nfiles_classification
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_size_nfiles_classification
+
+.PHONY: stats-commit-size-nfiles-classification
+
+
+# Compute commit sizes.
+#
+# This target computes the size of each commit.
+
+stats-commit-sizes:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commit_sizes
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commit_sizes
+
+.PHONY: stats-commit-sizes
+
+
+# Compute commits per day.
+#
+# This target computes the number of commits per day.
+
+stats-commits-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commits_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commits_per_day
+
+.PHONY: stats-commits-per-day
+
+
+# Compute commits per hour.
+#
+# This target computes the number of commits per hour.
+
+stats-commits-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commits_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commits_per_hour
+
+.PHONY: stats-commits-per-hour
+
+
+# Compute commits per month.
+#
+# This target computes the number of commits per month.
+
+stats-commits-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commits_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commits_per_month
+
+.PHONY: stats-commits-per-month
+
+
+# Compute commits per weekday.
+#
+# This target computes the number of commits per weekday.
+
+stats-commits-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commits_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commits_per_weekday
+
+.PHONY: stats-commits-per-weekday
+
+
+# Compute commits per year.
+#
+# This target computes the number of commits per year.
+
+stats-commits-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/commits_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/commits_per_year
+
+.PHONY: stats-commits-per-year
+
+
+# Compute deletions per day.
+#
+# This target computes the number of deletions per day.
+
+stats-deletions-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/deletions_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/deletions_per_day
+
+.PHONY: stats-deletions-per-day
+
+
+# Compute deletions per hour.
+#
+# This target computes the number of deletions per hour.
+
+stats-deletions-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/deletions_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/deletions_per_hour
+
+.PHONY: stats-deletions-per-hour
+
+
+# Compute deletions per month.
+#
+# This target computes the number of deletions per month.
+
+stats-deletions-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/deletions_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/deletions_per_month
+
+.PHONY: stats-deletions-per-month
+
+
+# Compute deletions per weekday.
+#
+# This target computes the number of deletions per weekday.
+
+stats-deletions-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/deletions_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/deletions_per_weekday
+
+.PHONY: stats-deletions-per-weekday
+
+
+# Compute files changed per day.
+#
+# This target computes the number of files changed per day.
+
+stats-files-changed-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/files_changed_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/files_changed_per_day
+
+.PHONY: stats-files-changed-per-day
+
+
+# Compute files changed per hour.
+#
+# This target computes the number of files changed per hour.
+
+stats-files-changed-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/files_changed_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/files_changed_per_hour
+
+.PHONY: stats-files-changed-per-hour
+
+
+# Compute files changed per month.
+#
+# This target computes the number of files changed per month.
+
+stats-files-changed-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/files_changed_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/files_changed_per_month
+
+.PHONY: stats-files-changed-per-month
+
+
+# Compute files changed per weekday.
+#
+# This target computes the number of files changed per weekday.
+
+stats-files-changed-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/files_changed_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/files_changed_per_weekday
+
+.PHONY: stats-files-changed-per-weekday
+
+
+# Compute lines per author.
+#
+# This target computes the number of lines attributed to each author.
+
+stats-lines-per-author:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lines_per_author
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lines_per_author
+
+.PHONY: stats-lines-per-author
+
+
+# Compute lines per file.
+#
+# This target computes the number of lines in each file.
+
+stats-lines-per-file:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lines_per_file
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lines_per_file
+
+.PHONY: stats-lines-per-file
+
+
+# Compute lines per file type.
+#
+# This target computes the number of lines per file type.
+
+stats-lines-per-file-type:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lines_per_file_type
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lines_per_file_type
+
+.PHONY: stats-lines-per-file-type
