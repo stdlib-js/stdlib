@@ -1,3 +1,4 @@
+# When adding targets to this file, ensure they are added in alphabetical order according to target name.
 
 # VARIABLES #
 
