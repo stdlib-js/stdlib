@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#
+# Prints the number of merged pull requests per weekday.
+#
+# <weekday> <num_merges>
+
+# * `git log --merges`
+#   - Show commit logs.
+# * `grep 'Merge pull request #'`
+#   - Filter for commit messages which explicitly state that a commit merges a pull request.
+# * `awk '{}'`
+#   - From each commit, extract the weekday (`$1`).
+# * `sort`
+#   - Sort in lexicographic order.
+# * `uniq -c`
+#   - Remove repeated lines and count the repeats to show weekday totals.
+# * `awk '{}'`
+#   - Sort the weekdays from Monday to Sunday.
+git log --merges --format=format:"%ad %s" --date=format:"%a" | grep 'Merge pull request #' | awk '{print $1}' | sort | uniq -c | awk '
+BEGIN {
+	split("Mon Tue Wed Thu Fri Sat Sun", days);
+}
+{
+	lines[$2] = $2 OFS $1
+}
+END {
+	for (i = 1; i <= 7; i++) {
+		print lines[days[i]]
+	}
+}
+'
