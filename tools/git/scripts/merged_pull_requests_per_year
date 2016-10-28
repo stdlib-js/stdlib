@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# Prints the number of merged pull requests per year.
+#
+# <year> <num_merges>
+
+# * `git log --merges`
+#   - Show commit logs.
+# * `grep 'Merge pull request #'`
+#   - Filter for commit messages which explicitly state that a commit merges a pull request.
+# * `awk '{}'`
+#   - From each commit, extract the year (`$1`).
+# * `sort -r`
+#   - Sort in reverse lexicographic order.
+# * `uniq -c`
+#   - Remove repeated lines and count the repeats to compute yearly totals.
+git log --merges --format=format:"%ad %s" --date=format:"%Y" | grep 'Merge pull request #' | awk '{print $1}' | sort -r | uniq -c | awk '{print $2 OFS $1}'
