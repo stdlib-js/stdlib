@@ -835,6 +835,61 @@ stats-merged-pull-requests-per-year:
 .PHONY: stats-merged-pull-requests-per-year
 
 
+# Compute merges per day.
+#
+# This target computes the number of merges per day.
+
+stats-merges-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merges_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merges_per_day
+
+.PHONY: stats-merges-per-day
+
+
+# Compute merges per hour.
+#
+# This target computes the number of merges per hour.
+
+stats-merges-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merges_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merges_per_hour
+
+.PHONY: stats-merges-per-hour
+
+
+# Compute merges per month.
+#
+# This target computes the number of merges per month.
+
+stats-merges-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merges_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merges_per_month
+
+.PHONY: stats-merges-per-month
+
+
+# Compute merges per weekday.
+#
+# This target computes the number of merges per weekday.
+
+stats-merges-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merges_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merges_per_weekday
+
+.PHONY: stats-merges-per-weekday
+
+
+# Compute merges per year.
+#
+# This target computes the number of merges per year.
+
+stats-merges-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merges_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merges_per_year
+
+.PHONY: stats-merges-per-year
+
+
 # Compute mode additions per commit.
 #
 # This target computes the number of additions per commit mode.
