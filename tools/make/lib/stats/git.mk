@@ -780,6 +780,61 @@ stats-median-files-changed-per-commit:
 .PHONY: stats-median-files-changed-per-commit
 
 
+# Compute merged pull requests per day.
+#
+# This target computes the number of merged pull requests per day.
+
+stats-merged-pull-requests-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_day
+
+.PHONY: stats-merged-pull-requests-per-day
+
+
+# Compute merged pull requests per hour.
+#
+# This target computes the number of merged pull requests per hour.
+
+stats-merged-pull-requests-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_hour
+
+.PHONY: stats-merged-pull-requests-per-hour
+
+
+# Compute merged pull requests per month.
+#
+# This target computes the number of merged pull requests per month.
+
+stats-merged-pull-requests-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_month
+
+.PHONY: stats-merged-pull-requests-per-month
+
+
+# Compute merged pull requests per weekday.
+#
+# This target computes the number of merged pull requests per weekday.
+
+stats-merged-pull-requests-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_weekday
+
+.PHONY: stats-merged-pull-requests-per-weekday
+
+
+# Compute merged pull requests per year.
+#
+# This target computes the number of merged pull requests per year.
+
+stats-merged-pull-requests-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/merged_pull_requests_per_year
+
+.PHONY: stats-merged-pull-requests-per-year
+
+
 # Compute mode additions per commit.
 #
 # This target computes the number of additions per commit mode.
