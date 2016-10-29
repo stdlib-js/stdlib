@@ -7,10 +7,20 @@
 * [V8 not IEEE 754-2008 compliant][@bug:v8:3089]
 * [Mozilla discussion on sine and cosine in V8][@bug:mozilla:967709]
 * [V8 replaced a lookup table by computing `Math.tan` as `Math.sin/Math.cos`][@bug:chromium:78263005]
-* [Browser math accuracy issues][6]
-* [ES6 accuracy of special functions][7]
-* [Accuracy of `Math.exp` in V8][8]
-* [Spreadsheet showing trigonometric results across browsers][9]
+* [Browser math accuracy issues][@bug:kangax:compat-table:392]
+* [Mozilla attempt to address precision in new Math functions][@bug:mozilla:933257]
+* [Mozilla's previous lack of tolerance tests for Math functions][@bug:mozilla:892671]
+* [Mozilla `Math.expm1` accuracy][@bug:mozilla:897634]
+* [Mozilla thread on implementing ES6 math functions][@bug:mozilla:717379]
+* [V8 `Math.atanh` issues][@bug:v8:3511]
+* [V8 `Math.acosh` issues][@bug:v8:3509]
+* [V8 `Math.asinh` issues][@bug:v8:3496]
+* [V8 numeric issues in hyperbolic functions][@bug:v8:3266]
+* [ES6 accuracy of special functions][@bug:esdiscuss:038525]
+* [Accuracy of `Math.exp` in V8][@bug:v8:3468]
+* [TC39 meeting discussing Math accuracy issues][@bug:esdiscuss:2014-07-31]
+* [Spreadsheet showing trigonometric results across browsers][@bug:esdiscuss:038525:spreadsheet]
+
 * [Accuracy of `Math.pow` in V8][10]
 * [Accumulation of errors in Mozilla `Math.pow`][11]
 * [Accuracy of hyperbolic trigonometric functions in V8][12]
@@ -36,10 +46,20 @@
 [@bug:v8:3089]: https://bugs.chromium.org/p/v8/issues/detail?id=3089
 [@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 [@bug:chromium:78263005]: https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1
-[6]: https://github.com/kangax/compat-table/issues/392
-[7]: https://esdiscuss.org/topic/es6-accuracy-of-special-functions
-[8]: https://bugs.chromium.org/p/v8/issues/detail?id=3468
-[9]: https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0
+[@bug:kangax:compat-table:392]: https://github.com/kangax/compat-table/issues/392
+[@bug:mozilla:933257]: https://bugzilla.mozilla.org/show_bug.cgi?id=933257
+[@bug:mozilla:892671]: https://bugzilla.mozilla.org/show_bug.cgi?id=892671
+[@bug:mozilla:897634]: https://bugzilla.mozilla.org/show_bug.cgi?id=897634
+[@bug:mozilla:717379]: https://bugzilla.mozilla.org/show_bug.cgi?id=717379#c5
+[@bug:v8:3511]: https://bugs.chromium.org/p/v8/issues/detail?id=3511
+[@bug:v8:3509]: https://bugs.chromium.org/p/v8/issues/detail?id=3509
+[@bug:v8:3496]: https://bugs.chromium.org/p/v8/issues/detail?id=3496
+[@bug:v8:3266]: https://bugs.chromium.org/p/v8/issues/detail?id=3266
+[@bug:esdiscuss:038525]: https://esdiscuss.org/topic/es6-accuracy-of-special-functions
+[@bug:v8:3468]: https://bugs.chromium.org/p/v8/issues/detail?id=3468
+[@bug:esdiscuss:2014-07-31]: https://esdiscuss.org/notes/2014-07-31
+[@bug:esdiscuss:038525:spreadsheet]: https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0
+
 [10]: https://bugs.chromium.org/p/v8/issues/detail?id=3599
 [11]: https://bugzilla.mozilla.org/show_bug.cgi?id=618251
 [12]: https://github.com/paulmillr/es6-shim/issues/334

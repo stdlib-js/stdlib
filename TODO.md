@@ -390,6 +390,8 @@
       - [ansi-escapes](https://github.com/sindresorhus/ansi-escapes)
       - [node-charm](https://github.com/substack/node-charm)
       - [gvz](https://github.com/chrisdickinson/gvz)
+      - [UnicodePlots.jl](https://github.com/Evizero/UnicodePlots.jl)
+      - [TextPlots.jl](https://github.com/sunetos/TextPlots.jl)
 
     * ASCII [tables](https://github.com/sorensen/ascii-table)
 

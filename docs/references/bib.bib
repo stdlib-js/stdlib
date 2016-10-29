@@ -721,7 +721,7 @@
 
 @misc{bug:v8:3006,
 	abstract = {In Mac Chrome 33.0.1706.0 canary, Math.cos(Math.pow(2,120)) returns 0.47796506772457525. In Chromium ToT from today, after a V8 roll with the new sin/cos implementation using table lookup and interpolation, this now returns 0. The true value evaluated to full precision is closer to -0.925879. This also causes a test regression in webaudio that uses sin. This is highly unexpected that the new implementation causes a sine wave saved to a 16-bit wav file to produce different values.},
-	keywords = {math, trig, trigonometry, native, standard, chrome, chromium, v8, bug},
+	keywords = {math, trig, trigonometry, native, standard, chrome, chromium, v8, bug, javascript},
 	title = {{Inaccurate sin/cos values}},
 	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3006},
 	year = {2013}
@@ -729,7 +729,7 @@
 
 @misc{bug:chromium:320097,
 	abstract = {From examining the source code, the cause is likely some optimization recently introduced into V8 around Math.sin or Math.cos. It may be that the change in behavior is perfectly valid; this demo is known to exercise the full range of floating-point values. However, investigation is needed to confirm that a regression hasn't been introduced.},
-	keywords = {math, sin, sine, cos, cosine, trig, trigonometry, bug, standard, chrome, chromium, v8},
+	keywords = {math, sin, sine, cos, cosine, trig, trigonometry, bug, standard, chrome, chromium, v8, javascript},
 	title = {{V8 version 3.23.4 changes results of trigonometric functions}},
 	url = { https://bugs.chromium.org/p/chromium/issues/detail?id=320097},
 	year = {2013}
@@ -737,7 +737,7 @@
 
 @misc{bug:v8:3089,
 	abstract = {Let x = Math.pow(2,120). Math.sin(x) = 0.2446152181180111. Math.sin(-x) = -0.2970278622893754. You can argue whether there's any significance to Math.sin(x), but since sin(-x) = -sin(x) for all x, Math.sin should satisfy the same identity for any real x. Math.tan has the same issue, but it will be fixed if Math.sin is fixed.},
-	keywords = {math, bug, sine, sin, standard, ieee754, floating-point, chrome, v8, trig, trigonometry},
+	keywords = {math, bug, sine, sin, standard, ieee754, floating-point, chrome, v8, trig, trigonometry, javascript},
 	title = {{Math.sin(-x) is not -Math.sin(x)}},
 	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3089},
 	year = {2014}
@@ -745,7 +745,7 @@
 
 @misc{bug:mozilla:967709,
 	abstract = {On the attached microbenchmark, which just pounds on sin with non-repeating values, V8 is about 2.8x faster on my Linux machine. (Our sin/cos just call in the C stdlib's sin/cos, so this is highly dependent on OS and stdlib version. I'd appreciate seeing what numbers other people get.) Profiling the box2d benchmark on awfy shows about 50% of its time is just calling sin/cos and this gives V8 better overall throughput on my machine. It looks like V8 rolls their own sin/cos (https://code.google.com/p/v8/source/detail?r=17594) which gives them more predictable performance. They self-host sin/cos which also avoids the call out from JIT code and all the overhead that that incurs. Since the sin/code code isn't all that complex, it seems like we could do even better with MSin/MCos MIR/LIR ops.},
-	keywords = {mozilla, firefox, ff, math, sine, sin, cosine, cos, trig, bug, performance, perf},
+	keywords = {mozilla, firefox, ff, math, sine, sin, cosine, cos, trig, bug, performance, perf, javascript},
 	title = {{V8 is 2.8x faster at sin/cos}},
 	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=967709#c33},
 	year = {2014}
@@ -753,8 +753,112 @@
 
 @misc{bug:chromium:78263005,
 	abstract = {Embed trigonometric lookup table.},
-	keywords = {math, v8, chrome, sine, sin, cosine, cos, tan, tangent, trig, trigonometry, algorithm, algo},
+	keywords = {math, v8, chrome, sine, sin, cosine, cos, tan, tangent, trig, trigonometry, algorithm, algo, javascript},
 	title = {{Reland: Embed trigonometric lookup table.}},
 	url = {https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1},
 	year = {2013}
+}
+
+@misc{bug:kangax:compat-table:392,
+	abstract = {Accuracy errors in the JavaScript standard Math library and associated shims.},
+	keywords = {javascript, bug, math, standard, shims},
+	title = {{Accuracy of Math.cbrt, Math.expm1, Math.log1p}},
+	url = {https://github.com/kangax/compat-table/issues/392},
+	year = {2015}
+}
+
+@misc{bug:mozilla:933257,
+	abstract = {Attempts to move underlying implementations to fdlibm, but ended up reverting due to performance regressions.},
+	keywords = {precision, math, javascript, standard, bug, firefox, ff},
+	title = {{Address precision in new Math functions}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=933257},
+	year = {2013}
+}
+
+@misc{bug:mozilla:892671,
+	abstract = {...so that we know how sloppy the implementations are. The current tests are too lenient and would not detect significant regressions in precision. There is, too, room for improvement. acosh and asinh are quite sloppy on Windows. So is cbrt. By contrast, hypot is fine everywhere.},
+	keywords = {precision, testing, javascript, mozilla, firefox, ff, math, standard, bug},
+	title = {{Specify the tolerance in each new ES6 Math test}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=892671},
+	year = {2013}
+}
+
+@misc{bug:mozilla:897634,
+	abstract = {Two issues: 1. Precision when the argument is > 0.00001 but still smallish. The current code computes exp(x)-1 when |x| >= 0.00001. This loses some bits. The worst cases are:\n\njs> Math.expm1(1e-5)\n0.000010000050000166668   # system expm1\n0.000010000050000069649   # exp(x)-1\njs> Math.expm1(-1e-5)\n-0.000009999950000166666  # system expm1\n-0.000009999950000172397  # exp(x)-1\n\nI'm pretty sure we can safely use that approximation when exp(x) is outside the range (1/2, 2), that is, |x| >= log(2) ~= 0.69314.\n\njs> Math.expm1(0.69315)\n1.0000056388880587        # system expm1\n1.0000056388880587        # exp(x) - 1\n\nbut that's a much bigger range where we'll need to use a series approximation.\n\n2. Monotonicity. This one is a surprise to me. In bug 717379 comment 76, 4esn0k notes:\n\n> with current algorithm for expm1 (!HAVE_EXPM1), expm1 is not monotonic\n> Math.expm1(-1e-2) === -0.009950166250831893\n> Math.expm1(-0.009999999999999998) === -0.009950166250831945\n> so\n> Math.expm1(-1e-2) > Math.expm1(-0.009999999999999998)\n\nThese arguments are outside the ±0.00001 threshold, so the non-monotonicity is happening in the exp(x) - 1 part of the range. So... I guess this means exp() itself is not monotonic on 4esn0k's platform. It's hard to guard against that.\n\nThe Taylor series approximation we use near 0 is monotonic if the C++ stack provides monotonic multiplication and addition.},
+	keywords = {precision, math, standard, javascript, bug, firefox, ff},
+	title = {{Fix Math.expm1 when !HAVE_EXPM1}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=897634},
+	year = {2013}
+}
+
+@misc{bug:mozilla:717379,
+	abstract = {Issue to implement ES6 math functions. Issue thread highlights how, because the specification is underspecified, developers considered approximations "good enough" and did not feel compelled to include exact tests.},
+	keywords = {bug, javascript, standard, firefox, ff, math, es6, es2015},
+	title = {{Implement the new ES6 math functions}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=717379#c5},
+	year = {2012}
+}
+
+@misc{bug:v8:3511,
+	abstract = {Here are some issues with Math.atanh. This provides a bit more detail than the info in https://code.google.com/p/v8/issues/detail?id=3266. Math.atanh(1e-10) -> 1.000000082640371e-10. It should be 1e-10.},
+	keywords = {math, precision, v8, bug, javascript, chrome, atanh, trig},
+	title = {{Math.atanh issues}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3511},
+	year = {2014}
+}
+
+@misc{bug:v8:3509,
+	abstract = {Here are some issues with Math.acosh. This provides a bit more detail than the info in https://code.google.com/p/v8/issues/detail?id=3266. Math.acosh(1+1e-10) -> 0.000014142136208733941. The correct answer is 1.4142136208675862d-5. Math.acosh(1.79e308) -> Infinity. The correct answer is about 710.4758.},
+	keywords = {math, precision, v8, bug, javascript, chrome, acosh, trig},
+	title = {{Math.acosh issues}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3509},
+	year = {2014}
+}
+
+@misc{bug:v8:3496,
+	abstract = {Here are some issues with Math.asinh. This provides a bit more detail than the info in https://code.google.com/p/v8/issues/detail?id=3266. Math.asinh(1e-50) -> 0. Should return 1e-50 since asinh(x) ~ x for small x. Math.asinh(1e200) -> Infinity. Should return 461.2101657793691e0 instead of overflowing. In fact, it should never overflow since asinh(most-positive-float) ~= 710.},
+	keywords = {math, javascript, standard, v8, chrome, trig, bug, asinh},
+	title = {{Math.asinh issues}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3496},
+	year = {2014}
+}
+
+@misc{bug:v8:3266,
+	abstract = {From looking at the code for the hyperbolics, I noticed some numerical issues. sinh: For small x, sinh is not accurate because exp(x) and exp(-x) are both close to 1. It also does more work than necessary computing both exp(x) and exp(-x). cosh: More work than necessary computing both exp(x) and exp(-x). tanh: Inaccurate for small x for the same reasons as sinh. |tanh(x)| <= 1, but the implementation will overflow for |x| > 710 or so. More work than necessary computing both exp(x) and exp(-x). asinh: Inaccurate for small x because it computes, essentially, log(1-x). Using log1p will help. Premature overflow because it computes sqrt(1+x^2). In fact, asinh should never overflow for any non-infinite argument. atanh: Inaccurate for small x because it basically computes log(1+2*x/(1-x)) ~ log(1+2*x). Using log1p will help.},
+	keywords = {math, v8, chrome, bug, javascript, standard, hyperbolic, trig},
+	title = {{Numeric issues in hyperbolic functions}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3266},
+	year = {2014}
+}
+
+@misc{bug:esdiscuss:038525,
+	abstract = {In ECMA-262, section 15.8.2, the note allows implementations to choose appropriate algorithms for the evaluation of the special functions and it is recommended but not required to use the algorithms from fdlibm netlib.org/fdlibm.Since this is a recommendation and not a requirement implementations compute incorrect results for some values. This produces things where Math.cos(Math.pow(2,120)) doesn’t even have the correct sign or basic identities like sin(-x) = -sin(x) don’t hold for all finite values of x. This spreadsheet gives some results from various browsers on some selected functions. This lack of precision makes it very difficult to port numerical applications from C or Java to Javascript. It also forces every serious numerical Javascript application to test against every browser and platform for correct behaviour. This seems a major disservice to the web platform and Javascript in particular. Since the specification recommends using the algorithms from fdlibm, which, I believe produces results that are accurate to < 1 ulp, why not make this a requirement? As the spreadsheet shows, many browsers already achieve correct results. Porting fdlibm to Javascript is not particularly difficult provided a couple of key routines are available. (My colleague has done this for the trig functions, except for the hairy case of the Payne-Hanek pi reduction routine.) Note also that Java requires that many special function be accurate to < 1 ulp. Specifying a similar requirement for Javascript should not be too onerous on existing implementations. Java is an existence proof that these requirements can work. While having an accuracy requirement is good in itself, it’s also important that the functions are semi-monotonic to match the mathematical functions. This is also a requirement in Java. It is known that applications using divided differences behave incorrectly when functions are not monotonic when they should be.},
+	keywords = {math, javascript, standard, precision, bug},
+	title = {{ES6 accuracy of special functions}},
+	url = {https://mail.mozilla.org/pipermail/es-discuss/2014-July/038525.html},
+	year = {2014}
+}
+
+@misc{bug:v8:3468,
+	abstract = {In Chrome 37.0.2062.20 beta (64-bit) on linux, Math.exp(100) returns 2.6881171418161485e+43. The correct answer is 2.68811714181613544841262555158d43. The error is about 26 ulp (binary).},
+	keywords = {math, bug, javascript, standard, v8, chrome},
+	title = {{Math.exp(100) is inaccurate}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3468},
+	year = {2014}
+}
+
+@misc{bug:esdiscuss:2014-07-31,
+	abstract = {TC39 meeting where Math accuracy issues are discussed, including the need to a) mandate a minimum precision and b) bring in experts.},
+	keywords = {math, javascript, tc39, bug, standard, precision},
+	title = {{Precision of Math trig functions}},
+	url = {https://esdiscuss.org/notes/2014-07-31},
+	year = {2014}
+}
+
+@misc{bug:esdiscuss:038525:spreadsheet,
+	abstract = {Spreadsheet showing cross-browser variability.},
+	keywords = {bug, math, cross-browser, portability, javascript},
+	title = {{Cross-browser trig function variability}},
+	url = {https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0},
+	year = {2014}
 }
