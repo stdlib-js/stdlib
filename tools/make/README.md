@@ -459,12 +459,31 @@ To check licenses of installed package dependencies,
 $ make check-licenses
 ```
 
+---
+
+#### Bash Completion
+
+To enable [bash completion][bash-completion] of Makefile targets, add
+
+```
+complete -W "\`find . ! \( -path \"*/node_modules/*\" -prune \) -and \( -name 'Makefile' -o -name '*.mk' \) | xargs grep '^.PHONY: ' | awk '{print $2}'\`" make
+```
+
+to your `~/.bash_profile` or `~/.bashrc`.  Note that completion is __not__ exhaustive, as the above only includes targets which have been __explicitly__ declared phony targets
+
+```
+.PHONY: beep-boop
+```
+
+and does not include targets declared via variables. Excluded targets could be included by mining the Makefile database `make -qp`, but such inclusion has a performance cost and is unnecessary due to the predominant use of `PHONY`.
+
 
 <!-- <links> -->
 
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
 [jsdoc]: http://usejsdoc.org/
 [nvm]: https://github.com/creationix/nvm
+[bash-completion]: https://www.gnu.org/software/bash/manual/bashref.html#Programmable-Completion
 
 <!-- </links> -->
 

@@ -1,5 +1,4 @@
-TODO
-====
+# TODO
 
 0. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
 
@@ -1230,6 +1229,7 @@ TODO
      - [churn](https://gist.github.com/coreyhaines/829932)
      - [churn](https://github.com/danmayer/churn)
      - [code-maat](https://github.com/adamtornhill/code-maat)
+     - [GitHub analysis](https://github.com/StephenOTT/GitHub-Analytics)
 
 255. link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
 
