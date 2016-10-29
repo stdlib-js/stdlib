@@ -742,3 +742,11 @@
 	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3089},
 	year = {2014}
 }
+
+@misc{mozilla:967709,
+	abstract = {On the attached microbenchmark, which just pounds on sin with non-repeating values, V8 is about 2.8x faster on my Linux machine. (Our sin/cos just call in the C stdlib's sin/cos, so this is highly dependent on OS and stdlib version. I'd appreciate seeing what numbers other people get.) Profiling the box2d benchmark on awfy shows about 50% of its time is just calling sin/cos and this gives V8 better overall throughput on my machine. It looks like V8 rolls their own sin/cos (https://code.google.com/p/v8/source/detail?r=17594) which gives them more predictable performance. They self-host sin/cos which also avoids the call out from JIT code and all the overhead that that incurs. Since the sin/code code isn't all that complex, it seems like we could do even better with MSin/MCos MIR/LIR ops.},
+	keywords = {mozilla, firefox, ff, math, sine, sin, cosine, cos, trig, bug, performance, perf},
+	title = {{V8 is 2.8x faster at sin/cos}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=967709#c33},
+	year = {2014}
+}
