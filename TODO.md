@@ -665,9 +665,7 @@
 
       - could use `@browseronly` and `@nodejsonly` special annotations, akin to `@private` and `@public`
 
-76. `@stdlib/regexp/extname`, `*/dirname` export circular references; prob best to clone the regexp and bind to exported object
-
-    * requires porting `utils-copy`
+76. electron ui for creating a `stdlib` bundle (could support rollup, webpack, browserify)
 
 77. for browser REPL, use a virtual filesystem
 
@@ -805,7 +803,7 @@
      * [x] fs
      * [x] math/base/blas
      * [ ] math/base/dist
-     * [ ] math/base/random
+     * [-] math/base/random
      * [ ] math/base/special
      * [ ] math/base/tools
      * [ ] math/base/utils
@@ -1097,6 +1095,8 @@
 
 193. timed [tape](https://github.com/diasdavid/timed-tape) tests...useful?
 
+     - once `tape` is brought in-house, could make part of the lib
+
 194. [match-case](https://github.com/wooorm/match-casing)
 
 195. Consider setting up [jenkins](https://jenkins.io/) for CI (notably Windows)
@@ -1186,13 +1186,9 @@
 
 236. [travis-deploy-example](https://github.com/bcoe/travis-deploy-example)
 
-237. test-tools, test-tools-cov mk recipe
+237. [reserved words](http://www.javascripter.net/faq/reserved.htm) and [reserved words](https://mathiasbynens.be/notes/reserved-keywords) and [keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
 
-238. static stats mk recipe
-
-     - num files (w/ breakdown by extension num/%)
-     - size
-     - num lines
+238. a branch (based on `master`) which every month is run against every single Node version since `0.10.0` (may want a separate Jenkins server for this)
 
 239. Given an import-require tree, should be able to statically detect cyclic deps and flag
 
@@ -1323,7 +1319,6 @@
    - [duplexer2](https://github.com/deoxxa/duplexer2)
    - [mississippi](https://github.com/maxogden/mississippi)
    - `to-console` or maybe `to-log` (provide own logger, with default being console using util-inspect) => write stream which writes each chunk to console (either normal or object mode); if object mode, use util-inspect and allow setting of depth
-   - `debug` as a transform stream => could provide name and then toggle debugging based on name!
    - [tap-stream](https://github.com/thlorenz/tap-stream) and [inspect-stream](https://github.com/thlorenz/inspect-stream/blob/master/inspect-stream.js); see also [sculpt#tap](https://github.com/Medium/sculpt#tap)
    - [guide](https://gist.github.com/joyrexus/10026630) to node streams
    - [vstream](https://github.com/joyent/node-vstream) => instrumented streams

@@ -50,6 +50,8 @@ include $(TOOLS_MAKE_LIB_DIR)/test/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/test-browsers/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/test-ci/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/test-cov/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/tools-test/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/tools-test-cov/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/workshops/Makefile
 
 
