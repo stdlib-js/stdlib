@@ -2,8 +2,8 @@
 
 > Bugs in the native (built-in) `Math` namespace.
 
-* [Sine and cosine in V8][1]
-* [Trigonometric functions in V8][2]
+* [Sine and cosine in V8][@v8:3006]
+* [Trigonometric functions in V8][@chromium:320097]
 * [V8 not IEEE 754-2008 compliant][3]
 * [Mozilla discussion on sine and cosine in V8][4]
 * [V8 replaced a lookup table by computing `Math.tan` as `Math.sin/Math.cos`][5]
@@ -31,8 +31,8 @@
 
 <!-- <links> -->
 
-[1]: https://bugs.chromium.org/p/v8/issues/detail?id=3006
-[2]: https://bugs.chromium.org/p/chromium/issues/detail?id=320097
+[@v8:3006]: https://bugs.chromium.org/p/v8/issues/detail?id=3006
+[@chromium:320097]: https://bugs.chromium.org/p/chromium/issues/detail?id=320097
 [3]: https://bugs.chromium.org/p/v8/issues/detail?id=3089
 [4]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709#c33
 [5]: https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1
