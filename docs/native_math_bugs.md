@@ -2,11 +2,11 @@
 
 > Bugs in the native (built-in) `Math` namespace.
 
-* [Sine and cosine in V8][@v8:3006]
-* [Trigonometric functions in V8][@chromium:320097]
-* [V8 not IEEE 754-2008 compliant][@v8:3089]
-* [Mozilla discussion on sine and cosine in V8][@bugzilla:967709]
-* [V8 replaced a lookup table by computing `Math.tan` as `Math.sin/Math.cos`][@chromium:78263005]
+* [Sine and cosine in V8][@bug:v8:3006]
+* [Trigonometric functions in V8][@bug:chromium:320097]
+* [V8 not IEEE 754-2008 compliant][@bug:v8:3089]
+* [Mozilla discussion on sine and cosine in V8][@bug:mozilla:967709]
+* [V8 replaced a lookup table by computing `Math.tan` as `Math.sin/Math.cos`][@bug:chromium:78263005]
 * [Browser math accuracy issues][6]
 * [ES6 accuracy of special functions][7]
 * [Accuracy of `Math.exp` in V8][8]
@@ -31,11 +31,11 @@
 
 <!-- <links> -->
 
-[@v8:3006]: https://bugs.chromium.org/p/v8/issues/detail?id=3006
-[@chromium:320097]: https://bugs.chromium.org/p/chromium/issues/detail?id=320097
-[@v8:3089]: https://bugs.chromium.org/p/v8/issues/detail?id=3089
-[@bugzilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
-[@chromium:78263005]: https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1
+[@bug:v8:3006]: https://bugs.chromium.org/p/v8/issues/detail?id=3006
+[@bug:chromium:320097]: https://bugs.chromium.org/p/chromium/issues/detail?id=320097
+[@bug:v8:3089]: https://bugs.chromium.org/p/v8/issues/detail?id=3089
+[@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
+[@bug:chromium:78263005]: https://github.com/v8/v8/commit/33b5db090258c2a2dc825659c3ad109bd02110c1
 [6]: https://github.com/kangax/compat-table/issues/392
 [7]: https://esdiscuss.org/topic/es6-accuracy-of-special-functions
 [8]: https://bugs.chromium.org/p/v8/issues/detail?id=3468

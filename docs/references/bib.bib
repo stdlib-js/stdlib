@@ -719,7 +719,7 @@
 	year = {1986},
 }
 
-@misc{v8:3006,
+@misc{bug:v8:3006,
 	abstract = {In Mac Chrome 33.0.1706.0 canary, Math.cos(Math.pow(2,120)) returns 0.47796506772457525. In Chromium ToT from today, after a V8 roll with the new sin/cos implementation using table lookup and interpolation, this now returns 0. The true value evaluated to full precision is closer to -0.925879. This also causes a test regression in webaudio that uses sin. This is highly unexpected that the new implementation causes a sine wave saved to a 16-bit wav file to produce different values.},
 	keywords = {math, trig, trigonometry, native, standard, chrome, chromium, v8, bug},
 	title = {{Inaccurate sin/cos values}},
@@ -727,7 +727,7 @@
 	year = {2013}
 }
 
-@misc{chromium:320097,
+@misc{bug:chromium:320097,
 	abstract = {From examining the source code, the cause is likely some optimization recently introduced into V8 around Math.sin or Math.cos. It may be that the change in behavior is perfectly valid; this demo is known to exercise the full range of floating-point values. However, investigation is needed to confirm that a regression hasn't been introduced.},
 	keywords = {math, sin, sine, cos, cosine, trig, trigonometry, bug, standard, chrome, chromium, v8},
 	title = {{V8 version 3.23.4 changes results of trigonometric functions}},
@@ -735,7 +735,7 @@
 	year = {2013}
 }
 
-@misc{v8:3089,
+@misc{bug:v8:3089,
 	abstract = {Let x = Math.pow(2,120). Math.sin(x) = 0.2446152181180111. Math.sin(-x) = -0.2970278622893754. You can argue whether there's any significance to Math.sin(x), but since sin(-x) = -sin(x) for all x, Math.sin should satisfy the same identity for any real x. Math.tan has the same issue, but it will be fixed if Math.sin is fixed.},
 	keywords = {math, bug, sine, sin, standard, ieee754, floating-point, chrome, v8, trig, trigonometry},
 	title = {{Math.sin(-x) is not -Math.sin(x)}},
@@ -743,7 +743,7 @@
 	year = {2014}
 }
 
-@misc{bugzilla:967709,
+@misc{bug:mozilla:967709,
 	abstract = {On the attached microbenchmark, which just pounds on sin with non-repeating values, V8 is about 2.8x faster on my Linux machine. (Our sin/cos just call in the C stdlib's sin/cos, so this is highly dependent on OS and stdlib version. I'd appreciate seeing what numbers other people get.) Profiling the box2d benchmark on awfy shows about 50% of its time is just calling sin/cos and this gives V8 better overall throughput on my machine. It looks like V8 rolls their own sin/cos (https://code.google.com/p/v8/source/detail?r=17594) which gives them more predictable performance. They self-host sin/cos which also avoids the call out from JIT code and all the overhead that that incurs. Since the sin/code code isn't all that complex, it seems like we could do even better with MSin/MCos MIR/LIR ops.},
 	keywords = {mozilla, firefox, ff, math, sine, sin, cosine, cos, trig, bug, performance, perf},
 	title = {{V8 is 2.8x faster at sin/cos}},
@@ -751,7 +751,7 @@
 	year = {2014}
 }
 
-@misc{chromium:78263005,
+@misc{bug:chromium:78263005,
 	abstract = {Embed trigonometric lookup table.},
 	keywords = {math, v8, chrome, sine, sin, cosine, cos, tan, tangent, trig, trigonometry, algorithm, algo},
 	title = {{Reland: Embed trigonometric lookup table.}},
