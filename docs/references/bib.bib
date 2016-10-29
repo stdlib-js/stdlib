@@ -734,3 +734,11 @@
 	url = { https://bugs.chromium.org/p/chromium/issues/detail?id=320097},
 	year = {2013}
 }
+
+@misc{v8:3089,
+	abstract = {Let x = Math.pow(2,120). Math.sin(x) = 0.2446152181180111. Math.sin(-x) = -0.2970278622893754. You can argue whether there's any significance to Math.sin(x), but since sin(-x) = -sin(x) for all x, Math.sin should satisfy the same identity for any real x. Math.tan has the same issue, but it will be fixed if Math.sin is fixed.},
+	keywords = {math, bug, sine, sin, standard, ieee754, floating-point, chrome, v8, trig, trigonometry},
+	title = {{Math.sin(-x) is not -Math.sin(x)}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3089},
+	year = {2014}
+}
