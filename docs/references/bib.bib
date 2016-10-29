@@ -718,3 +718,11 @@
 	url = {http://www.nrbook.com/devroye/},
 	year = {1986},
 }
+
+@misc{v8:3006,
+	abstract = {In Mac Chrome 33.0.1706.0 canary, Math.cos(Math.pow(2,120)) returns 0.47796506772457525. In Chromium ToT from today, after a V8 roll with the new sin/cos implementation using table lookup and interpolation, this now returns 0. The true value evaluated to full precision is closer to -0.925879. This also causes a test regression in webaudio that uses sin. This is highly unexpected that the new implementation causes a sine wave saved to a 16-bit wav file to produce different values.},
+	keywords = {math, trig, trigonometry, native, standard, chrome, chromium, v8, bug},
+	title = {{Inaccurate sin/cos values}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3006},
+	year = {2013}
+}
