@@ -6,6 +6,7 @@
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
 * [What about WebAssembly?](#web-assembly)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
+* [Why not change the official ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
 * [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Backward compatibility?](#backward-compatibility)
 * [Promise support?](#promise-support)
@@ -69,6 +70,51 @@
 1. Native math functions are often buried deep in compiler code and written in languages other than JavaScript. By implementing Math functions purely in JavaScript, the hope is that the underlying algorithms are more transparent, approachable, forkable, and debuggable.
 
 <!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="ecmascript-math-specification"></a>
+
+### Why not change the official ECMAScript specification to use better Math algorithms?
+
+Common arguments in support of changing the official ECMAScript specification:
+
+* __network__: more and better built-ins translates to smaller bundles and thus decreased network costs.
+* __standards__: everyone benefits from using common implementations.
+* __evergreen__: improving built-ins means existing codebases using built-ins gets "upgraded" (and patched) for free.
+
+On the surface, the above arguments seem compelling. They fail, however, to recognize the rather messy reality of JavaScript applications and originate from a misunderstanding as to how JavaScript is implemented and practiced today.
+
+A central thesis of this project is as follows:
+
+> Math in JavaScript is fundamentally broken and cannot, and should not, be fixed through the official ECMAScript standard.
+
+The reasons are as follows:
+
+1. __underspecified standard__: the ECMAScript specification for the Math standard library is underspecified, but not without merit. Namely, underspecification allows those implementing the specification to make trade-offs between speed and precision. Were the specification to mandate a particular algorithm, e.g., for `Math.sin`, implementers would be locked into __always__ using a particular implementation. Especially for special functions, different algorithms will yield different results under varying conditions. Thus, to change an underlying algorithm would mean to break backward compatibility. By not committing themselves to any hard backward compatibility constraints, implementors maintain a degree of flexibility, including the ability to use algorithms which cater to a particular user base (gaming versus numeric computing). In which case, underspecification has advantages.   
+
+1. __cross-browser variability__: an underspecified standard, however, does not come without costs. Because implementors are free to choose underlying algorithms, relying exclusively on built-in Math functionality renders portability across more than one environment impossible. Even if all implementors happened to use the same underlying algorithm, a developer cannot, *a priori*, __guarantee__ or assume that only one algorithm is implemented. The default assumption must be: *if more than one algorithm can exist, more than one algorithm will exist*.
+
+1. __no single codebase__: unlike other standard libraries (e.g., Golang, Python, Julia, etc), JavaScript does not have a single shared codebase. Each browser manufacturer has their own implementation and independent codebase with varying architecture and organization. More fundamentally, a common *implementation* does __not__ exist; only common *interfaces* exist. Thus, a developer wanting to write a numerical application must navigate and understand multiple sources of truth. Such expenditures incur significant overhead, especially when wanting to file issues, submit patches, or standardize a particular algorithm. For example, a patch in Chrome does not translate to a patch in Safari. Because each implementor is free to erect a protected castle, those writing numerical algorithms are resigned to treating the standard Math library as a black box, always catering to the lowest common denominator (which is often the empirically determined slowest and/or least precise algorithm).
+
+1. __versioning__: a developer does not have the freedom to choose which version of a particular algorithm she is given. In an "evergreen" environment, her application is only guaranteed a consistent interface, not an underlying implementation. Each background update may influence results in subtle ways and introduce bugs and unforeseen variability. A developer relying exclusively on standard library built-ins cannot assume reproducibility upon relaunching a browser. Thus, not only is cross-browser portability problematic, but same-browser-different-version portability is problematic. 
+
+1. __required shims__: because no common codebase exists and implementors make mistakes, application developers are dependent on shims (i.e., libraries which ensure consistent implementations across browsers, provide missing built-in functionality, and patch bugs). The issue here, of course, is that, if an application developer must supply a shim, reduced network cost due to the presence of built-ins is non-existent: an implementation is sent over the network regardless in order to patch a possibly buggy environment. While a developer could use browser sniffing and HTTP2 to lazily load patches, such practices incur a performance cost. Accordingly, if an implementation is sent irrespective of whether an environment provides an implementation natively, why does an environment need to guarantee the existence of an implementation in the first place?
+
+1. __globals__: standard library functions are unprotected globals (they need to be, or else how would shims work?). This means, however, that, not only must a numerical application developer worry about cross-browser and same-browser portability, but she must also worry about third party libraries overriding built-ins. Hence, a numerical application developer must always consider the browser a hostile environment, leaving her no choice but to provide her own guarded implementations.
+
+1. __testing__: while implementors can be reasonably trusted to implement a specification, implementors vary in their knowledge and ability to rigorously test numerical algorithms. Too often numerical tests fail to adequately cover input argument regimes and edge cases, and rarely do tests cross-compare against implementations in other platforms and environments. While developers are free to contribute tests to implementation codebases, the lack of a single codebase means that work must duplicated across many other codebases.
+
+1. __no golden algorithm__: those who advocate for standard algorithms assume that __a__ standard algorithm is all that is needed. The reality, however, is that different applications require different algorithms. For example, many developers believe (incorrectly) that an environment only needs one pseudorandom number generator (PRNG). And if we only implemented the very best possible PRNG (with the possibility of seeding), our problems would be solved. Such a belief, however, is mistaken. Numerical applications, particularly simulations, often require more than one different type of PRNG (e.g., LCG versus Xorshift) in order to ensure that the results of a simulation are not an artifact of the PRNG itself. Furthermore, having a standardized, e.g., `Math.sin`, algorithm does __not__ obviate the need for other algorithms which compute sine. The "optimal" implementation depends on a variety of factors, including speed, precision, value range, and more. Ultimately, the individual best equipped to determine which algorithm is most appropriate for an application is the developer herself.
+
+1. __timescale__: specifications and bug fixes are implemented over extended timescales. Historically, improving the standard Math library has been low priority (e.g., Mozilla first identified the need to improve `Math.random()` in 2006 and did not do so until 2015). Even if advocating for official inclusion in ECMAScript was believed desirable, the time involved to enact such implementation is not worth the effort: community solutions can simply move much faster in terms of development, testing, patching, and maintenance.
+
+1. __trust__: at a very fundamental level, trust is broken. This reason underscores all the others. A continued history of bugs, poor algorithms, insufficient testing, lack of IEEE 754 compliance, favoring speed at the cost of precision, insufficient domain knowledge, and carelessness with backward compatibility present an overwhelming case that ECMAScript cannot be relied upon to provide a single consistent solution to the Math problem.
+
+Based on the reasons above, Math is fundamentally broken at the standards level. Nevertheless, this project maintains that JavaScript __is__ well-suited for numeric and mathematical computing. The solution, however, does not entail standardization, but rather the development of independent community-driven solutions which can provide the kind of rigorous, robust, and performant numerical algorithms applications need. 
 
 
 <!-- <faq-question> -->
