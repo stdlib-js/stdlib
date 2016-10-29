@@ -1,23 +1,4 @@
 
-# VARIABLES #
-
-# Define the path to the `tap-spec` executable:
-#
-# To install tap-spec:
-#     $ npm install tap-spec
-#
-# [1]: https://github.com/scottcorgan/tap-spec
-TAP_REPORTER ?= $(BIN_DIR)/tap-spec
-
-# Define the path to the `tap-summary` executable:
-#
-# To install tap-summary:
-#     $ npm install tap-summary
-#
-# [1]: https://github.com/zoubin/tap-summary
-TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
-
-
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/tools-test/javascript.mk
