@@ -665,7 +665,7 @@
 
       - could use `@browseronly` and `@nodejsonly` special annotations, akin to `@private` and `@public`
 
-76. 
+76. electron ui for creating a `stdlib` bundle (could support rollup, webpack, browserify)
 
 77. for browser REPL, use a virtual filesystem
 
