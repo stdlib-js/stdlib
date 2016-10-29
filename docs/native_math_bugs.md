@@ -20,12 +20,12 @@
 * [Accuracy of `Math.exp` in V8][@bug:v8:3468]
 * [TC39 meeting discussing Math accuracy issues][@bug:esdiscuss:2014-07-31]
 * [Spreadsheet showing trigonometric results across browsers][@bug:esdiscuss:038525:spreadsheet]
+* [Accuracy of `Math.pow` in V8][@bug:v8:3599]
+* [Accumulation of errors in Mozilla `Math.pow`][@bug:mozilla:618251]
+* [Accuracy of hyperbolic trigonometric functions in V8][@bug:paulmiller:es6-shim:334]
+* [ES6 shim accuracy issues][@bug:paulmillr:es6-shim:314]
+* [TC39 testing of Math built-ins][@bug:tc39:test262:269]
 
-* [Accuracy of `Math.pow` in V8][10]
-* [Accumulation of errors in Mozilla `Math.pow`][11]
-* [Accuracy of hyperbolic trigonometric functions in V8][12]
-* [TC39 testing of Math built-ins][13]
-* [ES6 shim accuracy issues][14]
 * [Non-randomness of `Math.random` in V8][15]
 * [V8 fixes `Math.random`][16]
 * [V8 patches `Math.random` to return pseudorandom numbers][17]
@@ -59,12 +59,12 @@
 [@bug:v8:3468]: https://bugs.chromium.org/p/v8/issues/detail?id=3468
 [@bug:esdiscuss:2014-07-31]: https://esdiscuss.org/notes/2014-07-31
 [@bug:esdiscuss:038525:spreadsheet]: https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0
+[@bug:v8:3599]: https://bugs.chromium.org/p/v8/issues/detail?id=3599
+[@bug:mozilla:618251]: https://bugzilla.mozilla.org/show_bug.cgi?id=618251
+[@bug:paulmiller:es6-shim:334]: https://github.com/paulmillr/es6-shim/issues/334
+[@bug:paulmillr:es6-shim:314]: https://github.com/paulmillr/es6-shim/issues/314
+[@bug:tc39:test262:269]: https://github.com/tc39/test262/pull/269
 
-[10]: https://bugs.chromium.org/p/v8/issues/detail?id=3599
-[11]: https://bugzilla.mozilla.org/show_bug.cgi?id=618251
-[12]: https://github.com/paulmillr/es6-shim/issues/334
-[13]: https://github.com/tc39/test262/pull/269
-[14]: https://github.com/paulmillr/es6-shim/issues/314
 [15]: https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc
 [16]: http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/
 [17]: http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref

@@ -141,3 +141,43 @@
 	url = {https://docs.google.com/spreadsheets/d/1t2jrptAvaQetDIYPD8GKc90Dni2dT3FuHgKKFF-eJHw/edit#gid=0},
 	year = {2014}
 }
+
+@misc{bug:v8:3599,
+	abstract = {Math.pow(10, 308) returns 1.0000000000000006e308. The correct answer is 1e308. fdlibm's pow function does, in fact, return 1e308. The difference between what V8 returns and the correct answer is 3 ulp.},
+	keywords = {math, javascript, v8, chrome, pow, exponentiation, precision},
+	title = {{Math.pow(10,308) is inaccurate}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=3599},
+	year = {2014}
+}
+
+@misc{bug:mozilla:618251,
+	abstract = {From Shannon Hickey:\n\nvar oneWay:Number = Math.pow(10, 305);\nvar theOther:Number = 1e+305;\ntrace(oneWay);\ntrace(theOther);\ntrace(oneWay == theOther);\ntrace(oneWay - theOther);\n\nResults:\n\n1.00000000000000e+305\n1e+305\nfalse\n5.84718840683999e+289\n\nResult line 1 is unexpected. Result line 3 is odd. Result line 4 is completely crazy.\n\nMy analysis:\n\nPrimarily this looks like an inaccuracy in our code for Math.pow.  You will notice that the difference between the two numbers is in the 16th digit (305-289=16), which cannot be represented reliably by a Number:  Number only has 15 decimal digits of precision, generally.  The pow() code does specialize for integer exponents but there could be inaccuracies creeping in around the extremes of the floating-point range (which extends to e+308) - I'd have to dig deeper to understand precisely what's going on, though. The reason the result of Math.pow() is being written as 1.00000000000000e+305 and not (eg) 1.00000000000001e+305, which is presumably the more accurate representation, is a separate bug in the number formatter. For integer exponents our Math.pow implementation uses a standard doubling algorithm. It appears that that doubling algorithm accumulates error. We ought to be able to do better.  That said, 1e305 isn't exactly representable in a Number (it has 708 leading non-zero digits in the binary representation) so it's just a question of how good our approximation is.},
+	keywords = {math, bug, javascript, firefox, ff, mozilla, pow, exponentiation, precision},
+	title = {{Math.pow accumulates error}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=618251},
+	year = {2010}
+}
+
+@misc{bug:paulmillr:es6-shim:334,
+	abstract = {var isAsinhOK = Math.asinh(0.0002) >= 0.0001999999986666666 &&  Math.asinh(0.0002) <= 0.0001999999986666668; var isAtanhOK = Math.atanh(0.0002) >= 0.0002000000026666667 && Math.atanh(0.0002) <= 0.0002000000026666668; Both of these are true in shimmed Firefox 37 and Safari 8, both false in Chrome 41 and Chrome Canary 44. From kangax/compat-table#392 (comment)},
+	keywords = {math, shim, javascript, precision, chrome, v8},
+	title = {{Chrome 41: `Math.asinh` and `Math.atanh` are imprecise}},
+	url = {https://github.com/paulmillr/es6-shim/issues/334},
+	year = {2015}
+}
+
+@misc{bug:paulmillr:es6-shim:314,
+	abstract = {Large relative error for `Math.expm1` and `Math.log1p`.},
+	keywords = {math, shim, javascript, es6, es2015, bug, precision},
+	title = {{Relative error is too big for Math.expm1 and Math.log1p}},
+	url = {https://github.com/paulmillr/es6-shim/issues/314},
+	year = {2015}
+}
+
+@misc{bug:tc39:test262:269,
+	abstract = {Discussion on whether to include accuracy tests due to underspecified standard.},
+	keywords = {math, javascript, tc39, precision, bug},
+	title = {{Add new tests for Math built-ins}},
+	url = {https://github.com/tc39/test262/pull/269},
+	year = {2015}
+}
