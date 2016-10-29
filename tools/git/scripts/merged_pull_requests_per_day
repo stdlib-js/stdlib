@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# Prints the number of merged pull requests per day.
+#
+# <month> <day> <year> <number_of_merges>
+
+# * `git log --reverse --merges`
+#   - Show commit logs in reverse order.
+# * `grep 'Merge pull request #'`
+#   - Filter for commit messages which explicitly state that a commit merges a pull request.
+# * `awk '{}'
+#   - From each commit, extract the month (`$1`), day (`$2`), and year (`$3`).
+# * `uniq -c`
+#   - Given that same day commits are on consecutive lines, we can remove repeated lines and count the repeats to show daily totals.
+# * `awk '{}'`
+#   - Format the output.
+git log --reverse --merges --format=format:"%ad %s" --date=format:"%b %d %Y" | grep 'Merge pull request #' | awk '{print $3 OFS $1 OFS $2}' | uniq -c | awk '{print $3 OFS $4 OFS $2 OFS $1}'

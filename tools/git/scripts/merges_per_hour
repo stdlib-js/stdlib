@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# Prints the number of merges per hour.
+#
+# <hour> <num_merges>
+
+# * `git log --merges`
+#   - Show commit logs.
+# * `grep Date`
+#   - Extract the line which begins with `Date` from each log.
+# * `awk '{}'`
+#   - From each date line, extract the hour.
+# * `sort -n`
+#   - Sort in numerical order.
+# * `uniq -c`
+#   - Remove repeated lines and count the repeats to show hourly totals.
+# * `awk '{}'`
+#   - Format the output.
+git log --merges | grep Date | awk '
+{
+	split($5, time, ":")
+	print time[1]
+}
+' | sort -n | uniq -c | awk '{print $2 OFS $1}'
