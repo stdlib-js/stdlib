@@ -84,7 +84,7 @@ Common arguments in support of changing the official ECMAScript specification:
 
 * __network__: more and better built-ins translates to smaller bundles and thus decreased network costs.
 * __standards__: everyone benefits from using common implementations.
-* __evergreen__: improving built-ins means existing codebases using built-ins gets "upgraded" (and patched) for free.
+* __evergreen__: improving built-ins means existing codebases using built-ins get "upgraded" (and patched) for free.
 
 On the surface, the above arguments seem compelling. They fail, however, to recognize the rather messy reality of JavaScript applications and originate from a misunderstanding as to how JavaScript is implemented and practiced today.
 
