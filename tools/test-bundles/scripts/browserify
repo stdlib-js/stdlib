@@ -38,9 +38,6 @@ browserify_envify="${node_modules}/envify"
 # Define the path to the `browserify` plugin which allows `proxyquire` to be run in a browser:
 browserify_proxyquire="${node_modules}/proxyquire-universal"
 
-# Define command-line options to be used when invoking the `browserify` executable:
-browserify_flags="-t [ ${browserify_envify} --NODE_ENV browser ] -p=${browserify_proxyquire}"
-
 # Define a package filename identifier:
 packages_file='package.json'
 
@@ -232,7 +229,7 @@ create_bundles() {
 # $1 - source files
 # $2 - destination
 create_bundle() {
-	"${browserify}" "${browserify_flags}" $(echo "$1") > "$2"
+	"${browserify}" "-t=${browserify_envify}" "-p=${browserify_proxyquire}" $(echo "$1") > "$2"
 }
 
 # Main execution sequence:
