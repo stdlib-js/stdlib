@@ -5,11 +5,14 @@
 
 # VARIABLES #
 
-# Determine the host kernel:
-kernel=$(uname -s)
-
 # Determine root directory:
 root_dir="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility for finding packages:
+find_packages="${root_dir}/tools/scripts/find_packages"
+
+# Determine the host kernel:
+kernel=$(uname -s)
 
 # Define the path to the source library:
 source_dir="${root_dir}/lib/node_modules"
@@ -31,9 +34,6 @@ browserify_proxyquire="${node_modules}/proxyquire-universal"
 
 # Define the pattern for test filenames:
 tests_pattern='test*.js'
-
-# Define path to utility to find packages:
-find_packages="${root_dir}/tools/scripts/find_packages"
 
 
 # FUNCTIONS #
@@ -104,63 +104,13 @@ package_name() {
 	echo "${name}"
 }
 
-# Slugifies a package name.
-#
-# $1 - package name
-slugify() {
-	# Slugify the path (basic algorithm):
-	local slug="$(echo $1 | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
-	echo "${slug}"
-}
-
-# Creates a file listing all packages.
-#
-# $1 - packages
-create_pkgs_file() {
-	local dest
-	local name
-	local slug
-	local N
-	local i
-
-	N=0
-	i=0
-
-	# Determine the number of packages...
-	for pkg in $(echo "$1"); do
-		let "N+=1"
-	done
-	let "N-=1"
-
-	dest="${bundle_dir}/pkgs.json"
-	touch "${dest}"
-
-	echo -n '{' >> "${dest}"
-
-	# Pair each package name to its corresponding test bundle...
-	for pkg in $(echo "$1"); do
-		# Only add a package if the package has tests to bundle...
-		if [[ -d "${pkg}/test" ]]; then
-			name=$(package_name "${pkg}")
-			slug=$(slugify "${name}")
-			echo -n "\"${name}\":\"${slug}.js\"" >> "${dest}"
-			if [[ "${i}" -lt "${N}" ]]; then
-				echo -n ',' >> "${dest}"
-			fi
-		fi
-		let "i+=1"
-	done
-	echo -n '}' >> "${dest}"
-	return 0
-}
-
 # Creates test bundles.
 #
 # $1 - packages
 create_bundles() {
 	local tests
-	local slug
 	local dest
+	local name
 	local src
 
 	echo 'Creating test bundles...' >&2
@@ -169,11 +119,8 @@ create_bundles() {
 	for pkg in $(echo "$1"); do
 		echo "Package: ${pkg}" >&2
 
-		dest=$(package_name "${pkg}")
-		slug=$(slugify "${dest}")
-
 		src="${pkg}/test"
-		dest="${bundle_dir}/js/${slug}.js"
+		name=$(package_name "${pkg}")
 
 		tests=$(find_tests "${src}")
 		if [[ "$?" -ne 0 ]]; then
@@ -182,7 +129,10 @@ create_bundles() {
 		fi
 
 		if [[ -n "${tests}" ]]; then
-			create_bundle "${tests}" "${dest}"
+			dest="${bundle_dir}/${name}"
+			create_dir "${dest}"
+
+			create_bundle "${tests}" "${dest}/bundle.js"
 			if [[ "$?" -ne 0 ]]; then
 				echo "Encountered an error when creating package bundle: ${pkg}.". >&2
 				return 1
@@ -214,17 +164,12 @@ main() {
 		on_error 1
 	fi
 
-	create_dir "${bundle_dir}/js"
+	create_dir "${bundle_dir}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
 
 	pkgs=$("${find_packages}")
-	if [[ "$?" -ne 0 ]]; then
-		on_error 1
-	fi
-
-	create_pkgs_file "${pkgs}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
