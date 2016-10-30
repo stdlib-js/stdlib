@@ -629,7 +629,19 @@
       // throws <TypeError>
 
       // Output to terminal:
-      // => 'beep'
+      // beep
+
+      // Output to terminal:
+      // ...
+
+      // Output to terminal:
+      // {"beep":"boop"}
+
+      // Output to terminal:
+      // <error_message>
+
+      // Output to terminal:
+      // <boolean>
 
       // Insert figure:
       // => <figure data=?>
@@ -652,13 +664,13 @@
 
       ``` bash
       $ node ./bin/cli
-      # => '...'
-      # => '...'
+      ...
+      ...
       ```
 
       ``` bash
       $ node ./bin/cli
-      # => e.g., 2016-05-24 08:42.34 Beep boop blah blah.
+      e.g., 2016-05-24 08:42.34 Beep boop blah blah.
       ```
 
     * examples of modules, functions, constants, regexps, etc.
@@ -1669,16 +1681,16 @@
 
         ``` bash
         $ erf 5
-        # => <number>
+        <number>
         $ erf 5 19 13 1
-        # => <number>\n<number>\n... (could have option to specify delimiter)
+        <number>\n<number>\n... (could have option to specify delimiter)
         ```
 
    * ability to pipe
 
         ``` bash
         $ cat x.txt | erf
-        # => ...
+        ...
         ```
 
    * may want to prefix with `stdlib-<fcn>` to avoid conflicts with built-ins
