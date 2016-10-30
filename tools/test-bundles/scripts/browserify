@@ -14,15 +14,6 @@ root_dir="$(git rev-parse --show-toplevel)"
 # Define the path to the source library:
 source_dir="${root_dir}/lib/node_modules"
 
-# Define the path to the build directory:
-build_dir="${root_dir}/build"
-
-# Define the path to the reports directory:
-reports_dir="${root_dir}/reports"
-
-# Define the directory for top-level tools:
-tools_dir="${root_dir}/tools"
-
 # Define the destination directory for package bundles:
 bundle_dir="${root_dir}/build/test-bundles"
 
@@ -37,12 +28,6 @@ browserify_envify="${node_modules}/envify"
 
 # Define the path to the `browserify` plugin which allows `proxyquire` to be run in a browser:
 browserify_proxyquire="${node_modules}/proxyquire-universal"
-
-# Define a package filename identifier:
-packages_file='package.json'
-
-# Define the pattern for filtering packages based on their file path:
-packages_filter='.*/.*'
 
 # Define the pattern for test filenames:
 tests_pattern='test*.js'
@@ -101,6 +86,7 @@ find_tests() {
 		pkgs=$(find "$1" -regextype posix-extended -name "${tests_pattern}")
 	fi
 	echo "${tests}"
+	return 0
 }
 
 # Extracts a package name from an absolute file path.
