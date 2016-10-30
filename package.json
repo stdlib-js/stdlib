@@ -45,6 +45,7 @@
     "browserify": "13.x.x",
     "chai": "^3.5.0",
     "david": "^9.0.0",
+    "envify": "^3.4.1",
     "github-markdown-equation-element": "^2.0.0",
     "glob": "^7.0.5",
     "istanbul": "^0.4.1",
