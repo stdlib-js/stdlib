@@ -115,30 +115,69 @@ find_tests() {
 	echo "${tests}"
 }
 
+# Extracts a package name from an absolute file path.
+#
+# $1 - file path
+package_name() {
+	local name
+
+	# Remove the source directory path from the package path (using POSIX shell variable expansion):
+	if [[ "$1" == "${root_dir}" ]]; then
+		name='@stdlib/stdlib'
+	else
+		name="${1#${source_dir}/}"
+	fi
+	echo "${name}"
+}
+
+# Slugifies a package name.
+#
+# $1 - package name
+slugify() {
+	# Slugify the path (basic algorithm):
+	local slug="$(echo $1 | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+	echo "${slug}"
+}
+
 # Creates a file listing all packages.
 #
 # $1 - packages
 create_pkgs_file() {
 	local dest
 	local name
+	local slug
+	local pkg
 	local dir
+	local N
+	local i
+
+	N=0
+	for pkg in $(echo "$1"); do
+		let "N+=1"
+	done
+	let "N-=1"
 
 	dir='lib/node_modules'
 
-	dest="${bundle_dir}/pkgs.txt"
+	dest="${bundle_dir}/pkgs.json"
 	touch "${dest}"
 
+	echo '{' >> "${dest}"
+
+	i=0
 	for pkg in $(echo "$1"); do
 		# Only add a package if the package has tests to bundle...
 		if [[ -d "${pkg}/test" ]]; then
-			if [[ "${pkg}" == "${root_dir}" ]]; then
-				name='@stdlib/stdlib'
-			else
-				name="${pkg#${source_dir}/}"
+			name=$(package_name "${pkg}")
+			slug=$(slugify "${name}")
+			echo "\"${name}\":\"${slug}.js\"" >> "${dest}"
+			if [[ "${i}" -lt "${N}" ]]; then
+				echo ',' >> "${dest}"
 			fi
-			echo "${name}" >> "${dest}"
 		fi
+		let "i+=1"
 	done
+	echo '}' >> "${dest}"
 	return 0
 }
 
@@ -157,15 +196,8 @@ create_bundles() {
 	for pkg in $(echo "$1"); do
 		echo "Package: ${pkg}" >&2
 
-		# Remove the source directory path from the package path (using POSIX shell variable expansion):
-		if [[ "${pkg}" == "${root_dir}" ]]; then
-			dest='@stdlib/stdlib'
-		else
-			dest="${pkg#${source_dir}/}"
-		fi
-
-		# Slugify the path (basic algorithm):
-		slug="$(echo ${dest} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+		dest=$(package_name "${pkg}")
+		slug=$(slugify "${dest}")
 
 		src="${pkg}/test"
 		dest="${bundle_dir}/js/${slug}.js"
