@@ -116,9 +116,9 @@ Options:
 
 ``` bash
 $ DEBUG=* installed-pkgs
-'...'
-'...'
-'...'
+...
+...
+...
 ```
 
 
