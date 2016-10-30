@@ -1,0 +1,238 @@
+#!/usr/bin/env bash
+#
+# Generates a browser test bundle for each package.
+
+
+# VARIABLES #
+
+# Determine the host kernel:
+kernel=$(uname -s)
+
+# Determine root directory:
+root_dir="$(git rev-parse --show-toplevel)"
+
+# Define the path to the source library:
+source_dir="${root_dir}/lib/node_modules"
+
+# Define the path to the build directory:
+build_dir="${root_dir}/build"
+
+# Define the path to the reports directory:
+reports_dir="${root_dir}/reports"
+
+# Define the directory for top-level tools:
+tools_dir="${root_dir}/tools"
+
+# Define the destination directory for package bundles:
+bundle_dir="${root_dir}/build/browser-tests"
+
+# Define the path to node modules:
+node_modules="${root_dir}/node_modules"
+
+# Define the path to `browserify`:
+browserify="${node_modules}/.bin/browserify"
+
+# Define the path to the `browserify` plugin which allows `proxyquire` to be run in a browser:
+browserify_proxyquire="${node_modules}/proxyquire-universal"
+
+# Define command-line options to be used when invoking the `browserify` executable:
+browserify_flags="-p=${browserify_proxyquire}"
+
+# Define a package filename identifier:
+packages_file='package.json'
+
+# Define the pattern for filtering packages based on their file path:
+packages_filter='.*/.*'
+
+# Define the pattern for test filenames:
+tests_pattern='test*.js'
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo ''
+}
+
+# Removes a directory.
+#
+# $1 - directory path
+remove_dir() {
+	rm -rf "$1"
+}
+
+# Creates a directory.
+#
+# $1 - directory path
+create_dir() {
+	mkdir -p "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Finds packages.
+find_packages() {
+	local pkgs
+
+	echo 'Searching for packages...' >&2
+
+	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
+	if [[ "${kernel}" == "Darwin" ]]; then
+		pkgs=$(find -E "${root_dir}" -name "${packages_file}" -regex "${packages_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${build_dir}/*" -not -path "${reports_dir}/*" -not -path "${tools_dir}/*" -exec dirname {} \;)
+	else
+		pkgs=$(find "${root_dir}" -regextype posix-extended -name "${packages_file}" -regex "${packages_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${build_dir}/*" -not -path "${reports_dir}/*" -not -path "${tools_dir}/*" -exec dirname {} \;)
+	fi
+	echo "${pkgs}"
+}
+
+# Finds tests.
+#
+# $1 - search directory
+find_tests() {
+	local tests
+
+	echo 'Searching for tests...' >&2
+
+	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
+	if [[ "${kernel}" == "Darwin" ]]; then
+		tests=$(find -E "$1" -name "${tests_pattern}")
+	else
+		pkgs=$(find "$1" -regextype posix-extended -name "${tests_pattern}")
+	fi
+	echo "${tests}"
+}
+
+# Creates a file listing all packages.
+#
+# $1 - packages
+create_pkgs_file() {
+	local dest
+	local name
+	local dir
+
+	dir='lib/node_modules'
+
+	dest="${bundle_dir}/pkgs.txt"
+	touch "${dest}"
+
+	for pkg in $(echo "$1"); do
+		# Only add a package if the package has tests to bundle...
+		if [[ -d "${pkg}/test" ]]; then
+			if [[ "${pkg}" == "${root_dir}" ]]; then
+				name='@stdlib/stdlib'
+			else
+				name="${pkg#${source_dir}/}"
+			fi
+			echo "${name}" >> "${dest}"
+		fi
+	done
+	return 0
+}
+
+# Creates browser test bundles.
+#
+# $1 - packages
+create_bundles() {
+	local tests
+	local slug
+	local dest
+	local src
+
+	echo 'Creating test bundles...' >&2
+	echo '' >&2
+
+	for pkg in $(echo "$1"); do
+		echo "Package: ${pkg}" >&2
+
+		# Remove the source directory path from the package path (using POSIX shell variable expansion):
+		if [[ "${pkg}" == "${root_dir}" ]]; then
+			dest='@stdlib/stdlib'
+		else
+			dest="${pkg#${source_dir}/}"
+		fi
+
+		# Slugify the path (basic algorithm):
+		slug="$(echo ${dest} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+
+		src="${pkg}/test"
+		dest="${bundle_dir}/js/${slug}.js"
+
+		tests=$(find_tests "${src}")
+		if [[ "$?" -ne 0 ]]; then
+			echo "Encountered an error when searching for package tests: ${pkg}.". >&2
+			return 1
+		fi
+
+		if [[ -n "${tests}" ]]; then
+			create_bundle "${tests}" "${dest}"
+			if [[ "$?" -ne 0 ]]; then
+				echo "Encountered an error when creating package bundle: ${pkg}.". >&2
+				return 1
+			fi
+			echo 'Successfully created package bundle.' >&2
+		else
+			echo 'No tests. Skipping package.' >&2
+		fi
+		echo '' >&2
+	done
+	echo 'Finished creating bundles.' >&2
+	return 0
+}
+
+# Creates a bundle.
+#
+# $1 - source files
+# $2 - destination
+create_bundle() {
+	"${browserify}" "${browserify_flags}" $(echo "$1") > "$2"
+}
+
+# Main execution sequence:
+main() {
+	local pkgs
+
+	remove_dir "${bundle_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	create_dir "${bundle_dir}/js"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	pkgs=$(find_packages)
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	create_pkgs_file "${pkgs}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	create_bundles "${pkgs}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	print_success
+	cleanup
+	exit 0
+}
+
+# Run main:
+main
