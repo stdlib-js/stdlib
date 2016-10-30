@@ -2,7 +2,7 @@
 #
 # Script to lint a [Travis CI][1] configuration file.
 #
-# This script is called with the following parameters:
+# This script is called with the following arguments:
 #
 # * `$1` - absolute file path of the configuration file
 #

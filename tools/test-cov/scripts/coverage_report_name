@@ -2,7 +2,7 @@
 #
 # Script to generate a coverage report name.
 #
-# This script is called with the following parameters:
+# This script is called with the following arguments:
 #
 # * `$1` - base directory containing instrumented source code
 # * `$2` - test directory

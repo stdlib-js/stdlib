@@ -2,7 +2,7 @@
 #
 # Generates a CONTRIBUTORS file.
 #
-# This script is called with the following parameters:
+# This script is called with the following arguments:
 #
 # * `$1` - output file path
 
