@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Generates a browser test bundle for each package.
+# Generates a test bundle for each package.
 
 
 # VARIABLES #
@@ -24,7 +24,7 @@ reports_dir="${root_dir}/reports"
 tools_dir="${root_dir}/tools"
 
 # Define the destination directory for package bundles:
-bundle_dir="${root_dir}/build/browser-tests"
+bundle_dir="${root_dir}/build/test-bundles"
 
 # Define the path to node modules:
 node_modules="${root_dir}/node_modules"
@@ -142,7 +142,7 @@ create_pkgs_file() {
 	return 0
 }
 
-# Creates browser test bundles.
+# Creates test bundles.
 #
 # $1 - packages
 create_bundles() {
