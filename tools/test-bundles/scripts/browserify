@@ -32,11 +32,14 @@ node_modules="${root_dir}/node_modules"
 # Define the path to `browserify`:
 browserify="${node_modules}/.bin/browserify"
 
+# Define the path to the `browserify` transform to replace Node-style environment variables with strings:
+browserify_envify="${node_modules}/envify"
+
 # Define the path to the `browserify` plugin which allows `proxyquire` to be run in a browser:
 browserify_proxyquire="${node_modules}/proxyquire-universal"
 
 # Define command-line options to be used when invoking the `browserify` executable:
-browserify_flags="-p=${browserify_proxyquire}"
+browserify_flags="-t [ ${browserify_envify} --NODE_ENV browser ] -p=${browserify_proxyquire}"
 
 # Define a package filename identifier:
 packages_file='package.json'
