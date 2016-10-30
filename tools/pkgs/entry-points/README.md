@@ -150,14 +150,14 @@ Options:
 
 ``` bash
 $ pkg-entry-points tape browserify
-# => {...}
-# => {...}
+{...}
+{...}
 ```
 
 ``` bash
 $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
-# => {...}
-# => {...}
+{...}
+{...}
 ```
 
 <!-- </examples> -->

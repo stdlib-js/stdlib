@@ -130,9 +130,9 @@ To use as part of a pipeline,
 
 ``` bash
 $ licenses | licenses-infer | cat
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => ...
+{"id":"...","parents":["..."],...,"licenses":{...}}
+{"id":"...","parents":["..."],...,"licenses":{...}}
+...
 ```
 
 

@@ -125,9 +125,9 @@ Options:
 
 ``` bash
 $ DEBUG=* licenses
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => ...
+{"id":"...","parents":["..."],...,"licenses":{...}}
+{"id":"...","parents":["..."],...,"licenses":{...}}
+...
 ```
 
 

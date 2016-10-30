@@ -119,9 +119,9 @@ Options:
 
 ``` bash
 $ stdlib-pkg-names
-# => <package_name>
-# => <package_name>
-# => ...
+<package_name>
+<package_name>
+...
 ```
 
 <!-- </examples> -->

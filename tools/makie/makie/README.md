@@ -148,7 +148,7 @@ Options:
 
 ``` bash
 $ makie test-cov
-# => <command_output>
+<command_output>
 ```
 
 <!-- </examples> -->

@@ -158,14 +158,14 @@ Options:
 
 ``` bash
 $ pkg-deps tape browserify
-# => {...}
-# => {...}
+{...}
+{...}
 ```
 
 ``` bash
 $ echo -n $'tape\nbrowserify\n' | pkg-deps --split /\\r?\\n/
-# => {...}
-# => {...}
+{...}
+{...}
 ```
 
 <!-- </examples> -->

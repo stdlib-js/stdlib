@@ -167,7 +167,7 @@ Options:
 
 ``` bash
 $ citation-reference '@press:1992'
-# => '...'
+'...'
 ```
 
 <!-- </examples> -->

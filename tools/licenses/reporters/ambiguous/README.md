@@ -120,9 +120,9 @@ To use as part of a pipeline,
 
 ``` bash
 $ licenses | licenses-ambiguous | cat
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => ...
+{"id":"...","parents":["..."],...,"licenses":{...}}
+{"id":"...","parents":["..."],...,"licenses":{...}}
+...
 ```
 
 

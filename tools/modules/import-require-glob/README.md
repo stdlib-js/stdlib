@@ -155,9 +155,9 @@ Options:
 
 ``` bash
 $ DEBUG=* import-require-glob
-# => {"file":"...","literals":[...],"expressions":[...]}
-# => {"file":"...","literals":[...],"expressions":[...]}
-# => ...
+{"file":"...","literals":[...],"expressions":[...]}
+{"file":"...","literals":[...],"expressions":[...]}
+...
 ```
 
 <!-- </examples> -->

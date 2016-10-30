@@ -156,13 +156,13 @@ Options:
 
 ``` bash
 $ module-pkg-deps /foo/bar/baz
-# => {...}
+{...}
 ```
 
 ``` bash
 $ echo -n $'/foo/bar/baz\n/beep/boop/bop\n' | module-pkg-deps --split /\\r?\\n/
-# => {...}
-# => {...}
+{...}
+{...}
 ```
 
 <!-- </examples> -->

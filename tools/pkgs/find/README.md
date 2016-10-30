@@ -165,9 +165,9 @@ Options:
 
 ``` bash
 $ find-pkgs
-# => <package_path>
-# => <package_path>
-# => ...
+<package_path>
+<package_path>
+...
 ```
 
 <!-- </examples> -->

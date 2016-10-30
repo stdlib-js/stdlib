@@ -26,7 +26,7 @@ Options:
 
 ``` bash
 $ TODO
-# => TODO
+TODO
 ```
 
 <!-- </examples> -->

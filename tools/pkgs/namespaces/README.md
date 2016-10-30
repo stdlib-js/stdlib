@@ -119,9 +119,9 @@ Options:
 
 ``` bash
 $ stdlib-namespaces
-# => <package_name>
-# => <package_name>
-# => ...
+<package_name>
+<package_name>
+...
 ```
 
 <!-- </examples> -->

@@ -117,7 +117,7 @@ To use as part of a pipeline,
 
 ``` bash
 $ cat ./examples/index.js | import-require | cat
-# => {"literals":["./../lib/stdlib.js","./../lib"],"expressions":["prefix+\'@stdlib/fs/read-file\'"]}
+{"literals":["./../lib/stdlib.js","./../lib"],"expressions":["prefix+\'@stdlib/fs/read-file\'"]}
 ```
 
 

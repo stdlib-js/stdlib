@@ -135,9 +135,9 @@ To use as part of a pipeline,
 
 ``` bash
 $ licenses | licenses-whitelist --exclude 'BSD-3-Clause,BSD-2-Clause' | cat
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => {"id":"...","parents":["..."],...,"licenses":{...}}
-# => ...
+{"id":"...","parents":["..."],...,"licenses":{...}}
+{"id":"...","parents":["..."],...,"licenses":{...}}
+...
 ```
 
 
