@@ -162,7 +162,7 @@ create_pkgs_file() {
 	dest="${bundle_dir}/pkgs.json"
 	touch "${dest}"
 
-	echo '{' >> "${dest}"
+	echo -n '{' >> "${dest}"
 
 	i=0
 	for pkg in $(echo "$1"); do
@@ -170,14 +170,14 @@ create_pkgs_file() {
 		if [[ -d "${pkg}/test" ]]; then
 			name=$(package_name "${pkg}")
 			slug=$(slugify "${name}")
-			echo "\"${name}\":\"${slug}.js\"" >> "${dest}"
+			echo -n "\"${name}\":\"${slug}.js\"" >> "${dest}"
 			if [[ "${i}" -lt "${N}" ]]; then
-				echo ',' >> "${dest}"
+				echo -n ',' >> "${dest}"
 			fi
 		fi
 		let "i+=1"
 	done
-	echo '}' >> "${dest}"
+	echo -n '}' >> "${dest}"
 	return 0
 }
 

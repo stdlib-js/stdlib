@@ -1608,6 +1608,7 @@
 
    * [unit-parser](https://github.com/antimatter15/unit-parser)
    * [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
+   * [rust](https://github.com/tiffany352/rink-rs)
 
 2. Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
    
