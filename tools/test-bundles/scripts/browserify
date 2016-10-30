@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Generates a test bundle for each package.
+# Uses browserify to generate a test bundle for each package.
 
 
 # VARIABLES #
