@@ -134,25 +134,24 @@ create_pkgs_file() {
 	local dest
 	local name
 	local slug
-	local pkg
-	local dir
 	local N
 	local i
 
 	N=0
+	i=0
+
+	# Determine the number of packages...
 	for pkg in $(echo "$1"); do
 		let "N+=1"
 	done
 	let "N-=1"
-
-	dir='lib/node_modules'
 
 	dest="${bundle_dir}/pkgs.json"
 	touch "${dest}"
 
 	echo -n '{' >> "${dest}"
 
-	i=0
+	# Pair each package name to its corresponding test bundle...
 	for pkg in $(echo "$1"); do
 		# Only add a package if the package has tests to bundle...
 		if [[ -d "${pkg}/test" ]]; then
