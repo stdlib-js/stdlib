@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 #
 # Uses browserify to generate a test bundle for each package.
+#
+# This script is called with the following arguments:
+#
+# * `$1` - destination directory
 
 
 # VARIABLES #
+
+# Destination directory for package bundles:
+output_dir="$1"
 
 # Determine root directory:
 root_dir="$(git rev-parse --show-toplevel)"
@@ -16,9 +23,6 @@ kernel=$(uname -s)
 
 # Define the path to the source library:
 source_dir="${root_dir}/lib/node_modules"
-
-# Define the destination directory for package bundles:
-bundle_dir="${root_dir}/build/test-bundles"
 
 # Define the path to node modules:
 node_modules="${root_dir}/node_modules"
@@ -50,13 +54,6 @@ on_error() {
 # Runs clean-up tasks.
 cleanup() {
 	echo ''
-}
-
-# Removes a directory.
-#
-# $1 - directory path
-remove_dir() {
-	rm -rf "$1"
 }
 
 # Creates a directory.
@@ -129,10 +126,10 @@ create_bundles() {
 		fi
 
 		if [[ -n "${tests}" ]]; then
-			dest="${bundle_dir}/${name}"
+			dest="${output_dir}/${name}"
 			create_dir "${dest}"
 
-			create_bundle "${tests}" "${dest}/bundle.js"
+			create_bundle "${tests}" "${dest}/test_bundle.js"
 			if [[ "$?" -ne 0 ]]; then
 				echo "Encountered an error when creating package bundle: ${pkg}.". >&2
 				return 1
@@ -158,16 +155,6 @@ create_bundle() {
 # Main execution sequence:
 main() {
 	local pkgs
-
-	remove_dir "${bundle_dir}"
-	if [[ "$?" -ne 0 ]]; then
-		on_error 1
-	fi
-
-	create_dir "${bundle_dir}"
-	if [[ "$?" -ne 0 ]]; then
-		on_error 1
-	fi
 
 	pkgs=$("${find_packages}")
 	if [[ "$?" -ne 0 ]]; then
