@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Uses browserify to generate a test bundle for each package.
+# Uses browserify to generate a test bundle for each package with tests.
 #
 # This script is called with the following arguments:
 #
@@ -72,17 +72,17 @@ print_success() {
 #
 # $1 - search directory
 find_tests() {
-	local tests
+	local files
 
 	echo 'Searching for tests...' >&2
 
 	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 	if [[ "${kernel}" == "Darwin" ]]; then
-		tests=$(find -E "$1" -name "${tests_pattern}")
+		files=$(find -E "$1" -name "${tests_pattern}")
 	else
-		pkgs=$(find "$1" -regextype posix-extended -name "${tests_pattern}")
+		files=$(find "$1" -regextype posix-extended -name "${tests_pattern}")
 	fi
-	echo "${tests}"
+	echo "${files}"
 	return 0
 }
 
@@ -105,7 +105,7 @@ package_name() {
 #
 # $1 - packages
 create_bundles() {
-	local tests
+	local files
 	local dest
 	local name
 	local src
@@ -119,17 +119,17 @@ create_bundles() {
 		src="${pkg}/test"
 		name=$(package_name "${pkg}")
 
-		tests=$(find_tests "${src}")
+		files=$(find_tests "${src}")
 		if [[ "$?" -ne 0 ]]; then
 			echo "Encountered an error when searching for package tests: ${pkg}.". >&2
 			return 1
 		fi
 
-		if [[ -n "${tests}" ]]; then
+		if [[ -n "${files}" ]]; then
 			dest="${output_dir}/${name}"
 			create_dir "${dest}"
 
-			create_bundle "${tests}" "${dest}/test_bundle.js"
+			create_bundle "${files}" "${dest}/test_bundle.js"
 			if [[ "$?" -ne 0 ]]; then
 				echo "Encountered an error when creating package bundle: ${pkg}.". >&2
 				return 1
