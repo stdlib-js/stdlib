@@ -37,6 +37,12 @@
 * [SpiderMonkey updates `Math.random`][23]
 * [V8 blog on xoshirt implementation][24]
 * [Webkit bug to use a better PRNG][25]
+* [Mobile Safari 32bit Math bug][26]
+* [Mozilla optimizations break commutativity][27]
+* [Mozilla debate on speed versus precision][28]
+* [Division bug to due C library delegation][29]
+* [Fixit to unify Math implementations in Chrome][30]
+* [Fixit to unify Math.pow implementation in Chrome][31]
 
 
 <!-- <links> -->
@@ -76,5 +82,11 @@
 [23]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529#c99
 [24]: http://v8project.blogspot.com/2015/12/theres-mathrandom-and-then-theres.html
 [25]: https://bugs.webkit.org/show_bug.cgi?id=151641
+[26]: https://bugs.webkit.org/show_bug.cgi?id=40367
+[27]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
+[28]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
+[29]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
+[30]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
+[31]: https://bugs.chromium.org/p/v8/issues/detail?id=5157
 
 <!-- </links> -->

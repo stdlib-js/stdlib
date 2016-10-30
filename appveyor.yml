@@ -5,6 +5,8 @@ version: '{build}'
 environment:
   matrix:
     # Unit tests:
+    - nodejs_version: '7'
+      BUILD_TASK: 'test'
     - nodejs_version: '6'
       BUILD_TASK: 'test'
     - nodejs_version: '5'
@@ -17,6 +19,8 @@ environment:
       BUILD_TASK: 'test'
 
     # Benchmarks:
+    - nodejs_version: '7'
+      BUILD_TASK: 'benchmark'
     - nodejs_version: '6'
       BUILD_TASK: 'benchmark'
     - nodejs_version: '5'
@@ -29,6 +33,8 @@ environment:
       BUILD_TASK: 'benchmark'
 
     # Examples:
+    - nodejs_version: '7'
+      BUILD_TASK: 'examples'
     - nodejs_version: '6'
       BUILD_TASK: 'examples'
     - nodejs_version: '5'
@@ -41,6 +47,8 @@ environment:
       BUILD_TASK: 'examples'
 
     # Test coverage:
+    - nodejs_version: '7'
+      BUILD_TASK: 'test-coverage'
     - nodejs_version: '6'
       BUILD_TASK: 'test-coverage'
     - nodejs_version: '5'
