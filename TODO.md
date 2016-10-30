@@ -1278,6 +1278,13 @@
 
 274. life expectancy by [country](https://gist.github.com/ivanku/00d2520ba6d92daf97e50d9ebc6eb4cd)
 
+275. add an `engines` field to all `package.json` files.
+
+     - default: node >= 10
+     - but...in instances where node >= 10 is not possible (hopefully, this is an extreme event), the engine can be set to another version range
+     - have a script which mines the individual `package.json` engine fields and determines, in aggregate, the supported engine range for all pkgs and assign as the engine range for the "aggregate"
+     - can also lint (search pkg deps, check engine field, and see if compatible)
+
 
 ---
 
