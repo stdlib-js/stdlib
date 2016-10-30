@@ -47,6 +47,9 @@ packages_filter='.*/.*'
 # Define the pattern for test filenames:
 tests_pattern='test*.js'
 
+# Define path to utility to find packages:
+find_packages="${root_dir}/tools/scripts/find_packages"
+
 
 # FUNCTIONS #
 
@@ -81,21 +84,6 @@ create_dir() {
 # Prints a success message.
 print_success() {
 	echo 'Success!' >&2
-}
-
-# Finds packages.
-find_packages() {
-	local pkgs
-
-	echo 'Searching for packages...' >&2
-
-	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
-	if [[ "${kernel}" == "Darwin" ]]; then
-		pkgs=$(find -E "${root_dir}" -name "${packages_file}" -regex "${packages_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${build_dir}/*" -not -path "${reports_dir}/*" -not -path "${tools_dir}/*" -exec dirname {} \;)
-	else
-		pkgs=$(find "${root_dir}" -regextype posix-extended -name "${packages_file}" -regex "${packages_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${build_dir}/*" -not -path "${reports_dir}/*" -not -path "${tools_dir}/*" -exec dirname {} \;)
-	fi
-	echo "${pkgs}"
 }
 
 # Finds tests.
@@ -246,7 +234,7 @@ main() {
 		on_error 1
 	fi
 
-	pkgs=$(find_packages)
+	pkgs=$("${find_packages}")
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
