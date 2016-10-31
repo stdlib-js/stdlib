@@ -26,6 +26,7 @@ var validate = require( './validate.js' );
 * @param {Options} [options] - options
 * @param {string} [options.pattern] - glob pattern
 * @param {string} [options.bundle] - output bundle
+* @param {string} [options.mount] - URL path on which to mount a bundle
 * @param {string} [options.html] - output HTML filename
 * @param {string} [options.title] - HTML title
 * @param {Callback} clbk - callback to invoke upon completion
@@ -90,6 +91,7 @@ function build( dir, out, options, clbk ) {
 	* @param {boolean} bool - boolean indicating whether a bundle was created
 	*/
 	function onBundle( error, bool ) {
+		var bundle;
 		var hopts;
 		var hout;
 		if ( error ) {
@@ -102,6 +104,9 @@ function build( dir, out, options, clbk ) {
 		}
 		debug( 'Successfully created bundle.' );
 
+		bundle = join( opts.mount, opts.bundle );
+		debug( 'Bundle URL: %s', bundle );
+
 		hout = join( out, opts.html );
 		debug( 'HTML output: %s', hout );
 
@@ -111,7 +116,7 @@ function build( dir, out, options, clbk ) {
 		debug( 'HTML options: %s', JSON.stringify( hopts ) );
 
 		debug( 'Creating HTML...' );
-		html( bout, hout, hopts, onHTML );
+		html( bundle, hout, hopts, onHTML );
 	} // end FUNCTION onBundle()
 
 	/**

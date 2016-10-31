@@ -18,6 +18,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @param {Options} options - function options
 * @param {string} [options.pattern] - glob pattern
 * @param {string} [options.bundle] - output bundle
+* @param {string} [options.mount] - URL path on which to mount a bundle
 * @param {string} [options.html] - output HTML filename
 * @param {string} [options.title] - HTML title
 * @returns {(Error|null)} error object or null
@@ -48,6 +49,12 @@ function validate( opts, options ) {
 		opts.bundle = options.bundle;
 		if ( !isString( opts.bundle ) ) {
 			return new TypeError( 'invalid option. `bundle` option must be a string. Option: `'+opts.bundle+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'mount' ) ) {
+		opts.mount = options.mount;
+		if ( !isString( opts.mount ) ) {
+			return new TypeError( 'invalid option. `mount` option must be a string. Option: `'+opts.mount+'`.' );
 		}
 	}
 	if ( hasOwnProp( options, 'html' ) ) {
