@@ -29,7 +29,7 @@ template = readFileSync( template, {
 /**
 * Generates an HTML file for running tests.
 *
-* @param {string} bundle - bundle file path
+* @param {string} bundle - bundle URL
 * @param {string} out - output file path
 * @param {Options} [options] - options
 * @param {string} [options.title] - HTML title
