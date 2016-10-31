@@ -5,8 +5,8 @@
 var debug = require( 'debug' )( 'gh-pages:build:build-package' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
-var bundleTests = require( './../../bundle-tests' );
-var bundleBenchmarks = require( './../../bundle-benchmarks' );
+var tests = require( './../../tests' );
+var benchmarks = require( './../../benchmarks' );
 var readmeToHTML = require( './../../readme-to-html' );
 var packageName = require( './package_name.js' );
 
@@ -23,14 +23,14 @@ var packageName = require( './package_name.js' );
 * @param {Callback} clbk - callback to invoke after building assets
 */
 function build( pkg, dest, opts, clbk ) {
-	var numBundles;
-	var bundles;
+	var numBuilds;
+	var builds;
 	var count;
 	var name;
 
-	numBundles = 2; // tests and benchmarks
+	numBuilds = 2; // tests and benchmarks
 	count = 0;
-	bundles = {
+	builds = {
 		'tests': false,
 		'benchmarks': false
 	};
@@ -55,108 +55,113 @@ function build( pkg, dest, opts, clbk ) {
 			return done( error );
 		}
 		debug( 'Successfully created package destination directory.' );
-		runBundleTasks();
+		runTasks();
 	} // end FUNCTION onDir()
 
 	/**
-	* Executes bundle tasks.
+	* Executes tasks.
 	*
 	* @private
 	*/
-	function runBundleTasks() {
-		var bopts;
+	function runTasks() {
+		var topts;
 		var dir;
-		var out;
 
-		debug( 'Running bundle tasks...' );
+		debug( 'Running tasks...' );
 
-		debug( 'Building package test bundle...' );
+		debug( 'Building package tests...' );
 		dir = join( pkg, opts.tests.folder );
-		out = join( dest, opts.tests.bundle );
-		bopts = {
-			'pattern': opts.tests.pattern
+		topts = {
+			'pattern': opts.tests.pattern,
+			'bundle': opts.tests.bundle,
+			'title': name+' - Tests',
+			'mount': '/'+name,
+			'html': opts.html.tests
 		};
-		bundleTests( dir, out, bopts, onTests );
+		tests( dir, dest, topts, onTests );
 
-		debug( 'Building package benchmark bundle...' );
+		debug( 'Building package benchmarks...' );
 		dir = join( pkg, opts.benchmarks.folder );
-		out = join( dest, opts.benchmarks.bundle );
-		bopts = {
-			'pattern': opts.benchmarks.pattern
+		topts = {
+			'pattern': opts.benchmarks.pattern,
+			'bundle': opts.benchmarks.bundle,
+			'title': name+' - Benchmarks',
+			'mount': '/'+name,
+			'html': opts.html.benchmarks
 		};
-		bundleBenchmarks( dir, out, bopts, onBenchmarks );
+		benchmarks( dir, dest, topts, onBenchmarks );
 	} // end FUNCTION runTasks()
 
 	/**
-	* Callback invoked after creating a package test bundle.
+	* Callback invoked after building tests.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {boolean} boolean indicating whether a bundle was created
+	* @param {boolean} boolean indicating whether a build generated artifacts
 	*/
 	function onTests( error, bool ) {
 		if ( error ) {
-			debug( 'Encountered an error when creating package test bundle: %s', error.message );
+			debug( 'Encountered an error when building tests: %s', error.message );
 			return done( error );
 		}
-		debug( 'Finished test bundle task.' );
-		bundles[ 'tests' ] = bool;
-		onBundle();
+		debug( 'Finished building tests.' );
+		builds[ 'tests' ] = bool;
+		onTask();
 	} // end FUNCTION onTests()
 
 	/**
-	* Callback invoked after creating a package benchmark bundle.
+	* Callback invoked after building benchmarks.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {boolean} bool - boolean indicating whether a bundle was created
+	* @param {boolean} bool - boolean indicating whether a build generated artifacts
 	*/
 	function onBenchmarks( error, bool ) {
 		if ( error ) {
-			debug( 'Encountered an error when creating package benchmark bundle: %s', error.message );
+			debug( 'Encountered an error when building benchmarks: %s', error.message );
 			return done( error );
 		}
-		debug( 'Finished benchmark bundle task.' );
-		bundles[ 'benchmarks' ] = bool;
-		onBundle();
+		debug( 'Finished building benchmarks.' );
+		builds[ 'benchmarks' ] = bool;
+		onTask();
 	} // end FUNCTION onBenchmarks()
 
 	/**
-	* Callback invoked upon creating a bundle.
+	* Callback invoked upon completing a build task.
 	*
 	* @private
 	*/
-	function onBundle() {
+	function onTask() {
 		var bopts;
 		var src;
 		var out;
 
 		count += 1;
-		if ( count === numBundles ) {
-			debug( 'Finished bundle tasks.' );
+		if ( count === numBuilds ) {
+			debug( 'Finished initial tasks.' );
 
 			src = join( pkg, opts.html.src );
 			out = join( dest, opts.html.index );
 
 			bopts = {};
-			bopts.title = packageName( pkg );
-			if ( bundles.tests ) {
+			bopts.title = name;
+			if ( builds.tests ) {
 				bopts.tests = join( '/', name, opts.html.tests );
 			} else {
 				bopts.tests = '';
 			}
-			if ( bundles.benchmarks ) {
+			if ( builds.benchmarks ) {
 				bopts.benchmarks = join( '/', name, opts.html.benchmarks );
 			} else {
 				bopts.benchmarks = '';
 			}
-			debug( 'Building package HTML assets...' );
+			debug( 'Building HTML assets...' );
 			readmeToHTML( src, out, bopts, onHTML );
 		}
-	} // end FUNCTION onBundle()
+	} // end FUNCTION onTask()
 
 	/**
-	* Callback invoked after creating a package HTML assets.
+	* Callback invoked after building HTML assets.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
@@ -166,12 +171,12 @@ function build( pkg, dest, opts, clbk ) {
 			debug( 'Encountered an error when creating package HTML assets: %s', error.message );
 			return done( error );
 		}
-		debug( 'Finished HTML task.' );
+		debug( 'Finished building HTML assets.' );
 		done();
 	} // end FUNCTION onHTML()
 
 	/**
-	* Callback invoked upon completing a build task.
+	* Callback invoked upon completing all build tasks.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
