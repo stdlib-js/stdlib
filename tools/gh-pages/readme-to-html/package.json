@@ -1,0 +1,24 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Convert a package README to HTML.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "readme",
+    "markdown",
+    "md",
+    "html",
+    "convert",
+    "transform"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
