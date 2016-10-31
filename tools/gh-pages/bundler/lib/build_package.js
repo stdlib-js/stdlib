@@ -5,12 +5,10 @@
 var debug = require( 'debug' )( 'gh-pages:build:build-package' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
-var prefix = require( './stdlib.js' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var bundleTests = require( './../../bundle-tests' );
+var bundleBenchmarks = require( './../../bundle-benchmarks' );
+var readmeToHTML = require( './../../readme-to-html' );
 var packageName = require( './package_name.js' );
-var buildTests = require( './build_tests.js' );
-var buildBenchmarks = require( './build_benchmarks.js' );
-var buildHTML = require( './build_html.js' );
 
 
 // MAIN //
@@ -66,13 +64,27 @@ function build( pkg, dest, opts, clbk ) {
 	* @private
 	*/
 	function runBundleTasks() {
+		var bopts;
+		var dir;
+		var out;
+
 		debug( 'Running bundle tasks...' );
 
 		debug( 'Building package test bundle...' );
-		buildTests( pkg, dest, opts.tests, onTests );
+		dir = join( pkg, opts.tests.folder );
+		out = join( dest, opts.tests.bundle );
+		bopts = {
+			'pattern': opts.tests.pattern
+		};
+		bundleTests( dir, out, bopts, onTests );
 
 		debug( 'Building package benchmark bundle...' );
-		buildBenchmarks( pkg, dest, opts.benchmarks, onBenchmarks );
+		dir = join( pkg, opts.benchmarks.folder );
+		out = join( dest, opts.benchmarks.bundle );
+		bopts = {
+			'pattern': opts.benchmarks.pattern
+		};
+		bundleBenchmarks( dir, out, bopts, onBenchmarks );
 	} // end FUNCTION runTasks()
 
 	/**
@@ -116,23 +128,30 @@ function build( pkg, dest, opts, clbk ) {
 	*/
 	function onBundle() {
 		var bopts;
+		var src;
+		var out;
+
 		count += 1;
 		if ( count === numBundles ) {
 			debug( 'Finished bundle tasks.' );
 
-			bopts = copy( opts.html );
-			if ( bundles.benchmarks ) {
-				bopts.benchmarks = join( '/', name, opts.html.benchmarks );
-			} else {
-				bopts.benchmarks = '';
-			}
+			src = join( pkg, opts.html.src );
+			out = join( dest, opts.html.index );
+
+			bopts = {};
+			bopts.title = packageName( pkg );
 			if ( bundles.tests ) {
 				bopts.tests = join( '/', name, opts.html.tests );
 			} else {
 				bopts.tests = '';
 			}
+			if ( bundles.benchmarks ) {
+				bopts.benchmarks = join( '/', name, opts.html.benchmarks );
+			} else {
+				bopts.benchmarks = '';
+			}
 			debug( 'Building package HTML assets...' );
-			buildHTML( pkg, dest, bopts, onHTML );
+			readmeToHTML( src, out, bopts, onHTML );
 		}
 	} // end FUNCTION onBundle()
 
