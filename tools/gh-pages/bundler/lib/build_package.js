@@ -64,10 +64,18 @@ function build( pkg, dest, opts, clbk ) {
 	* @private
 	*/
 	function runTasks() {
+		buildTests();
+		buildBenchmarks();
+	} // end FUNCTION runTasks()
+
+	/**
+	* Builds tests.
+	*
+	* @private
+	*/
+	function buildTests() {
 		var topts;
 		var dir;
-
-		debug( 'Running tasks...' );
 
 		debug( 'Building package tests...' );
 		dir = join( pkg, opts.tests.folder );
@@ -79,6 +87,16 @@ function build( pkg, dest, opts, clbk ) {
 			'html': opts.html.tests
 		};
 		tests( dir, dest, topts, onTests );
+	} // end FUNCTION buildTests()
+
+	/**
+	* Builds benchmarks.
+	*
+	* @private
+	*/
+	function buildBenchmarks() {
+		var topts;
+		var dir;
 
 		debug( 'Building package benchmarks...' );
 		dir = join( pkg, opts.benchmarks.folder );
@@ -90,7 +108,36 @@ function build( pkg, dest, opts, clbk ) {
 			'html': opts.html.benchmarks
 		};
 		benchmarks( dir, dest, topts, onBenchmarks );
-	} // end FUNCTION runTasks()
+	} // end FUNCTION buildBenchmarks()
+
+	/**
+	* Builds HTML assets.
+	*
+	* @private
+	*/
+	function buildHTML() {
+		var bopts;
+		var src;
+		var out;
+
+		src = join( pkg, opts.html.src );
+		out = join( dest, opts.html.index );
+
+		bopts = {};
+		bopts.title = name;
+		if ( builds.tests ) {
+			bopts.tests = join( '/', name, opts.html.tests );
+		} else {
+			bopts.tests = '';
+		}
+		if ( builds.benchmarks ) {
+			bopts.benchmarks = join( '/', name, opts.html.benchmarks );
+		} else {
+			bopts.benchmarks = '';
+		}
+		debug( 'Building HTML assets...' );
+		readmeToHTML( src, out, bopts, onHTML );
+	} // end FUNCTION buildHTML()
 
 	/**
 	* Callback invoked after building tests.
@@ -127,36 +174,14 @@ function build( pkg, dest, opts, clbk ) {
 	} // end FUNCTION onBenchmarks()
 
 	/**
-	* Callback invoked upon completing a build task.
+	* Callback invoked upon completing a task.
 	*
 	* @private
 	*/
 	function onTask() {
-		var bopts;
-		var src;
-		var out;
-
 		count += 1;
 		if ( count === numBuilds ) {
-			debug( 'Finished initial tasks.' );
-
-			src = join( pkg, opts.html.src );
-			out = join( dest, opts.html.index );
-
-			bopts = {};
-			bopts.title = name;
-			if ( builds.tests ) {
-				bopts.tests = join( '/', name, opts.html.tests );
-			} else {
-				bopts.tests = '';
-			}
-			if ( builds.benchmarks ) {
-				bopts.benchmarks = join( '/', name, opts.html.benchmarks );
-			} else {
-				bopts.benchmarks = '';
-			}
-			debug( 'Building HTML assets...' );
-			readmeToHTML( src, out, bopts, onHTML );
+			buildHTML();
 		}
 	} // end FUNCTION onTask()
 
@@ -168,7 +193,7 @@ function build( pkg, dest, opts, clbk ) {
 	*/
 	function onHTML( error ) {
 		if ( error ) {
-			debug( 'Encountered an error when creating package HTML assets: %s', error.message );
+			debug( 'Encountered an error when building HTML assets: %s', error.message );
 			return done( error );
 		}
 		debug( 'Finished building HTML assets.' );
