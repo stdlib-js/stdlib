@@ -39,8 +39,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * var options = {
 *     'readme': 'README.md',
 *     'tests': {},
-*     'benchmarks': {},
-*     'html': {}
+*     'benchmarks': {}
 * };
 *
 * var err = validate( opts, options );
