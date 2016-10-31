@@ -29,7 +29,7 @@ var validate = require( './validate.js' );
 * @throws {TypeError} second argument must be a string
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
-* @throws {TypeError} callback argument must be an object
+* @throws {TypeError} callback argument must be an function
 */
 function build( dir, out, options, clbk ) {
 	var gopts;
