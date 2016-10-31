@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Build package assets.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "package",
+    "pkg",
+    "bundle"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
