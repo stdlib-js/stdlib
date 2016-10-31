@@ -39,6 +39,11 @@ template = readFileSync( template, {
 * @param {Object} [options.tests] - tests file path
 * @param {Object} [options.benchmarks] - benchmarks file path
 * @param {Callback} clbk - callback to invoke after converting README
+* @throws {TypeError} first argument must be a string
+* @throws {TypeError} second argument must be a string
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
+* @throws {TypeError} callback argument must be a function
 */
 function convert( src, out, options, clbk ) {
 	var opts;
