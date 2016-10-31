@@ -53,6 +53,7 @@
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
     "mkdirp": "^0.5.1",
+    "mustache": "^2.2.1",
     "plato": "^1.5.0",
     "proxyquire": "^1.7.4",
     "proxyquire-universal": "^1.0.8",
