@@ -35,8 +35,8 @@ template = readFileSync( template, {
 * @param {string} out - output file path
 * @param {Options} [options] - options
 * @param {string} [options.title] - HTML title
-* @param {Object} [options.tests] - tests file path
-* @param {Object} [options.benchmarks] - benchmarks file path
+* @param {Object} [options.tests] - tests URL
+* @param {Object} [options.benchmarks] - benchmarks URL
 * @param {Callback} clbk - callback to invoke after converting README
 * @throws {TypeError} first argument must be a string
 * @throws {TypeError} second argument must be a string

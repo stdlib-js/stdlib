@@ -17,8 +17,8 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @param {Object} opts - destination object
 * @param {Options} options - function options
 * @param {string} [options.title] - HTML title
-* @param {Object} [options.tests] - tests file path
-* @param {Object} [options.benchmarks] - benchmarks file path
+* @param {Object} [options.tests] - tests URL
+* @param {Object} [options.benchmarks] - benchmarks URL
 * @returns {(Error|null)} error object or null
 *
 * @example
