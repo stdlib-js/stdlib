@@ -51,7 +51,7 @@ function build( pkg, dest, opts, clbk ) {
 		}
 		if ( !files.length ) {
 			debug( 'No tests found.' );
-			return clbk();
+			return clbk( null, false );
 		}
 		bundle( files, dest, onBundle );
 	} // end FUNCTION onGlob()
@@ -67,7 +67,7 @@ function build( pkg, dest, opts, clbk ) {
 			debug( 'Encountered an error when generating a package test bundle: %s', error.message );
 			return clbk( error );
 		}
-		clbk();
+		clbk( null, true );
 	} // end FUNCTION onBundle()
 } // end FUNCTION build()
 

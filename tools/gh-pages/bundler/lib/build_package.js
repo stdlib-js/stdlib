@@ -5,15 +5,12 @@
 var debug = require( 'debug' )( 'gh-pages:build:build-package' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
+var prefix = require( './stdlib.js' );
+var copy = require( prefix+'@stdlib/utils/copy' );
 var packageName = require( './package_name.js' );
 var buildTests = require( './build_tests.js' );
 var buildBenchmarks = require( './build_benchmarks.js' );
 var buildHTML = require( './build_html.js' );
-
-
-// VARIABLES //
-
-var TASKS = [ 'tests', 'benchmarks', 'HTML' ];
 
 
 // MAIN //
@@ -28,8 +25,17 @@ var TASKS = [ 'tests', 'benchmarks', 'HTML' ];
 * @param {Callback} clbk - callback to invoke after building assets
 */
 function build( pkg, dest, opts, clbk ) {
-	var count = 0;
+	var numBundles;
+	var bundles;
+	var count;
 	var name;
+
+	numBundles = 2; // tests and benchmarks
+	count = 0;
+	bundles = {
+		'tests': false,
+		'benchmarks': false
+	};
 
 	name = packageName( pkg );
 	debug( 'Package name: %s', name );
@@ -51,25 +57,22 @@ function build( pkg, dest, opts, clbk ) {
 			return done( error );
 		}
 		debug( 'Successfully created package destination directory.' );
-		runTasks();
+		runBundleTasks();
 	} // end FUNCTION onDir()
 
 	/**
-	* Executes tasks.
+	* Executes bundle tasks.
 	*
 	* @private
 	*/
-	function runTasks() {
-		debug( 'Running tasks...' );
+	function runBundleTasks() {
+		debug( 'Running bundle tasks...' );
 
 		debug( 'Building package test bundle...' );
 		buildTests( pkg, dest, opts.tests, onTests );
 
 		debug( 'Building package benchmark bundle...' );
 		buildBenchmarks( pkg, dest, opts.benchmarks, onBenchmarks );
-
-		debug( 'Building package HTML assets...' );
-		buildHTML( pkg, dest, opts.html, onHTML );
 	} // end FUNCTION runTasks()
 
 	/**
@@ -77,13 +80,16 @@ function build( pkg, dest, opts, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @param {boolean} boolean indicating whether a bundle was created
 	*/
-	function onTests( error ) {
+	function onTests( error, bool ) {
 		if ( error ) {
 			debug( 'Encountered an error when creating package test bundle: %s', error.message );
 			return done( error );
 		}
-		done( null, 'tests' );
+		debug( 'Finished test bundle task.' );
+		bundles[ 'tests' ] = bool;
+		onBundle();
 	} // end FUNCTION onTests()
 
 	/**
@@ -91,14 +97,37 @@ function build( pkg, dest, opts, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @param {boolean} bool - boolean indicating whether a bundle was created
 	*/
-	function onBenchmarks( error ) {
+	function onBenchmarks( error, bool ) {
 		if ( error ) {
 			debug( 'Encountered an error when creating package benchmark bundle: %s', error.message );
 			return done( error );
 		}
-		done( null, 'benchmarks' );
+		debug( 'Finished benchmark bundle task.' );
+		bundles[ 'benchmarks' ] = bool;
+		onBundle();
 	} // end FUNCTION onBenchmarks()
+
+	/**
+	* Callback invoked upon creating a bundle.
+	*
+	* @private
+	*/
+	function onBundle() {
+		var bopts;
+		count += 1;
+		if ( count === numBundles ) {
+			debug( 'Finished bundle tasks.' );
+
+			bopts = copy( opts.html );
+			bopts.benchmarks = bundles.benchmarks;
+			bopts.tests = bundles.tests;
+
+			debug( 'Building package HTML assets...' );
+			buildHTML( pkg, dest, bopts, onHTML );
+		}
+	} // end FUNCTION onBundle()
 
 	/**
 	* Callback invoked after creating a package HTML assets.
@@ -111,7 +140,8 @@ function build( pkg, dest, opts, clbk ) {
 			debug( 'Encountered an error when creating package HTML assets: %s', error.message );
 			return done( error );
 		}
-		done( null, 'HTML' );
+		debug( 'Finished HTML task.' );
+		done();
 	} // end FUNCTION onHTML()
 
 	/**
@@ -119,19 +149,12 @@ function build( pkg, dest, opts, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {string} task - task name
 	*/
-	function done( error, task ) {
+	function done( error ) {
 		if ( error ) {
 			return clbk( error );
 		}
-		debug( 'Completed task: %s.', task );
-
-		count += 1;
-		debug( 'Completed %d of %d tasks', count, TASKS.length );
-		if ( count === TASKS.length ) {
-			clbk();
-		}
+		clbk();
 	} // end FUNCTION done()
 } // end FUNCTION build()
 
