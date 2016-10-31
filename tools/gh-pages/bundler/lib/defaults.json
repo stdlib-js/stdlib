@@ -1,0 +1,25 @@
+{
+	"packages": {
+		"pattern": "**/package.json",
+		"ignore": [
+			"node_modules/**",
+			"build/**",
+			"reports/**",
+			"tools/**"
+		]
+	},
+	"tests": {
+		"pattern": "**/test*.js",
+		"folder": "test",
+		"bundle": "test_bundle.js"
+	},
+	"benchmarks": {
+		"pattern": "**/benchmark*.js",
+		"folder": "benchmark",
+		"bundle": "benchmark_bundle.js"
+	},
+	"html": {
+		"src": "README.md",
+		"out": "index.html"
+	}
+}
