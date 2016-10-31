@@ -4,10 +4,22 @@
 
 var debug = require( 'debug' )( 'gh-pages:build:build-html' );
 var join = require( 'path' ).join;
+var resolve = require( 'path' ).resolve;
 var exec = require( 'child_process' ).exec;
 var writeFile = require( 'fs' ).writeFile;
+var mustache = require( 'mustache' );
 var prefix = require( './stdlib.js' );
+var readFileSync = require( prefix+'@stdlib/fs/read-file' ).sync;
 var exists = require( prefix+'@stdlib/fs/exists' );
+var packageName = require( './package_name.js' );
+
+
+// VARIABLES //
+
+var template = resolve( __dirname, '..', 'static/index.html' );
+template = readFileSync( template, {
+	'encoding': 'utf8'
+});
 
 
 // MAIN //
@@ -20,14 +32,16 @@ var exists = require( prefix+'@stdlib/fs/exists' );
 * @param {string} dest - destination directory
 * @param {Options} opts - options
 * @param {string} opts.src - documentation file
-* @param {string} opts.out - output filename
+* @param {string} opts.index - main output filename
+* @param {Object} [opts.tests] - tests filename
+* @param {Object} [opts.benchmarks] - benchmarks filename
 * @param {Callback} clbk - callback to invoke after building assets
 */
 function build( pkg, dest, opts, clbk ) {
 	var src = join( pkg, opts.src );
 	debug( 'Source for HTML assets: %s', src );
 
-	dest = join( dest, opts.out );
+	dest = join( dest, opts.index );
 	debug( 'Destination for HTML assets: %s', dest );
 
 	debug( 'Testing if source file exists...' );
@@ -69,19 +83,34 @@ function build( pkg, dest, opts, clbk ) {
 	* @param {Buffer} stderr - standard error
 	*/
 	function onExec( error, stdout, stderr ) {
-		var opts;
+		var wopts;
+		var view;
+		var html;
 		if ( error ) {
-			debug( 'Encountered an error when converting file to HTML: %s', error.message );
+			debug( 'Encountered an error when converting file: %s', error.message );
 			return done( error );
 		}
 		debug( 'Command stderr: %s', stderr.toString() );
+		debug( 'Successfully converted file.' );
 
-		debug( 'Successfully converted file to HTML.' );
-		debug( 'Writing HTML to file...' );
-		opts = {
+		view = {
+			'title': packageName( pkg ),
+			'tests': opts.tests,
+			'benchmarks': opts.benchmarks
+		};
+		debug( 'Render options: %s', JSON.stringify( view ) );
+
+		view.docs = stdout.toString();
+
+		debug( 'Rendering...' );
+		html = mustache.render( template, view );
+		debug( 'Finished rendering.' );
+
+		debug( 'Writing to file...' );
+		wopts = {
 			'encoding': 'utf8'
 		};
-		writeFile( dest, stdout, opts, onWrite );
+		writeFile( dest, html, wopts, onWrite );
 	} // end FUNCTION onExec()
 
 	/**

@@ -20,6 +20,8 @@
 	},
 	"html": {
 		"src": "README.md",
-		"out": "index.html"
+		"index": "index.html",
+		"tests": "test.html",
+		"benchmarks": "benchmark.html"
 	}
 }

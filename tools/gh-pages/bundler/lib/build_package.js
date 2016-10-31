@@ -121,9 +121,16 @@ function build( pkg, dest, opts, clbk ) {
 			debug( 'Finished bundle tasks.' );
 
 			bopts = copy( opts.html );
-			bopts.benchmarks = bundles.benchmarks;
-			bopts.tests = bundles.tests;
-
+			if ( bundles.benchmarks ) {
+				bopts.benchmarks = join( '/', name, opts.html.benchmarks );
+			} else {
+				bopts.benchmarks = '';
+			}
+			if ( bundles.tests ) {
+				bopts.tests = join( '/', name, opts.html.tests );
+			} else {
+				bopts.tests = '';
+			}
 			debug( 'Building package HTML assets...' );
 			buildHTML( pkg, dest, bopts, onHTML );
 		}
