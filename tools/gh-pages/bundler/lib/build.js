@@ -3,19 +3,23 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'gh-pages:build:build' );
-var buildPkg = require( './build_package.js' );
+var join = require( 'path' ).join;
+var prefix = require( './stdlib.js' );
+var copy = require( prefix+'@stdlib/utils/copy' );
+var buildPkg = require( './../../package' );
+var packageName = require( './package_name.js' );
 
 
 // MAIN //
 
 /**
-* Runs build tasks for one or more packages.
+* Builds one or more packages.
 *
 * @private
 * @param {StringArray} pkgs - list of package paths
 * @param {string} dest - destination directory
 * @param {Options} opts - options
-* @param {Callback} clbk - callback to invoke upon completing tasks
+* @param {Callback} clbk - callback to invoke upon completion
 */
 function build( pkgs, dest, opts, clbk ) {
 	var count;
@@ -37,13 +41,34 @@ function build( pkgs, dest, opts, clbk ) {
 	* @private
 	*/
 	function next() {
+		var bopts;
+		var name;
 		var pkg;
+		var out;
 
 		i += 1;
 		pkg = pkgs[ i ];
 
+		name = packageName( pkg );
+		debug( 'Package name: %s', name );
+
+		out = join( dest, name );
+		debug( 'Destination directory: %s', out );
+
+		bopts = {};
+		bopts.title = name;
+		bopts.mount = '/' + name + '/';
+
+		bopts.tests = copy( opts.tests );
+		bopts.tests.title = name + ' - Tests';
+
+		bopts.benchmarks = copy( opts.benchmarks );
+		bopts.benchmarks.title = name + ' - Benchmarks';
+
+		debug( 'Build options: %s', JSON.stringify( bopts ) );
+
 		debug( 'Building package: %s (%d of %d)', pkg, i+1, len );
-		buildPkg( pkg, dest, opts, onBuild( i ) );
+		buildPkg( pkg, out, bopts, onBuild( i ) );
 	} // end FUNCTION next()
 
 	/**
