@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Bundle benchmark files into a single file using browserify.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "benchmarks",
+    "bundle",
+    "browserify"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
