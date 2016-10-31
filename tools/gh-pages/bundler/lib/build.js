@@ -57,7 +57,7 @@ function build( pkgs, dest, opts, clbk ) {
 
 		bopts = {};
 		bopts.title = name;
-		bopts.mount = '/' + name + '/';
+		bopts.mount = opts.mount + name + '/';
 
 		bopts.tests = copy( opts.tests );
 		bopts.tests.title = name + ' - Tests';
