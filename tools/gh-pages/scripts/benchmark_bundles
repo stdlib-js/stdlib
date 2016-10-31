@@ -11,6 +11,10 @@
 
 # Destination directory for package bundles:
 output_dir="$1"
+if [[ -z "${output_dir}" ]]; then
+	echo 'ERROR: Must provide a destination directory.' >&2
+	exit 1
+fi
 
 # Determine root directory:
 root_dir="$(git rev-parse --show-toplevel)"
