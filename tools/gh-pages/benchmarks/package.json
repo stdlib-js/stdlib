@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Build benchmark assets.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "benchmarks",
+    "benchmark",
+    "bench",
+    "bundle"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

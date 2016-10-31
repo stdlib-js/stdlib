@@ -1,0 +1,6 @@
+{
+	"pattern": "**/benchmark*.js",
+	"bundle": "benchmark_bundle.js",
+	"html": "benchmarks.html",
+	"title": "Benchmarks"
+}
