@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Generate an HTML file for running tests.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tests",
+    "test",
+    "html"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
