@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Generate an HTML file for running benchmarks.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "benchmarks",
+    "benchmark",
+    "bench",
+    "html"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
