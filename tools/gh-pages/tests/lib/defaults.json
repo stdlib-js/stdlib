@@ -1,0 +1,6 @@
+{
+	"pattern": "**/test*.js",
+	"bundle": "test_bundle.js",
+	"html": "tests.html",
+	"title": "Tests"
+}

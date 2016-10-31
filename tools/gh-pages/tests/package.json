@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Build test assets.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tests",
+    "test",
+    "bundle"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
