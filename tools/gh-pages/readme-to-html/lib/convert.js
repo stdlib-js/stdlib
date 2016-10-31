@@ -31,7 +31,6 @@ template = readFileSync( template, {
 /**
 * Converts a README to HTML.
 *
-* @private
 * @param {string} src - input file path
 * @param {string} out - output file path
 * @param {Options} [options] - options
