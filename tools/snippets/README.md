@@ -4,12 +4,15 @@
 
 
 <!-- Section to include introductory text. -->
+
 <section class="intro">
 
 </section>
+
 <!-- /.intro -->
 
 <!-- Package usage documentation. -->
+
 <section class="usage">
 
 ## Usage
@@ -28,9 +31,11 @@ var v = TODO( 0.0 );
 ```
 
 </section>
+
 <!-- /.usage -->
 
 <!-- Package usage examples. -->
+
 <section class="examples">
 
 ## Examples
@@ -42,16 +47,21 @@ TODO
 ```
 
 </section>
+
 <!-- /.examples -->
 
 <!-- Section to include cited references. -->
+
 <section class="references">
 
 </section>
+
 <!-- /.references -->
 
 <!-- Section for all links. -->
+
 <section class="links">
 
 </section>
+
 <!-- /.links -->

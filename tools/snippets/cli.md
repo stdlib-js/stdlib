@@ -1,5 +1,6 @@
 
 <!-- Section for describing a commnd-line interface. -->
+
 <section class="cli">
 
 ---
@@ -7,6 +8,7 @@
 ## CLI
 
 <!-- CLI usage documentation. -->
+
 <section class="usage">
 
 ### Usage
@@ -21,9 +23,11 @@ Options:
 ```
 
 </section>
+
 <!-- /.usage -->
 
 <!-- CLI usage examples. -->
+
 <section class="examples">
 
 ### Examples
@@ -34,7 +38,9 @@ TODO
 ```
 
 </section>
+
 <!-- /.examples -->
 
 </section>
+
 <!-- /.cli -->
