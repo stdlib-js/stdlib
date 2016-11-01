@@ -3,10 +3,10 @@
 /**
 * Build one or more packages.
 *
-* @module @stdlib/tools/gh-pages/bundler
+* @module @stdlib/tools/gh-pages/build-packages
 *
 * @example
-* var build = require( '/path/to/gh-pages/bundler' );
+* var build = require( '/path/to/gh-pages/build-packages' );
 *
 * build( done );
 *
