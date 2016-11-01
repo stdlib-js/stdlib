@@ -867,6 +867,7 @@
      * benchmark.js
      * substack benchmark module
      * matcha
+     * [nanobench](https://github.com/mafintosh/nanobench)
 
 105. stability badges
 

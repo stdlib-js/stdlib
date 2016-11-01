@@ -97,7 +97,8 @@ function convert( src, out, options, clbk ) {
 		}
 		cmd = 'pandoc';
 		cmd += ' --from=markdown_github';
-		cmd += ' --to=html';
+		cmd += ' --to=html5';
+		cmd += ' --no-highlight';
 		cmd += ' '+src;
 
 		debug( 'Converting file to HTML...' );
