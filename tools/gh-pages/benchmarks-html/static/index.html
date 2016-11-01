@@ -55,9 +55,74 @@
 			border-spacing: 0;
 		}
 	</style>
+	<style>
+		body {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 40px;
+		}
+
+		#console {
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
-	<div class="benchmarks"></div>
+	<div id="console"></div>
+	<script type="text/javascript">
+		(function() {
+			'use strict';
+
+			// VARIABLES //
+
+			var methods = [
+				'log',
+				'error',
+				'warn',
+				'dir',
+				'debug',
+				'info',
+				'trace'
+			];
+
+			// MAIN //
+
+			/**
+			* Main.
+			*
+			* @private
+			*/
+			function main() {
+				var console;
+				var str;
+				var el;
+				var i;
+
+				// FIXME: IE9 has a non-standard `console.log` object (http://stackoverflow.com/questions/5538972/console-log-apply-not-working-in-ie9)
+				console = window.console || {};
+
+				for ( i = 0; i < methods.length; i++ ) {
+					console[ methods[ i ] ] = write;
+				}
+
+				el = document.querySelector( '#console' );
+				str = el.innerHTML;
+
+				/**
+				* Writes content to a DOM element. Note that this assumes a single argument and no substitution strings.
+				*
+				* @private
+				* @param {string} message - message
+				*/
+				function write( message ) {
+					str += '<p>'+message+'</p>';
+					el.innerHTML = str;
+				} // end FUNCTION write()
+			} // end FUNCTION main()
+
+			main();
+		})();
+	</script>
 	<script type="text/javascript" src="{{{bundle}}}"></script>
 </body>
 </html>
