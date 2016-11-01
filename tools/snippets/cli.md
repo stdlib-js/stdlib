@@ -1,11 +1,13 @@
 
-<!-- <cli> -->
+<!-- Section for describing a commnd-line interface. -->
+<section class="cli">
 
 ---
 
 ## CLI
 
-<!-- <usage> -->
+<!-- CLI usage documentation. -->
+<section class="usage">
 
 ### Usage
 
@@ -18,9 +20,11 @@ Options:
   -V,    --version             Print the package version.
 ```
 
-<!-- </usage> -->
+</section>
+<!-- /.usage -->
 
-<!-- <examples> -->
+<!-- CLI usage examples. -->
+<section class="examples">
 
 ### Examples
 
@@ -29,6 +33,8 @@ $ TODO
 TODO
 ```
 
-<!-- </examples> -->
+</section>
+<!-- /.examples -->
 
-<!-- </cli> -->
+</section>
+<!-- /.cli -->

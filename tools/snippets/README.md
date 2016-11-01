@@ -3,12 +3,14 @@
 > TODO
 
 
-<!-- <intro> -->
+<!-- Section to include introductory text. -->
+<section class="intro">
 
-<!-- </intro> -->
+</section>
+<!-- /.intro -->
 
-
-<!-- <usage> -->
+<!-- Package usage documentation. -->
+<section class="usage">
 
 ## Usage
 
@@ -25,10 +27,11 @@ var v = TODO( 0.0 );
 // returns TODO
 ```
 
-<!-- </usage> -->
+</section>
+<!-- /.usage -->
 
-
-<!-- <examples> -->
+<!-- Package usage examples. -->
+<section class="examples">
 
 ## Examples
 
@@ -38,9 +41,17 @@ var TODO = require( '@stdlib/<TODO: module path>' );
 TODO
 ```
 
-<!-- </examples> -->
+</section>
+<!-- /.examples -->
 
+<!-- Section to include cited references. -->
+<section class="references">
 
-<!-- <links> -->
+</section>
+<!-- /.references -->
 
-<!-- </links> -->
+<!-- Section for all links. -->
+<section class="links">
+
+</section>
+<!-- /.links -->
