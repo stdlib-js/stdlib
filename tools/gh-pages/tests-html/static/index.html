@@ -62,13 +62,13 @@
 			padding: 40px;
 		}
 
-		#tests {
+		#console {
 			width: 100%;
 		}
 	</style>
 </head>
 <body>
-	<div id="tests"></div>
+	<div id="console"></div>
 	<script type="text/javascript">
 		(function() {
 			'use strict';
@@ -105,7 +105,7 @@
 					console[ methods[ i ] ] = write;
 				}
 
-				el = document.querySelector( '#tests' );
+				el = document.querySelector( '#console' );
 				str = el.innerHTML;
 
 				/**
