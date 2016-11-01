@@ -1347,6 +1347,8 @@
    - log
    - [ndjson](https://github.com/maxogden/ndjson)
    - [one-way multiplexing](https://github.com/mafintosh/stream-channels)
+   - [xhr-write-stream](https://github.com/substack/xhr-write-stream)
+   - [utf8-stream](https://github.com/substack/utf8-stream)
 
 5. kmeans/dbscan
 

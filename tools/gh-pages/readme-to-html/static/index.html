@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>{{{title}}}</title>
 	<style>
+
+		/* RESETS */
+
 		/* http://meyerweb.com/eric/tools/css/reset/
 		   v2.0 | 20110126
 		   License: none (public domain)
@@ -31,860 +34,934 @@
 			font: inherit;
 			vertical-align: baseline;
 		}
-		/* HTML5 display-role reset for older browsers */
-		article, aside, details, figcaption, figure,
-		footer, header, hgroup, menu, nav, section {
-			display: block;
-		}
+
 		body {
 			line-height: 1;
 		}
-		ol, ul {
+
+		ol,
+		ul {
 			list-style: none;
 		}
-		blockquote, q {
+
+		blockquote,
+		q {
 			quotes: none;
 		}
-		blockquote:before, blockquote:after,
-		q:before, q:after {
+
+		blockquote:before,
+		blockquote:after,
+		q:before,
+		q:after {
 			content: '';
 			content: none;
 		}
+
 		table {
 			border-collapse: collapse;
 			border-spacing: 0;
 		}
-	</style>
-	<style>
-		/* https://github.com/sindresorhus/github-markdown-css
 
-		The MIT License (MIT)
+		/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
-		Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+		/**
+		 * 1. Change the default font family in all browsers (opinionated).
+		 * 2. Correct the line height in all browsers.
+		 * 3. Prevent adjustments of font size after orientation changes in
+		 *    IE on Windows Phone and in iOS.
+		 */
 
-		Permission is hereby granted, free of charge, to any person obtaining a copy
-		of this software and associated documentation files (the "Software"), to deal
-		in the Software without restriction, including without limitation the rights
-		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-		copies of the Software, and to permit persons to whom the Software is
-		furnished to do so, subject to the following conditions:
+		/* Document
+		   ========================================================================== */
 
-		The above copyright notice and this permission notice shall be included in
-		all copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-		THE SOFTWARE.
-		*/
-
-		@font-face {
-		  font-family: octicons-link;
-		  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+		html {
+		  font-family: sans-serif; /* 1 */
+		  line-height: 1.15; /* 2 */
+		  -ms-text-size-adjust: 100%; /* 3 */
+		  -webkit-text-size-adjust: 100%; /* 3 */
 		}
 
-		.markdown-body {
-	        box-sizing: border-box;
-	        min-width: 200px;
-	        max-width: 980px;
-	        margin: 0 auto;
-	        padding: 45px;
-	    }
+		/* Sections
+		   ========================================================================== */
 
-		.markdown-body {
-		  -ms-text-size-adjust: 100%;
-		  -webkit-text-size-adjust: 100%;
-		  line-height: 1.5;
-		  color: #333;
-		  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-		  font-size: 16px;
-		  line-height: 1.5;
-		  word-wrap: break-word;
+		/**
+		 * Remove the margin in all browsers (opinionated).
+		 */
+
+		body {
+		  margin: 0;
 		}
 
-		.markdown-body .pl-c {
-		  color: #969896;
+		/**
+		 * Add the correct display in IE 9-.
+		 */
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section  {
+		  display: block;
 		}
 
-		.markdown-body .pl-c1,
-		.markdown-body .pl-s .pl-v {
-		  color: #0086b3;
-		}
+		/**
+		 * Correct the font size and margin on `h1` elements within `section` and
+		 * `article` contexts in Chrome, Firefox, and Safari.
+		 */
 
-		.markdown-body .pl-e,
-		.markdown-body .pl-en {
-		  color: #795da3;
-		}
-
-		.markdown-body .pl-smi,
-		.markdown-body .pl-s .pl-s1 {
-		  color: #333;
-		}
-
-		.markdown-body .pl-ent {
-		  color: #63a35c;
-		}
-
-		.markdown-body .pl-k {
-		  color: #a71d5d;
-		}
-
-		.markdown-body .pl-s,
-		.markdown-body .pl-pds,
-		.markdown-body .pl-s .pl-pse .pl-s1,
-		.markdown-body .pl-sr,
-		.markdown-body .pl-sr .pl-cce,
-		.markdown-body .pl-sr .pl-sre,
-		.markdown-body .pl-sr .pl-sra {
-		  color: #183691;
-		}
-
-		.markdown-body .pl-v {
-		  color: #ed6a43;
-		}
-
-		.markdown-body .pl-id {
-		  color: #b52a1d;
-		}
-
-		.markdown-body .pl-ii {
-		  color: #f8f8f8;
-		  background-color: #b52a1d;
-		}
-
-		.markdown-body .pl-sr .pl-cce {
-		  font-weight: bold;
-		  color: #63a35c;
-		}
-
-		.markdown-body .pl-ml {
-		  color: #693a17;
-		}
-
-		.markdown-body .pl-mh,
-		.markdown-body .pl-mh .pl-en,
-		.markdown-body .pl-ms {
-		  font-weight: bold;
-		  color: #1d3e81;
-		}
-
-		.markdown-body .pl-mq {
-		  color: #008080;
-		}
-
-		.markdown-body .pl-mi {
-		  font-style: italic;
-		  color: #333;
-		}
-
-		.markdown-body .pl-mb {
-		  font-weight: bold;
-		  color: #333;
-		}
-
-		.markdown-body .pl-md {
-		  color: #bd2c00;
-		  background-color: #ffecec;
-		}
-
-		.markdown-body .pl-mi1 {
-		  color: #55a532;
-		  background-color: #eaffea;
-		}
-
-		.markdown-body .pl-mdr {
-		  font-weight: bold;
-		  color: #795da3;
-		}
-
-		.markdown-body .pl-mo {
-		  color: #1d3e81;
-		}
-
-		.markdown-body .octicon {
-		  display: inline-block;
-		  vertical-align: text-top;
-		  fill: currentColor;
-		}
-
-		.markdown-body a {
-		  background-color: transparent;
-		  -webkit-text-decoration-skip: objects;
-		}
-
-		.markdown-body a:active,
-		.markdown-body a:hover {
-		  outline-width: 0;
-		}
-
-		.markdown-body strong {
-		  font-weight: inherit;
-		}
-
-		.markdown-body strong {
-		  font-weight: bolder;
-		}
-
-		.markdown-body h1 {
+		h1 {
 		  font-size: 2em;
 		  margin: 0.67em 0;
 		}
 
-		.markdown-body img {
+		/* Grouping content
+		   ========================================================================== */
+
+		/**
+		 * Add the correct display in IE 9-.
+		 * 1. Add the correct display in IE.
+		 */
+
+		figcaption,
+		figure,
+		main { /* 1 */
+		  display: block;
+		}
+
+		/**
+		 * Add the correct margin in IE 8.
+		 */
+
+		figure {
+		  margin: 1em 40px;
+		}
+
+		/**
+		 * 1. Add the correct box sizing in Firefox.
+		 * 2. Show the overflow in Edge and IE.
+		 */
+
+		hr {
+		  box-sizing: content-box; /* 1 */
+		  height: 0; /* 1 */
+		  overflow: visible; /* 2 */
+		}
+
+		/**
+		 * 1. Correct the inheritance and scaling of font size in all browsers.
+		 * 2. Correct the odd `em` font sizing in all browsers.
+		 */
+
+		pre {
+		  font-family: monospace, monospace; /* 1 */
+		  font-size: 1em; /* 2 */
+		}
+
+		/* Text-level semantics
+		   ========================================================================== */
+
+		/**
+		 * 1. Remove the gray background on active links in IE 10.
+		 * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+		 */
+
+		a {
+		  background-color: transparent; /* 1 */
+		  -webkit-text-decoration-skip: objects; /* 2 */
+		}
+
+		/**
+		 * Remove the outline on focused links when they are also active or hovered
+		 * in all browsers (opinionated).
+		 */
+
+		a:active,
+		a:hover {
+		  outline-width: 0;
+		}
+
+		/**
+		 * 1. Remove the bottom border in Firefox 39-.
+		 * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+		 */
+
+		abbr[title] {
+		  border-bottom: none; /* 1 */
+		  text-decoration: underline; /* 2 */
+		  text-decoration: underline dotted; /* 2 */
+		}
+
+		/**
+		 * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+		 */
+
+		b,
+		strong {
+		  font-weight: inherit;
+		}
+
+		/**
+		 * Add the correct font weight in Chrome, Edge, and Safari.
+		 */
+
+		b,
+		strong {
+		  font-weight: bolder;
+		}
+
+		/**
+		 * 1. Correct the inheritance and scaling of font size in all browsers.
+		 * 2. Correct the odd `em` font sizing in all browsers.
+		 */
+
+		code,
+		kbd,
+		samp {
+		  font-family: monospace, monospace; /* 1 */
+		  font-size: 1em; /* 2 */
+		}
+
+		/**
+		 * Add the correct font style in Android 4.3-.
+		 */
+
+		dfn {
+		  font-style: italic;
+		}
+
+		/**
+		 * Add the correct background and color in IE 9-.
+		 */
+
+		mark {
+		  background-color: #ff0;
+		  color: #000;
+		}
+
+		/**
+		 * Add the correct font size in all browsers.
+		 */
+
+		small {
+		  font-size: 80%;
+		}
+
+		/**
+		 * Prevent `sub` and `sup` elements from affecting the line height in
+		 * all browsers.
+		 */
+
+		sub,
+		sup {
+		  font-size: 75%;
+		  line-height: 0;
+		  position: relative;
+		  vertical-align: baseline;
+		}
+
+		sub {
+		  bottom: -0.25em;
+		}
+
+		sup {
+		  top: -0.5em;
+		}
+
+		/* Embedded content
+		   ========================================================================== */
+
+		/**
+		 * Add the correct display in IE 9-.
+		 */
+
+		audio,
+		video {
+		  display: inline-block;
+		}
+
+		/**
+		 * Add the correct display in iOS 4-7.
+		 */
+
+		audio:not([controls]) {
+		  display: none;
+		  height: 0;
+		}
+
+		/**
+		 * Remove the border on images inside links in IE 10-.
+		 */
+
+		img {
 		  border-style: none;
 		}
 
-		.markdown-body svg:not(:root) {
+		/**
+		 * Hide the overflow in IE.
+		 */
+
+		svg:not(:root) {
 		  overflow: hidden;
 		}
 
-		.markdown-body code,
-		.markdown-body kbd,
-		.markdown-body pre {
-		  font-family: monospace, monospace;
-		  font-size: 1em;
+		/* Forms
+		   ========================================================================== */
+
+		/**
+		 * 1. Change the font styles in all browsers (opinionated).
+		 * 2. Remove the margin in Firefox and Safari.
+		 */
+
+		button,
+		input,
+		optgroup,
+		select,
+		textarea {
+		  font-family: sans-serif; /* 1 */
+		  font-size: 100%; /* 1 */
+		  line-height: 1.15; /* 1 */
+		  margin: 0; /* 2 */
 		}
 
-		.markdown-body hr {
-		  box-sizing: content-box;
-		  height: 0;
+		/**
+		 * Show the overflow in IE.
+		 * 1. Show the overflow in Edge.
+		 */
+
+		button,
+		input { /* 1 */
 		  overflow: visible;
 		}
 
-		.markdown-body input {
-		  font: inherit;
-		  margin: 0;
+		/**
+		 * Remove the inheritance of text transform in Edge, Firefox, and IE.
+		 * 1. Remove the inheritance of text transform in Firefox.
+		 */
+
+		button,
+		select { /* 1 */
+		  text-transform: none;
 		}
 
-		.markdown-body input {
-		  overflow: visible;
+		/**
+		 * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+		 *    controls in Android 4.
+		 * 2. Correct the inability to style clickable types in iOS and Safari.
+		 */
+
+		button,
+		html [type="button"], /* 1 */
+		[type="reset"],
+		[type="submit"] {
+		  -webkit-appearance: button; /* 2 */
 		}
 
-		.markdown-body [type="checkbox"] {
-		  box-sizing: border-box;
+		/**
+		 * Remove the inner border and padding in Firefox.
+		 */
+
+		button::-moz-focus-inner,
+		[type="button"]::-moz-focus-inner,
+		[type="reset"]::-moz-focus-inner,
+		[type="submit"]::-moz-focus-inner {
+		  border-style: none;
 		  padding: 0;
 		}
 
-		.markdown-body * {
-		  box-sizing: border-box;
+		/**
+		 * Restore the focus styles unset by the previous rule.
+		 */
+
+		button:-moz-focusring,
+		[type="button"]:-moz-focusring,
+		[type="reset"]:-moz-focusring,
+		[type="submit"]:-moz-focusring {
+		  outline: 1px dotted ButtonText;
 		}
 
-		.markdown-body input {
-		  font-family: inherit;
-		  font-size: inherit;
-		  line-height: inherit;
+		/**
+		 * Change the border, margin, and padding in all browsers (opinionated).
+		 */
+
+		fieldset {
+		  border: 1px solid #c0c0c0;
+		  margin: 0 2px;
+		  padding: 0.35em 0.625em 0.75em;
 		}
 
-		.markdown-body a {
-		  color: #4078c0;
-		  text-decoration: none;
+		/**
+		 * 1. Correct the text wrapping in Edge and IE.
+		 * 2. Correct the color inheritance from `fieldset` elements in IE.
+		 * 3. Remove the padding so developers are not caught out when they zero out
+		 *    `fieldset` elements in all browsers.
+		 */
+
+		legend {
+		  box-sizing: border-box; /* 1 */
+		  color: inherit; /* 2 */
+		  display: table; /* 1 */
+		  max-width: 100%; /* 1 */
+		  padding: 0; /* 3 */
+		  white-space: normal; /* 1 */
 		}
 
-		.markdown-body a:hover,
-		.markdown-body a:active {
-		  text-decoration: underline;
+		/**
+		 * 1. Add the correct display in IE 9-.
+		 * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+		 */
+
+		progress {
+		  display: inline-block; /* 1 */
+		  vertical-align: baseline; /* 2 */
 		}
 
-		.markdown-body strong {
-		  font-weight: 600;
+		/**
+		 * Remove the default vertical scrollbar in IE.
+		 */
+
+		textarea {
+		  overflow: auto;
 		}
 
-		.markdown-body hr {
-		  height: 0;
-		  margin: 15px 0;
-		  overflow: hidden;
-		  background: transparent;
-		  border: 0;
-		  border-bottom: 1px solid #ddd;
+		/**
+		 * 1. Add the correct box sizing in IE 10-.
+		 * 2. Remove the padding in IE 10-.
+		 */
+
+		[type="checkbox"],
+		[type="radio"] {
+		  box-sizing: border-box; /* 1 */
+		  padding: 0; /* 2 */
 		}
 
-		.markdown-body hr::before {
-		  display: table;
-		  content: "";
+		/**
+		 * Correct the cursor style of increment and decrement buttons in Chrome.
+		 */
+
+		[type="number"]::-webkit-inner-spin-button,
+		[type="number"]::-webkit-outer-spin-button {
+		  height: auto;
 		}
 
-		.markdown-body hr::after {
-		  display: table;
-		  clear: both;
-		  content: "";
+		/**
+		 * 1. Correct the odd appearance in Chrome and Safari.
+		 * 2. Correct the outline style in Safari.
+		 */
+
+		[type="search"] {
+		  -webkit-appearance: textfield; /* 1 */
+		  outline-offset: -2px; /* 2 */
 		}
 
-		.markdown-body table {
-		  border-spacing: 0;
-		  border-collapse: collapse;
+		/**
+		 * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+		 */
+
+		[type="search"]::-webkit-search-cancel-button,
+		[type="search"]::-webkit-search-decoration {
+		  -webkit-appearance: none;
 		}
 
-		.markdown-body td,
-		.markdown-body th {
-		  padding: 0;
+		/**
+		 * 1. Correct the inability to style clickable types in iOS and Safari.
+		 * 2. Change font properties to `inherit` in Safari.
+		 */
+
+		::-webkit-file-upload-button {
+		  -webkit-appearance: button; /* 1 */
+		  font: inherit; /* 2 */
 		}
 
-		.markdown-body h1,
-		.markdown-body h2,
-		.markdown-body h3,
-		.markdown-body h4,
-		.markdown-body h5,
-		.markdown-body h6 {
-		  margin-top: 0;
-		  margin-bottom: 0;
-		}
+		/* Interactive
+		   ========================================================================== */
 
-		.markdown-body h1 {
-		  font-size: 32px;
-		  font-weight: 600;
-		}
+		/*
+		 * Add the correct display in IE 9-.
+		 * 1. Add the correct display in Edge, IE, and Firefox.
+		 */
 
-		.markdown-body h2 {
-		  font-size: 24px;
-		  font-weight: 600;
-		}
-
-		.markdown-body h3 {
-		  font-size: 20px;
-		  font-weight: 600;
-		}
-
-		.markdown-body h4 {
-		  font-size: 16px;
-		  font-weight: 600;
-		}
-
-		.markdown-body h5 {
-		  font-size: 14px;
-		  font-weight: 600;
-		}
-
-		.markdown-body h6 {
-		  font-size: 12px;
-		  font-weight: 600;
-		}
-
-		.markdown-body p {
-		  margin-top: 0;
-		  margin-bottom: 10px;
-		}
-
-		.markdown-body blockquote {
-		  margin: 0;
-		}
-
-		.markdown-body ul,
-		.markdown-body ol {
-		  padding-left: 0;
-		  margin-top: 0;
-		  margin-bottom: 0;
-		}
-
-		.markdown-body ol ol,
-		.markdown-body ul ol {
-		  list-style-type: lower-roman;
-		}
-
-		.markdown-body ul ul ol,
-		.markdown-body ul ol ol,
-		.markdown-body ol ul ol,
-		.markdown-body ol ol ol {
-		  list-style-type: lower-alpha;
-		}
-
-		.markdown-body dd {
-		  margin-left: 0;
-		}
-
-		.markdown-body code {
-		  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		  font-size: 12px;
-		}
-
-		.markdown-body pre {
-		  margin-top: 0;
-		  margin-bottom: 0;
-		  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		}
-
-		.markdown-body .octicon {
-		  vertical-align: text-bottom;
-		}
-
-		.markdown-body input {
-		  -webkit-font-feature-settings: "liga" 0;
-		  font-feature-settings: "liga" 0;
-		}
-
-		.markdown-body::before {
-		  display: table;
-		  content: "";
-		}
-
-		.markdown-body::after {
-		  display: table;
-		  clear: both;
-		  content: "";
-		}
-
-		.markdown-body>*:first-child {
-		  margin-top: 0 !important;
-		}
-
-		.markdown-body>*:last-child {
-		  margin-bottom: 0 !important;
-		}
-
-		.markdown-body a:not([href]) {
-		  color: inherit;
-		  text-decoration: none;
-		}
-
-		.markdown-body .anchor {
-		  float: left;
-		  padding-right: 4px;
-		  margin-left: -20px;
-		  line-height: 1;
-		}
-
-		.markdown-body .anchor:focus {
-		  outline: none;
-		}
-
-		.markdown-body p,
-		.markdown-body blockquote,
-		.markdown-body ul,
-		.markdown-body ol,
-		.markdown-body dl,
-		.markdown-body table,
-		.markdown-body pre {
-		  margin-top: 0;
-		  margin-bottom: 16px;
-		}
-
-		.markdown-body hr {
-		  height: 0.25em;
-		  padding: 0;
-		  margin: 24px 0;
-		  background-color: #e7e7e7;
-		  border: 0;
-		}
-
-		.markdown-body blockquote {
-		  padding: 0 1em;
-		  color: #777;
-		  border-left: 0.25em solid #ddd;
-		}
-
-		.markdown-body blockquote>:first-child {
-		  margin-top: 0;
-		}
-
-		.markdown-body blockquote>:last-child {
-		  margin-bottom: 0;
-		}
-
-		.markdown-body kbd {
-		  display: inline-block;
-		  padding: 3px 5px;
-		  font-size: 11px;
-		  line-height: 10px;
-		  color: #555;
-		  vertical-align: middle;
-		  background-color: #fcfcfc;
-		  border: solid 1px #ccc;
-		  border-bottom-color: #bbb;
-		  border-radius: 3px;
-		  box-shadow: inset 0 -1px 0 #bbb;
-		}
-
-		.markdown-body h1,
-		.markdown-body h2,
-		.markdown-body h3,
-		.markdown-body h4,
-		.markdown-body h5,
-		.markdown-body h6 {
-		  margin-top: 24px;
-		  margin-bottom: 16px;
-		  font-weight: 600;
-		  line-height: 1.25;
-		}
-
-		.markdown-body h1 .octicon-link,
-		.markdown-body h2 .octicon-link,
-		.markdown-body h3 .octicon-link,
-		.markdown-body h4 .octicon-link,
-		.markdown-body h5 .octicon-link,
-		.markdown-body h6 .octicon-link {
-		  color: #000;
-		  vertical-align: middle;
-		  visibility: hidden;
-		}
-
-		.markdown-body h1:hover .anchor,
-		.markdown-body h2:hover .anchor,
-		.markdown-body h3:hover .anchor,
-		.markdown-body h4:hover .anchor,
-		.markdown-body h5:hover .anchor,
-		.markdown-body h6:hover .anchor {
-		  text-decoration: none;
-		}
-
-		.markdown-body h1:hover .anchor .octicon-link,
-		.markdown-body h2:hover .anchor .octicon-link,
-		.markdown-body h3:hover .anchor .octicon-link,
-		.markdown-body h4:hover .anchor .octicon-link,
-		.markdown-body h5:hover .anchor .octicon-link,
-		.markdown-body h6:hover .anchor .octicon-link {
-		  visibility: visible;
-		}
-
-		.markdown-body h1 {
-		  padding-bottom: 0.3em;
-		  font-size: 2em;
-		  border-bottom: 1px solid #eee;
-		}
-
-		.markdown-body h2 {
-		  padding-bottom: 0.3em;
-		  font-size: 1.5em;
-		  border-bottom: 1px solid #eee;
-		}
-
-		.markdown-body h3 {
-		  font-size: 1.25em;
-		}
-
-		.markdown-body h4 {
-		  font-size: 1em;
-		}
-
-		.markdown-body h5 {
-		  font-size: 0.875em;
-		}
-
-		.markdown-body h6 {
-		  font-size: 0.85em;
-		  color: #777;
-		}
-
-		.markdown-body ul,
-		.markdown-body ol {
-		  padding-left: 2em;
-		}
-
-		.markdown-body ul ul,
-		.markdown-body ul ol,
-		.markdown-body ol ol,
-		.markdown-body ol ul {
-		  margin-top: 0;
-		  margin-bottom: 0;
-		}
-
-		.markdown-body li>p {
-		  margin-top: 16px;
-		}
-
-		.markdown-body li+li {
-		  margin-top: 0.25em;
-		}
-
-		.markdown-body dl {
-		  padding: 0;
-		}
-
-		.markdown-body dl dt {
-		  padding: 0;
-		  margin-top: 16px;
-		  font-size: 1em;
-		  font-style: italic;
-		  font-weight: bold;
-		}
-
-		.markdown-body dl dd {
-		  padding: 0 16px;
-		  margin-bottom: 16px;
-		}
-
-		.markdown-body table {
+		details, /* 1 */
+		menu {
 		  display: block;
-		  width: 100%;
-		  overflow: auto;
 		}
 
-		.markdown-body table th {
-		  font-weight: bold;
+		/*
+		 * Add the correct display in all browsers.
+		 */
+
+		summary {
+		  display: list-item;
 		}
 
-		.markdown-body table th,
-		.markdown-body table td {
-		  padding: 6px 13px;
-		  border: 1px solid #ddd;
-		}
+		/* Scripting
+		   ========================================================================== */
 
-		.markdown-body table tr {
-		  background-color: #fff;
-		  border-top: 1px solid #ccc;
-		}
+		/**
+		 * Add the correct display in IE 9-.
+		 */
 
-		.markdown-body table tr:nth-child(2n) {
-		  background-color: #f8f8f8;
-		}
-
-		.markdown-body img {
-		  max-width: 100%;
-		  box-sizing: content-box;
-		  background-color: #fff;
-		}
-
-		.markdown-body code {
-		  padding: 0;
-		  padding-top: 0.2em;
-		  padding-bottom: 0.2em;
-		  margin: 0;
-		  font-size: 85%;
-		  background-color: rgba(0,0,0,0.04);
-		  border-radius: 3px;
-		}
-
-		.markdown-body code::before,
-		.markdown-body code::after {
-		  letter-spacing: -0.2em;
-		  content: "\00a0";
-		}
-
-		.markdown-body pre {
-		  word-wrap: normal;
-		}
-
-		.markdown-body pre>code {
-		  padding: 0;
-		  margin: 0;
-		  font-size: 100%;
-		  word-break: normal;
-		  white-space: pre;
-		  background: transparent;
-		  border: 0;
-		}
-
-		.markdown-body .highlight {
-		  margin-bottom: 16px;
-		}
-
-		.markdown-body .highlight pre {
-		  margin-bottom: 0;
-		  word-break: normal;
-		}
-
-		.markdown-body .highlight pre,
-		.markdown-body pre {
-		  padding: 16px;
-		  overflow: auto;
-		  font-size: 85%;
-		  line-height: 1.45;
-		  background-color: #f7f7f7;
-		  border-radius: 3px;
-		}
-
-		.markdown-body pre code {
-		  display: inline;
-		  max-width: auto;
-		  padding: 0;
-		  margin: 0;
-		  overflow: visible;
-		  line-height: inherit;
-		  word-wrap: normal;
-		  background-color: transparent;
-		  border: 0;
-		}
-
-		.markdown-body pre code::before,
-		.markdown-body pre code::after {
-		  content: normal;
-		}
-
-		.markdown-body .pl-0 {
-		  padding-left: 0 !important;
-		}
-
-		.markdown-body .pl-1 {
-		  padding-left: 3px !important;
-		}
-
-		.markdown-body .pl-2 {
-		  padding-left: 6px !important;
-		}
-
-		.markdown-body .pl-3 {
-		  padding-left: 12px !important;
-		}
-
-		.markdown-body .pl-4 {
-		  padding-left: 24px !important;
-		}
-
-		.markdown-body .pl-5 {
-		  padding-left: 36px !important;
-		}
-
-		.markdown-body .pl-6 {
-		  padding-left: 48px !important;
-		}
-
-		.markdown-body .full-commit .btn-outline:not(:disabled):hover {
-		  color: #4078c0;
-		  border: 1px solid #4078c0;
-		}
-
-		.markdown-body kbd {
+		canvas {
 		  display: inline-block;
-		  padding: 3px 5px;
-		  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-		  line-height: 10px;
-		  color: #555;
-		  vertical-align: middle;
-		  background-color: #fcfcfc;
-		  border: solid 1px #ccc;
-		  border-bottom-color: #bbb;
-		  border-radius: 3px;
-		  box-shadow: inset 0 -1px 0 #bbb;
 		}
 
-		.markdown-body :checked+.radio-label {
-		  position: relative;
-		  z-index: 1;
-		  border-color: #4078c0;
+		/**
+		 * Add the correct display in IE.
+		 */
+
+		template {
+		  display: none;
 		}
 
-		.markdown-body .task-list-item {
-		  list-style-type: none;
+		/* Hidden
+		   ========================================================================== */
+
+		/**
+		 * Add the correct display in IE 10-.
+		 */
+
+		[hidden] {
+		  display: none;
 		}
 
-		.markdown-body .task-list-item+.task-list-item {
-		  margin-top: 3px;
-		}
+		/* END RESET */
 
-		.markdown-body .task-list-item input {
-		  margin: 0 0.2em 0.25em -1.6em;
-		  vertical-align: middle;
-		}
 
-		.markdown-body hr {
-		  border-bottom-color: #eee;
-		}
-	</style>
-	<style>
+		/* TYPOGRAPHY */
+
 		body {
-			box-sizing: border-box;
-
-			padding-top: 64px;
-
+			font-size: 16px;
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 		}
 
-		header {
-			height: 256px;
-    		/*padding: 115px 16px 0;*/
+		h1 {
+			font-size: 2.25em; /* 16px * 2.25 => 36px */
 		}
 
-		header {
-			display: block;
-
-			position: fixed;
-
-		    left: 0;
-		    right: 0;
-		    top: -192px;
-
-		    z-index: 1;
-
-		    background-color: #1565c0;
-
-		    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+		h2 {
+			font-size: 1.75em; /* 16px * 1.75 => 28px */
 		}
 
-		.header-wrapper {
-			display: block;
-
-		    position: fixed;
-
-			left: 72px;
-		    right: 72px;
-		    top: 0;
-
-		    z-index: 2;
-
-		    height: 64px;
+		h3 {
+			font-size: 1.5em; /* 16px * 1.5 => 24px */
 		}
 
-		.header-title {
-			float: left;
-
-		    /*width: 100%;*/
-		    margin: 0 auto;
-
-			font-size: 18px;
-		    font-weight: 400;
-		    line-height: 64px;
-
-		    color: #fff;
-
-		    overflow: hidden;
-		    white-space: nowrap;
+		h4 {
+			font-size: 1.25em; /* 16px * 1.25 => 20px */
 		}
 
-		.header-title .title-text {
-
+		h5 {
+			font-size: 1.0em; /* 16px * 1.0 => 16px */
 		}
 
-		.header-nav {
-			float: right;
+		h6 {
+			font-size: 0.875em; /* 16px * 0.875 => 14px */
 		}
 
-		.header-nav ul {
-			list-style: none;
-
-			margin: 0;
-			padding: 0;
-
-			text-align: center;
-
-			font-size: 18px;
-		    font-weight: 400;
-		    line-height: 64px;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: 600;
+			line-height: 1.25;
 		}
 
-		.header-nav ul li {
-			display: inline;
-
-			margin: 0 10px;
+		strong {
+			font-weight: 600;
 		}
 
-		.header-nav ul li a {
-			color: #ffffff;
+		input {
+			font: inherit;
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		a {
+			color: #4078c0;
 			text-decoration: none;
 		}
+
+		a:hover,
+		a:active {
+			text-decoration: underline;
+		}
+
+		.readme {
+			line-height: 1.5;
+			word-wrap: break-word;
+	    }
+
+	    .readme a:not([href]) {
+	    	color: inherit;
+	    	text-decoration: none;
+	    }
+
+	    .readme blockquote {
+	    	color: #777;
+	    }
+
+	    .readme input {
+	    	-webkit-font-feature-settings: "liga" 0;
+	    	font-feature-settings: "liga" 0;
+	    }
+
+	    .readme dl dt {
+	    	font-size: 1.0em;
+	    	font-style: italic;
+	    	font-weight: bold;
+	    }
+
+	    .readme table th {
+	    	font-weight: bold;
+	    }
+
+	    .readme pre,
+	    .readme code {
+	    	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+			font-size: 14px;
+	    }
+
+	    .readme pre {
+	    	word-wrap: normal;
+	    	line-height: 1.45;
+	    }
+
+	    .readme pre code {
+	    	line-height: inherit;
+	    	word-wrap: normal;
+	    }
+
+	    .readme pre>code {
+	    	font-size: 1.0em;
+	    	white-space: pre;
+	    	word-break: normal;
+	    }
+
+	    .readme kbd {
+	    	color: #555;
+
+	    	font-size: 11px;
+	    	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+	    	line-height: 10px;
+	    	vertical-align: middle;
+	    }
+
+	    /* END TYPOGRAPHY */
+
+
+		/* LAYOUT */
+
+		html {
+			box-sizing: border-box;
+		}
+
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+		input {
+			margin: 0;
+		}
+
+		img {
+			box-sizing: content-box;
+			max-width: 100%;
+		}
+
+		/* aka clearfix */
+		.group:before,
+		.group:after {
+		    content: "";
+		    display: table;
+		}
+		.group:after {
+		    clear: both;
+		}
+		.group {
+		    zoom: 1; /* for IE 6/7 (trigger hasLayout) */
+		}
+
+		.main {
+			width: 87.5%;
+			max-width: 1200px;
+
+			margin-left: 12.5%;
+			padding-top: 40px;
+		}
+
+		.readme {
+			margin-bottom: 40px;
+		}
+
+		.readme h1,
+		.readme h2,
+		.readme h3,
+		.readme h4,
+		.readme h5,
+		.readme h6,
+	    .readme p,
+	    .readme blockquote,
+	    .readme pre,
+	    .readme code,
+	    .readme ul,
+	    .readme hr {
+	    	width: 55%;
+	    }
+
+	    .readme h1,
+		.readme h2,
+		.readme h3,
+		.readme h4,
+		.readme h5,
+		.readme h6 {
+			margin-top: 24px;
+			margin-bottom: 16px;
+		}
+
+		.readme h1,
+		.readme h2 {
+			padding-bottom: 0.3em;
+		}
+
+		.readme p,
+		.readme blockquote,
+		.readme dl,
+		.readme table,
+		.readme pre {
+			margin-top: 0;
+			margin-bottom: 16px;
+		}
+
+		.readme blockquote {
+			padding: 0 1.0em;
+		}
+
+		.readme blockquote>:first-child {
+			margin-top: 0;
+		}
+
+		.readme blockquote>:last-child {
+			margin-bottom: 0;
+		}
+
+		.readme ul,
+		.readme ol {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-left: 2em;
+		}
+
+		.readme ul ul,
+		.readme ul ol,
+		.readme ol ol,
+		.readme ol ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.readme li>p {
+			margin-top: 16px;
+		}
+
+		.readme li+li {
+			margin-top: 0.25em;
+		}
+
+		.readme dl {
+			padding: 0;
+		}
+
+		.readme dl dt {
+			margin-top: 16px;
+			padding: 0;
+		}
+
+		.readme dl dd {
+			margin-bottom: 16px;
+			padding: 0 16px;
+		}
+
+		.readme dd {
+			margin-left: 0;
+		}
+
+		.readme table {
+			display: block;
+			width: 100%;
+		}
+
+		.readme table th,
+		.readme table td {
+			padding: 6px 13px;
+		}
+
+		.readme td,
+		.readme th {
+			padding: 0;
+		}
+
+	    .readme hr {
+	    	height: 0.25em;
+			margin: 24px 0;
+			padding: 0;
+	    }
+
+	    .readme hr::before {
+	    	display: table;
+	    	content: "";
+	    }
+
+	    .readme pre {
+	    	padding: 16px;
+	    }
+
+	    .readme pre code {
+	    	display: inline;
+
+	    	max-width: auto;
+	    	padding: 0;
+	    	margin: 0;
+	    }
+
+	    .readme code {
+	    	margin: 0;
+	    	padding: 0;
+	    	padding-top: 0.2em;
+	    	padding-bottom: 0.2em;
+	    }
+
+	    .readme code::before,
+		.readme code::after {
+			letter-spacing: -0.2em;
+			content: "\00a0";
+		}
+
+	    .readme pre code::before,
+		.readme pre code::after {
+			content: normal;
+		}
+
+	    .readme kbd {
+	    	display: inline-block;
+
+	    	padding: 3px 5px;
+	    }
+
+	    /* END LAYOUT */
+
+
+		/* MISC */
+
+		img {
+			background-color: #fff;
+		}
+
+		.readme h1,
+		.readme h2 {
+			border-bottom: 1px solid #eee;
+		}
+
+		.readme blockquote {
+			border-left: 0.25em solid #ddd;
+		}
+
+		.readme ul {
+			list-style-type: disc;
+		}
+
+		.readme ol {
+			list-style-type: decimal;
+		}
+
+		.readme ol ol,
+		.readme ul ul {
+			list-style-type: lower-roman;
+		}
+
+		.readme ul ul ol,
+		.readme ul ol ol,
+		.readme ol ul ol,
+		.readme ol ol ol {
+			list-style-type: lower-alpha;
+		}
+
+		.readme table {
+			overflow: auto;
+		}
+
+		.readme table th,
+		.readme table td {
+			border: 1px solid #ddd;
+		}
+
+		.readme table tr {
+			background-color: #fff;
+			border-top: 1px solid #ccc;
+		}
+
+		/* highlight every other row */
+		.readme table tr:nth-child(2n) {
+			background-color: #f8f8f8;
+		}
+
+	    .readme hr {
+			overflow: hidden;
+
+			background: transparent;
+	    	background-color: #e7e7e7;
+
+			border: 0;
+	    	border-bottom: 1px solid #eee;
+	    }
+
+	    .readme code {
+	    	background-color: rgba(0,0,0,0.04);
+			border-radius: 3px;
+	    }
+
+	    .readme pre {
+	    	overflow: auto;
+	    	background-color: #f7f7f7;
+	    	border-radius: 3px;
+	    }
+
+	    .readme pre>code {
+	    	background: transparent;
+	    	border: 0;
+	    }
+
+	    .readme pre code {
+	    	overflow: visible;
+	    	background-color: transparent;
+	    	border: 0;
+	    }
+
+	    .readme kbd {
+	    	background-color: #fcfcfc;
+
+			border: solid 1px #ccc;
+			border-bottom-color: #bbb;
+			border-radius: 3px;
+
+  			box-shadow: inset 0 -1px 0 #bbb;
+	    }
+
+	    /* END MISC */
 	</style>
 </head>
 <body>
-	<header>
-		<div class="header-wrapper">
-			<div class="header-title">
-				<span class="title-text">{{{title}}}</span>
-			</div>
-			<nav class="header-nav">
-				<ul class="header-nav-list">
-					{{#tests}}
-					<li><a href="{{{tests}}}">Tests</a></li>
-					{{/tests}}
-					{{#benchmarks}}
-					<li><a href="{{{benchmarks}}}">Benchmarks</a></li>
-					{{/benchmarks}}
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<article class="markdown-body">
-		{{{readme}}}
-	</article>
+	<div class="main">
+		<article class="readme group">
+			{{{readme}}}
+		</article>
+	</div>
 </body>
 </html>
