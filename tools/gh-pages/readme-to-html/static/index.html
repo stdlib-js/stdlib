@@ -771,18 +771,119 @@
 		  border-bottom-color: #eee;
 		}
 	</style>
+	<style>
+		body {
+			box-sizing: border-box;
+
+			padding-top: 64px;
+
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		header {
+			height: 256px;
+    		/*padding: 115px 16px 0;*/
+		}
+
+		header {
+			display: block;
+
+			position: fixed;
+
+		    left: 0;
+		    right: 0;
+		    top: -192px;
+
+		    z-index: 1;
+
+		    background-color: #1565c0;
+
+		    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+		}
+
+		.header-wrapper {
+			display: block;
+
+		    position: fixed;
+
+			left: 72px;
+		    right: 72px;
+		    top: 0;
+
+		    z-index: 2;
+
+		    height: 64px;
+		}
+
+		.header-title {
+			float: left;
+
+		    /*width: 100%;*/
+		    margin: 0 auto;
+
+			font-size: 18px;
+		    font-weight: 400;
+		    line-height: 64px;
+
+		    color: #fff;
+
+		    overflow: hidden;
+		    white-space: nowrap;
+		}
+
+		.header-title .title-text {
+
+		}
+
+		.header-nav {
+			float: right;
+		}
+
+		.header-nav ul {
+			list-style: none;
+
+			margin: 0;
+			padding: 0;
+
+			text-align: center;
+
+			font-size: 18px;
+		    font-weight: 400;
+		    line-height: 64px;
+		}
+
+		.header-nav ul li {
+			display: inline;
+
+			margin: 0 10px;
+		}
+
+		.header-nav ul li a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	</style>
 </head>
 <body>
-	<ul>
-		{{#tests}}
-		<li><a href="{{{tests}}}"></a></li>
-		{{/tests}}
-		{{#benchmarks}}
-		<li><a href="{{{benchmarks}}}"></a></li>
-		{{/benchmarks}}
-	</ul>
+	<header>
+		<div class="header-wrapper">
+			<div class="header-title">
+				<span class="title-text">{{{title}}}</span>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-nav-list">
+					{{#tests}}
+					<li><a href="{{{tests}}}">Tests</a></li>
+					{{/tests}}
+					{{#benchmarks}}
+					<li><a href="{{{benchmarks}}}">Benchmarks</a></li>
+					{{/benchmarks}}
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-	<article class="readme">
+	<article class="markdown-body">
 		{{{readme}}}
 	</article>
 </body>
