@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:build' );
+var debug = require( 'debug' )( 'gh-pages:build-packages' );
 var resolve = require( 'path' ).resolve;
 var prefix = require( './stdlib.js' );
 var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;

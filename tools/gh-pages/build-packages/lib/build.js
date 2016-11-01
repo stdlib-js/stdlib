@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:build:build' );
+var debug = require( 'debug' )( 'gh-pages:build-packages:build' );
 var join = require( 'path' ).join;
 var prefix = require( './stdlib.js' );
 var copy = require( prefix+'@stdlib/utils/copy' );
