@@ -103,7 +103,7 @@ function convert( src, out, options, clbk ) {
 
 		debug( 'Converting file to HTML...' );
 		opts = {
-			'cwd': dir
+			'cwd': __dirname
 		};
 		debug( 'Command: %s', cmd );
 		exec( cmd, opts, onExec );
