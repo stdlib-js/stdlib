@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* Run `gh-pages` bundling tasks.
+* Build one or more packages.
 *
 * @module @stdlib/tools/gh-pages/bundler
 *
@@ -19,7 +19,7 @@
 
 // MODULES //
 
-var build = require( './async.js' );
+var build = require( './run.js' );
 
 
 // EXPORTS //

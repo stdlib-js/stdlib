@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:build:async' );
+var debug = require( 'debug' )( 'gh-pages:build' );
 var resolve = require( 'path' ).resolve;
 var prefix = require( './stdlib.js' );
 var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
@@ -18,11 +18,30 @@ var build = require( './build.js' );
 // MAIN //
 
 /**
-* Asynchronously performs a package search and generates web assets for all found packages.
+* Performs a package search and generates web assets for all found packages.
 *
 * @param {string} dest - root destination directory
 * @param {Options} [options] - function options
-* @param {Callback} clbk - callback to invoke after completing tasks
+* @param {string} [options.dir] - root package directory
+* @param {string} [options.readme] - README filename
+* @param {string} [options.index] - index filename
+* @param {string} [options.mount] - base URL mount
+* @param {Object} [options.packages] - package options
+* @param {string} [options.packages.pattern] - glob pattern
+* @param {StringArray} [options.packages.ignore] - ignore patterns
+* @param {Object} [options.tests] - tests options
+* @param {string} [options.tests.pattern] - glob pattern
+* @param {string} [options.tests.bundle] - bundle filename
+* @param {string} [options.tests.folder] - folder name
+* @param {string} [options.tests.html] - HTML filename
+* @param {string} [options.tests.title] - HTML title
+* @param {Object} [options.benchmarks] - benchmarks options
+* @param {string} [options.benchmarks.pattern] - benchmarks glob pattern
+* @param {string} [options.benchmarks.bundle] - bundle filename
+* @param {string} [options.benchmarks.folder] - folder name
+* @param {string} [options.benchmarks.html] - HTML filename
+* @param {string} [options.benchmarks.title] - HTML title
+* @param {Callback} clbk - callback to invoke upon completion
 * @throws {TypeError} first argument must be a string
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
@@ -99,12 +118,12 @@ function run( dest, options, clbk ) {
 		}
 		debug( 'Found %d packages.', pkgs.length );
 
-		debug( 'Running build tasks...' );
+		debug( 'Starting build...' );
 		build( pkgs, dest, opts, done );
 	} // end FUNCTION onPkgs()
 
 	/**
-	* Callback invoked upon completing build tasks.
+	* Callback invoked upon completing build.
 	*
 	* @private
 	* @param {(Error|null)} error - error object

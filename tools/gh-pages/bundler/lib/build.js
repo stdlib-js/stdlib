@@ -19,6 +19,21 @@ var packageName = require( './package_name.js' );
 * @param {StringArray} pkgs - list of package paths
 * @param {string} dest - destination directory
 * @param {Options} opts - options
+* @param {string} opts.readme - README filename
+* @param {string} opts.index - index filename
+* @param {string} opts.mount - base URL mount
+* @param {Object} opts.tests - tests options
+* @param {string} opts.tests.pattern - glob pattern
+* @param {string} opts.tests.bundle - bundle filename
+* @param {string} opts.tests.folder - folder name
+* @param {string} opts.tests.html - HTML filename
+* @param {string} opts.tests.title - HTML title
+* @param {Object} opts.benchmarks - benchmarks options
+* @param {string} opts.benchmarks.pattern - benchmarks glob pattern
+* @param {string} opts.benchmarks.bundle - bundle filename
+* @param {string} opts.benchmarks.folder - folder name
+* @param {string} opts.benchmarks.html - HTML filename
+* @param {string} opts.benchmarks.title - HTML title
 * @param {Callback} clbk - callback to invoke upon completion
 */
 function build( pkgs, dest, opts, clbk ) {
@@ -49,6 +64,7 @@ function build( pkgs, dest, opts, clbk ) {
 		i += 1;
 		pkg = pkgs[ i ];
 
+		// TODO: read `package.json`
 		name = packageName( pkg );
 		debug( 'Package name: %s', name );
 
@@ -56,6 +72,8 @@ function build( pkgs, dest, opts, clbk ) {
 		debug( 'Destination directory: %s', out );
 
 		bopts = {};
+		bopts.readme = opts.readme;
+		bopts.index = opts.index;
 		bopts.title = name;
 		bopts.mount = opts.mount + name + '/';
 
