@@ -46,8 +46,8 @@ function build( root, output, options, clbk ) {
 	var cb;
 	var d;
 
-	if ( !isString( dir ) ) {
-		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+dir+'`.' );
+	if ( !isString( root ) ) {
+		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+root+'`.' );
 	}
 	if ( !isString( output ) ) {
 		throw new TypeError( 'invalid input argument. Second argument must be a string. Value: `'+output+'`.' );
