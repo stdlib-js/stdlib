@@ -9,7 +9,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStringArray;
 
 
-// VALIDATE //
+// MAIN //
 
 /**
 * Validates function options.

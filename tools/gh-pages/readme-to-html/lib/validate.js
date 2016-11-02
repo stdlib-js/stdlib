@@ -9,7 +9,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 var isBoolean = require( prefix+'@stdlib/utils/is-boolean' ).isPrimitive;
 
 
-// VALIDATE //
+// MAIN //
 
 /**
 * Validates function options.

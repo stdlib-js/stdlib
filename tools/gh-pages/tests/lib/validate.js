@@ -8,7 +8,7 @@ var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
 var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 
 
-// VALIDATE //
+// MAIN //
 
 /**
 * Validates function options.
