@@ -13,13 +13,21 @@ var browserify = require( 'browserify' );
 * Bundles files into a single file using `browserify`.
 *
 * @param {StringArray} files - files to bundle
-* @param {string} dest - output file path
+* @param {string} [dest] - output file path
 * @param {Callback} clbk - callback to invoke after creating a bundle
 */
 function bundle( files, dest, clbk ) {
 	var opts;
+	var out;
+	var cb;
 	var b;
 
+	if ( arguments.length < 3 ) {
+		cb = dest;
+	} else {
+		out = dest;
+		cb = clbk;
+	}
 	opts = {
 		'transform': [ 'envify' ],
 		'plugin': [ 'proxyquire-universal' ]
@@ -42,15 +50,17 @@ function bundle( files, dest, clbk ) {
 		var opts;
 		if ( error ) {
 			debug( 'Encountered an error when creating a bundle: %s', error.message );
-			return clbk( error );
+			return cb( error );
 		}
 		debug( 'Successfully created a bundle.' );
-
+		if ( out === void 0 ) {
+			return cb( null, bundle );
+		}
 		debug( 'Writing bundle to file...' );
 		opts = {
 			'encoding': 'utf8'
 		};
-		writeFile( dest, bundle, opts, onWrite );
+		writeFile( out, bundle, opts, onWrite );
 	} // end FUNCTION onBundle()
 
 	/**
@@ -62,10 +72,10 @@ function bundle( files, dest, clbk ) {
 	function onWrite( error ) {
 		if ( error ) {
 			debug( 'Encountered an error when writing bundle to file: %s', error.message );
-			return clbk( error );
+			return cb( error );
 		}
 		debug( 'Successfully wrote bundle to file.' );
-		clbk();
+		cb();
 	} // end FUNCTION onWrite()
 } // end FUNCTION bundle()
 

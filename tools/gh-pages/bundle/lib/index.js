@@ -18,6 +18,20 @@
 *         throw error;
 *     }
 * }
+*
+* @example
+* var bundle = require( '/path/to/bundle' );
+*
+* var files = [ '/foo/bar.js', '/beep/boop.js' ];
+*
+* bundle( files, clbk );
+*
+* function clbk( error, bundle ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( bundle.toString() );
+* }
 */
 
 // MODULES //
