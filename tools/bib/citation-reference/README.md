@@ -138,9 +138,9 @@ function clbk( error, reference ) {
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

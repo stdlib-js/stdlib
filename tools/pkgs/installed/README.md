@@ -85,9 +85,9 @@ function onPkgs( error, list ) {
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

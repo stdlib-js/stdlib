@@ -56,9 +56,9 @@ function onInfer( error, results ) {
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

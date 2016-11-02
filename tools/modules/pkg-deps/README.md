@@ -106,9 +106,9 @@ function clbk( error, results ) {
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

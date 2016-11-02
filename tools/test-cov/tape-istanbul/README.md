@@ -73,9 +73,9 @@ runner( pattern, opts, done );
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

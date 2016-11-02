@@ -91,9 +91,9 @@ function onTree( error, tree ) {
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

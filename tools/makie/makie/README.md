@@ -101,9 +101,9 @@ function plugin( dir, cwd ) {
 <!-- </usage> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

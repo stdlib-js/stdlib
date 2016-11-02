@@ -122,9 +122,9 @@ function onPkgs( error, pkgs ) {
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 

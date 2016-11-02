@@ -58,9 +58,9 @@ console.dir( results.expressions );
 <!-- </examples> -->
 
 
-<!-- <cli> -->
-
 ---
+
+<!-- <cli> -->
 
 ## CLI
 
