@@ -22,6 +22,9 @@ var packageName = require( './package_name.js' );
 * @param {string} opts.readme - README filename
 * @param {string} opts.index - index filename
 * @param {string} opts.mount - base URL mount
+* @param {string} opts.prepend - content to prepend to HTML body
+* @param {string} opts.append - content to append to HTML body
+* @param {string} opts.head - content to insert into HTML head
 * @param {Object} opts.tests - tests options
 * @param {string} opts.tests.pattern - glob pattern
 * @param {string} opts.tests.bundle - bundle filename
@@ -76,6 +79,9 @@ function build( pkgs, dest, opts, clbk ) {
 		bopts.index = opts.index;
 		bopts.title = name;
 		bopts.mount = opts.mount + name + '/';
+		bopts.head = opts.head;
+		bopts.prepend = opts.prepend;
+		bopts.append = opts.append;
 
 		bopts.tests = copy( opts.tests );
 		bopts.tests.title = name + ' - Tests';

@@ -12,6 +12,9 @@
 	"readme": "README.md",
 	"index": "index.html",
 	"mount": "/",
+	"head": "",
+	"prepend": "",
+	"append": "",
 	"tests": {
 		"pattern": "**/test*.js",
 		"folder": "test",

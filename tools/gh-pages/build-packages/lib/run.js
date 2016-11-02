@@ -26,6 +26,9 @@ var build = require( './build.js' );
 * @param {string} [options.readme] - README filename
 * @param {string} [options.index] - index filename
 * @param {string} [options.mount] - base URL mount
+* @param {string} [options.prepend] - content to prepend to HTML body
+* @param {string} [options.append] - content to append to HTML body
+* @param {string} [options.head] - content to insert into HTML head
 * @param {Object} [options.packages] - package options
 * @param {string} [options.packages.pattern] - glob pattern
 * @param {StringArray} [options.packages.ignore] - ignore patterns
