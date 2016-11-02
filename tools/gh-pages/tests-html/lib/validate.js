@@ -16,6 +16,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @private
 * @param {Object} opts - destination object
 * @param {Options} options - function options
+* @param {string} [options.out] - output file path
 * @param {string} [options.title] - HTML title
 * @returns {(Error|null)} error object or null
 *
@@ -34,6 +35,12 @@ function validate( opts, options ) {
 	if ( !isObject( options ) ) {
 		return new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options +
 			'`.' );
+	}
+	if ( hasOwnProp( options, 'out' ) ) {
+		opts.out = options.out;
+		if ( !isString( opts.out ) ) {
+			return new TypeError( 'invalid option. `out` option must be a string. Option: `'+opts.out+'`.' );
+		}
 	}
 	if ( hasOwnProp( options, 'title' ) ) {
 		opts.title = options.title;
