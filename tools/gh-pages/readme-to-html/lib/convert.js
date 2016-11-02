@@ -31,33 +31,32 @@ template = readFileSync( template, {
 /**
 * Converts a README to HTML.
 *
-* @param {string} src - input file path
-* @param {string} out - output file path
+* @param {string} file - input file path
 * @param {Options} [options] - options
+* @param {string} [options.out] - output file path
 * @param {string} [options.title] - HTML title
-* @param {Object} [options.tests] - tests URL
-* @param {Object} [options.benchmarks] - benchmarks URL
+* @param {string} [options.tests] - tests URL
+* @param {string} [options.benchmarks] - benchmarks URL
+* @param {boolean} [options.fragment] - output an HTML fragment
 * @param {Callback} clbk - callback to invoke after converting README
 * @throws {TypeError} first argument must be a string
-* @throws {TypeError} second argument must be a string
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
 */
-function convert( src, out, options, clbk ) {
+function convert( file, options, clbk ) {
 	var opts;
 	var err;
+	var src;
 	var dir;
+	var out;
 	var cb;
 
-	if ( !isString( src ) ) {
-		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+src+'`.' );
-	}
-	if ( !isString( out ) ) {
-		throw new TypeError( 'invalid input argument. Second argument must be a string. Value: `'+out+'`.' );
+	if ( !isString( file ) ) {
+		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+file+'`.' );
 	}
 	opts = copy( defaults );
-	if ( arguments.length < 4 ) {
+	if ( arguments.length < 3 ) {
 		cb = options;
 	} else {
 		cb = clbk;
@@ -72,12 +71,13 @@ function convert( src, out, options, clbk ) {
 	dir = cwd();
 	debug( 'Current working directory: %s', dir );
 
-	src = resolve( dir, src );
+	src = resolve( dir, file );
 	debug( 'Source filepath: %s', src );
 
-	out = resolve( dir, out );
-	debug( 'Destination filepath: %s', out );
-
+	if ( opts.out ) {
+		out = resolve( dir, opts.out );
+		debug( 'Destination filepath: %s', out );
+	}
 	debug( 'Testing if source file exists...' );
 	exists( src, onExists );
 
@@ -128,19 +128,24 @@ function convert( src, out, options, clbk ) {
 		debug( 'Command stderr: %s', stderr.toString() );
 		debug( 'Successfully converted file.' );
 
-		view = {
-			'title': opts.title,
-			'tests': opts.tests,
-			'benchmarks': opts.benchmarks
-		};
-		debug( 'Render options: %s', JSON.stringify( view ) );
+		html = stdout.toString();
+		if ( !opts.fragment ) {
+			view = {
+				'title': opts.title,
+				'tests': opts.tests,
+				'benchmarks': opts.benchmarks
+			};
+			debug( 'Render options: %s', JSON.stringify( view ) );
 
-		view.readme = stdout.toString();
+			view.readme = html;
 
-		debug( 'Rendering...' );
-		html = mustache.render( template, view );
-		debug( 'Finished rendering.' );
-
+			debug( 'Rendering...' );
+			html = mustache.render( template, view );
+			debug( 'Finished rendering.' );
+		}
+		if ( out === void 0 ) {
+			return done( null, html );
+		}
 		debug( 'Writing to file...' );
 		wopts = {
 			'encoding': 'utf8'
@@ -168,10 +173,14 @@ function convert( src, out, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @param {string} html - rendered HTML
 	*/
-	function done( error ) {
+	function done( error, html ) {
 		if ( error ) {
 			return cb( error );
+		}
+		if ( html ) {
+			return cb( null, html );
 		}
 		cb();
 	} // end FUNCTION done()

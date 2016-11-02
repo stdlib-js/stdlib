@@ -6,6 +6,7 @@ var prefix = require( './stdlib.js' );
 var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
 var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
 var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
+var isBoolean = require( prefix+'@stdlib/utils/boolean' ).isPrimitive;
 
 
 // VALIDATE //
@@ -16,9 +17,11 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @private
 * @param {Object} opts - destination object
 * @param {Options} options - function options
+* @param {string} [options.out] - output file path
 * @param {string} [options.title] - HTML title
-* @param {Object} [options.tests] - tests URL
-* @param {Object} [options.benchmarks] - benchmarks URL
+* @param {string} [options.tests] - tests URL
+* @param {string} [options.benchmarks] - benchmarks URL
+* @param {boolean} [options.fragment] - output an HTML fragment
 * @returns {(Error|null)} error object or null
 *
 * @example
@@ -37,6 +40,12 @@ function validate( opts, options ) {
 		return new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options +
 			'`.' );
 	}
+	if ( hasOwnProp( options, 'out' ) ) {
+		opts.out = options.out;
+		if ( !isString( opts.out ) ) {
+			return new TypeError( 'invalid option. `out` option must be a string. Option: `'+opts.out+'`.' );
+		}
+	}
 	if ( hasOwnProp( options, 'title' ) ) {
 		opts.title = options.title;
 		if ( !isString( opts.title ) ) {
@@ -53,6 +62,12 @@ function validate( opts, options ) {
 		opts.benchmarks = options.benchmarks;
 		if ( !isString( opts.benchmarks ) ) {
 			return new TypeError( 'invalid option. `benchmarks` option must be a string. Option: `'+opts.benchmarks+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'fragment' ) ) {
+		opts.fragment = options.fragment;
+		if ( !isBoolean( opts.fragment ) ) {
+			return new TypeError( 'invalid option. `fragment` option must be a boolean. Option: `'+opts.fragment+'`.' );
 		}
 	}
 	return null;
