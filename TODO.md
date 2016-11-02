@@ -197,6 +197,8 @@
 
     * use [disc](https://github.com/hughsk/disc) to visualize browserify output
 
+    * [cost-of-modules](https://github.com/siddharthkp/cost-of-modules)
+
     * could do something akin to [issue stats](https://github.com/hstove/issue_stats) but locally and/or only including project modules/repos
 
     * later project stats can be displayed in a separate webpage

@@ -2,8 +2,19 @@
 * Stylesheet for miscellaneous rules.
 */
 
+body {
+	overflow-x: hidden;
+}
+
 img {
 	background-color: #fff;
+}
+
+.main {
+	-moz-transition:all 200ms ease-in;
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	transition:all 200ms ease-in;
 }
 
 /*
