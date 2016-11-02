@@ -22,7 +22,7 @@ var validate = require( './validate.js' );
 *
 * @param {string} root - root directory
 * @param {Options} [options] - options
-* @param {string} [options.out] - output filename
+* @param {string} [options.out] - output file path
 * @param {string} [options.pattern] - glob pattern
 * @param {Callback} clbk - callback to invoke after bundling
 * @throws {TypeError} first argument must be a string

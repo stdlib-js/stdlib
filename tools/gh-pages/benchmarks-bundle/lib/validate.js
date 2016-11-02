@@ -16,7 +16,7 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @private
 * @param {Object} opts - destination object
 * @param {Options} options - function options
-* @param {string} [options.out] - output filename
+* @param {string} [options.out] - output file path
 * @param {string} [options.pattern] - glob pattern
 * @returns {(Error|null)} error object or null
 *
