@@ -9,18 +9,37 @@
 * var convert = require( '/path/to/readme-to-html' );
 *
 * var opts = {
-*     'title': 'beep boop'
+*     'title': 'beep boop',
+*     'out': '/foo/bar/index.html'
 * };
 *
 * var src = '/beep/boop/README.md';
-* var out = '/foo/bar/index.html';
 *
-* convert( src, out, opts, clbk );
+* convert( src, opts, clbk );
 *
 * function clbk( error ) {
 *     if ( error ) {
 *         throw error;
 *     }
+* }
+*
+*
+* @example
+* var convert = require( '/path/to/readme-to-html' );
+*
+* var opts = {
+*     'title': 'beep boop'
+* };
+*
+* var src = '/beep/boop/README.md';
+*
+* convert( src, opts, clbk );
+*
+* function clbk( error, html ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( html );
 * }
 */
 
