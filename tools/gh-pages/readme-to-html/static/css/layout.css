@@ -76,9 +76,24 @@ h2 {
 .main {
 	width: 87.5%;
 	max-width: 1200px;
-
 	margin-left: 12.5%;
-	padding-top: 40px;
+}
+
+.top-nav {
+	display: block;
+	width: 100%;
+	height: 64px;
+	padding: 0 40px;
+}
+
+.top-nav-items {
+	width: 100%;
+	height: 100%;
+}
+
+.top-nav-item {
+	float: right;
+	padding: 0 16px;
 }
 
 .readme {

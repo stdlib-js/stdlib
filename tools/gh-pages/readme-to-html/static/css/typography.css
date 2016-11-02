@@ -69,6 +69,10 @@ a:active {
 * General class rules.
 */
 
+.top-nav {
+	line-height: 64px;
+}
+
 .readme {
 	line-height: 1.5;
 	word-wrap: break-word;
