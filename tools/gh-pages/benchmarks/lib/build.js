@@ -21,8 +21,8 @@ var validate = require( './validate.js' );
 /**
 * Builds assets.
 *
-* @param {string} dir - root directory
-* @param {string} out - output directory
+* @param {string} root - root directory
+* @param {string} output - output directory
 * @param {Options} [options] - options
 * @param {string} [options.pattern] - glob pattern
 * @param {string} [options.bundle] - output bundle
@@ -36,19 +36,21 @@ var validate = require( './validate.js' );
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
 */
-function build( dir, out, options, clbk ) {
+function build( root, output, options, clbk ) {
 	var bopts;
 	var opts;
 	var bout;
+	var dir;
+	var out;
 	var err;
 	var cb;
 	var d;
 
-	if ( !isString( dir ) ) {
-		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+dir+'`.' );
+	if ( !isString( root ) ) {
+		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+root+'`.' );
 	}
-	if ( !isString( out ) ) {
-		throw new TypeError( 'invalid input argument. Second argument must be a string. Value: `'+out+'`.' );
+	if ( !isString( output ) ) {
+		throw new TypeError( 'invalid input argument. Second argument must be a string. Value: `'+output+'`.' );
 	}
 	opts = copy( defaults );
 	if ( arguments.length < 4 ) {
@@ -66,22 +68,23 @@ function build( dir, out, options, clbk ) {
 	d = cwd();
 	debug( 'Current working directory: %s', d );
 
-	dir = resolve( d, dir );
+	dir = resolve( d, root );
 	debug( 'Root directory: %s', dir );
 
-	out = resolve( d, out );
+	out = resolve( d, output );
 	debug( 'Output directory: %s', out );
 
 	bout = join( out, opts.bundle );
 	debug( 'Bundle output: %s', bout );
 
 	bopts = {
-		'pattern': opts.pattern
+		'pattern': opts.pattern,
+		'out': bout
 	};
 	debug( 'Bundle options: %s', JSON.stringify( bopts ) );
 
 	debug( 'Creating bundle...' );
-	bundle( dir, bout, bopts, onBundle );
+	bundle( dir, bopts, onBundle );
 
 	/**
 	* Callback invoked after creating a bundle.
