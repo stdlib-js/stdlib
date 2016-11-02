@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -71,7 +73,9 @@ function onResults( error, results ) {
 }
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -82,7 +86,9 @@ function onResults( error, results ) {
 
 ``` -->
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -107,7 +113,9 @@ Options:
          --no-dev                    Exclude dev dependencies.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -116,7 +124,9 @@ Options:
 
 * License results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -131,13 +141,19 @@ $ DEBUG=* licenses
 ```
 
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
 [ndjson]: http://ndjson.org/
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

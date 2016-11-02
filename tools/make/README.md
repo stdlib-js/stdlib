@@ -485,5 +485,7 @@ and does not include targets declared via variables. Excluded targets could be i
 [nvm]: https://github.com/creationix/nvm
 [bash-completion]: https://www.gnu.org/software/bash/manual/bashref.html#Programmable-Completion
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->
 

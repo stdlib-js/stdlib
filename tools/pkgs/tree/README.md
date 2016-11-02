@@ -59,7 +59,9 @@ var tree = pkgTree.sync();
 
 The function accepts the same `options` as `pkgTree()` above.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -68,7 +70,9 @@ The function accepts the same `options` as `pkgTree()` above.
 
 * The function only returns packages under the `@stdlib` scope.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -88,7 +92,9 @@ function onTree( error, tree ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -111,7 +117,9 @@ Options:
          --dir dirname         Root directory from which to search.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 <section class="examples">
 
@@ -121,11 +129,17 @@ Options:
 $ stdlib-pkg-tree
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

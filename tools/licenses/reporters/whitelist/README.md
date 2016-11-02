@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -47,7 +49,9 @@ function onResults( error, results ) {
 }
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -58,7 +62,9 @@ function onResults( error, results ) {
 
 ``` -->
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -81,7 +87,9 @@ Options:
          --exclude spdx1,spdx2,...   List of SPDX license identifiers (whitelist).
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -90,7 +98,9 @@ Options:
 
 * Use as part of a standard stream pipeline.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -141,11 +151,17 @@ $ licenses | licenses-whitelist --exclude 'BSD-3-Clause,BSD-2-Clause' | cat
 ```
 
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

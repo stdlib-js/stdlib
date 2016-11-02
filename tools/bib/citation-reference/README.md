@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -83,7 +85,9 @@ var ref = toReference.sync( '@press:1992' );
 
 The method accepts the same `options` as [`toReference()`](#to-reference) above.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -94,7 +98,9 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
   - [pandoc][pandoc]
   - [pandoc-citeproc][pandoc-citeproc]
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -135,7 +141,9 @@ function clbk( error, reference ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -159,7 +167,9 @@ Options:
          --csl filepath        Citation Style Language filepath.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 <section class="examples">
 
@@ -170,9 +180,13 @@ $ citation-reference '@press:1992'
 ...
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
@@ -182,4 +196,6 @@ $ citation-reference '@press:1992'
 [pandoc]: http://pandoc.org/
 [pandoc-citeproc]: https://github.com/jgm/pandoc-citeproc
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

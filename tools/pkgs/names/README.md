@@ -59,7 +59,9 @@ var names = ls.sync();
 
 The function accepts the same `options` as `ls()` above.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -68,7 +70,9 @@ The function accepts the same `options` as `ls()` above.
 
 * The function only returns packages under the `@stdlib` scope.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -88,7 +92,9 @@ function onList( error, names ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -111,7 +117,9 @@ Options:
          --dir dirname         Root directory from which to search.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 <section class="examples">
 
@@ -124,11 +132,17 @@ $ stdlib-pkg-names
 ...
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

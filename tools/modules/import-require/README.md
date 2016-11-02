@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -34,7 +36,9 @@ The returned `object` has the following fields:
 * __literals__: an `array` of literal `string` import and require paths.
 * __expressions__: an `array` of import and require path expressions.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -55,7 +59,9 @@ console.log( 'Expressions:' );
 console.dir( results.expressions );
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -77,7 +83,9 @@ Options:
   -V,    --version             Print the package version.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -86,7 +94,9 @@ Options:
 
 * May be used as part of a standard stream pipeline or TTY.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -121,13 +131,19 @@ $ cat ./examples/index.js | import-require | cat
 ```
 
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
 [node-buffer]: https://nodejs.org/api/buffer.html
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

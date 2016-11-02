@@ -6,7 +6,9 @@
 
 A [BibTeX][bibtex] reference database. Database items may include references to academic publications, books, manuals, conference proceedings, technical reports, master's and PhD theses, and webpages related to topics in computer science, computation, mathematics, machine learning, artificial intelligence, and numeric computing.
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -40,7 +42,9 @@ The database is a [BibTeX][bibtex] database file, where the file format is a pla
 
 corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number Generator" appearing in the journal *ACM Transactions on Mathematical Software*. 
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -52,7 +56,9 @@ corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number G
 * Field values should be enclosed within braces.
 * An entry identifier should follow the format `<author_last_name>:<publication_year>[<letter>]`. The `letter` suffix is optional and only necessary when distinguishing two or more entries having the same identifier.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <!-- <license> -->
@@ -71,4 +77,6 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 [bibtex]: http://www.bibtex.org/
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

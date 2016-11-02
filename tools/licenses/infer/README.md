@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -42,7 +44,9 @@ function onInfer( error, results ) {
 }
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -53,7 +57,9 @@ function onInfer( error, results ) {
 
 ``` -->
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -76,7 +82,9 @@ Options:
          --pattern pattern           Glob pattern used to find files.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -85,7 +93,9 @@ Options:
 
 * Use as part of a standard stream pipeline.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -136,11 +146,17 @@ $ licenses | licenses-infer | cat
 ```
 
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

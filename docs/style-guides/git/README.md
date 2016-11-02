@@ -26,4 +26,6 @@ TODO: add examples and model after JS guide
 [git-seven-rules]: http://chris.beams.io/posts/git-commit/
 [imperative-mood]: https://en.wikipedia.org/wiki/Imperative_mood
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

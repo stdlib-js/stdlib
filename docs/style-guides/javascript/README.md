@@ -3538,4 +3538,6 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

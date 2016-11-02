@@ -25,7 +25,9 @@ This utility provides support for executing a subset of `Makefile` commands from
 
 When executing a command, the current working directory is used as a filter. Thus, when invoking the `test` command, __only__ those tests in the current working directory and below will be run.
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -98,7 +100,9 @@ function plugin( dir, cwd ) {
 }
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 ---
@@ -140,7 +144,9 @@ Options:
          --config path         Path to configuration file.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 <section class="examples">
 
@@ -151,11 +157,17 @@ $ makie test-cov
 <command_output>
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

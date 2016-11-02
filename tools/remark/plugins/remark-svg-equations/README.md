@@ -36,7 +36,9 @@ var opts = {
 remark.use( createSVGs, opts );
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -53,7 +55,9 @@ remark.use( createSVGs, opts );
 
   the SVG equation filename would be `absolute_value.svg`.
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -87,11 +91,15 @@ out = remark().use( createSVGs, opts ).process( vfile );
 console.log( out.contents );
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 <section class="links">
 
 [remark]: https://github.com/wooorm/remark
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

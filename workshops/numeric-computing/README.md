@@ -113,4 +113,6 @@ https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exe
 [env-var]: https://en.wikipedia.org/wiki/Environment_variable
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

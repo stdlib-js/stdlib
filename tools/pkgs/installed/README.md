@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -71,7 +73,9 @@ function onPkgs( error, list ) {
 }
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -82,7 +86,9 @@ function onPkgs( error, list ) {
 
 ``` -->
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -107,7 +113,9 @@ Options:
          --no-dev                    Exclude dev dependencies.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -122,11 +130,17 @@ $ DEBUG=* installed-pkgs
 ```
 
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

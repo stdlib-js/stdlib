@@ -74,7 +74,9 @@ var entries = entryPoints.sync( pkgs );
 
 The function accepts the same `options` as [`entryPoints()`](#entry-points) above.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -98,7 +100,9 @@ function onEntries( error, results ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -122,7 +126,9 @@ Options:
          --split sep           Separator for standard input data. Default: '/\r?\n/'.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -141,7 +147,9 @@ Options:
 
 * Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -160,9 +168,13 @@ $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
 {...}
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
@@ -170,4 +182,6 @@ $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [ndjson]: http://ndjson.org/
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

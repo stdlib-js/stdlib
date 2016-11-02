@@ -5,7 +5,9 @@
 
 <section class="intro">
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
 
 
 <section class="usage">
@@ -94,7 +96,9 @@ var results = ls.sync();
 The function accepts the same `options` as [`ls()`](#ls) above.
 
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -114,7 +118,9 @@ function onList( error, results ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -137,7 +143,9 @@ Options:
          --pattern pattern           File glob pattern.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -146,7 +154,9 @@ Options:
 
 * Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -160,13 +170,19 @@ $ DEBUG=* import-require-glob
 ...
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
 [ndjson]: http://ndjson.org/
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

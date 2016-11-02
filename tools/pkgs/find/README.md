@@ -99,7 +99,9 @@ var pkgs = findPkgs.sync();
 
 The function accepts the same `options` as `findPkgs()` above.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -119,7 +121,9 @@ function onPkgs( error, pkgs ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -143,7 +147,9 @@ Options:
          --ignore pattern      Exclusion glob pattern.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -156,7 +162,9 @@ Options:
   $ find-pkgs --ignore=node_modules/** --ignore=build/** --ignore=reports/**
   ```
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -170,11 +178,17 @@ $ find-pkgs
 ...
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

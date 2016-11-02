@@ -85,4 +85,6 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 [next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

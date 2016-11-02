@@ -41,7 +41,9 @@ var opts = {
 runner( pattern, opts, done );
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="examples">
@@ -70,7 +72,9 @@ opts = {
 runner( pattern, opts, done );
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -95,7 +99,9 @@ Options:
          --output filepath     Output filepath for coverage information.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 <section class="examples">
 
@@ -105,9 +111,13 @@ Options:
 $ stdlib-tape-istanbul 'test*.js'
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
@@ -115,4 +125,6 @@ $ stdlib-tape-istanbul 'test*.js'
 [tape]: https://github.com/substack/tape
 [istanbul]: https://github.com/gotwarlost/istanbul
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

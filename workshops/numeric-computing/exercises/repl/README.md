@@ -50,4 +50,6 @@ When you have completed all exercises, proceed to the [next exercise][next-exerc
 
 [next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->

@@ -77,7 +77,9 @@ var names = lint.sync();
 
 The function accepts the same `options` as `lint()` above.
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -101,7 +103,9 @@ The function accepts the same `options` as `lint()` above.
 * Only filenames which fail are returned.
 
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -121,7 +125,9 @@ function onLint( error, names ) {
 }
 ```
 
-<!-- </examples> -->
+</section>
+
+<!-- /.examples -->
 
 
 ---
@@ -145,7 +151,9 @@ Options:
          --pattern pattern     Pattern to match files for linting.
 ```
 
-<!-- </usage> -->
+</section>
+
+<!-- /.usage -->
 
 
 <section class="notes">
@@ -154,7 +162,9 @@ Options:
 
 * Filenames which fail are printed to `stderr` as newline-delimited JSON ([NDJSON][ndjson]).
 
-<!-- </notes> -->
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -168,13 +178,19 @@ $ lint-filenames
 ...
 ```
 
-<!-- </examples> -->
+</section>
 
-<!-- </cli> -->
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 
 <section class="links">
 
 [ndjson]: http://ndjson.org/
 
-<!-- </links> -->
+</section>
+
+<!-- /.links -->
