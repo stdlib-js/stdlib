@@ -20,9 +20,9 @@ var validate = require( './validate.js' );
 /**
 * Bundles benchmark files into a single file.
 *
-* @param {string} dir - root directory
-* @param {string} out - output filename
+* @param {string} root - root directory
 * @param {Options} [options] - options
+* @param {string} [options.out] - output filename
 * @param {string} [options.pattern] - glob pattern
 * @param {Callback} clbk - callback to invoke after bundling
 * @throws {TypeError} first argument must be a string
@@ -31,21 +31,20 @@ var validate = require( './validate.js' );
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
 */
-function build( dir, out, options, clbk ) {
+function build( root, options, clbk ) {
 	var gopts;
 	var opts;
+	var out;
 	var err;
+	var dir;
 	var cb;
 	var d;
 
-	if ( !isString( dir ) ) {
-		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+dir+'`.' );
-	}
-	if ( !isString( out ) ) {
-		throw new TypeError( 'invalid input argument. Second argument must be a string. Value: `'+out+'`.' );
+	if ( !isString( root ) ) {
+		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+root+'`.' );
 	}
 	opts = copy( defaults );
-	if ( arguments.length < 4 ) {
+	if ( arguments.length < 3 ) {
 		cb = options;
 	} else {
 		cb = clbk;
@@ -60,12 +59,13 @@ function build( dir, out, options, clbk ) {
 	d = cwd();
 	debug( 'Current working directory: %s', d );
 
-	dir = resolve( d, dir );
+	dir = resolve( d, root );
 	debug( 'Root directory: %s', dir );
 
-	out = resolve( d, out );
-	debug( 'Output filename: %s', out );
-
+	if ( opts.out ) {
+		out = resolve( d, opts.out );
+		debug( 'Output filename: %s', out );
+	}
 	gopts = {
 		'cwd': dir,
 		'nodir': true,
@@ -91,6 +91,9 @@ function build( dir, out, options, clbk ) {
 			debug( 'No files found.' );
 			return cb( null, false );
 		}
+		if ( out === void 0 ) {
+			return bundle( files, onBundle );
+		}
 		bundle( files, out, onBundle );
 	} // end FUNCTION onGlob()
 
@@ -99,11 +102,15 @@ function build( dir, out, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)}  error - error object
+	* @param {Buffer} bundle - bundle
 	*/
-	function onBundle( error ) {
+	function onBundle( error, bundle ) {
 		if ( error ) {
 			debug( 'Encountered an error when generating bundle: %s', error.message );
 			return cb( error );
+		}
+		if ( bundle ) {
+			return cb( null, bundle );
 		}
 		cb( null, true );
 	} // end FUNCTION onBundle()

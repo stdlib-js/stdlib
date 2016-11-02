@@ -9,18 +9,36 @@
 * var bundle = require( '/path/to/benchmarks-bundle' );
 *
 * var opts = {
-*     'pattern': '\*\*\/benchmark*.js'
+*     'pattern': '\*\*\/benchmark*.js',
+*     'out': '/foo/bar/bundle.js'
 * };
 *
 * var root = '/beep/boop';
-* var dest = '/foo/bar/bundle.js';
 *
-* bundle( root, dest, opts, clbk );
+* bundle( root, opts, clbk );
 *
 * function clbk( error ) {
 *     if ( error ) {
 *         throw error;
 *     }
+* }
+*
+* @example
+* var bundle = require( '/path/to/benchmarks-bundle' );
+*
+* var opts = {
+*     'pattern': '\*\*\/benchmark*.js'
+* };
+*
+* var root = '/beep/boop';
+*
+* bundle( root, opts, clbk );
+*
+* function clbk( error, bundle ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( bundle.toString() );
 * }
 */
 
