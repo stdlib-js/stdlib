@@ -23,7 +23,6 @@
 *     }
 * }
 *
-
 * @example
 * var bundle = require( '/path/to/tests-bundle' );
 *
