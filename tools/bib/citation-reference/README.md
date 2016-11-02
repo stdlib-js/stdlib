@@ -3,12 +3,12 @@
 > Return a reference corresponding to a citation identifier.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -86,7 +86,7 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -97,7 +97,7 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -140,11 +140,11 @@ function clbk( error, reference ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -161,7 +161,7 @@ Options:
 
 <!-- </usage> -->
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -175,7 +175,7 @@ $ citation-reference '@press:1992'
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [csl]: http://citationstyles.org/
 

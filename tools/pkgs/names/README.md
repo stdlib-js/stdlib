@@ -3,7 +3,7 @@
 > List of stdlib package names.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -62,7 +62,7 @@ The function accepts the same `options` as `ls()` above.
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -71,7 +71,7 @@ The function accepts the same `options` as `ls()` above.
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -93,11 +93,11 @@ function onList( error, names ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -113,7 +113,7 @@ Options:
 
 <!-- </usage> -->
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -129,6 +129,6 @@ $ stdlib-pkg-names
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

@@ -3,12 +3,12 @@
 > Reporter which groups license results by license type.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -36,7 +36,7 @@ function onResults( error, results ) {
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 <!-- ## Examples
 
@@ -49,11 +49,11 @@ function onResults( error, results ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -69,7 +69,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -78,7 +78,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -133,6 +133,6 @@ WTFPL:
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

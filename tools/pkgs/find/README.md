@@ -3,7 +3,7 @@
 > Find packages.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -102,7 +102,7 @@ The function accepts the same `options` as `findPkgs()` above.
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -124,11 +124,11 @@ function onPkgs( error, pkgs ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -146,7 +146,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -159,7 +159,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -175,6 +175,6 @@ $ find-pkgs
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

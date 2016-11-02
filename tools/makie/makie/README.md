@@ -3,7 +3,7 @@
 > Execute project Makefile commands from anywhere in the project.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 Typically, to execute project `Makefile` commands, you must be in the root project directory. While `make` supports specifying a directory from which to run a `Makefile`, this can be cumbersome, especially if a command expects configuration via environment variables.
 
@@ -28,7 +28,7 @@ When executing a command, the current working directory is used as a filter. Thu
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -103,7 +103,7 @@ function plugin( dir, cwd ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
@@ -125,7 +125,7 @@ $ chmod +x /path/to/stdlib/tools/bin/makie
 
 <!-- </installation> -->
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -142,7 +142,7 @@ Options:
 
 <!-- </usage> -->
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -156,6 +156,6 @@ $ makie test-cov
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

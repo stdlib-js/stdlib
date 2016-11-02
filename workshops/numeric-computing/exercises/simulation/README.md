@@ -99,7 +99,7 @@ $ node ./path/to/<solution_2>.js
 When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 
-<!-- <links> -->
+<section class="links">
 
 [markov-chain]: https://en.wikipedia.org/wiki/Markov_chain
 

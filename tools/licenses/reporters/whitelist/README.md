@@ -3,12 +3,12 @@
 > Reporter which excludes from license results packages which have a license in a provided whitelist.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -50,7 +50,7 @@ function onResults( error, results ) {
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 <!-- ## Examples
 
@@ -63,11 +63,11 @@ function onResults( error, results ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -84,7 +84,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -93,7 +93,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -146,6 +146,6 @@ $ licenses | licenses-whitelist --exclude 'BSD-3-Clause,BSD-2-Clause' | cat
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

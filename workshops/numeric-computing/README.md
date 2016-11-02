@@ -97,7 +97,7 @@ https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exe
 ```
 
 
-<!-- <links> -->
+<section class="links">
 
 [stdlib]: https://github.com/stdlib-js/
 

@@ -46,7 +46,7 @@ $ node ./path/to/<solution_2>.js
 When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 
-<!-- <links> -->
+<section class="links">
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 [plot]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/plot/plot

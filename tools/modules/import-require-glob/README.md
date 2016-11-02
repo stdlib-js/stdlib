@@ -3,12 +3,12 @@
 > List import and require paths.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -97,7 +97,7 @@ The function accepts the same `options` as [`ls()`](#ls) above.
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -119,11 +119,11 @@ function onList( error, results ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -140,7 +140,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -149,7 +149,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -165,7 +165,7 @@ $ DEBUG=* import-require-glob
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [ndjson]: http://ndjson.org/
 

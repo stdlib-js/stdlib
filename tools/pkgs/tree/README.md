@@ -3,7 +3,7 @@
 > Generate a stdlib package tree.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -62,7 +62,7 @@ The function accepts the same `options` as `pkgTree()` above.
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -71,7 +71,7 @@ The function accepts the same `options` as `pkgTree()` above.
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -93,11 +93,11 @@ function onTree( error, tree ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -113,7 +113,7 @@ Options:
 
 <!-- </usage> -->
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -126,6 +126,6 @@ $ stdlib-pkg-tree
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

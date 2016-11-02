@@ -75,7 +75,7 @@ $ node ./path/to/<solution_2>.js
 When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 
-<!-- <links> -->
+<section class="links">
 
 [rmse]: https://en.wikipedia.org/wiki/Root-mean-square_deviation
 [welfords-method]: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Online_algorithm

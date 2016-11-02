@@ -3,7 +3,7 @@
 > Resolve package dependencies.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -79,7 +79,7 @@ The function accepts the same `options` as [`pkgDeps()`](#pkg-deps) above.
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -109,11 +109,11 @@ function clbk( error, results ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -133,7 +133,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -152,7 +152,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -173,7 +173,7 @@ $ echo -n $'tape\nbrowserify\n' | pkg-deps --split /\\r?\\n/
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 [ndjson]: http://ndjson.org/

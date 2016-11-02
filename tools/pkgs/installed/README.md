@@ -3,12 +3,12 @@
 > List installed package dependencies.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -74,7 +74,7 @@ function onPkgs( error, list ) {
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 <!-- ## Examples
 
@@ -87,11 +87,11 @@ function onPkgs( error, list ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -110,7 +110,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -127,6 +127,6 @@ $ DEBUG=* installed-pkgs
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

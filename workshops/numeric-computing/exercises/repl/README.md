@@ -41,7 +41,7 @@
 When you have completed all exercises, proceed to the [next exercise][next-exercise].
 
 
-<!-- <links> -->
+<section class="links">
 
 [linspace]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/generics/utils/linspace
 [erf]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/erf

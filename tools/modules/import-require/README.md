@@ -3,12 +3,12 @@
 > List import and require paths.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -37,7 +37,7 @@ The returned `object` has the following fields:
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -60,11 +60,11 @@ console.dir( results.expressions );
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -80,7 +80,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -89,7 +89,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -126,7 +126,7 @@ $ cat ./examples/index.js | import-require | cat
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [node-buffer]: https://nodejs.org/api/buffer.html
 

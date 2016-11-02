@@ -3,7 +3,7 @@
 > Lint filenames.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -80,7 +80,7 @@ The function accepts the same `options` as `lint()` above.
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -104,7 +104,7 @@ The function accepts the same `options` as `lint()` above.
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -126,11 +126,11 @@ function onLint( error, names ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -148,7 +148,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -157,7 +157,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -173,7 +173,7 @@ $ lint-filenames
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [ndjson]: http://ndjson.org/
 

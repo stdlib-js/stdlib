@@ -4,7 +4,7 @@ SVG Equations
 > [remark][remark] plugin to create SVG equation files from Markdown HTML equation tags.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -39,7 +39,7 @@ remark.use( createSVGs, opts );
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -56,7 +56,7 @@ remark.use( createSVGs, opts );
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -90,7 +90,7 @@ console.log( out.contents );
 <!-- </examples> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [remark]: https://github.com/wooorm/remark
 

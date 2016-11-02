@@ -2,14 +2,14 @@
 
 > Reference database.
 
-<!-- <intro> -->
+<section class="intro">
 
 A [BibTeX][bibtex] reference database. Database items may include references to academic publications, books, manuals, conference proceedings, technical reports, master's and PhD theses, and webpages related to topics in computer science, computation, mathematics, machine learning, artificial intelligence, and numeric computing.
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -43,7 +43,7 @@ corresponds to Bay's and Durham's 1976 article "Improving a Poor Random Number G
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -64,7 +64,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 <!-- </license> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [pddl-1.0]: http://opendatacommons.org/licenses/pddl/1.0/
 [cc0]: https://creativecommons.org/publicdomain/zero/1.0

@@ -21,7 +21,7 @@ TODO: add examples and model after JS guide
   - Try to wrap the body at `72` characters. 
 
 
-<!-- <links> -->
+<section class="links">
 
 [git-seven-rules]: http://chris.beams.io/posts/git-commit/
 [imperative-mood]: https://en.wikipedia.org/wiki/Imperative_mood

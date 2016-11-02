@@ -4,7 +4,7 @@ HTML Equation Source URLs
 > [remark][remark] plugin to insert SVG equation [rawgit][rawgit] URLs into Markdown HTML equation elements.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -39,7 +39,7 @@ remark.use( insertURLs, opts );
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ## Notes
 
@@ -58,7 +58,7 @@ remark.use( insertURLs, opts );
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -92,7 +92,7 @@ console.log( out.contents );
 <!-- </examples> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [remark]: https://github.com/wooorm/remark
 [rawgit]: https://rawgit.com/

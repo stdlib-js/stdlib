@@ -3,7 +3,7 @@
 > [tape][tape] test runner for [Istanbul][istanbul] instrumented source code.
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -44,7 +44,7 @@ runner( pattern, opts, done );
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ## Examples
 
@@ -75,11 +75,11 @@ runner( pattern, opts, done );
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -97,7 +97,7 @@ Options:
 
 <!-- </usage> -->
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -110,7 +110,7 @@ $ stdlib-tape-istanbul 'test*.js'
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 [tape]: https://github.com/substack/tape
 [istanbul]: https://github.com/gotwarlost/istanbul

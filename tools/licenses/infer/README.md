@@ -3,12 +3,12 @@
 > Infer license information from file content.
 
 
-<!-- <intro> -->
+<section class="intro">
 
 <!-- </intro> -->
 
 
-<!-- <usage> -->
+<section class="usage">
 
 ## Usage
 
@@ -45,7 +45,7 @@ function onInfer( error, results ) {
 <!-- </usage> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 <!-- ## Examples
 
@@ -58,11 +58,11 @@ function onInfer( error, results ) {
 
 ---
 
-<!-- <cli> -->
+<section class="cli">
 
 ## CLI
 
-<!-- <usage> -->
+<section class="usage">
 
 ### Usage
 
@@ -79,7 +79,7 @@ Options:
 <!-- </usage> -->
 
 
-<!-- <notes> -->
+<section class="notes">
 
 ### Notes
 
@@ -88,7 +88,7 @@ Options:
 <!-- </notes> -->
 
 
-<!-- <examples> -->
+<section class="examples">
 
 ### Examples
 
@@ -141,6 +141,6 @@ $ licenses | licenses-infer | cat
 <!-- </cli> -->
 
 
-<!-- <links> -->
+<section class="links">
 
 <!-- </links> -->

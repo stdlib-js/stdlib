@@ -478,7 +478,7 @@ to your `~/.bash_profile` or `~/.bashrc`.  Note that completion is __not__ exhau
 and does not include targets declared via variables. Excluded targets could be included by mining the Makefile database `make -qp`, but such inclusion has a performance cost and is unnecessary due to the predominant use of `PHONY`.
 
 
-<!-- <links> -->
+<section class="links">
 
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
 [jsdoc]: http://usejsdoc.org/

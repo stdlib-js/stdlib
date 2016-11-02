@@ -33,8 +33,7 @@
 <!-- </badges> -->
 
 
-stdlib
-===
+# stdlib
 
 > Standard library for JavaScript.
 
@@ -158,7 +157,7 @@ See [LICENSE][license].
 Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 
-<!-- <links> -->
+<section class="links">
 
 [stability-image]: https://img.shields.io/badge/stability-experimental-orange.svg
 [stability-url]: https://github.com/stdlib-js/stdlib

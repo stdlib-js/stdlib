@@ -59,7 +59,7 @@ $ node ./path/to/<solution_2>.js
 When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 
-<!-- <links> -->
+<section class="links">
 
 [linear-regression]: https://en.wikipedia.org/wiki/Linear_regression
 [online-regression]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/ml/online-sgd-regression

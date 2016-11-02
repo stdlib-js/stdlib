@@ -3497,7 +3497,7 @@ Code review.
 This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
 
 
-<!-- <links> -->
+<section class="links">
 
 [tab-indentation]: http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/
 
