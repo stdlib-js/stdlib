@@ -9,18 +9,37 @@
 * var bundle = require( '/path/to/tests-bundle' );
 *
 * var opts = {
-*     'pattern': '\*\*\/test*.js'
+*     'pattern': '\*\*\/test*.js',
+*     'out': '/foo/bar/bundle.js'
 * };
 *
 * var root = '/beep/boop';
-* var dest = '/foo/bar/bundle.js';
 *
-* bundle( root, dest, opts, clbk );
+* bundle( root, opts, clbk );
 *
 * function clbk( error ) {
 *     if ( error ) {
 *         throw error;
 *     }
+* }
+*
+
+* @example
+* var bundle = require( '/path/to/tests-bundle' );
+*
+* var opts = {
+*     'pattern': '\*\*\/test*.js'
+* };
+*
+* var root = '/beep/boop';
+*
+* bundle( root, opts, clbk );
+*
+* function clbk( error, bundle ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( bundle.toString() );
 * }
 */
 
