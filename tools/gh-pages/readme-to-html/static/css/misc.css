@@ -1,0 +1,139 @@
+/*
+* Stylesheet for miscellaneous rules.
+*/
+
+img {
+	background-color: #fff;
+}
+
+/*
+* Both `h1` and `h2` elements should be underlined.
+*/
+.readme h1,
+.readme h2 {
+	border-bottom: 1px solid #eee;
+}
+
+/*
+* To the left of a blockquote, create a vertical gray bar, similar to how GitHub styles blockquotes.
+*/
+.readme blockquote {
+	border-left: 0.25em solid #ddd;
+}
+
+/*
+* Horizontal rule should be gray, similar to how GitHub renders horizontal rules.
+*/
+.readme hr {
+	overflow: hidden;
+
+	background: transparent;
+	background-color: #e7e7e7;
+
+	border: 0;
+	border-bottom: 1px solid #eee;
+}
+
+/*
+* Lists.
+*/
+
+/*
+* Top-level unordered list items should use a solid dot.
+*/
+.readme ul {
+	list-style-type: disc;
+}
+
+/*
+* Top-level ordered list items should be numbered.
+*/
+.readme ol {
+	list-style-type: decimal;
+}
+
+/*
+* Second-level unordered and ordered list items should use lowercase Roman numerals.
+*/
+.readme ol ol,
+.readme ul ul {
+	list-style-type: lower-roman;
+}
+
+/*
+* Third-level ordered list items should should use lowercase letters.
+*/
+.readme ul ul ol,
+.readme ul ol ol,
+.readme ol ul ol,
+.readme ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+/*
+* Tables.
+*/
+
+.readme table {
+	overflow: auto;
+}
+
+.readme table th,
+.readme table td {
+	border: 1px solid #ddd;
+}
+
+.readme table tr {
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+
+/*
+* Highlight every other table row.
+*/
+.readme table tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+/*
+* Code.
+*/
+
+.readme pre {
+	overflow: auto;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+}
+
+/*
+* Code containers should have slightly rounded corners and have a light gray background, similar to GitHub.
+*/
+.readme code {
+	background-color: #fff; /* fallback */
+	background-color: rgba(0,0,0,0.04);
+	border-radius: 3px;
+}
+
+.readme pre code {
+	overflow: visible;
+	background-color: transparent;
+	border: 0;
+}
+
+/*
+* Style `code` elements which are direct children of `pre` elements.
+*/
+.readme pre > code {
+	background: transparent;
+	border: 0;
+}
+
+.readme kbd {
+	background-color: #fcfcfc;
+
+	border: solid 1px #ccc;
+	border-bottom-color: #bbb;
+	border-radius: 3px;
+
+	box-shadow: inset 0 -1px 0 #bbb;
+}

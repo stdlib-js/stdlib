@@ -10,20 +10,13 @@ var mustache = require( 'mustache' );
 var prefix = require( './stdlib.js' );
 var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var readFileSync = require( prefix+'@stdlib/fs/read-file' ).sync;
 var exists = require( prefix+'@stdlib/fs/exists' );
 var cwd = require( prefix+'@stdlib/utils/cwd' );
 var copy = require( prefix+'@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
-
-
-// VARIABLES //
-
-var template = resolve( __dirname, '..', 'static/index.html' );
-template = readFileSync( template, {
-	'encoding': 'utf8'
-});
+var template = require( './html_template.js' );
+var styles = require( './styles.js' );
 
 
 // MAIN //
@@ -133,7 +126,8 @@ function convert( file, options, clbk ) {
 			view = {
 				'title': opts.title,
 				'tests': opts.tests,
-				'benchmarks': opts.benchmarks
+				'benchmarks': opts.benchmarks,
+				'head': styles
 			};
 			debug( 'Render options: %s', JSON.stringify( view ) );
 
