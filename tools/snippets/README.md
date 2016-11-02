@@ -3,7 +3,7 @@
 > TODO
 
 
-<!-- Section to include introductory text. -->
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
@@ -34,6 +34,14 @@ var v = TODO( 0.0 );
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
 <!-- Package usage examples. -->
 
 <section class="examples">
@@ -50,7 +58,7 @@ TODO
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. -->
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
 
@@ -58,7 +66,7 @@ TODO
 
 <!-- /.references -->
 
-<!-- Section for all links. -->
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 

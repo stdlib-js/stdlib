@@ -1,9 +1,9 @@
 
-<!-- Section for describing a commnd-line interface. -->
-
-<section class="cli">
+<!-- Section for describing a command-line interface. -->
 
 ---
+
+<section class="cli">
 
 ## CLI
 
@@ -25,6 +25,14 @@ Options:
 </section>
 
 <!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
 
 <!-- CLI usage examples. -->
 
