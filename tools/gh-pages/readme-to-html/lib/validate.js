@@ -21,6 +21,9 @@ var isBoolean = require( prefix+'@stdlib/utils/is-boolean' ).isPrimitive;
 * @param {string} [options.title] - HTML title
 * @param {string} [options.tests] - tests URL
 * @param {string} [options.benchmarks] - benchmarks URL
+* @param {string} [options.prepend] - content to prepend to HTML body
+* @param {string} [options.append] - content to append to HTML body
+* @param {string} [options.head] - content to insert into HTML head
 * @param {boolean} [options.fragment] - output an HTML fragment
 * @returns {(Error|null)} error object or null
 *
@@ -62,6 +65,24 @@ function validate( opts, options ) {
 		opts.benchmarks = options.benchmarks;
 		if ( !isString( opts.benchmarks ) ) {
 			return new TypeError( 'invalid option. `benchmarks` option must be a string. Option: `'+opts.benchmarks+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'head' ) ) {
+		opts.head = options.head;
+		if ( !isString( opts.head ) ) {
+			return new TypeError( 'invalid option. `head` option must be a string. Option: `'+opts.head+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'prepend' ) ) {
+		opts.prepend = options.prepend;
+		if ( !isString( opts.prepend ) ) {
+			return new TypeError( 'invalid option. `prepend` option must be a string. Option: `'+opts.prepend+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'append' ) ) {
+		opts.append = options.append;
+		if ( !isString( opts.append ) ) {
+			return new TypeError( 'invalid option. `append` option must be a string. Option: `'+opts.append+'`.' );
 		}
 	}
 	if ( hasOwnProp( options, 'fragment' ) ) {

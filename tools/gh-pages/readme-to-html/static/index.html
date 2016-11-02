@@ -10,10 +10,16 @@
 	{{/head}}
 </head>
 <body>
+	{{#prepend}}
+	{{{.}}}
+	{{/prepend}}
 	<div class="main">
 		<article class="readme group">
 			{{{readme}}}
 		</article>
 	</div>
+	{{#append}}
+	{{{.}}}
+	{{/append}}
 </body>
 </html>

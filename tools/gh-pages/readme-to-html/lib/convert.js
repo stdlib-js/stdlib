@@ -31,6 +31,9 @@ var styles = require( './styles.js' );
 * @param {string} [options.tests] - tests URL
 * @param {string} [options.benchmarks] - benchmarks URL
 * @param {boolean} [options.fragment] - output an HTML fragment
+* @param {string} [options.prepend] - content to prepend to HTML body
+* @param {string} [options.append] - content to append to HTML body
+* @param {string} [options.head] - content to insert into HTML head
 * @param {Callback} clbk - callback to invoke after converting README
 * @throws {TypeError} first argument must be a string
 * @throws {TypeError} options argument must be an object
@@ -38,7 +41,10 @@ var styles = require( './styles.js' );
 * @throws {TypeError} callback argument must be a function
 */
 function convert( file, options, clbk ) {
+	var prepend;
+	var append;
 	var opts;
+	var head;
 	var err;
 	var src;
 	var dir;
@@ -70,6 +76,14 @@ function convert( file, options, clbk ) {
 	if ( opts.out ) {
 		out = resolve( dir, opts.out );
 		debug( 'Destination filepath: %s', out );
+	}
+	if ( !opts.fragment ) {
+		head = styles.slice();
+		if ( opts.head ) {
+			head.push( opts.head );
+		}
+		prepend = [ opts.prepend ];
+		append = [ opts.append ];
 	}
 	debug( 'Testing if source file exists...' );
 	exists( src, onExists );
@@ -114,6 +128,7 @@ function convert( file, options, clbk ) {
 		var wopts;
 		var view;
 		var html;
+		var head;
 		if ( error ) {
 			debug( 'Encountered an error when converting file: %s', error.message );
 			return done( error );
@@ -127,7 +142,9 @@ function convert( file, options, clbk ) {
 				'title': opts.title,
 				'tests': opts.tests,
 				'benchmarks': opts.benchmarks,
-				'head': styles
+				'head': head,
+				'prepend': prepend,
+				'append': append
 			};
 			debug( 'Render options: %s', JSON.stringify( view ) );
 

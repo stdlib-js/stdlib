@@ -1,3 +1,6 @@
 {
-	"fragment": false
+	"fragment": false,
+	"head": "",
+	"prepend": "",
+	"append": ""
 }
