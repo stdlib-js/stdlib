@@ -76,12 +76,13 @@ function build( dir, out, options, clbk ) {
 	debug( 'Bundle output: %s', bout );
 
 	bopts = {
-		'pattern': opts.pattern
+		'pattern': opts.pattern,
+		'out': bout
 	};
 	debug( 'Bundle options: %s', JSON.stringify( bopts ) );
 
 	debug( 'Creating bundle...' );
-	bundle( dir, bout, bopts, onBundle );
+	bundle( dir, bopts, onBundle );
 
 	/**
 	* Callback invoked after creating a bundle.
