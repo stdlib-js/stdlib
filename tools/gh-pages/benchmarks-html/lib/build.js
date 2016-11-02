@@ -31,7 +31,7 @@ template = readFileSync( template, {
 *
 * @param {string} bundle - bundle URL
 * @param {Options} [options] - options
-* @param {string} [options.out] - output filename
+* @param {string} [options.out] - output file path
 * @param {string} [options.title] - HTML title
 * @param {Callback} clbk - callback to invoke after generating file
 * @throws {TypeError} first argument must be a string
