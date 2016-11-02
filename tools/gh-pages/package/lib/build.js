@@ -169,6 +169,7 @@ function build( pkg, dest, options, clbk ) {
 		out = join( dest, opts.index );
 
 		bopts = {};
+		bopts.out = out;
 		bopts.title = opts.title;
 		if ( builds.tests ) {
 			bopts.tests = join( opts.mount, opts.tests.html );
@@ -181,7 +182,7 @@ function build( pkg, dest, options, clbk ) {
 			bopts.benchmarks = '';
 		}
 		debug( 'Building HTML assets...' );
-		readmeToHTML( src, out, bopts, onHTML );
+		readmeToHTML( src, bopts, onHTML );
 	} // end FUNCTION buildHTML()
 
 	/**
