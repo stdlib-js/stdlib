@@ -35,7 +35,6 @@ template = readFileSync( template, {
 * @param {string} [options.title] - HTML title
 * @param {Callback} clbk - callback to invoke after generating file
 * @throws {TypeError} first argument must be a string
-* @throws {TypeError} second argument must be a string
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
