@@ -30,8 +30,8 @@ template = readFileSync( template, {
 * Generates an HTML file for running benchmarks.
 *
 * @param {string} bundle - bundle URL
-* @param {string} out - output file path
 * @param {Options} [options] - options
+* @param {string} [options.out] - output filename
 * @param {string} [options.title] - HTML title
 * @param {Callback} clbk - callback to invoke after generating file
 * @throws {TypeError} first argument must be a string
@@ -40,23 +40,21 @@ template = readFileSync( template, {
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
 */
-function build( bundle, out, options, clbk ) {
+function build( bundle, options, clbk ) {
 	var wopts;
 	var opts;
 	var view;
 	var html;
 	var err;
 	var dir;
+	var out;
 	var cb;
 
 	if ( !isString( bundle ) ) {
 		throw new TypeError( 'invalid input argument. First argument must be a string. Value: `'+bundle+'`.' );
 	}
-	if ( !isString( out ) ) {
-		throw new TypeError( 'invalid input argument. Second argument must be a string. Value: `'+out+'`.' );
-	}
 	opts = copy( defaults );
-	if ( arguments.length < 4 ) {
+	if ( arguments.length < 3 ) {
 		cb = options;
 	} else {
 		cb = clbk;
@@ -68,12 +66,6 @@ function build( bundle, out, options, clbk ) {
 	if ( !isFunction( cb ) ) {
 		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `'+cb+'`.' );
 	}
-	dir = cwd();
-	debug( 'Current working directory: %s', dir );
-
-	out = resolve( dir, out );
-	debug( 'Destination filepath: %s', out );
-
 	view = {
 		'title': opts.title,
 		'bundle': bundle
@@ -84,11 +76,40 @@ function build( bundle, out, options, clbk ) {
 	html = mustache.render( template, view );
 	debug( 'Finished rendering.' );
 
+	if ( !opts.out ) {
+		// Don't release the zaglo...
+		return process.nextTick( onTick( html ) );
+	}
+	dir = cwd();
+	debug( 'Current working directory: %s', dir );
+
+	if ( opts.out ) {
+		out = resolve( dir, opts.out );
+		debug( 'Destination filepath: %s', out );
+	}
 	debug( 'Writing to file...' );
 	wopts = {
 		'encoding': 'utf8'
 	};
 	writeFile( out, html, wopts, onWrite );
+
+	/**
+	* Returns a callback to invoke on the next tick.
+	*
+	* @private
+	* @param {string} html - rendered HTML
+	* @returns {Callback} callback
+	*/
+	function onTick( html ) {
+		/**
+		* Callback invoked on the next tick.
+		*
+		* @private
+		*/
+		return function onTick() {
+			done( null, html );
+		}; // end FUNCTION onTick()
+	} // end FUNCTION onTick()
 
 	/**
 	* Callback invoked upon writing to file.
@@ -110,10 +131,14 @@ function build( bundle, out, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @param {string} html - rendered HTML
 	*/
-	function done( error ) {
+	function done( error, html ) {
 		if ( error ) {
 			return cb( error );
+		}
+		if ( html ) {
+			return cb( null, html );
 		}
 		cb();
 	} // end FUNCTION done()
