@@ -29,6 +29,9 @@ var validate = require( './validate.js' );
 * @param {string} [options.index] - index filename
 * @param {string} [options.title] - index title
 * @param {string} [options.mount] - URL mount
+* @param {string} [options.prepend] - content to prepend to HTML body
+* @param {string} [options.append] - content to append to HTML body
+* @param {string} [options.head] - content to insert into HTML head
 * @param {Object} [options.tests] - tests options
 * @param {string} [options.tests.pattern] - glob pattern
 * @param {string} [options.tests.bundle] - bundle filename
@@ -171,6 +174,9 @@ function build( pkg, dest, options, clbk ) {
 		bopts = {};
 		bopts.out = out;
 		bopts.title = opts.title;
+		bopts.head = opts.head;
+		bopts.prepend = opts.prepend;
+		bopts.append = opts.append;
 		if ( builds.tests ) {
 			bopts.tests = join( opts.mount, opts.tests.html );
 		} else {

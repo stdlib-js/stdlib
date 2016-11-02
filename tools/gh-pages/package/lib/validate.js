@@ -20,6 +20,9 @@ var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
 * @param {string} [options.index] - index filename
 * @param {string} [options.title] - index title
 * @param {string} [options.mount] - URL mount
+* @param {string} [options.prepend] - content to prepend to HTML body
+* @param {string} [options.append] - content to append to HTML body
+* @param {string} [options.head] - content to insert into HTML head
 * @param {Object} [options.tests] - tests options
 * @param {string} [options.tests.pattern] - glob pattern
 * @param {string} [options.tests.bundle] - bundle filename
@@ -74,6 +77,24 @@ function validate( opts, options ) {
 		opts.mount = options.mount;
 		if ( !isString( opts.mount ) ) {
 			return new TypeError( 'invalid option. `mount` option must be a string. Option: `'+opts.mount+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'head' ) ) {
+		opts.head = options.head;
+		if ( !isString( opts.head ) ) {
+			return new TypeError( 'invalid option. `head` option must be a string. Option: `'+opts.head+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'prepend' ) ) {
+		opts.prepend = options.prepend;
+		if ( !isString( opts.prepend ) ) {
+			return new TypeError( 'invalid option. `prepend` option must be a string. Option: `'+opts.prepend+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'append' ) ) {
+		opts.append = options.append;
+		if ( !isString( opts.append ) ) {
+			return new TypeError( 'invalid option. `append` option must be a string. Option: `'+opts.append+'`.' );
 		}
 	}
 	if ( hasOwnProp( options, 'tests' ) ) {

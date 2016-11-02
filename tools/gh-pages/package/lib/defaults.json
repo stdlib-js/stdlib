@@ -3,6 +3,9 @@
 	"index": "index.html",
 	"title": "",
 	"mount": "/",
+	"head": "",
+	"prepend": "",
+	"append": "",
 	"tests": {
 		"pattern": "**/test*.js",
 		"folder": "test",
