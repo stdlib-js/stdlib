@@ -96,7 +96,7 @@ function convert( src, out, options, clbk ) {
 			return done();
 		}
 		cmd = 'pandoc';
-		cmd += ' --from=markdown_github';
+		cmd += ' --from=markdown';
 		cmd += ' --to=html5';
 		cmd += ' --no-highlight';
 		cmd += ' '+src;
