@@ -114,12 +114,13 @@ function build( root, output, options, clbk ) {
 		debug( 'HTML output: %s', hout );
 
 		hopts = {
-			'title': opts.title
+			'title': opts.title,
+			'out': hout
 		};
 		debug( 'HTML options: %s', JSON.stringify( hopts ) );
 
 		debug( 'Creating HTML...' );
-		html( bundle, hout, hopts, onHTML );
+		html( bundle, hopts, onHTML );
 	} // end FUNCTION onBundle()
 
 	/**
