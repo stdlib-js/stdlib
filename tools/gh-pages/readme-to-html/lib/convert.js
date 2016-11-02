@@ -82,8 +82,12 @@ function convert( file, options, clbk ) {
 		if ( opts.head ) {
 			head.push( opts.head );
 		}
-		prepend = [ opts.prepend ];
-		append = [ opts.append ];
+		if ( opts.prepend ) {
+			prepend = [ opts.prepend ];
+		}
+		if ( opts.append ) {
+			append = [ opts.append ];
+		}
 	}
 	debug( 'Testing if source file exists...' );
 	exists( src, onExists );
@@ -128,7 +132,6 @@ function convert( file, options, clbk ) {
 		var wopts;
 		var view;
 		var html;
-		var head;
 		if ( error ) {
 			debug( 'Encountered an error when converting file: %s', error.message );
 			return done( error );
@@ -144,12 +147,10 @@ function convert( file, options, clbk ) {
 				'benchmarks': opts.benchmarks,
 				'head': head,
 				'prepend': prepend,
-				'append': append
+				'append': append,
+				'readme': html
 			};
-			debug( 'Render options: %s', JSON.stringify( view ) );
-
-			view.readme = html;
-
+			// debug( 'Render options: %s', JSON.stringify( view ) );
 			debug( 'Rendering...' );
 			html = mustache.render( template, view );
 			debug( 'Finished rendering.' );
