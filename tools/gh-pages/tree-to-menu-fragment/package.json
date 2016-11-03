@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Generate an HTML menu fragment from a tree object.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "menu",
+    "component",
+    "tree",
+    "list",
+    "toc",
+    "html",
+    "fragment"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
