@@ -1,0 +1,262 @@
+/*
+* Component styles.
+*
+* 1. Hamburger menu.
+* 2. Slideout menu.
+* 3. Menu sections.
+*/
+
+/*
+* Hamburger menu icon.
+*/
+
+/*
+* Style each hamburger menu line.
+*/
+.hamburger-menu-icon span {
+	display: block;
+	position: absolute;
+	left: 0;
+
+	height: 5px;
+	width: 100%;
+
+	color: #000;
+
+	opacity: 1;
+	background-color: #000;
+	border-radius: 3px;
+}
+
+/*
+* Position the hamburger menu lines.
+*/
+.hamburger-menu-icon span:nth-child(1) {
+	top: 0;
+}
+
+.hamburger-menu-icon span:nth-child(2) {
+	top: 10px;
+}
+
+.hamburger-menu-icon span:nth-child(3) {
+	top: 20px;
+}
+
+/*
+* Slideout menu.
+*/
+
+/*
+* Initially position the menu off canvas.
+*/
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	left: -400px; /* -width */
+	right: 0;
+	bottom: 0;
+
+	z-index: 0;
+
+	width: 400px;
+
+	/*font-family: "Helvetica Neue";*/
+
+	overflow-y: auto;
+
+	background-color: #1D1F20;
+	background-image: linear-gradient(145deg, #1D1F20, #404348);
+
+	-moz-transition: all 200ms ease-in;
+	-webkit-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+/*
+* Slideout menu sibling which triggers the slideout.
+*/
+.slideout-menu-label {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+
+	z-index: 500;
+
+	width: 30px;
+	height: 25px;
+
+	cursor: pointer;
+
+	-moz-transition: all 200ms ease-in;
+	-webkit-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+/*
+* Hide the input element.
+*/
+.slideout-menu-input {
+	display: none;
+}
+
+/*
+* When the input element is selected, make the slideout menu visible.
+*/
+.slideout-menu-input:checked ~ .slideout-menu {
+	left: 0px;
+}
+
+/*
+* When the input element is selected, move the trigger element to ensure the element is still visible.
+*/
+.slideout-menu-input:checked ~ .slideout-menu-label {
+	left: 410px;
+}
+
+/*
+* When the input element is selected, translate a "main" element. Assumes that the slideout menu has a sibling with class `.main`.
+*/
+.slideout-menu-input:checked ~ .main {
+	-webkit-transform:translate3d(400px, 0, 0);
+	-moz-transform:translate3d(400px, 0, 0);
+	-o-transform:translate3d(400px, 0, 0);
+	transform:translate3d(400px, 0, 0);
+}
+
+/*
+* Menu.
+*/
+
+/*
+* Style the menu header and add a bottom border to delineate the header from menu contents.
+*/
+.menu-header {
+	color: #fff;
+	border-bottom: 1px solid #2a2d2f;
+	padding: 20px 0 20px 0.5em;
+}
+
+/*
+* Ensure that menu sections are adjacent.
+*/
+.menu > ul,
+.menu > ul > li,
+.menu-section {
+	margin-bottom: 0;
+}
+
+/*
+* Hide the input element.
+*/
+.menu-section-input {
+	display: none;
+}
+
+/*
+* Style menu triggers and top-level list items.
+*/
+.menu > ul > li > a,
+.menu-section-label {
+	display: block;
+	position: relative;
+
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+
+	cursor: pointer;
+
+	color: #85888d;
+
+	background-color: transparent;
+	transition: background-color .15s ease-in-out;
+}
+
+/*
+* Initially hide the section items.
+*/
+.menu-section-list {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+/*
+* Pad each list item descendant. Nested list items will be further indented, thus producing a tree-like effect.
+*/
+.menu-section-list li {
+	padding-left: 1.5em;
+}
+
+/*
+* Style menu tree "leaves". These are the actual navigation elements.
+*/
+.menu-section-list li a {
+	display: block;
+
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+
+	cursor: pointer;
+
+	color: #c7c7c7; /* #fff; */
+
+	background-color: transparent;
+}
+
+/*
+* When a menu section is selected, show the section items.
+*/
+.menu-section-input:checked ~ .menu-section-list {
+	opacity: 1;
+	height: auto;
+}
+
+/*
+* Highlight a selected item.
+*/
+.menu-section-input:checked + label,
+.menu-section-label:hover {
+	/*background-color: #313334;*/
+}
+
+/*
+* Use a '+' to indicate more content is available. Align the '+' to the far right of the container.
+*/
+.menu-section-label:after,
+.menu-section-input:checked + .menu-section-label:after {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	content: "+";
+
+	width: 2em;
+	height: 100%;
+
+	line-height: 2.0em;
+	text-align: center;
+
+	background-color: transparent;
+	transition: background-color .15s ease-in-out;
+}
+
+/*
+* When a section has been selected, change the '+' to a '-' to indicate that a section is currently open and a user can close the section.
+*/
+.menu-section-input:checked + .menu-section-label:after {
+	content: "-";
+}
+
+/*
+* When hovering over a trigger element, change color.
+*/
+.menu-section-label:hover:after,
+.menu-section-input:checked + .menu-section-label:after {
+	/*background-color: #313334;*/
+}
