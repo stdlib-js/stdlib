@@ -107,7 +107,7 @@ function convert( file, options, clbk ) {
 			return done();
 		}
 		cmd = 'pandoc';
-		cmd += ' --from=markdown_github-citations+markdown_in_html_blocks';
+		cmd += ' --from=markdown_github+markdown_in_html_blocks-citations-autolink_bare_uris';
 		cmd += ' --to=html5';
 		cmd += ' --no-highlight';
 		cmd += ' '+src;
