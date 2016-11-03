@@ -62,12 +62,17 @@ function menu( options, clbk ) {
 	* @param {Object} tree - package tree
 	*/
 	function onTree( error, tree ) {
+		var subtree;
 		var out;
 		if ( error ) {
 			return cb( error );
 		}
+		subtree = tree[ '@stdlib' ];
+		subtree.stdlib = subtree.__namespace__;
+		delete subtree.__namespace__;
+
 		out = {
-			'html': toFragment( tree[ '@stdlib' ] ),
+			'html': toFragment( subtree, opts ),
 			'css': toFragment.css
 		};
 		return cb( null, out );
