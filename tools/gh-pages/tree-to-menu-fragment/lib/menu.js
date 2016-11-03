@@ -72,7 +72,13 @@ function menu( tree, options ) {
 			tmp = recurse( v, key, opts.mount+key+'/' );
 			str += '<li>'+tmp+'</li>';
 		} else {
-			str += listItem( key, opts.mount+key );
+			if ( key === '__namespace__' ) {
+				v = 'namespace';
+				key = '';
+			} else {
+				v = key;
+			}
+			str += listItem( v, opts.mount+key );
 		}
 	}
 	str += list_end;
