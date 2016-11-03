@@ -3,10 +3,10 @@
 /**
 * Generate a package HTML menu fragment.
 *
-* @module @stdlib/tools/gh-pages/package-menu
+* @module @stdlib/tools/gh-pages/stdlib-package-menu
 *
 * @example
-* var menu = require( '/path/to/package-menu' );
+* var menu = require( '/path/to/stdlib-package-menu' );
 *
 * menu( clbk );
 *
