@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Build documentation.",
+  "author": {},
+  "contributors": [],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "build",
+    "documentation",
+    "docs"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
