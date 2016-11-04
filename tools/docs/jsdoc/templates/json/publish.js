@@ -12,7 +12,7 @@ var opts = {
 };
 
 
-// PUBLISH //
+// MAIN //
 
 /**
 * Transforms an array of raw `doclet` objects and writes to `stdout`.

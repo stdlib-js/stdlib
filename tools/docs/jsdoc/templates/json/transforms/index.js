@@ -1,6 +1,6 @@
 'use strict';
 
-// TRANSFORMS //
+// MAIN //
 
 var transforms = {};
 transforms.namespace = require( './namespace' );

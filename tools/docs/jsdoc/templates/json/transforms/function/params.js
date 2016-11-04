@@ -1,8 +1,11 @@
 'use strict';
 
-// FUNCTIONS //
+// MODULES //
 
-var hasOwn = Object.prototype.hasOwnProperty;
+var hasOwn = require( '@stdlib/utils/has-own-property' );
+
+
+// FUNCTIONS //
 
 /**
 * Filters a `params` doclet element.
@@ -54,7 +57,7 @@ function filter( node ) {
 } // end FUNCTION filter()
 
 
-// TRANSFORM //
+// MAIN //
 
 /**
 * Transforms `params` doclet elements.

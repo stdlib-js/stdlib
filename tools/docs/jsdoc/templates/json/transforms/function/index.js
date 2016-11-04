@@ -7,7 +7,7 @@ var transformExamples = require( './examples.js' );
 var transformParams = require( './params.js' );
 
 
-// TRANSFORM //
+// MAIN //
 
 /**
 * Transforms a `function` doclet element.

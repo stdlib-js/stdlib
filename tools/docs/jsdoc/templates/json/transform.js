@@ -26,7 +26,7 @@ var recurse = {
 };
 
 
-// TRANSFORM //
+// MAIN //
 
 /**
 * Recursively transforms doclet nodes.
