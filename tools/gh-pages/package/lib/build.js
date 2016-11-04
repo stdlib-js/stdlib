@@ -5,10 +5,9 @@
 var debug = require( 'debug' )( 'gh-pages:package' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
-var prefix = require( './stdlib.js' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
 var tests = require( './../../tests' );
 var benchmarks = require( './../../benchmarks' );
 var readmeToHTML = require( './../../readme-to-html' );
