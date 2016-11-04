@@ -33,7 +33,7 @@ env:
   # Environment variables common to all jobs:
   global:
     - CXX=g++-4.8
-    - NODE_PATH="$NODE_PATH:$TRAVIS_BUILD_DIR/lib/node_modules"
+    - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct build matrix:
   matrix:
