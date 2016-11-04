@@ -4,7 +4,7 @@ machine:
 
   # Environment variables for all build commands:
   environment:
-    NODE_PATH: "$(pwd)/lib/node_modules"
+    NODE_PATH: '$HOME/lib/node_modules'
 
   # Version of Node.js to use:
   node:
