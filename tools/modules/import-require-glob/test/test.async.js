@@ -5,8 +5,7 @@
 var tape = require( 'tape' );
 var join = require( 'path' ).join;
 var proxyquire = require( 'proxyquire' );
-var prefix = require( './../lib/stdlib.js' );
-var noop = require( prefix+'@stdlib/utils/noop' );
+var noop = require( '@stdlib/utils/noop' );
 var ls = require( './../lib/async.js' );
 
 

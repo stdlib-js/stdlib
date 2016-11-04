@@ -6,7 +6,7 @@ var debug = require( 'debug' )( 'import-require-glob:analyze' );
 var getPaths = require( './../../import-require' );
 
 
-// ANALYZE //
+// MAIN //
 
 /**
 * Analyzes file ASTs for import and require paths.

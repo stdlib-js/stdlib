@@ -29,13 +29,12 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var setReadOnly = require( prefix+'@stdlib/utils/define-read-only-property' );
+var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ls = require( './async.js' );
 var sync = require( './sync.js' );
 
 
-// METHODS //
+// MAIN //
 
 setReadOnly( ls, 'sync', sync );
 

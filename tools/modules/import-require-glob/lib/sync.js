@@ -5,16 +5,15 @@
 var debug = require( 'debug' )( 'import-require-glob:sync' );
 var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' ).sync;
-var prefix = require( './stdlib.js' );
-var copy = require( prefix+'@stdlib/utils/copy' );
-var readFileList = require( prefix+'@stdlib/fs/read-file-list' ).sync;
-var cwd = require( prefix+'@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
+var readFileList = require( '@stdlib/fs/read-file-list' ).sync;
+var cwd = require( '@stdlib/utils/cwd' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var analyze = require( './analyze.js' );
 
 
-// LS //
+// MAIN //
 
 /**
 * Synchronously generates a list import and require paths.

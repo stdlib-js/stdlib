@@ -5,17 +5,16 @@
 var debug = require( 'debug' )( 'import-require-glob:async' );
 var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' );
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var copy = require( prefix+'@stdlib/utils/copy' );
-var readFileList = require( prefix+'@stdlib/fs/read-file-list' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
+var readFileList = require( '@stdlib/fs/read-file-list' );
+var cwd = require( '@stdlib/utils/cwd' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var analyze = require( './analyze.js' );
 
 
-// LS //
+// MAIN //
 
 /**
 * Asynchronously generates a list import and require paths.
