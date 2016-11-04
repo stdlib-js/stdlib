@@ -4,12 +4,11 @@
 
 var getKeys = require( 'object-keys' ).shim();
 var SPDX = require( 'spdx-license-ids' );
-var prefix = require( './stdlib.js' );
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var indexOf = require( '@stdlib/utils/index-of' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 
 
-// REPORTER //
+// MAIN //
 
 /**
 * Summarizes license results.

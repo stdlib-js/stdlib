@@ -6,11 +6,10 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var parseArgs = require( 'minimist' );
+var stdin = require( '@stdlib/utils/read-stdin' );
+var round = require( '@stdlib/math/base/special/round' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
-var prefix = require( './../lib/stdlib.js' );
-var stdin = require( prefix+'@stdlib/utils/read-stdin' );
-var round = require( prefix+'@stdlib/math/base/special/round' );
 var reporter = require( './../lib' );
 
 
