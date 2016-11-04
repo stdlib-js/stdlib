@@ -4,13 +4,12 @@
 
 var debug = require( 'debug' )( 'import-require:main' );
 var parse = require( 'acorn' ).parse;
-var prefix = require( './stdlib.js' );
-var isBuffer = require( prefix+'@stdlib/utils/is-buffer' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
+var isBuffer = require( '@stdlib/utils/is-buffer' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var walk = require( './walk.js' );
 
 
-// LS //
+// MAIN //
 
 /**
 * Lists import and require paths.

@@ -4,8 +4,7 @@
 
 var tape = require( 'tape' );
 var join = require( 'path' ).join;
-var prefix = require( './../lib/stdlib.js' );
-var readFile = require( prefix+'@stdlib/fs/read-file' ).sync;
+var readFile = require( '@stdlib/fs/read-file' ).sync;
 var ls = require( './../lib' );
 
 

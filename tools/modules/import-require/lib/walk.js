@@ -7,7 +7,7 @@ var walk = require( 'acorn/dist/walk.js' );
 var isRequire = require( './is_require.js' );
 
 
-// WALKER //
+// MAIN //
 
 /**
 * Walks an AST in search of import and require paths.
