@@ -6,8 +6,9 @@ var debug = require( 'debug' )( 'remark-svg-equations:transformer' );
 var tex2svg = require( 'tex-equation-to-svg' );
 var mkdirp = require( 'mkdirp' );
 var visit = require( 'unist-util-visit' );
-var path = require( 'path' );
-var fs = require( 'fs' );
+var resolve = require( 'path' ).resolve;
+var join = require( 'path' ).join;
+var writeFile = require( 'fs' ).writeFile;
 
 
 // CONSTANTS //
@@ -17,7 +18,7 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 var RAW = /data-raw-text="([^"]*)"/;
 
 
-// TRANSFORMER //
+// MAIN //
 
 /**
 * Returns a transformer function.
@@ -62,7 +63,7 @@ function transformerFactory( opts ) {
 
 				// Check if we may need to create a destination directory...
 				if ( !dirflg ) {
-					dir = path.resolve( file.directory, opts.dir );
+					dir = resolve( file.directory, opts.dir );
 					debug( 'Output directory: %s', dir );
 
 					debug( 'Creating output directory...' );
@@ -106,8 +107,8 @@ function transformerFactory( opts ) {
 					debug( 'Error encountered when attempting to create an SVG: %s', error.message );
 					throw error;
 				}
-				fpath = path.join( opts.dir, label+'.svg' );
-				fpath = path.resolve( file.directory, fpath );
+				fpath = join( opts.dir, label+'.svg' );
+				fpath = resolve( file.directory, fpath );
 				debug( 'Absolute filepath: %s', fpath );
 
 				fopts = {
@@ -115,7 +116,7 @@ function transformerFactory( opts ) {
 				};
 
 				debug( 'Writing SVG to file...' );
-				fs.writeFile( fpath, svg, fopts, onWrite );
+				writeFile( fpath, svg, fopts, onWrite );
 			} // end FUNCTION onSVG()
 
 			/**

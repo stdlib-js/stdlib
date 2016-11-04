@@ -2,7 +2,7 @@
 
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
-var path = require( 'path' );
+var join = require( 'path' ).join;
 var createSVGs = require( './../lib' );
 
 var fpath;
@@ -11,7 +11,7 @@ var opts;
 var out;
 
 // Load a Markdown file...
-fpath = path.join( __dirname, 'fixtures/simple.md' );
+fpath = join( __dirname, 'fixtures/simple.md' );
 vfile = toVFile.readSync( fpath );
 
 // Specify the output directory for SVG equation files...
