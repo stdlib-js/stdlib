@@ -6,13 +6,12 @@ var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' );
 var tape = require( 'tape' );
 var getKeys = require( 'object-keys' ).shim();
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var copy = require( prefix+'@stdlib/utils/copy' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var dirname = require( prefix+'@stdlib/utils/dirname' );
-var readFile = require( prefix+'@stdlib/fs/read-file' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var copy = require( '@stdlib/utils/copy' );
+var cwd = require( '@stdlib/utils/cwd' );
+var dirname = require( '@stdlib/utils/dirname' );
+var readFile = require( '@stdlib/fs/read-file' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var compile = require( './compile.js' );
@@ -20,7 +19,7 @@ var createRequire = require( './create_require.js' );
 var coverage = require( './coverage.js' );
 
 
-// RUNNER //
+// MAIN //
 
 /**
 * Test runner for instrumented source code.

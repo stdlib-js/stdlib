@@ -6,7 +6,7 @@ var vm = require( 'vm' );
 var wrap = require( './wrap.js' );
 
 
-// COMPILE //
+// MAIN //
 
 /**
 * Compiles JavaScript source code.

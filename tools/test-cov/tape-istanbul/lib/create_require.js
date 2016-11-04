@@ -10,8 +10,7 @@
 // MODULES //
 
 var Module = require( 'module' );
-var prefix = require( './stdlib.js' );
-var dirname = require( prefix+'@stdlib/utils/dirname' );
+var dirname = require( '@stdlib/utils/dirname' );
 
 
 // VARIABLES //
@@ -23,7 +22,7 @@ var cache = Module._cache;
 var main = process.mainModule;
 
 
-// REQUIRE //
+// MAIN //
 
 /**
 * Returns a `require` function.
