@@ -7,7 +7,7 @@ var visit = require( 'unist-util-visit' );
 var insertEquations = require( './insert_equations.js' );
 
 
-// TRANSFORMER //
+// MAIN //
 
 /**
 * Transforms a Markdown file.

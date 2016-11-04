@@ -5,7 +5,7 @@
 var transformer = require( './transformer.js' );
 
 
-// ATTACHER //
+// MAIN //
 
 /**
 * Attach a plugin to a remark processor in order to insert HTML equation elements.

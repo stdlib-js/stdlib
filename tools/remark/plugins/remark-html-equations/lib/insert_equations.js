@@ -15,7 +15,7 @@ var ALT = /alt="([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
 
 
-// FUNCTIONS //
+// MAIN //
 
 /**
 * Inserts an HTML equation element into a Markdown AST.

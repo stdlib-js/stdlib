@@ -1,7 +1,7 @@
 'use strict';
 
-var fs = require( 'fs' );
-var path = require( 'path' );
+var readFileSync = require( 'fs' ).readFileSync;
+var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var insertEquations = require( './../lib' );
 
@@ -11,11 +11,11 @@ var file;
 var out;
 
 // Load a Markdown file...
-fpath = path.join( __dirname, 'fixtures/simple.md' );
+fpath = join( __dirname, 'fixtures/simple.md' );
 opts = {
 	'encoding': 'utf8'
 };
-file = fs.readFileSync( fpath, opts );
+file = readFileSync( fpath, opts );
 
 // Insert HTML equation elements:
 out = remark().use( insertEquations ).process( file );
