@@ -3,8 +3,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var stdlib = require( './../lib/stdlib.js' );
-var isArray = require( stdlib+'@stdlib/utils/is-array' );
+var isArray = require( '@stdlib/utils/is-array' );
 var lint = require( './../lib/lint.js' );
 
 

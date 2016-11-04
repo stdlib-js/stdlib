@@ -4,17 +4,16 @@
 
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
 var DEFAULTS = require( './defaults.json' );
 var validate = require( './validate.js' );
 var linter = require( './lint.js' );
 var IGNORE = require( './ignore_patterns.json' );
 
 
-// LINT //
+// MAIN //
 
 /**
 * Asynchronously lints filenames.

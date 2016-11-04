@@ -4,9 +4,8 @@
 
 var tape = require( 'tape' );
 var join = require( 'path' ).join;
-var prefix = require( './../lib/stdlib.js' );
-var isArray = require( prefix+'@stdlib/utils/is-array' );
-var isObjectArray = require( prefix+'@stdlib/utils/is-plain-object' ).isPlainObjectArray;
+var isArray = require( '@stdlib/utils/is-array' );
+var isObjectArray = require( '@stdlib/utils/is-plain-object' ).isPlainObjectArray;
 var lint = require( './../lib/sync.js' );
 
 

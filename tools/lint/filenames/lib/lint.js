@@ -3,10 +3,9 @@
 // MODULES //
 
 var basename = require( 'path' ).basename; // TODO: use stdlib module
-var prefix = require( './stdlib.js' );
-var extname = require( prefix+'@stdlib/utils/extname' );
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
-var lowercase = require( prefix+'@stdlib/string/lowercase' );
+var extname = require( '@stdlib/utils/extname' );
+var indexOf = require( '@stdlib/utils/index-of' );
+var lowercase = require( '@stdlib/string/lowercase' );
 var EXTENSIONS = require( './extensions.json' );
 var SPECIAL = require( './special.json' );
 
@@ -17,7 +16,7 @@ var SPECIAL = require( './special.json' );
 var BANNED_CHARS = /[^a-zA-Z0-9._-]/; // If this is changed, be sure to update the associated error message
 
 
-// LINT //
+// MAIN //
 
 /**
 * Lints an array of filenames.
