@@ -4,10 +4,9 @@
 
 var debug = require( 'debug' )( 'stdlib-docs:main' );
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var copy = require( prefix+'@stdlib/utils/copy' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
+var cwd = require( '@stdlib/utils/cwd' );
 var menu = require( './../../stdlib-package-menu' );
 var buildPkgs = require( './../../build-packages' );
 var defaults = require( './defaults.json' );
