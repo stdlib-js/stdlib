@@ -2,9 +2,8 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
 var pkgTree = require( './../../../pkgs/tree' );
 var toFragment = require( './../../tree-to-menu-fragment' );
 var defaults = require( './defaults.json' );
