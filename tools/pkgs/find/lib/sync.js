@@ -4,15 +4,14 @@
 
 var glob = require( 'glob' ).sync;
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
 
 
-// FIND //
+// MAIN //
 
 /**
 * Synchronously finds packages.

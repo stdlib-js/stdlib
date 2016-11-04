@@ -3,8 +3,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var prefix = require( './../lib/stdlib.js' );
-var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
 var findPkgs = require( './../lib/sync.js' );
 
 

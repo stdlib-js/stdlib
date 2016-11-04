@@ -4,16 +4,15 @@
 
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
 
 
-// FIND //
+// MAIN //
 
 /**
 * Asynchronously find packages.

@@ -2,11 +2,10 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var dirname = require( prefix+'@stdlib/utils/dirname' );
+var dirname = require( '@stdlib/utils/dirname' );
 
 
-// TRANSFORM //
+// MAIN //
 
 /**
 * Transforms a raw `package.json` file list.
