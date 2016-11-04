@@ -5,7 +5,7 @@
 var getKeys = require( 'object-keys' ).shim();
 
 
-// TO ARRAY //
+// MAIN //
 
 /**
 * Converts a results object to an array.

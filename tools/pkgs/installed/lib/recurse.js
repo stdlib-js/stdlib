@@ -4,11 +4,10 @@
 
 var debug = require( 'debug' )( 'installed-pkgs:recurse' );
 var getKeys = require( 'object-keys' ).shim();
-var prefix = require( './stdlib.js' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 
 
-// RECURSE //
+// MAIN //
 
 /**
 * Processes a package.

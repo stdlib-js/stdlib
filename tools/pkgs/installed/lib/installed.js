@@ -5,11 +5,10 @@
 var createDebug = require( 'debug' );
 var resolve = require( 'path' ).resolve;
 var readInstalled = require( 'read-installed' );
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
-var PINF = require( prefix+'@stdlib/math/constants/float64-pinf' );
+var isFunction = require( '@stdlib/utils/is-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
+var PINF = require( '@stdlib/math/constants/float64-pinf' );
 var DEFAULTS = require( './defaults.json' );
 var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
@@ -21,7 +20,7 @@ var toArray = require( './to_array.js' );
 var debug = createDebug( 'installed-pkgs:main' );
 
 
-// PACKAGES //
+// MAIN //
 
 /**
 * Generates a list of installed package dependencies.
