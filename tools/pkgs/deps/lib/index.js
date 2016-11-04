@@ -27,13 +27,14 @@
 * var deps = resolveDeps.sync( pkgs );
 */
 
-var prefix = require( './stdlib.js' );
-var setReadOnly = require( prefix+'@stdlib/utils/define-read-only-property' );
+// MODULES //
+
+var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var resolveDeps = require( './async.js' );
 var sync = require( './sync.js' );
 
 
-// METHODS //
+// MAIN //
 
 setReadOnly( resolveDeps, 'sync', sync );
 

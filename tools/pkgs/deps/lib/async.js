@@ -4,11 +4,10 @@
 
 var debug = require( 'debug' )( 'pkg-deps:async' );
 var path = require( 'path' );
-var prefix = require( './stdlib.js' );
-var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStringArray;
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var isFunction = require( '@stdlib/utils/is-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
 var entryPoints = require( './../../entry-points' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
