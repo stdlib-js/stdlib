@@ -3,6 +3,9 @@
 version: '{build}'
 
 environment:
+  global:
+    NODE_PATH: '%APPVEYOR_BUILD_FOLDER%\lib\node_modules'
+
   matrix:
     # Unit tests:
     - nodejs_version: '7'
