@@ -2,8 +2,7 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var dirname = require( prefix+'@stdlib/utils/dirname' );
+var dirname = require( '@stdlib/utils/dirname' );
 
 
 // VARIABLES //
@@ -11,7 +10,7 @@ var dirname = require( prefix+'@stdlib/utils/dirname' );
 var MATCH = /\@stdlib/;
 
 
-// TRANSFORM //
+// MAIN //
 
 /**
 * Transforms a raw `package.json` list into package names.

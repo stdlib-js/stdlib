@@ -9,7 +9,7 @@ var validate = require( './validate.js' );
 var getRoot = require( './root.js' );
 
 
-// LS //
+// MAIN //
 
 /**
 * Synchronously generates a list of stdlib package names.

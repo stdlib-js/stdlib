@@ -3,15 +3,14 @@
 // MODULES //
 
 var path = require( 'path' );
-var prefix = require( './stdlib.js' );
 
 
 // VARIABLES //
 
-var ROOT = path.resolve( __dirname, prefix );
+var ROOT = path.resolve( __dirname, './../../../../lib/node_modules/' );
 
 
-// ROOT //
+// MAIN //
 
 /**
 * Returns a root directory from which to search for packages.

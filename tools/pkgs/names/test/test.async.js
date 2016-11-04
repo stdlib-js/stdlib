@@ -4,9 +4,8 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var prefix = require( './../lib/stdlib.js' );
-var noop = require( prefix+'@stdlib/utils/noop' );
-var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var noop = require( '@stdlib/utils/noop' );
+var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
 var ls = require( './../lib/async.js' );
 
 

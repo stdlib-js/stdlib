@@ -3,15 +3,14 @@
 // MODULES //
 
 var glob = require( 'glob' );
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/utils/is-function' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
 var getRoot = require( './root.js' );
 
 
-// LS //
+// MAIN //
 
 /**
 * Asynchronously generates a list of stdlib package names.
