@@ -2,6 +2,10 @@
 # Customize the test machine:
 machine:
 
+  # Environment variables for all build commands:
+  environment:
+    NODE_PATH: "$(pwd)/lib/node_modules"
+
   # Version of Node.js to use:
   node:
     version: 6
