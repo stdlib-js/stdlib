@@ -12,7 +12,7 @@ var exec = require( 'child_process' ).execSync;
 var RE = /(?:.+github\.com\/)(.+)\.(?:.+)/;
 
 
-// GIT //
+// MAIN //
 
 /**
 * Returns git repository info.

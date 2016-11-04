@@ -3,11 +3,11 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-html-equation-src-urls:transformer' );
-var path = require( 'path' );
+var resolve = require( 'path' ).resolve;
+var join = require( 'path' ).join;
 var rawgit = require( 'rawgit-url' );
 var visit = require( 'unist-util-visit' );
-var prefix = require( './stdlib.js' );
-var PATH_SEP = require( prefix+'@stdlib/utils/path-sep' );
+var PATH_SEP = require( '@stdlib/utils/path-sep' );
 var git = require( './git.js' );
 
 
@@ -18,7 +18,7 @@ var IMG_SOURCE = /(<img src=")([^"]*)(")/g;
 var LABEL = /data-equation="eq:([^"]*)">/;
 
 
-// TRANSFORMER //
+// MAIN //
 
 /**
 * Returns a transformer function.
@@ -57,10 +57,10 @@ function getTransformer( opts ) {
 
 				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
 				debug( 'File directory: %s', file.directory );
-				fpath = path.join( opts.dir, label+'.svg' );
+				fpath = join( opts.dir, label+'.svg' );
 				debug( 'SVG filename: %s', fpath );
 
-				fpath = path.resolve( file.directory, fpath );
+				fpath = resolve( file.directory, fpath );
 				debug( 'Absolute filepath: %s', fpath );
 
 				// Get file path relative to git repository:

@@ -3,16 +3,15 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-html-equation-src-urls:attacher' );
-var prefix = require( './stdlib.js' );
-var copy = require( prefix+'@stdlib/utils/copy' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
+var copy = require( '@stdlib/utils/copy' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var transformerFactory = require( './transformer.js' );
 var defaults = require( './defaults.json' );
 
 
-// ATTACHER //
+// MAIN //
 
 /**
 * Attach a plugin to a remark processor in order to insert rawgit URLs for SVG equations into Markdown HTML equation elements.
