@@ -84,6 +84,6 @@ if ( args.config ) {
 }
 
 
-// MAKIE //
+// MAIN //
 
 makie( dirpath, opts, args._[0] );

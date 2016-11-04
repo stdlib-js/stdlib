@@ -1,6 +1,6 @@
 'use strict';
 
-// MAKIE //
+// MAIN //
 
 /**
 * Executes a Makefile command.
