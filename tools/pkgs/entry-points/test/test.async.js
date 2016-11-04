@@ -3,8 +3,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var prefix = require( './../lib/stdlib.js' );
-var noop = require( prefix+'@stdlib/utils/noop' );
+var noop = require( '@stdlib/utils/noop' );
 var entryPoints = require( './../lib/async.js' );
 
 

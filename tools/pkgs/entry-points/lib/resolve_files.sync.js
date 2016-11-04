@@ -3,8 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'entry-points:sync:resolve-files' );
-var prefix = require( './stdlib.js' );
-var exists = require( prefix+'@stdlib/fs/exists' ).sync;
+var exists = require( '@stdlib/fs/exists' ).sync;
 
 
 // MAIN //

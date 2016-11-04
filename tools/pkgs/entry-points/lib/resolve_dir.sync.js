@@ -2,9 +2,8 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var dirname = require( prefix+'@stdlib/utils/dirname' );
-var resolveParentPath = require( prefix+'@stdlib/fs/resolve-parent-path' ).sync;
+var dirname = require( '@stdlib/utils/dirname' );
+var resolveParentPath = require( '@stdlib/fs/resolve-parent-path' ).sync;
 
 
 // MAIN //

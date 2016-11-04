@@ -5,8 +5,7 @@
 var debug = require( 'debug' )( 'entry-points:sync:resolve' );
 var join = require( 'path' ).join;
 var resolve = require( 'resolve' ).sync;
-var prefix = require( './stdlib.js' );
-var readJSON = require( prefix+'@stdlib/fs/read-json' ).sync;
+var readJSON = require( '@stdlib/fs/read-json' ).sync;
 var resolveDir = require( './resolve_dir.sync.js' );
 
 

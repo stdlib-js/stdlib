@@ -4,10 +4,9 @@
 
 var debug = require( 'debug' )( 'entry-points:sync' );
 var path = require( 'path' );
-var prefix = require( './stdlib.js' );
-var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStringArray;
-var copy = require( prefix+'@stdlib/utils/copy' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
+var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var copy = require( '@stdlib/utils/copy' );
+var cwd = require( '@stdlib/utils/cwd' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var resolve = require( './resolve.sync.js' );
