@@ -7,7 +7,7 @@ var filter = require( './filter.js' );
 var validate = require( './validate.js' );
 
 
-// SYNC //
+// MAIN //
 
 /**
 * Synchronously lists namespaces.

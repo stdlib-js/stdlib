@@ -2,13 +2,12 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 
 
-// VALIDATE //
+// MAIN //
 
 /**
 * Validates function options.

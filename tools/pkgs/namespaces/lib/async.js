@@ -3,13 +3,12 @@
 // MODULES //
 
 var pkgNames = require( './../../names' );
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/utils/is-function' );
 var validate = require( './validate.js' );
 var filter = require( './filter.js' );
 
 
-// ASYNC //
+// MAIN //
 
 /**
 * Asynchronously lists stdlib namespaces.
