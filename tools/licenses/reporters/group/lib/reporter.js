@@ -2,12 +2,11 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var indexOf = require( '@stdlib/utils/index-of' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 
 
-// REPORTER //
+// MAIN //
 
 /**
 * Groups license results by license type.
