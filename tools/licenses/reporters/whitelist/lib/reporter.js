@@ -2,11 +2,10 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var indexOf = require( '@stdlib/utils/index-of' );
 
 
-// REPORTER //
+// MAIN //
 
 /**
 * Excludes packages from license results when a package has a license matching a license identifier in a provided license list.
