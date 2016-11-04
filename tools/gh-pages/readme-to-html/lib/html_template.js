@@ -3,8 +3,7 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
-var readFileSync = require( prefix+'@stdlib/fs/read-file' ).sync;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 
 
 // MAIN //

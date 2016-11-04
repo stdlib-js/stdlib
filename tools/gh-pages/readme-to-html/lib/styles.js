@@ -4,8 +4,7 @@
 
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
-var prefix = require( './stdlib.js' );
-var readFileSync = require( prefix+'@stdlib/fs/read-file' ).sync;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 
 
 // VARIABLES //
