@@ -3,10 +3,9 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'module-pkg-deps:sync' );
-var prefix = require( './stdlib.js' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var isStringArray = require( prefix+'@stdlib/utils/is-string' ).isPrimitiveStringArray;
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var walkFile = require( './walk_file.sync.js' );

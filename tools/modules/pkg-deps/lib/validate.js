@@ -2,10 +2,9 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
-var isBoolean = require( prefix+'@stdlib/utils/is-boolean' ).isPrimitive;
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isBoolean = require( '@stdlib/utils/is-boolean' ).isPrimitive;
 
 
 // MAIN //

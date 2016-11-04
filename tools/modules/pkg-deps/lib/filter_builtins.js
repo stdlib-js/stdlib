@@ -2,8 +2,7 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
+var indexOf = require( '@stdlib/utils/index-of' );
 var builtins = require( './builtins.json' );
 
 

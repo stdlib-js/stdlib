@@ -4,11 +4,10 @@
 
 var debug = require( 'debug' )( 'module-pkg-deps:async:walk-file' );
 var resolve = require( 'resolve' );
-var prefix = require( './stdlib.js' );
-var readFile = require( prefix+'@stdlib/fs/read-file' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
-var dirname = require( prefix+'@stdlib/utils/dirname' );
-var extname = require( prefix+'@stdlib/utils/extname' );
+var readFile = require( '@stdlib/fs/read-file' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var dirname = require( '@stdlib/utils/dirname' );
+var extname = require( '@stdlib/utils/extname' );
 var analyze = require( './analyze.js' );
 
 
