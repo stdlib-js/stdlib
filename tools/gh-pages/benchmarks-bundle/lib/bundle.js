@@ -6,11 +6,10 @@ var debug = require( 'debug' )( 'gh-pages:bundle-benchmarks' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
 var bundle = require( './../../bundle' );
-var prefix = require( './stdlib.js' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isFunction = require( '@stdlib/utils/is-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
