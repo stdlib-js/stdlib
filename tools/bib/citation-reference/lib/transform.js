@@ -2,8 +2,7 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var replace = require( prefix+'@stdlib/string/replace' );
+var replace = require( '@stdlib/string/replace' );
 
 
 // VARIABLES //
