@@ -3,10 +3,9 @@
 // MODULES //
 
 var getKeys = require( 'object-keys' ).shim();
-var prefix = require( './stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var replace = require( prefix+'@stdlib/string/replace' );
-var minstd = require( prefix+'@stdlib/math/base/random/minstd-shuffle' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var replace = require( '@stdlib/string/replace' );
+var minstd = require( '@stdlib/math/base/random/minstd-shuffle' );
 var listItem = require( './list_item.js' );
 
 

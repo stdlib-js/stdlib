@@ -3,10 +3,9 @@
 // MODULES //
 
 var getKeys = require( 'object-keys' ).shim();
-var prefix = require( './stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var replace = require( prefix+'@stdlib/string/replace' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var replace = require( '@stdlib/string/replace' );
+var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
