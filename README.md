@@ -80,6 +80,28 @@ If you are behind a firewall, you may need to use the `https` protocol, rather t
 $ git config --global url."https://".insteadOf git://
 ```
 
+### Configuration
+
+Determine the absolute path of the `lib/node_modules` directory within the repository. For example, from the repository directory
+
+``` bash
+$ echo $(pwd)/lib/node_modules
+'/path/to/stdlib-js/stdlib/lib/node_modules'
+```
+
+To allow development tools to resolve library packages, set the [`NODE_PATH`][node-path] environment variable by adding the following line to the platform-specific configuration file for configuring user environments (e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant).
+
+```
+export NODE_PATH=/path/to/stdlib-js/stdlib/lib/node_modules
+```
+
+Once finished, you may need to reload the configuration file in existing shells. For example, in a bash shell,
+
+``` bash
+$ source ~/.bash_profile
+```
+
+
 ### Installation
 
 To install development dependencies,
@@ -137,7 +159,6 @@ workshops  workshops
 ### Editors
 
 * This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome]. 
-
 
 
 ---
@@ -210,6 +231,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [clang]: http://clang.llvm.org/
 [boost]: http://www.boost.org/
 [pandoc]: http://pandoc.org/
+
+[node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
+[bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
 
 [editorconfig]: http://editorconfig.org/
 [editorconfig-chrome]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
