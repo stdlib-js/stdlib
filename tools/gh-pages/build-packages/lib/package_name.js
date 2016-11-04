@@ -3,12 +3,11 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
 
 
 // VARIABLES //
 
-var root = resolve( __dirname, prefix );
+var root = resolve( __dirname, './../../../../lib/node_modules/' );
 
 
 // MAIN //

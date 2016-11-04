@@ -4,8 +4,7 @@
 
 var debug = require( 'debug' )( 'gh-pages:build-packages:build' );
 var join = require( 'path' ).join;
-var prefix = require( './stdlib.js' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var copy = require( '@stdlib/utils/copy' );
 var buildPkg = require( './../../package' );
 var packageName = require( './package_name.js' );
 

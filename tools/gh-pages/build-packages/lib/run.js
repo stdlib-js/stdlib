@@ -4,11 +4,10 @@
 
 var debug = require( 'debug' )( 'gh-pages:build-packages' );
 var resolve = require( 'path' ).resolve;
-var prefix = require( './stdlib.js' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var copy = require( prefix+'@stdlib/utils/copy' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
+var cwd = require( '@stdlib/utils/cwd' );
 var findPkgs = require( './../../../pkgs/find' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
