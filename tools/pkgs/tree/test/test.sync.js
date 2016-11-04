@@ -3,8 +3,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var prefix = require( './../lib/stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
 var pkgTree = require( './../lib/sync.js' );
 
 

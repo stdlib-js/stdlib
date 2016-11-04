@@ -4,9 +4,8 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var prefix = require( './../lib/stdlib.js' );
-var noop = require( prefix+'@stdlib/utils/noop' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
+var noop = require( '@stdlib/utils/noop' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
 var pkgTree = require( './../lib/async.js' );
 
 

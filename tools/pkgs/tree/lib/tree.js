@@ -2,14 +2,13 @@
 
 // MODULES //
 
-var prefix = require( './stdlib.js' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
-var isBoolean = require( prefix+'@stdlib/utils/is-boolean' ).isPrimitive;
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var PATH_SEP = require( prefix+'@stdlib/utils/path-sep' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isBoolean = require( '@stdlib/utils/is-boolean' ).isPrimitive;
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var PATH_SEP = require( '@stdlib/utils/path-sep' );
 
 
-// TREE //
+// MAIN //
 
 /**
 * Generates a package tree from a list of package names.

@@ -8,8 +8,7 @@ var path = require( 'path' );
 var parseArgs = require( 'minimist' );
 var getKeys = require( 'object-keys' ).shim();
 var pkg = require( './../package.json' );
-var prefix = require( './../lib/stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
 var opts = require( './opts.json' );
 var main = require( './../lib' );
 

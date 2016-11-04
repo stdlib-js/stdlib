@@ -7,7 +7,7 @@ var validate = require( './validate.js' );
 var tree = require( './tree.js' );
 
 
-// SYNC //
+// MAIN //
 
 /**
 * Synchronously generates a package tree.

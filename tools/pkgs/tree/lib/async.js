@@ -3,13 +3,12 @@
 // MODULES //
 
 var pkgNames = require( './../../names' );
-var prefix = require( './stdlib.js' );
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/utils/is-function' );
 var validate = require( './validate.js' );
 var getTree = require( './tree.js' );
 
 
-// ASYNC //
+// MAIN //
 
 /**
 * Asynchronously generates a stdlib package tree.
