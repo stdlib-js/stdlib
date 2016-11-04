@@ -7,11 +7,10 @@ var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var bundle = require( './../../benchmarks-bundle' );
 var html = require( './../../benchmarks-html' );
-var prefix = require( './stdlib.js' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var isFunction = require( prefix+'@stdlib/utils/is-function' );
-var cwd = require( prefix+'@stdlib/utils/cwd' );
-var copy = require( prefix+'@stdlib/utils/copy' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isFunction = require( '@stdlib/utils/is-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
