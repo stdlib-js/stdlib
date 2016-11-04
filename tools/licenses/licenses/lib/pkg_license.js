@@ -3,13 +3,12 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:pkg:license' );
-var prefix = require( './stdlib.js' );
-var isString = require( prefix+'@stdlib/utils/is-string' ).isPrimitive;
-var isArray = require( prefix+'@stdlib/utils/is-array' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isArray = require( '@stdlib/utils/is-array' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 
 
-// LICENSE //
+// MAIN //
 
 /**
 * Returns a license name from a `package.json`.

@@ -3,12 +3,11 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:pkg:repo' );
-var prefix = require( './stdlib.js' );
-var isObject = require( prefix+'@stdlib/utils/is-plain-object' );
-var replace = require( prefix+'@stdlib/string/replace' );
+var isObject = require( '@stdlib/utils/is-plain-object' );
+var replace = require( '@stdlib/string/replace' );
 
 
-// REPO //
+// MAIN //
 
 /**
 * Extracts a repository URL (if available) from `package.json` data.

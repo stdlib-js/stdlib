@@ -3,16 +3,15 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:recurse' );
-var prefix = require( './stdlib.js' );
 var join = require( 'path' ).join;
 var getKeys = require( 'object-keys' ).shim();
-var indexOf = require( prefix+'@stdlib/utils/index-of' );
-var hasOwnProp = require( prefix+'@stdlib/utils/has-own-property' );
+var indexOf = require( '@stdlib/utils/index-of' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 var getRepo = require( './pkg_repo.js' );
 var getLicense = require( './pkg_license.js' );
 
 
-// RECURSE //
+// MAIN //
 
 /**
 * Processes a package to extract license information.
