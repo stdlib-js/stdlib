@@ -3,11 +3,10 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:infer:read-files' );
-var prefix = require( './stdlib.js' );
-var readFile = require( prefix+'@stdlib/fs/read-file' );
+var readFile = require( '@stdlib/fs/read-file' );
 
 
-// READ FILES //
+// MAIN //
 
 /**
 * Reads a list of files.

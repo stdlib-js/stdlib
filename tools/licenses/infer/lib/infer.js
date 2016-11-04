@@ -9,7 +9,7 @@ var readFiles = require( './read_files.js' );
 var inferLicense = require( './infer_license.js' );
 
 
-// INFER //
+// MAIN //
 
 /**
 * Infers license information from file content.

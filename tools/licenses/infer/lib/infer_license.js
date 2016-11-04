@@ -4,9 +4,8 @@
 
 var debug = require( 'debug' )( 'licenses:infer:license' );
 var getKeys = require( 'object-keys' ).shim();
-var prefix = require( './stdlib.js' );
-var replace = require( prefix+'@stdlib/string/replace' );
-var removePunctuation = require( prefix+'@stdlib/string/remove-punctuation' );
+var replace = require( '@stdlib/string/replace' );
+var removePunctuation = require( '@stdlib/string/remove-punctuation' );
 var RE_WHITESPACE = require( './re_whitespace.js' );
 var RE_LIST_MARKS = require( './re_list_marks.js' );
 var LICENSES = require( './db.js' );
@@ -17,7 +16,7 @@ var LICENSES = require( './db.js' );
 var KEYS = getKeys( LICENSES );
 
 
-// INFER //
+// MAIN //
 
 /**
 * Attempts to infer one or more licenses from file content.

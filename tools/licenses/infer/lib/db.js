@@ -4,10 +4,9 @@
 
 var debug = require( 'debug' )( 'licenses:infer:db' );
 var join = require( 'path' ).join;
-var prefix = require( './stdlib.js' );
-var readFile = require( prefix+'@stdlib/fs/read-file' ).sync;
-var replace = require( prefix+'@stdlib/string/replace' );
-var removePuncutation = require( prefix+'@stdlib/string/remove-punctuation' );
+var readFile = require( '@stdlib/fs/read-file' ).sync;
+var replace = require( '@stdlib/string/replace' );
+var removePuncutation = require( '@stdlib/string/remove-punctuation' );
 var RE_WHITESPACE = require( './re_whitespace.js' );
 var RE_LIST_MARKS = require( './re_list_marks.js' );
 
