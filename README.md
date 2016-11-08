@@ -86,7 +86,7 @@ Determine the absolute path of the `lib/node_modules` directory within the repos
 
 ``` bash
 $ echo $(pwd)/lib/node_modules
-'/path/to/stdlib-js/stdlib/lib/node_modules'
+/path/to/stdlib-js/stdlib/lib/node_modules
 ```
 
 To allow development tools to resolve library packages, set the [`NODE_PATH`][node-path] environment variable by adding the following line to the platform-specific configuration file for configuring user environments (e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant).
