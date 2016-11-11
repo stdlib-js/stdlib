@@ -473,6 +473,7 @@
     * [evalmd](https://github.com/reggi/evalmd)
     * [readme-tester](https://github.com/orangemug/readme-tester)
     * [jsmd](https://github.com/vesln/jsmd)
+    * [doctap](https://github.com/vweevers/doctap)
 
 69. to browser (see tools/simple-http-server)
 
@@ -1299,6 +1300,8 @@
      - but...in instances where node >= 10 is not possible (hopefully, this is an extreme event), the engine can be set to another version range
      - have a script which mines the individual `package.json` engine fields and determines, in aggregate, the supported engine range for all pkgs and assign as the engine range for the "aggregate"
      - can also lint (search pkg deps, check engine field, and see if compatible)
+
+276. stable JSON [stringify](https://github.com/substack/json-stable-stringify)
 
 
 ---
