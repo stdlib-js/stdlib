@@ -1303,6 +1303,8 @@
 
 276. stable JSON [stringify](https://github.com/substack/json-stable-stringify)
 
+277. [fuzzyset](https://github.com/Glench/fuzzyset.js)
+
 
 ---
 
