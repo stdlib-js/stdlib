@@ -1305,6 +1305,8 @@
 
 277. [fuzzyset](https://github.com/Glench/fuzzyset.js)
 
+278. [async-memoize](http://caolan.github.io/async/memoize.js.html#line11)
+
 
 ---
 
