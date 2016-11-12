@@ -1,5 +1,4 @@
-Make Style Guide
-===
+# Make Style Guide
 
 > Style guide for Make.
 

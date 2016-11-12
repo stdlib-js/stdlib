@@ -1,5 +1,4 @@
-Julia Style Guide
-===
+# Julia Style Guide
 
 > Style guide for programming in Julia.
 

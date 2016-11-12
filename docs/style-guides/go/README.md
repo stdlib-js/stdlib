@@ -1,5 +1,4 @@
-Go Style Guide
-===
+# Go Style Guide
 
 > Style guide for programming in Go.
 

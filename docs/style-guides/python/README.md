@@ -1,5 +1,4 @@
-Python Style Guide
-===
+# Python Style Guide
 
 > Style guide for programming in Python.
 

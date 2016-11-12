@@ -1,5 +1,4 @@
-SVG Equations
-===
+# SVG Equations
 
 > [remark][remark] plugin to create SVG equation files from Markdown HTML equation tags.
 

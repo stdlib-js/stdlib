@@ -1,5 +1,4 @@
-R Style Guide
-===
+# R Style Guide
 
 > Style guide for programming in R.
 

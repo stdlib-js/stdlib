@@ -1307,6 +1307,10 @@
 
 278. [async-memoize](http://caolan.github.io/async/memoize.js.html#line11)
 
+279. [Sieve of Erastothenes](https://rosettacode.org/wiki/Sieve_of_Eratosthenes#JavaScript), [stack overflow](http://stackoverflow.com/questions/15471291/sieve-of-eratosthenes-algorithm-in-javascript-running-endless-for-large-number), [Sieve of Atkin](https://en.wikipedia.org/wiki/Sieve_of_Atkin), [Sieve of Sundaram](https://en.wikipedia.org/wiki/Sieve_of_Sundaram)
+
+280. [prime decomposition](https://en.wikipedia.org/wiki/Integer_factorization#Prime_decomposition)
+
 
 ---
 

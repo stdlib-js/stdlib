@@ -1,5 +1,4 @@
-Bash Style Guide
-===
+# Bash Style Guide
 
 > Style guide for bash.
 

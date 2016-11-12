@@ -1,5 +1,4 @@
-HTML Equation Source URLs
-===
+# HTML Equation Source URLs
 
 > [remark][remark] plugin to insert SVG equation [rawgit][rawgit] URLs into Markdown HTML equation elements.
 
