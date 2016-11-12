@@ -15,7 +15,7 @@
 #   - sample values
 #
 # Example:
-#   $ sample 0.1 $RANDOM
+#   $ seq 1 100 | sample 0.1 $RANDOM
 
 BEGIN {
 	if (ARGC == 1) {
