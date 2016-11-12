@@ -115,6 +115,12 @@
 */
 
 /**
+* An array containing only functions.
+*
+* @typedef {Array<Function>} FunctionArray
+*/
+
+/**
 * An array containing only other arrays.
 *
 * @typedef {Array<Array>} ArrayArray
