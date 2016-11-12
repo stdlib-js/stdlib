@@ -11,7 +11,7 @@
 
 <div class="image" align="center">
     <a href="https://www.youtube.com/watch?v=r8XOIRebcBU">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/913bec77e84677fdbf68f4eebfc3ec8f89817a42/docs/assets/nodejs_interactive_2016_philipp_burckhardt.png" alt="Text mining with Node.js at Node.js Interactive Europe 2016">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5d74307be3b368b498679f3dfbdcbf58d7433d21/docs/assets/nodejs_interactive_2016_philipp_burckhardt.png" alt="Text mining with Node.js at Node.js Interactive Europe 2016">
     </a>
     <br>
 </div>
