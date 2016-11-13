@@ -147,10 +147,10 @@ get-istanbul-test-dirs = $(shell find $(find_kernel_prefix) $(ISTANBUL_INSTRUMEN
 
 test-istanbul-instrument: $(NODE_MODULES) clean-istanbul-instrument
 	$(QUIET) $(MKDIR_RECURSIVE) $(ISTANBUL_INSTRUMENT_OUT)
-	$(QUIET) $(ISTANBUL_INSTRUMENT) $(ISTANBUL_INSTRUMENT_FLAGS) $(NODE_PATH)
+	$(QUIET) $(ISTANBUL_INSTRUMENT) $(ISTANBUL_INSTRUMENT_FLAGS) $(SRC_DIR)
 	$(QUIET) $(RSYNC_RECURSIVE) \
 		$(ISTANBUL_RSYNC_EXCLUDES_FLAGS) \
-		$(NODE_PATH)/ \
+		$(SRC_DIR)/ \
 		$(ISTANBUL_INSTRUMENT_OUT)
 
 .PHONY: test-istanbul-instrument
