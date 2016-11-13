@@ -10,7 +10,7 @@ var TODO = require( './../lib' );
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.equal( typeof TODO, 'function', 'main export is a function' );
+	t.strictEqual( typeof TODO, 'function', 'main export is a function' );
 	t.end();
 });
 
