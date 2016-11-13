@@ -11,7 +11,7 @@ var join = require( 'path' ).join;
 var writeFile = require( 'fs' ).writeFile;
 
 
-// CONSTANTS //
+// VARIABLES //
 
 var DIV_EQN = /<div class="equation"/g;
 var LABEL = /data-equation="eq:([^"]*)">/;

@@ -6,7 +6,7 @@ var debug = require( 'debug' )( 'remark-html-equations:insert_equations' );
 var createElement = require( 'github-markdown-equation-element' );
 
 
-// CONSTANTS //
+// VARIABLES //
 
 var EQN_START = /<!-- <equation[^>]*> -->/gi;
 var EQN_END = /<!-- <\/equation> -->/gi;

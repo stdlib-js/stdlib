@@ -11,7 +11,7 @@ var PATH_SEP = require( '@stdlib/utils/path-sep' );
 var git = require( './git.js' );
 
 
-// CONSTANTS //
+// VARIABLES //
 
 var DIV_EQN = /<div class="equation"/g;
 var IMG_SOURCE = /(<img src=")([^"]*)(")/g;

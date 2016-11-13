@@ -1,6 +1,6 @@
 'use strict';
 
-// CONFIG //
+// MAIN //
 
 var config = {};
 var plugins = {};
@@ -11,9 +11,6 @@ config.plugins = plugins;
 
 plugins[ 'lint' ] = lint;
 plugins[ 'validate-links' ] = vlinks;
-
-
-// LINT RULES //
 
 // Reset all rules:
 lint[ 'reset' ] = true;
@@ -190,8 +187,7 @@ lint[ 'table-pipe-alignment' ] = true;
 // lint[ 'unordered-list-marker-style' ] = 'consistent';
 
 
-// VALIDATE LINKS //
-
+// Validate links:
 vlinks[ 'repository' ] = '';
 
 

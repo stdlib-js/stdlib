@@ -10,15 +10,12 @@ var path = require( 'path' );
 var prefix = path.resolve( __dirname, '../tools/makie/plugins' );
 
 
-// CONFIG //
+// MAIN //
 
 var config = {};
 var plugins = {};
 
 config.plugins = plugins;
-
-
-// PLUGINS //
 
 plugins[ 'repl' ] = path.join( prefix, 'makie-repl' );
 plugins[ 'notes' ] = path.join( prefix, 'makie-notes' );
