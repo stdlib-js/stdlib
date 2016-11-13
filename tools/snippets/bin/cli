@@ -9,7 +9,7 @@ var parseArgs = require( 'minimist' );
 var notifier = require( 'update-notifier' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
-var TODO = require( './../lib' );
+var main = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -53,19 +53,16 @@ function version() {
 var args;
 
 
-// INIT //
+// MAIN //
 
+// Check if newer versions exist for this package:
+notifier( { 'pkg': pkg } ).notify();
+
+// Set the process title to allow the process to be more easily identified:
 process.title = pkg.name;
 process.stdout.on( 'error', process.exit );
 
-
-// PACKAGE UPDATES //
-
-notifier( { 'pkg': pkg } ).notify();
-
-
-// ARGUMENTS //
-
+// Parse command-line arguments:
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args.help ) {
@@ -75,8 +72,5 @@ if ( args.version ) {
 	return version();
 }
 
-
-// MAIN //
-
-// TODO: implementation
-TODO();
+// Run main:
+main(); // TODO: implementation
