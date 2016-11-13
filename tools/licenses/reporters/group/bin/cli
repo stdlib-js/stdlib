@@ -16,6 +16,19 @@ var reporter = require( './../lib' );
 // FUNCTIONS //
 
 /**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
 * Prints usage information.
 *
 * @private
@@ -47,34 +60,6 @@ function version() {
 	process.stdout.write( msg, 'utf8' );
 	process.exit( 0 );
 } // end FUNCTION version()
-
-
-// VARIABLES //
-
-var args;
-
-
-// INIT //
-
-process.title = pkg.name;
-process.stdout.on( 'error', process.exit );
-
-
-// ARGUMENTS //
-
-args = parseArgs( process.argv.slice( 2 ), opts );
-
-if ( args.help ) {
-	return help();
-}
-if ( args.version ) {
-	return version();
-}
-
-
-// MAIN //
-
-stdin( 'utf8', onRead );
 
 /**
 * Callback invoked after reading `stdin`.
@@ -122,3 +107,24 @@ function onRead( error, data ) {
 		}
 	}
 } // end FUNCTION onRead()
+
+
+// VARIABLES //
+
+var args;
+
+
+// MAIN //
+
+init();
+
+// Parse command-line arguments:
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args.help ) {
+	return help();
+}
+if ( args.version ) {
+	return version();
+}
+stdin( 'utf8', onRead );

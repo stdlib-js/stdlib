@@ -16,6 +16,19 @@ var main = require( './../lib' );
 // FUNCTIONS //
 
 /**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
 * Prints usage information.
 *
 * @private
@@ -89,38 +102,6 @@ function printTree( obj, prefix ) {
 	}
 } // end FUNCTION printTree()
 
-
-// VARIABLES //
-
-var args;
-
-
-// INIT //
-
-process.title = pkg.name;
-process.stdout.on( 'error', process.exit );
-
-
-// ARGUMENTS //
-
-args = parseArgs( process.argv.slice( 2 ), opts );
-
-if ( args.help ) {
-	return help();
-}
-if ( args.version ) {
-	return version();
-}
-opts = {};
-if ( args.dir ) {
-	opts.dir = args.dir;
-}
-
-
-// MAIN //
-
-main( opts, onTree );
-
 /**
 * Callback invoked after generating a package tree.
 *
@@ -139,3 +120,29 @@ function onTree( error, tree ) {
 		printTree( tree, '' );
 	}
 } // end FUNCTION onTree()
+
+
+// VARIABLES //
+
+var args;
+
+
+// MAIN //
+
+init();
+
+// Parse command-line arguments:
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args.help ) {
+	return help();
+}
+if ( args.version ) {
+	return version();
+}
+opts = {};
+if ( args.dir ) {
+	opts.dir = args.dir;
+}
+
+main( opts, onTree );

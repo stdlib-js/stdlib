@@ -14,6 +14,19 @@ var main = require( './../lib' );
 // FUNCTIONS //
 
 /**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
 * Prints usage information.
 *
 * @private
@@ -46,20 +59,35 @@ function version() {
 	process.exit( 0 );
 } // end FUNCTION version()
 
+/**
+* Callback invoked after generating a package list.
+*
+* @private
+* @param {(Error|null)} error - error object
+* @param {(StringArray|EmptyArray)} results - results
+* @throws {Error} unexpected error
+*/
+function onResults( error, results ) {
+	var i;
+	if ( error ) {
+		throw error;
+	}
+	for ( i = 0; i < results.length; i++ ) {
+		console.log( results[ i ] );
+	}
+} // end FUNCTION onResults()
+
 
 // VARIABLES //
 
 var args;
 
 
-// INIT //
+// MAIN //
 
-process.title = pkg.name;
-process.stdout.on( 'error', process.exit );
+init();
 
-
-// ARGUMENTS //
-
+// Parse command-line arguments:
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args.help ) {
@@ -79,25 +107,4 @@ if ( args.dev === false ) {
 	opts.dev = args.dev;
 }
 
-
-// MAIN //
-
 main( opts, onResults );
-
-/**
-* Callback invoked after generating a package list.
-*
-* @private
-* @param {(Error|null)} error - error object
-* @param {(StringArray|EmptyArray)} results - results
-* @throws {Error} unexpected error
-*/
-function onResults( error, results ) {
-	var i;
-	if ( error ) {
-		throw error;
-	}
-	for ( i = 0; i < results.length; i++ ) {
-		console.log( results[ i ] );
-	}
-} // end FUNCTION onResults()

@@ -14,6 +14,19 @@ var makie = require( './../lib' );
 // FUNCTIONS //
 
 /**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
 * Prints usage information.
 *
 * @private
@@ -54,14 +67,11 @@ var args;
 var cwd;
 
 
-// INIT //
+// MAIN //
 
-process.title = pkg.name;
-process.stdout.on( 'error', process.exit );
+init();
 
-
-// ARGUMENTS //
-
+// Parse command-line arguments:
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args.help ) {
@@ -74,7 +84,7 @@ cwd = process.cwd();
 if ( args.dir ) {
 	dirpath = path.resolve( cwd, args.dir );
 } else {
-	// FIXME: this is fragile, as will break if the location of this file changes. Maybe search for first Makefile in a parent dir of `makie`? (similar to a package.json search)
+	// FIXME: this is fragile, as will break if the location of this file changes. Maybe search for first Makefile in a parent dir of `makie`? (similar to a package.json search; can use fs/resolve-parent-path stdlib pkg)
 	dirpath = path.resolve( __dirname, '../../../../' );
 }
 if ( args.config ) {
@@ -82,8 +92,5 @@ if ( args.config ) {
 } else {
 	opts = {};
 }
-
-
-// MAIN //
 
 makie( dirpath, opts, args._[0] );

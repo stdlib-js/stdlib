@@ -14,6 +14,19 @@ var main = require( './../lib' );
 // FUNCTIONS //
 
 /**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
 * Prints usage information.
 *
 * @private
@@ -52,14 +65,11 @@ function version() {
 var args;
 
 
-// INIT //
+// MAIN //
 
-process.title = pkg.name;
-process.stdout.on( 'error', process.exit );
+init();
 
-
-// ARGUMENTS //
-
+// Parse command-line arguments:
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args.help ) {
@@ -78,9 +88,6 @@ if ( args.depth ) {
 if ( args.dev === false ) {
 	opts.dev = args.dev;
 }
-
-
-// MAIN //
 
 main( opts, onResults );
 
