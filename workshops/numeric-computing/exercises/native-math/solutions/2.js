@@ -6,7 +6,7 @@ var sqrt = require( '@stdlib/math/base/special/sqrt' );
 var pow = require( '@stdlib/math/base/special/pow' );
 
 
-// RMSE //
+// MAIN //
 
 /**
 * Computes the root-mean-square error.
