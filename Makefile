@@ -17,7 +17,7 @@ endif
 endif
 
 # Define supported Node.js versions:
-NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 node'
+NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 node'
 
 # Determine the filename:
 this_file := $(lastword $(MAKEFILE_LIST))
