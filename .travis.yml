@@ -59,7 +59,7 @@ addons:
 
 # Set the clone depth:
 git:
-  depth: 50
+  depth: 100
 
 
 before_install:

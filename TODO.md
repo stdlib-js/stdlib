@@ -1313,6 +1313,12 @@
 
 281. fast [algos](http://www.machinedlearnings.com/2011/06/fast-approximate-logarithm-exponential.html), [fastpow](http://fulla.fnal.gov/acml/html/pow.html), [CORDIC](https://en.wikipedia.org/wiki/CORDIC), [trig](http://stackoverflow.com/questions/345085/how-do-trigonometric-functions-work/394512#394512), [math-prims](https://github.com/jhjourdan/SIMD-math-prims), [ACML](http://fulla.fnal.gov/acml/html/Simple.html#Simple), [l2approx](http://krisgarrett.net/papers/l2approx.pdf), [fast approx](http://onlinelibrary.wiley.com/doi/10.1002/spe.4380070212/abstract), [fast and accurate sine and cosine](http://forum.devmaster.net/t/fast-and-accurate-sine-cosine/9648/104), [rosetta commons](https://www.rosettacommons.org/manuals/archive/rosetta_2015.02.57538_user_guide/utilities/d0/da4/fast__math_8hh.html#aa94354bb29c4c2b9d0daacffbcb2990d), [jmonkeyengine](https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-core/src/main/java/com/jme3/math/FastMath.java), [fmath](https://github.com/herumi/fmath/), [fastermath](https://github.com/akohlmey/fastermath)
 
+282. [mobius-function](https://en.wikipedia.org/wiki/M%C3%B6bius_function)
+
+283. [phi function](http://stackoverflow.com/questions/1024640/calculating-phik-for-1kn)
+
+284. [chart-csv](https://github.com/watson/chart-csv)
+
 
 ---
 
