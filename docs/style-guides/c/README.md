@@ -1,5 +1,4 @@
-C Style Guide
-===
+# C Style Guide
 
 > Style guide for programming in C.
 

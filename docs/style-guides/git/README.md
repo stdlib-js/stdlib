@@ -1,5 +1,4 @@
-Git Style Guide
-===
+# Git Style Guide
 
 > Style guide for git.
 

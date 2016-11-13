@@ -1,5 +1,4 @@
-Code of Conduct
-===
+# Code of Conduct
 
 > A Code of Conduct to foster a more open, positive, welcoming, and friendly community.
 
