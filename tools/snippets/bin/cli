@@ -87,6 +87,4 @@ if ( args.help ) {
 if ( args.version ) {
 	return version();
 }
-
-// Run main:
 main(); // TODO: implementation
