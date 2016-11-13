@@ -72,7 +72,7 @@ NODE_MODULES ?= $(ROOT_DIR)/node_modules
 # Define the top-level directory containing node module executables:
 BIN_DIR ?= $(NODE_MODULES)/.bin
 
-# Define the top-level folder name containing source files:
+# Define the folder name convention for source files:
 SOURCE_FOLDER ?= lib
 
 # Define the folder name convention for test files:
