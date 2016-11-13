@@ -5,7 +5,7 @@
 var spawn = require( 'child_process' ).spawn;
 
 
-// PLUGIN //
+// MAIN //
 
 /**
 * `makie` plugin for launching a REPL.

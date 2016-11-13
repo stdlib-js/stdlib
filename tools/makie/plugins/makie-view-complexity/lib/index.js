@@ -53,7 +53,7 @@ function stderr( data ) {
 } // end FUNCTION stderr()
 
 
-// PLUGIN //
+// MAIN //
 
 /**
 * `makie` plugin to view a complexity report.

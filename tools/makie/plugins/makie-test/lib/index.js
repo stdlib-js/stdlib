@@ -57,7 +57,7 @@ function stderr( data ) {
 } // end FUNCTION stderr()
 
 
-// PLUGIN //
+// MAIN //
 
 /**
 * `makie` plugin to run tests.

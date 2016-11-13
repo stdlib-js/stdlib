@@ -53,7 +53,7 @@ function stderr( data ) {
 } // end FUNCTION stderr()
 
 
-// PLUGIN //
+// MAIN //
 
 /**
 * `makie` plugin to view a test coverage report.
