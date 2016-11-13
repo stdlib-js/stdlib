@@ -16,6 +16,27 @@ var commands = require( './commands.json' );
 // FUNCTIONS //
 
 /**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	var opts;
+
+	// Check if newer versions exist for this package:
+	opts = {
+		'pkg': pkg
+	};
+	notifier( opts ).notify();
+
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
 * Prints usage information.
 *
 * @private
@@ -69,28 +90,17 @@ var cmd;
 var i;
 
 
-// INIT //
+// MAIN //
 
-process.title = pkg.name;
-process.stdout.on( 'error', process.exit );
+init();
 
-
-// PACKAGE UPDATES //
-
-notifier( { 'pkg': pkg } ).notify();
-
-
-// ARGUMENTS //
-
+// Parse command-line arguments:
 args1 = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args1.version ) {
 	return version();
 }
 cmd = args1._[ 0 ];
-
-
-// MAIN //
 
 opts = {
 	'cwd': process.cwd(),
