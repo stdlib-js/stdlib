@@ -9,6 +9,24 @@
 
 ## Notes
 
+### ls
+
+#### Directory Tree
+
+To generate a directory tree,
+
+``` bash
+$ ls -R ./root/directory | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/--/|/'
+```
+
+where
+
+* `-R`: recursively list subdirectories.
+* `s/[^-][^\/]*\//--/g`: replace directory path segments with `--`.
+* `s/^/   /`: indent.
+* `s/--/|/`: replace the first `--` with a vertical bar.
+ 
+
 ### git
 
 #### git diff
