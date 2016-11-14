@@ -72,7 +72,7 @@ A few comments:
 
 * For simple cases, [`sed`][sed-find-and-replace] may be faster.
 * If you encounter an error due to too many arguments, use `xargs`.
-* Be __very__ careful when applying a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small subset __before__ performing on many files. You have been __warned__.
+* Be __very__ careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset __before__ performing on many files. You have been __warned__.
 
 </section>
 
