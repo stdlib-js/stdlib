@@ -1323,6 +1323,8 @@
 
 286. [geometric brownian motion](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
 
+287. [allong.es](https://github.com/raganwald/allong.es) and [ramda](http://ramdajs.com/) for functional inspiration
+
 
 ---
 
