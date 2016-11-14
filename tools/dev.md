@@ -41,6 +41,7 @@ where
 
 A few comments:
 
+* For simple cases, [`sed`][sed-find-and-replace] may be faster.
 * If you encounter an error due to too many arguments, use `xargs`.
 * Be __very__ careful when applying a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small subset __before__ performing on many files. You have been __warned__.
 
@@ -51,6 +52,8 @@ A few comments:
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[sed-find-and-replace]: http://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line
 
 </section>
 
