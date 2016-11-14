@@ -1321,6 +1321,8 @@
 
 285. Consider more specialized folders for `base/special` packages (see MATLAB's [functionlist](https://www.mathworks.com/help/matlab/functionlist.html))
 
+286. [geometric brownian motion](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
+
 
 ---
 
