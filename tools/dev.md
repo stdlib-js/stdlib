@@ -25,7 +25,7 @@ where
 * `s/[^-][^\/]*\//--/g`: replace directory path segments with `--`.
 * `s/^/   /`: indent.
 * `s/--/|/`: replace the first `--` with a vertical bar.
- 
+
 
 ### git
 
@@ -38,6 +38,17 @@ $ git diff -U0 | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)'
 ```
 
 which selects for all lines beginning with either a `+` or `-` character and then removes lines listing the filename.
+
+
+#### Search Commits
+
+To search all commits for a particular string,
+
+``` bash
+$ git rev-list --all | xargs git grep -F 'string'
+```
+
+where `-F` indicates to search for a fixed string. To search using a regular expression, use `-P` (see `git grep --help`).
 
 
 ### Find and Replace
