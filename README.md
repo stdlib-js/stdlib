@@ -183,8 +183,8 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [stability-image]: https://img.shields.io/badge/stability-experimental-orange.svg
 [stability-url]: https://github.com/stdlib-js/stdlib
 
-[npm-image]: https://img.shields.io/npm/v/@stdlib-js/stdlib.svg
-[npm-url]: https://npmjs.org/package/@stdlib-js/stdlib
+[npm-image]: https://img.shields.io/npm/v/@stdlib/stdlib.svg
+[npm-url]: https://npmjs.org/package/@stdlib/stdlib
 
 [tag-image]: https://img.shields.io/github/tag/stdlib-js/stdlib.svg
 [tag-url]: https://github.com/stdlib-js/stdlib/tags
