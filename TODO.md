@@ -1325,6 +1325,8 @@
 
 287. [allong.es](https://github.com/raganwald/allong.es) and [ramda](http://ramdajs.com/) for functional inspiration
 
+288. as part of the repo dashboard, a plot of build volatility per branch (pull data from various CI)
+
 
 ---
 
