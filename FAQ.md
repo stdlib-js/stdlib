@@ -90,7 +90,7 @@ On the surface, the above arguments seem compelling. They fail, however, to reco
 
 A central thesis of this project is as follows:
 
-> The standard Math library in JavaScript is fundamentally broken and cannot, and should not, be fixed through the official ECMAScript standard.
+> The standard Math library in JavaScript is fundamentally broken and cannot, and should not, be fixed by changing the official ECMAScript specification.
 
 The reasons are as follows:
 
@@ -112,9 +112,13 @@ The reasons are as follows:
 
 1. __timescale__: specifications and bug fixes are implemented over extended timescales. Historically, improving the standard Math library has been low priority (e.g., Mozilla first identified the need to improve `Math.random()` in 2006 and did not do so until 2015). Even if advocating for official inclusion in ECMAScript was believed desirable, the time involved to enact such implementation is not worth the effort: community solutions can simply move much faster in terms of development, testing, patching, and maintenance.
 
-1. __trust__: at a very fundamental level, trust is broken. This reason underscores all the others. A continued history of bugs, poor algorithms, insufficient testing, lack of IEEE 754 compliance, favoring speed at the cost of precision, insufficient domain knowledge, and carelessness with backward compatibility present an overwhelming case that JavaScript environments cannot, on their own, be relied upon to provide a single consistent solution to the Math problem.
+1. __trust__: at a very fundamental level, trust is broken. This reason underscores all the others. JavaScript environments cannot, on their own, be relied upon to provide a single consistent solution to the Math problem.
 
-Based on the reasons above, Math is fundamentally broken at the standards and native implementation levels. Nevertheless, based on the existence of solid low-level primitives, speed, and ecosystem, this project maintains that JavaScript __is__ a viable platform for numeric and mathematical computing. The solution, however, does not entail standardization, but rather the development of independent community-driven solutions which can provide the kind of rigorous, robust, and performant numerical algorithms applications need. 
+<!-- 1. __trust__: at a very fundamental level, trust is broken. This reason underscores all the others. A continued history of bugs, poor algorithms, insufficient testing, lack of IEEE 754 compliance, favoring speed at the cost of precision, insufficient domain knowledge, and carelessness with backward compatibility present an overwhelming case that JavaScript environments cannot, on their own, be relied upon to provide a single consistent solution to the Math problem. -->
+
+Based on the reasons above, Math is fundamentally broken at the standards and native implementation levels. Nevertheless, based on the existence of solid low-level primitives, speed, and ecosystem, this project maintains that JavaScript __is__ a viable platform for numeric and mathematical computing. The solution, however, does not entail standardization, but rather the development of independent community-driven solutions which can provide the kind of rigorous, robust, and performant numerical algorithms applications need.
+
+__Note__: To their credit, browser vendors have tried to improve and standardize their implementations. Their efforts to continue doing so are needed and important, but their improvement does __not__ obviate the need for independent community-driven solutions.
 
 
 <!-- <faq-question> -->
