@@ -113,10 +113,11 @@ install:
   - cmd: npm install -g npm@2
   - cmd: npm update -g npm
   - cmd: npm --version
+  - cmd: npm config get registry
   - cmd: set PATH=%APPDATA%\npm;%PATH%
 
   # Install node module dependencies:
-  - cmd: npm install
+  - cmd: npm install || type npm-debug.log
 
 
 build_script:
