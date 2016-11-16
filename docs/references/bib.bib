@@ -803,3 +803,18 @@
 	url = {http://dx.doi.org/10.1007/11586821_24},
 	year = {2005},
 }
+
+@article{blum:1983,
+	abstract = {Two closely-related pseudo-random sequence generators are presented: The \\(1 / P\\) generator, with input \\(P\\) a prime, outputs the quotient digits obtained on dividing \\(1\\) by \\(P\\). The \\(x^2 \bmod N\\) generator with inputs \\(N\\), \\(x_0\\) (where \\(N = P \cdot Q\\) is a product of distinct primes, each congruent to \\(3 \mod 4\\), and \\(x_0\\) is a quadratic residue \\(\bmod N\\)), outputs \\(b_0 b_1 b_2 \cdots \\) where \\(b_i = \operatorname{parity}(x_i )\\) and \\(x_{i + 1} = x_i^2 \bmod N\\). From short seeds each generator efficiently produces long well-distributed sequences. Moreover, both generators have computationally hard problems at their core. The first generator's sequences, however, are completely predictable (from any small segment of \\(2|P| + 1\\) consecutive digits one can infer the "seed," \\(P\\), and continue the sequence backwards and forwards), whereas the second, under a certain intractability assumption, is unpredictable in a precise sense. The second generator has additional interesting properties: from knowledge of \\(x_0\\) and \\(N\\) but not \\(P\\) or \\(Q\\), one can generate the sequence forwards, but, under the above-mentioned intractability assumption, one can not generate the sequence backwards. From the additional knowledge of \\(P\\) and \\(Q\\), one can generate the sequence backwards; one can even "jump" about from any point in the sequence to any other. Because of these properties, the \\(x^2 \bmod N\\) generator promises many interesting applications, e.g., to public-key cryptography. To use these generators in practice, an analysis is needed of various properties of these sequences such as their periods. This analysis is begun here.},
+	author = {Lenore Blum and Manuel Blum and Mike Shub},
+	doi = {10.1137/0215025},
+	journal = {SIAM Journal on Computing},
+	keywords = {prng, rng, random, rand, blum blum shub, crypto, cryptographic, secure},
+	month = {Aug},
+	number = {2},
+	pages = {364–-383},
+	title = {{A Simple Unpredictable Pseudo-Random Number Generator}},
+	url = {http://epubs.siam.org/doi/abs/10.1137/0215025},
+	volume = {15},
+	year = {1983},
+}
