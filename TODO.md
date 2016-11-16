@@ -1329,6 +1329,10 @@
 
 289. [deep-freeze](https://github.com/substack/deep-freeze)
 
+290. [to-source](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L887)
+
+291. [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
+
 
 ---
 
