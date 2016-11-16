@@ -3,57 +3,6 @@
 > Todo list.
 
 
-## Slides
-
-#### ndarray
-
-* context (e.g., Blas, Python)
-
-* why are they useful?
-
-  - e.g., efficient ops, like transpose (can prob find an example in one of the Math libs where they create a new data structure), flat data structure (no constant dereferencing); compatible with typed arrays
-
-* overview
-
-  - shape
-  - strides
-  - offset
-  - indexing
-
-* see `ndarray` talk
-
-* exercise
-
-
-#### Streams
-
-* overview of streams
-* streams for data analysis
-* example or two demonstrating streams; e.g., anomaly detection using 3-sigma technique
-* exercise
-
-
-#### Sentiment Analysis
-
-* overview. What is it?
-* basic algo - dictionary look-up
-* exercise
-
-
-#### Command-line Utilities
-
-* overview; establish why important
-  
-  - interoperability (anything which can read text)
-  - can place in language agnostic pipelines
-
-* standard streams
-* demo std streams by taking rand stream and piping into a CLI sparkline
-* exercise
-
-
----
-
 ## Exercises
 
 #### ndarray
