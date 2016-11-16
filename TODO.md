@@ -1327,6 +1327,8 @@
 
 288. as part of the repo dashboard, a plot of build volatility per branch (pull data from various CI)
 
+289. [deep-freeze](https://github.com/substack/deep-freeze)
+
 
 ---
 
