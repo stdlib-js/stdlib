@@ -1311,7 +1311,7 @@
 
 280. [prime decomposition](https://en.wikipedia.org/wiki/Integer_factorization#Prime_decomposition)
 
-281. fast [algos](http://www.machinedlearnings.com/2011/06/fast-approximate-logarithm-exponential.html), [fastpow](http://fulla.fnal.gov/acml/html/pow.html), [CORDIC](https://en.wikipedia.org/wiki/CORDIC), [trig](http://stackoverflow.com/questions/345085/how-do-trigonometric-functions-work/394512#394512), [math-prims](https://github.com/jhjourdan/SIMD-math-prims), [ACML](http://fulla.fnal.gov/acml/html/Simple.html#Simple), [l2approx](http://krisgarrett.net/papers/l2approx.pdf), [fast approx](http://onlinelibrary.wiley.com/doi/10.1002/spe.4380070212/abstract), [fast and accurate sine and cosine](http://forum.devmaster.net/t/fast-and-accurate-sine-cosine/9648/104), [rosetta commons](https://www.rosettacommons.org/manuals/archive/rosetta_2015.02.57538_user_guide/utilities/d0/da4/fast__math_8hh.html#aa94354bb29c4c2b9d0daacffbcb2990d), [jmonkeyengine](https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-core/src/main/java/com/jme3/math/FastMath.java), [fmath](https://github.com/herumi/fmath/), [fastermath](https://github.com/akohlmey/fastermath), [SkipCTS](https://github.com/mgbellemare/SkipCTS/tree/master/src)
+281. fast [algos](http://www.machinedlearnings.com/2011/06/fast-approximate-logarithm-exponential.html), [fastpow](http://fulla.fnal.gov/acml/html/pow.html), [CORDIC](https://en.wikipedia.org/wiki/CORDIC), [trig](http://stackoverflow.com/questions/345085/how-do-trigonometric-functions-work/394512#394512), [math-prims](https://github.com/jhjourdan/SIMD-math-prims), [ACML](http://fulla.fnal.gov/acml/html/Simple.html#Simple), [l2approx](http://krisgarrett.net/papers/l2approx.pdf), [fast approx](http://onlinelibrary.wiley.com/doi/10.1002/spe.4380070212/abstract), [fast and accurate sine and cosine](http://forum.devmaster.net/t/fast-and-accurate-sine-cosine/9648/104), [rosetta commons](https://www.rosettacommons.org/manuals/archive/rosetta_2015.02.57538_user_guide/utilities/d0/da4/fast__math_8hh.html#aa94354bb29c4c2b9d0daacffbcb2990d), [jmonkeyengine](https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-core/src/main/java/com/jme3/math/FastMath.java), [fmath](https://github.com/herumi/fmath/), [fastermath](https://github.com/akohlmey/fastermath), [SkipCTS](https://github.com/mgbellemare/SkipCTS/tree/master/src), see also Julia fastmath
 
 282. [mobius-function](https://en.wikipedia.org/wiki/M%C3%B6bius_function)
 
@@ -1334,6 +1334,24 @@
 291. [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
 
 292. data [structures](https://github.com/LukeLin/js-stl)
+
+293. [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
+
+294. rem_pio2
+
+295. [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
+
+296. [modf](https://github.com/JuliaLang/openlibm/blob/master/src/s_modf.c)
+
+297. [remquo](https://github.com/JuliaLang/openlibm/blob/master/src/s_remquo.c)
+
+298. scalbn
+
+299. [fmod](https://github.com/JuliaLang/openlibm/blob/master/src/e_fmod.c)
+
+300. equivalents to various low-level [Julia](http://docs.julialang.org/en/release-0.5/stdlib/math/?highlight=maximum#Base.mod2pi) funcs
+
+301. remainder (c) and rem
 
 
 ---
