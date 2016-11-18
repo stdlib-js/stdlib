@@ -1331,27 +1331,7 @@
 
 290. [to-source](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L887)
 
-291. [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
-
-292. data [structures](https://github.com/LukeLin/js-stl)
-
-293. [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
-
-294. rem_pio2
-
-295. [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
-
-296. [modf](https://github.com/JuliaLang/openlibm/blob/master/src/s_modf.c)
-
-297. [remquo](https://github.com/JuliaLang/openlibm/blob/master/src/s_remquo.c)
-
-298. scalbn
-
-299. [fmod](https://github.com/JuliaLang/openlibm/blob/master/src/e_fmod.c)
-
-300. equivalents to various low-level [Julia](http://docs.julialang.org/en/release-0.5/stdlib/math/?highlight=maximum#Base.mod2pi) funcs
-
-301. remainder (c) and rem
+291. data [structures](https://github.com/LukeLin/js-stl)
 
 
 ---
@@ -1515,25 +1495,25 @@
 
 8. workshop Moby Dick corpus
 
-9. 
+9. remainder (c) and rem
 
-10. 
+10. equivalents to various low-level [Julia](http://docs.julialang.org/en/release-0.5/stdlib/math/?highlight=maximum#Base.mod2pi) funcs
 
 11. blas routines
 
-12. 
+12. [fmod](https://github.com/JuliaLang/openlibm/blob/master/src/e_fmod.c)
 
-13. 
+13. [remquo](https://github.com/JuliaLang/openlibm/blob/master/src/s_remquo.c)
 
 14. [svg2png](https://github.com/domenic/svg2png) without promises and cleaner
 
      - [svgexport](https://github.com/shakiba/svgexport)
 
-15. 
+15. [modf](https://github.com/JuliaLang/openlibm/blob/master/src/s_modf.c)
 
-16. 
+16. [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
-17. 
+17. rem_pio2
 
 18. stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 
@@ -1573,11 +1553,9 @@
 
     - may need to research
 
-29. port `upsearch` to `fs`
+29. [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
 
-    - requires `is-*` modules
-
-30. 
+30. [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
 
 31. global var detection
 
