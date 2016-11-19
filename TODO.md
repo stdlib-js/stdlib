@@ -1333,6 +1333,25 @@
 
 291. data [structures](https://github.com/LukeLin/js-stl)
 
+292. perf notes
+
+     - constant propagation
+     - loop invariant code motion
+     - dead code elimination
+     - inlining
+     - loop unrolling
+     - verify results
+     - http://mrale.ph/blog/2013/08/14/hidden-classes-vs-jsperf.html
+     - http://mrale.ph/blog/2012/06/03/explaining-js-vms-in-js-inline-caches.html
+     - http://mrale.ph/blog/2012/09/23/grokking-v8-closures-for-fun.html
+     - https://www.youtube.com/watch?v=65-RbBwZQdU
+     - http://mrale.ph/blog/2012/12/15/microbenchmarks-fairy-tale.html
+     - http://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html
+     - http://mrale.ph/blog/2013/04/29/performance-tuning-as-weather-forecast.html
+     - https://floitsch.blogspot.de/search/label/V8-optimizations
+     - https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html
+     - https://mathiasbynens.be/notes/javascript-benchmarking
+
 
 ---
 
