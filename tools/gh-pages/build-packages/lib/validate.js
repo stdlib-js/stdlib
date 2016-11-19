@@ -5,7 +5,7 @@
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 var isObject = require( '@stdlib/utils/is-plain-object' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 
 
 // MAIN //
