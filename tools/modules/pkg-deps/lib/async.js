@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'module-pkg-deps:async' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 var isFunction = require( '@stdlib/utils/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );

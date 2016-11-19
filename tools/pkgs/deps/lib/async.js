@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'pkg-deps:async' );
 var path = require( 'path' );
-var isStringArray = require( '@stdlib/utils/is-string' ).isPrimitiveStringArray;
+var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 var isFunction = require( '@stdlib/utils/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
