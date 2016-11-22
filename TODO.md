@@ -1528,7 +1528,7 @@
 
      - [svgexport](https://github.com/shakiba/svgexport)
 
-15. [modf](https://github.com/JuliaLang/openlibm/blob/master/src/s_modf.c)
+15. 
 
 16. [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
