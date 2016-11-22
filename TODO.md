@@ -1666,6 +1666,14 @@
 
 62. sort methods, both numeric and general
 
+63. [is-symbol](https://github.com/ljharb/is-symbol/blob/master/index.js)
+
+64. [is-callable](https://github.com/ljharb/is-callable/blob/master/index.js)
+
+65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js)
+
+66. [foreach](https://github.com/manuelstofer/foreach/blob/master/index.js), [foreach](https://github.com/sindresorhus/each-async/blob/master/index.js), [foreach](https://github.com/Raynos/for-each)
+
 
 ---
 
