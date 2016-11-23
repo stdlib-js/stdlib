@@ -1352,6 +1352,8 @@
      - https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html
      - https://mathiasbynens.be/notes/javascript-benchmarking
 
+293. [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
+
 
 ---
 
@@ -1528,7 +1530,7 @@
 
      - [svgexport](https://github.com/shakiba/svgexport)
 
-15. 
+15. [is-class](https://github.com/miguelmota/is-class/blob/master/is-class.js)
 
 16. [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
@@ -1673,6 +1675,10 @@
 65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js)
 
 66. [foreach](https://github.com/manuelstofer/foreach/blob/master/index.js), [foreach](https://github.com/sindresorhus/each-async/blob/master/index.js), [foreach](https://github.com/Raynos/for-each)
+
+67. [md5](https://github.com/blueimp/JavaScript-MD5/blob/master/js/md5.js)
+
+68. [murmurhash](https://github.com/garycourt/murmurhash-js)
 
 
 ---
