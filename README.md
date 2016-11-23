@@ -1,6 +1,6 @@
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/20b99855bc1d6d00cd78fc0f3bdf0e69fb6f8365/docs/assets/logo_header.png" alt="stdlib logo">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6746dfdc6e031f695fc56fbefdb16e752c4d2716/docs/assets/logo_header.png" alt="stdlib logo">
     <br>
 </div>
 
