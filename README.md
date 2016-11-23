@@ -1,39 +1,8 @@
 
-<!-- <badges> -->
-
-## Status
-
-[![stability-experimental][stability-image]][stability-url]
-
-#### Version
-
-[![git tag][tag-image]][tag-url] [![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
-
-#### Build
-
-<!-- TODO: distinguish between Linux and Windows code coverage -->
-
-| OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
-| --- | --- | --- | --- | --- |
-| Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
-| Windows | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
-
-
-#### Dependencies
-
-[![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
-
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-<!-- </badges> -->
-
-
-# stdlib
+<div class="image" align="center">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9315be220889d01731816fad9c055c0bd76034d7/docs/assets/logo_header.png" alt="stdlib logo">
+    <br>
+</div>
 
 > Standard library for JavaScript.
 
@@ -176,6 +145,40 @@ See [LICENSE][license].
 ## Copyright
 
 Copyright &copy; 2016. The Stdlib [Authors][authors].
+
+
+<!-- <badges> -->
+
+---
+
+## Status
+
+[![stability-experimental][stability-image]][stability-url]
+
+#### Version
+
+[![git tag][tag-image]][tag-url] [![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
+
+#### Build
+
+<!-- TODO: distinguish between Linux and Windows code coverage -->
+
+| OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
+| --- | --- | --- | --- | --- |
+| Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
+| Windows | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
+
+
+#### Dependencies
+
+[![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+
+
+#### Community
+
+[![Chat][chat-image]][chat-url]
+
+<!-- </badges> -->
 
 
 <section class="links">
