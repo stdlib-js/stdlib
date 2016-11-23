@@ -22,7 +22,7 @@
 
 <div class="image" align="center">
     <a href="https://www.youtube.com/watch?v=5Ad3TH8XGSI">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1d0f4c869dbc29b55339fc0561ca05bf385a06b5/docs/assets/nodejs_interactive_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at EmpireNode 2016">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1d0f4c869dbc29b55339fc0561ca05bf385a06b5/docs/assets/empire_node_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at EmpireNode 2016">
     </a>
     <br>
 </div>
