@@ -1,8 +1,14 @@
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e0a1cea9049d6ba3fd8435f3346efc3415db6097/docs/assets/logo_header.png" alt="stdlib logo">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/20b99855bc1d6d00cd78fc0f3bdf0e69fb6f8365/docs/assets/logo_header.png" alt="stdlib logo">
     <br>
 </div>
+
+---
+
+# stdlib
+
+> Standard library for JavaScript.
 
 Stdlib is a collection of robust, high performance libraries for numeric computing, streams, and more. This is the GitHub repository of stdlib source code and documentation. For stdlib development notes, see below.
 
