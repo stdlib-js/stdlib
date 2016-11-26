@@ -56,11 +56,11 @@ function getTransformer( opts ) {
 				debug( 'Equation label: %s', label );
 
 				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
-				debug( 'File directory: %s', file.directory );
+				debug( 'File directory: %s', file.cwd );
 				fpath = join( opts.dir, label+'.svg' );
 				debug( 'SVG filename: %s', fpath );
 
-				fpath = resolve( file.directory, fpath );
+				fpath = resolve( file.cwd, fpath );
 				debug( 'Absolute filepath: %s', fpath );
 
 				// Get file path relative to git repository:
