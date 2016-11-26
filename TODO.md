@@ -1351,6 +1351,8 @@
      - https://floitsch.blogspot.de/search/label/V8-optimizations
      - https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html
      - https://mathiasbynens.be/notes/javascript-benchmarking
+     - https://github.com/sq/JSIL/wiki/JavaScript-Performance-For-Madmen
+     - http://mp.binaervarianz.de/JS_perf_study_TR_Oct2015.pdf
 
 293. [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
 
@@ -1679,6 +1681,8 @@
 67. [md5](https://github.com/blueimp/JavaScript-MD5/blob/master/js/md5.js)
 
 68. [murmurhash](https://github.com/garycourt/murmurhash-js)
+
+69. [deque](https://github.com/petkaantonov/deque) and [denque](https://github.com/Salakar/denque)
 
 
 ---
