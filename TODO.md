@@ -1356,6 +1356,15 @@
 
 293. [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
 
+294. compute [bus factor](https://arxiv.org/pdf/1604.06766v1.pdf) over time 
+
+295. compute [degree-of-authorship](https://arxiv.org/pdf/1604.06766v1.pdf)
+
+296. Integrate [IRHydra](https://github.com/mraleph/irhydra) as part of dev toolset
+
+297. Jaccard [similarity](https://github.com/anvaka/git-also/blob/master/lib/computeSimilarities.js ) for git commits
+
+
 
 ---
 
