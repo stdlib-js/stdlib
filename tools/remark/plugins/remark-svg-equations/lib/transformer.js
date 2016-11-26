@@ -63,7 +63,7 @@ function transformerFactory( opts ) {
 
 				// Check if we may need to create a destination directory...
 				if ( !dirflg ) {
-					dir = resolve( file.directory, opts.dir );
+					dir = resolve( file.cwd, opts.dir );
 					debug( 'Output directory: %s', dir );
 
 					debug( 'Creating output directory...' );
@@ -108,7 +108,7 @@ function transformerFactory( opts ) {
 					throw error;
 				}
 				fpath = join( opts.dir, label+'.svg' );
-				fpath = resolve( file.directory, fpath );
+				fpath = resolve( file.cwd, fpath );
 				debug( 'Absolute filepath: %s', fpath );
 
 				fopts = {
