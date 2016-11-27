@@ -326,3 +326,12 @@
 	year = {2010}
 }
 
+@misc{bug:mozilla:969203,
+	abstract = {I just made a plain C program that generates random numbers and checks whether a math function commutes (it generates a million random float numbers and directly tests the property upon these inputs -- and it finds counter examples after only a few tries (<10), so this empirical method sounds acceptable). The functions that can precisely commute are cos, sin, floor, ceil, round (the former is not specialized in Ion at the moment, see also bug 930477). The ones that don't precisely commute and that we do optimize for now are log, tan, atan, asin, acos. pow isn't optimized and doesn't commute precisely neither, but it was planned at some point (see also bug 930477 once again). Removing these functions would imply that we can't use them in Odin too (otherwise there would be a difference of behaviour between Odin and no-asm modes). This is a shame as this added more expressivity to asm.js, since C code compiled with emscripten using float functions (as logf, for instance), could behave the same in JS and in native code, at the same speed. If we remove optimizations for these functions and still want to have them available in Odin, we'd have to: convert the float input to a double, call the double math function, then convert it back to a float, which is worse in terms of performance. But precision seems more important here, so that's clearly a question of tradeoff. What do you think?},
+	keywords = {math, firefox, mozilla},
+	notes = {},
+	title = {{Float32: Take out all Math functions that don't properly commute}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8},
+	year = {2014}
+}
+
