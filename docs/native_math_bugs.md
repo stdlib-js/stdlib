@@ -42,9 +42,9 @@
 * [WebKit bug to use a better PRNG][@bug:webkit:151641]
 * [WebKit 32-bit Math bug][@bug:webkit:40367]
 * [Mozilla optimizations break commutativity][@bug:mozilla:969203]
+* [Mozilla debate on speed versus precision][@bug:mozilla:967709]
 
 
-* [Mozilla debate on speed versus precision][28]
 * [Division bug to due C library delegation][29]
 * [Fixit to unify Math implementations in Chrome][30]
 * [Fixit to unify Math.pow implementation in Chrome][31]
@@ -99,6 +99,7 @@
 [@bug:webkit:151641]: https://bugs.webkit.org/show_bug.cgi?id=151641
 [@bug:webkit:40367]: https://bugs.webkit.org/show_bug.cgi?id=40367
 [@bug:mozilla:969203]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
+[@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
@@ -106,7 +107,6 @@
 [mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
 
-[28]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 [29]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
 [30]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
 [31]: https://bugs.chromium.org/p/v8/issues/detail?id=5157
