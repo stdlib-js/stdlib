@@ -265,10 +265,19 @@
 
 @misc{bug:v8:2890,
 	abstract = {Math.round and Math.floor can deopt on minus zero, but we do not learn anything from the deopt.},
-	keywords = {math, javascript, v8, chrome,},
+	keywords = {math, javascript, v8, chrome, floor, round},
 	notes = {},
 	title = {{Deopt loops involving Math.round / Math.floor}},
 	url = {https://bugs.chromium.org/p/v8/issues/detail?id=2890},
 	year = {2013}
+}
+
+@misc{bug:v8:4059,
+	abstract = {Closely related to issue 2890, but that bug has languished and I feel the ceil(0) case in particular should be dealt with. The problem is that Math.floor deopts on -0 (repeatedly) AND that Math.ceil is implemented as -Math.floor(-x). Just got hit by this again (very hot loop deopting because of ceil(0)). This is such a frustrating performance landmine, because ceil(0) seems SO innocent, and the workarounds are quite unappealing.},
+	keywords = {math, javascript, v8, chrome, ceil, floor, round},
+	notes = {},
+	title = {{Math.ceil(0) deopt loops}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=4059},
+	year = {2015}
 }
 
