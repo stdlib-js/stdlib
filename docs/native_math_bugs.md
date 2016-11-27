@@ -29,7 +29,7 @@
 * [V8 trig function precision issues][@bug:v8:1975]
 * [WebKit `Math.random` repeat values in separate workers][@bug:webkit:36673]
 * [Predictable `Math.random` in WebKit][@bug:webkit:26972]
-* [Predictable `Math.random` in WebKit][@bug:chromium:246054]
+* [Predictable `Math.random` in Chrome][@bug:chromium:246054]
 * [Desire for fastmath implementations][@bug:mozilla:681357]
 * [Mozilla `Math.round` issues][@bug:mozilla:686708]
 * [Mozilla `Math.pow` issue][@bug:mozilla:703611]
