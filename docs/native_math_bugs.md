@@ -37,9 +37,9 @@
 * [V8 deoptimizes if `Math.floor` provided `-0`][@bug:v8:2890]
 * [V8 deoptimizes if `Math.ceil` provided `0`][@bug:v8:4059]
 * [V8 `Math.round` accuracy][@bug:v8:958]
+* [Observability of distinguishable NaNs][@bug:esdiscuss:2013-03-20]
 
 
-* [Observability of distinguishable NaNs][22]
 * [SpiderMonkey updates `Math.random`][23]
 * [V8 blog on xoshirt implementation][24]
 * [Webkit bug to use a better PRNG][25]
@@ -95,6 +95,7 @@
 [@bug:v8:2890]: https://bugs.chromium.org/p/v8/issues/detail?id=2890
 [@bug:v8:4059]: https://bugs.chromium.org/p/v8/issues/detail?id=4059
 [@bug:v8:958]: https://bugs.chromium.org/p/v8/issues/detail?id=958
+[@bug:esdiscuss:2013-03-20]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
 
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
@@ -102,7 +103,6 @@
 [mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
 
-[22]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
 [23]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529#c99
 [25]: https://bugs.webkit.org/show_bug.cgi?id=151641
 [26]: https://bugs.webkit.org/show_bug.cgi?id=40367

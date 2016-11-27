@@ -290,3 +290,12 @@
 	year = {2010}
 }
 
+@misc{bug:esdiscuss:2013-03-20,
+	abstract = {I noticed Object.is being discussed recently, and this reminded me of a concern in definition of equality predicates: that there is more than one NaN value. I see that the current draft (March 8, 2013) section 8.1.5 discusses this, but it says that "to ECMAScript code, all NaN values are indistinguishable from each other." Depending on what you mean by “ECMAScript code”, this may be false given the Typed Arrays extension, which allows direct access to the bit-patterns of float values (the Typed Arrays spec permits, but does not require, replacing a NaN value with any other NaN value on read or write). In some browsers, namely current Safari and current Chrome (stable, not beta), there are at least two distinct observable patterns (apparently one for the NaN literal and propagation from operations on it, and one for operations on numbers that are undefined). Is this considered a problem?},
+	keywords = {math, javascript, tc39, nan, ieee754, security},
+	notes = {See also https://github.com/ljharb/get-nans/blob/master/index.js and https://github.com/tc39/ecma262/issues/635},
+	title = {{Observability of NaN distinctions — is this a concern?}},
+	url = {https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern},
+	year = {2013}
+}
+
