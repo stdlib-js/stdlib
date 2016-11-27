@@ -25,10 +25,8 @@
 * [Accuracy of hyperbolic trigonometric functions in V8][@bug:paulmiller:es6-shim:334]
 * [ES6 shim accuracy issues][@bug:paulmillr:es6-shim:314]
 * [TC39 testing of Math built-ins][@bug:tc39:test262:269]
+* [V8 `math.random` PRNG quality][@bug:v8:4566]
 
-* [Non-randomness of `Math.random` in V8][15]
-* [V8 fixes `Math.random`][16]
-* [V8 patches `Math.random` to return pseudorandom numbers][17]
 * [Webkit switched to weak PRNG for speed][18]
 * [If `Math.floor` provided `-0`, V8 deoptimizes][19]
 * [If `Math.ceil` provided `0`, V8 deoptimizes][20]
@@ -43,6 +41,11 @@
 * [Division bug to due C library delegation][29]
 * [Fixit to unify Math implementations in Chrome][30]
 * [Fixit to unify Math.pow implementation in Chrome][31]
+
+
+## Notes
+
+To search for V8 Math bugs, see [V8 issue tracker][v8-issue-tracker].
 
 
 <!-- <links> -->
@@ -70,17 +73,16 @@
 [@bug:paulmiller:es6-shim:334]: https://github.com/paulmillr/es6-shim/issues/334
 [@bug:paulmillr:es6-shim:314]: https://github.com/paulmillr/es6-shim/issues/314
 [@bug:tc39:test262:269]: https://github.com/tc39/test262/pull/269
+[@bug:v8:4566]: https://bugs.chromium.org/p/v8/issues/detail?id=4566
 
-[15]: https://medium.com/@betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc
-[16]: http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/
-[17]: http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref
+[v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
+
 [18]: https://bugs.chromium.org/p/chromium/issues/detail?id=246054
 [19]: https://bugs.chromium.org/p/v8/issues/detail?id=2890
 [20]: https://bugs.chromium.org/p/v8/issues/detail?id=4059
 [21]: https://bugs.chromium.org/p/v8/issues/detail?id=958
 [22]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
 [23]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529#c99
-[24]: http://v8project.blogspot.com/2015/12/theres-mathrandom-and-then-theres.html
 [25]: https://bugs.webkit.org/show_bug.cgi?id=151641
 [26]: https://bugs.webkit.org/show_bug.cgi?id=40367
 [27]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
