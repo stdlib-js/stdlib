@@ -344,3 +344,12 @@
 	year = {2014}
 }
 
+@misc{bug:mozilla:948321,
+	abstract = {fdiv is part of the x87 instruction set that's much older than SSE2/divsd. x87 has its own stack and is a pain to use compared to SSE; we try to avoid it as much as possible. We do use it for the fisttp instruction for instance because there's no SSE equivalent on x86. Unfortunately, fdiv uses 80-bit double-extended precision and divsd/SSE2 uses 64-bit double precision. That's probably causing the difference here. This sucks because it's not very easy to work around I'm afraid. For differential testing we could try to use a compiler switch so that it's free to emit SSE2+ instructions; maybe that will keep it from emitting fdiv, or maybe it won't.. Is this also a problem with 64-bit builds?},
+	keywords = {math, firefox, mozilla, divide, division},
+	notes = {},
+	title = {{Differential Testing: Different division results on x86 platforms}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=948321},
+	year = {2013}
+}
+
