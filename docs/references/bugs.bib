@@ -301,10 +301,19 @@
 
 @misc{bug:mozilla:322529,
 	abstract = {},
-	keywords = {math, firefox, mozilla, chrome, random, rand},
+	keywords = {math, firefox, mozilla, random, rand},
 	notes = {},
 	title = {{Upgrade Math.random() to the better XorShift128+ algorithm}},
 	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=322529},
 	year = {2006}
+}
+
+@misc{bug:webkit:151641,
+	abstract = {The GameRand-based RNG Safari/JSC uses is very weak. Furthermore, it only uses 32 bits of precision. I blogged about this here: http://jandemooij.nl/blog/2015/11/27/math-random-and-32-bit-precision/. V8 moved to a better RNG and we're switching the one in SpiderMonkey as well. JSC should probably do the same.},
+	keywords = {math, webkit, safari, random, rand},
+	notes = {See also https://jandemooij.nl/blog/2015/11/27/math-random-and-32-bit-precision/.},
+	title = {{Use a better RNG for Math.random()}},
+	url = {https://bugs.webkit.org/show_bug.cgi?id=151641},
+	year = {2015}
 }
 
