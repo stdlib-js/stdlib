@@ -184,9 +184,28 @@
 
 @misc{bug:v8:4566,
 	abstract = {Just read the recent analysis of PRNG and CSPRNG in V8 here: https://medium.com/%40betable/tifu-by-using-math-random-f1c308c4fd9d. It seems contributors read this as well, as the bug in the MWC1616 implementation seems to be at least looked at here:\n\n- https://codereview.chromium.org/1462293002\n- https://github.com/v8/v8/commit/623cbdc5432713badc9fe1d605c585aabb25876c \n\nIs there any additional information the V8 team can provide that alters the outcomes of the article substantially? Are there plans to improve the baseline PRNG algorithm used in Math.random() as suggested?},
-	keywords = {math, javascript, v8, chrome, math, random, rand},
+	keywords = {math, javascript, v8, chrome, random, rand},
 	notes = {See also: betable article: https://medium.com/%40betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc; hackaday article: http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/; nextweb article: http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref; V8 blog: http://v8project.blogspot.com/2015/12/theres-mathrandom-and-then-theres.html; V8 patch: https://github.com/v8/v8/commit/085fed0fb5c3b0136827b5d7c190b4bd1c23a23e.},
 	title = {{replace MWC1616 used in PRNG Math.random()}},
 	url = {https://bugs.chromium.org/p/v8/issues/detail?id=4566},
 	year = {2015}
 }
+
+@misc{bug:v8:1975,
+	abstract = {The precision of some builtin trignometric functions (i.e. Math.pow(), Math.sin() and Math.tan()) is very low on some corner cases when compared to precomputed values.\n1) We should verify that the precomputed values are actually a good measure of what a good approximation of IEEE 754 arithmetic should return. The spec recommends (see section 15.8.2) using "fdlibm" as a reference implementation.\n2) We should verify that the test cases mentioned below actually perform correct precision measurement. The computation of the deviation itself can be tricky when it comes to floating point arithmetic.\n3) We should find out whether (and how) to improve our precision.},
+	keywords = {math, javascript, v8, chrome, trig, trigonometric, precision},
+	notes = {},
+	title = {{Precision of trignometric functions is low}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=1975},
+	year = {2012}
+}
+
+@misc{bug:webkit:36673,
+	abstract = {When calling Math.random() in different workers, Math.random() is returning the same values in the same order in each worker. For example, when executing the following code (in an object) in webkit in multiple workers, the object's redness is set to the same value in each worker: this.redness = Math.round(255*Math.random());},
+	keywords = {math, javascript, webkit, safari, random, rand},
+	notes = {Patched here: https://trac.webkit.org/changeset/65947.},
+	title = {{Math.random repeats values in different workers}},
+	url = {https://bugs.webkit.org/show_bug.cgi?id=36673},
+	year = {2010}
+}
+
