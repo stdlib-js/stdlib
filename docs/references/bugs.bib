@@ -353,3 +353,12 @@
 	year = {2013}
 }
 
+@misc{bug:v8:5086,
+	abstract = {The ES2015 spec defines a bunch of Math builtins, like Math.exp, Math.log, Math.sin and so on, which we traditionally implemented in various, i.e. some funny mix of hand written assembly, C++, JavaScript and Hydrogen code. It's pretty obvious that this is not only hard to maintain, but also creates a difficult situation for TurboFan, where we'd have to replicate what Crankshaft does. The builtins like Math.sin and Math.cos that are implemented mostly in JavaScript and which have fast paths that can be inlined cause further trouble for TurboFan, because for the slow path they have to have a call to some other JS code in it, which blocks any kind of code motion or value numbering of that. So two uses of Math.sin in a row of the same value cannot be optimized. And there are further optimization obstacles with the current approach. So the unification idea for this years fixit is to have for each (interesting) Math builtin either a.) a dedicated TurboFan machine operator (i.e. Float64Log, Float64Exp, etc.), and which can either use machine specific code or call into the C++ implementation internally, or b.) if the operation can easily be implemented via existing TurboFan operators, desugar it to that, or c.) only offer a C++ implementation, wrapped by a proper C++ builtin. The C++ implementation should ideally use fdlibm where appropriate (i.e. no performance concerns), slightly adapted to JavaScript semantics if necessary. This should live in src/base.  The goal for the Fixit is to have math.js and fdlibm.js empty by the end of the quarter and removed all the inconsistent code stubs and builtins (i.e. MathPowStub is a prime example). Bonus points if all of this can be used by asm.js->wasm as well.},
+	keywords = {math, javascript, v8, chrome, trig, trigonometric, stdlib},
+	notes = {},
+	title = {{Unify the implementation of the various Math builtins}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=5086},
+	year = {2016}
+}
+

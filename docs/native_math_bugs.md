@@ -44,9 +44,9 @@
 * [Mozilla optimizations break commutativity][@bug:mozilla:969203]
 * [Mozilla debate on speed versus precision][@bug:mozilla:967709]
 * [Mozilla division bug to due C library delegation][@bug:mozilla:948321]
+* [Fixit to unify Math implementations in Chrome][@bug:v8:5086]
 
 
-* [Fixit to unify Math implementations in Chrome][30]
 * [Fixit to unify Math.pow implementation in Chrome][31]
 
 
@@ -101,6 +101,7 @@
 [@bug:mozilla:969203]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
 [@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 [@bug:mozilla:948321]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
+[@bug:v8:5086]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
 
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
@@ -108,7 +109,6 @@
 [mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
 
-[30]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
 [31]: https://bugs.chromium.org/p/v8/issues/detail?id=5157
 
 <!-- </links> -->
