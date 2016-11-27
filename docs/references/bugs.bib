@@ -281,3 +281,12 @@
 	year = {2015}
 }
 
+@misc{bug:v8:958,
+	abstract = {Math.round(x) is implemented as Math.floor(x + 0.5). This looses precision in some cases. var s = 0.49999999999999994; alert([s, s + 0.5, Math.round(s)]); // Alerts "0.49999999999999994,5,5", i.e., incorrectly rounds to 5, not 4.},
+	keywords = {math, javascript, v8, chrome, round},
+	notes = {},
+	title = {{Math.round rounds incorrectly.}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=958},
+	year = {2010}
+}
+
