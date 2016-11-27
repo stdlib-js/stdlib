@@ -51,6 +51,7 @@
 
 * To search for V8 Math bugs, see [V8 issue tracker][v8-issue-tracker].
 * To search for WebKit Math bugs, see [WebKit issue tracker][webkit-issue-tracker].
+* To search for Mozilla Math bugs, see [Bugzilla][mozilla-issue-tracker].
 
 
 <!-- <links> -->
@@ -85,6 +86,7 @@
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
 [webkit-issue-tracker]: https://bugs.webkit.org/buglist.cgi?quicksearch=math
+[mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
 [18]: https://bugs.chromium.org/p/chromium/issues/detail?id=246054
 [19]: https://bugs.chromium.org/p/v8/issues/detail?id=2890
