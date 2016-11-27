@@ -181,3 +181,12 @@
 	url = {https://github.com/tc39/test262/pull/269},
 	year = {2015}
 }
+
+@misc{bug:v8:4566,
+	abstract = {Just read the recent analysis of PRNG and CSPRNG in V8 here: https://medium.com/%40betable/tifu-by-using-math-random-f1c308c4fd9d. It seems contributors read this as well, as the bug in the MWC1616 implementation seems to be at least looked at here:\n\n- https://codereview.chromium.org/1462293002\n- https://github.com/v8/v8/commit/623cbdc5432713badc9fe1d605c585aabb25876c \n\nIs there any additional information the V8 team can provide that alters the outcomes of the article substantially? Are there plans to improve the baseline PRNG algorithm used in Math.random() as suggested?},
+	keywords = {math, javascript, v8, chrome, math, random, rand},
+	notes = {See also: betable article: https://medium.com/%40betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc; hackaday article: http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/; nextweb article: http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref; V8 blog: http://v8project.blogspot.com/2015/12/theres-mathrandom-and-then-theres.html; V8 patch: https://github.com/v8/v8/commit/085fed0fb5c3b0136827b5d7c190b4bd1c23a23e.},
+	title = {{replace MWC1616 used in PRNG Math.random()}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=4566},
+	year = {2015}
+}
