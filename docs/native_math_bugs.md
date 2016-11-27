@@ -29,6 +29,7 @@
 * [V8 trig function precision issues][@bug:v8:1975]
 * [WebKit `Math.random` repeat values in separate workers][@bug:webkit:36673]
 * [Predictable `Math.random` in WebKit][@bug:webkit:26972]
+* [Predictable `Math.random` in WebKit][@bug:chromium:246054]
 
 
 * [Webkit switched to weak PRNG for speed][18]
@@ -83,12 +84,12 @@
 [@bug:v8:1975]: https://bugs.chromium.org/p/v8/issues/detail?id=1975
 [@bug:webkit:36673]: https://bugs.webkit.org/show_bug.cgi?id=36673
 [@bug:webkit:26972]: https://bugs.webkit.org/show_bug.cgi?id=26972
+[@bug:chromium:246054]: https://bugs.chromium.org/p/chromium/issues/detail?id=246054
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
 [webkit-issue-tracker]: https://bugs.webkit.org/buglist.cgi?quicksearch=math
 [mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
-[18]: https://bugs.chromium.org/p/chromium/issues/detail?id=246054
 [19]: https://bugs.chromium.org/p/v8/issues/detail?id=2890
 [20]: https://bugs.chromium.org/p/v8/issues/detail?id=4059
 [21]: https://bugs.chromium.org/p/v8/issues/detail?id=958
