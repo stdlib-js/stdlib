@@ -245,3 +245,12 @@
 	year = {2011}
 }
 
+@misc{bug:mozilla:703611,
+	abstract = {If x is -Infinity and y<0 and y is not an odd integer, the result is +0. Tamarin produces a -0 for this case. Code: print(Infinity/Math.pow(-Infinity, -2)); Output:  -Infinity. Expected: Infinity},
+	keywords = {math, javascript, mozilla, firefox, pow, power, exponentiation},
+	notes = {},
+	title = {{Math.pow(-Infinity, even int < 0) does not produce the correct value}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=703611},
+	year = {2011}
+}
+

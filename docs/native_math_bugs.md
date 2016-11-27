@@ -32,6 +32,7 @@
 * [Predictable `Math.random` in WebKit][@bug:chromium:246054]
 * [Desire for fastmath implementations][@bug:mozilla:681357]
 * [Mozilla `Math.round` issues][@bug:mozilla:686708]
+* [Mozilla `Math.pow` issues][@bug:mozilla:703611]
 
 
 * [If `Math.floor` provided `-0`, V8 deoptimizes][19]
@@ -88,6 +89,7 @@
 [@bug:chromium:246054]: https://bugs.chromium.org/p/chromium/issues/detail?id=246054
 [@bug:mozilla:681357]: https://bugzilla.mozilla.org/show_bug.cgi?id=681357
 [@bug:mozilla:686708]: https://bugzilla.mozilla.org/show_bug.cgi?id=686708
+[@bug:mozilla:703611]: https://bugzilla.mozilla.org/show_bug.cgi?id=703611
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
 [webkit-issue-tracker]: https://bugs.webkit.org/buglist.cgi?quicksearch=math
