@@ -362,3 +362,12 @@
 	year = {2016}
 }
 
+@misc{bug:v8:5157,
+	abstract = {Similar to what we did with the other Math builtins, we should have a single, uniform C++ implementation for Math.pow, maybe consisting of two parts, pow(double,double) and powi(double,int). The main complication here is that Math.pow is highly optimized and if we regress it even slightly we will eventually tank the imaging-darkroom benchmark in Kraken, which is essentially a microbenchmark for Math.pow.},
+	keywords = {math, javascript, v8, chrome, pow, power, exponentiation},
+	notes = {},
+	title = {{Unify the implementation of Math.pow}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=5157},
+	year = {2016}
+}
+

@@ -45,9 +45,7 @@
 * [Mozilla debate on speed versus precision][@bug:mozilla:967709]
 * [Mozilla division bug to due C library delegation][@bug:mozilla:948321]
 * [Fixit to unify Math implementations in Chrome][@bug:v8:5086]
-
-
-* [Fixit to unify Math.pow implementation in Chrome][31]
+* [Fixit to unify `Math.pow` implementation in Chrome][@bug:v8:5157]
 
 
 ## Notes
@@ -102,13 +100,10 @@
 [@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 [@bug:mozilla:948321]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
 [@bug:v8:5086]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
-
+[@bug:v8:5157]: https://bugs.chromium.org/p/v8/issues/detail?id=5157
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
 [webkit-issue-tracker]: https://bugs.webkit.org/buglist.cgi?quicksearch=math
 [mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
-
-
-[31]: https://bugs.chromium.org/p/v8/issues/detail?id=5157
 
 <!-- </links> -->
