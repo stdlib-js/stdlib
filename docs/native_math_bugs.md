@@ -44,8 +44,8 @@
 * [Mozilla optimizations break commutativity][@bug:mozilla:969203]
 * [Mozilla debate on speed versus precision][@bug:mozilla:967709]
 * [Mozilla division bug to due C library delegation][@bug:mozilla:948321]
-* [Fixit to unify Math implementations in Chrome][@bug:v8:5086]
-* [Fixit to unify `Math.pow` implementation in Chrome][@bug:v8:5157]
+* [Fixit to unify Math implementations in V8][@bug:v8:5086]
+* [Fixit to unify `Math.pow` implementation in V8][@bug:v8:5157]
 
 
 ## Notes
