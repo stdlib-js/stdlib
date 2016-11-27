@@ -64,7 +64,7 @@ $ echo $(pwd)/lib/node_modules
 
 To allow development tools to resolve library packages, set the [`NODE_PATH`][node-path] environment variable by adding the following line to the platform-specific configuration file for configuring user environments (e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant).
 
-```
+``` text
 export NODE_PATH=/path/to/stdlib-js/stdlib/lib/node_modules
 ```
 
