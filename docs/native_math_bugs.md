@@ -40,9 +40,9 @@
 * [Observability of distinguishable NaNs][@bug:esdiscuss:2013-03-20]
 * [After 10 years, Mozilla updates `Math.random`][@bug:mozilla:322529]
 * [WebKit bug to use a better PRNG][@bug:webkit:151641]
+* [WebKit 32-bit Math bug][@bug:webkit:40367]
 
 
-* [Mobile Safari 32bit Math bug][26]
 * [Mozilla optimizations break commutativity][27]
 * [Mozilla debate on speed versus precision][28]
 * [Division bug to due C library delegation][29]
@@ -97,6 +97,7 @@
 [@bug:esdiscuss:2013-03-20]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
 [@bug:mozilla:322529]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529
 [@bug:webkit:151641]: https://bugs.webkit.org/show_bug.cgi?id=151641
+[@bug:webkit:40367]: https://bugs.webkit.org/show_bug.cgi?id=40367
 
 
 [v8-issue-tracker]: https://bugs.chromium.org/p/v8/issues/list?can=1&q=math&colspec=ID%20Type%20Status%20Priority%20Owner%20Summary%20HW%20OS%20Component%20Stars&num=100&start=100
@@ -104,7 +105,6 @@
 [mozilla-issue-tracker]: https://bugzilla.mozilla.org/buglist.cgi?quicksearch=math
 
 
-[26]: https://bugs.webkit.org/show_bug.cgi?id=40367
 [27]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
 [28]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 [29]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
