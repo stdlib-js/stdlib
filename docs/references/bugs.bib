@@ -236,3 +236,12 @@
 	year = {2011}
 }
 
+@misc{bug:mozilla:686708,
+	abstract = {Returns the Number value that is closest to x and is equal to a mathematical integer. If two integer Number values are equally close to x, then the result is the Number value that is closer to +INFINITY. If x is already an integer, the result is x. - If x is -0, the result is -0. Math.round(-0); --> 0 (should be -0). Infinity/Math.round(-0) --> +Infinity (should be -Infinity)},
+	keywords = {math, javascript, mozilla, firefox, round},
+	notes = {},
+	title = {{Math.round() does not handle -0 and -0.5 properly}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=686708},
+	year = {2011}
+}
+
