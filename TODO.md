@@ -1364,6 +1364,9 @@
 
 297. Jaccard [similarity](https://github.com/anvaka/git-also/blob/master/lib/computeSimilarities.js ) for git commits
 
+298. [ulp](https://en.wikipedia.org/wiki/Unit_in_the_last_place), [ulp](https://www.mathworks.com/matlabcentral/answers/135291-can-i-compare-two-numbers-using-unit-in-the-last-place-ulps-in-matlab), [ulp](https://gist.github.com/jfalcou/5154861), [ulp](http://stackoverflow.com/questions/21371063/ulps-calculation-in-goldberg-paper), [float-distance](https://github.com/boostorg/math/blob/develop/include/boost/math/special_functions/next.hpp)
+
+299. PRNG [test](https://github.com/dartino/sdk/blob/master/src/shared/random_test.cc) to check for bit correlation
 
 
 ---

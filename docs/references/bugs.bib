@@ -181,3 +181,193 @@
 	url = {https://github.com/tc39/test262/pull/269},
 	year = {2015}
 }
+
+@misc{bug:v8:4566,
+	abstract = {Just read the recent analysis of PRNG and CSPRNG in V8 here: https://medium.com/%40betable/tifu-by-using-math-random-f1c308c4fd9d. It seems contributors read this as well, as the bug in the MWC1616 implementation seems to be at least looked at here:\n\n- https://codereview.chromium.org/1462293002\n- https://github.com/v8/v8/commit/623cbdc5432713badc9fe1d605c585aabb25876c \n\nIs there any additional information the V8 team can provide that alters the outcomes of the article substantially? Are there plans to improve the baseline PRNG algorithm used in Math.random() as suggested?},
+	keywords = {math, javascript, v8, chrome, random, rand},
+	notes = {See also: betable article: https://medium.com/%40betable/tifu-by-using-math-random-f1c308c4fd9d#.pxwdcvikc; hackaday article: http://hackaday.com/2015/12/28/v8-javascript-fixes-horrible-random-number-generator/; nextweb article: http://thenextweb.com/google/2015/12/17/google-chromes-javascript-engine-finally-returns-actual-random-numbers/#gref; V8 blog: http://v8project.blogspot.com/2015/12/theres-mathrandom-and-then-theres.html; V8 patch: https://github.com/v8/v8/commit/085fed0fb5c3b0136827b5d7c190b4bd1c23a23e.},
+	title = {{replace MWC1616 used in PRNG Math.random()}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=4566},
+	year = {2015}
+}
+
+@misc{bug:v8:1975,
+	abstract = {The precision of some builtin trignometric functions (i.e. Math.pow(), Math.sin() and Math.tan()) is very low on some corner cases when compared to precomputed values.\n1) We should verify that the precomputed values are actually a good measure of what a good approximation of IEEE 754 arithmetic should return. The spec recommends (see section 15.8.2) using "fdlibm" as a reference implementation.\n2) We should verify that the test cases mentioned below actually perform correct precision measurement. The computation of the deviation itself can be tricky when it comes to floating point arithmetic.\n3) We should find out whether (and how) to improve our precision.},
+	keywords = {math, javascript, v8, chrome, trig, trigonometric, precision},
+	notes = {},
+	title = {{Precision of trignometric functions is low}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=1975},
+	year = {2012}
+}
+
+@misc{bug:webkit:36673,
+	abstract = {When calling Math.random() in different workers, Math.random() is returning the same values in the same order in each worker. For example, when executing the following code (in an object) in webkit in multiple workers, the object's redness is set to the same value in each worker: this.redness = Math.round(255*Math.random());},
+	keywords = {math, javascript, webkit, safari, random, rand},
+	notes = {Patched here: https://trac.webkit.org/changeset/65947.},
+	title = {{Math.random repeats values in different workers}},
+	url = {https://bugs.webkit.org/show_bug.cgi?id=36673},
+	year = {2010}
+}
+
+@misc{bug:webkit:26972,
+	abstract = {it has been discovered that all of the major web browsers use a predictable pseudo-random number generator (PRNG).  please see reference [0]. the robust solution is to switch to a provably unpredictable PRNG such as Blum Blum Shub [1,2].},
+	keywords = {math, javascript, webkit, safari, random, rand},
+	notes = {},
+	title = {{predictable random number generator used in web browsers}},
+	url = {https://bugs.webkit.org/show_bug.cgi?id=26972},
+	year = {2009}
+}
+
+@misc{bug:chromium:246054,
+	abstract = {A few years ago, it was disclosed that all of the major browsers use predictable random number generators.  This paper describes one such problem with this: http://landing2.trusteer.com/list-context/publications/temporary-user-tracking-major-browsers-and-cross-domain-information-leakag. I reported this against webkit also a few years ago, but haven't seen any progress, so I assume it remains unaddressed.  I figure escalating to chromium security is the right thing to do at this point: https://bugs.webkit.org/show_bug.cgi?id=26972},
+	keywords = {math, javascript, chromium, chrome, v8, random, rand},
+	notes = {},
+	title = {{predictable random number generator}},
+	url = {https://bugs.chromium.org/p/chromium/issues/detail?id=246054},
+	year = {2013}
+}
+
+@misc{bug:mozilla:681357,
+	abstract = {It may be a good idea to implement fast (low precision) math functions in the platform and make them accessible via Javascript. This would be of great use in WebGL environments where performance is critical, but also in many other scenarios. An example of a fast math function is the "fast inverse square root", very popular from games like Quake 3. Other suggestions include: fast square root, sin, log2, pow2 and binomial coefficient (each of those being highly used in various 3D and 2D drawing algorithms).},
+	keywords = {math, javascript, mozilla, firefox, fastmath, fast, precision},
+	notes = {},
+	title = {{Fast math functions accessible with Javascript}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=681357},
+	year = {2011}
+}
+
+@misc{bug:mozilla:686708,
+	abstract = {Returns the Number value that is closest to x and is equal to a mathematical integer. If two integer Number values are equally close to x, then the result is the Number value that is closer to +INFINITY. If x is already an integer, the result is x. - If x is -0, the result is -0. Math.round(-0); --> 0 (should be -0). Infinity/Math.round(-0) --> +Infinity (should be -Infinity)},
+	keywords = {math, javascript, mozilla, firefox, round},
+	notes = {},
+	title = {{Math.round() does not handle -0 and -0.5 properly}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=686708},
+	year = {2011}
+}
+
+@misc{bug:mozilla:703611,
+	abstract = {If x is -Infinity and y<0 and y is not an odd integer, the result is +0. Tamarin produces a -0 for this case. Code: print(Infinity/Math.pow(-Infinity, -2)); Output:  -Infinity. Expected: Infinity},
+	keywords = {math, javascript, mozilla, firefox, pow, power, exponentiation},
+	notes = {},
+	title = {{Math.pow(-Infinity, even int < 0) does not produce the correct value}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=703611},
+	year = {2011}
+}
+
+@misc{bug:mozilla:1316557,
+	abstract = {Math.pow(-999, -999) should return -0, but under some compiler flags we are returning 0: https://treeherder.mozilla.org/#/jobs?repo=try&revision=24c5ecf54fb2&selectedJob=30562285. All failures on bug1314438.js are due to this. This is not related to the jits.},
+	keywords = {math, javascript, mozilla, firefox, pow, power, exponentiation},
+	notes = {},
+	title = {{Math.pow sometimes returns incorrect results}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=1316557},
+	year = {2016}
+}
+
+@misc{bug:v8:2890,
+	abstract = {Math.round and Math.floor can deopt on minus zero, but we do not learn anything from the deopt.},
+	keywords = {math, javascript, v8, chrome, floor, round},
+	notes = {},
+	title = {{Deopt loops involving Math.round / Math.floor}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=2890},
+	year = {2013}
+}
+
+@misc{bug:v8:4059,
+	abstract = {Closely related to issue 2890, but that bug has languished and I feel the ceil(0) case in particular should be dealt with. The problem is that Math.floor deopts on -0 (repeatedly) AND that Math.ceil is implemented as -Math.floor(-x). Just got hit by this again (very hot loop deopting because of ceil(0)). This is such a frustrating performance landmine, because ceil(0) seems SO innocent, and the workarounds are quite unappealing.},
+	keywords = {math, javascript, v8, chrome, ceil, floor, round},
+	notes = {},
+	title = {{Math.ceil(0) deopt loops}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=4059},
+	year = {2015}
+}
+
+@misc{bug:v8:958,
+	abstract = {Math.round(x) is implemented as Math.floor(x + 0.5). This looses precision in some cases. var s = 0.49999999999999994; alert([s, s + 0.5, Math.round(s)]); // Alerts "0.49999999999999994,5,5", i.e., incorrectly rounds to 5, not 4.},
+	keywords = {math, javascript, v8, chrome, round},
+	notes = {},
+	title = {{Math.round rounds incorrectly.}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=958},
+	year = {2010}
+}
+
+@misc{bug:esdiscuss:2013-03-20,
+	abstract = {I noticed Object.is being discussed recently, and this reminded me of a concern in definition of equality predicates: that there is more than one NaN value. I see that the current draft (March 8, 2013) section 8.1.5 discusses this, but it says that "to ECMAScript code, all NaN values are indistinguishable from each other." Depending on what you mean by “ECMAScript code”, this may be false given the Typed Arrays extension, which allows direct access to the bit-patterns of float values (the Typed Arrays spec permits, but does not require, replacing a NaN value with any other NaN value on read or write). In some browsers, namely current Safari and current Chrome (stable, not beta), there are at least two distinct observable patterns (apparently one for the NaN literal and propagation from operations on it, and one for operations on numbers that are undefined). Is this considered a problem?},
+	keywords = {math, javascript, tc39, nan, ieee754, security},
+	notes = {See also https://github.com/ljharb/get-nans/blob/master/index.js and https://github.com/tc39/ecma262/issues/635},
+	title = {{Observability of NaN distinctions — is this a concern?}},
+	url = {https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern},
+	year = {2013}
+}
+
+@misc{bug:mozilla:322529,
+	abstract = {},
+	keywords = {math, firefox, mozilla, random, rand},
+	notes = {},
+	title = {{Upgrade Math.random() to the better XorShift128+ algorithm}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=322529},
+	year = {2006}
+}
+
+@misc{bug:webkit:151641,
+	abstract = {The GameRand-based RNG Safari/JSC uses is very weak. Furthermore, it only uses 32 bits of precision. I blogged about this here: http://jandemooij.nl/blog/2015/11/27/math-random-and-32-bit-precision/. V8 moved to a better RNG and we're switching the one in SpiderMonkey as well. JSC should probably do the same.},
+	keywords = {math, webkit, safari, random, rand},
+	notes = {See also https://jandemooij.nl/blog/2015/11/27/math-random-and-32-bit-precision/.},
+	title = {{Use a better RNG for Math.random()}},
+	url = {https://bugs.webkit.org/show_bug.cgi?id=151641},
+	year = {2015}
+}
+
+@misc{bug:webkit:40367,
+	abstract = {},
+	keywords = {math, webkit, safari, 32-bit},
+	notes = {},
+	title = {{Math JavaScript Bug on Safari 5 (webkit 533.16) under "32bit" mode}},
+	url = {https://bugs.webkit.org/show_bug.cgi?id=40367},
+	year = {2010}
+}
+
+@misc{bug:mozilla:969203,
+	abstract = {I just made a plain C program that generates random numbers and checks whether a math function commutes (it generates a million random float numbers and directly tests the property upon these inputs -- and it finds counter examples after only a few tries (<10), so this empirical method sounds acceptable). The functions that can precisely commute are cos, sin, floor, ceil, round (the former is not specialized in Ion at the moment, see also bug 930477). The ones that don't precisely commute and that we do optimize for now are log, tan, atan, asin, acos. pow isn't optimized and doesn't commute precisely neither, but it was planned at some point (see also bug 930477 once again). Removing these functions would imply that we can't use them in Odin too (otherwise there would be a difference of behaviour between Odin and no-asm modes). This is a shame as this added more expressivity to asm.js, since C code compiled with emscripten using float functions (as logf, for instance), could behave the same in JS and in native code, at the same speed. If we remove optimizations for these functions and still want to have them available in Odin, we'd have to: convert the float input to a double, call the double math function, then convert it back to a float, which is worse in terms of performance. But precision seems more important here, so that's clearly a question of tradeoff. What do you think?},
+	keywords = {math, firefox, mozilla},
+	notes = {},
+	title = {{Float32: Take out all Math functions that don't properly commute}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8},
+	year = {2014}
+}
+
+@misc{bug:mozilla:967709,
+	abstract = {On the attached microbenchmark, which just pounds on sin with non-repeating values, V8 is about 2.8x faster on my Linux machine.  (Our sin/cos just call in the C stdlib's sin/cos, so this is highly dependent on OS and stdlib version.  I'd appreciate seeing what numbers other people get.)  Profiling the box2d benchmark on awfy shows about 50% of its time is just calling sin/cos and this gives V8 better overall throughput on my machine.  It looks like V8 rolls their own sin/cos (https://code.google.com/p/v8/source/detail?r=17594) which gives them more predictable performance.  They self-host sin/cos which also avoids the call out from JIT code and all the overhead that that incurs.  Since the sin/code code isn't all that complex, it seems like we could do even better with MSin/MCos MIR/LIR ops.},
+	keywords = {math, firefox, mozilla, speed, precision, accuracy, v8},
+	notes = {},
+	title = {{V8 is 2.8x faster at sin/cos}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=967709},
+	year = {2014}
+}
+
+@misc{bug:mozilla:948321,
+	abstract = {fdiv is part of the x87 instruction set that's much older than SSE2/divsd. x87 has its own stack and is a pain to use compared to SSE; we try to avoid it as much as possible. We do use it for the fisttp instruction for instance because there's no SSE equivalent on x86. Unfortunately, fdiv uses 80-bit double-extended precision and divsd/SSE2 uses 64-bit double precision. That's probably causing the difference here. This sucks because it's not very easy to work around I'm afraid. For differential testing we could try to use a compiler switch so that it's free to emit SSE2+ instructions; maybe that will keep it from emitting fdiv, or maybe it won't.. Is this also a problem with 64-bit builds?},
+	keywords = {math, firefox, mozilla, divide, division},
+	notes = {},
+	title = {{Differential Testing: Different division results on x86 platforms}},
+	url = {https://bugzilla.mozilla.org/show_bug.cgi?id=948321},
+	year = {2013}
+}
+
+@misc{bug:v8:5086,
+	abstract = {The ES2015 spec defines a bunch of Math builtins, like Math.exp, Math.log, Math.sin and so on, which we traditionally implemented in various, i.e. some funny mix of hand written assembly, C++, JavaScript and Hydrogen code. It's pretty obvious that this is not only hard to maintain, but also creates a difficult situation for TurboFan, where we'd have to replicate what Crankshaft does. The builtins like Math.sin and Math.cos that are implemented mostly in JavaScript and which have fast paths that can be inlined cause further trouble for TurboFan, because for the slow path they have to have a call to some other JS code in it, which blocks any kind of code motion or value numbering of that. So two uses of Math.sin in a row of the same value cannot be optimized. And there are further optimization obstacles with the current approach. So the unification idea for this years fixit is to have for each (interesting) Math builtin either a.) a dedicated TurboFan machine operator (i.e. Float64Log, Float64Exp, etc.), and which can either use machine specific code or call into the C++ implementation internally, or b.) if the operation can easily be implemented via existing TurboFan operators, desugar it to that, or c.) only offer a C++ implementation, wrapped by a proper C++ builtin. The C++ implementation should ideally use fdlibm where appropriate (i.e. no performance concerns), slightly adapted to JavaScript semantics if necessary. This should live in src/base.  The goal for the Fixit is to have math.js and fdlibm.js empty by the end of the quarter and removed all the inconsistent code stubs and builtins (i.e. MathPowStub is a prime example). Bonus points if all of this can be used by asm.js->wasm as well.},
+	keywords = {math, javascript, v8, chrome, trig, trigonometric, stdlib},
+	notes = {},
+	title = {{Unify the implementation of the various Math builtins}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=5086},
+	year = {2016}
+}
+
+@misc{bug:v8:5157,
+	abstract = {Similar to what we did with the other Math builtins, we should have a single, uniform C++ implementation for Math.pow, maybe consisting of two parts, pow(double,double) and powi(double,int). The main complication here is that Math.pow is highly optimized and if we regress it even slightly we will eventually tank the imaging-darkroom benchmark in Kraken, which is essentially a microbenchmark for Math.pow.},
+	keywords = {math, javascript, v8, chrome, pow, power, exponentiation},
+	notes = {},
+	title = {{Unify the implementation of Math.pow}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=5157},
+	year = {2016}
+}
+

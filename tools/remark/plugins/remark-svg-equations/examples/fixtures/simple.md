@@ -1,6 +1,6 @@
 # Absolute Value
 
-<!-- <intro> -->
+<section class="intro">
 
 The absolute value is defined as
 
@@ -13,4 +13,6 @@ The absolute value is defined as
 
 <!-- </equation> -->
 
-<!-- </intro> -->
+</section>
+
+<!-- /.intro -->
