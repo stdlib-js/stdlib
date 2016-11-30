@@ -380,3 +380,12 @@
 	year = {2011}
 }
 
+@misc{bug:v8:1101,
+	abstract = {When we execute the following code, we get back 0xfff8000000000000 (-NaN):\n\nvar buf = new Uint8Array(8);\nvar dv = new DataView(buf.buffer);\ndv.setFloat64(0, NaN, true);\nalert(dv.getUint32(4, true).toString(16)); // High 32-bit\nalert(dv.getUint32(0, true).toString(16)); // Low 32-bit\n\n However, if we change NaN to parseFloat("NaN"), we get back the correct value 0x7ff8000000000000 (NaN). In addition, replacing NaN with 0/0 gives us the incorrect value 0xfff8000000000000. The above script works correctly in JSC.},
+	keywords = {math, javascript, v8, chrome, nan, ieee754, floating-point},
+	notes = {See also https://bugs.chromium.org/p/chromium/issues/detail?id=71979.},
+	title = {{NaN is converted to 0xfff8000000000000 (-NaN)}},
+	url = {https://bugs.chromium.org/p/v8/issues/detail?id=1101},
+	year = {2011}
+}
+
