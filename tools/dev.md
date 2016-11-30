@@ -9,6 +9,31 @@
 
 ## Notes
 
+### Terminal
+
+#### Tab Title
+
+To set the title of a terminal tab,
+
+``` bash
+$ echo -n -e "\033]0;{{title}}\007"
+```
+
+To package as a command-line tool, add the following to the platform-specific configuration file for configuring user environments (e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile].
+
+``` bash
+tab() {
+    echo -n -e "\033]0;$*\007"   
+}
+```
+
+which can then be invoked
+
+``` bash
+$ tab title
+```
+
+
 ### ls
 
 #### Directory Tree
@@ -83,6 +108,8 @@ A few comments:
 <section class="links">
 
 [sed-find-and-replace]: http://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line
+
+[bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
 
 </section>
 
