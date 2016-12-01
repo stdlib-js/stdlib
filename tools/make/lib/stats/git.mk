@@ -583,6 +583,61 @@ stats-deletions-per-weekday:
 .PHONY: stats-deletions-per-weekday
 
 
+# Compute filenames changed.
+#
+# This target prints filename changes.
+
+stats-filename-changes:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/filename_changes
+	$(QUIET) $(GIT_SCRIPTS_DIR)/filename_changes
+
+.PHONY: stats-filename-changes
+
+
+# Compute filenames changed per day.
+#
+# This target computes the number of filenames changed per day.
+
+stats-filename-changes-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/filename_changes_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/filename_changes_per_day
+
+.PHONY: stats-filename-changes-per-day
+
+
+# Compute filenames changed per hour.
+#
+# This target computes the number of filenames changed per hour.
+
+stats-filename-changes-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/filename_changes_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/filename_changes_per_hour
+
+.PHONY: stats-filename-changes-per-hour
+
+
+# Compute filenames changed per month.
+#
+# This target computes the number of filenames changed per month.
+
+stats-filename-changes-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/filename_changes_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/filename_changes_per_month
+
+.PHONY: stats-filename-changes-per-month
+
+
+# Compute filenames changed per weekday.
+#
+# This target computes the number of filenames changed per weekday.
+
+stats-filename-changes-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/filename_changes_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/filename_changes_per_weekday
+
+.PHONY: stats-filename-changes-per-weekday
+
+
 # Compute files changed per day.
 #
 # This target computes the number of files changed per day.
