@@ -54,9 +54,14 @@ var opts = {
 
 bundle( cwd(), opts, clbk );
 
-function clbk( error ) {
+function clbk( error, bool ) {
     if ( error ) {
         throw error;
+    }
+    if ( bool ) {
+        console.log( 'Success!' );
+    } else {
+        console.log( 'No bundle generated.' );
     }
 }
 ```
