@@ -22,6 +22,9 @@
 # Define the Node.js versions:
 versions=(0.10 0.12 1 2 3 4 5 6 7 node)
 
+# Set a flag indicating whether to perform a fresh install of node module dependencies for each Node.js version:
+install_deps=false
+
 # Cache the current Node.js version:
 current_version=$(nvm current)
 
@@ -51,6 +54,7 @@ usage() {
 	echo '' >&2
 	echo '  -h,    --help                Print this message.' >&2
 	echo '         --versions versions   Versions to run against; e.g., `4,5,6`.' >&2
+	echo '         --install-deps        Install node module dependencies for each version.' >&2
 	echo '' >&2
 }
 
@@ -136,13 +140,15 @@ init() {
 	if [[ "$?" -ne 0 ]]; then
 		return 1
 	fi
-	clean_node
-	if [[ "$?" -ne 0 ]]; then
-		return 1
-	fi
-	install
-	if [[ "$?" -ne 0 ]]; then
-		return 1
+	if [[ "${install_deps}" = true ]]; then
+		clean_node
+		if [[ "$?" -ne 0 ]]; then
+			return 1
+		fi
+		install
+		if [[ "$?" -ne 0 ]]; then
+			return 1
+		fi
 	fi
 	return 0
 }
@@ -223,6 +229,10 @@ while :; do
 			# Handle empty `--versions=` option:
 			printf 'ERROR: "--versions" option requires a non-empty option argument.\n' >&2
 				on_error 1
+			;;
+
+		'--install-deps')
+			install_deps=true
 			;;
 
 		'--')
