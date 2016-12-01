@@ -6,7 +6,7 @@
 * @module @stdlib/tools/gh-pages/benchmarks-bundle
 *
 * @example
-* var bundle = require( '/path/to/benchmarks-bundle' );
+* var bundle = require( '@stdlib/tools/gh-pages/benchmarks-bundle' );
 *
 * var opts = {
 *     'pattern': '\*\*\/benchmark*.js',
@@ -24,7 +24,7 @@
 * }
 *
 * @example
-* var bundle = require( '/path/to/benchmarks-bundle' );
+* var bundle = require( '@stdlib/tools/gh-pages/benchmarks-bundle' );
 *
 * var opts = {
 *     'pattern': '\*\*\/benchmark*.js'
