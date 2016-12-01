@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Prints the number of filenames changed per weekday.
+#
+# <weekday> <filenamess_changed>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to print filename changes:
+renames="${root}/tools/git/scripts/filename_changes"
+
+# * `renames`
+#   - Print filename changes.
+# * `awk '{}'`
+#   - Tabulate the weekday totals.
+"${renames}" | awk '
+BEGIN {
+	split("Mon Tue Wed Thu Fri Sat Sun", days);
+}
+{
+	lines[$1] += 1
+}
+END {
+	for (i = 1; i <= 7; i++) {
+		print days[i] OFS lines[days[i]]
+	}
+}'
