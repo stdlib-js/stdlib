@@ -49,8 +49,8 @@ To specify an output file path, set the `out` option.
 var bundle = '/foo/bar/bundle.js';
 
 var opts = {
-    'out': '/foo/bar/benchmarks.html';
-}
+    'out': '/foo/bar/benchmarks.html'
+};
 
 build( bundle, opts, clbk );
 
