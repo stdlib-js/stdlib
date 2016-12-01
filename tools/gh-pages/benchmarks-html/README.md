@@ -96,6 +96,60 @@ function onBuild( error, html ) {
 
 <!-- /.examples -->
 
+<!-- Section for describing a command-line interface. -->
+
+---
+
+<section class="cli">
+
+## CLI
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+``` bash
+Usage: benchmarks-html [options] url
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --title title         HTML title.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+``` bash
+$ benchmarks-html /foo/bar/beep.js
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
