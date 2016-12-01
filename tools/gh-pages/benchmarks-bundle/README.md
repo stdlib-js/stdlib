@@ -50,7 +50,7 @@ var cwd = require( '@stdlib/utils/cwd' );
 
 var opts = {
     'out': '/foo/bar/bundle.js'
-}
+};
 
 bundle( cwd(), opts, clbk );
 
@@ -68,7 +68,7 @@ var cwd = require( '@stdlib/utils/cwd' );
 
 var opts = {
     'pattern': '**/bench.js'
-}
+};
 
 bundle( cwd(), opts, clbk );
 
