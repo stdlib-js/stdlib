@@ -2,7 +2,7 @@
 #
 # Prints filename changes.
 #
-# <weekday> <month> <day> <time> <year> <first_name> <last_name> <original_filename> <new_filename> <%>
+# <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name> <original_filename> <new_filename> <%>
 
 # * `git log --reverse`
 #   - Show commit logs in reverse order.
