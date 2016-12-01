@@ -1,9 +1,12 @@
 {
-  "name": "",
-  "version": "",
+  "name": "@stdlib/tools/gh-pages/benchmarks-bundle",
+  "version": "0.0.0",
   "description": "Bundle benchmark files into a single file using browserify.",
   "author": {},
   "contributors": [],
+  "bin": {
+    "benchmarks-bundle": "./bin/cli"
+  },
   "scripts": {},
   "main": "./lib",
   "repository": {},
