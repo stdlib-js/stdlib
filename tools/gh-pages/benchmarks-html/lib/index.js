@@ -6,7 +6,7 @@
 * @module @stdlib/tools/gh-pages/benchmarks-html
 *
 * @example
-* var build = require( '/path/to/benchmarks-html' );
+* var build = require( '@stdlib/tools/gh-pages/benchmarks-html' );
 *
 * var bundle = '/foo/bar/bundle.js';
 * var opts = {
@@ -22,7 +22,7 @@
 * }
 *
 * @example
-* var build = require( '/path/to/benchmarks-html' );
+* var build = require( '@stdlib/tools/gh-pages/benchmarks-html' );
 *
 * var bundle = '/foo/bar/bundle.js';
 *
