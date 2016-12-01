@@ -18,7 +18,7 @@ var validate = require( './validate.js' );
 // MAIN //
 
 /**
-* Builds assets.
+* Builds assets for running benchmarks in a web browser.
 *
 * @param {string} root - root directory
 * @param {string} output - output directory
@@ -34,6 +34,29 @@ var validate = require( './validate.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+*
+* @example
+* var root = '/foo/bar/benchmark';
+* var out = '/beep/boop';
+*
+* var opts = {
+*     'pattern': '\*\*\/benchmark*.js',
+*     'bundle': 'benchmark_bundle.js',
+*     'html': 'benchmarks.html'
+* };
+*
+* build( root, out, opts, clbk );
+*
+* function clbk( error, bool ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     if ( bool ) {
+*         console.log( 'Success!' );
+*     } else {
+*         console.log( 'No generated assets.' );
+*     }
+* }
 */
 function build( root, output, options, clbk ) {
 	var bopts;
