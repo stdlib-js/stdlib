@@ -2,8 +2,7 @@
 #
 # Prints filename changes.
 #
-# <weekday> <month> <day> <time> <year> <first_name> <last_name>
-# R<%> <original_filename> <new_filename>
+# <weekday> <month> <day> <time> <year> <first_name> <last_name> <original_filename> <new_filename> <%>
 
 # * `git log --reverse`
 #   - Show commit logs in reverse order.
@@ -17,10 +16,29 @@
 #   - Format the log.
 # * `--date=format:""`
 #   - Format the date.
+# * `awk '{}'
+#   - Process each commit.
 git log \
 	--reverse \
 	--find-renames \
 	--name-status \
 	--diff-filter R \
 	--format=format:"%ad %aN" \
-	--date=format:"%a %b %d %T %Y"
+	--date=format:"%a %b %d %T %Y" \
+| awk '
+# Skip empty lines:
+NF == 0 {
+	next
+}
+
+# Date lines:
+! /^R/ {
+	date = $0
+	next
+}
+
+# Filename changes:
+{
+	print date OFS $2 OFS $3 OFS substr($1, 2)
+}
+'
