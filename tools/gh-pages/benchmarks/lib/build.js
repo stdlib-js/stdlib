@@ -24,7 +24,7 @@ var validate = require( './validate.js' );
 * @param {string} output - output directory
 * @param {Options} [options] - options
 * @param {string} [options.pattern] - glob pattern
-* @param {string} [options.bundle] - output bundle
+* @param {string} [options.bundle] - output bundle filename
 * @param {string} [options.mount] - URL path on which to mount a bundle
 * @param {string} [options.html] - output HTML filename
 * @param {string} [options.title] - HTML title
