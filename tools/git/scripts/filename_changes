@@ -39,6 +39,14 @@ NF == 0 {
 
 # Filename changes:
 {
-	print date OFS $2 OFS $3 OFS substr($1, 2)
+	pct = substr($1, 2)
+	if (match(pct, /^0[1-9]/)) {
+		pct = substr(pct, 2)
+	} else if (match(pct, /^00[1-9]/)) {
+		pct = substr(pct, 2)
+	} else if (match(pct, /^000/)) {
+		pct = 0
+	}
+	print date OFS $2 OFS $3 OFS pct
 }
 '
