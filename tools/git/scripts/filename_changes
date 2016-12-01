@@ -40,6 +40,8 @@ NF == 0 {
 # Filename changes:
 {
 	pct = substr($1, 2)
+
+	# Remove leading zeros...
 	if (match(pct, /^0[1-9]/)) {
 		pct = substr(pct, 2)
 	} else if (match(pct, /^00[1-9]/)) {
