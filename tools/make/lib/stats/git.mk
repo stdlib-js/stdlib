@@ -187,6 +187,39 @@ stats-author-deletions-per-weekday:
 .PHONY: stats-author-deletions-per-weekday
 
 
+# Compute number of filenames changed per day per author.
+#
+# This target computes the number of filename changes per day per author.
+
+stats-author-filename-changes-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_day
+
+.PHONY: stats-author-filename-changes-per-day
+
+
+# Compute number of filenames changed per month per author.
+#
+# This target computes the number of filename changes per month per author.
+
+stats-author-filename-changes-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_month
+
+.PHONY: stats-author-filename-changes-per-month
+
+
+# Compute number of filenames changed per weekday per author.
+#
+# This target computes the number of filename changes per weekday per author.
+
+stats-author-filename-changes-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_weekday
+
+.PHONY: stats-author-filename-changes-per-weekday
+
+
 # Compute author number of changed files per day.
 #
 # This target computes the number of files changed per day per author.
