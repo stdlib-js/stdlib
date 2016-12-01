@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#
+# Prints filename changes.
+#
+# <weekday> <month> <day> <time> <year> <first_name> <last_name>
+# R<%> <original_filename> <new_filename>
+
+# * `git log --reverse`
+#   - Show commit logs in reverse order.
+# * `--find-renames`
+#   - Find file renames.
+# * `--name-status`
+#   - Show only names.
+# * `--diff-filter R`
+#   - Only select files which are renamed (R).
+# * `--format=format:""`
+#   - Format the log.
+# * `--date=format:""`
+#   - Format the date.
+git log \
+	--reverse \
+	--find-renames \
+	--name-status \
+	--diff-filter R \
+	--format=format:"%ad %aN" \
+	--date=format:"%a %b %d %T %Y"
