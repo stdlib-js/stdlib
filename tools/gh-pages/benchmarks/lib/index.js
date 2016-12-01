@@ -8,7 +8,7 @@
 * @example
 * var build = require( '@stdlib/tools/gh-pages/benchmarks' );
 *
-* var src = '/foo/bar/benchmark';
+* var root = '/foo/bar/benchmark';
 * var out = '/beep/boop';
 *
 * var opts = {
@@ -17,7 +17,7 @@
 *     'html': 'benchmarks.html'
 * };
 *
-* build( src, out, opts, clbk );
+* build( root, out, opts, clbk );
 *
 * function clbk( error, bool ) {
 *     if ( error ) {
