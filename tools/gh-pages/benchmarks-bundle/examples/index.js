@@ -15,5 +15,5 @@ function onBundle( error, bundle ) {
 	if ( error ) {
 		throw error;
 	}
-	console.log( bundle );
+	console.log( bundle.toString() );
 }
