@@ -6,7 +6,7 @@
 * @module @stdlib/tools/gh-pages/benchmarks
 *
 * @example
-* var build = require( '/path/to/benchmarks' );
+* var build = require( '@stdlib/tools/gh-pages/benchmarks' );
 *
 * var src = '/foo/bar/benchmark';
 * var out = '/beep/boop';
