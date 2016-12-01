@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Prints the number of filename changes per day.
+#
+# <month> <day> <year> <number_of_changes>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to print filename changes:
+renames="${root}/tools/git/scripts/filename_changes"
+
+# * `renames`
+#   - Print filename changes.
+# * `awk '{}'
+#   - Tabulate the daily totals.
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
+# * `awk '{}'`
+#   - Format the output.
+"${renames}" | awk '
+{
+	day = $5 OFS $2 OFS $3
+
+	# Update daily totals:
+	lines[day] += 1
+}
+END {
+	for (day in lines) {
+		print day OFS lines[day]
+	}
+}
+' | sort -k1n -k2M | awk '{print $2 OFS $3 OFS $1 OFS $4}'
