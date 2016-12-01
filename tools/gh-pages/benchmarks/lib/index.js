@@ -16,6 +16,19 @@
 *     'bundle': 'benchmark_bundle.js',
 *     'html': 'benchmarks.html'
 * };
+*
+* build( src, out, opts, clbk );
+*
+* function clbk( error, bool ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     if ( bool ) {
+*         console.log( 'Success!' );
+*     } else {
+*         console.log( 'No generated assets.' );
+*     }
+* }
 */
 
 // MODULES //
