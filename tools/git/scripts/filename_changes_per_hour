@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#
+# Prints the number of filenames changed per hour.
+#
+# <hour> <filenames_changed>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to print filename changes:
+renames="${root}/tools/git/scripts/filename_changes"
+
+# * `renames`
+#   - Print filename changes
+# * `awk '{}'`
+#   - Tabulate the hourly totals.
+# * `sort -n`
+#   - Sort in numerical order.
+"${renames}" | awk '
+{
+	split($4, time, ":")
+	hr = time[1]
+	lines[hr] += 1
+}
+END {
+	for (hr in lines) {
+		print hr OFS lines[hr]
+	}
+}
+' | sort -n
