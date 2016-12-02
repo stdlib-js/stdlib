@@ -159,6 +159,10 @@ Options:
 
 <section class="notes">
 
+### Notes
+
+* If not provided a root directory, the root directory is the current working directory. 
+
 </section>
 
 <!-- /.notes -->
