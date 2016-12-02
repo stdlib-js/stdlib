@@ -104,7 +104,7 @@ function convert( file, options, clbk ) {
 		var view;
 		if ( error ) {
 			debug( 'Encountered an error when attempting to read file: %s', error.message );
-			return done( error );
+			return done();
 		}
 		debug( 'Successfully read file.' );
 
