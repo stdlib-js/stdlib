@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:bundle' );
+var debug = require( 'debug' )( 'browserify:bundle' );
 var writeFile = require( 'fs' ).writeFile;
 var browserify = require( 'browserify' );
 
@@ -15,6 +15,18 @@ var browserify = require( 'browserify' );
 * @param {StringArray} files - files to bundle
 * @param {string} [dest] - output file path
 * @param {Callback} clbk - callback to invoke after creating a bundle
+*
+* @example
+* var files = [ '/foo/bar.js', '/beep/boop.js' ];
+* var dest = '/bip/bundle.js';
+*
+* bundle( files, dest, clbk );
+*
+* function clbk( error ) {
+*     if ( error ) {
+*         throw error;
+*     }
+* }
 */
 function bundle( files, dest, clbk ) {
 	var opts;

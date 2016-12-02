@@ -3,10 +3,10 @@
 /**
 * Bundle files into a single file using `browserify`.
 *
-* @module @stdlib/tools/gh-pages/bundle
+* @module @stdlib/tools/browserify/bundle
 *
 * @example
-* var bundle = require( '/path/to/bundle' );
+* var bundle = require( '@stdlib/tools/browserify/bundle' );
 *
 * var files = [ '/foo/bar.js', '/beep/boop.js' ];
 * var dest = '/bip/bundle.js';
@@ -20,7 +20,7 @@
 * }
 *
 * @example
-* var bundle = require( '/path/to/bundle' );
+* var bundle = require( '@stdlib/tools/browserify/bundle' );
 *
 * var files = [ '/foo/bar.js', '/beep/boop.js' ];
 *

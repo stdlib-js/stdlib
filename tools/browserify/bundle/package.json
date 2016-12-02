@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "",
+  "name": "@stdlib/tools/browserify/bundle",
+  "version": "0.0.0",
   "description": "Bundle one or more files into a single file using browserify.",
   "author": {},
   "contributors": [],
