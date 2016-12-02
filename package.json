@@ -64,6 +64,7 @@
     "remark-cli": "^2.0.0",
     "remark-html": "^5.1.0",
     "remark-lint": "^5.0.0",
+    "remark-slug": "^4.2.2",
     "remark-validate-links": "^5.0.0",
     "resolve": "^1.1.7",
     "semver": "^5.3.0",
