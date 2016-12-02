@@ -5,7 +5,7 @@
   "author": {},
   "contributors": [],
   "bin": {
-    "search-index": "./bin/cli"
+    "create-search": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",

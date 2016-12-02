@@ -3,12 +3,12 @@
 var lunr = require( 'lunr' );
 var path = require( 'path' );
 var tokenizer = require( './../lib/tokenizer.js' );
-var createSearchIndex = require( './../lib' );
+var create = require( './../lib' );
 
 lunr.tokenizer.registerFunction( tokenizer, 'readme_tokenizer' );
 lunr.tokenizer.load( 'readme_tokenizer' );
 
-createSearchIndex({
+create({
 	'dir': path.join( __dirname, './../../../lib/node_modules/@stdlib' )
 }, onIndex );
 
