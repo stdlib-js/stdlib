@@ -1,0 +1,8 @@
+
+Usage: browserify-bundle [options] file1 file2 ...
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+
