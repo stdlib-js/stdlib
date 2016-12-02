@@ -2,11 +2,11 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:tests' );
+var debug = require( 'debug' )( 'test:browser-build' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
-var bundle = require( './../../tests-bundle' );
-var html = require( './../../tests-html' );
+var bundle = require( './../../bundle' );
+var html = require( './../../html' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/utils/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
@@ -18,13 +18,13 @@ var validate = require( './validate.js' );
 // MAIN //
 
 /**
-* Builds assets.
+* Builds assets for running tests in a web browser.
 *
 * @param {string} root - root directory
 * @param {string} output - output directory
 * @param {Options} [options] - options
 * @param {string} [options.pattern] - glob pattern
-* @param {string} [options.bundle] - output bundle
+* @param {string} [options.bundle] - output bundle filename
 * @param {string} [options.mount] - URL path on which to mount a bundle
 * @param {string} [options.html] - output HTML filename
 * @param {string} [options.title] - HTML title
@@ -34,6 +34,29 @@ var validate = require( './validate.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+*
+* @example
+* var root = '/foo/bar/test';
+* var out = '/beep/boop';
+*
+* var opts = {
+*     'pattern': '\*\*\/test*.js',
+*     'bundle': 'test_bundle.js',
+*     'html': 'tests.html'
+* };
+*
+* build( root, out, opts, clbk );
+*
+* function clbk( error, bool ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     if ( bool ) {
+*         console.log( 'Success!' );
+*     } else {
+*         console.log( 'No generated assets.' );
+*     }
+* }
 */
 function build( root, output, options, clbk ) {
 	var bopts;

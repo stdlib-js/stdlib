@@ -1,14 +1,14 @@
 'use strict';
 
 /**
-* Build test assets.
+* Build assets for running tests in a web browser.
 *
-* @module @stdlib/tools/gh-pages/tests
+* @module @stdlib/tools/test/browser-build
 *
 * @example
-* var build = require( '/path/to/tests' );
+* var build = require( '@stdlib/tools/test/browser-build' );
 *
-* var src = '/foo/bar/test';
+* var root = '/foo/bar/test';
 * var out = '/beep/boop';
 *
 * var opts = {
@@ -16,6 +16,19 @@
 *     'bundle': 'test_bundle.js',
 *     'html': 'tests.html'
 * };
+*
+* build( root, out, opts, clbk );
+*
+* function clbk( error, bool ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     if ( bool ) {
+*         console.log( 'Success!' );
+*     } else {
+*         console.log( 'No generated assets.' );
+*     }
+* }
 */
 
 // MODULES //

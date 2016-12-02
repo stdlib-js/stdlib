@@ -16,7 +16,7 @@ var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 * @param {Object} opts - destination object
 * @param {Options} options - function options
 * @param {string} [options.pattern] - glob pattern
-* @param {string} [options.bundle] - output bundle
+* @param {string} [options.bundle] - output bundle filename
 * @param {string} [options.mount] - URL path on which to mount a bundle
 * @param {string} [options.html] - output HTML filename
 * @param {string} [options.title] - HTML title
