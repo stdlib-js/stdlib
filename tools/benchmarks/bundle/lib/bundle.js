@@ -28,6 +28,22 @@ var validate = require( './validate.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+*
+* @example
+* var opts = {
+*     'pattern': '\*\*\/benchmark*.js',
+*     'out': '/foo/bar/bundle.js'
+* };
+*
+* var root = '/beep/boop';
+*
+* build( root, opts, clbk );
+*
+* function clbk( error ) {
+*     if ( error ) {
+*         throw error;
+*     }
+* }
 */
 function build( root, options, clbk ) {
 	var gopts;
