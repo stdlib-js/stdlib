@@ -37,6 +37,18 @@ template = readFileSync( template, {
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+*
+* @example
+* var bundle = '/foo/bar/bundle.js';
+*
+* build( bundle, clbk );
+*
+* function clbk( error, html ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( html );
+* }
 */
 function build( bundle, options, clbk ) {
 	var wopts;
