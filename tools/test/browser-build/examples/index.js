@@ -12,7 +12,7 @@ mkdirp( out );
 
 var opts = {
     'pattern': 'index.js',
-    'bundle': 'test.js',
+    'bundle': 'test_bundle.js',
     'html': 'tests.html'
 };
 
