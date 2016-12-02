@@ -3,10 +3,10 @@
 /**
 * Generate an HTML file for running tests.
 *
-* @module @stdlib/tools/gh-pages/tests-html
+* @module @stdlib/tools/test/html
 *
 * @example
-* var build = require( '/path/to/tests-html' );
+* var build = require( '@stdlib/tools/test/html' );
 *
 * var bundle = '/foo/bar/bundle.js';
 * var opts = {
@@ -22,7 +22,7 @@
 * }
 *
 * @example
-* var build = require( '/path/to/tests-html' );
+* var build = require( '@stdlib/tools/test/html' );
 *
 * var bundle = '/foo/bar/bundle.js';
 *
