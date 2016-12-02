@@ -18,14 +18,14 @@ var browserify = require( 'browserify' );
 *
 * @example
 * var files = [ '/foo/bar.js', '/beep/boop.js' ];
-* var dest = '/bip/bundle.js';
 *
-* bundle( files, dest, clbk );
+* bundle( files, clbk );
 *
-* function clbk( error ) {
+* function clbk( error, bundle ) {
 *     if ( error ) {
 *         throw error;
 *     }
+*     console.log( bundle.toString() );
 * }
 */
 function bundle( files, dest, clbk ) {
