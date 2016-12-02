@@ -206,7 +206,7 @@ Options:
 ### Examples
 
 ``` bash
-$ mkdir build && benchmarks-browser-build --pattern 'index.js' --out=./build ./examples/fixtures
+$ mkdir ./build && benchmarks-browser-build --pattern 'index.js' --out=./build ./examples/fixtures
 ```
 
 </section>
