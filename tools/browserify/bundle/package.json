@@ -1,0 +1,23 @@
+{
+  "name": "@stdlib/tools/browserify/bundle",
+  "version": "0.0.0",
+  "description": "Bundle one or more files into a single file using browserify.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "browserify-bundle": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "bundle",
+    "browserify"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

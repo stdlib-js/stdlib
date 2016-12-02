@@ -1,0 +1,24 @@
+{
+  "name": "@stdlib/tools/test/html",
+  "version": "0.0.0",
+  "description": "Generate an HTML file for running tests.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "test-html": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tests",
+    "test",
+    "html"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

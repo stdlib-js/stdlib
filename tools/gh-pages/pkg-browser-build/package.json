@@ -1,0 +1,24 @@
+{
+  "name": "@stdlib/tools/gh-pages/pkg-browser-build",
+  "version": "0.0.0",
+  "description": "Build package assets.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "pkg-browser-build": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "package",
+    "pkg",
+    "bundle"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@stdlib/markdown/to-vdom",
+  "version": "0.0.0",
+  "description": "Converts Markdown to virtual DOM.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "markdown-to-vdom": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "convert",
+    "transform",
+    "markdown",
+    "mdown",
+    "md",
+    "virtual",
+    "dom",
+    "virtual-dom",
+    "vdom"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}

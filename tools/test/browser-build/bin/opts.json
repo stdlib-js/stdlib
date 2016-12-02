@@ -1,0 +1,25 @@
+{
+	"string": [
+		"out",
+		"pattern",
+		"bundle",
+		"html",
+		"mount",
+		"title"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"out": [
+			"o"
+		]
+	}
+}

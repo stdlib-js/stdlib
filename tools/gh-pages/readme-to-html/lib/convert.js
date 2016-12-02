@@ -4,14 +4,14 @@
 
 var debug = require( 'debug' )( 'gh-pages:readme-to-html' );
 var resolve = require( 'path' ).resolve;
-var exec = require( 'child_process' ).exec;
 var writeFile = require( 'fs' ).writeFile;
 var mustache = require( 'mustache' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/utils/is-function' );
-var exists = require( '@stdlib/fs/exists' );
+var readFile = require( '@stdlib/fs/read-file' );
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
+var toHTML = require( './../../../markdown/to-html' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var template = require( './html_template.js' );
@@ -88,57 +88,29 @@ function convert( file, options, clbk ) {
 			append = [ opts.append ];
 		}
 	}
-	debug( 'Testing if source file exists...' );
-	exists( src, onExists );
+	debug( 'Reading file...' );
+	readFile( src, onRead );
 
 	/**
-	* Callback invoked upon testing for file existence.
+	* Callback invoked upon reading a file.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {boolean} bool - boolean indicating if a file exists
+	* @param {Buffer} file - file
 	*/
-	function onExists( error, bool ) {
-		var opts;
-		var cmd;
-		if ( !bool ) {
-			debug( 'Source file does not exist.' );
+	function onRead( error, file ) {
+		var wopts;
+		var html;
+		var view;
+		if ( error ) {
+			debug( 'Encountered an error when attempting to read file: %s', error.message );
 			return done();
 		}
-		cmd = 'pandoc';
-		cmd += ' --from=markdown_github+markdown_in_html_blocks-citations-autolink_bare_uris';
-		cmd += ' --to=html5';
-		cmd += ' --no-highlight';
-		cmd += ' '+src;
+		debug( 'Successfully read file.' );
 
-		debug( 'Converting file to HTML...' );
-		opts = {
-			'cwd': __dirname
-		};
-		debug( 'Command: %s', cmd );
-		exec( cmd, opts, onExec );
-	} // end FUNCTION onExists()
+		debug( 'Converting file content to HTML...' );
+		html = toHTML( file );
 
-	/**
-	* Callback invoked when a child process terminates.
-	*
-	* @private
-	* @param {(Error|null)} error - error object
-	* @param {Buffer} stdout - standard output
-	* @param {Buffer} stderr - standard error
-	*/
-	function onExec( error, stdout, stderr ) {
-		var wopts;
-		var view;
-		var html;
-		if ( error ) {
-			debug( 'Encountered an error when converting file: %s', error.message );
-			return done( error );
-		}
-		debug( 'Command stderr: %s', stderr.toString() );
-		debug( 'Successfully converted file.' );
-
-		html = stdout.toString();
 		if ( !opts.fragment ) {
 			view = {
 				'title': opts.title,
@@ -162,7 +134,7 @@ function convert( file, options, clbk ) {
 			'encoding': 'utf8'
 		};
 		writeFile( out, html, wopts, onWrite );
-	} // end FUNCTION onExec()
+	} // end FUNCTION onRead()
 
 	/**
 	* Callback invoked upon writing to file.
