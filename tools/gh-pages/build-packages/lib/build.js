@@ -2,10 +2,10 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:build-packages:build' );
+var debug = require( 'debug' )( 'gh-pages:packages:build:build' );
 var join = require( 'path' ).join;
 var copy = require( '@stdlib/utils/copy' );
-var buildPkg = require( './../../package' );
+var buildPkg = require( './../../pkg-browser-build' );
 var packageName = require( './package_name.js' );
 
 
