@@ -1418,7 +1418,7 @@
    - [vstream](https://github.com/joyent/node-vstream) => instrumented streams
    - [through2-concurrent](https://github.com/almost/through2-concurrent)
    - log
-   - [ndjson](https://github.com/maxogden/ndjson)
+   - [ndjson](https://github.com/maxogden/ndjson) and [nldj](https://github.com/mawni/nldj/blob/master/nldj.js)
    - [one-way multiplexing](https://github.com/mafintosh/stream-channels)
    - [xhr-write-stream](https://github.com/substack/xhr-write-stream)
    - [utf8-stream](https://github.com/substack/utf8-stream)
@@ -1505,6 +1505,7 @@
 5. The REPL (why matters)
 6. mining git repos
 7. open open source reporting
+8. what can be done at standards level to better facilitate math
 
 
 ---
@@ -1589,6 +1590,7 @@
 28. [fast](https://golang.org/src/math/pow.go) pow
 
     - may need to research
+    - integer variant from V8
 
 29. [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
 
