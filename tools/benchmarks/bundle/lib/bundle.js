@@ -2,10 +2,10 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:bundle-benchmarks' );
+var debug = require( 'debug' )( 'benchmarks:bundle' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var bundle = require( './../../bundle' );
+var bundle = require( './../../../browserify/bundle' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/utils/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );

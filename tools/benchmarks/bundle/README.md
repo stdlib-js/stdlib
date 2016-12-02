@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var bundle = require( '@stdlib/tools/gh-pages/benchmarks-bundle' );
+var bundle = require( '@stdlib/tools/benchmarks/bundle' );
 ```
 
 #### bundle( root, \[options,\] clbk )
@@ -105,7 +105,7 @@ function clbk( error, bundle ) {
 
 ``` javascript
 var join = require( 'path' ).join;
-var bundle = require( '@stdlib/tools/gh-pages/benchmarks-bundle' );
+var bundle = require( '@stdlib/tools/benchmarks/bundle' );
 
 var root = join( __dirname, 'fixtures' );
 

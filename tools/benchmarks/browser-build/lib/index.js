@@ -3,10 +3,10 @@
 /**
 * Build benchmark assets.
 *
-* @module @stdlib/tools/gh-pages/benchmarks
+* @module @stdlib/tools/benchmarks/browser-build
 *
 * @example
-* var build = require( '@stdlib/tools/gh-pages/benchmarks' );
+* var build = require( '@stdlib/tools/benchmarks/browser-build' );
 *
 * var root = '/foo/bar/benchmark';
 * var out = '/beep/boop';

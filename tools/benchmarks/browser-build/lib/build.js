@@ -2,11 +2,11 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:benchmarks' );
+var debug = require( 'debug' )( 'benchmarks:browser-build' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
-var bundle = require( './../../benchmarks-bundle' );
-var html = require( './../../benchmarks-html' );
+var bundle = require( './../../bundle' );
+var html = require( './../../html' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/utils/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );

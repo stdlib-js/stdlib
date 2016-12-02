@@ -1,11 +1,11 @@
 {
-  "name": "@stdlib/tools/gh-pages/benchmarks-bundle",
+  "name": "@stdlib/tools/benchmarks/browser-build",
   "version": "0.0.0",
-  "description": "Bundle benchmark files into a single file using browserify.",
+  "description": "Build assets for running benchmarks in a web browser.",
   "author": {},
   "contributors": [],
   "bin": {
-    "benchmarks-bundle": "./bin/cli"
+    "benchmark-browser-build": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",
@@ -14,8 +14,9 @@
     "stdlib",
     "tools",
     "benchmarks",
-    "bundle",
-    "browserify"
+    "benchmark",
+    "bench",
+    "bundle"
   ],
   "bugs": {},
   "dependencies": {},

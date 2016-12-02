@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var build = require( '@stdlib/tools/gh-pages/benchmarks' );
+var build = require( '@stdlib/tools/benchmarks/browser-build' );
 ```
 
 #### build( root, output, \[options,\] clbk )
@@ -127,7 +127,7 @@ function clbk( error, bool ) {
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var mkdirp = require( 'mkdirp' ).sync;
-var build = require( '@stdlib/tools/gh-pages/benchmarks' );
+var build = require( '@stdlib/tools/benchmarks/browser-build' );
 
 var root = join( __dirname, 'fixtures' );
 var out = resolve( __dirname, '../build' );

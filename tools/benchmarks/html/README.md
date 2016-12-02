@@ -1,4 +1,4 @@
-# Benchmarks
+# HTML
 
 > Generate an HTML file for running benchmarks.
 
@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var build = require( '@stdlib/tools/gh-pages/benchmarks-html' );
+var build = require( '@stdlib/tools/benchmarks/html' );
 ```
 
 #### build( bundle, \[options,\] clbk )
@@ -80,7 +80,7 @@ function clbk( error ) {
 ## Examples
 
 ``` javascript
-var build = require( '@stdlib/tools/gh-pages/benchmarks-html' );
+var build = require( '@stdlib/tools/benchmarks/html' );
 
 build( '/foo/bar/bundle.js', onBuild );
 
