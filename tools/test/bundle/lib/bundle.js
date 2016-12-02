@@ -118,7 +118,7 @@ function build( root, options, clbk ) {
 	* @param {(Error|null)}  error - error object
 	* @param {Buffer} bundle - bundle
 	*/
-	function onBundle( error ) {
+	function onBundle( error, bundle ) {
 		if ( error ) {
 			debug( 'Encountered an error when generating bundle: %s', error.message );
 			return cb( error );
