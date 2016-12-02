@@ -1,0 +1,27 @@
+{
+  "name": "@stdlib/markdown/to-html",
+  "version": "0.0.0",
+  "description": "Converts Markdown to HTML.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "markdown-to-html": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "convert",
+    "transform",
+    "markdown",
+    "mdown",
+    "md",
+    "html"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
