@@ -101,4 +101,4 @@ if ( args.help ) {
 if ( args.version ) {
 	return version();
 }
-main( args._, opts, onBundle );
+main( args._, onBundle );
