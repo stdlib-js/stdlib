@@ -8,7 +8,7 @@
 * @example
 * var build = require( '@stdlib/tools/gh-pages/pkg-browser-build' );
 *
-* var src = '/foo/bar';
+* var root = '/foo/bar';
 * var out = '/beep/boop';
 *
 * var opts = {
@@ -18,6 +18,15 @@
 *      },
 *     'readme': 'README.md'
 * };
+*
+* build( root, out, opts, clbk );
+*
+* function clbk( error ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( 'Success!' );
+* }
 */
 
 // MODULES //
