@@ -23,7 +23,7 @@ var bundle = require( '@stdlib/tools/gh-pages/benchmarks-bundle' );
 
 #### bundle( root, \[options,\] clbk )
 
-Given a `root` root directory from which to search for benchmarks, bundle benchmarks into a single file using [browserify][browserify].
+Given a `root` directory from which to search for benchmarks, bundle benchmarks into a single file using [browserify][browserify].
 
 ``` javascript
 var cwd = require( '@stdlib/utils/cwd' );
