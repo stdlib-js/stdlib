@@ -100,18 +100,19 @@ h2 {
 	margin-bottom: 40px;
 }
 
-.readme h1,
-.readme h2,
-.readme h3,
-.readme h4,
-.readme h5,
-.readme h6,
-.readme p,
-.readme blockquote,
-.readme pre,
-.readme code,
-.readme ul,
-.readme hr {
+.readme > h1,
+.readme > h2,
+.readme > h3,
+.readme > h4,
+.readme > h5,
+.readme > h6,
+.readme > section,
+.readme > p,
+.readme > blockquote,
+.readme > pre,
+.readme > code,
+.readme > ul,
+.readme > hr {
 	width: 55%;
 }
 
@@ -131,7 +132,7 @@ h2 {
 .readme ul,
 .readme ol {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 16px;
 	padding-left: 2em;
 }
 
