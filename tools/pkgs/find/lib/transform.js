@@ -8,10 +8,10 @@ var dirname = require( '@stdlib/utils/dirname' );
 // MAIN //
 
 /**
-* Transforms a raw `package.json` file list.
+* Transforms a raw file list.
 *
 * @private
-* @param {StringArray} files - list of `package.json` absolute file paths
+* @param {StringArray} files - list of absolute file paths
 * @returns {StringArray} list of packages
 *
 * @example
