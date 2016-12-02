@@ -18,7 +18,7 @@ Asynchronously search for packages.
 ``` javascript
 findPkgs( onPkgs );
 
-function onList( error, pkgs ) {
+function onPkgs( error, pkgs ) {
     if ( error ) {
         throw error;
     }
