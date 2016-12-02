@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* Build benchmark assets.
+* Build assets for running benchmarks in a web browser.
 *
 * @module @stdlib/tools/benchmarks/browser-build
 *
