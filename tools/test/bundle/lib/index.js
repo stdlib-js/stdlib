@@ -3,10 +3,10 @@
 /**
 * Bundle test files into a single file.
 *
-* @module @stdlib/tools/gh-pages/tests-bundle
+* @module @stdlib/tools/test/bundle
 *
 * @example
-* var bundle = require( '/path/to/tests-bundle' );
+* var bundle = require( '@stdlib/tools/test/bundle' );
 *
 * var opts = {
 *     'pattern': '\*\*\/test*.js',
@@ -24,7 +24,7 @@
 * }
 *
 * @example
-* var bundle = require( '/path/to/tests-bundle' );
+* var bundle = require( '@stdlib/tools/test/bundle' );
 *
 * var opts = {
 *     'pattern': '\*\*\/test*.js'

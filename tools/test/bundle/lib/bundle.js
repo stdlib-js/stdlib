@@ -2,10 +2,10 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:bundle-tests' );
+var debug = require( 'debug' )( 'test:bundle' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var bundle = require( './../../bundle' );
+var bundle = require( './../../../browserify/bundle' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/utils/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
@@ -28,6 +28,22 @@ var validate = require( './validate.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be an function
+*
+* @example
+* var opts = {
+*     'pattern': '\*\*\/test*.js'
+* };
+*
+* var root = '/beep/boop';
+*
+* build( root, opts, clbk );
+*
+* function clbk( error, bundle ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( bundle.toString() );
+* }
 */
 function build( root, options, clbk ) {
 	var gopts;
