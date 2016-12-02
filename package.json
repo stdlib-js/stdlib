@@ -66,6 +66,7 @@
     "remark-lint": "^5.0.0",
     "remark-slug": "^4.2.2",
     "remark-validate-links": "^5.0.0",
+    "remark-vdom": "^3.1.0",
     "resolve": "^1.1.7",
     "semver": "^5.3.0",
     "spdx-license-ids": "^1.2.2",
