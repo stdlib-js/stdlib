@@ -4,6 +4,9 @@
   "description": "Bundle one or more files into a single file using browserify.",
   "author": {},
   "contributors": [],
+  "bin": {
+    "browserify-bundle": "./bin/cli"
+  },
   "scripts": {},
   "main": "./lib",
   "repository": {},
