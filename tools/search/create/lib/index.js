@@ -5,12 +5,14 @@
 var path = require( 'path' );
 var readFileList = require( '@stdlib/fs/read-file-list' );
 var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var findPkgs = require( './../../../pkgs/find' );
-var createIndex = require( './create_index.js' )
+var createIndex = require( './create_index.js' );
 var getExisting = require( './get_existing.js' );
-var combine = require( './combine.js' );;
+var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
+var combine = require( './combine.js' );
 
 
 // MAIN //
@@ -20,6 +22,8 @@ var validate = require( './validate.js' );
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory at which to start indexing
+* @param {string} [options.pattern='**\/package.json'] - glob pattern
+* @param {StringArray} [options.ignore] - glob pattern(s) to exclude matches
 * @param {Callback} clbk - callback function
 */
 function createSearchIndex() {
@@ -28,7 +32,7 @@ function createSearchIndex() {
 	var clbk;
 	var err;
 
-	opts = {};
+	opts = copy( defaults );
 	if ( arguments.length < 2 ) {
 		clbk = arguments[ 0 ];
 	} else {
