@@ -29,6 +29,7 @@ var styles = require( './styles.js' );
 * @param {string} [options.title] - HTML title
 * @param {string} [options.tests] - tests URL
 * @param {string} [options.benchmarks] - benchmarks URL
+* @param {string} [options.source] - source URL
 * @param {boolean} [options.fragment] - output an HTML fragment
 * @param {string} [options.prepend] - content to prepend to HTML body
 * @param {string} [options.append] - content to append to HTML body
@@ -116,6 +117,7 @@ function convert( file, options, clbk ) {
 				'title': opts.title,
 				'tests': opts.tests,
 				'benchmarks': opts.benchmarks,
+				'source': opts.source,
 				'head': head,
 				'prepend': prepend,
 				'append': append,

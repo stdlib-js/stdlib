@@ -20,6 +20,7 @@ var isBoolean = require( '@stdlib/utils/is-boolean' ).isPrimitive;
 * @param {string} [options.title] - HTML title
 * @param {string} [options.tests] - tests URL
 * @param {string} [options.benchmarks] - benchmarks URL
+* @param {string} [options.source] - source URL
 * @param {string} [options.prepend] - content to prepend to HTML body
 * @param {string} [options.append] - content to append to HTML body
 * @param {string} [options.head] - content to insert into HTML head
@@ -64,6 +65,12 @@ function validate( opts, options ) {
 		opts.benchmarks = options.benchmarks;
 		if ( !isString( opts.benchmarks ) ) {
 			return new TypeError( 'invalid option. `benchmarks` option must be a string. Option: `'+opts.benchmarks+'`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'source' ) ) {
+		opts.source = options.source;
+		if ( !isString( opts.source ) ) {
+			return new TypeError( 'invalid option. `source` option must be a string. Option: `'+opts.source+'`.' );
 		}
 	}
 	if ( hasOwnProp( options, 'head' ) ) {
