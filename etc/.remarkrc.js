@@ -21,7 +21,7 @@ lint[ 'blockquote-indentation' ] = 2; // characters
 // Define the checkbox character style:
 lint[ 'checkbox-character-style' ] = {
 	'checked': 'x',
-	'unchecked': ''
+	'unchecked': ' '
 };
 
 // Prevent checkboxes being followed by too much white-space:
@@ -55,7 +55,7 @@ lint[ 'final-definition' ] = true;
 lint[ 'final-newline' ] = true;
 
 // Specify a first heading level:
-// lint[ 'first-heading-level' ] = 2;
+lint[ 'first-heading-level' ] = 1;
 
 // Prevent too many spaces from being used to hard break:
 lint[ 'hard-break-spaces' ] = true;
@@ -64,7 +64,7 @@ lint[ 'hard-break-spaces' ] = true;
 // lint[ 'heading-increment' ] = true;
 
 // Define the heading style:
-// lint[ 'heading-style' ] = 'atx';
+lint[ 'heading-style' ] = 'atx';
 
 // Require double quotes for link titles:
 lint[ 'link-title-style' ] = '"';
@@ -99,8 +99,11 @@ lint[ 'no-consecutive-blank-lines' ] = false;
 // Prevent duplicate definitions:
 lint[ 'no-duplicate-definitions' ] = true;
 
+// Prevent duplicate headings within a section:
+lint[ 'no-duplicate-headings-in-section' ] = true;
+
 // Prevent duplicate headings:
-lint[ 'no-duplicate-headings' ] = true;
+lint[ 'no-duplicate-headings' ] = false;
 
 // Prevent emphasis being used as a heading:
 lint[ 'no-emphasis-as-heading' ] = true;
@@ -144,6 +147,9 @@ lint[ 'no-missing-blank-lines' ] = true;
 // Allow multiple top-level headings:
 lint[ 'no-multiple-toplevel-headings' ] = false;
 
+// Do not allow references to be used like URLs:
+lint[ 'no-reference-like-url' ] = true;
+
 // Allow shell commands to be prefixed with `$` symbols:
 lint[ 'no-shell-dollars' ] = false;
 
@@ -182,6 +188,9 @@ lint[ 'table-cell-padding' ] = 'padded';
 
 // Require table pipe alignment:
 lint[ 'table-pipe-alignment' ] = true;
+
+// Require table rows to be fenced in table pipes:
+lint[ 'table-pipes' ] = true;
 
 // Define the unordered list marker style:
 // lint[ 'unordered-list-marker-style' ] = 'consistent';
