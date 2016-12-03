@@ -15,7 +15,7 @@ var listItem = require( './list_item.js' );
 // VARIABLES //
 
 var begin = '<input class="slideout-menu-input" id="slideout-menu-input-root" name="slideout-menu-input-root" type="checkbox"><label class="slideout-menu-label hamburger-menu-icon" for="slideout-menu-input-root"><span></span><span></span><span></span></label><nav class="menu slideout-menu">';
-var header = '<a href="{{href}}"><header class="menu-header"><span class="menu-header-title">{{title}}</span></header></a>';
+var header = '<a class="menu-header-wrapper" href="{{href}}"><header class="menu-header"><span class="menu-header-title">{{title}}</span></header></a>';
 var list_start = '<ul>';
 var list_end = '</ul>';
 var end = '</nav>';
