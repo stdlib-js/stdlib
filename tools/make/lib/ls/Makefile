@@ -59,6 +59,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_clis.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_names.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_namespaces.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_tree.mk
