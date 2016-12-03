@@ -1,0 +1,27 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Create a serialized search index for all packages.",
+  "author": {},
+  "contributors": [],
+  "bin": {
+    "create-search": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {},
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "search",
+    "docs",
+    "index",
+    "readme",
+    "modules"
+  ],
+  "bugs": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": ""
+}
