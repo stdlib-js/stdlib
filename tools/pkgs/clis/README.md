@@ -1,6 +1,6 @@
-# Find Packages
+# Find Package CLIs
 
-> Find packages.
+> Find package command-line interfaces (CLIs).
 
 
 <section class="usage">
@@ -8,28 +8,28 @@
 ## Usage
 
 ``` javascript
-var findPkgs = require( '/path/to/stdlib/tools/pkgs/find' );
+var findCLIs = require( '/path/to/stdlib/tools/pkgs/find' );
 ```
 
-#### findPkgs( \[options,\] clbk )
+#### findCLIs( \[options,\] clbk )
 
-Asynchronously search for packages.
+Asynchronously search for package command-line interfaces.
 
 ``` javascript
-findPkgs( onPkgs );
+findCLIs( onCLIs );
 
-function onPkgs( error, pkgs ) {
+function onCLIs( error, files ) {
     if ( error ) {
         throw error;
     }
-    console.log( pkgs.join( '\n' ) );
+    console.log( files.join( '\n' ) );
 }
 ```
 
 The function accepts the following `options`:
 
 * __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
-* __pattern__: glob pattern used to find packages. Default: `'**/package.json'`.
+* __pattern__: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern __must__ end with `package.json`).
 * __ignore__: list of glob patterns used to exclude matches.
 
 To search from an alternative directory, set the `dir` option.
@@ -39,30 +39,30 @@ var opts = {
     'dir': '/foo/bar/baz'
 };
 
-findPkgs( opts, onPkgs );
+findCLIs( opts, onCLIs );
 
-function onPkgs( error, pkgs ) {
+function onCLIs( error, files ) {
     if ( error ) {
         throw error;
     }
-    console.log( pkgs.join( '\n' ) );
+    console.log( files.join( '\n' ) );
 }
 ```
 
-By default, the implementation searches for packages by finding `package.json` files. To provide an alternative include filter, set the `pattern` option.
+To provide an alternative include filter, set the `pattern` option.
 
 ``` javascript
 var opts = {
     'pattern': '**/foo/**/package.json'
 };
 
-findPkgs( opts, onPkgs );
+findCLIs( opts, onCLIs );
 
-function onPkgs( error, pkgs ) {
+function onCLIs( error, files ) {
     if ( error ) {
         throw error;
     }
-    console.log( pkgs.join( '\n' ) );
+    console.log( files.join( '\n' ) );
 }
 ```
 
@@ -77,31 +77,44 @@ var opts = {
     ]
 };
 
-findPkgs( opts, onPkgs );
+findCLIs( opts, onCLIs );
 
-function onPkgs( error, pkgs ) {
+function onCLIs( error, files ) {
     if ( error ) {
         throw error;
     }
-    console.log( pkgs.join( '\n' ) );
+    console.log( files.join( '\n' ) );
 }
 ```
 
 
-#### findPkgs.sync( \[options\] )
+#### findCLIs.sync( \[options\] )
 
-Synchronously searches for packages.
+Synchronously searches for package command-line interfaces.
 
 ``` javascript
-var pkgs = findPkgs.sync();
+var files = findCLIs.sync();
 // returns [...]
 ```
 
-The function accepts the same `options` as `findPkgs()` above.
+The function accepts the same `options` as `findCLIs()` above.
 
 </section>
 
 <!-- /.usage -->
+
+
+<section class="notes">
+
+## Notes
+
+* The implementation resolves command-line interfaces by reading `package.json` files and resolving paths found in the `bin` field. 
+* __No__ attempt is made to ensure that a command-line interface file exists.
+* The implementation __assumes__ that a `bin` field is valid; i.e., either a `string` or an `object`.
+
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -109,15 +122,15 @@ The function accepts the same `options` as `findPkgs()` above.
 ## Examples
 
 ``` javascript
-var findPkgs = require( '/path/to/stdlib/tools/pkgs/find' );
+var findCLIs = require( '@stdlib/tools/pkgs/clis' );
 
-findPkgs( onPkgs );
+findCLIs( onCLIs );
 
-function onPkgs( error, pkgs ) {
+function onCLIs( error, files ) {
     if ( error ) {
         throw error;
     }
-    console.log( pkgs.join( '\n' ) );
+    console.log( files.join( '\n' ) );
 }
 ```
 
@@ -137,7 +150,7 @@ function onPkgs( error, pkgs ) {
 ### Usage
 
 ``` bash
-Usage: find-pkgs [options] [dir]
+Usage: find-pkg-clis [options] [dir]
 
 Options:
 
@@ -160,7 +173,7 @@ Options:
 * To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
   ``` bash
-  $ find-pkgs --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+  $ find-pkg-clis --ignore=node_modules/** --ignore=build/** --ignore=reports/**
   ```
 
 </section>
@@ -173,9 +186,9 @@ Options:
 ### Examples
 
 ``` bash
-$ find-pkgs
-<package_path>
-<package_path>
+$ find-pkg-clis
+<filepath>
+<filepath>
 ...
 ```
 

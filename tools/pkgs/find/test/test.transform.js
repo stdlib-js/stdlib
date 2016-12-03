@@ -14,7 +14,7 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the function transforms a list of `package.json` files into a list of packages', function test( t ) {
+tape( 'the function transforms a list of files into a list of packages', function test( t ) {
 	var expected;
 	var actual;
 	var files;

@@ -8,19 +8,19 @@ var proxyquire = require( 'proxyquire' );
 var noop = require( '@stdlib/utils/noop' );
 var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 var isArray = require( '@stdlib/utils/is-array' );
-var findPkgs = require( './../lib/async.js' );
+var findCLIs = require( './../lib/async.js' );
 
 
 // VARIABLES //
 
-var dir = resolve( __dirname, '..', '..' );
+var dir = resolve( __dirname, '..' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.equal( typeof findPkgs, 'function', 'main export is a function' );
+	t.strictEqual( typeof findCLIs, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -31,7 +31,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 		var opts = {
 			'dir': null
 		};
-		findPkgs( opts, noop );
+		findCLIs( opts, noop );
 	}
 });
 
@@ -57,7 +57,7 @@ tape( 'if provided a callback argument which is not a function, the function thr
 
 	function badValue( value ) {
 		return function badValue() {
-			findPkgs( value );
+			findCLIs( value );
 		};
 	}
 });
@@ -84,17 +84,17 @@ tape( 'if provided a callback argument which is not a function, the function thr
 
 	function badValue( value ) {
 		return function badValue() {
-			findPkgs( {}, value );
+			findCLIs( {}, value );
 		};
 	}
 });
 
 tape( 'the function returns an error to a provided callback if an error is encountered while searching a directory', function test( t ) {
-	var findPkgs = proxyquire( './../lib/async.js', {
+	var findCLIs = proxyquire( './../lib/async.js', {
 		'glob': glob
 	});
 
-	findPkgs( clbk );
+	findCLIs( clbk );
 
 	function glob() {
 		var cb = arguments[ arguments.length-1 ];
@@ -110,26 +110,39 @@ tape( 'the function returns an error to a provided callback if an error is encou
 	}
 });
 
-tape( 'the function returns a string array (if able to resolve packages)', function test( t ) {
-	var opts = {
+tape( 'the function returns an error to a provided callback if an error is encountered while reading `package.json` files', function test( t ) {
+	var findCLIs;
+	var opts;
+
+	findCLIs = proxyquire( './../lib/async.js', {
+		'./read_pkgs.js': readPkgs
+	});
+	opts = {
 		'dir': dir
 	};
-	findPkgs( opts, clbk );
-	function clbk( error, pkgs ) {
-		if ( error ) {
-			t.ok( false, error.message );
+
+	findCLIs( opts, clbk );
+
+	function readPkgs() {
+		var cb = arguments[ arguments.length-1 ];
+		setTimeout( onTimeout, 0 );
+		function onTimeout() {
+			cb( new Error( 'beep' ) );
 		}
-		t.equal( isStringArray( pkgs ), true, 'returns a string array' );
+	}
+
+	function clbk( error ) {
+		t.ok( error, 'returns an error' );
 		t.end();
 	}
 });
 
-tape( 'the function returns an empty array (if unable to resolve packages)', function test( t ) {
-	var findPkgs = proxyquire( './../lib/async.js', {
+tape( 'the function returns an empty array if unable to resolve any packages', function test( t ) {
+	var findCLIs = proxyquire( './../lib/async.js', {
 		'glob': glob
 	});
 
-	findPkgs( clbk );
+	findCLIs( clbk );
 
 	function glob() {
 		var cb = arguments[ arguments.length-1 ];
@@ -139,12 +152,26 @@ tape( 'the function returns an empty array (if unable to resolve packages)', fun
 		}
 	}
 
-	function clbk( error, pkgs ) {
+	function clbk( error, files ) {
 		if ( error ) {
 			t.ok( false, error.message );
 		}
-		t.equal( isArray( pkgs ), true, 'returns an array' );
-		t.equal( pkgs.length, 0, 'returns an empty array' );
+		t.strictEqual( isArray( files ), true, 'returns an array' );
+		t.strictEqual( files.length, 0, 'returns an empty array' );
+		t.end();
+	}
+});
+
+tape( 'the function returns a string array (if at least one `package.json` references a CLI; otherwise, returns an empty array)', function test( t ) {
+	var opts = {
+		'dir': dir
+	};
+	findCLIs( opts, clbk );
+	function clbk( error, files ) {
+		if ( error ) {
+			t.ok( false, error.message );
+		}
+		t.strictEqual( isStringArray( files ), true, 'returns a string array' );
 		t.end();
 	}
 });

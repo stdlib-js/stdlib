@@ -61,19 +61,19 @@ function version() {
 } // end FUNCTION version()
 
 /**
-* Callback invoked after searching for packages.
+* Callback invoked after searching for package CLIs.
 *
 * @private
 * @param {(Error|null)} error - error object
-* @param {StringArray} pkgs - list of packages
+* @param {StringArray} files - list of files
 * @throws {Error} unexpected error
 */
-function onPkgs( error, pkgs ) {
+function onCLIs( error, files ) {
 	if ( error ) {
 		throw error;
 	}
-	console.log( pkgs.join( '\n' ) );
-} // end FUNCTION onPkgs()
+	console.log( files.join( '\n' ) );
+} // end FUNCTION onCLIs()
 
 
 // VARIABLES //
@@ -107,4 +107,4 @@ if ( args.ignore ) {
 }
 opts.dir = args._[ 0 ] || cwd();
 
-main( opts, onPkgs );
+main( opts, onCLIs );
