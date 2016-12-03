@@ -318,6 +318,18 @@ To limit which tests are run, use the same environment variables recognized by `
 $ make TESTS_FILTER=.*/math/base/utils/.* test-cov
 ```
 
+To generate a coverage report for project tools,
+
+``` bash
+$ make tools-test-cov
+```
+
+To limit which tests are run, use the same environment variables recognized by `list-tests`.
+
+``` bash
+$ make tools-test-cov TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
+```
+
 To view a generated report in a local web browser,
 
 ``` bash
@@ -346,18 +358,6 @@ $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 
 # Run @stdlib utils tests in a local web browser...
 $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
-```
-
-To generate a coverage report for project tools,
-
-``` bash
-$ make tools-test-cov
-```
-
-To limit which tests are run, use the same environment variables recognized by `list-tests`.
-
-``` bash
-$ make tools-test-cov TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
 ```
 
 ---
