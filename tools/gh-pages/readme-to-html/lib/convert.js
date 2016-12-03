@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:readme-to-html' );
+var debug = require( 'debug' )( 'readme-to-html' );
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFile;
 var mustache = require( 'mustache' );
