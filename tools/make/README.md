@@ -290,6 +290,18 @@ By default, tests are run against supported Node.js versions. To run against alt
 $ make NODE_VERSIONS='0.10 4 6' TESTS_FILTER=.*/fs/exists/.* test-node-versions
 ```
 
+To run units tests for project tools,
+
+``` bash
+$ make tools-test
+```
+
+To limit which tests are run, use the same environment variables recognized by `list-tests`.
+
+``` bash
+$ make tools-test TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
+```
+
 
 #### Test Coverage
 
@@ -334,6 +346,18 @@ $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 
 # Run @stdlib utils tests in a local web browser...
 $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
+```
+
+To generate a coverage report for project tools,
+
+``` bash
+$ make tools-test-cov
+```
+
+To limit which tests are run, use the same environment variables recognized by `list-tests`.
+
+``` bash
+$ make tools-test-cov TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
 ```
 
 ---

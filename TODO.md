@@ -195,7 +195,7 @@
 
     * use [ndu](https://github.com/groupon/ndu) to visualize dependency size
 
-    * use [disc](https://github.com/hughsk/disc) to visualize browserify output
+    * use [disc](https://github.com/hughsk/disc) to visualize browserify output (see also [browserify-size](https://github.com/bendrucker/browserify-size))
 
     * [cost-of-modules](https://github.com/siddharthkp/cost-of-modules)
 
