@@ -1,6 +1,6 @@
 # Create
 
-> Create a serialized lunr.js search index.
+> Create a serialized [lunr.js][lunr-js] search index.
 
 
 <section class="usage">
@@ -13,7 +13,7 @@ var create = require( '/path/to/stdlib/tools/search/create' );
 
 #### create( \[options,\] clbk )
 
-Asynchronously creates a serialized lunr.js search index.
+Asynchronously creates a serialized [lunr.js][lunr-js] search index.
 
 ``` javascript
 create( onCreate );
@@ -130,6 +130,8 @@ $ create-search . > search_index.json
 
 
 <section class="links">
+
+[lunr-js]: http://lunrjs.com/
 
 </section>
 
