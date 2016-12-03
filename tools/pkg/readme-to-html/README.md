@@ -87,7 +87,7 @@ function clbk( error, html ) {
 }
 ```
 
-For how other `options` affect HTML output, see the HTML template in `./static`.
+To understand how other `options` affect HTML output, see the HTML template in `./static`.
 
 </section>
 
