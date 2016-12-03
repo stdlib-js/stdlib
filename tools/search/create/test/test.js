@@ -110,7 +110,7 @@ tape( 'the function returns an error to a provided callback if an error is encou
 	}
 });
 
-tape( 'the function returns an error to a provided callback if none of the README.md files exists', function test( t ) {
+tape( 'the function returns an error to a provided callback if none of the README.md files exist', function test( t ) {
 	var create = proxyquire( './../lib/index.js', {
 		'./get_existing.js': getExisting
 	});
