@@ -36,6 +36,9 @@ function getExisting( files, clbk ) {
 		}
 		i += 1;
 		if ( i === files.length ) {
+			if ( out.length === 0 ) {
+				clbk( new Error( 'None of the README.md files exists.' ) );
+			}
 			clbk( null, out );
 		} else {
 			exists( files[ i ], onDone );
