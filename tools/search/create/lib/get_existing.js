@@ -2,6 +2,7 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'search-create:get-existing' );
 var exists = require( '@stdlib/fs/exists' );
 
 
@@ -15,41 +16,31 @@ var exists = require( '@stdlib/fs/exists' );
 * @param {Callback} clbk - callback function
 */
 function getExisting( files, clbk ) {
-	var count = 0;
 	var out = [];
-	var i;
+	var i = 0;
 
-	for ( i = 0; i < files.length; i++ ) {
-		exists( files[ i ], makeCallback( files[ i ] ) );
-	}
+	exists( files[ i ], onDone );
 	/**
-	* Create a callback function with the correct file reference.
+	* Appends path to output array in case the file exists. Once all checks have completed, the callback is invoked.
 	*
 	* @private
-	* @param {string} file - full file path
-	* @returns {Callback} callback function
+	* @param {(Error|null)} error - error object
+	* @param {boolean} boolean indicating if file exists
 	*/
-	function makeCallback( file ) {
-		/**
-		* Appends path to output array in case the file exists. Once all checks have completed, the callback is invoked.
-		*
-		* @private
-		* @param {(Error|null)} error - error object
-		* @param {boolean} boolean indicating if file exists
-		*/
-		return function onDone( err, bool ) {
-			if ( err ) {
-				console.error( err );
-			}
-			if ( bool ) {
-				out.push( file );
-			}
-			count += 1;
-			if ( count === files.length ) {
-				clbk( null, out );
-			}
-		}; // end FUNCTION onDone()
-	} // end FUNCTION makeCallback()
+	function onDone( err, bool ) {
+		if ( err ) {
+			debug( err );
+		}
+		if ( bool ) {
+			out.push( files[ i ] );
+		}
+		i += 1;
+		if ( i === files.length ) {
+			clbk( null, out );
+		} else {
+			exists( files[ i ], onDone );
+		}
+	} // end FUNCTION onDone()
 } // end FUNCTION getExisting()
 
 
