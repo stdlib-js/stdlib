@@ -16,6 +16,37 @@ lunr.tokenizer.registerFunction( tokenizer, 'readme_tokenizer' );
 lunr.tokenizer.load( 'readme_tokenizer' );
 
 
+// VARIABLES //
+
+var processer = {
+	'intro': remark()
+		.use( extractor( 'intro' ) )
+		.use( remarkUnlink )
+		.use( removeElements )
+		.process,
+	'notes': remark()
+		.use( extractor( 'notes' ) )
+		.use( remarkUnlink )
+		.use( removeElements )
+		.process,
+	'usage': remark()
+		.use( extractor( 'usage' ) )
+		.use( remarkUnlink )
+		.use( removeElements )
+		.process,
+	'cli': remark()
+		.use( extractor( 'cli' ) )
+		.use( remarkUnlink )
+		.use( removeElements )
+		.process,
+	'references': remark()
+		.use( extractor( 'references' ) )
+		.use( remarkUnlink )
+		.use( removeElements )
+		.process,
+};
+
+
 // FUNCTIONS //
 
 /**
@@ -27,11 +58,7 @@ lunr.tokenizer.load( 'readme_tokenizer' );
 * @returns {string} processed text
 */
 function getSectionText( readme, section ) {
-	var out = remark()
-		.use( extractor( section ) )
-		.use( remarkUnlink )
-		.use( removeElements )
-		.process( readme );
+	var out = processer[ section ]( readme );
 	return out.contents;
 } // end FUNCTION getSectionText()
 
@@ -61,8 +88,8 @@ function createIndex( file ) {
 	references = getSectionText( file.data, 'references' );
 
 	doc = {
-		'title': file.data.match( /^# ([^\n]*)\n/ )[ 1 ],
-		'description': file.data.match( /> ([^\n]*)\n/ )[ 1 ],
+		'title': file.data.match( /^#[ ]*([^\n]+)\r?\n/ )[ 1 ],
+		'description': file.data.match( />[ ]*([^\n]+)\r?\n/ )[ 1 ],
 		'intro': intro,
 		'usage': usage,
 		'notes': notes,
