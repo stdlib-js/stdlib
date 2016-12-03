@@ -105,7 +105,7 @@ function createSearchIndex() {
 		len = files.length;
 		idxs = new Array( len );
 		for ( i = 0; i < len; i++ ) {
-			idxs.push( createIndex( files[ i ] ) );
+			idxs[ i ] = createIndex( files[ i ] );
 		}
 		idx = idxs.reduce( combine );
 		done( null, JSON.stringify( idx ) );

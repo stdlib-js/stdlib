@@ -18,6 +18,8 @@ lunr.tokenizer.load( 'readme_tokenizer' );
 
 // VARIABLES //
 
+var TITLE_REGEXP = /^#[ ]*([^\n]+)\r?\n/;
+var DESCR_REGEXP = />[ ]*([^\n]+)\r?\n/;
 var processer = {
 	'intro': remark()
 		.use( extractor( 'intro' ) )
@@ -88,8 +90,8 @@ function createIndex( file ) {
 	references = getSectionText( file.data, 'references' );
 
 	doc = {
-		'title': file.data.match( /^#[ ]*([^\n]+)\r?\n/ )[ 1 ],
-		'description': file.data.match( />[ ]*([^\n]+)\r?\n/ )[ 1 ],
+		'title': file.data.match( TITLE_REGEXP )[ 1 ],
+		'description': file.data.match( DESCR_REGEXP )[ 1 ],
 		'intro': intro,
 		'usage': usage,
 		'notes': notes,

@@ -37,7 +37,7 @@ function getSectionNodes( ast, name ) {
 			if ( type === 'end' ) {
 				if ( nodes ) {
 					// Replace scope by nodes belonging to the given section...
-					nodes = [ {type: 'root', children: nodes } ];
+					nodes = [ { type: 'root', children: nodes } ];
 					splice.apply( scope.children, [ 0, scope.children.length ].concat( nodes ) );
 				}
 				scope = null;

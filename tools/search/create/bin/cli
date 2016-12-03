@@ -108,5 +108,4 @@ if ( args._[ 0 ] ) {
 	opts.dir = args._[ 0 ];
 }
 
-
 main( opts, onIndex );

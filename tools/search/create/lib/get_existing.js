@@ -27,15 +27,18 @@ function getExisting( files, clbk ) {
 	* @param {(Error|null)} error - error object
 	* @param {boolean} boolean indicating if file exists
 	*/
-	function onDone( err, bool ) {
-		if ( err ) {
-			debug( err );
+	function onDone( error, bool ) {
+		if ( error ) {
+			debug( 'Encountered an error when checking if a file exists: %s', error.message );
 		}
 		if ( bool ) {
 			out.push( files[ i ] );
 		}
 		i += 1;
 		if ( i === files.length ) {
+			if ( out.length === 0 ) {
+				clbk( new Error( 'None of the README.md files exists.' ) );
+			}
 			clbk( null, out );
 		} else {
 			exists( files[ i ], onDone );

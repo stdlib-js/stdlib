@@ -145,11 +145,29 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+         --pattern pattern     Inclusion glob pattern.
+         --ignore pattern      Exclusion glob pattern.
 ```
 
 </section>
 
 <!-- /.usage -->
+
+
+<section class="notes">
+
+### Notes
+
+* If not provided a `dir` argument, the current working directory is the search directory.
+* To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
+
+  ``` bash
+  $ create-search --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+  ```
+
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
