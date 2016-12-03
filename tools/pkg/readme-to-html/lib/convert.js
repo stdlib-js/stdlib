@@ -21,7 +21,7 @@ var styles = require( './styles.js' );
 // MAIN //
 
 /**
-* Converts a README to HTML.
+* Converts a package README to HTML.
 *
 * @param {string} file - input file path
 * @param {Options} [options] - options
