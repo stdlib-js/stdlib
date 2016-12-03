@@ -8,8 +8,7 @@ NODE ?= node
 LIST_INSTALLED_PACKAGES ?= $(TOOLS_DIR)/pkgs/installed/bin/cli
 
 # Define the command flags:
-LIST_INSTALLED_PACKAGES_FLAGS ?= \
-	--dir $(ROOT_DIR)
+LIST_INSTALLED_PACKAGES_FLAGS ?=
 
 
 # TARGETS #
@@ -19,6 +18,6 @@ LIST_INSTALLED_PACKAGES_FLAGS ?= \
 # This target prints a list of all installed package dependencies.
 
 list-pkgs-installed: $(NODE_MODULES) $(LIST_INSTALLED_PACKAGES)
-	$(QUIET) $(NODE) $(LIST_INSTALLED_PACKAGES) $(LIST_INSTALLED_PACKAGES_FLAGS)
+	$(QUIET) $(NODE) $(LIST_INSTALLED_PACKAGES) $(LIST_INSTALLED_PACKAGES_FLAGS) $(ROOT_DIR)
 
 .PHONY: list-pkgs-installed

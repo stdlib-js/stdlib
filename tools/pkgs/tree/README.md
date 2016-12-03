@@ -108,18 +108,27 @@ function onTree( error, tree ) {
 ### Usage
 
 ``` bash
-Usage: stdlib-pkg-tree [options]
+Usage: stdlib-pkg-tree [options] [dir]
 
 Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
-         --dir dirname         Root directory from which to search.
 ```
 
 </section>
 
 <!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+* If not provided a `dir` argument, the search directory is the current working directory.
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
