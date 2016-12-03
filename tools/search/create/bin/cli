@@ -94,9 +94,19 @@ if ( args.version ) {
 	return version();
 }
 opts = {};
-
+if ( args.pattern ) {
+	opts.pattern = args.pattern;
+}
+if ( args.ignore ) {
+	if ( typeof args.ignore === 'string' ) {
+		opts.ignore = [ args.ignore ];
+	} else {
+		opts.ignore = args.ignore;
+	}
+}
 if ( args._[ 0 ] ) {
 	opts.dir = args._[ 0 ];
 }
+
 
 main( opts, onIndex );
