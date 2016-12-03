@@ -94,9 +94,9 @@ if ( args.version ) {
 	return version();
 }
 opts = {};
-if ( args.pattern ) {
-	opts.pattern = args.pattern;
+
+if ( args._[ 0 ] ) {
+	opts.dir = args._[ 0 ];
 }
-opts.dir = args._[ 0 ];
 
 main( opts, onIndex );
