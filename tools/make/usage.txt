@@ -11,6 +11,7 @@ Usage: make <cmd>
   make list-benchmarks        List all benchmark files.
   make list-files             List files.
   make list-pkgs              List all packages.
+  make list-pkgs-clis         List all package command-line interfaces.
   make list-pkgs-names        List all package names.
   make list-pkgs-namespaces   List all package namespaces.
   make list-pkgs-tree         List all packages as a tree.
