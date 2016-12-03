@@ -23,7 +23,7 @@ function combine( a, b ) {
 	corpusTokens = unique( a.corpusTokens.concat( b.corpusTokens ) );
 	documentStore = {
 		'store': merge( a.documentStore.store, b.documentStore.store ),
-		'length': a.documentStore.length = b.documentStore.length
+		'length': a.documentStore.length + b.documentStore.length
 	};
 	tokenStore = {
 		'root': merge( a.tokenStore.root, b.tokenStore.root ),
