@@ -3,10 +3,10 @@
 /**
 * Convert a package README to HTML.
 *
-* @module @stdlib/tools/gh-pages/readme-to-html
+* @module @stdlib/tools/pkg/readme-to-html
 *
 * @example
-* var convert = require( '/path/to/readme-to-html' );
+* var convert = require( '@stdlib/tools/pkg/readme-to-html' );
 *
 * var opts = {
 *     'title': 'beep boop',
@@ -25,7 +25,7 @@
 *
 *
 * @example
-* var convert = require( '/path/to/readme-to-html' );
+* var convert = require( '@stdlib/tools/pkg/readme-to-html' );
 *
 * var opts = {
 *     'title': 'beep boop'
