@@ -39,6 +39,22 @@ var styles = require( './styles.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+*
+* @example
+* var opts = {
+*     'title': 'beep boop'
+* };
+*
+* var src = '/beep/boop/README.md';
+*
+* convert( src, opts, clbk );
+*
+* function clbk( error, html ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( html );
+* }
 */
 function convert( file, options, clbk ) {
 	var prepend;
