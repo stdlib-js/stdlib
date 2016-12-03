@@ -64,14 +64,14 @@ function version() {
 *
 * @private
 * @param {(Error|null)} error - error object
-* @param {string} index - serialized search index
+* @param {Object} index - serialized search index
 * @throws {Error} unexpected error
 */
 function onIndex( error, index ) {
 	if ( error ) {
 		throw error;
 	}
-	console.log( index );
+	console.log( JSON.stringify( index ) );
 } // end FUNCTION onIndex()
 
 
