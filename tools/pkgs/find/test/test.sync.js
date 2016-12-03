@@ -3,8 +3,14 @@
 // MODULES //
 
 var tape = require( 'tape' );
+var resolve = require( 'path' ).resolve;
 var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 var findPkgs = require( './../lib/sync.js' );
+
+
+// VARIABLES //
+
+var dir = resolve( __dirname, '..', '..' );
 
 
 // TESTS //
@@ -31,7 +37,7 @@ tape( 'the function returns a string array', function test( t ) {
 	var opts;
 
 	opts = {
-		'dir': './../'
+		'dir': dir
 	};
 	pkgs = findPkgs( opts );
 
