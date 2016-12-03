@@ -26,14 +26,14 @@ var styles = require( './styles.js' );
 * @param {string} file - input file path
 * @param {Options} [options] - options
 * @param {string} [options.out] - output file path
-* @param {string} [options.title] - HTML title
 * @param {string} [options.tests] - tests URL
 * @param {string} [options.benchmarks] - benchmarks URL
 * @param {string} [options.source] - source URL
 * @param {boolean} [options.fragment] - output an HTML fragment
+* @param {string} [options.title] - HTML title
+* @param {string} [options.head] - content to insert into HTML head
 * @param {string} [options.prepend] - content to prepend to HTML body
 * @param {string} [options.append] - content to append to HTML body
-* @param {string} [options.head] - content to insert into HTML head
 * @param {Callback} clbk - callback to invoke after converting README
 * @throws {TypeError} first argument must be a string
 * @throws {TypeError} options argument must be an object

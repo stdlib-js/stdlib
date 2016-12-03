@@ -17,13 +17,13 @@ var isBoolean = require( '@stdlib/utils/is-boolean' ).isPrimitive;
 * @param {Object} opts - destination object
 * @param {Options} options - function options
 * @param {string} [options.out] - output file path
-* @param {string} [options.title] - HTML title
 * @param {string} [options.tests] - tests URL
 * @param {string} [options.benchmarks] - benchmarks URL
 * @param {string} [options.source] - source URL
+* @param {string} [options.title] - HTML title
+* @param {string} [options.head] - content to insert into HTML head
 * @param {string} [options.prepend] - content to prepend to HTML body
 * @param {string} [options.append] - content to append to HTML body
-* @param {string} [options.head] - content to insert into HTML head
 * @param {boolean} [options.fragment] - output an HTML fragment
 * @returns {(Error|null)} error object or null
 *
