@@ -176,6 +176,7 @@ function build( pkg, dest, options, clbk ) {
 		bopts.head = opts.head;
 		bopts.prepend = opts.prepend;
 		bopts.append = opts.append;
+		bopts.source = 'https://github.com/stdlib-js/stdlib';
 		if ( builds.tests ) {
 			bopts.tests = join( opts.mount, opts.tests.html );
 		} else {
