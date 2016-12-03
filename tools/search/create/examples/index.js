@@ -17,7 +17,6 @@ function onIndex( error, idx ) {
 	if ( error ) {
 		throw error;
 	}
-	idx = JSON.parse( idx );
 	idx.tokenizer = 'readme_tokenizer';
 	store = lunr.Index.load( idx );
 	console.log( store.search( 'encrypt' ) );

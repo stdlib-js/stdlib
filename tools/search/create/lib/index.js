@@ -108,7 +108,7 @@ function createSearchIndex() {
 			idxs[ i ] = createIndex( files[ i ] );
 		}
 		idx = idxs.reduce( combine );
-		done( null, JSON.stringify( idx ) );
+		done( null, JSON.parse( JSON.stringify( idx ) ) );
 	} // end FUNCTION onFiles()
 
 	/**
@@ -116,7 +116,7 @@ function createSearchIndex() {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {string} idx - serialized search index
+	* @param {Object} idx - serialized search index
 	*/
 	function done( error, idx ) {
 		if ( error ) {
