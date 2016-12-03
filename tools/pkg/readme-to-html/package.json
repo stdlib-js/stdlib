@@ -1,9 +1,12 @@
 {
-  "name": "",
-  "version": "",
+  "name": "@stdlib/tools/pkg/readme-to-html",
+  "version": "0.0.0",
   "description": "Convert a package README to HTML.",
   "author": {},
   "contributors": [],
+  "bin": {
+    "pkg-readme-to-html": "./bin/cli"
+  },
   "scripts": {},
   "main": "./lib",
   "repository": {},
