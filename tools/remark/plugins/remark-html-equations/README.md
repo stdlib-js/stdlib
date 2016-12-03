@@ -51,9 +51,9 @@ console.log( vfile.contents );
 ## Examples
 
 ``` javascript
-var readFileSync = require( 'fs' ).readFileSync;
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var insertEquations = require( 'remark-html-equations' );
 
 var fpath;
