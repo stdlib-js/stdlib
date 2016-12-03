@@ -9,7 +9,7 @@ lunr.tokenizer.registerFunction( tokenizer, 'readme_tokenizer' );
 lunr.tokenizer.load( 'readme_tokenizer' );
 
 create({
-	'dir': path.join( __dirname, './../../../lib/node_modules/@stdlib' )
+	'dir': path.resolve( __dirname, './../../../../lib/node_modules/@stdlib' )
 }, onIndex );
 
 function onIndex( error, idx ) {
@@ -17,7 +17,6 @@ function onIndex( error, idx ) {
 	if ( error ) {
 		throw error;
 	}
-
 	idx = JSON.parse( idx );
 	idx.tokenizer = 'readme_tokenizer';
 	store = lunr.Index.load( idx );

@@ -1,6 +1,6 @@
 # Create
 
-> Create a serialized lunr.js search index.
+> Create a serialized [lunr.js][lunr-js] search index.
 
 
 <section class="usage">
@@ -13,7 +13,7 @@ var create = require( '/path/to/stdlib/tools/search/create' );
 
 #### create( \[options,\] clbk )
 
-Asynchronously creates a serialized lunr.js search index.
+Asynchronously creates a serialized [lunr.js][lunr-js] search index.
 
 ``` javascript
 create( onCreate );
@@ -29,12 +29,52 @@ function onCreate( error, idx ) {
 The function accepts the following `options`:
 
 * __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
+* __pattern__: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern __must__ end with `package.json`).
+* __ignore__: list of glob patterns used to exclude matches.
 
 To search for packages from an alternative directory, set the `dir` option.
 
 ``` javascript
 var opts = {
     'dir': '/foo/bar/baz'
+};
+
+create( opts, onCreate );
+
+function onCreate( error, idx ) {
+    if ( error ) {
+        throw error;
+    }
+    console.log( idx );
+}
+```
+
+To provide an alternative include filter, set the `pattern` option.
+
+``` javascript
+var opts = {
+    'pattern': '**/foo/**/package.json'
+};
+
+create( opts, onCreate );
+
+function onCreate( error, idx ) {
+    if ( error ) {
+        throw error;
+    }
+    console.log( idx );
+}
+```
+
+To exclude matches, set the `ignore` option.
+
+``` javascript
+var opts = {
+    'ignore': [
+        'node_modules/**',
+        'build/**',
+        'reports/**'
+    ]
 };
 
 create( opts, onCreate );
@@ -130,6 +170,8 @@ $ create-search . > search_index.json
 
 
 <section class="links">
+
+[lunr-js]: http://lunrjs.com/
 
 </section>
 

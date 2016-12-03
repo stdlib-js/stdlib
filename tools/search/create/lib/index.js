@@ -5,12 +5,14 @@
 var path = require( 'path' );
 var readFileList = require( '@stdlib/fs/read-file-list' );
 var isFunction = require( '@stdlib/utils/is-function' );
+var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
-var findPkgs = require( './../../pkgs/find' );
-var createIndex = require( './create_index.js' )
+var findPkgs = require( './../../../pkgs/find' );
+var createIndex = require( './create_index.js' );
 var getExisting = require( './get_existing.js' );
-var combine = require( './combine.js' );;
+var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
+var combine = require( './combine.js' );
 
 
 // MAIN //
@@ -20,6 +22,8 @@ var validate = require( './validate.js' );
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory at which to start indexing
+* @param {string} [options.pattern='**\/package.json'] - glob pattern
+* @param {StringArray} [options.ignore] - glob pattern(s) to exclude matches
 * @param {Callback} clbk - callback function
 */
 function createSearchIndex() {
@@ -28,7 +32,7 @@ function createSearchIndex() {
 	var clbk;
 	var err;
 
-	opts = {};
+	opts = copy( defaults );
 	if ( arguments.length < 2 ) {
 		clbk = arguments[ 0 ];
 	} else {
@@ -56,23 +60,32 @@ function createSearchIndex() {
 	* @param {(Error|null)} error - error object
 	* @param {StringArray} list of package paths
 	*/
-	function onPkgs( err, pkgs ) {
+	function onPkgs( error, pkgs ) {
 		var i;
-		if ( err ) {
-			throw err;
+		if ( error ) {
+			return done( error );
 		}
 		for ( i = 0; i < pkgs.length; i++ ) {
 			pkgs[ i ] = path.join( pkgs[ i ], 'README.md' );
 		}
-		getExisting( pkgs, function onDone( error, readmes ) {
-			if ( error ) {
-				throw error;
-			}
-			readFileList( readmes, {
-				'encoding': 'utf-8'
-			}, onFiles );
-		});
+		getExisting( pkgs, onReadmes );
 	} // end FUNCTION onPkgs()
+
+	/**
+	* Callback invoked after retrieving existing README.md paths.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {StringArray} list of existing README.md paths
+	*/
+	function onReadmes( error, readmes ) {
+		if ( error ) {
+			return done( error );
+		}
+		readFileList( readmes, {
+			'encoding': 'utf-8'
+		}, onFiles );
+	} // end FUNCTION onReadmes()
 
 	/**
 	* Callback invoked after retrieving file contents.
@@ -81,13 +94,13 @@ function createSearchIndex() {
 	* @param {(Error|null)} error - error object
 	* @param {ObjectArray} list of files
 	*/
-	function onFiles( err, files ) {
+	function onFiles( error, files ) {
 		var idxs;
 		var idx;
 		var len;
 		var i;
-		if ( err ) {
-			throw err;
+		if ( error ) {
+			return done( error );
 		}
 		len = files.length;
 		idxs = new Array( len );
@@ -95,8 +108,22 @@ function createSearchIndex() {
 			idxs.push( createIndex( files[ i ] ) );
 		}
 		idx = idxs.reduce( combine );
-		clbk( null, JSON.stringify( idx ) );
+		done( null, JSON.stringify( idx ) );
 	} // end FUNCTION onFiles()
+
+	/**
+	* Callback invoked upon completion.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {string} idx - serialized search index
+	*/
+	function done( error, idx ) {
+		if ( error ) {
+			return clbk( error );
+		}
+		clbk( null, idx );
+	} // end FUNCTION done()
 } // end FUNCTION createSearchIndex()
 
 
