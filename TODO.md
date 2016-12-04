@@ -113,6 +113,7 @@
 15. prngs
 
     * [pcg](http://www.pcg-random.org/)
+    * [random123](http://www.deshawresearch.com/downloads/download_random123.cgi/)
     * [sfmt](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT)
     * [randamu](https://github.com/PhDP/randamu)
     * [gsl](https://github.com/ampl/gsl/tree/master/rng)
@@ -211,7 +212,7 @@
 
       - consider [trash](https://github.com/sindresorhus/trash) and [trash-cli](https://github.com/sindresorhus/trash-cli)
 
-        * No, as Sindre does not provide backwards compatibility. Will need to roll our own.
+        * No, as Sindre does not provide backward compatibility. Will need to roll our own.
 
 29. `Makefile` does not list top-level `examples`; is this intentional?
 
@@ -285,6 +286,24 @@
     * [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/v8/)
     * [v8-perf](https://github.com/thlorenz/v8-perf)
     * [chrome devtools](https://github.com/GoogleChrome/devtools-docs/issues/53)
+    * constant propagation
+    * loop invariant code motion
+    * dead code elimination
+    * inlining
+    * loop unrolling
+    * verify results
+    * http://mrale.ph/blog/2013/08/14/hidden-classes-vs-jsperf.html
+    * http://mrale.ph/blog/2012/06/03/explaining-js-vms-in-js-inline-caches.html
+    * http://mrale.ph/blog/2012/09/23/grokking-v8-closures-for-fun.html
+    * https://www.youtube.com/watch?v=65-RbBwZQdU
+    * http://mrale.ph/blog/2012/12/15/microbenchmarks-fairy-tale.html
+    * http://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html
+    * http://mrale.ph/blog/2013/04/29/performance-tuning-as-weather-forecast.html
+    * https://floitsch.blogspot.de/search/label/V8-optimizations
+    * https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html
+    * https://mathiasbynens.be/notes/javascript-benchmarking
+    * https://github.com/sq/JSIL/wiki/JavaScript-Performance-For-Madmen
+    * http://mp.binaervarianz.de/JS_perf_study_TR_Oct2015.pdf
 
 40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
 
@@ -346,6 +365,7 @@
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
     * would allow a "preview" alongside current prod
+    * will also want src docs for each version
 
 50. investigate whether [bit operators](http://www.netlib.org/fdlibm/e_pow.c) would be better for `is-even` and `is-odd`
 
@@ -419,9 +439,14 @@
 
 55. [flatson](https://github.com/brycebaril/flatson)
 
-56. refactor module CLIs to match CLI snippet
+56. 
 
-57. add the `engines` field to module `package.json` files
+57. add an `engines` field to all `package.json` files.
+
+     - default: node >= 10
+     - but...in instances where node >= 10 is not possible (hopefully, this is an extreme event), the engine can be set to another version range
+     - have a script which mines the individual `package.json` engine fields and determines, in aggregate, the supported engine range for all pkgs and assign as the engine range for the "aggregate"
+     - can also lint (search pkg deps, check engine field, and see if compatible)
 
 58. consider adding a license prefix to each file
 
@@ -702,7 +727,7 @@
 
 79. Add note about ES2015 features in JS style guide
 
-    * Backwards compatibility is important
+    * Backward compatibility is important
     * Only use if can polyfill
     * Must provide a polyfill
     * No compile steps
@@ -744,7 +769,7 @@
 
 86. doc viewer
 
-    * modify `SimpleHTTPServer` to only serve READMEs converted to HTML
+    * modified `SimpleHTTPServer` which serves READMEs converted to HTML
     * for equations, instead of SVG, use MathJax
     * could also insert live figures (main, as margin notes)
     * an extension would be to make the code samples interactive
@@ -820,7 +845,7 @@
      * [x] fs
      * [x] math/base/blas
      * [ ] math/base/dist
-     * [-] math/base/random
+     * [x] math/base/random
      * [ ] math/base/special
      * [ ] math/base/tools
      * [ ] math/base/utils
@@ -868,7 +893,7 @@
 
      * [chuhai](https://github.com/Hypercubed/chuhai)
      * benchmark.js
-     * substack benchmark module
+     * substack benchmark module (ben)
      * matcha
      * [nanobench](https://github.com/mafintosh/nanobench)
 
@@ -1081,7 +1106,7 @@
 
 177. consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
 
-178. investigate [jailed](https://github.com/asvd/jailed) for running JS code in sandbox
+178. investigate [jailed](https://github.com/asvd/jailed) for running JS code in sandbox (and also vm2)
 
 179. Non-node [platform](https://github.com/bestiejs/platform.js) detection?
 
@@ -1091,7 +1116,7 @@
 
 182. [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
 
-183. utils, e.g., `is-string`, need more rigorous testing, especially for things like `isPrimitiveStringArray`
+183. 
 
 184. `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
 
@@ -1232,7 +1257,7 @@
 
 250. [chunkify](https://github.com/compute-io/chunkify), [buffer](https://www.mathworks.com/help/signal/ref/buffer.html), [split](http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.split.html), [splitVec](https://www.mathworks.com/matlabcentral/fileexchange/24255-consecutive-vector-spliter/content/SplitVec.m)
 
-251. [random123](http://www.deshawresearch.com/downloads/download_random123.cgi/)
+251. 
 
 252. [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
 
@@ -1294,12 +1319,7 @@
 
 274. life expectancy by [country](https://gist.github.com/ivanku/00d2520ba6d92daf97e50d9ebc6eb4cd)
 
-275. add an `engines` field to all `package.json` files.
-
-     - default: node >= 10
-     - but...in instances where node >= 10 is not possible (hopefully, this is an extreme event), the engine can be set to another version range
-     - have a script which mines the individual `package.json` engine fields and determines, in aggregate, the supported engine range for all pkgs and assign as the engine range for the "aggregate"
-     - can also lint (search pkg deps, check engine field, and see if compatible)
+275. 
 
 276. stable JSON [stringify](https://github.com/substack/json-stable-stringify)
 
@@ -1333,26 +1353,7 @@
 
 291. data [structures](https://github.com/LukeLin/js-stl)
 
-292. perf notes
-
-     - constant propagation
-     - loop invariant code motion
-     - dead code elimination
-     - inlining
-     - loop unrolling
-     - verify results
-     - http://mrale.ph/blog/2013/08/14/hidden-classes-vs-jsperf.html
-     - http://mrale.ph/blog/2012/06/03/explaining-js-vms-in-js-inline-caches.html
-     - http://mrale.ph/blog/2012/09/23/grokking-v8-closures-for-fun.html
-     - https://www.youtube.com/watch?v=65-RbBwZQdU
-     - http://mrale.ph/blog/2012/12/15/microbenchmarks-fairy-tale.html
-     - http://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html
-     - http://mrale.ph/blog/2013/04/29/performance-tuning-as-weather-forecast.html
-     - https://floitsch.blogspot.de/search/label/V8-optimizations
-     - https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html
-     - https://mathiasbynens.be/notes/javascript-benchmarking
-     - https://github.com/sq/JSIL/wiki/JavaScript-Performance-For-Madmen
-     - http://mp.binaervarianz.de/JS_perf_study_TR_Oct2015.pdf
+292. 
 
 293. [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
 
