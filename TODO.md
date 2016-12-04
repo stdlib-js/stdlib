@@ -1353,7 +1353,7 @@
 
 291. data [structures](https://github.com/LukeLin/js-stl)
 
-292. 
+292. during decomposition, each pkg has own gh-pages branch and each README HTML should have a tree menu linking to other pkg repo docs. Requires tree menu tool to support a tree having links, rather than inferring from dirs.
 
 293. [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
 
