@@ -1,6 +1,6 @@
 {
   "name": "",
-  "version": "",
+  "version": "0.0.0",
   "description": "Reporter which filters license results for packages having ambiguous license information.",
   "author": {},
   "contributors": [],
