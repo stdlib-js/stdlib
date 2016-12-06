@@ -125,11 +125,7 @@ function main( dir ) {
 // MAIN //
 
 // Parse command-line arguments:
-opts = {
-	'string': [
-		'dir'
-	]
-};
+opts = {};
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args._[ 0 ] ) {
