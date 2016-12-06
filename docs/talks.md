@@ -33,7 +33,7 @@
 
 <div class="image" align="center">
     <a href="https://www.youtube.com/watch?v=03WhsgTpp7g">
-        <img src="" alt="Math in V8 is Broken and How We Can Fix It at Node.js Interactive US 2016">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_athan_reines.png" alt="Math in V8 is Broken and How We Can Fix It at Node.js Interactive US 2016">
     </a>
     <br>
 </div>
@@ -44,7 +44,7 @@
 
 <div class="image" align="center">
     <a href="https://www.youtube.com/watch?v=fK32__vlVAA">
-        <img src="" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
     </a>
     <br>
 </div>
