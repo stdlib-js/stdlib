@@ -108,6 +108,7 @@ function createSearchIndex() {
 			idxs[ i ] = createIndex( files[ i ] );
 		}
 		idx = idxs.reduce( combine );
+		// Note: we have to use `stringify` and `parse` here because of how lunr performs serialization. Specifically, in order to serialize an index, one must recursively call serialization methods (`*.toJSON()`) on nested data structures, which `JSON.stringify()` does automatically.
 		done( null, JSON.parse( JSON.stringify( idx ) ) );
 	} // end FUNCTION onFiles()
 
