@@ -18,5 +18,8 @@
   "bugs": {},
   "dependencies": {},
   "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "license": ""
 }
