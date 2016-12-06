@@ -82,7 +82,7 @@
     "unist-util-visit": "^1.1.0"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.10.0"
   },
   "license": "Apache-2.0 AND BSL-1.0"
 }
