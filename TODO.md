@@ -439,7 +439,7 @@
 
 55. [flatson](https://github.com/brycebaril/flatson)
 
-56. 
+56. REPL incremental [json](https://github.com/simeji/jid)
 
 57. add an `engines` field to all `package.json` files.
 
@@ -1702,6 +1702,8 @@
 68. [murmurhash](https://github.com/garycourt/murmurhash-js)
 
 69. [deque](https://github.com/petkaantonov/deque) and [denque](https://github.com/Salakar/denque)
+
+70. date [fcns](https://github.com/date-fns/date-fns)
 
 
 ---
