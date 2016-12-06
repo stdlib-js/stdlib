@@ -6,7 +6,10 @@
   "contributors": [],
   "scripts": {},
   "main": "./lib",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
   "keywords": [
     "stdlib",
     "TODO"
