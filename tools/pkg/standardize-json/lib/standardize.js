@@ -22,7 +22,7 @@ var KEYS = require( './keys.json' );
 * @param {StringArray} [keys] - a list of keys in which the list order specifies insertion order
 * @throws {TypeError} first argument must be an object
 * @throws {TypeError} second argument must be an array of strings
-* @returns {Object} standardizes object
+* @returns {Object} standardized object
 *
 * @example
 * var pkg = {'license':'MIT','name':'beep'};
