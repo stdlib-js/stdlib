@@ -27,10 +27,33 @@
     <br>
 </div>
 
+#### Math in V8 is Broken and How We Can Fix It
+
+> [Athan Reines][kgryte], Node.js Interactive US 2016
+
+<div class="image" align="center">
+    <a href="https://www.youtube.com/watch?v=03WhsgTpp7g">
+        <img src="" alt="Math in V8 is Broken and How We Can Fix It at Node.js Interactive US 2016">
+    </a>
+    <br>
+</div>
+
+#### Real Time Machine Learning with Node.js
+
+> [Philipp Burckhardt][planeshifter], Node.js Interactive US 2016
+
+<div class="image" align="center">
+    <a href="https://www.youtube.com/watch?v=fK32__vlVAA">
+        <img src="" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
+[kgryte]: https://github.com/kgryte
 [planeshifter]: https://github.com/planeshifter
 
 </section>
