@@ -17,7 +17,6 @@ var debug = require( 'debug' )( 'update-package-name' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
-var parseArgs = require( 'minimist' );
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 var SEP = require( '@stdlib/utils/path-sep' );
 var findPkgs = require( './../pkgs/find' ).sync;
@@ -26,8 +25,6 @@ var findPkgs = require( './../pkgs/find' ).sync;
 // VARIABLES //
 
 var ROOT = resolve( __dirname, '../../lib/node_modules' );
-var opts;
-var args;
 
 
 // FUNCTIONS //
@@ -94,9 +91,5 @@ function main() {
 
 
 // MAIN //
-
-// Parse command-line arguments:
-opts = {};
-args = parseArgs( process.argv.slice( 2 ), opts );
 
 main();
