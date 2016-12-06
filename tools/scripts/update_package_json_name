@@ -7,7 +7,7 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_package_json_name .
+* $ DEBUG=* update_package_json_name
 * ```
 */
 
