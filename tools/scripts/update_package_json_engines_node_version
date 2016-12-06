@@ -2,7 +2,7 @@
 'use strict';
 
 /*
-* Update the minimum Node.js version in the package `package.json` engine field.
+* Update the minimum Node.js version in the package `package.json` engines field.
 *
 * This script is called with the following arguments:
 *
