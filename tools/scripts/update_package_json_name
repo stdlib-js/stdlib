@@ -13,7 +13,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'update-package_name' );
+var debug = require( 'debug' )( 'update-package-name' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
