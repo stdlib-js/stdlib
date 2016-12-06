@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/licenses/reporters/whitelist",
   "version": "0.0.0",
   "description": "Reporter which excludes from license results packages which have a license in a provided whitelist.",
   "author": {},

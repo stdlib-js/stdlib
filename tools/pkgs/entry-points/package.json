@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/pkgs/entry-points",
   "version": "0.0.0",
   "description": "Resolve package entry points.",
   "author": {},

@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/pkgs/installed",
   "version": "0.0.0",
   "description": "List installed package dependencies.",
   "author": {},

@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/pkgs/deps",
   "version": "0.0.0",
   "description": "Resolve package dependencies.",
   "author": {},

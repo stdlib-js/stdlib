@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/makie/plugins/makie-benchmark",
   "version": "0.0.0",
   "description": "makie plugin to run benchmarks.",
   "author": {},

@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/makie/plugins/makie-notes",
   "version": "0.0.0",
   "description": "makie plugin to enumerate source code annotations.",
   "author": {},

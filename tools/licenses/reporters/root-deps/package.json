@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/licenses/reporters/root-deps",
   "version": "0.0.0",
   "description": "Reporter which filters license results for packages directly depended on by the root package.",
   "author": {},

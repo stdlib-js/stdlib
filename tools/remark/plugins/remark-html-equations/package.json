@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/remark/plugins/remark-html-equations",
   "version": "0.0.0",
   "description": "remark plugin to insert HTML equation elements.",
   "author": {},

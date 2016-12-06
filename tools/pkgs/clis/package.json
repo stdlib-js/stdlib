@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/pkgs/clis",
   "version": "0.0.0",
   "description": "Find package command-line interfaces.",
   "author": {},

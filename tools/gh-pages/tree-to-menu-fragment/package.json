@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/gh-pages/tree-to-menu-fragment",
   "version": "0.0.0",
   "description": "Generate an HTML menu fragment from a tree object.",
   "author": {},

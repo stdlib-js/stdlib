@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@stdlib/tools/makie/plugins/makie-view-cov",
   "version": "0.0.0",
   "description": "makie plugin to view a test coverage report.",
   "author": {},
