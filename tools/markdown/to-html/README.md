@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var toHTML = require( '@stdlib/tools/markdown-to-html' );
+var toHTML = require( '@stdlib/tools/markdown/to-html' );
 ```
 
 #### toHTML( markdown )

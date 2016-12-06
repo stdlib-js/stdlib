@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var toVirtualDOM = require( '@stdlib/tools/markdown-to-vdom' );
+var toVirtualDOM = require( '@stdlib/tools/markdown/to-vdom' );
 ```
 
 #### toVirtualDOM( markdown )

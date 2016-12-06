@@ -6,7 +6,7 @@
 * @module @stdlib/tools/markdown/to-html
 *
 * @example
-* var toHTML = require( '@stdlib/tools/markdown-to-html' );
+* var toHTML = require( '@stdlib/tools/markdown/to-html' );
 *
 * var markdown = '# Beep\n> Boop!';
 *

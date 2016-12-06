@@ -6,7 +6,7 @@
 * @module @stdlib/tools/markdown/to-vdom
 *
 * @example
-* var toVirtualDOM = require( '@stdlib/tools/markdown-to-vdom' );
+* var toVirtualDOM = require( '@stdlib/tools/markdown/to-vdom' );
 *
 * var markdown = '# Beep\n> Boop!';
 *
