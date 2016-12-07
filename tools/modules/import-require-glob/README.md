@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/import-require-glob' );
+var ls = require( '2stdlib/tools/import-require-glob' );
 ```
 
 <a name="ls"></a>
@@ -106,7 +106,7 @@ The function accepts the same `options` as [`ls()`](#ls) above.
 ## Examples
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/import-require-glob' );
+var ls = require( '@stdlib/tools/import-require-glob' );
 
 ls( onList );
 

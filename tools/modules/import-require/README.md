@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/import-require' );
+var ls = require( '@stdlib/tools/import-require' );
 ```
 
 #### ls( src )
@@ -47,7 +47,7 @@ The returned `object` has the following fields:
 
 ``` javascript
 var readFile = require( '@stdlib/fs/read-file' ).sync;
-var ls = require( '/path/to/stdlib/tools/import-require' );
+var ls = require( '@stdlib/tools/import-require' );
 
 var file = readFile( __filename );
 var results = ls( file );

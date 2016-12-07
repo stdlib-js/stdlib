@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var pkgDeps = require( '/path/to/stdlib/tools/pkg-deps' );
+var pkgDeps = require( '@stdlib/tools/pkg-deps' );
 ```
 
 <a name="pkg-deps"></a>
@@ -91,7 +91,7 @@ The function accepts the same `options` as [`pkgDeps()`](#pkg-deps) above.
 
 ``` javascript
 var join = require( 'path' ).join;
-var pkgDeps = require( '/path/to/stdlib/tools/pkg-deps' );
+var pkgDeps = require( '@stdlib/tools/pkg-deps' );
 
 var file = join( __dirname, 'lib', 'index.js' );
 
