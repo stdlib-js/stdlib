@@ -35,7 +35,7 @@ When executing a command, the current working directory is used as a filter. Thu
 ## Usage
 
 ``` javascript
-var makie = require( '/path/to/stdlib/tools/makie/makie' );
+var makie = require( '@stdlib/tools/makie/makie' );
 ```
 
 #### makie( dirpath, options, target )
