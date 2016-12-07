@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var toReference = require( '/path/to/stdlib/tools/citation-reference' );
+var toReference = require( '@stdlib/tools/bib/citation-reference' );
 ```
 
 <a name="to-reference"></a>
@@ -108,7 +108,7 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 ## Examples
 
 ``` javascript
-var toReference = require( '/path/to/stdlib/tools/citation-reference' );
+var toReference = require( '@stdlib/tools/bib/citation-reference' );
 
 /* bib.bib
 @book{press:1992,
