@@ -13,7 +13,7 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_homepage
+* $ DEBUG=* update_homepage .
 * ```
 */
 
