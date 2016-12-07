@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var pkgDeps = require( '/path/to/stdlib/tools/pkgs/deps' );
+var pkgDeps = require( '@stdlib/tools/pkgs/deps' );
 ```
 
 <a name="pkg-deps"></a>
@@ -87,7 +87,7 @@ The function accepts the same `options` as [`pkgDeps()`](#pkg-deps) above.
 
 ``` javascript
 var resolve = require( 'path' ).resolve;
-var pkgDeps = require( '/path/to/stdlib/tools/pkgs/deps' );
+var pkgDeps = require( '@stdlib/tools/pkgs/deps' );
 
 var pkg = resolve( __dirname, '../' );
 var pkgs = [ pkg, 'tape' ];

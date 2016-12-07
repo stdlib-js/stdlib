@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var findPkgs = require( '/path/to/stdlib/tools/pkgs/find' );
+var findPkgs = require( '@stdlib/tools/pkgs/find' );
 ```
 
 #### findPkgs( \[options,\] clbk )
@@ -109,7 +109,7 @@ The function accepts the same `options` as `findPkgs()` above.
 ## Examples
 
 ``` javascript
-var findPkgs = require( '/path/to/stdlib/tools/pkgs/find' );
+var findPkgs = require( '@stdlib/tools/pkgs/find' );
 
 findPkgs( onPkgs );
 

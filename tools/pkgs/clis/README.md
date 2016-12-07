@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var findCLIs = require( '/path/to/stdlib/tools/pkgs/find' );
+var findCLIs = require( '@stdlib/tools/pkgs/clis' );
 ```
 
 #### findCLIs( \[options,\] clbk )

@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var entryPoints = require( '/path/to/stdlib/tools/pkgs/entry-points' );
+var entryPoints = require( '@stdlib/tools/pkgs/entry-points' );
 ```
 
 <a name="entry-points"></a>
@@ -85,7 +85,7 @@ The function accepts the same `options` as [`entryPoints()`](#entry-points) abov
 
 ``` javascript
 var resolve = require( 'path' ).resolve;
-var entryPoints = require( '/path/to/stdlib/tools/pkgs/entry-points' );
+var entryPoints = require( '@stdlib/tools/pkgs/entry-points' );
 
 var pkg = resolve( __dirname, '../' );
 var pkgs = [ pkg, 'tape' ];

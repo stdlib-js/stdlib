@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/pkgs/namespaces' );
+var ls = require( '@stdlib/tools/pkgs/namespaces' );
 ```
 
 #### ls( \[options,\] clbk )
@@ -80,7 +80,7 @@ The function accepts the same `options` as `ls()` above.
 ## Examples
 
 ``` javascript
-var ls = require( '/path/to/stdlib/tools/pkgs/namespaces' );
+var ls = require( '@stdlib/tools/pkgs/namespaces' );
 
 ls( onList );
 

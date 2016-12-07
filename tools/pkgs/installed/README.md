@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var pkgs = require( '/path/to/stdlib/tools/pkgs/installed' );
+var pkgs = require( '@stdlib/tools/pkgs/installed' );
 ```
 
 #### pkgs( \[options\], clbk )

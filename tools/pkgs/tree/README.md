@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var pkgTree = require( '/path/to/stdlib/tools/pkgs/tree' );
+var pkgTree = require( '@stdlib/tools/pkgs/tree' );
 ```
 
 #### pkgTree( \[options,\] clbk )
@@ -80,7 +80,7 @@ The function accepts the same `options` as `pkgTree()` above.
 ## Examples
 
 ``` javascript
-var pkgTree = require( '/path/to/stdlib/tools/pkgs/tree' );
+var pkgTree = require( '@stdlib/tools/pkgs/tree' );
 
 pkgTree( onTree );
 
