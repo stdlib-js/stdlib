@@ -13,7 +13,7 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_package_json_engine_node_version .
+* $ DEBUG=* update_engines_node_version .
 * ```
 */
 
@@ -26,8 +26,8 @@ var parseArgs = require( 'minimist' );
 var semver = require( 'semver' );
 var cwd = require( '@stdlib/utils/cwd' );
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
-var findPkgs = require( './../pkgs/find' ).sync;
-var standardize = require( './../pkg/standardize-json' );
+var findPkgs = require( './../../pkgs/find' ).sync;
+var standardize = require( './../standardize-json' );
 
 
 // VARIABLES //
