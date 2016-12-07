@@ -2,8 +2,16 @@
   "name": "TODO",
   "version": "0.0.0",
   "description": "TODO",
-  "author": {},
-  "contributors": [],
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
   "scripts": {},
   "main": "./lib",
   "repository": {
