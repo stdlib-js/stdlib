@@ -7,7 +7,7 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_package_json_name
+* $ DEBUG=* update_name
 * ```
 */
 
@@ -19,12 +19,12 @@ var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 var SEP = require( '@stdlib/utils/path-sep' );
-var findPkgs = require( './../pkgs/find' ).sync;
+var findPkgs = require( './../../pkgs/find' ).sync;
 
 
 // VARIABLES //
 
-var ROOT = resolve( __dirname, '../../lib/node_modules' );
+var ROOT = resolve( __dirname, '../../../lib/node_modules' );
 
 
 // FUNCTIONS //
