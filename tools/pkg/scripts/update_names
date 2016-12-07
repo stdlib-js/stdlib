@@ -7,13 +7,13 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_name
+* $ DEBUG=* update_names
 * ```
 */
 
 // MODULES //
 
-var debug = require( 'debug' )( 'update-package-name' );
+var debug = require( 'debug' )( 'update-package-names' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
