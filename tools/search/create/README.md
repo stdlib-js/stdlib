@@ -1,4 +1,4 @@
-# Create
+# Search Index
 
 > Create a serialized [lunr.js][lunr-js] search index.
 
@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var create = require( '/path/to/stdlib/tools/search/create' );
+var create = require( '@stdlib/tools/search/create' );
 ```
 
 #### create( \[options,\] clbk )
@@ -99,8 +99,8 @@ function onCreate( error, idx ) {
 ``` javascript
 var lunr = require( 'lunr' );
 var path = require( 'path' );
-var tokenizer = require( '/path/to/stdlib/tools/search/create/lib/tokenizer.js' );
-var create = require( '/path/to/stdlib/tools/search/create' );
+var tokenizer = require( '@stdlib/tools/search/create/lib/tokenizer.js' );
+var create = require( '@stdlib/tools/search/create' );
 
 lunr.tokenizer.registerFunction( tokenizer, 'readme_tokenizer' );
 lunr.tokenizer.load( 'readme_tokenizer' );
