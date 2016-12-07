@@ -22,7 +22,16 @@
     "url": "git://github.com/stdlib-js/stdlib.git"
   },
   "homepage": "https://github.com/stdlib-js/stdlib",
-  "keywords": [],
+  "keywords": [
+    "stdlib",
+    "stdlib-js",
+    "stdlib.js",
+    "js-stdlib",
+    "standard",
+    "std",
+    "library",
+    "lib"
+  ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
