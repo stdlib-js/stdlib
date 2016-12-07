@@ -3,20 +3,13 @@
   "version": "0.0.0",
   "description": "Standard library.",
   "author": {
-    "name": "Athan Reines",
-    "email": "kgryte@gmail.com",
-    "url": "https://github.com/kgryte"
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
   },
   "contributors": [
     {
-      "name": "Athan Reines",
-      "email": "kgryte@gmail.com",
-      "url": "https://github.com/kgryte"
-    },
-    {
-      "name": "Philipp Burckhardt",
-      "email": "pburckhardt@outlook.com",
-      "url": "https://github.com/planeshifter"
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
   "bin": {
