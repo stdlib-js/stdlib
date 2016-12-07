@@ -6,7 +6,12 @@
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
   },
-  "contributors": [],
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
   "bin": {
     "test-html": "./bin/cli"
   },
