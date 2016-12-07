@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/test/html",
   "version": "0.0.0",
   "description": "Generate an HTML file for running tests.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "test-html": "./bin/cli"

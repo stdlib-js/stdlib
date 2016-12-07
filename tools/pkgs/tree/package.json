@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/pkgs/tree",
   "version": "0.0.0",
   "description": "Generate a stdlib package tree.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "stdlib-pkg-tree": "./bin/cli"

@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/test/browser-build",
   "version": "0.0.0",
   "description": "* Build assets for running tests in a web browser.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "tests-browser-build": "./bin/cli"

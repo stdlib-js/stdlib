@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/modules/pkg-deps",
   "version": "0.0.0",
   "description": "List package dependencies.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "module-pkg-deps": "./bin/cli"

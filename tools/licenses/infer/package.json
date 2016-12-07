@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/licenses/infer",
   "version": "0.0.0",
   "description": "Infer license information from file content.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "licenses-infer": "./bin/cli"

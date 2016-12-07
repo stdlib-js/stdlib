@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/markdown/to-html",
   "version": "0.0.0",
   "description": "Converts Markdown to HTML.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "markdown-to-html": "./bin/cli"

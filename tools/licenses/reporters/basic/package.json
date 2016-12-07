@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/licenses/reporters/basic",
   "version": "0.0.0",
   "description": "Basic license information reporter.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "licenses-reporter": "./bin/cli"

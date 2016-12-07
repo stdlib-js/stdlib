@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/pkgs/clis",
   "version": "0.0.0",
   "description": "Find package command-line interfaces.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "find-pkg-clis": "./bin/cli"

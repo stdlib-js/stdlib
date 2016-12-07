@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/benchmarks/browser-build",
   "version": "0.0.0",
   "description": "Build assets for running benchmarks in a web browser.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "benchmark-browser-build": "./bin/cli"

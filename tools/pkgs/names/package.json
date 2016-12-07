@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/pkgs/names",
   "version": "0.0.0",
   "description": "List stdlib package names.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "stdlib-pkg-names": "./bin/cli"

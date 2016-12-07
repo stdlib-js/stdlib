@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/modules/import-require",
   "version": "0.0.0",
   "description": "List import and require paths.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "import-require": "./bin/cli"

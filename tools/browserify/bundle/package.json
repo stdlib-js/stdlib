@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/browserify/bundle",
   "version": "0.0.0",
   "description": "Bundle one or more files into a single file using browserify.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "browserify-bundle": "./bin/cli"

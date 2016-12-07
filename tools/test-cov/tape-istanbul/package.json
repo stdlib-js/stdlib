@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/test-cov/tape-istanbul",
   "version": "0.0.0",
   "description": "tape test runner for Istanbul instrumented source code.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "scripts": {},
   "main": "./lib",

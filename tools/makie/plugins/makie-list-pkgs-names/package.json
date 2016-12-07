@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/makie/plugins/makie-list-pkgs-names",
   "version": "0.0.0",
   "description": "makie plugin to list package names.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "scripts": {},
   "main": "./lib",

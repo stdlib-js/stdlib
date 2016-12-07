@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/pkgs/installed",
   "version": "0.0.0",
   "description": "List installed package dependencies.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "installed-pkgs": "./bin/cli"

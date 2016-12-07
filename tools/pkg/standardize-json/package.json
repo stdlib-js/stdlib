@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/pkg/standardize-json",
   "version": "0.0.0",
   "description": "Standardize a package.json.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "standardize-json": "./bin/cli"

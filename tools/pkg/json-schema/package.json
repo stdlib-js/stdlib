@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "JSON schema for package.json.",
   "author": {
-    "name": "Athan Reines",
-    "email": "kgryte@gmail.com"
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
   },
   "contributors": [
     {

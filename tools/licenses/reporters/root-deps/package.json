@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/licenses/reporters/root-deps",
   "version": "0.0.0",
   "description": "Reporter which filters license results for packages directly depended on by the root package.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "licenses-deps": "./bin/cli"

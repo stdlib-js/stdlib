@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/benchmarks/bundle",
   "version": "0.0.0",
   "description": "Bundle benchmark files into a single file using browserify.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "benchmarks-bundle": "./bin/cli"

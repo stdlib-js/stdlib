@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/pkgs/entry-points",
   "version": "0.0.0",
   "description": "Resolve package entry points.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "pkg-entry-points": "./bin/cli"

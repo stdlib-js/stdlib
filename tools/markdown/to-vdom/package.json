@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/markdown/to-vdom",
   "version": "0.0.0",
   "description": "Converts Markdown to virtual DOM.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "markdown-to-vdom": "./bin/cli"

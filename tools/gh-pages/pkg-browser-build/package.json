@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/gh-pages/pkg-browser-build",
   "version": "0.0.0",
   "description": "Build package assets.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "pkg-browser-build": "./bin/cli"

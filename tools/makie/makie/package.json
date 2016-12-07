@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/makie/makie",
   "version": "0.0.0",
   "description": "Run project Makefile targets from anywhere in the project.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "makie": "./bin/cli"

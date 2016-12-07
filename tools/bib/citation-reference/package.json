@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/bib/citation-reference",
   "version": "0.0.0",
   "description": "Return a reference corresponding to a citation identifier.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "citation-reference": "./bin/cli"

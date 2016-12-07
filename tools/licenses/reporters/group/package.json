@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/licenses/reporters/group",
   "version": "0.0.0",
   "description": "Reporter which groups license results by license type.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "licenses-group": "./bin/cli"

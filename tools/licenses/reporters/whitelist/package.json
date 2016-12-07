@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/licenses/reporters/whitelist",
   "version": "0.0.0",
   "description": "Reporter which excludes from license results packages which have a license in a provided whitelist.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "licenses-whitelist": "./bin/cli"

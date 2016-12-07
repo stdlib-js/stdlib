@@ -2,7 +2,10 @@
   "name": "@stdlib/tools/search/create",
   "version": "0.0.0",
   "description": "Create a serialized search index for all packages.",
-  "author": {},
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
   "contributors": [],
   "bin": {
     "create-search": "./bin/cli"
