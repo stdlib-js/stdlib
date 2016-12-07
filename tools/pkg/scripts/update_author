@@ -33,7 +33,7 @@ var standardize = require( './../standardize-json' );
 
 var AUTHOR = {
 	'name': 'The Stdlib Authors',
-    'url': 'https://github.com/stdlib-js/stdlib/graphs/contributors'
+	'url': 'https://github.com/stdlib-js/stdlib/graphs/contributors'
 };
 var opts;
 var args;
