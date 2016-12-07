@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var runner = require( '/path/to/stdlib/tools/test-cov/tape-istanbul' );
+var runner = require( '@stdlib/tools/test-cov/tape-istanbul' );
 ```
 
 #### runner( pattern, \[options,\] clbk )
@@ -51,7 +51,7 @@ runner( pattern, opts, done );
 ## Examples
 
 ``` javascript
-var runner = require( '/path/to/stdlib/tools/test-cov/tape-istanbul' );
+var runner = require( '@stdlib/tools/test-cov/tape-istanbul' );
 
 var pattern;
 var opts;
