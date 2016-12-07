@@ -6,7 +6,7 @@
 * @module @stdlib/tools/gh-pages/stdlib-docs
 *
 * @example
-* var build = require( '/path/to/gh-pages/stdlib-docs' );
+* var build = require( '@stdlib/tools/gh-pages/stdlib-docs' );
 *
 * build( clbk );
 *

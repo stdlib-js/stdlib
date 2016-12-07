@@ -6,7 +6,7 @@
 * @module @stdlib/tools/gh-pages/tree-to-menu-fragment
 *
 * @example
-* var menu = require( '/path/to/tree-to-menu-fragment' );
+* var menu = require( '@stdlib/tools/gh-pages/tree-to-menu-fragment' );
 *
 * var tree = {
 *     'foo': true,

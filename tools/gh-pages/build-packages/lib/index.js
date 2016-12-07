@@ -6,7 +6,7 @@
 * @module @stdlib/tools/gh-pages/build-packages
 *
 * @example
-* var build = require( '/path/to/gh-pages/build-packages' );
+* var build = require( '@stdlib/tools/gh-pages/build-packages' );
 *
 * build( done );
 *
