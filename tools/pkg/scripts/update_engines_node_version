@@ -21,6 +21,7 @@
 
 var debug = require( 'debug' )( 'update-engines-node' );
 var join = require( 'path' ).join;
+var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
 var parseArgs = require( 'minimist' );
 var semver = require( 'semver' );
@@ -129,7 +130,7 @@ opts = {};
 args = parseArgs( process.argv.slice( 2 ), opts );
 
 if ( args._[ 0 ] ) {
-	dir = args._[ 0 ];
+	dir = resolve( cwd(), args._[ 0 ] );
 } else {
 	dir = cwd();
 }
