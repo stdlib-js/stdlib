@@ -2,8 +2,23 @@
   "name": "@stdlib/stdlib",
   "version": "0.0.0",
   "description": "Standard library.",
-  "author": {},
-  "contributors": [],
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com",
+    "url": "https://github.com/kgryte"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com",
+      "url": "https://github.com/kgryte"
+    },
+    {
+      "name": "Philipp Burckhardt",
+      "email": "pburckhardt@outlook.com",
+      "url": "https://github.com/planeshifter"
+    }
+  ],
   "bin": {
     "stdlib": "./bin/cli"
   },
