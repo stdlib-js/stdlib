@@ -1,0 +1,210 @@
+{
+	"id": "",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"description": "Schema for package.json.",
+	"type": "object",
+	"definitions": {
+		"semver": {
+			"description": "semantic version",
+			"type": "string",
+			"pattern": "^\\d+\\.\\d+\\.\\d+"
+		},
+		"person": {
+			"description": "author or contributor",
+			"oneOf": [
+				{
+					"$ref": "#/definitions/person-object"
+				}
+			]
+		},
+		"person-object": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string",
+					"pattern": "[a-zA-Z ]"
+				},
+				"email": {
+					"$ref": "#/definitions/email"
+				},
+				"url": {
+					"$ref": "#/definitions/uri-http"
+				}
+			},
+			"required": [
+				"name",
+				"email"
+			]
+		},
+		"email": {
+			"description": "email address",
+			"type": "string",
+			"pattern": "@"
+		},
+		"string-map": {
+			"type": "object",
+			"patternProperties": {
+				".+": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"path": {
+			"type": "string",
+			"minLength": 1
+		},
+		"uri-http": {
+			"type": "string",
+			"pattern": "^https?:\/\/"
+		},
+		"uri-git": {
+			"type": "string",
+			"pattern": "^git:\/\/"
+		},
+		"keyword": {
+			"type": "string",
+			"pattern": "^[a-z](?:[_\\.\\- ]?[a-z0-9]+)*$"
+		},
+		"dependency-map": {
+			"$ref": "#/definitions/string-map"
+		},
+		"path-map": {
+			"type": "object",
+			"patternProperties": {
+				".+": {
+					"$ref": "#/definitions/path"
+				}
+			},
+			"additionalProperties": false
+		}
+	},
+	"properties": {
+		"name": {
+			"description": "package name",
+			"type": "string",
+			"pattern": "^@?[a-z](?:[-\\/]?[a-z0-9]+)*$"
+		},
+		"version": {
+			"description": "package version",
+			"$ref": "#/definitions/semver"
+		},
+		"description": {
+			"description": "package description",
+			"type": "string",
+			"minLength": 1
+		},
+		"author": {
+			"description": "package author",
+			"$ref": "#/definitions/person"
+		},
+		"contributors": {
+			"description": "package contributors",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/person"
+			},
+			"uniqueItems": true,
+			"minItems": 1
+		},
+		"bin": {
+			"description": "package executables",
+			"$ref": "#/definitions/path-map"
+		},
+		"scripts": {
+			"description": "package scripts",
+			"$ref": "#/definitions/string-map"
+		},
+		"main": {
+			"description": "main package entry point",
+			"$ref": "#/definitions/path"
+		},
+		"browser": {
+			"description": "main package entry point for a browser environment",
+			"$ref": "#/definitions/path"
+		},
+		"repository": {
+			"description": "package repository",
+			"properties": {
+				"type": {
+					"type": "string",
+					"pattern": "[a-zA-Z]"
+				},
+				"url": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/uri-http"
+						},
+						{
+							"$ref": "#/definitions/uri-git"
+						}
+					]
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"type",
+				"url"
+			]
+		},
+		"homepage": {
+			"description": "package homepage",
+			"$ref": "#/definitions/uri-http"
+		},
+		"keywords": {
+			"description": "package keywords",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/keyword"
+			},
+			"uniqueItems": true
+		},
+		"bugs": {
+			"description": "bug reporting",
+			"type": "object",
+			"properties": {
+				"url": {
+					"$ref": "#/definitions/uri-http"
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"url"
+			]
+		},
+		"dependencies": {
+			"description": "package dependencies",
+			"$ref": "#/definitions/dependency-map"
+		},
+		"devDependencies": {
+			"description": "package development dependencies",
+			"$ref": "#/definitions/dependency-map"
+		},
+		"engines": {
+			"description": "supported engines",
+			"$ref": "#/definitions/string-map"
+		},
+		"license": {
+			"description": "package license",
+			"type": "string",
+			"minLength": 1
+		}
+	},
+	"required": [
+		"name",
+		"version",
+		"description",
+		"author",
+		"contributors",
+		"scripts",
+		"main",
+		"repository",
+		"homepage",
+		"keywords",
+		"bugs",
+		"dependencies",
+		"devDependencies",
+		"engines",
+		"license"
+	]
+}

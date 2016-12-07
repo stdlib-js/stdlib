@@ -1,0 +1,47 @@
+{
+  "name": "@stdlib/tools/pkg/json-schema",
+  "version": "0.0.0",
+  "description": "JSON schema for package.json.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {},
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "keywords": [
+    "stdlib",
+    "tools",
+    "json",
+    "schema",
+    "package",
+    "pkg",
+    "package.json",
+    "meta",
+    "validate",
+    "valid",
+    "check",
+    "test",
+    "isvalid",
+    "is"
+  ],
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "Apache-2.0"
+}
