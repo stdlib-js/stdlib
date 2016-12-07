@@ -1,0 +1,103 @@
+#!/usr/bin/env node
+'use strict';
+
+/*
+* Update the package `package.json` homepage field.
+*
+* This script is called with the following arguments:
+*
+* * *$1*: root search directory
+*
+* If not provided a root search directory, the root search directory is the current working directory.
+*
+* To enable verbose logging, set the `DEBUG` environment variable.
+*
+* ``` bash
+* $ DEBUG=* update_homepage
+* ```
+*/
+
+// MODULES //
+
+var debug = require( 'debug' )( 'update-package-homepage' );
+var join = require( 'path' ).join;
+var resolve = require( 'path' ).resolve;
+var writeFile = require( 'fs' ).writeFileSync;
+var parseArgs = require( 'minimist' );
+var cwd = require( '@stdlib/utils/cwd' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var findPkgs = require( './../../pkgs/find' ).sync;
+var standardize = require( './../standardize-json' );
+
+
+// VARIABLES //
+
+var HOMEPAGE = 'https://github.com/stdlib-js/stdlib';
+var opts;
+var args;
+var dir;
+
+
+// FUNCTIONS //
+
+/**
+* Updates package `package.json` files by setting the `homepage` field.
+*
+* @private
+* @param {string} dir - root search directory
+*/
+function main( dir ) {
+	var fpath;
+	var opts;
+	var pkgs;
+	var pkg;
+	var i;
+
+	debug( 'Searching for packages in %s.', dir );
+	opts = {
+		'dir': dir,
+		'pattern': '**/package.json'
+	};
+	pkgs = findPkgs( opts );
+	debug( 'Found %d packages.', pkgs.length );
+
+	for ( i = 0; i < pkgs.length; i++ ) {
+		fpath = join( pkgs[ i ], 'package.json' );
+		debug( 'Loading package file: %s (%d of %d).', fpath, i+1, pkgs.length );
+		pkg = require( fpath );
+
+		if ( hasOwnProp( pkg, 'homepage' ) ) {
+			debug( 'Current homepage: %s.', pkg.homepage );
+		} else {
+			debug( 'No homepage.' );
+		}
+		debug( 'Updating homepage: %s.', HOMEPAGE );
+		pkg.homepage = HOMEPAGE;
+
+		debug( 'Standardizing package data.' );
+		pkg = standardize( pkg );
+
+		debug( 'Serializing package data.' );
+		pkg = JSON.stringify( pkg, null, 2 ); // 2-space indentation
+
+		debug( 'Writing package data to file.' );
+		writeFile( fpath, pkg, {
+			'encoding': 'utf8'
+		});
+	}
+	debug( 'Finished updating all packages.' );
+} // end FUNCTION main()
+
+
+// MAIN //
+
+// Parse command-line arguments:
+opts = {};
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args._[ 0 ] ) {
+	dir = resolve( cwd(), args._[ 0 ] );
+} else {
+	dir = cwd();
+}
+main( dir );
