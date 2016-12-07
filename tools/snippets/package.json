@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"
   },
+  "homepage": "https://github.com/stdlib-js/stdlib",
   "keywords": [
     "stdlib",
     "TODO"
