@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stdlib",
   "version": "0.0.0",
-  "description": "stdlib",
+  "description": "Standard library.",
   "author": {},
   "contributors": [],
   "bin": {
