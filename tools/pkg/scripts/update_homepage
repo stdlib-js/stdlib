@@ -2,7 +2,7 @@
 'use strict';
 
 /*
-* Update the package `package.json` homepage field.
+* Update package `package.json` files by setting the `homepage` field.
 *
 * This script is called with the following arguments:
 *

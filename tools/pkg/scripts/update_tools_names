@@ -2,7 +2,7 @@
 'use strict';
 
 /*
-* Update the package `package.json` name field for tools packages.
+* Update `package.json` files for tools packages by setting the `name` field.
 *
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
