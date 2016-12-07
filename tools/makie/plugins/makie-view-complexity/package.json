@@ -22,7 +22,9 @@
     "report",
     "view"
   ],
-  "bugs": {},
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
   "dependencies": {},
   "devDependencies": {},
   "engines": {
