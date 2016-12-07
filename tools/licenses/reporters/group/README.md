@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var reporter = require( '/path/to/stdlib/tools/licenses/reporters/group' );
+var reporter = require( '@stdlib/tools/licenses/reporters/group' );
 ```
 
 #### reporter( results )
@@ -23,7 +23,7 @@ var reporter = require( '/path/to/stdlib/tools/licenses/reporters/group' );
 Groups license results by license type.
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
 

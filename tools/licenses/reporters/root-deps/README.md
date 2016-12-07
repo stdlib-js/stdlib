@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var reporter = require( '/path/to/stdlib/tools/licenses/reporters/deps' );
+var reporter = require( '@stdlib/tools/licenses/reporters/deps' );
 ```
 
 #### reporter( results, bool )
@@ -23,7 +23,7 @@ var reporter = require( '/path/to/stdlib/tools/licenses/reporters/deps' );
 Reporter which filters license results for packages directly depended on by the root package. To include dev dependencies, set `bool` to `true`.
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
 

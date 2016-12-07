@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var reporter = require( '/path/to/stdlib/tools/licenses/reporters/whitelist' );
+var reporter = require( '@stdlib/tools/licenses/reporters/whitelist' );
 ```
 
 #### reporter( results, exclude )
@@ -23,7 +23,7 @@ var reporter = require( '/path/to/stdlib/tools/licenses/reporters/whitelist' );
 Excludes licenses results for packages having a license matching an SPDX identifier in a provided `exclude` list.
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 var whitelist = [
     'Apache-2.0',

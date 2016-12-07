@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var reporter = require( '/path/to/stdlib/tools/licenses/reporters/no-license' );
+var reporter = require( '@stdlib/tools/licenses/reporters/no-license' );
 ```
 
 #### reporter( results )
@@ -23,7 +23,7 @@ var reporter = require( '/path/to/stdlib/tools/licenses/reporters/no-license' );
 Filters licenses results for packages not having a license.
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
 

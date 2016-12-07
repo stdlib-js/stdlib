@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 ```
 
 #### licenses( \[options\], clbk )

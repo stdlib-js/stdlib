@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var reporter = require( '/path/to/stdlib/tools/licenses/reporters/ambiguous' );
+var reporter = require( '@stdlib/tools/licenses/reporters/ambiguous' );
 ```
 
 #### reporter( results )
@@ -23,7 +23,7 @@ var reporter = require( '/path/to/stdlib/tools/licenses/reporters/ambiguous' );
 Filters licenses results for packages having ambiguous license information.
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
 

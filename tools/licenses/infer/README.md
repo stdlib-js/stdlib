@@ -15,7 +15,7 @@
 ## Usage
 
 ``` javascript
-var infer = require( '/path/to/stdlib/tools/licenses/infer' );
+var infer = require( '@stdlib/tools/licenses/infer' );
 ```
 
 #### infer( pkgs, pattern, clbk )
@@ -23,7 +23,7 @@ var infer = require( '/path/to/stdlib/tools/licenses/infer' );
 Infers license information from the content of files found using a provided glob `pattern`.
 
 ``` javascript
-var licenses = require( '/path/to/stdlib/tools/licenses/licenses' );
+var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 var pattern = '{readme*,licen[cs]e*,copying*}';
 
