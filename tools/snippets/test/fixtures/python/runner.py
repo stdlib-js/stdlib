@@ -26,8 +26,8 @@ def gen(x, name):
     # Examples
 
     ``` python
-    python> x = linspace( -1000, 1000, 2001 )
-    python> gen( x, \"./data.json\" )
+    python> x = linspace(-1000, 1000, 2001)
+    python> gen(x, \"./data.json\")
     ```
     """
     # TODO: generate fixtures
