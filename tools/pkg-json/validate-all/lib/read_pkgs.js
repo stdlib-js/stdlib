@@ -60,7 +60,7 @@ function readPkgs( files, clbk ) {
 			debug( 'File is valid.' );
 		} else {
 			debug( 'File is invalid: %s.', JSON.stringify( isValid.errors ) );
-			error = new Error( 'invalid file. '+JSON.stringify( isValid.errors[ 0 ] ) );
+			error = new Error( 'invalid file. '+files[ i ]+'. '+JSON.stringify( isValid.errors[ 0 ] ) );
 			return done( error );
 		}
 		if ( j < total ) {
