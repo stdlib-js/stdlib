@@ -63,7 +63,7 @@
 		},
 		"keyword": {
 			"type": "string",
-			"pattern": "^[a-z](?:[_\\.\\- ]?[a-z0-9]+)*$"
+			"pattern": "^[a-z0-9](?:[_\\.\\- ]?[a-z0-9]+)*$"
 		},
 		"dependency-map": {
 			"$ref": "#/definitions/string-map"
