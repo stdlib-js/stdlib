@@ -9,13 +9,13 @@ from scipy import special
 
 
 # Get the file path:
-FILE = os.path.realpath( __file__ )
+FILE = os.path.realpath(__file__)
 
 # Extract the directory in which this file resides:
-DIR = os.path.dirname( file )
+DIR = os.path.dirname(file)
 
 
-def gen( x, name ):
+def gen(x, name):
     """Generate fixture data and write to file.
 
     # Arguments
@@ -39,15 +39,15 @@ def gen( x, name ):
     }
 
     # Based on the script directory, create an output filepath:
-    filepath = os.path.join( DIR, name )
+    filepath = os.path.join(DIR, name)
 
-    with open( filepath, 'w' ) as outfile:
-        json.dump( data, outfile )
+    with open(filepath, 'w') as outfile:
+        json.dump(data, outfile)
 
 def main():
     """Generate fixture data."""
-    gen( x, "TODO" )
+    gen(x, "TODO")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
