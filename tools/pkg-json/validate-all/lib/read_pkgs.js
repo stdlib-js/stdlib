@@ -50,6 +50,7 @@ function readPkgs( files, clbk ) {
 		j = i + 1;
 		if ( error ) {
 			debug( 'Encountered an error reading file: %s (%d of %d). Error: %s', files[ i ], j, total, error.message );
+			error = new Error( 'invalid JSON. '+files[ i ]+'. '+error.message );
 			return done( error );
 		}
 		debug( 'Successfully read file: %s (%d of %d).', files[ i ], j, total );
