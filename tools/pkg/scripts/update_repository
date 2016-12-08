@@ -26,7 +26,7 @@ var writeFile = require( 'fs' ).writeFileSync;
 var parseArgs = require( 'minimist' );
 var cwd = require( '@stdlib/utils/cwd' );
 var findPkgs = require( './../../pkgs/find' ).sync;
-var standardize = require( './../standardize-json' );
+var standardize = require( './../../pkg-json/standardize' );
 
 
 // VARIABLES //
