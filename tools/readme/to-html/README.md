@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var convert = require( '@stdlib/tools/pkg/readme-to-html' );
+var convert = require( '@stdlib/tools/readme/to-html' );
 ```
 
 #### convert( filepath, \[options,\] clbk )
@@ -109,12 +109,12 @@ To understand how other `options` affect HTML output, see the HTML template in `
 
 ``` javascript
 var resolve = require( 'path' ).resolve;
-var convert = require( '@stdlib/tools/pkg/readme-to-html' );
+var convert = require( '@stdlib/tools/readme/to-html' );
 
 var fpath = resolve( __dirname, '..', 'README.md' );
 var opts = {
     'title': 'Beep',
-    'source': 'https://github.com/stdlib-js/stdlib/develop/tools/pkg/readme-to-html/lib/index.js',
+    'source': 'https://github.com/stdlib-js/stdlib/develop/tools/readme/to-html/lib/index.js',
     'append': '<script  type="text/javascript">console.log("Beep!");</script>'
 };
 
@@ -147,7 +147,7 @@ function onFinish( error, html ) {
 ### Usage
 
 ``` bash
-Usage: pkg-readme-to-html [options] file
+Usage: readme-to-html [options] file
 
 Options:
 
@@ -186,7 +186,7 @@ Options:
 ### Examples
 
 ``` bash
-$ pkg-readme-to-html ./README.md
+$ readme-to-html ./README.md
 ```
 
 </section>

@@ -1,5 +1,5 @@
 
-Usage: pkg-readme-to-html [options] file
+Usage: readme-to-html [options] file
 
 Options:
 

@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/pkg/readme-to-html",
+  "name": "@stdlib/tools/readme/to-html",
   "version": "0.0.0",
   "description": "Convert a package README to HTML.",
   "author": {
@@ -13,7 +13,7 @@
     }
   ],
   "bin": {
-    "pkg-readme-to-html": "./bin/cli"
+    "readme-to-html": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",
