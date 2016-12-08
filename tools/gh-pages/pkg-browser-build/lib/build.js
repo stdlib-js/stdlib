@@ -10,7 +10,7 @@ var isFunction = require( '@stdlib/utils/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var tests = require( './../../../test/browser-build' );
 var benchmarks = require( './../../../benchmarks/browser-build' );
-var readmeToHTML = require( './../../../pkg/readme-to-html' );
+var readmeToHTML = require( './../../../readme/to-html' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
