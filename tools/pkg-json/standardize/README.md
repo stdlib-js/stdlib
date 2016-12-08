@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var standardize = require( '@stdlib/tools/pkg/standardize-json' );
+var standardize = require( '@stdlib/tools/pkg-json/standardize' );
 ```
 
 #### standardize( pkg\[, keys\] )
@@ -73,7 +73,7 @@ var out = standardize( pkg, keys );
 ## Examples
 
 ``` javascript
-var standardize = require( '@stdlib/tools/pkg/standardize-json' );
+var standardize = require( '@stdlib/tools/pkg-json/standardize' );
 var pkg = require( './../package.json' );
 
 var out = standardize( pkg );

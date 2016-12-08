@@ -3,10 +3,10 @@
 /**
 * Standardize a `package.json` object.
 *
-* @module @stdlib/tools/pkg/standardize-json
+* @module @stdlib/tools/pkg-json/standardize
 *
 * @example
-* var standardize = require( '@stdlib/tools/pkg/standardize-json' );
+* var standardize = require( '@stdlib/tools/pkg-json/standardize' );
 *
 * var pkg = {'license':'MIT','name':'beep'};
 *

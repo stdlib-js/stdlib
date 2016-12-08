@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/pkg/standardize-json",
+  "name": "@stdlib/tools/pkg-json/standardize",
   "version": "0.0.0",
   "description": "Standardize a package.json.",
   "author": {
