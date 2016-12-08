@@ -78,7 +78,8 @@ function version() {
 */
 function onFinish( error ) {
 	if ( error ) {
-		throw error;
+		console.error( error.message );
+		return process.exit( 1 );
 	}
 } // end FUNCTION onFinish()
 
