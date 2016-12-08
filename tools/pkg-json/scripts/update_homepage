@@ -2,7 +2,7 @@
 'use strict';
 
 /*
-* Update package `package.json` files by setting the `license` field.
+* Update package `package.json` files by setting the `homepage` field.
 *
 * This script is called with the following arguments:
 *
@@ -13,13 +13,13 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_license .
+* $ DEBUG=* update_homepage .
 * ```
 */
 
 // MODULES //
 
-var debug = require( 'debug' )( 'update-package-license' );
+var debug = require( 'debug' )( 'update-package-homepage' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
@@ -27,13 +27,12 @@ var parseArgs = require( 'minimist' );
 var cwd = require( '@stdlib/utils/cwd' );
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 var findPkgs = require( './../../pkgs/find' ).sync;
-var standardize = require( './../../pkg-json/standardize' );
+var standardize = require( './../standardize' );
 
 
 // VARIABLES //
 
-var LICENSE = 'Apache-2.0';
-var RE = /Apache\-2\.0/;
+var HOMEPAGE = 'https://github.com/stdlib-js/stdlib';
 var opts;
 var args;
 var dir;
@@ -42,7 +41,7 @@ var dir;
 // FUNCTIONS //
 
 /**
-* Updates package `package.json` files by setting the `license` field.
+* Updates package `package.json` files by setting the `homepage` field.
 *
 * @private
 * @param {string} dir - root search directory
@@ -67,16 +66,13 @@ function main( dir ) {
 		debug( 'Loading package file: %s (%d of %d).', fpath, i+1, pkgs.length );
 		pkg = require( fpath );
 
-		if ( hasOwnProp( pkg, 'license' ) && pkg.license ) {
-			debug( 'Current license: %s.', pkg.license );
-			if ( !RE.test( pkg.license ) ) {
-				debug( 'WARNING: license is not %s.', LICENSE );
-			}
-			debug( 'Skipping.' );
-			continue;
+		if ( hasOwnProp( pkg, 'homepage' ) ) {
+			debug( 'Current homepage: %s.', pkg.homepage );
+		} else {
+			debug( 'No homepage.' );
 		}
-		debug( 'No license. Setting license: %s.', LICENSE );
-		pkg.license = LICENSE;
+		debug( 'Updating homepage: %s.', HOMEPAGE );
+		pkg.homepage = HOMEPAGE;
 
 		debug( 'Standardizing package data.' );
 		pkg = standardize( pkg );

@@ -28,7 +28,7 @@ var semver = require( 'semver' );
 var cwd = require( '@stdlib/utils/cwd' );
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 var findPkgs = require( './../../pkgs/find' ).sync;
-var standardize = require( './../../pkg-json/standardize' );
+var standardize = require( './../standardize' );
 
 
 // VARIABLES //

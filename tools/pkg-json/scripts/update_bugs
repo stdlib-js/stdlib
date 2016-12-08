@@ -2,7 +2,7 @@
 'use strict';
 
 /*
-* Update package `package.json` files by setting the `author` field.
+* Update package `package.json` files by setting the `bugs` field.
 *
 * This script is called with the following arguments:
 *
@@ -13,27 +13,26 @@
 * To enable verbose logging, set the `DEBUG` environment variable.
 *
 * ``` bash
-* $ DEBUG=* update_author .
+* $ DEBUG=* update_bugs .
 * ```
 */
 
 // MODULES //
 
-var debug = require( 'debug' )( 'update-package-author' );
+var debug = require( 'debug' )( 'update-package-bugs' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
 var parseArgs = require( 'minimist' );
 var cwd = require( '@stdlib/utils/cwd' );
 var findPkgs = require( './../../pkgs/find' ).sync;
-var standardize = require( './../../pkg-json/standardize' );
+var standardize = require( './../standardize' );
 
 
 // VARIABLES //
 
-var AUTHOR = {
-	'name': 'The Stdlib Authors',
-	'url': 'https://github.com/stdlib-js/stdlib/graphs/contributors'
+var BUGS = {
+	'url': 'https://github.com/stdlib-js/stdlib/issues'
 };
 var opts;
 var args;
@@ -43,7 +42,7 @@ var dir;
 // FUNCTIONS //
 
 /**
-* Updates package `package.json` files by setting the `author` field.
+* Updates package `package.json` files by setting the `bugs` field.
 *
 * @private
 * @param {string} dir - root search directory
@@ -68,11 +67,11 @@ function main( dir ) {
 		debug( 'Loading package file: %s (%d of %d).', fpath, i+1, pkgs.length );
 		pkg = require( fpath );
 
-		if ( pkg.author ) {
-			debug( 'Current author: %s.', JSON.stringify( pkg.author ) );
+		if ( pkg.bugs ) {
+			debug( 'Current bug reporting endpoint: %s.', JSON.stringify( pkg.bugs ) );
 		}
-		debug( 'Updating author.' );
-		pkg.author = AUTHOR;
+		debug( 'Updating bugs field.' );
+		pkg.bugs = BUGS;
 
 		debug( 'Standardizing package data.' );
 		pkg = standardize( pkg );
