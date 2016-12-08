@@ -3,10 +3,10 @@
 /**
 * Validate a package.json.
 *
-* @module @stdlib/tools/pkg/validate-json
+* @module @stdlib/tools/pkg-json/validate
 *
 * @example
-* var isValid = require( '@stdlib/tools/pkg/validate-json' );
+* var isValid = require( '@stdlib/tools/pkg-json/validate' );
 *
 * var pkg = require( './../package.json' );
 * var bool = isValid( pkg );

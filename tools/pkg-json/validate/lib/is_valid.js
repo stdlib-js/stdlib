@@ -3,7 +3,7 @@
 // MODULES //
 
 var Ajv = require( 'ajv' );
-var schema = require( './../../json-schema' );
+var schema = require( './../../schema' );
 
 
 // MAIN //

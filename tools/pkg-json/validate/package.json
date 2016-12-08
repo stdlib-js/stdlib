@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/pkg/validatejson",
+  "name": "@stdlib/tools/pkg-json/validate",
   "version": "0.0.0",
   "description": "Validate a package.json.",
   "author": {

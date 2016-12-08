@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var isValid = require( '@stdlib/tools/pkg/validate-json' );
+var isValid = require( '@stdlib/tools/pkg-json/validate' );
 ```
 
 #### isValid( pkg )
@@ -57,7 +57,7 @@ var errs = isValid.errors;
 ## Examples
 
 ``` javascript
-var isValid = require( '@stdlib/tools/pkg/validate-json' );
+var isValid = require( '@stdlib/tools/pkg-json/validate' );
 
 var pkg = require( './package.json' );
 
