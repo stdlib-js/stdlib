@@ -14,6 +14,7 @@ FILE = os.path.realpath( __file__ )
 # Extract the directory in which this file resides:
 DIR = os.path.dirname( file )
 
+
 def gen( x, name ):
     """Generate fixture data and write to file.
 
@@ -38,7 +39,7 @@ def gen( x, name ):
     }
 
     # Based on the script directory, create an output filepath:
-    filepath = os.path.join( dir, name )
+    filepath = os.path.join( DIR, name )
 
     with open( filepath, 'w' ) as outfile:
         json.dump( data, outfile )
