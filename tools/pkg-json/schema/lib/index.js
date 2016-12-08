@@ -3,10 +3,10 @@
 /**
 * JSON schema for package.json.
 *
-* @module @stdlib/tools/pkg/json-schema
+* @module @stdlib/tools/pkg-json/schema
 *
 * @example
-* var schema = require( '@stdlib/tools/pkg/json-schema' );
+* var schema = require( '@stdlib/tools/pkg-json/schema' );
 *
 * var json = schema();
 */

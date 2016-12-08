@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var schema = require( '@stdlib/tools/pkg/json-schema' );
+var schema = require( '@stdlib/tools/pkg-json/schema' );
 ```
 
 #### schema()
@@ -50,7 +50,7 @@ var json = schema();
 
 ``` javascript
 var ajv = require( 'ajv' );
-var schema = require( '@stdlib/tools/pkg/json-schema' );
+var schema = require( '@stdlib/tools/pkg-json/schema' );
 
 var pkg = require( './package.json' );
 var ajv = new Ajv();
