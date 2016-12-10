@@ -7,4 +7,5 @@ Options:
   -V,    --version             Print the package version.
          --pattern pattern     Inclusion glob pattern.
          --ignore pattern      Exclusion glob pattern.
+         --format format       Output format: ndjson, pretty.
 

@@ -176,6 +176,7 @@ Options:
   -V,    --version             Print the package version.
          --pattern pattern     Inclusion glob pattern.
          --ignore pattern      Exclusion glob pattern.
+         --format format       Output format: ndjson, pretty.
 ```
 
 </section>
@@ -187,6 +188,7 @@ Options:
 
 ### Notes
 
+* If part of a standard stream pipeline, results are written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]). Otherwise, results are pretty printed by default.
 * If not provided a `dir` argument, the current working directory is the search directory.
 * To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
@@ -205,6 +207,31 @@ Options:
 
 ``` bash
 $ lint-pkg-json
+
+/path/to/package.json
+
+    message: should NOT have duplicate items (items ## 3 and 4 are identical)
+    field: .keywords
+    data: ["stdlib","tools","json","package","package","pkg","package.json","meta","validate","valid","check","test","isvalid","is","lint"]
+
+    message: should be object
+    field: .dependencies
+    data: null
+
+    message: should NOT have additional properties
+    field: .engines
+    data: {"":">=0.10.0"}
+
+3 errors
+```
+
+To output results as newline-delimited JSON ([NDJSON][ndjson]),
+
+``` bash
+$ lint-pkg-json --format ndjson
+{"file":"...","errors":[...]}
+{"file":"...","errors":[...]}
+...
 ```
 
 </section>
@@ -217,6 +244,8 @@ $ lint-pkg-json
 
 
 <section class="links">
+
+[ndjson]: http://ndjson.org/
 
 </section>
 

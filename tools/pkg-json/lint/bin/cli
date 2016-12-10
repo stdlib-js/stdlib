@@ -70,30 +70,59 @@ function version() {
 } // end FUNCTION version()
 
 /**
-* Callback invoked after linting.
+* Prints lint errors as newline-delimited JSON.
 *
 * @private
-* @param {(Error|null)} error - error object
-* @param {(ObjectArray|null)} errs - lint errors
-* @throws {Error} unexpected error
+* @param {ObjectArray} errs - lint errors
 */
-function onFinish( error, errs ) {
+function ndjson( errs ) {
 	var i;
-	if ( error ) {
-		throw error;
+	for ( i = 0; i < errs.length; i++ ) {
+		console.log( JSON.stringify( errs[ i ] ) );
 	}
-	if ( errs ) {
-		for ( i = 0; i < errs.length; i++ ) {
-			console.log( JSON.stringify( errs[i] ) );
+} // end FUNCTION ndjson()
+
+/**
+* Pretty prints lint errors.
+*
+* @private
+* @param {ObjectArray} errors - lint errors
+*/
+function prettyPrint( errors ) {
+	var total;
+	var error;
+	var errs;
+	var err;
+	var i;
+	var j;
+
+	total = 0;
+
+	console.log( '' );
+	for ( i = 0; i < errors.length; i++ ) {
+		error = errors[ i ];
+		console.log( error.file );
+
+		errs = error.errors;
+		total += errs.length;
+		for ( j = 0; j < errs.length; j++ ) {
+			err = errs[ j ];
+			console.log( '' );
+			console.log( '    message: %s', err.message );
+			console.log( '    field: %s', err.dataPath );
+			console.log( '    data: %s', JSON.stringify( err.data ) );
 		}
-		return process.exit( 1 );
+		console.log( '' );
 	}
-} // end FUNCTION onFinish()
+	console.log( '%d errors', total );
+	console.log( '' );
+} // end FUNCTION prettyPrint()
 
 
 // VARIABLES //
 
 var args;
+var fmt;
 
 
 // MAIN //
@@ -120,6 +149,37 @@ if ( args.ignore ) {
 		opts.ignore = args.ignore;
 	}
 }
+if ( args.format ) {
+	fmt = args.format;
+} else {
+	if ( process.stdout.isTTY ) {
+		fmt = 'pretty';
+	} else {
+		fmt = 'ndjson';
+	}
+}
 opts.dir = args._[ 0 ] || cwd();
 
 main( opts, onFinish );
+
+/**
+* Callback invoked after linting.
+*
+* @private
+* @param {(Error|null)} error - error object
+* @param {(ObjectArray|null)} errs - lint errors
+* @throws {Error} unexpected error
+*/
+function onFinish( error, errs ) {
+	if ( error ) {
+		throw error;
+	}
+	if ( errs ) {
+		if ( fmt === 'ndjson' ) {
+			ndjson( errs );
+		} else {
+			prettyPrint( errs );
+		}
+		return process.exit( 1 );
+	}
+} // end FUNCTION onFinish()
