@@ -39,6 +39,7 @@ Usage: make <cmd>
   make lint-markdown          Lint Markdown files.
   make lint-javascript        Lint JavaScript files.
   make lint-filenames         Lint filenames.
+  make lint-pkg-json          Lint package.json files.
   make complexity             Generate complexity reports.
   make complexity-javascript  Generate a JavaScript complexity report.
   make check-deps             Check if dependencies are up-to-date.
