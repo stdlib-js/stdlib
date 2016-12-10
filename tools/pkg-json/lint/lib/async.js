@@ -2,6 +2,7 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'lint:async' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
 var isFunction = require( '@stdlib/utils/is-function' );
@@ -68,12 +69,14 @@ function lint() {
 	} else {
 		dir = cwd();
 	}
-	// Find `package.json` files...
 	gopts = {
 		'cwd': dir,
 		'ignore': opts.ignore,
 		'realpath': true // return absolute file paths
 	};
+	debug( 'Glob options: %s', JSON.stringify( gopts ) );
+
+	debug( 'Searching for `package.json` files.' );
 	glob( opts.pattern, gopts, onGlob );
 
 	/**
@@ -85,9 +88,12 @@ function lint() {
 	*/
 	function onGlob( error, files ) {
 		if ( error ) {
+			debug( 'Encountered an error when searching for files: %s', error.message );
 			return done( error );
 		}
+		debug( 'Found %d files.', files.length );
 		if ( files.length ) {
+			debug( 'Processing files.' );
 			readPkgs( files, done );
 		} else {
 			done( null, null );

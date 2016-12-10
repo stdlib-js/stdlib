@@ -60,12 +60,14 @@ function lint( options ) {
 	} else {
 		dir = cwd();
 	}
-	debug( 'Searching for `package.json` files.' );
 	gopts = {
 		'cwd': dir,
 		'ignore': opts.ignore,
 		'realpath': true // return absolute file paths
 	};
+	debug( 'Glob options: %s', JSON.stringify( gopts ) );
+
+	debug( 'Searching for `package.json` files.' );
 	files = glob( opts.pattern, gopts );
 
 	total = files.length;
