@@ -1256,7 +1256,7 @@
 
 250. [chunkify](https://github.com/compute-io/chunkify), [buffer](https://www.mathworks.com/help/signal/ref/buffer.html), [split](http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.split.html), [splitVec](https://www.mathworks.com/matlabcentral/fileexchange/24255-consecutive-vector-spliter/content/SplitVec.m)
 
-251. 
+251. should http/s-server support graceful shutdown? If so, should update some of the tests which had to manually close connections
 
 252. [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
 
