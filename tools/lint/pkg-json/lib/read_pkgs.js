@@ -2,9 +2,9 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'lint:read-pkgs' );
+var debug = require( 'debug' )( 'lint:pkg-json:read-pkgs' );
 var readJSON = require( '@stdlib/fs/read-json' );
-var isValid = require( './../../validate' );
+var isValid = require( './../../../pkg-json/validate' );
 
 
 // MAIN //

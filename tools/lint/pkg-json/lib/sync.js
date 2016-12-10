@@ -2,13 +2,13 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'lint:sync' );
+var debug = require( 'debug' )( 'lint:pkg-json:sync' );
 var glob = require( 'glob' ).sync;
 var resolve = require( 'path' ).resolve;
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
 var readJSON = require( '@stdlib/fs/read-json' ).sync;
-var isValid = require( './../../validate' );
+var isValid = require( './../../../pkg-json/validate' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
 

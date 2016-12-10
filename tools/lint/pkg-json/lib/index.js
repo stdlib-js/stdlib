@@ -3,10 +3,10 @@
 /**
 * Lint `package.json` files.
 *
-* @module @stdlib/tools/pkg-json/lint
+* @module @stdlib/tools/lint/pkg-json
 *
 * @example
-* var lint = require( '@stdlib/tools/pkg-json/lint' );
+* var lint = require( '@stdlib/tools/lint/pkg-json' );
 *
 * lint( clbk );
 *
@@ -22,7 +22,7 @@
 * }
 *
 * @example
-* var lint = require( '@stdlib/tools/pkg-json/lint' );
+* var lint = require( '@stdlib/tools/lint/pkg-json' );
 *
 * var errs = lint.sync();
 * if ( errs ) {

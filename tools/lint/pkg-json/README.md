@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var lint = require( '@stdlib/tools/pkg-json/lint' );
+var lint = require( '@stdlib/tools/lint/pkg-json' );
 ```
 
 #### lint( \[options,\] clbk )
@@ -136,7 +136,7 @@ The function accepts the same `options` as `lint()` above.
 ## Examples
 
 ``` javascript
-var lint = require( '@stdlib/tools/pkg-json/lint' );
+var lint = require( '@stdlib/tools/lint/pkg-json' );
 
 lint( done );
 

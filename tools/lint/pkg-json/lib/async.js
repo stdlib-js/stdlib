@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'lint:async' );
+var debug = require( 'debug' )( 'lint:pkg-json:async' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
 var isFunction = require( '@stdlib/utils/is-function' );
