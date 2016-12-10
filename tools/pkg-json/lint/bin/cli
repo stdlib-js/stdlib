@@ -78,7 +78,7 @@ function version() {
 function ndjson( errs ) {
 	var i;
 	for ( i = 0; i < errs.length; i++ ) {
-		console.log( JSON.stringify( errs[ i ] ) );
+		console.error( JSON.stringify( errs[ i ] ) );
 	}
 } // end FUNCTION ndjson()
 
@@ -98,24 +98,24 @@ function prettyPrint( errors ) {
 
 	total = 0;
 
-	console.log( '' );
+	console.error( '' );
 	for ( i = 0; i < errors.length; i++ ) {
 		error = errors[ i ];
-		console.log( error.file );
+		console.error( error.file );
 
 		errs = error.errors;
 		total += errs.length;
 		for ( j = 0; j < errs.length; j++ ) {
 			err = errs[ j ];
-			console.log( '' );
-			console.log( '    message: %s', err.message );
-			console.log( '    field: %s', err.dataPath );
-			console.log( '    data: %s', JSON.stringify( err.data ) );
+			console.error( '' );
+			console.error( '    message: %s', err.message );
+			console.error( '    field: %s', err.dataPath );
+			console.error( '    data: %s', JSON.stringify( err.data ) );
 		}
-		console.log( '' );
+		console.error( '' );
 	}
-	console.log( '%d errors', total );
-	console.log( '' );
+	console.error( '%d errors', total );
+	console.error( '' );
 } // end FUNCTION prettyPrint()
 
 
