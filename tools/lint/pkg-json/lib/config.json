@@ -1,4 +1,10 @@
 {
 	"pattern": "**/package.json",
-	"ignore": []
+	"ignore": [
+		"**/snippets/package.json",
+		"node_modules/**",
+		"build/**",
+		"reports/**",
+		".git*"
+	]
 }
