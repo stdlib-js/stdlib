@@ -433,9 +433,7 @@
     * [linux](http://man7.org/linux/man-pages/man7/man-pages.7.html)
     * [man-n](https://github.com/man-n/man-n)
 
-54. utility which scans the project for `package.json` files and validates the file using a defined schema
-
-    * can be used as part of a build step to ensure `package.json` files are properly formatted, valid, and have requisite information
+54. 
 
 55. [flatson](https://github.com/brycebaril/flatson)
 

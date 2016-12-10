@@ -228,6 +228,12 @@ lint() {
 		echo 'Linting failed.' >&2
 		return 1
 	fi
+	echo 'Linting package.json files...' >&2
+	make lint-pkg-json >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting failed.' >&2
+		return 1
+	fi
 	echo 'Linting passed.' >&2
 	return 0
 }
