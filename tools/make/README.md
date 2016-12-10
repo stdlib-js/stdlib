@@ -397,7 +397,7 @@ $ make view-src-docs
 
 #### Lint
 
-To lint files, including tests, examples, filenames, and Markdown,
+To lint files, including tests, examples, filenames, `package.json`, and Markdown,
 
 ``` bash
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... MARKDOWN_FILTER=... lint
