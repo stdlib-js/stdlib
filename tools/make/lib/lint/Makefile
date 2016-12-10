@@ -1,10 +1,11 @@
 
 # DEPENDENCIES #
 
+include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
 
 
 # TARGETS #
@@ -13,7 +14,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
 #
 # This target lints all files.
 
-lint: lint-filenames lint-javascript lint-markdown lint-conf
+lint: lint-filenames lint-javascript lint-markdown lint-conf lint-pkg-json
 
 .PHONY: lint
 
