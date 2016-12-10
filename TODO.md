@@ -433,7 +433,7 @@
     * [linux](http://man7.org/linux/man-pages/man7/man-pages.7.html)
     * [man-n](https://github.com/man-n/man-n)
 
-54. 
+54. interactive JSON [editor](https://github.com/tidwall/jd)
 
 55. [flatson](https://github.com/brycebaril/flatson)
 
@@ -1014,7 +1014,7 @@
 
 137. see [webtorrent-desktop](https://github.com/feross/webtorrent-desktop) for electron inspiration
 
-138. 
+138. [30-day challenge](https://github.com/wesbos/JavaScript30) => should be able to do sthg akin using stdlib
 
 139. svg components: move `methods/render.js` to `render/index.js`
 
@@ -1112,7 +1112,10 @@
 
 182. [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
 
-183. 
+183. ability to create a [gist](https://github.com/defunkt/gist) from the repl
+
+     - part of tools
+     - auto browserify scripts? Or create `package.json` which installs individual pkgs
 
 184. `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
 
