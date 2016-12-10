@@ -2,6 +2,7 @@
 
 // MODULES //
 
+var debug = require( 'debug' )( 'lint:sync' );
 var glob = require( 'glob' ).sync;
 var resolve = require( 'path' ).resolve;
 var cwd = require( '@stdlib/utils/cwd' );
@@ -9,13 +10,13 @@ var copy = require( '@stdlib/utils/copy' );
 var readJSON = require( '@stdlib/fs/read-json' ).sync;
 var isValid = require( './../../validate' );
 var config = require( './config.json' );
-var validateOptions = require( './validate.js' );
+var validate = require( './validate.js' );
 
 
 // MAIN //
 
 /**
-* Synchronously find and validate `package.json` files.
+* Synchronously lint `package.json` files.
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for packages
@@ -24,28 +25,32 @@ var validateOptions = require( './validate.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {Error} `pattern` option must end with `package.json`
-* @throws {Error} unable to parse `package.json` as JSON
-* @returns {(Error|null)} validation errors or `null`
+* @returns {(ObjectArray|null)} lint errors or `null`
 *
 * @example
-* var err = validate();
-* if ( err ) {
-*     throw err;
+* var errs = lint();
+* if ( errs ) {
+*     console.dir( errs );
+* } else {
+*     console.log( 'Success!' );
 * }
 */
-function validate( options ) {
+function lint( options ) {
 	var files;
 	var gopts;
+	var total;
 	var file;
 	var opts;
 	var bool;
 	var err;
 	var dir;
+	var out;
 	var i;
+	var j;
 
 	opts = copy( config );
 	if ( arguments.length ) {
-		err = validateOptions( opts, options );
+		err = validate( opts, options );
 		if ( err ) {
 			throw err;
 		}
@@ -55,7 +60,7 @@ function validate( options ) {
 	} else {
 		dir = cwd();
 	}
-	// Find `package.json` files...
+	debug( 'Searching for `package.json` files.' );
 	gopts = {
 		'cwd': dir,
 		'ignore': opts.ignore,
@@ -63,23 +68,51 @@ function validate( options ) {
 	};
 	files = glob( opts.pattern, gopts );
 
-	// Validate each file...
-	for ( i = 0; i < files.length; i++ ) {
+	total = files.length;
+	debug( 'Found %d files.', total );
+	if ( total === 0 ) {
+		return null;
+	}
+	debug( 'Processing files.' );
+	out = [];
+	for ( i = 0; i < total; i++ ) {
+		j = i + 1;
+		debug( 'Reading file: %s (%d of %d).', files[ i ], j, total );
 		file = readJSON( files[ i ] );
 		if ( file instanceof Error ) {
-			err = new Error( 'invalid JSON. Unable to parse file as JSON. '+file.message );
-			return err;
+			debug( 'Encountered an error reading file: %s (%d of %d). Error: %s', files[ i ], j, total, file.message );
+			out.push({
+				'file': files[ i ],
+				'errors': [
+					{
+						'message': file.message
+					}
+				]
+			});
+		} else {
+			debug( 'Successfully read file: %s (%d of %d).', files[ i ], j, total );
+			debug( 'Linting file.' );
+			bool = isValid( file );
+			if ( bool ) {
+				debug( 'File is valid.' );
+			} else {
+				debug( 'File is invalid: %s.', JSON.stringify( isValid.errors ) );
+				out.push({
+					'file': files[ i ],
+					'errors': isValid.errors
+				});
+			}
 		}
-		bool = isValid( file );
-		if ( bool === false ) {
-			err = new Error( 'invalid file. '+JSON.stringify( isValid.errors[ 0 ] ) );
-			return err;
-		}
+		debug( 'Processed %d of %d files.', j, total );
+	}
+	debug( 'Processed all files.' );
+	if ( out.length ) {
+		return out;
 	}
 	return null;
-} // end FUNCTION validate()
+} // end FUNCTION lint()
 
 
 // EXPORTS //
 
-module.exports = validate;
+module.exports = lint;

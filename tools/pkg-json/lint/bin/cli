@@ -70,15 +70,22 @@ function version() {
 } // end FUNCTION version()
 
 /**
-* Callback invoked after validating `package.json` files.
+* Callback invoked after linting.
 *
 * @private
-* @param {Error} {error} - error object
+* @param {(Error|null)} error - error object
+* @param {(ObjectArray|null)} errs - lint errors
 * @throws {Error} unexpected error
 */
-function onFinish( error ) {
+function onFinish( error, errs ) {
+	var i;
 	if ( error ) {
-		console.error( error.message );
+		throw error;
+	}
+	if ( errs ) {
+		for ( i = 0; i < errs.length; i++ ) {
+			console.log( JSON.stringify( errs[i] ) );
+		}
 		return process.exit( 1 );
 	}
 } // end FUNCTION onFinish()

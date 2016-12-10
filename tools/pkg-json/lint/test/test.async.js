@@ -6,7 +6,8 @@ var tape = require( 'tape' );
 var resolve = require( 'path' ).resolve;
 var proxyquire = require( 'proxyquire' );
 var noop = require( '@stdlib/utils/noop' );
-var validate = require( './../lib/async.js' );
+var isObjectArray = require( '@stdlib/utils/is-object-array' );
+var lint = require( './../lib/async.js' );
 
 
 // VARIABLES //
@@ -18,7 +19,7 @@ var dir = resolve( __dirname, '..' );
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof validate, 'function', 'main export is a function' );
+	t.strictEqual( typeof lint, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -29,7 +30,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 		var opts = {
 			'dir': null
 		};
-		validate( opts, noop );
+		lint( opts, noop );
 	}
 });
 
@@ -55,7 +56,7 @@ tape( 'if provided a callback argument which is not a function, the function thr
 
 	function badValue( value ) {
 		return function badValue() {
-			validate( value );
+			lint( value );
 		};
 	}
 });
@@ -82,17 +83,17 @@ tape( 'if provided a callback argument which is not a function, the function thr
 
 	function badValue( value ) {
 		return function badValue() {
-			validate( {}, value );
+			lint( {}, value );
 		};
 	}
 });
 
 tape( 'the function returns an error to a provided callback if an error is encountered while searching a directory', function test( t ) {
-	var validate = proxyquire( './../lib/async.js', {
+	var lint = proxyquire( './../lib/async.js', {
 		'glob': glob
 	});
 
-	validate( clbk );
+	lint( clbk );
 
 	function glob() {
 		var cb = arguments[ arguments.length-1 ];
@@ -108,18 +109,18 @@ tape( 'the function returns an error to a provided callback if an error is encou
 	}
 });
 
-tape( 'the function returns an error to a provided callback if an error is encountered while reading `package.json` files', function test( t ) {
-	var validate;
+tape( 'the function returns an error to a provided callback if a fatal error is encountered while reading `package.json` files', function test( t ) {
+	var lint;
 	var opts;
 
-	validate = proxyquire( './../lib/async.js', {
+	lint = proxyquire( './../lib/async.js', {
 		'./read_pkgs.js': readPkgs
 	});
 	opts = {
 		'dir': dir
 	};
 
-	validate( opts, clbk );
+	lint( opts, clbk );
 
 	function readPkgs() {
 		var cb = arguments[ arguments.length-1 ];
@@ -135,12 +136,12 @@ tape( 'the function returns an error to a provided callback if an error is encou
 	}
 });
 
-tape( 'the function returns nothing if unable to resolve any packages', function test( t ) {
-	var validate = proxyquire( './../lib/async.js', {
+tape( 'the function returns `null` if unable to resolve any packages', function test( t ) {
+	var lint = proxyquire( './../lib/async.js', {
 		'glob': glob
 	});
 
-	validate( clbk );
+	lint( clbk );
 
 	function glob() {
 		var cb = arguments[ arguments.length-1 ];
@@ -150,27 +151,58 @@ tape( 'the function returns nothing if unable to resolve any packages', function
 		}
 	}
 
-	function clbk( error ) {
+	function clbk( error, errs ) {
 		if ( error ) {
 			t.ok( false, error.message );
 		} else {
-			t.ok( true, 'does not return an error' );
+			t.strictEqual( errs, null, 'returns `null`' );
 		}
 		t.end();
 	}
 });
 
-tape( 'the function returns nothing if all `package.json` files are valid', function test( t ) {
+tape( 'the function returns `null` if all `package.json` files are valid', function test( t ) {
 	var opts = {
 		'dir': dir
 	};
-	validate( opts, clbk );
+	lint( opts, clbk );
 
-	function clbk( error ) {
+	function clbk( error, errs ) {
 		if ( error ) {
 			t.ok( false, error.message );
 		} else {
-			t.ok( true, 'does not return an error' );
+			t.strictEqual( errs, null, 'returns `null`' );
+		}
+		t.end();
+	}
+});
+
+tape( 'the function returns an array of lint errors to a provided callback if one or more `package.json` files are invalid', function test( t ) {
+	var lint;
+	var opts;
+
+	lint = proxyquire( './../lib/async.js', {
+		'./read_pkgs.js': readPkgs
+	});
+	opts = {
+		'dir': dir
+	};
+
+	lint( opts, clbk );
+
+	function readPkgs() {
+		var cb = arguments[ arguments.length-1 ];
+		setTimeout( onTimeout, 0 );
+		function onTimeout() {
+			cb( null, [{'file':'beep','message':'boop'}] );
+		}
+	}
+
+	function clbk( error, errs ) {
+		if ( error ) {
+			t.ok( false, error.message );
+		} else {
+			t.strictEqual( isObjectArray( errs ), true, 'returns an object array' );
 		}
 		t.end();
 	}

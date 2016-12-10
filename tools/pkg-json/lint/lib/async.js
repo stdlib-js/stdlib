@@ -8,14 +8,14 @@ var isFunction = require( '@stdlib/utils/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var config = require( './config.json' );
-var validateOptions = require( './validate.js' );
+var validate = require( './validate.js' );
 var readPkgs = require( './read_pkgs.js' );
 
 
 // MAIN //
 
 /**
-* Asynchronously find and validate `package.json` files.
+* Asynchronously lint `package.json` files.
 *
 * @param {Options} [options] - function options
 * @param {string} [options.dir] - root directory from which to search for packages
@@ -28,16 +28,20 @@ var readPkgs = require( './read_pkgs.js' );
 * @throws {Error} `pattern` option must end with `package.json`
 *
 * @example
-* validate( clbk );
+* lint( clbk );
 *
-* function clbk( error ) {
+* function clbk( error, errs ) {
 *     if ( error ) {
 *         throw error;
 *     }
-*     console.log( 'Success!' );
+*     if ( errs ) {
+*         console.dir( errs );
+*     } else {
+*         console.log( 'Success!' );
+*     }
 * }
 */
-function validate() {
+function lint() {
 	var options;
 	var gopts;
 	var opts;
@@ -51,7 +55,7 @@ function validate() {
 	} else {
 		options = arguments[ 0 ];
 		clbk = arguments[ 1 ];
-		err = validateOptions( opts, options );
+		err = validate( opts, options );
 		if ( err ) {
 			throw err;
 		}
@@ -86,7 +90,7 @@ function validate() {
 		if ( files.length ) {
 			readPkgs( files, done );
 		} else {
-			done();
+			done( null, null );
 		}
 	} // end FUNCTION onGlob()
 
@@ -94,17 +98,18 @@ function validate() {
 	* Callback invoked upon reading packages.
 	*
 	* @private
-	* @param {Error} [error] - error object
+	* @param {(Error|null)} error - error object
+	* @param {(ObjectArray|null)} errs - lint errs
 	*/
-	function done( error ) {
+	function done( error, errs ) {
 		if ( error ) {
 			return clbk( error );
 		}
-		clbk();
+		clbk( null, errs );
 	} // end FUNCTION done()
-} // end FUNCTION validate()
+} // end FUNCTION lint()
 
 
 // EXPORTS //
 
-module.exports = validate;
+module.exports = lint;

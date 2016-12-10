@@ -1371,6 +1371,12 @@
 
 301. explore wasm and native addon for a single pkg
 
+302. chakra node build
+
+303. See [float-hacks](https://github.com/leegao/float-hacks) for possible "fast" and/or approximate math algos
+
+304. [treemap](https://bl.ocks.org/mbostock/8fe6fa6ed1fa976e5dd76cfa4d816fec) to visualize source
+
 
 ---
 
@@ -1702,6 +1708,8 @@
 69. [deque](https://github.com/petkaantonov/deque) and [denque](https://github.com/Salakar/denque)
 
 70. date [fcns](https://github.com/date-fns/date-fns)
+
+71. [ulid](https://github.com/oklog/ulid)
 
 
 ---

@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/tools/pkg-json/validate-all",
+  "name": "@stdlib/tools/pkg-json/lint",
   "version": "0.0.0",
-  "description": "Find and validate package.json files.",
+  "description": "Lint package.json files.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -12,6 +12,9 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
+  "bin": {
+    "lint-pkg-json": "./bin/cli"
+  },
   "scripts": {},
   "main": "./lib",
   "repository": {
@@ -32,7 +35,8 @@
     "check",
     "test",
     "isvalid",
-    "is"
+    "is",
+    "lint"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"

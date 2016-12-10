@@ -1,12 +1,16 @@
 'use strict';
 
-var validate = require( './../lib' );
+var lint = require( './../lib' );
 
-validate( done );
+lint( done );
 
-function done( error ) {
+function done( error, errs ) {
 	if ( error ) {
 		throw error;
 	}
-	console.log( 'Success!' );
+	if ( errs ) {
+		console.dir( errs );
+	} else {
+		console.log( 'Success!' );
+	}
 }

@@ -1,6 +1,6 @@
-# Validate
+# Lint
 
-> Find and validate `package.json` files.
+> Lint `package.json` files.
 
 
 <section class="usage">
@@ -8,21 +8,25 @@
 ## Usage
 
 ``` javascript
-var validate = require( '@stdlib/tools/pkg-json/validate-all' );
+var lint = require( '@stdlib/tools/pkg-json/lint' );
 ```
 
-#### validate( \[options,\] clbk )
+#### lint( \[options,\] clbk )
 
-Asynchronously find and validate `package.json` files.
+Asynchronously lint `package.json` files.
 
 ``` javascript
-validate( done );
+lint( done );
 
-function done( error ) {
+function done( error, errs ) {
     if ( error ) {
         throw error;
     }
-    console.log( 'Success!' );
+    if ( errs ) {
+        console.dir( errs );
+    } else {
+        console.log( 'Success!' );
+    }
 }
 ```
 
@@ -39,13 +43,17 @@ var opts = {
     'dir': '/foo/bar/baz'
 };
 
-validate( opts, done );
+lint( opts, done );
 
-function done( error ) {
+function done( error, errs ) {
     if ( error ) {
         throw error;
     }
-    console.log( 'Success!' );
+    if ( errs ) {
+        console.dir( errs );
+    } else {
+        console.log( 'Success!' );
+    }
 }
 ```
 
@@ -56,13 +64,17 @@ var opts = {
     'pattern': '**/foo/**/package.json'
 };
 
-validate( opts, done );
+lint( opts, done );
 
-function done( error ) {
+function done( error, errs ) {
     if ( error ) {
         throw error;
     }
-    console.log( 'Success!' );
+    if ( errs ) {
+        console.dir( errs );
+    } else {
+        console.log( 'Success!' );
+    }
 }
 ```
 
@@ -77,29 +89,35 @@ var opts = {
     ]
 };
 
-validate( opts, done );
+lint( opts, done );
 
-function done( error ) {
+function done( error, errs ) {
     if ( error ) {
         throw error;
     }
+    if ( errs ) {
+        console.dir( errs );
+    } else {
+        console.log( 'Success!' );
+    }
+}
+```
+
+
+#### lint.sync( \[options\] )
+
+Synchronously lint `package.json` files.
+
+``` javascript
+var errs = lint.sync();
+if ( errs ) {
+    console.dir( errs );
+} else {
     console.log( 'Success!' );
 }
 ```
 
-
-#### validate.sync( \[options\] )
-
-Synchronously find and validate `package.json` files.
-
-``` javascript
-var err = validate.sync();
-if ( err ) {
-    throw err;
-}
-```
-
-The function accepts the same `options` as `validate()` above.
+The function accepts the same `options` as `lint()` above.
 
 </section>
 
@@ -118,15 +136,19 @@ The function accepts the same `options` as `validate()` above.
 ## Examples
 
 ``` javascript
-var validate = require( '@stdlib/tools/pkg-json/validate-all' );
+var lint = require( '@stdlib/tools/pkg-json/lint' );
 
-validate( done );
+lint( done );
 
-function done( error ) {
+function done( error, errs ) {
     if ( error ) {
         throw error;
     }
-    console.log( 'Success!' );
+    if ( errs ) {
+        console.dir( errs );
+    } else {
+        console.log( 'Success!' );
+    }
 }
 ```
 
@@ -146,7 +168,7 @@ function done( error ) {
 ### Usage
 
 ``` bash
-Usage: validate-all-pkg-json [options] [dir]
+Usage: lint-pkg-json [options] [dir]
 
 Options:
 
@@ -169,7 +191,7 @@ Options:
 * To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
   ``` bash
-  $ validate-all-pkg-json --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+  $ lint-pkg-json --ignore=node_modules/** --ignore=build/** --ignore=reports/**
   ```
 
 </section>
@@ -182,7 +204,7 @@ Options:
 ### Examples
 
 ``` bash
-$ validate-all-pkg-json
+$ lint-pkg-json
 ```
 
 </section>

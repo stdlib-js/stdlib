@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'validate-all:read-pkgs' );
+var debug = require( 'debug' )( 'lint:read-pkgs' );
 var readJSON = require( '@stdlib/fs/read-json' );
 var isValid = require( './../../validate' );
 
@@ -10,7 +10,7 @@ var isValid = require( './../../validate' );
 // MAIN //
 
 /**
-* Reads and validates `package.json` files.
+* Reads and lints `package.json` files.
 *
 * @private
 * @param {StringArray} files - list of `package.json` files
@@ -18,21 +18,23 @@ var isValid = require( './../../validate' );
 */
 function readPkgs( files, clbk ) {
 	var total;
+	var out;
 	var i;
 
 	total = files.length;
+	out = [];
 	i = -1;
 
 	next();
 
 	/**
-	* Reads the next `package.json` file.
+	* Processes the next `package.json` file.
 	*
 	* @private
 	*/
 	function next() {
 		i += 1;
-		debug( 'Reading package %d of %d: %s', i+1, total, files[ i ] );
+		debug( 'Processing file %d of %d: %s', i+1, total, files[ i ] );
 		readJSON( files[ i ], onRead );
 	} // end FUNCTION next()
 
@@ -50,39 +52,48 @@ function readPkgs( files, clbk ) {
 		j = i + 1;
 		if ( error ) {
 			debug( 'Encountered an error reading file: %s (%d of %d). Error: %s', files[ i ], j, total, error.message );
-			error = new Error( 'invalid JSON. '+files[ i ]+'. '+error.message );
-			return done( error );
-		}
-		debug( 'Successfully read file: %s (%d of %d).', files[ i ], j, total );
-
-		debug( 'Validating file.' );
-		bool = isValid( json );
-		if ( bool ) {
-			debug( 'File is valid.' );
+			out.push({
+				'file': files[ i ],
+				'errors': [
+					{
+						'message': error.message
+					}
+				]
+			});
 		} else {
-			debug( 'File is invalid: %s.', JSON.stringify( isValid.errors ) );
-			error = new Error( 'invalid file. '+files[ i ]+'. '+JSON.stringify( isValid.errors[ 0 ] ) );
-			return done( error );
+			debug( 'Successfully read file: %s (%d of %d).', files[ i ], j, total );
+
+			debug( 'Validating file.' );
+			bool = isValid( json );
+			if ( bool ) {
+				debug( 'File is valid.' );
+			} else {
+				debug( 'File is invalid: %s.', JSON.stringify( isValid.errors ) );
+				out.push({
+					'file': files[ i ],
+					'errors': isValid.errors
+				});
+			}
 		}
 		if ( j < total ) {
-			debug( 'Read %d of %d files.', j, total );
+			debug( 'Processed %d of %d files.', j, total );
 			return next();
 		}
-		debug( 'Successfully read all files.' );
+		debug( 'Processed all files.' );
 		return done();
 	} // end FUNCTION onRead()
 
 	/**
-	* Callback invoked upon reading all files.
+	* Callback invoked upon completion.
 	*
 	* @private
-	* @param {(Error|null)} error - error object
 	*/
-	function done( error ) {
-		if ( error ) {
-			return clbk( error );
+	function done() {
+		if ( out.length ) {
+			clbk( null, out );
+		} else {
+			clbk( null, null );
 		}
-		clbk();
 	} // end FUNCTION done()
 } // end FUNCTION readPkgs()
 

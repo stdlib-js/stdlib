@@ -1,43 +1,49 @@
 'use strict';
 
 /**
-* Find and validate `package.json` files.
+* Lint `package.json` files.
 *
-* @module @stdlib/tools/pkg-json/validate-all
+* @module @stdlib/tools/pkg-json/lint
 *
 * @example
-* var validate = require( '@stdlib/tools/pkg-json/validate-all' );
+* var lint = require( '@stdlib/tools/pkg-json/lint' );
 *
-* validate( clbk );
+* lint( clbk );
 *
-* function clbk( error ) {
+* function clbk( error, errs ) {
 *     if ( error ) {
 *         throw error;
 *     }
-*     console.log( 'Success!' );
+*     if ( errs ) {
+*         console.dir( errs );
+*     } else {
+*         console.log( 'Success!' );
+*     }
 * }
 *
 * @example
-* var validate = require( '@stdlib/tools/pkg-json/validate-all' );
+* var lint = require( '@stdlib/tools/pkg-json/lint' );
 *
-* var err = validate.sync();
-* if ( err ) {
-*     throw err;
+* var errs = lint.sync();
+* if ( errs ) {
+*     console.dir( errs );
+* } else {
+*     console.log( 'Success!' );
 * }
 */
 
 // MODULES //
 
 var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
-var validate = require( './async.js' );
+var lint = require( './async.js' );
 var sync = require( './sync.js' );
 
 
 // MAIN //
 
-setReadOnly( validate, 'sync', sync );
+setReadOnly( lint, 'sync', sync );
 
 
 // EXPORTS //
 
-module.exports = validate;
+module.exports = lint;
