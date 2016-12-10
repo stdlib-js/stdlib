@@ -18,7 +18,23 @@ var schema = require( './../../schema' );
 * var isValid = validator();
 */
 function validator() {
-	return ( new Ajv() ).compile( schema() );
+	var opts;
+	var ajv;
+
+	opts = {};
+
+	// Collect all errors:
+	opts.allErrors = true;
+
+	// Include the schema reference and invalid data in error output:
+	opts.verbose = true;
+
+	// Perform "full" validation:
+	opts.format = 'full';
+
+	// Create a new `Ajv` instance and compile the schema:
+	ajv = new Ajv( opts );
+	return ajv.compile( schema() );
 } // end FUNCTION validator()
 
 
