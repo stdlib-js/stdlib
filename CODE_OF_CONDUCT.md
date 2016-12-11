@@ -64,8 +64,7 @@ The following behaviors are considered harassment, are unacceptable within our c
 * Continued one-on-one communication after requests to cease.
 * Publication of non-harassing private communication.
 * Sustained disruption of discussion.
-* Any other conduct which could reasonably be considered inappropriate in a
-  professional setting.
+* Any other conduct which could reasonably be considered inappropriate in a professional setting.
 * Advocating for, or encouraging, any of the above behavior, including but not limited to "liking", "starring", "retweeting", or any other form of promotion.
 
 Note that your free speech is not __our__ problem. That this policy is a restrictive political stance is intentional. If you want different rules, go create a separate project.

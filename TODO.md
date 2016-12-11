@@ -1378,6 +1378,8 @@
 
 304. [treemap](https://bl.ocks.org/mbostock/8fe6fa6ed1fa976e5dd76cfa4d816fec) to visualize source
 
+305. [configuration store](https://github.com/sethvincent/configuration-store/blob/master/index.js)
+
 
 ---
 
