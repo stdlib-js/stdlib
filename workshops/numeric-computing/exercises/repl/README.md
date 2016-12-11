@@ -15,7 +15,9 @@
   ```
 
 * To see a list of REPL functions, hit the `TAB` key.
+
 * Create a linearly spaced `1001` element vector from `0` to `1` using [linspace][linspace].
+
 * To retrieve the last value, type `_` and hit `ENTER`.
 
 
@@ -30,7 +32,7 @@
 
 * Require one of your previous solutions; e.g., 
 
-  ```
+  ``` text
   > require( './workshops/numeric-computing/solutions/native_math.5.js' );
   ```
 
