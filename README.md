@@ -240,8 +240,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [python]: https://www.python.org/
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
-[boost]: http://www.boost.org/
 [pandoc]: http://pandoc.org/
+
+<!-- [boost]: http://www.boost.org/ -->
 
 [node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
