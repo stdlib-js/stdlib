@@ -30,8 +30,8 @@ This pull request:
 
 This pull request:
 
-* resolves 
-* fixes
+* resolves #
+* fixes #
 
 
 ## Questions
@@ -53,7 +53,10 @@ No.
 @stdlib-js/reviewers
 
 
+<!-- <links> -->
 
 [contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
 [code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md
 [license]: https://github.com/stdlib-js/stdlib/blob/master/LICENSE
+
+<!-- </links> -->
