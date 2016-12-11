@@ -33,12 +33,19 @@
 * Download and process a training corpus.
 
   - Download a full plain text copy of [Moby Dick][moby-dick] from [Project Gutenberg][moby-dick].
+
   - Remove the front matter before `Chapter 1`, and remove the end matter after the `Epilogue`.
+
   - Replace all tab characters with a single space.
+
   - Replace all newline characters (and trailing spaces) with a single space.
+
   - Replace multiple spaces with a single space.
+
   - Split the text into separate "words" using a single space as the delimiter.
+
   - Write the word list to file.
+
   - Build a database (dictionary) where each key is a pair of consecutive words and the key value is an `array` of words which follow the key pair. For example, given the phrase "The quick brown fox jumped over the lazy cat.", the database would be
 
     ``` javascript
@@ -69,7 +76,9 @@
 ## Tips
 
 * Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
+
 * When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][transform]) for efficient processing.
+
 * To select a random element from a list,
 
   ``` javascript
