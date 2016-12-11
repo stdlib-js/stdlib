@@ -167,10 +167,14 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 <!-- TODO: distinguish between Linux and Windows code coverage -->
 
+<!--lint disable table-pipe-alignment-->
+
 | OS | Build (master) | Coverage (master) | Build (develop) | Coverage (develop) |
 | --- | --- | --- | --- | --- |
-| Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop]
+| Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
 | Windows | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
+
+<!--lint enable table-pipe-alignment-->
 
 
 #### Dependencies
