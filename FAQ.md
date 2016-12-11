@@ -1,3 +1,5 @@
+<!--lint disable no-heading-punctuation-->
+
 # Frequently Asked Questions
 
 > Common answers to common questions.
@@ -6,7 +8,7 @@
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
 * [What about WebAssembly?](#web-assembly)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
-* [Why not change the official ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
+* [Why not change the ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
 * [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Backward compatibility?](#backward-compatibility)
 * [Promise support?](#promise-support)
@@ -78,7 +80,7 @@
 
 <a name="ecmascript-math-specification"></a>
 
-### Why not change the official ECMAScript specification to use better Math algorithms?
+### Why not change the ECMAScript specification to use better Math algorithms?
 
 Common arguments in support of changing the official ECMAScript specification:
 
@@ -93,6 +95,8 @@ A central thesis of this project is as follows:
 > The standard Math library in JavaScript is fundamentally broken and cannot, and should not, be fixed by changing the official ECMAScript specification.
 
 The reasons are as follows:
+
+<!--lint disable list-item-spacing-->
 
 1. __underspecified standard__: the ECMAScript specification for the standard Math library is underspecified, but not without merit. Namely, underspecification allows those implementing the specification to make trade-offs between speed and precision. Were the specification to mandate a particular algorithm, e.g., for `Math.sin`, implementers would be locked into __always__ using a particular implementation. Especially for special functions, different algorithms will yield different results under varying conditions. Thus, to change an underlying algorithm would mean to break backward compatibility. By not committing themselves to any hard backward compatibility constraints, implementors maintain a degree of flexibility, including the ability to use algorithms which cater to a particular user base (gaming versus numeric computing). In which case, underspecification has advantages.   
 
@@ -115,6 +119,8 @@ The reasons are as follows:
 1. __trust__: at a very fundamental level, trust is broken. This reason underscores all the others. JavaScript environments cannot, on their own, be relied upon to provide a single consistent solution to the Math problem.
 
 <!-- 1. __trust__: at a very fundamental level, trust is broken. This reason underscores all the others. A continued history of bugs, poor algorithms, insufficient testing, lack of IEEE 754 compliance, favoring speed at the cost of precision, insufficient domain knowledge, and carelessness with backward compatibility present an overwhelming case that JavaScript environments cannot, on their own, be relied upon to provide a single consistent solution to the Math problem. -->
+
+<!--lint enable list-item-spacing-->
 
 Based on the reasons above, Math is fundamentally broken at the standards and native implementation levels. Nevertheless, based on the existence of solid low-level primitives, speed, and ecosystem, this project maintains that JavaScript __is__ a viable platform for numeric and mathematical computing. The solution, however, does not entail standardization, but rather the development of independent community-driven solutions which can provide the kind of rigorous, robust, and performant numerical algorithms applications need.
 
