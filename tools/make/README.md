@@ -489,13 +489,13 @@ $ make check-licenses
 
 To enable [bash completion][bash-completion] of Makefile targets, add
 
-```
+``` text
 complete -W "\`find . ! \( -path \"*/node_modules/*\" -prune \) -and \( -name 'Makefile' -o -name '*.mk' \) | xargs grep '^.PHONY: ' | awk '{print $2}'\`" make
 ```
 
 to your `~/.bash_profile` or `~/.bashrc`.  Note that completion is __not__ exhaustive, as the above only includes targets which have been __explicitly__ declared phony targets
 
-```
+``` text
 .PHONY: beep-boop
 ```
 
