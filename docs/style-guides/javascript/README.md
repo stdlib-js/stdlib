@@ -1,6 +1,6 @@
 # JavaScript Style Guide
 
-> _An opinionated style guide for writing JavaScript._
+> *An opinionated style guide for writing JavaScript.*
 
 
 ## Table of Contents
@@ -37,11 +37,11 @@
 
 ## Introduction
 
-Always abide by the __Law of Code Style Consistency__, or, in other words, _when in Rome, do as the Romans do_. 
+Always abide by the __Law of Code Style Consistency__, or, in other words, *when in Rome, do as the Romans do*. 
 
 While the code base to which you want to contribute may be a horrific mess in terms of aesthetic appearance and style, style consistency takes precedent over personal preference and canon. The more consistent a code base is in terms of style, the more readers of the code can focus on what the code does rather than deciphering changes in style.
 
-So, even if your peers commit various _faux pas_ outlined below, as long as you are contributing to their code base, abide by their conventions.
+So, even if your peers commit various *faux pas* outlined below, as long as you are contributing to their code base, abide by their conventions.
 
 A code base--module, repository, application, library, etc--should always appear to have a single author and not be a schizophrenic franken-mess. This stated, for those opportunities where you are the primary author, you should lead by example and write clean, readable, and testable code.
 
@@ -67,7 +67,7 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 ##### Reason
 
-Tab indentation allows a developer to specify the space indentation equivalent in her editor. For example, in [Sublime Text][sublime-text], you can specify in your user preferences
+[Tab indentation][tab-indentation] allows a developer to specify the space indentation equivalent in her editor. For example, in [Sublime Text][sublime-text], you can specify in your user preferences
 
 ``` text
 "tab_width": 4
@@ -779,6 +779,7 @@ Code review.
 
 
 <!-- <rule-set> -->
+
 ---
 
 ## Strings
@@ -3028,6 +3029,7 @@ var robo = createRobot();
 
 
 <!-- <rule-set> -->
+
 ---
 
 ## Setters and Getters
@@ -3439,9 +3441,9 @@ Often, more focused modules are available which can accomplish the same task. In
 
 * In particular, avoid the following libraries:
 
-    * underscore
-    * lodash
-    * async
+  * underscore
+  * lodash
+  * async
 
 
 ##### Enforcement 
@@ -3460,15 +3462,19 @@ Any dependency you use becomes __your__ responsibility. Demand the same level of
 
 ##### Notes
 
-* While Github stars and downloads are rough indicators, place more emphasis on the following:
+* While GitHub stars and downloads are rough indicators, place more emphasis on the following:
 
-    * Code quality
-        - conciseness
-        - maintainability
-    * Documentation
-        - APIs
-        - examples
-    * Test cases
+  * Code quality
+
+    - conciseness
+    - maintainability
+
+  * Documentation
+    
+    - APIs
+    - examples
+
+  * Test cases
 
 * For most cases, do __not__ place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
 
