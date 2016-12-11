@@ -189,7 +189,9 @@ Options:
 ### Notes
 
 * If part of a standard stream pipeline, results are written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]). Otherwise, results are pretty printed by default.
+
 * If not provided a `dir` argument, the current working directory is the search directory.
+
 * To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
   ``` bash
