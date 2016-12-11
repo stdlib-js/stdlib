@@ -158,6 +158,7 @@ Options:
 ### Notes
 
 * If not provided a `dir` argument, the current working directory is the search directory.
+
 * To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
   ``` bash
