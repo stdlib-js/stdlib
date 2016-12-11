@@ -49,7 +49,7 @@ lint[ 'fenced-code-marker' ] = [ 'error', '`' ];
 lint[ 'file-extension' ] = [ 'error', 'md' ];
 
 // Require definitions be placed at the end of a file:
-lint[ 'final-definition' ] = [ 'warn' ];
+lint[ 'final-definition' ] = [ 'off' ]; // NOTE: we turn this off due to definitions being wrapped in HTML tags
 
 // Require a final newline (see http://unix.stackexchange.com/questions/18743):
 lint[ 'final-newline' ] = [ 'error' ];
