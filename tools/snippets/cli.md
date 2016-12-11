@@ -1,3 +1,6 @@
+<!--lint disable first-heading-level-->
+
+<!-- Copy everything below -->
 
 <!-- Section for describing a command-line interface. -->
 
