@@ -1,6 +1,6 @@
 # TODO
 
-0. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
+1. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
 
    * all PRs, etc, should be made against `develop`
 
@@ -292,18 +292,18 @@
     * inlining
     * loop unrolling
     * verify results
-    * http://mrale.ph/blog/2013/08/14/hidden-classes-vs-jsperf.html
-    * http://mrale.ph/blog/2012/06/03/explaining-js-vms-in-js-inline-caches.html
-    * http://mrale.ph/blog/2012/09/23/grokking-v8-closures-for-fun.html
-    * https://www.youtube.com/watch?v=65-RbBwZQdU
-    * http://mrale.ph/blog/2012/12/15/microbenchmarks-fairy-tale.html
-    * http://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html
-    * http://mrale.ph/blog/2013/04/29/performance-tuning-as-weather-forecast.html
-    * https://floitsch.blogspot.de/search/label/V8-optimizations
-    * https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html
-    * https://mathiasbynens.be/notes/javascript-benchmarking
-    * https://github.com/sq/JSIL/wiki/JavaScript-Performance-For-Madmen
-    * http://mp.binaervarianz.de/JS_perf_study_TR_Oct2015.pdf
+    * <http://mrale.ph/blog/2013/08/14/hidden-classes-vs-jsperf.html>
+    * <http://mrale.ph/blog/2012/06/03/explaining-js-vms-in-js-inline-caches.html>
+    * <http://mrale.ph/blog/2012/09/23/grokking-v8-closures-for-fun.html>
+    * <https://www.youtube.com/watch?v=65-RbBwZQdU>
+    * <http://mrale.ph/blog/2012/12/15/microbenchmarks-fairy-tale.html>
+    * <http://mrale.ph/blog/2014/02/23/the-black-cat-of-microbenchmarks.html>
+    * <http://mrale.ph/blog/2013/04/29/performance-tuning-as-weather-forecast.html>
+    * <https://floitsch.blogspot.de/search/label/V8-optimizations>
+    * <https://floitsch.blogspot.com/2012/03/optimizing-for-v8-inlining.html>
+    * <https://mathiasbynens.be/notes/javascript-benchmarking>
+    * <https://github.com/sq/JSIL/wiki/JavaScript-Performance-For-Madmen>
+    * <http://mp.binaervarianz.de/JS_perf_study_TR_Oct2015.pdf>
 
 40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
 
@@ -854,9 +854,9 @@
      * [ ] plot
      * [x] regexp
      * [x] repl
-     * [-] streams
-     * [-] string
-     * [-] tools
+     * [ ] streams (~)
+     * [ ] string (~)
+     * [ ] tools (~)
      * [ ] utils
 
 101. profiling
@@ -1006,7 +1006,7 @@
 
 134. [vmd](https://github.com/yoshuawuyts/vmd)
 
-135. when browserifying `@stdlib/plot` should _ignore_ `electron`!!!!
+135. when browserifying `@stdlib/plot` should *ignore* `electron`!!!!
 
      - may want to have a separate `view` method entirely; one that is catered to browser context
 
@@ -1385,13 +1385,14 @@
 
 ## Immediate
 
-1. 
+1. simple server
 
 2. abstract-ndarray
 
 3. terminal sparklines
 
    * toJSON => needs chart spec
+
    * colors
 
      - [ansi-256-colors](https://github.com/jbnicolai/ansi-256-colors)
@@ -1465,25 +1466,29 @@
     * [paratext](https://github.com/wiseio/paratext/blob/master/src/csv/rowbased_worker.hpp)
     * read-csv (file) vs from-csv (stream) vs parse-csv (string or buffer) => some overlap between these
 
-11. simple server
-
 
 ---
 
 ## Plot
 
 1. plot cli (requires `split`)
+
 2. rects
+
    - x
    - y
    - orientation: vert, horz
    - width calc'd via `x[i+1]-x[i]`
+
 3. xAxis, yAxis -> true/false; whether to create or not
-4. 
+
+4. xExtendedTicks?
+
 5. validation; instead of a sep validator folder, when providing an object, just set the props to validate; also allows moving etc files to prop folders
+
 6. line -> area
-7. readme
-8. xExtendedTicks?
+
+7. readme 
 
 
 ---
@@ -1555,7 +1560,7 @@
 
 14. [svg2png](https://github.com/domenic/svg2png) without promises and cleaner
 
-     - [svgexport](https://github.com/shakiba/svgexport)
+    - [svgexport](https://github.com/shakiba/svgexport)
 
 15. [is-class](https://github.com/miguelmota/is-class/blob/master/is-class.js)
 
