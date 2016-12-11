@@ -93,7 +93,7 @@ The function accepts the same `options` as `lint()` above.
   - __name__: filename.
   - __error__: reason for failure.
 
-  ```
+  ``` text
   {
       "name": "path/to/failing/filename.abc",
       "error": "filename must be lowercase."
