@@ -97,7 +97,6 @@
 [@bug:webkit:151641]: https://bugs.webkit.org/show_bug.cgi?id=151641
 [@bug:webkit:40367]: https://bugs.webkit.org/show_bug.cgi?id=40367
 [@bug:mozilla:969203]: https://bugzilla.mozilla.org/show_bug.cgi?id=969203#c8
-[@bug:mozilla:967709]: https://bugzilla.mozilla.org/show_bug.cgi?id=967709
 [@bug:mozilla:948321]: https://bugzilla.mozilla.org/show_bug.cgi?id=948321
 [@bug:v8:5086]: https://bugs.chromium.org/p/v8/issues/detail?id=5086
 [@bug:v8:5157]: https://bugs.chromium.org/p/v8/issues/detail?id=5157
