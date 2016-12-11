@@ -17,7 +17,7 @@ A [BibTeX][bibtex] reference database. Database items may include references to 
 
 The database is a [BibTeX][bibtex] database file, where the file format is a plain text list of bibliography items. Each database entry corresponds to a single bibliography item. The entry type is identified by an `@` symbol. Each entry is associated with one or more fields, which are listed within braces. For example,
 
-```
+``` text
 @article{bays:1976,
     abstract = {},
     acmid = {355670},
