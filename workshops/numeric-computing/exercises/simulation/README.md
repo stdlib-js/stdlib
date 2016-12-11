@@ -75,9 +75,9 @@
 
 ## Tips
 
-* Use `123456` to seed [randu][randu], thus allowing comparison with solution results.
+* Use `123456` to seed [randu][@stdlib/math/base/random/randu], thus allowing comparison with solution results.
 
-* When processing the training corpus, consider using streams (e.g., [split][split], [join][join], and [transform][transform]) for efficient processing.
+* When processing the training corpus, consider using streams (e.g., [split][@stdlib/streams/utils/split], [join][@stdlib/streams/utils/join], and [transform][@stdlib/streams/utils/transform]) for efficient processing.
 
 * To select a random element from a list,
 
@@ -112,10 +112,10 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 [markov-chain]: https://en.wikipedia.org/wiki/Markov_chain
 
-[randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
-[split]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/split
-[join]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/join
-[transform]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/transform
+[@stdlib/math/base/random/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+[@stdlib/streams/utils/split]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/split
+[@stdlib/streams/utils/join]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/join
+[@stdlib/streams/utils/transform]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/transform
 
 [moby-dick]: http://www.gutenberg.org/cache/epub/2701/pg2701.txt
 
