@@ -21,7 +21,7 @@ A common measure of numerical accuracy is the [root-mean-square error][rmse] (RM
 ### 3) Comparison to Standard
 
 * Generate a plot showing the sine computed by `Math.sin` and the sine computed from Julia (Julia results can be found in the `./fixtures` directory). The `x` values over which to compute the sin are included in the fixtures.
-* Generate a plot showing the deviations (in units of [epsilon][epsilon-difference]) of `Math.sin` from Julia (include the RMSE in the plot title).
+* Generate a plot showing the deviations (in units of [epsilon][@stdlib/math/base/utils/float64-epsilon-difference]) of `Math.sin` from Julia (include the RMSE in the plot title).
 * As a bonus, repeat the test for different Node versions.
 
 
@@ -81,7 +81,7 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 [welfords-method]: https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Online_algorithm
 [nvm]: https://github.com/creationix/nvm
 
-[epsilon-difference]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/utils/float64-epsilon-difference
+[@stdlib/math/base/utils/float64-epsilon-difference]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/utils/float64-epsilon-difference
 
 [next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
