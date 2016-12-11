@@ -81,7 +81,7 @@
     "rawgit-url": "^1.0.0",
     "read-installed": "^4.0.3",
     "remark": "^6.0.0",
-    "remark-cli": "^2.0.0",
+    "remark-cli": "git+https://github.com/kgryte/remark-cli.git",
     "remark-html": "^5.1.0",
     "remark-lint": "^5.0.0",
     "remark-slug": "^4.2.2",
