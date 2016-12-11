@@ -95,6 +95,7 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 ## Notes
 
 * System dependencies:
+
   - [pandoc][pandoc]
   - [pandoc-citeproc][pandoc-citeproc]
 
