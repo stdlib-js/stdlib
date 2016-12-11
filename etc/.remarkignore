@@ -2,3 +2,5 @@
 # Directories #
 ###############
 /node_modules/
+.git
+!.github
