@@ -220,7 +220,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
 
-[semantic-versioning]: http://semver.org/
+[semver]: http://semver.org/
 
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 
