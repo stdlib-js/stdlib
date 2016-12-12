@@ -149,7 +149,7 @@ This project follows the branching model articulated in ["A successful Git branc
 
 * In order to merge a feature branch into the `develop` branch, submit a pull request against the `develop` branch.
 
-* Before merging a feature branch into the `develop` branch, the source code __must__ be peer reviewed.
+* Before merging a feature branch into the `develop` branch, the source code __must__ be peer reviewed and pass continuous integration tests.
 
 
 ### Releases
@@ -168,7 +168,7 @@ This project follows the branching model articulated in ["A successful Git branc
 
 * Once a release branch is complete, submit a pull request against the `master` branch.
 
-* Before merging the release branch into the `master` branch, the changes __must__ be peer reviewed.
+* Before merging the release branch into the `master` branch, the changes __must__ be peer reviewed and pass continuous integration tests.
 
 * Once merged into `master`, submit a pull request against the `develop` branch to retain the changes made in the release branch.
 
@@ -189,7 +189,7 @@ This project follows the branching model articulated in ["A successful Git branc
 
 * Submit a pull request against the `master` branch.
 
-* Before merging a hotfix branch into the `master` branch, the changes __must__ pass continuous integration tests and be peer reviewed.
+* Before merging a hotfix branch into the `master` branch, the changes __must__ be peer reviewed and pass continuous integration tests.
 
 * Once merged into `master`, if a release branch currently exists, submit a pull request against the `release` branch. Otherwise, submit a pull request against the `develop` branch. By merging a hotfix into a release branch, the hotfix changes should be propagated to the `develop` branch upon merging the release branch into the `develop` branch. 
 
