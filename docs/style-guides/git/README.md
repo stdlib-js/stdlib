@@ -5,108 +5,108 @@
 
 ## Commits
 
-* All commits should follow the [seven rules][git-seven-rules] of a [Git][git] commit message:
+All commits should follow the [seven rules][git-seven-rules] of a [Git][git] commit message:
 
-  1. Use the [imperative mood][imperative-mood] in the [Git][git] commit subject line.
+1. Use the [imperative mood][imperative-mood] in the [Git][git] commit subject line.
 
-     ``` text
-     # Do not...
-     Fixed Markdown lint errors
-     ```
+   ``` text
+   # Do not...
+   Fixed Markdown lint errors
+   ```
 
-     ``` text
-     # Do...
-     Fix Markdown lint errors
-     ```
+   ``` text
+   # Do...
+   Fix Markdown lint errors
+   ```
 
-  1. Capitalize the first word of the subject line.
+1. Capitalize the first word of the subject line.
 
-     ``` text
-     # Do not...
-     fix Markdown lint errors
-     ```
+   ``` text
+   # Do not...
+   fix Markdown lint errors
+   ```
 
-     ``` text
-     # Do...
-     Fix Markdown lint errors
-     ```
+   ``` text
+   # Do...
+   Fix Markdown lint errors
+   ```
 
-  1. Do __not__ end the subject line with a period.
+1. Do __not__ end the subject line with a period.
 
-     ``` text
-     # Do not...
-     Fix Markdown lint errors.
-     ```
+   ``` text
+   # Do not...
+   Fix Markdown lint errors.
+   ```
 
-     ``` text
-     # Do...
-     Fix Markdown lint errors
-     ```
+   ``` text
+   # Do...
+   Fix Markdown lint errors
+   ```
 
-  1. Separate the subject line from the body with a blank line.
+1. Separate the subject line from the body with a blank line.
 
-     ``` text
-     # Do not...
-     This is the subject line
-     This is the body body body body body body body body body body body body
-     body body body body body body body body body body body body body body
-     ```
+   ``` text
+   # Do not...
+   This is the subject line
+   This is the body body body body body body body body body body body body
+   body body body body body body body body body body body body body body
+   ```
 
-     ``` text
-     # Do...
-     This is the subject line
+   ``` text
+   # Do...
+   This is the subject line
 
-     This is the body body body body body body body body body body body body
-     body body body body body body body body body body body body body body
-     ```
+   This is the body body body body body body body body body body body body
+   body body body body body body body body body body body body body body
+   ```
 
-  1. Try to limit the subject line to `50` characters.
+1. Try to limit the subject line to `50` characters.
 
-     ``` text
-     # Do not...
-     This is the subject line line line line line line line line line line line line line line
-     ```
+   ``` text
+   # Do not...
+   This is the subject line line line line line line line line line line line line line line
+   ```
 
-     ``` text
-     # Do...
-     This is the subject line
-     ```
+   ``` text
+   # Do...
+   This is the subject line
+   ```
 
-  1. Use the body to explain the *what* and *why*, and not the *how*.
+1. Use the body to explain the *what* and *why*, and not the *how*.
 
-     ``` text
-     # Do not...
-     Change Markdown heading style
+   ``` text
+   # Do not...
+   Change Markdown heading style
 
-     Update various Markdown files to stop lint errors. Change the heading
-     style from `===` to `#`.
-     ```
+   Update various Markdown files to stop lint errors. Change the heading
+   style from `===` to `#`.
+   ```
 
-     ``` text
-     # Do...
-     Change Markdown heading style
+   ``` text
+   # Do...
+   Change Markdown heading style
 
-     Change the heading style to ensure consistency with `remark` output.
-     This ensures that all Markdown files are all of the same style, thus
-     reducing the number of edge cases Markdown parsers need to consider.
-     ```  
+   Change the heading style to ensure consistency with `remark` output.
+   This ensures that all Markdown files are all of the same style, thus
+   reducing the number of edge cases Markdown parsers need to consider.
+   ```  
 
-  1. Try to wrap the body at `72` characters.
+1. Try to wrap the body at `72` characters.
 
-     ``` text
-     # Do not...
-     This is the subject line
+   ``` text
+   # Do not...
+   This is the subject line
 
-     This is the body body body body body body body body body body body body body body body body body body body body body body body body body body
-     ```
+   This is the body body body body body body body body body body body body body body body body body body body body body body body body body body
+   ```
 
-     ``` text
-     # Do...
-     This is the subject line
+   ``` text
+   # Do...
+   This is the subject line
 
-     This is the body body body body body body body body body body body body
-     body body body body body body body body body body body body body body
-     ```
+   This is the body body body body body body body body body body body body
+   body body body body body body body body body body body body body body
+   ```
 
 ---
 
