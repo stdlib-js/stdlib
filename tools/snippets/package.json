@@ -1,7 +1,7 @@
 {
-  "name": "TODO",
+  "name": "{{TODO:name}}",
   "version": "0.0.0",
-  "description": "TODO",
+  "description": "{{TODO:description}}",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/stdlib-js/stdlib",
   "keywords": [
     "stdlib",
-    "TODO"
+    "{{TODO:keywords}}"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
