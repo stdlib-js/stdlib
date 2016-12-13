@@ -12,7 +12,8 @@ var opts = {
 		'function',
 		'erf'
 	],
-	'cmd': 'erf'
+	'cmd': 'erf',
+	'browser': './lib/browser/index.js'
 };
 
 var pkg = create( opts );

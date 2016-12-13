@@ -102,6 +102,9 @@ if ( args.keywords ) {
 if ( args.cmd ) {
 	opts.cmd = args.cmd;
 }
+if ( args.browser ) {
+	opts.browser = args.browser;
+}
 if ( args.space ) {
 	space = parseInt( args.space, 10 );
 } else {

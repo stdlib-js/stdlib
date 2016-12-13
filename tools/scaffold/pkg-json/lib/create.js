@@ -20,6 +20,7 @@ var validate = require( './validate.js' );
 * @param {string} [options.desc] - package description
 * @param {StringArray} [options.keywords] - package keywords
 * @param {string} [options.cmd] - package command for use as a CLI tool
+* @param {string} [options.browser] - browser entry point
 * @throws {TypeError} must provide an object
 * @throws {TypeError} must provide valid options
 * @returns {Object} `package.json`
@@ -62,6 +63,9 @@ function create( options ) {
 	if ( hasOwnProp( opts, 'cmd' ) ) {
 		out.bin = {};
 		out.bin[ opts.cmd ] = opts.bin;
+	}
+	if ( hasOwnProp( opts, 'browser' ) ) {
+		out.browser = opts.browser;
 	}
 	return standardize( out );
 } // end FUNCTION create()

@@ -4,6 +4,7 @@
 		"desc",
 		"keywords",
 		"cmd",
+		"browser",
 		"space"
 	],
 	"boolean": [

@@ -96,6 +96,20 @@ tape( 'the function returns a `package.json` (cmd)', function test( t ) {
 	t.end();
 });
 
+tape( 'the function returns a `package.json` (browser)', function test( t ) {
+	var opts;
+	var pkg;
+
+	opts = {
+		'browser': './lib/browser/index.js'
+	};
+	pkg = create( opts );
+
+	t.strictEqual( pkg.browser, opts.browser, 'sets a browser entry point' );
+
+	t.end();
+});
+
 tape( 'in order to return a valid `package.json`, must provide `name`, `desc`, and `keywords`', function test( t ) {
 	var opts;
 	var pkg;
