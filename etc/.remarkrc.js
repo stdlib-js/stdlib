@@ -132,6 +132,9 @@ lint[ 'no-heading-content-indent' ] = [ 'error' ];
 // Prevent heading indentation:
 lint[ 'no-heading-indent' ] = [ 'error' ];
 
+// Prevent h7+ "headings":
+lint[ 'no-heading-like-paragraph' ] = [ 'error' ];
+
 // Prevent punctuation at the end of a heading:
 lint[ 'no-heading-punctuation' ] = [ 'error' ];
 
