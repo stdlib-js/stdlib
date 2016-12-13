@@ -1,0 +1,42 @@
+{
+  "name": "@stdlib/tools/scaffold/pkg-json",
+  "version": "0.0.0",
+  "description": "Create a package.json.",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "package-json": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "keywords": [
+    "stdlib",
+    "tools",
+    "scaffold",
+    "package",
+    "pkg",
+    "json"
+  ],
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "Apache-2.0"
+}

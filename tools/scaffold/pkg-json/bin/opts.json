@@ -1,0 +1,23 @@
+{
+	"string": [
+		"name",
+		"desc",
+		"keywords",
+		"cmd",
+		"bin",
+		"space"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"compact"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}
