@@ -108,6 +108,9 @@ lint[ 'no-duplicate-headings' ] = [ 'off' ];
 // Prevent emphasis being used as a heading:
 lint[ 'no-emphasis-as-heading' ] = [ 'error' ];
 
+// Prevent empty URLs in images and links:
+lint[ 'no-empty-url' ] = [ 'error' ];
+
 // Prevent filenames beginning with an article:
 lint[ 'no-file-name-articles' ] = [ 'error' ];
 
