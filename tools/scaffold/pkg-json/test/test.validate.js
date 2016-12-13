@@ -66,6 +66,33 @@ tape( 'if provided a `name` option which is not a `string`, the function returns
 	t.end();
 });
 
+tape( 'if provided a `name` option which does not begin with `@stdlib/`, the function returns an error', function test( t ) {
+	var values;
+	var opts;
+	var err;
+	var i;
+
+	values = [
+		'beep',
+		'stdlib',
+		'stdlib/',
+		'@stdlib',
+		'@stdlib/',
+		'beep/boop',
+		'stdlib/@stdlib',
+		'lib/node_modules/@stdlib/beep'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		opts = {};
+		err = validate( opts, {
+			'name': values[i]
+		});
+		t.strictEqual( err instanceof Error, true, 'returns an error when provided '+values[i] );
+	}
+	t.end();
+});
+
 tape( 'if provided a `desc` option which is not a `string`, the function returns a type error', function test( t ) {
 	var values;
 	var opts;

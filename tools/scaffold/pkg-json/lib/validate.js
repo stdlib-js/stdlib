@@ -8,6 +8,11 @@ var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 
 
+// VARIABLES //
+
+var RE = /^\@stdlib\/.+/;
+
+
 // MAIN //
 
 /**
@@ -43,6 +48,9 @@ function validate( opts, options ) {
 		opts.name = options.name;
 		if ( !isString( opts.name ) ) {
 			return new TypeError( 'invalid option. `name` option must be a primitive string. Option: `' + opts.name + '`.' );
+		}
+		if ( !RE.test( opts.name ) ) {
+			return new Error( 'invalid option. `name` option must begin with `@stdlib/`. Option: `'+ opts.name + '`.' );
 		}
 	}
 	if ( hasOwnProp( options, 'desc' ) ) {
