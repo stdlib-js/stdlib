@@ -1386,6 +1386,8 @@
 
 308. [is-online](https://github.com/sindresorhus/is-online/blob/master/index.js)
 
+309. Compute the [half-life](https://erikbern.com/2016/12/05/the-half-life-of-code.html) of code (months) (see [Julia](https://discourse.julialang.org/t/run-the-half-life-of-code-analysis-on-julia/763))
+
 
 ---
 
