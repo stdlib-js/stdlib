@@ -20,7 +20,6 @@ var validate = require( './validate.js' );
 * @param {string} [options.desc] - package description
 * @param {StringArray} [options.keywords] - package keywords
 * @param {string} [options.cmd] - package command for use as a CLI tool
-* @param {string} [options.bin='./bin/cli'] - path to package executable
 * @throws {TypeError} must provide an object
 * @throws {TypeError} must provide valid options
 * @returns {Object} `package.json`

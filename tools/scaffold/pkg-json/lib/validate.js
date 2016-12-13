@@ -20,7 +20,6 @@ var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
 * @param {string} [options.desc] - package description
 * @param {StringArray} [options.keywords] - package keywords
 * @param {string} [options.cmd] - package command for use as a CLI tool
-* @param {string} [options.bin] - path to package executable
 * @returns {(Error|null)} error object or null
 *
 * @example
@@ -61,12 +60,6 @@ function validate( opts, options ) {
 		opts.cmd = options.cmd;
 		if ( !isString( opts.cmd ) ) {
 			return new TypeError( 'invalid option. `cmd` option must be a primitive string. Option: `' + opts.cmd + '`.' );
-		}
-	}
-	if ( hasOwnProp( options, 'bin' ) ) {
-		opts.bin = options.bin;
-		if ( !isString( opts.bin ) ) {
-			return new TypeError( 'invalid option. `bin` option must be a primitive string. Option: `' + opts.bin + '`.' );
 		}
 	}
 	return null;

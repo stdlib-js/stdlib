@@ -36,7 +36,6 @@ The function accepts the following `options`:
 * __desc__: package [description][package-description].
 * __keywords__: package [keywords][package-keywords]. The keyword `stdlib` is automatically included in the keyword list and thus does not need to be included.
 * __cmd__: package [command][package-command] for use as a CLI tool.
-* __bin__: path to package executable. Only used if provided `options.cmd`. Default: `./bin/cli`.
 
 To return a valid `package.json`, set the `name`, `desc`, and `keywords` options.
 
@@ -128,8 +127,7 @@ var opts = {
         'function',
         'erf'
     ],
-    'cmd': 'erf',
-    'bin': './bin/cli'
+    'cmd': 'erf'
 };
 
 var pkg = create( opts );
@@ -166,7 +164,6 @@ Options:
          --desc description    Package description.
          --keywords k1,k2,...  Package keywords.
          --cmd command         Package command for use as a CLI tool.
-         --bin path            Path to executable.
          --compact             Disable pretty print.
          --space num           White space amount. Default: 2.
 ```

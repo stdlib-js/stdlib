@@ -12,8 +12,7 @@ var opts = {
 		'function',
 		'erf'
 	],
-	'cmd': 'erf',
-	'bin': './bin/cli'
+	'cmd': 'erf'
 };
 
 var pkg = create( opts );

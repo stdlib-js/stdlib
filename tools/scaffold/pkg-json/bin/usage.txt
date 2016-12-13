@@ -9,7 +9,6 @@ Options:
          --desc description    Package description.
          --keywords k1,k2,...  Package keywords.
          --cmd command         Package command for use as a CLI tool.
-         --bin path            Path to executable.
          --compact             Disable pretty print.
          --space num           White space amount. Default: 2.
 

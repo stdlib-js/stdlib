@@ -96,21 +96,6 @@ tape( 'the function returns a `package.json` (cmd)', function test( t ) {
 	t.end();
 });
 
-tape( 'the function returns a `package.json` (bin)', function test( t ) {
-	var opts;
-	var pkg;
-
-	opts = {
-		'cmd': 'erf',
-		'bin': './bin/erf'
-	};
-	pkg = create( opts );
-
-	t.strictEqual( pkg.bin.erf, opts.bin, 'sets the path to the package executable' );
-
-	t.end();
-});
-
 tape( 'in order to return a valid `package.json`, must provide `name`, `desc`, and `keywords`', function test( t ) {
 	var opts;
 	var pkg;

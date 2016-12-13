@@ -150,33 +150,6 @@ tape( 'if provided a `cmd` option which is not a `string`, the function returns 
 	t.end();
 });
 
-tape( 'if provided a `bin` option which is not a `string`, the function returns a type error', function test( t ) {
-	var values;
-	var opts;
-	var err;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		true,
-		null,
-		undefined,
-		[],
-		{},
-		function(){}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		opts = {};
-		err = validate( opts, {
-			'bin': values[i]
-		});
-		t.strictEqual( err instanceof TypeError, true, 'returns a type error when provided '+values[i] );
-	}
-	t.end();
-});
-
 tape( 'the function returns `null` if all options are valid', function test( t ) {
 	var opts;
 	var obj;
@@ -192,8 +165,7 @@ tape( 'the function returns `null` if all options are valid', function test( t )
 			'function',
 			'erf'
 		],
-		'cmd': 'erf',
-		'bin': './bin/cli'
+		'cmd': 'erf'
 	};
 	obj = {};
 	err = validate( obj, opts );

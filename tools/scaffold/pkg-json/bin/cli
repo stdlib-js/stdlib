@@ -102,9 +102,6 @@ if ( args.keywords ) {
 if ( args.cmd ) {
 	opts.cmd = args.cmd;
 }
-if ( args.bin ) {
-	opts.bin = args.bin;
-}
 if ( args.space ) {
 	space = parseInt( args.space, 10 );
 } else {
