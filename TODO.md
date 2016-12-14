@@ -1388,6 +1388,8 @@
 
 309. Compute the [half-life](https://erikbern.com/2016/12/05/the-half-life-of-code.html) of code (months) (see [Julia](https://discourse.julialang.org/t/run-the-half-life-of-code-analysis-on-julia/763))
 
+310. evaluate [fastapprox](https://github.com/whackashoe/fastapprox/tree/master/fastapprox) (see also node [bindings](https://github.com/monkey2000/node-fastapprox/blob/master/src/approx.cc))
+
 
 ---
 
