@@ -1390,6 +1390,10 @@
 
 310. evaluate [fastapprox](https://github.com/whackashoe/fastapprox/tree/master/fastapprox) (see also node [bindings](https://github.com/monkey2000/node-fastapprox/blob/master/src/approx.cc))
 
+311. See [gitql](https://github.com/cloudson/gitql) and [textql](https://github.com/dinedal/textql)
+
+312. Another way of determining number of pkgs/tools over time is to clone repo, checkout each commit, and run analysis
+
 
 ---
 

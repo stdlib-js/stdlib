@@ -715,6 +715,50 @@ stats-files-changed-per-weekday:
 .PHONY: stats-files-changed-per-weekday
 
 
+# Compute number of library packages added per day.
+#
+# This target computes the number of library packages added per day.
+
+stats-lib-pkgs-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_day
+
+.PHONY: stats-lib-pkgs-per-day
+
+
+# Compute number of library packages added per hour.
+#
+# This target computes the number of library packages added per hour.
+
+stats-lib-pkgs-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_hour
+
+.PHONY: stats-lib-pkgs-per-hour
+
+
+# Compute number of library packages added per month.
+#
+# This target computes the number of library packages added per month.
+
+stats-lib-pkgs-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_month
+
+.PHONY: stats-lib-pkgs-per-month
+
+
+# Compute number of library packages added per weekday.
+#
+# This target computes the number of library packages added per weekday.
+
+stats-lib-pkgs-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_weekday
+
+.PHONY: stats-lib-pkgs-per-weekday
+
+
 # Compute lines per author.
 #
 # This target computes the number of lines attributed to each author.
@@ -1078,9 +1122,9 @@ stats-pkg-json-added-deleted:
 .PHONY: stats-pkg-json-added-deleted
 
 
-# Compute number of `package.json` files added per day.
+# Compute number of packages added per day.
 #
-# This target computes the number of `package.json` added per day.
+# This target computes the number of packages added per day.
 
 stats-pkgs-per-day:
 	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_day
@@ -1089,9 +1133,9 @@ stats-pkgs-per-day:
 .PHONY: stats-pkgs-per-day
 
 
-# Compute number of `package.json` files added per hour.
+# Compute number of packages added per hour.
 #
-# This target computes the number of `package.json` added per hour.
+# This target computes the number of packages added per hour.
 
 stats-pkgs-per-hour:
 	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_hour
@@ -1100,9 +1144,9 @@ stats-pkgs-per-hour:
 .PHONY: stats-pkgs-per-hour
 
 
-# Compute number of `package.json` files added per month.
+# Compute number of packages added per month.
 #
-# This target computes the number of `package.json` added per month.
+# This target computes the number of packages added per month.
 
 stats-pkgs-per-month:
 	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_month
@@ -1111,9 +1155,9 @@ stats-pkgs-per-month:
 .PHONY: stats-pkgs-per-month
 
 
-# Compute number of `package.json` files added per weekday.
+# Compute number of packages added per weekday.
 #
-# This target computes the number of `package.json` added per weekday.
+# This target computes the number of packages added per weekday.
 
 stats-pkgs-per-weekday:
 	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_weekday
