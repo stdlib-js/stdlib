@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Prints the number of packages per hour.
+# Prints the approximate number of packages per hour.
 #
 # <hour> <num_pkgs>
 

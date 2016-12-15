@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Prints the number of packages per month.
+# Prints the approximate number of packages per month.
 #
 # <month> <year> <num_pkgs>
 
