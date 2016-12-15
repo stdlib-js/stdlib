@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+#
+# Prints the number of packages per weekday.
+#
+# <weekday> <num_pkgs>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to find when `package.json` files were added and deleted:
+pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
+
+# * `pkg_json`
+#   - `package.json` additions and deletions.
+# * `awk '{}'`
+#   - Tabulate the weekday totals.
+"${pkg_json}" | awk '
+BEGIN {
+	split("Mon Tue Wed Thu Fri Sat Sun", days);
+}
+
+# Added a `package.json`:
+$8 == "A" {
+	pkgs[$1] += 1
+}
+
+# Deleted a `package.json`:
+$8 == "D" {
+	pkgs[$1] -= 1
+}
+
+END {
+	for (i = 1; i <= 7; i++) {
+		day = days[i]
+		print day OFS pkgs[day]
+	}
+}'
