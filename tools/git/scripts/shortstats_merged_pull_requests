@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+#
+# Prints summary statistics for merged pull requests.
+#
+# <month> <day> <year> <num_files> <additions> <deletions>
+
+# FUNCTIONS #
+
+# Computes summary statistics.
+sum() {
+	local sadd=0
+	local sdel=0
+	local i=0
+	while read -r add del file
+	do
+		i=$((i + 1))
+		sadd=$((sadd + add))
+		sdel=$((sdel + del))
+	done
+	echo "${i} ${sadd} ${sdel}"
+}
+
+
+# MAIN #
+
+# * `git log --reverse --merges`
+#   - Show commit logs in reverse order.
+# * `grep 'Merge pull request #'`
+#   - Filter for commit messages which explicitly state that a commit merges a pull request.
+# * `while read`
+#   - Read stdin line-by-line.
+# * `git show --numstat`
+#   - Given a commit hash, print each line along with the associated number of additions and deletions.
+# * `sum`
+#   - Compute summary statistics over the list of files.
+# * `while read`
+#   - Print summarized output.
+git log --reverse --merges --format=format:"%ad %H %s" --date=format:"%b %d %Y" | grep 'Merge pull request #' | \
+while IFS=" " read -r mon day year hash msg
+do
+	git show "${hash}" --format=tformat: --numstat | sum | \
+	while read -r n add del
+	do
+		echo "${mon} ${day} ${year} ${n} ${add} ${del}"
+	done
+done
