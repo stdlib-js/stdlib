@@ -23,7 +23,7 @@ pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
 }
 
 # Skip non-library `package.json`:
-! /lib\/node_modules\/\@stdlib\// {
+$9 !~ /lib\/node_modules\/\@stdlib\// {
 	next
 }
 
