@@ -1341,3 +1341,47 @@ stats-tabulate-total-commits-per-day:
 
 .PHONY: stats-tabulate-total-commits-per-day
 
+
+# Compute number of tools packages added per day.
+#
+# This target computes the number of tools packages added per day.
+
+stats-tools-pkgs-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_day
+
+.PHONY: stats-tools-pkgs-per-day
+
+
+# Compute number of tools packages added per hour.
+#
+# This target computes the number of tools packages added per hour.
+
+stats-tools-pkgs-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_hour
+
+.PHONY: stats-tools-pkgs-per-hour
+
+
+# Compute number of tools packages added per month.
+#
+# This target computes the number of tools packages added per month.
+
+stats-tools-pkgs-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_month
+
+.PHONY: stats-tools-pkgs-per-month
+
+
+# Compute number of tools packages added per weekday.
+#
+# This target computes the number of tools packages added per weekday.
+
+stats-tools-pkgs-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_weekday
+
+.PHONY: stats-tools-pkgs-per-weekday
+
