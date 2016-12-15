@@ -1396,6 +1396,10 @@
 
 313. use git blame to determine loc per auth per pkg
 
+314. [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
+
+315. approx [cbrt](http://www.hackersdelight.org/hdcodetxt/acbrt.c.txt)
+
 
 ---
 
