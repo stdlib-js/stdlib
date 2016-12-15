@@ -22,6 +22,7 @@ This utility provides support for executing a subset of `Makefile` commands from
 * `complexity`
 * `list-pkgs`
 * `list-pkgs-names`
+* `stats-list-contributors`
 
 When executing a command, the current working directory is used as a filter. Thus, when invoking the `test` command, __only__ those tests in the current working directory and below will be run.
 
