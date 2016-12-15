@@ -253,6 +253,39 @@ stats-author-files-changed-per-weekday:
 .PHONY: stats-author-files-changed-per-weekday
 
 
+# Compute number of library packages per day per author.
+#
+# This target computes the number of library packages per day per author.
+
+stats-author-lib-pkgs-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_day
+
+.PHONY: stats-author-lib-pkgs-per-day
+
+
+# Compute number of library packages per month per author.
+#
+# This target computes the number of library packages per month per author.
+
+stats-author-lib-pkgs-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_month
+
+.PHONY: stats-author-lib-pkgs-per-month
+
+
+# Compute number of library packages per weekday per author.
+#
+# This target computes the number of library packages per weekday per author.
+
+stats-author-lib-pkgs-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_weekday
+
+.PHONY: stats-author-lib-pkgs-per-weekday
+
+
 # Compute author mean commit interval.
 #
 # This target computes the mean commit interval per author.
