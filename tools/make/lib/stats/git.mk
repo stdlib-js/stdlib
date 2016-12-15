@@ -8,6 +8,12 @@ MAKE_EXECUTABLE ?= chmod +x
 # Define the path to the directory containing scripts for mining the git repository:
 GIT_SCRIPTS_DIR ?= $(TOOLS_DIR)/git/scripts
 
+# Define a directory path for when listing contributors:
+LIST_DIR_CONTRIBUTORS ?= $(ROOT_DIR)
+
+# Define a package for when listing contributors:
+LIST_PKG_CONTRIBUTORS ?=
+
 
 # TARGETS #
 
@@ -823,6 +829,28 @@ stats-lines-per-file-type:
 	$(QUIET) $(GIT_SCRIPTS_DIR)/lines_per_file_type
 
 .PHONY: stats-lines-per-file-type
+
+
+# List directory contributors.
+#
+# This target list contributors for a directory and its descendants.
+
+stats-list-dir-contributors:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/list_dir_contributors
+	$(QUIET) $(GIT_SCRIPTS_DIR)/list_dir_contributors $(LIST_DIR_CONTRIBUTORS)
+
+.PHONY: stats-list-dir-contributors
+
+
+# List package contributors.
+#
+# This target list contributors for a package.
+
+stats-list-pkg-contributors:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/list_pkg_contributors
+	$(QUIET) $(GIT_SCRIPTS_DIR)/list_pkg_contributors $(LIST_PKG_CONTRIBUTORS)
+
+.PHONY: stats-list-pkg-contributors
 
 
 # Compute mean additions per hour.
