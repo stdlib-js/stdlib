@@ -1067,6 +1067,61 @@ stats-num-files-per-file-type:
 .PHONY: stats-num-files-per-file-type
 
 
+# Print a list of added and deleted `package.json` files
+#
+# This target prints a list of `package.json` files which have been either added or deleted.
+
+stats-pkg-json-added-deleted:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkg_json_added_deleted
+	$(QUIET) $(GIT_SCRIPTS_DIR)/pkg_json_added_deleted
+
+.PHONY: stats-pkg-json-added-deleted
+
+
+# Compute number of `package.json` files added per day.
+#
+# This target computes the number of `package.json` added per day.
+
+stats-pkgs-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/pkgs_per_day
+
+.PHONY: stats-pkgs-per-day
+
+
+# Compute number of `package.json` files added per hour.
+#
+# This target computes the number of `package.json` added per hour.
+
+stats-pkgs-per-hour:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_hour
+	$(QUIET) $(GIT_SCRIPTS_DIR)/pkgs_per_hour
+
+.PHONY: stats-pkgs-per-hour
+
+
+# Compute number of `package.json` files added per month.
+#
+# This target computes the number of `package.json` added per month.
+
+stats-pkgs-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/pkgs_per_month
+
+.PHONY: stats-pkgs-per-month
+
+
+# Compute number of `package.json` files added per weekday.
+#
+# This target computes the number of `package.json` added per weekday.
+
+stats-pkgs-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/pkgs_per_weekday
+
+.PHONY: stats-pkgs-per-weekday
+
+
 # Rank commit first words.
 #
 # This target computes the frequency of commit message first words.
