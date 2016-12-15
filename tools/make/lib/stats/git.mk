@@ -1232,6 +1232,17 @@ stats-shortstats:
 .PHONY: stats-shortstats
 
 
+# Compute summary statistics for merged pull requests.
+#
+# This target computes summary statistics for each merged pull request.
+
+stats-shortstats-merged-pull-requests:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats_merged_pull_requests
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats_merged_pull_requests
+
+.PHONY: stats-shortstats-merged-pull-requests
+
+
 # Compute summary statistics per day.
 #
 # This target computes summary statistics for each day.
