@@ -1386,13 +1386,15 @@
 
 308. [is-online](https://github.com/sindresorhus/is-online/blob/master/index.js)
 
-309. Compute the [half-life](https://erikbern.com/2016/12/05/the-half-life-of-code.html) of code (months) (see [Julia](https://discourse.julialang.org/t/run-the-half-life-of-code-analysis-on-julia/763))
+309. Compute the [half-life](https://erikbern.com/2016/12/05/the-half-life-of-code.html) of code (months) (see [Julia](https://discourse.julialang.org/t/run-the-half-life-of-code-analysis-on-julia/763)) => interesting extension would be per author
 
 310. evaluate [fastapprox](https://github.com/whackashoe/fastapprox/tree/master/fastapprox) (see also node [bindings](https://github.com/monkey2000/node-fastapprox/blob/master/src/approx.cc))
 
 311. See [gitql](https://github.com/cloudson/gitql) and [textql](https://github.com/dinedal/textql)
 
 312. Another way of determining number of pkgs/tools over time is to clone repo, checkout each commit, and run analysis
+
+313. use git blame to determine loc per auth per pkg
 
 
 ---

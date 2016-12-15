@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+# List contributors for a provided directory.
+#
+# <commits> <author_firstname> <author_lastname>
+#
+# This script is called with the following arguments:
+#
+# * `$1` - directory path
+
+# * `git shortlog -sn`
+#   -  Generate a log summary with commit counts.
+git shortlog -sn "$1"
