@@ -31,6 +31,7 @@ plugins[ 'complexity' ] = path.join( prefix, 'makie-complexity' );
 plugins[ 'view-complexity' ] = path.join( prefix, 'makie-view-complexity' );
 plugins[ 'list-pkgs' ] = path.join( prefix, 'makie-list-pkgs' );
 plugins[ 'list-pkgs-names' ] = path.join( prefix, 'makie-list-pkgs-names' );
+plugins[ 'stats-list-contributors' ] = path.join( prefix, 'makie-stats-list-contributors' );
 
 
 // EXPORTS //
