@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+#
+# Prints `package.json` additions and deletions.
+#
+# <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name> <action> <filename>
+
+# * `git log --reverse`
+#   - Show commit logs in reverse order.
+# * `--find-renames`
+#   - Find file renames.
+# * `--name-status`
+#   - Show only names.
+# * `--diff-filter AD`
+#   - Only select files which are either added (A) or deleted (D).
+# * `--format=format:""`
+#   - Format the log.
+# * `--date=format:""`
+#   - Format the date.
+# * `awk '{}'
+#   - Process each commit.
+git log \
+	--reverse \
+	--find-renames \
+	--name-status \
+	--diff-filter AD \
+	--format=format:"%ad %aN" \
+	--date=format:"%a %b %d %T %Y" \
+| awk '
+# Skip empty lines:
+NF == 0 {
+	next
+}
+
+# Date lines:
+! /^[AD]/ {
+	date = $0
+	next
+}
+
+# Skip files which are  not `package.json` files:
+! /package\.json/ {
+	next
+}
+
+# Process `package.json` files:
+{
+	print date OFS $1 OFS $2
+}
+'
