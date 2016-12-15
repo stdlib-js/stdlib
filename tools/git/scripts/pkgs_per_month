@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+#
+# Prints the number of packages per month.
+#
+# <month> <year> <num_pkgs>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to find when `package.json` files were added and deleted:
+pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
+
+# * `pkg_json`
+#   - `package.json` additions and deletions.
+# * `awk '{}'`
+#   - Tabulate the monthly totals.
+# * `sort -k1n -k2M`
+#   - Sort the year numerically and sort the second key as a month.
+# * `awk '{}'`
+#   - Format the output.
+"${pkg_json}" | awk '
+{
+	mon = $5 OFS $2
+}
+
+# Added a `package.json`:
+$8 == "A" {
+	pkgs[mon] += 1
+}
+
+# Deleted a `package.json`:
+$8 == "D" {
+	pkgs[mon] -= 1
+}
+
+END {
+	for (mon in pkgs) {
+		print mon OFS pkgs[mon]
+	}
+}
+' | sort -k1n -k2M | awk '{print $2 OFS $1 OFS $3}'
