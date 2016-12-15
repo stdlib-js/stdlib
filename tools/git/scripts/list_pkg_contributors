@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+#
+# List contributors for a provided package.
+#
+# <commits> <author_firstname> <author_lastname>
+#
+# This script is called with the following arguments:
+#
+# * `$1` - package name
+#
+# Notes:
+#
+# * If provided the package name of a namespace, the commit counts include commits for all packages in child directories.
+# * The script only supports packages in the main library (i.e., `lib/node_modules/@stdlib/...` => `@stdlib/math/base/special/pow`).
+
+# VARIABLES #
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to list contributors for a given directory:
+list_dir_contributors="${root}/tools/git/scripts/list_dir_contributors"
+
+# Define the package path:
+pkg="${root}/lib/node_modules/$1"
+
+
+# MAIN #
+
+if [[ -d "${pkg}" ]]; then
+	"${list_dir_contributors}" "${pkg}"
+else
+	echo "ERROR: Package does not exist." >&2
+	exit 1
+fi
