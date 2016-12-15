@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+#
+# Prints the number of packages per hour.
+#
+# <hour> <num_pkgs>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to find when `package.json` files were added and deleted:
+pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
+
+# * `pkg_json`
+#   - `package.json` additions and deletions.
+# * `awk '{}'`
+#   - Tabulate the hourly totals.
+# * `sort -n`
+#   - Sort in numerical order.
+"${pkg_json}" | awk '
+{
+	split($4, time, ":")
+	hr = time[1]
+}
+
+# Added a `package.json`:
+$8 == "A" {
+	pkgs[hr] += 1
+}
+
+# Deleted a `package.json`:
+$8 == "D" {
+	pkgs[hr] -= 1
+}
+
+END {
+	for (hr in pkgs) {
+		print hr OFS pkgs[hr]
+	}
+}
+' | sort -n
