@@ -22,7 +22,7 @@ FETCH=$(which fetch 2>/dev/null)
 timeout=30
 
 # Define command options:
-curl_opts="-fkL --connect-timeout ${TIMEOUT} -y ${TIMEOUT}"
+curl_opts="-fkL --connect-timeout ${timeout} -y ${timeout}"
 wget_opts="--no-check-certificate --tries=1 --timeout=${timeout}"
 fetch_opts="-T ${timeout}"
 
@@ -51,4 +51,4 @@ else
 fi
 
 # Download the resource:
-"${get}" "${url}"
+"${get} ${url}"
