@@ -66,6 +66,9 @@ COVERAGE_INSTRUMENTATION_DIR ?= $(BUILD_DIR)/coverage
 # Define the top-level directory containing executables:
 LOCAL_BIN_DIR ?= $(ROOT_DIR)/bin
 
+# Define the top-level directory containing vendor dependencies:
+DEPS_DIR ?= $(ROOT_DIR)/deps
+
 # Define the top-level directory containing node module dependencies:
 NODE_MODULES ?= $(ROOT_DIR)/node_modules
 
