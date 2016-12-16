@@ -1398,7 +1398,9 @@
 
 314. [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
 
-315. approx [cbrt](http://www.hackersdelight.org/hdcodetxt/acbrt.c.txt)
+315. approx [cbrt](http://www.hackersdelight.org/hdcodetxt/acbrt.c.txt) and fast cbrt
+
+316. crypto non-crypto hash function [djb2](http://www.cse.yorku.ca/~oz/hash.html) and [here](https://github.com/darkskyapp/string-hash) (may also be interesting to implement others)
 
 
 ---

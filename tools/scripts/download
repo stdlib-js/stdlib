@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+#
+# Download a remote resource.
+#
+# Usage: download url [output_filepath]
+#
+# Arguments:
+#
+#   url                 Remote resource.
+#   output_filepath     Output filepath.
+#
+
+# Set the url:
+url="$1"
+
+# Find a program for downloading a resource:
+CURL=$(which curl 2>/dev/null)
+WGET=$(which wget 2>/dev/null)
+FETCH=$(which fetch 2>/dev/null)
+
+# Define a timeout (in seconds):
+timeout=30
+
+# Define command options:
+curl_opts="-fkL --connect-timeout ${TIMEOUT} -y ${TIMEOUT}"
+wget_opts="--no-check-certificate --tries=1 --timeout=${timeout}"
+fetch_opts="-T ${timeout}"
+
+# Set option for writing to an output filepath...
+if [[ "$#" -eq 1 ]]; then
+	curl_opts="${curl_opts} -O"
+elif [[ "$#" -eq 2 ]]; then
+	curl_opts="${curl_opts} -o $2"
+	wget_opts="${wget_opts} -O $2"
+	fetch_opts="${fetch_opts} -o $2"
+else
+	echo 'ERROR: unrecognized arguments. Must provide a URL and, optionally, an output filepath.' >&2
+	exit 1
+fi
+
+# Determine the command for downloading a resource...
+if [[ -x "${CURL}" ]] && "${CURL}" -V >/dev/null; then
+	get="${CURL} ${curl_opts}"
+elif [[ -x "${WGET}" ]] && "${WGET}" -V >/dev/null; then
+	get="${WGET} ${wget_opts}"
+elif [[ -x "${FETCH}" ]]; then
+	get="${FETCH} ${fetch_opts}"
+else
+	echo 'ERROR: missing dependency. Please download either curl, wget, or fetch. Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# Download the resource:
+"${get}" "${url}"
