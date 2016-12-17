@@ -2,6 +2,7 @@
 	"**/lint/filenames/test/fixtures/**",
 	"node_modules/**",
 	"build/**",
+	"**/build/**",
 	"reports/**",
 	".git*",
 	"**/*.com",
