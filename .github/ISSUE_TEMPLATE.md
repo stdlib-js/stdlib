@@ -1,4 +1,6 @@
 
+<!--lint disable first-heading-level-->
+
 ## Checklist
 
 > Please ensure the following tasks are completed before filing an issue.

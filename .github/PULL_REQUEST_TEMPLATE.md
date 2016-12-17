@@ -1,5 +1,7 @@
 Resolves # .
 
+<!--lint disable first-heading-level-->
+
 ## Checklist
 
 > Please ensure the following tasks are completed before submitting this pull request.
