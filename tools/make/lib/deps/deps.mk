@@ -34,6 +34,15 @@ $(DEPS_BUILD_DIR):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_BUILD_DIR)
 
 
+# Install vendor dependencies.
+#
+# This target installs vendor dependencies:
+
+install-deps: deps-install-boost
+
+.PHONY: install-deps
+
+
 # Clean vendor dependencies.
 #
 # This target removes vendor dependencies.

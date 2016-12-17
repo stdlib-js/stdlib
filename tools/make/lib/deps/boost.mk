@@ -99,7 +99,9 @@ deps-extract-boost: $(DEPS_BOOST_BUILD_OUT)
 # This target tests a Boost installation.
 
 deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
+	$(QUIET) echo 'Running tests...' >&2
 	$(QUIET) echo 1 2 3 | $(DEPS_BOOST_TEST_INSTALL_OUT)
+	$(QUIET) echo 'Success.' >&2
 	$(QUIET) echo ''
 
 .PHONY: deps-test-boost
