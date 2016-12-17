@@ -1402,6 +1402,8 @@
 
 316. crypto non-crypto hash function [djb2](http://www.cse.yorku.ca/~oz/hash.html) and [here](https://github.com/darkskyapp/string-hash) (may also be interesting to implement others)
 
+317. Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
+
 
 ---
 

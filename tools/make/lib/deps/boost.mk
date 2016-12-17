@@ -25,6 +25,18 @@ DEPS_BOOST_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_boost_basename)
 # Define the output path when building Boost:
 DEPS_BOOST_BUILD_OUT ?= $(DEPS_BUILD_DIR)/boost_$(deps_boost_version_slug)
 
+# Define the path to the directory containing Boost tests:
+DEPS_BOOST_TEST_DIR ?= $(DEPS_DIR)/test/boost
+
+# Define the output directory path for a compiled tests:
+DEPS_BOOST_TEST_OUT ?= $(DEPS_BOOST_TEST_DIR)/build
+
+# Define the path to a test file for checking a Boost installation:
+DEPS_BOOST_TEST_INSTALL ?= $(DEPS_BOOST_TEST_DIR)/test_install.cpp
+
+# Define the output path for a test file:
+DEPS_BOOST_TEST_INSTALL_OUT ?= $(DEPS_BOOST_TEST_OUT)/test_install
+
 
 # TARGETS #
 
@@ -46,6 +58,22 @@ $(DEPS_BOOST_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 $(DEPS_BOOST_BUILD_OUT): $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Boost...' >&2
 	$(QUIET) tar -zxf $(DEPS_BOOST_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+
+
+# Create directory for tests.
+#
+# This target creates a directory for storing compiled tests.
+
+$(DEPS_BOOST_TEST_OUT):
+	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_BOOST_TEST_OUT)
+
+
+# Compile install test.
+#
+# This target compiles a test file for testing a Boost installation.
+
+$(DEPS_BOOST_TEST_INSTALL_OUT): $(DEPS_BOOST_BUILD_OUT) $(DEPS_BOOST_TEST_OUT)
+	$(QUIET) $(CXX) -I $(DEPS_BOOST_BUILD_OUT) $(DEPS_BOOST_TEST_INSTALL) -o $(DEPS_BOOST_TEST_INSTALL_OUT)
 
 
 # Download Boost.
@@ -70,8 +98,9 @@ deps-extract-boost: $(DEPS_BOOST_BUILD_OUT)
 #
 # This target tests a Boost installation.
 
-deps-test-boost: $(DEPS_BOOST_BUILD_OUT)
-
+deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
+	$(QUIET) echo 1 2 3 | $(DEPS_BOOST_TEST_INSTALL_OUT)
+	$(QUIET) echo ''
 
 .PHONY: deps-test-boost
 
@@ -80,7 +109,7 @@ deps-test-boost: $(DEPS_BOOST_BUILD_OUT)
 #
 # This target installs Boost.
 
-deps-install-boost: deps-download-boost deps-extract-boost
+deps-install-boost: deps-download-boost deps-extract-boost deps-test-boost
 
 .PHONY: deps-install-boost
 
