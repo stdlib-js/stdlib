@@ -29,7 +29,7 @@ help:
 #
 # This target lists all Makefile targets.
 #
-# Note: the list of targets is NOT exhaustive, as it does not include targets which have been explicitly declared PHONY targets and does not include targets declared via variables. These targets could be included by dumping the Makefile database `make -qp`, but not seen as necessary due to predominant use of PHONY.
+# Note: the list of targets is NOT exhaustive, as it does not include targets which have not been explicitly declared PHONY targets and does not include targets declared via variables. These targets could be included by dumping the Makefile database `make -qp`, but not seen as necessary due to predominant use of PHONY.
 
 list-targets:
 	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
