@@ -42,7 +42,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: deps-install-boost
+install-deps: install-deps-boost
 
 .PHONY: install-deps
 

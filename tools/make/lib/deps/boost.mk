@@ -115,9 +115,9 @@ deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
 #
 # This target installs Boost.
 
-deps-install-boost: deps-download-boost deps-extract-boost deps-test-boost
+install-deps-boost: deps-download-boost deps-extract-boost deps-test-boost
 
-.PHONY: deps-install-boost
+.PHONY: install-deps-boost
 
 
 # Clean Boost.
