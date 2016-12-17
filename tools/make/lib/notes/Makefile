@@ -24,9 +24,10 @@ notes:
 	$(QUIET) $(FIND_NOTES) $(FIND_NOTES_FLAGS) $(KEYWORDS) $(FIND_NOTES_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude-dir "$(BUILD_DIR)/*" \
+		--exclude-dir "$(REPORTS_DIR)/*" \
 		--exclude "$(this_file)" \
 		--exclude "$(ROOT_DIR)/.*" \
-		--exclude "$(REPORTS_DIR)/*" \
+		--exclude "**/$(BUILD_FOLDER)/*" \
 		--exclude TODO.md
 
 .PHONY: notes
