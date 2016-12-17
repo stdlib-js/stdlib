@@ -1,9 +1,4 @@
 
-# DEPENDENCIES #
-
-include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
-
-
 # TARGETS #
 
 # Run the install process.
