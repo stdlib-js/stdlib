@@ -225,13 +225,19 @@ lint() {
 	echo 'Linting filenames...' >&2
 	make lint-filenames >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
-		echo 'Linting failed.' >&2
+		echo 'Linting filenames failed.' >&2
 		return 1
 	fi
 	echo 'Linting package.json files...' >&2
 	make lint-pkg-json >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
-		echo 'Linting failed.' >&2
+		echo 'Linting package.json failed.' >&2
+		return 1
+	fi
+	echo 'Linting Markdown files...' >&2
+	make lint-markdown >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting Markdown failed.' >&2
 		return 1
 	fi
 	echo 'Linting passed.' >&2
