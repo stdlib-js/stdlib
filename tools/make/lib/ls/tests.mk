@@ -23,7 +23,8 @@ FIND_TESTS_FLAGS ?= \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*"
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "**/$(BUILD_FOLDER)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_FLAGS := -regextype posix-extended $(FIND_TESTS_FLAGS)
