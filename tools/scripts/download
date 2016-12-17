@@ -40,15 +40,18 @@ fi
 
 # Determine the command for downloading a resource...
 if [[ -x "${CURL}" ]] && "${CURL}" -V >/dev/null; then
-	get="${CURL} ${curl_opts}"
+	get="${CURL}"
+	opts="${curl_opts}"
 elif [[ -x "${WGET}" ]] && "${WGET}" -V >/dev/null; then
-	get="${WGET} ${wget_opts}"
+	get="${WGET}"
+	opts="${wget_opts}"
 elif [[ -x "${FETCH}" ]]; then
-	get="${FETCH} ${fetch_opts}"
+	get="${FETCH}"
+	opts="${fetch_opts}"
 else
 	echo 'ERROR: missing dependency. Please download either curl, wget, or fetch. Once installed, run the command again.' >&2
 	exit 1
 fi
 
 # Download the resource:
-"${get} ${url}"
+eval "${get} ${opts} ${url}"
