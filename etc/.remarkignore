@@ -2,6 +2,6 @@
 # Directories #
 ###############
 /node_modules/
-build/
+**/build/*
 .git
 !.github
