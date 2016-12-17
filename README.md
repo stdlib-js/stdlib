@@ -21,6 +21,7 @@ Developing and running stdlib __requires__ the following prerequisites:
 
 * [git][git]: version control
 * [GNU make][gnu-make]: development utility and task runner
+* [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for automatically downloading vendor dependencies
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 
 While not required to run stdlib, the following dependencies may be required for testing, benchmarking, and general development:
@@ -31,12 +32,9 @@ While not required to run stdlib, the following dependencies may be required for
 * [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.7`; clang version `>= 3.1`)
 * [pandoc][pandoc]: universal document converter
 
-<!--
-The following external libraries are automatically downloaded and the compiled from source the first you run `make`:
+The following vendor libraries can be automatically downloaded and compiled from source using `make`:
 
 * [Boost][boost]: portable C++ libraries
-
-!-->
 
 
 ### Download
@@ -83,6 +81,12 @@ To install development dependencies,
 $ make install
 ```
 
+To install vendor dependencies,
+
+``` bash
+$ make install-deps
+```
+
 To initialize the development environment,
 
 ``` bash
@@ -107,6 +111,7 @@ The stdlib source code is organized as follows:
 
 ``` text
 bin        executable binaries
+deps       vendor dependencies
 docs       top-level documentation
 etc        configuration files
 examples   top-level library examples
@@ -234,7 +239,11 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make
+[curl]: http://curl.haxx.se/
+[wget]: http://www.gnu.org/software/wget
+[fetch]: http://www.freebsd.org/cgi/man.cgi?fetch%281%29
 [node-js]: https://nodejs.org/en/
+
 [julia]: http://julialang.org/
 [r]: https://www.r-project.org/
 [python]: https://www.python.org/
@@ -242,7 +251,7 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [clang]: http://clang.llvm.org/
 [pandoc]: http://pandoc.org/
 
-<!-- [boost]: http://www.boost.org/ -->
+[boost]: http://www.boost.org/
 
 [node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
