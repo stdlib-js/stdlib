@@ -25,7 +25,8 @@ FIND_SOURCES_FLAGS ?= \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "**/$(EXAMPLES_FOLDER)/*" \
-	-not -path "**/$(TESTS_FOLDER)/*"
+	-not -path "**/$(TESTS_FOLDER)/*" \
+	-not -path "**/$(BUILD_FOLDER)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_SOURCES_FLAGS := -regextype posix-extended $(FIND_SOURCES_FLAGS)
