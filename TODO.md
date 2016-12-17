@@ -1404,6 +1404,10 @@
 
 317. Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
 
+318. See if anything good from [here](https://github.com/panzerdp/voca)
+
+319. See [tinycolor](https://github.com/bgrins/TinyColor/blob/master/tinycolor.js)
+
 
 ---
 

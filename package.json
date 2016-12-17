@@ -83,7 +83,7 @@
     "remark": "^6.0.0",
     "remark-cli": "git+https://github.com/kgryte/remark-cli.git",
     "remark-html": "^5.1.0",
-    "remark-lint": "^5.2.0",
+    "remark-lint": "^5.4.0",
     "remark-slug": "^4.2.2",
     "remark-unlink": "^2.0.0",
     "remark-validate-links": "^5.0.0",
