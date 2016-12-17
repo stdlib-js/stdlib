@@ -21,7 +21,7 @@ Developing and running stdlib __requires__ the following prerequisites:
 
 * [git][git]: version control
 * [GNU make][gnu-make]: development utility and task runner
-* [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for automatically downloading vendor dependencies
+* [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 
 While not required to run stdlib, the following dependencies may be required for testing, benchmarking, and general development:
