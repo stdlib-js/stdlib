@@ -67,6 +67,7 @@ ISTANBUL_EXCLUDES_FLAGS ?= \
 	-x 'node_modules/**' \
 	-x 'reports/**' \
 	-x 'tmp/**' \
+	-x 'deps/**' \
 	-x "**/$(TESTS_FOLDER)/**" \
 	-x "**/$(EXAMPLES_FOLDER)/**" \
 	-x "**/$(BENCHMARKS_FOLDER)/**" \
