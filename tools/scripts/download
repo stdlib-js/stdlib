@@ -2,13 +2,15 @@
 #
 # Download a remote resource.
 #
-# Usage: download url [output_filepath]
+# Usage: download <url> [output_filepath]
 #
 # Arguments:
 #
 #   url                 Remote resource.
 #   output_filepath     Output filepath.
 #
+
+# VARIABLES #
 
 # Set the url:
 url="$1"
@@ -26,8 +28,24 @@ curl_opts="-fkL --connect-timeout ${timeout} -y ${timeout}"
 wget_opts="--no-check-certificate --tries=1 --timeout=${timeout}"
 fetch_opts="-T ${timeout}"
 
-# Set option for writing to an output filepath...
-if [[ "$#" -eq 1 ]]; then
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: download <url> [output_filepath]' >&2
+	echo '' >&2
+}
+
+
+# MAIN #
+
+# Handle arguments...
+if [[ "$#" -eq 0 ]]; then
+	usage
+	exit 0
+elif [[ "$#" -eq 1 ]]; then
 	curl_opts="${curl_opts} -O"
 elif [[ "$#" -eq 2 ]]; then
 	curl_opts="${curl_opts} -o $2"
