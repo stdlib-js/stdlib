@@ -4,6 +4,10 @@
 # Define the command for recursively creating directories (WARNING: portability issues on some systems!):
 MKDIR_RECURSIVE ?= mkdir -p
 
+# Define the command for removing files and directories:
+DELETE ?= -rm
+DELETE_FLAGS ?= -rf
+
 # Define the path to an executable for downloading a remote resource:
 DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 
@@ -101,8 +105,8 @@ deps-extract-boost: $(DEPS_BOOST_BUILD_OUT)
 deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
 	$(QUIET) echo 'Running tests...' >&2
 	$(QUIET) echo 1 2 3 | $(DEPS_BOOST_TEST_INSTALL_OUT)
+	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
-	$(QUIET) echo ''
 
 .PHONY: deps-test-boost
 
