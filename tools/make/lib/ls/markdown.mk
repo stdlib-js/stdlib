@@ -21,7 +21,8 @@ FIND_MARKDOWN_FLAGS ?= \
 	-regex "$(MARKDOWN_FILTER)" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*"
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "**/$(BUILD_FOLDER)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_MARKDOWN_FLAGS := -regextype posix-extended $(FIND_MARKDOWN_FLAGS)
