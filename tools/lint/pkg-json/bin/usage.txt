@@ -8,4 +8,5 @@ Options:
          --pattern pattern     Inclusion glob pattern.
          --ignore pattern      Exclusion glob pattern.
          --format format       Output format: ndjson, pretty.
+         --split sep           Separator used to split stdin data. Default: /\\r?\\n/.
 

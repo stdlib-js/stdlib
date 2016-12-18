@@ -177,6 +177,7 @@ Options:
          --pattern pattern     Inclusion glob pattern.
          --ignore pattern      Exclusion glob pattern.
          --format format       Output format: ndjson, pretty.
+         --split sep           Separator used to split stdin data. Default: /\\r?\\n/.
 ```
 
 </section>
@@ -188,7 +189,7 @@ Options:
 
 ### Notes
 
-* If part of a standard stream pipeline, results are written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]). Otherwise, results are pretty printed by default.
+* If part of a [standard stream][standard-stream] pipeline, results are written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]). Otherwise, results are pretty printed by default.
 
 * If not provided a `dir` argument, the current working directory is the search directory.
 
@@ -197,6 +198,18 @@ Options:
   ``` bash
   $ lint-pkg-json --ignore=node_modules/** --ignore=build/** --ignore=reports/**
   ```
+
+* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+
+  ``` bash
+  # Not escaped...
+  $ <stdout> | lint-pkg-json --split /\r?\n/
+
+  # Escaped...
+  $ <stdout> | lint-pkg-json --split /\\r?\\n/
+  ```
+
+* If provided a list of filenames via `stdin`, each filename is resolved relative to the current working directory. To specify an alternative directory, provide a `dir` argument.
 
 </section>
 
@@ -236,6 +249,13 @@ $ lint-pkg-json --format ndjson
 ...
 ```
 
+To use as a part of a [standard stream][standard-stream] pipeline,
+
+``` bash
+$ echo -n $'./package.json' | lint-pkg-json
+...
+```
+
 </section>
 
 <!-- /.examples -->
@@ -248,6 +268,8 @@ $ lint-pkg-json --format ndjson
 <section class="links">
 
 [ndjson]: http://ndjson.org/
+[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 </section>
 

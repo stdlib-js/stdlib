@@ -2,7 +2,8 @@
 	"string": [
 		"pattern",
 		"ignore",
-		"format"
+		"format",
+		"split"
 	],
 	"boolean": [
 		"help",
