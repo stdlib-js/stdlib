@@ -4,6 +4,14 @@
 #
 # This hook is called with no arguments.
 
+# VARIABLES #
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility for linting filenames:
+lint_filenames="${root}/tools/lint/filenames/bin/cli"
+
 
 # FUNCTIONS #
 
@@ -49,11 +57,20 @@ run_lint() {
 	# Get the set of changed files:
 	changed_files="$(git diff --name-only --cached)"
 
+	# Lint filenames:
+	echo "${changed_files}" | "${lint_filenames}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Filename lint errors.' >&2
+		return 1
+	fi
+
 	# Lint Markdown files...
 	files=$(echo "${changed_files}" | grep '\.md$')
 	if [[ -n "${files}" ]]; then
 		make MARKDOWN_FILES="${files}" lint-markdown >/dev/null
 		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
 			echo 'Markdown lint errors.' >&2
 			return 1
 		fi
