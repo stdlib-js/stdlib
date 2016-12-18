@@ -10,7 +10,7 @@ var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
-var readPkgs = require( './read_pkgs.js' );
+var linter = require( './lint.js' );
 
 
 // MAIN //
@@ -94,7 +94,7 @@ function lint() {
 		debug( 'Found %d files.', files.length );
 		if ( files.length ) {
 			debug( 'Processing files.' );
-			readPkgs( files, done );
+			linter( files, done );
 		} else {
 			done( null, null );
 		}

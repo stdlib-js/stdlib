@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'lint:pkg-json:read-pkgs' );
+var debug = require( 'debug' )( 'lint:pkg-json:linter' );
 var readJSON = require( '@stdlib/fs/read-json' );
 var isValid = require( './../../../pkg-json/validate' );
 
@@ -16,7 +16,7 @@ var isValid = require( './../../../pkg-json/validate' );
 * @param {StringArray} files - list of `package.json` files
 * @param {Callback} clbk - callback to invoke upon completion
 */
-function readPkgs( files, clbk ) {
+function lint( files, clbk ) {
 	var total;
 	var out;
 	var i;
@@ -95,9 +95,9 @@ function readPkgs( files, clbk ) {
 			clbk( null, null );
 		}
 	} // end FUNCTION done()
-} // end FUNCTION readPkgs()
+} // end FUNCTION lint()
 
 
 // EXPORTS //
 
-module.exports = readPkgs;
+module.exports = lint;
