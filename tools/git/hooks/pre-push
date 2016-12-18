@@ -43,7 +43,7 @@ cleanup() {
 # Checks if commits exist to push, as `git push` will execute regardless of whether commits exist to push or not.
 has_commits() {
 	echo 'Checking for commits to push...' >&2
-	local commits="$(git log origin/${GIT_CURRENT_BRANCH}..${GIT_CURRENT_BRANCH} --oneline)"
+	local commits="$(git log origin/${GIT_CURRENT_BRANCH}..${GIT_CURRENT_BRANCH} -- --oneline)"
 	if [[ -z "${commits}" ]]; then
 		echo 'No commits to push.'
 	    return 1
