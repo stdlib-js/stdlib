@@ -149,6 +149,7 @@ Options:
   -V,    --version             Print the package version.
          --dir dirname         Root directory from which to search.
          --pattern pattern     Pattern to match files for linting.
+         --split sep           Separator used to split incoming data. Default: /\\r?\\n/.
 ```
 
 </section>
@@ -161,6 +162,16 @@ Options:
 ### Notes
 
 * Filenames which fail are printed to `stderr` as newline-delimited JSON ([NDJSON][ndjson]).
+
+* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+
+  ``` bash
+  # Not escaped...
+  $ <stdout> | lint-filenames --split /\r?\n/
+
+  # Escaped...
+  $ <stdout> | lint-filenames --split /\\r?\\n/
+  ```
 
 </section>
 
@@ -178,6 +189,13 @@ $ lint-filenames
 ...
 ```
 
+To use as a standard stream,
+
+``` bash
+$ echo -n $'beep.js\ta/b/c.md\tA.js' | lint-filenames --split /\\t/
+{"name":"A.js","error":"filename must be lowercase."}
+```
+
 </section>
 
 <!-- /.examples -->
@@ -190,6 +208,7 @@ $ lint-filenames
 <section class="links">
 
 [ndjson]: http://ndjson.org/
+[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 </section>
 
