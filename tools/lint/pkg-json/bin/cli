@@ -87,7 +87,9 @@ function onRead( error, data ) {
 		return process.exit( 1 );
 	}
 	data = data.toString().split( opts.split );
-
+	if ( data[ data.length-1 ] === '' ) {
+		data.length = data.length - 1;
+	}
 	// Resolve absolute file paths...
 	for ( i = 0; i < data.length; i++ ) {
 		data[ i ] = path.resolve( opts.dir, data[i] );
