@@ -10,6 +10,7 @@ var notifier = require( 'update-notifier' );
 var RE_EOL = require( '@stdlib/regexp/eol' );
 var stdin = require( '@stdlib/utils/read-stdin' );
 var reFromString = require( '@stdlib/utils/regexp-from-string' );
+var cwd = require( '@stdlib/utils/cwd' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
 var main = require( './../lib' );
@@ -139,11 +140,9 @@ if ( !process.stdin.isTTY ) {
 	}
 	return stdin( onRead );
 }
-if ( args.dir ) {
-	opts.dir = args.dir;
-}
 if ( args.pattern ) {
 	opts.pattern = args.pattern;
 }
+opts.dir = args._[ 0 ] || cwd();
 
 main( opts, onLint );
