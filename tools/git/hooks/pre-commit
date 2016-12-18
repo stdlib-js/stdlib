@@ -43,11 +43,23 @@ check_filenames() {
 
 # Lints staged files.
 run_lint() {
-	local changed_files="$(git diff --name-only --cached)"
+	local changed_files
+	local files
+
+	# Get the set of changed files:
+	changed_files="$(git diff --name-only --cached)"
+
+	# Lint Markdown files...
+	files=$(echo "${changed_files}" | grep '\.md$')
+	if [[ -n "${files}" ]]; then
+		make MARKDOWN_FILES="${files}" lint-markdown >/dev/null
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Markdown lint errors.' >&2
+			return 1
+		fi
+	fi
 
 	# TODO: if JavaScript files, lint those particular files
-
-	# TODO: if Markdown files, lint those particular files
 
 	# TODO: if package.json, validate via schema
 
