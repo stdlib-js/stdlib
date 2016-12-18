@@ -48,11 +48,11 @@ has_commits() {
 	if git branch -r | grep "${GIT_CURRENT_BRANCH}" > /dev/null; then
 		echo 'Remote branch exists.' >&2
 		echo 'Checking for commits to push...' >&2
-		commits=$(git log origin/"${GIT_CURRENT_BRANCH}".."${GIT_CURRENT_BRANCH}" -- --oneline)
+		commits=$(git log origin/"${GIT_CURRENT_BRANCH}".."${GIT_CURRENT_BRANCH}" --oneline --)
 	else
 		echo 'Remote branch does not exist.' >&2
 		echo 'Checking for commits to push...' >&2
-		commits=$(git log "${GIT_CURRENT_BRANCH}" -- --oneline)
+		commits=$(git log "${GIT_CURRENT_BRANCH}" --oneline --)
 	fi
 	if [[ -z "${commits}" ]]; then
 		echo 'No commits to push.'
