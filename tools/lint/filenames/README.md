@@ -189,7 +189,7 @@ $ lint-filenames
 ...
 ```
 
-To use as a standard stream,
+To use as part of a [standard stream][standard-stream] pipeline,
 
 ``` bash
 $ echo -n $'beep.js\ta/b/c.md\tA.js' | lint-filenames --split /\\t/
@@ -209,6 +209,7 @@ $ echo -n $'beep.js\ta/b/c.md\tA.js' | lint-filenames --split /\\t/
 
 [ndjson]: http://ndjson.org/
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 </section>
 
