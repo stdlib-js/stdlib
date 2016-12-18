@@ -114,7 +114,7 @@ tape( 'the function returns an error to a provided callback if a fatal error is 
 	var opts;
 
 	lint = proxyquire( './../lib/async.js', {
-		'./read_pkgs.js': readPkgs
+		'./lint.js': mock
 	});
 	opts = {
 		'dir': dir
@@ -122,7 +122,7 @@ tape( 'the function returns an error to a provided callback if a fatal error is 
 
 	lint( opts, clbk );
 
-	function readPkgs() {
+	function mock() {
 		var cb = arguments[ arguments.length-1 ];
 		setTimeout( onTimeout, 0 );
 		function onTimeout() {
@@ -182,7 +182,7 @@ tape( 'the function returns an array of lint errors to a provided callback if on
 	var opts;
 
 	lint = proxyquire( './../lib/async.js', {
-		'./read_pkgs.js': readPkgs
+		'./lint.js': mock
 	});
 	opts = {
 		'dir': dir
@@ -190,7 +190,7 @@ tape( 'the function returns an array of lint errors to a provided callback if on
 
 	lint( opts, clbk );
 
-	function readPkgs() {
+	function mock() {
 		var cb = arguments[ arguments.length-1 ];
 		setTimeout( onTimeout, 0 );
 		function onTimeout() {
