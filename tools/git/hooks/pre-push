@@ -92,7 +92,6 @@ main() {
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
-	exit 1
 	check_licenses
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
