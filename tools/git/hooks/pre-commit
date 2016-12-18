@@ -7,7 +7,7 @@
 # VARIABLES #
 
 # Determine root directory:
-root="$(git rev-parse --show-toplevel)"
+root=$(git rev-parse --show-toplevel)
 
 # Define the path to a utility for linting filenames:
 lint_filenames="${root}/tools/lint/filenames/bin/cli"
@@ -33,7 +33,7 @@ cleanup() {
 
 # Checks for non-ASCII filenames (to ensure cross platform portability).
 check_filenames() {
-	local commit="$(git rev-parse --verify HEAD)"
+	local commit=$(git rev-parse --verify HEAD)
 	local against
 	if [[ -z "${commit}" ]]; then
 		# This is the initial commit, so we diff against an empty tree object:
@@ -42,8 +42,7 @@ check_filenames() {
 		against='HEAD'
 	fi
 	# We exploit the fact that the printable range starts with the space character and ends with the tilde. Note that the use of brackets around a `tr` range is okay here, (for portability to Solaris 10's /usr/bin/tr, it's even required), since the square bracket bytes happen to fall in the designated range.
-	local num_files="$(git diff --cached --name-only --diff-filter=A -z ${against} |
-	  LC_ALL=C tr -d '[ -~]\0' | wc -c)"
+	local num_files=$(git diff --cached --name-only --diff-filter=A -z "${against}" | LC_ALL=C tr -d '[ -~]\0' | wc -c)
 
 	if [[ "${num_files}" -ne 0 ]]; then
 		echo 'Error: Attempting to add a non-ASCII filename. Non-ASCII filenames limit cross-platform portability. Please rename offending files before committing.' >&2
@@ -58,7 +57,7 @@ run_lint() {
 	local files
 
 	# Get the set of changed files:
-	changed_files="$(git diff --name-only --cached)"
+	changed_files=$(git diff --name-only --cached)
 
 	# Lint filenames:
 	echo "${changed_files}" | "${lint_filenames}"

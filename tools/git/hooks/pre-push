@@ -22,7 +22,7 @@ remote="$1"
 url="$2"
 
 # Determine the current branch:
-export GIT_CURRENT_BRANCH="$(git name-rev --name-only HEAD)"
+export GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD)
 
 
 # FUNCTIONS #
