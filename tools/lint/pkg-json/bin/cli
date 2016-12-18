@@ -87,6 +87,8 @@ function onRead( error, data ) {
 		return process.exit( 1 );
 	}
 	data = data.toString().split( opts.split );
+
+	// Check if input data had a trailing newline...
 	if ( data[ data.length-1 ] === '' ) {
 		data.length = data.length - 1;
 	}
