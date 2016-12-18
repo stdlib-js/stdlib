@@ -6,7 +6,7 @@ var tape = require( 'tape' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var isObjectArray = require( '@stdlib/utils/is-object-array' );
-var readPkgs = require( './../lib/read_pkgs.js' );
+var lint = require( './../lib/lint.js' );
 
 
 // FIXTURES //
@@ -20,12 +20,12 @@ var good = resolve( __dirname, '..', 'package.json' );
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof readPkgs, 'function', 'main export is a function' );
+	t.strictEqual( typeof lint, 'function', 'main export is a function' );
 	t.end();
 });
 
 tape( 'the function returns an array of errors to a provided callback if one or more errors are encountered while reading packages', function test( t ) {
-	readPkgs( [ invalid ], clbk );
+	lint( [ invalid ], clbk );
 
 	function clbk( error, errs ) {
 		if ( error ) {
@@ -38,7 +38,7 @@ tape( 'the function returns an array of errors to a provided callback if one or 
 });
 
 tape( 'the function returns an array of errors to a provided callback if one or more packages are invalid', function test( t ) {
-	readPkgs( [ bad ], clbk );
+	lint( [ bad ], clbk );
 
 	function clbk( error, errs ) {
 		if ( error ) {
@@ -51,7 +51,7 @@ tape( 'the function returns an array of errors to a provided callback if one or 
 });
 
 tape( 'the function successfully lints valid packages', function test( t ) {
-	readPkgs( [ good, good ], clbk );
+	lint( [ good, good ], clbk );
 
 	function clbk( error, errs ) {
 		if ( error ) {
