@@ -82,7 +82,7 @@ run_lint() {
 	# Lint package.json files...
 	files=$(echo "${changed_files}" | grep 'package\.json$')
 	if [[ -n "${files}" ]]; then
-		echo "${files}" | "${lint_package_json}"
+		echo "${files}" | "${lint_package_json}" >&2
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Package.json lint errors.' >&2
