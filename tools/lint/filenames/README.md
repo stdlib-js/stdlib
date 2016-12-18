@@ -149,7 +149,7 @@ Options:
   -V,    --version             Print the package version.
          --dir dirname         Root directory from which to search.
          --pattern pattern     Pattern to match files for linting.
-         --split sep           Separator used to split incoming data. Default: /\\r?\\n/.
+         --split sep           Separator used to split stdin data. Default: /\\r?\\n/.
 ```
 
 </section>
