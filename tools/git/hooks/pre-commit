@@ -12,6 +12,9 @@ root="$(git rev-parse --show-toplevel)"
 # Define the path to a utility for linting filenames:
 lint_filenames="${root}/tools/lint/filenames/bin/cli"
 
+# Define the path to a utility for linting package.json files:
+lint_package_json="${root}/tools/lint/pkg-json/bin/cli"
+
 
 # FUNCTIONS #
 
@@ -76,9 +79,18 @@ run_lint() {
 		fi
 	fi
 
-	# TODO: if JavaScript files, lint those particular files
+	# Lint package.json files...
+	files=$(echo "${changed_files}" | grep 'package\.json$')
+	if [[ -n "${files}" ]]; then
+		echo "${files}" | "${lint_package_json}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Package.json lint errors.' >&2
+			return 1
+		fi
+	fi
 
-	# TODO: if package.json, validate via schema
+	# TODO: if JavaScript files, lint those particular files
 
 	# TODO: if datapackage.json, validate via schema
 
