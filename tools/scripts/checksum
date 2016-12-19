@@ -1,0 +1,127 @@
+#!/usr/bin/env bash
+#
+# Verify the checksum of a file.
+#
+# Usage: checksum <filepath> <hash>
+#
+# Arguments:
+#
+#   filepath           File to verify.
+#   hash               Expected checksum.
+#
+
+# VARIABLES #
+
+# Checksum type:
+checksum_type='sha256'
+
+# Program used to compute a checksum:
+checksum_program=
+
+# File to verify:
+file=
+
+# Command to compute a checksum:
+cmd=
+
+# Expected checksum:
+expected_checksum=
+
+# Actual checksum:
+curr_checksum=
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: checksum <filepath> <hash>' >&2
+	echo '' >&2
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success.' >&2
+}
+
+# Prints a checksum.
+#
+# $1 - checksum
+print_checksum() {
+	local num_lines
+	local width
+	local lines
+	local len
+	local pos
+
+	width=64 # characters
+	len="${#1}"
+	if [[ "${len}" -gt "${width}" ]]; then
+		num_lines=$(("${len}" / "${width}")) # floored
+		lines=$(seq 0 1 "${num_lines}") # total_lines = num_lines + 1
+		for i in "${lines}"; do
+			pos=$((i * "${width}"))
+			echo "    ${str:${pos}:${width}}"
+		done
+	else
+		echo "    $1" >&2
+	fi
+}
+
+# Prints a checksum error.
+#
+# $1 - file
+# $2 - checksum type
+# $3 - checksum program
+# $4 - expected checksum
+# $5 - actual checksum
+print_checksum_error() {
+	echo '' >&2
+	echo "ERROR: $2 checksum failure for $1. Expected:" >&2
+	echo '' >&2
+	print_checksum "$4"
+	echo '' >&2
+	echo "But \`$3\` results in:" >&2
+	echo '' >&2
+	print_checksum "$5"
+	echo '' >&2
+	echo "This may be due to bad downloads or network proxies. Check your network proxy/" >&2
+	echo "firewall settings and try downloading and verifying again." >&2
+	echo '' >&2
+}
+
+
+# MAIN #
+
+# Handle arguments...
+if [[ "$#" -eq 0 ]]; then
+	usage
+	exit 0
+elif [[ "$#" -eq 2 ]]; then
+	file="$1"
+	expected_checksum="$2"
+else
+	echo 'ERROR: unrecognized arguments. Must provide a file to verify and an expected checksum.' >&2
+	exit 1
+fi
+
+# Find a program for computing a SHA256 checksum...
+if [[ -n "$(which sha256sum)" ]]; then
+	checksum_program="sha256sum"
+	cmd="sha256sum ${file} | awk '{ print \$1; }'"
+elif [[ -n "$(which shasum)" ]]; then
+	checksum_program="shasum"
+	cmd="shasum -a 256 ${file} | awk '{ print \$1; }'"
+fi
+
+# Verify checksum:
+curr_checksum=$(eval "${cmd}")
+
+if [[ "${curr_checksum}" != "${expected_checksum}" ]]; then
+	print_checksum_error "${file}" "${checksum_type}" "${checksum_program}" "${expected_checksum}" "${curr_checksum}"
+	exit 1
+else
+	print_success
+	exit 0
+fi
