@@ -11,6 +11,9 @@ DELETE_FLAGS ?= -rf
 # Define the path to an executable for downloading a remote resource:
 DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 
+# Define the path to an executable for verifying a download:
+DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
+
 # Define the Boost version to download:
 DEPS_BOOST_VERSION ?= 1.62.0
 
@@ -22,6 +25,9 @@ DEPS_BOOST_URL ?= https://sourceforge.net/projects/boost/files/boost/$(DEPS_BOOS
 
 # Determine the basename for the Boost download:
 deps_boost_basename := $(notdir $(DEPS_BOOST_URL))
+
+# Define the path to the file containing a checksum verify a Boost download:
+DEPS_BOOST_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_boost_basename))/sha256)
 
 # Define the output path when downloading Boost:
 DEPS_BOOST_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_boost_basename)
@@ -89,6 +95,16 @@ deps-download-boost: $(DEPS_BOOST_DOWNLOAD_OUT)
 .PHONY: deps-download-boost
 
 
+# Verify download.
+#
+# This targets verifies a Boost download.
+
+deps-verify-boost: deps-download-boost
+	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BOOST_CHECKSUM)
+
+.PHONY: deps-verify-boost
+
+
 # Extract Boost.
 #
 # This target extracts a Boost download.
@@ -115,7 +131,7 @@ deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
 #
 # This target installs Boost.
 
-install-deps-boost: deps-download-boost deps-extract-boost deps-test-boost
+install-deps-boost: deps-download-boost deps-verify-boost deps-extract-boost deps-test-boost
 
 .PHONY: install-deps-boost
 
