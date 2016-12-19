@@ -100,7 +100,8 @@ deps-download-boost: $(DEPS_BOOST_DOWNLOAD_OUT)
 # This targets verifies a Boost download.
 
 deps-verify-boost: deps-download-boost
-	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BOOST_CHECKSUM)
+	$(QUIET) echo 'Verifying download...' >&2
+	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BOOST_CHECKSUM) >&2
 
 .PHONY: deps-verify-boost
 
