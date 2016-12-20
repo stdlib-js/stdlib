@@ -514,6 +514,7 @@
     * [wzrd](https://github.com/maxogden/wzrd)
     * [serve-static](https://github.com/expressjs/serve-static)
     * [st](https://github.com/isaacs/st)
+    * [chart-stream](https://github.com/watson/chart-stream)
 
 70. cross-platform open browser
 
