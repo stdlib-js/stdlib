@@ -14,7 +14,7 @@ var eslint = {};
 * @memberof eslint
 * @type {Object}
 */
-eslint.env = require( './.eslint.env_default.js' );
+eslint.env = require( './eslint/env_default.js' );
 
 /**
 * Lint rules.
@@ -23,7 +23,7 @@ eslint.env = require( './.eslint.env_default.js' );
 * @memberof eslint
 * @type {Object}
 */
-eslint.rules = require( './.eslint.default.js' );
+eslint.rules = require( './eslint/default.js' );
 
 /**
 * Rules for enabling/disabling ECMA features.
@@ -32,7 +32,7 @@ eslint.rules = require( './.eslint.default.js' );
 * @memberof eslint
 * @type {Object}
 */
-eslint.ecmaFeatures = require( './.eslint.ecma_features.js' );
+eslint.ecmaFeatures = require( './eslint/ecma_features.js' );
 
 
 // EXPORTS //

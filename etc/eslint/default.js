@@ -14,14 +14,14 @@ var merge = require( '@stdlib/utils/merge' );
 */
 var rules = merge(
 	{},
-	require( './.eslint.errors.js' ),
-	require( './.eslint.best_practices.js' ),
-	require( './.eslint.strict.js' ),
-	require( './.eslint.variables.js' ),
-	require( './.eslint.nodejs.js' ),
-	require( './.eslint.style.js' ),
-	require( './.eslint.es2015.js' ),
-	require( './.eslint.legacy.js' )
+	require( './errors.js' ),
+	require( './best_practices.js' ),
+	require( './strict.js' ),
+	require( './variables.js' ),
+	require( './nodejs.js' ),
+	require( './style.js' ),
+	require( './es2015.js' ),
+	require( './legacy.js' )
 );
 
 
