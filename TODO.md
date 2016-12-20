@@ -100,9 +100,9 @@
     * [node-inspector](https://github.com/node-inspector/node-inspector)
     * [source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 
-11. add CONTRIBUTING.md
+11. [livegrep](https://github.com/livegrep/livegrep) for `stdlib`? Maybe have sthg hosted? Would be an advance over GitHub search as GitHub search often shows results which happened far back in commit history, when what you want is results from the current state of the repo.
 
-12. determine strategy for generic validation fcns
+12. See [tinycolor](https://github.com/bgrins/TinyColor/blob/master/tinycolor.js)
 
 13. lint filenames
 
@@ -331,9 +331,7 @@
 
 44. consider using [svgo](https://github.com/svg/svgo) to minimize eqn svgs
 
-45. `*.cpp` vs `*.cc` for C++ files?
-
-    * use `*.cpp` and `*.hpp`
+45. C++ style guide => use `*.cpp` and `*.hpp`
 
 46. find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
 
@@ -420,8 +418,11 @@
     * should be able to load a REPL context in a browser
 
       - meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
+      - would allow "sharing" a REPL sequence (work in the terminal; load session to browser; generate page; send link/page; recipient load and can start where sender left off)
 
     * [black-screen](https://github.com/shockone/black-screen) terminal emulator
+
+    * see hyperterm
 
 53. README to man doc (see above)
 
@@ -837,7 +838,7 @@
 100. review
 
      * [ ] crypto
-     * [x] datasets
+     * [x] datasets (~bib)
      * [x] fs
      * [x] math/base/blas
      * [ ] math/base/dist
@@ -1108,7 +1109,7 @@
 
 180. may be worth investigating [klipse](https://github.com/viebel/klipse) for live code editing
 
-181. update tools/scripts to latest `remark-lint` API for linting Markdown files
+181. See if anything good from [here](https://github.com/panzerdp/voca)
 
 182. [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
 
@@ -1403,10 +1404,6 @@
 316. crypto non-crypto hash function [djb2](http://www.cse.yorku.ca/~oz/hash.html) and [here](https://github.com/darkskyapp/string-hash) (may also be interesting to implement others)
 
 317. Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
-
-318. See if anything good from [here](https://github.com/panzerdp/voca)
-
-319. See [tinycolor](https://github.com/bgrins/TinyColor/blob/master/tinycolor.js)
 
 
 ---
