@@ -147,6 +147,8 @@
     * [xorshift scratch](https://gist.github.com/mmalone/173e20becc755ebb2658)
     * [randint](https://gist.github.com/mmalone/d710793137ed0d6b8cb4)
     * [rc4 encryption](http://www.math.washington.edu/~nichifor/310_2008_Spring/Pres_RC4%20Encryption.pdf)
+    * [xorshift-add](https://github.com/MersenneTwister-Lab/XSadd/blob/master/xsadd.c)
+    * [tinyMT32](https://github.com/MersenneTwister-Lab/TinyMT/blob/master/tinymt/tinymt32.c)
 
 16. `Makefile` target to run test fixtures
 
