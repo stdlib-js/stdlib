@@ -40,7 +40,7 @@ endif
 FIND_EXAMPLES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS)
 
 # Define the list of example files:
-EXAMPLES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS))
+EXAMPLES ?= $(shell $(FIND_EXAMPLES_CMD))
 
 # TODO: does not include top-level examples?
 
