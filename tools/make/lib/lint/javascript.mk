@@ -18,7 +18,7 @@ endif
 #
 # This target lints all JavaScript source code.
 
-lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examples
+lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examples lint-javascript-benchmarks
 
 .PHONY: lint-javascript
 
@@ -63,4 +63,18 @@ lint-javascript-examples: $(NODE_MODULES)
 	done
 
 .PHONY: lint-javascript-examples
+
+
+# Check benchmark code quality.
+#
+# This target lints only JavaScript benchmark files.
+
+lint-javascript-benchmarks: $(NODE_MODULES)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
+	done
+
+.PHONY: lint-javascript-benchmarks
 
