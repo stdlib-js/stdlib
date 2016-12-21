@@ -18,8 +18,7 @@ endif
 #
 # This target lints all JavaScript source code.
 
-lint-javascript: $(NODE_MODULES)
-	$(QUIET) $(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES)
+lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examples
 
 .PHONY: lint-javascript
 
@@ -29,7 +28,11 @@ lint-javascript: $(NODE_MODULES)
 # This target lints only JavaScript source files.
 
 lint-javascript-src: $(NODE_MODULES)
-	$(QUIET) $(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $(SOURCES)
+	$(QUIET) $(FIND_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
+	done
 
 .PHONY: lint-javascript-src
 
@@ -39,7 +42,11 @@ lint-javascript-src: $(NODE_MODULES)
 # This target lints only JavaScript test files.
 
 lint-javascript-tests: $(NODE_MODULES)
-	$(QUIET) $(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $(TESTS)
+	$(QUIET) $(FIND_TESTS_CMD) | grep '^\/' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
+	done
 
 .PHONY: lint-javascript-tests
 
@@ -49,7 +56,11 @@ lint-javascript-tests: $(NODE_MODULES)
 # This target lints only JavaScript example files.
 
 lint-javascript-examples: $(NODE_MODULES)
-	$(QUIET) $(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $(EXAMPLES)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
+	done
 
 .PHONY: lint-javascript-examples
 
