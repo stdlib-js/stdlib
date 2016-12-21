@@ -23,7 +23,7 @@ eslint.env = require( './env.js' );
 * @memberof eslint
 * @type {Object}
 */
-eslint.rules = require( './defaults.js' );
+eslint.rules = require( './rules' );
 
 /**
 * Rules for enabling/disabling ECMA features.
