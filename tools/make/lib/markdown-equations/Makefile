@@ -35,7 +35,7 @@ EQUATION_RESOURCES_PATH ?= ./docs/img/
 REMARK ?= $(BIN_DIR)/remark
 
 # Define the path to the remark ignore file:
-REMARK_IGNORE ?= $(CONFIG_DIR)/.remarkignore
+REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins

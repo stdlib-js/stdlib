@@ -20,10 +20,10 @@ MARKDOWN_LINT ?= $(BIN_DIR)/remark
 REMARK_LINT_PLUGIN ?= remark-lint
 
 # Define the path to the remark configuration file:
-REMARK_CONF ?= $(CONFIG_DIR)/.remarkrc.js
+REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
-REMARK_IGNORE ?= $(CONFIG_DIR)/.remarkignore
+REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 
 # Define Markdown extensions:
 REMARK_EXT ?= md
