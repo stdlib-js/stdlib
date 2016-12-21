@@ -23,14 +23,18 @@ FIND_FILES_FLAGS ?= \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "**/$(BUILD_FOLDER)/*"
+	-not -path "**/$(BUILD_FOLDER)/*" \
+	-type f
 
 ifneq ($(KERNEL), Darwin)
 	FIND_FILES_FLAGS := -regextype posix-extended $(FIND_FILES_FLAGS)
 endif
 
+# Define a command for finding files:
+FIND_FILES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS)
+
 # Define the list of files:
-FILES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS))
+FILES ?= $(shell $(FIND_FILES_CMD))
 
 
 # TARGETS #
