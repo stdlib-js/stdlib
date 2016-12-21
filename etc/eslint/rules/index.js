@@ -14,7 +14,7 @@ var merge = require( '@stdlib/utils/merge' );
 */
 var rules = merge(
 	{},
-	require( './errors.js' ),
+	require( './programmer_errors.js' ),
 	require( './best_practices.js' ),
 	require( './strict.js' ),
 	require( './variables.js' ),
