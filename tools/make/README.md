@@ -99,7 +99,7 @@ The `Makefile` includes the following common recipes for listing different file 
 
 ##### Sources
 
-To list all source files, excluding examples and tests,
+To list all source files, excluding examples, benchmarks, and tests,
 
 ``` bash
 $ make list-sources
