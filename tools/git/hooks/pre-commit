@@ -56,8 +56,8 @@ run_lint() {
 	local changed_files
 	local files
 
-	# Get the set of changed files:
-	changed_files=$(git diff --name-only --cached)
+	# Get the set of changed files (added and modified):
+	changed_files=$(git diff --name-only --cached --diff-filter AM)
 
 	# Lint filenames:
 	echo "${changed_files}" | "${lint_filenames}"
