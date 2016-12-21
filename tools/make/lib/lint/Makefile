@@ -45,3 +45,12 @@ lint-examples: lint-javascript-examples
 
 .PHONY: lint-examples
 
+
+# Check benchmark code quality.
+#
+# This target lints only benchmark files.
+
+lint-benchmarks: lint-javascript-benchmarks
+
+.PHONY: lint-benchmarks
+
