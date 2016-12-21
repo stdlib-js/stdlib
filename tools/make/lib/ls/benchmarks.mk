@@ -39,7 +39,7 @@ endif
 FIND_BENCHMARKS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS)
 
 # Define the list of benchmark files:
-BENCHMARKS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS))
+BENCHMARKS ?= $(shell $(FIND_BENCHMARKS_CMD))
 
 
 # TARGETS #
