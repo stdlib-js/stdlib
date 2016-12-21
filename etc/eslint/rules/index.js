@@ -8,7 +8,7 @@ var merge = require( '@stdlib/utils/merge' );
 // MAIN //
 
 /**
-* Default ESLint rules.
+* ESLint rules.
 *
 * @namespace rules
 */
