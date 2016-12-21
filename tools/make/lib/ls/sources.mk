@@ -27,6 +27,7 @@ FIND_SOURCES_FLAGS ?= \
 	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "**/$(EXAMPLES_FOLDER)/*" \
 	-not -path "**/$(TESTS_FOLDER)/*" \
+	-not -path "**/$(BENCHMARKS_FOLDER)/*" \
 	-not -path "**/$(BUILD_FOLDER)/*"
 
 ifneq ($(KERNEL), Darwin)
