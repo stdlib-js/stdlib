@@ -31,8 +31,11 @@ ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_DIRS_FLAGS := -regextype posix-extended $(FIND_TESTS_DIRS_FLAGS)
 endif
 
+# Define a command to list test directories:
+FIND_TESTS_DIRS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_DIRS_FLAGS)
+
 # Define the list of test directories:
-TESTS_DIRS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_DIRS_FLAGS))
+TESTS_DIRS ?= $(shell $(FIND_TESTS_DIRS_CMD))
 
 
 # TARGETS #
