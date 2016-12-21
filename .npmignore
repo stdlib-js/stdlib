@@ -62,9 +62,13 @@ Desktop.ini
 #############
 .jshintrc
 .jshintignore
-.eslintrc
+.eslintrc*
+.eslintignore
+
 .travis.yml
 circle.yml
 appveyor.yml
+
 .editorconfig
 .codeclimate.yml
+.codecov.yml
