@@ -27,12 +27,16 @@ FIND_BENCHMARKS_FLAGS ?= \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*"
+	-not -path "$(REPORTS_DIR)/*" \
+	-type f
 
 
 ifneq ($(KERNEL), Darwin)
 	FIND_BENCHMARKS_FLAGS := -regextype posix-extended $(FIND_BENCHMARKS_FLAGS)
 endif
+
+# Define a command to list benchmark files:
+FIND_BENCHMARKS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS)
 
 # Define the list of benchmark files:
 BENCHMARKS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS))
