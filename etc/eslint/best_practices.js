@@ -12,77 +12,192 @@ var rules = {};
 *
 * @name accessor-pairs
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
 * @see [accessor-pairs]{@link http://eslint.org/docs/rules/accessor-pairs}
+*
+* @example
+* // Bad...
+* var obj = {};
+* Object.defineProperty( obj, 'a', {
+*     'set': function set(){}
+* });
+*
+* @example
+* // Good...
+* var obj = {};
+* Object.defineProperty( obj, 'a', {
+*     'set': function set(){},
+*     'get': function get(){}
+* });
 */
-rules[ 'accessor-pairs' ] = 2;
+rules[ 'accessor-pairs' ] = [ 'error', {
+	'setWithoutGet': true,
+	'getWithoutSet': false
+}];
+
+/**
+* Require a `return` statement in `Array` methods.
+*
+* @name array-callback-return
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [array-callback-return]{@link http://eslint.org/docs/rules/array-callback-return}
+*
+* @example
+* // Bad...
+* function reduce( obj, item, i ) {
+*     obj[ i ] = item;
+* }
+* var o = [ 1, 2, 3 ].reduce( reduce, {} );
+*
+* @example
+* // Good...
+* function reduce( obj, item, i ) {
+*     obj[ i ] = item;
+*     return obj;
+* }
+* var o = [ 1, 2, 3 ].reduce( reduce, {} );
+*/
+rules[ 'array-callback-return' ] = 'error';
 
 /**
 * Never allow variables to be used outside of the block in which they were defined.
 *
 * @name block-scope-var
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [block-scoped-var]{@link http://eslint.org/docs/rules/block-scoped-var}
+*
+* @example
+* // Bad...
+* if ( foo ) {
+*     var bar = 5;
+* }
+* if ( bar ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* var bar;
+* if ( foo ) {
+*     bar = 5;
+* }
+* if ( bar ) {
+*     // Do something...
+* }
 */
-rules[ 'block-scope-var' ] = 2;
+rules[ 'block-scope-var' ] = 'error';
+
+/**
+* Require class methods to use `this`, as any method which does not use `this` can be a `static` method.
+*
+* @name class-methods-use-this
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [class-methods-use-this]{@link http://eslint.org/docs/rules/class-methods-use-this}
+*
+* @example
+* // Bad...
+* class A {
+*     constructor(){}
+*     say() {
+*         return 'Hello';
+*     }
+* }
+*
+* @example
+* // Good...
+* class A {
+*     constructor(){}
+*     static say() {
+*         return 'Hello';
+*     }
+* }
+*/
+rules[ 'class-methods-use-this' ] = 'error';
 
 /**
 * Disable cyclomatic complexity.
 *
 * @name complexity
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [complexity]{@link http://eslint.org/docs/rules/complexity}
 */
-rules[ 'complexity' ] = 0;
+rules[ 'complexity' ] = 'off';
 
 /**
-* Enforce consistent returns.
+* Do not enforce consistent returns.
 *
 * @name consistent-return
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'off'
 * @see [consistent-return]{@link http://eslint.org/docs/rules/consistent-return}
+*
+* @example
+* // Okay...
+* function foo( x ) {
+*     if ( x === 1 ) {
+*         return NaN;
+*     }
+*     // No explicit return...
+* }
 */
-rules[ 'consistent-return' ] = 2;
+rules[ 'consistent-return' ] = 'off';
 
 /**
 * Always require curly braces.
 *
 * @name curly
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [curly]{@link http://eslint.org/docs/rules/curly}
+*
+* @example
+* // Bad...
+* if ( x === 1 ) x += 1;
+*
+* @example
+* // Good...
+* if ( x === 1 ) {
+*     x += 1;
+* }
 */
-rules[ 'curly' ] = 2;
+rules[ 'curly' ] = 'error';
 
 /**
 * Always require a `default` case in `switch` statements.
 *
 * @name default-case
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [default-case]{@link http://eslint.org/docs/rules/default-case}
-*/
-rules[ 'default-case' ] = 2;
-
-/**
-* Enforce using dot notation over square-bracket notation.
 *
-* @name dot-notation
-* @memberof rules
-* @type {number}
-* @default 2
-* @see [dot-notation]{@link http://eslint.org/docs/rules/dot-notation}
+* @example
+* // Bad...
+* switch( foo ) {
+* case 1:
+*     break;
+* }
+*
+* @example
+* // Good...
+* switch( foo ) {
+* case 1:
+*     break;
+* default:
+*     break;
+* }
 */
-rules[ 'dot-notation' ] = 2;
+rules[ 'default-case' ] = 'error';
 
 /**
 * Require that a dot be on the same line as a property.
@@ -90,351 +205,751 @@ rules[ 'dot-notation' ] = 2;
 * @name dot-location
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'property' ]
+* @default [ 'error', 'property' ]
 * @see [dot-location]{@link http://eslint.org/docs/rules/dot-location}
+*
+* @example
+* // Bad...
+* var obj = {
+*     'beep': 'boop'
+* };
+* var p = obj.
+*     beep;
+*
+* @example
+* // Good...
+* var obj = {
+*     'beep': 'boop'
+* };
+* var p = obj
+*     .beep;
+*
+* @example
+* // Better...
+* var obj = {
+*     'beep': 'boop'
+* };
+* var p = obj.beep;
 */
-rules[ 'dot-location' ] = [ 2, 'property' ];
+rules[ 'dot-location' ] = [ 'error', 'property' ];
+
+/**
+* Do not enforce using dot notation over square-bracket notation.
+*
+* @name dot-notation
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [dot-notation]{@link http://eslint.org/docs/rules/dot-notation}
+*/
+rules[ 'dot-notation' ] = 'off'; // TODO: revisit?
 
 /**
 * Always require `===` over `==`.
 *
 * @name eqeqeq
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default [ 'error', 'always' ]
 * @see [eqeqeq]{@link http://eslint.org/docs/rules/eqeqeq}
+*
+* @example
+* // Bad...
+* var bool = ( x == 3.14 );
+*
+* @example
+* // Good...
+* var bool = ( x === 3.14 );
 */
-rules[ 'eqeqeq' ] = 2;
+rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 
 /**
 * A `for-in` loop should always filter results using an `if` statement.
 *
 * @name guard-for-in
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [guard-for-in]{@link http://eslint.org/docs/rules/guard-for-in}
+*
+* @example
+* // Bad...
+* for ( key in obj ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* var hasOwn = require( '@stdlib/utils/has-own-property' );
+*
+* for ( key in obj ) {
+*     if ( hasOwn( obj, key ) ) {
+*         // Do something...
+*     }
+* }
 */
-rules[ 'guard-for-in' ] = 2;
+rules[ 'guard-for-in' ] = 'error';
 
 /**
 * Never allow `alert`, `confirm`, or `prompt`.
 *
 * @name no-alert
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-alert]{@link http://eslint.org/docs/rules/no-alert}
+*
+* @example
+* // Bad...
+* alert( 'beep' );
 */
-rules[ 'no-alert' ] = 2;
+rules[ 'no-alert' ] = 'error';
 
 /**
 * Never allow `arguments.caller` or `arguments.callee` to be used, as they are deprecated.
 *
 * @name no-caller
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-caller]{@link http://eslint.org/docs/rules/no-caller}
+*
+* @example
+* // Bad...
+* function foo() {
+*     var callee = arguments.callee;
+* }
 */
-rules[ 'no-caller' ] = 2;
+rules[ 'no-caller' ] = 'error';
+
+/**
+* Do not allow lexical declarations in case/default clauses.
+*
+* @name no-case-declarations
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-case-declarations]{@link http://eslint.org/docs/rules/no-case-declarations}
+*/
+rules[ 'no-case-declarations' ] = 'error';
 
 /**
 * Always require regex literals to escape division operators.
 *
 * @name no-div-regex
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-div-regex]{@link http://eslint.org/docs/rules/no-div-regex}
+*
+* @example
+* // Bad...
+* var re = /=foo/;
+*
+* @example
+* // Good...
+* var re = /\=foo/;
 */
-rules[ 'no-div-regex' ] = 2;
+rules[ 'no-div-regex' ] = 'error';
 
 /**
 * Prevent unnecessary `else` blocks when an `if` contains a `return` statement.
 *
 * @name no-else-return
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-else-return]{@link http://eslint.org/docs/rules/no-else-return}
+*
+* @example
+* // Bad...
+* if ( x === y ) {
+*     return x;
+* } else {
+*     return y;
+* }
+*
+* @example
+* // Good...
+* if ( x === y ) {
+*     return x;
+* }
+* return y;
 */
-rules[ 'no-else-return' ] = 2;
+rules[ 'no-else-return' ] = 'error';
 
 /**
-* Never allow an empty label.
+* Never allow an empty function.
 *
-* @name no-empty-label
+* @name no-empty-function
 * @memberof rules
-* @type {number}
-* @default 2
-* @see [no-empty-label]{@link http://eslint.org/docs/rules/no-empty-label}
+* @type {string}
+* @default 'error'
+* @see [no-empty-function]{@link http://eslint.org/docs/rules/no-empty-function}
+*
+* @example
+* // Bad...
+* function noop(){}
+*
+* @example
+* // Good...
+* function noop() {
+*     // Do nothing...
+* }
 */
-rules[ 'no-empty-label' ] = 2;
+rules[ 'no-empty-function' ] = 'error';
+
+/**
+* Never allow an empty destructuring patterns.
+*
+* @name no-empty-pattern
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-empty-pattern]{@link http://eslint.org/docs/rules/no-empty-pattern}
+*
+* @example
+* // Bad...
+* var {} = foo();
+*
+* @example
+* // Good...
+* var { a = {} } = foo();
+*/
+rules[ 'no-empty-pattern' ] = 'error';
 
 /**
 * Never allow `null` comparisons.
 *
 * @name no-eq-null
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-eq-null]{@link http://eslint.org/docs/rules/no-eq-null}
+*
+* @example
+* // Bad...
+* if ( x == null ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* if ( x === false ) {
+*     // Do something...
+* }
 */
-rules[ 'no-eq-null' ] = 2;
+rules[ 'no-eq-null' ] = 'error';
 
 /**
 * Never allow the use of `eval`.
 *
 * @name no-eval
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default 'error'
 * @see [no-eval]{@link http://eslint.org/docs/rules/no-eval}
+*
+* @example
+* // Bad...
+* var x = eval( '5' );
+*
+* @example
+* // Good...
+* var x = parseInt( '5', 10 );
 */
-rules[ 'no-eval' ] = 2;
+rules[ 'no-eval' ] = 'error';
 
 /**
 * Never allow extending native prototypes.
 *
 * @name no-extend-native
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-extend-native]{@link http://eslint.org/docs/rules/no-extend-native}
+*
+* @example
+* // Bad...
+* Object.prototype.beep = 'boop';
 */
-rules[ 'no-extend-native' ] = 2;
+rules[ 'no-extend-native' ] = 'error';
 
 /**
 * Prevent function binding when a function does not use `this`.
 *
 * @name no-extra-bind
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-extra-bind]{@link http://eslint.org/docs/rules/no-extra-bind}
+*
+* @example
+* // Bad...
+* function foo() {
+*     bar();
+* }
+* var x = foo.bind( bar );
+*
+* @example
+* // Okay...
+* function foo() {
+*     this.beep();
+* }
+* var x = foo.bind( bar );
 */
-rules[ 'no-extra-bind' ] = 2;
+rules[ 'no-extra-bind' ] = 'error';
+
+/**
+* Do not allow unnecessary labels.
+*
+* @name no-extra-label
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-extra-label]{@link http://eslint.org/docs/rules/no-extra-label}
+*
+* @example
+* // Bad...
+* A: while ( true ) {
+*     // Do something...
+* }
+*/
+rules[ 'no-extra-label' ] = 'error'
 
 /**
 * Prevent unintentional fall throughs in `switch` statements.
 *
 * @name no-fallthrough
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-fallthrough]{@link http://eslint.org/docs/rules/no-fallthrough}
+*
+* @example
+* // Bad...
+* switch ( x ) {
+* case 1:
+*     foo();
+* case 2:
+*     bar();
+*     break;
+* default:
+*     break;
+* }
+*
+* @example
+* // Good...
+* switch ( x ) {
+* case 1:
+*     foo();
+*     break;
+* case 2:
+*     bar();
+*     break;
+* default:
+*     break;
+* }
+*
+* @example
+* // Okay...
+* switch ( x ) {
+* case 1:
+* case 2:
+*     bar();
+*     break;
+* default:
+*     break;
+* }
 */
-rules[ 'no-fallthrough' ] = 2;
+rules[ 'no-fallthrough' ] = 'error';
 
 /**
 * Prevent floating decimals; e.g., `2.`.
 *
 * @name no-floating-decimal
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-floating-decimal]{@link http://eslint.org/docs/rules/no-floating-decimal}
+*
+* @example
+* // Bad...
+* var x = 2.;
+*
+* @example
+* // Good...
+* var x = 2.0;
 */
-rules[ 'no-floating-decimal' ] = 2;
+rules[ 'no-floating-decimal' ] = 'error';
+
+/**
+* Do not allow assignment to native objects or read-only global variables.
+*
+* @name no-global-assign
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-global-assign]{@link http://eslint.org/docs/rules/no-global-assign}
+*
+* @example
+* // Bad...
+* Object = null;
+*/
+rules[ 'no-global-assign' ] = 'error';
 
 /**
 * Allow implicit type coercion.
 *
 * @name no-implicit-coercion
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-implicit-coercion]{@link http://eslint.org/docs/rules/no-implicit-coercion}
+*
+* @example
+* // Okay...
+* var str = '5';
+* var num = +str;
 */
-rules[ 'no-implicit-coercion' ] = 0;
+rules[ 'no-implicit-coercion' ] = 'off';
+
+/**
+* Do not allow implicit globals in browser scripts.
+*
+* @name no-implicit-globals
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-implicit-globals]{@link http://eslint.org/docs/rules/no-implicit-globals}
+*
+* @example
+* // Okay...
+* window.foo = 'bar';
+*/
+rules[ 'no-implicit-globals' ] = '';
 
 /**
 * Never allow implied use of `eval` with `setTimeout`, `setInterval`, and `execScript`.
 *
 * @name no-implied-eval
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-implied-eval]{@link http://eslint.org/docs/rules/no-implied-eval}
+*
+* @example
+* // Bad...
+* setTimeout( 'console.log("beep!");', 10 );
 */
-rules[ 'no-implied-eval' ] = 2;
+rules[ 'no-implied-eval' ] = 'error';
 
 /**
 * Never allow the use of `this` outside of classes.
 
 * @name no-invalid-this
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-invalid-this]{@link http://eslint.org/docs/rules/no-invalid-this}
+*
+* @example
+* // Bad...
+* this.beep = 'boop';
+*
+* @example
+* // Good...
+* function Beep() {
+*     this.boop = 'boop';
+*     return this;
+* }
 */
-rules[ 'no-invalid-this' ] = 2;
+rules[ 'no-invalid-this' ] = 'error';
 
 /**
 * Never allow the use of the deprecated `__iterator__` property.
 *
 * @name no-iterator
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-iterator]{@link http://eslint.org/docs/rules/no-iterator}
 */
-rules[ 'no-iterator' ] = 2;
+rules[ 'no-iterator' ] = 'error';
 
 /**
 * Never allow the user of `labels`.
 *
 * @name no-labels
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
 * @see [no-labels]{@link http://eslint.org/docs/rules/no-labels}
+*
+* @example
+* // Bad...
+* label: while( true ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* while( true ) {
+*     // Do something...
+* }
 */
-rules[ 'no-labels' ] = 2;
+rules[ 'no-labels' ] = [ 'error', {
+	'allowLoop': false,
+	'allowSwitch': false
+}];
 
 /**
 * Never allow standalone code blocks delimited by curly braces.
 *
 * @name no-lone-blocks
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-line-blocks]{@link http://eslint.org/docs/rules/no-lone-blocks}
+*
+* @example
+* // Bad...
+* {
+*     function foo(){}
+* }
+*
+* @example
+* // Good...
+* function foo(){}
 */
-rules[ 'no-lone-blocks' ] = 2;
+rules[ 'no-lone-blocks' ] = 'error';
 
 /**
 * Never allow functions to be created within a loop.
 *
 * @name no-loop-func
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-loop-func]{@link http://eslint.org/docs/rules/no-loop-func}
+*
+* @example
+* // Bad...
+* var foo;
+* var i;
+*
+* foo = new Array( 10 );
+* for ( i = 0; i < foo.length; i++ ) {
+*     foo[ i ] = function bar() {
+*         return i;
+*     };
+* }
+*
+* @example
+* // Good...
+* var foo;
+* var i;
+*
+* function bar( i ) {
+*     return function bar() {
+*         return i;
+*     };
+* }
+*
+* foo = new Array( 10 );
+* for ( i = 0; i < foo.length; i++ ) {
+*     foo[ i ] = bar( i );
+* }
 */
-rules[ 'no-loop-func' ] = 2;
+rules[ 'no-loop-func' ] = 'error';
+
+/**
+* Warn when magic numbers are used.
+*
+* @name no-magic-numbers
+* @memberof rules
+* @type {Array}
+* @see [no-magic-numbers]{@link http://eslint.org/docs/rules/no-magic-numbers}
+*/
+rules[ 'no-magic-numbers' ] = [ 'error', {
+	'ignoreArrayIndexes': true,
+	'enforceConst': false,
+	'detectObjects': false
+}];
 
 /**
 * Never allow multiple whitespace characters in expressions.
 *
 * @name no-multi-spaces
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-multi-spaces]{@link http://eslint.org/docs/rules/no-multi-spaces}
+*
+* @example
+* // Bad...
+* var bool = ( x  === true );
+*
+* @example
+* // Good...
+* var bool = ( x === true );
 */
-rules[ 'no-multi-spaces' ] = 2;
+rules[ 'no-multi-spaces' ] = 'error';
 
 /**
 * Never allow using a `\` character to create multi-line strings.
 *
 * @name no-multi-str
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-multi-str]{@link http://eslint.org/docs/rules/no-multi-str}
-*/
-rules[ 'no-multi-str' ] = 2;
-
-/**
-* Never allow built-in native objects to be reassigned.
 *
-* @name no-native-reassign
-* @memberof rules
-* @type {number}
-* @default 2
-* @see [no-native-reassign]{@link http://eslint.org/docs/rules/no-native-reassign}
+* @example
+* // Bad...
+* var str = 'Hello \
+*            world!';
+*
+* @example;
+* // Good...
+* var str = 'Hello\nworld!';
 */
-rules[ 'no-native-reassign' ] = 2;
+rules[ 'no-multi-str' ] = 'error';
 
 /**
 * Never allow using the `Function` constructor to create functions.
 *
 * @name no-new-func
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-new-func]{@link http://eslint.org/docs/rules/no-new-func}
+*
+* @example
+* // Bad (most of the time)...
+* var foo = new Function( 'x', 'return x;' );
+*
+* @example
+* // Good...
+* function foo( x ) {
+*     return x;
+* }
 */
-rules[ 'no-new-func' ] = 2;
+rules[ 'no-new-func' ] = 'error';
 
 /**
 * Never allow using `String`, `Number`, and `Boolean` in place of primitives.
 *
 * @name no-new-wrappers
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-new-wrappers]{@link http://eslint.org/docs/rules/no-new-wrappers}
+*
+* @example
+* // Bad...
+* var bool = new Boolean( true );
+*
+* @example
+* // Good...
+* var bool = true;
 */
-rules[ 'no-new-wrappers' ] = 2;
+rules[ 'no-new-wrappers' ] = 'error';
 
 /**
 * Never allow use the `new` operator without assignment.
 *
 * @name no-new
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-new]{@link http://eslint.org/docs/rules/no-new}
+*
+* @example
+* // Bad...
+* new Foo();
+*
+* @example
+* // Good...
+* var f = new Foo();
 */
-rules[ 'no-new' ] = 2;
+rules[ 'no-new' ] = 'error';
 
 /**
 * Never allow octal escape sequences, which are deprecated.
 *
 * @name no-octal-escape
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-octal-escape]{@link http://eslint.org/docs/rules/no-octal-escape}
+*
+* @example
+* // Bad...
+* var foo = 'Copyright \251';
+*
+* @example
+* // Good...
+* var foo = 'Copyright \u00A9';
 */
-rules[ 'no-octal-escape' ] = 2;
+rules[ 'no-octal-escape' ] = 'error';
 
 /**
 * Never allow octal literals that begin with a leading zero; e.g., 071 (=> 57).
 *
 * @name no-octal
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-octal]{@link http://eslint.org/docs/rules/no-octal}
+*
+* @example
+* // Bad...
+* var num = 071;
+*
+* @example
+* // Good...
+* var num = '071';
 */
-rules[ 'no-octal' ] = 2;
+rules[ 'no-octal' ] = 'error';
 
 /**
 * Allow parameter reassignment (although bugs can arise when doing so).
 *
 * @name no-param-reassign
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-param-reassign]{@link http://eslint.org/docs/rules/no-param-reassign}
-*/
-rules[ 'no-param-reassign' ] = 0;
-
-/**
-* Warn when using `process.env` to prevent it being littered throughout a code base.
 *
-* @name no-process-env
-* @memberof rules
-* @type {number}
-* @default 0
-* @see [no-process-env]{@link http://eslint.org/docs/rules/no-process-env}
+* @example
+* // Okay...
+* function foo( x ) {
+*     y = x;
+*     return y;
+* }
 */
-rules[ 'no-process-env' ] = 1;
+rules[ 'no-param-reassign' ] = 'off';
 
 /**
 * Never allow using deprecated `__proto__` property.
 *
 * @name no-proto
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-proto]{@link http://eslint.org/docs/rules/no-proto}
+*
+* @example
+* // Bad...
+* var proto = {}.__proto__;
+*
+* @example
+* // Good...
+* var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+*
+* var proto = getPrototypeOf( {} );
 */
-rules[ 'no-proto' ] = 2;
+rules[ 'no-proto' ] = 'error';
 
 /**
 * Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
@@ -442,12 +957,35 @@ rules[ 'no-proto' ] = 2;
 * @name no-redeclare
 * @memberof rules
 * @type {Array}
-* @default [ 2, {'builtinGlobals':true} ]
+* @default [ 'error', {'builtinGlobals':true} ]
 * @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+*
+* @example
+* // Bad...
+* var a = 'beep';
+* // ...
+* var a = 'boop';
+*
+* @example
+* // Good...
+* var a = 'beep';
+* // ...
+* a = 'boop';
 */
-rules[ 'no-redeclare' ] = [ 2, {
+rules[ 'no-redeclare' ] = [ 'error', {
 	'builtinGlobals': true
 }];
+
+/**
+* Do not restrict any object properties.
+*
+* @name no-restricted-properties
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [no-restricted-properties]{@link http://eslint.org/docs/rules/no-restricted-properties}
+*/
+rules[ 'no-restricted-properties' ] = 'off';
 
 /**
 * Never allow assignment in `return` statements.
@@ -455,98 +993,283 @@ rules[ 'no-redeclare' ] = [ 2, {
 * @name no-return-assign
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
+* @default [ 'error', 'always' ]
 * @see [no-return-assign]{@link http://eslint.org/docs/rules/no-return-assign}
+*
+* @example
+* // Bad...
+* function foo( x ) {
+*     var bar;
+*     return bar = x + 2;
+* }
+*
+* @example
+* // Good...
+* function foo( x ) {
+*     return x + 2;
+* }
 */
-rules[ 'no-return-assign' ] = [ 2, 'always' ];
+rules[ 'no-return-assign' ] = [ 'error', 'always' ];
+
+/**
+* Never allow `return await`.
+*
+* @name no-return-await
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-return-await]{@link http://eslint.org/docs/rules/no-return-await}
+*
+* @example
+* // Bad...
+* async function foo() {
+*     return await bar();
+* }
+*/
+rules[ 'no-return-await' ] = 'error';
 
 /**
 * Never allow using `javascript:` in urls.
 *
 * @name no-script-url
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-script-url]{@link http://eslint.org/docs/rules/no-script-url}
+*
+* @example
+* // Bad...
+* location.href = 'javascript:void(0)';
 */
-rules[ 'no-script-url' ] = 2;
+rules[ 'no-script-url' ] = 'error';
+
+/**
+* Never allow self-assignments, including properties.
+*
+* @name no-self-assign
+* @memberof rules
+* @type {Array}
+* @default [ 'error', {'props':true} ]
+* @see [no-self-assign]{@link http://eslint.org/docs/rules/no-self-assign}
+*
+* @example
+* // Bad...
+* foo = foo;
+*
+* @example
+* // Bad...
+* obj = { 'a': 'b' };
+* obj.a = obj.a;
+*/
+rules[ 'no-self-assign' ] = [ 'error', {
+	'props': true
+}];
 
 /**
 * Allow self-comparison (`NaN` check).
 *
 * @name no-self-compare
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-self-compare]{@link http://eslint.org/docs/rules/no-self-compare}
+*
+* @example
+* // Okay...
+* if ( x !== x ) {
+*     // Handle NaN...
+* }
 */
-rules[ 'no-self-compare' ] = 0;
+rules[ 'no-self-compare' ] = 'off';
 
 /**
 * Never allow using a comma operator to separate multiple expressions where only a single expression is expected.
 *
 * @name no-sequences
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-sequences]{@link http://eslint.org/docs/rules/no-sequences}
+*
+* @example
+* // Bad...
+* var x = (3,5); // x = 5
+*
+* @example
+* // Good...
+* var x = 5;
 */
-rules[ 'no-sequences' ] = 2;
+rules[ 'no-sequences' ] = 'error';
 
 /**
 * Encourage only `Error` objects to be thrown.
 *
 * @name no-throw-literal
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-throw-literal]{@link http://eslint.org/docs/rules/no-throw-literal}
+*
+* @example
+* // Bad...
+* throw 'beep';
+*
+* @example
+* // Good...
+* throw new Error( 'beep' );
 */
-rules[ 'no-throw-literal' ] = 2;
+rules[ 'no-throw-literal' ] = 'error';
+
+/**
+* Allow unmodified loop conditions.
+*
+* @name no-unmodified-loop-condition
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [no-unmodified-loop-condition]{@link http://eslint.org/docs/rules/no-unmodified-loop-condition}
+*/
+rules[ 'no-unmodified-loop-condition' ] = 'off';
 
 /**
 * Never allow unused expressions.
 *
 * @name no-unused-expressions
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
 * @see [no-unused-expressions]{@link http://eslint.org/docs/rules/no-unused-expressions}
+*
+* @example
+* // Bad...
+* n + 1;
 */
-rules[ 'no-unused-expressions' ] = 2;
+rules[ 'no-unused-expressions' ] = [ 'error', {
+	'allowShortCircuit': false,
+	'allowTernary': false
+}];
+
+/**
+* Never allow unused labels.
+*
+* @name no-unused-labels
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-unused-labels]{@link http://eslint.org/docs/rules/no-unused-labels}
+*
+* @example
+* // Bad...
+* var x = 0;
+* A: while( true ) {
+*     if ( x === 10 ) {
+*         return;
+*     }
+*     x += 1;
+* }
+*/
+rules[ 'no-unused-labels' ] = 'error';
 
 /**
 * Never allow using `call` or `apply` when a normal function invocation will suffice.
 *
 * @name no-useless-call
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-useless-call]{@link http://eslint.org/docs/rules/no-useless-call}
+*
+* @example
+* // Bad...
+* var x = foo.call( null, 1, 2 );
+*
+* @example
+* // Good...
+* var x = foo( 1, 2 );
 */
-rules[ 'no-useless-call' ] = 2;
+rules[ 'no-useless-call' ] = 'error';
 
 /**
 * Never allow concatenation of two string literals which can be combined as a single literal.
 *
 * @name no-useless-concat
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-useless-concat]{@link http://eslint.org/docs/rules/no-useless-concat}
+*
+* @example
+* // Bad...
+* var c = 'a' + 'b';
+*
+* @example
+* // Good...
+* var c = 'ab';
 */
-rules[ 'no-useless-concat' ] = 2;
+rules[ 'no-useless-concat' ] = 'error';
 
 /**
-* Allow using the `void` operator.
+* Prohibit unnecessary escaping.
+*
+* @name no-useless-escape
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-useless-escape]{@link http://eslint.org/docs/rules/no-useless-escape}
+*
+* @example
+* // Bad...
+* var str = 'He\l\lo';
+*
+* @example
+* // Good...
+* var str = 'Hello';
+*/
+rules[ 'no-useless-escape' ] = 'error';
+
+/**
+* Never allow redundant/unnecessary `return` statements.
+*
+* @name no-useless-return
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-useless-return]{@link http://eslint.org/docs/rules/no-useless-return}
+*
+* @example
+* // Bad...
+* function foo( x ) {
+*     if ( x === x ) {
+*         return x;
+*     }
+*     return;
+* }
+*
+*@ example
+* // Good...
+* function foo( x ) {
+*     if ( x === x ) {
+*         return x;
+*     }
+* }
+*/
+rules[ 'no-useless-return' ] = 'error';
+
+/**
+* Allow using the `void` operator. Useful in pre-ES5 environments where `undefined` is mutable.
 *
 * @name no-void
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-void]{@link http://eslint.org/docs/rules/no-void}
+*
+* @example
+* // Okay...
+* if ( x === void 0 ) { // Check if `undefined`...
+*     x = 'beep';
+* }
 */
-rules[ 'no-void' ] = 0;
+rules[ 'no-void' ] = 'off';
 
 /**
 * Warn when source contains warning comments.
@@ -556,12 +1279,13 @@ rules[ 'no-void' ] = 0;
 * @type {Array}
 * @see [no-warning-comments]{@link http://eslint.org/docs/rules/no-warning-comments}
 */
-rules[ 'no-warning-comments' ] = [ 1, {
+rules[ 'no-warning-comments' ] = [ 'warn', {
 	'terms': [
 		'todo',
-		'warning', // TODO: update terms
+		'warning',
 		'fixme',
 		'hack',
+		'optimize',
 		'xxx'
 	],
 	'location': 'start'
@@ -572,33 +1296,84 @@ rules[ 'no-warning-comments' ] = [ 1, {
 *
 * @name no-with
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-with]{@link http://eslint.org/docs/rules/no-with}
 */
-rules[ 'no-with' ] = 2;
+rules[ 'no-with' ] = 'error';
 
 /**
 * Always require a `radix` parameter to `parseInt()`.
 *
 * @name radix
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default [ 'error', 'always' ]
 * @see [radix]{@link http://eslint.org/docs/rules/radix}
+*
+* @example
+* // Bad...
+* var x = parseInt( '8' );
+*
+* @example
+* // Good...
+* var x = parseInt( '8', 10 );
 */
-rules[ 'radix' ] = 2;
+rules[ 'radix' ] = [ 'error', 'always' ];
+
+/**
+* Always require `async` functions to have an `await` expression.
+*
+* @name require-await
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-await]{@link http://eslint.org/docs/rules/require-await}
+*
+* @example
+* // Bad...
+* async function foo() {
+*     bar();
+* }
+*
+* @example
+* // Good...
+* async function foo() {
+*     await bar();
+* }
+*/
+rules[ 'require-await' ] = 'error';
 
 /**
 * Always declare variables at the top of their scope to represent hoisting.
 *
 * @name vars-on-top
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [vars-on-top]{@link http://eslint.org/docs/rules/vars-on-top}
+*
+* @example
+* // Bad...
+* function foo() {
+*     for ( var i = 0; i < 5; i++ ) {
+*         // Do something...
+*     }
+*     var beep = 'boop';
+* }
+*
+* @example
+* // Good...
+* function foo() {
+*     var beep;
+*     var i;
+*     for ( i = 0; i < 5; i++ ) {
+*         // Do something...
+*     }
+*     beep = 'boop';
+* }
 */
-rules[ 'vars-on-top' ] = 2;
+rules[ 'vars-on-top' ] = 'error';
 
 /**
 * Always require an immediately invoked function expression (IIFE) to be wrapped.
@@ -606,10 +1381,18 @@ rules[ 'vars-on-top' ] = 2;
 * @name wrap-iife
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'inside' ]
+* @default [ 'error', 'inside' ]
 * @see [wrap-iife]{@link http://eslint.org/docs/rules/wrap-iife}
+*
+* @example
+* // Bad...
+* var x = function foo(){}();
+*
+* @example
+* // Good...
+* var x = (function foo(){})();
 */
-rules[ 'wrap-iife' ] = [ 2, 'inside' ];
+rules[ 'wrap-iife' ] = [ 'error', 'inside' ];
 
 /**
 * Require that literals come after variables in conditions, except for ranges.
@@ -617,10 +1400,28 @@ rules[ 'wrap-iife' ] = [ 2, 'inside' ];
 * @name yoda
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'never', {'exceptRange':true} ]
+* @default [ 'error', 'never', {'exceptRange':true} ]
 * @see [yoda]{@link http://eslint.org/docs/rules/yoda}
+*
+* @example
+* // Bad...
+* if ( 3.14 === x ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* if ( x === 3.14 ) {
+*     // Do something...
+* }
+*
+* @example
+* // Okay...
+* if ( -3.14 < x && x < 3.14 ) {
+*     // Do something...
+* }
 */
-rules[ 'yoda' ] = [ 2, 'never', {
+rules[ 'yoda' ] = [ 'error', 'never', {
 	'exceptRange': true
 }];
 
