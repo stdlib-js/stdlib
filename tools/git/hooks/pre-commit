@@ -89,7 +89,16 @@ run_lint() {
 		fi
 	fi
 
-	# TODO: if JavaScript files, lint those particular files
+	# Lint JavaScript files...
+	files=$(echo "${changed_files}" | grep '\.js$')
+	if [[ -n "${files}" ]]; then
+		make FILES="${files}" lint-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'JavaScript lint errors.' >&2
+			return 1
+		fi
+	fi
 
 	# TODO: if datapackage.json, validate via schema
 
