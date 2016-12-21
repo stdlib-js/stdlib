@@ -78,3 +78,17 @@ lint-javascript-benchmarks: $(NODE_MODULES)
 
 .PHONY: lint-javascript-benchmarks
 
+
+# Check JavaScript code quality.
+#
+# This target lints JavaScript files. Note that we expect `$FILES` to be a JavaScript file list.
+
+lint-javascript-files: $(NODE_MODULES)
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
+	done
+
+.PHONY: lint-javascript-files
+
