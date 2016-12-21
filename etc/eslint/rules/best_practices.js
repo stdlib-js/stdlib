@@ -515,7 +515,7 @@ rules[ 'no-extra-bind' ] = 'error';
 *     // Do something...
 * }
 */
-rules[ 'no-extra-label' ] = 'error'
+rules[ 'no-extra-label' ] = 'error';
 
 /**
 * Prevent unintentional fall throughs in `switch` statements.
