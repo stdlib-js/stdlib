@@ -81,6 +81,7 @@ function plugin( dir, cwd, subpath ) {
 		args.push( 'SOURCES_FILTER=.*/'+subpath+'/.*' );
 		args.push( 'TESTS_FILTER=.*/'+subpath+'/.*' );
 		args.push( 'EXAMPLES_FILTER=.*/'+subpath+'/.*' );
+		args.push( 'BENCHMARKS_FILTER=.*/'+subpath+'/.*' );
 	}
 	// Target:
 	args.push( 'lint-javascript' );
