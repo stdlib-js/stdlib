@@ -17,12 +17,12 @@ PACKAGES_FILE ?= package.json
 
 # Define the command flags:
 FIND_PACKAGES_FLAGS ?= \
+	-type f \
 	-name "$(PACKAGES_FILE)" \
 	-regex "$(PACKAGES_FILTER)" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-type f \
 	-exec dirname {} \;
 
 ifneq ($(KERNEL), Darwin)

@@ -17,6 +17,7 @@ find_print_sources_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_SOURCES_FLAGS ?= \
+	-type f \
 	-name "$(SOURCES_PATTERN)" \
 	-regex "$(SOURCES_FILTER)" \
 	-not -path "$(ROOT_DIR)/.*" \
@@ -26,8 +27,7 @@ FIND_SOURCES_FLAGS ?= \
 	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "**/$(EXAMPLES_FOLDER)/*" \
 	-not -path "**/$(TESTS_FOLDER)/*" \
-	-not -path "**/$(BUILD_FOLDER)/*" \
-	-type f
+	-not -path "**/$(BUILD_FOLDER)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_SOURCES_FLAGS := -regextype posix-extended $(FIND_SOURCES_FLAGS)

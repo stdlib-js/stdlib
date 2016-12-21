@@ -20,6 +20,7 @@ find_print_benchmarks_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_BENCHMARKS_FLAGS ?= \
+	-type f \
 	-name "$(BENCHMARKS_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/**" \
 	-regex "$(BENCHMARKS_FILTER)" \
@@ -27,8 +28,7 @@ FIND_BENCHMARKS_FLAGS ?= \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-type f
+	-not -path "$(REPORTS_DIR)/*"
 
 
 ifneq ($(KERNEL), Darwin)
