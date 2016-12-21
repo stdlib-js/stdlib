@@ -477,6 +477,12 @@ To analyze only example files,
 
 ``` bash
 $ make EXAMPLES_FILTER=... complexity-examples
+``` 
+
+To analyze only benchmark files,
+
+``` bash
+$ make BENCHMARKS_FILTER=... complexity-benchmarks
 ```
 
 To analyze only JavaScript files,
