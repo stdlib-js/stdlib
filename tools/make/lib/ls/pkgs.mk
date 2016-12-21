@@ -22,14 +22,18 @@ FIND_PACKAGES_FLAGS ?= \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
+	-type f \
 	-exec dirname {} \;
 
 ifneq ($(KERNEL), Darwin)
 	FIND_PACKAGES_FLAGS := -regextype posix-extended $(FIND_PACKAGES_FLAGS)
 endif
 
+# Define a command for listing packages:
+FIND_PACKAGES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PACKAGES_FLAGS)
+
 # Define the list of packages:
-PACKAGES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PACKAGES_FLAGS))
+PACKAGES ?= $(shell $(FIND_PACKAGES_CMD))
 
 
 # TARGETS #
