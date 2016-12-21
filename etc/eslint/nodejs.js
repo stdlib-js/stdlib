@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* ESLint rules specific to running JavaScript on Node.js.
+* ESLint rules specific to running JavaScript on Node.js or in browsers with CommonJS.
 *
 * @namespace rules
 */
@@ -14,8 +14,26 @@ var rules = {};
 * @memberof rules
 * @type {Array}
 * @see [callback-return]{@link http://eslint.org/docs/rules/callback-return}
+*
+* @example
+* // Bad...
+* function foo( x, clbk ) {
+*     if ( x === true ) {
+*         clbk();
+*     }
+*     clbk();
+* }
+*
+* @example
+* // Good...
+* function foo( x, clbk ) {
+*     if ( x === true ) {
+*         return clbk();
+*     }
+*     clbk();
+* }
 */
-rules[ 'callback-return' ] = [ 1, [
+rules[ 'callback-return' ] = [ 'warn', [
 	'callback',
 	'clbk',
 	'cb',
@@ -24,15 +42,50 @@ rules[ 'callback-return' ] = [ 1, [
 ]];
 
 /**
+* Allow `require` to be used in a nested scope.
+*
+* @name global-require
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [global-require]{@link http://eslint.org/docs/rules/global-require}
+*
+* @example
+* // Okay...
+* var f;
+* if ( x === 'foo' ) {
+*     f = require( 'foo' );
+* } else {
+*     f = require( 'bar' );
+* }
+*/
+rules[ 'global-require' ] = 'off';
+
+/**
 * Always handle callback error arguments.
 *
 * @name handle-callback-err
 * @memberof rules
 * @type {Array}
-* @default [ 2, '^(err|error)$' ]
+* @default [ 'error', '^(err|error)$' ]
 * @see [handle-callback-err]{@link http://eslint.org/docs/rules/handle-callback-err}
+*
+* @example
+* // Bad...
+* function foo( err, clbk ) {
+*     return clbk();
+* }
+*
+* @example
+* // Good...
+* function foo( err, clbk ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     return clbk();
+* }
 */
-rules[ 'handle-callback-err' ] = [ 2, '^(err|error)$' ];
+rules[ 'handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 
 /**
 * Only allow `require`d modules to be grouped together.
@@ -40,65 +93,104 @@ rules[ 'handle-callback-err' ] = [ 2, '^(err|error)$' ];
 * @name no-mixed-requires
 * @memberof rules
 * @type {Array}
-* @default [ 2, false ]
 * @see [no-mixed-requires]{@link http://eslint.org/docs/rules/no-mixed-requires}
+*
+* @example
+* // Good...
+* var fs = require( 'fs' );
+* var foo = require( 'foo' );
+* var beep = require( '@stdlib/beep' );
+* var bar = require( './bar.js' );
 */
-rules[ 'no-mixed-requires' ] = [ 2, false ];
+rules[ 'no-mixed-requires' ] = [ 'error', {
+	'grouping': false,
+	'allowCall': true
+}];
 
 /**
 * Never allow the use of `new require()`.
 *
 * @name no-new-require
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-new-require]{@link http://eslint.org/docs/rules/no-new-require}
+*
+* @example
+* // Bad...
+* var foo = new require( 'foo' );
+*
+* @example
+* // Good...
+* var Foo = require( 'foo' );
+*
+* var foo = new Foo();
 */
-rules[ 'no-new-require' ] = 2;
+rules[ 'no-new-require' ] = 'error';
 
 /**
 * Never allow naive directory and file path concatenation.
 *
 * @name no-path-concat
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-path-concat]{@link http://eslint.org/docs/rules/no-path-concat}
+*
+* @example
+* // Bad...
+* var foo = require( __dirname + '/foo.js' );
+*
+* @example
+* // Good...
+* var join = require( 'path' ).join;
+* var foo = require( join( __dirname, 'foo.js' ) );
 */
-rules[ 'no-path-concat' ] = 2;
+rules[ 'no-path-concat' ] = 'error';
 
 /**
-* Allow the use of `process.exit()`.
+* Discourage use of `process.env()`. Use `@stdlib` package instead.
+*
+* @name no-process-env
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-process-env]{@link http://eslint.org/docs/rules/no-process-env}
+*/
+rules[ 'no-process-env' ] = 'error';
+
+/**
+* Warn when using `process.exit()`.
 *
 * @name no-process-exit
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'warn'
 * @see [no-process-exit]{@link http://eslint.org/docs/rules/no-process-exit}
 */
-rules[ 'no-process-exit' ] = 0;
+rules[ 'no-process-exit' ] = 'warn';
 
 /**
 * Do not restrict the use of specific modules.
 *
 * @name no-restricted-modules
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-restricted-modules]{@link http://eslint.org/docs/rules/no-restricted-modules}
 */
-rules[ 'no-restricted-modules' ] = 0;
+rules[ 'no-restricted-modules' ] = 'off';
 
 /**
 * Warn when using synchronous methods when an asynchronous version exists.
 *
 * @name no-sync
 * @memberof rules
-* @type {number}
-* @default 1
+* @type {string}
+* @default 'warn'
 * @see [no-sync]{@link http://eslint.org/docs/rules/no-sync}
 */
-rules[ 'no-sync' ] = 1;
+rules[ 'no-sync' ] = 'warn';
 
 
 // EXPORTS //
