@@ -24,14 +24,18 @@ FIND_TESTS_FLAGS ?= \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "**/$(BUILD_FOLDER)/*"
+	-not -path "**/$(BUILD_FOLDER)/*" \
+	-type f
 
 ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_FLAGS := -regextype posix-extended $(FIND_TESTS_FLAGS)
 endif
 
+# Define a command to list test files:
+FIND_TESTS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS)
+
 # Define the list of test files:
-TESTS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS))
+TESTS ?= $(shell $(FIND_TESTS_CMD))
 
 
 # TARGETS #
