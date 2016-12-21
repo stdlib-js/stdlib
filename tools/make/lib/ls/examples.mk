@@ -28,12 +28,16 @@ FIND_EXAMPLES_FLAGS ?= \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "**/$(EXAMPLES_FOLDER)/fixtures/*"
+	-not -path "**/$(EXAMPLES_FOLDER)/fixtures/*" \
+	-type f
 
 
 ifneq ($(KERNEL), Darwin)
 	FIND_EXAMPLES_FLAGS := -regextype posix-extended $(FIND_EXAMPLES_FLAGS)
 endif
+
+# Define a command to list example files:
+FIND_EXAMPLES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS)
 
 # Define the list of example files:
 EXAMPLES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS))
