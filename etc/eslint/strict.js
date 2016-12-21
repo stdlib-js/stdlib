@@ -13,10 +13,24 @@ var rules = {};
 * @name strict
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'global' ]
+* @default [ 'error', 'global' ]
 * @see [strict]{@link http://eslint.org/docs/rules/strict}
+*
+* @example
+* // Bad...
+* function foo() {
+*     'use strict';
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* 'use strict';
+* function foo(){
+*     // Do something...
+* }
 */
-rules[ 'strict' ] = [ 2, 'global' ];
+rules[ 'strict' ] = [ 'error', 'global' ];
 
 
 // EXPORTS //
