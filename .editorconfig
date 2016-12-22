@@ -15,6 +15,9 @@ indent_style = space
 [*.jl]
 indent_style = tab
 
+[*.sh]
+indent_style = tab
+
 [*.md]
 indent_style = space
 indent_size = 4
