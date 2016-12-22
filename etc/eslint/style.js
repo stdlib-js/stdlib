@@ -8,39 +8,100 @@
 var rules = {};
 
 /**
-* Specifies the use of spacing within `[]`.
+* Warn when not having spaces within array brackets.
 *
 * @name array-bracket-spacing
 * @memberof rules
 * @type {Array}
 * @see [array-bracket-spacing]{@link http://eslint.org/docs/rules/array-bracket-spacing}
+*
+* @example
+* // Bad...
+* var arr = [5];
+*
+* @example
+* // Good...
+* var arr = [ 5 ];
+*
+* @example
+* // Okay...
+* var arr = [ [ 1 ], [ 2 ] ];
+*
+* @example
+* // Okay...
+* var arr = [[ 1 ], [ 2 ]];
+*
+* @example
+* // Okay...
+* var arr = [ [1], [2] ];
 */
-rules[ 'array-bracket-spacing' ] = [ 2, 'always', {
+rules[ 'array-bracket-spacing' ] = [ 'warn', 'always', {
 	'singleValue': true,
 	'objectsInArrays': false,
 	'arraysInArrays': false
 }];
 
 /**
-* Specifies the use of spacing within single-line blocks.
+* Always require spaces in single-line blocks.
 *
 * @name block-spacing
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
+* @default [ 'error', 'always' ]
 * @see [block-spacing]{@link http://eslint.org/docs/rules/block-spacing}
+*
+* @example
+* // Bad...
+* if ( x === 5 ) {return x;}
+*
+* @example
+* // Good...
+* if ( x === 5 ) { return x; }
 */
-rules[ 'block-spacing' ] = [ 2, 'always' ];
+rules[ 'block-spacing' ] = [ 'error', 'always' ];
 
 /**
-* Specifies a curly brace style.
+* Warn when not using the "one true brace style".
 *
 * @name brace-style
 * @memberof rules
 * @type {Array}
 * @see [brace-style]{@link http://eslint.org/docs/rules/brace-style}
+*
+* @example
+* // Bad...
+* if ( x !== x )
+* {
+*     return NaN;
+* }
+*
+* @example
+* // Bad...
+* if ( x !== x ) { return NaN; }
+*
+* @example
+* // Good...
+* if ( x < 10.0 ) {
+*     y = foo( x );
+* } else {
+*     y = bar( x );
+* }
+*
+* @example
+* // Okay...
+* if ( x < 10.0 ) {
+*     y = foo( x );
+* }
+* // Mid-range approximation...
+* else if ( x < 20.0 ) {
+*     y = bar( x );
+* }
+* // Large approximation...
+* else {
+*     y = beep( x );
+* }
 */
-rules[ 'brace-style' ] = [ 1, '1tbs', {
+rules[ 'brace-style' ] = [ 'warn', '1tbs', {
 	'allowSingleLine': false
 }];
 
@@ -50,47 +111,136 @@ rules[ 'brace-style' ] = [ 1, '1tbs', {
 * @name camelcase
 * @memberof rules
 * @type {Array}
-* @default [ 2, {'properties':'never'} ]
+* @default [ 'error', {'properties':'never'} ]
 * @see [camelcase]{@link http://eslint.org/docs/rules/camelcase}
+*
+* @example
+* // Bad...
+* var beep_boop = true;
+*
+* @example
+* // Good...
+* var beepBoop = true;
+*
+* @example
+* // Okay...
+* var obj = {
+*     'beep_boop': true
+* };
 */
-rules[ 'camelcase' ] = [ 2, {
+rules[ 'camelcase' ] = [ 'error', {
 	'properties': 'never'
 }];
 
 /**
-* Specify the use of spacing around commas.
+* Require that the first letter of a comment be capitalized, but relax this restriction for inline comments.
+*
+* @name capitalized-comments
+* @memberof rules
+* @type {Array}
+* @see [capitalized-comments]{@link http://eslint.org/docs/rules/capitalized-comments}
+*
+* @example
+* // Good...
+*
+* @example
+* // bad...
+*/
+rules[ 'capitalized-comments' ] = [ 'error', 'always', {
+	'ignoreInlineComments': true
+}];
+
+/**
+* Never allow trailing commas.
+*
+* @name comma-dangle
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'never' ]
+* @see [comma-dangle]{@link http://eslint.org/docs/rules/comma-dangle}
+*
+* @example
+* // Bad...
+* var obj = {
+*     'beep': true,
+* };
+*
+* @example
+* // Good...
+* var obj = {
+*     'beep': true
+* }
+*/
+rules[ 'comma-dangle' ] = [ 'error', 'never' ];
+
+/**
+* Require a space after a comma, but never before.
 *
 * @name comma-spacing
 * @memberof rules
 * @type {Array}
 * @see [comma-spacing]{@link http://eslint.org/docs/rules/comma-spacing}
+*
+* @example
+* // Bad...
+* var x = 5,y = 8;
+*
+* @example
+* // Bad...
+* var x = 5 ,y = 8;
+*
+* @example
+* // Good...
+* var x = 5, y = 8;
 */
-rules[ 'comma-spacing' ] = [ 2, {
+rules[ 'comma-spacing' ] = [ 'error', {
 	'before': false,
 	'after': true
 }];
 
 /**
-* Specify a comma style.
+* Require a comma after and on the same line as an array element, object property, or variable declaration.
 *
 * @name comma-style
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'last' ]
+* @default [ 'error', 'last' ]
 * @see [comma-style]{@link http://eslint.org/docs/rules/comma-style}
+*
+* @example
+* // Bad...
+* var obj = {
+*     'beep': true
+*   , 'boop': true
+* };
+*
+* @example
+* // Good...
+* var obj = {
+*     'beep': true,
+*     'boop': true
+* };
 */
-rules[ 'comma-style' ] = [ 2, 'last' ];
+rules[ 'comma-style' ] = [ 'error', 'last' ];
 
 /**
-* Specify the use of whitespace within computed properties.
+* Always use whitespace within computed properties.
 *
 * @name computed-property-spacing
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
+* @default [ 'error', 'always' ]
 * @see [computed-property-spacing]{@link http://eslint.org/docs/rules/computed-property-spacing}
+*
+* @example
+* // Bad...
+* var x = obj[prop];
+*
+* @example
+* // Good...
+* var x = obj[ prop ];
 */
-rules[ 'computed-property-spacing' ] = [ 2, 'always' ];
+rules[ 'computed-property-spacing' ] = [ 'error', 'always' ];
 
 /**
 * Require a `this` variable to only be aliased as `self`.
@@ -98,55 +248,126 @@ rules[ 'computed-property-spacing' ] = [ 2, 'always' ];
 * @name consistent-this
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'self' ]
+* @default [ 'error', 'self' ]
 * @see [consistent-this]{@link http://eslint.org/docs/rules/consistent-this}
+*
+* @example
+* // Bad...
+* var that = this;
+*
+* @example
+* // Good...
+* var self = this;
 */
-rules[ 'consistent-this' ] = [ 2, 'self' ];
+rules[ 'consistent-this' ] = [ 'error', 'self' ];
 
 /**
 * Always require an end-of-line character at the end of non-empty files, thus allowing for appending to and concatenating files.
 *
 * @name eol-last
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default [ 'error', 'always' ]
 * @see [eol-last]{@link http://eslint.org/docs/rules/eol-last}
 */
-rules[ 'eol-last' ] = 2;
+rules[ 'eol-last' ] = [ 'error', 'always' ];
+
+/**
+* Never allow a space between function indentifiers and their invocations.
+*
+* @name func-call-spacing
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'never' ]
+* @see [func-call-spacing]{@link http://eslint.org/docs/rules/func-call-spacing}
+*
+* @example
+* // Bad...
+* foo ();
+*
+* @example
+* // Good...
+* foo();
+*/
+rules[ 'func-call-spacing' ] = [ 'error', 'never' ];
+
+/**
+* Do not require that a variable name match a function name or property.
+*
+* @name func-name-matching
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [func-name-matching]{@link http://eslint.org/docs/rules/func-name-matching}
+*
+* @example
+* // Okay...
+* var f = obj.foo;
+*/
+rules[ 'func-name-matching' ] = 'off';
 
 /**
 * Always require that functions have a name to aid debugging.
 *
 * @name func-names
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default [ 'error', 'always' ]
 * @see [func-names]{@link http://eslint.org/docs/rules/func-names}
+*
+* @example
+* // Bad...
+* var foo = function(){};
+*
+* @example
+* // Good...
+* var foo = function foo(){};
 */
-rules[ 'func-names' ] = 2;
+rules[ 'func-names' ] = [ 'error', 'always' ];
 
 /**
-* Always require function declarations and never allow function expressions.
+* Always require function declarations and never allow function expressions or arrow functions.
 *
 * @name func-style
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'declaration' ]
 * @see [func-style]{@link http://eslint.org/docs/rules/func-style}
+*
+* @example
+* // Bad...
+* var foo = function(){};
+*
+* @example
+* // Good...
+* function foo(){}
 */
-rules[ 'func-style' ] = [ 2, 'declaration' ];
+rules[ 'func-style' ] = [ 'error', 'declaration', {
+	'allowArrowFunctions': false
+}];
 
 /**
-* Limit the maximum length an identifier name may be.
+* Do not blacklist any identifiers.
+*
+* @name id-blacklist
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [id-blacklist]{@link http://eslint.org/docs/rules/id-blacklist}
+*/
+rules[ 'id-blacklist' ] = 'off';
+
+/**
+* Warn if the length of an identifier name exceeds `25` characters.
 *
 * @name id-length
 * @memberof rules
 * @type {Array}
-* @default [ 1, {'max':15} ]
 * @see [id-length]{@link http://eslint.org/docs/rules/id-length}
 */
-rules[ 'id-length' ] = [ 1, {
-	'max': 15
+rules[ 'id-length' ] = [ 'warn', {
+	'min': 1,
+	'max': 25,
+	'properties': 'never'
 }];
 
 /**
@@ -154,11 +375,11 @@ rules[ 'id-length' ] = [ 1, {
 *
 * @name id-match
 * @memberof id-match
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [id-match]{@link http://eslint.org/docs/rules/id-match}
 */
-rules[ 'id-match' ] = 0;
+rules[ 'id-match' ] = 'off';
 
 /**
 * Require tabs, except for `case` statements.
@@ -168,22 +389,112 @@ rules[ 'id-match' ] = 0;
 * @type {Array}
 * @see [indent]{@link http://eslint.org/docs/rules/indent}
 */
-rules[ 'indent' ] = [ 2, 'tab', {
-	'SwitchCase': 0
+rules[ 'indent' ] = [ 'error', 'tab', {
+	'SwitchCase': 0,
+	'VariableDeclarator': 1,
+	'outerIIFEBody': 1,
+	'MemberExpression': 1,
+	'FunctionDeclaration': {
+		'parameters': 'off',
+		'body': 1
+	},
+	'FunctionExpression': {
+		'parameters': 'off',
+		'body': 1
+	},
+	'CallExpression': {
+		'arguments': 'off'
+	},
+	'ArrayExpression': 1,
+	'ObjectExpresion': 1
 }];
 
 /**
-* Specify the use of whitespace around the ':' in object literal properties.
+* Disable rule for JSX quotes.
+*
+* @name jsx-quotes
+* @memberof rules
+* @type {string}
+* @see [jsx-quotes]{@link http://eslint.org/docs/rules/jsx-quotes}
+*/
+rules[ 'jsx-quotes' ] = 'off';
+
+/**
+* Require a space after, but not before, the colon separating an object property from a corresponding value.
 *
 * @name key-spacing
 * @memberof rules
 * @type {Array}
 * @see [key-spacing]{@link http://eslint.org/docs/rules/key-spacing}
+*
+* @example
+* // Bad...
+* var obj = {
+*     'beep' : 'boop'
+* };
+*
+* @example
+* // Good...
+* var obj = {
+*     'beep': 'boop'
+* };
 */
-rules[ 'key-spacing' ] = [ 2, {
+rules[ 'key-spacing' ] = [ 'error', {
 	'beforeColon': false,
-	'afterColon': true
+	'afterColon': true,
+	'mode': 'strict'
 }];
+
+/**
+* Require spaces around keywords.
+*
+* @name keyword-spacing
+* @memberof rules
+* @type {Array}
+* @see [keyword-spacing]{@link http://eslint.org/docs/rules/keyword-spacing}
+*
+* @example
+* // Bad...
+* if( x < 10 ){
+*     y = foo( x );
+* }else{
+*     y = bar( x );
+}
+*
+* @example
+* // Good...
+* if ( x!== x ) {
+*     y = foo( x );
+* } else {
+*     y = bar( x );
+* }
+*/
+rules[ 'keyword-spacing' ] = [ 'error', {
+	'before': true,
+	'after': true
+}];
+
+/**
+* Allow comments either above or beside code.
+*
+* @name line-comment-position
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [line-comment-position]{@link http://eslint.org/docs/rules/line-comment-position}
+*/
+rules[ 'line-comment-position' ] = 'off';
+
+/**
+* Enforce Unix-style line breaks.
+*
+* @name linebreak-style
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'unix' ]
+* @see [linebreak-style]{@link http://eslint.org/docs/rules/linebreak-style}
+*/
+rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 
 /**
 * Specify empty lines around comments.
@@ -192,22 +503,101 @@ rules[ 'key-spacing' ] = [ 2, {
 * @memberof rules
 * @type {Array}
 * @see [lines-around-comment]{@link http://eslint.org/docs/rules/lines-around-comment}
+*
+* @example
+* // Bad...
+* var x = 5;
+* // Line comment:
+* var y = 10;
+*
+* @example
+* // Good...
+* var x = 5;
+*
+* // Line comment:
+* var y = 10;
 */
-rules[ 'lines-around-comment' ] = [ 2, {
+rules[ 'lines-around-comment' ] = [ 'error', {
+	'beforeBlockComment': true,
+	'afterBlockComment': false,
 	'beforeLineComment': true,
-	'allowBlockStart': true
+	'afterLineComment': false,
+	'allowBlockStart': true,
+	'allowBlockEnd': true,
+	'allowObjectStart': true,
+	'allowObjectEnd': true,
+	'allowArrayStart': true,
+	'allowArrayEnd': true
 }];
 
 /**
-* Enforce Unix-style line breaks.
+* Always require a blank newline after a directive.
 *
-* @name linebreak-style
+* @name lines-around-directive
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'unix' ]
-* @see [linebreak-style]{@link http://eslint.org/docs/rules/linebreak-style}
+* @see [lines-around-directive]{@link http://eslint.org/docs/rules/lines-around-directive}
+*
+* @example
+* // Bad...
+* "use strict";
+* var x = 5;
+*
+* @example
+* // Good...
+* "use strict";
+*
+* var x = 5;
 */
-rules[ 'linebreak-style' ] = [ 2, 'unix' ];
+rules[ 'lines-around-directive' ] = [ 'error', {
+	'before': 'never',
+	'after': 'always'
+}];
+
+/**
+* Enforce a maximum depth that blocks can be nested.
+*
+* @name max-depth
+* @memberof rules
+* @type {Array}
+* @default [ 'error', {'max': 5} ]
+* @see [max-depth]{@link http://eslint.org/docs/rules/max-depth}
+*/
+rules[ 'max-depth' ] = [ 'error', {
+	'max': 5
+}];
+
+/**
+* Do not allow a line to exceed a maximum line length.
+*
+* @name max-len
+* @memberof rules
+* @type {Array}
+* @see [max-len]{@link http://eslint.org/docs/rules/max-len}
+*/
+rules[ 'max-len' ] = [ 'error', {
+	'code': 80,
+	'tab': 4,
+	'ignoreComments': true,
+	'ignoreUrls': true,
+	'ignoreStrings': true,
+	'ignoreTemplateLiterals': true,
+	'ignoreRegExpLiterals': true
+}];
+
+/**
+* Limit the number of source code lines in a file.
+*
+* @name max-lines
+* @memberof rules
+* @type {Array}
+* @see [max-lines]{@link http://eslint.org/docs/rules/max-lines}
+*/
+rules[ 'max-lines' ] = [ 'warn', {
+	'max': 300,
+	'skipBlankLines': true,
+	'skipComments': true
+}];
 
 /**
 * Limit the number of nested callbacks.
@@ -215,22 +605,75 @@ rules[ 'linebreak-style' ] = [ 2, 'unix' ];
 * @name max-nested-callbacks
 * @memberof rules
 * @type {Array}
-* @default [ 2, 3 ]
+* @default [ 'error', {'max': 3} ]
 * @see [max-nested-callbacks]{@link http://eslint.org/docs/rules/max-nested-callbacks}
 */
-rules[ 'max-nested-callbacks' ] = [ 2, 3 ];
+rules[ 'max-nested-callbacks' ] = [ 'error', {
+	'max': 3
+}];
 
 /**
-* Require all uppercase-started functions be called with the `new` operator.
+* Never allow more than `10` parameters.
+*
+* @name max-params
+* @memberof rules
+* @type {Array}
+* @default [ 'error', {'max': 10} ]
+* @see [max-params]{@link http://eslint.org/docs/rules/max-params}
+*/
+rules[ 'max-params' ] = [ 'error', {
+	'max': 10
+}];
+
+/**
+* Require only `1` statement per line.
+*
+* @name max-statements-per-line
+* @memberof rules
+* @type {Array}
+* @default [ 'error', {'max': 1} ]
+* @see [max-statements-per-line]{@link http://eslint.org/docs/rules/max-statements-per-line}
+*/
+rules[ 'max-statements-per-line' ] = [ 'error', {
+	'max': 1
+}];
+
+/**
+* Warn when a function has more than `100` statements.
+*
+* @name max-statements
+* @memberof rules
+* @type {Array}
+* @default [ 'warn', {'max': 100} ]
+* @see [max-statements]{@link http://eslint.org/docs/rules/max-statements}
+*/
+rules[ 'max-statements' ] = [ 'warn', {
+	'max': 100
+}];
+
+/**
+* Allow same line or multiline ternary expressions.
+*
+* @name multiline-ternary
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [multiline-ternary]{@link http://eslint.org/docs/rules/multiline-ternary}
+*/
+rules[ 'multiline-ternary' ] = 'off';
+
+/**
+* Require all uppercase-started functions (and properties) be called with the `new` operator.
 *
 * @name new-cap
 * @memberof rules
 * @type {Array}
 * @see [new-cap]{@link http://eslint.org/docs/rules/new-cap}
 */
-rules[ 'new-cap' ] = [ 2, {
+rules[ 'new-cap' ] = [ 'error', {
 	'newIsCap': false,
-	'capIsNew': true
+	'capIsNew': true,
+	'properties': true
 }];
 
 /**
@@ -238,55 +681,149 @@ rules[ 'new-cap' ] = [ 2, {
 *
 * @name new-parens
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [new-parens]{@link http://eslint.org/docs/rules/new-parens}
+*
+* @example
+* // Bad...
+* var arr = new Array;
+*
+* @example
+* // Good...
+* var arr = new Array();
 */
-rules[ 'new-parens' ] = 2;
+rules[ 'new-parens' ] = 'error';
 
 /**
 * Allow a newline after variable declarations.
 *
 * @name newline-after-var
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [newline-after-var]{@link http://eslint.org/docs/rules/newline-after-var}
+*
+* @example
+* // Okay...
+* var x = 5;
+*
+* if ( x < 10 ) {
+*     // Do something...
+* }
+*
+* @example
+* // Okay...
+* var x = 5;
+* if ( x < 10 ) {
+*     // Do something...
+* }
 */
-rules[ 'newline-after-var' ] = 0;
+rules[ 'newline-after-var' ] = 'off';
+
+/**
+* Allow a newline before a `return` statement.
+*
+* @name newline-before-return
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [newline-before-return]{@link http://eslint.org/docs/rules/newline-before-return}
+*
+* @example
+* // Okay...
+* var x = 5;
+* var y = x * 3;
+*
+* return y;
+*
+* @example
+* // Okay...
+* var x = 5;
+* var y = x * 3;
+* return y;
+*/
+rules[ 'newline-before-return' ] = 'off';
+
+/**
+* Do not enforce newlines within chained calls.
+*
+* @name newline-per-chained-call
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [newline-per-chained-call]{@link http://eslint.org/docs/rules/newline-per-chained-call}
+*/
+rules[ 'newline-per-chained-call' ] = 'off';
 
 /**
 * Never allow the use of the `Array` constructor when an array literal can be used.
 *
 * @name no-array-constructor
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'error'
 * @see [no-array-constructor]{@link http://eslint.org/docs/rules/no-array-constructor}
+*
+* @example
+* // Bad...
+* var arr = new Array( 1, 2, 3 );
+*
+* @example
+* // Good...
+* var arr = [ 1, 2, 3 ];
+*
+* @example
+* // Good...
+* var arr = new Array( 10 );
 */
-rules[ 'no-array-constructor' ] = 2;
+rules[ 'no-array-constructor' ] = 'error';
+
+/**
+* Allow the use of bitwise operators.
+*
+* @name no-bitwise
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [no-bitwise]{@link http://eslint.org/docs/rules/no-bitwise}
+*
+* @example
+* var isOdd = x & 1;
+*/
+rules[ 'no-bitwise' ] = 'off';
 
 /**
 * Allow the use of the `continue` statement.
 *
 * @name no-continue
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-continue]{@link http://eslint.org/docs/rules/no-continue}
+*
+* @example
+* // Okay...
+* var i;
+* for ( i = 0; i < 10; i++ ) {
+*     if ( i < 5 ) {
+*         continue;
+*     }
+*     // Do something...
+* }
 */
-rules[ 'no-continue' ] = 0;
+rules[ 'no-continue' ] = 'off';
 
 /**
-* Warn when inline comments are found.
+* Allow inline comments.
 *
 * @name no-inline-comments
 * @memberof rules
-* @type {number}
-* @default 1
+* @type {string}
+* @default 'off'
 * @see [no-inline-comments]{@link http://eslint.org/docs/rules/no-inline-comments}
 */
-rules[ 'no-inline-comments' ] = 1;
+rules[ 'no-inline-comments' ] = 'off';
 
 /**
 * Never allow an `if` statement to be the only statement in an `else` block.
@@ -294,21 +831,59 @@ rules[ 'no-inline-comments' ] = 1;
 * @name no-lonely-if
 * @memberof rules
 * @type {number}
-* @default 2
+* @default 'error'
 * @see [no-lonely-if]{@link http://eslint.org/docs/rules/no-lonely-if}
+*
+* @example
+* // Bad...
+* if ( x < 10 ) {
+*     // Do something...
+* } else {
+*     if ( x < 20 ) {
+*         // Do something else...
+*     }
+* }
+*
+* @example
+* // Good...
+* if ( x < 10 ) {
+*     // Do something...
+* } else if ( x < 20 ) {
+*     // Do something else...
+* }
 */
-rules[ 'no-lonely-if' ] = 2;
+rules[ 'no-lonely-if' ] = 'error';
+
+/**
+* Never allow mixed operators.
+*
+* @name no-mixed-operators
+* @memberof rules
+* @type {Array}
+* @see [no-mixed-operators]{@link http://eslint.org/docs/rules/no-mixed-operators}
+*
+* @example
+* // Bad...
+* var y = 3 + 5 * 6;
+*
+* @example
+* // Good...
+* var y = 3 + (5 * 6);
+*/
+rules[ 'no-mixed-operators' ] = [ 'error', {
+	'allowSamePrecedence': true
+}];
 
 /**
 * Never allow mixed spaces and tabs.
 *
 * @name no-mixed-spaces-and-tabs
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-mixed-spaces-and-tabs]{@link http://eslint.org/docs/rules/no-mixed-spaces-and-tabs}
 */
-rules[ 'no-mixed-spaces-and-tabs' ] = 2;
+rules[ 'no-mixed-spaces-and-tabs' ] = 'error';
 
 /**
 * Allow a maximum of two empty lines.
@@ -316,89 +891,251 @@ rules[ 'no-mixed-spaces-and-tabs' ] = 2;
 * @name no-multiple-empty-lines
 * @memberof rules
 * @type {Array}
-* @default [ 2, {'max':2} ]
+* @default [ 'error', {'max':2} ]
 * @see [no-multiple-empty-lines]{@link http://eslint.org/docs/rules/no-multiple-empty-lines}
 */
-rules[ 'no-multiple-empty-lines' ] = [ 2, {
-	'max': 2
+rules[ 'no-multiple-empty-lines' ] = [ 'error', {
+	'max': 2,
+	'maxEOF': 1,
+	'maxBOF': 1
 }];
 
 /**
-* Never allowed nested ternary expressions.
+* Never allow negated conditions when a non-negated condition is possible.
+*
+* @name no-negated-condition
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-negated-condition]{@link http://eslint.org/docs/rules/no-negated-condition}
+*
+* @example
+* // Bad...
+* if ( !x ) {
+*     // Do something 1...
+* } else {
+*     // Do something 2...
+* }
+*
+* @example
+* // Good...
+* if ( x ) {
+*     // Do something 2...
+* } else {
+*     // Do something 1...
+* }
+*/
+rules[ 'no-negated-condition' ] = 'error';
+
+/**
+* Never allow nested ternary expressions.
 *
 * @name no-nested-ternary
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-nested-ternary]{@link http://eslint.org/docs/rules/no-nested-ternary}
+*
+* @example
+* // Bad...
+* var z = ( x < 5 ) ? ( y < 10 ) ? 3 : 2 : 1;
+*
+* @example
+* // Good...
+* if ( x < 5 ) {
+*     if ( y < 10 ) {
+*         z = 3;
+*     } else {
+*         z = 2;
+*     }
+* } else {
+*     z = 1;
+* }
 */
-rules[ 'no-nested-ternary' ] = 2;
+rules[ 'no-nested-ternary' ] = 'error';
 
 /**
 * Never use the `new` operator to create a new Object, when the more concise `{}` syntax suffices.
 *
 * @name no-new-object
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {string}
+* @default 'error'
 * @see [no-new-object]{@link http://eslint.org/docs/rules/no-new-object}
-*/
-rules[ 'no-new-object' ] = 2;
-
-/**
-* Never allow whitespace between a function identifier and its application.
 *
-* @name no-spaced-func
-* @memberof rules
-* @type {number}
-* @default 2
-* @see [no-spaced-func]{@link http://eslint.org/docs/rules/no-spaced-func}
+* @example
+* // Bad...
+* var obj = new Object();
+*
+* @example
+* // Good...
+* var obj = {};
 */
-rules[ 'no-spaced-func' ] = 2;
+rules[ 'no-new-object' ] = 'error';
 
 /**
-* Allow the use of ternary operators.
+* Never allow the use of `++` and `--`, except when incrementing during a `for` loop.
+*
+* @name no-plusplus
+* @memberof rules
+* @type {Array}
+* @default 'error'
+* @see [no-plusplus]{@link http://eslint.org/docs/rules/no-plusplus}
+*
+* @example
+* // Bad...
+* var i = 0;
+* i++;
+*
+* @example
+* // Good...
+* var i = 0;
+* i += 1;
+*
+* @example
+* // Okay...
+* var i = 0;
+* for ( i = 0; i < 10; i++ ) {
+*     // Do something...
+* }
+*/
+rules[ 'no-plusplus' ] = [ 'error', {
+	'allowForLoopAfterthoughts': true
+}];
+
+/**
+* Restrict syntax.
+*
+* @name no-restricted-syntax
+* @memberof rules
+* @type {Array}
+* @see [no-restricted-syntax]{@link http://eslint.org/docs/rules/no-restricted-syntax}
+*/
+rules[ 'no-restricted-syntax' ] = [ 'error',
+	'ArrowFunctionExpression',
+	'ClassBody',
+	'ClassDeclaration',
+	'ClassExpression',
+	'DebuggerStatement',
+	'ExperimentalRestProperty',
+	'ExperimentalSpreadProperty',
+	'FunctionExpression',
+	'LabeledStatement',
+	'RestElement',
+	'SpreadElement',
+	'TaggedTemplateExpression',
+	'TemplateElement',
+	'TemplateLiteral',
+	'WithStatement',
+	'YieldExpression',
+	'JSXIdentifier',
+	'JSXNamespacedName',
+	'JSXMemberExpression',
+	'JSXEmptyExpression',
+	'JSXExpressionContainer',
+	'JSXElement',
+	'JSXClosingElement',
+	'JSXOpeningElement',
+	'JSXAttribute',
+	'JSXSpreadAttribute',
+	'JSXText',
+	'ExportDefaultDeclaration',
+	'ExportNamedDeclaration',
+	'ExportAllDeclaration',
+	'ExportSpecifier',
+	'ImportDeclaration',
+	'ImportSpecifier',
+	'ImportDefaultSpecifier',
+	'ImportNamespaceSpecifier'
+];
+
+/**
+* Allow tabs.
+*
+* @name no-tabs
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [no-tabs]{@link http://eslint.org/docs/rules/no-tabs}
+*/
+rules[ 'no-tabs' ] = 'off';
+
+/**
+* Allow ternary operators.
 *
 * @name no-ternary
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [no-ternary]{@link http://eslint.org/docs/rules/no-ternary}
 */
-rules[ 'no-ternary' ] = 0;
+rules[ 'no-ternary' ] = 'off';
 
 /**
 * Never allow trailing spaces.
 *
 * @name no-trailing-spaces
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default [ 'error', {'skipBlankLines': false} ]
 * @see [no-trailing-spaces]{@link http://eslint.org/docs/rules/no-trailing-spaces}
 */
-rules[ 'no-trailing-spaces' ] = 2;
+rules[ 'no-trailing-spaces' ] = [ 'error', {
+	'skipBlankLines': false
+}];
 
 /**
-* Allow dangling underscores to indicate private members.
+* Allow dangling underscores to indicate private members, but not for regular variables.
 *
 * @name no-underscore-dangle
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {Array}
 * @see [no-underscore-dangle]{@link http://eslint.org/docs/rules/no-underscore-dangle}
 */
-rules[ 'no-underscore-dangle' ] = 0;
+rules[ 'no-underscore-dangle' ] = [ 'error', {
+	'allowAfterThis': true,
+	'allowAfterSuper': true
+}];
 
 /**
 * Never allow unneeded ternary condition expressions.
 *
 * @name no-unneeded-ternary
 * @memberof rules
-* @type {number}
-* @default 2
+* @type {Array}
+* @default [ 'error', {'defaultAssignment': false} ]
 * @see [no-unneeded-ternary]{@link http://eslint.org/docs/rules/no-unneeded-ternary}
+*
+* @example
+* // Bad...
+* var bool = ( x === y ) ? true : false;
+*
+* @example
+* // Good...
+* var bool = ( x === y );
 */
-rules[ 'no-unneeded-ternary' ] = 2;
+rules[ 'no-unneeded-ternary' ] = [ 'error', {
+	'defaultAssignment': false
+}];
+
+/**
+* Never allow whitespace before a property.
+*
+* @name no-whitespace-before-property
+* @member rules
+* @type {string}
+* @default 'error'
+* @see [no-whitespace-before-property]{@link http://eslint.org/docs/rules/no-whitespace-before-property}
+*
+* @example
+* // Bad...
+* var x = obj. x;
+*
+* @example
+* // Good...
+* var x = obj.x;
+*/
+rules[ 'no-whitespace-before-property' ] = 'error';
 
 /**
 * Specify the use of whitespace in objects.
