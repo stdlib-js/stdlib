@@ -23,7 +23,7 @@ MKDIR_RECURSIVE ?= mkdir -p
 JSDOC ?= $(BIN_DIR)/jsdoc
 
 # Define the path to the JSDoc configuration file:
-JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc.conf.json
+JSDOC_CONF ?= $(CONFIG_DIR)/jsdoc/.jsdoc.json
 
 # Define the path to JSDoc type definitions:
 JSDOC_TYPEDEF ?= $(TOOLS_DIR)/docs/jsdoc/typedefs/*.js

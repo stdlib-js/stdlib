@@ -20,6 +20,7 @@ find_print_examples_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_EXAMPLES_FLAGS ?= \
+	-type f \
 	-name "$(EXAMPLES_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/**" \
 	-regex "$(EXAMPLES_FILTER)" \
@@ -35,8 +36,11 @@ ifneq ($(KERNEL), Darwin)
 	FIND_EXAMPLES_FLAGS := -regextype posix-extended $(FIND_EXAMPLES_FLAGS)
 endif
 
+# Define a command to list example files:
+FIND_EXAMPLES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS)
+
 # Define the list of example files:
-EXAMPLES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAGS))
+EXAMPLES ?= $(shell $(FIND_EXAMPLES_CMD))
 
 # TODO: does not include top-level examples?
 

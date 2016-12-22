@@ -17,6 +17,7 @@ PACKAGES_FILE ?= package.json
 
 # Define the command flags:
 FIND_PACKAGES_FLAGS ?= \
+	-type f \
 	-name "$(PACKAGES_FILE)" \
 	-regex "$(PACKAGES_FILTER)" \
 	-not -path "$(NODE_MODULES)/*" \
@@ -28,8 +29,11 @@ ifneq ($(KERNEL), Darwin)
 	FIND_PACKAGES_FLAGS := -regextype posix-extended $(FIND_PACKAGES_FLAGS)
 endif
 
+# Define a command for listing packages:
+FIND_PACKAGES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PACKAGES_FLAGS)
+
 # Define the list of packages:
-PACKAGES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PACKAGES_FLAGS))
+PACKAGES ?= $(shell $(FIND_PACKAGES_CMD))
 
 
 # TARGETS #

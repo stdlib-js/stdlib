@@ -56,8 +56,8 @@ run_lint() {
 	local changed_files
 	local files
 
-	# Get the set of changed files:
-	changed_files=$(git diff --name-only --cached)
+	# Get the set of changed files (added and modified):
+	changed_files=$(git diff --name-only --cached --diff-filter AM)
 
 	# Lint filenames:
 	echo "${changed_files}" | "${lint_filenames}"
@@ -89,7 +89,16 @@ run_lint() {
 		fi
 	fi
 
-	# TODO: if JavaScript files, lint those particular files
+	# Lint JavaScript files...
+	files=$(echo "${changed_files}" | grep '\.js$')
+	if [[ -n "${files}" ]]; then
+		make FILES="${files}" lint-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'JavaScript lint errors.' >&2
+			return 1
+		fi
+	fi
 
 	# TODO: if datapackage.json, validate via schema
 

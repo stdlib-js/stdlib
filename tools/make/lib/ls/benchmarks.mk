@@ -20,6 +20,7 @@ find_print_benchmarks_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_BENCHMARKS_FLAGS ?= \
+	-type f \
 	-name "$(BENCHMARKS_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/**" \
 	-regex "$(BENCHMARKS_FILTER)" \
@@ -34,8 +35,11 @@ ifneq ($(KERNEL), Darwin)
 	FIND_BENCHMARKS_FLAGS := -regextype posix-extended $(FIND_BENCHMARKS_FLAGS)
 endif
 
+# Define a command to list benchmark files:
+FIND_BENCHMARKS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS)
+
 # Define the list of benchmark files:
-BENCHMARKS ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS))
+BENCHMARKS ?= $(shell $(FIND_BENCHMARKS_CMD))
 
 
 # TARGETS #

@@ -42,6 +42,15 @@ complexity-examples: complexity-javascript-examples
 .PHONY: complexity-examples
 
 
+# Analyze benchmark code complexity.
+#
+# This target analyzes only benchmark files.
+
+complexity-benchmarks: complexity-javascript-benchmarks
+
+.PHONY: complexity-benchmarks
+
+
 # View a complexity report.
 #
 # This target opens an HTML complexity report in a local web browser.

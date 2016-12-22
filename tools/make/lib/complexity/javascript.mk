@@ -22,7 +22,7 @@ endif
 # This target analyzes all JavaScript source code.
 
 complexity-javascript: $(NODE_MODULES)
-	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES) $(BENCHMARKS)
 
 .PHONY: complexity-javascript
 
@@ -55,6 +55,16 @@ complexity-javascript-examples: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(EXAMPLES)
 
 .PHONY: complexity-javascript-examples
+
+
+# Analyze benchmark code complexity.
+#
+# This target analyzes only JavaScript benchmark files.
+
+complexity-javascript-benchmarks: $(NODE_MODULES)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(BENCHMARKS)
+
+.PHONY: complexity-javascript-benchmarks
 
 
 # View a complexity report.

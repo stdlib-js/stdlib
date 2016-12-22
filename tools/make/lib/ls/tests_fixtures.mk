@@ -17,6 +17,7 @@ find_print_tests_fixtures_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_TESTS_FIXTURES_FLAGS ?= \
+	-type f \
 	-name "$(TESTS_FIXTURES_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/**" \
 	-regex "$(TESTS_FIXTURES_FILTER)" \
@@ -31,8 +32,11 @@ ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_FIXTURES_FLAGS := -regextype posix-extended $(FIND_TESTS_FIXTURES_FLAGS)
 endif
 
+# Define a command to list files:
+FIND_TESTS_FIXTURES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS)
+
 # Define the list of files:
-TESTS_FIXTURES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS))
+TESTS_FIXTURES ?= $(shell $(FIND_TESTS_FIXTURES_CMD))
 
 
 # TARGETS #

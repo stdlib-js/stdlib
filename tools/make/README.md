@@ -99,7 +99,7 @@ The `Makefile` includes the following common recipes for listing different file 
 
 ##### Sources
 
-To list all source files, excluding examples and tests,
+To list all source files, excluding examples, benchmarks, and tests,
 
 ``` bash
 $ make list-sources
@@ -400,7 +400,7 @@ $ make view-src-docs
 To lint files, including tests, examples, filenames, `package.json`, and Markdown,
 
 ``` bash
-$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... MARKDOWN_FILTER=... lint
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... BENCHMARKS_FILTER=... MARKDOWN_FILTER=... lint
 ```
 
 To lint only source files,
@@ -421,6 +421,12 @@ To lint only example files,
 $ make EXAMPLES_FILTER=... lint-examples
 ```
 
+To lint only benchmark files,
+
+``` bash
+$ make BENCHMARKS_FILTER=... lint-benchmarks
+```
+
 To lint only Markdown files,
 
 ``` bash
@@ -430,7 +436,19 @@ $ make MARKDOWN_FILTER=... lint-markdown
 To lint only JavaScript files,
 
 ``` bash
-$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... lint-javascript
+$ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... BENCHMARKS_FILTER=... lint-javascript
+```
+
+To lint filenames,
+
+``` bash
+$ make lint-filenames
+```
+
+To lint `package.json` files,
+
+``` bash
+$ make lint-pkg-json
 ```
 
 ---
@@ -459,6 +477,12 @@ To analyze only example files,
 
 ``` bash
 $ make EXAMPLES_FILTER=... complexity-examples
+``` 
+
+To analyze only benchmark files,
+
+``` bash
+$ make BENCHMARKS_FILTER=... complexity-benchmarks
 ```
 
 To analyze only JavaScript files,

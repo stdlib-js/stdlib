@@ -17,6 +17,7 @@ find_print_markdown_list := -exec printf '%s\n' {} \;
 
 # Define the command flags:
 FIND_MARKDOWN_FLAGS ?= \
+	-type f \
 	-name "$(MARKDOWN_PATTERN)" \
 	-regex "$(MARKDOWN_FILTER)" \
 	-not -path "$(NODE_MODULES)/*" \
@@ -28,8 +29,11 @@ ifneq ($(KERNEL), Darwin)
 	FIND_MARKDOWN_FLAGS := -regextype posix-extended $(FIND_MARKDOWN_FLAGS)
 endif
 
+# Define a command for listing Markdown files:
+FIND_MARKDOWN_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS)
+
 # Define the list of files:
-MARKDOWN_FILES ?= $(shell find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS))
+MARKDOWN_FILES ?= $(shell $(FIND_MARKDOWN_CMD))
 
 
 # TARGETS #
