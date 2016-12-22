@@ -25,6 +25,10 @@ indent_style = tab
 [*.awk]
 indent_style = tab
 
+[*.html]
+indent_style = tab
+tab_width = 2
+
 [*.css]
 indent_style = tab
 
