@@ -88,6 +88,8 @@
 
    * [`catharsis`](https://github.com/hegemonic/catharsis)
 
+   * [`doctor`](https://github.com/jdeal/doctor)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -1403,6 +1405,10 @@
 
 317. Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
 
+318. regular expression [generation](https://github.com/devongovett/regexgen)
+
+319. ability to search for issues from [CLI](https://github.com/seanzarrin/npm-issues) for deps/pkgs
+
 
 ---
 
@@ -1728,7 +1734,7 @@
 
 64. [is-callable](https://github.com/ljharb/is-callable/blob/master/index.js)
 
-65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js)
+65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js) and [awesome](https://github.com/keonkim/awesome-bits)
 
 66. [foreach](https://github.com/manuelstofer/foreach/blob/master/index.js), [foreach](https://github.com/sindresorhus/each-async/blob/master/index.js), [foreach](https://github.com/Raynos/for-each)
 
