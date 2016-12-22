@@ -1,14 +1,9 @@
 # TODO
 
-1. once `stdlib` is live (merged to `master` and published), make the default branch be `develop`
-
-   * all PRs, etc, should be made against `develop`
-
 1. replace `jshint` with `eslint`
 
    * add to test command
-   * support reformatting ala `go fmt`
-   * move `eslint` config files/modules to this repo (will need to do audit to ensure up-to-date)
+   * support reformatting ala `go fmt` => `--fix`
 
 2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) with [versioning info](https://github.com/compute-io/contributing#versioning)
 
