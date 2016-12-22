@@ -22,6 +22,9 @@ indent_style = tab
 [*.sh]
 indent_style = tab
 
+[*.awk]
+indent_style = tab
+
 [*.md]
 indent_style = space
 indent_size = 4
