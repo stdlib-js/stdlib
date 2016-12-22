@@ -28,6 +28,12 @@ indent_style = tab
 [*.css]
 indent_style = tab
 
+[Makefile]
+indent_style = tab
+
+[*.mk]
+indent_style = tab
+
 [*.md]
 indent_style = space
 indent_size = 4
@@ -47,9 +53,3 @@ indent_style = tab
 [*.yml]
 indent_style = space
 indent_size = 2
-
-[Makefile]
-indent_style = tab
-
-[*.mk]
-indent_style = tab
