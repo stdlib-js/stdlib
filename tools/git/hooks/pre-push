@@ -56,7 +56,7 @@ has_commits() {
 	fi
 	if [[ -z "${commits}" ]]; then
 		echo 'No commits to push.'
-	    return 1
+		return 1
 	fi
 	echo 'Found commits to push.'
 	return 0
@@ -80,10 +80,10 @@ run_tests() {
 	make test > /dev/null 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed. Run `make test` to see the failing tests.' >&2
-        return 1
-    fi
-    echo 'Tests passed.' >&2
-    return 0
+		return 1
+	fi
+	echo 'Tests passed.' >&2
+	return 0
 }
 
 # Main execution sequence.
