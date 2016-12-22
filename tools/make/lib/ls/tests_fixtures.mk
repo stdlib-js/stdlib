@@ -26,7 +26,7 @@ FIND_TESTS_FIXTURES_FLAGS ?= \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "**/$(BUILD_FOLDER)/*"
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
 
 ifneq ($(KERNEL), Darwin)
 	FIND_TESTS_FIXTURES_FLAGS := -regextype posix-extended $(FIND_TESTS_FIXTURES_FLAGS)
