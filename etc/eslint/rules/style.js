@@ -146,7 +146,7 @@ rules[ 'camelcase' ] = [ 'error', {
 * @example
 * // bad...
 */
-rules[ 'capitalized-comments' ] = [ 'error', 'always', {
+rules[ 'capitalized-comments' ] = [ 'warn', 'always', {
 	'ignoreInlineComments': true
 }];
 
