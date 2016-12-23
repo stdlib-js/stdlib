@@ -1,5 +1,12 @@
 'use strict';
 
+// MODULES //
+
+var merge = require( '@stdlib/utils/merge' );
+
+
+// MAIN //
+
 /**
 * ESLint configuration.
 *
@@ -24,6 +31,16 @@ eslint.env = require( './env' );
 * @type {Object}
 */
 eslint.rules = require( './rules' );
+
+/**
+* Plugins.
+*
+* @name plugins
+* @memberof eslint
+* @type {Array}
+*/
+eslint.plugins = require( './plugins' );
+merge( eslint.rules, eslint.plugins.rules );
 
 /**
 * Parser options.
