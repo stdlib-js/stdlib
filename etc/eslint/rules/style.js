@@ -224,7 +224,7 @@ rules[ 'comma-spacing' ] = [ 'error', {
 rules[ 'comma-style' ] = [ 'error', 'last' ];
 
 /**
-* Always use whitespace within computed properties.
+* Prefer using whitespace within computed properties.
 *
 * @name computed-property-spacing
 * @memberof rules
@@ -237,10 +237,15 @@ rules[ 'comma-style' ] = [ 'error', 'last' ];
 * var x = obj[prop];
 *
 * @example
+* // Okay...
+* var i = 1;
+* var x = (1+y[i]) * 10;
+*
+* @example
 * // Good...
 * var x = obj[ prop ];
 */
-rules[ 'computed-property-spacing' ] = [ 'error', 'always' ];
+rules[ 'computed-property-spacing' ] = [ 'warn', 'always' ];
 
 /**
 * Require a `this` variable to only be aliased as `self`.
