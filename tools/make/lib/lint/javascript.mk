@@ -9,6 +9,8 @@ JAVASCRIPT_LINTER ?= jshint
 
 ifeq ($(JAVASCRIPT_LINTER), jshint)
 	include $(TOOLS_MAKE_LIB_DIR)/lint/jshint.mk
+else ifeq ($(JAVASCRIPT_LINTER), eslint)
+	include $(TOOLS_MAKE_LIB_DIR)/lint/eslint.mk
 endif
 
 
