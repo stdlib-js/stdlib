@@ -186,7 +186,7 @@ rules[ 'no-restricted-modules' ] = [ 'error', {
 	],
 	'patterns': [
 		'lodash*',
-		'async*'
+		'async/*'
 	]
 }];
 
