@@ -763,14 +763,14 @@ rules[ 'no-lone-blocks' ] = 'error';
 rules[ 'no-loop-func' ] = 'error';
 
 /**
-* Warn when magic numbers are used.
+* Warn when magic numbers are used. NOTE: turned off due to overly aggressive consideration of "magic" numbers.
 *
 * @name no-magic-numbers
 * @memberof rules
 * @type {Array}
 * @see [no-magic-numbers]{@link http://eslint.org/docs/rules/no-magic-numbers}
 */
-rules[ 'no-magic-numbers' ] = [ 'warn', {
+rules[ 'no-magic-numbers' ] = [ 'off', {
 	'ignoreArrayIndexes': true,
 	'enforceConst': false,
 	'detectObjects': false
