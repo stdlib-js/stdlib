@@ -2,7 +2,7 @@
 # VARIABLES #
 
 # Define the linter to use when linting JavaScript source files:
-JAVASCRIPT_LINTER ?= jshint
+JAVASCRIPT_LINTER ?= eslint
 
 
 # DEPENDENCIES #
