@@ -14,7 +14,7 @@ var eslint = {};
 * @memberof eslint
 * @type {Object}
 */
-eslint.env = require( './env.js' );
+eslint.env = require( './env' );
 
 /**
 * Lint rules.
