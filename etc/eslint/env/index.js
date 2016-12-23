@@ -52,15 +52,15 @@ env[ 'commonjs' ] = true;
 env[ 'shared-node-browser' ] = true;
 
 /**
-* Disable ES6 features.
+* Enable ES6 features.
 *
 * @name es6
 * @memberof env
 * @type {boolean}
-* @default false
+* @default true
 * @see [es6]{@link http://eslint.org/docs/user-guide/configuring#specifying-environments}
 */
-env[ 'es6' ] = false;
+env[ 'es6' ] = true;
 
 /**
 * Enable web worker global variables.
