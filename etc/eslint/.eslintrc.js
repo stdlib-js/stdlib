@@ -15,6 +15,16 @@ var merge = require( '@stdlib/utils/merge' );
 var eslint = {};
 
 /**
+* Root configuration.
+*
+* @name root
+* @memberof eslint
+* @type {boolean}
+* @default true
+*/
+eslint.root = true;
+
+/**
 * Default environments.
 *
 * @name env
