@@ -770,7 +770,7 @@ rules[ 'no-loop-func' ] = 'error';
 * @type {Array}
 * @see [no-magic-numbers]{@link http://eslint.org/docs/rules/no-magic-numbers}
 */
-rules[ 'no-magic-numbers' ] = [ 'error', {
+rules[ 'no-magic-numbers' ] = [ 'warn', {
 	'ignoreArrayIndexes': true,
 	'enforceConst': false,
 	'detectObjects': false
