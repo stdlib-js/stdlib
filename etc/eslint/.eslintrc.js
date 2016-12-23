@@ -26,13 +26,13 @@ eslint.env = require( './env.js' );
 eslint.rules = require( './rules' );
 
 /**
-* Rules for enabling/disabling language features.
+* Parser options.
 *
-* @name ecmaFeatures
-* @memberof eslint
+* @name ParserOptions
+* @memberof rules
 * @type {Object}
 */
-eslint.ecmaFeatures = require( './features' );
+eslint.parserOptions = require( './parser-options' );
 
 
 // EXPORTS //
