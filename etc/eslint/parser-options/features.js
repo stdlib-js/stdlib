@@ -19,15 +19,15 @@ var features = {};
 features.globalReturn = false;
 
 /**
-* Enable global strict mode.
+* Disable implied global strict mode.
 *
 * @name impliedStrict
 * @memberof features
 * @type {boolean}
-* @default true
+* @default false
 * @see [impliedStrict]{@link http://eslint.org/docs/user-guide/configuring#specifying-parser-options}
 */
-features.impliedStrict = true;
+features.impliedStrict = false;
 
 /**
 * Do not enable JSX.

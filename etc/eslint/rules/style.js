@@ -395,18 +395,13 @@ rules[ 'indent' ] = [ 'error', 'tab', {
 	'outerIIFEBody': 1,
 	'MemberExpression': 1,
 	'FunctionDeclaration': {
-		'parameters': 'off',
 		'body': 1
 	},
 	'FunctionExpression': {
-		'parameters': 'off',
 		'body': 1
 	},
-	'CallExpression': {
-		'arguments': 'off'
-	},
 	'ArrayExpression': 1,
-	'ObjectExpresion': 1
+	'ObjectExpression': 1
 }];
 
 /**
@@ -577,7 +572,7 @@ rules[ 'max-depth' ] = [ 'error', {
 */
 rules[ 'max-len' ] = [ 'error', {
 	'code': 80,
-	'tab': 4,
+	'tabWidth': 4,
 	'ignoreComments': true,
 	'ignoreUrls': true,
 	'ignoreStrings': true,
@@ -1373,7 +1368,7 @@ rules[ 'quote-props' ] = [ 'error', 'always' ];
 * @name quotes
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'single' { 'avoid-escape': true }]
+* @default [ 'error', 'single' { 'avoidEscape': true }]
 * @see [quotes]{@link http://eslint.org/docs/rules/quotes}
 *
 * @example
@@ -1389,7 +1384,7 @@ rules[ 'quote-props' ] = [ 'error', 'always' ];
 * };
 */
 rules[ 'quotes' ] = [ 'error', 'single', {
-	'avoid-escape': true
+	'avoidEscape': true
 }];
 
 /**
@@ -1401,10 +1396,12 @@ rules[ 'quotes' ] = [ 'error', 'single', {
 * @see [require-jsdoc]{@link http://eslint.org/docs/rules/require-jsdoc}
 */
 rules[ 'require-jsdoc' ] = [ 'error', {
-	'FunctionDeclaration': true,
-	'ClassDeclaration': true,
-	'MethodDefinition': true,
-	'ArrowFunctionExpression': true
+	'require': {
+		'FunctionDeclaration': true,
+		'ClassDeclaration': true,
+		'MethodDefinition': true,
+		'ArrowFunctionExpression': true
+	}
 }];
 
 /**

@@ -64,7 +64,7 @@ rules[ 'array-callback-return' ] = 'error';
 /**
 * Never allow variables to be used outside of the block in which they were defined.
 *
-* @name block-scope-var
+* @name block-scoped-var
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -89,7 +89,7 @@ rules[ 'array-callback-return' ] = 'error';
 *     // Do something...
 * }
 */
-rules[ 'block-scope-var' ] = 'error';
+rules[ 'block-scoped-var' ] = 'error';
 
 /**
 * Require class methods to use `this`, as any method which does not use `this` can be a `static` method.
@@ -615,19 +615,19 @@ rules[ 'no-global-assign' ] = 'error';
 rules[ 'no-implicit-coercion' ] = 'off';
 
 /**
-* Do not allow implicit globals in browser scripts.
+* Turn off checking for implicit globals in browser scripts, as code is primarily comprised of modules which have their own scope
 *
 * @name no-implicit-globals
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [no-implicit-globals]{@link http://eslint.org/docs/rules/no-implicit-globals}
 *
 * @example
 * // Okay...
 * window.foo = 'bar';
 */
-rules[ 'no-implicit-globals' ] = '';
+rules[ 'no-implicit-globals' ] = 'off';
 
 /**
 * Never allow implied use of `eval` with `setTimeout`, `setInterval`, and `execScript`.

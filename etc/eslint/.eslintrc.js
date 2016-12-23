@@ -49,8 +49,8 @@ eslint.rules = require( './rules' );
 * @memberof eslint
 * @type {Array}
 */
-eslint.plugins = require( './plugins' );
-merge( eslint.rules, eslint.plugins.rules );
+// eslint.plugins = require( './plugins' );
+// merge( eslint.rules, eslint.plugins.rules );
 
 /**
 * Parser options.
