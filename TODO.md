@@ -1422,6 +1422,8 @@
      - see dillinger (joe mccann)
      - markdown to JSDoc comment (e.g., for writing up math implementation details in source code)
 
+321. Similar [concept](https://github.com/rougier/from-python-to-numpy) once ndarrays?
+
 
 ---
 

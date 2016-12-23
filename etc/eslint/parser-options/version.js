@@ -2,4 +2,4 @@
 
 // EXPORTS //
 
-module.exports = 5;
+module.exports = 6;
