@@ -512,7 +512,7 @@ rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 * // Line comment:
 * var y = 10;
 */
-rules[ 'lines-around-comment' ] = [ 'error', {
+rules[ 'lines-around-comment' ] = [ 'warn', {
 	'beforeBlockComment': true,
 	'afterBlockComment': false,
 	'beforeLineComment': true,
