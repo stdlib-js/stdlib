@@ -224,12 +224,12 @@ rules[ 'comma-spacing' ] = [ 'error', {
 rules[ 'comma-style' ] = [ 'error', 'last' ];
 
 /**
-* Prefer using whitespace within computed properties.
+* Prefer using whitespace within computed properties. NOTE: disabled, as hard to enforce a general rule. While whitespace is preferred, readability and clarity is preferred to a greater extent.
 *
 * @name computed-property-spacing
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'always' ]
+* @default [ 'off', 'always' ]
 * @see [computed-property-spacing]{@link http://eslint.org/docs/rules/computed-property-spacing}
 *
 * @example
@@ -245,7 +245,7 @@ rules[ 'comma-style' ] = [ 'error', 'last' ];
 * // Good...
 * var x = obj[ prop ];
 */
-rules[ 'computed-property-spacing' ] = [ 'warn', 'always' ];
+rules[ 'computed-property-spacing' ] = [ 'off', 'always' ];
 
 /**
 * Require a `this` variable to only be aliased as `self`.
