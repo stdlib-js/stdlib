@@ -4,7 +4,7 @@
 # Define the path to the [JSHint][1] executable.
 #
 # To install JSHint:
-#     $ npm install jshint jshint-stylish
+#     $ npm install jshint
 #
 # [1]: http://jshint.com/
 
