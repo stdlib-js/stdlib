@@ -18,7 +18,6 @@ var opts = {
 * Transforms an array of raw `doclet` objects and writes to `stdout`.
 *
 * @param {TAFFY} data - TAFFY database
-* @returns {Void}
 */
 function publish( data ) {
 	var root;

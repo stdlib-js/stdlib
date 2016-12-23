@@ -32,11 +32,10 @@ var recurse = {
 * Recursively transforms doclet nodes.
 *
 * @param {Object} parentNode - parent doclet node
-* @param {Object[]} childNodes - array of child nodes
-* @param {String} parentLongName - long form of a parent name
-* @returns {Void}
+* @param {ObjectArray} childNodes - array of child nodes
+* @param {string} parentLongName - long form of a parent name
 */
-function transform( parentNode, childNodes, parentLongname ) {
+function transform( parentNode, childNodes, parentLongName ) {
 	var node;
 	var tmp;
 	var key;
@@ -47,7 +46,7 @@ function transform( parentNode, childNodes, parentLongname ) {
 	// Filter for child nodes...
 	tmp = [];
 	for ( i = 0; i < childNodes.length; i++ ) {
-		if ( childNodes[ i ].memberof === parentLongname ) {
+		if ( childNodes[ i ].memberof === parentLongName ) {
 			tmp.push( childNodes[ i ] );
 		}
 	}
