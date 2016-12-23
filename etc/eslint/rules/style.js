@@ -497,7 +497,7 @@ rules[ 'line-comment-position' ] = 'off';
 rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 
 /**
-* Specify empty lines around comments.
+* Prefer empty lines before comments. NOTE: disable to allow some discretion in terms of readability, clarity, and terseness.
 *
 * @name lines-around-comment
 * @memberof rules
@@ -517,7 +517,7 @@ rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 * // Line comment:
 * var y = 10;
 */
-rules[ 'lines-around-comment' ] = [ 'warn', {
+rules[ 'lines-around-comment' ] = [ 'off', {
 	'beforeBlockComment': true,
 	'afterBlockComment': false,
 	'beforeLineComment': true,
