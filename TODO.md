@@ -1409,6 +1409,19 @@
 
 319. ability to search for issues from [CLI](https://github.com/seanzarrin/npm-issues) for deps/pkgs
 
+320. WYSIWYG Markdown editor for internal rendered Markdown files
+
+     - different rendering modes (GitHub, www, etc)
+     - save to disk
+     - load from pkg dir
+     - communicate over socket (some tasks may be capable of being done entirely client side)
+     - live linting (md, code blocks)
+     - eqn rendering
+     - fig gen
+     - live code blocks
+     - see dillinger (joe mccann)
+     - markdown to JSDoc comment (e.g., for writing up math implementation details in source code)
+
 
 ---
 
