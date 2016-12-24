@@ -68,7 +68,7 @@ run_lint() {
 	fi
 
 	# Lint Markdown files...
-	files=$(echo "${changed_files}" | grep '\.md$')
+	files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make MARKDOWN_FILES="${files}" lint-markdown > /dev/null
 		if [[ "$?" -ne 0 ]]; then

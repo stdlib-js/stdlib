@@ -29,7 +29,7 @@ FIND_EXAMPLES_FLAGS ?= \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "**/$(EXAMPLES_FOLDER)/fixtures/*"
+	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/fixtures/*"
 
 
 ifneq ($(KERNEL), Darwin)

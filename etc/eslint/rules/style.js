@@ -146,7 +146,7 @@ rules[ 'camelcase' ] = [ 'error', {
 * @example
 * // bad...
 */
-rules[ 'capitalized-comments' ] = [ 'error', 'always', {
+rules[ 'capitalized-comments' ] = [ 'warn', 'always', {
 	'ignoreInlineComments': true
 }];
 
@@ -224,12 +224,12 @@ rules[ 'comma-spacing' ] = [ 'error', {
 rules[ 'comma-style' ] = [ 'error', 'last' ];
 
 /**
-* Always use whitespace within computed properties.
+* Prefer using whitespace within computed properties. NOTE: disabled, as hard to enforce a general rule. While whitespace is preferred, readability and clarity is preferred to a greater extent.
 *
 * @name computed-property-spacing
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'always' ]
+* @default [ 'off', 'always' ]
 * @see [computed-property-spacing]{@link http://eslint.org/docs/rules/computed-property-spacing}
 *
 * @example
@@ -237,10 +237,15 @@ rules[ 'comma-style' ] = [ 'error', 'last' ];
 * var x = obj[prop];
 *
 * @example
+* // Okay...
+* var i = 1;
+* var x = (1+y[i]) * 10;
+*
+* @example
 * // Good...
 * var x = obj[ prop ];
 */
-rules[ 'computed-property-spacing' ] = [ 'error', 'always' ];
+rules[ 'computed-property-spacing' ] = [ 'off', 'always' ];
 
 /**
 * Require a `this` variable to only be aliased as `self`.
@@ -395,18 +400,13 @@ rules[ 'indent' ] = [ 'error', 'tab', {
 	'outerIIFEBody': 1,
 	'MemberExpression': 1,
 	'FunctionDeclaration': {
-		'parameters': 'off',
 		'body': 1
 	},
 	'FunctionExpression': {
-		'parameters': 'off',
 		'body': 1
 	},
-	'CallExpression': {
-		'arguments': 'off'
-	},
 	'ArrayExpression': 1,
-	'ObjectExpresion': 1
+	'ObjectExpression': 1
 }];
 
 /**
@@ -497,7 +497,7 @@ rules[ 'line-comment-position' ] = 'off';
 rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 
 /**
-* Specify empty lines around comments.
+* Prefer empty lines before comments. NOTE: disable to allow some discretion in terms of readability, clarity, and terseness.
 *
 * @name lines-around-comment
 * @memberof rules
@@ -517,7 +517,7 @@ rules[ 'linebreak-style' ] = [ 'error', 'unix' ];
 * // Line comment:
 * var y = 10;
 */
-rules[ 'lines-around-comment' ] = [ 'error', {
+rules[ 'lines-around-comment' ] = [ 'off', {
 	'beforeBlockComment': true,
 	'afterBlockComment': false,
 	'beforeLineComment': true,
@@ -577,7 +577,7 @@ rules[ 'max-depth' ] = [ 'error', {
 */
 rules[ 'max-len' ] = [ 'error', {
 	'code': 80,
-	'tab': 4,
+	'tabWidth': 4,
 	'ignoreComments': true,
 	'ignoreUrls': true,
 	'ignoreStrings': true,
@@ -1138,29 +1138,134 @@ rules[ 'no-unneeded-ternary' ] = [ 'error', {
 rules[ 'no-whitespace-before-property' ] = 'error';
 
 /**
-* Specify the use of whitespace in objects.
+* Require consistent line breaks inside braces.
+*
+* @name object-curly-newline
+* @memberof rules
+* @type {Array}
+* @see [object-curly-newline]{@link http://eslint.org/docs/rules/object-curly-newline}
+*
+* @example
+* // Bad...
+* var obj = {
+* };
+*
+* @example
+* // Bad...
+* var obj = { 'foo': 'bar' };
+*
+* @example
+* // Okay...
+* var obj = {
+*     'foo': 'bar'
+* };
+*/
+rules[ 'object-curly-newline' ] = [ 'error', {
+	'ObjectExpression': {
+		'minProperties': 1
+	},
+	'ObjectPattern': 'never'
+}];
+
+/**
+* Warn when not including spaces between curly braces.
 *
 * @name object-curly-spacing
 * @memberof rules
 * @type {Array}
 * @see [object-curly-spacing]{@link http://eslint.org/docs/rules/object-curly-spacing}
+*
+* @example
+* // Bad...
+* var obj = {'foo': 'bar'};
+*
+* @example
+* // Okay...
+* var obj = { 'foo': 'bar' };
+*
+* @example
+* // Okay...
+* var arr = [{ 'foo': 'bar' }];
+*
+* @example
+* // Okay...
+* var obj = { 'foo': [ 1, 2 ]};
 */
-rules[ 'object-curly-spacing' ] = [ 2, 'always', {
+rules[ 'object-curly-spacing' ] = [ 'warn', 'always', {
 	'objectsInObjects': false,
 	'arraysInObjects': false
 }];
 
 /**
-* Prefer one variable declaration per function.
+* Require newlines between each object property.
+*
+* @name object-property-newline
+* memberof rules
+* @type {Array}
+* @see [object-property-newline]{@link http://eslint.org/docs/rules/object-property-newline}
+*
+* @example
+* // Bad...
+* var obj = {
+*     'foo': 'bar', 'beep': 'boop'
+* };
+*
+* @example
+* // Bad...
+* var obj = {
+*     'foo': 'bar',
+*     'beep': 'boop'
+* };
+*/
+rules[ 'object-property-newline' ] = [ 'error', {
+	'allowMultiplePropertiesPerLine': false
+}];
+
+/**
+* Do not require newlines around variable declarations.
+*
+* @name one-var-declaration-per-line
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [one-var-declaration-per-line]{@link http://eslint.org/docs/rules/one-var-declaration-per-line}
+*
+* @example
+* // Bad...
+* var x,
+*     y;
+*
+* @example
+* // Okay...
+* var x, y;
+*
+* @example
+* // Good...
+* var x;
+* var y;
+*/
+rules[ 'one-var-declaration-per-line' ] = 'off';
+
+/**
+* Require multiple variable declarations per function or block.
 *
 * @name one-var
 * @memberof rules
 * @type {Array}
 * @see [one-var]{@link http://eslint.org/docs/rules/one-var}
+*
+* @example
+* // Bad...
+* var x, y;
+*
+* @example
+* // Good...
+* var x;
+* var y;
 */
-rules[ 'one-var' ] = [ 1, {
-	'var': 'always',
-	'let': 'always',
+rules[ 'one-var' ] = [ 'error', {
+	'var': 'never',
+	'let': 'never',
 	'const': 'never'
 }];
 
@@ -1170,10 +1275,20 @@ rules[ 'one-var' ] = [ 1, {
 * @name operator-assignment
 * @memberof rules
 * @type {Array}
-* @default [ 1, 'always' ]
+* @default [ 'warn', 'always' ]
 * @see [operator-assignment]{@link http://eslint.org/docs/rules/operator-assignment}
+*
+* @example
+* // Bad...
+* var x;
+* x = x + 1;
+*
+* @example
+* // Good...
+* var x;
+* x += 1;
 */
-rules[ 'operator-assignment' ] = [ 1, 'always' ];
+rules[ 'operator-assignment' ] = [ 'warn', 'always' ];
 
 /**
 * Require that operators be placed on the end of the line.
@@ -1181,10 +1296,28 @@ rules[ 'operator-assignment' ] = [ 1, 'always' ];
 * @name operator-linebreak
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'after' ]
-* @see [operator-linebreak]{@link http://eslint.org/docs/rules/operator-linebreak}.
+* @default [ 'error', 'after' ]
+* @see [operator-linebreak]{@link http://eslint.org/docs/rules/operator-linebreak}
+*
+* @example
+* // Bad...
+* if (
+*     x < 10
+*     || x > 20
+* ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* if (
+*     x < 10 ||
+*     x > 20
+* ) {
+*     // Do something...
+* }
 */
-rules[ 'operator-linebreak' ] = [ 2, 'after' ];
+rules[ 'operator-linebreak' ] = [ 'error', 'after' ];
 
 /**
 * Never allow padded blocks.
@@ -1192,10 +1325,24 @@ rules[ 'operator-linebreak' ] = [ 2, 'after' ];
 * @name padded-blocks
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'never' ]
+* @default [ 'error', 'never' ]
 * @see [padded-blocks]{@link http://eslint.org/docs/rules/padded-blocks}
+*
+* @example
+* // Bad...
+* if ( x < 10 ) {
+*
+*     // Do something...
+*
+* }
+*
+* @example
+* // Good...
+* if ( x < 10 ) {
+*     // Do something...
+* }
 */
-rules[ 'padded-blocks' ] = [ 2, 'never' ];
+rules[ 'padded-blocks' ] = [ 'error', 'never' ];
 
 /**
 * Always quote object literal property names.
@@ -1203,31 +1350,99 @@ rules[ 'padded-blocks' ] = [ 2, 'never' ];
 * @name quote-props
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
+* @default [ 'error', 'always' ]
 * @see [quote-props]{@link http://eslint.org/docs/rules/quote-props}
+*
+* @example
+* // Bad...
+* var obj = {
+*     foo: 'bar'
+* };
+*
+* @example
+* // Good...
+* var obj = {
+*     'foo': 'bar'
+* };
 */
-rules[ 'quote-props' ] = [ 2, 'always' ];
+rules[ 'quote-props' ] = [ 'error', 'always' ];
 
 /**
-* Always use single quotes.
+* Always use single quotes, except in the rare situation when needing to avoid escape.
 *
 * @name quotes
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'single' 'avoid-escape' ]
+* @default [ 'error', 'single' { 'avoidEscape': true }]
 * @see [quotes]{@link http://eslint.org/docs/rules/quotes}
+*
+* @example
+* // Bad...
+* var obj = {
+*     "foo": "bar"
+* };
+*
+* @example
+* // Good...
+* var obj = {
+*     'foo': 'bar'
+* };
 */
-rules[ 'quotes' ] = [ 2, 'single', 'avoid-escape' ];
+rules[ 'quotes' ] = [ 'error', 'single', {
+	'avoidEscape': true
+}];
 
 /**
-* Specify the use of whitespace around semicolons.
+* Require JSDoc comments.
+*
+* @name require-jsdoc
+* @memberof rules
+* @type {Array}
+* @see [require-jsdoc]{@link http://eslint.org/docs/rules/require-jsdoc}
+*/
+rules[ 'require-jsdoc' ] = [ 'error', {
+	'require': {
+		'FunctionDeclaration': true,
+		'ClassDeclaration': true,
+		'MethodDefinition': true,
+		'ArrowFunctionExpression': true
+	}
+}];
+
+/**
+* Require a space after, but not before, a semicolon.
 *
 * @name semi-spacing
 * @memberof rules
 * @type {Array}
-* @see [sem-spacing]{@link http://eslint.org/docs/rules/semi-spacing}
+* @see [semi-spacing]{@link http://eslint.org/docs/rules/semi-spacing}
+*
+* @example
+* // Bad...
+* var x = 5;y = 10;
+*
+* @example
+* // Okay...
+* var x = 5; y = 10;
+*
+* @example
+* // Good...
+* var x = 5;
+* var y = 10;
+*
+* @example
+* // Bad...
+* for (i = 0;i < 10;i++) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* for ( i = 0; i < 10; i++ ) {
+*     // Do something...
+* }
 */
-rules[ 'semi-spacing' ] = [ 2, {
+rules[ 'semi-spacing' ] = [ 'error', {
 	'before': false,
 	'after': true
 }];
@@ -1238,32 +1453,54 @@ rules[ 'semi-spacing' ] = [ 2, {
 * @name semi
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
+* @default [ 'error', 'always' ]
 * @see [semi]{@link http://eslint.org/docs/rules/semi}
+*
+* @example
+* // Bad...
+* var x = 5
+*
+* @example
+* // Good...
+* var x = 5;
 */
-rules[ 'semi' ] = [ 2, 'always' ];
+rules[ 'semi' ] = [ 'error', 'always' ];
 
 /**
-* Do not enforce alphabetical order when declaring variables.
+* Do not require object keys to be sorted.
+*
+* @name sort-keys
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [sort-keys]{@link http://eslint.org/docs/rules/sort-keys}
+*
+* @example
+* // Okay...
+* var obj = {
+*     'a': 1,
+*     'c': 3,
+*     'b': 2
+* };
+*/
+rules[ 'sort-keys' ] = 'off';
+
+/**
+* Do not require variables to be sorted.
 *
 * @name sort-vars
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [sort-vars]{@link http://eslint.org/docs/rules/sort-vars}
-*/
-rules[ 'sort-vars' ] = 0;
-
-/**
-* Always include a space after keywords.
 *
-* @name space-after-keywords
-* @memberof rules
-* @type {Array}
-* @default [ 2, 'always' ]
-* @see [space-after-keywords]{@link http://eslint.org/docs/rules/space-after-keywords}
+* @example
+* // Okay...
+* var x = 0;
+* var z = 2;
+* var y = 1;
 */
-rules[ 'space-after-keywords' ] = [ 2, 'always' ];
+rules[ 'sort-vars' ] = 'off';
 
 /**
 * Always include a space before blocks.
@@ -1271,71 +1508,117 @@ rules[ 'space-after-keywords' ] = [ 2, 'always' ];
 * @name space-before-blocks
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
 * @see [space-before-blocks]{@link http://eslint.org/docs/rules/space-before-blocks}
+*
+* @example
+* // Bad...
+* function noop(){
+*     // Do nothing...
+* }
+*
+* @example
+* // Good...
+* function noop() {
+*     // Do nothing...
+* }
 */
-rules[ 'space-before-blocks' ] = [ 2, 'always' ];
+rules[ 'space-before-blocks' ] = [ 'error', {
+	'functions': 'always',
+	'keywords': 'always',
+	'classes': 'always'
+}];
 
 /**
-* Never include a space before a function parenthesis.
+* Never include a space before a named function parenthesis.
 *
 * @name space-before-function-paren
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'never' ]
 * @see [space-before-function-paren]{@link http://eslint.org/docs/rules/space-before-function-paren}
+*
+* @example
+* // Bad...
+* function foo () {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* function foo() {
+*     // Do something...
+* }
 */
-rules[ 'space-before-function-paren' ] = [ 2, 'never' ];
+rules[ 'space-before-function-paren' ] = [ 'error', {
+	'anonymous': 'always',
+	'named': 'never',
+	'asyncArrow': 'always'
+}];
 
 /**
-* Require the use of whitespace within parenthesis.
+* Allow discretion when including space within parentheses.
 *
 * @name space-in-parens
 * @memberof rules
-* @type {Array}
+* @type {string}
+* @default 'off'
 * @see [space-in-parens]{@link http://eslint.org/docs/rules/space-in-parens}
+*
+* @example
+* // Good...
+* var y = foo( [ 1, 2, 3 ] );
+*
+* @example
+* // Okay...
+* var arr = new Float64Array([ 1, 2, 3 ]);
 */
-rules[ 'space-in-parens' ] = [ 2, 'always', {
-	'exceptions': [
-		'{}',
-		'[]',
-		'empty'
-	]
-}];
+rules[ 'space-in-parens' ] = 'off';
 
 /**
-* Always include a space around operators, except for `x|0`.
+* Allow discretion when inserting space around infix operators.
 *
 * @name space-infix-ops
 * @memberof rules
-* @type {Array}
-* @default [ 2, {'int32Hint':true} ]
+* @type {string}
+* @default 'off'
 * @see [space-infix-ops]{@link http://eslint.org/docs/rules/space-infix-ops}
-*/
-rules[ 'space-infix-ops' ] = [ 2, {
-	'int32Hint': true
-}];
-
-/**
-* Always require spaces following `return`, `throw`, `case`.
 *
-* @name space-return-throw-case
-* @memberof rules
-* @type {number}
-* @default 2
-* @see [space-return-throw-case]{@link http://eslint.org/docs/rules/space-return-throw-case}
+* @example
+* // Good...
+* var x = 5 + 3;
+*
+* @example
+* // Okay...
+* var x = (5+3) * (10-2);
 */
-rules[ 'space-return-throw-case' ] = 2;
+rules[ 'space-infix-ops' ] = 'off';
 
 /**
-* Always include a space after unary word operators and never include a space after unary operators.
+* Always include a space after unary word operators, and never include a space after unary operators.
 *
 * @name space-unary-ops
 * @memberof rules
 * @type {Array}
 * @see [space-unary-ops]{@link http://eslint.org/docs/rules/space-unary-ops}
+*
+* @example
+* // Bad...
+* delete(obj.a)
+*
+* @example
+* // Good...
+* delete obj.a
+*
+* @example
+* // Bad...
+* var x = '5';
+* var y = + x;
+*
+* @example
+* // Good...
+* var x = '5';
+* var y = +x;
 */
-rules[ 'space-unary-ops' ] = [ 2, {
+rules[ 'space-unary-ops' ] = [ 'error', {
 	'words': true,
 	'nonwords': false
 }];
@@ -1346,21 +1629,45 @@ rules[ 'space-unary-ops' ] = [ 2, {
 * @name spaced-comment
 * @memberof rules
 * @type {Array}
-* @default [ 2, 'always' ]
 * @see [spaced-comment]{@link http://eslint.org/docs/rules/spaced-comment}
+*
+* @example
+* //Bad...
+*
+* @example
+* // Good...
 */
-rules[ 'spaced-comment' ] = [ 2, 'always' ];
+rules[ 'spaced-comment' ] = [ 'error', 'always', {
+	'block': {
+		'balanced': true
+	}
+}];
 
 /**
-* Do not require a regex literal to be wrapped in parentheses.
+* Do not require a Unicode byte order mark (BOM), as we assume UTF-8.
+*
+* @name unicode-bom
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [unicode-bom]{@link http://eslint.org/docs/rules/unicode-bom}
+*/
+rules[ 'unicode-bom' ] = 'off';
+
+/**
+* Do not require a regular expression literal to be wrapped in parentheses.
 *
 * @name wrap-regex
 * @memberof rules
-* @type {number}
-* @default 0
+* @type {string}
+* @default 'off'
 * @see [wrap-regex]{@link http://eslint.org/docs/rules/wrap-regex}
+*
+* @example
+* // Okay...
+* var bool = /b[eo]+p/.test( 'beep' );
 */
-rules[ 'wrap-regex' ] = 0;
+rules[ 'wrap-regex' ] = 'off';
 
 
 // EXPORTS //

@@ -88,6 +88,8 @@
 
    * [`catharsis`](https://github.com/hegemonic/catharsis)
 
+   * [`doctor`](https://github.com/jdeal/doctor)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -1403,6 +1405,25 @@
 
 317. Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
 
+318. regular expression [generation](https://github.com/devongovett/regexgen)
+
+319. ability to search for issues from [CLI](https://github.com/seanzarrin/npm-issues) for deps/pkgs
+
+320. WYSIWYG Markdown editor for internal rendered Markdown files
+
+     - different rendering modes (GitHub, www, etc)
+     - save to disk
+     - load from pkg dir
+     - communicate over socket (some tasks may be capable of being done entirely client side)
+     - live linting (md, code blocks)
+     - eqn rendering
+     - fig gen
+     - live code blocks
+     - see dillinger (joe mccann)
+     - markdown to JSDoc comment (e.g., for writing up math implementation details in source code)
+
+321. Similar [concept](https://github.com/rougier/from-python-to-numpy) once ndarrays?
+
 
 ---
 
@@ -1728,7 +1749,7 @@
 
 64. [is-callable](https://github.com/ljharb/is-callable/blob/master/index.js)
 
-65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js)
+65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js) and [awesome](https://github.com/keonkim/awesome-bits)
 
 66. [foreach](https://github.com/manuelstofer/foreach/blob/master/index.js), [foreach](https://github.com/sindresorhus/each-async/blob/master/index.js), [foreach](https://github.com/Raynos/for-each)
 

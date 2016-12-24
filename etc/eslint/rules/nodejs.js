@@ -171,15 +171,24 @@ rules[ 'no-process-env' ] = 'error';
 rules[ 'no-process-exit' ] = 'warn';
 
 /**
-* Do not restrict the use of specific modules.
+* Restrict the use of specific modules.
 *
 * @name no-restricted-modules
 * @memberof rules
-* @type {string}
-* @default 'off'
+* @type {Array}
 * @see [no-restricted-modules]{@link http://eslint.org/docs/rules/no-restricted-modules}
 */
-rules[ 'no-restricted-modules' ] = 'off';
+rules[ 'no-restricted-modules' ] = [ 'error', {
+	'paths': [
+		'underscore',
+		'lodash',
+		'async'
+	],
+	'patterns': [
+		'lodash*',
+		'async/*'
+	]
+}];
 
 /**
 * Warn when using synchronous methods when an asynchronous version exists.

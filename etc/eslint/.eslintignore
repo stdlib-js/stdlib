@@ -1,4 +1,8 @@
 
+# Files #
+#########
+!.*.js
+
 # Directories #
 ###############
 build/

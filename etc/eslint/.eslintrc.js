@@ -1,5 +1,7 @@
 'use strict';
 
+// MAIN //
+
 /**
 * ESLint configuration.
 *
@@ -8,13 +10,23 @@
 var eslint = {};
 
 /**
+* Root configuration.
+*
+* @name root
+* @memberof eslint
+* @type {boolean}
+* @default true
+*/
+eslint.root = true;
+
+/**
 * Default environments.
 *
 * @name env
 * @memberof eslint
 * @type {Object}
 */
-eslint.env = require( './env.js' );
+eslint.env = require( './env' );
 
 /**
 * Lint rules.
@@ -26,13 +38,13 @@ eslint.env = require( './env.js' );
 eslint.rules = require( './rules' );
 
 /**
-* Rules for enabling/disabling ECMA features.
+* Parser options.
 *
-* @name ecmaFeatures
-* @memberof eslint
+* @name ParserOptions
+* @memberof rules
 * @type {Object}
 */
-eslint.ecmaFeatures = require( './ecma_features.js' );
+eslint.parserOptions = require( './parser-options' );
 
 
 // EXPORTS //
