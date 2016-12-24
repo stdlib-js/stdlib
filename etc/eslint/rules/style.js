@@ -61,7 +61,7 @@ rules[ 'array-bracket-spacing' ] = [ 'warn', 'always', {
 rules[ 'block-spacing' ] = [ 'error', 'always' ];
 
 /**
-* Warn when not using the "one true brace style".
+* Prefer "one true brace style", but allow consideration of readability and aesthetics.
 *
 * @name brace-style
 * @memberof rules
@@ -101,7 +101,7 @@ rules[ 'block-spacing' ] = [ 'error', 'always' ];
 *     y = beep( x );
 * }
 */
-rules[ 'brace-style' ] = [ 'warn', '1tbs', {
+rules[ 'brace-style' ] = [ 'off', '1tbs', {
 	'allowSingleLine': false
 }];
 
