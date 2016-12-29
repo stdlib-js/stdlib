@@ -1,6 +1,6 @@
 # TODO
 
-1. replace `jshint` with `eslint`
+1. switch to `eslint` as main JS linter
 
    * add to test command
    * support reformatting ala `go fmt` => `--fix`
@@ -1424,6 +1424,8 @@
 
 321. Similar [concept](https://github.com/rougier/from-python-to-numpy) once ndarrays?
 
+322. See [quantifiedcode](https://www.quantifiedcode.com/) ([software map](https://en.wikipedia.org/wiki/Software_map))
+
 
 ---
 
@@ -1762,6 +1764,10 @@
 70. date [fcns](https://github.com/date-fns/date-fns)
 
 71. [ulid](https://github.com/oklog/ulid)
+
+72. [titlecase](https://github.com/rvagg/titlecase)
+
+73. [download](https://github.com/watson/download-to-file)
 
 
 ---
