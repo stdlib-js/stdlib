@@ -37,7 +37,7 @@ rules[ 'reset' ] = true;
 *
 * > Beep boop.
 */
-rules[ 'blockquote-indentation' ] = [ 'error', 2 ]; // characters
+rules[ 'blockquote-indentation' ] = [ 'error', 2 ];
 
 /**
 * Require checkboxes to be either empty (unchecked) or have an `x` (checked).
