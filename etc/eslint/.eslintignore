@@ -7,7 +7,7 @@
 ###############
 build/
 reports/
-dist/
+/dist/
 
 # Node.js #
 ###########
