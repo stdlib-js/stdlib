@@ -1769,6 +1769,8 @@
 
 73. [download](https://github.com/watson/download-to-file)
 
+74. Add credit card fraud [data](https://github.com/ellisvalentiner/credit-card-fraud)
+
 
 ---
 
