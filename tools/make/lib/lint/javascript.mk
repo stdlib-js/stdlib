@@ -7,11 +7,8 @@ JAVASCRIPT_LINTER ?= eslint
 
 # DEPENDENCIES #
 
-ifeq ($(JAVASCRIPT_LINTER), jshint)
-	include $(TOOLS_MAKE_LIB_DIR)/lint/jshint.mk
-else ifeq ($(JAVASCRIPT_LINTER), eslint)
-	include $(TOOLS_MAKE_LIB_DIR)/lint/eslint.mk
-endif
+include $(TOOLS_MAKE_LIB_DIR)/lint/jshint.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/eslint.mk
 
 
 # TARGETS #
@@ -29,12 +26,12 @@ lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examp
 #
 # This target lints only JavaScript source files.
 
-lint-javascript-src: $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | grep '^\/' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
-	done
+lint-javascript-src:
+ifeq ($(JAVASCRIPT_LINTER), jshint)
+	$(QUIET) $(MAKE) -f $(this_file) jshint-src
+else ifeq ($(JAVASCRIPT_LINTER), eslint)
+	$(QUIET) $(MAKE) -f $(this_file) eslint-src
+endif
 
 .PHONY: lint-javascript-src
 
@@ -43,12 +40,12 @@ lint-javascript-src: $(NODE_MODULES)
 #
 # This target lints only JavaScript test files.
 
-lint-javascript-tests: $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^\/' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
-	done
+lint-javascript-tests:
+ifeq ($(JAVASCRIPT_LINTER), jshint)
+	$(QUIET) $(MAKE) -f $(this_file) jshint-tests
+else ifeq ($(JAVASCRIPT_LINTER), eslint)
+	$(QUIET) $(MAKE) -f $(this_file) eslint-tests
+endif
 
 .PHONY: lint-javascript-tests
 
@@ -57,12 +54,12 @@ lint-javascript-tests: $(NODE_MODULES)
 #
 # This target lints only JavaScript example files.
 
-lint-javascript-examples: $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
-	done
+lint-javascript-examples:
+ifeq ($(JAVASCRIPT_LINTER), jshint)
+	$(QUIET) $(MAKE) -f $(this_file) jshint-examples
+else ifeq ($(JAVASCRIPT_LINTER), eslint)
+	$(QUIET) $(MAKE) -f $(this_file) eslint-examples
+endif
 
 .PHONY: lint-javascript-examples
 
@@ -71,12 +68,12 @@ lint-javascript-examples: $(NODE_MODULES)
 #
 # This target lints only JavaScript benchmark files.
 
-lint-javascript-benchmarks: $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
-	done
+lint-javascript-benchmarks:
+ifeq ($(JAVASCRIPT_LINTER), jshint)
+	$(QUIET) $(MAKE) -f $(this_file) jshint-benchmarks
+else ifeq ($(JAVASCRIPT_LINTER), eslint)
+	$(QUIET) $(MAKE) -f $(this_file) eslint-benchmarks
+endif
 
 .PHONY: lint-javascript-benchmarks
 
@@ -85,12 +82,12 @@ lint-javascript-benchmarks: $(NODE_MODULES)
 #
 # This target lints JavaScript files. Note that we expect `$FILES` to be a JavaScript file list.
 
-lint-javascript-files: $(NODE_MODULES)
-	$(QUIET) for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(JAVASCRIPT_LINT) $(JAVASCRIPT_LINT_FLAGS) $$file || exit 1; \
-	done
+lint-javascript-files:
+ifeq ($(JAVASCRIPT_LINTER), jshint)
+	$(QUIET) $(MAKE) -f $(this_file) jshint-files
+else ifeq ($(JAVASCRIPT_LINTER), eslint)
+	$(QUIET) $(MAKE) -f $(this_file) eslint-files
+endif
 
 .PHONY: lint-javascript-files
 
