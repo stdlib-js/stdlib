@@ -278,7 +278,7 @@ rules[ 'consistent-this' ] = [ 'error', 'self' ];
 rules[ 'eol-last' ] = [ 'error', 'always' ];
 
 /**
-* Never allow a space between function indentifiers and their invocations.
+* Never allow a space between function identifiers and their invocations.
 *
 * @name func-call-spacing
 * @memberof rules
