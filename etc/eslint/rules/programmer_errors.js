@@ -334,11 +334,15 @@ rules[ 'no-extra-boolean-cast' ] = 'error';
 *
 * @example
 * // Bad...
-* (function foo(){})
+* (function foo() {
+*     // Do something...
+* })
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'no-extra-parens' ] = [ 'error', 'functions' ];
 
