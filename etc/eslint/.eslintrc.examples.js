@@ -16,7 +16,7 @@ var defaults = require( './eslintrc.js' );
 var eslint = copy( defaults );
 
 /**
-* Warn whenever using `String`, `Number`, and `Boolean` in place of primitives.
+* Warn when using `String`, `Number`, and `Boolean` in place of primitives.
 *
 * @private
 */
