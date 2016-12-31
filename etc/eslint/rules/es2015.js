@@ -385,7 +385,7 @@ rules[ 'prefer-const' ] = [ 'warn', {
 rules[ 'prefer-numeric-literals' ] = 'off';
 
 /**
-* Do not prefer reset parameters.
+* Do not prefer rest parameters.
 *
 * @name prefer-rest-params
 * @memberof rules
