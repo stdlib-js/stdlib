@@ -3,7 +3,7 @@
 // MODULES //
 
 var copy = require( '@stdlib/utils/copy' );
-var defaults = require( './eslintrc.js' );
+var defaults = require( './.eslintrc.js' );
 
 
 // MAIN //
