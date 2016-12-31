@@ -322,11 +322,21 @@ rules[ 'func-name-matching' ] = 'off';
 *
 * @example
 * // Bad...
-* var foo = function(){};
+* var foo = function() {
+*     // Do something...
+* };
 *
 * @example
 * // Good...
-* var foo = function foo(){};
+* var foo = function foo() {
+*     // Do something...
+* };
+*
+* @example
+* // Better...
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'func-names' ] = [ 'error', 'always' ];
 
