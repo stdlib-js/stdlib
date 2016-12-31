@@ -678,7 +678,7 @@ rules[ 'no-invalid-this' ] = 'error';
 rules[ 'no-iterator' ] = 'error';
 
 /**
-* Never allow the user of `labels`.
+* Never allow the use of `labels`.
 *
 * @name no-labels
 * @memberof rules
