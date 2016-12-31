@@ -714,12 +714,16 @@ rules[ 'no-labels' ] = [ 'error', {
 * @example
 * // Bad...
 * {
-*     function foo(){}
+*     function foo() {
+*         // Do something...
+*     }
 * }
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'no-lone-blocks' ] = 'error';
 
