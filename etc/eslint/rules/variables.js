@@ -122,7 +122,9 @@ rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 *
 * @example
 * // Bad...
-* function NaN(){}
+* function NaN() {
+*     // Do something...
+* }
 */
 rules[ 'no-shadow-restricted-names' ] = 'error';
 

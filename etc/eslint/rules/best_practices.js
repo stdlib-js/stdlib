@@ -678,7 +678,7 @@ rules[ 'no-invalid-this' ] = 'error';
 rules[ 'no-iterator' ] = 'error';
 
 /**
-* Never allow the user of `labels`.
+* Never allow the use of `labels`.
 *
 * @name no-labels
 * @memberof rules
@@ -714,12 +714,16 @@ rules[ 'no-labels' ] = [ 'error', {
 * @example
 * // Bad...
 * {
-*     function foo(){}
+*     function foo() {
+*         // Do something...
+*     }
 * }
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'no-lone-blocks' ] = 'error';
 

@@ -278,7 +278,7 @@ rules[ 'consistent-this' ] = [ 'error', 'self' ];
 rules[ 'eol-last' ] = [ 'error', 'always' ];
 
 /**
-* Never allow a space between function indentifiers and their invocations.
+* Never allow a space between function identifiers and their invocations.
 *
 * @name func-call-spacing
 * @memberof rules
@@ -322,11 +322,21 @@ rules[ 'func-name-matching' ] = 'off';
 *
 * @example
 * // Bad...
-* var foo = function(){};
+* var foo = function() {
+*     // Do something...
+* };
 *
 * @example
 * // Good...
-* var foo = function foo(){};
+* var foo = function foo() {
+*     // Do something...
+* };
+*
+* @example
+* // Better...
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'func-names' ] = [ 'error', 'always' ];
 
@@ -340,11 +350,15 @@ rules[ 'func-names' ] = [ 'error', 'always' ];
 *
 * @example
 * // Bad...
-* var foo = function(){};
+* var foo = function() {
+*     // Do something...
+* };
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'func-style' ] = [ 'error', 'declaration', {
 	'allowArrowFunctions': false

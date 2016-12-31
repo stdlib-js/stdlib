@@ -334,11 +334,15 @@ rules[ 'no-extra-boolean-cast' ] = 'error';
 *
 * @example
 * // Bad...
-* (function foo(){})
+* (function foo() {
+*     // Do something...
+* })
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'no-extra-parens' ] = [ 'error', 'functions' ];
 
@@ -372,12 +376,18 @@ rules[ 'no-extra-semi' ] = 'error';
 *
 * @example
 * // Bad...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
+*
 * foo = 'beep';
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
+*
 * var bar = 'beep';
 */
 rules[ 'no-func-assign' ] = 'error';
@@ -407,13 +417,18 @@ rules[ 'no-func-assign' ] = 'error';
 * @example
 * // Bad...
 * if ( foo ) {
-*     function bar(){}
+*     function bar() {
+*         // Do something...
+*     }
 *     bar();
 * }
 *
 * @example
 * // Good...
-* function bar(){}
+* function bar() {
+*     // Do something...
+* }
+*
 * if ( foo ) {
 *     bar();
 * }
