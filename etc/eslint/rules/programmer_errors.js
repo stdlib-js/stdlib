@@ -376,12 +376,18 @@ rules[ 'no-extra-semi' ] = 'error';
 *
 * @example
 * // Bad...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
+*
 * foo = 'beep';
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
+*
 * var bar = 'beep';
 */
 rules[ 'no-func-assign' ] = 'error';
