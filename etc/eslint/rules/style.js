@@ -350,11 +350,15 @@ rules[ 'func-names' ] = [ 'error', 'always' ];
 *
 * @example
 * // Bad...
-* var foo = function(){};
+* var foo = function() {
+*     // Do something...
+* };
 *
 * @example
 * // Good...
-* function foo(){}
+* function foo() {
+*     // Do something...
+* }
 */
 rules[ 'func-style' ] = [ 'error', 'declaration', {
 	'allowArrowFunctions': false
