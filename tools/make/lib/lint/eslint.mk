@@ -17,10 +17,10 @@ ESLINT_CONF ?= $(CONFIG_DIR)/eslint/.eslintrc.js
 ESLINT_CONF_EXAMPLES ?= $(CONFIG_DIR)/eslint/.eslintrc.examples.js
 
 # Define the path to the ESLint configuration file for tests:
-ESLINT_CONF_TESTS ?= $(CONFIG_DIR)/eslint/.eslintrc.js
+ESLINT_CONF_TESTS ?= $(CONFIG_DIR)/eslint/.eslintrc.tests.js
 
 # Define the path to the ESLint configuration file for benchmarks:
-ESLINT_CONF_BENCHMARKS ?= $(CONFIG_DIR)/eslint/.eslintrc.js
+ESLINT_CONF_BENCHMARKS ?= $(CONFIG_DIR)/eslint/.eslintrc.benchmarks.js
 
 # Define the path to the ESLint ignore file:
 ESLINT_IGNORE ?= $(CONFIG_DIR)/eslint/.eslintignore
