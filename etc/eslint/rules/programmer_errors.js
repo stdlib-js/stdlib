@@ -417,13 +417,18 @@ rules[ 'no-func-assign' ] = 'error';
 * @example
 * // Bad...
 * if ( foo ) {
-*     function bar(){}
+*     function bar() {
+*         // Do something...
+*     }
 *     bar();
 * }
 *
 * @example
 * // Good...
-* function bar(){}
+* function bar() {
+*     // Do something...
+* }
+*
 * if ( foo ) {
 *     bar();
 * }
