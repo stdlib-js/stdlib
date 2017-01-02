@@ -8,7 +8,7 @@
 var rules = {};
 
 /**
-* Warn when not having spaces within array brackets.
+* Warn when not having spaces within array brackets. NOTE: disabled as difficult to enforce a general rule. Prefer spaces within array brackets, but allow discretion in balancing readability, clarity, and aesthetics.
 *
 * @name array-bracket-spacing
 * @memberof rules
@@ -35,10 +35,10 @@ var rules = {};
 * // Okay...
 * var arr = [ [1], [2] ];
 */
-rules[ 'array-bracket-spacing' ] = [ 'warn', 'always', {
+rules[ 'array-bracket-spacing' ] = [ 'off', 'always', {
 	'singleValue': true,
-	'objectsInArrays': true,
-	'arraysInArrays': true
+	'objectsInArrays': false,
+	'arraysInArrays': false
 }];
 
 /**
