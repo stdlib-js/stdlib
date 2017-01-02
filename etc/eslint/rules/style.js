@@ -37,8 +37,8 @@ var rules = {};
 */
 rules[ 'array-bracket-spacing' ] = [ 'warn', 'always', {
 	'singleValue': true,
-	'objectsInArrays': false,
-	'arraysInArrays': false
+	'objectsInArrays': true,
+	'arraysInArrays': true
 }];
 
 /**
