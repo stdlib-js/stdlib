@@ -84,21 +84,6 @@ eslint.rules[ 'no-restricted-syntax' ] = [ 'error',
 ];
 
 /**
-* Allow one property objects to be expressed on the same line.
-*
-* @private
-* @example
-* // Okay...
-* var obj = { 'foo': 'bar' };
-*/
-eslint.rules[ 'object-curly-newline' ] = [ 'error', {
-	'ObjectExpression': {
-		'minProperties': 2
-	},
-	'ObjectPattern': 'never'
-}];
-
-/**
 * Do not require JSDoc comments.
 *
 * @private

@@ -1428,6 +1428,8 @@
 
 323. US/UK spelling [variations](https://github.com/alexcorvi/spelling-variations)
 
+324. RNN [demo](http://distill.pub/2016/handwriting/), [demo](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/), [tutorial](https://github.com/hardmaru/rnn-tutorial)
+
 
 ---
 
