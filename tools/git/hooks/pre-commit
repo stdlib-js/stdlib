@@ -15,6 +15,15 @@ lint_filenames="${root}/tools/lint/filenames/bin/cli"
 # Define the path to a utility for linting package.json files:
 lint_package_json="${root}/tools/lint/pkg-json/bin/cli"
 
+# Define the path to ESLint configuration file for linting examples:
+eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
+
+# Define the path to ESLint configuration file for linting tests:
+eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
+
+# Define the path to ESLint configuration file for linting benchmarks:
+eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
+
 
 # FUNCTIONS #
 
@@ -89,13 +98,46 @@ run_lint() {
 		fi
 	fi
 
-	# Lint JavaScript files...
-	files=$(echo "${changed_files}" | grep '\.js$' | tr '\n' ' ')
+	# Lint JavaScript source files...
+	files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e 'examples' -e 'test' -e 'benchmark' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
-			echo 'JavaScript lint errors.' >&2
+			echo 'JavaScript lint errors for source files.' >&2
+			return 1
+		fi
+	fi
+
+	# Lint JavaScript examples files...
+	files=$(echo "${changed_files}" | grep 'examples/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'JavaScript lint errors for example files.' >&2
+			return 1
+		fi
+	fi
+
+	# Lint JavaScript test files...
+	files=$(echo "${changed_files}" | grep 'test/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'JavaScript lint errors for test files.' >&2
+			return 1
+		fi
+	fi
+
+	# Lint JavaScript benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'JavaScript lint errors for benchmark files.' >&2
 			return 1
 		fi
 	fi
