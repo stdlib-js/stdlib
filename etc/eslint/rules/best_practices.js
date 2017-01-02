@@ -1106,7 +1106,7 @@ rules[ 'no-self-compare' ] = 'off';
 rules[ 'no-sequences' ] = 'error';
 
 /**
-* Encourage only `Error` objects to be thrown.
+* Require only `Error` objects to be thrown.
 *
 * @name no-throw-literal
 * @memberof rules
