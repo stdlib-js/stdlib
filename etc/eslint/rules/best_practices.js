@@ -615,7 +615,7 @@ rules[ 'no-global-assign' ] = 'error';
 rules[ 'no-implicit-coercion' ] = 'off';
 
 /**
-* Turn off checking for implicit globals in browser scripts, as code is primarily comprised of modules which have their own scope
+* Turn off checking for implicit globals in browser scripts, as code is primarily comprised of modules which have their own scope.
 *
 * @name no-implicit-globals
 * @memberof rules
