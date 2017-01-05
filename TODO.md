@@ -2,15 +2,12 @@
 
 1. switch to `eslint` as main JS linter
 
-   * add to test command
+   * add to CI
    * support reformatting ala `go fmt` => `--fix`
 
 2. add NPM style [guide](https://github.com/voorhoede/npm-style-guide) with [versioning info](https://github.com/compute-io/contributing#versioning)
 
 3. determine how to handle internal `@stdlib` links in READMEs
-
-   * e.g., `@stdlib/math/constants/float64-two-pi`
-   * replace internal module references
 
 4. create an `docs/install.md` for developers
 
@@ -89,6 +86,10 @@
    * [`catharsis`](https://github.com/hegemonic/catharsis)
 
    * [`doctor`](https://github.com/jdeal/doctor)
+
+   * [`docsify`](https://github.com/QingWei-Li/docsify)
+
+   * [`docute`](https://github.com/egoist/docute)
 
    * ...
 
@@ -285,6 +286,7 @@
     * [HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/v8/)
     * [v8-perf](https://github.com/thlorenz/v8-perf)
     * [chrome devtools](https://github.com/GoogleChrome/devtools-docs/issues/53)
+    * [monomorphist](https://github.com/vhf/monomorphist)
     * constant propagation
     * loop invariant code motion
     * dead code elimination
@@ -358,6 +360,8 @@
     * [css linting](https://github.com/stylelint/stylelint) and [stylefmt](https://github.com/morishitter/stylefmt)
 
     * [list](https://github.com/SalGnt/cscs) of style guidelines
+
+    * Pep8 for Python, [pycodestyle](https://github.com/PyCQA/pycodestyle), and see [autopep8](https://github.com/hhatto/autopep8) for automatic formatting
 
 49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
@@ -1225,7 +1229,7 @@
 
 234. mk recipe to read a dep readme and launch in an electron window/browser
 
-235. nlp levi dist
+235. nlp levi dist (see also [damlev](https://github.com/WatchBeam/damlev))
 
 236. [travis-deploy-example](https://github.com/bcoe/travis-deploy-example)
 
@@ -1429,6 +1433,12 @@
 323. US/UK spelling [variations](https://github.com/alexcorvi/spelling-variations)
 
 324. RNN [demo](http://distill.pub/2016/handwriting/), [demo](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/), [tutorial](https://github.com/hardmaru/rnn-tutorial)
+
+325. ESLint [plugin](https://github.com/amilajack/eslint-plugin-compat) for browser compat
+
+326. [jot](https://github.com/JoshData/jot)
+
+327. [cars dataset](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
 
 ---
