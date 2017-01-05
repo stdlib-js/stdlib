@@ -88,7 +88,7 @@ run_lint() {
 	fi
 
 	# Lint package.json files...
-	files=$(echo "${changed_files}" | grep 'package\.json$')
+	files=$(echo "${changed_files}" | grep 'package\.json$' | grep -v 'datapackage\.json$' )
 	if [[ -n "${files}" ]]; then
 		echo "${files}" | "${lint_package_json}" >&2
 		if [[ "$?" -ne 0 ]]; then
