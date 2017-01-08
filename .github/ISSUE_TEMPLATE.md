@@ -92,7 +92,7 @@ The following environments are affected:
 
 <!-- <links> -->
 
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md
-[faq]: https://github.com/stdlib-js/stdlib/blob/master/FAQ.md
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+[faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
 <!-- </links> -->

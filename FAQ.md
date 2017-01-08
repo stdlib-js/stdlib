@@ -263,8 +263,8 @@ See the [contributing guide][contributing-guide].
 
 [mdn-math]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
-[native-math-bugs]: https://github.com/stdlib-js/stdlib/blob/master/docs/native_math_bugs.md
-[contributing-guide]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
+[native-math-bugs]: https://github.com/stdlib-js/stdlib/blob/develop/docs/native_math_bugs.md
+[contributing-guide]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
 [wasm]: https://github.com/WebAssembly/spec/
 [asm]: http://asmjs.org/spec/latest/

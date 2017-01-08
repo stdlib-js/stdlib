@@ -13,8 +13,8 @@ When contributing to this project,
 
 <!-- <links> -->
 
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md
-[license]: https://github.com/stdlib-js/stdlib/blob/master/LICENSE
-[style-guides]: https://github.com/stdlib-js/stdlib/blob/master/docs/style-guides
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+[license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
+[style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
 
 <!-- </links> -->

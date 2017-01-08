@@ -259,9 +259,9 @@ Copyright &copy; 2016. The Stdlib [Authors][authors].
 [editorconfig]: http://editorconfig.org/
 [editorconfig-chrome]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
 
-[contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
+[contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 [authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-[license]: https://raw.githubusercontent.com/stdlib-js/stdlib/master/LICENSE
+[license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
 
 </section>
 

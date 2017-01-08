@@ -57,8 +57,8 @@ No.
 
 <!-- <links> -->
 
-[contributing]: https://github.com/stdlib-js/stdlib/blob/master/CONTRIBUTING.md
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/master/CODE_OF_CONDUCT.md
-[license]: https://github.com/stdlib-js/stdlib/blob/master/LICENSE
+[contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+[license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
 
 <!-- </links> -->
