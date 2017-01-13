@@ -388,10 +388,10 @@ var h = require( './h.js' );
 
 By leveraging node_modules, each local node_modules dependency
 
-a. is scoped to its relevant context
-b. does not pollute the top-level node_modules directory which contains 3rd party dependencies
-c. allows modules within a scope to require the dependency by name rather than by relative path in a manner similar to node_module dependencies in parent scopes (including 3rd party dependencies)
-d. may be elevated to a higher scope without needing to update require paths
+1. is scoped to its relevant context
+2. does not pollute the top-level node_modules directory which contains 3rd party dependencies
+3. allows modules within a scope to require the dependency by name rather than by relative path in a manner similar to node_module dependencies in parent scopes (including 3rd party dependencies)
+4. may be elevated to a higher scope without needing to update require paths
 
 In short, the module resolution [algorithm][node-require] provides a simple and robust cross-platform solution for managing both external and local module dependencies.
 
