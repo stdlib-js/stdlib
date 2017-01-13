@@ -368,7 +368,7 @@ In general, far too many developers are oblivious to the module resolution [algo
                   index.js
               db-delete/
                   index.js
-  node_modules/ # => 3rd party dependencies
+  node_modules/ # => external dependencies
       beep/
       boop/
       bop/
@@ -386,16 +386,16 @@ var h = require( './h.js' );
 // ...
 ```
 
-By leveraging node_modules, each local node_modules dependency
+By leveraging `node_module`s, each local `node_modules` dependency
 
 1. is scoped to its relevant context
-2. does not pollute the top-level node_modules directory which contains 3rd party dependencies
-3. allows modules within a scope to require the dependency by name rather than by relative path in a manner similar to node_module dependencies in parent scopes (including 3rd party dependencies)
+2. does not pollute the top-level `node_modules` directory which contains external dependencies
+3. allows modules within a scope to require the dependency by name rather than by relative path in a manner similar to `node_modules` dependencies in parent scopes (including external dependencies)
 4. may be elevated to a higher scope without needing to update require paths
 
 In short, the module resolution [algorithm][node-require] provides a simple and robust cross-platform solution for managing both external and local module dependencies.
 
-__Aside__: A common objection to the directory structure above is that tools often ignore anything within a node_modules folder (e.g., linters, unit test runners, etc). That this project is able to configure tools to recognize files within node_modules folders is evidence to the contrary. If a tool cannot be configured otherwise, that is a flaw in the tool, not in the approach.
+__Aside__: A common objection to the directory structure above is that tools often ignore anything within a `node_modules` folder (e.g., linters, unit test runners, etc). That this project is able to configure tools to recognize files within `node_modules` folders is evidence to the contrary. If a tool cannot be configured otherwise, that is a flaw in the tool, not in the approach.
 
 <!-- </faq-question> -->
 
