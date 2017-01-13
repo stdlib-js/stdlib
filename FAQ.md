@@ -416,7 +416,7 @@ See the [contributing guide][contributing-guide].
 <!-- </faq-questions> -->
 
 
-<!-- <links> -->
+<!-- <definitions> -->
 
 [dom]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 [canvas]: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
@@ -505,4 +505,4 @@ See the [contributing guide][contributing-guide].
 
 [matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
 
-<!-- </links> -->
+<!-- </definitions> -->
