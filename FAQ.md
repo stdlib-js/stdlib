@@ -149,8 +149,8 @@ To better support numeric computing, standards bodies can do the following:
 1. Add support for 128-bit integers. 128-bit integers (both signed and unsigned) are important for the following reasons:
 
    * __Cryptography__. 128-bit integers are a common key size for [symmetric ciphers][symmetric-ciphers], and, importantly, 128-bit integers facilitate support for additional cryptographically secure pseudorandom number generators (CSPRNGs).
-   * [__Universally unique identifiers__][uuid]. Universally unique identifiers (UUIDs) are stored as 128-bit values.
-   * [__Arbitrary-precision arithmetic__][arbitrary-precision-arithmetic]. Arbitrary-precision arithmetic is beneficial for high precision applications and in preventing overflow, computing fundamental mathematical constants, and evaluating precision errors in fixed-precision calculations.
+   * __Universally unique identifiers__. Universally unique identifiers ([UUIDs][uuid]) are stored as 128-bit values.
+   * __Arbitrary-precision arithmetic__. [Arbitrary-precision arithmetic][arbitrary-precision-arithmetic] is beneficial for high precision applications and in preventing overflow, computing fundamental mathematical constants, and evaluating precision errors in fixed-precision calculations.
 
 1. Add support for large arrays. Arrays are currently limited to [`2**32-1`][ecma262-array-length] (approximately `4` billion) elements. Many applications will never reach this limit; however, as datasets continue to increase in size, the need for larger arrays will become more apparent. For example, consider a `100000 x 100000` dense matrix, which is not uncommon when working with sensor data and trying to find correlations. This matrix will have `10` billion elements. Given current length limitations, one cannot store this data contiguously in a plain JavaScript array, thus resulting in increased cache misses and decreased performance.
 
