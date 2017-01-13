@@ -386,7 +386,7 @@ var h = require( './h.js' );
 // ...
 ```
 
-By leveraging `node_module`s, each local `node_modules` dependency
+By leveraging `node_modules`, each local `node_modules` dependency
 
 1. is scoped to its relevant context
 2. does not pollute the top-level `node_modules` directory which contains external dependencies
