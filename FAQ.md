@@ -15,6 +15,7 @@
 * [Promise support?](#promise-support)
 * [ES2015 and beyond?](#es2015)
 * [Why a monorepo?](#monorepo)
+* [Why are library packages in a node_modules directory?](#lib-node-modules)
 * [How can I contribute?](#contributing)
 
 
@@ -155,9 +156,9 @@ To better support numeric computing, standards bodies can do the following:
    * __Universally unique identifiers__. Universally unique identifiers ([UUIDs][uuid]) are stored as 128-bit values.
    * __Arbitrary-precision arithmetic__. [Arbitrary-precision arithmetic][arbitrary-precision-arithmetic] is beneficial for high precision applications and in preventing overflow, computing fundamental mathematical constants, and evaluating precision errors in fixed-precision calculations.
 
-1. __Large arrays__: add support for large arrays. Arrays are currently limited to [`2**32-1`][ecma262-array-length] (approximately `4` billion) elements. Many applications will never reach this limit; however, as datasets continue to increase in size, the need for larger arrays will become more apparent. For example, consider a `100000 x 100000` dense matrix, which is not uncommon when working with sensor data and trying to find correlations. This matrix will have `10` billion elements. Given current length limitations, one cannot store this data contiguously in a plain JavaScript array, thus resulting in increased cache misses and decreased performance.
+1. __Large arrays__: add support for large arrays. Arrays are currently limited to [`2**32-1`][ecma-262-array-length] (approximately `4` billion) elements. Many applications will never reach this limit; however, as datasets continue to increase in size, the need for larger arrays will become more apparent. For example, consider a `100000 x 100000` dense matrix, which is not uncommon when working with sensor data and trying to find correlations. This matrix will have `10` billion elements. Given current length limitations, one cannot store this data contiguously in a plain JavaScript array, thus resulting in increased cache misses and decreased performance.
 
-   __Aside:__ typed arrays and, more generally, array-like objects may have as many as [`2**53-1`][ecma262-tolength] elements. In the case of typed arrays, however, one must allocate memory upon instantiation; thus, growing a typed array as needed, while possible, is neither straightforward nor efficient.
+   __Aside:__ typed arrays and, more generally, array-like objects may have as many as [`2**53-1`][ecma-262-tolength] elements. In the case of typed arrays, however, one must allocate memory upon instantiation; thus, growing a typed array as needed, while possible, is neither straightforward nor efficient.
 
 1. __Typed objects__: add support for [typed objects][typed-objects-proposal]. Typed objects would facilitate efficient memory storage of data, which is critical for [performant][five-things-that-make-go-fast] numeric computations. In short,
 
@@ -173,11 +174,11 @@ To better support numeric computing, standards bodies can do the following:
 
 1. __Big numbers__: add support for big [integers][julia-bigint], [rationals][golang-big], and [floats][julia-bigfloat]. In addition to cryptography and computing irrational numbers, arbitrary precision arithmetic is useful for algorithms involving double-precision floating-point numbers. Currently, lack of efficient, and relatively performant, big number support limits the scope and types of implemented algorithms, including for basic transcendental functions.
 
-1. __SIMD__: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][simd-js] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is __not__ particularly well-suited for large vector operations, which are common in numeric computing (e.g., BLAS).
+1. __SIMD__: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][mdn-simd-js] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is __not__ particularly well-suited for large vector operations, which are common in numeric computing (e.g., BLAS).
 
    __Aside:__ JavaScript may never have native SIMD support. Instead, SIMD may be possible only via [WebAssembly][wasm]. Lack of native JavaScript SIMD support would be unfortunate, as plenty of applications exist (e.g., scripting for purposes of analysis and data manipulation), which would benefit from SIMD operations without requiring a context switch to a lower-level language and additional compilation steps.
 
-1. __Parallelism__: add support for lightweight threading (parallelism). Currently, [data parallelism][data-parallelism], i.e., the same operations performed on different subsets of the same data, is only achievable by manual data orchestration and task execution via either [web workers][web-workers] (browser) or [child processes][child-process] (Node.js). While [web workers][web-workers] support [Transferable Objects][transferable-objects] thus allowing shared memory access, the same is not true for Node.js. Particularly in Node.js, task parallelism is heavyweight and cumbersome, especially for use cases like parallel computation involving matrix elements (e.g., compare to MATLAB's [`parfor`][matlab-parfor]). The ability to easily distribute data to a worker pool (processors) would provide a significant performance boost to many data analysis tasks.
+1. __Parallelism__: add support for lightweight threading (parallelism). Currently, [data parallelism][data-parallelism], i.e., the same operations performed on different subsets of the same data, is only achievable by manual data orchestration and task execution via either [web workers][mdn-web-workers] (browser) or [child processes][node-child-process] (Node.js). While [web workers][mdn-web-workers] support [Transferable Objects][mdn-transferable-objects] thus allowing shared memory access, the same is not true for Node.js. Particularly in Node.js, task parallelism is heavyweight and cumbersome, especially for use cases like parallel computation involving matrix elements (e.g., compare to MATLAB's [`parfor`][matlab-parfor]). The ability to easily distribute data to a worker pool (processors) would provide a significant performance boost to many data analysis tasks.
 
 1. __GPGPU__: provide better support for [GPGPU][gpgpu]. Currently, performing general purpose GPU (GPGPU) computing tasks within a browser is only possible via [WebGL][webgl] and awkward usage of shaders, which are designed for generating graphics, not generic number crunching. Additionally, synchronous data transfers between the main thread and the GPU are expensive, debugging support is limited, and reading floating-point textures is not possible without workarounds which encode floating-point numbers into integer outputs (RGBA). While [compute shaders][compute-shaders] and [Vulkan][vulkan] promise better GPGPU support, we are years away from realizing their proposed benefits via JavaScript. Once realized, however, embarrassingly parallel computation tasks and machine learning techniques such as neural networks become more viable and efficient.
 
@@ -283,6 +284,126 @@ The reasons are as follows:
 
 ---
 
+<a name="lib-node-modules"></a>
+
+### Why are library packages in a node_modules directory?
+
+This project leverages the Node.js module resolution [algorithm][node-require] to resolve dependencies by name rather than by path. Hence, the project avoids relative require paths. For example,
+
+``` javascript
+var foo = require( './../../../../../@stdlib/foo' );
+```
+
+becomes
+
+``` javascript
+var foo = require( '@stdlib/foo' );
+```
+
+In general, far too many developers are oblivious to the module resolution [algorithm][node-require], often resorting to various unnecessary hacks, such as setting environment variables (e.g., `NODE_PATH`), using globals, creating symbolic links (symlink), using `require` wrappers, running startup scripts, or actually hacking `require`, itself (see [here][modifying-node-path-hack] and [here][list-of-require-hacks] as representative references). A superior approach is to leverage the module resolution [algorithm][node-require] to scope internal packages to their relevant context. For example, consider the following application directory structure
+
+``` text
+/
+  app/
+      index.js
+      a.js
+      b.js
+      node_modules/ # => local app dependencies
+          debug/
+              index.js
+          logger/
+              index.js
+      routes/
+          index.js
+          login/
+              index.js
+              login.js
+              post.js
+              onerror.js
+          logout/
+              index.js
+              logout.js
+              post.js
+              onerror.js
+          node_modules/ # => local routes dependencies
+              start/
+                  index.js
+              end/
+                  index.js
+              response-time/
+                  index.js
+      models/
+          index.js
+          c.js
+          d.js
+          user/
+              index.js
+              e.js
+              f.js
+              node_modules/ # => local user model dependencies
+                  foo/
+                      index.js
+                  bar/
+                      index.js
+          data/
+              index.js
+              g.js
+              h.js
+              i.js
+              node_modules/ # => local data model dependencies
+                  transform/
+                      index.js
+                  analyze/
+                      index.js
+                  morph/
+                      index.js
+          node_modules/ # => local models dependencies
+              db-connect/
+                  index.js
+              db-get/
+                  index.js
+              db-set/
+                  index.js
+              db-update/
+                  index.js
+              db-delete/
+                  index.js
+  node_modules/ # => 3rd party dependencies
+      beep/
+      boop/
+      bop/
+```
+
+where `g.js`
+
+``` javascript
+var beep = require( 'beep' );
+var debug = require( 'debug' );
+var get = require( 'db-get' );
+var transform = require( 'transform' );
+var h = require( './h.js' );
+
+// ...
+```
+
+By leveraging node_modules, each local node_modules dependency
+
+a. is scoped to its relevant context
+b. does not pollute the top-level node_modules directory which contains 3rd party dependencies
+c. allows modules within a scope to require the dependency by name rather than by relative path in a manner similar to node_module dependencies in parent scopes (including 3rd party dependencies)
+d. may be elevated to a higher scope without needing to update require paths
+
+In short, the module resolution [algorithm][node-require] provides a simple and robust cross-platform solution for managing both external and local module dependencies.
+
+__Aside__: A common objection to the directory structure above is that tools often ignore anything within a node_modules folder (e.g., linters, unit test runners, etc). That this project is able to configure tools to recognize files within node_modules folders is evidence to the contrary. If a tool cannot be configured otherwise, that is a flaw in the tool, not in the approach.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
 <a name="contributing"></a>
 
 ### How can I contribute?
@@ -299,7 +420,11 @@ See the [contributing guide][contributing-guide].
 
 [dom]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 [canvas]: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
 [webgl]: https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API
+[gpgpu]: https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units
+[compute-shaders]: https://www.khronos.org/opengl/wiki/Compute_Shader
+[vulkan]: https://www.khronos.org/vulkan/
 
 [shiny]: http://shiny.rstudio.com/
 [bokeh]: http://bokeh.pydata.org/en/latest/
@@ -319,20 +444,32 @@ See the [contributing guide][contributing-guide].
 [npm]: https://www.npmjs.com/
 
 [mdn-math]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+[mdn-simd-js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD
+[mdn-web-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker
+[mdn-transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Transferable
 
 [native-math-bugs]: https://github.com/stdlib-js/stdlib/blob/develop/docs/native_math_bugs.md
 [contributing-guide]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
 [wasm]: https://github.com/WebAssembly/spec/
 [asm]: http://asmjs.org/spec/latest/
+
 [numpy]: http://www.numpy.org/
 [scikit-learn]: http://scikit-learn.org/stable/
 
 [semver]: http://semver.org/
+
 [node-lts]: https://github.com/nodejs/LTS
 [node-addons]: https://nodejs.org/api/addons.html
+[node-require]: https://nodejs.org/api/modules.html
+[node-child-process]: https://nodejs.org/api/child_process.html
+
+[modifying-node-path-hack]: https://lostechies.com/derickbailey/2014/02/20/how-i-work-around-the-require-problem-in-nodejs/
+[list-of-require-hacks]: https://gist.github.com/branneman/8048520
 
 [ecma-262]: http://www.ecma-international.org/publications/standards/Ecma-262.htm
+[ecma-262-array-length]: http://www.ecma-international.org/ecma-262/6.0/#sec-arraycreate
+[ecma-262-tolength]: http://www.ecma-international.org/ecma-262/6.0/#sec-tolength
 
 [golang-frexp]: https://github.com/golang/go/blob/c007ce824d9a4fccb148f9204e04c23ed2984b71/src/math/frexp.go#L27
 [golang-float64bits]: https://github.com/golang/go/blob/964639cc338db650ccadeafb7424bc8ebb2c0f6c/src/math/unsafe.go#L17
@@ -354,27 +491,18 @@ See the [contributing guide][contributing-guide].
 [symmetric-ciphers]: https://en.wikipedia.org/wiki/Symmetric-key_algorithm
 [arbitrary-precision-arithmetic]: https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic
 
-[ecma262-array-length]: http://www.ecma-international.org/ecma-262/6.0/#sec-arraycreate
-[ecma262-tolength]: http://www.ecma-international.org/ecma-262/6.0/#sec-tolength
-
-[simd-js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD
 [mozilla-simd]: https://hacks.mozilla.org/2014/10/introducing-simd-js/
 [ecmascript-simd]: https://github.com/tc39/ecmascript_simd/
 
 [five-things-that-make-go-fast]: http://dave.cheney.net/2014/06/07/five-things-that-make-go-fast
+
 [typed-objects-proposal]: https://github.com/dslomov/typed-objects-es7
 [typed-objects-explainer]: https://github.com/nikomatsakis/typed-objects-explainer
 
 [operator-overloading]: https://en.wikipedia.org/wiki/Operator_overloading
 
 [data-parallelism]: https://en.wikipedia.org/wiki/Data_parallelism
-[web-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker
-[child-process]: https://nodejs.org/api/child_process.html
-[transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Transferable
-[matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
 
-[gpgpu]: https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units
-[compute-shaders]: https://www.khronos.org/opengl/wiki/Compute_Shader
-[vulkan]: https://www.khronos.org/vulkan/
+[matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
 
 <!-- </links> -->
