@@ -1001,3 +1001,28 @@
 	year = {2012},
 }
 
+@unpublished{miller:2008a,
+	abstract = {For large UNIX projects, the traditional method of building the project is to use recursive make. On some projects, this results in build times which are unacceptably large, when all you want to do is change one file. In examining the source of the overly long build times, it became evident that a number of apparently unrelated problems combine to produce the delay, but on analysis all have the same root cause. This paper explores a number of problems regarding the use of recursive make, and shows that they are all symptoms of the same problem. Symptoms that the UNIX community have long accepted as a fact of life, but which need not be endured any longer. These problems include recursive makes which take "forever" to work out that they need to do nothing, recursive makes which do too much, or too little, recursive makes which are overly sensitive to changes in the source code and require constant Makefile intervention to keep them working. The resolution of these problems can be found by looking at what make does, from first principles, and then analyzing the effects of introducing recursive make to this activity. The analysis shows that the problem stems from the artificial partitioning of the build into separate subsets. This, in turn, leads to the symptoms described. To avoid the symptoms, it is only necessary to avoid the separation; to use a single make session to build the whole project, which is not quite the same as a single Makefile. This conclusion runs counter to much accumulated folk wisdom in building large projects on UNIX. Some of the main objections raised by this folk wisdom are examined and shown to be unfounded. The results of actual use are far more encouraging, with routine development performance improvements significantly faster than intuition may indicate, and without the intuitively expected compromise of modularity. The use of a whole project make is not as difficult to put into practice as it may at first appear.},
+	author = {Peter Miller},
+	keywords = {make, makefile, build},
+	note = {Discussion on recursive make.},
+	title = {{Recursive Make Considered Harmful}},
+	url = {http://aegis.sourceforge.net/auug97.pdf},
+	year = {2008},
+}
+
+@article{hand:2006a,
+	abstract = {A great many tools have been developed for supervised classification, ranging from early methods such as linear discriminant analysis through to modern developments such as neural networks and support vector machines. A large number of comparative studies have been conducted in attempts to establish the relative superiority of these methods. This paper argues that these comparisons often fail to take into account important aspects of real problems, so that the apparent superiority of more sophisticated methods may be something of an illusion. In particular, simple methods typically yield performance almost as good as more sophisticated methods, to the extent that the difference in performance may be swamped by other sources of uncertainty that generally are not considered in the classical supervised classification paradigm.},
+	author = {David J Hand},
+	doi = {10.1214/088342306000000060},
+	journal = {Statistical Science},
+	keywords = {ml, machine, learning, ai, classifier, supervised, unsupervised, math, data, science, statistics, stats},
+	month = {02},
+	number = {1},
+	pages = {1--14},
+	publisher = {The Institute of Mathematical Statistics},
+	title = {{Classifier Technology and the Illusion of Progress}},
+	url = {http://dx.doi.org/10.1214/088342306000000060},
+	volume = {21},
+	year = {2006},
+}

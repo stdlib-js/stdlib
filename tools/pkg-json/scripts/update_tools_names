@@ -83,7 +83,7 @@ function main() {
 		pkg = JSON.stringify( pkg, null, 2 ); // 2-space indentation
 
 		debug( 'Writing package data to file.' );
-		writeFile( fpath, pkg, {
+		writeFile( fpath, pkg+'\n', {
 			'encoding': 'utf8'
 		});
 	}
