@@ -33,7 +33,7 @@ tape( 'the function returns an error if provided an `options` argument which is 
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, values[ i ] );
-		t.strictEqual( err instanceof TypeError, true, 'returns a TypeError when provided '+values[i] );
+		t.strictEqual( err instanceof TypeError, true, 'returns a type error when provided '+values[i] );
 	}
 	t.end();
 });
