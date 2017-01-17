@@ -1450,6 +1450,22 @@
 
 332. [glmatrix](https://github.com/toji/gl-matrix)
 
+333. nat lang date/time [parser](https://github.com/olebedev/when)
+
+334. Consider adding Dockerfile(s) (repl, workshop, etc)
+
+335. [itermplot](https://github.com/daleroberts/itermplot)
+
+336. [diacritics-map](https://github.com/jonschlinkert/diacritics-map)
+
+337. problematic [strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+
+338. [xstream](https://github.com/staltz/xstream)
+
+339. fivethirtyeight [data](https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw)
+
+340. Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
+
 
 ---
 
