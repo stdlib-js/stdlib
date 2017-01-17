@@ -1466,6 +1466,8 @@
 
 340. Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
 
+341. [sync-request](https://github.com/ForbesLindesay/sync-request) => useful for REPL
+
 
 ---
 
