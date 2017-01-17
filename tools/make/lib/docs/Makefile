@@ -1,6 +1,7 @@
 
 # DEPENDENCIES #
 
+include $(TOOLS_MAKE_LIB_DIR)/docs/repl.mk
 include $(TOOLS_MAKE_LIB_DIR)/docs/src.mk
 
 

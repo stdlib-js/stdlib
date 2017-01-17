@@ -1273,6 +1273,7 @@
      - [churn](https://github.com/danmayer/churn)
      - [code-maat](https://github.com/adamtornhill/code-maat)
      - [GitHub analysis](https://github.com/StephenOTT/GitHub-Analytics)
+     - [git-quick-stats](https://github.com/arzzen/git-quick-stats/blob/master/git-quick-stats)
 
 255. link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
 
