@@ -1,0 +1,33 @@
+
+{{alias}}()
+    TODO: short desc.
+
+    TODO: longer desc/bkgd.
+
+    List:
+
+    - item 1
+    - item 2
+
+    Parameters
+    ----------
+    x: double
+        TODO: desc
+
+    Returns
+    -------
+    y: double
+        TODO: desc
+
+    Examples
+    --------
+    > var TODO = {{alias}}();
+    TODO: abbrev output
+
+    References
+    ----------
+    - TODO: only include reference(s) if usage requires citation(s)
+
+    See Also
+    --------
+

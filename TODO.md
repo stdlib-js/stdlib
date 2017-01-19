@@ -1273,6 +1273,7 @@
      - [churn](https://github.com/danmayer/churn)
      - [code-maat](https://github.com/adamtornhill/code-maat)
      - [GitHub analysis](https://github.com/StephenOTT/GitHub-Analytics)
+     - [git-quick-stats](https://github.com/arzzen/git-quick-stats/blob/master/git-quick-stats)
 
 255. link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
 
@@ -1449,6 +1450,24 @@
 331. investigate [threads](https://github.com/andywer/threads.js)
 
 332. [glmatrix](https://github.com/toji/gl-matrix)
+
+333. nat lang date/time [parser](https://github.com/olebedev/when)
+
+334. Consider adding Dockerfile(s) (repl, workshop, etc)
+
+335. [itermplot](https://github.com/daleroberts/itermplot)
+
+336. [diacritics-map](https://github.com/jonschlinkert/diacritics-map)
+
+337. problematic [strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+
+338. [xstream](https://github.com/staltz/xstream)
+
+339. fivethirtyeight [data](https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw)
+
+340. Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
+
+341. [sync-request](https://github.com/ForbesLindesay/sync-request) => useful for REPL
 
 
 ---

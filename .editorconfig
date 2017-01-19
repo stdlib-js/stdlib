@@ -43,6 +43,14 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = false
 
+[usage.txt]
+indent_style = space
+indent_size = 2
+
+[repl.txt]
+indent_style = space
+indent_size = 4
+
 [package.json]
 indent_style = space
 indent_size = 2
