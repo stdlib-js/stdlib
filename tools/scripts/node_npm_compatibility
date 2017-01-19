@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+/*
+* Script to determine a compatible npm version range based on the current Node.js runtime.
+*
+* Older versions of Node (>=0.10.0 <= 0.12.x) require an updated npm client to handle scoped packages, but should not use npm versions `>=4.0.0`, as more recent npm versions drop explicit backward compatibility support.
+*/
+'use strict';
+
+// MODULES //
+
+var semver = require( 'semver' );
+var NODE_VERSION = require( '@stdlib/utils/node-version' );
+
+
+// FUNCTIONS //
+
+/**
+* Returns a compatible npm version range based on the current Node.js runtime.
+*
+* @private
+* @returns {string} npm version range
+*/
+function version() {
+	if ( semver.lte( NODE_VERSION, '1.0.0' ) ) {
+		return '>2.7.0 <4.0.0';
+	}
+	return '>2.7.0';
+} // end FUNCTION version()
+
+
+// MAIN //
+
+console.log( version() );
