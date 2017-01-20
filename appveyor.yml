@@ -3,9 +3,6 @@
 version: '{build}'
 
 environment:
-  global:
-    NODE_PATH: '%APPVEYOR_BUILD_FOLDER%\lib\node_modules'
-
   matrix:
     # Unit tests:
     - nodejs_version: '7'
@@ -132,6 +129,10 @@ install:
 
   # Switch to the desired Node version:
   - ps: Install-Product node $env:nodejs_version
+
+  # Set the NODE_PATH environment variable:
+  - cmd: set NODE_PATH=%APPVEYOR_BUILD_FOLDER%\lib\node_modules;%NODE_PATH%
+  - cmd: echo %NODE_PATH%
 
   # Update the npm client. Older clients cannot, e.g., handle scoped modules, and on Windows are subject to race conditions (see https://github.com/appveyor/ci/issues/102 and https://www.appveyor.com/docs/lang/nodejs-iojs/#locking-errors-eperm-eexist-tgzlock ).
   - cmd: npm install -g npm@"%npm_version%"
