@@ -36,7 +36,7 @@ on_error() {
 #
 # $1 - acceptable version range
 update_npm() {
-   echo "Updating npm..." >&2
+   echo "Updating npm: ${version}." >&2
 
    # Must wrap the version range in quotes to ensure range treated as a single string:
    npm install -g npm@'"'"$1"'"'
