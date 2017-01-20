@@ -63,7 +63,7 @@
     "ajv": "^4.9.2",
     "browserify": "13.x.x",
     "chai": "^3.5.0",
-    "david": "^9.0.0",
+    "david": "^10.0.0",
     "envify": "^4.0.0",
     "eslint": "3.x.x",
     "github-markdown-equation-element": "^2.0.0",

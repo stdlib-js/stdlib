@@ -1465,6 +1465,10 @@
 
 340. Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
 
+341. consider using [Stryker](https://github.com/stryker-mutator/stryker) for mutation testing
+
+342. [syncsplit](https://github.com/mcollina/syncsplit) and [syncthrough](https://github.com/mcollina/syncthrough)
+
 
 ---
 
