@@ -23,6 +23,7 @@ Developing and running stdlib __requires__ the following prerequisites:
 * [GNU make][gnu-make]: development utility and task runner
 * [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
+* [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
 
 While not required to run stdlib, the following dependencies may be required for testing, benchmarking, and general development:
 
@@ -243,6 +244,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][authors].
 [wget]: http://www.gnu.org/software/wget
 [fetch]: http://www.freebsd.org/cgi/man.cgi?fetch%281%29
 [node-js]: https://nodejs.org/en/
+[npm]: https://www.npmjs.com/
 
 [julia]: http://julialang.org/
 [r]: https://www.r-project.org/

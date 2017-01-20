@@ -972,9 +972,7 @@
 
 123. GitHub issues as a [blog](https://github.com/0x00A/blog)
 
-124. reviews
-
-     - is-empty-array => should this just be a method off of `isArray`? => `isArray.isEmptyArray`?
+124. [sync-request](https://github.com/ForbesLindesay/sync-request) => useful for REPL
 
 125. include a [creditcard](https://github.com/bendrucker/creditcards) validation module?
 
@@ -1241,7 +1239,7 @@
 
 240. pkg keyword force/network diagram where edges are pkgs and nodes are keywords
 
-241. `isNumberArray` is a bit leaky as, currently, really a check for `array`-like
+241. Anything [worthwhile](http://documentcloud.github.io/underscore-contrib)?
 
 242. [working remotely](https://github.com/lenazun/working-remotely) adapted for project communication
 
@@ -1466,8 +1464,6 @@
 339. fivethirtyeight [data](https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw)
 
 340. Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
-
-341. [sync-request](https://github.com/ForbesLindesay/sync-request) => useful for REPL
 
 
 ---

@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+#
+# Build script to run before performing install steps during Travis CI build [lifecycle][1].
+#
+# [1]: https://docs.travis-ci.com/user/customizing-the-build#The-Build-Lifecycle
+
+
+# VARIABLES #
+
+# Define the command for `node`:
+if [[ -z "${NODE}" ]]; then
+	cmd=node
+else
+	cmd="${NODE}"
+fi
+
+# Determine the script directory:
+dir=$(dirname "$0")
+
+# Define the path to an executable for determining npm version compatibility:
+node_npm_version="${dir}/../../scripts/node_npm_compatibility"
+
+# Determine a compatible npm version range:
+version=$("${cmd}" "${node_npm_version}")
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit 1
+}
+
+# Updates the npm client.
+#
+# $1 - acceptable version range
+update_npm() {
+   echo "Updating npm: ${version}." >&2
+
+   # Must wrap the version range in quotes to ensure range treated as a single string:
+   npm install -g npm@'"'"$1"'"'
+}
+
+# Main execution sequence.
+main() {
+	# Update npm. Older clients cannot, e.g., handle scoped modules.
+	update_npm "${version}"
+}
+
+# Set an error handler:
+trap 'on_error' ERR
+
+# Run main:
+main
