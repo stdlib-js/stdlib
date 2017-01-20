@@ -81,7 +81,7 @@ The following are the actual results:
 
 #### Environments
 
-> If this issue is a bug report, what environments are affected; e.g., `Node v0.4.x`, `Chrome`, `IE 11`? (If this is a feature request, remove this section.)
+> If this issue is a bug report, what environments are affected; e.g., `Node v0.4.x`, `Chrome`, `IE 11`? If Node.js, include the `npm` version, operating system, and any other potentially relevant platform information. (If this is a feature request, remove this section.)
 
 The following environments are affected:
 
