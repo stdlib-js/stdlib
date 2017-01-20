@@ -63,8 +63,8 @@ git:
 
 
 before_install:
-  # Update the npm client. Older clients cannot, e.g., handle scoped modules.
-  - npm update -g npm
+  - chmod +x ./tools/ci/travis/before_install
+  - "./tools/ci/travis/before_install"
 
 
 script:
