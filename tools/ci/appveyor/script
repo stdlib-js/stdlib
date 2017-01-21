@@ -101,7 +101,7 @@ run_tests() {
 # $1 - log file
 run_test_coverage() {
 	echo 'Running test coverage...' >&2
-	make test-cov >> "$1" 2>&1
+	make VERBOSE=1 test-cov >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
