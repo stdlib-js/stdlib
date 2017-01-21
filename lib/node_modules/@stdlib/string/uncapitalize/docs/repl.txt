@@ -1,0 +1,24 @@
+
+{{alias}}( str )
+    Lowercases the first character of a `string`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Uncapitalized string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Beep' )
+    'beep'
+    > out = {{alias}}( 'bOOp' )
+    'bOOp'
+
+    See Also
+    --------
+
