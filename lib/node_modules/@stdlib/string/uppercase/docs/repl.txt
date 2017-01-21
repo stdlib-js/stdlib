@@ -1,0 +1,22 @@
+
+{{alias}}( str )
+    Converts a `string` to uppercase.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Uppercase string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'bEEp' )
+    'BEEP'
+
+    See Also
+    --------
+
