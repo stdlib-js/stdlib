@@ -1,0 +1,95 @@
+
+{{alias}}( str, len[, options] )
+    Pads a `string` such that the padded `string` has length `len`.
+
+    Any padding which does not evenly divide available space is trimmed such
+    that the returned string length is always `len`.
+
+    If `len < str.length`, the input string is trimmed.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    len: integer
+        Output string length.
+
+    options: Object (optional)
+        Options.
+
+    options.lpad: string (optional)
+        String used to left pad.
+
+    options.rpad: string (optional)
+        String used to right pad.
+
+    options.centerRight: boolean (optional)
+        Boolean indicating whether to center right in the event of a tie.
+        Default: `false` (i.e., center left).
+
+    Returns
+    -------
+    out: string
+        Padded string.
+
+    Examples
+    --------
+    // Standard usage:
+    > var out = {{alias}}( 'a', 5 )
+    'a    '
+
+    // Left pad:
+    > out = {{alias}}( 'a', 10, { 'lpad': 'b' })
+    'bbbbbbbbba'
+
+    // Right pad:
+    > out = {{alias}}( 'a', 12, { 'rpad': 'b' })
+    'abbbbbbbbbbb'
+
+    // Center an input string:
+    > var opts = { 'lpad': 'a', 'rpad': 'c' };
+    > out = {{alias}}( 'b', 11, opts )
+    'aaaaabccccc'
+
+    // Left center:
+    > opts.centerRight = false;
+    > out = {{alias}}( 'b', 10, opts )
+    'aaaabccccc'
+
+    // Right center:
+    > opts.centerRight = true;
+    > out = {{alias}}( 'b', 10, opts )
+    'aaaaabcccc'
+
+    // Output string always length `len`:
+    > opts = { 'lpad': 'boop', 'rpad': 'woot' };
+    > out = {{alias}}( 'beep', 10, opts )
+    'boobeepwoo'
+
+    // Pad right, trim right:
+    > out = {{alias}}( 'beep', 2 )
+    'be'
+
+    // Pad left, trim left:
+    > opts = { 'lpad': 'b' };
+    > out = {{alias}}( 'beep', 2, opts )
+    'ep'
+
+    // Pad both, trim both:
+    > opts = { 'lpad': '@', 'rpad': '!' };
+    > out = {{alias}}( 'beep', 2, opts )
+    'ee'
+
+    // Pad both, trim both starting from left:
+    > out = {{alias}}( 'abcdef', 3, opts )
+    'cde'
+
+    // Pad both, trim both starting from right:
+    > opts.centerRight = true;
+    > out = {{alias}}( 'abcdef', 3, opts )
+    'bcd'
+
+    See Also
+    --------
+
