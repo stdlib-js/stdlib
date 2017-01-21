@@ -1,0 +1,38 @@
+
+{{alias}}( str, len[, pad] )
+    Right pads a `string` such that the padded `string` has a length of at least
+    `len`.
+
+    An output string is not guaranteed to have a length of exactly `len`, but to
+    have a length of at least `len`. To generate a padded string having a length
+    equal to `len`, post-process a padded string by trimming off excess
+    characters.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    len: integer
+        Minimum string length.
+
+    pad: string (optional)
+        String used to pad. Default: ' '.
+
+    Returns
+    -------
+    out: string
+        Padded string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'a', 5 )
+    'a    '
+    > out = {{alias}}( 'beep', 10, 'p' )
+    'beeppppppp'
+    > out = {{alias}}( 'beep', 12, 'boop' )
+    'beepboopboop'
+
+    See Also
+    --------
+
