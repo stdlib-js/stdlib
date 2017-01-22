@@ -63,10 +63,8 @@ git:
 
 
 before_install:
-  - npm install semver
   - chmod +x ./tools/ci/travis/before_install
   - "./tools/ci/travis/before_install"
-  - rm -rf ./node_modules
 
 
 script:
