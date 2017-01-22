@@ -6,10 +6,9 @@
 */
 'use strict';
 
-// MODULES //
+// VARIABLES //
 
-var semver = require( 'semver' );
-var NODE_VERSION = require( '@stdlib/utils/node-version' );
+var NODE_VERSION = process.versions.node;
 
 
 // FUNCTIONS //
@@ -21,7 +20,12 @@ var NODE_VERSION = require( '@stdlib/utils/node-version' );
 * @returns {string} npm version range
 */
 function version() {
-	if ( semver.lte( NODE_VERSION, '1.0.0' ) ) {
+	var major;
+	var parts;
+
+	parts = NODE_VERSION.split( '.' );
+	major = parseInt( parts[ 0 ], 10 );
+	if ( major <= 1 ) {
 		return '>2.7.0 <4.0.0';
 	}
 	return '>2.7.0';
