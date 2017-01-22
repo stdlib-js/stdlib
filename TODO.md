@@ -1469,6 +1469,10 @@
 
 342. [syncsplit](https://github.com/mcollina/syncsplit) and [syncthrough](https://github.com/mcollina/syncthrough)
 
+343. [iterative solvers](https://github.com/JuliaMath/IterativeSolvers.jl)
+
+344. should blas.dasum use [pairwise summation](https://en.wikipedia.org/wiki/Pairwise_summation)?
+
 
 ---
 
@@ -1804,7 +1808,7 @@
 
 69. [deque](https://github.com/petkaantonov/deque) and [denque](https://github.com/Salakar/denque)
 
-70. date [fcns](https://github.com/date-fns/date-fns)
+70. date [fcns](https://github.com/date-fns/date-fns) and [zeitgeist](https://github.com/webpapaya/zeitgeist.js)
 
 71. [ulid](https://github.com/oklog/ulid)
 
