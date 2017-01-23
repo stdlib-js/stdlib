@@ -21,7 +21,7 @@
 
     Examples
     --------
-    > var TODO = {{alias}}();
+    > var TODO = {{alias}}()
     TODO: abbrev output
 
     References
