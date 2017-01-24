@@ -51,6 +51,7 @@
     "debug": "^2.2.0",
     "electron": "^1.4.1",
     "minimist": "^1.2.0",
+    "nan": "^2.5.1",
     "object-keys": "^1.0.9",
     "readable-stream": "^2.1.4",
     "system.global": "^2.0.0",
