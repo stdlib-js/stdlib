@@ -114,13 +114,13 @@
 			"description": "package scripts",
 			"$ref": "#/definitions/string-map"
 		},
-		"main": {
-			"description": "main package entry point",
-			"$ref": "#/definitions/path"
-		},
 		"gypfile": {
 			"description": "boolean instructing npm that a package is a binary addon that needs compiling and that npm should invoke node-gyp",
 			"type": "boolean"
+		},
+		"main": {
+			"description": "main package entry point",
+			"$ref": "#/definitions/path"
 		},
 		"browser": {
 			"description": "main package entry point for a browser environment",

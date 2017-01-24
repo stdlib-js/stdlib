@@ -6,6 +6,7 @@
 	"contributors",
 	"bin",
 	"scripts",
+	"gypfile",
 	"main",
 	"browser",
 	"repository",
