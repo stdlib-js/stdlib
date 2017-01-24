@@ -1473,6 +1473,13 @@
 
 344. should blas.dasum use [pairwise summation](https://en.wikipedia.org/wiki/Pairwise_summation)?
 
+345. [array-lru](https://github.com/mafintosh/array-lru)
+
+346. Fortran style guide
+
+     - [CCSM](http://www.cesm.ucar.edu/working_groups/Software/dev_guide/dev_guide/node7.html)
+     - Modern Fortran [examples](http://flibs.sourceforge.net/examples_modern_fortran.html)
+
 
 ---
 
