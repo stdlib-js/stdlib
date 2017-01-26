@@ -6,6 +6,7 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var parseArgs = require( 'minimist' );
+var notifier = require( 'update-notifier' );
 var cwd = require( '@stdlib/utils/cwd' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
@@ -22,6 +23,14 @@ var main = require( './../lib' );
 * init();
 */
 function init() {
+	var opts;
+
+	// Check if newer versions exist for this package:
+	opts = {
+		'pkg': pkg
+	};
+	notifier( opts ).notify();
+
 	// Set the process title to allow the process to be more easily identified:
 	process.title = pkg.name;
 	process.stdout.on( 'error', process.exit );
