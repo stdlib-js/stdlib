@@ -85,7 +85,7 @@ function readPkgs( files, clbk ) {
 			debug( 'Encountered an error when testing for binding: %s (%d of %d). Error: %s', files[ i ], j, total, error.message );
 		} else if ( bool ) {
 			debug( 'Resolved binding.' );
-			out.push( files[ i ] );
+			out.push( dirname( files[ i ] ) );
 		} else {
 			debug( 'Unable to resolve binding.' );
 		}
