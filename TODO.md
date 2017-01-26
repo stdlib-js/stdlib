@@ -1480,6 +1480,10 @@
      - [CCSM](http://www.cesm.ucar.edu/working_groups/Software/dev_guide/dev_guide/node7.html)
      - Modern Fortran [examples](http://flibs.sourceforge.net/examples_modern_fortran.html)
 
+347. [oec](http://atlas.media.mit.edu/en/resources/data/) data
+
+348. bring Buffer polyfill in-house (will either need to include Object polyfill or be paired with a typed array polyfill to support older environments)
+
 
 ---
 
