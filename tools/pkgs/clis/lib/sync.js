@@ -10,6 +10,7 @@ var copy = require( '@stdlib/utils/copy' );
 var readJSON = require( '@stdlib/fs/read-json' ).sync;
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var dirname = require( '@stdlib/utils/dirname' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
 
@@ -73,14 +74,15 @@ function findCLIs( options ) {
 		if ( file instanceof Error ) {
 			throw file;
 		}
+		dir = dirname( files[ i ] );
 		if ( isString( file.bin ) ) {
-			fpath = resolve( files[ i ], file.bin );
+			fpath = resolve( dir, file.bin );
 			out.push( fpath );
 		} else if ( hasOwnProp( file, 'bin' ) ) {
 			keys = getKeys( file.bin );
 			for ( j = 0; j < keys.length; j++ ) {
 				fpath = file.bin[ keys[j] ];
-				fpath = resolve( files[ i ], fpath );
+				fpath = resolve( dir, fpath );
 				out.push( fpath );
 			}
 		}

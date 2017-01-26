@@ -8,6 +8,7 @@ var getKeys = require( 'object-keys' ).shim();
 var readJSON = require( '@stdlib/fs/read-json' );
 var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
 var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var dirname = require( '@stdlib/utils/dirname' );
 
 
 // MAIN //
@@ -18,6 +19,7 @@ var hasOwnProp = require( '@stdlib/utils/has-own-property' );
 * @private
 * @param {StringArray} files - list of `package.json` files
 * @param {Callback} clbk - callback to invoke upon completion
+* @returns {void}
 */
 function readPkgs( files, clbk ) {
 	var total;
@@ -28,7 +30,7 @@ function readPkgs( files, clbk ) {
 	i = -1;
 	out = [];
 
-	next();
+	return next();
 
 	/**
 	* Reads the next `package.json` file.
@@ -47,10 +49,12 @@ function readPkgs( files, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Object} json - JSON object
+	* @returns {void}
 	*/
 	function onRead( error, json ) {
 		var fpath;
 		var keys;
+		var dir;
 		var j;
 		var k;
 
@@ -61,8 +65,9 @@ function readPkgs( files, clbk ) {
 		}
 		debug( 'Successfully read file: %s (%d of %d).', files[ i ], j, total );
 
+		dir = dirname( files[ i ] );
 		if ( isString( json.bin ) ) {
-			fpath = resolve( files[ i ], json.bin );
+			fpath = resolve( dir, json.bin );
 			debug( 'Resolved %s.', fpath );
 			out.push( fpath );
 		} else if ( hasOwnProp( json, 'bin' ) ) {
@@ -70,7 +75,7 @@ function readPkgs( files, clbk ) {
 			keys = getKeys( json.bin );
 			for ( k = 0; k < keys.length; k++ ) {
 				fpath = json.bin[ keys[k] ];
-				fpath = resolve( files[ i ], fpath );
+				fpath = resolve( dir, fpath );
 				debug( 'Resolved %s.', fpath );
 				out.push( fpath );
 			}
@@ -89,6 +94,7 @@ function readPkgs( files, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function done( error ) {
 		if ( error ) {
