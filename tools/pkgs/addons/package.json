@@ -1,0 +1,54 @@
+{
+  "name": "@stdlib/tools/pkgs/addons",
+  "version": "0.0.0",
+  "description": "Find native add-ons.",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "find-pkg-addons": "./bin/cli"
+  },
+  "scripts": {},
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "keywords": [
+    "stdlib",
+    "tools",
+    "tool",
+    "list",
+    "ls",
+    "find",
+    "search",
+    "modules",
+    "names",
+    "packages",
+    "pkgs",
+    "add-ons",
+    "add-on",
+    "addons",
+    "addon",
+    "interface",
+    "program",
+    "native"
+  ],
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "Apache-2.0"
+}
