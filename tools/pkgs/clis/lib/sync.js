@@ -28,7 +28,7 @@ var validate = require( './validate.js' );
 * @throws {TypeError} must provide valid options
 * @throws {Error} `pattern` option must end with `package.json`
 * @throws {Error} unable to parse `package.json` as JSON
-* @returns {StringArray} list of command-line interfaces
+* @returns {(Array|StringArray)} list of command-line interfaces
 *
 * @example
 * var files = findCLIs();
