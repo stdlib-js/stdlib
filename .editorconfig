@@ -19,6 +19,18 @@ indent_style = tab
 [*.R]
 indent_style = tab
 
+[*.c]
+indent_style = tab
+
+[*.h]
+indent_style = tab
+
+[*.cpp]
+indent_style = tab
+
+[*.hpp]
+indent_style = tab
+
 [*.f]
 indent_style = space
 indent_size = 2
