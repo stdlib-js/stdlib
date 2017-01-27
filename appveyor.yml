@@ -175,8 +175,8 @@ install:
   - cmd: set PATH=%APPDATA%\npm;%PATH%
 
   # Print debug info:
-  - cmd: %WIN_GCC% --version
-  - cmd: %WIN_GFORTRAN% --version
+  - cmd: '%WIN_GCC% --version'
+  - cmd: '%WIN_GFORTRAN% --version'
   - cmd: git --version
   - cmd: node --version
   - cmd: npm --version
