@@ -19,6 +19,12 @@ dependencies:
 
 # Custom test commands:
 test:
+  pre:
+    - 'gcc --version':
+        parallel: true
+    - 'gfortran --version':
+        parallel: true
+
   override:
     - 'chmod +x ./tools/ci/circle/script && ./tools/ci/circle/script':
         parallel: true
