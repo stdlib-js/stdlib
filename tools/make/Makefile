@@ -31,6 +31,16 @@ else
 endif
 # TODO: add Windows command
 
+# Determine the OS:
+OS := $(shell uname)
+ifneq (, $(findstring MINGW,$(OS)))
+	OS := WINNT
+else
+ifneq (, $(findstring MSYS,$(OS)))
+	OS := WINNT
+endif
+endif
+
 
 # DEPENDENCIES #
 
