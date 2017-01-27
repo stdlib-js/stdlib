@@ -170,6 +170,20 @@ install() {
 	return 0
 }
 
+# Builds add-ons.
+#
+# $1 - log file
+build_addons() {
+	echo 'Building add-ons...' >&2
+	make C_COMPILER=gcc FORTRAN_COMPILER=gfortran install-addons >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred when building add-ons.' >&2
+		return 1
+	fi
+	echo 'Building add-ons successful.' >&2
+	return 0
+}
+
 # Initializes the Node.js environment.
 #
 # $1 - Node.js version
@@ -184,6 +198,10 @@ init() {
 		return 1
 	fi
 	install "$2"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	build_addons "$2"
 	if [[ "$?" -ne 0 ]]; then
 		return 1
 	fi
