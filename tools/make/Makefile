@@ -16,9 +16,6 @@ CXX_COMPILER ?= g++
 # Define the Fortran compiler:
 FORTRAN_COMPILER ?= gfortran
 
-# Define the Fortran/C linker:
-LINKER ?= gfortran
-
 # Define the command for removing files and directories:
 DELETE ?= -rm
 DELETE_FLAGS ?= -rf
