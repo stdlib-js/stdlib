@@ -32,7 +32,13 @@ node_js:
 env:
   # Environment variables common to all jobs:
   global:
+    - CC=g++-4.8
+    - C_COMPILER=g++-4.8
     - CXX=g++-4.8
+    - CXX_COMPILER=g++-4.8
+    - FC=gfortran-6
+    - FORTRAN_COMPILER=gfortran-6
+    - LINKER=gfortran-6
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct build matrix:
@@ -64,6 +70,11 @@ git:
 
 
 before_install:
+  # Print debug info:
+  - gcc --version
+  - gfortran --version
+
+  # Run pre-install tasks:
   - chmod +x ./tools/ci/travis/before_install
   - "./tools/ci/travis/before_install"
 
