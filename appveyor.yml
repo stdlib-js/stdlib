@@ -3,6 +3,28 @@
 version: '{build}'
 
 environment:
+  global:
+    APPVEYOR_BUILD_SYS: MSYS2
+
+    # Executables from within Windows:
+    WIN_SHELL: C:\msys64\usr\bin\bash
+    WIN_MAKE: C:\msys64\usr\bin\make
+    WIN_SETUP: C:\msys64\usr\bin\bash
+
+    # Executables from within MSYS2:
+    SHELL: /usr/bin/bash
+    MAKE: /usr/bin/make
+    SETUP: /usr/bin/bash
+
+    # Compilers:
+    CC: /c/msys64/mingw64/bin/gcc
+    C_COMPILER: /c/msys64/mingw64/bin/gcc
+    CXX: /c/msys64/mingw64/bin/g++
+    CXX_COMPILER: /c/msys64/mingw64/bin/g++
+    FC: /c/msys64/mingw64/bin/gfortran
+    FORTRAN_COMPILER: /c/msys64/mingw64/bin/gfortran
+    LINKER: /c/msys64/mingw64/bin/gfortran
+
   matrix:
     # Unit tests:
     - nodejs_version: '7'
@@ -143,19 +165,22 @@ install:
   # Install node module dependencies:
   - cmd: npm install || type npm-debug.log
 
+  # Remove [MinGW][1], a minimalist GNU for Windows, from the path. This version is old and no longer maintained. To generate builds with modern tool chains, need to use an alternative.
+  #
+  # [1]: http://www.mingw.org/
+  - cmd: set PATH=%PATH:C:\MinGW\bin;=%
+
+  # In order to run `make` commands and perform compilation steps, we can use [MSYS2][1], an independent rewrite of [MSYS][2] based on modern Cygwin (POSIX compatibility layer) and [MinGW-w64][3], by adding the application folder to the `PATH` variable.
+  #
+  # [1]: https://msys2.github.io/
+  # [2]: http://www.mingw.org/wiki/MSYS
+  # [3]: https://mingw-w64.org/doku.php
+  - cmd: set PATH=C:\msys64\usr\bin;C:\msys64\mingw64\bin;%PATH%
+
 
 build_script:
   # If a newer build is queued for the same PR, cancel the current build:
   - ps: 'if ($env:APPVEYOR_PULL_REQUEST_NUMBER -and $env:APPVEYOR_BUILD_NUMBER -ne ((Invoke-RestMethod `https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/$env:APPVEYOR_PROJECT_SLUG/history?recordsNumber=50).builds | `Where-Object pullRequestId -eq $env:APPVEYOR_PULL_REQUEST_NUMBER)[0].buildNumber) { `throw "Canceling the current build as newer builds are queued for this pull request." }'
-
-
-before_test:
-  # In order to run `make` commands, we can use [MinGW][1], a minimalist GNU for Windows, by adding the application folder to the `PATH` variable. For a reference configuration, see [utf8proc][2] and [julia][3].
-  #
-  # [1]: http://www.mingw.org/
-  # [2]: http://fossies.org/linux/utf8proc/appveyor.yml
-  # [3]: https://github.com/JuliaLang/julia/blob/master/appveyor.yml
-  - cmd: set PATH=C:\MinGW\bin;%PATH%
 
 
 test_script:
@@ -164,18 +189,13 @@ test_script:
   - cmd: node --version
   - cmd: npm --version
 
-  # Rely on [MSYS][1], a collection of GNU utilities including `make`, being installed in a `1.0` directory.
-  #
-  # [1]: http://www.mingw.org/wiki/MSYS
-  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
+  # Run tests:
+  - cmd: '%WIN_SHELL% "/c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
 
 
 # Scripts run after a build success or failure:
 on_finish:
-  # Rely on [MSYS][1], a collection of GNU utilities including `make`, being installed in a `1.0` directory.
-  #
-  # [1]: http://www.mingw.org/wiki/MSYS
-  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -c " /c/projects/stdlib/tools/ci/appveyor/on_finish"'
+  - cmd: '%WIN_SHELL% /c/projects/stdlib/tools/ci/appveyor/on_finish'
 
 
 notifications:
