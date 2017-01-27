@@ -25,7 +25,7 @@ FORTRAN_COMPILER ?= gfortran
 
 install-addons: $(NODE_GYP)
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
-		if [[ "$$pkg" != /* ]]; then \
+		if echo "$$pkg" | grep -v '^\/.*' >/dev/null; then \
 			continue; \
 		fi; \
 		echo ''; \
@@ -48,7 +48,7 @@ install-addons: $(NODE_GYP)
 
 clean-addons:
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
-		if [[ "$$pkg" != /* ]]; then \
+		if echo "$$pkg" | grep -v '^\/.*' >/dev/null; then \
 			continue; \
 		fi; \
 		echo ''; \
