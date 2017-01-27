@@ -10,6 +10,8 @@ environment:
     WIN_SHELL: C:\msys64\usr\bin\bash
     WIN_MAKE: C:\msys64\usr\bin\make
     WIN_SETUP: C:\msys64\usr\bin\bash
+    WIN_GCC: C:\msys64\mingw64\bin\gcc
+    WIN_GFORTRAN: C:\msys64\mingw64\bin\gfortran
 
     # Executables from within MSYS2:
     SHELL: /usr/bin/bash
@@ -144,27 +146,6 @@ init:
 
 
 install:
-  # Install updated browsers for browser testing:
-  # TODO: address 32-bit vs 64-bit installs
-  - cmd: choco upgrade firefox
-  - cmd: choco upgrade googlechrome
-
-  # Switch to the desired Node version:
-  - ps: Install-Product node $env:nodejs_version
-
-  # Set the NODE_PATH environment variable (use POSIX path convention):
-  - cmd: set NODE_PATH=/c/projects/stdlib/lib/node_modules
-  - cmd: echo %NODE_PATH%
-
-  # Update the npm client. Older clients cannot, e.g., handle scoped modules, and on Windows are subject to race conditions (see https://github.com/appveyor/ci/issues/102 and https://www.appveyor.com/docs/lang/nodejs-iojs/#locking-errors-eperm-eexist-tgzlock ).
-  - cmd: npm install -g npm@"%npm_version%"
-  - cmd: npm --version
-  - cmd: npm config get registry
-  - cmd: set PATH=%APPDATA%\npm;%PATH%
-
-  # Install node module dependencies:
-  - cmd: npm install || type npm-debug.log
-
   # Remove [MinGW][1], a minimalist GNU for Windows, from the path. This version is old and no longer maintained. To generate builds with modern tool chains, need to use an alternative.
   #
   # [1]: http://www.mingw.org/
@@ -177,6 +158,33 @@ install:
   # [3]: https://mingw-w64.org/doku.php
   - cmd: set PATH=C:\msys64\usr\bin;C:\msys64\mingw64\bin;%PATH%
 
+  # Install updated browsers for browser testing:
+  # TODO: address 32-bit vs 64-bit installs
+  - cmd: choco upgrade firefox
+  - cmd: choco upgrade googlechrome
+
+  # Switch to the desired Node version:
+  - ps: Install-Product node $env:nodejs_version
+
+  # Set the NODE_PATH environment variable (use POSIX path convention):
+  - cmd: set NODE_PATH=/c/projects/stdlib/lib/node_modules
+  - cmd: echo %NODE_PATH%
+
+  # Update the npm client. Older clients cannot handle scoped modules and, on Windows, are subject to race conditions (see https://github.com/appveyor/ci/issues/102 and https://www.appveyor.com/docs/lang/nodejs-iojs/#locking-errors-eperm-eexist-tgzlock ).
+  - cmd: npm install -g npm@"%npm_version%"
+  - cmd: set PATH=%APPDATA%\npm;%PATH%
+
+  # Print debug info:
+  - cmd: %WIN_GCC% --version
+  - cmd: %WIN_GFORTRAN% --version
+  - cmd: git --version
+  - cmd: node --version
+  - cmd: npm --version
+  - cmd: npm config get registry
+
+  # Install node module dependencies:
+  - cmd: npm install || type npm-debug.log
+
 
 build_script:
   # If a newer build is queued for the same PR, cancel the current build:
@@ -184,12 +192,6 @@ build_script:
 
 
 test_script:
-  # Print debug info:
-  - cmd: git --version
-  - cmd: node --version
-  - cmd: npm --version
-
-  # Run tests:
   - cmd: '%WIN_SHELL% /c/projects/stdlib/tools/ci/appveyor/script %BUILD_TASK%'
 
 
