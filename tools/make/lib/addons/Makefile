@@ -25,6 +25,9 @@ FORTRAN_COMPILER ?= gfortran
 
 install-addons: $(NODE_GYP)
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
+		if [[ "$$pkg" != /* ]]; then \
+			continue; \
+		fi; \
 		echo ''; \
 		echo "Add-on: $$pkg"; \
 		echo 'Compiling source...'; \
@@ -33,7 +36,7 @@ install-addons: $(NODE_GYP)
 			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
 			$(MAKE); \
 		echo 'Building add-on...'; \
-		cd .. && $(NODE_GYP) rebuild; \
+		cd .. && $(NODE_GYP) rebuild || exit 1; \
 	done
 
 .PHONY: install-addons
@@ -45,12 +48,15 @@ install-addons: $(NODE_GYP)
 
 clean-addons:
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
+		if [[ "$$pkg" != /* ]]; then \
+			continue; \
+		fi; \
 		echo ''; \
 		echo "Add-on: $$pkg"; \
 		echo 'Cleaning source...'; \
 		cd $$pkg/src && $(MAKE) clean; \
 		echo 'Cleaning add-on...'; \
-		cd .. && $(NODE_GYP) clean; \
+		cd .. && $(NODE_GYP) clean || exit 1; \
 	done
 
 .PHONY: clean-addons
