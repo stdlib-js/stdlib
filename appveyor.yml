@@ -25,7 +25,6 @@ environment:
     CXX_COMPILER: /c/msys64/mingw64/bin/g++
     FC: /c/msys64/mingw64/bin/gfortran
     FORTRAN_COMPILER: /c/msys64/mingw64/bin/gfortran
-    LINKER: /c/msys64/mingw64/bin/gfortran
 
   matrix:
     # Unit tests:

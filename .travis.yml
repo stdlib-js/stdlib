@@ -38,7 +38,6 @@ env:
     - CXX_COMPILER=g++-4.8
     - FC=gfortran-6
     - FORTRAN_COMPILER=gfortran-6
-    - LINKER=gfortran-6
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct build matrix:
