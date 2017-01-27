@@ -7,6 +7,18 @@ NPM ?= npm
 # Define the command for `node`:
 NODE ?= node
 
+# Define the C compiler:
+C_COMPILER ?= gcc
+
+# Define the C++ compiler:
+CXX_COMPILER ?= g++
+
+# Define the Fortran compiler:
+FORTRAN_COMPILER ?= gfortran
+
+# Define the Fortran/C linker:
+LINKER ?= gfortran
+
 # Define the command for removing files and directories:
 DELETE ?= -rm
 DELETE_FLAGS ?= -rf
@@ -29,6 +41,7 @@ include $(TOOLS_MAKE_LIB_DIR)/help/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/init/Makefile
 
 # Please keep sorted in alphabetical order:
+include $(TOOLS_MAKE_LIB_DIR)/addons/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/benchmark/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/bib/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/complexity/Makefile
