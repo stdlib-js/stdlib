@@ -1,0 +1,68 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object of booleans.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object of booleans.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ true, false, true ] )
+    true
+    > bool = {{alias}}( [ true, 'abc', false ] )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only boolean primitives.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        boolean primitives.
+
+    Examples
+    --------
+    > var bool = {{alias}}.primitives( [ true, false ] )
+    true
+    > bool = {{alias}}.primitives( [ false, new Boolean( true ) ] )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only Boolean objects.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array-like object containing only
+        Boolean objects.
+
+    Examples
+    --------
+    > var bool = {{alias}}.objects( [ new Boolean( false ), true ] )
+    false
+    > bool = {{alias}}.objects( [ new Boolean( false ), new Boolean( true ) ] )
+    true
+
+    See Also
+    --------
+
