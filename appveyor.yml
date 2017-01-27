@@ -190,7 +190,7 @@ test_script:
   - cmd: npm --version
 
   # Run tests:
-  - cmd: '%WIN_SHELL% "/c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
+  - cmd: '%WIN_SHELL% /c/projects/stdlib/tools/ci/appveyor/script %BUILD_TASK%'
 
 
 # Scripts run after a build success or failure:
