@@ -70,8 +70,8 @@ git:
 
 before_install:
   # Print debug info:
-  - gcc --version
-  - gfortran --version
+  - g++-4.8 --version
+  - gfortran-6 --version
 
   # Run pre-install tasks:
   - chmod +x ./tools/ci/travis/before_install
