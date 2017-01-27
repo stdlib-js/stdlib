@@ -22,12 +22,6 @@ dependencies:
     - 'npm --version'
 
 
-# Compile tasks:
-compile:
-  override:
-    - 'C_COMPILER=gcc FORTRAN_COMPILER=gfortran make install-addons'
-
-
 # Custom test commands:
 test:
   override:
