@@ -25,7 +25,7 @@ function version() {
 
 	parts = NODE_VERSION.split( '.' );
 	major = parseInt( parts[ 0 ], 10 );
-	if ( major <= 1 ) {
+	if ( major <= 3 ) {
 		return '>2.7.0 <4.0.0';
 	}
 	return '>2.7.0';
