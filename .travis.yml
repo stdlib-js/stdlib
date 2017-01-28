@@ -2,7 +2,7 @@
 #   http://lint.travis-ci.org/
 #
 # Known lint bugs:
-#   - addons: https://github.com/travis-ci/travis-yaml/issues/58
+#   - add-ons: https://github.com/travis-ci/travis-yaml/issues/58
 #   - osx: https://github.com/travis-ci/travis-yaml/issues/95
 
 language: node_js
@@ -25,9 +25,32 @@ node_js:
   - '0.12'
   - '0.10'
 
+
+os:
+  - linux
+  - osx
+
+# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Add-ons are Linux-specific.
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - binutils
+      - gcc-5
+      - g++-5
+      - gfortran-5
+
+
 env:
   # Environment variables common to all jobs:
   global:
+    - CC=gcc
+    - C_COMPILER=gcc
+    - CXX=g++
+    - CXX_COMPILER=g++
+    - FC=gfortran
+    - FORTRAN_COMPILER=gfortran
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct build matrix:
@@ -42,29 +65,6 @@ matrix:
   # Flag to immediately finish a build if any one of the jobs fails:
   fast_finish: true
 
-  include:
-
-    # Configuration for Linux:
-    - os: linux
-
-      # Linux-specific environment variables:
-      env: CC="g++-4.8" C_COMPILER="g++-4.8" CXX="g++-4.8" CXX_COMPILER="g++-4.8" FC="gfortran-6" FORTRAN_COMPILER="gfortran-6"
-
-      # Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5.
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-4.8
-            - gfortran-6
-
-    # Configuration for MacOS:
-    - os: osx
-
-      # MacOS-specific environment variables:
-      env: CC="gcc" C_COMPILER="gcc" CXX="g++" CXX_COMPILER="g++" FC="gfortran" FORTRAN_COMPILER="gfortran"
-
 
 # Set the clone depth:
 git:
@@ -72,6 +72,16 @@ git:
 
 
 before_install:
+  # Perform platform-specific initialization:
+  - if [[ $(uname) = "Linux" ]]; then
+      echo 'Running on Linux...';
+      ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
+      ln -s /usr/bin/g++-5 $HOME/bin/g++;
+      ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
+    elif [[ $(uname) = "Darwin" ]]; then
+      echo 'Running on Darwin...';
+    fi
+
   # Print debug info:
   - echo "$($CC --version)"
   - echo "$($FC --version)"
