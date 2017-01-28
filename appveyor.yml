@@ -199,7 +199,7 @@ test_script:
 
 # Scripts run after a build success or failure:
 on_finish:
-  - cmd: 'C:\msys64\usr\bin\sh.exe --login -i -c " /c/projects/stdlib/tools/ci/appveyor/on_finish"'
+  - cmd: '%WIN_SHELL% --login -i -c " /c/projects/stdlib/tools/ci/appveyor/on_finish"'
 
 
 notifications:
