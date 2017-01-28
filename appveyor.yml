@@ -187,6 +187,7 @@ install:
   # [2]: https://github.com/nodejs/node-gyp#installation
   - cmd: npm install --global --production windows-build-tools
   - cmd: npm config set python "%USERPROFILE%\.windows-build-tools\python27\python.exe"
+  - cmd: set PATH=%PATH:C:\Python27;=%
   - cmd: set PATH=%USERPROFILE%\.windows-build-tools\python27;%PATH%
 
   - cmd: echo %PATH%
