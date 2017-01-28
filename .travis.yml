@@ -78,6 +78,10 @@ before_install:
   - "./tools/ci/travis/before_install"
 
 
+install:
+  - make install
+
+
 script:
   - chmod +x ./tools/ci/travis/script
   - "./tools/ci/travis/script $BUILD_TASK"
