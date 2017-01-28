@@ -191,7 +191,7 @@ build_script:
 
 
 test_script:
-  - cmd: 'C:\msys64\usr\bin\sh.exe --login -i -c " /c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
+  - cmd: 'C:\MinGW\msys\1.0\bin\sh --login -i -c " /c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
 
 
 # Scripts run after a build success or failure:
