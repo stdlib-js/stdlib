@@ -79,7 +79,7 @@ before_install:
 
 
 install:
-  - make install
+  - "make C_COMPILER=$C_COMPILER FORTRAN_COMPILER=$FORTRAN_COMPILER install"
 
 
 script:
