@@ -17,6 +17,9 @@ endif
 
 NODE_GYP ?= $(BIN_DIR)/node-gyp
 
+# Define command-line options when invoking node-gyp.
+NODE_GYP_FLAGS ?=
+
 # Define the C compiler:
 C_COMPILER ?= gcc
 
@@ -58,7 +61,7 @@ install-addons: $(NODE_GYP)
 			fPIC=$(fPIC) \
 			$(MAKE); \
 		echo 'Building add-on...'; \
-		cd .. && $(NODE_GYP) rebuild || exit 1; \
+		cd .. && $(NODE_GYP) $(NODE_GYP_FLAGS) rebuild || exit 1; \
 	done
 
 .PHONY: install-addons
@@ -78,7 +81,7 @@ clean-addons:
 		echo 'Cleaning source...'; \
 		cd $$pkg/src && $(MAKE) clean; \
 		echo 'Cleaning add-on...'; \
-		cd .. && $(NODE_GYP) clean || exit 1; \
+		cd .. && $(NODE_GYP) $(NODE_GYP_FLAGS) clean || exit 1; \
 	done
 
 .PHONY: clean-addons
