@@ -10,10 +10,6 @@ language: node_js
 # Is `sudo` required? If not, jobs are run on container-based infrastructure.
 sudo: true
 
-os:
-  - linux
-  - osx
-
 node_js:
   # Node.js
   - 'node'
@@ -32,12 +28,6 @@ node_js:
 env:
   # Environment variables common to all jobs:
   global:
-    - CC=g++-4.8
-    - C_COMPILER=g++-4.8
-    - CXX=g++-4.8
-    - CXX_COMPILER=g++-4.8
-    - FC=gfortran-6
-    - FORTRAN_COMPILER=gfortran-6
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct build matrix:
@@ -52,15 +42,28 @@ matrix:
   # Flag to immediately finish a build if any one of the jobs fails:
   fast_finish: true
 
+  include:
 
-# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5.
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-      - gfortran-6
+    # Configuration for Linux:
+    - os: linux
+
+      # Linux-specific environment variables:
+      env: CC="g++-4.8" C_COMPILER="g++-4.8" CXX="g++-4.8" CXX_COMPILER="g++-4.8" FC="gfortran-6" FORTRAN_COMPILER="gfortran-6"
+
+      # Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5.
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.8
+            - gfortran-6
+
+    # Configuration for MacOS:
+    - os: osx
+
+      # MacOS-specific environment variables:
+      env: CC="gcc" C_COMPILER="gcc" CXX="g++" CXX_COMPILER="g++" FC="gfortran" FORTRAN_COMPILER="gfortran"
 
 
 # Set the clone depth:
@@ -70,8 +73,8 @@ git:
 
 before_install:
   # Print debug info:
-  - g++-4.8 --version
-  - gfortran-6 --version
+  - echo "$($CC --version)"
+  - echo "$($FC --version)"
 
   # Run pre-install tasks:
   - chmod +x ./tools/ci/travis/before_install
