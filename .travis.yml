@@ -38,8 +38,11 @@ addons:
     packages:
       - binutils
       - gcc-5
+      - gcc-5-multilib
       - g++-5
+      - g++-5-multilib
       - gfortran-5
+      - gfortran-5-multilib
 
 
 env:
