@@ -181,6 +181,12 @@ install:
   - cmd: npm --version
   - cmd: npm config get registry
 
+  # Install Windows build tools for compiling native Node modules.
+  #
+  # [1]: https://github.com/felixrieseberg/windows-build-tools
+  # [2]: https://github.com/nodejs/node-gyp#installation
+  - cmd: npm install --global --production windows-build-tools
+
   # Perform installation tasks:
   - cmd: '%WIN_MAKE% install'
 
