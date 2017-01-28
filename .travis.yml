@@ -78,7 +78,7 @@ before_install:
       ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
       ln -s /usr/bin/g++-5 $HOME/bin/g++;
       ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
-    elif [[ $(uname) = "Darwin" ]]; then
+    else
       echo '';
     fi
 
