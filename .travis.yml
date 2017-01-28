@@ -79,7 +79,8 @@ before_install:
       ln -s /usr/bin/g++-5 $HOME/bin/g++;
       ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
     else
-      echo '';
+      brew update;
+      brew install -v gcc;
     fi
 
   # Print debug info:
