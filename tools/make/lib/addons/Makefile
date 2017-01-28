@@ -45,7 +45,6 @@ endif
 # This target installs native add-ons.
 
 install-addons: $(NODE_GYP)
-	$(QUIET) echo $(PATH)
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
