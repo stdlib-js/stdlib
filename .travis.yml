@@ -73,18 +73,26 @@ git:
 
 before_install:
   # Perform platform-specific initialization:
-  - if [[ $(uname) = "Linux" ]]; then
-      echo 'Running on Linux...';
+  - if [[ $TRAVIS_OS_NAME == "linux" ]]; then
+      mkdir -p $HOME/bin;
       ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
       ln -s /usr/bin/g++-5 $HOME/bin/g++;
       ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
     elif [[ $(uname) = "Darwin" ]]; then
-      echo 'Running on Darwin...';
     fi
 
   # Print debug info:
   - echo "$($CC --version)"
   - echo "$($FC --version)"
+
+  - git --version
+
+  - file $(which node)
+  - node --version
+  - node -p 'process.platform + "@" + process.arch'
+
+  - npm --version
+  - npm config get registry
 
   # Run pre-install tasks:
   - chmod +x ./tools/ci/travis/before_install
