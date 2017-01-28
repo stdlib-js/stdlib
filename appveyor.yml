@@ -181,8 +181,8 @@ install:
   - cmd: npm --version
   - cmd: npm config get registry
 
-  # Install node module dependencies:
-  - cmd: npm install || type npm-debug.log
+  # Perform installation tasks:
+  - cmd: '%WIN_MAKE% install'
 
 
 build_script:
