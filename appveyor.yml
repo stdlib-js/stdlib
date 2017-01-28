@@ -191,12 +191,12 @@ build_script:
 
 
 test_script:
-  - cmd: '%WIN_SHELL% /c/projects/stdlib/tools/ci/appveyor/script %BUILD_TASK%'
+  - cmd: 'C:\msys64\usr\bin\sh.exe --login -c " /c/projects/stdlib/tools/ci/appveyor/script $BUILD_TASK"'
 
 
 # Scripts run after a build success or failure:
 on_finish:
-  - cmd: '%WIN_SHELL% /c/projects/stdlib/tools/ci/appveyor/on_finish'
+  - cmd: 'C:\msys64\usr\bin\sh.exe --login -c " /c/projects/stdlib/tools/ci/appveyor/on_finish"'
 
 
 notifications:
