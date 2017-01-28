@@ -92,7 +92,7 @@ all: help
 # This target runs the project's cleanup sequence.
 
 clean: clean-node clean-cov clean-docs
-	$(DELETE) $(DELETE_FLAGS) $(BUILD_DIR)
-	$(DELETE) $(DELETE_FLAGS) $(REPORTS_DIR)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(BUILD_DIR)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(REPORTS_DIR)
 
 .PHONY: clean
