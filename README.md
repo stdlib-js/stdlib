@@ -30,7 +30,7 @@ While not required to run stdlib, the following dependencies may be required for
 * [Julia][julia]: language for technical computing (version `>= 0.4`)
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
-* [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.7`; clang version `>= 3.1`)
+* [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`)
 * [pandoc][pandoc]: universal document converter
 
 The following vendor libraries can be automatically downloaded and compiled from source using `make`:
