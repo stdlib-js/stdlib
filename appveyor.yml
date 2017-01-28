@@ -186,6 +186,7 @@ install:
   # [1]: https://github.com/felixrieseberg/windows-build-tools
   # [2]: https://github.com/nodejs/node-gyp#installation
   - cmd: npm install --global --production windows-build-tools
+  - cmd: set PATH=%USERPROFILE%\.windows-build-tools\python27;%PATH%
 
   # Perform installation tasks:
   - cmd: '%WIN_MAKE% install'
