@@ -65,7 +65,11 @@ install-addons: $(NODE_GYP)
 			fPIC=$(fPIC) \
 			$(MAKE) && \
 		echo 'Building add-on...' && \
-		cd .. && $(NODE_GYP) $(NODE_GYP_FLAGS) rebuild || exit 1; \
+		cd .. && \
+			CC=$(CC) \
+			CXX=$(CXX) \
+			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
+		|| exit 1; \
 	done
 
 .PHONY: install-addons
