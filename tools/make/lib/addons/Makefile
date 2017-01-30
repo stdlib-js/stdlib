@@ -56,8 +56,11 @@ install-addons: $(NODE_GYP)
 		echo "Add-on: $$pkg"; \
 		echo 'Compiling source...'; \
 		cd $$pkg/src && \
+			CC=$(CC) \
 			C_COMPILER=$(C_COMPILER) \
+			CXX=$(CXX) \
 			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
+			FC=$(FC) \
 			fPIC=$(fPIC) \
 			$(MAKE); \
 		echo 'Building add-on...'; \
