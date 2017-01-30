@@ -184,7 +184,6 @@ install:
   - cmd: git --version
 
   - cmd: node --version
-  - cmd: node -p 'process.platform + "@" + process.arch'
 
   - cmd: npm --version
   - cmd: npm config get registry
