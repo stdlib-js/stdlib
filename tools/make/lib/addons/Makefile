@@ -63,8 +63,8 @@ install-addons: $(NODE_GYP)
 			FC=$(FC) \
 			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
 			fPIC=$(fPIC) \
-			$(MAKE); \
-		echo 'Building add-on...'; \
+			$(MAKE) && \
+		echo 'Building add-on...' && \
 		cd .. && $(NODE_GYP) $(NODE_GYP_FLAGS) rebuild || exit 1; \
 	done
 
