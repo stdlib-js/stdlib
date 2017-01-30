@@ -59,8 +59,9 @@ install-addons: $(NODE_GYP)
 			CC=$(CC) \
 			C_COMPILER=$(C_COMPILER) \
 			CXX=$(CXX) \
-			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
+			CXX_COMPILER=$(CXX_COMPILER) \
 			FC=$(FC) \
+			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
 			fPIC=$(fPIC) \
 			$(MAKE); \
 		echo 'Building add-on...'; \
