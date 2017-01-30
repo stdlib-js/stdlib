@@ -108,6 +108,10 @@ environment:
       BUILD_TASK: 'test-coverage'
 
 
+platform:
+  - x64
+
+
 matrix:
   # Flag to immediately finish a build if any one of the jobs fails:
   fast_finish: true
@@ -163,7 +167,7 @@ install:
   - cmd: choco upgrade googlechrome
 
   # Switch to the desired Node version:
-  - ps: Install-Product node $env:nodejs_version
+  - ps: Install-Product node $env:nodejs_version $env:platform
 
   # Set the NODE_PATH environment variable (use POSIX path convention):
   - cmd: set NODE_PATH=/c/projects/stdlib/lib/node_modules
@@ -176,8 +180,12 @@ install:
   # Print debug info:
   - cmd: '%WIN_GCC% --version'
   - cmd: '%WIN_GFORTRAN% --version'
+
   - cmd: git --version
+
   - cmd: node --version
+  - cmd: node -p 'process.platform + "@" + process.arch'
+
   - cmd: npm --version
   - cmd: npm config get registry
 
