@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-* Script to find the Node.js directory path.
+* Script to print the Node.js directory path.
 */
 'use strict';
 
