@@ -7,6 +7,8 @@
 // MODULES //
 
 var resolve = require( 'path' ).resolve;
+var isWindows = require( '@stdlib/utils/is-windows' );
+var dirname = require( '@stdlib/utils/dirname' );
 
 
 // MAIN //
@@ -14,11 +16,17 @@ var resolve = require( 'path' ).resolve;
 /**
 * Finds the Node.js directory path.
 *
+* ## Notes
+*
+* * We resolve the directory based on the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node').
+*
 * @private
 * @returns {string} directory path
 */
 function main() {
-	// Resolve the directory based on the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node'):
+	if ( isWindows ) {
+		return dirname( process.execPath );
+	}
 	return resolve( process.execPath, '..', '..' );
 } // end FUNCTION main()
 
