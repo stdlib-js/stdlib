@@ -205,7 +205,7 @@ install:
   - cmd: echo %PATH%
 
   # Perform installation tasks:
-  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% CC=%CC% C_COMPILER=%C_COMPILER% CXX=%CXX% CXX_COMPILER=%CXX_COMPILER% NODE_GYP_FLAGS="--python %PYTHON%" install'
+  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% CC=%CC% C_COMPILER=%C_COMPILER% CXX=%CXX% CXX_COMPILER=%CXX_COMPILER% NODE_GYP_FLAGS="--python %PYTHON% --msvs_version=2013" install'
 
 
 build_script:
