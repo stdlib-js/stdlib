@@ -161,7 +161,7 @@ clean_node() {
 # $1 - log file
 install() {
 	echo 'Installing...' >&2
-	make C_COMPILER=gcc FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
+	make FC=gfortran FORTRAN_COMPILER=gfortran CC=gcc C_COMPILER=gcc CXX=g++ CXX_COMPILER=g++ LINKER=g++ install >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error occurred during install.' >&2
 		return 1
