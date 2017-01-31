@@ -191,8 +191,21 @@ install:
   - cmd: npm --version
   - cmd: npm config get registry
 
+  # Install Windows build tools for compiling native Node modules.
+  #
+  # [1]: https://github.com/felixrieseberg/windows-build-tools
+  # [2]: https://github.com/nodejs/node-gyp#installation
+  - cmd: npm install --global --production windows-build-tools
+
+  - cmd: set PYTHON=%USERPROFILE%\.windows-build-tools\python27
+  - cmd: npm config set python "%PYTHON%"
+  - cmd: set PATH=%PATH:C:\Python27;=%
+  - cmd: set PATH=%PYTHON%;%PATH%
+
+  - cmd: echo %PATH%
+
   # Perform installation tasks:
-  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% CC=%CC% C_COMPILER=%C_COMPILER% CXX=%CXX% CXX_COMPILER=%CXX_COMPILER% install'
+  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% CC=%CC% C_COMPILER=%C_COMPILER% CXX=%CXX% CXX_COMPILER=%CXX_COMPILER% NODE_GYP_FLAGS="--python %PYTHON%" install'
 
 
 build_script:
