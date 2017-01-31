@@ -110,12 +110,12 @@ tape( 'the function returns an error to a provided callback if an error is encou
 	}
 });
 
-tape( 'the function returns an error to a provided callback if an error is encountered while reading `package.json` files', function test( t ) {
+tape( 'the function returns an error to a provided callback if an error is encountered while resolving add-ons', function test( t ) {
 	var findAddons;
 	var opts;
 
 	findAddons = proxyquire( './../lib/async.js', {
-		'./read_pkgs.js': readPkgs
+		'./inspect.js': inspect
 	});
 	opts = {
 		'dir': dir
@@ -123,7 +123,7 @@ tape( 'the function returns an error to a provided callback if an error is encou
 
 	findAddons( opts, clbk );
 
-	function readPkgs() {
+	function inspect() {
 		var cb = arguments[ arguments.length-1 ];
 		setTimeout( onTimeout, 0 );
 		function onTimeout() {
@@ -167,7 +167,7 @@ tape( 'the function returns a string array (if at least one add-on is detected; 
 	var opts;
 
 	findAddons = proxyquire( './../lib/async.js', {
-		'./read_pkgs.js': readPkgs
+		'./inspect.js': inspect
 	});
 
 	opts = {
@@ -175,7 +175,7 @@ tape( 'the function returns a string array (if at least one add-on is detected; 
 	};
 	findAddons( opts, clbk );
 
-	function readPkgs( files, clbk ) {
+	function inspect( files, clbk ) {
 		clbk( null, [ dir ] );
 	}
 
