@@ -6,7 +6,6 @@ var glob = require( 'glob' ).sync;
 var resolve = require( 'path' ).resolve;
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
-var readJSON = require( '@stdlib/fs/read-json' ).sync;
 var exists = require( '@stdlib/fs/exists' ).sync;
 var dirname = require( '@stdlib/utils/dirname' );
 var config = require( './config.json' );
@@ -36,7 +35,6 @@ function findAddons( options ) {
 	var fpath;
 	var gopts;
 	var files;
-	var file;
 	var opts;
 	var err;
 	var dir;
@@ -66,16 +64,10 @@ function findAddons( options ) {
 	// Check for add-ons...
 	out = [];
 	for ( i = 0; i < files.length; i++ ) {
-		file = readJSON( files[ i ] );
-		if ( file instanceof Error ) {
-			throw file;
-		}
-		if ( file.gypfile === true ) {
-			dir = dirname( files[ i ] );
-			fpath = resolve( dir, 'binding.gyp' );
-			if ( exists( fpath ) ) {
-				out.push( dir );
-			}
+		dir = dirname( files[ i ] );
+		fpath = resolve( dir, 'src', 'Makefile' );
+		if ( exists( fpath ) ) {
+			out.push( dir );
 		}
 	}
 	return out;

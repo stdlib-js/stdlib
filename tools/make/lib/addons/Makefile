@@ -11,15 +11,6 @@ ifneq (, $(findstring MSYS,$(OS)))
 endif
 endif
 
-# Define the path of the executable for [node-gyp][1].
-#
-# [1]: https://github.com/nodejs/node-gyp
-
-NODE_GYP ?= $(BIN_DIR)/node-gyp
-
-# Define command-line options when invoking node-gyp.
-NODE_GYP_FLAGS ?=
-
 # Define the C compiler:
 C_COMPILER ?= gcc
 
@@ -28,6 +19,9 @@ CXX_COMPILER ?= g++
 
 # Define the Fortran compiler:
 FORTRAN_COMPILER ?= gfortran
+
+# Define the linker:
+LINKER ?= g++
 
 # Determine whether to generate [position independent code][1]:
 #
@@ -47,28 +41,23 @@ endif
 #
 # This target installs native add-ons.
 
-install-addons: $(NODE_GYP)
+install-addons:
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \
 		echo ''; \
-		echo "Add-on: $$pkg"; \
-		echo 'Compiling source...'; \
+		echo "Compiling add-on: $$pkg"; \
 		cd $$pkg/src && \
+			FC=$(FC) \
+			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
 			CC=$(CC) \
 			C_COMPILER=$(C_COMPILER) \
 			CXX=$(CXX) \
 			CXX_COMPILER=$(CXX_COMPILER) \
-			FC=$(FC) \
-			FORTRAN_COMPILER=$(FORTRAN_COMPILER) \
+			LINKER=$(LINKER) \
 			fPIC=$(fPIC) \
-			$(MAKE) && \
-		echo 'Building add-on...' && \
-		cd .. && \
-			CC=$(CC) \
-			CXX=$(CXX) \
-			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
+			$(MAKE) \
 		|| exit 1; \
 	done
 
@@ -85,11 +74,8 @@ clean-addons:
 			continue; \
 		fi; \
 		echo ''; \
-		echo "Add-on: $$pkg"; \
-		echo 'Cleaning source...'; \
-		cd $$pkg/src && $(MAKE) clean; \
-		echo 'Cleaning add-on...'; \
-		cd .. && $(NODE_GYP) $(NODE_GYP_FLAGS) clean || exit 1; \
+		echo "Cleaning add-on: $$pkg"; \
+		cd $$pkg/src && $(MAKE) clean || exit 1; \
 	done
 
 .PHONY: clean-addons

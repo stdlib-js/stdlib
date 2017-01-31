@@ -9,7 +9,7 @@ var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
-var readPkgs = require( './read_pkgs.js' );
+var inspect = require( './inspect.js' );
 
 
 // MAIN //
@@ -85,7 +85,7 @@ function findAddons() {
 			return done( error );
 		}
 		if ( files.length ) {
-			return readPkgs( files, done );
+			return inspect( files, done );
 		}
 		return done( null, [] );
 	} // end FUNCTION onGlob()

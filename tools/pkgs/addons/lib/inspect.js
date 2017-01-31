@@ -1,0 +1,93 @@
+'use strict';
+
+// MODULES //
+
+var debug = require( 'debug' )( 'pkgs:add-ons:resolve' );
+var resolve = require( 'path' ).resolve;
+var dirname = require( '@stdlib/utils/dirname' );
+var exists = require( '@stdlib/fs/exists' );
+
+
+// MAIN //
+
+/**
+* Inspects packages for add-ons.
+*
+* @private
+* @param {StringArray} files - list of `package.json` files
+* @param {Callback} clbk - callback to invoke upon completion
+* @returns {void}
+*/
+function inspect( files, clbk ) {
+	var total;
+	var out;
+	var i;
+
+	total = files.length;
+	i = -1;
+	out = [];
+
+	return next();
+
+	/**
+	* Inspects the next package.
+	*
+	* @private
+	*/
+	function next() {
+		var fpath;
+		var dir;
+
+		i += 1;
+		debug( 'Inspecting package %d of %d: %s', i+1, total, files[ i ] );
+
+		dir = dirname( files[ i ] );
+		fpath = resolve( dir, 'src', 'Makefile' );
+
+		debug( 'Checking for add-on...' );
+		exists( fpath, onExists );
+	} // end FUNCTION next()
+
+	/**
+	* Callback invoked upon testing if a file exists.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Boolean} bool - boolean indicating whether a file exists
+	* @returns {void}
+	*/
+	function onExists( error, bool ) {
+		var j = i + 1;
+		if ( error ) {
+			debug( 'Encountered an error when testing for add-on: %s (%d of %d). Error: %s', files[ i ], j, total, error.message );
+		} else if ( bool ) {
+			debug( 'Detected add-on.' );
+			out.push( dirname( files[ i ] ) );
+		} else {
+			debug( 'Unable to detect add-on.' );
+		}
+		return done();
+	} // end FUNCTION onExists()
+
+	/**
+	* Callback invoked upon inspecting all packages.
+	*
+	* @private
+	* @returns {void}
+	*/
+	function done() {
+		var j;
+		j = i + 1;
+		if ( j < total ) {
+			debug( 'Inspected %d of %d packages.', j, total );
+			return next();
+		}
+		debug( 'Successfully inspected all packages.' );
+		return clbk( null, out );
+	} // end FUNCTION done()
+} // end FUNCTION inspect()
+
+
+// EXPORTS //
+
+module.exports = inspect;

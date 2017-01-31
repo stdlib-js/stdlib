@@ -108,9 +108,8 @@ The function accepts the same `options` as `findAddons()` above.
 
 ## Notes
 
-* The implementation resolves [add-ons][node-add-ons] by reading `package.json` files and resolving `binding.gyp` files. 
+* The implementation resolves [add-ons][node-add-ons] by resolving package `src` directories and `make` files. 
 * __No__ attempt is made to ensure that a native implementation actually exists.
-* The implementation __requires__ that a `package.json` file have a `gypfile` field.
 
 </section>
 
