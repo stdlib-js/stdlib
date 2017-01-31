@@ -48,12 +48,13 @@ addons:
 env:
   # Environment variables common to all jobs:
   global:
+    - FC=gfortran
+    - FORTRAN_COMPILER=gfortran
     - CC=gcc
     - C_COMPILER=gcc
     - CXX=g++
     - CXX_COMPILER=g++
-    - FC=gfortran
-    - FORTRAN_COMPILER=gfortran
+    - LINKER=g++
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
   # Environment variables used to construct build matrix:
@@ -105,7 +106,7 @@ before_install:
 
 
 install:
-  - "make C_COMPILER=$C_COMPILER FORTRAN_COMPILER=$FORTRAN_COMPILER install"
+  - "make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER CC=$CC C_COMPILER=$C_COMPILER CXX=$CXX CXX_COMPILER=$CXX_COMPILER LINKER=$LINKER install"
 
 
 script:
