@@ -10,7 +10,9 @@ environment:
     WIN_SHELL: C:\msys64\usr\bin\bash
     WIN_MAKE: C:\msys64\usr\bin\make
     WIN_SETUP: C:\msys64\usr\bin\bash
+
     WIN_GCC: C:\msys64\mingw64\bin\gcc
+    WIN_GXX: C:\msys64\mingw64\bin\g++
     WIN_GFORTRAN: C:\msys64\mingw64\bin\gfortran
 
     # Executables from within MSYS2:
@@ -182,6 +184,7 @@ install:
 
   # Print debug info:
   - cmd: '%WIN_GCC% --version'
+  - cmd: '%WIN_GXX% --version'
   - cmd: '%WIN_GFORTRAN% --version'
 
   - cmd: git --version
