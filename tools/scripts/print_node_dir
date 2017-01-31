@@ -18,12 +18,8 @@ var resolve = require( 'path' ).resolve;
 * @returns {string} directory path
 */
 function main() {
-	var exe;
-
-	// Get the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node'):
-	exe = process.execPath;
-
-	return resolve( exe, '..', '..' );
+	// Resolve the directory based on the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node'):
+	return resolve( process.execPath, '..', '..' );
 } // end FUNCTION main()
 
 console.log( main() );
