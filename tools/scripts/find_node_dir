@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+/*
+* Script to find the Node.js directory path.
+*/
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+
+
+// MAIN //
+
+/**
+* Finds the Node.js directory path.
+*
+* @private
+* @returns {string} directory path
+*/
+function main() {
+	var exe;
+
+	// Get the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node'):
+	exe = process.execPath;
+
+	return resolve( exe, '..', '..' );
+} // end FUNCTION main()
+
+console.log( main() );
