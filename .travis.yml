@@ -89,6 +89,7 @@ before_install:
 
   # Print debug info:
   - echo "$($CC --version)"
+  - echo "$($CXX --version)"
   - echo "$($FC --version)"
 
   - git --version
@@ -106,7 +107,7 @@ before_install:
 
 
 install:
-  - "make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER CC=$CC C_COMPILER=$C_COMPILER CXX=$CXX CXX_COMPILER=$CXX_COMPILER LINKER=$LINKER install"
+  - "make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install"
 
 
 script:

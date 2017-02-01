@@ -75,9 +75,6 @@ install-addons: clean-addons
 		echo "Building add-on: $$pkg"; \
 		cd $$pkg && \
 			FC=$(FC) \
-			CC=$(CC) \
-			CXX=$(CXX) \
-			LINK=$(LD) \
 			fPIC=$(fPIC) \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| exit 1; \
