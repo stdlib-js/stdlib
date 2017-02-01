@@ -27,32 +27,10 @@ else
 	FC := gfortran
 endif
 
-# Define the C compiler:
-ifdef C_COMPILER
-	CC := $(C_COMPILER)
-else
-	CC := gcc
-endif
-
-# Define the C++ compiler:
-ifdef CXX_COMPILER
-	CXX := $(CXX_COMPILER)
-else
-	CXX := g++
-endif
-
-# Define the linker:
-ifdef LINKER
-	LD := $(LINKER)
-else
-	LD := g++
-endif
-
 # Determine whether to generate [position independent code][1]:
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
 # [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
-
 ifeq ($(OS), WINNT)
 	fPIC ?=
 else
