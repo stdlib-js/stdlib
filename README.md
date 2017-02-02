@@ -31,6 +31,7 @@ While not required to run stdlib, the following dependencies may be required for
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
 * [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`)
+* [gfortran][gfortran]: Fortran compilation and linking
 * [pandoc][pandoc]: universal document converter
 
 The following vendor libraries can be automatically downloaded and compiled from source using `make`:
@@ -251,6 +252,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][authors].
 [python]: https://www.python.org/
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
+[gfortran]: https://gcc.gnu.org/fortran/
 [pandoc]: http://pandoc.org/
 
 [boost]: http://www.boost.org/
