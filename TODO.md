@@ -1484,6 +1484,12 @@
 
 348. bring Buffer polyfill in-house (will either need to include Object polyfill or be paired with a typed array polyfill to support older environments)
 
+349. consider [prebuildify](https://github.com/mafintosh/prebuildify) and [node-gyp-build](https://github.com/mafintosh/node-gyp-build)
+
+350. determine feature detection strategy (i.e., when do we rely on an existing (optimized) BLAS implementation? when do we compile ourselves?)
+
+351. determine strategy for using existing optimized BLAS
+
 
 ---
 
