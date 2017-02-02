@@ -60,12 +60,20 @@
 	print "fonts" OFS $1 OFS $2
 	next
 }
+/\.f$/ {
+	print "Fortran" OFS $1 OFS $2
+	next
+}
 /\.gif$/ {
 	print "gif" OFS $1 OFS $2
 	next
 }
 /\.go$/ {
 	print "Go" OFS $1 OFS $2
+	next
+}
+/\.gyp$/ {
+	print "GYP" OFS $1 OFS $2
 	next
 }
 /\.h$/ {
