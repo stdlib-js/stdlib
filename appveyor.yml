@@ -171,6 +171,12 @@ install:
   - cmd: choco upgrade firefox
   - cmd: choco upgrade googlechrome
 
+  # Install Windows build tools for compiling native Node modules. Note: requires Node v4+.
+  #
+  # [1]: https://github.com/felixrieseberg/windows-build-tools
+  # [2]: https://github.com/nodejs/node-gyp#installation
+  - cmd: npm install --global --production windows-build-tools
+
   # Switch to the desired Node version:
   - ps: Install-Product node $env:nodejs_version $env:platform
 
@@ -194,21 +200,18 @@ install:
   - cmd: npm --version
   - cmd: npm config get registry
 
-  # Install Windows build tools for compiling native Node modules.
-  #
-  # [1]: https://github.com/felixrieseberg/windows-build-tools
-  # [2]: https://github.com/nodejs/node-gyp#installation
-  - cmd: npm install --global --production windows-build-tools
-
+  # Update configuration for compiling native add-ons:
   - cmd: set PYTHON=%USERPROFILE%\.windows-build-tools\python27
-  - cmd: npm config set python "%PYTHON%"
   - cmd: set PATH=%PATH:C:\Python27;=%
   - cmd: set PATH=%PYTHON%;%PATH%
+
+  - cmd: npm config set python "%PYTHON%"
+  - cmd: npm config set msvs_version 2015
 
   - cmd: echo %PATH%
 
   # Perform installation tasks:
-  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% NODE_GYP_FLAGS="--python %PYTHON% --msvs_version=2013" install'
+  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% NODE_GYP_FLAGS="--python %PYTHON% --msvs_version=2015" install'
 
 
 build_script:
