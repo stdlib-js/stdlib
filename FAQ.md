@@ -7,6 +7,7 @@
 
 * [Why use this project?](#why-use)
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
+* [Why not use R, Python, or Julia?](#other-languages)
 * [Why not use native add-ons?](#native-add-ons)
 * [What about WebAssembly?](#web-assembly)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
@@ -63,6 +64,7 @@ This project
 
 <!-- </faq-question> -->
 
+
 <!-- <faq-question> -->
 
 ---
@@ -77,6 +79,31 @@ This project
 1. __Ubiquity__: JavaScript is [ubiquitous][javascript-ubiquity], being supported on nearly any device with a web browser and, now, being pushed as a preferred scripting language in the Internet of Things (IoT) ([Cylon.js][cylon-js], [iot.js][iot-js], [JerryScript][jerryscript], [Johnny-Five][johnny-five]). Thus, if a numeric compute application can run in JavaScript, the broader the potential reach of that application.
 1. __Distribution__: distributing a numeric compute application is considerably easier when compared to traditional numeric computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
 1. __Package Management__: Node.js package management is superior to anything available in other numeric computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, the tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numeric computing environments.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="other-languages"></a>
+
+### Why not use R, Python, or Julia?
+
+You should use JavaScript because
+
+1. __Language__: you like JavaScript.
+1. __Simplicity__: you want to minimize language context-switching, reduce build system complexity, and use a smaller stack.
+1. __Flexibility__: you want flexibility. With the exception of Python and few others, most languages commonly used for numeric computing are ill-suited for general purpose applications (e.g., MATLAB is never used to provide an authentication service). While specialization can mean better support for specialized syntax and libraries, specialization also correlates with reduced flexibility and fewer use cases.
+1. __Parity__: you recognize that other languages, as languages, have no inherent advantage over JavaScript. With few exceptions, the same criticisms leveled against JavaScript as to why the language is not suitable for numeric computing (e.g., single-threaded, lacks native support for big integers, dynamically compiled, etc) is equally applicable to other languages, such as R and Python. That those languages have risen to prominence is more attributable to chance rather than to comparative advantage.
+1. __Browsers__: you want to perform numeric computation in a web browser. JavaScript is, and will continue to be, the language of the Web.
+1. __Load__: you want to outsource server-side computation to client applications. A numeric compute-enabled client application can analyze data, train models, and generate predictions with shorter latency and lower server costs.
+1. __Node.js__: you want to perform numeric computation in a Node.js application. Node.js is now regularly used by over [98%][node-fortune-500] of Fortune 500 companies (with accelerating industry adoption) and is well-suited for a wide range of applications (including numeric computing) due to its performance and flexibility.
+1. __Community__: you want to leverage the continually growing JavaScript and Node.js community. JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [ecosystems][stackoverflow-developer-survey]. Using JavaScript means greater access to help, expertise, and resources, including tutorials, workshops, and education materials.
+1. __Visualization__: you want tighter integration between computation and data visualization. Other languages require intermediary layers to translate computational results into visual artifacts. These layers often involve network requests, longer latency, and increased complexity. Using JavaScript for numeric computation removes the need for intermediaries, allowing immediate and more transparent integration between computation and visualization.
+1. __Mad science__: you are interested in mad science applications. Certain applications are only possible in JavaScript due to tight integration between the language and web APIs (e.g., client-based peer-to-peer distributed computing).
+1. __Future__: you want to be part of the future: a future where numeric and scientific computation in JavaScript is not only possible, but also inevitable. 
 
 <!-- </faq-question> -->
 
@@ -598,6 +625,7 @@ See the [contributing guide][contributing-guide].
 
 [stackoverflow-developer-survey]: http://stackoverflow.com/research/developer-survey-2016
 [module-counts]: http://www.modulecounts.com/
+[node-fortune-500]: https://nodejs.org/en/blog/announcements/foundation-advances-growth/
 
 [javascript-ubiquity]: https://blog.codinghorror.com/javascript-the-lingua-franca-of-the-web/
 
