@@ -13,6 +13,7 @@
 * [What can be done at the standards level to better support numeric computing?](#ecmascript-recommendations)
 * [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Backward compatibility?](#backward-compatibility)
+* [Why use semicolons?](#semicolons)
 * [Promise support?](#promise-support)
 * [ES2015 and beyond?](#es2015)
 * [Why a monorepo?](#monorepo)
@@ -254,6 +255,25 @@ This project has every intent on maintaining backward compatibility with older N
 1. With regard to the Node.js [long-term release schedule][node-lts], simply because a Node.js version has reached its end-of-life (EOL), this does not mean that a) the Node.js version is no longer used or b) library authors ought to stop supporting that version. As long as libraries use the simplest, lowest level abstraction, the question as to whether a library should support a legacy Node.js version should never arise. The only time where dropping legacy support may be justified is when supporting native [add-ons][node-add-ons], as maintenance costs can be significantly higher.
 1. Functionality should not only enable the future, but also allow probing the past. In an ideal world, everyone would use the latest and greatest engine; however, in the real world, not everyone can. Legacy systems abound for very valid and practical reasons; that they will continue to exist is not going to change. To achieve the greatest possible reach, functionality should account for these environments. The best approach for doing so is to use the simplest possible primitives which are most likely to be supported across the widest range of environments.
 1. Consumers should have control over their migration schedules. In general, library developers are far too quick to drop support for legacy environments, citing maintenance costs, often as a thinly veiled desire to force consumers to upgrade. This parental and cavalier attitude fails to acknowledge the practical realities that many consumers face when building real-world applications. Once real-world applications are deployed in production environments, they assume lives of their own, becoming critical zero downtime components without concern for a library author's desire for evolution. All too frequently, a developer's desire for modernity (and trendiness) creates needless downstream effects, especially in those instances where the cost of maintenance is effectively zero.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="semicolons"></a>
+
+### Why use semicolons?
+
+For the following reasons:
+
+1. __Convention__: this project has historically used semicolons and has not found any reason compelling enough to stop doing so.
+1. __Explicitness__: this project prefers explicitly terminating statements.
+1. __Complexity__: while the [ECMAScript Specification][ecma-262-asi] provides rules governing automatic semicolon insertion ([ASI][ecma-262-asi]), structuring code around these rules increases cognitive overhead and does not provide significant tangible benefit (cumulative keystrokes aside). That workarounds must be employed to prevent [ASI][ecma-262-asi]-enabled errors (e.g., leading semicolons, etc) increases code complexity and imposes an unnecessary cost.
+1. __Semantic meaning__: semicolons have semantic meaning within the project REPL. If a statement is not terminated by a semicolon, the REPL prints the statement's return value; otherwise, the REPL considers the statement silent. Such behavior is a common convention in other environments (e.g., MATLAB and Julia) and is especially convenient for silencing output involving large datasets.
+1. __Consistency__: given that the project attaches additional meaning to semicolons, that library implementations should be "silent" is also a matter of consistency.
 
 <!-- </faq-question> -->
 
@@ -512,6 +532,7 @@ See the [contributing guide][contributing-guide].
 [ecma-262]: http://www.ecma-international.org/publications/standards/Ecma-262.htm
 [ecma-262-array-length]: http://www.ecma-international.org/ecma-262/6.0/#sec-arraycreate
 [ecma-262-tolength]: http://www.ecma-international.org/ecma-262/6.0/#sec-tolength
+[ecma-262-asi]: https://www.ecma-international.org/ecma-262/5.1/#sec-7.9
 
 [golang-frexp]: https://github.com/golang/go/blob/c007ce824d9a4fccb148f9204e04c23ed2984b71/src/math/frexp.go#L27
 [golang-float64bits]: https://github.com/golang/go/blob/964639cc338db650ccadeafb7424bc8ebb2c0f6c/src/math/unsafe.go#L17
