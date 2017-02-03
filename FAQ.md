@@ -5,6 +5,7 @@
 > Common answers to common questions.
 
 
+* [Why use this project?](#why-use)
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
 * [Why not use native add-ons?](#native-add-ons)
 * [What about WebAssembly?](#web-assembly)
@@ -23,6 +24,42 @@
 
 
 <!-- <faq-questions> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="why-use"></a>
+
+### Why use this project?
+
+This project
+
+1. provides high quality, rigorous, and robust implementations having common licensing, documentation, tooling, and style
+
+1. provides peer-reviewed portable JavaScript libraries
+
+1. provides modular, well-defined interfaces which may be forked, customized, and combined as needed
+
+1. provides implementations which work cross-platform (Windows and POSIX), cross-environment (Node.js and web browsers), and cross-context (command-line, REPL, and JavaScript applications)
+
+1. provides accurate and performant algorithms and implementations for numeric and scientific computing
+
+1. increases productivity by
+
+   - deterring reinvention
+   - accelerating initial development
+   - reducing bugs
+   - reducing long-term maintenance costs
+   - reducing search, evaluation, and quality-control requirements
+
+1. provides standard reference implementations
+
+1. establishes best practice
+
+
+<!-- </faq-question> -->
 
 <!-- <faq-question> -->
 
