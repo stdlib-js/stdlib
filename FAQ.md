@@ -6,6 +6,7 @@
 
 
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
+* [Why not use native add-ons?](#native-add-ons)
 * [What about WebAssembly?](#web-assembly)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
 * [Why not change the ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
@@ -35,6 +36,37 @@
 1. __Ubiquity__: JavaScript is [ubiquitous][javascript-ubiquity], being supported on nearly any device with a web browser and, now, being pushed as a preferred scripting language in the Internet of Things (IoT) ([Cylon.js][cylon-js], [iot.js][iot-js], [JerryScript][jerryscript], [Johnny-Five][johnny-five]). Thus, if a numeric compute application can run in JavaScript, the broader the potential reach of that application.
 1. __Distribution__: distributing a numeric compute application is considerably easier when compared to traditional numeric computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
 1. __Package Management__: Node.js package management is superior to anything available in other numeric computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, the tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numeric computing environments.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="native-add-ons"></a>
+
+### Why not use native add-ons?
+
+Native [add-ons][node-add-ons] have several disadvantages:
+
+1. __Maintenance__: historically, native [add-ons][node-add-ons] have entailed considerable maintenance costs. Due to a rapidly changing V8 API and a V8 development approach which does not prioritize backward compatibility, each successive Node.js version required rewriting native [add-ons][node-add-ons] to accommodate breaking changes. To address this problem, the Native Abstractions for Node.js project ([NAN][node-nan]) provides a V8 API abstraction layer which [add-ons][node-add-ons] can target, thus allowing an [add-on][node-add-ons] to maintain compatibility between Node.js versions. While [NAN][node-nan] does reduce maintenance costs, costs are not eliminated entirely.
+
+   __Aside__: [NAN][node-nan] is scheduled to be superseded by an [ABI stable API][node-napi], which will provide a similar abstraction layer but also across VMs (e.g., V8 and Chakra).
+
+1. __Portability__: the primary means for building native [add-ons][node-add-ons] is [node-gyp][node-gyp], a tool which wraps [GYP][gyp] (a deprecated build tool formerly used by the Chromium team) and aims to provide a cross-platform approach for compiling Node.js native [add-ons][node-add-ons]. While [GYP][gyp] is suitable for many native [add-on][node-add-ons] use cases, the tool is less well-suited for building numeric and scientific computing libraries. In particular, [GYP][gyp] is primarily oriented toward compiling C/C++ libraries and applications. This orientation is problematic because numeric computing libraries often require the ability to not only compile C/C++, but also Fortran, CUDA, and other compiled languages. On Linux systems, [GYP][gyp] can leverage the GNU compiler toolchain, including [gfortran][gfortran]; however, [node-gyp][node-gyp]'s reliance on Microsoft Visual Studio (MSVS) [prevents][msvs-fortran-issue] compiling [add-ons][node-add-ons] containing Fortran code on Windows. Furthermore, building [add-ons][node-add-ons] on Windows requires installing Windows [build tools][node-windows-build-tools], and, currently, the [recommended][node-windows-build-tools] means of installation is not backward compatible with Node.js environments prior to version `4`. Lastly, while pre-building binaries is one way to circumvent compilation and portability issues, cross-compilation is neither straightforward nor foolproof and does not obviate the need for portable compilation (see debugging below). 
+
+1. __Web browsers__: native [add-ons][node-add-ons] are not compatible with or portable to web browsers. ([WebAssembly][wasm] will not change this fact.)
+
+1. __Complexity__: compilation presupposes the existence of compilers (e.g., [gfortran][gfortran]) and other tooling in order to successfully compile, thus often requiring out-of-band installation, setup, and configuration. In short, compilation entails increased complexity and an increased risk that something can and will go wrong.
+
+1. __Development__: native Node.js [add-ons][node-add-ons] require significantly more upfront development costs compared to porting implementations to JavaScript. Creating a native [add-on][node-add-ons] entails more than writing a simple wrapper around an existing C/C++ library; the process involves additional tooling, testing, and development procedures, all requiring time and effort. These costs are acutely apparent during iteration cycles targeting multiple platforms. In comparison, as a higher-level language, JavaScript facilitates faster development, has built-in portability, and has minimized performance costs.
+
+1. __Bundling__: existing low-level C/C++ and Fortran numeric computing libraries are often large monoliths. Hence, writing a Node.js native [add-on][node-add-ons] which exposes a single function from one of these libraries requires linking to a much larger codebase, resulting in larger bundle sizes, increased network costs, and longer installation times. And while many systems may come with pre-installed numeric computing libraries (e.g., Apple Accelerate Framework), their existence is neither guaranteed nor is detecting their existence trivial.
+
+1. __Debugging__: debugging and instrumentation require separate compilation pathways. JavaScript implementations have the luxury of abundant tooling for dynamic inspection and instrumentation. The same cannot be said for native [add-ons][node-add-ons].
+
+Despite the disadvantages articulated above, this project __does__ include Node.js native [add-ons][node-add-ons] and will continue to do so. However, each [add-on][node-add-ons] must include a JavaScript fallback in order to address cross-platform portability. While beneficial, native [add-ons][node-add-ons] are only part of what must be a more comprehensive solution to provide numeric computing facilities to Node.js and more generally JavaScript.
 
 <!-- </faq-question> -->
 
@@ -217,7 +249,7 @@ From time to time, interfaces may change in incompatible and breaking ways. Soft
 
 This project has every intent on maintaining backward compatibility with older Node.js engines, including those which have reached their end-of-life (EOL) and including those which are pre-ES2015 beginning with Node.js __v0.10.x__. Accordingly, interface changes and new features should __never__ break this compatibility. The reasons for maintaining compatibility are as follows:
 
-1. With regard to the Node.js [long-term release schedule][node-lts], simply because a Node.js version has reached its end-of-life (EOL), this does not mean that a) the Node.js version is no longer used or b) library authors ought to stop supporting that version. As long as libraries use the simplest, lowest level abstraction, the question as to whether a library should support a legacy Node.js version should never arise. The only time where dropping legacy support may be justified is when supporting native [add-ons][node-addons], as maintenance costs can be significantly higher.
+1. With regard to the Node.js [long-term release schedule][node-lts], simply because a Node.js version has reached its end-of-life (EOL), this does not mean that a) the Node.js version is no longer used or b) library authors ought to stop supporting that version. As long as libraries use the simplest, lowest level abstraction, the question as to whether a library should support a legacy Node.js version should never arise. The only time where dropping legacy support may be justified is when supporting native [add-ons][node-add-ons], as maintenance costs can be significantly higher.
 1. Functionality should not only enable the future, but also allow probing the past. In an ideal world, everyone would use the latest and greatest engine; however, in the real world, not everyone can. Legacy systems abound for very valid and practical reasons; that they will continue to exist is not going to change. To achieve the greatest possible reach, functionality should account for these environments. The best approach for doing so is to use the simplest possible primitives which are most likely to be supported across the widest range of environments.
 1. Consumers should have control over their migration schedules. In general, library developers are far too quick to drop support for legacy environments, citing maintenance costs, often as a thinly veiled desire to force consumers to upgrade. This parental and cavalier attitude fails to acknowledge the practical realities that many consumers face when building real-world applications. Once real-world applications are deployed in production environments, they assume lives of their own, becoming critical zero downtime components without concern for a library author's desire for evolution. All too frequently, a developer's desire for modernity (and trendiness) creates needless downstream effects, especially in those instances where the cost of maintenance is effectively zero.
 
@@ -300,7 +332,7 @@ becomes
 var foo = require( '@stdlib/foo' );
 ```
 
-In general, far too many developers are oblivious to the module resolution [algorithm][node-require], often resorting to various unnecessary hacks, such as setting environment variables (e.g., `NODE_PATH`), using globals, creating symbolic links (symlink), using `require` wrappers, running startup scripts, or actually hacking `require`, itself (see [here][modifying-node-path-hack] and [here][list-of-require-hacks] as representative references). A superior approach is to leverage the module resolution [algorithm][node-require] to scope internal packages to their relevant context. For example, consider the following application directory structure
+In general, far too many developers are oblivious to the module resolution [algorithm][node-require], often resorting to various unnecessary hacks, such as setting environment variables (e.g., `NODE_PATH`), using globals, creating symbolic links (symlink), using `require` wrappers, running startup scripts, or actually hacking `require` itself (see [here][modifying-node-path-hack] and [here][list-of-require-hacks] as representative references). A superior approach is to leverage the module resolution [algorithm][node-require] to scope internal packages to their relevant context. For example, consider the following application directory structure
 
 ``` text
 /
@@ -454,13 +486,21 @@ See the [contributing guide][contributing-guide].
 [wasm]: https://github.com/WebAssembly/spec/
 [asm]: http://asmjs.org/spec/latest/
 
+[gyp]: https://gyp.gsrc.io/
+[gfortran]: https://gcc.gnu.org/fortran/
+[msvs-fortran-issue]: https://github.com/nodejs/node-gyp/issues/1102
+
 [numpy]: http://www.numpy.org/
 [scikit-learn]: http://scikit-learn.org/stable/
 
 [semver]: http://semver.org/
 
 [node-lts]: https://github.com/nodejs/LTS
-[node-addons]: https://nodejs.org/api/addons.html
+[node-add-ons]: https://nodejs.org/api/addons.html
+[node-nan]: https://github.com/nodejs/nan
+[node-gyp]: https://github.com/nodejs/node-gyp
+[node-windows-build-tools]: https://github.com/felixrieseberg/windows-build-tools
+[node-napi]: https://github.com/nodejs/abi-stable-node/
 [node-require]: https://nodejs.org/api/modules.html
 [node-child-process]: https://nodejs.org/api/child_process.html
 
