@@ -66,7 +66,7 @@ Native [add-ons][node-add-ons] have several disadvantages:
 
 1. __Debugging__: debugging and instrumentation require separate compilation pathways. JavaScript implementations have the luxury of abundant tooling for dynamic inspection and instrumentation. The same cannot be said for native [add-ons][node-add-ons].
 
-Despite the disadvantages articulated above, this project __does__ include Node.js native [add-ons][node-add-ons] and will continue to do so. However, each [add-on][node-add-ons] must include a JavaScript fallback in order to address cross-platform portability. While beneficial, native [add-ons][node-add-ons] are only part of what must be a more comprehensive solution to provide numeric computing facilities to Node.js and more generally JavaScript.
+Despite the disadvantages articulated above, this project __does__ include Node.js native [add-ons][node-add-ons] and will continue to do so. However, each [add-on][node-add-ons] must include a JavaScript fallback in order to address cross-platform portability. While beneficial, native [add-ons][node-add-ons] are only part of what must be a more comprehensive solution to providing numeric computing facilities to Node.js, JavaScript, and the Web.
 
 <!-- </faq-question> -->
 
