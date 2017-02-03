@@ -50,7 +50,7 @@
 
 Native [add-ons][node-add-ons] have several disadvantages:
 
-1. __Maintenance__: historically, native [add-ons][node-add-ons] have entailed considerable maintenance costs. Due to a rapidly changing V8 API and a V8 development approach which does not prioritize backward compatibility, each successive Node.js version required rewriting native [add-ons][node-add-ons] to accommodate breaking changes. To address this problem, the Native Abstractions for Node.js project ([NAN][node-nan]) provides a V8 API abstraction layer which [add-ons][node-add-ons] can target, thus allowing an [add-on][node-add-ons] to maintain compatibility between Node.js versions. While [NAN][node-nan] does reduce maintenance costs, costs are not eliminated entirely.
+1. __Maintenance__: historically, native [add-ons][node-add-ons] have entailed considerable maintenance costs. Due to a rapidly changing V8 API and a V8 development approach which does not prioritize backward compatibility, each successive Node.js version required rewriting native [add-ons][node-add-ons] to accommodate breaking changes. To address this problem, the Native Abstractions for Node.js project ([NAN][node-nan]) provides a V8 API abstraction layer which [add-ons][node-add-ons] can target, thus allowing an [add-on][node-add-ons] to maintain compatibility between Node.js versions. While [NAN][node-nan] does reduce maintenance costs, costs are not entirely eliminated.
 
    __Aside__: [NAN][node-nan] is scheduled to be superseded by an [ABI stable API][node-napi], which will provide a similar abstraction layer but also across VMs (e.g., V8 and Chakra).
 
