@@ -14,6 +14,7 @@
 * [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 * [Backward compatibility?](#backward-compatibility)
 * [Why use semicolons?](#semicolons)
+* [Import support?](#import-support)
 * [Promise support?](#promise-support)
 * [ES2015 and beyond?](#es2015)
 * [Why a monorepo?](#monorepo)
@@ -274,6 +275,30 @@ For the following reasons:
 1. __Complexity__: while the [ECMAScript Specification][ecma-262-asi] provides rules governing automatic semicolon insertion ([ASI][ecma-262-asi]), structuring code around these rules increases cognitive overhead and does not provide significant tangible benefit (cumulative keystrokes aside). That workarounds must be employed to prevent [ASI][ecma-262-asi]-enabled errors (e.g., leading semicolons, etc) increases code complexity and imposes an unnecessary cost.
 1. __Semantic meaning__: semicolons have semantic meaning within the project REPL. If a statement is not terminated by a semicolon, the REPL prints the statement's return value; otherwise, the REPL considers the statement silent. Such behavior is a common convention in other environments (e.g., MATLAB and Julia) and is especially convenient for silencing output involving large datasets.
 1. __Consistency__: given that the project attaches additional meaning to semicolons, that library implementations should be "silent" is also a matter of consistency.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="import-support"></a>
+
+### Import support?
+
+No. This stance may be reevaluated when the following conditions are met:
+
+1. The specification has finalized.
+1. The specification is widely and consistently implemented.
+1. Node.js provides official support.
+1. Inclusion maintains backward compatibility with earlier Node.js versions and non-ES2015 environments.
+1. Inclusion does not require a transpiler toolchain.
+
+
+#### But what about tree shaking?
+
+Tree shaking (i.e., removing unused symbols) treats the symptom, not the disease. A disciplined emphasis on modularity and crafting implementations which do one thing and do one thing well obviates the need for removing unused symbols.
 
 <!-- </faq-question> -->
 
