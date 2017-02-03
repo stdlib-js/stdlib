@@ -20,6 +20,7 @@
 * [ES2015 and beyond?](#es2015)
 * [Why a monorepo?](#monorepo)
 * [Why are library packages in a node_modules directory?](#lib-node-modules)
+* [How can I support the project?](#supporting)
 * [Why contribute?](#why-contribute)
 * [How can I contribute?](#contributing)
 
@@ -521,6 +522,32 @@ __Aside__: A common objection to the directory structure above is that tools oft
 
 ---
 
+<a name="supporting"></a>
+
+### How can I support the project?
+
+You can support the project by
+
+* contributing algorithms and implementations
+* adding tests and benchmarks
+* helping improve documentation and examples
+* using the project and offering feedback
+* filing bug reports and flagging performance regressions
+* advocating for standards committees to add features at the specification level to better enable numeric computing in JavaScript
+* helping promote the project on social media, at your company, and within your networks
+* providing build and infrastructure support
+* providing financial support
+
+If you have additional ideas, get in touch, and we'll do our best to help!
+
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
 <a name="why-contribute"></a>
 
 ### Why contribute?
@@ -534,7 +561,7 @@ You should contribute
 * if you want to be part of a dedicated, supportive, and inclusive community
 * if you believe in what we are doing and want to be a part of it :)
 
-Reach out, get in touch, and we'll be happy to help you get started!
+Reach out, get in touch, and we'll be happy to get you started!
 
 <!-- </faq-question> -->
 
