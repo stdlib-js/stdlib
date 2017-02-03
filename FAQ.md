@@ -58,7 +58,7 @@ Native [add-ons][node-add-ons] have several disadvantages:
 
 1. __Web browsers__: native [add-ons][node-add-ons] are not compatible with or portable to web browsers. ([WebAssembly][wasm] will not change this fact.)
 
-1. __Complexity__: compilation presupposes the existence of compilers (e.g., [gfortran][gfortran]) and other tooling in order to successfully compile, thus often requiring out-of-band installation, setup, and configuration. In short, compilation entails increased complexity and an increased risk that something can and will go wrong.
+1. __Complexity__: compilation presupposes the existence of compilers (e.g., [gfortran][gfortran]) and other tooling in order to successfully compile, thus often requiring out-of-band installation, setup, and configuration. In short, compilation increases complexity and increases the risk that something can and will go wrong.
 
 1. __Development__: native Node.js [add-ons][node-add-ons] require significantly more upfront development costs compared to porting implementations to JavaScript. Creating a native [add-on][node-add-ons] entails more than writing a simple wrapper around an existing C/C++ library; the process involves additional tooling, testing, and development procedures, all requiring time and effort. These costs are acutely apparent during iteration cycles targeting multiple platforms. In comparison, as a higher-level language, JavaScript facilitates faster development, has built-in portability, and has minimized performance costs.
 
