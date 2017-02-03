@@ -20,6 +20,7 @@
 * [ES2015 and beyond?](#es2015)
 * [Why a monorepo?](#monorepo)
 * [Why are library packages in a node_modules directory?](#lib-node-modules)
+* [Why contribute?](#why-contribute)
 * [How can I contribute?](#contributing)
 
 
@@ -512,6 +513,28 @@ By leveraging `node_modules`, each local `node_modules` dependency
 In short, the module resolution [algorithm][node-require] provides a simple and robust cross-platform solution for managing both external and local module dependencies.
 
 __Aside__: A common objection to the directory structure above is that tools often ignore anything within a `node_modules` folder (e.g., linters, unit test runners, etc). That this project is able to configure tools to recognize files within `node_modules` folders is evidence to the contrary. If a tool cannot be configured otherwise, that is a flaw in the tool, not in the approach.
+
+<!-- </faq-question> -->
+
+
+<!-- <faq-question> -->
+
+---
+
+<a name="why-contribute"></a>
+
+### Why contribute?
+
+You should contribute
+
+* if you want to write high quality software
+* if you want to learn underlying algorithms
+* if you want to learn how to write rigorous and robust implementations
+* if you want to bring numeric and scientific computing to JavaScript and the Web
+* if you want to be part of a dedicated, supportive, and inclusive community
+* if you believe in what we are doing and want to be a part of it :)
+
+Reach out, get in touch, and we'll be happy to help you get started!
 
 <!-- </faq-question> -->
 
