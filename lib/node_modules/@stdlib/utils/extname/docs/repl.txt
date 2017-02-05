@@ -1,0 +1,22 @@
+
+{{alias}}( filename )
+    Returns a filename extension.
+
+    Parameters
+    ----------
+    filename: string
+        Filename.
+
+    Returns
+    -------
+    ext: string
+        Filename extension.
+
+    Examples
+    --------
+    > var ext = {{alias}}( 'index.js' )
+    '.js'
+
+    See Also
+    --------
+
