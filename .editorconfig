@@ -86,3 +86,7 @@ indent_size = 2
 [binding.gyp]
 indent_style = space
 indent_size = 2
+
+[*.gypi]
+indent_style = space
+indent_size = 2
