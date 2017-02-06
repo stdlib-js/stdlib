@@ -1494,6 +1494,8 @@
 
 353. Use of `now` to create a microservice [api](https://github.com/aunyks/newton-api)
 
+354. WASM at [autodesk](https://www.autodeskresearch.com/blog/look-web-assembly-and-molecular-analysis)
+
 
 ---
 
