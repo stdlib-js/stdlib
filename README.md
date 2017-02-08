@@ -32,7 +32,7 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [Python][python]: general purpose language (version `>= 2.7`)
 * [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`)
 * [gfortran][gfortran]: Fortran compilation and linking
-* [pandoc][pandoc]: universal document converter
+* [pandoc][pandoc]: universal document converter (version `>= 1.18`)
 
 The following vendor libraries can be automatically downloaded and compiled from source using `make`:
 
