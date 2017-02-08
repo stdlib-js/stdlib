@@ -46,8 +46,10 @@ Usage: make <cmd>
   make check-deps             Check if dependencies are up-to-date.
   make check-licenses         Check package dependency licenses.
   make install                Run install sequence.
+  make install-addons         Install add-ons.
   make install-deps           Install vendor dependencies.
   make clean                  Run all cleanup tasks.
   make clean-node             Remove Node dependencies.
+  make clean-addons           Remove add-ons.
   make clean-deps             Remove vendor dependencies.
   make inspect.VARIABLE       Print the runtime value of a VARIABLE.
