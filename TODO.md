@@ -200,6 +200,8 @@
 
     * [cost-of-modules](https://github.com/siddharthkp/cost-of-modules)
 
+    * [get-nps](https://github.com/xtoolkit/get-nps)
+
     * could do something akin to [issue stats](https://github.com/hstove/issue_stats) but locally and/or only including project modules/repos
 
     * later project stats can be displayed in a separate webpage
@@ -467,9 +469,7 @@
 
     * can be used in conjunction with dep analysis to see which modules are __not__ required by a file, etc; e.g., which modules are not included in a namespace.
 
-64. should `etc` config files be placed in subdirectories?
-
-    * would require updating Makefile targets
+64. investigate async but [awaitful](https://github.com/ramitos/apr)
 
 65. `list-required-modules` Makefile recipe
 

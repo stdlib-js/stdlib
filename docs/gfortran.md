@@ -98,7 +98,7 @@ double precision function add( x, y )
 end function add
 ```
 
-While `add` may be used in conjunction with other Fortran files, we cannot use `add` directly from C because Fortran expects arguments to be passed by reference rather than by value, and, further, we have no way of referencing a Fortran function's return value. Thus, we must wrap `add` as a subroutine (equivalent of a C function returning `(void)`), where we can pass a pointer for storing the output return value. 
+While `add` may be used in conjunction with other Fortran files, we cannot use `add` directly from C because Fortran expects arguments to be passed by reference rather than by value. Furthermore, while not applicable here, Fortran functions can only return scalar values, not arrays. Thus, the general best practice is to wrap `add` as a subroutine (equivalent of a C function returning `(void)`), where we can pass a pointer for storing the output return value. 
 
 ``` fortran
 !>
@@ -238,6 +238,7 @@ $ ./main
 
 * [Fortran 90 Subprograms][fortran-90-subprograms]
 * [Summary of Fortran][summary-of-fortran]
+* [C with Fortran][c-with-fortran]
 * [Intel: Calling BLAS Functions that Return the Complex Values in C/C++ Code][intel-mkl]
 
 
@@ -248,6 +249,7 @@ $ ./main
 
 [fortran-90-subprograms]: http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/F90-Subprograms.pdf
 [summary-of-fortran]: https://www.math.utah.edu/~beebe/software/fortran-documentation/ftnsum.pdf
+[c-with-fortran]: https://www.math.utah.edu/software/c-with-fortran.html
 [intel-mkl]: https://software.intel.com/en-us/node/528729#IX_COMPLEX_BLAS_LEVEL_1_1
 
 <!-- </definitions> -->
