@@ -1374,7 +1374,7 @@
 
 300. [styledoc](https://github.com/documentationjs/styledoc) for documenting CSS
 
-301. explore wasm and native addon for a single pkg
+301. explore [wasm](http://webassembly.org/getting-started/developers-guide/) for a single pkg
 
 302. chakra node build
 
