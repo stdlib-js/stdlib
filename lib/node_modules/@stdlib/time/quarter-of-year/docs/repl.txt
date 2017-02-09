@@ -1,0 +1,40 @@
+
+{{alias}}( [month] )
+    Returns the quarter of the year.
+
+    By default, the function returns the quarter of the year for the current
+    month in the current year (according to local time). To determine the
+    quarter for a particular month, provide either a month or a `Date`
+    object.
+
+    A `month` may be either a month's integer value, three letter abbreviation,
+    or full name (case insensitive).
+
+    Parameters
+    ----------
+    month: integer|string|Date (optional)
+        Month (or `Date`).
+
+    Returns
+    -------
+    out: integer
+        Quarter of the year.
+
+    Examples
+    --------
+    > var q = {{alias}}( new Date() )
+    <number>
+    > q = {{alias}}( 4 )
+    2
+    > q = {{alias}}( 'June' )
+    2
+
+    // Other ways to supply month:
+    > q = {{alias}}( 'April' )
+    2
+    > q = {{alias}}( 'apr' )
+    2
+
+    See Also
+    --------
+
