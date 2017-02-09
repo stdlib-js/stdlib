@@ -1,0 +1,19 @@
+
+{{alias}}()
+    Returns the time in seconds since the epoch.
+
+    The Unix epoch is 00:00:00 UTC on 1 January 1970.
+
+    Returns
+    -------
+    out: integer
+        Time in seconds since the epoch.
+
+    Examples
+    --------
+    > var ts = {{alias}}()
+    <number>
+
+    See Also
+    --------
+
