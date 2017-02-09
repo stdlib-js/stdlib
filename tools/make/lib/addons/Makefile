@@ -45,7 +45,6 @@ endif
 # This target installs native add-ons.
 
 install-addons: clean-addons
-ifneq ($(OS), WINNT)
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
@@ -58,9 +57,6 @@ ifneq ($(OS), WINNT)
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| exit 1; \
 	done
-else
-	$(QUIET) echo 'Building native add-ons is not supported on Windows systems.'
-endif
 
 .PHONY: install-addons
 
