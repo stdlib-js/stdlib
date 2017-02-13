@@ -14,7 +14,9 @@ DAVID ?= $(BIN_DIR)/david
 ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 
 # Define the command-line options to use when invoking the david executable:
-DAVID_FLAGS ?= --package $(ROOT_PACKAGE_JSON)
+DAVID_FLAGS ?= \
+	--package $(ROOT_PACKAGE_JSON) \
+	--ignore update-notifier
 
 
 # TARGETS #
