@@ -1498,6 +1498,10 @@
 
 355. [nlp-corpus](https://github.com/nlp-compromise/nlp-corpus)
 
+356. [data structures](https://github.com/Yomguithereal/mnemonist)
+
+357. command [exists](https://github.com/mathisonian/command-exists/blob/master/lib/command-exists.js)
+
 
 ---
 
