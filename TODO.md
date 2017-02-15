@@ -1700,10 +1700,7 @@
 
 22. Avogadro's number
 
-23. round to number of [sig figs](http://stackoverflow.com/questions/202302/rounding-to-an-arbitrary-number-of-significant-digits)
-
-    - see [MFX](http://www.mathworks.com/matlabcentral/fileexchange/26212-round-with-significant-digits)
-    - see [Julia](https://github.com/JuliaLang/julia/blob/master/base/floatfuncs.jl#L112)
+23. Add credit card fraud [data](https://github.com/ellisvalentiner/credit-card-fraud)
 
 24. testing for
 
@@ -1844,8 +1841,6 @@
 72. [titlecase](https://github.com/rvagg/titlecase)
 
 73. [download](https://github.com/watson/download-to-file)
-
-74. Add credit card fraud [data](https://github.com/ellisvalentiner/credit-card-fraud)
 
 
 ---
