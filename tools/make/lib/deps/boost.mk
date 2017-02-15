@@ -62,8 +62,6 @@ $(DEPS_BOOST_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 # Extract.
 #
 # This target extracts a gzipped tar archive.
-#
-# TODO: verify checksum before extracting.
 
 $(DEPS_BOOST_BUILD_OUT): $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Boost...' >&2
