@@ -21,6 +21,7 @@ DEPS_CHECKSUMS_DIR ?= $(DEPS_DIR)/checksums
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
 
 
 # TARGETS #
@@ -45,7 +46,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: install-deps-boost
+install-deps: install-deps-boost install-deps-openblas
 
 .PHONY: install-deps
 
