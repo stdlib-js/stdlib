@@ -8,7 +8,7 @@ MKDIR_RECURSIVE ?= mkdir -p
 DELETE ?= -rm
 DELETE_FLAGS ?= -rf
 
-# Define the command for extracting tarballs:
+# Define the command for extracting tarfiles:
 TAR ?= tar
 TAR_FLAGS ?= -zxf
 
