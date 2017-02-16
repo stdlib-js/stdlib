@@ -341,8 +341,17 @@ install-deps-openblas: deps-download-openblas deps-verify-openblas deps-extract-
 #
 # This target removes an OpenBLAS distribution (but does not remove an OpenBLAS download if one exists).
 
-clean-deps-openblas:
+clean-deps-openblas: clean-deps-openblas-tests
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_OPENBLAS_BUILD_OUT)
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_OPENBLAS_TEST_OUT)
 
 .PHONY: clean-deps-openblas
+
+
+# Clean installation tests.
+#
+# This target remove installation tests.
+
+clean-deps-openblas-tests:
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_OPENBLAS_TEST_OUT)
+
+.PHONY: clean-deps-openblas-tests

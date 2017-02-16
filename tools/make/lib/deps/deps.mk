@@ -55,7 +55,7 @@ install-deps: install-deps-boost install-deps-openblas
 #
 # This target removes vendor dependencies.
 
-clean-deps: clean-deps-downloads clean-deps-build
+clean-deps: clean-deps-downloads clean-deps-build clean-deps-tests
 
 .PHONY: clean-deps
 
@@ -68,6 +68,15 @@ clean-deps-build:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BUILD_DIR)
 
 .PHONY: clean-deps-build
+
+
+# Clean install tests.
+#
+# This target removes vendor dependency installation tests.
+
+clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests
+
+.PHONY: clean-deps-tests
 
 
 # Clean downloads.

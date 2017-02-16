@@ -143,8 +143,17 @@ install-deps-boost: deps-download-boost deps-verify-boost deps-extract-boost dep
 #
 # This target removes a Boost distribution (but does not remove a Boost download if one exists).
 
-clean-deps-boost:
+clean-deps-boost: clean-deps-boost-tests
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_BUILD_OUT)
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_TEST_OUT)
 
 .PHONY: clean-deps-boost
+
+
+# Clean tests.
+#
+# This targets remove installation tests.
+
+clean-deps-boost-tests:
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_TEST_OUT)
+
+.PHONY: clean-deps-boost-tests
