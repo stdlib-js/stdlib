@@ -37,6 +37,7 @@ While not required to run stdlib, the following dependencies __may__ be required
 The following vendor libraries can be automatically downloaded and compiled from source using `make`:
 
 * [Boost][boost]: portable C++ libraries
+* [OpenBLAS][openblas]: optimized BLAS library
 
 
 ### Download
@@ -256,6 +257,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][authors].
 [pandoc]: http://pandoc.org/
 
 [boost]: http://www.boost.org/
+[openblas]: https://github.com/xianyi/OpenBLAS
 
 [node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
