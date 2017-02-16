@@ -145,5 +145,6 @@ install-deps-boost: deps-download-boost deps-verify-boost deps-extract-boost dep
 
 clean-deps-boost:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_BUILD_OUT)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_TEST_OUT)
 
 .PHONY: clean-deps-boost

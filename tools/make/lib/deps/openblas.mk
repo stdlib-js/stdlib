@@ -255,5 +255,6 @@ install-deps-openblas: deps-download-openblas deps-verify-openblas deps-extract-
 
 clean-deps-openblas:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_OPENBLAS_BUILD_OUT)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_OPENBLAS_TEST_OUT)
 
 .PHONY: clean-deps-openblas
