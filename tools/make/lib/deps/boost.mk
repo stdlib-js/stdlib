@@ -10,7 +10,6 @@ DELETE_FLAGS ?= -rf
 
 # Define the command for extracting tarfiles:
 TAR ?= tar
-TAR_FLAGS ?= -zxf
 
 # Define the path to an executable for downloading a remote resource:
 DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
@@ -69,7 +68,7 @@ $(DEPS_BOOST_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 
 $(DEPS_BOOST_BUILD_OUT): $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Boost...' >&2
-	$(QUIET) $(TAR) $(TAR_FLAGS) $(DEPS_BOOST_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+	$(QUIET) $(TAR) -zxf $(DEPS_BOOST_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 
 
 # Create directory for tests.

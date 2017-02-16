@@ -20,7 +20,6 @@ DELETE_FLAGS ?= -rf
 
 # Define the command for extracting tarfiles:
 TAR ?= tar
-TAR_FLAGS ?= -zxf
 
 # Define the Fortran compiler:
 ifdef FORTRAN_COMPILER
@@ -256,7 +255,7 @@ $(DEPS_OPENBLAS_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 
 $(DEPS_OPENBLAS_BUILD_OUT): $(DEPS_OPENBLAS_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting OpenBLAS...' >&2
-	$(QUIET) $(TAR) $(TAR_FLAGS) $(DEPS_OPENBLAS_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+	$(QUIET) $(TAR) -zxf $(DEPS_OPENBLAS_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 	$(QUIET) mv $(deps_openblas_extract_out) $(DEPS_OPENBLAS_BUILD_OUT)
 
 
