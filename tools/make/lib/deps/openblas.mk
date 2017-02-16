@@ -309,7 +309,7 @@ deps-extract-openblas: $(DEPS_OPENBLAS_BUILD_OUT)
 # This target performs the OpenBLAS install sequence.
 
 deps-install-openblas: $(DEPS_OPENBLAS_BUILD_OUT)
-	$(QUIET) cd $(DEPS_OPENBLAS_BUILD_OUT) && $(MAKE) $(DEPS_OPENBLAS_BUILD_OPTS)
+	$(QUIET) $(MAKE) --directory="$(DEPS_OPENBLAS_BUILD_OUT)" $(DEPS_OPENBLAS_BUILD_OPTS)
 
 .PHONY: deps-install-openblas
 
