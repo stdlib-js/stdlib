@@ -48,10 +48,10 @@ deps_openblas_version_slug := $(subst .,_,$(DEPS_OPENBLAS_VERSION))
 DEPS_OPENBLAS_URL ?= https://github.com/xianyi/OpenBLAS/archive/v$(DEPS_OPENBLAS_VERSION).tar.gz
 
 # Determine the basename for the download:
-deps_openblas_basename := openblas_$(notdir $(DEPS_OPENBLAS_URL))
+deps_openblas_basename := openblas_$(deps_openblas_version_slug).tar.gz
 
-# Define the path to the file containing a checksum verify a download:
-DEPS_OPENBLAS_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/openblas_$(deps_openblas_version_slug)_tar_gz/sha256)
+# Define the path to the file containing a checksum to verify a download:
+DEPS_OPENBLAS_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_boost_basename))/sha256)
 
 # Define the output path when downloading:
 DEPS_OPENBLAS_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_openblas_basename)
