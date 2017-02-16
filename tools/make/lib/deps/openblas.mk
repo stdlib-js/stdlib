@@ -22,6 +22,16 @@ DELETE_FLAGS ?= -rf
 TAR ?= tar
 TAR_FLAGS ?= -zxf
 
+# Define the Fortran compiler:
+ifdef FORTRAN_COMPILER
+	FC := $(FORTRAN_COMPILER)
+else
+	FC := gfortran
+endif
+
+# Define the command for `ranlib` (generates an index from object file contents and stores the index in the file; used by a linker):
+RANLIB ?= ranlib
+
 # Define the path to an executable for downloading a remote resource:
 DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 
@@ -64,17 +74,23 @@ DEPS_OPENBLAS_TEST_INSTALL ?= $(DEPS_OPENBLAS_TEST_DIR)/test_install.c
 # Define the output path for a test file:
 DEPS_OPENBLAS_TEST_INSTALL_OUT ?= $(DEPS_OPENBLAS_TEST_OUT)/test_install
 
-# Target architecture (cross-compiling):
-DEPS_OPENBLAS_TARGET_ARCH ?=
+# Host architecture:
+DEPS_OPENBLAS_ARCH := $(shell $(CC) -dumpmachine | sed "s/\([^-]*\).*$$/\1/")
 
 # Target binary (32-bit or 64-bit):
 DEPS_OPENBLAS_BINARY ?= 64
 
+# Target architecture (cross-compiling):
+DEPS_OPENBLAS_TARGET_ARCH ?=
+
 # Host C compiler (cross-compiling):
 DEPS_OPENBLAS_HOSTCC ?=
 
+# C compiler flags:
+DEPS_OPENBLAS_CFLAGS ?=
+
 # Fortran compiler flags:
-DEPS_OPENBLAS_FFLAGS ?=
+DEPS_OPENBLAS_FFLAGS ?= -O3
 
 # Unless for distribution (i.e., a need exists for supporting multiple architectures in a single binary), disable building for all architectures:
 DEPS_OPENBLAS_DYNAMIC_ARCH ?= 0
@@ -110,8 +126,35 @@ DEPS_OPENBLAS_NO_LAPACK ?= 0
 # Specify whether to compile the C interface to LAPACK:
 DEPS_OPENBLAS_NO_LAPACKE ?= 0
 
+# Determine whether to generate [position independent code][1]:
+#
+# [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
+# [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
+ifneq ($(OS), WINNT)
+	DEPS_OPENBLAS_FFLAGS += -fPIC
+endif
+
+# Specify stack alignment on Windows.
+#
+# [1]: https://gcc.gnu.org/onlinedocs/gcc-4.5.3/gcc/i386-and-x86_002d64-Options.html
+ifeq ($(OS), WINNT)
+ifneq ($(DEPS_OPENBLAS_ARCH), x86_64)
+ifneq ($(DEPS_OPENBLAS_USE_CLANG), 1)
+	DEPS_OPENBLAS_CFLAGS += -mincoming-stack-boundary=2
+endif
+	DEPS_OPENBLAS_FFLAGS += -mincoming-stack-boundary=2
+endif
+endif
+
 # Define build options (originally based on Julia; see https://github.com/JuliaLang/julia/blob/master/deps/blas.mk):
-DEPS_OPENBLAS_BUILD_OPTS := CC="$(CC)" FC="$(FC)" RANLIB="$(RANLIB)" FFLAGS="$(DEPS_OPENBLAS_FFLAGS)" TARGET="$(DEPS_OPENBLAS_TARGET_ARCH)" BINARY="$(DEPS_OPENBLAS_BINARY)"
+DEPS_OPENBLAS_BUILD_OPTS := \
+	CC="$(CC)" \
+	FC="$(FC)" \
+	RANLIB="$(RANLIB)" \
+	CFLAGS="$(DEPS_OPENBLAS_CFLAGS)" \
+	FFLAGS="$(DEPS_OPENBLAS_FFLAGS)" \
+	TARGET="$(DEPS_OPENBLAS_TARGET_ARCH)" \
+	BINARY="$(DEPS_OPENBLAS_BINARY)"
 
 # Define threading options:
 ifeq ($(DEPS_OPENBLAS_USE_THREAD), 1)
@@ -121,7 +164,7 @@ ifeq ($(DEPS_OPENBLAS_USE_THREAD), 1)
 	DEPS_OPENBLAS_BUILD_OPTS += GEMM_MULTITHREADING_THRESHOLD=50
 
 # Determine the maximum number of threads (which should be less than the number of cores) for parallelism:
-ifneq ($(ARCH), x86_64)
+ifneq ($(DEPS_OPENBLAS_ARCH), x86_64)
 	# 1) We assume that limited memory will restrict the number of threads we can spawn.
 	# 2) 32-bit architectures are likely to have fewer cores.
 	DEPS_OPENBLAS_BUILD_OPTS += NUM_THREADS=8
