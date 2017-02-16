@@ -1,6 +1,16 @@
 
 # VARIABLES #
 
+# Determine the OS:
+OS := $(shell uname)
+ifneq (, $(findstring MINGW,$(OS)))
+	OS := WINNT
+else
+ifneq (, $(findstring MSYS,$(OS)))
+	OS := WINNT
+endif
+endif
+
 # Define the command for recursively creating directories (WARNING: portability issues on some systems!):
 MKDIR_RECURSIVE ?= mkdir -p
 
@@ -63,8 +73,45 @@ DEPS_OPENBLAS_BINARY ?= 64
 # Host C compiler (cross-compiling):
 DEPS_OPENBLAS_HOSTCC ?=
 
+# Fortran compiler flags:
+DEPS_OPENBLAS_FFLAGS ?=
+
+# Unless for distribution (i.e., a need exists for supporting multiple architectures in a single binary), disable building for all architectures:
+DEPS_OPENBLAS_DYNAMIC_ARCH ?= 0
+
+# Define whether to compile a debug build:
+DEPS_OPENBLAS_DEBUG ?= 0
+
+# Specify whether to build a 64-bit (8 byte integers) BLAS interface (not all Fortran compilers support this; safe to disable):
+DEPS_OPENBLAS_USE_BLAS64 ?= 0
+
+# When building a 64-bit BLAS interface, add a prefix and/or suffix to all exported symbol names in the shared library. Doing so helps avoid conflicts with other BLAS libraries, especially when using 64-bit integer interfaces in OpenBLAS. Note that the same prefix and suffix are added to the library name: `lib$(SYMBOLPREFIX)openblas$(SYMBOLSUFFIX)` rather than `libopenblas`.
+DEPS_OPENBLAS_SYMBOLSUFFIX ?=
+DEPS_OPENBLAS_SYMBOLPREFIX ?=
+
+# Define whether to use threading (determined automatically if not specified):
+DEPS_OPENBLAS_USE_THREAD ?=
+
+# Specify whether to use the AVX kernel on Sandy Bridge.
+DEPS_OPENBLAS_NO_AVX ?= 1
+
+# Specify whether to use Haswell optimizations if binutils is too old (e.g. RHEL6):
+DEPS_OPENBLAS_NO_AVX2 ?= 1
+
+# Specify whether to compile CBLAS:
+DEPS_OPENBLAS_NO_CBLAS ?= 0
+
+# Specify whether to only compile CBLAS:
+DEPS_OPENBLAS_ONLY_CBLAS ?= 0
+
+# Specify whether to compile LAPACK (also disables compiling the C interface to LAPACK):
+DEPS_OPENBLAS_NO_LAPACK ?= 0
+
+# Specify whether to compile the C interface to LAPACK:
+DEPS_OPENBLAS_NO_LAPACKE ?= 0
+
 # Define build options (originally based on Julia; see https://github.com/JuliaLang/julia/blob/master/deps/blas.mk):
-DEPS_OPENBLAS_BUILD_OPTS := CC="$(CC)" FC="$(FC)" RANLIB="$(RANLIB)" FFLAGS="$(FFLAGS)" TARGET="$(DEPS_OPENBLAS_TARGET_ARCH)" BINARY="$(DEPS_OPENBLAS_BINARY)"
+DEPS_OPENBLAS_BUILD_OPTS := CC="$(CC)" FC="$(FC)" RANLIB="$(RANLIB)" FFLAGS="$(DEPS_OPENBLAS_FFLAGS)" TARGET="$(DEPS_OPENBLAS_TARGET_ARCH)" BINARY="$(DEPS_OPENBLAS_BINARY)"
 
 # Define threading options:
 ifeq ($(DEPS_OPENBLAS_USE_THREAD), 1)
@@ -99,7 +146,7 @@ endif
 # Disable CPU/memory (scheduler) affinity on Linux:
 DEPS_OPENBLAS_BUILD_OPTS += NO_AFFINITY=1
 
-# Unless for distribution (i.e., a need exists for supporting multiple architectures in a single binary), disable building for all architectures:
+# Determine whether to build for multiple architectures in a single binary:
 ifeq ($(DEPS_OPENBLAS_DYNAMIC_ARCH), 1)
 	DEPS_OPENBLAS_BUILD_OPTS += DYNAMIC_ARCH=1
 else
@@ -132,7 +179,6 @@ endif
 
 # Determine whether to compile LAPACK:
 ifeq ($(DEPS_OPENBLAS_NO_LAPACK), 1)
-	# Also disables compiling the C interface to LAPACK:
 	DEPS_OPENBLAS_BUILD_OPTS += NO_LAPACK=1
 endif
 
@@ -141,9 +187,8 @@ ifeq ($(DEPS_OPENBLAS_NO_LAPACKE), 1)
 	DEPS_OPENBLAS_BUILD_OPTS += NO_LAPACKE=1
 endif
 
-# Determine whether to use 8-byte integers (not all Fortran compilers support this; safe to disable):
+# Determine whether to build a 64-bit BLAS interface:
 ifeq ($(DEPS_OPENBLAS_USE_BLAS64), 1)
-	# When enabled, add a prefix and/or suffix to all exported symbol names in the shared library. Doing so helps avoid conflicts with other BLAS libraries, especially when using 64-bit integer interfaces in OpenBLAS. Note that the same prefix and suffix are added to the library name: `lib$(SYMBOLPREFIX)openblas$(SYMBOLSUFFIX)` rather than `libopenblas`.
 	DEPS_OPENBLAS_BUILD_OPTS += INTERFACE64=1 SYMBOLSUFFIX="$(DEPS_OPENBLAS_SYMBOLSUFFIX)" SYMBOLPREFIX="$(DEPS_OPENBLAS_SYMBOLPREFIX)"
 endif
 
