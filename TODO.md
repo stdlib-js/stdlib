@@ -1227,7 +1227,7 @@
 
 234. mk recipe to read a dep readme and launch in an electron window/browser
 
-235. nlp levi dist (see also [damlev](https://github.com/WatchBeam/damlev))
+235. nlp levi dist (see also [damlev](https://github.com/WatchBeam/damlev) and [leven](https://github.com/sindresorhus/leven/blob/master/index.js))
 
 236. [travis-deploy-example](https://github.com/bcoe/travis-deploy-example)
 
@@ -1505,6 +1505,8 @@
 358. [fmt-obj](https://github.com/queckezz/fmt-obj)
 
 359. [pretty-format](https://www.npmjs.com/package/pretty-format)
+
+360. [memo](https://github.com/feross/memo)
 
 
 ---
