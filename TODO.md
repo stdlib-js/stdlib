@@ -1502,6 +1502,10 @@
 
 357. command [exists](https://github.com/mathisonian/command-exists/blob/master/lib/command-exists.js)
 
+358. [fmt-obj](https://github.com/queckezz/fmt-obj)
+
+359. [pretty-format](https://www.npmjs.com/package/pretty-format)
+
 
 ---
 
