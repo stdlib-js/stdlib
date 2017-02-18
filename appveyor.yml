@@ -211,8 +211,6 @@ install:
   - cmd: echo %PATH%
 
   # Perform installation tasks:
-  - cmd: npm install
-  - cmd: node C:\projects\stdlib\lib\node_modules\@stdlib\tools\library-manifest\bin\cli C:\projects\stdlib\lib\node_modules\@stdlib\math\base\blas\dasum\manifest.json -- --os=win
   - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% NODE_GYP_FLAGS="--python %PYTHON% --msvs_version=2015" install'
 
 
