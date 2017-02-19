@@ -129,15 +129,42 @@ NPM ?= npm
 
 # COMPILERS #
 
-# Define the C compiler:
-C_COMPILER ?= gcc
-
-# Define the C++ compiler:
-CXX_COMPILER ?= g++
-
 # Define the Fortran compiler:
 FORTRAN_COMPILER ?= gfortran
 FC := $(FORTRAN_COMPILER)
+
+# Define common Fortran compiler options:
+COMMON_FFLAGS ?= \
+	-std=f95 \
+	-ffree-form \
+	-O3 \
+	-Wall \
+	-Wextra \
+	-Wimplicit-interface \
+	-fno-underscoring \
+	-pedantic
+
+# Define the C compiler:
+C_COMPILER ?= gcc
+CC := $(C_COMPILER)
+
+# Define common C compiler options:
+COMMON_CFLAGS ?= \
+	-std=c99 \
+	-O3 \
+	-Wall \
+	-pedantic
+
+# Define the C++ compiler:
+CXX_COMPILER ?= g++
+CXX := $(CXX_COMPILER)
+
+# Define common C++ compiler options:
+COMMON_CXXFLAGS ?= \
+	-std=c++11 \
+	-O3 \
+	-Wall \
+	-pedantic
 
 # Define the command for `ranlib` (generates an index from object file contents and stores the index in the file; used by a linker):
 RANLIB ?= ranlib
