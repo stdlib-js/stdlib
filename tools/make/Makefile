@@ -20,17 +20,6 @@ FORTRAN_COMPILER ?= gfortran
 DELETE ?= -rm
 DELETE_FLAGS ?= -rf
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
-# Based on the kernel, determine the `open` command:
-ifeq ($(KERNEL), Darwin)
-	OPEN ?= open
-else
-	OPEN ?= xdg-open
-endif
-# TODO: add Windows command
-
 # Determine the OS:
 #
 # [1]: https://en.wikipedia.org/wiki/Uname#Examples
@@ -47,6 +36,14 @@ ifneq (, $(findstring CYGWIN,$(OS)))
 endif
 endif
 endif
+
+# Based on the OS, determine the `open` command:
+ifeq ($(OS), Darwin)
+	OPEN ?= open
+else
+	OPEN ?= xdg-open
+endif
+# TODO: add Windows command
 
 
 # DEPENDENCIES #
