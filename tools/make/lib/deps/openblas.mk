@@ -20,7 +20,7 @@ DEPS_OPENBLAS_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_o
 DEPS_OPENBLAS_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_openblas_basename)
 
 # Define the output path after extracting:
-deps_openblas_extract_out := $(DEPS_BUILD_DIR)/OpenBlas-$(DEPS_OPENBLAS_VERSION)
+deps_openblas_extract_out := $(DEPS_BUILD_DIR)/OpenBLAS-$(DEPS_OPENBLAS_VERSION)
 
 # Define the path to the directory containing tests:
 DEPS_OPENBLAS_TEST_DIR ?= $(DEPS_DIR)/test/openblas
