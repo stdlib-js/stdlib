@@ -24,7 +24,7 @@ DELETE_FLAGS ?= -rf
 #
 # [1]: https://en.wikipedia.org/wiki/Uname#Examples
 # [2]: http://stackoverflow.com/a/27776822/2225624
-OS := $(shell uname)
+OS ?= $(shell uname)
 ifneq (, $(findstring MINGW,$(OS)))
 	OS := WINNT
 else
