@@ -2,12 +2,19 @@
 # VARIABLES #
 
 # Determine the OS:
+#
+# [1]: https://en.wikipedia.org/wiki/Uname#Examples
+# [2]: http://stackoverflow.com/a/27776822/2225624
 OS := $(shell uname)
 ifneq (, $(findstring MINGW,$(OS)))
 	OS := WINNT
 else
 ifneq (, $(findstring MSYS,$(OS)))
 	OS := WINNT
+else
+ifneq (, $(findstring CYGWIN,$(OS)))
+	OS := WINNT
+endif
 endif
 endif
 
