@@ -10,6 +10,15 @@ NODE_GYP ?= $(BIN_DIR)/node-gyp
 # Define command-line options when invoking node-gyp.
 NODE_GYP_FLAGS ?=
 
+NODE_GYP_FLAGS += -Dfortran_compiler=$(FC)
+
+ifneq (, $(BLAS))
+	NODE_GYP_FLAGS += -Dblas=$(BLAS)
+ifneq (, $(BLAS_DIR))
+	NODE_GYP_FLAGS += -Dblas_dir=$(BLAS_DIR)
+endif
+endif
+
 
 # TARGETS #
 
@@ -24,13 +33,7 @@ install-addons: clean-addons
 		fi; \
 		echo ''; \
 		echo "Building add-on: $$pkg"; \
-		cd $$pkg && \
-			FC=$(FC) \
-			fPIC=$(fPIC) \
-			BLAS=$(BLAS) \
-			BLAS_DIR=$(BLAS_DIR) \
-			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
-		|| exit 1; \
+		cd $$pkg && $(NODE_GYP) $(NODE_GYP_FLAGS) rebuild || exit 1; \
 	done
 
 .PHONY: install-addons
@@ -47,11 +50,8 @@ clean-addons:
 		fi; \
 		echo ''; \
 		echo "Cleaning add-on: $$pkg"; \
-		cd $$pkg/src && \
-			$(MAKE) clean && \
-		cd $$pkg && \
-			$(NODE_GYP) $(NODE_GYP_FLAGS) clean \
-		|| exit 1; \
+		cd $$pkg/src && $(MAKE) clean && \
+		cd $$pkg && $(NODE_GYP) clean || exit 1; \
 	done
 
 .PHONY: clean-addons
