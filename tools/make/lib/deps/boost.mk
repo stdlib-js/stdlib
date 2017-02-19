@@ -1,27 +1,11 @@
 
 # VARIABLES #
 
-# Define the command for recursively creating directories (WARNING: portability issues on some systems!):
-MKDIR_RECURSIVE ?= mkdir -p
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
-# Define the command for extracting tarfiles:
-TAR ?= tar
-
 # Define the path to an executable for downloading a remote resource:
 DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 
 # Define the path to an executable for verifying a download:
 DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
-
-# Define the version to download:
-DEPS_BOOST_VERSION ?= 1.62.0
-
-# Generate a version slug:
-deps_boost_version_slug := $(subst .,_,$(DEPS_BOOST_VERSION))
 
 # Define the download URL:
 DEPS_BOOST_URL ?= https://sourceforge.net/projects/boost/files/boost/$(DEPS_BOOST_VERSION)/boost_$(deps_boost_version_slug).tar.gz
@@ -34,9 +18,6 @@ DEPS_BOOST_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_boos
 
 # Define the output path when downloading:
 DEPS_BOOST_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_boost_basename)
-
-# Define the output path when building:
-DEPS_BOOST_BUILD_OUT ?= $(DEPS_BUILD_DIR)/boost_$(deps_boost_version_slug)
 
 # Define the path to the directory containing tests:
 DEPS_BOOST_TEST_DIR ?= $(DEPS_DIR)/test/boost

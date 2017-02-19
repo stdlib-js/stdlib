@@ -1,12 +1,6 @@
 
 # VARIABLES #
 
-# Define the command to copy files:
-CP ?= cp
-
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
 # Define the directory from which to copy git hooks:
 GIT_HOOKS_DIR ?= $(TOOLS_DIR)/git/hooks
 

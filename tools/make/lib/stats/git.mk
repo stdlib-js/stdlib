@@ -2,9 +2,6 @@
 
 # VARIABLES #
 
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
 # Define the path to the directory containing scripts for mining the git repository:
 GIT_SCRIPTS_DIR ?= $(TOOLS_DIR)/git/scripts
 

@@ -1,14 +1,6 @@
 
 # VARIABLES #
 
-# Based on the OS, determine the `open` command:
-ifeq ($(OS), Darwin)
-	OPEN ?= open
-else
-	OPEN ?= xdg-open
-endif
-# TODO: add Windows command
-
 # Define the path to the [plato][1] executable.
 #
 # To install plato:

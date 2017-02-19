@@ -1,30 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `node`:
-NODE ?= node
-
-# Define the command to recursively sync directories:
-RSYNC_RECURSIVE ?= rsync -r
-
-# Define the command to recursively create directories (WARNING: possible portability issues on some systems!):
-MKDIR_RECURSIVE ?= mkdir -p
-
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
-# Based on the kernel, determine the `open` command:
-ifeq ($(OS), Darwin)
-	OPEN ?= open
-else
-	OPEN ?= xdg-open
-endif
-# TODO: add Windows command
-
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
 ifeq ($(OS), Darwin)

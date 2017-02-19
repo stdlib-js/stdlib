@@ -1,16 +1,4 @@
 
-# VARIABLES #
-
-# Define the Node environment:
-NODE_ENV_TEST ?= $(NODE_ENV)
-
-# Define the Node path:
-NODE_PATH_TEST ?= $(NODE_PATH)
-
-# Define the code coverage instrumentation utility:
-JAVASCRIPT_CODE_INSTRUMENTER ?= istanbul
-
-
 # DEPENDENCIES #
 
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)

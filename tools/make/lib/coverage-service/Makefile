@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the code coverage service to use:
-COVERAGE_SERVICE ?= codecov
-
 # Define the name of the coverage report:
 COVERAGE_NAME ?= $(NODE_ENV_TEST)
 

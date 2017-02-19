@@ -1,15 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for Node:
-NODE ?= node
-
-# Define the Node environment:
-NODE_ENV_REPL ?= $(NODE_ENV)
-
-# Define the Node path:
-NODE_PATH_REPL ?= $(NODE_PATH)
-
 # Define the path of the executable:
 STDLIB ?= $(LOCAL_BIN_DIR)/cli
 

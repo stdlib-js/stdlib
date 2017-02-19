@@ -1,24 +1,6 @@
 
 # VARIABLES #
 
-ifndef VERBOSE
-	QUIET := @
-endif
-
-# Define whether the make commands are running on a hosted continuous integration service:
-ifeq ($(TRAVIS), true)
-	CI_SERVICE ?= travis
-else
-ifeq ($(APPVEYOR), true)
-	CI_SERVICE ?= appveyor
-else
-	CI_SERVICE ?= none
-endif
-endif
-
-# Define supported Node.js versions:
-NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 node'
-
 # Determine the filename:
 this_file := $(lastword $(MAKEFILE_LIST))
 
@@ -126,19 +108,6 @@ else
 	NODE_ENV_REPL ?= repl
 	NODE_ENV_TEST ?= test
 	NODE_ENV_WORKSHOPS ?= workshop
-endif
-
-# Define whether delete operations should be safe (i.e., deleted items are sent to trash, rather than permanently deleted):
-SAFE_DELETE ?= false
-
-# Define the delete command:
-ifeq ($(SAFE_DELETE), true)
-	# FIXME: -rm -rf
-	DELETE := -rm
-	DELETE_FLAGS := -rf
-else
-	DELETE ?= -rm
-	DELETE_FLAGS ?= -rf
 endif
 
 

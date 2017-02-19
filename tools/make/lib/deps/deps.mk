@@ -1,13 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for recursively creating directories (WARNING: portability issues on some systems!):
-MKDIR_RECURSIVE ?= mkdir -p
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
 # Define the path for saving dependency downloads:
 DEPS_TMP_DIR ?= $(DEPS_DIR)/tmp
 

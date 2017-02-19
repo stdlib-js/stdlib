@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the analysis tool to use when analyzing JavaScript files:
-JAVASCRIPT_COMPLEXITY_TOOL ?= plato
-
 # Define the output directory:
 JAVASCRIPT_COMPLEXITY_DIR ?= $(COMPLEXITY_DIR)/javascript
 

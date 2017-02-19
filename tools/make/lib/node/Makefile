@@ -1,13 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `npm`:
-NPM ?= npm
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
 # Define the path to the root `package.json`:
 ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 

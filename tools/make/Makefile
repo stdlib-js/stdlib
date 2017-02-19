@@ -1,53 +1,8 @@
 
-# VARIABLES #
-
-# Define the command for `npm`:
-NPM ?= npm
-
-# Define the command for `node`:
-NODE ?= node
-
-# Define the C compiler:
-C_COMPILER ?= gcc
-
-# Define the C++ compiler:
-CXX_COMPILER ?= g++
-
-# Define the Fortran compiler:
-FORTRAN_COMPILER ?= gfortran
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
-# Determine the OS:
-#
-# [1]: https://en.wikipedia.org/wiki/Uname#Examples
-# [2]: http://stackoverflow.com/a/27776822/2225624
-OS ?= $(shell uname)
-ifneq (, $(findstring MINGW,$(OS)))
-	OS := WINNT
-else
-ifneq (, $(findstring MSYS,$(OS)))
-	OS := WINNT
-else
-ifneq (, $(findstring CYGWIN,$(OS)))
-	OS := WINNT
-endif
-endif
-endif
-
-# Based on the OS, determine the `open` command:
-ifeq ($(OS), Darwin)
-	OPEN ?= open
-else
-	OPEN ?= xdg-open
-endif
-# TODO: add Windows command
-
-
 # DEPENDENCIES #
 
+# Order is important:
+include $(TOOLS_MAKE_DIR)/common.mk
 include $(TOOLS_MAKE_LIB_DIR)/help/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/init/Makefile
 

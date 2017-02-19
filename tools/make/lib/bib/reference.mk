@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `node`:
-NODE ?= node
-
 # Define the citation:
 CITATION ?=
 

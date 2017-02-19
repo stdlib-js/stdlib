@@ -1,10 +1,4 @@
 
-# VARIABLES #
-
-# Define the linter to use when linting JavaScript source files:
-JAVASCRIPT_LINTER ?= eslint
-
-
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/lint/jshint.mk
@@ -29,8 +23,10 @@ lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examp
 lint-javascript-src:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
 	$(QUIET) $(MAKE) -f $(this_file) jshint-src
-else ifeq ($(JAVASCRIPT_LINTER), eslint)
+else
+ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) $(MAKE) -f $(this_file) eslint-src
+endif
 endif
 
 .PHONY: lint-javascript-src
@@ -43,8 +39,10 @@ endif
 lint-javascript-tests:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
 	$(QUIET) $(MAKE) -f $(this_file) jshint-tests
-else ifeq ($(JAVASCRIPT_LINTER), eslint)
+else
+ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) $(MAKE) -f $(this_file) eslint-tests
+endif
 endif
 
 .PHONY: lint-javascript-tests
@@ -57,8 +55,10 @@ endif
 lint-javascript-examples:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
 	$(QUIET) $(MAKE) -f $(this_file) jshint-examples
-else ifeq ($(JAVASCRIPT_LINTER), eslint)
+else
+ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) $(MAKE) -f $(this_file) eslint-examples
+endif
 endif
 
 .PHONY: lint-javascript-examples
@@ -71,8 +71,10 @@ endif
 lint-javascript-benchmarks:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
 	$(QUIET) $(MAKE) -f $(this_file) jshint-benchmarks
-else ifeq ($(JAVASCRIPT_LINTER), eslint)
+else
+ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) $(MAKE) -f $(this_file) eslint-benchmarks
+endif
 endif
 
 .PHONY: lint-javascript-benchmarks
@@ -85,8 +87,10 @@ endif
 lint-javascript-files:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
 	$(QUIET) $(MAKE) -f $(this_file) jshint-files
-else ifeq ($(JAVASCRIPT_LINTER), eslint)
+else
+ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) $(MAKE) -f $(this_file) eslint-files
+endif
 endif
 
 .PHONY: lint-javascript-files

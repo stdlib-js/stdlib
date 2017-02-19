@@ -1,15 +1,6 @@
 
 # VARIABLES #
 
-# Define the Node environment:
-NODE_ENV_TEST ?= $(NODE_ENV)
-
-# Define the Node path:
-NODE_PATH_TEST ?= $(NODE_PATH)
-
-# Define the browser test runner:
-BROWSER_TEST_RUNNER ?= testling
-
 # Define the path to the browserify executable:
 BROWSERIFY ?= $(BIN_DIR)/browserify
 

@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `node`:
-NODE ?= node
-
 # Define the root directory from which to search for packages:
 PACKAGES_DIR ?= $(ROOT_DIR)/lib/node_modules
 

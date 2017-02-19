@@ -10,34 +10,6 @@ NODE_GYP ?= $(BIN_DIR)/node-gyp
 # Define command-line options when invoking node-gyp.
 NODE_GYP_FLAGS ?=
 
-# Define the Fortran compiler:
-ifdef FORTRAN_COMPILER
-	FC := $(FORTRAN_COMPILER)
-else
-	FC := gfortran
-endif
-
-# Determine whether to generate [position independent code][1]:
-#
-# [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
-# [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
-ifeq ($(OS), WINNT)
-	fPIC ?=
-else
-	fPIC ?= -fPIC
-endif
-
-# Define the BLAS library to use:
-BLAS ?=
-
-# Define the path to the BLAS library (used for includes and linking):
-ifeq ($(BLAS), openblas)
-	# Use the `wildcard` function to check for the OpenBLAS vendor dependency:
-	BLAS_DIR ?= $(wildcard $(DEPS_OPENBLAS_BUILD_OUT))
-else
-	BLAS_DIR ?=
-endif
-
 
 # TARGETS #
 

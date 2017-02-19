@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
 # Define the path of the linter executable:
 PACKAGE_JSON_LINTER ?= $(TOOLS_DIR)/lint/pkg-json/bin/cli
 

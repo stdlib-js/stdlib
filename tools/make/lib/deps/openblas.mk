@@ -1,37 +1,11 @@
 
 # VARIABLES #
 
-# Define the command for recursively creating directories (WARNING: portability issues on some systems!):
-MKDIR_RECURSIVE ?= mkdir -p
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
-# Define the command for extracting tarfiles:
-TAR ?= tar
-
-# Define the Fortran compiler:
-ifdef FORTRAN_COMPILER
-	FC := $(FORTRAN_COMPILER)
-else
-	FC := gfortran
-endif
-
-# Define the command for `ranlib` (generates an index from object file contents and stores the index in the file; used by a linker):
-RANLIB ?= ranlib
-
 # Define the path to an executable for downloading a remote resource:
 DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 
 # Define the path to an executable for verifying a download:
 DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
-
-# Define the version to download:
-DEPS_OPENBLAS_VERSION ?= 0.2.19
-
-# Generate a version slug:
-deps_openblas_version_slug := $(subst .,_,$(DEPS_OPENBLAS_VERSION))
 
 # Define the download URL:
 DEPS_OPENBLAS_URL ?= https://github.com/xianyi/OpenBLAS/archive/v$(DEPS_OPENBLAS_VERSION).tar.gz
@@ -48,9 +22,6 @@ DEPS_OPENBLAS_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_openblas_basename)
 # Define the output path after extracting:
 deps_openblas_extract_out := $(DEPS_BUILD_DIR)/OpenBlas-$(DEPS_OPENBLAS_VERSION)
 
-# Define the output path when building:
-DEPS_OPENBLAS_BUILD_OUT ?= $(DEPS_BUILD_DIR)/openblas_$(deps_openblas_version_slug)
-
 # Define the path to the directory containing tests:
 DEPS_OPENBLAS_TEST_DIR ?= $(DEPS_DIR)/test/openblas
 
@@ -62,78 +33,6 @@ DEPS_OPENBLAS_TEST_INSTALL ?= $(DEPS_OPENBLAS_TEST_DIR)/test_install.c
 
 # Define the output path for a test file:
 DEPS_OPENBLAS_TEST_INSTALL_OUT ?= $(DEPS_OPENBLAS_TEST_OUT)/test_install
-
-# Host architecture:
-DEPS_OPENBLAS_ARCH := $(shell $(CC) -dumpmachine | sed "s/\([^-]*\).*$$/\1/")
-
-# Target binary (32-bit or 64-bit):
-DEPS_OPENBLAS_BINARY ?= 64
-
-# Target architecture (cross-compiling):
-DEPS_OPENBLAS_TARGET_ARCH ?=
-
-# Host C compiler (cross-compiling):
-DEPS_OPENBLAS_HOSTCC ?=
-
-# C compiler flags:
-DEPS_OPENBLAS_CFLAGS ?=
-
-# Fortran compiler flags:
-DEPS_OPENBLAS_FFLAGS ?= -O3
-
-# Unless for distribution (i.e., a need exists for supporting multiple architectures in a single binary), disable building for all architectures:
-DEPS_OPENBLAS_DYNAMIC_ARCH ?= 0
-
-# Define whether to compile a debug build:
-DEPS_OPENBLAS_DEBUG ?= 0
-
-# Specify whether to build a 64-bit (8 byte integers) BLAS interface (not all Fortran compilers support this; safe to disable):
-DEPS_OPENBLAS_USE_BLAS64 ?= 0
-
-# When building a 64-bit BLAS interface, add a prefix and/or suffix to all exported symbol names in the shared library. Doing so helps avoid conflicts with other BLAS libraries, especially when using 64-bit integer interfaces in OpenBLAS. Note that the same prefix and suffix are added to the library name: `lib$(SYMBOLPREFIX)openblas$(SYMBOLSUFFIX)` rather than `libopenblas`.
-DEPS_OPENBLAS_SYMBOLSUFFIX ?=
-DEPS_OPENBLAS_SYMBOLPREFIX ?=
-
-# Define whether to use threading (determined automatically if not specified):
-DEPS_OPENBLAS_USE_THREAD ?=
-
-# Specify whether to use the AVX kernel on Sandy Bridge.
-DEPS_OPENBLAS_NO_AVX ?= 1
-
-# Specify whether to use Haswell optimizations if binutils is too old (e.g. RHEL6):
-DEPS_OPENBLAS_NO_AVX2 ?= 1
-
-# Specify whether to compile CBLAS:
-DEPS_OPENBLAS_NO_CBLAS ?= 0
-
-# Specify whether to only compile CBLAS:
-DEPS_OPENBLAS_ONLY_CBLAS ?= 0
-
-# Specify whether to compile LAPACK (also disables compiling the C interface to LAPACK):
-DEPS_OPENBLAS_NO_LAPACK ?= 0
-
-# Specify whether to compile the C interface to LAPACK:
-DEPS_OPENBLAS_NO_LAPACKE ?= 0
-
-# Determine whether to generate [position independent code][1]:
-#
-# [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
-# [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
-ifneq ($(OS), WINNT)
-	DEPS_OPENBLAS_FFLAGS += -fPIC
-endif
-
-# Specify stack alignment on Windows.
-#
-# [1]: https://gcc.gnu.org/onlinedocs/gcc-4.5.3/gcc/i386-and-x86_002d64-Options.html
-ifeq ($(OS), WINNT)
-ifneq ($(DEPS_OPENBLAS_ARCH), x86_64)
-ifneq ($(DEPS_OPENBLAS_USE_CLANG), 1)
-	DEPS_OPENBLAS_CFLAGS += -mincoming-stack-boundary=2
-endif
-	DEPS_OPENBLAS_FFLAGS += -mincoming-stack-boundary=2
-endif
-endif
 
 # Define build options (originally based on Julia; see https://github.com/JuliaLang/julia/blob/master/deps/blas.mk):
 DEPS_OPENBLAS_BUILD_OPTS := \

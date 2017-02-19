@@ -1,17 +1,6 @@
 
 # VARIABLES #
 
-# Define the Node environment:
-NODE_ENV_TEST ?= $(NODE_ENV)
-
-# Based on the kernel, determine the `open` command:
-ifeq ($(OS), Darwin)
-	OPEN ?= open
-else
-	OPEN ?= xdg-open
-endif
-# TODO: add Windows command
-
 # Define the path to the [testling][1] executable.
 #
 # To install testling:

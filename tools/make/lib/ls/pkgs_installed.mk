@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `node`:
-NODE ?= node
-
 # Define the path to the executable to list installed package dependencies:
 LIST_INSTALLED_PACKAGES ?= $(TOOLS_DIR)/pkgs/installed/bin/cli
 

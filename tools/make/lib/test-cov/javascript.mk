@@ -1,20 +1,4 @@
 
-# VARIABLES #
-
-# Define the Node environment:
-NODE_ENV_TEST ?= $(NODE_ENV)
-
-# Define the Node path:
-NODE_PATH_TEST ?= $(NODE_PATH)
-
-# Define the code coverage instrumentation utility:
-JAVASCRIPT_CODE_INSTRUMENTER ?= istanbul
-
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
-
 # DEPENDENCIES #
 
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)

@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
 # Define the path of the executable for listing contributors:
 LIST_CONTRIBUTORS ?= $(TOOLS_DIR)/git/scripts/list_contributors
 

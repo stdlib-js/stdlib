@@ -1,21 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for removing files and directories:
-DELETE ?= -rm
-DELETE_FLAGS ?= -rf
-
-# Based on the OS, determine the `open` command:
-ifeq ($(OS), Darwin)
-	OPEN ?= open
-else
-	OPEN ?= xdg-open
-endif
-# TODO: add Windows command
-
-# Define the command for recursively creating directories (WARNING: possible portability issues on some systems!):
-MKDIR_RECURSIVE ?= mkdir -p
-
 # Define the path of the documentation.js executable:
 DOCUMENTATIONJS ?= $(BIN_DIR)/documentation
 

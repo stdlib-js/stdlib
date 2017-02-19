@@ -1,16 +1,4 @@
 
-# VARIABLES #
-
-# Define the command for `node`:
-NODE ?= node
-
-# Define the Node environment:
-NODE_ENV_BENCHMARK ?= $(NODE_ENV)
-
-# Define the Node path:
-NODE_PATH_BENCHMARK ?= $(NODE_PATH)
-
-
 # TARGETS #
 
 # Run JavaScript benchmarks.

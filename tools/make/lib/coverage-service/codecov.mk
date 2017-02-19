@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `node`:
-NODE ?= node
-
 # Define the path to the [Codecov][1] executable.
 #
 # [1]: https://github.com/codecov/codecov-bash

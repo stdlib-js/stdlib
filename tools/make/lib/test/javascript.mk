@@ -1,18 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
-# Define the Node environment:
-NODE_ENV_TEST ?= $(NODE_ENV)
-
-# Define the Node path:
-NODE_PATH_TEST ?= $(NODE_PATH)
-
-# Define the test runner to use when running JavaScript tests:
-JAVASCRIPT_TEST_RUNNER ?= tape
-
 # Define test runner to use when running JavaScript tests across multiple Node.js versions:
 JAVASCRIPT_TEST_NODE_VERSIONS ?= $(TOOLS_DIR)/test/scripts/test_node_versions
 

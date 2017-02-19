@@ -1,12 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for `node`:
-NODE ?= node
-
-# Define a license SPDX identifier whitelist:
-LICENSES_WHITELIST ?= 'Apache-2.0,Artistic-2.0,BSD-2-Clause,BSD-3-Clause,BSL-1.0,CC0-1.0,ISC,MIT,MPL-2.0,Unlicense,WTFPL'
-
 # Define the command for listing licenses:
 LIST_LICENSES ?= $(NODE) $(TOOLS_DIR)/licenses/licenses/bin/cli
 

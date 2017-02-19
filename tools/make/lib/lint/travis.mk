@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for setting executable permissions:
-MAKE_EXECUTABLE ?= chmod +x
-
 # Define the path to the [Travis CI][1] configuration file:
 #
 # [1]: https://docs.travis-ci.com/user/customizing-the-build

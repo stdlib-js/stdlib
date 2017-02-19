@@ -1,15 +1,6 @@
 
 # VARIABLES #
 
-# Define the `git` command:
-GIT ?= git
-
-# Define the command for staging files:
-GIT_ADD ?= $(GIT) add
-
-# Define the command for committing files:
-GIT_COMMIT ?= $(GIT) commit
-
 # Define the commit message for processing Markdown equations:
 GIT_COMMIT_MESSAGE_EQUATIONS ?= 'Process Markdown equations'
 

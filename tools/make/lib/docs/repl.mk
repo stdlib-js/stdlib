@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the command for Node:
-NODE ?= node
-
 # Define the path to the executable for generating REPL help docs:
 REPL_HELP ?= $(SRC_DIR)/@stdlib/repl/scripts/build.js
 
