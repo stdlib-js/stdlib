@@ -17,11 +17,8 @@ MAKE_EXECUTABLE ?= chmod +x
 DELETE ?= -rm
 DELETE_FLAGS ?= -rf
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
 # Based on the kernel, determine the `open` command:
-ifeq ($(KERNEL), Darwin)
+ifeq ($(OS), Darwin)
 	OPEN ?= open
 else
 	OPEN ?= xdg-open
@@ -30,7 +27,7 @@ endif
 
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
-ifeq ($(KERNEL), Darwin)
+ifeq ($(OS), Darwin)
 	find_kernel_prefix := -E
 else
 	find_kernel_prefix :=
@@ -42,7 +39,7 @@ FIND_ISTANBUL_TEST_DIRS_FLAGS ?= \
 	-name "$(TESTS_FOLDER)" \
 	-regex "$(TESTS_FILTER)"
 
-ifneq ($(KERNEL), Darwin)
+ifneq ($(OS), Darwin)
 	FIND_ISTANBUL_TEST_DIRS_FLAGS := -regextype posix-extended $(FIND_ISTANBUL_TEST_DIRS_FLAGS)
 endif
 

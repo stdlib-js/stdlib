@@ -1,12 +1,9 @@
 
 # VARIABLES #
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
-ifeq ($(KERNEL), Darwin)
+ifeq ($(OS), Darwin)
 	find_kernel_prefix := -E
 else
 	find_kernel_prefix :=
@@ -30,7 +27,7 @@ FIND_SOURCES_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
 
-ifneq ($(KERNEL), Darwin)
+ifneq ($(OS), Darwin)
 	FIND_SOURCES_FLAGS := -regextype posix-extended $(FIND_SOURCES_FLAGS)
 endif
 

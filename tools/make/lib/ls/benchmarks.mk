@@ -4,12 +4,9 @@
 # Define the folder name for benchmarks files:
 BENCHMARKS_FOLDER ?= benchmark
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
-ifeq ($(KERNEL), Darwin)
+ifeq ($(OS), Darwin)
 	find_kernel_prefix := -E
 else
 	find_kernel_prefix :=
@@ -31,7 +28,7 @@ FIND_BENCHMARKS_FLAGS ?= \
 	-not -path "$(REPORTS_DIR)/*"
 
 
-ifneq ($(KERNEL), Darwin)
+ifneq ($(OS), Darwin)
 	FIND_BENCHMARKS_FLAGS := -regextype posix-extended $(FIND_BENCHMARKS_FLAGS)
 endif
 

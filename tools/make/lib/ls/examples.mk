@@ -4,12 +4,9 @@
 # Define the folder name for examples files:
 EXAMPLES_FOLDER ?= examples
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 
-ifeq ($(KERNEL), Darwin)
+ifeq ($(OS), Darwin)
 	find_kernel_prefix := -E
 else
 	find_kernel_prefix :=
@@ -32,7 +29,7 @@ FIND_EXAMPLES_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/fixtures/*"
 
 
-ifneq ($(KERNEL), Darwin)
+ifneq ($(OS), Darwin)
 	FIND_EXAMPLES_FLAGS := -regextype posix-extended $(FIND_EXAMPLES_FLAGS)
 endif
 

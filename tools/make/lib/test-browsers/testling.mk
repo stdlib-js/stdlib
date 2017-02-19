@@ -4,11 +4,8 @@
 # Define the Node environment:
 NODE_ENV_TEST ?= $(NODE_ENV)
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
 # Based on the kernel, determine the `open` command:
-ifeq ($(KERNEL), Darwin)
+ifeq ($(OS), Darwin)
 	OPEN ?= open
 else
 	OPEN ?= xdg-open

@@ -1,11 +1,8 @@
 
 # VARIABLES #
 
-# Determine the host kernel:
-KERNEL ?= $(shell uname -s)
-
-# Based on the kernel, determine the `open` command:
-ifeq ($(KERNEL), Darwin)
+# Based on the OS, determine the `open` command:
+ifeq ($(OS), Darwin)
 	OPEN ?= open
 else
 	OPEN ?= xdg-open

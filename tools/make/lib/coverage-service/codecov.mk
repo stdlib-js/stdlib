@@ -14,7 +14,7 @@ CODECOV ?= bash <(curl -s https://codecov.io/bash)
 CODECOV_FLAGS ?= \
 	-f "$(LCOV_INFO)" \
 	-F $(CI_SERVICE) \
-	-F $(shell echo $(KERNEL) | tr '[:upper:]' '[:lower:]') \
+	-F $(shell echo $(OS) | tr '[:upper:]' '[:lower:]') \
 	-F $(shell $(NODE) --version | tr '\.' '_' | (printf 'node_' && $(CAT))) \
 	-X fix \
 	-Z
