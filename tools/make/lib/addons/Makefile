@@ -37,6 +37,17 @@ else
 	fPIC ?= -fPIC
 endif
 
+# Define the BLAS library to use:
+BLAS ?=
+
+# Define the path to the BLAS library (used for includes and linking):
+ifeq ($(BLAS), openblas)
+	# Use the `wildcard` function to check for the OpenBLAS vendor dependency:
+	BLAS_DIR ?= $(wildcard $(DEPS_OPENBLAS_BUILD_OUT))
+else
+	BLAS_DIR ?=
+endif
+
 
 # TARGETS #
 
@@ -54,6 +65,8 @@ install-addons: clean-addons
 		cd $$pkg && \
 			FC=$(FC) \
 			fPIC=$(fPIC) \
+			BLAS=$(BLAS) \
+			BLAS_DIR=$(BLAS_DIR) \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| exit 1; \
 	done
