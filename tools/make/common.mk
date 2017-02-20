@@ -188,6 +188,9 @@ BLAS ?=
 # Define the path to the BLAS library (used for includes and linking):
 BLAS_DIR ?=
 
+# Define the path for building dependencies:
+DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
+
 # Define the Boost version:
 DEPS_BOOST_VERSION ?= 1.62.0
 
@@ -274,6 +277,6 @@ DEPS_OPENBLAS_NO_LAPACKE ?= 0
 ifeq ($(BLAS), openblas)
 ifeq (, $(BLAS_DIR))
 	# Use the `wildcard` function to check for the OpenBLAS vendor dependency:
-	BLAS_DIR = $(wildcard $(DEPS_OPENBLAS_BUILD_OUT))
+	BLAS_DIR := $(wildcard $(DEPS_OPENBLAS_BUILD_OUT))
 endif
 endif

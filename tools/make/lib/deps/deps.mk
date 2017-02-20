@@ -4,9 +4,6 @@
 # Define the path for saving dependency downloads:
 DEPS_TMP_DIR ?= $(DEPS_DIR)/tmp
 
-# Define the path for building dependencies:
-DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
-
 # Define the path for dependency checksums:
 DEPS_CHECKSUMS_DIR ?= $(DEPS_DIR)/checksums
 
