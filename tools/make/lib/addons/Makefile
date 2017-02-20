@@ -10,12 +10,14 @@ NODE_GYP ?= $(BIN_DIR)/node-gyp
 # Define command-line options when invoking node-gyp.
 NODE_GYP_FLAGS ?=
 
-NODE_GYP_FLAGS += -Dfortran_compiler=$(FC)
-
+# Define
+ifndef NODE_GYP_DEFINES
+	NODE_GYP_DEFINES := fortran_compiler=$(FC)
 ifneq (, $(BLAS))
-	NODE_GYP_FLAGS += -Dblas=$(BLAS)
-ifneq (, $(BLAS_DIR))
-	NODE_GYP_FLAGS += -Dblas_dir=$(BLAS_DIR)
+	NODE_GYP_DEFINES += blas=$(BLAS)
+ifdef BLAS_DIR
+	NODE_GYP_DEFINES += blas_dir=$(BLAS_DIR)
+endif
 endif
 endif
 
@@ -33,7 +35,10 @@ install-addons: clean-addons
 		fi; \
 		echo ''; \
 		echo "Building add-on: $$pkg"; \
-		cd $$pkg && $(NODE_GYP) $(NODE_GYP_FLAGS) rebuild || exit 1; \
+		cd $$pkg && \
+			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
+			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
+		|| exit 1; \
 	done
 
 .PHONY: install-addons
