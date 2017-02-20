@@ -6,6 +6,7 @@
 ## Exercises
 
 <!-- TODO: stream version, including random data generation -->
+
 <!-- TODO: various example use cases with real-world datasets; e.g., predicting home prices based on square footage -->
 
 ### 1) Simple Linear Model
