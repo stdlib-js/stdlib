@@ -1508,6 +1508,18 @@
 
 360. [memo](https://github.com/feross/memo)
 
+361. REPL chat bot (could, e.g., use AWS lambda)
+
+     - similar to `?` or `help`, could have a chat prefix
+     - or could enter chat mode; to exit, user must type keyword (e.g., "bye", "ttyl", etc)
+     - translate NL queries to doc searches (e.g., how do I plot in the terminal? how do I set the x-axis label?)
+     - could rely entirely on local code, but using sthg like AWS would allow collecting usage statistics (e.g., what types are queries are most common, etc)
+
+362. integrate collection of REPL usage statistics (opt-in)
+
+     - provide disclaimer regarding metrics collected, etc
+     - point to source code so people can inspect themselves
+
 
 ---
 
