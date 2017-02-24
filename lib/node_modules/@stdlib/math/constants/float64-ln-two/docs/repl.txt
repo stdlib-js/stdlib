@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of `2`.
+
+    Examples
+    --------
+    > {{alias}}
+    0.6931471805599453
+
+    See Also
+    --------
+
