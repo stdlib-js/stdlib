@@ -1520,6 +1520,8 @@
      - provide disclaimer regarding metrics collected, etc
      - point to source code so people can inspect themselves
 
+363. kill [processes](https://github.com/sindresorhus/fkill)
+
 
 ---
 
