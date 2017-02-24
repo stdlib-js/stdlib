@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    3.4028234663852886e+38
+
+    See Also
+    --------
+
