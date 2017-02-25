@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of the mathematical constant `π` times `2`.
+
+    Examples
+    --------
+    > {{alias}}
+    2.5066282746310007
+
+    See Also
+    --------
+
