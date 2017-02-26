@@ -1522,6 +1522,8 @@
 
 363. kill [processes](https://github.com/sindresorhus/fkill)
 
+364. open [datasets](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.is7rq5s3y)
+
 
 ---
 
