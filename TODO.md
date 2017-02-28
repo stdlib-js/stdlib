@@ -1524,6 +1524,8 @@
 
 364. open [datasets](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.is7rq5s3y)
 
+365. ML in other [languages](https://burakkanber.com/blog/machine-learning-in-other-languages-introduction/)
+
 
 ---
 
