@@ -1526,6 +1526,8 @@
 
 365. ML in other [languages](https://burakkanber.com/blog/machine-learning-in-other-languages-introduction/)
 
+366. Seeing [theory](http://students.brown.edu/seeing-theory/)
+
 
 ---
 
