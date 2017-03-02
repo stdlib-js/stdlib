@@ -12,6 +12,7 @@ var spawn = require( 'child_process' ).spawn;
 *
 * @private
 * @param {Error} error - error object
+* @returns {void}
 */
 function onError( error ) {
 	process.stderr.write( error.message+'\n', 'utf8' );
@@ -23,6 +24,7 @@ function onError( error ) {
 *
 * @private
 * @param {number} code - exit code
+* @returns {void}
 */
 function onFinish( code ) {
 	if ( code !== 0 ) {
@@ -33,7 +35,7 @@ function onFinish( code ) {
 	// process.exit( 0 );
 
 	// HACK: workaround is to use `console.log` and no exit:
-	console.log( '' );
+	console.log( '' ); // eslint-disable-line no-console
 } // end FUNCTION onFinish()
 
 /**
@@ -78,7 +80,7 @@ function plugin( dir, cwd, subpath ) {
 
 	// Environment variables:
 	if ( subpath ) {
-		args.push( 'GREP_DIR='+cwd );
+		args.push( 'FIND_NOTES_DIR='+cwd );
 	}
 	// Target:
 	args.push( 'notes' );
