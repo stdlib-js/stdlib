@@ -4,6 +4,7 @@
 
 var bench = require( '@stdlib/bench' );
 var pkg = require( './../package.json' ).name;
+var TODO = require( './../lib' );
 
 
 // MAIN //
@@ -23,7 +24,7 @@ bench( pkg, function benchmark( b ) {
 			return setTimeout( next, 0 );
 		}
 		b.toc();
-		if ( i === i/* TODO condition */ ) {
+		if ( TODO/* TODO condition */ ) {
 			b.fail( 'something went wrong' );
 		} else {
 			b.pass( 'benchmark finished' );
