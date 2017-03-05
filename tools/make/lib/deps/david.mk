@@ -16,7 +16,12 @@ ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 # Define the command-line options to use when invoking the david executable:
 DAVID_FLAGS ?= \
 	--package $(ROOT_PACKAGE_JSON) \
-	--ignore update-notifier
+	--ignore update-notifier \
+	--ignore remark \
+	--ignore remark-html \
+	--ignore remark-lint \
+	--ignore remark-validate-links \
+	--ignore remark-vdom
 
 
 # TARGETS #
