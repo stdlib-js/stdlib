@@ -1,11 +1,15 @@
 
 # VARIABLES #
 
-# Define the path to the [Codecov][1] executable.
+# Define the [Codecov][1] executable.
 #
 # [1]: https://github.com/codecov/codecov-bash
-
-CODECOV ?= bash <(curl -s https://codecov.io/bash)
+# [2]: https://github.com/codecov/codecov-python
+ifeq ($(OS), WINNT)
+	CODECOV ?= pip install --user codecov && codecov
+else
+	CODECOV ?= bash <(curl -s https://codecov.io/bash)
+endif
 
 # Define the command-line options to be used when reporting coverage statistics:
 CODECOV_FLAGS ?= \
