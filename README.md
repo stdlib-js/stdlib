@@ -32,6 +32,7 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [Python][python]: general purpose language (version `>= 2.7`)
 * [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
 * [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
+* [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
 * [pandoc][pandoc]: universal document converter (version `>= 1.18`)
 
 The following vendor libraries can be automatically downloaded and compiled from source using `make`:
@@ -254,6 +255,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][authors].
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
 [gfortran]: https://gcc.gnu.org/fortran/
+[cmake]: https://cmake.org/
 [pandoc]: http://pandoc.org/
 
 [boost]: http://www.boost.org/
