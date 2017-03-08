@@ -17,7 +17,7 @@ DEPS_EMSCRIPTEN_TEST_OUT ?= $(DEPS_EMSCRIPTEN_TEST_DIR)/build
 DEPS_EMSCRIPTEN_TEST_INSTALL ?= $(DEPS_EMSCRIPTEN_TEST_DIR)/test_install.c
 
 # Define the output path for a test file:
-DEPS_EMSCRIPTEN_TEST_INSTALL_OUT ?= $(DEPS_EMSCRIPTEN_TEST_OUT)/test.js
+DEPS_EMSCRIPTEN_TEST_INSTALL_OUT ?= $(DEPS_EMSCRIPTEN_TEST_OUT)/test.html
 
 # Define the script for initializing the environment:
 ifeq ($(OS), WINNT)
@@ -60,7 +60,7 @@ $(DEPS_EMSCRIPTEN_TEST_OUT):
 # This target compiles a test file for testing an installation.
 
 $(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT): $(DEPS_EMSCRIPTEN_BUILD_OUT) $(DEPS_EMSCRIPTEN_TEST_OUT)
-	$(QUIET) emcc \
+	$(QUIET) source $(deps_emscripten_env_setup) && emcc \
 		$(DEPS_EMSCRIPTEN_TEST_INSTALL) \
 		-o $(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT) \
 		-O3 \
@@ -127,7 +127,10 @@ deps-update-emscripten: clean-deps-emscripten deps-download-emscripten deps-veri
 
 deps-test-emscripten: $(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT)
 	$(QUIET) echo 'Running tests...' >&2
-	$(QUIET) $(NODE) $(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT)
+	$(QUIET) source $(deps_emscripten_env_setup) && emrun \
+		--no_browser \
+		--port 8080 \
+		$(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT)
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
