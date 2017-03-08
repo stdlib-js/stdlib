@@ -19,6 +19,13 @@ DEPS_EMSCRIPTEN_TEST_INSTALL ?= $(DEPS_EMSCRIPTEN_TEST_DIR)/test_install.c
 # Define the output path for a test file:
 DEPS_EMSCRIPTEN_TEST_INSTALL_OUT ?= $(DEPS_EMSCRIPTEN_TEST_OUT)/test.html
 
+# Define the script for initializing the environment:
+ifeq ($(OS), WINNT)
+	deps_emscripten_env_setup := $(DEPS_EMSCRIPTEN_BUILD_OUT)/emsdk_env
+else
+	deps_emscripten_env_setup := $(DEPS_EMSCRIPTEN_BUILD_OUT)/emsdk_env.sh
+endif
+
 
 # TARGETS #
 
@@ -92,6 +99,7 @@ deps-extract-emscripten: $(DEPS_EMSCRIPTEN_BUILD_OUT)
 deps-install-emscripten: $(DEPS_EMSCRIPTEN_BUILD_OUT)
 	$(QUIET) $(DEPS_EMSCRIPTEN_BUILD_OUT)/emsdk install sdk-incoming-64bit binaryen-master-64bit
 	$(QUIET) $(DEPS_EMSCRIPTEN_BUILD_OUT)/emsdk activate sdk-incoming-64bit binaryen-master-64bit
+	$(QUIET) source $(deps_emscripten_env_setup)
 
 .PHONY: deps-install-emscripten
 
