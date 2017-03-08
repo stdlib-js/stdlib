@@ -1,8 +1,7 @@
 #include <cblas.h>
 #include <stdio.h>
 
-int main()
-{
+int main() {
 	double A[ 6 ] = { 1.0, 2.0, 1.0, -3.0, 4.0, -1.0 };
 	double B[ 6 ] = { 1.0, 2.0, 1.0, -3.0, 4.0, -1.0 };
 	double C[ 9 ] = { 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 };
