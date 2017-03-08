@@ -116,6 +116,8 @@ run_test_coverage() {
 # $2 - log file
 send_coverage() {
 	echo 'Sending coverage report to coverage service...' >&2
+	# TODO: remove next line
+	make inspect.CODECOV
 	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Sending coverage report to coverage service failed.' >&2
