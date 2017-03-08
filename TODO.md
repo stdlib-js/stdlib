@@ -897,6 +897,7 @@
      * substack benchmark module (ben)
      * matcha
      * [nanobench](https://github.com/mafintosh/nanobench)
+     * [benchtap](https://github.com/waylonflinn/benchtap/blob/master/benchtap.js)
 
 105. stability badges
 
@@ -1527,6 +1528,8 @@
 365. ML in other [languages](https://burakkanber.com/blog/machine-learning-in-other-languages-introduction/)
 
 366. Seeing [theory](http://students.brown.edu/seeing-theory/)
+
+367. [random string](https://github.com/klughammer/node-randomstring)
 
 
 ---
