@@ -39,6 +39,7 @@ The following vendor libraries can be automatically downloaded and compiled from
 
 * [Boost][boost]: portable C++ libraries
 * [OpenBLAS][openblas]: optimized BLAS library
+* [Emscripten][emscripten]: LLVM to JavaScript compiler
 
 
 ### Download
@@ -260,6 +261,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][authors].
 
 [boost]: http://www.boost.org/
 [openblas]: https://github.com/xianyi/OpenBLAS
+[emscripten]: http://kripken.github.io/emscripten-site/index.html
 
 [node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
