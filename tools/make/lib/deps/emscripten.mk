@@ -60,7 +60,7 @@ $(DEPS_EMSCRIPTEN_TEST_OUT):
 # This target compiles a test file for testing an installation.
 
 $(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT): $(DEPS_EMSCRIPTEN_BUILD_OUT) $(DEPS_EMSCRIPTEN_TEST_OUT)
-	$(QUIET) $(EMCC) \
+	$(QUIET) emcc \
 		$(DEPS_EMSCRIPTEN_TEST_INSTALL) \
 		-o $(DEPS_EMSCRIPTEN_TEST_INSTALL_OUT) \
 		-O3 \
