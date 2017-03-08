@@ -280,3 +280,7 @@ ifeq (, $(BLAS_DIR))
 	BLAS_DIR := $(wildcard $(DEPS_OPENBLAS_BUILD_OUT))
 endif
 endif
+
+# Define the output path when building Emscripten:
+DEPS_EMSCRIPTEN_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
+

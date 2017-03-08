@@ -11,6 +11,7 @@ DEPS_CHECKSUMS_DIR ?= $(DEPS_DIR)/checksums
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/emscripten.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
 
 
@@ -36,7 +37,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: install-deps-boost install-deps-openblas
+install-deps: install-deps-boost install-deps-openblas install-deps-emscripten
 
 .PHONY: install-deps
 
@@ -64,7 +65,7 @@ clean-deps-build:
 #
 # This target removes vendor dependency installation tests.
 
-clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests
+clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emscripten-tests
 
 .PHONY: clean-deps-tests
 
