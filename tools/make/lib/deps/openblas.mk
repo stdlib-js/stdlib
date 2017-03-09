@@ -25,7 +25,7 @@ deps_openblas_extract_out := $(DEPS_BUILD_DIR)/OpenBLAS-$(DEPS_OPENBLAS_VERSION)
 # Define the path to the directory containing tests:
 DEPS_OPENBLAS_TEST_DIR ?= $(DEPS_DIR)/test/openblas
 
-# Define the output directory path for a compiled tests:
+# Define the output directory path for compiled tests:
 DEPS_OPENBLAS_TEST_OUT ?= $(DEPS_OPENBLAS_TEST_DIR)/build
 
 # Define the path to a test file for checking an installation:

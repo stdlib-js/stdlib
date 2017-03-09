@@ -22,7 +22,7 @@ DEPS_BOOST_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_boost_basename)
 # Define the path to the directory containing tests:
 DEPS_BOOST_TEST_DIR ?= $(DEPS_DIR)/test/boost
 
-# Define the output directory path for a compiled tests:
+# Define the output directory path for compiled tests:
 DEPS_BOOST_TEST_OUT ?= $(DEPS_BOOST_TEST_DIR)/build
 
 # Define the path to a test file for checking an installation:
