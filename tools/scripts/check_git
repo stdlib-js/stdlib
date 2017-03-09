@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether Git is installed.
+#
+# Usage: check_git
+#
+
+# VARIABLES #
+
+# Find Git:
+GIT=$(which git 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_git' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${GIT}" ]] && "${GIT}" --version >/dev/null; then
+	echo 'Git is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please download Git (https://git-scm.com/). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
