@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Check whether python is installed.
+# Check whether Python is installed.
 #
 # Usage: check_python
 #
@@ -23,10 +23,10 @@ usage() {
 # MAIN #
 
 if [[ -x "${PYTHON}" ]] && "${PYTHON}" --version >/dev/null; then
-	echo 'python is installed.' >&2
+	echo 'Python is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please download python (https://www.python.org/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please download Python (https://www.python.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
 
