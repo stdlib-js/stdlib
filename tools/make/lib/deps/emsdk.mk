@@ -8,10 +8,10 @@ DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
 
 # Define the download URL:
-DEPS_EMSDK_URL ?= https://s3.amazonaws.com/mozilla-games/emscripten/releases/emsdk-portable.tar.gz
+DEPS_EMSDK_URL ?= https://github.com/juj/emsdk.git
 
 # Determine the basename for the download:
-deps_emsdk_basename := emsdk_portable.tar.gz
+deps_emsdk_basename := emsdk
 
 # Define the path to the file containing a checksum to verify a download:
 DEPS_EMSDK_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_emsdk_basename))/sha256)
@@ -20,7 +20,7 @@ DEPS_EMSDK_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_emsd
 DEPS_EMSDK_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_emsdk_basename)
 
 # Define the output path after extracting:
-deps_emsdk_extract_out := $(DEPS_BUILD_DIR)/emsdk_portable
+deps_emsdk_extract_out := $(DEPS_BUILD_DIR)/emsdk_extracted
 
 # Define the path to the directory containing tests:
 DEPS_EMSDK_TEST_DIR ?= $(DEPS_DIR)/test/emsdk
@@ -53,7 +53,7 @@ EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emcc
 
 $(DEPS_EMSDK_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading Emscripten SDK...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_EMSDK_URL) $(DEPS_EMSDK_DOWNLOAD_OUT)
+	$(QUIET) $(GIT) clone $(DEPS_EMSDK_URL) $(DEPS_EMSDK_DOWNLOAD_OUT)
 
 
 # Extract.
@@ -62,7 +62,7 @@ $(DEPS_EMSDK_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 
 $(DEPS_EMSDK_BUILD_OUT): $(DEPS_EMSDK_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Emscripten SDK...' >&2
-	$(QUIET) $(TAR) -zxf $(DEPS_EMSDK_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+	$(QUIET) $(CP) -a $(DEPS_EMSDK_DOWNLOAD_OUT) $(deps_emsdk_extract_out)
 	$(QUIET) mv $(deps_emsdk_extract_out) $(DEPS_EMSDK_BUILD_OUT)
 
 
@@ -102,7 +102,7 @@ deps-download-emsdk: $(DEPS_EMSDK_DOWNLOAD_OUT)
 
 deps-verify-emsdk: deps-download-emsdk
 	$(QUIET) echo 'Verifying download...' >&2
-	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_EMSDK_DOWNLOAD_OUT) $(DEPS_EMSDK_CHECKSUM) >&2
+	$(QUIET) echo 'Nothing to verify.' >&2
 
 .PHONY: deps-verify-emsdk
 
@@ -121,7 +121,7 @@ deps-extract-emsdk: $(DEPS_EMSDK_BUILD_OUT)
 # This target performs an Emscripten SDK install sequence.
 
 deps-install-emsdk: $(DEPS_EMSDK_BUILD_OUT)
-	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk update
+	$(QUIET) cd $(DEPS_EMSDK_BUILD_OUT) && $(GIT) pull
 	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk install $(deps_emsdk) $(deps_emsdk_binaryen)
 	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk activate $(deps_emsdk) $(deps_emsdk_binaryen)
 

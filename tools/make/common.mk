@@ -285,7 +285,7 @@ endif
 DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 
 # Define the Emscripten SDK version:
-DEPS_EMSDK_VERSION ?= master
+DEPS_EMSDK_VERSION ?= incoming
 
 # Define the Binaryen version:
 DEPS_EMSDK_BINARYEN_VERSION ?= master
