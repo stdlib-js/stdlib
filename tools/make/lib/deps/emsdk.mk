@@ -51,7 +51,7 @@ EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emcc
 #
 # This target downloads an Emscripten SDK.
 
-$(DEPS_EMSDK_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
+$(DEPS_EMSDK_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading Emscripten SDK...' >&2
 	$(QUIET) $(GIT) clone $(DEPS_EMSDK_URL) $(DEPS_EMSDK_DOWNLOAD_OUT)
 
@@ -60,7 +60,7 @@ $(DEPS_EMSDK_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 #
 # This target extracts a gzipped tar archive.
 
-$(DEPS_EMSDK_BUILD_OUT): $(DEPS_EMSDK_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
+$(DEPS_EMSDK_BUILD_OUT): | $(DEPS_BUILD_DIR) $(DEPS_EMSDK_DOWNLOAD_OUT)
 	$(QUIET) echo 'Extracting Emscripten SDK...' >&2
 	$(QUIET) $(CP) -a $(DEPS_EMSDK_DOWNLOAD_OUT) $(deps_emsdk_extract_out)
 	$(QUIET) mv $(deps_emsdk_extract_out) $(DEPS_EMSDK_BUILD_OUT)
