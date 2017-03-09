@@ -22,7 +22,7 @@ DEPS_BOOST_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_boost_basename)
 # Define the path to the directory containing tests:
 DEPS_BOOST_TEST_DIR ?= $(DEPS_DIR)/test/boost
 
-# Define the output directory path for a compiled tests:
+# Define the output directory path for compiled tests:
 DEPS_BOOST_TEST_OUT ?= $(DEPS_BOOST_TEST_DIR)/build
 
 # Define the path to a test file for checking an installation:
@@ -38,7 +38,7 @@ DEPS_BOOST_TEST_INSTALL_OUT ?= $(DEPS_BOOST_TEST_OUT)/test_install
 #
 # This target downloads a Boost distribution.
 
-$(DEPS_BOOST_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
+$(DEPS_BOOST_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading Boost...' >&2
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_BOOST_URL) $(DEPS_BOOST_DOWNLOAD_OUT)
 
@@ -47,7 +47,7 @@ $(DEPS_BOOST_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 #
 # This target extracts a gzipped tar archive.
 
-$(DEPS_BOOST_BUILD_OUT): $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
+$(DEPS_BOOST_BUILD_OUT): $(DEPS_BOOST_DOWNLOAD_OUT) | $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Boost...' >&2
 	$(QUIET) $(TAR) -zxf $(DEPS_BOOST_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 

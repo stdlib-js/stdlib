@@ -1531,6 +1531,8 @@
 
 367. [random string](https://github.com/klughammer/node-randomstring)
 
+368. Stanford JS [crypto](https://github.com/bitwiseshiftleft/sjcl)
+
 
 ---
 

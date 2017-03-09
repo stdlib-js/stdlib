@@ -25,7 +25,7 @@ deps_openblas_extract_out := $(DEPS_BUILD_DIR)/OpenBLAS-$(DEPS_OPENBLAS_VERSION)
 # Define the path to the directory containing tests:
 DEPS_OPENBLAS_TEST_DIR ?= $(DEPS_DIR)/test/openblas
 
-# Define the output directory path for a compiled tests:
+# Define the output directory path for compiled tests:
 DEPS_OPENBLAS_TEST_OUT ?= $(DEPS_OPENBLAS_TEST_DIR)/build
 
 # Define the path to a test file for checking an installation:
@@ -133,7 +133,7 @@ DEPS_OPENBLAS_BUILD_OPTS += MAKE_NB_JOBS=0
 #
 # This target downloads a OpenBLAS distribution.
 
-$(DEPS_OPENBLAS_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
+$(DEPS_OPENBLAS_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading OpenBLAS...' >&2
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_OPENBLAS_URL) $(DEPS_OPENBLAS_DOWNLOAD_OUT)
 
@@ -142,7 +142,7 @@ $(DEPS_OPENBLAS_DOWNLOAD_OUT): $(DEPS_TMP_DIR)
 #
 # This target extracts a gzipped tar archive.
 
-$(DEPS_OPENBLAS_BUILD_OUT): $(DEPS_OPENBLAS_DOWNLOAD_OUT) $(DEPS_BUILD_DIR)
+$(DEPS_OPENBLAS_BUILD_OUT): $(DEPS_OPENBLAS_DOWNLOAD_OUT) | $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting OpenBLAS...' >&2
 	$(QUIET) $(TAR) -zxf $(DEPS_OPENBLAS_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 	$(QUIET) mv $(deps_openblas_extract_out) $(DEPS_OPENBLAS_BUILD_OUT)
