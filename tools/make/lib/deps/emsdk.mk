@@ -79,6 +79,7 @@ $(DEPS_EMSDK_TEST_OUT):
 # This target compiles a test file for testing an installation.
 
 $(DEPS_EMSDK_TEST_INSTALL_OUT): $(DEPS_EMSDK_BUILD_OUT) $(DEPS_EMSDK_TEST_OUT)
+	$(QUIET) $(EMCC) -v
 	$(QUIET) $(EMCC) $(DEPS_EMSDK_TEST_INSTALL) \
 		-o $(DEPS_EMSDK_TEST_INSTALL_OUT) \
 		-O3 \
