@@ -26,7 +26,7 @@ if [[ -x "${CMAKE}" ]] && "${CMAKE}" --version >/dev/null; then
 	echo 'CMake is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please download CMake (https://cmake.org/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please download CMake version >= 3.4.3 (https://cmake.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
 
