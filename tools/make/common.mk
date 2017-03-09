@@ -281,6 +281,12 @@ ifeq (, $(BLAS_DIR))
 endif
 endif
 
-# Define the output path when building Emscripten:
-DEPS_EMSCRIPTEN_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
+# Define the output path when building the Emscripten SDK:
+DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
+
+# Define the Emscripten SDK version:
+DEPS_EMSDK_VERSION ?= master
+
+# Define the Binaryen version:
+DEPS_EMSDK_BINARYEN_VERSION ?= master
 
