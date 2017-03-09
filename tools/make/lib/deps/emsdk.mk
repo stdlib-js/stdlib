@@ -41,7 +41,7 @@ deps_emsdk := sdk-$(DEPS_EMSDK_VERSION)-64bit
 deps_emsdk_binaryen := binaryen-$(DEPS_EMSDK_BINARYEN_VERSION)-64bit
 
 # Define the path to the `emcc` compiler:
-EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/master/emcc
+EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emcc
 
 
 
