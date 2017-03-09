@@ -1,0 +1,161 @@
+#!/usr/bin/env bash
+#
+# Print dependency information.
+#
+# Usage: deps_info
+#
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: deps_info' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+CLANG=$(which clang 2>/dev/null)
+echo '-----'
+echo 'clang:' >&2
+echo '' >&2
+if [[ -x "${CLANG}" ]]; then
+	"${CLANG}" --version >&2
+else
+	echo 'Unable to detect clang.' >&2
+fi
+echo '' >&2
+
+CMAKE=$(which cmake 2>/dev/null)
+echo '-----'
+echo 'CMake:' >&2
+echo '' >&2
+if [[ -x "${CMAKE}" ]]; then
+	"${CMAKE}" --version >&2
+else
+	echo 'Unable to detect CMake.' >&2
+fi
+echo '' >&2
+
+GCC=$(which gcc 2>/dev/null)
+echo '-----'
+echo 'gcc:' >&2
+echo '' >&2
+if [[ -x "${GCC}" ]]; then
+	"${GCC}" --version >&2
+else
+	echo 'Unable to detect gcc.' >&2
+fi
+echo '' >&2
+
+GFORTRAN=$(which gfortran 2>/dev/null)
+echo '-----'
+echo 'gfortran:' >&2
+echo '' >&2
+if [[ -x "${GFORTRAN}" ]]; then
+	"${GFORTRAN}" --version >&2
+else
+	echo 'Unable to detect gfortran.' >&2
+fi
+echo '' >&2
+
+GIT=$(which git 2>/dev/null)
+echo '-----'
+echo 'git:' >&2
+echo '' >&2
+if [[ -x "${GIT}" ]]; then
+	"${GIT}" --version >&2
+else
+	echo 'Unable to detect git.' >&2
+fi
+echo '' >&2
+
+GNU_MAKE=$(which make 2>/dev/null)
+echo '-----'
+echo 'GNU make:' >&2
+echo '' >&2
+if [[ -x "${GNU_MAKE}" ]]; then
+	"${GNU_MAKE}" --version >&2
+else
+	echo 'Unable to detect GNU make.' >&2
+fi
+echo '' >&2
+
+GPP=$(which g++ 2>/dev/null)
+echo '-----'
+echo 'g++:' >&2
+echo '' >&2
+if [[ -x "${GPP}" ]]; then
+	"${GPP}" --version >&2
+else
+	echo 'Unable to detect g++.' >&2
+fi
+echo '' >&2
+
+JULIA=$(which julia 2>/dev/null)
+echo '-----'
+echo 'Julia:' >&2
+echo '' >&2
+if [[ -x "${JULIA}" ]]; then
+	"${JULIA}" --version >&2
+else
+	echo 'Unable to detect Julia.' >&2
+fi
+echo '' >&2
+
+NODEJS=$(which node 2>/dev/null)
+echo '-----'
+echo 'Node.js:' >&2
+echo '' >&2
+if [[ -x "${NODEJS}" ]]; then
+	"${NODEJS}" --version >&2
+else
+	echo 'Unable to detect Node.js.' >&2
+fi
+echo '' >&2
+
+NPM=$(which npm 2>/dev/null)
+echo '-----'
+echo 'npm:' >&2
+echo '' >&2
+if [[ -x "${NPM}" ]]; then
+	"${NPM}" --version >&2
+else
+	echo 'Unable to detect npm.' >&2
+fi
+echo '' >&2
+
+PANDOC=$(which pandoc 2>/dev/null)
+echo '-----'
+echo 'pandoc:' >&2
+echo '' >&2
+if [[ -x "${PANDOC}" ]]; then
+	"${PANDOC}" -v >&2
+else
+	echo 'Unable to detect pandoc.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(which python 2>/dev/null)
+echo '-----'
+echo 'Python:' >&2
+echo '' >&2
+if [[ -x "${PYTHON}" ]]; then
+	"${PYTHON}" --version >&2
+else
+	echo 'Unable to detect Python.' >&2
+fi
+echo '' >&2
+
+R=$(which r 2>/dev/null)
+echo '-----'
+echo 'R:' >&2
+echo '' >&2
+if [[ -x "${R}" ]]; then
+	"${R}" --version >&2
+else
+	echo 'Unable to detect R.' >&2
+fi
+echo '' >&2
+
