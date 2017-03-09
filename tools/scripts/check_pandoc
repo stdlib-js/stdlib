@@ -29,3 +29,5 @@ else
 	echo 'ERROR: missing dependency. Please download pandoc (http://pandoc.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
+
+# TODO: check for minimum version
