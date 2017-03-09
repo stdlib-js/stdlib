@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find CMake:
-CMAKE=$(which cmakke 2>/dev/null)
+CMAKE=$(which cmake 2>/dev/null)
 
 
 # FUNCTIONS #
