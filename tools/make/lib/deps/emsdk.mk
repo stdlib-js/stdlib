@@ -7,6 +7,15 @@ DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
 # Define the path to an executable for verifying a download:
 DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
 
+# Define the path to an executable for checking CMake:
+DEPS_CHECK_CMAKE ?= $(TOOLS_DIR)/scripts/check_cmake
+
+# Define the path to an executable for checking git:
+DEPS_CHECK_GIT ?= $(TOOLS_DIR)/scripts/check_git
+
+# Define the path to an executable for checking Python:
+DEPS_CHECK_PYTHON ?= $(TOOLS_DIR)/scripts/check_python
+
 # Define the download URL:
 DEPS_EMSDK_URL ?= https://github.com/juj/emsdk.git
 
@@ -132,11 +141,23 @@ deps-extract-emsdk: $(DEPS_EMSDK_BUILD_OUT)
 .PHONY: deps-extract-emsdk
 
 
+# Check for prerequisites.
+#
+# This target checks a host system for installation prerequisites.
+
+deps-prerequisites-emsdk:
+	$(QUIET) $(DEPS_CHECK_CMAKE)
+	$(QUIET) $(DEPS_CHECK_GIT)
+	$(QUIET) $(DEPS_CHECK_PYTHON)
+
+.PHONY: deps-prerequisites-emsdk
+
+
 # Install Emscripten SDK.
 #
 # This target performs an Emscripten SDK install sequence.
 
-deps-install-emsdk: $(DEPS_EMSDK_BUILD_OUT)
+deps-install-emsdk: $(DEPS_EMSDK_BUILD_OUT) deps-prerequisites-emsdk
 	$(QUIET) cd $(DEPS_EMSDK_BUILD_OUT) && $(GIT) pull
 	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk install $(deps_emsdk) $(deps_emsdk_binaryen)
 	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk activate $(deps_emsdk) $(deps_emsdk_binaryen)
