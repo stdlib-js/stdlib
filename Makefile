@@ -63,6 +63,9 @@ SRC_DIR ?= $(ROOT_DIR)/lib/node_modules
 # Define the folder name convention for source files:
 SOURCE_FOLDER ?= lib
 
+# Define the folder name convention for source files requiring compilation:
+SRC_FOLDER ?= src
+
 # Define the folder name convention for test files:
 TESTS_FOLDER ?= test
 
