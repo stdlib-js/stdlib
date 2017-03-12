@@ -116,8 +116,6 @@ run_test_coverage() {
 # $2 - log file
 send_coverage() {
 	echo 'Sending coverage report to coverage service...' >&2
-	# TODO: remove next line
-	make inspect.CODECOV
 	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Sending coverage report to coverage service failed.' >&2
@@ -173,6 +171,10 @@ check_deps() {
 main() {
 	create_log_file "${log_dir}" "${log_file}"
 	start_heartbeat "${heartbeat_interval}"
+
+	# TODO: remove next lines
+	make inspect.CODECOV
+	make inspect.OS
 
 	echo "Task: ${task}." >&2
 	if [[ "${task}" = "test" ]]; then
