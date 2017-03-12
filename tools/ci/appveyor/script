@@ -172,10 +172,6 @@ main() {
 	create_log_file "${log_dir}" "${log_file}"
 	start_heartbeat "${heartbeat_interval}"
 
-	# TODO: remove next lines
-	make inspect.CODECOV
-	make inspect.OS
-
 	echo "Task: ${task}." >&2
 	if [[ "${task}" = "test" ]]; then
 		run_tests "${log_file}"
