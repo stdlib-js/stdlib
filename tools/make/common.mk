@@ -30,6 +30,10 @@ ifneq (, $(findstring MSYS,$(OS)))
 else
 ifneq (, $(findstring CYGWIN,$(OS)))
 	OS := WINNT
+else
+ifneq (, $(findstring Windows_NT,$(OS)))
+	OS := WINNT
+endif
 endif
 endif
 endif
