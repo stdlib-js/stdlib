@@ -28,6 +28,7 @@
 	".svg",
 	".tmpl",
 	".txt",
+	".wasm",
 	".woff",
 	".yml"
 ]
