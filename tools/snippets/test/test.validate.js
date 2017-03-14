@@ -27,8 +27,8 @@ tape( 'the function returns an error if provided an `options` argument which is 
 		undefined,
 		null,
 		NaN,
-		function noop() {},
-		[]
+		[],
+		function noop() {}
 	];
 
 	for ( i = 0; i < values.length; i++ ) {

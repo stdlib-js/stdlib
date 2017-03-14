@@ -203,7 +203,7 @@ install:
   # Update configuration for compiling native add-ons:
   - cmd: set PYTHON=%USERPROFILE%\.windows-build-tools\python27
   - cmd: set PATH=%PATH:C:\Python27;=%
-  - cmd: set PATH=%PYTHON%;%PATH%
+  - cmd: set PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%
 
   - cmd: npm config set python "%PYTHON%"
   - cmd: npm config set msvs_version 2015

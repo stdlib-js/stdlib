@@ -19,7 +19,7 @@ Stdlib is a collection of robust, high performance libraries for numeric computi
 
 Developing and running stdlib __requires__ the following prerequisites:
 
-* [git][git]: version control
+* [Git][git]: version control
 * [GNU make][gnu-make]: development utility and task runner
 * [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
@@ -30,7 +30,7 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [Julia][julia]: language for technical computing (version `>= 0.4`)
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
-* [gcc &amp; g++][gcc] or [clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
+* [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
 * [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 * [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
 * [pandoc][pandoc]: universal document converter (version `>= 1.18`)
