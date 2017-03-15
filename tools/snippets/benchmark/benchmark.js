@@ -21,8 +21,7 @@ bench( pkg, function benchmark( b ) {
 	b.toc();
 	if ( TODO/* TODO: condition */ ) {
 		b.fail( 'something went wrong' );
-	} else {
-		b.pass( 'benchmark finished' );
 	}
+	b.pass( 'benchmark finished' );
 	b.end();
 });
