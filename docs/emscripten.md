@@ -1,6 +1,6 @@
 # Emscripten
 
-> [LLVM][llvm]-to-JavaScript compiler capable of generating [WebAssembly][web-assembly].
+> [LLVM][llvm]-to-JavaScript compiler capable of targeting [WebAssembly][web-assembly].
 
 
 ## Installation
