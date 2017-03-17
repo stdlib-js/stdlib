@@ -1063,7 +1063,7 @@
 
 158. For Nightingale's rose dataset, generate an SVG figure with code, rather than use a static image
 
-159. [bats](https://github.com/sstephenson/bats): bash automated testing; could also be useful for testing CLI scripts
+159. [bats](https://github.com/sstephenson/bats): bash automated testing; could also be useful for testing CLI scripts or [urchin](https://github.com/tlevine/urchin): shell tests
 
 160. investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
 
