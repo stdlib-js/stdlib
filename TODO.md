@@ -1533,6 +1533,8 @@
 
 368. Stanford JS [crypto](https://github.com/bitwiseshiftleft/sjcl)
 
+369. [spatial index](https://github.com/mourner/geokdbush)
+
 
 ---
 
