@@ -1,0 +1,71 @@
+
+{{alias}}( x, μ, σ )
+    Evaluates the moment-generating function (MGF) for a normal distribution
+    with mean `μ` and standard deviation `σ` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    σ: number
+        Standard deviation.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 1.0 )
+    ~7.389
+    > y = {{alias}}( 0.0, 0.0, 1.0 )
+    1.0
+    > y = {{alias}}( -1.0, 4.0, 2.0 )
+    ~0.1353
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 2.0, 0.0, 0.0 )
+    NaN
+
+
+{{alias}}.factory( μ, σ )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    normal distribution with mean `μ` and standard deviation `σ`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Standard deviation.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var myMGF = {{alias}}.factory( 4.0, 2.0 );
+    > var y = myMGF( 1.0 )
+    ~403.429
+    > y = myMGF( 0.5 )
+    ~12.182
+
+    See Also
+    --------
+
