@@ -1,0 +1,12 @@
+
+{{alias}}
+    Fourth root of double-precision floating-point epsilon.
+
+    Examples
+    --------
+    > {{alias}}
+    0.0001220703125
+
+    See Also
+    --------
+
