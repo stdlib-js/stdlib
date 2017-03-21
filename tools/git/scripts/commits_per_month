@@ -6,7 +6,7 @@
 
 # * `git log`
 #   - Show commit logs.
-# * `grep Date`
+# * `grep '^Date'`
 #   - Extract the line which begins with `Date` from each log.
 # * `awk '{}'`
 #   - From each date line, extract the month (`$3`) and year (`$6`).
@@ -16,4 +16,4 @@
 #   - Remove repeated lines and count the repeats to show monthly totals.
 # * `awk '{}'`
 #   - Format the output.
-git log | grep Date | awk '{print $6 OFS $3}' | sort -k1n -k2M | uniq -c | awk '{print $3 OFS $2 OFS $1}'
+git log | grep '^Date' | awk '{print $6 OFS $3}' | sort -k1n -k2M | uniq -c | awk '{print $3 OFS $2 OFS $1}'
