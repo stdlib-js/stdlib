@@ -6,7 +6,7 @@
 
 # * `git log`
 #   - Show commit logs.
-# * `grep Date`
+# * `grep '^Date'`
 #   - Extract the line which begins with `Date` from each log
 # * `awk '{}'`
 #   - From each date line, extract the year (`$6`).
@@ -14,4 +14,4 @@
 #   - Sort in reverse lexicographic order.
 # * `uniq -c`
 #   - Remove repeated lines and count the repeats to compute yearly totals.
-git log | grep Date | awk '{print $6}' | sort -r | uniq -c | awk '{print $2 OFS $1}'
+git log | grep '^Date' | awk '{print $6}' | sort -r | uniq -c | awk '{print $2 OFS $1}'

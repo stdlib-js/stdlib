@@ -6,7 +6,7 @@
 
 # * `git log`
 #   - Show commit logs.
-# * `grep Date`
+# * `grep '^Date'`
 #   - Extract the line which begins with `Date` from each log.
 # * `awk '{}'`
 #   - From each date line, extract the weekday (`$2`).
@@ -16,7 +16,7 @@
 #   - Remove repeated lines and count the repeats to show weekday totals.
 # * `awk '{}'`
 #   - Sort the weekdays from Monday to Sunday.
-git log | grep Date | awk '{print $2}' | sort | uniq -c | awk '
+git log | grep '^Date' | awk '{print $2}' | sort | uniq -c | awk '
 BEGIN {
 	split("Mon Tue Wed Thu Fri Sat Sun", days);
 }

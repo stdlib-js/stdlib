@@ -6,7 +6,7 @@
 
 # * `git log`
 #   - Show commit logs.
-# * `grep Date`
+# * `grep '^Date'`
 #   - Extract the line which begins with `Date` from each log.
 # * `awk '{}'`
 #   - From each date line, extract the hour.
@@ -16,7 +16,7 @@
 #   - Remove repeated lines and count the repeats to show hourly totals.
 # * `awk '{}'`
 #   - Format the output.
-git log | grep Date | awk '
+git log | grep '^Date' | awk '
 {
 	split($5, time, ":")
 	print time[1]
