@@ -1535,6 +1535,8 @@
 
 369. [spatial index](https://github.com/mourner/geokdbush)
 
+370. [named-regexp](https://github.com/edvinv/named-js-regexp/blob/master/lib/named-js-regexp.js)
+
 
 ---
 
