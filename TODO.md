@@ -1537,6 +1537,8 @@
 
 370. [named-regexp](https://github.com/edvinv/named-js-regexp/blob/master/lib/named-js-regexp.js)
 
+371. [load-test](https://github.com/kgryte/load-test)
+
 
 ---
 
