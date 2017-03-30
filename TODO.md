@@ -1539,6 +1539,10 @@
 
 371. [load-test](https://github.com/kgryte/load-test)
 
+372. [100 exercises](https://github.com/rougier/numpy-100)
+
+373. [prngs](https://medium.freecodecamp.com/a-brief-history-of-random-numbers-9498737f5b6c) and [clustering algorithms](https://medium.freecodecamp.com/how-machines-make-sense-of-big-data-an-introduction-to-clustering-algorithms-4bd97d4fbaba)
+
 
 ---
 
