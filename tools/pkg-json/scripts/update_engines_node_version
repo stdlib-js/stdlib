@@ -102,6 +102,9 @@ function main( dir ) {
 				} else {
 					debug( 'Package either already requires the same or later engine. Skipping.' );
 				}
+			} else {
+				debug( 'No engines `node` field. Setting node engine to >=%s.', VERSION );
+				pkg.engines.node = '>='+VERSION;
 			}
 		} else {
 			debug( 'No engines field. Setting node engine to >=%s.', VERSION );
