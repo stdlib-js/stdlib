@@ -223,6 +223,9 @@ build_script:
 
   # Print the URL for downloading artifacts:
   - ps: |
+      # Load the System.Web assembly for URL encoding:
+      Add-Type -AssemblyName System.Web
+      # Print the URL:
       add-AppveyorMessage `
         -Category Information `
         -Message "URL for downloading artifacts is provided in the description." `
