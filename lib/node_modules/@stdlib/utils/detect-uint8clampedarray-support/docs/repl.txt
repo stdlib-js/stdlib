@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `Uint8ClampedArray` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `Uint8ClampedArray` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+
