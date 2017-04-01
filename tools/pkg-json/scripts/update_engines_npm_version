@@ -97,14 +97,17 @@ function main( dir ) {
 				version = major+'.'+minor+'.'+patch;
 				debug( 'Package requires npm version: %s.', version );
 				if ( semver.lte( version, VERSION ) ) {
-					debug( 'Updating npm version to >=%s.', VERSION );
+					debug( 'Updating npm version to >%s.', VERSION );
 					pkg.engines.npm = '>'+VERSION;
 				} else {
 					debug( 'Package either already requires the same or later engine. Skipping.' );
 				}
+			} else {
+				debug( 'No engines `npm` field. Setting npm engine to >%s.', VERSION );
+				pkg.engines.npm = '>'+VERSION;
 			}
 		} else {
-			debug( 'No engines field. Setting npm engine to >=%s.', VERSION );
+			debug( 'No engines field. Setting npm engine to >%s.', VERSION );
 			pkg.engines = {
 				'npm': '>'+VERSION
 			};
