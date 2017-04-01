@@ -1,0 +1,137 @@
+#!/usr/bin/env node
+'use strict';
+
+/*
+* Update the minimum `npm` version in the package `package.json` engines field.
+*
+* This script is called with the following arguments:
+*
+* * *$1*: root search directory
+*
+* If not provided a root search directory, the root search directory is the current working directory.
+*
+* To enable verbose logging, set the `DEBUG` environment variable.
+*
+* ``` bash
+* $ DEBUG=* update_engines_npm_version .
+* ```
+*/
+
+// MODULES //
+
+var debug = require( 'debug' )( 'update-engines-npm' );
+var join = require( 'path' ).join;
+var resolve = require( 'path' ).resolve;
+var writeFile = require( 'fs' ).writeFileSync;
+var parseArgs = require( 'minimist' );
+var semver = require( 'semver' );
+var cwd = require( '@stdlib/utils/cwd' );
+var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var findPkgs = require( './../../pkgs/find' ).sync;
+var standardize = require( './../standardize' );
+
+
+// VARIABLES //
+
+var SEMVER = /^(0|[1-9]\d*)(?:\.(0|x|[1-9]\d*)|)(?:\.(0|x|[1-9]\d*)|)$/;
+var RE = /^[><]?=?[ ]*([0-9.x]+)/;
+var VERSION = '2.7.0';
+var opts;
+var args;
+var dir;
+
+
+// FUNCTIONS //
+
+/**
+* Updates package `package.json` files by setting the `engines` field.
+*
+* ## Notes
+*
+* * The `engines` field is __only__ updated if and only if the current value either is empty or is less than or equal to the desired version.
+*
+* @private
+* @param {string} dir - root search directory
+*/
+function main( dir ) {
+	var version;
+	var major;
+	var minor;
+	var patch;
+	var fpath;
+	var opts;
+	var pkgs;
+	var pkg;
+	var i;
+
+	debug( 'Searching for packages in %s.', dir );
+	opts = {
+		'dir': dir,
+		'pattern': '**/package.json'
+	};
+	pkgs = findPkgs( opts );
+	debug( 'Found %d packages.', pkgs.length );
+
+	for ( i = 0; i < pkgs.length; i++ ) {
+		fpath = join( pkgs[ i ], 'package.json' );
+		debug( 'Loading package file: %s (%d of %d).', fpath, i+1, pkgs.length );
+		pkg = require( fpath );
+		if ( hasOwnProp( pkg, 'engines' ) ) {
+			debug( 'Engines: %s', JSON.stringify( pkg.engines ) );
+			if ( hasOwnProp( pkg.engines, 'npm' ) ) {
+				if ( pkg.engines.npm === '*' ) {
+					version = '0.0.0';
+				} else {
+					version = RE.exec( pkg.engines.npm )[ 1 ];
+				}
+				version = SEMVER.exec( version );
+				major = version[ 1 ];
+				minor = version[ 2 ];
+				if ( !minor || minor === 'x' ) {
+					minor = '0';
+				}
+				patch = version[ 3 ];
+				if ( !patch || patch === 'x' ) {
+					patch = '0';
+				}
+				version = major+'.'+minor+'.'+patch;
+				debug( 'Package requires npm version: %s.', version );
+				if ( semver.lte( version, VERSION ) ) {
+					debug( 'Updating npm version to >=%s.', VERSION );
+					pkg.engines.npm = '>'+VERSION;
+				} else {
+					debug( 'Package either already requires the same or later engine. Skipping.' );
+				}
+			}
+		} else {
+			debug( 'No engines field. Setting npm engine to >=%s.', VERSION );
+			pkg.engines = {
+				'npm': '>'+VERSION
+			};
+		}
+		debug( 'Standardizing meta data.' );
+		pkg = standardize( pkg );
+
+		pkg = JSON.stringify( pkg, null, 2 ); // 2-space indentation
+
+		debug( 'Writing package data to file.' );
+		writeFile( fpath, pkg+'\n', {
+			'encoding': 'utf8'
+		});
+	}
+	debug( 'Finished updating all packages.' );
+} // end FUNCTION main()
+
+
+// MAIN //
+
+// Parse command-line arguments:
+opts = {};
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args._[ 0 ] ) {
+	dir = resolve( cwd(), args._[ 0 ] );
+} else {
+	dir = cwd();
+}
+main( dir );
