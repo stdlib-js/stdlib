@@ -216,10 +216,14 @@ install:
 
 build_script:
   # If a newer build is queued for the same PR, cancel the current build:
-  - ps: 'if ($env:APPVEYOR_PULL_REQUEST_NUMBER -and $env:APPVEYOR_BUILD_NUMBER -ne ((Invoke-RestMethod `https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/$env:APPVEYOR_PROJECT_SLUG/history?recordsNumber=50).builds | `Where-Object pullRequestId -eq $env:APPVEYOR_PULL_REQUEST_NUMBER)[0].buildNumber) { `throw "Canceling the current build as newer builds are queued for this pull request." }'
+  - ps: |
+      if ( $env:APPVEYOR_PULL_REQUEST_NUMBER -and $env:APPVEYOR_BUILD_NUMBER -ne ((Invoke-RestMethod https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/$env:APPVEYOR_PROJECT_SLUG/history?recordsNumber=50).builds | Where-Object pullRequestId -eq $env:APPVEYOR_PULL_REQUEST_NUMBER)[0].buildNumber ) {
+      throw "Canceling the current build as newer builds are queued for this pull request."
+    }
 
   # Print the URL for downloading artifacts:
-  - cmd: echo 'https://ci.appveyor.com/api/projects/%APPVEYOR_ACCOUNT_NAME%/%APPVEYOR_PROJECT_NAME%/artifacts/var/log/logs.zip?all=true&job=%APPVEYOR_JOB_ID%&branch=%APPVEYOR_REPO_BRANCH%'
+  - ps: |
+      Write-Host "https://ci.appveyor.com/api/projects/$env:APPVEYOR_ACCOUNT_NAME/$env:APPVEYOR_PROJECT_NAME/artifacts/var/log/logs.zip?all=true&job=$([System.Web.HttpUtility]::UrlEncode($env:APPVEYOR_JOB_NAME))&branch=$([System.Web.HttpUtility]::UrlEncode($env:APPVEYOR_REPO_BRANCH))"
 
 
 test_script:
