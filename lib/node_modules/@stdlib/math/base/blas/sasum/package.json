@@ -53,7 +53,8 @@
   "dependencies": {},
   "devDependencies": {},
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
   },
   "license": "Apache-2.0"
 }
