@@ -1543,6 +1543,15 @@
 
 373. [prngs](https://medium.freecodecamp.com/a-brief-history-of-random-numbers-9498737f5b6c) and [clustering algorithms](https://medium.freecodecamp.com/how-machines-make-sense-of-big-data-an-introduction-to-clustering-algorithms-4bd97d4fbaba)
 
+374. [zlib](https://github.com/nodeca/pako/tree/master/lib/zlib): both JS and native add-on
+
+     - [tar.gz](https://github.com/alanhoff/node-tar.gz)
+     - [browserify-zlib](https://github.com/devongovett/browserify-zlib)
+     - [node-tar](https://github.com/npm/node-tar)
+     - [bzip2](https://en.wikipedia.org/wiki/Bzip2)
+
+375. [is-gzip](https://github.com/kevva/is-gzip/blob/master/index.js)
+
 
 ---
 
