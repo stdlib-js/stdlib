@@ -1,0 +1,24 @@
+
+{{alias}}( str )
+    Reverses a `string`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Reversed string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'foo' )
+    'oof'
+    > out = {{alias}}( 'abcdef' )
+    'fedcba'
+
+    See Also
+    --------
+
