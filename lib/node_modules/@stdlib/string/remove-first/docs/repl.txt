@@ -1,0 +1,24 @@
+
+{{alias}}( str )
+    Removes the first character of a `string`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Updated string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep' )
+    'eep'
+    > out = {{alias}}( 'Boop' )
+    'oop'
+
+    See Also
+    --------
+
