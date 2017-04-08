@@ -472,3 +472,44 @@ A few notes:
 * Insert an empty line following the last line containing entries.
 * If a `See Also` section does __not__ contain entries, insert two empty lines following the section header.
 * Include only __one__ `See Also` section per REPL text.
+
+
+## Notes
+
+* All `stdlib` REPL texts should use an alias placeholder.
+
+  ``` text
+  {{alias}}( str )
+      A short description.
+
+      ...
+      
+      Examples
+      --------
+      > var out = {{alias}}( 'beep' )
+      'boop'
+
+      ...
+  ```
+
+  The alias is injected via a separate build process which manages the REPL namespace.
+
+* Do __not__ manually add entries to the `See Also` section. Entries are injected via a separate build process which manages the REPL namespace.
+
+* To reference other REPL functionality, use an alias placeholder which includes the package name.
+
+  ``` text
+  {{alias}}( x )
+      A short description.
+
+      ...
+      
+      Examples
+      --------
+      > var out = {{alias}}( {{alias:@stdlib/math/constants/float64-pi}} )
+      10.0
+
+      ...
+  ```
+
+  External aliases are resolved during a separate build process which manages the REPL namespace. When possible, limit the use of external aliases unless absolutely necessary.
