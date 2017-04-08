@@ -422,7 +422,7 @@ A few notes:
 * Begin each line of user input with a `>` symbol.
 * Place expected output on the line immediately following a line of user input.
 * To indicate silenced output (i.e., a line of user input whose output is suppressed), end a user input line with a semicolon.
-* Only declare variables the first time a variable is used.
+* Only declare a variable the first time a variable is used.
 * A REPL text should __always__ include an `Examples` section.
 
 
