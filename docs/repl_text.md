@@ -92,7 +92,41 @@ REPL texts should __never__ exceed `80` characters in width. Be sure to wrap all
 
 ### Interface
 
-An interface may be a primitive constant (e.g., `number`, `string`, `boolean`), an `Object` (e.g., a regular expression), or a `Function`. If an interface is a function, the interface should display all required and optional parameters.
+An interface may be a primitive constant (e.g., `number`, `string`, `boolean`), an `Object` (e.g., a regular expression), or a `Function`. If an interface is a function, the interface should display all required and optional parameters. If an interface has associated properties and/or methods, document each method and property separately.
+
+``` text
+foo( bar )
+    A short description.
+
+    ...
+
+    Examples
+    --------
+    ...
+
+foo.beep( boop )
+    A short description.
+
+    ...
+
+    Examples
+    --------
+    ...
+
+foo.boop( beep )
+    A short description.
+
+    ...
+
+    Examples
+    ________
+    ...
+
+    See Also
+    --------
+
+
+```
 
 A few notes:
 
@@ -391,6 +425,12 @@ Only include references __if__ usage requires citations. If not required, remove
     ...
 ```
 
+A few notes:
+
+* Each citation should be a properly formatted citation.
+* Citations are not required to include URLs.
+* Include only __one__ `References` section per REPL text.
+
 
 ### See Also
 
@@ -410,3 +450,4 @@ A few notes:
 * Separate each entry with a comma followed by a space.
 * Insert an empty line following the last line containing entries.
 * If a `See Also` section does __not__ contain entries, insert two empty lines following the section header.
+* Include only __one__ `See Also` section per REPL text.
