@@ -356,7 +356,7 @@ For return values which can be more than one type, use a `|` separator.
 A few notes:
 
 * For `Object` return values having a defined structure (e.g., mathematical models), list each `Object` property as a separate return value and separate each property with an empty line.
-* Possible return value types are the same as for parameters.
+* Return value types are the same as for parameters.
 * All return value descriptions should end with a period.
 * If a `function` does not have return values, __omit__ this section.
 
@@ -428,7 +428,7 @@ A few notes:
 
 ### References
 
-Only include references __if__ usage requires citations. If not required, remove the `References` section entirely. Otherwise, include citations, placing each on a separate line without line separation. For example,
+Only include references __if__ usage requires citations. If not required, __remove__ the `References` section. To include citations, place each on a separate line without line separation. For example,
 
 ``` text
     ...
