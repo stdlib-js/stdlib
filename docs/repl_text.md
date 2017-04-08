@@ -514,4 +514,4 @@ A few notes:
       ...
   ```
 
-  External aliases are resolved during a separate build process which manages the REPL namespace. When possible, limit the use of external aliases unless absolutely necessary.
+  External aliases are resolved during a separate build process which manages the REPL namespace. Where possible, limit the use of external aliases unless absolutely necessary.
