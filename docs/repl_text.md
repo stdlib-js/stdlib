@@ -498,7 +498,7 @@ A few notes:
 
 * Do __not__ manually add entries to the `See Also` section. Entries are injected via a separate build process which manages the REPL namespace.
 
-* To reference other REPL functionality, use an alias placeholder which includes the package name.
+* To reference other REPL functionality, use an alias placeholder which references the package name.
 
   ``` text
   {{alias}}( x )
