@@ -45,6 +45,12 @@
 */
 
 /**
+* A collection, which is defined as either an array, typed array, or an array-like object (excluding strings and functions).
+*
+* @typedef {(Array|TypedArray|Object)} Collection
+*/
+
+/**
 * An instance of the built-in `Date` object.
 *
 * @typedef {Date} Date
