@@ -33,7 +33,7 @@ lowercase( str )
 
 ```
 
-The above REPL text displays the function interface `lowercase( str )`, as well as provides more detailed information including input parameter types, return value types, and examples.
+The above REPL text displays the function interface `lowercase( str )`, as well as provides more detailed information, including input parameter types, return value types, and examples.
 
 
 ## Guide
@@ -122,6 +122,10 @@ foo.boop( beep )
     ________
     ...
 
+    References
+    ----------
+    ...
+
     See Also
     --------
 
@@ -162,7 +166,7 @@ lowercase( str )
     ...
 ```
 
-Note that the description should __not__ be written in the declarative mood. For example, avoid
+Do __not__ write the description in the declarative mood. For example, avoid
 
 ``` text
 lowercase( str )
@@ -276,6 +280,18 @@ The following parameter types are supported:
 * `RegExp`: if a parameter must be a regular expression.
 * `Date`: if a parameter must be a `Date` object.
 * `Buffer`: if a parameter must be a Node.js `Buffer` object.
+* `Error`: if a parameter must be an `Error` object.
+* `TypedArray`: if a parameter must be a typed array.
+* `Float64Array`: if a parameter must be a `Float64Array`.
+* `Float32Array`: if a parameter must be a `Float32Array`.
+* `Int32Array`: if a parameter must be an `Int32Array`.
+* `Uint32Array`: if a parameter must be a `Uint32Array`.
+* `Int16Array`: if a parameter must be an `Int16Array`.
+* `Uint16Array`: if a parameter must be a `Uint16Array`.
+* `Int8Array`: if a parameter must be an `Int8Array`.
+* `Uint8Array`: if a parameter must be a `Uint8Array`.
+* `Uint8ClampedArray`: if a parameter must be a `Uint8ClampedArray`.
+* `ArrayBuffer`: if a parameter must be an `ArrayBuffer`.
 
 For parameters which may be more than one type, use a `|` separator.
 
@@ -291,12 +307,12 @@ foo( value )
     ...
 ```
 
-In general, avoid specialized value types; e.g., `NonNegativeInteger`, `Probability`, etc. Users are unable to discern the meaning of specialized types without access to external (possibly out-of-band) documentation.
+In general, avoid specialized and/or uncommon value types; e.g., `NonNegativeInteger`, `Probability`, etc. Users are unable to discern the meaning of specialized types without access to external (possibly out-of-band) documentation.
 
 A few notes:
 
 * Parameter names should __match__ the parameter names in function and method signatures.
-* If a parameter is __optional__, explicitly state that the parameter is optional after the type declaration.
+* If a parameter is __optional__, explicitly state that the parameter is optional __after__ the type declaration.
 * For `Object` parameters, list each required and/or optional `Object` property as a separate parameter.
 * All parameter descriptions should end with a period.
 * If a `function` does not have parameter values, __omit__ this section.
@@ -317,7 +333,12 @@ The `Returns` section states the return value name, the return value type, and a
     ...
 ```
 
-Conventional names for output values include `bool` (for `boolean` return values), `y` (for `number` return values mathematical functions satisfying the form `y = f(x)`), `fcn` (for `Function` return values), and `out` (for generic return values).
+Conventional names for output values include
+
+* `bool`: for `boolean` return values.
+* `fcn`: for `Function` return values.
+* `out`: for generic return values.
+* `y`: for `number` return values mathematical functions satisfying the form `y = f(x)`.
 
 For return values which can be more than one type, use a `|` separator.
 
