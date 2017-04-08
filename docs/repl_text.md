@@ -474,6 +474,8 @@ A few notes:
 * Include only __one__ `See Also` section per REPL text.
 
 
+---
+
 ## Notes
 
 * All `stdlib` REPL texts should use an alias placeholder.
