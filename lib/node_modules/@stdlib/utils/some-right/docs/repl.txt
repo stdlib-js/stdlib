@@ -1,0 +1,43 @@
+
+{{alias}}( collection, predicate[, thisArg ] )
+    Tests whether at least one element in a collection passes a test implemented
+    by a predicate function, iterating from right to left.
+
+    The predicate function is provided three arguments:
+
+    - `value`: collection value
+    - `index`: collection index
+    - `collection`: the input collection
+
+    The function immediately returns upon encountering a truthy return value.
+
+    If provided an empty collection, the function returns `false`.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns `true` for
+        any element; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function negative( v ) { return ( v < 0 ); };
+    > var arr = [ -1, 1, 2, 3, 4 ];
+    > var bool = {{alias}}( arr, negative )
+    true
+
+    See Also
+    --------
+
