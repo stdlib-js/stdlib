@@ -75,7 +75,7 @@
     "jsdoc": "^3.4.0",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
-    "lunr": "^1.0.0",
+    "lunr": "^2.0.0",
     "mkdirp": "^0.5.1",
     "mustache": "^2.2.1",
     "plato": "^1.5.0",
