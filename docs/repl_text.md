@@ -517,4 +517,4 @@ A few notes:
 
   External aliases are resolved during a separate build process which manages the REPL namespace. Where possible, limit the use of external aliases unless absolutely necessary.
 
-* Generate reference citations using `make citation` to ensure a consistent bibliographic style.
+* All references should originate from the `stdlib` bibliographic database. Generate reference citations using `make citation` to ensure a consistent bibliographic style.
