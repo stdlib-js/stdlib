@@ -1,0 +1,28 @@
+
+{{alias}}( λ )
+    Returns the entropy of a Poisson distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Mean parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~2.61
+    > v = {{alias}}( 4.5 )
+    ~2.149
+
+    See Also
+    --------
+
