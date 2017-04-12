@@ -1,0 +1,33 @@
+
+{{alias}}( a, b )
+    Returns the differential entropy of an arcsine distribution (in nats).
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `a >= b`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 1.0 )
+    ~-0.242
+    > v = {{alias}}( 4.0, 12.0 )
+    ~1.838
+    > v = {{alias}}( 2.0, 8.0 )
+    ~1.55
+
+    See Also
+    --------
+
