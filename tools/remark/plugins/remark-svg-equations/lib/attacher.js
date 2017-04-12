@@ -4,9 +4,9 @@
 
 var debug = require( 'debug' )( 'remark-svg-equations:attacher' );
 var copy = require( '@stdlib/utils/copy' );
-var isObject = require( '@stdlib/utils/is-plain-object' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var transformerFactory = require( './transformer.js' );
 var defaults = require( './defaults.json' );
 

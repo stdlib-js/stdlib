@@ -5,8 +5,8 @@
 var remark = require( 'remark' );
 var toVirtualDOM = require( 'remark-vdom' );
 var headingSlugs = require( 'remark-slug' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isBuffer = require( '@stdlib/utils/is-buffer' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var isBuffer = require( '@stdlib/assert/is-buffer' );
 
 
 // VARIABLES //

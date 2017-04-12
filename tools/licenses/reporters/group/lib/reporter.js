@@ -3,7 +3,7 @@
 // MODULES //
 
 var indexOf = require( '@stdlib/utils/index-of' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // MAIN //

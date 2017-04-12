@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'installed-pkgs:recurse' );
 var getKeys = require( 'object-keys' ).shim();
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // MAIN //

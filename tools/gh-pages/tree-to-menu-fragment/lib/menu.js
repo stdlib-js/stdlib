@@ -3,7 +3,7 @@
 // MODULES //
 
 var getKeys = require( 'object-keys' ).shim();
-var isObject = require( '@stdlib/utils/is-plain-object' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );

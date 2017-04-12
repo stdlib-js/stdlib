@@ -6,8 +6,8 @@ var debug = require( 'debug' )( 'pkgs:clis:read-pkgs' );
 var resolve = require( 'path' ).resolve;
 var getKeys = require( 'object-keys' ).shim();
 var readJSON = require( '@stdlib/fs/read-json' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var dirname = require( '@stdlib/utils/dirname' );
 
 

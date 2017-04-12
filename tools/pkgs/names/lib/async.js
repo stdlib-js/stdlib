@@ -3,7 +3,7 @@
 // MODULES //
 
 var glob = require( 'glob' );
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var transform = require( './transform.js' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );

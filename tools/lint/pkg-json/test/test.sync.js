@@ -6,7 +6,7 @@ var tape = require( 'tape' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var proxyquire = require( 'proxyquire' );
-var isObjectArray = require( '@stdlib/utils/is-object-array' );
+var isObjectArray = require( '@stdlib/assert/is-object-array' );
 var lint = require( './../lib/sync.js' );
 
 

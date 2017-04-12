@@ -3,7 +3,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isObject = require( '@stdlib/utils/is-plain-object' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
 var pkgTree = require( './../lib/sync.js' );
 
 

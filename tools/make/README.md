@@ -77,7 +77,7 @@ To filter based on a file path,
 
 ``` bash
 # List all files in the is-nan utils directory...
-$ make FILES_FILTER=.*/utils/is-nan/.* list-files
+$ make FILES_FILTER=.*/assert/is-nan/.* list-files
 ```
 
 __Notes__:

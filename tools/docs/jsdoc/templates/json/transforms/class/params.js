@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var hasOwn = require( '@stdlib/utils/has-own-property' );
+var hasOwn = require( '@stdlib/assert/has-own-property' );
 
 
 // FUNCTIONS //

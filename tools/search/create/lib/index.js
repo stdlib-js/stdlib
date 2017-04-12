@@ -4,7 +4,7 @@
 
 var path = require( 'path' );
 var readFileList = require( '@stdlib/fs/read-file-list' );
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var findPkgs = require( './../../../pkgs/find' );

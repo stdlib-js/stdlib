@@ -4,8 +4,8 @@
 
 var debug = require( 'debug' )( 'gh-pages:packages:build' );
 var resolve = require( 'path' ).resolve;
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isFunction = require( '@stdlib/utils/is-function' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var findPkgs = require( './../../../pkgs/find' );

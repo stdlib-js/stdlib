@@ -5,7 +5,7 @@
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
 var noop = require( '@stdlib/utils/noop' );
-var isObject = require( '@stdlib/utils/is-plain-object' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
 var pkgTree = require( './../lib/async.js' );
 
 

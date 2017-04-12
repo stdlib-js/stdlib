@@ -26,7 +26,7 @@ var writeFile = require( 'fs' ).writeFileSync;
 var parseArgs = require( 'minimist' );
 var semver = require( 'semver' );
 var cwd = require( '@stdlib/utils/cwd' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var findPkgs = require( './../../pkgs/find' ).sync;
 var standardize = require( './../standardize' );
 

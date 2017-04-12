@@ -2,10 +2,10 @@
 
 // MODULES //
 
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
-var isObject = require( '@stdlib/utils/is-plain-object' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isBoolean = require( '@stdlib/utils/is-boolean' ).isPrimitive;
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 
 
 // MAIN //

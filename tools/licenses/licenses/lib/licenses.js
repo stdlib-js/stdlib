@@ -5,7 +5,7 @@
 var createDebug = require( 'debug' );
 var resolve = require( 'path' ).resolve;
 var readInstalled = require( 'read-installed' );
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
 var PINF = require( '@stdlib/math/constants/float64-pinf' );

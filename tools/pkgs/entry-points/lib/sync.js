@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'entry-points:sync' );
 var path = require( 'path' );
-var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
+var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var defaults = require( './defaults.json' );

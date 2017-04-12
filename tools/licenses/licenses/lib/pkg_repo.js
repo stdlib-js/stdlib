@@ -3,7 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:pkg:repo' );
-var isObject = require( '@stdlib/utils/is-plain-object' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 
 

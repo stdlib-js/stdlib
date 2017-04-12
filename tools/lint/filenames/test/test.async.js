@@ -6,8 +6,8 @@ var tape = require( 'tape' );
 var join = require( 'path' ).join;
 var proxyquire = require( 'proxyquire' );
 var noop = require( '@stdlib/utils/noop' );
-var isArray = require( '@stdlib/utils/is-array' );
-var isObjectArray = require( '@stdlib/utils/is-plain-object' ).isPlainObjectArray;
+var isArray = require( '@stdlib/assert/is-array' );
+var isObjectArray = require( '@stdlib/assert/is-plain-object' ).isPlainObjectArray;
 var lint = require( './../lib/async.js' );
 
 

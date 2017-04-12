@@ -5,7 +5,7 @@
 var getKeys = require( 'object-keys' ).shim();
 var SPDX = require( 'spdx-license-ids' );
 var indexOf = require( '@stdlib/utils/index-of' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // MAIN //

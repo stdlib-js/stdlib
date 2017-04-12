@@ -17,7 +17,7 @@ var debug = require( 'debug' )( 'update-tools-package-names' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var SEP = require( '@stdlib/utils/path-sep' );
 var findPkgs = require( './../../pkgs/find' ).sync;
 

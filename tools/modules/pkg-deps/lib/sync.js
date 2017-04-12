@@ -3,8 +3,8 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'module-pkg-deps:sync' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
 var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );

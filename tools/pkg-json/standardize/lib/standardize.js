@@ -2,9 +2,9 @@
 
 // MODULES //
 
-var isObject = require( '@stdlib/utils/is-plain-object' );
-var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var KEYS = require( './keys.json' );
 
 

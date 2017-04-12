@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'stdlib-docs:main' );
 var resolve = require( 'path' ).resolve;
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var menu = require( './../../stdlib-package-menu' );

@@ -5,7 +5,7 @@
 var debug = require( 'debug' )( 'lint:pkg-json:async' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
 var config = require( './config.json' );

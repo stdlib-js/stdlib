@@ -2,9 +2,9 @@
 
 // MODULES //
 
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
-var isBoolean = require( '@stdlib/utils/is-boolean' ).isPrimitive;
-var isObject = require( '@stdlib/utils/is-plain-object' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
+var isObject = require( '@stdlib/assert/is-plain-object' );
 var PATH_SEP = require( '@stdlib/utils/path-sep' );
 
 

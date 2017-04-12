@@ -5,7 +5,7 @@
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
 var noop = require( '@stdlib/utils/noop' );
-var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
+var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
 var ls = require( './../lib/async.js' );
 
 

@@ -5,7 +5,7 @@
 var tape = require( 'tape' );
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
-var isObjectArray = require( '@stdlib/utils/is-object-array' );
+var isObjectArray = require( '@stdlib/assert/is-object-array' );
 var lint = require( './../lib/lint.js' );
 
 

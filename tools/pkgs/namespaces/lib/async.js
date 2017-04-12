@@ -3,7 +3,7 @@
 // MODULES //
 
 var pkgNames = require( './../../names' );
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var validate = require( './validate.js' );
 var filter = require( './filter.js' );
 

@@ -5,7 +5,7 @@
 var join = require( 'path' ).join;
 var semver = require( 'semver' );
 var indexOf = require( '@stdlib/utils/index-of' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // VARIABLES //

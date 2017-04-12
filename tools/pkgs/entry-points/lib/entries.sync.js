@@ -5,8 +5,8 @@
 var debug = require( 'debug' )( 'entry-points:sync:entries' );
 var resolve = require( 'path' ).resolve;
 var getKeys = require( 'object-keys' ).shim();
-var isObject = require( '@stdlib/utils/is-plain-object' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var resolveFiles = require( './resolve_files.sync.js' );
 
 

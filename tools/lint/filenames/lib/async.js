@@ -4,7 +4,7 @@
 
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
 var DEFAULTS = require( './defaults.json' );

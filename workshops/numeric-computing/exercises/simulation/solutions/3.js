@@ -5,7 +5,7 @@ var fs = require( 'fs' );
 var splitStream = require( '@stdlib/streams/utils/split' );
 var joinStream = require( '@stdlib/streams/utils/join' );
 var transformStream = require( '@stdlib/streams/utils/transform' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 // Create a directory to store artifacts:
 fs.mkdirSync( path.join( __dirname, 'build' ) );

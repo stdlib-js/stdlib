@@ -280,7 +280,7 @@ rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 *
 * @example
 * // Good...
-* var hasOwn = require( '@stdlib/utils/has-own-property' );
+* var hasOwn = require( '@stdlib/assert/has-own-property' );
 *
 * for ( key in obj ) {
 *     if ( hasOwn( obj, key ) ) {

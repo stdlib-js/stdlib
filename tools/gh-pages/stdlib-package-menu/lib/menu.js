@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var pkgTree = require( './../../../pkgs/tree' );
 var toFragment = require( './../../tree-to-menu-fragment' );

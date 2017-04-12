@@ -5,8 +5,8 @@
 var debug = require( 'debug' )( 'gh-pages:package' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isFunction = require( '@stdlib/utils/is-function' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var tests = require( './../../../test/browser-build' );
 var benchmarks = require( './../../../benchmarks/browser-build' );

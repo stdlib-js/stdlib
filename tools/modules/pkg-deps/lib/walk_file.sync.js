@@ -5,7 +5,7 @@
 var debug = require( 'debug' )( 'module-pkg-deps:sync:walk-file' );
 var resolve = require( 'resolve' ).sync;
 var readFile = require( '@stdlib/fs/read-file' ).sync;
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var dirname = require( '@stdlib/utils/dirname' );
 var extname = require( '@stdlib/utils/extname' );
 var analyze = require( './analyze.js' );

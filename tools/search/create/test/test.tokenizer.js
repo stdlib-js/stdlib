@@ -3,7 +3,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isArray = require( '@stdlib/utils/is-array' );
+var isArray = require( '@stdlib/assert/is-array' );
 var tokenizer = require( './../lib/tokenizer.js' );
 
 

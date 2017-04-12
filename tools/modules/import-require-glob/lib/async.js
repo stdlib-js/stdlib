@@ -5,7 +5,7 @@
 var debug = require( 'debug' )( 'import-require-glob:async' );
 var resolve = require( 'path' ).resolve;
 var glob = require( 'glob' );
-var isFunction = require( '@stdlib/utils/is-function' );
+var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var readFileList = require( '@stdlib/fs/read-file-list' );
 var cwd = require( '@stdlib/utils/cwd' );

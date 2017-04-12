@@ -3,9 +3,9 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'licenses:pkg:license' );
-var isString = require( '@stdlib/utils/is-string' ).isPrimitive;
-var isArray = require( '@stdlib/utils/is-array' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var isArray = require( '@stdlib/assert/is-array' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // MAIN //

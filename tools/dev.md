@@ -93,10 +93,16 @@ where
 * `-p`: execute for each file
 * `-i`: edit in-place
 
+
+If you encounter an error due to too many arguments, use `xargs`.
+
+``` bash
+$ find ./search/directory -type f | xargs perl -pi -w -e 's/search/replace/g;'
+```
+
 A few comments:
 
 * For simple cases, [`sed`][sed-find-and-replace] may be faster.
-* If you encounter an error due to too many arguments, use `xargs`.
 * Be __very__ careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset __before__ performing on many files. You have been __warned__.
 
 </section>

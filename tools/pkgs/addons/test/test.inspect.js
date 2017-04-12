@@ -4,8 +4,8 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var isStringArray = require( '@stdlib/utils/is-string-array' ).primitives;
-var isArray = require( '@stdlib/utils/is-array' );
+var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
+var isArray = require( '@stdlib/assert/is-array' );
 var inspect = require( './../lib/inspect.js' );
 
 

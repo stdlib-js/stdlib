@@ -6,7 +6,7 @@ var debug = require( 'debug' )( 'licenses:recurse' );
 var join = require( 'path' ).join;
 var getKeys = require( 'object-keys' ).shim();
 var indexOf = require( '@stdlib/utils/index-of' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var getRepo = require( './pkg_repo.js' );
 var getLicense = require( './pkg_license.js' );
 

@@ -2,8 +2,8 @@
 
 // MODULES //
 
-var isObject = require( '@stdlib/utils/is-plain-object' );
-var hasOwnProp = require( '@stdlib/utils/has-own-property' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
 // MAIN //
