@@ -22,6 +22,7 @@ FIND_BENCHMARKS_FLAGS ?= \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*"
 
 
