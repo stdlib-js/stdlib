@@ -19,6 +19,17 @@ inspect.%:
 	$(QUIET) echo '$*=$($*)'
 
 
+# Assert variable.
+#
+# This targets asserts that a variable is set via `assert.VARIABLE_NAME`.
+
+assert.%:
+	$(QUIET) if [[ "${${*}}" = "" ]]; then \
+		echo "\nError: You must set the environment variable: ${*}.\n"; \
+		exit 1; \
+	fi
+
+
 # List variable names.
 #
 # This target prints a sorted list of Makefile variable names. To remove duplicates, pipe to `uniq`.
