@@ -53,3 +53,4 @@ Usage: make <cmd>
   make clean-addons           Remove add-ons.
   make clean-deps             Remove vendor dependencies.
   make inspect.VARIABLE       Print the runtime value of a VARIABLE.
+  make assert.VARIABLE        Assert that a VARIABLE is set.
