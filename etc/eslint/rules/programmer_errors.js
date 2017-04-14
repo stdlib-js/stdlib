@@ -683,7 +683,7 @@ rules[ 'no-unsafe-negation' ] = 'error';
 *
 * @example
 * // Good...
-* var isnan = require( '@stdlib/math/base/utils/is-nan' );
+* var isnan = require( '@stdlib/math/base/assert/is-nan' );
 * if ( isnan( x ) ) {
 *     // Do something...
 * }

@@ -3,7 +3,7 @@
 // MODULES //
 
 var randu = require( '@stdlib/math/base/random/randu' );
-var isnan = require( '@stdlib/math/base/utils/is-nan' );
+var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var exp = require( '@stdlib/math/base/special/exp' );
 
 
