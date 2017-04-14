@@ -105,6 +105,17 @@ A few comments:
 * For simple cases, [`sed`][sed-find-and-replace] may be faster.
 * Be __very__ careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset __before__ performing on many files. You have been __warned__.
 
+
+### Reorganization
+
+#### Multi-directory
+
+To move directories from one directory to another directory,
+
+``` bash
+$ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/$(basename ${dir})"; done
+```
+
 </section>
 
 <!-- /.notes -->
