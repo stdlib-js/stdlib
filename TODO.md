@@ -1164,7 +1164,7 @@
 
 202. Consider replacing `testling` with [tape-run](https://github.com/juliangruber/tape-run)
 
-203. ccount but generalized to array-like objects
+203. [ccount](https://www.npmjs.com/package/ccount) but generalized to array-like objects
 
 204. [tree](http://linux.die.net/man/1/tree)
 
