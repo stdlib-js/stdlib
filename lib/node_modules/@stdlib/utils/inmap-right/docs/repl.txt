@@ -1,0 +1,44 @@
+
+{{alias}}( collection, fcn[, thisArg] )
+    Invokes a function for each element in a collection and updates the
+    collection in-place, iterating from right to left.
+
+    When invoked, the input function is provided three arguments:
+
+    - `value`: collection value
+    - `index`: collection index
+    - `collection`: the input collection
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection. If provided an object, the object must be array-like
+        (excluding strings and functions).
+
+    fcn: Function
+        Function to invoke for each element in the input collection. The
+        function's return value is used to update the collection in-place.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Input collection.
+
+    Examples
+    --------
+    > function foo( v, i ) { console.log( '%s: %d', i, v ); return v * i; };
+    > var arr = [ 1.0, 2.0, 3.0 ];
+    > var out = {{alias}}( arr, foo )
+    2: 3.0
+    1: 2.0
+    0: 1.0
+    [ 0.0, 2.0, 6.0 ]
+    > var bool = ( out === arr )
+    true
+
+    See Also
+    --------
+
