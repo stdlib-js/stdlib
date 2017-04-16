@@ -417,6 +417,30 @@ foo( str )
     ...
 ```
 
+While single line user input is preferred, multi-line user input is sometimes required. For each line of multi-line input, indicate that a line is a continuation of the previous line by prefixing the line with three periods and a space.
+
+``` text
+foo( clbk )
+    A short description.
+
+    Parameters
+    ----------
+    clbk: Function
+        A callback.
+
+    Examples
+    --------
+    > function clbk( error, results ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( results );
+    ... };
+    > foo( clbk );
+
+    ...
+```
+
 A few notes:
 
 * Begin each line of user input with a `>` symbol.
