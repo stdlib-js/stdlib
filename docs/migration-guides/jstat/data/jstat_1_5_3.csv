@@ -57,7 +57,7 @@ beta.inv,math/base/dist/beta/quantile
 beta.mean,math/base/dist/beta/mean
 beta.median,math/base/dist/beta/median
 beta.mode,math/base/dist/beta/mode
-beta.sample/math/base/random/beta
+beta.sample,math/base/random/beta
 beta.variance,math/base/dist/beta/variance
 centralF,math/base/dist/f
 centralF.pdf,math/base/dist/f/prd
