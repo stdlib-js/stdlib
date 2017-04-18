@@ -43,7 +43,7 @@ lastIndexOf,(planned)
 sortedIndex,(planned)
 findIndex,utils/find
 findLastIndex,utils/find
-range,math/generics/utils/*
+range,math/utils/*
 bind,(planned)
 bindAll,(planned)
 partial,utils/papply

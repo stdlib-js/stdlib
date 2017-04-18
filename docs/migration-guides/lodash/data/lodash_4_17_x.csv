@@ -293,8 +293,8 @@ overEvery,N/A
 overSome,N/A
 property,utils/deep-get
 propertyOf,N/A
-range,math/generics/utils/*
-rangeRight,math/generics/utils/*
+range,math/utils/*
+rangeRight,math/utils/*
 runInContext,N/A
 stubArray,N/A
 stubFalse,N/A

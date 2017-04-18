@@ -852,7 +852,7 @@
      * [ ] math/base/utils
      * [x] math/constants
      * [ ] math/generics/statistics
-     * [ ] math/generics/utils
+     * [ ] math/utils
      * [ ] math/ml
      * [ ] namespace
      * [x] net
