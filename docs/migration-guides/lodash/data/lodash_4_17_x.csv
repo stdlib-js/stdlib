@@ -86,9 +86,9 @@ partition,(planned)
 reduce,(planned)
 reduceRight,(planned)
 reject,(planned)
-sample,math/generics/random
+sample,math/random
 sampleSize,N/A
-shuffle,math/generics/random
+shuffle,math/random
 size,N/A
 some,utils/some
 sortBy,(planned)

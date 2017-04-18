@@ -19,8 +19,8 @@ sortBy,N/A
 groupBy,(planned)
 indexBy,(maybe)
 countBy,(planned)
-shuffle,math/generics/random/*
-sample,math/generics/random/*
+shuffle,math/random/*
+sample,math/random/*
 toArray,N/A
 size,N/A
 partition,(planned)

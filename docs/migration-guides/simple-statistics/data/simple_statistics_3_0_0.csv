@@ -32,10 +32,10 @@ sampleCovariance,(planned)
 rSquared,(planned)
 linearRegression,(planned)
 linearRegressionLine,(planned)
-shuffle,math/generics/random/shuffle
-shuffleInPlace,math/generics/random/shuffle
-sampleWithReplacement,math/generics/random/sample
-sample,math/generics/random/sample
+shuffle,math/random/shuffle
+shuffleInPlace,math/random/shuffle
+sampleWithReplacement,math/random/sample
+sample,math/random/sample
 BayesianClassifer,(planned)
 PerceptronModel,(planned)
 bernoulliDistribution,math/base/dist/bernoulli
