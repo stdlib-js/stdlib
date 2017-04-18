@@ -4,7 +4,7 @@ var toHTML = require( 'vdom-to-html' );
 var Plot = require( '@stdlib/plot/plot' );
 var createRandu = require( '@stdlib/math/base/random/randu' ).factory;
 var createRandn = require( '@stdlib/math/base/random/randn' ).factory;
-var onlineRegression = require( '@stdlib/math/ml/online-sgd-regression' );
+var onlineRegression = require( '@stdlib/ml/online-sgd-regression' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
 
 var sigma;

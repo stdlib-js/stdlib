@@ -853,7 +853,7 @@
      * [x] math/constants
      * [ ] math/statistics
      * [ ] math/utils
-     * [ ] math/ml
+     * [ ] ml
      * [ ] namespace
      * [x] net
      * [ ] plot
