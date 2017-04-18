@@ -242,7 +242,7 @@ PCA,(planned)
 zscore,(planned)
 ztest,(planned)
 tscore,(planned)
-ttest,math/generics/statistics/ttest
+ttest,math/statistics/ttest
 anovafscore,(planned)
 anovaftest,(planned)
 ftest,(planned)

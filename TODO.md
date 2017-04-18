@@ -851,7 +851,7 @@
      * [ ] math/base/tools
      * [ ] math/base/utils
      * [x] math/constants
-     * [ ] math/generics/statistics
+     * [ ] math/statistics
      * [ ] math/utils
      * [ ] math/ml
      * [ ] namespace

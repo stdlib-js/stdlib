@@ -43,8 +43,8 @@ binomial,math/base/dist/binomial
 poisson,math/base/dist/poisson
 chiSquaredDistributionTable,math/base/dist/chisquare
 standardNormalTable,math/base/dist/normal
-tTest,math/generics/statistics/ttest
-tTestTwoSample,math/generics/statistics/ttest2
+tTest,math/statistics/ttest
+tTestTwoSample,math/statistics/ttest2
 cumulativeStdNormalProbability,N/A
 errorFunction,math/base/special/erf
 inverseErrorFunction,math/base/special/erfinv
@@ -53,7 +53,7 @@ ckmeans,(planned)
 equalIntervalBreaks,N/A
 chunk,(planned)
 mixin,(planned)
-chiSquaredGoodnessOfFit,math/generics/statistics/chigof
+chiSquaredGoodnessOfFit,math/statistics/chigof
 epsilon,math/constants/float64-epsilon
 factorial,math/base/special/factorial
 uniqueCountSorted,N/A
