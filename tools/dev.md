@@ -122,6 +122,12 @@ To move directories from one directory to another directory,
 $ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/$(basename ${dir})"; done
 ```
 
+To rename multiple directories using a pattern,
+
+``` bash
+$ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/`echo $(basename ${dir}) | sed s/search/replace/`"; done
+```
+
 </section>
 
 <!-- /.notes -->
