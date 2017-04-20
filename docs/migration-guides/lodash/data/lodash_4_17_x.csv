@@ -16,7 +16,7 @@ first,N/A
 flatten,utils/flatten-array and utils/flatten-object
 flattenDeep,utils/flatten-array and utils/flatten-object
 flattenDepth,utils/flatten-array and utils/flatten-object
-fromPairs,utils/object-from-entries
+fromPairs,utils/from-entries
 head,N/A
 indexOf,utils/index-of
 initial,N/A
