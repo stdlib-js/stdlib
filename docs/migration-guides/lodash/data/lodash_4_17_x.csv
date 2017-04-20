@@ -235,7 +235,7 @@ transform,N/A
 unset,(planned)
 update,(maybe)
 updateWith,N/A
-values,utils/object-values
+values,utils/values
 valuesIn,(planned)
 chain,N/A
 tap,N/A

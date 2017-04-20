@@ -59,7 +59,7 @@ negate,N/A
 compose,utils/compose
 keys,(planned)
 allKeys,(planned)
-values,utils/object-values
+values,utils/values
 mapObject,(planned)
 pairs,utils/entries
 invert,utils/object-inverse
