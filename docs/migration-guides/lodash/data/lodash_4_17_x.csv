@@ -198,7 +198,7 @@ at,utils/deep-pluck
 create,(planned)
 defaults,N/A
 defaultsDeep,N/A
-entries,utils/object-entries
+entries,utils/entries
 entriesIn,(planned)
 extend,utils/merge
 extendWith,N/A
@@ -229,7 +229,7 @@ pickBy,utils/pick-by
 result,N/A
 set,utils/deep-set
 setWith,N/A
-toPairs,utils/object-entries
+toPairs,utils/entries
 toPairsIn,(planned)
 transform,N/A
 unset,(planned)

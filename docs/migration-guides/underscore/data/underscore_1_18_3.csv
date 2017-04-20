@@ -61,7 +61,7 @@ keys,(planned)
 allKeys,(planned)
 values,utils/object-values
 mapObject,(planned)
-pairs,utils/object-entries
+pairs,utils/entries
 invert,utils/object-inverse
 create,(planned)
 functions,N/A
