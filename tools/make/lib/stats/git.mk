@@ -795,6 +795,17 @@ stats-lib-pkgs-per-weekday:
 .PHONY: stats-lib-pkgs-per-weekday
 
 
+# Compute number of library packages added per year.
+#
+# This target computes the number of library packages added per year.
+
+stats-lib-pkgs-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/lib_pkgs_per_year
+
+.PHONY: stats-lib-pkgs-per-year
+
+
 # Compute lines per author.
 #
 # This target computes the number of lines attributed to each author.
@@ -1224,6 +1235,17 @@ stats-pkgs-per-weekday:
 .PHONY: stats-pkgs-per-weekday
 
 
+# Compute number of packages added per year.
+#
+# This target computes the number of packages added per year.
+
+stats-pkgs-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/pkgs_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/pkgs_per_year
+
+.PHONY: stats-pkgs-per-year
+
+
 # Rank commit first words.
 #
 # This target computes the frequency of commit message first words.
@@ -1453,4 +1475,15 @@ stats-tools-pkgs-per-weekday:
 	$(QUIET) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_weekday
 
 .PHONY: stats-tools-pkgs-per-weekday
+
+
+# Compute number of tools packages added per year.
+#
+# This target computes the number of tools packages added per year.
+
+stats-tools-pkgs-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/tools_pkgs_per_year
+
+.PHONY: stats-tools-pkgs-per-year
 
