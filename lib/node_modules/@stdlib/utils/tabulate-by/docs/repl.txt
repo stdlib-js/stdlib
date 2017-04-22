@@ -1,0 +1,48 @@
+
+{{alias}}( collection, [options,] indicator )
+    Generates a frequency table according to an indicator function.
+
+    When invoked, the indicator function is provided two arguments:
+
+    - `value`: collection value
+    - `index`: collection index
+
+    The table is an array of arrays where each sub-array corresponds to a unique
+    value in the input collection. Each sub-array is structured as follows:
+
+    - 0: unique value
+    - 1: value count
+    - 2: frequency percentage
+
+    If provided an empty collection, the function returns an empty array.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection to tabulate. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Options.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    indicator: Function
+        Indicator function specifying how to categorize a collection element.
+
+    Returns
+    -------
+    out: Array<Array>|Array
+        Frequency table.
+
+    Examples
+    --------
+    > function indicator( value ) { return value[ 0 ]; };
+    > var collection = [ 'beep', 'boop', 'foo', 'beep' ];
+    > var out = {{alias}}( collection, indicator )
+    [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
+
+    See Also
+    --------
+
