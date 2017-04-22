@@ -1,0 +1,45 @@
+
+{{alias}}( collection, initial, reducer[, thisArg] )
+    Applies a function against an accumulator and each element in a collection
+    and returns the accumulated result.
+
+    When invoked, the reduction function is provided four arguments:
+
+    - `accumulator`: accumulated value
+    - `value`: collection value
+    - `index`: collection index
+    - `collection`: the input collection
+
+    If provided an empty collection, the function returns the initial value.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection. If provided an object, the object must be array-like
+        (excluding strings and functions).
+
+    initial: any
+        Accumulator value used in the first invocation of the reduction
+        function.
+
+    reducer: Function
+        Function to invoke for each element in the input collection.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: any
+        Accumulated result.
+
+    Examples
+    --------
+    > function sum( acc, v ) { return acc + v; };
+    > var arr = [ 1.0, 2.0, 3.0 ];
+    > var out = {{alias}}( arr, 0, sum )
+    6.0
+
+    See Also
+    --------
+
