@@ -1,7 +1,7 @@
 'use strict';
 
 var TWO_PI = require( '@stdlib/math/constants/float64-two-pi' );
-var linspace = require( '@stdlib/math/generics/utils/linspace' );
+var linspace = require( '@stdlib/math/utils/linspace' );
 var Plot = require( '@stdlib/plot/plot' );
 
 var plot;

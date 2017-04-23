@@ -851,9 +851,9 @@
      * [ ] math/base/tools
      * [ ] math/base/utils
      * [x] math/constants
-     * [ ] math/generics/statistics
-     * [ ] math/generics/utils
-     * [ ] math/ml
+     * [ ] math/statistics
+     * [ ] math/utils
+     * [ ] ml
      * [ ] namespace
      * [x] net
      * [ ] plot
@@ -1554,6 +1554,8 @@
 
 376. [punycode](https://github.com/bestiejs/punycode.js)
 
+377. an interactive [version](http://ww2.amstat.org/publications/jse/v13n2/vonhippel.html)
+
 
 ---
 
@@ -2098,6 +2100,9 @@ Will need a `tools` directory in individual repositories to
 
 |-stdlib
 |---lib
+|-----assert
+|-------is-array-like
+|-------is-function
 |-----datasets
 |-------anscombes-quartet
 |-----math
@@ -2130,29 +2135,28 @@ Will need a `tools` directory in individual repositories to
 |---------e
 |---------pi
 |---------two-pi
-|-------fastmath
+|-------fast
 |---------special
 |-----------cos
 |-----------sin
-|-------generics
-|---------core
-|-----------add
-|-----------mult
-|-----------subtract
-|-----------sum
-|---------dist
-|-----------norm
-|-----------poisson
-|---------linalg
-|---------random
-|-----------lcg
-|---------special
-|-----------erf
-|-----------erfc
-|---------statistics
-|-----------mean
-|-----------stdev
-|-----------variance
+|-------core
+|---------add
+|---------mult
+|---------subtract
+|---------sum
+|-------dist
+|---------norm
+|---------poisson
+|-------linalg
+|-------random
+|---------lcg
+|-------special
+|---------erf
+|---------erfc
+|-------statistics
+|---------mean
+|---------stdev
+|---------variance
 |-----namespace
 |-----regexp
 |-------eol
@@ -2165,6 +2169,11 @@ Will need a `tools` directory in individual repositories to
 |-------utils
 |---------split
 |---------join
+|-----string
+|-------left-pad
+|-------pad
+|-------repeat
+|-------right-pad
 |-----tools
 |-----types
 |-------array
@@ -2178,11 +2187,5 @@ Will need a `tools` directory in individual repositories to
 |-------deep-set
 |-------error-reviver
 |-------error-to-json
-|-------is-array-like
-|-------is-function
-|-------left-pad-string
 |-------merge
-|-------pad-string
 |-------pluck
-|-------repeat-string
-|-------right-pad-string

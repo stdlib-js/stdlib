@@ -1,6 +1,6 @@
 'use strict';
 
-var linspace = require( '@stdlib/math/generics/utils/linspace' );
+var linspace = require( '@stdlib/math/utils/linspace' );
 var erf = require( '@stdlib/math/base/special/erf' );
 var randu = require( '@stdlib/math/base/random/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );

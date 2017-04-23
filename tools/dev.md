@@ -100,10 +100,15 @@ If you encounter an error due to too many arguments, use `xargs`.
 $ find ./search/directory -type f | xargs perl -pi -w -e 's/search/replace/g;'
 ```
 
+If running a search from the top-level directory, be sure to exclude any hidden directories (including `.git`), the top-level `node_modules` directory, and the `./deps` directory from the search. This may require using absolute file paths.
+
+``` bash
+$ find "$PWD" -type f -not -path "$PWD/.*" -not -path "$PWD/deps/*" -not -path "$PWD/node_modules/*" | xargs perl -pi -w -e 's/search/replace/g;'
+```
+
 A few comments:
 
 * For simple cases, [`sed`][sed-find-and-replace] may be faster.
-* If running a search from the top-level directory, be sure to exclude any hidden directories (including `.git`), the top-level `node_modules` directory, and the `./deps` directory from the search (e.g., `-not -path "./deps"`). This may require using absolute file paths. 
 * Be __very__ careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset __before__ performing on many files. You have been __warned__.
 
 
@@ -115,6 +120,12 @@ To move directories from one directory to another directory,
 
 ``` bash
 $ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/$(basename ${dir})"; done
+```
+
+To rename multiple directories using a pattern,
+
+``` bash
+$ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/`echo $(basename ${dir}) | sed s/search/replace/`"; done
 ```
 
 </section>

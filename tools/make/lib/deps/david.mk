@@ -21,7 +21,8 @@ DAVID_FLAGS ?= \
 	--ignore remark-html \
 	--ignore remark-lint \
 	--ignore remark-validate-links \
-	--ignore remark-vdom
+	--ignore remark-vdom \
+	--ignore ajv
 
 
 # TARGETS #

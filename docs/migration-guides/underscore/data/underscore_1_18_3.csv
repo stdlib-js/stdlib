@@ -19,8 +19,8 @@ sortBy,N/A
 groupBy,(planned)
 indexBy,(maybe)
 countBy,(planned)
-shuffle,math/generics/random/*
-sample,math/generics/random/*
+shuffle,math/random/*
+sample,math/random/*
 toArray,N/A
 size,N/A
 partition,(planned)
@@ -43,7 +43,7 @@ lastIndexOf,(planned)
 sortedIndex,(planned)
 findIndex,utils/find
 findLastIndex,utils/find
-range,math/generics/utils/*
+range,math/utils/*
 bind,(planned)
 bindAll,(planned)
 partial,utils/papply
@@ -59,9 +59,9 @@ negate,N/A
 compose,utils/compose
 keys,(planned)
 allKeys,(planned)
-values,utils/object-values
+values,utils/values
 mapObject,(planned)
-pairs,utils/object-entries
+pairs,utils/entries
 invert,utils/object-inverse
 create,(planned)
 functions,N/A

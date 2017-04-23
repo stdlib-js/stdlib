@@ -1,0 +1,42 @@
+
+{{alias}}( collection, fcn[, thisArg] )
+    Converts a collection to an object whose keys are determined by a provided
+    function and whose values are the collection values.
+
+    When invoked, the input function is provided two arguments:
+
+    - `value`: collection value
+    - `index`: collection index
+
+    If more than one element in a collection resolves to the same key, the key
+    value is the collection element which last resolved to the key.
+
+    Object values are shallow copies.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    fcn: Function
+        The function to invoke for each element in a collection.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Object
+        Output object.
+
+    Examples
+    --------
+    > function toKey( v ) { return v.a; };
+    > var arr = [ { 'a': 1 }, { 'a': 2 } ];
+    > {{alias}}( arr, toKey )
+    { '1': { 'a': 1 }, '2': { 'a': 2 } }
+
+    See Also
+    --------
+
