@@ -1,8 +1,8 @@
 underscore-1.8.3,stdlib
 each,utils/for-each
 map,(planned)
-reduce,(planned)
-reduceRight,(planned)
+reduce,utils/reduce
+reduceRight,utils/reduce-right
 find,utils/find
 filter,(planned)
 where,(maybe)
@@ -16,14 +16,14 @@ pluck,utils/pluck
 max,math/base/special/max
 min,math/base/special/min
 sortBy,N/A
-groupBy,(planned)
+groupBy,utils/group-by
 indexBy,(maybe)
-countBy,(planned)
+countBy,utils/count-by
 shuffle,math/random/*
 sample,math/random/*
 toArray,N/A
 size,N/A
-partition,(planned)
+partition,utils/bifurcate
 first,N/A
 initial,N/A
 last,N/A
@@ -58,7 +58,7 @@ wrap,N/A
 negate,N/A
 compose,utils/compose
 keys,(planned)
-allKeys,(planned)
+allKeys,utils/keys-in
 values,utils/values
 mapObject,(planned)
 pairs,utils/entries
