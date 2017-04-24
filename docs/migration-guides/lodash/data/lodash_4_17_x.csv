@@ -214,7 +214,7 @@ get,utils/deep-get
 has,(planned)
 hasIn,(planned)
 invert,utils/object-inverse
-invertBy,(planned)
+invertBy,utils/object-inverse-by
 invoke,N/A
 keys,(planned)
 keysIn,utils/keys-in
