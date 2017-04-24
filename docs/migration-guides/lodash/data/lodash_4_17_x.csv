@@ -214,12 +214,12 @@ get,utils/deep-get
 has,(planned)
 hasIn,(planned)
 invert,utils/object-inverse
-invertBy,N/A
+invertBy,(planned)
 invoke,N/A
 keys,(planned)
 keysIn,utils/keys-in
-mapKeys,(planned)
-mapValue,(planned)
+mapKeys,utils/map-keys
+mapValues,utils/map-values
 merge,utils/merge
 mergeWith,N/A
 omit,utils/omit
