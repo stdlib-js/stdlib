@@ -14,7 +14,7 @@ reports/
 support/
 **/test/
 **/benchmark/
-tmp/
+**/tmp/
 workshops/
 
 # Only top-level directories:
