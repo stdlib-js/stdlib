@@ -7,15 +7,18 @@ TODO.md
 # Directories #
 ###############
 .github/
+**/benchmark/
 **/build/
 **/docs/
 **/examples/
 reports/
 support/
-**/test/
-**/benchmark/
 **/tmp/
 workshops/
+
+# Ignore test directories, except for testing dependency installation:
+**/test/
+!/deps/test/
 
 # Only top-level directories:
 /etc/
