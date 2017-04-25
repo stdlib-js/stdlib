@@ -8,13 +8,15 @@ TODO.md
 # Directories #
 ###############
 .github/
-build/
-docs/
-examples/
+**/build/
+**/docs/
+**/examples/
 reports/
 support/
-test/
-benchmark/
+**/test/
+**/benchmark/
+tmp/
+workshops/
 
 # Only top-level directories:
 /etc/
