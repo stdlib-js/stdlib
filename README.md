@@ -210,7 +210,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][authors].
 [tag-image]: https://img.shields.io/github/tag/stdlib-js/stdlib.svg
 [tag-url]: https://github.com/stdlib-js/stdlib/tags
 
-[node-image]: https://img.shields.io/node/v/@stdlib-js/stdlib.svg
+[node-image]: https://img.shields.io/node/v/@stdlib/stdlib.svg
 [node-url]: https://github.com/@stdlib-js/stdlib
 
 [build-image-master]: https://img.shields.io/travis/stdlib-js/stdlib/master.svg
