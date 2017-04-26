@@ -10,9 +10,9 @@ eachOf,utils/for-each-async
 eachOfLimit,utils/for-each-async
 eachOfSeries,utils/for-each-async
 eachSeries,utils/for-each-async
-every,(maybe)
-everyLimit,(maybe)
-everySeries,(maybe)
+every,utils/every-async
+everyLimit,utils/every-async
+everySeries,utils/every-async
 filter,(maybe)
 filterLimit,(maybe)
 filterSeries,(maybe)
