@@ -37,7 +37,7 @@ NF == 0 {
 	next
 }
 
-# Skip files which are  not `package.json` files:
+# Skip files which are not `package.json` files:
 ! /package\.json/ {
 	next
 }
