@@ -388,6 +388,50 @@ stats-author-shortstats-per-month:
 .PHONY: stats-author-shortstats-per-month
 
 
+# Compute number of tools packages per day per author.
+#
+# This target computes the number of tools packages per day per author.
+
+stats-author-tools-pkgs-per-day:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_day
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_day
+
+.PHONY: stats-author-tools-pkgs-per-day
+
+
+# Compute number of tools packages per month per author.
+#
+# This target computes the number of tools packages per month per author.
+
+stats-author-tools-pkgs-per-month:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_month
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_month
+
+.PHONY: stats-author-tools-pkgs-per-month
+
+
+# Compute number of tools packages per weekday per author.
+#
+# This target computes the number of tools packages per weekday per author.
+
+stats-author-tools-pkgs-per-weekday:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_weekday
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_weekday
+
+.PHONY: stats-author-tools-pkgs-per-weekday
+
+
+# Compute number of tools packages per year per author.
+#
+# This target computes the number of tools packages per year per author.
+
+stats-author-tools-pkgs-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_tools_pkgs_per_year
+
+.PHONY: stats-author-tools-pkgs-per-year
+
+
 # Compute authors per day.
 #
 # This target computes number of authors per day.
