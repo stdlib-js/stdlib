@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+#
+# Prints the approximate number of packages per weekday per author.
+#
+# <weekday> <author_first_name> <author_last_name> <num_pkgs>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to find when `package.json` files were added and deleted:
+pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
+
+# * `pkg_json`
+#   - `package.json` additions and deletions.
+# * `awk '{}'`
+#   - Tabulate the weekday totals.
+"${pkg_json}" | awk '
+# Added a `package.json`:
+$8 == "A" {
+	pkgs[$1,$6,$7] += 1
+}
+
+# Deleted a `package.json`:
+$8 == "D" {
+	pkgs[$1,$6,$7] -= 1
+}
+
+END {
+	for (k in pkgs) {
+		split(k, keys, SUBSEP)
+		day = keys[1]
+		name = keys[2] OFS keys[3]
+		if (day == "Mon") {
+			mon[name] = pkgs[k]
+		} else if (day == "Tue") {
+			tue[name] = pkgs[k]
+		} else if (day == "Wed") {
+			wed[name] = pkgs[k]
+		} else if (day == "Thu") {
+			thu[name] = pkgs[k]
+		} else if (day == "Fri") {
+			fri[name] = pkgs[k]
+		} else if (day == "Sat") {
+			sat[name] = pkgs[k]
+		} else if (day == "Sun") {
+			sun[name] = pkgs[k]
+		}
+	}
+	for (name in mon) {
+		print "Mon" OFS name OFS mon[name]
+	}
+	for (name in tue) {
+		print "Tue" OFS name OFS tue[name]
+	}
+	for (name in wed) {
+		print "Wed" OFS name OFS wed[name]
+	}
+	for (name in thu) {
+		print "Thu" OFS name OFS thu[name]
+	}
+	for (name in fri) {
+		print "Fri" OFS name OFS fri[name]
+	}
+	for (name in sat) {
+		print "Sat" OFS name OFS sat[name]
+	}
+	for (name in sun) {
+		print "Sun" OFS name OFS sun[name]
+	}
+}'
