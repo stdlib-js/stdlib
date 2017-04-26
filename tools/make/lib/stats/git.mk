@@ -289,6 +289,17 @@ stats-author-lib-pkgs-per-weekday:
 .PHONY: stats-author-lib-pkgs-per-weekday
 
 
+# Compute number of library packages per year per author.
+#
+# This target computes the number of library packages per year per author.
+
+stats-author-lib-pkgs-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_lib_pkgs_per_year
+
+.PHONY: stats-author-lib-pkgs-per-year
+
+
 # Compute author mean commit interval.
 #
 # This target computes the mean commit interval per author.
