@@ -276,7 +276,7 @@ $ make benchmark
 
 Note that each of the above tasks can take considerable time (>30 minutes per task).
 
-Once your contribution is ready to be incorporated in the upstream repository, open a [pull request][github-pull-request] against the `develop` branch. Once opened, a project contributor will review the contribution, provide feedback, and possibly request changes. After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project.
+Once your contribution is ready to be incorporated in the upstream repository, open a [pull request][github-pull-request] against the `develop` branch. A project contributor will review the contribution, provide feedback, and potentially request changes. After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project.
 
 Note that, once a [pull request][github-pull-request] has been made (i.e., your local repository commits have been pushed to a remote server), you should __not__ perform any further [rewriting][git-rewriting-history] of git history. If the history needs modification, a contributor will modify the history during the merge process. The rationale for __not__ rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
 
