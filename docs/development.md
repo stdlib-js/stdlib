@@ -248,13 +248,21 @@ $ make EXAMPLES_FILTER=.*/<pattern>/.* examples
 
 ## Contributing
 
-To contribute to stdlib, create a new local branch.
+Before contributing, be sure to
+
+* Read and understand the [Code of Conduct][code-of-conduct].
+* Read and understand the [licensing terms][license].
+* Read and understand the [style guides][style-guides].
+
+Next, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly __prioritized__ within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, such automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
+
+For modifications intended to be included in stdlib, create a new local branch.
 
 ``` bash
 $ git checkout -b <branch>
 ```
 
-where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will __not__ be accepted. Instead, all contributions should be made on non-master and non-develop local branches.
+where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will __not__ be accepted. Instead, all contributions should be made on non-master and non-develop local branches, including documentation changes and other non-code modifications.
 
 During development, to incorporate recent changes from the upstream repository, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold: 1) interleaved histories makes [squashing][git-rewriting-history] commits more difficult and 2) a standard merge increases the risk of incomplete/broken commits appearing in the git history. An ideal commit history is one in which, at no point in time, is the project in a broken state. While not always possible (mistakes happen), striving for this ideal facilitates time travel and software archeology.
 
@@ -291,6 +299,10 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 [git-rebase]: https://git-scm.com/docs/git-rebase
 [git-merge]: https://git-scm.com/docs/git-merge
 [git-rewriting-history]: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+
+[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+[license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
+[style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make
