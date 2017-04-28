@@ -196,6 +196,63 @@ workshops  workshops
 * This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome].
 
 
+## Testing
+
+To run all project tests,
+
+``` bash
+$ make test
+```
+
+To run select tests,
+
+``` bash
+$ make TESTS_FILTER=.*/<pattern>/.* test
+```
+
+where `<pattern>` is pattern matching a particular path. For example, to test only base special math functions
+
+``` bash
+$ make TESTS_FILTER=.*/math/base/special/.*
+```
+
+where the pattern `.*/math/base/special/.*` matches any test file whose absolute path contains `math/base/special`.
+
+To generate a test coverage report,
+
+``` bash
+$ make TESTS_FILTER=.*/<pattern>/.* test-cov
+$ make view-cov
+```
+
+If you are developing a tool (i.e., code located in the `tools` directory), to run tools tests
+
+``` bash
+$ make TESTS_FILTER=.*/<pattern>/.* tools-test
+$ make TESTS_FILTER=.*/<pattern>/.* tools-test-cov
+$ make view-cov
+```
+
+Similarly, to run benchmarks
+
+``` bash
+$ make BENCHMARKS_FILTER=.*/<pattern>/.* benchmark
+```
+
+and examples
+
+``` bash
+$ make EXAMPLES_FILTER=.*/<pattern>/.* examples
+```
+
+
+## Contributing
+
+To contribute to stdlib
+
+
+
+
 <section class="links">
 
 [patreon]: https://www.patreon.com/athan
