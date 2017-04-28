@@ -271,7 +271,7 @@ Before opening a [pull request][github-pull-request] on the upstream repository,
 ``` bash
 $ make test
 $ make examples
-$ make benchmarks
+$ make benchmark
 ```
 
 Note that each of the above tasks can take considerable time (>30 minutes per task).
