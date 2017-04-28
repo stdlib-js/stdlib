@@ -256,17 +256,41 @@ $ git checkout -b <branch>
 
 where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will __not__ be accepted. Instead, all contributions should be made on non-master and non-develop local branches.
 
+During development, to incorporate recent changes from the upstream repository, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold: 1) interleaved histories makes [squashing][git-rewriting-history] commits more difficult and 2) a standard merge increases the risk of incomplete/broken commits appearing in the git history. An ideal commit history is one in which, at no point in time, is the project in a broken state. While not always possible (mistakes happen), striving for this ideal facilitates time travel and software archeology.
 
+Before opening a [pull request][github-pull-request] on the upstream repository, run project tests to ensure that the changes introduced have not left the repository in a broken state.
+
+``` bash
+$ make test
+$ make examples
+$ make benchmarks
+```
+
+Note that each of the above tasks can take considerable time (>30 minutes per task).
+
+Once your contribution is ready to be incorporated in the upstream repository, open a [pull request][github-pull-request] against the `develop` branch. Once opened, a project contributor will review the contribution, provide feedback, and possibly request changes. After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project.
+
+Note that, once a [pull request][github-pull-request] has been made (i.e., your local repository commits have been pushed to a remote server), you should __not__ perform any further [rewriting][git-rewriting-history] of git history. If the history needs modification, a contributor will modify the history during the merge process. The rationale for __not__ rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
+
+Once merged, congratulations! You are an official contributor to stdlib!
+
+Phew. While the above may be a lot to remember, even for what seem like minor changes, eventually it becomes routine and part of the normal development flow. Part of the motivation for enforcing process is to ensure that all code contributions meet a certain quality threshold, thus helping reviewers focus less on non-substantive issues like style and failing tests and more on substantive issues such as contribution content and merit. Know that your patience, hard work, time, and effort are greatly appreciated!  
 
 
 <section class="links">
 
 [patreon]: https://www.patreon.com/athan
+
 [github-fork]: https://help.github.com/articles/fork-a-repo/
 [github-fork-sync]: https://help.github.com/articles/syncing-a-fork/
 [github-remote]: https://help.github.com/articles/configuring-a-remote-for-a-fork/
+[github-pull-request]: https://help.github.com/articles/creating-a-pull-request/
+
 [git-clone-depth]: https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt
 [git-remotes]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+[git-rebase]: https://git-scm.com/docs/git-rebase
+[git-merge]: https://git-scm.com/docs/git-merge
+[git-rewriting-history]: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make
