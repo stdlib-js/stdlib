@@ -67,6 +67,8 @@ where `<username>` is your GitHub username (assuming you are using GitHub to man
 $ git clone --depth=<depth> https://github.com/<username>/stdlib.git
 ```
 
+where `<depth>` refers to the number of commits you want to download (as few as `1` and as many as the entire project history).
+
 If you are behind a firewall, you may need to use the `https` protocol, rather than the `git` protocol.
 
 ``` bash
