@@ -55,7 +55,7 @@ Next, clone the repository.
 $ git clone https://github.com/stdlib-js/stdlib.git
 ```
 
-If you are wanting to contribute to stdlib, first [fork][github-fork] the repository and amend the previous command
+If you are wanting to contribute to stdlib, first [fork][github-fork] the repository and amend the previous command.
 
 ``` bash
 $ git clone https://github.com/<username>/stdlib.git
