@@ -44,27 +44,27 @@ manifest.json      native add-on meta data
 Which additional folders and files to include depends on the type of package and individual package needs.
 
 
-### Benchmarks
+### benchmark
 
 [Benchmarks][stdlib-snippets] are intended to measure implementation performance for different conditions and inputs. While benchmarks may attempt to compare performance against reference implementations, their primary purpose is twofold: a) to aid in development by helping inform design decisions and b) to guard against performance regressions caused by future changes.
 
 
-### Docs
+### docs
 
 The [documentation][stdlib-snippets] folder includes all documentation beside the `README`. This includes REPL help text (__required__) and documentation assets, such as equation SVGs, plots, and other figures.
 
 
-### Examples
+### examples
 
 [Examples][stdlib-snippets] are intended to showcase package use cases and behavior. The main `index.js` file should more or less match the main example in the `README`. Other example files are free to demonstrate additional behavior, different option combinations, and other methods.
 
 
-### Lib
+### lib
 
 The [`lib`][stdlib-snippets] folder contains the package implementation. Every `lib` folder should have an `index.js` file, which defines the main package exports, which may be dynamically determined based on the host environment. Typically, the `index.js` does not contain the main implementation, but rather imports the implementation from a separate file.
 
 
-### Tests
+### test
 
 The [`test`][stdlib-snippets] folder contains unit tests. Unit tests should cover __all__ package functionality, including input argument validation, option combinations, and behavior under varying conditions. Unit tests are the most critical element of a package, providing the most direct means to verify intended behavior and to protect against future regressions.
 
