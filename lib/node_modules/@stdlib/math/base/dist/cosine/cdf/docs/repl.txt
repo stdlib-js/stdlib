@@ -1,0 +1,76 @@
+
+{{alias}}( x, μ, s )
+    Evaluates the cumulative distribution function (CDF) for a raised cosine
+    distribution with location parameter `μ` and scale parameter `s` at a value
+    `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `s < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 3.0 )
+    ~0.971
+    > y = {{alias}}( 9.0, 10.0, 3.0 )
+    ~0.196
+
+    > y = {{alias}}( 2.0, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 2.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+
+    // Degenerate distribution centered at `μ` when `s = 0.0`:
+    > y = {{alias}}( 2.0, 8.0, 0.0 )
+    0.0
+    > y = {{alias}}( 8.0, 8.0, 0.0 )
+    1.0
+    > y = {{alias}}( 10.0, 8.0, 0.0 )
+    1.0
+
+
+{{alias}}.factory( μ, s )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a raised cosine distribution with location parameter `μ` and scale
+    parameter `s`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 3.0, 1.5 );
+    > var y = mycdf( 1.9 )
+    ~0.015
+
+    See Also
+    --------
+
