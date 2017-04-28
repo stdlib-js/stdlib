@@ -250,9 +250,13 @@ $ make EXAMPLES_FILTER=.*/<pattern>/.* examples
 
 Before contributing, be sure to
 
-* Read and understand the [Code of Conduct][code-of-conduct].
-* Read and understand the [licensing terms][license].
-* Read and understand the [style guides][style-guides].
+* read and understand the [Code of Conduct][stdlib-code-of-conduct].
+* read and understand the [licensing terms][stdlib-license].
+* read and understand the [style guides][stdlib-style-guides].
+
+If you want to contribute a new package to stdlib, be sure to
+
+* read the [package development guide][stdlib-docs].
 
 Next, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly __prioritized__ within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, such automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
 
@@ -300,9 +304,10 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 [git-merge]: https://git-scm.com/docs/git-merge
 [git-rewriting-history]: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
 
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
-[license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
-[style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
+[stdlib-code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+[stdlib-license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
+[stdlib-style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
+[stdlib-docs]: https://github.com/stdlib-js/stdlib/blob/develop/docs
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make
