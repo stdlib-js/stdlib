@@ -248,7 +248,13 @@ $ make EXAMPLES_FILTER=.*/<pattern>/.* examples
 
 ## Contributing
 
-To contribute to stdlib
+To contribute to stdlib, create a new local branch.
+
+``` bash
+$ git checkout -b <branch>
+```
+
+where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will __not__ be accepted. Instead, all contributions should be made on non-master and non-develop local branches.
 
 
 
