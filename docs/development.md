@@ -139,7 +139,7 @@ $ make examples
 $ make benchmark
 ```
 
-Note that each of the previous commands may take considerable time (>30 minutes). If you environment is properly configured, each command should exit without errors.
+Note that each of the previous commands may take considerable time (>30 minutes). If your environment is properly configured, each command should exit without errors.
 
 
 ## Update
