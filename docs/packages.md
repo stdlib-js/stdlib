@@ -95,7 +95,7 @@ $ make BENCHMARKS_FILTER=.*/pattern/to/identify/your/package/.* benchmark
 $ make TESTS_FILTER=.*/pattern/to/identify/your/package/.* test
 ```
 
-Once a package is complete and tested, you are ready to request that your contribution be reviewed and officially included in stdlib! Hurray!
+Once a package is complete and tested, you are ready to request that your contribution be reviewed and officially included in stdlib! Hurray! Woot woot!
 
 
 <section class="links">
