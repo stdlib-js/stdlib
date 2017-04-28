@@ -74,7 +74,7 @@ The [`test`][stdlib-snippets] folder contains unit tests. Unit tests should cove
 
 Before developing a stdlib package, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly __prioritized__ within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, such automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
 
-To ease initial development, the project includes various [snippets][stdlib-snippets], which contain todo annotations indicating what should be changed within each file. We __recommend__ consulting and using the [snippets][stdlib-snippets] __while__ developing a package, as the [snippets][stdlib-snippets] will most likely reflect current best practice and conventions and often include various hints to aid in development.
+To ease initial development, the project includes various [snippets][stdlib-snippets], which contain todo annotations indicating what should be changed within each file. We __recommend__ consulting and using the [snippets][stdlib-snippets] __while__ developing a package, as the [snippets][stdlib-snippets] will most likely reflect current best practice and conventions and often include hints to aid in development.
 
 Once you are ready to begin creating a new package, we recommend the following order:
 
