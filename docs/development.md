@@ -1,6 +1,17 @@
 # Development
 
-> Development guide for contributing to stdlib.
+> Development guide for stdlib.
+
+
+## Introduction
+
+Amazing! We are super excited that you have decided to develop, and even contribute to, stdlib, and we welcome you to the stdlib developer community. We have done our best to provide a complete environment for testing, benchmarking, documenting, and developing project code. And if you have any ideas as to how we can make it better, let us know!
+
+While this guide focuses on technical development, if you are looking to contribute to the project but are non-technical, you can still contribute! For example, you can contribute by filing issues, writing RFCs (feature requests), updating documentation, providing build and infrastructure support, offering [funding][patreon], and helping market and promote the project, among other things. Every bit helps, and we are grateful for your time and effort!
+
+Before we begin, developing stdlib requires some setup and configuration. What follows is an overview of environment requirements and a sequence of steps for getting up and running with stdlib. We use [Git][git] for version control, and for most tasks, we use [GNU make][gnu-make] (the original task runner) to help us get things done quickly and effectively. For the most part, the project is able to internally manage dependencies for testing, benchmarking, and linting, so, once you follow the steps below, you should be ready to start developing!
+
+So, without further ado, let's get you started!
 
 
 ## Prerequisites
@@ -23,7 +34,7 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
 * [pandoc][pandoc]: universal document converter (version `>= 1.18`)
 
-The following vendor libraries can be automatically downloaded and compiled from source using `make`:
+The following vendor libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
 * [Boost][boost]: portable C++ libraries
 * [OpenBLAS][openblas]: optimized BLAS library
@@ -32,10 +43,28 @@ The following vendor libraries can be automatically downloaded and compiled from
 
 ## Download
 
-To acquire the source code, clone the git repository.
+To acquire the source code, first navigate to the parent directory into which you want to place the project git repository.
 
 ``` bash
-$ git clone https://github.com/stdlib-js/stdlib
+$ cd /path/to/parent/destination/directory
+```
+
+Next, clone the repository.
+
+``` bash
+$ git clone https://github.com/stdlib-js/stdlib.git
+```
+
+If you are wanting to contribute to stdlib, first [fork][github-fork] the repository and amend the previous command
+
+``` bash
+$ git clone https://github.com/<username>/stdlib.git
+```
+
+where `<username>` is your GitHub username (assuming you are using GitHub to manage public repositories). The repository has a large commit history, leading to slow download times. If you are not interested in code archeology, you can reduce the download time by limiting the clone [depth][git-clone-depth].
+
+``` bash
+$ git clone --depth=<depth> https://github.com/<username>/stdlib.git
 ```
 
 If you are behind a firewall, you may need to use the `https` protocol, rather than the `git` protocol.
@@ -43,6 +72,13 @@ If you are behind a firewall, you may need to use the `https` protocol, rather t
 ``` bash
 $ git config --global url."https://".insteadOf git://
 ```
+
+Once you have finished cloning the repository into the destination directory, you should see the folder `stdlib`. To proceed with configuring your environment, navigate to the project folder.
+
+``` bash
+$ cd stdlib
+```
+
 
 ## Configuration
 
@@ -80,20 +116,46 @@ To install vendor dependencies,
 $ make install-deps
 ```
 
+While vendor dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numeric computation facilities. Note, however, that installing vendor dependencies may take considerable time (>30 minutes).
+
 To initialize the development environment,
 
 ``` bash
 $ make init
 ```
 
-## Update
+Initializing the development environment configures git hooks and other bells and whistles to aid in development. Git hooks are especially important as they enable automatic linting and testing to ensure that code meets style specifications and does not break.
 
-If you have previously downloaded stdlib using `git clone`, you can update an existing source tree using `git pull`.
+
+## Verification
+
+To verify your environment, run project tests.
 
 ``` bash
-$ cd ./path/to/stdlib
+$ make test
+$ make examples
+$ make benchmark
+```
+
+Note that each of the previous commands may take considerable time (>30 minutes). If you environment is properly configured, each command should exit without errors.
+
+
+## Update
+
+If you have previously downloaded stdlib using `git clone`, you can update an existing source tree from the base project directory using `git pull`.
+
+``` bash
 $ git pull
 ```
+
+If you are working with a [forked][github-fork] repository and wish to [sync][github-fork-sync] your local repository with the [upstream][git-remotes] project (i.e., incorporate changes from the main project repository into your local repository), assuming you have [configured a remote][github-remote] which points to the upstream repository,
+
+``` bash
+$ git fetch upstream
+$ git merge upstream/<branch>
+```
+
+where `upstream` is the remote name and `<branch>` refers to the branch you want to merge into your local copy.
 
 If you have initialized the development environment using `make init`, updating the source tree will trigger hooks to ensure all development dependencies are up-to-date.
 
@@ -133,6 +195,13 @@ workshops  workshops
 
 
 <section class="links">
+
+[patreon]: https://www.patreon.com/athan
+[github-fork]: https://help.github.com/articles/fork-a-repo/
+[github-fork-sync]: https://help.github.com/articles/syncing-a-fork/
+[github-remote]: https://help.github.com/articles/configuring-a-remote-for-a-fork/
+[git-clone-depth]: https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt
+[git-remotes]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
 [git]: http://git-scm.com/
 [gnu-make]: https://www.gnu.org/software/make
