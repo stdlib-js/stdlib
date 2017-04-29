@@ -210,7 +210,7 @@ To run select tests,
 $ make TESTS_FILTER=.*/<pattern>/.* test
 ```
 
-where `<pattern>` is pattern matching a particular path. For example, to test only base special math functions
+where `<pattern>` is a pattern matching a particular path. For example, to test only base special math functions
 
 ``` bash
 $ make TESTS_FILTER=.*/math/base/special/.*
