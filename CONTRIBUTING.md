@@ -19,12 +19,12 @@ __Before__ contributing, read the [Code of Conduct][stdlib-code-of-conduct], whi
 
 When filing new issues and commenting on existing issues on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Gitter][stdlib-gitter] channel.
 
-Before filing a potential bug report,
+__Before__ filing a potential bug report,
 
 * Search for existing issues and pull requests.
 * Try some debugging techniques to help isolate the problem, including logging inputs and outputs.
 
-If the source of the problem is a third party package, file a bug report with the relevant package author, rather than here.
+If the source of the problem is a third party package, file a bug report with the relevant package author, rather than on this repository.
 
 When filing an issue, provide the following, where possible:
 
@@ -41,22 +41,72 @@ When pasting code blocks or output, use triple backticks to enable proper format
 Be aware that the `@` symbol tags users on GitHub, so __always__ surround package names with backticks (e.g., `@stdlib/utils/copy`).
 
 
-## Code
+### Code
 
-Before contributing code, be sure to
+__Before__ contributing code, be sure to
 
 * read and understand the [licensing terms][stdlib-license].
 * read and understand the [style guides][stdlib-style-guides].
 
 For instructions on how to setup and configure your environment, be sure to
 
-* read the [development guide][stdlib-development].
+* read and follow the [development guide][stdlib-development].
 
-If you want to contribute a new package to stdlib, be sure to
+If you want to contribute a new feature or a breaking change to stdlib, be sure to
 
-* read the [package development guide][stdlib-docs].
+* consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package.
+* write an RFC (request for comments) detailing the proposed change.
+* wait for RFC approval.
+* adhere to the guidance set forth in the RFC.
+
+If you want to contribute a new package, be sure to
+
+* read and follow the [package development guide][stdlib-docs].
+
+If you are unfamiliar with [git][git], the version control system used by GitHub and this project,
+
+* see the [git][git] docs.
+* try a tutorial, such as the [tutorial][github-git-tutorial] provided by GitHub.
 
 Next, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly __prioritized__ within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, such automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
+
+
+#### Step 1: Fork
+
+[Fork][github-fork] the repository on GitHub and clone the repository to your local machine.
+
+``` bash
+$ git clone https://github.com/<username>/stdlib.git
+```
+
+where `<username>` is your GitHub username (assuming you are using GitHub to manage public repositories). The repository has a large commit history, leading to slow download times. If you are not interested in code archeology, you can reduce the download time by limiting the clone [depth][git-clone-depth].
+
+``` bash
+$ git clone --depth=<depth> https://github.com/<username>/stdlib.git
+```
+
+where `<depth>` refers to the number of commits you want to download (as few as `1` and as many as the entire project history).
+
+If you are behind a firewall, you may need to use the `https` protocol, rather than the `git` protocol.
+
+``` bash
+$ git config --global url."https://".insteadOf git://
+```
+
+Once you have finished cloning the repository into the destination directory, you should see the folder `stdlib`. To proceed with configuring your environment, navigate to the project folder.
+
+``` bash
+$ cd stdlib
+```
+
+And finally, add an `upstream` [remote][git-remotes] to allow syncing changes between this repository and your local version.
+
+``` bash
+$ git remote add upstream git://github.com/stdlib-js/stdlib.git
+```
+
+
+#### Step 2: Branch
 
 For modifications intended to be included in stdlib, create a new local branch.
 
@@ -66,14 +116,59 @@ $ git checkout -b <branch>
 
 where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will __not__ be accepted. Instead, all contributions should be made on non-master and non-develop local branches, including documentation changes and other non-code modifications.
 
-During development, to incorporate recent changes from the upstream repository, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold:
+
+#### Step 3: Write
+
+Start making your changes and/or implementing the new feature. Any text you write should follow the [text style guide][stdlib-style-guides], including comments and API documentation.
+
+
+#### Step 4: Commit
+
+Ensure that you have configured [git][git] to know your name and email address.
+
+``` bash
+$ git config --global user.name "Jane Doe"
+$ git config --global user.email "jane.doe@example.com"
+```
+
+Add changed files and commit.
+
+``` bash
+$ git add files/which/changed
+$ git commit
+```
+
+When writing commit messages, follow the git [style guide][stdlib-style-guides].
+
+
+#### Step 5: Sync
+
+To incorporate recent changes from the `upstream` repository during development, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold:
 
 1. interleaved histories make [squashing][git-rewriting-history] commits more difficult
 2. a standard merge increases the risk of incomplete/broken commits appearing in the git history.
 
 An ideal commit history is one in which, at no point in time, is the project in a broken state. While not always possible (mistakes happen), striving for this ideal facilitates time travel and software archeology.
 
-Before opening a [pull request][github-pull-request] on the upstream repository, run project tests to ensure that the changes introduced have not left the repository in a broken state.
+``` bash
+$ git fetch upstream
+$ git rebase upstream/develop
+```
+
+
+#### Step 6: Test
+
+Tests should accompany __all__ bug fixes and features. For guidance on how to write tests, consult existing tests within the project.
+
+__Before__ submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. If git hooks have been enabled,
+
+``` bash
+$ make init
+```
+
+linting should be automatically triggered prior to each commit. Any [pull requests][github-pull-request] which include failing tests and/or lint errors will __not__ be accepted. 
+
+To run project tests,
 
 ``` bash
 $ make test
@@ -83,11 +178,48 @@ $ make benchmark
 
 Note that each of the above tasks can take considerable time (>30 minutes per task).
 
-Once your contribution is ready to be incorporated in the upstream repository, open a [pull request][github-pull-request] against the `develop` branch. A project contributor will review the contribution, provide feedback, and potentially request changes. After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project.
+
+#### Step 7: Push
+
+Push your changes to your remote GitHub repository.
+
+``` bash
+$ git push origin <branch>
+```
+
+where `<branch>` is the name of your branch.
+
+
+#### Step 8: Pull Request
+
+Once your contribution is ready to be incorporated in the `upstream` repository, open a [pull request][github-pull-request] against the `develop` branch. A project contributor will review the contribution, provide feedback, and potentially request changes.
+
+> Receiving feedback is the most __important__, and often the most __valuable__, part of the submission process. Don't get disheartened!
+
+To make changes to your [pull request][github-pull-request], make changes to your branch. Each time you push changes to your forked repository, GitHub will automatically update the [pull request][github-pull-request].
+
+``` bash
+$ git add files/which/changed
+$ git commit
+$ git push origin <branch>
+```
 
 Note that, once a [pull request][github-pull-request] has been made (i.e., your local repository commits have been pushed to a remote server), you should __not__ perform any further [rewriting][git-rewriting-history] of git history. If the history needs modification, a contributor will modify the history during the merge process. The rationale for __not__ rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
 
-Once merged, __congratulations__! You are an official contributor to stdlib!
+
+#### Step 9: Land
+
+After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project. Once merged, the [pull request][github-pull-request] will be updated with the merge commit, and the [pull request][github-pull-request] will be closed.
+
+Note that, during the merge process, multiple commits will often be [squashed][git-rewriting-history].
+
+
+#### Step 10: Celebrate
+
+__Congratulations__! You are an official contributor to stdlib! Thank you for your hard work and patience!
+
+
+### Notes
 
 Phew. While the above may be a lot to remember, even for what seem like minor changes, eventually it becomes routine and part of the normal development flow. Part of the motivation for enforcing process is to ensure that all code contributions meet a certain quality threshold, thus helping reviewers focus less on non-substantive issues like style and failing tests and more on substantive issues such as contribution content and merit. Know that your patience, hard work, time, and effort are greatly appreciated!
 
@@ -108,7 +240,12 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 [github-pull-request]: https://help.github.com/articles/creating-a-pull-request/
 [github-gist]: https://gist.github.com/
 [github-markdown-guide]: https://guides.github.com/features/mastering-markdown/
+[github-fork]: https://help.github.com/articles/fork-a-repo/
+[github-git-tutorial]: http://try.github.io/levels/1/challenges/1
 
+[git]: http://git-scm.com/
+[git-clone-depth]: https://git-scm.com/docs/git-clone#git-clone---depthltdepthgt
+[git-remotes]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 [git-rebase]: https://git-scm.com/docs/git-rebase
 [git-merge]: https://git-scm.com/docs/git-merge
 [git-rewriting-history]: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
