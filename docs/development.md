@@ -211,7 +211,7 @@ $ make TESTS_FILTER=.*/<pattern>/.* test
 where `<pattern>` is a pattern matching a particular path. For example, to test only base special math functions
 
 ``` bash
-$ make TESTS_FILTER=.*/math/base/special/.*
+$ make TESTS_FILTER=.*/math/base/special/.* test
 ```
 
 where the pattern `.*/math/base/special/.*` matches any test file whose absolute path contains `math/base/special`.

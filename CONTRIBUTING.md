@@ -257,7 +257,7 @@ The project can __never__ have enough tests. To address areas lacking sufficient
    where `<pattern>` is a pattern matching a particular path. For example, to test the base math `sin` package
 
    ``` bash
-   $ make TESTS_FILTER=.*/math/base/special/sin/.*
+   $ make TESTS_FILTER=.*/math/base/special/sin/.* test
    ```
 
    where the pattern `.*/math/base/special/sin/.*` matches any test file whose absolute path contains `math/base/special/sin`.
