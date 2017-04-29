@@ -219,7 +219,26 @@ Note that, during the merge process, multiple commits will often be [squashed][g
 __Congratulations__! You are an official contributor to stdlib! Thank you for your hard work and patience!
 
 
-### Notes
+## Notes
+
+### Continuous Integration
+
+Opening a [pull request][github-pull-request] automatically triggers a continuous integration build. Each pull request update queues an additional build. If a pull request has more than one build queued, only the most recent build in the queue is run.
+
+Only a project administrator can manually trigger a build.
+
+
+## Developer's Certificate of Origin 1.1
+
+By making a contribution to this project, I certify that:
+
+* (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
+* (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
+* (c) The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it.
+* (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
+
+
+## Conclusion
 
 Phew. While the above may be a lot to remember, even for what seem like minor changes, eventually it becomes routine and part of the normal development flow. Part of the motivation for enforcing process is to ensure that all code contributions meet a certain quality threshold, thus helping reviewers focus less on non-substantive issues like style and failing tests and more on substantive issues such as contribution content and merit. Know that your patience, hard work, time, and effort are greatly appreciated!
 
