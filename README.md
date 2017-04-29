@@ -15,6 +15,20 @@ Stdlib is a standard library for JavaScript and Node.js, with an emphasis on num
 For help developing stdlib, see the [development guide][stdlib-development].
 
 
+## Resources
+
+* [__Homepage__][stdlib-homepage]
+* [__Documentation__][stdlib-documentation]
+* [__Source code__][stdlib-source]
+* [__Code coverage__][stdlib-code-coverage]
+
+
+### External Resources
+
+* [__Twitter__][stdlib-twitter]
+* [__Gitter__][stdlib-gitter]
+
+
 ## Prerequisites
 
 Running stdlib __requires__ the following prerequisites:
@@ -164,6 +178,15 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
+
+[stdlib-homepage]: https://github.com/stdlib-js/stdlib
+[stdlib-documentation]: https://github.com/stdlib-js/stdlib
+[stdlib-source]: https://github.com/stdlib-js/stdlib
+
+[stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[stdlib-twitter]: https://twitter.com/stdlibjs
+[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
 </section>
 
