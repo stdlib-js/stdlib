@@ -10,9 +10,9 @@
 
 > A standard library for JavaScript and Node.js.
 
-Stdlib is a collection of robust, high performance libraries for numeric computing, streams, and more. This is the GitHub repository of stdlib source code and documentation.
+Stdlib is a standard library for JavaScript and Node.js, with an emphasis on numeric computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more. This is the GitHub repository of stdlib source code and documentation.
 
-If you are interested in developing stdlib, see the [development guide][stdlib-development].
+For help developing stdlib, see the [development guide][stdlib-development].
 
 
 ## Prerequisites
@@ -22,7 +22,7 @@ Running stdlib __requires__ the following prerequisites:
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 * [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
 
-Most functionality in stdlib is implemented __exclusively__ in JavaScript; however, some implementations try to capture performance benefits by using native bindings. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
+Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using native bindings. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
 
 * [GNU make][gnu-make]: development utility and task runner
 * [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
@@ -39,7 +39,7 @@ The following vendor libraries can be automatically downloaded and compiled from
 
 ## Installation
 
-To install stdlib as a library or application dependency,
+To install as a library or application dependency,
 
 ``` bash
 $ npm install @stdlib/stdlib
