@@ -1,3 +1,5 @@
+<!--lint disable no-duplicate-headings-in-section-->
+
 # Talks
 
 > Talks featuring stdlib.
@@ -5,7 +7,7 @@
 
 ## 2016
 
-#### Text Mining with Node.js
+### Text Mining with Node.js
 
 > [Philipp Burckhardt][planeshifter], Node.js Interactive Europe 2016
 
@@ -16,7 +18,7 @@
     <br>
 </div>
 
-#### Real Time Machine Learning with Node.js
+### Real Time Machine Learning with Node.js
 
 > [Philipp Burckhardt][planeshifter], EmpireNode 2016
 
@@ -27,7 +29,7 @@
     <br>
 </div>
 
-#### Math in V8 is Broken and How We Can Fix It
+### Math in V8 is Broken and How We Can Fix It
 
 > [Athan Reines][kgryte], Node.js Interactive US 2016
 
@@ -38,7 +40,7 @@
     <br>
 </div>
 
-#### Real Time Machine Learning with Node.js
+### Real Time Machine Learning with Node.js
 
 > [Philipp Burckhardt][planeshifter], Node.js Interactive US 2016
 
