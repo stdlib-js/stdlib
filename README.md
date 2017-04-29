@@ -10,9 +10,23 @@
 
 > A standard library for JavaScript and Node.js.
 
-Stdlib is a collection of robust, high performance libraries for numeric computing, streams, and more. This is the GitHub repository of stdlib source code and documentation.
+Stdlib is a standard library for JavaScript and Node.js, with an emphasis on numeric computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more. This is the GitHub repository of stdlib source code and documentation.
 
-If you are interested in developing stdlib, see the [development guide][stdlib-development].
+For help developing stdlib, see the [development guide][stdlib-development].
+
+
+## Resources
+
+* [__Homepage__][stdlib-homepage]
+* [__Documentation__][stdlib-documentation]
+* [__Source code__][stdlib-source]
+* [__Code coverage__][stdlib-code-coverage]
+
+
+### External Resources
+
+* [__Twitter__][stdlib-twitter]
+* [__Gitter__][stdlib-gitter]
 
 
 ## Prerequisites
@@ -22,7 +36,7 @@ Running stdlib __requires__ the following prerequisites:
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 * [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
 
-Most functionality in stdlib is implemented __exclusively__ in JavaScript; however, some implementations try to capture performance benefits by using native bindings. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
+Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using native bindings. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
 
 * [GNU make][gnu-make]: development utility and task runner
 * [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
@@ -39,7 +53,7 @@ The following vendor libraries can be automatically downloaded and compiled from
 
 ## Installation
 
-To install stdlib as a library or application dependency,
+To install as a library or application dependency,
 
 ``` bash
 $ npm install @stdlib/stdlib
@@ -164,6 +178,15 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
+
+[stdlib-homepage]: https://github.com/stdlib-js/stdlib
+[stdlib-documentation]: https://github.com/stdlib-js/stdlib
+[stdlib-source]: https://github.com/stdlib-js/stdlib
+
+[stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
+[stdlib-twitter]: https://twitter.com/stdlibjs
+[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
 </section>
 
