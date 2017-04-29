@@ -43,6 +43,8 @@ Be aware that the `@` symbol tags users on GitHub, so __always__ surround packag
 
 ### Code
 
+> By contributing code to the project, you are agreeing to release it under the project [license][stdlib-license].
+
 __Before__ contributing code, be sure to
 
 * read and understand the [licensing terms][stdlib-license].
@@ -71,6 +73,11 @@ If you are unfamiliar with [git][git], the version control system used by GitHub
 Next, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly __prioritized__ within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, such automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
 
 
+#### Step 0: GitHub
+
+Create a [GitHub account][github-signup]. The project uses GitHub exclusively for hosting source code, managing issues and pull requests, triggering continuous integration, and reporting.
+
+
 #### Step 1: Fork
 
 [Fork][github-fork] the repository on GitHub and clone the repository to your local machine.
@@ -79,7 +86,7 @@ Next, take a look around the project, noting the style and organization of docum
 $ git clone https://github.com/<username>/stdlib.git
 ```
 
-where `<username>` is your GitHub username (assuming you are using GitHub to manage public repositories). The repository has a large commit history, leading to slow download times. If you are not interested in code archeology, you can reduce the download time by limiting the clone [depth][git-clone-depth].
+where `<username>` is your GitHub username. The repository has a large commit history, leading to slow download times. If you are not interested in code archeology, you can reduce the download time by limiting the clone [depth][git-clone-depth].
 
 ``` bash
 $ git clone --depth=<depth> https://github.com/<username>/stdlib.git
@@ -221,6 +228,65 @@ __Congratulations__! You are an official contributor to stdlib! Thank you for yo
 
 ## Notes
 
+### GitHub
+
+* When linking to specific lines of code in an issue or a pull request, hit the `y` key while viewing a file on GitHub. Doing so reloads the page with a URL that includes the specific version of the file you are viewing. This ensures that, when you refer to specific lines, these same lines can be easily viewed in the future, even if the content of the file changes.
+* GitHub does not send notifications when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes.
+
+
+### Writing Tests
+
+> By contributing tests to the project, you are agreeing to release it under the project [license][stdlib-license].
+
+The project can __never__ have enough tests. To address areas lacking sufficient test coverage,
+
+1. View the latest [coverage report][stdlib-code-coverage].
+
+1. Browse the source files and find untested functionality highlighted in red.
+
+1. Locate the package containing the source file in your forked repository.
+
+1. Add tests to the package test file(s).
+
+1. To run package tests,
+
+   ``` bash
+   $ make TESTS_FILTER=.*/<pattern>/.* test
+   ```
+
+   where `<pattern>` is a pattern matching a particular path. For example, to test the base math `sin` package
+
+   ``` bash
+   $ make TESTS_FILTER=.*/math/base/special/sin/.*
+   ```
+
+   where the pattern `.*/math/base/special/sin/.*` matches any test file whose absolute path contains `math/base/special/sin`.
+
+1. To generate a test coverage report,
+
+   ``` bash
+   $ make TESTS_FILTER=.*/<pattern>/.* test-cov
+   $ make view-cov
+   ```
+
+   which opens the coverage report in your default web browser.
+
+1. Submit the test as a [pull request][github-pull-request].
+
+
+### Writing Documentation
+
+> By contributing documentation to the project, you are agreeing to release it under the project [license][stdlib-license].
+
+Project documentation is localized within each package. Similar to code, you should modify documentation using [git][git]. Provided you have followed the [development guide][stdlib-development] and enabled git hooks,
+
+``` bash
+$ make init
+```
+
+modified Markdown files are automatically linted prior to each commit. Any changes to documentation files should be free of lint errors. If a [pull request][github-pull-request] includes lint errors, the pull request will __not__ be accepted.
+
+
 ### Continuous Integration
 
 Opening a [pull request][github-pull-request] automatically triggers a continuous integration build. Each pull request update queues an additional build. If a pull request has more than one build queued, only the most recent build in the queue is run.
@@ -247,15 +313,19 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 
 [stdlib-code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
 [stdlib-license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
+
 [stdlib-style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
 [stdlib-docs]: https://github.com/stdlib-js/stdlib/blob/develop/docs
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
+[stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
+
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
 [patreon]: https://www.patreon.com/athan
 
+[github-signup]: https://github.com/signup/free
 [github-pull-request]: https://help.github.com/articles/creating-a-pull-request/
 [github-gist]: https://gist.github.com/
 [github-markdown-guide]: https://guides.github.com/features/mastering-markdown/
