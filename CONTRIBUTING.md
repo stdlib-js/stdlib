@@ -8,11 +8,43 @@
 Woot woot! If you are new to stdlib, welcome! And thanks for your interest! While this guide focuses on technical development, if you are looking to contribute to the project but are non-technical, you can still contribute! For example, you can contribute by filing issues, writing RFCs (feature requests), updating documentation, providing build and infrastructure support, offering [funding][patreon], and helping market and promote the project, among other things. Every bit helps, and we are grateful for your time and effort!
 
 
-## Contributing
+## Code of Conduct
 
-Before contributing, be sure to
+__Before__ contributing, read the [Code of Conduct][stdlib-code-of-conduct], which details the *bare minimum* behavior expectations that the project requires of its contributors.
 
-* read and understand the [Code of Conduct][stdlib-code-of-conduct].
+
+## Contributions
+
+### Issues
+
+When filing new issues and commenting on existing issues on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Gitter][stdlib-gitter] channel.
+
+Before filing a potential bug report,
+
+* Search for existing issues and pull requests.
+* Try some debugging techniques to help isolate the problem, including logging inputs and outputs.
+
+If the source of the problem is a third party package, file a bug report with the relevant package author, rather than here.
+
+When filing an issue, provide the following, where possible:
+
+* A description of the issue.
+* Links to any related issues.
+* The full error message, including the stacktrace.
+* The sequence of steps required to reproduce the issue.
+* A minimal working example; i.e., the smallest chunk of code that triggers the error. Ideally, the code can be pasted into a REPL or run from a source file. If the code is larger than `50` lines, consider creating a [gist][github-gist].
+* The expected results.
+* List of affected environments; e.g., browser, browser version, `npm` version, Node.js version, operating system, and stdlib version.
+
+When pasting code blocks or output, use triple backticks to enable proper formatting. Surround inline code with single backticks. For other Markdown formatting tips and trips, see GitHub's [Markdown guide][github-markdown-guide].
+
+Be aware that the `@` symbol tags users on GitHub, so __always__ surround package names with backticks (e.g., `@stdlib/utils/copy`).
+
+
+## Code
+
+Before contributing code, be sure to
+
 * read and understand the [licensing terms][stdlib-license].
 * read and understand the [style guides][stdlib-style-guides].
 
@@ -67,10 +99,15 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 [stdlib-style-guides]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
 [stdlib-docs]: https://github.com/stdlib-js/stdlib/blob/develop/docs
+[stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
+
+[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
 [patreon]: https://www.patreon.com/athan
 
 [github-pull-request]: https://help.github.com/articles/creating-a-pull-request/
+[github-gist]: https://gist.github.com/
+[github-markdown-guide]: https://guides.github.com/features/mastering-markdown/
 
 [git-rebase]: https://git-scm.com/docs/git-rebase
 [git-merge]: https://git-scm.com/docs/git-merge
