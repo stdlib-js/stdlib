@@ -2,6 +2,7 @@
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/benchmark/javascript.mk
+include $(TOOLS_MAKE_LIB_DIR)/benchmark/julia.mk
 
 
 # TARGETS #
