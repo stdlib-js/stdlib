@@ -130,6 +130,15 @@ NODE ?= node
 # Define the command for `npm`:
 NPM ?= npm
 
+# Define the command for `julia`:
+JULIA ?= julia
+
+# Define the command for `python`:
+PYTHON ?= python
+
+# Define the command for `r`:
+R ?= r
+
 
 # COMPILERS #
 
