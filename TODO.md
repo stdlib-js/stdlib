@@ -1558,6 +1558,8 @@
 
 378. in-house prez [framework](https://github.com/jdan/cleaver)
 
+379. investigate [pkg](https://github.com/zeit/pkg) for creating a single binary executable
+
 
 ---
 

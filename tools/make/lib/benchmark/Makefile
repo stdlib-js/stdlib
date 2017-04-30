@@ -17,3 +17,11 @@ benchmark: benchmark-javascript
 
 .PHONY: benchmark
 
+
+# Run cross-language benchmarks.
+#
+# This target runs cross-language benchmarks.
+
+benchmark-lang: benchmark-javascript benchmark-julia benchmark-python benchmark-r
+
+.PHONY: benchmark-lang
