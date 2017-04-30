@@ -29,13 +29,13 @@ TESTS_FIXTURES_FILTER ?= .*/.*
 BENCHMARKS_PATTERN ?= benchmark*.js
 
 # Define a filename pattern for Julia benchmark files:
-JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl;
+JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl
 
 # Define a filename pattern for Python benchmark files:
-PYTHON_BENCHMARKS_PATTERN ?= benchmark*.py;
+PYTHON_BENCHMARKS_PATTERN ?= benchmark*.py
 
 # Define a filename pattern for R benchmark files:
-R_BENCHMARKS_PATTERN ?= benchmark*.R;
+R_BENCHMARKS_PATTERN ?= benchmark*.R
 
 # Define a filepath pattern for benchmark files:
 BENCHMARKS_FILTER ?= .*/.*
@@ -65,6 +65,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs.mk
