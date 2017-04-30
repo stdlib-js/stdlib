@@ -25,6 +25,7 @@ plugins[ 'test-summary' ] = path.join( prefix, 'makie-test-summary' );
 plugins[ 'test-cov' ] = path.join( prefix, 'makie-test-cov' );
 plugins[ 'view-cov' ] = path.join( prefix, 'makie-view-cov' );
 plugins[ 'benchmark' ] = path.join( prefix, 'makie-benchmark' );
+plugins[ 'benchmark-lang' ] = path.join( prefix, 'makie-benchmark-lang' );
 plugins[ 'lint-javascript' ] = path.join( prefix, 'makie-lint-javascript' );
 plugins[ 'lint-markdown' ] = path.join( prefix, 'makie-lint-markdown' );
 plugins[ 'complexity' ] = path.join( prefix, 'makie-complexity' );
