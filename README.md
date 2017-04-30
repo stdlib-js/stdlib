@@ -15,6 +15,26 @@ Stdlib is a standard library for JavaScript and Node.js, with an emphasis on num
 For help developing stdlib, see the [development guide][stdlib-development].
 
 
+## Features
+
+* An extensive collection of standard library mathematical functions.
+* Utilities for manipulating floating-point numbers and transforming data.
+* Packages for incremental computation of statistics over data streams.
+* Large collection of seedable pseudorandom number generators (PRNGs).
+* Native add-ons and WebAssembly interfaces for interfacing with BLAS libraries, with pure JavaScript fallbacks.
+* Sample datasets for testing and development.
+* String manipulation utilities.
+* A comprehensive assertion library.
+* A benchmark framework which outputs TAP.
+* A plot API.
+* REPL environment with integrated help and examples.
+* Backward compatibility to Node.js `v0.10`.
+* Rigorous testing against reference implementations.
+* Can be bundled using [Browserify][browserify] or [Webpack][webpack] for use within web browsers.
+* Extensive documentation and examples.
+* Commercial friendly [license][stdlib-license].
+
+
 ## Resources
 
 * [__Homepage__][stdlib-homepage]
@@ -172,6 +192,9 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 [gfortran]: https://gcc.gnu.org/fortran/
 
 [openblas]: https://github.com/xianyi/OpenBLAS
+
+[browserify]: https://github.com/substack/node-browserify
+[webpack]: https://webpack.js.org/
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
