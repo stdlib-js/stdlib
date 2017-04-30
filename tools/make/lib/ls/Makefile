@@ -28,6 +28,15 @@ TESTS_FIXTURES_FILTER ?= .*/.*
 # Define a filename pattern for benchmark files:
 BENCHMARKS_PATTERN ?= benchmark*.js
 
+# Define a filename pattern for Julia benchmark files:
+JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl;
+
+# Define a filename pattern for Python benchmark files:
+PYTHON_BENCHMARKS_PATTERN ?= benchmark*.py;
+
+# Define a filename pattern for R benchmark files:
+R_BENCHMARKS_PATTERN ?= benchmark*.R;
+
 # Define a filepath pattern for benchmark files:
 BENCHMARKS_FILTER ?= .*/.*
 
