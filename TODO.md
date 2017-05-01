@@ -1560,6 +1560,8 @@
 
 379. investigate [pkg](https://github.com/zeit/pkg) for creating a single binary executable
 
+380. a built-in terminal-to-gif recorder
+
 
 ---
 
