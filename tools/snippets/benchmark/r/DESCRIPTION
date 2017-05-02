@@ -1,0 +1,9 @@
+Package: TODO
+Title: TODO benchmarks
+Version: 0.0.0
+Authors@R: person("stdlib", "js", role = c("aut","cre"))
+Description: Benchmarks TODO.
+Depends: R (>=3.0.0)
+Imports:
+	microbenchmark
+LazyData: true
