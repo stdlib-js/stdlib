@@ -59,10 +59,8 @@ print_results <- function( elapsed ) {
 #' @examples
 #' elapsed <- benchmark();
 benchmark <- function() {
-	x <- runif( 1 ); # TODO
-
 	# Run the benchmarks:
-	results <- microbenchmark::microbenchmark( TODO( x ), times = iterations );
+	results <- microbenchmark::microbenchmark( TODO( TODO ), times = iterations );
 
 	# Sum all the raw timing results to get a total "elapsed" time:
 	elapsed <- sum( results$time );
