@@ -66,7 +66,7 @@ all: $(c_targets)
 # This target compiles C source files.
 
 $(c_targets): %.out: %.c
-	$(QUIET) $(CC) $(CFLAGS) $(fPIC) -o $@ $<
+	$(QUIET) $(CC) $(CFLAGS) $(fPIC) -o $@ $< -lm
 
 
 # Run a benchmark.
