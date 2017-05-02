@@ -37,6 +37,9 @@ PYTHON_BENCHMARKS_PATTERN ?= benchmark*.py
 # Define a filename pattern for R benchmark files:
 R_BENCHMARKS_PATTERN ?= benchmark*.R
 
+# Define a filename pattern for C benchmark files:
+C_BENCHMARKS_PATTERN ?= benchmark*.c
+
 # Define a filepath pattern for benchmark files:
 BENCHMARKS_FILTER ?= .*/.*
 
@@ -65,6 +68,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_r.mk
