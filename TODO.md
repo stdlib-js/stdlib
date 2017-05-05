@@ -1562,6 +1562,8 @@
 
 380. a built-in terminal-to-gif recorder
 
+381. [headless screenshots](https://github.com/schnerd/chrome-headless-screenshots)
+
 
 ---
 
