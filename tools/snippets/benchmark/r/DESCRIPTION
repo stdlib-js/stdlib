@@ -1,5 +1,5 @@
 Package: TODO
-Title: TODO benchmarks
+Title: TODO Benchmarks
 Version: 0.0.0
 Authors@R: person("stdlib", "js", role = c("aut","cre"))
 Description: Benchmarks TODO.
