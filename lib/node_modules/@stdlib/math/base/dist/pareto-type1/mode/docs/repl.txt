@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the mode of a Pareto (Type I) distribution.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.8, 1.0 )
+    1.0
+    > v = {{alias}}( 4.0, 12.0 )
+    12.0
+    > v = {{alias}}( 8.0, 2.0 )
+    2.0
+
+    See Also
+    --------
+
