@@ -1,1 +1,15 @@
+# Configuration file which assigns attributes to pathnames.
+#
+# [1]: https://git-scm.com/docs/gitattributes
+
+# Automatically normalize the line endings of any committed text files:
 * text=auto
+
+# Override what is considered "vendored" by GitHub's linguist:
+/deps/** linguist-vendored=false
+/lib/node_modules/** linguist-vendored=false
+/test/fixtures/** linguist-vendored=false
+/tools/** linguist-vendored=false
+
+# Override what is considered "documentation" by GitHub's linguist:
+/examples/** linguist-documentation=false
