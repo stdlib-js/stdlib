@@ -7,7 +7,7 @@
 
 # Override what is considered "vendored" by GitHub's linguist:
 /deps/** linguist-vendored=false
-/lib/node_modules/** linguist-vendored=false
+/lib/node_modules/** linguist-vendored=false linguist-generated=false
 test/fixtures/** linguist-vendored=false
 tools/** linguist-vendored=false
 
