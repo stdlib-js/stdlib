@@ -101,6 +101,12 @@ Once finished, you may need to reload the configuration file in existing shells.
 $ source ~/.bash_profile
 ```
 
+To verify that the [`NODE_PATH`][node-path] environment variable is properly set,
+
+``` bash
+$ echo $NODE_PATH
+```
+
 
 ## Installation
 
