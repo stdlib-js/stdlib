@@ -18,4 +18,4 @@ annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
 #   - Extract `bytes` and `filename` columns.
 # * `annotate_file_type`
 #   - Prefix each result with a file type.
-git ls-files | xargs ls -l | awk '{print $5 OFS $9}' | "${annotate_file_type}"
+git ls-files | xargs ls -l | awk '{print $5 OFS $9}' | awk -f "${annotate_file_type}"

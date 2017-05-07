@@ -29,4 +29,4 @@ $2 ~ /^total$/ {
 {
 	print $1 OFS $2
 }
-' | "${annotate_file_type}"
+' | awk -f "${annotate_file_type}"

@@ -24,4 +24,4 @@ annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
 #   - Extract `count` and `filename` columns.
 # * `annotate_file_type`
 #   - Prefix each result with a file type.
-git ls-files | xargs grep -c -v '^$'| sed 's/\(.*\):\([0-9]\{1,\}\)/\2 \1/' | awk '{print $1 OFS $2}' | "${annotate_file_type}"
+git ls-files | xargs grep -c -v '^$'| sed 's/\(.*\):\([0-9]\{1,\}\)/\2 \1/' | awk '{print $1 OFS $2}' | awk -f "${annotate_file_type}"

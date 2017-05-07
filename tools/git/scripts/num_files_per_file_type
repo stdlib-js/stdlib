@@ -25,7 +25,7 @@ annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
 #   - Compute totals.
 # * `sort -nr`
 #   - Sort in reverse numeric order.
-git ls-files | awk '{print 1 OFS $0}' | "${annotate_file_type}" | awk '
+git ls-files | awk '{print 1 OFS $0}' | awk -f "${annotate_file_type}" | awk '
 $3 ~ /README\.md$/ {
 	lines["README"] += 1
 }
