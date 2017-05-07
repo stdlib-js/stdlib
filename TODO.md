@@ -1564,6 +1564,8 @@
 
 381. [headless screenshots](https://github.com/schnerd/chrome-headless-screenshots)
 
+382. Generating [random integers](http://dimitri.xyz/random-ints-from-random-bits/)
+
 
 ---
 
