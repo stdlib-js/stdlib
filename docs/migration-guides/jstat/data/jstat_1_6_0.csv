@@ -1,4 +1,4 @@
-jstat-1.5.3,stdlib
+jstat-1.6.0,stdlib
 jStat,N/A
 rows,(planned)
 cols,(planned)
@@ -39,7 +39,9 @@ diff,(planned)
 mode,(planned)
 range,(planned)
 variance,(planned)
-stdev,(planned)
+pooledvariance,N/A
+stdev,(planned),
+pooledstdev,N/A
 meandev,(planned)
 skewness,(planned)
 kurtosis,(planned)
@@ -50,6 +52,15 @@ percentileOfScore,N/A
 historam,(planned)
 covariance,(planned)
 corrcoeff,(planned)
+arcsine,math/base/dist/arcsine
+arcsine.pdf,math/base/dist/arcsine/pdf
+arcsine.cdf,math/base/dist/arcsine/cdf
+arcsine.inv,math/base/dist/arcsine/quantile
+arcsine.mean,math/base/dist/arcsine/mean
+arcsine.median,math/base/dist/arcsine/median
+arcsine.mode,math/base/dist/arcsine/mode
+arcsine.sample,math/base/random/arcsine
+arcsine.variance,math/base/dist/arcsine/variance
 beta,math/base/dist/beta
 beta.pdf,math/base/dist/beta/pdf
 beta.cdf,math/base/dist/beta/cdf
@@ -150,6 +161,9 @@ studentt.median,math/base/dist/t/median
 studentt.mode,math/base/dist/t/mode
 studentt.sample,math/base/random/t
 studentt.variance,math/base/dist/t/variance
+tukey,(planned)
+tukey.cdf,(planned)
+tukey.inv,(planned)
 weibull,math/base/dist/weibull
 weibull.pdf,math/base/dist/weibull/pdf
 weibull.cdf,math/base/dist/weibull/cdf
@@ -210,6 +224,7 @@ add,(planned)
 subtract,(planned)
 divide,(planned)
 multiply,(planned)
+outer,(planned)
 dot,(planned)
 pow,(planned)
 exp,(planned)
@@ -246,6 +261,9 @@ ttest,math/statistics/ttest
 anovafscore,(planned)
 anovaftest,(planned)
 ftest,(planned)
+qscore,(planned)
+qtest,(planned)
+tukeyhsd,(planned)
 normalci,(planned)
 tci,(planned)
 oneSidedDifferenceOfProportions,N/A
