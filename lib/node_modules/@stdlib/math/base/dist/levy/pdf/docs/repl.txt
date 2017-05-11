@@ -1,0 +1,68 @@
+
+{{alias}}( x, μ, c )
+    Evaluates the probability density function (PDF) for a Lévy distribution
+    with location parameter `μ` and scale parameter `c` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 1.0 )
+    ~0.11
+    > y = {{alias}}( -1.0, 4.0, 2.0 )
+    0.0
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    // Negative scale parameter:
+    > y = {{alias}}( 2.0, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, c )
+    Returns a function for evaluating the probability density function (PDF) of
+    a Lévy distribution with location parameter `μ` and scale parameter `c`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    pdf: Function
+        Probability density function (PDF).
+
+    Examples
+    --------
+    > var myPDF = {{alias}}.factory( 10.0, 2.0 );
+    > var y = myPDF( 11.0 )
+    ~0.208
+
+    See Also
+    --------
+
