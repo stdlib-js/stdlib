@@ -1566,6 +1566,8 @@
 
 382. Generating [random integers](http://dimitri.xyz/random-ints-from-random-bits/)
 
+383. [mkdirp](https://github.com/sindresorhus/make-dir/blob/master/index.js)
+
 
 ---
 
