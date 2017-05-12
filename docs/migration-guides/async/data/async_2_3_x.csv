@@ -16,9 +16,9 @@ everySeries,utils/every-async
 filter,(maybe)
 filterLimit,(maybe)
 filterSeries,(maybe)
-groupBy,(maybe)
-groupByLimit,(maybe)
-groupBySeries,(maybe)
+groupBy,utils/group-by-async
+groupByLimit,utils/group-by-async
+groupBySeries,utils/group-by-async
 map,(planned)
 mapLimit,(planned)
 mapSeries,(planned)
