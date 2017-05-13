@@ -211,7 +211,7 @@ gammaln,math/base/special/gammaln
 gammap,math/base/special/gammainc
 lowRegGamma,math/base/special/gamma
 gammapinv,math/base/special/gammaincinv
-factorialln,(planned)
+factorialln,math/base/special/factorialln
 factorial,math/base/special/factorial
 combination,(planned)
 permutation,(planned)
@@ -255,7 +255,7 @@ cubic_spline,(planned)
 gauss_quadrature,(planned)
 PCA,(planned)
 zscore,(planned)
-ztest,(planned)
+ztest,math/statistics/ztest
 tscore,(planned)
 ttest,math/statistics/ttest
 anovafscore,(planned)
