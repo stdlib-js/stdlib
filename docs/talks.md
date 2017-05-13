@@ -57,7 +57,7 @@
 
 <div class="image" align="center">
     <a href="https://www.youtube.com/watch?v=sYF_pJI93tc">
-        <img src="" alt="Numeric Computing with Node.js at SFNode, May 2017">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5643e3103320f5356332193f5de4ec018834aa19/docs/assets/sfnode_may_2017_athan_reines.png" alt="Numeric Computing with Node.js at SFNode, May 2017">
     </a>
     <br>
 </div>
