@@ -41,6 +41,7 @@ For help developing stdlib, see the [development guide][stdlib-development].
 * [__Documentation__][stdlib-documentation]
 * [__Source code__][stdlib-source]
 * [__Code coverage__][stdlib-code-coverage]
+* [__FAQ__][stdlib-faq]
 
 
 ### External Resources
@@ -204,6 +205,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-homepage]: https://github.com/stdlib-js/stdlib
 [stdlib-documentation]: https://github.com/stdlib-js/stdlib
+[stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 [stdlib-source]: https://github.com/stdlib-js/stdlib
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
