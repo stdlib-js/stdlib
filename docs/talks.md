@@ -51,6 +51,17 @@
     <br>
 </div>
 
+### Numeric Computing with Node.js
+
+> [Athan Reines][kgryte], SFNode, May 2017
+
+<div class="image" align="center">
+    <a href="https://www.youtube.com/watch?v=sYF_pJI93tc">
+        <img src="" alt="Numeric Computing with Node.js at SFNode, May 2017">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
