@@ -51,6 +51,9 @@
     <br>
 </div>
 
+
+## 2017
+
 ### Numeric Computing with Node.js
 
 > [Athan Reines][kgryte], SFNode, May 2017
