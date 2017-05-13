@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Amazing! We are super excited that you have decided to develop stdlib, and we welcome you to the stdlib developer community. We have done our best to provide a complete environment for testing, benchmarking, documenting, and developing project code. And if you have any ideas as to how we can make it better, let us know!
+We are super excited that you have decided to develop stdlib, and we welcome you to the stdlib developer community. We have done our best to provide a complete environment for testing, benchmarking, documenting, and developing project code. And if you have any ideas as to how we can make it better, let us know!
 
 Before we begin, developing stdlib requires some setup and configuration. What follows is an overview of environment requirements and a sequence of steps for getting up and running with stdlib. We use [Git][git] for version control, and for most tasks, we use [GNU make][gnu-make] (the original task runner) to help us get things done quickly and effectively. For the most part, the project is able to internally manage dependencies for testing, benchmarking, and linting, so, once you follow the steps below, you should be ready to start developing!
 
