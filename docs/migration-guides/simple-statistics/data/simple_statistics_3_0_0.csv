@@ -53,7 +53,7 @@ ckmeans,(planned)
 equalIntervalBreaks,N/A
 chunk,(planned)
 mixin,(planned)
-chiSquaredGoodnessOfFit,math/statistics/chigof
+chiSquaredGoodnessOfFit,math/statistics/chi2gof
 epsilon,math/constants/float64-epsilon
 factorial,math/base/special/factorial
 uniqueCountSorted,N/A
