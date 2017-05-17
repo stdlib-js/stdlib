@@ -65,7 +65,7 @@ def benchmark():
 
     print_version()
 
-    for i in xrange(3):
+    for i in xrange(repeats):
         print("# python::" + name)
         elapsed = t.timeit(number=iterations)
         print_results(elapsed)
