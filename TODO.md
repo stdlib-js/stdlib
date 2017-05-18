@@ -128,6 +128,7 @@
     * [seed-random](https://github.com/ForbesLindesay/seed-random)
     * [random-js](https://github.com/ckknight/random-js)
     * [seedrandom](https://github.com/davidbau/seedrandom)
+    * [xsrand](https://github.com/davidbau/xsrand)
     * [modulo bias](http://stackoverflow.com/questions/10984974/why-do-people-say-there-is-modulo-bias-when-using-a-random-number-generator)
     * [diehard tests](https://github.com/reubenhwk/diehard)
     * [dieharder](https://github.com/seehuhn/dieharder)
