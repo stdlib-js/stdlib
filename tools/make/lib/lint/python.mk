@@ -8,6 +8,15 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/pylint.mk
 
 # TARGETS #
 
+# Check for linters.
+#
+# This target checks that Python linters exist.
+
+check-python-linters: pylint-check pycodestyle-check pydocstyle-check
+
+.PHONY: check-python-linters
+
+
 # Check code quality.
 #
 # This target lints all Python code.
