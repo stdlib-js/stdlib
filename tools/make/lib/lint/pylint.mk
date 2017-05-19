@@ -9,7 +9,6 @@
 # [1]: https://github.com/PyCQA/pylint
 
 PYLINT ?= pylint
-PYLINT := $(shell command -v $(PYLINT) 2> /dev/null)
 
 # Define the path to the Pylint configuration file:
 PYLINT_CONF ?= $(CONFIG_DIR)/pylint/.pylintrc
@@ -28,9 +27,14 @@ PYLINT_FLAGS ?= \
 # This target checks if Pylint is installed.
 
 pylint-check:
-ifndef PYLINT
-	$(QUIET) echo "Pylint is not installed. Please install Pylint and try again." && exit 1
+ifeq (, $(shell command -v $(PYLINT) 2> /dev/null))
+	$(QUIET) echo ''
+	$(QUIET) echo 'Pylint is not installed. Please install Pylint and try again.'
+	$(QUIET) echo 'For install instructions, see https://github.com/PyCQA/pylint.'
+	$(QUIET) echo ''
+	$(QUIET) exit 1
 else
+	$(QUIET) echo 'Pylint is installed.'
 	$(QUIET) exit 0
 endif
 
