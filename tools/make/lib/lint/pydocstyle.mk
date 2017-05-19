@@ -24,7 +24,7 @@ PYDOCSTYLE_FLAGS ?= \
 #
 # This target checks if pydocstyle is installed.
 
-pydocstyle-check:
+check-pydocstyle:
 ifeq (, $(shell command -v $(PYDOCSTYLE) 2>/dev/null))
 	$(QUIET) echo ''
 	$(QUIET) echo 'pydocstyle is not installed. Please install pydocstyle and try again.'
@@ -36,13 +36,13 @@ else
 	$(QUIET) exit 0
 endif
 
-.PHONY: pydocstyle-check
+.PHONY: check-pydocstyle
 
 # Check source docstring style.
 #
 # This target lints only Python source files.
 
-pydocstyle-src:
+pydocstyle-src: check-pydocstyle
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -56,7 +56,7 @@ pydocstyle-src:
 #
 # This target lints only Python test fixture files.
 
-pydocstyle-tests-fixtures:
+pydocstyle-tests-fixtures: check-pydocstyle
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -70,7 +70,7 @@ pydocstyle-tests-fixtures:
 #
 # This target lints only Python example files.
 
-pydocstyle-examples:
+pydocstyle-examples: check-pydocstyle
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -84,7 +84,7 @@ pydocstyle-examples:
 #
 # This target lints only Python benchmark files.
 
-pydocstyle-benchmarks:
+pydocstyle-benchmarks: check-pydocstyle
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -98,7 +98,7 @@ pydocstyle-benchmarks:
 #
 # This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
-pydocstyle-files:
+pydocstyle-files: check-pydocstyle
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
