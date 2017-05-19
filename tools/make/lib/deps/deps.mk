@@ -13,7 +13,6 @@ DEPS_CHECKSUMS_DIR ?= $(DEPS_DIR)/checksums
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
-include $(TOOLS_MAKE_LIB_DIR)/deps/python.mk
 
 
 # TARGETS #
@@ -38,7 +37,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-python
+install-deps: install-deps-boost install-deps-openblas install-deps-emsdk
 
 .PHONY: install-deps
 
