@@ -193,8 +193,8 @@ indent-after-paren=4
 # tab).
 indent-string='    '
 
-# Maximum number of characters on a single line.
-max-line-length=100
+# Maximum number of characters on a single line. (default: 100)
+max-line-length=300
 
 # Maximum number of lines in a module
 max-module-lines=1000
@@ -378,8 +378,8 @@ max-public-methods=20
 # Maximum number of return / yield for function / method body
 max-returns=6
 
-# Maximum number of statements in function / method body
-max-statements=50
+# Maximum number of statements in function / method body (default: 50)
+max-statements=100
 
 # Minimum number of public methods for a class (see R0903).
 min-public-methods=2
