@@ -69,6 +69,8 @@ Desktop.ini
 .eslintrc*
 .eslintignore
 
+.pylintrc
+
 .travis.yml
 circle.yml
 appveyor.yml
