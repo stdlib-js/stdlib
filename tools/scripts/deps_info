@@ -137,6 +137,39 @@ else
 fi
 echo '' >&2
 
+PYLINT=$(command -v pylint 2>/dev/null)
+echo '-----'
+echo 'Pylint:' >&2
+echo '' >&2
+if [[ -x "${PYLINT}" ]]; then
+	"${PYLINT}" --version >&2
+else
+	echo 'Unable to detect Pylint.' >&2
+fi
+echo '' >&2
+
+PYCODESTYLE=$(command -v pycodestyle 2>/dev/null)
+echo '-----'
+echo 'pycodestyle:' >&2
+echo '' >&2
+if [[ -x "${PYCODESTYLE}" ]]; then
+	"${PYCODESTYLE}" --version >&2
+else
+	echo 'Unable to detect pycodestyle.' >&2
+fi
+echo '' >&2
+
+PYDOCSTYLE=$(command -v pydocstyle 2>/dev/null)
+echo '-----'
+echo 'pydocstyle:' >&2
+echo '' >&2
+if [[ -x "${PYDOCSTYLE}" ]]; then
+	"${PYDOCSTYLE}" --version >&2
+else
+	echo 'Unable to detect pydocstyle.' >&2
+fi
+echo '' >&2
+
 PYTHON=$(command -v python 2>/dev/null)
 echo '-----'
 echo 'Python:' >&2
