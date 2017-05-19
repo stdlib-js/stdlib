@@ -1,5 +1,5 @@
-pylint
-pycodestyle
-pydocstyle
-numpy
-scipy
+pylint>=1.7.1
+pycodestyle>=2.3.1
+pydocstyle>=2.0.0
+numpy>=1.8.2
+scipy>=0.17.0
