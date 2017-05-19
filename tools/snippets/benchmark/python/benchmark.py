@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 """Benchmark TODO."""
 
+from __future__ import print_function
 import timeit
 
-name = "TODO"
-repeats = 3
-iterations = 1000000
+NAME = "TODO"
+REPEATS = 3
+ITERATIONS = 1000000
 
 
 def print_version():
@@ -46,10 +47,10 @@ def print_results(elapsed):
     ```
     """
 
-    rate = iterations / elapsed
+    rate = ITERATIONS / elapsed
 
     print("  ---")
-    print("  iterations: " + str(iterations))
+    print("  iterations: " + str(ITERATIONS))
     print("  elapsed: " + str(elapsed))
     print("  rate: " + str(rate))
     print("  ...")
@@ -65,13 +66,13 @@ def benchmark():
 
     print_version()
 
-    for i in xrange(repeats):
-        print("# python::" + name)
-        elapsed = t.timeit(number=iterations)
+    for i in xrange(REPEATS):
+        print("# python::" + NAME)
+        elapsed = t.timeit(number=ITERATIONS)
         print_results(elapsed)
         print("ok " + str(i+1) + " benchmark finished")
 
-    print_summary(repeats, repeats)
+    print_summary(REPEATS, REPEATS)
 
 
 def main():
