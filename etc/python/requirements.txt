@@ -1,0 +1,5 @@
+pylint
+pycodestyle
+pydocstyle
+numpy
+scipy
