@@ -70,6 +70,9 @@ Desktop.ini
 .eslintignore
 
 .pylintrc
+.pycodestyle
+.pydocstyle
+setup.py
 
 .travis.yml
 circle.yml

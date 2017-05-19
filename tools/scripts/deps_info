@@ -16,7 +16,7 @@ usage() {
 
 # MAIN #
 
-CLANG=$(which clang 2>/dev/null)
+CLANG=$(command -v clang 2>/dev/null)
 echo '-----'
 echo 'clang:' >&2
 echo '' >&2
@@ -27,7 +27,7 @@ else
 fi
 echo '' >&2
 
-CMAKE=$(which cmake 2>/dev/null)
+CMAKE=$(command -v cmake 2>/dev/null)
 echo '-----'
 echo 'CMake:' >&2
 echo '' >&2
@@ -38,7 +38,7 @@ else
 fi
 echo '' >&2
 
-GCC=$(which gcc 2>/dev/null)
+GCC=$(command -v gcc 2>/dev/null)
 echo '-----'
 echo 'gcc:' >&2
 echo '' >&2
@@ -49,7 +49,7 @@ else
 fi
 echo '' >&2
 
-GFORTRAN=$(which gfortran 2>/dev/null)
+GFORTRAN=$(command -v gfortran 2>/dev/null)
 echo '-----'
 echo 'gfortran:' >&2
 echo '' >&2
@@ -60,7 +60,7 @@ else
 fi
 echo '' >&2
 
-GIT=$(which git 2>/dev/null)
+GIT=$(command -v git 2>/dev/null)
 echo '-----'
 echo 'git:' >&2
 echo '' >&2
@@ -71,7 +71,7 @@ else
 fi
 echo '' >&2
 
-GNU_MAKE=$(which make 2>/dev/null)
+GNU_MAKE=$(command -v make 2>/dev/null)
 echo '-----'
 echo 'GNU make:' >&2
 echo '' >&2
@@ -82,7 +82,7 @@ else
 fi
 echo '' >&2
 
-GPP=$(which g++ 2>/dev/null)
+GPP=$(command -v g++ 2>/dev/null)
 echo '-----'
 echo 'g++:' >&2
 echo '' >&2
@@ -93,7 +93,7 @@ else
 fi
 echo '' >&2
 
-JULIA=$(which julia 2>/dev/null)
+JULIA=$(command -v julia 2>/dev/null)
 echo '-----'
 echo 'Julia:' >&2
 echo '' >&2
@@ -104,7 +104,7 @@ else
 fi
 echo '' >&2
 
-NODEJS=$(which node 2>/dev/null)
+NODEJS=$(command -v node 2>/dev/null)
 echo '-----'
 echo 'Node.js:' >&2
 echo '' >&2
@@ -115,7 +115,7 @@ else
 fi
 echo '' >&2
 
-NPM=$(which npm 2>/dev/null)
+NPM=$(command -v npm 2>/dev/null)
 echo '-----'
 echo 'npm:' >&2
 echo '' >&2
@@ -126,7 +126,7 @@ else
 fi
 echo '' >&2
 
-PANDOC=$(which pandoc 2>/dev/null)
+PANDOC=$(command -v pandoc 2>/dev/null)
 echo '-----'
 echo 'pandoc:' >&2
 echo '' >&2
@@ -137,7 +137,40 @@ else
 fi
 echo '' >&2
 
-PYTHON=$(which python 2>/dev/null)
+PYLINT=$(command -v pylint 2>/dev/null)
+echo '-----'
+echo 'Pylint:' >&2
+echo '' >&2
+if [[ -x "${PYLINT}" ]]; then
+	"${PYLINT}" --version >&2
+else
+	echo 'Unable to detect Pylint.' >&2
+fi
+echo '' >&2
+
+PYCODESTYLE=$(command -v pycodestyle 2>/dev/null)
+echo '-----'
+echo 'pycodestyle:' >&2
+echo '' >&2
+if [[ -x "${PYCODESTYLE}" ]]; then
+	"${PYCODESTYLE}" --version >&2
+else
+	echo 'Unable to detect pycodestyle.' >&2
+fi
+echo '' >&2
+
+PYDOCSTYLE=$(command -v pydocstyle 2>/dev/null)
+echo '-----'
+echo 'pydocstyle:' >&2
+echo '' >&2
+if [[ -x "${PYDOCSTYLE}" ]]; then
+	"${PYDOCSTYLE}" --version >&2
+else
+	echo 'Unable to detect pydocstyle.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(command -v python 2>/dev/null)
 echo '-----'
 echo 'Python:' >&2
 echo '' >&2
@@ -148,7 +181,7 @@ else
 fi
 echo '' >&2
 
-R=$(which r 2>/dev/null)
+R=$(command -v r 2>/dev/null)
 echo '-----'
 echo 'R:' >&2
 echo '' >&2

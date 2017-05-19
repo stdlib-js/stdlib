@@ -51,7 +51,7 @@ lint-examples: lint-javascript-examples
 #
 # This target lints only benchmark files.
 
-lint-benchmarks: lint-javascript-benchmarks
+lint-benchmarks: lint-javascript-benchmarks lint-python-benchmarks
 
 .PHONY: lint-benchmarks
 

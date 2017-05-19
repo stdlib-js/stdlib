@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find python:
-PYTHON=$(which python 2>/dev/null)
+PYTHON=$(command -v python 2>/dev/null)
 
 
 # FUNCTIONS #

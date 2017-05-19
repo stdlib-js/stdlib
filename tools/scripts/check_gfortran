@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find gfortran:
-GFORTRAN=$(which gfortran 2>/dev/null)
+GFORTRAN=$(command -v gfortran 2>/dev/null)
 
 
 # FUNCTIONS #

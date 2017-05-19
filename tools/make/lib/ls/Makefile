@@ -94,11 +94,53 @@ R_EXAMPLES_PATTERN ?= *.R
 EXAMPLES_FILTER ?= .*/.*
 
 
+# Define a filename pattern for C files:
+C_PATTERN ?= *.c
+
+# Define a filepath pattern for C files:
+C_FILTER ?= .*/.*
+
+
+# Define a filename pattern for Fortran files:
+FORTRAN_PATTERN ?= *.f
+
+# Define a filepath pattern for Fortran files:
+FORTRAN_FILTER ?= .*/.*
+
+
+# Define a filename pattern for JavaScript files:
+JAVASCRIPT_PATTERN ?= *.js
+
+# Define a filepath pattern for JavaScript files:
+JAVASCRIPT_FILTER ?= .*/.*
+
+
+# Define a filename pattern for Julia files:
+JULIA_PATTERN ?= *.jl
+
+# Define a filepath pattern for Julia files:
+JULIA_FILTER ?= .*/.*
+
+
 # Define a filename pattern for Markdown files:
 MARKDOWN_PATTERN ?= *.md
 
 # Define a filepath pattern for Markdown files:
 MARKDOWN_FILTER ?= .*/.*
+
+
+# Define a filename pattern for Python files:
+PYTHON_PATTERN ?= *.py
+
+# Define a filepath pattern for Python files:
+PYTHON_FILTER ?= .*/.*
+
+
+# Define a filename pattern for R files:
+R_PATTERN ?= *.R
+
+# Define a filepath pattern for R files:
+R_FILTER ?= .*/.*
 
 
 # Define a filepath pattern for packages:
@@ -132,7 +174,13 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/examples_c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_r.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/fortran.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/javascript.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/python.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_addons.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_clis.mk

@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find Julia:
-JULIA=$(which julia 2>/dev/null)
+JULIA=$(command -v julia 2>/dev/null)
 
 
 # FUNCTIONS #

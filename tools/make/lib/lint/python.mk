@@ -8,6 +8,15 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/pylint.mk
 
 # TARGETS #
 
+# Check for linters.
+#
+# This target checks that Python linters exist.
+
+check-python-linters: check-pylint check-pycodestyle check-pydocstyle
+
+.PHONY: check-python-linters
+
+
 # Check code quality.
 #
 # This target lints all Python code.
@@ -55,7 +64,7 @@ lint-python-benchmarks: pylint-benchmarks pycodestyle-benchmarks pydocstyle-benc
 
 # Check code quality.
 #
-# This target lints Python files. Note that we expect `$FILES` to be a Python file list.
+# This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
 lint-python-files: pylint-files pycodestyle-files pydocstyle-files
 

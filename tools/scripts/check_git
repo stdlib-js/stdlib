@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find Git:
-GIT=$(which git 2>/dev/null)
+GIT=$(command -v git 2>/dev/null)
 
 
 # FUNCTIONS #

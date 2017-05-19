@@ -22,11 +22,29 @@ PYLINT_FLAGS ?= \
 
 # TARGETS #
 
+# Check for Pylint.
+#
+# This target checks if Pylint is installed.
+
+check-pylint:
+ifeq (, $(shell command -v $(PYLINT) 2>/dev/null))
+	$(QUIET) echo ''
+	$(QUIET) echo 'Pylint is not installed. Please install Pylint and try again.'
+	$(QUIET) echo 'For install instructions, see https://github.com/PyCQA/pylint.'
+	$(QUIET) echo ''
+	$(QUIET) exit 1
+else
+	$(QUIET) echo 'Pylint is installed.'
+	$(QUIET) exit 0
+endif
+
+.PHONY: check-pylint
+
 # Check source code quality.
 #
 # This target lints only Python source files.
 
-pylint-src:
+pylint-src: check-pylint
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -40,7 +58,7 @@ pylint-src:
 #
 # This target lints only Python test fixture files.
 
-pylint-tests-fixtures:
+pylint-tests-fixtures: check-pylint
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -54,7 +72,7 @@ pylint-tests-fixtures:
 #
 # This target lints only Python example files.
 
-pylint-examples:
+pylint-examples: check-pylint
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -68,7 +86,7 @@ pylint-examples:
 #
 # This target lints only Python benchmark files.
 
-pylint-benchmarks:
+pylint-benchmarks: check-pylint
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -80,10 +98,10 @@ pylint-benchmarks:
 
 # Check Python code quality.
 #
-# This target lints Python files. Note that we expect `$FILES` to be a Python file list.
+# This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
-pylint-files:
-	$(QUIET) for file in $(FILES); do \
+pylint-files: check-pylint
+	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
