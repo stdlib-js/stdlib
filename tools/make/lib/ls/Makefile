@@ -78,6 +78,18 @@ BENCHMARKS_FILTER ?= .*/.*
 # Define a filename pattern for example files:
 EXAMPLES_PATTERN ?= *.js
 
+# Define a filename pattern for C example files:
+C_EXAMPLES_PATTERN ?= *.c
+
+# Define a filename pattern for Julia example files:
+JULIA_EXAMPLES_PATTERN ?= *.jl
+
+# Define a filename pattern for Python example files:
+PYTHON_EXAMPLES_PATTERN ?= *.py
+
+# Define a filename pattern for R example files:
+R_EXAMPLES_PATTERN ?= *.R
+
 # Define a filepath pattern for example files:
 EXAMPLES_FILTER ?= .*/.*
 
