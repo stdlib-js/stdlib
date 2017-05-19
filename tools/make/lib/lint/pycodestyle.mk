@@ -20,6 +20,24 @@ PYCODESTYLE_FLAGS ?= \
 
 # TARGETS #
 
+# Check for pycodestyle.
+#
+# This target checks if pycodestyle is installed.
+
+pycodestyle-check:
+ifeq (, $(shell command -v $(PYCODESTYLE) 2>/dev/null))
+	$(QUIET) echo ''
+	$(QUIET) echo 'pycodestyle is not installed. Please install pycodestyle and try again.'
+	$(QUIET) echo 'For install instructions, see https://github.com/PyCQA/pycodestyle.'
+	$(QUIET) echo ''
+	$(QUIET) exit 1
+else
+	$(QUIET) echo 'pycodestyle is installed.'
+	$(QUIET) exit 0
+endif
+
+.PHONY: pycodestyle-check
+
 # Check source code style.
 #
 # This target lints only Python source files.
