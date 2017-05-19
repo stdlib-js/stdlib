@@ -1,6 +1,7 @@
 
 # DEPENDENCIES #
 
+include $(TOOLS_MAKE_LIB_DIR)/lint/pycodestyle.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/pylint.mk
 
 
@@ -21,6 +22,7 @@ lint-python: lint-python-src lint-python-tests-fixtures lint-python-examples lin
 
 lint-python-src:
 	$(QUIET) $(MAKE) -f $(this_file) pylint-src
+	$(QUIET) $(MAKE) -f $(this_file) pycodestyle-src
 
 .PHONY: lint-python-src
 
@@ -31,6 +33,7 @@ lint-python-src:
 
 lint-python-tests-fixtures:
 	$(QUIET) $(MAKE) -f $(this_file) pylint-tests-fixtures
+	$(QUIET) $(MAKE) -f $(this_file) pycodestyle-tests-fixtures
 
 .PHONY: lint-python-tests-fixtures
 
@@ -41,6 +44,7 @@ lint-python-tests-fixtures:
 
 lint-python-examples:
 	$(QUIET) $(MAKE) -f $(this_file) pylint-examples
+	$(QUIET) $(MAKE) -f $(this_file) pycodestyle-examples
 
 .PHONY: lint-python-examples
 
@@ -51,6 +55,7 @@ lint-python-examples:
 
 lint-python-benchmarks:
 	$(QUIET) $(MAKE) -f $(this_file) pylint-benchmarks
+	$(QUIET) $(MAKE) -f $(this_file) pycodestyle-benchmarks
 
 .PHONY: lint-python-benchmarks
 
@@ -61,6 +66,7 @@ lint-python-benchmarks:
 
 lint-python-files:
 	$(QUIET) $(MAKE) -f $(this_file) pylint-files
+	$(QUIET) $(MAKE) -f $(this_file) pycodestyle-files
 
 .PHONY: lint-python-files
 
