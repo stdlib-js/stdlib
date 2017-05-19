@@ -12,7 +12,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/pylint.mk
 #
 # This target checks that Python linters exist.
 
-check-python-linters: pylint-check pycodestyle-check pydocstyle-check
+check-python-linters: check-pylint pycodestyle-check pydocstyle-check
 
 .PHONY: check-python-linters
 
