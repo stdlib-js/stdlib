@@ -94,11 +94,53 @@ R_EXAMPLES_PATTERN ?= *.R
 EXAMPLES_FILTER ?= .*/.*
 
 
+# Define a filename pattern for C files:
+C_PATTERN ?= *.c
+
+# Define a filepath pattern for C files:
+C_FILTER ?= .*/.*
+
+
+# Define a filename pattern for Fortran files:
+FORTRAN_PATTERN ?= *.f
+
+# Define a filepath pattern for Fortran files:
+FORTRAN_FILTER ?= .*/.*
+
+
+# Define a filename pattern for JavaScript files:
+JAVASCRIPT_PATTERN ?= *.js
+
+# Define a filepath pattern for JavaScript files:
+JAVASCRIPT_FILTER ?= .*/.*
+
+
+# Define a filename pattern for Julia files:
+JULIA_PATTERN ?= *.jl
+
+# Define a filepath pattern for Julia files:
+JULIA_FILTER ?= .*/.*
+
+
 # Define a filename pattern for Markdown files:
 MARKDOWN_PATTERN ?= *.md
 
 # Define a filepath pattern for Markdown files:
 MARKDOWN_FILTER ?= .*/.*
+
+
+# Define a filename pattern for Python files:
+PYTHON_PATTERN ?= *.py
+
+# Define a filepath pattern for Python files:
+PYTHON_FILTER ?= .*/.*
+
+
+# Define a filename pattern for R files:
+R_PATTERN ?= *.R
+
+# Define a filepath pattern for R files:
+R_FILTER ?= .*/.*
 
 
 # Define a filepath pattern for packages:
