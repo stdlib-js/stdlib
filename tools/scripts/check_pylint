@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether Pylint is installed.
+#
+# Usage: check_pylint
+#
+
+# VARIABLES #
+
+# Find pylint:
+PYLINT=$(command -v pylint 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_pylint' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${PYLINT}" ]] && "${PYLINT}" --version >/dev/null; then
+	echo 'Pylint is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please download Pylint (https://github.com/PyCQA/pylint). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
