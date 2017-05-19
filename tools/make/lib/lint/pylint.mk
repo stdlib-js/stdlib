@@ -27,7 +27,7 @@ PYLINT_FLAGS ?= \
 # This target checks if Pylint is installed.
 
 pylint-check:
-ifeq (, $(shell command -v $(PYLINT) 2> /dev/null))
+ifeq (, $(shell command -v $(PYLINT) 2>/dev/null))
 	$(QUIET) echo ''
 	$(QUIET) echo 'Pylint is not installed. Please install Pylint and try again.'
 	$(QUIET) echo 'For install instructions, see https://github.com/PyCQA/pylint.'
