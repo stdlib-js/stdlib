@@ -176,6 +176,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/examples_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/fortran.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/python.mk
