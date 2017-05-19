@@ -27,15 +27,18 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [Julia][julia]: language for technical computing (version `>= 0.4`)
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
-* [SciPy][scipy]: Python library containing numerical routines (version `>=0.17.0`)
-* [NumPy][numpy]: general purpose array-processing library for Python (version `>=1.8.2`)
-* [Pylint][pylint]: Python source code analyzer (version `>= 1.7.1`)
-* [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
-* [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.3.1`)
 * [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
 * [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 * [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
 * [pandoc][pandoc]: universal document converter (version `>= 1.18`)
+
+Assuming the requisite language is present on the host machine, the following language libraries can be automatically downloaded and installed using `make` (see [installation](#installation)):
+
+* [NumPy][numpy]: general purpose array-processing library for Python (version `>= 1.8.2`)
+* [SciPy][scipy]: Python library containing numerical routines (version `>= 0.17.0`)
+* [Pylint][pylint]: Python source code analyzer (version `>= 1.7.1`)
+* [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
+* [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
 
 The following vendor libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -121,13 +124,19 @@ To install development dependencies,
 $ make install
 ```
 
-To install vendor dependencies,
+To install vendor dependencies (__optional__),
 
 ``` bash
 $ make install-deps
 ```
 
 While vendor dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numeric computation facilities. Note, however, that installing vendor dependencies may take considerable time (>30 minutes).
+
+To install language dependencies (__optional__),
+
+``` bash
+$ make install-lang-deps
+```
 
 To initialize the development environment,
 

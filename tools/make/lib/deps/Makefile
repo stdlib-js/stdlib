@@ -9,6 +9,7 @@ DEPS_INFO ?= $(TOOLS_DIR)/scripts/deps_info
 
 include $(TOOLS_MAKE_LIB_DIR)/deps/check.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/deps.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/lang.mk
 
 
 # TARGETS #
