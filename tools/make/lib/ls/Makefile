@@ -113,6 +113,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/sources_c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_python.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/sources_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
