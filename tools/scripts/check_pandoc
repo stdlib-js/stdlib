@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find pandoc:
-PANDOC=$(which pandoc 2>/dev/null)
+PANDOC=$(command -v pandoc 2>/dev/null)
 
 
 # FUNCTIONS #

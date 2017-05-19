@@ -8,7 +8,7 @@
 # VARIABLES #
 
 # Find R:
-R=$(which r 2>/dev/null)
+R=$(command -v r 2>/dev/null)
 
 
 # FUNCTIONS #
