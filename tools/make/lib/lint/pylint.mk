@@ -9,6 +9,7 @@
 # [1]: https://github.com/PyCQA/pylint
 
 PYLINT ?= pylint
+PYLINT := $(shell command -v $(PYLINT) 2> /dev/null)
 
 # Define the path to the Pylint configuration file:
 PYLINT_CONF ?= $(CONFIG_DIR)/pylint/.pylintrc
@@ -22,11 +23,24 @@ PYLINT_FLAGS ?= \
 
 # TARGETS #
 
+# Check for Pylint.
+#
+# This target checks if Pylint is installed.
+
+pylint-check:
+ifndef PYLINT
+	$(QUIET) echo "Pylint is not installed. Please install Pylint and try again." && exit 1
+else
+	$(QUIET) exit 0
+endif
+
+.PHONY: pylint-check
+
 # Check source code quality.
 #
 # This target lints only Python source files.
 
-pylint-src:
+pylint-src: pylint-check
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -40,7 +54,7 @@ pylint-src:
 #
 # This target lints only Python test fixture files.
 
-pylint-tests-fixtures:
+pylint-tests-fixtures: pylint-check
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -54,7 +68,7 @@ pylint-tests-fixtures:
 #
 # This target lints only Python example files.
 
-pylint-examples:
+pylint-examples: pylint-check
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -68,7 +82,7 @@ pylint-examples:
 #
 # This target lints only Python benchmark files.
 
-pylint-benchmarks:
+pylint-benchmarks: pylint-check
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -82,7 +96,7 @@ pylint-benchmarks:
 #
 # This target lints Python files. Note that we expect `$FILES` to be a Python file list.
 
-pylint-files:
+pylint-files: pylint-check
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
