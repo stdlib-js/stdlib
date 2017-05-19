@@ -11,7 +11,6 @@ ITERATIONS = 1000000
 
 def print_version():
     """Print the TAP version."""
-
     print("TAP version 13")
 
 
@@ -24,7 +23,6 @@ def print_summary(total, passing):
     * `passing`: number of passing tests
 
     """
-
     print("#")
     print("1.." + str(total))  # TAP plan
     print("# total " + str(total))
@@ -46,7 +44,6 @@ def print_results(elapsed):
     python> print_results(0.131009101868)
     ```
     """
-
     rate = ITERATIONS / elapsed
 
     print("  ---")
@@ -58,7 +55,6 @@ def print_results(elapsed):
 
 def benchmark():
     """Run the benchmark and print benchmark results."""
-
     setup = "from math import TODO; from random import random;"
     stmt = "y = TODO(random())"
 
