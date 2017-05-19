@@ -136,9 +136,6 @@ JULIA ?= julia
 # Define the command for `python`:
 PYTHON ?= python
 
-# Define the command for `pip`:
-PIP ?= pip
-
 # Define the command for `r`:
 R ?= r
 
