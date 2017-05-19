@@ -24,7 +24,7 @@ PYCODESTYLE_FLAGS ?= \
 #
 # This target checks if pycodestyle is installed.
 
-pycodestyle-check:
+check-pycodestyle:
 ifeq (, $(shell command -v $(PYCODESTYLE) 2>/dev/null))
 	$(QUIET) echo ''
 	$(QUIET) echo 'pycodestyle is not installed. Please install pycodestyle and try again.'
@@ -36,13 +36,13 @@ else
 	$(QUIET) exit 0
 endif
 
-.PHONY: pycodestyle-check
+.PHONY: check-pycodestyle
 
 # Check source code style.
 #
 # This target lints only Python source files.
 
-pycodestyle-src:
+pycodestyle-src: check-pycodestyle
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -56,7 +56,7 @@ pycodestyle-src:
 #
 # This target lints only Python test fixture files.
 
-pycodestyle-tests-fixtures:
+pycodestyle-tests-fixtures: check-pycodestyle
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -70,7 +70,7 @@ pycodestyle-tests-fixtures:
 #
 # This target lints only Python example files.
 
-pycodestyle-examples:
+pycodestyle-examples: check-pycodestyle
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -84,7 +84,7 @@ pycodestyle-examples:
 #
 # This target lints only Python benchmark files.
 
-pycodestyle-benchmarks:
+pycodestyle-benchmarks: check-pycodestyle
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -98,7 +98,7 @@ pycodestyle-benchmarks:
 #
 # This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
-pycodestyle-files:
+pycodestyle-files: check-pycodestyle
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
