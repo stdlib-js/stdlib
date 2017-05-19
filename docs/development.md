@@ -28,7 +28,7 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
 * [SciPy][scipy]: Python library containing numerical routines (version `>=0.17.0`)
-* [NumPy][numpy]: general purpose array-processing library for Python (version `>=1.8.2`)
+* [Numpy][numpy]: general purpose array-processing library for Python (version `>=1.8.2`)
 * [Pylint][pylint]: Python source code analyzer (version `>= 1.7.1`)
 * [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
 * [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.3.1`)
