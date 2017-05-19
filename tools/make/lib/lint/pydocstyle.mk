@@ -96,10 +96,10 @@ pydocstyle-benchmarks:
 
 # Check Python docstring style.
 #
-# This target lints Python files. Note that we expect `$FILES` to be a Python file list.
+# This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
 pydocstyle-files:
-	$(QUIET) for file in $(FILES); do \
+	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \

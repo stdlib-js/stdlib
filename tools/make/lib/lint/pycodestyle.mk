@@ -96,10 +96,10 @@ pycodestyle-benchmarks:
 
 # Check Python code style.
 #
-# This target lints Python files. Note that we expect `$FILES` to be a Python file list.
+# This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
 pycodestyle-files:
-	$(QUIET) for file in $(FILES); do \
+	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
