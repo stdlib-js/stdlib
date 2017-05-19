@@ -20,6 +20,24 @@ PYDOCSTYLE_FLAGS ?= \
 
 # TARGETS #
 
+# Check for pydocstyle.
+#
+# This target checks if pydocstyle is installed.
+
+pydocstyle-check:
+ifeq (, $(shell command -v $(PYDOCSTYLE) 2>/dev/null))
+	$(QUIET) echo ''
+	$(QUIET) echo 'pydocstyle is not installed. Please install pydocstyle and try again.'
+	$(QUIET) echo 'For install instructions, see https://github.com/PyCQA/pydocstyle.'
+	$(QUIET) echo ''
+	$(QUIET) exit 1
+else
+	$(QUIET) echo 'pydocstyle is installed.'
+	$(QUIET) exit 0
+endif
+
+.PHONY: pydocstyle-check
+
 # Check source docstring style.
 #
 # This target lints only Python source files.
