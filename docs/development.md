@@ -27,6 +27,9 @@ While not required to run stdlib, the following dependencies __may__ be required
 * [Julia][julia]: language for technical computing (version `>= 0.4`)
 * [R][r]: language for statistical computing (version `>= 3.0.0`)
 * [Python][python]: general purpose language (version `>= 2.7`)
+* [Pylint][pylint]: Python source code analyzer (version `>= 1.7.1`)
+* [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
+* [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.3.1`)
 * [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
 * [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 * [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
@@ -276,6 +279,9 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [julia]: http://julialang.org/
 [r]: https://www.r-project.org/
 [python]: https://www.python.org/
+[pylint]: https://github.com/PyCQA/pylint
+[pycodestyle]: https://github.com/PyCQA/pycodestyle
+[pydocstyle]: https://github.com/PyCQA/pydocstyle
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
 [gfortran]: https://gcc.gnu.org/fortran/
