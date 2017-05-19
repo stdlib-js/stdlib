@@ -177,6 +177,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/examples_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/python.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_addons.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_clis.mk
