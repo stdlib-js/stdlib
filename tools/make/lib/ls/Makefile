@@ -103,6 +103,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/sources_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
