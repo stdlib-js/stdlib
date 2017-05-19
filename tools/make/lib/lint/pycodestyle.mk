@@ -11,7 +11,7 @@
 PYCODESTYLE ?= pycodestyle
 
 # Define the path to the pycodestyle configuration file:
-PYCODESTYLE_CONF ?= $(CONFIG_DIR)/pycodestyle/setup.cfg
+PYCODESTYLE_CONF ?= $(CONFIG_DIR)/pycodestyle/.pycodestyle
 
 # Define the command-line options to use when invoking the pycodestyle executable:
 PYCODESTYLE_FLAGS ?= \
