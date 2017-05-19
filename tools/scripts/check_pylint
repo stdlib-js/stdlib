@@ -7,7 +7,7 @@
 
 # VARIABLES #
 
-# Find pylint:
+# Find Pylint:
 PYLINT=$(command -v pylint 2>/dev/null)
 
 
