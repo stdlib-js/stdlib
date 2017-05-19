@@ -17,6 +17,7 @@ FIND_C_FLAGS ?= \
 	-type f \
 	-name "$(C_PATTERN)" \
 	-regex "$(C_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \

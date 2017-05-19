@@ -17,6 +17,7 @@ FIND_JAVASCRIPT_FLAGS ?= \
 	-type f \
 	-name "$(JAVASCRIPT_PATTERN)" \
 	-regex "$(JAVASCRIPT_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \

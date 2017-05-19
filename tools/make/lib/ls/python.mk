@@ -17,6 +17,7 @@ FIND_PYTHON_FLAGS ?= \
 	-type f \
 	-name "$(PYTHON_PATTERN)" \
 	-regex "$(PYTHON_FILTER)" \
+	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \
