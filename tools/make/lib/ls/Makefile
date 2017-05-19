@@ -10,6 +10,21 @@ FILES_FILTER ?= .*/.*
 # Define a filename pattern for source files:
 SOURCES_PATTERN ?= *.js
 
+# Define a filename pattern for C source files:
+C_SOURCES_PATTERN ?= *.c
+
+# Define a filename pattern for Fortran source files:
+FORTRAN_SOURCES_PATTERN ?= *.f
+
+# Define a filename pattern for Julia source files:
+JULIA_SOURCES_PATTERN ?= *.jl
+
+# Define a filename pattern for Python source files:
+PYTHON_SOURCES_PATTERN ?= *.py
+
+# Define a filename pattern for R source files:
+R_SOURCES_PATTERN ?= *.R
+
 # Define a filepath pattern for source files:
 SOURCES_FILTER ?= .*/.*
 
@@ -28,6 +43,9 @@ TESTS_FIXTURES_FILTER ?= .*/.*
 # Define a filename pattern for benchmark files:
 BENCHMARKS_PATTERN ?= benchmark*.js
 
+# Define a filename pattern for C benchmark files:
+C_BENCHMARKS_PATTERN ?= benchmark*.c
+
 # Define a filename pattern for Julia benchmark files:
 JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl
 
@@ -36,9 +54,6 @@ PYTHON_BENCHMARKS_PATTERN ?= benchmark*.py
 
 # Define a filename pattern for R benchmark files:
 R_BENCHMARKS_PATTERN ?= benchmark*.R
-
-# Define a filename pattern for C benchmark files:
-C_BENCHMARKS_PATTERN ?= benchmark*.c
 
 # Define a filepath pattern for benchmark files:
 BENCHMARKS_FILTER ?= .*/.*
@@ -63,6 +78,8 @@ PACKAGES_FILTER ?= .*/.*
 
 include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/sources_c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/sources_fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
