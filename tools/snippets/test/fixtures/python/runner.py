@@ -12,7 +12,7 @@ from scipy import special
 FILE = os.path.realpath(__file__)
 
 # Extract the directory in which this file resides:
-DIR = os.path.dirname(file)
+DIR = os.path.dirname(FILE)
 
 
 def gen(x, name):
