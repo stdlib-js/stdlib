@@ -3,9 +3,6 @@
 
 import os
 import json
-import math as m
-import numpy as np
-from scipy import special
 
 
 # Get the file path:
