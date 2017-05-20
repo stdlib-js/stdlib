@@ -762,7 +762,7 @@
 
 85. Julia linting
 
-    * [lint.jl](https://github.com/tonyhffong/Lint.jl): no apparent CLI
+    * [lint.jl](https://github.com/tonyhffong/Lint.jl): no apparent CLI (and very slow :|)
 
 86. doc viewer
 
