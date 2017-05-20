@@ -5,6 +5,8 @@
 # The script is called with one or more arguments, where each argument is a
 # filepath. Note that each provided filepath is resolved relative to the current
 # working directory of the calling process.
+#
+# [1]: https://github.com/jimhester/lintr
 
 # Get only the trailing command-line arguments:
 args <- commandArgs( trailingOnly = TRUE );
