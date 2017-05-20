@@ -45,7 +45,7 @@ endif
 pydocstyle-src:
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -59,7 +59,7 @@ pydocstyle-src:
 pydocstyle-tests-fixtures:
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -73,7 +73,7 @@ pydocstyle-tests-fixtures:
 pydocstyle-examples:
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -87,7 +87,7 @@ pydocstyle-examples:
 pydocstyle-benchmarks:
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -101,7 +101,7 @@ pydocstyle-benchmarks:
 pydocstyle-files:
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
