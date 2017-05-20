@@ -1562,6 +1562,8 @@
 
 382. Generating [random integers](http://dimitri.xyz/random-ints-from-random-bits/)
 
+383. Add a destroy [method](https://github.com/hunterloftis/stoppable) to http/s servers
+
 
 ---
 
