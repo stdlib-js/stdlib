@@ -42,7 +42,7 @@ endif
 #
 # This target lints only Python source files.
 
-pycodestyle-src: check-pycodestyle
+pycodestyle-src:
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -56,7 +56,7 @@ pycodestyle-src: check-pycodestyle
 #
 # This target lints only Python test fixture files.
 
-pycodestyle-tests-fixtures: check-pycodestyle
+pycodestyle-tests-fixtures:
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -70,7 +70,7 @@ pycodestyle-tests-fixtures: check-pycodestyle
 #
 # This target lints only Python example files.
 
-pycodestyle-examples: check-pycodestyle
+pycodestyle-examples:
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -84,7 +84,7 @@ pycodestyle-examples: check-pycodestyle
 #
 # This target lints only Python benchmark files.
 
-pycodestyle-benchmarks: check-pycodestyle
+pycodestyle-benchmarks:
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -98,7 +98,7 @@ pycodestyle-benchmarks: check-pycodestyle
 #
 # This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
-pycodestyle-files: check-pycodestyle
+pycodestyle-files:
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
