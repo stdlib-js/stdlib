@@ -4,9 +4,9 @@
 options( digits = 16 );
 
 # Define benchmark parameters:
-name <- "TODO"
-iterations <- 1000000L
-repeats <- 3
+name <- "TODO";
+iterations <- 1000000L;
+repeats <- 3;
 
 #' Print the TAP version.
 #'
