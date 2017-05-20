@@ -45,7 +45,7 @@ endif
 pycodestyle-src:
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -59,7 +59,7 @@ pycodestyle-src:
 pycodestyle-tests-fixtures:
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -73,7 +73,7 @@ pycodestyle-tests-fixtures:
 pycodestyle-examples:
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -87,7 +87,7 @@ pycodestyle-examples:
 pycodestyle-benchmarks:
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -101,7 +101,7 @@ pycodestyle-benchmarks:
 pycodestyle-files:
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
 	done
 
