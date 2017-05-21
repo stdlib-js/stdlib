@@ -26,7 +26,7 @@ if [[ -x "${R}" ]] && "${R}" --version >/dev/null; then
 	echo 'R is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please download R version >= 3.0.0 (https://www.r-project.org/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please download R version >= 3.3.3 (https://www.r-project.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
 
