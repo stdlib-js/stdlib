@@ -23,7 +23,7 @@ def gen(x, name):
 
     ``` python
     python> x = linspace(-1000, 1000, 2001)
-    python> gen(x, \"./data.json\")
+    python> gen(x, './data.json')
     ```
     """
     # TODO: generate fixtures
@@ -38,7 +38,7 @@ def gen(x, name):
     filepath = os.path.join(DIR, name)
 
     # Write the data to the output filepath as JSON:
-    with open(filepath, 'w') as outfile:
+    with open(filepath, "w") as outfile:
         json.dump(data, outfile)
 
 
