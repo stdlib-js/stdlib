@@ -756,9 +756,9 @@
 
 83. [mkdirp](https://github.com/sindresorhus/make-dir/blob/master/index.js)
 
-84. R linting
+84. C/C++ linting
 
-    * [lintr](https://github.com/jimhester/lintr): no apparent CLI
+    * [cpplint](https://github.com/nodejs/node/blob/2b541471dbec18dd15bee5d0cc46d39ca708f5dc/tools/cpplint.py): tied to Google Style Guide
 
 85. Julia linting
 
@@ -789,6 +789,8 @@
     * run tests, test-coverage, benchmarks, lint, etc
 
 90. add a `run.sh` (`build.sh` ?) file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
+
+    * Delegating to a script would mean that each script would assume aliases (e.g., use `Rscript` to run R code, etc), but could vary depending on the author/host system. In this case, centralization (e.g., having this knowledge in `make` would make more sense).
 
 91. JS style guide
 
