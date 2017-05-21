@@ -4,7 +4,6 @@
 import os
 import json
 
-
 # Get the file path:
 FILE = os.path.realpath(__file__)
 
