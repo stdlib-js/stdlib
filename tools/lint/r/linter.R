@@ -10,7 +10,7 @@
 
 # Ensure that the `lintr` package is installed...
 if ( !require( "lintr", quietly = TRUE, character.only = TRUE ) ) {
-	install.packages( "lintr", repos = "http://lib.stat.cmu.edu/R/CRAN/" );
+	install.packages( "lintr", repos = "http://lib.stat.cmu.edu/R/CRAN/", quiet = TRUE );
 }
 
 # Get only the trailing command-line arguments:
