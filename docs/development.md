@@ -39,6 +39,7 @@ Assuming the requisite language is present on the host machine, the following la
 * [Pylint][pylint]: Python source code analyzer (version `>= 1.7.1`)
 * [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
 * [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
+* [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
 
 The following vendor libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -295,6 +296,7 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [pylint]: https://github.com/PyCQA/pylint
 [pycodestyle]: https://github.com/PyCQA/pycodestyle
 [pydocstyle]: https://github.com/PyCQA/pydocstyle
+[lintr]: https://github.com/jimhester/lintr
 [gcc]: http://gcc.gnu.org/
 [clang]: http://clang.llvm.org/
 [gfortran]: https://gcc.gnu.org/fortran/
