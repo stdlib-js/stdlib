@@ -139,6 +139,9 @@ PYTHON ?= python
 # Define the command for `r`:
 R ?= r
 
+# Define the command for running R script files:
+RSCRIPT ?= Rscript
+
 
 # COMPILERS #
 

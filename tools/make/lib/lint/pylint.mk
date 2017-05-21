@@ -44,7 +44,7 @@ endif
 #
 # This target lints only Python source files.
 
-pylint-src: check-pylint
+pylint-src:
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -58,7 +58,7 @@ pylint-src: check-pylint
 #
 # This target lints only Python test fixture files.
 
-pylint-tests-fixtures: check-pylint
+pylint-tests-fixtures:
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -72,7 +72,7 @@ pylint-tests-fixtures: check-pylint
 #
 # This target lints only Python example files.
 
-pylint-examples: check-pylint
+pylint-examples:
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -86,7 +86,7 @@ pylint-examples: check-pylint
 #
 # This target lints only Python benchmark files.
 
-pylint-benchmarks: check-pylint
+pylint-benchmarks:
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
@@ -100,7 +100,7 @@ pylint-benchmarks: check-pylint
 #
 # This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
-pylint-files: check-pylint
+pylint-files:
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \

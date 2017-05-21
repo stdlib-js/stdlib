@@ -754,12 +754,7 @@
     - [intro to git hooks](https://www.sitepoint.com/introduction-git-hooks/)
     - [git pre-push](http://blog.ittybittyapps.com/blog/2013/09/03/git-pre-push/)
 
-83. Python linting
-
-    * [pylint](https://github.com/PyCQA/pylint)
-    * [pycodestyle](https://github.com/PyCQA/pycodestyle)
-    * [pyflakes](https://github.com/pyflakes/pyflakes)
-    * prob combo of `pylint` and `pycodestyle`
+83. [mkdirp](https://github.com/sindresorhus/make-dir/blob/master/index.js)
 
 84. R linting
 
@@ -767,7 +762,7 @@
 
 85. Julia linting
 
-    * [lint.jl](https://github.com/tonyhffong/Lint.jl): no apparent CLI
+    * [lint.jl](https://github.com/tonyhffong/Lint.jl): no apparent CLI (and very slow :|)
 
 86. doc viewer
 
@@ -1567,7 +1562,7 @@
 
 382. Generating [random integers](http://dimitri.xyz/random-ints-from-random-bits/)
 
-383. [mkdirp](https://github.com/sindresorhus/make-dir/blob/master/index.js)
+383. Add a destroy [method](https://github.com/hunterloftis/stoppable) to http/s servers
 
 
 ---

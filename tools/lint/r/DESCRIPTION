@@ -1,0 +1,9 @@
+Package: rlint
+Title: Lint R Code
+Version: 0.0.0
+Authors@R: person("stdlib", "js", role = c("aut","cre"))
+Description: Lints R code.
+Depends: R (>=3.3.3)
+Imports:
+	lintr
+LazyData: true

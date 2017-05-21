@@ -42,10 +42,10 @@ endif
 #
 # This target lints only Python source files.
 
-pydocstyle-src: check-pydocstyle
+pydocstyle-src:
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -56,10 +56,10 @@ pydocstyle-src: check-pydocstyle
 #
 # This target lints only Python test fixture files.
 
-pydocstyle-tests-fixtures: check-pydocstyle
+pydocstyle-tests-fixtures:
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -70,10 +70,10 @@ pydocstyle-tests-fixtures: check-pydocstyle
 #
 # This target lints only Python example files.
 
-pydocstyle-examples: check-pydocstyle
+pydocstyle-examples:
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -84,10 +84,10 @@ pydocstyle-examples: check-pydocstyle
 #
 # This target lints only Python benchmark files.
 
-pydocstyle-benchmarks: check-pydocstyle
+pydocstyle-benchmarks:
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 
@@ -98,10 +98,10 @@ pydocstyle-benchmarks: check-pydocstyle
 #
 # This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
 
-pydocstyle-files: check-pydocstyle
+pydocstyle-files:
 	$(QUIET) for file in $(PYTHON_FILES); do \
 		echo ''; \
-		echo "Linting file: $$file"; \
+		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
 

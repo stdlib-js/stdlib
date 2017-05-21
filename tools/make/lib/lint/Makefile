@@ -4,9 +4,11 @@
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/python.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/r.mk
 
 
 # TARGETS #
@@ -15,7 +17,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
 #
 # This target lints all files.
 
-lint: lint-filenames lint-javascript lint-markdown lint-python lint-conf lint-pkg-json
+lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-conf lint-pkg-json
 
 .PHONY: lint
 
@@ -51,7 +53,7 @@ lint-examples: lint-javascript-examples
 #
 # This target lints only benchmark files.
 
-lint-benchmarks: lint-javascript-benchmarks lint-python-benchmarks
+lint-benchmarks: lint-javascript-benchmarks lint-python-benchmarks lint-julia-benchmarks lint-r-benchmarks
 
 .PHONY: lint-benchmarks
 

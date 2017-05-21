@@ -24,9 +24,9 @@ Developing and running stdlib __requires__ the following prerequisites:
 
 While not required to run stdlib, the following dependencies __may__ be required for testing, benchmarking, and general development:
 
-* [Julia][julia]: language for technical computing (version `>= 0.4`)
-* [R][r]: language for statistical computing (version `>= 3.0.0`)
-* [Python][python]: general purpose language (version `>= 2.7`)
+* [Julia][julia]: language for technical computing (version `>= 0.5`)
+* [R][r]: language for statistical computing (version `>= 3.3.3`)
+* [Python][python]: general purpose language (version `2.7.x`; version `3.x` is __not__ supported due to [node-gyp][node-gyp], which is required for compiling native add-ons)
 * [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
 * [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 * [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
@@ -304,6 +304,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [boost]: http://www.boost.org/
 [openblas]: https://github.com/xianyi/OpenBLAS
 [emscripten]: http://kripken.github.io/emscripten-site/index.html
+
+[node-gyp]: https://github.com/nodejs/node-gyp
 
 [node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
 [bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
