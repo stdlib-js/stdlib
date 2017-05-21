@@ -159,6 +159,17 @@ run_lint() {
 		fi
 	fi
 
+	# Lint R files...
+	files=$(echo "${changed_files}" | grep '\.R$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make R_FILES="${files}" lint-r-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'R lint errors.' >&2
+			return 1
+		fi
+	fi
+
 	# TODO: if datapackage.json, validate via schema
 
 	return 0
