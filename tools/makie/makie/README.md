@@ -19,6 +19,8 @@ This utility provides support for executing a subset of `Makefile` commands from
 * `benchmark`
 * `lint-javascript`
 * `lint-markdown`
+* `lint-python`
+* `lint-r`
 * `complexity`
 * `list-pkgs`
 * `list-pkgs-names`
