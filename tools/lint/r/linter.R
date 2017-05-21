@@ -90,8 +90,8 @@ linters <- lintr::with_defaults( default = list(),
 	# Allow spaces directly inside parentheses and square brackets:
 	spaces_inside_linter = NULL, # lintr::spaces_inside_linter,
 
-	# Require that all left parentheses have a space before them, except for function calls:
-	spaces_left_parentheses_linter = lintr::spaces_left_parentheses_linter,
+	# Require that all left parentheses have a space before them, except for function calls: (disabled as not reliable)
+	spaces_left_parentheses_linter = NULL, # lintr::spaces_left_parentheses_linter,
 
 	# (pending) Ensure that source code does not contain TODO comments (case-insensitive):
 	# todo_comment_linter = lintr::todo_comment_linter,
@@ -116,9 +116,13 @@ linters <- lintr::with_defaults( default = list(),
 );
 
 # Lint each file...
+status <- 0;
 for ( i in 1:n ) {
 	results <- lintr::lint( args[ i ], linters = linters );
 	if ( length( results ) > 0 ) {
+		status <- 1;
 		print( results );
 	}
 }
+# Quit with a non-zero exit code if lint errors:
+quit( status = status );
