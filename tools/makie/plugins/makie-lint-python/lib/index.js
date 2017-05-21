@@ -78,7 +78,11 @@ function plugin( dir, cwd, subpath ) {
 
 	// Environment variables:
 	if ( subpath ) {
-		args.push( 'PYTHON_FILTER=.*/'+subpath+'/.*' );
+		args.push( 'SOURCES_FILTER=.*/'+subpath+'/.*' );
+		args.push( 'TESTS_FILTER=.*/'+subpath+'/.*' );
+		args.push( 'TESTS_FIXTURES_FILTER=.*/'+subpath+'/.*' );
+		args.push( 'EXAMPLES_FILTER=.*/'+subpath+'/.*' );
+		args.push( 'BENCHMARKS_FILTER=.*/'+subpath+'/.*' );
 	}
 	// Target:
 	args.push( 'lint-python' );
