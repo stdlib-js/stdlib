@@ -8,6 +8,11 @@
 #
 # [1]: https://github.com/jimhester/lintr
 
+# Ensure that the `lintr` package is installed...
+if ( !require( "lintr", quietly = TRUE, character.only = TRUE ) ) {
+	install.packages( "lintr", repos = "http://lib.stat.cmu.edu/R/CRAN/" );
+}
+
 # Get only the trailing command-line arguments:
 args <- commandArgs( trailingOnly = TRUE );
 
@@ -16,6 +21,7 @@ n <- length( args );
 if ( n == 0 ) {
 	stop( "Must provide at least one file to lint.", call. = FALSE );
 }
+
 # Specify which linters to use...
 linters <- lintr::with_defaults( default = list(),
 	# Check that no absolute paths are used:
