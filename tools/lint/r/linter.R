@@ -52,7 +52,7 @@ linters <- lintr::with_defaults( default = list(),
 	infix_spaces_linter = NULL, # lintr::infix_spaces_linter,
 
 	# Require that line length of both comments and code is less than a specified length:
-	line_length_linter = lintr::line_length_linter( 120L ),
+	line_length_linter = lintr::line_length_linter( 200L ),
 
 	# (deprecated) Allow objects to have.multiple.dots:
 	multiple_dots_linter = NULL, # lintr::multiple_dots_linter,
