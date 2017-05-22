@@ -25,7 +25,7 @@ mapSeries,(planned)
 mapValues,utils/map-values-async
 mapValuesLimit,utils/map-values-async
 mapValuesSeries,utils/map-values-async
-reduce,(planned)
+reduce,utils/reduce-async
 reduceRight,(planned)
 reject,(maybe)
 rejectLimit,(maybe)
@@ -34,7 +34,7 @@ some,utils/some-async
 someLimit,utils/some-async
 someSeries,utils/some-async
 sortBy,N/A
-transform,N/A
+transform,utils/reduce-async
 applyEach,(planned)
 applyEachSeries,(planned)
 auto,N/A
