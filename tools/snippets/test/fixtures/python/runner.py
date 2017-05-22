@@ -4,7 +4,6 @@
 import os
 import json
 
-
 # Get the file path:
 FILE = os.path.realpath(__file__)
 
@@ -24,7 +23,7 @@ def gen(x, name):
 
     ``` python
     python> x = linspace(-1000, 1000, 2001)
-    python> gen(x, \"./data.json\")
+    python> gen(x, './data.json')
     ```
     """
     # TODO: generate fixtures
@@ -38,7 +37,8 @@ def gen(x, name):
     # Based on the script directory, create an output filepath:
     filepath = os.path.join(DIR, name)
 
-    with open(filepath, 'w') as outfile:
+    # Write the data to the output filepath as JSON:
+    with open(filepath, "w") as outfile:
         json.dump(data, outfile)
 
 
