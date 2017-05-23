@@ -1,0 +1,47 @@
+
+{{alias}}( collection, predicate, fcn[, thisArg] )
+    Until a test condition is true, invokes a function for each element in a
+    collection, iterating from right to left.
+
+    When invoked, both the predicate function and the function to apply are
+    provided three arguments:
+
+    - `value`: collection value
+    - `index`: collection index
+    - `collection`: the input collection
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    predicate: Function
+        The predicate function which indicates whether to stop iterating over a
+        collection.
+
+    fcn: Function
+        The function to invoke for each element in a collection.
+
+    thisArg: any (optional)
+        Execution context for the applied function.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Input collection.
+
+    Examples
+    --------
+    > function predicate( v ) { return v !== v; };
+    > function logger( v, i ) { console.log( '%s: %d', i, v ); };
+    > var arr = [ 1, NaN, 2, 3, 4, 5 ];
+    > {{alias}}( arr, predicate, logger )
+    5: 5
+    4: 4
+    3: 3
+    2: 2
+
+    See Also
+    --------
+
