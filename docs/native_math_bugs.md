@@ -37,7 +37,8 @@
 * [V8 deoptimizes if `Math.floor` provided `-0`][@bug:v8:2890]
 * [V8 deoptimizes if `Math.ceil` provided `0`][@bug:v8:4059]
 * [V8 `Math.round` accuracy][@bug:v8:958]
-* [Observability of distinguishable NaNs][@bug:esdiscuss:2013-03-20]
+* [Observability of distinguishable NaNs][@bug:esdiscuss:2013-03-20] (see also [get-nans][get-nans] and ECMA262 issue [635][ecma262-635])
+* [NaN converted to -NaN][@bug:v8:1101]
 * [After 10 years, Mozilla updates `Math.random`][@bug:mozilla:322529]
 * [WebKit bug to use a better PRNG][@bug:webkit:151641]
 * [WebKit 32-bit Math bug][@bug:webkit:40367]
@@ -93,6 +94,9 @@
 [@bug:v8:4059]: https://bugs.chromium.org/p/v8/issues/detail?id=4059
 [@bug:v8:958]: https://bugs.chromium.org/p/v8/issues/detail?id=958
 [@bug:esdiscuss:2013-03-20]: https://esdiscuss.org/topic/observability-of-nan-distinctions-is-this-a-concern
+[@bug:v8:1101]: https://bugs.chromium.org/p/v8/issues/detail?id=1101
+[get-nans]: https://github.com/ljharb/get-nans
+[ecma262-635]: https://github.com/tc39/ecma262/issues/635
 [@bug:mozilla:322529]: https://bugzilla.mozilla.org/show_bug.cgi?id=322529
 [@bug:webkit:151641]: https://bugs.webkit.org/show_bug.cgi?id=151641
 [@bug:webkit:40367]: https://bugs.webkit.org/show_bug.cgi?id=40367
