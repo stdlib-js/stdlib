@@ -1,0 +1,35 @@
+
+{{alias}}( predicate, fcn[, thisArg] )
+    Invokes a function while a test condition is true.
+
+    When invoked, both the predicate function and the function to invoke are
+    provided a single argument:
+
+    - `i`: iteration number (starting from zero)
+
+    Parameters
+    ----------
+    predicate: Function
+        The predicate function which indicates whether to continue invoking a
+        function.
+
+    fcn: Function
+        The function to invoke.
+
+    thisArg: any (optional)
+        Execution context for the invoked function.
+
+    Examples
+    --------
+    > function predicate( i ) { return ( i < 5 ); };
+    > function beep( i ) { console.log( 'boop: %d', i ); };
+    > {{alias}}( predicate, beep )
+    boop: 0
+    boop: 1
+    boop: 2
+    boop: 3
+    boop: 4
+
+    See Also
+    --------
+
