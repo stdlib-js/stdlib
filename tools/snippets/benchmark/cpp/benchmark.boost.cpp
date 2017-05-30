@@ -79,11 +79,11 @@ double benchmark() {
 	mt19937 rng;
 
 	// Define a uniform distribution for generating pseudorandom numbers as "doubles" between a minimum value (inclusive) and a maximum value (exclusive):
-	uniform_real_distribution<> rand( 0.0, 1.0 );
+	uniform_real_distribution<> randu( 0.0, 1.0 );
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = rand( rng );
+		x = randu( rng );
 		y = 0.0; // TODO
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
