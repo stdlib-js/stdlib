@@ -14,6 +14,9 @@ SOURCES_PATTERN ?= *.js
 # Define a filename pattern for C source files:
 C_SOURCES_PATTERN ?= *.c
 
+# Define a filename pattern for C++ source files:
+CPP_SOURCES_PATTERN ?= *.cpp
+
 # Define a filename pattern for Fortran source files:
 FORTRAN_SOURCES_PATTERN ?= *.f
 
@@ -43,6 +46,9 @@ TESTS_FIXTURES_PATTERN ?= *.*
 # Define a filename pattern for C test fixtures:
 C_TESTS_FIXTURES_PATTERN ?= *.c
 
+# Define a filename pattern for C++ test fixtures:
+CPP_TESTS_FIXTURES_PATTERN ?= *.cpp
+
 # Define a filename pattern for Julia test fixtures:
 JULIA_TESTS_FIXTURES_PATTERN ?= *.jl
 
@@ -61,6 +67,9 @@ BENCHMARKS_PATTERN ?= benchmark*.js
 
 # Define a filename pattern for C benchmark files:
 C_BENCHMARKS_PATTERN ?= benchmark*.c
+
+# Define a filename pattern for C++ benchmark files:
+CPP_BENCHMARKS_PATTERN ?= benchmark*.cpp
 
 # Define a filename pattern for Julia benchmark files:
 JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl
@@ -81,6 +90,9 @@ EXAMPLES_PATTERN ?= *.js
 # Define a filename pattern for C example files:
 C_EXAMPLES_PATTERN ?= *.c
 
+# Define a filename pattern for C++ example files:
+CPP_EXAMPLES_PATTERN ?= *.cpp
+
 # Define a filename pattern for Julia example files:
 JULIA_EXAMPLES_PATTERN ?= *.jl
 
@@ -99,6 +111,13 @@ C_PATTERN ?= *.c
 
 # Define a filepath pattern for C files:
 C_FILTER ?= .*/.*
+
+
+# Define a filename pattern for C++ files:
+CPP_PATTERN ?= *.cpp
+
+# Define a filepath pattern for C++ files:
+CPP_FILTER ?= .*/.*
 
 
 # Define a filename pattern for Fortran files:
@@ -152,6 +171,7 @@ PACKAGES_FILTER ?= .*/.*
 include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/sources_cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources_python.mk
@@ -160,21 +180,25 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/examples_cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/c.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/julia.mk
