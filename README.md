@@ -145,7 +145,7 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 ### Gold
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/b63028ca3da79b748bca6877c48abc4de664f002/docs/assets/sponsor_logo_stencila.png" alt="stencila logo">
+    <a href="https://stenci.la/"><img src="https://cdn.rawgit.com/stdlib-js/stdlib/b63028ca3da79b748bca6877c48abc4de664f002/docs/assets/sponsor_logo_stencila.png" alt="stencila logo"></a>
     <br>
 </div>
 
