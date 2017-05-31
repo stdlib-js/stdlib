@@ -8,7 +8,7 @@ machine:
 
   # Version of Node.js to use:
   node:
-    version: 6
+    version: 8
 
 
 # Custom environment dependencies:

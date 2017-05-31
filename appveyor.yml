@@ -33,6 +33,9 @@ environment:
 
   matrix:
     # Unit tests:
+    - nodejs_version: '8'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'test'
     - nodejs_version: '7'
       npm_version: '>2.7.0'
       BUILD_TASK: 'test'
@@ -53,6 +56,9 @@ environment:
       BUILD_TASK: 'test'
 
     # Benchmarks:
+    - nodejs_version: '8'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'benchmark'
     - nodejs_version: '7'
       npm_version: '>2.7.0'
       BUILD_TASK: 'benchmark'
@@ -73,6 +79,9 @@ environment:
       BUILD_TASK: 'benchmark'
 
     # Examples:
+    - nodejs_version: '8'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'examples'
     - nodejs_version: '7'
       npm_version: '>2.7.0'
       BUILD_TASK: 'examples'
@@ -93,6 +102,9 @@ environment:
       BUILD_TASK: 'examples'
 
     # Test coverage:
+    - nodejs_version: '8'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'test-coverage'
     - nodejs_version: '7'
       npm_version: '>2.7.0'
       BUILD_TASK: 'test-coverage'
