@@ -9,7 +9,7 @@ benchmark-julia:
 	$(QUIET) for file in $(JULIA_BENCHMARKS); do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
-		$$file || exit 1; \
+		$(MAKE_EXECUTABLE) $$file && $$file || exit 1; \
 	done
 
 .PHONY: benchmark-julia
