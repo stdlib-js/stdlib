@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Evaluates Spence’s function, which is also known as the dilogarithm.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0 )
+    ~-1.437
+    > y = {{alias}}( 0.0 )
+    ~1.645
+    > y = {{alias}}( -9.0 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
