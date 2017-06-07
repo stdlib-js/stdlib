@@ -32,7 +32,7 @@ test-javascript: test-javascript-local
 # This target runs JavaScript unit tests locally.
 
 test-javascript-local: $(NODE_MODULES)
-	$(QUIET) for test in $(TESTS); do \
+	$(QUIET) echo $(TESTS) | xargs -n1 | while read -r test; do \
 		echo ''; \
 		echo "Running test: $$test"; \
 		NODE_ENV=$(NODE_ENV_TEST) \
@@ -51,7 +51,7 @@ test-javascript-local: $(NODE_MODULES)
 # This target runs JavaScript unit tests and aggregates TAP output as a test summary.
 
 test-javascript-summary: $(NODE_MODULES)
-	$(QUIET) for test in $(TESTS); do \
+	$(QUIET) echo $(TESTS) | xargs -n1 | while read -r test; do \
 		echo ''; \
 		echo "Running test: $$test"; \
 		NODE_ENV=$(NODE_ENV_TEST) \
@@ -70,7 +70,7 @@ test-javascript-summary: $(NODE_MODULES)
 # This target runs JavaScript unit tests and streams raw TAP output.
 
 test-javascript-tap: $(NODE_MODULES)
-	$(QUIET) for test in $(TESTS); do \
+	$(QUIET) echo $(TESTS) | xargs -n1 | while read -r test; do \
 		NODE_ENV=$(NODE_ENV_TEST) \
 		NODE_PATH=$(NODE_PATH_TEST) \
 		$(JAVASCRIPT_TEST) \
@@ -87,7 +87,7 @@ test-javascript-tap: $(NODE_MODULES)
 
 test-javascript-xunit: SHELL=/bin/bash -o pipefail
 test-javascript-xunit: $(NODE_MODULES)
-	$(QUIET) for test in $(TESTS); do \
+	$(QUIET) echo $(TESTS) | xargs -n1 | while read -r test; do \
 		NODE_ENV=$(NODE_ENV_TEST) \
 		NODE_PATH=$(NODE_PATH_TEST) \
 		$(JAVASCRIPT_TEST) \
