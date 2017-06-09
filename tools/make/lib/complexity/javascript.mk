@@ -74,6 +74,16 @@ complexity-javascript-benchmarks: $(NODE_MODULES)
 .PHONY: complexity-javascript-benchmarks
 
 
+# Analyze code complexity.
+#
+# This target analyzes JavaScript code complexity. Note that we expect `$FILES` to be a JavaScript file list.
+
+complexity-javascript-files: $(NODE_MODULES)
+	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(FILES)
+
+.PHONY: complexity-javascript-files
+
+
 # View a complexity report.
 #
 # This target opens an HTML JavaScript complexity report in a local web browser.
