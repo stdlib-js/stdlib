@@ -300,7 +300,7 @@ run_tests() {
 			return 1
 		fi
 		# Run the tests, writing the results to the created log file:
-		make TESTS="${test}" test-xunit >> "${log_file}" 2>&1
+		make FILES="${test}" test-files-xunit >> "${log_file}" 2>&1
 		if [[ "$?" -ne 0 ]]; then
 			echo 'Tests failed.' >&2
 			return 1

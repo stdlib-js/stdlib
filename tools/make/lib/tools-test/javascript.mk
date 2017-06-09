@@ -6,7 +6,7 @@
 # This target runs JavaScript unit tests using a specified test runner and pipes TAP output to a reporter.
 
 tools-test-javascript:
-	$(QUIET) TESTS="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript
+	$(QUIET) FILES="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-files
 
 .PHONY: tools-test-javascript
 
@@ -16,7 +16,7 @@ tools-test-javascript:
 # This target runs JavaScript unit tests and aggregates TAP output as a test summary.
 
 tools-test-javascript-summary:
-	$(QUIET) TESTS="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-summary
+	$(QUIET) FILES="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-javascript-files-summary
 
 .PHONY: tools-test-javascript-summary
 
