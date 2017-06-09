@@ -25,6 +25,8 @@ notes:
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude-dir "$(BUILD_DIR)/*" \
 		--exclude-dir "$(REPORTS_DIR)/*" \
+		--exclude-dir "$(DEPS_TMP_DIR)/*" \
+		--exclude-dir "$(DEPS_BUILD_DIR)/*" \
 		--exclude "$(this_file)" \
 		--exclude "$(ROOT_DIR)/.*" \
 		--exclude "**/$(BUILD_FOLDER)/*" \
