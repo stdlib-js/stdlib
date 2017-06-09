@@ -17,6 +17,8 @@ endif
 # Analyze code complexity.
 #
 # This target analyzes all JavaScript source code.
+#
+# TODO: address bash argument length errors
 
 complexity-javascript: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES) $(BENCHMARKS)
@@ -27,6 +29,8 @@ complexity-javascript: $(NODE_MODULES)
 # Analyze source code complexity.
 #
 # This target analyzes only JavaScript source files.
+#
+# TODO: address bash argument length errors
 
 complexity-javascript-src: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES)
@@ -37,6 +41,8 @@ complexity-javascript-src: $(NODE_MODULES)
 # Analyze test code complexity.
 #
 # This target analyzes only JavaScript test files.
+#
+# TODO: address bash argument length errors
 
 complexity-javascript-tests: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(TESTS)
@@ -47,6 +53,8 @@ complexity-javascript-tests: $(NODE_MODULES)
 # Analyze example code complexity.
 #
 # This target analyzes only JavaScript example files.
+#
+# TODO: address bash argument length errors
 
 complexity-javascript-examples: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(EXAMPLES)
@@ -57,6 +65,8 @@ complexity-javascript-examples: $(NODE_MODULES)
 # Analyze benchmark code complexity.
 #
 # This target analyzes only JavaScript benchmark files.
+#
+# TODO: address bash argument length errors
 
 complexity-javascript-benchmarks: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(BENCHMARKS)
