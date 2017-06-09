@@ -36,6 +36,8 @@ endif
 # [1]: https://github.com/substack/node-browserify
 # [2]: https://github.com/bendrucker/proxyquire-universal
 # [3]: https://github.com/scottcorgan/tap-spec
+#
+# TODO: make robust to long file lists.
 
 test-browsers: $(NODE_MODULES)
 	NODE_ENV=$(NODE_ENV_TEST) \
