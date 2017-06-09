@@ -22,3 +22,13 @@ lint-markdown: $(NODE_MODULES)
 	$(QUIET) $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(MARKDOWN_FILES)
 
 .PHONY: lint-markdown
+
+
+# Lint.
+#
+# This target lints Markdown files according to a specified file list.
+
+lint-markdown-files: $(NODE_MODULES)
+	$(QUIET) $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(FILES)
+
+.PHONY: lint-markdown-files

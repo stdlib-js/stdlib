@@ -77,7 +77,7 @@ lint-julia-benchmarks:
 
 # Check code quality.
 #
-# This target lints Julia files. Note that we expect `$JULIA_FILES` to be a Julia file list.
+# This target lints Julia files. Note that we expect `$FILES` to be a Julia file list.
 
 lint-julia-files:
 	$(QUIET) for file in $(FILES); do \
