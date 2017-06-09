@@ -65,6 +65,17 @@
     <br>
 </div>
 
+### Math, Numeric Computing, and JavaScript
+
+> [Athan Reines][kgryte], csv,conf,v3, May 2017
+
+<div class="image" align="center">
+    <a href="https://www.youtube.com/watch?v=P4_5LvKmhIc%26list=PLg5zZXwt2ZW5UIz13oI56vfZjF6mvpIXN%26index=44">
+        <img src="" alt="Math, Numeric Computing, and JavaScript at csv,conf,v3, May 2017">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
