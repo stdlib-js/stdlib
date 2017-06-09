@@ -98,10 +98,10 @@ pylint-benchmarks:
 
 # Check Python code quality.
 #
-# This target lints Python files. Note that we expect `$PYTHON_FILES` to be a Python file list.
+# This target lints Python files. Note that we expect `$FILES` to be a Python file list.
 
 pylint-files:
-	$(QUIET) for file in $(PYTHON_FILES); do \
+	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
