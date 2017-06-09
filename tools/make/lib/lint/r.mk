@@ -77,10 +77,10 @@ lint-r-benchmarks:
 
 # Check code quality.
 #
-# This target lints R files. Note that we expect `$R_FILES` to be a R file list.
+# This target lints R files. Note that we expect `$FILES` to be a R file list.
 
 lint-r-files:
-	$(QUIET) for file in $(R_FILES); do \
+	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
