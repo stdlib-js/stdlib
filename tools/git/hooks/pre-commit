@@ -79,7 +79,7 @@ run_lint() {
 	# Lint Markdown files...
 	files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
-		make MARKDOWN_FILES="${files}" lint-markdown > /dev/null
+		make FILES="${files}" lint-markdown-files > /dev/null
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Markdown lint errors.' >&2
@@ -150,7 +150,7 @@ run_lint() {
 			echo '' >&2
 			echo 'Unable to lint Python files. Ensure that linters are installed.' >&2
 		else
-			make PYTHON_FILES="${files}" lint-python-files > /dev/null >&2
+			make FILES="${files}" lint-python-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
 				echo 'Python lint errors.' >&2
@@ -162,7 +162,7 @@ run_lint() {
 	# Lint R files...
 	files=$(echo "${changed_files}" | grep '\.R$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
-		make R_FILES="${files}" lint-r-files > /dev/null >&2
+		make FILES="${files}" lint-r-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'R lint errors.' >&2
