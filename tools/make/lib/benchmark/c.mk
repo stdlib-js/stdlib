@@ -6,7 +6,7 @@
 # This target runs a list of C benchmarks consecutively.
 
 benchmark-c:
-	$(QUIET) for file in $(C_BENCHMARKS); do \
+	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \

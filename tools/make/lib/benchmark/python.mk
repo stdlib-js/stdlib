@@ -6,7 +6,7 @@
 # This target runs a list of Python benchmarks in sequential order. Note that we assume the benchmarks can be run using Python.
 
 benchmark-python:
-	$(QUIET) for file in $(PYTHON_BENCHMARKS); do \
+	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		$(PYTHON) $$file || exit 1; \

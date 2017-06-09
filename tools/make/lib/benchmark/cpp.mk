@@ -6,7 +6,7 @@
 # This target runs a list of C++ benchmarks consecutively.
 
 benchmark-cpp:
-	$(QUIET) for file in $(CPP_BENCHMARKS); do \
+	$(QUIET) $(FIND_CPP_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \
