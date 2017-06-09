@@ -24,6 +24,8 @@ tools-test-javascript-summary:
 # Run unit tests against Node.js versions.
 #
 # This targets runs JavaScript unit tests against specific Node.js versions.
+#
+# TODO: update once `test-node-versions` has been updated to accepting a `$FILES` list.
 
 tools-test-node-versions:
 	$(QUIET) TESTS="$(TOOLS_TESTS)" $(MAKE) -f $(this_file) test-node-versions
