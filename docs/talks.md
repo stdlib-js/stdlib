@@ -71,7 +71,7 @@
 
 <div class="image" align="center">
     <a href="https://www.youtube.com/watch?v=P4_5LvKmhIc%26list=PLg5zZXwt2ZW5UIz13oI56vfZjF6mvpIXN%26index=44">
-        <img src="" alt="Math, Numeric Computing, and JavaScript at csv,conf,v3, May 2017">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1e164a683e239214f2e06354319f91fb41f244d3/docs/assets/csv_conf_v3_2017_athan_reines.png" alt="Math, Numeric Computing, and JavaScript at csv,conf,v3, May 2017">
     </a>
     <br>
 </div>
