@@ -39,7 +39,7 @@ JSHINT_FLAGS ?= \
 # This target lints only JavaScript source files.
 
 jshint-src: $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JSHINT) $(JSHINT_FLAGS) $$file || exit 1; \
@@ -53,7 +53,7 @@ jshint-src: $(NODE_MODULES)
 # This target lints only JavaScript test files.
 
 jshint-tests: $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JSHINT) $(JSHINT_FLAGS) $$file || exit 1; \
@@ -67,7 +67,7 @@ jshint-tests: $(NODE_MODULES)
 # This target lints only JavaScript example files.
 
 jshint-examples: $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JSHINT) $(JSHINT_FLAGS) $$file || exit 1; \
@@ -81,7 +81,7 @@ jshint-examples: $(NODE_MODULES)
 # This target lints only JavaScript benchmark files.
 
 jshint-benchmarks: $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JSHINT) $(JSHINT_FLAGS) $$file || exit 1; \

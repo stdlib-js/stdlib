@@ -43,7 +43,7 @@ endif
 # This target lints only Python source files.
 
 pycodestyle-src:
-	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
@@ -57,7 +57,7 @@ pycodestyle-src:
 # This target lints only Python test fixture files.
 
 pycodestyle-tests-fixtures:
-	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
@@ -71,7 +71,7 @@ pycodestyle-tests-fixtures:
 # This target lints only Python example files.
 
 pycodestyle-examples:
-	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \
@@ -85,7 +85,7 @@ pycodestyle-examples:
 # This target lints only Python benchmark files.
 
 pycodestyle-benchmarks:
-	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting code style: $$file"; \
 		$(PYCODESTYLE) $(PYCODESTYLE_FLAGS) $$file || exit 1; \

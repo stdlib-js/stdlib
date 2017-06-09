@@ -37,7 +37,7 @@ ESLINT_FLAGS ?= \
 # This target lints only JavaScript source files.
 
 eslint-src: $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
@@ -51,7 +51,7 @@ eslint-src: $(NODE_MODULES)
 # This target lints only JavaScript test files.
 
 eslint-tests: $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_TESTS) $$file || exit 1; \
@@ -65,7 +65,7 @@ eslint-tests: $(NODE_MODULES)
 # This target lints only JavaScript example files.
 
 eslint-examples: $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_EXAMPLES) $$file || exit 1; \
@@ -79,7 +79,7 @@ eslint-examples: $(NODE_MODULES)
 # This target lints only JavaScript benchmark files.
 
 eslint-benchmarks: $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_BENCHMARKS) $$file || exit 1; \

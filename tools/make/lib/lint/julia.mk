@@ -24,7 +24,7 @@ lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-ju
 # This target lints only Julia source files.
 
 lint-julia-src:
-	$(QUIET) $(FIND_JULIA_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_JULIA_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
@@ -38,7 +38,7 @@ lint-julia-src:
 # This target lints only Julia test fixture files.
 
 lint-julia-tests-fixtures:
-	$(QUIET) $(FIND_JULIA_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_JULIA_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
@@ -52,7 +52,7 @@ lint-julia-tests-fixtures:
 # This target lints only Julia example files.
 
 lint-julia-examples:
-	$(QUIET) $(FIND_JULIA_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_JULIA_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
@@ -66,7 +66,7 @@ lint-julia-examples:
 # This target lints only Julia benchmark files.
 
 lint-julia-benchmarks:
-	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \

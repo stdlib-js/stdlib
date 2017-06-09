@@ -6,7 +6,7 @@
 # This target runs a list of JavaScript benchmarks in sequential order. Note that we assume the benchmarks can be run using Node.js.
 
 benchmark-javascript: $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		NODE_ENV=$(NODE_ENV_BENCHMARK) \

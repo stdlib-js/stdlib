@@ -45,7 +45,7 @@ endif
 # This target lints only Python source files.
 
 pylint-src:
-	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
@@ -59,7 +59,7 @@ pylint-src:
 # This target lints only Python test fixture files.
 
 pylint-tests-fixtures:
-	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
@@ -73,7 +73,7 @@ pylint-tests-fixtures:
 # This target lints only Python example files.
 
 pylint-examples:
-	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
@@ -87,7 +87,7 @@ pylint-examples:
 # This target lints only Python benchmark files.
 
 pylint-benchmarks:
-	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \

@@ -6,7 +6,7 @@
 # This target runs a list of examples in sequential order. Note that we assume the examples can be run using Node.js.
 
 examples: $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running example: $$file"; \
 		NODE_ENV=$(NODE_ENV_EXAMPLES) \

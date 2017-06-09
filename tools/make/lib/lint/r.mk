@@ -24,7 +24,7 @@ lint-r: lint-r-src lint-r-tests-fixtures lint-r-examples lint-r-benchmarks
 # This target lints only R source files.
 
 lint-r-src:
-	$(QUIET) $(FIND_R_SOURCES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_R_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
@@ -38,7 +38,7 @@ lint-r-src:
 # This target lints only R test fixture files.
 
 lint-r-tests-fixtures:
-	$(QUIET) $(FIND_R_TESTS_FIXTURES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_R_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
@@ -52,7 +52,7 @@ lint-r-tests-fixtures:
 # This target lints only R example files.
 
 lint-r-examples:
-	$(QUIET) $(FIND_R_EXAMPLES_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_R_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
@@ -66,7 +66,7 @@ lint-r-examples:
 # This target lints only R benchmark files.
 
 lint-r-benchmarks:
-	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | grep '^\/' | while read -r file; do \
+	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
