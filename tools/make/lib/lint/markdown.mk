@@ -26,7 +26,7 @@ lint-markdown: $(NODE_MODULES)
 
 # Lint.
 #
-# This target lints Markdown files according to a specified file list.
+# This target lints Markdown files according to a specified file list. Note that we expect `$FILES` to be a Markdown file list.
 
 lint-markdown-files: $(NODE_MODULES)
 	$(QUIET) $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(FILES)
