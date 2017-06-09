@@ -80,7 +80,7 @@ lint-julia-benchmarks:
 # This target lints Julia files. Note that we expect `$JULIA_FILES` to be a Julia file list.
 
 lint-julia-files:
-	$(QUIET) for file in $(JULIA_FILES); do \
+	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
