@@ -1,0 +1,36 @@
+
+{{alias}}( a, b )
+    Tests if two arguments are strictly equal.
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct.
+
+    Parameters
+    ----------
+    a: any
+        First input value.
+
+    b: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are strictly equal.
+
+    Examples
+    --------
+    > var bool = {{alias}}( true, true )
+    true
+    > bool = {{alias}}( {}, {} )
+    false
+    > bool = {{alias}}( -0.0, -0.0 )
+    true
+    > bool = {{alias}}( -0.0, 0.0 )
+    false
+    > bool = {{alias}}( NaN, NaN )
+    false
+
+    See Also
+    --------
+
