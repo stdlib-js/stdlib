@@ -26,7 +26,7 @@ mapValues,utils/map-values-async
 mapValuesLimit,utils/map-values-async
 mapValuesSeries,utils/map-values-async
 reduce,utils/reduce-async
-reduceRight,(planned)
+reduceRight,utils/reduce-right-async
 reject,(maybe)
 rejectLimit,(maybe)
 rejectSeries,(maybe)
@@ -40,7 +40,7 @@ applyEachSeries,(planned)
 auto,N/A
 autoInject,N/A
 cargo,N/A
-compose,(planned)
+compose,utils/compose-async
 doDuring,N/A
 doWhilst,N/A
 during,N/A
@@ -52,7 +52,7 @@ queue,(planned)
 race,(planned)
 retry,(planned)
 retryable,(planned)
-seq,(planned)
+seq,utils/function-sequence-async
 series,(planned)
 times,(planned)
 timesLimit,(planned)
