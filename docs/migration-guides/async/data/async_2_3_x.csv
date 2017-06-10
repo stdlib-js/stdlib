@@ -26,7 +26,7 @@ mapValues,utils/map-values-async
 mapValuesLimit,utils/map-values-async
 mapValuesSeries,utils/map-values-async
 reduce,utils/reduce-async
-reduceRight,(planned)
+reduceRight,utils/reduce-right-async
 reject,(maybe)
 rejectLimit,(maybe)
 rejectSeries,(maybe)
