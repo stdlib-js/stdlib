@@ -40,7 +40,7 @@ applyEachSeries,(planned)
 auto,N/A
 autoInject,N/A
 cargo,N/A
-compose,(planned)
+compose,utils/compose-async
 doDuring,N/A
 doWhilst,N/A
 during,N/A
