@@ -52,7 +52,7 @@ queue,(planned)
 race,(planned)
 retry,(planned)
 retryable,(planned)
-seq,(planned)
+seq,utils/function-sequence-async
 series,(planned)
 times,(planned)
 timesLimit,(planned)
