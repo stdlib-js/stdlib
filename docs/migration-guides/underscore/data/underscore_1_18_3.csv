@@ -60,7 +60,7 @@ compose,utils/compose
 keys,(planned)
 allKeys,utils/keys-in
 values,utils/values
-mapObject,(planned)
+mapObject,utils/map-values
 pairs,utils/entries
 invert,utils/object-inverse
 create,(planned)
@@ -70,7 +70,7 @@ extend,utils/merge
 extendOwn,utils/merge
 pick,utils/pick and utils/pick-by
 omit,utils/omit and utils/omit-by
-defaults,N/A
+defaults,utils/merge
 clone,utils/copy
 tap,N/A
 has,assert/has-own-property
@@ -97,7 +97,7 @@ noConflict,N/A
 identity,utils/identity-function
 constant,utils/constant-function
 noop,utils/noop
-times,(planned)
+times,utils/map-function
 random,math/base/random/*
 mixin,utils/merge
 iteratee,N/A

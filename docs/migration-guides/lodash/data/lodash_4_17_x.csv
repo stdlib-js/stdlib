@@ -196,8 +196,8 @@ assignInWith,N/A
 assignWith,N/A
 at,utils/deep-pluck
 create,(planned)
-defaults,N/A
-defaultsDeep,N/A
+defaults,utils/merge
+defaultsDeep,utils/merge
 entries,utils/entries
 entriesIn,(planned)
 extend,utils/merge
@@ -300,6 +300,6 @@ stubArray,N/A
 stubFalse,N/A
 stubObject,N/A
 stubString,N/A
-times,(maybe)
+times,utils/map-function
 toPath,N/A
 uniqueId,N/A
