@@ -43,7 +43,7 @@ cargo,N/A
 compose,utils/compose-async
 doDuring,N/A
 doWhilst,N/A
-during,N/A
+during,utils/while-async
 forever,N/A
 parallel,(planned)
 parallelLimit,(planned)
@@ -59,7 +59,7 @@ timesLimit,utils/map-function-async
 timesSeries,utils/map-function-async
 until,(planned)
 waterfall,utils/series-waterfall
-whilst,(maybe)
+whilst,utils/while-async
 apply,(maybe)
 asyncify,(planned)
 constant,(planned)
