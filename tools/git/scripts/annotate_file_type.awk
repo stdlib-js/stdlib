@@ -140,6 +140,10 @@
 	print "plaintext" OFS $1 OFS $2
 	next
 }
+/\.wasm$/ {
+	print "WASM" OFS $1 OFS $2
+	next
+}
 /\.woff$/ {
 	print "fonts" OFS $1 OFS $2
 	next
