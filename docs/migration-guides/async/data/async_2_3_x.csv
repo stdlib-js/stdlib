@@ -54,9 +54,9 @@ retry,(planned)
 retryable,(planned)
 seq,utils/function-sequence-async
 series,(planned)
-times,(planned)
-timesLimit,(planned)
-timesSeries,(planned)
+times,utils/map-function-async
+timesLimit,utils/map-function-async
+timesSeries,utils/map-function-async
 until,(planned)
 waterfall,utils/series-waterfall
 whilst,(maybe)
