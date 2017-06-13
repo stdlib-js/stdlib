@@ -57,7 +57,7 @@ series,(planned)
 times,utils/map-function-async
 timesLimit,utils/map-function-async
 timesSeries,utils/map-function-async
-until,(planned)
+until,utils/until-async
 waterfall,utils/series-waterfall
 whilst,utils/while-async
 apply,(maybe)
