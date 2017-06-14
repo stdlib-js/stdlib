@@ -1,0 +1,75 @@
+
+{{alias}}( fcn, predicate, done[, thisArg] )
+    Invokes a function until a test condition is true.
+
+    The condition is evaluated *after* executing the provided function; thus,
+    `fcn` *always* executes at least once.
+
+    The function to invoke is provided two arguments:
+
+    - `i`: iteration number (starting from zero)
+    - `next`: a callback which must be invoked before proceeding to the next
+      iteration
+
+    The first argument of the `next` callback is an `error` argument. If `fcn`
+    calls the `next` callback with a truthy `error` argument, the function
+    suspends execution and immediately calls the `done` callback for subsequent
+    `error` handling.
+
+    The predicate function is provided two arguments:
+
+    - `i`: iteration number (starting from one)
+    - `clbk`: a callback indicating whether to invoke `fcn`
+
+    The `clbk` function accepts two arguments:
+
+    - `error`: error argument
+    - `bool`: test result
+
+    If the test result is falsy, the function continues invoking `fcn`;
+    otherwise, the function invokes the `done` callback.
+
+    The `done` callback is invoked with an `error` argument and any arguments
+    passed to the final `next` callback.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    fcn: Function
+        The function to invoke.
+
+    predicate: Function
+        The predicate function which indicates whether to continue invoking a
+        function.
+
+    done: Function
+        Callback to invoke upon completion.
+
+    thisArg: any (optional)
+        Execution context for the invoked function.
+
+    Examples
+    --------
+    > function fcn( i, next ) {
+    ...     setTimeout( onTimeout, i );
+    ...     function onTimeout() {
+    ...         next( null, 'boop'+i );
+    ...     }
+    ... };
+    > function predicate( i, clbk ) { clbk( null, i >= 5 ); };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > {{alias}}( fcn, predicate, done )
+    boop: 4
+
+    See Also
+    --------
+
