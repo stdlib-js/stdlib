@@ -41,8 +41,9 @@ auto,N/A
 autoInject,N/A
 cargo,N/A
 compose,utils/compose-async
-doDuring,N/A
-doWhilst,N/A
+doDuring,utils/do-while-async
+doUntil,utils/do-until-async
+doWhilst,utils/do-while-async
 during,utils/while-async
 forever,N/A
 parallel,(planned)
