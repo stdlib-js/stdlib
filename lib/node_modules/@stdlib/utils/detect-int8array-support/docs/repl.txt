@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `Int8Array` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `Int8Array` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+
