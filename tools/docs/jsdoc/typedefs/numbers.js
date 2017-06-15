@@ -186,3 +186,21 @@
 *
 * @typedef {number} Probability
 */
+
+/**
+* A 64-bit complex number, in which the real and imaginary components are each stored as single-precision floating-point numbers.
+*
+* @typedef {Object} Complex64
+*/
+
+/**
+* A 128-bit complex number, in which the real and imaginary components are each stored as double-precision floating-point numbers.
+*
+* @typedef {Object} Complex128
+*/
+
+/**
+* A complex number.
+*
+* @typedef {(Complex64|Complex128)} Complex
+*/
