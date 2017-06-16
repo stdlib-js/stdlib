@@ -1,0 +1,32 @@
+
+{{alias}}( key, value )
+    Revives a JSON-serialized typed array.
+
+    The serialization format for typed array is an object having the following
+    fields:
+
+    - type: typed array type (e.g., "Float64Array", "Int8Array")
+    - data: typed array data as an array of numbers
+
+    Parameters
+    ----------
+    key: string
+        Key.
+
+    value: any
+        Value.
+
+    Returns
+    -------
+    out: any
+        Value or typed array.
+
+    Examples
+    --------
+    > var str = '{"type":"Float64Array","data":[5,3]}';
+    > var arr = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    <Float64Array>[ 5.0, 3.0 ]
+
+    See Also
+    --------
+
