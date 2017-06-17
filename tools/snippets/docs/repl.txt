@@ -11,12 +11,12 @@
 
     Parameters
     ----------
-    x: double
+    x: number
         TODO: desc
 
     Returns
     -------
-    y: double
+    y: number
         TODO: desc
 
     Examples
