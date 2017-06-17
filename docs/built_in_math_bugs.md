@@ -1,6 +1,6 @@
 # Bugs
 
-> Bugs in the native (built-in) `Math` namespace.
+> Bugs in the built-in `Math` namespace.
 
 * [Sine and cosine in V8][@bug:v8:3006]
 * [Trigonometric functions in V8][@bug:chromium:320097]
