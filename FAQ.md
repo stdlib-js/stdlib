@@ -354,7 +354,7 @@ For the following reasons:
 
 ### Import support?
 
-No. This stance may be reevaluated when the following conditions are met:
+Not at the time. This stance may be reevaluated when the following conditions are met:
 
 1. The specification has finalized.
 1. The specification is widely and consistently implemented.
