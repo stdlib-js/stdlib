@@ -247,7 +247,7 @@ To better support numeric computing, standards bodies can do the following:
 
 1. __64-bit integers__: add support for 64-bit integers. 64-bit integers (both signed and unsigned) are important for the following reasons:
 
-   * __Bit manipulation__. Currently, the only way to manipulate the bits of a double-precision floating-point number is to use typed arrays (see [`toWords()`][stdlib-float64-to-words]), which is problematic because the process is, when compared to modern languages, [slow][stdlib-frexp] and [inefficient][stdlib-ldexp]. Modern languages with 64-bit integer support allow the bits of a double-precision floating-point number to be [reinterpreted][golang-float64bits] as a 64-bit integer, thus enabling easier manipulation, faster operations, and more efficient [code][golang-frexp]. This is especially important for low level implementations of transcendental [functions][stdlib-exp10] where bit manipulation can lead to significant performance gains.
+   * __Bit manipulation__. Currently, the only way to manipulate the bits of a double-precision floating-point number is to use typed arrays (see [`toWords()`][@stdlib/math/base/utils/float64-to-words]), which is problematic because the process is, when compared to modern languages, [slow][@stdlib/math/base/special/frexp] and [inefficient][@stdlib/math/base/special/ldexp]. Modern languages with 64-bit integer support allow the bits of a double-precision floating-point number to be [reinterpreted][golang-float64bits] as a 64-bit integer, thus enabling easier manipulation, faster operations, and more efficient [code][golang-frexp]. This is especially important for low level implementations of transcendental [functions][@stdlib/math/base/special/exp10] where bit manipulation can lead to significant performance gains.
    * __Pseudorandom number generation__. Modern pseudorandom number generators (PRNGs) commonly use 64-bit integers. Hence, lack of native 64-bit integer support prevents implementing more robust PRNGs which have longer periods and better randomness qualities (e.g., [xorshift*][xorshift*], [PCG][pcg], and [Mersenne twister (64-bit)][mersenne-twister]).
    * __IDs__. In modern applications, 32-bit integer IDs are rarely enough. 32-bit integers have on the order of `10**9` unique values compared to `10**19` for 64-bit integers. With 64-bit integer support, additional efficient hashing and bit masking algorithms become feasible.
 
@@ -682,10 +682,10 @@ See the [contributing guide][contributing-guide].
 [julia-bigint]: http://docs.julialang.org/en/stable/stdlib/numbers/?highlight=bigfloat#Base.BigInt
 [julia-bigfloat]: http://docs.julialang.org/en/stable/stdlib/numbers/?highlight=bigfloat#Base.BigFloat
 
-[stdlib-frexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/frexp/lib/frexp.js#L67
-[stdlib-ldexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/ldexp/lib/ldexp.js#L105
-[stdlib-exp10]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/exp10/lib/exp10.js#L131
-[stdlib-float64-to-words]: https://github.com/stdlib-js/stdlib/blob/1db589dcd5a8f8c4e4ab3bae8e8c47bd0c0266e8/lib/node_modules/%40stdlib/math/base/utils/float64-to-words/lib/to_words.js
+[@stdlib/math/base/special/frexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/frexp/lib/frexp.js#L67
+[@stdlib/math/base/special/ldexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/ldexp/lib/ldexp.js#L105
+[@stdlib/math/base/special/exp10]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/exp10/lib/exp10.js#L131
+[@stdlib/math/base/utils/float64-to-words]: https://github.com/stdlib-js/stdlib/blob/1db589dcd5a8f8c4e4ab3bae8e8c47bd0c0266e8/lib/node_modules/%40stdlib/math/base/utils/float64-to-words/lib/to_words.js
 
 [xorshift*]: https://en.wikipedia.org/wiki/Xorshift
 [pcg]: http://www.pcg-random.org/other-rngs.html
