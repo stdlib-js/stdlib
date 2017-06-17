@@ -378,7 +378,7 @@ Tree shaking (i.e., removing unused symbols) treats the symptom, not the disease
 
 ### Promise support?
 
-No.
+Promise support is planned. Help providing promise support, including implementing a `Promise` polyfill for older environments, would be greatly appreciated.
 
 <!-- </faq-question> -->
 
