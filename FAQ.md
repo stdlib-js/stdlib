@@ -8,7 +8,7 @@
 * [Why use this project?](#why-use)
 * [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
 * [Why not use R, Python, or Julia?](#other-languages)
-* [Why not use native add-ons?](#native-add-ons)
+* [Why not exclusively use native add-ons?](#native-add-ons)
 * [What about WebAssembly?](#web-assembly)
 * [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
 * [Why not change the ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
@@ -115,7 +115,7 @@ You should use JavaScript because
 
 <a name="native-add-ons"></a>
 
-### Why not use native add-ons?
+### Why not exclusively use native add-ons?
 
 Native [add-ons][node-add-ons] have several disadvantages:
 
