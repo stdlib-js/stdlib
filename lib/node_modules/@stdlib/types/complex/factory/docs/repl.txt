@@ -1,0 +1,35 @@
+
+{{alias}}( real, imag[, dtype] )
+    Creates a complex number.
+
+    The function supports the following data types:
+
+    - float64
+    - float32
+
+    Parameters
+    ----------
+    real: number
+        Real component.
+
+    imag: number
+        Imaginary component.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    z: Complex
+        Complex number.
+
+    Examples
+    --------
+    > var z = {{alias}}( 5.0, 3.0, 'float64' )
+    <Complex128>
+    > z = {{alias}}( 5.0, 3.0, 'float32' )
+    <Complex64>
+
+    See Also
+    --------
+
