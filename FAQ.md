@@ -564,7 +564,7 @@ You can support the project by
 * advocating for standards committees to add features at the specification level to better enable numeric computing in JavaScript
 * helping promote the project on social media, at your company, and within your networks
 * providing build and infrastructure support
-* providing financial support
+* providing financial support ([Patreon][patreon-stdlib])
 
 If you have additional ideas, get in touch, and we'll do our best to help!
 
@@ -708,5 +708,7 @@ See the [contributing guide][contributing-guide].
 [data-parallelism]: https://en.wikipedia.org/wiki/Data_parallelism
 
 [matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
+
+[patreon-stdlib]: https://www.patreon.com/athan
 
 <!-- </definitions> -->
