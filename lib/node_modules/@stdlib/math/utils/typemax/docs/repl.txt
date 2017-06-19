@@ -1,0 +1,37 @@
+
+{{alias}}( dtype )
+    Returns the maximum value of a specified numeric type.
+
+    The following numeric types are supported:
+
+    - float64: double-precision floating-point numbers
+    - float32: single-precision floating-point numbers
+    - float16: half-precision floating-point numbers
+    - int32: 32-bit two's complement signed integers
+    - uint32: 32-bit unsigned integers
+    - int16: 16-bit two's complement signed integers
+    - uint16: 16-bit unsigned integers
+    - int8: 8-bit two's complement signed integers
+    - uint8: 8-bit unsigned integers
+    - uint8c: 8-bit unsigned integers clamped to 0-255
+
+    Parameters
+    ----------
+    dtype: string
+        Numeric type.
+
+    Returns
+    -------
+    out: number
+        Maximum value.
+
+    Examples
+    --------
+    > var m = {{alias}}( 'int8' )
+    127
+    > m = {{alias}}( 'uint32' )
+    4294967295
+
+    See Also
+    --------
+
