@@ -1,0 +1,31 @@
+
+{{alias}}( dtype )
+    Returns the smallest positive normal value capable of being represented by a
+    numeric real type.
+
+    The following numeric real types are supported:
+
+    - float64: double-precision floating-point numbers
+    - float32: single-precision floating-point numbers
+    - float16: half-precision floating-point numbers
+
+    Parameters
+    ----------
+    dtype: string
+        Numeric type.
+
+    Returns
+    -------
+    out: number
+        Smallest finite normal value.
+
+    Examples
+    --------
+    > var m = {{alias}}( 'float16' )
+    0.00006103515625
+    > m = {{alias}}( 'float32' )
+    1.1754943508222875e-38
+
+    See Also
+    --------
+
