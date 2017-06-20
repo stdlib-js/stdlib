@@ -67,7 +67,7 @@ zipWith,N/A
 countBy,utils/count-by
 each,utils/for-each
 each-right,utils/for-each-right
-every,utils/every
+every,utils/every-by
 filter,(planned)
 find,utils/find
 findLast,utils/find
@@ -90,7 +90,7 @@ sample,math/random
 sampleSize,N/A
 shuffle,math/random
 size,N/A
-some,utils/some
+some,utils/any-by
 sortBy,(planned)
 now,time/now
 after,(planned)

@@ -10,9 +10,9 @@ eachOf,utils/for-each-async
 eachOfLimit,utils/for-each-async
 eachOfSeries,utils/for-each-async
 eachSeries,utils/for-each-async
-every,utils/every-async
-everyLimit,utils/every-async
-everySeries,utils/every-async
+every,utils/every-by-async
+everyLimit,utils/every-by-async
+everySeries,utils/every-by-async
 filter,(maybe)
 filterLimit,(maybe)
 filterSeries,(maybe)
@@ -30,9 +30,9 @@ reduceRight,utils/reduce-right-async
 reject,(maybe)
 rejectLimit,(maybe)
 rejectSeries,(maybe)
-some,utils/some-async
-someLimit,utils/some-async
-someSeries,utils/some-async
+some,utils/some-by-async
+someLimit,utils/some-by-async
+someSeries,utils/some-by-async
 sortBy,N/A
 transform,utils/reduce-async
 applyEach,(planned)

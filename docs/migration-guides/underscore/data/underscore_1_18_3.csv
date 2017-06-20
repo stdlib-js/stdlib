@@ -8,8 +8,8 @@ filter,(planned)
 where,(maybe)
 findWhere,N/A
 reject,(maybe)
-every,utils/every
-some,utils/some
+every,utils/every-by
+some,utils/any-by
 contains,utils/contains
 invoke,N/A
 pluck,utils/pluck
