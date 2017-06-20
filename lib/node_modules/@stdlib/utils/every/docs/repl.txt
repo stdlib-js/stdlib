@@ -1,0 +1,29 @@
+
+{{alias}}( collection )
+    Tests whether all elements in a collection are truthy.
+
+    The function immediately returns upon encountering a falsy value.
+
+    If provided an empty collection, the function returns `true`.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if all elements are truthy; otherwise, the
+        function returns `false`.
+
+    Examples
+    --------
+    > var arr = [ 1, 1, 1, 1, 1 ];
+    > var bool = {{alias}}( arr )
+    true
+
+    See Also
+    --------
+
