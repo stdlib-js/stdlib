@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a 16-bit unsigned integer.
+
+    Examples
+    --------
+    > {{alias}}
+    2
+
+    See Also
+    --------
+
