@@ -1,0 +1,40 @@
+
+{{alias}}( dtype )
+    Returns the size (in bytes) of the canonical binary representation of a
+    specified numeric type.
+
+    The following numeric types are supported:
+
+    - float64: double-precision floating-point numbers
+    - float32: single-precision floating-point numbers
+    - float16: half-precision floating-point numbers
+    - int32: 32-bit two's complement signed integers
+    - uint32: 32-bit unsigned integers
+    - int16: 16-bit two's complement signed integers
+    - uint16: 16-bit unsigned integers
+    - int8: 8-bit two's complement signed integers
+    - uint8: 8-bit unsigned integers
+    - uint8c: 8-bit unsigned integers clamped to 0-255
+    - complex128: 128-bit complex numbers
+    - complex64: 64-bit complex numbers
+
+    Parameters
+    ----------
+    dtype: string
+        Numeric type.
+
+    Returns
+    -------
+    out: number
+        Size (in bytes).
+
+    Examples
+    --------
+    > var s = {{alias}}( 'int8' )
+    1
+    > s = {{alias}}( 'uint32' )
+    4
+
+    See Also
+    --------
+
