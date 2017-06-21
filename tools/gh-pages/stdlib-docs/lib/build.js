@@ -7,18 +7,11 @@ var resolve = require( 'path' ).resolve;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
-var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var menu = require( './../../stdlib-package-menu' );
 var buildPkgs = require( './../../build-packages' );
 var defaults = require( './defaults.json' );
-
-
-// VARIABLES //
-
-var fpath = resolve( __dirname, '..', 'static', 'js', 'script.js' );
-var script = readFileSync( fpath, {
-	'encoding': 'utf8'
-});
+var head = require( './head.js' );
+var scripts = require( './scripts.js' );
 
 
 // MAIN //
@@ -63,9 +56,9 @@ function build( clbk ) {
 		}
 		dest = resolve( cwd(), opts.out );
 		bopts = {
-			'head': '<style>'+menu.css+'</style>',
+			'head': head+'\n<style>'+menu.css+'</style>',
 			'prepend': menu.html,
-			'append': '<script type="text/javascript">'+script+'</script>'
+			'append': scripts.join( '\n' )
 		};
 
 		buildPkgs( dest, bopts, onBuild );
