@@ -16,11 +16,11 @@
 		var i;
 
 		// Initialize the browser history state:
-		if ( history && history.pushState ) {
+		if ( history && history.replaceState ) {
 			state = {
 				'url': location.href
 			};
-			history.pushState( state, '' );
+			history.replaceState( state, '', location.href );
 		}
 		// Add an event listener for whenever the active history changes:
 		if ( window.addEventListener ) {
