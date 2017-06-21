@@ -16,6 +16,7 @@
 	".h",
 	".hpp",
 	".html",
+	".ico",
 	".jl",
 	".jpg",
 	".js",
@@ -31,5 +32,6 @@
 	".txt",
 	".wasm",
 	".woff",
-	".yml"
+	".yml",
+	".xml"
 ]
