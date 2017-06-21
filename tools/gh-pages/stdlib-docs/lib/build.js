@@ -65,7 +65,7 @@ function build( clbk ) {
 		bopts = {
 			'head': '<style>'+menu.css+'</style>',
 			'prepend': menu.html,
-			'append': script
+			'append': '<script type="text/javascript">'+script+'</script>'
 		};
 
 		buildPkgs( dest, bopts, onBuild );
