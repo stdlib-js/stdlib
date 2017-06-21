@@ -7,9 +7,18 @@ var resolve = require( 'path' ).resolve;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var menu = require( './../../stdlib-package-menu' );
 var buildPkgs = require( './../../build-packages' );
 var defaults = require( './defaults.json' );
+
+
+// VARIABLES //
+
+var fpath = resolve( __dirname, '..', 'static', 'js', 'script.js' );
+var script = readFileSync( fpath, {
+	'encoding': 'utf8'
+});
 
 
 // MAIN //
@@ -43,6 +52,7 @@ function build( clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Object} menu - menu
+	* @returns {void}
 	*/
 	function onMenu( error, menu ) {
 		var bopts;
@@ -54,7 +64,8 @@ function build( clbk ) {
 		dest = resolve( cwd(), opts.out );
 		bopts = {
 			'head': '<style>'+menu.css+'</style>',
-			'prepend': menu.html
+			'prepend': menu.html,
+			'append': script
 		};
 
 		buildPkgs( dest, bopts, onBuild );
@@ -65,6 +76,7 @@ function build( clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onBuild( error ) {
 		if ( error ) {
