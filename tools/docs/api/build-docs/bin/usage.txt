@@ -1,5 +1,5 @@
 
-Usage: stdlib-docs [options]
+Usage: build-docs [options]
 
 Options:
 

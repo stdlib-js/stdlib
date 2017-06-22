@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var build = require( 'path/to/tools/stdlib-docs' );
+var build = require( 'path/to/tools/build-docs' );
 ```
 
 #### build( done )
@@ -55,7 +55,7 @@ build( done );
 ## Examples
 
 ``` javascript
-var build = require( 'path/to/tools/stdlib-docs' );
+var build = require( 'path/to/tools/build-docs' );
 
 build( clbk );
 
@@ -86,7 +86,7 @@ function clbk( error ) {
 ### Usage
 
 ``` bash
-Usage: stdlib-docs [options]
+Usage: build-docs [options]
 
 Options:
 
@@ -113,7 +113,7 @@ Options:
 ### Examples
 
 ``` bash
-$ DEBUG=* stdlib-docs
+$ DEBUG=* build-docs
 ```
 
 </section>

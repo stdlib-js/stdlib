@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/tools/gh-pages/tree-to-menu-fragment",
+  "name": "@stdlib/tools/docs/api/package-menu",
   "version": "0.0.0",
-  "description": "Generate an HTML menu fragment from a tree object.",
+  "description": "Generate a package HTML menu fragment.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -28,7 +28,9 @@
     "list",
     "toc",
     "html",
-    "fragment"
+    "fragment",
+    "packages",
+    "pkgs"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"

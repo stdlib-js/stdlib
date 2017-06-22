@@ -3,10 +3,10 @@
 /**
 * Generate a menu HTML fragment from a tree object.
 *
-* @module @stdlib/tools/gh-pages/tree-to-menu-fragment
+* @module @stdlib/tools/docs/api/tree-to-menu-fragment
 *
 * @example
-* var menu = require( '@stdlib/tools/gh-pages/tree-to-menu-fragment' );
+* var menu = require( '@stdlib/tools/docs/api/tree-to-menu-fragment' );
 *
 * var tree = {
 *     'foo': true,

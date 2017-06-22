@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/gh-pages/stdlib-docs",
+  "name": "@stdlib/tools/docs/api/build-docs",
   "version": "0.0.0",
   "description": "Build documentation.",
   "author": {
@@ -13,7 +13,7 @@
     }
   ],
   "bin": {
-    "stdlib-docs": "./bin/cli"
+    "build-docs": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",

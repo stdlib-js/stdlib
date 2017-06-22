@@ -16,8 +16,8 @@ var listItem = require( './list_item.js' );
 
 var begin = '<input class="slideout-menu-input" id="slideout-menu-input-root" name="slideout-menu-input-root" type="checkbox"><label class="slideout-menu-label hamburger-menu-icon" for="slideout-menu-input-root"><span></span><span></span><span></span></label><nav class="menu slideout-menu">';
 var header = '<a class="menu-header-wrapper" href="{{href}}"><header class="menu-header"><span class="menu-header-title">{{title}}</span></header></a>';
-var list_start = '<ul>';
-var list_end = '</ul>';
+var listStart = '<ul>';
+var listEnd = '</ul>';
 var end = '</nav>';
 
 
@@ -63,7 +63,7 @@ function menu( tree, options ) {
 	str += tmp;
 
 	keys = getKeys( tree ).sort();
-	str += list_start;
+	str += listStart;
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
 		v = tree[ key ];
@@ -80,7 +80,7 @@ function menu( tree, options ) {
 			str += listItem( v, opts.mount+key );
 		}
 	}
-	str += list_end;
+	str += listEnd;
 	str += end;
 	return str;
 } // end FUNCTION menu()

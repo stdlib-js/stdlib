@@ -4,7 +4,7 @@
 
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
-var pkgTree = require( './../../../pkgs/tree' );
+var pkgTree = require( './../../../../pkgs/tree' );
 var toFragment = require( './../../tree-to-menu-fragment' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
@@ -59,6 +59,7 @@ function menu( options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Object} tree - package tree
+	* @returns {void}
 	*/
 	function onTree( error, tree ) {
 		var subtree;
@@ -67,8 +68,8 @@ function menu( options, clbk ) {
 			return cb( error );
 		}
 		subtree = tree[ '@stdlib' ];
-		subtree.stdlib = subtree.__namespace__;
-		delete subtree.__namespace__;
+		subtree.stdlib = subtree.__namespace__; // eslint-disable-line no-underscore-dangle
+		delete subtree.__namespace__; // eslint-disable-line no-underscore-dangle
 
 		out = {
 			'html': toFragment( subtree, opts ),

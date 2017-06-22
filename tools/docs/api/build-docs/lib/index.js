@@ -3,10 +3,10 @@
 /**
 * Build documentation.
 *
-* @module @stdlib/tools/gh-pages/stdlib-docs
+* @module @stdlib/tools/docs/api/build-docs
 *
 * @example
-* var build = require( '@stdlib/tools/gh-pages/stdlib-docs' );
+* var build = require( '@stdlib/tools/docs/api/build-docs' );
 *
 * build( clbk );
 *

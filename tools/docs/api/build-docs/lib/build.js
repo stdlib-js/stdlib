@@ -2,12 +2,12 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'stdlib-docs:main' );
+var debug = require( 'debug' )( 'build-docs:main' );
 var resolve = require( 'path' ).resolve;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
-var menu = require( './../../stdlib-package-menu' );
+var menu = require( './../../package-menu' );
 var buildPkgs = require( './../../build-packages' );
 var defaults = require( './defaults.json' );
 var head = require( './head.js' );
