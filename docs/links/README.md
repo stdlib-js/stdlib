@@ -15,12 +15,15 @@ A link database. Database items are links to resources available on the web.
 
 ## Usage
 
-The database is a [JSON][json] file, where each `key` is a resource identifier and each `value` is a URL specifying the location of a resource accessible via the web.
+The database is a [JSON][json] file, where each `key` is a URL specifying the location of a resource accessible via the web and each `value` is an `object` containing the resource `id` and other meta information.
 
 ``` text
 {
     ...
-    "json": "http://www.json.org/",
+    "http://www.json.org/": {
+        "id": "json",
+        "short": ""
+    },
     ....
 }
 ``` 
@@ -35,6 +38,7 @@ The database is a [JSON][json] file, where each `key` is a resource identifier a
 ## Notes
 
 * When adding a database entry, ensure that resource identifiers (keys) are __sorted__ in alphabetical order.
+* Before assigning an `id` to a URL, ensure that the `id` is __unique__.
 * Ensure that a URL is [__percent-encoded__][percent-encoding].
 
 </section>
