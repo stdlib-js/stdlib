@@ -9,6 +9,7 @@
 #   4. Add support for specifying a documentation branch.
 #   5. Add support for specifying a documentation remote repository name.
 #   6. Make determining a temporary build directory more robust. Ideally, we would use the `tmpdir` utility to build in the "proper" tmp directory.
+#   7. Print total time elapsed for entire build sequence.
 #
 
 
