@@ -3,10 +3,10 @@
 /**
 * Build package assets.
 *
-* @module @stdlib/tools/gh-pages/pkg-browser-build
+* @module @stdlib/tools/docs/api/pkg-browser-build
 *
 * @example
-* var build = require( '@stdlib/tools/gh-pages/pkg-browser-build' );
+* var build = require( '@stdlib/tools/docs/api/pkg-browser-build' );
 *
 * var root = '/foo/bar';
 * var out = '/beep/boop';

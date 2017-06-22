@@ -7,7 +7,7 @@ var resolve = require( 'path' ).resolve;
 
 // VARIABLES //
 
-var root = resolve( __dirname, './../../../../lib/node_modules/' );
+var root = resolve( __dirname, './../../../../../lib/node_modules/' ); // eslint-disable-line no-redeclare
 
 
 // MAIN //
@@ -17,7 +17,7 @@ var root = resolve( __dirname, './../../../../lib/node_modules/' );
 *
 * @private
 * @param {string} dpath - package path
-* @param {string} package name
+* @returns {string} package name
 */
 function packageName( dpath ) {
 	if ( dpath.length < root.length ) {

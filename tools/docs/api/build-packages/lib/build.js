@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:packages:build:build' );
+var debug = require( 'debug' )( 'docs:packages:build' );
 var join = require( 'path' ).join;
 var copy = require( '@stdlib/utils/copy' );
 var buildPkg = require( './../../pkg-browser-build' );
@@ -37,6 +37,7 @@ var packageName = require( './package_name.js' );
 * @param {string} opts.benchmarks.html - HTML filename
 * @param {string} opts.benchmarks.title - HTML title
 * @param {Callback} clbk - callback to invoke upon completion
+* @returns {void}
 */
 function build( pkgs, dest, opts, clbk ) {
 	var count;
@@ -50,7 +51,7 @@ function build( pkgs, dest, opts, clbk ) {
 	debug( 'Building %d packages...', len );
 
 	// Build one package at a time to avoid filesystem limits:
-	next();
+	return next();
 
 	/**
 	* Builds the next package.
@@ -91,7 +92,7 @@ function build( pkgs, dest, opts, clbk ) {
 		debug( 'Build options: %s', JSON.stringify( bopts ) );
 
 		debug( 'Building package: %s (%d of %d)', pkg, i+1, len );
-		buildPkg( pkg, out, bopts, onBuild( i ) );
+		buildPkg( pkg, out, bopts, getClbk( i ) );
 	} // end FUNCTION next()
 
 	/**
@@ -99,31 +100,35 @@ function build( pkgs, dest, opts, clbk ) {
 	*
 	* @private
 	* @param {NonNegativeInteger} idx - index
+	* @returns {Callback} callback to be invoked upon building a package
 	*/
-	function onBuild( idx ) {
+	function getClbk( idx ) {
 		var pkg = pkgs[ idx ];
 		var k = idx + 1;
+		return onBuild;
 		/**
 		* Callback invoked upon building a package.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
+		* @returns {void}
 		*/
-		return function onBuild( error ) {
+		function onBuild( error ) {
 			if ( error ) {
 				debug( 'Encountered an error when building package: %s (%d of %d)', pkg, k, len );
 				return done( error );
 			}
 			debug( 'Successfully built package: %s (%d of %d)', pkg, k, len );
 			done();
-		}; // end FUNCTION onBuild()
-	} // end FUNCTION onBuild()
+		} // end FUNCTION onBuild()
+	} // end FUNCTION getClbk()
 
 	/**
 	* Callback invoked to track build progress.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function done( error ) {
 		if ( error ) {

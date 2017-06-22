@@ -3,10 +3,10 @@
 /**
 * Build one or more packages.
 *
-* @module @stdlib/tools/gh-pages/build-packages
+* @module @stdlib/tools/docs/api/build-packages
 *
 * @example
-* var build = require( '@stdlib/tools/gh-pages/build-packages' );
+* var build = require( '@stdlib/tools/docs/api/build-packages' );
 *
 * build( done );
 *

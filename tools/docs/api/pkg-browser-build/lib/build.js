@@ -2,15 +2,15 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:package' );
+var debug = require( 'debug' )( 'docs:package:browser-build' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
-var tests = require( './../../../test/browser-build' );
-var benchmarks = require( './../../../benchmarks/browser-build' );
-var readmeToHTML = require( './../../../readme/to-html' );
+var tests = require( './../../../../test/browser-build' );
+var benchmarks = require( './../../../../benchmarks/browser-build' );
+var readmeToHTML = require( './../../../../readme/to-html' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
@@ -49,6 +49,7 @@ var validate = require( './validate.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+* @returns {void}
 */
 function build( pkg, dest, options, clbk ) {
 	var numBuilds;
@@ -88,13 +89,14 @@ function build( pkg, dest, options, clbk ) {
 	debug( 'Destination directory: %s', dest );
 
 	debug( 'Creating destination directory...' );
-	mkdirp( dest, onDir );
+	return mkdirp( dest, onDir );
 
 	/**
 	* Callback invoked upon creating a directory.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onDir( error ) {
 		if ( error ) {
@@ -198,7 +200,8 @@ function build( pkg, dest, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {boolean} boolean indicating whether a build generated artifacts
+	* @param {boolean} bool - boolean indicating whether a build generated artifacts
+	* @returns {void}
 	*/
 	function onTests( error, bool ) {
 		if ( error ) {
@@ -216,6 +219,7 @@ function build( pkg, dest, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {boolean} bool - boolean indicating whether a build generated artifacts
+	* @returns {void}
 	*/
 	function onBenchmarks( error, bool ) {
 		if ( error ) {
@@ -244,6 +248,7 @@ function build( pkg, dest, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onHTML( error ) {
 		if ( error ) {
@@ -259,6 +264,7 @@ function build( pkg, dest, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function done( error ) {
 		if ( error ) {

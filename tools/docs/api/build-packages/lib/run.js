@@ -2,13 +2,13 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'gh-pages:packages:build' );
+var debug = require( 'debug' )( 'docs:packages' );
 var resolve = require( 'path' ).resolve;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
-var findPkgs = require( './../../../pkgs/find' );
+var findPkgs = require( './../../../../pkgs/find' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var build = require( './build.js' );
@@ -48,6 +48,7 @@ var build = require( './build.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+* @returns {void}
 *
 * @example
 * run( done );
@@ -100,7 +101,7 @@ function run( dest, options, clbk ) {
 		'ignore': opts.packages.ignore
 	};
 	debug( 'Searching for packages...' );
-	findPkgs( fopts, onPkgs );
+	return findPkgs( fopts, onPkgs );
 
 	/**
 	* Callback invoked upon finding packages.
@@ -108,6 +109,7 @@ function run( dest, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {StringArray} pkgs - packages
+	* @returns {void}
 	*/
 	function onPkgs( error, pkgs ) {
 		if ( error ) {
@@ -129,6 +131,7 @@ function run( dest, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function done( error ) {
 		if ( error ) {

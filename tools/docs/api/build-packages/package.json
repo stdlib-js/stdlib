@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/gh-pages/pkg-browser-build",
+  "name": "@stdlib/tools/docs/api/build-packages",
   "version": "0.0.0",
   "description": "Build package assets.",
   "author": {
@@ -13,7 +13,7 @@
     }
   ],
   "bin": {
-    "pkg-browser-build": "./bin/cli"
+    "build-packages": "./bin/cli"
   },
   "scripts": {},
   "main": "./lib",
@@ -25,7 +25,9 @@
   "keywords": [
     "stdlib",
     "tools",
+    "packages",
     "package",
+    "pkgs",
     "pkg",
     "bundle"
   ],
