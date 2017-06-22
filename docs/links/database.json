@@ -1,10 +1,23 @@
 {
 	"http://www.json.org/": {
 		"id": "json",
-		"short": ""
+		"description": "The official JSON website.",
+		"short": "",
+		"keywords": [
+			"json"
+		]
 	},
 	"https://en.wikipedia.org/wiki/Percent-encoding": {
 		"id": "percent-encoding",
-		"short": ""
+		"description": "Wikipedia entry describing percent-encoding.",
+		"short": "",
+		"keywords": [
+			"url",
+			"uri",
+			"encode",
+			"encoding",
+			"percent-encoding",
+			"url-encoding"
+		]
 	}
 }

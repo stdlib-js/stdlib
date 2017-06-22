@@ -22,7 +22,8 @@ The database is a [JSON][json] file, where each `key` is a URL specifying the lo
     ...
     "http://www.json.org/": {
         "id": "json",
-        "short": ""
+        "description": "...",
+        ...
     },
     ....
 }
