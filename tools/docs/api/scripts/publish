@@ -159,13 +159,6 @@ main() {
 		on_error 1
 	fi
 
-	echo "Switching to ${project_checkout}..." >&2
-	git checkout "${project_checkout}"
-	if [[ "$?" -ne 0 ]]; then
-		echo "Unable to switch to ${project_checkout} in the project repository." >&2
-		on_error 1
-	fi
-
 	echo 'Cloning documentation repository...' >&2
 	shallow_clone "${docs_repo}" "${docs_dir}"
 	if [[ "$?" -ne 0 ]]; then
@@ -174,6 +167,13 @@ main() {
 
 	echo 'Navigating to project repository...' >&2
 	cd "${project_dir}"
+
+	echo "Switching to ${project_checkout}..." >&2
+	git checkout "${project_checkout}"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to switch to ${project_checkout} in the project repository." >&2
+		on_error 1
+	fi
 
 	echo 'Installing project dependencies...' >&2
 	install_node_deps
