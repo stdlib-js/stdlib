@@ -192,7 +192,13 @@ main() {
 	echo 'Returning to temporary build directory...' >&2
 	cd "${tmp_dir}"
 
-	echo 'Moving documentation to documentation repository...' >&2
+	echo "If the documentation repository already has ${project_checkout} documentation, remove the documentation..." >&2
+	remove_dir "${docs_dir}/${project_checkout}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	echo "Moving ${project_checkout} documentation to documentation repository..." >&2
 	move_dir "${project_build_dir}/${project_checkout}" "${docs_dir}/${project_checkout}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
