@@ -3,10 +3,10 @@
 /**
 * Build package assets.
 *
-* @module @stdlib/tools/docs/api/pkg-browser-build
+* @module @stdlib/tools/docs/api/build-package
 *
 * @example
-* var build = require( '@stdlib/tools/docs/api/pkg-browser-build' );
+* var build = require( '@stdlib/tools/docs/api/build-package' );
 *
 * var root = '/foo/bar';
 * var out = '/beep/boop';

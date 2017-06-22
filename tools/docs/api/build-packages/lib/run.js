@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'docs:packages' );
+var debug = require( 'debug' )( 'docs:build-packages:run' );
 var resolve = require( 'path' ).resolve;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );

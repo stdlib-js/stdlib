@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'docs:package:browser-build' );
+var debug = require( 'debug' )( 'docs:build-package' );
 var join = require( 'path' ).join;
 var mkdirp = require( 'mkdirp' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;

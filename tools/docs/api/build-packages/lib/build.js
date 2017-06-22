@@ -2,10 +2,10 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'docs:packages:build' );
+var debug = require( 'debug' )( 'docs:build-packages:build' );
 var join = require( 'path' ).join;
 var copy = require( '@stdlib/utils/copy' );
-var buildPkg = require( './../../pkg-browser-build' );
+var buildPkg = require( './../../build-package' );
 var packageName = require( './package_name.js' );
 
 
