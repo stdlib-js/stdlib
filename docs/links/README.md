@@ -38,7 +38,7 @@ The database is a [JSON][json] file, where each `key` is a URL specifying the lo
 
 ## Notes
 
-* When adding a database entry, ensure that resource identifiers (keys) are __sorted__ in alphabetical order.
+* Before adding a database entry, ensure that the resource is __unique__ and not already present in the database.
 * Before assigning an `id` to a URL, ensure that the `id` is __unique__.
 * Ensure that a URL is [__percent-encoded__][percent-encoding].
 
