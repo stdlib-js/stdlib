@@ -602,30 +602,6 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 }];
 
 /**
-* Always require a blank newline after a directive.
-*
-* @name lines-around-directive
-* @memberof rules
-* @type {Array}
-* @see [lines-around-directive]{@link http://eslint.org/docs/rules/lines-around-directive}
-*
-* @example
-* // Bad...
-* "use strict";
-* var x = 5;
-*
-* @example
-* // Good...
-* "use strict";
-*
-* var x = 5;
-*/
-rules[ 'lines-around-directive' ] = [ 'error', {
-	'before': 'never',
-	'after': 'always'
-}];
-
-/**
 * Enforce a maximum depth that blocks can be nested.
 *
 * @name max-depth
@@ -1439,6 +1415,46 @@ rules[ 'operator-linebreak' ] = [ 'error', 'after' ];
 * }
 */
 rules[ 'padded-blocks' ] = [ 'error', 'never' ];
+
+/**
+* Specify padding between statements.
+*
+* @name padding-line-between-statements
+* @memberof rules
+* @type {Array}
+* @see [padding-line-between-statements]{@link http://eslint.org/docs/rules/padding-line-between-statements}
+*
+* @example
+* // Bad...
+* "use strict";
+* var x = 5;
+*
+* @example
+* // Good...
+* "use strict";
+*
+* var x = 5;
+*/
+rules[ 'padding-line-between-statements' ] = [ 'error',
+	// Never allow a blank line before a directive...
+	{
+		'blankLine': 'never',
+		'prev': '*',
+		'next': 'directive'
+	},
+	// Always require a blank line after a directive...
+	{
+		'blankLine': 'always',
+		'prev': 'directive',
+		'next': '*'
+	},
+	// But allow directives to be grouped together...
+	{
+		'blankLine': 'any',
+		'prev': 'directive',
+		'next': 'directive'
+	}
+];
 
 /**
 * Always quote object literal property names.
