@@ -1767,6 +1767,50 @@ rules[ 'spaced-comment' ] = [ 'error', 'always', {
 }];
 
 /**
+* Require a space after, but not before, `switch` colons.
+*
+* @name switch-colon-spacing
+* @memberof rules
+* @type {Array}
+* @see [switch-colon-spacing]{@link http://eslint.org/docs/rules/switch-colon-spacing}
+*
+* @example
+* // Bad...
+* switch ( x ) {
+* case 1 : break;
+* }
+*
+* @example
+* // Bad...
+* switch ( x ) {
+* case 1 :break;
+* }
+*
+* @example
+* // Bad...
+* switch ( x ) {
+* case 1:break;
+* }
+*
+* @example
+* // Okay...
+* switch ( x ) {
+* case 1: break;
+* }
+*
+* @example
+* // Good...
+* switch ( x ) {
+* case 1:
+*     break;
+* }
+*/
+rules[ 'switch-colon-spacing' ] = [ 'error', {
+	'before': false,
+	'after': true
+}];
+
+/**
 * Do not require a Unicode byte order mark (BOM), as we assume UTF-8.
 *
 * @name unicode-bom
