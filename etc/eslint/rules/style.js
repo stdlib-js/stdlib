@@ -414,13 +414,19 @@ rules[ 'indent' ] = [ 'error', 'tab', {
 	'outerIIFEBody': 1,
 	'MemberExpression': 1,
 	'FunctionDeclaration': {
-		'body': 1
+		'body': 1,
+		'parameters': 'off'
 	},
 	'FunctionExpression': {
-		'body': 1
+		'body': 1,
+		'parameters': 'off'
+	},
+	'CallExpression': {
+		'arguments': 'off'
 	},
 	'ArrayExpression': 1,
-	'ObjectExpression': 1
+	'ObjectExpression': 1,
+	'flatTernaryExpressions': true
 }];
 
 /**
