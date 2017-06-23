@@ -8,7 +8,7 @@
 var rules = {};
 
 /**
-* Disable requiring line breaks if line breaks already exist between array elements.
+* Always requiring line breaks if line breaks already exist between array elements. NOTE: disabled to allow some freedom in determining best presentation. In general, prefer line breaks if already using line breaks.
 *
 * @name array-bracket-newline
 * @memberof rules
@@ -65,6 +65,31 @@ rules[ 'array-bracket-spacing' ] = [ 'off', 'always', {
 	'singleValue': true,
 	'objectsInArrays': false,
 	'arraysInArrays': false
+}];
+
+/**
+* Do not enforce line breaks between array elements.
+*
+* @name array-element-newline
+* @memberof rules
+* @type {Array}
+* @see [array-element-newline]{@link http://eslint.org/docs/rules/array-element-newline}
+*
+* @example
+* // Okay...
+* var arr = [ 1, 2, 3 ];
+*
+* @example
+* // Okay...
+* var arr = [
+*     1,
+*     2,
+*     3
+* ];
+*/
+rules[ 'array-element-newline' ] = [ 'off', {
+	'multiline': true,
+	'minItems': null
 }];
 
 /**
