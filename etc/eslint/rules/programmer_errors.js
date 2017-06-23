@@ -8,6 +8,18 @@
 var rules = {};
 
 /**
+* Never allow a `for` loop with a stop condition which can never be reached.
+*
+* @name for-direction
+* @memberof rules
+* @typeof rules
+* @type {string}
+* @default 'error'
+* @see [for-direction]{@link http://eslint.org/docs/rules/for-direction}
+*/
+rules[ 'for-direction' ] = 'error';
+
+/**
 * Warn when using `await` inside of loops.
 *
 * @name no-await-in-loop
