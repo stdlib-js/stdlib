@@ -1512,6 +1512,25 @@ rules[ 'require-jsdoc' ] = [ 'error', {
 }];
 
 /**
+* Always use semicolons.
+*
+* @name semi
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'always' ]
+* @see [semi]{@link http://eslint.org/docs/rules/semi}
+*
+* @example
+* // Bad...
+* var x = 5
+*
+* @example
+* // Good...
+* var x = 5;
+*/
+rules[ 'semi' ] = [ 'error', 'always' ];
+
+/**
 * Require a space after, but not before, a semicolon.
 *
 * @name semi-spacing
@@ -1550,23 +1569,25 @@ rules[ 'semi-spacing' ] = [ 'error', {
 }];
 
 /**
-* Always use semicolons.
+* Require semicolons be placed at the end of lines.
 *
-* @name semi
+* @name semi-style
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'always' ]
-* @see [semi]{@link http://eslint.org/docs/rules/semi}
+* @default [ 'error', 'last' ]
+* @see [semi-style]{@link http://eslint.org/docs/rules/semi-style}
 *
 * @example
 * // Bad...
-* var x = 5
+* foo()
+* ;[ 1, 2, 3 ].forEach( bar )
 *
 * @example
 * // Good...
-* var x = 5;
+* foo();
+* [ 1, 2, 3 ].forEach( bar );
 */
-rules[ 'semi' ] = [ 'error', 'always' ];
+rules[ 'semi-style' ] = [ 'error', 'last' ];
 
 /**
 * Do not require object keys to be sorted.
