@@ -1209,6 +1209,31 @@ rules[ 'no-unneeded-ternary' ] = [ 'error', {
 rules[ 'no-whitespace-before-property' ] = 'error';
 
 /**
+* Require the single line statements of `if`, `else`, `while`, `do-while`, and `for` statements to be on the same line.
+*
+* @name nonblock-statement-body-position
+* @memberof rules
+* @type {Array}
+* @see [nonblock-statement-body-position]{@link http://eslint.org/docs/rules/nonblock-statement-body-position}
+*
+* @example
+* // Bad...
+* if ( x )
+*     bar();
+*
+* @example
+* // Good...
+* if ( x ) {
+*     bar();
+* }
+*
+* @example
+* // Okay, within the context of this rule, but discouraged...
+* if ( x ) bar();
+*/
+rules[ 'nonblock-statement-body-position' ] = [ 'error', 'beside' ];
+
+/**
 * Require consistent line breaks inside braces.
 *
 * @name object-curly-newline
