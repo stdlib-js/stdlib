@@ -19,6 +19,17 @@ var rules = {};
 rules[ 'no-await-in-loop' ] = 'warn';
 
 /**
+* Never allow comparison to negative zero.
+*
+* @name no-compare-neg-zero
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-compare-neg-zero]{@link http://eslint.org/docs/rules/no-compare-neg-zero}
+*/
+rules[ 'no-compare-neg-zero' ] = 'error';
+
+/**
 * Never allow assignment in a conditional statement.
 *
 * @name no-cond-assign
