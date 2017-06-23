@@ -1811,6 +1811,25 @@ rules[ 'switch-colon-spacing' ] = [ 'error', {
 }];
 
 /**
+* Do not allow one or more spaces between template tags and their literals.
+*
+* @name template-tag-spacing
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'never' ]
+* @see [template-tag-spacing]{@link http://eslint.org/docs/rules/template-tag-spacing}
+*
+* @example
+* // Bad...
+* var foo = bar `beep boop`;
+*
+* @example
+* // Good...
+* var foo = bar`beep boop`;
+*/
+rules[ 'template-tag-spacing' ] = [ 'error', 'never' ];
+
+/**
 * Do not require a Unicode byte order mark (BOM), as we assume UTF-8.
 *
 * @name unicode-bom
