@@ -370,6 +370,17 @@ rules[ 'prefer-const' ] = [ 'warn', {
 }];
 
 /**
+* Do not prefer destructuring.
+*
+* @name prefer-destructuring
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [prefer-destructuring]{@link http://eslint.org/docs/rules/prefer-destructuring}
+*/
+rules[ 'prefer-destructuring' ] = 'off';
+
+/**
 * Do not prefer numeric literals.
 *
 * @name prefer-numeric-literals
