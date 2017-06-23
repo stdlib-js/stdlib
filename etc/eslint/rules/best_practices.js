@@ -785,8 +785,8 @@ rules[ 'no-magic-numbers' ] = [ 'off', {
 *
 * @name no-multi-spaces
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
+* @default [ 'error', { 'ignoreEOLComments': true } ]
 * @see [no-multi-spaces]{@link http://eslint.org/docs/rules/no-multi-spaces}
 *
 * @example
@@ -797,7 +797,9 @@ rules[ 'no-magic-numbers' ] = [ 'off', {
 * // Good...
 * var bool = ( x === true );
 */
-rules[ 'no-multi-spaces' ] = 'error';
+rules[ 'no-multi-spaces' ] = [ 'error', {
+	'ignoreEOLComments': true
+}];
 
 /**
 * Never allow using a `\` character to create multi-line strings.
