@@ -88,6 +88,25 @@ rules[ 'global-require' ] = 'off';
 rules[ 'handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 
 /**
+* Warn when using the `Buffer` constructor.
+*
+* @name no-buffer-constructor
+* @memberof rules
+* @type {string}
+* @default 'warn'
+* @see [no-buffer-constructor]{@link http://eslint.org/docs/rules/no-buffer-constructor}
+*
+* @example
+* // Bad...
+* var buf = new Buffer( [ 1, 2, 3 ] );
+*
+* @example
+* // Good...
+* var buf = Buffer.from( [ 1, 2, 3 ] );
+*/
+rules[ 'no-buffer-constructor' ] = 'warn'; // TODO: revisit once all Buffer usage includes support for older Node versions
+
+/**
 * Only allow `require`d modules to be grouped together.
 *
 * @name no-mixed-requires
