@@ -69,7 +69,7 @@
     "chai": "^3.5.0",
     "david": "^11.0.0",
     "envify": "^4.0.0",
-    "eslint": "3.x.x",
+    "eslint": "4.x.x",
     "github-markdown-equation-element": "^2.0.0",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
