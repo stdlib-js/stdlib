@@ -743,56 +743,6 @@ rules[ 'new-cap' ] = [ 'error', {
 rules[ 'new-parens' ] = 'error';
 
 /**
-* Allow a newline after variable declarations.
-*
-* @name newline-after-var
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [newline-after-var]{@link http://eslint.org/docs/rules/newline-after-var}
-*
-* @example
-* // Okay...
-* var x = 5;
-*
-* if ( x < 10 ) {
-*     // Do something...
-* }
-*
-* @example
-* // Okay...
-* var x = 5;
-* if ( x < 10 ) {
-*     // Do something...
-* }
-*/
-rules[ 'newline-after-var' ] = 'off';
-
-/**
-* Allow a newline before a `return` statement.
-*
-* @name newline-before-return
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [newline-before-return]{@link http://eslint.org/docs/rules/newline-before-return}
-*
-* @example
-* // Okay...
-* var x = 5;
-* var y = x * 3;
-*
-* return y;
-*
-* @example
-* // Okay...
-* var x = 5;
-* var y = x * 3;
-* return y;
-*/
-rules[ 'newline-before-return' ] = 'off';
-
-/**
 * Do not enforce newlines within chained calls.
 *
 * @name newline-per-chained-call
@@ -1434,6 +1384,34 @@ rules[ 'padded-blocks' ] = [ 'error', 'never' ];
 * "use strict";
 *
 * var x = 5;
+*
+* @example
+* // Okay...
+* var x = 5;
+*
+* if ( x < 10 ) {
+*     // Do something...
+* }
+*
+* @example
+* // Okay...
+* var x = 5;
+* if ( x < 10 ) {
+*     // Do something...
+* }
+*
+* @example
+* // Okay...
+* var x = 5;
+* var y = x * 3;
+*
+* return y;
+*
+* @example
+* // Okay...
+* var x = 5;
+* var y = x * 3;
+* return y;
 */
 rules[ 'padding-line-between-statements' ] = [ 'error',
 	// Never allow a blank line before a directive...
@@ -1453,6 +1431,18 @@ rules[ 'padding-line-between-statements' ] = [ 'error',
 		'blankLine': 'any',
 		'prev': 'directive',
 		'next': 'directive'
+	},
+	// Allow discretion when inserting a blank line after `var` declarations...
+	{
+		'blankLine': 'any',
+		'prev': 'var',
+		'next': '*'
+	},
+	// Allow discretion when inserting a blank line before `return` statements...
+	{
+		'blankLine': 'any',
+		'prev': '*',
+		'next': 'return'
 	}
 ];
 
