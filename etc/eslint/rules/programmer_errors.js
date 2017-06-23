@@ -16,6 +16,20 @@ var rules = {};
 * @type {string}
 * @default 'error'
 * @see [for-direction]{@link http://eslint.org/docs/rules/for-direction}
+*
+* @example
+* // Bad...
+* var i;
+* for ( i = 0; i < 10; i-- ) {
+*     // Do something...
+* }
+*
+* @example
+* // Good...
+* var i;
+* for ( i = 0; i < 10; i++ ) {
+*     // Do something...
+* }
 */
 rules[ 'for-direction' ] = 'error';
 
@@ -38,6 +52,13 @@ rules[ 'no-await-in-loop' ] = 'warn';
 * @type {string}
 * @default 'error'
 * @see [no-compare-neg-zero]{@link http://eslint.org/docs/rules/no-compare-neg-zero}
+*
+* @example
+* // Bad...
+* var x;
+* if ( x === -0 ) {
+*     // Do something...
+* }
 */
 rules[ 'no-compare-neg-zero' ] = 'error';
 
