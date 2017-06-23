@@ -1184,7 +1184,8 @@ rules[ 'nonblock-statement-body-position' ] = [ 'error', 'beside' ];
 */
 rules[ 'object-curly-newline' ] = [ 'error', {
 	'ObjectExpression': {
-		'minProperties': 1
+		'minProperties': 1,
+		'consistent': true
 	},
 	'ObjectPattern': 'never'
 }];
