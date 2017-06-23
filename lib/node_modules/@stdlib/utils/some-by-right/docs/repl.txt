@@ -1,0 +1,46 @@
+
+{{alias}}( collection, n, predicate[, thisArg ] )
+    Tests whether a collection contains at least `n` elements which pass a test
+    implemented by a predicate function, iterating from right to left.
+
+    The predicate function is provided three arguments:
+
+    - `value`: collection value
+    - `index`: collection index
+    - `collection`: the input collection
+
+    The function immediately returns upon finding `n` successful elements.
+
+    If provided an empty collection, the function returns `false`.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    n: number
+        Minimum number of successful elements.
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if a collection contains at least `n`
+        successful elements; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function negative( v ) { return ( v < 0 ); };
+    > var arr = [ -1, 1, -2, 3, 4 ];
+    > var bool = {{alias}}( arr, 2, negative )
+    true
+
+    See Also
+    --------
+
