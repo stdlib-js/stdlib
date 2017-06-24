@@ -1,0 +1,37 @@
+
+{{alias}}()
+    Returns a `Buffer` containing image data of Timothy H. O'Sullivan's albumen
+    silver print *Black Cañon, Colorado River, From Camp 8, Looking Above*.
+
+    Returns
+    -------
+    out: Buffer
+        Image data.
+
+    Examples
+    --------
+    > var img = {{alias}}()
+    <Buffer>
+
+    References
+    ----------
+    - O'Sullivan, Timothy H. 1871. *Black Cañon, Colorado River, From Camp 8,
+    Looking Above*. <http://www.getty.edu/art/collection/objects/40209/timothy-
+    h-o'sullivan-black-canon-colorado-river-from-camp-8-looking-above-american-
+    1871/>.
+
+    * Digital image courtesy of the Getty's Open Content Program. While there
+    are no restrictions or conditions on the use of open content images, the
+    Getty would appreciate a gratis copy of any scholarly publications in which
+    the images are reproduced in order to maintain the collection bibliography.
+    Copies may be sent to the attention of:
+
+      Open Content Program
+      Registrar's Office
+      The J. Paul Getty Museum
+      1200 Getty Center Drive, Suite 1000
+      Los Angeles, CA 90049
+
+    See Also
+    --------
+
