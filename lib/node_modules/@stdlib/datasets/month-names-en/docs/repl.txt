@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a list of month names (English).
+
+    Returns
+    -------
+    out: Array<string>
+        List of month names.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'January', 'February', 'March', 'April', ... ]
+
+    See Also
+    --------
+
