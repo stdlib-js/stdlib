@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Returns a list of US state two-letter abbreviations in alphabetical order
+    according to state name.
+
+    Returns
+    -------
+    out: Array<string>
+        List of US state two-letter abbreviations.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'AL', 'AK', 'AZ', 'AR', ... ]
+
+    See Also
+    --------
+
