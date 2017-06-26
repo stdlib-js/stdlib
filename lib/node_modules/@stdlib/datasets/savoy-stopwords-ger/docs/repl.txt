@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of German stop words.
+
+    Returns
+    -------
+    out: Array<string>
+        List of stop words.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ 'a', 'ab', 'aber', 'ach', ... ]
+
+    References
+    ----------
+    - Savoy, Jacques. 2005. "IR Multilingual Resources at UniNE."
+    <http://members.unine.ch/jacques.savoy/clef/>.
+
+    See Also
+    --------
+

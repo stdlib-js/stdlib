@@ -1,0 +1,57 @@
+
+{{alias}}( [options] )
+    Returns data for Charles Joseph Minard's cartographic depiction of
+    Napoleon's Russian campaign of 1812.
+
+    Data includes the following:
+
+    - army: army size
+    - cities: cities
+    - labels: map labels
+    - temperature: temperature during the army's return from Russia
+    - rivers: river data
+
+    Temperatures are on the Réaumur scale. Multiply each temperature by `1.25`
+    to convert to Celsius.
+
+    River data is formatted as GeoJSON.
+
+    River data is incomplete, with portions of rivers missing.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.data: string (optional)
+        Dataset name.
+
+    Returns
+    -------
+    out: Object|Array<Object>
+        Minard's data.
+
+    Examples
+    --------
+    > var data = {{alias}}();
+    > var army = data.army
+    [...]
+    > var cities = data.cities
+    [...]
+    > var labels = data.labels
+    [...]
+    > var river = data.river
+    {...}
+    > var t = data.temperature
+    [...]
+
+    References
+    ----------
+    - Minard, Charles Joseph. 1869. *Tableaux graphiques et cartes figuratives*.
+    Ecole nationale des ponts et chaussées.
+    - Wilkinson, Leland. 2005. *The Grammar of Graphics*. Springer-Verlag New
+    York. doi:10.1007/0-387-28695-0.
+
+    See Also
+    --------
+
