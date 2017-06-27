@@ -1,0 +1,23 @@
+
+{{alias}}()
+    Returns the text of Moby Dick by Herman Melville.
+
+    Each array element has the following fields:
+
+    - chapter: book chapter (number or identifier)
+    - title: chapter title (if available; otherwise, empty)
+    - text: chapter text
+
+    Returns
+    -------
+    out: Array<Object>
+        Book text.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, {...}, ... ]
+
+    See Also
+    --------
+
