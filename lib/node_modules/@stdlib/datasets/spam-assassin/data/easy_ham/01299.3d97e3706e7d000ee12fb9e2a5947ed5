@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  8 10:56:24 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2456416F17
+	for <jm@localhost>; Tue,  8 Oct 2002 10:56:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:56:23 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g988s2K07757 for
+    <jm-rpm@jmason.org>; Tue, 8 Oct 2002 09:54:03 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g988n1f06917; Tue, 8 Oct 2002 10:49:01
+    +0200
+Received: from chip.ath.cx (cs146114.pp.htv.fi [213.243.146.114]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g988m9f02272 for
+    <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 10:48:09 +0200
+Received: from chip.ath.cx (localhost [127.0.0.1]) by chip.ath.cx
+    (8.12.5/8.12.2) with ESMTP id g988m3SA018868 for <rpm-list@freshrpms.net>;
+    Tue, 8 Oct 2002 11:48:03 +0300
+Received: from localhost (pmatilai@localhost) by chip.ath.cx
+    (8.12.5/8.12.5/Submit) with ESMTP id g988m3s2018864 for
+    <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 11:48:03 +0300
+X-Authentication-Warning: chip.ath.cx: pmatilai owned process doing -bs
+From: Panu Matilainen <pmatilai@welho.com>
+X-X-Sender: pmatilai@chip.ath.cx
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: RH 8 no DMA for DVD drive
+In-Reply-To: <20021007103831.642c1bbb.hosting@j2solutions.net>
+Message-Id: <Pine.LNX.4.44.0210081145060.18762-100000@chip.ath.cx>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 8 Oct 2002 11:48:01 +0300 (EEST)
+Date: Tue, 8 Oct 2002 11:48:01 +0300 (EEST)
+
+On Mon, 7 Oct 2002, Jesse Keating wrote:
+
+> On Mon, 7 Oct 2002 19:28:51 +0200
+> Matthias Saou <matthias@rpmforge.net> wrote:
+> 
+> # I've never heard of any CD-ROM or DVD-ROM drive having problems with
+> # DMA... although there probably is since Red Hat decided to default
+> # disabling it a few releases back :-/
+> 
+> When I worked as a PC repair tech for a Computer store chain, I did
+> run across quite a few DVD drives that would lock up if DMA was
+> enabled.  It's more of a chipset/drive problem than a Drive by itself.
+
+And my IBM Intellistation would lock up instantly .. now this is actually 
+quite funny .. if DMA was enabled for the CD-ROM *and* you tried to access 
+a CD with Joliet extensions. Otherwise it worked just fine with DMA 
+enabled :)
+
+-- 
+	- Panu -
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

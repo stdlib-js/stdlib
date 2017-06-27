@@ -1,0 +1,100 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:01:18 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F2E5216EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:01:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:01:18 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g14CU9807477 for
+    <jm-rpm@jmason.org>; Mon, 4 Feb 2002 12:30:09 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g14CT1315524;
+    Mon, 4 Feb 2002 13:29:01 +0100
+Received: from fep02-app.kolumbus.fi (fep02-0.kolumbus.fi [193.229.0.44])
+    by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g14CSd315500 for
+    <rpm-list@freshrpms.net>; Mon, 4 Feb 2002 13:28:39 +0100
+Received: from pihlaja.kotilo ([62.248.147.215]) by fep02-app.kolumbus.fi
+    (InterMail vM.5.01.03.15 201-253-122-118-115-20011108) with ESMTP id
+    <20020204122844.EEAV1068.fep02-app.kolumbus.fi@pihlaja.kotilo> for
+    <rpm-list@freshrpms.net>; Mon, 4 Feb 2002 14:28:44 +0200
+Received: (from peter@localhost) by pihlaja.kotilo (8.11.6/8.11.6) id
+    g14CpeG02667 for rpm-list@freshrpms.net; Mon, 4 Feb 2002 14:51:40 +0200
+From: Peter Peltonen <pisara@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: http://apt.nixia.no/
+Message-Id: <20020204145140.C2626@pihlaja.kotilo>
+References: <20020201150022.B11472@cs.helsinki.fi>
+    <20020201153541.1321cd9b.matthias@egwn.net>
+    <20020201165435.C11472@cs.helsinki.fi>
+    <20020201161552.3497fbfd.matthias@egwn.net>
+    <20020201174132.A8690@cs.helsinki.fi>
+    <20020204143329.B2626@pihlaja.kotilo>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020204143329.B2626@pihlaja.kotilo>; from pisara@iki.fi on
+    Mon, Feb 04, 2002 at 02:33:29PM +0200
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 4 Feb 2002 14:51:40 +0200
+Date: Mon, 4 Feb 2002 14:51:40 +0200
+
+Sorry about that :) 
+
+Didn't think before sending... So I didn't realize that Reply-To was to 
+the list and not to the sender (as it usually is). 
+
+Anyawy, I was asking Harri if he could point me a few advices on how to 
+build my own apt repositry for RH updates. There is a tutorial of somekind 
+at http://apt-rpm.tuxfamily.org/ which I'm following right now, but if 
+there is some other good advices, let me know!
+
+Regards,
+Peter
+
+
+On Mon, Feb 04, 2002 at 02:33:29PM +0200, Peter Peltonen wrote:
+> On Fri, Feb 01, 2002 at 05:41:32PM +0200, Harri Haataja wrote:
+> > I have a local one for the main and upgrades from somewhere plus my own
+> > at $ORKPLACE.
+> 
+> Olen ajatellut pystyttää itselleni lokaalin apt-varaston, kun Suomesta ei 
+> tunnu löytyvän julkista peiliä. Osaisitko avittaa hiukan asiassa, eli 
+> kuinka lähteä liikkeelle? Ensin kannattanee peilata varsinainen RH:n rpm:t 
+> jostain, vaan millä softalla (rsync?) ja mistä (funet?) tuo kannattaa 
+> tehdä, ajatuksia?
+> 
+> -- 
+> Peter
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+> 
+
+-- 
+Peter
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

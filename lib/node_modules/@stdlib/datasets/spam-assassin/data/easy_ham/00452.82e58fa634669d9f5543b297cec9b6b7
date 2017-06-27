@@ -1,0 +1,156 @@
+From fork-admin@xent.com  Fri Sep  6 11:41:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0D18E16F1F
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868U2W25611 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 09:30:02 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id GAA20300 for <jm@jmason.org>; Fri, 6 Sep 2002 06:00:23 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D5E902940CD; Thu,  5 Sep 2002 21:57:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from blount.mail.mindspring.net (blount.mail.mindspring.net
+    [207.69.200.226]) by xent.com (Postfix) with ESMTP id C333829409F for
+    <fork@xent.com>; Thu,  5 Sep 2002 21:56:22 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    blount.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17nBCo-00014G-00;
+    Fri, 06 Sep 2002 00:58:54 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net (Unverified)
+Message-Id: <p05111a02b99db4580a56@[66.149.49.6]>
+To: fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: Electric car an Edsel...
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 21:27:18 -0400
+
+Ouch.... hooooo....
+
+Cheers,
+RAH
+
+--- begin forwarded text
+
+
+Date: Thu,  5 Sep 2002 09:17:13 -0700
+From: Same Guy
+Subject: Re: Electric car an Edsel...
+To: "R. A. Hettinga"  <rah@shipwright.com>
+
+Bob,
+
+This guy's an idiot.
+
+I design loads for systems with the 50 kV capacitors.  One of those has 864
+of such capacitors and stores only 10 megajoules, which means 11 kilojoules
+each.  They weigh 125 kg.
+
+You need high energy per unit mass, and the capacitive system I picked
+maximizes that.
+
+It is precisely the system that Maxwell is touting for electrical braking
+and power augmentation for regenerative use in automobiles.  You also need
+voltage you can use in a DC motor, which is why though the actual
+capacitors in the system are charged to 2.5 volts, the system has them
+arranged in series to boost the voltage.
+
+Ignore him.  He's a waste of my time.
+
+
+<Somebody's .sig>
+------------------------
+  From: "R. A. Hettinga" <rah@shipwright.com>
+  Subject: Re: Electric car an Edsel...
+  Date: Wed, 4 Sep 2002 15:31:39 -0400
+  To: Some people...
+
+
+
+--- begin forwarded text
+
+
+Date: Wed, 4 Sep 2002 07:59:10 -0700 (PDT)
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: "R. A. Hettinga" <rah@shipwright.com>
+cc: <fork@spamassassin.taint.org>
+Subject: Re: Electric car an Edsel...
+
+On Wed, 4 Sep 2002, R. A. Hettinga wrote:
+
+> Maxwell (www.maxwell.com) makes and sells high energy density capacitors,
+> called ultracapacitors.  They deliver them in an air-cooled, voltage
+> regulated module that will charge to 42 V and hold 128 kilojoules -- roughly
+> the energy in 2 teaspoons of sugar or a bite of a donut -- and weighs 16
+> kilograms.  If that electrical energy could all be converted to kinetic
+> energy, there's enough to get the capacitor module up to about 200 mph -- in
+> a vacuum.
+
+Since the energy you can pack into a capacitor is something like
+1/2*C*(V^2), you want to design your system with the lowest voltage possible
+to fully exploit that V^2 ;) So yea, a 42V system will only be useful for
+accelerating insects, not cars. That must be why 40kV is standard not 42.
+(the joke of putting 42 into goggle to find that model was not missed BTW)
+
+Most production systems use a mix of batteries and capacitors, as very few
+real world applications run for less then 10 seconds like the car we were
+talking about originally. Even 10 seconds is pushing the "capactior is the
+wrong choice" limits. Thats why the landspeed record model is a battery one,
+it's got to run for a much longer period of time and needs a steady
+discharge curve.
+
+But it should be safe to say that most people want the Indy 500 version, not
+the 1/4 mile sprint version when they are looking for a vehice :) For those
+you dont want a battery or a capacitor, you want to take advantage of whole
+atoms, not just electrons. Then you can suck off the electrons you need with
+a fuel cell. However, you will use both capacitors for the braking/accel,
+and batteries to not just dump excess energy in the design.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+
+---------------End of Original Message-----------------
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+

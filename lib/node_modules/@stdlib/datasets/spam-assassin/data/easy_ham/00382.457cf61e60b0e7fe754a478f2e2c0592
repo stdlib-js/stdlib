@@ -1,0 +1,181 @@
+From fork-admin@xent.com  Mon Sep  2 23:01:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 43BD516F2F
+	for <jm@localhost>; Mon,  2 Sep 2002 23:01:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 23:01:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g82IpqZ17406 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 19:51:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 20F252940D3; Mon,  2 Sep 2002 11:49:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mojo-jojo.ebuilt.net (mojo-jojo.ebuilt.net [209.216.43.10])
+    by xent.com (Postfix) with SMTP id EB39B294099 for <fork@xent.com>;
+    Mon,  2 Sep 2002 11:48:31 -0700 (PDT)
+Received: (qmail 23025 invoked from network); 2 Sep 2002 18:50:55 -0000
+Received: from nat.ebuilt.com (HELO thedudebvi1wob) (209.216.46.200) by
+    mojo-jojo.ebuilt.net with SMTP; 2 Sep 2002 18:50:55 -0000
+Reply-To: <rbfar@ebuilt.com>
+From: "Reza B'Far (eBuilt)" <rbfar@ebuilt.com>
+To: "Robert Harley" <harley@argote.ch>, <fork@spamassassin.taint.org>
+Subject: RE: Java is for kiddies
+Message-Id: <NCBBJMBPOKEEKDAILFNGIEBMFEAA.rbfar@ebuilt.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+In-Reply-To: <20020902095455.EDC5CC44D@argote.ch>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 2 Sep 2002 11:48:36 -0700
+
+
+
+-----Original Message-----
+From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of
+Robert Harley
+Sent: Monday, September 02, 2002 2:55 AM
+To: fork@spamassassin.taint.org
+Subject: RE: Java is for kiddies
+
+
+Reza B'Far wrote:
+>This thread kind of surprises me... I started coding with C, then C++, and
+>moved on to Java... And, I think that:
+Robert Harley wrote:
+>Looks like a case of "MY experience is comprehensive, YOUR'S is
+>anecdotal, THEY don't know what they're talking about".
+
+Well, I sure don't claim that... I think most people on Fork probably have
+more programming knowledge than I do... There's lots of experience out
+here...
+
+Reza B'Far wrote:
+>1.  The people who pay the wages don't give a flyin' heck what programming
+>language you write things in... they just want it to work.
+Robert Harley wrote:
+>In my experience, they do care.  It has to work certainly, and in
+>particular it has to work with what they've already got, and it has to
+>work on client's systems.
+>My limited experience of Java started a few years ago when support on
+>Linux was so terrible that I ran away screaming and haven't come back yet.
+
+Well, I think until recently, support for most things on Linux was kind of
+shady... Things have got much better... You're right in that the JDK used to
+suck on Linux... But then, IMHO, Linux is still maturing.... or at least
+development tools for Linux are maturing... I've been developing a few
+server side apps that run on Linux recently with JDK 1.3.x and they've had
+no problems with great performance.
+
+Robert Harley worte:
+>Microsoft has announced that they plan to remove Java from Windows.
+>They took it out of XP already and it has to be installed with a
+>service pack.  Somehow, I can't imagine them removing the ability to
+>run C programs.
+
+Hmmm... Do you really think that MS is pulling out Java because it's a "Bad"
+programming language or application platform?  You don't think this has
+anything to do with .NET being a competitor to Java do you?  Or that MS has
+basically copied Java (with some additional features) and called it C#?
+Isn't that alone an indication that they actually DO think that a VM is the
+right way to go for most high level applications?
+
+Reza B'Far wrote:
+>2.  C and C++ forces the developer to solve problems such as memory
+>management over and over again.
+Robert Harley wrote:
+>Can't say I spend any noticeable amount of time on memory management
+>issues, apart from the fact that I frequently need > 4 GB.
+
+Hmmm again.... You're telling me that you've never had a nasty bug that took
+you a couple of days to track down that had to do with a memory leak?  I am
+not the best C/C++ programmer... not even close... But I've known really
+good ones... and even they have nasty bugs that have to do with memory
+management, however occasional they may be.
+
+>It's about design patterns, architecture, high level stuff...
+Robert Harley wrote:
+>If your problem just requires application of a "design pattern" to solve,
+>then it's trivial anyway irrespective of language.
+
+Wow!  So you're telling me that unless the application involves
+bit-counting, it's trivial?  What about the application itself?  What about
+high level problems such as task distribution, work-flow, etc.?  Aren't most
+high level problems solved with high level solutions like design patterns?
+Or do you solve high level problems by writing optimal C/C++ code?  For
+example, do you think that most people working on collaboration frameworks
+(there are lots of them on this list), are working on writing an operating
+system with assembly that provides for a collaborative environment?
+
+>I am amazed by the amount of time wasted by people talking about low
+>level problems that have been solved 10 million times over and over
+>and over again...
+Robert Harley wrote:
+>You appear to be gratuitously asserting that C programmers waste time
+>on irrelevant low-level problems and Java programmers don't.  Depends
+>entirely on the programmer, not the language.
+
+I can see how you could infer this. However, what I believe to really be the
+case is that Java is one of the best languages for writing large
+applications with many components that involves the collaboration of more
+than three programmers.  In those cases, it's always very hard to get the
+programmers to agree on API's, memory management techniques, etc.  With
+Java, the JCP takes care of the discussions so that you don't sit around in
+a long meeting trying to decide what API to use to hook up to a database
+(JDBC) or a messaging bus (JMS).
+
+
+>3.  Java is not just a programming language! It's also a platform...
+Robert Harley wrote:
+>Buzzword.
+
+YIKES!  Have you written db code with C/C++ for different databases (just an
+example)?  Tried porting a persistence layer from Windows to Unix?  Say you
+have Informix running on Solaris and you want to port to Windows with MS SQL
+(bad idea...but for the sake of the example), would you rather deal with
+JDBC port or C/C++ port that uses Informix drivers and now you have to use
+ODBC?
+
+
+>a monolithic set of API's or a crap load of different API's slicing
+>and dicing the same problems 50 different ways?
+Robert Harley wrote:
+>Unsupported assertion.
+
+So, are you saying that there is a standard set of API's for C/C++ for
+everything? (aside to the minimal ANSI stuff).  Is there a standard way of
+dealing with C/C++ applications for various domain problems (messaging,
+database persistence, etc.) that rivals Java?  I'd like to know if there is
+one accepted by everyone who writes C/C++... In that case, I claim
+ignorance...
+
+Not suggesting that Java is the golden hammer.... Just that C/C++ is
+overkill for most things... I even coded in VB... But VB is a true disgrace
+to programming... It's just lame... Java is Object Oriented... (no
+flame-mail from the anti-OO people please... that is a religious
+discussion...) and relatively clean... And I don't think that every "Kid"
+can write a well designed Java program.  Kids typically don't understand
+various design patterns and principles... To my experience, they actually
+tend to think more of the low level problems, wanting to rewrite and
+reinvent the world... a tendency that is much more possible, IMHO, in C/C++
+than in Java due to existence of standard API's.
+
+

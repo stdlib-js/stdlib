@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Thu Aug 22 17:45:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 08BC143F99
+	for <zzzz@localhost>; Thu, 22 Aug 2002 12:45:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 17:45:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MGbKZ14933 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 17:37:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA10694; Thu, 22 Aug 2002 17:36:27 +0100
+Received: from moe.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA10669 for <ilug@linux.ie>; Thu,
+    22 Aug 2002 17:36:20 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.120.171.3] claimed to
+    be moe.jinny.ie
+Received: from jlooney.jinny.ie (unknown [193.120.171.2]) by moe.jinny.ie
+    (Postfix) with ESMTP id C906A7FC48 for <ilug@linux.ie>; Thu,
+    22 Aug 2002 17:36:19 +0100 (IST)
+Received: by jlooney.jinny.ie (Postfix, from userid 500) id 09E7E8B1;
+    Thu, 22 Aug 2002 17:36:42 +0100 (IST)
+Date: Thu, 22 Aug 2002 17:36:41 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ILUG <ilug@linux.ie>
+Subject: Re: [ILUG] Sun Solaris..
+Message-Id: <20020822163641.GN3670@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ILUG <ilug@linux.ie>
+References: <45130FBE2F203649A4BABDB848A9C9D00E9C8A@enterprise.wasptech.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <45130FBE2F203649A4BABDB848A9C9D00E9C8A@enterprise.wasptech.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, Aug 22, 2002 at 05:13:01PM +0100, Fergal Moran mentioned:
+> In a nutshell - Solaris is Suns own flavour of UNIX.
+
+ Though I'm sure that this nice person would like a bit more detail.
+
+ Solaris is quite different to Linux, though these days you can make
+solaris act a lot like linux with an extra CD of GNU tools Sun ship with
+solaris. It is based on the SysV unix family, so it's quite similar to
+other unixen like HPUX and SCO.
+
+ Sun's hardware in general is more reliable, and a lot more expensive. One
+of the main bonuses you get by buying Sun is that you are getting your
+hardware and software from one company, so if you have a support contract,
+they have to fix it. They can't fob you off with 'that's a software
+problem, talk to the software vendor.' etc.
+
+ If you are set on Linux, you most likely can do your own support. There
+is then a world of different hardware options. You can run Linux on Sparc,
+though some companies like RedHat don't maintain a sparc port anymore.
+
+ You can also buy your machine from linux-oriented companies like DNUK,
+who do machines designed to run linux, and their own version of linux,
+that has a few extras for their machines. Or, you can get a machine from a
+cheaper company like Dell, and it'll most likely work, most of the time.
+
+John
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

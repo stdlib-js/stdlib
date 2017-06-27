@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:50:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E7ED3440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:50:05 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:50:05 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQT403450 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:29 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA23309 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 12:23:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA31355; Sat, 20 Jul 2002 12:19:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA31326 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 12:19:45 +0100
+Received: from [194.165.167.234] (helo=excalibur.research.wombat.ie) by
+    mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id 17VsA6-00081L-00 for
+    ilug@linux.ie; Sat, 20 Jul 2002 12:12:34 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g6KBIv327643 for ilug@linux.ie; Sat, 20 Jul 2002
+    12:18:57 +0100
+Date: Sat, 20 Jul 2002 12:18:57 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] vanquishing the daemons of shell scripting
+Message-Id: <20020720121857.A27503@excalibur.research.wombat.ie>
+References: <20020720094736.GA16224@skynet.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020720094736.GA16224@skynet.ie>; from diamond@skynet.ie on
+    Sat, Jul 20, 2002 at 10:47:36AM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 10:47:36AM +0100, Stephen Shirley wrote:
+...
+> 	It's very easy to get one program to act on the output of a second
+> program: cmd1 | cmd2. But, what if you want cmd1 to act on the output of
+> cmd2 as well? Hmm. Eventually, I came up with this solution:
+> 
+> 	mkfifo io
+> 	cmd1 <io | cmd2 > io
+...
+> mine, and i is happy person once again. In case you were wondering, the
+> aim of all of this was to write a shell script that could check for new
+> mail on an imap server.
+
+Doesn't answer your question, but perhaps a combination of expect and
+(netcat or telnet) might have made for an easier solution?
+
+Later
+Kenn
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

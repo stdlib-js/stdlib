@@ -1,0 +1,40 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:34:00 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9EB5216F16
+	for <jm@localhost>; Thu, 26 Sep 2002 16:33:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:33:58 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFSNg24418 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:28:23 +0100
+Message-Id: <200209261528.g8QFSNg24418@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: joelonsoftware <rssfeeds@spamassassin.taint.org>
+Subject: Eddie Kessler describes programming at Napster. Ray Ozzie has
+    more on pla
+Date: Thu, 26 Sep 2002 15:28:22 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.joelonsoftware.com/news/20020925.html
+Date: Not supplied
+
+Eddie Kessler describes programming at Napster[1]. 
+
+Ray Ozzie has more on platforms[2]. "Finding the 'right' price point for a 
+software platform is critical." To me this sounds like a fancy way of saying, 
+"I groove all that stuff about how platforms need to be cheap and ubiquitous, 
+but I can't bring myself to do it." The price, Ray says, "must be high enough 
+both 1) to maintain a perception of value in the platform, and 2) to create 
+significant margins well before ubiquity is assured so that the ecosystem is 
+assured of the platform's ultimate viability." What he doesn't mention: if you 
+lower the price on the only product you're selling, you have a revenue hit, 
+which will not make your investors happy, and you may run out of money and have 
+to close. But that must be what he's thinking.
+
+[1] http://www.joelonsoftware.com/articles/WorstProjectEver.html
+[2] http://www.ozzie.net/blog/stories/2002/09/24/softwarePlatformDynamics.html
+
+

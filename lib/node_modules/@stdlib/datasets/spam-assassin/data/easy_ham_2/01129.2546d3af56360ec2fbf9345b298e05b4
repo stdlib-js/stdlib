@@ -1,0 +1,73 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 17:59:13 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 06414440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:59:12 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:59:12 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG16Y16388 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 17:01:06 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id NAA27595 for <jm-rpm@jmason.org>;
+    Sun, 21 Jul 2002 13:46:16 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6LCX1C24815; Sun, 21 Jul 2002 14:33:01
+    +0200
+Received: from drone3.qsi.net.nz (drone3-svc-skyt.qsi.net.nz
+    [202.89.128.3]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g6LCWbC21062
+    for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 14:32:37 +0200
+Received: (qmail 23173 invoked by uid 0); 21 Jul 2002 12:32:26 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 21 Jul 2002 12:32:26 -0000
+Received: from stumpy.se7en.org ([10.0.0.5]
+    ident=[px8EskqLfLWBfzEBEXMScK/9eYHjy1uF]) by se7en.org with esmtp (Exim
+    3.35 #1 (Debian)) id 17WU0z-0005VX-00 for <rpm-list@freshrpms.net>;
+    Mon, 22 Jul 2002 15:37:41 +1200
+Subject: Re: Ximian apt repos?
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020721142007.03c02bc4.che666@uni.de>
+References: <1027203479.5354.14.camel@athena>
+    <20020720211551.6fb70f27.kilroy@kamakiriad.com>
+    <1027218043.3516.5.camel@localhost.localdomain>
+    <20020721051108.0fd207d5.che666@uni.de>
+    <20020721142007.03c02bc4.che666@uni.de>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1027252799.12983.0.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 21 Jul 2002 23:59:59 +1200
+Date: 21 Jul 2002 23:59:59 +1200
+
+On Mon, 2002-07-22 at 06:20, che wrote:
+
+> The server mentioned above works again now :)!
+
+Any problems with the rpm's they provided?
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

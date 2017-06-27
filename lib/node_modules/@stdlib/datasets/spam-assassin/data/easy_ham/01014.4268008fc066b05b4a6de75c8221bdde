@@ -1,0 +1,106 @@
+From exmh-users-admin@redhat.com  Fri Sep 13 13:36:09 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 568FD16F03
+	for <jm@localhost>; Fri, 13 Sep 2002 13:36:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 13:36:09 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8DBXaC16246 for
+    <jm-exmh@jmason.org>; Fri, 13 Sep 2002 12:33:37 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id E67FE3EA26; Fri, 13 Sep 2002
+    07:34:00 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 2401C401C5
+    for <exmh-users@listman.redhat.com>; Fri, 13 Sep 2002 07:32:15 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8DBW9904558 for exmh-users@listman.redhat.com; Fri, 13 Sep 2002
+    07:32:09 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8DBW9k04554 for
+    <exmh-users@redhat.com>; Fri, 13 Sep 2002 07:32:09 -0400
+Received: from hobbit.linuxworks.com.au
+    (CPE-203-51-196-87.qld.bigpond.net.au [203.51.196.87]) by mx1.redhat.com
+    (8.11.6/8.11.6) with SMTP id g8DBFTw26632 for <exmh-users@redhat.com>;
+    Fri, 13 Sep 2002 07:15:29 -0400
+Received: (from tony@localhost) by hobbit.linuxworks.com.au
+    (8.11.6/8.11.6) id g8DBUZL24217; Fri, 13 Sep 2002 21:30:35 +1000
+Message-Id: <200209131130.g8DBUZL24217@hobbit.linuxworks.com.au.nospam>
+To: exmh-users@spamassassin.taint.org
+From: Tony Nugent <tony@linuxworks.com.au>
+X-Face: ]IrGs{LrofDtGfsrG!As5=G'2HRr2zt:H>djXb5@v|Dr!jOelxzAZ`!}("]}]
+    Q!)1w#X;)nLlb'XhSu,QL>;)L/l06wsI?rv-xy6%Y1e"BUiV%)mU;]f-5<#U6
+    UthZ0QrF7\_p#q}*Cn}jd|XT~7P7ik]Q!2u%aTtvc;)zfH\:3f<[a:)M
+Organization: Linux Works for network
+X-Mailer: nmh-1.0.4 exmh-2.4
+X-Os: Linux-2.4 RedHat 7.2
+In-Reply-To: message-id <26495.1031914530@munnari.OZ.AU> of Fri,
+    Sep 13 17:55:30 2002
+Subject: Re: bad focus/click behaviours
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 13 Sep 2002 21:30:34 +1000
+
+On Fri Sep 13 2002 at 17:55, Robert Elz wrote:
+
+>     Date:        Fri, 13 Sep 2002 11:26:30 +1000
+>     From:        Tony Nugent <tony@linuxworks.com.au>
+
+>   | I can cut'n'paste from exmh's message display window into spawned
+>   | gvim processes, but not into anything else.
+> 
+> That's odd.  I cut & paste between all kinds of windows (exmh into
+
+Not so odd, this issue came up several weeks ago (with no real
+resolution).
+
+> mozilla, xterm, another wish script of mine I use for DNS tasks (but
+> that one I guess is to be expected) netscape (when I used to use it,
+> but I suppose it and mozilla are the same codebase, approx) - in fact
+> I can't thing of anything it fails for, that I have noticed.
+> 
+> What is an example of an "anything else" that it fails for for you?
+
+Everything else :)  I can't even mark text in an exmh message window
+and then paste it into a terminal window, the cut buffer seems to be
+completely empty (and its previous contents are no longer there
+either).
+
+> kre
+
+  BTW: talking of spring downunder... I'm in Queensland.  It almost
+  feels like early summer already (winters here are dry and warm,
+  much better than cold wet miserable Melbourne :-)  Despite some
+  recent rain (first in months), we are already into a drought, with
+  an El-Nino on the way it is only going to get worse...  (the last
+  one in the 90s caused one of the worst droughts ever seen here in
+  aussie).
+
+Cheers
+Tony
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

@@ -1,0 +1,94 @@
+From exmh-workers-admin@redhat.com  Thu Jul 25 11:07:42 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BE0B0440DF
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:00 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P9PS411394 for
+    <jm-exmh@jmason.org>; Thu, 25 Jul 2002 10:25:28 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id AE9523F719; Thu, 25 Jul 2002
+    05:24:34 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id A7D983EB40
+    for <exmh-workers@listman.redhat.com>; Thu, 25 Jul 2002 05:23:53 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6P9NrV29838 for exmh-workers@listman.redhat.com; Thu, 25 Jul 2002
+    05:23:53 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6P9NrR29834 for
+    <exmh-workers@redhat.com>; Thu, 25 Jul 2002 05:23:53 -0400
+Received: from mail.dtek.chalmers.se
+    (IDENT:g8aJYkpdaY66e+X0WtdhrehwoeogEy8h@osiris.medic.chalmers.se
+    [129.16.30.197]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g6P9C6s16714 for <exmh-workers@redhat.com>; Thu, 25 Jul 2002 05:12:06
+    -0400
+Received: from yohan.dtek.chalmers.se (yohan.dtek.chalmers.se
+    [129.16.30.105]) by mail.dtek.chalmers.se (Postfix) with ESMTP id
+    05DB73B21E for <exmh-workers@redhat.com>; Thu, 25 Jul 2002 11:23:52 +0200
+    (MEST)
+Received: from dtek.chalmers.se
+    (IDENT:JCgmr/WyISoSA3O3OA9qlOLUNZHyt3X3@localhost [127.0.0.1]) by
+    yohan.dtek.chalmers.se (8.9.3/8.9.3) with ESMTP id LAA23571 for
+    <exmh-workers@redhat.com>; Thu, 25 Jul 2002 11:23:48 +0200 (MEST)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: exmh-workers@spamassassin.taint.org
+Subject: Re: [fwd: error exmh 2.5 07/13/2001 ]
+References: <1027546301.610.TMDA@deepeddy.vircio.com><5378.1027548783@dimebox>
+In-Reply-To: Your message of
+    "Wed, 24 Jul 2002 17:13:03 CDT."
+    <5378.1027548783@dimebox>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <23562.1027589024@dtek.chalmers.se>
+From: Christer Borang <mort@dtek.chalmers.se>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 25 Jul 2002 11:23:44 +0200
+
+In message <5378.1027548783@dimebox>, Hal DeVore writes:
+>
+>>>>>> On Wed, 24 Jul 2002, "Chris" == Chris Garrigues wrote:
+>
+>  Chris> Am I the only one for whom typing control-L to the main
+>  Chris> window causes this error?
+>
+>Getting it here too on a copy I haven't updated from CVS since 
+>about May sometime.
+
+It's in 2.5 as well.
+
+//Christer
+
+-- 
+| Sys admin @ MEDIC              WWW: http://www.dtek.chalmers.se/            |
+| Email: mort@dtek.chalmers.se   Phone: (0)31 772 5431, (0)707 53 57 57	      |
+"I fought the loa and the loa won, I fought the loa and the loa won..."
+        -- Dave Aronsson, a.s.r.
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

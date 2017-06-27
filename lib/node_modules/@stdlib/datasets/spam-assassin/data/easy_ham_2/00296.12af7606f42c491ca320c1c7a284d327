@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:00:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AD866440D9
+	for <jm@localhost>; Fri,  9 Aug 2002 09:59:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 14:59:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79Dx1b03691 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 14:59:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA11513; Fri, 9 Aug 2002 14:55:28 +0100
+Received: from mail.tradesignals.com ([217.75.2.27]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA11484 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 14:55:18 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.75.2.27] claimed to
+    be mail.tradesignals.com
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g79Dt9T25483; Fri, 9 Aug 2002 14:55:09 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.11.6/8.11.6) id g79Dt9i07708; Fri,
+    9 Aug 2002 14:55:09 +0100
+Content-Type: text/plain; charset="iso-8859-1"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+To: kevin lyda <kevin+dated+1029331309.11b939@ie.suberic.net>,
+	irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] galeon and keyboard focus...
+Date: Fri, 9 Aug 2002 14:55:09 +0100
+X-Mailer: KMail [version 1.4]
+References: <20020809142147.B3331@ie.suberic.net>
+In-Reply-To: <20020809142147.B3331@ie.suberic.net>
+MIME-Version: 1.0
+Message-Id: <200208091455.09808.donncha.ocaoimh@tradesignals.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    OAA11484
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I get a different effect. I open new links in a tab, and they "open in the 
+background" or the current page still remains selected. Unfortunately the 
+other tab gets the focus. 
+The same happens with pages (re)loading in other tabs -> the current tab loses 
+the keyboard focus which can be very annoying when filling in forms or even 
+when scrolling using the mouse-wheel.
+
+Donncha.
+
+
+On Friday 09 August 2002 14:21, kevin lyda wrote:
+> ok, in a galeon browser window i open a new window by middle-clicking
+> a link.  the window comes up under my mouse.  however, keys i type go to
+> the first window.  anyone else have this problem, and did they solve it?
+> i use sawfish as my wm with sloppy focus.
+>
+> kevin
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

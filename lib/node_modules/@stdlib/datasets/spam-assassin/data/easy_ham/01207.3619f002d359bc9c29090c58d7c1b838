@@ -1,0 +1,66 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  1 10:35:50 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B4EDD16F17
+	for <jm@localhost>; Tue,  1 Oct 2002 10:35:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:35:41 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g916dmK13528 for
+    <jm-rpm@jmason.org>; Tue, 1 Oct 2002 07:39:49 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g916G1f16249; Tue, 1 Oct 2002 08:16:01
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g916FXf13048
+    for <rpm-list@freshrpms.net>; Tue, 1 Oct 2002 08:15:33 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17wGKr-0002Hx-00 for rpm-list@freshrpms.net;
+    Tue, 01 Oct 2002 02:16:45 -0400
+X-Originating-Ip: [4.64.17.47]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: use new apt to do null to RH8 upgrade?
+Message-Id: <20021001.t5w.10103800@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 01 Oct 2002 06:18:53 +0000
+Date: Tue, 01 Oct 2002 06:18:53 +0000
+
+Is it possible to use new apt to do (null) to RH8 upgrade?
+
+Even if it's possible, are there good reasons why maybe I should not do it and
+just use the RH iso's (I don't think RH8 will upgrade from (null), maybe up2date
+will)?
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

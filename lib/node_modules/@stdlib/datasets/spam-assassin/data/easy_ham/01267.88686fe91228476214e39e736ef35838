@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Mon Oct  7 12:04:42 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7476B16F1A
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:22 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9766DK20698 for
+    <jm-rpm@jmason.org>; Mon, 7 Oct 2002 07:06:13 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g97602f16257; Mon, 7 Oct 2002 08:00:02
+    +0200
+Received: from snickers.hotpop.com (snickers.hotpop.com [204.57.55.49]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g975xRf15813 for
+    <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 07:59:27 +0200
+Received: from punkass.com (kubrick.hotpop.com [204.57.55.16]) by
+    snickers.hotpop.com (Postfix) with SMTP id B035B700A6 for
+    <rpm-list@freshrpms.net>; Mon,  7 Oct 2002 05:59:11 +0000 (UTC)
+Received: from punkass.com (unknown [80.178.1.203]) by smtp-1.hotpop.com
+    (Postfix) with ESMTP id B78CF2F813E for <rpm-list@freshrpms.net>;
+    Mon,  7 Oct 2002 05:58:30 +0000 (UTC)
+Message-Id: <3DA12334.2010705@punkass.com>
+From: Roi Dayan <dejavo@punkass.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.1) Gecko/20020830
+X-Accept-Language: en-us, en, he
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: apt-get problem ?
+References: <3D9FFE0A.20006@punkass.com>
+    <20021006123628.0d199281.matthias@rpmforge.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Hotpop: ----------------------------------------------- Sent By
+    HotPOP.com FREE Email Get your FREE POP email at www.HotPOP.com
+    -----------------------------------------------
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 07 Oct 2002 08:01:24 +0200
+Date: Mon, 07 Oct 2002 08:01:24 +0200
+
+When I try to use apt-get upgrade
+it wants to install libusb while I got it
+(same version)
+and all collapse because of this.
+
+Roi
+
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

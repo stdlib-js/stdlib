@@ -1,0 +1,151 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:53:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1A320441E8
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g74BcHv26639 for
+    <jm-ilug@jmason.org>; Sun, 4 Aug 2002 12:38:17 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA18508; Sun, 4 Aug 2002 12:36:24 +0100
+Received: from mel-rto2.wanadoo.fr (smtp-out-2.wanadoo.fr
+    [193.252.19.254]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA18475
+    for <ilug@linux.ie>; Sun, 4 Aug 2002 12:36:18 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host smtp-out-2.wanadoo.fr
+    [193.252.19.254] claimed to be mel-rto2.wanadoo.fr
+Received: from mel-rta8.wanadoo.fr (193.252.19.79) by mel-rto2.wanadoo.fr
+    (6.5.007) id 3D49FBEC000CB353 for ilug@linux.ie; Sun, 4 Aug 2002 13:35:46
+    +0200
+Received: from bolsh.wanadoo.fr (80.8.224.71) by mel-rta8.wanadoo.fr
+    (6.5.007) id 3D49FF79000BE9E5 for ilug@linux.ie; Sun, 4 Aug 2002 13:35:46
+    +0200
+Received: from dave by bolsh.wanadoo.fr with local (Exim 3.32 #1 (Debian))
+    id 17bJkP-0005ty-00 for <ilug@linux.ie>; Sun, 04 Aug 2002 13:40:33 +0200
+Date: Sun, 4 Aug 2002 13:40:33 +0200
+From: David Neary <dneary@wanadoo.fr>
+To: ILUG <ilug@linux.ie>
+Subject: Re: [ILUG] One Command -- Four Types
+Message-Id: <20020804134033.A22333@wanadoo.fr>
+References: <200208041036.g74AaBr31977@cdm01.deedsmiscentral.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+In-Reply-To: <200208041036.g74AaBr31977@cdm01.deedsmiscentral.net>
+User-Agent: Mutt/1.3.23i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+SoloCDM wrote:
+> How are there four (/bin/dnsdomainname /bin/domainname
+> /bin/nisdomainname /bin/ypdomainname) different types of hostname
+> links with their own separate options?
+
+The program has different behaviour depending on the value of
+argv[0], probably...
+
+here's a simple example...
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+long int add(long int a, long int b)
+{
+  return a+b;
+}
+
+long int subtract(long int a, long int b)
+{
+  return a-b;
+}
+
+int main(int argc, char **argv)
+{
+  long int a, b; /* Operands */
+  long int (*operation)(long int a, long int b);
+  char *progname, *marker;
+
+  if(argc != 3)
+  {
+    fprintf(stderr, "Usage: %s [int1] [int2]\n", argv[0]);
+    exit(1);
+  }
+
+  progname = strrchr(argv[0], '/');
+  if(progname == NULL)
+    progname = argv[0];
+  else
+    progname ++; /* Skip past the '/' */
+  
+  if(strcmp(progname, "add") == 0)
+  {
+    operation = add;
+  }
+  else if (strcmp(progname, subtract) == 0)
+  {
+    operation = subtract;
+  }
+  else
+  {
+    fprintf(stderr, "Program called with invalid "
+            "name %s. Quitting.\n", argv[0]);
+    exit(1);
+  }
+
+  a = strtol(argv[1], &marker, 0); /* Use base 16 for args
+                                    * starting 0x, and base 8 for 
+                                    * args starting 0 */
+  if(*marker != '\0')
+  {
+    fprintf(stderr, "Invalid character %c in argument %s.\n",
+            *marker, argv[1]);
+    exit(1);
+  }
+
+  b = strtol(argv[2], &marker, 0); /* Use base 16 for args
+                                    * starting 0x, and base 8 for 
+                                    * args starting 0 */
+  if(*marker != '\0')
+  {
+    fprintf(stderr, "Invalid character %c in argument %s.\n",
+            *marker, argv[2]);
+    exit(1);
+  }
+  
+  printf("%ld %c %ld = %ld\n", 
+          a, 
+          (operation == add)?'+':'-', 
+          b, 
+          operation(a, b));
+          
+  return 0;
+}
+
+Say that's in operation.c, compile it using 
+
+gcc -ansi -pedantic -Wall -W -O2 -o add operation.c
+and then 
+ln add subtract
+and run both, with appropriate arguments.
+
+
+
+-- 
+       David Neary,
+    Marseille, France
+  E-Mail: bolsh@gimp.org
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

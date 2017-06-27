@@ -1,0 +1,86 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  1 10:38:20 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B2C4316F17
+	for <jm@localhost>; Tue,  1 Oct 2002 10:38:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:38:19 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g918akK17092 for
+    <jm-rpm@jmason.org>; Tue, 1 Oct 2002 09:36:46 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g918S1f18842; Tue, 1 Oct 2002 10:28:01
+    +0200
+Received: from urgent.rug.ac.be (urgent.rug.ac.be [157.193.88.1]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g918Rff18785 for
+    <rpm-list@freshrpms.net>; Tue, 1 Oct 2002 10:27:41 +0200
+Received: (qmail 32408 invoked by uid 505); 1 Oct 2002 08:27:47 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    1 Oct 2002 08:27:47 -0000
+From: Thomas Vander Stichele <thomas@urgent.rug.ac.be>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: use new apt to do null to RH8 upgrade?
+In-Reply-To: <20021001.t5w.10103800@www.dudex.net>
+Message-Id: <Pine.LNX.4.44.0210011026020.19273-100000@urgent.rug.ac.be>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 1 Oct 2002 10:27:47 +0200 (CEST)
+Date: Tue, 1 Oct 2002 10:27:47 +0200 (CEST)
+
+> Is it possible to use new apt to do (null) to RH8 upgrade?
+
+It might be, don't think anyone tried it yet.
+
+> Even if it's possible, are there good reasons why maybe I should not do it and
+> just use the RH iso's (I don't think RH8 will upgrade from (null), maybe up2date
+> will)?
+
+Yes ;)
+
+first off, redhat does not support upgrading from beta's to the released 
+version.  That doesn't mean it can't work, it means nobody tried it, they 
+sure didn't test it or fix anything to make it work, and you're on your 
+own.
+
+second, historically a new .0 numbers mostly means "so much has been 
+changed that you might have problems upgrading from any previous release 
+anyway".  So, historically, most users installing a .0 release do this 
+from scratch anyway, doing upgrades throughout x.0->x.y.
+
+If you want to avoid problems, bite the bullet and reinstall ;)
+
+Thomas
+
+ -- 
+
+The Dave/Dina Project : future TV today ! - http://davedina.apestaart.org/
+<-*-                      -*->
+And every time she sneezes
+I think it's love and oh lord
+I'm not ready for this sort of thing
+<-*- thomas@apestaart.org -*->
+URGent, the best radio on the Internet - 24/7 ! - http://urgent.rug.ac.be/
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

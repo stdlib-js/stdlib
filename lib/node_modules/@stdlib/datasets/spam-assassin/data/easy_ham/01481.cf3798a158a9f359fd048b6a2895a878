@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Sep 16 00:10:45 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6B30816F03
+	for <jm@localhost>; Mon, 16 Sep 2002 00:10:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 00:10:45 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8FKdkC27782 for <jm-sa@jmason.org>; Sun, 15 Sep 2002 21:39:47 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qg9b-0005oW-00; Sun,
+    15 Sep 2002 13:38:03 -0700
+Received: from cpe3236313132303031.cpe.net.cable.rogers.com
+    ([24.101.219.158] helo=tiger.dorfam.ca) by usw-sf-list1.sourceforge.net
+    with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qg8f-0000Wq-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Sun, 15 Sep 2002 13:37:05 -0700
+Received: from tiger.dorfam.ca
+    (IDENT:f7rSrLFz9/M04Kx9/CJFe0AD7QQp/7rf@tiger.dorfam.ca [10.0.10.4])
+    (authenticated) by tiger.dorfam.ca (8.11.6/8.11.6) with ESMTP id
+    g8FKaGQ25985; Sun, 15 Sep 2002 16:36:16 -0400
+From: Gerry Doris <gerry@dorfam.ca>
+To: Vernon Webb <vernon@comp-wiz.com>
+Cc: spamassassin-talk <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] RBL timed oiut and Spam Assassin killed
+In-Reply-To: <20020915191805.M8021@comp-wiz.com>
+Message-Id: <Pine.LNX.4.44.0209151634160.23861-100000@tiger.dorfam.ca>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=spamassassin-talk>
+X-Original-Date: Sun, 15 Sep 2002 16:36:15 -0400 (EDT)
+Date: Sun, 15 Sep 2002 16:36:15 -0400 (EDT)
+
+On Sun, 15 Sep 2002, Vernon Webb wrote:
+
+> I'm getting these messages and I'm not sure what they mean. Can anyone clear 
+> this up for me? Thanks.
+> 
+> Sep 15 11:45:09 linux mailscanner[6128]: RBL Check ORDB-RBL timed out and 
+> was killed, consecutive failure 3 of 7
+> Sep 15 11:45:24 linux mailscanner[6128]: SpamAssassin timed out and was 
+> killed
+
+Your running mailscanner and the timeout used got to check ORDB-RBL is too 
+low and your timing out.  mailscanner will count up to seven timeouts and 
+then automatically disable these checks until it restarts itself (within 4 
+hours).
+
+-- 
+Gerry
+
+"The lyfe so short, the craft so long to learne"  Chaucer
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

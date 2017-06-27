@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Thu Oct  3 19:28:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EC13016F16
+	for <jm@localhost>; Thu,  3 Oct 2002 19:28:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 19:28:32 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93H4gK06207 for
+    <jm-rpm@jmason.org>; Thu, 3 Oct 2002 18:04:43 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g93H04f17315; Thu, 3 Oct 2002 19:00:04
+    +0200
+Received: from swampfox.owlriver.com (swampfox.owlriver.com
+    [206.21.107.147]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g93GxHf13656 for <rpm-list@freshrpms.net>; Thu, 3 Oct 2002 18:59:17 +0200
+Received: from localhost (localhost [127.0.0.1]) by swampfox.owlriver.com
+    (8.11.6/8.11.6) with ESMTP id g93GxFB24532 for <rpm-list@freshrpms.net>;
+    Thu, 3 Oct 2002 12:59:15 -0400
+From: R P Herrold <herrold@owlriver.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: f-rpm] Python 2.2 site libs?
+In-Reply-To: <1810000.1033647373@spawn.se7en.org>
+Message-Id: <Pine.LNX.4.44.0210031255050.20571-100000@swampfox.owlriver.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 3 Oct 2002 12:59:15 -0400 (EDT)
+Date: Thu, 3 Oct 2002 12:59:15 -0400 (EDT)
+
+On Fri, 4 Oct 2002, Mark Derricutt wrote:
+
+> Anyone know why Red Hat insist on sticking with python 1.5.2?
+
+ehhh?  IANAHNBARHE -- RHL 8.0 is fully python-2, with a back
+compatability v 1 shim set.  This has been working and freely
+available in their Raw Hide for 5 months for early adopters
+and back-porters.
+
+Red Hat maintains binary compatability across major releases.  
+Its server management tools are heavily Python, and becoming 
+more so.
+
+To have added mid-stream the python-2 series in the RHL 7.x
+series would have been quite disruptive to an existing 
+installed base.
+
+-- Russ Herrold
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

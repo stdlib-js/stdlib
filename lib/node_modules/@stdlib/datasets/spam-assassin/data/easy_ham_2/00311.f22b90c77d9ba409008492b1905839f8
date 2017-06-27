@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:21:39 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 06C044406D
+	for <jm@localhost>; Fri,  9 Aug 2002 10:21:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:21:05 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EJVb06105 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:19:31 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA04520 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 09:32:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA29680; Fri, 9 Aug 2002 09:32:06 +0100
+Received: from lhidns.gov.ie ([193.1.228.222]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA29639 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 09:31:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.1.228.222] claimed to
+    be lhidns.gov.ie
+Received: from gw.educ.irlgov.ie (educ-gw.gov.ie [192.168.6.1] (may be
+    forged)) by lhidns.gov.ie (8.9.3/8.9.3) with ESMTP id JAA30717;
+    Fri, 9 Aug 2002 09:30:46 +0100
+Received: (from fwtk@localhost) by gw.educ.irlgov.ie (8.8.6/8.8.6) id
+    KAA27235; Fri, 9 Aug 2002 10:49:43 +0100 (BST)
+Received: from unknown(10.0.0.13) by gw.educ.irlgov.ie via smap (V2.0) id
+    xma027225; Fri, 9 Aug 02 10:49:25 +0100
+Content-Class: urn:content-classes:message
+Subject: RE: [ILUG] TMDA (WAS --> slashdot EW Dijkstra humor]
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Fri, 9 Aug 2002 09:30:29 +0100
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Message-Id: <9C498074D5419A44B05349F5BF2C26301CFA6C@sdubtalex01.education.gov.ie>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [ILUG] TMDA (WAS --> slashdot EW Dijkstra humor]
+Thread-Index: AcI/DuGbMxCWO9w7QJaxyCPSPHZxoAAb4aew
+From: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+To: "Paul Jakma" <paulj@alphyra.ie>
+Cc: <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    JAA29639
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+<snip>
+>SPEWS: to force ISPs to take action against spammers 
+>
+>SPEWS /will/ list entire ISP netblocks /if/ the ISP consistently
+>ignores/fails to take action on abuse reports over the course of
+>several months. however, they're pretty quick at delisting once action
+>is taken. in the long-term, and in absence of global and effective 
+>anti-UCE regulations, it's the only realistic way to get to a spam 
+>free internet.
+>
+>Open relay lists: to protect against relays obviously.
+
+Is this something along the same line as ORBS?
+I remember not so long ago when eircom was put
+on the ORBS list, half the ISP's in Europe wouldn't
+accept mail from my address. Of course, informing
+Eircom of this did nothing for about 4 months or so.
+
+IMHO stopping spammers is a great idea but I'd rather
+have to hit d or delete rather than have my messages
+bounced by someone else's ISP.
+
+</rant>
+
+Regards,
+Shane
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

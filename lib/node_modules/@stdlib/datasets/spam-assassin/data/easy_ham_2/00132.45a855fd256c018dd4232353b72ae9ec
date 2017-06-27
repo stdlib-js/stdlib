@@ -1,0 +1,163 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D50C3440FC
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:15 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6SICqi17564 for
+    <jm-ilug@jmason.org>; Sun, 28 Jul 2002 19:12:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA18379; Sun, 28 Jul 2002 19:09:45 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA18344 for <ilug@linux.ie>;
+    Sun, 28 Jul 2002 19:09:31 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6SI9UC05192 for <ilug@linux.ie>;
+    Sun, 28 Jul 2002 19:09:30 +0100
+Date: Sun, 28 Jul 2002 19:09:29 +0100
+To: irish linux users group <ilug@linux.ie>
+Message-Id: <20020728190929.B2315@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+From: kevin lyda <kevin@doolin.com>
+X-Delivery-Agent: TMDA/0.57
+Subject: [ILUG] weekend projects...
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+two seperate projects this weekend.  first mod_gzip which is an apache
+module to speed up serving static and dynamic mime(text/.*) web content.
+the second is the compaq smart array configs for linux.
+
+before i go on much more i'll cover the following bits: the server
+is running redhat 7.3 linux with all the updates on a compaq dl380.
+the client is running the same on a compaq laptop.  pretty much everything
+is stock redhat 7.3 - and i'm consciously trying to stick to that.
+
+------------------------------------------------------------------------
+mod_gzip:
+    
+    there's a tutorial on linux.ie for it (thanks donnacha) but since i'm
+    not an apache person this only got me part of the way.  step by step,
+    this is what i did:
+
+	# cd /root
+	# wget http://www.remotecommunications.com/apache/mod_gzip/src/1.3.19.1a/mod_gzip.c.gz
+	# gunzip mod_gzip.c.gz
+	# apxs -ic mod_gzip.c
+    
+    that should compile and install fine, so add the following to
+    your apache configs.  i've included comments to explain where they
+    should go.  my apache config is split among many files (which is
+    why i didn't use the -a flag to apxs).
+
+	# put this after the last LoadModule line
+	LoadModule gzip_module        /usr/lib/apache/mod_gzip.so
+	# put this after the last LoadModule line
+	AddModule mod_gzip.c
+	# this just needs to go below the obove two lines.
+	<IfModule mod_gzip.c>
+	    mod_gzip_on                         Yes
+	    mod_gzip_minimum_file_size          300
+	    mod_gzip_maximum_file_size          0
+	    mod_gzip_item_include               file    \.htm$
+	    mod_gzip_item_include               file    \.html$
+	    mod_gzip_item_include               file    \.txt$
+	    mod_gzip_item_include               file    \.php$
+	    mod_gzip_item_include               file    \.php3$
+	    mod_gzip_item_include               file    \.php4$
+	    mod_gzip_item_include               file    \.pl$
+	    mod_gzip_item_include               mime    text/.*
+	    mod_gzip_item_include               mime    httpd/unix-directory
+	    mod_gzip_item_include               handler ^perl-script$
+	    mod_gzip_item_include               handler ^server-status$
+	    mod_gzip_item_include               handler ^server-info$
+	    mod_gzip_item_exclude               file    \.css$
+	    mod_gzip_item_exclude               file    \.js$
+	    mod_gzip_item_exclude               mime    ^image/.*
+	    mod_gzip_dechunk                    yes
+	    # mod_gzip_min_http                 1000
+	    mod_gzip_temp_dir                   /tmp
+	    mod_gzip_keep_workfiles             No
+
+	    LogFormat "%h \"%f\" %{mod_gzip_result}n %{mod_gzip_input_size}n %{mod_gzip_output_size}n %{mod_gzip_compression_ratio}npct." mod_gzip_logs
+	    CustomLog logs/compression_log mod_gzip_logs
+	</IfModule>
+
+    finally, poke apache:
+
+	# service httpd reload
+
+    and after you've viewed some pages and check
+    /var/log/httpd/compression_log in order to see if it's working.
+    if you have /server-info avilable you should see that mod_gzip
+    is loaded.  a compressed line and a non-compressed line might look
+    like this:
+
+	roo "/.../ssl_glossary.html" OK 15092 4726 69pct.
+	roo "/.../ssl_template.head-num-7.gif" DECLINED:EXCLUDED 0 0 0pct.
+
+------------------------------------------------------------------------
+compaq smart array config:   (WARNING: YOU NEED A JVM FOR YOUR BROWSER)
+
+    i searched on google for "compaq smart array configuration linux" and
+    got a slew of hits.  one of them was a click away from this page:
+
+	http://www.compaq.com/support/files/server/us/download/14703.html
+
+    i downloaded the rpm.  installed it. and ran the server per the
+    instructions.  note, the -R enables remote connections.  if you're
+    running the browser locally, run it without the -R and connect
+    to localhost.
+
+	cpqacuxe -R
+
+    i found that galeon didn't work.  mozilla did.  i suspect it's because
+    pop-ups are disabled in galeon config, but i might be wrong.  it uses
+    java which is slow and memory hungry on this laptop.  feel free to
+    try galeon with pop-ups enabled if you want to.
+
+    so, point mozilla at http://yourserver:2301/ .  login as
+    administrator/administrator and change your password.  then go back
+    to the main page and click the little drive array graphic towards
+    the bottom.  configure your array as you want (i had to add a disk).
+    save your changes, and exit.  to stop the server, just do this:
+
+	cpqacuxe -stop
+
+    in my case the drive was now accessible.  i started the process of
+    making the file systems by partitioning the drive.  i knew what
+    it would be called, but a grep for ida on the output of dmesg
+    confirmed it.
+
+	fdisk /dev/ida/c0d1
+
+    and from there i built the filesystems and so on.
+
+hope this helps some folks,
+
+kevin
+
+-- 
+Kevin Lyda - kevin@doolin.com
+Lead Programmer
+Doolin Technologies
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

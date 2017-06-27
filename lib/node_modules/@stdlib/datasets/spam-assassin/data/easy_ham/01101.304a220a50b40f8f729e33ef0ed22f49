@@ -1,0 +1,77 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:04:30 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5406716EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:04:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:04:29 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g16MBE822807 for
+    <jm-rpm@jmason.org>; Wed, 6 Feb 2002 22:11:15 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16M62m15020;
+    Wed, 6 Feb 2002 23:06:02 +0100
+Received: from fep02-app.kolumbus.fi (fep02-0.kolumbus.fi [193.229.0.44])
+    by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16M5wm15010 for
+    <rpm-list@freshrpms.net>; Wed, 6 Feb 2002 23:05:58 +0100
+Received: from pihlaja.kotilo ([62.248.144.92]) by fep02-app.kolumbus.fi
+    (InterMail vM.5.01.03.15 201-253-122-118-115-20011108) with ESMTP id
+    <20020206220608.CXUD1068.fep02-app.kolumbus.fi@pihlaja.kotilo> for
+    <rpm-list@freshrpms.net>; Thu, 7 Feb 2002 00:06:08 +0200
+Received: (from peter@localhost) by pihlaja.kotilo (8.11.6/8.11.6) id
+    g16MTEg13192 for rpm-list@freshrpms.net; Thu, 7 Feb 2002 00:29:14 +0200
+From: Peter Peltonen <pisara@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: About apt, kernel updates and dist-upgrade
+Message-Id: <20020207002914.H12825@pihlaja.kotilo>
+References: <20020204170408.F2626@pihlaja.kotilo>
+    <20020204165314.389e52ec.matthias@egwn.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020204165314.389e52ec.matthias@egwn.net>; from
+    matthias@egwn.net on Mon, Feb 04, 2002 at 04:53:14PM +0100
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 7 Feb 2002 00:29:14 +0200
+Date: Thu, 7 Feb 2002 00:29:14 +0200
+
+About apt.conf there are these lines:
+
+--<snip>--
+RPM 
+{
+   // Leave list empty to disable
+   AllowedDupPkgs {"^kernel$"; "kernel-smp"; "kernel-enterprise"; };
+   HoldPkgs {"kernel-source"; "kernel-headers"; };
+}
+--</snip>--
+
+How do I tell apt hold all kernel packages? Can I use syntax like 
+"kernel*"; ? 
+
+And I don't quite understand what the part "^kernel$"; means?
+
+-- 
+Peter
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

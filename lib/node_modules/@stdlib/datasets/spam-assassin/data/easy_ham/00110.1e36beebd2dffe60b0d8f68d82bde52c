@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Mon Oct  7 12:07:12 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 831DC16F69
+	for <zzzz@localhost>; Mon,  7 Oct 2002 12:05:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 07 Oct 2002 12:05:03 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g979bUK26095 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 7 Oct 2002 10:37:30 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 449BC341EE; Mon,  7 Oct 2002 10:38:14 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from utopia.ucd.ie (utopia.ucd.ie [137.43.13.22]) by
+    lugh.tuatha.org (Postfix) with SMTP id 99EDA341DD for <ilug@linux.ie>;
+    Mon,  7 Oct 2002 10:37:58 +0100 (IST)
+Received: (qmail 27553 invoked by uid 60001); 7 Oct 2002 09:35:39 -0000
+Received: from 137.43.13.22 (proxying for 137.43.213.15) (SquirrelMail
+    authenticated user joefitz) by squirrelmail.netsoc.ucd.ie with HTTP;
+    Mon, 7 Oct 2002 10:35:39 +0100 (IST)
+Message-Id: <53964.137.43.13.22.1033983339.squirrel@squirrelmail.netsoc.ucd.ie>
+Subject: Re: [ILUG] adsl router modem combo
+From: <joefitz@netsoc.ucd.ie>
+To: <decdelmur@iol.ie>
+In-Reply-To: <00bc01c26d85$20bb29d0$578691c2@1wzffgdp93mz5jv>
+References: <00bc01c26d85$20bb29d0$578691c2@1wzffgdp93mz5jv>
+X-Priority: 3
+Importance: Normal
+Cc: <ilug@linux.ie>
+X-Mailer: SquirrelMail (version 1.2.8)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Mon, 7 Oct 2002 10:35:39 +0100 (IST)
+Date: Mon, 7 Oct 2002 10:35:39 +0100 (IST)
+
+It seems to only support PPPoA and not PPPoE. You need one that supports
+PPPoE, if you want torun it in routed IP mode. If you are using it as a
+bridge, it'll probably work, but you'd be left leaving the computer on,
+which would defeat the purpose of getting a router.
+
+The best router I've come accross is the Zyxel 643. Eircom supply this,
+but if you have alook online you can probably find it cheaper to buy
+online from America or the UK.
+
+Hope this is useful,
+Joe
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

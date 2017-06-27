@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Wed Sep 25 10:24:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0C25616F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:24:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:24:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8P8L3C18779 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 09:21:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5B3A22940E5; Wed, 25 Sep 2002 01:17:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id B170529409A for <Fork@xent.com>;
+    Wed, 25 Sep 2002 01:16:18 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g8P8K2SV027166 for <Fork@xent.com>;
+    Wed, 25 Sep 2002 01:20:03 -0700 (PDT)
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+Subject: Digital radio playlists are prohibited?!
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: Fork@xent.com
+Content-Transfer-Encoding: 7bit
+Message-Id: <95745878-D05F-11D6-8F1E-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 25 Sep 2002 01:19:59 -0700
+
+Anyone heard of this law before?
+
+> Q. Can I get a playlist?
+> A. We are unable to offer a playlist. The Digital Performance Right in 
+> Sound Recordings Act of 1995 passed by Congress prevents us from 
+> disclosing such information. The Digital Law states that if one is 
+> transmitting a digital signal, song information cannot be 
+> pre-announced. It is a Music Choice policy not to release a playlist of 
+> upcoming or previously played songs.
+
+Recently, MusicChoice upgraded their website with a very important 
+service, as far as I'm concerned: real-time song info from their 
+website. My DirecTV receiver is up on a shelf (and its display scrolls 
+intermittently); and I'm surely not going to fire up my projector while 
+listening to the "radio", so I'm quite happy that I can retrieve r/t 
+song info with URLs like:
+
+http://backstage.musicchoice.com/songid/channels/soundsoftheseasons.asp
+http://backstage.musicchoice.com/songid/channels/rap.asp
+http://backstage.musicchoice.com/songid/channels/opera.asp
+etc...
+
+Now, if I were a more eager hacker, I'd write up little WSDL stubs for 
+these event streams (they're clearly not worried about load, since their 
+own web pages specify 15 sec meta-refresh) and then feed 'em through a 
+content router to alert me to cool songs. Heck, cross-reference the 
+service to CDDB and... :-)
+
+RK
+
+

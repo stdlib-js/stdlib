@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Fri Aug 16 11:27:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8BCA4441A4
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7FKd8717169 for <jm@jmason.org>;
+    Thu, 15 Aug 2002 21:39:09 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 15AFD29409A; Thu, 15 Aug 2002 13:37:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from pallas.eruditorum.org (pallas.eruditorum.org
+    [63.251.136.85]) by xent.com (Postfix) with ESMTP id 9A1A4294098 for
+    <fork@xent.com>; Thu, 15 Aug 2002 13:36:47 -0700 (PDT)
+Received: by pallas.eruditorum.org (Postfix, from userid 500) id
+    52C9811260; Thu, 15 Aug 2002 16:38:06 -0400 (EDT)
+From: Jesse <jesse@fsck.com>
+To: fork@spamassassin.taint.org
+Subject: It's a small world
+Message-Id: <20020815203806.GM2724@pallas.fsck.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.1i
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 15 Aug 2002 16:38:06 -0400
+
+Strata just walked up to me in a cafe in Somerville, MA and
+asked me how I was getting net here. And _then_ we figured out 
+that we have shared context.
+
+        Jesse
+-- 
+jesse reed vincent -- root@eruditorum.org -- jesse@fsck.com 
+70EBAC90: 2A07 FC22 7DB4 42C1 9D71 0108 41A3 3FB3 70EB AC90
+
+I have images of Marc in well worn combat fatigues, covered in mud, 
+sweat and blood, knife in one hand and PSION int he other, being 
+restrained by several other people, screaming "Let me at it! 
+Just let me at it!"  Eichin standing calmly by with something 
+automated, milspec, and likely recoilless.
+				-monty on opensource peer review
+http://xent.com/mailman/listinfo/fork
+

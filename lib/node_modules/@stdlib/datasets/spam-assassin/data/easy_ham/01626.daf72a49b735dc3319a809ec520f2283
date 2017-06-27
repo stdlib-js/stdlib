@@ -1,0 +1,116 @@
+From secprog-return-485-jm=jmason.org@securityfocus.com  Fri Sep  6 11:38:51 2002
+Return-Path: <secprog-return-485-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 983E216F6D
+	for <jm@localhost>; Fri,  6 Sep 2002 11:37:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:37:33 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869wcC29994 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:58:38 +0100
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by webnote.net (8.9.3/8.9.3) with ESMTP id UAA17986 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 20:39:45 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    26D1DA3106; Thu,  5 Sep 2002 10:42:53 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 4920 invoked from network); 4 Sep 2002 23:14:36 -0000
+Message-Id: <3D76977B.9010606@wirex.com>
+Date: Wed, 04 Sep 2002 16:30:03 -0700
+From: Crispin Cowan <crispin@wirex.com>
+Organization: WireX Communications, Inc.
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Ben Mord <bmord@icon-nicholson.com>
+Cc: "Webappsec Securityfocus.Com" <webappsec@securityfocus.com>,
+	SECPROG Securityfocus <SECPROG@securityfocus.com>
+Subject: Re: use of base image / delta image for automated recovery from
+    attacks
+References: <NAEOJLMPJMJDFPLHIOJOMEGLDBAA.bmord@icon-nicholson.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Ben Mord wrote:
+
+>     -----Original Message-----
+>     *From:* Crispin Cowan [mailto:crispin@wirex.com]
+>     *Sent:* Wednesday, September 04, 2002 5:46 PM
+>     *To:* Ben Mord
+>     *Cc:* Webappsec Securityfocus.Com; SECPROG Securityfocus
+>     *Subject:* Re: use of base image / delta image for automated
+>     recovery from attacks
+>
+>     Ben Mord wrote:
+>
+>>I was inspired by a mode of operation supported by VMWare. [use VMWare's ability to rolll back state to recover from intrusions]
+>>
+>     I did my dissertation work in this area (Optimistic Computing
+>     <http://www.cse.ogi.edu/%7Ecrispin/hope.pubs.html>) and so was
+>     interested in applying it to the security problem. Unfortunately,
+>     you hit a bunch of problems:
+>
+>         * When can you "commit" a state as being "good"?  You can't
+>           run from a redo log forever; the performance and storage
+>           penalties accumulate. Even log structured file systems
+>           garbage collect eventually. So you have to commit sometime.
+>           The problem is that if you commit too eagerly, you might
+>           commit corrupted state. If you commit too conservatively,
+>           you eat performance and storage penalties.
+>         * What do you do if you discover that there is corrupted state
+>           in the *middle* of your redo log, and you want some of the
+>           critical state that comes after it? You need some way to dig
+>           the corruption out of the middle and save the rest. My
+>           dissertation solves this problem, but you have to re-write
+>           everything in my programming language :)
+>         * Just doing this at all imposes substantial performance
+>           penalties. I love VMWare, and use it every day (the best
+>           $200 I ever spent on software) but it is not very fast.   
+>
+> My proposed solution to the first two problems you mention is to be 
+> less ambitious. The idea is that you *never* commit - instead, you 
+> simply revert to base state on reboot.
+
+Ah. In that case, you can use something considerably less powerful than 
+VMWare. All you need is a machine configured to boot from CD-ROM and use 
+a RAM disk for scratch space. Numerous Linux distros are available that 
+let you boot a stateless but functional system from CD-ROM.
+
+> Obviously, you can't do this with partitions that accrue important 
+> state, e.g. a partition that stores database table data.
+
+... but if you *do* want some state to persist, then you need a 
+mountable writable partition. To protect it, you need some kind of 
+access control management to decide who can do what to the writable 
+partition, blah blah blah ... and before you know it, the security 
+problem starts to look just like it does for conventional servers.
+
+Simple approxmation to this: make /usr a separate partion, and mount it 
+read-only:
+
+    * The good news: attackers that want to trojan your software have to
+      reboot, at least.
+    * The bad news: administrators that want to update your software
+      have to reboot, at least.
+
+Crispin
+
+-- 
+Crispin Cowan, Ph.D.
+Chief Scientist, WireX                      http://wirex.com/~crispin/
+Security Hardened Linux Distribution:       http://immunix.org
+Available for purchase: http://wirex.com/Products/Immunix/purchase.html
+
+
+

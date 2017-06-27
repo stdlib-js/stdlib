@@ -1,0 +1,58 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0F0F944123
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:36 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CJ34b30120 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 20:03:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA01458; Mon, 12 Aug 2002 20:01:01 +0100
+Received: from mail.go2.ie ([62.17.153.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA01425 for <ilug@linux.ie>; Mon,
+    12 Aug 2002 20:00:53 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.153.101] claimed to
+    be mail.go2.ie
+Received: from k100-50.bas1.dbn.dublin.eircom.net
+    (k100-50.bas1.dbn.dublin.eircom.net [159.134.100.50]) by mail.go2.ie
+    (Postfix) with ESMTP id 845BF10EB for <ilug@linux.ie>; Mon, 12 Aug 2002
+    20:00:22 +0100 (IST)
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+From: Nick Murtagh <nickm@go2.ie>
+To: ilug@linux.ie
+In-Reply-To: <20020812182625.GA25331@linuxmafia.com>
+References: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+    <NBBBIGEGHIGMPCNKHCECOEGJEAAA.kenn@bluetree.ie>
+    <20020812182625.GA25331@linuxmafia.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8-3mdk
+Date: 12 Aug 2002 20:00:10 +0100
+Message-Id: <1029178811.9166.10.camel@gemini.windmill>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, 2002-08-12 at 19:26, Rick Moen wrote:
+> NON-freely redistributable apps (in boxed sets):
+> -----------------------------------------------
+> SAP database
+
+The same one as provided on www.sapdb.org? 
+Which is released under the GPL/LGPL?
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

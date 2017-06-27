@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Thu Aug 15 10:51:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AA63743C5A
+	for <jm@localhost>; Thu, 15 Aug 2002 05:49:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:49:48 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7ELpf405351 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 22:51:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA32396; Wed, 14 Aug 2002 22:50:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay07.indigo.ie (relay07.indigo.ie [194.125.133.231]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id WAA32361 for <ilug@linux.ie>;
+    Wed, 14 Aug 2002 22:50:30 +0100
+Received: (qmail 66084 messnum 1031127 invoked from
+    network[194.125.205.129/ts08-002.dublin.indigo.ie]); 14 Aug 2002 21:50:29
+    -0000
+Received: from ts08-002.dublin.indigo.ie (HELO indigo.ie)
+    (194.125.205.129) by relay07.indigo.ie (qp 66084) with SMTP;
+    14 Aug 2002 21:50:29 -0000
+Message-Id: <3D5AD125.5040509@indigo.ie>
+Date: Wed, 14 Aug 2002 22:52:37 +0100
+From: Shane Kennedy <skenn@indigo.ie>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0rc2)
+    Gecko/20020618 Netscape/7.0b1
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ILUG <ilug@linux.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Serial port trouble
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+    Can anyone offer me any advice on using an MRi dual port PCI - serial
+card.  MRi claim it works, but that not at 9600 baud.  I AM using it at
+9600, but I get a 10s delay on output, followed by just 16 bytes,
+repeated untill complete.  Similarly, on input, I get a delay before the
+app' sees the data.
+
+TIA
+Shane
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

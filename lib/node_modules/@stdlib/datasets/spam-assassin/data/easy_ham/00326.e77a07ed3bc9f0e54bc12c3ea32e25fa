@@ -1,0 +1,116 @@
+From fork-admin@xent.com  Mon Aug 26 22:28:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B33CC43F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 17:28:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:28:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLRRZ10197 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:27:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6C2EC2941E2; Mon, 26 Aug 2002 13:39:30 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id B1C902940BF for <fork@xent.com>;
+    Sat, 24 Aug 2002 11:38:24 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H1D0047H2J3JI@mta7.pltn13.pbi.net> for fork@xent.com; Sat,
+    24 Aug 2002 11:40:15 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: buffer overflows
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D67D0D0.E6AF7683@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8BIT
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 24 Aug 2002 11:30:40 -0700
+
+Didn't we just have a discussion on FoRK how hard
+it is nowadays to write something that's not
+buffer overflow protected? 
+
+http://news.zdnet.co.uk/story/0,,t269-s2121250,00.html
+
+
+
+Location: http://news.zdnet.co.uk/story/0,,t269-s2121250,00.html 
+
+IM client vulnerable to attack 
+IM client vulnerable to attack 
+
+James Pearce, ZDNet Australia  
+
+Users of messenger client Trillian are vulnerable to attack, according to
+information security analyst John Hennessy.
+
+Hennessy has published a proof-of-concept showing the latest version of
+Trillian, v0.73, is vulnerable to a buffer-overflow attack that will
+allow individuals with malicious intent to run any program on the
+computer.
+
+Trillion is a piece of software that allows you to connect to ICQ, AOL
+Instant Messenger, MSN Messenger, Yahoo! Messenger and IRC with a single
+interface, despite some companies actively avoiding messenger
+interoperability.
+
+According to Jason Ross, senior analyst at amr interactive, in June 2002
+there were 28,000 home users of Trillian in Australia, about 0.4 percent
+of the Internet population, and 55,000 people using it at work, about 1.8
+percent of the Internet population.
+
+David Banes, regional manager of Symantec security response, told ZDNet
+Australia the code appeared to be valid.
+
+"With these sort of things you have to find some process that would
+accept a connection, then throw loads of random data at it and get it to
+crash," he said. "Once it's crashed, you can try to find a way to exploit
+it."
+
+He said the proof-of-concept that was published is designed to run on
+Notepad, but could be easily modified to run any program on the system.
+He said the problem was easy to fix by "writing protective code around
+that particular piece to more closely validate the data around that
+piece."
+
+"Because people are pushed for productivity you tend to leave out the
+checks and balances you should put in, which is why we have all these
+buffer overflows and exploits out there now," said Banes.
+
+Cerulean Studios, creator of Trillian, was contacted for comment but had
+not responded by the time of publication.
+
+------------------------------------------------------------------------
+
+For all security-related news, including updates on the latest viruses,
+hacking exploits and patches, check out ZDNet UK's Security News Section.
+
+Have your say instantly, and see what others have said. Go to the
+Security forum.
+
+Let the editors know what you think in the Mailroom.
+
+Copyright © 2002 CNET Networks, Inc. All Rights Reserved. 
+ZDNET is a registered service mark of CNET Networks, Inc. ZDNET Logo is a service mark of CNET NETWORKS,
+Inc.
+http://xent.com/mailman/listinfo/fork
+

@@ -1,0 +1,90 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 10:35:21 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 83F1716F1A
+	for <jm@localhost>; Sat,  5 Oct 2002 10:35:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:35:09 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g94Ki7K07946 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 21:44:07 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g94Kb1f24546; Fri, 4 Oct 2002 22:37:02
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g94KaUf22746; Fri, 4 Oct 2002 22:36:30 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: Brian Fahrlander <kilroy@kamakiriad.com>
+Cc: RPM-List <rpm-zzzlist@freshrpms.net>
+Subject: Re: Alsa/Redhat 8 compatability
+Message-Id: <20021004223558.1e85622d.matthias@rpmforge.net>
+In-Reply-To: <20021004130741.2df14559.kilroy@kamakiriad.com>
+References: <20021004130741.2df14559.kilroy@kamakiriad.com>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 4 Oct 2002 22:35:58 +0200
+Date: Fri, 4 Oct 2002 22:35:58 +0200
+
+Once upon a time, Brian wrote :
+
+> 
+>     I have a fresh, new 8.0 install.  I'd like to 'go alsa', but I worry
+>     about screwing it up.  Is this fear founded?  If I could get Alsa, I
+>     could run a bunch of games I've been waiting for years to come
+>     out...like Search & Rescue (available on a Mandrake RPM) and maybe
+>     FlightGear (flight simulator).
+
+Well, I'm sure you can recompile those game packages without ALSA anyway.
+Also, note that ALSA 0.9.x has just appeared in Mandrake 9.0 and that all
+previous Mandrake releases were using the incompatible, aging and now
+unsupported 0.5.x series. (unless I've misunderstood)
+
+>     How much 'hacking' is likely required to make it work for an
+>     SBLive/emu10k1 soundcard?
+
+Near to none, it should be quite straightforward :
+http://freshrpms.net/docs/alsa/
+
+The only tricky part is editing the /etc/modules.conf file, but the ALSA
+Soundcard Matrix has a page for every supported card with a section you can
+most of the time simply copy and paste!
+
+I really think that with my ALSA packages, ALSA on Red Hat Linux has never
+been so easy! ;-)
+
+Cheers,
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+Load : 0.00 0.07 0.17, AC on-line, battery charging: 100% (1:47)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

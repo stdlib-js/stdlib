@@ -1,0 +1,83 @@
+From fork-admin@xent.com  Tue Sep 17 11:29:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DB4C516F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:29:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:29:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8GJhcC07013 for <jm@jmason.org>;
+    Mon, 16 Sep 2002 20:43:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 89BE82940D0; Mon, 16 Sep 2002 12:40:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id B6F8B2940CD for
+    <FoRK@xent.com>; Mon, 16 Sep 2002 12:39:05 -0700 (PDT)
+Received: (qmail 8446 invoked by uid 508); 16 Sep 2002 19:43:47 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.96) by
+    venus.phpwebhosting.com with SMTP; 16 Sep 2002 19:43:47 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8GJBlB15944; Mon, 16 Sep 2002 21:11:47
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: <sdw@lig.net>
+Cc: Gary Lawrence Murphy <garym@canada.com>,
+	Udhay Shankar N <udhay@pobox.com>, Adam Rifkin <adam@KnowNow.com>,
+	<FoRK@xent.com>
+Subject: Re: storage bits
+In-Reply-To: <3D862A52.1080502@hpti.com>
+Message-Id: <Pine.LNX.4.33.0209162104390.14309-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 16 Sep 2002 21:11:47 +0200 (CEST)
+
+On Mon, 16 Sep 2002, Stephen D. Williams wrote:
+
+> It's efficient-end, not low end.  At 1Million hour MTBF, 133MB/sec,
+> and pretty good buffering and speed, the only thing going for SCSI is
+> 15,000 RPM vs. 7200 and in a very small number of cases, slightly
+> better scatter-gather.  (Actually, I think there might be a 15,000 RPM
+> IDE now.)
+
+It's not just krpm, the desktop HDs have a higher failure rate. But I
+agree, EIDE has high density, and EIDE hardware RAID can offer SCSI a
+sound beating for reliability, performance, and storage density/rack units
+for the money, if designed for it, and if people would actually start 
+buying it.
+ 
+> The other issues are pretty much non-issues: using multiple drives and
+> controller contention (just use many IDE channels with extra PCI
+> cards, up to 10 in some systems), and long cable runs (just split
+
+There are not all that many hard drives inside an 1U enclosure. Airflow
+blockage (you have to fit in 2-3x the number of SCSI disks with EIDE) will
+soon be a thing of the past due to SATA.
+
+> storage between nodes).  Dual-port SCSI is also a non-issue since it
+> is very expensive, doesn't work that well in practice because there
+> are numerous secondary failure modes for shared disk systems, and
+> because you still end up with a single point of failure.
+
+Since rack-space costs dominate, and our systems need more or less decent
+I/O we're going with 1U Dells with SCSI. The hard drive prices don't
+really make a visible difference, given the cost of the iron, and the
+rackspace/month. Plus, 1U Dells don't have any space left for lots of EIDE
+drives.
+
+

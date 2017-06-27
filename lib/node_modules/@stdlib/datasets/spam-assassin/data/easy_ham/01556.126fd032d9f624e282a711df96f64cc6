@@ -1,0 +1,79 @@
+From razor-users-admin@lists.sourceforge.net  Tue Sep  3 14:20:48 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E680A16F44
+	for <jm@localhost>; Tue,  3 Sep 2002 14:19:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:19:05 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g836nOZ07951 for <jm-razor@jmason.org>; Tue, 3 Sep 2002 07:49:24 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17m7N1-0003Ev-00; Mon,
+    02 Sep 2002 23:41:03 -0700
+Received: from postit.sciences.univ-nantes.fr ([193.52.109.9]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17m7M6-0003Z2-00 for <razor-users@lists.sourceforge.net>; Mon,
+    02 Sep 2002 23:40:06 -0700
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    postit.sciences.univ-nantes.fr (Postfix) with ESMTP id C6C11F002D for
+    <razor-users@lists.sourceforge.net>; Tue,  3 Sep 2002 08:39:58 +0200
+    (CEST)
+Received: from sciences.univ-nantes.fr (arny.irin.sciences.univ-nantes.fr
+    [193.52.99.28]) by postit.sciences.univ-nantes.fr (Postfix) with ESMTP id
+    4908EF002A for <razor-users@lists.sourceforge.net>; Tue,  3 Sep 2002
+    08:39:58 +0200 (CEST)
+Message-Id: <3D74593D.2050608@sciences.univ-nantes.fr>
+From: Arnaud Abelard <arnaud.abelard@sciences.univ-nantes.fr>
+Organization: =?ISO-8859-1?Q?Universit=E9_de_Nantes?=
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.0) Gecko/20020606
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: razor-users@example.sourceforge.net
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+X-Virus-Scanned: by AMaViS snapshot-20010714
+Subject: [Razor-users] razor plugins for mozilla?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 03 Sep 2002 08:39:57 +0200
+Date: Tue, 03 Sep 2002 08:39:57 +0200
+
+Hello,
+
+did any of you hear about a a razor plugin for mozilla?
+a plugin that would add a "report as spam" button somewhere for the user 
+to report a mail as spam on a server?
+
+Arnaud
+-- 
+Arnaud Abélard
+Administrateur réseaux et systèmes
+Irin / Faculté de Sciences
+Université de Nantes
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

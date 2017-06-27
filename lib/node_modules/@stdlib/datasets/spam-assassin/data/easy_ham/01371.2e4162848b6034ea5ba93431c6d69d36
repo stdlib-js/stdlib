@@ -1,0 +1,434 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Thu Aug 29 11:07:34 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E938744157
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:49 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SNTpZ15202 for <jm@jmason.org>; Thu, 29 Aug 2002 00:29:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kCGA-00016L-00; Wed,
+    28 Aug 2002 16:30:02 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kCFH-0007gM-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 16:29:07 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17kCFG-0007lf-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 28 Aug 2002 16:29:06
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17kCFG-00041w-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 28 Aug 2002 16:29:06
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17kCFG-00041w-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin configure,1.1.2.1,1.1.2.2
+    configure.in,1.1.2.1,1.1.2.2
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Wed, 28 Aug 2002 16:29:06 -0700
+Date: Wed, 28 Aug 2002 16:29:06 -0700
+
+Update of /cvsroot/spamassassin/spamassassin
+In directory usw-pr-cvs1:/tmp/cvs-serv15398
+
+Modified Files:
+      Tag: b2_4_0
+	configure configure.in 
+Log Message:
+NetBSD support patch from Klaus Heinz, bug 785
+
+Index: configure
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/configure,v
+retrieving revision 1.1.2.1
+retrieving revision 1.1.2.2
+diff -b -w -u -d -r1.1.2.1 -r1.1.2.2
+--- configure	27 Aug 2002 23:07:13 -0000	1.1.2.1
++++ configure	28 Aug 2002 23:29:04 -0000	1.1.2.2
+@@ -1273,18 +1273,22 @@
+                  cat > conftest.$ac_ext <<EOF
+ #line 1275 "configure"
+ #include "confdefs.h"
++#include <sys/types.h>
+ #include <sys/socket.h>
++int main() {
++printf ("%d", SHUT_RD); return 0;
++; return 0; }
+ EOF
+-if (eval "$ac_cpp conftest.$ac_ext") 2>&5 |
+-  egrep "SHUT_RD" >/dev/null 2>&1; then
++if { (eval echo configure:1283: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
+   rm -rf conftest*
+   shutrd=yes
+ else
++  echo "configure: failed program was:" >&5
++  cat conftest.$ac_ext >&5
+   rm -rf conftest*
+   shutrd=no
+ fi
+-rm -f conftest*
+-
++rm -f conftest*,
+        
+ fi
+ 
+@@ -1298,7 +1302,7 @@
+ 
+ 
+ echo $ac_n "checking for socket in -lsocket""... $ac_c" 1>&6
+-echo "configure:1302: checking for socket in -lsocket" >&5
++echo "configure:1306: checking for socket in -lsocket" >&5
+ ac_lib_var=`echo socket'_'socket | sed 'y%./+-%__p_%'`
+ if eval "test \"`echo '$''{'ac_cv_lib_$ac_lib_var'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+@@ -1306,7 +1310,7 @@
+   ac_save_LIBS="$LIBS"
+ LIBS="-lsocket  $LIBS"
+ cat > conftest.$ac_ext <<EOF
+-#line 1310 "configure"
++#line 1314 "configure"
+ #include "confdefs.h"
+ /* Override any gcc2 internal prototype to avoid an error.  */
+ /* We use char because int might match the return type of a gcc2
+@@ -1317,7 +1321,7 @@
+ socket()
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1321: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
++if { (eval echo configure:1325: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   rm -rf conftest*
+   eval "ac_cv_lib_$ac_lib_var=yes"
+ else
+@@ -1345,7 +1349,7 @@
+ fi
+ 
+ echo $ac_n "checking for connect in -linet""... $ac_c" 1>&6
+-echo "configure:1349: checking for connect in -linet" >&5
++echo "configure:1353: checking for connect in -linet" >&5
+ ac_lib_var=`echo inet'_'connect | sed 'y%./+-%__p_%'`
+ if eval "test \"`echo '$''{'ac_cv_lib_$ac_lib_var'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+@@ -1353,7 +1357,7 @@
+   ac_save_LIBS="$LIBS"
+ LIBS="-linet  $LIBS"
+ cat > conftest.$ac_ext <<EOF
+-#line 1357 "configure"
++#line 1361 "configure"
+ #include "confdefs.h"
+ /* Override any gcc2 internal prototype to avoid an error.  */
+ /* We use char because int might match the return type of a gcc2
+@@ -1364,7 +1368,7 @@
+ connect()
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1368: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
++if { (eval echo configure:1372: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   rm -rf conftest*
+   eval "ac_cv_lib_$ac_lib_var=yes"
+ else
+@@ -1392,7 +1396,7 @@
+ fi
+ 
+ echo $ac_n "checking for t_accept in -lnsl""... $ac_c" 1>&6
+-echo "configure:1396: checking for t_accept in -lnsl" >&5
++echo "configure:1400: checking for t_accept in -lnsl" >&5
+ ac_lib_var=`echo nsl'_'t_accept | sed 'y%./+-%__p_%'`
+ if eval "test \"`echo '$''{'ac_cv_lib_$ac_lib_var'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+@@ -1400,7 +1404,7 @@
+   ac_save_LIBS="$LIBS"
+ LIBS="-lnsl  $LIBS"
+ cat > conftest.$ac_ext <<EOF
+-#line 1404 "configure"
++#line 1408 "configure"
+ #include "confdefs.h"
+ /* Override any gcc2 internal prototype to avoid an error.  */
+ /* We use char because int might match the return type of a gcc2
+@@ -1411,7 +1415,7 @@
+ t_accept()
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1415: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
++if { (eval echo configure:1419: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   rm -rf conftest*
+   eval "ac_cv_lib_$ac_lib_var=yes"
+ else
+@@ -1439,7 +1443,7 @@
+ fi
+ 
+ echo $ac_n "checking for dlopen in -ldl""... $ac_c" 1>&6
+-echo "configure:1443: checking for dlopen in -ldl" >&5
++echo "configure:1447: checking for dlopen in -ldl" >&5
+ ac_lib_var=`echo dl'_'dlopen | sed 'y%./+-%__p_%'`
+ if eval "test \"`echo '$''{'ac_cv_lib_$ac_lib_var'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+@@ -1447,7 +1451,7 @@
+   ac_save_LIBS="$LIBS"
+ LIBS="-ldl  $LIBS"
+ cat > conftest.$ac_ext <<EOF
+-#line 1451 "configure"
++#line 1455 "configure"
+ #include "confdefs.h"
+ /* Override any gcc2 internal prototype to avoid an error.  */
+ /* We use char because int might match the return type of a gcc2
+@@ -1458,7 +1462,7 @@
+ dlopen()
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1462: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
++if { (eval echo configure:1466: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   rm -rf conftest*
+   eval "ac_cv_lib_$ac_lib_var=yes"
+ else
+@@ -1489,12 +1493,12 @@
+ for ac_func in socket strdup strtod strtol snprintf shutdown
+ do
+ echo $ac_n "checking for $ac_func""... $ac_c" 1>&6
+-echo "configure:1493: checking for $ac_func" >&5
++echo "configure:1497: checking for $ac_func" >&5
+ if eval "test \"`echo '$''{'ac_cv_func_$ac_func'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   cat > conftest.$ac_ext <<EOF
+-#line 1498 "configure"
++#line 1502 "configure"
+ #include "confdefs.h"
+ /* System header to define __stub macros and hopefully few prototypes,
+     which can conflict with char $ac_func(); below.  */
+@@ -1517,7 +1521,7 @@
+ 
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1521: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
++if { (eval echo configure:1525: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   rm -rf conftest*
+   eval "ac_cv_func_$ac_func=yes"
+ else
+@@ -1544,20 +1548,20 @@
+ 
+ 
+ echo $ac_n "checking for h_errno""... $ac_c" 1>&6
+-echo "configure:1548: checking for h_errno" >&5
++echo "configure:1552: checking for h_errno" >&5
+ if eval "test \"`echo '$''{'herrno'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   
+                 cat > conftest.$ac_ext <<EOF
+-#line 1554 "configure"
++#line 1558 "configure"
+ #include "confdefs.h"
+ #include <netdb.h>
+ int main() {
+ printf ("%d", h_errno); return 0;
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1561: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
++if { (eval echo configure:1565: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
+   rm -rf conftest*
+   herrno=yes
+ else
+@@ -1580,20 +1584,20 @@
+ 
+ 
+ echo $ac_n "checking for optarg""... $ac_c" 1>&6
+-echo "configure:1584: checking for optarg" >&5
++echo "configure:1588: checking for optarg" >&5
+ if eval "test \"`echo '$''{'haveoptarg'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   
+                 cat > conftest.$ac_ext <<EOF
+-#line 1590 "configure"
++#line 1594 "configure"
+ #include "confdefs.h"
+ #include <getopt.h>
+ int main() {
+ if (optarg == (char *) 0L) { return 0; } return 1;
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1597: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
++if { (eval echo configure:1601: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
+   rm -rf conftest*
+   haveoptarg=yes
+ else
+@@ -1616,20 +1620,21 @@
+ 
+ 
+ echo $ac_n "checking for in_addr_t""... $ac_c" 1>&6
+-echo "configure:1620: checking for in_addr_t" >&5
++echo "configure:1624: checking for in_addr_t" >&5
+ if eval "test \"`echo '$''{'inaddrt'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   
+                 cat > conftest.$ac_ext <<EOF
+-#line 1626 "configure"
++#line 1630 "configure"
+ #include "confdefs.h"
++#include <sys/types.h>
+ #include <netinet/in.h>
+ int main() {
+ in_addr_t foo; return 0;
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1633: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
++if { (eval echo configure:1638: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
+   rm -rf conftest*
+   inaddrt=yes
+ else
+@@ -1645,12 +1650,12 @@
+ echo "$ac_t""$inaddrt" 1>&6
+ if test $inaddrt = no ; then
+   echo $ac_n "checking for in_addr_t""... $ac_c" 1>&6
+-echo "configure:1649: checking for in_addr_t" >&5
++echo "configure:1654: checking for in_addr_t" >&5
+ if eval "test \"`echo '$''{'ac_cv_type_in_addr_t'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   cat > conftest.$ac_ext <<EOF
+-#line 1654 "configure"
++#line 1659 "configure"
+ #include "confdefs.h"
+ #include <sys/types.h>
+ #if STDC_HEADERS
+@@ -1681,20 +1686,21 @@
+ 
+ 
+ echo $ac_n "checking for INADDR_NONE""... $ac_c" 1>&6
+-echo "configure:1685: checking for INADDR_NONE" >&5
++echo "configure:1690: checking for INADDR_NONE" >&5
+ if eval "test \"`echo '$''{'haveinaddrnone'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   
+                 cat > conftest.$ac_ext <<EOF
+-#line 1691 "configure"
++#line 1696 "configure"
+ #include "confdefs.h"
++#include <sys/types.h>
+ #include <netinet/in.h>
+ int main() {
+ in_addr_t foo = INADDR_NONE; return 0;
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1698: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
++if { (eval echo configure:1704: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
+   rm -rf conftest*
+   haveinaddrnone=yes
+ else
+@@ -1717,20 +1723,23 @@
+ 
+ 
+ echo $ac_n "checking for EX__MAX""... $ac_c" 1>&6
+-echo "configure:1721: checking for EX__MAX" >&5
++echo "configure:1727: checking for EX__MAX" >&5
+ if eval "test \"`echo '$''{'haveexmax'+set}'`\" = set"; then
+   echo $ac_n "(cached) $ac_c" 1>&6
+ else
+   
+                 cat > conftest.$ac_ext <<EOF
+-#line 1727 "configure"
++#line 1733 "configure"
+ #include "confdefs.h"
++#ifdef HAVE_SYSEXITS_H
++#include <sysexits.h>
++#endif
+ #include <errno.h>
+ int main() {
+ int foo = EX__MAX; return 0;
+ ; return 0; }
+ EOF
+-if { (eval echo configure:1734: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
++if { (eval echo configure:1743: \"$ac_compile\") 1>&5; (eval $ac_compile) 2>&5; }; then
+   rm -rf conftest*
+   haveexmax=yes
+ else
+
+Index: configure.in
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/configure.in,v
+retrieving revision 1.1.2.1
+retrieving revision 1.1.2.2
+diff -b -w -u -d -r1.1.2.1 -r1.1.2.2
+--- configure.in	27 Aug 2002 23:07:13 -0000	1.1.2.1
++++ configure.in	28 Aug 2002 23:29:04 -0000	1.1.2.2
+@@ -26,9 +26,11 @@
+ 
+ AC_CACHE_CHECK([for SHUT_RD],
+        shutrd, [
+-                 AC_EGREP_HEADER(SHUT_RD, sys/socket.h,
++                AC_TRY_COMPILE([#include <sys/types.h>
++#include <sys/socket.h>],
++                        [printf ("%d", SHUT_RD); return 0;],
+                                         [shutrd=yes],
+-                                        [shutrd=no])
++                                        [shutrd=no]),
+        ])
+ if test $shutrd = yes ; then
+   AC_DEFINE(HAVE_SHUT_RD)
+@@ -73,7 +75,8 @@
+ 
+ AC_CACHE_CHECK([for in_addr_t],
+         inaddrt, [
+-                AC_TRY_COMPILE([#include <netinet/in.h>],
++                AC_TRY_COMPILE([#include <sys/types.h>
++#include <netinet/in.h>],
+                         [in_addr_t foo; return 0;],
+                                         [inaddrt=yes],
+                                         [inaddrt=no]),
+@@ -86,7 +89,8 @@
+ 
+ AC_CACHE_CHECK([for INADDR_NONE],
+         haveinaddrnone, [
+-                AC_TRY_COMPILE([#include <netinet/in.h>],
++                AC_TRY_COMPILE([#include <sys/types.h>
++#include <netinet/in.h>],
+                         [in_addr_t foo = INADDR_NONE; return 0;],
+                                         [haveinaddrnone=yes],
+                                         [haveinaddrnone=no]),
+@@ -99,7 +103,10 @@
+ 
+ AC_CACHE_CHECK([for EX__MAX],
+         haveexmax, [
+-                AC_TRY_COMPILE([#include <errno.h>],
++                AC_TRY_COMPILE([#ifdef HAVE_SYSEXITS_H
++#include <sysexits.h>
++#endif
++#include <errno.h>],
+                         [int foo = EX__MAX; return 0;],
+                                         [haveexmax=yes],
+                                         [haveexmax=no]),
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

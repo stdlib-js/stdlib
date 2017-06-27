@@ -1,0 +1,116 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Mon Sep  2 12:28:11 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ADEBC43F99
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:28:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:28:09 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7UDpYZ27586 for <zzzz-scoop@spamassassin.taint.org>; Fri, 30 Aug 2002 14:51:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kmB1-0003rI-00; Fri,
+    30 Aug 2002 06:51:07 -0700
+Received: from snipe.mail.pas.earthlink.net ([207.217.120.62]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kmAm-0008KI-00 for <sitescooper-talk@lists.sourceforge.net>;
+    Fri, 30 Aug 2002 06:50:52 -0700
+Received: from dialup-209.245.228.178.dial1.dallas1.level3.net
+    ([209.245.228.178] helo=localhost.localdomain) by
+    snipe.mail.pas.earthlink.net with esmtp (Exim 3.33 #1) id 17kmAb-00076W-00;
+    Fri, 30 Aug 2002 06:50:42 -0700
+Subject: Re: [scoop] Scoop MS Word .doc file into something that plucker or other Palm app can display?
+From: unlisted <unlisted@pobox.com>
+To: "Larry W. Virden" <lvirden@cas.org>
+Cc: sitescooper-talk@example.sourceforge.net,
+	"Barry Dexter A. Gonzaga" <barryg@kssp.upd.edu.ph>
+In-Reply-To: <20020830002709.GA21600@elayne.kssp.upd.edu.ph>
+References: <20020829171046.AAB1816@cas.org>
+    <20020830002709.GA21600@elayne.kssp.upd.edu.ph>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.5
+Message-Id: <1030715441.2038.31.camel@leviticus>
+MIME-Version: 1.0
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: 30 Aug 2002 08:50:38 -0500
+Date: 30 Aug 2002 08:50:38 -0500
+
+On Thu, 2002-08-29 at 19:27, Barry Dexter A. Gonzaga wrote:
+> On Thu, Aug 29, 2002 at 05:10:47PM -0400, Larry W. Virden wrote:
+> > I am wondering whether there's a way that I can use sitescooper and/or plucker
+> > or some other free utility to convert word documents into something a bit
+> > more palmos friendly?
+> 
+> 	You could try antiword (http://www.winfield.demon.nl/linux/).
+> It's consoled based and converts word 6+ docs to text and some images to
+> postscript and png.
+
+also there's catdoc and wv for Word --> text conversions.  actually, wv
+consists of wvWare, which as the manpage says "converts word documents
+into other formats such as PS, PDF, HTML, LaTeX, DVI, ABW".  HTML would
+probably be the best format for use with Plucker/SiteScooper, depending
+on how good the DOC --> HTML conversion is.  i haven't used either in
+over a year as AbiWord or OpenOffice work well enough.  (prefer AbiWord
+for it's light-weight size, but OpenOffice has the better DOC importer.)
+
+don't know which of these are better or worse than the other, but i
+figure, "the more the merrier". ;-)
+
+> You could also try openoffice and/or abiword if you
+> have x installed.
+
+AbiWord supports exporting to PalmDoc (.pdb) which is about as
+PalmOS-friendly as you can get.  never tried/needed it, but it's listed
+there in the "Save As" dialog box.
+
+Wine (or CrossOver Office, if you already have it) may support Word
+Viewer (free download from Microsoft), but didn't a year or so ago when
+i last tried.  Word Viewer is what i used back in the day to convert
+Word 97 docs to Word 95, as you could display the Word 97 doc and copy &
+paste the text (with formatting) into Word 95, which was the only
+version of Word that i had.  anyways, a little nostalgia.
+
+> > I don't have a Windows machine, so it becomes problematic to convert them;
+> > I know that if this were not the case, in Word I could save them as some
+> > other more friendly format.
+
+i have a windows (dual-boot) machine, but it only get used by my
+significant other and for burning multi-session cd-r/rw.  (is there any
+linux gui app that supports cdrecord's multi-session feature?)  since
+OpenOffice, i've been able to edit Word docs flawlessly (or at least the
+simple Word documents i receive from others).
+
+anyways...
+-- 
+
+PLEASE REQUEST PERMISSION TO REDISTRIBUTE
+   AUTHOR'S COMMENTS OR EMAIL ADDRESS.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Sitescooper-talk mailing list
+Sitescooper-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/sitescooper-talk
+

@@ -1,0 +1,82 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 10:37:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0345516F21
+	for <jm@localhost>; Sat,  5 Oct 2002 10:36:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:36:19 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g952YiK23883 for
+    <jm-rpm@jmason.org>; Sat, 5 Oct 2002 03:34:44 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g952Q1f06511; Sat, 5 Oct 2002 04:26:01
+    +0200
+Received: from localhost.localdomain
+    (pool-141-151-21-129.phil.east.verizon.net [141.151.21.129]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g952PMf06368 for
+    <rpm-list@freshrpms.net>; Sat, 5 Oct 2002 04:25:22 +0200
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+    by localhost.localdomain (8.12.5/8.12.5) with ESMTP id g952PWhL025580 for
+    <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 22:25:32 -0400
+Received: (from quaff@localhost) by localhost.localdomain
+    (8.12.5/8.12.5/Submit) id g952PVG2025578; Fri, 4 Oct 2002 22:25:31 -0400
+X-Authentication-Warning: localhost.localdomain: quaff set sender to
+    quaffapint@clippersoft.net using -f
+Subject: Xine dependencies
+From: QuaffA Pint <quaffapint@clippersoft.net>
+To: rpm-zzzlist@freshrpms.net
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1033784731.25485.6.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 04 Oct 2002 22:25:31 -0400
+Date: 04 Oct 2002 22:25:31 -0400
+
+On a RH 8 box, I'm trying to install your package
+xine-0.9.13-fr5.i386.rpm, I keep running into dependency problems.  I've
+tried to install the dev and lib rpm's as well and they error out with
+dependency problems on each other (they each want something from the
+other's package).
+
+I've tried the --without options, but still end up with (similar for the
+regular package),
+
+	glut is needed by xine-libs-0.9.13-fr5
+        aalib is needed by xine-libs-0.9.13-fr5
+        lirc is needed by xine-libs-0.9.13-fr5
+        libaa.so.1 is needed by xine-libs-0.9.13-fr5
+        libglut.so.3 is needed by xine-libs-0.9.13-fr5
+
+What am I missing here?
+
+Thanks for your efforts.
+QuaffAPint
+
+
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

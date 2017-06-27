@@ -1,0 +1,25 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Thu Sep 12 04:06:24 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Wed, 11 Sep 2002 23:06:24 -0400
+Subject: [Spambayes] Current histograms
+In-Reply-To: <15743.59802.802210.914537@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCKEJJBDAB.tim.one@comcast.net>
+
+[Skip]
+> Hmmm.   How about you create empty Data/Ham/Set[12345], stuff all your
+> files into a Data/Ham/reservoir folder, then run the rebal.py script to
+> randomly parcel messages out to the various real directories?
+
+I'm afraid rebal is quadratic-time in the # of msgs it shuffles around --
+since it was only intended to move a few files around, it's dead simple.
+
+An easy thing is to start the same way:  move all the files into a single
+directory.  Then do random.shuffle() on an os.listdir() of that directory.
+Then it's trivial to split the result into N slices, and move the files into
+N other directories accordingly.
+
+> I suspect you can pull the same stunt for your Data/Spam stuff.
+
+Yup!
+

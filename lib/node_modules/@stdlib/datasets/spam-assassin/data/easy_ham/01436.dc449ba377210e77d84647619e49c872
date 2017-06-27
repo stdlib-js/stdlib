@@ -1,0 +1,117 @@
+From spamassassin-talk-owner@lists.sourceforge.net  Thu Sep  5 12:50:49 2002
+Return-Path: <spamassassin-talk-owner@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CE8A116F1E
+	for <jm@localhost>; Thu,  5 Sep 2002 12:50:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:50:48 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85BcmZ17201 for <jm-sa-listinfo@jmason.org>; Thu, 5 Sep 2002 12:38:48
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17muya-0002uV-00 for
+    <jm-sa-listinfo@jmason.org>; Thu, 05 Sep 2002 04:39:08 -0700
+Received: from mx1.yipes.com ([209.213.199.100]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17muyG-0002Wo-00 for <spamassassin-talk-admin@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 04:38:48 -0700
+Subject: WARNING. Mail Delayed: Re: [SAtalk] [OT] Perl problem and 2.40
+    released
+From: MAILER-DAEMON@mx1.yipes.com
+To: <spamassassin-talk-admin@example.sourceforge.net>
+Date: Thu, 05 Sep 2002 04:38:48 -0700
+Message-Id: <receipt-6628399@mx1.yipes.com>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="_===6628399====mx1.yipes.com===_"
+Sender: spamassassin-talk-owner@example.sourceforge.net
+Errors-To: spamassassin-talk-owner@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+    NO_REAL_NAME,SPAM_PHRASE_00_01 version=2.50-cvs
+
+
+--_===6628399====mx1.yipes.com===_
+Content-Type: text/plain
+
+This is a warning message only.
+  Your message remains in the server queue,
+  the server will try to send it again.
+  You should not try to resend your message now.
+
+Message delivery to 'casimir@tgsnopec.com' delayed
+SMTP module(domain tgsnopec.com) reports:
+ relay.tgsnopec.com: no response
+
+
+--_===6628399====mx1.yipes.com===_
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mx1.yipes.com
+
+Original-Recipient: rfc822;casimir@tgsnopec.com
+Final-Recipient: rfc822;casimir@tgsnopec.com
+Action: delayed
+
+--_===6628399====mx1.yipes.com===_
+Content-Type: text/rfc822-headers
+
+Received: from [216.136.171.252] (HELO usw-sf-list2.sourceforge.net)
+  by mx1.yipes.com (CommuniGate Pro SMTP 3.5.1)
+  with ESMTP-TLS id 6627220 for casimir@tgsnopec.com; Thu, 05 Sep 2002 01:35:26 -0700
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13] helo=usw-sf-list1.sourceforge.net)
+	by usw-sf-list2.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17mryq-0000eK-00; Thu, 05 Sep 2002 01:27:12 -0700
+Received: from hippo.star.co.uk ([195.216.14.9])
+	by usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17mryb-000529-00
+	for <spamassassin-talk@lists.sourceforge.net>; Thu, 05 Sep 2002 01:26:58 -0700
+Received: from MATT_LINUX by hippo.star.co.uk
+          via smtpd (for usw-sf-lists.sourceforge.net [216.136.171.198]) with SMTP; 5 Sep 2002 08:17:57 UT
+Received: (qmail 28723 invoked from network); 3 Sep 2002 08:22:05 -0000
+Received: from unknown (HELO startechgroup.co.uk) (10.2.100.178)
+  by matt?dev.int.star.co.uk with SMTP; 3 Sep 2002 08:22:05 -0000
+Message-ID: <3D77146F.1000603@startechgroup.co.uk>
+From: Matt Sergeant <msergeant@startechgroup.co.uk>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1b) Gecko/20020901
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: "Rose, Bobby" <brose@med.wayne.edu>
+CC: Justin Mason <yyyy@spamassassin.taint.org>, 
+ spamassassin-talk@lists.sourceforge.net
+Subject: Re: [SAtalk] [OT] Perl problem and 2.40 released
+References: <D79A56AD131896448D0860DEE07CBE1FE1DE@med-core07.med.wayne.edu>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-BeenThere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 05 Sep 2002 09:23:11 +0100
+Date: Thu, 05 Sep 2002 09:23:11 +0100
+
+--_===6628399====mx1.yipes.com===_--
+
+

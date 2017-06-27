@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7A815440D3
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:22 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIB902764 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:18:11 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA31416 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 11:42:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA21751; Mon, 22 Jul 2002 11:41:46 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA21721 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 11:41:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.105.180.140] claimed
+    to be mandark.labs.netnoteinc.com
+Received: from triton.labs.netnoteinc.com
+    (lbedford@triton.labs.netnoteinc.com [192.168.2.12]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6MAfcp08907 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 11:41:38 +0100
+Date: Mon, 22 Jul 2002 11:41:37 +0100
+From: Liam Bedford <lbedford@netnoteinc.com>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Message-Id: <20020722114137.09048a40.lbedford@netnoteinc.com>
+In-Reply-To: <200207192238.g6JMc9X05992@linux.local>
+References: <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+    <200207192238.g6JMc9X05992@linux.local>
+Organization: Netnote International
+X-Mailer: Sylpheed version 0.7.8claws69 (GTK+ 1.2.10; i386-debian-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, 19 Jul 2002 23:38:09 +0100
+Brian Foster claiming to think:
+
+>  but, like the classic techniques, there is no rolling
+>  back of accidental overwrites.
+> 
+>  ( rolling back overwrites reminds me of the "snapshot"
+>   facility on NetWork Appliance fileservers.  and of the
+>   various "versioning" filesystems which appeared --- and
+>   then vanished? --- over the years.... )
+> 
+and it's in FreeBSD 5.0-CURRENT AFAIK...
+
+/me migrates every linux box to the one true way..
+
+L.
+-- 
+     dBP   dBBBBb | If you're looking at me to be an accountant
+              dBP | Then you will look but you will never see
+   dBP    dBBBK'  | If you're looking at me to start having babies
+  dBP    dB' db   | Then you can wish because I'm not here to fool around
+ dBBBBP dBBBBP'   | Belle & Sebastian (Family Tree)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

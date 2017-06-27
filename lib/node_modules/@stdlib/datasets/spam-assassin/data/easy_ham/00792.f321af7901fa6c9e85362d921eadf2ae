@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Thu Sep 26 16:35:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9785016F22
+	for <jm@localhost>; Thu, 26 Sep 2002 16:34:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:34:45 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8QE97g21435 for <jm@jmason.org>;
+    Thu, 26 Sep 2002 15:09:07 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AEE82294176; Thu, 26 Sep 2002 07:05:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 14EC829409A for
+    <fork@xent.com>; Thu, 26 Sep 2002 07:04:32 -0700 (PDT)
+Received: (qmail 12305 invoked by uid 508); 26 Sep 2002 14:03:31 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.4) by
+    venus.phpwebhosting.com with SMTP; 26 Sep 2002 14:03:31 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8QE8ES16438; Thu, 26 Sep 2002 16:08:16
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: dumb question: X client behind a firewall?
+In-Reply-To: <3D924040.1080303@barrera.org>
+Message-Id: <Pine.LNX.4.33.0209261603420.8588-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 26 Sep 2002 16:08:14 +0200 (CEST)
+
+On Wed, 25 Sep 2002, Joseph S. Barrera III wrote:
+
+> Let's say you're behind a firewall and have a NAT address.
+> Is there any way to telnet to a linux box out there in the world
+> and set your DISPLAY in some way that you can create
+> xterms on your own screen?
+
+As other people suggested: SSH. PuTTY 
+
+	http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+
+can do it. Can run, say xclock (I'm running an X server under W32 at work,
+tunneling through a NAT box), but from Linux, not from Solaris.  Probably
+OpenSSH misconfigurat5ion.
+
+

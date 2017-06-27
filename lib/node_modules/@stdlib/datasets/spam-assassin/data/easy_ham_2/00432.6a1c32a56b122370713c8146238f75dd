@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Fri Aug 16 15:22:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 541C743C32
+	for <jm@localhost>; Fri, 16 Aug 2002 10:22:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 15:22:43 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GEKEa21901 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 15:20:14 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA00303; Fri, 16 Aug 2002 15:18:42 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id PAA32740 for <ilug@linux.ie>; Fri,
+    16 Aug 2002 15:18:34 +0100
+Received: (qmail 46612 messnum 1156163 invoked from
+    network[213.190.140.167/unknown]); 16 Aug 2002 14:18:04 -0000
+Received: from unknown (HELO mail.capetechnologies.com) (213.190.140.167)
+    by mail04.svc.cra.dublin.eircom.net (qp 46612) with SMTP; 16 Aug 2002
+    14:18:04 -0000
+Received: from 127.0.0.1 (localhost [127.0.0.1]) by
+    dummy.capetechnologies.com (Postfix) with SMTP id 0FD294227 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 15:18:04 +0100 (IST)
+Received: from moon (monterey.capetechnologies.com [192.120.240.131]) by
+    mail.capetechnologies.com (Postfix) with ESMTP id 896164226 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 15:18:03 +0100 (IST)
+From: "Ciaran Treanor" <ciaran@capetechnologies.com>
+To: <ilug@linux.ie>
+Subject: RE: [ILUG] Mirror a website
+Date: Fri, 16 Aug 2002 15:15:27 +0100
+Organization: CAPE Technologies
+Message-Id: <004701c2452f$5ea18ba0$83f078c0@moon>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <OFEGLPGPCHPACFLJPAILEEHLEAAA.macarthy@iol.ie>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Thanks for the tips. The closest I've gotten to getting it working is
+Justins script except I can seem to prevent it from following links
+offsite.
+
+Typical, something that should only take a minute...
+
+Thanks for you help.
+
+ct
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

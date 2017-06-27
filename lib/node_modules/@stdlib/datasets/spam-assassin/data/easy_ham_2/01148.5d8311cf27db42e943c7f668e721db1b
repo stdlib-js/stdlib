@@ -1,0 +1,113 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:25:26 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E4DFB440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:25:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:25:23 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1kY16817 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 17:01:46 +0100
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id EAA25713 for <jm-rpm@jmason.org>;
+    Sun, 21 Jul 2002 04:19:37 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6L3H1C05135; Sun, 21 Jul 2002 05:17:01
+    +0200
+Received: from basket.ball.reliam.net (basket.ball.reliam.net
+    [213.91.6.7]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6L3GjC05092
+    for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 05:16:45 +0200
+Received: from localhost.localdomain (pD9541FC5.dip.t-dialin.net
+    [217.84.31.197]) by basket.ball.reliam.net (Postfix) with SMTP id
+    B277E3D94 for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 05:16:39 +0200
+    (CEST)
+From: che <che666@uni.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ximian apt repos?
+Message-Id: <20020721051108.0fd207d5.che666@uni.de>
+In-Reply-To: <1027218043.3516.5.camel@localhost.localdomain>
+References: <1027203479.5354.14.camel@athena>
+    <20020720211551.6fb70f27.kilroy@kamakiriad.com>
+    <1027218043.3516.5.camel@localhost.localdomain>
+Organization: che
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 21 Jul 2002 05:11:08 -0400
+Date: Sun, 21 Jul 2002 05:11:08 -0400
+
+On 21 Jul 2002 14:20:42 +1200
+Mark Derricutt <mark@talios.com> wrote:
+
+> I found the following mentioned on a news.gnome.org usenet posting. 
+> I've not yet tried it thou.  AFAIK this is just the gnome2 rpms, but
+> there ximian's, don't know what else is on the apt repository either,
+> must take a look around.
+> 
+> Mark
+> 
+> # Gnome2 - mentioned on news.gnome.org
+> rpm http://apt.sunnmore.net/ gnome2 gnome2
+> rpm-src http://apt.sunnmore.net/ gnome2 gnome2
+> 
+> On Sun, 2002-07-21 at 14:15, Brian Fahrlander wrote:
+> > On 20 Jul 2002 17:17:59 -0500, Chris Weyl <cweyl@mindspring.com> wrote:
+> > 
+> > > Just a quick question....  does anyone know of a public Ximian apt/rpm
+> > > repository?
+> > > 
+> > > (I know, I know....  but some ppl kinda like it:-))
+> > 
+> >     Yeah, I'm one of them.  Ximian, if it could be installed from Apt would be sweet- the graphics are done very, very well.  The usability is actually higher than most other environments.  But their installer really sucks.
+> > 
+> >     If you find/setup one (and figure out how to install it) let me know.
+> > 
+> > ------------------------------------------------------------------------
+> > Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+> > Evansville, IN                    My Voyage: http://www.CounterMoon.com
+> > ICQ  5119262
+> > ------------------------------------------------------------------------
+> > I don't want to hear news from Isreal until the news contains the words
+> > "Bullet", "Brain", and "Arafat".
+> > 
+> > _______________________________________________
+> > RPM-List mailing list <RPM-List@freshrpms.net>
+> > http://lists.freshrpms.net/mailman/listinfo/rpm-list
+> > 
+> 
+> 
+Would be very nice indeed but the server doesent work for me :\
+cant connect to the server! anyone else got a hint?
+
+thanks,
+che
+
+
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

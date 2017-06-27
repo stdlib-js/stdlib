@@ -1,0 +1,103 @@
+From exmh-users-admin@redhat.com  Tue Sep 10 11:22:35 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2324616F03
+	for <jm@localhost>; Tue, 10 Sep 2002 11:22:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:22:35 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g89JowC29985 for
+    <jm-exmh@jmason.org>; Mon, 9 Sep 2002 20:50:58 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 645BB40D88; Mon,  9 Sep 2002
+    15:44:54 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 8C00340D88
+    for <exmh-users@listman.redhat.com>; Mon,  9 Sep 2002 15:36:46 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g89Jafm01952 for exmh-users@listman.redhat.com; Mon, 9 Sep 2002
+    15:36:41 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g89Jafl01946 for
+    <exmh-users@redhat.com>; Mon, 9 Sep 2002 15:36:41 -0400
+Received: from whatexit.org (postfix@whatexit.org [64.7.3.122]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g89JKO105999 for
+    <exmh-users@redhat.com>; Mon, 9 Sep 2002 15:20:24 -0400
+Received: from joisey.whatexit.org (localhost [127.0.0.1]) by whatexit.org
+    (Postfix) with ESMTP id 590BBB1 for <exmh-users@redhat.com>;
+    Mon,  9 Sep 2002 15:36:37 -0400 (EDT)
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Sorting
+From: Tom Reingold <noglider@pobox.com>
+X-Mailer: exmh version 2.5 07/13/2001
+X-Uri: http://whatexit.org/~tommy
+X-Image-Url: http://whatexit.org/~tommy/zombie.gif
+In-Reply-To: Message from Rick Baartman <baartman@lin12.triumf.ca> of Mon,
+    09 Sep 2002 12:21:42 PDT <20020909191229.EBB3DB1@whatexit.org>
+    <200209091921.g89JLgt02406@lin12.triumf.ca>
+Message-Id: <20020909193637.590BBB1@whatexit.org>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Mon, 09 Sep 2002 15:36:37 -0400
+
+
+On Mon, 09 Sep 2002 12:21:42 PDT,
+	Rick Baartman <baartman@lin12.triumf.ca> wrote:
+
+> Sorry I wasn't clear. I am transferring messages from my inbox to
+> other folders and since I am doing it from most recent to oldest, they
+> appear in those folders in the wrong order and need re-sorting.
+
+OK, gotcha.
+
+I don't think you can do that with exmh, but you can do it on the
+command line, if you use sh or ksh:
+
+	for f in `folders -fast -r`
+	do
+		echo sorting $f ...
+		sortm +$f
+	done
+
+It could take a long time.
+
+At work, I have to use Outlook.  Ick.  I hate it.  But it does a few
+things right.  Like making indices for each folder, and not just by
+date, but also by sender, message size, subject.  So I can sort by any
+column instantly.
+
+I believe this is possible, too, with an IMAP compliant reader,
+provided the IMAP server makes such indices.
+
+I am facing the fact that exmh has been left behind in some industry
+standards.  I use it for my personal mail.  My mail server runs unix,
+and I connect over ssh and tunnel my X traffic over ssh.  With a slow
+link, this makes exmh very slow.  And mime handling is pretty bad
+compared with modern mailers.  I am just scared to move.  I've been
+using MH or nmh since 1985 and exmh since 1995.  17 years is a long
+time!
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

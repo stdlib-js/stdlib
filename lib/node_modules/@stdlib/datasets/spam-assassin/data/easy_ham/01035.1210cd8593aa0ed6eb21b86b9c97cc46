@@ -1,0 +1,90 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 10:58:02 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7DA9E43F9B
+	for <jm@localhost>; Thu, 29 Aug 2002 05:57:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 10:57:58 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SL8UZ10341 for
+    <jm-rpm@jmason.org>; Wed, 28 Aug 2002 22:08:30 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7SL32J26091; Wed, 28 Aug 2002 23:03:02
+    +0200
+Received: from posti.pp.htv.fi (posti.pp.htv.fi [212.90.64.50]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7SL2hJ26035 for
+    <rpm-list@freshrpms.net>; Wed, 28 Aug 2002 23:02:43 +0200
+Received: from cs78128057.pp.htv.fi ([62.78.128.57]) by posti.pp.htv.fi
+    (8.11.1/8.11.1) with ESMTP id g7SL2i600486; Thu, 29 Aug 2002 00:02:44
+    +0300 (EETDST)
+Subject: Re: ALSA (almost) made easy
+From: Ville =?ISO-8859-1?Q?Skytt=E4?= <ville.skytta@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+Cc: valhalla-list@spamassassin.taint.org
+In-Reply-To: <1030567737.10901.9.camel@bobcat.ods.org>
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030567737.10901.9.camel@bobcat.ods.org>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1030568564.10902.22.camel@bobcat.ods.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7SL2hJ26035
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 29 Aug 2002 00:02:43 +0300
+Date: 29 Aug 2002 00:02:43 +0300
+
+On Wed, 2002-08-28 at 23:48, Ville Skyttä wrote:
+
+> > The devices are there now, thank Gordon for reporting the problem (and as I
+> > said, you were the only one). Any further comments are very welcome!
+> > 
+> > Download : http://ftp.freshrpms.net/pub/freshrpms/testing/alsa/
+> > New spec : http://freshrpms.net/builds/alsa-driver/alsa-driver.spec
+> 
+> Ahh, wonderful!  Just tried out these and *finally* got sound working
+> with my Abit TH7II-RAID's integrated audio.  I've been pulling hair
+> together with the (helpful) OpenSound people for quite some time now,
+> but we've failed to get sound to work, either with the drivers included
+> in kernel, or the commercial OSS.
+> 
+> Thanks a *lot* !  The RPMs seem to be fine, they worked for me out of
+> the box (on vanilla Valhalla w/latest errata).
+
+...except that I don't see an init script in the RPMs, a sample one
+designed for RH is supposed to be in "utils/alsasound".  Could you take
+a look if it can be included?
+
+Cheers,
+-- 
+\/ille Skyttä
+ville.skytta at iki.fi
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

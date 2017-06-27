@@ -1,0 +1,75 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 23 03:30:46 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE09F440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 22:30:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 03:30:46 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6N2WH420971 for
+    <jm-rpm@jmason.org>; Tue, 23 Jul 2002 03:32:17 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6N2R2C06673; Tue, 23 Jul 2002 04:27:02
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6N2PjC32587 for
+    <rpm-list@freshrpms.net>; Tue, 23 Jul 2002 04:25:45 +0200
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g6N2PTo18339;
+    Mon, 22 Jul 2002 21:25:29 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: che666@uni.de
+Subject: Re: central management
+Message-Id: <20020722212529.6ad783b8.kilroy@kamakiriad.com>
+In-Reply-To: <20020722144004.3e8e8f0a.che666@uni.de>
+References: <20020722144004.3e8e8f0a.che666@uni.de>
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 21:25:29 -0500
+Date: Mon, 22 Jul 2002 21:25:29 -0500
+
+On Mon, 22 Jul 2002 14:40:04 -0400, che <che666@uni.de> wrote:
+
+> hello!
+> well in my eyes something like a public contrib repository would be nice (where everyone can at least upload spec files) and a something like a "repository directory" with a collection of available repositorys and their content.
+> 
+> i am personally on a dsl dialup connection with 16kb/s upstream cap and that kinda sucks perhaps i am gonna still create a respository for small windowmaker dockapps in the future :).
+> 
+> what do you think?
+
+    I was thinkinf about an addition of another file: apt-repositories. Stick it on apt.freshmeat.net (the center of the apt universe, IMHO) and every time a new repository is added, the RPM can be rebuilt.  Heck, if I could get out of my depression, I could make the whole submission process automated....even making the RPM...
+  
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

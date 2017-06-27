@@ -1,0 +1,77 @@
+From iiu-admin@taint.org  Tue Jul 23 14:08:38 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 89CD2440D0
+	for <jm@localhost>; Tue, 23 Jul 2002 09:08:31 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 14:08:31 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6ND7e424479;
+    Tue, 23 Jul 2002 14:07:40 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6ND6l424096;
+    Tue, 23 Jul 2002 14:06:49 +0100
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g6ND5ep14096; Tue, 23 Jul 2002 14:05:42 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    A6031440CC; Tue, 23 Jul 2002 09:04:28 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9FD2033E4F;
+    Tue, 23 Jul 2002 14:04:28 +0100 (IST)
+To: iiu@taint.org
+Cc: mice@crackmice.com, isoc@taint.org, zzzzteana@taint.org
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Image-Url: http://spamassassin.taint.org/me.jpg
+Message-Id: <20020723130428.A6031440CC@phobos.labs.netnoteinc.com>
+Subject: [IIU] mailman crash on list host
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Tue, 23 Jul 2002 14:04:23 +0100
+
+Hi all --
+
+We had a pretty serious crash on the list host over the weekend, and it
+destroyed all configuration data.  As a result, I've had to rebuild the
+mailing list from various other sources -- including the archives of
+past list traffic.
+
+If you're a list subscriber, you may have received a "welcome to the list"
+mail. All well and good.  However, if you *used* to be subscribed to one 
+of the lists at some point in 2002, or never were (I'm hoping that didn't
+happen!), you may have also have received one of these.  Just go to the
+URL and click "unsubscribe", providing the password from the mail if
+necessary.
+
+If you're a list admin on any of the lists at lists.boxhost.net or
+taint.org, I'd appreciate if you could take a look and make sure the
+settings match up with what they used to be.
+
+Sorry about this :(
+
+--j.
+
+-- 
+'Justin Mason' => { url => 'http://jmason.org/', blog => 'http://taint.org/' }
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

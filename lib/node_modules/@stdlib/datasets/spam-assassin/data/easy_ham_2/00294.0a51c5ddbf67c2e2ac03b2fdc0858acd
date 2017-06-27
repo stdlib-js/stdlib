@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Fri Aug  9 14:37:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 753D1440D4
+	for <jm@localhost>; Fri,  9 Aug 2002 09:37:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 14:37:46 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79Dacb01955 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 14:36:38 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA06616 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 14:33:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA10374; Fri, 9 Aug 2002 14:31:58 +0100
+Received: from florence.ie.alphyra.com
+    (IDENT:Wr81oUdOmQ4eR+zIBmTWI3OHD/yS52Wo@itg-gw.cr008.cwt.esat.net
+    [193.120.242.226]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA10354
+    for <ilug@linux.ie>; Fri, 9 Aug 2002 14:31:53 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host IDENT:Wr81oUdOmQ4eR+zIBmTWI3OHD/yS52Wo@itg-gw.cr008.cwt.esat.net
+    [193.120.242.226] claimed to be florence.ie.alphyra.com
+Received: from dunlop.admin.ie.alphyra.com
+    (IDENT:EUhzjVER96a8Sdp9lci877mg0aOXzdWZ@dunlop.admin.ie.alphyra.com
+    [192.168.11.193]) by florence.ie.alphyra.com (8.11.6/8.11.6) with ESMTP id
+    g79DVqQ21670; Fri, 9 Aug 2002 14:31:52 +0100
+Date: Fri, 9 Aug 2002 14:31:52 +0100 (IST)
+From: Paul Jakma <paulj@alphyra.ie>
+X-X-Sender: paulj@dunlop.admin.ie.alphyra.com
+To: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+Cc: ilug@linux.ie
+Subject: RE: [ILUG] TMDA (WAS --> slashdot EW Dijkstra humor]
+In-Reply-To: <9C498074D5419A44B05349F5BF2C26301CFA6C@sdubtalex01.education.gov.ie>
+Message-Id: <Pine.LNX.4.44.0208091425200.868-100000@dunlop.admin.ie.alphyra.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, 9 Aug 2002, Ryan, Shane wrote:
+
+> Is this something along the same line as ORBS? 
+
+SPEWS isnt it. It lists known spam source IPs and netblocks. (and if 
+an ISP does nothing more than shift a spammer from IP to IP within the 
+ISPs netblock, then the ISPs netblock will be listed.)
+
+and there are quite a few ORBS like lists out there - ie known open
+relay lists.
+
+> I remember not so long ago when eircom was put on the ORBS list,
+> half the ISP's in Europe wouldn't accept mail from my address. Of
+> course, informing Eircom of this did nothing for about 4 months or
+> so.
+
+shame.
+
+get a different ISP so.
+
+> IMHO stopping spammers is a great idea but I'd rather have to hit d
+> or delete rather than have my messages bounced by someone else's
+> ISP.
+
+I'd rather not get spam. sorry.
+
+> Regards,
+> Shane
+
+regards,
+-- 
+Paul Jakma	Sys Admin	Alphyra
+	paulj@alphyra.ie
+Warning: /never/ send email to spam@dishone.st or trap@dishone.st
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

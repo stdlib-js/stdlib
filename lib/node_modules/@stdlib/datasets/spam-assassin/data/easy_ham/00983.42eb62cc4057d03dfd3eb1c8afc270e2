@@ -1,0 +1,82 @@
+From exmh-users-admin@redhat.com  Tue Sep 10 11:23:15 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BF59F16F16
+	for <jm@localhost>; Tue, 10 Sep 2002 11:23:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:23:14 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8A22rC12157 for
+    <jm-exmh@jmason.org>; Tue, 10 Sep 2002 03:02:53 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 7BD7D400CF; Mon,  9 Sep 2002
+    22:02:22 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 105733FD4A
+    for <exmh-users@listman.redhat.com>; Mon,  9 Sep 2002 21:51:15 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8A1p9611293 for exmh-users@listman.redhat.com; Mon, 9 Sep 2002
+    21:51:09 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8A1p9m11247 for
+    <exmh-users@redhat.com>; Mon, 9 Sep 2002 21:51:09 -0400
+Received: from lin12.triumf.ca
+    (IDENT:v9MDvCtdIjweE+mcqAIOp5nIo1sIIkcQ@lin12.Triumf.CA [142.90.114.144])
+    by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8A0b2v01079 for
+    <exmh-users@redhat.com>; Mon, 9 Sep 2002 20:37:02 -0400
+Received: from lin12.triumf.ca (baartman@localhost) by lin12.triumf.ca
+    (8.11.6/8.11.6) with ESMTP id g89Ns8g04304 for <exmh-users@redhat.com>;
+    Mon, 9 Sep 2002 16:54:11 -0700
+Message-Id: <200209092354.g89Ns8g04304@lin12.triumf.ca>
+X-Mailer: exmh version 2.4 06/23/2000 with nmh-1.0.4
+X-Url: http://www.triumf.ca/people/baartman/
+X-Image-Url: http://lin12.triumf.ca/me3.gif
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Sorting
+In-Reply-To: <200209092111.g89LBH703076@lin12.triumf.ca>
+References: <200209092111.g89LBH703076@lin12.triumf.ca>
+    <Pine.GSO.4.30L.0209091538070.29646-100000@multics.mit.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Rick Baartman <baartman@lin12.triumf.ca>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Mon, 09 Sep 2002 16:54:08 -0700
+
+> > On Mon, 9 Sep 2002, Rick Baartman wrote:
+> Thanks Tom and Jacob. The above works, but without the double quotes: i.e. 
+> 
+> sh -c 'for f in `folders -recurse -fast` ; do sortm +"$f" ; done'
+> 
+But there is a problem with making changes outside of exmh: the .xmhcache files 
+don't get updated. This is dangerous; I have to remember to re-scan each folder 
+I enter. Is there a safeguard for this?
+
+--
+rick
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:54:54 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ACEE8441F2
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:33 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g769Hwk20401 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 10:17:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA20506; Tue, 6 Aug 2002 10:15:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay01.esat.net (relay01.esat.net [192.111.39.11]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA20468 for <ilug@linux.ie>;
+    Tue, 6 Aug 2002 10:15:33 +0100
+Received: from www.emuse.ie (hassle.emuse.ie) [193.120.145.154] by
+    relay01.esat.net with esmtp id 17c0RA-0005Am-00; Tue, 06 Aug 2002 10:15:32
+    +0100
+Received: by HASSLE with Internet Mail Service (5.5.2653.19) id <DL00S8ZX>;
+    Tue, 6 Aug 2002 10:16:01 +0100
+Message-Id: <5FE418B3F962D411BED40000E818B33C9C8E9E@HASSLE>
+From: "Hunt, Bryan" <B.Hunt@emuse-tech.com>
+To: "Ilug (E-mail)" <ilug@linux.ie>
+Date: Tue, 6 Aug 2002 10:15:58 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [ILUG] nmblookup question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hello all,
+I'm trying to get wins name resolution across subnets working and reckon the
+first step is to be 
+able to do a nmblookup without using the -B (broadcast address flag). Does
+anyone know how 
+samba can be configured to do broadcasts to subnets other than just the
+local subnet. 
+I don't think this has anything to do with the remote announce parameter.
+
+Thanks
+Bryan
+
+
+"And the smoke of their torment ascendeth up for ever and ever: and they
+have no rest day nor night, 
+who worship the beast and his image, and whosoever receiveth the mark of his
+name."
+(Revelation 14:11)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

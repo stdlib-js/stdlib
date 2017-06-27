@@ -1,0 +1,59 @@
+From prlawrence@lehigh.edu  Thu Aug 29 11:06:07 2002
+Return-Path: <prlawrence@lehigh.edu>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B877D44163
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:54 +0100 (IST)
+Received: from cc.lehigh.edu (ironmail1.cc.lehigh.edu [128.180.39.26]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SKpLZ09799 for
+    <jm@jmason.org>; Wed, 28 Aug 2002 21:51:21 +0100
+Received: from  ([128.180.39.20]) by ironmail1.cc.lehigh.edu with ESMTP
+    with TLS; Wed, 28 Aug 2002 16:49:47 -0400 (EDT)
+Received: from lehigh.edu (Roamer052031.dept.Lehigh.EDU [128.180.52.31])
+    by rain.CC.Lehigh.EDU (8.12.5/8.12.5) with ESMTP id g7SKnlMS021052;
+    Wed, 28 Aug 2002 16:49:47 -0400
+Message-Id: <3D6D3763.3060300@lehigh.edu>
+Date: Wed, 28 Aug 2002 16:49:39 -0400
+From: Phil R Lawrence <prlawrence@lehigh.edu>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020513
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] testing the install
+References: <20020815174924.951B743C34@phobos.labs.netnoteinc.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Justin Mason wrote:
+> Phil R Lawrence said:
+> 
+> 
+>>>something to watch out for is to use "nomime" => 1 in the Mail::Audit
+>>>ctor; the M:A folks changed the API there.
+>>
+>>What has MIME to do with it?  I read in perldoc M:A that your suggestion 
+>>is less expensive, but how does that help S:A?
+> 
+> 
+> M:A, for some reason, changes its base class depending on whether the
+> incoming message is mime or not.  Therefore the Mail::Internet methods
+> suddenly become unavailable for MIME messages...
+> 
+> (you do *not* want to know what I thought of that when I found it ;)
+
+As a new user of SA, I guess I'm having trouble connecting the dots.  If 
+I understand you:  If I don't use the "nomime" => 1 option and I recieve 
+MIME mail, the Mail::Internet modules become unavailable.
+
+Unavailable for which?  MA?  SA?  What do these methods do?  Does this 
+mean my incoming MIME mail won't be checked by SA unless I specify 
+"nomime" => 1?
+
+Thanks,
+Phil
+
+

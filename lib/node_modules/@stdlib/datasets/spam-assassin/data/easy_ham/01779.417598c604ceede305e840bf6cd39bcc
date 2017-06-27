@@ -1,0 +1,67 @@
+From pudge@perl.org  Fri Sep  6 11:35:00 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E3E1516F1F
+	for <jm@localhost>; Fri,  6 Sep 2002 11:34:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:34:23 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g86923C27144 for
+    <jm-use-perl@jmason.org>; Fri, 6 Sep 2002 10:02:04 +0100
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by webnote.net (8.9.3/8.9.3) with ESMTP id DAA19730 for
+    <jm-use-perl@jmason.org>; Fri, 6 Sep 2002 03:01:04 +0100
+From: pudge@perl.org
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17n8OD-0004mu-01 for <jm-use-perl@jmason.org>;
+    Thu, 05 Sep 2002 21:58:29 -0400
+Date: Fri, 06 Sep 2002 02:00:29 +0000
+Subject: [use Perl] Stories for 2002-09-06
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17n8OD-0004mu-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Perl "Meetup"
+
++--------------------------------------------------------------------+
+| Perl "Meetup"                                                      |
+|   posted by ziggy on Thursday September 05, @19:12 (news)          |
+|   http://use.perl.org/article.pl?sid=02/09/05/2316234              |
++--------------------------------------------------------------------+
+
+[0]davorg writes "The people at [1]Meetup have set up a [2]Perl Meetup.
+The first one takes place on September 19th. I'll probably go along to
+the one in London to see what happens, but I'd be very interested in
+hearing any opinions on what this achieves that the existing Perl Mongers
+groups don't."
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/09/05/2316234
+
+Links:
+    0. mailto:dave@dave.org.uk
+    1. http://www.meetup.com/
+    2. http://perl.meetup.com/
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+

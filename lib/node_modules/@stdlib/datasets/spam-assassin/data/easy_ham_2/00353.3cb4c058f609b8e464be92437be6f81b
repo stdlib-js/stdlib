@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:31 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0E29343C40
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CJ7Xb30310 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 20:07:33 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA01977; Mon, 12 Aug 2002 20:06:49 +0100
+Received: from mail.go2.ie ([62.17.153.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA01948 for <ilug@linux.ie>; Mon,
+    12 Aug 2002 20:06:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.153.101] claimed to
+    be mail.go2.ie
+Received: from k100-50.bas1.dbn.dublin.eircom.net
+    (k100-50.bas1.dbn.dublin.eircom.net [159.134.100.50]) by mail.go2.ie
+    (Postfix) with ESMTP id 169D910EB; Mon, 12 Aug 2002 20:06:10 +0100 (IST)
+Subject: RE: [ILUG] slashdot EW Dijkstra humor
+From: Nick Murtagh <nickm@go2.ie>
+To: Kenn Humborg <kenn@bluetree.ie>
+Cc: ilug@linux.ie
+In-Reply-To: <NBBBIGEGHIGMPCNKHCECEEGKEAAA.kenn@bluetree.ie>
+References: <NBBBIGEGHIGMPCNKHCECEEGKEAAA.kenn@bluetree.ie>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8-3mdk
+Date: 12 Aug 2002 20:05:58 +0100
+Message-Id: <1029179159.9170.14.camel@gemini.windmill>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, 2002-08-12 at 19:56, Kenn Humborg wrote:
+> Well, you should consider 'break' inside a 'select' statement
+> to be part of the syntax, rather than a control flow modifier.
+
+Why? When it comes down to the assembly level, it gets turned
+into some kind of jump instruction. Should I pretend I don't know
+this when I'm programming?
+
+> A _mandatory_ part of the syntax, at that.
+
+It's not mandatory. You can leave out the break, and the flow
+of control will continue to the next case. Which can be useful
+in certain circumstances.
+
+Nick
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

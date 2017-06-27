@@ -1,0 +1,81 @@
+From exmh-users-admin@redhat.com  Thu Sep 12 14:01:41 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 947EE16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 14:01:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 14:01:40 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8C2LhC13465 for
+    <jm-exmh@jmason.org>; Thu, 12 Sep 2002 03:21:43 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id A81BC3F7F8; Wed, 11 Sep 2002
+    22:22:04 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id D92653F7F8
+    for <exmh-users@listman.redhat.com>; Wed, 11 Sep 2002 22:21:59 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8C2LsK04918 for exmh-users@listman.redhat.com; Wed, 11 Sep 2002
+    22:21:54 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8C2Lsk04912 for
+    <exmh-users@redhat.com>; Wed, 11 Sep 2002 22:21:54 -0400
+Received: from garlic.apnic.net (garlic.apnic.net [202.12.29.224]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8C25Nw06472 for
+    <exmh-users@redhat.com>; Wed, 11 Sep 2002 22:05:23 -0400
+Received: from garlic.apnic.net (localhost [127.0.0.1]) by
+    garlic.apnic.net (8.11.6/8.11.6) with ESMTP id g8CCJTq17707 for
+    <exmh-users@redhat.com>; Thu, 12 Sep 2002 12:19:30 GMT
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+From: George Michaelson <ggm@apnic.net>
+To: exmh-users@spamassassin.taint.org
+Subject: bad focus/click behaviours
+In-Reply-To: Your message of
+    "Wed, 11 Sep 2002 08:27:24 -0500."
+    <14343.1031750844@dimebox>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <17705.1031833169@garlic.apnic.net>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Thu, 12 Sep 2002 12:19:29 +0000
+
+
+I am a (tv)twm user. when I snarf text into my mouse cut buffer, and then
+attempt to inject it into the exmh input windows for comp/repl, the 'point'
+is often an apparently random place in the text pane, not where I think I
+have current flashing cursor. 
+
+I usually wipe out any of To:/Subject:/<random body> with the text. Its
+often not even beginning of line denoted, ie its an unexplicable number
+of char spaces in to the text where it inserts, 
+
+What am I doing wrong in either X, WM, shell, EXMH which is causing this?
+
+cheers
+	-George
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

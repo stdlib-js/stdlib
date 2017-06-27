@@ -1,0 +1,42 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 21:46:47 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 16:46:47 -0400
+Subject: [Spambayes] hammie.py vs. GBayes.py
+In-Reply-To: <200209070351.g873pC613144@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEPOBCAB.tim.one@comcast.net>
+
+[Guido]
+> There seem to be two "drivers" for the classifier now: Neale Pickett's
+> hammie.py, and the original GBayes.py.  According to the README.txt,
+> GBayes.py hasn't been kept up to date.
+
+It seemed that way to me when I ripped the classifier out of it -- I don't
+think anyone has touched it after.
+
+> Is there anything in there that isn't covered by hammie.py?
+
+Someone else will have to answer that (I don't use GBayes or hammie, at
+least not yet).
+
+> About the only useful feature of GBayes.py that hammie.py doesn't (yet)
+> copy is -u, which calculates spamness for an entire mailbox.  This
+> feature can easily be copied into hammie.py.
+
+That's been done now, right?
+
+> (GBayes.py also has a large collection of tokenizers; but timtoken.py
+> rules, so I'm not sure how interesting that is now.)
+
+Those tokenizers are truly trivial to rewrite from scratch if they're
+interesting.  The tiny spam/ham collections in GBayes are also worthless
+now.  The "self test" feature didn't do anything except print its results;
+Tester.py since became doctest'ed and verifies that some basic machinery
+actually delivers what it's supposed to deliver.
+
+> Therefore I propose to nuke GBayes.py, after adding a -u feature.
+
++1 here.
+
+> Anyone against?
+

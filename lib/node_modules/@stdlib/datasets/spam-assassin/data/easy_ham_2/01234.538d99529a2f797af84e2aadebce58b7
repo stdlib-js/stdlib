@@ -1,0 +1,70 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:05:25 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4131F43C4C
+	for <jm@localhost>; Fri, 16 Aug 2002 05:58:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 10:58:29 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7FLiR719370 for
+    <jm-rpm@jmason.org>; Thu, 15 Aug 2002 22:44:27 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7FLbMJ30258; Thu, 15 Aug 2002 23:37:22
+    +0200
+Received: from marvin.home.priv (adsl-66-124-58-30.dsl.anhm01.pacbell.net
+    [66.124.58.30]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7F3uTJ20113 for <rpm-list@freshrpms.net>; Thu, 15 Aug 2002 05:56:30 +0200
+Received: by marvin.home.priv (Postfix, from userid 500) id A0E0B207F0;
+    Wed, 14 Aug 2002 20:57:27 -0700 (PDT)
+From: Gary Peck <garyp@uclink.berkeley.edu>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Gstreamer Repository
+Message-Id: <20020815035727.GA2280@marvin.home.priv>
+Mail-Followup-To: Gary Peck <garyp@uclink.berkeley.edu>,
+	rpm-list@freshrpms.net
+References: <1029337162.5167.6.camel@wintermute.sr.unh.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1029337162.5167.6.camel@wintermute.sr.unh.edu>
+User-Agent: Mutt/1.4i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 14 Aug 2002 20:57:27 -0700
+Date: Wed, 14 Aug 2002 20:57:27 -0700
+
+On Wed, Aug 14, 2002 at 10:59:22AM -0400, Thomas J. Baker wrote:
+> Has anyone had any luck with the gstreamer repository? I'm using RH 7.3
+> and Ximian Gnome 2 snaps and the gstreamer stuff just doesn't work at
+> all. Rhythmbox crashes on startup, gst-player can't play a simple mpg
+> file, etc.
+
+I've been using the gstreamer repository with Rawhide Gnome 2 for the
+last month or so with no problems. Even the new rhythmbox works (if
+you can call taking 5 minutes to load my mp3 directory "working").
+
+It might be something with Ximian's Gnome 2 snaps. AFAIK, they're 
+pretty much straight out of CVS and hence a lot more experimental than 
+some of the other Gnome 2 packages out there.
+
+gary
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

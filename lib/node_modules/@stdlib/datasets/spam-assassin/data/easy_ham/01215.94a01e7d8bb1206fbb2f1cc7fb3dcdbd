@@ -1,0 +1,106 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  2 11:43:34 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4E69D16F16
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:33 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g927nWK31439 for
+    <jm-rpm@jmason.org>; Wed, 2 Oct 2002 08:49:34 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g927j2f22429; Wed, 2 Oct 2002 09:45:02
+    +0200
+Received: from urgent.rug.ac.be (urgent.rug.ac.be [157.193.88.1]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g927i8f17614 for
+    <rpm-list@freshrpms.net>; Wed, 2 Oct 2002 09:44:08 +0200
+Received: (qmail 8898 invoked by uid 505); 2 Oct 2002 07:44:15 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    2 Oct 2002 07:44:15 -0000
+From: Thomas Vander Stichele <thomas@urgent.rug.ac.be>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: use new apt to do null to RH8 upgrade?
+In-Reply-To: <20021001.558.00260600@www.dudex.net>
+Message-Id: <Pine.LNX.4.44.0210020939580.6894-100000@urgent.rug.ac.be>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 2 Oct 2002 09:44:15 +0200 (CEST)
+Date: Wed, 2 Oct 2002 09:44:15 +0200 (CEST)
+
+> Matthias Saou (matthias@egwn.net) wrote*:
+> >As Red Hat does, I really don't recommend trying to upgrade between betas
+> >or from a beta to a final release either. Simply backup your /home, /etc
+> >(and /root and/or /usr/local/ if needed) then reinstall cleanly, it'll
+> >probably save a few hassles and you'll get the cleanest possible system ;-)
+> 
+> I think this is probably the best way, because I think (maybe) with upgrading you
+> do not always automatically get the latest feature enabled in some config file
+> because RH would rather take it easy and not update that config file (you get a
+> rpmnew instead of rpmsaved file) so they get less calls to support that way.
+
+If you dislike Red Hat, why use it ? This was a really bad argument 
+against using Red Hat that makes no sense at all.  I for one am GLAD that 
+they 
+a) don't overwrite your config files on a whim (be GLAD they don't do some 
+sort of autodetection and changing crap)
+b) tell you on rpm upgrade what config files you should look at because 
+formats have changed.
+
+Red Hat is not "taking it easy" on this, it's putting control in the hands 
+of you, the maintainer of the machine.  Don't be lazy.
+
+> Anyway, I have tons of media files in /home/* probably 5 to 10 gigs at least, my
+> laptop's CDROM takes 700MB at a time (obviously) and compressing media files is
+> dumb because they are already compressed. Dumb question: how to backup huge data?
+> Network backup to another box? I do not have a box with a tape drive, but maybe box
+> with a large HD with much free space could take the backup (oops, I do not have a
+> space computer with a large HD with much free space).
+
+You don't need to backup /home if you are careful enough.  You did put 
+/home on a separate partition, no ? Just install rh80 and tell it to use 
+the same partition as /home and tell it to NOT format it, but keep the 
+data as is.
+
+If you didn't put /home on a separate partition, then you really do need 
+to make backups.  Use an nfs or smb mount from another machine to backup 
+and rsync straight to the mount, or if that's not possible, rsync over 
+ssh.  It's the best way to make backups.
+
+> These media files are backed up - ON THE CD'S THEY CAME FROM! 
+
+It's the other way around - your media files are backups of the CD's they 
+came from ;)
+
+Good luck,
+Thomas
+-- 
+
+The Dave/Dina Project : future TV today ! - http://davedina.apestaart.org/
+<-*-                      -*->
+You know the shape my breath will take before I let it out
+<-*- thomas@apestaart.org -*->
+URGent, the best radio on the Internet - 24/7 ! - http://urgent.rug.ac.be/
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

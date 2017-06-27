@@ -1,0 +1,87 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 23 18:31:38 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2D99616F03
+	for <jm@localhost>; Mon, 23 Sep 2002 18:31:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 18:31:38 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8NFtlC24231 for
+    <jm-rpm@jmason.org>; Mon, 23 Sep 2002 16:55:47 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8NFo2f10170; Mon, 23 Sep 2002 17:50:02
+    +0200
+Received: from mail.j2solutions.net (seattle.connectednw.com
+    [216.163.77.13]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g8NFnIf06795 for <rpm-list@freshrpms.net>; Mon, 23 Sep 2002 17:49:18 +0200
+Received: from yoda (12-231-69-107.client.attbi.com
+    [::ffff:12.231.69.107]) (AUTH: CRAM-MD5 hosting@j2solutions.net) by
+    mail.j2solutions.net with esmtp; Mon, 23 Sep 2002 08:49:17 -0700
+From: Jesse Keating <hosting@j2solutions.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: sylpheed-claws
+Message-Id: <20020923084711.79045d91.hosting@j2solutions.net>
+In-Reply-To: <20020923174120.73573065.matthias@egwn.net>
+References: <20020919221046.7484dec6.hosting@j2solutions.net>
+    <20020920104055.201c2986.matthias@rpmforge.net>
+    <20020923080924.27618d2b.hosting@j2solutions.net>
+    <20020923174120.73573065.matthias@egwn.net>
+Organization: j2Solutions
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 23 Sep 2002 08:47:11 -0700
+Date: Mon, 23 Sep 2002 08:47:11 -0700
+
+On Mon, 23 Sep 2002 17:41:20 +0200
+Matthias Saou <matthias@egwn.net> wrote:
+
+# So did my build if the original source is what you were mentioning
+# ;-) One drawback : They changed from pspell to aspell apparently,
+# and it requires aspell >= 0.50 which isn't even in Rawhide, so spell
+# checking is disabled for now until I take a decision about it :-/
+
+OOps, I didn't see the webpage get updated.  I saw the new claws, and
+checked your site, forgot about it for half a day and then posted
+here.  You beat me once again! 
+
+# If I build recent aspell packages, they may not be upgraded when
+# ungrating to the next Red Hat Linux release (the final version of
+# the limbos and(null) betas), which is maybe not really desired. I'll
+# probably test and see...
+
+Oh yeah, I was following this thread in the sylpheed-claws list.  Very
+interesting stuff.  I might have to stick w/ 0.8.2 until aspell gets
+updated in Red Hat.
+
+-- 
+Jesse Keating
+j2Solutions.net
+Mondo DevTeam (www.mondorescue.org)
+
+Was I helpful?  Let others know:
+ http://svcs.affero.net/rm.php?r=jkeating
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

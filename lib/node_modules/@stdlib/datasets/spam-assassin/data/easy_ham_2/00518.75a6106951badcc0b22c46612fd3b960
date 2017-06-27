@@ -1,0 +1,72 @@
+From webdev-admin@linux.ie  Tue Aug 20 11:51:54 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D128143C37
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:35 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JHPJZ02318 for
+    <jm-webdev@jmason.org>; Mon, 19 Aug 2002 18:25:19 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA20817; Mon, 19 Aug 2002 18:25:00 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from byron.heanet.ie (byron.heanet.ie [193.1.219.90]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA20788 for <webdev@linux.ie>;
+    Mon, 19 Aug 2002 18:24:55 +0100
+Received: from dhcp169.heanet.ie ([193.1.219.169] helo=heanet.ie) by
+    byron.heanet.ie with esmtp (Exim 4.05) id 17gqK1-0000R4-00 for
+    webdev@linux.ie; Mon, 19 Aug 2002 18:28:09 +0100
+Message-Id: <3D612ACA.4050100@heanet.ie>
+Date: Mon, 19 Aug 2002 18:28:42 +0100
+From: Dave Wilson <dave.wilson@heanet.ie>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: webdev@linux.ie
+Subject: Re: [Webdev] PHP+Javascript request
+References: <5.1.0.14.0.20020819181835.00ac0eb8@holly.csn.ul.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+> er, i understood you until you reached the above. Maybe its my lack of 
+> PHP but why would a variable name _need_ to end with [] ?
+> 
+> With most languages you parse the submitted form data and should come 
+> out with either variables or an array / hash, which you then work with 
+> and name whatever you like.
+
+IIRC, if the query string contains
+
+varname=FIRST&varname=SECOND
+
+then PHP will create a variable called "varname" with result SECOND. 
+However, if the query string contains
+
+varname[]=FIRST&varname[]=SECOND
+
+then PHP will create an array with varname[1]==FIRST and varname[2]==SECOND
+
+There are other ways to get the data from the HTTP request, and I guess 
+I'll do that if it turns out to simplify the script that creates the 
+form; but as i understand it that's the "official" way to get data from 
+a SELECT MULTIPLE using PHP.
+
+Dave
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

@@ -1,0 +1,224 @@
+From exmh-users-admin@redhat.com  Thu Jul 25 11:06:31 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CE91D440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:06:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:06:27 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P496429572 for
+    <jm-exmh@jmason.org>; Thu, 25 Jul 2002 05:09:06 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 6F3843EABC; Thu, 25 Jul 2002
+    00:07:39 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4CFAB4077E
+    for <exmh-users@listman.redhat.com>; Wed, 24 Jul 2002 23:55:05 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6P3t5m17048 for exmh-users@listman.redhat.com; Wed, 24 Jul 2002
+    23:55:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6P3t5R17044 for
+    <exmh-users@redhat.com>; Wed, 24 Jul 2002 23:55:05 -0400
+Received: from dingo.home.kanga.nu (ocker.kanga.nu [198.144.204.213]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6P3hIs05370 for
+    <exmh-users@redhat.com>; Wed, 24 Jul 2002 23:43:19 -0400
+Received: from localhost ([127.0.0.1] helo=dingo.home.kanga.nu) by
+    dingo.home.kanga.nu with esmtp (Exim 3.35 #1 (Debian)) id 17XZiR-0007nR-00
+    for <exmh-users@redhat.com>; Wed, 24 Jul 2002 20:55:03 -0700
+Received: from localhost ([127.0.0.1] helo=kanga.nu) by
+    dingo.home.kanga.nu with esmtp (Exim 3.35 #1 (Debian)) id 17XZiQ-0007nK-00
+    for <exmh-users@redhat.com>; Wed, 24 Jul 2002 20:55:02 -0700
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Folder computed replcomps (and replgroupcomps
+In-Reply-To: Message from Hal DeVore <haldevore@acm.org> of
+    "Sun, 21 Jul 2002 16:37:21 CDT."
+    <23937.1027287441@dimebox>
+References: <8128.1027129899@kanga.nu>  <23937.1027287441@dimebox>
+X-Face: ?<YUs-cNP1\Oc-H>^_yw@fA`CEX&}--=*&XqXbF-oePvxaT4(kyt\nwM9]{]N!>b^K}-Mb9
+    YH%saz^>nq5usBlD"s{(.h'_w|U^3ldUq7wVZz$`u>MB(-4$f\a6Eu8.e=Pf\
+X-Image-Url: http://www.kanga.nu/~claw/kanga.face.tiff
+X-Url: http://www.kanga.nu/~claw/
+Message-Id: <29965.1027569302@kanga.nu>
+X-Envelope-To: exmh-users@spamassassin.taint.org
+From: J C Lawrence <claw@kanga.nu>
+X-Delivery-Agent: TMDA/0.58
+X-Tmda-Fingerprint: oJzZDgI21vxV1zq2tpKX4srUoJs
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 24 Jul 2002 20:55:02 -0700
+
+On Sun, 21 Jul 2002 16:37:21 -0500 
+Hal DeVore <haldevore@acm.org> wrote:
+
+>>>>>> On Fri, 19 Jul 2002, "J" == J C Lawrence wrote:
+
+J> What would be great is if I could build the relevant comp file
+J> dynamically at runtime.
+
+> Sure.  Use the "folder change" hooks.  Create a proc named
+> Hook_FolderChangeSomething (where "Something" is meaningful and likely
+> to be unique in the universe just in case you distribute this to
+> others).  Put the proc in a file in your ~/.tk/exmh directory,
+> regenerate the tclIndex, restart exmh.
+
+> In that proc you can do anything you want, like rewrite your
+> ~/Mail/comp file.
+
+Yeah, that would work, tho there are race conditions and likely/possible
+ugly side effects (eg unintentionally left-over comp files).  I've ended
+up taking a very different route: TMDA (http://www.tmda.net).  In
+particular I use TMDA outbound filters to add custom plus addresses to
+the messages I send to specific lists.
+
+For example, for the tmda-users list I want a From: address of
+claw+tmda@kanga.nu, so the relevant outbound filter is:
+
+ to tmda-users@libertine.org ext=tmda
+
+which rewrites my From: header transparently.  When I get next month's
+batch of password reminders from Mailman lists I'll be running about
+resubscribing to each list either with a standard plus address or a
+TMDA-based sender address (ie an address which only the list in question
+is able to send mail to).
+
+				  -+-
+
+Getting TMDA fully happy with nmh was a minor pain.  
+
+Reasons:
+
+  nmh, like MH, by default delivers outbound mail via SMTP to port 25 on
+  a defined host.  The port number cannot be configured (it calls
+  getservbyname() which does a lookup against "smtp" in /etc/services).
+  Ergo, you are constrained to use tell nmh to use tmda-sendmail instead
+  of SMTP.
+
+  Using sendmail as the delivery method under MH instead of SMTP is not
+  recommended as is loses a number of useful bits of robustness in mail
+  delivery failure modes.  Further, when nmh is configured to use
+  sendmail instead of SMTP nmh's whom tool calls sendmail as follows:
+
+    .../sendmail/ -m -t -i -bv
+
+  which creates problems:
+
+    Postfix does not support "-bv" and returns in error
+
+    Exim does not support "-t" with "-bv" and returns in error
+
+    Don't mention Qmail.  I won't use it.
+
+  "whom" is far too useful as a component tool in MH to lose.  
+
+    It would be nice if someone gave the new crew working on nmh a shout
+    about this.  The "-bv" option to sendmail is pretty damned close to
+    being Allman sendmail specific and thus unfriendly to other MTAs.
+    Further there are many cases where it would be useful to configure a
+    non-standard port to deliver outbound mail to via SMTP.  nmh's
+    current insistence on only using port 25 (or as specified in
+    /etc/services) is a pain.
+
+I've worked out a hack to use TMDA with Exim while retaining nmh's
+"whom" support using Exim's system filter:
+
+  0) Make sure that the following options are set in ~/.tmda/config:
+
+    DATADIR
+    ALLOW_MODE_640
+    CRYPT_KEY_FILE
+    FINGERPRINT
+
+  1) chgrp everything in and under ~/.tmda to group "mail".
+
+  2) Configure Exim as per the current TMDA HOW-TO.
+
+  3) Set the following options in exim.conf:
+
+    message_filter = "/etc/exim/filter"
+    message_filter_pipe_transport = address_pipe
+
+  4) /etc/exim/filter reads:
+
+    # Exim filter
+    testprint "local_part: ${local_part: $h_From:}"
+    testprint "domain: ${domain: $h_From:}"
+    if "$h_X-tmda-fingerprint:" is "" and 
+       "${domain: $h_From:}" is "kanga.nu" and
+       "${if exists {/home/${local_part:$h_From:}/.tmda} {true}{false}}" is "true"
+    then
+      pipe "/usr/bin/tmda-inject -c /home/${local_part:$h_From:}/.tmda/config"
+      finish
+    endif
+
+  Yes, that assumes that all user directories are under /home and that
+  they use ~/.tmda/config instead of ~/.tmdarc.  Hack appropriately for
+  your setup.
+
+Basic explanation:
+
+  Exim sends all outbound mail thru the system filter (if one is
+  configured) before attempting delivery.  The above system filter
+  extracts the user from the From: address and pipes the message thru
+  that user's TMDA setup via tmda-inject.
+
+  The system filter runs as the same user as Exim, thus the requirement
+  for the chgrp mail.  If your Exim installation runs as a different
+  user, chgrp as appropriate.
+
+  It should be fairly easy to do something similar under Postfix, but I
+  haven't investigated that end.
+
+Notes:
+
+  This requires that all outbound mail that is to be processed with TMDA
+  has a From: header which references a local user (suffixes are fine),
+  and that the From: address is fully qualified with a known domain.  If
+  you're vhosting the above setup would be fairly trivial to extend for
+  other domains and $HOME paths.  I'm not vhosting on my desktop and so
+  don't care.  You could also qualify on envelope or other headers if
+  you wish.
+
+  A nice side effect of this approach for those running shared mail
+  servers is that ALL users who have TMDA configs instantly get TMDA
+  support for their outbound mail -- and in a manner that is less
+  complex and less prone to end-user error than the typical TMDA
+  configuration.
+
+Caveat Emptor.  
+
+  ObNote: I've also written a small patch against TMDA 0.58 to add a
+  "hold" delivery method (identical to "confirm" except it sends no
+  confirmation requests -- very useful for testing configs or doing
+  silent sidetracking of mail).
+
+-- 
+J C Lawrence                
+---------(*)                Satan, oscillate my metallic sonatas. 
+claw@kanga.nu               He lived as a devil, eh?		  
+http://www.kanga.nu/~claw/  Evil is a name of a foeman, as I live.
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

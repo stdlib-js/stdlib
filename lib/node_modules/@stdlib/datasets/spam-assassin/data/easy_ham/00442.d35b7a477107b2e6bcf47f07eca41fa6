@@ -1,0 +1,92 @@
+From fork-admin@xent.com  Thu Sep  5 17:23:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E4F9C16F6F
+	for <jm@localhost>; Thu,  5 Sep 2002 17:22:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 17:22:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g85Eh1Z24688 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 15:43:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 38C7D29424A; Thu,  5 Sep 2002 07:40:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id C53832940AA for <fork@xent.com>;
+    Thu,  5 Sep 2002 07:39:04 -0700 (PDT)
+Received: from sashimi (dmz-firewall [206.199.198.4]) by Boron.MeepZor.Com
+    (8.11.6/8.11.6) with SMTP id g85EfYE13663 for <fork@xent.com>;
+    Thu, 5 Sep 2002 10:41:34 -0400
+From: "Bill Stoddard" <bill@wstoddard.com>
+To: "Fork@Xent.Com" <fork@spamassassin.taint.org>
+Subject: RE: Re[2]: Java is for kiddies
+Message-Id: <JHEPKCEMGPKFFDHHDDKDOEDHFEAA.bill@wstoddard.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <m3elc8ri31.fsf@localhost.localdomain>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 10:40:04 -0400
+
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of Karl
+> Anderson
+> Sent: Thursday, September 05, 2002 3:50 AM
+> To: bitbitch@magnesium.net
+> Cc: 'fork@spamassassin.taint.org'
+> Subject: Re: Re[2]: Java is for kiddies
+>
+>
+> bitbitch@magnesium.net writes:
+>
+> > SL> <snip>
+> > SL> Misc rants about finding jobs, java vs C, what makes a good
+> programmer, etc.
+> > SL> </snip>
+> > <snip>
+> > SL> Okay, hmm, I thought twice about this, but what the hey,
+> jobs are hard to
+> > SL> come by. There's a company hiring in Mountain View, looking
+> for a few good
+> > </snip>
+> >
+> > I give Adam an hour or so to come up with an adequate number of
+> > excuses as to why -this- job isn't worth it.  :)
+>
+> http://www.netli.com/careers/index.htm
+>
+> >* Along with your resume, please answer this question: What does
+> this C statement do? #define XY(s, m) (&((s *)0)->m)
+>
+> Besides provide job security?
+
+This is more useful...
+
+#define CONTAINING_RECORD(address, type, field) ((type *)( \
+                                                  (PCHAR)(address) - \
+                                                  (PCHAR)(&((type
+*)0)->field)))
+
+Bill
+
+

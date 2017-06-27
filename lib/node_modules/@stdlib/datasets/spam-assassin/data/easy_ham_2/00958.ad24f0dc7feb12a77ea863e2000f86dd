@@ -1,0 +1,102 @@
+From fork-admin@xent.com  Tue Aug  6 11:58:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DB42B441C9
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g735c4v02172 for <jm@jmason.org>;
+    Sat, 3 Aug 2002 06:38:07 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 202172940BE; Fri,  2 Aug 2002 22:35:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tisch.mail.mindspring.net (tisch.mail.mindspring.net
+    [207.69.200.157]) by xent.com (Postfix) with ESMTP id 47C272940B3 for
+    <fork@xent.com>; Fri,  2 Aug 2002 22:34:40 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    tisch.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17arZ3-0004lt-00;
+    Sat, 03 Aug 2002 01:34:57 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a06b97119b4bace@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: info-theoretic model of anonymity
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 3 Aug 2002 01:25:36 -0400
+
+
+--- begin forwarded text
+
+
+Date: Sat, 3 Aug 2002 05:26:12 +0100
+From: Adam Back <adam@cypherspace.org>
+To: Cypherpunks <cypherpunks@minder.net>
+Cc: Adam Back <adam@cypherspace.org>
+Old-Subject: info-theoretic model of anonymity
+User-Agent: Mutt/1.2.2i
+Subject: info-theoretic model of anonymity
+Sender: owner-cypherpunks@lne.com
+
+Just read this paper published in PET02 "Towards an Information
+Theoretic Metric for Anonymity" [1]:
+
+	http://www.cl.cam.ac.uk/~gd216/set.pdf
+or	http://www.cl.cam.ac.uk/~gd216/set.ps
+
+it uses a Shannon like entropy model for the anonymity provided by a
+system uses this model to analyse the effect of different parameters
+one can tune with mixmaster (POOLSIZE, RATE, in mixmaster.conf).
+
+The "anonymity entropy" measurement can be interpreted as how many
+bits of information the attacker needs to identify a user and is
+computed from probabilities.
+
+Would be interesting to try estimate the entropy provided by the
+current mixmaster network.  A number of nodes publish their parameter
+choices, and traffic volume over time (in hourly increments).
+
+Adam
+--
+http://www.cypherspace.org/adam/
+
+[1]
+
+@inproceedings{Serjantov:02:info-theoretic-anon,
+  author = "Andrei Serjantov and George Danezis",
+  title = "Towards an Information Theoretic Metric for Anonymity",
+  booktitle = "Proceedings of the Workshop on Privacy Enhancing Technologies",
+  year = "2002",
+  note = "Also available as
+\url{http://www.cl.cam.ac.uk/~aas23/papers_aas/set.ps}"
+}
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+
+

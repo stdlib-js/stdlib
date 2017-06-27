@@ -1,0 +1,55 @@
+From pudge@perl.org  Sat Jul 20 03:02:28 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7F3FB440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 22:02:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 03:02:28 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6K20YJ31093 for
+    <jm-use-perl@jmason.org>; Sat, 20 Jul 2002 03:00:35 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17VjS8-0005D4-00 for <jm-use-perl@jmason.org>;
+    Fri, 19 Jul 2002 21:54:36 -0400
+Date: Sat, 20 Jul 2002 02:00:22 +0000
+From: pudge@perl.org
+Subject: [use Perl] Headlines for 2002-07-20
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17VjS8-0005D4-00@cpu59.osdn.com>
+
+use Perl Daily Headline Mailer
+
+Last Call for Papers for YAPC::Europe::2002
+    posted by pudge on Friday July 19, @03:30 (yapce)
+    http://use.perl.org/article.pl?sid=02/07/18/1430255
+
+Perl 5.8.0 Released
+    posted by hfb on Friday July 19, @09:29 (releases)
+    http://use.perl.org/article.pl?sid=02/07/19/038259
+
+Parrot 0.0.7 Released
+    posted by pudge on Friday July 19, @13:40 (parrot)
+    http://use.perl.org/article.pl?sid=02/07/19/1346238
+
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

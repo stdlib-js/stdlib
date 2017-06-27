@@ -1,0 +1,92 @@
+From owner-melbwireless@wireless.org.au  Mon Aug 12 16:29:42 2002
+Return-Path: <owner-melbwireless@wireless.org.au>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4B3DB44177
+	for <zzz@localhost>; Mon, 12 Aug 2002 11:29:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Mon, 12 Aug 2002 16:29:42 +0100 (IST)
+Received: from www.wireless.org.au (www.wireless.org.au [202.161.127.82])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CFQ6b21891 for
+    <zzz@spamassassin.taint.org>; Mon, 12 Aug 2002 16:26:06 +0100
+Received: (from majordomo@localhost) by www.wireless.org.au
+    (8.11.6/8.11.6) id g7CFNqs09225 for melbwireless-list; Tue, 13 Aug 2002
+    01:23:52 +1000
+X-Authentication-Warning: www.wireless.org.au: majordomo set sender to
+    owner-melbwireless@wireless.org.au using -f
+Received: from hotmail.com (law2-f11.hotmail.com [216.32.181.11]) by
+    www.wireless.org.au (8.11.6/8.11.6) with ESMTP id g7CFNpQ09222 for
+    <melbwireless@wireless.org.au>; Tue, 13 Aug 2002 01:23:51 +1000
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 12 Aug 2002 08:23:40 -0700
+Received: from 203.14.174.222 by lw2fd.hotmail.msn.com with HTTP;
+    Mon, 12 Aug 2002 15:23:40 GMT
+X-Originating-Ip: [203.14.174.222]
+From: "Vincent Chin" <nukiez@hotmail.com>
+To: melbwireless@wireless.org.au
+Date: Tue, 13 Aug 2002 01:23:40 +1000
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <LAW2-F11UgJkU6XnDSa0000e652@hotmail.com>
+X-Originalarrivaltime: 12 Aug 2002 15:23:40.0806 (UTC) FILETIME=[3CE2A260:01C24214]
+Sender: owner-melbwireless@wireless.org.au
+Precedence: list
+
+Ripped from
+
+http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Linux.Wireless.usage.html
+
+" 11 Access Points, Home Gateways and Ethernet bridging
+Most Access Points act as a MAC level bridge, allowing the Wireless LAN to 
+be a natural extension of a wired network. They are deployed in a cellular 
+fashion, and provide extended security, management and roaming.
+On the other hand, the Home Gateways allow a single cell to be connected to 
+a WAN, like a modem, a cable modem or a DSL access. The set of features is 
+quite different, and they offer NAT/masquerading and PPP configuration.
+
+The conventional Ethernet bridging method (promiscuous sniffing) doesn't 
+work with most wireless LAN standard, because of the header encapsulation 
+and the interactions with link layer retransmissions. In other word, most 
+often, when you use a software bridge on a wireless LAN (such as the Linux 
+bridge on a 802.11 card), it doesn't work (moreover, quite often promiscuous 
+is broken as well). "
+
+[[ What the?? What is he talking about?? Aren't we all using Linux to bridge 
+our networks? ]]
+
+" The driver could work around this restriction by creating its own MAC 
+headers (802.11 headers instead of 802.3, and putting the right bits in the 
+right place), but in fact most vendors don't provide the specification on 
+how to this with their hardware (when they don't explicitely prevent it in 
+hardware, to force you to buy their Access Points).
+
+In other words, don't expect to use your Linux PC as a wireless bridge or 
+wireless Access Points with most products out there, and forget about 
+turning it into an Access Point. Of course, there is some exceptions. "
+
+[[ Is this true? ]]
+
+
+" The workaround is to set the wireless LAN in ad-hoc mode and to use other 
+methods, such as routing, masquerading, IP bridging, ARP proxying... "
+
+
+[[ Yes, I am in a process of building a wireless-lan <-> wired-lan bridge. 
+But I don't understand what this guy is talking about. Anyone?
+
+
+Vince. ]]
+
+
+
+
+_________________________________________________________________
+MSN Photos is the easiest way to share and print your photos: 
+http://photos.msn.com/support/worldwide.aspx
+
+
+To unsubscribe: send mail to majordomo@wireless.org.au
+with "unsubscribe melbwireless" in the body of the message
+
+

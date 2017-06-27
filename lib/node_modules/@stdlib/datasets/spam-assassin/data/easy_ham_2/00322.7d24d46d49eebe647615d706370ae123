@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D50454414C
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:48 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79JpKb23124 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 20:51:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA26429; Fri, 9 Aug 2002 20:47:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from web21110.mail.yahoo.com (web21110.mail.yahoo.com
+    [216.136.227.112]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id UAA26392
+    for <ilug@linux.ie>; Fri, 9 Aug 2002 20:47:34 +0100
+Message-Id: <20020809194731.2051.qmail@web21110.mail.yahoo.com>
+Received: from [194.125.138.80] by web21110.mail.yahoo.com via HTTP;
+    Sat, 10 Aug 2002 05:47:31 EST
+Date: Sat, 10 Aug 2002 05:47:31 +1000 (EST)
+From: =?iso-8859-1?q?bryan=20roycroft?= <bryanroycroft@yahoo.com.au>
+To: ilug@linux.ie
+In-Reply-To: <200208091549.QAA16547@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Subject: [ILUG] yast2
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+has anyone had a problem with Yast2 not being able to
+mount a source medium for installing new packages, on
+suse 8.0?
+
+it finds the directory containing the source, so the
+installation program gets as far as selecting
+packages, and formatting, but then says it can't mount
+the source directory?
+
+
+
+http://digital.yahoo.com.au - Yahoo! Digital How To
+- Get the best out of your PC!
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

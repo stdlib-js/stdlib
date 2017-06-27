@@ -1,0 +1,110 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 14:43:23 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 533A243FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 09:43:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 14:43:23 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79DiGb02527 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 14:44:16 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id OAA06657 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 14:41:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17d9vz-0001Ti-00; Fri,
+    09 Aug 2002 06:36:07 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17d9vm-0003UR-00 for <razor-users@lists.sourceforge.net>; Fri,
+    09 Aug 2002 06:35:54 -0700
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FA81E@med-core07.med.wayne.edu>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [Razor-users] What's wrong with the Razor servers now?
+Thread-Index: AcI/XKGClT30eIaQTH+SkPSHcjwROAATQXrQ
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 9 Aug 2002 09:35:48 -0400
+Date: Fri, 9 Aug 2002 09:35:48 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g79DiGb02527
+
+Isn't that why you have whitelisting?
+
+-----Original Message-----
+From: Will Glynn [mailto:delta407@delta407.homeip.net] 
+Sent: Friday, August 09, 2002 12:18 AM
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+
+
+> Who loses in this case? Why? Neither party is inaccurate in their 
+> actions IMO. But someone's standing is going to get hurt because of 
+> it.
+
+My question for the trust system is this. I signed up for a free account
+
+on some website that gives me free access to a large compilation of
+data, 
+and in so doing have subscribed myself to their mailing list. The
+mailing 
+includes a list of new articles and books and so forth as well as a few 
+links to their book store.
+
+This is consistently flagged as spam, even though I *agreed* to see it, 
+and I *want* to see what new articles there are, since some of them
+might 
+be interesting. Thus, since it is certifiably *not* spam (it even 
+includes a link to terminate your account), I revoke it. Even so, the 
+next mail is still flagged as spam.
+
+Who is losing a trust rating here? If it is not unsolicited commercial
+e- mail, it should not be reported by Razor as spam -- correct?
+
+--Will
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf _______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

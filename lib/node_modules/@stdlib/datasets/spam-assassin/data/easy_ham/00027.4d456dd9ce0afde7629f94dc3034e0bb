@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Fri Aug 23 11:07:42 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 762374415C
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:30 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MHxuZ18619 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 18:59:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA14875; Thu, 22 Aug 2002 18:57:44 +0100
+Received: from ni-mail1.dna.utvinternet.net (mail.d-n-a.net [194.46.8.11])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA14844 for
+    <ilug@linux.ie>; Thu, 22 Aug 2002 18:57:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.d-n-a.net
+    [194.46.8.11] claimed to be ni-mail1.dna.utvinternet.net
+Received: from mail.dnet.co.uk (unverified [194.46.8.61]) by
+    ni-mail1.dna.utvinternet.net (Vircom SMTPRS 1.4.232) with SMTP id
+    <B0002356019@ni-mail1.dna.utvinternet.net>; Thu, 22 Aug 2002 18:55:19
+    +0100
+From: "Peter Staunton" <peter@staunton.ie>
+Reply-To: peter@staunton.ie
+To: ilug@linux.ie
+Date: Thu, 22 Aug 2002 18:57:35 GMT
+X-Mailer: DMailWeb Web to Mail Gateway 1.8s, http://netwinsite.com/top_mail.htm
+Message-Id: <3d65260f.948.0@mail.dnet.co.uk>
+X-User-Info: 159.134.226.168
+Subject: [ILUG] Newbie seeks advice - Suse 7.2
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Folks,
+ 
+my first time posting - have a bit of Unix experience, but am new to Linux.
+
+ 
+Just got a new PC at home - Dell box with Windows XP. Added a second hard disk
+for Linux. Partitioned the disk and have installed Suse 7.2 from CD, which went
+fine except it didn't pick up my monitor.
+ 
+I have a Dell branded E151FPp 15" LCD flat panel monitor and a nVidia GeForce4
+Ti4200 video card, both of which are probably too new to feature in Suse's default
+set. I downloaded a driver from the nVidia website and installed it using RPM.
+Then I ran Sax2 (as was recommended in some postings I found on the net), but
+it still doesn't feature my video card in the available list. What next?
+ 
+Another problem. I have a Dell branded keyboard and if I hit Caps-Lock twice,
+the whole machine crashes (in Linux, not Windows) - even the on/off switch is
+inactive, leaving me to reach for the power cable instead.
+ 
+If anyone can help me in any way with these probs., I'd be really grateful -
+I've searched the 'net but have run out of ideas.
+ 
+Or should I be going for a different version of Linux such as RedHat? Opinions
+welcome.
+ 
+Thanks a lot,
+Peter
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

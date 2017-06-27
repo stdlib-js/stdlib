@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Tue Aug 13 13:28:39 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6C47643C34
+	for <jm@localhost>; Tue, 13 Aug 2002 08:28:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 13:28:39 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DCQ2e31256 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 13:26:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA13659; Tue, 13 Aug 2002 13:24:50 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA13625; Tue, 13 Aug 2002 13:24:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A00091C89; Tue, 13 Aug 2002 13:24:40 +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 7298) id
+    A8A7ADA4A; Tue, 13 Aug 2002 13:24:40 +0100 (IST)
+Date: Tue, 13 Aug 2002 13:24:40 +0100
+From: Declan <skyhawk@redbrick.dcu.ie>
+To: ilug@linux.ie
+Cc: Niall O Broin <niall@linux.ie>
+Subject: Re: [ILUG] Secure remote file access
+Message-Id: <20020813132440.A13714@prodigy.Redbrick.DCU.IE>
+References: <20020813112214.GA5163@bilbo.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020813112214.GA5163@bilbo.makalumedia.com>; from
+    niall@linux.ie on Tue, Aug 13, 2002 at 12:22:14PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 12:22:14PM +0100, Niall O Broin wrote:
+> What are the best options available on Linux ? SFTP ? WebDAV ? Something
+> else ? Linux servers - Linux and Mac OS-X clients.
+> 
+
+
+If you mean secure file transfer
+scp is good
+
+-- 
+
+Redbrick - Dublin City University Networking Society
+Declan McMullen - Education Officer
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

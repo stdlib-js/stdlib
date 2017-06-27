@@ -1,0 +1,769 @@
+Return-Path: bsbest@www20.web2010.com
+Delivery-Date: Mon Sep  2 11:14:32 2002
+Return-Path: <bsbest@www20.web2010.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g82FEVs10727
+	for <nice@localhost>; Mon, 2 Sep 2002 11:14:31 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Mon, 02 Sep 2002 11:14:31 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Mon, 02 Sep 2002 09:50:20 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Mon, 02 Sep 2002 09:50:20 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 1B34E6D9FD
+	for <mothlight@fastmail.fm>; Mon,  2 Sep 2002 09:49:44 -0500 (CDT)
+X-Mail-from: bsbest@www20.web2010.com
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  CTYPE_JUST_HTML
+Received: from www20.web2010.com (www20.web2010.com [216.157.18.254])
+	by www.fastmail.fm (Postfix) with ESMTP id 5DE096DB74
+	for <mothlight@fastmail.fm>; Mon,  2 Sep 2002 09:49:43 -0500 (CDT)
+Received: (from bsbest@localhost)
+	by www20.web2010.com (8.9.3/8.9.0) id JAA20674;
+	Mon, 2 Sep 2002 09:49:41 -0400 (EDT)
+Date: Mon, 2 Sep 2002 09:49:41 -0400 (EDT)
+Message-Id: <200209021349.JAA20674@www20.web2010.com>
+To: mothlight@fastmail.fm
+From: online@berkshireeagle.com
+Subject: Eagle: Lieutenant governor's race competitive, unique
+Content-type: text/html
+X-Status: 
+X-Keywords:                  
+
+<!-- to unsubscribe or change email format click on the below link --><!-- http://www.berkshireeagle.com/newsletter --><!-- Vignette V6 Mon Sep 02 07:23:30 2002 -->
+<!-- Vignette V6 Mon Sep 02 07:23:31 2002 -->
+
+<!-- libOpenCDA reports: OID = 101~6279~ -->
+
+<!-- NMOTemplateInclude: strPseudoRelPath = /entry -->
+
+
+<html>
+<head>	
+<title>Berkshire Eagle</title>
+
+<!-- CssBuilder Version: 1.0 -->
+
+<!-- intCssSectionID = 6279 -->
+
+<!-- CSS Builder: All parents of section found... --->
+
+<!-- Executing: CssStyles_GetAllStylesByPaperID 101 -->
+
+<style type="text/css">
+    .articleBody  {
+      font-family:verdana, arial, helvetica;
+      font-size:13px;
+    }
+    .articleByline  {
+      font-family:verdana, arial, helvetica;
+      font-weight:normal;
+      font-style:italic;
+      font-size:13px;
+      height:30px;
+    }
+    .articleDate  {
+      font-family:verdana, arial, helvetica;
+      font-size:11px;
+    }
+    .articleHeadline  {
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:18px;
+      height:36px;
+      text-align:left;
+    }
+    .articleImageCaption  {
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:9px;
+    }
+    .articleOptions  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:8px;
+      text-decoration:none;
+      vertical-align:middle;
+    }
+    .articleOptionsHead  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:normal;
+      font-size:8px;
+    }
+    .articleOptionsTop  {
+      color:#999999;
+      font-family:verdana, arial, helvetica, sans-serif;
+      font-weight:bold;
+      font-size:8px;
+      text-decoration:none;
+      vertical-align:middle;
+    }
+    .articleOverline  {
+      font-family:sans-serif, arial, helvetica;
+      font-weight:normal;
+      font-size:12px;
+      height:24px;
+      text-align:left;
+    }
+    .articlesFrom  {
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .articleSubHeadline  {
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+      height:30px;
+    }
+    .breakNewsBox  {
+      color:#000000;
+      background-color:#FFFFFF;
+      width:200px;
+      text-align:left;
+      border-width:1px;
+      border-color:#666666;
+      border-style:solid;
+    }
+    .breakNewsHead  {
+      color:#FFFFFF;
+      background-color:#00008B;
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-style:normal;
+      font-size:14px;
+      text-decoration:none;
+      border-style:ridge;
+    }
+    .breakNewsLink  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:verdana, arial, helvetica;
+      font-size:11px;
+    }
+    .breakNewsSection  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:11px;
+      text-decoration:none;
+    }
+    .content  {
+      color:#000000;
+      background-color:#ffffff;
+      font-family:ans-serif, arial, helvetica;
+      font-size:10px;
+    }
+    .date  {
+      color:#000000;
+      font-family:arial, sans-serif, helvetica;
+      font-weight:bold;
+      font-size:9px;
+    }
+    .homeArticleBlurb  {
+      font-family:verdana, arial, helvetica;
+      font-size:12px;
+    }
+    .homeArticleLinkText  {
+      color:#000000;
+      font-family:verdana, arial, helvetica;
+      font-size:12px;
+    }
+    .homeArticleTitle  {
+      color:#000000;
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .homeSectionTitle  {
+      color:#FFFFFF;
+      background-color:#00008B;
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-style:normal;
+      font-size:14;
+      width:55%;
+      text-decoration:none;
+      border-style:inset;
+    }
+    .nav  {
+      background-color:#FFFFFF;
+    }
+    .navaa  {
+      color:#000099;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:13px;
+      text-decoration:none;
+      text-indent:2px;
+    }
+    .navab  {
+      color:#CC3333;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:13px;
+      text-decoration:underline;
+      text-indent:2px;
+    }
+    .navba  {
+      color:#000099;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+      height:15px;
+      text-decoration:underline;
+      text-indent:7px;
+    }
+    .navbb  {
+      color:#CC0000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:normal;
+      font-size:10px;
+      height:15px;
+      text-decoration:underline;
+      text-indent:7px;
+    }
+    .navca  {
+      color:#999999;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+      height:15px;
+      text-decoration:underline;
+      text-indent:12px;
+    }
+    .navcb  {
+      color:#CC0000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:normal;
+      font-size:10px;
+      height:15px;
+      text-decoration:underline;
+      text-indent:12px;
+    }
+    .nmoMastHead  {
+      background-color:#FFFFFF;
+      text-align:center;
+    }
+    .otherArticlesBox  {
+      background-color:#FFFFFF;
+    }
+    .otherArticlesDate  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+      text-align:center;
+    }
+    .otherArticlesHead  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:normal;
+      font-size:10px;
+    }
+    .otherArticlesLink  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+    }
+    .otherArticlesTitle  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:normal;
+      font-size:10px;
+    }
+    .packageHead  {
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .packageLink  {
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+    }
+    .pageBottomLinks  {
+      color:#000099;
+      font-family:arial, verdana, sans-serif;
+      font-size:12px;
+      text-decoration:underline;
+    }
+    .pageBottomTitle  {
+      color:#FFFFFF;
+      background-color:#000066;
+      font-family:arial, verdana, sans-serif;
+      font-weight:bold;
+      font-size:16px;
+    }
+    .pageLeftLinks  {
+      color:#000066;
+      font-family:arial, sans-serif, verdana;
+      font-size:11px;
+      text-decoration:none;
+    }
+    .pollsAnswer  {
+      color:#000000;
+      font-family:sans-serif, arial, helvetica;
+      font-size:11px;
+      vertical-align:top;
+    }
+    .pollsBox  {
+      background-color:#FFFFFF;
+      width:120px;
+      border-width:2px;
+      border-color:#EEEEEE;
+      border-style:outset;
+    }
+    .pollsHead  {
+      color:#000000;
+      background-color:#9999FF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+      text-align:center;
+      border-width:2px;
+      border-color:#EEEEEE;
+      border-style:outset;
+    }
+    .pollsQuestion  {
+      color:#000000;
+      font-family:sans-serif, arial, helvetica;
+      font-size:11px;
+      text-align:center;
+    }
+    .pollsViewResults  {
+      color:#000066;
+      font-family:sans-serif, arial, helvetica;
+      font-style:italic;
+      font-size:14px;
+      text-align:center;
+    }
+    .redbody  {
+      color:#FF0000;
+      font-family:arial, verdana, helvetica;
+      font-weight:bold;
+      font-size:13px;
+    }
+    .searchBody  {
+      color:#000000;
+      background-color:#CCCCCC;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:12px;
+    }
+    .searchBox  {
+      background-color:#CCCCCC;
+      border-width:2px;
+      border-color:#000000;
+      border-style:groove;
+    }
+    .searchHead  {
+      color:#FFFFFF;
+      background-color:#000000;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .searchNew  {
+      color:#0033FF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:10px;
+      text-decoration:none;
+    }
+    .searchPages  {
+      color:#660099;
+      font-family:sans-serif, arial, helvetica;
+      font-size:12px;
+    }
+    .searchQuery  {
+      color:#000000;
+      font-family:sans-serif, arial, helvetica;
+      font-size:12px;
+    }
+    .searchResultAuthor  {
+      color:#000000;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:10px;
+    }
+    .searchResultBody  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:12px;
+    }
+    .searchResultDate  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:12px;
+    }
+    .searchResultLinkTitle  {
+      color:#0033FF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .searchResultSection  {
+      color:#000000;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .sectionArticleBlurb  {
+      font-family:verdana, arial, helvetica;
+      font-size:12px;
+      text-align:justify;
+    }
+    .sectionArticleTitle  {
+      color:#000066;
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .sectionImageCaption  {
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:10px;
+    }
+    .sectionLinkText  {
+      color:#000066;
+      font-family:verdana, arial, helvetica;
+      font-size:11px;
+    }
+    .sectionSectionTitle  {
+      color:#000000;
+      font-family:verdana, arial, helvetica;
+      font-weight:bold;
+      font-size:25px;
+    }
+    .simpleSearchHead  {
+      color:#999999;
+      background-color:#FFFFFF;
+      font-family:verdana, arial, helvetica;
+      font-size:9px;
+    }
+    .simpleSearchLink  {
+      color:#999999;
+      background-color:#FFFFFF;
+      font-family:verdana, arial, helvetica;
+      font-size:9px;
+      text-decoration:none;
+    }
+    .simpleSearchText  {
+      color:#000000;
+      background-color:#FFFFFF;
+      font-family:verdana, arial, helvetica;
+      font-size:9px;
+    }
+    .time  {
+      color:#000000;
+      font-family:arial, sans-serif, helvetica;
+      font-size:9px;
+    }
+    .topNavBar  {
+      background-color:#003463;
+    }
+    .weatherBox  {
+      background-color:#FFFFFF;
+      width:120px;
+      border-width:1px;
+      border-color:#00659C;
+      border-style:solid;
+    }
+    .weatherContent  {
+      border-width:3px;
+      border-color:#FFFFFF;
+      border-style:solid;
+    }
+    .weatherHead  {
+      color:#FFFFFF;
+      background-color:#00659C;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:10px;
+      text-align:center;
+    }
+    .weatherHigh  {
+      color:#FF0000;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+    }
+    .weatherLow  {
+      color:#3399FF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+    }
+    .WthrDay  {
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:bold;
+      font-size:12px;
+      text-align:center;
+    }
+    .WthrDayInfo  {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:11px;
+      text-align:center;
+    }
+    .WthrDetailed  {
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:normal;
+      font-size:12px;
+      text-align:left;
+    }
+    .WthrEven  {
+      background-color:#FFFFFF;
+      font-family:verdana;
+      font-size:11px;
+    }
+    .WthrHi  {
+      color:#CC0033;
+      font-family:arial;
+      font-weight:bold;
+      font-size:12px;
+    }
+    .WthrIcon  {
+      text-align:center;
+    }
+    .WthrLink  {
+      color:#003399;
+      font-family:arial;
+      font-size:12px;
+      text-align:center;
+    }
+    .WthrLow  {
+      color:#3366CC;
+      font-family:arial;
+      font-weight:bold;
+      font-size:12px;
+    }
+    .WthrOdd  {
+      background-color:#CCCCCC;
+      font-family:verdana;
+      font-size:11px;
+    }
+    .WthrRule  {
+      color:000099;
+      background-color:000099;
+      height:1px;
+    }
+    .WthrSubTitle  {
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:bold;
+      font-size:13px;
+    }
+    .WthrText  {
+      color:#666666;
+      font-family:Arial, Helvetica, sans-serif;
+      font-style:italic;
+      font-size:12px;
+    }
+    .WthrTitle  {
+      color:000099;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight:bold;
+      font-size:14px;
+    }
+    a:hover.navaa  {
+      color:#0000FF;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-weight:bold;
+      font-size:13px;
+      text-decoration:underline;
+      text-indent:2px;
+    }
+    a:hover.navba  {
+      color:#0000FF;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+      text-decoration:underline;
+      text-indent:7px;
+    }
+    a:hover.navca  {
+      color:#0000FF;
+      background-color:#FFFFFF;
+      font-family:sans-serif, arial, helvetica;
+      font-size:10px;
+      height:15px;
+      text-decoration:underline;
+      text-indent:12px;
+    }
+    a:hover.pageLeftLinks  {
+      color:#000066;
+      font-family:arial, sans-serif, verdana;
+      font-size:11px;
+      text-decoration:underline;
+    }
+
+</style>
+</head>
+
+<body>
+<DIV align="center">To unsubscribe, use the link at foot of this page.<BR><a href="http://www.berkshireeagle.com"><img src="http://63.147.65.2/images/eagle1.gif" width="299" height="34" border="0" alt="Berkshire Eagle Home Page"></a></DIV>
+
+<DIV align="center"><table border="0" width="98%"
+cellpadding="5" cellspacing="5"><tr valign=top><td
+align="center"><a href="http://www.landmark-cu.com"><img
+src="http://63.147.65.2/images/landmarkcu.jpg"
+border="0" width=456 height=48  alt="Landmark Credit
+Union"></a></td></tr></table></DIV>
+
+<table align=center width=460><tr><td>
+
+
+			<table align="right" valign="top" width="120">
+			<tr>
+				<td>
+					<!-- BEGIN BREAKING-NEWS BOX --><a class='breakNewsBox'><table cellspacing='2' cellpadding='2'><tr><td class='breakNewsHead'>Breaking News</td></tr><tr><td><a class='breakNewsSection' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E,00.html'>Local Headlines</a></td></tr><tr><td><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E833793,00.html'>Car with young driver said to swerve near police cruiser</a><br><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E833795,00.html'>Foundation wins grant to plan rink</a><br><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E833794,00.html'>Illustrator writes a book on bridge</a><br></td></tr><tr><td><a class='breakNewsSection' href='http://www.berkshire
+ e!
+agle.com/Stories/0,1413,101%257E6295%257E,00.html'>Sports Headlines</a></td></tr><tr><td><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6295%257E833823,00.html'>A's used Tejada's dramatics to claim 18th straight win</a><br><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6295%257E833820,00.html'>Baseball throws brushback pitch at fan Web sites</a><br><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6295%257E833816,00.html'>Bears triumph in Quebec</a><br></td></tr><tr><td><a class='breakNewsSection' href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6267%257E,00.html'>Today&#39;s Editorials</a></td></tr><tr><td><span class='breakNewsDot'>&#149;&nbsp;</span><a class='breakNewsLink' href='http://www.berkshireeagle.com/Stories/0,14
+ 1!
+3,101%257E6267%257E833827,00.html'>Waiting for PEER to make its case</a><br></td></tr></table></a><!-- END BREAKING-NEWS BOX -->
+				</td>
+			</tr>
+			</table>
+			<p><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E7514%257E,00.html' class='homeSectionTitle'>Today&#39;s Headlines</a><br>
+<SCRIPT>
+	<!-- // Hide from older browsers
+	function openEnlarged(url, width, height) 
+	{
+		wid = window.open(url, "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+
+	function showVideo(url, width, height) {
+		wid = window.open(url + '?path=', "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+	
+	// -->
+</SCRIPT>
+<a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E7514%257E833788,00.html' class='homeArticleTitle'>Lieutenant governor's race competitive, unique</a><br><span class='homeArticleBlurb'>BOSTON -- Mitt Romney flinched when asked about the possibility of being forced to campaign with James Rappaport instead of his hand-picked running mate, Kerry Healey.... </span><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E7514%257E833788,00.html'  class='homeArticleLinkText'>More</a><br clear='left'/><br><p><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E,00.html' class='homeSectionTitle'>LOCAL NEWS</a><br>
+<SCRIPT>
+	<!-- // Hide from older browsers
+	function openEnlarged(url, width, height) 
+	{
+		wid = window.open(url, "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+
+	function showVideo(url, width, height) {
+		wid = window.open(url + '?path=', "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+	
+	// -->
+</SCRIPT>
+<a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E833791,00.html' class='homeArticleTitle'>'Dream' jobs vs. real jobs Couples juggle life and labor</a><br><span class='homeArticleBlurb'>Labor Day delivers a break from tedious work tasks for much of the country's work force, but young Griffin Gageant recently seemed eager to launch a plan for his life's labor.... </span><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6282%257E833791,00.html'  class='homeArticleLinkText'>More</a><br clear='left'/><br><p><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6295%257E,00.html' class='homeSectionTitle'>SPORTS</a><br>
+<SCRIPT>
+	<!-- // Hide from older browsers
+	function openEnlarged(url, width, height) 
+	{
+		wid = window.open(url, "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+
+	function showVideo(url, width, height) {
+		wid = window.open(url + '?path=', "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+	
+	// -->
+</SCRIPT>
+<a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6295%257E833789,00.html' class='homeArticleTitle'>Wood or aluminum: MIAA to decide</a><br><span class='homeArticleBlurb'>The Massachusetts Interscholastic Athletic Association, the governing body of scholastic sports in the state, will be meeting later this month to discuss the possibility of using wooden bats for the 2003 scholastic baseball postseas... </span><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6295%257E833789,00.html'  class='homeArticleLinkText'>More</a><br clear='left'/><br><p><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6267%257E,00.html' class='homeSectionTitle'>COMMENTARY</a><br>
+<SCRIPT>
+	<!-- // Hide from older browsers
+	function openEnlarged(url, width, height) 
+	{
+		wid = window.open(url, "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+
+	function showVideo(url, width, height) {
+		wid = window.open(url + '?path=', "EnlargedImage", "toolbar=no,status=yes,directories=no,location=no,scrollbars=yes,width="+ width +",height="+ height +",resizable=yes");
+		wid.focus();
+	}
+	
+	// -->
+</SCRIPT>
+<a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6267%257E833790,00.html' class='homeArticleTitle'>Emily Post evolves</a><br><span class='homeArticleBlurb'>The New York Times announcement last month that the paper will add same-sex unions to its wedding announcements provides a nice boost to the cause of gay rights. The Times, however, is only acknowledging a healthy social phenomenon that's been building fo... </span><a href='http://www.berkshireeagle.com/Stories/0,1413,101%257E6267%257E833790,00.html'  class='homeArticleLinkText'>More</a><br clear='left'/><br>
+			<p>
+			<table cellspacing="1" cellpadding="4" border="0" align="center">
+<tr>
+<td colspan="4" height="30"> </td>
+</tr>
+		<tr>
+		    <td colspan="2" class="pageBottomTitle">Special Sections</td>
+		    <td colspan="2" class="pageBottomTitle">Entertainment</td>
+		</tr>
+		<tr>
+		    <td valign="top">
+		    		<a href="http://63.147.65.2/antiques" class="pageBottomLinks">Antiques Guide</a><br>
+				<a href="http://63.147.65.2/showcase" class="pageBottomLinks">Auto Showcase</a><br>
+				<a href="http://63.147.65.2/chamber" class="pageBottomLinks">Berkshire</a><br>
+				<a href="http://63.147.65.2/chamber" class="pageBottomLinks">Business</a><br>
+				<a href="http://www.berkshiresweek.com/" class="pageBottomLinks">Berkshires Week</a><br>
+
+<a href="http://63.147.65.2/berkshires2030" class="pageBottomLinks">Berkshires 2030</a><br>
+				<a href="http://www.berkshirecommunity.com" class="pageBottomLinks">Community</a><BR>
+		    </td>
+		    <td valign="top">
+		    		<a href="http://63.147.65.2/dotcom/bottom.htm" class="pageBottomLinks">Dot Com Directory</a><br>
+				<a href="http://63.147.65.2/golden" class="pageBottomLinks">Golden Years</a><br>
+				<a href="http://www.healthquarterly.com" class="pageBottomLinks">Health Quarterly</a><br>
+				<a href="http://63.147.65.2/homeimprovement/spring" class="pageBottomLinks">Home Improvement</a><br>
+				<a href="http://63.147.65.2/summerpreview" class="pageBottomLinks">Summer Preview</a><br>
+				<a href="http://63.147.65.2/outdoor" class="pageBottomLinks">Outdoor Living</a><br>
+				<a href="http://63.147.65.2/weddingplanner" class="pageBottomLinks">Wedding Planner</a><BR>
+		    </td>
+		    <td valign="top">
+		    		<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%7E6335%7E,00.html" class="pageBottomLinks">Arts/Entertainment</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%7E6337%7E,00.html" class="pageBottomLinks">Books</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%257E6345%257E,00.html" class="pageBottomLinks">Movie Schedules</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%7E6346%7E,00.html" class="pageBottomLinks">Movie Reviews</a><br>
+				<a href="http://63.147.65.2/theater.htm" class="pageBottomLinks">Theater Reviews</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%7E6273%7E,00.html" class="pageBottomLinks">Columnists</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%257E23929%257E776687,00.html" class="pageBottomLinks">Lotteries</a><BR>
+		    </td>
+		    <td valign="top">
+		    		<a href="http://www.headbonezone.com" class="pageBottomLinks">Headbone Zone</a><br>
+				<a href="http://www.berkshirecommunity.com/sports/" class="pageBottomLinks">SportZone</a><br>
+				<a href="http://www.datemaker.com/pittsfield" class="pageBottomLinks">Personals</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%7E6309%7E,00.html" class="pageBottomLinks">What's Doing?</a><br>
+				<a href="http://www.berkshireeagle.comhttp://www.berkshireeagle.com/Stories/0,1413,101%7E6308%7E,00.html" class="pageBottomLinks">Week's Calendar</a><br>
+				<a href="http://63.147.65.2/forms/phoorder.asp" class="pageBottomLinks">Photo Reprints</a><BR>
+		    </td>
+		</tr>
+		<tr>
+			<td align="center" colspan="4">
+				<table cellpadding="5" cellspacing="0" border="0">
+				<tr>
+					<td><a href="http://www.thetranscript.com" style="border: 0px"><img src="http://media.mnginteractive.com/media/paper101/transcript.gif" border="0" alt="North Adams Transcript"></a></td>
+					<td align="center"><a href="http://www.reformer.com" style="border: 0px"><img src="http://media.mnginteractive.com/media/paper101/reformer.gif" border="0" alt="Brattleboro Reformer"></a></td>
+					<td align="right"><a href="http://www.benningtonbanner.com" style="border: 0px"><img src="http://media.mnginteractive.com/media/paper101/bbanner.gif" border="0" alt="Bennington Banner"></a></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+			</p>
+			
+
+</tr></td></table>
+</body><br><div align=center><a href="http://63.147.65.2/newsletter"><font face=arial size=1>click to unsubscribe from newsletter or change format</font></a></div>

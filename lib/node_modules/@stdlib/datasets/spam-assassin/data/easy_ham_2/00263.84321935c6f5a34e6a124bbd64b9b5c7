@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Tue Aug  6 13:58:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 575B344142
+	for <jm@localhost>; Tue,  6 Aug 2002 08:48:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 13:48:32 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76C92k27211 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 13:09:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA28072; Tue, 6 Aug 2002 13:07:02 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA28027 for <ilug@linux.ie>; Tue,
+    6 Aug 2002 13:06:54 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id NAA29236 for <ilug@linux.ie>; Tue,
+    6 Aug 2002 13:06:24 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g76C6vQ11788 for ilug@linux.ie; Tue, 6 Aug 2002 13:06:57 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 6 Aug 2002 13:06:57 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+Message-Id: <20020806120656.GP14040@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <653270E74A8DD31197AF009027AA4F8B01845F1B@LIMXMMF303>
+    <20020805224355.GB26632@csn.ul.ie>
+    <001501c23d25$c21ba0b0$3864a8c0@sabeo.ie>
+    <20020806125617.F17211@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020806125617.F17211@ie.suberic.net>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 06, 2002 at 12:56:17PM +0100, kevin lyda mentioned:
+> sorry, i missed this.  redhat supplies something similar called kickstart
+> (guess who inspired them?).  pc hardware is dumb, so you'll need to use
+> a floppy.  otoh, every jumpstart config i've seen required rarp plus
+> plugging the new box's ethernet+ip into a file.  a kickstart boot can
+> just use a dhcp server.
+
+ I've just been re-aquainted with the Jumpstart stuff after a long
+absence.
+
+ There is a nice need 'add_install_client' script that you feed the
+archtecture, ethernet address & ip to, and it'll setup everything from
+RARP to Bootparams for you. Very simple.
+
+ This script takes a -d option, to boot via DHCP also. On the negative
+side, Sun's terminal handling leaves a lot to be desired - it won't work
+properly on a Wyse 120+ for instance, no matter what emulation mode the
+Wyse is trying to do.
+
+ To do PC netbooting properly, you need an motherbard with a PXE BIOS.
+Then you are flying.
+
+ Heh, how hard would it be to get a PC with an OpenBoot prom ?
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

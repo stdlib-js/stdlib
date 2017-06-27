@@ -1,0 +1,22 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 06:46:41 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Sat, 7 Sep 2002 00:46:41 -0500
+Subject: [Spambayes] Maybe change X-Spam-Disposition to something else...
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCAELLBCAB.tim.one@comcast.net>
+References: <15737.33815.719456.367026@12-248-11-90.client.attbi.com>
+        <LNBBLJKPBEHFEDALKOLCAELLBCAB.tim.one@comcast.net>
+Message-ID: <15737.37569.889973.866955@12-248-11-90.client.attbi.com>
+
+
+    >> Accordingly, I wrote unheader.py, which is mostly a ripoff of
+    >> something someone else posted to python-dev or c.l.py within the last
+    >> week or so to strip out SA-generated headers.
+
+    Tim> Unless I've grown senile tonight, you got it from Anthony to begin
+    Tim> with.  Please check it in to project, and add a short blurb to
+    Tim> README.txt!
+
+Raring to go, once I can write to CVS...
+
+S

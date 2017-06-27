@@ -1,0 +1,84 @@
+From rpm-list-admin@freshrpms.net  Mon Oct  7 12:04:39 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 090EA16F19
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:20 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g974XHK18362 for
+    <jm-rpm@jmason.org>; Mon, 7 Oct 2002 05:33:17 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g974R1f27888; Mon, 7 Oct 2002 06:27:01
+    +0200
+Received: from pimout1-ext.prodigy.net (pimout1-ext.prodigy.net
+    [207.115.63.77]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g974QPf26615 for <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 06:26:26 +0200
+Received: from AMD1800.okie-web.com
+    (dialup-65.57.29.85.Dial1.KansasCity1.Level3.net [65.57.29.85]) by
+    pimout1-ext.prodigy.net (8.12.3 da nor stuldap/8.12.3) with ESMTP id
+    g974QI7g178100 for <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 00:26:19
+    -0400
+Subject: Re: RH 8 no DMA for DVD drive
+From: Alvie <bishop12@prodigy.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <1033954359.28832.4.camel@athlon.ckloiber.com>
+References: <1033953429.13890.4.camel@AMD1800>
+    <1033954359.28832.4.camel@athlon.ckloiber.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1033964717.1263.8.camel@AMD1800>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 06 Oct 2002 23:25:15 -0500
+Date: 06 Oct 2002 23:25:15 -0500
+
+Thank you, that was exactly what I needed.
+DVD works great now.
+1 more problem?
+Video-DVDRip worked on RH 7.3 but can't get contents of DVD, last
+message is 'libdvdread: using libdvdcss 1.2.2 for DVD access'.
+but it fails.
+
+On Sun, 2002-10-06 at 20:32, Chris Kloiber wrote:
+> On Sun, 2002-10-06 at 21:17, Alvie wrote:
+> > hdparm -d1 /dev/hdc says Operation not Permitted.
+> > DVD playback is very jumpy.
+> > Does someone have any ideas on what I can do yo get DMA transfers?
+> > Thanks Alvie
+> 
+> Add to /etc/modules.conf:
+> 
+> options ide-cd dma=1
+> 
+> -- 
+> Chris Kloiber
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

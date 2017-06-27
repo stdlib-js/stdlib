@@ -1,0 +1,80 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 12:39:12 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1437044185
+	for <jm@localhost>; Tue,  6 Aug 2002 06:31:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:31:39 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g75Dekk12988 for <jm-razor@jmason.org>; Mon, 5 Aug 2002 14:40:46 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17bhr7-0000qn-00; Mon,
+    05 Aug 2002 06:25:05 -0700
+Received: from cs188014.pp.htv.fi ([213.243.188.14] helo=nightwatch.storm)
+    by usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+    id 17bhqo-0000x4-00 for <razor-users@lists.sourceforge.net>;
+    Mon, 05 Aug 2002 06:24:46 -0700
+Received: from nightwatch.storm (nightwatch.storm [192.168.0.1]) by
+    nightwatch.storm (8.11.6/linuxconf) with ESMTP id g75DNv418486;
+    Mon, 5 Aug 2002 16:24:00 +0300
+From: Mika Hirvonen <hirvox@welho.com>
+X-X-Sender: hirvox@nightwatch.storm
+To: Ray Gardener <R.A.Gardener@shu.ac.uk>
+Cc: Forrest English <forrest@truffula.net>,
+	<razor-users@lists.sourceforge.net>
+Subject: Re: [Razor-users] report automation with pine?
+In-Reply-To: <004e01c23c5f$96522240$5a14348f@videoproducer>
+Message-Id: <Pine.LNX.4.44.0208051616240.17677-100000@nightwatch.storm>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 5 Aug 2002 16:23:57 +0300 (EEST)
+Date: Mon, 5 Aug 2002 16:23:57 +0300 (EEST)
+
+On Mon, 5 Aug 2002, Ray Gardener wrote:
+
+> setup the config of pine to 
+> enable the enable-unix-pipe-cmd 
+> 
+> then when reading the message
+> 
+> enter 
+> 
+> |  razor-check 
+You should also enable raw mode (ctrl-w) and delimiters (ctrl-r) before 
+directing messages to the pipe. Raw mode includes the headers and 
+delimiters allow several messages to be submitted.
+
+-- 
+Mika Hirvonen <hirvox@welho.com>
+  http://nightwatch.mine.nu/
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

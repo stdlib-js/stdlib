@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Thu Aug  8 14:13:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6404E44143
+	for <jm@localhost>; Thu,  8 Aug 2002 08:33:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:33:29 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CRx203867 for
+    <jm@jmason.org>; Thu, 8 Aug 2002 13:27:59 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id CAA26898 for <jm@jmason.org>; Thu, 8 Aug 2002 02:52:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EF7C12940A8; Wed,  7 Aug 2002 18:50:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.lig.net (unknown [204.248.145.126]) by xent.com
+    (Postfix) with ESMTP id E38472940A7 for <fork@xent.com>; Wed,
+    7 Aug 2002 18:49:41 -0700 (PDT)
+Received: from lig.net (unknown [66.95.227.18]) by mail.lig.net (Postfix)
+    with ESMTP id DC07968067; Wed,  7 Aug 2002 21:08:22 -0400 (EDT)
+Message-Id: <3D51CFBC.5080705@lig.net>
+From: "Stephen D. Williams" <sdw@lig.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0rc2)
+    Gecko/20020512 Netscape/7.0b1
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: PKI smartcard/CA/profile/email/software interoperability, (real) standards, patents
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 07 Aug 2002 21:56:12 -0400
+
+Has anyone had much positive experience with PKI based smartcards, email 
+(S/Mime interoperability), programming to smart cards, etc.?
+
+One area in particular that seems surprising is that a number of 
+projects are using cards like the Datakey 330 which seems to store data 
+in a way that is proprietary to particular card/reader driver versions.
+
+I've been told, on the other hand, that Java PKI smart cards are very 
+interchangable and upward compatible.  The only reasons I've been able 
+to find so far for using the more 'proprietary' cards is that they may 
+be cheaper and further along in FIPS validation.
+
+sdw
+
+-- 
+sdw@lig.net http://sdw.st
+Stephen D. Williams 43392 Wayside Cir,Ashburn,VA 20147-4622
+703-724-0118W 703-995-0407Fax Dec2001
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

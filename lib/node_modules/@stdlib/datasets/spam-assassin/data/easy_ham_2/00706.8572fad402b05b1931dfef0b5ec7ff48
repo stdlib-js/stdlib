@@ -1,0 +1,403 @@
+From exmh-workers-admin@redhat.com  Wed Jul 24 10:41:51 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1E301440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 05:41:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 10:41:46 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6O9at401239 for
+    <jm-exmh@jmason.org>; Wed, 24 Jul 2002 10:36:55 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 2D8D83F2DD; Wed, 24 Jul 2002
+    05:36:03 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 9A4893EC17
+    for <exmh-workers@listman.redhat.com>; Wed, 24 Jul 2002 05:35:09 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6O9ZAC22864 for exmh-workers@listman.redhat.com; Wed, 24 Jul 2002
+    05:35:10 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6O9Z9R22860 for
+    <exmh-workers@redhat.com>; Wed, 24 Jul 2002 05:35:09 -0400
+Received: from tippex.localdomain (h189n1fls22o974.telia.com
+    [213.64.79.189]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g6O9NRs32512 for <exmh-workers@redhat.com>; Wed, 24 Jul 2002 05:23:28
+    -0400
+Received: by tippex.localdomain (Postfix, from userid 500) id D1035470D;
+    Wed, 24 Jul 2002 11:34:57 +0200 (CEST)
+Received: from tippex.localdomain (localhost [127.0.0.1]) by
+    tippex.localdomain (Postfix) with ESMTP id C6534470C; Wed, 24 Jul 2002
+    11:34:57 +0200 (CEST)
+X-Mailer: exmh version 2.5_20020724 01/15/2001 with nmh-1.0.4
+To: Chris Garrigues <cwg-dated-1027805573.3ce2ae@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: PATCH (was: Re: Another bug)
+In-Reply-To: Message from Anders Eriksson <aeriksson@fastmail.fm> of
+    "Tue, 23 Jul 2002 02:20:35 +0200."
+    <20020723002041.2624D470D@tippex.localdomain>
+MIME-Version: 1.0
+Content-Type: multipart/mixed ; boundary="==_Exmh_6514812010"
+From: Anders Eriksson <aeriksson@fastmail.fm>
+Message-Id: <20020724093457.D1035470D@tippex.localdomain>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 24 Jul 2002 11:34:52 +0200
+
+This is a multipart MIME message.
+
+--==_Exmh_6514812010
+Content-Type: text/plain; charset=us-ascii
+
+
+
+cwg-dated-1027805573.3ce2ae@DeepEddy.Com said:
+> I just checked in a code cleanup which doesn't address this issue,
+> but does  take a machete to code right around it.  You ought to 'cvs
+> update' and see if  your issue becomes any clearer with all the
+> brush removed.
+
+> My patch notes that 'msgid' and 'line' are redundant with one
+> another and removes  one or the other from functions which takes
+> both.  The callers are then  changed to pass what the function
+> expects.  In the case of Msg_Change, the  'line' argument is removed
+> and we only have the msgid argument.  Ftoc_ClearCurrent is now the
+> first line of MsgChange. 
+
+The following patch removes Ftoc_RescanLine in favour of a 
+Ftoc_RescanLines. It runs scan(1) on a list of lines and updates ftoc 
+accordingly. The patch also changes all the callers to make use of it.
+
+It also changes Ftoc_ClearCurrent to work of an argument instead of 
+falsily clearing a message that's still Current on disk. All in an 
+effort to get a one-to-one disk-display correspondence.
+
+It does add ~30 -- ~ 75 ms (~<10%) to the execution time depending on 
+folder size due to the invocation of scan. However this version does 
+not try to second guess the mh version of scan so if you have exotic 
+scanlines it tells the truth. As a side effect the '+' sign now 
+corresponds better to what's on disk.
+
+Comments appreciated. I'm going to be offlike for a couple of days, 
+so I send the cvs diff rather than putting it in the cvs.
+
+/Anders
+
+
+
+--==_Exmh_6514812010
+Content-Type: application/x-patch ; name="exmh.patch"
+Content-Description: exmh.patch
+Content-Disposition: attachment; filename="exmh.patch"
+
+Index: lib/ftoc.tcl
+===================================================================
+RCS file: /cvsroot/exmh/exmh/lib/ftoc.tcl,v
+retrieving revision 1.29
+diff -u -b -B -w -p -r1.29 ftoc.tcl
+--- lib/ftoc.tcl	22 Jul 2002 21:46:35 -0000	1.29
++++ lib/ftoc.tcl	24 Jul 2002 09:16:25 -0000
+@@ -558,7 +558,7 @@ proc FtocPickRange { {addcurrent 0} } {
+ 	if {$addcurrent} {
+ 	    Ftoc_RangeHighlight $ftoc(curLine) $ftoc(curLine)
+ 	}
+-	Ftoc_ClearCurrent
++	Ftoc_ClearCurrent $ftoc(curLine)
+ 	Msg_ClearCurrent
+ 	set ftoc(curLine) {}
+     }
+@@ -611,31 +611,55 @@ proc Ftoc_NewFtoc {} {
+ # Ftoc_ClearCurrent and Ftoc_Change are two parts of
+ # dinking the ftoc display when advancing a message.
+ 
+-proc Ftoc_ClearCurrent {} {
+-    # Clear display of current message
++#
++# Make line no longer appear as the currently selected line
++#
++
++proc Ftoc_ClearCurrent { line } {
+     global ftoc exwin
+     set ftoc(pickone) 1
+     set ftoc(lineset) {}
+ 
+-    if {$ftoc(curLine) == {}} {
+-	set ftoc(curLine) [Mh_Cur $ftoc(folder)]
+-    }
+-    if {$ftoc(curLine) != {}} {
+-	$exwin(ftext) tag remove cur $ftoc(curLine).0 $ftoc(curLine).end
+-	Ftoc_RescanLine $ftoc(curLine)
+-    }
+-    return $ftoc(curLine)
+-}
+-proc Ftoc_Change { line {show show} } {
++#We dont need this any more since we work off the line 
++#argument, not $ftoc(curLine)
++#    if {$ftoc(curLine) == {}} {
++#      set ftoc(curLine) [Mh_Cur $ftoc(folder)]
++#    }
++#    if {$ftoc(curLine) != {}} {
++#      $exwin(ftext) tag remove cur $ftoc(curLine).0 $ftoc(curLine).end
++#      Ftoc_RescanLine $ftoc(curLine)
++#    }
++     #should check that 0<$line<last line and error otherwise
++     $exwin(ftext) tag remove cur $line.0 $line.end
++     Ftoc_RescanLines [list $line]
++
++#    return $ftoc(curLine)
++}
++
++#
++# Make newline the currently selected line
++# optionally clear oldline from such attribution
++#
++proc Ftoc_Change { newline {oldline {}}} {
++
+     global ftoc exwin
+-    set ftoc(curLine) $line
++
++    if {![info exists oldline] || ($oldline==$newline)} {
++       set oldline {}
++    }
++    set ftoc(curLine) $newline
+     if {$ftoc(curLine) == {}} {
+ 	set ok 0
+     } else {
+-	if {$show == "show"} {
+ 	    $exwin(ftext) tag remove unseen $ftoc(curLine).0 $ftoc(curLine).end
++	if {$oldline != {}} {
++	    set ftoc(pickone) 1
++	    set ftoc(lineset) {}
++	    $exwin(ftext) tag remove cur $oldline.0 $oldline.end
++	    Ftoc_RescanLines [list $ftoc(curLine) $oldline]
++	} else {
++	    Ftoc_RescanLines [list $ftoc(curLine)]
+ 	}
+-	Ftoc_RescanLine $ftoc(curLine) +
+ 	$exwin(ftext) tag add cur $ftoc(curLine).0 $ftoc(curLine).end
+ 	set top [$exwin(ftext) index @0,4]
+ 	if [catch {expr {$top+1}}] {set top 0}	;# trap 100.-1 format, iconic
+@@ -695,7 +720,10 @@ proc Ftoc_MarkSeen { ids } {
+ 	}
+     }
+ }
+-proc Ftoc_RescanLine { ix {plus none} } {
++#
++# This one is not used any more. Kept here for reference
++#
++proc Ftoc_RescanLine_old { ix {plus none} } {
+     global exmh exwin ftoc
+     if [catch {
+ 	set text [$exwin(ftext) get ${ix}.0 ${ix}.end]
+@@ -737,6 +765,57 @@ proc Ftoc_RescanLine { ix {plus none} } 
+ 	Exmh_Error "FtocRescanLine $ix : $msg"
+     }
+ }
++
++
++#
++# Rescans a set of lines and updates the ftoc as needed
++# lines_in: list of line numbers. Ranges (e.g. 200-210) are not allowed
++#
++proc Ftoc_RescanLines { lines_in } {
++    global exmh exwin ftoc mhProfile
++    
++    Exmh_Debug Ftoc_RescanLines [ time {
++       #Sort the lines and weed out duplicates. 
++       #They creep in when we change folders
++       #set lastCandidate {}
++       #foreach newCandidate [lsort -integer $lines_in] {
++       #    if {$newCandidate != $lastCandidate} {
++       #       lappend lines $newCandidate
++       #       Exmh_Debug "** $lines"
++       #       set lastCandidate $newCandidate
++       #    }
++       #}
++       #Never mind dupechecking. The only potential is checked for in 
++       #Ftoc_Change and the above takes time (~8 ms)
++        set lines [lsort -integer $lines_in]
++
++       foreach line $lines {
++           lappend msgnos [Ftoc_MsgNumber $line]
++       }
++       set input [open "|$mhProfile(scan-proc) \
++               [list +$ftoc(folder)] \
++               [join $msgnos] \
++               -width $ftoc(scanWidth)"]
++       set texts [split [string trim [read $input] \n ] \n ]
++       catch {close $input}
++       #Exmh_Debug "* lines=$lines\nmsgnos=$msgnos\ntexts=$texts"
++
++       set ll [llength $lines]
++       for {set i 0} {$i<$ll} {incr i} {
++           set line [lindex $lines $i]
++           set tags [$exwin(ftext) tag names $line.0]
++           $exwin(ftext) configure -state normal
++           $exwin(ftext) delete $line.0 $line.end
++           $exwin(ftext) insert $line.0 [lindex $texts $i]
++	   $exwin(ftext) configure -state disabled
++	   foreach tag $tags {
++               $exwin(ftext) tag add $tag $line.0 $line.end
++	   }
++       }
++   }
++   ]
++}
++
+ proc Ftoc_NextImplied { {show show} {implied implied} } {
+     global ftoc
+     if {$ftoc(implied) && $ftoc(direction) == "prev"} {
+@@ -793,7 +872,7 @@ proc Ftoc_NextFolder { {implied no} } {
+ 	    # If on last message, clear display because the
+ 	    # message is moved or deleted
+ 	    if {$ftoc(curLine) != {}} {
+-		Ftoc_ClearCurrent
++		Ftoc_ClearCurrent $ftoc(curLine)
+ 		Msg_ClearCurrent
+ 	    }
+ 	    Exmh_Status ""
+@@ -809,7 +888,7 @@ proc Ftoc_NextFolder { {implied no} } {
+ 	    return
+ 	} else {
+ 	    set ftoc(softChange) 1
+-	    Ftoc_ClearCurrent
++	    Ftoc_ClearCurrent $ftoc(curLine)
+ 	    Msg_ClearCurrent
+ 	    Exmh_Status ""
+ 	    Exmh_Status "End of folder; <Next> => $f" warn
+@@ -1113,7 +1192,7 @@ proc FtocCommit {tagname commitProc {cop
+ 	    set ftoc(displayDirty) 1
+ 	    Ftoc_ClearMsgCache
+ 	    if {$msgid == $curid} {
+-		Ftoc_ClearCurrent
++		Ftoc_ClearCurrent $ftoc(curLine)
+ 		Msg_ClearCurrent
+ 	    }
+ 	    if {$L == $ftoc(curLine)} {
+Index: lib/msg.tcl
+===================================================================
+RCS file: /cvsroot/exmh/exmh/lib/msg.tcl,v
+retrieving revision 1.21
+diff -u -b -B -w -p -r1.21 msg.tcl
+--- lib/msg.tcl	22 Jul 2002 21:23:48 -0000	1.21
++++ lib/msg.tcl	24 Jul 2002 09:16:26 -0000
+@@ -73,10 +73,20 @@ proc Msg_ShowUnseen { {show show} } {
+     return 0
+ }
+ proc Msg_ClearCurrent { } {
+-    global msg exmh
++    global msg exmh ftoc
++    # Are there cases where this is not true?
++    if {$ftoc(folder) == $exmh(folder)} { 
++        set prevline [Ftoc_FindMsg [Mh_Cur $ftoc(folder)]]
++        if {$prevline == {}} {
++            unset prevline
++        }
++    }
+     set msg(id) {}		;# Clear current message
+     set msg(dpy) {}		;# and currently displayed message
+     Mh_ClearCur $exmh(folder)
++    if {[info exists prevline]} {
++        Ftoc_ClearCurrent $prevline
++    }
+     MsgClear
+     Buttons_Current 0
+     Uri_ClearCurrent
+@@ -117,13 +127,13 @@ proc Msg_Change {msgid {show show} } {
+     Exmh_Debug Msg_Change [time [list MsgChange $msgid $show]]
+ }
+ proc MsgChange {msgid {show show}} {
+-    global exmh exwin msg mhProfile
++    global exmh exwin msg mhProfile ftoc
+ 
+-    Ftoc_ClearCurrent
++    set prevline [Ftoc_FindMsg [Mh_Cur $ftoc(folder)]]
+     Mh_SetCur $exmh(folder) $msgid
+     Ftoc_ShowSequences $exmh(folder)
+     set line [Ftoc_FindMsg $msgid]
+-    if {! [Ftoc_Change $line $show]} {
++    if {! [Ftoc_Change $line $prevline]} {
+ 	Exmh_Status "Cannot find msg $msgid - Rescan?"
+     } else {
+ 	if {$msg(id) == {}} {
+@@ -652,14 +662,17 @@ proc Msg_UUdecode {} {
+ }
+ 
+ proc Msg_MarkUnseen {} {
+-    global exmh
++    global exmh ftoc
+     Msg_CheckPoint
+     Ftoc_Iterate line {
+ 	set msgid [Ftoc_MsgNumber $line]
+ 	Mh_MarkUnseen $exmh(folder) $msgid
+     }
+-    Msg_ClearCurrent
+-    Ftoc_ClearCurrent
++    Ftoc_RescanLines $ftoc(lineset)
++    #Why was this needed?
++    #Msg_ClearCurrent
++    #Not needed anymore
++    #Ftoc_ClearCurrent
+     Flist_ForgetUnseen $exmh(folder)
+     Ftoc_ShowSequences $exmh(folder)
+ }
+Index: lib/scan.tcl
+===================================================================
+RCS file: /cvsroot/exmh/exmh/lib/scan.tcl,v
+retrieving revision 1.21
+diff -u -b -B -w -p -r1.21 scan.tcl
+--- lib/scan.tcl	22 Jul 2002 22:39:29 -0000	1.21
++++ lib/scan.tcl	24 Jul 2002 09:16:26 -0000
+@@ -265,7 +265,7 @@ proc Scan_CacheUpdate {} {
+ # this thing.
+ #
+     if !$ftoc(displayValid) {
+-	set curLine [Ftoc_ClearCurrent]			;# Clear +
++	Ftoc_ClearCurrent $ftoc(curLine)        ;# Clear +
+         if [file writable $cacheFile] {
+             set scancmd "exec $mhProfile(scan-proc) [list +$folder] \
+ 		    -width $ftoc(scanWidth) > [list $cacheFile]"
+@@ -273,12 +273,12 @@ proc Scan_CacheUpdate {} {
+                 Exmh_Status "failed to rescan folder $folder: $err" warn
+             }
+         }
+-	Ftoc_Change $curLine	;# Restore it
++	Ftoc_Change $ftoc(curline)              ;# Restore it
+     } elseif [catch {
+ 	set cacheIO [open $cacheFile w]
+-	set curLine [Ftoc_ClearCurrent]			;# Clear +
++	Ftoc_ClearCurrent $ftoc(curLine)        ;# Clear +
+ 	set display [$exwin(ftext) get 1.0 "end -1 char"]
+-	Ftoc_Change $curLine	;# Restore it
++	Ftoc_Change $ftoc(curline)              ;# Restore it
+ 	puts $cacheIO $display nonewline
+ 	close $cacheIO
+ 	set ftoc(displayDirty) 0
+
+--==_Exmh_6514812010--
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

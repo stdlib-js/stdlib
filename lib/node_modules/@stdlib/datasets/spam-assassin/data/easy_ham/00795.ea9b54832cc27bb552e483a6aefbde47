@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Mon Sep 30 13:52:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B856F16F7C
+	for <jm@localhost>; Mon, 30 Sep 2002 13:48:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:48:36 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8RJJFg24695 for <jm@jmason.org>;
+    Fri, 27 Sep 2002 20:19:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BEE662940AE; Fri, 27 Sep 2002 12:15:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail-out2.apple.com (mail-out2.apple.com [17.254.0.51]) by
+    xent.com (Postfix) with ESMTP id C6F452940A2 for <FoRK@xent.com>;
+    Fri, 27 Sep 2002 12:14:28 -0700 (PDT)
+Received: from mailgate2.apple.com (A17-129-100-225.apple.com
+    [17.129.100.225]) by mail-out2.apple.com (8.11.3/8.11.3) with ESMTP id
+    g8RJIM914010 for <FoRK@xent.com>; Fri, 27 Sep 2002 12:18:22 -0700 (PDT)
+Received: from scv2.apple.com (scv2.apple.com) by mailgate2.apple.com
+    (Content Technologies SMTPRS 4.2.1) with ESMTP id
+    <T5d97b3cff9118164e13cc@mailgate2.apple.com>; Fri, 27 Sep 2002 12:18:22
+    -0700
+Received: from whump.com (to0202a-dhcp24.apple.com [17.212.22.152]) by
+    scv2.apple.com (8.11.3/8.11.3) with ESMTP id g8RJILV27632; Fri,
+    27 Sep 2002 12:18:21 -0700 (PDT)
+Subject: Re: OSCOM Berkeley report: Xopus, Bitflux, Plone, Xoops
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v546)
+Cc: "FoRK" <FoRK@xent.com>
+To: "Jim Whitehead" <ejw@cse.ucsc.edu>
+From: Bill Humphries <bill@whump.com>
+In-Reply-To: <AMEPKEBLDJJCCDEJHAMIKEHBFIAA.ejw@cse.ucsc.edu>
+Message-Id: <F53E17FC-D24D-11D6-BA6B-003065F62CD6@whump.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.546)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 27 Sep 2002 12:18:52 -0700
+
+On Friday, September 27, 2002, at 11:17 AM, Jim Whitehead wrote:
+
+> I attended the OSCOM Open Source Content Management workshop at 
+> Berkeley
+> yesterday.
+
+I really wanted to go to this, especially to look at XOPUS. 
+Unfortunately, we're launching a new intranet at work next week and I 
+couldn't get away. XOPUS + an XML native DB such as Xindice looks like 
+something that could hit a home run.
+
+-- whump
+"I have a theory, it could be bunnies."
+
+

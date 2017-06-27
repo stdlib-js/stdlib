@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Fri Aug  9 18:16:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 02E1B4406D
+	for <jm@localhost>; Fri,  9 Aug 2002 13:16:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 18:16:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79HGab17077 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 18:16:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 36F3A294104; Fri,  9 Aug 2002 10:09:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 08CE02940F1 for <fork@xent.com>;
+    Fri,  9 Aug 2002 10:08:35 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-038.ptrb.interhop.net
+    [165.154.190.102]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g79Gho323952 for <fork@xent.com>; Fri, 9 Aug 2002 12:43:50 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 3B1671C3B6;
+    Fri,  9 Aug 2002 13:09:03 -0400 (EDT)
+To: fork <fork@spamassassin.taint.org>
+Subject: Shatter Attacks - How to break Windows
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2r8h8t0wv.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Aug 2002 13:08:48 -0400
+
+
+I'm sure this is common knowledge already, but just in case ...
+
+http://security.tombom.co.uk/shatter.html
+
+   This paper presents a new generation of attacks against Microsoft
+   Windows, and possibly other message-based windowing systems. The
+   flaws presented in this paper are, at the time of writing,
+   unfixable. The only reliable solution to these attacks requires
+   functionality that is not present in Windows, as well as efforts on
+   the part of every single Windows software vendor. Microsoft has
+   known about these flaws for some time; when I alerted them to this
+   attack, their response was that they do not class it as a flaw -
+   the email can be found here. This research was sparked by comments
+   made by Microsoft VP Jim Allchin who stated, under oath, that there
+   were flaws in Windows so great that they would threaten national
+   security if the Windows source code were to be disclosed. He
+   mentioned Message Queueing, and immediately regretted it. However,
+   given the quantity of research currently taking place around the
+   world after Mr Allchin's comments, it is about time the white hat
+   community saw what is actually possible.
+
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

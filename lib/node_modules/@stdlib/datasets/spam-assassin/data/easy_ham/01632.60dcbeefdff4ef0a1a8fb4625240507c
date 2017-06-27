@@ -1,0 +1,85 @@
+From secprog-return-509-jm=jmason.org@securityfocus.com  Fri Sep 20 11:29:20 2002
+Return-Path: <secprog-return-509-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7022C16F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:29:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:29:18 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [205.206.231.27]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8K1RlC15202 for <jm@jmason.org>; Fri, 20 Sep 2002 02:27:47 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [205.206.231.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    2EF35A30D1; Thu, 19 Sep 2002 19:19:19 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 1068 invoked from network); 20 Sep 2002 00:36:36 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Alex Russell <alex@netWindows.org>
+Organization: netWindows.org
+To: "Michael McKay" <mmckay@iscubed.com>,
+	"'Bryan Feir'" <bryan@sgl.crestech.ca>, <secprog@securityfocus.com>,
+	<strange@nsk.yi.org>
+Subject: Re: Secure Sofware Key
+Date: Thu, 19 Sep 2002 19:56:55 -0500
+User-Agent: KMail/1.4.2
+References: <004401c26025$c4aa3260$01000001@iS3Inc>
+In-Reply-To: <004401c26025$c4aa3260$01000001@iS3Inc>
+MIME-Version: 1.0
+Message-Id: <200209191956.55148.alex@netWindows.org>
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - nimbus.sharpwebinnovations.com
+X-Antiabuse: Original Domain - securityfocus.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - netwindows.org
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g8K1RlC15202
+
+On Thursday 19 September 2002 16:44, Michael McKay wrote:
+> On Tue, Sep 03, 2002 at 09:03:40PM -0400, Yannick Gingras wrote:
+> > This make me wonder about the relative protection of smart cards.
+> They have an internal procession unit around 4MHz.  Can we consider them as
+> trusted hardware ?
+
+SmartCards do not have fixed clock rates (more often than not) as the ISO spec 
+dictates that they are externally powered and clocked, but SmartCards used 
+for security purposes (usually JavaCards) have built-in crypto co-processors 
+that make clock rate irrelevant. 4mhz SmartCards can often preform triple-DES 
+faster than general purpose processors clocked at ten times the speed.
+
+That said, clock rate has nothing with how trustworthy a card is. As Michael 
+pointed out, there's something of an arms-race between manufacturers and 
+attackers which has nothing to do with clock rate, and time and time again 
+what we've seen is that it's not a question of "is it secure", it's a 
+question of "who is it secure from and for how long?" Security is rarely a 
+question of absolutes (despite the often boolean nature of a break), rather 
+it's a question of assessing, quantifying, and managing risk. SmartCards are 
+designed to address threats in which the cost of protection cannot exceed the 
+$1-20 range (depending on the application).
+
+As whether or not they are "trusted hardware", the question again revolves 
+around attacker and timeframe. One might expect a bored undergrad EE student 
+to have more trouble revealing the contents of a pilfered smartcard than, 
+say, a governtment intelligence service. If your goal is to keep undergrad 
+EEs from perpetrating mass fraud in the caffeteria, then a smartcard is 
+likely "trustworthy" enough for your application. If your aim is to protect 
+ICBM launch codes, then it's probably the wrong tool. In either application, 
+a risk/cost ratio must justify the use of the protection measure in question.
+
+-- 
+Alex Russell
+alex@SecurePipe.com
+alex@netWindows.org
+
+

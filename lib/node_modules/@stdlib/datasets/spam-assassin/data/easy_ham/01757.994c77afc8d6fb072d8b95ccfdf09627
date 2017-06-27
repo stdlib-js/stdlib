@@ -1,0 +1,27 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Thu Sep 12 01:44:56 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Wed, 11 Sep 2002 20:44:56 -0400
+Subject: [Spambayes] XTreme Training
+In-Reply-To: <20020911122308.GB5866@cthulhu.gerg.ca>
+Message-ID: <LNBBLJKPBEHFEDALKOLCAEJEBDAB.tim.one@comcast.net>
+
+[Tim]
+>> Why would spam be likely to end up with two instances of Return-Path
+>> in the headers?
+
+[Greg Ward]
+> Possibly another qmail-ism from Bruce Guenter's spam collection.
+
+Doesn't seem *likely*, as it appeared in about 900 of about 14,000 spams.
+It could be specific to one of his bait addresses, though -- don't know.  A
+nice thing about a statistical inferencer is that you really don't have to
+know why a thing works, just whether it works <wink>.
+
+> Or maybe Anthony's right about spammers being stupid and blindly copying
+> headers. (Well, of course he's right about spammers being stupid; it's
+> just this particular aspect of stupidity that's open to question.)
+
+I'm going to blow it off -- it's just another instance of being pointlessly
+baffled by a mixed corpus half of which I don't know enough about.
+

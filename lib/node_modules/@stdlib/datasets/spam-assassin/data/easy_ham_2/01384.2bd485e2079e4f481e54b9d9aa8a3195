@@ -1,0 +1,45 @@
+From anders@hmi.de  Wed Aug 21 07:54:51 2002
+Return-Path: <anders@hmi.de>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1769843C32
+	for <jm@localhost>; Wed, 21 Aug 2002 02:54:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 07:54:50 +0100 (IST)
+Received: from dsmail.hmi.de (dsmail.hmi.de [134.30.15.24]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7L6spZ13479 for
+    <jm@jmason.org>; Wed, 21 Aug 2002 07:54:52 +0100
+Received: from hmi.de (display.hmi.de [134.30.15.29]) by dsmail.hmi.de
+    (8.11.4/8.11.4) with ESMTP id g7L6svr06646 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 08:54:57 +0200 (MEST)
+Message-Id: <3D633940.2010209@hmi.de>
+Date: Wed, 21 Aug 2002 08:54:56 +0200
+From: Thomas Anders <anders@hmi.de>
+Organization: Hahn-Meitner-Institut Berlin, Germany
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1b) Gecko/20020722
+X-Accept-Language: de, en
+MIME-Version: 1.0
+To: yyyy@spamassassin.taint.org
+Subject: Re: [Bug 704] spamd doesn't remove pid file on shutdown when running as non-root user
+References: <20020820232559.E7EC2A3A9C@belphegore.hughes-family.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+
+bugzilla-daemon@hughes-family.org wrote:
+> http://www.hughes-family.org/bugzilla/show_bug.cgi?id=704
+> ok, this is now fixed. cheers!
+
+How did you fix it? By creating the pidfile as the "-u" user?
+If so, you should add this to the documentation since it prevents
+the use of the standard /var/run directory (which is only writable
+by root).
+
+
++Thomas
+
+-- 
+Thomas Anders <anders@hmi.de>
+Hahn-Meitner-Institut Berlin, Germany
+
+

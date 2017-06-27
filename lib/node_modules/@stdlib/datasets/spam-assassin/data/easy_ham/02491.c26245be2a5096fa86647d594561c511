@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Wed Dec  4 11:52:44 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 738E416F16
+	for <jm@localhost>; Wed,  4 Dec 2002 11:52:44 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:52:44 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB4BHa812030 for
+    <jm-ilug@jmason.org>; Wed, 4 Dec 2002 11:17:36 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 5FAC834229; Wed,  4 Dec 2002 11:19:09 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from storm.liquidweb.com (unknown [64.91.233.200]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 8679634221 for <ilug@linux.ie>;
+    Wed,  4 Dec 2002 11:18:11 +0000 (GMT)
+Received: from [213.190.156.25] (helo=dogBear) by storm.liquidweb.com with
+    smtp (Exim 3.36 #1) id 18JXXd-0004f9-00 for ilug@linux.ie; Wed,
+    04 Dec 2002 06:18:09 -0500
+Message-Id: <002101c29b87$28f79680$f600a8c0@dogBear>
+From: "Carlos Luna" <carlos.luna@steorn.com>
+To: <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4522.1200
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - storm.liquidweb.com
+X-Antiabuse: Original Domain - linux.ie
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - steorn.com
+Subject: [ILUG] dual keyboards
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Wed, 4 Dec 2002 11:20:29 -0000
+Date: Wed, 4 Dec 2002 11:20:29 -0000
+
+Hi all.
+Does anyone know how to set up dual keyboards(one is actually a stand-alone
+keypad)?
+Both keyboards have PS/2 connections and I want the keypad to be plugged in
+as the primary input device.  Then if the other keyboard is plugged in, that
+should take over.
+Possible?  Any possible hacks?
+Thanks!
+Carlos
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

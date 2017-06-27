@@ -1,0 +1,79 @@
+From razor-users-admin@lists.sourceforge.net  Thu Oct 10 12:29:00 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3EDB716F16
+	for <jm@localhost>; Thu, 10 Oct 2002 12:28:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 10 Oct 2002 12:28:31 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g9A3pbK07218 for <jm-razor@jmason.org>; Thu, 10 Oct 2002 04:51:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17zU5M-0005G3-00; Wed,
+    09 Oct 2002 20:34:04 -0700
+Received: from smtp-gw-cl-a.dmv.com ([64.45.128.110]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17zU4R-0006SI-00 for
+    <Razor-users@lists.sourceforge.net>; Wed, 09 Oct 2002 20:33:07 -0700
+Received: from homediet (dogpound.dyndns.org [64.45.134.154]) by
+    smtp-gw-cl-a.dmv.com (8.12.3/8.12.3) with SMTP id g9A3X489099015 for
+    <Razor-users@lists.sourceforge.net>; Wed, 9 Oct 2002 23:33:04 -0400 (EDT)
+    (envelope-from sven@dmv.com)
+Message-Id: <00a301c2700e$4e258510$0201a8c0@homediet>
+From: "Sven" <sven@dmv.com>
+To: <Razor-users@example.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2800.1106
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+Subject: [Razor-users] razor vs cloudmark - merging?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 9 Oct 2002 23:37:05 -0400
+Date: Wed, 9 Oct 2002 23:37:05 -0400
+
+I am somewhat puzzled by a phone call I (or rather the CIO at the ISP for
+whom I work) received from an individual claiming to represent Cloudmark.
+The gist of the call was that since we were using razor and checking our
+mail against the razor servers and that since those servers contain
+information proprietary to Cloudmark, we would [in the near future?] be
+required to begin paying Cloudmark/spamnet $1.00/user per year. I was
+wondering if anyone else has received such a call?
+
+I am curious as to whether a spammer has begun to try contacting razor users
+with the above tactic in an effort to get them to stop using razor or
+whether the open source/community aspect of the razor project is going by
+the wayside in lieu of a strictly commercial approach (ala brightmail and
+the likes).
+
+Sven
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

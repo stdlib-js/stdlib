@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 14 10:50:16 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7471E43C32
+	for <jm@localhost>; Wed, 14 Aug 2002 05:46:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:46:19 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DJqR416060 for
+    <jm-rpm@jmason.org>; Tue, 13 Aug 2002 20:52:28 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7DJl3J06397; Tue, 13 Aug 2002 21:47:04
+    +0200
+Received: from tartarus.telenet-ops.be (tartarus.telenet-ops.be
+    [195.130.132.34]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7DJjxJ03366 for <rpm-list@freshrpms.net>; Tue, 13 Aug 2002 21:45:59 +0200
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    tartarus.telenet-ops.be (Postfix) with SMTP id 7ADBCDCA80 for
+    <rpm-list@freshrpms.net>; Tue, 13 Aug 2002 21:45:49 +0200 (CEST)
+Received: from zoe (D5760A9D.kabel.telenet.be [213.118.10.157]) by
+    tartarus.telenet-ops.be (Postfix) with ESMTP id 4F0ECDCA7E for
+    <rpm-list@freshrpms.net>; Tue, 13 Aug 2002 21:45:49 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+From: Nick Verhaegen <nick@permflux.org>
+To: rpm-zzzlist@freshrpms.net
+Subject: xine problems
+User-Agent: KMail/1.4.1
+MIME-Version: 1.0
+Message-Id: <200208132145.51754.nick@permflux.org>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7DJjxJ03366
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 13 Aug 2002 21:45:51 +0200
+Date: Tue, 13 Aug 2002 21:45:51 +0200
+
+Hi,
+
+	I'm no longer able to play encrypted dvd's using the xine rpm from freshrpms. 
+I think it was about a week ago when I last rented some dvd's, worked just 
+fine, but apparently since the latest xine update on freshrpms, it won't 
+anymore. 
+The output is :
+
+input_dvd: Sorry, this plugin doesn't play encrypted DVDs. The legal status
+           of CSS decryption is unclear and we can't provide such code.
+           Please check http://dvd.sf.net for more information.
+
+I'm pretty sure it worked with the previous freshrpms release... Any way of 
+rolling back updates ?
+
+Nick Verhaegen
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

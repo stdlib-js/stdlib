@@ -1,0 +1,783 @@
+From zzz@spamassassin.taint.org  Wed Sep  4 18:34:43 2002
+Return-Path: <zzz@spamassassin.taint.org>
+Delivered-To: zzz@spamassassin.taint.org
+Received: by spamassassin.taint.org (Postfix, from userid 500)
+	id EB1B216F49; Wed,  4 Sep 2002 18:34:13 +0100 (IST)
+Received: from qrq.cc.ntu.edu.tw (giga.tw.freebsd.org [203.133.92.249])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6Q82X401334
+	for <postmaster_neto.net@spamtraps.taint.org>; Fri, 26 Jul 2002 09:02:33 +0100
+Received: from ccsun37.cc.ntu.edu.tw (ccsun37.cc.ntu.edu.tw [140.112.8.37])
+	by qrq.cc.ntu.edu.tw (8.12.5/8.12.5) with ESMTP id g6Q81inr043321
+	for <calculus@neto.net>; Fri, 26 Jul 2002 16:01:45 +0800 (CST)
+	(envelope-from bounce-developers_journal-958074@p2p.wrox.com)
+Received: from localhost (localhost [127.0.0.1])
+	by localhost (Postfix) with ESMTP id 846CFDE081
+	for <calculus@neto.net>; Fri, 26 Jul 2002 15:56:53 +0800 (CST)
+Received: from mail.p2p.wrox.com (mail.p2p.wrox.com [212.250.238.84])
+	by ccsun37.cc.ntu.edu.tw (Postfix) with SMTP id 5EA21DE083
+	for <calculus@neto.net>; Fri, 26 Jul 2002 15:56:40 +0800 (CST)
+Date: Wed, 24 Jul 2002 14:42:38 +0100
+Subject: Wrox Press Developer's Journal
+To: "Developers Journal" <developers_journal@p2p.wrox.com>
+From: <journal@wrox.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----Multipart-Boundary-xx5UNseljF43o---"
+List-Unsubscribe: <mailto:leave-developers_journal-958074K@p2p.wrox.com>
+Reply-To: dj-bounce@wrox.com
+Message-Id: <LYRIS-958074-628512-2002.07.26-02.00.26--calculus#neto.net@p2p.wrox.com>
+Precedence: bulk
+
+This is a multi-part message in MIME format.
+
+------Multipart-Boundary-xx5UNseljF43o---
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+
+***WROX PRESS DEVELOPER'S JOURNAL***
+Programmer to Programmer(TM)
+http://www.wrox.com/?tid026
+
+7/26/02
+==========
+IN THIS ISSUE
+==========
+
+TITLE OF THE MONTH
+GEMS FROM THE CATALOGUE
+RECENTLY RELEASED
+FUTURE TITLES
+NEWS & FEATURES
+WROX ANNOUNCEMENTS
+OTHER ANNOUNCEMENTS
+INFORMATION FOR SUBSCRIBERS
+
+==========
+TITLE OF THE MONTH
+==========
+
+ASP.NET Namespace Reference with C#
+http://www.wrox.com/ACON11.asp?ISBN=1861007442&tid026
+
+Introduction
+System.Web
+System.Web.UI
+System.Web.UI.HtmlControls
+System.Web.UI.WebControls
+System.Web.UI.MobileControls
+System.Web.Caching
+System.Web.Configuration
+System.Web.Security
+System.Web.Services
+System.Web.Services.Description
+System.Web.Services.Protocols
+Data in ASP.NET
+XML in ASP.NET 
+
+Also available:
+ASP.NET 1.0 Namespace Reference with VB.NET
+http://www.wrox.com/ACON11.asp?ISBN=1861007450&tid026
+
+==========
+GEMS FROM THE CATALOGUE
+==========
+
+Professional Linux Programming
+http://www.wrox.com/ACON11.asp?ISBN=1861003013&tid026
+
+Introduction
+Chapter 1: Application Design
+Chapter 2: Concurrent Versions System (CVS)
+Chapter 3: Databases
+Chapter 4: PostgreSQL interfacing
+Chapter 5: MySQL
+Chapter 6: Tackling Bugs
+Chapter 7: LDAP Directory Services
+Chapter 8: GUI programming with GNOME/GTK+
+Chapter 9: GUI Building with Glade and GTK+/GNOME
+Chapter 10: Flex and Bison
+Chapter 11: Testing Tools
+Chapter 12: Secure Programming
+Chapter 13: GUI programming with KDE/Qt
+Chapter 14: Writing the dvdstore GUI using KDE/Qt
+Chapter 15: Python
+Chapter 16: Creating Web interfaces with PHP
+Chapter 17: Embedding and extending Python with C/C++
+Chapter 18: Remote Procedure Calls
+Chapter 19: Multi-media and Linux
+Chapter 20: CORBA.
+Chapter 21: Implementing CORBA with ORBit
+Chapter 22: Diskless systems
+Chapter 23: XML and libxml
+Chapter 24: Beowulf Clusters
+Chapter 25: Documentation
+Chapter 26: Device Drivers
+Chapter 27: Distributing the application
+Chapter 28: Internationalization
+
+==========
+RECENTLY RELEASED
+==========
+
+ASP.NET Namespace Reference with C#
+http://www.wrox.com/ACON11.asp?ISBN=1861007442&tid026
+
+ASP.NET Namespace Reference with VB.NET
+http://www.wrox.com/ACON11.asp?ISBN=1861007450&tid026
+
+Beginning ASP.NET Databases using C#
+http://www.wrox.com/ACON11.asp?ISBN=1861007418&tid026
+
+Beginning C# Databases
+http://www.wrox.com/ACON11.asp?ISBN=1861006098&tid026
+
+***Visit the P2P Discussion list for Beginning C# Databases
+http://p2p.wrox.com/list.asp?list=beginning_c_sharp_databases&tid026
+
+Developing C# Windows Software: A Windows Forms Tutorial
+http://www.wrox.com/ACON11.asp?ISBN=186100737x&tid026
+
+Professional ASP.NET XML using C#
+http://www.wrox.com/ACON11.asp?ISBN=1861007248&tid026
+
+Professional Open Source Web Services
+http://www.wrox.com/ACON11.asp?ISBN=1861007469&tid026
+
+Visual Basic .NET Solutions Toolkit: Practical Classes for .NET Developers
+http://www.wrox.com/ACON11.asp?ISBN=1861007396&tid026
+
+==========
+FUTURE TITLES
+==========
+
+Beginning VB.NET 2nd Edition
+http://www.wrox.com/ACON11.asp?ISBN=1861007612&tid026
+	
+Beginning .NET Web Services with VB.NET
+http://www.wrox.com/ACON11.asp?ISBN=1861007256&tid026
+
+Professional VB.NET Design Patterns
+http://www.wrox.com/ACON11.asp?ISBN=1861006985&tid026
+
+Fast Track ADO.NET
+http://www.wrox.com/ACON11.asp?ISBN=1861007604&tid026
+
+ASP.NET Security
+http://www.wrox.com/ACON11.asp?ISBN=1861006209&tid026
+
+***Visit the P2P Discussion list for ASP.NET Security
+http://p2p.wrox.com/list.asp?list=aspx_security&tid026
+
+Fast Track Windows Forms
+http://www.wrox.com/ACON11.asp?ISBN=1861007663&tid026
+
+Professional ASP.NET Web Services with VB.NET
+http://www.wrox.com/ACON11.asp?ISBN=1861007752&tid026
+
+VB.NET Code Level Security Handbook
+http://www.wrox.com/ACON11.asp?ISBN=1861007477&tid026
+
+VB.NET Remoting Handbook
+http://www.wrox.com/ACON11.asp?ISBN=186100740x&tid026
+
+VB.NET Deployment Handbook
+http://www.wrox.com/ACON11.asp?ISBN=186100771x&tid026
+
+==========
+NEWS & FEATURES 
+==========
+
+ASPToday announces their Inaugural Guru week
+
+***Dan Wahlin expounds on XML Support in ASP.NET
+
+ASPToday are proud to announce their first Guru Week. From 29th July to
+2nd August Microsoft MVP, ASPToday author and www.xmlforasp.net/ founder
+Dan Wahlin presents a series of specially commissioned articles, telling
+you all you need to know about XML support in ASP.NET. Drawing on his
+experience of consulting and XML training, Dan's articles will allow
+anyone interested in XML to quickly get up to speed in this important
+subject.
+
+Read more about ASPToday's Guru Weeks:
+http://www.wrox.com/ACON7.asp?art_type=1&id=809&tid026
+
+
+***Updating Data Safely with A DataSet, by Alex Homer
+
+OK, so we can’t store all three values for a row (the current, original
+and the underlying values) in the tables of our DataSet. Is this actually
+important? What do we actually need to perform the process, and what do
+users actually expect to see? Can we make do with just two values instead
+of three, (and don’t you hate books that keep asking questions)?
+
+Read the rest of Alex Homer's article here:
+http://www.wrox.com/ACON7.asp?art_type=1&id=810&tid026
+
+==========
+WROX ANNOUNCEMENTS
+==========
+
+Author Interviews
+
+***With François Liger, Craig McQueen and Paul Wilton, authors of Visual
+Basic .NET Text Manipulation Handbook.
+
+[AP] What do you think this book brings to the Visual Basic .NET
+developer, and so who do you think needs this book?
+
+[CM] The book provides a quick easy reference for string programming
+tasks. String manipulation is a large part of programming and it is
+difficult to remember it all. Having an accessible reference assists in
+finding existing code to do the job rather than rewriting something that
+is already in the platform. It's valuable for all .NET developers.
+
+[PW] I think all VB.NET developers need this book. String handling and
+regular expressions are not arcane topics for high-flying gurus - they are
+the stuff of everyday programming! The regular expression chapters give a
+great insight into what at first can seem a tricky topic. In addition the
+regular expression reference at the back of the book is worth its weight
+in gold - certainly more readable than all the documentation I had to work
+with when writing the book.
+
+[AP] In two sentences, explain what strings are in .NET. 
+
+Read the interview in full:
+http://www.wrox.com/ACON7.asp?art_type=2&id=808&tid026
+
+Or read about Visual Basic .NET Text Manipulation Handbook:
+http://www.wrox.com/ACON11.asp?ISBN=1861007302&tid026
+
+
+***With Tobin Titus, author of Visual Basic .NET Threading Handbook
+
+In June, Wrox brought out a slim 260-page volume on threading in VB.NET.
+There has been some confusion as to why we would want to bring a book out
+on what seems a straightforward topic. In this article we interview Tobin
+Titus (one of the authors on this title) and ask him various questions on
+the book, as well getting his opinions on various programming-related
+topics.
+
+What is free threading? 
+
+Free threading is the ability to control execution to the utmost within an
+application. While VB developers have been able to control some aspects of
+threading in the past, they haven't been completely free to control those
+threads in the manner that they desire. Free threading allows the
+developer to make decisions on when a thread should start, when it should
+end, and what it should do while executing.
+
+Read the interview in full here:
+http://www.wrox.com/ACON7.asp?art_type=2&id=805&tid026
+
+Or read about Visual Basic .NET Threading Handbook:
+http://www.wrox.com/ACON11.asp?ISBN=1861007132&tid026
+
+
+***C#Today Free Code Download
+
+Due to customer feedback, C#Today have decided to try out something new
+this week - we are making this week's code  download \ support material
+available to all non-subscribers (providing they are a member of the Wrox
+Developer Community, which is free to join).
+
+This week's case study: Generating Design Patterns Using CodeDOM 
+http://www.csharptoday.com/content/articles/20020722.asp?&tid026
+
+The Code Document Model (CodeDOM), which provides the ability to generate
+source code in a number of the managed languages, is a very powerful .NET
+facility and has attracted much interest. Within Visual Studio .NET, a
+complementary though unrelated feature is provided by the CodeModel
+object, which allows programmatic access to hand-written code. Together
+these two tools provide a platform from which it should be possible to
+develop a VS.NET add-in to streamline the production of common designs in
+code. This case study follows the development of such a tool, which
+attempts to automate the generation of a widespread design pattern in an
+existing C# or VB.NET project.
+
+
+***Get on the Fast Track to Success
+
+If you are an experienced programmer who needs to get up to speed on core
+.NET Technologies as quickly as possible, the Fast Track series is for
+you.
+
+The Fast Track books complement our Beginning and Professional series by
+providing concise guides to core topics. They deliver the essential facts
+and understanding that are required to start taking advantage of .NET. By
+targeting specific groups of experienced developers, the books are able to
+concentrate on providing valuable information rather than covering basics.
+
+Read the full article here:
+http://www.wrox.com/ACON7.asp?art_type=2&id=804&tid026
+
+==========
+INFORMATION FOR SUBSCRIBERS
+==========
+
+You can unsubscribe from this list by visiting
+http://www.wrox.com/ACON3.asp?tid026
+
+Enter your e-mail address into the field at the bottom of the page and
+press the ‘unsubscribe’ button. The page will refresh and you will see a
+short message above the field to tell you if you have successfully
+unsubscribed.
+
+Similarly, to change the address that the Developer’s Journal is mailed
+to, enter your previous address and click ‘unsubscribe’, then enter your
+new address and click ‘subscribe’.
+
+Replying to this mail, however, will NOT automatically take your address
+off our lists.
+
+We'd like to hear from you. Please send all comments regarding the
+Developer's Journal to Emma at DJ@wrox.com.
+
+Comments about Wrox books should be sent to feedback@wrox.com. 
+
+Technical support relating to Wrox books is available at support@wrox.com.
+
+Wrox - Programmer to Programmer(TM): http://www.wrox.com/?tid026
+
+
+------Multipart-Boundary-xx5UNseljF43o---
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Wrox Press Developers Journal Programmer to Programmer TM</title>
+</head>
+
+<body>
+
+<p align="left"><font size="1" face="Verdana">
+
+If you would prefer to receive plain text, please let us know: 
+
+
+<a href="mailto:editorialteam@wrox.com?subject=plain_text_mail">editorialteam@wrox.com?subject=plain_text_mail</a></font></p>
+
+
+<p align="center"><b><font face="Arial Black" size="4">
+<img border="0" src="http://www.wrox.com/Images/Website/newwroxlogo.gif" width="60" height="60" alt="Wrox Press">
+<br>
+Wrox </font><font face="Arial" size="4">Press Developer's Journal
+<br>
+.NET Special</font></b>
+<br>
+<font face="Arial" size="2"><i>Programmer to Programmer</i></font>
+<font face="Arial" size="1">TM
+<br>
+<a href="http://www.wrox.com/default.asp?tid027">www.wrox.com</a></font></p>
+
+
+<p align="left"><font face="Verdana" size="1"><b>7/26/02</font>
+<br>
+<font size="3" face="Arial"><a name="beginning">IN THIS ISSUE</a></font></b></p>
+
+<p align="left">
+<a href="#title"><font face="Verdana" size="1" color="#000000">TITLE OF THE MONTH</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#gems"><font face="Verdana" size="1" color="#000000">GEMS FROM THE CATALOGUE</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#recently"><font face="Verdana" size="1" color="#000000">RECENTLY RELEASED</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#future"><font face="Verdana" size="1" color="#000000">FUTURE TITLES</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#news"><font face="Verdana" size="1" color="#000000">NEWS & FEATURES</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#announce"><font face="Verdana" size="1" color="#000000">WROX ANNOUNCEMENTS</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#other"><font face="Verdana" size="1" color="#000000">OTHER ANNOUNCEMENTS</font></a><font face="Verdana" size="1" color="#000000"><br>
+</font>
+<a href="#info"><font face="Verdana" size="1" color="#000000">INFORMATION FOR SUBSCRIBERS</font></a></p>
+
+<p>
+<br>
+<a name="title"></a><b><font size="3" face="Arial">TITLE OF THE MONTH</font>
+<br><br>
+<font size="1" face="Verdana">ASP.NET Namespace Reference with C#</font></b>
+<br>
+<font size="1" face="Verdana"><a href="http://www.wrox.com/ACON11.asp?ISBN=1861007442&tid027">http://www.wrox.com/ACON11.asp?ISBN=1861007442&tid027</a>
+<br><br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007442&tid027"><img border="0" height="151" alt="ASP.NET Namespace Reference with C#" src="http://www.wrox.com/Images/Covers/7442.gif" width="120"></a>
+<br><br><br>
+
+<b>Table of Contents</b>
+<br><br>
+Introduction<br>
+System.Web<br>
+System.Web.UI<br>
+System.Web.UI.HtmlControls<br>
+System.Web.UI.WebControls<br>
+System.Web.UI.MobileControls<br>
+System.Web.Caching<br>
+System.Web.Configuration<br>
+System.Web.Security<br>
+System.Web.Services<br>
+System.Web.Services.Description<br>
+System.Web.Services.Protocols<br>
+Data in ASP.NET<br>
+XML in ASP.NET<br> 
+</font></p>
+
+
+<p><font size="1" face="Verdana">*Also available<br>
+<b>ASP.NET Namespace Reference with VB.NET</b><br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007450&tid027">http://www.wrox.com/ACON11.asp?ISBN=1861007450&tid027</a></font></p>
+<a href="#beginning"><font face="Verdana" size="1" color="#000000">Top</font></a><font face="Verdana" size="1" color="#000000">
+</font>
+
+
+<br><br><br>
+<a name="gems"></a><b><font size="3" face="Arial">GEMS FROM THE CATALOGUE</font></b>
+<br></p>
+
+<p><font size="1" face="Verdana">Professional Linux Programming<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861003013&tid027">
+http://www.wrox.com/ACON11.asp?ISBN=1861003013&tid027</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861003013&tid027"><img border="0" height="151" alt="Professional Linux Programming" src="http://www.wrox.com/Images/Covers/3013.gif" width="120"></a>
+<br><br><br>
+
+<b>Table of Contents</b>
+<br><br>
+Introduction<br>
+Chapter 1: Application Design<br>
+Chapter 2: Concurrent Versions System (CVS)<br>
+Chapter 3: Databases<br>
+Chapter 4: PostgreSQL interfacing<br>
+Chapter 5: MySQL<br>
+Chapter 6: Tackling Bugs<br>
+Chapter 7: LDAP Directory Services<br>
+Chapter 8: GUI programming with GNOME/GTK+<br>
+Chapter 9: GUI Building with Glade and GTK+/GNOME<br>
+Chapter 10: Flex and Bison<br>
+Chapter 11: Testing Tools<br>
+Chapter 12: Secure Programming<br>
+Chapter 13: GUI programming with KDE/Qt<br>
+Chapter 14: Writing the dvdstore GUI using KDE/Qt<br>
+Chapter 15: Python<br>
+Chapter 16: Creating Web interfaces with PHP<br>
+Chapter 17: Embedding and extending Python with C/C++<br>
+Chapter 18: Remote Procedure Calls<br>
+Chapter 19: Multi-media and Linux<br>
+Chapter 20: CORBA.<br>
+Chapter 21: Implementing CORBA with ORBit<br>
+Chapter 22: Diskless systems<br>
+Chapter 23: XML and libxml<br>
+Chapter 24: Beowulf Clusters<br>
+Chapter 25: Documentation<br>
+Chapter 26: Device Drivers<br>
+Chapter 27: Distributing the application<br>
+Chapter 28: Internationalization<br>
+</font></p>
+
+<a href="#beginning"><font face="Verdana" size="1" color="#000000">Top</font></a><font face="Verdana" size="1" color="#000000">
+</font>
+<p>
+
+<b><a name="recently"><font face="Arial" size="3">RECENTLY RELEASED</font></b>
+<br>
+<font size="1" face="Verdana">(click for more information)</font></p>
+
+<p><font size="1" face="Verdana">
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007442&tid027">
+ASP.NET 1.0 Namespace Reference with C#</a>
+<br>
+<br>
+<font size="1" face="Verdana"><a href="http://www.wrox.com/ACON11.asp?ISBN=1861007450&tid027">
+ASP.NET 1.0 Namespace Reference with VB.NET</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007418&tid027">
+Beginning ASP.NET Databases using C#</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861006098&tid027">
+Beginning C# Databases</a>
+<br>
+<a href="http://p2p.wrox.com/list.asp?list=beginning_c_sharp_databases&tid027">
+<font color="#000080">(Join the p2p discussion list for this title here)</font></a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007469&tid027">
+Professional Open Source Web Services</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=186100737x&tid027">
+Developing C# Windows Software: A Windows Forms Tutorial</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007248&tid027">
+Professional ASP.NET 1.0 XML using C#</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007396&tid027">
+Visual Basic .NET Solutions Toolkit</a></font>
+<br>
+<br>
+<br>
+
+<a name="future"></a><p><b><font size="3" face="Arial">FUTURE TITLES</font></b>
+<br>
+<font size="1" face="Verdana">(click for more information)</font></p>
+
+<p><font size="1" face="Verdana">
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007612&tid027">
+Beginning VB.NET, 2nd Edition</a>
+<br>
+<br>
+<font size="1" face="Verdana"><a href="http://www.wrox.com/ACON11.asp?ISBN=1861007256&tid027">
+Beginning .NET Web Services with VB.NET</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861006985&tid027">
+Professional VB.NET Design Patterns</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007604&tid027">
+Fast Track ADO.NET</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861006209&tid027">
+ASP.NET Security</a>
+<br>
+<a href="http://p2p.wrox.com/list.asp?list=aspx_security&tid027">
+<font color="#000080">(Join the p2p discussion list for this title here)</font></a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007663&tid027">
+Fast Track Windows Forms</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007752&tid027">
+Professional ASP.NET Web Services with VB.NET</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007477&tid027">
+VB.NET Code Level Security Handbook</a>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=186100740x&tid027">
+VB.NET Remoting Handbook</a></font>
+<br>
+<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=186100771x&tid027">
+VB.NET Delpoyment Handbook</a></font>
+
+<br><br>
+<a href="#beginning"><font face="Verdana" size="1" color="#000000">Top</font></a><font face="Verdana" size="1" color="#000000">
+</font
+<p>
+
+<a name="news"></a><p><font size="3" face="Arial"><b>NEWS & FEATURES</b></font></p>
+<p>
+
+<a href="http://www.asptoday.com/default.asp?&tid027"><img alt="ASPToday" border="0" src="http://www.p2p.wrox.com/ASPToday/ASPTodayLogo.gif" width="170" height="29"></a><br>
+<br>
+<b>ASPToday announces their Inaugural<font color="#CC0000"> Guru Week</font></b></font>
+
+<br><br><font face="Verdana" SIZE="1">
+- <b>Dan Wahlin</b> expounds on XML Support in ASP.NET<br><br>
+ASPToday are proud to announce their first Guru Week. From 29th July to 2nd August Microsoft MVP, ASPToday author and www.xmlforasp.net/ founder 
+Dan Wahlin presents a series of specially commissioned articles, telling you all you need to know about XML support in ASP.NET. Drawing on his 
+experience of consulting and XML training, Dan's articles will allow anyone interested in XML to quickly get up to speed in this important subject.
+<br>
+<br>
+Read more about ASPToday's Guru Weeks: <a href="http://www.wrox.com/ACON7.asp?art_type=1&id=809&tid027">http://www.wrox.com/ACON7.asp?art_type=1&id=809&tid027</a>
+<br>
+<br>
+Subscription to ASPToday starts at $10 per month: <a href="http://www.asptoday.com/actions/linkhandlers/processsubscribelink.asp?&tid027"><b>subscribe Now</b></a>.
+Alternatively, you can purchase any article in our library for <font color="#CC0000"><b>$5</b></font>.<br>
+<br>
+<br>
+
+<b>Updating Data Safely with a DataSet,</b> an article by <font color="#CC0000"><b> Alex Homer</b></font>
+<br><br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861004923&tid027"><img border="0" height="151" alt="ASP.NET Distributed Data Applications" src="http://www.wrox.com/Images/Covers/4923.gif" width="120"></a>
+<br><br>
+"OK, so we can’t store all three values for a row (the current, original and the underlying values) in the 
+tables of our DataSet. Is this actually important? What do we actually need to perform the process, and 
+what do users actually expect to see? Can we make do with just two values instead of three, (and don’t 
+you hate books that keep asking questions)?"<br><br>
+
+Read the whole of Alex Homer's article here:<br>
+<a href="http://www.wrox.com/ACON7.asp?art_type=1&id=810&tid027">http://www.wrox.com/ACON7.asp?art_type=1&id=810&tid027</a>
+
+<br><br>
+<a href="#beginning"><font face="Verdana" size="1" color="#000000">Top</font></a><font face="Verdana" size="1" color="#000000">
+</font>
+
+<br><br><br>
+
+<a name="announce"></a><p><font size="3" face="Arial"><b>WROX ANNOUNCEMENTS</b></font></p>
+
+<font size="1" face="Verdana">
+<b>AUTHOR INTERVIEWS</b>
+<br>
+<br>
+- With <font color="#CC0000"><b>François Liger, Craig McQueen</b></font> and <font color="#CC0000"><b>Paul Wilston,</b></font> 
+authors of <a href="http://www.wrox.com/ACON11.asp?ISBN=1861007302&tid027">Visual Basic .NET Text Manipulation Handbook</a>
+<br>
+<br>
+<b>Q. What do you think this book brings to the Visual Basic .NET developer, and so who do you think needs this book?</b><br><br> 
+
+<font color="#CC0000">[CM]</font> The book provides a quick easy reference for string programming tasks. String manipulation is a 
+large part of programming and it is difficult to remember it all. Having an accessible reference assists in finding existing code 
+to do the job rather than rewriting something that is already in the platform. It's valuable for all .NET developers.<br> 
+
+<font color="#CC0000">[PW]</font> I think all VB.NET developers need this book. String handling and regular expressions are 
+not arcane topics for high-flying gurus - they are the stuff of everyday programming! The regular expression chapters give a 
+great insight into what at first can seem a tricky topic. In addition the regular expression reference at the back of the book 
+is worth its weight in gold - certainly more readable than all the documentation I had to work with when writing the book.<br> 
+
+<font color="#CC0000">[AP]</font> In two sentences, explain what strings are in .NET<br><br> 
+
+Read the interview in full:<br>
+<a href="http://www.wrox.com/ACON7.asp?art_type=2&id=808&tid027">http://www.wrox.com/ACON7.asp?art_type=2&id=808&tid027</a><br><br>
+
+Or read about Visual Basic .NET Threading Handbook:<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007302&tid027">http://www.wrox.com/ACON11.asp?ISBN=1861007302&tid027</a><br><br><br>
+
+
+- with <font color="#CC0000"><b>Tobin Titus,</b></font> author of <a href="http://www.wrox.com/ACON11.asp?ISBN=1861007132&tid027"> Visual Basic .NET Threading Handbook</a>
+<br><br>
+In June, Wrox brought out a slim 260-page volume on threading in VB.NET. There has been some confusion as to why we would want to bring a book out on what 
+seems a straightforward topic. In this article we interview Tobin Titus (one of the authors on this title) and ask him various questions on the book, as 
+well getting his opinions on various programming-related topics.<br><br> 
+
+<b>Q. What is free threading?</b><br><br> 
+
+Free threading is the ability to control execution to the utmost within an application. While VB developers have been able to control some aspects of 
+threading in the past, they haven't been completely free to control those threads in the manner that they desire. Free threading allows the developer 
+to make decisions on when a thread should start, when it should end, and what it should do while executing.<br><br> 
+
+Read the interview in full here:<br>
+<a href="http://www.wrox.com/ACON7.asp?art_type=2&id=805&tid027">http://www.wrox.com/ACON7.asp?art_type=2&id=805&tid027</a><br><br>
+
+Or read about Visual Basic .NET Threading Handbook:<br>
+<a href="http://www.wrox.com/ACON11.asp?ISBN=1861007132&tid027">http://www.wrox.com/ACON11.asp?ISBN=1861007132&tid027</a><br><br><br>
+
+<b>Get on the Fast Track to Success</b><br><br>
+
+If you are an experienced programmer who needs to get up to speed on core .NET Technologies as quickly as possible, the Fast Track series is for you. 
+The Fast Track books complement our Beginning and Professional series by providing concise guides to core topics. They deliver the essential facts and 
+understanding that are required to start taking advantage of .NET. By targeting specific groups of experienced developers, the books are able to 
+concentrate on providing valuable information rather than covering basics.<br><br> 
+
+Read the full article here:<br>
+<a href="http://www.wrox.com/ACON7.asp?art_type=2&id=804&tid027">http://www.wrox.com/ACON7.asp?art_type=2&id=804&tid027</a><br><br><br>
+
+<a href="http://www.csharptoday.com/default.asp?&tid027"><img alt="C#Today" border="0" src="http://www.p2p.wrox.com/ASPToday/CSharpTodayLogo.gif" width="170" height="30"></a></font></p>
+
+<p>
+<b>C#Today Free Code Download</b>
+<br>
+<br>
+Due to customer feedback, C#Today have decided to try out something new this week - we are making this week's code  download \ support material available to all non-subscribers 
+(providing they are a member of the Wrox Developer Community, which is free to join).<br><br>
+
+
+<b>This week's case study: Generating Design Patterns Using CodeDOM</b> 
+<a href="http://www.csharptoday.com/content/articles/20020722.asp?&tid027">http://www.csharptoday.com/content/articles/20020722.asp?&tid027</a>
+
+The Code Document Model (CodeDOM), which provides the ability to generate source code in a number of the managed languages, is a very powerful .NET facility and has 
+attracted much interest. Within Visual Studio .NET, a complementary though unrelated feature is provided by the CodeModel object, which allows programmatic access to 
+hand-written code. Together these two tools provide a platform from which it should be possible to develop a VS.NET add-in to streamline the production of common designs 
+in code. This case study follows the development of such a tool, which attempts to automate the generation of a widespread design pattern in an existing C# or VB.NET project.<br><br> 
+
+
+<p><a href="http://p2p.wrox.com/default.asp?&tid027"><img alt="P2P - Programmer's resource centre" border="0" src="http://p2p.wrox.com/top.gif" width="192" height="34"></a></p>
+
+<p><font size="1" face="Verdana">There are four new lists in the .NET category
+on p2p:
+<br>
+<br>
+<b><a href="http://p2p.wrox.com/list.asp?list=beginning_c_sharp_databases&tid027"><font color="#000080">beginning_c_sharp_databases</font></a></b>
+<br>
+Connecting your C# code to data sources
+<br>
+<br>
+<b><a href="http://p2p.wrox.com/list.asp?list=aspx_web_matrix&tid027"><font color="#000080">aspx_web_matrix</font></a></b>
+<br>
+Discuss Web Matrix, a free application development tool for ASP.NET
+<br>
+<br>
+<b><a href="http://p2p.wrox.com/list.asp?list=weo_object_builder&tid027"><font color="#000080">weo_object_builder</font></a></b>
+<br>
+Generate code in C# or VB.NET for SQL Server
+<br>
+<br>
+<b><a href="http://p2p.wrox.com/list.asp?list=regular_expressions&&tid027"><font color="#000080">regular_expressions</font></a></b>
+<br>
+Principles and use of Regular Expressions</font></p>
+
+<a href="#beginning"><font face="Verdana" size="1" color="#000000">Top</font></a><font face="Verdana" size="1" color="#000000">
+</font>
+
+<p><br>
+
+<a name="info"></a><p><br>
+</font><b><font size="3" face="Arial">INFORMATION FOR SUBSCRIBERS</font></b></p>
+
+<p><font size="1" face="Verdana">You can unsubscribe from this list by visiting <a href="http://www.wrox.com/ACON3.asp?&tid027">http://www.wrox.com/ACON3.asp&tid027</a>
+<br>
+<br>
+Enter your e-mail address into the field at the
+bottom of the page and press the ‘unsubscribe’ button. The page will refresh
+and you will see a short message above the field to tell you if you have
+successfully unsubscribed.
+<br>
+<br>
+Similarly, to change the address that the
+Developer’s Journal is mailed to, enter your previous address and click ‘unsubscribe’,
+then enter your new address and click ‘subscribe’.
+<br>
+<br>
+Replying to this mail, however, will <b>NOT</b>
+automatically take your address off our lists.
+<br>
+<br>
+We'd like to hear from you. Please send all
+comments regarding the Developer's Journal to Vera at <a href="mailto:DJ@wrox.com">mailto:DJ@wrox.com</a>
+<br>
+<br>
+Comments about Wrox books should
+be sent to <a href="mailto:feedback@wrox.com">mailto:feedback@wrox.com</a>
+<br>
+<br>
+Technical support relating to Wrox books is available at <a href="mailto:support@wrox.com">mailto:support@wrox.com</a>
+<br>
+<br>
+</font></p>
+
+<a href="#beginning"><font face="Verdana" size="1" color="#000000">Top</font></a><font face="Verdana" size="1" color="#000000">
+</font>
+
+<br><br><br>
+
+<p align="center"><font size="1" face="Verdana"><b>Wrox - Programmer to Programmer™
+<br>
+<a href="http://www.wrox.com/default.asp?tid027">www.wrox.com?tid027</a></b></font></p>
+
+
+</body>
+
+</html>
+
+
+------Multipart-Boundary-xx5UNseljF43o-----
+
+
+
+

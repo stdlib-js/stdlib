@@ -1,0 +1,87 @@
+From fork-admin@xent.com  Wed Sep 11 13:49:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C984816F03
+	for <jm@localhost>; Wed, 11 Sep 2002 13:49:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:49:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8B6gJC04943 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 07:42:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AD47D2940CD; Tue, 10 Sep 2002 23:39:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav60.law15.hotmail.com [64.4.22.195]) by
+    xent.com (Postfix) with ESMTP id 8076A29409A for <fork@xent.com>;
+    Tue, 10 Sep 2002 23:38:21 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Tue, 10 Sep 2002 23:41:15 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+Subject: Microsoft buys XDegress - more of a p2p/distributed data thing...
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV60BuhOF3Gc76oajS00012b65@hotmail.com>
+X-Originalarrivaltime: 11 Sep 2002 06:41:15.0835 (UTC) FILETIME=[3A3820B0:01C2595E]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 10 Sep 2002 23:45:31 -0700
+
+I like this part - sounds like httpd on the client...
+
+http://www.openp2p.com/pub/a/p2p/2001/04/27/xdegrees.html
+
+"Once the Client Component is installed, a server can order a program to run
+on the client. Any CGI script, Java servlet, ASP component, etc. could be
+run on the client. This is like breaking the Web server into two parts.
+Originally, Web servers just understood HTTP and sent pages. Then the field
+started demanding more from the Web and the servers got loaded down with CGI
+and mod_perl and active pages and stuff. So now the Web server can choose to
+go back to simple serving and (where the application is appropriate) let the
+client do the other razzamatazz. This is superior to JavaScript in one
+important detail: the program doesn't have to reload when a new page is
+loaded, as JavaScript functions do.
+
+And because XDegrees uses Web-compatible technology, users can access
+XDegrees resources without installing any software, simply by using their
+browser."
+
+===
+"Scaling is the main question that comes to mind when somebody describes a
+new naming and searching system. CEO Michael Tanne claims to have figured
+out mathematically that the system can scale up to millions of users and
+billions of resources. Scaling is facilitated by the careful location of
+servers (XDegrees will colocate servers at key routing points, as Akamai
+does), and by directing clients to the nearest server as their default
+"home" server. Enterprise customers can use own servers to manage in-house
+applications."
+
+"Files can be cached on multiple systems randomly scattered around the
+Internet, as with Napster or Freenet. In fact, the caching in XDegrees is
+more sophisticated than it is on those systems: users with high bandwidth
+connections can download portions, or "stripes," of a file from several
+cached locations simultaneously. The XDegrees software then reassembles
+these stripes into the whole file and uses digital signatures to verify that
+the downloaded file is the same as the original. A key component of this
+digital signature is a digest of the file, which is stored as an HTTP header
+for the file."
+
+

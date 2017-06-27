@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:00:46 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C6ED916EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:00:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:00:45 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g12CFE816686 for
+    <jm-rpm@jmason.org>; Sat, 2 Feb 2002 12:15:14 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g12CF1323284;
+    Sat, 2 Feb 2002 13:15:01 +0100
+Received: from devel.freshrpms.net (80-24-132-206.uc.nombres.ttd.es
+    [80.24.132.206]) (authenticated) by auth02.nl.egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g12CE7323271 for
+    <rpm-list@freshrpms.net>; Sat, 2 Feb 2002 13:14:07 +0100
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: problems with 'apt-get -f install'
+Message-Id: <20020202130844.32a8b78b.matthias@egwn.net>
+In-Reply-To: <1012620964.5580.5.camel@localhost.localdomain>
+References: <14220000.1012602017@spawn.se7en.org>
+    <1012620964.5580.5.camel@localhost.localdomain>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.7.0claws5 (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 2 Feb 2002 13:08:44 +0100
+Date: Sat, 2 Feb 2002 13:08:44 +0100
+
+Once upon a time, Lance wrote :
+
+> I have failed dependencies in RPM database to I am unable to use
+> apt-get.  I requests to run 'apt-get -f install' to fix these
+> dependencies, however, I get these errors when running 'apt-get -f
+> install' :
+[...]
+> error: unpacking of archive failed on file
+> /usr/share/libgcj.zip;3c5b5e75: cpio: MD5 sum mismatch
+> E: Sub-process /bin/rpm returned an error code (1)
+> [root@localhost root]# 
+
+I'd say that the file apt downloaded is corrupted. Maybe trying "apt-get
+clean" to remove all downloaded files first would solve the problem.
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

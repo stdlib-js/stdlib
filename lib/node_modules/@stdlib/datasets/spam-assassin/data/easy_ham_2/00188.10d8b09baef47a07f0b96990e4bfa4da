@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Wed Jul 31 17:37:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A4189440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 12:37:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 17:37:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VGae201185 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 17:36:40 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA16845; Wed, 31 Jul 2002 17:35:01 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from nwd2mime2.analog.com (nwd2mime2.analog.com [137.71.25.114])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA16812 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 17:34:56 +0100
+Received: from nwd2gtw1 (unverified) by nwd2mime2.analog.com (Content
+    Technologies SMTPRS 4.2.5) with SMTP id
+    <T5c6d12122b89471972168@nwd2mime2.analog.com>; Wed, 31 Jul 2002 12:34:52
+    -0400
+Received: from nwd2mhb2 ([137.71.6.12]) by nwd2gtw1; Wed, 31 Jul 2002
+    12:34:45 -0400 (EDT)
+Received: from dsun1.adbvdesign.analog.com ([137.71.42.101]) by
+    nwd2mhb2.analog.com with ESMTP (8.9.3 (PHNE_18979)/8.7.1) id MAA19360;
+    Wed, 31 Jul 2002 12:34:43 -0400 (EDT)
+Received: from dsun358.adbvdesign.analog.com (dsun358 [137.71.41.58]) by
+    dsun1.adbvdesign.analog.com (8.11.6+Sun/8.11.6) with ESMTP id g6VGYbK03725;
+    Wed, 31 Jul 2002 17:34:37 +0100 (BST)
+Received: from dsun358 (localhost [127.0.0.1]) by
+    dsun358.adbvdesign.analog.com (8.8.8+Sun/8.8.8) with SMTP id RAA06635;
+    Wed, 31 Jul 2002 17:34:40 +0100 (BST)
+Date: Wed, 31 Jul 2002 17:34:40 +0100
+From: Paul Askins <paul.askins@analog.com>
+To: deedsmis@aculink.net, ilug@linux.ie
+Subject: Re: [ILUG] Re: removing lilo
+Message-Id: <20020731173440.041047c2.paul.askins@adbvdesign.analog.com>
+In-Reply-To: <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+References: <5FE418B3F962D411BED40000E818B33C9C8E65@HASSLE>
+    <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+Organization: Analog Devices
+X-Mailer: Sylpheed version 0.7.8claws (GTK+ 1.2.7; )
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+"fdisk /mbr" will not destroy the OS, it will simply restore the windows
+mbr as it was.  Running fdisk and deleting a partition would however
+destroy the OS (bu even then only if you format the disc afterwards).
+
+
+Sure wasn't it SoloCDM <deedsmis@aculink.net> 
+sometime around Wed, 31 Jul 2002 10:48:16 -0600 said:
+ 
+> I need to ask a question concerning this issue.
+> 
+> What if I don't want to get rid of the MBR -- it will destroy the OS
+> on that drive.  How do I remove lilo without the above fdisk
+> procedure?
+> 
+-- 
+Paul Askins <:)
+Email:  Paul Askins <paul.askins@adbvdesign.analog.com>
+
+Behind every great man, there is a woman -- urging him on.
+		-- Harry Mudd, "I, Mudd", stardate 4513.3
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

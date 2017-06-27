@@ -1,0 +1,109 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Oct  4 11:08:14 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D5F3316F73
+	for <jm@localhost>; Fri,  4 Oct 2002 11:05:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:05:55 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g944tnK03832 for <jm@jmason.org>; Fri, 4 Oct 2002 05:55:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17xKUS-0003W7-00; Thu,
+    03 Oct 2002 21:55:04 -0700
+Received: from smtp10.atl.mindspring.net ([207.69.200.246]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17xKTV-0000Pd-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Thu, 03 Oct 2002 21:54:05 -0700
+Received: from user-2injgi2.dsl.mindspring.com ([165.121.194.66]
+    helo=belphegore.hughes-family.org) by smtp10.atl.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17xKTO-0006ze-00 for
+    spamassassin-devel@lists.sourceforge.net; Fri, 04 Oct 2002 00:53:59 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    92EA622876; Thu,  3 Oct 2002 21:51:06 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20021004045106.92EA622876@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 1054] New: Split up FROM_ENDS_IN_NUMS
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-devel>
+X-Original-Date: Thu,  3 Oct 2002 21:51:06 -0700 (PDT)
+Date: Thu,  3 Oct 2002 21:51:06 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=1054
+
+           Summary: Split up FROM_ENDS_IN_NUMS
+           Product: Spamassassin
+           Version: unspecified
+          Platform: Other
+        OS/Version: other
+            Status: NEW
+          Severity: enhancement
+          Priority: P2
+         Component: Rules
+        AssignedTo: spamassassin-devel@example.sourceforge.net
+        ReportedBy: matt@nightrealms.com
+
+
+The current FROM_ENDS_IN_NUMS triggers on any from where the user name ends
+in two or more digits.  I think this should be split up into different
+numbers of trailing digits, so that rules with different S/O ratios can
+get different scores.  So I've made test rules that look from From
+names that end with two, three, four, or five digitis, and one for six or
+more digitis; I also put in a test rule that looks for Froms that end in a
+single digit, just the sake of completeness.
+
+Here is what I got:
+
+OVERALL%   SPAM% NONSPAM%     S/O    RANK   SCORE  NAME
+  15113     4797    10316    0.32    0.00    0.00  (all messages)
+100.000   31.741   68.259    0.32    0.00    0.00  (all messages as %)
+  1.244    3.877    0.019    1.00    0.64    0.01  T_FROM_ENDS_IN_NUMS6
+  0.576    1.459    0.165    0.90    0.43    0.01  T_FROM_ENDS_IN_NUMS5
+  4.982   10.694    2.326    0.82    0.38    0.01  T_FROM_ENDS_IN_NUMS4
+  3.434    6.337    2.084    0.75    0.35    0.01  T_FROM_ENDS_IN_NUMS3
+  8.979   12.383    7.396    0.63    0.30    0.01  T_FROM_ENDS_IN_NUMS2
+  8.847    6.817    9.791    0.41    0.22    0.01  T_FROM_ENDS_IN_NUMS1
+
+I should note that I get rather bad S/O's for FROM_ENDS_IN_NUMS, probably
+because so much of my corpus is made up of Yahoo! Groups traffic, which
+seems to have a lot of users that like sticking numbers at the ends of their
+names.  Here is the normal stats for FROM_ENDS_IN_NUMS:
+
+  7.024   28.480    2.834    0.91    0.50    0.88  FROM_ENDS_IN_NUMS
+
+and my stats:
+
+ 19.228   34.793   11.991    0.74    0.35    0.88  FROM_ENDS_IN_NUMS
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

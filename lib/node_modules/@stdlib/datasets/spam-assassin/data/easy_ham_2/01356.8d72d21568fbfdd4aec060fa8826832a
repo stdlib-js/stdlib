@@ -1,0 +1,23 @@
+From nobody@sonic.spamtraps.taint.org  Wed Aug  7 14:39:04 2002
+Return-Path: <nobody@sonic.spamtraps.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5D6C9440CD
+	for <jm@localhost>; Wed,  7 Aug 2002 09:38:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 14:38:56 +0100 (IST)
+Received: from sonic.spamtraps.taint.org (spamassassin.sonic.net
+    [64.142.3.172]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g77Ddlk31933 for <jm@jmason.org>; Wed, 7 Aug 2002 14:39:47 +0100
+Received: by sonic.spamtraps.taint.org (Postfix, from userid 99) id
+    700AE1330E2; Wed,  7 Aug 2002 06:38:04 -0700 (PDT)
+Message-Id: <20020807133804.700AE1330E2@sonic.spamtraps.taint.org>
+Date: Wed,  7 Aug 2002 06:38:04 -0700 (PDT)
+From: nobody@sonic.spamtraps.taint.org (Nobody)
+To: undisclosed-recipients: ;
+
+Problem with spamtrap
+Could not lock /home/yyyy/lib/spamtrap/spam.mbox: File exists at lib/Mail/SpamAssassin/NoMailAudit.pm line 484, <STDIN> line 94.
+
+

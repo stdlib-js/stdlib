@@ -1,0 +1,115 @@
+From exmh-workers-admin@redhat.com  Wed Sep 11 21:29:16 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1999E16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 21:29:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 21:29:16 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8BJvaC29683 for
+    <jm-exmh@jmason.org>; Wed, 11 Sep 2002 20:57:36 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id E614140976; Wed, 11 Sep 2002
+    15:54:46 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 11AF13F2EE
+    for <exmh-workers@listman.redhat.com>; Wed, 11 Sep 2002 15:52:54 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8BJqnR26738 for exmh-workers@listman.redhat.com; Wed, 11 Sep 2002
+    15:52:49 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8BJqmk26734 for
+    <exmh-workers@redhat.com>; Wed, 11 Sep 2002 15:52:48 -0400
+Received: from turing-police.cc.vt.edu (turing-police.cc.vt.edu
+    [128.173.14.107]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8BJaKw00436 for <exmh-workers@redhat.com>; Wed, 11 Sep 2002 15:36:20
+    -0400
+Received: from turing-police.cc.vt.edu (localhost [127.0.0.1]) by
+    turing-police.cc.vt.edu (8.12.6.Beta1/8.12.6.Beta1) with ESMTP id
+    g8BJqPrl020350; Wed, 11 Sep 2002 15:52:25 -0400
+Message-Id: <200209111952.g8BJqPrl020350@turing-police.cc.vt.edu>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4+dev
+To: Brent Welch <welch@panasas.com>
+Cc: Hacksaw <hacksaw@hacksaw.org>, exmh-workers@spamassassin.taint.org
+Subject: Re: exmh bug?
+In-Reply-To: Your message of
+    "Wed, 11 Sep 2002 12:17:33 PDT."
+    <200209111917.PAA02912@blackcomb.panasas.com>
+From: Valdis.Kletnieks@vt.edu
+X-Url: http://black-ice.cc.vt.edu/~valdis/
+X-Face-Viewer: See ftp://cs.indiana.edu/pub/faces/index.html to decode picture
+X-Face: 34C9$Ewd2zeX+\!i1BA\j{ex+$/V'JBG#;3_noWWYPa"|,I#`R"{n@w>#:{)FXyiAS7(8t(
+    ^*w5O*!8O9YTe[r{e%7(yVRb|qxsRYw`7J!`AM}m_SHaj}f8eb@d^L>BrX7iO[<!v4-0bVIpaxF#-)
+    %9#a9h6JXI|T|8o6t\V?kGl]Q!1V]GtNliUtz:3},0"hkPeBuu%E,j(:\iOX-P,t7lRR#
+References: <200209111917.PAA02912@blackcomb.panasas.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_9304186P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 11 Sep 2002 15:52:25 -0400
+
+--==_Exmh_9304186P
+Content-Type: text/plain; charset=us-ascii
+
+On Wed, 11 Sep 2002 12:17:33 PDT, Brent Welch said:
+
+> >>>Hacksaw said:
+
+>  > When I receive a gpg encrypted message, and it asks me for a passphrase, 
+> it
+>  > first tries to ask me via the tty under which exmh is running. It tells 
+>
+Hmm.. I've seen the *opposite* issue - if I go to *SEND* a signed message,
+sometimes Exmh will put up the dialog box, but fail to set keyboard focus
+there, so no passphrase can be entered.  Of course, hitting 'return' doesnt
+work so you need to click the 'OK' box, at which point it finds that the
+passphrase that wasn't entered doesn't work, and asks again, this time with
+proper focus set.
+
+I suspect some variable/codepath is getting hosed for the focus, or possibly
+some borkedness with --no-tty and/or --status-fd flags to gnupg.
+
+/Valdis
+
+--==_Exmh_9304186P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+Comment: Exmh version 2.5 07/13/2001
+
+iD8DBQE9f575cC3lWbTT17ARApK5AKD+PToDpgdcd0Ore2BwJ1qVakfMDgCcDRsa
+HqcPiRZRSxFvAQBe+Ma1qmY=
+=lXe4
+-----END PGP SIGNATURE-----
+
+--==_Exmh_9304186P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

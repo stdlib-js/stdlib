@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Fri Aug 16 15:02:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C241E43C45
+	for <jm@localhost>; Fri, 16 Aug 2002 09:58:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 14:58:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GDpia19919 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 14:53:27 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA14356 for <jm-ilug@jmason.org>;
+    Fri, 16 Aug 2002 14:51:33 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA30881; Fri, 16 Aug 2002 14:49:04 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA30837 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 14:48:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from cunniffe.net (p202.as1.exs.dublin.eircom.net
+    [159.134.224.202]) by claymore.diva.ie (8.9.3/8.9.3) with ESMTP id
+    OAA16033 for <ilug@linux.ie>; Fri, 16 Aug 2002 14:48:50 +0100
+Message-Id: <3D5D02C1.5010504@cunniffe.net>
+Date: Fri, 16 Aug 2002 14:48:49 +0100
+From: Vincent Cunniffe <vincent@cunniffe.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en, en-us
+MIME-Version: 1.0
+To: ilug <ilug@linux.ie>
+Subject: Re: [ILUG] replacement xircom dongle?
+References: <3D5CFB9A.6060209@cunniffe.net>
+    <003c01c24529$e17df820$e600000a@XENON16>
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+wintermute wrote:
+>>Anyone know where in Ireland I can get a replacement external dongle
+>>for a Xircom CE3B-100 PCMCIA NIC?
+>>
+>>Failing that, who delivers fastest to Ireland?
+>>
+>>Regards,
+>>
+>>Vin
+> 
+> I went into Maplin looking for exactly this sort of thing, only to be told I
+> would have to by a whole new card.....
+> Buy & Sell I'd say else just by a new NIC...(which I didn't do) I just live
+> with the fact I have to angle the CAT 5 at a certain angle to my NIC or the
+> dongle will fall out!
+
+Well, I went hunting online and it is definitely possible to get
+replacement dongles, specifically for this card but also for
+others.
+
+Tricky though ;-)
+
+Vin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

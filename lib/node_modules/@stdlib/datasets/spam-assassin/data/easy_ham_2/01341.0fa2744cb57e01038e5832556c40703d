@@ -1,0 +1,87 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 18:06:04 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0656643C38
+	for <jm@localhost>; Wed, 21 Aug 2002 13:05:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 18:05:54 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LH86Z02684 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 18:08:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYwh-0006nV-00; Wed,
+    21 Aug 2002 10:07:03 -0700
+Received: from panoramix.vasoftware.com ([198.186.202.147]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYvx-0005Ns-00 for
+    <SpamAssassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 10:06:17 -0700
+Received: from hippo.star.co.uk ([195.216.14.9]:2657) by
+    panoramix.vasoftware.com with smtp (Exim 4.05-VA-mm1 #1 (Debian)) id
+    17hYvr-0006KW-00 for <SpamAssassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 10:06:11 -0700
+Received: from MATT_LINUX by hippo.star.co.uk via smtpd (for
+    panoramix.vasoftware.com [198.186.202.147]) with SMTP; 21 Aug 2002
+    16:57:21 UT
+Received: (qmail 7436 invoked from network); 19 Aug 2002 17:02:32 -0000
+Received: from unknown (HELO startechgroup.co.uk) (10.2.100.178) by
+    matt?dev.int.star.co.uk with SMTP; 19 Aug 2002 17:02:32 -0000
+Message-Id: <3D63C7BE.2020705@startechgroup.co.uk>
+From: Matt Sergeant <msergeant@startechgroup.co.uk>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc1) Gecko/20020426
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: "Hess, Mtodd, /mth" <mth@Ingersoll.com>
+Cc: SpamAssassin-talk@example.sourceforge.net
+References: <752D46E7E674D311842600A0C9EC627A03EAABA8@rockford>
+Subject: Re: [SAtalk] paulgraham.com article
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 18:02:54 +0100
+Date: Wed, 21 Aug 2002 18:02:54 +0100
+
+Hess, Mtodd, /mth wrote:
+> Yes, it is very impressive.  However, all of the most advanced content
+> filtering known to man is easily defeated by simply presenting the content
+> in the form of a graphic image (GIF, JPG, etc.).  I'm surprised that more
+> spammers don't already do this.  I know we have discussed this before, and
+> maybe we can detect this type of spam via the headers and with Razor/DCC (if
+> you're using them).  But that sure narrows down the ruleset (maybe that's
+> good).
+
+Doesn't defeat this system at all. If you see that once, feed it into 
+your bayesian classifier, and it classifies the URLs used for the 
+images. Then next time it sees one, it knows with almost 100% accuracy 
+that an email with one of those URLs is definitely spam.
+
+In many ways this is like Razor, which is why I'm hacking on a 
+distributed system to do this, to see if it's feasible to scale it globally.
+
+Matt.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,41 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:42:02 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C58A816F6F
+	for <jm@localhost>; Thu, 26 Sep 2002 16:41:12 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:41:12 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFUOg24832 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:30:24 +0100
+Message-Id: <200209261530.g8QFUOg24832@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: morbus <rssfeeds@spamassassin.taint.org>
+Subject: <strong>Two New AmphetaDesk Hacks</strong>
+Date: Thu, 26 Sep 2002 15:30:24 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: 4538e94b3b2c6b19041756b37b1f9916
+Date: Not supplied
+
+Since the AmphetaDesk source code is so easily modifiable on any platform, I've 
+been seeing some interesting hacks and modifications lately. The most powerful 
+of them is l.m. orchard's newest template[1], which provides an insane amount 
+of new features, including hiding old items, click counting, and an outline 
+based format. More than likely, a revised version of his hack will appear as a 
+selectable template in the next version (AmphetaDesk v0.94). 
+
+Also of interest is Brian Cantoni's FTPStore[2]: _"FTPstore is a slight 
+addition to the AmphetaDesk news aggregator. The modified code will retrieve 
+the personal channel list from an FTP location during startup and store it back 
+to the same location during shutdown. This provides a simple method to keep 
+your saved channels in a network location. If you use AmphetaDesk at home and 
+at work, for example, this feature will let you keep your list of channels in 
+sync."_ It's a major improvement for AmphetaDesk users with multiple machines.
+
+[1] http://www.decafbad.com/news_archives/000228.phtml
+[2] http://www.cantoni.org/software/amphetadesk.html
+
+

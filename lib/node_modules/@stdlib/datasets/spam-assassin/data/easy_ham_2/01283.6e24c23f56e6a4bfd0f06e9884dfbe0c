@@ -1,0 +1,153 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Jul 22 18:21:49 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 38FDF440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:21:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:21:49 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFG0901260 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 16:16:00 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id QAA32607 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 16:04:04 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WegI-0005Dz-00; Mon,
+    22 Jul 2002 08:01:02 -0700
+Received: from ns2.wananchi.com ([62.8.64.4]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17WefC-0006Vm-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 22 Jul 2002 07:59:57 -0700
+Received: from wash by ns2.wananchi.com with local (Exim 3.36 #1
+    (FreeBSD)) id 17Weco-000GDd-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 22 Jul 2002 17:57:26 +0300
+From: Odhiambo Washington <wash@wananchi.com>
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <20020722145726.GZ39585@ns2.wananchi.com>
+Mail-Followup-To: Odhiambo Washington <wash@wananchi.com>,
+	spamassassin-talk@lists.sourceforge.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Disclaimer: Any views expressed in this message,where not explicitly
+    attributed otherwise, are mine alone!.
+X-Fortune: People need good lies. There are too many bad ones. -- Bokonon,
+    "Cat's Cradle" by Kurt Vonnegut, Jr.
+X-Operating-System: FreeBSD 4.5-STABLE i386
+X-Best-Window-Manager: Blackbox
+X-Designation: Systems Administrator, Wananchi Online Ltd.
+X-Location: Nairobi, KE, East Africa.
+X-Uptime: 5:46PM  up 49 days,  8:31, 3 users, load averages: 1.04, 1.03, 1.06
+Subject: [SAtalk] Personal/Site-Wide SA Glitch (Spamassassin+Exim)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 22 Jul 2002 17:57:26 +0300
+Date: Mon, 22 Jul 2002 17:57:26 +0300
+
+Hello People,
+
+I am new to SA but (2) problems I do have.
+
+I run SA from my own home for personal use and it seems to work but I see this
+in my procmail log:
+
+
+<cut>
+procmail: Executing " ~/bin/SpamAssassin/spamassassin -P -c ~/bin/SpamAssassin/rules"
+dccproc: not found
+dccproc: not found
+<cut>
+
+Can someone enlighten me on why I get that? FreeBSD 4.6-STABLE, SA-2.3.0
+
+
+
+Secondly, I've tested (now on Three boxes) SA for site-wide usage but I believe I am
+missing something major because I've also had my setting checked/verified.
+
+The problem is that the site-wide setup does NOT seem to work. Why?
+
+1. I have my local.cf in /etc/mail/spamassassin
+2. I have spamd running, and mail delivery logs show that all e-mails are
+   being passed thro SA.
+
+My local.cf contains:
+
+ENABLED=1
+OPTIONS="-F 0"
+
+#
+rewrite_subject         0
+report_header           1  
+defang_mime             0
+required_hits           7.0
+report_header           1
+use_terse_report        1
+subject_tag             **SPAM**
+
+
+
+wash ('tty') ~ 337 -> exim -bt engingwarez@runjiri.co.ke
+eng.ngware@runji.co.ke
+  deliver to enginngware in domain runjiri.co.ke
+  director = spamcheck_director, transport = spamcheck
+
+
+However when I check the mail delivered to this mailbox, SA has _not_ added any headers
+to it.
+
+PERTINENT: I also run a Virus Scanner called DRWEB via Exim's system filter and the rules
+that I have applied are:
+
+if not first_delivery or
+    $received_protocol is "drweb-scanned" or
+    $received_protocol is "spam-scanned"
+then
+  finish
+endif
+
+
+Some enlightenment would bail me out, I believe.
+
+Thanks
+
+
+
+-Wash
+
+-- 
+Odhiambo Washington  <wash@wananchi.com>    "The box said 'Requires
+Wananchi Online Ltd.  www.wananchi.com      Windows 95, NT, or better,'
+Tel: 254 2 313985-9   Fax: 254 2 313922     so I installed FreeBSD."   
+GSM: 254 72 743 223   GSM: 254 733 744 121  This sig is McQ!  :-)
+
+
+"We demand rigidly defined areas of doubt and uncertainty!"
+		-- Vroomfondel
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

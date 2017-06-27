@@ -1,0 +1,86 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Aug 26 18:01:19 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3581544155
+	for <jm@localhost>; Mon, 26 Aug 2002 13:01:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 18:01:19 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QGqbZ01326 for <jm@jmason.org>; Mon, 26 Aug 2002 17:52:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jN4z-0003Tk-00; Mon,
+    26 Aug 2002 09:51:05 -0700
+Received: from moon.campus.luth.se ([130.240.202.158]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17jN4q-00078h-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Mon, 26 Aug 2002 09:50:57
+    -0700
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g7QGocMg098330; Mon, 26 Aug 2002 18:50:38 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: bugzilla-daemon@hughes-family.org
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] [Bug 735] spamassassin -t lies
+In-Reply-To: <20020826163323.6940CA4D25@belphegore.hughes-family.org>
+Message-Id: <20020826184926.B97541-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Mon, 26 Aug 2002 18:50:38 +0200 (CEST)
+Date: Mon, 26 Aug 2002 18:50:38 +0200 (CEST)
+
+On Mon, 26 Aug 2002 the voices made bugzilla-daemon@hughes-family.org write:
+
+> http://www.hughes-family.org/bugzilla/show_bug.cgi?id=735
+
+> ------- Additional Comments From br+spamassassin@panix.com  2002-08-26 09:33 -------
+> Just because it's documented doesn't mean it's a good thing.
+>
+> I work for an ISP.  We provide SpamAssassin to our customers.  I got email
+> today from a support tech saying that "spamassassin -t" reports that a
+> message is probably spam even when it's not, and why is this, and can we
+> change it?  I thought about why it is, and the only answer I could come up
+> with was, "it was easier for the programmer that way".  That's an answer, I
+> guess, but her point was that this is going to generate support calls, and
+> support calls cost us time and money.
+
+ Why would a customer use `spamassassin -t` without understanding what it does?
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

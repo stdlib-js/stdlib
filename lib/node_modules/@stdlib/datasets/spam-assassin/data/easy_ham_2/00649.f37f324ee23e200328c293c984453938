@@ -1,0 +1,125 @@
+From vipul@rover.vipul.net  Thu Aug 15 10:43:48 2002
+Return-Path: <vipul@rover.vipul.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4EA2643C37
+	for <jm@localhost>; Thu, 15 Aug 2002 05:43:20 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:43:20 +0100 (IST)
+Received: from rover.vipul.net (h-66-166-21-186.SNVACAID.covad.net [66.166.21.186])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id BAA05500
+	for <jm@netnoteinc.com>; Thu, 15 Aug 2002 01:39:53 +0100
+Received: (from vipul@localhost)
+	by rover.vipul.net (8.11.6/8.11.6) id g7F0doJ24495;
+	Wed, 14 Aug 2002 17:39:50 -0700
+Date: Wed, 14 Aug 2002 17:39:50 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Justin Mason <yyyy@netnoteinc.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] dot-tk registrations hitting Razor
+Message-ID: <20020814173950.A24450@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Justin Mason <yyyy@netnoteinc.com>,
+	razor-users@lists.sourceforge.net
+References: <20020814105631.AAF0B43C32@phobos.labs.netnoteinc.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020814105631.AAF0B43C32@phobos.labs.netnoteinc.com>; from yyyy@netnoteinc.com on Wed, Aug 14, 2002 at 11:56:26AM +0100
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+
+Justin, can SA say "Listed in Razor2" when using Razor2? I get a lot of
+reports that are misreports to Razor1 not Razor2.
+
+If this is Razor2, then revocation will fix the problem. 
+
+cheers,
+vipul.
+
+On Wed, Aug 14, 2002 at 11:56:26AM +0100, Justin Mason wrote:
+> 
+> As the proud new owner of a free antarc.tk domain ;), I got a confirmation
+> mail, which fell into Razor.
+> 
+> Looks like the fuzzy matching will hit on all confirmation mails until
+> it's whitelisted.
+> 
+> just fyi,
+> 
+> --j.
+> 
+> ------- Forwarded Message
+> 
+> Date:    Wed, 14 Aug 2002 11:37:35 -0000
+> From:    support@dot.tk (Dot TK registration center)
+> To:      xxxxxx@xxxxx.xxx
+> Subject: *****SPAM***** Please confirm your free registration
+> 
+> SPAM: -------------------- Start SpamAssassin results ----------------------
+> SPAM: This mail is probably spam.  The original message has been altered
+> SPAM: so you can recognise or block similar unwanted mail in future.
+> SPAM: See http://spamassassin.org/tag/ for more details.
+> SPAM: 
+> SPAM: Content analysis details:   (7.5 hits, 7 required)
+> SPAM: SEE_FOR_YOURSELF   (2.8 points)  BODY: See for yourself
+> SPAM: SPAM_PHRASE_13_21  (1.5 points)  BODY: Contains phrases frequently found in spam
+> SPAM: RAZOR_CHECK        (3.0 points)  Listed in Razor, see http://razor.sourceforge.net/
+> SPAM: MSG_ID_ADDED_BY_MTA_3 (0.2 points)  'Message-Id' was added by a relay (3)
+> SPAM: 
+> SPAM: -------------------- End of SpamAssassin results ---------------------
+> 
+> 
+> Malo ni! 
+> and thank you (faka fetai) 
+> for registering with Dot TK!
+> 
+> Your e-mail address : xxxxxxx@xxxxx.xxx
+> password: xxxxxxxxx
+> 
+> confirmation code: xxxxxxx
+> (please note: this is not your password)
+> 
+> As you know we like to keep things simple, so all you need 
+> to do to activate your Dot TK address is...
+> 
+> 1. Go to http://my.dot.tk/cgi-bin/confirm.taloha?tk=xxxxxx
+> 
+> 2. And enter your confirmation code
+> 
+> If you have received this email, but did not join us @ Dot TK,
+> then somebody tried to register using your e-mail address. 
+> 
+> You can simply ignore this message... But why not come on in, 
+> and see for yourself if your own -free- domain name is still 
+> available at http://www.dot.tk
+> 
+> Any questions? Please visit our feedback page at
+> http://www.dot.tk/cgi-bin/response.taloha
+> Hope to see you soon at Dot TK.
+> 
+> Dot TK -- Dividing Domains Differently.
+> 
+> 
+> 
+> ------- End of Forwarded Message
+> 
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by: Dice - The leading online job board
+> for high-tech professionals. Search and apply for tech jobs today!
+> http://seeker.dice.com/seeker.epl?rel_code=31
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+

@@ -1,0 +1,125 @@
+From fork-admin@xent.com  Wed Sep  4 11:41:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D9B4916F7A
+	for <jm@localhost>; Wed,  4 Sep 2002 11:40:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 11:40:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g83LawZ04243 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 22:36:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A0104294108; Tue,  3 Sep 2002 14:34:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id D675F294099; Tue,  3 Sep 2002 14:33:22
+    -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g83LZnfw010916; Tue, 3 Sep 2002 14:35:50
+    -0700 (PDT)
+Subject: InfoWorld profile of Max Levchin
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: fork@spamassassin.taint.org
+Message-Id: <1C5D938E-BF85-11D6-8989-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 3 Sep 2002 14:35:48 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g83LawZ04243
+
+Congrats, in the end...
+> "If they didn't have Max, they might have succumbed, because PayPal was 
+> susceptible to fraud and money laundering, and Max tightened them up,"
+
+http://www.infoworld.com/articles/ct/xml/02/09/02/020902ctspotlight.xml
+
+Secure and at ease
+By Jack Mccarthy
+August 30, 2002 1:01 pm PT
+
+MAX LEVCHIN'S FASCINATION with encryption started when he was a teenager 
+in Kiev, Ukraine, and continued as he immigrated to the United States 
+where he attended the University of Illinois at Urbana-Champaign. In 
+late 1998, not two years out of college, he drew on his passion to 
+co-found PayPal, the online payment system that has since attracted tens 
+of millions of users and gained the reputation as the premier Internet 
+transaction processor. Now online auction house eBay has acquired his 
+company for a king's ransom.
+
+Not bad for a 27-year-old kid from Ukraine.
+
+A programmer since he was 10 years old, Levchin and his family moved to 
+Chicago in 1991, and since then he has pursued security as if on a 
+mission. He created a startup right out of college to build secure 
+passwords for Palm Pilots. He met Peter Thiel, and the two founded 
+PayPal to target online payment security. Thiel is now CEO of the 
+company.
+
+"This company was founded on the notion of security value," Levchin 
+says. "Peter Thiel and I shared that vision from the very beginning."
+
+Thiel concentrates on company business matters, whereas Levchin remains 
+focused on security, which he says is the key to the company's good 
+fortune.
+
+"I explain [PayPal] as a security company posing as a transaction 
+processor," Levchin says. "We spend a lot of time designing security so 
+it doesn't step on the toes of convenience and not the other way around. 
+The trade-off is fundamental."
+
+Mountain View, Calif.-based PayPal allows businesses and consumers with 
+e-mail addresses to send and receive payments via the Internet, 
+accepting credit card or bank account payments for purchases. The 
+service extends to 38 countries, with more than 17 million users and 
+more than 3 million business accounts.
+
+Most of PayPal's users are participants in online auctions, which led 
+PayPal to be closely linked with eBay, the leading Web auction site. 
+Although they were once rivals, the relationship between the two 
+companies resulted July 8 in eBay's tentative $1.5 billion acquisition 
+of PayPal. The agreement is subject to regulatory review.
+
+Levchin says he will stay at PayPal as it merges with eBay. "There are 
+areas of synergy and collaboration we can explore."
+
+Although security is a dominant feature for PayPal, the company's 
+ability to carry out open communications among the millions of 
+participants fits the growing Web services model, Levchin says.
+
+"This is a service that links people and allows them to send messages to 
+one another," he says. Levchin is a panelist at InfoWorld's 
+Next-Generation Web Services II conference Sept. 20
+
+PayPal, as an online payment system, is a natural target for fraud. And 
+Levchin has almost singlehandedly saved the company from thieves bent on 
+exploiting the system, says Avivah Litan, a vice president and analyst 
+covering financial services at Stamford, Conn.-based Gartner.
+
+"If they didn't have Max, they might have succumbed, because PayPal was 
+susceptible to fraud and money laundering, and Max tightened them up," 
+Litan says.
+
+To combat criminals, Levchin established "Igor," an antifraud program 
+that monitors transactions and warns of suspicious accounts. Levchin 
+says building security and antifraud systems is a job he relishes. "The 
+work I do is important to PayPal and to consumers in general because the 
+work makes Internet shopping safe. It's the view that ecommerce has 
+arrived."
+
+

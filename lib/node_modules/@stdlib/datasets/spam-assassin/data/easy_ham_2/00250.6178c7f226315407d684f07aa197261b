@@ -1,0 +1,58 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:52:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D111B441E6
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g74AuEv25509 for
+    <jm-ilug@jmason.org>; Sun, 4 Aug 2002 11:56:14 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA16318; Sun, 4 Aug 2002 11:54:14 +0100
+Received: from mail.aculink.net (65-173-158-7.aculink.net [65.173.158.7])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA16281 for
+    <ilug@linux.ie>; Sun, 4 Aug 2002 11:54:07 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host 65-173-158-7.aculink.net
+    [65.173.158.7] claimed to be mail.aculink.net
+Received: from ([204.118.157.69]) by mail.aculink.net (Merak 4.4.2) with
+    SMTP id EDA37003 for <ilug@linux.ie>; Sun, 04 Aug 2002 05:01:15 -0600
+Received: (from redneck@localhost) by cdm01.deedsmiscentral.net
+    (8.11.6/8.11.6/ver) id g74AaBr31977; Sun, 4 Aug 2002 04:36:11 -0600
+Date: Sun, 4 Aug 2002 04:36:11 -0600
+Message-Id: <200208041036.g74AaBr31977@cdm01.deedsmiscentral.net>
+X-No-Archive: yes
+From: SoloCDM <deedsmis@aculink.net>
+Reply-To: <deedsmis@aculink.net>, <ilug@linux.ie>
+To: ILUG (Request) <ilug@linux.ie>
+Subject: [ILUG] One Command -- Four Types
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I tried several ways to force the command ln to create a link with
+an option attached . . . it wouldn't work.
+
+How are there four (/bin/dnsdomainname /bin/domainname
+/bin/nisdomainname /bin/ypdomainname) different types of hostname
+links with their own separate options?
+
+-- 
+Note: When you reply to this message, please include the mailing
+      list and/or newsgroup address and my email address in To:
+
+*********************************************************************
+Signed,
+SoloCDM
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

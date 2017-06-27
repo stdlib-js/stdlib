@@ -1,0 +1,285 @@
+From fork-admin@xent.com  Tue Aug 13 10:31:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2275344142
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7D3H0b15153 for <jm@jmason.org>;
+    Tue, 13 Aug 2002 04:17:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 631CE2940A9; Mon, 12 Aug 2002 20:15:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from ms4.lga2.nytimes.com (ms4.lga2.nytimes.com [64.15.247.148])
+    by xent.com (Postfix) with ESMTP id 6116F2940A6 for <fork@xent.com>;
+    Mon, 12 Aug 2002 20:14:14 -0700 (PDT)
+Received: from email4.lga2.nytimes.com (email4 [10.0.0.169]) by
+    ms4.lga2.nytimes.com (Postfix) with ESMTP id 352125A56D for
+    <fork@xent.com>; Mon, 12 Aug 2002 23:19:26 -0400 (EDT)
+Received: by email4.lga2.nytimes.com (Postfix, from userid 202) id
+    B31F2C433; Mon, 12 Aug 2002 23:09:04 -0400 (EDT)
+Reply-To: khare@alumni.caltech.edu
+From: khare@alumni.caltech.edu
+To: fork@spamassassin.taint.org
+Subject: NYTimes.com Article: Bigger Bar Code Inches Up on Retailers
+Message-Id: <20020813030904.B31F2C433@email4.lga2.nytimes.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 12 Aug 2002 23:09:04 -0400 (EDT)
+
+This article from NYTimes.com 
+has been sent to you by khare@alumni.caltech.edu.
+
+
+Let's see... a decimal digit is about 3.33 bits, so this is all about moving from a 36-bit to a 46-bit addressing system. Kind of makes the debate about IPv6 spaces quite real, as well as the Auto-ID center at MIT's proposal for a physical markup language. 
+
+Actual barcode size may yet decline to the point that 2-D codes may yet make it an individual-item level of addressing.
+
+Seeing software systems this fantastically brittle after fifty years is not, unfortunately, surprising. Are we sure we really know better yet? Are angle brackets really the key to immortality? :->
+
+Interesting reinforcement of the Voyager piece I archived earlier today... 
+
+RK
+
+khare@alumni.caltech.edu
+
+
+Bigger Bar Code Inches Up on Retailers
+
+August 12, 2002
+By KATE MURPHY 
+
+
+
+
+ 
+
+In a little more than two years, retailers in the United
+States and Canada will face a deadline that promises
+technological challenges akin to the Year 2000 computer
+problem. 
+
+Starting Jan. 1, 2005, the 12-digit bar codes retailers use
+to identify everything from cars to candy bars will go to
+13 digits. The additional number (and associated bars and
+spaces) is enough to make checkout scanners seize up and
+make computers crash, perhaps disrupting entire supply
+chains. 
+
+But many retailers have yet to focus on a problem that will
+require significant investments in time and capital. 
+
+"Most retailers are public companies that tend to live
+quarterly and not look ahead, which means they are going to
+be hit over the head with this and have to scramble at the
+last minute to avert disaster," said Thomas Friedman,
+president of Retail Systems Research Services, a company in
+Newton, Mass., that publishes a retail information
+technology newsletter. 
+
+Leading retailers say they have begun to address the issue.
+A spokesman for Wal-Mart Stores, the world's largest
+retailer, said the company had "embraced the concept" of an
+expanded bar code, but he did not respond to questions
+about actual measures taken to prepare computer databases
+and logistical systems. Similarly, a spokesman for the
+Target Corporation said his company was "intellectually
+ready" for the change but refused to comment on whether any
+of its stores or warehouses were technologically ready. 
+
+But Richard A. Galanti, the chief financial officer of
+Costco Wholesale, admitted, "The truth is, given the
+timeline, everybody's still in the assessment phase, trying
+to figure out what to do." 
+
+The difficulty is similar to the one posed by the Year 2000
+computer problem, when computer software had to be switched
+from two-digit entries identifying years to four-digit
+entries. Before Jan. 1, 2000, millions of lines of code had
+to be rewritten to avoid widespread computer failures. 
+
+Bar codes have been used in packaging since 1974, when the
+first item, a pack of chewing gum, was scanned at a
+supermarket in Ohio. The codes identify a product,
+distinguishing between an eight-ounce can of Del Monte
+creamed corn and a medium-size pair of Hanes boxer shorts.
+When a bar code is scanned, the information in the store's
+database lets the retailer assign a price and track sales
+and inventory. 
+
+"The bar code is the linchpin upon which everything in
+retail depends," Mr. Friedman said. 
+
+The reason for expanding the 12-digit bar code, known as
+the Universal Product Code, is twofold. First, there is a
+shortage of U.P.C. numbers. "There's only a certain amount
+of 12-digit numbers, and we're going to run out," said John
+Terwilliger, vice president of global markets at the
+Universal Code Council, a nonprofit organization based in
+Lawrenceville, N.J., that assigns codes in the United
+States and Canada. Second, 13-digit bar codes are used
+almost everywhere else in the world. The council's European
+counterpart, EAN International, based in Brussels, assigns
+these numbers, called European Article Numbers, to
+companies in 99 nations. "Right now," Mr. Terwilliger said,
+"foreign importers have to get a 12-digit U.P.C. to do
+business over here, which they haven't been too happy
+about." 
+
+Foreign manufacturers currently pass on to consumers the
+cost of getting an additional bar code and creating special
+labels for products sold in the United States and Canada.
+"It's an added expense for them, and they have to recoup it
+somewhere," said Debra Shimkus, marketing manager at the
+Chicago Importing Company, a specialty food importer whose
+overseas suppliers are often incredulous when they are told
+they have to get new bar codes for their products before
+they can be sold in American groceries. 
+
+Many foreign manufacturers decide that it is not worth the
+trouble. "A lot of companies have been unwilling to accept
+the additional burden," Mr. Terwilliger said, "and have
+stayed out of the market entirely." 
+
+American and Canadian exporters have not had the same
+obstacle because foreign retailers can easily incorporate a
+12-digit number into their 13-digit databases by making the
+first digit zero. That is why American and Canadian
+manufacturers of products that now have 12-digit codes will
+not be affected by the code expansion. A two-liter bottle
+of Coca-Cola, for example, will keep the same U.P.C., but a
+zero will be added to the beginning of its bar-code number
+in retailers' product databases. 
+
+"The effect of the change in the U.P.C. code falls squarely
+on retailers," said Mr. Friedman. He estimates that the
+upgrade will cost at least $2 million for a chain of 100
+stores with 10 checkout lanes a store. 
+
+The expense will vary depending on the age of a retailer's
+databases, software and hardware and whether it has to hire
+outside consultants to make the change. Scanners and other
+hardware bought more than three years ago will not read
+longer codes and will have to be replaced. Software more
+than five years old will also have to be scrapped. 
+
+"Thank God we'd already planned to buy new equipment for a
+lot of stores this year," said Richard S. Gilbert, director
+of store systems at Duane Reade, a chain of 200 drugstores
+in New York City. The stores have a total of 3,500 scanning
+devices, each costing $1,000 to $2,500. As for the
+cumbersome database modifications that need to be made, Mr.
+Gilbert said: "Our consultants say they are working on it,
+but they haven't gotten back to me with a plan. I still
+don't know how big a deal it's all going to be." 
+
+He might want to ask John Poss. Mr. Poss is the
+merchandising coordinator for Ace Hardware, which has 5,100
+stores and sells some 65,000 coded products. Ace overhauled
+its computer systems to accept longer bar codes in 1999.
+The company, based in Oak Brook, Ill., has retail outlets
+in 70 countries and more than a hundred foreign suppliers. 
+
+"It was such a struggle to get manufacturers to relabel
+things for North America," Mr. Poss said, "and we wanted
+the same system in place globally, so we decided to make
+the change." 
+
+The company hired a consultant, Cognizant Technology
+Solutions, which is based in Teaneck, N.J., and is a
+division of Dun & Bradstreet. Ace's in-house team worked on
+the project during the day while a Cognizant office in
+India took over at night. 
+
+Even so, the project took almost two years to plan and
+carry out. In addition to equipment upgrades, modifications
+had to be made in more than 500 software programs in
+various company divisions (50 in distribution alone). The
+most tedious and time-consuming part of the conversion, Mr.
+Poss said, was making adjustments to databases. "Every
+database in every division touches bar code information,
+and they all needed to be reworked," he said. "It's like
+Y2K, where you had to go in and expand fields and find
+every reference to the date." 
+
+Though Mr. Poss would not disclose the cost of the project,
+he said the gains in efficiency and in suppliers' good will
+had been "well worth the expense." His advice to other
+retailers is to "get busy because you're facing an extreme
+challenge." 
+
+But moving to 13 digits may not be enough. The Universal
+Code Council and EAN International, which formed an
+alliance in 1996, strongly advise manufacturers and
+retailers to go a step further and prepare their systems to
+accommodate a 14-digit code. That is the length of a newly
+patented bar code that takes up less space. Its reduced
+size means that it can be affixed to small items like loose
+produce, and the extra digits let a retailer keep track of
+additional data like batch and lot numbers. 
+
+That additional information would make product recalls
+easier. "Today," Mr. Terwilliger said, "once a product is
+taken out of the shipping container in the warehouse, you
+really can't track it anymore." 
+
+Shipping container bar codes are already 14 digits. The
+different bar-code standards mean that retailers need
+different computer systems for shipping and receiving,
+inventory and sales. By adopting a 14-digit standard,
+retailers should be able to put all the information into a
+single database. 
+
+Mr. Poss said Ace had added the capacity to scan and store
+14 digits when it made its conversion three years ago. "Now
+we can scan anything," he said, "whether it's in the
+warehouse or at the register, and it immediately goes in to
+a centralized system. No more sending data between
+divisions." 
+
+The cost and work of making the transition to 14 digits, he
+said, was the same as it would have been for a change to 13
+digits. 
+
+Representatives from the standards groups said adopting a
+14-digit structure - a step for which no date has been set
+- could help streamline the sharing of data among all parts
+of a retail operation. It would also make it possible, they
+said, to identify products anywhere in the world at any
+time during the trade process. 
+
+"And to think it all started with pack of gum," Mr. Poss
+said. 
+
+http://www.nytimes.com/2002/08/12/technology/12CODE.html?ex=1030208144&ei=1&en=1b5705e7bd2048e6
+
+
+
+HOW TO ADVERTISE
+---------------------------------
+For information on advertising in e-mail newsletters 
+or other creative advertising opportunities with The 
+New York Times on the Web, please contact
+onlinesales@nytimes.com or visit our online media 
+kit at http://www.nytimes.com/adinfo
+
+For general information about NYTimes.com, write to 
+help@nytimes.com.  
+
+Copyright 2002 The New York Times Company
+http://xent.com/mailman/listinfo/fork
+
+

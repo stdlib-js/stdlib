@@ -1,0 +1,69 @@
+From ilug-admin@linux.ie  Mon Sep  2 23:01:03 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 7BDA516F2D
+	for <zzzz@localhost>; Mon,  2 Sep 2002 23:00:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 23:00:59 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82JHuZ18125 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 20:17:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA22095; Mon, 2 Sep 2002 20:17:30 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA22069 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 20:17:21 +0100
+Received: from gonzo.waider.ie
+    (IDENT:R0H7YSHx3yGdRgPLRgXIWteEQXqKrfLs@1Cust11.tnt3.dub2.ie.uudial.net
+    [213.116.44.11]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g82ImBw19655; Mon, 2 Sep 2002 19:48:11 +0100
+Received: from klortho.waider.ie
+    (IDENT:jNbZZ8gDC4k25bWNWT8gu3fsiSlb9Vjt@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g82JHD721425; Mon,
+    2 Sep 2002 20:17:13 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g82JH2P26664; Mon, 2 Sep 2002 20:17:02 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15731.47405.983253.662388@klortho.waider.ie>
+Date: Mon, 2 Sep 2002 20:17:01 +0100
+From: Ronan Waide <waider@waider.ie>
+To: "Kiall Mac Innes" <kialllists@redpie.com>
+Cc: <ilug@linux.ie>
+Subject: RE: [ILUG] VPN implementation
+In-Reply-To: <BCEFLMCEIJHPCPLGADJIMEGPCAAA.kialllists@redpie.com>
+References: <20020902100017.GB2041@bagend.makalumedia.com>
+    <BCEFLMCEIJHPCPLGADJIMEGPCAAA.kialllists@redpie.com>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On September 2, kialllists@redpie.com said:
+> OS-X is linux
+> 
+
+Er, no it's not. It's kinda BSD-related, but it's definitely not
+Linux.
+
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+
+"Since I am project leader, I must not be permitted to go insane."
+                                                                - Theo de Radt
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

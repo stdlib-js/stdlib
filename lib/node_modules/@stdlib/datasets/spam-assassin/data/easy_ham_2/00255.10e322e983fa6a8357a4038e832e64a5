@@ -1,0 +1,108 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:53:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B01EA441EC
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:26 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g74IR1v04830 for
+    <jm-ilug@jmason.org>; Sun, 4 Aug 2002 19:27:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA32249; Sun, 4 Aug 2002 19:24:44 +0100
+Received: from tcob1.net (d-airlock229.esatclear.ie [194.145.133.229]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA32220 for <ilug@linux.ie>;
+    Sun, 4 Aug 2002 19:24:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host d-airlock229.esatclear.ie
+    [194.145.133.229] claimed to be tcob1.net
+Received: from tcob1.net ([192.168.0.1]) by tcob1.net with esmtp (Exim
+    4.10) id 17bQ3P-0007Vz-00 for ilug@linux.ie; Sun, 04 Aug 2002 19:24:35
+    +0100
+Received: from sean by tcob1.net with local (Exim 4.02) id
+    17bQ3G-0004wF-00 for ilug@linux.ie; Sun, 04 Aug 2002 19:24:26 +0100
+To: ilug@linux.ie
+Subject: Re: [ILUG] 3c509 & 2.4.19 problems
+References: <20020804121426.GA92548@orca.ucd.ie>
+From: Sean Rima <sean@tcob1.net>
+Organization: TCOB1 a Fidonet BBS in Ireland
+X-Gnupg-Keyid: 9669DC4F
+X-Gnupg-Fingerprint: 1974 09D0 6539 2399 A4CF 9B71 791F CBD9 9669 DC4F
+X-Attribution: SR
+X-Url: <http://www.tcob1.net>
+X-Operating-System: i586-pc-linux-gnu
+X-Face: Tr`5dV#p:=3L$zY|xi<g,f!N(1[~Ii8O?9H%(""tE.za<XI@F7pVi^yYO:_\eq!P~2yndf\
+    .KP'9>I@)Z2Za*_U[B3)
+Date: Sun, 04 Aug 2002 19:24:23 +0100
+In-Reply-To: <20020804121426.GA92548@orca.ucd.ie> (Albert White's message
+    of
+    "Sun, 4 Aug 2002 13:14:27 +0100")
+Message-Id: <zds.p90.m3u1ma5voo.fsf@tcob1.net>
+User-Agent: Gnus/5.090008 (Oort Gnus v0.08) Emacs/21.2 (i586-pc-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Scanner: exiscan for exim4 (http://duncanthrax.net/exiscan/)
+    *17bQ3P-0007Vz-00*wPfgMoISSJ6*
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On Sun, 4 Aug 2002, Albert White stated:
+
+> Hi folks,
+> 
+> I decided to upgrade the kernel on a machine at home from 2.2.18pre21
+> to the latest from kernel.org which is 2.4.19.
+> 
+> However I have encountered one problem, my network card now dosent
+> work, well kind of dosent work...
+> 
+> Instead of one eth0 on IRQ 10 I now get:
+> Aug  4 11:31:51 mira kernel: eth0: 3c5x9 at 0x220, 10baseT port,
+> Aug  4 11:31:51 mira kernel: address 00 10 5a 3e 0e 48, IRQ 5.
+> Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+> Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+> Aug  4 11:31:51 mira kernel: eth1: 3c5x9 at 0x300, 10baseT port,
+> Aug  4 11:31:51 mira kernel: address 00 10 5a be 0e 48, IRQ 10.
+> Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+> Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+> 
+> This results in the interface(s) coming up but while packets can go
+> out they can not come in.
+> 
+> I've tried not loading the 3c509 mdule on bootup and then `modload
+> 3c509 IRQ=10` bit it still gets loaded as above, on IRQ 5 and 10. On
+> 2.2 it loads to IRQ 10.
+> 
+
+I have been unable to get the 3c509 to work with 2.4.19 with an IRQ of
+10 which works in 2.2.x okay. Can you use anyother irq for it.
+
+Sean
+
+- -- 
+  Sean Rima                                http://www.tcob1.net
+  Linux User:      231986          Jabber:   tcobone@jabber.org
+  THE VIEWS EXPRESSED HERE ARE NOT NECESSARILY THOSE OF MY WIFE.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+Comment: Use GPG for Secure Mail
+
+iD8DBQE9TXFWHMnSWn2nApQRAg9VAKCOMO6oSAD8x6rkTl9QCvcD63vohACgtzPU
+GWvz7cAuETfHwCouOW0NNIY=
+=etR9
+-----END PGP SIGNATURE-----
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

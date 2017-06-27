@@ -1,0 +1,104 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:46:18 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6252843C44
+	for <jm@localhost>; Wed, 14 Aug 2002 05:45:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:45:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DID6412851 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 19:13:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eg5O-0002er-00; Tue,
+    13 Aug 2002 11:08:06 -0700
+Received: from h-66-134-120-173.lsanca54.covad.net ([66.134.120.173]
+    helo=stealthgeeks.net) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17eg4n-0008EI-00 for
+    <razor-users@lists.sourceforge.net>; Tue, 13 Aug 2002 11:07:29 -0700
+Received: (qmail 50918 invoked by uid 1001); 13 Aug 2002 18:07:27 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    13 Aug 2002 18:07:27 -0000
+From: Patrick <patrick@stealthgeeks.net>
+To: David Raistrick <drais@wow.atlasta.net>
+Cc: Justin Shore <listuser@neo.pittstate.edu>,
+	<razor-users@lists.sourceforge.net>
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+In-Reply-To: <Pine.BSF.4.21.0208131031280.48923-100000@wow.atlasta.net>
+Message-Id: <20020813110536.L50887-100000@rockstar.stealthgeeks.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 11:07:27 -0700 (PDT)
+Date: Tue, 13 Aug 2002 11:07:27 -0700 (PDT)
+
+On Tue, 13 Aug 2002, David Raistrick wrote:
+
+> On Tue, 13 Aug 2002, Patrick wrote:
+>
+> > On Tue, 13 Aug 2002, Justin Shore wrote:
+> >
+> > > I'm assuming I need to strip the SpamAssassinReport.txt attachments
+> > > from my spam mailbox before I run the mailbox through razor-report,
+> > > correct?  Does anyone know of an easy way to do this?
+> >
+> > man spamassassin
+>
+>
+> To actually answer Justin's question, (one can assume that he has
+> rewrite_subject and report_header turned on because he wants them..and
+> that he would like to be able to strip the added bits off before he sends
+> them to razor) something as simple as the following would probably work
+> just fine.  Just pipe your message through this, then on into
+> razor-report:
+>
+> grep -v "SPAM:" | sed 's/Subject: \*\*\*\*\*SPAM\*\*\*\*\* /Subject: /'
+
+Why not just use spamassassin -r?
+
+
+       -r, --report
+           Report this message as verified spam.  This will sub-
+           mit the mail message read from STDIN to various spam-
+           blocker databases, such as Vipul's Razor (
+           http://razor.sourceforge.net/ ) and the Distributed
+           Checksum Clearinghouse ( http://www.rhyolite.com/anti-
+           spam/dcc/ ).
+
+           If the message contains SpamAssassin markup, this will
+           be stripped out automatically before submission.
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                               Patrick Greenwell
+         Asking the wrong questions is the leading cause of wrong answers
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

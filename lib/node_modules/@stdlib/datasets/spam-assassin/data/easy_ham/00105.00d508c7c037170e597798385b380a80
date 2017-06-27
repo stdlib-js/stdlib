@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Mon Oct  7 12:06:33 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 1C95616F93
+	for <zzzz@localhost>; Mon,  7 Oct 2002 12:04:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 07 Oct 2002 12:04:52 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g978UXK24245 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 7 Oct 2002 09:30:33 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 2F953341DD; Mon,  7 Oct 2002 09:31:17 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from homer.jinny.ie (homer.jinny.ie [193.120.171.3]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 4E661340D5 for <ilug@linux.ie>;
+    Mon,  7 Oct 2002 09:30:02 +0100 (IST)
+Received: from barney (fw.jinny.ie [193.120.171.2]) by homer.jinny.ie
+    (Postfix) with ESMTP id 9F1157FC45 for <ilug@linux.ie>; Mon,
+    7 Oct 2002 09:30:00 +0100 (IST)
+Received: from john by barney with local (Exim 3.35 #1 (Debian)) id
+    17yTH7-0005Mi-00 for <ilug@linux.ie>; Mon, 07 Oct 2002 09:30:01 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] rpm dependencies
+Message-Id: <20021007083001.GJ16947@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <3D9F1C06.1010204@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D9F1C06.1010204@linux.ie>
+User-Agent: Mutt/1.3.28i
+X-Os: /Linux 2.4.18
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Mon, 7 Oct 2002 09:30:01 +0100
+Date: Mon, 7 Oct 2002 09:30:01 +0100
+
+On Sat, Oct 05, 2002 at 06:06:14PM +0100, Padraig Brady mentioned:
+> OK I'm upgrading vorbis on my machine and I'm getting
+> the following:
+> 
+> # rpm -U libvorbis-* vorbis-tools-1.0-1.i386.rpm
+> error: failed dependencies:
+> 	libvorbisfile.so.0   is needed by SDL_mixer-1.2.0-4
+> 	libvorbisfile.so.0   is needed by xmms-1.2.5-7
+> 	libvorbisfile.so.0   is needed by tuxracer-0.61-5
+> 
+> This is because the new libvorbis.rpm only has libvorbisfile.so.3
+> So is this a problem in the other packages depending on
+> a specific version (libvorbisfile.so.0) rather than on the
+> generic libvorbis.so ?
+
+ This is a pain. 
+
+ The only way you can resolve this, to my knowledge is to download the
+original libvorbis rpm and the new one. Remove the old one, then do:
+
+ rpm -Uvh libvorbis-*
+
+ RPM then assumes that you want both versions installed at the same time,
+and does so. Why you can't do this after you have one library already
+installed is beyond me.
+
+Kate
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

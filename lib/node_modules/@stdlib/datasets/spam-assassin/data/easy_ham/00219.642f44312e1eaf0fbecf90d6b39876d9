@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:49:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 968644415F
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S9FtZ17840 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 10:15:55 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA13581; Wed, 28 Aug 2002 10:14:51 +0100
+Received: from nl-nie-irelay01.cmg.nl ([212.136.56.7]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA13544 for <ilug@linux.ie>; Wed,
+    28 Aug 2002 10:14:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [212.136.56.7] claimed to
+    be nl-nie-irelay01.cmg.nl
+Received: from nl-nie-route01.cmg.nl (nl-nie-route01.cmg.nl
+    [10.224.191.106]) by nl-nie-irelay01.cmg.nl (8.12.1/8.12.1) with ESMTP id
+    g7S9CF7e003573; Wed, 28 Aug 2002 11:12:15 +0200 (MEST)
+Received: from wintermute.att.cmg.nl (ieattp1ifs6.att.cmg.nl
+    [10.226.4.202]) by nl-nie-route01.cmg.nl with SMTP (Microsoft Exchange
+    Internet Mail Service Version 5.5.2653.13) id RPZHMLB1; Wed,
+    28 Aug 2002 11:14:03 +0200
+Received: from ocorrain by wintermute.att.cmg.nl with local (Exim 3.35 #1
+    (Debian)) id 17jyuO-0001tY-00; Wed, 28 Aug 2002 10:14:40 +0100
+To: Inn Share <shareinnn@yahoo.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] find the biggest file
+References: <20020827193152.56961.qmail@web13705.mail.yahoo.com>
+From: Tiarnan O Corrain <tiarnan.o'corrain@cmg.com>
+Date: 28 Aug 2002 10:14:34 +0100
+In-Reply-To: <20020827193152.56961.qmail@web13705.mail.yahoo.com>
+Message-Id: <871y8jibut.fsf@wintermute.att.cmg.nl>
+User-Agent: Gnus/5.0808 (Gnus v5.8.8) Emacs/21.2
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    KAA13544
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Inn Share <shareinnn@yahoo.com> writes:
+
+> Hi,all:
+> 
+> Does anyone know how to list the biggest file in my
+> root directory?or the second biggest ..etc...
+> 
+> Because I want to find out what is the reason cause my
+> root all most full.
+
+find / -xdev -type f -exec du -sk {} \; | sort -rn | head -5
+
+        -xdev will stop find recursing into other filesystems.
+
+Cheers
+Tiarnan
+
+
+-- 
+Tiarnán Ó Corráin
+Consultant / System Administrator
+CMG Wireless Data Solutions Ltd.
+Tel.: +353 21 4933200
+Fax: +353 21 4933201
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

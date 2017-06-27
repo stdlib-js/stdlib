@@ -1,0 +1,62 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:41:36 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 21EBB16F1B
+	for <jm@localhost>; Thu, 26 Sep 2002 16:40:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:40:55 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFSUg24443 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:28:31 +0100
+Message-Id: <200209261528.g8QFSUg24443@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: joelonsoftware <rssfeeds@spamassassin.taint.org>
+Subject: Daniel Berlinger has noticed that Mac software shops are starting
+    to move t
+Date: Thu, 26 Sep 2002 15:28:30 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.joelonsoftware.com/news/20020910.html
+Date: Not supplied
+
+Daniel Berlinger has noticed[1] that Mac software shops are starting to move to 
+OS X-only development. This makes sense, for two reasons. First, most people 
+who pay for software have new computers. So while OS X may only have a small 
+fraction of the installed base, it has the majority of the population of people 
+who are opening their wallets. Second, if OS X isn't successful, the Mac is _
+over_. It's not like System 9 is getting any more popular. 
+
+Then again, there are very few conditions under which it is actually the right 
+business decision to develop software for the Macintosh. Developing for the Mac 
+is not a whole lot different than creating a web site _that only works on 
+Netscape_. (Given the market share of Macs[2] (about 3.5%) and the market share 
+of Netscape[3] (about 3.4%), that is not a silly comparison.) 
+
+Robb Beal wrote[4]: "Try this test. Go to a venture firm, angel, or big company 
+with a Mac OS X product/concept/prototype. Do they consider the fact that it's 
+a Mac application a net plus? (No.)" Well _duh_. Your product would have to 
+appeal to _25 times more Mac _users_ _[as a percentage] than Windows users just 
+to break even. In other words, if your Windows product appeals to 1 in 100 
+Windows users, you have to appeal to 25 in 100 Mac users to make the same 
+amount of money. 
+
+Now, you may want to make an _emotional_ appeal to developing for the Mac. 
+That's fine. If you like Macs and you're doing it for fun, more power to ya. 
+
+But as long as we're talking _investment_, you have to tell me why you're going 
+to get 25 times as many users. Maybe there's less competition in your category 
+on the Mac; maybe you're in a niche like graphics where it seems like Macs 
+dominate (they don't, it just seems that way because the elite graphics people 
+in big American cities use Macs); maybe your product can't sell to mixed 
+environments unless it runs everywhere. But if you want to make an investment 
+in Mac software be prepared to demonstrate how you're going to overcome that 
+magic 25 multiplier.
+
+[1] http://archipelago.phrasewise.com/2002/09/10
+[2] http://maccentral.macworld.com/news/0207/03.marketshare.php
+[3] http://websidestory.com/cgi-bin/wss.cgi?corporate&news&press_1_193
+[4] http://radio.weblogs.com/0001123/2002/04/10.html
+
+

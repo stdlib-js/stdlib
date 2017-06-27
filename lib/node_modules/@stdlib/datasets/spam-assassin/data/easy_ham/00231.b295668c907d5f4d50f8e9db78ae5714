@@ -1,0 +1,73 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 28 13:45:01 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 96C6E43F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 08:45:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 13:45:00 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SCbXZ24192 for
+    <zzzz-rpm@spamassassin.taint.org>; Wed, 28 Aug 2002 13:37:33 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7SCX2J20905; Wed, 28 Aug 2002 14:33:03
+    +0200
+Received: from bonzo.nirvana (pD9E7EF40.dip.t-dialin.net [217.231.239.64])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7SCWfJ20844 for
+    <rpm-list@freshrpms.net>; Wed, 28 Aug 2002 14:32:41 +0200
+From: Axel Thimm <Axel.Thimm@physik.fu-berlin.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: /home/dude
+Message-Id: <20020828143235.A5779@bonzo.nirvana>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 28 Aug 2002 14:32:35 +0200
+Date: Wed, 28 Aug 2002 14:32:35 +0200
+
+Hi,
+
+some time now the following messages were haunting me:
+
+     automount[11593]: attempting to mount entry /home/dude
+
+It just came to my attention, that only freshrpm benefitting hosts showed this
+up. I grepped through the binaries and found referrences to /home/dude.
+
+# grep /home/dude /usr/bin/*
+Binary file /usr/bin/aaxine matches
+Binary file /usr/bin/gentoo matches
+Binary file /usr/bin/gphoto2 matches
+Binary file /usr/bin/gtkam matches
+...
+
+I am now relaxed again ;), and pass this info on. Probably Matthias Saou
+himself is "dude", and some package has hardwired a path in his build
+directory. It would be nice to find out which and fix it, but I am using too
+many of the freshrpm suite to narrow it down.
+
+Regards, Axel.
+-- 
+Axel.Thimm@physik.fu-berlin.de
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

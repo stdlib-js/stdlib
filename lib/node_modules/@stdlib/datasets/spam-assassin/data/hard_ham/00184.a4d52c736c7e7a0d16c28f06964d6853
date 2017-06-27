@@ -1,0 +1,196 @@
+From list@iSilo.com  Fri Aug 16 10:58:11 2002
+Return-Path: <list@iSilo.com>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D821B43C4B
+	for <zzz@localhost>; Fri, 16 Aug 2002 05:56:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Fri, 16 Aug 2002 10:56:39 +0100 (IST)
+Received: from phish.siteprotect.com (phish.siteprotect.com [64.26.0.106])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7FJMQ714634 for
+    <zzz@spamassassin.taint.org>; Thu, 15 Aug 2002 20:22:26 +0100
+Received: (from isilo@localhost) by phish.siteprotect.com (8.9.3/8.9.3) id
+    OAA25135; Thu, 15 Aug 2002 14:22:26 -0500
+Date: Thu, 15 Aug 2002 14:22:26 -0500
+Message-Id: <200208151922.OAA25135@phish.siteprotect.com>
+To: zzz@spamassassin.taint.org
+From: iSilo <list@iSilo.com>
+Subject: iSilo announcements (August 15, 2002)
+
+----------------------------------------------------------------------
+1. iSilo(TM) 3.2 for Palm OS and Pocket PC enters beta1
+2. iSilo(TM) 3.2 for Windows enters beta1
+3. iSiloX 3.2 for Windows and Mac OS enters beta1
+4. iSiloXC 3.2 for Windows, Linux, FreeBSD, Mac OS X,
+   and Solaris enter beta1
+----------------------------------------------------------------------
+
+======================================================================
+1. iSilo(TM) 3.2 for Palm OS and Pocket PC enters beta1
+----------------------------------------------------------------------
+iSilo(TM) 3.2b1 adds the following new features to iSilo 3.15:
+
+- A System Information dialog, accessible from either the document
+  list view or while viewing a document through the Tools menu.
+  The dialog displays the user name (e.g., owner name) and the
+  associated user ID of the device.  For Palm OS, the dialog also
+  displays the free and total amount of dynamic and storage memory.
+- Support for iSiloX/iSiloXC generated password protected documents.
+  The password protection is embedded into the document during
+  conversion and can not be modified nor removed from the converted
+  document.
+- Support for iSiloX/iSiloXC generated registration code protected
+  documents. The registration code protection is embedded into the
+  document during conversion.
+- Support for iSiloX/iSiloXC generated documents that include an
+  expiration date. The expiration date is embedded into the document
+  during conversion.
+- Support for displaying Title, Author, and Publisher information
+  messages through the Document Information dialog accessible through
+  the Edit menu while viewing a document.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSilo(TM) 3.2b1 for Palm OS(R), please go to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloPalmOS.htm>
+
+To download iSilo 3.2b1 for Pocket PC, please go to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloPPC.htm>
+
+
+======================================================================
+2. iSilo(TM) 3.2 for Windows enters beta1
+----------------------------------------------------------------------
+iSilo(TM) 3.2 will be the first version of iSilo for Windows
+and has the requirements shown here.
+
+Basic requirements:
+- Pentium or comparable processor
+- Windows 95 with Internet Explorer 4.0.1 or later, Windows 98,
+  Windows Millennium, Windows NT 4.0 with Service Pack 6,
+  Windows 2000, or Windows XP
+- 16MB of RAM for Windowsr 95 and Windows 98 (32MB recommended),
+  32MB of RAM for Windows Millennium and Windows NT 4.0,
+  64MB of RAM for Windows 2000 and Windows XP
+- 5MB of available hard-disk space for installation
+
+Additional functionality specific requirements:
+- Additional memory required for document storage.
+- iSiloX required for creating documents utilizing maximum document
+  presentation capabilities.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSilo 3.2b1 for Windows, please go to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloW32.htm>
+
+
+======================================================================
+3. iSiloX 3.2 for Windows and Mac OS enters beta1
+----------------------------------------------------------------------
+iSiloX 3.2b1 adds the following features to iSiloX 3.15:
+
+- In the Security properties, added support for protecting a document
+  with any or all of a password, registrationn code, and expiration
+  date.
+- Added a Messages property page for specifying title, author,
+  publisher, password, registration code, and expiration date
+  messages for the document.
+- Added cookie support and a Cookies property page for managing
+  cookies.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSiloX 3.2b1 for Windows, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXWindows.htm>
+
+To download iSiloX 3.2b1 for Mac OS, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXMac.htm>
+
+
+======================================================================
+4. iSiloXC 3.2 for Windows, Linux, FreeBSD, Mac OS X,
+   and Solaris enter beta1
+----------------------------------------------------------------------
+iSiloX 3.2b1 adds the following features to iSiloX 3.15:
+
+- Added <Password>, <RegistrationCode>, and <Expiration> container
+  elements under the <SecurityOptions> element for protecting a
+  document with any or all of a password, registration code, and
+  expiration date. See .ixl file format for more information.
+- Added <Messages> element for specifying title, author, publisher,
+  password, registration code, and expiration date messages for the
+  document. See .ixl file format for more information.
+- Added cookie support and the <CookieOptions> element for managing
+  cookies. See .ixl file format for more information.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSiloXC 3.2b1 for Windows, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCWindows.htm>
+
+To download iSiloXC 3.2b1 for Linux, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXC386.htm>
+
+To download iSiloXC 3.2b1 for FreeBSD, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCBSD.htm>
+
+To download iSiloXC 3.2b1 for Mac OS X, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCOSX.htm>
+
+To download iSiloXC 3.2b1 for Solaris, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCSOL.htm>
+
+
+----------------------------------------------------------------------
+You have received this message because you subscribed to the
+iSilo(TM) mailing list.  If you would like to be removed from
+this list, please send an email with the subject "unsubscribe"
+to: <list@iSilo.com>.
+
+Please note that this email address only handles subscriptions
+and unsubscriptions of the mailing list.  Any other messages
+sent to this email address are automatically deleted.
+
+----------------------------------------------------------------------
+iSilo(TM)             http://www.iSilo.com             email@iSilo.com
+

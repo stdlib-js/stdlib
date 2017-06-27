@@ -1,0 +1,123 @@
+From exmh-workers-admin@redhat.com  Thu Oct  3 12:22:09 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6403D16F16
+	for <jm@localhost>; Thu,  3 Oct 2002 12:22:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:22:08 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92N1VK00712 for
+    <jm-exmh@jmason.org>; Thu, 3 Oct 2002 00:01:32 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 870D83EBE8; Wed,  2 Oct 2002
+    19:02:03 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 9EC323ECDA
+    for <exmh-workers@listman.redhat.com>; Wed,  2 Oct 2002 19:01:00 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g92N10M15340 for exmh-workers@listman.redhat.com; Wed, 2 Oct 2002
+    19:01:00 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g92N10f15334 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 19:01:00 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g92Mg5i19652 for <exmh-workers@redhat.com>; Wed, 2 Oct 2002 18:42:05 -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id 126E937EBF;
+    Wed,  2 Oct 2002 18:00:58 -0500 (CDT)
+Received: from dimebox.bmc.com (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id DFD8637EBE for <exmh-workers@redhat.com>;
+    Wed,  2 Oct 2002 18:00:58 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 cvs 10/01/2002 with nmh-1.0.4
+In-Reply-To: <22745.1033456497@munnari.OZ.AU>
+References: <3703.1033415613@dimebox.bmc.com>
+    <20020930185727.5ACA84A3@gray.impulse.net>
+    <22745.1033456497@munnari.OZ.AU>
+Comments: In-reply-to Robert Elz <kre@munnari.OZ.AU> message dated "Tue,
+    01 Oct 2002 14:14:57 +0700."
+To: exmh-workers@spamassassin.taint.org
+Subject: Re: Working My_Mark2CurSeen
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <16828.1033599653@dimebox.bmc.com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 02 Oct 2002 18:00:53 -0500
+
+
+[I wrote this last night but it appears I never sent it... still 
+haven't had time to dig in to it...]
+
+
+>>>>> On Tue, 1 Oct 2002, "Robert" == Robert Elz wrote:
+
+  Robert> No, but using PickMarkSeen (and pick(ids)) as an
+  Robert> alternative to just doing
+
+  Robert> Seq_Del $exmh(folder) $mhProfile(unseen-sequence) $results
+
+
+Ah.  Neither Ted nor I were particularly up to date.  I pulled 
+down the lates from CVS and am now running with it.  I miss the 
+blue ftoc lines but I'll sort that out soon, iirc Chris said 
+it's a simple resource change.
+
+Ted's code to "ketchup" made use of some of the procs that went 
+away in the sequence generalization.  I've fixed it up... almost 
+and it looks like this now:
+
+proc Cabeen_Mark2CurSeen {} {
+    global exmh mhProfile msg
+    set results {}
+    Exmh_Status "Clearing unseen up to cur..." red
+    Mh_SetCur $exmh(folder) $msg(id)
+    set unseen [Mh_Sequence $exmh(folder) $mhProfile(unseen-sequence) ]
+    foreach elem $unseen {
+         if { $elem <= $msg(id) } {
+            lappend results $elem
+         }
+    }
+    busy Seq_Del $exmh(folder) $mhProfile(unseen-sequence) $results
+    Exmh_Status ok blue
+}
+
+
+The "almost" is because it's not updating the highlighting on 
+the ftoc.  I'm too tired to go figure out how to fix that just 
+now and have to move on to other stuff.  If someone wants to 
+forward me a clue feel free.
+
+Now that I've got all of Chris' sequence stuff I discovered that 
+my sequences are ... cluttered.
+
+--Hal
+
+
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

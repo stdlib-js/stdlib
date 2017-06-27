@@ -1,0 +1,81 @@
+From ilug-admin@linux.ie  Wed Aug 21 12:57:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B998F43C37
+	for <jm@localhost>; Wed, 21 Aug 2002 07:57:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 12:57:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LBttZ22858 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 12:55:55 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA27564; Wed, 21 Aug 2002 12:54:55 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA27527 for <ilug@linux.ie>;
+    Wed, 21 Aug 2002 12:54:47 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id 4C9AD2B7A3; Wed, 21 Aug 2002
+    12:54:16 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2214) id 2EFD0E7D4;
+    Wed, 21 Aug 2002 12:54:16 +0100 (IST)
+Received: from localhost (localhost [127.0.0.1]) by skynet.csn.ul.ie
+    (Postfix) with ESMTP id 2DACF7243; Wed, 21 Aug 2002 12:54:16 +0100 (IST)
+Date: Wed, 21 Aug 2002 12:54:15 +0100 (IST)
+From: "Cathal A. Ferris" <pio@csn.ul.ie>
+X-X-Sender: pio@skynet
+To: Kiall Mac Innes <kialllists@redpie.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] URGENT: Cant get a skrew out... PLEASE HELP!
+In-Reply-To: <BCEFLMCEIJHPCPLGADJICEDPCAAA.kialllists@redpie.com>
+Message-Id: <Pine.LNX.4.44.0208211248490.7585-100000@skynet>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Spray a bit of wd40 around the screw, and leave for a few minutes
+
+Try using a small crocodile-nosed pliers if you have enough space around
+th head of the screw. If not, try a hacksaw blade on the shaft of the
+screw under the board (taking care not to scratch the underside of the
+board. after cutting the screw, that holder on the board support structure
+cannot really be used again.
+
+Another method is to get a small screwdriver that you can consider
+disposable, and gently tap it into the head of the stripped screw, until
+you either have a flat head screw, or you can get enough turning force
+ on it.
+
+Cathal.
+
+On Wed, 21 Aug 2002, Kiall Mac Innes wrote:
+> Hi i have a phillips head skrew thats holding a circut board together i need
+> to take it out ASAP and nothing will work, the threads on the skrew are
+> almost completly gone, its is a very small skrew that i have to use a
+> percision skrewdriver set to remove the skrews any help would be
+> appreaciated...
+>
+> Kiall Mac Innes
+>
+>
+>
+
+-- 
+Cathal Ferris.			pio@skynet.ie
++353 87 9852077			www.csn.ul.ie/~pio
+---
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,119 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1E07344120
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:30 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CICub28559 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 19:12:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA31705; Mon, 12 Aug 2002 19:12:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA31673 for <ilug@linux.ie>;
+    Mon, 12 Aug 2002 19:12:23 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17eJfx-0008DV-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 11:12:21 -0700
+Date: Mon, 12 Aug 2002 11:12:20 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020812181220.GZ25331@linuxmafia.com>
+References: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Paul Linehan (plinehan@yahoo.com):
+
+> What is the GPL all about then?
+
+(1) I'm sure you are not _actually_ under the delusion that everything
+on a typical Linux distribution issued subject to the terms of the GNU
+GPL.  For one thing, it seems difficult to imagine you _not_ being aware
+that XFree86 is under the X/MIT licence, that Perl is under the Perl
+Artistic Licence, that Apache is under the Apache licence, and that
+numerous BSD utilities are under the BSD licence.
+
+Furthermore, xv, Acrobat Reader, pine, pico, Netscape Communicator, and
+a whole slew of other applications typically included aren't under any
+open source licence at all, but rather are proprietary.
+
+(2) You seem, in any event, to be under a misconception as to what the
+GPL provides, as to code under its umbrella.  It says (in part) that
+_if_ you have lawfully received a copy of covered binary code, then you
+may insist on one of certain forms of access to the matching source
+code.  Please note that it does _not_ guarantee you any rights
+whatsoever if nobody's decided to give you a lawful copy.
+
+> But *_surely_* they cannot BSD Linux? It's not theirs to BSD!
+
+Again, you seem to be under a misconception.  If you check, I'm quite
+confident you'll see that SuSE are in full compliance with GPL v. 2's
+source-code access provisions concerning GPLed code included in their
+distribution.  And no, nobody has the legal right to alter licence terms
+to someone else's copyrighted property.  But you have not cited any
+reasons to believe that SuSE have done any of those things.
+ 
+> Fine - nobody can oblige SuSE to do anything other than put up the ftp
+> version, but surely they can't prevent a CD owner from burning a copy
+> and giving it to me?
+
+See below.  You and the CD owner would be committing copyright violation.
+SuSE Linux AG are rather unlikely to knock down your door and haul you
+down to a judge, if that's what you're asking.
+
+> Nobody can oblige them to give away anything other than ftp - I'm not
+> asking for that. I'm asking for somebody who has Linux (GPL'ed) to
+> burn a copy for me and give it to me in exchange for a reasonable
+> consideration (say, the price of the CDs and a bottle of Frascati or a
+> couple of pints?).
+
+You appear confused between Linux the kernel (which is a copyrighted
+work to which source code access is guaranteed under the GNU GPL if
+you've received a lawful copy of a binary version) and the rather
+imprecise concept of a "Linux distribution", which is a number of works
+under diverse licence terms collected onto some media.
+
+In the case of SuSE's boxed sets -- which are NOT lawful to duplicate
+and redistribute in their entirety -- at least a couple of the
+applications on them (YaST, YaST2, and the installer program) are
+proprietary copyrighted works of SuSE Linux AG.  In the general case,
+duplicating and redistributing CD-ROMs containing those works is
+copyright infringement.  Illegal.  No amount of hand-waving about the
+GNU GPL is going to change that.
+
+(SuSE permit people to duplicate and redistribute the "evaluation" and
+"live-eval" CD editions, despite that fact, as long as it is not "for
+value".)
+
+If you want to have a SuSE boxed set to install from, buy one.
+
+> What does the GPL mean now?
+
+Suggestion:  Read it.  I would guess you've not yet done so.
+
+-- 
+Cheers,                                             Live Faust, die Jung.
+Rick Moen
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

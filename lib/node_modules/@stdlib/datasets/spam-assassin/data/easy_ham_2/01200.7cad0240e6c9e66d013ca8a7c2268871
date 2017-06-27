@@ -1,0 +1,109 @@
+From rpm-list-admin@freshrpms.net  Fri Aug  9 16:00:54 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AC85E440E9
+	for <jm@localhost>; Fri,  9 Aug 2002 10:57:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:57:51 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EZKb08327 for
+    <jm-rpm@jmason.org>; Fri, 9 Aug 2002 15:35:20 +0100
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id WAA01071 for <jm-rpm@jmason.org>;
+    Thu, 8 Aug 2002 22:03:10 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g78Kv2J01651; Thu, 8 Aug 2002 22:57:02
+    +0200
+Received: from imf13bis.bellsouth.net (mail213.mail.bellsouth.net
+    [205.152.58.153]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g78KuTJ01503 for <rpm-list@freshrpms.net>; Thu, 8 Aug 2002 22:56:29 +0200
+Received: from adsl-157-16-104.msy.bellsouth.net ([66.157.16.104]) by
+    imf13bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020808205756.OYXL9094.imf13bis.bellsouth.net@adsl-157-16-104.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Thu, 8 Aug 2002 16:57:56 -0400
+Subject: Re: Pango problems
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020808173048.18b4bb62.matthias@egwn.net>
+References: <20020807182804.5d5e4dcb.kilroy@kamakiriad.com>
+    <20020808173048.18b4bb62.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-4)
+Message-Id: <1028840182.16079.0.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 08 Aug 2002 15:56:21 -0500
+Date: 08 Aug 2002 15:56:21 -0500
+
+I find Gnome2 with Red Hat's Limbo to be quite nice.
+
+On Thu, 2002-08-08 at 10:30, Matthias Saou wrote:
+> Once upon a time, Brian wrote :
+> 
+> >     I'm using the Gnome2 set of rpms through apt.  It's very good, though
+> >     it's shy of converted apps and such.  I really like it; it's the
+> >     simple, stable competitor to Windows(tm) that we all need/want/etc.
+> 
+> Well, you can already remove me from your "all" statement... :-( I've been
+> using GNOME 2 at home ever since it made it into Rawhide, and I must say
+> that I feel really uncomfortable with it : Things are just too limited and
+> you're now asked to stick with the defaults. I've already switched back
+> from Metacity to Sawfish, but for the main GNOME stuff like the panel and
+> the control center... there are now too few options for "advanced users"
+> like me who like to be able to configure as much as possible.
+> 
+> Let's see how it evolves... but the GNOME guys who decide seem to want to
+> change everything to be as simple and limited as possible to not confuse
+> the basic (lower then average IMHO) user. So in the meantime, I stick with
+> GNOME 1.4 and I'm quite happy with how it performs in my daily tasks
+> although it doesn't have the nice look of anti-aliased fonts (I mainly use
+> and LCD screen and projector anyway).
+> 
+> >     Problem is, though, Pango (a package that deals with international
+> >     font rendering) hasn't been made available to the apt repository on
+> >     Sunmore.net.
+> 
+> Maybe try grabbing it from the latest Red Hat Linux beta (Limbo) or from
+> Rawhide...
+> 
+> >     Who the heck do I contact for this, anyway?
+> 
+> Not me, sorry!
+> 
+> Matthias
+> 
+> -- 
+> Matthias Saou                                World Trade Center
+> -------------                                Edificio Norte 4 Planta
+> System and Network Engineer                  08039 Barcelona, Spain
+> Electronic Group Interactive                 Phone : +34 936 00 23 23
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

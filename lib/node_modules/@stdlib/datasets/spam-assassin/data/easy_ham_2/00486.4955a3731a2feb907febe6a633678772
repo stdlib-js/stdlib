@@ -1,0 +1,94 @@
+From iiu-admin@taint.org  Fri Jul 19 16:07:38 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5B1DF440CC
+	for <jm@localhost>; Fri, 19 Jul 2002 11:07:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:07:34 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JF4AJ06915;
+    Fri, 19 Jul 2002 16:04:10 +0100
+Received: from waterford.wizardr.ie (root@stargate.wizardr.ie
+    [194.125.0.34]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6JERLJ04422 for <iiu@taint.org>; Fri, 19 Jul 2002 15:27:21 +0100
+Received: from hackwatch.com (void.nsa.ie [193.120.253.3]) by
+    waterford.wizardr.ie (8.9.3/8.9.3) with ESMTP id PAA05822; Fri,
+    19 Jul 2002 15:27:17 +0100
+Message-Id: <3D3821E7.565A1DE4@hackwatch.com>
+From: John McCormac <yyyycc@hackwatch.com>
+Organization: HackWatch
+X-Mailer: Mozilla 4.78 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: James Raftery <james@now.ie>
+Cc: iiu@taint.org
+Subject: Re: [IIU] IE nameserver problems
+References: <20020719135918.GD24934@bender.kerna.ie>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users List. See http://iiu.taint.org/
+    <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+X-Original-Date: Fri, 19 Jul 2002 15:27:51 +0100
+Date: Fri, 19 Jul 2002 15:27:51 +0100
+
+James Raftery wrote:
+> 
+> Hi,
+> 
+> Four of the IE nameservers are publishing out of date DNS information.
+> The four listed below are publishing the IE zone from last Friday.
+> They are six days behind reality.
+
+James,
+Last week, when indexing stuff for WhoisIreland.com, I noticed that
+ns0.domainregistry.ie and banba.domainregistry.ie were out of synch by a
+few days. The other nameservers seemed to give a current SOA at that
+time. However the affected secondaries may have been using
+ns0.domainregistry.ie for axfr and propagated the error.
+
+This whole thing does seriously bring into question IEDR's decision to
+outsource the technical admininstration of .ie to a company that
+apparently does not even admin its own DNS.  It is a nice story though -
+almost as good as the time that .ie disappeared for 8 hours in July
+1998.
+
+Regards...jmcc
+-- 
+********************************************
+John McCormac            * Hack Watch News
+jmcc@hackwatch.com       * 22 Viewmount, 
+Voice:   +353-51-873640  * Waterford,
+BBS&Fax: +353-51-850143  * Ireland
+http://www.hackwatch.com/~kooltek
+********************************************
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 2.6
+
+mQCNAzAYPNsAAAEEAPGTHaNyitUTNAwF8BU6mF5PcbLQXdeuHf3xT6UOL+/Od+z+
+ZOCAx8Ka9LJBjuQYw8hlqvTV5kceLlrP2HPqmk7YPOw1fQWlpTJof+ZMCxEVd1Qz
+TRet2vS/kiRQRYvKOaxoJhqIzUr1g3ovBnIdpKeo4KKULz9XKuxCgZsuLKkVAAUX
+tCJKb2huIE1jQ29ybWFjIDxqbWNjQGhhY2t3YXRjaC5jb20+tBJqbWNjQGhhY2t3
+YXRjaC5jb20=
+=sTfy
+-----END PGP PUBLIC KEY BLOCK-----
+_______________________________________________
+Irish Internet Users mailing list
+Irish Internet Users@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

@@ -1,0 +1,116 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:11:54 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E6CDA440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:11:52 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:11:52 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGL901399 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:21 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32520 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:49:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA31570; Mon, 22 Jul 2002 15:48:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay07.indigo.ie (relay07.indigo.ie [194.125.133.231]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id PAA31537 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 15:48:20 +0100
+Received: (qmail 79500 messnum 1024557 invoked from
+    network[194.125.130.10/unknown]); 22 Jul 2002 14:48:16 -0000
+Received: from unknown (HELO win2000) (194.125.130.10) by
+    relay07.indigo.ie (qp 79500) with SMTP; 22 Jul 2002 14:48:16 -0000
+Reply-To: <macarthy@iol.ie>
+From: "Justin MacCarthy" <macarthy@iol.ie>
+To: "irish linux users group" <ilug@linux.ie>
+Subject: RE: [ILUG] bind + lex + yacc...
+Date: Mon, 22 Jul 2002 15:48:54 +0100
+Message-Id: <OFEGLPGPCHPACFLJPAILAEENDNAA.macarthy@iol.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+In-Reply-To: <20020722153905.A27790@ie.suberic.net>
+Importance: Normal
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Never having to support a large network myself, I know very little about
+this..
+but what do lex & yacc have to do with anything ?
+
+These are language parsers, used to build complilers / interptreters  and
+the like???!!!
+
+BIND, ok large networks might need DNS....
+
+Have I missed something completely?
+
+J
+
+> -----Original Message-----
+> From: ilug-admin@linux.ie [mailto:ilug-admin@linux.ie]On Behalf Of kevin
+> lyda
+> Sent: Monday, July 22, 2002 3:39 PM
+> To: irish linux users group
+> Subject: [ILUG] bind + lex + yacc...
+>
+>
+> i recently received this email from a friend of mine in the states:
+>
+>     i'm trying to figure out how to maintain about 200 domains, with a
+>     hundred or so computers per domain.  some internal, some external.
+>     i recently learned lex and yacc and i'm thinking that's the way to go.
+>     i don't really know perl and i know it's useful but i think i can
+>     write c faster then perl.
+>
+>     is this a good idea?
+>
+>     ps  we're really busy.
+>
+> obviously as a stupid developer with no real admin experience to speak
+> of, i'm not qualified to answer this question.  does anyone with real
+> admin experience have any suggestions here?  the problem sounds really
+> hard, and i doubt anyone has had to deal with this level of complexity
+> so there probably aren't any existing tools written.
+>
+> anyone else have any opinions or experience i could pass on?
+>
+> kevin
+>
+> --
+> kevin@suberic.net     that a believer is happier than a skeptic
+> is no more to
+> fork()'ed on 37058400    the point than the fact that a drunken
+> man is happier
+> meatspace place: home       than a sober one. the happiness of
+> credulity is a
+> http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+> information.
+> List maintainer: listmaster@linux.ie
+>
+>
+>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

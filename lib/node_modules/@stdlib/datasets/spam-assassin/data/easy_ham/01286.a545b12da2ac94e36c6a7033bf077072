@@ -1,0 +1,113 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 16:32:22 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5E99643F99
+	for <jm@localhost>; Thu, 29 Aug 2002 11:32:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 16:32:22 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TFWmZ18299 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 16:32:48 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7TFN2J02111; Thu, 29 Aug 2002 17:23:02
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7TFM0J01934 for
+    <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 17:22:00 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: ALSA (almost) made easy
+Message-Id: <20020829171121.3b5d0506.matthias@egwn.net>
+In-Reply-To: <20020829141143.61528.qmail@web20002.mail.yahoo.com>
+References: <20020829133306.21299713.matthias@egwn.net>
+    <20020829141143.61528.qmail@web20002.mail.yahoo.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 29 Aug 2002 17:11:21 +0200
+Date: Thu, 29 Aug 2002 17:11:21 +0200
+
+Once upon a time, Joshua wrote :
+
+> Just a thought, would it be possible to generalize this ALSA 
+> stuff to make building a kernel with *any* custom/optional/updated
+> modules an easy thing? I think some scripts or at least step-by-step
+> instructions would be great. 
+> 
+> For example, to build a kernel RPM with ALSA do:
+> 1. get the kernel source
+> 2. get the ALSA source
+> 3. run the custom-kernel.sh script
+> ...
+> 
+> Or a kernel RPM with the lastest wireless LAN drivers:
+> 1. get the kernel source
+> 2. get the CVS driver source
+> 3. run the custom-kernel.sh script
+> ...
+> 
+> etc.
+
+This wouldn't be worth the effort involved IMHO, and would probably end up
+in relative breakage of a few systems if not carefully tested.
+Your first example is a good one, because I really think it's even easier
+currently :
+1. Leave your current kernel as-is
+2. Get the "alsa-driver" source rpm
+3. Rebuild and install resulting packages
+
+Drivers that are written to be easily compiled as modules (like ltmodem,
+NVidia, ALSA etc.) can easily be repackaged separately as rpms and ported
+as easily for various kernel rpms from the source rpm.
+
+Also, what you describe is sort of the opposite of what rpm packaging is in
+my mind. I see it more as a "one size fits all" achievement in the general
+case. And kernel isn't an exception (although there are packages optimized
+for various processors) since they all come with just about all the modules
+you'll ever need. Make that "one size fits many" then if you want ;-)
+
+Last but not least : The kernel is something I'm trying to keep away from
+in my packaging since I really don't want to see newbies screwing up their
+systems because of packages on my website... same goes for GNOME, KDE and
+other major bits of the distribution since I also want people who happily
+use my packages to be able to upgrade to the next Red Hat Linux release
+without having their system turned into another Ximian mess.
+
+Matthias
+
+PS: Yes Chris, I'm worried about not giving you too much work! Less in fact
+since you can easily answer "freshrpms.net!" to people asking how to play
+DVDs, right? ;-))))
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

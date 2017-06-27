@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:21:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BF090440DA
+	for <jm@localhost>; Fri,  9 Aug 2002 10:20:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:20:54 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EIab05989 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:18:36 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA04704 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 10:09:19 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA31316; Fri, 9 Aug 2002 10:08:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp011.mail.yahoo.com (smtp011.mail.yahoo.com
+    [216.136.173.31]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id KAA31290
+    for <ilug@linux.ie>; Fri, 9 Aug 2002 10:08:09 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 9 Aug 2002 09:08:07 -0000
+Message-Id: <007c01c23f83$c3190e20$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "Ryan, Shane" <Shane_Ryan@education.gov.ie>, <ilug@linux.ie>
+References: <9C498074D5419A44B05349F5BF2C26301CFA6C@sdubtalex01.education.gov.ie>
+Subject: Re: [ILUG] TMDA (WAS --> slashdot EW Dijkstra humor]
+Date: Fri, 9 Aug 2002 10:04:24 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Shan Ryan suggested:
+> IMHO stopping spammers is a great idea but I'd rather
+> have to hit d or delete rather than have my messages
+> bounced by someone else's ISP.
+
+You could also change your e-mail to a more responsible provider. If Eircom
+are not up to scratch, then use somebody else and make sure you let Eircom
+know why you think they are so useless. You can still keep your old e-mail
+address if you have to.
+
+To suggest that ISP's should not protect themselves against incompotent
+configurations would effectively be a vote in support of SPAM.
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

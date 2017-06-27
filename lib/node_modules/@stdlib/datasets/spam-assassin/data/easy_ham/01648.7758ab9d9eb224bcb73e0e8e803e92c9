@@ -1,0 +1,48 @@
+Return-Path: bkc@murkworks.com
+Delivery-Date: Fri Sep  6 16:02:11 2002
+From: bkc@murkworks.com (Brad Clements)
+Date: Fri, 06 Sep 2002 11:02:11 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061443.g86EhXQ14543@pcp02138704pcs.reston01.va.comcast.net>
+References: Your message of "Fri, 06 Sep 2002 10:39:48 EDT."
+	<3D788653.9143.1D8992DA@localhost> 
+Message-ID: <3D788B92.22739.1D9E0FD1@localhost>
+
+Did you want this on the list? I'm replying to the list..
+
+On 6 Sep 2002 at 10:43, Guido van Rossum wrote:
+
+> What's an auto-ham?
+
+Automatically marking something as ham after a given timeout.. regardless of how long 
+that timeout is, someone is going to forget to submit the message back as spam. 
+
+How many spams-as-hams can be accepted before the f-n rate gets unacceptable?
+
+
+> > How about adding an IMAP server with a spam and deleted-ham
+> > folder. Most email clients can handle IMAP. Users should be able to
+> > quickly move "spam" into the spam folder.
+> 
+> I personally don't think IMAP has a bright future, but for people who
+> do use it, that's certainly a good approach.
+> 
+> > Instead of deleting messages (or, by reprogramming the delete
+> > function) they can quickly move ham into the ham folder.
+> 
+> Yes.
+
+I view IMAP as a stop-gap measure until tighter integration with various email clients 
+can be achieved.
+
+I still feel it's better to require classification feedback from the recipient, rather than 
+make any assumptions after some period of time passes. But this is an end-user issue 
+and we're still at the algorithm stage.. ;-)
+
+
+
+
+Brad Clements,                bkc@murkworks.com   (315)268-1000
+http://www.murkworks.com                          (315)268-9812 Fax
+AOL-IM: BKClements
+

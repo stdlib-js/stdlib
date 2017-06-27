@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Mon Jul 15 21:14:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by netnoteinc.com (Postfix) with ESMTP id 6A56D43F9E
+	for <jm@localhost>; Mon, 15 Jul 2002 16:14:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 15 Jul 2002 21:14:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6FKAxJ03284 for <jm@jmason.org>;
+    Mon, 15 Jul 2002 21:10:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E861B2940B5; Mon, 15 Jul 2002 13:00:15 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id E0568294098 for <FoRK@xent.com>;
+    Mon, 15 Jul 2002 13:00:13 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g6FK9Gi21617 for
+    <FoRK@xent.com>; Mon, 15 Jul 2002 13:09:17 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: Project Battuta: Geospatial data in the field
+Date: Mon, 15 Jul 2002 13:07:37 -0700
+Message-Id: <AMEPKEBLDJJCCDEJHAMIGEDKFCAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+Interesting project involving geospatial data for mostly governmental uses.
+They have a deep understanding of geospatial data needs for several
+government agencies. The project infrastructure is centralized, and has been
+used in the field on several projects.
+
+http://dg.statlab.iastate.edu/dg/research/
+
+- Jim
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

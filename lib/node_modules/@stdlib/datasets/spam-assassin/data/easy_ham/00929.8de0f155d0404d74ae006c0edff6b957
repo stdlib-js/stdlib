@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 18:41:34 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E307F47C68
+	for <jm@localhost>; Thu, 22 Aug 2002 13:41:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 18:41:28 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MHbqZ17896 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 18:37:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hvtH-0003kF-00; Thu,
+    22 Aug 2002 10:37:03 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hvsH-0008RU-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 10:36:01 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7MHZLW7031540;
+    Thu, 22 Aug 2002 12:35:23 -0500
+MIME-Version: 1.0
+Message-Id: <p04310110b98ad11c7d13@[198.248.208.11]>
+In-Reply-To: <20020822171604.GB16421@kluge.net>
+References: <200208221905.33723@malte.stretz.eu.org>
+    <20020822171604.GB16421@kluge.net>
+To: Theo Van Dinter <felicity@kluge.net>,
+	"Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [SAtalk] 2800 sightings this month
+Cc: SpamAssassin Talk ML <spamassassin-talk@example.sourceforge.net>
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 12:35:46 -0500
+Date: Thu, 22 Aug 2002 12:35:46 -0500
+
+At 1:16 PM -0400 8/22/02, Theo Van Dinter wrote:
+>On Thu, Aug 22, 2002 at 07:05:33PM +0200, Malte S. Stretz wrote:
+>>  Ummm... has somebody noticed that spamassassin-sightings is the fourth most
+>>  active list for this month on [1]? There is more sighting than talk and
+>>  devel together ;-)
+>
+>hmmm.  do people know that they should only send false negatives there?
+>either there's a lot of stuff SA is missing, or some people are just
+>sending all their spam there.
+
+I've sent in some spam that either didn't score or scored practically 
+nothing, like below 5.  I figure that most people run at 5 so if it 
+scores less than that, a rule needs to be honed to catch it.
+
+Justin
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR                Pittsburg State University
+Network & Systems Manager                 http://www.pittstate.edu/ois/
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

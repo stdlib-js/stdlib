@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Wed Aug 28 18:49:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A716744156
+	for <jm@localhost>; Wed, 28 Aug 2002 13:49:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 18:49:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SHmKZ03633 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 18:48:20 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D7126294236; Wed, 28 Aug 2002 10:42:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 45E04294235 for <fork@xent.com>;
+    Wed, 28 Aug 2002 10:41:43 -0700 (PDT)
+Received: (qmail 54312 invoked by uid 19621); 28 Aug 2002 17:43:11 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 28 Aug 2002 17:43:11 -0000
+Subject: Re: Java is for kiddies
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <m23csy539p.fsf@maya.dyndns.org>
+References: <20020828164409.8826AC44D@argote.ch>
+    <m23csy539p.fsf@maya.dyndns.org>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1030557516.7585.53.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 28 Aug 2002 10:58:35 -0700
+
+On Wed, 2002-08-28 at 09:58, Gary Lawrence Murphy wrote:
+> 
+> And a Java program, due to the extensive class libraries, will weigh
+> in at 10% the number of lines of the equivalent C program.  QED.
+
+
+My typical Java-to-C conversion doesn't increase the lines of code by
+more than 20%, and a fair portion of that is the implementation of
+additional features that drove us to do the conversion in the first
+place.  Some things are substantially more succinct when written in C
+than in Java.  C and most other mature languages have an endless
+collection of libraries.  I personally don't use anything beyond the
+core libraries of any language that much though.
+
+On a tangent, I find libraries nearly useless for a great many things
+due primarily to the fact that most of them are so general that a given
+non-trivial API almost always has a context in which it will function in
+a pathological manner.  Code reuse is wonderful and all that, but
+libraries frequently make design trade-offs that won't work for me even
+if they theoretically do exactly what I need.  Unfortunately, it isn't
+particularly easy nor does it make a nice simple API to design a library
+that really is optimizable to a wide range of design cases.  I've built
+a small collection of flexible psuedo-polymorphic APIs over the years
+that I tend to use, but it is a pretty ugly solution for code reuse when
+you get right down to it.
+
+
+-James Rogers
+ jamesr@best.com
+
+
+

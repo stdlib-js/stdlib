@@ -1,0 +1,80 @@
+From exmh-users-admin@redhat.com  Wed Aug  7 06:44:07 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2B08D440C8
+	for <jm@localhost>; Wed,  7 Aug 2002 01:44:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 06:44:07 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g775fak12384 for
+    <jm-exmh@jmason.org>; Wed, 7 Aug 2002 06:41:36 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 354D33F4A5; Wed,  7 Aug 2002
+    01:40:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 37CC43F4A5
+    for <exmh-users@listman.redhat.com>; Wed,  7 Aug 2002 01:39:02 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g775d1U07100 for exmh-users@listman.redhat.com; Wed, 7 Aug 2002
+    01:39:01 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g775d0q07096 for
+    <exmh-users@redhat.com>; Wed, 7 Aug 2002 01:39:00 -0400
+Received: from sss.pgh.pa.us (root@[192.204.191.242]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g775Q0l29971 for <exmh-users@redhat.com>;
+    Wed, 7 Aug 2002 01:26:00 -0400
+Received: from sss2.sss.pgh.pa.us (tgl@localhost [127.0.0.1]) by
+    sss.pgh.pa.us (8.12.5/8.12.5) with ESMTP id g775ctVk012949 for
+    <exmh-users@redhat.com>; Wed, 7 Aug 2002 01:38:55 -0400 (EDT)
+To: exmh-users@spamassassin.taint.org
+Subject: Re: curses interface to nmh
+In-Reply-To: <4058.1028618719@kanga.nu>
+References: <20020806014000.48D429E@whatexit.org> <4058.1028618719@kanga.nu>
+Comments: In-reply-to J C Lawrence <claw@kanga.nu> message dated "Tue, 06
+    Aug 2002 00:25:19 -0700"
+Message-Id: <12948.1028698735@sss.pgh.pa.us>
+From: Tom Lane <tgl@sss.pgh.pa.us>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 07 Aug 2002 01:38:55 -0400
+
+J C Lawrence <claw@kanga.nu> writes:
+> Tom Reingold <noglider@pobox.com> wrote:
+>> Years ago, there was a package called mh-e which was an emacs
+>> interface to MH.  I don't know if it's still around or works.  But
+>> it's an idea.
+
+> Its still around, its actively maintained, and its quite well evolved.
+
+I useta use mh-e regularly, but I never figured out whether it could
+handle exmh's multidrop mechanism, which is something I've grown to
+rely on.  Does that work in recent mh-e versions?  I'd love to use
+mh-e when reading mail remotely, if it can handle my multiple-inbox-
+folders setup...
+
+			regards, tom lane
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

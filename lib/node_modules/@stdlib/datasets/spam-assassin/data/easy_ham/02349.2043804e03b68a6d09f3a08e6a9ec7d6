@@ -1,0 +1,56 @@
+From rssfeeds@jmason.org  Tue Oct  8 10:55:30 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 773E216F1A
+	for <jm@localhost>; Tue,  8 Oct 2002 10:55:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:55:25 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98808K06019 for
+    <jm@jmason.org>; Tue, 8 Oct 2002 09:00:08 +0100
+Message-Id: <200210080800.g98808K06019@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: Apple: Heinous DVD Pirates
+Date: Tue, 08 Oct 2002 08:00:07 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000644
+Date: 2002-10-08T01:21:33-06:00
+
+DeCSS detractors have repeatedly claimed that DeCSS needs to be stopped because 
+it makes perfect digital copies of DVDs possible. Recently, in private email, 
+Ernest Miller claimed that doing so would be a violation of the DMCA. In this 
+in-depth special report, I show that using perfectly legal, (I assume) 
+licensed, off-the-shelf consumer software, copying DVDs is easy and in many 
+ways encouraged. 
+
+*Tools:*
+1 PowerBook G4 with slot-loading DVD drive (any model should work)
+1 Monsters, Inc. Collector's Edition DVD (any DVD should work)
+1 copy of Mac OS X 10.2 "Jaguar" 
+
+*Process:*
+1. Insert DVD into drive. Notice how Jaguar helpfully loads the DVD Player for 
+you.
+2. Open the DVD (it appears on the desktop) and drag the VIDEO_TS folder to 
+your hard drive. Ejct the DVD.
+3. In DVD Player, select "Open VIDEO_TS Folder..." from the File menu. Use the 
+dialog that appears to select the VIDEO_TS folder on your hard drive. 
+
+Now the DVD plays just like it would were the DVD in the drive. By extension, I 
+could also put the DVD up on my site for you to download and watch. I could 
+share it via a P2P network. And I haven't done anything to decrypt the DVD or 
+violate the DMCA: I've used only basic tools available to all normal computer 
+users on my (I assume) fully-licensed consumer laptop. 
+
+*Disclaimer:* Seth Schoen, whose opinion I highly respect on these matters, 
+finds it unlikely that the DVD was CSS-encrypted if this was possible. I am not 
+sure how to verify if the DVD is CSS-encrypted. If someone has a suggestion, 
+please let me know. However, if it is true, then it's very interesting that 
+Disney has released such a major movie without encryption.
+
+
+

@@ -1,0 +1,93 @@
+From exmh-workers-admin@redhat.com  Wed Oct  2 15:58:49 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 91C8716F03
+	for <jm@localhost>; Wed,  2 Oct 2002 15:58:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 15:58:48 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92DwjK11512 for
+    <jm-exmh@jmason.org>; Wed, 2 Oct 2002 14:58:46 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id C4A613EFFA; Wed,  2 Oct 2002
+    09:59:19 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id F2FFC3F792
+    for <exmh-workers@listman.redhat.com>; Wed,  2 Oct 2002 09:54:12 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g92DsCq16707 for exmh-workers@listman.redhat.com; Wed, 2 Oct 2002
+    09:54:12 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g92DsCf16703 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 09:54:12 -0400
+Received: from kcmso2.proxy.att.com (kcmso2.att.com [192.128.134.71]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g92DZMi25039 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 09:35:22 -0400
+Received: from ulysses.homer.att.com ([135.205.193.8]) by
+    kcmso2.proxy.att.com (AT&T IPNS/MSO-4.0) with ESMTP id g92Ds6Od028475 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 08:54:06 -0500 (CDT)
+Received: from hera.homer.att.com (hera.homer.att.com [135.205.193.102])
+    by ulysses.homer.att.com (8.9.3/8.9.3) with ESMTP id JAA05531 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 09:54:04 -0400 (EDT)
+Received: from hera.homer.att.com (localhost [127.0.0.1]) by
+    hera.homer.att.com (8.9.3/8.9.3) with ESMTP id JAA13534 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 09:54:04 -0400 (EDT)
+Message-Id: <200210021354.JAA13534@hera.homer.att.com>
+X-Mailer: exmh version 2.5-CVS 08/22/2002 with nmh-1.0.4
+To: exmh-workers@spamassassin.taint.org
+Subject: A couple of nits...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: "J. W. Ballantine" <jwb@homer.att.com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 02 Oct 2002 09:54:04 -0400
+
+
+I have a couple of small issues, and I'm not sure if their exmh issues
+or my setup issues.
+
+First, when I try and run exmh with wish from tk8.4.0 it seems to take
+forever to start, but with wish from tk8.a.4 it starts in a snap.
+
+Using the latest CVS, when I open exmh and the folder I'm in has unseen
+messages and I hit next, exmh changes to the next folder with unseen messages
+rather than to the first unseen in the current folder.
+
+Finally, when I reach the end of the messages in a folder and go on to
+the next unseen, exmh always goes back to inbox (which has no unseen
+messages) rather than the next folder with unseen messages.  (When I 
+goto next from inbox it does go where I would think it should go).
+
+Just wanted to let you know what I'm seeing and find out if I'm expecting
+some different than I should be.
+
+Thanks for all the effort
+
+Jim
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

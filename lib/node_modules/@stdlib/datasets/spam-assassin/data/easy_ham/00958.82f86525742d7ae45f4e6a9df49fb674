@@ -1,0 +1,241 @@
+From exmh-workers-admin@redhat.com  Wed Aug 28 10:46:53 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B421644159
+	for <jm@localhost>; Wed, 28 Aug 2002 05:46:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:46:25 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S7fqZ15069 for
+    <jm-exmh@jmason.org>; Wed, 28 Aug 2002 08:41:52 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id B745A3EE66; Wed, 28 Aug 2002
+    03:42:02 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 085C43F409
+    for <exmh-workers@listman.redhat.com>; Wed, 28 Aug 2002 03:41:16 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7S7fCQ19268 for exmh-workers@listman.redhat.com; Wed, 28 Aug 2002
+    03:41:12 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7S7fCY19264 for
+    <exmh-workers@redhat.com>; Wed, 28 Aug 2002 03:41:12 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7S7Q6l04801 for <exmh-workers@redhat.com>;
+    Wed, 28 Aug 2002 03:26:07 -0400
+Received: from delta.cs.mu.OZ.AU (dhcp253.cc.psu.ac.th [192.168.2.253]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7S7eOU14972;
+    Wed, 28 Aug 2002 14:40:24 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7S6pLW18368; Wed, 28 Aug 2002 13:51:21
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Brent Welch <welch@panasas.com>
+Cc: Chris Garrigues <cwg-dated-1030804078.e8b0d5@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: Anolther sequence related traceback
+In-Reply-To: <200208280108.VAA30178@blackcomb.panasas.com>
+References: <200208280108.VAA30178@blackcomb.panasas.com>
+    <1030372078.11075.TMDA@deepeddy.vircio.com>
+    <1030118301.3993.TMDA@deepeddy.vircio.com>
+    <16323.1030043119@munnari.OZ.AU> <6853.1030345218@munnari.OZ.AU>
+    <12683.1030438738@munnari.OZ.AU>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <18366.1030517481@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 28 Aug 2002 13:51:21 +0700
+
+I have some patches that seem to fix/avoid this problem now.   (It is
+amazing what one can achieve when mains power fails, long enough for
+UPS's to run out, and all that is left operational is the laptop and
+its battery supply...)
+
+First, I put in some defensive code into the area where the problem was
+occurring, so that if exmh is attempting (for any reason) to expand a
+sequence that isn't either a number, or a range of numbers (or a list of
+such things) it will simply ignore the trash, rather than giving a traceback.
+This one solves the initial problem:
+
+--- mh.tcl.WAS	Thu Aug 22 21:15:06 2002
++++ mh.tcl	Wed Aug 28 12:39:11 2002
+@@ -487,6 +487,10 @@
+     set seq {}
+     set rseq {}
+     foreach range [split [string trim $sequence]] {
++	if ![regexp {^[0-9]+(-[0-9]+)?$} $range] {
++	    # just ignore anything bogus
++	    continue;
++	}
+ 	set parts [split [string trim $range] -]
+ 	if {[llength $parts] == 1} {
+ 	    lappend seq $parts
+
+
+That is amending proc MhSeqExpand which is where the error was occurring
+before (the code assumes that $range is either NNN or NNN-MMM so we should
+probably make sure that's true - issue an error instead of just "continue"
+if you like, but I don't think an error is needed).
+
+But that just allowed me to create a similar problem, in another place,
+by typing "NNN-" ... and rather than continue to fight fires like this,
+I thought I should think more about Brent's suggestion.   But rather than
+have the selection code actually validate the input, which would mean it
+would have to know what is to be valid, I decided that the right thing to
+do is just to ignore any errors caused by invalid input, so I just stuck
+a "catch" around the MsgShow that is processing the nonsense that the
+user has typed.
+
+This way, any later expansion to what MsgShow treats as legal (maybe
+allowing a sequence name, like "prev" or "next", or anything else can
+be handled just there, without someone needing to remember that they have
+to go fix the selection processing code to allow it.
+
+But, while I was playing there, I noticed something I never new before.
+If you type "66+" the "66" changes to "67" (and so on, for each + that
+is typed).   I suspect that's perhaps an artifact of "+ is bound to a
+different function so it can be used as a toggle between changing the
+current and the target folder, but it has to mean something if the current
+input mode is a message number, so let it mean...", but now I found it,
+I think its nice.    But if we can type 66+ why not 66- as well?  That
+kind of limitation bugs me, so I fixed it.
+
+And then I wondered about folders with names containing '+' - the special
+use of + as the toggle character means there's no way to type those from
+the keyboard.   So I fixed that as well.   This makes two different
+restrictions - there's no way to type a folder name that has a name
+beginning with '+' (but such a thing in MH would be a pain to use anyway,
+so I doubt this will bother anyone), and it is now only possible to
+toggle between typing the current & target folder name when the name
+being typed is empty.   I'm less happy about that part, but I think I
+can live with it in order to allow folder names with +'s in them to
+exist and be typed.
+
+Then, since I was there anyway, I decided to do something about another
+feature that has always bugged me.   In "normal" keyboard mode, 's' is
+the key used to show a message.    But if you've just typed 123, and
+the FTOC is highlighting 123 as the current message, and you want to now
+show that message, you can't type 's', you have to type \r instead.
+So I "fixed" this one as well.   "Fixed" here is in quotes, as it assumes
+that the keybinding for MsgShow is 's', if you change that to something
+else, it will remain 's' in here.   I don't know enough tk/tcl to have it
+discover what key is bound to a function in the external world in order
+to bind the same one here.   \r continues to work of course.
+
+And now I got started in fixing irritants in this code, I also made it
+clear the status line if you abort message/folder entry mode (^C or ^G).
+Previously it used to leave the prompt sitting there until the next
+message appeared, which made it less than obvious that the keyboard had
+reverted to its usual bindings.
+
+In any case, what follows is the patch that does all of that.   I believe
+that if you apply this, then the one above is probably not needed, the
+"catch" around the "MsgShow" will hide the problem (I don't think we really
+need to fix Brent's way of invoking it).   Or include it anyway, just
+for completeness (I haven't run an exmh with the following patch, but not
+the previous one, so I don't know for sure that all will be OK then).
+
+kre
+
+--- select.tcl.WAS	Thu Aug 22 21:15:07 2002
++++ select.tcl	Wed Aug 28 13:36:17 2002
+@@ -49,9 +49,11 @@
+     bindtags $w [list $w Entry]
+     bind $w <Any-Key>	{SelectTypein %W %A}
+     bind $w <Key-plus>	{SelectToggle %W }
++    bind $w <Key-minus>	{SelectPrev %W }
+     bind $w <space>	{SelectComplete %W}
+     bind $w <Tab>	{SelectComplete %W}
+     bind $w <Return>	{SelectReturn %W}
++    bind $w <Key-s>	{SelectReturn %W %A}
+     bind $w <BackSpace>	{SelectBackSpace %W}
+     bind $w <Control-h>	{SelectBackSpace %W}
+     bind $w <Delete>	{SelectBackSpace %W}
+@@ -72,7 +74,7 @@
+     append select(sel) $a
+     Exmh_Status "$select(prompt) $select(sel)"
+     if ![info exists select(folder)] {
+-	Msg_Change $select(sel) noshow
++	catch { Msg_Change $select(sel) noshow }
+     }
+ }
+ proc SelectBackSpace { w } {
+@@ -91,6 +93,10 @@
+ proc SelectToggle {w} {
+     global select
+     if [info exists select(folder)] {
++	if {$select(sel) != ""} {
++	    SelectTypein $w +
++	    return
++	}
+ 	set select(toggle) [list [lindex $select(toggle) 1] [lindex $select(toggle) 0]]
+ 	set select(prompt) "[lindex $select(toggle) 0] Folder:"
+     } else {
+@@ -101,6 +107,18 @@
+     }
+     Exmh_Status "$select(prompt) $select(sel)"
+ }
++proc SelectPrev {w} {
++    global select
++    if [info exists select(folder)] {
++	SelectTypein $w "-"
++    } else {
++	catch {
++	    incr select(sel) -1
++	    Msg_Change $select(sel) noshow
++	}
++        Exmh_Status "$select(prompt) $select(sel)"
++    }
++}
+ proc SelectComplete { w } {
+     global select
+     if [info exists select(folder)] {
+@@ -126,9 +144,13 @@
+ 	Exmh_Status "$select(prompt) $select(sel)"
+     }
+ }
+-proc SelectReturn { w } {
++proc SelectReturn { w {a {}} } {
+     global select
+     if [info exists select(folder)] {
++	if {$a != {}} {
++	    SelectTypein $w $a
++	    return
++	}
+ 	if [info exists select(match)] {
+ 	    set select(sel) $select(match)
+ 	    unset select(match)
+@@ -151,6 +173,7 @@
+ 	unset select(folder)
+     }
+     $select(entry) configure -state disabled
++    Exmh_Status ""
+     Exmh_Focus
+ }
+ proc SelectClear { w } {
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

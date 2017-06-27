@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Mon Aug 12 11:10:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 69E2544174
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BGFhb06281 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 17:15:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C9109294177; Sun, 11 Aug 2002 09:12:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 67AA0294173 for
+    <fork@xent.com>; Sun, 11 Aug 2002 09:11:54 -0700 (PDT)
+Received: (qmail 20396 invoked by uid 508); 11 Aug 2002 16:12:56 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.56) by
+    venus.phpwebhosting.com with SMTP; 11 Aug 2002 16:12:56 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7BGCqh32418; Sun, 11 Aug 2002 18:12:52
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Russell Turpin <deafbox@hotmail.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: Forged whitelist spam
+In-Reply-To: <F116kdavN3qljWwY0Vn00000e60@hotmail.com>
+Message-Id: <Pine.LNX.4.33.0208111806190.3981-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 18:12:52 +0200 (CEST)
+
+On Sun, 11 Aug 2002, Russell Turpin wrote:
+
+> If you're using the mail client on your personal
+> machine, there's no reason you would need to enter
+> a passphrase, unless that is part of how you secure
+> the data on your personal machine. You're private
+
+The original comment's context was digital signatures. A digital signature
+is worth sqrat if any userspace app or rogue superuser code can grab your
+keyring in clear, and send out stuff in your name. A passphrase unlocking
+the keyring for that particular use is a minimal protection (since not
+immune to passphrase snarfers), but this is much, much better than always
+leaving your key in the lock. (Why then having at all the key, in the
+first place?)
+
+> key is as secure as any other data on your machine.
+> If you're working remotely, you already have to
+> enter a passphrase to get to your email.
+
+A passphrase is a (long, secure) password unlocking (decrypting) your 
+keyring. You don't use a passphrase to read your email. Unless it resides 
+on a crypto file system.
+
+http://xent.com/mailman/listinfo/fork
+
+

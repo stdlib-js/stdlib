@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Mon Dec  2 11:21:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E95D316F18
+	for <jm@localhost>; Mon,  2 Dec 2002 11:19:41 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Dec 2002 11:19:41 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB208b827267 for
+    <jm-ilug@jmason.org>; Mon, 2 Dec 2002 00:08:39 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id C406634223; Mon,  2 Dec 2002 00:10:07 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from snet.wit.ie (snet.wit.ie [193.1.184.21]) by lugh.tuatha.org
+    (Postfix) with ESMTP id AD9903421E for <ilug@linux.ie>; Mon,
+    2 Dec 2002 00:09:30 +0000 (GMT)
+Received: from snet.wit.ie (localhost.wit.ie [IPv6:::1]) by snet.wit.ie
+    (8.12.2/8.12.2) with ESMTP id gB20A8WD017162 for <ilug@linux.ie>;
+    Mon, 2 Dec 2002 00:10:08 GMT
+Received: from localhost (nils@localhost) by snet.wit.ie
+    (8.12.2/8.12.2/Submit) with ESMTP id gB20A8Nj010617 for <ilug@linux.ie>;
+    Mon, 2 Dec 2002 00:10:08 GMT
+From: Nils <nils@snet.wit.ie>
+To: ilug@linux.ie
+Message-Id: <Pine.BSO.4.44.0212020000480.1840-100000@snet.wit.ie>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [ILUG] eircom mail
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Mon, 2 Dec 2002 00:10:08 +0000 (GMT)
+Date: Mon, 2 Dec 2002 00:10:08 +0000 (GMT)
+
+hi i was just wondering if anyone experiening difficulty with eircom mail
+sever.I was trying to send mail from mozilla mail but it keeps coming up
+with this error:
+sorry,that domain isnt in my list of allows rcpthosts(#5.7.1)
+please check the message recipients and try again.
+
+What is this all about.
+I am using mail2.eircom.net as my smtp and my pop, i can recieve mail but
+i cannot send mail. is there any other open relay that i  can use.
+nils
+Also i was just browsing the web and came across this
+http://www.microsoft.com/ireland/security/info2.htm
+Its a seminar on
+<cough>security and reliable</cough>
+maybe ilug should go along and hold a seminar on the same day right
+across the hall from this!
+nils
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

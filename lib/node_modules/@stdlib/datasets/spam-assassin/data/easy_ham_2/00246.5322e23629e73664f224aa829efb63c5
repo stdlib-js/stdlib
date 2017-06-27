@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:51:48 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B6885441E0
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73E4Xv15348 for
+    <jm-ilug@jmason.org>; Sat, 3 Aug 2002 15:04:33 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA32650; Sat, 3 Aug 2002 15:02:13 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay06.indigo.ie (relay06.indigo.ie [194.125.133.230]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id PAA32614 for <ilug@linux.ie>;
+    Sat, 3 Aug 2002 15:02:06 +0100
+Received: (qmail 77062 messnum 1045416 invoked from
+    network[194.125.173.35/ts13-035.dublin.indigo.ie]); 3 Aug 2002 14:02:05
+    -0000
+Received: from ts13-035.dublin.indigo.ie (HELO pc-00004) (194.125.173.35)
+    by relay06.indigo.ie (qp 77062) with SMTP; 3 Aug 2002 14:02:05 -0000
+From: Eamonn Shinners <shinnere@gofree.indigo.ie>
+To: ILUG <ilug@linux.ie>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+Message-Id: <1028383169.2214.20.camel@gamma.eko.ie>
+MIME-Version: 1.0
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-4)
+Date: 03 Aug 2002 15:02:32 +0100
+Subject: [ILUG] Network problems
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi guys,
+	I'm looking for help on this one. I have a server with SME5.5 installed
+- used to be e-smith. It's based on RH7.1, has a 3c507 NIC, and is
+connected to a hub. Also connected to the hub are a laptop and
+workstation, both with RH7.3 . The server supplies DHCP amongst other
+things.
+	The problem is interruptions in the network. If I ping the laptop from
+the workstation, or the other way around, there are no problems, i.e.
+shows up as 0% loss. If however I ping the server from the laptop or
+workstation, it will do a few packets, anywhere from 3 to 20, and then
+stop responding, it will start again after a little while.
+	The server is definitely not overloaded, 128Mb, and seems to be
+configured correctly. In /etc/modules.conf,;
+
+options 3c507 irq=0x5 io=0x300
+alias eth0 3c507
+
+there is an option in there for something called hisax, but whatever
+that is, the machine doesn't have one.
+	doing route shows 192.168.0.0 as going through eth0 which is correct.
+
+	Any help on this appreciated.
+
+	Eamonn
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

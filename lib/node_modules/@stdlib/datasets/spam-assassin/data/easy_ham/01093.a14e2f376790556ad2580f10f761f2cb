@@ -1,0 +1,83 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:02:48 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6EE3216EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:02:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:02:48 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g16EAD803228 for
+    <jm-rpm@jmason.org>; Wed, 6 Feb 2002 14:10:13 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16E78t31948;
+    Wed, 6 Feb 2002 15:07:08 +0100
+Received: from fep02-app.kolumbus.fi (fep02-0.kolumbus.fi [193.229.0.44])
+    by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g16E6xt31932 for
+    <rpm-list@freshrpms.net>; Wed, 6 Feb 2002 15:06:59 +0100
+Received: from pihlaja.kotilo ([62.248.144.92]) by fep02-app.kolumbus.fi
+    (InterMail vM.5.01.03.15 201-253-122-118-115-20011108) with ESMTP id
+    <20020206140650.ZLIM1068.fep02-app.kolumbus.fi@pihlaja.kotilo> for
+    <rpm-list@freshrpms.net>; Wed, 6 Feb 2002 16:06:50 +0200
+Received: (from peter@localhost) by pihlaja.kotilo (8.11.6/8.11.6) id
+    g16ETrS11097 for rpm-list@freshrpms.net; Wed, 6 Feb 2002 16:29:53 +0200
+From: Peter Peltonen <pisara@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+Subject: Apt problems
+Message-Id: <20020206162953.C10950@pihlaja.kotilo>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 6 Feb 2002 16:29:53 +0200
+Date: Wed, 6 Feb 2002 16:29:53 +0200
+
+Two issues:
+
+--<snip>--
+Sorry, but the following packages have unmet dependencies:
+  openssh: Depends: openssl (= 0.9.5a) but 0.9.6b-8 is installed
+  php-pgsql: Depends: postgresql but it is not installed
+             Depends: libpq.so.2
+E: Unmet dependencies. Try using -f.
+--</snip>--
+
+1. I have the following openssl packages installed:
+
+--<snip>--
+openssl-perl-0.9.6b-8
+openssl-0.9.6b-8
+openssl095a-0.9.5a-11
+openssl-devel-0.9.6b-8
+--</snip>--
+
+The openssl095a package should provide the openssl-0.9.5a compatibility 
+but apt doesn't think so? 
+
+2. I have postgresql installed from the source. So that's why I need 
+php-pgsql. Is there a way to tell apt about packages I don't want it to 
+complain about?
+
+-- 
+Peter
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

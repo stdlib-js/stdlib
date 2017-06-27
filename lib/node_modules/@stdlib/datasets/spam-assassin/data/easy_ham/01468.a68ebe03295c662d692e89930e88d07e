@@ -1,0 +1,169 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Sep 13 16:51:24 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3DC2D16F03
+	for <jm@localhost>; Fri, 13 Sep 2002 16:51:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 16:51:23 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8DD61C19382 for <jm-sa@jmason.org>; Fri, 13 Sep 2002 14:06:01 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pq6E-0002Zs-00; Fri,
+    13 Sep 2002 06:03:06 -0700
+Received: from tarpon.exis.net ([65.120.48.108]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pq5t-0000hD-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 13 Sep 2002 06:02:45 -0700
+Received: from viper (ip68-10-168-172.hr.hr.cox.net [68.10.168.172]) by
+    tarpon.exis.net (8.12.4/8.12.4) with SMTP id g8DD2f85001269 for
+    <spamassassin-talk@lists.sourceforge.net>; Fri, 13 Sep 2002 09:02:41 -0400
+Message-Id: <000c01c25b25$dbaa64d0$aca80a44@viper>
+From: "Nick Adams" <nicka@exis.net>
+To: <spamassassin-talk@example.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0009_01C25B03.83C4FDB0"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [SAtalk] Spamassassin with Pyzor
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php=spamassassin-talk>
+X-Original-Date: Fri, 13 Sep 2002 08:56:57 -0400
+Date: Fri, 13 Sep 2002 08:56:57 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0009_01C25B03.83C4FDB0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+I installed Spamassassin 2.41 with Razor V2 the other day and it has =
+been working great. I decided to add Pyzor last night and I got that =
+installed successfully (I think, no errors). I am using spamd and I see =
+where it periodically spawns off a pyzor process; however nothing has =
+been detected as spam by Pyzor under Spamassassin. It has been running =
+for almost half a day now on a 5,000 user mail server - so to me the =
+odds of something being caught by it should be high. I run spamd as =
+follows:
+
+spamd -d -H
+
+and all my users home directories have a .pyzor directory with the =
+server listed under it.
+
+I setup a test procmail recipe that just invokes pyzor check and not =
+spamc to see if in fact pyzor alone catches any spam -  I just set this =
+up so no results yet. Here is what I get when I check connectivity to =
+the pyzor server:
+
+ pyzor -d ping
+sending: 'User: anonymous\nTime: 1031921041\nSig: =
+161c547ac6248589910f97b1b5cd37e6dffc8eaf\n\nOp: ping\nThread: 14733\nPV: =
+2.0\n\n'
+received: 'Thread: 14733\nCode: 200\nDiag: OK\nPV: 2.0\n\n'
+167.206.208.233:24442   (200, 'OK')
+
+Any help/examples would be appreciated. Thanks! BTW, keep up the great =
+work Spamassassin team!
+
+Nick
+
+
+---
+Outgoing mail is certified Virus Free.
+Checked by AVG anti-virus system (http://www.grisoft.com).
+Version: 6.0.386 / Virus Database: 218 - Release Date: 9/9/2002
+
+------=_NextPart_000_0009_01C25B03.83C4FDB0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.2600.0" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>I installed Spamassassin 2.41&nbsp;with =
+Razor V2=20
+the other day and it has been working great. I decided to add Pyzor last =
+night=20
+and I got that installed successfully (I think, no errors). I am using =
+spamd and=20
+I see where it periodically spawns off a pyzor process; however nothing =
+has been=20
+detected as spam by Pyzor under Spamassassin. It has been running for =
+almost=20
+half a day now on a 5,000 user mail server - so to me the odds of =
+something=20
+being caught by it should be high. I run spamd as follows:</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>spamd -d -H</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>and all my users home directories have =
+a .pyzor=20
+directory with the server listed under it.</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>I setup a test procmail recipe that =
+just invokes=20
+pyzor check and not spamc to see if in fact pyzor alone catches any spam =
+-=20
+&nbsp;I just set this up so no results yet. Here is what I get when I =
+check=20
+connectivity to the pyzor server:</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>&nbsp;pyzor -d ping<BR>sending: 'User:=20
+anonymous\nTime: 1031921041\nSig:=20
+161c547ac6248589910f97b1b5cd37e6dffc8eaf\n\nOp: ping\nThread: 14733\nPV: =
+
+2.0\n\n'<BR>received: 'Thread: 14733\nCode: 200\nDiag: OK\nPV:=20
+2.0\n\n'<BR>167.206.208.233:24442&nbsp;&nbsp; (200, 'OK')</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Any help/examples would be appreciated. =
+Thanks!=20
+BTW, keep up the great work Spamassassin team!</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Nick</FONT></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2><BR>---<BR>Outgoing mail is certified =
+Virus=20
+Free.<BR>Checked by AVG anti-virus system (<A=20
+href=3D"http://www.grisoft.com">http://www.grisoft.com</A>).<BR>Version: =
+6.0.386 /=20
+Virus Database: 218 - Release Date: 9/9/2002</FONT></DIV></BODY></HTML>
+
+------=_NextPart_000_0009_01C25B03.83C4FDB0--
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

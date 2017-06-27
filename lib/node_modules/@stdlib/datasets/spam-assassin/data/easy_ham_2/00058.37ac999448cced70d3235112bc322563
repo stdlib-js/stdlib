@@ -1,0 +1,59 @@
+From ilug-admin@linux.ie  Fri Jul 19 14:27:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CEC3A43FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 09:27:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 14:27:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JDPYJ32045 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 14:25:34 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA06600; Fri, 19 Jul 2002 14:21:16 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA06567
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 14:21:10 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-233.dublin.indigo.ie
+    [194.125.176.233]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    3811FF8E3 for <ilug@linux.ie>; Fri, 19 Jul 2002 14:06:04 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    B108F3C04F; Fri, 19 Jul 2002 14:28:42 +0100 (IST)
+Date: Fri, 19 Jul 2002 14:28:42 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020719132842.GA2506@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] How to copy some files
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I have about 60G of data which I need to copy from one disk to another.
+However, I'm not sure how I should best copy it. The problem is the bulk of
+the data is images and most of these image have two directory entries i.e.
+there is a hard link to each file. If I copy them using cp -a or my usual
+favourite of find .|cpio -pmd other_dir it's going to copy each file twice,
+which is not what I want. dump / restore would take care of this if the
+source filesystem wasn't reiserfs :-( Any suggestions ?
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

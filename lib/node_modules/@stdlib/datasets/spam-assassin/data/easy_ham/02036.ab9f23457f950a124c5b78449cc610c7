@@ -1,0 +1,31 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:36:24 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9003916F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:36:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:36:24 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8T802g03259 for
+    <jm@jmason.org>; Sun, 29 Sep 2002 09:00:02 +0100
+Message-Id: <200209290800.g8T802g03259@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Advanced CSS lists
+Date: Sun, 29 Sep 2002 08:00:02 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/27.html#advanced_css_lists
+Date: 2002-09-27T23:22:56-05:00
+
+_Mark Newhouse_: CSS Design: Taming Lists[1]. &#8220;I'll demonstrate how to 
+use CSS to bring unwieldy lists under control. It's time for you to tell lists 
+how to behave, instead of letting them run wild on your web page.&#8221;
+
+
+
+[1] http://www.alistapart.com/stories/taminglists/
+
+

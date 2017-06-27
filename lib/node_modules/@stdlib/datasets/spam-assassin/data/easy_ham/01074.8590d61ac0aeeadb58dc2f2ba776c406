@@ -1,0 +1,93 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:00:21 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9D98A16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:00:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:00:20 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g11MGS812405 for
+    <jm-rpm@jmason.org>; Fri, 1 Feb 2002 22:16:28 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g11MF0308879;
+    Fri, 1 Feb 2002 23:15:00 +0100
+Received: from drone4.qsi.net.nz (drone4-svc-skyt.qsi.net.nz
+    [202.89.128.4]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g11MEh308869 for <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 23:14:43 +0100
+Received: (qmail 95088 invoked by uid 0); 1 Feb 2002 22:15:02 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 1 Feb 2002 22:15:02 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.12 #1 (Debian)) id 16WnZF-00036C-00 for <rpm-list@freshrpms.net>;
+    Sat, 02 Feb 2002 12:58:05 +1300
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: problems with apt update
+Message-Id: <14220000.1012602017@spawn.se7en.org>
+X-Mailer: Mulberry/2.1.2 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 02 Feb 2002 11:20:17 +1300
+Date: Sat, 02 Feb 2002 11:20:17 +1300
+
+Hiya, I always seem to get errors when I do an "apt update", is this a 
+problem on the repository itself, or on my end, or possibly a timeout in 
+the connection due to my connection being a crappy modem?
+
+[root@spawn root]# apt-get update
+Hit http://apt.nixia.no redhat/7.2/i386/base/pkglist.gnomehide
+Hit http://apt.freshrpms.net redhat/7.2/i386/base/pkglist.os
+Ign http://apt.freshrpms.net redhat/7.2/i386 release.os
+Err http://apt.freshrpms.net redhat/7.2/i386/base/pkglist.updates
+  Bad header line
+Hit http://apt.freshrpms.net redhat/7.2/i386 release.updates
+Err http://apt.freshrpms.net redhat/7.2/i386/base/pkglist.freshrpms
+  400 Bad Request
+Err http://apt.freshrpms.net redhat/7.2/i386 release.freshrpms
+  Bad header line
+Hit http://apt.freshrpms.net redhat/7.2/i386/base/srclist.freshrpms
+Ign http://apt.nixia.no redhat/7.2/i386 release.gnomehide
+Ign http://apt.nixia.no redhat/7.2/i386/base/mirrors
+Hit http://apt.freshrpms.net redhat/7.2/i386 release.freshrpms
+Ign http://apt.freshrpms.net redhat/7.2/i386/base/mirrors
+Ign http://apt.freshrpms.net redhat/7.2/i386/base/mirrors
+Ign http://apt.freshrpms.net redhat/7.2/i386/base/mirrors
+Ign http://apt.freshrpms.net redhat/7.2/i386/base/mirrors
+Failed to fetch 
+http://apt.freshrpms.net/redhat/7.2/i386/base/pkglist.updates
+  Bad header line
+Failed to fetch 
+http://apt.freshrpms.net/redhat/7.2/i386/base/pkglist.freshrpms
+  400 Bad Request
+Failed to fetch 
+http://apt.freshrpms.net/redhat/7.2/i386/base/release.freshrpms
+  Bad header line
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

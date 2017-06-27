@@ -1,0 +1,153 @@
+From exmh-workers-admin@redhat.com  Wed Sep 11 21:52:08 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2055B16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 21:52:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 21:52:08 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8BKhcC31373 for
+    <jm-exmh@jmason.org>; Wed, 11 Sep 2002 21:43:38 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 0312B408EB; Wed, 11 Sep 2002
+    16:42:45 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id A11BB3F5C6
+    for <exmh-workers@listman.redhat.com>; Wed, 11 Sep 2002 16:41:37 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8BKfWH05116 for exmh-workers@listman.redhat.com; Wed, 11 Sep 2002
+    16:41:32 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8BKfWk05112 for
+    <exmh-workers@redhat.com>; Wed, 11 Sep 2002 16:41:32 -0400
+Received: from qiclab.scn.rain.com (postfix@qiclab.scn.rain.com
+    [205.238.26.97]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8BKP3w11308 for <exmh-workers@redhat.com>; Wed, 11 Sep 2002 16:25:03
+    -0400
+Received: by qiclab.scn.rain.com (Postfix, from userid 177) id DBB6324E06A;
+    Wed, 11 Sep 2002 13:41:30 -0700 (PDT)
+>Received: by joseph.doink.com (Postfix, from userid 11334) id 348DD2FEAB;
+    Wed, 11 Sep 2002 13:26:30 -0700 (PDT)
+Received: from dOink.COM (localhost [127.0.0.1]) by joseph.doink.com
+    (Postfix) with ESMTP id 113BA4BDC3; Wed, 11 Sep 2002 13:26:30 -0700 (PDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Hacksaw <hacksaw@hacksaw.org>
+Cc: exmh-workers@spamassassin.taint.org
+Reply-To: exmh-workers@spamassassin.taint.org
+X-Message-Flag: After so many viruses, why are you still using Outlook?
+X-Priority: 3
+Subject: Re: exmh bug?
+In-Reply-To: <200209112011.g8BKB71c016315@habitrail.home.fools-errant.com>
+MIME-Version: 1.0
+From: Kevin Cosgrove <kevinc@dOink.COM>
+Message-Id: <20020911202630.348DD2FEAB@joseph.doink.com>
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 11 Sep 2002 13:26:27 -0700
+
+
+Here's a message that works fine for me:
+
+
+
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: kevinc@doink.com
+Subject: gpg test
+Mime-Version: 1.0
+Content-Type: text/x-pgp; format=mime; x-action=encrypt;
+	x-recipients="D165C0CC, D165C0CC"
+Content-Transfer-Encoding: 7bit
+Date: Wed, 11 Sep 2002 13:18:58 -0700
+From: Kevin Cosgrove <kevinc@dOink.COM>
+Message-Id: <20020911201900.492892FEAB@joseph.doink.com>
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+Comment: Exmh version 2.5 10/15/1999
+
+blah, blah, blah
+
+-----END PGP MESSAGE-----
+
+
+
+
+
+It could be that your content type of text/plain is messing you up.
+Your config stuff looks substantially the same as mine.
+
+Cheers....
+
+
+
+
+
+
+
+On 11 September 2002 at 16:11, Hacksaw <hacksaw@hacksaw.org> wrote:
+
+You may assume the X's were originally a valid address.
+
+X-em-version: 5, 0, 0, 4
+X-em-registration: #01E0520310450300B900
+X-priority: 3
+X-mailer: My Own Email v4.00
+Mime-version: 1.0
+Content-type: text/plain; charset=US-ASCII
+Subject: Discussion
+From: "XXXXXXX" <XXXXXXX@XXXXXXXXX.com>
+Date: Tue, 10 Sep 2002 05:47:46 -0500 (06:47 EDT)
+To: hacksaw@hacksaw.org
+
+
+*gpgRfc822:     0
+*gpgChooseKey:  1
+*gpgRunTwice:   1
+*gpgCacheIds:   persistent
+*gpgMinMatch:   75
+*gpgShowInline: none
+*gpgShortMessages:      1
+*gpgAutoExtract:        1
+*gpgKeyServer:  pgp-public-keys@keys.pgp.net
+*gpgKeyQueryMethod:     hkp
+*gpgHKPKeyServerUrl:    keys.pgp.com
+*gpgKeyServerURL:       http://www-swiss.ai.mit.edu/htbin/pks-extract-key.pl?op
+=get&search=0x%s
+*gpgKeyOtherMethod:     exec echo "can't find $id" > $tmp
+*gpgComment:    Exmh version 2.5 08/15/2002
+*gpgModulePath: /usr/lib/gnupg
+*gpgCipherMods: skipjack idea
+*gpgDigestMods: tiger
+*gpgPubkeyMods: rsa
+*gpgPgp5Compatibility:  1
+*gpgCipherAlgo: 3des
+*gpgDigestAlgo: sha1
+*gpgCompressAlgo:       zip
+
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

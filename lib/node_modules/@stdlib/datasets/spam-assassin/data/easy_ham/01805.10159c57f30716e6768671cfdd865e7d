@@ -1,0 +1,62 @@
+From pudge@perl.org  Thu Sep 26 11:02:45 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B7AAB16F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:02:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:02:44 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q205C27580 for
+    <jm-use-perl@jmason.org>; Thu, 26 Sep 2002 03:00:05 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17uNu9-00080c-01 for <jm-use-perl@jmason.org>;
+    Wed, 25 Sep 2002 21:57:25 -0400
+Date: Thu, 26 Sep 2002 02:00:32 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-09-26
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17uNu9-00080c-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Using Web Services with Perl and AppleScript
+
++--------------------------------------------------------------------+
+| Using Web Services with Perl and AppleScript                       |
+|   posted by pudge on Wednesday September 25, @08:12 (links)        |
+|   http://use.perl.org/article.pl?sid=02/09/25/129231               |
++--------------------------------------------------------------------+
+
+[0]jonasbn writes "An article on [1]Perl, AppleScript, and Web Services
+by Randal L. Schwartz has been published on O'ReillyNet." See AppleScript
+and Perl work together!
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/09/25/129231
+
+Links:
+    0. mailto:jonasbnNO@SPAMe-diot.dk
+    1. http://www.oreillynet.com/pub/a/javascript/synd/2002/09/24/applescript_perl.html
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

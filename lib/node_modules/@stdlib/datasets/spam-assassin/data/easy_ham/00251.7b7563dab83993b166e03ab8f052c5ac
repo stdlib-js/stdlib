@@ -1,0 +1,201 @@
+From ilug-admin@linux.ie  Fri Sep  6 11:40:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id A1FF116F69
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:38:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:38:40 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869r0C29204 for
+    <zzzz-ilug@spamassassin.taint.org>; Fri, 6 Sep 2002 10:53:00 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id AAA19175 for <zzzz-ilug@spamassassin.taint.org>;
+    Fri, 6 Sep 2002 00:05:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA13593; Thu, 5 Sep 2002 23:54:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail03.svc.cra.dublin.eircom.net
+    (mail03.svc.cra.dublin.eircom.net [159.134.118.19]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id XAA13503 for <ilug@linux.ie>; Thu,
+    5 Sep 2002 23:54:04 +0100
+Received: (qmail 37104 messnum 523993 invoked from
+    network[194.125.168.16/ts01-016.drogheda.indigo.ie]); 5 Sep 2002 22:53:32
+    -0000
+Received: from ts01-016.drogheda.indigo.ie (HELO desktop) (194.125.168.16)
+    by mail03.svc.cra.dublin.eircom.net (qp 37104) with SMTP; 5 Sep 2002
+    22:53:32 -0000
+Message-Id: <000c01c2552f$11748cf0$10a87dc2@desktop>
+From: "Darragh" <darraghoheiligh@eircom.net>
+To: <ilug@linux.ie>
+References: <5FE418B3F962D411BED40000E818B33C9C8FEC@HASSLE>
+Subject: RE: [ILUG] Newby to Linux looking for information on cvs
+Date: Thu, 5 Sep 2002 23:53:32 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hello all,
+Firstly I'd like to thank all of you for the fast and very helpful feedback
+that I got to my question today.  I have one more question though.  I
+downloaded the w3 and url files from the server at the first try thanks to
+the help that I received today.  Then though I tried to build them.  I
+started by trying the w3 program.  I used the following lines which produced
+some strange results.  Would any one be able to set me straight?
+
+./configure --with-emacs --prefix=/usr/local/src/beta/w3 --exec-prefix=/usr/
+local/src/beta/w3 --with-url=/url/url
+That worked fine so I moved to the next step.
+make
+At the bottem of the text I got the following messages:
+Cannot open load file: /url/url/url-vars.el
+make[1]: *** [custom-load.el] Error 255
+make[1]: Leaving directory `/usr/local/src/beta/w3/lisp'
+make: *** [w3] Error 2
+
+When I got around to trying the url package I had no problems.  In saying
+that this doesn't necessarily mean that I was doing it right so below are
+the commands I used.
+./configure --with-emacs --prefix=/url/url --exec-prefix=/url/url
+followed by the commands make and make install.
+There is no text files which contain help on installing the url package so
+I'm not completely certain if I've used the right method here.
+
+Thanks again
+
+Darragh
+----- Original Message -----
+From: "Hunt, Bryan" <B.Hunt@emuse-tech.com>
+To: <macarthy@iol.ie>; <michael.conry@ucd.ie>
+Cc: <ilug@linux.ie>
+Sent: Thursday, September 05, 2002 5:08 PM
+Subject: OT: RE: [ILUG] Newby to Linux looking for information on cvs
+
+
+>
+> speaking of that IDE (weblogic developer) the open source version called
+> eclipse is free from eclipse.org If you are doing java development you
+> need to get this IDE . I've been using it for the last month and it is
+> absolutly superb. Best thing about it is that rather than using swing
+> (which is crap) is that they have their own native widget set called swt.
+>
+> When you run it on windows it uses windows widgets but when you run it on
+> linux it uses gtk, you should see it on gnome 2 ! Absolutely stunning !
+>
+> --B
+>
+> -----Original Message-----
+> From: Justin MacCarthy [mailto:macarthy@iol.ie]
+> Sent: 05 September 2002 16:53
+> To: michael.conry@ucd.ie
+> Cc: ilug@linux.ie
+> Subject: RE: [ILUG] Newby to Linux looking for information on cvs
+>
+>
+> This is the best step by step guide to setting up cvs on Redhat..
+>
+>
+http://www7b.software.ibm.com/wsdd/library/techarticles/0205_yu/yu.html?open
+> &l=456,t=gr
+>
+> It is for a particular IBM ide, but the setup and testing of the server is
+> the same for any CVS client
+>
+> Both The "Using Linux" and "Linux in a nutshell" book by Oreilly have
+> sections on cvs /rcs , and both books are a must buy for any linux newbie
+>
+>
+> Justin
+>
+>
+> > -----Original Message-----
+> > From: ilug-admin@linux.ie [mailto:ilug-admin@linux.ie]On Behalf Of
+> > Michael Conry
+> > Sent: 05 September 2002 16:34
+> > To: Darragh
+> > Cc: ilug@linux.ie
+> > Subject: Re: [ILUG] Newby to Linux looking for information on cvs
+> >
+> >
+> > On 0020 +0100 %{!Thu, Sep 05, 2002 at  3:55:16PM +0100}, Darragh wrote:
+> > > Hello,
+> > > I am very new to Linux and need some help on a utility called
+> > cvs.  As far
+> > > as I'm aware its a similar protocol to FTP.  I need to use it
+> > to download a
+> > > program from :pserver:anoncvs@subversions.gnu.org:/cvsroot/w3.
+> > I am looking
+> > > for information on how to use it.  I'll have another look at
+> > the man pages
+> > > but I think I have to set it up before I can download anything.
+> > cvs is really a very different kind of thing to FTP, but the details of
+> > that statement are left as an exercise to the reader (won't show up my
+> > own ignorance that way ;-)
+> > The application you want is cvsclient...
+> > There is documentation here:
+> > http://www.fokus.gmd.de/gnu/docs/cvs/cvsclient_toc.html
+> >
+> > You might get a quick idea of how it works from here:
+> > http://www.sci.muni.cz/~mikulik/gnuplot.html
+> > where he explains how to get cvs gnuplot...
+> > The commands are:
+> >
+> > export
+> > CVSROOT=:pserver:anonymous@cvs.gnuplot.sourceforge.net:/cvsroot/gnuplot
+> > cvs login
+> > cvs -z3 checkout gnuplot
+> >
+> > Something similar will probably do the job for you.  I'm guessing the
+> > following MIGHT work...
+> >
+> > export CVSROOT=:pserver:anoncvs@subversions.gnu.org:/cvsroot/w3
+> > cvs login
+> > cvs -z3 checkout w3
+> >
+> > m
+> > --
+> > Michael Conry   Ph.:+353-1-7161987, Web: http://www.acronymchile.com
+> > Key fingerprint = 5508 B563 6791 5C84 A947  CB01 997B 3598 09DE 502C
+> >
+> > --
+> > Irish Linux Users' Group: ilug@linux.ie
+> > http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+> > information.
+> > List maintainer: listmaster@linux.ie
+> >
+> >
+> >
+>
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+information.
+> List maintainer: listmaster@linux.ie
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+information.
+> List maintainer: listmaster@linux.ie
+>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

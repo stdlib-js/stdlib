@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Fri Sep  6 11:41:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 871DF16F6C
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:30 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g868U5W25638 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 09:30:32 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id JAA20751 for <jm@jmason.org>; Fri, 6 Sep 2002 09:30:24 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C7045294283; Fri,  6 Sep 2002 01:27:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from panacea.canonical.org (ns1.canonical.org [209.115.72.29])
+    by xent.com (Postfix) with ESMTP id 1F2C629427E for <fork@xent.com>;
+    Fri,  6 Sep 2002 01:26:10 -0700 (PDT)
+Received: by panacea.canonical.org (Postfix, from userid 1004) id
+    DDBB83F4EB; Fri,  6 Sep 2002 04:26:37 -0400 (EDT)
+From: kragen@pobox.com (Kragen Sitaker)
+To: fork@spamassassin.taint.org
+Subject: Re: Ouch... [Bebergflame]
+Message-Id: <20020906082637.DDBB83F4EB@panacea.canonical.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri,  6 Sep 2002 04:26:37 -0400 (EDT)
+
+Adam Beberg writes:
+> Shouldn't a politician know not to tell the truth? Odds he's impeached by
+
+As the article you forwarded explained in the second line of text,
+this politician is a woman.
+
+> next Monday? [ob: no-clue-how-they-remove-mayors-in-italy]
+
+ob: no-clue-full-stop, as in nearly all Adam Beberg posts.
+
+-- 
+<kragen@pobox.com>       Kragen Sitaker     <http://www.pobox.com/~kragen/>
+Edsger Wybe Dijkstra died in August of 2002.  The world has lost a great
+man.  See http://advogato.org/person/raph/diary.html?start=252 and
+http://www.kode-fu.com/geek/2002_08_04_archive.shtml for details.
+

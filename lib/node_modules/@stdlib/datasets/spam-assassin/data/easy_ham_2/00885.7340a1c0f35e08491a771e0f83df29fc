@@ -1,0 +1,122 @@
+From fork-admin@xent.com  Thu Jul 25 11:10:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2CD41440DD
+	for <jm@localhost>; Thu, 25 Jul 2002 06:10:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:10:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P8xa408276 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 09:59:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 02C4529409C; Thu, 25 Jul 2002 01:58:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from panacea.canonical.org (ns1.canonical.org [209.115.72.29])
+    by xent.com (Postfix) with ESMTP id C9441294098 for <fork@xent.com>;
+    Thu, 25 Jul 2002 01:57:36 -0700 (PDT)
+Received: by panacea.canonical.org (Postfix, from userid 1004) id
+    E3EF43F4D3; Thu, 25 Jul 2002 04:56:39 -0400 (EDT)
+From: kragen@pobox.com (Kragen Sitaker)
+To: fork@spamassassin.taint.org
+Subject: Re: Asteroids anyone ?
+Message-Id: <20020725085639.E3EF43F4D3@panacea.canonical.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 04:56:39 -0400 (EDT)
+
+Eugen Leitl writes:
+> Apart from twiddling with the surface albedo which might be not
+> enough -- we currently don't have ion drives with enough power, or at
+> least we can't develop and deploy them on time, 
+
+My estimate is that, in the worst case, we have 17 years (5.4e8
+seconds) to move it one earth radius, or about 6000 km (6e6 m).  
+a t^2/2 = x, if I remember right, so a = 2x/t^2, which is 
+1.2e7 m/(2.9e17 s^2), or about 4.1e-11 m/s^2, which is not a very
+large acceleration, roughly equivalent to the gravitational
+acceleration in these parts divided by 200000000000.  Assuming a
+2km-wide --- that is, 20 000 decimeter-wide --- spherical asteroid of
+specific gravity 10, 4/3 pi r^3 says it would have a volume of 4e12
+cubic decimeters and thus a mass of 4e13 kg.  The force we'd have to
+apply to achieve this acceleration would be roughly equivalent to the
+weight of 200 kg here on Earth.
+
+So, yeah, ion drives are probably a no-go, unless I screwed up the
+calculations here; I think the force they typically exert is about
+four orders of magnitude too small.
+
+If we just wanted to hit today it with enough of an impulse that it
+would miss us 17 years later, we'd need to accelerate it by about 1.1
+cm/s.  A one-ton (1000kg) mass would need to hit it at about 4e9 m/s,
+or about ten times the speed of light, to achieve this, so that's not
+possible.  (If you could actually put enough work into a one-ton mass,
+as it approached the speed of light, it would mass more, so you could
+still do it with a one-ton mass; but we don't have anything
+approaching that speed.)  The impulse required is inversely
+proportional to the remaining time to impact, so if we were to hit it
+after half the time has elapsed, we'd need to accelerate it by around
+2.2 cm/s instead.
+
+The gravitational force of an Earth-sized mass could provide
+sufficient deflection if that mass were about 4.5e5 times as far away
+from the asteroid as we are from Earth's center, or about 2.7e9 m, or
+about 0.018 times the distance from the Earth to the Sun (0.018 AU).
+(And if that mass stayed so nearby for 17 years.)
+
+The effects of continuous acceleration benefit greatly from planning
+ahead, since they scale with t^2, not t --- and thus the needed
+acceleration scales with 1/t^2.  After half the time has elapsed, we'd
+need four times as much acceleration to make it miss the Earth than if
+we were to start accelerating it now.
+
+All of these numbers are a little low, because the Earth presents a
+slightly easier target than its physical size suggests, due to its
+gravity well.  How much easier depends on the speed of the projectile
+in ways I don't understand.
+
+They're also a little high, because they assume the force is being
+applied purely at right angles to the asteroid's current path, which
+is a slightly suboptimal scenario (although for velocity changes five
+orders of magnitude smaller than the relative velocity, the difference
+is probably insignificant.)  And they assume there are no other effects on the asteroid's path.
+
+What about electrical charges?  Could we electrically charge the
+asteroid and another nearby asteroid, perhaps with electron beams, to
+provide the needed acceleration?
+
+Of course, all of this calculation could be applied in the other
+direction, too.  If you want to sock a moon colony with a one-ton
+asteroid, you could do it with a tiny amount of force applied over
+twenty-five years to adjust its orbit.
+
+***
+
+About spam: I'm sorry to admit I haven't implemented any of the better
+solutions, and so I'm afraid I'll have to allow non-subscriber FoRK
+mail to be detained for scanning.  I hope this measure can be reversed
+soon when I have time to implement better measures.  As has often been
+noted by other posters, measures to reduce spam sent to the FoRK list
+will not significantly decrease the spam load of FoRKposters, since
+the vast majority of spam received by FoRKposters is sent to them
+directly, not through the FoRK list.
+
+-- 
+<kragen@pobox.com>       Kragen Sitaker     <http://www.pobox.com/~kragen/>
+Silence may not be golden, but at least it's quiet.  Don't speak unless you
+can improve the silence.  I have often regretted my speech, never my silence.
+-- ancient philosopher Syrus (?) via Adam Rifkin, <adam@cs.caltech.edu>
+http://xent.com/mailman/listinfo/fork
+
+

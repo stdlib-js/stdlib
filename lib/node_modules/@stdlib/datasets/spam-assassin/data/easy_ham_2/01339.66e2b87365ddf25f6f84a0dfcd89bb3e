@@ -1,0 +1,92 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Wed Aug 21 17:34:33 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4545B43C38
+	for <jm@localhost>; Wed, 21 Aug 2002 12:34:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 17:34:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LGWwZ01643 for <jm@jmason.org>; Wed, 21 Aug 2002 17:32:58 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYPn-0007no-00; Wed,
+    21 Aug 2002 09:33:03 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hYPi-0004pc-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 09:32:58 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17hYPi-0005Pj-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 21 Aug 2002 09:32:58
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17hYPh-0004Zn-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 21 Aug 2002 09:32:57
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17hYPh-0004Zn-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/lib/Mail/SpamAssassin Conf.pm,1.91.2.2,1.91.2.3
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Wed, 21 Aug 2002 09:32:57 -0700
+Date: Wed, 21 Aug 2002 09:32:57 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin
+In directory usw-pr-cvs1:/tmp/cvs-serv17442/lib/Mail/SpamAssassin
+
+Modified Files:
+      Tag: b2_4_0
+	Conf.pm 
+Log Message:
+added a warning for ISPs in required_hits manual entry
+
+Index: Conf.pm
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin/Conf.pm,v
+retrieving revision 1.91.2.2
+retrieving revision 1.91.2.3
+diff -b -w -u -d -r1.91.2.2 -r1.91.2.3
+--- Conf.pm	21 Aug 2002 16:27:27 -0000	1.91.2.2
++++ Conf.pm	21 Aug 2002 16:32:55 -0000	1.91.2.3
+@@ -396,7 +396,11 @@
+ =item required_hits n.nn   (default: 5)
+ 
+ Set the number of hits required before a mail is considered spam.  C<n.nn> can
+-be an integer or a real number.
++be an integer or a real number.  5.0 is the default setting, and is quite
++aggressive; it would be suitable for a single-user setup, but if you're an ISP
++installing SpamAssassin, you should probably set the default to be something
++much more conservative, like 8.0 or 10.0.  Experience has shown that you
++B<will> get plenty of user complaints otherwise!
+ 
+ =cut
+ 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

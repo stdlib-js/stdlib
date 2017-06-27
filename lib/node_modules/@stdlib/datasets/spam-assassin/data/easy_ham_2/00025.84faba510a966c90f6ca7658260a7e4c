@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Thu Aug 22 10:46:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A771D43C4A
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:11 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7M841Z30754 for
+    <jm-ilug@jmason.org>; Thu, 22 Aug 2002 09:04:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA16541; Thu, 22 Aug 2002 09:02:47 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA16505 for <ilug@linux.ie>; Thu,
+    22 Aug 2002 09:02:38 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <RHPLYCF3>; Thu, 22 Aug 2002 09:02:36 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E0188563C@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'deccy@csn.ul.ie'" <deccy@csn.ul.ie>, ilug@linux.ie
+Subject: RE: [ILUG] redhat kickstart
+Date: Thu, 22 Aug 2002 09:02:34 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Check out this. Its for compaq kit, but a pc's a pc ;--)
+
+http://www.geocities.com/rlcomp_1999/procedures/kickstart-rh70.html
+
+There are other articles too.
+
+Hope that helps,
+
+CW
+----------------
+How many Redhat admins out there use the redhat kickstart?
+If you don't use it, how do you install redhat on all your 
+workstations, do you do it by hand, with the cds?
+
+As we are looking at using Linux at work, I'm looking
+into setting up the kickstart. There doesn't seem to
+be a lot of documentation around about it.
+
+Does anybody know if it would be possible to do the following:
+Get the machine to boot using DHCP and read it's kickstart
+config file from teh DHCP server and in this config file
+have the machine configured to use a static IP, so that when
+the machine is rebooted it will come up with it's new IP.
+
+Also, There was no driver on the redhat network install flopopy
+for the network card in the machine I'm installing. This required
+me to uncompress the floppy image, loop mount it, add in the module
+for the network card and compress it all up again. I'm not going
+to be able to do this every time we get a new machine, I was
+wondering if instead of having a boot floppy, you could use a boot
+cdrom, but just for the purpose of having all the network card
+modules on the cdrom. I'd still want it to get the packages from
+an NFS server on the network.
+
+Any help with this would be greatly appreciated,
+cheers,
+deccy.
+
+-- 
+---------------------------------------
+Declan Houlihan
+deccy@csn.ul.ie
+http://deccy.csn.ul.ie/
+---------------------------------------
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

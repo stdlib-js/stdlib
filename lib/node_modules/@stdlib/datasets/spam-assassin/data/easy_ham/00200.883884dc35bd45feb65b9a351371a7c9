@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:47:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7309344157
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RISSZ20675 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 19:28:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA10007; Tue, 27 Aug 2002 19:28:11 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from fiachra.ucd.ie (fiachra.ucd.ie [137.43.12.82]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA09972 for <ilug@linux.ie>;
+    Tue, 27 Aug 2002 19:28:03 +0100
+Received: from gavin by fiachra.ucd.ie with local (Exim 3.35 #1 (Debian))
+    id 17jl3C-0000Rs-00 for <ilug@linux.ie>; Tue, 27 Aug 2002 19:26:50 +0100
+Date: Tue, 27 Aug 2002 19:26:50 +0100
+From: Gavin McCullagh <ilug_gmc@fiachra.ucd.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Got me a crappy laptop
+Message-Id: <20020827182650.GC23883@fiachra.ucd.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <NGEJLIBHKCAGGNGEGNJOMECHCAAA.zeez@eircom.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <NGEJLIBHKCAGGNGEGNJOMECHCAAA.zeez@eircom.net>
+User-Agent: Mutt/1.3.28i
+X-Gnupg-Publickey: http://fiachra.ucd.ie/~gavin/public.gpg
+X-Operating-System: Linux 2.4.18 i686
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 27 Aug 2002, Jon wrote:
+
+> I has just been given an old Toshiba CS100 with earliest pentium and 400mb
+> of HD but only a floppy drive on it, its got Win3.1 which is funny to see
+> again but gonna be cleared as soon as i stop messing with it. What I was
+> wondering was could anyone advise what O/S would be good for this, I want a
+> small usable *nix distro for it that i can transfer to it fom floppy.
+> Connecting this to Winblows>i know that winblows allows pier-to-pier
+> connections over serial and parellel ports to other winblows but is this
+> easy do for connecting winblows to *nix???
+
+Have done exactly this with debian, only I used a PCMCIA network card and
+did it off ftp.esat.net (ucd bandwidth is rather good).
+
+However, if you've another machine, look into this null modem cable jobby:
+
+http://rosebud.sps.queensu.ca/~edd/t100cs.html
+
+whether you can connect that to direct cable connectionI've no idea.  You
+could however, put the files onto windows, boot onto a ILUG BBC[tm] and
+mount the fat32 partition.
+
+Easier/Quicker way is to get your hands on a PCMCIA nic.  Also makes the
+maptop far more useful in the long run.
+
+Gavin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

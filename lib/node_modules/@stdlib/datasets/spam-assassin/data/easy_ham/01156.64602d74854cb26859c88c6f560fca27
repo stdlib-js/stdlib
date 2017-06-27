@@ -1,0 +1,93 @@
+From exmh-users-admin@redhat.com  Mon Oct  7 22:40:37 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1949116F16
+	for <jm@localhost>; Mon,  7 Oct 2002 22:40:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 22:40:37 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g97LX0K17804 for
+    <jm-exmh@jmason.org>; Mon, 7 Oct 2002 22:33:00 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 25B84413E3; Mon,  7 Oct 2002
+    17:33:25 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id DB7683F951
+    for <exmh-users@listman.redhat.com>; Mon,  7 Oct 2002 17:27:25 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g97LRPp00977 for exmh-users@listman.redhat.com; Mon, 7 Oct 2002
+    17:27:25 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g97LRPf00973 for
+    <exmh-users@redhat.com>; Mon, 7 Oct 2002 17:27:25 -0400
+Received: from dag.newtech.fi
+    (IDENT:qmailr@ip213-185-39-113.laajakaista.mtv3.fi [213.185.39.113]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g97L7rX07166 for
+    <exmh-users@redhat.com>; Mon, 7 Oct 2002 17:07:53 -0400
+Received: (qmail 4924 invoked by uid 200); 7 Oct 2002 21:27:22 -0000
+Message-Id: <20021007212722.4923.qmail@dag.newtech.fi>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-0.27
+To: exmh-users@spamassassin.taint.org
+Subject: Ringing bell on other computer
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+From: Dag Nygren <dag@newtech.fi>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by int-mx1.corp.spamassassin.taint.org
+    id g97LRPf00973
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Tue, 08 Oct 2002 00:27:22 +0300
+
+
+Hi,
+
+succeeded in ringing a bell anytime I get a mail
+to my inbox (Not Mailing lists, spams etc.) by
+using procmail to execute a "play clink.wav" on
+the "right" mails.
+Now my demands are growing ;-)
+I use my laptop remotely very often and now I would
+like the bell to sound on that when I am there.
+I triedto use the KDE remote sound server and it works in
+the tests, but when procmail runs it it doesn't, presumably
+as it doesn't have the authorization to communicate with
+the laptop, beeing another user?
+
+Any hints.
+
+BRGDS
+
+
+-- 
+Dag Nygren                               email: dag@newtech.fi
+Oy Espoon NewTech Ab                     phone: +358 9 8024910
+Träsktorpet 3                              fax: +358 9 8024916
+02360 ESBO                              Mobile: +358 400 426312
+FINLAND
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

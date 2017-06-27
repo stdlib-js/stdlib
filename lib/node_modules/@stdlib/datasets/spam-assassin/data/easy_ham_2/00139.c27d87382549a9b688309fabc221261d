@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BE758440FD
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6T7tdi16752 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 08:55:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA28439; Mon, 29 Jul 2002 08:53:40 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA28400 for <ilug@linux.ie>; Mon,
+    29 Jul 2002 08:53:32 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA02956 for <ilug@linux.ie>; Mon,
+    29 Jul 2002 08:53:01 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6T7rZF19894 for ilug@linux.ie; Mon, 29 Jul 2002 08:53:35 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 29 Jul 2002 08:53:35 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] weekend projects...
+Message-Id: <20020729075335.GB2689@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: irish linux users group <ilug@linux.ie>
+References: <20020728190929.B2315@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020728190929.B2315@ie.suberic.net>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 28, 2002 at 07:09:29PM +0100, kevin lyda mentioned:
+>     there's a tutorial on linux.ie for it (thanks donnacha) but since i'm
+>     not an apache person this only got me part of the way.  step by step,
+>     this is what i did:
+> 
+> 	# cd /root
+> 	# wget http://www.remotecommunications.com/apache/mod_gzip/src/1.3.19.1a/mod_gzip.c.gz
+> 	# gunzip mod_gzip.c.gz
+> 	# apxs -ic mod_gzip.c
+
+ Thanks kevin...mod_gzip for the terminally lazy :)
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

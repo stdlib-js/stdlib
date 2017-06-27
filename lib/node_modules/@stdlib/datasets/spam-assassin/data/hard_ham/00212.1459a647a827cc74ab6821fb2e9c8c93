@@ -1,0 +1,860 @@
+Return-Path: env_216095411795471888@hermes.sun.com
+Delivery-Date: Sun Sep 15 00:03:33 2002
+Return-Path: <env_216095411795471888@hermes.sun.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g8F40qh03708
+	for <nice@localhost>; Sun, 15 Sep 2002 00:00:52 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Sun, 15 Sep 2002 00:00:52 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Tue, 10 Sep 2002 12:38:41 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Tue, 10 Sep 2002 12:38:41 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id B97BF6DAE2
+	for <mothlight@fastmail.fm>; Tue, 10 Sep 2002 12:38:27 -0500 (CDT)
+X-Mail-from: env_216095411795471888@hermes.sun.com
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  HTTP_CTRL_CHARS_HOST, UNSUB_PAGE, SUPERLONG_LINE, MAILTO_LINK, WEB_BUGS,
+  NO_MX_FOR_FROM, CTYPE_JUST_HTML
+Received: from hermes.sun.com (hermes.sun.com [64.124.140.169])
+	by www.fastmail.fm (Postfix) with SMTP id 2604B6DB18
+	for <mothlight@fastmail.fm>; Tue, 10 Sep 2002 12:38:27 -0500 (CDT)
+Date: 10 Sep 2002 08:24:12 -0800
+From: "JDC Tech Tips" <body_216095411795471888@hermes.sun.com>
+To: mothlight@fastmail.fm
+Message-Id: <216095411795471888@hermes.sun.com>
+Subject: Core Java Technologies Tech Tips, September 10, 2002 (ArrayList vs. LinkedList, Zero-Length Arrays)
+Mime-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mailer: SunMail 1.0
+X-Status: 
+X-Keywords:                  
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>
+Core Java Technologies Technical Tips
+</title>
+
+<style type="text/css">
+
+CODE {color: #333333; font-family: Verdana, Courier, Monospace; font-size: 10pt}
+PRE {color: #333333; font-family: Verdana, Courier, Monospace; font-size: 10pt}
+BODY, div, span {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+td, th {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+tr {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+table {font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+p {color: #333333; font-family: arial,helvetica,sans-serif; font-size: 10pt}
+li {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+br {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+div {color: #666699; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+sup {font-family: Arial, Helvetica, sans-serif; font-size: 5pt}
+h3 {color: #666699; font-family: Arial, Helvetica, sans-serif; font-size: 11pt}
+h4, h5, h6 {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+blockquote, input, select {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+ul, ol, font {color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+a:link {font-size: 10pt; font-family: Arial, Helvetica, sans-serif; color:#666699 }
+span.purple {font-weight: bold; color: #666699; font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+span.small {font-size: 8pt; font-family: Arial, Helvetica, sans-serif; color:#333333 }
+span.link {font-size: 8pt; font-family: Arial, Helvetica, sans-serif; color:#666699 }
+</style>
+
+</head>
+
+<body bgcolor="#ffffff">
+<a name="top"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="611">
+<tr>
+<td colspan="3" bgcolor="#cccccc" width="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" border="0" alt="image"></td>
+</tr>
+
+<tr>
+<td bgcolor="#cccccc" width="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" border="0" alt="image"></td>
+
+<td>
+<table border="0" cellpadding="0" cellspacing="0" width="611">
+<tr>
+<td colspan="2">
+<img src="http://developer.java.sun.com/images/headers/core_ttips_hdr.jpg" width="611" height="160" alt="Core Java Technologies Technical Tips" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="2" bgcolor="#cccccc" width="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" border="0" alt="image"></td>
+</tr>
+
+<!-- ================== -->
+<!-- Start Main Content -->
+<!-- ================== -->
+
+<tr>
+<td height="20">&nbsp;&nbsp;&nbsp;<a href="http://developer.java.sun.com/developer/TechTips/txtarchive/2002/Sept02_GlenM.txt?s=04&w=37" style="text-decoration:none;">View this issue as simple text</a></td>
+<td align="right" height="20"><span class="purple">September 10, 2002</span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+<tr><td colspan="2">
+
+
+
+<FORM METHOD="GET" ACTION="http://search.java.sun.com/search/java/">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr>
+<td>
+        
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+<tr> 
+<td align="left" VALIGN="middle" width="20%"><h3>In this Issue</h3></td>
+              
+<td valign="middle" align="right" width="65%">
+<font size="2">
+<INPUT TYPE="text" SIZE="15" MAXLENGTH="128" NAME=qt></FONT></td>
+            
+<td VALIGN="middle" WIDTH="55">
+<INPUT TYPE="image" SRC="http://developer.java.sun.com/images/search.button.gif" ALT="Search" value="search" BORDER="0" WIDTH="55"></td>
+</tr>
+</table>
+
+</FORM>
+
+<p>
+WELCOME to the Core Java<sup>TM</sup> Technologies Tech Tips, September 10, 2002. Here you'll get tips on using core Java technologies and APIs, such as those in Java 2 Platform, Standard Edition (J2SE<sup>TM</sup>).
+</p>
+
+<p>
+<a href="#1"><img src="http://developer.java.sun.com/images/anchor.gif" border="0" alt="">Using ArrayList and LinkedList</a>
+<br>    
+<a href="#2"><img src="http://developer.java.sun.com/images/anchor.gif" border="0" alt="">Using Zero-Length Arrays</a>
+</p>
+
+<p>
+These tips were developed using Java 2 SDK, Standard Edition, v 1.4.
+</p>
+
+<p>
+This issue of the JDC Tech Tips is written by Glen McCluskey.
+</p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+
+<!-- Grey Horizontal Line Begins Here -->
+
+<tr>
+<td bgcolor="#cccccc" height="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" ALT="Pixel" border="0"></td>
+</tr>
+</table> 
+
+<!-- Grey Horizontal Line ends Here -->
+
+<a name="1"></a>
+
+<h3>USING ARRAYLIST AND LINKEDLIST</h3>
+
+<p>
+<code>ArrayList</code> and <code>LinkedList</code> are two <code>Collections</code> classes used for storing lists of object references. For example, you could have an <code>ArrayList</code> of Strings, or a <code>LinkedList</code> of Integers. This tip compares the performance of <code>ArrayList</code> and <code>LinkedList</code>, and offers some suggestions about which of these classes is the right choice in a given situation.
+</p>
+
+<p>
+The first key point is that an <code>ArrayList</code> is backed by a primitive <code>Object</code> array. Because of that, an <code>ArrayList</code> is much faster than a <code>LinkedList</code> for random access, that is, when accessing arbitrary list elements using the <code>get</code> method. Note that the <code>get</code> method is implemented for <code>LinkedLists</code>, but it requires a sequential scan from the front or back of the list. This scan is very slow. For a <code>LinkedList</code>, there's no fast way to access the Nth element of the list.
+</p>
+
+
+<p>
+Consider the following example. Suppose you have a large list of sorted elements, either an <code>ArrayList</code> or a <code>LinkedList</code>. Suppose too that you do a binary search on the list. The standard binary search algorithm starts by checking the search key against the value in the middle of the list. If the middle value is too high, then the upper half of the list is eliminated. However, if the middle value is too low, then the lower half of the list is ignored. This process continues until the key is found in the list, or until the lower bound of the search becomes greater than the upper bound.
+</p>
+
+<p>
+Here's a program that does a binary search on all the elements in an <code>ArrayList</code> or a <code>LinkedList</code>:
+</p>
+
+<pre>
+    import java.util.*;
+
+    public class ListDemo1 {
+        static final int N = 10000;
+
+        static List values;
+
+        // make List of increasing Integer values
+
+        static {
+           Integer vals[] = new Integer[N];
+
+           Random rn = new Random();
+
+           for (int i = 0, currval = 0; i &lt; N; i++) {
+               vals[i] = new Integer(currval);
+               currval += rn.nextInt(100) + 1;
+           }
+
+           values = Arrays.asList(vals);
+        }
+        
+        // iterate across a list and look up every
+        // value in the list using binary search
+
+        static long timeList(List lst) {
+            long start = System.currentTimeMillis();
+
+            for (int i = 0; i &lt; N; i++) {
+
+               // look up a value in the list 
+               // using binary search
+
+               int indx = Collections.binarySearch(
+                                   lst, values.get(i));
+
+               // sanity check for result 
+               // of binary search
+
+               if (indx != i) {
+                   System.out.println(
+                                    &quot;*** error ***\n&quot;);
+               }
+           }
+
+           return System.currentTimeMillis() - start;
+       }
+
+       public static void main(String args[]) {
+
+           // do lookups in an ArrayList 
+
+           System.out.println(&quot;time for ArrayList = &quot; +
+               timeList(new ArrayList(values)));
+
+           // do lookups in a LinkedList
+
+           System.out.println(
+               &quot;time for LinkedList = &quot; +
+               timeList(new LinkedList(values)));
+       }
+    }
+</pre>
+
+<p>
+The <code>ListDemo1</code> program sets up a <code>List</code> of sorted Integer values. It then adds the values to an <code>ArrayList</code> or a <code>LinkedList</code>. Then <code>Collections.binarySearch</code> is used to search for each value in the 
+list.
+</p>
+
+<p>
+When you run this program, you should see a result that looks something like this:
+</p>
+
+<pre>
+    time for ArrayList = 31
+
+    time for LinkedList = 4640
+</pre>
+
+<p>
+<code>ArrayList</code> is about 150 times faster than <code>LinkedList</code>. (Your results might differ depending on your machine characteristics, but you should see a distinct difference in the result for <code>ArrayList</code> as compared to that for <code>LinkedList</code>. The same is true for the other programs in this tip.) Clearly, <code>LinkedList</code> is a bad choice in this situation. The binary search algorithm inherently uses random access, and <code>LinkedList</code> does not support fast random access. The time to do a random access in a <code>LinkedList</code> is proportional to the size of the list. By comparison, random access in an <code>ArrayList</code> has a fixed time.
+</p>
+
+<p>
+You can use the <code>RandomAccess</code> marker interface to check whether a List supports fast random access:
+</p>
+
+<pre>
+    void f(List lst) {
+        if (lst instanceof RandomAccess) {
+            // supports fast random access
+        }
+    }
+</pre>
+
+<p>
+<code>ArrayList</code> implements the <code>RandomAccess</code> interface, and <code>LinkedList</code>. does not. Note that <code>Collections.binarySearch</code> does take advantage of the <code>RandomAccess</code> property, to optimize searches.
+</p>
+
+<p>
+Do these results prove that <code>ArrayList</code> is always a better choice? Not necessarily. There are many cases where <code>LinkedList</code> does better. Also note that there are many situations where an algorithm can be implemented efficiently for <code>LinkedList</code>. An example is reversing a <code>LinkedList</code> using <code>Collections.reverse</code>. The internal algorithm does this, and gets reasonable performance, by using forward and backward iterators.
+</p>
+
+<p>
+Let's look at another example. Suppose you have a list of elements, and you do a lot of element inserting and deleting to the list. In this case, <code>LinkedList</code> is the better choice. To demonstrate that, consider the following &quot;worst case&quot; scenario. In this demo, a program repeatedly inserts elements at the beginning of a list. The code looks like this:
+</p>
+
+<pre>
+    import java.util.*;
+
+    public class ListDemo2 {
+        static final int N = 50000;
+
+        // time how long it takes to add 
+        // N objects to a list
+
+        static long timeList(List lst) {
+            long start = System.currentTimeMillis();
+
+            Object obj = new Object();
+
+            for (int i = 0; i &lt; N; i++) {
+                lst.add(0, obj);
+            }
+
+            return System.currentTimeMillis() - start;
+        }
+
+        public static void main(String args[]) {
+
+            // do timing for ArrayList
+
+            System.out.println(
+                &quot;time for ArrayList = &quot; +
+                timeList(new ArrayList()));
+
+            // do timing for LinkedList
+
+            System.out.println(
+                &quot;time for LinkedList = &quot; +
+                timeList(new LinkedList()));
+        }
+    } 
+</pre>
+
+<p>
+When you run this program, the result should look something like this:
+</p>
+
+<pre>
+    time for ArrayList = 4859
+
+    time for LinkedList = 125
+</pre>
+
+<p>
+These results are pretty much the reverse of the previous example.
+</p>
+
+<p>
+When an element is added to the beginning of an <code>ArrayList</code>, all of the existing elements must be pushed back, which means a lot of expensive data movement and copying. By contrast, adding an element to the beginning of a <code>LinkedList</code> simply means allocating an internal record for the element and then adjusting a couple of links. Adding to the beginning of a <code>LinkedList</code> has fixed cost, but adding to the beginning of an <code>ArrayList</code> has a cost that's proportional to the list size.
+</p>
+
+<p>
+So far, this tip has looked at speed issues, but what about space? Let's look at some internal details of how <code>ArrayList</code> and <code>LinkedList</code> are implemented in Java 2 SDK, Standard Edition v 1.4. These details are not part of the external specification of these classes, but are illustrative of how such classes work internally.
+</p>
+
+<p>
+The <code>LinkedList</code> class has a private internal class defined like this:
+</p>
+
+<pre>
+    private static class Entry {
+        Object element;
+        Entry next;
+        Entry previous;
+    } 
+</pre>
+
+
+<p>
+Each <code>Entry</code> object references a list element, along with the next and previous elements in the <code>LinkedList</code> -- in other words, a doubly-linked list. A <code>LinkedList</code> of 1000 elements will have 1000 <code>Entry</code> objects linked together, referencing the actual list elements. There is significant space overhead in a <code>LinkedList</code> structure, given all these <code>Entry</code> objects.
+</p>
+
+<p>
+An <code>ArrayList</code> has a backing <code>Object</code> array to store the elements. This array starts with a capacity of 10. When the array needs to grow, the new capacity is computed as:
+</p>
+
+<pre>
+    newCapacity = (oldCapacity * 3) / 2 + 1;
+</pre>
+
+<p>
+Notice that the array capacity grows each time by about 50%. This means that if you have an <code>ArrayList</code> with a large number of elements, there will be a significant amount of space wasted at the end. This waste is intrinsic to the way <code>ArrayList</code> works. If there was no spare capacity, the array would have to be reallocated for each new element, and performance would suffer dramatically. Changing the growth strategy to be more aggressive (such as doubling the size at each reallocation) would result in slightly better performance, but it would waste more space.
+</p>
+
+<p>
+If you know how many elements will be in an <code>ArrayList</code>, you can specify the capacity to the constructor. You can also call the <code>trimToSize</code> method after the fact to reallocate the internal array. This gets rid of the wasted space.
+</p>
+
+<p>
+So far, this discussion has assumed that either an <code>ArrayList</code> or a <code>LinkedList</code> is &quot;right&quot; for a given application. But sometimes, other choices make more sense. For example, consider the very common situation where you have a list of key/value pairs, and you would like to retrieve a value for a given key.
+</p>
+
+<p>
+You could store the pairs in an N x 2 <code>Object</code> array. To find the right pair, you could do a sequential search on the key values. This approach works, and is a useful choice for very small lists (say 10 elements or less), but it doesn't scale to big lists.
+</p>
+
+<p>
+Another approach is to sort the key/value pairs by ascending key value, store the result in a pair of <code>ArrayLists</code>, and then do a binary search on the keys list. This approach also works, and is very fast. Yet another approach is to not use a list structure at all, but instead use a map structure (hash table), in the form of a <code>HashMap</code>.
+</p>
+
+<p>
+Which is faster, a binary search on an <code>ArrayList</code>, or a <code>HashMap</code>? Here's a final example that compares these two:
+</p>
+
+<pre>
+    import java.util.*;
+
+    public class ListDemo3 {
+        static final int N = 500000;
+
+        // Lists of keys and values
+
+        static List keys;
+        static List values;
+
+        // fill the keys list with ascending order key 
+        // values and fill the values list with
+        // corresponding values (-key)
+
+        static {
+            Integer keyvec[] = new Integer[N];
+            Integer valuevec[] = new Integer[N];
+
+            Random rn = new Random();
+
+            for (int i = 0, currval = 0; i &lt; N; i++) {
+                keyvec[i] = new Integer(currval);
+                valuevec[i] = new Integer(-currval);
+                currval += rn.nextInt(100) + 1;
+            }
+
+            keys = Arrays.asList(keyvec);
+            values = Arrays.asList(valuevec);
+        }
+
+        // fill a Map with key/value pairs
+
+        static Map map = new HashMap();
+
+        static {
+            for (int i = 0; i &lt; N; i++) {
+                map.put(keys.get(i), values.get(i));
+            }
+        }
+
+        // do binary search lookup of all keys
+
+        static long timeList() {
+            long start = System.currentTimeMillis();
+
+            for (int i = 0; i &lt; N; i++) {
+                int indx = Collections.binarySearch(
+                                    keys, keys.get(i));
+
+                // sanity check of returned value 
+                // from binary search
+
+                if (indx != i) {
+                    System.out.println(
+                                    &quot;*** error ***\n&quot;);
+                }
+            }
+
+            return System.currentTimeMillis() - start;
+        }
+
+        // do Map lookup of all keys
+
+        static long timeMap() {
+            long start = System.currentTimeMillis();
+
+            for (int i = 0; i &lt; N; i++) {
+                Integer value = (Integer)map.get(
+                                          keys.get(i));
+
+                // sanity check of value returned 
+                // from map lookup
+
+                if (value != values.get(i)) {
+                    System.out.println(
+                                    &quot;*** error ***\n&quot;);
+                }
+            }
+
+            return System.currentTimeMillis() - start;
+        }
+
+        public static void main(String args[]) {
+
+            // do timing for List implementation
+
+            System.out.println("List time = " + 
+                                           timeList());
+
+            // do timing for Map implementation
+
+            System.out.println(&quot;Map time = &quot; + 
+                                            timeMap());
+        }
+    }
+</pre>
+
+<p>
+The program sets up <code>Lists</code> of keys and values, and then uses two different techniques to map keys to values. One approach uses a binary search on a list, the other a hash table.
+</p>
+
+<p>
+When you run the <code>ListDemo3</code> program, you should get a result that looks something like this:
+</p>
+
+<pre>
+    ArrayList time = 1000
+
+    HashMap time = 281
+</pre>
+
+<p>
+In this example, N has a value of 500000. Approximately, log2(N) - 1 comparisons are required in an average successful binary search, so each binary search lookup in the <code>ArrayList</code> will take about 18 comparisons. By contrast, a properly implemented hash table typically requires only 1-3 comparisons. So you should expect the hash table to be faster in this case.
+</p>
+
+<p>
+However, binary search is still useful. For example, you might want to do a lookup in a sorted list and then find keys that are close in value to the key used for the lookup. Doing this is easy with binary search, but impossible in a hash table. Keys in a hash table are stored in apparent random order. Also, if you are concerned with worst-case performance, the binary search algorithm offers a much stronger performance guarantee than a hash table scheme. You might also consider using TreeMap for doing lookups in sorted collections of key/value pairs.
+</p>
+
+<p>
+Let's summarize the key points presented in this tip:
+</p>
+
+<ul>
+  <li>Appending elements to the end of a list has a fixed averaged cost for both <code>ArrayList</code> and <code>LinkedList.</code> For <code>ArrayList</code>, appending typically involves setting an internal array location to the element reference, but occasionally results in the array being reallocated. For <code>LinkedList</code>, the cost is uniform and involves allocating an internal <code>Entry</code> object.</li>
+
+  <li>Inserting or deleting elements in the middle of an <code>ArrayList</code> implies that the rest of the list must be moved. Inserting or deleting elements in the middle of a <code>LinkedList</code> has fixed cost.</li>
+
+  <li>A <code>LinkedList</code> does not support efficient random access</li>
+
+  <li>An <code>ArrayList</code> has space overhead in the form of reserve capacity at the end of the list. A <code>LinkedList</code> has significant space overhead per element.</li>
+
+  <li>Sometimes a <code>Map</code> structure is a better choice than a <code>List</code>.</li>
+</ul>
+
+<p>
+For more information about Using <code>ArrayList</code> and <code>LinkedLists</code>, see section 16.6, List, and section 16.7, Map and SortedMap, in &quot;<a href="http://java.sun.com/docs/books/javaprog/thirdedition/?s=04&w=37" target="_blank">The Java<sup>TM</sup> Programming Language Third Edition</a>&quot; by Arnold, Gosling, and Holmes. Also see the <a href="http://java.sun.com/docs/books/tutorial/collections/?s=04&w=37" target="_blank">Collections trail in the Java Tutorial, Third Edition</a>.
+</p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td>
+<div align="right">
+<a href="#top">back to top<img src="http://developer.java.sun.com/images/back_to_top.gif" border="0" alt="Pixel"></a>
+</div>
+</td></tr>
+
+<tr><td bgcolor="#ffffff" height="2"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" ALT="Pixel" border="0"></td></tr>
+
+<!-- Grey Horizontal Line Begins Here -->
+
+<tr>
+<td bgcolor="#cccccc" height="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" ALT="Pixel" border="0"></td>
+</tr>
+</table> 
+
+<!-- Grey Horizontal Line ends Here -->
+
+<a name="2"></a>
+
+<h3>USING ZERO-LENGTH ARRAYS</h3>
+
+<p>
+Suppose that you are writing a Java application that involves some sort of data filtering. You have some raw data that you want to clean up and process in various ways. One of the methods you've written takes an array of integers, along with minimum and maximum values. The method goes through the array and eliminates &quot;outliers,&quot; that is, values that are too small or too big. The result of the filtering process is a new array of cleaned-up data.
+</p>
+
+<p>
+How could you implement this kind of filtering method? Here's one approach:
+</p>
+
+<pre>
+    import java.util.*;
+    
+    public class ZeroDemo1 {
+    
+        // filter input array and throw away values 
+        // that are less than minval or greater than 
+        // maxval
+    
+        static int[] filterData(
+                int indata[], int minval, int maxval) {
+    
+            // check parameters for errors 
+    
+            if (indata == null) {
+                throw new NullPointerException(
+                                     &quot;indata is null&quot;);
+            }
+            if (maxval &lt; minval) {
+                throw new IllegalArgumentException(
+                &quot;maxval &lt; minval&quot;);
+            }
+    
+            // count number of valid values 
+            // in input array
+    
+            int validcnt = 0;
+            for (int i = 0; i &lt; indata.length; i++) {
+                if (indata[i] &gt;= minval &amp;&amp; indata[i] 
+                                         &lt;= maxval) {
+                    validcnt++;
+                }
+            }
+    
+            // if no valid values, return null
+    
+            if (validcnt == 0) {
+                return null;
+            }
+    
+            // copy valid values to new array 
+            // and return it
+    
+            int outdata[] = new int[validcnt];
+            for (int i = 0, j = 0; 
+                              i &lt; indata.length; i++) {
+                if (indata[i] &gt;= minval &amp;&amp; indata[i] 
+                                           &lt;= maxval) {
+                    outdata[j++] = indata[i];
+                }
+            }
+            return outdata;
+        }
+    
+        public static void main(String args[]) {
+    
+            // set up test array of integers
+    
+            int indata[] = new int[]{1, 3, -17, 8, 59};
+    
+            // filter out values not in the range 1-10
+    
+            int outdata1[] = filterData(indata, 1, 10);
+            for (int i = 0; i &lt; outdata1.length; i++) {
+                System.out.println(outdata1[i]);
+            }
+    
+            // filter out values not 
+            // in the range 100-200
+    
+            int outdata2[] = filterData(
+                                     indata, 100, 200);
+            for (int i = 0; i &lt; outdata2.length; i++) {
+                System.out.println(outdata2[i]);
+            }
+        }
+    }
+</pre>
+
+<p>
+The <code>filterData</code> method does two scans of the input array. The first scan counts the number of valid data values. Then the method allocates a new array of the appropriate size, and copies the good values to it. If there are no good values, the method returns a null value for the array reference.
+</p>
+
+<p>
+The result of running the <code>ZeroDemo1</code> program is:
+</p>
+
+<pre>
+    1
+    3
+    8
+    Exception in thread &quot;main&quot;
+    java.lang.NullPointerException
+        at ZeroDemo1.main(ZeroDemo1.java:72)
+</pre>
+
+<p>
+The problem with this program is a rather basic one. The second call of <code>filterData</code> returns a null value, and the program fails to take this possibility into account.
+</p>
+
+<p>
+A better approach in this example would be to comment out the block of code that tests for the possibility of no valid data values:
+</p>
+
+<pre>
+    /*
+    if (validcnt == 0) {
+        return null;
+    }
+    */
+</pre>
+
+<p>
+When there is no valid data, the code will fall through to the next line, where a zero-length array is allocated:
+</p>
+
+<pre>
+    int outdata[] = new int[0];
+</pre>
+
+<p>
+This is perfectly legal Java usage. The representation of Java arrays includes the length of the array, and it's therefore possible to tell if an array has zero length.
+</p>
+
+<p>
+For the <code>ZeroDemo1</code> example, if you anticipate that validcnt will often be zero, that is, data filtering will often eliminate all values from the input, then you could optimize away the second input scan by adding code like this:
+</p>
+
+<pre>
+    int outdata[] = new int[validcnt];
+    if (validcnt == 0) {
+        return outdata;
+    }
+</pre>
+
+<p>
+Note that usage such as:
+</p>
+
+<pre>
+    int outdata[] = new int[]{};
+</pre>
+
+<p>
+is also legal, to initialize an array with a zero-length set of integer constants.
+</p>
+
+<p>
+In general, it's best not to return null from a method that returns an array type. Always returning an array, even if the array has zero length, greatly improves the generality of algorithms. If you anticipate that your methods will often return zero-length arrays, you might be concerned about the performance implications of allocating many such arrays. In this case, you can allocate a single array, and always return the same one, as follows:
+</p>
+
+<pre>
+    private static final int ZERO_LENGTH_ARRAY[] = 
+                                            new int[0];
+</pre>
+
+<p>
+This array is immutable (it can't be changed), and can be shared throughout your application.
+</p>
+
+<p>
+There's another way that zero-length arrays are used, as illustrated in the following example:
+</p>
+
+<pre>
+    import java.util.*;
+    
+    public class ZeroDemo2 {
+        public static void main(String args[]) {
+    
+            // set up ArrayList and add strings to it
+    
+            List stringlist = new ArrayList();
+            stringlist.add(&quot;string 1&quot;);
+            stringlist.add(&quot;string 2&quot;);
+            stringlist.add(&quot;string 3&quot;);
+    
+            // convert to String array
+    
+            String out[] = (
+                          String[])stringlist.toArray(
+            new String[0]);
+            for (int i = 0; i &lt; out.length; i++) {
+                System.out.println(out[i]);
+            }
+        }
+    }
+</pre>
+
+<p>
+The result of running the <code>ZeroDemo2</code> program is:
+</p>
+
+<pre>
+    string 1
+    string 2
+    string 3
+</pre>
+
+<p>
+The <code>ZeroDemo2</code> program sets up an <code>ArrayList</code>, and adds three strings to it. Then the program calls <code>toArray</code> to get a <code>String</code> array of the three elements in the <code>ArrayList</code>. In this example, the argument to <code>toArray</code> is &quot;new String[0]&quot;. This argument serves a couple of purposes. First, if you have a <code>String</code> array that's big enough to hold the elements of the <code>ArrayList</code>, you can specify it as the argument to <code>toArray</code>. The method will use the <code>String</code> array.
+</p>
+
+<p>
+But if your array is not big enough, then the <code>toArray</code> method allocates an array to return the elements. It uses the type of the array that was passed in to determine the type of the allocated array. <code>ArrayList</code> stores its element references in an <code>Object</code> array. The <code>toArray</code> method needs to be told if there is some other type (such as String) to be used for returning the array of elements. The method uses reflection (<code>java.lang.reflect.Array.newInstance</code>) to create an array of the appropriate type.
+</p>
+
+<p>
+For more information about using zero-Length arrays, see item 27 &quot;Return zero-length arrays, not nulls&quot; in &quot;<a href="http://java.sun.com/docs/books/effective/?s=04&w=37" target="_blank">Effective Java Programming Language Guide</a>&quot; by Joshua Bloch.
+</p>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td>
+<div align="right">
+<a href="#top">back to top<img src="http://developer.java.sun.com/images/back_to_top.gif" border="0" alt="Pixel"></a>
+</div>
+</td></tr>
+
+<tr><td bgcolor="#ffffff" height="2"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" ALT="Pixel" border="0"></td></tr>
+
+<!-- Grey Horizontal Line Begins Here -->
+
+<tr>
+<td bgcolor="#cccccc" height="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" ALT="Pixel" border="0"></td>
+</tr>
+</table> 
+
+<!-- Grey Horizontal Line ends Here -->
+<br>
+
+<span class="small">IMPORTANT: Please read our Terms of Use, Privacy, and Licensing policies:<br>
+<a href="http://www.sun.com/share/text/termsofuse.html?s=04&w=37"><span class="link">http://www.sun.com/share/text/termsofuse.html</span></a><br>
+<a href="http://www.sun.com/privacy/?s=04&w=37"><span class="link">http://www.sun.com/privacy/</span></a><br>
+<a href="http://developer.java.sun.com/berkeley_license.html?s=04&w=37"><span class="link">http://developer.java.sun.com/berkeley_license.html</span></a>
+</span><br><br>
+
+<span class="small">
+Comments? Send your feedback on the Java<sup>TM</sup> Technology Fundamentals Newsletter to: <a href="mailto:jdc-webmaster@sun.com"><span class="link">jdc-webmaster@sun.com</span></a>
+</span><br><br>
+
+<span class="small">
+Subscribe to the following newsletters for the latest information about technologies and products in other Java platforms:
+</span><br><br>
+
+<span class="small">
+  - Enterprise Java Technologies Tech Tips. Get tips on using
+    enterprise Java technologies and APIs, such as those in the
+    Java 2 Platform, Enterprise Edition (J2EE<sup>TM</sup>).<br>
+  - Wireless Developer Tech Tips. Get tips on using wireless
+    Java technologies and APIs, such as those in the Java 2 
+    Platform, Micro Edition (J2ME<sup>TM</sup>).<br><br>
+</span>
+   
+<span class="small">
+  To subscribe to these and other JDC publications:<br>
+  - Go to the JDC Newsletters and Publications page, 
+    choose the newsletters you want to <a href="http://developer.java.sun.com/subscription/?s=04&w=37"><span class="link">subscribe</span></a> to and click &quot;Update&quot;.<br>
+  - To unsubscribe, go to the <a href="http://developer.java.sun.com/subscription/?s=04&w=37"><span class="link">subscriptions page</span></a>, uncheck the appropriate checkbox, and click &quot;Update&quot;.
+</span><br><br>
+
+<span class="small">ARCHIVES: You'll find the Core Java Technologies Tech Tips archives at:<br>
+<a href="http://java.sun.com/jdc/TechTips/?s=04&w=37"><span class="link">http://java.sun.com/jdc/TechTips/index.html</span></a>
+</span><br><br>
+
+<span class="small">Copyright 2002 <a href="http://www.sun.com?s=04&w=37"><span class="link">Sun Microsystems, Inc.</span></a> All rights reserved. 901 San Antonio Road, Palo Alto, California 94303 USA.
+</span><br><br>
+
+
+<span class="small">Sun, Sun Microsystems, Java, Java Developer Connection, J2SE, J2EE, and J2ME are trademarks or registered trademarks of Sun Microsystems, Inc. in the United States and other countries.
+</span><br><br>
+
+
+<!-- ================ -->
+<!-- End Main Content -->
+<!-- ================ -->
+
+<center>
+<a href="http://www.sun.com"><img src="http://developer.java.sun.com/images/lgsun.gif" border="0" alt="Sun Microsystems, Inc."></a>
+</center>
+
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</td>
+
+<td bgcolor="#cccccc" width="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+<td colspan="3" bgcolor="#cccccc" width="1"><img src="http://developer.java.sun.com/images/pixel.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+</table>
+
+<table bgcolor = "#efefef"><tr><td><a href="http://bulkmail.sun.com/servlet/PreferenceServlet?action=change&pref_name=content-type&pref_value=text&id=216095411795471888">Please send me newsletters in text.</a><br><a href="http://bulkmail.sun.com/unsubscribe?216095411795471888">Please unsubscribe me from this newsletter.</a><img src="http://bulkmail2.sun.com/OTServlet?id=216095411795471888" width=1 height=1></td></tr></table></body>
+</html>		
+

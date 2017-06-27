@@ -1,0 +1,123 @@
+Return-Path: jeremy@alum.mit.edu
+Delivery-Date: Sat Sep  7 01:00:14 2002
+From: jeremy@alum.mit.edu (Jeremy Hylton)
+Date: Fri, 6 Sep 2002 20:00:14 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCIEJKBCAB.tim.one@comcast.net>
+References: <15737.2576.315460.956295@slothrop.zope.com>
+	<LNBBLJKPBEHFEDALKOLCIEJKBCAB.tim.one@comcast.net>
+Message-ID: <15737.16782.542869.368986@slothrop.zope.com>
+
+>>>>> "TP" == Tim Peters <tim.one@comcast.net> writes:
+
+  >> The false positive rate is 0-3%.  (Finally!  I had to scrub a
+  >> bunch of previously unnoticed spam from my inbox.)  Both
+  >> collections have about 1100 messages.
+
+  TP> Does this mean you trained on about 1100 of each?
+
+The total collections are 1100 messages.  I trained with 1100/5
+messages. 
+
+  TP> Can't guess.  You're in a good position to start adding more
+  TP> headers into the analysis, though.  For example, an easy start
+  TP> would be to uncomment the header-counting lines in tokenize()
+  TP> (look for "Anthony").  Likely the most valuable thing it's
+  TP> missing then is some special parsing and tagging of Received
+  TP> headers.
+
+I tried the "Anthony" stuff, but it didn't make any appreciable
+difference that I could see from staring at the false negative rate.
+The numbers are big enough that a quick eyeball suffices.
+
+Then I tried a dirt simple tokenizer for the headers that tokenize the
+words in the header and emitted like this "%s: %s" % (hdr, word).
+That worked too well :-).  The received and date headers helped the
+classifier discover that most of my spam is old and most of my ham is
+new.
+
+So I tried a slightly more complex one that skipped received, data,
+and x-from_, which all contained timestamps.  I also skipped the X-VM-
+headers that my mail reader added:
+
+class MyTokenizer(Tokenizer):
+
+    skip = {'received': 1,
+            'date': 1,
+            'x-from_': 1,
+            }
+
+    def tokenize_headers(self, msg):
+        for k, v in msg.items():
+            k = k.lower()
+            if k in self.skip or k.startswith('x-vm'):
+                continue
+            for w in subject_word_re.findall(v):
+                for t in tokenize_word(w):
+                    yield "%s:%s" % (k, t)
+
+This did moderately better.  The false negative rate is 7-21% over the
+tests performed so far.  This is versus 11-28% for the previous test
+run that used the timtest header tokenizer.
+
+It's interesting to see that the best descriminators are all ham
+discriminators.  There's not a single spam-indicator in the list.
+Most of the discriminators are header fields.  One thing to note is
+that the presence of Mailman-generated headers is a strong non-spam
+indicator.  That matches my intuition: I got an awful lot of
+Mailman-generated mail, and those lists are pretty good at surpressing
+spam.  The other thing is that I get a lot of ham from people who use
+XEmacs.  That's probably Barry, Guido, Fred, and me :-).
+
+One final note.  It looks like many of the false positives are from
+people I've never met with questions about Shakespeare.  They often
+start with stuff like:
+
+> Dear Sir/Madam,
+> 
+> May I please take some of your precious time to ask you to help me to find a
+> solution to a problem that is worrying me greatly. I am old science student
+
+I guess that reads a lot like spam :-(.
+
+Jeremy
+
+
+238 hams & 221 spams
+    false positive: 2.10084033613
+    false negative: 9.50226244344
+    new false positives: []
+    new false negatives: []
+
+    best discriminators:
+        'x-mailscanner:clean' 671 0.0483425
+        'x-spam-status:IN_REP_TO' 679 0.01
+        'delivered-to:skip:s 10' 691 0.0829876
+        'x-mailer:Lucid' 699 0.01
+        'x-mailer:XEmacs' 699 0.01
+        'x-mailer:patch' 699 0.01
+        'x-mailer:under' 709 0.01
+        'x-mailscanner:Found' 716 0.0479124
+        'cc:zope.com' 718 0.01
+        "i'll" 750 0.01
+        'references:skip:1 20' 767 0.01
+        'rossum' 795 0.01
+        'x-spam-status:skip:S 10' 825 0.01
+        'van' 850 0.01
+        'http0:zope' 869 0.01
+        'email addr:zope' 883 0.01
+        'from:python.org' 895 0.01
+        'to:jeremy' 902 0.185401
+        'zope' 984 0.01
+        'list-archive:skip:m 10' 1058 0.01
+        'list-subscribe:skip:m 10' 1058 0.01
+        'list-unsubscribe:skip:m 10' 1058 0.01
+        'from:zope.com' 1098 0.01
+        'return-path:zope.com' 1115 0.01
+        'wrote:' 1129 0.01
+        'jeremy' 1150 0.01
+        'email addr:python' 1257 0.01
+        'x-mailman-version:2.0.13' 1311 0.01
+        'x-mailman-version:101270' 1395 0.01
+        'python' 1401 0.01
+

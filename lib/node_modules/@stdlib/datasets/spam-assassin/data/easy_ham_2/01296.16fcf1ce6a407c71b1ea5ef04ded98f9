@@ -1,0 +1,93 @@
+From pudge@perl.org  Tue Jul 23 03:04:09 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E1CD5440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 22:04:08 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 03:04:08 +0100 (IST)
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6N21P419292 for
+    <jm-use-perl@jmason.org>; Tue, 23 Jul 2002 03:01:25 +0100
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17Wosk-0006Jx-00 for <jm-use-perl@jmason.org>;
+    Mon, 22 Jul 2002 21:54:34 -0400
+Date: Tue, 23 Jul 2002 02:00:30 +0000
+From: pudge@perl.org
+Subject: [use Perl] Stories for 2002-07-23
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17Wosk-0006Jx-00@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * This week on perl5-porters (15-21 July 2002)
+    * LAN Party at OSCON
+
++--------------------------------------------------------------------+
+| This week on perl5-porters (15-21 July 2002)                       |
+|   posted by rafael on Monday July 22, @03:21 (summaries)           |
+|   http://use.perl.org/article.pl?sid=02/07/22/0725254              |
++--------------------------------------------------------------------+
+
+OK, you know already the big news of the week, don't you ? This report
+will tell you what happened behind the scenes of the 5.8.0 final
+releasing.
+
+This story continues at:
+    http://use.perl.org/article.pl?sid=02/07/22/0725254
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/07/22/0725254
+
+
++--------------------------------------------------------------------+
+| LAN Party at OSCON                                                 |
+|   posted by ziggy on Monday July 22, @13:06 (events)               |
+|   http://use.perl.org/article.pl?sid=02/07/22/179214               |
++--------------------------------------------------------------------+
+
+[0]cwest writes "At [1]O'Reilly [2]Open Source Convention, [3]Aaronsen
+Group Ltd, [4]DynDNS, and [5]Stonehenge Consulting are hosting a great
+party. 15 gaming class computers will be networked together as the base
+of a killer [6]Quake 3 Arena fragging. The bar will be open for your
+drinking pleasure. The party is open to all OSCON attendees and
+participants. Come rub elbows with the best programmers on earth and
+simultaneously destroy them in Quake."
+
+The [7]LAN Party will be held on Thursday, 8pm - ??, at Quinn's bar (main
+lobby, Sheraton East Tower at the conference).
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/07/22/179214
+
+Links:
+    0. http://www.dyndns.org/lanparty
+    1. http://oreilly.com/
+    2. http://conferences.oreilly.com/os2002
+    3. http://www.aaronsen.com/
+    4. http://www.dyndns.org/
+    5. http://www.stonehenge.com/
+    6. http://www.quake3arena.com/games/quake/quake3-arena/
+    7. http://www.dyndns.org/lanparty/
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

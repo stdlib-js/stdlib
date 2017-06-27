@@ -1,0 +1,51 @@
+From rOD@arsecandle.org  Tue Jul 30 18:41:15 2002
+Return-Path: <rOD@arsecandle.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D0D3C4406D
+	for <jm@localhost>; Tue, 30 Jul 2002 13:41:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 18:41:14 +0100 (IST)
+Received: from mail.speakeasy.net (mail16.speakeasy.net [216.254.0.216])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UHbS208587 for
+    <jm@jmason.org>; Tue, 30 Jul 2002 18:37:29 +0100
+Received: (qmail 800 invoked from network); 30 Jul 2002 17:36:27 -0000
+Received: from unknown (HELO RAGING) ([66.92.72.213]) (envelope-sender
+    <rOD@arsecandle.org>) by mail16.speakeasy.net (qmail-ldap-1.03) with SMTP
+    for <jm@jmason.org>; 30 Jul 2002 17:36:27 -0000
+Message-Id: <014501c237ef$96258d30$b554a8c0@RAGING>
+From: "rODbegbie" <rOD@arsecandle.org>
+To: "Justin Mason" <yyyy@spamassassin.taint.org>
+References: <20020730172908.5BC0A4406D@phobos.labs.netnoteinc.com>
+Subject: Re: [SAdev] Alternatives to the GA
+Date: Tue, 30 Jul 2002 13:36:06 -0400
+Organization: Arsecandle Industries, Inc.
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2800.1050
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1050
+
+Justin Mason wrote:
+> I'd be happy to do that -- providing the nonspam.log and spam.log files
+> from my mass-check output (ie. the "matrix of test results" in Ken's
+> terms).  Along with the default scores, this is the entire input data set
+> for the SpamAssassin GA system.
+
+Always happy to contribute my mass-check logs.  The only problem is that was
+all have to be using the exact same ruleset.
+
+Let me know if you want them.
+
+rOD.
+
+
+--
+"I would also have accepted 'Snacktacular'"
+
+>> Doing the blogging thang again at http://www.groovymother.com/ <<
+
+

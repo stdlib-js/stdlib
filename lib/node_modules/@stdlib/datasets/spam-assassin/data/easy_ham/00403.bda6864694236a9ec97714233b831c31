@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 27 00:43:09 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5A2D443F99
+	for <jm@localhost>; Mon, 26 Aug 2002 19:43:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 00:43:09 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7QNYrZ14635 for
+    <jm-rpm@jmason.org>; Tue, 27 Aug 2002 00:34:53 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7QNX3J30783; Tue, 27 Aug 2002 01:33:03
+    +0200
+Received: from ex02.idirect.net (ex02.idirect.net [208.226.76.48]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7QNVtJ24854 for
+    <rpm-list@freshrpms.net>; Tue, 27 Aug 2002 01:31:57 +0200
+X-Mimeole: Produced By Microsoft Exchange V6.0.4417.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: RE: Re: When are we going to get. [making ALSA rpms]
+Message-Id: <BADF3C947A1BD54FBA75C70C241B0B9E10AAAF@ex02.idirect.net>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: Fw: Re: When are we going to get. [making ALSA rpms]
+Thread-Index: AcJL0Ge3xdOQJ42YRtK5WEOfWLTZfABh53sw
+From: "Harig, Mark A." <maharig@idirect.net>
+To: <rpm-zzzlist@freshrpms.net>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7QNVtJ24854
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 26 Aug 2002 19:31:49 -0400
+Date: Mon, 26 Aug 2002 19:31:49 -0400
+
+> made. Other than that, I bet you could do non-root. The following can
+be scripted
+> easily.
+> 
+...
+> 2. unpack them somewhere.
+> 3. for each of them, go to the top directory of the unpacked tarball,
+and do
+> ../configure, then look in (I'm going by memory) TOPDIR/utils/* you
+should see a spec
+> file there. Do this for the 3 tarballs and you get 3 spec files.
+> 
+
+The above steps can all be performed "automatically",
+if the .spec files are updated to include the necessary
+macros in the %prep (%setup -q) and %build stages.
+This would make the building of the .rpm files less
+error prone and more self-contained, and it would be
+somewhat self-documenting.
+
+---
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

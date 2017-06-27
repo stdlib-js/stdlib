@@ -1,0 +1,106 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 29 11:06:00 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4BB1F4415A
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SKUiZ09249 for <jm@jmason.org>; Wed, 28 Aug 2002 21:30:44 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9R0-00012Q-00; Wed,
+    28 Aug 2002 13:29:02 -0700
+Received: from host10390-1830.kpnqwest.es ([193.127.103.90]
+    helo=reypastor.hispalinux.es) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9Q0-0002Z0-00 for
+    <SpamAssassin-devel@lists.sourceforge.net>; Wed, 28 Aug 2002 13:28:00
+    -0700
+Received: by reypastor.hispalinux.es (Postfix, from userid 1019) id
+    479B35B9C0; Wed, 28 Aug 2002 22:27:56 +0200 (CEST)
+From: Jesus Climent <jesus.climent@hispalinux.es>
+To: SpamAssassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] 2.40: ready for release? *NO*
+Message-Id: <20020828202756.GE8161@reypastor.hispalinux.es>
+Mail-Followup-To: SpamAssassin-devel@example.sourceforge.net
+References: <20020828184218.399CE43F99@phobos.labs.netnoteinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="k3qmt+ucFURmlhDS"
+Content-Disposition: inline
+In-Reply-To: <20020828184218.399CE43F99@phobos.labs.netnoteinc.com>
+User-Agent: Mutt/1.3.28i
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Wed, 28 Aug 2002 22:27:56 +0200
+Date: Wed, 28 Aug 2002 22:27:56 +0200
+
+
+--k3qmt+ucFURmlhDS
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Wed, Aug 28, 2002 at 07:42:13PM +0100, Justin Mason wrote:
+> OK guys -- I reckon it's now Good Enough, modulo some minor score
+> tweaking, or commenting of some more broken/high-FP-ing rules.
+>=20
+
+Some make test errors here, too:
+
+Failed 6/20 test scripts, 70.00% okay. 17/182 subtests failed, 90.66% okay.
+
+J
+
+--=20
+Jesus Climent | Unix System Admin | Helsinki, Finland.
+http://www.HispaLinux.es/~data/  |  data.pandacrew.org
+------------------------------------------------------
+Please, encrypt mail address to me: GnuPG ID: 86946D69
+FP: BB64 2339 1CAA 7064 E429  7E18 66FC 1D7F 8694 6D69
+------------------------------------------------------
+Registered Linux user #66350 Debian 3.0 & Linux 2.4.19
+
+Look at my fingers: four stones, four crates. Zero stones? ZERO CRATES!
+		--Zorg (The Fifth Element)
+
+--k3qmt+ucFURmlhDS
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9bTJMZvwdf4aUbWkRAkpYAKDp15ePjG0prpbb/JSMICw6X3xOegCdGsU8
+tdax7QmKey5Vul5DwFDESVc=
+=lyD1
+-----END PGP SIGNATURE-----
+
+--k3qmt+ucFURmlhDS--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

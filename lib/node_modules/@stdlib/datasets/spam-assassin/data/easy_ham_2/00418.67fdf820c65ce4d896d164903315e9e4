@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Fri Aug 16 11:50:17 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 568EE43C36
+	for <jm@localhost>; Fri, 16 Aug 2002 06:38:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:38:57 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GAdwa13357 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 11:39:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA21325; Fri, 16 Aug 2002 11:38:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail03.svc.cra.dublin.eircom.net
+    (mail03.svc.cra.dublin.eircom.net [159.134.118.19]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id LAA21291 for <ilug@linux.ie>; Fri,
+    16 Aug 2002 11:38:33 +0100
+Received: (qmail 86063 messnum 566416 invoked from
+    network[213.190.140.167/unknown]); 16 Aug 2002 10:38:02 -0000
+Received: from unknown (HELO mail.capetechnologies.com) (213.190.140.167)
+    by mail03.svc.cra.dublin.eircom.net (qp 86063) with SMTP; 16 Aug 2002
+    10:38:02 -0000
+Received: from 127.0.0.1 (localhost [127.0.0.1]) by
+    dummy.capetechnologies.com (Postfix) with SMTP id ACACB422D for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 11:36:55 +0100 (IST)
+Received: from moon (monterey.capetechnologies.com [192.120.240.131]) by
+    mail.capetechnologies.com (Postfix) with ESMTP id 18D7A4227 for
+    <ilug@linux.ie>; Fri, 16 Aug 2002 11:36:55 +0100 (IST)
+From: "Ciaran Treanor" <ciaran@capetechnologies.com>
+To: <ilug@linux.ie>
+Date: Fri, 16 Aug 2002 11:34:23 +0100
+Organization: CAPE Technologies
+Message-Id: <003201c24510$7c9aaca0$83f078c0@moon>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Subject: [ILUG] Mirror a website
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+This is driving me nuts. I'm trying to run a once off mirror of a
+website using wget. It's ignoring images and not recursing links (even
+though I've specified the --mirror flag).
+
+wget --mirror https://username:password@foobar.com/a/b/a/index.html
+
+Any ideas or alternative tools?
+
+ct
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,106 @@
+From rssfeeds@jmason.org  Thu Oct  3 12:24:01 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8AFEB16F1C
+	for <jm@localhost>; Thu,  3 Oct 2002 12:23:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:23:14 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93805K19919 for
+    <jm@jmason.org>; Thu, 3 Oct 2002 09:00:05 +0100
+Message-Id: <200210030800.g93805K19919@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: When an engineer flaps his wings
+Date: Thu, 03 Oct 2002 08:00:05 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/03.html#when_an_engineer_flaps_his_wings
+Date: 2002-10-03T01:31:51-05:00
+
+Remember that saying from chaos theory about how when a butterfly flap its 
+wings, it can cause a hurricane a month later halfway around the world? As 
+several people have already noted, Google has made some major changes in their 
+most recent update. The weblogging community was hit hard (for instance, I used 
+to be the #1 "mark"[1]; I am now #6). The changes appear to be the result of an 
+attempt to stop two phenomena: explicitly selling ads based on PageRank[2], and 
+Google bombing[3]. 
+
+Specifically, Google is now apparently cross-checking link text with the linked 
+site, and discounting or ignoring links whose text does not appear in the 
+linked site. This all but kills off Google bombing. Searching for "go to hell"
+[4] no longer takes you to microsoft.com[5]; searching for "talentless hack"[6] 
+no longer finds ohmessylife.com[7], although it finds a lot of people who were 
+previously participating in the Google bombing. No definitive word yet on 
+whether Google is actively penalizing such sites. 
+
+Unfortunately, the algorithm tweaks necessary to stop these two techniques have 
+caused a wide range of collateral damage, apparently coming down hardest on 
+medium-to-large sites that had previously been doing everything right (as far 
+as page structure, link structure, accessibility, and general honest hard work 
+putting together a usable and useful site). The Webmasterworld forums are alive 
+with complaints and speculation: 
+
+- New update, pagerank death?[8] 
+- September 2002 Google Update Discussion - part 1[9] 
+- Let's find out what happened - Sept 2002 Update - pt. 2[10] 
+
+(Side note: amongst the confusion, it has been suggested that Google is no 
+longer indexing ALT text in images. I can confirm that this is absolutely 
+false. Searching diveintomark.org for "gimli"[11] finds my entry of July 29[12]
+, where "Gimli" is mentioned only in the ALT text of an image.) 
+
+Regardless, Google's search results in general appear to be significantly 
+degraded in many key areas. The forums are full of people complaining that spam 
+sites, doorway pages, and obvious cloaking attempts, which Google used to be so 
+good at filtering out, are now popping up in top spots with disturbing 
+frequency. Nobody in the forums wants to talk about which keywords they're 
+tracking, so I tried to find my own concrete example of crap search results. It 
+didn't take long. 
+
+- Searching for reservation hotel[13] brings up an empty sub-page[14] of a 
+hotel reservation company in Italy[15] as the first result. This seems 
+unhelpful, and unlikely to be relevant to the average US-based consumer (and 
+Google absolutely knows I'm in the US based on my IP address). 
+- Searching for news observer nc[16] (the News & Observer is a Raleigh, NC 
+newspaper) does find The News & Observer[17], but it also finds an Internet 
+betting spam page[18] at #7 and a non-existent page[19] at #9. 
+- Searching for eminem[20] gives us two generic portal pages, a non-existent 
+site, and a site that redirects to a site that continuously redirects to itself 
+(I am not making this up). And this is just on the first page. Good thing I 
+didn't care that much about Eminem to begin with, because Google just isn't 
+that helpful. 
+
+Many people in the Webmasterworld forums are now suggesting that AllTheWeb.com
+[21] has better search results overall. Just as a single comparison, their 
+results for "eminem"[22] do appear to be much more relevant. Is this the 
+beginning of the end of Google's reign?
+
+
+
+[1]  http://www.google.com/search?q=mark
+[2]  http://www.pradnetwork.com/affiliate.htm
+[3]  http://uber.nu/2001/04/06/
+[4]  http://www.google.com/search?q=%22go+to+hell%22
+[5]  http://www.microsoft.com/
+[6]  http://www.google.com/search?q=talentless+hack
+[7]  http://www.ohmessylife.com/
+[8]  http://www.webmasterworld.com/forum3/5646.htm
+[9]  http://www.webmasterworld.com/forum3/5688.htm
+[10] http://www.webmasterworld.com/forum3/5723.htm
+[11] http://www.google.com/search?q=gimli+site%3Adiveintomark.org
+[12] http://diveintomark.org/archives/2002/07/29.html
+[13] http://www.google.com/search?q=reservation+hotel
+[14] http://www.venere.it/home/italy.html
+[15] http://www.venere.it/
+[16] http://www.google.com/search?q=news+observer+nc
+[17] http://www.news-observer.com/
+[18] http://www.linkslsgolfworld.com/king-arthur-knight-of-the-round-table.htm
+[19] http://www.nando.net/nt/nao/
+[20] http://www.google.com/search?q=eminem
+[21] http://www.alltheweb.com/
+[22] http://www.alltheweb.com/search?query=eminem
+
+

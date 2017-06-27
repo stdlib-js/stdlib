@@ -1,0 +1,94 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Oct  9 18:31:42 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D016816F03
+	for <jm@localhost>; Wed,  9 Oct 2002 18:31:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 18:31:41 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g99HPQK13803 for <jm-sa@jmason.org>; Wed, 9 Oct 2002 18:25:26 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17zKZ7-0003Gb-00; Wed,
+    09 Oct 2002 10:24:09 -0700
+Received: from relay05.indigo.ie ([194.125.133.229]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17zKYV-0002NW-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 09 Oct 2002 10:23:31 -0700
+Received: (qmail 89758 messnum 1203278 invoked from
+    network[194.125.220.79/ts05-079.dublin.indigo.ie]); 9 Oct 2002 17:23:27
+    -0000
+Received: from ts05-079.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.220.79) by relay05.indigo.ie (qp 89758) with SMTP; 9 Oct 2002
+    17:23:27 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id 3CA8C16F03;
+    Wed,  9 Oct 2002 18:23:25 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id 2E63FF7D8; Wed,  9 Oct 2002 18:23:25 +0100 (IST)
+To: Craig Hughes <craig@deersoft.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Re: fully-public corpus of mail available
+In-Reply-To: Message from Craig Hughes <craig@deersoft.com> of
+    "Wed, 09 Oct 2002 08:37:09 PDT."
+    <F91994C4-DB9C-11D6-8933-00039396ECF2@deersoft.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20021009172325.3CA8C16F03@spamassassin.taint.org>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Wed, 09 Oct 2002 18:23:20 +0100
+Date: Wed, 09 Oct 2002 18:23:20 +0100
+
+
+Craig Hughes said:
+
+> >   - All headers are reproduced in full.  Some address obfuscation has
+> >   taken place; hostnames in some cases have been replaced with
+> >   "spamassassin.taint.org", which should have a valid MX record (if I recall
+> >   correctly).  In > most cases though, the headers appear as they were
+> >   received.
+> 
+> Nope:
+> 
+> [craig@balam craig]$ dig spamassassin.taint.org mx
+
+I knew there was something about spamassassin.taint.org ;)
+
+Ah well, that's probably just as good anyway...
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

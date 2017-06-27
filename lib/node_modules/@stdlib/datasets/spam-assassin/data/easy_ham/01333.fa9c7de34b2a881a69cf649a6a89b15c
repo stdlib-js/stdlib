@@ -1,0 +1,56 @@
+From jason-exp-1031164464.7f11b3@mastaler.com  Wed Aug 28 10:44:14 2002
+Return-Path: <jason-exp-1031164464.7f11b3@mastaler.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2D36643F99
+	for <jm@localhost>; Wed, 28 Aug 2002 05:44:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:44:12 +0100 (IST)
+Received: from sclp3.sclp.com (qmailr@sclp3.sclp.com [209.196.61.66]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7RIYRZ20977 for
+    <jm@jmason.org>; Tue, 27 Aug 2002 19:34:27 +0100
+Received: (qmail 17779 invoked from network); 27 Aug 2002 18:34:35 -0000
+Received: from localhost (HELO hrothgar.la.mastaler.com) (jason@127.0.0.1)
+    by localhost with SMTP; 27 Aug 2002 18:34:35 -0000
+Received: (qmail 85116 invoked by uid 666); 27 Aug 2002 18:34:24 -0000
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net,
+	tmda-users@tmda.net, jm@jmason.org
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: spamassassin-talk@example.sourceforge.net, tmda-users@tmda.net
+Subject: Re: patent on TMDA-like system
+References: <20020827144541.3236B43F99@phobos.labs.netnoteinc.com>
+Mail-Copies-To: never
+X-Face: #JN"K)p-Mky0,q4z-q'nx@2'jKW&-H6Zd#yI{`^`.V[o.>Y\p0-^3n$@'_py$QXPq'}cwKS
+    Rox9%`#q><8pXIR[yl\O%Dt!2"IO!ky$:F'{Q'%,6@;VRJPQ6UNLQ_8/<ks&P@R0$/S>'_+p4/Kft6
+    t=LIV%py%Z=Y6>c)p6>}>UV!)'hy(?U&#+v@68]f,COd8\sjfnl9y(BP1:^28|)QEr*LN/t{2%=1`h
+    9\lX,WxIjiCQ<3c7:>5!XIM7owXdaI:6SO`T2h^T,,Lq{8P=2]}4n3ZiT<@!9`j$R|wM52S+|DAj
+Date: Tue, 27 Aug 2002 12:34:23 -0600
+In-Reply-To: <20020827144541.3236B43F99@phobos.labs.netnoteinc.com>
+    (jm@jmason.org's message of
+    "Tue, 27 Aug 2002 15:45:36 +0100")
+Message-Id: <hhvg5wkv68.fsf@hrothgar.la.mastaler.com>
+User-Agent: Gnus/5.090008 (Oort Gnus v0.08) XEmacs/21.4 (Informed
+    Management, i386-unknown-freebsd4.6)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: "Jason R. Mastaler" <jason-exp-1031164464.7f11b3@mastaler.com>
+X-Delivery-Agent: TMDA/0.61
+
+jm@jmason.org (Justin Mason) writes:
+
+> Sounds a lot like TMDA to me. :( Filing date is July 26, 2001,
+> granted May 16, 2002.
+>
+> TMDAers, have you seen this before?
+
+No, but thanks for pointing it out.
+
+> I'd presume TMDA is prior art, but still, it could be troublesome...
+
+Yup.  TMDA's core functionality was fully established before even the
+filing date.
+
+Anyone with experience in this area have a recommendation on whether
+this should be pursued or not?
+

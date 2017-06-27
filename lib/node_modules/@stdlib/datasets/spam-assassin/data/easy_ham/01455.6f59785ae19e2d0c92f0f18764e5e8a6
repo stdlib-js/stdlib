@@ -1,0 +1,72 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Sep 11 16:05:26 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CAB9B16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 16:05:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 16:05:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BDeHC16691 for <jm-sa@jmason.org>; Wed, 11 Sep 2002 14:40:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17p7g0-0002aM-00; Wed,
+    11 Sep 2002 06:37:04 -0700
+Received: from yertle.kcilink.com ([216.194.193.105]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17p7fd-00078a-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 11 Sep 2002 06:36:41 -0700
+Received: from onceler.kciLink.com (onceler.kciLink.com [216.194.193.106])
+    by yertle.kciLink.com (Postfix) with ESMTP id F134A2178D for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 11 Sep 2002 09:36:38 -0400
+    (EDT)
+Received: by onceler.kciLink.com (Postfix, from userid 100) id DE1C63D11;
+    Wed, 11 Sep 2002 09:36:38 -0400 (EDT)
+From: Vivek Khera <khera@kcilink.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15743.18150.567462.560748@onceler.kciLink.com>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] base64 decode problem?
+In-Reply-To: <20020911000343.C18217@alinoe.com>
+References: <20020911000343.C18217@alinoe.com>
+X-Mailer: VM 7.07 under 21.4 (patch 8) "Honest Recruiter" XEmacs Lucid
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 11 Sep 2002 09:36:38 -0400
+Date: Wed, 11 Sep 2002 09:36:38 -0400
+
+>>>>> "CW" == Carlo Wood <carlo@alinoe.com> writes:
+
+CW> to manually decode the base64 part.
+CW> Can someone please tell me how to do that?
+
+
+google: base64 decode
+
+the first three results look useful.
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

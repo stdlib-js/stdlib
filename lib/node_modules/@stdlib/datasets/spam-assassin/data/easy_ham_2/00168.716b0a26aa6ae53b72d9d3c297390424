@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Wed Jul 31 11:19:10 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9F001440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 06:19:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 11:19:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VAEv215553 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 11:14:57 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA28005; Wed, 31 Jul 2002 11:13:15 +0100
+Received: from mail.aculink.net (65-173-158-7.aculink.net [65.173.158.7])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA27973 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 11:13:08 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host 65-173-158-7.aculink.net
+    [65.173.158.7] claimed to be mail.aculink.net
+Received: from cdm01.deedsmiscentral.net ([204.118.157.88]) by
+    mail.aculink.net (Merak 4.4.2) with ESMTP id EDA37003 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 04:20:20 -0600
+Received: (from redneck@localhost) by cdm01.deedsmiscentral.net
+    (8.11.6/8.11.6/ver) id g6VAhuq10699; Wed, 31 Jul 2002 04:43:56 -0600
+Date: Wed, 31 Jul 2002 04:43:56 -0600
+Message-Id: <200207311043.g6VAhuq10699@cdm01.deedsmiscentral.net>
+X-No-Archive: yes
+From: SoloCDM <deedsmis@aculink.net>
+Reply-To: <deedsmis@aculink.net>, <ilug@linux.ie>
+To: ILUG (Request) <ilug@linux.ie>
+Subject: [ILUG] C++ and C Mailing Lists for Beginners and Advanced
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Are there any mailing lists (non-newsgroups) for C++ and C Beginners
+and Advanced programmers?
+
+Links are welcomed!
+
+-- 
+Note: When you reply to this message, please include the mailing
+      list/newsgroup address and my email address in To:.
+
+*********************************************************************
+Signed,
+SoloCDM
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

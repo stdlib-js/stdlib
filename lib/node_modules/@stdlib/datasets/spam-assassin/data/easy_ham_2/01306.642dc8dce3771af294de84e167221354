@@ -1,0 +1,119 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 01:04:32 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8F09B440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 20:04:32 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 01:04:32 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O02B405172 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 01:02:12 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17X9ZU-0006VY-00; Tue,
+    23 Jul 2002 17:00:04 -0700
+Received: from [65.107.69.216] (helo=dman.ddts.net) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17X9Z3-0005zb-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 23 Jul 2002 16:59:37 -0700
+Received: from dman by dman.ddts.net (Exim 4.05 #8 (Debian)) protocol:
+    local id 17X9jH-0002AR-00 for <spamassassin-talk@lists.sourceforge.net> ;
+    Tue, 23 Jul 2002 19:10:11 -0500
+From: "Derrick 'dman' Hudson" <dman@dman.ddts.net>
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <20020724001011.GA8257@dman.ddts.net>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net
+References: <3D3D6A2D.8020601@iws-irms.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="1yeeQ81UyVL57Vl7"
+Content-Disposition: inline
+In-Reply-To: <3D3D6A2D.8020601@iws-irms.com>
+User-Agent: Mutt/1.4i
+X-Operating-System: Debian GNU/Linux
+X-Kernel-Version: 2.4.18-custom.3
+X-Editor: VIM - Vi IMproved 6.1 (2002 Mar 24, compiled May  4 2002 18:34:55)
+X-Uptime: 19:07:14 up 2 days, 23:28,  4 users,  load average: 0.87, 0.37, 0.18
+Subject: [SAtalk] Re: Reporting....
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 23 Jul 2002 19:10:11 -0500
+Date: Tue, 23 Jul 2002 19:10:11 -0500
+
+
+--1yeeQ81UyVL57Vl7
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, Jul 23, 2002 at 09:37:33AM -0500, Joel Epstein wrote:
+| I currently have spam being filtered for about 50 users via spamd.=20
+| Works perfectly!  However, is there anyone out there providing reports=20
+| to their users about what was filetered?  Maybe just something like=20
+| date/time, From, and subject?
+
+I have such a system.  It works like this :
+    1)  sa-exim scans the message during the SMTP interaction
+    2)  if it scores high enough it is rejected
+        2.1)    if it is rejected, exim mentions that in the reject log
+        2.2)    if it isn't rejected it is delivered
+            2.2.1)  it is up to the user to deal with (filter as
+                    desired) the lower-scoring spam
+    3)  I have a script run as a daily cron job to run through the
+        reject log and deposit a report in the user's home directory
+        indicating what was rejected and way (SA isn't the only cause
+        for rejection)
+
+Obviously my setup is rather tied to exim and sa-exim, but if you want
+the reporting script I can send it to you.
+
+-D
+
+--=20
+Micros~1 :
+ For when quality, reliability
+  and security just aren't
+   that important!
+=20
+http://dman.ddts.net/~dman/
+
+--1yeeQ81UyVL57Vl7
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iEYEARECAAYFAj098GMACgkQO8l8XBKTpRSdOwCgqJ0hH/x1kyhw8T4tcr2iO0bj
+fmIAn14hxwcq8fit2RZFidifHufuC9qF
+=2GIQ
+-----END PGP SIGNATURE-----
+
+--1yeeQ81UyVL57Vl7--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,99 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 17:59:18 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C773316EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 17:59:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 17:59:17 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g11Eu8828580 for
+    <jm-rpm@jmason.org>; Fri, 1 Feb 2002 14:56:08 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g11Et0312114;
+    Fri, 1 Feb 2002 15:55:00 +0100
+Received: from porsta.cs.Helsinki.FI (root@porsta.cs.Helsinki.FI
+    [128.214.48.124]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g11EsZ312082 for <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 15:54:35 +0100
+Received: from melkki.cs.Helsinki.FI (sslwrap@localhost [127.0.0.1]) by
+    porsta.cs.Helsinki.FI (8.11.6/8.11.6) with ESMTP id g11Esep24895 for
+    <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 16:54:41 +0200
+Received: (from hhaataja@localhost) by melkki.cs.Helsinki.FI
+    (8.11.6/8.11.2) id g11EsZM05267 for rpm-list@freshrpms.net; Fri,
+    1 Feb 2002 16:54:35 +0200
+From: Harri Haataja <harri.haataja@cs.Helsinki.FI>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: http://apt.nixia.no/
+Message-Id: <20020201165435.C11472@cs.helsinki.fi>
+References: <20020201150022.B11472@cs.helsinki.fi>
+    <20020201153541.1321cd9b.matthias@egwn.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-md5;
+    protocol="application/pgp-signature";
+    boundary="yLVHuoLXiP9kZBkt"
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020201153541.1321cd9b.matthias@egwn.net>; from
+    matthias@egwn.net on Fri, Feb 01, 2002 at 03:35:41PM +0100
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 1 Feb 2002 16:54:35 +0200
+Date: Fri, 1 Feb 2002 16:54:35 +0200
+
+
+--yLVHuoLXiP9kZBkt
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Feb 01, 2002 at 03:35:41PM +0100, Matthias Saou wrote:
+> Once upon a time, Harri wrote :
+>=20
+> > Title page has a login screen and I can't seem to get the apt indexes
+> > anymore. Is it just me or is something going on there?
+>=20
+> You can't get the file index from here either?
+> http://apt.nixia.no/apt/files/
+
+The requested URL /apt/files/ was not found on this server.
+
+> During the past few days, I've experienced connection problems with that
+> site from time to time, but for me right now it's working.
+
+Maybe it's temporary :-/
+
+--=20
+Win a live rat for your mother-in-law!
+
+--yLVHuoLXiP9kZBkt
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8WqwpQF8Oi9XNck4RAmDLAJ9vdN7wlECYEdkP/MDwWnykFA97OQCfZxJc
+F7RkwD9oaZV1rg/r8p06Dmw=
+=OXj6
+-----END PGP SIGNATURE-----
+
+--yLVHuoLXiP9kZBkt--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

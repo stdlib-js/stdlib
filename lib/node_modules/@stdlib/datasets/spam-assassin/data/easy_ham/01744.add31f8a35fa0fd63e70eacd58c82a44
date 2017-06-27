@@ -1,0 +1,112 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Tue Sep 10 04:18:25 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Mon, 09 Sep 2002 23:18:25 -0400
+Subject: [Spambayes] Current histograms
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCCEPNBCAB.tim.one@comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCGEFBBDAB.tim.one@comcast.net>
+
+We've not only reduced the f-p and f-n rates in my test runs, we've also
+made the score distributions substantially sharper.  This is bad news for
+Greg, because the non-existent "middle ground" is becoming even less
+existent <wink>:
+
+Ham distribution for all runs:
+* = 1333 items
+  0.00 79975 ************************************************************
+  2.50     1 *
+  5.00     0
+  7.50     0
+ 10.00     2 *
+ 12.50     1 *
+ 15.00     0
+ 17.50     0
+ 20.00     0
+ 22.50     1 *
+ 25.00     0
+ 27.50     0
+ 30.00     0
+ 32.50     0
+ 35.00     0
+ 37.50     1 *
+ 40.00     0
+ 42.50     0
+ 45.00     0
+ 47.50     0
+ 50.00     0
+ 52.50     0
+ 55.00     0
+ 57.50     0
+ 60.00     1 *
+ 62.50     0
+ 65.00     1 *
+ 67.50     0
+ 70.00     0
+ 72.50     0
+ 75.00     0
+ 77.50     0
+ 80.00     0
+ 82.50     0
+ 85.00     0
+ 87.50     0
+ 90.00     0
+ 92.50     0
+ 95.00     0
+ 97.50    17 *
+
+Spam distribution for all runs:
+* = 914 items
+  0.00   118 *
+  2.50     7 *
+  5.00     0
+  7.50     2 *
+ 10.00     1 *
+ 12.50     1 *
+ 15.00     3 *
+ 17.50     1 *
+ 20.00     1 *
+ 22.50     1 *
+ 25.00     0
+ 27.50     0
+ 30.00     4 *
+ 32.50     3 *
+ 35.00     4 *
+ 37.50     2 *
+ 40.00     0
+ 42.50     1 *
+ 45.00     1 *
+ 47.50     0
+ 50.00     2 *
+ 52.50     3 *
+ 55.00     1 *
+ 57.50     2 *
+ 60.00     0
+ 62.50     1 *
+ 65.00     1 *
+ 67.50    10 *
+ 70.00     2 *
+ 72.50     1 *
+ 75.00     2 *
+ 77.50     1 *
+ 80.00     0
+ 82.50     0
+ 85.00     1 *
+ 87.50     4 *
+ 90.00     2 *
+ 92.50     5 *
+ 95.00    14 *
+ 97.50 54806 ************************************************************
+
+As usual for me, this is an aggregate of 20 runs, each both training and
+predicting on 4000 c.l.py ham + ~2750 BruceG spam.
+
+Only 25 ham scores out of 80,000 are above 0.025 now (and, yes, the
+"Nigerian scam"-quoting msg is still counted as ham -- I haven't taken
+anything out of the ham corpus since remving the "If AOL were a car" spam),
+the f-p rate wouldn't have changed at all if the spamprob cutoff were
+dropped from 0.90 to 0.675, dropping the cutoff to 0.40 would have added
+only 2 false positives, and dropping it to 0.15 would have added only
+another 2 more!
+
+It's spooky.
+

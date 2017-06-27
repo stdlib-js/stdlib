@@ -1,0 +1,102 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Sep 23 23:44:42 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F35E016F03
+	for <jm@localhost>; Mon, 23 Sep 2002 23:44:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 23:44:34 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8NMdhC05937 for <jm-sa@jmason.org>; Mon, 23 Sep 2002 23:39:43 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17tboF-0007Xg-00; Mon,
+    23 Sep 2002 15:36:07 -0700
+Received: from klawatti.watchguard.com ([64.74.30.161]
+    helo=watchguard.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17tbnf-00050f-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 23 Sep 2002 15:35:31 -0700
+Message-Id: <fd014188eb21d97217e935c50f3e76c43d8f970a@watchguard.com>
+From: Jason Qualkenbush <Jason.Qualkenbush@watchguard.com>
+To: "'Stephane Lentz'" <Stephane.Lentz@ansf.alcatel.fr>,
+	spamassassin-talk@lists.sourceforge.net
+Subject: RE: [SAtalk] separate inbound and outbound
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-1"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Mon, 23 Sep 2002 15:33:48 -0700
+Date: Mon, 23 Sep 2002 15:33:48 -0700
+
+
+No I was just a little confused because I'm running procmail on a gateway
+and sits between the external sendmail box and internal exchange bridgehead
+server.  So there isn't any delivery to the local system.
+
+The only email it gets is inbound at the moment and we're looking to get rid
+of complication and go back to two boxes.  I did a test which looked like
+you guys are right about procmail, but testing is very limited due to the
+config I currently have.  It's just confusing when set up as a gateway.
+
+-Jason
+
+-----Original Message-----
+From: Stephane Lentz [mailto:Stephane.Lentz@ansf.alcatel.fr]
+Sent: Monday, September 23, 2002 2:50 PM
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] separate inbound and outbound
+
+
+On Mon, Sep 23, 2002 at 02:26:34PM -0700, Jason Qualkenbush wrote:
+> 
+> Is there is way to separate inbound and outbound email so that I only
+check
+> for spam on inbound mail and ignore the outbound?
+> 
+> I'm using Sendmail and running procmail on the gateway to call
+spamassassin.
+> I know it more of a sendmail question, but my google searches have only
+> turned up people trying to log all inbound and outbound email.
+> 
+Using procmail, SpamAssassin doesn't get called for outgoing email
+(messages sent to other machines). 
+Procmail=Local Delivery Agent => inbound traffic to LOCAL machine.
+
+SL/
+---
+Stephane Lentz / Alcanet International - Internet Services
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

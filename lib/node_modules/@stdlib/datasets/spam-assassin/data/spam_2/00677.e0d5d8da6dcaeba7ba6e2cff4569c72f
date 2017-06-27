@@ -1,0 +1,136 @@
+From fjxhx@au.ru  Mon Jun 24 17:49:32 2002
+Return-Path: spamassassin-sightings-admin@example.sourceforge.net
+Delivery-Date: Mon Jun 10 14:18:05 2002
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g5ADI5G10042 for <jm-sa-sightings@jmason.org>; Mon, 10 Jun 2002 14:18:05
+    +0100
+Date: Mon, 10 Jun 2002 14:18:05 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17HP3b-0000di-00; Mon,
+    10 Jun 2002 06:18:03 -0700
+Received: from dsl-213-023-032-203.arcor-ip.net ([213.23.32.203]
+    helo=fusebox.gnuhh.org) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17HP38-0006XO-00
+    for <spamassassin-sightings@lists.sourceforge.net>; Mon, 10 Jun 2002
+    06:17:39 -0700
+Received: from fusebox.gnuhh.org (uucp@fusebox [127.0.0.1]) by
+    fusebox.gnuhh.org (8.12.3/8.12.3/Debian -4) with ESMTP id g5ADGqCb022782
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=OK) for
+    <spamassassin-sightings@lists.sf.net>; Mon, 10 Jun 2002 15:16:53 +0200
+Received: (from uucp@localhost) by fusebox.gnuhh.org (8.12.3/8.12.3/Debian
+    -4) with UUCP id g5ADGqZq022780 for spamassassin-sightings@lists.sf.net;
+    Mon, 10 Jun 2002 15:16:52 +0200
+Received: from brain.gnuhh.org (localhost.localdomain [127.0.0.1]) by
+    brain.gnuhh.org (8.12.3/8.12.3/Debian -4) with ESMTP id g5AD2G1H002039
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=OK) for
+    <spamassassin-sightings@lists.sf.net>; Mon, 10 Jun 2002 15:02:16 +0200
+Received: (from greve@localhost) by brain.gnuhh.org (8.12.3/8.12.3/Debian
+    -4) id g5AD2GJa002035 for spamassassin-sightings@lists.sf.net;
+    Mon, 10 Jun 2002 15:02:16 +0200
+X-Authentication-Warning: brain.gnuhh.org: greve set sender to
+    greve@gnu.org using -f
+X-From-Line: root@fusebox.gnuhh.org  Mon Jun 10 12:11:55 2002
+Received: from brain.gnuhh.org (localhost.localdomain [127.0.0.1]) by
+    brain.gnuhh.org (8.12.3/8.12.3/Debian -4) with ESMTP id g5AABq1H001175
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=OK) for
+    <greve@brain.gnuhh.org>; Mon, 10 Jun 2002 12:11:54 +0200
+Received: (from uucp@localhost) by brain.gnuhh.org (8.12.3/8.12.3/Debian
+    -4) with UUCP id g5AABo6Z001173 for greve@brain.gnu.de; Mon,
+    10 Jun 2002 12:11:50 +0200
+Received: from fusebox.gnuhh.org (smmsp@fusebox [127.0.0.1]) by
+    fusebox.gnuhh.org (8.12.3/8.12.3/Debian -4) with ESMTP id g5A10hCb012440
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=OK) for
+    <greve@brain.gnu.de>; Mon, 10 Jun 2002 03:00:45 +0200
+Received: (from root@localhost) by fusebox.gnuhh.org (8.12.3/8.12.3/Debian
+    -4) id g5A10cTJ012438 for greve@brain.gnu.de; Mon, 10 Jun 2002 03:00:38
+    +0200
+Received: from fusebox.gnuhh.org (uucp@fusebox [127.0.0.1]) by
+    fusebox.gnuhh.org (8.12.3/8.12.3/Debian -4) with ESMTP id g5A10GCb012424
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=OK) for
+    <greve@fusebox.gnuhh.org>; Mon, 10 Jun 2002 03:00:18 +0200
+Received: from au.ru (uucp@localhost) by fusebox.gnuhh.org
+    (8.12.3/8.12.3/Debian -4) with UUCP id g5A10DxZ012422 for
+    greve@fusebox.hanse.de; Mon, 10 Jun 2002 03:00:13 +0200
+Received: from www.hwanam.es.kr ([210.106.164.131]) by kogge.Hanse.DE
+    (8.9.3/8.9.1) with SMTP id CAA56175 for <greve@fusebox.hanse.de>;
+    Mon, 10 Jun 2002 02:56:16 +0200 (CEST) (envelope-from fjxhx@au.ru)
+Received: from relay1.aport.ru (unverified [216.51.101.3]) by
+    www.hwanam.es.kr (EMWAC SMTPRS 0.83) with SMTP id
+    <B0000087343@www.hwanam.es.kr>; Mon, 10 Jun 2002 09:36:57 +0900
+Message-Id: <B0000087343@www.hwanam.es.kr>
+Reply-To: <greatnews9666@mail.ru>
+From: "Katy" <fjxhx@au.ru>
+To: "nsfsae@alltel.net"@dogma.slashnull.org
+X-Keywords: 
+Subject: 
+
+" <nsfsae@alltel.net>
+Content-Type: text/plain; charset="us-ascii";format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [SA] Drive everywhere
+Sender: spamassassin-sightings-admin@example.sourceforge.net
+Errors-To: spamassassin-sightings-admin@example.sourceforge.net
+X-BeenThere: spamassassin-sightings@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-sightings-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-sightings@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+	<mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-sightings.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+	<mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-sightings>
+X-Original-Date: Mon, 10 Jun 2002 09:36:57 +0900
+Date: Mon, 10 Jun 2002 09:36:57 +0900
+
+INTERNATIONAL DRIVER'S LICENSE
+
+Need a new driver's license?
+
+Too many points or other trouble?
+
+Want a license that can never be suspended
+or revoked?
+
+Want an ID for nightclubs or hotel check-in?
+
+Avoid tickets, fines, and mandatory driver's
+education.
+
+Protect your privacy, and hide your identity.
+
+The United Nations gave you the privilege to
+drive freely throughout the world! (Convention
+on International Road Traffic of September 19,
+1949 & World Court Decision, The Hague,
+Netherlands, January 21, 1958)
+
+Take advantage of your rights. Order a valid
+International Driver's License that can never
+be suspended or revoked.
+
+Confidentiality assured.
+
+CALL NOW!!!
+
+1-770-908-3949 
+
+We await your call seven days a week, 24 hours a day,
+including Sundays and holidays.
+
+
+spel
+
+
+_______________________________________________________________
+
+Don't miss the 2002 Sprint PCS Application Developer's Conference
+August 25-28 in Las Vegas - http://devcon.sprintpcs.com/adp/index.cfm?source=osdntextlink
+
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings

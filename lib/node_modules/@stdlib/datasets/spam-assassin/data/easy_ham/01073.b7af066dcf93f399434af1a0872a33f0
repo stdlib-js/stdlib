@@ -1,0 +1,102 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:00:12 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E1BF816EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:00:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:00:11 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g11LwP811768 for
+    <jm-rpm@jmason.org>; Fri, 1 Feb 2002 21:58:25 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g11Lv1307726;
+    Fri, 1 Feb 2002 22:57:01 +0100
+Received: from Warthog.cg.shawcable.net
+    (root@h24-64-62-122.cg.shawcable.net [24.64.62.122]) by auth02.nl.egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g11LuW307711 for
+    <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 22:56:32 +0100
+Received: (from phil@localhost) by Warthog.cg.shawcable.net
+    (8.11.6/8.11.6) id g11L3ul03314 for rpm-list@freshrpms.net; Fri,
+    1 Feb 2002 14:03:56 -0700
+X-Authentication-Warning: Warthog.cg.shawcable.net: phil set sender to
+    marmot-linux@shaw.ca using -f
+From: Phil Morris <marmot-linux@shaw.ca>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Prob. w/ install/uninstall
+Message-Id: <20020201140356.A3308@Warthog.cg.shawcable.net>
+References: <KMENLMHDMGGFAAEMCCNKOEFDCCAA.bfrench@ematic.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <KMENLMHDMGGFAAEMCCNKOEFDCCAA.bfrench@ematic.com>;
+    from bfrench@ematic.com on Fri, Feb 01, 2002 at 12:42:02PM -0500
+X-Operating-System: Linux Warthog.cg.shawcable.net 2.4.9-13
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 1 Feb 2002 14:03:56 -0700
+Date: Fri, 1 Feb 2002 14:03:56 -0700
+
+On Fri, Feb 01, 2002 at 12:42:02PM -0500, Brian French wrote:
+> hey i have a problem:
+> i have a rpms that i have installed that i want to uninstall, i do it
+> like so:
+> rpm -e [rpm package]
+> and it gives the error: package not installed, so i install it like
+> so:
+Its a little confusing but you install rpms like
+rpm -ivh packagename-0.1.1.rpm 
+uninstalls must be done without the version info like
+rpm -e packagename   ie: rpm -e sendmail or 
+rpm -e sendmail-devel. 
+
+give that a go and it should work np. 
+
+Phil, 
+
+
+> rpm -i [rpm package]
+> and it gives the error: package already installed, so i force it to
+> install like so:
+> rpm -i --force [rpm package]
+> this installs it and then i try to uninstall it again and it still
+> gives me the same error: package not installed.
+>  
+> How can i get it to recognize that the package is indeed installed it,
+> and/or get it to unstall it?
+>  
+> Thanx in advance,
+> Brian French
+> 
+> -French
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+-- 
+"I say, bring on the brand new renaissance. 'Cause I
+think I'm ready. I've been shaking all night long...
+But my hands are steady."  
+Gord Downie    http://www.thehip.com
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

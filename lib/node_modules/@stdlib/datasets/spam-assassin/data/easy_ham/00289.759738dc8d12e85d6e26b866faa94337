@@ -1,0 +1,80 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:52:07 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 3254416F20
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:51:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:51:28 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g996jAK22972 for
+    <zzzz-rpm@spamassassin.taint.org>; Wed, 9 Oct 2002 07:45:10 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g996b2f06803; Wed, 9 Oct 2002 08:37:02
+    +0200
+Received: from bennew01.localdomain (pD900DDF4.dip.t-dialin.net
+    [217.0.221.244]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g996aAf01341 for <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 08:36:10 +0200
+Received: from bennew01.localdomain (bennew01.localdomain [192.168.3.1])
+    by bennew01.localdomain (8.12.5/linuxconf) with SMTP id g996a33S019398 for
+    <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 08:36:03 +0200
+From: Matthias Haase <matthias_haase@bennewitz.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: RedHat 8.0 and his own freetype
+Message-Id: <20021009083602.6a8bcf32.matthias_haase@bennewitz.com>
+In-Reply-To: <3DA3C96B.7050007@eecs.berkeley.edu>
+References: <20021004155451.52f9ecd5.matthias_haase@bennewitz.com>
+    <3D9E1F20.3050300@eecs.berkeley.edu>
+    <20021008202424.67c6e32c.matthias_haase@bennewitz.com>
+    <3DA3C96B.7050007@eecs.berkeley.edu>
+X-Operating-System: customized linux smp kernel 2.4* on i686
+X-Mailer: Sylpheed
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 9 Oct 2002 08:36:02 +0200
+Date: Wed, 9 Oct 2002 08:36:02 +0200
+
+On Tue, 08 Oct 2002 23:15:07 -0700
+Ben Liblit <liblit@eecs.berkeley.edu> wrote:
+
+> Ick.  Perhaps this is why Red Hat turned the bytecode interpreter off. 
+> It may improve non-antialiased rendering, but only at the expense of 
+> making a mess of antialiased rendering.
+> 
+> This may come down to a matter of personal aesthetics, but for my part, 
+> I'm going back to Red Hat's standard packages with the bytecode 
+> interpreter turned *off*.
+Yes, confirmed, but for my part, I'm using mostly non-antialiased fonts
+and 
+they are true ugly without the bytecode interpreter enabled.
+
+Remember my stupid request about your RPM ;-)
+
+
+--
+  Regards from Germany
+                     Matthias
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

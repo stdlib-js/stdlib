@@ -1,0 +1,62 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Mon Sep  9 23:57:58 2002
+Received: via dmail-2002(12) for +lists/freebsd/ports; Mon, 9 Sep 2002 23:57:58 -0500 (CDT)
+Return-Path: <owner-freebsd-ports@FreeBSD.ORG>
+Received: from mx2.freebsd.org (mx2.FreeBSD.org [216.136.204.119])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g8A4vnE9027838
+	for <ler@lerctr.org>; Mon, 9 Sep 2002 23:57:51 -0500 (CDT)
+Received: from hub.freebsd.org (hub.FreeBSD.org [216.136.204.18])
+	by mx2.freebsd.org (Postfix) with ESMTP
+	id 113745547D; Mon,  9 Sep 2002 21:57:44 -0700 (PDT)
+	(envelope-from owner-freebsd-ports@FreeBSD.ORG)
+Received: by hub.freebsd.org (Postfix, from userid 538)
+	id 1112037B401; Mon,  9 Sep 2002 21:57:43 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with SMTP
+	id 0034B2E800B; Mon,  9 Sep 2002 21:57:42 -0700 (PDT)
+Received: by hub.freebsd.org (bulk_mailer v1.12); Mon, 9 Sep 2002 21:57:42 -0700
+Delivered-To: freebsd-ports@freebsd.org
+Received: from mx1.FreeBSD.org (mx1.FreeBSD.org [216.136.204.125])
+	by hub.freebsd.org (Postfix) with ESMTP id F2E7937B400
+	for <ports@freebsd.org>; Mon,  9 Sep 2002 21:57:41 -0700 (PDT)
+Received: from mail10.m.freebit.net (mail12.m.FreeBit.NET [210.143.144.137])
+	by mx1.FreeBSD.org (Postfix) with ESMTP id 4D69943E4A
+	for <ports@freebsd.org>; Mon,  9 Sep 2002 21:57:41 -0700 (PDT)
+	(envelope-from rite1@reset.jp)
+Received: from D (p6044-ipad22marunouchi.tokyo.ocn.ne.jp [61.214.35.44]) by mail10.m.freebit.net (Sun Internet Mail Server sims.4.0.2001.07.26.11.50.p9) with SMTP id <0H2700H6ZGMBNC@mail10.m.freebit.net> for ports@freebsd.org; Tue, 10 Sep 2002 13:38:21 +0900 (JST)
+Date: Tue, 10 Sep 2002 13:38:32 +0900
+From: =?iso-2022-jp?B?cml0ZTFAcmVzZXQuanA=?=@p6044-ipad22marunouchi.tokyo.ocn.ne.jp
+Subject: =?iso-2022-jp?B?GyRCJDckOCRfJEgkYiRiJE4lMyVpJVwlbCE8JTclZyVzGyhK?=
+To: =?iso-2022-jp?B?MTIx?=@p6044-ipad22marunouchi.tokyo.ocn.ne.jp
+Reply-To: rite1@reset.jp
+Message-id: <0H2700HY8GVUNC@mail10.m.freebit.net>
+MIME-version: 1.0
+Content-type: text/plain
+Content-transfer-encoding: 8BIT
+Sender: owner-freebsd-ports@FreeBSD.ORG
+List-ID: <freebsd-ports.FreeBSD.ORG>
+List-Archive: <http://docs.freebsd.org/mail/> (Web Archive)
+List-Help: <mailto:majordomo@FreeBSD.ORG?subject=help> (List Instructions)
+List-Subscribe: <mailto:majordomo@FreeBSD.ORG?subject=subscribe%20freebsd-ports>
+List-Unsubscribe: <mailto:majordomo@FreeBSD.ORG?subject=unsubscribe%20freebsd-ports>
+X-Loop: FreeBSD.org
+Precedence: bulk
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+ももがはじけてぶどうがゆれる
+しじみともものコラボレーション
+ロリータビデオ（ＤＶＤ）専門
+いつまで営業できるかわかりません
+ご注文はお早めに！
+http://book-i.net/mutou
+作品例
+少女伝説　名古屋団地9　少女の道草
+などなど132作品。好評発売中！
+(^-^)/~ロリ炉利ムトー
+
+
+To Unsubscribe: send mail to majordomo@FreeBSD.org
+with "unsubscribe freebsd-ports" in the body of the message
+

@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Tue Aug 20 12:17:24 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B607443C3A
+	for <jm@localhost>; Tue, 20 Aug 2002 07:17:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 12:17:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KBAhZ03460 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 12:10:43 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA31409; Tue, 20 Aug 2002 12:09:45 +0100
+Received: from jinny.ie ([193.120.171.2]) by lugh.tuatha.org (8.9.3/8.9.3)
+    with ESMTP id MAA31379 for <ilug@linux.ie>; Tue, 20 Aug 2002 12:09:37
+    +0100
+Received: (from john@localhost) by jinny.ie (8.11.6/8.11.6) id
+    g7KBA4O16969 for ilug@linux.ie; Tue, 20 Aug 2002 12:10:04 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 20 Aug 2002 12:10:04 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] SMTP auth & mutt
+Message-Id: <20020820111004.GD14073@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <20020820102914.GC12174@jinny.ie>
+    <20020820120618.F4237@prodigy.Redbrick.DCU.IE>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020820120618.F4237@prodigy.Redbrick.DCU.IE>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 20, 2002 at 12:06:18PM +0100, Philip Reynolds mentioned:
+> John P. Looney's [valen@tuatha.org] 11 lines of wisdom included:
+> >  OK, Mutt uses sendmail to deliver mail...
+> > 
+> >  How can I get it to deliver via a Postfix box with SMTP auth enabled ?
+> 
+> Mutt interacts with smtpdaemon or something like that doesn't it?
+> 
+> Can mutt interact directly with SMTP server with authentication
+> capabilities? I don't think it can. 
+> 
+> Surely you can just run a mailserver on your own machine and send
+> mail using it? 
+
+ Hmm. Yeah, mutt sorta calls the sendmail program directly. But I thought
+it would be very crap if the auth details (username, password) had to be
+hardcoded into the sendmail.cf (and damned if I can work out how to do
+that anyway).
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

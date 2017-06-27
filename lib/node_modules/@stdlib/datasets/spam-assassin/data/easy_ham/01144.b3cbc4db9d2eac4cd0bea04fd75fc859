@@ -1,0 +1,97 @@
+From exmh-workers-admin@redhat.com  Mon Sep 30 21:44:41 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A071416F03
+	for <jm@localhost>; Mon, 30 Sep 2002 21:44:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 21:44:40 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8UKA9K14364 for
+    <jm-exmh@jmason.org>; Mon, 30 Sep 2002 21:10:13 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 7492F406E3; Mon, 30 Sep 2002
+    16:08:56 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id E21B140598
+    for <exmh-workers@listman.redhat.com>; Mon, 30 Sep 2002 16:02:02 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8UK22930682 for exmh-workers@listman.redhat.com; Mon, 30 Sep 2002
+    16:02:02 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8UK22f30678 for
+    <exmh-workers@redhat.com>; Mon, 30 Sep 2002 16:02:02 -0400
+Received: from gray.impulse.net (gray.impulse.net [207.154.64.174]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8UJhRi26580 for
+    <exmh-workers@redhat.com>; Mon, 30 Sep 2002 15:43:27 -0400
+Received: from gray.impulse.net (localhost [127.0.0.1]) by
+    gray.impulse.net (Postfix) with ESMTP id 148FB479; Mon, 30 Sep 2002
+    13:02:01 -0700 (PDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Hal DeVore <haldevore@acm.org>
+Cc: exmh-workers@spamassassin.taint.org
+From: Ted Cabeen <secabeen@pobox.com>
+Subject: Re: Working My_Mark2CurSeen
+In-Reply-To: <3703.1033415613@dimebox.bmc.com>
+References: <3703.1033415613@dimebox.bmc.com>
+    <20020930185727.5ACA84A3@gray.impulse.net>
+Message-Id: <20020930200201.148FB479@gray.impulse.net>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 30 Sep 2002 13:02:01 -0700
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Content-Type: text/plain; charset=us-ascii
+
+In message <3703.1033415613@dimebox.bmc.com>, Hal DeVore writes:
+>>>>>> On Mon, 30 Sep 2002, "Ted" == Ted Cabeen wrote:
+>
+>  Ted> Here's the code for everybody and the list archives in
+>  Ted> case anyone wants it in the future.
+>
+>Very cool!  I vote for this being added to CVS, any objections?
+
+Not from me, although you probably want to change the name of the procedure.  
+:)
+
+- -- 
+Ted Cabeen           http://www.pobox.com/~secabeen            ted@impulse.net 
+Check Website or Keyserver for PGP/GPG Key BA0349D2         secabeen@pobox.com
+"I have taken all knowledge to be my province." -F. Bacon  secabeen@cabeen.org
+"Human kind cannot bear very much reality."-T.S.Eliot        cabeen@netcom.com
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (FreeBSD)
+Comment: Exmh version 2.5 07/13/2001
+
+iD8DBQE9mK24oayJfLoDSdIRAs21AKDYeoDgFYgSUldYusaLxJTbcsPxuQCdHaFG
+Z4P4FqmRJlqCbvmKFJMNgJI=
+=dC6l
+-----END PGP SIGNATURE-----
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

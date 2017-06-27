@@ -1,0 +1,127 @@
+From razor-users-admin@lists.sourceforge.net  Fri Jul 26 02:43:32 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 206B3440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 21:43:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 02:43:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6Q1fr413370 for <jm-razor@jmason.org>; Fri, 26 Jul 2002 02:41:53 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XtzZ-0004Aa-00; Thu,
+    25 Jul 2002 18:34:05 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=nexus.cloudmark.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17XtzQ-0008Ex-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 25 Jul 2002 18:33:56 -0700
+Received: (from chad@localhost) by nexus.cloudmark.com (8.11.6/8.11.6) id
+    g6Q1XG517233; Thu, 25 Jul 2002 18:33:16 -0700
+X-Authentication-Warning: nexus.cloudmark.com: chad set sender to
+    chad@cloudmark.com using -f
+From: Chad Norwood <chad@cloudmark.com>
+To: =?iso-8859-1?Q?J=F8rgen?= Thomsen <list@jth.net>
+Cc: razor-users@example.sourceforge.net
+Message-Id: <20020726013315.GC11850@nexus.cloudmark.com>
+References: <20020725231115.GA11850@nexus.cloudmark.com>
+    <t851kuc2r0819al79haubtjvvubhnqai1s@4ax.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+In-Reply-To: <t851kuc2r0819al79haubtjvvubhnqai1s@4ax.com>
+User-Agent: Mutt/1.4i
+X-MIME-Autoconverted: from 8bit to quoted-printable by nexus.cloudmark.com
+    id g6Q1XG517233
+Subject: [Razor-users] Re: Content-Type: message/rfc822  supported ?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 25 Jul 2002 18:33:15 -0700
+Date: Thu, 25 Jul 2002 18:33:15 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6Q1fr413370
+
+  Not sure what you're asking.  
+  Content-Type: message/rfc822 mails are handled like attachments
+  and are not broken down further into mime parts.  That is, the attachment
+  is treated as one part.  The headers and body of the message/rfc822 are
+  sent to the server without parsing.  The other way to handle it is to treat it like
+  a regular mail, and break it down into parts.
+  
+  There are reasons to break it down and not to break it down, and right 
+  now we chose not to break it down.  This might change in the future.
+
+  -chad
+
+
+
+On 26/07/02 02:24 +0200, Jørgen Thomsen wrote:
+) I cannot determine if a verbatim forwarded message from Agent is handled
+) correctly i.e. that a message with Content-Type: message/rfc822 does not
+) include the original header lines improperly in the email body when reporting
+) the spam. It would be really nice and convenient if it supported as the Agent
+) verbatim forwarding option is easy to use. 
+) SpamCop does understand the format.
+) See an examle below:
+) 
+) - Jørgen
+) 
+) Return-Path: <un@s.jth.net>
+) Delivered-To: jth@jth.net
+) Received: from vennely1 (vennely1 [194.192.106.109])
+) 	by mail.jth.net (Postfix) with SMTP id 17A9118684
+) 	for <j@jth.net>; Fri, 26 Jul 2002 02:15:03 +0200 (CEST)
+) From: =?ISO-8859-1?Q?J=F8rgen_Thomsen?= <un@s.jth.net>
+) To: j@jth.net
+) Subject: (fwd) [Razor-users] Razor Agents 2.14 Released
+) Date: Fri, 26 Jul 2002 02:14:57 +0200
+) Message-ID: <o351kukdidthhk6fohls8s6b4j5rfghp3i@4ax.com>
+) X-Mailer: Forte Agent 1.91/32.564
+) MIME-Version: 1.0
+) Content-Type: message/rfc822
+) Content-Disposition: inline
+) 
+) Return-Path: <razor-users-admin@example.sourceforge.net>
+) Delivered-To: list@jth.net
+) Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+) [216.136.171.252])
+) 	by mail.jth.net (Postfix) with ESMTP id 88B0F18684
+) 	for <list@jth.net>; Fri, 26 Jul 2002 01:18:00 +0200 (CEST)
+) 
+) and the rest of the original header and the body
+) 
+) 
+) -------------------------------------------------------
+) This sf.net email is sponsored by: Jabber - The world's fastest growing 
+) real-time communications platform! Don't just IM. Build it in! 
+) http://www.jabber.com/osdn/xim
+) _______________________________________________
+) Razor-users mailing list
+) Razor-users@lists.sourceforge.net
+) https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,90 @@
+From ilug-admin@linux.ie  Fri Aug  2 10:37:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0AA90440F3
+	for <jm@localhost>; Fri,  2 Aug 2002 05:37:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 10:37:06 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g729aF214847 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 10:36:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA29875; Fri, 2 Aug 2002 10:33:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from AUSADMMSPS306.aus.amer.dell.com
+    (ausadmmsps306.aus.amer.dell.com [143.166.224.101]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id KAA29838 for <ilug@linux.ie>; Fri,
+    2 Aug 2002 10:33:29 +0100
+From: Stephen_Reilly@dell.com
+Received: from 143.166.227.166 by AUSADMMSPS306.aus.amer.dell.com with
+    ESMTP (Tumbleweed MMS SMTP Relay (MMS v4.7);); Fri, 02 Aug 2002 04:32: 58
+    -0500
+X-Server-Uuid: c21c953d-96eb-4242-880f-19bdb46bc876
+Received: by ausxc07.us.dell.com with Internet Mail Service (5.5.2650.21 )
+    id <PFCMF7NC>; Fri, 2 Aug 2002 04:32:58 -0500
+Message-Id: <653270E74A8DD31197AF009027AA4F8B01845F1C@LIMXMMF303>
+To: ilug@linux.ie
+Subject: RE: [ILUG] Dell GX260 V Redhat 7.3
+Date: Fri, 2 Aug 2002 04:32:51 -0500
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2650.21)
+X-WSS-Id: 11548E401013226-01-01
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> When I get a box I don't want any of that integrated chipset crap 
+> whether its for winblows or linux. Its just like IBM (mwave 
+Then buy a Dimension. The alternative is there.
+ 
+> However if you want that box for linux and you have a life 
+> and you dont
+> want to spend a week of it fucking arround and googling to 
+> get that box
+> working properly be damned sure you do your research before 
+> you buy it.
+Absolutely, to buy a machine and hope later that linux will take to it is
+beyond naive. There is a lot of support, mailing lists, web sites, etc that
+will help people decide if Linux is going to like a box or not, use them.
+
+> (without a net connection/56k modem). And the machine has got 
+> this crap
+> windoze
+> only hardware and eventually you shrug in frustration and they say 
+Or its a television set with one of those wireless keyboards :)
+
+> When Dell were squabbling with Windows and it looked as 
+I must have misssed that bit ? I don't recall any "squabble" with Microsoft
+when Dell decided to expand their product range to include RH.
+
+> a Dell/Redhat alliance my Inspiron 4000 was produced ... it 
+There *IS* a Dell/Redhat alliance. It lead to a shocking amount of Dell
+systems being easily configurable with RHL.
+
+> now that dell doesn't give a shit about linux all their new 
+> cheap boxes are
+> linux 
+> incompatable in small ways.
+You make it sound that incompatibility has been deliberately built into the
+new systems. The products that any company sell with linux installed will be
+easily reinstalled with linux. The products sold with Windows only may not
+be. Having said that I've never found a Dell system it was impossible to put
+RH on. I have had one or two headaches in the past doing it, though.
+
+steve
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

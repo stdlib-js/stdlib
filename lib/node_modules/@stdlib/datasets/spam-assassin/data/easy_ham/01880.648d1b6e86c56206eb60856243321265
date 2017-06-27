@@ -1,0 +1,29 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:39 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 68DA216F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:39 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P80MC18079 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:00:22 +0100
+Message-Id: <200209250800.g8P80MC18079@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: NY Times: "Google's automated editors appeared to match the work
+    of human
+Date: Wed, 25 Sep 2002 08:00:22 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/24#When:8:05:13AM
+Date: Tue, 24 Sep 2002 15:05:13 GMT
+
+NY Times[1]: "Google's automated editors appeared to match the work of human 
+competitors."
+
+[1] http://www.nytimes.com/2002/09/24/technology/24GOOG.html?ex=1033444800&en=0557fe246dd68b12&ei=5007&partner=USERLAND
+
+

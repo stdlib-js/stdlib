@@ -1,0 +1,76 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Tue Sep  3 00:15:26 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 17C2716F3A
+	for <jm@localhost>; Tue,  3 Sep 2002 00:14:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 00:14:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g82M8xZ23088 for <jm@jmason.org>; Mon, 2 Sep 2002 23:08:59 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17lzMU-0002HI-00; Mon,
+    02 Sep 2002 15:07:58 -0700
+Received: from smtp6.mindspring.com ([207.69.200.110]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17lzKG-0000wx-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Mon, 02 Sep 2002 15:05:40 -0700
+Received: from user-1120fqe.dsl.mindspring.com ([66.32.63.78]
+    helo=belphegore.hughes-family.org) by smtp6.mindspring.com with esmtp
+    (Exim 3.33 #1) id 17lzKF-0001KS-00 for
+    spamassassin-devel@lists.sourceforge.net; Mon, 02 Sep 2002 18:05:39 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    BA80F9F8B9; Mon,  2 Sep 2002 15:05:38 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20020902220538.BA80F9F8B9@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 805] Razor2 lookups don't work
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Mon,  2 Sep 2002 15:05:38 -0700 (PDT)
+Date: Mon,  2 Sep 2002 15:05:38 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=805
+
+
+
+
+
+------- Additional Comments From felicity@kluge.net  2002-09-02 15:05 -------
+from the sa-dev mailing list:
+
+"ln -s /dev/null ~root/.razor/razor-agent.log"
+  
+The question is, why does 2.40 do this whereas my 2.31 doesn't. Hmmm.
+
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

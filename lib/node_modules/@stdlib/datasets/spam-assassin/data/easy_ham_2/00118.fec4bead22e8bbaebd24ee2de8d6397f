@@ -1,0 +1,153 @@
+From ilug-admin@linux.ie  Fri Jul 26 16:01:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 834F8440E8
+	for <jm@localhost>; Fri, 26 Jul 2002 11:01:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 16:01:41 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6QF1Nr04045 for
+    <jm-ilug@jmason.org>; Fri, 26 Jul 2002 16:01:23 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA02825; Fri, 26 Jul 2002 15:57:00 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA02803 for <ilug@linux.ie>; Fri,
+    26 Jul 2002 15:56:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <PC8XVPL3>; Fri, 26 Jul 2002 15:56:46 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E018854FA@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'Conor Daly'" <conor.daly@met.ie>,
+	ILUG main list <ilug@linux.ie>
+Subject: RE: [ILUG] Architecture crossover trouble w RH7.2 (solved)
+Date: Fri, 26 Jul 2002 15:56:22 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Surely it would be faster to save you conf files, install it on the box
+again, copy back you confs and voila.
+All you car about are the confs as the boite has no DATA right?
+
+Thats what I would do, but you sysadmins have to make life as difficult &
+complicated as possible ;--)
+
+Have you thought about mirroring the system drives? Might save you serious
+hassle down the line. 
+
+Only kidding but thats what I would do.
+
+CW
+
+----------------
+OK, Here's how to do it [1] ...
+
+While the disk is still installed in the i686 machine (if that's broken,
+beg, borrow or steal...), remove the i686 versions of glibc and kernel and
+install the i386 versions.  This will break one or two other packages since
+they have entries in /etc/ld.so.conf which belongs to glibc.  these packages
+will need to be reinstalled.  So:
+
+1. rpm -e --nodeps glibc
+
+	Your /etc/ld.so.conf has been saved as /etc/ld.so.conf.rpmsave
+
+2. rpm -ivh glibc-<v.e.r-no>-i386.rpm
+3. rpm -e --nodeps kernel
+4. rpm -ivh kernel-<v.e.r-no>-i386.rpm
+
+This installs the i386 versions of kernel and glibc.  You'll be able to boot
+in a non 686 machine now.  However, X is now broken as is kerberos.  At
+least those are the two I noticed.  Your /etc/ld.so.conf.rpmsave will
+contain clues as to what else might be broken.  To fix X and kerberos you
+need to reinstall their libs (copying /etc/ld.so.conf.rpmsave back to
+/etc/ld.so.conf doesn't seem to work):
+
+1. rpm -ivh --replacepkgs XFree86-libs-<v.e.r-no>-i386.rpm
+2. rpm -ivh --replacepkgs krb5-libs-<v.e.r-no>-i386.rpm
+
+fixes them.  Other libs listed in _my_ /etc/ld.so.conf are qt, mysql and
+sane.  If they start behaving in odd fashions, it may be related.
+Reinstalling the libs for these packages may fix that.
+
+Thanks guys...
+
+> [snip]
+> 
+> > > [I] wouldn't bog it down with X either.
+> >
+> > That's a thought but it may be useful for the server to be available as
+a
+> > user machine also (maybe staff only, maybew admin only).  In any
+> > case, the
+> > local admin (who doesn't exist as yet) will probably be using GUI
+> > tools rather
+> > than cli ones...
+> 
+> Well, yes, it could be running lovely GUI tools as well. Though, are you
+> sure you want to have them available? Most of the ones I've seen are
+better
+> of to be put down. I'd rather then be using Webmin for day to day
+> maintenance, and give the local admins just a restricted set of things
+they
+> can do with it. Like adding and removing users and the likes. Then the
+> "dangerous" parts of the admining side can be "hidden" away from their
+> prying hands. True, they can always break into it, since they have
+physical
+> access to it as well. On the other hand it would be better if they
+contacted
+> yourself for the remaining admin tasks, since I believe this was supposed
+to
+> be remotely administered by yourself, IIRC??
+
+Since this thing will be on a sub 56k dialup, any remote admin will be
+strictly of the emergency variety.  I plan to have the server mail me its
+logs and stuff regurlarly so I can keep an eye on it but most/all of the
+admin will be done locally.
+
+Conor
+
+[1] "it" being migrate a Hard Disk from an Intel P3/4/celeron box to an AMD
+K6-x box.  Essentially, the P3/4/celeron processor is an i686 class while
+the AMD K6 processor is an i586 class (not sure about the AMD athlon or
+duron chips).  A RHL installed on the i686 class machine will not boot on an
+i586 calss box since both kernel and glibc are optimised for i686.  The
+solution is to replace the i686 kernel and glibc with i386 versions.
+-- 
+Conor Daly 
+Met Eireann, Glasnevin Hill, Dublin 9, Ireland
+Ph +353 1 8064276 Fax +353 1 8064247
+------------------------------------
+bofh.irmet.ie running RedHat Linux 10:27am  up 8 days, 23:57,  5 users,
+load average: 0.19, 0.30, 0.49
+
+
+**********************************************************************
+This email and any files transmitted with it are confidential and
+intended solely for the use of the individual or entity to whom they
+are addressed. If you have received this email in error please notify
+the system manager.
+
+This footnote also confirms that this email message has been swept 
+for the presence of computer viruses.
+
+
+**********************************************************************
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

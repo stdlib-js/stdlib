@@ -1,0 +1,23 @@
+Return-Path: gward@python.net
+Delivery-Date: Wed Sep 11 13:23:08 2002
+From: gward@python.net (Greg Ward)
+Date: Wed, 11 Sep 2002 08:23:08 -0400
+Subject: [Spambayes] XTreme Training
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCOEHDBDAB.tim.one@comcast.net>
+References: <LNBBLJKPBEHFEDALKOLCKEGPBDAB.tim.one@comcast.net>
+	<LNBBLJKPBEHFEDALKOLCOEHDBDAB.tim.one@comcast.net>
+Message-ID: <20020911122308.GB5866@cthulhu.gerg.ca>
+
+On 10 September 2002, Tim Peters said:
+> Why would spam be likely to end up with two instances of Return-Path
+> in the headers?
+
+Possibly another qmail-ism from Bruce Guenter's spam collection.  Or
+maybe Anthony's right about spammers being stupid and blindly copying
+headers.  (Well, of course he's right about spammers being stupid; it's
+just this particular aspect of stupidity that's open to question.)
+
+        Greg
+-- 
+Greg Ward <gward@python.net>                         http://www.gerg.ca/
+Think honk if you're a telepath.

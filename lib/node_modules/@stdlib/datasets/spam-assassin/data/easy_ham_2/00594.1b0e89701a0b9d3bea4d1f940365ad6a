@@ -1,0 +1,85 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:33:37 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8C704440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EKSb06215 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:20:28 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id IAA04319 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 08:50:23 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17d4PL-0005AZ-00; Fri,
+    09 Aug 2002 00:42:03 -0700
+Received: from cm22.omega47.scvmaxonline.com.sg ([218.186.47.22]
+    helo=svr1.03s.net) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17d4P4-0005b9-00 for
+    <razor-users@lists.sourceforge.net>; Fri, 09 Aug 2002 00:41:46 -0700
+Received: (qmail 13594 invoked by uid 501); 9 Aug 2002 07:41:19 -0000
+From: Adrian Ho <aho-sw-razor@03s.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] report and revoke the same message
+Message-Id: <20020809154119.A5131@svr1.03s.net>
+Mail-Followup-To: razor-users@example.sourceforge.net
+References: <02080900434000.12649@neofelis>
+    <20020809052725.GX3169@bsd.havk.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.15i
+In-Reply-To: <20020809052725.GX3169@bsd.havk.org>; from steve@havk.org on
+    Fri, Aug 09, 2002 at 12:27:25AM -0500
+Mail-Followup-To: <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 9 Aug 2002 15:41:19 +0800
+Date: Fri, 9 Aug 2002 15:41:19 +0800
+
+On Fri, Aug 09, 2002 at 12:27:25AM -0500, Steve Price wrote:
+> Maybe I'm the only one confused but what you are saying is that you
+> have a spamtrap that receives Bugtraq messages and you are auto-
+> matically reporting them as SPAM only to revoke them shortly there-
+> after???  Either way automatic reporting is a Bad Thing (tm) IMHO.
+
+To be more precise, automatic reporting is a Good Thing only if there's
+/zero/ possibility of reporting positives falsely (or as close to zero
+as makes no difference in the end).
+
+cmeclax's example (which incidentally points out a major vulnerability
+of auto-reporting trollboxes) basically says "I'll blindly report as
+spam whatever some other user(s) have reported as spam".  That "blindly"
+part undermines the very purpose of Razor, so I too hope that:
+
+> if that's what you are doing that it negatively impacts your rating
+> at a near exponential rate with every report/revoke cycle.
+
+- Adrian
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

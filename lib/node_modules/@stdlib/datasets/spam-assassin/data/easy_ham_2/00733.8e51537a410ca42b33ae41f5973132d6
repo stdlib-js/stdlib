@@ -1,0 +1,137 @@
+From exmh-workers-admin@redhat.com  Thu Jul 25 15:20:27 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 007A0440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 10:20:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 15:20:27 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PEKv407391 for
+    <jm-exmh@jmason.org>; Thu, 25 Jul 2002 15:20:57 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 98A3240886; Thu, 25 Jul 2002
+    10:20:07 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 474D1408D5
+    for <exmh-workers@listman.redhat.com>; Thu, 25 Jul 2002 10:17:10 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6PEHAW12614 for exmh-workers@listman.redhat.com; Thu, 25 Jul 2002
+    10:17:10 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6PEHAR12610 for
+    <exmh-workers@redhat.com>; Thu, 25 Jul 2002 10:17:10 -0400
+Received: from austin-jump.vircio.com (jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6PE5Ms00781
+    for <exmh-workers@redhat.com>; Thu, 25 Jul 2002 10:05:22 -0400
+Received: (qmail 19587 invoked by uid 104); 25 Jul 2002 14:17:09 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4214. . Clean. Processed in 0.314746
+    secs); 25/07/2002 09:17:09
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 25 Jul 2002 14:17:09 -0000
+Received: (qmail 8245 invoked from network); 25 Jul 2002 14:17:04 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?OxiUQPBbOVth7VeJIrY8cuZQ7k92RM6i?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 25 Jul 2002 14:17:04 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Brent Welch <welch@panasas.com>
+Cc: Hal DeVore <haldevore@acm.org>, exmh-workers@spamassassin.taint.org
+Subject: Re: folders moving around in the unseen window
+In-Reply-To: <200207181513.LAA08535@blackcomb.panasas.com>
+References: <1026503843.3805.TMDA@deepeddy.vircio.com>
+    <15074.1026506046@dimebox> <200207181513.LAA08535@blackcomb.panasas.com>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1233982810P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1027606623.7951.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1028038624.8f9ad8@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 25 Jul 2002 09:17:01 -0500
+
+--==_Exmh_-1233982810P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Brent Welch <welch@panasas.com>
+> Date:  Thu, 18 Jul 2002 08:13:53 -0700
+>
+> Unfortunately, an unattributed patch may or may not be a contributed patch
+> as I'm not always good about recording the source of a patch.  I suspect
+> this patch may have been contributed from someone that uses the
+> auto-pack or auto-sort features, which I don't use.  This change should be
+> tested against those features.
+
+I'm running with autosort right now.  If I don't see any problems, I' run with 
+autopack for a while.
+
+I did find some stuff that was being called too many times when auto-sort was
+enabled, but otherwise it seems to be working.
+
+My computer is a lot faster than the last time I tried autosort (back in the 
+mid-90s); this is actually acceptable.
+
+Once I've confirmed that nothing actually breaks, I think I'll look into a few 
+more places that autosort needs to be called, because right now it only sorts 
+when you change to a folder, but if a new message arrives in the folder you're 
+looking at, it doesn't get sorted.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-1233982810P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9QAhdK9b4h5R0IUIRArP5AJ9VlUsxOjQhik1UZuFl1Yyta0XMFgCgiZw4
+VdvKT009spZK/h2q6HJTqX8=
+=+Ns2
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1233982810P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

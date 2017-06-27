@@ -1,0 +1,18 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 21:13:40 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 16:13:40 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <20020906180223.GA18250@cthulhu.gerg.ca>
+Message-ID: <LNBBLJKPBEHFEDALKOLCOEPLBCAB.tim.one@comcast.net>
+
+[Greg Ward]
+> Case of headers is definitely helpful.  SpamAssassin has a rule for it
+> -- if you have headers like "DATE" or "SUBJECT", you get a few more
+> points.
+
+Across my data, all-caps DATE, SUBJECT, TO, etc indeed appear only in the
+spam collections.  OTOH, they don't appear often -- less than 1% of spam
+messages have at least one of these all-cap header lines.  But when I'm
+fighting what are now sub-1% f-n rates, even rare clues can help!
+

@@ -1,0 +1,89 @@
+From fork-admin@xent.com  Tue Aug  6 11:58:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B8A62441DC
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:59 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g731J6v25255 for <jm@jmason.org>;
+    Sat, 3 Aug 2002 02:19:09 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id F14952940B7; Fri,  2 Aug 2002 18:16:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tripper.magisoftware.com (tripper.magisoftware.com
+    [208.179.190.4]) by xent.com (Postfix) with ESMTP id EAF0A2940B3 for
+    <fork@xent.com>; Fri,  2 Aug 2002 18:15:22 -0700 (PDT)
+Received: from endeavors.com ([208.179.190.254]) by
+    tripper.magisoftware.com (Netscape Messaging Server 4.1) with ESMTP id
+    H08U6G00.Q4S for <fork@xent.com>; Fri, 2 Aug 2002 18:15:52 -0700
+Message-Id: <3D4B2EA4.8010105@endeavors.com>
+From: "Gregory Alan Bolcer" <gbolcer@endeavors.com>
+Organization: Endeavors Technology, Inc.
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.4.1)
+    Gecko/20020508 Netscape6/6.2.3
+X-Accept-Language: en,pdf
+MIME-Version: 1.0
+To: FoRK <fork@spamassassin.taint.org>
+Subject: Home Pages for Computer Scientists
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 02 Aug 2002 18:15:16 -0700
+
+I was doing a search on some research papers on computer science and
+ran across one of the most useful examples of public vertical search portals.
+http://hpsearch.uni-trier.de/hp/
+
+It's the home pages of 62,179 computer scientists.
+Mostly broken, but 50/50 on better title hits than DBLP.
+
+One thing that's interesting is that for Google's
+"Similar Pages", only one homepage which returns the FoRK Archive is
+the page below[1] Is he on FoRK.  Other similar pages
+include printer toner, home mortgages, and one for the origins of the
+prime radiant[2] which I found out is an Asmiov concept.
+
+The concept of a prime radiant is that there
+is a single interconnected FoRKlist that ties a large number of
+decentralized individuals throughout the world who's collective
+wisdom is a good model for predicint the future.
+
+
+Greg
+
+[1] http://www.eecs.umich.edu/~jfm/roberto.html
+[2] http://www.prime-radiant.com/primeorigins.html
+
+
+
+Greg
+
+-- 
+Gregory Alan Bolcer, CTO   | work: +1.949.833.2800 | gbolcer at endeavors.com
+Endeavors Technology, Inc. | cell: +1.714.928.5476 | http://endeavors.com
+
+
+
+
+
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

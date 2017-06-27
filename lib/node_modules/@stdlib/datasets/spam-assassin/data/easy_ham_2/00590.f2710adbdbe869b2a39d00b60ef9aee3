@@ -1,0 +1,108 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 14:49:08 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3C06E43FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 09:49:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 14:49:08 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79DmIb02818 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 14:48:18 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id OAA06671 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 14:45:11 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17dA0k-0002Ae-00; Fri,
+    09 Aug 2002 06:41:02 -0700
+Received: from 70.muca.bstn.bstnmaco.dsl.att.net ([12.98.14.70]
+    helo=pulse.fsckit.net) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17d9zu-0006aX-00
+    for <razor-users@lists.sourceforge.net>; Fri, 09 Aug 2002 06:40:10 -0700
+Received: from twells by pulse.fsckit.net with local (Exim) id
+    17d9zq-0004Tl-00 for razor-users@lists.sourceforge.net; Fri,
+    09 Aug 2002 09:40:06 -0400
+From: "Tabor J. Wells" <razor-users@fsckit.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Re: What's wrong with the Razor servers now?
+Message-Id: <20020809134006.GA17001@fsckit.net>
+Reply-To: razor-users@example.sourceforge.net
+References: <81F8FF20-AB1F-11D6-BCF2-00039396ECF2@deersoft.com>
+    <NDBBJPAGKLCMDEIEKOPBAEFOIHAA.mailinglists@websitemanagers.com.au>
+    <20020809013908.GA10032@fsckit.net> <aivb4e$npr$1@main.gmane.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <aivb4e$npr$1@main.gmane.org>
+User-Agent: Mutt/1.4i
+X-Copyright: This email is Copyright (c)2002 by razor-users@fsckit.net.
+    All rights reserved.
+X-Bofh: Do you feel lucky?
+X-Jihad: I will hunt down all who spam my account. Try me.
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 9 Aug 2002 09:40:06 -0400
+Date: Fri, 9 Aug 2002 09:40:06 -0400
+
+On Thu, Aug 08, 2002 at 08:00:00PM -0700,
+Jehan <nahor@bravobrava.com> is thought to have said:
+
+> Actually you would be inaccurate in your action in a way. The correct 
+> behavior would be to unsubscribe razor-users@fsckit.net from the mailing 
+> list.
+
+Wow. I think a majority of the anti-spam community out there would disagree
+with you. It makes no difference what the list is, whether it's run by ZDNet
+or Empire Towers, whether it uses open proxies and relays or a MLM like
+mailman or Lyris. In either case I was added to a list against my will to 
+receive unsolicited bulk email. I shouldn't have to 'just unsubscribe from
+the list' any more than I should have to send email with the subject REMOVE
+to removemeblahblah1234@yahoo.com or go to http://www.centralremovelist.com/
+to 'unsubscribe' from some viagra spam. Or are you advocating that as well?
+
+> But in any case, you have to understand that you and him would not be 
+> the only one involved. As I said in a another thread, you probably get 
+> hurt only if you are against the majority of people (which makes sense). 
+> If you are with the majority, you get a bonus (which also makes sense). 
+> If there is no majority, nobody wins or lose.
+
+That's fine. But my point is that neither person in my example was
+committing an inherently untrustworthy act. Yet someone's TES would likely
+fall because of it.
+
+> Razor is designed for the betterment of most people, i.e. the majority, 
+> not for the individual. If one doesn't agree with the majority, he 
+> should use the razor-whitelist or create a blacklist (BTW, why doesn't 
+> razor provide a razor-blacklist too?)
+
+Hmm. Good point about razor-whitelist. I'd forgotten about that.
+
+-- 
+--------------------------------------------------------------------
+Tabor J. Wells                                     twells@fsckit.net
+Fsck It!                 Just another victim of the ambient morality
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,171 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:56:21 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5E026440DB
+	for <jm@localhost>; Fri,  9 Aug 2002 10:55:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:55:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EZub08420 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:35:56 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id VAA00949 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 21:45:09 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cu1m-0004zm-00; Thu,
+    08 Aug 2002 13:37:02 -0700
+Received: from granger.mail.mindspring.net ([207.69.200.148]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cu17-0007L4-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 13:36:21 -0700
+Received: from user-1121e1b.dsl.mindspring.com ([66.32.184.43]
+    helo=belphegore.hughes-family.org) by granger.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17cu15-0004oV-00; Thu, 08 Aug 2002 16:36:19 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id 09BF69FE8B;
+    Thu,  8 Aug 2002 13:36:17 -0700 (PDT)
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: <razor-users@example.sourceforge.net>
+To: "Gregory Sloop" <gregs@sloop.net>
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <002a01c23ef5$74dc75f0$1601730a@and1900a>
+Message-Id: <7C91C63D-AB0E-11D6-BCF2-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 13:36:15 -0700
+Date: Thu, 8 Aug 2002 13:36:15 -0700
+
+
+On Thursday, August 8, 2002, at 09:05  AM, Gregory Sloop wrote:
+
+> I agree (I think)....
+>
+> But gaming the system, for any system, (spamassassin included) is extra
+> work.
+
+Yes, it's definitely extra work.  The question is how much extra 
+work, both up front, and then on an ongoing basis.  I know 
+nothing about how the trust system is working (still waiting for 
+that long-promised server code to be published), but now that 
+it's been turned on, and the more info that's coming out about 
+it, the more concerned I'm becoming that it's extremely easy to 
+game; that the initial amount of work to set up a gaming agent 
+is low, and that once it's set up, it can be "fire and forget" 
+in terms of continuing to operate in a way that's not easy to 
+distinguish from real user behavior.
+
+> Sure, you can find a way to work almost any system, but few 
+> users (spammers)
+> will actually take the time to game the system.
+
+Another concern I have with the way the system might be working 
+is that it might not actually require very many gamers at all to 
+utterly undermine the whole system.  There are a certain number 
+of possible universes where the trust system is very sensitive 
+to liars, or misclassifiers of "gray" mail, or both.  It's not 
+clear yet whether this universe is one of those or not.
+
+> That means that we might have a system that is less than 100% 
+> effective, but
+> perfect accuracy and effectiveness comes at a prohibitive cost. 
+> (Complex
+> systems, time numbing hours of coding etc.)
+
+You do need a certain level of accuracy though, or the filter is 
+not economically worthwhile.  If you only filter 75% of spam, 
+you're wasting your time.  Some people receive on the order of a 
+10:1 ratio of spam:real mail -- 75% means the ratio adjusts to 
+5:2 which is still shitty.  95% makes it 1:2, which is better.  
+99% makes it 1:10 which is quite nice.  As the global ratio of 
+spam:mail rises, this problem gets somewhat more important.  
+With an order of magnitude worsening of the incoming spam:real 
+ratio, 100:1, 99% effective still works OK.  75% effective is 
+now really, really shitty.
+
+
+> I can't vouch for Razor currently, as I'm not at all 
+> knowledgeable. But I
+> suspect the current route was picked because it was fairly simple to
+> impliment, and it (at least some think) should work decently - if not
+> completely without fault.
+
+Time will tell.  Time will also tell how good the system is at 
+adjusting over time to gaming strategies.
+
+> I put up with some garbage results in SA, simply because it 
+> blocks most of
+> my spam, without too many false positives.
+
+SA definitely has a non-zero FP rate, and always will have.  I 
+would argue that any system will have a non-zero FP rate, 
+including the "no filter" filter -- humans make mistakes too 
+sometimes!  As spammer strategies evolve over time though, I'm 
+fairly sure that SA will be able to adjust and compensate.  If 
+spammers figure out how to easily pollute the SpamNet trust 
+system, I'm not sure how easy it'll be to replace the trust 
+system with something else.
+
+> Perhaps Craig is just theorizing, but I just thought I'd offer my two
+> ity-bits.
+
+Lots of theorizing, most of it based on little data.  The key 
+premises I'm worrying about though are:
+
+1. Trust system is easy to pollute
+2. Trust system is not personal, which makes the assumption that 
+all honest voters agree on what constitutes spam
+
+
+> Somthing simple, and actually implimented, that works 
+> reasonably well, is
+> better than somthing that works perfectly, but will never be 
+> implimented
+> because of it's cost. (The rub is that everyone defines 
+> "reasonably well" in
+> dramatically different ways - *grin* as evidenced my the masses 
+> that think
+> Microsoft's stuff works "resaonably well" _bah_ - [but it does 
+> keep me fully
+> employed 'sigh']
+
+Razor2 seems to have been a long time in coming, apparently is 
+quite resource intensive (judging by Cloudmark's fundraising 
+efforts), and doesn't currently work.  It has great promise, and 
+I'm hoping that once the wrinkles are worked through, it'll add 
+another powerful tool in the war on spam -- I'm just concerned 
+that it's getting off on the wrong foot and might not be able to 
+recover.
+
+C
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

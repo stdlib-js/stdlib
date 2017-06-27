@@ -1,0 +1,92 @@
+From exmh-workers-admin@redhat.com  Mon Aug 26 23:40:32 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 37BB744156
+	for <jm@localhost>; Mon, 26 Aug 2002 18:40:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 23:40:29 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7QMdsZ12703 for
+    <jm-exmh@jmason.org>; Mon, 26 Aug 2002 23:39:55 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id C29093F9B1; Mon, 26 Aug 2002
+    18:40:02 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id ABEFB3F553
+    for <exmh-workers@listman.redhat.com>; Mon, 26 Aug 2002 18:38:20 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7QMcHo02036 for exmh-workers@listman.redhat.com; Mon, 26 Aug 2002
+    18:38:17 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7QMcHY02032 for
+    <exmh-workers@redhat.com>; Mon, 26 Aug 2002 18:38:17 -0400
+Received: from milou.dyndns.org (h189n1fls22o974.telia.com
+    [213.64.79.189]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g7QMNMl19536 for <exmh-workers@redhat.com>; Mon, 26 Aug 2002 18:23:22
+    -0400
+Received: by milou.dyndns.org (Postfix, from userid 500) id AB8A13F21;
+    Tue, 27 Aug 2002 00:38:10 +0200 (CEST)
+Received: from tippex.localdomain (localhost [127.0.0.1]) by
+    milou.dyndns.org (Postfix) with ESMTP id 69C793F20; Tue, 27 Aug 2002
+    00:38:10 +0200 (CEST)
+X-Mailer: exmh version 2.5_20020826 01/15/2001 with nmh-1.0.4
+To: Valdis.Kletnieks@vt.edu
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Exmh && speed
+In-Reply-To: Message from Valdis.Kletnieks@vt.edu of
+    "Mon, 26 Aug 2002 14:22:46 EDT."
+    <200208261822.g7QIMk7P005756@turing-police.cc.vt.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Anders Eriksson <aeriksson@fastmail.fm>
+Message-Id: <20020826223810.AB8A13F21@milou.dyndns.org>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Tue, 27 Aug 2002 00:38:05 +0200
+
+
+Valdis.Kletnieks@vt.edu said:
+> I checked on a number of small messages in a big folder (~10000 
+> msgs). The delay of the Next button has increased considerably:
+> 
+> 2.5-release: 350-450 msec
+> latest cvs: 1000-12000 msec
+> I'm not seeing a hit on 'next'. A quick "just pound on 'next' and
+> watch the wall clock" test shows me able to go through 20 messages in
+> under 5 seconds, so it's well under 250ms per switch, but I'm seeing a
+> really piggy CPU spike (100% for a few seconds) in the 'flist' code.
+> Of course, it seems to be related to number-of-folders:
+
+> [~] wc Mail/.folders
+>     131     131    1122 Mail/.folders 
+
+I have 167 folders (!) and run with bg-proc set to flist (1 minute). 
+I see delays, but not that much. Maybe 1-3 seconds (which tend to 
+disappear these days). This is on a PII-266.
+
+BR,
+/A
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

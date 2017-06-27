@@ -1,0 +1,99 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Sep  9 14:35:56 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 612A616EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 14:35:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 14:35:53 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g89AJpC09372 for <jm@jmason.org>; Mon, 9 Sep 2002 11:19:51 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17oLcK-0007tV-00; Mon,
+    09 Sep 2002 03:18:04 -0700
+Received: from mailout08.sul.t-online.com ([194.25.134.20]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17oLbr-0005WK-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Mon, 09 Sep 2002 03:17:35 -0700
+Received: from fwd00.sul.t-online.de by mailout08.sul.t-online.com with
+    smtp id 17oLbn-0004hx-07; Mon, 09 Sep 2002 12:17:31 +0200
+Received: from nebukadnezar.msquadrat.de
+    (520061089980-0001@[62.155.187.197]) by fmrl00.sul.t-online.com with esmtp
+    id 17oLbT-1nMo40C; Mon, 9 Sep 2002 12:17:11 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    172153BB3 for <spamassassin-devel@lists.sf.net>; Mon,  9 Sep 2002 12:17:13
+    +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Re: [SACVS] CVS: spamassassin/rules 60_whitelist.cf,1.29,1.30
+User-Agent: KMail/1.4.3
+References: <E17nKFw-00033m-00@usw-pr-cvs1.sourceforge.net>
+    <200209091108.22690@malte.stretz.eu.org>
+    <3D7C6642.4040100@startechgroup.co.uk>
+In-Reply-To: <3D7C6642.4040100@startechgroup.co.uk>
+X-Accept-Language: de, en
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: Warrant Mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209091219.58498@malte.stretz.eu.org>
+X-Sender: 520061089980-0001@t-dialin.net
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Mon, 9 Sep 2002 12:19:58 +0200
+Date: Mon, 9 Sep 2002 12:19:58 +0200
+
+On Monday 09 September 2002 11:13 CET Matt Sergeant wrote:
+> Malte S. Stretz wrote:
+> >[...]
+> > So I'd vote for a complete removal of 60_whitelists.cf and a page
+> > http://spamassassin.org/tests/whitelists.html where we list common
+> > whitelist entries instead.
+>
+> I would happily agree to that.
+>
+> Though maybe it should be a wiki... ;-)
+
+Just imagine what Ronnie Scelson would do to a wiki *shudder*
+
+M
+-- 
+--- Coding is art.
+-- 
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

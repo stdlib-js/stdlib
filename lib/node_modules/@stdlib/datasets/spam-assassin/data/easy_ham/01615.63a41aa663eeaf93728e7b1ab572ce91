@@ -1,0 +1,90 @@
+From razor-users-admin@lists.sourceforge.net  Wed Oct  9 18:17:46 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D5EF016F03
+	for <jm@localhost>; Wed,  9 Oct 2002 18:17:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 18:17:45 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g99FH9K08285 for <jm-razor@jmason.org>; Wed, 9 Oct 2002 16:17:09 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17zIVN-0008Dg-00; Wed,
+    09 Oct 2002 08:12:09 -0700
+Received: from cable-b-36.sigecom.net ([63.69.210.36]
+    helo=evv.kamakiriad.local) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17zIUi-0003FP-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 09 Oct 2002 08:11:28 -0700
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.6) with SMTP id g99FBMP18668
+    for <razor-users@lists.sourceforge.net>; Wed, 9 Oct 2002 10:11:22 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Razor and Pine
+Message-Id: <20021009101127.7bc322fa.kilroy@kamakiriad.com>
+In-Reply-To: <Pine.LNX.4.33.0210090900200.4389-100000@tasker.pffcu.org>
+References: <Pine.LNX.4.33.0210090900200.4389-100000@tasker.pffcu.org>
+X-Mailer: Sylpheed version 0.8.5 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+X-MIME-Autoconverted: from 8bit to quoted-printable by kamakiriad.com id
+    g99FBMP18668
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 9 Oct 2002 10:11:27 -0500
+Date: Wed, 9 Oct 2002 10:11:27 -0500
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g99FH9K08285
+
+On Wed, 9 Oct 2002 09:15:03 -0400 (EDT), Samuel Checker <sc@pffcu.org> wrote:
+
+> I've been testing Razor, invoked from sendmail/procmail and so far it
+> seems pretty copacetic. Last night's spam to the list provided a good test
+> - the spam itself as well as several of the responses were flagged, as
+> other list members reported.
+> 
+> This morning I piped the messages out from pine, being careful to use the
+> RAW mode, to razor-check -d. None of the messages come back as spam, even
+> the spam. Since folks revoked the false positives, I understand why they
+> would not come up, but not the spam itself, unless that also was revoked.
+> 
+> Is this spam just a bad one to test against, or is there some setting in
+> pine or razor that I am missing?
+
+    Are you using Spamassassin on the input side?  I've just changed my sendmail installation and am looking for the 'proper' way to pass it through there, systemwide, before accepting it and sending it to the users.  It's kinda problematic to set up procmail scripts for every user, when the user's home directories are NFS mounted....and the source is on my own machine, on which I try new things. (And it's the only machine with the drivespace...)
+  
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+angegangen, Schlange-Hüften, sein es ganz rüber jetzt. Bügel innen fest,
+weil es eine lange, süsse Fahrt ist. 
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

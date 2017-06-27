@@ -1,0 +1,165 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:12 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 12BCA4416E
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:08 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T3DWZ26496 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 04:13:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kFh7-0004Be-00; Wed,
+    28 Aug 2002 20:10:05 -0700
+Received: from [66.120.210.133] (helo=kabul.ad.skymv.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kFgw-0000QV-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 20:09:54 -0700
+Received: from kabul.ad.skymv.com ([192.168.1.70]) by kabul.ad.skymv.com
+    with Microsoft SMTPSVC(5.0.2195.2966); Wed, 28 Aug 2002 20:09:49 -0700
+Content-Class: urn:content-classes:message
+Subject: RE: [SAtalk] O.T. Habeus -- Why?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Priority: normal
+Importance: normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Message-Id: <A23DE7A325D23B49A76B54080E0BCB9E2924A9@kabul.ad.skymv.com>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: [SAtalk] O.T. Habeus -- Why?
+Thread-Index: AcJO7qte24+xcf7ESLmrGiiIRFMj4wAGlwww
+From: "Dan Kohn" <dan@dankohn.com>
+To: <spamassassin-talk@example.sourceforge.net>
+X-Originalarrivaltime: 29 Aug 2002 03:09:49.0231 (UTC) FILETIME=[890B3BF0:01C24F09]
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 20:09:49 -0700
+Date: Wed, 28 Aug 2002 20:09:49 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7T3DWZ26496
+
+Guys, the Habeas Infringers List (HIL) exists explicitly to deal with
+spammers while we're getting judgments against them and especially in
+other countries, where those judgments are harder to get.
+
+Please note that nobody has ever had an incentive before to go after
+regular spammers.  Yes, some attorneys general have prosecuted blatant
+pyramid schemes, and ISPs have won some theft of service suits, but the
+vast majority of spammers go forward with out any legal hassles.  So, I
+can't understand how Daniel can assert that you can't track spammers
+down when it's never really been tried.  We can subpoena the records of
+the business they spammed on behalf of.  We can subpoena the records of
+the ISP that provided them service, and of the credit card they used for
+the whack-a-mole accounts.  We can use private investigators.  Yes,
+these people are often lowlifes (chickenboners).  But, they're not
+secret agents.  They're just trying to make a buck, and Habeas' whole
+business is about finding them and putting them out of business
+
+Habeas has the incentive to pursue spammers (that use our warrant mark)
+in a way that no one ever has had before.  Given that our whole business
+plan relies on Habeas becoming synonymous with "not spam", I can't
+understand why you would assume ahead of time that we will be
+unsuccessful, plan for that failure, and in so doing, remove the
+potential of success, which is anti-spam filters like SA acting on the
+Habeas warrant mark.
+
+Daniel, it's easy enough for you to change the Habeas scores yourself on
+your installation.  If Habeas fails to live up to its promise to only
+license the warrant mark to non-spammers and to place all violators on
+the HIL, then I have no doubt that Justin and Craig will quickly remove
+us from the next release.  But, you're trying to kill Habeas before it
+has a chance to show any promise.
+
+At the end of the day, SpamAssassin is like the Club, in that it
+encourages thieves (spammers) to just go after the next car (those
+without SA) rather than yours.  Habeas can play the role of LoJack (the
+transmitter), in enabling the apprehension of thieves so that they don't
+steal any more cars.  But only if we're given a chance to succeed.
+
+          - dan
+--
+Dan Kohn <mailto:dan@dankohn.com>
+<http://www.dankohn.com/>  <tel:+1-650-327-2600> 
+
+-----Original Message-----
+From: Daniel Quinlan [mailto:quinlan@pathname.com] 
+Sent: Wednesday, August 28, 2002 16:38
+To: Matthew Cline
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+
+
+Matthew Cline <matt@nightrealms.com> writes:
+
+> There must be *some* way of tracking a spammer down, since they are
+> planning on making money from the spam.  What a court would consider
+> evidence of being the spammer is another question.
+
+Haha!!!
+
+Just a few notes:
+
+ - It will be difficult to find, prosecute, and win money from someone
+   in various non-friendly countries where spam originates (China is a
+   good example) even if they do officially "respect" copyright law.
+
+ - Law suits take time. Between now and conclusion of the first court
+   case, we could have years of spam in our mail boxes!
+
+ - Contact information can change: phone numbers, PO boxes, stolen
+   cell phones, temporary email addresses, etc.
+
+ - Spammers do not always remember to include contact information!  I
+   don't understand it either, but nobody said they were bright.  Also,
+   some spam is non-commercial or sent by a third-party (for example,
+   "pump and dump" stock scams), so contact information is not strictly
+   required for the spammer to get their way.
+
+Dan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

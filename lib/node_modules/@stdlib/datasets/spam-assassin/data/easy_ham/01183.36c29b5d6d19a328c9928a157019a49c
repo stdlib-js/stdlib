@@ -1,0 +1,136 @@
+From exmh-users-admin@redhat.com  Wed Oct  9 22:43:15 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4139116F71
+	for <jm@localhost>; Wed,  9 Oct 2002 22:41:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 22:41:24 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99LTaK22297 for
+    <jm-exmh@jmason.org>; Wed, 9 Oct 2002 22:29:37 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 92C394317A; Wed,  9 Oct 2002
+    17:28:35 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id E10B9430F2
+    for <exmh-users@listman.redhat.com>; Wed,  9 Oct 2002 17:15:01 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g99LF1321090 for exmh-users@listman.redhat.com; Wed, 9 Oct 2002
+    17:15:01 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g99LF1f21081 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 17:15:01 -0400
+Received: from asgard.blu.org (asgard.blu.org [216.235.254.231]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g99Kt3X22540 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 16:55:03 -0400
+Received: from vishnu.abreau.net (h00306548b0d2.ne.client2.attbi.com
+    [24.60.36.142]) by asgard.blu.org (Postfix) with ESMTP id 6B74D26EA4;
+    Wed,  9 Oct 2002 17:14:45 -0400 (EDT)
+Received: from blu.org (jabr@localhost) by vishnu.abreau.net
+    (8.11.6/8.11.6) with ESMTP id g99LFIO03270; Wed, 9 Oct 2002 17:15:18 -0400
+Message-Id: <200210092115.g99LFIO03270@vishnu.abreau.net>
+X-Authentication-Warning: localhost.localdomain: jabr owned process doing -bs
+X-Mailer: exmh version 2.5 01/15/2001 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Cc: jrennie@ai.mit.edu
+X-Image-Url: http://www.abreau.net/faces/jabr-17.jpg
+X-Url: http://www.abreau.net/
+X-GPG-Fingerprint: 72 FB 39 4F 3C 3B D6 5B  E0 C8 5A 6E F1 2C BE 99
+X-GPG-Keyid: 0xD5C7B5D9
+Subject: Re: From
+In-Reply-To: Your message of
+    "Wed, 09 Oct 2002 12:57:13 EDT."
+    <200210091657.g99GvDmX025433@life.ai.mit.edu>
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_1405404058P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+From: John Abreau <jabr@blu.org>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 09 Oct 2002 17:15:18 -0400
+
+--==_Exmh_1405404058P
+Content-Type: text/plain; charset=us-ascii
+
+Jason Rennie <jrennie@ai.mit.edu> writes:
+
+> My sysadmins have told me that the sending mail client is supposed to 
+> escape lines begining with "From ".  EXMH (2.5) doesn't do this.  Should 
+> it?  It appears that my MH is MH 6.8.  Does NMH fix this?
+
+Actually, this issue used to escalate into a religious war. The "From " 
+envelope is an artifact of the mbox mailbox format, and from that 
+perspective it should be the mail server that stores its mailboxes in
+mbox format that should be responsible for escaping lines beginning with 
+"From ". On the other hand, this breaks the assumption that the mail 
+transport only touches the message headers and leaves the message body 
+alone.
+Things like pgp signatures break when the mail server changes the message 
+body.
+
+Also, strictly speaking, the mbox format envelope (or for us old-timers, 
+the UUCP envelope) isn't just any line beginning with "From ". It's really 
+"From", a single space, a valid email address, two spaces, and a valid 
+date.
+For example:
+
+    From ptardif@nbnet.nb.ca  Sun Jul 14 08:53:57 2002
+        ^                   ^^
+
+
+-- 
+John Abreau / Executive Director, Boston Linux & Unix 
+IM: jabr@jabber.blu.org / abreauj@aim / abreauj@yahoo / 28611923@icq
+Email jabr@blu.org / WWW http://www.abreau.net / PGP-Key-ID 0xD5C7B5D9
+PGP-Key-Fingerprint 72 FB 39 4F 3C 3B D6 5B E0 C8 5A 6E F1 2C BE 99
+
+   Some people say, "The enemy of my enemy is my friend."
+   I often respond, "When elephants fight, it's the grass
+   that gets trampled."
+
+
+
+
+--==_Exmh_1405404058P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.5 01/15/2001
+
+iQCVAwUBPaScZlV9A5rVx7XZAQJlrgQAyxnhXLaYoas75wtCkQz7pr5jhTamXm9s
+85Tx9R9YcZtAAK67wd7U6ZqIOcr+J76G/xn2+gm6ASVRL4/ipETx9AFhdq8pG//w
+sU/8zYCxOrnmqVI62sYaqx2m4m75IrnSdqR5ARKHc2U05zQq47xuMxSTIrC/dwKK
+oyAlEFSe8Rw=
+=mVfx
+-----END PGP SIGNATURE-----
+
+--==_Exmh_1405404058P--
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

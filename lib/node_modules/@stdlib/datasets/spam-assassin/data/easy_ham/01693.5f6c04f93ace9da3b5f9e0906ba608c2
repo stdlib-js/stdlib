@@ -1,0 +1,17 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 06:15:54 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Sat, 7 Sep 2002 00:15:54 -0500
+Subject: [Spambayes] can't write to CVS...
+Message-ID: <15737.35722.956784.600958@12-248-11-90.client.attbi.com>
+
+I'm listed as a developer on SF and have the spambayes CVS module checked
+out using my SF username, but I'm unable to write to the repository.  CVS
+complains:
+
+    % cvs add unheader.py
+    cvs [server aborted]: "add" requires write access to the repository
+
+Any thoughts?
+
+Skip

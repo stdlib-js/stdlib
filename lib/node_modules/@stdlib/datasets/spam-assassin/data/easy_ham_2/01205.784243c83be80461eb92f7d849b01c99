@@ -1,0 +1,73 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 10:51:37 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 542C243FB1
+	for <jm@localhost>; Mon, 12 Aug 2002 05:50:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:50:30 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79LMOb25902 for
+    <jm-rpm@jmason.org>; Fri, 9 Aug 2002 22:22:24 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g79LG2J12921; Fri, 9 Aug 2002 23:16:02
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g79LEvJ12681 for
+    <rpm-list@freshrpms.net>; Fri, 9 Aug 2002 23:14:58 +0200
+Received: from aquila.kamakiriad.local ([192.168.1.3]) by kamakiriad.com
+    (8.11.6/8.11.0) with SMTP id g79KxlM01685; Fri, 9 Aug 2002 15:59:47 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: joshuadfranklin@yahoo.com
+Subject: Re: GConf registry (was Re: Pango problems)
+Message-Id: <20020809155947.0e1e3e42.kilroy@kamakiriad.com>
+In-Reply-To: <20020809190859.63583.qmail@web20007.mail.yahoo.com>
+References: <1028913879.23102.6.camel@fuggles>
+    <20020809190859.63583.qmail@web20007.mail.yahoo.com>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 9 Aug 2002 15:59:47 -0500
+Date: Fri, 9 Aug 2002 15:59:47 -0500
+
+On Fri, 9 Aug 2002 12:08:59 -0700 (PDT), Joshua Daniel Franklin <joshuadfranklin@yahoo.com> wrote:
+
+> I think this sort of discussion would be better on a GNOME list... I hate to
+> complain, but this thread has been going on for several days. I don't really 
+> mind deleting the messages every time, but there's really no reason for it 
+> on this list. 
+
+    Yeah, I'spose.
+
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+"Waddling" into the mainstream?  I suppose...
+http://www.usatoday.com/usatonline/20020805/4333165s.htm
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

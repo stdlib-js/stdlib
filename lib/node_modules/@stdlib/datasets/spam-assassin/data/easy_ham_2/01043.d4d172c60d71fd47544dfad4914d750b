@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Mon Aug 19 11:03:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 80FC843C62
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:45 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7GKqB602951 for <jm@jmason.org>;
+    Fri, 16 Aug 2002 21:52:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1408A29409A; Fri, 16 Aug 2002 13:50:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id E026C294098 for <fork@xent.com>; Fri, 16 Aug 2002 13:49:16
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id ADEF4C44E;
+    Fri, 16 Aug 2002 22:44:31 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Elliptic Curve Point Counting, made easy
+Message-Id: <20020816204431.ADEF4C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 16 Aug 2002 22:44:31 +0200 (CEST)
+
+Here are some numbers with the new algorithm for counting points on
+elliptic curves (over fields of characteristic 2).
+
+In 1998, Reynald Lercier set a record at 1663 bits in 330 days of CPU
+on 266 MHz Alphas.  In 1999, Frederik Vercauteren set a record at 1999
+bits in 65 days of CPU on 400 MHz PCs.
+
+I've been working on the problem since then.  These were measured just
+now on Rajit's 750 MHz Alpha:
+
+  1009 bits:
+    Lift:  4.8 s + 0.64 s precomputation.
+    Norm:  2.6 s + 0.31 s precomputation.
+
+  1663 bits:
+    Lift: 18.5 s + 2.1 s precomputation.
+    Norm:  7.0 s + 1.9 s precomputation.
+
+  1999 bits:
+    Lift: 29.4 s + 3.6 s precomputation.
+    Norm: 16.6 s + 3.4 s precomputation.
+
+  15013 bits:
+    Lift: 1 h 39 m + 13 m precomputation
+    Norm: 39 m + 1 h 41 m precomputation
+
+
+Bye,
+  Rob.
+     .-.                    Robert.Harley@argote.ch                    .-.
+    /   \           .-.      Software Development       .-.           /   \
+   /     \         /   \       .-.     _     .-.       /   \         /     \
+  /       \       /     \     /   \   / \   /   \     /     \       /       \
+ /         \     /       \   /     `-'   `-'     \   /       \     /         \
+            \   /         `-'       ArgoTech      `-'         \   /
+             `-'                http://argote.ch/              `-'
+http://xent.com/mailman/listinfo/fork
+

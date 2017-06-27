@@ -1,0 +1,89 @@
+From rpm-list-admin@freshrpms.net  Wed Sep 18 16:04:50 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2295116F03
+	for <jm@localhost>; Wed, 18 Sep 2002 16:04:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 16:04:49 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8IF2VC03196 for
+    <jm-rpm@jmason.org>; Wed, 18 Sep 2002 16:02:32 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8IEv3f12031; Wed, 18 Sep 2002 16:57:03
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8IEuJf11886 for
+    <rpm-list@freshrpms.net>; Wed, 18 Sep 2002 16:56:20 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: RPM-List <rpm-zzzlist@freshrpms.net>
+Subject: New testing packages
+Message-Id: <20020918165020.3ca80271.matthias@rpmforge.net>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 18 Sep 2002 16:50:20 +0200
+Date: Wed, 18 Sep 2002 16:50:20 +0200
+
+Hi,
+
+Just the kind of announce I make once in a while :
+- I've rebuilt a new "alsaplayer" package based on Angle's one.
+- I've rebuilt a hopefully final version "-fr8" of the "alsa-driver" and
+  "alsa-kernel" packages which fix all known SMP build issues.
+
+Both can be found here :
+http://ftp.freshrpms.net/pub/freshrpms/testing/alsa/
+
+I've also repackaged gkrellm 2.0.2 with at last a separate package for the
+server that can be installed standalone and doesn't even require glib2.
+http://ftp.freshrpms.net/pub/freshrpms/testing/gkrellm/
+
+Last but not least, my latest proftpd 1.2.6 package incorporates some nifty
+new features : You can use any of "--with ldap", "--with mysql" and "--with
+postgres" when rebuilding the source rpm with rpmbuild to enable desired
+extra authentication methods and all package requirements are set
+accordingly, and the release tag is changed too.
+http://valhalla.freshrpms.net/ (the usual place ;-))
+
+I think I'll use this "--with <whatever>" switch more and more where
+possible. Some other of my package already use it like the xmame for its
+output targets, sqlrelay for its modules and my latest sylpheed claws spec
+to enable Pilot support.
+
+As usual, feedback and comments are welcome! :-)
+
+Matthias
+
+PS: Yup, I'm back from my holidays ;-)
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+Load : 2.42 2.10 1.32, AC on-line, battery charging: 100% (7:12)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,81 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 20 10:58:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 906BE43C40
+	for <jm@localhost>; Tue, 20 Aug 2002 05:57:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:57:59 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JJl7Z06601 for
+    <jm-rpm@jmason.org>; Mon, 19 Aug 2002 20:47:07 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7JJi2J12864; Mon, 19 Aug 2002 21:44:02
+    +0200
+Received: from drone4.qsi.net.nz (drone4-svc-skyt.qsi.net.nz
+    [202.89.128.4]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g7JJh7J11355
+    for <rpm-list@freshrpms.net>; Mon, 19 Aug 2002 21:43:07 +0200
+Received: (qmail 6728 invoked by uid 0); 19 Aug 2002 19:42:52 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 19 Aug 2002 19:42:52 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.35 #1 (Debian)) id 17h6bh-0001ct-00 for <rpm-list@freshrpms.net>;
+    Tue, 20 Aug 2002 22:51:29 +1200
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: rpm versioning done right?
+Message-Id: <8990000.1029786117@spawn.se7en.org>
+In-Reply-To: <20020819172504.56ae01a0.matthias@egwn.net>
+References: <1029769679.30562.134.camel@ulysses.hemma>
+    <20020819172504.56ae01a0.matthias@egwn.net>
+X-Mailer: Mulberry/2.2.1 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 20 Aug 2002 07:41:57 +1200
+Date: Tue, 20 Aug 2002 07:41:57 +1200
+
+This seems to be a good argument for the odd number prerelease, even number 
+stables.
+
+So instead of a 0.61pre2 pre3,  and a 0.61final,  you'd stick with 0.61 
+with different releases, and a 0.62.
+
+0.61-1, 0.61-2, 0.62.  Would that that?
+
+--On Monday, August 19, 2002 17:25:04 +0200 Matthias Saou 
+<matthias@egwn.net> wrote:
+
+> Take for instance xmame : I've been packaging 0.61 pre-releases as
+> "0.61-fr0.x" since the entire source has only "0.61" tags everywhere, no
+> preversion tags whatsoever.
+
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

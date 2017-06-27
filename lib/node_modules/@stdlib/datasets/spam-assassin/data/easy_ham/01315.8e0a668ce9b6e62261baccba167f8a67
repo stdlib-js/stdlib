@@ -1,0 +1,96 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Fri Aug 23 11:12:22 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EE31A44160
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:28 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MIDuZ19065 for <jm@jmason.org>; Thu, 22 Aug 2002 19:13:57 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hwT4-000488-00; Thu,
+    22 Aug 2002 11:14:02 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hwSc-0002Kq-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Thu, 22 Aug 2002 11:13:34 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17hwSc-0008Es-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Thu, 22 Aug 2002 11:13:34
+    -0700
+Received: from hughescr by usw-pr-cvs1.sourceforge.net with local (Exim
+    3.22 #1 (Debian)) id 17hwSa-00007M-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Thu, 22 Aug 2002 11:13:32
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17hwSa-00007M-00@usw-pr-cvs1.sourceforge.net>
+From: Craig Hughes <hughescr@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/masses mass-check,1.67,1.67.2.1
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Thu, 22 Aug 2002 11:13:32 -0700
+Date: Thu, 22 Aug 2002 11:13:32 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/masses
+In directory usw-pr-cvs1:/tmp/cvs-serv440/masses
+
+Modified Files:
+      Tag: b2_4_0
+	mass-check 
+Log Message:
+Fixes, additions to mass-check
+
+Index: mass-check
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/masses/mass-check,v
+retrieving revision 1.67
+retrieving revision 1.67.2.1
+diff -b -w -u -d -r1.67 -r1.67.2.1
+--- mass-check	20 Aug 2002 12:29:32 -0000	1.67
++++ mass-check	22 Aug 2002 18:13:30 -0000	1.67.2.1
+@@ -96,6 +96,7 @@
+ 
+ print "# mass-check results from $who\@$where, on $when\n";
+ print "# M:SA version ".$spamtest->Version()."\n";
++print '# CVS tag: $Name$',"\n";
+ $iter->set_function (\&wanted);
+ $iter->run (@ARGV);
+ exit;
+@@ -132,6 +133,8 @@
+   my $tests = $status->get_names_of_tests_hit();
+ 
+   $tests = join(',', sort(split(/,/, $tests)));
++
++  $id =~ s/\s/_/g;
+ 
+   printf "%s %2d %s %s\n",
+ 		    ($yorn ? 'Y' : '.'),
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+

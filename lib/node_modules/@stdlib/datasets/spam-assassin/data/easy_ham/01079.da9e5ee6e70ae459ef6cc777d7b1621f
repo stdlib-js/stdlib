@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 18:01:02 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 62CAC16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 18:01:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 18:01:02 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g12LGo806449 for
+    <jm-rpm@jmason.org>; Sat, 2 Feb 2002 21:16:51 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g12LG1321570;
+    Sat, 2 Feb 2002 22:16:01 +0100
+Received: from drone5.qsi.net.nz (drone5-svc-skyt.qsi.net.nz
+    [202.89.128.5]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g12LF7321559 for <rpm-list@freshrpms.net>; Sat, 2 Feb 2002 22:15:07 +0100
+Received: (qmail 37937 invoked by uid 0); 2 Feb 2002 21:15:06 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 2 Feb 2002 21:15:06 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.12 #1 (Debian)) id 16X96G-0004xf-00 for <rpm-list@freshrpms.net>;
+    Sun, 03 Feb 2002 11:57:36 +1300
+From: Mark Derricutt <mark@talios.com>
+To: freshrpms <rpm-zzzlist@freshrpms.net>
+Subject: creating rpms with subdirs (install command)
+Message-Id: <2060000.1012684767@spawn.se7en.org>
+X-Mailer: Mulberry/2.1.2 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 03 Feb 2002 10:19:27 +1300
+Date: Sun, 03 Feb 2002 10:19:27 +1300
+
+Hi, I'm building an rpm for the resin webserver, and I basically want to 
+install the entire tarball under a diretory, but, the tarball includes 
+subdirectorys, in my spec i have:
+
+
+install -s -m 755 %{name}-%{version}.%{release}/* \
+  $RPM_BUILD_ROOT/usr/local/resin
+
+and I'm getting:
+
+install: `resin-2.0.5/bin' is a directory
+install: `resin-2.0.5/conf' is a directory
+
+Is there a proper/nice way I should handle this?
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

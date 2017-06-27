@@ -1,0 +1,428 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 21:27:07 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C1D5343F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 16:27:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 21:27:04 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QKRaZ08329 for <jm-razor@jmason.org>; Mon, 26 Aug 2002 21:27:37 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jQGN-0004Gw-00; Mon,
+    26 Aug 2002 13:15:03 -0700
+Received: from [208.7.1.205] (helo=everest.mckee.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17jQFX-0004u3-00 for <razor-users@lists.sourceforge.net>; Mon,
+    26 Aug 2002 13:14:11 -0700
+Received: (qmail 4767 invoked from network); 26 Aug 2002 15:10:23 -0000
+Received: from unknown (HELO belvoir) (208.7.1.202) by 208.7.1.205 with
+    SMTP; 26 Aug 2002 15:10:23 -0000
+Message-Id: <004d01c24d3d$20314980$7c640f0a@mfc.corp.mckee.com>
+From: "Fox" <lds0062@cdc.net>
+To: <razor-users@example.sourceforge.net>
+References: <Pine.LNX.4.44.0208201746330.23681-100000@r2-pc.dcs.qmul.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [Razor-users] Preproc erasing message
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 26 Aug 2002 16:14:04 -0400
+Date: Mon, 26 Aug 2002 16:14:04 -0400
+
+The following razor debugging sequence show my mail going from 9295 bytes to
+0 bytes after the preproc runs, which gives me an exit code that is not 0.
+I included the message below.
+
+Fox
+
+Razor-Log: No /etc/razor/razor-agent.conf found, skipping.
+Razor-Log: No razor-agent.conf found, using defaults.
+Aug 26 10:28:09.225237 check[3469]: [ 1] [bootup] Logging initiated
+LogDebugLevel=9 to stdout
+Aug 26 10:28:09.225890 check[3469]: [ 5] computed razorhome=/etc/razor,
+conf=, ident=/etc/razor/identity
+Aug 26 10:28:09.226006 check[3469]: [ 2] Razor-Agents v2.14 starting
+razor-check -d -home=/etc/razor
+Aug 26 10:28:09.229704 check[3469]: [ 9] uname -a: Linux qmail.mckee.com
+2.4.8-34.1mdk #1 Mon Nov 19 12:40:39 MST 2001 i686 unknown
+Aug 26 10:28:09.230155 check[3469]: [ 8] reading straight RFC822 mail from
+Aug 26 10:28:09.231524 check[3469]: [ 6] read 1 mail
+Aug 26 10:28:09.231923 check[3469]: [ 8] Client supported_engines: 1 2 3 4
+Aug 26 10:28:09.233017 check[3469]: [ 8] prep_mail done: mail 1 headers=631,
+mime0=9295
+Aug 26 10:28:09.233434 check[3469]: [ 6] skipping whitelist file (empty?):
+/etc/razor/razor-whitelist
+Aug 26 10:28:09.233995 check[3469]: [ 5] read_file: 1 items read from
+/etc/razor/servers.discovery.lst
+Aug 26 10:28:09.234369 check[3469]: [ 5] read_file: 1 items read from
+/etc/razor/servers.nomination.lst
+Aug 26 10:28:09.234697 check[3469]: [ 5] read_file: 3 items read from
+/etc/razor/servers.catalogue.lst
+Aug 26 10:28:09.235184 check[3469]: [ 9] Assigning defaults to
+honor.cloudmark.com
+Aug 26 10:28:09.235415 check[3469]: [ 9] Assigning defaults to
+truth.cloudmark.com
+Aug 26 10:28:09.235624 check[3469]: [ 9] Assigning defaults to
+fire.cloudmark.com
+Aug 26 10:28:09.235830 check[3469]: [ 9] Assigning defaults to
+apt.cloudmark.com
+Aug 26 10:28:09.236715 check[3469]: [ 5] read_file: 11 items read from
+/etc/razor/server.truth.cloudmark.com.conf
+Aug 26 10:28:09.237368 check[3469]: [ 5] read_file: 11 items read from
+/etc/razor/server.fire.cloudmark.com.conf
+Aug 26 10:28:09.237825 check[3469]: [ 5] 149643 seconds before closest
+server discovery
+Aug 26 10:28:09.238135 check[3469]: [ 6] truth.cloudmark.com is a Catalogue
+Server srl 51; computed min_cf=1, Server se: 0B
+Aug 26 10:28:09.238414 check[3469]: [ 8] Computed supported_engines: 1 2 4
+Aug 26 10:28:09.238656 check[3469]: [ 8] Using next closest server
+truth.cloudmark.com:2703, cached info srl 51
+Aug 26 10:28:09.238871 check[3469]: [ 8] mail 1 Subject: New Freeware
+Download
+Aug 26 10:28:09.290618 check[3469]: [ 6] preproc: mail 1.0 went from 9295
+bytes to 0, erasing
+Aug 26 10:28:09.291100 check[3469]: [ 5] Connecting to truth.cloudmark.com
+...
+Aug 26 10:28:09.505431 check[3469]: [ 8] Connection established
+Aug 26 10:28:09.505662 check[3469]: [ 4] truth.cloudmark.com >> 29 server
+greeting: sn=C&srl=51&ep4=7542-10&a=l
+Aug 26 10:28:09.506086 check[3469]: [ 6] truth.cloudmark.com is a Catalogue
+Server srl 51; computed min_cf=1, Server se: 0B
+Aug 26 10:28:09.506342 check[3469]: [ 8] Computed supported_engines: 1 2 4
+Aug 26 10:28:09.506604 check[3469]: [ 8] mail 1.0 skipped in check
+Aug 26 10:28:09.506686 check[3469]: [ 5] No queries, no spam
+Aug 26 10:28:09.506787 check[3469]: [ 5] disconnecting from server
+truth.cloudmark.com
+Aug 26 10:28:09.507071 check[3469]: [ 4] truth.cloudmark.com << 5
+Aug 26 10:28:09.507155 check[3469]: [ 6] a=q
+Aug 26 10:28:09.507959 check[3469]: [ 8] razor-check finished successfully.
+
+
+
+>>From bounce-html-sales1-21787251@lyris.execsoft.com Mon Aug 26 14:28:10 2002
+Return-Path: <bounce-html-sales1-21787251@lyris.execsoft.com>
+Delivered-To: log@qmail.mckee.com
+Received: (qmail 3472 invoked from network); 26 Aug 2002 14:28:10 -0000
+Received: from unknown (HELO port-216-3073879-ds200.devices.datareturn.net)
+(216.46.231.87)
+  by 10.97.5.1 with SMTP; 26 Aug 2002 14:28:05 -0000
+X-Mailer: Lyris Web Interface
+Date: Sat, 24 Aug 2002 09:45:48 -0700
+Subject: New Freeware Download
+ - Jammed: eric_koester@ccmail.mckee.com
+To: <trollbox@dustpuppy.mckee.com>
+From: "Diskeeper Product Manager, Executive Software"
+<executive@executive.com>
+List-Unsubscribe: <mailto:leave-html-sales1-21787251A@lyris.execsoft.com>
+Reply-To: executive@executive.com
+Message-Id:
+<LYRIS-21787251-20123-2002.08.24-09.47.15--eric_koester#ccmail.mckee.com@lyr
+is.execsoft.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Spam-File:
+Envelope-Recipient: eric_koester@ccmail.mckee.com
+
+<!------------------------------------------------------------
+
+
+
+Is Maximum System Performance and Reliablilty Important to you?
+
+Find out what you are missing!
+
+New Diskeeper Lite for Windows.
+
+IT'S FREE!
+
+
+* Includes the same advanced defragmentation technology used in
+  Diskeeper 7.0.
+* Is much faster than the previous Diskeeper Lite and all
+  built-in defragmenters.
+* Now runs on Windows NT®/98/2000/XP.
+
+Millions of downloads attest to the popularity of Diskeeper Lite,
+but it only ran on Windows NT 4.0. Now it's been updated for all
+Windows operating systems from Windows 98 onward.
+
+New Diskeeper Lite is still manual-only and cannot be scheduled
+or run across a network, but it is far superior to any built-in
+defragmenter and much faster. And it will show you why full-version
+Diskeeper is the most recommended automatic defragmenter ever
+built.
+
+Find out what you are really missing. Free!
+
+
+http://www.execsoft.com/downloads/survey.asp?PId=15&ad=dkldl3
+
+
+
+----------------------------------------------------------------------
+NOTICE: We periodically send new product information electronically or
+survey those individuals who voluntarily give us their e-mail address.
+We hope you enjoy receiving this timely information. However, if you
+would like to remove yourself from this list, please do not reply to
+this e-mail to be removed.
+
+To unsubscribe, send your e-mail address in the body of a message
+along with your name, on a separate line, to unsubscribe@executive.com.
+
+
+----------------------------------------------------------------------------
+----
+
+
+© 2002 Executive Software International, Inc. All Rights Reserved.
+DISKEEPER, Executive Software and the Executive Software logo are either
+registered trademarks or trademarks of Executive Software International,
+Inc. in the United States and/or other countries. Windows and Windows NT
+are registered trademarks of Microsoft Corporation in the United States
+and/or other countries. All other trademarks and brand names are the
+property of the respective owners.
+
+
+
+
+
+
+
+------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Freeware Download</title>
+
+</head>
+
+<body>
+
+        <p align="center">
+        <img border="0" src="http://www2.execsoft.com/max-perf_speedo.jpg"
+width="537" height="121"><img border="0"
+src="http://www2.execsoft.com/n-dkl_082302.jpg" width="470"
+height="106"></p>
+        <table border="0" cellpadding="2" cellspacing="0"
+style="border-collapse: collapse" bordercolor="#111111" width="100%"
+id="AutoNumber2">
+          <tr>
+            <td width="100%">
+            <p align="center"><b><font face="Verdana" color="#ff0000"
+size="5">IT'S
+        FREE!</font></b></td>
+          </tr>
+        </table>
+<table border="0" cellpadding="4" cellspacing="0" style="border-collapse:
+collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+<tr>
+    <td width="15" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+    <td width="15" valign="top">
+    <p><font face="Times New Roman" size="2">
+    <span style="FONT-SIZE: 10pt">
+    <img src="http://www2.execsoft.com/chk-mark.gif" border="0" width="15"
+height="14"></span></font></td>
+    <td width="100%" valign="top"><font face="Verdana">Includes the same
+advanced defragmentation technology
+used in Diskeeper 7.0.</font></td>
+  </tr>
+  <tr>
+    <td width="15" valign="top">&nbsp;</td>
+    <td width="15" valign="top"><font face="Times New Roman" size="2">
+    <span style="FONT-SIZE: 10pt">
+    <img src="http://www2.execsoft.com/chk-mark.gif" border="0" width="15"
+height="14"></span></font></td>
+    <td width="100%" valign="top"><font face="Verdana">Much faster than the
+previous
+    Diskeeper Lite and all built-in defragmenters.</font></td>
+  </tr>
+  <tr>
+    <td width="15" valign="top">&nbsp;</td>
+    <td width="15" valign="top"><font face="Times New Roman" size="2">
+    <span style="FONT-SIZE: 10pt">
+    <img src="http://www2.execsoft.com/chk-mark.gif" border="0" width="15"
+height="14"></span></font></td>
+    <td width="100%" valign="top"><font face="Verdana">Now runs on Windows
+NT<sup>®</sup>/98/2000/XP.</font></td>
+  </tr>
+</table>
+<p><font face="Verdana">Millions of downloads attest to the popularity of
+Diskeeper Lite, but it only ran on Windows NT 4.0. Now it's been updated
+for all
+Windows operating systems from Windows 98 onward.</font></p>
+<p><font face="Verdana">New Diskeeper Lite is still manual-only and cannot
+be
+scheduled or run across a network, but it is far superior to any built-in
+defragmenter and much faster. And it will show you why full-version
+Diskeeper is
+the most recommended automatic defragmenter ever built. </font></p>
+<p><b><font face="Verdana">Find out what you are <i>really</i> missing.
+Free!</font></b></p>
+<p style="TEXT-ALIGN: center" align="center">
+<span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+
+<font face="Arial" size="2">
+
+<a href="http://www.execsoft.com/downloads/survey.asp?PId=15&ad=dkldl3">
+<img src="http://www2.execsoft.com/dlnowbut.gif" border="0" width="195"
+height="25" alt="Download Diskeeper Lite"></a></font></p>
+
+
+        <table border="0" cellpadding="2" cellspacing="0"
+style="border-collapse: collapse" bordercolor="#111111" width="100%"
+id="AutoNumber4">
+          <tr>
+            <td width="100%"><span style="FONT-FAMILY: Verdana"><font
+size="2">
+            Full version Diskeeper
+
+available for purchase from:</font></span></td>
+          </tr>
+        </table>
+
+
+        <div align="center">
+          <center>
+
+
+        <table border="1" cellpadding="2" cellspacing="0"
+style="border-collapse: collapse" bordercolor="#111111" width="620"
+id="AutoNumber3">
+          <tr>
+            <td width="100%">
+            <p align="center">
+<span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+
+            <map name="FPMap0">
+            <area
+href="http://www.buy.com/retail/searchresults.asp?orderby=4&querytype=&qutyp
+e=0&qu=diskeeper&pagereq=1&alpha=&alpha2=&deptid=0&mfgpartno=&mfgid=0&search
+id=0&loc=105&search_store=2" shape="rect" coords="491, 25, 576, 49">
+            <area
+href="http://www2.warehouse.com/search/pppsmainsearch.asp?home=micro&qu=disk
+eeper&imenu=&so=X&Search.x=6&Search.y=12" shape="rect" coords="191, 69, 328,
+101">
+            <area
+href="http://www.pcconnection.com/scripts/searchresults.asp?BasicSrchText=di
+skeeper&SR=1&ER=10&TR=0&ST=BS&PP=0&sortval=Price&plattype=A&Search.x=40&Sear
+ch.y=12" shape="rect" coords="3, 8, 165, 52">
+            <area
+href="http://www.softchoice.com/software/prod_description.asp?5445x$qJpibFSc
+VSPL34dNX1NpKIC7k0y8w2JTWf0TJAZv16neAteuE$2jAUDdqSkqd22U8RG_ODIY1ZVd0ZK2FJBL
+pFHM1p8InrYf$$dQNb9amrhiAmTmLZzs6Jg4VvRqWW09_ng7ABuhLAPrzhNCfBQIlCQ25pKQimn$
+HCmHgoBko9i4bo43b9ggk2ngYvPiimlN6" shape="rect" coords="196, 5, 334, 52">
+            <area
+href="http://www.softwareshelf.com/products/execsoftprod.asp?p=5"
+shape="rect" coords="1, 70, 167, 101">
+            <area
+href="http://www.staples.com/Catalog/Browse/sku.asp?PageType=1&Sku=490710&bc
+Flag=True&bcCatId=0&bcCatName=Software,+Books+&+Training&bcDeptId=1443&bcDep
+tName=Utilities&bcClassId=140505&bcClassName=System+Maintenance"
+shape="rect" coords="362, 4, 459, 50">
+            <area href="http://shop2.outpost.com/product/3196730"
+shape="rect" coords="357, 70, 437, 122">
+            <area href="http://www.asap.com/execsoftware/2001Q11.htm"
+shape="rect" coords="484, 72, 613, 117">
+            </map>
+            <img border="0"
+src="http://www2.execsoft.com/logos_resell_082302.gif" usemap="#FPMap0"
+width="620" height="124"></span></td>
+          </tr>
+        </table>
+          </center>
+        </div>
+
+<hr noshade color="#E4E4E4">
+
+<FONT SIZE="1" FACE="Verdana"><B>
+<FONT COLOR="#FF0000">NOTICE:</FONT></B> We periodically send new product
+information electronically or
+survey those individuals who voluntarily give us their e-mail address. We
+hope you enjoy receiving this timely information. However, if you would
+like to remove yourself from this list, please do not reply to this e-mail
+to be removed.</FONT></span><span style="FONT-FAMILY: Verdana"><font
+size="1">
+</font></span>
+<span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+
+<P><FONT SIZE="1" FACE="Verdana">You have received this message from
+esi-vp-marketing at the e-mail
+address: eric_koester@ccmail.mckee.com
+<BR> To unsubscribe, send the above e-mail address in the body of a message
+along with your name, on a separate line, to
+<A HREF="mailto:unsubscribe@executive.com?subject=Unsubscribe%20
+eric_koester@ccmail.mckee.com" > unsubscribe@executive.com</A>.</FONT></P>
+
+
+<hr noshade color="#E4E4E4">
+
+
+<p><font size="1" face="Verdana">© 2002 Executive Software International,
+Inc.
+All Rights Reserved. DISKEEPER, Executive Software and the Executive
+Software
+logo are either registered trademarks or trademarks of Executive Software
+International, Inc. in the United States and/or other countries. Windows
+and
+Windows NT are registered trademarks of Microsoft Corporation in the
+United
+States and/or other countries. All other trademarks and brand names are
+the
+property of the respective owners.<br>
+&nbsp;</font></p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

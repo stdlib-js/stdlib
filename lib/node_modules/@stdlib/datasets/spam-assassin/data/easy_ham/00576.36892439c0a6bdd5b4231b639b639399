@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Thu Sep 12 21:21:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D729D16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 21:21:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 21:21:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8CKAeC13786 for <jm@jmason.org>;
+    Thu, 12 Sep 2002 21:10:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 292C1294178; Thu, 12 Sep 2002 13:07:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 345EC29409A for
+    <fork@xent.com>; Thu, 12 Sep 2002 13:06:28 -0700 (PDT)
+Received: (qmail 26088 invoked by uid 508); 12 Sep 2002 20:08:53 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.9) by
+    venus.phpwebhosting.com with SMTP; 12 Sep 2002 20:08:53 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8CK8l805874; Thu, 12 Sep 2002 22:08:47
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Tom <tomwhore@slack.net>
+Cc: Gary Lawrence Murphy <garym@canada.com>,
+	Dave Long <dl@silcom.com>, <fork@xent.com>
+Subject: Re: dylsexics of the wrold, untie!
+In-Reply-To: <Pine.BSO.4.44.0209121604440.12577-100000@crank.slack.net>
+Message-Id: <Pine.LNX.4.33.0209122204150.2997-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 12 Sep 2002 22:08:47 +0200 (CEST)
+
+On Thu, 12 Sep 2002, Tom wrote:
+
+> Yep, that ws the plan all alng with my typos, I am the only one to be
+> consistently fighting the evls of da vore.
+
+Well, yeah, but there's an easier way.
+	
+	http://www.google.com/search?hl=en&lr=&ie=UTF-8&oe=UTF-8&q=STARTTLS&spell=1
+
+There's still MITM, but it requires a far higher capability, and is easier
+to detect once you go beyond the scamed interaction of two parties, since
+being manipulative in principle.
+
+If you run your own mailserver, or have a say in what your host does, make 
+him adopt STARTTLS.
+
+

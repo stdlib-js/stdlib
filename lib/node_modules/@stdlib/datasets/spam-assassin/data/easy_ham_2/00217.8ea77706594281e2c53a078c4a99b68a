@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Fri Aug  2 09:35:38 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 46381440F0
+	for <jm@localhost>; Fri,  2 Aug 2002 04:35:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 09:35:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g728U4212634 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 09:30:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA26116; Fri, 2 Aug 2002 09:28:43 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay01.esat.net (relay01.esat.net [192.111.39.11]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA26083 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 09:28:37 +0100
+Received: from www.emuse.ie (hassle.emuse.ie) [193.120.145.154] by
+    relay01.esat.net with esmtp id 17aXnW-0001x8-00; Fri, 02 Aug 2002 09:28:37
+    +0100
+Received: by HASSLE with Internet Mail Service (5.5.2653.19) id <DL00S69X>;
+    Fri, 2 Aug 2002 09:29:00 +0100
+Message-Id: <5FE418B3F962D411BED40000E818B33C9C8E7D@HASSLE>
+From: "Hunt, Bryan" <B.Hunt@emuse-tech.com>
+To: "'Stephen_Reilly@dell.com'" <Stephen_Reilly@dell.com>,
+	ilug@linux.ie
+Subject: RE: [ILUG] Dell GX260 V Redhat 7.3
+Date: Fri, 2 Aug 2002 09:28:57 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I'm not knocking dell in general, my next machine is going to be a dell. But
+buying a
+random dell box is likely to result in much tearing out of hair. 
+
+--B
+
+-----Original Message-----
+From: Stephen_Reilly@dell.com [mailto:Stephen_Reilly@dell.com]
+Sent: 02 August 2002 09:20
+To: ilug@linux.ie
+Subject: RE: [ILUG] Dell GX260 V Redhat 7.3
+
+
+>> I swear to god you have to be so carefull with dell machines 
+>> and linux. 
+...
+>> to have some cheapo piece of hardware (eth card, modem, 
+>> sound, graphics )
+>> that is incompatable/unsupported. 
+...
+>> with some crap
+>> dell machine that 
+yes, yes, all terribly insightful and extremely useful information.
+ 
+> We just got some new Dell GX260 machines here are work and 
+> I'm supposed to
+> be putting Linux on them. I tried installing RedHat 7.3. It 
+> just didn't want
+> to know about the graphics card. I's an onboard Intel DVMT chip. No
+> dedicated memory, it takes it from the onboard RAM.
+The onboard DVMT card has an Intel 845 G/GL chipset.
+http://www.intel.com/support/graphics/linux/ or
+http://www.intel.com/support/graphics/intel845g/linux.htm has more specific
+information. There is help available there.
+
+I also found somewhere (not through personal experience though) that
+2.4.19-pre10ac2 includes drivers for the chipset ?
+
+Steve
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

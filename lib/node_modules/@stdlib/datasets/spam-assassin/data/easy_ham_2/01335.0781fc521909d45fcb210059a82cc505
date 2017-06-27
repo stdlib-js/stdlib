@@ -1,0 +1,54 @@
+From quinlan@pathname.com  Wed Aug 21 06:21:14 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D313E43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 01:21:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 06:21:13 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7L5KHZ11128 for
+    <jm@jmason.org>; Wed, 21 Aug 2002 06:20:17 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17hNuj-00010v-00; Tue, 20 Aug 2002 22:20:17 -0700
+To: spamassassin-talk@example.sourceforge.net,
+	spamassassin-devel@lists.sourceforge.net
+Subject: 2.40 release procedure (why not give it a read)
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 20 Aug 2002 22:20:17 -0700
+In-Reply-To: Craig R.Hughes's message of "Tue, 20 Aug 2002 18:46:56 -0700"
+Message-Id: <yf2lm70vlda.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+I hope you all don't mind me creating a new thread and adding a Cc: to
+spamassassin-devel.  I want to make sure everyone reads Craig's email.
+(I don't really have any comments other than to endorse it and suggest
+creating a branch ASAP.)
+
+Craig R.Hughes <craig@deersoft.com> writes:
+
+> Ok folks...  I think there's been some confusion, so I recommend 
+> the following:
+> 
+> 1. Use the CVS tag spamassassin_pre_2_4_0 which I just created 
+> to generate your mass-checks
+> 2. Submit the results via rsync in the usual way ASAP
+> 3. Justin and I will cooperate on running the GA sometime around 
+> midnight PST (GMT-0800) on thursday/friday
+> 
+> Any good data that's in the rsync corpus by that time will be 
+> used to feed the GA.  That will give everyone about 48 hours 
+> from now to generate the logs and submit them, plus it'll give 
+> Justin and me about 48 hours to tinker with the GA (and 
+> hopefully get it compiling again on my machine grumble 
+> grumble).  That should then yield a 2.40 release sometime on 
+> friday, possibly saturday if we need to do multiple GA runs to 
+> tweak things properly.
+> 
+> C
+> 
+> PS Volunteering Justin here, since I suspect he's probably fast 
+> asleep right now.
+

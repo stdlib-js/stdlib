@@ -1,0 +1,100 @@
+From exmh-users-admin@redhat.com  Mon Sep 23 12:06:34 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E84C116F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:06:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:06:34 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8N5PbC02476 for
+    <jm-exmh@jmason.org>; Mon, 23 Sep 2002 06:25:37 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 7D9DE3EA67; Mon, 23 Sep 2002
+    01:26:04 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id A2EAC3EDF3
+    for <exmh-users@listman.redhat.com>; Mon, 23 Sep 2002 01:21:56 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8N5Luc21797 for exmh-users@listman.redhat.com; Mon, 23 Sep 2002
+    01:21:56 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8N5Luh21793 for
+    <exmh-users@redhat.com>; Mon, 23 Sep 2002 01:21:56 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8N54Hi24435 for
+    <exmh-users@redhat.com>; Mon, 23 Sep 2002 01:04:17 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    BAA11218 for <exmh-users@redhat.com>; Mon, 23 Sep 2002 01:21:50 -0400
+Message-Id: <200209230521.BAA11218@blackcomb.panasas.com>
+To: exmh-users@spamassassin.taint.org
+Subject: Re: bad focus/click behaviours
+In-Reply-To: <20020915202900.F294C5D04@ptavv.es.net>
+References: <20020915202900.F294C5D04@ptavv.es.net>
+Comments: In-reply-to "Kevin Oberman" <oberman@es.net> message dated "Sun,
+    15 Sep 2002 13:28:59 -0700."
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>r5~UnRml1:4EglY{9B+
+    :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 22 Sep 2002 22:21:49 -0700
+
+
+>>>"Kevin Oberman" said:
+ > It did for me, but I am not willing to say it is not a tcl/tk issue as
+ > other apps seemed to work OK for cut and paste and Tk does its
+ > clipboard stuff a bit differently than most toolkits. So I'm not
+ > about to place blame. Just reporting my experience.
+
+One more salvo on X and cut/paste.  X specifies at least two *mechanisms*
+for cut/paste, but as usual mandates no *policy*.  Windows and Macintosh
+have a slightly different mechanism and one uniform policy.  I'm quite
+sure that Tk implements all PRIMARY and CLIPBOARD selections accurately.
+The PRIMARY selection is the one that is tied to the visible selection
+on your X display.  The CLIPBOARD selection is the one with the explicit
+Copy step, and is the same as what you have on Windows and Macintosh.
+However, exmh throws in support for the cutbuffer mechanism, which is
+another archaic mechanism supported at one point (perhaps still today)
+by versions of emacs.  Exmh has a policy that tries to unify all these
+mechanisms under one umbrella, and by all reports it is not that great.
+
+I would encourage folks to play with those 10 lines of code in
+Text_Selection and report what works well for them.  We may come up
+with 8 lines that work for everyone, or perhaps introduce yet another
+setting that lets folks choose between a few useful models.  Of course,
+that's an admission of policy failure, but I'm willing to do that.
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

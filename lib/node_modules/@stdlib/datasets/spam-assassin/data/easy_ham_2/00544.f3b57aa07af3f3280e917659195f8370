@@ -1,0 +1,121 @@
+From razor-users-admin@lists.sourceforge.net  Thu Jul 25 10:56:21 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8C1B1440D1
+	for <jm@localhost>; Thu, 25 Jul 2002 05:56:19 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 10:56:19 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OJ48402000 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 20:04:09 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XRGv-0001md-00; Wed,
+    24 Jul 2002 11:54:05 -0700
+Received: from mail.torresen.com ([64.106.149.110]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XRGP-00083R-00 for <razor-users@lists.sourceforge.net>; Wed,
+    24 Jul 2002 11:53:33 -0700
+Received: (qmail 7511 invoked from network); 24 Jul 2002 06:51:33 -0000
+Received: from chcgil2-ar6-4-47-169-072.chcgil2.dsl-verizon.net (HELO
+    christopher.torresen.com) (4.47.169.72) by mail.torresen.com with SMTP;
+    24 Jul 2002 06:51:33 -0000
+Message-Id: <5.1.0.14.2.20020724145323.04fe3790@mail.torresen.com>
+X-Sender: christopher@mail.torresen.com@mail.torresen.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+To: "rODbegbie" <rOD@arsecandle.org>
+From: Christopher VanOosterhout <chris@torresen.com>
+Subject: Re: [Razor-users] Authentication Error
+Cc: <razor-users@example.sourceforge.net>
+In-Reply-To: <00d301c2332f$1ca59b90$b554a8c0@RAGING>
+References: <20020711084825.W60740-100000@rockstar.stealthgeeks.net>
+    <20020723211828.Y98572-100000@rockstar.stealthgeeks.net>
+    <20020724141339.GD3208@fsckit.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 24 Jul 2002 14:53:38 -0400
+Date: Wed, 24 Jul 2002 14:53:38 -0400
+
+unsubscribe
+
+At 12:26 PM 7/24/02 -0400, rODbegbie wrote:
+>Tabor J. Wells wrote:
+> > And where does it say production-ready? http://razor.sourceforge.net
+> > says at the top of the page:
+> >
+> > June 13, 2002 - Vipul's Razor v2 released! The first beta of Vipul's
+> > Razor v2 is now available for public download.
+>
+>1)  I think the code is still very much pre-beta.
+>
+>2)  When you go to the "Download" page, it tells you "Fetch the latest
+>versions of razor-agents and razor-agents-sdk packages"  It is not at all
+>clear that these are development packages.
+>
+>The site is badly designed, and very misleading.  IMO.  The fact that the
+>word "beta" appears in the middle of some introductory text on the front
+>page is hardly a valid argument.  (Well accepted software design "fact":
+>USERS DON'T READ *ANYTHING*)
+>
+>I get the impression that Vipul & co are deliberately trying to mislead
+>users into downloading the dev code in order to get more unwitting test
+>sites.
+>
+>But that's just my opinion, I could be wrong.
+>
+>rOD.
+>
+>--
+>Anyway... long story short...
+>...is a phrase whose origins are complicated and rambling.
+>
+> >> Doing the blogging thang again at http://www.groovymother.com/ <<
+>
+>
+>
+>-------------------------------------------------------
+>This sf.net email is sponsored by:ThinkGeek
+>Welcome to geek heaven.
+>http://thinkgeek.com/sf
+>_______________________________________________
+>Razor-users mailing list
+>Razor-users@lists.sourceforge.net
+>https://lists.sourceforge.net/lists/listinfo/razor-users
+
+--
+Christopher VanOosterhout
+Torresen Marine, Inc.
+Internet Division
+http://www.torresen.com/
+http://www.marinedieseldirect.com/
+3126 Lake Shore Drive
+Muskegon, Michigan 49441
+231-759-8596
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

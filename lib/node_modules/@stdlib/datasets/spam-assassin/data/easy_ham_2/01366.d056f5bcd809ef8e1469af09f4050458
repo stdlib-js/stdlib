@@ -1,0 +1,132 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug  9 15:43:50 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9FF59440E1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:35:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:35:21 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EOub06834 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 15:24:56 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id DAA03058 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 03:57:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cztf-0001cy-00; Thu,
+    08 Aug 2002 19:53:03 -0700
+Received: from moon.campus.luth.se ([130.240.202.158]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17czsy-0000w8-00 for
+    <Spamassassin-talk@lists.sourceforge.net>; Thu, 08 Aug 2002 19:52:21 -0700
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g792q2xN076986; Fri, 9 Aug 2002 04:52:03 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: Scott A Crosby <scrosby@cs.rice.edu>
+Cc: Spamassassin-talk@example.sourceforge.net
+In-Reply-To: <oydit2qccpw.fsf@sam.cs.rice.edu>
+Message-Id: <20020805041438.J42527-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [SAtalk] Re: HELP! Someone stole our address...
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 9 Aug 2002 04:52:02 +0200 (CEST)
+Date: Fri, 9 Aug 2002 04:52:02 +0200 (CEST)
+
+On 4 Aug 2002 the voices made Scott A Crosby write:
+
+> On Sun, 4 Aug 2002 16:36:57 +0200 (CEST), "Tony L. Svanstrom"
+> <tony@svanstrom.com> writes:
+>
+> > On Sun, 4 Aug 2002 the voices made Tony L. Svanstrom write:
+> >
+> >  The solution is of course to have a public key of some sort associated with
+> > the domainame itself, at the registrar-level, so that when an e-mail arrives
+> > the server can check if the sending-server actually is responsible for the
+> > domain/user the e-mail appears to have been sent from.
+> >
+>
+> That can be problematic.. For example, if I'm at home and want to send
+> email out from my work-address; I can't go through my ISP's
+> mailserver.. I don't thikn we want to enforce a link linking an email
+> address and the server sending it; there are many reasons to have the
+> two things be different entities.
+
+ True, but that's the thinking of today, that the company mailserver can be
+closed to you from the outside; because as it is today you can use any mail-
+server that you've got access to. If there's a good reason for setting it up
+they won't be that lazy in the future.
+
+> However, requiring mailservers to sign the Received: header...  That
+> could be useful. (assuming the signature is of reasonable size). That
+> could indicate at what server the email *did* enter the system. IT'd
+> also be incontravertable proof that that mailserver did allow itself
+> to be abused. Signatures could be checked by either MX or inaddr-arpa
+> records indicating the host's public key.
+>
+> There's still some problems left though. You'd have to bind the
+> headers to the message somehow, via signatures. (To avoid someone
+> taking an email then twiddling the body and claiming that spam came
+> from a particular host.) This would mean that you couldn't alter the
+> body of a message.
+>
+> An unforgable Received chain would be very useful evidence.
+
+ A simple RFC could fix that today, either using a new header or extending the
+Received-header with a code/value that the server later on can verify; maybe
+something like this:
+
+Received2: Date: [date];
+	Local: sub.dom2.tld (IP#2);
+	Remote: sub.dom3.tld (IP#3);
+	Env-id: <the.usual.stuff@sub.dom1.tld>
+	Code: [cache#, salted hashvalue, rsa or other signature]
+
+ And then you have the two optional From and To, only added by the sending
+server that's identified the local sender or the server accepting mail for a
+certain user (to verify that it did really come via that server, in case you
+forward it using procmail or something like it).
+ You of course would need some standard for how to check these headers.
+
+ Not perfect, but better than what we have today.
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+    perl -e'print$_{$_} for sort%_=`lynx -source svanstrom.com/t`'
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

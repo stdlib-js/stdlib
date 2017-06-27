@@ -1,0 +1,49 @@
+From fork-admin@xent.com  Wed Aug 28 17:56:47 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BF57A44156
+	for <jm@localhost>; Wed, 28 Aug 2002 12:56:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 17:56:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SGskZ01542 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 17:54:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id ED86E294199; Wed, 28 Aug 2002 09:52:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id A350829409A for <fork@xent.com>; Wed, 28 Aug 2002 09:51:22
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 8826AC44D;
+    Wed, 28 Aug 2002 18:44:09 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Java is for kiddies
+Message-Id: <20020828164409.8826AC44D@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 28 Aug 2002 18:44:09 +0200 (CEST)
+
+JoeBar wrote:
+>C is more reliable than Java??
+
+Depends who writes it.  One guy will write a bug every 5 lines,
+another every 5000 lines.  Put them both on a project and that will
+average out to a bug every 4.995 lines.
+<observation type=trivial>(Irrespective of language.  Pick the one
+that best suits what you're trying to do.)</observation>
+
+R
+

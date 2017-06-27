@@ -1,0 +1,93 @@
+From exmh-workers-admin@redhat.com  Wed Aug 21 09:10:51 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3674643C32
+	for <jm@localhost>; Wed, 21 Aug 2002 04:10:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 09:10:51 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7L88BZ15374 for
+    <jm-exmh@jmason.org>; Wed, 21 Aug 2002 09:08:11 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id E9CBB3FAF7; Wed, 21 Aug 2002
+    04:08:12 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 5629D3EB52
+    for <exmh-workers@listman.redhat.com>; Wed, 21 Aug 2002 04:07:08 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7L875c09034 for exmh-workers@listman.redhat.com; Wed, 21 Aug 2002
+    04:07:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7L875Y09030 for
+    <exmh-workers@redhat.com>; Wed, 21 Aug 2002 04:07:05 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7L7qcl21960 for <exmh-workers@redhat.com>;
+    Wed, 21 Aug 2002 03:52:39 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7L85Wl05603;
+    Wed, 21 Aug 2002 15:05:33 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7L817W08178; Wed, 21 Aug 2002 15:01:07
+    +0700 (ICT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Valdis.Kletnieks@vt.edu
+Cc: Chris Garrigues <cwg-dated-1030314468.7c7c85@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: New Sequences Window
+In-Reply-To: <200208210251.g7L2pqKb001805@turing-police.cc.vt.edu>
+References: <200208210251.g7L2pqKb001805@turing-police.cc.vt.edu>
+    <1029882468.3116.TMDA@deepeddy.vircio.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <8176.1029916867@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 21 Aug 2002 15:01:07 +0700
+
+    Date:        Tue, 20 Aug 2002 22:51:52 -0400
+    From:        Valdis.Kletnieks@vt.edu
+    Message-ID:  <200208210251.g7L2pqKb001805@turing-police.cc.vt.edu>
+
+  | Ever tried to get MH to *not* have a 'pseq' sequence?
+
+Hmm - I've been using MH for a long time (since well before there were
+sequences) and I don't think I've ever seen a "pseq" ...
+
+I'm guessing that that's the sequence that you have "pick" create
+As I recall it, it has no default sequence name, so the sequence names
+that people use will tend to vary from person to person won't they
+(except as MH configurations move around institutions by osmosis).
+
+I've always used "sel" for that purpose.
+
+I kind of doubt that any pre built-in sequence name is going to be
+very general.   Even "unseen" can be changed (fortunately that one
+is easy to find in the MH profile - though whether exmh does that,
+os just uses "unseen" I haven't bothered to find out).
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

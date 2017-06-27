@@ -1,0 +1,351 @@
+From ntknow-return-263-jm-ntk=jmason.org@lists.ntk.net  Fri Jul 19 15:17:04 2002
+Return-Path: <ntknow-return-263-yyyy-ntk=spamassassin.taint.org@lists.ntk.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1D263440DC
+	for <jm@localhost>; Fri, 19 Jul 2002 10:16:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:16:41 +0100 (IST)
+Received: from prune.flirble.org (prune.flirble.org [195.40.6.30]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6JEFRJ03590 for
+    <jm-ntk@jmason.org>; Fri, 19 Jul 2002 15:15:27 +0100
+Received: (qmail 15952 invoked by uid 7789); 19 Jul 2002 13:50:58 -0000
+Mailing-List: contact ntknow-help@lists.ntk.net; run by ezmlm
+Precedence: bulk
+X-No-Archive: yes
+Delivered-To: mailing list ntknow@lists.ntk.net
+Delivered-To: moderator for ntknow@lists.ntk.net
+Received: (qmail 15872 invoked from network); 19 Jul 2002 13:49:36 -0000
+Message-Id: <3.0.6.32.20020719145116.0097c930@pop.dial.pipex.com>
+X-Sender: af06@pop.dial.pipex.com
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Fri, 19 Jul 2002 14:51:16 +0100
+To: NTK recipient list <ntknow@lists.ntk.net>
+From: Dave Green <dave@davegreen.co.uk>
+Subject: NTK now, 2002-07-19
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+
+
+ _   _ _____ _  __ <*the* weekly high-tech sarcastic update for the uk>
+| \ | |_   _| |/ / _ __   __2002-07-19_ o join! mail an empty message to
+|  \| | | | | ' / | '_ \ / _ \ \ /\ / / o ntknow-subscribe@lists.ntk.net
+| |\  | | | | . \ | | | | (_) \ v  v /  o website (+ archive) lives at:
+|_| \_| |_| |_|\_\|_| |_|\___/ \_/\_/   o     http://www.ntk.net/
+
+
+        "Until we secure our cyber infrastructure, a few keystrokes and
+         an Internet connection is all one needs to disable the economy
+         and endanger lives..."
+                                              - Lamar Smith, US Senator
+                             http://www.msnbc.com/news/780923.asp?cp1=1
+
+         > DISABLE ECONOMY
+         > You cannot do that here.
+         > EXAMINE CYBER INFRASTRUCTURE
+         > Access Denied.
+         > HIT ECONOMY WITH STICK
+                 
+
+                                >> HARD NEWS <<
+                               life-long pursuits
+
+         On July 17th, 2001, DMITRY SKLYAROV, coder for the Russian
+         software house ELCOMSOFT, was arrested while visiting the
+         US. His crime: writing code that exposed flaws in Adobe's
+         e-book security, in contravention of the USA's exciting new
+         DMCA. In the next year, thanks to widespread protests, Adobe
+         withdrew their call to prosecute the Russian hacker and
+         Dmitry was freed. Elcomsoft is still in the dock for
+         breaching Adobe's copy restriction routines. If the aim of
+         the prosecution was to cow them into keeping quiet about
+         security problems, it doesn't appear to have worked. On July
+         12th, 2002, ELCOMSOFT posted to Bugtraq a flaw in Adobe's
+         e-book security. Namely, that in Adobe's "lending library"
+         web app for the Adobe Content Server, you can borrow a book
+         for over twenty years (instead of three days) just by
+         changing a hidden Web form value. The library site is just a
+         demonstration app, so it's not a serious problem, but it
+         does give Elcomsoft room for a catty little addendum. "Some
+         time ago", they write "we have found much more serious
+         problem with another Adobe software and reported it to the
+         vendor; however, there was no response at all, and so we
+         decided not to waste our time reporting this one (about the
+         library) to Adobe". How much reaction do they want?
+         Salt sown in the soil of Moscow and the Volga canal aflame?
+         http://lists.insecure.org/bugtraq/2002/Jul/0133.html
+                           - don't plan any trips to Disneyland, Vlad
+         http://librarydemo.adobe.com/library/
+                          - fixed, it looks, by stubbing out the code
+         http://lists.insecure.org/bugtraq/2002/Jul/0193.html
+- now, for real chutzpah, post a Symantec exploit on the newly 0wn3d BugTraq
+
+         We'll tread cautiously with this one, as it involves Vast
+         Ageless Corporations Who Have Retained Counsel Living Where
+         Their Glowing Eyesockets Used To Be. Just days before we
+         read on Slashdot that zombie company FORGENT is demanding
+         patent license fees for users of JPEG, we're contacted by
+         someone who has received a similiarly threatening letter -
+         this time, from the rather more established Lucent
+         Technologies. The message reads: "After some market research
+         it has come to our attention that some of your company's
+         products may employ the JBIG/JPEG Standard. Therefore,
+         Lucent Technologies GRL LLC, Lucent's licensing agent, is
+         contacting your company regarding your interest in obtaining
+         a license for patents." What follows is the usual demand for
+         fees, dire threats if compliance is thwarted, requests that
+         the guards seize the criminals and throw them in Patent
+         Dungeon, etc. Now, Lucent's patents don't seem to be
+         breached by a JPEG implementaton (although it's known that
+         JBIG is patent-encumbered; hence JBIG-2). So why does Lucent
+         bring up JPEG at all? A curious wording for sure, and we'd
+         be interested to see if anyone else has been contacted in
+         these terms. Mail us at tips@spesh.com if you have.
+         http://slashdot.org/article.pl?sid=02/07/18/157217
+       - best use of porn collection in slashdot post modded funny +5
+http://www.ghostscript.com/pipermail/gs-devel/2002-February/001203.html
+                                          - JBIG encumbered, JBIG2 no
+
+         Oh, is it time again already for Esquire's 50 Sharpest Men
+         2002? Joy! Hidden among the usual suspects - which include
+         Richard Dawkins ("scientist"), Kevin Warwick ("scientist"),
+         Kevin Eldon ("comedian" - and KING OF HOBBIES), is one 
+         Charlie Brooker (listed here as a "TV Go Home"). Merely 
+         appearing in the list seems to have prompted the reclusive,
+         unsmiling, and often violent comedian to hurredly post a 
+         TVGoHome update from his pile of cardboard boxes near Soho,
+         which is all to the good. But does he really deserve the title?
+         What *is* sharpness? "In case your are [sic] in any doubt", 
+         the site explains, "sharpness is, above all, an attitude". Now
+         the dictionary says it's also "having a bitter taste", and
+         "harshness of manner", and given that Hank, the Angry
+         Drunken Dwarf is both unlisted and dead, we think Brooker's
+         a show-in for the Web protest/mess-with-publisher's-heads
+         vote. We urge you to vote now, express the will of the
+         people, and win some vile perfume or a horrible watch.
+         http://www.esquire.co.uk/esquire50.htm
+           - warning: torturous and unnecessarilly prolonged web form
+         http://www.thebee.com/bweb/iinfo106.htm
+- Hank: another exciting Net meme you missed because you go out too much
+
+
+                                >> ANTI-NEWS <<
+                             berating the obvious
+
+         when oh when will the public tire of PUERILE GOOGLE TYPOS?: 
+         http://www.google.com/search?q=overcocking , "addtition", 
+         "t-shits", "eductation", and (via prudish spellcheckers?): 
+         http://www.google.com/search?q=%22public+lice%22 ... don't buy: 
+     http://www.ebuyer.com/customer/products/index.html?product_uid=26497
+         ... bringing a whole new meaning to "colour naming systems": 
+         http://www.ntk.net/2002/07/19/dohhue.gif ... might explain its 
+         bewildered state: http://www.ntk.net/2002/07/19/dohpot.gif ... 
+         http://www.contactnet.ro/solutiixxi/index.php?lim=e vs "On our 
+         children's game-place, they can romp after hug-desire!!": 
+         http://www.tourismus-tirol.com/scharnitz/risserhof/indexe.html 
+         ... self-fulfilling: http://www.ntk.net/2002/07/19/dohdig.gif 
+         ... and when VIM met the PALM platform, the "Related E-Books" 
+         were MOIDER: http://www.ntk.net/2002/07/19/dohvim.gif ... 
+
+
+                               >> EVENT QUEUE <<
+                         goto's considered non-harmful
+
+         Yes, we have concerns about encountering Slashdot readers "au 
+         naturel" without any kind of intervening moderation system. 
+         And yet, at the same time, we cannot look away. 7pm local 
+         time, Thu 2002-07-25 marks the world's first SLASHDOT MEETUP 
+         EVENT (check local listings for details, free), attracting - 
+         at time of writing - an impressive 91 interested signups for 
+         the London gathering (19 for Manchester, Leeds 17, Glasgow 11, 
+         Birmingham 9, Liverpool 6, and so on). Usual warnings about 
+         meeting your online "friends" are, we imagine, more than 
+         usually applicable here - especially as no-one can work out 
+         what the organisers are getting out of it. Spamming lists? 
+         Kickbacks from the democratically selected venues? Or valuable 
+         demographic info like the fact that "Elijah Wood" is currently 
+         more popular in hobbit-friendly Glasgow than U2, Tori Amos, or 
+         Duran Duran? 
+         http://slashdot.meetup.com/
+                                  - #goth girls for bearded sysadmins
+         http://www.defcon.org/
+                            - plus Defcon in Vegas in two weeks' time
+
+
+                                >> TRACKING <<
+               sufficiently advanced technology : the gathering
+
+         Once again that silly 5K Web competition thing gets the
+         headlines. And once again, we must rub its fatty, fatty chin
+         against the honed shard of flint that is the 2002 1K
+         MINIGAME 8-BIT CODING COMPETITION until it's shaved meek.
+         1024 bytes is all you (must have) wrote: to enter, arrange
+         them to form a working game on any 8-bit micro you choose.
+         In response to complaints from last year, "middle class BBC
+         Micro Fauntleroys" will be permitted, says last year's
+         judge, Matt Westcott. More weakness is shown by permitting
+         Atari 2600s, which have 2K cartridges, to enter (you must
+         fill the last 1K with zeros), and also the TI99/4A which as
+         everyone knows has sixteen bits. We do hope this doesn't end
+         in Zork virtual machines or Postscript or something.
+         http://www.ffd2.com/minigame/
+                   - "The competition will never be 'fair'" - BETTER!
+         http://entries.the5k.org/946/wolf5k.html
+                                                  - oh, the decadence
+         http://www.igf.com/submit.htm
+- $20,000 prize money; probably not accepting Oric Forth games this year
+
+
+                                >> MEMEPOOL <<
+                ceci n'est pas une http://www.gagpipe.com/
+
+         "Now That's What I Call Copyright Infringement, Vols 1,2,3": 
+         http://pod-135.dolphin-server.co.uk/~boom/thecd/boom.php ... 
+         http://news.bbc.co.uk/hi/english/uk/2131236.stm - a case for: 
+         http://news.bbc.co.uk/hi/english/uk/newsid_1490000/1490957.stm ?
+         ... forget offshore accounting - what's to stop them going back 
+         in time with the proceeds and killing all the investors' 
+         grandfathers?: http://www.timetravelfund.com/ ... telnet 
+         econet: http://www.heyrick.co.uk/econet/misc/tcpip.html ... 
+         ... you know, wouldn't a simple 404 attract less attention?: 
+         http://www.ttfn.com/ ... Transformers! Terrorists in disguise! 
+         http://www.tsa.gov/workingwithtsa/aircraft_prohibit.shtm ... 
+         obligatory filk Pie cover: http://home.mchsi.com/~jeffwadler/ 
+         ... they laughed when I sat down at the VT100 terminal: 
+         http://www.prodikeys.com/ ... and kept laughing, thanks to: 
+         http://www.colorpilot.com/sound.html ...
+
+
+                                >> GEEK MEDIA <<
+                   what, *another* http://www.tvgohome.com/ ?
+
+         TV>> now that kids are taking over from teachers in RULE THE 
+         SCHOOL (5pm, Fri, BBC1) and redecorating their homes in HOME 
+         ON THEIR OWN (7pm, Sat, ITV), we can't wait for the concept 
+         gameshows where they fly planes, run pubs and perform 
+         lifesaving surgery... Wired UK's Hari Kunzru reappears on 
+         NEWSNIGHT REVIEW (11pm, Fri, BBC2)... and if you like James 
+         "Copland" Mangold's sensitive character study of an overweight 
+         man HEAVY (1.05am, Fri, BBC2), the IMDB also recommends Eddie 
+         Murphy's "The Nutty Professor"... The Beach Boys' "Pet Sounds" 
+         is the subject of ART THAT SHOOK THE WORLD (7.20pm, Sat, 
+         BBC2), even though it doesn't have "Good Vibrations" on it... 
+         Meg Ryan experiments with setting a romantic comedy during the 
+         Gulf War, and where one of the protagonists is dead, in 
+         COURAGE UNDER FIRE (9.15pm, Sat, BBC1)... but we'd skip that - 
+         along with laboured Tim Burton homage MARS ATTACKS! (10.35pm, 
+         Sat, ITV) - in favour of Ensign Ro and Kevin Spacey - together 
+         at last! - in top-notch low-budget office horror SWIMMING WITH 
+         SHARKS (10.50pm, Sat, C5)... Radha "Pitch Black" Mitchell 
+         shows up in Aussie relo-drama LOVE AND OTHER CATASTROPHES 
+         (1.05am, Sat, BBC2)... Matt "Max Headroom" Frewer fails to 
+         halt the downward slide of the "National Lampoon" franchise in 
+         Washington excursion NATIONAL LAMPOON'S SENIOR TRIP (12.30am, 
+         Sat, ITV), compared to acknowledged classics like NATIONAL 
+         LAMPOON'S VACATION (9pm, Tue, C5)... the final of JUNKYARD 
+         WARS (8pm, Mon, C4) offers a taste of where these shows are 
+         going when the teams must build full-size remote-controlled 
+         "combat cars"... while a "I Preferred The Terrorism Of The 
+         1980s" special recreates the SAS - EMBASSY SIEGE (9pm, Thu, 
+         BBC2) - if only everything was as simple as pseudo-'70s 
+         supernatural action comedy GOOD VS EVIL (9pm, Wed, Sci-Fi)... 
+         
+         FILM>> David Cronenberg explains why the "Friday The 13th" 
+         machete murderer is so hard to kill, shortly before he goes up 
+         against two of the chicks from "Gene Roddenberry's Andromeda" 
+         in undemanding self-referential "Alien"-alike JASON X 
+         ( http://www.cndb.com/movie.html?title=Jason+X+%282001%29 : 
+         [Lexa "Andromeda" Doig] [is] flat on her back on a table 
+         recuperating, and the camera shows her boobs; [Lisa "Beka 
+         Valentine"] Ryder plays a robot who wants to be more of a 
+         woman [...] her nipples fall off for a little comic relief)... 
+         while the director of "Candyman" and UK hacker classic "Smart 
+         Money" digital-videos drug-fuelled Hollywood self-excoriation 
+         IVANS XTC ( http://www.cndb.com/movie.html?title=ivans+xtc : 
+         [Lisa Enos], who also wrote the screenplay and whose first 
+         film this is, appears in a few full frontal scenes a little 
+         more than a third of the way through)... otherwise it's star-
+         packed CGI talking animal interspecies romance STUART LITTLE 2 
+         (imdb: sequel/ anthropomorphic/ based-on-novel/ bird/ mouse/ 
+         part-computer-animation/ soccer)... or odd-sounding Oirish 
+         period frolic THE ABDUCTION CLUB ( http://www.bbfc.co.uk/ : 
+         Cuts required to sight of 2 men hanging by necks in execution 
+         scene, on grounds of potentially harmful imitable technique, 
+         [in accordance with] category standards and Video Recordings 
+         Act 1984)... 
+         
+         CONFECTIONERY THEORY>> as tastebuds acclimatise to the 
+         acquired tang of DIET COKE LEMON, reader WAYNE WILLIAMS has 
+         been forced to look further afield for his acidic thrills, 
+         proclaiming the "Citrus" version of ROWNTREE'S FRUITSOME 
+         CEREAL BARS "pretty tasty, a bit like a lemon meringue pie in 
+         a bar". Frankly we preferred the "Tropical" and "Red Berry" 
+         variants, though neither as much as the various ALPEN BARS 
+         with "yoghurt" or "chocolate" style toppings - and all for 
+         just twice the fat of ordinary breakfast cereal! In other 
+         most-important-meal-of-the-day news, those eggy "breakfast 
+         pizza" CHICAGO TOWN SCRAMBLES [NTK 2002-04-12] are delicious 
+         (particularly with tomato ketchup), and have been flying off 
+         the shelves in a 2-pack for 99p deal in selected branches of 
+         Sainsbury's... as predicted in NTK 2001-08-10, KFC have taken 
+         advantage of MCDONALD'S weakness in the KITKAT MCFLURRY arena, 
+         and rolled out their identically-sized rival AVALANCHE (also 
+         99p) with a freakish selection of toppings including chocolate 
+         sauce, Cadbury's Flake, M&M's and Starburst Joosters. In a 
+         non-ice-cream-related incident, CHARLOTTE LATIMER was the 
+         first to contact us with a sighting of STARBURST "straight-
+         out-of-the-1993-naming-dept" FLIPSTERS HARD CANDY (from 
+         30p/pack): "pretty nice hard candies (peach, apple, raspberry 
+         and forest fruits) with a yucky plastic-looking splodge on one 
+         side that purports to offer some kind of creaminess (we 
+         guess)", but still no news yet of the brand's other mutant 
+         offspring: teardrop-shaped FRUITINESSE (from 49p), non-fish-
+         flavoured gummy SEA MONSTERS (from 99p/bag), and STARBURST 
+         CAKE BARS (UKP1.05 for pack of 5)... and finally, MIKE WALSH 
+         of Finland remained nonplussed with last month's UK sighting 
+         of an imported South African NESTLE SMARTIES IN MILKYBAR 
+         CHOCOLATE, maintaining he bought a White "Ritter Sport" bar 
+         with Smarties in, "in a branch of the (German) Spar chain in 
+         Tenerife in January", and was generally disappointed by its 
+         usability: "Smarties kept falling out", he complains. But 
+         Nestle is innovating over here as well, with the imminent 
+         arrival of WONKA XPLODER and GOLDEN CRUNCHER biscuits (79p/ 
+         pack of 6) - replacing underperforming former NTK "Taste 
+         Abominations" WONKA OOMPA sweets - and its first new chocolate 
+         launch in 5 years, solid-looking would-be Dairy Milk-killer 
+         NESTLE DOUBLE CREAM (40p, available from July 29)... 
+
+
+                               >> SMALL PRINT <<
+
+       Need to Know is a useful and interesting UK digest of things that
+         happened last week or might happen next week. You can read it
+       on Friday afternoon or print it out then take it home if you have
+     nothing better to do. It is compiled by NTK from stuff they get sent.
+                       Registered at the Post Office as
+                                   '"funny"'
+                         http://www.net-watch.org/1.htm               
+
+
+                                 NEED TO KNOW
+            THEY STOLE OUR REVOLUTION. NOW WE'RE STEALING IT BACK.
+                         Archive - http://www.ntk.net/
+              Unsubscribe? Mail ntknow-unsubscribe@lists.ntk.net
+                Subscribe? Mail ntknow-subscribe@lists.ntk.net
+ NTK now is supported by UNFORTU.NET, and by you: http://www.geekstyle.co.uk/
+
+                          (K) 2002 Special Projects.
+             Copying is fine, but include URL: http://www.ntk.net/
+
+                    Tips, news and gossip to tips@spesh.com
+             All communication is for publication, unless you beg.
+              Press releases from naive PR people to pr@spesh.com
+     Remember: Your work email may be monitored if sending sensitive material.
+       Sending >500KB attachments is forbidden by the Geneva Convention.
+              Your country may be at risk if you fail to comply.
+
+
+
+
+

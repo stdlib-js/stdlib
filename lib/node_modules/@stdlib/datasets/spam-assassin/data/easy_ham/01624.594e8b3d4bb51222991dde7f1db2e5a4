@@ -1,0 +1,126 @@
+From secprog-return-493-jm=jmason.org@securityfocus.com  Fri Sep  6 11:37:38 2002
+Return-Path: <secprog-return-493-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CEF2016F20
+	for <jm@localhost>; Fri,  6 Sep 2002 11:36:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:36:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869vcC29825 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:57:38 +0100
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by webnote.net (8.9.3/8.9.3) with ESMTP id VAA18304 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 21:36:52 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    E1EB28F2C6; Thu,  5 Sep 2002 13:38:50 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 12968 invoked from network); 5 Sep 2002 17:15:58 -0000
+Message-Id: <3D7793B5.8344A1B5@crystal.ncc.cc.nm.us>
+Date: Thu, 05 Sep 2002 11:26:13 -0600
+From: Scott MacKenzie <scottm@crystal.ncc.cc.nm.us>
+Reply-To: scottm@crystal.ncc.cc.nm.us
+Organization: =?iso-8859-1?Q?Din=E9?= College
+X-Mailer: Mozilla 4.79 [en] (Windows NT 5.0; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Ben Mord <bmord@icon-nicholson.com>
+Cc: Crispin Cowan <crispin@wirex.com>,
+	"Webappsec Securityfocus.Com" <webappsec@securityfocus.com>,
+	SECPROG Securityfocus <SECPROG@securityfocus.com>
+Subject: Re: FW: use of base image / delta image for automated recovery
+    from attacks
+References: <NAEOJLMPJMJDFPLHIOJOOEGMDBAA.bmord@icon-nicholson.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+There is a software package that is used (or was up through w2k) 
+on MicroSloth for this purpose. Ghost, or some such. One essentially 
+"takes a picture" of the machine's proper config, and then upon 
+schedule or demand replaces the machine's current config with the 
+proper picture. It essentially over-writes the entire disk drive. 
+Especially good for student access machines at libraries, etc.
+
+Ben Mord wrote:
+> 
+>   -----Original Message-----
+>   From: Crispin Cowan [mailto:crispin@wirex.com]
+>   Sent: Wednesday, September 04, 2002 5:46 PM
+>   To: Ben Mord
+>   Cc: Webappsec Securityfocus.Com; SECPROG Securityfocus
+>   Subject: Re: use of base image / delta image for automated recovery from
+>  attacks
+> 
+> >  I did my dissertation work in this area (Optimistic Computing) and so was
+> >interested in applying it to the security problem. Unfortunately, you hit a
+> >bunch of problems:
+> 
+> >    a.. When can you "commit" a state as being "good"?  You can't run from
+> a
+> >redo log forever; the performance and storage penalties accumulate. Even
+> log
+> >structured file systems garbage collect eventually. So you have to commit
+> >sometime. The problem is that if you commit too eagerly, you might commit
+> >corrupted state. If you commit too conservatively, you eat performance and
+> >storage penalties.
+> >    b.. What do you do if you discover that there is corrupted state in the
+> >*middle* of your redo log, and you want some of the critical state that
+> >comes after it? You need some way to dig the corruption out of the middle
+> >and save the rest. My dissertation solves this problem, but you have to
+> >re-write everything in my programming language :)
+> .    c.. Just doing this at all imposes substantial performance penalties. I
+> >love VMWare, and use it every day (the best $200 I ever spent on software)
+> >.but it is not very fast.
+> 
+> My proposed solution to the first two problems you mention is to be less
+> ambitious. The idea is that you *never* commit - instead, you simply revert
+> to base state on reboot. Obviously, you can't do this with partitions that
+> accrue important state, e.g. a partition that stores database table data.
+> But in your typical web application, most partitions do not accrue important
+> state. For example, your typical web server or application server could have
+> their entire state reset back to a known base state during each reboot
+> without harm.
+> The advantage of being less ambitious is that we have a quick and easy way
+> to frustrate certain attacks without rewriting all of our software or
+> spending lots of money on additional application-specific coding.
+> 
+> The first two problems you describe only occur if we become more ambitious
+> and try to apply these same techniques to, for example, the database table
+> partitions, where state changes remain important across reboots. That would
+> certainly be a nice touch! But as you point out, many problems would have to
+> be addressed first, and the hardest of these can not be abstracted away from
+> the particular application. Not the least of these is the problem of writing
+> heuristics for delineating good from malevolent state. That task is roughly
+> analogous to what antiviral software authors do for a living, only this work
+> could not be shared across many different systems as it would be specific to
+> a paritcular application.
+> 
+> The third problem you mention - performance penalty - is an argument for
+> doing this in hardware, much like hardware raid. Another argument for doing
+> this in hardware is hack resistance. Changing the base instance should
+> require physical access to the console, e.g. by requiring that you first
+> flip a physical switch on your RAID hardware or modify a bios setting. If
+> the base image can be modified remotely or by software, then you have to
+> worry about whether an implementation flaw might permit a cracker to modify
+> the base image remotely.
+> 
+> Ben
+
+-- 
+    (                                                ______
+    ))   .-- Scott MacKenzie; Dine' College ISD --.   >===<--.
+  C|~~| (>---  Phone/Voice Mail:  928-724-6639 ---<) | ; o |-'
+   |  |  \---  Senior DBA/CARS Coordinator/Etc. --/  |  _  |
+   `--'   `- Email: scottm@crystal.ncc.cc.nm.us -'   `-----'
+
+

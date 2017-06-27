@@ -1,0 +1,94 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 10:49:20 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 84CC543C72
+	for <jm@localhost>; Thu, 22 Aug 2002 05:47:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:47:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LIJHZ04736 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 19:19:18 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ha2W-0003ET-00; Wed,
+    21 Aug 2002 11:17:08 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ha2J-0005zb-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 11:16:57 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7LIGLW7000946;
+    Wed, 21 Aug 2002 13:16:21 -0500
+MIME-Version: 1.0
+Message-Id: <p04310100b98987ef2c97@[198.248.208.11]>
+In-Reply-To: <20020821153428.GI28416@kluge.net>
+References: <1029568528.15032.111.camel@obi-wan.kenlabs.com>
+    <Pine.BSF.4.21.0208210744440.47117-100000@wow.atlasta.net>
+    <20020821150422.GG28416@kluge.net>
+    <nib7mu8ghb59aqi7ipqlp3ajopdbosg8av@localhost>
+    <20020821153428.GI28416@kluge.net>
+To: Theo Van Dinter <felicity@kluge.net>,
+	Frank Pineau <frank@pineaus.com>
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [SAtalk] Highest-scoring false positive
+Cc: SpamAssassin List <spamassassin-talk@example.sourceforge.net>
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 13:16:18 -0500
+Date: Wed, 21 Aug 2002 13:16:18 -0500
+
+At 11:34 AM -0400 8/21/02, Theo Van Dinter wrote:
+>On Wed, Aug 21, 2002 at 10:16:33AM -0500, Frank Pineau wrote:
+>>  Omaha Steaks *is* spam.  I bought something from them once. 
+>>*Great* steaks, but
+>>  then they started calling me, emailing me, snail-mailing, 
+>>constantly.  I once
+>
+>If you sign up for something, it's not spam by definition, aggressive as
+>they may be.  (I told them to stop calling me, and they stopped, so ...)
+
+I call it spam if I ask to be removed from the spamming list though. 
+I occasionally buy X-10 stuff.  I've learned from past experiences to 
+create a quick mail alias to get order confs and what not.  Then can 
+it once the order is complete because those spamming SOBs will not 
+stop filling my inbox with 3-6 ads per day.  I've LARTed them and 
+their upstream numerous times asking to be list washed.  I don't even 
+get an auto-ack.  I started a procmail recipe to reject mail to them 
+and include a form letter (I was planning on later appending every 
+piece of x-10 spam I've archived to the form letter for their reading 
+pleasure...) but I haven't gotten it to work.  Bottom line, if I gave 
+them permission to mail me (explicitly or via privacy policy), it's 
+not spam but once I told them to stop mailing me then it's spam.
+
+My $.02
+  Justin
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR                Pittsburg State University
+Network & Systems Manager                 http://www.pittstate.edu/ois/
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

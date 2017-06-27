@@ -1,0 +1,126 @@
+From fork-admin@xent.com  Mon Aug 12 11:10:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B8178440E0
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BHplb08986 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 18:51:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1B4B6294183; Sun, 11 Aug 2002 10:48:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barry.mail.mindspring.net (barry.mail.mindspring.net
+    [207.69.200.25]) by xent.com (Postfix) with ESMTP id A0018294182 for
+    <fork@xent.com>; Sun, 11 Aug 2002 10:47:31 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    barry.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17dwpN-0008U1-00;
+    Sun, 11 Aug 2002 13:48:33 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net (Unverified)
+Message-Id: <p05111a35b97c510c3503@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Fwd: [camram-spam] another framework hashcash related framework
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 13:36:31 -0400
+
+
+--- begin forwarded text
+
+
+Date: Sun, 11 Aug 2002 13:02:48 +0100
+To: usual@espace.net
+From: Fearghas McKay <fearghas@mac.com>
+Subject: Fwd: [camram-spam] another framework hashcash related framework
+Reply-To: "Usual People List" <usual@espace.net>
+Sender: <usual@espace.net>
+
+
+--- begin forwarded text
+
+
+Mailing-List: contact camram-spam-help@camram.org; run by ezmlm
+X-No-Archive: yes
+Reply-To: camram-spam@camram.org
+Delivered-To: mailing list camram-spam@camram.org
+Delivered-To: moderator for camram-spam@camram.org
+Date: Fri, 2 Aug 2002 00:42:53 +0100
+From: Adam Back <adam@cypherspace.org>
+To: CAMRAM <camram-spam@camram.org>
+Cc: Adam Back <adam@cypherspace.org>
+Subject: [camram-spam] another framework hashcash related framework
+
+There is a framework for using a hashcash like proof of work function
+as a way to frustrate junk mailers in this paper:
+
+"Curbing Junk E-Mail via Secure Classification"
+
+by E. Gabber, M. Jakobsson, Y. Matias, A. Mayer Bell
+
+in FC98.
+
+Online copy here:
+
+http://citeseer.nj.nec.com/27735.html
+
+(Look in the view or download section at the top right, it's
+availabile in at least .pdf and .ps formats).
+
+The framework they propose with proxies etc looks a lot like the
+current camram architecture, with a proof of work to get on a white
+list.  They use target revokable email addresses (basically identical
+to the LWPA concept) to implement the white list.
+
+The resulting framework is essentially identical to what I proposed in
+recent message with:
+
+Subject: target revokable email addresses, and postage-free tokens
+
+Their idea of including the postage free-token in the email address,
+mirrors what is done in LWPA and makes the system exhibit smoother
+migration for non-users.  eg. you can use varied sender addresses and
+it will still work, you can forward the email address to someone else
+and it will still work etc.
+
+They have some software architecture diagrams and suggestions for
+installing some of the proxies on a corporate gateway -- "gatekeeper"
+they call it.
+
+Adam
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: camram-spam-unsubscribe@camram.org
+For additional commands, e-mail: camram-spam-help@camram.org
+
+--- end forwarded text
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+
+

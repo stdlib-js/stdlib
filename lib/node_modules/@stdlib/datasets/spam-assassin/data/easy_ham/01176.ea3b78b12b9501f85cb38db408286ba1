@@ -1,0 +1,134 @@
+From exmh-users-admin@redhat.com  Wed Oct  9 22:41:06 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6D59A16F1A
+	for <jm@localhost>; Wed,  9 Oct 2002 22:40:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 22:40:01 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99IXOK16457 for
+    <jm-exmh@jmason.org>; Wed, 9 Oct 2002 19:33:24 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id B98E741C72; Wed,  9 Oct 2002
+    14:32:34 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4B7F742312
+    for <exmh-users@listman.redhat.com>; Wed,  9 Oct 2002 14:18:18 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g99IIIe01687 for exmh-users@listman.redhat.com; Wed, 9 Oct 2002
+    14:18:18 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g99IIHf01680 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 14:18:17 -0400
+Received: from sherman.stortek.com (sherman.stortek.com [129.80.22.146])
+    by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g99HwUX03598 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 13:58:30 -0400
+Received: from sherman.stortek.com (localhost [127.0.0.1]) by
+    sherman.stortek.com (8.12.3/8.12.0) with ESMTP id g99II9OH006838 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 12:18:09 -0600 (MDT)
+Received: from vinson-ether1.stortek.com (vinson-ether1.stortek.com
+    [129.80.16.134]) by sherman.stortek.com (8.12.3/8.12.0) with ESMTP id
+    g99II8s3006835 for <exmh-users@redhat.com>; Wed, 9 Oct 2002 12:18:08 -0600
+    (MDT)
+Received: from tatanka.stortek.com (tatanka.stortek.com [129.80.90.4]) by
+    vinson-ether1.stortek.com (8.12.3/8.12.0) with ESMTP id g99II8qv021686 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 12:18:08 -0600 (MDT)
+Received: from tatanka (localhost [127.0.0.1]) by tatanka.stortek.com
+    (8.11.6+Sun/8.10.2) with ESMTP id g99IGd904228 for <exmh-users@redhat.com>;
+    Wed, 9 Oct 2002 12:16:43 -0600 (MDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: exmh-users@spamassassin.taint.org
+Subject: Re: From
+In-Reply-To: Your message of
+    "Wed, 09 Oct 2002 12:57:13 EDT."
+    <200210091657.g99GvDmX025433@life.ai.mit.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <4226.1034187399@tatanka>
+From: "James C. McMaster (Jim)" <mcmasjc@tatanka.stortek.com>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 09 Oct 2002 12:16:39 -0600
+
+This is not an exmh problem, but an interaction between sendmail, Solaris and 
+mh.
+
+Your sysadmin is wrong.  It is the responsibility of the receiving mail 
+server to escape lines beginning with "From " if they choose to turn on that 
+facility.  It is not the responsibility for email clients to cater to the 
+stupid design of the unix mail spool, and Sun's even more stupid decision to 
+rely on "Content-length:" instead of dealing with this problem.  Since mh is 
+unaware of "Content-length:", rcvstore gags trying to parse messages from the 
+spool.
+
+I had this same problem.  There are several ways to fix it:
+
+1)  Get your mail administrator to add the "E" flag to your sendmail.  This 
+means you will never see a line beginning with "From ".  Any such line will 
+look like ">From ".
+
+2)  There is a patch to mh to make it respect "Content-length:".  When I was 
+having this problem, porting this patch to nmh was low on the priority list, 
+then nmh development stalled for a long time.  I doubt it has been done, but 
+you can check with the nmh list at nmh-workers@mhost.com to find out for sure.
+
+3)  You can learn to use procmail, invoking rcvstore directly instead of 
+letting sendmail put your incoming mail into the spool.  This avoids the 
+whole issue.  rcvstore only deals with a single message at a time, and 
+everything works.
+-- 
+Jim McMaster
+mailto:mcmasjc@tatanka.stortek.com
+
+
+In message <200210091657.g99GvDmX025433@life.ai.mit.edu>, Jason Rennie said:
+> 
+> When I receive a message that has a line starting with "From ", it's
+> broken into two messages.  I get my mail from /var/spool/mail.  The
+> program that incorporates mail thinks that the "From " line starts a new
+> message.
+> 
+> My sysadmins have told me that the sending mail client is supposed to 
+> escape lines begining with "From ".  EXMH (2.5) doesn't do this.  Should 
+> it?  It appears that my MH is MH 6.8.  Does NMH fix this?
+> 
+> Jason D. M. Rennie
+> MIT AI Lab
+> jrennie@ai.mit.edu
+> (617) 253-5339
+> http://www.ai.mit.edu/~jrennie/
+> 
+> 
+> 
+> 
+> _______________________________________________
+> Exmh-users mailing list
+> Exmh-users@redhat.com
+> https://listman.redhat.com/mailman/listinfo/exmh-users
+> 
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

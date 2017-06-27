@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Fri Jul 19 17:14:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DFFF9440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 12:14:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 17:14:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JGEGJ13178 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 17:14:16 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA14596; Fri, 19 Jul 2002 17:10:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp015.mail.yahoo.com (smtp015.mail.yahoo.com
+    [216.136.173.59]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id RAA14558
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 17:10:41 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 19 Jul 2002 16:10:38
+    -0000
+Message-Id: <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "Irish Linux Users Group" <ilug@linux.ie>
+References: <200207191515.g6JFFnX02981@linux.local>
+Subject: Re: [ILUG] How to copy some files
+Date: Fri, 19 Jul 2002 17:06:59 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Brian wrote:
+>  however, the data will be read and written twice by the
+>  1st (source) `tar', and read twice by the 2nd (sink) `tar',
+>  albeit only written once as the sink realizes the second
+>  copy is a hard link to the first.
+
+Eh?!? Oh wait... <pause while original mail is re-read>
+
+Doh. Sorry, I automatically read 'soft' in front of 'links', despite all
+evidence to the contrary. I thought the original question was a bit
+strange...
+
+On that note: is there any real benefit to using hard links? I avoid them as
+a rule, and cannot think of any good reason to use them at the moment.
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.comm
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

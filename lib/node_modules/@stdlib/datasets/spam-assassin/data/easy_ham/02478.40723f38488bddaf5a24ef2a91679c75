@@ -1,0 +1,78 @@
+From social-admin@linux.ie  Mon Nov 25 20:48:45 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 98A6B16F17
+	for <jm@localhost>; Mon, 25 Nov 2002 20:48:44 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 25 Nov 2002 20:48:44 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAPKHfW23515 for
+    <jm+ilug-social@jmason.org>; Mon, 25 Nov 2002 20:17:41 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 51220341DD; Mon, 25 Nov 2002 20:19:08 +0000 (GMT)
+Delivered-To: linux.ie-social@localhost
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 4ACC73410E for <social@linux.ie>;
+    Mon, 25 Nov 2002 20:18:29 +0000 (GMT)
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id gAPKIRd21286 for <social@linux.ie>;
+    Mon, 25 Nov 2002 20:18:27 GMT
+To: ilug social <social@linux.ie>
+Subject: Re: [ILUG-Social] spam...
+Message-Id: <20021125201825.A21187@ie.suberic.net>
+References: <1038250489.1356.17.camel@unagi.internal.techworks.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <1038250489.1356.17.camel@unagi.internal.techworks.ie>;
+    from phil@techworks.ie on Mon, Nov 25, 2002 at 06:54:49PM +0000
+X-Operating-System: Linux 2.4.18-17.7.x i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1038687507.1b935f@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1038687507.1b935f@ie.suberic.net,
+	social@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Beenthere: social@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:social-request@linux.ie?subject=help>
+List-Post: <mailto:social@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/social>,
+    <mailto:social-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/social>,
+    <mailto:social-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/social/>
+X-Original-Date: Mon, 25 Nov 2002 20:18:25 +0000
+Date: Mon, 25 Nov 2002 20:18:25 +0000
+
+On Mon, Nov 25, 2002 at 06:54:49PM +0000, Philip Trickett wrote:
+> how much overhead does this add to your daily 'email reading'?
+
+like i said, two emails in about 2 to 3 months.
+
+> Now tell me, is there a way to stop them from forging the from: address
+> to a nonexistent address at a domain you own and use actively? At the
+> moment I am at 1200 bounces and counting!  Good job I'm on ADSL
+> otherwise I would be throwing a fit...
+
+yes, i whitelist the minimum required.
+
+kevin
+
+-- 
+kevin@ie.suberic.net          dante hicks: but you hate people.
+fork()'ed on 37058400         randal graves: yes, but i love gatherings.
+meatspace place: home                        isn't it ironic?
+http://ie.suberic.net/~kevin       --clerks
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

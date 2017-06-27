@@ -1,0 +1,69 @@
+From rpm-list-admin@freshrpms.net  Fri Jul 26 10:59:43 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ED420440E7
+	for <jm@localhost>; Fri, 26 Jul 2002 05:59:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 10:59:43 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6Q9vP407168 for
+    <jm-rpm@jmason.org>; Fri, 26 Jul 2002 10:57:26 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6Q9s3j17924; Fri, 26 Jul 2002 11:54:03
+    +0200
+Received: from fep06-app.kolumbus.fi (fep06-0.kolumbus.fi [193.229.0.57])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6Q9rBj15470 for
+    <rpm-list@freshrpms.net>; Fri, 26 Jul 2002 11:53:11 +0200
+Received: from azrael.blades.cxm ([62.248.237.162]) by
+    fep06-app.kolumbus.fi with ESMTP id
+    <20020726095304.IRJG20539.fep06-app.kolumbus.fi@azrael.blades.cxm> for
+    <rpm-list@freshrpms.net>; Fri, 26 Jul 2002 12:53:04 +0300
+Received: (from blades@localhost) by azrael.blades.cxm (SGI-8.9.3/8.9.3)
+    id MAA11447 for rpm-list@freshrpms.net; Fri, 26 Jul 2002 12:52:55 +0300
+    (EEST)
+X-Authentication-Warning: azrael.blades.cxm: blades set sender to
+    harri.haataja@cs.helsinki.fi using -f
+From: Harri Haataja <harri.haataja@cs.helsinki.fi>
+To: Freshrpms list <rpm-zzzlist@freshrpms.net>
+Subject: req: Falcon's eye
+Message-Id: <20020726125254.B11334@azrael.smilehouse.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 26 Jul 2002 12:52:55 +0300
+Date: Fri, 26 Jul 2002 12:52:55 +0300
+
+Another thing I see in debian but not in my RH boxen.
+
+http://falconseye.sourceforge.net/
+
+It's a GL(?) interface to nethack :)
+
+-- 
+"And don't even think of quoting me out of context ;)"
+	-- Michael Hinz in the Monastery
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

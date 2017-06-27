@@ -1,0 +1,116 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 29 11:24:09 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0CEF744116
+	for <jm@localhost>; Mon, 29 Jul 2002 06:22:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:22:25 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RAEUi18950 for
+    <jm-rpm@JMASON.ORG>; Sat, 27 Jul 2002 11:14:30 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id CAA14954 for <jm-rpm@jmason.org>;
+    Sat, 27 Jul 2002 02:23:11 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6R1J1j26746; Sat, 27 Jul 2002 03:19:02
+    +0200
+Received: from imf01bis.bellsouth.net (mail301.mail.bellsouth.net
+    [205.152.58.161]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6R1IVj26694 for <rpm-list@freshrpms.net>; Sat, 27 Jul 2002 03:18:31 +0200
+Received: from adsl-157-21-227.msy.bellsouth.net ([66.157.21.227]) by
+    imf01bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020727011958.NJEB19924.imf01bis.bellsouth.net@adsl-157-21-227.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Fri, 26 Jul 2002 21:19:58 -0400
+Subject: Re: Gstreamer update
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020726124057.75407.qmail@web21404.mail.yahoo.com>
+References: <20020726124057.75407.qmail@web21404.mail.yahoo.com>
+Content-Type: text/plain; charset=ISO-8859-15
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1027732948.6596.14.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g6R1IVj26694
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 26 Jul 2002 20:22:27 -0500
+Date: 26 Jul 2002 20:22:27 -0500
+
+Well, I tried the Ximian GNOME 2.0 packages from
+http://apt.sunnmore.net, and have to say, it was a let-down.  Ran
+'apt-get update' , 'apt-get install gnome-session' then 'apt-get
+upgrade' and Nautilus failed to execute, couldn't get any help docs to
+come up, along with more problems.  So, with the luck of 'rpm -qa|grep
+ximian' then removing by hand all ximian packages with 'rpm -e --nodeps'
+and reinstalling everything GNOME and GNOME-related with apt, I got
+trusty old Red Hat 7.3 GNOME back on the desktop, and the only trace of
+Ximian is Evolution, again, thanks to apt from this site.
+
+I really liked Ximian (back then, Helix ?) at first but, to me, Red
+Hat's GNOME, released with 7.3 seems much more pretty and up-to-date. 
+Could this be because of inclusion of gtk2 in RH 7.3?
+
+Lance  
+
+On Fri, 2002-07-26 at 07:40, Michèl Alexandre Salim wrote:
+>  --- Angles Puglisi <angles@aminvestments.com> wrote:
+> > 
+> > I still think there's got to be a way to get the
+> > packages that make gnomehide
+> > from the Limbo CDs, they would be newer.
+> > 
+> Surely you just need to recompile and install them in
+> order?
+> 
+> Ximian packages are awful - I had recurring problems
+> with their packaged libxslt a few months back.
+> 
+> Regards,
+> 
+> Michel
+> 
+> __________________________________________________
+> Do You Yahoo!?
+> Everything you'll ever need on one web page
+> from News and Sport to Email and Music Charts
+> http://uk.my.yahoo.com
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:       _ /~\'_
+         (o o)
+=====oooO==U==Oooo================[Joe Ramaswamy]==========
+
+THE LEWINSKY virus..
+(Sucks all the memory out of your computer, 
+then Emails everyone about what it did)
+
+============================[URL:http://devil.net/joe_r/]==
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

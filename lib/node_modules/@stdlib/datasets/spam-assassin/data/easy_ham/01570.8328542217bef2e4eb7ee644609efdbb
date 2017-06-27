@@ -1,0 +1,157 @@
+From razor-users-admin@lists.sourceforge.net  Fri Sep  6 11:37:01 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1E33916F1C
+	for <jm@localhost>; Fri,  6 Sep 2002 11:36:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:36:13 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869vcC29827 for
+    <jm-razor@jmason.org>; Fri, 6 Sep 2002 10:57:38 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id VAA18337 for
+    <jm-razor@jmason.org>; Thu, 5 Sep 2002 21:41:22 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17n3Eb-0003AT-00; Thu,
+    05 Sep 2002 13:28:13 -0700
+Received: from cpe3439333139383434.cpe.net.cable.rogers.com
+    ([24.101.225.150] helo=lserv4.espoircompany.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17n3Dv-00083y-00 for <razor-users@lists.sourceforge.net>; Thu,
+    05 Sep 2002 13:27:31 -0700
+Received: (from uucp@localhost) by lserv4.espoircompany.com
+    (8.12.5/8.12.5) id g85KRP6u008914 for razor-users@lists.sourceforge.net;
+    Thu, 5 Sep 2002 16:27:25 -0400
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0018_01C254F9.146CF4F0"
+From: "Eugene Chiu" <eugene@chiu.bz>
+Message-Id: <001b01c2551a$9c316a30$2801250a@omers.com>
+MIME-Version: 1.0
+Received: from WS0571 (omrs [206.222.70.71]) by ns1.espoircompany.com
+    (AvMailGate-2.0.0.6) id 08905-713A9F70; Thu, 05 Sep 2002 16:27:09 -0400
+To: <razor-users@example.sourceforge.net>
+X-Antivirus: OK! AntiVir MailGate Version 2.0.0.6 at lserv4 has not found
+    any known virus in this email.
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+X-Msmail-Priority: Normal
+X-Priority: 3
+Subject: [Razor-users] spamassassin+razor2
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 5 Sep 2002 16:27:08 -0400
+Date: Thu, 5 Sep 2002 16:27:08 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0018_01C254F9.146CF4F0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+I am wondering if anybody has successfully install a site-wide =
+spamassassin+razor2 installation. I am having so much trouble and the =
+following is the extract of my procmail.log.
+
+razor2 check skipped: Bad file descriptor Insecure dependency in open =
+while runn
+ing setuid at =
+/usr/local/lib/perl5/site_perl/5.6.1/Razor2/Client/Config.pm line
+410, <GEN23> line 1.
+>>From info@znion.com  Thu Sep  5 11:55:15 2002
+ Subject: *****SPAM***** Computer Maintenance
+  Folder: /home/eugene/caughtspam                                        =
+  8343
+
+
+In razor-agent.log, I simply get the bootup message and that's it...
+
+Sep 05 11:55:15.668648 check[8478]: [ 1] [bootup] Logging initiated =
+LogDebugLeve
+l=3D14 to file:/var/log/razor-agent.log
+
+Please help. Thanks.
+
+Eugene
+
+------=_NextPart_000_0018_01C254F9.146CF4F0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 5.50.4807.2300" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>Hi all,</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>I am wondering if anybody has =
+successfully install=20
+a site-wide spamassassin+razor2 installation. I am having so much =
+trouble and=20
+the following is the extract of my procmail.log.</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>razor2 check skipped: Bad file =
+descriptor Insecure=20
+dependency in open while runn<BR>ing setuid at=20
+/usr/local/lib/perl5/site_perl/5.6.1/Razor2/Client/Config.pm =
+line<BR>410,=20
+&lt;GEN23&gt; line 1.<BR>From <A=20
+href=3D"mailto:info@znion.com">info@znion.com</A>&nbsp; Thu Sep&nbsp; 5 =
+11:55:15=20
+2002<BR>&nbsp;Subject: *****SPAM***** Computer Maintenance<BR>&nbsp; =
+Folder:=20
+/home/eugene/caughtspam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+8343</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>In razor-agent.log, I simply get the =
+bootup message=20
+and that's it...</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Sep 05 11:55:15.668648 check[8478]: [ =
+1] [bootup]=20
+Logging initiated LogDebugLeve<BR>l=3D14 to=20
+file:/var/log/razor-agent.log</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Please help. Thanks.</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Eugene</FONT></DIV></BODY></HTML>
+
+------=_NextPart_000_0018_01C254F9.146CF4F0--
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

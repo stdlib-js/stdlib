@@ -1,0 +1,47 @@
+Return-Path: gward@python.net
+Delivery-Date: Fri Sep  6 14:44:17 2002
+From: gward@python.net (Greg Ward)
+Date: Fri, 6 Sep 2002 09:44:17 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>
+References: <15735.50243.135743.32180@12-248-11-90.client.attbi.com>
+	<LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>
+Message-ID: <20020906134417.GA16820@cthulhu.gerg.ca>
+
+On 05 September 2002, Tim Peters said:
+> Greg Ward is
+> currently capturing a stream coming into python.org, and I hope we can get a
+> more modern, and cleaner, test set out of that.
+
+Not yet -- still working on the required config changes.  But I have a
+cunning plan...
+
+> But if that stream contains
+> any private email, it may not be ethically possible to make that available.
+
+It will!  Part of my cunning plan involves something like this:
+
+  if folder == "accepted":             # ie. not suspected junk mail
+      if (len(recipients) == 1 and
+          recipients[0] in ("guido@python.org", "barry@python.org", ...)):
+          folder = "personal"
+
+If you (and Guido, Barry, et. al.) prefer, I could change that last
+statement to "folder = None", so the mail won't be saved at all.  I
+*might* also add a "and sender doesn't look like -bounce-*, -request,
+-admin, ..." clause to that if statement.
+
+> Can you think of anyplace to get a large, shareable ham sample apart from a
+> public mailing list?  Everyone's eager to share their spam, but spam is so
+> much alike in so many ways that's the easy half of the data collection
+> problem.
+
+I believe the SpamAssassin maintainers have a scheme whereby the corpus
+of non-spam is distributed, ie. several people have bodies of non-spam
+that they use for collectively evolving the SA score set.  If that
+sounds vague, it matches my level of understanding.
+
+        Greg
+-- 
+Greg Ward <gward@python.net>                         http://www.gerg.ca/
+Reality is for people who can't handle science fiction.

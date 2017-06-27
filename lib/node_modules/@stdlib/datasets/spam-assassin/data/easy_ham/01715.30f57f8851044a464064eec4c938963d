@@ -1,0 +1,212 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 08:18:49 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 03:18:49 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <200209080538.g885cjk17553@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCGEOIBCAB.tim.one@comcast.net>
+
+[Guido]
+> I *meant* to say that they were 0.99 clues cancelled out by 0.01
+> clues.  But that's wrong too!  It looks I haven't grokked this part of
+> your code yet; this one has way more than 16 clues, and it seems the
+> classifier basically ended up counting way more 0.99 than 0.01 clues,
+> and no others made it into the list.  I thought it was looking for
+> clues with values in between; apparently it found none that weren't
+> exactly 0.5?
+
+There's a brief discussion of this before the definition of
+MAX_DISCRIMINATORS.  All clues with prob MIN_SPAMPROB and MAX_SPAMPROB are
+saved in min and max lists, and all other clues are fed into the nbest heap.
+Then the shorter of the min and max lists cancels out the same number of
+clues in the longer list.  Whatever remains of the longer list (if anything)
+is then fed into the nbest heap too, but no more than MAX_DISCRIMINATORS of
+them.  In no case do more than MAX_DISCRIMINATORS clues enter into the final
+probability calculation, but all of the min and max lists go into the list
+of clues (else you'd have no clue that massive cancellation was occurring;
+and massive cancellation may yet turn out to be a hook to signal that manual
+review is needed).  In your specific case, the excess of clues in the longer
+MAX_SPAMPROB list pushed everything else out of the nbest heap, and that's
+why you didn't see anything other than 0.01 and 0.99.
+
+Before adding these special lists, the outcome when faced with many 0.01 and
+0.99 clues was too often a coin toss:  whichever flavor just happened to
+appear MAX_DISCRIMINATORS//2 + 1 times first determined the final outcome.
+
+>> That sure sets the record for longest list of cancelling extreme clues!
+
+> This happened to be the longest one, but there were quite a few
+> similar ones.
+
+I just beat it <wink>:  a tokenization scheme that folds case, and ignores
+punctuation, and strips a trailing 's' from words, and saves both word
+bigrams and word unigrams, turned up a low-probability very long spam with a
+list of 410 0.01 clues and 125 0.99 clues!  Yikes.
+
+> I wonder if there's anything we can learn from looking at the clues and
+the
+> HTML.  It was heavily marked-up HTML, with ads in the sidebar, but the
+body
+> text was a serious discussion of "OO and soft coding" with lots of highly
+> technical words as clues (including Zope and ZEO).
+
+No matter how often it says Zope, it gets only one 0.01 clue from doing so.
+Ditto for ZEO.  In contrast, HTML markup has many unique "words" that get
+0.99.  BTW, this is a clear case where the assumption of
+conditionally-independent word probabilities is utterly bogus -- e.g., the
+probability that "<body>" appears in a message is highly correlated with the
+prob of "<br>" appearing.  By treating them as independent, naive Bayes
+grossly misjudges the probability that both appear, and the only thing you
+get in return is something that can actually be computed <wink>.
+
+Read the "What about HTML?" section in tokenizer.py.  From the very start,
+I've been investigating what would work best for the mailing lists hosted at
+python.org, and HTML decorations have so far been too strong a clue to
+justify ignoring it in that specific context.  I haven't done anything
+geared toward personal email, including the case of non-mailing-list email
+that happens to go through python.org.
+
+I'd prefer to strip HTML tags from everything, but last time I tried that it
+still had bad effects on the error rates in my corpora (the full test
+results with and without HTML tag stripping is included in the "What about
+HTML?" comment block).  But as the comment block also says,
+
+# XXX So, if another way is found to slash the f-n rate, the decision here
+# XXX not to strip HTML from HTML-only msgs should be revisited.
+
+and we've since done several things that gave significant f-n rate
+reductions.  I should test that again now.
+
+> Are there any minable-but-unmined header lines in your corpus left?
+
+Almost all of them -- apart from MIME decorations that appear in both
+headers and bodies (like Content-Type), the *only* header lines the base
+tokenizer looks at now are Subject, From, X-Mailer, and Organization.
+
+> Or do we have to start with a different corpus before we can make
+> progress there?
+
+I would need different data, yes.  My ham is too polluted with Mailman
+header decorations (which I may or may not be able to clean out, but fudging
+the data is a Mortal Sin and I haven't changed a byte so far), and my spam
+too polluted with header clues about the fellow who collected it.  In
+particular I have to skip To and Received headers now, and I suspect they're
+going to be very valuable in real life (for example, I don't even catch
+"undisclosed recipients" in the To header now!).
+
+> ...
+> No, sorry.  These were all of the following structure:
+>
+>   multipart/mixed
+>       text/plain        (brief text plus URL(s))
+>       text/html         (long HTML copied from website)
+
+Ah!  That explains why the HTML tags didn't get stripped.  I'd again offer
+to add an optional argument to tokenize() so that they'd get stripped here
+too, but if it gets glossed over a third time that would feel too much like
+a loss <wink>.
+
+>> This seems confused: Jeremy didn't use my trained classifier pickle,
+>> he trained his own classifier from scratch on his own corpora.
+>> ...
+
+> I think it's still corpus size.
+
+I reported on tests I ran with random samples of 220 spams and 220 hams from
+my corpus (that means training on sets of those sizes as well as predicting
+on sets of those sizes), and while that did harm the error rates, the error
+rates I saw were still much better than Jeremy reported when using 500 of
+each.
+
+
+Ah, a full test run just finished, on the
+
+   tokenization scheme that folds case, and ignores punctuation, and strips
+a
+   trailing 's' from words, and saves both word bigrams and word unigrams
+
+This is the code:
+
+            # Tokenize everything in the body.
+            lastw = ''
+            for w in word_re.findall(text):
+                n = len(w)
+                # Make sure this range matches in tokenize_word().
+                if 3 <= n <= 12:
+                    if w[-1] == 's':
+                        w = w[:-1]
+                    yield w
+                    if lastw:
+                        yield lastw + w
+                    lastw = w + ' '
+
+                elif n >= 3:
+                    lastw = ''
+                    for t in tokenize_word(w):
+                        yield t
+
+where
+
+    word_re = re.compile(r"[\w$\-\x80-\xff]+")
+
+This at least doubled the process size over what's done now.  It helped the
+f-n rate significantly, but probably hurt the f-p rate (the f-p rate is too
+low with only 4000 hams per run to be confident about changes of such small
+*absolute* magnitude -- 0.025% is a single message in the f-p table):
+
+false positive percentages
+    0.000  0.000  tied
+    0.000  0.075  lost  +(was 0)
+    0.050  0.125  lost  +150.00%
+    0.025  0.000  won   -100.00%
+    0.075  0.025  won    -66.67%
+    0.000  0.050  lost  +(was 0)
+    0.100  0.175  lost   +75.00%
+    0.050  0.050  tied
+    0.025  0.050  lost  +100.00%
+    0.025  0.000  won   -100.00%
+    0.050  0.125  lost  +150.00%
+    0.050  0.025  won    -50.00%
+    0.050  0.050  tied
+    0.000  0.025  lost  +(was 0)
+    0.000  0.025  lost  +(was 0)
+    0.075  0.050  won    -33.33%
+    0.025  0.050  lost  +100.00%
+    0.000  0.000  tied
+    0.025  0.100  lost  +300.00%
+    0.050  0.150  lost  +200.00%
+
+won   5 times
+tied  4 times
+lost 11 times
+
+total unique fp went from 13 to 21
+
+false negative percentages
+    0.327  0.218  won    -33.33%
+    0.400  0.218  won    -45.50%
+    0.327  0.218  won    -33.33%
+    0.691  0.691  tied
+    0.545  0.327  won    -40.00%
+    0.291  0.218  won    -25.09%
+    0.218  0.291  lost   +33.49%
+    0.654  0.473  won    -27.68%
+    0.364  0.327  won    -10.16%
+    0.291  0.182  won    -37.46%
+    0.327  0.254  won    -22.32%
+    0.691  0.509  won    -26.34%
+    0.582  0.473  won    -18.73%
+    0.291  0.255  won    -12.37%
+    0.364  0.218  won    -40.11%
+    0.436  0.327  won    -25.00%
+    0.436  0.473  lost    +8.49%
+    0.218  0.218  tied
+    0.291  0.255  won    -12.37%
+    0.254  0.364  lost   +43.31%
+
+won  15 times
+tied  2 times
+lost  3 times
+
+total unique fn went from 106 to 94
+

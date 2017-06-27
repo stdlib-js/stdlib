@@ -1,0 +1,74 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:05:49 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7A71E44161
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:44 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SK15Z08404 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 21:01:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k8w3-0004y2-00; Wed,
+    28 Aug 2002 12:57:03 -0700
+Received: from adsl-64-175-246-157.dsl.sntc01.pacbell.net
+    ([64.175.246.157] helo=vife.vamos-wentworth.org) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17k8vO-0002n5-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 12:56:23 -0700
+Received: from husi (husi.vamos-wentworth.org [192.168.2.37])
+    (authenticated (0 bits)) by vife.vamos-wentworth.org
+    (Switch-2.2.0/Switch-2.2.0) with ESMTP id g7SJuAm18267 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 12:56:11 -0700
+From: "Rossz Vamos-Wentworth" <rossz@vamos-wentworth.org>
+To: spamassassin-talk@example.sourceforge.net
+MIME-Version: 1.0
+Subject: Re: [SAtalk] custom score for a given domain?
+Reply-To: rossz@vamos-wentworth.org
+Message-Id: <3D6CC86A.3542.DD1064@localhost>
+Priority: normal
+In-Reply-To: <3D6CE817.20608@sciences.univ-nantes.fr>
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7BIT
+Content-Description: Mail message body
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 12:56:10 -0800
+Date: Wed, 28 Aug 2002 12:56:10 -0800
+
+> the number 1 ISP in France and the third ISP in
+> Europe Wanadoo.fr is using non RFC2822 compliant
+> mail servers:
+
+Wanadoo.fr is notorious for being unresponsive to spam abuse 
+complaints.  Some of the more militant admins have blocked them 
+completely.
+
+Rossz
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

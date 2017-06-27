@@ -1,0 +1,102 @@
+From rpm-list-admin@freshrpms.net  Mon Oct  7 18:41:12 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8350016F16
+	for <jm@localhost>; Mon,  7 Oct 2002 18:41:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 18:41:09 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g97HRrK09669 for
+    <jm-rpm@jmason.org>; Mon, 7 Oct 2002 18:27:53 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g97HL3f32052; Mon, 7 Oct 2002 19:21:03
+    +0200
+Received: from posti.pp.htv.fi (posti.pp.htv.fi [212.90.64.50]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g97HKVf31932 for
+    <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 19:20:31 +0200
+Received: from cs78128237.pp.htv.fi ([62.78.128.237]) by posti.pp.htv.fi
+    (8.11.1/8.11.1) with ESMTP id g97HKFg02618 for <rpm-list@freshrpms.net>;
+    Mon, 7 Oct 2002 20:20:20 +0300 (EETDST)
+Subject: Re: RH 8 no DMA for DVD drive
+From: Ville =?ISO-8859-1?Q?Skytt=E4?= <ville.skytta@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20021007183629.40ab9860.matthias@rpmforge.net>
+References: <1033953429.13890.4.camel@AMD1800>
+    <1033954359.28832.4.camel@athlon.ckloiber.com>
+    <1033964717.1263.8.camel@AMD1800>
+    <20021007085643.5b9bb88c.matthias@rpmforge.net>
+    <1034007312.2296.8.camel@bobcat.ods.org>
+    <20021007183629.40ab9860.matthias@rpmforge.net>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1034011232.8419.65.camel@bobcat.ods.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g97HKVf31932
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 07 Oct 2002 20:20:26 +0300
+Date: 07 Oct 2002 20:20:26 +0300
+
+On Mon, 2002-10-07 at 19:36, Matthias Saou wrote:
+
+> > Eek.  Maybe it's just me, but I don't think that's a good idea. 
+> > Outputting a message in %post and providing a README of some kind would
+> > be better, as well as perhaps adding a note in %description.
+> 
+> Why "Eek"? :-)
+> If no /dev/dvd exists, it'll create it.
+> If /dev/dvd exists, it won't touch it.
+
+I assume that you won't %ghost or remove these and the modules.conf
+change on uninstall, though.  So people who are installing this RPM and
+are unfortunate enough to have a DVD drive (or just an ordinary CD,
+non-DVD drive) that doesn't support DMA will be left with a system
+without a working CD drive, even after removing the RPM.  And without
+ever knowing what struck them.  You can't remove the DMA setting from
+modules.conf either unless you're sure that ogle added it there and
+nothing else needs it.
+
+The /dev stuff isn't that dangerous, but the modules.conf change can
+be.  That's why "Eek" :)
+
+> If someone installs ogle (a DVD player), I'm assuming the hardware is
+> recent enough for software playback and that the drive is a DVD-ROM... all
+> of them support DMA! But since that change requires a reboot or a manual
+> change, I'm still hesitating to integrate it :-/
+
+A worthy goal...
+
+> My goal is to allow users to install a DVD player through synaptic and play
+> DVDs in no time. Outputting a message in the %post section of a package is
+> always a bad idea, putting the tip in the %description sounds good though.
+
+How about splitting the creation of the symlinks and modules.conf
+modifications into a separate RPM?
+
+-- 
+\/ille Skyttä
+ville.skytta at iki.fi
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

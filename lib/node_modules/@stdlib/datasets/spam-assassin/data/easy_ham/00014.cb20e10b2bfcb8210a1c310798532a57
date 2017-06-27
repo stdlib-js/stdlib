@@ -1,0 +1,146 @@
+From exmh-workers-admin@redhat.com  Thu Aug 22 16:37:36 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 50AF343F9B
+	for <zzzz@localhost>; Thu, 22 Aug 2002 11:37:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 16:37:35 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MFZLZ12577 for
+    <zzzz-exmh@spamassassin.taint.org>; Thu, 22 Aug 2002 16:35:22 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 51F5140D92; Thu, 22 Aug 2002
+    11:35:26 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 6EED940E00
+    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 11:26:01 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7MFPwB25414 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002
+    11:25:58 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MFPwY25410 for
+    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 11:25:58 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:+BhY7EqRf5fwVT64o4aVh7UUHF1egIL+@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7MFBTl04916
+    for <exmh-workers@redhat.com>; Thu, 22 Aug 2002 11:11:29 -0400
+Received: (qmail 4141 invoked by uid 104); 22 Aug 2002 15:25:57 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4218. . Clean. Processed in 0.327895
+    secs); 22/08/2002 10:25:57
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 22 Aug 2002 15:25:56 -0000
+Received: (qmail 13189 invoked from network); 22 Aug 2002 15:25:53 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?AL1b20iTMIHwZbG9ZCdQYQG3nsIe5jbe?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 22 Aug 2002 15:25:53 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Robert Elz <kre@munnari.OZ.AU>, exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <1029944441.398.TMDA@deepeddy.vircio.com>
+References: <1029882468.3116.TMDA@deepeddy.vircio.com>
+    <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+    <1029944441.398.TMDA@deepeddy.vircio.com>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1317289252P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1030029953.13171.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1030461953.beb807@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 22 Aug 2002 10:25:52 -0500
+
+--==_Exmh_-1317289252P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Chris Garrigues <cwg-exmh@DeepEddy.Com>
+> Date:  Wed, 21 Aug 2002 10:40:39 -0500
+>
+> > From:  Chris Garrigues <cwg-exmh@DeepEddy.Com>
+> > Date:  Wed, 21 Aug 2002 10:17:45 -0500
+> >
+> > Ouch...I'll get right on it.
+> > 
+> > > From:  Robert Elz <kre@munnari.OZ.AU>
+> > > Date:  Wed, 21 Aug 2002 19:30:01 +0700
+> > >
+> > > Any chance of having that lengthen instead?   I like all my exmh stuff
+> > > in nice columns (fits the display better).   That is, I use the detache
+> d
+> > > folder list, one column.   The main exmh window takes up full screen,
+> > > top to bottom, but less than half the width, etc...
+> 
+> I thought about that.  The first order approximation would be to just add 
+> using pack .... -side top instead of pack ... -side left, however, since their 
+> each a different width, it would look funny.
+
+I've done this.  It's not as pretty as I think it should be, but it works.  
+I'm going to leave the cosmetic issues to others.  When I update the 
+documentation, I'll add this to the exmh.TODO file.
+
+I'm leaving for a 2 1/2 week vacation in a week, so this is the last new 
+functionality I'm going to add for a while.  Also, I now have pretty much 
+everything in there that I want for my own use, so I'm probably pretty much 
+done.  I'll work on bug fixes and documentation before my vacation, and 
+hopefully do nothing more afterwards.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-1317289252P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9ZQJ/K9b4h5R0IUIRAiPuAJwL4mUus5whLNQZC8MsDlGpEdKNrACcDfZH
+PcGgN9frLIM+C5Z3vagi2wE=
+=qJoJ
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1317289252P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

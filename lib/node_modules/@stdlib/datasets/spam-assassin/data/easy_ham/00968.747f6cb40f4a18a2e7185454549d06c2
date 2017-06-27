@@ -1,0 +1,139 @@
+From exmh-workers-admin@redhat.com  Thu Aug 29 15:08:59 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F232943F9B
+	for <jm@localhost>; Thu, 29 Aug 2002 10:08:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 15:08:59 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TE9WZ15540 for
+    <jm-exmh@jmason.org>; Thu, 29 Aug 2002 15:09:33 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id ACF243F73D; Thu, 29 Aug 2002
+    10:05:13 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4778B41322
+    for <exmh-workers@listman.redhat.com>; Thu, 29 Aug 2002 10:00:18 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7TE0Er28625 for exmh-workers@listman.redhat.com; Thu, 29 Aug 2002
+    10:00:14 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7TE0EY28615 for
+    <exmh-workers@redhat.com>; Thu, 29 Aug 2002 10:00:14 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:Qpq4/2TE3JD70VQFZ7eZ5JUVHIE5ZEvc@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7TDj2l17516
+    for <exmh-workers@redhat.com>; Thu, 29 Aug 2002 09:45:02 -0400
+Received: (qmail 24745 invoked by uid 104); 29 Aug 2002 14:00:13 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4220. . Clean. Processed in 0.32626
+    secs); 29/08/2002 09:00:13
+Received: from deepeddy.vircio.com ([10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 29 Aug 2002 14:00:13 -0000
+Received: (qmail 14267 invoked from network); 29 Aug 2002 14:00:10 -0000
+Received: from localhost (HELO deepeddy.vircio.com) ([127.0.0.1])
+    (envelope-sender <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03)
+    with SMTP for <exmh-workers@redhat.com>; 29 Aug 2002 14:00:10 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Brent Welch <welch@panasas.com>
+Cc: Robert Elz <kre@munnari.OZ.AU>, exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <200208290540.BAA23712@blackcomb.panasas.com>
+References: <1030562749.28110.TMDA@deepeddy.vircio.com>
+    <200208290540.BAA23712@blackcomb.panasas.com>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_948625160P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1030629610.14240.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1031061610.7c4931@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 29 Aug 2002 09:00:08 -0500
+
+--==_Exmh_948625160P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Brent Welch <welch@panasas.com>
+> Date:  Wed, 28 Aug 2002 22:40:21 -0700
+>
+> Well, I've used the check-the-modify-time cache trick for files in
+> many places (not just exmh) so some part of me certainly thinks it
+> is effective.  However, it occurred to me that if we do checkpoint
+> state, then aren't we modifying the sequences file for the current
+> folder on every message read?  Perhaps we look at the sequences file
+> more than once per message view?  
+
+As I'd written the code a few months ago, we were reading the sequences file 
+first to see what sequences were in it and then once per sequence.  This 
+happens anywhere that we look at sequences, most notably in Ftoc_ShowSequences.
+That seemed to be an obvious lose performancewise, but I wanted my abstraction to 
+have a separate call for "what sequences are in this folder?" and "what 
+messages are in this sequence?".  One option would have been to add another 
+call to get the data off of disk, but I felt that the check-the-modify-time 
+technique would be less error-prone.
+
+I think the biggest gains would be from augmenting Ftoc_ShowSequences to allow 
+a finer specification of what needs to be updated in the ftoc so that the 
+current code would only be run when we really do have to update all sequences 
+for all messages.  I described these thoughts in an email message yesterday.
+
+And again, if it can wait a few weeks, I'm willing to do it.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_948625160P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9bijoK9b4h5R0IUIRApBEAJ9XB23cpckpVw7zWH/Uk1cG6rMCmQCfcNN9
+6I86NmGOWTSr1zajO3HHPnA=
+=sApX
+-----END PGP SIGNATURE-----
+
+--==_Exmh_948625160P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

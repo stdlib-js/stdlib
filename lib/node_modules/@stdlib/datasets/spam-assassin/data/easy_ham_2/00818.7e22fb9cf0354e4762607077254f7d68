@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Wed Jul 24 03:01:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 824CE440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 22:01:38 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 03:01:38 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O1wU411022 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 02:58:33 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2A8CB294109; Tue, 23 Jul 2002 18:42:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (cpe-65-172-233-109.sanbrunocable.com
+    [65.172.233.109]) by xent.com (Postfix) with ESMTP id 8FCD42940E4 for
+    <fork@xent.com>; Tue, 23 Jul 2002 18:41:50 -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Wed, 24 Jul 2002 01:50:53 -08:00
+Message-Id: <3D3E07FD.9040406@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Rose Garden Funeral of Sores
+User-Agent: Mutt/1.5.0 [-1214711651]
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Rohit Khare <khare@alumni.caltech.edu>
+Cc: fork@spamassassin.taint.org, Kragen Sitaker <kragen@pobox.com>
+Subject: Re: HD/ID: High-Def Independence Day
+References: <F568C0CD-9E71-11D6-B583-000393A46DEA@alumni.caltech.edu>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 18:50:53 -0700
+
+Rohit Khare wrote:
+> Yes, on a mailing list awash in crap -- and some it is even unsolicited 
+> commercial email, heavens! -- our trusty mailman filters captured and 
+> quarantined just two posts that week, one from me that was > 100K (the 
+> fat articles) and one that was bcc:d (the invite).
+
+Wait... I didn't think we had any filters set up on FoRK.
+Kragen, do you know of any?
+
+I personally have FoRK delivered to an address (napier%waste.org)
+that has SpamAssassin enabled, agressively, where it just nukes
+anything it thinks is spam. Usually I figure if I miss a FoRK post,
+no big deal, I'll pick it up by the replies if it's interesting.
+
+For personal mail (joe%barrera.org) I either don't use SpamAssassin,
+or use it but where it just flags messages instead of nuking them.
+So if someone is sending a message just to me, I'll get it even
+if it looks like spam.
+
+So in other words, Rohit, if you had sent to joe%barrera.org, I
+guess I would have received it in a timely fashion.
+
+So where's all that booze? When's the retry?
+Every robust protocol needs a retry strategy --
+what's yours?
+
+- Joe the Angry <Drunken booze="scotch">Dwarf</Drunken>
+
+P.S. Ain't no dwarf.
+
+
+http://xent.com/mailman/listinfo/fork
+
+

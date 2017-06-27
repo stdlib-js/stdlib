@@ -1,0 +1,80 @@
+From spambayes-bounces@python.org  Tue Nov 26 19:06:07 2002
+Return-Path: <spambayes-bounces@python.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2063416F7C
+	for <jm@localhost>; Tue, 26 Nov 2002 19:00:18 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 26 Nov 2002 19:00:18 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAQGIBW11003 for
+    <jm@jmason.org>; Tue, 26 Nov 2002 16:18:11 GMT
+Received: from mail.python.org (mail.python.org [12.155.117.29]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id QAA06952 for <jm@jmason.org>;
+    Tue, 26 Nov 2002 16:19:40 GMT
+Received: from localhost.localdomain ([127.0.0.1] helo=mail.python.org) by
+    mail.python.org with esmtp (Exim 4.05) id 18GiQu-0005cv-00; Tue,
+    26 Nov 2002 11:19:32 -0500
+Received: from woozle.org ([216.231.62.189] ident=postfix) by
+    mail.python.org with esmtp (Exim 4.05) id 18GiQr-0005b0-00 for
+    spambayes@python.org; Tue, 26 Nov 2002 11:19:30 -0500
+Received: by woozle.org (Postfix, from userid 5000) id A597E1A18A;
+    Tue, 26 Nov 2002 08:19:23 -0800 (PST)
+To: "Mark Hammond" <mhammond@skippinet.com.au>
+Subject: Re: [Spambayes] Guidance re pickles versus DB for Outlook
+References: <LCEPIIGDJPKCOIHOBJEPAEIIHOAA.mhammond@skippinet.com.au>
+Organization: WoozleWorks (woozle.org)
+X-Face: "&g4:h\nuA>dfRaRmJ5c+Mqvu!,|5@dd>:BqJ,#G:mT3`i-EF{L>6oE?di}m\;
+    Wil(?AS(@9j"G@o-UR8(BU$)u.%I;*K9%4Vj.fO$W9-bjxPgl%|#{^W@e#1/jZ@,G:>&;
+    JzJrBqMqomx3Z#Hg.``g5v%R[+PzjYtAa&l@EtK{R<;.,gV`5$8Go1OJB=L`R(<)U$M4YK-t;
+    a}oA1y([AV@r$%?AJW[:_|_*r44[Gl{3@:Ff6U9XFOJxp%lZWI-d0-1l5+6aMAOAT+Ac%q@E3t|:2;
+    lpSwi=1"gf7g{Bz+U2MI
+X-Thought: Yes, you still make me nervous.  Relax.
+X-Thought-Attribution: Charlotte Costa
+X-PGP-Key-Fingerprint: A862 F105 13EF 7FAF 4F08  78B4 9168 856B 48BF F157
+X-Callsign: KD7OQI
+From: Neale Pickett <neale@woozle.org>
+Date: 26 Nov 2002 08:19:23 -0800
+In-Reply-To: <LCEPIIGDJPKCOIHOBJEPAEIIHOAA.mhammond@skippinet.com.au>
+Message-Id: <w538yzg9ud0.fsf@woozle.org>
+User-Agent: Gnus/5.09 (Gnus v5.9.0) Emacs/21.2
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Cc: Spambayes <spambayes@python.org>
+X-Beenthere: spambayes@python.org
+X-Mailman-Version: 2.1b5
+Precedence: list
+List-Id: Discussion list for Pythonic Bayesian classifier <spambayes.python.org>
+List-Help: <mailto:spambayes-request@python.org?subject=help>
+List-Post: <mailto:spambayes@python.org>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=subscribe>
+List-Archive: <http://mail.python.org/pipermail/spambayes>
+List-Unsubscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=unsubscribe>
+Sender: spambayes-bounces@python.org
+Errors-To: spambayes-bounces@python.org
+
+So then, "Mark Hammond" <mhammond@skippinet.com.au> is all like:
+
+> So, given that, ZODB is sounding attractive.  I would package it up, so a
+> few hundred extra K is probably no big deal.  The code could fall back to
+> the slow-loading pickles, so people running from source still work, just
+> possibly not as well.
+
+I haven't used ZODB much really but it sure looks like the Right Way.  I
+don't think it will fly with the unwashed Unix masses, but it sounds
+like a piece of cake with the Windows crowd.  That makes sense; you only
+have one OS vendor and one processor family to support.
+
+I'm going to go sulk in /dev/corner now.
+
+Neale
+
+_______________________________________________
+Spambayes mailing list
+Spambayes@python.org
+http://mail.python.org/mailman/listinfo/spambayes
+
+

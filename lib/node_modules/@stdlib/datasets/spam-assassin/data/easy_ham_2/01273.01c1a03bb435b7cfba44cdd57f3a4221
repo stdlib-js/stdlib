@@ -1,0 +1,160 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 16:58:52 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 40F1843C32
+	for <jm@localhost>; Wed, 21 Aug 2002 11:58:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:58:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LFuHZ32418 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 16:56:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hXp1-00071m-00; Wed,
+    21 Aug 2002 08:55:03 -0700
+Received: from [212.2.178.26] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hXo1-0002Dt-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 08:54:04 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7LFrdp06540 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 16:53:39 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    1C54E43C32; Wed, 21 Aug 2002 11:51:06 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0817E33D87 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 16:51:06 +0100
+    (IST)
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] need to restart mass-checks (was: Re: 2.40 release procedure)
+In-Reply-To: Message from Bart Schaefer <schaefer@zanshin.com> of
+    "Wed, 21 Aug 2002 08:16:48 PDT."
+    <Pine.LNX.4.44.0208210815190.12231-100000@aztec.zanshin.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020821155106.1C54E43C32@phobos.labs.netnoteinc.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 16:51:00 +0100
+Date: Wed, 21 Aug 2002 16:51:00 +0100
+
+
+Bart Schaefer said:
+
+> Just FYI, spamassassin_pre_2_4_0b appears to be the head revision, and is 
+> not the same as the tip of the b2_4_0 branch.
+
+oops.  OK, now fixed; I've updated b2_4_0 to match what I wanted,
+accordingly.  As a result, mass-checks do *NOT* need to be restarted as
+the code and rules are the same as they were on HEAD.
+
+cvs tag spamassassin_pre_2_4_0b
+
+So, in full, here's the changes that are in spamassassin_pre_2_4_0b that
+were not there before the branch:
+
+  - rules fixed: HTTP_ESCAPED_HOST, HTTP_CTRL_CHARS_HOST.  they were too
+    lax and caused FPs
+
+  - Matt's faster HTML parser
+
+  - commented rules un-commented again
+
+  - a doco fix for spamd
+
+
+and, for completeness, the relevant changes since Saturday:
+
+  - the INSTALL file ;)
+
+  - CALL_NOW now starts on a word boundary
+
+  - Added examples to -R docs
+  
+  - Added Habeas HIL lookup
+
+  - bug 385: spamcheck.py should handle 4xx errors -- full mailboxes etc.
+    -- with EX_TEMPFAIL. patch from ckd-spamassassin@ckdhr.com
+    (Christopher Davis) applied.
+
+  -  made spamcheck.py use exit code 75 if it cannot connect to spamd,
+     fixes bug 655
+
+  - spamd/spamd.raw: fixed bug 704: spamd was not able to unlink pid file
+    with -u arg
+
+  - Makefile.PL: installing to random dirs now works fine
+
+  - move MAILER_DAEMON into 70_cvs_rules_under_test.cf since it has been
+    improved remove extraneous mass-check line for DATE_YEAR_ZERO_FIRST
+
+  - spamassassin.raw: merged -Z with -D
+
+  - removed eff.org from whitelists, as per Marc's request
+
+  - mass-check: added versioning and date to mass-check output
+
+  - bug 658: ok_locales set to 'en' by default. changed to 'all', users
+    will have to customise for themselves.   Made many tests which trigger
+    FPs on mail in ISO-2022-JP charsets, meta rules depending on
+    __ISO_2022_JP_DELIM.
+
+  - fixed phrase-freq code for vastly better performance
+
+  - rules/50_scores.cf: changed LISTBUILDER score back to -5.0
+
+  - lib/Mail/SpamAssassin/HTML.pm: catch background images in uri code
+    catch additional types of web bugs
+
+  - rules/20_body_tests.cf: change CASHCASHCASH to meta rule to avoid
+    Japanese false matches, revise spam phrases descriptions to be clearer
+    (since a few are now basically compensation tests (please don't move
+    them to the compensation file))
+
+  - fixed bug in MIME_SUSPECT_NAME: text/plan attachments called foo.html
+    were triggering.
+
+  - revise HTML comment tests to use HTML parser
+
+  - revise MAILER_DAEMON rule (get rid of some spam matches without losing
+    any nonspam matches)
+
+  - raise some negative scores that are way too low
+
+  - remove "Friend" from DEAR_SOMETHING since it overlaps with DEAR_FRIEND
+    and can match "dear friend" in middle of sentence too much
+
+  - require "Dear Friend" to start the paragraph
+
+  - add new HTML tests for font colors and faces, reduce number of
+    different eval functions needed for HTML tests
+
+--j.
+
+-- 
+'Justin Mason' => { url => http://jmason.org/ , blog => http://taint.org/ }
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

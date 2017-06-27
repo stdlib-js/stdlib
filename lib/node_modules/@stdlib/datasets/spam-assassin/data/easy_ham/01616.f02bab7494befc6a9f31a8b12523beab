@@ -1,0 +1,82 @@
+From razor-users-admin@lists.sourceforge.net  Wed Oct  9 18:17:52 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2EC8E16F16
+	for <jm@localhost>; Wed,  9 Oct 2002 18:17:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 18:17:52 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g99FUXK08812 for <jm-razor@jmason.org>; Wed, 9 Oct 2002 16:30:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17zIlp-0002b9-00; Wed,
+    09 Oct 2002 08:29:09 -0700
+Received: from [207.106.111.252] (helo=digby.pffcu.org) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17zIlS-00088A-00 for <razor-users@lists.sourceforge.net>; Wed,
+    09 Oct 2002 08:28:46 -0700
+Received: from tasker.pffcu.org ([200.1.1.57]) by digby.pffcu.org with
+    SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13) id
+    4GL6DP4L; Wed, 9 Oct 2002 11:28:46 -0400
+Received: from localhost (sc@localhost) by tasker.pffcu.org
+    (8.11.4/8.11.4) with ESMTP id g99FRdI04483; Wed, 9 Oct 2002 11:27:39 -0400
+X-Authentication-Warning: tasker.pffcu.org: sc owned process doing -bs
+From: Samuel Checker <sc@pffcu.org>
+To: Brian Fahrlander <kilroy@kamakiriad.com>
+Cc: <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] Razor and Pine
+In-Reply-To: <20021009101127.7bc322fa.kilroy@kamakiriad.com>
+Message-Id: <Pine.LNX.4.33.0210091125530.4480-100000@tasker.pffcu.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 9 Oct 2002 11:27:39 -0400 (EDT)
+Date: Wed, 9 Oct 2002 11:27:39 -0400 (EDT)
+
+On Wed, 9 Oct 2002, Brian Fahrlander wrote:
+
+> On Wed, 9 Oct 2002 09:15:03 -0400 (EDT), Samuel Checker <sc@pffcu.org> wrote:
+>
+> > I've been testing Razor, invoked from sendmail/procmail and so far it
+> > seems pretty copacetic. Last night's spam to the list provided a good test
+> > - the spam itself as well as several of the responses were flagged, as
+> > other list members reported.
+> >
+>
+>     Are you using Spamassassin on the input side?  I've just changed my sendmail installation and am looking for the 'proper' way to pass it through there, systemwide, before accepting it and sending it to the users.  It's kinda problematic to set up procmail scripts for every user, when the user's home directories are NFS mounted....and the source is on my own machine, on which I try new things. (And it's the only machine with the drivespace...)
+>
+
+I've not used Spamassassin on the KISS principle. I just have procmail
+adding an X-header and optionally modifying the Subject if razor-check
+comes back positive.
+
+-- 
+sc
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

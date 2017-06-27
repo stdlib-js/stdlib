@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Wed Jul 24 13:38:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E7DFC440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 08:38:53 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 13:38:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OCcm412837 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 13:38:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 06F21294140; Wed, 24 Jul 2002 05:28:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (h00045acfa2be.ne.client2.attbi.com
+    [65.96.178.138]) by xent.com (Postfix) with ESMTP id 753CF29413F for
+    <fork@xent.com>; Wed, 24 Jul 2002 05:27:58 -0700 (PDT)
+Received: (from louie@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g6OCaaH01741; Wed, 24 Jul 2002 08:36:36 -0400
+X-Authentication-Warning: localhost.localdomain: louie set sender to
+    louie@ximian.com using -f
+Subject: Re: HD/ID: High-Def Independence Day
+From: Luis Villa <louie@ximian.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <20020724110914.179C6440CC@phobos.labs.netnoteinc.com>
+References: <20020724110914.179C6440CC@phobos.labs.netnoteinc.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8.99
+Message-Id: <1027514196.1653.12.camel@localhost.localdomain>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 08:36:36 -0400
+
+On Wed, 2002-07-24 at 07:09, Justin Mason wrote:
+> 
+> "Gordon Mohr" said:
+> 
+> > I still think self-add whitelists are underrated. 
+> > A FoRK whitelist would presumably start with
+> > all subscribers, and grow from there. Bouncing
+> > problem mail, in a way that humans can understand
+> > how to whitelist themselves for a resend, avoids 
+> > the problem of silent failures without opening the 
+> > door to lazy, forged-"from" spammers. 
+> 
+> Big problem I see with this system, is the
+> automatically-generated-but-important mails like online tickets,
+> bills, etc.
+
+Besides lists, this is the reason I can't use such a system. I get more
+than a few mails from 'dont-respond-to-this-address@' password reminder
+generators, for example. SpamAssassin does flag a few of those as spam,
+but at least I've still got them.
+
+Luis
+http://xent.com/mailman/listinfo/fork
+
+

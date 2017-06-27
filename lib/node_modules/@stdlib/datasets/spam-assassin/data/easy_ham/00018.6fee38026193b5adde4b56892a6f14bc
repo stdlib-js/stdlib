@@ -1,0 +1,75 @@
+From ilug-admin@linux.ie  Thu Aug 22 17:19:31 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6622747C69
+	for <zzzz@localhost>; Thu, 22 Aug 2002 12:19:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 17:19:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MGJoZ14241 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 17:19:50 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA09942; Thu, 22 Aug 2002 17:18:58 +0100
+Received: from smtpstore.strencom.net (ns1.strencom.net [217.75.0.66]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA09917 for <ilug@linux.ie>;
+    Thu, 22 Aug 2002 17:18:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host ns1.strencom.net
+    [217.75.0.66] claimed to be smtpstore.strencom.net
+Received: from enterprise.wasptech.com (mail.wasptech.com [217.75.2.106])
+    by smtpstore.strencom.net (Postfix) with ESMTP id 8C105CEE88;
+    Thu, 22 Aug 2002 16:31:15 +0000 (AZOST)
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: RE: [ILUG] Sun Solaris..
+Date: Thu, 22 Aug 2002 17:13:01 +0100
+Message-Id: <45130FBE2F203649A4BABDB848A9C9D00E9C8A@enterprise.wasptech.com>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [ILUG] Sun Solaris..
+Thread-Index: AcJJ9p29v19nVAypRv25aSssWGeNQAAABtrw
+From: "Fergal Moran" <fergal.moran@wasptech.com>
+To: "Kiall Mac Innes" <kiall@redpie.com>, "ILUG" <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    RAA09917
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+In a nutshell - Solaris is Suns own flavour of UNIX.
+
+> -----Original Message-----
+> From: Kiall Mac Innes [mailto:kiall@redpie.com] 
+> Sent: 22 August 2002 17:23
+> To: ILUG
+> Subject: [ILUG] Sun Solaris..
+> 
+> 
+> Can someone explain what type of operating system Solaris 
+> is... as ive never seen or used it i dont know wheather to 
+> get a server from Sun or from DELL i would prefer a linux 
+> based server and Sun seems to be the one for that but im not 
+> sure if Solaris is a distro of linux or a completely 
+> different operating system? can someone explain...
+> 
+> Kiall Mac Innes
+> 
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie 
+> http://www.linux.ie/mailman/listinfo/ilug for 
+> (un)subscription information. List maintainer: listmaster@linux.ie
+> 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

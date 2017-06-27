@@ -1,0 +1,101 @@
+From spamassassin-sightings-admin@lists.sourceforge.net  Wed Jul 17 17:24:52 2002
+Return-Path: <spamassassin-sightings-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AC94043F90
+	for <jm@localhost>; Wed, 17 Jul 2002 12:24:51 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 17 Jul 2002 17:24:51 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6HGN6J04456 for <jm-sa-sightings@jmason.org>; Wed, 17 Jul 2002 17:23:07
+    +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17UrZy-0006LX-00; Wed,
+    17 Jul 2002 09:23:06 -0700
+Received: from itchy.serv.net ([205.153.154.199]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17UrZR-0000z6-00 for <spamassassin-sightings@lists.sourceforge.net>;
+    Wed, 17 Jul 2002 09:22:34 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    JAA43022 for spamassassin-sightings@lists.sf.net; Wed, 17 Jul 2002
+    09:18:30 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id XAA87940 for <llyra@itchy.serv.net>;
+    Fri, 12 Jul 2002 23:42:49 -0700 (PDT)
+Received: from drizzle.com (IDENT:root@cascadia.drizzle.com
+    [216.162.192.17]) by mx.serv.net (8.9.3/8.9.1) with ESMTP id XAA04105 for
+    <filtered@llyra.com>; Fri, 12 Jul 2002 23:46:44 -0700 (PDT)
+Received: from drizzle.com (IDENT:harmony@localhost [127.0.0.1]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6D6kj5C001434 for
+    <filtered@llyra.com>; Fri, 12 Jul 2002 23:46:45 -0700
+Received: (from harmony@localhost) by drizzle.com (8.12.3/8.12.3/Submit)
+    id g6D6kiud001433 for filtered@llyra.com; Fri, 12 Jul 2002 23:46:44 -0700
+Received: from itchy.serv.net (itchy.serv.net [205.153.154.199]) by
+    drizzle.com (8.12.3/8.12.3) with ESMTP id g6D6kg5C001416 for
+    <harmony@drizzle.com>; Fri, 12 Jul 2002 23:46:42 -0700
+Received: (from llyra@localhost) by itchy.serv.net (8.9.3/8.9.3) id
+    XAA87936 for harmony@drizzle.com; Fri, 12 Jul 2002 23:42:45 -0700 (PDT)
+Received: from mx.serv.net (mx [205.153.154.205]) by itchy.serv.net
+    (8.9.3/8.9.3) with ESMTP id XAA87932 for <llyra@itchy.serv.net>;
+    Fri, 12 Jul 2002 23:42:39 -0700 (PDT)
+Received: from noc.app-net.com (www@[207.68.69.2]) by mx.serv.net
+    (8.9.3/8.9.1) with ESMTP id XAA04092 for <llyra@sadmule.com>;
+    Fri, 12 Jul 2002 23:46:34 -0700 (PDT)
+Received: by noc.app-net.com (8.9.0/8.9.0) id DAA17258; Sat,
+    13 Jul 2002 03:46:17 -0400 (EDT)
+Message-Id: <200207130746.DAA17258@noc.app-net.com>
+To: llyons@meridian-data.com, llyons@ragingbull.com,
+	llyons_2004@yahoo.com, llyoung@sprynet.com, llyovaly@aol.com,
+	llyq49a@prodigy.com, llyr35a@prodigy.com, llyr@etrademail.com,
+	llyr@ragingbull.com, llyra@etrademail.com, llyra@ragingbull.com,
+	llyra@sadmule.com
+From: SafeInvestments@NiceReturns12.com ()
+Subject: [SA] High Returns, Safe Investment! 20% Monthly!
+Sender: spamassassin-sightings-admin@example.sourceforge.net
+Errors-To: spamassassin-sightings-admin@example.sourceforge.net
+X-Beenthere: spamassassin-sightings@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-sightings-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-sightings@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-sightings.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-sightings>,
+    <mailto:spamassassin-sightings-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-sightings>
+X-Original-Date: Sat, 13 Jul 2002 03:46:17 -0400 (EDT)
+Date: Sat, 13 Jul 2002 03:46:17 -0400 (EDT)
+
+Below is the result of your feedback form.  It was submitted by
+ (SafeInvestments@NiceReturns12.com) on Saturday, July 13, 2002 at 03:46:17
+---------------------------------------------------------------------------
+
+Looking for a high return on your money?: .
+
+10%-20% Monthly Return On Your Secure Investment : .
+
+ Audited From Multiple Agencies : .
+
+Start with as little as $500 dollars and start earning returns monthly!: .
+
+For Complete Details Email: MarylandClub@mol.mn : .
+
+To be removed email: RemoveFromList@Inbox.lv : .
+
+---------------------------------------------------------------------------
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

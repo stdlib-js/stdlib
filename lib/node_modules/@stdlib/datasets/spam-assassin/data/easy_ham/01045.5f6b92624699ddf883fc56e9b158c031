@@ -1,0 +1,218 @@
+From rpm-list-admin@freshrpms.net  Thu Aug 29 11:03:42 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 87D8943F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:03:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:03:34 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7T9uqZ07335 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 10:56:52 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7T9s2J15334; Thu, 29 Aug 2002 11:54:02
+    +0200
+Received: from smtp-send.myrealbox.com (smtp-send.myrealbox.com
+    [192.108.102.143]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7T9rkJ15284 for <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 11:53:46 +0200
+Received: from myrealbox.com danielpavel@smtp-send.myrealbox.com
+    [194.102.210.216] by smtp-send.myrealbox.com with NetMail SMTP Agent
+    $Revision:   3.11  $ on Novell NetWare via secured & encrypted transport
+    (TLS); Thu, 29 Aug 2002 03:53:42 -0600
+Message-Id: <3D6DED60.7070107@myrealbox.com>
+From: Daniel Pavel <danielpavel@myrealbox.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: ALSA (almost) made easy
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030567737.10901.9.camel@bobcat.ods.org>
+    <1030568564.10902.22.camel@bobcat.ods.org>
+    <20020829000606.5906404a.matthias@egwn.net>
+    <1030574318.1651.30.camel@bobcat.ods.org>
+    <20020829005025.160073af.matthias@egwn.net>
+Content-Type: multipart/mixed; boundary="------------090303060407010605030507"
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 29 Aug 2002 12:46:08 +0300
+Date: Thu, 29 Aug 2002 12:46:08 +0300
+
+This is a multi-part message in MIME format.
+--------------090303060407010605030507
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Matthias Saou wrote:
+ > I guess/hope some other people from the list will try it out ;-)
+ >
+ > Both problems you reported (libasound.so and wrong xine dependency) are now
+ > fixed in the current packages.
+ >
+ > Oh, it's maybe also worth pointing out : I've implemented at last sorting
+ > by both last change date and alphabetically for my "build list" in the php
+ > code : http://freshrpms.net/builds/
+ >
+ > And yes, I accept patches/comments/suggestions about all those spec files!
+
+Sure thing :)
+
+I've added to the spec some flags to remove OSS and ISA-PNP support at
+build time if one wishes to, so is's possible to do a
+
+	rpmbuild --recompile <rpm> --without oss --without isapnp
+
+(I haven't included OSS in my 2.4.19, because VT82433 on my motherboard
+is not supported :( yet, and I'm too lazy to recompile the kernel :)).
+
+Also, having the kernel compiled by me, I have no kernel-source package
+installed.  I've added a flag "kernsrc", that also can be used
+--without, to remove the dependency for kernel-source at build time.  It
+would be nice to check the correct kernel include files actually exist
+(/lib/modules/`uname -r`/build/include/linux/*.h), though; however, I'm
+a beginner in RPM building -- is it possible to BuildRequire for a file
+not provided by a package at all?  I've googled a bit, and found no way
+to do that.
+
+I was also considering adding some sort of flag for the --with-cards
+option in alsa's ./configure, but don't know how to do that.  Only found
+out about --without from your first alsa-driver.spec, and existing RPM docs 
+don't help much.
+
+
+Oh, and one more thing :).  At first I've installed the first version of
+alsa-driver for 2.4.18-10, although I don't have that kernel, to supply
+the dependency for the rest of the alsa rpm's, and compiled the modules
+from source.  It created the /dev files and all.
+
+Then wanted to make my own rpm for 2.4.19, so now I'm trying to rpmbuild
+the alsa-kernel package.  Removed all alsa rpms, and tried my spec:
+
+rpmbuild --ba alsa-driver.spec.mine --without oss --without isapnp
+--without kernsrc
+
+But I get this:
+
+==[long successful compile snipped]=====================================
+warning: File listed twice: /dev/adsp
+warning: File listed twice: /dev/amidi
+Finding  Provides: /usr/lib/rpm/find-provides
+Finding  Requires: /usr/lib/rpm/find-requires
+PreReq: /bin/sh /bin/sh rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+Requires(interp): /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+Requires(post): /bin/sh
+Requires(postun): /bin/sh
+Requires: alsa-kernel = 0.9.0rc3 /sbin/depmod
+Processing files: alsa-kernel-0.9.0rc3-fr4_2.4.19
+Finding  Provides: /usr/lib/rpm/find-provides
+Finding  Requires: /usr/lib/rpm/find-requires
+PreReq: rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+Requires(rpmlib): rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+Requires: alsa-driver = 0.9.0rc3 kernel = 2.4.19
+Checking for unpackaged file(s): /usr/lib/rpm/check-files
+/var/tmp/alsa-driver-0.9.0rc3-root
+error: Installed (but unpackaged) file(s) found:
+     /etc/makedev.d/00macros
+     /etc/rc.d/init.d/alsasound
+
+
+RPM build errors:
+      File listed twice: /dev/adsp
+      File listed twice: /dev/amidi
+      Installed (but unpackaged) file(s) found:
+     /etc/makedev.d/00macros
+     /etc/rc.d/init.d/alsasound
+========================================================================
+
+Like I said, I'm a beginned with RPM building, so I don't understand
+much of what's going on here.  The 00macros file is from the MAKEDEV
+rpm, and alsasound was supposed to be installed by alsa-driver, I think.
+   It is not in the filesystem, anyway.
+
+I've looked in /var/tmp/alsa-driver-0.9.0rc3-root, they are there in
+etc.  For 00macros I think the part that does it is this line
+in alsa-driver.spec:
+
+cp -a %{_sysconfdir}/makedev.d/00macros /{buildroot}%{_sysconfdir}/makedev.d/
+
+And alsasound is installed by %{BUILDIDR}/Makefile.
+
+
+Oh, and I think I've forgot to mention, I'm running beta-null :).
+
+ > Matthias
+
+-silent
+
+-- 
+... And on the seventh day, God was arrested for tresspassing.
+
+
+--------------090303060407010605030507
+Content-Type: text/plain;
+ name="alsa-driver.spec.patch"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="alsa-driver.spec.patch"
+
+6a7,17
+>
+> %define withoss               yes
+> %{?_without_oss:%define withoss no}
+>
+> %define withisapnp    auto
+> %{?_without_isapnp:%define withisapnp no}
+>
+> %define kernsrc       1
+> %{?_without_kernsrc:%define kernsrc 0}
+>
+>
+20a32
+> %if %{kernsrc}
+21a34,36
+> %else
+> BuildRequires: MAKEDEV
+> %endif
+64c79
+< %configure
+---
+> %configure --with-oss=%{withoss} --with-isapnp=%{withisapnp}
+119a135,137
+> * Thu Aug 29 2002 Daniel Pavel <danielpavel@myrealbox.com>
+> - Added OSS and ISA-PNP build-time flags.
+> - Added kernel-source requirement flag.
+
+
+--------------090303060407010605030507--
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

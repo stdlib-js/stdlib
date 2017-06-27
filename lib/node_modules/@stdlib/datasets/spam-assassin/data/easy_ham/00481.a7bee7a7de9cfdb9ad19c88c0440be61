@@ -1,0 +1,85 @@
+From fork-admin@xent.com  Sat Sep  7 21:52:47 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 71A1E16F19
+	for <jm@localhost>; Sat,  7 Sep 2002 21:52:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 07 Sep 2002 21:52:21 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86LG7C24176 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 22:16:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B80DC29417A; Fri,  6 Sep 2002 14:13:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id AA50F29409E for <FoRK@xent.com>;
+    Fri,  6 Sep 2002 14:12:33 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g86Kugq11953 for
+    <FoRK@xent.com>; Fri, 6 Sep 2002 13:56:43 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: Online contents of Electronic Publishing journal
+Message-Id: <AMEPKEBLDJJCCDEJHAMIAEHLFGAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 13:54:21 -0700
+
+I recently stumbled across the contents of the journal, "Electronic
+Publishing", which was published from January, 1988 through December, 1995.
+All papers are available online in PDF (this was apparently one of the first
+journals to disseminate in PDF, in 1994). The journal also reprints some of
+the better papers from the Electronic Publishing conferences, held bi-yearly
+from 1986-1992 (EP86, EP88, EP90, EP92).
+
+http://cajun.cs.nott.ac.uk/compsci/epo/papers/epoddtoc.html
+
+Today's reader might look at the contents and wonder about their relevance,
+since they don't directly discuss the Web. As an academic, I find this
+journal valuable, since the papers are of generally high quality (by top
+researchers), and they provide lots of pointers to the evolution of the
+ideas that led to many Web technologies.  It's one source among many for
+sifting through the intellectual lineage of electronic publishing
+technologies.
+
+Rohit and Adam might find the following papers especially relevant, in the
+context of their WWW7 "Evolution of Document Species" paper:
+
+Page Description Languages: Development, Implementation and Standardization:
+A. L. Oakley and A. C. Norris
+http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume1/issue2/epalo012.pdf
+
+Important papers in the history of document preparation systems: basic
+sources:
+Richard K. Furuta
+http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume5/issue1/ep057rf.pdf
+(Excellent overview of sources)
+
+Several of the authors of papers in this journal are now involved in the ACM
+Document Engineering conference series:
+http://www.documentengineering.org/
+
+- Jim
+
+
+

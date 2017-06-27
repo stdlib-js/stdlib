@@ -1,0 +1,134 @@
+From secprog-return-486-jm=jmason.org@securityfocus.com  Fri Sep  6 11:38:55 2002
+Return-Path: <secprog-return-486-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B316216F1F
+	for <jm@localhost>; Fri,  6 Sep 2002 11:37:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:37:39 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869vdC29831 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:57:39 +0100
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by webnote.net (8.9.3/8.9.3) with ESMTP id UAA17981 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 20:39:21 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    B2716A3138; Thu,  5 Sep 2002 10:51:17 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 15430 invoked from network); 5 Sep 2002 15:26:58 -0000
+From: bmord@icon-nicholson.com (Ben Mord)
+To: "Crispin Cowan" <crispin@wirex.com>
+Cc: "Webappsec Securityfocus.Com" <webappsec@securityfocus.com>,
+	"SECPROG Securityfocus" <SECPROG@securityfocus.com>
+Subject: RE: use of base image / delta image for automated recovery from
+    attacks
+Date: Thu, 5 Sep 2002 11:42:40 -0400
+Message-Id: <NAEOJLMPJMJDFPLHIOJOGEHBDBAA.bmord@icon-nicholson.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+In-Reply-To: <3D76977B.9010606@wirex.com>
+
+
+-----Original Message-----
+From: Crispin Cowan [mailto:crispin@wirex.com]
+Sent: Wednesday, September 04, 2002 7:30 PM
+To: Ben Mord
+Cc: Webappsec Securityfocus.Com; SECPROG Securityfocus
+Subject: Re: use of base image / delta image for automated recovery from
+attacks
+
+
+Ben Mord wrote:
+
+>>     -----Original Message-----
+>>     *From:* Crispin Cowan [mailto:crispin@wirex.com]
+>>     *Sent:* Wednesday, September 04, 2002 5:46 PM
+>>     *To:* Ben Mord
+>>     *Cc:* Webappsec Securityfocus.Com; SECPROG Securityfocus
+>>     *Subject:* Re: use of base image / delta image for automated
+>>     recovery from attacks
+>>
+>>     Ben Mord wrote:
+>>
+>> My proposed solution to the first two problems you mention is to be
+>> less ambitious. The idea is that you *never* commit - instead, you
+>> simply revert to base state on reboot.
+
+>Ah. In that case, you can use something considerably less powerful than
+>VMWare. All you need is a machine configured to boot from CD-ROM and use
+>a RAM disk for scratch space. Numerous Linux distros are available that
+>let you boot a stateless but functional system from CD-ROM.
+
+But RAM is expensive, and the directory structures of many systems (e.g.
+Windows) are not sufficiently organized and standardized to make this
+combination of bootable CDs and RAM drives practical. Even if you are
+fortunate enough to be using Linux (or another FHS-compliant *nix), you
+still can't fit a lot on a CD. Its not unusual today to have gigabytes of
+static multimedia content on the web server. This particular problem can be
+alleviated somewhat by using DVDs, but this is a temporary solution at best
+which will become outdated quickly as our data requirements grow and hard
+drives become cheaper.
+
+>> Obviously, you can't do this with partitions that accrue important
+>> state, e.g. a partition that stores database table data.
+
+>... but if you *do* want some state to persist, then you need a
+>mountable writable partition. To protect it, you need some kind of
+>access control management to decide who can do what to the writable
+>partition, blah blah blah ... and before you know it, the security
+>problem starts to look just like it does for conventional servers.
+
+Right. This is why you would consolidate all state of any long-term
+significance on just a couple partitions, and why you would not put static
+application code on these changeable partitions. Fortunately, most large
+client/server application physical architectures do this anyhow, because
+these are two fundamentally different kinds of state with two very different
+sets of administrative, security, RAID, and backup requirements. People also
+tend to do this anyhow because layered logical architectures are popular
+with the GUI at one end, business logic in the middle, and persistence
+services at the other. This logical architecture maps naturally to a
+physical architecture that has a static web server, a static application
+server, and a database server that has static and changeable partitions. (I
+use the word static versus changeable instead of writeable versus unwritable
+because the "unchangeable" partitions might be written to for temporary swap
+space. Who knows what Windows does internally?)
+
+My point is that there should be a market out there for a hardware RAID
+device that can split designated partitions into a permanent base image
+partition and a temporary delta image partition, that has some simple but
+solid security measures to prevent the unauthorized remote modification of
+base images, and that can be configured to clear the delta image when the
+server is rebooted. If some vendor wished to implement this, they could then
+market this as a mechanism to help frustrate broad classes of attack that
+rely on the permanent modification of system or application files via buffer
+overflows, platform and middleware bugs, etc. The prevention of unauthorized
+modification of application data, of course, would not be addressed by this
+particular product. But there are many other techniques out there to defend
+application data. But those techniques all assume that your system itself
+has not been compromised at a lower level, which is where this product could
+help.
+
+I would have to think that these features would be relatively easy for a
+hardware RAID vendor to implement. (I'm just guessing, of course, with no
+knowledge of how hardware RAID works internally.) If anyone knows of such a
+product, I'd love to hear about it.
+
+Ben
+
+

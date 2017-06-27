@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Fri Aug 16 15:16:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2EB6B43C34
+	for <jm@localhost>; Fri, 16 Aug 2002 10:16:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 15:16:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GEECa21470 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 15:14:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA32161; Fri, 16 Aug 2002 15:12:52 +0100
+Received: from mail.tradesignals.com ([217.75.2.27]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA32116 for <ilug@linux.ie>; Fri,
+    16 Aug 2002 15:12:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.75.2.27] claimed to
+    be mail.tradesignals.com
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g7GECXm23432; Fri, 16 Aug 2002 15:12:33 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.11.6/8.11.6) id g7GECXc00564; Fri,
+    16 Aug 2002 15:12:33 +0100
+Content-Type: text/plain; charset="iso-8859-15"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+To: "Ciaran Johnston" <cj@nologic.org>, <ilug@linux.ie>
+Subject: Re: [ILUG] Backup solutions
+Date: Fri, 16 Aug 2002 15:12:32 +0100
+X-Mailer: KMail [version 1.4]
+References: <6286.194.237.142.30.1029506959.squirrel@mail.nologic.org>
+In-Reply-To: <6286.194.237.142.30.1029506959.squirrel@mail.nologic.org>
+MIME-Version: 1.0
+Message-Id: <200208161512.32940.donncha.ocaoimh@tradesignals.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    PAA32116
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Use Amanda at http://www.amanda.org/
+
+Donncha.
+
+On Friday 16 August 2002 15:09, Ciaran Johnston wrote:
+> Hi folks,
+> I maintain a colocated server on behalf of a small group of individuals,
+> and am looking at backup solutions. Is it possible to get some sort of low-
+> end internal tape / other solution that could be used to back up approx. 40
+> Gigs of data or am I just dreaming? My ISP does offer backups at extra cost
+> but the only problem with that is, well, the extra cost.
+>
+> What I was hoping to do was to install some kind of internal tape device,
+> then swap tapes round every month, so I had an onsite backup of say the
+> last 24 hours and an offsite backup of the last month. Is this feasible?
+> I'm beginning to think it isn't. External devices are not an option as part
+> of the charge for colocation is rackspace.
+>
+> Thanks,
+> Ciaran.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

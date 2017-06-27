@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Wed Oct  2 11:48:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4E40D16F1B
+	for <jm@localhost>; Wed,  2 Oct 2002 11:47:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:47:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g923VAK23777 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 04:31:11 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 792772940FB; Tue,  1 Oct 2002 20:31:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id 3166629409C for <fork@xent.com>;
+    Tue,  1 Oct 2002 20:30:56 -0700 (PDT)
+Received: from Intellistation ([66.31.2.27]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20021002033102.BBXR17535.rwcrmhc51.attbi.com@Intellistation>;
+    Wed, 2 Oct 2002 03:31:02 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+To: Rohit Khare <khare@alumni.caltech.edu>, fork@spamassassin.taint.org
+Subject: Re: Optical analog computing?
+User-Agent: KMail/1.4.1
+References: <C4F9E8E9-D566-11D6-BA6C-000393A46DEA@alumni.caltech.edu>
+In-Reply-To: <C4F9E8E9-D566-11D6-BA6C-000393A46DEA@alumni.caltech.edu>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200210012330.47704.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 1 Oct 2002 23:30:47 -0400
+
+Uh, WWII Enigma was cracked at Bletchly Park, based on the work of some 
+Poles, who had been trying to figure out when they would be invaded.   
+Entirely mechanical!   Definitely not optical at all.    Enigma was 
+originally broken based on bad use practice.  If it had been employed more 
+sensibly it would have been a lot harder.
+
+See "The Code Book" by Singh, Doubleday, 1999.     Or, for that matter, 
+"Cryptonomicon" by Stephenson, which is a fictionalization of the Enigma 
+cracking story, and pretty accurate.
+
+I eventually get born as a side-effect of the Battle of Britain, you 
+see....
+
+Computing with interference patterns, etc, makes perfect sense, but Enigma 
+was cracked by building mechanical systems that were essentially Enigma 
+machines and brute-forcing.
+
+Eirikur
+
+
+
+

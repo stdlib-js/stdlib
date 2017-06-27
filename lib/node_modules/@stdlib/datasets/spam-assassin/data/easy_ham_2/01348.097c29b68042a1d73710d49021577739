@@ -1,0 +1,96 @@
+From focus-virus-return-1680-legit-lists-secfocus=jmason.org@securityfocus.com  Tue Aug  6 18:32:06 2002
+Return-Path: <focus-virus-return-1680-legit-lists-secfocus=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 66C2F440C9
+	for <jm@localhost>; Tue,  6 Aug 2002 13:32:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 18:32:01 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g76HSEk12325 for <legit-lists-secfocus@jmason.org>; Tue, 6 Aug 2002
+    18:28:14 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    BE83F8F30B; Tue,  6 Aug 2002 10:07:50 -0600 (MDT)
+Mailing-List: contact focus-virus-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <focus-virus.list-id.securityfocus.com>
+List-Post: <mailto:focus-virus@securityfocus.com>
+List-Help: <mailto:focus-virus-help@securityfocus.com>
+List-Unsubscribe: <mailto:focus-virus-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:focus-virus-subscribe@securityfocus.com>
+Delivered-To: mailing list focus-virus@securityfocus.com
+Delivered-To: moderator for focus-virus@securityfocus.com
+Received: (qmail 13368 invoked from network); 6 Aug 2002 16:02:43 -0000
+Reply-To: <kruse@railroad.dk>
+From: "Peter Kruse" <kruse@railroad.dk>
+To: "'Thor Larholm'" <Thor@jubii.dk>, <nick@virus-l.demon.co.uk>,
+	<FOCUS-VIRUS@securityfocus.com>
+Subject: SV: More content filtering woes
+Date: Tue, 6 Aug 2002 18:11:54 +0200
+Organization: Railroad.dk
+Message-Id: <000a01c23d63$fbd0d8a0$65fda8c0@teliahomebase>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Shadowed by Kruse to protect my privacy
+Importance: Normal
+In-Reply-To: <52D05AEFB0D95C4BAD179A054A54CDEB03470B8B@mailsrv1.jubii.dk>
+
+Hi Thor,
+
+[Still trying to catch my breath] :-)
+
+I guess there's no easy way to avoid this. In order to proactively
+protect endusers they'll need to put such code (or part of it) into
+their defs. Since antivirus products still gets smarter and smarter and
+heuristics are getting better and better the odds aginst not running
+into false positives are poor. Some products will woe plenty of these
+some are better to avoid the madness (!). I'll leave you to do the test.
+Consider that corporate and endusers are most likely using Microsoft
+software without updating as they should. AV-software is now trying to
+protect these poor souls adding proxy functionality to catch e.g.
+malicious content in HTML based e-mails and for a good reason. Looking
+at http://www.pivx.com/larholm/unpatched/ says it all!  ;-)
+
+Med venlig hilsen // Kind regards
+
+Peter Kruse
+Security- and Virusanalyst
+Telia @ Security
+http://www.teliainternet.dk
+Member of AVIEN and FIRST
+
+> -----Oprindelig meddelelse-----
+> Fra: Thor Larholm [mailto:Thor@jubii.dk] 
+> Sendt: 5. august 2002 10:13
+> Til: 'nick@virus-l.demon.co.uk'; FOCUS-VIRUS@SECURITYFOCUS.COM
+> Emne: RE: More content filtering woes
+> 
+> 
+> What I find even more annoying is the horde of false 
+> positives that antivirus software constantly yaps one about 
+> each time one sends some demonstratory POC to a mailinglist 
+> only to have several witless antivirus vendors add ones POC 
+> to their virus library, yielding tons of "Quarantined" 
+> replies on a daily basis without any added level of security 
+> to the enduser whatsoever since any reallife exploitation 
+> would yield a completely different signature, thus defeating 
+> the purpose of adding ones signature.
+> 
+> *phew* That could have used some punctuation. :)
+> 
+> 
+> 
+> 
+> Regards
+> Thor Larholm
+> Jubii A/S - Internet Programmer
+> 
+
+

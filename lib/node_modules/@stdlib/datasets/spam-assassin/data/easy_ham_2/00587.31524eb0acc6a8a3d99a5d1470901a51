@@ -1,0 +1,96 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug  8 15:59:35 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8586944116
+	for <jm@localhost>; Thu,  8 Aug 2002 10:01:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 15:01:52 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g78E1n211218 for <jm-razor@jmason.org>; Thu, 8 Aug 2002 15:01:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cnll-0008Cz-00; Thu,
+    08 Aug 2002 06:56:05 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cnlL-0001pu-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 06:55:39 -0700
+Content-Class: urn:content-classes:message
+Subject: RE: [Razor-users] New to razor
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FA7FD@med-core07.med.wayne.edu>
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [Razor-users] New to razor
+Thread-Index: AcI+3OWqlD/RUialQAqZCBkjBfD+KQABiwMQ
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: "Justin Mason" <yyyy@spamassassin.taint.org>,
+	"Michael Graff" <explorer@flame.org>
+Cc: <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 09:55:32 -0400
+Date: Thu, 8 Aug 2002 09:55:32 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g78E1n211218
+
+I concur, but just ignore the razor errors during the make test of
+spamassassin.  That recently started failing but appears just to be the
+test failing.  
+
+-----Original Message-----
+From: Justin Mason [mailto:yyyy@spamassassin.taint.org] 
+Sent: Thursday, August 08, 2002 9:07 AM
+To: Michael Graff
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] New to razor 
+
+
+
+Michael Graff said:
+
+> I'm trying to get spamassassin 2.31 and razor (latest) to play 
+> together.  From what I see, this isn't likely to happen trivially,
+
+Mike -- use the CVS version of SpamAssassin.  it works well and supports
+Razor 2.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf _______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

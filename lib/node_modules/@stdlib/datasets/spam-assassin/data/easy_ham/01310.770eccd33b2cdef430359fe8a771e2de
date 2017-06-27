@@ -1,0 +1,76 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Aug 23 11:12:01 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C273A4416F
+	for <jm@localhost>; Fri, 23 Aug 2002 06:08:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:08:09 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MHunZ18548 for <jm@jmason.org>; Thu, 22 Aug 2002 18:56:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hw7o-0006wn-00; Thu,
+    22 Aug 2002 10:52:04 -0700
+Received: from c35123.upc-c.chello.nl ([212.187.35.123]
+    helo=router.besmart.nu) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17hw7S-0003Tt-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Thu, 22 Aug 2002 10:51:42
+    -0700
+Received: (qmail 97944 invoked from network); 22 Aug 2002 17:51:43 -0000
+Received: from erik.besmart.nu (HELO erik) (192.168.1.4) by 0 with SMTP;
+    22 Aug 2002 17:51:43 -0000
+From: "Erik Rudolfs" <abbo@impression.nu>
+To: <spamassassin-devel@example.sourceforge.net>
+Message-Id: <002601c24a04$8eea9ca0$0401a8c0@erik>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [SAdev] Spam-Assassin nightly build 22-8-02
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu, 22 Aug 2002 19:51:35 +0200
+Date: Thu, 22 Aug 2002 19:51:35 +0200
+
+Hello all,
+I get problems with the latest nightly build from Spamassassin with
+VMailMgr + OMail-Admin. 
+It scans the mail and gives it an :
+
+        X-Spam-Status: No, hits=11.4 required=7.0
+
+Can someone look at the code for it? Maybe because option -F is gone?
+
+
+Greetings
+Erik Rudolfs
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

@@ -1,0 +1,13 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 05:46:01 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 23:46:01 -0500
+Subject: [Spambayes] speed
+Message-ID: <15737.33929.716821.779152@12-248-11-90.client.attbi.com>
+
+
+If the frequency of my laptop's disk chirps are any indication, I'd say
+hammie is about 3-5x faster than SpamAssassin.
+
+Skip
+

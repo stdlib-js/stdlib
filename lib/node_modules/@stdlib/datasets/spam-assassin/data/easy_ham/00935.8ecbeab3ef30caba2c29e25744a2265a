@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Wed Aug 28 10:50:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 77A5C44155
+	for <jm@localhost>; Wed, 28 Aug 2002 05:50:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:50:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RMhiZ29101 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 23:43:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 17EAF294183; Tue, 27 Aug 2002 15:41:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp03.mrf.mail.rcn.net (smtp03.mrf.mail.rcn.net
+    [207.172.4.62]) by xent.com (Postfix) with ESMTP id D2F5129409A for
+    <fork@xent.com>; Tue, 27 Aug 2002 15:40:27 -0700 (PDT)
+X-Info: This message was accepted for relay by smtp03.mrf.mail.rcn.net as
+    the sender used SMTP authentication
+X-Trace: UmFuZG9tSVa87sYWrSluYXSK7DPiKMqonQmSCJAzc+sc8Ru+zPNZzmuJmF6sE0EFamayqye2fwY=
+Received: from eb-174121.od.nih.gov ([156.40.174.121]
+    helo=TOSHIBA-L8QYR7M) by smtp03.mrf.mail.rcn.net with asmtp (Exim 3.35 #6)
+    id 17jp2b-0007bg-00 for fork@xent.com; Tue, 27 Aug 2002 18:42:29 -0400
+From: "John Evdemon" <jevdemon@acm.org>
+To: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Subject: Re: DataPower announces XML-in-silicon
+Message-Id: <3D6BC814.23250.14EE9A8@localhost>
+Priority: normal
+In-Reply-To: <5D5CC294-BA08-11D6-837F-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Description: Mail message body
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 18:42:28 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from Quoted-printable to 8bit by dogma.slashnull.org
+    id g7RMhiZ29101
+
+On 27 Aug 2002 at 15:00, Rohit Khare wrote:
+
+> DataPower delivers XML acceleration device
+> By Scott Tyler Shafer
+> August 27, 2002 5:46 am PT
+> 
+Intel also had a similar device a couple of years ago (Netstructure).  They have, afaik, abandoned it.
+
+Intel is still in the XML hardware game though.  On 8/19 they spun off a company named Tarari.   Tarari develops hardware to check the headers of IP packets. Tarari calls 
+this Layer 7 processing (atop the OSI model).    From what I can tell, Tarari plans to combine virus scanning and XML acceleration into a single hardware device.
+

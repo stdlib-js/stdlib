@@ -1,0 +1,74 @@
+From webmake-talk-admin@lists.sourceforge.net  Tue Aug  6 12:39:46 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A037C44165
+	for <jm@localhost>; Tue,  6 Aug 2002 06:26:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:26:00 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g752Rcv25373 for <jm@jmason.org>; Mon, 5 Aug 2002 03:27:38 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17bXZK-0005YD-00; Sun,
+    04 Aug 2002 19:26:02 -0700
+Received: from ns2.oplnk.net ([216.90.3.140] helo=mail.oplnk.net) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17bXYj-000653-00 for <webmake-talk@lists.sourceforge.net>; Sun,
+    04 Aug 2002 19:25:25 -0700
+Received: from earthman.oplnk.net (66-100-35-58.oplnk.net [66.100.35.58])
+    by mail.oplnk.net (Postfix) with SMTP id 0D3F613E0F for
+    <webmake-talk@lists.sourceforge.net>; Sun,  4 Aug 2002 21:29:31 -0500
+    (CDT)
+From: Alan Jackson <ajackson@oplnk.net>
+To: webmake-talk@example.sourceforge.net
+Message-Id: <20020804212526.67969dc5.ajackson@oplnk.net>
+In-Reply-To: <20020710125149.2BCB2440A9@netnoteinc.com>
+References: <20020708202855.C4062@lin.home>
+    <20020710125149.2BCB2440A9@netnoteinc.com>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.8; i686-pc-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Subject: [WM] Exclude pages from site map
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=webmake-talk>
+X-Original-Date: Sun, 4 Aug 2002 21:25:26 -0500
+Date: Sun, 4 Aug 2002 21:25:26 -0500
+
+Is there a way to exclude a set of pages from the site map? For each
+page in the site I also create a "printer friendly" page, and I would
+like to exclude all of those form the sitemap.
+
+-- 
+-----------------------------------------------------------------------
+| Alan K. Jackson            | To see a World in a Grain of Sand      |
+| alan@ajackson.org          | And a Heaven in a Wild Flower,         |
+| www.ajackson.org           | Hold Infinity in the palm of your hand |
+| Houston, Texas             | And Eternity in an hour. - Blake       |
+-----------------------------------------------------------------------
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

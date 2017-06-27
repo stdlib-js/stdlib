@@ -1,0 +1,107 @@
+From razor-users-admin@lists.sourceforge.net  Tue Sep  3 22:32:44 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8F62616F56
+	for <jm@localhost>; Tue,  3 Sep 2002 22:32:43 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 22:32:43 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g83LRWZ03922 for <jm-razor@jmason.org>; Tue, 3 Sep 2002 22:27:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17mL4m-00030U-00; Tue,
+    03 Sep 2002 14:19:08 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=cynosure.darkridge.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17mL4c-0005tZ-00 for
+    <razor-users@lists.sourceforge.net>; Tue, 03 Sep 2002 14:18:58 -0700
+Received: (from jpr5@localhost) by cynosure.darkridge.com (8.11.6/8.11.5)
+    id g83LIt303093 for razor-users@lists.sourceforge.net; Tue, 3 Sep 2002
+    14:18:55 -0700
+From: Jordan Ritter <jpr5@darkridge.com>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] razor plugins for mozilla?
+Message-Id: <20020903211855.GF2102@darkridge.com>
+References: <003b01c2536b$1e40e250$7c640f0a@mfc.corp.mckee.com>
+    <C6981F7A-BF72-11D6-B2A3-00039396ECF2@deersoft.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="aT9PWwzfKXlsBJM1"
+Content-Disposition: inline
+In-Reply-To: <C6981F7A-BF72-11D6-B2A3-00039396ECF2@deersoft.com>
+User-Agent: Mutt/1.4i
+X-Copyright: This e-mail is Copyright (c) 2002 by jpr5@darkridge.com
+X-Spamadvice: Pursuant to US Code; Title 47; Chapter 5; Subchapter II; 227
+    any unsolicited commercial email to this address will be subject to a
+    download and archival fee of US$500.  Pursuant to California Business &
+    Professions Code; S17538.45 any email service provider involved in SPAM
+    activities will be liable for statutory damages of US$50 per message, up
+    to US$25,000 per day.  Pursuant to California Penal Code; S502 any
+    unsolicited email sent to this address is in violation of Federal Law and
+    is subject to fine and/or imprisonment.
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 3 Sep 2002 14:18:55 -0700
+Date: Tue, 3 Sep 2002 14:18:55 -0700
+
+
+--aT9PWwzfKXlsBJM1
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Revoking self-submitted content (unblocking something you accidentally
+blocked) results in permanent deletion of said content from the
+network.
+
+Fortunately, Razor2/SpamNet isa network of content people DON'T want
+[in their inbox, let alone IP rights].  Block away!
+
+--jordan
+
+
+On Tue, Sep 03, 2002 at 12:24:33PM -0700, Craig R.Hughes wrote:
+
+# "Free" is a relative concept if you actually read the EULA.  No
+# commercial use, and anything you submit to razor becomes entirely
+# their intellectual property.  Better not accidentally hit "This is
+# spam" on anything you want to retain IP rights to.
+
+--aT9PWwzfKXlsBJM1
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9dSc/pwQdAVEbU7oRAlZcAJ0dsOi7U1Mf/2LjCE87mRSBhe1gpQCeJ7yf
+P310bOJSkBt79KRJMo+oTgQ=
+=+IYG
+-----END PGP SIGNATURE-----
+
+--aT9PWwzfKXlsBJM1--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

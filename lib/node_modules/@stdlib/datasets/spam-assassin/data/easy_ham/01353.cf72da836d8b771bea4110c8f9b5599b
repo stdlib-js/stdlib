@@ -1,0 +1,176 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 29 11:05:37 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0FE664416C
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:38 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SIw0Z06358 for <jm@jmason.org>; Wed, 28 Aug 2002 19:58:01 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k7z3-00009a-00; Wed,
+    28 Aug 2002 11:56:05 -0700
+Received: from dsl092-072-213.bos1.dsl.speakeasy.net ([66.92.72.213]
+    helo=blazing.arsecandle.org) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k7yt-0006FT-00 for <SpamAssassin-devel@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 11:55:56 -0700
+Received: (qmail 478 invoked from network); 28 Aug 2002 18:53:06 -0000
+Received: from localhost (HELO RAGING) (rod@127.0.0.1) by localhost with
+    SMTP; 28 Aug 2002 18:53:06 -0000
+Message-Id: <008c01c24ec4$83eab9b0$b554a8c0@RAGING>
+From: "rODbegbie" <rOD@arsecandle.org>
+To: <SpamAssassin-devel@example.sourceforge.net>,
+	"Justin Mason" <jm@jmason.org>
+References: <20020828184218.399CE43F99@phobos.labs.netnoteinc.com>
+Subject: Re: [SAdev] 2.40: ready for release? *NO*
+Organization: Arsecandle Industries, Inc.
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report>.
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="----=_NextPart_000_0088_01C24EA2.FC21D7A0";
+    micalg=SHA1;
+    protocol="application/x-pkcs7-signature"
+X-Priority: 1
+X-Msmail-Priority: High
+X-Mailer: Microsoft Outlook Express 6.00.2800.1050
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1050
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Wed, 28 Aug 2002 14:55:43 -0400
+Date: Wed, 28 Aug 2002 14:55:43 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0088_01C24EA2.FC21D7A0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+
+Justin Mason wrote:
+> OK guys -- I reckon it's now Good Enough, modulo some minor score
+> tweaking, or commenting of some more broken/high-FP-ing rules.
+>
+> What do you all think?  are we ready to go?  anyone run into any trouble
+> with the new autoconf code, or found a bug from the merge of that spamc
+> BSMTP-support patch?
+
+I just checked out b2_4_0 from CVS and 'make test' fails horribly.
+
+It seems to be looking in my site_perl SpamAssassin code, not the build
+directory.
+
+Example error:
+
+Failed to run FROM_AND_TO_SAME_5 SpamAssassin test, skipping:
+        (Can't locate object method "check_for_from_to_same" via package
+"Mail::SpamAssassin::PerMsgStatus" at
+/usr/local/lib/perl5/site_perl/5.8.0/Mail/SpamAssassin/PerMsgStatus.pm line
+1701.
+)
+
+Anyone else seeing this?
+
+rOD.
+
+--
+"If you're dumb, surround yourself with smart people;
+ and if you're smart, surround yourself with smart people
+ who disagree with you."
+
+Doing the blogging thang again at http://www.groovymother.com/ <<
+
+------=_NextPart_000_0088_01C24EA2.FC21D7A0
+Content-Type: application/x-pkcs7-signature;
+	name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAQAAoIIJIjCCAnow
+ggHjoAMCAQICARcwDQYJKoZIhvcNAQEFBQAwUzELMAkGA1UEBhMCVVMxHDAaBgNVBAoTE0VxdWlm
+YXggU2VjdXJlIEluYy4xJjAkBgNVBAMTHUVxdWlmYXggU2VjdXJlIGVCdXNpbmVzcyBDQS0xMB4X
+DTAyMDQxODE1MjkzN1oXDTIwMDQxMzE1MjkzN1owTjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUdl
+b1RydXN0IEluYy4xJzAlBgNVBAMTHkdlb1RydXN0IFRydWUgQ3JlZGVudGlhbHMgQ0EgMjCBnzAN
+BgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAspcspZISpYX/aJqWoYcSyyGqFby3OvsepRzLRU0ENDJR
+wJo7DwFpirRFOUQkTkKXsY6BQzX/CeCRrn9i4ny5gcXuI2JSyrSmDwobbwl52n5cPEbHGcebybWd
+KfAf8vvkxYUnTmDZPtt2ob5RNpJTeTiq9MpNCB/5G7Ocr1hEljcCAwEAAaNjMGEwDgYDVR0PAQH/
+BAQDAgHGMB0GA1UdDgQWBBQig0tNIAIMMfR8WrAaTRXIeF0RSTAPBgNVHRMBAf8EBTADAQH/MB8G
+A1UdIwQYMBaAFEp4MlIR21kWNl7fwRQ2QGpHfEyhMA0GCSqGSIb3DQEBBQUAA4GBACmw3z+sLsLS
+fAfdECQJPfiZFzJzSPQKLwY7vHnNWH2lAKYECbtAFHBpdyhSPkrj3KghXeIJnKyMFjsK6xd1k1Yu
+wMXrauUH+HIDuZUg4okBwQbhBTqjjEdo/cCHILQsaLeU2kM+n5KKrpb0uvrHrocGffRMrWhz9zYB
+lxoq0/EEMIICgjCCAeugAwIBAgIBBDANBgkqhkiG9w0BAQQFADBTMQswCQYDVQQGEwJVUzEcMBoG
+A1UEChMTRXF1aWZheCBTZWN1cmUgSW5jLjEmMCQGA1UEAxMdRXF1aWZheCBTZWN1cmUgZUJ1c2lu
+ZXNzIENBLTEwHhcNOTkwNjIxMDQwMDAwWhcNMjAwNjIxMDQwMDAwWjBTMQswCQYDVQQGEwJVUzEc
+MBoGA1UEChMTRXF1aWZheCBTZWN1cmUgSW5jLjEmMCQGA1UEAxMdRXF1aWZheCBTZWN1cmUgZUJ1
+c2luZXNzIENBLTEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM4vGbwXt3fek6lfWg0XTzQa
+DJj0ItlZ1MRoRvC0NcWFAyDGr0WlIVFFQesWWDYyb+JQYmT5/VGcqiTZ9J2DKocKIdMSODRsjQBu
+WqDZQu4aIZX5UkxVWsUPOE9G+m34LjXWHXzr4vCwdYDIqROsvojvOm6rXyo4YgKwEnv+j6YDAgMB
+AAGjZjBkMBEGCWCGSAGG+EIBAQQEAwIABzAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFEp4
+MlIR21kWNl7fwRQ2QGpHfEyhMB0GA1UdDgQWBBRKeDJSEdtZFjZe38EUNkBqR3xMoTANBgkqhkiG
+9w0BAQQFAAOBgQB1W6ibAxHm6VZMzfmpTMANmvPMZWnmJXbMWbfWVMMdzZmsGd20hdXgPfxiIKeE
+S1hl8eL5lSE/9dR+WB5Hh1Q+WKG1tfgq73HnvMP2sUlG4tega+VWeponmHxGYhTnyfxuAxJ5gDgd
+SIKN/Bf+KpYrtWKmpj29f5JZzVoqgrI3eTCCBBowggODoAMCAQICAxAAdTANBgkqhkiG9w0BAQQF
+ADBOMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNR2VvVHJ1c3QgSW5jLjEnMCUGA1UEAxMeR2VvVHJ1
+c3QgVHJ1ZSBDcmVkZW50aWFscyBDQSAyMB4XDTAyMDgwNzE3MzA1NloXDTAzMDgyMTE3MzA1Nlow
+ggHQMQswCQYDVQQGEwJVUzFJMEcGA1UEChNAR2VvVHJ1c3QgVHJ1ZSBDcmVkZW50aWFscyBDdXN0
+b21lciAtIE9yZ2FuaXphdGlvbiBub3QgdmFsaWRhdGVkLjE/MD0GA1UECxM2Q1BTIHRlcm1zIGlu
+Y29ycG9yYXRlZCBieSByZWZlcmVuY2UgbGlhYmlsaXR5IGxpbWl0ZWQuMUkwRwYDVQQLE0BTZWUg
+VHJ1ZSBDcmVkZW50aWFscyBFeHByZXNzIENQUyB3d3cuZ2VvdHJ1c3QuY29tL3Jlc291cmNlcy9D
+UFMuMS0wKwYDVQQLEyRFbWFpbCBjb250cm9sIHZhbGlkYXRlZCBieSBHZW9UcnVzdC4xPzA9BgNV
+BAsTNklkZW50aXR5IGF1dGhlbnRpY2F0ZWQgYnkgUmVnaXN0cmF0aW9uIEF1dGhvcml0eSAoUkEp
+LjFCMEAGA1UECxQ5UmVnaXN0cmF0aW9uIEF1dGhvcml0eSAoUkEpIC0gcm9kLWdlb3RydXN0QGFy
+c2VjYW5kbGUub3JnMRMwEQYDVQQDEwpyT0QgQmVnYmllMSEwHwYJKoZIhvcNAQkBFhJyT0RAYXJz
+ZWNhbmRsZS5vcmcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMXm5uxWzmnY4QqgZrm7Y0Hp
+CRnHrXk8zcYCYwTO4Jsh3wdeUEzzAXLuU+kkGduVA8QXWWNb61zlXwNhVMAuazPlLTmdce6GSFVO
+zCOYViHcuXnF4gj6ptYXTYReKrIznwYW50r7iKRrnsAeVqMMo9D9oM9bS+ySFcQhIBZZl+0lAgMB
+AAGjgYEwfzARBglghkgBhvhCAQEEBAMCBaAwDgYDVR0PAQH/BAQDAgXgMDkGA1UdHwQyMDAwLqAs
+oCqGKGh0dHA6Ly9jcmwuZ2VvdHJ1c3QuY29tL2NybHMvZ3R0Y2NhMi5jcmwwHwYDVR0jBBgwFoAU
+IoNLTSACDDH0fFqwGk0VyHhdEUkwDQYJKoZIhvcNAQEEBQADgYEAeZyTyjFzabynSLBSiQTLxPgp
+0YoEvrYnCGdioATy99A0TpmWwR+h6hO2iJPTersqPg4iUJrK5douLHjwrjmJCscFRACsQXuOh+wG
+oilcCkXEMbqx+ShedO+rthR41RM/l06T45p1lgLJQyYPjy9jpzf8XY0K8GXPK/rtt323fOYxggG4
+MIIBtAIBATBVME4xCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1HZW9UcnVzdCBJbmMuMScwJQYDVQQD
+Ex5HZW9UcnVzdCBUcnVlIENyZWRlbnRpYWxzIENBIDICAxAAdTAJBgUrDgMCGgUAoIG6MBgGCSqG
+SIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTAyMDgyODE4NTU0M1owIwYJKoZI
+hvcNAQkEMRYEFNak2UdcsftBLpLOYcXm92WzUklRMFsGCSqGSIb3DQEJDzFOMEwwCgYIKoZIhvcN
+AwcwDgYIKoZIhvcNAwICAgCAMA0GCCqGSIb3DQMCAgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMCAgEo
+MAcGBSsOAwIdMA0GCSqGSIb3DQEBAQUABIGAIDfmdXpwHOS7ho3C1cjFGuaNQ3AJde7lsx5t93sS
+7wp8Cdu/OO0o9v+9ogALhzyFNn+z3NPmOud2Sl1ycqV35ZBqzjUPZGdlLYyN2KYyDl/F6yZ3WoQ/
+ZGNRR4NLUQxOsNGd5/M+SfD4uLcFRWwut6br/uadzUsSUkDy55MqyvMAAAAAAAA=
+
+------=_NextPart_000_0088_01C24EA2.FC21D7A0--
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

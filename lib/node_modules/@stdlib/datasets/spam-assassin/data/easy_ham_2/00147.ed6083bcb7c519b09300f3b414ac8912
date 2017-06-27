@@ -1,0 +1,110 @@
+From ilug-admin@linux.ie  Mon Jul 29 22:29:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 88C0E440EF
+	for <jm@localhost>; Mon, 29 Jul 2002 17:29:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 22:29:40 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6TLT3q20609 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 22:29:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA01301; Mon, 29 Jul 2002 22:26:39 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA01263 for <ilug@linux.ie>; Mon,
+    29 Jul 2002 22:26:32 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A0003FEDD for ilug@linux.ie; Mon, 29 Jul 2002 22:26:32
+    +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 1023) id
+    2F77ADA4A; Mon, 29 Jul 2002 22:26:32 +0100 (IST)
+Date: Mon, 29 Jul 2002 22:26:32 +0100
+From: Philip Reynolds <phil@redbrick.dcu.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] ipfw vs ipchains vs iptables
+Message-Id: <20020729222632.A16164@prodigy.Redbrick.DCU.IE>
+References: <20020729191853.A9864@prodigy.Redbrick.DCU.IE>
+    <Pine.LNX.4.44.0207292143540.14923-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <Pine.LNX.4.44.0207292143540.14923-100000@fogarty.jakma.org>;
+    from paul@clubi.ie on Mon, Jul 29, 2002 at 09:53:01PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Paul Jakma's [paul@clubi.ie] 67 lines of wisdom included:
+> i thought the firewalling code on all the BSDs was fairly related -
+> sorry. So FreeBSD's ipfw is not encumbered in the same way the old
+> OBSD firewalling was?
+
+Nope, indeed IPFW2 has just been rolled out into -STABLE. (-STABLE
+is a stable branch of the code that has been rolled into -CURRENT
+first. It's basically a major release, that's still a work in
+progress)
+
+> to an extent, i guess so, yes. but i've a few boxes with reasonable 
+> uptimes that run netfilter/iptables. (i've one that has crashed twice 
+> now after 60+ day uptimes. but that doesnt seem to be netfilter).
+> 
+> course, there's a lot more that can go wrong with a firewall than the
+> firewall code. in that case get 2 boxes and heartbeat them.
+
+I don't really judge things by uptimes, it's rather like judging
+penis size. People like comparing them, and the larger they are, the
+more people are in awe of them, but overly large ones aren't really
+practical!
+
+> indeed. couldnt agree more.
+> 
+> (that's the nice thing about *nix - fact we /can/ have nit-picking 
+> arguments about which *nix and firewall code is better).
+
+Defiantely. I wouldn't like anyone to accuse me of being a
+nit-picker though ;)
+
+> i've no experience of ipfw. (closest i've come is looking at IPFilter 
+> for IRIX - but it had a problem in that it wasnt maintained 
+> anymore. however, while the englishy syntax is nice, i dont think 
+> iptables command <args> syntax is a big obstacle).
+> 
+> anyway.. there's choice. and as i understand it, with the advent of 
+> netfilter/iptables there's now almost nothing between them from a 
+> technical POV. (apart from ipfw being in use a lot longer).
+
+Well, as someone who's used ipchains quite heavily about two years
+ago, I can guarantee you that the learning curve for reading
+ipchains rules and ipfw rules is quite different. Of course once
+you've memorised (not necessarily sitting down with a sheet of them
+and learning them off by rote) them, you wonder what all the fuss is
+about before.
+
+It's not in itself a reason to choose one firewall product over
+another, but if that's all there is in the difference, and the
+learning curve for the Operating System is the same, then I know
+what I'd prefer, as a beginner.
+
+This is all getting rather off-topic now anyways, but since I've
+been doing quite a lot of work with ipfw over the last week I jumped
+on the bandwagon.
+
+-- 
+  Philip Reynolds        
+   RFC Networks          tel: 01 8832063
+www.rfc-networks.ie      fax: 01 8832041
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

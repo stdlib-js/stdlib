@@ -1,0 +1,89 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Jul 22 18:21:45 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E3A7440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:21:43 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:21:43 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFFR900877 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:15:27 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id QAA32622 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:05:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WegM-0005Fm-00; Mon,
+    22 Jul 2002 08:01:06 -0700
+Received: from moon.campus.luth.se ([130.240.202.158]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17Wefp-0006bz-00 for
+    <spamassassin-devel@lists.sourceforge.net>; Mon, 22 Jul 2002 08:00:34
+    -0700
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g6MF0IZl010648; Mon, 22 Jul 2002 17:00:18 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: Marc Perkel <marc@perkel.com>
+Cc: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Spam added to regular email
+In-Reply-To: <3D3C12DE.3070802@perkel.com>
+Message-Id: <20020722165632.W10232-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Mon, 22 Jul 2002 17:00:18 +0200 (CEST)
+Date: Mon, 22 Jul 2002 17:00:18 +0200 (CEST)
+
+On Mon, 22 Jul 2002 the voices made Marc Perkel write:
+
+> I've been working on adding low scoring spam messages to my spam corpus
+> which means I'm tapping email that scores 5-18 points now and hand
+> sorting it. Some of these messages are newsletters and other mail that's
+> not spam - but they contain an ad for something that is spam.
+>
+> So - I don't see how I can classify these messages because catching spam
+> within a newsletter or yahoo message is not a false positive.
+
+ I don't really see the problem... either the whole message is unwanted spam
+which you, one way or another, didn't agree to reciving, or it's something that
+you, one way or another, said that you'd accept... If you said you'd accept it,
+like mailinglists, then it isn't spam and shouldn't be caught as spam, no
+matter if there's ads in it or not...
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+    perl -e'print$_{$_} for sort%_=`lynx -source svanstrom.com/t`'
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

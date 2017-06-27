@@ -1,0 +1,85 @@
+From razor-users-admin@lists.sourceforge.net  Mon Sep  2 12:22:47 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8855D43F9B
+	for <jm@localhost>; Mon,  2 Sep 2002 07:22:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:22:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TNiXZ01537 for <jm-razor@jmason.org>; Fri, 30 Aug 2002 00:44:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kYqW-0003Xb-00; Thu,
+    29 Aug 2002 16:37:04 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17kYqQ-0006NA-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 29 Aug 2002 16:36:58 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g7TNar604179 for razor-users@lists.sourceforge.net; Thu, 29 Aug 2002
+    16:36:53 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Collision of hashes?
+Message-Id: <20020829163653.A4149@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: razor-users@example.sourceforge.net
+References: <Pine.LNX.4.44.0208201746330.23681-100000@r2-pc.dcs.qmul.ac.uk>
+    <010501c24f82$947b3340$7c640f0a@mfc.corp.mckee.com>
+    <02082919334401.04648@neofelis>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <02082919334401.04648@neofelis>; from cmeclax@gmx.co.uk on
+    Thu, Aug 29, 2002 at 07:33:44PM -0400
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 29 Aug 2002 16:36:53 -0700
+Date: Thu, 29 Aug 2002 16:36:53 -0700
+
+On Thu, Aug 29, 2002 at 07:33:44PM -0400, cmeclax po'u le cmevi'u ke'umri wrote:
+> 
+> Was it sent in HTML? If so, and it had a background, the background may have 
+> been sent in a spam.
+
+razor-agents 2.14 needs all parts to be spam to make a positive decision
+(though this will change with the next release), so it couldn't have been
+a background. Could you send me the debug log?
+
+cheers,
+vipul.
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

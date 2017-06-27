@@ -1,0 +1,69 @@
+From webdev-admin@linux.ie  Thu Aug 22 10:46:54 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D8B5943C4C
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7M9aiZ00853 for
+    <jm-webdev@jmason.org>; Thu, 22 Aug 2002 10:36:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA21413; Thu, 22 Aug 2002 10:36:46 +0100
+Received: from motornet.ie ([62.221.11.102]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id KAA21378 for <webdev@linux.ie>; Thu,
+    22 Aug 2002 10:36:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.221.11.102] claimed to
+    be motornet.ie
+Received: (qmail 779 invoked by uid 85); 22 Aug 2002 09:32:15 -0000
+Received: from lists@spamfilter.cc by www.motornet.ie with
+    qmail-scanner-1.03 (uvscan: v4.1.60/v4179. . Clean. Processed in 0.305009
+    secs); 22 Aug 2002 09:32:15 -0000
+Received: from unknown (HELO Development05) (172.16.255.79) by 0 with SMTP;
+    22 Aug 2002 09:32:15 -0000
+From: "adam" <lists@spamfilter.cc>
+To: <webdev@linux.ie>
+Subject: RE: [Webdev] PHP/MySQL Virtual Hosting Recommendations?
+Date: Thu, 22 Aug 2002 10:38:40 +0100
+Message-Id: <HMEPLCOKBDDDIPLACFOKCEFICBAA.lists@spamfilter.cc>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <5.1.0.14.0.20020822094822.02756b28@holly.csn.ul.ie>
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+Hi Lee,
+
++ You could try iewebs.com aswell, though I don't know if they do
++ "just hosting".
++
+Heh, you won't find much on iewebs.com these days. Apache test page.
+
+For future reference, ieWebs is /kind of/ defunct -- I won't be able to do
+private devel projects for a while, so I'm not actively pushing it. I still
+do hosting and domreg, but I only do vanilla accounts unless I know the user
+reasonably well. I have trust issues.
+
+Thanks for the plug though. Just like me to no longer have a website when it
+happens. :)
+
+adam
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

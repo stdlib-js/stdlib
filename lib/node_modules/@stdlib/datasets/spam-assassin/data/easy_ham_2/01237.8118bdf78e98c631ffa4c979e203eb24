@@ -1,0 +1,86 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:17:30 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8F28F43C34
+	for <jm@localhost>; Fri, 16 Aug 2002 06:01:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:01:09 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7G0kSa28920 for
+    <jm-rpm@jmason.org>; Fri, 16 Aug 2002 01:46:29 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7G0j3J09224; Fri, 16 Aug 2002 02:45:03
+    +0200
+Received: from marvin.home.priv (adsl-66-124-58-30.dsl.anhm01.pacbell.net
+    [66.124.58.30]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7G0iSJ09111 for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 02:44:28 +0200
+Received: by marvin.home.priv (Postfix, from userid 500) id 72F89207F0;
+    Thu, 15 Aug 2002 17:45:31 -0700 (PDT)
+From: Gary Peck <gbpeck@sbcglobal.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: making rpms from already-compiled source trees
+Message-Id: <20020816004531.GA5461@marvin.home.priv>
+Mail-Followup-To: Gary Peck <gbpeck@sbcglobal.net>,
+	rpm-list@freshrpms.net
+References: <20020815050336.GB2408@marvin.home.priv>
+    <20020814221418.012b296f.hosting@j2solutions.net>
+    <20020815055904.GA2681@marvin.home.priv>
+    <20020815064512.2c7d5f3e.hosting@j2solutions.net>
+    <1029421888.1847.1033.camel@turner.gestalt.entity.net>
+    <1029422204.14538.2.camel@trial>
+    <20020815164938.59299be9.ralf@camperquake.de>
+    <1029423207.14536.9.camel@trial>
+    <20020815171447.75fbc9f6.ralf@camperquake.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020815171447.75fbc9f6.ralf@camperquake.de>
+User-Agent: Mutt/1.4i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 15 Aug 2002 17:45:31 -0700
+Date: Thu, 15 Aug 2002 17:45:31 -0700
+
+Well, thanks everyone for the explanations. I still disagree with the 
+reasoning, but it seems this is one of those philosophical questions 
+that I'm on the losing end of :)
+
+The checkinstall utility that someone mentioned seems useful, but I 
+don't really have the time to figure it out right now. After searching 
+the web some more, I found out that Mandrake's version of rpm is 
+patched to support what I wanted. So I guess I'll look into that when 
+I get a chance.
+
+On Thu, Aug 15, 2002 at 05:14:47PM +0200, Ralf Ertzinger wrote:
+> Do nothing in the %build section, and copy the existing binaries
+> in %install.
+
+As far as I can tell, this could be useful for my situation too. It's 
+not a complete solution since I can't really distribute the SRPMS with 
+full certainty that they work, but at least I can make RPMS for local 
+use by tarring up the buildroot directory and then using the above 
+technique. All I really want is to get dependency tracking for 
+everything installed on my system (including software from cvs). This 
+just makes it a little bit faster.
+
+gary
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

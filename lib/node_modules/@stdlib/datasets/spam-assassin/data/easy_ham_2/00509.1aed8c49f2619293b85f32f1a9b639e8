@@ -1,0 +1,70 @@
+From webdev-admin@linux.ie  Wed Jul 31 11:19:10 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3FEF7440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 06:19:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 11:19:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VAC5215483 for
+    <jm-webdev@jmason.org>; Wed, 31 Jul 2002 11:12:05 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA27892; Wed, 31 Jul 2002 11:10:42 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA27855 for <webdev@linux.ie>;
+    Wed, 31 Jul 2002 11:10:37 +0100
+Received: from dialup-0934.dublin.iol.ie ([193.203.147.166]
+    helo=proxyplus.pro.ie) by mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id
+    17ZqJZ-0007vh-00; Wed, 31 Jul 2002 11:02:45 +0100
+Received: from shakespear [192.168.0.2] by Proxy+; Wed, 31 Jul 2002
+    11:05:44 +0100 for multiple recipients
+From: "William Harrison - Protocol" <wharrison@pro.ie>
+To: "Nick Murtagh" <nickm@go2.ie>, <webdev@linux.ie>
+Subject: RE: [Webdev] Migrating TO W2K
+Date: Wed, 31 Jul 2002 11:05:44 +0100
+Message-Id: <NFBBKGICNJAKAMHIOPMBEEJBDMAA.wharrison@pro.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+In-Reply-To: <200207291944.52213.nickm@go2.ie>
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2314.1300
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+Hi Nick
+
+Try PHPTriad
+
+ http://download.com.com/3000-2165-6474268.html?tag=lst-0-1
+
+"PHPTriad is a complete PHP development and server environment for Windows.
+It installs PHP, Apache, MySQL, and PHPMyAdmin, both installing and setting
+up the environment. Version 2.11 updates all components and it now includes
+Perl 5."
+
+HTH
+
+Will
+
+
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+
+

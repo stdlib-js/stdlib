@@ -1,0 +1,84 @@
+From exmh-workers-admin@redhat.com  Wed Oct  2 18:17:44 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 31B7216F03
+	for <jm@localhost>; Wed,  2 Oct 2002 18:17:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 18:17:44 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92H0HK18022 for
+    <jm-exmh@jmason.org>; Wed, 2 Oct 2002 18:00:22 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id B6E47402CB; Wed,  2 Oct 2002
+    13:00:16 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4DCCC40F58
+    for <exmh-workers@listman.redhat.com>; Wed,  2 Oct 2002 12:56:06 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g92Gu6404969 for exmh-workers@listman.redhat.com; Wed, 2 Oct 2002
+    12:56:06 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g92Gu5f04963 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 12:56:05 -0400
+Received: from ratree.psu.ac.th ([202.12.73.3]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g92GbAi09273 for <exmh-workers@redhat.com>;
+    Wed, 2 Oct 2002 12:37:11 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g92GtnQ06382;
+    Wed, 2 Oct 2002 23:55:50 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g92Gsi703746; Wed, 2 Oct 2002 23:54:44 +0700
+    (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Hal DeVore <haldevore@acm.org>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Another sequences window nit
+In-Reply-To: <9288.1033576753@dimebox.bmc.com>
+References: <9288.1033576753@dimebox.bmc.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <3744.1033577684@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 02 Oct 2002 23:54:44 +0700
+
+    Date:        Wed, 02 Oct 2002 11:39:13 -0500
+    From:        Hal DeVore <haldevore@acm.org>
+    Message-ID:  <9288.1033576753@dimebox.bmc.com>
+
+  | Restarting exmh was necessary.
+
+Probably not.   Next time try clicking on the folder name in the
+sequences window for the sequence.   That is, request that sequence
+be the one displayed in the FTOC.   If the sequence doesn't exist,
+it will be cleaned up then.
+
+Perhaps it would be nicer if flist would do it as well, but this
+is effective enough.
+
+kre
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

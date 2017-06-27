@@ -1,0 +1,79 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:21:21 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3C530440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:21:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:21:20 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFHT902175 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:17:30 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id OAA31978 for <jm-rpm@jmason.org>;
+    Mon, 22 Jul 2002 14:08:01 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6MCx1C15178; Mon, 22 Jul 2002 14:59:01
+    +0200
+Received: from bennew01.localdomain (pD900DE65.dip.t-dialin.net
+    [217.0.222.101]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6MCwkC15150 for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 14:58:46 +0200
+Received: from bennew01.localdomain (bennew01.localdomain [192.168.3.1])
+    by bennew01.localdomain (8.11.6/linuxconf) with SMTP id g6MCwN403914 for
+    <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 14:58:23 +0200
+From: Matthias Haase <matthias_haase@bennewitz.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: gentoo 0.11.28 is out..
+Message-Id: <20020722145822.417e825b.matthias_haase@bennewitz.com>
+In-Reply-To: <20020719184052.0f2df4e1.matthias@egwn.net>
+References: <7uit3eljnp.fsf@allele2.biol.berkeley.edu>
+    <20020718102254.0664d716.matthias@egwn.net>
+    <20020718122654.1604541d.matthias_haase@bennewitz.com>
+    <20020718130029.523aa992.matthias@egwn.net>
+    <20020719183016.3297b423.matthias_haase@bennewitz.com>
+    <20020719184052.0f2df4e1.matthias@egwn.net>
+X-Operating-System: customized linux smp kernel 2.4* on i686
+X-Mailer: Sylpheed
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 14:58:22 +0200
+Date: Mon, 22 Jul 2002 14:58:22 +0200
+
+On Fri, 19 Jul 2002 18:40:52 +0200
+Matthias Saou <matthias@egwn.net> wrote:
+
+> I'll put up the next version as soon as it's out hoping it'll fix all
+> current issues!
+Hi, Matthias,
+gentoo 0.11.30 is out now and the 'copy nested directory' bug is fixed,
+see ChangeLog on
+
+http://sourceforge.net/project/shownotes.php?group_id=32880&release_id=100766
+
+
+-- 
+regards from Germany
+                   Matthias
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

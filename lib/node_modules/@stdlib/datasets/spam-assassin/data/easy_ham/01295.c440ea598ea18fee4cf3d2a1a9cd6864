@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  8 00:10:03 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9C99F16F17
+	for <jm@localhost>; Tue,  8 Oct 2002 00:09:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 00:09:58 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g97M3hK18746 for
+    <jm-rpm@jmason.org>; Mon, 7 Oct 2002 23:03:44 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g97Lw2f09321; Mon, 7 Oct 2002 23:58:02
+    +0200
+Received: from posti.pp.htv.fi (posti.pp.htv.fi [212.90.64.50]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g97LvNf04590 for
+    <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 23:57:27 +0200
+Received: from cs78128237.pp.htv.fi ([62.78.128.237]) by posti.pp.htv.fi
+    (8.11.1/8.11.1) with ESMTP id g97Lv8g29537 for <rpm-list@freshrpms.net>;
+    Tue, 8 Oct 2002 00:57:08 +0300 (EETDST)
+Subject: Re: Nessus?
+From: Ville =?ISO-8859-1?Q?Skytt=E4?= <ville.skytta@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20021007230521.0f1727aa.matthias@rpmforge.net>
+References: <1034013325.8419.88.camel@bobcat.ods.org>
+    <20021007200642.27614e1b.matthias@rpmforge.net>
+    <20021007230521.0f1727aa.matthias@rpmforge.net>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1034027845.2296.163.camel@bobcat.ods.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g97LvNf04590
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 08 Oct 2002 00:57:24 +0300
+Date: 08 Oct 2002 00:57:24 +0300
+
+On Tue, 2002-10-08 at 00:05, Matthias Saou wrote:
+
+> It's 100% untested, although the build should be ok. The new menu was
+> added, but some configuration files may be better with new or different
+> defaults.
+> 
+> Feedback is very welcome!
+
+Looks good to me, just installed it, and ran a local scan, everything
+worked smoothly.  Thanks a bunch!
+
+-- 
+\/ille Skyttä
+ville.skytta at iki.fi
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

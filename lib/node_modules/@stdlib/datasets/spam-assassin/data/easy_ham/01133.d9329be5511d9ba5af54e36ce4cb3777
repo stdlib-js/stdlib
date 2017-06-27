@@ -1,0 +1,118 @@
+From exmh-workers-admin@redhat.com  Tue Sep 24 19:48:43 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 50CAB16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 19:48:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 19:48:42 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8OIEpC16178 for
+    <jm-exmh@jmason.org>; Tue, 24 Sep 2002 19:14:51 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 24B3C40491; Tue, 24 Sep 2002
+    14:15:17 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 0173F406B6
+    for <exmh-workers@listman.redhat.com>; Tue, 24 Sep 2002 14:08:25 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8OI8Pu06001 for exmh-workers@listman.redhat.com; Tue, 24 Sep 2002
+    14:08:25 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8OI8Pf05994 for
+    <exmh-workers@redhat.com>; Tue, 24 Sep 2002 14:08:25 -0400
+Received: from vnet0.virtual.net (vnet0.virtual.net [64.49.222.181]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8OHoZi12593 for
+    <exmh-workers@redhat.com>; Tue, 24 Sep 2002 13:50:35 -0400
+Received: from schooner.loverso.southborough.ma.us
+    (user233.64.47.28.dsli.com [64.47.28.233]) by vnet0.virtual.net
+    (8.9.3/8.9.3) with ESMTP id NAA26862; Tue, 24 Sep 2002 13:08:23 -0500
+Received: from loverso.southborough.ma.us (localhost [127.0.0.1]) by
+    schooner.loverso.southborough.ma.us (8.12.3/8.11.3) with ESMTP id
+    g8OI8LM8068943; Tue, 24 Sep 2002 14:08:21 -0400 (EDT) (envelope-from
+    loverso@loverso.southborough.ma.us)
+Message-Id: <200209241808.g8OI8LM8068943@schooner.loverso.southborough.ma.us>
+To: Ted Cabeen <secabeen@pobox.com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Minor feature request
+In-Reply-To: Message from Ted Cabeen <secabeen@pobox.com>
+    <20020924170024.1935256D@gray.impulse.net> .
+X-Face: "UZ!}1W2N?eJdN(`1%|/OOPqJ).Idk?UyvWw'W-%`Gto8^IkEm>.g1O$[.;~}8E=Ire0|lO
+    .o>:NlJS1@vO9bVmswRoq3j<A2*d2*S+2%tyPf2|dwcrNgSx%#^d@7'85{"$i2,xw/T,I<]R$FG"{>
+    DdX9YGSeJ5a(mfX[1u>Z63G5_^+'8LVqjqvn
+X-Url: http://surf.to/loverso
+From: "John R. LoVerso" <john@loverso.southborough.ma.us>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Tue, 24 Sep 2002 14:08:21 -0400
+
+> How easy would it be to code a menu item that marks as read all messages 
+> before the current message?  I often have problems reading heavy-traffic 
+> mailing lists in exmh because I want to read only a subset of a lists 
+> messages, but I lose track of where I was in the particular folder.  
+> 
+> This could also be coded more generally in the new sequences code as a way to 
+> remove all messages before current from a particular sequence.
+
+Easy.
+
+First, you'll have to excuse me as I'm still using 2.3.1 (*), so, this
+may not play well with recent changes.  (I did look at 2.5.1, too).
+And, I just did this off the top of my head (I wanted to see if it
+(**) still worked), so this is somewhat untested.
+
+Adding a menu entry is trivial; add this to your ~/.exmh/exmh-defaults:
+
+*Fops.more.m.uentrylist:	ketchup
+*Fops.more.m.l_ketchup:		Catch-up all b4 cur
+*Fops.more.m.c_ketchup:	 	My_Mark2CurSeen
+
+Then you just need to provide the source for My_Mark2CurSeen and 
+arrange for Exmh to include it (put it in your ~/.tk/exmh directory
+in your user.tcl; or in pick.patch if you enable the "source hook"
+under Prefs->Hacking Support)
+
+It's going to look something like this:
+
+proc My_Mark2CurSeen {} {
+    global exmh pick msg
+    Exmh_Status "Clearing unseen up to cur..." red
+    Mh_SetCur $exmh(folder) $msg(id)
+    set pick(ids) [...get message ids for "pick 1-cur"...]
+    busy PickMarkSeen
+    Exmh_Status ok blue
+}
+
+(that's based upon the guts of Pick_MarkSeen)
+
+You need to fill in the code for the [...get...] section; I ran out of
+time!
+
+John
+
+(*) "It just works" (tm)
+(**) "it" == my head
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

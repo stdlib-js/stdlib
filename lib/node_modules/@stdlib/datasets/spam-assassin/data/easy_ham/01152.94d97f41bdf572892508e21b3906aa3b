@@ -1,0 +1,123 @@
+From exmh-workers-admin@redhat.com  Wed Oct  2 15:59:26 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DB09716F1A
+	for <jm@localhost>; Wed,  2 Oct 2002 15:59:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 15:59:07 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92EngK13465 for
+    <jm-exmh@jmason.org>; Wed, 2 Oct 2002 15:49:43 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 5A01C3F997; Wed,  2 Oct 2002
+    10:50:15 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 6527B3EB14
+    for <exmh-workers@listman.redhat.com>; Wed,  2 Oct 2002 10:49:39 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g92End532337 for exmh-workers@listman.redhat.com; Wed, 2 Oct 2002
+    10:49:39 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g92Endf32333 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 10:49:39 -0400
+Received: from turing-police.cc.vt.edu (turing-police.cc.vt.edu
+    [128.173.14.107]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g92EUmi07079 for <exmh-workers@redhat.com>; Wed, 2 Oct 2002 10:30:48 -0400
+Received: from turing-police.cc.vt.edu (localhost [127.0.0.1]) by
+    turing-police.cc.vt.edu (8.12.6.Beta1/8.12.6.Beta1) with ESMTP id
+    g92EnPLw027736; Wed, 2 Oct 2002 10:49:25 -0400
+Message-Id: <200210021449.g92EnPLw027736@turing-police.cc.vt.edu>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4+dev
+To: "J. W. Ballantine" <jwb@homer.att.com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: A couple of nits...
+In-Reply-To: Your message of
+    "Wed, 02 Oct 2002 09:54:04 EDT."
+    <200210021354.JAA13534@hera.homer.att.com>
+From: Valdis.Kletnieks@vt.edu
+X-Url: http://black-ice.cc.vt.edu/~valdis/
+X-Face-Viewer: See ftp://cs.indiana.edu/pub/faces/index.html to decode picture
+X-Face: 34C9$Ewd2zeX+\!i1BA\j{ex+$/V'JBG#;3_noWWYPa"|,I#`R"{n@w>#:{)FXyiAS7(8t(
+    ^*w5O*!8O9YTe[r{e%7(yVRb|qxsRYw`7J!`AM}m_SHaj}f8eb@d^L>BrX7iO[<!v4-0bVIpaxF#-)
+    %9#a9h6JXI|T|8o6t\V?kGl]Q!1V]GtNliUtz:3},0"hkPeBuu%E,j(:\iOX-P,t7lRR#
+References: <200210021354.JAA13534@hera.homer.att.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1581861840P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 02 Oct 2002 10:49:25 -0400
+
+--==_Exmh_-1581861840P
+Content-Type: text/plain; charset=us-ascii
+
+On Wed, 02 Oct 2002 09:54:04 EDT, "J. W. Ballantine" <jwb@homer.att.com>  said:
+
+> First, when I try and run exmh with wish from tk8.4.0 it seems to take
+> forever to start, but with wish from tk8.a.4 it starts in a snap.
+
+This sounds like something piggy in the 'flist' code - I'm seeing flist
+in general taking 5-10 seconds.  Interesting that a different wish comes up
+fast, there might be a borkedness in 8.4.
+
+> Using the latest CVS, when I open exmh and the folder I'm in has unseen
+> messages and I hit next, exmh changes to the next folder with unseen messages
+> rather than to the first unseen in the current folder.
+
+Hmm.. weirdness..
+
+> Finally, when I reach the end of the messages in a folder and go on to
+> the next unseen, exmh always goes back to inbox (which has no unseen
+> messages) rather than the next folder with unseen messages.  (When I 
+> goto next from inbox it does go where I would think it should go).
+
+I've been seeing this as well - *usually* with inbox, but it's gotten
+stuck on some other folders as well (I have procmail do rcvstore into folders
+for me).
+-- 
+				Valdis Kletnieks
+				Computer Systems Senior Engineer
+				Virginia Tech
+
+
+--==_Exmh_-1581861840P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+Comment: Exmh version 2.5 07/13/2001
+
+iD8DBQE9mwd0cC3lWbTT17ARAsOKAKCe3ziHYPQnWBGyUdYQzYurE1tguACfS9Ms
+TUQI8ndQ8stuJqaWVGSAi4k=
+=JBgX
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1581861840P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

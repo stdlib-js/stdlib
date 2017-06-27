@@ -1,0 +1,82 @@
+From rpm-list-admin@freshrpms.net  Fri Sep 20 17:34:44 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2611316F03
+	for <jm@localhost>; Fri, 20 Sep 2002 17:34:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 17:34:44 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8KGHRC13022 for
+    <jm-rpm@jmason.org>; Fri, 20 Sep 2002 17:17:27 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8KGC2f20417; Fri, 20 Sep 2002 18:12:02
+    +0200
+Received: from mailout10.sul.t-online.com (mailout10.sul.t-online.com
+    [194.25.134.21]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g8KGBVf20368 for <rpm-list@freshrpms.net>; Fri, 20 Sep 2002 18:11:32 +0200
+Received: from fwd11.sul.t-online.de by mailout10.sul.t-online.com with
+    smtp id 17sQNO-0001u3-08; Fri, 20 Sep 2002 18:11:30 +0200
+Received: from puariko.homeip.net (520039812576-0001@[217.231.206.155]) by
+    fmrl11.sul.t-online.com with esmtp id 17sQNE-01U7NoC; Fri, 20 Sep 2002
+    18:11:20 +0200
+From: Axel Thimm <Axel.Thimm@physik.fu-berlin.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Should mplayer be build with Win32 codecs?
+Message-Id: <20020920181118.A17344@bonzo.nirvana>
+References: <20020608213903.GA26452@krabat.physik.fu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020608213903.GA26452@krabat.physik.fu-berlin.de>;
+    from Axel.Thimm@physik.fu-berlin.de on Sat, Jun 08, 2002 at 11:39:03PM
+    +0200
+X-Sender: 520039812576-0001@t-dialin.net
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 20 Sep 2002 18:11:18 +0200
+Date: Fri, 20 Sep 2002 18:11:18 +0200
+
+Hi,
+
+has anyone an answer for me? The mplayer documentation still suggests to use
+them for x86 architectures.
+
+Thanks. :)
+
+Regards, Axel.
+
+On Sat, Jun 08, 2002 at 11:39:03PM +0200, Axel Thimm wrote:
+> Are there perhaps licensing issues, which forbid such a practice? Or any other
+> reasons?
+> 
+> The reason I ask is that I have seen performance and also some feature
+> differences (fullscreen w/o keeping aspect ratio, visual artifacts on NVIDIA)
+> comparing with or without the Win32 codecs. The mplayer authors seem to
+> recommend using them for x86 architectures.
+> 
+> Beware, I am no mplayer/codecs/whatever expert, I may be totally lost ...
+
+-- 
+Axel.Thimm@physik.fu-berlin.de
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

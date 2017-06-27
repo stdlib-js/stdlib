@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Mon Aug 26 22:18:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6106E43F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 17:18:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:18:19 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLIPZ10013 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:18:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9F9792941DA; Mon, 26 Aug 2002 13:39:14 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tux.w3.org (tux.w3.org [18.29.0.27]) by xent.com (Postfix)
+    with ESMTP id 16C54294099 for <fork@xent.com>; Thu, 22 Aug 2002 16:38:02
+    -0700 (PDT)
+Received: from localhost (danbri@localhost) by tux.w3.org (8.9.3/8.9.3)
+    with ESMTP id TAA12658; Thu, 22 Aug 2002 19:39:45 -0400
+From: Dan Brickley <danbri@w3.org>
+To: Lucas Gonze <lgonze@panix.com>
+Cc: "Fork@Xent.Com" <fork@spamassassin.taint.org>
+Subject: Re: The case for spam
+In-Reply-To: <Pine.LNX.4.44.0208221910560.17440-100000@localhost.localdomain>
+Message-Id: <Pine.LNX.4.30.0208221935220.31207-100000@tux.w3.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 19:39:45 -0400 (EDT)
+
+On Thu, 22 Aug 2002, Lucas Gonze wrote:
+
+>
+> Political mail (the snail kind) doesn't bother me.  I like it a lot of the
+> time, because as crap as it is at least it's not the kind of info you get
+> on TV.  Particularly for small time local politics, it's the best way to
+> get information.
+
+Except that thanks to the magic of spam, it's usually some else's locale
+
+> but what matters is that mail is speech, and political email has to be as
+> well protected as any other political speech.  Spam is *the* tool for
+> dissident news, since the face that it's unsolicited means that recipients
+> can't be blamed for being on a mailing list.
+
+A terrible argument. There are better technical solutions to privacy
+protection than sending a copy of the same message to everyone on the
+Internet, so the recipients can't be blamed for reading it.
+
+Wait till phone spam is as cheap to send as email spam...
+
+Dan
+
+
+
+http://xent.com/mailman/listinfo/fork
+

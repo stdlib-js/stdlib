@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Thu Aug  8 15:56:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 48262440F7
+	for <jm@localhost>; Thu,  8 Aug 2002 09:27:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 14:27:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78DPM208415 for
+    <jm-ilug@jmason.org>; Thu, 8 Aug 2002 14:25:22 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA17944; Thu, 8 Aug 2002 14:22:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id OAA17917 for <ilug@linux.ie>; Thu,
+    8 Aug 2002 14:22:18 +0100
+Received: (qmail 30084 messnum 70756 invoked from
+    network[159.134.146.214/pc726.as1.galway1.eircom.net]); 8 Aug 2002
+    13:20:54 -0000
+Received: from pc726.as1.galway1.eircom.net (HELO ciaran)
+    (159.134.146.214) by mail02.svc.cra.dublin.eircom.net (qp 30084) with SMTP;
+    8 Aug 2002 13:20:54 -0000
+Message-Id: <00af01c23edf$36806b10$ac0305c0@ciaran>
+From: "Ciaran Mac Lochlainn" <ciaran17@eircom.net>
+To: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>, <ilug@linux.ie>
+References: <55DA5264CE16D41186F600D0B74D6B09247243@KBS01>
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+Date: Thu, 8 Aug 2002 14:26:32 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-15"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Bod wrote
+<snip>
+
+> /Enter the rant.
+>
+> One thing that really bugs me is when people say things like.
+>
+> "On the machies we have these days you don't have to worry about
+>  writing optimised code" or "don't worry about writing
+>  things inline, just use a function"
+
+That sounds a lot like "sure programmers aren't needed anymore, don't
+all the new visual thingies mean anyone can do it"[1], or maybe "640k should
+be enough for anyone"[2]
+
+>
+> "Yeah and add a procedure prolog or eight", I always counter,
+> to be told
+> "On the machines we have these days....."
+>
+> Boggle.
+>
+That's recursion for you.
+
+C#
+
+
+[1] This is often followed by "I know what I'm talking about, I can program
+HTML but I never need to use it"
+[2] Bilge denies he ever said this.
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

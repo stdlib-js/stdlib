@@ -1,0 +1,25 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Sat Sep  7 05:10:37 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Sat, 07 Sep 2002 14:10:37 +1000
+Subject: [Spambayes] Maybe change X-Spam-Disposition to something else... 
+In-Reply-To: <15737.31513.555967.915801@12-248-11-90.client.attbi.com> 
+Message-ID: <200209070410.g874Ab620880@localhost.localdomain>
+
+
+>>> Skip Montanaro wrote
+> 
+> I actually like Neale's X-Spam-Disposition header, I just wonder if maybe we
+> should choose something with a different prefix than "X-Spam-" so that
+> people don't confuse it with SpamAssassin, all of whose headers begin with
+> that prefix.
+
+I think it's fine, in general, just so long as no-one checks in anything
+that puts it into my test corpus.
+
+Or alternately, whatever is chosen should be ignored by the tokenizer. 
+I know my mail host (interlink) runs SA, but I also run it, with my own
+set of rules and scores. I don't want my spam-filter to be getting messed
+up by an upstream spam filter.
+
+

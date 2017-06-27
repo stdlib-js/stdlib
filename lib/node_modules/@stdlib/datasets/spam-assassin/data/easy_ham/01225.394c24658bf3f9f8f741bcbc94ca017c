@@ -1,0 +1,124 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  2 21:15:48 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C19D816F16
+	for <jm@localhost>; Wed,  2 Oct 2002 21:15:46 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 21:15:46 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92JeNK24434 for
+    <jm-rpm@jmason.org>; Wed, 2 Oct 2002 20:40:23 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g92Jc0f24595; Wed, 2 Oct 2002 21:38:00
+    +0200
+Received: from taz.localdomain (adsl-66-124-59-34.dsl.anhm01.pacbell.net
+    [66.124.59.34]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g92Jbkf24533 for <rpm-list@freshrpms.net>; Wed, 2 Oct 2002 21:37:46 +0200
+Received: by taz.localdomain (Postfix, from userid 500) id BBD8189D0;
+    Wed,  2 Oct 2002 12:36:02 -0700 (PDT)
+From: Gary Peck <gbpeck@sbcglobal.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: alsa-driver.spec tweak for homemade kernels
+Message-Id: <20021002193602.GC6266@taz.home.priv>
+Mail-Followup-To: Gary Peck <gbpeck@sbcglobal.net>,
+	rpm-list@freshrpms.net
+References: <3D9AA650.2000909@eecs.berkeley.edu>
+    <20021002100919.2e3168a8.matthias@rpmforge.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="RnlQjJ0d97Da+TV1"
+Content-Disposition: inline
+In-Reply-To: <20021002100919.2e3168a8.matthias@rpmforge.net>
+User-Agent: Mutt/1.4i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 2 Oct 2002 12:36:02 -0700
+Date: Wed, 2 Oct 2002 12:36:02 -0700
+
+
+--RnlQjJ0d97Da+TV1
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+On Wed, Oct 02, 2002 at 10:09:19AM +0200, Matthias Saou wrote:
+> Well, I don't really find it consistent at all to use an rpm package built
+> against something that wasn't installed through rpm :-/
+
+Following that reasoning, I've been installing all my custom-built
+kernels through rpm recently. I find it annoying, though, that 
+alsa-kernel, and similar packages, will only build for the currently 
+running kernel.
+
+So I've attached a patch to specify an alternate kernel by setting the
+"TARGET_KERNEL" environment variable before running rpmbuild. You
+still need to have the rpm for the specified kernel installed, but at
+least it doesn't have to be currently running. It's kinda hackish, so
+if someone has a better way to do this, let me know.
+
+gary
+
+--RnlQjJ0d97Da+TV1
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline; filename="alsa-driver-spec.patch"
+
+--- alsa-driver.spec.orig	2002-10-02 12:25:26.000000000 -0700
++++ alsa-driver.spec	2002-10-01 21:23:19.000000000 -0700
+@@ -3,9 +3,12 @@
+ # Comma separated list of cards for which to compile a driver
+ %define	cards		all
+ 
+-%define	kunamer		%(uname -r)
+-%define	kversion	%(echo $(uname -r) | sed -e s/smp// -)
+-%if %(uname -r | grep -c smp)
++%if %(printenv TARGET_KERNEL >/dev/null && echo -n 1 || echo -n 0)
++%define usekernel	%(echo -n $TARGET_KERNEL)
++%endif
++%define	kunamer		%{!?usekernel: %(uname -r)}%{?usekernel}
++%define	kversion	%(echo %{kunamer} | sed -e s/smp// -)
++%if %(echo %{kunamer} | grep -c smp)
+ 	%{expand:%%define ksmp -smp}
+ %endif
+ %define	karch		%(rpm -q --qf '%%{arch}' kernel%{?ksmp}-%{kversion})
+@@ -77,6 +80,7 @@
+ 	%{?_without_isapnp:--with-isapnp=no} \
+ 	%{?_without_sequencer:--with-sequencer=no} \
+ 	%{?_without_oss:--with-oss=no} \
++	%{?usekernel:--with-kernel=/lib/modules/%{usekernel}/build} \
+ 	--with-cards=%{cards}
+ make
+ 
+@@ -106,10 +109,10 @@
+ rm -f %{buildroot}/etc/rc.d/init.d/alsasound
+ 
+ %post -n alsa-kernel%{?ksmp}
+-/sbin/depmod -a
++/sbin/depmod -a -F /boot/System.map-%{kunamer} %{kunamer}
+ 
+ %postun -n alsa-kernel%{?ksmp}
+-/sbin/depmod -a
++/sbin/depmod -a -F /boot/System.map-%{kunamer} %{kunamer}
+ 
+ %clean
+ rm -rf %{buildroot}
+
+--RnlQjJ0d97Da+TV1--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

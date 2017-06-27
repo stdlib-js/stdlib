@@ -1,0 +1,103 @@
+From fork-admin@xent.com  Mon Aug 12 11:11:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2AF374417C
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BMpob17088 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 23:51:51 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 560D5294190; Sun, 11 Aug 2002 15:50:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tux.w3.org (tux.w3.org [18.29.0.27]) by xent.com (Postfix)
+    with ESMTP id 23EDB294142 for <fork@xent.com>; Sun, 11 Aug 2002 15:49:49
+    -0700 (PDT)
+Received: from w3.org (IDENT:root@tux.w3.org [18.29.0.27]) by tux.w3.org
+    (8.9.3/8.9.3) with ESMTP id SAA15363; Sun, 11 Aug 2002 18:50:50 -0400
+Message-Id: <3D56F02E.8060909@w3.org>
+From: Dan Brickley <danbri@w3.org>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1a) Gecko/20020610
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Gordon Mohr <gojomo@usa.net>
+Cc: fork <fork@spamassassin.taint.org>
+Subject: Re: Forged whitelist spam
+References: <Pine.LNX.4.33.0208111330190.3981-100000@hydrogen.leitl.org>
+    <005301c24179$ac92b820$640a000a@golden>
+X-Enigmail-Version: 0.63.3.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 23:15:58 +0000
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+
+Gordon Mohr wrote:
+> Eugen Leitl writes:
+> 
+>>On Sun, 11 Aug 2002, Gordon Mohr wrote:
+>>
+>>>If you crypto-sign your outgoing mail, you don't have to set your
+>>>mailwall whitelist to accept unsigned mail spoofed as being from you.
+
+Yup, I've been meaning to cobble together procmail + script for this, as 
+a few Google searches didn't turn up anything. Did anyone here get there 
+first?
+
+(I guess I want a config file of mailboxes who normally sign their mail, 
+and procmail that runs gpg and adds headers...)
+
+>>Users don't like entering passphrases when sending email. USB fobs, smart 
+>>cards or other removable hardware are not yet widespread.
+> 
+> Bad assumption.
+> 
+> A reasonable UI would have me enter my passphrase *at most* each 
+> time I launch my mail program -- never more than once per day,
+> sometimes once per week. 
+
+FWIW, the 'Enigmail' add-on for Mozilla's mail client has it happily 
+talking to GPG (and I believe PGP). You can choose how long it remembers 
+your passphrase for, default is 15 mins.
+
+see http://enigmail.mozdev.org/
+
+This feature was enough to get my off my Pine habit, since (to answer 
+the original question) the combination of SpamAssassin and shared 
+whitelists means that forged 'From:' headers are pretty much the only 
+spam I see in my inbox now.
+
+Dan
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQE9VvAyPhXvL3Mij+QRAkDdAJ4m/LO7Y0aki66H5AIwbmsX8Q/PegCfSQgI
+ZW2XmlcnQtrzALPimthvlr8=
+=wdf/
+-----END PGP SIGNATURE-----
+
+http://xent.com/mailman/listinfo/fork
+
+

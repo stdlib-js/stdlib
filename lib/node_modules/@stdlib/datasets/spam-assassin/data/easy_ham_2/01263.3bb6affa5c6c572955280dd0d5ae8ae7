@@ -1,0 +1,84 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 20 10:59:37 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 48A6A43C36
+	for <jm@localhost>; Tue, 20 Aug 2002 05:58:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:58:37 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JNJ5Z13599 for
+    <jm-rpm@jmason.org>; Tue, 20 Aug 2002 00:19:05 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7JNH1J08874; Tue, 20 Aug 2002 01:17:02
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7JNG2J27900 for <rpm-list@freshrpms.net>; Tue, 20 Aug 2002 01:16:02 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: when building a rpm i386-redhat-linux- is appended to man page
+Message-Id: <20020820010002.6b55dcac.matthias@egwn.net>
+In-Reply-To: <BADF3C947A1BD54FBA75C70C241B0B9E762E67@ex02.idirect.net>
+References: <BADF3C947A1BD54FBA75C70C241B0B9E762E67@ex02.idirect.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 20 Aug 2002 01:00:02 +0200
+Date: Tue, 20 Aug 2002 01:00:02 +0200
+
+Once upon a time, Harig, wrote :
+
+> Actually, I was hoping that you could answer the question "how can we 
+> override an existing switch?"  For example, %configure uses the command-
+> line switch '--prefix'.  How can we override that value?
+> 
+>   %configure ???
+
+Quite honestly, I thought that the last occurrence was the one that
+counted. I'm almost sure I've already done something like :
+%configure --bindir=%{_sbindir}
+or even
+%configure --sysconfdir=%{_sysconfdir}/%{name}
+
+Are you sure that it was the first for you? Maybe you're forgetting to also
+override it in %makeinstall like follows :
+%makeinstall bindir=%{buildroot}%{_sbindir}
+or even
+%makeinstall sysconfdir=%{buildroot}%{_sysconfdir}/%{name}
+
+Is that it?
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

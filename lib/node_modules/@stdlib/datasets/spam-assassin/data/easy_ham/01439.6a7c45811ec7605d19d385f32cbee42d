@@ -1,0 +1,93 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 12:51:01 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6AAE016F1F
+	for <jm@localhost>; Thu,  5 Sep 2002 12:50:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:50:59 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85BdUZ17221 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 12:39:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17muyZ-0002te-00; Thu,
+    05 Sep 2002 04:39:07 -0700
+Received: from relay05.indigo.ie ([194.125.133.229]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17muxW-0001OV-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 04:38:02 -0700
+Received: (qmail 67311 messnum 1193176 invoked from
+    network[194.125.172.167/ts12-167.dublin.indigo.ie]); 5 Sep 2002 11:37:56
+    -0000
+Received: from ts12-167.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.172.167) by relay05.indigo.ie (qp 67311) with SMTP;
+    5 Sep 2002 11:37:56 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id 7262216F22;
+    Thu,  5 Sep 2002 12:24:14 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id 6F0D8F7B1; Thu,  5 Sep 2002 12:24:14 +0100 (IST)
+To: "Clark C . Evans" <cce@clarkevans.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] getting single-user spam assassin to work in FreeBSD
+    default install
+In-Reply-To: Message from
+    "Clark C . Evans"
+    <cce@clarkevans.com> of
+    "Thu, 05 Sep 2002 02:30:19 -0000."
+    <20020905023019.A43636@doublegemini.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020905112414.7262216F22@spamassassin.taint.org>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 05 Sep 2002 12:24:09 +0100
+Date: Thu, 05 Sep 2002 12:24:09 +0100
+
+
+"Clark C . Evans" said:
+
+> Hello.  I'm hosted on a FreeBSD box where I can't modify the
+> local Perl installation.  I downloaded and installed procmail
+> in my home directory, and now I'm trying to get spamassassin to work...
+> 
+> bash-2.05$ perl Makefile.PL PREFIX=/home/cce SYSCONFDIF=/home/cce/etc
+> Warning: prerequisite HTML::Parser 0 not found at (eval 1) line 219.
+> Warning: prerequisite Pod::Usage 0 not found at (eval 1) line 219.
+> 'SYSCONFDIF' is not a known MakeMaker parameter name.
+
+SYSCONFDIR.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

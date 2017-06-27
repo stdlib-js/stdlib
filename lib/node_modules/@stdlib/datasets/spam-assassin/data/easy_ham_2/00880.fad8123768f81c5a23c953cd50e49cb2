@@ -1,0 +1,93 @@
+From fork-admin@xent.com  Thu Jul 25 11:10:09 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 48E38440D6
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:36 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P24Y424328 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 03:04:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9C9DF29415E; Wed, 24 Jul 2002 19:03:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id E2EA929415B for <fork@xent.com>;
+    Wed, 24 Jul 2002 19:02:15 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-022.ptrb.interhop.net
+    [165.154.190.86]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6P1bRO09254 for <fork@xent.com>; Wed, 24 Jul 2002 21:37:27 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id E9DDB1C39A;
+    Wed, 24 Jul 2002 21:57:12 -0400 (EDT)
+To: <fork@spamassassin.taint.org>
+Subject: Re: Asteroids anyone ?
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2785.192.216.194.113.1027554367.squirrel@webmail.magnesium.net>
+    <1027559672.2056.38.camel@avalon> <029a01c2337b$458f5310$640a000a@golden>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m28z40o9hj.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 21:57:12 -0400
+
+>>>>> "G" == Gordon Mohr <gojomo@usa.net> writes:
+
+    G> Voila! No collision -- at least not with the initial
+    G> threat. And no need to travel out to anywhere near the meteor,
+    G> either. Just the moon.
+
+Yeah, right.  Considering the Genesis project just won an award for
+figuring out (surprise, surprise) that N-body problems with 10+ bodies
+yield some interesting synergetic surprises ...  suffice it to say
+that the issue has been hashed over in sci.astro many, many times,
+since even long before Hollywood posed the problem, and the very best
+advice is still "duck and cover"; if you are still going to nudge
+anything, though, I'd nudge the rock (the one the size of a small
+town) as you're less likely to re-define global agriculture that way.
+
+'Course, you're gonna have this problem of distributing the force over
+a large enough surface area that it translates into a resillient
+compression wave instead of a knifeblade/diamond faultline split.
+It's also not a game of billiards, but a 6+ dimensional collision
+problem (space, time, spin, temp, maybe electromag too if there's any
+heavy metals in it, and there often is) complete with relativistic
+effects and everything. Hands up all those with experience subjecting
+blackboxed alien geology to sustained forces in excess of 100 megatons
+(10% of it's own momentum).  I'm going to trust the US Army with this
+when they can't even /find/ more than a few hundred Al Queda in a
+desert? 
+
+Oh, another problem: It's not the only rock out there.  We're just
+getting better at spotting them.
+
+Tell ya what: when you cowboys do get ready to bally-hootin' out to
+blow-er-up-real-good, you let me know, eh, so I can move the the next
+solar system before you do.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

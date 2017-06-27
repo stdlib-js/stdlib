@@ -1,0 +1,84 @@
+From razor-users-admin@lists.sourceforge.net  Fri Jul 26 07:56:25 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 60B05440E7
+	for <jm@localhost>; Fri, 26 Jul 2002 02:56:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 07:56:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6Q6tN430578 for <jm-razor@jmason.org>; Fri, 26 Jul 2002 07:55:23 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17Xyna-00029D-00; Thu,
+    25 Jul 2002 23:42:02 -0700
+Received: from cpe.atm0-0-0-111163.0xc2c06a6d.boanxx1.customer.tele.dk
+    ([194.192.106.109] helo=mail.jth.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XynA-00030l-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 25 Jul 2002 23:41:36 -0700
+Received: from vennely1 (vennely1 [194.192.106.109]) by mail.jth.net
+    (Postfix) with SMTP id 7047918684 for <razor-users@lists.sourceforge.net>;
+    Fri, 26 Jul 2002 08:41:25 +0200 (CEST)
+From: =?ISO-8859-1?Q?J=F8rgen_Thomsen?= <list@jth.net>
+To: razor-users@example.sourceforge.net
+Message-Id: <j4r1kuk05fo69uf0t92mh82h5bokoll2o7@4ax.com>
+References: <20020725231115.GA11850@nexus.cloudmark.com>
+    <t851kuc2r0819al79haubtjvvubhnqai1s@4ax.com>
+    <20020726013315.GC11850@nexus.cloudmark.com>
+In-Reply-To: <20020726013315.GC11850@nexus.cloudmark.com>
+X-Mailer: Forte Agent 1.91/32.564
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Subject: [Razor-users] Re: Content-Type: message/rfc822  supported ?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 26 Jul 2002 08:41:23 +0200
+Date: Fri, 26 Jul 2002 08:41:23 +0200
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6Q6tN430578
+
+Thu, 25 Jul 2002 18:33:15 -0700 skrev du:
+
+>  Not sure what you're asking.
+  
+I just want to be sure, that forwarding an email to my own spamtrap address
+which performs a razor-report on the entire received email is not waste of
+time, because the contents of the forwarded email is not recognized as equal
+to the email originally received. The forwarded email has a new set of
+headerlines, which should be discarded and instead the headerlines of the
+original message are in the body of this new message and should be recognized
+as such and treated properly.
+
+An ordinary Forward Unquoted in Agent is subject to character set conversions
+and does not depict the received spam in its original form.
+
+I hope this clarifies my concerns.
+
+- Jørgen
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

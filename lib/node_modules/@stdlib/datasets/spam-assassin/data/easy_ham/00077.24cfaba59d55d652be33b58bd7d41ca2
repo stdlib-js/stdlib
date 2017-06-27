@@ -1,0 +1,127 @@
+From fork-admin@xent.com  Mon Aug 26 15:31:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D129F4415C
+	for <jm@localhost>; Mon, 26 Aug 2002 10:25:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:25:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7NN0WZ11779 for <jm@jmason.org>;
+    Sat, 24 Aug 2002 00:00:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 842DE2940F4; Fri, 23 Aug 2002 15:58:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id A04E4294099 for <fork@xent.com>; Fri,
+    23 Aug 2002 15:57:53 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 6913F3EDB5;
+    Fri, 23 Aug 2002 19:01:45 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 674703ED5C; Fri, 23 Aug 2002 19:01:45 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Cc: vox@mindvox.com
+Subject: The GOv gets tough on Net Users.....er Pirates..
+Message-Id: <Pine.BSO.4.44.0208231900430.16631-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 23 Aug 2002 19:01:45 -0400 (EDT)
+
+from http://www.arstechnica.com/
+
+"There has mostly been talk thus far and little action, but the Department
+of Justice says it may be ready to file criminal lawsuits against
+individuals [1] who distribute or receive unauthorized copyrighted
+material over the Internet. Deputy Assistant Attorney General John Malcolm believes
+that "criminal prosecutions of copyright offenders are now necessary to
+preserve the viability of America's content industries." Malcolm also
+believes that people who trade copyrighted material think they are
+participating in a legal activity. I certainly think people who download
+copyrighted works understand that such distribution--barring provisions
+such as fair use--is not authorized, and it is not surprising to see
+businesses continue to look for means to discourage distribution of
+copyrighted works.
+
+
+"Some prosecutions that make that clear could be very helpful...I think
+they would think twice if they thought there was a risk of criminal
+prosecution," said [RIAA President Cary] Sherman, who was on the same
+conference panel.
+
+I'm not too confident that lawsuits would have the effect Sherman is
+hoping for. Although infrequent, there have already been civil suits or
+warnings issued to private individuals, and they have served as minor
+deterrents to the file-sharing community at large. Criminal lawsuits
+carrying with them the possibility of prison sentences may generate
+further animosity against groups such as the RIAA and may be difficult to
+initiate because of the "schooling" effect of millions of systems
+participating in file sharing. Only servers would seem to stand out from
+the crowd.
+
+The article cites the No Electronic Theft (NET) Act [2], which defines
+illegal  activity and maximum penalties for copyright infringement:
+
+
+Criminal infringement: Any person who infringes a copyright willfully for
+purposes of commercial advantage or private financial gain, or by the
+reproduction or distribution, including by electronic means, during any
+180-day period, of 1 or more copies or phonorecords of 1 or more
+copyrighted works, which have a total retail value of more than $1,000....
+For purposes of this subsection, evidence of reproduction or distribution
+of a copyrighted work, by itself, shall not be sufficient to establish
+willful infringement.
+...
+The term "financial gain" includes receipt, or expectation of receipt, of
+anything of value, including the receipt of other copyrighted works.
+
+
+Therefore, receipt of a work of value would be defined as "financial gain"
+even if no money is involved. The NET Act excerpt does not clarify how the
+value of a work is determined; an album or movie could be worth only $15
+to millions of dollars depending on whether the value is assessed from the
+perspective of the consumer or copyright holder.
+
+The statute of limitations:
+
+
+507. Limitations on actions
+
+(a) Criminal Proceedings.--No criminal proceeding shall be maintained
+under the provisions of this title unless it is commenced within five
+years after the cause of action arose.
+
+(b) Civil Actions.--No civil action shall be maintained under the
+provisions of this title unless it is commenced within three years after
+the claim accrued.
+
+The penalties are too extensive to list here, but they can be found in
+Section 2319: Criminal infringement of a copyright. In general, first-time
+criminal offenses will carry a maximum prison sentence of 1 year.
+
+I'm still not sure where the DOJ would start in choosing people to
+prosecute because of the aforementioned "schooling" effect, but my guess
+would be that, just like speeding, primarily the most prominent
+individuals who operate large servers or transfer the most data will be
+targeted in order to discourage more recreational file sharers. Thanks to
+MonaLisaOverdrive for pointing out this story.
+"
+
+[1] http://news.com.com/2100-1023-954591.html?tag=fd_top
+[2] http://www.usdoj.gov/criminal/cybercrime/17-18red.htm
+
+http://xent.com/mailman/listinfo/fork
+

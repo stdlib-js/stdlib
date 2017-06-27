@@ -1,0 +1,89 @@
+From ilug-admin@linux.ie  Fri Aug  2 16:33:37 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 376C944108
+	for <jm@localhost>; Fri,  2 Aug 2002 11:32:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:32:44 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72Ektn01625 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 15:46:55 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id NAA02863 for <jm-ilug@jmason.org>;
+    Fri, 2 Aug 2002 13:43:36 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA07897; Fri, 2 Aug 2002 13:41:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from ogma.tuatha.org (postfix@ogma.tuatha.org [62.17.27.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA07862 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 13:41:31 +0100
+Received: from ogma (localhost [127.0.0.1]) by ogma.tuatha.org (Postfix)
+    with ESMTP id 6A5BC4BE05 for <ilug@linux.ie>; Fri,  2 Aug 2002 13:41:30
+    +0100 (IST)
+Content-Type: text/plain; charset="us-ascii"
+From: Colm Buckley <colm@newworldiq.com>
+Organization: NewWorldIQ
+To: "Irish Linux Users' Group" <ilug@linux.ie>
+Date: Fri, 2 Aug 2002 13:41:30 +0100
+User-Agent: KMail/1.4.2
+MIME-Version: 1.0
+Message-Id: <200208021341.30252.colm@newworldiq.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    NAA07862
+Subject: [ILUG] Sysadmin / IT person wanted
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi, folks -
+
+Wearing my other hat today - we're looking for a competent and
+experienced system administrator here, and I'd like anyone who's
+interested to contact me.
+
+The job is for a Windows (NT and 2000) and Linux (Debinan) system and
+network administrator, with a good, deep knowledge of both
+environments.  The successful candidate will have a broad range of
+responsibilities in maintaining and developing our IT and production
+infrastructure, including WAN/secure networking to remote offices,
+email systems management, backups, etc., so experience in managing
+larger networks is required.
+
+Some development and implementation research experience would also be
+highly desireable.
+
+In addition, the position will involve internal IT support for a
+primarily Windows network with approximately fifty users in several
+locations.
+
+The precise remuneration package will depend on the skillset of the
+successful applicant, but will include as standard a performance-based
+bonus scheme, health insurance, stock options and participation in a
+company-backed pension plan.
+
+Please contact me directly if you wish to apply.
+
+We now return you to your regularly-scheduled hrishy.
+
+           Colm
+
+-- 
+Colm Buckley - Systems Architect at NewWorldIQ
+w : http://www.newworldiq.com/    e : colm@newworldiq.com
+t : +353 1 4334334    f : +353 1 4334301    m : +353 87 2469146
+Quantum mechanics: the dreams stuff is made of.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

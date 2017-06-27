@@ -1,0 +1,378 @@
+Return-Path: <Online#3.20345.8a-FdJElUl0a335ndRR.1.b@newsletter.online.com>
+Received: from acmta3.cnet.com (abv-sfo1-acmta3.cnet.com [206.16.1.162])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6HNV1J32459
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Thu, 18 Jul 2002 00:31:01 +0100
+Received: from abv-sfo1-ac-agent5 (206.16.0.240) by acmta3.cnet.com (PowerMTA(TM) v1.5); Wed, 17 Jul 2002 16:23:32 -0700 (envelope-from <Online#3.20345.8a-FdJElUl0a335ndRR.1.b@newsletter.online.com>)
+Message-ID: <1527461.1026948654010.JavaMail.root@abv-sfo1-ac-agent5>
+Date: Wed, 17 Jul 2002 16:30:54 -0700 (PDT)
+From: CNET Virus  Security Newsletter <Online#3.20345.8a-FdJElUl0a335ndRR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: CNET: Copycat worms and a PGP Outlook flaw
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+	<title>CNET Virus & Security Newsletter</title>
+
+</head>
+<body bgcolor="#eeeeee">
+<center>
+<a href="top"></a>
+
+
+<!-- header -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+<tr valign=top>
+	<td width=442 colspan=4>
+		<img src="http://a.r.tv.com/cnet.1d/i/nl/sw/442_viriusHEAD_NEWSLTR.gif" width="442" height="60" border="0" alt="CNET Virus & Security Newsletter"><br>
+			<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+				<tr><td bgcolor="#000000" colspan=3><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+				<tr>
+					<td bgcolor="#000000" width=1 rowspan=2><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+					<td width=10 rowspan=2><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+					<td  width=430><img src="http://home.cnet.com/b.gif" width="1" height="10" border="0"><br></td>
+				</tr>
+				<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"><br></td></tr>
+      		</table>	
+	</td>
+	<!-- Skyscraper column -->
+	<td width=160 rowspan=2>
+		<img src="http://home.cnet.com/i/dp/dd_b.gif" width="160" height="18" border="0"><br>
+		<table cellpadding=0 cellspacing=0 border=0 width=160>
+		<tr><td align=center bgcolor="#eeeeee"><img src="http://www.cnet.com/Ads/Media/Images/ad10-dk.gif" width="120" height="10" border="0"><br></td></tr>
+		</table>
+	<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe><br>
+		&nbsp;<br>
+
+		
+		<!-- right column content -->
+&nbsp;<br>
+
+	</td>
+	<td width=9 rowspan=2>
+		<img src="http://home.cnet.com/i/dp/dd_c.gif" width="9" height="60" border="0"><br>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffccoo"><img src="http://home.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>		
+	</td>
+	<td width=1 bgcolor="#000000" rowspan=2>
+		<table width=1 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#eeeeee"><img src="http://home.cnet.com/b.gif" width="1" height="60" border="0"><br></td></tr>
+		</table>		
+
+	</td>
+</tr>
+
+<!-- promo section -->
+
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=430 bgcolor="#ffffff">
+	
+		<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#ffffef">
+			<tr valign=top>
+			<td width=10><img src="http://home.cnet.com/b.gif" alt="" width="10" height="1" border="0"><br></td>
+			<td width=412>
+			
+			<img src="http://home.cnet.com/b.gif" width="1" height="3" border="0"><br>
+			<img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><font face="Arial, Helvetica" size="-2">July 17, 2002</font><br>
+			<img src="http://home.cnet.com/b.gif" width="1" height="3" border="0"><br>
+				
+				
+				<table cellpadding=0 cellspacing=0 border=0 width=412>
+				<tr valign=top>
+					<td width=76 align=right>
+						<img src="http://a.r.tv.com/cnet.1d/i/nl/sw/66x86_robertv.gif" width=66 height=86><br>
+						<font face="arial, helvetica" size="-2" color="#666666">
+						--<A HREF="mailto:robert.vamosi@cnet.com">Robert Vamosi</A><br>Senior Associate Editor<br>CNET Software and Internet Services</font></td>
+					<td width=10>&nbsp;</td>
+					<td><font face="Arial, Helvetica">
+						<font color="#333333"><B>Dear Readers,</B></font><BR>
+						<font size="-1">So far, 2002 has been a year marked with variations on earlier
+worms. If you update your antivirus software on a regular basis,
+these new versions of Frethem and Yaha shouldn't be a nuisance.
+But if you haven't updated in a while, these variants--plus the
+continuing threat of Klez.h--should motivate you. In security
+news, a flaw in certain versions of PGP encryption could affect
+Outlook users. Read on to learn whether you're vulnerable.
+ </font><br>
+						&nbsp;<br>
+					</td>
+					
+				</tr>
+				</table>
+				
+			</td>
+
+			<td width=8><img src="http://home.cnet.com/b.gif" alt="" width="8" height="1" border="0"><br></td>
+			</tr>
+			</table>
+
+	<!-- bottom rule -->
+	<table cellpadding=0 cellspacing=0 border=0 width=430>
+	<tr valign=top>
+		<td bgcolor="#F7D69C"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	</tr>
+	</table>
+
+<table border="0" width="100%" cellpadding="10" cellspacing="0"><tr><td>
+
+<font face="Arial, Helvetica">			
+
+
+<img src="http://www.cnet.com/i/nl/sw/HEAD_alerts.psd-1.gif" alt="Alerts" width="125" height="19" border="0"><br>
+<img src="http://home.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+
+<table cellpadding=0 cellspacing=0 border=0 width=93 align=left>
+<tr><td><a href="http://clickthru.online.com/Click?q=a0-11h8QQBqN32HwbFUByjw2PB1s79R" ><img src="http://www.cnet.com/i/tt/col/021302broken.jpg" width="85" height="110" border="0"></a></td></tr>
+</table>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=b5-50FcQ7U793ndUQ41PHq15ZNEEZuR" >Frethem.k worm wants to give you a password</a></b><br>
+<font size="-1"> An e-mail message that promises to reveal secret information with
+a password is yet another variant from the pesky Frethem worm
+family. Frethem.k, technically known as w32.frethem.k@mm, also
+called Frethem.l by some vendors, uses its own SMTP engine to
+send e-mail using addresses obtained from infected systems. This
+worm does not carry a destructive payload. Mac and Linux users
+are not affected.
+<P>
+</font>
+<P>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=ca-iciuQUgF78zCVXwcl8jfOfRHHUsR" >Yaha.e screensaver worm spreading</a></b><br>
+<font size="-1"> The Yaha.e mass-mailing worm masquerades as a friendly
+screensaver, proving that users worldwide are still opening
+attached files from total strangers. Yaha.e (w32.yaha.e@mm, also
+known as Lentin.e, Yaha.f, and Yaha.g) is a successful variant of
+a worm first seen around Valentine's Day this year. Thankfully,
+this worm does not affect Mac, Linux, or Unix users.
+<P>
+</font>
+<P>
+
+<P>
+<img src="http://www.cnet.com/i/nl/sw/RHC_news.psd-1.gif" alt="News" width="150" height="20" border="0"><br>
+<img src="http://home.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=df-1kJhQLEFhjXSWREfbQq-Kh1XhaZR" >Leaky PGP Outlook plug-in </a></b><br>
+<font size="-1">PGP 7.03 and 7.04, widely used plug-ins for Microsoft's Outlook
+e-mail client, inadvertently weakens security and leaves the mail
+program open to attack. Fortunately, there is a patch available.
+</font>
+<P>
+<!--<IMG height=20 alt="Software Mailbag" src="http://a.r.tv.com/cnet.1d/i/nl/sw/rhc_mail.gif" width=150 border=0 NOSEND="1">
+<img src="http://home.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=f4-Y-XEQ0skaAw31DvuUJ5QddfWmTdR" >Are Web-based e-mail accounts less virus-prone than Outlook?</a></b><br>
+<font size="-1">>Is it true that if I use a Web-based e-mail service such as<BR> 
+>Yahoo I'll be safe from Outlook-related viruses? --Charles M.<BR>
+<P>
+No. Many new viruses do not require a PC-based e-mail client such
+as Outlook in order to spread. These new viruses, including 
+Klez, have their own e-mail client (SMTP) and can find e-mail
+addresses within cached Web pages on an infected machine,
+bypassing the need to use Outlook's Address Book. Larger
+Web-based e-mail services, such as Hotmail and Yahoo Mail, screen
+mail hosted on their sites for viruses, but there's no beating
+having a good antivirus product on your desktop just in case.
+
+</font>-->
+
+<br><img src="http://home.cnet.com/b.gif" width="410" height="5" border="0"><br>
+</font><br>
+<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+		<table width="100%"  cellpadding="0" cellspacing="0" border="0">
+		<tr valign="top">
+		<td width="85"><a href="http://clickthru.online.com/Click?q=09-joDSIj88OJFwid8LYSS7ZMgtY8cR" ><img src="http://a.r.tv.com/cnet.1d/i/p/06060digidark.jpg" width="85" height="110" border="0" alt="" /></a></td>
+	<td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+	<td width="100%"><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=1e-JQuLI4jWhRb77CPqEsB8LE27qdRR" ><b>Digital photography starter kit</b></a><br />This guide to digital photos will show you the best products to take your images from snap to finish.</font></td>
+		</tr>
+		<tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+	&#149; <a href="http://clickthru.online.com/Click?q=33-vUjnINjX0Emwshgz6yClxb-7XsFR" >Panasonic's littlest Lumix</a><br />
+	&#149; <a href="http://clickthru.online.com/Click?q=49-ZM4cIEpSmiU90gIVX4RVXFO5JSrR" >Minolta"s 4-megapixel Dimage F100</a><br />
+	</font></td></tr>
+	</table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+	<table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	<tr>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<font face="arial, helvetica" color="#666666" size="-1"><b>Most popular products</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<b>Digital cameras</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+	1. <a href="http://clickthru.online.com/Click?q=5e-ssGdIn065ayIdlshsnStcVTQzciR" >Canon PowerShot G2</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	2. <a href="http://clickthru.online.com/Click?q=73-__ZeIBBtEqr99nqT8UEE0WNrUZlR" >Canon PowerShot S30</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	3. <a href="http://clickthru.online.com/Click?q=88-ec5PQQKxbqHeSXm-rU358atSBb9R" >Canon PowerShot S40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	4. <a href="http://clickthru.online.com/Click?q=9d-kkCWQv0ueCRzmRuuKLvd75wKZzuR" >Canon PowerShot A40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	5. <a href="http://clickthru.online.com/Click?q=b2-M4pwQX0aTcWeIO7jM2cmpxUCPusR" >Sony Cyber Shot DSC-F707</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+	<img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=c7-KG43QLPWulnwpn7NWtUoF24wxeZR" >See all most popular cameras</a></b><br />
+	<img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+	</font></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	</tr>
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	</table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table><br />
+<!-- /Leads Module -->
+
+
+
+
+<!--Horizontal Brick
+<P><IMG border=0 height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 
+NOSEND="1"><BR> <IMG border=0 height=8 src="http://home.cnet.com/i/it/newsletter/rule2.gif" width=410 NOSEND="1"> <BR>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%"><TBODY><TR vAlign=top>
+<TD><FONT face="arial, helvetica" size=-1><B>
+ <UL>
+        <LI><A 
+        href="http://www.tech24.com/cnet.asp?tag=st.nl.horizontal.xpro-txt.ba_th">Live tech help: submit your question now</A> <LI><A 
+        href="http://news.com.com/1200-1120-933954.html?tag=st.nl.horizontal.xpro-txt.newsvision">CNET News.com: Top CIOs on the future of IT</A> <LI><A 
+        href="http://www.cnet.com/techjobs/0-7067.html?tag=st.nl.horizontal.xpro-txt.tj">Find a job you love: more than 1 million postings</A> <LI><A 
+        href="http://www.cnet.com/go/to?tag=st.nl.horizontal.xpro-txt&destURL=http://techupdate.zdnet.com/techupdate/stories/main/0,14179,2868051,00.html">ZDNet: This IT director has had enough of Microsoft</A> <LI><A 
+        href="http://electronics.cnet.com/electronics/0-9400734-1304-8810525.html?tag=st.nl.horizontal.xpro-txt.ba_ed">May Editors' Choice Award: Pioneer Home Theater System HTS-910DV</A> 
+</LI></UL></B></FONT></TD>
+</TR></TBODY></TABLE></P>
+End Horizontal Brick-->
+<img src="http://home.cnet.com/i/nl/rule.gif" width="410" height="8" border="0"><br>
+
+
+
+
+</td></tr></table>
+
+
+	<!-- Begin search box -->
+	<center>
+	<table border="0" cellpadding="1" cellspacing="0" width="90%"><tr><td bgcolor="#CCCCCC">
+
+	<table border=0 cellspacing=0 cellpadding=0 width="100%"><form method="GET" action="http://home.cnet.com/search/redirector/1,10207,0-0,00.html">
+	<tr align=center valign=middle bgcolor="#FFFFFF">
+	<td height=40 align=right nowrap>&nbsp;</td>
+	<td class="f"><font face="arial, helvetica" size="-1"><b>Search</b>&nbsp;</font></td>
+	<td align=left><input type="Text" class="f" name="qt" size="18" maxlength="255"></td>
+	<td>&nbsp;<select name="tg"><option value="sw-8888" selected>In Software<option value="nw">All CNET&nbsp;&nbsp;&nbsp;&nbsp;<option value="wb">The Web</select></font></center></td>
+	<td>&nbsp;<input name='search' type='submit' class='f' value=' Go! '>&nbsp;
+	<input type="hidden" name="tt" value="st.sw.8888.sbsr"></td>
+	</tr></form>
+	</table> 
+	
+	</td></tr></table> 
+	</center>  
+	<!-- End search box -->
+
+<img src="http://home.cnet.com/b.gif" width="1" height="8" border="0"><br>
+
+	
+	</td>
+</tr>
+</table>
+
+
+
+
+<!-- Thin grey line -->
+<table cellpadding=0 cellspacing=0 border=0 width=612>
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=599 bgcolor="#CCCCCC"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+
+
+
+<table cellpadding=0 cellspacing=0 border=0 width=612>
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=600 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=dd-tpm0QzWdTGwOlvzGZP85eXsJh-uR" >
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org<p>
+
+<A NOTRACK HREF="http://clickthru.online.com/Click?q=f2-OZ_TrXwDRlHtO_ABBg_z6Iyim9eMm9RR">Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=07-HqCzI5rqvhaOumBiqzUbrvLkiDZR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=1c-cs_iIFr4T12_OlBn9kgGa2oXqGdR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=31-V_YRIjMsV6Ypq0FyLxjkqVAXXbcR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=46-19zwInpD4Bqrj9Qa1cN0535V0YiR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=5b-5LOwIBKDBUF5b1NxCjjvDSwizzlR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=70-3vnJIdp6DGdVgExKns2asfI8Uk4R" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=85-2G2oQ7KQokoQVyCaf70SVbToBBuR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=9a-b6_GQTMBaJXosV-Figi7yr9FKgsR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136487&NL=e461&ISSUE=2002-07-17" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=b1-YzzzJ-x0nIp9RPY66tnQmlHWbPRRR">
+

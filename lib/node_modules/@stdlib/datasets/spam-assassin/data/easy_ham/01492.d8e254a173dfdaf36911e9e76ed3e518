@@ -1,0 +1,74 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 19 16:31:49 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6BB0D16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 16:31:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:31:48 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8JEFCC22965 for <jm-sa@jmason.org>; Thu, 19 Sep 2002 15:15:13 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17s1vV-0007ne-00; Thu,
+    19 Sep 2002 07:05:05 -0700
+Received: from yertle.kcilink.com ([216.194.193.105]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17s1uY-0002kx-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 19 Sep 2002 07:04:06 -0700
+Received: from onceler.kciLink.com (onceler.kciLink.com [216.194.193.106])
+    by yertle.kciLink.com (Postfix) with ESMTP id 988432178B for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 19 Sep 2002 10:04:02 -0400
+    (EDT)
+Received: by onceler.kciLink.com (Postfix, from userid 100) id BB76E3D07;
+    Thu, 19 Sep 2002 10:04:01 -0400 (EDT)
+From: Vivek Khera <khera@kcilink.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15753.55633.535730.28416@onceler.kciLink.com>
+To: "spamassassin-talk" <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Ignore System Messages - How?
+In-Reply-To: <20020918203819.M82175@b2unow.com>
+References: <20020918203819.M82175@b2unow.com>
+X-Mailer: VM 7.07 under 21.4 (patch 8) "Honest Recruiter" XEmacs Lucid
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Thu, 19 Sep 2002 10:04:01 -0400
+Date: Thu, 19 Sep 2002 10:04:01 -0400
+
+>>>>> "v" == vernon  <vernon@b2unow.com> writes:
+
+v> Some of my "Security Violations" and "Unusual System Events" are being 
+v> tagged as SPAM by SpamAssassin. How do I get SA to ignore these messages?
+
+whitelists.  you *really* have to white list any message source that
+discusses or is used to report spam, else the reports will be marked
+as spam, given that they have the spam indicators in them, usually...
+
+This is the *only* whitelisting I use.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

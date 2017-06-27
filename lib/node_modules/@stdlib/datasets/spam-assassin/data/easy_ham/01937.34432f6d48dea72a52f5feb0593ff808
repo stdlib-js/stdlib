@@ -1,0 +1,47 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:34:05 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B954916F03
+	for <jm@localhost>; Thu, 26 Sep 2002 16:34:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:34:02 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFSQg24429 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:28:26 +0100
+Message-Id: <200209261528.g8QFSQg24429@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: joelonsoftware <rssfeeds@spamassassin.taint.org>
+Subject: Jakob Nielsen on Offshore Usability: "To save costs, some
+    companies are ou
+Date: Thu, 26 Sep 2002 15:28:26 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.joelonsoftware.com/news/20020917.html
+Date: Not supplied
+
+Jakob Nielsen on Offshore Usability[1]: "To save costs, some companies are 
+outsourcing Web projects to countries with cheap labor. Unfortunately, these 
+countries lack strong usability traditions and their developers have limited 
+access -- if any -- to good usability data from the target users." 
+
+Offshore usability is a specific case of the general "offshore design" problem. 
+Put simply, software teams are not successful when 
+design or management are done in a different physical location than 
+programming. Once I actually had a job where I was in New York, my direct 
+manager was in Singapore, _his_ manager was in Hyderabad, and if I needed 
+any management input I had literally no choice but to go to the CEO because at 
+least he was awake during the same hours as I was. You can't get things done 
+like this. A good project team relies on hundreds of small interactions a day. 
+Here in the Fog Creek offices, we have 10 small conversations about FogBUGZ 3.0 
+development every day. 
+
+What I don't understand is people who think it's OK to move the developers ten 
+time zones away from their managers and expect good results. Those same people 
+would scream bloody murder if you told them that you were going to 
+send the whole _management_ team to Bangalore or Beijing.
+
+[1] http://www.useit.com/alertbox/20020916.html
+
+

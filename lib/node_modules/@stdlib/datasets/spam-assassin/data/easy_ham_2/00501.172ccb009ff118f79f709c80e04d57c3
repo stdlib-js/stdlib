@@ -1,0 +1,63 @@
+From iiu-admin@taint.org  Tue Aug  6 11:17:22 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5806144126
+	for <jm@localhost>; Tue,  6 Aug 2002 06:13:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:13:09 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73M92v29381;
+    Sat, 3 Aug 2002 23:09:02 +0100
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g73M8Tv29358 for <iiu@taint.org>;
+    Sat, 3 Aug 2002 23:08:29 +0100
+Received: (qmail 87924 messnum 33577 invoked from
+    network[159.134.100.88/k100-88.bas1.dbn.dublin.eircom.net]);
+    3 Aug 2002 22:06:55 -0000
+Received: from k100-88.bas1.dbn.dublin.eircom.net (HELO localhost)
+    (159.134.100.88) by mail02.svc.cra.dublin.eircom.net (qp 87924) with SMTP;
+    3 Aug 2002 22:06:55 -0000
+Subject: Re: [IIU] spyware calling home?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Richard Bannister <richard@indigo.ie>
+To: iiu@taint.org
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <007301c23b36$4d955420$c4e9869f@oemcomputer>
+Message-Id: <47EA45D5-A72D-11D6-B450-003065A6D892@indigo.ie>
+X-Mailer: Apple Mail (2.482)
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Sat, 3 Aug 2002 23:06:37 +0100
+
+Ad Aware sometimes helps too.
+-R
+
+On Saturday, August 3, 2002, at 10:39  pm, Brian O'Brien wrote:
+
+> Thanks, Martin, iwill try that, however i've only approved the minimal
+> standard apps - I'll give it a go anyway. I think this is something more
+> insidious than the standard adprogram - maybe i'm paranoid!!!
+> Brian
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

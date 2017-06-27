@@ -1,0 +1,141 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  2 13:15:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BAABE47C68
+	for <jm@localhost>; Mon,  2 Sep 2002 07:39:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:39:38 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82198Z14381 for
+    <jm-rpm@jmason.org>; Mon, 2 Sep 2002 02:09:09 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g82152J14688; Mon, 2 Sep 2002 03:05:02
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8214QJ06624
+    for <rpm-list@freshrpms.net>; Mon, 2 Sep 2002 03:04:27 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17lfeA-0002HC-00 for rpm-list@freshrpms.net;
+    Sun, 01 Sep 2002 21:04:54 -0400
+X-Originating-Ip: [207.172.11.147]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: "FreshRPMs List" <rpm-zzzlist@freshrpms.net>
+Subject: Fw: some (null) eyecandy packages
+Message-Id: <20020901.Cm5.66966300@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary="---=_Next_Part_10878775_zmiO_mWTr_109818780"
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 02 Sep 2002 01:03:30 +0000
+Date: Mon, 02 Sep 2002 01:03:30 +0000
+
+This is a multipart message in MIME format
+
+-----=_Next_Part_10878775_zmiO_mWTr_109818780
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+
+If anyone here is running (null) beta then you may like these Gnome theme packages.
+They are enhanced and repackages from my previous theme packs, this time to conform
+to the way pre-release RH8 handles themes for GTK1 and GTK2.
+
+RedHat has a preferences -> themes app, but themes only show up there that have BOTH
+gtk1.2 (Gnome1) themes AND gtk1.4 (GTK2 aka Gnome2) themes available. Then RH will
+apply the theme to both GTK versions, so the user does not really notice that
+different GTK toolkit versions are being used, since they *should* look the same.
+
+This "gtk2-engines-compat" RPM has GTK2 ported themes for those themes that are
+included in the RH package "gtk-engines" themes pack for GTK1.
+
+The "gtk1+2-themez" pack mostly repackages my previous theme RPMs in a way that the
+(null) btea like, and supposedly the next RH8 when released :)
+
+forward - original mail:
+  From " Angles  Puglisi" <angles@aminvestments.com>
+  Date 09/01/2002 - 06:10:03 am
+  Subject some (null) eyecandy packages
+
+-----=_Next_Part_10878775_zmiO_mWTr_109818780
+Content-Type: message/rfc822;
+Content-Disposition: inline
+
+Delivered-To: limbo-list@listman.spamassassin.taint.org
+X-Originating-IP: [207.172.11.147]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: limbo-list@spamassassin.taint.org
+Subject: some (null) eyecandy packages
+Message-ID: <20020901.eak.70699000@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v 0.9.14.000
+X-Loop: limbo-list@spamassassin.taint.org
+Sender: limbo-list-admin@spamassassin.taint.org
+Errors-To: limbo-list-admin@spamassassin.taint.org
+X-BeenThere: limbo-list@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: limbo-list@spamassassin.taint.org
+List-Help: <mailto:limbo-list-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:limbo-list@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/limbo-list>,
+	<mailto:limbo-list-request@redhat.com?subject=subscribe>
+List-Id: Discussion of the Red Hat Linux 'Limbo' beta <limbo-list.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/limbo-list>,
+	<mailto:limbo-list-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/pipermail/limbo-list/>
+Date: Sun, 01 Sep 2002 10:01:54 +0000
+
+I make these for myself, you may find them of interest. See the .spec file(s) for info.
+
+http://www.dudex.net/rpms/gtk2-engines-compat-1.0-aap1.noarch.rpm
+http://www.dudex.net/rpms/gtk2-engines-compat-1.0.spec
+
+http://www.dudex.net/rpms/gtk1+2-themez-1.1-aap1.noarch.rpm
+http://www.dudex.net/rpms/gtk1+2-themez-1.1.spec
+
+You'll need gtk-engines, gtk2-engines, and a "thinice" engine for gtk2, this one
+might be a old now but it works:
+
+http://www.dudex.net/rpms/gtk2-thinice-engine-2.0.1-2.i386.rpm
+http://www.dudex.net/rpms/gtk2-thinice-engine-2.0.1-2.src.rpm
+http://www.dudex.net/rpms/gtk2-thinice-engine-2.0.1.spec
+
+--
+That's "angle" as in geometry.
+
+
+
+
+_______________________________________________
+Limbo-list mailing list
+Limbo-list@redhat.com
+
+-----=_Next_Part_10878775_zmiO_mWTr_109818780--
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

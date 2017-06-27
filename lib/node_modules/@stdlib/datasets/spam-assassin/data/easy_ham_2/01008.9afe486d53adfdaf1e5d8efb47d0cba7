@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Mon Aug 12 11:10:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B0AA144178
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BIimb10446 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 19:44:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5850C294188; Sun, 11 Aug 2002 11:41:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sccrmhc02.attbi.com (sccrmhc02.attbi.com [204.127.202.62])
+    by xent.com (Postfix) with ESMTP id E1803294188 for <fork@xent.com>;
+    Sun, 11 Aug 2002 11:40:07 -0700 (PDT)
+Received: from localhost ([24.61.140.132]) by sccrmhc02.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020811184111.HJKV221.sccrmhc02.attbi.com@localhost>; Sun,
+    11 Aug 2002 18:41:11 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.53d) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <1003227260.20020811144109@magnesium.net>
+To: Eugen Leitl <eugen@leitl.org>
+Cc: fork@spamassassin.taint.org
+Subject: Re[2]: Forged whitelist spam
+In-Reply-To: <Pine.LNX.4.33.0208112015090.3981-100000@hydrogen.leitl.org>
+References: <Pine.LNX.4.33.0208112015090.3981-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 14:41:09 -0400
+
+Hello Eugen,
+EL> I believe I mentioned users can't be bothered to enter passphrases. That's
+EL> what tokens are there for. At some point we can expect a convenient USB
+EL> port on the keyboard,
+
+You mean like on mac keyboards :-)    Or laptops (which are as damn
+near close to keyboard/usb connection as one can get, without the real
+thing)
+
+Sorry, couldn't help myself.
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+
+http://xent.com/mailman/listinfo/fork
+
+

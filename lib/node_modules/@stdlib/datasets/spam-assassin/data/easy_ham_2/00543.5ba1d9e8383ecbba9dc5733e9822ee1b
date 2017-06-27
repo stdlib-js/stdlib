@@ -1,0 +1,114 @@
+From razor-users-admin@lists.sourceforge.net  Thu Jul 25 10:53:21 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 34E53440D1
+	for <jm@localhost>; Thu, 25 Jul 2002 05:53:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 10:53:20 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OHgJ430447 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 18:42:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XPzX-00029g-00; Wed,
+    24 Jul 2002 10:32:03 -0700
+Received: from adsl-64-171-12-187.dsl.sntc01.pacbell.net ([64.171.12.187]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17XPzD-0001Ra-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 24 Jul 2002 10:31:43 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g6OHVX621166; Wed, 24 Jul 2002 10:31:33 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Patrick <patrick@stealthgeeks.net>
+Cc: rODbegbie <rOD@arsecandle.org>, razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Authentication Error
+Message-Id: <20020724103132.B20960@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Patrick <patrick@stealthgeeks.net>,
+	rODbegbie <rOD@arsecandle.org>, razor-users@lists.sourceforge.net
+References: <00f101c23331$1bdda5c0$b554a8c0@RAGING>
+    <20020724095903.W3639-100000@rockstar.stealthgeeks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020724095903.W3639-100000@rockstar.stealthgeeks.net>;
+    from patrick@stealthgeeks.net on Wed, Jul 24, 2002 at 10:02:51AM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 24 Jul 2002 10:31:32 -0700
+Date: Wed, 24 Jul 2002 10:31:32 -0700
+
+At this instance there are several thousand happy users of the Razor v2
+system. The code is still officially in Beta, but the first stable release
+is around the corner. If you are seeing problems, download the latest
+version; most likely the problem has been fixed already, if not, send a
+bug report to razor-testers@lists.sf.net or to chad@cloudmark.com
+
+cheers,
+vipul.
+
+On Wed, Jul 24, 2002 at 10:02:51AM -0700, Patrick wrote:
+> On Wed, 24 Jul 2002, rODbegbie wrote:
+> 
+> > rODbegbie wrote:
+> > > I get the impression that Vipul & co are deliberately trying to
+> > > mislead users into downloading the dev code in order to get more
+> > > unwitting test sites.
+> >
+> > Apologies to all.  In re-reading, that sentence sounds a lot harsher than I
+> > intended.
+> 
+> The question I have is: what needs to be done/help needs to be provided to
+> make the system suck less? It's obviously a great idea, it just needs some
+> work...
+> 
+> /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+>                                Patrick Greenwell
+>          Asking the wrong questions is the leading cause of wrong answers
+> \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+> 
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,79 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 17:21:48 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8960F440CD
+	for <jm@localhost>; Wed, 24 Jul 2002 12:21:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 17:21:46 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OGIr425670 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 17:18:53 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XOp0-0004E1-00; Wed,
+    24 Jul 2002 09:17:06 -0700
+Received: from [213.105.180.140] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XOo0-0003Yc-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 24 Jul 2002 09:16:06 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g6OGFbp19095; Wed, 24 Jul 2002 17:15:38 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    A1B1C440A8; Wed, 24 Jul 2002 12:14:12 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9CE7C33E50;
+    Wed, 24 Jul 2002 17:14:12 +0100 (IST)
+To: "Hess, Mtodd, /mth" <mth@Ingersoll.com>
+Cc: "SAtalk (E-mail)" <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Graphics-only spam?
+In-Reply-To: Message from
+    "Hess, Mtodd, /mth"
+    <mth@Ingersoll.com> of
+    "Wed, 24 Jul 2002 11:02:41 CDT."
+    <752D46E7E674D311842600A0C9EC627A03EAAB3C@rockford>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020724161412.A1B1C440A8@phobos.labs.netnoteinc.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 24 Jul 2002 17:14:07 +0100
+Date: Wed, 24 Jul 2002 17:14:07 +0100
+
+
+"Hess, Mtodd, /mth" said:
+
+> I hate to bring this up, but I see more and more spams that contain very
+> little, if any, text.  Instead, most of the spam text is in a graphic image.
+> How will we be able to detect those as spam?  OCR?
+
+or, alternatively, giveaway patterns in the HTML?  That's what's happening
+with most obfuscating techniques the spammers are trying -- they become
+a very reliable sign of spam in themselves!
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

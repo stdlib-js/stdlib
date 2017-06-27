@@ -1,0 +1,76 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Tue Sep  3 00:14:24 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F37B016F23
+	for <jm@localhost>; Tue,  3 Sep 2002 00:14:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 00:14:24 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g82M4LZ22887 for <jm@jmason.org>; Mon, 2 Sep 2002 23:04:21 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17lzHl-0000BL-00; Mon,
+    02 Sep 2002 15:03:05 -0700
+Received: from granger.mail.mindspring.net ([207.69.200.148]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17lzDd-0000Jk-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Mon, 02 Sep 2002 14:58:49 -0700
+Received: from user-1120fqe.dsl.mindspring.com ([66.32.63.78]
+    helo=belphegore.hughes-family.org) by granger.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17lzDb-0006Mg-00 for
+    spamassassin-devel@lists.sourceforge.net; Mon, 02 Sep 2002 17:58:47 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    1ACB89F8B5; Mon,  2 Sep 2002 14:58:47 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20020902215847.1ACB89F8B5@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 804] Razor debugging isn't functioning
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Mon,  2 Sep 2002 14:58:47 -0700 (PDT)
+Date: Mon,  2 Sep 2002 14:58:47 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=804
+
+jm@jmason.org changed:
+
+           What    |Removed                     |Added
+----------------------------------------------------------------------------
+             Status|NEW                         |RESOLVED
+         Resolution|                            |FIXED
+
+
+
+------- Additional Comments From jm@jmason.org  2002-09-02 14:58 -------
+ok, now in.
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

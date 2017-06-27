@@ -1,0 +1,58 @@
+Return-Path: jeremy@alum.mit.edu
+Delivery-Date: Sat Sep  7 21:15:03 2002
+From: jeremy@alum.mit.edu (Jeremy Hylton)
+Date: Sat, 7 Sep 2002 16:15:03 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCOENBBCAB.tim.one@comcast.net>
+References: <15738.13529.407748.635725@slothrop.zope.com>
+	<LNBBLJKPBEHFEDALKOLCOENBBCAB.tim.one@comcast.net>
+Message-ID: <15738.24135.294137.640570@slothrop.zope.com>
+
+Here's clarification of why I did:
+
+First test results using tokenizer.Tokenizer.tokenize_headers()
+unmodified. 
+
+Training on 644 hams & 557 spams
+      0.000  10.413
+      1.398   6.104
+      1.398   5.027
+Training on 644 hams & 557 spams
+      0.000   8.259
+      1.242   2.873
+      1.242   5.745
+Training on 644 hams & 557 spams
+      1.398   5.206
+      1.398   4.488
+      0.000   9.336
+Training on 644 hams & 557 spams
+      1.553   5.206
+      1.553   5.027
+      0.000   9.874
+total false pos 139 5.39596273292
+total false neg 970 43.5368043088
+
+Second test results using mboxtest.MyTokenizer.tokenize_headers().
+This uses all headers except Received, Data, and X-From_.
+
+Training on 644 hams & 557 spams
+      0.000   7.540
+      0.932   4.847
+      0.932   3.232
+Training on 644 hams & 557 spams
+      0.000   7.181
+      0.621   2.873
+      0.621   4.847
+Training on 644 hams & 557 spams
+      1.087   4.129
+      1.087   3.052
+      0.000   6.822
+Training on 644 hams & 557 spams
+      0.776   3.411
+      0.776   3.411
+      0.000   6.463
+total false pos 97 3.76552795031
+total false neg 738 33.1238779174
+
+Jeremy
+

@@ -1,0 +1,98 @@
+From ilug-admin@linux.ie  Tue Aug  6 13:58:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2649144144
+	for <jm@localhost>; Tue,  6 Aug 2002 08:48:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 13:48:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76CRnk28327 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 13:27:49 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29071; Tue, 6 Aug 2002 13:25:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from pheriche.sun.com (pheriche.sun.com [192.18.98.34]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA29001 for <ilug@linux.ie>;
+    Tue, 6 Aug 2002 13:25:47 +0100
+Received: from sunire.Ireland.Sun.COM ([129.156.220.30]) by
+    pheriche.sun.com (8.9.3+Sun/8.9.3) with ESMTP id GAA19309 for
+    <ilug@linux.ie>; Tue, 6 Aug 2002 06:25:44 -0600 (MDT)
+Received: from sionnach.ireland.sun.com (sionnach [129.156.220.28]) by
+    sunire.Ireland.Sun.COM (8.11.6+Sun/8.11.6/ENSMAIL,v2.2) with ESMTP id
+    g76CPhl03964 for <ilug@linux.ie>; Tue, 6 Aug 2002 13:25:43 +0100 (BST)
+Received: from sionnach (localhost [127.0.0.1]) by
+    sionnach.ireland.sun.com (8.12.2+Sun/8.12.2) with ESMTP id g76CPhfE009471
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 13:25:43 +0100 (BST)
+Message-Id: <200208061225.g76CPhfE009471@sionnach.ireland.sun.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: ilug@linux.ie
+From: Albert White - SUN Ireland <albert.white@ireland.sun.com>
+Subject: Re: [ILUG] 3c509 & 2.4.19 problems - SUMMARY
+In-Reply-To: Message from Albert White <albertw@netsoc.ucd.ie> of
+    "Sun, 04 Aug 2002 13:14:27 BST."
+    <20020804121426.GA92548@orca.ucd.ie>
+Date: Tue, 06 Aug 2002 13:25:43 +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+Thanks for the replies. It turns out that it was an IRQ conflict with an old 
+sound card.
+
+Despite checking the BIOS and running the 3c509 setup utility on 
+http://www.scyld.com/diag, the 2.4 kernel still picked a card on IRQ 5 and 10.
+
+It works fine now that the sound card is removed, but I'm still confused as to 
+why this worked in 2.2.18 but not 2.4.19, seems like a regression to me...
+
+Thanks again,
+
+Cheers,
+~Al
+
+Original question:
+> Hi folks,
+> 
+> I decided to upgrade the kernel on a machine at home from 2.2.18pre21 to the latest from kernel.org which is 2.4.19.
+> 
+> However I have encountered one problem, my network card now dosent work, well kind of dosent work...
+> 
+> Instead of one eth0 on IRQ 10 I now get:
+> Aug  4 11:31:51 mira kernel: eth0: 3c5x9 at 0x220, 10baseT port, address  00 10 5a 3e 0e 48, IRQ 5.
+> Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+> Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+> Aug  4 11:31:51 mira kernel: eth1: 3c5x9 at 0x300, 10baseT port, address  00 10 5a be 0e 48, IRQ 10.
+> Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+> Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+> 
+> This results in the interface(s) coming up but while packets can go out they can not come in.
+> 
+> I've tried not loading the 3c509 mdule on bootup and then `modload 3c509 IRQ=10` bit it still gets loaded as above, on IRQ 5 and 10. On 2.2 it loads to IRQ 10.
+> 
+> Anyone got any suggestions on what to do here? Its a debian 3.0 distro. This works fine when booted to 2.2 so the hardware/BIOS etc seem ok, so it seems to be 2.4 spacific. Have I missed some kernel setting?
+> 
+> Cheers,
+> ~Al
+
+-- 
+Expressed in this posting are my opinions.  They are in no way related
+to opinions held by my employer, Sun Microsystems.
+Statements on Sun products included here are not gospel and may
+be fiction rather than truth.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

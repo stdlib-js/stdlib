@@ -1,0 +1,194 @@
+From exmh-workers-admin@redhat.com  Mon Sep 23 23:22:46 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EB9B716F03
+	for <jm@localhost>; Mon, 23 Sep 2002 23:22:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 23:22:45 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8NMKYC05203 for
+    <jm-exmh@jmason.org>; Mon, 23 Sep 2002 23:20:34 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 78F653FAC3; Mon, 23 Sep 2002
+    18:21:02 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id D242C3ED67
+    for <exmh-workers@listman.redhat.com>; Mon, 23 Sep 2002 18:20:05 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8NMK5U15363 for exmh-workers@listman.redhat.com; Mon, 23 Sep 2002
+    18:20:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8NMK5f15358 for
+    <exmh-workers@redhat.com>; Mon, 23 Sep 2002 18:20:05 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:PaqNj1KHMBW3ts29O6T1cxNJnauUbcAX@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8NM2Li02072
+    for <exmh-workers@redhat.com>; Mon, 23 Sep 2002 18:02:21 -0400
+Received: (qmail 12567 invoked by uid 104); 23 Sep 2002 22:20:04 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4224. . Clean. Processed in 0.349264
+    secs); 23/09/2002 17:20:04
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 23 Sep 2002 22:20:04 -0000
+Received: (qmail 20959 invoked from network); 23 Sep 2002 22:20:01 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?79knF7PwThd2vqHi0RyIFdgpFNUhGU3S?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 23 Sep 2002 22:20:01 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Scott Lipcon <slipcon@mercea.net>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: traceback in new exmh
+In-Reply-To: <20020923214947.0F481B3F@mercea.net>
+References: <20020923214947.0F481B3F@mercea.net>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1590407866P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1032819600.20949.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1033251601.98fee1@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 23 Sep 2002 17:19:59 -0500
+
+--==_Exmh_-1590407866P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Scott Lipcon <slipcon@mercea.net>
+> Date:  Mon, 23 Sep 2002 17:49:47 -0400
+>
+> Chris, 
+> 
+> I'm home now, and this copy of exmh is pretty bad -  I'm running from
+> CVS on Sunday night - the only change since then was the one you made
+> this morning for "bulletproofing in MhReadSeqs".
+> 
+> I run exmh, and I can visably see it count up the number of unseen
+> messages as it looks through the folders - I have about 3000 unseen
+> messages in maybe 10 or 12 folders.    It takes a few seconds for all
+> of the folders in the fcache to turn blue.  
+
+This is true...it's now looking at more than just unseen, so it takes a little 
+while (in the background) to build the sequences window.  There is probably 
+some tuning possible in this area.
+
+> In +inbox, I have 4 unread messages.  They aren't blue, they are
+> white background with a normal colored font.
+
+I changed the default display of unseen messages from a foreground of blue to 
+a background of white to make it possible to see what other sequences unseen 
+messages may be in.  I *did* ask Brent before I did it.  If you like the old 
+behavior, the old lines are still in app-defaults-color, but commented out.
+
+> If I click on a message, I get the following traceback:
+> 
+> invalid command name "Mh_MarkSeen"
+>     while executing
+> "Mh_MarkSeen $exmh(folder) $msgid"
+>     (procedure "Hook_MsgShow_update_unseen" line 5)
+>     invoked from within
+> "$cmd $mhProfile(path)/$exmh(folder)/$msgid mimeHdr"
+>     (procedure "MsgShow" line 23)
+>     invoked from within
+> "MsgShow $msgid"
+>     (procedure "MsgChange" line 18)
+>     invoked from within
+> "MsgChange 66 show"
+>     invoked from within
+> "time [list MsgChange $msgid $show"
+>     (procedure "Msg_Change" line 3)
+>     invoked from within
+> "Msg_Change $msgNum $show"
+>     (procedure "Msg_Pick" line 8)
+>     invoked from within
+> "Msg_Pick $lineno show"
+>     (procedure "FtocRangeEnd" line 12)
+>     invoked from within
+> "FtocRangeEnd [lindex [split [.ftoc.t index current] .] 0] 0"
+>     (command bound to event)
+
+This is because of your Hook_MsgShow_update_unseen which is calling a function 
+which no longer exists.
+
+I suspect you need
+	Seq_Del $exmh(folder) unseen $msgid
+now instead of 
+	Mh_MarkSeen $exmh(folder) $msgid
+
+> It appears that the message does get marked as seen though, as it
+> loses the white background, and nmh reports the same.  
+> 
+> If I click the flist button, it zero's the unseen count, and then
+> there is again a visible delay as it counts up all the unseen 
+> messages - maybe 3-4 seconds.
+> 
+> I really think my installation is OK now, but if this behavior is just
+> really strange I'll blow everything away and reinstall.  I'm happy to
+> spend some time helping to track this down, I don't really need exmh.
+> I'm comfortable enough using nmh.
+> 
+> Scott
+> 
+> 
+> 
+> _______________________________________________
+> Exmh-workers mailing list
+> Exmh-workers@redhat.com
+> https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-1590407866P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9j5OPK9b4h5R0IUIRAqAyAJ4t1/YU6tI+81tfv8PS65DO9DiXdACfYxBP
+V0bKP6O4yRQjD38MQMxeWcM=
+=85Yk
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1590407866P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

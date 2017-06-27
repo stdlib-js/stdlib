@@ -1,0 +1,89 @@
+From rpm-list-admin@freshrpms.net  Mon Oct  7 18:41:20 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 687B916F16
+	for <jm@localhost>; Mon,  7 Oct 2002 18:41:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 18:41:20 +0100 (IST)
+Received: from egwn.net ([193.172.5.4]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g97HbUK10039 for <jm-rpm@jmason.org>;
+    Mon, 7 Oct 2002 18:37:30 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g97HU3f14660; Mon, 7 Oct 2002 19:30:03
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g97HStf13170 for
+    <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 19:28:55 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: RH 8 no DMA for DVD drive
+Message-Id: <20021007192851.11d250b8.matthias@rpmforge.net>
+In-Reply-To: <1034011232.8419.65.camel@bobcat.ods.org>
+References: <1033953429.13890.4.camel@AMD1800>
+    <1033954359.28832.4.camel@athlon.ckloiber.com>
+    <1033964717.1263.8.camel@AMD1800>
+    <20021007085643.5b9bb88c.matthias@rpmforge.net>
+    <1034007312.2296.8.camel@bobcat.ods.org>
+    <20021007183629.40ab9860.matthias@rpmforge.net>
+    <1034011232.8419.65.camel@bobcat.ods.org>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 7 Oct 2002 19:28:51 +0200
+Date: Mon, 7 Oct 2002 19:28:51 +0200
+
+Once upon a time, Ville wrote :
+
+> I assume that you won't %ghost or remove these and the modules.conf
+> change on uninstall, though.  So people who are installing this RPM and
+> are unfortunate enough to have a DVD drive (or just an ordinary CD,
+> non-DVD drive) that doesn't support DMA will be left with a system
+> without a working CD drive, even after removing the RPM.  And without
+> ever knowing what struck them.  You can't remove the DMA setting from
+> modules.conf either unless you're sure that ogle added it there and
+> nothing else needs it.
+
+I've never heard of any CD-ROM or DVD-ROM drive having problems with DMA...
+although there probably is since Red Hat decided to default disabling it a
+few releases back :-/
+Normally, even if you try to enable DMA and your device doesn't support it,
+it simply don't be able to make the change, and that's it. The problem IIRC
+is with crappy hardware that is supposed to support DMA but doesn't work as
+expected when it's enabled... maybe Chris could confirm this? ;-)
+
+I guess I'll settle for the /dev/dvd link change as described and putting
+the DMA tip in the %description :-)
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+Load : 0.00 0.05 0.14
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

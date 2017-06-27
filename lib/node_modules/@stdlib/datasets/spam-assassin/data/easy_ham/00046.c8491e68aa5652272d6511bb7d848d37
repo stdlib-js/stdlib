@@ -1,0 +1,27 @@
+From quinlan@pathname.com  Fri Aug 23 11:33:57 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D1C5643F99
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:33:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:33:56 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7NAVFZ20272 for
+    <zzzz@spamassassin.taint.org>; Fri, 23 Aug 2002 11:31:15 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17iBiq-0005K9-00; Fri, 23 Aug 2002 03:31:20 -0700
+To: zzzz@spamassassin.taint.org, craig@deersoft.com
+Subject: FYI - gone this weekend
+Cc: quinlan@pathname.com
+Message-Id: <E17iBiq-0005K9-00@proton.pathname.com>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: Fri, 23 Aug 2002 03:31:20 -0700
+
+I won't be reading email until Sunday night or so.  Good luck with
+2.40 and don't do anything I wouldn't do.  ;-)
+
+- Dan
+

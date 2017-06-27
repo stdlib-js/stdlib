@@ -1,0 +1,73 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug 23 11:07:36 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 80FFD44169
+	for <jm@localhost>; Fri, 23 Aug 2002 06:06:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:06:22 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7N9wmZ19115 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 10:58:48 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iB5q-0000SQ-00; Fri,
+    23 Aug 2002 02:51:02 -0700
+Received: from mta03-svc.ntlworld.com ([62.253.162.43]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iB52-0006Wm-00 for <razor-users@lists.sourceforge.net>; Fri,
+    23 Aug 2002 02:50:12 -0700
+Received: from jblaptop.voidstar.com ([62.255.184.173]) by
+    mta03-svc.ntlworld.com (InterMail vM.4.01.03.27 201-229-121-127-20010626)
+    with ESMTP id
+    <20020823095009.GSXY23840.mta03-svc.ntlworld.com@jblaptop.voidstar.com>
+    for <razor-users@lists.sourceforge.net>; Fri, 23 Aug 2002 10:50:09 +0100
+Message-Id: <LMbNj3ALUgZ9EA19@jblaptop.voidstar.com>
+To: razor-users@example.sourceforge.net
+From: Julian Bond <julian_bond@voidstar.com>
+MIME-Version: 1.0
+Content-Type: text/plain;charset=us-ascii;format=flowed
+User-Agent: Turnpike/6.02-U (<NihPaT1eq7QPEjqHWIMIZRyCL3>)
+Subject: [Razor-users] Razor with sendmail
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 10:48:59 +0100
+Date: Fri, 23 Aug 2002 10:48:59 +0100
+
+I'm after a recipe for using Razor with Sendmail. Unfortunately, I can't 
+get Procmail on my hosting but I do have full access to the Sendmail 
+alias list.
+
+Can anyone point me at some docs for this as I couldn't find anything in 
+the Razor docs.
+
+-- 
+Julian Bond Email&MSM: julian.bond@voidstar.com
+Webmaster:              http://www.ecademy.com/
+Personal WebLog:       http://www.voidstar.com/
+CV/Resume:          http://www.voidstar.com/cv/
+M: +44 (0)77 5907 2173   T: +44 (0)192 0412 433
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

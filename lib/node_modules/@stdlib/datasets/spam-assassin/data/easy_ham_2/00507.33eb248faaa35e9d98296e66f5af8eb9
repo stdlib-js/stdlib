@@ -1,0 +1,60 @@
+From webdev-admin@linux.ie  Mon Jul 29 11:28:18 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 075F644155
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:18 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6SMvhi27912 for
+    <jm-webdev@jmason.org>; Sun, 28 Jul 2002 23:57:43 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA02348; Sun, 28 Jul 2002 23:56:30 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA02312
+    for <webdev@linux.ie>; Sun, 28 Jul 2002 23:56:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts13-072.dublin.indigo.ie
+    [194.125.173.72]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    A9407F952 for <webdev@linux.ie>; Sun, 28 Jul 2002 23:41:11 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    F25123CBBD; Sun, 28 Jul 2002 23:49:41 +0100 (IST)
+Date: Sun, 28 Jul 2002 23:49:41 +0100
+From: Niall O Broin <niall@linux.ie>
+To: webdev@linux.ie
+Message-Id: <20020728224941.GA5836@bagend.makalumedia.com>
+Reply-To: webdev@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, webdev@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [Webdev] Migrating TO W2K
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+Yes, I know, dreadful subject. However, because of customer inistence we
+must deploy one project on W2K. This will thus be a WAMP project rather than
+a LAMP project. Of course as a highly skilled *ix person I can handle these
+Windows toys :-) but can anyone suggest any good educational resources for
+using Apache, PHP, Perl and MySQL together on W2K. Anyone had to do the same
+and found any particular nasty gotchas (yes, I know about the running
+Microsoft software one).
+
+
+
+Niall
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+
+

@@ -1,0 +1,155 @@
+From razor-users-admin@lists.sourceforge.net  Fri Jul 26 00:21:17 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4CA71440E8
+	for <jm@localhost>; Thu, 25 Jul 2002 19:21:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 00:21:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6PNKJ405976 for <jm-razor@jmason.org>; Fri, 26 Jul 2002 00:20:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17Xrm7-0002hz-00; Thu,
+    25 Jul 2002 16:12:04 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=nexus.cloudmark.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17Xrlw-0001rq-00; Thu, 25 Jul 2002 16:11:52
+    -0700
+Received: (from chad@localhost) by nexus.cloudmark.com (8.11.6/8.11.6) id
+    g6PNBFl12262; Thu, 25 Jul 2002 16:11:15 -0700
+X-Authentication-Warning: nexus.cloudmark.com: chad set sender to
+    chad@cloudmark.com using -f
+From: Chad Norwood <chad@cloudmark.com>
+To: razor-users@example.sourceforge.net,
+	razor-testers@lists.sourceforge.net,
+	razor-announce@lists.sourceforge.net
+Message-Id: <20020725231115.GA11850@nexus.cloudmark.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-MIME-Autoconverted: from 8bit to quoted-printable by nexus.cloudmark.com
+    id g6PNBFl12262
+Subject: [Razor-users] Razor Agents 2.14 Released
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 25 Jul 2002 16:11:15 -0700
+Date: Thu, 25 Jul 2002 16:11:15 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6PNKJ405976
+
+
+This is a stable beta release.  Please to upgrade.
+
+http://prdownloads.sourceforge.net/razor/razor-agents-2.14.tar.gz?download
+
+I've listed below all changes since the last major release, 2.12.
+These are also in the Changes file included with the tar.gz.
+
+-chad
+
+
+2.14 (July 25, 2002)
+   ·   Added Digest::Nilsimsa and URI::Escape to Make-
+       file.PL's prerequisites.  [vipul]
+
+   ·   Fixed rare bug in report.  Thanks goes to "Alan A."
+       <alan@naisp.net> for this and much more help.  [chad]
+
+2.126 (July 24, 2002)
+   ·   Improved logic again for detecting spam.  [chad,
+       vipul]
+
+   ·   Run-time warnings are disabled unless in debug mode.
+       [chad]
+
+2.125 (July 18, 2002)
+   ·   Improved logic for detecting spam, now we only look at
+       visible and/or significant mime parts.  [chad, vipul]
+
+   ·   Mime parts cleaned to only whitespace are now ignored
+       on the client side, that is, they are not checked
+       against server [chad]
+
+   ·   Fixed bug in report (err 202) [chad]
+
+   ·   Quieted more warnings [chad]
+
+2.123 (July 17, 2002)
+   ·   Fixed bug in revoke/report [chad]
+
+   ·   Whitelist now looks at all 'Received:' headers for
+       matching [chad]
+
+   ·   Added debuglevel, whitelist cmd-line options [chad]
+
+   ·   Quieted more warnings [chad]
+
+2.122 (July 15, 2002)
+   ·   Renamed razor-register razor-admin. To register, you
+       must 'razor-admin -register' [chad]
+
+   ·   Cleanded up how we store mail parts.  Each mail object
+       now has a part object that stores info relevant to
+       that part.  [chad]
+
+   ·   Fixed parse_mbox (reading mbox and rfc822 mails)
+       [chad]
+
+   ·   Backup any existing identity files before writing over
+       them (with new identity) [chad]
+
+   ·   Added lock file support, so only one process writes to
+       servers.*.lst at a time [chad]
+
+   ·   Added rediscover_wait_dns [chad]
+
+   ·   Fixed a bug when we rediscover, we save info to list
+       correctly but when using it we skip the first server
+       [chad]
+
+
+   ·   Fixed whitelist so rule 'from xx' only matches 'From:
+       .*xx' not 'From .*xx' (Note the ':') [chad]
+
+   ·   Made exit codes cleaner [chad]
+        0 or 1       => no error
+        2 or greater => error
+
+   ·   Fixed error msg/exit code after disconnect [chad]
+
+   ·   Added -w to razor binaries [chad]
+
+   ·   If authen fails 'cuz unknown user (213), attempt re-
+       register [chad]
+
+   ·   Quieted a bunch of warnings [chad]
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

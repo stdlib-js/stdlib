@@ -1,0 +1,95 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 28 16:22:09 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B3DF743F9B
+	for <jm@localhost>; Wed, 28 Aug 2002 11:22:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 16:22:08 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SFEgZ30284 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 16:14:42 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k4WG-0006sj-00; Wed,
+    28 Aug 2002 08:14:08 -0700
+Received: from mailout02.sul.t-online.com ([194.25.134.17]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k4Vn-0002lw-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 08:13:39 -0700
+Received: from fwd00.sul.t-online.de by mailout02.sul.t-online.com with
+    smtp id 17k4Vg-0006RZ-03; Wed, 28 Aug 2002 17:13:32 +0200
+Received: from nebukadnezar.msquadrat.de
+    (520061089980-0001@[62.226.214.25]) by fmrl00.sul.t-online.com with esmtp
+    id 17k4VV-0f9prMC; Wed, 28 Aug 2002 17:13:21 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    4DBA33B1 for <spamassassin-talk@lists.sf.net>; Wed, 28 Aug 2002 17:13:23
+    +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Too funny
+User-Agent: KMail/1.4.3
+References: <000801c24ea1$8a8023f0$af672e04@winxp>
+In-Reply-To: <000801c24ea1$8a8023f0$af672e04@winxp>
+X-Accept-Language: de, en
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: Warrant Mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+X-Foo: Bar
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200208281716.06506@malte.stretz.eu.org>
+X-Sender: 520061089980-0001@t-dialin.net
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 17:16:06 +0200
+Date: Wed, 28 Aug 2002 17:16:06 +0200
+
+On Wednesday 28 August 2002 16:45 CET Steve Thomas wrote:
+> | 0 hits here. :(
+>
+> I also get a lot of them. I think they're using the domain registry
+> database to pull their victims' addresses.
+
+They are crawling through the pages and send their "offers" to all addresses 
+they find. Theo won't every receive any offers as he doesn't publish his 
+address there ;-)
+
+Malte
+
+-- 
+-- Coding is art.
+-- 
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

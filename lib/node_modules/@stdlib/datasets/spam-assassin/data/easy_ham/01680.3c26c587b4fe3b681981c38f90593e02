@@ -1,0 +1,56 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 01:06:56 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 20:06:56 -0400
+Subject: [Spambayes] Ditching WordInfo
+In-Reply-To: <w53r8g6brus.fsf@woozle.org>
+Message-ID: <LNBBLJKPBEHFEDALKOLCOEKKBCAB.tim.one@comcast.net>
+
+[Neale Pickett]
+> I hacked up something to turn WordInfo into a tuple before pickling,
+
+That's what WordInfo.__getstate__ does.
+
+> and then turn the tuple back into WordInfo right after unpickling.
+
+Likewise for WordInfo.__setstate__.
+
+> Without this hack, my database was 21549056 bytes.  After, it's 9945088
+bytes.
+> That's a 50% savings, not a bad optimization.
+
+I'm not sure what you're doing, but suspect you're storing individual
+WordInfo pickles.  If so, most of the administrative pickle bloat is due to
+that, and doesn't happen if you pickle an entire classifier instance
+directly.
+
+> So my question is, would it be too painful to ditch WordInfo in favor of
+> a straight out tuple?  (Or list if you'd rather, although making it a
+> tuple has the nice side-effect of forcing you to play nice with my
+> DBDict class).
+>
+> I hope doing this sort of optimization isn't too far distant from the
+> goal of this project, even though README.txt says it is :)
+>
+> Diff attached.  I'm not comfortable checking this in,
+
+I think it's healthy that you're uncomfortable checking things in with
+
+> +            # XXX: kludge kludge kludge.
+
+comments <wink>.
+
+> since I don't really like how it works (I'd rather just get rid of
+WordInfo).
+> But I guess it proves the point :)
+
+I'm not interested in optimizing anything yet, and get many benefits from
+the *ease* of working with utterly vanilla Python instance objects.  Lots of
+code all over picks these apart for display and analysis purposes.  Very few
+people have tried this code yet, and there are still many questions about it
+(see, e.g., Jeremy's writeup of his disappointing first-time experiences
+today).  Let's keep it as easy as possible to modify for now.  If you're
+desparate to save memory, write a subclass?
+
+Other people are free to vote in other directions, of course <wink>.
+

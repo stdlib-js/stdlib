@@ -1,0 +1,101 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:51:41 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 7B97316F03
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:51:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:51:09 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g993QaK17008 for
+    <zzzz-rpm@spamassassin.taint.org>; Wed, 9 Oct 2002 04:26:36 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g993I2f30971; Wed, 9 Oct 2002 05:18:02
+    +0200
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [66.187.233.31]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g993HEf22898 for
+    <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 05:17:14 +0200
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by mx1.redhat.com (8.11.6/8.11.6) with ESMTP id
+    g992vTX03844 for <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 22:57:29 -0400
+Received: from pobox.corp.spamassassin.taint.org (pobox.corp.spamassassin.taint.org
+    [172.16.52.156]) by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id
+    g993HAf02250 for <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 23:17:10 -0400
+Received: from ckk.rdu.spamassassin.taint.org (ckk.rdu.spamassassin.taint.org [172.16.57.72]) by
+    pobox.corp.redhat.com (8.11.6/8.11.6) with ESMTP id g993H9a05656 for
+    <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 23:17:09 -0400
+Subject: Re: RH 8 no DMA for DVD drive
+From: Chris Kloiber <ckloiber@ckloiber.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20021007192851.11d250b8.matthias@rpmforge.net>
+References: <1033953429.13890.4.camel@AMD1800>
+    <1033954359.28832.4.camel@athlon.ckloiber.com>
+    <1033964717.1263.8.camel@AMD1800>
+    <20021007085643.5b9bb88c.matthias@rpmforge.net>
+    <1034007312.2296.8.camel@bobcat.ods.org>
+    <20021007183629.40ab9860.matthias@rpmforge.net>
+    <1034011232.8419.65.camel@bobcat.ods.org>
+    <20021007192851.11d250b8.matthias@rpmforge.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1034133437.26329.75.camel@ckk.rdu.spamassassin.taint.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 08 Oct 2002 23:17:17 -0400
+Date: 08 Oct 2002 23:17:17 -0400
+
+On Mon, 2002-10-07 at 13:28, Matthias Saou wrote:
+
+> I've never heard of any CD-ROM or DVD-ROM drive having problems with DMA...
+> although there probably is since Red Hat decided to default disabling it a
+> few releases back :-/
+
+Heh. I get to see bad CDROM problems all the time. Mostly when vendors
+buy crap cables to try to save $0.02/each, but there are chipsets and
+drives with known DMA issues as well.
+
+> Normally, even if you try to enable DMA and your device doesn't support it,
+> it simply don't be able to make the change, and that's it. The problem IIRC
+> is with crappy hardware that is supposed to support DMA but doesn't work as
+> expected when it's enabled... maybe Chris could confirm this? ;-)
+
+Usually if you enable DMA on a CDROM that can't handle it gracefully you
+won't be able to read data off it relably, and that's about it. No
+end_of_the_world problems, and easily fixed.
+
+> I guess I'll settle for the /dev/dvd link change as described and putting
+> the DMA tip in the %description :-)
+
+My biggest beef with automatically setting /dev/dvd is that I always
+seem to have a CD-Burner and a DVD drive (or DVD burner) in the same
+box, and I usually have the DVD as the second drive /dev/cdrom1 in
+"kudzu-speak". I agree that the %description is the best place for the
+tip. Unless someone can come up with a way to probe CD/DVD drives to
+divulge their largest supported media size without loading ide-scsi or
+having that media currently in the drive.
+
+-- 
+Chris Kloiber
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,89 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 23 18:31:43 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1C26216F03
+	for <jm@localhost>; Mon, 23 Sep 2002 18:31:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 18:31:41 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8NFu4C24239 for
+    <jm-rpm@jmason.org>; Mon, 23 Sep 2002 16:56:04 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8NFg1f01477; Mon, 23 Sep 2002 17:42:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8NFfRf01318 for
+    <rpm-list@freshrpms.net>; Mon, 23 Sep 2002 17:41:27 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: sylpheed-claws
+Message-Id: <20020923174120.73573065.matthias@egwn.net>
+In-Reply-To: <20020923080924.27618d2b.hosting@j2solutions.net>
+References: <20020919221046.7484dec6.hosting@j2solutions.net>
+    <20020920104055.201c2986.matthias@rpmforge.net>
+    <20020923080924.27618d2b.hosting@j2solutions.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 23 Sep 2002 17:41:20 +0200
+Date: Mon, 23 Sep 2002 17:41:20 +0200
+
+Once upon a time, Jesse wrote :
+
+> On Fri, 20 Sep 2002 10:40:55 +0200
+> Matthias Saou <matthias@rpmforge.net> wrote:
+> 
+> # But as it's the primary mailer I use, you can be sure that as soon
+> # as it's updated to 0.8.3, I'll update my build! :-)
+> 
+> It got updated (;
+
+So did my build if the original source is what you were mentioning ;-)
+One drawback : They changed from pspell to aspell apparently, and it
+requires aspell >= 0.50 which isn't even in Rawhide, so spell checking is
+disabled for now until I take a decision about it :-/
+
+If I build recent aspell packages, they may not be upgraded when ungrating
+to the next Red Hat Linux release (the final version of the limbos and
+(null) betas), which is maybe not really desired. I'll probably test and
+see...
+
+Matthias
+
+PS: The spec file was massively updated and the --with / --without options
+that can be used to rebuild the source packages are now listed in the
+description ;-)
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,130 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:37 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C01D644127
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:40 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CKFrb32513 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 21:15:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA04980; Mon, 12 Aug 2002 21:14:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA04952 for <ilug@linux.ie>;
+    Mon, 12 Aug 2002 21:14:40 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17eLaI-0005gA-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 13:14:38 -0700
+Date: Mon, 12 Aug 2002 13:14:36 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020812201435.GH25331@linuxmafia.com>
+References: <200208121043.LAA07769@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <200208121043.LAA07769@lugh.tuatha.org>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting wintermute (cout@eircom.net):
+
+> No, as of oh, about a year to a year and a half ago
+> SuSE revoked it's free offering of it's retail distro.
+> Sometime about the start of the great slump, SuSE pulled
+> free release of it's main x86 product.
+> 
+> So the last free version of SuSE you could get via a Linux Format 
+> par example was 7.0 I think.
+
+Let's limit the discussion to x86, to simplify.  There are some
+additional complications for some of the other architectures.
+(Essentially, they make most of the other architectures' ISO images
+available gratis, because they aren't selling boxed sets and want the
+public to have them anyway.  The ISOs include third-party proprietary
+apps, but of necessity not the highly-restricted ones available in 
+boxed set editions.)
+
+(1) You can get a single-disk ISO9660 image of SuSE "evaluation"
+edition, version 7.0, _lots_ of places, including here:
+
+ftp://ftp.suse.com/pub/suse/i386/evaluation-7.0/evaluation-7.0.iso
+
+(2) You could "wget -r" (or equivalent) the entire 8.0 FTP Edition (for
+lack of an official name for it) from here (or mirror sites):
+
+ftp://ftp.suse.com/pub/suse/i386/8.0/
+
+Please note the restricted rights granted for use of the SuSE-originated
+YaST program specifically, stated here:
+
+ftp://ftp.suse.com/pub/suse/i386/8.0/COPYRIGHT.yast
+
+A grant of limited redistribution rights to the distribution as a whole 
+(apparently covering the FTP Edition and the Evaluation Edition) is
+stated here: ftp://ftp.suse.com/pub/README.mirror-policy   Quoting:
+
+     please make sure that you meet the following conditions if
+     you intend to mirror ftp.suse.com:
+
+   - SuSE Linux (YaST in particular) may not be reproduced on
+     CDs or other media FOR VALUE. Reproduction for personal
+     or educational use is explicitly allowed and encouraged.
+
+> I'm not sure on the details of it, but I think SuSE have
+> probably done an OpenBSD of the cd they sell?
+
+OpenBSD Foundation assert a compilation copyright over the OpenBSD
+official ISO9660 image.  A compilation copyright is the copyright
+monopoly that, for example, the editor of a set of third-party short
+stories receives.  Even though he didn't write any of the constituent
+stories, he put creative work into selecting, arranging, and editing
+those stories.  The law recognises such efforts as creative works
+deserving copyright protection, if there is sufficient creative effort.
+(A judge would decide, if someone made a court case of it.)  Courts have
+held, on the other hand, that arrangement and publication of
+alphabetical telephone listings in a "yellow pages" telephone directory
+(the advertising section) don't have anywhere near enough creative
+content to support an overreaching telco's claim of compilation
+copyright.  (The court politely said "Nice try", in effect.)
+
+The OpenBSD Foundation's claim may be a bit of a legal bluff, too.
+Theoretically, one could get around it by creating a slightly different
+set of ISO9660 images, thereby finessing the claim of compilation
+copyright.  But nobody bothers, because OpenBSD Foundation actually 
+charges only a very reasonable price for jewel-case sets, and nobody
+wants to endure the barrage of hatemail from Theo & co.
+
+I've never seen any claim from SuSE of compilation copyright on its ISOs
+or distribution as a whole.
+
+> I could be wrong, I don't use SuSE so haven't investigated,
+> but essentially the only 'free' version of SuSE will be it's
+> ftp offering.
+
+Again, the "FTP Edition" and the Evaluation Edition may be redistributed
+more-or-less freely, as long as it's not "for value".  (Ditto the
+"live-eval" edition, which is a demo only.)  The three boxed sets'
+contents may not.
+
+-- 
+Cheers,              A good man has few enemies; a ruthless man has none.
+Rick Moen                                       
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

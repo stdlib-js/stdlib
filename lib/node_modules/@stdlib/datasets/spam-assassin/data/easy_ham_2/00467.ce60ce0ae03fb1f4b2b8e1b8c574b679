@@ -1,0 +1,114 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C20CA43C55
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KA1VZ00990 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 11:01:31 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA26865; Tue, 20 Aug 2002 11:00:10 +0100
+Received: from kbs01.kbs.ie ([213.190.156.48]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA26828 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 11:00:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.190.156.48] claimed
+    to be kbs01.kbs.ie
+Received: by KBS01 with Internet Mail Service (5.5.2653.19) id <R2N9AKJ4>;
+    Tue, 20 Aug 2002 11:17:00 +0100
+Message-Id: <55DA5264CE16D41186F600D0B74D6B09247298@KBS01>
+From: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] linux pthreads problem
+Date: Tue, 20 Aug 2002 11:16:59 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> Are you using pthread_join(somethread,0);
+> When you are closing off your instanciated thread made from
+> pthread_t*somethread ?
+
+Something like this might help you out.... 
+
+Class la{
+ Public:
+	pthread_t*thread;
+	void thread_me(int num)
+	};
+
+la*lala;
+	
+typedef struct list
+{
+ la*w;
+ struct list*next;
+}list_struct;
+
+list_struct*head;
+
+void thread_me(int num);
+void add_to_list(la*o);
+void delete_from_list();
+
+int main(int argc,char**argv)
+{
+int a=1;
+
+ lala=new la;
+ thread= new pthread_t;
+ add_to_list(lala);
+ pthread_create(thread,0,&lala.thread_me,&a);
+
+ thread= new pthread_t;
+ add_to_list(lala);
+ pthread_create(thread,0,&lala.thread_me,&a);
+
+delete_from_linked_list();
+return 0;
+};
+
+void lala::thread_me(int num)
+{
+ printf("lalala");
+ pthread_join((*this)->thread,0);
+return;
+};
+
+void add_to_list(la*o)
+{
+ static list_struct*a;
+ a=new list_struct;
+ a->w=o;
+ a->next=head;
+ head=a;
+return;
+};
+
+void delete_from_linked_list()
+{
+ list_struct*a;
+
+ while(head!=NULL)
+	{
+	 a=head;
+	 head=head->next;
+ 	 delete a;
+	};
+ return;
+};
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,88 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 12:51:15 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 91BD016F20
+	for <jm@localhost>; Thu,  5 Sep 2002 12:51:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:51:10 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85BdWZ17228 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 12:39:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17muyW-0002r7-00; Thu,
+    05 Sep 2002 04:39:04 -0700
+Received: from relay05.indigo.ie ([194.125.133.229]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17muxX-0001Og-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 05 Sep 2002 04:38:03 -0700
+Received: (qmail 67415 messnum 1193219 invoked from
+    network[194.125.172.167/ts12-167.dublin.indigo.ie]); 5 Sep 2002 11:38:00
+    -0000
+Received: from ts12-167.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.172.167) by relay05.indigo.ie (qp 67415) with SMTP;
+    5 Sep 2002 11:38:00 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id F10F516F49;
+    Thu,  5 Sep 2002 12:26:30 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id EE314F7B1 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu,  5 Sep 2002 12:26:30 +0100 (IST)
+To: SpamAssassin <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] My SA went crazy.
+In-Reply-To: Message from Jesus Climent <jesus.climent@hispalinux.es> of
+    "Thu, 05 Sep 2002 08:08:35 +0200."
+    <20020905060834.GA20869@reypastor.hispalinux.es>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020905112630.F10F516F49@spamassassin.taint.org>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 05 Sep 2002 12:26:25 +0100
+Date: Thu, 05 Sep 2002 12:26:25 +0100
+
+
+Jesus Climent said:
+
+> d output: Bareword found where operator expected at (eval 11) line 95,
+> near "25FREEMEGS_URL_uri_test"  (Missing operator before
+> FREEMEGS_URL_uri_test?) Bareword found whe
+
+> Is that a bug or is a fault in my system?
+
+looks like there's an out-of-date copy of the rules files, on your system.
+that rules is called "FREEMEGS_URL" nowadays.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

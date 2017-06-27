@@ -1,0 +1,184 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Oct  4 11:08:09 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BFF9F16F8B
+	for <jm@localhost>; Fri,  4 Oct 2002 11:05:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:05:47 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g944iBK03577 for <jm@jmason.org>; Fri, 4 Oct 2002 05:44:11 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17xKE1-00085D-00; Thu,
+    03 Oct 2002 21:38:06 -0700
+Received: from hall.mail.mindspring.net ([207.69.200.60]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17xKDi-0005dW-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Thu, 03 Oct 2002 21:37:46 -0700
+Received: from user-2injgi2.dsl.mindspring.com ([165.121.194.66]
+    helo=belphegore.hughes-family.org) by hall.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17xKDf-0004gz-00 for
+    spamassassin-devel@lists.sourceforge.net; Fri, 04 Oct 2002 00:37:43 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 48) id
+    7FD7BA87DB; Thu,  3 Oct 2002 21:37:42 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20021004043742.7FD7BA87DB@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 1053] New: IMG tag based rules
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-devel>
+X-Original-Date: Thu,  3 Oct 2002 21:37:42 -0700 (PDT)
+Date: Thu,  3 Oct 2002 21:37:42 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=1053
+
+           Summary: IMG tag based rules
+           Product: Spamassassin
+           Version: unspecified
+          Platform: Other
+        OS/Version: other
+            Status: NEW
+          Severity: enhancement
+          Priority: P2
+         Component: Eval Tests
+        AssignedTo: spamassassin-devel@example.sourceforge.net
+        ReportedBy: matt@nightrealms.com
+
+
+Inspired by complaints about all-image or mostly-image spam that's
+getting by SA, I've cooked up three sets of rules that analyze the use
+of IMG tags in HTML: one that looks at the total area of all of the
+images in the message (T_HTML_IMAGE_AREA*), one that looks at the
+total number of images in the message (T_HTML_NUM_IMGS*), and one that
+looks at the longest total run of consecutive images
+(T_HTML_CONSEC_IMG*).
+
+===============
+
+The total area of all images is rather easy to compute: inside of
+HTML::html_tests(), if an IMG tag has both the width and height
+properties, then multiply them together and add the result to the
+running total.
+
+OVERALL%   SPAM% NONSPAM%     S/O    RANK   SCORE  NAME
+  15113     4797    10316    0.32    0.00    0.00  (all messages)
+100.000   31.741   68.259    0.32    0.00    0.00  (all messages as %)
+  0.635    2.001    0.000    1.00    0.81    0.01  T_HTML_IMAGE_AREA14
+  0.417    1.313    0.000    1.00    0.78    0.01  T_HTML_IMAGE_AREA15
+  0.331    1.042    0.000    1.00    0.76    0.01  T_HTML_IMAGE_AREA07
+  0.245    0.771    0.000    1.00    0.74    0.01  T_HTML_IMAGE_AREA10
+  0.238    0.750    0.000    1.00    0.74    0.01  T_HTML_IMAGE_AREA02
+  0.225    0.709    0.000    1.00    0.74    0.01  T_HTML_IMAGE_AREA16
+  0.126    0.396    0.000    1.00    0.70    0.01  T_HTML_IMAGE_AREA18
+  0.119    0.375    0.000    1.00    0.70    0.01  T_HTML_IMAGE_AREA19
+  0.119    0.375    0.000    1.00    0.70    0.01  T_HTML_IMAGE_AREA17
+  1.125    3.523    0.010    1.00    0.68    0.01  T_HTML_IMAGE_AREA12
+  0.741    2.314    0.010    1.00    0.65    0.01  T_HTML_IMAGE_AREA13
+  1.542    4.732    0.058    0.99    0.58    0.01  T_HTML_IMAGE_AREA11
+  0.139    0.417    0.010    0.98    0.54    0.01  T_HTML_IMAGE_AREA08
+  0.483    1.397    0.058    0.96    0.50    0.01  T_HTML_IMAGE_AREA03
+  0.192    0.500    0.048    0.91    0.44    0.01  T_HTML_IMAGE_AREA06
+  0.820    1.834    0.349    0.84    0.39    0.01  T_HTML_IMAGE_AREA04
+  0.946    2.022    0.446    0.82    0.38    0.01  T_HTML_IMAGE_AREA01
+  0.569    0.896    0.417    0.68    0.32    0.01  T_HTML_IMAGE_AREA05
+  6.498    0.500    9.287    0.05    0.02    0.01  T_HTML_IMAGE_AREA09
+
+Spam % of all rules with S/0 > 0.90: 20.615%
+
+=============================
+
+The total number of IMG tags is really easy to do.
+
+  0.648    2.043    0.000    1.00    0.81    0.01  T_HTML_NUM_IMGS08
+  0.609    1.918    0.000    1.00    0.80    0.01  T_HTML_NUM_IMGS09
+  0.490    1.543    0.000    1.00    0.79    0.01  T_HTML_NUM_IMGS10
+  0.119    0.375    0.000    1.00    0.70    0.01  T_HTML_NUM_IMGS14
+  0.986    3.064    0.019    0.99    0.63    0.01  T_HTML_NUM_IMGS06
+  2.303    7.150    0.048    0.99    0.62    0.01  T_HTML_NUM_IMGS11
+  0.033    0.104    0.000    1.00    0.61    0.01  T_HTML_NUM_IMGS17
+  0.787    2.439    0.019    0.99    0.61    0.01  T_HTML_NUM_IMGS12
+  0.344    1.063    0.010    0.99    0.60    0.01  T_HTML_NUM_IMGS13
+  0.020    0.063    0.000    1.00    0.58    0.01  T_HTML_NUM_IMGS20
+  0.020    0.063    0.000    1.00    0.58    0.01  T_HTML_NUM_IMGS16
+  0.860    2.627    0.039    0.99    0.57    0.01  T_HTML_NUM_IMGS05
+  0.754    2.293    0.039    0.98    0.56    0.01  T_HTML_NUM_IMGS07
+  0.013    0.042    0.000    1.00    0.55    0.01  T_HTML_NUM_IMGS18
+  0.887    2.627    0.078    0.97    0.52    0.01  T_HTML_NUM_IMGS04
+  1.356    3.711    0.262    0.93    0.47    0.01  T_HTML_NUM_IMGS03
+  0.046    0.125    0.010    0.93    0.46    0.01  T_HTML_NUM_IMGS15
+  6.061   10.256    4.110    0.71    0.34    0.01  T_HTML_NUM_IMGS01
+  0.040    0.063    0.029    0.68    0.32    0.01  T_HTML_NUM_IMGS19
+  6.233    4.753    6.921    0.41    0.22    0.01  T_HTML_NUM_IMGS02
+
+Spam % of all rules with S/O > 0.90: 31.25%
+
+=========================
+
+I figured that spam that is made up of only images is going to only
+have IMG tags interspersed with table, paragraph and linebreak tags,
+and some whitespace, so there would be a lot of IMG tags with no plain
+text (non-whitespace) between them.  So I defined consecutive IMG tags
+to be ones with no text between them, and looked at the longest run of
+consecutive IMGs within a message.
+
+This one seems to do pretty good, because in my non-spam corpus
+there's only a handful of messages with IMG runs larger than two.
+
+  0.450    1.418    0.000    1.00    0.78    0.01  T_HTML_CONSEC_IMGS06
+  0.232    0.730    0.000    1.00    0.74    0.01  T_HTML_CONSEC_IMGS08
+  0.205    0.646    0.000    1.00    0.73    0.01  T_HTML_CONSEC_IMGS11
+  1.813    5.691    0.010    1.00    0.71    0.01  T_HTML_CONSEC_IMGS02
+  1.019    3.189    0.010    1.00    0.67    0.01  T_HTML_CONSEC_IMGS03
+  0.768    2.397    0.010    1.00    0.66    0.01  T_HTML_CONSEC_IMGS05
+  0.053    0.167    0.000    1.00    0.64    0.01  T_HTML_CONSEC_IMGS12
+  1.006    3.127    0.019    0.99    0.63    0.01  T_HTML_CONSEC_IMGS04
+  0.483    1.501    0.010    0.99    0.62    0.01  T_HTML_CONSEC_IMGS07
+  0.020    0.063    0.000    1.00    0.58    0.01  T_HTML_CONSEC_IMGS13
+  0.020    0.063    0.000    1.00    0.58    0.01  T_HTML_CONSEC_IMGS15
+  1.032    3.148    0.048    0.98    0.57    0.01  T_HTML_CONSEC_IMGS10
+  0.199    0.605    0.010    0.98    0.57    0.01  T_HTML_CONSEC_IMGS09
+  0.013    0.042    0.000    1.00    0.55    0.01  T_HTML_CONSEC_IMGS17
+  0.013    0.042    0.000    1.00    0.55    0.01  T_HTML_CONSEC_IMGS19
+  0.007    0.021    0.000    1.00    0.51    0.01  T_HTML_CONSEC_IMGS14
+  7.080    7.484    6.892    0.52    0.26    0.01  T_HTML_CONSEC_IMGS01
+  0.000    0.000    0.000    0.00    0.00    0.01  T_HTML_CONSEC_IMGS16
+  0.000    0.000    0.000    0.00    0.00    0.01  T_HTML_CONSEC_IMGS18
+
+Spam % of all rules with S/O > 0.90: 22.85%
+
+==========================
+
+Next I'm going to see if there's any meta rules I can make that will
+reduce the FP rate for low S/O rules.
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

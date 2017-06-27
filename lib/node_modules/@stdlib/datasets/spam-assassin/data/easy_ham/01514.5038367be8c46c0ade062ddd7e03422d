@@ -1,0 +1,155 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Wed Oct  2 16:02:41 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5269A16F56
+	for <jm@localhost>; Wed,  2 Oct 2002 16:01:07 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 16:01:07 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g92DNHK10379 for <jm@jmason.org>; Wed, 2 Oct 2002 14:23:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17wjTk-0000QG-00; Wed,
+    02 Oct 2002 06:23:52 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17wjPX-0005vM-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 02 Oct 2002 06:19:31 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17wjPX-00056q-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 02 Oct 2002 06:19:31
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17wjPX-00014T-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 02 Oct 2002 06:19:31
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17wjPX-00014T-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/t db_based_whitelist.t,1.6.4.1,1.6.4.2
+    db_based_whitelist_ips.t,1.1.2.1,1.1.2.2
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-commits>
+X-Original-Date: Wed, 02 Oct 2002 06:19:31 -0700
+Date: Wed, 02 Oct 2002 06:19:31 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/t
+In directory usw-pr-cvs1:/tmp/cvs-serv4019/t
+
+Modified Files:
+      Tag: b2_4_0
+	db_based_whitelist.t db_based_whitelist_ips.t 
+Log Message:
+fixed bug 1033: -R and -W were not respecting auto_whitelist_path
+
+Index: db_based_whitelist.t
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/t/db_based_whitelist.t,v
+retrieving revision 1.6.4.1
+retrieving revision 1.6.4.2
+diff -b -w -u -d -r1.6.4.1 -r1.6.4.2
+--- db_based_whitelist.t	24 Sep 2002 18:51:38 -0000	1.6.4.1
++++ db_based_whitelist.t	2 Oct 2002 13:19:28 -0000	1.6.4.2
+@@ -2,7 +2,7 @@
+ 
+ use lib '.'; use lib 't';
+ use SATest; sa_t_init("db_based_whitelist");
+-use Test; BEGIN { plan tests => 3 };
++use Test; BEGIN { plan tests => 8 };
+ 
+ # ---------------------------------------------------------------------------
+ 
+@@ -16,17 +16,17 @@
+ %patterns = %is_nonspam_patterns;
+ $scr_test_args = "-M Mail::SpamAssassin::DBBasedAddrList";
+ 
+-sarun ("--remove-addr-from-whitelist whitelist_test\@whitelist.spamassassin.taint.org", \&patterns_run_cb);
++ok (sarun ("--remove-addr-from-whitelist whitelist_test\@whitelist.spamassassin.taint.org", \&patterns_run_cb));
+ 
+ # 3 times, to get into the whitelist:
+-sarun ("-L -a -t < data/nice/002", \&patterns_run_cb);
+-sarun ("-L -a -t < data/nice/002", \&patterns_run_cb);
+-sarun ("-L -a -t < data/nice/002", \&patterns_run_cb);
++ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
++ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
++ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
+ 
+ # Now check
+ ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
+ ok_all_patterns();
+ 
+ %patterns = %is_spam_patterns;
+-sarun ("-L -a -t < data/spam/004", \&patterns_run_cb);
++ok (sarun ("-L -a -t < data/spam/004", \&patterns_run_cb));
+ ok_all_patterns();
+
+Index: db_based_whitelist_ips.t
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/t/db_based_whitelist_ips.t,v
+retrieving revision 1.1.2.1
+retrieving revision 1.1.2.2
+diff -b -w -u -d -r1.1.2.1 -r1.1.2.2
+--- db_based_whitelist_ips.t	24 Sep 2002 18:51:38 -0000	1.1.2.1
++++ db_based_whitelist_ips.t	2 Oct 2002 13:19:29 -0000	1.1.2.2
+@@ -2,7 +2,7 @@
+ 
+ use lib '.'; use lib 't';
+ use SATest; sa_t_init("db_based_whitelist_ips");
+-use Test; BEGIN { plan tests => 3 };
++use Test; BEGIN { plan tests => 8 };
+ 
+ # ---------------------------------------------------------------------------
+ 
+@@ -15,18 +15,18 @@
+ 
+ %patterns = %is_nonspam_patterns;
+ 
+-sarun ("--remove-addr-from-whitelist whitelist_test\@whitelist.spamassassin.taint.org", \&patterns_run_cb);
++ok (sarun ("--remove-addr-from-whitelist whitelist_test\@whitelist.spamassassin.taint.org", \&patterns_run_cb));
+ 
+ # 3 times, to get into the whitelist:
+-sarun ("-L -a -t < data/nice/002", \&patterns_run_cb);
+-sarun ("-L -a -t < data/nice/002", \&patterns_run_cb);
+-sarun ("-L -a -t < data/nice/002", \&patterns_run_cb);
++ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
++ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
++ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
+ 
+ # Now check
+ ok (sarun ("-L -a -t < data/nice/002", \&patterns_run_cb));
+ ok_all_patterns();
+ 
+ %patterns = %is_spam_patterns;
+-sarun ("-L -a -t < data/spam/007", \&patterns_run_cb);
++ok (sarun ("-L -a -t < data/spam/007", \&patterns_run_cb));
+ ok_all_patterns();
+ 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+
+

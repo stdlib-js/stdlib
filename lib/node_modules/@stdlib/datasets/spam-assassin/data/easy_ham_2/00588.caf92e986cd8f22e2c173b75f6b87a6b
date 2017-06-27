@@ -1,0 +1,224 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug  8 15:59:47 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F0AE844115
+	for <jm@localhost>; Thu,  8 Aug 2002 10:01:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 15:01:34 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g78E1Y211204 for <jm-razor@jmason.org>; Thu, 8 Aug 2002 15:01:34 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cnjn-0007fA-00; Thu,
+    08 Aug 2002 06:54:03 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cnjT-0001fe-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 06:53:43 -0700
+Content-Class: urn:content-classes:message
+Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FE151@med-core07.med.wayne.edu>
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [Razor-users] What's wrong with the Razor servers now?
+Thread-Index: AcI+tQNuYiJZEHNnT+mEPsgpIWHFEQAKNswg
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <mail@vipul.net>, <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 09:53:35 -0400
+Date: Thu, 8 Aug 2002 09:53:35 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g78E1Y211204
+
+Thanks that helps.  There's still so little info on TES and those of us
+here since RazorV1 know how it works.  I did set my min_cf to "ac-100"
+which I thought would be zero.  
+
+So the way you are suggesting that it works now is that everyone has a
+trust level of 1 and have to work their way up.  Your trust level
+increases when someone nominates the same message as spam. This must
+have been the new changes made at the beginning of the week unless the
+changes dumped everyone's trust level.  Now here come the questions...
+
+What engine signature does TES look at?  Does it have to be the same e1
+signature or does it use the e2 or e4 signatures.  How many people have
+to nominate the message before everyones rating increases?  How many
+revokes decreases someones rating?  Does a single revoke decrease the
+rating of everyone that nominated the message?  If a newby reports a
+message that has already been reported does their trust level
+immediately go up?  In the case of revoking, does someone with a trust
+level of 1 have the capability to revoke a message submitted by multiple
+people with higher trust levels?
+
+
+
+
+-----Original Message-----
+From: Vipul Ved Prakash [mailto:mail@vipul.net] 
+Sent: Thursday, August 08, 2002 4:22 AM
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+
+
+Bobby, 
+
+Couple of things: 
+
+If you are not a trusted reporter, your reports will not have an
+immediate effect. It takes a bunch of trusted reporters to bump up the
+confidence of a signature to a point where it is considered to be spam.
+This might be frustrating initially, but as the number of trusted users
+grows the time delay between nominations and determination will become
+shorter. Of course, it's a lot more frustating for people to have their
+legit mail filtered out due to incorrect reporting.
+
+Also, for the purpose of testing, I'd suggest making your min_cf (in
+razor-agents.conf) to 0. min_cf defaults to the server recommended
+average confidence, which at the moment is 1. Setting min_cf to 0 should
+return true for whatever you submit (as long as it was not revoked by a
+trusted user).
+
+apt/fire sync with honor every 5 minutes, so you'd have to wait for a
+_maximum_ of 5 minutes before signatures propagate.
+
+cheers,
+vipul.
+
+
+On Wed, Aug 07, 2002 at 11:51:21PM -0400, Rose, Bobby wrote:
+> This is still happening.  Nothing that I report is being registered at
+
+> all.  I have confirmed that this also affects the Cloudmark Outlook 
+> plugin. If I block a message from Outlook using Spamnet then run it 
+> against the folder containing the message that was reported then 
+> nothing happens.
+> 
+> On the unix side, I've tried different cloudmark servers, different 
+> identies, report from different systems, etc without an effect.  I did
+
+> find that sample-spam.txt from Spamassassin is only registered on 
+> honor.cloudmark.net and comes back positive from it and it only so 
+> it's clearly not sync'd with apt or fire.
+> 
+> 
+> 
+> -----Original Message-----
+> From: Rose, Bobby
+> Sent: Wednesday, August 07, 2002 1:32 PM
+> To: Patrick
+> Cc: ML-razor-users
+> Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+> 
+> 
+> I'm sure others have thought of that.  Probably the only way to 
+> prevent that is to include the host in the report/revoke 
+> authentication.
+> 
+> -----Original Message-----
+> From: Patrick [mailto:patrick@stealthgeeks.net]
+> Sent: Wednesday, August 07, 2002 12:33 PM
+> To: Rose, Bobby
+> Cc: ML-razor-users
+> Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+> 
+> 
+> On Wed, 7 Aug 2002, Rose, Bobby wrote:
+> 
+> > Well at least it's been confirmed. I can say for cetain that it 
+> > started on Monday since that was when I noticed a huge drop in stats
+> of messages
+> > that were tagged as being in razor.   And I know it was fine on
+> Friday.
+> > It may have something to do with the upgrades on the servers that 
+> > Vipul mentioned.  If TES is going to decide on what gets registered 
+> > and what doesn't then razor-report should provide some debug info 
+> > about the refusal.  You are correct about the need for more info on 
+> > TES, but it probably won't happen for fear of circumvention.
+> 
+> <INSERT RANT REGARDING SECURITY THROUGH OBSCURITY>
+> 
+> On the way into work I thought of some fairly easy ways to circumvent 
+> what I imagine the current trust model to be based on individual users
+
+> blindly submitting reports and checking results.
+> 
+> It's hard to imagine others haven't as well, as I'm not too bright.
+> 
+> 
+> /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+> /\
+> /\/\/\
+>                                Patrick Greenwell
+>          Asking the wrong questions is the leading cause of wrong
+> answers
+>
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+> \/\/\/
+> 
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf 
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf 
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net 
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf _______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

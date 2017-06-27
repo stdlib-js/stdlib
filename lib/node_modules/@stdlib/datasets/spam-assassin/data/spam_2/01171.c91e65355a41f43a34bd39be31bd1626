@@ -1,0 +1,214 @@
+From timaims@hotmail.com  Mon Jul 29 13:08:36 2002
+Return-Path: <timaims@hotmail.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6B2D0440EC
+	for <jm@localhost>; Mon, 29 Jul 2002 08:08:36 -0400 (EDT)
+Received: from mandark.labs.netnoteinc.com [213.105.180.140]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 13:08:36 +0100 (IST)
+Received: from human09 ([211.117.193.139])
+	by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6TC5np07190
+	for <jm@netnoteinc.com>; Mon, 29 Jul 2002 13:05:50 +0100
+Message-Id: <200207291205.g6TC5np07190@mandark.labs.netnoteinc.com>
+From: "Tim Aims" <timaims@hotmail.com>
+To: <yyyy@netnoteinc.com>
+Subject: The Money Control System
+Mime-Version: 1.0
+Date: Mon, 29 Jul 2002 21:03:50
+Content-Type: text/html; charset="iso-8859-1"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The Money Control System</title>
+</head>
+
+<body>
+
+<p align="center"><span style="BACKGROUND-COLOR: #006699"><v:shapetype id=_x0000_t136 coordsize = "21600,21600" o:spt = "136" path = 
+" m@7,0 l@8,0 m@5,21600 l@6,21600 e" adj = "10800">
+ <v:formulas>
+<v:f eqn = 
+"sum #0 0 10800 ">
+</v:f>
+<v:f eqn = "prod #0 2 1 ">
+</v:f>
+<v:f eqn = 
+"sum 21600 0 @1 ">
+</v:f>
+<v:f eqn = "sum 0 0 @2 ">
+</v:f>
+<v:f eqn = 
+"sum 21600 0 @3 ">
+</v:f>
+<v:f eqn = "if @0 @3 0 ">
+</v:f>
+<v:f eqn = 
+"if @0 21600 @1 ">
+</v:f>
+<v:f eqn = "if @0 0 @2 ">
+</v:f>
+<v:f eqn = 
+"if @0 @4 21600 ">
+</v:f>
+<v:f eqn = "mid @5 @6 ">
+</v:f>
+<v:f eqn = 
+"mid @8 @5 ">
+</v:f>
+<v:f eqn = "mid @7 @8 ">
+</v:f>
+<v:f eqn = 
+"mid @6 @7 ">
+</v:f>
+<v:f eqn = "sum @6 0 @5 ">
+</v:f>
+</v:formulas>
+<v:path 
+o:connectangles="270,180,90,0" 
+o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800" textpathok = "t" 
+o:connecttype = "custom">
+</v:path>
+<v:textpath on = "t" fitshape = 
+"t">
+</v:textpath>
+<v:handles>
+<v:h xrange="6629,14971" 
+position="#0,bottomRight">
+</v:h>
+</v:handles>
+<o:lock v:ext="edit" text = "t" 
+shapetype = "t">
+</o:lock>
+</v:shapetype>
+<v:shape id=_x0000_s1051 
+style="WIDTH: 465pt; HEIGHT: 54pt" type = "#_x0000_t136" coordsize = 
+"21600,21600" alt = "THE MONEY CONTROL SYSTEM" fillcolor = "red" strokecolor = 
+"white" strokeweight = "1.5pt" adj = ",10800">
+<v:fill 
+rotate="t">
+</v:fill>
+<v:shadow on = "t" color = "#900">
+</v:shadow>
+<v:textpath 
+style="FONT-SIZE: 40pt; FONT-FAMILY: 'Impact'; v-text-kern: t" fitpath = "t" 
+trim = "t" string = 
+"THE MONEY CONTROL SYSTEM">
+</v:textpath>
+</v:shape>
+</span></p>
+<table height="1" cellSpacing="0" cellPadding="0" width="628" align="center" border="0">
+  <tbody>
+    <tr>
+      <td width="4" height="1"></td>
+    </tr>
+    <tr>
+      <td width="4" bgColor="#006699" height="1">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table height="1" cellSpacing="0" cellPadding="0" width="628" align="center" border="0">
+  <tbody>
+    <tr>
+      <td width="4" height="1"></td>
+    </tr>
+    <tr>
+      <td width="4" bgColor="#000000" height="1">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<p align="center"><v:shapetype id=_x0000_t138 coordsize = "21600,21600" o:spt = 
+"138" path = " m0@0 l10800,0,21600@0 m0,21600 l10800,21600,21600,21600 e" adj = 
+"10800">
+<v:formulas>
+<v:f eqn = "sum #0 0 0 ">
+</v:f>
+<v:f eqn = 
+"prod #0 1 2 ">
+</v:f>
+<v:f eqn = "sum @1 10800 0 ">
+</v:f>
+<v:f eqn = 
+"sum 21600 0 @1 ">
+</v:f>
+</v:formulas>
+<v:path o:connectangles="270,180,90,0" 
+o:connectlocs="10800,0;5400,@1;10800,21600;16200,@1" textpathok = "t" 
+o:connecttype = "custom">
+</v:path>
+<v:textpath on = "t" fitshape = 
+"t">
+</v:textpath>
+<v:handles>
+<v:h position="topLeft,#0" 
+yrange="0,21600">
+</v:h>
+</v:handles>
+<o:lock v:ext="edit" text = "t" shapetype = 
+"t">
+</o:lock>
+</v:shapetype>
+<v:shape id=_x0000_s1044 
+style="WIDTH: 235.5pt; HEIGHT: 42.75pt" type = "#_x0000_t138" coordsize = 
+"21600,21600" alt = "How BIG can you dream?" fillcolor = "yellow" strokecolor = 
+"red" adj = ",5400">
+<v:fill rotate="t">
+</v:fill>
+<v:shadow color = 
+"#868686">
+</v:shadow>
+<v:textpath 
+style="FONT-WEIGHT: bold; FONT-SIZE: 28pt; FONT-FAMILY: 'Franklin Gothic Heavy'; v-text-kern: t" 
+fitpath = "t" trim = "t" string = 
+"Live your Dreams!">
+</v:textpath>
+</v:shape>
+<font size="7" color="#FF0000">The Money Control System</font> <img height="169" src="http://211.117.193.159/book/home[1].jpg" width="630" border="0"><br>
+<font face="Arial Black" size="6">Would your lifestyle change if you had an
+extra $10,000 each and every month? Find out <u><b><font color="#3366cc"><a href="http://211.117.193.159/book/112.htm">NOW!</a></font></b></u><br>
+&nbsp;</font></p>
+<p align="center"><span style="LETTER-SPACING: 1pt"><font face="Times New Roman" color="#ff0000" size="6">The
+Money Control System</font></span></p>
+<p align="center"><font face="OldCentury" size="4">How You Can Get Rich, Stay
+Rich &amp; Enjoy Being Rich<br>
+with The Money Control System.</font></p>
+<p align="center"><u><i><b><font size="5">Here's what people are saying.</font></b></i></u></p>
+<div style="BACKGROUND-COLOR: #ffffcc">
+  <p align="center"><i><font size="4">&quot;I don't have any financial
+  worries...I can now pursue the interests and<br>
+  hobbies and the things I want to do...&quot;<br>
+  <br>
+  &quot; The mutual funds we are into are rated among the top five...<br>
+  we are looking at probably 15%,20% return...&quot;<br>
+  <br>
+  &quot; My goal was specifically to take the $10,000 that I managed<br>
+  to accumulate through savings, invest that and, in a period of<br>
+  nine months to a year, come back with at least $15,000.<br>
+  I came back with $16,000.<br>
+  <br>
+  &quot;I Saved In Taxes Alone What I Paid For<br>
+  &nbsp;My Kid's First Year of College.&quot;<br>
+  <br>
+  &quot;Anyone who can learn from Money Control would be crazy to pass up the
+  chance. The Control Steps work so well that anyone can become a millionaire.
+  I'm not a millionaire yet, but I'm living like one. I call my time my own, and
+  work whenever I decide to. I am only 30 years old, so I plan to work another
+  five years and retire with the income from a million dollars worth of
+  investments. Before The Money Control System&nbsp; showed me the way, I would
+  never have believed it possible. Me, a millionaire!&quot;&nbsp;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+  B.H. Salt Lake City UT</font></i></p>
+</div>
+<p align="center"><font face="OldCentury" size="4"><a href="http://211.117.193.159/book/112.htm"><font color="#0000ff">&nbsp;CLICK
+HERE TO LEARN MORE AND CHANGE YOUR LIFE!</font></a></font></p>
+
+</body>
+
+</html>
+
+

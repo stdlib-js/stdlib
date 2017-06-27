@@ -1,0 +1,111 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  2 12:21:22 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ABCBC43F99
+	for <jm@localhost>; Mon,  2 Sep 2002 07:21:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:21:18 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TJqAZ26468 for
+    <jm-rpm@jmason.org>; Thu, 29 Aug 2002 20:52:10 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7TJd2J04720; Thu, 29 Aug 2002 21:39:02
+    +0200
+Received: from imf26bis.bellsouth.net (mail126.mail.bellsouth.net
+    [205.152.58.86]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7TJcbJ04352 for <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 21:38:37 +0200
+Received: from adsl-157-23-10.msy.bellsouth.net ([66.157.23.10]) by
+    imf26bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020829193005.FDGG5735.imf26bis.bellsouth.net@adsl-157-23-10.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Thu, 29 Aug 2002 15:30:05 -0400
+Subject: Re: ALSA (almost) made easy
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020829062638.53279644.matthias@egwn.net>
+References: <20020828004215.4bca2588.matthias@rpmforge.net>
+    <1030507320.3214.39.camel@herald.dragonsdawn.net>
+    <20020828100430.378c3856.matthias@rpmforge.net>
+    <1030546780.3214.54.camel@herald.dragonsdawn.net>
+    <20020828112645.B13047@ti19>
+    <1030551945.10627.4.camel@wanderlust.prognet.com>
+    <20020828190006.2200a154.matthias@rpmforge.net>
+    <1030576177.6448.1.camel@localhost.localdomain>
+    <1030580111.1388.2.camel@localhost.localdomain>
+    <20020829062638.53279644.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-6)
+Message-Id: <1030649409.4818.4.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 29 Aug 2002 14:30:08 -0500
+Date: 29 Aug 2002 14:30:08 -0500
+
+Thanks Matthias.  Actually I got all four speakers with subwoofer
+working in digital out mode with gamixer.
+(http://www1.tcnet.ne.jp/fmurata/linux/down/)
+
+However switching between analog and digital, I'm still baffled.  As I
+have a tuner and cassette deck hooked up to "Line In" on a SBLive! 5.1,
+which is in analog mode.  But digital out works great now!
+
+On Wed, 2002-08-28 at 23:26, Matthias Saou wrote:
+> Once upon a time, Lance wrote :
+> 
+> > Ok, I got ALSA installed and there is no static inbetween mp3s like
+> > before which is great!  My setup is digital 4.1 but sound is only coming
+> > from front 2 speakers and subwoofer, rear speakers there is no sound. 
+> > Also alsamixer or aumix are unresponsive as well. 
+> 
+> Maybe you could find more info or tips on the ALSA page for your card?
+> Also, you could try "alsactl store", editing /etc/asound.state" by hand
+> (for me it contains data similar to what I can control with "alsamixer")
+> then run "alsactl restore" and see if you're able to change what you want
+> that way.
+> 
+> Matthias
+> 
+> -- 
+> Matthias Saou                                World Trade Center
+> -------------                                Edificio Norte 4 Planta
+> System and Network Engineer                  08039 Barcelona, Spain
+> Electronic Group Interactive                 Phone : +34 936 00 23 23
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Finding out files larger than given size       LOST #324
+
+To find out all files in a dir over a given size, try:
+find /path/to/dir_of_file -type f -size +Nk
+[Where N is a number like 1024 for 1mb, and multiples thereof] 
+
+####[Discussions on LIH : 04 Jul 2002]########################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

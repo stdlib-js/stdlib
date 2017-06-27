@@ -1,0 +1,50 @@
+From schaefer@zanshin.com  Mon Sep 16 19:20:19 2002
+Return-Path: <schaefer@zanshin.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6CDDD16F16
+	for <jm@localhost>; Mon, 16 Sep 2002 19:20:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 19:20:19 +0100 (IST)
+Received: from moonbase.zanshin.com (IDENT:root@moonbase.zanshin.com
+    [167.160.213.139]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8GIJ2C04846 for <jm@jmason.org>; Mon, 16 Sep 2002 19:19:02 +0100
+Received: from aztec.zanshin.com (IDENT:schaefer@aztec.zanshin.com
+    [167.160.213.132]) by moonbase.zanshin.com (8.11.0/8.11.0) with ESMTP id
+    g8GIJJh32385; Mon, 16 Sep 2002 11:19:19 -0700
+Date: Mon, 16 Sep 2002 11:19:19 -0700 (PDT)
+From: Bart Schaefer <schaefer@zanshin.com>
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: Simon Matthews <simon@paxonet.com>,
+	<spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] Can someone please tell me how to get an answer from
+    this list?
+In-Reply-To: <20020916180348.DBE0616F03@spamassassin.taint.org>
+Message-Id: <Pine.LNX.4.44.0209161114300.17242-100000@aztec.zanshin.com>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On Mon, 16 Sep 2002, Justin Mason wrote:
+
+> Simon Matthews said:
+> 
+> > Procmail 3.21 is reliable as long as none of the recipies fails. I was 
+> > hoping to resolve the triplets.txt problem and thus avoid the procmail 
+> > "^rom" problem. 
+> 
+> I doubt it's related, actually -- the "triplets" stuff is in a totally
+> unrelated area of code.
+
+The procmail bug happens when the filter program does something that 
+procmail doesn't expect.  Exactly what that something is, hasn't been
+confirmed by anyone on the procmail list.  It might be exiting with a
+nonzero status, or it might be producing output on the standard error,
+or it might be something else entirely.
+
+So Simon is attempting to get SA to run flawlessly, because then it can't
+tickle the procmail bug.  This isn't a fix, it's a band-aid, but because
+he apparently doesn't have the option of installing a newer procmail ...
+
+

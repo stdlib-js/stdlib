@@ -1,0 +1,100 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 17:57:18 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B62FB440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:57:17 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:57:17 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFwIY14597 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:58:18 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id TAA28664 for <jm-rpm@jmason.org>;
+    Sun, 21 Jul 2002 19:31:12 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6LIB3C15611; Sun, 21 Jul 2002 20:11:03
+    +0200
+Received: from basket.ball.reliam.net (basket.ball.reliam.net
+    [213.91.6.7]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6LI9dC13365
+    for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 20:09:39 +0200
+Received: from localhost.localdomain (pD9EB53A5.dip.t-dialin.net
+    [217.235.83.165]) by basket.ball.reliam.net (Postfix) with SMTP id
+    D16893E01 for <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 20:09:33 +0200
+    (CEST)
+From: che <che666@uni.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ximian apt repos?
+Message-Id: <20020721200350.6fa40280.che666@uni.de>
+In-Reply-To: <20020721105151.01f2db4a.kilroy@kamakiriad.com>
+References: <1027203479.5354.14.camel@athena>
+    <20020721105151.01f2db4a.kilroy@kamakiriad.com>
+Organization: che
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 21 Jul 2002 20:03:50 -0400
+Date: Sun, 21 Jul 2002 20:03:50 -0400
+
+On Sun, 21 Jul 2002 10:51:51 -0500
+Brian Fahrlander <kilroy@kamakiriad.com> wrote:
+
+> [branching the thread, here]
+> 
+>     I found another Ximian repository- I don't know if it works yet...
+> 
+> rpm     http://gstreamer.net/releases/redhat/ redhat-73-i386 deps
+> rpm-src http://gstreamer.net/releases/redhat/ redhat-73-i386 deps
+> 
+> rpm     http://gstreamer.net/releases/redhat/ redhat-73-i386 deps ximian
+> rpm-src http://gstreamer.net/releases/redhat/ redhat-73-i386 deps ximian
+> 
+> rpm     http://gstreamer.net/releases/redhat/ redhat-73-i386 deps gnomehide
+> rpm-src http://gstreamer.net/releases/redhat/ redhat-73-i386 deps gnomehide
+> 
+>     These guys are EXTREMELY apt-friendly.  Unlike most multimedia projects, they seem to prefer RPM/Apt over the older methods.  Isn't that cool?
+> 
+>     Hey- how would I have known to "apt-get install gnome-session" to kick all this off?
+> 
+> ------------------------------------------------------------------------
+> Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+> Evansville, IN                    My Voyage: http://www.CounterMoon.com
+> ICQ  5119262
+> ------------------------------------------------------------------------
+> I don't want to hear news from Isreal until the news contains the words
+> "Bullet", "Brain", and "Arafat".
+
+i took a look into the repository it "just" contains gstreamer and his dependecies
+but thats nice for people who use it though :)
+
+thanks,
+che
+
+personally i am capped to 16 kb/s upstream only :\ if i just had like 10 to 20 times of that i would run a repository for sure. i guess alot of people would love to even get daily builds (yes i know i deserve to be eaten for that idea because it would need alot of bandwidth) but well would still be nice :).
+ 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

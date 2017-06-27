@@ -1,0 +1,74 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 10:58:10 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4B68E16F03
+	for <jm@localhost>; Fri,  4 Oct 2002 10:58:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 10:58:10 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93M3PK16864 for
+    <jm-rpm@jmason.org>; Thu, 3 Oct 2002 23:03:26 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g93Lw1f32639; Thu, 3 Oct 2002 23:58:01
+    +0200
+Received: from drone5.qsi.net.nz (drone5-svc-skyt.qsi.net.nz
+    [202.89.128.5]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g93Lvif29183
+    for <rpm-list@freshrpms.net>; Thu, 3 Oct 2002 23:57:45 +0200
+Received: (qmail 5288 invoked by uid 0); 3 Oct 2002 21:57:41 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 3 Oct 2002 21:57:41 -0000
+Received: from spawn.se7en.org ([10.0.0.3]) by se7en.org with esmtp (Exim
+    3.36 #1 (Debian)) id 17xSGN-0004od-00 for <rpm-list@freshrpms.net>;
+    Sat, 05 Oct 2002 01:13:04 +1200
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Python 2.2 site libs?
+Message-Id: <5520000.1033682218@spawn.se7en.org>
+In-Reply-To: <Pine.LNX.4.44.0210031618460.14124-100000@chip.ath.cx>
+References: <Pine.LNX.4.44.0210031618460.14124-100000@chip.ath.cx>
+X-Mailer: Mulberry/2.2.1 (Linux/x86)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 04 Oct 2002 09:57:00 +1200
+Date: Fri, 04 Oct 2002 09:57:00 +1200
+
+Ahh sweet.  Theres a reason for me to upgrade then :-)
+
+--On Thursday, October 03, 2002 16:20:46 +0300 Panu Matilainen 
+<pmatilai@welho.com> wrote:
+
+> They want to preserve binary compatibility for all .x releases. Red Hat
+> 8.0 has python 2.2 as default.
+
+
+
+                                    -- \m/ --
+  "...if I seem super human I have been misunderstood." (c) Dream Theater
+         mark@talios.com - ICQ: 1934853 JID: talios@myjabber.net
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

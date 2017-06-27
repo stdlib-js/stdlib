@@ -1,0 +1,52 @@
+From ilug-admin@linux.ie  Wed Aug 28 14:05:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EE31043F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 09:05:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 14:05:35 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SD3aZ25220 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 14:03:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA26884; Wed, 28 Aug 2002 14:03:03 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from redpie.com (redpie.com [216.122.135.208] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA26835 for
+    <ilug@linux.ie>; Wed, 28 Aug 2002 14:02:43 +0100
+Received: from justin (p253.as2.prp.dublin.eircom.net [159.134.170.253])
+    by redpie.com (8.8.7/8.8.5) with SMTP id GAA10183 for <ilug@linux.ie>;
+    Wed, 28 Aug 2002 06:02:28 -0700 (PDT)
+From: "Kiall Mac Innes" <kiall@redpie.com>
+To: "ILUG" <ilug@linux.ie>
+Date: Wed, 28 Aug 2002 14:09:48 +0100
+Message-Id: <BCEFLMCEIJHPCPLGADJIMEFLCAAA.kiall@redpie.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+Subject: [ILUG] Modem Problems
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ive just gotton myself a modem (no its not a winmodem, yes im sure) it dials
+the internet grant using the RedHat PPP Dialer... and i can ping the server
+i dial into but i cant get any furthur than that server? any ideas?
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

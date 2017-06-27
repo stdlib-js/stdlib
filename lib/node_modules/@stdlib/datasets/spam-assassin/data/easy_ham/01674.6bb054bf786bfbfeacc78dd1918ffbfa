@@ -1,0 +1,22 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 22:32:21 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 17:32:21 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCGEIPBCAB.tim.one@comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCGEJOBCAB.tim.one@comcast.net>
+
+[Tim]
+> My tests train on about 7,000 msgs, and a binary pickle of the database is
+> approaching 10 million bytes.
+
+That shrinks to under 2 million bytes, though, if I delete all the WordInfo
+records with spamprob exactly equal to UNKNOWN_SPAMPROB.  Such records
+aren't needed when scoring (an unknown word gets a made-up probability of
+UNKNOWN_SPAMPROB).  Such records are only needed for training; I've noted
+before that a scoring-only database can be leaner.
+
+In part the bloat is due to character 5-gram'ing, part due to that the
+database is brand new so has never been cleaned via clearjunk(), and part
+due to plain evil gremlins.
+

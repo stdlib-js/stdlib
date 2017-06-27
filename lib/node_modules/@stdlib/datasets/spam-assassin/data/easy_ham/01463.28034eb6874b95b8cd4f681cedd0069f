@@ -1,0 +1,97 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 12 00:05:26 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DC0AE16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 00:05:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 00:05:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BMRkC02757 for <jm-sa@jmason.org>; Wed, 11 Sep 2002 23:27:46 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pFwv-0003cR-00; Wed,
+    11 Sep 2002 15:27:05 -0700
+Received: from vtn1.victoria.tc.ca ([199.60.222.3]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pFwM-0001wa-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 11 Sep 2002 15:26:30 -0700
+Received: from vtn1.victoria.tc.ca (iwhite@localhost [127.0.0.1]) by
+    vtn1.victoria.tc.ca (8.12.5/8.12.5) with ESMTP id g8BMQNPL008396;
+    Wed, 11 Sep 2002 15:26:23 -0700 (PDT)
+Received: (from iwhite@localhost) by vtn1.victoria.tc.ca
+    (8.12.5/8.12.3/Submit) id g8BMQMNP008390; Wed, 11 Sep 2002 15:26:22 -0700
+    (PDT)
+From: Ian White <iwhite@victoria.tc.ca>
+To: Vince Puzzella <vpuzzella@bluecatnetworks.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Badly Formatted Spam Report in HTML spam
+In-Reply-To: <5DEC3FFCDE2F7C4DA45433EE09A4F22C599F80@COLOSSUS.dyadem.corp>
+Message-Id: <Pine.GSO.4.43.0209111512350.3741-100000@vtn1.victoria.tc.ca>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 11 Sep 2002 15:26:22 -0700 (PDT)
+Date: Wed, 11 Sep 2002 15:26:22 -0700 (PDT)
+
+On Wed, 11 Sep 2002, Vince Puzzella wrote:
+
+> Ever since I set defang_mime 0 all spam that contains HTML has a badly
+> formatted report.  I think/realize it's because the report should be in
+> HTML.  Is there anyway to get Spamassassin to add an HTML report in
+> cases where it is required (defang_mime 0)?
+
+Funny, I was in the middle of composing the same message when I saw yours.
+
+It would be nice if it sees a header like:
+Content-type: text/html; charset=iso-8859-1
+
+and defang_mime is 0, it could wrap the report with <pre></pre> for ease
+of reading?
+
+And the same sort of problem seems to occur with base64 encoded messages.
+The report is placed inside of the mime boundary:
+------=_NextPart_000_00B7_31E64A2B.B8441E37
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+Should this not go above (probably in it's own mime section,) to make sure
+that the attachments don't get destroyed?
+
+Ian
+
+-------------------------------------------
+Ian White
+email: iwhite@victoria.tc.ca
+
+
+
+
+
+
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

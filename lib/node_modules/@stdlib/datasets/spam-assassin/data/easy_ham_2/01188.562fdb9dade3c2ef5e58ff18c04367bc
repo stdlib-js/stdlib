@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Thu Aug  1 11:27:51 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3FD29440C9
+	for <jm@localhost>; Thu,  1 Aug 2002 06:27:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 11:27:47 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71A03206411 for
+    <jm-rpm@jmason.org>; Thu, 1 Aug 2002 11:00:03 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g719t2J31052; Thu, 1 Aug 2002 11:55:02
+    +0200
+Received: from posti.pp.htv.fi (posti.pp.htv.fi [212.90.64.50]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g719sEJ30949 for
+    <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 11:54:14 +0200
+Received: from cs78128057.pp.htv.fi ([62.78.128.57]) by posti.pp.htv.fi
+    (8.11.1/8.11.1) with ESMTP id g719s8H17811 for <rpm-list@freshrpms.net>;
+    Thu, 1 Aug 2002 12:54:08 +0300 (EETDST)
+Subject: Re: Quick php advice needed :-)
+From: Ville =?ISO-8859-1?Q?Skytt=E4?= <ville.skytta@iki.fi>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020801105156.73fb7f9f.matthias@egwn.net>
+References: <20020801105156.73fb7f9f.matthias@egwn.net>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1028195652.7627.205.camel@bobcat.ods.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g719sEJ30949
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 01 Aug 2002 12:54:12 +0300
+Date: 01 Aug 2002 12:54:12 +0300
+
+On Thu, 2002-08-01 at 11:51, Matthias Saou wrote:
+
+> Sorry, this hasn't got much to do with rpm packages directly ;-)
+> 
+> My "builds" page is getting bigger and bigger, and quite messy as
+> directories are listed in no particular order :
+> http://freshrpms.net/builds/
+> 
+> What I'd need is to have last modification date of the directory displayed
+> next to the directory name (sort of like "mplayer - Thu Aug 1 2002"), and
+> the list ordered to have the most recent entries at the top.
+
+Take a look at
+<http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/jpackage/website/htdocs/functions.php?rev=1.6&content-type=text/vnd.viewcvs-markup>, that's what produces the list at <http://jpackage.sourceforge.net/packages.php>.  Dirs are sorted alphabetically there, but I guess sorting by date wouldn't be that hairy...
+
+-- 
+\/ille Skyttä
+ville.skytta at iki.fi
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

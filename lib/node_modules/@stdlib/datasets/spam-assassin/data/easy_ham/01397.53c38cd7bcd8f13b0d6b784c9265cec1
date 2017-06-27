@@ -1,0 +1,67 @@
+From felicity@kluge.net  Mon Sep  2 23:14:41 2002
+Return-Path: <felicity@kluge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (unknown [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0426A16F23
+	for <jm@localhost>; Mon,  2 Sep 2002 23:13:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 23:13:36 +0100 (IST)
+Received: from eclectic.kluge.net
+    (IDENT:c2fwYJ/QZT7DNMfyrqI6/gtl3vme/Kuo@eclectic.kluge.net [66.92.69.221])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82Jk4Z18801 for
+    <jm@jmason.org>; Mon, 2 Sep 2002 20:46:05 +0100
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g82JkI121455; Mon, 2 Sep 2002 15:46:18 -0400
+Date: Mon, 2 Sep 2002 15:46:18 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: Spamassassin Devel List <spamassassin-devel@example.sourceforge.net>
+Subject: Re: [SAdev] SpamAssassin v2.40 released (finally)!
+Message-Id: <20020902194618.GB15737@kluge.net>
+References: <20020902175329.E20EC43F99@phobos.labs.netnoteinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="eJnRUKwClWJh1Khz"
+Content-Disposition: inline
+In-Reply-To: <20020902175329.E20EC43F99@phobos.labs.netnoteinc.com>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+
+
+--eJnRUKwClWJh1Khz
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Mon, Sep 02, 2002 at 06:53:24PM +0100, Justin Mason wrote:
+>   - Razor v2 now supported fully
+
+<grrr>  Who changed my code?    Dns.pm and Reporter.pm WRT Razor
+have pointers to $Mail::SpamAssassin::DEBUG, whereas it should be
+$Mail::SpamAssassin::DEBUG->{enabled}...
+
+I'll be submitting a bug/patch for this shortly.
+
+--=20
+Randomly Generated Tagline:
+MA Driving #2: Everything is under construction.
+
+--eJnRUKwClWJh1Khz
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9c8AKAuOQUeWAs2MRAu/AAJ4iCzGVLRmj/FZmbrmWDiikvy6JWgCcCj9e
+DG1iPuFjRLA81ijHNGqnVf4=
+=HpKL
+-----END PGP SIGNATURE-----
+
+--eJnRUKwClWJh1Khz--
+

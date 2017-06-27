@@ -1,0 +1,129 @@
+From vulnwatch-return-430-jm=jmason.org@vulnwatch.org  Fri Aug  9 15:34:13 2002
+Return-Path: <vulnwatch-return-430-yyyy=spamassassin.taint.org@vulnwatch.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EFBEF440DC
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:35 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EPOb06890 for
+    <jm@jmason.org>; Fri, 9 Aug 2002 15:25:29 +0100
+Received: from vikki.vulnwatch.org ([199.233.98.101]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id DAA02996 for <jm@jmason.org>; Fri,
+    9 Aug 2002 03:31:50 +0100
+Received: (qmail 254 invoked by alias); 9 Aug 2002 01:34:23 -0000
+Mailing-List: contact vulnwatch-help@vulnwatch.org; run by ezmlm
+Precedence: bulk
+List-Post: <mailto:vulnwatch@vulnwatch.org>
+List-Help: <mailto:vulnwatch-help@vulnwatch.org>
+List-Unsubscribe: <mailto:vulnwatch-unsubscribe@vulnwatch.org>
+List-Subscribe: <mailto:vulnwatch-subscribe@vulnwatch.org>
+Delivered-To: mailing list vulnwatch@vulnwatch.org
+Delivered-To: moderator for vulnwatch@vulnwatch.org
+Received: (qmail 23589 invoked from network); 9 Aug 2002 01:12:03 -0000
+From: "Marc Maiffret" <marc@eeye.com>
+To: "vulwatch" <vulnwatch@vulnwatch.org>
+Date: Thu, 8 Aug 2002 17:26:22 -0700
+Message-Id: <MKEAIJIPCGAHEFEJGDOCOEMHGEAA.marc@eeye.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [VulnWatch] EEYE: Macromedia Shockwave Flash Malformed Header Overflow
+
+Macromedia Shockwave Flash Malformed Header Overflow
+
+Release Date: August 8, 2002
+
+Severity:
+High (Remote Code Execution)
+
+Systems Affected:
+Macromedia Shockwave Flash - All Versions;
+Unix and Windows; Netscape and Internet Explorer
+
+Description:
+While working on some pre-release eEye Retina CHAM tools, an exploitable
+condition was discovered within the Shockwave Flash file format called SWF
+(pronounced "SWIF").
+
+Since this is a browser based bug, it makes it trivial to bypass firewalls
+and attack the user at his desktop. Also, application browser bugs allow you
+to target users based on the websites they visit, the newsgroups they read,
+or the mailing lists they frequent. It is a "one button" push attack, and
+using anonymous remailers or proxies for these attacks is possible.
+
+This vulnerability has been proven to work with all versions of Macromedia
+Flash on Windows and Unix, through IE and Netscape. It may be run wherever
+Shockwave files may be displayed or attached, including: websites, email,
+news postings, forums, Instant Messengers, and within applications utilizing
+web-browsing functionality.
+
+Technical Description:
+The data header is roughly made out to:
+
+[Flash signature][version (1)][File Length(A number of bytes too
+short)][frame size (malformed)][Frame Rate (malformed)][Frame Count
+(malformed)][Data]
+
+By creating a malformed header we can supply more frame data than the
+decoder is expecting. By supplying enough data we can overwrite a function
+pointer address and redirect the flow of control to a specified location as
+soon as this address is used. At the moment the overwritten address takes
+control flow, an address pointing to a portion of our data is 8 bytes back
+from the stack pointer. By using a relative jump we redirect flow into a
+"call dword ptr [esp+N]", where N is the number of bytes from the stack
+pointer. These "jump points" can be located in multiple loaded dll's. By
+creating a simple tool using the debugging API and ReadMemory, you can
+examine a process's virtual address space for useful data to help you with
+your exploitation.
+
+This is not to say other potentially vulnerable situations have not been
+found in Macromedia's Flash. We discovered about seventeen others before we
+ended our testing. We are working with Macromedia on these issues.
+
+Protection:
+Retina(R) Network Security Scanner already scans for this latest version of
+Flash on users' systems. Ensure all users within your control upgrade their
+systems.
+
+Vendor Status:
+Macromedia has released a patch for this vulnerability, available at:
+http://www.macromedia.com/v1/handlers/index.cfm?ID=23293&Method=Full&Title=M
+PSB02%2D09%20%2D%20Macromedia%20Flash%20Malformed%20Header%20Vulnerability%2
+0Issue&Cache=False
+
+Discovery: Drew Copley
+Exploitation: Riley Hassell
+
+Greetings: Hacktivismo!, Centra Spike
+
+Copyright (c) 1998-2002 eEye Digital Security
+Permission is hereby granted for the redistribution of this alert
+electronically. It is not to be edited in any way without express consent of
+eEye. If you wish to reprint the whole or any part of this alert in any
+other medium excluding electronic medium, please e-mail alert@eEye.com for
+permission.
+
+Disclaimer
+The information within this paper may change without notice. Use of this
+information constitutes acceptance for use in an AS IS condition. There are
+NO warranties with regard to this information. In no event shall the author
+be liable for any damages whatsoever arising out of or in connection with
+the use or spread of this information. Any use of this information is at the
+user's own risk.
+
+Feedback
+Please send suggestions, updates, and comments to:
+
+eEye Digital Security
+http://www.eEye.com
+info@eEye.com
+
+

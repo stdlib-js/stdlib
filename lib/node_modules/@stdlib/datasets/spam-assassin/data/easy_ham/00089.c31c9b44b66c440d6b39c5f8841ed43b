@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:12:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0FB2C47C7B
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:43:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:43:00 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82AagZ28789 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 11:36:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA30797; Mon, 2 Sep 2002 11:36:06 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from bramg1.net.external.hp.com (bramg1.net.external.hp.com
+    [192.6.126.73]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA30760
+    for <ilug@linux.ie>; Mon, 2 Sep 2002 11:35:56 +0100
+Received: from fowey.BR.ITC.HP.COM (fowey.br.itc.hp.com [15.145.8.186]) by
+    bramg1.net.external.hp.com (Postfix) with SMTP id 9346213A for
+    <ilug@linux.ie>; Mon,  2 Sep 2002 12:35:55 +0200 (METDST)
+Received: from 15.145.8.186 by fowey.BR.ITC.HP.COM (InterScan E-Mail
+    VirusWall NT); Mon, 02 Sep 2002 11:35:54 +0100
+Received: by fowey.br.itc.hp.com with Internet Mail Service (5.5.2655.55)
+    id <R88J5N87>; Mon, 2 Sep 2002 11:35:54 +0100
+Message-Id: <253B1BDA4E68D411AC3700D0B77FC5F807C0F3EF@patsydan.dublin.hp.com>
+From: "HAMILTON,DAVID (HP-Ireland,ex2)" <david_hamilton3@hp.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Date: Mon, 2 Sep 2002 11:35:53 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2655.55)
+Content-Type: text/plain
+Subject: [ILUG] The Age Old 'Which Mailer' Question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I am trying to manage the email for a domain which I have hosted with
+hosting365, and am trying to get the whole email send and receive thing
+working nice and easily.
+At the moment I have configured Fetchmail to poll the different pop3
+mailboxes and deliver the mail accordingly, although it appears that I have
+to have only one unix user being able to receive from each pop3 mailbox.
+This could be a limitation of the fetchmailconf programme, I'm not sure, but
+It would be much handier if I could just tell it to collect all of the mail
+from the different mailboxes, and then deliver it locally according to the
+"To:" header instead of the pop3 mailbox it came from.
+The other issue I am having is sending outgoing mail.  I have been trying to
+use sendmail, but am finding it to be an absolute pain in the posterior, and
+when the relay server will only accept outgoing connections if I have
+checked for incoming mail in the last twenty minutes, and I don't know how
+to set sendmail to run a command before it sends out the mail.  Do any of
+the outgoing mailer programs, exim or postfix or whatever, have a 'nice'
+configuration interface, or do they all have nice friendly configuration
+files like sendmail.
+
+Any suggestions of alternative solutions would be much appreciated.  There
+are only three or four email addresses in my domain, and setting it up for
+scheduled collection and either scheduled or immediate delivery would do me
+fine.
+
+Thanks,
+
+	David.
+
+David Hamilton
+Senior Technical Consultant
+HP Ireland 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

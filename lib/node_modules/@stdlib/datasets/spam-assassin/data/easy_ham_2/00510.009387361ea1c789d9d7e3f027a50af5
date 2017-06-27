@@ -1,0 +1,80 @@
+From webdev-admin@linux.ie  Wed Jul 31 11:29:20 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 89FC1440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 06:29:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 11:29:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VANW215983 for
+    <jm-webdev@jmason.org>; Wed, 31 Jul 2002 11:23:32 +0100
+Received: from lugh (www-data@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA28545; Wed, 31 Jul 2002 11:22:11 +0100
+Received: from ishmael.niallsheridan.com ([217.78.6.179]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA28232 for <webdev@linux.ie>;
+    Wed, 31 Jul 2002 11:18:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.78.6.179] claimed to
+    be ishmael.niallsheridan.com
+Received: by ishmael.niallsheridan.com (Postfix, from userid 500) id
+    65C9AC7986; Wed, 31 Jul 2002 06:17:58 -0400 (EDT)
+Subject: RE: [Webdev] Migrating TO W2K
+From: Niall Sheridan <ns@niallsheridan.com>
+To: William Harrison - Protocol <wharrison@pro.ie>
+Cc: webdev@linux.ie
+In-Reply-To: <NFBBKGICNJAKAMHIOPMBEEJBDMAA.wharrison@pro.ie>
+References: <NFBBKGICNJAKAMHIOPMBEEJBDMAA.wharrison@pro.ie>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Date: 31 Jul 2002 11:17:57 +0100
+Message-Id: <1028110677.1241.46.camel@ishmael.niallsheridan.com>
+MIME-Version: 1.0
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+I thought I read somewhere that work on phpTriad had ceased?
+Setting up MySQL/PHP/Perl (activestate)/Apache on win2k server is a
+piece of cake anyhow
+
+Niall
+
+On Wed, 2002-07-31 at 11:05, William Harrison - Protocol wrote:
+> Hi Nick
+> 
+> Try PHPTriad
+> 
+>  http://download.com.com/3000-2165-6474268.html?tag=lst-0-1
+> 
+> "PHPTriad is a complete PHP development and server environment for Windows.
+> It installs PHP, Apache, MySQL, and PHPMyAdmin, both installing and setting
+> up the environment. Version 2.11 updates all components and it now includes
+> Perl 5."
+> 
+> HTH
+> 
+> Will
+> 
+> 
+> 
+> 
+> 
+> _______________________________________________
+> Webdev mailing list
+> Webdev@linux.ie
+> http://www.linux.ie/mailman/listinfo/webdev
+> 
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+
+

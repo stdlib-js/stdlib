@@ -1,0 +1,93 @@
+From fork-admin@xent.com  Fri Sep 20 16:15:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 901F216F03
+	for <jm@localhost>; Fri, 20 Sep 2002 16:15:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 16:15:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8KE7pC08317 for <jm@jmason.org>;
+    Fri, 20 Sep 2002 15:07:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8D8602940C3; Fri, 20 Sep 2002 07:04:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id AB2B829409C for <fork@xent.com>;
+    Fri, 20 Sep 2002 07:03:25 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H2Q004RHPVH35@mta6.snfc21.pbi.net> for fork@xent.com; Fri,
+    20 Sep 2002 07:06:53 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Sun
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D8B2931.B8321588@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 20 Sep 2002 06:57:05 -0700
+
+Well, it looks like Sun are going ahead with
+their ubiquitous computing plans without Mithril. 
+
+Greg
+
+Reuters Market News
+  Sun Micro Outlines Roadmap for Managing Networks 
+  Friday September 20, 5:00 am ET 
+  By Peter Henderson 
+
+  SAN FRANCISCO (Reuters) - Computer maker Sun Microsystems Inc. on Thursday
+  said it would create in a few years a network environment that will be as
+  straightforward to handle as a single machine, a strategy it calls N1.
+
+  It laid out a road map for a new layer of intelligent software and systems that will meld
+  unwieldy networks into easy-to-use systems, a goal similar to those of most rivals
+  making computers which manage networks. 
+  EMC Corp. announced this week software aimed at allowing users to manage storage
+  resources as a pool. Hewlett-Packard Co has a Utility Data Center, designed for
+  broader management. International Business Machines Corp's project eLiza is working
+  to make computers "self-healing" when systems break.
+
+  "Applications still have to run zeroes and ones on some computing engine but the
+  whole idea behind N1 is you stop thinking about that. You don't think about what box
+  it is running on," Sun Vice President Steve MacKay, head of the N1 program, said in an
+  interview on the sidelines of a Sun user conference. 
+
+  Many industry executives see computer power eventually being sold like power or
+  water, as a utility that can be turned on or off, in whatever volume one wants whenever
+  needed. 
+  For that to happen computers must be tied together seamlessly, rather than cobbling
+  them together with tenuous links, as most networks do today, experts say. There are
+  still major barriers, though, such as communications standards for machines from
+  different vendors to interoperate closely. 
+  Sun promised to deliver a "virtualization engine" that would let administrators look at
+  their entire network as a pool by the end of the year. Network administrators today
+  often have no automatic system to report what is in the network. 
+
+  "It'll tell you what you have and how it is laid out," promised MacKay
+  The second stage, beginning in 2003, would allow users to identify a service, such as
+  online banking, and allocate resources for them with a few clicks, Sun said. 
+  Finally, in 2004, Sun's software should allow networks to change uses of resources on
+  the fly in response to changing needs, such as a bank assuring quicker online response
+  time for priority users, the company said.
+
+

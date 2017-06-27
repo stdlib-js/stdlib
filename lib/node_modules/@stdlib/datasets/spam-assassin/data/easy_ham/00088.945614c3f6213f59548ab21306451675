@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:14:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1634847C79
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:42:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:42:31 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82AEwZ28230 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 11:14:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA29406; Mon, 2 Sep 2002 11:14:15 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA29324
+    for <ilug@linux.ie>; Mon, 2 Sep 2002 11:13:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-158.dublin.indigo.ie
+    [194.125.176.158]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    15675FB4F for <ilug@linux.ie>; Mon,  2 Sep 2002 10:57:18 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    BE05D61DEF; Mon,  2 Sep 2002 11:00:17 +0100 (IST)
+Date: Mon, 2 Sep 2002 11:00:17 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020902100017.GB2041@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] VPN implementation
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I need to setup a VPN between a few sites. From what I've read, the the
+choices come down (on the Linux side) to IPsec (using FreeSWAN) or CIPE.
+It seems that FreeSWAN is 'better', being an implementation of IPsec which
+is a standard. However, CIPE does the job as well for Linux clients and is
+somewhat simpler to setup. 
+
+The problem is that it's not a pure Linux situation - a couple of the sites
+run OS-X. I'm pretty sure that I'll be able to find an implementation of
+IPsec for OS-X, but I think CIPE is Linux only.
+
+So, the question is for those of you have have implemented BOTH - is there a
+significant difference in setup time and hassle between CIPE and FreeSWAN ?
+If CIPE is going to be much easier than dealing with FreeSWAN (and whatever
+on the OS-X sites) then I'll simply get a Linux box for each of the remote
+sites - with the low price of hardware, it doesn't take much more complexity
+in software to make buying hardware to use simpler software economic.
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,197 @@
+From exmh-workers-admin@redhat.com  Thu Jul 25 11:01:49 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CC3DC440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:01:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:01:48 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6OLni409906 for
+    <jm-exmh@jmason.org>; Wed, 24 Jul 2002 22:49:44 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 4DEA040452; Wed, 24 Jul 2002
+    17:48:23 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 6EF3B4053F
+    for <exmh-workers@listman.redhat.com>; Wed, 24 Jul 2002 17:41:18 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6OLfIG27217 for exmh-workers@listman.redhat.com; Wed, 24 Jul 2002
+    17:41:18 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6OLfIR27213 for
+    <exmh-workers@redhat.com>; Wed, 24 Jul 2002 17:41:18 -0400
+Received: from mail2.lsil.com (mail2.lsil.com [147.145.40.22]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6OLTYs12266 for
+    <exmh-workers@redhat.com>; Wed, 24 Jul 2002 17:29:34 -0400
+Received: from mhbs.lsil.com (mhbs [147.145.31.100]) by mail2.lsil.com
+    (8.9.3+Sun/8.9.1) with ESMTP id OAA06258 for <exmh-workers@redhat.com>;
+    Wed, 24 Jul 2002 14:41:11 -0700 (PDT)
+From: kchrist@lsil.com
+Received: from inca.co.lsil.com by mhbs.lsil.com with ESMTP;
+    Wed, 24 Jul 2002 14:41:09 -0700
+Received: from flytrap.co.lsil.com (flytrap.co.lsil.com [172.20.3.234]) by
+    inca.co.lsil.com (8.9.3/8.9.3) with ESMTP id PAA08713; Wed, 24 Jul 2002
+    15:41:07 -0600 (MDT)
+Received: from bhuta.co.lsil.com (bhuta [172.20.12.135]) by
+    flytrap.co.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id PAA25722;
+    Wed, 24 Jul 2002 15:41:06 -0600 (MDT)
+Received: from bhuta (localhost [127.0.0.1]) by bhuta.co.lsil.com
+    (8.10.2+Sun/8.9.1) with ESMTP id g6OLf4T04689; Wed, 24 Jul 2002 15:41:05
+    -0600 (MDT)
+X-Mailer: exmh version 2.5 07/09/2001 with nmh-1.0.4+dev
+To: Chris Garrigues <cwg-dated-1027978302.cb328a@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: [fwd: error exmh 2.5 07/13/2001 ]
+Reply-To: Kevin.Christian@lsil.com
+In-Reply-To: Your message of
+    "Wed, 24 Jul 2002 16:31:40 CDT."
+    <1027546301.610.TMDA@deepeddy.vircio.com>
+References: <1027546301.610.TMDA@deepeddy.vircio.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed ; boundary="==_Exmh_9973050780"
+Message-Id: <4687.1027546864@bhuta>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 24 Jul 2002 15:41:04 -0600
+
+This is a multipart MIME message.
+
+--==_Exmh_9973050780
+Content-Type: text/plain; charset=us-ascii
+
+Chris,
+
+I think you are referring to a problem I noticed last October (see 
+attached email). If I remember correctly, the binding for SeditBeautify
+is being applied outside of the sedit window and that results in the 
+behavior observed.
+
+Kevin
+
+In message <1027546301.610.TMDA@deepeddy.vircio.com>, Chris Garrigues writes:
+> 
+> Am I the only one for whom typing control-L to the main window causes this 
+> error?
+> 
+> I can't figure out why it occurs.
+> 
+> Chris
+> 
+
+
+--==_Exmh_9973050780
+Content-Type: message/rfc822 ; name="5637"
+Content-Description: 5637
+Content-Disposition: attachment; filename="5637"
+
+Return-Path: exmh-workers-admin@spamassassin.taint.org
+Delivery-Date: Tue, 02 Oct 2001 15:02:08 -0600
+Received: from mhbs.lsil.com (mhbs.lsil.com [147.145.31.100])
+	by flytrap.co.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id PAA14805
+	for <kchrist@flytrap.co.lsil.com>; Tue, 2 Oct 2001 15:02:06 -0600 (MDT)
+Received: from mail2.lsil.com by mhbs.lsil.com with ESMTP for kchrist@lsil.com; Tue, 2 Oct 2001 14:02:04 -0700
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [199.183.24.211])
+	by mail2.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id OAA15069
+	for <kchrist@lsil.com>; Tue, 2 Oct 2001 14:02:03 -0700 (PDT)
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1])
+	by listman.redhat.com (Postfix) with ESMTP
+	id DFA943002F; Tue,  2 Oct 2001 17:02:01 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from mail.spamassassin.taint.org (mail.spamassassin.taint.org [199.183.24.239])
+	by listman.redhat.com (Postfix) with ESMTP id 309802F422
+	for <exmh-workers@listman.redhat.com>; Tue,  2 Oct 2001 17:01:02 -0400 (EDT)
+Received: (from mail@localhost)
+	by mail.redhat.com (8.11.0/8.8.7) id f92L12F21878
+	for exmh-workers@listman.redhat.com; Tue, 2 Oct 2001 17:01:02 -0400
+Received: from mail2.lsil.com (mail2.lsil.com [147.145.40.22])
+	by mail.redhat.com (8.11.0/8.8.7) with ESMTP id f92L11g21859
+	for <exmh-workers@redhat.com>; Tue, 2 Oct 2001 17:01:01 -0400
+Received: from mhbs.lsil.com (mhbs [147.145.31.100])
+	by mail2.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id OAA14865
+	for <exmh-workers@redhat.com>; Tue, 2 Oct 2001 14:00:57 -0700 (PDT)
+From: kchrist@lsil.com
+Received: from inca.co.lsil.com by mhbs.lsil.com with ESMTP for exmh-workers@spamassassin.taint.org; Tue, 2 Oct 2001 14:00:22 -0700
+Received: from flytrap.co.lsil.com (flytrap.co.lsil.com [172.20.3.234])
+	by inca.co.lsil.com (8.9.3/8.9.3) with ESMTP id PAA26097
+	for <exmh-workers@redhat.com>; Tue, 2 Oct 2001 15:00:21 -0600 (MDT)
+Received: from arrakis.co.lsil.com (arrakis [172.20.22.152])
+	by flytrap.co.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id PAA14673
+	for <exmh-workers@redhat.com>; Tue, 2 Oct 2001 15:00:19 -0600 (MDT)
+Received: from arrakis (localhost [127.0.0.1])
+	by arrakis.co.lsil.com (8.9.1b+Sun/8.9.1) with ESMTP id PAA16677
+	for <exmh-workers@redhat.com>; Tue, 2 Oct 2001 15:00:17 -0600 (MDT)
+X-Mailer: exmh version 2.5 07/09/2001 with nmh-1.0.4+dev
+To: exmh-workers@spamassassin.taint.org
+Subject: SeditBeautify bug
+Reply-To: Kevin.Christian@lsil.com
+Message-Id: <16675.1002056416@arrakis>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-BeenThere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+	<mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+	<mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Tue, 02 Oct 2001 15:00:16 -0600
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+It appears that the binding for SeditBeautify applies to
+more than just the sedit window. Since SeditBeautify assumes
+we are in a sedit window the routine fails. (Try typing
+ctrl-l over the main window to see what I mean).
+
+The quick fix for this is to make the ^l more restrictive. However, I'd
+suggest keeping things the way the are and extending ^l to be a
+highlight toggle. If the window is currently highlighted (sedit or msg)
+re-display without highlighting and vice versa.
+
+While I can hack tcl, hacking tk is another story. Translation: I can't 
+fix this bug myself. Any volunteers?
+
+Kevin
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+--==_Exmh_9973050780--
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

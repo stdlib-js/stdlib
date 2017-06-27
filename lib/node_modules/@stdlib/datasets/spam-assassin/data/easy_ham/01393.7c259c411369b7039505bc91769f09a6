@@ -1,0 +1,37 @@
+From quinlan@pathname.com  Mon Sep  2 12:32:26 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9001A43F99
+	for <jm@localhost>; Mon,  2 Sep 2002 07:32:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:32:24 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7V0KkZ16711 for
+    <jm@jmason.org>; Sat, 31 Aug 2002 01:20:47 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17kw0Z-0001k9-00; Fri, 30 Aug 2002 17:20:59 -0700
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: SpamAssassin-devel@sourceforge.net
+Subject: Re: [SAdev] GA-assigned SPAM_PHRASE_55_XX score
+References: <20020830103221.9148E43F99@phobos.labs.netnoteinc.com>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 30 Aug 2002 17:20:59 -0700
+In-Reply-To: yyyy@spamassassin.taint.org's message of "Fri, 30 Aug 2002 11:32:16 +0100"
+Message-Id: <yf2n0r3ho9g.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+jm@jmason.org (Justin Mason) writes:
+
+> BTW I tried tweaking some of the scores that lint-rules complained about
+> being negative when they shouldn't be, and it *ruined* the results.  it's
+> worth hand-tweaking a bit, but in some cases, there's counter-intuitive
+> combinatorial effects like the above, so be careful when tweaking; run
+> a "./logs-to-c && ./evolve -C" to check the new hitrates afterwards.
+
+My tendency is to say that we shouldn't tweak at all.
+
+- Dan
+

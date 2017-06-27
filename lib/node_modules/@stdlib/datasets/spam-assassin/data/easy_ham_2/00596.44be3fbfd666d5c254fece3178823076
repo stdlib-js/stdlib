@@ -1,0 +1,84 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:33:52 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 28B85440D9
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:31 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ENSb06684 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:23:28 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id FAA03460 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 05:24:59 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17d1Es-0005Kp-00; Thu,
+    08 Aug 2002 21:19:02 -0700
+Received: from vhost.swchs.org ([216.185.203.194]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17d1EQ-0005Wy-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 21:18:34 -0700
+Received: from WorldClient [127.0.0.1] by lerfjhax.com [127.0.0.1] with
+    SMTP (MDaemon.v3.5.0.R) for <razor-users@lists.sourceforge.net>;
+    Thu, 08 Aug 2002 23:18:29 -0500
+From: "Will Glynn" <delta407@delta407.homeip.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+X-Mailer: WorldClient Standard 3.5.0e
+In-Reply-To: <20020809013908.GA10032@fsckit.net>
+X-Mdremoteip: 127.0.0.1
+X-Return-Path: delta407@delta407.homeip.net
+X-Mdaemon-Deliver-To: razor-users@example.sourceforge.net
+Message-Id: <E17d1EQ-0005Wy-00@usw-sf-list1.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 08 Aug 2002 23:18:29 -0500
+Date: Thu, 08 Aug 2002 23:18:29 -0500
+
+> Who loses in this case? Why? Neither party is inaccurate in their
+> actions IMO. But someone's standing is going to get hurt because of it.
+
+My question for the trust system is this. I signed up for a free account 
+on some website that gives me free access to a large compilation of data, 
+and in so doing have subscribed myself to their mailing list. The mailing 
+includes a list of new articles and books and so forth as well as a few 
+links to their book store.
+
+This is consistently flagged as spam, even though I *agreed* to see it, 
+and I *want* to see what new articles there are, since some of them might 
+be interesting. Thus, since it is certifiably *not* spam (it even 
+includes a link to terminate your account), I revoke it. Even so, the 
+next mail is still flagged as spam.
+
+Who is losing a trust rating here? If it is not unsolicited commercial e-
+mail, it should not be reported by Razor as spam -- correct?
+
+--Will
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

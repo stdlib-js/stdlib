@@ -1,0 +1,123 @@
+From iiu-admin@taint.org  Tue Jul 23 22:55:22 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7BDD7440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 17:55:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 22:55:22 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NLsE430662;
+    Tue, 23 Jul 2002 22:54:14 +0100
+Received: from waterford.wizardr.ie (root@stargate.wizardr.ie
+    [194.125.0.34]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6NLrZ430641 for <iiu@taint.org>; Tue, 23 Jul 2002 22:53:35 +0100
+Received: from hackwatch.com (void.nsa.ie [193.120.253.3]) by
+    waterford.wizardr.ie (8.9.3/8.9.3) with ESMTP id WAA18585 for
+    <iiu@taint.org>; Tue, 23 Jul 2002 22:52:47 +0100
+Message-Id: <3D3DD053.572AEC01@hackwatch.com>
+From: John McCormac <yyyycc@hackwatch.com>
+Organization: HackWatch
+X-Mailer: Mozilla 4.78 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: iiu@taint.org
+Subject: Re: [IIU] IE nameserver problems
+References: <20020722094916.GA93741@bender.kerna.ie>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Tue, 23 Jul 2002 22:53:23 +0100
+
+James Raftery wrote:
+> 
+> I don't know what role ns0 plays in relation to the IE zone. It's
+> certainly not involved in the regular resolution process. It may
+> be involved in zone distribution as you suggest. IIRC (and I often
+> don't) on Friday ns0 had a serial that none of the IE nameservers
+> shared. Unfortunately I don't have a record of that.
+
+>>From indexing CNO, ns0 appears to be IEDR's CNO nameserver for its CNO
+domains (iedr.com and others).
+ 
+> > This whole thing does seriously bring into question IEDR's decision to
+> > outsource the technical admininstration of .ie to a company that
+> > apparently does not even admin its own DNS. It is a nice story though -
+> > almost as good as the time that .ie disappeared for 8 hours in July
+> > 1998.
+> 
+> ... and only you noticed :)
+> [ Messages on the IEDR-FORUM list at the time don't support
+>   your assertion ]
+
+Yeah but I was right and I was there. The people who were saying that it
+did not happen did not see the fadeout in progress. It only came back
+after the server was rebooted properly. However improbable it seemed at
+the time, the nameservers came back up after a power outage without the
+.ie zonefile. As a result it, there was nothing in the file that the
+secondaries picked up. At the time, I thought that the file was on an
+NFS. But if it regenerated after reboot, and the NFS input was not
+there, it would have generated a blank zonefile - that makes some sense.
+History now but it has an alarming relevance. :)
+ 
+> As an aside, shortly after my note on Friday uucp-gw-1.pa.dec.com and
+> uucp-gw-2.pa.dec.com stopped responding to DNS requests. So IE had
+> two dead nameservers, four stuck a week in the past and three
+> working correctly. Marvellous.
+
+Confirm that. The nameservers themselves had connectivity problems from
+what I could see and it was going on for a while, even *after* the
+initial SOA problems. 
+
+I am thinking of writing a simple .ie secondary state monitor for
+inclusion on WhoisIreland.com as these guys seem to be technologically
+incapable of running their own DNSes. What kind of distorted logic hands
+the admin of a national tld to a company that does not even handle DNS
+for its own domain? Whatever selection process IEDR used should be
+investigated by the relevant government department, especially as the
+company supposedly providing technical administration to IEDR did not
+actually spot this loss of synch. The IEDR contract with the company
+should be reviewed in the light of this event. This kind of 1 week loss
+of synch should not happen with a national domain. Ireland as E-hub -
+more like e-jit central! :)
+
+Regards...jmcc
+-- 
+********************************************
+John McCormac            * Hack Watch News
+jmcc@hackwatch.com       * 22 Viewmount, 
+Voice:   +353-51-873640  * Waterford,
+BBS&Fax: +353-51-850143  * Ireland
+http://www.hackwatch.com/~kooltek
+********************************************
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 2.6
+
+mQCNAzAYPNsAAAEEAPGTHaNyitUTNAwF8BU6mF5PcbLQXdeuHf3xT6UOL+/Od+z+
+ZOCAx8Ka9LJBjuQYw8hlqvTV5kceLlrP2HPqmk7YPOw1fQWlpTJof+ZMCxEVd1Qz
+TRet2vS/kiRQRYvKOaxoJhqIzUr1g3ovBnIdpKeo4KKULz9XKuxCgZsuLKkVAAUX
+tCJKb2huIE1jQ29ybWFjIDxqbWNjQGhhY2t3YXRjaC5jb20+tBJqbWNjQGhhY2t3
+YXRjaC5jb20=
+=sTfy
+-----END PGP PUBLIC KEY BLOCK-----
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+

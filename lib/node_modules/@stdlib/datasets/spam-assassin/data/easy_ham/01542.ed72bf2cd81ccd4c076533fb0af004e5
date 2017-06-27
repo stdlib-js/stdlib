@@ -1,0 +1,184 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Oct  8 17:02:46 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B8FA616F18
+	for <jm@localhost>; Tue,  8 Oct 2002 17:02:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 17:02:19 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g98FWJK22155 for <077-jm-sa-listinfo-9089756@jmason.org>; Tue,
+    8 Oct 2002 16:32:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ywM8-0004Su-00 for
+    <077-jm-sa-listinfo-9089756@jmason.org>; Tue, 08 Oct 2002 08:33:08 -0700
+Received: from buffy.jpci.net ([212.113.192.239]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ywLg-0005eg-00 for <spamassassin-talk-admin@lists.sourceforge.net>;
+    Tue, 08 Oct 2002 08:32:40 -0700
+From: "postmaster@jpci.net" <postmaster@jpci.net>
+To: "spamassassin-talk-admin@example.sourceforge.net" <spamassassin-talk-admin@example.sourceforge.net>
+Subject: Failed mail: Banned or potentially offensive material
+Date: Tue, 8 Oct 2002 16:30:44 +0100
+Message-Id: <15304473447566@buffy.jpci.net>
+X-Mailer: NTMail v7.02.3037
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="==_15304473447567@buffy.jpci.net==_"
+Sender: spamassassin-talk-owner@example.sourceforge.net
+Errors-To: spamassassin-talk-owner@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+    T_NONSENSE_FROM_00_10 version=2.50-cvs
+X-Spam-Level:
+
+This is a MIME-encapsulated message
+
+--==_15304473447567@buffy.jpci.net==_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Your message was not delivered to
+ 
+    daz@jpci.net
+ 
+This mail message contains banned or potentially offensive text.
+
+
+--==_15304473447567@buffy.jpci.net==_
+Content-Type: message/delivery-status
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Reporting-MTA: dns;buffy.jpci.net
+ 
+Final-Recipient: rfc822;daz@jpci.net
+Action: failure
+
+
+--==_15304473447567@buffy.jpci.net==_
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13] helo=usw-sf-list1.sourceforge.net)
+	by usw-sf-list2.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17ywHF-0003wQ-00; Tue, 08 Oct 2002 08:28:05 -0700
+Received: from dsl092-072-213.bos1.dsl.speakeasy.net ([66.92.72.213] helo=blazing.arsecandle.org)
+	by usw-sf-list1.sourceforge.net with esmtp 
+	(Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian))
+	id 17ywGP-000544-00
+	for <Spamassassin-talk@lists.sourceforge.net>; Tue, 08 Oct 2002 08:27:14 -0700
+Received: (qmail 31751 invoked from network); 8 Oct 2002 15:26:25 -0000
+Received: from localhost (HELO RAGING) (rod@127.0.0.1)
+  by localhost with SMTP; 8 Oct 2002 15:26:25 -0000
+Message-ID: <042a01c26edf$16332c50$b554a8c0@RAGING>
+From: "rODbegbie" <rOD@arsecandle.org>
+To: "Odhiambo Washington" <wash@wananchi.com>,
+	"spamassassin" <Spamassassin-talk@lists.sourceforge.net>
+References: <20021008130510.GA23757@ns2.wananchi.com>
+Subject: Re: [SAtalk] spamd error messages
+Organization: Arsecandle Industries, Inc.
+X-Habeas-SWE-1: winter into spring
+X-Habeas-SWE-2: brightly anticipated
+X-Habeas-SWE-3: like Habeas SWE (tm)
+X-Habeas-SWE-4: Copyright 2002 Habeas (tm)
+X-Habeas-SWE-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-SWE-6: email in exchange for a license for this Habeas
+X-Habeas-SWE-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-SWE-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-SWE-9: mark in spam to <http://www.habeas.com/report>.
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+	micalg=SHA1;
+	protocol="application/x-pkcs7-signature";
+	boundary="----=_NextPart_000_0426_01C26EBD.8DF911E0"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2800.1106
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-BeenThere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+	<mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Tue, 8 Oct 2002 11:26:32 -0400
+Date: Tue, 8 Oct 2002 11:26:32 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0426_01C26EBD.8DF911E0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+Odhiambo Washington wrote:
+> After being bitten by bugs in 2.41, I've downgraded to 2.31 but now spamd
+> spews errors like I've never seen before:
+
+Delete the contents of /usr/local/share/spamassassin and reinstall.  There
+are some files that were new to v2.4x, so they won't be overwritten when you
+downgrade.
+
+rOD.
+
+
+--
+"Fast!  Fast!  Faster!  Bring the beef, you bastard,"
+cries Paula Abdul, "and don't forget the pasta!"
+
+Doing the blogging thang again at http://www.groovymother.com/ <<
+
+------=_NextPart_000_0426_01C26EBD.8DF911E0
+Content-Type: application/x-pkcs7-signature;
+	name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="smime.p7s"
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAQAAoIIJIjCCAnow
+ggHjoAMCAQICARcwDQYJKoZIhvcNAQEFBQAwUzELMAkGA1UEBhMCVVMxHDAaBgNVBAoTE0VxdWlm
+YXggU2VjdXJlIEluYy4xJjAkBgNVBAMTHUVxdWlmYXggU2VjdXJlIGVCdXNpbmVzcyBDQS0xMB4X
+DTAyMDQxODE1MjkzN1oXDTIwMDQxMzE1MjkzN1owTjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUdl
+b1RydXN0IEluYy4xJzAlBgNVBAMTHkdlb1RydXN0IFRydWUgQ3JlZGVudGlhbHMgQ0EgMjCBnzAN
+BgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAspcspZISpYX/aJqWoYcSyyGqFby3OvsepRzLRU0ENDJR
+wJo7DwFpirRFOUQkTkKXsY6BQzX/CeCRrn9i4ny5gcXuI2JSyrSmDwobbwl52n5cPEbHGcebybWd
+KfAf8vvkxYUnTmDZPtt2ob5RNpJTeTiq9MpNCB/5G7Ocr1hEljcCAwEAAaNjMGEwDgYDVR0PAQH/
+BAQDAgHGMB0GA1UdDgQWBBQig0tNIAIMMfR8WrAaTRXIeF0RSTAPBgNVHRMBAf8EBTADAQH/MB8G
+A1UdIwQYMBaAFEp4MlIR21kWNl7fwRQ2QGpHfEyhMA0GCSqGSIb3DQEBBQUAA4GBACmw3z+sLsLS
+fAfdECQJPfiZFzJzSPQKLwY7vHnNWH2lAKYECbtAFHBpdyhSPkrj3KghXeIJnKyMFjsK6xd1k1Yu
+wMXrauUH+HIDuZUg4okBwQbhBTqjjEdo/cCHILQsaLeU2kM+n5KKrpb0uvrHrocGffRMrWhz9zYB
+lxoq0/EEMIICgjCCAeugAwIBAgIBBDANBgkqhkiG9w0BAQQFADBTMQswCQYDVQQGEwJVUzEcMBoG
+A1UEChMTRXF1aWZheCBTZWN1cmUgSW5jLjEmMCQGA1UEAxMdRXF1aWZheCBTZWN1cmUgZUJ1c2lu
+ZXNzIENBLTEwHhcNOTkwNjIxMDQwMDAwWhcNMjAwNjIxMDQwMDAwWjBTMQswCQYDVQQGEwJVUzEc
+MBoGA1UEChMTRXF1aWZheCBTZWN1cmUgSW5jLjEmMCQGA1UEAxMdRXF1aWZheCBTZWN1cmUgZUJ1
+c2luZXNzIENBLTEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM4vGbwXt3fek6lfWg0XTzQa
+DJj0ItlZ1MRoRvC0NcWFAyDGr0WlIVFFQesWWDYyb+JQYmT5/VGcqiTZ9J2DKocKIdMSODRsjQBu
+WqDZQu4aIZX5UkxVWsUPOE9G+m34LjXWHXzr4vCwdYDIqROsvojvOm6rXyo4YgKwEnv+j6YDAgMB
+
+------=_NextPart_000_0426_01C26EBD.8DF911E0--
+
+--==_15304473447567@buffy.jpci.net==_--
+
+

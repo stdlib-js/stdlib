@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Thu Sep  5 11:31:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C472B16F81
+	for <jm@localhost>; Thu,  5 Sep 2002 11:28:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:28:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8548xZ03881 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 05:09:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CB4DD29421F; Wed,  4 Sep 2002 21:06:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav16.law15.hotmail.com [64.4.22.120]) by
+    xent.com (Postfix) with ESMTP id 889CA2940AA for <FoRK@xent.com>;
+    Wed,  4 Sep 2002 21:05:23 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Wed, 4 Sep 2002 21:07:55 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "FoRK" <FoRK@xent.com>
+References: <AMEPKEBLDJJCCDEJHAMIIECDFGAA.ejw@cse.ucsc.edu>
+Subject: Re: CD player UI for toddlers
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV16XoivCNoMKrwDVT0000bc1e@hotmail.com>
+X-Originalarrivaltime: 05 Sep 2002 04:07:55.0358 (UTC) FILETIME=[CFD43FE0:01C25491]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 21:11:50 -0700
+
+
+----- Original Message -----
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+
+>
+> For toddlers, pressing play must cause the music to start immediately,
+> within half a second, for the toddler to get the causality and not press
+the
+> button multiple times.
+Or some sound indicating that the music will start real soon now.
+
+> As well, pressing the button multiple times shouldn't
+> change the semantics, like an elevator button. No matter how many times
+you
+> press, the elevator still comes to that floor. The play button needs to be
+> the same.
+Idempotency everywhere you look...
+
+
+> What would the ideal toddler CD player be like? It would immediately start
+> playing a CD after it was loaded.
+It'd be an MP3 player with solid state storage... instant on.
+
+
+

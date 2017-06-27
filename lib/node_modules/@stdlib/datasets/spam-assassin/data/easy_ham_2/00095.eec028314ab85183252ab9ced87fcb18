@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:46 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F0114440D8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:25 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG2AY16977 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:10 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id BAA25262 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 01:20:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA09188; Sun, 21 Jul 2002 01:15:47 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA09150 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 01:15:40 +0100
+Received: from gonzo.waider.ie
+    (IDENT:EAhdBkKXlYbyGHKC2RMD3nVwYjuLO5UG@1Cust138.tnt3.dub2.ie.uudial.net
+    [213.116.44.138]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g6KNpcj02522; Sun, 21 Jul 2002 00:51:40 +0100
+Received: from klortho.waider.ie
+    (IDENT:6UNZ2NeFx+QKk/Y8JEWd9odY8uYjJ2TF@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g6L0FSt08770; Sun,
+    21 Jul 2002 01:15:28 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g6L0FQt18963; Sun, 21 Jul 2002 01:15:26 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15673.64797.792173.490109@klortho.waider.ie>
+Date: Sun, 21 Jul 2002 01:15:25 +0100
+From: Ronan Waide <waider@waider.ie>
+To: kevin lyda <kevin+dated+1027480289.5c6047@ie.suberic.net>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] jpeg patented...
+In-Reply-To: <20020719041127.A29748@ie.suberic.net>
+References: <20020719041127.A29748@ie.suberic.net>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On July 19, kevin+dated+1027480289.5c6047@ie.suberic.net said:
+> http://biz.yahoo.com/bw/020711/110249_1.html
+> 
+> oh, and look, sony already caved:
+> 
+>     http://biz.yahoo.com/bw/020610/100215_2.html
+> 
+> it generated over 1000 comments on /..  might be an idea to look into
+> png's.  in the meantime it will be amusing to see who they'll go after
+> next?  how many jpeg rendering/creating apps/os's has ms distributed to
+> their customers since 1986?
+> 
+> kevin
+
+Having skimmed over the patent, it appears to be describing a sort of
+image compression algorithm which gels more or less with the JPEG
+mechanism. Since I don't quite understand how jpeg works (it's hard
+math, and I'm just a dumb comp. eng.) I don't know how exactly it
+matches up to JPEG. I'm more curious as to whether it covers MPEG,
+because it /is/ described in the context of video streams rather than
+stills, and I had a vague impression that the MPEG and JPEG
+compression techniques were similar. One of the patents it references
+also seems to hint at MPEG.
+
+Let's all use PNG, eh? *cough* *wheeze*
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+
+"It would be hard to design a worse outdoor chair without making it
+ irresistably delicious to squirrels." - L. Fitzgerald Sjoberg
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

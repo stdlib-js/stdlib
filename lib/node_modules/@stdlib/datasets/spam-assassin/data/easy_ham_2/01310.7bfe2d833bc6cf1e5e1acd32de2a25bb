@@ -1,0 +1,71 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 02:47:43 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EB839440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 21:47:42 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 02:47:42 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O1l6410426 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 02:47:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XBD4-0005BJ-00; Tue,
+    23 Jul 2002 18:45:02 -0700
+Received: from mail.cs.ait.ac.th ([192.41.170.16]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17XBCD-0001OT-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 23 Jul 2002 18:44:09 -0700
+Received: from bazooka.cs.ait.ac.th (on@bazooka.cs.ait.ac.th
+    [192.41.170.2]) by mail.cs.ait.ac.th (8.12.3/8.9.3) with ESMTP id
+    g6O3FIgM085580; Wed, 24 Jul 2002 10:15:19 +0700 (ICT)
+From: Olivier Nicole <Olivier.Nicole@ait.ac.th>
+Received: (from on@localhost) by bazooka.cs.ait.ac.th (8.8.5/8.8.5) id
+    IAA08939; Wed, 24 Jul 2002 08:43:50 +0700 (ICT)
+Message-Id: <200207240143.IAA08939@bazooka.cs.ait.ac.th>
+To: joele@iws-irms.com
+Cc: spamassassin-talk@example.sourceforge.net
+In-Reply-To: <3D3D6A2D.8020601@iws-irms.com> (message from Joel Epstein on
+    Tue, 23 Jul 2002 09:37:33 -0500)
+Subject: Re: [SAtalk] Reporting....
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 24 Jul 2002 08:43:50 +0700 (ICT)
+Date: Wed, 24 Jul 2002 08:43:50 +0700 (ICT)
+
+>I currently have spam being filtered for about 50 users via spamd.
+>Works perfectly!  However, is there anyone out there providing reports
+>to their users about what was filetered?  Maybe just something like
+>date/time, From, and subject?
+
+Yup! You can check: http://www.cs.ait.ac.th/laboratory/email/quarantine.shtml
+
+Though it uses procmail!
+
+Olivier
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

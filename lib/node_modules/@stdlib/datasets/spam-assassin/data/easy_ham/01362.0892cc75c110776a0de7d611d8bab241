@@ -1,0 +1,96 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:06:19 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 97A144415C
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SL9jZ10361 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 22:09:45 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kA2o-0000w4-00; Wed,
+    28 Aug 2002 14:08:06 -0700
+Received: from [64.9.63.52] (helo=falcon.dickinson.edu) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kA2h-0000KY-00 for <Spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 14:08:00 -0700
+Received: from falcon.dickinson.edu by falcon.dickinson.edu
+    (8.8.8/1.1.22.3/25Feb99-0911AM) id RAA0000008029; Wed, 28 Aug 2002
+    17:07:54 -0400 (EDT)
+From: Don Newcomer <newcomer@dickinson.edu>
+To: SpamAssassin Talk list <Spamassassin-talk@example.sourceforge.net>
+Message-Id: <Pine.OSF.4.44.0208281659320.3984-100000@falcon.dickinson.edu>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [SAtalk] Tru64 compile of SA
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 17:07:53 -0400 (EDT)
+Date: Wed, 28 Aug 2002 17:07:53 -0400 (EDT)
+
+I'm a new user (or about to be, hopefully) of SA but I've run into some
+compilation errors that prevent me from installing.  Rather than picking
+through the code, I thought I'd avoid reinventing the wheel and ask here.
+When I run the 'make', I get the following:
+
+cc: Error: spamd/spamc.c, line 50: In this declaration, "in_addr_t" has no
+linka
+ge and has a prior declaration in this scope at line number 572 in file
+/usr/inc
+lude/sys/types.h. (nolinkage)
+typedef unsigned long   in_addr_t;      /* base type for internet address
+*/
+------------------------^
+cc: Warning: spamd/spamc.c, line 169: In this statement, the referenced
+type of
+the pointer value "msg_buf" is "char", which is not compatible with
+"unsigned ch
+ar". (ptrmismatch)
+  if((bytes = full_read (in, msg_buf, max_size+1024, max_size+1024)) >
+max_size)
+-----------------------------^
+cc: Warning: spamd/spamc.c, line 174: In this statement, the referenced
+type of
+the pointer value "header_buf" is "char", which is not compatible with
+"const un
+signed char". (ptrmismatch)
+    full_write (out,header_buf,bytes2);
+--------------------^
+
+There are lots more where they came from.  Any ideas what can be done?
+Thanks in advance.
+
+================================================================================
+Don Newcomer                                            Dickinson College
+Associate Director, System and Network Services		P.O. Box 1773
+newcomer@dickinson.edu                                  Carlisle, PA  17013
+                                                        Phone: (717) 245-1256
+                                                          FAX: (717) 245-1690
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

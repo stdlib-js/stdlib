@@ -1,0 +1,33 @@
+From nobody@dogma.slashnull.org  Wed Aug 21 17:49:42 2002
+Return-Path: <nobody@dogma.slashnull.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4D34D43C34
+	for <jm@localhost>; Wed, 21 Aug 2002 12:49:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 17:49:42 +0100 (IST)
+Received: (from mail@localhost) by dogma.slashnull.org (8.11.6/8.11.6) id
+    g7LGl4p01997; Wed, 21 Aug 2002 17:47:04 +0100
+Date: Wed, 21 Aug 2002 17:47:04 +0100
+Message-Id: <200208211647.g7LGl4p01997@dogma.slashnull.org>
+From: nobody@dogma.slashnull.org
+Subject: blogged item
+To: yyyy+blogged@spamassassin.taint.org
+
+**Scraping**:  I've read this before, but it's worth pointing to: Jon
+Udell on <a href=http://www.byte.com/documents/s=493/byt20010214s0005/index.htm>SSL
+Proxying</a>.
+
+ the browser's secure traffic flows to Proxomitron. It decrypts that
+ traffic, so you can see it in the log window, and then re-encrypts it to
+ the destination server. Coming back the other way, it decrypts the
+ server's responses, so you can see them in the log window, then
+ re-encrypts them to complete the secure loop back to the browser.  It's
+ really quite amazing, and amazingly useful. Automation tasks that used to
+ look like more trouble than they were worth -- for example, driving a
+ HotMail or E*Trade account from a script -- suddenly look easy.
+
+
+
+

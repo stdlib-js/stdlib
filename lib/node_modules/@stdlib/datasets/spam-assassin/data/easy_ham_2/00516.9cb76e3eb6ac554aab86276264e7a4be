@@ -1,0 +1,73 @@
+From webdev-admin@linux.ie  Mon Aug 19 12:30:32 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3E4F343C34
+	for <jm@localhost>; Mon, 19 Aug 2002 07:30:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 12:30:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JBRF620841 for
+    <jm-webdev@jmason.org>; Mon, 19 Aug 2002 12:27:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA03151; Mon, 19 Aug 2002 12:27:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay03.esat.net (relay03.esat.net [193.95.141.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA03121 for <webdev@linux.ie>;
+    Mon, 19 Aug 2002 12:27:04 +0100
+Received: from (lee.csn.ul.ie) [193.95.184.122] by relay03.esat.net with
+    esmtp id 17gkgW-0006pv-00; Mon, 19 Aug 2002 12:27:01 +0100
+Message-Id: <5.1.0.14.0.20020819122757.00a9b440@holly.csn.ul.ie>
+X-Sender: hostyle@holly.csn.ul.ie
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Mon, 19 Aug 2002 12:28:23 +0100
+To: "Adrian Murphy" <adrian.murphy@2020tourism.com>,
+	<webdev@linux.ie>
+From: Lee Hosty <hostyle@csn.ul.ie>
+Subject: Re: [Webdev] site monitroring service?
+In-Reply-To: <003501c2476f$b5955580$1a8f43d9@ade2>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+
+You could try elive.
+
+http://monitoring.elive.ie/
+
+At 12:01 PM 19/08/2002 +0100, Adrian Murphy wrote:
+>Hi,
+>I wonder could anyone reccommend a good
+>website monitoring service-with sms alerts.
+>thx and sorry to be OT.
+>
+>Adrian Murphy
+>2020 Strategies
+>Beechlawn
+>Cloncrane
+>Clonbullogue
+>Co Offaly
+>Ireland
+
+Lee Hosty -x- hostyle AT csn.ul.ie -x- +353 (0)86 8768780
+--
+SNITTERFIELD (n.)
+Office noticeboard on which snitters (q.v.),cards saying 'You don't have to be
+mad to work here, but if you are it helps !!!' and slightly smutty postcards
+from ibiza get pinned up by snitterbies (q.v.)
+
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

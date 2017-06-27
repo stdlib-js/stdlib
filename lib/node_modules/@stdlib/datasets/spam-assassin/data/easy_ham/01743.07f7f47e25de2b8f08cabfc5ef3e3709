@@ -1,0 +1,104 @@
+Return-Path: gward@python.net
+Delivery-Date: Mon Sep  9 22:01:10 2002
+From: gward@python.net (Greg Ward)
+Date: Mon, 9 Sep 2002 17:01:10 -0400
+Subject: [Spambayes] python.org email harvesting ready to roll
+Message-ID: <20020909210110.GA2224@cthulhu.gerg.ca>
+
+[followups to spambayes@python.org please, unless you're specifically
+ concerned about some particular bit of email policy for python.org]
+
+OK, after much fiddling with and tweaking of /etc/exim/exim4.conf and
+/etc/exim/local_scan.py on mail.python.org, I am fairly confident that
+I can start harvesting all incoming email at a moment's notice.  For the
+record, here's how it all works:
+
+  * exim4.conf works almost exactly the same as before if the file
+    /etc/exim/harvest does not exist.  That is, any "junk mail
+    condition" that can be detected by Exim ACLs (access control lists)
+    is handled entirely in exim4.conf: the message is rejected before it
+    ever gets to local_scan.py.  This covers such diverse cases as
+    "message from known spammer" (reject after every RCPT TO command),
+    "no message-id header", and "8-bit chars in subject" (both rejected
+    after the message headers/body are read).
+
+    The main things I have changed in the absence of /etc/exim/harvest
+    are:
+      - don't check for 8-bit chars in "From" header -- the vast
+        majority of hits for this test were bounces from some
+        Asian ISP; the remaining hits should be handled by SpamAssassin
+      - do header sender verification (ie. ensure that there's a
+        verifiable email address in at least one of "From", "Reply-to",
+        and "Sender") as late as possible, because it requires DNS
+        lookups which can be slow (and can also make messages that
+        should have been rejected merely be deferred, if those DNS
+        lookups timeout)
+
+  * if /etc/exim/harvest exists, then the behaviour of all of those
+    ACLs in exim4.conf suddenly changes: instead of rejecting recipients
+    or messages, they add an X-reject header to the message.  This
+    header is purely for internal use; it records the name of the folder
+    to which the rejected message should be saved, and also gives the
+    SMTP error message which should ultimately be used to reject
+    the message.
+
+    Thus, those messages will now be seen by local_scan.py, which now
+    looks for the X-reject header.  If found, it uses the folder name
+    specified there to save the message, and then rejects it with the
+    SMTP error message also given in X-reject.  (Currently X-reject is
+    retained in saved messages.)
+
+    If a message was not tagged with X-reject, then local_scan.py
+    runs the usual virus and spam checks.  (Namely, my homebrew
+    scan for attachments with filenames that look like Windows
+    executables, and a run through SpamAssassin.)  The logic is
+    basically this:
+      if virus:
+          folder = "virus"
+      else:
+          run through SpamAssassin
+          if score >= 10.0:
+              folder = "rejected-spam"
+          elif score >= 5.0:
+              folder = "caught-spam"
+
+    Finally, local_scan.py writes the message to the designated folder.
+    By far the biggest folder will be "accepted" -- the server handles
+    2000-5000 incoming messages per day, of which maybe 100-500 are junk
+    mail.  (Oops, just realized I haven't written the code that actually
+    saves the message -- d'ohh!  Also haven't written anything to
+    discriminate personal email, which I must do.  Sigh.)
+
+  * finally, the big catch: waiting until after you've read the message
+    headers and body to actually reject the message is problematic,
+    because certain broken MTAs (including those used by some spammers)
+    don't consider a 5xx after DATA as a permanent error, but keep
+    retrying.  D'ohh.  This is a minor annoyance currently, where a fair
+    amount of stuff is rejected at RCPT TO time.  But in harvest mode,
+    *everything* (with the exception of people probing for open relays)
+    will be rejected at DATA time.  So I have cooked up something called
+    the ASBL, or automated sender blacklist.  This is just a Berkeley DB
+    file that maps (sender_ip, sender_address) to an expiry time.  When
+    local_scan() rejects a message from (sender_ip, sender_address) --
+    for whatever reason, including finding an X-reject header added by
+    an ACL in exim4.conf -- it adds a record to the ASBL, with an expiry
+    time 3 hours in the future.  Meanwhile, there's an ACL in exim4.conf
+    that checks for records in the ASBL; if there's a record for the
+    current (sender_ip, sender_address) that hasn't expired yet, we
+    reject all recipients without ever looking at the message headers or
+    body.
+
+    The downside of this from the point-of-view of corpus collection is
+    that if some jerk is busily spamming *@python.org, one SMTP
+    connection per address, we will most likely only get one copy.  This
+    is a win if you're just thinking about reducing server load and
+    bandwidth, but I'm not sure if it's helpful for training spam
+    detectors.  Tim?
+
+Happy harvesting --
+
+        Greg
+-- 
+Greg Ward <gward@python.net>                         http://www.gerg.ca/
+Budget's in the red?  Let's tax religion!
+    -- Dead Kennedys

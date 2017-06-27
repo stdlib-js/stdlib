@@ -1,0 +1,89 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BB3DF440DC
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OIJY432288 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 19:19:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6FD1C29414C; Wed, 24 Jul 2002 11:18:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 9FEA3294145 for <fork@xent.com>; Wed, 24 Jul 2002 11:18:00
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id 9D799C44E;
+    Wed, 24 Jul 2002 20:06:13 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: My brain hurts
+Message-Id: <20020724180613.9D799C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 20:06:13 +0200 (CEST)
+
+More than a dozen jokes - thanks guys and girls!
+(plus some anti-French abuse from the usual suspect).
+
+Well my brain doesn't hurt so much any more, and it was well worth it.
+I've now got an even faster method for elliptic-curve point counting,
+both pratically and asymptotically.
+
+It lifts a curve over a field of degree n in time O(n^(2+1/2+eps)),
+or O(n^(2+eps)) with precomputation.  Before the best methods took
+O(n^(3+eps)) without precomputation, or O(n^(2+1/2+eps)) with it.
+The precomputation is done once per field, not per curve, and takes
+time O(n^(3+eps)).  Here eps is an arbitrarily small number, hiding
+some logarithmic factors.
+
+After lifting, you compute a norm in time O(n^(2+1/3+eps)) to get the
+number of points on the curve.
+
+Here's an example over a 1009-bit field, without precomputation, using
+a 1 GHz Pentium III:
+
+------------------------------------------------------------------------------
+> ./ecpc4 -d 1009 -j 0x123
+INFO: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+INFO: -=-=-=-=-= ECPC: Elliptic Curve Point Counting, made easy! =-=-=-=-=-
+INFO: -=-=-=-=-= v4.0.0. (c) ArgoTech 2001. All rights reserved. =-=-=-=-=-
+INFO: -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[...]
+INFO: Picked field polynomial 1+x^55+x^1009.
+INFO: Starting ECPC on j = 0x123...
+INFO: Done after 138.33 seconds.
+INFO: Checking... OK OK OK OK OK OK OK OK OK OK
+[...]
+CURVE: 5486124068793688683255936251187209270074392635932332070112001988456197381759672947165175699536362793613284725337872111744958183862744647903224103718245568925556758419805069056847065147709058947190200192542277555125346128173135573355537502225974504428432790108988791795746287271944131683364548299056172016
+[...]
+INFO: 1 curve processed.
+INFO: Bye!
+------------------------------------------------------------------------------
+
+
+L8r,
+  Rob.
+     .-.                    Robert.Harley@argote.ch                    .-.
+    /   \           .-.      Software Development       .-.           /   \
+   /     \         /   \       .-.     _     .-.       /   \         /     \
+  /       \       /     \     /   \   / \   /   \     /     \       /       \
+ /         \     /       \   /     `-'   `-'     \   /       \     /         \
+            \   /         `-'       ArgoTech      `-'         \   /
+             `-'                http://argote.ch/              `-'
+http://xent.com/mailman/listinfo/fork
+
+

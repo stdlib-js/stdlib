@@ -1,0 +1,144 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 14 10:59:36 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 119F24413D
+	for <jm@localhost>; Wed, 14 Aug 2002 05:51:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:51:38 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7E6NQ403793 for
+    <jm-rpm@jmason.org>; Wed, 14 Aug 2002 07:23:27 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7E6L2J22652; Wed, 14 Aug 2002 08:21:02
+    +0200
+Received: from smtp.comcast.net (smtp.comcast.net [24.153.64.2]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7E6KGJ17437 for
+    <rpm-list@freshrpms.net>; Wed, 14 Aug 2002 08:20:16 +0200
+Received: from viper (pcp484936pcs.whtmrs01.md.comcast.net [68.33.188.8])
+    by mtaout06.icomcast.net (iPlanet Messaging Server 5.1 HotFix 0.8 (built
+    May 13 2002)) with SMTP id <0H0T00FC6LGEJJ@mtaout06.icomcast.net> for
+    rpm-list@freshrpms.net; Wed, 14 Aug 2002 02:17:02 -0400 (EDT)
+From: Victor <victord@paid.com>
+Subject: Problem with my spec file
+To: rpm-zzzlist@freshrpms.net
+Message-Id: <001201c2435a$2e4051c0$6501a8c0@viper>
+MIME-Version: 1.0
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7BIT
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 14 Aug 2002 02:16:52 -0400
+Date: Wed, 14 Aug 2002 02:16:52 -0400
+
+Can someone tell me what I am doing wrong? it's like make doesn't take the
+PREFIX override... It's crazy. I don't get it...
+OS: TurboLinux6 rmp3.0.6 make 3.79.1
+
+I just don't get this. It should work...
+
+---
+
+%define real_name Mail-SpamAssassin
+%define real_version 2.31
+
+########################################################################
+# Package Information
+########################################################################
+Name:         SpamAssassin
+Version:      2.31
+Summary:      SpamAssassin - A perl-based spam filter
+URL:          http://www.spamassassin.org
+Group:        Networking/Mail
+License:      Artistic
+Release:      1
+
+########################################################################
+# Sources/Patches
+########################################################################
+Source0: http://spamassassin.org/devel/%{real_name}-%{real_version}.tar.gz
+
+########################################################################
+# Build Configuration
+########################################################################
+BuildRoot:          %{_builddir}/%{real_name}-%{real_version}-root
+BuildArchitectures: i586
+
+########################################################################
+# Package Description
+########################################################################
+%description
+    SpamAssassin provides you with a way to reduce if not completely
+eliminate
+    Unsolicited Commercial Email (SPAM) from your incoming email.  It can
+    be invoked by a MDA such as sendmail or postfix, or can be called from
+    a procmail script, .forward file, etc.  It uses a genetic-algorithm
+    evolved scoring system to identify messages which look spammy, then
+    adds headers to the message so they can be filtered by the user's mail
+    reading software.  This distribution includes the spamd/spamc components
+    which create a server that considerably speeds processing of mail.
+
+%prep
+%setup -q -n %{real_name}-%{real_version}
+
+########################################################################
+# Compilation/Installation Instructions (use macros/switches if possible)
+########################################################################
+%build
+   %{__perl} Makefile.PL LOCAL_RULES_DIR=/etc/spamassassin
+INSTALLDIRS=vendor PREFIX=%{_prefix}
+   make OPTIMIZE="$RPM_OPT_FLAGS" PREFIX=%{_prefix}
+%install
+   rm -rf $RPM_BUILD_ROOT
+   %makeinstall PREFIX=%{buildroot}%{_prefix} \
+                INSTALLMAN1DIR=%{buildroot}%{_mandir}/man1 \
+                INSTALLMAN3DIR=%{buildroot}%{_mandir}/man3 \
+                LOCAL_RULES_DIR=%{buildroot}%{_sysconfdir}/spamassassin
+   install -m 0711 -D spamd/redhat-rc-script.sh
+%{buildroot}/etc/init.d/spamassassind
+%clean
+   rm -rf $RPM_BUILD_ROOT
+
+########################################################################
+# RPM file inclusion section (see CRUX guidelines)
+########################################################################
+%files
+%defattr(-,root,root)
+%attr(0711,root,root) /etc/init.d/spamassassind
+%attr(0644,root,root) %config(noreplace) /etc/spamassassin/*
+%attr(0755,root,root) %dir %{_datadir}/spamassassin
+%attr(0755,root,root) %{_bindir}/*
+%attr(0644,root,root) %{_datadir}/spamassassin/*
+%attr(-,root,root) %{_libdir}/*
+
+########################################################################
+# Changelog - Keep it short and simple
+########################################################################
+%changelog
+* Sun Apr 28 2002 Victor <vkd79@moon.rock>
+- Initial Release
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,185 @@
+From razor-users-admin@lists.sourceforge.net  Thu Sep 12 18:44:30 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5A6B916F03
+	for <jm@localhost>; Thu, 12 Sep 2002 18:44:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 18:44:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8CGEGC06093 for <jm-razor@jmason.org>; Thu, 12 Sep 2002 17:14:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pWUu-0003nn-00; Thu,
+    12 Sep 2002 09:07:16 -0700
+Received: from wow.atlasta.net ([12.129.13.20]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pWUY-00030r-00 for <razor-users@lists.sourceforge.net>; Thu,
+    12 Sep 2002 09:06:54 -0700
+Received: from wow.atlasta.net (localhost.atlasta.net [127.0.0.1]) by
+    wow.atlasta.net (8.12.2/8.12.2) with ESMTP id g8CG6rJI034502;
+    Thu, 12 Sep 2002 09:06:53 -0700 (PDT)
+Received: from localhost (drais@localhost) by wow.atlasta.net
+    (8.12.2/8.12.2/Submit) with ESMTP id g8CG6rKT034499; Thu, 12 Sep 2002
+    09:06:53 -0700 (PDT)
+From: David Raistrick <drais@wow.atlasta.net>
+To: "Rose, Bobby" <brose@med.wayne.edu>
+Cc: razor-users@example.sourceforge.net
+In-Reply-To: <D79A56AD131896448D0860DEE07CBE1F3BACA9@med-core07.med.wayne.edu>
+Message-Id: <Pine.BSF.4.21.0209120845130.19863-100000@wow.atlasta.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [Razor-users] no positive razor hits?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 12 Sep 2002 09:06:53 -0700 (PDT)
+Date: Thu, 12 Sep 2002 09:06:53 -0700 (PDT)
+
+On Tue, 10 Sep 2002, Rose, Bobby wrote:
+
+> Use the sample-spam.txt from Spamassassin and do a "razor-check -d <
+> sample-spam.txt"
+
+Interesting.  I just upgraded to razor-agents 2.14 yesterday, ran
+razor-admin -register.  I to am seeing that I'm not getting any positives
+from razor.  Including the sample-spam.txt's from spamassassin 2.41, 2.31,
+and 2.20.
+
+Any suggestions?  thanks.
+
+-d output below
+
+
+
+maxwell:/var/qmail/alias/gb-users%# razor-check -d <
+/usr/local/src/Mail-SpamAssassin-2.20/sample-spam.txt
+ Razor-Log: Computed razorhome from env: /root/.razor
+ Razor-Log: Found razorhome: /root/.razor
+ Razor-Log: No /root/.razor/razor-agent.conf found, skipping.
+ Razor-Log: No razor-agent.conf found, using defaults. 
+Sep 12 12:04:13.785852 check[52238]: [ 1] [bootup] Logging initiated
+LogDebugLevel=9 to stdout
+Sep 12 12:04:13.787113 check[52238]: [ 5] computed razorhome=/root/.razor,
+conf=, ident=/root/.razor/identity-ruqVa5jbuS
+Sep 12 12:04:13.787442 check[52238]: [ 2]  Razor-Agents v2.14 starting
+razor-check -d
+Sep 12 12:04:13.789903 check[52238]: [ 9] uname -a: FreeBSD
+maxwell.gta.com 4.5-RELEASE-p3 FreeBSD 4.5-RELEASE-p3 #0: Wed May 22
+14:52:29 EDT 2002     root@maxwell.gta.com:/usr/src/sys/compile/maxwell
+i386
+Sep 12 12:04:13.790480 check[52238]: [ 8] reading straight RFC822 mail
+from <stdin>
+Sep 12 12:04:13.791397 check[52238]: [ 6] read 1 mail
+Sep 12 12:04:13.791917 check[52238]: [ 8] Client supported_engines: 1 2 3
+4
+Sep 12 12:04:13.792948 check[52238]: [ 8]  prep_mail done: mail 1
+headers=1432, mime0=3139
+Sep 12 12:04:13.793639 check[52238]: [ 6] skipping whitelist file
+(empty?): /root/.razor/razor-whitelist
+Sep 12 12:04:13.794295 check[52238]: [ 5] read_file: 1 items read from
+/root/.razor/servers.discovery.lst
+Sep 12 12:04:13.794871 check[52238]: [ 5] read_file: 1 items read from
+/root/.razor/servers.nomination.lst
+Sep 12 12:04:13.795382 check[52238]: [ 5] read_file: 3 items read from
+/root/.razor/servers.catalogue.lst
+Sep 12 12:04:13.796047 check[52238]: [ 9] Assigning defaults to
+honor.cloudmark.com
+Sep 12 12:04:13.796456 check[52238]: [ 9] Assigning defaults to
+apt.cloudmark.com
+Sep 12 12:04:13.796829 check[52238]: [ 9] Assigning defaults to
+fire.cloudmark.com
+Sep 12 12:04:13.797180 check[52238]: [ 9] Assigning defaults to
+truth.cloudmark.com
+Sep 12 12:04:13.798322 check[52238]: [ 5] read_file: 11 items read from
+/root/.razor/server.apt.cloudmark.com.conf
+Sep 12 12:04:13.799188 check[52238]: [ 5] read_file: 11 items read from
+/root/.razor/server.honor.cloudmark.com.conf
+Sep 12 12:04:13.799866 check[52238]: [ 5] 96778 seconds before closest
+server discovery
+Sep 12 12:04:13.800342 check[52238]: [ 6] apt.cloudmark.com is a Catalogue
+Server srl 51; computed min_cf=1, Server se: 0A
+Sep 12 12:04:13.800818 check[52238]: [ 8] Computed supported_engines: 2 4
+Sep 12 12:04:13.801167 check[52238]: [ 8] Using next closest server
+apt.cloudmark.com:2703, cached info srl 51
+Sep 12 12:04:13.801513 check[52238]: [ 8] mail 1 Subject: Home Based
+Business for Grownups
+Sep 12 12:04:13.805467 check[52238]: [ 6] preproc: mail 1.0 went from 3139
+bytes to 3100 
+Sep 12 12:04:13.805878 check[52238]: [ 6] computing sigs for mail 1.0, len
+3100
+Sep 12 12:04:13.809475 check[52238]: [ 5] Connecting to apt.cloudmark.com
+...
+Sep 12 12:04:18.587441 check[52238]: [ 8] Connection established
+Sep 12 12:04:18.587929 check[52238]: [ 4] apt.cloudmark.com >> 29 server
+greeting: sn=C&srl=51&ep4=7542-10&a=l
+Sep 12 12:04:18.588562 check[52238]: [ 6] apt.cloudmark.com is a Catalogue
+Server srl 51; computed min_cf=1, Server se: 0A
+Sep 12 12:04:18.589041 check[52238]: [ 8] Computed supported_engines: 2 4
+Sep 12 12:04:18.589432 check[52238]: [ 8] mail 1.0 e2
+sig: PGFfFte87P3Ve-CPTdu3NWgiBikA
+Sep 12 12:04:18.589751 check[52238]: [ 8] mail 1.0 e4
+sig: k6oGZsa1AvVolyvalWx2AACdWb8A
+Sep 12 12:04:18.590103 check[52238]: [ 8] preparing 2 queries
+Sep 12 12:04:18.590638 check[52238]: [ 8] sending 1 batches
+Sep 12 12:04:18.591087 check[52238]: [ 4] apt.cloudmark.com << 96
+Sep 12 12:04:18.591324 check[52238]: [ 6]
+-a=c&e=2&s=PGFfFte87P3Ve-CPTdu3NWgiBikA
+a=c&e=4&ep4=7542-10&s=k6oGZsa1AvVolyvalWx2AACdWb8A
+.
+Sep 12 12:04:19.270870 check[52238]: [ 4] apt.cloudmark.com >> 14
+Sep 12 12:04:19.271227 check[52238]: [ 6] response to sent.1
+-p=0
+p=0
+.
+Sep 12 12:04:19.272130 check[52238]: [ 6] mail 1.0 e=2
+sig=PGFfFte87P3Ve-CPTdu3NWgiBikA: sig not found.
+Sep 12 12:04:19.272449 check[52238]: [ 6] mail 1.0 e=4
+sig=k6oGZsa1AvVolyvalWx2AACdWb8A: sig not found.
+Sep 12 12:04:19.272760 check[52238]: [ 7] method 5: mail
+1.0: no-contention part, spam=0
+Sep 12 12:04:19.273012 check[52238]: [ 7] method 5: mail 1: a
+non-contention part not spam, mail not spam
+Sep 12 12:04:19.273257 check[52238]: [ 3] mail 1 is not known spam.
+Sep 12 12:04:19.273578 check[52238]: [ 5] disconnecting from server
+apt.cloudmark.com
+Sep 12 12:04:19.273982 check[52238]: [ 4] apt.cloudmark.com << 5
+Sep 12 12:04:19.274203 check[52238]: [ 6] a=q
+Sep 12 12:04:19.274585 check[52238]: [ 8] razor-check finished
+successfully.
+
+
+
+
+
+
+
+---
+david raistrick
+drais@atlasta.net		http://www.expita.com/nomime.html
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

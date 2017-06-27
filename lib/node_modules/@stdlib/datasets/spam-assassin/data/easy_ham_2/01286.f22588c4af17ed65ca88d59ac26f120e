@@ -1,0 +1,108 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Mon Jul 22 18:22:18 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4340B440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:22:18 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:22:18 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFkCI09893 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:46:12 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id DAA29769 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 03:27:03 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WSsh-0003kl-00; Sun,
+    21 Jul 2002 19:25:03 -0700
+Received: from [216.40.247.31] (helo=host.yrex.com) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WSs8-0000pH-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Sun, 21 Jul 2002 19:24:28 -0700
+Received: (qmail 21555 invoked from network); 22 Jul 2002 02:24:26 -0000
+Received: from mgm.dsl.xmission.com (HELO scooby) (204.228.152.186) by
+    216.40.247.31 with SMTP; 22 Jul 2002 02:24:26 -0000
+From: "Michael Moncur" <mgm@starlingtech.com>
+To: "Marc Perkel" <marc@perkel.com>,
+	<spamassassin-devel@lists.sourceforge.net>
+Subject: RE: [SAdev] Who uses Spam Assassin this way?
+Message-Id: <NEBBKLEDELIODOCJHLPCKENHMMAA.mgm@starlingtech.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+In-Reply-To: <3D3AEBFD.5090800@perkel.com>
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Sun, 21 Jul 2002 20:24:22 -0600
+Date: Sun, 21 Jul 2002 20:24:22 -0600
+
+I flag spam at 7.0 and drop it altogether at 20.0. I do lots of whitelisting
+and have never had a false positive over 20.0.
+
+Actually I save the 20-and-over spams to a file and occasionally
+double-check it.
+
+This allows me to keep over 75% of the spam out of my mailbox entirely - I
+have 3-4 messages a day in my Spam folder instead of 20-30.
+
+My system doesn't allow me to bounce messages with SA, but doing so doesn't
+really get anybody removed from spam lists anyway... I have addresses that
+have been bouncing for years that still get spam.
+
+--
+michael moncur   mgm at starlingtech.com   http://www.starlingtech.com/
+"Truth is more of a stranger than fiction."             -- Mark Twain
+
+> -----Original Message-----
+> From: spamassassin-devel-admin@example.sourceforge.net
+> [mailto:spamassassin-devel-admin@lists.sourceforge.net]On Behalf Of Marc
+> Perkel
+> Sent: Sunday, July 21, 2002 11:15 AM
+> To: spamassassin-devel@example.sourceforge.net
+> Subject: [SAdev] Who uses Spam Assassin this way?
+>
+>
+> I know most people use SA to just tag spam - but I use it to also delete
+> and bounce spam.
+>
+> At 5 point I flag the message as spam and pass it on. At 18 points I
+> bounce the spam as if the user doesn't exist - in the hopes of being
+> removed from spam lists. I have modified scores on rules with large
+> numbers of FP to .1 and at 18 points I get no FP at all now.
+>
+> Therefore - one of my goals in improving the rules is to try to get real
+> spam up to 18 points. So if I have more good rules then real spam will
+> hit more rules and raise the point value.
+>
+> Anyhow - I was wondering how many of you are doing what I'm doing?
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

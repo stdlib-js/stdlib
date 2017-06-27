@@ -1,0 +1,23 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 21:56:59 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 16:56:59 -0400
+Subject: [Spambayes] All Cap or Cap Word Subjects
+In-Reply-To: <3D7B7F11.22376.29256B69@localhost>
+Message-ID: <LNBBLJKPBEHFEDALKOLCCEPPBCAB.tim.one@comcast.net>
+
+[Brad Clements]
+> Just curious if subject line capitalization can be used as an indicator.
+>
+> Either the percentage of characters that are caps..
+>
+> Or, percentage starting with a capital letter (if number of words > xx)
+
+Supply a mod to tokenizer.py and I'll test it (eventually <wink>).  Note
+that the tokenizer already *preserves* case in subject-line words, because
+experiment showed that this was better than folding case away in this
+specific context (but experiment also showed-- against my
+expectations --that preserving case everywhere didn't make a significant
+difference to either error rate -- the subject line is a special case for
+this).
+

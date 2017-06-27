@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:49:23 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 769E743C34
+	for <jm@localhost>; Wed, 14 Aug 2002 05:46:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:46:06 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DJIZ414964 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 20:18:35 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eh6L-00088t-00; Tue,
+    13 Aug 2002 12:13:09 -0700
+Received: from wow.atlasta.net ([12.129.13.20]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17eh5g-0001Lc-00 for <razor-users@lists.sourceforge.net>; Tue,
+    13 Aug 2002 12:12:28 -0700
+Received: from wow.atlasta.net (localhost.atlasta.net [127.0.0.1]) by
+    wow.atlasta.net (8.12.2/8.12.2) with ESMTP id g7DJCPSj056278;
+    Tue, 13 Aug 2002 12:12:25 -0700 (PDT)
+Received: from localhost (drais@localhost) by wow.atlasta.net
+    (8.12.2/8.12.2/Submit) with ESMTP id g7DJCP8m056275; Tue, 13 Aug 2002
+    12:12:25 -0700 (PDT)
+From: David Raistrick <drais@wow.atlasta.net>
+To: Mike Burger <mburger@bubbanfriends.org>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+In-Reply-To: <Pine.LNX.4.44.0208131402170.4408-100000@burgers.bubbanfriends.org>
+Message-Id: <Pine.BSF.4.21.0208131204460.48923-100000@wow.atlasta.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 12:12:25 -0700 (PDT)
+Date: Tue, 13 Aug 2002 12:12:25 -0700 (PDT)
+
+On Tue, 13 Aug 2002, Mike Burger wrote:
+
+> On Tue, 13 Aug 2002, David Raistrick wrote:
+> 
+> > To actually answer Justin's question, (one can assume that he has
+> > rewrite_subject and report_header turned on because he wants them..and
+
+> I wouldn't make that assumption.  I'd assume that rewrite_subject was on, 
+> and report_header was off, because that's the default configuration, and 
+
+Erps.  I did misword that.  The message (and assumption) was oriented
+toward a message that has rewrite_subject on and report_header off...the
+default configuration.  For the header removals it contained enough to
+also take care of dcc_add_header 1, but not report_header 1.
+
+thanks.
+
+..david
+
+---
+david raistrick
+drais@atlasta.net		http://www.expita.com/nomime.html
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

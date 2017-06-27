@@ -1,0 +1,19 @@
+Return-Path: bkc@murkworks.com
+Delivery-Date: Sun Sep  8 21:45:49 2002
+From: bkc@murkworks.com (Brad Clements)
+Date: Sun, 08 Sep 2002 16:45:49 -0400
+Subject: [Spambayes] All Cap or Cap Word Subjects
+Message-ID: <3D7B7F11.22376.29256B69@localhost>
+
+Just curious if subject line capitalization can be used as an indicator.
+
+Either the percentage of characters that are caps..
+
+Or, percentage starting with a capital letter (if number of words > xx)
+
+
+
+Brad Clements,                bkc@murkworks.com   (315)268-1000
+http://www.murkworks.com                          (315)268-9812 Fax
+AOL-IM: BKClements
+

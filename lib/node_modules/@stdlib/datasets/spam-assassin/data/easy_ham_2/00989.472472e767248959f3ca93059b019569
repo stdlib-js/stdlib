@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Mon Aug 12 11:08:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3EC7044163
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79IXHb20186 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 19:33:20 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BE16E29413E; Fri,  9 Aug 2002 11:23:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 3F5B729413E for <fork@xent.com>;
+    Fri,  9 Aug 2002 11:22:00 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-023.ptrb.interhop.net
+    [165.154.190.87]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g79Huk311084; Fri, 9 Aug 2002 13:57:05 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 5920A1C3B8;
+    Fri,  9 Aug 2002 14:15:33 -0400 (EDT)
+To: Luis Villa <louie@ximian.com>
+Cc: fork <fork@spamassassin.taint.org>
+Subject: Re: Shatter Attacks - How to break Windows
+References: <m2r8h8t0wv.fsf@maya.dyndns.org>
+    <1028914070.16891.40.camel@10-0-0-223.boston.ximian.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2lm7fuce2.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Aug 2002 14:15:33 -0400
+
+>>>>> "L" == Luis Villa <louie@ximian.com> writes:
+
+    L> ... So, yeah, it's a new attack, but it's not nearly as
+    L> devastating an MS critique as the author wants us to believe
+
+Good to know ... not being an MS user, I have no means to evaluate
+these things so it's best to get a second opinion ;)
+
+Besides, I shudder to think of the pandemonium that would ensue if we
+had to /deploy/ the present states of Lycoris or Lindows in it's
+stead!  As the Big Joe Williams song goes, "Next week, sometime, but
+no, not now."
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

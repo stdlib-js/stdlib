@@ -1,0 +1,86 @@
+From exmh-users-admin@redhat.com  Mon Aug 19 10:56:54 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 44DA344114
+	for <jm@localhost>; Mon, 19 Aug 2002 05:48:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:48:47 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7H2b4615725 for
+    <jm-exmh@jmason.org>; Sat, 17 Aug 2002 03:37:05 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 9FE2E3EA6A; Fri, 16 Aug 2002
+    22:37:01 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 081A63EA22
+    for <exmh-users@listman.redhat.com>; Fri, 16 Aug 2002 22:36:06 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7H2a3Z04557 for exmh-users@listman.redhat.com; Fri, 16 Aug 2002
+    22:36:03 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7H2a3Y04553 for
+    <exmh-users@redhat.com>; Fri, 16 Aug 2002 22:36:03 -0400
+Received: from smtp3.knology.net
+    (IDENT:qmailr@user-24-214-63-13.knology.net [24.214.63.13]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7H2M4l07122 for
+    <exmh-users@redhat.com>; Fri, 16 Aug 2002 22:22:04 -0400
+Received: (qmail 27310 invoked by uid 8002); 17 Aug 2002 02:36:00 -0000
+Received: from unknown (HELO grumpy.dyndns.org) (24.214.34.52) by
+    smtp3.knology.net with SMTP; 17 Aug 2002 02:36:00 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: David Kelly <dkelly@HiWAAY.net>
+To: exmh-users@spamassassin.taint.org, Peter <pfheiss@philonline.com>
+Subject: Re: No more spell-check
+User-Agent: KMail/1.4.2
+References: <200208170124.g7H1OCX01329@philonline.com>
+In-Reply-To: <200208170124.g7H1OCX01329@philonline.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200208162135.59839.dkelly@HiWAAY.net>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 16 Aug 2002 21:35:59 -0500
+
+On Friday 16 August 2002 08:24 pm, Peter wrote:
+> Hi,
+>
+> my exmh-2.5 suddenly will not spell-check anymore. If I click
+> More..., Spell... a window opens and is gone just as fast.
+>
+> I don't recall having tinkered with anything.
+>
+> How can I get spell-checking back?
+
+It may be a conspiracy against spell checkers. I noticed the Spell icon 
+was dimmed in Netscape Communicator 4.79 about a month ago. It worked 
+for years prior.
+
+-- 
+David Kelly N4HHE, dkelly@hiwaay.net
+=====================================================================
+The human mind ordinarily operates at only ten percent of its
+capacity -- the rest is overhead for the operating system.
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

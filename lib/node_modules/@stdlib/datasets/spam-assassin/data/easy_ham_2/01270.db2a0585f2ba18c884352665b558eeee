@@ -1,0 +1,99 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 21 15:56:06 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 12FDF43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 10:56:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 15:56:06 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LEtjZ30054 for
+    <jm-rpm@jmason.org>; Wed, 21 Aug 2002 15:55:46 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7LEq2J31316; Wed, 21 Aug 2002 16:52:02
+    +0200
+Received: from ex02.idirect.net (ex02.idirect.net [208.226.76.48]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7LEolJ20550 for
+    <rpm-list@freshrpms.net>; Wed, 21 Aug 2002 16:50:47 +0200
+X-Mimeole: Produced By Microsoft Exchange V6.0.4417.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: RE: RPM's %post, %postun etc
+Message-Id: <BADF3C947A1BD54FBA75C70C241B0B9E762E71@ex02.idirect.net>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: RPM's %post, %postun etc
+Thread-Index: AcJJGi1/SASQja5LQ9OUT9svWVeKZwAB7R8Q
+From: "Harig, Mark A." <maharig@idirect.net>
+To: <rpm-zzzlist@freshrpms.net>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7LEolJ20550
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 21 Aug 2002 10:50:40 -0400
+Date: Wed, 21 Aug 2002 10:50:40 -0400
+
+
+
+> -----Original Message-----
+> From: Torsten Bronger [mailto:bronger@physik.rwth-aachen.de]
+> Sent: Wednesday, August 21, 2002 7:36 AM
+> To: rpm-zzzlist@freshrpms.net
+> Subject: Re: RPM's %post, %postun etc
+> 
+> 
+> Halloechen!
+> 
+> On Mittwoch, 21. August 2002 08:37 schrieben Sie:
+> > Have you tried rebuilding your package on a system that has 
+> a stock (or
+> > no) .rpmmacros file? Does it still build (and 
+> install/uninstall) the way
+> > you intended it to?
+> 
+> It can't, because then %{texhash} is not defined.  But how 
+> can I define a
+> macro in the spec file?
+> 
+
+http://www.rpm.org/rpmapi-4.1/macros.html
+
+> The problem exists when someone wants to install many RPMs, among them
+> mine.  Let's assume that every package that adds files to TeX's
+> file tree runs texhash or equivalent.  This would be a desaster!
+> There are only two solutions: (1) When installing many packages
+> (maybe in context of a complete system installation), %post etc.
+> are skipped and a complete update script is launched after *all*
+> packages have been installed.  (2) I leave the taxhash thing out.
+> But then the user would have to do it.
+> 
+> What's the way to go?
+> 
+> Tschoe,
+> Torsten.
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+> 
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

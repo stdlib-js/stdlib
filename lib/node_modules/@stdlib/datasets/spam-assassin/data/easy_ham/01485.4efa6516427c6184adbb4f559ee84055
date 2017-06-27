@@ -1,0 +1,79 @@
+From quinlan@pathname.com  Mon Sep 16 00:08:16 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4B65C16F03
+	for <jm@localhost>; Mon, 16 Sep 2002 00:08:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 16 Sep 2002 00:08:15 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8ELf9C18215 for
+    <jm@jmason.org>; Sat, 14 Sep 2002 22:41:10 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17qKfW-0001tr-00; Sat, 14 Sep 2002 14:41:34 -0700
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: Matt Sergeant <msergeant@startechgroup.co.uk>,
+	Spamassassin-devel <spamassassin-devel@lists.sourceforge.net>
+Subject: Re: [SAdev] testing with less rules
+References: <20020913211335.564DD16F03@spamassassin.taint.org>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 14 Sep 2002 14:41:34 -0700
+In-Reply-To: yyyy@spamassassin.taint.org's message of "Fri, 13 Sep 2002 22:13:30 +0100"
+Message-Id: <yf2k7los0z5.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+jm@jmason.org (Justin Mason) writes:
+
+>>>   DATE_IN_PAST_48_96
+>>>   SPAM_PHRASE_00_01
+>>>   SPAM_PHRASE_01_02
+>>>   SPAM_PHRASE_02_03
+>>>   SPAM_PHRASE_03_05
+>>>   SPAM_PHRASE_05_08
+
+> I was thinking of just removing those particular rules, but keeping the
+> other entries in the range, since they're proving too "noisy" to be
+> effective.  But I'd be willing to keep those ones in, all the same.  What
+> do you think?  Matt/Craig, thoughts?
+
+I think I could handle commenting out the lowest SPAM_PHRASE_XX_YY
+scores.  If the GA could handle this sort of thing so they'd
+automatically be zeroed, I'd feel better since the ranges could change
+next time the phrase list is regenerated or the algorithm tweaked.
+
+I think we need to understand why DATE_IN_PAST_48_96 is so low before
+we remove it.  The two rules on either side perform quite well.
+
+>> And here are the rules that seem like they should be better or should
+>> be recoverable:
+
+>>>   FROM_MISSING
+>>>   GAPPY_TEXT
+>>>   INVALID_MSGID
+>>>   MIME_NULL_BLOCK
+>>>   SUBJ_MISSING
+
+> well, I don't like SUBJ_MISSING, I reckon there's a world of mails from
+> cron jobs (e.g.) which hit it.
+
+Okay, drop SUBJ_MISSING.
+
+> But, yes, the others for sure should be recoverable, and I'm sure there's
+> more.
+
+Probably a few, those seemed like the best prospects to me.
+
+> BTW do you agree with the proposed methodology (ie. remove the rules and
+> bugzilla each one?)
+
+I only want a bugzilla ticket for each one if people are okay with
+quick WONTFIX closes on the ones deemed unworthy of recovery.
+
+If you could put the stats for each rule in the ticket somehow (should
+be automatable with email at the very least), it would help.
+
+Dan
+
+

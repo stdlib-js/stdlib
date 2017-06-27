@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:51:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DAEE443C3A
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JMWUZ11875 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 23:32:30 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA32559; Mon, 19 Aug 2002 23:30:52 +0100
+Received: from elivefree.net (mail.elivefree.net [212.120.138.42]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id XAA32525 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 23:30:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.elivefree.net
+    [212.120.138.42] claimed to be elivefree.net
+Received: from [213.116.40.178] (HELO elivefree.net) by elivefree.net
+    (Stalker SMTP Server 1.7) with ESMTP id S.0001612493 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 23:30:38 +0100
+Message-Id: <3D617173.F806D59D@elivefree.net>
+Date: Mon, 19 Aug 2002 23:30:12 +0100
+From: Anthony <ant@elivefree.net>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.2.14-5.0 i586)
+X-Accept-Language: ga, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] hwclock
+References: <3D60D081.6070008@physics.dcu.ie> <20020819123308.GB1474@calm.mc>
+Content-Type: text/plain; charset=iso-8859-15
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> will have problems though if you use Windows, as it will tell wrong time
+> for half the year, and will reset the clock when you boot into it after
+> the change in time (this might be fixed in XP/2000, I don't know).
+> Even if you set the hwclock to localtime, you will get problems when you
+> boot into windows, as both Linux and Windows will try to alter the
+> hwclock (maybe there is a way to suppress windows doing this).
+> m
+
+Hi there,
+
+I recently delved into how the linux system clock and the hardware clock
+interact with each other when I set up ntp on my system while connected
+to the net. However, I didn't realise that Windows altered the hw clock
+as there was no mention of it in any of the docs I read. 
+I still dual-boot on a regular basis and if Windows is sneakily messing
+with the clock, I'd be interested to know in what way it is and how it
+couild be stopped from doing so. Everything seems to work fine since I
+set the system up but I still don't like to have these gaps in my
+knowledge.
+
+Regards,
+Anthony Geoghegan
+-- 
+The worst sin towards our fellow creatures is not to hate them,
+but to be indifferent to them. That is the essence of inhumanity
+ - George Bernard Shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

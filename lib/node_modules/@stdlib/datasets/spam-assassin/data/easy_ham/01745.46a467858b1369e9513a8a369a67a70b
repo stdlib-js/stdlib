@@ -1,0 +1,118 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Tue Sep 10 10:29:19 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Tue, 10 Sep 2002 19:29:19 +1000
+Subject: [Spambayes] Current histograms 
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCGEFBBDAB.tim.one@comcast.net> 
+Message-ID: <200209100929.g8A9TJV27347@localhost.localdomain>
+
+
+>>> Tim Peters wrote
+> We've not only reduced the f-p and f-n rates in my test runs, we've also
+> made the score distributions substantially sharper.  This is bad news for
+> Greg, because the non-existent "middle ground" is becoming even less
+> existent <wink>:
+
+Well, I've finally got around to pulling down the SF code. Starting
+with it, and absolutely zero local modifications, I see the following:
+
+Ham distribution for all runs:
+* = 589 items
+  0.00 35292 ************************************************************
+  2.50    36 *
+  5.00    21 *
+  7.50    12 *
+ 10.00     6 *
+ 12.50     9 *
+ 15.00     6 *
+ 17.50     3 *
+ 20.00     8 *
+ 22.50     5 *
+ 25.00     3 *
+ 27.50    18 *
+ 30.00     9 *
+ 32.50     1 *
+ 35.00     4 *
+ 37.50     3 *
+ 40.00     0 
+ 42.50     3 *
+ 45.00     3 *
+ 47.50     4 *
+ 50.00     9 *
+ 52.50     5 *
+ 55.00     5 *
+ 57.50     3 *
+ 60.00     4 *
+ 62.50     2 *
+ 65.00     2 *
+ 67.50     6 *
+ 70.00     1 *
+ 72.50     3 *
+ 75.00     2 *
+ 77.50     4 *
+ 80.00     3 *
+ 82.50     3 *
+ 85.00     6 *
+ 87.50     8 *
+ 90.00     4 *
+ 92.50     8 *
+ 95.00    15 *
+ 97.50   441 *
+
+Spam distribution for all runs:
+* = 504 items
+  0.00   393 *
+  2.50    17 *
+  5.00    18 *
+  7.50    12 *
+ 10.00     4 *
+ 12.50     6 *
+ 15.00    11 *
+ 17.50    10 *
+ 20.00    10 *
+ 22.50     5 *
+ 25.00     3 *
+ 27.50    19 *
+ 30.00     8 *
+ 32.50     2 *
+ 35.00     0 
+ 37.50     1 *
+ 40.00     5 *
+ 42.50     5 *
+ 45.00     7 *
+ 47.50     2 *
+ 50.00     5 *
+ 52.50     1 *
+ 55.00     9 *
+ 57.50    11 *
+ 60.00     6 *
+ 62.50     4 *
+ 65.00     3 *
+ 67.50     5 *
+ 70.00     7 *
+ 72.50     9 *
+ 75.00     2 *
+ 77.50    13 *
+ 80.00     3 *
+ 82.50     7 *
+ 85.00    15 *
+ 87.50    16 *
+ 90.00    11 *
+ 92.50    16 *
+ 95.00    45 *
+ 97.50 30226 ************************************************************
+
+
+My next (current) task is to complete the corpus I've got - it's currently
+got ~ 9000 ham, 7800 spam, and about 9200 currently unsorted. I'm tossing 
+up using either hammie or spamassassin to do the initial sort  - previously
+I've used various forms of 'grep' for keywords and a little gui thing to 
+pop a message up and let me say 'spam/ham', but that's just getting too, too
+tedious.
+
+I can't make it available en masse, but I will look at finding some of
+the more 'interesting' uglies. One thing I've seen (consider this 
+'anecdotal' for now) is that the 'skip' tokens end up in a _lot_ of the 
+f-ps.
+
+Anthony

@@ -1,0 +1,107 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:46:18 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8F8E943C43
+	for <jm@localhost>; Wed, 14 Aug 2002 05:45:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:45:28 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DICq412843 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 19:12:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eg4O-0002HZ-00; Tue,
+    13 Aug 2002 11:07:04 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17eg3k-00088u-00 for <razor-users@lists.sourceforge.net>; Tue,
+    13 Aug 2002 11:06:24 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7DI61W7005832;
+    Tue, 13 Aug 2002 13:06:01 -0500
+MIME-Version: 1.0
+Message-Id: <p04310117b97efa0f31ed@[198.248.208.11]>
+In-Reply-To: <Pine.LNX.4.44.0208131218200.2930-100000@burgers.bubbanfriends.org>
+References: <Pine.LNX.4.44.0208131218200.2930-100000@burgers.bubbanfriends.org>
+To: Mike Burger <mburger@bubbanfriends.org>
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+Cc: razor-users@example.sourceforge.net
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 13:06:16 -0500
+Date: Tue, 13 Aug 2002 13:06:16 -0500
+
+At 12:20 PM -0500 8/13/02, Mike Burger wrote:
+>Make sure you have this in your .spamassassin/user_prefs:
+
+This might be a problem.  I'll have to look into it further.  I just 
+got SA working yesterday.  It's being called from MIMEDefang.  I'm 
+not sure if it will look for user preferences when run like that. 
+One would hope it would be I can't say for certain.  I'll look in to 
+it.
+
+># By default, the subject lines of suspected spam will be tagged.
+># This can be disabled here.
+>#
+>rewrite_subject 0
+
+Yeah, I disabled the subject rewrite.  I also lowered required_hits 
+to 1 (wonder if I can do zero) so that almost all mail is scored--I'm 
+testing it right now.  auto_report_threshold was raised to 100 to 
+make sure that all mail gets through to me for now.
+
+># By default, spamassassin will include its report in the body
+># of suspected spam. Enabling this causes the report to go in the
+># headers instead. Using 'use_terse_report' for this is recommended.
+>#
+>report_header 1
+
+Ah, now I didn't notice this.  I rather like this option.  I may set 
+my global default to this.
+
+>The first tells it not to add *****SPAM***** to the subject, the second
+>tells it to put the report in the headers, instead of the body.
+>
+>If the report is in the headers, it won't be calculated in the
+>razor-check.
+
+This makes sense.  I may do that for just this reason.  Thanks!
+
+Justin
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR      Pittsburg State University
+Network & Systems Manager       Kelce 157Q
+Office of Information Systems   Pittsburg, KS 66762
+Voice: (620) 235-4606           Fax: (620) 235-4545
+http://www.pittstate.edu/ois/
+
+Warning:  This message has been quadruple Rot13'ed for your protection.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

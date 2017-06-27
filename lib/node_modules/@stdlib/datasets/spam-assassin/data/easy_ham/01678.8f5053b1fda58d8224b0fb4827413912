@@ -1,0 +1,24 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 00:21:15 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 19:21:15 -0400
+Subject: [Spambayes] [ANN] Trained classifier available
+In-Reply-To: <20020906162505.GB17800@cthulhu.gerg.ca>
+Message-ID: <LNBBLJKPBEHFEDALKOLCMEKHBCAB.tim.one@comcast.net>
+
+    http://sf.net/project/showfiles.php?group_id=61702
+
+    This is the binary pickle of my classifier after training on
+    my first spam/ham corpora pair.  All records with
+    spamprob == UNKNOWN_SPAMPROB have been purged.
+
+It's in a zip file, and is only half a meg.
+
+Jeremy, it would be interesting if you tried that on your data.  The false
+negative rates across my other 4 test sets when run against this are:
+
+      0.364%
+      0.400%
+      0.400%
+      0.909%
+

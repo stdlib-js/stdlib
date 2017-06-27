@@ -1,0 +1,250 @@
+From isilo@phish.siteprotect.com  Sat Nov  9 15:21:55 2002
+Return-Path: <isilo@phish.siteprotect.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3BDE816F16
+	for <jm@localhost>; Sat,  9 Nov 2002 15:21:53 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 09 Nov 2002 15:21:53 +0000 (GMT)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gA98KqW32275 for
+    <jm@jmason.org>; Sat, 9 Nov 2002 08:20:52 GMT
+Received: from phish.siteprotect.com (phish.siteprotect.com [64.26.0.106])
+    by webnote.net (8.9.3/8.9.3) with ESMTP id IAA17488 for
+    <jm@netnoteinc.com>; Sat, 9 Nov 2002 08:22:06 GMT
+Received: (from isilo@localhost) by phish.siteprotect.com (8.9.3/8.9.3) id
+    CAA06879; Sat, 9 Nov 2002 02:21:59 -0600
+Date: Sat, 9 Nov 2002 02:21:59 -0600
+Message-Id: <200211090821.CAA06879@phish.siteprotect.com>
+To: yyyy@netnoteinc.com
+From: iSilo <list@iSilo.com>
+Subject: iSilo announcements (November 8, 2002)
+
+----------------------------------------------------------------------
+1. iSilo(TM) 3.25 for Palm OS, Pocket PC, and Windows enters beta1
+2. iSilo(TM) 3.25 for Windows CE Handheld PC enters beta1
+3. iSiloX 3.25 for Windows and Mac OS enters beta1
+4. iSiloXC 3.25 for Windows, Linux, FreeBSD, Mac OS X,
+   and Solaris enters beta1
+----------------------------------------------------------------------
+
+======================================================================
+1. iSilo(TM) 3.25 for Palm OS and Pocket PC enters beta1
+----------------------------------------------------------------------
+iSilo(TM) 3.25b1 addresses the following issues from iSilo 3.2:
+
+- When highlighting content with a non-zero top margin, the highlight
+  may be offset vertically in the downward direction.
+- (iSilo for Palm OS) Tapping the application launcher/home silkscreen
+  icon while in the password dialog results in a fatal error.
+- (iSilo for Palm OS) Documents in /Palm/Launcher may fail to be added
+  to the document list.
+- (iSilo for Palm OS) Text displays cutoff on the NX60/70V.
+
+iSilo(TM) 3.25b1 adds the following new features to iSilo 3.2:
+
+- Added support for hyperlink mode for iterating through currently
+  visible hyperlinks.
+- Added support for starting on the home page of a document if the
+  document was converted with the option for doing so if the document
+  date differs from the document date the last time the document was
+  opened.
+- (iSilo for Palm OS) For Palm OS 5, added ability to display an
+  image at double the image's width and height.
+- (iSilo for Pocket PC) When renaming files, if the original file
+  name had a three letter extension, then add it to the new file name
+  if it does not end with a period nor have a three letter extension.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSilo(TM) 3.25b1 for Palm OS(R), please go to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloPalmOS.htm>
+
+To download iSilo 3.25b1 for Pocket PC, please go to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloPPC.htm>
+
+To download iSilo 3.25b1 for Windows , please go to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloW32.htm>
+
+
+======================================================================
+2. iSilo(TM) 3.25 for Windows CE Handheld PC enters beta1
+----------------------------------------------------------------------
+iSilo(TM) 3.25 will be the first version of iSilo for Windows CE
+Handheld PC and has the requirements shown here.
+
+Basic requirements:
+- Windows CE Handheld PC Edition version 3.0, Windows CE Handheld PC
+  Professional Edition version 3.0, or Windows CE Handheld PC 2000
+- Storage memory for application executable file (dependent on
+  processor): ARM: 579K, MIPS: 627K
+- To determine your processor type go to the Start menu, tap Settings, tap
+  Control Panel, double-tap System, and then go to the Device tab.
+- 86K storage memory for supporting documents
+- 512K free program memory (1MB recommended)
+
+Additional functionality specific requirements:
+- Additional memory required for document storage.
+- iSiloX required for creating documents utilizing maximum document
+  presentation capabilities.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSilo 3.25b1 for Windows CE Handheld PC, please go
+to this URL:
+
+    <http://www.iSilo.com/info/beta/iSiloHPC.htm>
+
+
+======================================================================
+3. iSiloX 3.25 for Windows and Mac OS enters beta1
+----------------------------------------------------------------------
+iSiloX 3.25b1 addresses the following issues from iSiloX 3.2:
+
+- Maximum width and height settings for images would not be applied
+  to images referenced by an image tag with a width or height
+  attribute specification greater than the native width or height
+  of the image.
+- Within a block with a non-zero text indent, a line following a
+  forced break with the <br> tag with markup at the beginning
+  of the line would incorrectly be indented.
+- If a parent element specifies a font-size using ems, then the
+  child element would incorrectly also inherit the specification
+  instead of the computed font-size value.  For example, in the
+  case where the parent element specified 2em, the actual computed
+  value of the child would be 4em (e.g., 2 * 2em = 4em).
+- Upon reopening a .ixl file containing a document entry with the
+  receive cookies option on, the option would be reset to off.
+- In a .ixl file, if an element is specified but has no content,
+  the .ixl file may fail to open.
+
+iSiloX 3.25b1 adds the following features to iSiloX 3.2:
+
+- In the Document properties, added a home page section for specifying
+  the document home page number and whether or not to open the
+  document on the home page when the document date changes.
+- In the Text properties, for preformatted text, added an option
+  for specifying whether or not to use a monospace font.
+- In the Text properties, for preformatted text, added an option
+  for specifying whether to keep all single line breaks, remove all
+  single line breaks, or only keep single line breaks if a space or
+  tab character follows.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSiloX 3.25b1 for Windows, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXWindows.htm>
+
+To download iSiloX 3.25b1 for Mac OS, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXMac.htm>
+
+
+======================================================================
+4. iSiloXC 3.25 for Windows, Linux, FreeBSD, Mac OS X,
+   and Solaris enter beta1
+----------------------------------------------------------------------
+iSiloX 3.25b1 addresses the following issues from iSiloX 3.2:
+
+- Maximum width and height settings for images would not be applied
+  to images referenced by an image tag with a width or height
+  attribute specification greater than the native width or height
+  of the image.
+- Within a block with a non-zero text indent, a line following a
+  forced break with the <br> tag with markup at the beginning
+  of the line would incorrectly be indented.
+- If a parent element specifies a font-size using ems, then the
+  child element would incorrectly also inherit the specification
+  instead of the computed font-size value.  For example, in the
+  case where the parent element specified 2em, the actual computed
+  value of the child would be 4em (e.g., 2 * 2em = 4em).
+- Upon reopening a .ixl file containing a document entry with the
+  receive cookies option on, the option would be reset to off.
+- In a .ixl file, if an element is specified but has no content,
+  the .ixl file may fail to open.
+
+iSiloX 3.25b1 adds the following features to iSiloX 3.2:
+
+- Under <DocumentOptions>, added the <HomePageNumber> and
+  <OpenHomePageOnDateChange> elements for specifying the document
+  home page number and whether or not to open the document on the
+  home page when the document date changes.
+- Under <DocumentOptions>, added the <PreUseMonospaceFont> element
+  for preformatted text for specifying whether or not to use a
+  monospace font.
+- Under <DocumentOptions>, added the <PreSingleLineBreaks> element
+  for preformatted text for specifying whether to keep all single
+  line breaks, remove all single line breaks, or only keep single
+  line breaks if a space or tab character follows. See .ixl file
+  format for more information.
+
+Please note that this is a beta version of the software, and as
+such is intended for testing purposes to help eliminate problems
+and issues before the release.
+
+Please report any problems or issues you encounter by sending an
+email to email@iSilo.com.  When reporting problems, please include
+all potentially relevant details, including the exact steps used
+to reproduce the problem, OS version, and hardware configuration.
+
+To download iSiloXC 3.25b1 for Windows, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCWindows.htm>
+
+To download iSiloXC 3.25b1 for Linux, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXC386.htm>
+
+To download iSiloXC 3.25b1 for FreeBSD, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCBSD.htm>
+
+To download iSiloXC 3.25b1 for Mac OS X, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCOSX.htm>
+
+To download iSiloXC 3.25b1 for Solaris, please go to this URL:
+
+    <http://www.iSiloX.com/info/beta/iSiloXCSOL.htm>
+
+
+----------------------------------------------------------------------
+You have received this message because you subscribed to the
+iSilo(TM) mailing list.  If you would like to be removed from
+this list, please send an email with the subject "unsubscribe"
+to: <list@iSilo.com>.
+
+Please note that this email address only handles subscriptions
+and unsubscriptions of the mailing list.  Any other messages
+sent to this email address are automatically deleted.
+
+----------------------------------------------------------------------
+iSilo(TM)             http://www.iSilo.com             email@iSilo.com
+
+

@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Wed Jul 24 02:47:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6AEED440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 21:47:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 02:47:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O1fj410244 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 02:41:45 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1BE672940E4; Tue, 23 Jul 2002 18:31:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (cpe-65-172-233-109.sanbrunocable.com
+    [65.172.233.109]) by xent.com (Postfix) with ESMTP id E4D102940AF for
+    <FoRK@xent.com>; Tue, 23 Jul 2002 18:30:47 -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Wed, 24 Jul 2002 01:39:57 -08:00
+Message-Id: <3D3E056D.5050509@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Rose Garden Funeral of Sores
+User-Agent: Mutt/1.5.0 [-1214711651]
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Jim Whitehead <ejw@cse.ucsc.edu>
+Cc: FoRK <FoRK@xent.com>
+Subject: Re: SimPastry
+References: <AMEPKEBLDJJCCDEJHAMIOENGFCAA.ejw@cse.ucsc.edu>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 18:39:57 -0700
+
+Jim Whitehead wrote:
+> http://www.research.microsoft.com/~antr/Pastry/download.htm
+
+Looks cute. For what it's worth I worked closely with a few
+of the people on the team. One was my officemate for years.
+
+Unfortunately there's no way I'm loading all the .NET stuff
+on my machine. Not yet. And hopefully by the time it's all
+stable, I'll be running FreeBSD again on my laptop, and it will
+be moot anyway.
+
+- Joe
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,72 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 17:21:50 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8425216F03
+	for <jm@localhost>; Sat,  5 Oct 2002 17:21:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 17:21:49 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g95DOfK10926 for
+    <jm-rpm@jmason.org>; Sat, 5 Oct 2002 14:24:42 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g95DE2f01952; Sat, 5 Oct 2002 15:14:02
+    +0200
+Received: from bennew01.localdomain (pD900DDC6.dip.t-dialin.net
+    [217.0.221.198]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g95DD2f29025 for <rpm-list@freshrpms.net>; Sat, 5 Oct 2002 15:13:02 +0200
+Received: from bennew01.localdomain (bennew01.localdomain [192.168.3.1])
+    by bennew01.localdomain (8.12.5/linuxconf) with SMTP id g95DCmUv028047 for
+    <rpm-list@freshrpms.net>; Sat, 5 Oct 2002 15:12:49 +0200
+From: Matthias Haase <matthias_haase@bennewitz.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: RedHat 8.0 and his own freetype
+Message-Id: <20021005151248.2184c904.matthias_haase@bennewitz.com>
+In-Reply-To: <3D9E1F20.3050300@eecs.berkeley.edu>
+References: <20021004155451.52f9ecd5.matthias_haase@bennewitz.com>
+    <3D9E1F20.3050300@eecs.berkeley.edu>
+X-Operating-System: customized linux smp kernel 2.4* on i686
+X-Mailer: Sylpheed
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 5 Oct 2002 15:12:48 +0200
+Date: Sat, 5 Oct 2002 15:12:48 +0200
+
+On Fri, 04 Oct 2002 16:07:12 -0700
+Ben Liblit <liblit@eecs.berkeley.edu> wrote:
+
+> So if your fonts look ugly, lack of bytecode hinting is *not* the cause.
+
+Well you are right, sorry, I didn't have any better idea yesterday late in
+the evening.
+The fonts are ugly only inside of gnome2 and clean for gnome1 apps, if
+antialiasing is disabled. 
+This is difficult to understand for me.
+
+--
+regards from Germany
+                   Matthias
+      
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

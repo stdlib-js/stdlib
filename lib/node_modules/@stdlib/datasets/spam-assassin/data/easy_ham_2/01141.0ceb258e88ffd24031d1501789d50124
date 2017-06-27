@@ -1,0 +1,99 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:23:55 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EA67F440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:23:54 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:23:54 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG0qY16187 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 17:00:52 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id PAA27995 for <jm-rpm@jmason.org>;
+    Sun, 21 Jul 2002 15:42:18 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6LEU2C27624; Sun, 21 Jul 2002 16:30:02
+    +0200
+Received: from fep06-app.kolumbus.fi (fep06-0.kolumbus.fi [193.229.0.57])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6LEShC25247 for
+    <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 16:28:43 +0200
+Received: from azrael.blades.cxm ([62.248.237.162]) by
+    fep06-app.kolumbus.fi with ESMTP id
+    <20020721142842.NVAS20539.fep06-app.kolumbus.fi@azrael.blades.cxm> for
+    <rpm-list@freshrpms.net>; Sun, 21 Jul 2002 17:28:42 +0300
+Received: (from blades@localhost) by azrael.blades.cxm (SGI-8.9.3/8.9.3)
+    id RAA01980 for rpm-list@freshrpms.net; Sun, 21 Jul 2002 17:28:41 +0300
+    (EEST)
+X-Authentication-Warning: azrael.blades.cxm: blades set sender to
+    harri.haataja@cs.helsinki.fi using -f
+From: Harri Haataja <harri.haataja@cs.helsinki.fi>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ximian apt repos?
+Message-Id: <20020721172840.B1781@azrael.smilehouse.com>
+References: <1027203479.5354.14.camel@athena>
+    <20020720211551.6fb70f27.kilroy@kamakiriad.com>
+    <1027218043.3516.5.camel@localhost.localdomain>
+    <20020721051108.0fd207d5.che666@uni.de>
+    <20020721142007.03c02bc4.che666@uni.de>
+    <1027252799.12983.0.camel@localhost.localdomain>
+    <20020721145013.4dc253d6.che666@uni.de>
+    <20020721151211.7140ecdb.che666@uni.de>
+    <20020721091108.085bee34.kilroy@kamakiriad.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020721091108.085bee34.kilroy@kamakiriad.com>;
+    from kilroy@kamakiriad.com on Sun, Jul 21, 2002 at 09:11:08AM -0500
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 21 Jul 2002 17:28:41 +0300
+Date: Sun, 21 Jul 2002 17:28:41 +0300
+
+On Sun, Jul 21, 2002 at 09:11:08AM -0500, Brian Fahrlander wrote:
+> On Sun, 21 Jul 2002 15:12:11 -0400, che <che666@uni.de> wrote:
+> > > > > The server mentioned above works again now :)!
+> > > > Any problems with the rpm's they provided?
+> > > #redhat 7.3
+> > > rpm http://apt.sunnmore.net gnome2 73
+> > > rpm-src http://apt.sunnmore.net gnome2 73
+> > after apt-get install gnome-session
+>     Does it work more than once?
+>     Failed to fetch http://apt.sunnmore.net/gnome2/filename-here.rpm
+>    404 Not Found
+
+I got that with the earlier URL. Those that say 73/72 at the end work,
+though.
+
+I just installed gnome-terminal and I'm impressed by that. I have seom
+gtk1 apps to rebuild and put into my own repository (like gaim) so I
+didn't do the full session install. Besides, it's HUGE. And it wants to
+install stuff like kudzu and parted and who knows what. What's wrong
+with dynamic configuration? Dependency hell indeed.
+
+-- 
+> wd0: 1671040 partitions found
+That's a lie. Ignore it.
+		-- Seen on xMach mailing list
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
