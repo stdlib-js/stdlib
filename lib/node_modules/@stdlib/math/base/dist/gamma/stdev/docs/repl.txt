@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the standard deviation of a gamma distribution.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    1.0
+    > v = {{alias}}( 4.0, 12.0 )
+    ~0.167
+    > v = {{alias}}( 8.0, 2.0 )
+    ~1.414
+
+    See Also
+    --------
+
