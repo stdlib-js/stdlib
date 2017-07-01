@@ -5,7 +5,7 @@
 REPL_HELP ?= $(SRC_DIR)/@stdlib/repl/help/scripts/build.js
 
 # Define the path to the executable for aggregating REPL examples:
-REPL_EXAMPLES ?= $(SRC_DIR)/@stdlib/repl/example/scripts/build.js
+REPL_EXAMPLES ?= $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js
 
 
 # TARGETS #
