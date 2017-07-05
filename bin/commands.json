@@ -2,5 +2,6 @@
 	"datasets": "./lib/node_modules/@stdlib/datasets/bin/cli",
 	"ls": "./tools/pkgs/names/bin/cli",
 	"ls-tree": "./tools/pkgs/tree/bin/cli",
+	"ns": "./lib/node_modules/@stdlib/namespace/bin/cli",
 	"repl": "./lib/node_modules/@stdlib/repl/bin/cli"
 }

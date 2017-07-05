@@ -10,6 +10,7 @@ Commands:
   help [command]               Print a help message.
   datasets                     Retrieve a dataset.
   ls                           List package names.
-  tree                         Show package tree.
+  ls-tree                      Show package tree.
+  ns                           Print namespace.
   repl                         Start a REPL.
 

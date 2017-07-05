@@ -124,6 +124,7 @@ if ( cmd === 'help' ) {
 		cmd === 'datasets' ||
 		cmd === 'ls' ||
 		cmd === 'ls-tree' ||
+		cmd === 'ns' ||
 		cmd === 'repl'
 	) {
 		cmd = commands[ cmd ];
