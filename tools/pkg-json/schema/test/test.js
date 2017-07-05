@@ -279,6 +279,18 @@ tape( 'the function returns `false` if provided a package JSON having an invalid
 	t.end();
 });
 
+tape( 'the function returns `false` if provided a package JSON having an invalid `browser` field (map)', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_browser_map.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
 tape( 'the function returns `false` if provided a package JSON having an invalid `gypfile` field', function test( t ) {
 	var bool;
 	var pkg;

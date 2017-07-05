@@ -124,7 +124,14 @@
 		},
 		"browser": {
 			"description": "main package entry point for a browser environment",
-			"$ref": "#/definitions/path"
+			"oneOf": [
+				{
+					"$ref": "#/definitions/path"
+				},
+				{
+					"$ref": "#/definitions/path-map"
+				}
+			]
 		},
 		"repository": {
 			"description": "package repository",
