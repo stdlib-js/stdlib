@@ -1,0 +1,9 @@
+
+Usage: stdlib-namespace [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --fields f1,f2,...    Print fields as CSV.
+
