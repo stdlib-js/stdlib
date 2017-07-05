@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-* Script to analysis REPL namespace.
+* Script to analyze the REPL namespace.
 */
 'use strict';
 
@@ -9,7 +9,12 @@
 var getKeys = require( 'object-keys' ).shim();
 var isFunction = require( '@stdlib/assert/is-function' );
 var isRegExp = require( '@stdlib/assert/is-regexp' );
-var NAMESPACE = require( '@stdlib/repl/lib/namespace' );
+var namespace = require( '@stdlib/namespace' );
+
+
+// VARIABLES //
+
+var NAMESPACE = namespace();
 
 
 // FUNCTIONS //
@@ -26,11 +31,11 @@ function printResults( results ) {
 	str += 'REPL Namespace\n';
 	str += '================\n';
 	str += '\n';
-	str += 'Size:        '+results.total+'\n';
-	str += 'Functions:   '+results.functions+'\n';
-	str += 'Methods:     '+results.methods+'\n';
-	str += 'RegExp:      '+results.regexp+'\n';
-	str += 'Constants:   '+results.constants+'\n';
+	str += 'Size:       '+results.total+'\n';
+	str += 'Functions:  '+results.functions+'\n';
+	str += 'Methods:    '+results.methods+'\n';
+	str += 'RegExp:     '+results.regexp+'\n';
+	str += 'Constants:  '+results.constants+'\n';
 	console.log( str );
 } // end FUNCTION printResults()
 
