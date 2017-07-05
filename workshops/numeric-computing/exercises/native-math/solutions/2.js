@@ -51,4 +51,3 @@ function rmse( x, y ) {
 // EXPORTS //
 
 module.exports = rmse;
-

@@ -1,7 +1,7 @@
 'use strict';
 
 var randn = require( '@stdlib/math/base/random/randn' );
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 
 var plot;
 var opts;
@@ -12,7 +12,7 @@ var y;
 opts = {
 	'title': 'Single Line'
 };
-plot = new Plot( [[1,2,3]], [[1,0,1]], opts );
+plot = new Plot( [ [1, 2, 3] ], [ [1, 0, 1] ], opts );
 plot.view( 'browser' );
 plot.view( 'window' );
 
@@ -35,8 +35,8 @@ plot.view( 'window' );
 
 
 // Multiple lines:
-x = [ [1,2,3], [1,2,3] ];
-y = [ [1,0,1], [0,1,0] ];
+x = [ [1, 2, 3], [1, 2, 3] ];
+y = [ [1, 0, 1], [0, 1, 0] ];
 opts = {
 	'title': 'Multiple Lines',
 	'lineStyle': [ '-', ':' ],
@@ -49,8 +49,8 @@ plot.view( 'window' );
 
 
 // Line + scatter:
-x = [ [1,2,3], [1,2,3] ];
-y = [ [1,0,1], [0,1,0] ];
+x = [ [1, 2, 3], [1, 2, 3] ];
+y = [ [1, 0, 1], [0, 1, 0] ];
 opts = {
 	'title': 'Line + Scatter',
 	'lineStyle': [ '-', ':' ],

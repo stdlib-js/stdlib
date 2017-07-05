@@ -1,6 +1,6 @@
 'use strict';
 
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 var createRandu = require( '@stdlib/math/base/random/randu' ).factory;
 var createRandn = require( '@stdlib/math/base/random/randn' ).factory;
 
@@ -27,7 +27,7 @@ var i;
 * @returns {number} prediction
 */
 function model( m, x, b ) {
-	return m*x + b;
+	return (m*x) + b;
 }
 
 // Create seeded PRNGs:
@@ -75,8 +75,8 @@ x2 = new Float64Array( 100 );
 y2 = new Float64Array( x2.length );
 for ( i = 0; i < x2.length; i++ ) {
 	x2[ i ] = randu() * opts.xMax;
-	y2[ i ] = model( m, x2[i], b ) + randn()*sigma;
+	y2[ i ] = model( m, x2[i], b ) + (randn()*sigma);
 }
 
-plot = new Plot( [x1,x2], [y1,y2], opts );
+plot = new Plot( [ x1, x2 ], [ y1, y2 ], opts );
 plot.view();

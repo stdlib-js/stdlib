@@ -2,7 +2,7 @@
 
 var toHTML = require( 'vdom-to-html' );
 var getKeys = require( 'object-keys' ).shim();
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
 var rmse = require( './2.js' );

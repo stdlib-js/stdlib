@@ -2,7 +2,7 @@
 
 var TWO_PI = require( '@stdlib/math/constants/float64-two-pi' );
 var linspace = require( '@stdlib/math/utils/linspace' );
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 
 var plot;
 var opts;
@@ -40,5 +40,3 @@ opts.y = [ cos ];
 
 plot = new Plot( [x], [cos], opts );
 plot.view( 'window' );
-
-

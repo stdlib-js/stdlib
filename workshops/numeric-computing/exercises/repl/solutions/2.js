@@ -4,7 +4,7 @@ var linspace = require( '@stdlib/math/utils/linspace' );
 var erf = require( '@stdlib/math/base/special/erf' );
 var randu = require( '@stdlib/math/base/random/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 var ColumnChart = require( '@stdlib/plot/sparklines/unicode/column' );
 
 var plot;

@@ -3,7 +3,7 @@
 var toHTML = require( 'vdom-to-html' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
 var randn = require( '@stdlib/math/base/random/randn' );
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 
 var plot1;
 var plot2;
@@ -12,8 +12,8 @@ var x;
 var y;
 
 // Plot 1:
-x = [ [1,2,3], [1,2,3] ];
-y = [ [1,0,1], [0,1,0] ];
+x = [ [1, 2, 3], [1, 2, 3] ];
+y = [ [1, 0, 1], [0, 1, 0] ];
 opts = {
 	'title': 'Multiple Lines',
 	'lineStyle': [ '-', ':' ],

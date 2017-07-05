@@ -1,11 +1,11 @@
 'use strict';
 
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 
 // To create a `plot` instance:
 var plot = new Plot({
-	'x': [[1,2,3]],
-	'y': [[1,0,1]]
+	'x': [ [ 1, 2, 3 ] ],
+	'y': [ [ 1, 0, 1 ] ]
 });
 
 // To set properties:

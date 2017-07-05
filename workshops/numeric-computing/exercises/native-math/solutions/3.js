@@ -1,6 +1,6 @@
 'use strict';
 
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var data = require( './../fixtures/sin/data.json' );
 var rmse = require( './2.js' );
@@ -28,7 +28,7 @@ opts = {
 	'yMax': 1.1
 };
 
-plot = new Plot( [x,x], [sin,data.expected], opts );
+plot = new Plot( [ x, x ], [ sin, data.expected ], opts );
 plot.view( 'window' );
 
 // Plot the deviations...
@@ -43,5 +43,3 @@ opts = {
 };
 plot = new Plot( [x], [delta], opts );
 plot.view( 'window' );
-
-

@@ -1,7 +1,7 @@
 'use strict';
 
 var toHTML = require( 'vdom-to-html' );
-var Plot = require( '@stdlib/plot/plot' );
+var Plot = require( '@stdlib/plot/ctor' );
 var createRandu = require( '@stdlib/math/base/random/randu' ).factory;
 var createRandn = require( '@stdlib/math/base/random/randn' ).factory;
 var onlineRegression = require( '@stdlib/ml/online-sgd-regression' );
@@ -38,7 +38,7 @@ var j;
 * @returns {number} prediction
 */
 function model( m, x, b ) {
-	return m*x + b;
+	return (m*x) + b;
 }
 
 // Create seeded PRNGs:
@@ -106,7 +106,7 @@ for ( i = 0; i < N; i++ ) {
 	x3 = randu() * opts.xMax;
 	x2.push( x3 );
 
-	y3 = model( m, x3, b ) + randn()*sigma;
+	y3 = model( m, x3, b ) + (randn()*sigma);
 	y2.push( y3 );
 
 	// Update the model:
@@ -118,7 +118,7 @@ for ( i = 0; i < N; i++ ) {
 
 	// Generate a plot:
 	opts.title = 'Fit: '+i;
-	plot = new Plot( [x1,x2,[x3],x4], [y1,y2,[y3],y4], opts );
+	plot = new Plot( [ x1, x2, [x3], x4 ], [ y1, y2, [y3], y4 ], opts );
 	html += toHTML( plot.render() );
 }
 
