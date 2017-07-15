@@ -19,5 +19,26 @@
 			"percent-encoding",
 			"url-encoding"
 		]
+	},
+	"https://www.w3.org/Graphics/SVG/": {
+		"id": "svg",
+		"description": "The site of the official W3C SVG working group.",
+		"short": "",
+		"keywords": [
+			"svg",
+			"scalable",
+			"vector",
+			"graphics"
+		]
+	},
+	"https://github.com/Matt-Esch/virtual-dom": {
+		"id": "virtual-dom",
+		"description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
+		"short": "",
+		"keywords": [
+			"vdom",
+			"virtual",
+			"dom"
+		]
 	}
 }
