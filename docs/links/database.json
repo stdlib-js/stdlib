@@ -30,5 +30,15 @@
 			"vector",
 			"graphics"
 		]
+	},
+	"https://github.com/Matt-Esch/virtual-dom": {
+		"id": "virtual-dom",
+		"description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
+		"short": "",
+		"keywords": [
+			"vdom",
+			"virtual",
+			"dom"
+		]
 	}
 }
