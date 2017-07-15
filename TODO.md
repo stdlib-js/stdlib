@@ -9,6 +9,8 @@
 
 3. determine how to handle internal `@stdlib` links in READMEs
 
+   => use pkg name as unique identifier and use tools to autoupdate READMEs with desired link (e.g., to GitHub README for pkg or to web docs, etc)
+
 4. create an `docs/install.md` for developers
 
    * julia
@@ -888,15 +890,6 @@
 
      * could do something similar for other trigonometric functions
 
-104. benchmarking
-
-     * [chuhai](https://github.com/Hypercubed/chuhai)
-     * benchmark.js
-     * substack benchmark module (ben)
-     * matcha
-     * [nanobench](https://github.com/mafintosh/nanobench)
-     * [benchtap](https://github.com/waylonflinn/benchtap/blob/master/benchtap.js)
-
 105. stability badges
 
      * may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, stable, locked, or otherwise
@@ -1008,10 +1001,6 @@
 
 134. [vmd](https://github.com/yoshuawuyts/vmd)
 
-135. when browserifying `@stdlib/plot` should *ignore* `electron`!!!!
-
-     - may want to have a separate `view` method entirely; one that is catered to browser context
-
 136. [function-plot](https://github.com/maurizzzio/function-plot)
 
 137. see [webtorrent-desktop](https://github.com/feross/webtorrent-desktop) for electron inspiration
@@ -1121,7 +1110,7 @@
 
 184. `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
 
-185. Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js specific
+185. Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js/V8 specific
 
 186. [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
 
@@ -1178,7 +1167,7 @@
 
 210. Consider using [shrinkpack](https://github.com/JamieMason/shrinkpack) to create reproducible, more reliable, and faster builds in CI environments
 
-211. pkg which can generate an Anscombe quartet
+211. pkg which can generate an Anscombe dataset
 
 212. [authors-certificate](https://github.com/berneout/authors-certificate)
 
@@ -1191,6 +1180,8 @@
 216. `datapackage.json` [schemas](https://github.com/frictionlessdata/schemas)
 
 217. Does `is-typed-array` need to address symbol [toStringTag](https://github.com/ljharb/is-typed-array/blob/master/index.js)? Ditto for [which-typed-array](https://github.com/ljharb/which-typed-array)?
+
+     => yes
 
 218. single-line-stream
 
@@ -1315,6 +1306,8 @@
 
 271. for each push, run an analysis to determine if any SLOC changed. If only comments and/or docs, don't run unit tests.
 
+     => may still want to run linting of docs and, e.g., JSDoc comments
+
 272. batch generation of exponential [RVs](http://www.nrbook.com/devroye/Devroye_files/chapter_five.pdf)?
 
 273. [lowercase](https://github.com/blakeembrey/lower-case/blob/master/lower-case.js), [no-case](https://github.com/blakeembrey/no-case/blob/master/no-case.js), [param-case](https://github.com/blakeembrey/param-case)
@@ -1372,8 +1365,6 @@
 299. PRNG [test](https://github.com/dartino/sdk/blob/master/src/shared/random_test.cc) to check for bit correlation
 
 300. [styledoc](https://github.com/documentationjs/styledoc) for documenting CSS
-
-301. explore [wasm](http://webassembly.org/getting-started/developers-guide/) for a single pkg
 
 302. chakra node build
 
@@ -1451,6 +1442,8 @@
 333. nat lang date/time [parser](https://github.com/olebedev/when)
 
 334. Consider adding Dockerfile(s) (repl, workshop, etc)
+
+     => applies mainly to server based applications
 
 335. [itermplot](https://github.com/daleroberts/itermplot)
 
@@ -1566,6 +1559,8 @@
 
 383. Add a destroy [method](https://github.com/hunterloftis/stoppable) to http/s servers
 
+384. Browser workshop framework (similar to Google Codelabs)
+
 
 ---
 
@@ -1674,7 +1669,15 @@
 
 6. line -> area
 
-7. readme 
+7. readme
+
+8. svg components: move `methods/render.js` to `render/index.js`
+
+9. refactor plot electron renderer
+
+10. Should plot `autoRender` be "opt-in", rather than "opt-out"?
+
+11. plot svg components should have factory methods
 
 
 ---
@@ -1682,17 +1685,6 @@
 ### Tutorials
 
 1. [Image Completion using Neural Networks](http://bamos.github.io/2016/08/09/deep-completion/)
-
-
----
-
-## Workshops
-
-#### Numeric Computing
-
-1. [node-markov](https://github.com/substack/node-markov)
-2. include links to survey in main README
-3. as a REPL exercise, simulation (randn, hist, plot normal pdf)
 
 
 ---
@@ -1713,26 +1705,12 @@
 
 ## Modules
 
-1. is-finite (generic)
-
-   - may need to describe how different from built-in
-
-2. is-infinite (generic)
-
-3. is-nan (generic)
-
-4. is-even (generic)
-
-5. is-odd (generic)
-
 6. incrspace
 
 7. linspace, logspace, incrspace as generators (?)
 
    - should support option to return data of a specified type; e.g., `float32`, etc.
    - returned value should be compliant with `abstract-ndarray`
-
-8. workshop Moby Dick corpus
 
 9. remainder (c) and rem
 
@@ -1857,8 +1835,6 @@
 
 52. [online stats](https://github.com/joshday/OnlineStats.jl)
 
-53. `escape-regexp`
-
 54. hex to ascii
 
 55. arc4 cipher as a stream
@@ -1890,7 +1866,7 @@
 
 65. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js) and [awesome](https://github.com/keonkim/awesome-bits)
 
-66. [foreach](https://github.com/manuelstofer/foreach/blob/master/index.js), [foreach](https://github.com/sindresorhus/each-async/blob/master/index.js), [foreach](https://github.com/Raynos/for-each)
+66. [download](https://github.com/watson/download-to-file)
 
 67. [md5](https://github.com/blueimp/JavaScript-MD5/blob/master/js/md5.js)
 
@@ -1903,8 +1879,6 @@
 71. [ulid](https://github.com/oklog/ulid)
 
 72. [titlecase](https://github.com/rvagg/titlecase)
-
-73. [download](https://github.com/watson/download-to-file)
 
 
 ---
@@ -2117,6 +2091,11 @@ Will need a `tools` directory in individual repositories to
 |-------anscombes-quartet
 |-----math
 |-------base
+|---------assert
+|-----------is-even
+|-----------is-integer
+|-----------is-number
+|-----------is-odd
 |---------blas
 |-----------scal
 |---------complex
@@ -2137,10 +2116,9 @@ Will need a `tools` directory in individual repositories to
 |-----------evalpoly
 |-----------evalrational
 |---------utils
-|-----------is-even
-|-----------is-integer
-|-----------is-number
-|-----------is-odd
+|-----------float32-to-word
+|-----------float64-from-words
+|-----------float64-to-words
 |-------constants
 |---------e
 |---------pi
@@ -2155,7 +2133,7 @@ Will need a `tools` directory in individual repositories to
 |---------subtract
 |---------sum
 |-------dist
-|---------norm
+|---------normal
 |---------poisson
 |-------linalg
 |-------random
@@ -2195,7 +2173,5 @@ Will need a `tools` directory in individual repositories to
 |-------copy
 |-------deep-get
 |-------deep-set
-|-------error-reviver
-|-------error-to-json
 |-------merge
 |-------pluck
