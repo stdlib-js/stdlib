@@ -82,7 +82,7 @@
 
 <div class="image" align="center">
     <a title="Math, machine learning, and JavaScript" href="https://skillsmatter.com/skillscasts/10364-math-machine-learning-and-javascript">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3099f90f6c7265c43e6dcde97fa41ee6d8219614/docs/assets/talks/fullstack_london_2017_athan_reines.png" alt="Math, Machine Learning, and JavaScript at FullStack, London 2017">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/246335b65cfa8c5fbfbed4655d733e64f6cf5643/docs/assets/talks/fullstack_london_2017_athan_reines_1.png" alt="Math, Machine Learning, and JavaScript at FullStack, London 2017">
     </a>
     <br>
 </div>
@@ -93,7 +93,7 @@
 
 <div class="image" align="center">
     <a title="Node.js Add-ons for High Performance Numeric Computing" href="https://skillsmatter.com/skillscasts/10362-node-js-add-ons-for-high-performance-numeric-computing">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3099f90f6c7265c43e6dcde97fa41ee6d8219614/docs/assets/talks/fullstack_london_2017_athan_reines.png" alt="Node.js Add-ons for High Performance Numeric Computing at FullStack, London 2017">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/246335b65cfa8c5fbfbed4655d733e64f6cf5643/docs/assets/talks/fullstack_london_2017_athan_reines_2.png" alt="Node.js Add-ons for High Performance Numeric Computing at FullStack, London 2017">
     </a>
     <br>
 </div>
