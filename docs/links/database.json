@@ -169,5 +169,30 @@
 			"javascript",
 			"ecmascript"
 		]
+	},
+	"https://nodejs.org/api/addons.html": {
+		"id": "node-js-add-ons",
+		"description": "Node.js documentation for native add-ons.",
+		"short": "",
+		"keywords": [
+			"node.js",
+			"node",
+			"native",
+			"add-ons",
+			"addons",
+			"bindings",
+			"binding"
+		]
+	},
+	"http://webassembly.org/": {
+		"id": "webassembly",
+		"description": "Official website for WebAssembly, a portable compilation target for the Web.",
+		"short": "",
+		"keywords": [
+			"webassembly",
+			"wasm",
+			"asm",
+			"binary"
+		]
 	}
 }
