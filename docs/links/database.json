@@ -40,5 +40,15 @@
 			"virtual",
 			"dom"
 		]
+	},
+	"https://www.sublimetext.com/": {
+		"id": "sublime-text",
+		"description": "Sublime Text text editor. Official website.",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"editor"
+		]
 	}
 }
