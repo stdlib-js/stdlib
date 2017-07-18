@@ -50,5 +50,124 @@
 			"text",
 			"editor"
 		]
+	},
+	"https://packagecontrol.io": {
+		"id": "sublime-text-package-control",
+		"description": "Package manager for Sublime Text",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"editor",
+			"package",
+			"pkg",
+			"manager"
+		]
+	},
+	"https://github.com/SublimeLinter/SublimeLinter3": {
+		"id": "sublime-text-sublimelinter3",
+		"description": "Linting framework for Sublime Text 3",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"editor",
+			"linting",
+			"lint"
+		]
+	},
+	"https://github.com/roadhump/SublimeLinter-eslint": {
+		"id": "sublime-text-sublimelinter-eslint",
+		"description": "Plugin for SublimeLinter3 which provides an interface to ESLint.",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"editor",
+			"plugin",
+			"linting",
+			"lint",
+			"eslint",
+			"javascript",
+			"ecmascript"
+		]
+	},
+	"https://github.com/SublimeLinter/SublimeLinter-annotations": {
+		"id": "sublime-text-sublimelinter-annotations",
+		"description": "Plugin for SublimeLinter3 which marks annotations such as TODO, FIXME, etc.",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"plugin",
+			"linting",
+			"lint"
+		]
+	},
+	"https://github.com/SublimeLinter/SublimeLinter-json": {
+		"id": "sublime-text-sublimelinter-json",
+		"description": "Plugin for SublimeLinter3 which lints JSON",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"plugin",
+			"json"
+		]
+	},
+	"http://editorconfig.org/": {
+		"id": "editorconfig",
+		"description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
+		"short": "",
+		"keywords": [
+			"configuration",
+			"editor",
+			"ide"
+		]
+	},
+	"https://github.com/sindresorhus/editorconfig-sublime": {
+		"id": "sublime-text-editorconfig",
+		"description": "Sublime Text package for using EditorConfig.",
+		"short": "",
+		"keywords": [
+			"configuration",
+			"editor",
+			"sublime",
+			"text"
+		]
+	},
+	"https://github.com/dzhibas/SublimePrettyJson": {
+		"id": "sublime-text-pretty-json",
+		"description": "Sublime Text package for pretty printing and minifying JSON.",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"editor",
+			"json"
+		]
+	},
+	"https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
+		"id": "sublime-text-sidebar-enhancements",
+		"description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
+		"short": "",
+		"keywords": [
+			"sublime",
+			"text",
+			"editor",
+			"sidebar"
+		]
+	},
+	"http://eslint.org/": {
+		"id": "eslint",
+		"description": "A pluggable linting utility for JavaScript. Official website.",
+		"short": "",
+		"keywords": [
+			"lint",
+			"linting",
+			"linter",
+			"javascript",
+			"ecmascript"
+		]
 	}
 }
