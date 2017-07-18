@@ -104,7 +104,7 @@
 
 <div class="image" align="center">
     <a title="WebAssembly and the Future of the Web" href="https://skillsmatter.com/skillscasts/10363-webassembly-and-the-future-of-the-web">
-        <img src="" alt="WebAssembly and the Future of the Web at FullStack, London 2017">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/2d1aeeeb95d13ec49540a11457a6eba2ed920eaa/docs/assets/talks/fullstack_london_2017_athan_reines_3.png" alt="WebAssembly and the Future of the Web at FullStack, London 2017">
     </a>
     <br>
 </div>
