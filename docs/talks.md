@@ -98,6 +98,17 @@
     <br>
 </div>
 
+### WebAssembly and the Future of the Web
+
+> [Athan Reines][kgryte], FullStack, July 2017
+
+<div class="image" align="center">
+    <a title="WebAssembly and the Future of the Web" href="https://skillsmatter.com/skillscasts/10363-webassembly-and-the-future-of-the-web">
+        <img src="" alt="WebAssembly and the Future of the Web at FullStack, London 2017">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
