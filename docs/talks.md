@@ -87,6 +87,17 @@
     <br>
 </div>
 
+### Node.js Add-ons for High Performance Numeric Computing
+
+> [Athan Reines][kgryte], FullStack, July 2017
+
+<div class="image" align="center">
+    <a title="Node.js Add-ons for High Performance Numeric Computing" href="https://skillsmatter.com/skillscasts/10362-node-js-add-ons-for-high-performance-numeric-computing">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3099f90f6c7265c43e6dcde97fa41ee6d8219614/docs/assets/talks/fullstack_london_2017_athan_reines.png" alt="Node.js Add-ons for High Performance Numeric Computing at FullStack, London 2017">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
