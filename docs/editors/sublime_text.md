@@ -31,79 +31,58 @@ $ subl .
 
 ## Packages
 
-### Package Control
+* __Package Control__: [package manager][sublime-text-package-control] which helps in finding, installing, and keeping installed packages up-to-date. This __should__ be installed prior to installing any of the packages subsequently listed here.
 
-[Package Control][sublime-text-package-control] is a [Sublime Text][sublime-text] package manager which helps in finding, installing, and keeping installed packages up-to-date. This __should__ be installed prior to installing any of the packages subsequently listed here.
+* __EditorConfig__: [package][sublime-text-editorconfig] for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
 
+* __Pretty JSON__: [package][sublime-text-pretty-json] for pretty printing and minifying [JSON][json].
 
-### EditorConfig
+* __Sidebar Enhancements__: [package][sublime-text-sidebar-enhancements] which provides enhancements for working with files and folders in the Sublime Text sidebar.
 
-Sublime Text package for using [EditorConfig][sublime-text-editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
+* __SublimeLinter3__: [package][sublime-text-sublimelinter3] which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does __not__ contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
+  - __SublimeLinter-eslint__: [plugin][sublime-text-sublimelinter-eslint] which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files.
 
-### Pretty JSON
+    ``` text
+            ...
+            "linters": {
+                "eslint": {
+                    "@disable": false,
+                    "args": [
+                        "--ignore-path",
+                        "/absolute/file/path/to/stdlib/etc/eslint/.eslintignore",
+                        "--config",
+                        "/absolute/file/path/to/stdlib/etc/eslint/.eslintrc.js"
+                    ],
+                    "excludes": []
+                }
+            ...
+    ```
 
-Sublime Text [package][sublime-text-pretty-json] for pretty printing and minifying [JSON][json].
+  - __SublimeLinter-annotations__: [plugin][sublime-text-sublimelinter-annotations] which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to mark project annotations.
 
+    ``` text
+            ...
+            "linters": {
+                "annotations": {
+                    "@disable": false,
+                    "args": [],
+                    "errors": [
+                        "FIXME",
+                        "HACK"
+                    ],
+                    "excludes": [],
+                    "warnings": [
+                        "NOTE",
+                        "OPTIMIZE",
+                        "TODO",
+                        "WARNING"
+                    ]
+                }
+            ...
+    ```
 
-### Sidebar Enhancements
-
-Sublime Text [package][sublime-text-sidebar-enhancements] for provides enhancements for working with files and folders in the Sublime Text sidebar.
-
-
-### SublimeLinter3
-
-[SublimeLinter3][sublime-text-sublimelinter3] provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does __not__ contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
-
-
-#### SublimeLinter-eslint
-
-[Plugin][sublime-text-sublimelinter-eslint] for [SublimeLinter3][sublime-text-sublimelinter3] which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files.
-
-``` text
-        ...
-        "linters": {
-            "eslint": {
-                "@disable": false,
-                "args": [
-                    "--ignore-path",
-                    "/absolute/file/path/to/stdlib/etc/eslint/.eslintignore",
-                    "--config",
-                    "/absolute/file/path/to/stdlib/etc/eslint/.eslintrc.js"
-                ],
-                "excludes": []
-            }
-        ...
-```
-
-#### SublimeLinter-annotations
-
-[Plugin][sublime-text-sublimelinter-annotations] for [SublimeLinter3][sublime-text-sublimelinter3] which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to mark project annotations.
-
-``` text
-        ...
-        "linters": {
-            "annotations": {
-                "@disable": false,
-                "args": [],
-                "errors": [
-                    "FIXME",
-                    "HACK"
-                ],
-                "excludes": [],
-                "warnings": [
-                    "NOTE",
-                    "OPTIMIZE",
-                    "TODO",
-                    "WARNING"
-                ]
-            }
-        ...
-```
-
-#### SublimeLinter-json
-
-[Plugin][sublime-text-sublimelinter-json] for [SublimeLinter3][sublime-text-sublimelinter3] which lints [JSON][json].
+  - __SublimeLinter-json__: [plugin][sublime-text-sublimelinter-json] which lints [JSON][json].
 
 
 <section class="links">
@@ -121,6 +100,7 @@ Sublime Text [package][sublime-text-sidebar-enhancements] for provides enhanceme
 
 [eslint]: http://eslint.org/
 [json]: http://www.json.org/
+[editorconfig]: http://editorconfig.org/
 
 </section>
 
