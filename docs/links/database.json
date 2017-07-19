@@ -1,198 +1,214 @@
 {
-	"http://www.json.org/": {
-		"id": "json",
-		"description": "The official JSON website.",
-		"short": "",
-		"keywords": [
-			"json"
-		]
-	},
-	"https://en.wikipedia.org/wiki/Percent-encoding": {
-		"id": "percent-encoding",
-		"description": "Wikipedia entry describing percent-encoding.",
-		"short": "",
-		"keywords": [
-			"url",
-			"uri",
-			"encode",
-			"encoding",
-			"percent-encoding",
-			"url-encoding"
-		]
-	},
-	"https://www.w3.org/Graphics/SVG/": {
-		"id": "svg",
-		"description": "The site of the official W3C SVG working group.",
-		"short": "",
-		"keywords": [
-			"svg",
-			"scalable",
-			"vector",
-			"graphics"
-		]
-	},
-	"https://github.com/Matt-Esch/virtual-dom": {
-		"id": "virtual-dom",
-		"description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
-		"short": "",
-		"keywords": [
-			"vdom",
-			"virtual",
-			"dom"
-		]
-	},
-	"https://www.sublimetext.com/": {
-		"id": "sublime-text",
-		"description": "Sublime Text text editor. Official website.",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"editor"
-		]
-	},
-	"https://packagecontrol.io": {
-		"id": "sublime-text-package-control",
-		"description": "Package manager for Sublime Text",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"editor",
-			"package",
-			"pkg",
-			"manager"
-		]
-	},
-	"https://github.com/SublimeLinter/SublimeLinter3": {
-		"id": "sublime-text-sublimelinter3",
-		"description": "Linting framework for Sublime Text 3",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"editor",
-			"linting",
-			"lint"
-		]
-	},
-	"https://github.com/roadhump/SublimeLinter-eslint": {
-		"id": "sublime-text-sublimelinter-eslint",
-		"description": "Plugin for SublimeLinter3 which provides an interface to ESLint.",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"editor",
-			"plugin",
-			"linting",
-			"lint",
-			"eslint",
-			"javascript",
-			"ecmascript"
-		]
-	},
-	"https://github.com/SublimeLinter/SublimeLinter-annotations": {
-		"id": "sublime-text-sublimelinter-annotations",
-		"description": "Plugin for SublimeLinter3 which marks annotations such as TODO, FIXME, etc.",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"plugin",
-			"linting",
-			"lint"
-		]
-	},
-	"https://github.com/SublimeLinter/SublimeLinter-json": {
-		"id": "sublime-text-sublimelinter-json",
-		"description": "Plugin for SublimeLinter3 which lints JSON",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"plugin",
-			"json"
-		]
-	},
-	"http://editorconfig.org/": {
-		"id": "editorconfig",
-		"description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
-		"short": "",
-		"keywords": [
-			"configuration",
-			"editor",
-			"ide"
-		]
-	},
-	"https://github.com/sindresorhus/editorconfig-sublime": {
-		"id": "sublime-text-editorconfig",
-		"description": "Sublime Text package for using EditorConfig.",
-		"short": "",
-		"keywords": [
-			"configuration",
-			"editor",
-			"sublime",
-			"text"
-		]
-	},
-	"https://github.com/dzhibas/SublimePrettyJson": {
-		"id": "sublime-text-pretty-json",
-		"description": "Sublime Text package for pretty printing and minifying JSON.",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"editor",
-			"json"
-		]
-	},
-	"https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
-		"id": "sublime-text-sidebar-enhancements",
-		"description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
-		"short": "",
-		"keywords": [
-			"sublime",
-			"text",
-			"editor",
-			"sidebar"
-		]
-	},
-	"http://eslint.org/": {
-		"id": "eslint",
-		"description": "A pluggable linting utility for JavaScript. Official website.",
-		"short": "",
-		"keywords": [
-			"lint",
-			"linting",
-			"linter",
-			"javascript",
-			"ecmascript"
-		]
-	},
-	"https://nodejs.org/api/addons.html": {
-		"id": "node-js-add-ons",
-		"description": "Node.js documentation for native add-ons.",
-		"short": "",
-		"keywords": [
-			"node.js",
-			"node",
-			"native",
-			"add-ons",
-			"addons",
-			"bindings",
-			"binding"
-		]
-	},
-	"http://webassembly.org/": {
-		"id": "webassembly",
-		"description": "Official website for WebAssembly, a portable compilation target for the Web.",
-		"short": "",
-		"keywords": [
-			"webassembly",
-			"wasm",
-			"asm",
-			"binary"
-		]
-	}
+  "http://editorconfig.org/": {
+    "id": "editorconfig",
+    "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
+    "short": "",
+    "keywords": [
+      "configuration",
+      "editor",
+      "ide"
+    ]
+  },
+  "http://eslint.org/": {
+    "id": "eslint",
+    "description": "A pluggable linting utility for JavaScript. Official website.",
+    "short": "",
+    "keywords": [
+      "lint",
+      "linting",
+      "linter",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "http://stdlib.io": {
+    "id": "stdlib",
+    "description": "A standard library for JavaScript and Node.js.",
+    "short": "",
+    "keywords": [
+      "standard",
+      "library",
+      "lib",
+      "stdlib",
+      "javascript",
+      "node.js",
+      "node",
+      "node-js",
+      "nodejs"
+    ]
+  },
+  "http://webassembly.org/": {
+    "id": "webassembly",
+    "description": "Official website for WebAssembly, a portable compilation target for the Web.",
+    "short": "",
+    "keywords": [
+      "webassembly",
+      "wasm",
+      "asm",
+      "binary"
+    ]
+  },
+  "http://www.json.org/": {
+    "id": "json",
+    "description": "The official JSON website.",
+    "short": "",
+    "keywords": [
+      "json"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Percent-encoding": {
+    "id": "percent-encoding",
+    "description": "Wikipedia entry describing percent-encoding.",
+    "short": "",
+    "keywords": [
+      "url",
+      "uri",
+      "encode",
+      "encoding",
+      "percent-encoding",
+      "url-encoding"
+    ]
+  },
+  "https://github.com/Matt-Esch/virtual-dom": {
+    "id": "virtual-dom",
+    "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
+    "short": "",
+    "keywords": [
+      "vdom",
+      "virtual",
+      "dom"
+    ]
+  },
+  "https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
+    "id": "sublime-text-sidebar-enhancements",
+    "description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor",
+      "sidebar"
+    ]
+  },
+  "https://github.com/SublimeLinter/SublimeLinter-annotations": {
+    "id": "sublime-text-sublimelinter-annotations",
+    "description": "Plugin for SublimeLinter3 which marks annotations such as TODO, FIXME, etc.",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "plugin",
+      "linting",
+      "lint"
+    ]
+  },
+  "https://github.com/SublimeLinter/SublimeLinter-json": {
+    "id": "sublime-text-sublimelinter-json",
+    "description": "Plugin for SublimeLinter3 which lints JSON",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "plugin",
+      "json"
+    ]
+  },
+  "https://github.com/SublimeLinter/SublimeLinter3": {
+    "id": "sublime-text-sublimelinter3",
+    "description": "Linting framework for Sublime Text 3",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor",
+      "linting",
+      "lint"
+    ]
+  },
+  "https://github.com/dzhibas/SublimePrettyJson": {
+    "id": "sublime-text-pretty-json",
+    "description": "Sublime Text package for pretty printing and minifying JSON.",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor",
+      "json"
+    ]
+  },
+  "https://github.com/roadhump/SublimeLinter-eslint": {
+    "id": "sublime-text-sublimelinter-eslint",
+    "description": "Plugin for SublimeLinter3 which provides an interface to ESLint.",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor",
+      "plugin",
+      "linting",
+      "lint",
+      "eslint",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://github.com/sindresorhus/editorconfig-sublime": {
+    "id": "sublime-text-editorconfig",
+    "description": "Sublime Text package for using EditorConfig.",
+    "short": "",
+    "keywords": [
+      "configuration",
+      "editor",
+      "sublime",
+      "text"
+    ]
+  },
+  "https://nodejs.org/api/addons.html": {
+    "id": "node-js-add-ons",
+    "description": "Node.js documentation for native add-ons.",
+    "short": "",
+    "keywords": [
+      "node.js",
+      "node",
+      "native",
+      "add-ons",
+      "addons",
+      "bindings",
+      "binding"
+    ]
+  },
+  "https://packagecontrol.io": {
+    "id": "sublime-text-package-control",
+    "description": "Package manager for Sublime Text",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor",
+      "package",
+      "pkg",
+      "manager"
+    ]
+  },
+  "https://www.sublimetext.com/": {
+    "id": "sublime-text",
+    "description": "Sublime Text text editor. Official website.",
+    "short": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "editor"
+    ]
+  },
+  "https://www.w3.org/Graphics/SVG/": {
+    "id": "svg",
+    "description": "The site of the official W3C SVG working group.",
+    "short": "",
+    "keywords": [
+      "svg",
+      "scalable",
+      "vector",
+      "graphics"
+    ]
+  }
 }
