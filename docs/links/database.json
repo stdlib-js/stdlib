@@ -240,6 +240,21 @@
       "manager"
     ]
   },
+  "https://travis-ci.org/": {
+    "id": "travis-ci",
+    "description": "A continuous integration service for GitHub projects.",
+    "short": "",
+    "keywords": [
+      "continuous",
+      "integration",
+      "ci",
+      "build",
+      "github",
+      "linux",
+      "macos",
+      "mac"
+    ]
+  },
   "https://www.appveyor.com/": {
     "id": "appveyor",
     "description": "A continuous integration service for Windows.",
