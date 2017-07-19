@@ -96,6 +96,30 @@
       "probability"
     ]
   },
+  "https://circleci.com/": {
+    "id": "circleci",
+    "description": "A continuous integration platform for Linux and MacOS.",
+    "short": "",
+    "keywords": [
+      "continuous",
+      "integration",
+      "ci",
+      "build",
+      "linux",
+      "macos",
+      "mac"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/AWK": {
+    "id": "awk",
+    "description": "Wikipedia for the AWK programming language.",
+    "short": "",
+    "keywords": [
+      "awk",
+      "data processing",
+      "command-line"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
@@ -215,6 +239,20 @@
       "text"
     ]
   },
+  "https://github.com/substack/node-browserify": {
+    "id": "browserify",
+    "description": "GitHub repository for browserify, a bundler for requiring Node.js modules in browser environments.",
+    "short": "",
+    "keywords": [
+      "browserify",
+      "bundler",
+      "browser",
+      "require",
+      "nodejs",
+      "node.js",
+      "node-js"
+    ]
+  },
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
@@ -240,6 +278,33 @@
       "package",
       "pkg",
       "manager"
+    ]
+  },
+  "https://travis-ci.org/": {
+    "id": "travis-ci",
+    "description": "A continuous integration service for GitHub projects.",
+    "short": "",
+    "keywords": [
+      "continuous",
+      "integration",
+      "ci",
+      "build",
+      "github",
+      "linux",
+      "macos",
+      "mac"
+    ]
+  },
+  "https://www.appveyor.com/": {
+    "id": "appveyor",
+    "description": "A continuous integration service for Windows.",
+    "short": "",
+    "keywords": [
+      "ci",
+      "continuous",
+      "integration",
+      "windows",
+      "build"
     ]
   },
   "https://www.sublimetext.com/": {
