@@ -218,6 +218,21 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Quantile_function": {
+    "id": "quantile-function",
+    "description": "Wikipedia entry for the quantile function of a probability distribution.",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "cdf",
+      "inverse",
+      "icdf",
+      "probability"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
