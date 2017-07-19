@@ -2,10 +2,10 @@
 # VARIABLES #
 
 # Define the command for returning a citation reference:
-INSERT_LINK ?= $(NODE) $(TOOLS_DIR)/links/create/bin/cli
+LINKS_INSERT ?= $(NODE) $(TOOLS_DIR)/links/create/bin/cli
 
 # Define the command-line options to be used when executing the command:
-INSERT_LINK_FLAGS ?= \
+LINKS_INSERT_FLAGS ?= \
 	--database $(ROOT_DIR)/docs/links/database.json
 
 
@@ -16,6 +16,6 @@ INSERT_LINK_FLAGS ?= \
 # This target creates a link entry in the link database.
 
 links-insert: $(NODE_MODULES)
-	$(QUIET) $(INSERT_LINK) $(INSERT_LINK_FLAGS)
+	$(QUIET) $(LINKS_INSERT) $(LINKS_INSERT_FLAGS)
 
 .PHONY: links-insert
