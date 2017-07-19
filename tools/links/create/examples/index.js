@@ -3,7 +3,7 @@
 var create = require( './../lib' );
 
 var opts = {
-	'uri': 'http://stdlib.io',
+	'uri': 'http://stdlib.io/',
 	'id': 'stdlib',
 	'description': 'A standard library for JavaScript and Node.js.',
 	'keywords': [
