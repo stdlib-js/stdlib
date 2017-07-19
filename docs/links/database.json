@@ -177,6 +177,20 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mode_%28statistics%29": {
+    "id": "mode",
+    "description": "Wikipedia entry for the mode.",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "dist",
+      "location",
+      "center",
+      "probability"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
     "id": "percent-encoding",
     "description": "Wikipedia entry describing percent-encoding.",
@@ -188,6 +202,20 @@
       "encoding",
       "percent-encoding",
       "url-encoding"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Probability_density_function": {
+    "id": "pdf",
+    "description": "Wikipedia entry for the probability density function (PDF).",
+    "short": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "distribution",
+      "dist",
+      "pdf",
+      "density",
+      "probability"
     ]
   },
   "https://github.com/Matt-Esch/virtual-dom": {
