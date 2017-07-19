@@ -6,7 +6,7 @@
 
 <section class="intro">
 
-This directory contains checksums for vendor dependencies.
+This directory contains checksums for verifying vendor dependencies.
 
 </section>
 
