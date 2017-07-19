@@ -264,6 +264,22 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Variance": {
+    "id": "variance",
+    "description": "Wikipedia entry for the variance.",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "variance",
+      "spread",
+      "dispersion",
+      "deviation",
+      "probability"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
