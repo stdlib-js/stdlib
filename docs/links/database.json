@@ -56,6 +56,18 @@
       "json"
     ]
   },
+  "https://en.wikipedia.org/wiki/Marginal_distribution": {
+    "id": "marginal-distribution",
+    "description": "Wikipedia entry describing marginal distributions.",
+    "short": "",
+    "keywords": [
+      "marginal",
+      "distribution",
+      "dist",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
     "id": "percent-encoding",
     "description": "Wikipedia entry describing percent-encoding.",
