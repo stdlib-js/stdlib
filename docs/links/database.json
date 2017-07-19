@@ -71,6 +71,22 @@
       "binary"
     ]
   },
+  "http://www.bibtex.org/": {
+    "id": "bibtex",
+    "description": "The official BibTeX website.",
+    "short_url": "",
+    "keywords": [
+      "latex",
+      "tex",
+      "bibtex",
+      "bib",
+      "bibliography",
+      "references",
+      "refs",
+      "citations",
+      "cite"
+    ]
+  },
   "http://www.json.org/": {
     "id": "json",
     "description": "The official JSON website.",
@@ -225,6 +241,21 @@
       "encoding",
       "percent-encoding",
       "url-encoding"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
+    "id": "png",
+    "description": "Wikipedia entry for Portable Network Graphics (PNG), a raster graphics file format that supports lossless data compression.",
+    "short_url": "",
+    "keywords": [
+      "png",
+      "portable",
+      "network",
+      "grahics",
+      "images",
+      "img",
+      "format",
+      "fmt"
     ]
   },
   "https://en.wikipedia.org/wiki/Probability_density_function": {
