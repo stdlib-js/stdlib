@@ -2,7 +2,7 @@
 
 > [CircleCI][circleci] scripts.
 
-This directory contains scripts for managing the [CircleCI][circleci] build lifecycle.
+This directory contains scripts for managing the build lifecycle on [CircleCI][circleci].
 
 
 <section class="links">

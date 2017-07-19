@@ -2,7 +2,7 @@
 
 > [Appveyor][appveyor] scripts.
 
-This directory contains scripts for managing the [Appveyor][appveyor] (a continuous integration service for Windows) build lifecycle.
+This directory contains scripts for managing the build lifecycle on [Appveyor][appveyor], a continuous integration service for Windows.
 
 
 <section class="links">
