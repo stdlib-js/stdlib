@@ -82,7 +82,7 @@
   },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
     "id": "arcsine",
-    "description": "Wikipedia entry for the arcsine distribution",
+    "description": "Wikipedia entry for the arcsine distribution.",
     "short": "",
     "keywords": [
       "distribution",
@@ -96,7 +96,7 @@
   },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
-    "description": "Wikipedia entry for the cumulative distribution function",
+    "description": "Wikipedia entry for the cumulative distribution function.",
     "short": "",
     "keywords": [
       "cdf",
@@ -110,7 +110,7 @@
   },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
     "id": "entropy",
-    "description": "Wikipedia entry for the concept of entropy from information theory",
+    "description": "Wikipedia entry for the concept of entropy from information theory.",
     "short": "",
     "keywords": [
       "entropy",
@@ -122,7 +122,7 @@
   },
   "https://en.wikipedia.org/wiki/Expected_value": {
     "id": "expected-value",
-    "description": "Wikipedia entry for the expected value of a probability distribution",
+    "description": "Wikipedia entry for the expected value of a probability distribution.",
     "short": "",
     "keywords": [
       "distribution",
@@ -137,7 +137,7 @@
   },
   "https://en.wikipedia.org/wiki/Kurtosis": {
     "id": "kurtosis",
-    "description": "Wikipedia entry for the excess kurtosis of a probability distribution",
+    "description": "Wikipedia entry for the excess kurtosis of a probability distribution.",
     "short": "",
     "keywords": [
       "distribution",
@@ -160,6 +160,21 @@
       "dist",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Median": {
+    "id": "median",
+    "description": "Wikipedia entry for the median.",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "location",
+      "center",
+      "median",
+      "probability"
     ]
   },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
