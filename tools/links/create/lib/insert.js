@@ -55,7 +55,7 @@ function insert( db, link ) {
 			out[ key ] = {
 				'id': link.id,
 				'description': link.description,
-				'short': '',
+				'short_url': '',
 				'keywords': ( link.keywords ) ? link.keywords : []
 			};
 		} else {
