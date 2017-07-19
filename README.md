@@ -60,7 +60,7 @@ Running stdlib __requires__ the following prerequisites:
 Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
 
 * [GNU make][gnu-make]: development utility and task runner
-* [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
+* [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 * [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 
 While __not__ required to run stdlib, the following dependencies are __required__ for automatically downloading vendor libraries:
