@@ -2,7 +2,7 @@
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "configuration",
       "editor",
@@ -12,7 +12,7 @@
   "http://eslint.org/": {
     "id": "eslint",
     "description": "A pluggable linting utility for JavaScript. Official website.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "lint",
       "linting",
@@ -24,7 +24,7 @@
   "http://stdlib.io/": {
     "id": "stdlib",
     "description": "A standard library for JavaScript and Node.js.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "standard",
       "library",
@@ -40,7 +40,7 @@
   "http://usejsdoc.org/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "jsdoc",
       "documentation",
@@ -51,7 +51,7 @@
   "http://usejsdoc.org/tags-typedef.html": {
     "id": "jsdoc-typedef",
     "description": "JSDoc documentation for defining custom types (type definitions).",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "jsdoc",
       "documentation",
@@ -63,7 +63,7 @@
   "http://webassembly.org/": {
     "id": "webassembly",
     "description": "Official website for WebAssembly, a portable compilation target for the Web.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "webassembly",
       "wasm",
@@ -74,7 +74,7 @@
   "http://www.json.org/": {
     "id": "json",
     "description": "The official JSON website.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "json"
     ]
@@ -82,7 +82,7 @@
   "https://circleci.com/": {
     "id": "circleci",
     "description": "A continuous integration platform for Linux and MacOS.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "continuous",
       "integration",
@@ -96,7 +96,7 @@
   "https://en.wikipedia.org/wiki/AWK": {
     "id": "awk",
     "description": "Wikipedia entry for the AWK programming language.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "awk",
       "data processing",
@@ -106,7 +106,7 @@
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
     "id": "arcsine",
     "description": "Wikipedia entry for the arcsine distribution.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -120,7 +120,7 @@
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "cdf",
       "cumulative",
@@ -134,7 +134,7 @@
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
     "id": "entropy",
     "description": "Wikipedia entry for the concept of entropy from information theory.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "entropy",
       "shannon",
@@ -146,7 +146,7 @@
   "https://en.wikipedia.org/wiki/Expected_value": {
     "id": "expected-value",
     "description": "Wikipedia entry for the expected value of a probability distribution.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -161,7 +161,7 @@
   "https://en.wikipedia.org/wiki/Kurtosis": {
     "id": "kurtosis",
     "description": "Wikipedia entry for the excess kurtosis of a probability distribution.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -176,7 +176,7 @@
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "marginal",
       "distribution",
@@ -188,7 +188,7 @@
   "https://en.wikipedia.org/wiki/Median": {
     "id": "median",
     "description": "Wikipedia entry for the median.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -203,7 +203,7 @@
   "https://en.wikipedia.org/wiki/Mode_%28statistics%29": {
     "id": "mode",
     "description": "Wikipedia entry for the mode.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -217,7 +217,7 @@
   "https://en.wikipedia.org/wiki/Percent-encoding": {
     "id": "percent-encoding",
     "description": "Wikipedia entry describing percent-encoding.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "url",
       "uri",
@@ -230,7 +230,7 @@
   "https://en.wikipedia.org/wiki/Probability_density_function": {
     "id": "pdf",
     "description": "Wikipedia entry for the probability density function (PDF).",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "statistics",
       "stats",
@@ -244,7 +244,7 @@
   "https://en.wikipedia.org/wiki/Quantile_function": {
     "id": "quantile-function",
     "description": "Wikipedia entry for the quantile function of a probability distribution.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -259,7 +259,7 @@
   "https://en.wikipedia.org/wiki/Skewness": {
     "id": "skewness",
     "description": "Wikipedia entry for the skewness.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -271,7 +271,7 @@
   "https://en.wikipedia.org/wiki/Standard_deviation": {
     "id": "stdev",
     "description": "Wikipedia entry for the standard deviation.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -290,7 +290,7 @@
   "https://en.wikipedia.org/wiki/Variance": {
     "id": "variance",
     "description": "Wikipedia entry for the variance.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "distribution",
       "dist",
@@ -306,7 +306,7 @@
   "https://git-scm.com/": {
     "id": "git",
     "description": "The official website for Git, a free and open-source distributed version control system.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "git",
       "vcs",
@@ -318,7 +318,7 @@
   "https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks": {
     "id": "git-hooks",
     "description": "Git documentation describing Git hooks, which are scripts triggered when certain actions occur.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "git",
       "hooks",
@@ -328,7 +328,7 @@
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "vdom",
       "virtual",
@@ -338,7 +338,7 @@
   "https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
     "id": "sublime-text-sidebar-enhancements",
     "description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -349,7 +349,7 @@
   "https://github.com/SublimeLinter/SublimeLinter-annotations": {
     "id": "sublime-text-sublimelinter-annotations",
     "description": "Plugin for SublimeLinter3 which marks annotations such as TODO, FIXME, etc.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -361,7 +361,7 @@
   "https://github.com/SublimeLinter/SublimeLinter-json": {
     "id": "sublime-text-sublimelinter-json",
     "description": "Plugin for SublimeLinter3 which lints JSON",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -372,7 +372,7 @@
   "https://github.com/SublimeLinter/SublimeLinter3": {
     "id": "sublime-text-sublimelinter3",
     "description": "Linting framework for Sublime Text 3",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -384,7 +384,7 @@
   "https://github.com/dzhibas/SublimePrettyJson": {
     "id": "sublime-text-pretty-json",
     "description": "Sublime Text package for pretty printing and minifying JSON.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -395,7 +395,7 @@
   "https://github.com/roadhump/SublimeLinter-eslint": {
     "id": "sublime-text-sublimelinter-eslint",
     "description": "Plugin for SublimeLinter3 which provides an interface to ESLint.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -411,7 +411,7 @@
   "https://github.com/sindresorhus/editorconfig-sublime": {
     "id": "sublime-text-editorconfig",
     "description": "Sublime Text package for using EditorConfig.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "configuration",
       "editor",
@@ -422,7 +422,7 @@
   "https://github.com/substack/node-browserify": {
     "id": "browserify",
     "description": "GitHub repository for browserify, a bundler for requiring Node.js modules in browser environments.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "browserify",
       "bundler",
@@ -436,7 +436,7 @@
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "node.js",
       "node",
@@ -450,7 +450,7 @@
   "https://packagecontrol.io/": {
     "id": "sublime-text-package-control",
     "description": "Package manager for Sublime Text",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -463,7 +463,7 @@
   "https://travis-ci.org/": {
     "id": "travis-ci",
     "description": "A continuous integration service for GitHub projects.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "continuous",
       "integration",
@@ -478,7 +478,7 @@
   "https://www.appveyor.com/": {
     "id": "appveyor",
     "description": "A continuous integration service for Windows.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "ci",
       "continuous",
@@ -490,7 +490,7 @@
   "https://www.sublimetext.com/": {
     "id": "sublime-text",
     "description": "Sublime Text text editor. Official website.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "sublime",
       "text",
@@ -500,7 +500,7 @@
   "https://www.w3.org/Graphics/SVG/": {
     "id": "svg",
     "description": "The site of the official W3C SVG working group.",
-    "short": "",
+    "short_url": "",
     "keywords": [
       "svg",
       "scalable",
