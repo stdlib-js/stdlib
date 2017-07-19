@@ -540,6 +540,18 @@
       "node-js"
     ]
   },
+  "https://github.com/wooorm/remark": {
+    "id": "remark",
+    "description": "A Markdown processor powered by plugins.",
+    "short_url": "",
+    "keywords": [
+      "remark",
+      "lint",
+      "linter",
+      "linting",
+      "markdown"
+    ]
+  },
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
