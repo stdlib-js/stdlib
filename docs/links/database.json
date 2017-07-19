@@ -303,6 +303,18 @@
       "probability"
     ]
   },
+  "https://git-scm.com/": {
+    "id": "git",
+    "description": "The official website for Git, a free and open-source distributed version control system.",
+    "short": "",
+    "keywords": [
+      "git",
+      "vcs",
+      "version",
+      "control",
+      "system"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
