@@ -56,6 +56,46 @@
       "json"
     ]
   },
+  "https://en.wikipedia.org/wiki/Arcsine_distribution": {
+    "id": "arcsine",
+    "description": "Wikipedia entry for the arcsine distribution",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "continuous",
+      "arcsine",
+      "probability",
+      "statistics",
+      "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
+    "id": "cdf",
+    "description": "Wikipedia entry for the cumulative distribution function",
+    "short": "",
+    "keywords": [
+      "cdf",
+      "cumulative",
+      "distribution",
+      "dist",
+      "probability",
+      "statistics",
+      "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
+    "id": "entropy",
+    "description": "Wikipedia entry for the concept of entropy from information theory",
+    "short": "",
+    "keywords": [
+      "entropy",
+      "shannon",
+      "information",
+      "random",
+      "probability"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
