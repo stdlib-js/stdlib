@@ -6,7 +6,7 @@
 
 <section class="intro">
 
-This directory contains tests for verifying vendor dependency installations.
+This directory contains tests for testing vendor dependency installations.
 
 </section>
 
