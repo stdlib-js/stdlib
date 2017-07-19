@@ -226,6 +226,18 @@
       "manager"
     ]
   },
+  "https://www.appveyor.com/": {
+    "id": "appveyor",
+    "description": "A continuous integration service for Windows.",
+    "short": "",
+    "keywords": [
+      "ci",
+      "continuous",
+      "integration",
+      "windows",
+      "build"
+    ]
+  },
   "https://www.sublimetext.com/": {
     "id": "sublime-text",
     "description": "Sublime Text text editor. Official website.",
