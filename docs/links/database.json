@@ -405,6 +405,19 @@
       "dom"
     ]
   },
+  "https://github.com/PyCQA/pycodestyle": {
+    "id": "pycodestyle",
+    "description": "Python style guide checker.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "lint",
+      "linter",
+      "linting",
+      "style",
+      "guide"
+    ]
+  },
   "https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
     "id": "sublime-text-sidebar-enhancements",
     "description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
