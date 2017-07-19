@@ -1,0 +1,211 @@
+#!/usr/bin/env node
+'use strict';
+
+// MODULES //
+
+var fs = require( 'fs' );
+var path = require( 'path' );
+var readline = require( 'readline' );
+var parseArgs = require( 'minimist' );
+var notifier = require( 'update-notifier' );
+var pkg = require( './../package.json' );
+var opts = require( './opts.json' );
+var main = require( './../lib' );
+
+
+// FUNCTIONS //
+
+/**
+* Performs initialization tasks.
+*
+* @private
+* @example
+* init();
+*/
+function init() {
+	var opts;
+
+	// Check if newer versions exist for this package:
+	opts = {
+		'pkg': pkg
+	};
+	notifier( opts ).notify();
+
+	// Set the process title to allow the process to be more easily identified:
+	process.title = pkg.name;
+	process.stdout.on( 'error', process.exit );
+} // end FUNCTION init()
+
+/**
+* Prints usage information.
+*
+* @private
+* @example
+* help();
+* // => '...'
+*/
+function help() {
+	var fpath = path.join( __dirname, 'usage.txt' );
+	fs.createReadStream( fpath )
+		.pipe( process.stdout )
+		.on( 'close', onClose );
+
+	function onClose() {
+		process.exit( 0 );
+	}
+} // end FUNCTION help()
+
+/**
+* Prints the package version.
+*
+* @private
+* @example
+* version();
+* // => '#.#.#'
+*/
+function version() {
+	var msg = pkg.version.toString()+'\n';
+	process.stdout.write( msg, 'utf8' );
+	process.exit( 0 );
+} // end FUNCTION version()
+
+/**
+* Callback invoked upon completion.
+*
+* @private
+* @param {Error} [error] - error object
+* @returns {void}
+*/
+function done( error ) {
+	if ( error ) {
+		console.error( error.message );
+		return process.exit( 1 );
+	}
+	console.log( 'Success' );
+	process.exit( 0 );
+} // end FUNCTION done()
+
+
+// VARIABLES //
+
+var args;
+var rl;
+
+
+// MAIN //
+
+init();
+
+// Parse command-line arguments:
+args = parseArgs( process.argv.slice( 2 ), opts );
+
+if ( args.help ) {
+	return help();
+}
+if ( args.version ) {
+	return version();
+}
+// If we are provided a URI, we assume we are provided other command-line arguments...
+if ( args._[ 0 ] ) {
+	opts = {
+		'uri': args._[ 0 ],
+		'id': args.id,
+		'description': args.desc
+	};
+	if ( args.keywords ) {
+		opts.keywords = args.keywords.split( ',' );
+	}
+	if ( args.database ) {
+		opts.database = args.database;
+	}
+	return main( opts, done );
+}
+// Provide a series of prompts for a user to provide arguments...
+rl = readline.createInterface({
+	'input': process.stdin,
+	'output': process.stdout
+});
+rl.on( 'close', onClose );
+rl.on( 'SIGINT', onSIGINT );
+
+opts = {};
+console.log( '\nPlease provide the following information: \n' );
+rl.question( 'URI: ', uri );
+
+/**
+* Callback invoked upon receiving a URI.
+*
+* @private
+* @param {string} answer - user input
+*/
+function uri( answer ) {
+	opts.uri = answer;
+	rl.question( 'unique identifier (id): ', id );
+} // end FUNCTION uri()
+
+/**
+* Callback invoked upon receiving a unique identifier.
+*
+* @private
+* @param {string} answer - user input
+*/
+function id( answer ) {
+	opts.id = answer;
+	rl.question( 'description: ', desc );
+} // end FUNCTION id()
+
+/**
+* Callback invoked upon receiving a description.
+*
+* @private
+* @param {string} answer - user input
+*/
+function desc( answer ) {
+	opts.description = answer;
+	rl.question( 'keywords (optional): ', keywords );
+} // end FUNCTION desc()
+
+/**
+* Callback invoked upon receiving a list of keywords.
+*
+* @private
+* @param {string} answer - user input
+*/
+function keywords( answer ) {
+	if ( answer ) {
+		opts.keywords = answer.split( ',' );
+	}
+	rl.question( 'database filepath (optional): ', database );
+} // end FUNCTION keywords()
+
+/**
+* Callback invoked upon receiving a database filepath.
+*
+* @private
+* @param {string} answer - user input
+*/
+function database( answer ) {
+	if ( answer ) {
+		opts.database = answer;
+	}
+	rl.close();
+} // end FUNCTION database()
+
+/**
+* Callback invoked once a readline interface closes.
+*
+* @private
+*/
+function onClose() {
+	main( opts, done );
+} // end FUNCTION onClose()
+
+/**
+* Callback invoked upon receiving a SIGINT (e.g., ctrl+C).
+*
+* @private
+*/
+function onSIGINT() {
+	console.error( '' );
+	process.exit( 1 );
+} // end FUNCTION onSIGINT()
