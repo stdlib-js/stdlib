@@ -10,7 +10,7 @@
 * [Git][git]: version control.
 * [CMake][cmake]: cross-platform build environment. Once installed, be sure to the environment `PATH`.
 * [Python][python] general purpose language (version `2.7.x`).
-* Compiler toolchain, such as [gcc][gcc] (Linux), Xcode (Mac), or Visual Studio 2010 (Windows).
+* Compiler toolchain, such as [gcc][gcc] (Linux), Xcode (Mac; version `>=8.3.1`), or Visual Studio 2010 (Windows).
 
 To install the [Emscripten SDK][emscripten-sdk], run
 

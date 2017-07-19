@@ -57,7 +57,7 @@ Running stdlib __requires__ the following prerequisites:
 * [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 * [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
 
-Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using native bindings. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
+Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While __not__ required to run stdlib, as __every__ stdlib implementation has a JavaScript fallback, the following dependencies are __required__ for building native add-ons, including linking to BLAS and LAPACK libraries:
 
 * [GNU make][gnu-make]: development utility and task runner
 * [gcc &amp; g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=4.4` on OS X)
@@ -206,6 +206,9 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 [gfortran]: https://gcc.gnu.org/fortran/
 
 [openblas]: https://github.com/xianyi/OpenBLAS
+
+[webassembly]: http://webassembly.org/
+[node-js-add-ons]: https://nodejs.org/api/addons.html
 
 [browserify]: https://github.com/substack/node-browserify
 [webpack]: https://webpack.js.org/

@@ -36,6 +36,7 @@ Usage: make <cmd>
   make view-src-docs          View source documentation.
   make markdown-equations     Process Markdown equations.
   make citation-reference     Return a citation reference.
+  make links-insert           Create a link entry in the link database.
   make lint                   Lint files.
   make lint-markdown          Lint Markdown files.
   make lint-javascript        Lint JavaScript files.
