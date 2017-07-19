@@ -315,6 +315,16 @@
       "system"
     ]
   },
+  "https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks": {
+    "id": "git-hooks",
+    "description": "Git documentation describing Git hooks, which are scripts triggered when certain actions occur.",
+    "short": "",
+    "keywords": [
+      "git",
+      "hooks",
+      "scripts"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
