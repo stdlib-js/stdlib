@@ -109,6 +109,17 @@
       "mac"
     ]
   },
+  "https://creativecommons.org/publicdomain/zero/1.0": {
+    "id": "cc0",
+    "description": "Creative commons public domain dedication (CC0 1.0 Universal license). ",
+    "short_url": "",
+    "keywords": [
+      "license",
+      "public",
+      "domain",
+      "cc0"
+    ]
+  },
   "https://en.wikipedia.org/wiki/AWK": {
     "id": "awk",
     "description": "Wikipedia entry for the AWK programming language.",
