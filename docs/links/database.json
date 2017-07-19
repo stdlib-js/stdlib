@@ -56,6 +56,20 @@
       "json"
     ]
   },
+  "https://circleci.com/": {
+    "id": "circleci",
+    "description": "A continuous integration platform for Linux and MacOS.",
+    "short": "",
+    "keywords": [
+      "continuous",
+      "integration",
+      "ci",
+      "build",
+      "linux",
+      "macos",
+      "mac"
+    ]
+  },
   "https://en.wikipedia.org/wiki/AWK": {
     "id": "awk",
     "description": "Wikipedia for the AWK programming language.",
