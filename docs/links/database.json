@@ -37,6 +37,17 @@
       "nodejs"
     ]
   },
+  "http://usejsdoc.org/": {
+    "id": "jsdoc",
+    "description": "The official website of JSDoc.",
+    "short": "",
+    "keywords": [
+      "jsdoc",
+      "documentation",
+      "docs",
+      "javascript"
+    ]
+  },
   "http://webassembly.org/": {
     "id": "webassembly",
     "description": "Official website for WebAssembly, a portable compilation target for the Web.",
