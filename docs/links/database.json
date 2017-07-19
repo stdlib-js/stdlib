@@ -56,6 +56,30 @@
       "json"
     ]
   },
+  "https://circleci.com/": {
+    "id": "circleci",
+    "description": "A continuous integration platform for Linux and MacOS.",
+    "short": "",
+    "keywords": [
+      "continuous",
+      "integration",
+      "ci",
+      "build",
+      "linux",
+      "macos",
+      "mac"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/AWK": {
+    "id": "awk",
+    "description": "Wikipedia for the AWK programming language.",
+    "short": "",
+    "keywords": [
+      "awk",
+      "data processing",
+      "command-line"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
     "id": "arcsine",
     "description": "Wikipedia entry for the arcsine distribution",
@@ -96,28 +120,34 @@
       "probability"
     ]
   },
-  "https://circleci.com/": {
-    "id": "circleci",
-    "description": "A continuous integration platform for Linux and MacOS.",
+  "https://en.wikipedia.org/wiki/Expected_value": {
+    "id": "expected-value",
+    "description": "Wikipedia entry for the expected value of a probability distribution",
     "short": "",
     "keywords": [
-      "continuous",
-      "integration",
-      "ci",
-      "build",
-      "linux",
-      "macos",
-      "mac"
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "mean",
+      "average",
+      "avg",
+      "probability"
     ]
   },
-  "https://en.wikipedia.org/wiki/AWK": {
-    "id": "awk",
-    "description": "Wikipedia for the AWK programming language.",
+  "https://en.wikipedia.org/wiki/Kurtosis": {
+    "id": "kurtosis",
+    "description": "Wikipedia entry for the excess kurtosis of a probability distribution",
     "short": "",
     "keywords": [
-      "awk",
-      "data processing",
-      "command-line"
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "excess",
+      "kurtosis",
+      "tails",
+      "probability"
     ]
   },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
