@@ -19,6 +19,7 @@ include $(TOOLS_MAKE_LIB_DIR)/docs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/examples/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/install/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/licenses/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/links/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/markdown-equations/Makefile
