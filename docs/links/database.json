@@ -21,7 +21,7 @@
       "ecmascript"
     ]
   },
-  "http://stdlib.io": {
+  "http://stdlib.io/": {
     "id": "stdlib",
     "description": "A standard library for JavaScript and Node.js.",
     "short": "",
@@ -177,7 +177,7 @@
       "binding"
     ]
   },
-  "https://packagecontrol.io": {
+  "https://packagecontrol.io/": {
     "id": "sublime-text-package-control",
     "description": "Package manager for Sublime Text",
     "short": "",
