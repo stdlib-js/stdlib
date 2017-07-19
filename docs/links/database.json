@@ -594,6 +594,16 @@
       "build"
     ]
   },
+  "https://www.python.org/": {
+    "id": "python",
+    "description": "The official website of Python, a general purpose programming language.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "language",
+      "lang"
+    ]
+  },
   "https://www.sublimetext.com/": {
     "id": "sublime-text",
     "description": "Sublime Text text editor. Official website.",
