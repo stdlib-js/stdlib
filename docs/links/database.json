@@ -72,7 +72,7 @@
   },
   "https://en.wikipedia.org/wiki/AWK": {
     "id": "awk",
-    "description": "Wikipedia for the AWK programming language.",
+    "description": "Wikipedia entry for the AWK programming language.",
     "short": "",
     "keywords": [
       "awk",
