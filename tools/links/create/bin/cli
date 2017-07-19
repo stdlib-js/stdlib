@@ -137,9 +137,13 @@ rl.question( 'URI: ', uri );
 *
 * @private
 * @param {string} answer - user input
+* @returns {void}
 */
 function uri( answer ) {
 	opts.uri = answer;
+	if ( args.id ) {
+		return id( args.id );
+	}
 	rl.question( 'unique identifier (id): ', id );
 } // end FUNCTION uri()
 
@@ -148,9 +152,13 @@ function uri( answer ) {
 *
 * @private
 * @param {string} answer - user input
+* @returns {void}
 */
 function id( answer ) {
 	opts.id = answer;
+	if ( args.desc ) {
+		return desc( args.desc );
+	}
 	rl.question( 'description: ', desc );
 } // end FUNCTION id()
 
@@ -159,9 +167,13 @@ function id( answer ) {
 *
 * @private
 * @param {string} answer - user input
+* @returns {void}
 */
 function desc( answer ) {
 	opts.description = answer;
+	if ( args.keywords ) {
+		return keywords( args.keywords );
+	}
 	rl.question( 'keywords (optional): ', keywords );
 } // end FUNCTION desc()
 
@@ -170,10 +182,14 @@ function desc( answer ) {
 *
 * @private
 * @param {string} answer - user input
+* @returns {void}
 */
 function keywords( answer ) {
 	if ( answer ) {
 		opts.keywords = answer.split( ',' );
+	}
+	if ( args.database ) {
+		return database( args.database );
 	}
 	rl.question( 'database filepath (optional): ', database );
 } // end FUNCTION keywords()

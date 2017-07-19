@@ -214,7 +214,7 @@ Options:
 
 ### Notes
 
-* If invoked without command-line arguments, the CLI will interactively prompt for argument input.
+* If invoked without a URI, the CLI will interactively prompt for argument input.
 
 </section>
 
