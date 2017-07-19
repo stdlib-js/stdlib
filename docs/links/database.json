@@ -418,6 +418,19 @@
       "guide"
     ]
   },
+  "https://github.com/PyCQA/pydocstyle": {
+    "id": "pydocstyle",
+    "description": "Python docstring style checker.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "docstring",
+      "lint",
+      "linter",
+      "linting",
+      "style"
+    ]
+  },
   "https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
     "id": "sublime-text-sidebar-enhancements",
     "description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
