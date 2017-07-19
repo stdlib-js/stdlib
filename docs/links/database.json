@@ -185,6 +185,20 @@
       "text"
     ]
   },
+  "https://github.com/substack/node-browserify": {
+    "id": "browserify",
+    "description": "GitHub repository for browserify, a bundler for requiring Node.js modules in browser environments.",
+    "short": "",
+    "keywords": [
+      "browserify",
+      "bundler",
+      "browser",
+      "require",
+      "nodejs",
+      "node.js",
+      "node-js"
+    ]
+  },
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
