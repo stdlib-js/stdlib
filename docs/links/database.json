@@ -56,6 +56,16 @@
       "json"
     ]
   },
+  "https://en.wikipedia.org/wiki/AWK": {
+    "id": "awk",
+    "description": "Wikipedia for the AWK programming language.",
+    "short": "",
+    "keywords": [
+      "awk",
+      "data processing",
+      "command-line"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
