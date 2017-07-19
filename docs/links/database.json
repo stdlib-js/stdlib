@@ -233,6 +233,37 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Skewness": {
+    "id": "skewness",
+    "description": "Wikipedia entry for the skewness.",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Standard_deviation": {
+    "id": "stdev",
+    "description": "Wikipedia entry for the standard deviation.",
+    "short": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "stdev",
+      "standard",
+      "deviation",
+      "std",
+      "spread",
+      "dispersion",
+      "deviation",
+      "probability"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
