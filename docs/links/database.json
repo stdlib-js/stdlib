@@ -48,6 +48,18 @@
       "javascript"
     ]
   },
+  "http://usejsdoc.org/tags-typedef.html": {
+    "id": "jsdoc-typedef",
+    "description": "JSDoc documentation for defining custom types (type definitions).",
+    "short": "",
+    "keywords": [
+      "jsdoc",
+      "documentation",
+      "docs",
+      "javascript",
+      "types"
+    ]
+  },
   "http://webassembly.org/": {
     "id": "webassembly",
     "description": "Official website for WebAssembly, a portable compilation target for the Web.",
