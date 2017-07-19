@@ -431,6 +431,17 @@
       "style"
     ]
   },
+  "https://github.com/PyCQA/pylint": {
+    "id": "pylint",
+    "description": "Pylint is a Python source code analyzer which looks for programming errors, helps enforcing a coding standard, and sniffs for some code smells.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "lint",
+      "linter",
+      "linting"
+    ]
+  },
   "https://github.com/SideBarEnhancements-org/SideBarEnhancements": {
     "id": "sublime-text-sidebar-enhancements",
     "description": "Sublime Text package which provides enhancements to the Sublime Text sidebar.",
