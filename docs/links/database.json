@@ -21,6 +21,21 @@
       "ecmascript"
     ]
   },
+  "http://opendatacommons.org/licenses/pddl/1.0/": {
+    "id": "pddl-1.0",
+    "description": "Open Data Commons (ODC) Public Domain Dedication and Licence (PDDL).",
+    "short_url": "",
+    "keywords": [
+      "license",
+      "open",
+      "data",
+      "public",
+      "domain",
+      "odc",
+      "pddl",
+      "pddl-1.0"
+    ]
+  },
   "http://stdlib.io/": {
     "id": "stdlib",
     "description": "A standard library for JavaScript and Node.js.",
