@@ -35,7 +35,7 @@ Annotating source code is a useful means for inlining action items and notes. Fo
 // FIXME: don't release the zalgo!
 function foo( cb ) {
     if ( bar ) {
-        return async( cb );
+        return asyncFcn( cb );
     }
     cb();
 } 
