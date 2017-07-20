@@ -34,6 +34,18 @@
       "js"
     ]
   },
+  "http://man7.org/linux/man-pages/man7/environ.7.html": {
+    "id": "man-environ",
+    "description": "Documentation for `environ`, a variable which points to an array of pointers to strings called the \"environment\".",
+    "short_url": "",
+    "keywords": [
+      "man",
+      "environ",
+      "environment",
+      "env",
+      "user"
+    ]
+  },
   "http://opendatacommons.org/licenses/pddl/1.0/": {
     "id": "pddl-1.0",
     "description": "Open Data Commons (ODC) Public Domain Dedication and Licence (PDDL).",
