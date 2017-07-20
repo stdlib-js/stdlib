@@ -148,6 +148,23 @@
       "cc0"
     ]
   },
+  "https://docs.travis-ci.com/user/customizing-the-build": {
+    "id": "travis-ci-customing-the-build",
+    "description": "Travis CI documentation for customizing a build.",
+    "short_url": "",
+    "keywords": [
+      "travis",
+      "continuous",
+      "integration",
+      "ci",
+      "customize",
+      "build",
+      "docs",
+      "documentation",
+      "configuration",
+      "settings"
+    ]
+  },
   "https://en.wikipedia.org/wiki/AWK": {
     "id": "awk",
     "description": "Wikipedia entry for the AWK programming language.",
