@@ -552,6 +552,18 @@
       "markdown"
     ]
   },
+  "https://julialang.org/": {
+    "id": "julia",
+    "description": "The official website of Julia, a high-level, high-performance dynamic programming language for numerical computing.",
+    "short_url": "",
+    "keywords": [
+      "julia",
+      "julialang",
+      "numeric computing",
+      "language",
+      "lang"
+    ]
+  },
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
