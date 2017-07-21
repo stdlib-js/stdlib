@@ -222,6 +222,42 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop": {
+    "id": "mdn-array-pop",
+    "description": "Mozilla Developer Network (MDN) documentation for the pop Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push": {
+    "id": "mdn-array-push",
+    "description": "Mozilla Developer Network (MDN) documentation for the push Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce": {
+    "id": "mdn-array-reduce",
+    "description": "Mozilla Developer Network (MDN) documentation for the reduce Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift": {
     "id": "mdn-array-shift",
     "description": "Mozilla Developer Network (MDN) documentation for the shift Array.prototype method.",
@@ -1060,6 +1096,28 @@
       "addons",
       "bindings",
       "binding"
+    ]
+  },
+  "https://nodejs.org/api/process.html#process_process_platform": {
+    "id": "process-platform",
+    "description": "Node.js documentation for the process.platform property.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "process",
+      "platform"
+    ]
+  },
+  "https://nodejs.org/api/tty.html#tty_tty": {
+    "id": "tty",
+    "description": "Node.js documentation for the tty module, which is used when Node.js is run inside a text terminal context.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "streams",
+      "terminal"
     ]
   },
   "https://nodejs.org/en/": {
