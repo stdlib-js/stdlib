@@ -160,6 +160,19 @@
       "cc0"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions": {
+    "id": "mdn-regular-expressions",
+    "description": "Mozilla developer network documentation for regular expressions in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "regexp",
+      "regex",
+      "regular",
+      "expressions",
+      "javascript",
+      "js"
+    ]
+  },
   "https://docs.travis-ci.com/user/customizing-the-build": {
     "id": "travis-ci-customing-the-build",
     "description": "Travis CI documentation for customizing a build.",
