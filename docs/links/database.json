@@ -638,6 +638,19 @@
       "binding"
     ]
   },
+  "https://nodejs.org/en/": {
+    "id": "node-js",
+    "description": "The official website of Node.js, a JavaScript runtime.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "node-js",
+      "node.js",
+      "nodejs",
+      "javascript",
+      "js"
+    ]
+  },
   "https://packagecontrol.io/": {
     "id": "sublime-text-package-control",
     "description": "Package manager for Sublime Text",
