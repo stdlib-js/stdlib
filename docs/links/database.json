@@ -189,6 +189,16 @@
       "cc0"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions": {
+    "id": "regexp",
+    "description": "Mozilla Developer Network (MDN) documentation for JavaScript regular expressions.",
+    "short_url": "",
+    "keywords": [
+      "regexp",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array": {
     "id": "mdn-array",
     "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object. ",
@@ -196,6 +206,30 @@
     "keywords": [
       "globals",
       "array",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight": {
+    "id": "mdn-array-reduceright",
+    "description": "Mozilla Developer Network (MDN) documentation for the reduceRight Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift": {
+    "id": "mdn-array-shift",
+    "description": "Mozilla Developer Network (MDN) documentation for the shift Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
       "javascript",
       "ecmascript"
     ]
