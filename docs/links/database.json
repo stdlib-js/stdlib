@@ -497,6 +497,46 @@
       "stdin"
     ]
   },
+  "https://en.wikipedia.org/wiki/Triangular_distribution": {
+    "id": "triangular",
+    "description": "Wikipedia entry for the triangular distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Truncated_normal_distribution": {
+    "id": "truncated-normal",
+    "description": "Wikipedia entry for the truncated normal distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "truncated"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29": {
+    "id": "uniform",
+    "description": "Wikipedia entry for the continuous uniform distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Variance": {
     "id": "variance",
     "description": "Wikipedia entry for the variance.",
