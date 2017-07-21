@@ -6,7 +6,7 @@
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for running project tests.
+This directory contains [`make`][make] recipes for running project unit tests.
 
 </section>
 
