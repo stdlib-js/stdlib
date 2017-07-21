@@ -1,4 +1,13 @@
 {
+  "http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony": {
+    "id": "zalgo",
+    "description": "Blog post by Isaac Z. Schlueter on designing asynchronous APIs and releasing Zalgo.",
+    "short_url": "",
+    "keywords": [
+      "asynchronous",
+      "node.js"
+    ]
+  },
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
@@ -191,6 +200,29 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift": {
+    "id": "mdn-array-unshift",
+    "description": "Mozilla Developer Network (MDN) documentation for the unshift Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer": {
+    "id": "mdn-arraybuffer",
+    "description": "Mozilla Developer Network (MDN) documentation for the ArrayBuffer object.",
+    "short_url": "",
+    "keywords": [
+      "typed-array",
+      "buffer",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object": {
     "id": "mdn-object",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript objects.",
@@ -209,6 +241,15 @@
     "keywords": [
       "globals",
       "typed-array",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode": {
+    "id": "strict-mode",
+    "description": "Mozilla Developer Network (MDN) documentation of ECMAScript 5's strict mode.",
+    "short_url": "",
+    "keywords": [
       "javascript",
       "ecmascript"
     ]
@@ -1011,6 +1052,17 @@
       "package",
       "pkg",
       "manager"
+    ]
+  },
+  "https://tools.ietf.org/html/rfc4180": {
+    "id": "csv",
+    "description": "Memo documenting the format used for Comma-Separated Values (CSV) files.",
+    "short_url": "",
+    "keywords": [
+      "csv",
+      "mime",
+      "rfc",
+      "format"
     ]
   },
   "https://travis-ci.org/": {
