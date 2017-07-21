@@ -160,6 +160,39 @@
       "cc0"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array": {
+    "id": "mdn-array",
+    "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object. ",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "array",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object": {
+    "id": "mdn-object",
+    "description": "Mozilla Developer Network (MDN) documentation for JavaScript objects.",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "object",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray": {
+    "id": "mdn-typed-array",
+    "description": "Mozilla Developer Network (MDN) documentation for JavaScript typed arrays.",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "typed-array",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://docs.travis-ci.com/user/customizing-the-build": {
     "id": "travis-ci-customing-the-build",
     "description": "Travis CI documentation for customizing a build.",
@@ -185,6 +218,18 @@
       "awk",
       "data processing",
       "command-line"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Absolute_value": {
+    "id": "absolute-value",
+    "description": "Wikipedia entry for the absolute value.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "abs",
+      "absolute",
+      "magnitude"
     ]
   },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
