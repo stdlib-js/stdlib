@@ -242,6 +242,19 @@
       "binom"
     ]
   },
+  "https://en.wikipedia.org/wiki/Cauchy_distribution": {
+    "id": "cauchy",
+    "description": "Wikipedia entry for the Cauchy distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
@@ -472,6 +485,19 @@
       "dispersion",
       "deviation",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Weibull_distribution": {
+    "id": "weibull",
+    "description": "Wikipedia entry for the Weibull distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
     ]
   },
   "https://git-scm.com/": {
