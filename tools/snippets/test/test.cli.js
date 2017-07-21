@@ -20,9 +20,6 @@ var opts = {
 // FIXTURES //
 
 var PKG_VERSION = require('./../package.json' ).version;
-var HELP = readFileSync( resolve( __dirname, '..', 'bin', 'usage.txt' ), {
-	'encoding': 'utf8'
-});
 
 
 // TESTS //
@@ -33,7 +30,13 @@ tape( 'command-line interface', function test( t ) {
 });
 
 tape( 'when invoked with a `--help` flag, the command-line interface prints the help text to `stderr`', opts, function test( t ) {
-	var cmd = [
+	var expected;
+	var cmd;
+
+	expected = readFileSync( resolve( __dirname, '..', 'bin', 'usage.txt' ), {
+		'encoding': 'utf8'
+	});
+	cmd = [
 		process.execPath,
 		fpath,
 		'--help'
@@ -46,14 +49,20 @@ tape( 'when invoked with a `--help` flag, the command-line interface prints the 
 			t.fail( error.message );
 		} else {
 			t.strictEqual( stdout.toString(), '', 'does not print to `stdout`' );
-			t.strictEqual( stderr.toString(), HELP+'\n', 'expected value' );
+			t.strictEqual( stderr.toString(), expected+'\n', 'expected value' );
 		}
 		t.end();
 	}
 });
 
 tape( 'when invoked with a `-h` flag, the command-line interface prints the help text to `stderr`', opts, function test( t ) {
-	var cmd = [
+	var expected;
+	var cmd;
+
+	expected = readFileSync( resolve( __dirname, '..', 'bin', 'usage.txt' ), {
+		'encoding': 'utf8'
+	});
+	cmd = [
 		process.execPath,
 		fpath,
 		'-h'
@@ -66,7 +75,7 @@ tape( 'when invoked with a `-h` flag, the command-line interface prints the help
 			t.fail( error.message );
 		} else {
 			t.strictEqual( stdout.toString(), '', 'does not print to `stdout`' );
-			t.strictEqual( stderr.toString(), HELP+'\n', 'expected value' );
+			t.strictEqual( stderr.toString(), expected+'\n', 'expected value' );
 		}
 		t.end();
 	}
