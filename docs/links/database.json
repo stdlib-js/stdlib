@@ -227,6 +227,18 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Environment_variable": {
+    "id": "environment-variable",
+    "description": "Wikipedia entry for environment variables, which are a set of dynamically named values that can affect how running processes behave on a computer.",
+    "short_url": "",
+    "keywords": [
+      "environment",
+      "variable",
+      "env",
+      "envvars",
+      "envs"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Expected_value": {
     "id": "expected-value",
     "description": "Wikipedia entry for the expected value of a probability distribution.",
