@@ -34,6 +34,7 @@ tape( 'command-line interface', function test( t ) {
 
 tape( 'when invoked with a `--help` flag, the command-line interface prints the help text to `stderr`', opts, function test( t ) {
 	var cmd = [
+		process.execPath,
 		fpath,
 		'--help'
 	];
@@ -53,6 +54,7 @@ tape( 'when invoked with a `--help` flag, the command-line interface prints the 
 
 tape( 'when invoked with a `-h` flag, the command-line interface prints the help text to `stderr`', opts, function test( t ) {
 	var cmd = [
+		process.execPath,
 		fpath,
 		'-h'
 	];
@@ -72,6 +74,7 @@ tape( 'when invoked with a `-h` flag, the command-line interface prints the help
 
 tape( 'when invoked with a `--version` flag, the command-line interface prints the version to `stderr`', opts, function test( t ) {
 	var cmd = [
+		process.execPath,
 		fpath,
 		'--version'
 	];
@@ -91,6 +94,7 @@ tape( 'when invoked with a `--version` flag, the command-line interface prints t
 
 tape( 'when invoked with a `-V` flag, the command-line interface prints the version to `stderr`', opts, function test( t ) {
 	var cmd = [
+		process.execPath,
 		fpath,
 		'-V'
 	];
