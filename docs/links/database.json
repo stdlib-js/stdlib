@@ -255,6 +255,24 @@
       "continuous"
     ]
   },
+  "https://en.wikipedia.org/wiki/Chi-squared_distribution": {
+    "id": "chisquare",
+    "description": "Wikipedia entry for the chi-squared distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "chisq",
+      "chisquare",
+      "chisquared",
+      "chi-square",
+      "chi-squared"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Chi_distribution": {
     "id": "chi",
     "description": "Wikipedia entry for the chi distribution.",
@@ -403,6 +421,19 @@
       "url-encoding"
     ]
   },
+  "https://en.wikipedia.org/wiki/Poisson_distribution": {
+    "id": "poisson",
+    "description": "Wikipedia entry for the Poisson distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
     "id": "png",
     "description": "Wikipedia entry for Portable Network Graphics (PNG), a raster graphics file format that supports lossless data compression.",
@@ -445,6 +476,32 @@
       "inverse",
       "icdf",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Raised_cosine_distribution": {
+    "id": "cosine",
+    "description": "Wikipedia entry for the raised cosine distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Rayleigh_distribution": {
+    "id": "rayleigh",
+    "description": "Wikipedia entry for the Rayleigh distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
     ]
   },
   "https://en.wikipedia.org/wiki/Skewness": {
@@ -495,6 +552,21 @@
       "stdout",
       "stderr",
       "stdin"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Student%27s_t-distribution": {
+    "id": "t",
+    "description": "Wikipedia entry for Student's t distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "gosset",
+      "student"
     ]
   },
   "https://en.wikipedia.org/wiki/Triangular_distribution": {
