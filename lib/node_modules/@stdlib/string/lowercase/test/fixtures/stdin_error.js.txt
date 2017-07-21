@@ -1,0 +1,14 @@
+var resolve = require( 'path' ).resolve;
+var proxyquire = require( 'proxyquire' );
+
+var fpath = resolve( __dirname, '..', 'bin', 'cli' );
+
+process.stdin.isTTY = false;
+
+proxyquire( fpath, {
+	'@stdlib/utils/read-stdin': stdin
+});
+
+function stdin( clbk ) {
+	clbk( new Error( 'beep' ) );
+}
