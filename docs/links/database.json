@@ -201,6 +201,16 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Constant_function": {
+    "id": "constant-function",
+    "description": "Wikipedia entry for a constant function (i.e., a function whose output value is the same for every input value).",
+    "short_url": "",
+    "keywords": [
+      "constant",
+      "function",
+      "fcn"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
