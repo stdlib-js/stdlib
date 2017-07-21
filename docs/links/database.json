@@ -127,6 +127,26 @@
       "cite"
     ]
   },
+  "http://www.ecma-international.org/ecma-262/5.1": {
+    "id": "ecma-262",
+    "description": "ECMAScript language specification.",
+    "short_url": "",
+    "keywords": [
+      "specification",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4": {
+    "id": "spec-for-in",
+    "description": "For-in behavior according to ECMAScript specification.",
+    "short_url": "",
+    "keywords": [
+      "specification",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "http://www.json.org/": {
     "id": "json",
     "description": "The official JSON website.",
