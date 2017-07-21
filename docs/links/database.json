@@ -473,6 +473,20 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Nat_%28unit%29": {
+    "id": "nats",
+    "description": "Wikipedia entry for the natural unit for information entropy.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "probability",
+      "nats",
+      "entropy",
+      "information",
+      "shannon"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
     "id": "percent-encoding",
     "description": "Wikipedia entry describing percent-encoding.",
