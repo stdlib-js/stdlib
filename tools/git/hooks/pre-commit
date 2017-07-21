@@ -109,6 +109,17 @@ run_lint() {
 		fi
 	fi
 
+	# Lint JavaScript command-line interfaces...
+	files=$(echo "${changed_files}" | grep '\/bin\/cli$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make FILES="${files}" lint-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'JavaScript lint errors for command-line interface files.' >&2
+			return 1
+		fi
+	fi
+
 	# Lint JavaScript examples files...
 	files=$(echo "${changed_files}" | grep 'examples/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
