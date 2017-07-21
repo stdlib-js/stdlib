@@ -678,6 +678,18 @@
       "build"
     ]
   },
+  "https://www.gnu.org/software/make/": {
+    "id": "make",
+    "description": "A development utility which controls the generation of executables and other non-source files of a program from the program's source files.",
+    "short_url": "",
+    "keywords": [
+      "make",
+      "makefile",
+      "build",
+      "development",
+      "utility"
+    ]
+  },
   "https://www.python.org/": {
     "id": "python",
     "description": "The official website of Python, a general purpose programming language.",
