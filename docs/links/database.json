@@ -324,6 +324,16 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse": {
+    "id": "json-parse",
+    "description": "Mozilla Developer Network (MDN) documentation for the JSON.parse method.",
+    "short_url": "",
+    "keywords": [
+      "json",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://docs.travis-ci.com/user/customizing-the-build": {
     "id": "travis-ci-customing-the-build",
     "description": "Travis CI documentation for customizing a build.",
