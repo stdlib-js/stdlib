@@ -638,6 +638,19 @@
       "binding"
     ]
   },
+  "https://nodejs.org/en/": {
+    "id": "node-js",
+    "description": "The official website of Node.js, a JavaScript runtime.",
+    "short_url": "",
+    "keywords": [
+      "node",
+      "node-js",
+      "node.js",
+      "nodejs",
+      "javascript",
+      "js"
+    ]
+  },
   "https://packagecontrol.io/": {
     "id": "sublime-text-package-control",
     "description": "Package manager for Sublime Text",
@@ -676,6 +689,18 @@
       "integration",
       "windows",
       "build"
+    ]
+  },
+  "https://www.gnu.org/software/make/": {
+    "id": "make",
+    "description": "A development utility which controls the generation of executables and other non-source files of a program from the program's source files.",
+    "short_url": "",
+    "keywords": [
+      "make",
+      "makefile",
+      "build",
+      "development",
+      "utility"
     ]
   },
   "https://www.python.org/": {
