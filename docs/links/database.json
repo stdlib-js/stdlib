@@ -201,6 +201,91 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Beta_distribution": {
+    "id": "beta",
+    "description": "Wikipedia entry for the beta distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Beta_prime_distribution": {
+    "id": "betaprime",
+    "description": "Wikipedia entry for the beta prime distribution.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "distribution",
+      "dist",
+      "probability",
+      "continuous",
+      "inverted"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Binomial_distribution": {
+    "id": "binomial",
+    "description": "Wikipedia entry for the binomial distribution\"",
+    "short_url": "",
+    "keywords": [
+      "dist",
+      "distribution",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete",
+      "binom"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Cauchy_distribution": {
+    "id": "cauchy",
+    "description": "Wikipedia entry for the Cauchy distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Chi-squared_distribution": {
+    "id": "chisquare",
+    "description": "Wikipedia entry for the chi-squared distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "chisq",
+      "chisquare",
+      "chisquared",
+      "chi-square",
+      "chi-squared"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Chi_distribution": {
+    "id": "chi",
+    "description": "Wikipedia entry for the chi distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Constant_function": {
     "id": "constant-function",
     "description": "Wikipedia entry for a constant function (i.e., a function whose output value is the same for every input value).",
@@ -223,6 +308,19 @@
       "probability",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Degenerate_distribution": {
+    "id": "degenerate-distribution",
+    "description": "Wikipedia entry for a degenerate distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete"
     ]
   },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
@@ -249,6 +347,19 @@
       "envs"
     ]
   },
+  "https://en.wikipedia.org/wiki/Erlang_distribution": {
+    "id": "erlang",
+    "description": "Wikipedia entry for the Erlang distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Expected_value": {
     "id": "expected-value",
     "description": "Wikipedia entry for the expected value of a probability distribution.",
@@ -262,6 +373,48 @@
       "average",
       "avg",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Exponential_distribution": {
+    "id": "exponential",
+    "description": "Wikipedia entry for the exponential distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/F_distribution": {
+    "id": "f",
+    "description": "Wikipedia entry for the F distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "fisher"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
+    "id": "frechet",
+    "description": "Wikipedia entry for the Fréchet distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "inverse",
+      "weibull"
     ]
   },
   "https://en.wikipedia.org/wiki/Kurtosis": {
@@ -333,6 +486,19 @@
       "url-encoding"
     ]
   },
+  "https://en.wikipedia.org/wiki/Poisson_distribution": {
+    "id": "poisson",
+    "description": "Wikipedia entry for the Poisson distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
     "id": "png",
     "description": "Wikipedia entry for Portable Network Graphics (PNG), a raster graphics file format that supports lossless data compression.",
@@ -375,6 +541,32 @@
       "inverse",
       "icdf",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Raised_cosine_distribution": {
+    "id": "cosine",
+    "description": "Wikipedia entry for the raised cosine distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Rayleigh_distribution": {
+    "id": "rayleigh",
+    "description": "Wikipedia entry for the Rayleigh distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
     ]
   },
   "https://en.wikipedia.org/wiki/Skewness": {
@@ -427,6 +619,61 @@
       "stdin"
     ]
   },
+  "https://en.wikipedia.org/wiki/Student%27s_t-distribution": {
+    "id": "t",
+    "description": "Wikipedia entry for Student's t distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "gosset",
+      "student"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Triangular_distribution": {
+    "id": "triangular",
+    "description": "Wikipedia entry for the triangular distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Truncated_normal_distribution": {
+    "id": "truncated-normal",
+    "description": "Wikipedia entry for the truncated normal distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "truncated"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29": {
+    "id": "uniform",
+    "description": "Wikipedia entry for the continuous uniform distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Variance": {
     "id": "variance",
     "description": "Wikipedia entry for the variance.",
@@ -441,6 +688,19 @@
       "dispersion",
       "deviation",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Weibull_distribution": {
+    "id": "weibull",
+    "description": "Wikipedia entry for the Weibull distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
     ]
   },
   "https://git-scm.com/": {
