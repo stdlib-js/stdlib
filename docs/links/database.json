@@ -337,6 +337,19 @@
       "envs"
     ]
   },
+  "https://en.wikipedia.org/wiki/Erlang_distribution": {
+    "id": "erlang",
+    "description": "Wikipedia entry for the Erlang distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Expected_value": {
     "id": "expected-value",
     "description": "Wikipedia entry for the expected value of a probability distribution.",
@@ -350,6 +363,48 @@
       "average",
       "avg",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Exponential_distribution": {
+    "id": "exponential",
+    "description": "Wikipedia entry for the exponential distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/F_distribution": {
+    "id": "f",
+    "description": "Wikipedia entry for the F distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "fisher"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
+    "id": "frechet",
+    "description": "Wikipedia entry for the Fréchet distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "inverse",
+      "weibull"
     ]
   },
   "https://en.wikipedia.org/wiki/Kurtosis": {
