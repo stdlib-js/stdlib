@@ -201,6 +201,47 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Beta_distribution": {
+    "id": "beta",
+    "description": "Wikipedia entry for the beta distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Beta_prime_distribution": {
+    "id": "betaprime",
+    "description": "Wikipedia entry for the beta prime distribution.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "distribution",
+      "dist",
+      "probability",
+      "continuous",
+      "inverted"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Binomial_distribution": {
+    "id": "binomial",
+    "description": "Wikipedia entry for the binomial distribution\"",
+    "short_url": "",
+    "keywords": [
+      "dist",
+      "distribution",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete",
+      "binom"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
