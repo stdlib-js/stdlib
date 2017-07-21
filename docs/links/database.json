@@ -255,6 +255,19 @@
       "continuous"
     ]
   },
+  "https://en.wikipedia.org/wiki/Chi_distribution": {
+    "id": "chi",
+    "description": "Wikipedia entry for the chi distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
@@ -267,6 +280,19 @@
       "probability",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Degenerate_distribution": {
+    "id": "degenerate-distribution",
+    "description": "Wikipedia entry for a degenerate distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete"
     ]
   },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
