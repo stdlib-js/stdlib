@@ -386,6 +386,25 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Standard_streams": {
+    "id": "standard-streams",
+    "description": "Wikipedia entry for standard streams, which are preconnected input and output communication channels between a computer program and its environments when it begins execution.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "streams",
+      "unix",
+      "command-line",
+      "interface",
+      "cli",
+      "text",
+      "input",
+      "output",
+      "stdout",
+      "stderr",
+      "stdin"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Variance": {
     "id": "variance",
     "description": "Wikipedia entry for the variance.",
