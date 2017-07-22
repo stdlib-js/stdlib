@@ -329,6 +329,22 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode": {
+    "id": "mdn-string-fromcharcode",
+    "description": "Mozilla Developer Network (MDN) documentation for the static method String.fromCharCode.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "fromcharcode",
+      "code",
+      "point",
+      "unicode",
+      "globals",
+      "javascript",
+      "ecmascript",
+      "codepoint"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint": {
     "id": "mdn-string-fromcodepoint",
     "description": "Mozilla Developer Network (MDN) documentation for the static method String.fromCodePoint.",
