@@ -1235,6 +1235,19 @@
       "manager"
     ]
   },
+  "https://tools.ietf.org/html/rfc3986": {
+    "id": "rfc-3986",
+    "description": "An RFC describing the generic syntax for a URI.",
+    "short_url": "",
+    "keywords": [
+      "rfc",
+      "uri",
+      "url",
+      "scheme",
+      "specification",
+      "spec"
+    ]
+  },
   "https://tools.ietf.org/html/rfc4180": {
     "id": "csv",
     "description": "Memo documenting the format used for Comma-Separated Values (CSV) files.",
