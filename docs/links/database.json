@@ -1248,6 +1248,20 @@
       "spec"
     ]
   },
+  "https://tools.ietf.org/html/rfc3986#section-2.1": {
+    "id": "rfc-3986-percent-encoding",
+    "description": "Section in RFC 3986, an RFC describing the generic syntax for a URI, which describes percent-encoding.",
+    "short_url": "",
+    "keywords": [
+      "rfc",
+      "uri",
+      "url",
+      "percent",
+      "encoding",
+      "encode",
+      "percent-encoding"
+    ]
+  },
   "https://tools.ietf.org/html/rfc4180": {
     "id": "csv",
     "description": "Memo documenting the format used for Comma-Separated Values (CSV) files.",
