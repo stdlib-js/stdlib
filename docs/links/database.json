@@ -508,6 +508,18 @@
       "chi"
     ]
   },
+  "https://en.wikipedia.org/wiki/Code_point": {
+    "id": "code-point",
+    "description": "Wikipedia entry for a code point, a term from character encoding to refer to a numerical value in code space.",
+    "short_url": "",
+    "keywords": [
+      "unicode",
+      "encoding",
+      "encode",
+      "code",
+      "point"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Constant_function": {
     "id": "constant-function",
     "description": "Wikipedia entry for a constant function (i.e., a function whose output value is the same for every input value).",
