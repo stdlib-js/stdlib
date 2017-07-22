@@ -910,6 +910,20 @@
       "normal"
     ]
   },
+  "https://en.wikipedia.org/wiki/UTF-8": {
+    "id": "utf-8",
+    "description": "Wikipedia entry for UTF-8, a character encoding defined by the Unicode standard.",
+    "short_url": "",
+    "keywords": [
+      "utf-8",
+      "utf8",
+      "unicode",
+      "utf",
+      "character",
+      "encoding",
+      "string"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29": {
     "id": "uniform-distribution",
     "description": "Wikipedia entry for the continuous uniform distribution.",
