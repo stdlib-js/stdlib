@@ -329,6 +329,22 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint": {
+    "id": "mdn-string-fromcodepoint",
+    "description": "Mozilla Developer Network (MDN) documentation for the static method String.fromCodePoint.",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "string",
+      "javascript",
+      "ecmascript",
+      "fromcodepoint",
+      "code",
+      "point",
+      "codepoint",
+      "unicode"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray": {
     "id": "mdn-typed-array",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript typed arrays.",
