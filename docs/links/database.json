@@ -1,4 +1,13 @@
 {
+  "http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony": {
+    "id": "zalgo",
+    "description": "Blog post by Isaac Z. Schlueter on designing asynchronous APIs and releasing Zalgo.",
+    "short_url": "",
+    "keywords": [
+      "asynchronous",
+      "node.js"
+    ]
+  },
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
@@ -127,6 +136,30 @@
       "cite"
     ]
   },
+  "http://www.ecma-international.org/ecma-262/5.1": {
+    "id": "ecma-262",
+    "description": "ECMAScript language specification.",
+    "short_url": "",
+    "keywords": [
+      "specification",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4": {
+    "id": "ecma-262-for-in",
+    "description": "For-in behavior according to ECMAScript specification.",
+    "short_url": "",
+    "keywords": [
+      "specification",
+      "javascript",
+      "ecmascript",
+      "for-in",
+      "ecma262",
+      "ecma-262",
+      "ecma"
+    ]
+  },
   "http://www.json.org/": {
     "id": "json",
     "description": "The official JSON website.",
@@ -161,8 +194,8 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions": {
-    "id": "mdn-regular-expressions",
-    "description": "Mozilla developer network documentation for regular expressions in JavaScript.",
+    "id": "mdn-regexp",
+    "description": "Mozilla Developer Network (MDN) documentation for regular expressions in JavaScript.",
     "short_url": "",
     "keywords": [
       "regexp",
@@ -170,6 +203,165 @@
       "regular",
       "expressions",
       "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array": {
+    "id": "mdn-array",
+    "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object. ",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "array",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight": {
+    "id": "mdn-array-reduceright",
+    "description": "Mozilla Developer Network (MDN) documentation for the reduceRight Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "reduce",
+      "reduceright",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop": {
+    "id": "mdn-array-pop",
+    "description": "Mozilla Developer Network (MDN) documentation for the pop Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "pop",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push": {
+    "id": "mdn-array-push",
+    "description": "Mozilla Developer Network (MDN) documentation for the push Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "push",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce": {
+    "id": "mdn-array-reduce",
+    "description": "Mozilla Developer Network (MDN) documentation for the reduce Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "reduce",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift": {
+    "id": "mdn-array-shift",
+    "description": "Mozilla Developer Network (MDN) documentation for the shift Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "shift",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift": {
+    "id": "mdn-array-unshift",
+    "description": "Mozilla Developer Network (MDN) documentation for the unshift Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "method",
+      "prototype",
+      "unshift",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer": {
+    "id": "mdn-arraybuffer",
+    "description": "Mozilla Developer Network (MDN) documentation for the ArrayBuffer object.",
+    "short_url": "",
+    "keywords": [
+      "typed-array",
+      "buffer",
+      "arraybuffer",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object": {
+    "id": "mdn-object",
+    "description": "Mozilla Developer Network (MDN) documentation for JavaScript objects.",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "object",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray": {
+    "id": "mdn-typed-array",
+    "description": "Mozilla Developer Network (MDN) documentation for JavaScript typed arrays.",
+    "short_url": "",
+    "keywords": [
+      "globals",
+      "typed-array",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode": {
+    "id": "mdn-strict-mode",
+    "description": "Mozilla Developer Network (MDN) documentation of ECMAScript 5's strict mode.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "ecmascript",
+      "js",
+      "strict",
+      "mode"
+    ]
+  },
+  "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse": {
+    "id": "mdn-json-parse",
+    "description": "Mozilla Developer Network (MDN) documentation for the JSON.parse method.",
+    "short_url": "",
+    "keywords": [
+      "json",
+      "parse",
+      "javascript",
+      "ecmascript",
       "js"
     ]
   },
@@ -200,8 +392,20 @@
       "command-line"
     ]
   },
+  "https://en.wikipedia.org/wiki/Absolute_value": {
+    "id": "absolute-value",
+    "description": "Wikipedia entry for the absolute value.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "abs",
+      "absolute",
+      "magnitude"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
-    "id": "arcsine",
+    "id": "arcsine-distribution",
     "description": "Wikipedia entry for the arcsine distribution.",
     "short_url": "",
     "keywords": [
@@ -215,7 +419,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Beta_distribution": {
-    "id": "beta",
+    "id": "beta-distribution",
     "description": "Wikipedia entry for the beta distribution.",
     "short_url": "",
     "keywords": [
@@ -224,11 +428,12 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "beta"
     ]
   },
   "https://en.wikipedia.org/wiki/Beta_prime_distribution": {
-    "id": "betaprime",
+    "id": "betaprime-distribution",
     "description": "Wikipedia entry for the beta prime distribution.",
     "short_url": "",
     "keywords": [
@@ -238,11 +443,12 @@
       "dist",
       "probability",
       "continuous",
-      "inverted"
+      "inverted",
+      "betaprime"
     ]
   },
   "https://en.wikipedia.org/wiki/Binomial_distribution": {
-    "id": "binomial",
+    "id": "binomial-distribution",
     "description": "Wikipedia entry for the binomial distribution\"",
     "short_url": "",
     "keywords": [
@@ -252,11 +458,12 @@
       "stats",
       "probability",
       "discrete",
-      "binom"
+      "binom",
+      "binomial"
     ]
   },
   "https://en.wikipedia.org/wiki/Cauchy_distribution": {
-    "id": "cauchy",
+    "id": "cauchy-distribution",
     "description": "Wikipedia entry for the Cauchy distribution.",
     "short_url": "",
     "keywords": [
@@ -265,11 +472,12 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "cauchy"
     ]
   },
   "https://en.wikipedia.org/wiki/Chi-squared_distribution": {
-    "id": "chisquare",
+    "id": "chisquare-distribution",
     "description": "Wikipedia entry for the chi-squared distribution.",
     "short_url": "",
     "keywords": [
@@ -287,7 +495,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Chi_distribution": {
-    "id": "chi",
+    "id": "chi-distribution",
     "description": "Wikipedia entry for the chi distribution.",
     "short_url": "",
     "keywords": [
@@ -296,7 +504,8 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "chi"
     ]
   },
   "https://en.wikipedia.org/wiki/Constant_function": {
@@ -333,7 +542,8 @@
       "statistics",
       "stats",
       "probability",
-      "discrete"
+      "discrete",
+      "degenerate"
     ]
   },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
@@ -361,7 +571,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Erlang_distribution": {
-    "id": "erlang",
+    "id": "erlang-distribution",
     "description": "Wikipedia entry for the Erlang distribution.",
     "short_url": "",
     "keywords": [
@@ -370,7 +580,8 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "erlang"
     ]
   },
   "https://en.wikipedia.org/wiki/Expected_value": {
@@ -389,7 +600,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Exponential_distribution": {
-    "id": "exponential",
+    "id": "exponential-distribution",
     "description": "Wikipedia entry for the exponential distribution.",
     "short_url": "",
     "keywords": [
@@ -398,11 +609,13 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "exponential",
+      "exp"
     ]
   },
   "https://en.wikipedia.org/wiki/F_distribution": {
-    "id": "f",
+    "id": "f-distribution",
     "description": "Wikipedia entry for the F distribution.",
     "short_url": "",
     "keywords": [
@@ -412,11 +625,12 @@
       "stats",
       "probability",
       "continuous",
-      "fisher"
+      "fisher",
+      "f"
     ]
   },
   "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
-    "id": "frechet",
+    "id": "frechet-distribution",
     "description": "Wikipedia entry for the Fréchet distribution.",
     "short_url": "",
     "keywords": [
@@ -427,7 +641,8 @@
       "probability",
       "continuous",
       "inverse",
-      "weibull"
+      "weibull",
+      "frechet"
     ]
   },
   "https://en.wikipedia.org/wiki/Kurtosis": {
@@ -486,6 +701,20 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Nat_%28unit%29": {
+    "id": "nats",
+    "description": "Wikipedia entry for the natural unit for information entropy.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "probability",
+      "nats",
+      "entropy",
+      "information",
+      "shannon"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
     "id": "percent-encoding",
     "description": "Wikipedia entry describing percent-encoding.",
@@ -500,7 +729,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Poisson_distribution": {
-    "id": "poisson",
+    "id": "poisson-distribution",
     "description": "Wikipedia entry for the Poisson distribution.",
     "short_url": "",
     "keywords": [
@@ -509,7 +738,8 @@
       "statistics",
       "stats",
       "probability",
-      "discrete"
+      "discrete",
+      "poisson"
     ]
   },
   "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
@@ -557,7 +787,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Raised_cosine_distribution": {
-    "id": "cosine",
+    "id": "raised-cosine-distribution",
     "description": "Wikipedia entry for the raised cosine distribution.",
     "short_url": "",
     "keywords": [
@@ -566,11 +796,13 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "cosine",
+      "raised"
     ]
   },
   "https://en.wikipedia.org/wiki/Rayleigh_distribution": {
-    "id": "rayleigh",
+    "id": "rayleigh-distribution",
     "description": "Wikipedia entry for the Rayleigh distribution.",
     "short_url": "",
     "keywords": [
@@ -579,7 +811,8 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "rayleigh"
     ]
   },
   "https://en.wikipedia.org/wiki/Skewness": {
@@ -633,7 +866,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Student%27s_t-distribution": {
-    "id": "t",
+    "id": "t-distribution",
     "description": "Wikipedia entry for Student's t distribution.",
     "short_url": "",
     "keywords": [
@@ -644,11 +877,12 @@
       "probability",
       "continuous",
       "gosset",
-      "student"
+      "student",
+      "t"
     ]
   },
   "https://en.wikipedia.org/wiki/Triangular_distribution": {
-    "id": "triangular",
+    "id": "triangular-distribution",
     "description": "Wikipedia entry for the triangular distribution.",
     "short_url": "",
     "keywords": [
@@ -657,11 +891,12 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "triangular"
     ]
   },
   "https://en.wikipedia.org/wiki/Truncated_normal_distribution": {
-    "id": "truncated-normal",
+    "id": "truncated-normal-distribution",
     "description": "Wikipedia entry for the truncated normal distribution.",
     "short_url": "",
     "keywords": [
@@ -671,11 +906,12 @@
       "stats",
       "probability",
       "continuous",
-      "truncated"
+      "truncated",
+      "normal"
     ]
   },
   "https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29": {
-    "id": "uniform",
+    "id": "uniform-distribution",
     "description": "Wikipedia entry for the continuous uniform distribution.",
     "short_url": "",
     "keywords": [
@@ -684,7 +920,8 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "uniform"
     ]
   },
   "https://en.wikipedia.org/wiki/Variance": {
@@ -704,7 +941,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Weibull_distribution": {
-    "id": "weibull",
+    "id": "weibull-distribution",
     "description": "Wikipedia entry for the Weibull distribution.",
     "short_url": "",
     "keywords": [
@@ -713,7 +950,8 @@
       "statistics",
       "stats",
       "probability",
-      "continuous"
+      "continuous",
+      "weibull"
     ]
   },
   "https://git-scm.com/": {
@@ -921,6 +1159,28 @@
       "binding"
     ]
   },
+  "https://nodejs.org/api/process.html#process_process_platform": {
+    "id": "process-platform",
+    "description": "Node.js documentation for the process.platform property.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "process",
+      "platform"
+    ]
+  },
+  "https://nodejs.org/api/tty.html#tty_tty": {
+    "id": "tty",
+    "description": "Node.js documentation for the tty module, which is used when Node.js is run inside a text terminal context.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "streams",
+      "terminal"
+    ]
+  },
   "https://nodejs.org/en/": {
     "id": "node-js",
     "description": "The official website of Node.js, a JavaScript runtime.",
@@ -945,6 +1205,17 @@
       "package",
       "pkg",
       "manager"
+    ]
+  },
+  "https://tools.ietf.org/html/rfc4180": {
+    "id": "csv",
+    "description": "Memo documenting the format used for Comma-Separated Values (CSV) files.",
+    "short_url": "",
+    "keywords": [
+      "csv",
+      "mime",
+      "rfc",
+      "format"
     ]
   },
   "https://travis-ci.org/": {
