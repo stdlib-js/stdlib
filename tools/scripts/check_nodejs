@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether Node.js is installed.
+#
+# Usage: check_nodejs
+#
+
+# VARIABLES #
+
+# Find node:
+NODEJS=$(command -v node 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_nodejs' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${NODEJS}" ]] && "${NODEJS}" --version >/dev/null; then
+	echo 'Node.js is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please download Node.js version >0.10 (https://nodejs.org/en/). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
