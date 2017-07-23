@@ -18,7 +18,7 @@ var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFileSync;
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var SEP = require( '@stdlib/utils/path-sep' );
+var SEP = require( '@stdlib/string/constants/path-sep' );
 var findPkgs = require( './../../pkgs/find' ).sync;
 
 

@@ -7,7 +7,7 @@ var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var rawgit = require( 'rawgit-url' );
 var visit = require( 'unist-util-visit' );
-var PATH_SEP = require( '@stdlib/utils/path-sep' );
+var PATH_SEP = require( '@stdlib/string/constants/path-sep' );
 var git = require( './git.js' );
 
 
@@ -29,6 +29,7 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 * @returns {Function} transformer function
 */
 function getTransformer( opts ) {
+	return transformer;
 	/**
 	* Transforms a Markdown file.
 	*
@@ -36,7 +37,7 @@ function getTransformer( opts ) {
 	* @param {Node} ast - root node
 	* @param {File} file - Virtual file
 	*/
-	return function transformer( ast, file ) {
+	function transformer( ast, file ) {
 		debug( 'Processing virtual file...' );
 		visit( ast, 'html', insertURLs );
 
@@ -78,7 +79,7 @@ function getTransformer( opts ) {
 				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
 			}
 		}// end FUNCTION insertURLs()
-	}; // end FUNCTION transformer()
+	} // end FUNCTION transformer()
 } // end FUNCTION getTransformer()
 
 
