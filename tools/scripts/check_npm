@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether npm is installed.
+#
+# Usage: check_npm
+#
+
+# VARIABLES #
+
+# Find npm:
+NPM=$(command -v npm 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_npm' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${NPM}" ]] && "${NPM}" --version >/dev/null; then
+	echo 'npm is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please download npm version >2.7.0 (if Node <1.0.0, version >2.7.0 and <4.0.0; https://www.npmjs.com/). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
