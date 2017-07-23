@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether wget is installed.
+#
+# Usage: check_wget
+#
+
+# VARIABLES #
+
+# Find wget:
+WGET=$(command -v wget 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_wget' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${WGET}" ]] && "${WGET}" --version >/dev/null; then
+	echo 'wget is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please install wget (http://www.gnu.org/software/wget). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
