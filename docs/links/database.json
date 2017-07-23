@@ -373,6 +373,7 @@
     "keywords": [
       "object",
       "prototype",
+      "tostring",
       "javascript",
       "ecmascript"
     ]
@@ -415,6 +416,7 @@
     "short_url": "",
     "keywords": [
       "symbol",
+      "tostringtag",
       "javascript",
       "ecmascript"
     ]
@@ -1317,7 +1319,7 @@
     "description": "Node.js documentation for the `cpus()` function of the `os` module.",
     "short_url": "",
     "keywords": [
-      "noe.js",
+      "node.js",
       "node-js",
       "node",
       "os"
