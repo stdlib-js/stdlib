@@ -1152,6 +1152,20 @@
       "json"
     ]
   },
+  "https://github.com/pypa/pip": {
+    "id": "pip",
+    "description": "A Python package manager. The PyPA recommended tool for installing Python packages.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "package",
+      "pkg",
+      "manager",
+      "pip",
+      "pypa",
+      "install"
+    ]
+  },
   "https://github.com/roadhump/SublimeLinter-eslint": {
     "id": "sublime-text-sublimelinter-eslint",
     "description": "Plugin for SublimeLinter3 which provides an interface to ESLint.",
