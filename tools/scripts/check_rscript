@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether Rscript is installed.
+#
+# Usage: check_rscript
+#
+
+# VARIABLES #
+
+# Find Rscript:
+RSCRIPT=$(command -v rscript 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_rscript' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${RSCRIPT}" ]] && "${RSCRIPT}" --version >/dev/null; then
+	echo 'Rscript is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please download R version >= 3.3.3 (https://www.r-project.org/). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
