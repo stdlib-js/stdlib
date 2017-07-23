@@ -43,6 +43,17 @@
       "js"
     ]
   },
+  "http://man7.org/linux/man-pages/man2/getuid.2.html": {
+    "id": "getuid",
+    "description": "Documentation for the `getuid` function to retrieve a user's identity.",
+    "short_url": "",
+    "keywords": [
+      "linux",
+      "man",
+      "user",
+      "id"
+    ]
+  },
   "http://man7.org/linux/man-pages/man7/environ.7.html": {
     "id": "man-environ",
     "description": "Documentation for `environ`, a variable which points to an array of pointers to strings called the \"environment\".",
