@@ -388,6 +388,18 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf": {
+    "id": "object-get-prototype-of",
+    "description": "Mozilla Developer Network (MDN) documentation for the Object.getPrototypeOf() method.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "getprototypeof",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString": {
     "id": "object-to-string",
     "description": "Mozilla Developer Network (MDN) documentation for the Object.toString() method.",
