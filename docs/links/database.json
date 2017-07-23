@@ -271,6 +271,17 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map": {
+    "id": "mdn-array-map",
+    "description": "Mozilla Developer Network (MDN) documentation for the Array.map() method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "map",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop": {
     "id": "mdn-array-pop",
     "description": "Mozilla Developer Network (MDN) documentation for the pop Array.prototype method.",
