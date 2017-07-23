@@ -140,6 +140,12 @@ To install language dependencies (__optional__),
 $ make install-lang-deps
 ```
 
+To run dependency diagnostics,
+
+``` bash
+$ make deps-info
+```
+
 To initialize the development environment,
 
 ``` bash
