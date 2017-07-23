@@ -193,6 +193,17 @@
       "cc0"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
+    "id": "hardware-concurrency",
+    "description": "Mozilla Developer Network (MDN) documentation for the hardware concurrency API to retrieve the number of logical processors on the computer.",
+    "short_url": "",
+    "keywords": [
+      "api",
+      "browser",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": {
     "id": "window-open",
     "description": "Mozilla Developer Network (MDN) documentation for the Window.open() function.",
@@ -757,6 +768,15 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/NOP": {
+    "id": "nop",
+    "description": "Wikipedia entry for the no operation instruction.",
+    "short_url": "",
+    "keywords": [
+      "programming",
+      "acronyms"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Nat_%28unit%29": {
     "id": "nats",
     "description": "Wikipedia entry for the natural unit for information entropy.",
@@ -1255,6 +1275,17 @@
       "addons",
       "bindings",
       "binding"
+    ]
+  },
+  "https://nodejs.org/api/os.html#os_os_cpus": {
+    "id": "node-os",
+    "description": "Node.js documentation for the `cpus()` function of the `os` module.",
+    "short_url": "",
+    "keywords": [
+      "noe.js",
+      "node-js",
+      "node",
+      "os"
     ]
   },
   "https://nodejs.org/api/process.html#process_process_platform": {
