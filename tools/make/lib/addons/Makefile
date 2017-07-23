@@ -26,7 +26,7 @@ endif
 
 # Install add-ons.
 #
-# This target installs native add-ons.
+# This target installs native add-ons. If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
 
 install-addons: clean-addons
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
@@ -38,7 +38,7 @@ install-addons: clean-addons
 		cd $$pkg && \
 			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
-		|| exit 1; \
+		|| echo "Error: failed to build add-on: $$pkg" && exit 0; \
 	done
 
 .PHONY: install-addons
