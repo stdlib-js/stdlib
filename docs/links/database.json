@@ -55,6 +55,20 @@
       "user"
     ]
   },
+  "http://nodejs.org/api/buffer.html": {
+    "id": "node-buffer",
+    "description": "Node.js documentation for the Buffer class.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "buffer",
+      "binary",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "http://opendatacommons.org/licenses/pddl/1.0/": {
     "id": "pddl-1.0",
     "description": "Open Data Commons (ODC) Public Domain Dedication and Licence (PDDL).",
@@ -350,6 +364,17 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString": {
+    "id": "object-to-string",
+    "description": "Mozilla Developer Network (MDN) documentation for the Object.toString() method.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "prototype",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode": {
