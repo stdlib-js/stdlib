@@ -193,6 +193,18 @@
       "cc0"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": {
+    "id": "window-open",
+    "description": "Mozilla Developer Network (MDN) documentation for the Window.open() function.",
+    "short_url": "",
+    "keywords": [
+      "browser",
+      "dom",
+      "api",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions": {
     "id": "mdn-regexp",
     "description": "Mozilla Developer Network (MDN) documentation for regular expressions in JavaScript.",
