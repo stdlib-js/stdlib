@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether gcc is installed.
+#
+# Usage: check_gcc
+#
+
+# VARIABLES #
+
+# Find gcc:
+GCC=$(command -v gcc 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_gcc' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${GCC}" ]] && "${GCC}" --version >/dev/null; then
+	echo 'gcc is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Please download gcc version >= 4.8 (http://gcc.gnu.org/). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
