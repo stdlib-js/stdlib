@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Check whether SciPy is installed.
+#
+# Usage: check_scipy
+#
+
+# VARIABLES #
+
+# Find pip:
+PIP=$(command -v pip 2>/dev/null)
+
+
+# FUNCTIONS #
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: check_scipy' >&2
+	echo '' >&2
+}
+
+# MAIN #
+
+if [[ -x "${PIP}" ]] && "${PIP}" show scipy | grep 'Version' >/dev/null; then
+	echo 'SciPy is installed.' >&2
+	exit 0
+else
+	echo 'ERROR: missing dependency. Ensure pip is installed (https://github.com/pypa/pip). If so, please install SciPy (https://www.scipy.org/index.html). Once installed, run the command again.' >&2
+	exit 1
+fi
+
+# TODO: check for minimum version
