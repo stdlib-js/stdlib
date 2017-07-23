@@ -305,6 +305,18 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find": {
+    "id": "mdn-array-find",
+    "description": "Mozilla Developer Network (MDN) documentation for the Array.prototype.find() method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "prototype",
+      "find",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach": {
     "id": "mdn-array-foreach",
     "description": "Mozilla Developer Network (MDN) documentation for the Array.forEach() method.",
