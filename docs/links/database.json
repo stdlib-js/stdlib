@@ -384,6 +384,16 @@
       "unicode"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag": {
+    "id": "mdn-symbol-tostringtag",
+    "description": "Mozilla Developer Network (MDN) documentation for the Symbol.toStringTag property.",
+    "short_url": "",
+    "keywords": [
+      "symbol",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray": {
     "id": "mdn-typed-array",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript typed arrays.",
