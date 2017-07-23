@@ -145,6 +145,17 @@
       "binary"
     ]
   },
+  "http://www.2ality.com/2015/09/function-names-es6.html": {
+    "id": "2ality-function-names",
+    "description": "Blog post by Dr. Axel Rauschmeyer on the name property of a JavaScript function.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "property",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "http://www.bibtex.org/": {
     "id": "bibtex",
     "description": "The official BibTeX website.",
@@ -191,6 +202,18 @@
     "short_url": "",
     "keywords": [
       "json"
+    ]
+  },
+  "https://bugs.webkit.org/show_bug.cgi?id=7726": {
+    "id": "webkit-bug-7726",
+    "description": "Webkit bug report related to the naming of anonymous functions. ",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "bug",
+      "webkit",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://circleci.com/": {
@@ -374,6 +397,17 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name": {
+    "id": "mdn-function-name",
+    "description": "Mozilla Developer Network (MDN) documentation on the function.name property.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "property",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object": {
