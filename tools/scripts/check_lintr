@@ -22,7 +22,7 @@ usage() {
 
 # MAIN #
 
-if [[ -x "${RSCRIPT}" ]] && "${RSCRIPT}" -e 'packageVersion("lintr")' >/dev/null; then
+if [[ -x "${RSCRIPT}" ]] && "${RSCRIPT}" -e 'packageVersion("lintr")' &>/dev/null; then
 	echo 'lintr is installed.' >&2
 	exit 0
 else
