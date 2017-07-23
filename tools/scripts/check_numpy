@@ -26,7 +26,7 @@ if [[ -x "${PIP}" ]] && "${PIP}" show numpy | grep 'Version' >/dev/null; then
 	echo 'NumPy is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please install NumPy (http://www.numpy.org/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Ensure pip is installed (https://github.com/pypa/pip). If so, please install NumPy (http://www.numpy.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
 
