@@ -38,6 +38,28 @@ else
 fi
 echo '' >&2
 
+CURL=$(command -v curl 2>/dev/null)
+echo '-----'
+echo 'curl:' >&2
+echo '' >&2
+if [[ -x "${CURL}" ]]; then
+	"${CURL}" --version >&2
+else
+	echo 'Unable to detect curl.' >&2
+fi
+echo '' >&2
+
+FETCH=$(command -v fetch 2>/dev/null)
+echo '-----'
+echo 'fetch:' >&2
+echo '' >&2
+if [[ -x "${FETCH}" ]]; then
+	"${FETCH}" --version >&2
+else
+	echo 'Unable to detect fetch.' >&2
+fi
+echo '' >&2
+
 GCC=$(command -v gcc 2>/dev/null)
 echo '-----'
 echo 'gcc:' >&2
@@ -104,6 +126,17 @@ else
 fi
 echo '' >&2
 
+RSCRIPT=$(command -v rscript 2>/dev/null)
+echo '-----'
+echo 'lintr:' >&2
+echo '' >&2
+if [[ -x "${RSCRIPT}" ]] && "${RSCRIPT}" -e 'packageVersion("lintr")' &>/dev/null; then
+	"${RSCRIPT}" -e 'packageVersion("lintr")' >&2
+else
+	echo 'Unable to detect lintr.' >&2
+fi
+echo '' >&2
+
 NODEJS=$(command -v node 2>/dev/null)
 echo '-----'
 echo 'Node.js:' >&2
@@ -123,6 +156,17 @@ if [[ -x "${NPM}" ]]; then
 	"${NPM}" --version >&2
 else
 	echo 'Unable to detect npm.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(command -v python 2>/dev/null)
+echo '-----'
+echo 'NumPy:' >&2
+echo '' >&2
+if [[ -x "${PYTHON}" ]] && "${PYTHON}" -m pip show numpy &>/dev/null; then
+	"${PYTHON}" -m pip show numpy >&2
+else
+	echo 'Unable to detect NumPy.' >&2
 fi
 echo '' >&2
 
@@ -200,6 +244,39 @@ if [[ -x "${R}" ]]; then
 	"${R}" --version >&2
 else
 	echo 'Unable to detect R.' >&2
+fi
+echo '' >&2
+
+RSCRIPT=$(command -v rscript 2>/dev/null)
+echo '-----'
+echo 'Rscript:' >&2
+echo '' >&2
+if [[ -x "${RSCRIPT}" ]]; then
+	"${RSCRIPT}" --version >&2
+else
+	echo 'Unable to detect Rscript.' >&2
+fi
+echo '' >&2
+
+PYTHON=$(command -v python 2>/dev/null)
+echo '-----'
+echo 'SciPy:' >&2
+echo '' >&2
+if [[ -x "${PYTHON}" ]] && "${PYTHON}" -m pip show scipy &>/dev/null; then
+	"${PYTHON}" -m pip show scipy >&2
+else
+	echo 'Unable to detect SciPy.' >&2
+fi
+echo '' >&2
+
+WGET=$(command -v wget 2>/dev/null)
+echo '-----'
+echo 'wget:' >&2
+echo '' >&2
+if [[ -x "${WGET}" ]]; then
+	"${WGET}" --version >&2
+else
+	echo 'Unable to detect wget.' >&2
 fi
 echo '' >&2
 
