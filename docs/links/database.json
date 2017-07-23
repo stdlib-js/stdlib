@@ -305,6 +305,17 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach": {
+    "id": "mdn-array-foreach",
+    "description": "Mozilla Developer Network (MDN) documentation for the Array.forEach() method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "foreach",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map": {
     "id": "mdn-array-map",
     "description": "Mozilla Developer Network (MDN) documentation for the Array.map() method.",
