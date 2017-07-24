@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum Unicode code point.
+
+    Examples
+    --------
+    > {{alias}}
+    1114111
+
+    See Also
+    --------
+
