@@ -1444,6 +1444,16 @@
       "lang"
     ]
   },
+  "https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx": {
+    "id": "extended-length-path",
+    "description": "Rules and limitations for file names and directory names on Windows.",
+    "short_url": "",
+    "keywords": [
+      "windows",
+      "filesystem",
+      "naming"
+    ]
+  },
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
