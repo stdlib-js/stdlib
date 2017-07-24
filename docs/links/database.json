@@ -403,6 +403,17 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some": {
+    "id": "mdn-array-some",
+    "description": "Mozilla Developer Network (MDN) documentation for the some Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift": {
     "id": "mdn-array-unshift",
     "description": "Mozilla Developer Network (MDN) documentation for the unshift Array.prototype method.",
@@ -773,6 +784,19 @@
       "envs"
     ]
   },
+  "https://en.wikipedia.org/wiki/Environment_variable#Windows": {
+    "id": "environment-variable-windows",
+    "description": "Wikipedia entry for environment variables on Windows operating systems.",
+    "short_url": "",
+    "keywords": [
+      "environment",
+      "variable",
+      "env",
+      "envvars",
+      "envs",
+      "windows"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Erlang_distribution": {
     "id": "erlang-distribution",
     "description": "Wikipedia entry for the Erlang distribution.",
@@ -846,6 +870,17 @@
       "inverse",
       "weibull",
       "frechet"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Function_composition_%28computer_science%29": {
+    "id": "function-composition",
+    "description": "Wikipedia entry for function composition.",
+    "short_url": "",
+    "keywords": [
+      "programming",
+      "cs",
+      "function",
+      "composition"
     ]
   },
   "https://en.wikipedia.org/wiki/Kurtosis": {
