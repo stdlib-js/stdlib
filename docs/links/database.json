@@ -315,6 +315,17 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every": {
+    "id": "mdn-array-every",
+    "description": "Mozilla Developer Network (MDN) documentation for the every Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "every",
+      "array",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find": {
     "id": "mdn-array-find",
     "description": "Mozilla Developer Network (MDN) documentation for the find Array.prototype method.",
