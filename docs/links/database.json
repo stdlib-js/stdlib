@@ -768,6 +768,36 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap": {
+    "id": "mdn-weakmap",
+    "description": "Mozilla Developer Network (MDN) documentation for WeakMap objects.",
+    "short_url": "",
+    "keywords": [
+      "weakmap",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet": {
+    "id": "mdn-weakset",
+    "description": "Mozilla Developer Network (MDN) documentation for WeakSet objects.",
+    "short_url": "",
+    "keywords": [
+      "weakset",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval": {
+    "id": "mdn-eval",
+    "description": "Mozilla Developer Network (MDN) documentation for the eval function.",
+    "short_url": "",
+    "keywords": [
+      "eval",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
     "id": "generator-function",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
@@ -994,6 +1024,16 @@
       "probability",
       "discrete",
       "degenerate"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Dirname": {
+    "id": "dirname",
+    "description": "A UNIX program which returns the directory-path name for a given path.",
+    "short_url": "",
+    "keywords": [
+      "unix",
+      "utilities",
+      "dirname"
     ]
   },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
