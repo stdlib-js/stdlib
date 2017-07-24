@@ -441,6 +441,27 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error": {
+    "id": "js-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the Error constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError": {
+    "id": "js-eval-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the EvalError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "evalerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name": {
     "id": "mdn-function-name",
     "description": "Mozilla Developer Network (MDN) documentation on the function.name property.",
@@ -488,6 +509,28 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError": {
+    "id": "js-range-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the RangeError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "rangeerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError": {
+    "id": "js-reference-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the ReferenceError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "referenceerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode": {
     "id": "mdn-string-fromcharcode",
     "description": "Mozilla Developer Network (MDN) documentation for the static method String.fromCharCode.",
@@ -531,6 +574,28 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError": {
+    "id": "js-syntax-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the SyntaxError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "syntaxerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError": {
+    "id": "js-type-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the TypeError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "typeerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray": {
     "id": "mdn-typed-array",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript typed arrays.",
@@ -541,6 +606,17 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError": {
+    "id": "js-uri-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the URIError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "urierror",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode": {
