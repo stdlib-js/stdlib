@@ -724,6 +724,50 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array": {
+    "id": "mdn-uint16array",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt16Arrays.",
+    "short_url": "",
+    "keywords": [
+      "uint16array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array": {
+    "id": "mdn-uint32array",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt32Arrays.",
+    "short_url": "",
+    "keywords": [
+      "uint32array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array": {
+    "id": "mdn-uint8array",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt8Arrays.",
+    "short_url": "",
+    "keywords": [
+      "uint8array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray": {
+    "id": "mdn-uint8clampedarray",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt8ClampedArrays.",
+    "short_url": "",
+    "keywords": [
+      "uint8clampedarray",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
     "id": "generator-function",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
