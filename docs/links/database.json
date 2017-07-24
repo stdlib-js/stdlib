@@ -1150,6 +1150,16 @@
       "string"
     ]
   },
+  "https://en.wikipedia.org/wiki/Unicode": {
+    "id": "unicode",
+    "description": "Wikipedia entry for Unicode, a computing industry standard for the consistent encoding, representation, and handling of text.",
+    "short_url": "",
+    "keywords": [
+      "unicode",
+      "standard",
+      "text"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Uniform_distribution_%28continuous%29": {
     "id": "uniform-distribution",
     "description": "Wikipedia entry for the continuous uniform distribution.",
