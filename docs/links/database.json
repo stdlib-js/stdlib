@@ -278,6 +278,16 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes": {
+    "id": "class",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 classes.",
+    "short_url": "",
+    "keywords": [
+      "class",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array": {
     "id": "mdn-array",
     "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object. ",
@@ -483,6 +493,16 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty": {
+    "id": "define-property",
+    "description": "Mozilla Developer Network (MDN) documentation for the Object.defineProperty() method.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf": {
