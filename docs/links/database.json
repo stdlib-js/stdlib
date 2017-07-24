@@ -1468,6 +1468,17 @@
       "binding"
     ]
   },
+  "https://nodejs.org/api/errors.html#errors_class_system_error": {
+    "id": "node-system-error",
+    "description": "Node.js documentation for the System Error class.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "error"
+    ]
+  },
   "https://nodejs.org/api/os.html#os_os_cpus": {
     "id": "node-os",
     "description": "Node.js documentation for the `cpus()` function of the `os` module.",
