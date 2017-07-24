@@ -472,6 +472,28 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array": {
+    "id": "mdn-float32array",
+    "description": "Mozilla Developer Network (MDN) documentation for Float32Arrays.",
+    "short_url": "",
+    "keywords": [
+      "float32array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array": {
+    "id": "mdn-float64array",
+    "description": "Mozilla Developer Network (MDN) documentation for Float64Arrays.",
+    "short_url": "",
+    "keywords": [
+      "float64array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name": {
     "id": "mdn-function-name",
     "description": "Mozilla Developer Network (MDN) documentation on the function.name property.",
