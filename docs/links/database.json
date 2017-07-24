@@ -279,7 +279,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes": {
-    "id": "class",
+    "id": "mdn-class",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 classes.",
     "short_url": "",
     "keywords": [
@@ -550,7 +550,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map": {
-    "id": "map",
+    "id": "mdn-map",
     "description": "Mozilla Developer Network (MDN) documentation for Map objects.",
     "short_url": "",
     "keywords": [
@@ -572,7 +572,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty": {
-    "id": "define-property",
+    "id": "mdn-define-property",
     "description": "Mozilla Developer Network (MDN) documentation for the Object.defineProperty() method.",
     "short_url": "",
     "keywords": [
@@ -810,7 +810,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
-    "id": "generator-function",
+    "id": "mdn-generator-function",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
     "short_url": "",
     "keywords": [
