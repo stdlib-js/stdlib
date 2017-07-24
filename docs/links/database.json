@@ -505,6 +505,49 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array": {
+    "id": "mdn-int16array",
+    "description": "Mozilla Developer Network (MDN) documentation for Int16Arrays.",
+    "short_url": "",
+    "keywords": [
+      "int16array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array": {
+    "id": "mdn-int32array",
+    "description": "Mozilla Developer Network (MDN) documentation for Int32Arrays.",
+    "short_url": "",
+    "keywords": [
+      "int32array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array": {
+    "id": "mdn-int8array",
+    "description": "Mozilla Developer Network (MDN) documentation for Int8Arrays.",
+    "short_url": "",
+    "keywords": [
+      "int8array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map": {
+    "id": "map",
+    "description": "Mozilla Developer Network (MDN) documentation for Map objects.",
+    "short_url": "",
+    "keywords": [
+      "map",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object": {
     "id": "mdn-object",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript objects.",
@@ -551,6 +594,16 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy": {
+    "id": "mdn-proxy",
+    "description": "Mozilla Developer Network (MDN) documentation for Proxy objects.",
+    "short_url": "",
+    "keywords": [
+      "proxy",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError": {
     "id": "js-range-error",
     "description": "Mozilla Developer Network (MDN) documentation for the RangeError constructor.",
@@ -569,6 +622,16 @@
     "keywords": [
       "error",
       "referenceerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set": {
+    "id": "mdn-set",
+    "description": "Mozilla Developer Network (MDN) documentation for Set objects.",
+    "short_url": "",
+    "keywords": [
+      "set",
       "javascript",
       "ecmascript"
     ]
@@ -657,6 +720,17 @@
     "keywords": [
       "error",
       "urierror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
+    "id": "generator-function",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "generator",
       "javascript",
       "ecmascript"
     ]
