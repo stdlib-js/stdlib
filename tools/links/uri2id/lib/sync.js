@@ -35,7 +35,7 @@ function uri2id( uri, options ) {
 	var err;
 	var db;
 	if ( !isURI( uri ) ) {
-		throw new TypeError( 'invalid input argument. Must provide a URI. Value: `'+uri+'`.' );
+		throw new TypeError( 'invalid input argument. First argument must be a URI. Value: `'+uri+'`.' );
 	}
 	opts = {
 		'database': config.database
