@@ -278,6 +278,16 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes": {
+    "id": "mdn-class",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 classes.",
+    "short_url": "",
+    "keywords": [
+      "class",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array": {
     "id": "mdn-array",
     "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object. ",
@@ -303,6 +313,17 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every": {
+    "id": "mdn-array-every",
+    "description": "Mozilla Developer Network (MDN) documentation for the every Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "every",
+      "array",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find": {
@@ -403,6 +424,17 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some": {
+    "id": "mdn-array-some",
+    "description": "Mozilla Developer Network (MDN) documentation for the some Array.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "prototype",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift": {
     "id": "mdn-array-unshift",
     "description": "Mozilla Developer Network (MDN) documentation for the unshift Array.prototype method.",
@@ -430,6 +462,49 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error": {
+    "id": "js-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the Error constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError": {
+    "id": "js-eval-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the EvalError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "evalerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array": {
+    "id": "mdn-float32array",
+    "description": "Mozilla Developer Network (MDN) documentation for Float32Arrays.",
+    "short_url": "",
+    "keywords": [
+      "float32array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array": {
+    "id": "mdn-float64array",
+    "description": "Mozilla Developer Network (MDN) documentation for Float64Arrays.",
+    "short_url": "",
+    "keywords": [
+      "float64array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name": {
     "id": "mdn-function-name",
     "description": "Mozilla Developer Network (MDN) documentation on the function.name property.",
@@ -437,6 +512,49 @@
     "keywords": [
       "function",
       "property",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array": {
+    "id": "mdn-int16array",
+    "description": "Mozilla Developer Network (MDN) documentation for Int16Arrays.",
+    "short_url": "",
+    "keywords": [
+      "int16array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array": {
+    "id": "mdn-int32array",
+    "description": "Mozilla Developer Network (MDN) documentation for Int32Arrays.",
+    "short_url": "",
+    "keywords": [
+      "int32array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array": {
+    "id": "mdn-int8array",
+    "description": "Mozilla Developer Network (MDN) documentation for Int8Arrays.",
+    "short_url": "",
+    "keywords": [
+      "int8array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map": {
+    "id": "mdn-map",
+    "description": "Mozilla Developer Network (MDN) documentation for Map objects.",
+    "short_url": "",
+    "keywords": [
+      "map",
       "javascript",
       "ecmascript"
     ]
@@ -451,6 +569,16 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty": {
+    "id": "mdn-define-property",
+    "description": "Mozilla Developer Network (MDN) documentation for the Object.defineProperty() method.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf": {
@@ -473,6 +601,48 @@
       "object",
       "prototype",
       "tostring",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy": {
+    "id": "mdn-proxy",
+    "description": "Mozilla Developer Network (MDN) documentation for Proxy objects.",
+    "short_url": "",
+    "keywords": [
+      "proxy",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError": {
+    "id": "js-range-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the RangeError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "rangeerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError": {
+    "id": "js-reference-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the ReferenceError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "referenceerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set": {
+    "id": "mdn-set",
+    "description": "Mozilla Developer Network (MDN) documentation for Set objects.",
+    "short_url": "",
+    "keywords": [
+      "set",
       "javascript",
       "ecmascript"
     ]
@@ -520,6 +690,28 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError": {
+    "id": "js-syntax-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the SyntaxError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "syntaxerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError": {
+    "id": "js-type-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the TypeError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "typeerror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray": {
     "id": "mdn-typed-array",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript typed arrays.",
@@ -530,6 +722,102 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError": {
+    "id": "js-uri-error",
+    "description": "Mozilla Developer Network (MDN) documentation for the URIError constructor.",
+    "short_url": "",
+    "keywords": [
+      "error",
+      "urierror",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array": {
+    "id": "mdn-uint16array",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt16Arrays.",
+    "short_url": "",
+    "keywords": [
+      "uint16array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array": {
+    "id": "mdn-uint32array",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt32Arrays.",
+    "short_url": "",
+    "keywords": [
+      "uint32array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array": {
+    "id": "mdn-uint8array",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt8Arrays.",
+    "short_url": "",
+    "keywords": [
+      "uint8array",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray": {
+    "id": "mdn-uint8clampedarray",
+    "description": "Mozilla Developer Network (MDN) documentation for UInt8ClampedArrays.",
+    "short_url": "",
+    "keywords": [
+      "uint8clampedarray",
+      "typedarray",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap": {
+    "id": "mdn-weakmap",
+    "description": "Mozilla Developer Network (MDN) documentation for WeakMap objects.",
+    "short_url": "",
+    "keywords": [
+      "weakmap",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet": {
+    "id": "mdn-weakset",
+    "description": "Mozilla Developer Network (MDN) documentation for WeakSet objects.",
+    "short_url": "",
+    "keywords": [
+      "weakset",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval": {
+    "id": "mdn-eval",
+    "description": "Mozilla Developer Network (MDN) documentation for the eval function.",
+    "short_url": "",
+    "keywords": [
+      "eval",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
+    "id": "mdn-generator-function",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "generator",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode": {
@@ -749,6 +1037,16 @@
       "degenerate"
     ]
   },
+  "https://en.wikipedia.org/wiki/Dirname": {
+    "id": "dirname",
+    "description": "A UNIX program which returns the directory-path name for a given path.",
+    "short_url": "",
+    "keywords": [
+      "unix",
+      "utilities",
+      "dirname"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
     "id": "entropy",
     "description": "Wikipedia entry for the concept of entropy from information theory.",
@@ -771,6 +1069,19 @@
       "env",
       "envvars",
       "envs"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Environment_variable#Windows": {
+    "id": "environment-variable-windows",
+    "description": "Wikipedia entry for environment variables on Windows operating systems.",
+    "short_url": "",
+    "keywords": [
+      "environment",
+      "variable",
+      "env",
+      "envvars",
+      "envs",
+      "windows"
     ]
   },
   "https://en.wikipedia.org/wiki/Erlang_distribution": {
@@ -846,6 +1157,17 @@
       "inverse",
       "weibull",
       "frechet"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Function_composition_%28computer_science%29": {
+    "id": "function-composition",
+    "description": "Wikipedia entry for function composition.",
+    "short_url": "",
+    "keywords": [
+      "programming",
+      "cs",
+      "function",
+      "composition"
     ]
   },
   "https://en.wikipedia.org/wiki/Kurtosis": {
@@ -1409,6 +1731,16 @@
       "lang"
     ]
   },
+  "https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx": {
+    "id": "extended-length-path",
+    "description": "Rules and limitations for file names and directory names on Windows.",
+    "short_url": "",
+    "keywords": [
+      "windows",
+      "filesystem",
+      "naming"
+    ]
+  },
   "https://nodejs.org/api/addons.html": {
     "id": "node-js-add-ons",
     "description": "Node.js documentation for native add-ons.",
@@ -1421,6 +1753,17 @@
       "addons",
       "bindings",
       "binding"
+    ]
+  },
+  "https://nodejs.org/api/errors.html#errors_class_system_error": {
+    "id": "node-system-error",
+    "description": "Node.js documentation for the System Error class.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "error"
     ]
   },
   "https://nodejs.org/api/os.html#os_os_cpus": {
