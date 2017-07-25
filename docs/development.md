@@ -47,6 +47,7 @@ The following vendor libraries can be automatically downloaded and compiled from
 * [Boost][boost]: portable C++ libraries
 * [OpenBLAS][openblas]: optimized BLAS library
 * [Emscripten][emscripten]: LLVM to JavaScript compiler
+* [WebAssembly Binary Toolkit][wabt]: suite of tools for WebAssembly
 
 
 ## Download
@@ -314,6 +315,7 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [boost]: http://www.boost.org/
 [openblas]: https://github.com/xianyi/OpenBLAS
 [emscripten]: http://kripken.github.io/emscripten-site/index.html
+[wabt]: https://github.com/WebAssembly/wabt
 
 [node-gyp]: https://github.com/nodejs/node-gyp
 
