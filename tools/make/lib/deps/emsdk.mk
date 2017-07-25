@@ -76,7 +76,7 @@ $(DEPS_EMSDK_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 
 # Extract.
 #
-# This target extracts a gzipped tar archive.
+# This target extracts a download.
 
 $(DEPS_EMSDK_BUILD_OUT): | $(DEPS_BUILD_DIR) $(DEPS_EMSDK_DOWNLOAD_OUT)
 	$(QUIET) echo 'Extracting Emscripten SDK...' >&2
