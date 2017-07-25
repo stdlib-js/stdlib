@@ -1693,6 +1693,28 @@
       "text"
     ]
   },
+  "https://github.com/stdlib-js/stdlib": {
+    "id": "stdlib-github",
+    "description": "The GitHub repository for stdlib, a standard library for JavaScript and Node.js.",
+    "short_url": "",
+    "keywords": [
+      "stdlib",
+      "stdlib-js",
+      "stdlib.js",
+      "standard",
+      "library",
+      "lib",
+      "javascript",
+      "js",
+      "node.js",
+      "node-js",
+      "node",
+      "nodejs",
+      "github",
+      "repository",
+      "repo"
+    ]
+  },
   "https://github.com/substack/node-browserify": {
     "id": "browserify",
     "description": "GitHub repository for browserify, a bundler for requiring Node.js modules in browser environments.",
