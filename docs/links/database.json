@@ -1183,6 +1183,19 @@
       "f"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fisher_transformation": {
+    "id": "fisher-transform",
+    "description": "Wikipedia entry for the Fisher Z transformation of the sample correlation coefficient.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "correlation",
+      "transform",
+      "hypothesis",
+      "testing"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
     "id": "frechet-distribution",
     "description": "Wikipedia entry for the Fréchet distribution.",
@@ -1300,6 +1313,17 @@
       "entropy",
       "information",
       "shannon"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient": {
+    "id": "pearson-correlation",
+    "description": "Wikipedia entry for the Pearsonc correlation coefficient.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "correlation",
+      "pearson"
     ]
   },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
