@@ -15,6 +15,13 @@ LINKS_URI2ID ?= $(NODE) $(TOOLS_DIR)/links/uri2id/bin/cli
 LINKS_URI2ID_FLAGS ?= \
 	--database $(ROOT_DIR)/docs/links/database.json
 
+# Define the command for resolving a URI from an id:
+LINKS_ID2URI ?= $(NODE) $(TOOLS_DIR)/links/id2uri/bin/cli
+
+# Define the command-line options to be used when executing the command:
+LINKS_ID2URI_FLAGS ?= \
+	--database $(ROOT_DIR)/docs/links/database.json
+
 
 # TARGETS #
 
@@ -27,6 +34,7 @@ links-insert: $(NODE_MODULES)
 
 .PHONY: links-insert
 
+
 # Resolve a link id.
 #
 # This target resolves a database link identifier from a URI.
@@ -35,3 +43,13 @@ links-uri2id: $(NODE_MODULES)
 	$(QUIET) $(LINKS_URI2ID) $(LINKS_URI2ID_FLAGS)
 
 .PHONY: links-uri2id
+
+
+# Resolve a URI.
+#
+# This target resolves a database URI from an id.
+
+links-id2uri: $(NODE_MODULES)
+	$(QUIET) $(LINKS_ID2URI) $(LINKS_ID2URI_FLAGS)
+
+.PHONY: links-id2uri
