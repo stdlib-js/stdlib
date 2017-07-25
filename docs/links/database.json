@@ -505,6 +505,19 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function": {
+    "id": "mdn-function",
+    "description": "Mozilla Developer Network (MDN) documentation for the Function object.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "func",
+      "fun",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name": {
     "id": "mdn-function-name",
     "description": "Mozilla Developer Network (MDN) documentation on the function.name property.",
@@ -643,6 +656,17 @@
     "short_url": "",
     "keywords": [
       "set",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String": {
+    "id": "mdn-string",
+    "description": "Mozilla Developer Network (MDN) documentation for the String object.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "globals",
       "javascript",
       "ecmascript"
     ]
@@ -859,6 +883,22 @@
       "documentation",
       "configuration",
       "settings"
+    ]
+  },
+  "https://doi.org/10.1109/32.92917": {
+    "id": "@vose:1991",
+    "description": "Digital Object Identifier for Vose, Michael D. 1991.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "ieee",
+      "random",
+      "rng",
+      "prng",
+      "distribution",
+      "dist"
     ]
   },
   "https://en.wikipedia.org/wiki/AWK": {
@@ -1183,6 +1223,19 @@
       "kurtosis",
       "tails",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation": {
+    "id": "lda",
+    "description": "Wikipedia for Latent Dirichlet Allocation (LDA)",
+    "short_url": "",
+    "keywords": [
+      "nlp",
+      "machinelearning",
+      "model",
+      "bayesian",
+      "mixedmembership",
+      "clustering"
     ]
   },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
