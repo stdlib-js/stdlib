@@ -92,7 +92,7 @@ function main() {
 	rl.on( 'close', onClose );
 	rl.on( 'SIGINT', onSIGINT );
 
-	console.log( '\nPlease provide the following information: \n' );
+	console.log( 'Please provide the following information...' );
 	rl.question( 'URI: ', onURI );
 
 	/**
