@@ -35,7 +35,7 @@ function clbk( error, id ) {
         throw error;
     }
     console.log( id );
-    // => bibtex
+    // => 'bibtex'
 }
 ```
 
@@ -71,7 +71,7 @@ if ( id instanceof Error ) {
     throw id;
 }
 console.log( id );
-// => bibtex
+// => 'bibtex'
 ```
 
 The method accepts the same `options` as [`uri2id()`](#async) above.
