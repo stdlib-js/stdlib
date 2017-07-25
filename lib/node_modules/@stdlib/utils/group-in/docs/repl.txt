@@ -1,0 +1,73 @@
+
+{{alias}}( obj, [options,] indicator )
+    Group values according to an indicator function.
+
+    When invoked, the indicator function is provided two arguments:
+
+    - `value`: object value
+    - `key`: object key
+
+    The value returned by an indicator function should be a value which can be
+    serialized as an object key.
+
+    If provided an empty object with no prototype, the function returns an empty
+    object.
+
+    The function iterates over an object's own and inherited properties.
+
+    Key iteration order is *not* guaranteed, and, thus, result order is *not*
+    guaranteed.
+
+    Parameters
+    ----------
+    obj: Object|Array|TypedArray
+        Input object to group.
+
+    options: Object (optional)
+        Options.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    options.returns: string (optional)
+        If `values`, values are returned; if `keys`, keys are returned; if `*`,
+        both keys and values are returned. Default: 'values'.
+
+    indicator: Function
+        Indicator function indicating which group a value in the input object
+        belongs to.
+
+    Returns
+    -------
+    out: Object
+        Group results.
+
+    Examples
+    --------
+    > function indicator( v ) {
+    ...     if ( v[ 0 ] === 'b' ) {
+    ...         return 'b';
+    ...     }
+    ...     return 'other';
+    ... };
+    > function Foo() { this.a = 'beep'; this.b = 'boop'; return this; };
+    > Foo.prototype = Object.create( null );
+    > Foo.prototype.c = 'foo';
+    > Foo.prototype.d = 'bar';
+    > var obj = new Foo();
+    > var out = {{alias}}( obj, indicator )
+    { 'b': [ 'beep', 'boop', 'bar' ], 'other': [ 'foo' ] }
+
+    // Output group results as keys:
+    > var opts = { 'returns': 'keys' };
+    > out = {{alias}}( obj, opts, indicator )
+    { 'b': [ 'a', 'b', 'd' ], 'other': [ 'c' ] }
+
+    // Output group results as key-value pairs:
+    > opts = { 'returns': '*' };
+    > out = {{alias}}( obj, opts, indicator )
+    { 'b': [['a','beep'], ['b','boop'], ['d','bar']], 'other': [['c','foo' ]] }
+
+    See Also
+    --------
+
