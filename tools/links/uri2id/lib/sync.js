@@ -26,7 +26,7 @@ var validate = require( './validate.js' );
 * @returns {(Error|string|null)} result
 *
 * @example
-* var uri = uri2id( 'http://www.bibtex.org/' );
+* var id = uri2id( 'http://www.bibtex.org/' );
 * // returns 'bibtex'
 */
 function uri2id( uri, options ) {
