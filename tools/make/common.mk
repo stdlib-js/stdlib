@@ -116,6 +116,9 @@ GIT_ADD ?= $(GIT) add
 # Define the command for committing files:
 GIT_COMMIT ?= $(GIT) commit
 
+# Define the command for CMake:
+CMAKE ?= cmake
+
 # Determine the `open` command:
 ifeq ($(OS), Darwin)
 	OPEN ?= open
