@@ -13,6 +13,7 @@ DEPS_CHECKSUMS_DIR ?= $(DEPS_DIR)/checksums
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/wabt.mk
 
 
 # TARGETS #
@@ -37,7 +38,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: install-deps-boost install-deps-openblas install-deps-emsdk
+install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt
 
 .PHONY: install-deps
 
@@ -65,7 +66,7 @@ clean-deps-build:
 #
 # This target removes vendor dependency installation tests.
 
-clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests
+clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests clean-deps-wabt-tests
 
 .PHONY: clean-deps-tests
 
