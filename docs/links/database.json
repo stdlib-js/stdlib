@@ -8,6 +8,16 @@
       "node.js"
     ]
   },
+  "http://davidcel.is/posts/stop-validating-email-addresses-with-regex/": {
+    "id": "validate-email-address",
+    "description": "Blog entry by David Celis arguing that one should not try to validate email addresses via regular expressions.",
+    "short_url": "",
+    "keywords": [
+      "regexp",
+      "email",
+      "validation"
+    ]
+  },
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
@@ -16,6 +26,22 @@
       "configuration",
       "editor",
       "ide"
+    ]
+  },
+  "http://electron.atom.io/": {
+    "id": "electron",
+    "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
+    "short_url": "",
+    "keywords": [
+      "electron",
+      "atom",
+      "github",
+      "css",
+      "javascript",
+      "ecmascript",
+      "html",
+      "desktop",
+      "application"
     ]
   },
   "http://en.wikipedia.org/wiki/Anagram": {
@@ -493,6 +519,17 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date": {
+    "id": "mdn-date-object",
+    "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Date object.",
+    "short_url": "",
+    "keywords": [
+      "date",
+      "globals",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error": {
