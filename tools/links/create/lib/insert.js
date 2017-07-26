@@ -36,6 +36,7 @@ function insert( db, link ) {
 
 	desc = link.description;
 	desc = trim( desc );
+
 	// Add period to end of description if forgotten:
 	if ( !REGEXP_END.test( desc ) ) {
 		desc += '.';
