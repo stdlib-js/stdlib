@@ -703,6 +703,18 @@
       "unicode"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes": {
+    "id": "mdn-includes",
+    "description": "Mozilla Developer Network (MDN) documentation for the includes String.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "prototype",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag": {
     "id": "mdn-symbol-tostringtag",
     "description": "Mozilla Developer Network (MDN) documentation for the Symbol.toStringTag property.",
@@ -866,6 +878,18 @@
       "javascript",
       "ecmascript",
       "js"
+    ]
+  },
+  "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty": {
+    "id": "mdn-object-has-own-property",
+    "description": "Mozilla Developer Network (MDN) documentation for the hasOwnProperty Object.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "prototype",
+      "globals",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://docs.travis-ci.com/user/customizing-the-build": {
