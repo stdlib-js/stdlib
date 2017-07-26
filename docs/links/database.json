@@ -505,6 +505,19 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function": {
+    "id": "mdn-function",
+    "description": "Mozilla Developer Network (MDN) documentation for the Function object.",
+    "short_url": "",
+    "keywords": [
+      "function",
+      "func",
+      "fun",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name": {
     "id": "mdn-function-name",
     "description": "Mozilla Developer Network (MDN) documentation on the function.name property.",
@@ -643,6 +656,17 @@
     "short_url": "",
     "keywords": [
       "set",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String": {
+    "id": "mdn-string",
+    "description": "Mozilla Developer Network (MDN) documentation for the String object.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "globals",
       "javascript",
       "ecmascript"
     ]
@@ -859,6 +883,22 @@
       "documentation",
       "configuration",
       "settings"
+    ]
+  },
+  "https://doi.org/10.1109/32.92917": {
+    "id": "@vose:1991",
+    "description": "Digital Object Identifier for Vose, Michael D. 1991.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "ieee",
+      "random",
+      "rng",
+      "prng",
+      "distribution",
+      "dist"
     ]
   },
   "https://en.wikipedia.org/wiki/AWK": {
@@ -1143,6 +1183,19 @@
       "f"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fisher_transformation": {
+    "id": "fisher-transform",
+    "description": "Wikipedia entry for the Fisher Z transformation of the sample correlation coefficient.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "correlation",
+      "transform",
+      "hypothesis",
+      "testing"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
     "id": "frechet-distribution",
     "description": "Wikipedia entry for the Fréchet distribution.",
@@ -1183,6 +1236,19 @@
       "kurtosis",
       "tails",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation": {
+    "id": "lda",
+    "description": "Wikipedia for Latent Dirichlet Allocation (LDA)",
+    "short_url": "",
+    "keywords": [
+      "nlp",
+      "machinelearning",
+      "model",
+      "bayesian",
+      "mixedmembership",
+      "clustering"
     ]
   },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
@@ -1247,6 +1313,17 @@
       "entropy",
       "information",
       "shannon"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient": {
+    "id": "pearson-correlation",
+    "description": "Wikipedia entry for the Pearsonc correlation coefficient.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "correlation",
+      "pearson"
     ]
   },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
