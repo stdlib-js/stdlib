@@ -18,6 +18,28 @@
       "ide"
     ]
   },
+  "http://en.wikipedia.org/wiki/Anagram": {
+    "id": "anagram",
+    "description": "Wikipedia entry for anagrams.",
+    "short_url": "",
+    "keywords": [
+      "alphabetical",
+      "anagram",
+      "words",
+      "letters"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Diacritic": {
+    "id": "diacritics",
+    "description": "Wikipedia entry on diacritics.",
+    "short_url": "",
+    "keywords": [
+      "typography",
+      "punctuation",
+      "diacritics",
+      "glyph"
+    ]
+  },
   "http://eslint.org/": {
     "id": "eslint",
     "description": "A pluggable linting utility for JavaScript. Official website.",
@@ -1625,6 +1647,17 @@
       "probability",
       "continuous",
       "weibull"
+    ]
+  },
+  "https://en.wiktionary.org/wiki/alphagram": {
+    "id": "alphagram",
+    "description": "Wiktionary entry for alphagrams.",
+    "short_url": "",
+    "keywords": [
+      "alphabetical",
+      "anagram",
+      "words",
+      "letters"
     ]
   },
   "https://git-scm.com/": {
