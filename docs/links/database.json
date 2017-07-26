@@ -167,6 +167,17 @@
       "binary"
     ]
   },
+  "http://www.2ality.com/2013/05/quirk-array-like-objects.html": {
+    "id": "array-like",
+    "description": "Blog post by Dr. Axel Rauschmeyer on array-like objects in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "arraylike",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "http://www.2ality.com/2015/09/function-names-es6.html": {
     "id": "2ality-function-names",
     "description": "Blog post by Dr. Axel Rauschmeyer on the name property of a JavaScript function.",
@@ -947,6 +958,16 @@
       "dist"
     ]
   },
+  "https://en.wikipedia.org/wiki/ASCII": {
+    "id": "ascii",
+    "description": "Wikipedia entry for the \"American Standard Code for Information Interchange\" (ASCII) character encoding standard.",
+    "short_url": "",
+    "keywords": [
+      "ascii",
+      "encoding",
+      "standard"
+    ]
+  },
   "https://en.wikipedia.org/wiki/AWK": {
     "id": "awk",
     "description": "Wikipedia entry for the AWK programming language.",
@@ -1107,6 +1128,17 @@
       "probability",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Darwin_%28operating_system%29": {
+    "id": "darwin",
+    "description": "Wikipedia entry for the Darwin Unix operating system by Apple Inc.",
+    "short_url": "",
+    "keywords": [
+      "os",
+      "unix",
+      "macos",
+      "ios"
     ]
   },
   "https://en.wikipedia.org/wiki/Degenerate_distribution": {
@@ -1796,6 +1828,19 @@
       "text",
       "editor",
       "json"
+    ]
+  },
+  "https://github.com/feross/buffer": {
+    "id": "browser-buffer",
+    "description": "Browserifiable module of the Node.js Buffer API by Feross Aboukhadijeh.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "buffer",
+      "browserify",
+      "browser"
     ]
   },
   "https://github.com/pypa/pip": {
