@@ -93,6 +93,8 @@
 
    * [`docute`](https://github.com/egoist/docute)
 
+   * [`sphinx-js`](https://github.com/erikrose/sphinx-js)
+
    * ...
 
 10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
@@ -1678,6 +1680,14 @@
 10. Should plot `autoRender` be "opt-in", rather than "opt-out"?
 
 11. plot svg components should have factory methods
+
+12. provided index to `isDefined`
+
+13. setting properties should only trigger a `change` event when the desired value is different from the existing value
+
+14. Sort properties/options in alphabetical order
+
+15. Add intro description to each component (e.g., annotations, defs, ...) stating purpose and use case
 
 
 ---
