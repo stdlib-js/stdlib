@@ -66,6 +66,19 @@
       "glyph"
     ]
   },
+  "http://en.wikipedia.org/wiki/Endianness": {
+    "id": "endianness",
+    "description": "Wikipedia entry for endianness, which governs how a range of bytes in computer memory is interpreted.",
+    "short_url": "",
+    "keywords": [
+      "bigendian",
+      "littleendian",
+      "memory",
+      "computer",
+      "bytes",
+      "bit"
+    ]
+  },
   "http://eslint.org/": {
     "id": "eslint",
     "description": "A pluggable linting utility for JavaScript. Official website.",
@@ -343,6 +356,17 @@
     "short_url": "",
     "keywords": [
       "class",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects": {
+    "id": "mdn-builtins",
+    "description": "Mozilla Developer Network (MDN) documentation on JavaScript's built-in objects as well as their methods and properties.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "globals",
       "javascript",
       "ecmascript"
     ]
