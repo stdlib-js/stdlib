@@ -31,6 +31,7 @@
 	".tmpl",
 	".txt",
 	".wasm",
+	".wast",
 	".woff",
 	".yml",
 	".xml"
