@@ -8,6 +8,16 @@
       "node.js"
     ]
   },
+  "http://davidcel.is/posts/stop-validating-email-addresses-with-regex/": {
+    "id": "validate-email-address",
+    "description": "Blog entry by David Celis arguing that one should not try to validate email addresses via regular expressions.",
+    "short_url": "",
+    "keywords": [
+      "regexp",
+      "email",
+      "validation"
+    ]
+  },
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
@@ -16,6 +26,44 @@
       "configuration",
       "editor",
       "ide"
+    ]
+  },
+  "http://electron.atom.io/": {
+    "id": "electron",
+    "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
+    "short_url": "",
+    "keywords": [
+      "electron",
+      "atom",
+      "github",
+      "css",
+      "javascript",
+      "ecmascript",
+      "html",
+      "desktop",
+      "application"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Anagram": {
+    "id": "anagram",
+    "description": "Wikipedia entry for anagrams.",
+    "short_url": "",
+    "keywords": [
+      "alphabetical",
+      "anagram",
+      "words",
+      "letters"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Diacritic": {
+    "id": "diacritics",
+    "description": "Wikipedia entry on diacritics.",
+    "short_url": "",
+    "keywords": [
+      "typography",
+      "punctuation",
+      "diacritics",
+      "glyph"
     ]
   },
   "http://eslint.org/": {
@@ -143,6 +191,17 @@
       "wasm",
       "asm",
       "binary"
+    ]
+  },
+  "http://www.2ality.com/2013/05/quirk-array-like-objects.html": {
+    "id": "array-like",
+    "description": "Blog post by Dr. Axel Rauschmeyer on array-like objects in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "arraylike",
+      "javascript",
+      "ecmascript"
     ]
   },
   "http://www.2ality.com/2015/09/function-names-es6.html": {
@@ -462,8 +521,19 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date": {
+    "id": "mdn-date-object",
+    "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Date object.",
+    "short_url": "",
+    "keywords": [
+      "date",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error": {
-    "id": "js-error",
+    "id": "mdn-error",
     "description": "Mozilla Developer Network (MDN) documentation for the Error constructor.",
     "short_url": "",
     "keywords": [
@@ -473,7 +543,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError": {
-    "id": "js-eval-error",
+    "id": "mdn-eval-error",
     "description": "Mozilla Developer Network (MDN) documentation for the EvalError constructor.",
     "short_url": "",
     "keywords": [
@@ -606,6 +676,19 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable": {
+    "id": "mdn-object-property-is-enumerable",
+    "description": "Mozilla Developer Network (MDN) documentation for the propertyIsEnumerable Object.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "property",
+      "enumerable",
+      "object",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString": {
     "id": "object-to-string",
     "description": "Mozilla Developer Network (MDN) documentation for the Object.toString() method.",
@@ -629,7 +712,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError": {
-    "id": "js-range-error",
+    "id": "mdn-range-error",
     "description": "Mozilla Developer Network (MDN) documentation for the RangeError constructor.",
     "short_url": "",
     "keywords": [
@@ -640,7 +723,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError": {
-    "id": "js-reference-error",
+    "id": "mdn-reference-error",
     "description": "Mozilla Developer Network (MDN) documentation for the ReferenceError constructor.",
     "short_url": "",
     "keywords": [
@@ -703,6 +786,18 @@
       "unicode"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes": {
+    "id": "mdn-includes",
+    "description": "Mozilla Developer Network (MDN) documentation for the includes String.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "string",
+      "prototype",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag": {
     "id": "mdn-symbol-tostringtag",
     "description": "Mozilla Developer Network (MDN) documentation for the Symbol.toStringTag property.",
@@ -715,7 +810,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError": {
-    "id": "js-syntax-error",
+    "id": "mdn-syntax-error",
     "description": "Mozilla Developer Network (MDN) documentation for the SyntaxError constructor.",
     "short_url": "",
     "keywords": [
@@ -726,7 +821,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError": {
-    "id": "js-type-error",
+    "id": "mdn-type-error",
     "description": "Mozilla Developer Network (MDN) documentation for the TypeError constructor.",
     "short_url": "",
     "keywords": [
@@ -749,7 +844,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError": {
-    "id": "js-uri-error",
+    "id": "mdn-uri-error",
     "description": "Mozilla Developer Network (MDN) documentation for the URIError constructor.",
     "short_url": "",
     "keywords": [
@@ -833,6 +928,17 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite": {
+    "id": "mdn-is-finite",
+    "description": "Mozilla Developer Network (MDN) documentation of the isFinite global JavaScript function.",
+    "short_url": "",
+    "keywords": [
+      "isfinite",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
     "id": "mdn-generator-function",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
@@ -868,6 +974,18 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty": {
+    "id": "mdn-object-has-own-property",
+    "description": "Mozilla Developer Network (MDN) documentation for the hasOwnProperty Object.prototype method.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "prototype",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://docs.travis-ci.com/user/customizing-the-build": {
     "id": "travis-ci-customing-the-build",
     "description": "Travis CI documentation for customizing a build.",
@@ -899,6 +1017,16 @@
       "prng",
       "distribution",
       "dist"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/ASCII": {
+    "id": "ascii",
+    "description": "Wikipedia entry for the \"American Standard Code for Information Interchange\" (ASCII) character encoding standard.",
+    "short_url": "",
+    "keywords": [
+      "ascii",
+      "encoding",
+      "standard"
     ]
   },
   "https://en.wikipedia.org/wiki/AWK": {
@@ -1061,6 +1189,17 @@
       "probability",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Darwin_%28operating_system%29": {
+    "id": "darwin",
+    "description": "Wikipedia entry for the Darwin Unix operating system by Apple Inc.",
+    "short_url": "",
+    "keywords": [
+      "os",
+      "unix",
+      "macos",
+      "ios"
     ]
   },
   "https://en.wikipedia.org/wiki/Degenerate_distribution": {
@@ -1603,6 +1742,17 @@
       "weibull"
     ]
   },
+  "https://en.wiktionary.org/wiki/alphagram": {
+    "id": "alphagram",
+    "description": "Wiktionary entry for alphagrams.",
+    "short_url": "",
+    "keywords": [
+      "alphabetical",
+      "anagram",
+      "words",
+      "letters"
+    ]
+  },
   "https://git-scm.com/": {
     "id": "git",
     "description": "The official website for Git, a free and open-source distributed version control system.",
@@ -1739,6 +1889,19 @@
       "text",
       "editor",
       "json"
+    ]
+  },
+  "https://github.com/feross/buffer": {
+    "id": "browser-buffer",
+    "description": "Browserifiable module of the Node.js Buffer API by Feross Aboukhadijeh.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "buffer",
+      "browserify",
+      "browser"
     ]
   },
   "https://github.com/pypa/pip": {
