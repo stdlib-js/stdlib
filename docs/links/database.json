@@ -533,7 +533,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error": {
-    "id": "js-error",
+    "id": "mdn-error",
     "description": "Mozilla Developer Network (MDN) documentation for the Error constructor.",
     "short_url": "",
     "keywords": [
@@ -543,7 +543,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError": {
-    "id": "js-eval-error",
+    "id": "mdn-eval-error",
     "description": "Mozilla Developer Network (MDN) documentation for the EvalError constructor.",
     "short_url": "",
     "keywords": [
@@ -712,7 +712,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError": {
-    "id": "js-range-error",
+    "id": "mdn-range-error",
     "description": "Mozilla Developer Network (MDN) documentation for the RangeError constructor.",
     "short_url": "",
     "keywords": [
@@ -723,7 +723,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError": {
-    "id": "js-reference-error",
+    "id": "mdn-reference-error",
     "description": "Mozilla Developer Network (MDN) documentation for the ReferenceError constructor.",
     "short_url": "",
     "keywords": [
@@ -810,7 +810,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError": {
-    "id": "js-syntax-error",
+    "id": "mdn-syntax-error",
     "description": "Mozilla Developer Network (MDN) documentation for the SyntaxError constructor.",
     "short_url": "",
     "keywords": [
@@ -821,7 +821,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError": {
-    "id": "js-type-error",
+    "id": "mdn-type-error",
     "description": "Mozilla Developer Network (MDN) documentation for the TypeError constructor.",
     "short_url": "",
     "keywords": [
@@ -844,7 +844,7 @@
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError": {
-    "id": "js-uri-error",
+    "id": "mdn-uri-error",
     "description": "Mozilla Developer Network (MDN) documentation for the URIError constructor.",
     "short_url": "",
     "keywords": [
@@ -924,6 +924,17 @@
     "short_url": "",
     "keywords": [
       "eval",
+      "javascript",
+      "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite": {
+    "id": "mdn-is-finite",
+    "description": "Mozilla Developer Network (MDN) documentation of the isFinite global JavaScript function.",
+    "short_url": "",
+    "keywords": [
+      "isfinite",
+      "globals",
       "javascript",
       "ecmascript"
     ]
