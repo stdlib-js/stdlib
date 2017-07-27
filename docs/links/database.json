@@ -324,6 +324,19 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API": {
+    "id": "mdn-web-workers-api",
+    "description": "Mozilla Developer Network (MDN) documentation on the Web Workers API.",
+    "short_url": "",
+    "keywords": [
+      "webworker",
+      "worker",
+      "api",
+      "browser",
+      "application",
+      "web"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": {
     "id": "window-open",
     "description": "Mozilla Developer Network (MDN) documentation for the Window.open() function.",
@@ -1764,6 +1777,17 @@
       "probability",
       "continuous",
       "weibull"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Whitespace_character": {
+    "id": "whitespace",
+    "description": "Wikipedia entry on whitespace characters.",
+    "short_url": "",
+    "keywords": [
+      "whitespace",
+      "encoding",
+      "cs",
+      "character"
     ]
   },
   "https://en.wiktionary.org/wiki/alphagram": {
