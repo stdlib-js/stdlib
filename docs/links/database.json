@@ -1502,6 +1502,36 @@
       "type"
     ]
   },
+  "https://en.wikipedia.org/wiki/Inverse_Gamma_distribution": {
+    "id": "invgamma-distribution",
+    "description": "Wikipedia entry for the inverse gamma distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "invgamma",
+      "inverse",
+      "gamma",
+      "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
+    "id": "kumaraswamy-distribution",
+    "description": "Wikipedia entry for Kumaraswamy's double bounded distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "kumaraswamy"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Kurtosis": {
     "id": "kurtosis",
     "description": "Wikipedia entry for the excess kurtosis of a probability distribution.",
