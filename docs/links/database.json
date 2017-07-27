@@ -18,6 +18,17 @@
       "validation"
     ]
   },
+  "http://ecma-international.org/ecma-262/5.1/#sec-9.12": {
+    "id": "ecma-262-same-value-algorithm",
+    "description": "ECMAScript 5 specification of the SameValue algorithm.",
+    "short_url": "",
+    "keywords": [
+      "equal",
+      "same",
+      "ecmascript",
+      "javascript"
+    ]
+  },
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
@@ -858,6 +869,17 @@
       "globals",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol": {
+    "id": "mdn-symbol",
+    "description": "Mozilla Developer Network (MDN) documentation for the Symbol object.",
+    "short_url": "",
+    "keywords": [
+      "symbol",
+      "key",
+      "ecmascript",
+      "javascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag": {
@@ -2161,6 +2183,18 @@
       "node.js",
       "process",
       "platform"
+    ]
+  },
+  "https://nodejs.org/api/stream.html": {
+    "id": "nodejs-stream",
+    "description": "Documentation for the Node.js base stream API.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "node",
+      "stream",
+      "api"
     ]
   },
   "https://nodejs.org/api/tty.html#tty_tty": {
