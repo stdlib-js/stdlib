@@ -1715,6 +1715,36 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Normal_distribution": {
+    "id": "normal-distribution",
+    "description": "Wikipedia entry for the normal distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "normal",
+      "gaussian"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Pareto_distribution": {
+    "id": "pareto-distribution",
+    "description": "Wikipedia entry for the various Pareto distributions.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "pareto",
+      "extremevalue"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient": {
     "id": "pearson-correlation",
     "description": "Wikipedia entry for the Pearsonc correlation coefficient.",
