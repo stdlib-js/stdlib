@@ -1446,6 +1446,48 @@
       "composition"
     ]
   },
+  "https://en.wikipedia.org/wiki/Gamma_distribution": {
+    "id": "gamma-distribution",
+    "description": "Wikipedia entry for the gamma distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "gamma"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Geometric_distribution": {
+    "id": "geometric-distribution",
+    "description": "Wikipedia entry for the geometric distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete",
+      "geometric"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Gumbel_distribution": {
+    "id": "gumbel-distribution",
+    "description": "Wikipedia entry for the Gumbel distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "gumbel"
+    ]
+  },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
     "id": "ieee754",
     "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
@@ -1849,6 +1891,20 @@
       "encoding",
       "cs",
       "character"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/hypergeometric_distribution": {
+    "id": "hypergeometric-distribution",
+    "description": "Wikipedia entry for the hypergeometric distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete",
+      "hypergeometric"
     ]
   },
   "https://en.wiktionary.org/wiki/alphagram": {
