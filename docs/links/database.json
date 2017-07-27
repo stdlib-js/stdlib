@@ -1589,6 +1589,20 @@
       "clustering"
     ]
   },
+  "https://en.wikipedia.org/wiki/Logistic_distribution": {
+    "id": "logistic-distribution",
+    "description": "Wikipedia entry for the logistic distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "logistic"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
