@@ -18,6 +18,17 @@
       "validation"
     ]
   },
+  "http://ecma-international.org/ecma-262/5.1/#sec-9.12": {
+    "id": "ecma-262-same-value-algorithm",
+    "description": "ECMAScript 5 specification of the SameValue algorithm.",
+    "short_url": "",
+    "keywords": [
+      "equal",
+      "same",
+      "ecmascript",
+      "javascript"
+    ]
+  },
   "http://editorconfig.org/": {
     "id": "editorconfig",
     "description": "EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. Official website.",
@@ -64,6 +75,32 @@
       "punctuation",
       "diacritics",
       "glyph"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/Endianness": {
+    "id": "endianness",
+    "description": "Wikipedia entry for endianness, which governs how a range of bytes in computer memory is interpreted.",
+    "short_url": "",
+    "keywords": [
+      "bigendian",
+      "littleendian",
+      "memory",
+      "computer",
+      "bytes",
+      "bit"
+    ]
+  },
+  "http://en.wikipedia.org/wiki/URI_scheme": {
+    "id": "uri",
+    "description": "Wikipedia entry on Uniform Recource Identifiers (URIs) to identify resources in a network.",
+    "short_url": "",
+    "keywords": [
+      "internet",
+      "web",
+      "uri",
+      "standard",
+      "identifier",
+      "protocol"
     ]
   },
   "http://eslint.org/": {
@@ -265,7 +302,7 @@
   },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
     "id": "webkit-bug-7726",
-    "description": "Webkit bug report related to the naming of anonymous functions. ",
+    "description": "Webkit bug report related to the naming of anonymous functions.",
     "short_url": "",
     "keywords": [
       "function",
@@ -291,13 +328,25 @@
   },
   "https://creativecommons.org/publicdomain/zero/1.0": {
     "id": "cc0",
-    "description": "Creative commons public domain dedication (CC0 1.0 Universal license). ",
+    "description": "Creative commons public domain dedication (CC0 1.0 Universal license).",
     "short_url": "",
     "keywords": [
       "license",
       "public",
       "domain",
       "cc0"
+    ]
+  },
+  "https://danielmiessler.com/study/url-uri/": {
+    "id": "difference-url-uri",
+    "description": "Blog post on the difference between URIs and URLs.",
+    "short_url": "",
+    "keywords": [
+      "url",
+      "uri",
+      "identifier",
+      "access",
+      "protocol"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
@@ -309,6 +358,19 @@
       "browser",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API": {
+    "id": "mdn-web-workers-api",
+    "description": "Mozilla Developer Network (MDN) documentation on the Web Workers API.",
+    "short_url": "",
+    "keywords": [
+      "webworker",
+      "worker",
+      "api",
+      "browser",
+      "application",
+      "web"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": {
@@ -347,9 +409,20 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects": {
+    "id": "mdn-builtins",
+    "description": "Mozilla Developer Network (MDN) documentation on JavaScript's built-in objects as well as their methods and properties.",
+    "short_url": "",
+    "keywords": [
+      "object",
+      "globals",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array": {
     "id": "mdn-array",
-    "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object. ",
+    "description": "Mozilla Developer Network (MDN) documentation for the JavaScript Array object.",
     "short_url": "",
     "keywords": [
       "globals",
@@ -796,6 +869,17 @@
       "globals",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol": {
+    "id": "mdn-symbol",
+    "description": "Mozilla Developer Network (MDN) documentation for the Symbol object.",
+    "short_url": "",
+    "keywords": [
+      "symbol",
+      "key",
+      "ecmascript",
+      "javascript"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag": {
@@ -1362,6 +1446,20 @@
       "composition"
     ]
   },
+  "https://en.wikipedia.org/wiki/IEEE_floating_point": {
+    "id": "ieee754",
+    "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
+    "short_url": "",
+    "keywords": [
+      "floatingpoint",
+      "number",
+      "float",
+      "ieee",
+      "standard",
+      "arithmetic",
+      "type"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Kurtosis": {
     "id": "kurtosis",
     "description": "Wikipedia entry for the excess kurtosis of a probability distribution.",
@@ -1742,6 +1840,17 @@
       "weibull"
     ]
   },
+  "https://en.wikipedia.org/wiki/Whitespace_character": {
+    "id": "whitespace",
+    "description": "Wikipedia entry on whitespace characters.",
+    "short_url": "",
+    "keywords": [
+      "whitespace",
+      "encoding",
+      "cs",
+      "character"
+    ]
+  },
   "https://en.wiktionary.org/wiki/alphagram": {
     "id": "alphagram",
     "description": "Wiktionary entry for alphagrams.",
@@ -2005,6 +2114,20 @@
       "lang"
     ]
   },
+  "https://msdn.microsoft.com/en-us/library/gg465305.aspx": {
+    "id": "unc",
+    "description": "Microsoft Developer Network documentation on Universal Naming Convention (UNC) strings.",
+    "short_url": "",
+    "keywords": [
+      "lan",
+      "windows",
+      "shared",
+      "network",
+      "controller",
+      "syntax",
+      "path"
+    ]
+  },
   "https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx": {
     "id": "extended-length-path",
     "description": "Rules and limitations for file names and directory names on Windows.",
@@ -2060,6 +2183,18 @@
       "node.js",
       "process",
       "platform"
+    ]
+  },
+  "https://nodejs.org/api/stream.html": {
+    "id": "nodejs-stream",
+    "description": "Documentation for the Node.js base stream API.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "node",
+      "stream",
+      "api"
     ]
   },
   "https://nodejs.org/api/tty.html#tty_tty": {

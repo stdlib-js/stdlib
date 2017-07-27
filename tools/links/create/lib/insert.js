@@ -4,6 +4,12 @@
 
 var debug = require( 'debug' )( 'links:insert' );
 var getKeys = require( 'object-keys' ).shim();
+var trim = require( '@stdlib/string/trim' );
+
+
+// VARIABLES //
+
+var REGEXP_END = /[.")?!]$/;
 
 
 // MAIN //
@@ -18,6 +24,7 @@ var getKeys = require( 'object-keys' ).shim();
 */
 function insert( db, link ) {
 	var keys;
+	var desc;
 	var out;
 	var key;
 	var uri;
@@ -26,6 +33,14 @@ function insert( db, link ) {
 
 	keys = getKeys( db );
 	uri = link.uri; // TODO: percent-encode URI
+
+	desc = link.description;
+	desc = trim( desc );
+
+	// Add period to end of description if forgotten:
+	if ( !REGEXP_END.test( desc ) ) {
+		desc += '.';
+	}
 
 	// Check for an existing URI entry or identifier...
 	for ( i = 0; i < keys.length; i++ ) {
@@ -54,7 +69,7 @@ function insert( db, link ) {
 		if ( key === uri ) {
 			out[ key ] = {
 				'id': link.id,
-				'description': link.description,
+				'description': desc,
 				'short_url': '',
 				'keywords': ( link.keywords ) ? link.keywords : []
 			};
