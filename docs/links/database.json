@@ -1589,6 +1589,20 @@
       "clustering"
     ]
   },
+  "https://en.wikipedia.org/wiki/Log-normal_distribution": {
+    "id": "lognormal-distribution",
+    "description": "Wikipedia entry for the lognormal distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "lognormal"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Logistic_distribution": {
     "id": "logistic-distribution",
     "description": "Wikipedia entry for the logistic distribution.",
