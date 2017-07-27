@@ -1424,6 +1424,20 @@
       "composition"
     ]
   },
+  "https://en.wikipedia.org/wiki/IEEE_floating_point": {
+    "id": "ieee754",
+    "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
+    "short_url": "",
+    "keywords": [
+      "floatingpoint",
+      "number",
+      "float",
+      "ieee",
+      "standard",
+      "arithmetic",
+      "type"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Kurtosis": {
     "id": "kurtosis",
     "description": "Wikipedia entry for the excess kurtosis of a probability distribution.",
@@ -2076,6 +2090,20 @@
       "numeric computing",
       "language",
       "lang"
+    ]
+  },
+  "https://msdn.microsoft.com/en-us/library/gg465305.aspx": {
+    "id": "unc",
+    "description": "Microsoft Developer Network documentation on Universal Naming Convention (UNC) strings.",
+    "short_url": "",
+    "keywords": [
+      "lan",
+      "windows",
+      "shared",
+      "network",
+      "controller",
+      "syntax",
+      "path"
     ]
   },
   "https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx": {
