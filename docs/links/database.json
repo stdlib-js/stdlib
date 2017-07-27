@@ -1681,6 +1681,40 @@
       "shannon"
     ]
   },
+  "https://en.wikipedia.org/wiki/Negative_binomial_distribution": {
+    "id": "negative-binomial-distribution",
+    "description": "Wikipedia entry for the negative binomial distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "discrete",
+      "nbinom",
+      "negbinom",
+      "negativebinomial"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Negative_binomial_distribution#Gamma.E2.80.93Poisson_mixture": {
+    "id": "negative-binomial-mixture-representation",
+    "description": "Representation of the negative binomial distribution as a mixture of gammas.",
+    "short_url": "",
+    "keywords": [
+      "mixture",
+      "gamma",
+      "binomial",
+      "nbinom",
+      "negbinom",
+      "negativebinomial",
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient": {
     "id": "pearson-correlation",
     "description": "Wikipedia entry for the Pearsonc correlation coefficient.",
