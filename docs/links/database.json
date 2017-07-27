@@ -1547,6 +1547,35 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/L%C3%A9vy_distribution": {
+    "id": "levy-distribution",
+    "description": "Wikipedia entry for the Lévy distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "levy"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Laplace_distribution": {
+    "id": "laplace-distribution",
+    "description": "Wikipedia entry for the Laplace (double exponential) distribution.",
+    "short_url": "",
+    "keywords": [
+      "distribution",
+      "dist",
+      "statistics",
+      "stats",
+      "probability",
+      "continuous",
+      "laplace",
+      "doubleexponential"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation": {
     "id": "lda",
     "description": "Wikipedia for Latent Dirichlet Allocation (LDA)",
