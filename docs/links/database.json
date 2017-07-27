@@ -79,6 +79,19 @@
       "bit"
     ]
   },
+  "http://en.wikipedia.org/wiki/URI_scheme": {
+    "id": "uri",
+    "description": "Wikipedia entry on Uniform Recource Identifiers (URIs) to identify resources in a network.",
+    "short_url": "",
+    "keywords": [
+      "internet",
+      "web",
+      "uri",
+      "standard",
+      "identifier",
+      "protocol"
+    ]
+  },
   "http://eslint.org/": {
     "id": "eslint",
     "description": "A pluggable linting utility for JavaScript. Official website.",
@@ -311,6 +324,18 @@
       "public",
       "domain",
       "cc0"
+    ]
+  },
+  "https://danielmiessler.com/study/url-uri/": {
+    "id": "difference-url-uri",
+    "description": "Blog post on the difference between URIs and URLs.",
+    "short_url": "",
+    "keywords": [
+      "url",
+      "uri",
+      "identifier",
+      "access",
+      "protocol"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
