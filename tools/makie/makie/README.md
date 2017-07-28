@@ -73,7 +73,7 @@ Plugins are `functions` which execute a Makefile command.
 
 #### plugin( dir, cwd, subpath )
 
-Executes a Makefile target.
+Executes a Makefile target. A plugin is provided the following arguments:
 
 * __dir__: the Makefile directory provided above.
 * __cwd__: current working directory of the calling process.
