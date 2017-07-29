@@ -2,7 +2,6 @@
 
 var plugins = [];
 
-plugins.push( require( 'remark-lint' ) );
 plugins = plugins.concat( require( './lint' ) );
 plugins.push( [ require( 'remark-validate-links' ), require( './validate-links' ) ] );
 

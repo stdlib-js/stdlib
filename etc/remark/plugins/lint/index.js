@@ -3,7 +3,7 @@
 /**
 * Lint plugins.
 */
-var plugins = [];
+var plugins = [ require( 'remark-lint' ) ];
 
 /**
 * Require blockquotes to have `2` character indentation.
