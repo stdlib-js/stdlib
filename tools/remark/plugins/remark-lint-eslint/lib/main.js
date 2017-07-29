@@ -38,7 +38,7 @@ function transformHTML( html ) {
 	}
 	html = html.slice( COMMENT_START.length, html.length-COMMENT_END.length );
 	html = trim( html );
-	if ( !startsWith( html, ESLINT_PREFIX) ) {
+	if ( !startsWith( html, ESLINT_PREFIX ) ) {
 		return null;
 	}
 	return '/* ' + html + ' */';
