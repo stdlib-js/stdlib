@@ -1,24 +1,20 @@
 'use strict';
 
 /**
-* Plugin configuration.
-*
-* @namespace conf
+* Plugin.
 */
-var conf = {};
+var plugin = [ require( 'remark-validate-links' ) ];
 
 /**
 * Reference repository.
 *
-* @name repository
-* @memberof conf
-* @type {string}
-* @default ''
 * @see [repository]{@link https://github.com/wooorm/remark-validate-links#configuration}
 */
-conf[ 'repository' ] = '';
+plugin.push({
+	'repository': ''
+});
 
 
 // EXPORTS //
 
-module.exports = conf;
+module.exports = plugin;

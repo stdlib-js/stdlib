@@ -3,7 +3,7 @@
 var plugins = [];
 
 plugins = plugins.concat( require( './lint' ) );
-plugins.push( [ require( 'remark-validate-links' ), require( './validate-links' ) ] );
+plugins = plugins.concat( require( './validate-links' ) );
 
 
 // EXPORTS //
