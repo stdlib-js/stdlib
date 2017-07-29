@@ -22,7 +22,6 @@ DAVID_FLAGS ?= \
 	--ignore remark-lint \
 	--ignore remark-validate-links \
 	--ignore remark-vdom \
-	--ignore ajv \
 	--ignore chai
 
 
