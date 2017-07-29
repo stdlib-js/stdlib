@@ -161,6 +161,7 @@
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "tex-equation-to-svg": "^1.0.1",
     "to-vfile": "^2.0.0",
+    "unified-lint-rule": "^1.0.1",
     "unist-util-visit": "^1.1.0"
   },
   "engines": {
