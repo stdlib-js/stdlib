@@ -1,9 +1,9 @@
 'use strict';
 
-var plugins = {
-	'lint': require( './lint' ),
-	'validate-links': require( './validate-links' )
-};
+var plugins = [];
+
+plugins.push( [ 'remark-validate-links', require( './validate-links' ) ] );
+plugins = plugins.concat( require( './lint' ) );
 
 
 // EXPORTS //
