@@ -90,6 +90,9 @@ CONFIG_FOLDER ?= etc
 # Define the folder name convention for build artifacts:
 BUILD_FOLDER ?= build
 
+# Define the folder name convention for temporary files:
+TMP_FOLDER ?= tmp
+
 # Define Node paths:
 NODE_PATH ?= $(ROOT_DIR)/lib/node_modules
 NODE_PATH_BENCHMARK ?= $(NODE_PATH)
