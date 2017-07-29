@@ -5,7 +5,7 @@ build/
 downloads/
 reports/
 tmp/
-.git
+.git*
 
 # Only the top-level node_modules directory:
 /node_modules/
