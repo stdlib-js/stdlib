@@ -8,6 +8,41 @@ var visit = require( 'unist-util-visit' );
 var Engine = require( 'eslint' ).CLIEngine;
 var cwd = require( '@stdlib/utils/cwd' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var startsWith = require( '@stdlib/string/starts-with' );
+var endsWith = require( '@stdlib/string/ends-with' );
+var trim = require( '@stdlib/string/trim' );
+
+
+// VARIABLES //
+
+var COMMENT_START = '<!--';
+var COMMENT_END = '-->';
+var ESLINT_PREFIX = 'eslint';
+
+
+// FUNCTIONS //
+
+/**
+* Converts an HTML comment containing ESLint configuration to a JavaScript comment.
+*
+* @private
+* @param {string} html - text content of an HTML AST node
+* @returns {(string|null)} null or a JavaScript comment
+*/
+function transformHTML( html ) {
+	if (
+		!startsWith( html, COMMENT_START ) ||
+		!endsWith( html, COMMENT_END )
+	) {
+		return null;
+	}
+	html = html.slice( COMMENT_START.length, html.length-COMMENT_END.length );
+	html = trim( html );
+	if ( !startsWith( html, ESLINT_PREFIX) ) {
+		return null;
+	}
+	return '/* ' + html + ' */';
+} // end FUNCTION transformHTML()
 
 
 // MAIN //
@@ -46,24 +81,53 @@ function lint( tree, file, options ) {
 	*
 	* @private
 	* @param {Object} node - AST node
+	* @param {number} idx - position of node in parent
+	* @param {Object} parent - parent AST node
+	* @returns {void}
 	*/
-	function onNode( node ) {
+	function onNode( node, idx, parent ) {
+		var comments;
+		var comment;
 		var report;
 		var result;
+		var offset;
+		var prev;
+		var code;
 		var msg;
 		var str;
 		var i;
 		var j;
 
 		if ( node.lang === 'javascript' || node.lang === 'js' ) {
-			report = cli.executeOnText( node.value );
+			// Look for HTML comments immediately preceding a code block which may contain ESLint configuration...
+			idx -= 1;
+			prev = parent.children[ idx ];
+			comments = [];
+			while ( prev && prev.type === 'html' ) {
+				comment = transformHTML( prev.value );
+				if ( !comment ) {
+					break;
+				}
+				if ( comment === '/* eslint-skip */' ) {
+					return;
+				}
+				comments.unshift( comment );
+				idx -= 1;
+				prev = parent.children[ idx ];
+			}
+			offset = comments.length;
+			comments.push( node.value );
+			code = comments.join( '\n' );
+
+			// Lint the code block...
+			report = cli.executeOnText( code );
 			for ( i = 0; i < report.results.length; i++ ) {
 				result = report.results[ i ];
 				result.filePath = file.path || result.filePath;
 				for ( j = 0; j < result.messages.length; j++ ) {
 					msg = result.messages[ j ];
 					str = '';
-					str += msg.line + ':' + msg.column;
+					str += (msg.line-offset) + ':' + msg.column;
 					str += '   ';
 					if ( msg.severity === 2 ) {
 						str += 'error';
