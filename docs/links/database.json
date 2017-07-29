@@ -104,6 +104,19 @@
       "bit"
     ]
   },
+  "http://en.wikipedia.org/wiki/Pythagorean_theorem": {
+    "id": "hypotenuse",
+    "description": "Wikipedia entry on the Pythagorean theorem and the hypotenuse of a triangle.",
+    "short_url": "",
+    "keywords": [
+      "area",
+      "angle",
+      "pythagoras",
+      "triangle",
+      "theorem",
+      "hypotenuse"
+    ]
+  },
   "http://en.wikipedia.org/wiki/URI_scheme": {
     "id": "uri",
     "description": "Wikipedia entry on Uniform Recource Identifiers (URIs) to identify resources in a network.",
@@ -1549,6 +1562,18 @@
       "exp"
     ]
   },
+  "https://en.wikipedia.org/wiki/Exponential_function": {
+    "id": "exponential-function",
+    "description": "Wikipedia entry on the exponential function.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "exponential",
+      "function",
+      "antilogarithm"
+    ]
+  },
   "https://en.wikipedia.org/wiki/F_distribution": {
     "id": "f-distribution",
     "description": "Wikipedia entry for the F distribution.",
@@ -1699,12 +1724,14 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Inverse_hyperbolic_function": {
-    "id": "hyperbolic-arccosine",
-    "description": "Wikipedia entry for the inverse hyperbolic cosine function.",
+    "id": "inverse-hyperbolic",
+    "description": "Wikipedia entry for inverse hyperbolic functions.",
     "short_url": "",
     "keywords": [
       "hyperbolic",
-      "cosine",
+      "arccosine",
+      "arcsine",
+      "arctangent",
       "inverse",
       "function"
     ]
