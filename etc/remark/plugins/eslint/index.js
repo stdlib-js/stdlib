@@ -22,10 +22,13 @@ var eslint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-esli
 var plugin = [
 	[
 		require( eslint ),
-		{
-			'config': config,
-			'ignorePath': ignore
-		}
+		[
+			'error',
+			{
+				'config': config,
+				'ignorePath': ignore
+			}
+		]
 	]
 ];
 
