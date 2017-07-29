@@ -1,6 +1,14 @@
 
 # Directories #
 ###############
-/node_modules/
-**/deps/**/build/*
+build/
+downloads/
+reports/
+tmp/
 .git
+
+# Only the top-level node_modules directory:
+/node_modules/
+
+# Nested node_modules directories below the project node_modules directory:
+lib/node_modules/**/node_modules/
