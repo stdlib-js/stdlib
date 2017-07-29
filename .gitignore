@@ -5,11 +5,11 @@
 
 # Directories #
 ###############
-reports/
 build/
-tmp/
 downloads/
 lib/node_modules/**/node_modules/
+reports/
+tmp/
 
 # Compiled source #
 ###################
