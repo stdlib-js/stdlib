@@ -1323,6 +1323,19 @@
       "betaprime"
     ]
   },
+  "https://en.wikipedia.org/wiki/Binary_logarithm": {
+    "id": "binary-logarithm",
+    "description": "Wikipedia entry on the binary logarithm.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "logarithm",
+      "log",
+      "binary",
+      "arithmetic"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Binomial_distribution": {
     "id": "binomial-distribution",
     "description": "Wikipedia entry for the binomial distribution\"",
@@ -1685,6 +1698,17 @@
       "continuous"
     ]
   },
+  "https://en.wikipedia.org/wiki/Inverse_hyperbolic_function": {
+    "id": "hyperbolic-arccosine",
+    "description": "Wikipedia entry for the inverse hyperbolic cosine function.",
+    "short_url": "",
+    "keywords": [
+      "hyperbolic",
+      "cosine",
+      "inverse",
+      "function"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
     "id": "kumaraswamy-distribution",
     "description": "Wikipedia entry for Kumaraswamy's double bounded distribution.",
@@ -2045,6 +2069,17 @@
       "statistics",
       "stats",
       "probability"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Square_root": {
+    "id": "square-root",
+    "description": "Wikipedia entry for the square root.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "function",
+      "root"
     ]
   },
   "https://en.wikipedia.org/wiki/Standard_deviation": {
