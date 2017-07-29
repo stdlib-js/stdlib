@@ -73,8 +73,6 @@
     "github-markdown-equation-element": "^2.0.0",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
-    "jshint": "2.x.x",
-    "jshint-stylish": "2.x.x",
     "lunr": "^2.0.0",
     "mkdirp": "^0.5.1",
     "mustache": "^2.2.1",
