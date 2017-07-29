@@ -110,7 +110,11 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 #### Version
 
+<!--lint disable no-paragraph-content-indent -->
+
 [![git tag][tag-image]][tag-url] [![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
+
+<!--lint enable no-paragraph-content-indent -->
 
 #### Build
 
@@ -128,7 +132,11 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 #### Dependencies
 
+<!--lint disable no-paragraph-content-indent -->
+
 [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+
+<!--lint enable no-paragraph-content-indent -->
 
 
 #### Community
