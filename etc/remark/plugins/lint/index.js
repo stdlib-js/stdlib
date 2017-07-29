@@ -20,7 +20,7 @@ var plugins = [];
 *
 * > Beep boop.
 */
-plugins.push( [ 'remark-lint-blockquote-indentation', 'error', 2 ] );
+plugins.push( [ require( 'remark-lint-blockquote-indentation' ), 'error', 2 ] );
 
 /**
 * Require checkboxes to be either empty (unchecked) or have an `x` (checked).
@@ -37,7 +37,7 @@ plugins.push( [ 'remark-lint-blockquote-indentation', 'error', 2 ] );
 *
 * * [x] checked
 */
-plugins.push( [ 'remark-lint-checkbox-character-style', 'error', {
+plugins.push( [ require( 'remark-lint-checkbox-character-style' ), 'error', {
 	'checked': 'x',
 	'unchecked': ' '
 }]);
@@ -57,7 +57,7 @@ plugins.push( [ 'remark-lint-checkbox-character-style', 'error', {
 *
 * * [x] checked
 */
-plugins.push( [ 'remark-lint-checkbox-content-indent', 'error' ] );
+plugins.push( [ require( 'remark-lint-checkbox-content-indent' ), 'error' ] );
 
 /**
 * Require `fenced` code block style.
@@ -81,7 +81,7 @@ plugins.push( [ 'remark-lint-checkbox-content-indent', 'error' ] );
 * code
 * ```
 */
-plugins.push( [ 'remark-lint-code-block-style', 'error', 'fenced' ] );
+plugins.push( [ require( 'remark-lint-code-block-style' ), 'error', 'fenced' ] );
 
 /**
 * Require lowercased definition labels.
@@ -98,7 +98,7 @@ plugins.push( [ 'remark-lint-code-block-style', 'error', 'fenced' ] );
 *
 * [example]: https://example.com
 */
-plugins.push( [ 'remark-lint-definition-case', 'error' ] );
+plugins.push( [ require( 'remark-lint-definition-case' ), 'error' ] );
 
 /**
 * Prevent consecutive whitespace in a definition.
@@ -115,7 +115,7 @@ plugins.push( [ 'remark-lint-definition-case', 'error' ] );
 *
 * [hello world]: https://example.com
 */
-plugins.push( [ 'remark-lint-definition-spacing', 'error' ] );
+plugins.push( [ require( 'remark-lint-definition-spacing' ), 'error' ] );
 
 /**
 * Require `*` be used as the emphasis marker.
@@ -132,7 +132,7 @@ plugins.push( [ 'remark-lint-definition-spacing', 'error' ] );
 *
 * *beep*
 */
-plugins.push( [ 'remark-lint-emphasis-marker', 'error', '*' ] );
+plugins.push( [ require( 'remark-lint-emphasis-marker' ), 'error', '*' ] );
 
 /**
 * Require fenced code blocks to have a language flag.
@@ -153,7 +153,7 @@ plugins.push( [ 'remark-lint-emphasis-marker', 'error', '*' ] );
 * code
 * ```
 */
-plugins.push( [ 'remark-lint-fenced-code-flag', 'error', {
+plugins.push( [ require( 'remark-lint-fenced-code-flag' ), 'error', {
 	'allowEmpty': false
 }]);
 
@@ -176,49 +176,49 @@ plugins.push( [ 'remark-lint-fenced-code-flag', 'error', {
 * code
 * ```
 */
-plugins.push( [ 'remark-lint-fenced-code-marker', 'error', '`' ] );
+plugins.push( [ require( 'remark-lint-fenced-code-marker' ), 'error', '`' ] );
 
 /**
 * Require a Markdown file to have the file extension `*.md`.
 *
 * @see [file-extension]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-file-extension}
 */
-plugins.push( [ 'remark-lint-file-extension', 'error', 'md' ] );
+plugins.push( [ require( 'remark-lint-file-extension' ), 'error', 'md' ] );
 
 /**
 * Require definitions be placed at the end of a file. Note that we turn this rule off due to definitions being wrapped in HTML tags.
 *
 * @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-definition}
 */
-plugins.push( [ 'remark-lint-final-definition', 'off' ] );
+plugins.push( [ require( 'remark-lint-final-definition' ), 'off' ] );
 
 /**
 * Require a final newline (see <http://unix.stackexchange.com/questions/18743>).
 *
 * @see [final-newline]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-newline}
 */
-plugins.push( [ 'remark-lint-final-newline', 'error' ] );
+plugins.push( [ require( 'remark-lint-final-newline' ), 'error' ] );
 
 /**
 * Require first heading level be a level `1` heading.
 *
 * @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
 */
-plugins.push( [ 'remark-lint-first-heading-level', 'error', 1 ] );
+plugins.push( [ require( 'remark-lint-first-heading-level' ), 'error', 1 ] );
 
 /**
 * Prevent too many spaces from being used to hard break.
 *
 * @see [hard-break-spaces]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
 */
-plugins.push( [ 'remark-lint-hard-break-spaces', 'error' ] );
+plugins.push( [ require( 'remark-lint-hard-break-spaces' ), 'error' ] );
 
 /**
 * Warn when headings increment by more than 1 level. NOTE: temporarily disabled.
 *
 * @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
 */
-plugins.push( [ 'remark-lint-heading-increment', 'off' ] );
+plugins.push( [ require( 'remark-lint-heading-increment' ), 'off' ] );
 
 /**
 * Require `atx` heading style.
@@ -241,14 +241,14 @@ plugins.push( [ 'remark-lint-heading-increment', 'off' ] );
 * ## Boop
 *
 */
-plugins.push( [ 'remark-lint-heading-style', 'error', 'atx' ] );
+plugins.push( [ require( 'remark-lint-heading-style' ), 'error', 'atx' ] );
 
 /**
 * Require Unix linebreaks.
 *
 * @see [linebreak-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-linebreak-style}
 */
-plugins.push( [ 'remark-lint-linebreak-style', 'error', 'unix' ] );
+plugins.push( [ require( 'remark-lint-linebreak-style' ), 'error', 'unix' ] );
 
 /**
 * Require double quotes for link titles.
@@ -265,7 +265,7 @@ plugins.push( [ 'remark-lint-linebreak-style', 'error', 'unix' ] );
 *
 * [example](https://example.com "Example")
 */
-plugins.push( [ 'remark-lint-link-title-style', 'error', '"' ] );
+plugins.push( [ require( 'remark-lint-link-title-style' ), 'error', '"' ] );
 
 /**
 * Prevent unnecessary indentation of list bullets.
@@ -285,7 +285,7 @@ plugins.push( [ 'remark-lint-link-title-style', 'error', '"' ] );
 * * Boop
 *
 */
-plugins.push( [ 'remark-lint-list-item-bullet-indent', 'error' ] );
+plugins.push( [ require( 'remark-lint-list-item-bullet-indent' ), 'error' ] );
 
 /**
 * Require consistent indentation of list items.
@@ -305,7 +305,7 @@ plugins.push( [ 'remark-lint-list-item-bullet-indent', 'error' ] );
 *   - Boop
 *
 */
-plugins.push( [ 'remark-lint-list-item-content-indent', 'error' ] );
+plugins.push( [ require( 'remark-lint-list-item-content-indent' ), 'error' ] );
 
 /**
 * Require list items be indented using spaces.
@@ -328,7 +328,7 @@ plugins.push( [ 'remark-lint-list-item-content-indent', 'error' ] );
 *   bip
 *
 */
-plugins.push( [ 'remark-lint-list-item-indent', 'error', 'space' ] );
+plugins.push( [ require( 'remark-lint-list-item-indent' ), 'error', 'space' ] );
 
 /**
 * Require consistent list item spacing.
@@ -360,21 +360,21 @@ plugins.push( [ 'remark-lint-list-item-indent', 'error', 'space' ] );
 * * Bop
 *
 */
-plugins.push( [ 'remark-lint-list-item-spacing', 'error' ] );
+plugins.push( [ require( 'remark-lint-list-item-spacing' ), 'error' ] );
 
 /**
 * Require that heading lengths be less than or equal to `80` characters.
 *
 * @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
 */
-plugins.push( [ 'remark-lint-maximum-heading-length', 'error', 80 ] );
+plugins.push( [ require( 'remark-lint-maximum-heading-length' ), 'error', 80 ] );
 
 /**
 * Do not enforce a maximum line length.
 *
 * @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
 */
-plugins.push( [ 'remark-lint-maximum-line-length', 'off' ] );
+plugins.push( [ require( 'remark-lint-maximum-line-length' ), 'off' ] );
 
 /**
 * Require all links have a protocol.
@@ -392,7 +392,7 @@ plugins.push( [ 'remark-lint-maximum-line-length', 'off' ] );
 * <https://example.com>
 *
 */
-plugins.push( [ 'remark-lint-no-auto-link-without-protocol', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-auto-link-without-protocol' ), 'error' ] );
 
 /**
 * Require caret in blockquotes.
@@ -414,14 +414,14 @@ plugins.push( [ 'remark-lint-no-auto-link-without-protocol', 'error' ] );
 * > boop
 *
 */
-plugins.push( [ 'remark-lint-no-blockquote-without-marker', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-blockquote-without-marker' ), 'error' ] );
 
 /**
 * Allow consecutive blank lines.
 *
 * @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
 */
-plugins.push( [ 'remark-lint-no-consecutive-blank-lines', 'off' ] );
+plugins.push( [ require( 'remark-lint-no-consecutive-blank-lines' ), 'off' ] );
 
 /**
 * Do not allow duplicate definitions.
@@ -441,7 +441,7 @@ plugins.push( [ 'remark-lint-no-consecutive-blank-lines', 'off' ] );
 * [bar]: https://github.com
 *
 */
-plugins.push( [ 'remark-lint-no-duplicate-definitions', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-duplicate-definitions' ), 'error' ] );
 
 /**
 * Allow duplicate headings in different sections.
@@ -462,7 +462,7 @@ plugins.push( [ 'remark-lint-no-duplicate-definitions', 'error' ] );
 * ### Bop
 *
 */
-plugins.push( [ 'remark-lint-no-duplicate-headings', 'off' ] );
+plugins.push( [ require( 'remark-lint-no-duplicate-headings' ), 'off' ] );
 
 /**
 * Do not allow duplicate headings within a section.
@@ -488,7 +488,7 @@ plugins.push( [ 'remark-lint-no-duplicate-headings', 'off' ] );
 * ## Bop
 *
 */
-plugins.push( [ 'remark-lint-no-duplicate-headings-in-section', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-duplicate-headings-in-section' ), 'error' ] );
 
 /**
 * Never allow emphasis to be used in place of a heading.
@@ -510,7 +510,7 @@ plugins.push( [ 'remark-lint-no-duplicate-headings-in-section', 'error' ] );
 * Beep boop
 *
 */
-plugins.push( [ 'remark-lint-no-emphasis-as-heading', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-emphasis-as-heading' ), 'error' ] );
 
 /**
 * Never allow empty URLs in images and links.
@@ -528,42 +528,42 @@ plugins.push( [ 'remark-lint-no-emphasis-as-heading', 'error' ] );
 * [foo](https://example.com)
 *
 */
-plugins.push( [ 'remark-lint-no-empty-url', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-empty-url' ), 'error' ] );
 
 /**
 * Never allow filenames to begin with an article.
 *
 * @see [no-file-name-articles]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-articles}
 */
-plugins.push( [ 'remark-lint-no-file-name-articles', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-file-name-articles' ), 'error' ] );
 
 /**
 * Never allow consecutive dashes in filenames.
 *
 * @see [no-file-name-consecutive-dashes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-consecutive-dashes}
 */
-plugins.push( [ 'remark-lint-no-file-name-consecutive-dashes', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-file-name-consecutive-dashes' ), 'error' ] );
 
 /**
 * Never allow filenames to contain irregular characters.
 *
 * @see [no-file-name-irregular-characters]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-irregular-characters}
 */
-plugins.push( [ 'remark-lint-no-file-name-irregular-characters', 'error', '\\.a-zA-Z0-9-_' ] );
+plugins.push( [ require( 'remark-lint-no-file-name-irregular-characters' ), 'error', '\\.a-zA-Z0-9-_' ] );
 
 /**
 * Never allow mixed case filenames.
 *
 * @see [no-file-name-mixed-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-mixed-case}
 */
-plugins.push( [ 'remark-lint-no-file-name-mixed-case', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-file-name-mixed-case' ), 'error' ] );
 
 /**
 * Never allow filenames to begin or end with dashes.
 *
 * @see [no-file-name-outer-dashes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-outer-dashes}
 */
-plugins.push( [ 'remark-lint-no-file-name-outer-dashes', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-file-name-outer-dashes' ), 'error' ] );
 
 /**
 * Never allow heading content indentation.
@@ -585,7 +585,7 @@ plugins.push( [ 'remark-lint-no-file-name-outer-dashes', 'error' ] );
 * ## Boop
 *
 */
-plugins.push( [ 'remark-lint-no-heading-content-indent', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-heading-content-indent' ), 'error' ] );
 
 /**
 * Never allow heading indentation.
@@ -616,7 +616,7 @@ plugins.push( [ 'remark-lint-no-heading-content-indent', 'error' ] );
 * Beep boop.
 *
 */
-plugins.push( [ 'remark-lint-no-heading-indent', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-heading-indent' ), 'error' ] );
 
 /**
 * Never allow paragraphs which appear to be h7+ "headings".
@@ -629,7 +629,7 @@ plugins.push( [ 'remark-lint-no-heading-indent', 'error' ] );
 * ####### Beep
 *
 */
-plugins.push( [ 'remark-lint-no-heading-like-paragraph', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-heading-like-paragraph' ), 'error' ] );
 
 /**
 * Do not allow punctuation at the end of a heading.
@@ -642,7 +642,7 @@ plugins.push( [ 'remark-lint-no-heading-like-paragraph', 'error' ] );
 * ## Beep.
 *
 */
-plugins.push( [ 'remark-lint-no-heading-punctuation', 'error', '.,;:!?' ] );
+plugins.push( [ require( 'remark-lint-no-heading-punctuation' ), 'error', '.,;:!?' ] );
 
 /**
 * Allow HTML.
@@ -658,7 +658,7 @@ plugins.push( [ 'remark-lint-no-heading-punctuation', 'error', '.,;:!?' ] );
 *
 * </section>
 */
-plugins.push( [ 'remark-lint-no-html', 'off' ] );
+plugins.push( [ require( 'remark-lint-no-html' ), 'off' ] );
 
 /**
 * Never allow inline padding.
@@ -676,7 +676,7 @@ plugins.push( [ 'remark-lint-no-html', 'off' ] );
 * __Beep__
 *
 */
-plugins.push( [ 'remark-lint-no-inline-padding', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-inline-padding' ), 'error' ] );
 
 /**
 * Never allow literal URLs without angle brackets.
@@ -694,7 +694,7 @@ plugins.push( [ 'remark-lint-no-inline-padding', 'error' ] );
 * <https://example.com>
 *
 */
-plugins.push( [ 'remark-lint-no-literal-urls', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-literal-urls' ), 'error' ] );
 
 /**
 * Require blank lines between block nodes.
@@ -715,7 +715,7 @@ plugins.push( [ 'remark-lint-no-literal-urls', 'error' ] );
 * ## Boop
 *
 */
-plugins.push( [ 'remark-lint-no-missing-blank-lines', 'error', {
+plugins.push( [ require( 'remark-lint-no-missing-blank-lines' ), 'error', {
 	'exceptTightLists': true
 }]);
 
@@ -732,7 +732,7 @@ plugins.push( [ 'remark-lint-no-missing-blank-lines', 'error', {
 * # Boop
 *
 */
-plugins.push( [ 'remark-lint-no-multiple-toplevel-headings', 'off' ] );
+plugins.push( [ require( 'remark-lint-no-multiple-toplevel-headings' ), 'off' ] );
 
 /**
 * Never allow paragraph indentation.
@@ -753,7 +753,7 @@ plugins.push( [ 'remark-lint-no-multiple-toplevel-headings', 'off' ] );
 *
 * Boop.
 */
-plugins.push( [ 'remark-lint-no-paragraph-content-indent', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-paragraph-content-indent' ), 'error' ] );
 
 /**
 * Never allow references to be used like URLs.
@@ -775,7 +775,7 @@ plugins.push( [ 'remark-lint-no-paragraph-content-indent', 'error' ] );
 * [boop]: https://github.com
 *
 */
-plugins.push( [ 'remark-lint-no-reference-like-url', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-reference-like-url' ), 'error' ] );
 
 /**
 * Allow shell commands to be prefixed with `$` symbols.
@@ -789,7 +789,7 @@ plugins.push( [ 'remark-lint-no-reference-like-url', 'error' ] );
 * $ echo beep
 * ```
 */
-plugins.push( [ 'remark-lint-no-shell-dollars', 'off' ] );
+plugins.push( [ require( 'remark-lint-no-shell-dollars' ), 'off' ] );
 
 /**
 * Never allow shortcut reference images.
@@ -811,7 +811,7 @@ plugins.push( [ 'remark-lint-no-shell-dollars', 'off' ] );
 * [foo]: https://example.com/1.png
 *
 */
-plugins.push( [ 'remark-lint-no-shortcut-reference-image', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-shortcut-reference-image' ), 'error' ] );
 
 /**
 * Never allow shortcut reference links.
@@ -833,7 +833,7 @@ plugins.push( [ 'remark-lint-no-shortcut-reference-image', 'error' ] );
 * [foo]: https://example.com/1.png
 *
 */
-plugins.push( [ 'remark-lint-no-shortcut-reference-link', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-shortcut-reference-link' ), 'error' ] );
 
 /**
 * Never allow table indentation.
@@ -859,14 +859,14 @@ plugins.push( [ 'remark-lint-no-shortcut-reference-link', 'error' ] );
 * | foo  | bar  |
 *
 */
-plugins.push( [ 'remark-lint-no-table-indentation', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-table-indentation' ), 'error' ] );
 
 /**
 * Never allow the use of spaces.
 *
 * @see [no-tabs]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-tabs}
 */
-plugins.push( [ 'remark-lint-no-tabs', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-tabs' ), 'error' ] );
 
 /**
 * Never allow undefined references.
@@ -886,7 +886,7 @@ plugins.push( [ 'remark-lint-no-tabs', 'error' ] );
 * [foo]: https://example.com
 *
 */
-plugins.push( [ 'remark-lint-no-undefined-references', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-undefined-references' ), 'error' ] );
 
 /**
 * Never allow unused definitions.
@@ -906,7 +906,7 @@ plugins.push( [ 'remark-lint-no-undefined-references', 'error' ] );
 * [foo]: https://example.com
 *
 */
-plugins.push( [ 'remark-lint-no-unused-definitions', 'error' ] );
+plugins.push( [ require( 'remark-lint-no-unused-definitions' ), 'error' ] );
 
 /**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
@@ -926,7 +926,7 @@ plugins.push( [ 'remark-lint-no-unused-definitions', 'error' ] );
 * 2. Bar
 *
 */
-plugins.push( [ 'remark-lint-ordered-list-marker-style', 'error', '.' ] );
+plugins.push( [ require( 'remark-lint-ordered-list-marker-style' ), 'error', '.' ] );
 
 /**
 * Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
@@ -950,7 +950,7 @@ plugins.push( [ 'remark-lint-ordered-list-marker-style', 'error', '.' ] );
 * 1. Boop
 *
 */
-plugins.push( [ 'remark-lint-ordered-list-marker-value', 'off', 'ordered' ] );
+plugins.push( [ require( 'remark-lint-ordered-list-marker-value' ), 'off', 'ordered' ] );
 
 /**
 * Require that the horizontal rule style be three consecutive dashes `---`.
@@ -968,7 +968,7 @@ plugins.push( [ 'remark-lint-ordered-list-marker-value', 'off', 'ordered' ] );
 * ---
 *
 */
-plugins.push( [ 'remark-lint-rule-style', 'error', '---' ] );
+plugins.push( [ require( 'remark-lint-rule-style' ), 'error', '---' ] );
 
 /**
 * Set the strong marker to underscores.
@@ -986,7 +986,7 @@ plugins.push( [ 'remark-lint-rule-style', 'error', '---' ] );
 * __Beep__.
 *
 */
-plugins.push( [ 'remark-lint-strong-marker', 'error', '_' ] );
+plugins.push( [ require( 'remark-lint-strong-marker' ), 'error', '_' ] );
 
 /**
 * Require table padding.
@@ -1008,7 +1008,7 @@ plugins.push( [ 'remark-lint-strong-marker', 'error', '_' ] );
 * | foo  | bar  |
 *
 */
-plugins.push( [ 'remark-lint-table-cell-padding', 'error', 'padded' ] );
+plugins.push( [ require( 'remark-lint-table-cell-padding' ), 'error', 'padded' ] );
 
 /**
 * Require table pipe alignment.
@@ -1030,7 +1030,7 @@ plugins.push( [ 'remark-lint-table-cell-padding', 'error', 'padded' ] );
 * | foo  | bar  |
 *
 */
-plugins.push( [ 'remark-lint-table-pipe-alignment', 'error' ] );
+plugins.push( [ require( 'remark-lint-table-pipe-alignment' ), 'error' ] );
 
 /**
 * Require table rows to be fenced in table pipes.
@@ -1052,7 +1052,7 @@ plugins.push( [ 'remark-lint-table-pipe-alignment', 'error' ] );
 * | foo  | bar  |
 *
 */
-plugins.push( [ 'remark-lint-table-pipes', 'error' ] );
+plugins.push( [ require( 'remark-lint-table-pipes' ), 'error' ] );
 
 /**
 * Prefer that the unordered list marker be an asterisk `*`, but allow discretion to maximize clarity and readability.
@@ -1076,7 +1076,7 @@ plugins.push( [ 'remark-lint-table-pipes', 'error' ] );
 * * Boop
 *
 */
-plugins.push( [ 'remark-lint-unordered-list-marker-style', 'off', '*' ] );
+plugins.push( [ require( 'remark-lint-unordered-list-marker-style' ), 'off', '*' ] );
 
 
 // EXPORTS //
