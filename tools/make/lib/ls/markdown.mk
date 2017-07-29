@@ -19,6 +19,7 @@ FIND_MARKDOWN_FLAGS ?= \
 	-regex "$(MARKDOWN_FILTER)" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(DEPS_DIR)/**/$(TMP_FOLDER)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
 
