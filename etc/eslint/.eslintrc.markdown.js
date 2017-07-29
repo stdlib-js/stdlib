@@ -23,6 +23,13 @@ var eslint = copy( defaults );
 eslint.rules[ 'vars-on-top' ] = 'off';
 
 /**
+* Allow using synchronous methods.
+*
+* @private
+*/
+eslint.rules[ 'no-sync' ] = 'off';
+
+/**
 * Allow using `console`.
 *
 * @private
