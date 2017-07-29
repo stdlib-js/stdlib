@@ -17,6 +17,7 @@ FIND_MARKDOWN_FLAGS ?= \
 	-type f \
 	-name "$(MARKDOWN_PATTERN)" \
 	-regex "$(MARKDOWN_FILTER)" \
+	-not -path "$(ROOT_DIR)/.git/*" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/**/$(TMP_FOLDER)/*" \
