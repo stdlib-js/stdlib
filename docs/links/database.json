@@ -8,6 +8,20 @@
       "node.js"
     ]
   },
+  "http://creativecommons.org/licenses/by/4.0/": {
+    "id": "cc-by-4.0",
+    "description": "Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "short_url": "",
+    "keywords": [
+      "creativecommons",
+      "copyleft",
+      "copyright",
+      "licensing",
+      "license",
+      "law",
+      "freecontent"
+    ]
+  },
   "http://davidcel.is/posts/stop-validating-email-addresses-with-regex/": {
     "id": "validate-email-address",
     "description": "Blog entry by David Celis arguing that one should not try to validate email addresses via regular expressions.",
@@ -165,6 +179,17 @@
       "ecmascript"
     ]
   },
+  "http://opendatacommons.org/licenses/by/1.0/": {
+    "id": "odc-by-1.0",
+    "description": "Open Data Commons Attribution License.",
+    "short_url": "",
+    "keywords": [
+      "licensing",
+      "license",
+      "opendata",
+      "database"
+    ]
+  },
   "http://opendatacommons.org/licenses/pddl/1.0/": {
     "id": "pddl-1.0",
     "description": "Open Data Commons (ODC) Public Domain Dedication and Licence (PDDL).",
@@ -178,6 +203,20 @@
       "odc",
       "pddl",
       "pddl-1.0"
+    ]
+  },
+  "http://specs.frictionlessdata.io/ndjson/": {
+    "id": "ndjson",
+    "description": "Newline delimited JSON format.",
+    "short_url": "",
+    "keywords": [
+      "ndjson",
+      "ldjson",
+      "json",
+      "newline",
+      "stream",
+      "parse",
+      "serialize"
     ]
   },
   "http://stdlib.io/": {
@@ -323,6 +362,19 @@
       "serialization",
       "configuration",
       "config"
+    ]
+  },
+  "http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010": {
+    "id": "afinn",
+    "description": "List of English words rated for valence with an integer between minus five (negative) and plus five (positive).",
+    "short_url": "",
+    "keywords": [
+      "wordlist",
+      "sentiment",
+      "textmining",
+      "opinion",
+      "english",
+      "language"
     ]
   },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
@@ -2028,6 +2080,20 @@
       "uniform"
     ]
   },
+  "https://en.wikipedia.org/wiki/Valence_%28psychology%29": {
+    "id": "valence",
+    "description": "Wikipedia entry for the concept of valence as used in psychology.",
+    "short_url": "",
+    "keywords": [
+      "psychology",
+      "emotion",
+      "good",
+      "bad",
+      "attractiveness",
+      "averseness",
+      "word"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Variance": {
     "id": "variance",
     "description": "Wikipedia entry for the variance.",
@@ -2530,6 +2596,18 @@
       "linux",
       "macos",
       "mac"
+    ]
+  },
+  "https://www.apache.org/licenses/LICENSE-2.0": {
+    "id": "apache-license",
+    "description": "Apache License Version 2.0.",
+    "short_url": "",
+    "keywords": [
+      "freesoftware",
+      "licensing",
+      "license",
+      "copyright",
+      "opensource"
     ]
   },
   "https://www.appveyor.com/": {
