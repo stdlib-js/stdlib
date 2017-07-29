@@ -1293,6 +1293,20 @@
       "magnitude"
     ]
   },
+  "https://en.wikipedia.org/wiki/Alpha_max_plus_beta_min_algorithm": {
+    "id": "alpha-max-plus-beta-min",
+    "description": "Wikipedia entry on the alpha max plus beta min algorithm, a fast approximation for the square root of the sum of two squares.",
+    "short_url": "",
+    "keywords": [
+      "algorithm",
+      "fast",
+      "approximation",
+      "sqrt",
+      "root",
+      "pythagoras",
+      "hypotenuse"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
     "id": "arcsine-distribution",
     "description": "Wikipedia entry for the arcsine distribution.",
