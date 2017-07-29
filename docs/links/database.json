@@ -8,6 +8,20 @@
       "node.js"
     ]
   },
+  "http://creativecommons.org/licenses/by/4.0/": {
+    "id": "cc-by-4.0",
+    "description": "Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
+    "short_url": "",
+    "keywords": [
+      "creativecommons",
+      "copyleft",
+      "copyright",
+      "licensing",
+      "license",
+      "law",
+      "freecontent"
+    ]
+  },
   "http://davidcel.is/posts/stop-validating-email-addresses-with-regex/": {
     "id": "validate-email-address",
     "description": "Blog entry by David Celis arguing that one should not try to validate email addresses via regular expressions.",
@@ -90,6 +104,19 @@
       "bit"
     ]
   },
+  "http://en.wikipedia.org/wiki/Pythagorean_theorem": {
+    "id": "hypotenuse",
+    "description": "Wikipedia entry on the Pythagorean theorem and the hypotenuse of a triangle.",
+    "short_url": "",
+    "keywords": [
+      "area",
+      "angle",
+      "pythagoras",
+      "triangle",
+      "theorem",
+      "hypotenuse"
+    ]
+  },
   "http://en.wikipedia.org/wiki/URI_scheme": {
     "id": "uri",
     "description": "Wikipedia entry on Uniform Recource Identifiers (URIs) to identify resources in a network.",
@@ -165,6 +192,33 @@
       "ecmascript"
     ]
   },
+  "http://ocp.hul.harvard.edu/dl/contagion/010164675": {
+    "id": "@nightingale:1859a",
+    "description": "Library record for Florence Nightingale's polar area diagram of the sanitary history of the British army during the late war with Russia.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "plot",
+      "chart",
+      "florence",
+      "nightingale",
+      "polar",
+      "area",
+      "diagram"
+    ]
+  },
+  "http://opendatacommons.org/licenses/by/1.0/": {
+    "id": "odc-by-1.0",
+    "description": "Open Data Commons Attribution License.",
+    "short_url": "",
+    "keywords": [
+      "licensing",
+      "license",
+      "opendata",
+      "database"
+    ]
+  },
   "http://opendatacommons.org/licenses/pddl/1.0/": {
     "id": "pddl-1.0",
     "description": "Open Data Commons (ODC) Public Domain Dedication and Licence (PDDL).",
@@ -178,6 +232,32 @@
       "odc",
       "pddl",
       "pddl-1.0"
+    ]
+  },
+  "http://spamassassin.apache.org/old/publiccorpus/readme.html": {
+    "id": "spam-assassin",
+    "description": "SpamAssassin public mail corpus for testing spam filtering systems.",
+    "short_url": "",
+    "keywords": [
+      "email",
+      "corpus",
+      "spamassassin",
+      "classification",
+      "filtering"
+    ]
+  },
+  "http://specs.frictionlessdata.io/ndjson/": {
+    "id": "ndjson",
+    "description": "Newline delimited JSON format.",
+    "short_url": "",
+    "keywords": [
+      "ndjson",
+      "ldjson",
+      "json",
+      "newline",
+      "stream",
+      "parse",
+      "serialize"
     ]
   },
   "http://stdlib.io/": {
@@ -194,6 +274,20 @@
       "node",
       "node-js",
       "nodejs"
+    ]
+  },
+  "http://testanything.org/tap-version-13-specification.html": {
+    "id": "tap",
+    "description": "Test Anything Protocol, a protocol for transmission of unit testing results.",
+    "short_url": "",
+    "keywords": [
+      "testing",
+      "tap",
+      "software",
+      "format",
+      "perl",
+      "cs",
+      "unittest"
     ]
   },
   "http://usejsdoc.org/": {
@@ -292,12 +386,63 @@
       "ecma"
     ]
   },
+  "http://www.getty.edu/about/opencontent.html": {
+    "id": "getty-open-content",
+    "description": "Getty Open Content Program.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse",
+      "copyright"
+    ]
+  },
   "http://www.json.org/": {
     "id": "json",
     "description": "The official JSON website.",
     "short_url": "",
     "keywords": [
       "json"
+    ]
+  },
+  "http://www.jstor.org/stable/747086": {
+    "id": "@klare:1974a",
+    "description": "Digital Object Identifier for Klare, George R. 1974.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "school",
+      "readability",
+      "reading",
+      "education"
+    ]
+  },
+  "http://www.yaml.org/": {
+    "id": "yaml",
+    "description": "Human friendly data serialization standard.",
+    "short_url": "",
+    "keywords": [
+      "markup",
+      "serialization",
+      "configuration",
+      "config"
+    ]
+  },
+  "http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010": {
+    "id": "afinn",
+    "description": "List of English words rated for valence with an integer between minus five (negative) and plus five (positive).",
+    "short_url": "",
+    "keywords": [
+      "wordlist",
+      "sentiment",
+      "textmining",
+      "opinion",
+      "english",
+      "language"
     ]
   },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
@@ -1087,6 +1232,19 @@
       "settings"
     ]
   },
+  "https://doi.org/10.1086/458513": {
+    "id": "@spache:1953a",
+    "description": "Digital Object Identifier for Spache, George. 1953.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "school",
+      "grade",
+      "reading"
+    ]
+  },
   "https://doi.org/10.1109/32.92917": {
     "id": "@vose:1991",
     "description": "Digital Object Identifier for Vose, Michael D. 1991.",
@@ -1135,6 +1293,20 @@
       "magnitude"
     ]
   },
+  "https://en.wikipedia.org/wiki/Alpha_max_plus_beta_min_algorithm": {
+    "id": "alpha-max-plus-beta-min",
+    "description": "Wikipedia entry on the alpha max plus beta min algorithm, a fast approximation for the square root of the sum of two squares.",
+    "short_url": "",
+    "keywords": [
+      "algorithm",
+      "fast",
+      "approximation",
+      "sqrt",
+      "root",
+      "pythagoras",
+      "hypotenuse"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
     "id": "arcsine-distribution",
     "description": "Wikipedia entry for the arcsine distribution.",
@@ -1176,6 +1348,19 @@
       "continuous",
       "inverted",
       "betaprime"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Binary_logarithm": {
+    "id": "binary-logarithm",
+    "description": "Wikipedia entry on the binary logarithm.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "logarithm",
+      "log",
+      "binary",
+      "arithmetic"
     ]
   },
   "https://en.wikipedia.org/wiki/Binomial_distribution": {
@@ -1391,6 +1576,18 @@
       "exp"
     ]
   },
+  "https://en.wikipedia.org/wiki/Exponential_function": {
+    "id": "exponential-function",
+    "description": "Wikipedia entry on the exponential function.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "exponential",
+      "function",
+      "antilogarithm"
+    ]
+  },
   "https://en.wikipedia.org/wiki/F_distribution": {
     "id": "f-distribution",
     "description": "Wikipedia entry for the F distribution.",
@@ -1417,6 +1614,18 @@
       "transform",
       "hypothesis",
       "testing"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Florence_Nightingale": {
+    "id": "nightingale",
+    "description": "Wikipedia entry on social reformer and statistician Florence Nightingale.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "statistician",
+      "person",
+      "nurse"
     ]
   },
   "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
@@ -1474,6 +1683,16 @@
       "geometric"
     ]
   },
+  "https://en.wikipedia.org/wiki/Given_name": {
+    "id": "given-name",
+    "description": "Wikipedia entry on given / first names.",
+    "short_url": "",
+    "keywords": [
+      "givenname",
+      "firstname",
+      "personalname"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Gumbel_distribution": {
     "id": "gumbel-distribution",
     "description": "Wikipedia entry for the Gumbel distribution.",
@@ -1516,6 +1735,19 @@
       "inverse",
       "gamma",
       "continuous"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Inverse_hyperbolic_function": {
+    "id": "inverse-hyperbolic",
+    "description": "Wikipedia entry for inverse hyperbolic functions.",
+    "short_url": "",
+    "keywords": [
+      "hyperbolic",
+      "arccosine",
+      "arcsine",
+      "arctangent",
+      "inverse",
+      "function"
     ]
   },
   "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
@@ -1783,6 +2015,18 @@
       "poisson"
     ]
   },
+  "https://en.wikipedia.org/wiki/Polar_area_diagram": {
+    "id": "polar-area-diagram",
+    "description": "Wikipedia section on the polar area diagram.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "plot",
+      "piechart",
+      "chart"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
     "id": "png",
     "description": "Wikipedia entry for Portable Network Graphics (PNG), a raster graphics file format that supports lossless data compression.",
@@ -1868,6 +2112,17 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Square_root": {
+    "id": "square-root",
+    "description": "Wikipedia entry for the square root.",
+    "short_url": "",
+    "keywords": [
+      "mathematics",
+      "math",
+      "function",
+      "root"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Standard_deviation": {
     "id": "stdev",
     "description": "Wikipedia entry for the standard deviation.",
@@ -1904,6 +2159,29 @@
       "stdout",
       "stderr",
       "stdin"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/State_of_the_Union": {
+    "id": "sotu",
+    "description": "Wikipedia entry on the State of the Union address, an annual speech given by U.S. presidents.",
+    "short_url": "",
+    "keywords": [
+      "sotu",
+      "usa",
+      "president",
+      "speech"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Stop_words": {
+    "id": "stopwords",
+    "description": "Wikipedia entry on stop words, which are filtered from text for many natural language processing (NLP) tasks.",
+    "short_url": "",
+    "keywords": [
+      "nlp",
+      "text",
+      "ir",
+      "stopword",
+      "preprocessing"
     ]
   },
   "https://en.wikipedia.org/wiki/Student%27s_t-distribution": {
@@ -2003,6 +2281,20 @@
       "uniform"
     ]
   },
+  "https://en.wikipedia.org/wiki/Valence_%28psychology%29": {
+    "id": "valence",
+    "description": "Wikipedia entry for the concept of valence as used in psychology.",
+    "short_url": "",
+    "keywords": [
+      "psychology",
+      "emotion",
+      "good",
+      "bad",
+      "attractiveness",
+      "averseness",
+      "word"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Variance": {
     "id": "variance",
     "description": "Wikipedia entry for the variance.",
@@ -2056,6 +2348,18 @@
       "probability",
       "discrete",
       "hypergeometric"
+    ]
+  },
+  "https://en.wikisource.org/wiki/United_States_Code/Title_17/Chapter_1/Sections_105_and_106": {
+    "id": "us-copyright",
+    "description": "Paragraphs 105 and 106 of the United States Code, establishing that copyright protection is not available for works of the government.",
+    "short_url": "",
+    "keywords": [
+      "copyright",
+      "law",
+      "government",
+      "usa",
+      "publicdomain"
     ]
   },
   "https://en.wiktionary.org/wiki/alphagram": {
@@ -2404,6 +2708,19 @@
       "api"
     ]
   },
+  "https://nodejs.org/api/stream.html#stream_writable_streams": {
+    "id": "nodejs-writable-stream",
+    "description": "Documentation for Node.js writable streams.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "node",
+      "stream",
+      "writable",
+      "api"
+    ]
+  },
   "https://nodejs.org/api/tty.html#tty_tty": {
     "id": "tty",
     "description": "Node.js documentation for the tty module, which is used when Node.js is run inside a text terminal context.",
@@ -2426,6 +2743,19 @@
       "nodejs",
       "javascript",
       "js"
+    ]
+  },
+  "https://opensource.org/licenses/bsd-license.html": {
+    "id": "bsd-license",
+    "description": "2-Clause BSD License originally developed by the FreeBSD project.",
+    "short_url": "",
+    "keywords": [
+      "license",
+      "bsd",
+      "copyright",
+      "licensing",
+      "opensource",
+      "simplified"
     ]
   },
   "https://packagecontrol.io/": {
@@ -2492,6 +2822,18 @@
       "linux",
       "macos",
       "mac"
+    ]
+  },
+  "https://www.apache.org/licenses/LICENSE-2.0": {
+    "id": "apache-license",
+    "description": "Apache License Version 2.0.",
+    "short_url": "",
+    "keywords": [
+      "freesoftware",
+      "licensing",
+      "license",
+      "copyright",
+      "opensource"
     ]
   },
   "https://www.appveyor.com/": {
