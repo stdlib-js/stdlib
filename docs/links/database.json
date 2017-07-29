@@ -196,6 +196,20 @@
       "nodejs"
     ]
   },
+  "http://testanything.org/tap-version-13-specification.html": {
+    "id": "tap",
+    "description": "Test Anything Protocol, a protocol for transmission of unit testing results.",
+    "short_url": "",
+    "keywords": [
+      "testing",
+      "tap",
+      "software",
+      "format",
+      "perl",
+      "cs",
+      "unittest"
+    ]
+  },
   "http://usejsdoc.org/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",
@@ -298,6 +312,17 @@
     "short_url": "",
     "keywords": [
       "json"
+    ]
+  },
+  "http://www.yaml.org/": {
+    "id": "yaml",
+    "description": "Human friendly data serialization standard.",
+    "short_url": "",
+    "keywords": [
+      "markup",
+      "serialization",
+      "configuration",
+      "config"
     ]
   },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
@@ -2401,6 +2426,19 @@
       "node.js",
       "node",
       "stream",
+      "api"
+    ]
+  },
+  "https://nodejs.org/api/stream.html#stream_writable_streams": {
+    "id": "nodejs-writable-stream",
+    "description": "Documentation for Node.js writable streams.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "node.js",
+      "node",
+      "stream",
+      "writable",
       "api"
     ]
   },
