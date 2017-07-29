@@ -1,6 +1,6 @@
 {
-	"id": "",
-	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$id": "",
+	"$schema": "http://json-schema.org/draft-06/schema#",
 	"description": "Schema for package.json.",
 	"type": "object",
 	"definitions": {
