@@ -1551,6 +1551,16 @@
       "geometric"
     ]
   },
+  "https://en.wikipedia.org/wiki/Given_name": {
+    "id": "given-name",
+    "description": "Wikipedia entry on given / first names.",
+    "short_url": "",
+    "keywords": [
+      "givenname",
+      "firstname",
+      "personalname"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Gumbel_distribution": {
     "id": "gumbel-distribution",
     "description": "Wikipedia entry for the Gumbel distribution.",
