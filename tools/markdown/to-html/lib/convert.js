@@ -14,7 +14,7 @@ var isBuffer = require( '@stdlib/assert/is-buffer' );
 var transform = remark()
 	.use( headingSlugs )
 	.use( toHTML )
-	.process;
+	.processSync;
 
 
 // MAIN //
