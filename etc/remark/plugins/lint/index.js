@@ -2,30 +2,13 @@
 
 /**
 * Lint rules.
-*
-* @namespace rules
 */
-var rules = {};
-
-/**
-* Reset all rules.
-*
-* @name reset
-* @memberof rules
-* @type {boolean}
-* @default true
-* @see [reset]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#reset}
-*/
-rules[ 'reset' ] = true;
+var rules = [];
 
 /**
 * Require blockquotes to have `2` character indentation.
 *
-* @name blockquote-indentation
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 2 ]
-* @see [blockquote-indentation]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#blockquote-indentation}
+* @see [blockquote-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-blockquote-indentation}
 *
 * @example
 * <!-- Bad -->
@@ -37,15 +20,12 @@ rules[ 'reset' ] = true;
 *
 * > Beep boop.
 */
-rules[ 'blockquote-indentation' ] = [ 'error', 2 ];
+rules.push( [ 'remark-lint-blockquote-indentation', 'error', 2 ] );
 
 /**
 * Require checkboxes to be either empty (unchecked) or have an `x` (checked).
 *
-* @name checkbox-character-style
-* @memberof rules
-* @type {Array}
-* @see [checkbox-character-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#checkbox-character-style}
+* @see [checkbox-character-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-character-style}
 *
 * @example
 * <!-- Bad -->
@@ -57,19 +37,15 @@ rules[ 'blockquote-indentation' ] = [ 'error', 2 ];
 *
 * * [x] checked
 */
-rules[ 'checkbox-character-style' ] = [ 'error', {
+rules.push( [ 'remark-lint-checkbox-character-style', 'error', {
 	'checked': 'x',
 	'unchecked': ' '
-}];
+}]);
 
 /**
 * Prevent checkboxes being followed by too much white-space.
 *
-* @name checkbox-content-indent
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [checkbox-content-indent]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#checkbox-content-indent}
+* @see [checkbox-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-content-indent}
 *
 * @example
 * <!-- Bad -->
@@ -81,16 +57,12 @@ rules[ 'checkbox-character-style' ] = [ 'error', {
 *
 * * [x] checked
 */
-rules[ 'checkbox-content-indent' ] = [ 'error' ];
+rules.push( [ 'remark-lint-checkbox-content-indent', 'error' ] );
 
 /**
 * Require `fenced` code block style.
 *
-* @name code-block-style
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 'fenced' ]
-* @see [code-block-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#code-block-style}
+* @see [code-block-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-code-block-style}
 *
 * @example
 * <!-- Bad -->
@@ -109,16 +81,12 @@ rules[ 'checkbox-content-indent' ] = [ 'error' ];
 * code
 * ```
 */
-rules[ 'code-block-style' ] = [ 'error', 'fenced' ];
+rules.push( [ 'remark-lint-code-block-style', 'error', 'fenced' ] );
 
 /**
 * Require lowercased definition labels.
 *
-* @name definition-case
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [definition-case]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#definition-case}
+* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-case}
 *
 * @example
 * <!-- Bad -->
@@ -130,16 +98,12 @@ rules[ 'code-block-style' ] = [ 'error', 'fenced' ];
 *
 * [example]: https://example.com
 */
-rules[ 'definition-case' ] = [ 'error' ];
+rules.push( [ 'remark-lint-definition-case', 'error' ] );
 
 /**
 * Prevent consecutive whitespace in a definition.
 *
-* @name definition-spacing
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [definition-spacing]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#definition-spacing}
+* @see [definition-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-spacing}
 *
 * @example
 * <!-- Bad -->
@@ -151,16 +115,12 @@ rules[ 'definition-case' ] = [ 'error' ];
 *
 * [hello world]: https://example.com
 */
-rules[ 'definition-spacing' ] = [ 'error' ];
+rules.push( [ 'remark-lint-definition-spacing', 'error' ] );
 
 /**
 * Require `*` be used as the emphasis marker.
 *
-* @name emphasis-marker
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '*' ]
-* @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#emphasis-marker}
+* @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
 *
 * @example
 * <!-- Bad -->
@@ -172,16 +132,12 @@ rules[ 'definition-spacing' ] = [ 'error' ];
 *
 * *beep*
 */
-rules[ 'emphasis-marker' ] = [ 'error', '*' ];
+rules.push( [ 'remark-lint-emphasis-marker', 'error', '*' ] );
 
 /**
 * Require fenced code blocks to have a language flag.
 *
-* @name fenced-code-flag
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#fenced-code-flag}
+* @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-flag}
 *
 * @example
 * <!-- Bad -->
@@ -197,16 +153,14 @@ rules[ 'emphasis-marker' ] = [ 'error', '*' ];
 * code
 * ```
 */
-rules[ 'fenced-code-flag' ] = [ 'error' ];
+rules.push( [ 'remark-lint-fenced-code-flag', 'error', {
+	'allowEmpty': false
+}]);
 
 /**
 * Require backticks `\`` be used as the fenced code marker.
 *
-* @name fenced-code-marker
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '`' ]
-* @see [fenced-code-marker]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#fenced-code-marker}
+* @see [fenced-code-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
 *
 * @example
 * <!-- Bad -->
@@ -222,82 +176,54 @@ rules[ 'fenced-code-flag' ] = [ 'error' ];
 * code
 * ```
 */
-rules[ 'fenced-code-marker' ] = [ 'error', '`' ];
+rules.push( [ 'remark-lint-fenced-code-marker', 'error', '`' ] );
 
 /**
 * Require a Markdown file to have the file extension `*.md`.
 *
-* @name file-extension
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 'md' ]
-* @see [file-extension]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#file-extension}
+* @see [file-extension]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-file-extension}
 */
-rules[ 'file-extension' ] = [ 'error', 'md' ];
+rules.push( [ 'remark-lint-file-extension', 'error', 'md' ] );
 
 /**
 * Require definitions be placed at the end of a file. Note that we turn this rule off due to definitions being wrapped in HTML tags.
 *
-* @name final-definition
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [final-definition]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#final-definition}
+* @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-definition}
 */
-rules[ 'final-definition' ] = [ 'off' ];
+rules.push( [ 'remark-lint-final-definition', 'off' ] );
 
 /**
 * Require a final newline (see <http://unix.stackexchange.com/questions/18743>).
 *
-* @name final-newline
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [final-newline]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#final-newline}
+* @see [final-newline]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-newline}
 */
-rules[ 'final-newline' ] = [ 'error' ];
+rules.push( [ 'remark-lint-final-newline', 'error' ] );
 
 /**
 * Require first heading level be a level `1` heading.
 *
-* @name first-heading-level
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 1 ]
-* @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#first-heading-level}
+* @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
 */
-rules[ 'first-heading-level' ] = [ 'error', 1 ];
+rules.push( [ 'remark-lint-first-heading-level', 'error', 1 ] );
 
 /**
 * Prevent too many spaces from being used to hard break.
 *
-* @name hard-break-spaces
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [hard-break-spaces]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#hard-break-spaces}
+* @see [hard-break-spaces]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
 */
-rules[ 'hard-break-spaces' ] = [ 'error' ];
+rules.push( [ 'remark-lint-hard-break-spaces', 'error' ] );
 
 /**
 * Warn when headings increment by more than 1 level. NOTE: temporarily disabled.
 *
-* @name heading-increment
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [heading-increment]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#heading-increment}
+* @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
 */
-rules[ 'heading-increment' ] = [ 'off' ];
+rules.push( [ 'remark-lint-heading-increment', 'off' ] );
 
 /**
-* Required `atx` heading style.
+* Require `atx` heading style.
 *
-* @name heading-style
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 'atx' ]
-* @see [heading-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#heading-style}
+* @see [heading-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-style}
 *
 * @example
 * <!-- Bad -->
@@ -315,16 +241,19 @@ rules[ 'heading-increment' ] = [ 'off' ];
 * ## Boop
 *
 */
-rules[ 'heading-style' ] = [ 'error', 'atx' ];
+rules.push( [ 'remark-lint-heading-style', 'error', 'atx' ] );
+
+/**
+* Require Unix linebreaks.
+*
+* @see [linebreak-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-linebreak-style}
+*/
+rules.push( [ 'remark-lint-linebreak-style', 'error', 'unix' ] );
 
 /**
 * Require double quotes for link titles.
 *
-* @name link-title-style
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '"' ]
-* @see [link-title-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#link-title-style}
+* @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
 *
 * @example
 * <!-- Bad -->
@@ -336,16 +265,12 @@ rules[ 'heading-style' ] = [ 'error', 'atx' ];
 *
 * [example](https://example.com "Example")
 */
-rules[ 'link-title-style' ] = [ 'error', '"' ];
+rules.push( [ 'remark-lint-link-title-style', 'error', '"' ] );
 
 /**
 * Prevent unnecessary indentation of list bullets.
 *
-* @name list-item-bullet-indent
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#list-item-bullet-indent}
+* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-bullet-indent}
 *
 * @example
 * <!-- Bad -->
@@ -360,16 +285,12 @@ rules[ 'link-title-style' ] = [ 'error', '"' ];
 * * Boop
 *
 */
-rules[ 'list-item-bullet-indent' ] = [ 'error' ];
+rules.push( [ 'remark-lint-list-item-bullet-indent', 'error' ] );
 
 /**
 * Require consistent indentation of list items.
 *
-* @name list-item-content-indent
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [list-item-content-indent]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#list-item-content-indent}
+* @see [list-item-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-content-indent}
 *
 * @example
 * <!-- Bad -->
@@ -384,16 +305,12 @@ rules[ 'list-item-bullet-indent' ] = [ 'error' ];
 *   - Boop
 *
 */
-rules[ 'list-item-content-indent' ] = [ 'error' ];
+rules.push( [ 'remark-lint-list-item-content-indent', 'error' ] );
 
 /**
 * Require list items be indented using spaces.
 *
-* @name list-item-indent
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 'space' ]
-* @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#list-item-indent}
+* @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
 *
 * @example
 * <!-- Good -->
@@ -411,16 +328,12 @@ rules[ 'list-item-content-indent' ] = [ 'error' ];
 *   bip
 *
 */
-rules[ 'list-item-indent' ] = [ 'error', 'space' ];
+rules.push( [ 'remark-lint-list-item-indent', 'error', 'space' ] );
 
 /**
 * Require consistent list item spacing.
 *
-* @name list-item-spacing
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#list-item-spacing}
+* @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}
 *
 * @example
 * <!-- Bad -->
@@ -447,38 +360,26 @@ rules[ 'list-item-indent' ] = [ 'error', 'space' ];
 * * Bop
 *
 */
-rules[ 'list-item-spacing' ] = [ 'error' ];
+rules.push( [ 'remark-lint-list-item-spacing', 'error' ] );
 
 /**
 * Require that heading lengths be less than or equal to `80` characters.
 *
-* @name maximum-heading-length
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 80 ]
-* @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#maximum-heading-length}
+* @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
 */
-rules[ 'maximum-heading-length' ] = [ 'error', 80 ];
+rules.push( [ 'remark-lint-maximum-heading-length', 'error', 80 ] );
 
 /**
 * Do not enforce a maximum line length.
 *
-* @name maximum-line-length
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#maximum-line-length}
+* @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
 */
-rules[ 'maximum-line-length' ] = [ 'off' ];
+rules.push( [ 'remark-lint-maximum-line-length', 'off' ] );
 
 /**
 * Require all links have a protocol.
 *
-* @name no-auto-link-without-protocol
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-auto-link-without-protocol]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-auto-link-without-protocol}
+* @see [no-auto-link-without-protocol]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
 *
 * @example
 * <!-- Bad -->
@@ -491,16 +392,12 @@ rules[ 'maximum-line-length' ] = [ 'off' ];
 * <https://example.com>
 *
 */
-rules[ 'no-auto-link-without-protocol' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-auto-link-without-protocol', 'error' ] );
 
 /**
 * Require caret in blockquotes.
 *
-* @name no-blockquote-without-caret
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-blockquote-without-caret]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-blockquote-without-caret}
+* @see [no-blockquote-without-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
 *
 * @example
 * <!-- Bad -->
@@ -517,27 +414,19 @@ rules[ 'no-auto-link-without-protocol' ] = [ 'error' ];
 * > boop
 *
 */
-rules[ 'no-blockquote-without-caret' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-blockquote-without-marker', 'error' ] );
 
 /**
 * Allow consecutive blank lines.
 *
-* @name no-consecutive-blank-lines
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-consecutive-blank-lines}
+* @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
 */
-rules[ 'no-consecutive-blank-lines' ] = [ 'off' ];
+rules.push( [ 'remark-lint-no-consecutive-blank-lines', 'off' ] );
 
 /**
 * Do not allow duplicate definitions.
 *
-* @name no-duplicate-definitions
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-duplicate-definitions]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-duplicate-definitions}
+* @see [no-duplicate-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
 *
 * @example
 * <!-- Bad -->
@@ -552,16 +441,33 @@ rules[ 'no-consecutive-blank-lines' ] = [ 'off' ];
 * [bar]: https://github.com
 *
 */
-rules[ 'no-duplicate-definitions' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-duplicate-definitions', 'error' ] );
+
+/**
+* Allow duplicate headings in different sections.
+*
+* @see [no-duplicate-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
+*
+* @example
+* <!-- Okay -->
+*
+* # Beep
+*
+* ## Boop
+*
+* ### Bop
+*
+* ## Beep
+*
+* ### Bop
+*
+*/
+rules.push( [ 'remark-lint-no-duplicate-headings', 'off' ] );
 
 /**
 * Do not allow duplicate headings within a section.
 *
-* @name no-duplicate-headings-in-section
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-duplicate-headings-in-section]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-duplicate-headings-in-section}
+* @see [no-duplicate-headings-in-section]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
 *
 * @example
 * <!-- Bad -->
@@ -582,41 +488,12 @@ rules[ 'no-duplicate-definitions' ] = [ 'error' ];
 * ## Bop
 *
 */
-rules[ 'no-duplicate-headings-in-section' ] = [ 'error' ];
-
-/**
-* Allow duplicate headings in different sections.
-*
-* @name no-duplicate-headings
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [no-duplicate-headings]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-duplicate-headings}
-*
-* @example
-* <!-- Okay -->
-*
-* # Beep
-*
-* ## Boop
-*
-* ### Bop
-*
-* ## Beep
-*
-* ### Bop
-*
-*/
-rules[ 'no-duplicate-headings' ] = [ 'off' ];
+rules.push( [ 'remark-lint-no-duplicate-headings-in-section', 'error' ] );
 
 /**
 * Never allow emphasis to be used in place of a heading.
 *
-* @name no-emphasis-as-heading
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-emphasis-as-heading]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-emphasis-as-heading}
+* @see [no-emphasis-as-heading]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-emphasis-as-heading}
 *
 * @example
 * <!-- Bad -->
@@ -633,16 +510,12 @@ rules[ 'no-duplicate-headings' ] = [ 'off' ];
 * Beep boop
 *
 */
-rules[ 'no-emphasis-as-heading' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-emphasis-as-heading', 'error' ] );
 
 /**
 * Never allow empty URLs in images and links.
 *
-* @name no-empty-url
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-empty-url]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-empty-url}
+* @see [no-empty-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-empty-url}
 *
 * @example
 * <!-- Bad -->
@@ -655,71 +528,47 @@ rules[ 'no-emphasis-as-heading' ] = [ 'error' ];
 * [foo](https://example.com)
 *
 */
-rules[ 'no-empty-url' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-empty-url', 'error' ] );
 
 /**
 * Never allow filenames to begin with an article.
 *
-* @name no-file-name-articles
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-file-name-articles]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-file-name-articles}
+* @see [no-file-name-articles]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-articles}
 */
-rules[ 'no-file-name-articles' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-file-name-articles', 'error' ] );
 
 /**
 * Never allow consecutive dashes in filenames.
 *
-* @name no-file-name-consecutive-dashes
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-file-name-consecutive-dashes]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-file-name-consecutive-dashes}
+* @see [no-file-name-consecutive-dashes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-consecutive-dashes}
 */
-rules[ 'no-file-name-consecutive-dashes' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-file-name-consecutive-dashes', 'error' ] );
 
 /**
 * Never allow filenames to contain irregular characters.
 *
-* @name no-file-name-irregular-characters
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '\\.a-zA-Z0-9-_' ]
-* @see [no-file-name-irregular-characters]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-file-name-irregular-characters}
+* @see [no-file-name-irregular-characters]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-irregular-characters}
 */
-rules[ 'no-file-name-irregular-characters' ] = [ 'error', '\\.a-zA-Z0-9-_' ];
+rules.push( [ 'remark-lint-no-file-name-irregular-characters', 'error', '\\.a-zA-Z0-9-_' ] );
 
 /**
 * Never allow mixed case filenames.
 *
-* @name no-file-name-mixed-case
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-file-name-mixed-case]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-file-name-mixed-case}
+* @see [no-file-name-mixed-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-mixed-case}
 */
-rules[ 'no-file-name-mixed-case' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-file-name-mixed-case', 'error' ] );
 
 /**
 * Never allow filenames to begin or end with dashes.
 *
-* @name no-file-name-outer-dashes
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-file-name-outer-dashes]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-file-name-outer-dashes}
+* @see [no-file-name-outer-dashes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-outer-dashes}
 */
-rules[ 'no-file-name-outer-dashes' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-file-name-outer-dashes', 'error' ] );
 
 /**
 * Never allow heading content indentation.
 *
-* @name no-heading-content-indent
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-heading-content-indent]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-heading-content-indent}
+* @see [no-heading-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-content-indent}
 *
 * @example
 * <!-- Bad -->
@@ -736,16 +585,12 @@ rules[ 'no-file-name-outer-dashes' ] = [ 'error' ];
 * ## Boop
 *
 */
-rules[ 'no-heading-content-indent' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-heading-content-indent', 'error' ] );
 
 /**
 * Never allow heading indentation.
 *
-* @name no-heading-indent
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-heading-indent]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-heading-indent}
+* @see [no-heading-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-indent}
 *
 * @example
 * <!-- Bad -->
@@ -771,16 +616,12 @@ rules[ 'no-heading-content-indent' ] = [ 'error' ];
 * Beep boop.
 *
 */
-rules[ 'no-heading-indent' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-heading-indent', 'error' ] );
 
 /**
 * Never allow paragraphs which appear to be h7+ "headings".
 *
-* @name no-heading-like-paragraph
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-heading-like-paragraph]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-heading-like-paragraph}
+* @see [no-heading-like-paragraph]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-like-paragraph}
 *
 * @example
 * <!-- Bad -->
@@ -788,16 +629,12 @@ rules[ 'no-heading-indent' ] = [ 'error' ];
 * ####### Beep
 *
 */
-rules[ 'no-heading-like-paragraph' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-heading-like-paragraph', 'error' ] );
 
 /**
 * Do not allow punctuation at the end of a heading.
 *
-* @name no-heading-punctuation
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '.,;:!?' ]
-* @see [no-heading-punctuation]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-heading-punctuation}
+* @see [no-heading-punctuation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-punctuation}
 *
 * @example
 * <!-- Bad -->
@@ -805,16 +642,12 @@ rules[ 'no-heading-like-paragraph' ] = [ 'error' ];
 * ## Beep.
 *
 */
-rules[ 'no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
+rules.push( [ 'remark-lint-no-heading-punctuation', 'error', '.,;:!?' ] );
 
 /**
 * Allow HTML.
 *
-* @name no-html
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [no-html]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-html}
+* @see [no-html]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-html}
 *
 * @example
 * <!-- Okay -->
@@ -825,16 +658,12 @@ rules[ 'no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
 *
 * </section>
 */
-rules[ 'no-html' ] = [ 'off' ];
+rules.push( [ 'remark-lint-no-html', 'off' ] );
 
 /**
 * Never allow inline padding.
 *
-* @name no-inline-padding
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-inline-padding]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-inline-padding}
+* @see [no-inline-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-inline-padding}
 *
 * @example
 * <!-- Bad -->
@@ -847,16 +676,12 @@ rules[ 'no-html' ] = [ 'off' ];
 * __Beep__
 *
 */
-rules[ 'no-inline-padding' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-inline-padding', 'error' ] );
 
 /**
 * Never allow literal URLs without angle brackets.
 *
-* @name no-literal-urls
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-literal-urls]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-literal-urls}
+* @see [no-literal-urls]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-literal-urls}
 *
 * @example
 * <!-- Bad -->
@@ -869,16 +694,12 @@ rules[ 'no-inline-padding' ] = [ 'error' ];
 * <https://example.com>
 *
 */
-rules[ 'no-literal-urls' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-literal-urls', 'error' ] );
 
 /**
 * Require blank lines between block nodes.
 *
-* @name no-missing-blank-lines
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-missing-blank-lines}
+* @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
 *
 * @example
 * <!-- Bad -->
@@ -894,16 +715,14 @@ rules[ 'no-literal-urls' ] = [ 'error' ];
 * ## Boop
 *
 */
-rules[ 'no-missing-blank-lines' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-missing-blank-lines', 'error', {
+	'exceptTightLists': true
+}]);
 
 /**
 * Allow multiple top-level headings.
 *
-* @name no-multiple-toplevel-headings
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [no-multiple-toplevel-headings]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-multiple-toplevel-headings}
+* @see [no-multiple-toplevel-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-multiple-toplevel-headings}
 *
 * @example
 * <!-- Okay -->
@@ -913,16 +732,33 @@ rules[ 'no-missing-blank-lines' ] = [ 'error' ];
 * # Boop
 *
 */
-rules[ 'no-multiple-toplevel-headings' ] = [ 'off' ];
+rules.push( [ 'remark-lint-no-multiple-toplevel-headings', 'off' ] );
+
+/**
+* Never allow paragraph indentation.
+*
+* @see [no-paragraph-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-paragraph-content-indent}
+*
+* @example
+* <!-- Bad -->
+*
+* # Beep
+*
+*   Boop.
+*
+* @example
+* <!-- Good -->
+*
+* # Beep
+*
+* Boop.
+*/
+rules.push( [ 'remark-lint-no-paragraph-content-indent', 'error' ] );
 
 /**
 * Never allow references to be used like URLs.
 *
-* @name no-reference-like-url
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-reference-like-url]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-reference-like-url}
+* @see [no-reference-like-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-reference-like-url}
 *
 * @example
 * <!-- Bad -->
@@ -939,16 +775,12 @@ rules[ 'no-multiple-toplevel-headings' ] = [ 'off' ];
 * [boop]: https://github.com
 *
 */
-rules[ 'no-reference-like-url' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-reference-like-url', 'error' ] );
 
 /**
 * Allow shell commands to be prefixed with `$` symbols.
 *
-* @name no-shell-dollars
-* @memberof rules
-* @type {Array}
-* @default [ 'off' ]
-* @see [no-shell-dollars]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-shell-dollars}
+* @see [no-shell-dollars]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shell-dollars}
 *
 * @example
 * <!-- Okay -->
@@ -957,16 +789,12 @@ rules[ 'no-reference-like-url' ] = [ 'error' ];
 * $ echo beep
 * ```
 */
-rules[ 'no-shell-dollars' ] = [ 'off' ];
+rules.push( [ 'remark-lint-no-shell-dollars', 'off' ] );
 
 /**
 * Never allow shortcut reference images.
 *
-* @name no-shortcut-reference-image
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-shortcut-reference-image]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-shortcut-reference-image}
+* @see [no-shortcut-reference-image]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shortcut-reference-image}
 *
 * @example
 * <!-- Bad -->
@@ -983,16 +811,12 @@ rules[ 'no-shell-dollars' ] = [ 'off' ];
 * [foo]: https://example.com/1.png
 *
 */
-rules[ 'no-shortcut-reference-image' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-shortcut-reference-image', 'error' ] );
 
 /**
 * Never allow shortcut reference links.
 *
-* @name no-shortcut-reference-link
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-shortcut-reference-link]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-shortcut-reference-link}
+* @see [no-shortcut-reference-link]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shortcut-reference-link}
 *
 * @example
 * <!-- Bad -->
@@ -1009,16 +833,12 @@ rules[ 'no-shortcut-reference-image' ] = [ 'error' ];
 * [foo]: https://example.com/1.png
 *
 */
-rules[ 'no-shortcut-reference-link' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-shortcut-reference-link', 'error' ] );
 
 /**
 * Never allow table indentation.
 *
-* @name no-table-indentation
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-table-indentation]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-table-indentation}
+* @see [no-table-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-table-indentation}
 *
 * @example
 * <!-- Bad -->
@@ -1039,27 +859,19 @@ rules[ 'no-shortcut-reference-link' ] = [ 'error' ];
 * | foo  | bar  |
 *
 */
-rules[ 'no-table-indentation' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-table-indentation', 'error' ] );
 
 /**
 * Never allow the use of spaces.
 *
-* @name no-tabs
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-tabs]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-tabs}
+* @see [no-tabs]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-tabs}
 */
-rules[ 'no-tabs' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-tabs', 'error' ] );
 
 /**
 * Never allow undefined references.
 *
-* @name no-undefined-references
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-undefined-references]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-undefined-references}
+* @see [no-undefined-references]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-undefined-references}
 *
 * @example
 * <!-- Bad -->
@@ -1074,16 +886,12 @@ rules[ 'no-tabs' ] = [ 'error' ];
 * [foo]: https://example.com
 *
 */
-rules[ 'no-undefined-references' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-undefined-references', 'error' ] );
 
 /**
 * Never allow unused definitions.
 *
-* @name no-unused-definitions
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [no-unused-definitions]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#no-unused-definitions}
+* @see [no-unused-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-unused-definitions}
 *
 * @example
 * <!-- Bad -->
@@ -1098,16 +906,12 @@ rules[ 'no-undefined-references' ] = [ 'error' ];
 * [foo]: https://example.com
 *
 */
-rules[ 'no-unused-definitions' ] = [ 'error' ];
+rules.push( [ 'remark-lint-no-unused-definitions', 'error' ] );
 
 /**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
-* @name ordered-list-marker-style
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '.' ]
-* @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#ordered-list-marker-style}
+* @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
 *
 * @example
 * <!-- Bad -->
@@ -1122,16 +926,12 @@ rules[ 'no-unused-definitions' ] = [ 'error' ];
 * 2. Bar
 *
 */
-rules[ 'ordered-list-marker-style' ] = [ 'error', '.' ];
+rules.push( [ 'remark-lint-ordered-list-marker-style', 'error', '.' ] );
 
 /**
 * Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
 *
-* @name ordered-list-marker-value
-* @memberof rules
-* @type {Array}
-* @default [ 'off', 'ordered' ]
-* @see [ordered-list-marker-value]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#ordered-list-marker-value}
+* @see [ordered-list-marker-value]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-value}
 *
 * @example
 * <!-- Okay -->
@@ -1150,16 +950,12 @@ rules[ 'ordered-list-marker-style' ] = [ 'error', '.' ];
 * 1. Boop
 *
 */
-rules[ 'ordered-list-marker-value' ] = [ 'off', 'ordered' ];
+rules.push( [ 'remark-lint-ordered-list-marker-value', 'off', 'ordered' ] );
 
 /**
 * Require that the horizontal rule style be three consecutive dashes `---`.
 *
-* @name rule-style
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '---' ]
-* @see [rule-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#rule-style}
+* @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
 *
 * @example
 * <!-- Bad -->
@@ -1172,16 +968,12 @@ rules[ 'ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 * ---
 *
 */
-rules[ 'rule-style' ] = [ 'error', '---' ];
+rules.push( [ 'remark-lint-rule-style', 'error', '---' ] );
 
 /**
 * Set the strong marker to underscores.
 *
-* @name strong-marker
-* @memberof rules
-* @type {Array}
-* @default [ 'error', '_' ]
-* @see [strong-marker]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#strong-marker}
+* @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
 *
 * @example
 * <!-- Bad -->
@@ -1194,16 +986,12 @@ rules[ 'rule-style' ] = [ 'error', '---' ];
 * __Beep__.
 *
 */
-rules[ 'strong-marker' ] = [ 'error', '_' ];
+rules.push( [ 'remark-lint-strong-marker', 'error', '_' ] );
 
 /**
 * Require table padding.
 *
-* @name table-cell-padding
-* @memberof rules
-* @type {Array}
-* @default [ 'error', 'padding' ]
-* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#table-cell-padding}
+* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
 *
 * @example
 * <!-- Bad -->
@@ -1220,16 +1008,12 @@ rules[ 'strong-marker' ] = [ 'error', '_' ];
 * | foo  | bar  |
 *
 */
-rules[ 'table-cell-padding' ] = [ 'error', 'padded' ];
+rules.push( [ 'remark-lint-table-cell-padding', 'error', 'padded' ] );
 
 /**
 * Require table pipe alignment.
 *
-* @name table-pipe-alignment
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [table-pipe-alignment]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#table-pipe-alignment}
+* @see [table-pipe-alignment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-pipe-alignment}
 *
 * @example
 * <!-- Bad -->
@@ -1246,16 +1030,12 @@ rules[ 'table-cell-padding' ] = [ 'error', 'padded' ];
 * | foo  | bar  |
 *
 */
-rules[ 'table-pipe-alignment' ] = [ 'error' ];
+rules.push( [ 'remark-lint-table-pipe-alignment', 'error' ] );
 
 /**
 * Require table rows to be fenced in table pipes.
 *
-* @name table-pipes
-* @memberof rules
-* @type {Array}
-* @default [ 'error' ]
-* @see [table-pipes]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#table-pipes}
+* @see [table-pipes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-pipes}
 *
 * @example
 * <!-- Bad -->
@@ -1272,16 +1052,12 @@ rules[ 'table-pipe-alignment' ] = [ 'error' ];
 * | foo  | bar  |
 *
 */
-rules[ 'table-pipes' ] = [ 'error' ];
+rules.push( [ 'remark-lint-table-pipes', 'error' ] );
 
 /**
 * Prefer that the unordered list marker be an asterisk `*`, but allow discretion to maximize clarity and readability.
 *
-* @name unordered-list-marker-style
-* @memberof rules
-* @type {Array}
-* @default [ 'off', '*' ]
-* @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/blob/master/doc/rules.md#unordered-list-marker-style}
+* @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
 *
 * @example
 * <!-- Okay -->
@@ -1300,7 +1076,7 @@ rules[ 'table-pipes' ] = [ 'error' ];
 * * Boop
 *
 */
-rules[ 'unordered-list-marker-style' ] = [ 'off', '*' ];
+rules.push( [ 'remark-lint-unordered-list-marker-style', 'off', '*' ] );
 
 
 // EXPORTS //
