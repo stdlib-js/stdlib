@@ -205,6 +205,18 @@
       "pddl-1.0"
     ]
   },
+  "http://spamassassin.apache.org/old/publiccorpus/readme.html": {
+    "id": "spam-assassin",
+    "description": "SpamAssassin public mail corpus for testing spam filtering systems.",
+    "short_url": "",
+    "keywords": [
+      "email",
+      "corpus",
+      "spamassassin",
+      "classification",
+      "filtering"
+    ]
+  },
   "http://specs.frictionlessdata.io/ndjson/": {
     "id": "ndjson",
     "description": "Newline delimited JSON format.",
@@ -345,12 +357,39 @@
       "ecma"
     ]
   },
+  "http://www.getty.edu/about/opencontent.html": {
+    "id": "getty-open-content",
+    "description": "Getty Open Content Program.",
+    "short_url": "",
+    "keywords": [
+      "getty",
+      "images",
+      "publicdomain",
+      "opencontent",
+      "fairuse",
+      "copyright"
+    ]
+  },
   "http://www.json.org/": {
     "id": "json",
     "description": "The official JSON website.",
     "short_url": "",
     "keywords": [
       "json"
+    ]
+  },
+  "http://www.jstor.org/stable/747086": {
+    "id": "@klare:1974a",
+    "description": "Digital Object Identifier for Klare, George R. 1974.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "school",
+      "readability",
+      "reading",
+      "education"
     ]
   },
   "http://www.yaml.org/": {
@@ -1162,6 +1201,19 @@
       "documentation",
       "configuration",
       "settings"
+    ]
+  },
+  "https://doi.org/10.1086/458513": {
+    "id": "@spache:1953a",
+    "description": "Digital Object Identifier for Spache, George. 1953.",
+    "short_url": "",
+    "keywords": [
+      "paper",
+      "journal",
+      "doi",
+      "school",
+      "grade",
+      "reading"
     ]
   },
   "https://doi.org/10.1109/32.92917": {
@@ -1991,6 +2043,18 @@
       "stdout",
       "stderr",
       "stdin"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Stop_words": {
+    "id": "stopwords",
+    "description": "Wikipedia entry on stop words, which are filtered from text for many natural language processing (NLP) tasks.",
+    "short_url": "",
+    "keywords": [
+      "nlp",
+      "text",
+      "ir",
+      "stopword",
+      "preprocessing"
     ]
   },
   "https://en.wikipedia.org/wiki/Student%27s_t-distribution": {
