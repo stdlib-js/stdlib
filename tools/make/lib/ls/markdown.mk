@@ -22,7 +22,8 @@ FIND_MARKDOWN_FLAGS ?= \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/**/$(TMP_FOLDER)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(TMP_DIR)/*"
 
 ifneq ($(OS), Darwin)
 	FIND_MARKDOWN_FLAGS := -regextype posix-extended $(FIND_MARKDOWN_FLAGS)
