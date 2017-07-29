@@ -179,6 +179,22 @@
       "ecmascript"
     ]
   },
+  "http://ocp.hul.harvard.edu/dl/contagion/010164675": {
+    "id": "@nightingale:1859a",
+    "description": "Library record for Florence Nightingale's polar area diagram of the sanitary history of the British army during the late war with Russia.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "plot",
+      "chart",
+      "florence",
+      "nightingale",
+      "polar",
+      "area",
+      "diagram"
+    ]
+  },
   "http://opendatacommons.org/licenses/by/1.0/": {
     "id": "odc-by-1.0",
     "description": "Open Data Commons Attribution License.",
@@ -1548,6 +1564,18 @@
       "testing"
     ]
   },
+  "https://en.wikipedia.org/wiki/Florence_Nightingale": {
+    "id": "nightingale",
+    "description": "Wikipedia entry on social reformer and statistician Florence Nightingale.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "statistician",
+      "person",
+      "nurse"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
     "id": "frechet-distribution",
     "description": "Wikipedia entry for the Fréchet distribution.",
@@ -1922,6 +1950,18 @@
       "poisson"
     ]
   },
+  "https://en.wikipedia.org/wiki/Polar_area_diagram": {
+    "id": "polar-area-diagram",
+    "description": "Wikipedia section on the polar area diagram.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "plot",
+      "piechart",
+      "chart"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Portable_Network_Graphics": {
     "id": "png",
     "description": "Wikipedia entry for Portable Network Graphics (PNG), a raster graphics file format that supports lossless data compression.",
@@ -2043,6 +2083,17 @@
       "stdout",
       "stderr",
       "stdin"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/State_of_the_Union": {
+    "id": "sotu",
+    "description": "Wikipedia entry on the State of the Union address, an annual speech given by U.S. presidents.",
+    "short_url": "",
+    "keywords": [
+      "sotu",
+      "usa",
+      "president",
+      "speech"
     ]
   },
   "https://en.wikipedia.org/wiki/Stop_words": {
@@ -2221,6 +2272,18 @@
       "probability",
       "discrete",
       "hypergeometric"
+    ]
+  },
+  "https://en.wikisource.org/wiki/United_States_Code/Title_17/Chapter_1/Sections_105_and_106": {
+    "id": "us-copyright",
+    "description": "Paragraphs 105 and 106 of the United States Code, establishing that copyright protection is not available for works of the government.",
+    "short_url": "",
+    "keywords": [
+      "copyright",
+      "law",
+      "government",
+      "usa",
+      "publicdomain"
     ]
   },
   "https://en.wiktionary.org/wiki/alphagram": {
@@ -2604,6 +2667,19 @@
       "nodejs",
       "javascript",
       "js"
+    ]
+  },
+  "https://opensource.org/licenses/bsd-license.html": {
+    "id": "bsd-license",
+    "description": "2-Clause BSD License originally developed by the FreeBSD project.",
+    "short_url": "",
+    "keywords": [
+      "license",
+      "bsd",
+      "copyright",
+      "licensing",
+      "opensource",
+      "simplified"
     ]
   },
   "https://packagecontrol.io/": {
