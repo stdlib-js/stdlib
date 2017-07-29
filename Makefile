@@ -25,6 +25,9 @@ TOOLS_MAKE_LIB_DIR ?= $(TOOLS_MAKE_DIR)/lib
 # Define the root build directory:
 BUILD_DIR ?= $(ROOT_DIR)/build
 
+# Define the root directory for storing temporary files:
+TMP_DIR ?= $(ROOT_DIR)/tmp
+
 # Define the root configuration directory:
 CONFIG_DIR ?= $(ROOT_DIR)/etc
 
