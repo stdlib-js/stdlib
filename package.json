@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "acorn": "^5.0.0",
-    "ajv": "^4.9.2",
+    "ajv": "^5.2.2",
     "browserify": "^14.0.0",
     "chai": "^3.5.0",
     "david": "^11.0.0",
