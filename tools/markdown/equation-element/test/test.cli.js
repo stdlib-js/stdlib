@@ -122,7 +122,7 @@ tape( 'when invoked with a `-V` flag, the command-line interface prints the vers
 	}
 });
 
-tape( 'the function returns an HTML string for rendering an SVG equation in Github Markdown', opts, function test( t ) {
+tape( 'the function returns an HTML string for rendering an SVG equation in GitHub Markdown', opts, function test( t ) {
 	var expected;
 	var cmd;
 

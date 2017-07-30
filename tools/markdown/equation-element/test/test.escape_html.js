@@ -19,7 +19,7 @@ tape( 'the function returns a string', function test( t ) {
 	t.end();
 });
 
-tape( 'the function returns the input string if there are no characters to be encoded', function test( t ) {
+tape( 'the function returns the input string if the input string does not contain any characters to be encoded', function test( t ) {
 	var str = escapeHTML( 'beep boop' );
 	t.equal( str, 'beep boop', 'returns original string' );
 	t.end();
