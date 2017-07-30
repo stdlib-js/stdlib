@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var mathjax = require( 'mathjax-node-src' );
+var mathjax = require( 'mathjax-node-sre' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var copy = require( '@stdlib/utils/copy' );
