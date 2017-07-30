@@ -35,6 +35,7 @@ tape( 'the function throws an error if provided an invalid `options` argument', 
 		null,
 		void 0,
 		true,
+		false,
 		[],
 		function noop() {}
 	];
@@ -61,6 +62,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 		null,
 		void 0,
 		true,
+		false,
 		[],
 		{},
 		function noop() {}
