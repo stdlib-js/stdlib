@@ -55,39 +55,37 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 ## Notes
 
+<!--lint disable code-block-style -->
+
 * The plugin supports __configuration comments__, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a fenced code block.
 
-  ``` text
-  ## Heading
+      ## Heading
 
-  Beep boop.
+      Beep boop.
 
-  <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+      <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
 
-  &grave;&grave;&grave; javascript
-  var x = new Number( 3.14 );
+      ``` javascript
+      var x = new Number( 3.14 );
 
-  var arr = [ 1, , , 4, 5 ];
-  &grave;&grave;&grave;
-  ```
+      var arr = [ 1, , , 4, 5 ];
+      ```
 
   The plugin supports multiple consecutive comments.
 
-  ``` text
-  ## Heading
+      ## Heading
 
-  Beep boop.
+      Beep boop.
 
-  <!-- eslint-disable no-new-wrappers -->
+      <!-- eslint-disable no-new-wrappers -->
 
-  <!-- eslint-disable no-sparse-arrays -->
+      <!-- eslint-disable no-sparse-arrays -->
 
-  &grave;&grave;&grave; javascript
-  var x = new Number( 3.14 );
+      ``` javascript
+      var x = new Number( 3.14 );
 
-  var arr = [ 1, , , 4, 5 ];
-  &grave;&grave;&grave;
-  ```
+      var arr = [ 1, , , 4, 5 ];
+      ```
 
   Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
 
@@ -103,56 +101,52 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 * Configuration comments __only__ apply to a code block which follows immediately after. Hence, the plugin does __not__ apply the following configuration comment to a subsequent code block.
 
-  ``` text
-  ## Heading
+      ## Heading
 
-  <!-- eslint-disable no-new-wrappers -->
+      <!-- eslint-disable no-new-wrappers -->
 
-  Beep boop.
+      Beep boop.
 
-  &grave;&grave;&grave; javascript
-  var x = new Number( 3.14 );
-  &grave;&grave;&grave;
-  ```
+      ``` javascript
+      var x = new Number( 3.14 );
+      ```
 
 * The plugin lints each code block separately, and configuration comments are __not__ shared between code blocks. Thus, one must repeat configuration comments for each code block.
 
-  ``` text
-  ## Heading
+      ## Heading
 
-  Beep.
+      Beep.
 
-  <!-- eslint-disable no-new-wrappers -->
+      <!-- eslint-disable no-new-wrappers -->
 
-  &grave;&grave;&grave; javascript
-  var x = new Number( 3.14 );
-  &grave;&grave;&grave;
+      ``` javascript
+      var x = new Number( 3.14 );
+      ```
 
-  Boop.
+      Boop.
 
-  <!-- eslint-disable no-new-wrappers -->
+      <!-- eslint-disable no-new-wrappers -->
 
-  &grave;&grave;&grave; javascript
-  var x = new Number( -3.14 );
-  &grave;&grave;&grave;
-  ```
+      ``` javascript
+      var x = new Number( -3.14 );
+      ```
 
 * To skip linting for a particular code block, use the __non-standard__ comment `<!-- eslint-skip -->`.
 
-  ``` text
-  ## Heading
+      ## Heading
 
-  Beep boop.
+      Beep boop.
 
-  <!-- eslint-skip -->
+      <!-- eslint-skip -->
 
-  &grave;&grave;&grave; javascript
-  var x = new Number( 3.14 );
-  &grave;&grave;&grave;
-  ```
+      ``` javascript
+      var x = new Number( 3.14 );
+      ```
 
   For skipped code blocks, the plugin reports neither rule nor syntax errors.
 
+
+<!--lint enable code-block-style -->
 
 </section>
 
