@@ -101,7 +101,7 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
   var arr = [ 1, , , 4, 5 ];
   ```
 
-* Configuration comments apply __only__ to a code block which follows immediately after. Hence, the plugin does __not__ apply the following configuration comment to a subsequent code block.
+* Configuration comments __only__ apply to a code block which follows immediately after. Hence, the plugin does __not__ apply the following configuration comment to a subsequent code block.
 
   ``` text
   ## Heading
