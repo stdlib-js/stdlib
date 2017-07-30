@@ -9,7 +9,7 @@ var validate = require( './../lib/validate.js' );
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
-	t.equal( typeof validate, 'function', 'main export is a function' );
+	t.strictEqual( typeof validate, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -23,6 +23,7 @@ tape( 'if provided an `options` argument which is not an object, the function re
 		5,
 		NaN,
 		true,
+		false,
 		void 0,
 		null,
 		[],
@@ -47,6 +48,7 @@ tape( 'if provided a `width` option which is not a positive integer, the functio
 		0,
 		NaN,
 		true,
+		false,
 		void 0,
 		null,
 		[],
@@ -74,6 +76,7 @@ tape( 'if provided an `ex` option which is not a positive integer, the function 
 		0,
 		NaN,
 		true,
+		false,
 		void 0,
 		null,
 		[],
@@ -151,11 +154,11 @@ tape( 'the function returns `null` if provided valid options', function test( t 
 	obj = {};
 	err = validate( obj, opts );
 
-	t.equal( err, null, 'returns null' );
-	t.equal( obj.width, 200, 'sets width' );
-	t.equal( obj.ex, 2, 'sets ex' );
-	t.equal( obj.inline, true, 'sets inline' );
-	t.equal( obj.linebreaks, false, 'sets linebreaks' );
+	t.strictEqual( err, null, 'returns null' );
+	t.strictEqual( obj.width, 200, 'sets width' );
+	t.strictEqual( obj.ex, 2, 'sets ex' );
+	t.strictEqual( obj.inline, true, 'sets inline' );
+	t.strictEqual( obj.linebreaks, false, 'sets linebreaks' );
 
 	t.end();
 });
@@ -171,6 +174,6 @@ tape( 'the function ignores unrecognized options', function test( t ) {
 		'c': 'What?!'
 	};
 	err = validate( {}, opts );
-	t.equal( err, null, 'returns null' );
+	t.strictEqual( err, null, 'returns null' );
 	t.end();
 });
