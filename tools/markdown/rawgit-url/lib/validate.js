@@ -8,7 +8,7 @@ var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 
 
-// VALIDATE //
+// MAIN //
 
 /**
 * Validates function options.
