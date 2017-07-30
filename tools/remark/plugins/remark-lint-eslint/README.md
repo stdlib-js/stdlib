@@ -51,6 +51,114 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 <!-- /.usage -->
 
 
+<section class="notes">
+
+## Notes
+
+* __Configuration comments__. The plugin supports configuration comments, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a Markdown fenced block.
+
+  ``` text
+  ## Heading
+
+  Beep boop.
+
+  <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+
+  \`\`\` javascript
+  var x = new Number( 3.14 );
+
+  var arr = [ 1, , , 4, 5 ];
+  \`\`\`
+  ```
+
+  The plugin supports multiple consecutive comments.
+
+  ``` text
+  ## Heading
+
+  Beep boop.
+
+  <!-- eslint-disable no-new-wrappers -->
+
+  <!-- eslint-disable no-sparse-arrays -->
+
+  \`\`\` javascript
+  var x = new Number( 3.14 );
+
+  var arr = [ 1, , , 4, 5 ];
+  \`\`\`
+  ```
+
+  Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends the generated comment to the content inside the code block. Accordingly, the plugin would transform the above example to
+
+  <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+
+  ``` javascript
+  /* eslint-disable no-new-wrappers */
+  /* eslint-disable no-sparse-arrays */
+  var x = new Number( 3.14 );
+
+  var arr = [ 1, , , 4, 5 ];
+  ```
+
+* Configuration comments apply __only__ to a code block which follows immediately after. Hence, the plugin does __not__ apply the following configuration comment to a subsequent code block.
+
+  ``` text
+  ## Heading
+
+  <!-- eslint-disable no-new-wrappers -->
+
+  Beep boop.
+
+  \`\`\` javascript
+  var x = new Number( 3.14 );
+  \`\`\`
+  ```
+
+* The plugin lints each code block separately, and configuration comments are __not__ shared between code blocks. Thus, one must repeat configuration comments for each code block.
+
+  ``` text
+  ## Heading
+
+  Beep.
+
+  <!-- eslint-disable no-new-wrappers -->
+
+  \`\`\` javascript
+  var x = new Number( 3.14 );
+  \`\`\`
+
+  Boop.
+
+  <!-- eslint-disable no-new-wrappers -->
+
+  \`\`\` javascript
+  var x = new Number( -3.14 );
+  \`\`\`
+  ```
+
+* To skip linting for a particular code block, use the __non-standard__ comment `<!-- eslint-skip -->`.
+
+  ``` text
+  ## Heading
+
+  Beep boop.
+
+  <!-- eslint-skip -->
+
+  \`\`\` javascript
+  var x = new Number( 3.14 );
+  \`\`\`
+  ```
+
+  For skipped code blocks, the plugin reports neither rule nor syntax errors.
+
+
+</section>
+
+<!-- /.notes -->
+
+
 <section class="examples">
 
 ## Examples
