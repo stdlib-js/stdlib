@@ -13,6 +13,7 @@ var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimit
 /**
 * Validates function options.
 *
+* @private
 * @param {Object} opts - destination object
 * @param {Options} options - options to validate
 * @param {PositiveInteger} [options.width] - container width in `ex`
