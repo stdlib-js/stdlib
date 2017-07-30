@@ -38,9 +38,9 @@ var factory = require( './factory.js' );
 function tex2svg( str, options, clbk ) {
 	if ( arguments.length === 2 ) {
 		// Assume that `options` is a callback argument...
-		return factory( {}, options )( str );
+		return factory( {} )( str, options );
 	}
-	factory( options, clbk )( str );
+	factory( options )( str, clbk );
 } // end FUNCTION tex2svg()
 
 
