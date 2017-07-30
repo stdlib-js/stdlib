@@ -64,11 +64,11 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
   <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
 
-  \`\`\` javascript
+  &grave;&grave;&grave; javascript
   var x = new Number( 3.14 );
 
   var arr = [ 1, , , 4, 5 ];
-  \`\`\`
+  &grave;&grave;&grave;
   ```
 
   The plugin supports multiple consecutive comments.
@@ -82,11 +82,11 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
   <!-- eslint-disable no-sparse-arrays -->
 
-  \`\`\` javascript
+  &grave;&grave;&grave; javascript
   var x = new Number( 3.14 );
 
   var arr = [ 1, , , 4, 5 ];
-  \`\`\`
+  &grave;&grave;&grave;
   ```
 
   Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
@@ -110,9 +110,9 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
   Beep boop.
 
-  \`\`\` javascript
+  &grave;&grave;&grave; javascript
   var x = new Number( 3.14 );
-  \`\`\`
+  &grave;&grave;&grave;
   ```
 
 * The plugin lints each code block separately, and configuration comments are __not__ shared between code blocks. Thus, one must repeat configuration comments for each code block.
@@ -124,17 +124,17 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
   <!-- eslint-disable no-new-wrappers -->
 
-  \`\`\` javascript
+  &grave;&grave;&grave; javascript
   var x = new Number( 3.14 );
-  \`\`\`
+  &grave;&grave;&grave;
 
   Boop.
 
   <!-- eslint-disable no-new-wrappers -->
 
-  \`\`\` javascript
+  &grave;&grave;&grave; javascript
   var x = new Number( -3.14 );
-  \`\`\`
+  &grave;&grave;&grave;
   ```
 
 * To skip linting for a particular code block, use the __non-standard__ comment `<!-- eslint-skip -->`.
@@ -146,9 +146,9 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
   <!-- eslint-skip -->
 
-  \`\`\` javascript
+  &grave;&grave;&grave; javascript
   var x = new Number( 3.14 );
-  \`\`\`
+  &grave;&grave;&grave;
   ```
 
   For skipped code blocks, the plugin reports neither rule nor syntax errors.
