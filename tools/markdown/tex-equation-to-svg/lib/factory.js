@@ -10,7 +10,7 @@ var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
 
-// FACTORY //
+// MAIN //
 
 /**
 * Returns a function for converting a TeX or LaTeX string to an SVG.
@@ -20,15 +20,18 @@ var validate = require( './validate.js' );
 * @param {PositiveInteger} [options.ex=6] - `ex` size in pixels
 * @param {boolean} [options.inline=false] - specifies whether to format the input string as an inline equation
 * @param {boolean} [options.linebreaks=true] - enable linebreaking
-* @param {Function} clbk - callback to invoke upon converting a string to an SVG
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
 * @returns {Function} function to convert a string to an SVG
 *
 * @example
 * var opts = {
 *     'inline': true
 * };
-* var convert = factory( opts, done );
-* convert( 'y = mx + b' );
+*
+* var convert = factory( opts );
+*
+* convert( 'y = mx + b', done );
 *
 * function done( error, svg ) {
 *     if ( error ) {
@@ -37,16 +40,13 @@ var validate = require( './validate.js' );
 *     console.log( svg );
 * }
 */
-function factory( options, clbk ) {
+function factory( options ) {
 	var opts;
 	var err;
 	opts = copy( defaults );
 	err = validate( opts, options );
 	if ( err ) {
 		throw err;
-	}
-	if ( !isFunction( clbk ) ) {
-		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `' + clbk + '`.' );
 	}
 	if ( opts.inline ) {
 		opts.format = 'inline-TeX';
@@ -57,12 +57,19 @@ function factory( options, clbk ) {
 	/**
 	* Converts a TeX or LaTeX string to an SVG.
 	*
+	* @private
 	* @param {string} str - string to convert
+	* @param {Function} clbk - callback to invoke upon converting a string to an SVG
+	* @throws {TypeError} first argument must be a string
+	* @throws {TypeError} second argument must be a function
 	* @returns {void}
 	*/
-	function tex2svg( str ) {
+	function tex2svg( str, clbk ) {
 		if ( !isString( str ) ) {
-			throw new TypeError( 'invalid input argument. Must provide a string primitive. Value: `' + str + '`.' );
+			throw new TypeError( 'invalid input argument. First argument must be a string primitive. Value: `' + str + '`.' );
+		}
+		if ( !isFunction( clbk ) ) {
+			throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `' + clbk + '`.' );
 		}
 		opts.math = str;
 		mathjax.typeset( opts, done );

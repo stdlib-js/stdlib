@@ -7,6 +7,7 @@
 *
 * @example
 * var tex2svg = require( '@stdlib/tools/markdown/tex-equation-to-svg' );
+*
 * var eqn = '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.';
 *
 * tex2svg( eqn, done );
@@ -20,10 +21,13 @@
 *
 * @example
 * var factory = require( '@stdlib/tools/markdown/tex-equation-to-svg' ).factory;
+*
 * var opts = {
 *     'inline': true
 * };
+*
 * var convert = factory( opts );
+*
 * convert( 'y = mx + b', done );
 *
 * function done( error, svg ) {
