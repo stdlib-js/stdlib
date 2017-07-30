@@ -123,11 +123,17 @@ tape( 'when invoked with a `-V` flag, the command-line interface prints the vers
 });
 
 tape( 'the function converts a TeX or LaTeX string to an SVG (no options)', opts, function test( t ) {
-	var cmd = [
+	var expected;
+	var cmd;
+
+	cmd = [
 		process.execPath,
 		fpath,
 		'\'\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.\''
 	];
+	expected = readFileSync( resolve( __dirname, 'fixtures', 'test1.svg' ), {
+		'encoding': 'utf8'
+	});
 
 	exec( cmd.join( ' ' ), done );
 
@@ -141,6 +147,7 @@ tape( 'the function converts a TeX or LaTeX string to an SVG (no options)', opts
 			t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
 			t.strictEqual( svg.substring( svg.length-7, svg.length-1 ), '</svg>', 'closing svg tag' );
 			t.strictEqual( svg.substring( svg.length-1 ), '\n', 'new line' );
+			t.strictEqual( svg, expected, 'expected value' );
 			t.strictEqual( stderr.toString(), '', 'does not print to `stderr`' );
 		}
 		t.end();
@@ -148,13 +155,19 @@ tape( 'the function converts a TeX or LaTeX string to an SVG (no options)', opts
 });
 
 tape( 'the function converts a TeX or LaTeX string to an SVG (options)', opts, function test( t ) {
-	var cmd = [
+	var expected;
+	var cmd;
+
+	cmd = [
 		process.execPath,
 		fpath,
 		'\'\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.\'',
 		'--inline',
 		'--no-linebreaks'
 	];
+	expected = readFileSync( resolve( __dirname, 'fixtures', 'test2.svg' ), {
+		'encoding': 'utf8'
+	});
 
 	exec( cmd.join( ' ' ), done );
 
@@ -168,6 +181,7 @@ tape( 'the function converts a TeX or LaTeX string to an SVG (options)', opts, f
 			t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
 			t.strictEqual( svg.substring( svg.length-7, svg.length-1 ), '</svg>', 'closing svg tag' );
 			t.strictEqual( svg.substring( svg.length-1 ), '\n', 'new line' );
+			t.strictEqual( svg, expected, 'expected value' );
 			t.strictEqual( stderr.toString(), '', 'does not print to `stderr`' );
 		}
 		t.end();
