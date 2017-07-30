@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/tools/markdown/equation-element",
   "version": "0.0.0",
-  "description": "Generate an HTML string for displaying an SVG equation in a Github Markdown file.",
+  "description": "Generate an HTML string for displaying an SVG equation in a GitHub Markdown file.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
