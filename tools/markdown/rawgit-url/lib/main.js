@@ -25,8 +25,12 @@ var FILEPATH_PREFIX = /^\.\//;
 *
 * @param {Options} options - function options
 * @param {string} options.slug - public GitHub repository slug
-* @param {string} options.file - filepath
+* @param {string} options.file - file path
 * @param {boolean} [options.cdn=true] - boolean indicating whether to return a CDN URL
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
+* @throws {TypeError} must provide a repository slug
+* @throws {TypeError} must provide a file path
 * @returns {string} RawGit URL
 *
 * @example
