@@ -688,11 +688,11 @@
       var fs = require( 'fs' );
       fs.readFile( '/path/to/beep.js', onRead );
       function onRead( error, data ) {
-        if ( error ) {
-          throw error;
-        }
-        console.log( data.toString() );
-        // returns '...'
+          if ( error ) {
+              throw error;
+          }
+          console.log( data.toString() );
+          // returns '...'
       }
       ```
 
@@ -1198,6 +1198,8 @@
 223. [read-glob](https://github.com/shinnn/node-read-glob)
 
 224. bring `minimist` in-house
+
+     - <https://github.com/lukeed/mri>
 
 225. bring `JSON.parse` in-house to provide better error messages. Can default to native and, on error, re-parse with userland implementation to provide more extensive error messaging.
 
