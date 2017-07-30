@@ -79,6 +79,13 @@ var opts = {
 };
 
 tex2svg( eqn, opts, clbk );
+
+function clbk( error, svg ) {
+    if ( error ) {
+        throw error;
+    }
+    console.log( svg );
+}
 ```
 
 
@@ -87,6 +94,13 @@ tex2svg( eqn, opts, clbk );
 Creates a reusable `function`.
 
 ``` javascript
+function clbk( error, svg ) {
+    if ( error ) {
+        throw error;
+    }
+    console.log( svg );
+}
+
 var opts = {
     'inline': true
 };
