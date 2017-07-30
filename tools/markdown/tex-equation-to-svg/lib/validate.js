@@ -1,0 +1,68 @@
+'use strict';
+
+// MODULES //
+
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
+var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
+
+
+// MAIN //
+
+/**
+* Validates function options.
+*
+* @param {Object} opts - destination object
+* @param {Options} options - options to validate
+* @param {PositiveInteger} [options.width] - container width in `ex`
+* @param {PositiveInteger} [options.ex] - `ex` size in pixels
+* @param {boolean} [options.inline] - specifies whether to format the input string as an inline equation
+* @param {boolean} [options.linebreaks] - enable linebreaking
+* @returns {(Error|null)} error object or null
+*
+* @example
+* var opts = {};
+* var options = {
+*     'inline': true
+* };
+* var err = validate( opts, options );
+* if ( err ) {
+*     throw err;
+* }
+*/
+function validate( opts, options ) {
+	if ( !isObject( options ) ) {
+		return new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options + '`.' );
+	}
+	if ( hasOwnProp( options, 'width' ) ) {
+		opts.width = options.width;
+		if ( !isPositiveInteger( opts.width ) ) {
+			return new TypeError( 'invalid option. `width` option must be a positive integer. Option: `' + opts.width + '`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'ex' ) ) {
+		opts.ex = options.ex;
+		if ( !isPositiveInteger( opts.ex ) ) {
+			return new TypeError( 'invalid option. `ex` option must be a positive integer. Option: `' + opts.ex + '`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'inline' ) ) {
+		opts.inline = options.inline;
+		if ( !isBoolean( opts.inline ) ) {
+			return new TypeError( 'invalid option. `inline` option must be a boolean primitive. Option: `' + opts.inline + '`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'linebreaks' ) ) {
+		opts.linebreaks = options.linebreaks;
+		if ( !isBoolean( opts.linebreaks ) ) {
+			return new TypeError( 'invalid option. `linebreaks` option must be a boolean primitive. Option: `' + opts.linebreaks + '`.' );
+		}
+	}
+	return null;
+} // end FUNCTION validate()
+
+
+// EXPORTS //
+
+module.exports = validate;

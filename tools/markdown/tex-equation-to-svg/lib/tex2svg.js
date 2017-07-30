@@ -1,0 +1,45 @@
+'use strict';
+
+// MODULES //
+
+var factory = require( './factory.js' );
+
+
+// MAIN //
+
+/**
+* Converts a TeX or LaTeX string to an SVG.
+*
+* @param {string} str - string to convert
+* @param {Options} [options] - function options
+* @param {PositiveInteger} [options.width=100] - container width in `ex`
+* @param {PositiveInteger} [options.ex=6] - `ex` size in pixels
+* @param {boolean} [options.inline=false] - specifies whether to format the input string as an inline equation
+* @param {boolean} [options.linebreaks=true] - enable linebreaking
+* @param {Function} clbk - callback to invoke once finished
+* @returns {void}
+*
+* @example
+* var eqn = '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.';
+*
+* tex2svg( eqn, done );
+*
+* function done( error, svg ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( svg );
+* }
+*/
+function tex2svg( str, options, clbk ) {
+	if ( arguments.length === 2 ) {
+		// Assume that `options` is a callback argument...
+		return factory( {}, options )( str );
+	}
+	factory( options, clbk )( str );
+} // end FUNCTION tex2svg()
+
+
+// EXPORTS //
+
+module.exports = tex2svg;
