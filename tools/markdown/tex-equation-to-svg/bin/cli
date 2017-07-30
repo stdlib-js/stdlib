@@ -22,9 +22,9 @@ var tex2svg = require( './../lib' );
 function clbk( error, svg ) {
 	if ( error ) {
 		process.exitCode = 1;
-		return console.error( error.message );
+		return console.error( error.message ); // eslint-disable-line no-console
 	}
-	console.log( svg );
+	console.log( svg ); // eslint-disable-line no-console
 } // end FUNCTION clbk()
 
 
