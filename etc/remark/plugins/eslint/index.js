@@ -10,7 +10,6 @@ var join = require( 'path' ).join;
 
 var etc = resolve( __dirname, '..', '..', '..' );
 var config = join( etc, 'eslint', '.eslintrc.markdown.js' );
-var ignore = join( etc, 'eslint', '.eslintignore' );
 var eslint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-eslint' );
 
 
@@ -25,8 +24,7 @@ var plugin = [
 		[
 			'error',
 			{
-				'config': config,
-				'ignorePath': ignore
+				'config': config
 			}
 		]
 	]
