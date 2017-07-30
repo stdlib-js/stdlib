@@ -21,6 +21,7 @@ var escapeHTML = require( './escape_html.js' );
 * </div>
 * ```
 *
+* @private
 * @param {Options} opts - render options
 * @param {string} opts.className - element class name
 * @param {string} opts.align - element alignment
