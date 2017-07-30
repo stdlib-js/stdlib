@@ -1793,6 +1793,19 @@
       "levy"
     ]
   },
+  "https://en.wikipedia.org/wiki/LaTeX": {
+    "id": "latex",
+    "description": "Wikipedia entry for documentation preparation system LaTeX.",
+    "short_url": "",
+    "keywords": [
+      "markup",
+      "latex",
+      "tex",
+      "texteditor",
+      "typesetting",
+      "knuth"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Laplace_distribution": {
     "id": "laplace-distribution",
     "description": "Wikipedia entry for the Laplace (double exponential) distribution.",
@@ -2198,6 +2211,19 @@
       "gosset",
       "student",
       "t"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/TeX": {
+    "id": "tex",
+    "description": "Wikipedia entry for the TeX typesetting system.",
+    "short_url": "",
+    "keywords": [
+      "markup",
+      "latex",
+      "tex",
+      "typesetting",
+      "knuth",
+      "typography"
     ]
   },
   "https://en.wikipedia.org/wiki/Triangular_distribution": {

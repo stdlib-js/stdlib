@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+'use strict';
+
+// MODULES //
+
+var join = require( 'path' ).join;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/tools/cli' );
+var createElement = require( './../lib' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+*/
+function main() {
+	var flags;
+	var cli;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './opts.json' ),
+		'help': readFileSync( join( __dirname, 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+	// Get any provided command-line options:
+	flags = cli.flags();
+
+	// Alias option:
+	if ( flags.class ) {
+		flags.className = flags.class;
+	}
+	console.log( createElement( flags ) );
+} // end FUNCTION main()
+
+main();
