@@ -1,6 +1,6 @@
 # tex2svg
 
-> Convert a [TeX][tex] or [LaTeX][latex] `string` to an SVG.
+> Convert a [TeX][tex] or [LaTeX][latex] string to an SVG.
 
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
@@ -62,14 +62,14 @@ function clbk( error, svg ) {
 }
 ```
 
-The `function` accepts the following `options`:
+The function accepts the following `options`:
 
 * __width__: container width in `ex` (used for linebreaking and tags). Default: `100`.
 * __ex__: `ex` size in pixels. Default: `6`.
 * __inline__: `boolean` indicating whether to format an input `string` as an inline equation. Default: `false`.
 * __linebreaks__: `boolean` indicating whether to perform linebreaking. Default: `true`.
 
-By default, the `function` formats an input `string` as a displayed equation. To format the `string` as a text (inline) equation, set the `inline` option to `true`.
+By default, the function formats an input `string` as a displayed equation. To format the `string` as a text (inline) equation, set the `inline` option to `true`.
 
 ``` javascript
 var eqn = 'y = mx + b';
@@ -82,7 +82,7 @@ tex2svg( eqn, opts, clbk );
 ```
 
 
-#### tex2svg.factory( options, clbk )
+#### tex2svg.factory( options )
 
 Creates a reusable `function`.
 
@@ -91,11 +91,11 @@ var opts = {
     'inline': true
 };
 
-var convert = tex2svg.factory( opts, clbk );
+var convert = tex2svg.factory( opts );
 
-convert( 'y = mx + b' );
-convert( 'z = \\frac{1}{2}' );
-convert( 'w = \\sum_{i=0}^{n} x_i' );
+convert( 'y = mx + b', clbk );
+convert( 'z = \\frac{1}{2}', clbk );
+convert( 'w = \\sum_{i=0}^{n} x_i', clbk );
 // ...
 ```
 
@@ -143,7 +143,7 @@ function done( error, svg ) {
         throw error;
     }
     console.log( svg );
-    // => '<string>'
+    // => '...'
 }
 ```
 
