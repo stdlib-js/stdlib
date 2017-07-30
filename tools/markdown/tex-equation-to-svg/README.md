@@ -165,7 +165,7 @@ function done( error, svg ) {
 ### Usage
 
 ``` bash
-Usage: tex2svg [options] equation
+Usage: tex2svg [options] <equation>
 
 Options:
 
