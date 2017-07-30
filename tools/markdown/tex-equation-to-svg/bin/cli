@@ -51,6 +51,7 @@ function main() {
 	});
 	// Get any provided command-line arguments:
 	args = cli.args();
+
 	// Get any provided command-line flags:
 	flags = cli.flags();
 
