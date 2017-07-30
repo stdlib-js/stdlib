@@ -13,6 +13,7 @@ var isURI = require( '@stdlib/assert/is-uri' );
 /**
 * Validates function options.
 *
+* @private
 * @param {Object} opts - destination object
 * @param {Options} options - options to validate
 * @param {string} [options.className] - element class name
@@ -25,7 +26,14 @@ var isURI = require( '@stdlib/assert/is-uri' );
 *
 * @example
 * var opts = {};
-* var options = {};
+* var options = {
+*     'className': 'equation',
+*     'align': 'center',
+*     'raw': '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt'
+*     'label': 'eqn:erf',
+*     'src': 'https://cdn.rawgit.com/stdlib-js/stdlib/master/lib/node_modules/@stdlib/math/base/special/erf/docs/img/eqn.svg'
+*     'alt': 'Error function.'
+* };
 * var err = validate( opts, options );
 * if ( err ) {
 *     throw err;
