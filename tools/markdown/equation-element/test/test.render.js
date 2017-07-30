@@ -6,7 +6,7 @@ var tape = require( 'tape' );
 var render = require( './../lib/render.js' );
 
 
-// SETUP //
+// FUNCTIONS //
 
 function setup() {
 	return {
@@ -14,7 +14,7 @@ function setup() {
 		'align': 'center',
 		'raw': 'y = mx + b',
 		'label': 'eq:line',
-		'src': 'https://cdn.rawgit.com/stdlib-j/repo/branch/docs/img/eqn.svg',
+		'src': 'https://cdn.rawgit.com/stdlib-js/repo/branch/docs/img/eqn.svg',
 		'alt': 'Equation for a line.'
 	};
 }
@@ -33,11 +33,11 @@ tape( 'the function returns a string', function test( t ) {
 	t.end();
 });
 
-tape( 'the function returns an HTML string for rendering an SVG equation in Github Markdown', function test( t ) {
+tape( 'the function returns an HTML string for rendering an SVG equation in GitHub Markdown', function test( t ) {
 	var expected;
 	var actual;
 
-	expected = '<div class="equation" align="center" data-raw-text="y = mx + b" data-equation="eq:line">\n    <img src="https://cdn.rawgit.com/math-io/repo/branch/docs/img/eqn.svg" alt="Equation for a line.">\n    <br>\n</div>';
+	expected = '<div class="equation" align="center" data-raw-text="y = mx + b" data-equation="eq:line">\n    <img src="https://cdn.rawgit.com/stdlib-js/repo/branch/docs/img/eqn.svg" alt="Equation for a line.">\n    <br>\n</div>';
 	actual = render( setup() );
 
 	t.equal( actual, expected, 'returns a HTML string' );
