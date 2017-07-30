@@ -20,6 +20,8 @@ var render = require( './render.js' );
 * @param {string} [options.label] - equation label
 * @param {string} [options.src] - image source URL
 * @param {string} [options.alt] - alternative image text
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
 * @returns {string} HTML string
 *
 * @example
