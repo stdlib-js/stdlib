@@ -3,6 +3,7 @@
 // MODULES //
 
 var copy = require( '@stdlib/utils/copy' );
+var replace = require( '@stdlib/string/replace' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var url = require( './url.js' );
@@ -20,10 +21,10 @@ var FILEPATH_PREFIX = /^\.\//;
 // MAIN //
 
 /**
-* Returns a RawGit URL for a file hosted in a public Github repository.
+* Returns a RawGit URL for a file hosted in a public GitHub repository.
 *
-* @param {Object} options - function options
-* @param {string} options.slug - public Github repository slug
+* @param {Options} options - function options
+* @param {string} options.slug - public GitHub repository slug
 * @param {string} options.file - filepath
 * @param {boolean} [options.cdn=true] - boolean indicating whether to return a CDN URL
 * @returns {string} RawGit URL
@@ -44,9 +45,8 @@ function rawgit( options ) {
 	if ( err ) {
 		throw err;
 	}
-	opts.slug = opts.slug.replace( DANGLING_SLASH, '' );
-	opts.file = opts.file.replace( FILEPATH_PREFIX, '' );
-
+	opts.slug = replace( opts.slug, DANGLING_SLASH, '' );
+	opts.file = replace( opts.file, FILEPATH_PREFIX, '' );
 	return url( opts );
 } // end FUNCTION rawgit()
 
