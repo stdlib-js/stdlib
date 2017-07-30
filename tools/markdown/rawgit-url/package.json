@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/tools/markdown/rawgit-url",
   "version": "0.0.0",
-  "description": "Get a RawGit URL for a file hosted in a public Github repository.",
+  "description": "Generate a RawGit URL for a file hosted in a public GitHub repository.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -33,7 +33,9 @@
     "resource",
     "cli",
     "github",
-    "gh"
+    "gh",
+    "repository",
+    "repo"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
