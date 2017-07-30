@@ -7,6 +7,12 @@ var noop = require( '@stdlib/utils/noop' );
 var tex2svg = require( './../lib/tex2svg.js' );
 
 
+// FIXTURES //
+
+var TEST1 = require( './fixtures/test1.js' );
+var TEST3 = require( './fixtures/test3.js' );
+
+
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
@@ -176,7 +182,7 @@ tape( 'the function returns any errors to the provided callback', function test(
 });
 
 tape( 'the function converts an input string to an SVG', function test( t ) {
-	tex2svg( 'y = mx + b', clbk );
+	tex2svg( '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.', clbk );
 
 	function clbk( error, svg ) {
 		if ( error ) {
@@ -185,6 +191,7 @@ tape( 'the function converts an input string to an SVG', function test( t ) {
 		t.strictEqual( typeof svg, 'string', 'returns a string' );
 		t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
 		t.strictEqual( svg.substring( svg.length-6 ), '</svg>', 'closing svg tag' );
+		t.strictEqual( svg, TEST1, 'expected value' );
 		t.end();
 	}
 });
@@ -196,7 +203,7 @@ tape( 'the function converts an input string to an SVG (options)', function test
 		'inline': true,
 		'linebreaks': false
 	};
-	tex2svg( 'y = mx + b', opts, clbk );
+	tex2svg( '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.', opts, clbk );
 
 	function clbk( error, svg ) {
 		if ( error ) {
@@ -205,6 +212,7 @@ tape( 'the function converts an input string to an SVG (options)', function test
 		t.strictEqual( typeof svg, 'string', 'returns a string' );
 		t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
 		t.strictEqual( svg.substring( svg.length-6 ), '</svg>', 'closing svg tag' );
+		t.strictEqual( svg, TEST3, 'expected value' );
 		t.end();
 	}
 });
