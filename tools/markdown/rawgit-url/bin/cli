@@ -1,0 +1,108 @@
+#!/usr/bin/env node
+'use strict';
+
+// MODULES //
+
+var exec = require( 'child_process' ).execSync;
+var join = require( 'path' ).join;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/tools/cli' );
+var wrap = require( '@stdlib/utils/try-function' );
+var cwd = require( '@stdlib/utils/cwd' );
+var rawgit = require( './../lib' );
+
+
+// FUNCTIONS //
+
+/**
+* Attempts to derive a Github repository slug from a local repository.
+*
+* @private
+* @returns {string} repository slug
+*
+* @example
+* var slug = getSlug();
+* // e.g., returns 'stdlib-js/stdlib/345a31cb0e0cc534ccedaa91775873f3da2038c2'
+*/
+function getSlug() {
+	var slug;
+	var opts;
+	var cmd;
+	var out;
+	var re;
+
+	opts = {
+		'cwd': cwd()
+	};
+
+	// Regular expression to extract a repository slug:
+	re = /(?:.+github\.com\/)(.+)\.(?:.+)/;
+
+	// Get the remote origin:
+	cmd = 'git config --get remote.origin.url';
+	out = exec( cmd, opts );
+
+	// Extract the repository slug:
+	slug = out.toString().match( re )[ 1 ];
+
+	// Get the current Git hash:
+	cmd = 'git rev-parse HEAD';
+	out = exec( cmd, opts );
+
+	// Convert from a Buffer to a string and remove any newline characters:
+	out = out.toString();
+	out = out.match( /(.+)/ )[ 1 ];
+
+	return slug+'/'+out;
+} // end FUNCTION getSlug()
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var flags;
+	var args;
+	var opts;
+	var cli;
+	var fcn;
+	var tmp;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './opts.json' ),
+		'help': readFileSync( join( __dirname, 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+	// Get any provided command-line arguments:
+	args = cli.args();
+	// Get any provided command-line options:
+	flags = cli.flags();
+
+	opts = {};
+	opts.file = args[ 0 ];
+	if ( flags.nocdn ) {
+		opts.cdn = false;
+	}
+	if ( flags.slug ) {
+		opts.slug = flags.slug;
+	} else {
+		fcn = wrap( getSlug );
+		tmp = fcn();
+		if ( tmp instanceof Error ) {
+			process.exitCode = 1;
+			return console.error( 'Error: %s', '\nError encountered while generating a RawGit URL. If no slug is provided, ensure that the current working directory is a Git repository.\n\n' );
+		}
+		opts.slug = tmp;
+	}
+	console.log( rawgit( opts ) );
+} // end FUNCTION main()
+
+main();

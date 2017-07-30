@@ -1,0 +1,11 @@
+
+Usage: rawgit [options] file
+
+Options:
+
+  -h,  --help               Print this message.
+  -V,  --version            Print the package version.
+       --nocdn              Return a dev/testing URL.
+       --slug slug          Github repository slug (should include branch,
+                            commit, or tag info).
+

@@ -1,0 +1,59 @@
+'use strict';
+
+// MODULES //
+
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+
+
+// VALIDATE //
+
+/**
+* Validates function options.
+*
+* @private
+* @param {Object} opts - destination object
+* @param {Options} options - function options
+* @param {string} options.slug - public Github repository slug
+* @param {string} options.file - filepath
+* @param {boolean} [options.cdn] - boolean indicating whether to return a CDN URL
+* @returns {(Error|null)} error object or null
+*
+* @example
+* var opts = {};
+* var options = {
+*     'slug': 'stdlib-js/stdlib/master',
+*     'file': 'README.md'
+* };
+* var err = validate( opts, options );
+* if ( err ) {
+*     throw err;
+* }
+*/
+function validate( opts, options ) {
+	if ( !isObject( options ) ) {
+		return new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options + '`.' );
+	}
+	opts.slug = options.slug;
+	if ( !isString( opts.slug ) ) {
+		return new TypeError( 'invalid option. `slug` option must be a primitive string. Option: `' + opts.slug + '`.' );
+	}
+	opts.file = options.file;
+	if ( !isString( opts.file ) ) {
+		return new TypeError( 'invalid option. `file` option must be a primitive string. Option: `' + opts.file + '`.' );
+	}
+	if ( hasOwnProp( options, 'cdn' ) ) {
+		opts.cdn = options.cdn;
+		if ( !isBoolean( opts.cdn ) ) {
+			return new TypeError( 'invalid option. `cdn` option must be a primitive boolean. Option: `' + opts.cdn + '`.' );
+		}
+	}
+	return null;
+} // end FUNCTION validate()
+
+
+// EXPORTS //
+
+module.exports = validate;

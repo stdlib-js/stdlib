@@ -1,0 +1,40 @@
+'use strict';
+
+/**
+* Returns a RawGit URL.
+*
+* @private
+* @param {Object} opts - function options
+* @param {string} opts.protocol - HTTP protocol
+* @param {string} opts.hostname - RawGit hostname
+* @param {string} opts.slug - repository slug
+* @param {string} opts.file - filepath
+* @param {boolean} opts.cdn - boolean indicating whether a resource should be delivered via a CDN
+* @returns {string} RawGit URL
+*
+* @example
+* var out = url({
+*     'protocol': 'https',
+*     'hostname': 'rawgit.com',
+*     'slug': 'stdlib-js/stdlib/develop',
+*     'file': 'README.md',
+*     'cdn': true
+* });
+* // returns 'https://cdn.rawgit.com/stdlib-js/stdlib/develop/README.md'
+*/
+function url( opts ) {
+	var str = '';
+	str += opts.protocol+'://';
+	if ( opts.cdn ) {
+		str += 'cdn.';
+	}
+	str += opts.hostname+'/';
+	str += opts.slug+'/';
+	str += opts.file;
+	return str;
+} // end FUNCTION url()
+
+
+// EXPORTS //
+
+module.exports = url;

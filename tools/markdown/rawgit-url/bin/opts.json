@@ -1,0 +1,18 @@
+{
+	"string": [
+		"slug"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"nocdn"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}
