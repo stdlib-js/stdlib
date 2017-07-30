@@ -14,7 +14,7 @@ function setup() {
 		'align': 'center',
 		'raw': 'y = mx + b',
 		'label': 'eq:line',
-		'src': 'https://cdn.rawgit.com/math-io/repo/branch/docs/img/eqn.svg',
+		'src': 'https://cdn.rawgit.com/stdlib-j/repo/branch/docs/img/eqn.svg',
 		'alt': 'Equation for a line.'
 	};
 }

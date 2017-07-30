@@ -7,7 +7,7 @@ var noop = require( '@stdlib/utils/noop' );
 var createElement = require( './../lib' );
 
 
-// SETUP //
+// FUNCTIONS //
 
 function setup() {
 	return {
@@ -15,7 +15,7 @@ function setup() {
 		'align': 'center',
 		'raw': 'y = mx + b',
 		'label': 'eq:line',
-		'src': 'https://cdn.rawgit.com/math-io/repo/branch/docs/img/eqn.svg',
+		'src': 'https://cdn.rawgit.com/stdlib-js/repo/branch/docs/img/eqn.svg',
 		'alt': 'Equation for a line.'
 	};
 }
@@ -65,6 +65,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 		null,
 		void 0,
 		true,
+		false,
 		[],
 		{},
 		noop
@@ -84,11 +85,11 @@ tape( 'the function throws an error if provided an invalid option', function tes
 	}
 });
 
-tape( 'the function returns an HTML string for rendering an SVG equation in Github Markdown', function test( t ) {
+tape( 'the function returns an HTML string for rendering an SVG equation in GitHub Markdown', function test( t ) {
 	var expected;
 	var actual;
 
-	expected = '<div class="equation" align="center" data-raw-text="y = mx + b" data-equation="eq:line">\n    <img src="https://cdn.rawgit.com/math-io/repo/branch/docs/img/eqn.svg" alt="Equation for a line.">\n    <br>\n</div>';
+	expected = '<div class="equation" align="center" data-raw-text="y = mx + b" data-equation="eq:line">\n    <img src="https://cdn.rawgit.com/stdlib-js/repo/branch/docs/img/eqn.svg" alt="Equation for a line.">\n    <br>\n</div>';
 	actual = createElement( setup() );
 
 	t.equal( actual, expected, 'returns a HTML string' );
