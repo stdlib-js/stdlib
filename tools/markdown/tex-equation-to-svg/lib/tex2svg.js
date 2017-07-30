@@ -16,7 +16,11 @@ var factory = require( './factory.js' );
 * @param {PositiveInteger} [options.ex=6] - `ex` size in pixels
 * @param {boolean} [options.inline=false] - specifies whether to format the input string as an inline equation
 * @param {boolean} [options.linebreaks=true] - enable linebreaking
-* @param {Function} clbk - callback to invoke once finished
+* @param {Callback} clbk - callback to invoke once finished
+* @throws {TypeError} first argument must be a string
+* @throws {TypeError} options argument must be an object
+* @throws {TypeError} must provide valid options
+* @throws {TypeError} last argument must be a function
 * @returns {void}
 *
 * @example
