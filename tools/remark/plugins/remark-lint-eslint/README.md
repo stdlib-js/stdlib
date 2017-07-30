@@ -89,7 +89,7 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
   \`\`\`
   ```
 
-  Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends the generated comment to the content inside the code block. Accordingly, the plugin would transform the above example to
+  Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
 
   <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
 
