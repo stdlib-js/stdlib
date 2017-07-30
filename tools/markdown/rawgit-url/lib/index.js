@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* Return a RawGit URL for a file hosted in a public Github repository.
+* Return a RawGit URL for a file hosted in a public GitHub repository.
 *
 * @module @stdlib/tools/markdown/rawgit-url
 *

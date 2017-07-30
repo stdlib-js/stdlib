@@ -6,9 +6,8 @@ var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var plugin = require( './../lib' );
 
-// Define paths to ESLint config files:
+// Define path to an ESLint config file:
 var config = resolve( __dirname, '..', '..', '..', '..', '..', 'etc', 'eslint', '.eslintrc.markdown.js' );
-var ignore = resolve( __dirname, '..', '..', '..', '..', '..', 'etc', 'eslint', '.eslintignore' );
 
 // Load a Markdown file:
 var fpath = join( __dirname, 'fixtures', 'file.md' );
@@ -16,8 +15,7 @@ var file = readFileSync( fpath );
 
 // Define plugin options:
 var opts = {
-	'config': config,
-	'ignorePath': ignore
+	'config': config
 };
 
 // Lint code blocks:

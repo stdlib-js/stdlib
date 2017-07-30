@@ -4,7 +4,7 @@
 * Returns a RawGit URL.
 *
 * @private
-* @param {Object} opts - function options
+* @param {Options} opts - function options
 * @param {string} opts.protocol - HTTP protocol
 * @param {string} opts.hostname - RawGit hostname
 * @param {string} opts.slug - repository slug

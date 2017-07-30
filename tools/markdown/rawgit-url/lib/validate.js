@@ -16,7 +16,7 @@ var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 * @private
 * @param {Object} opts - destination object
 * @param {Options} options - function options
-* @param {string} options.slug - public Github repository slug
+* @param {string} options.slug - public GitHub repository slug
 * @param {string} options.file - filepath
 * @param {boolean} [options.cdn] - boolean indicating whether to return a CDN URL
 * @returns {(Error|null)} error object or null

@@ -22,13 +22,12 @@ var remark = require( 'remark' );
 var linter = remark().use( plugin ).procecssSync;
 
 // Lint Markdown:
-var vfile = linter( '``` javascript\nvar beep = \'boop\';\n'```' );
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 ```
 
 The plugin recognizes the following `options`:
 
 * __config__: path to an [ESLint][eslint] configuration file. A configuration path is resolved relative to the current working directory of the calling process.
-* __ignorePath__: path to an [ESLint][eslint] ignore file. An ignore file path is resolved relative to the current working directory of the calling process.
 
 To specify configuration `options`, set the respective properties.
 
@@ -37,20 +36,121 @@ var remark = require( 'remark' );
 
 // Define options:
 var opts = {
-    'config': '/path/to/.eslintrc',
-    'ignorePath': '/path/to/.eslintignore'
+    'config': '/path/to/.eslintrc'
 };
 
 // Create a synchronous Markdown text linter:
 var linter = remark().use( plugin, opts ).procecssSync;
 
 // Lint Markdown:
-var vfile = linter( '``` javascript\nvar beep = \'boop\';\n'```' );
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 ```
 
 </section>
 
 <!-- /.usage -->
+
+
+<section class="notes">
+
+## Notes
+
+<!--lint disable code-block-style -->
+
+* The plugin supports __configuration comments__, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a fenced code block.
+
+      ## Heading
+
+      Beep boop.
+
+      <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+
+      ``` javascript
+      var x = new Number( 3.14 );
+
+      var arr = [ 1, , , 4, 5 ];
+      ```
+
+  The plugin supports multiple consecutive comments.
+
+      ## Heading
+
+      Beep boop.
+
+      <!-- eslint-disable no-new-wrappers -->
+
+      <!-- eslint-disable no-sparse-arrays -->
+
+      ``` javascript
+      var x = new Number( 3.14 );
+
+      var arr = [ 1, , , 4, 5 ];
+      ```
+
+  Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
+
+  <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+
+  ``` javascript
+  /* eslint-disable no-new-wrappers */
+  /* eslint-disable no-sparse-arrays */
+  var x = new Number( 3.14 );
+
+  var arr = [ 1, , , 4, 5 ];
+  ```
+
+* Configuration comments __only__ apply to a code block which follows immediately after. Hence, the plugin does __not__ apply the following configuration comment to a subsequent code block.
+
+      ## Heading
+
+      <!-- eslint-disable no-new-wrappers -->
+
+      Beep boop.
+
+      ``` javascript
+      var x = new Number( 3.14 );
+      ```
+
+* The plugin lints each code block separately, and configuration comments are __not__ shared between code blocks. Thus, one must repeat configuration comments for each code block.
+
+      ## Heading
+
+      Beep.
+
+      <!-- eslint-disable no-new-wrappers -->
+
+      ``` javascript
+      var x = new Number( 3.14 );
+      ```
+
+      Boop.
+
+      <!-- eslint-disable no-new-wrappers -->
+
+      ``` javascript
+      var x = new Number( -3.14 );
+      ```
+
+* To skip linting for a particular code block, use the __non-standard__ comment `<!-- eslint-skip -->`.
+
+      ## Heading
+
+      Beep boop.
+
+      <!-- eslint-skip -->
+
+      ``` javascript
+      var x = new Number( 3.14 );
+      ```
+
+  For skipped code blocks, the plugin reports neither rule nor syntax errors.
+
+
+<!--lint enable code-block-style -->
+
+</section>
+
+<!-- /.notes -->
 
 
 <section class="examples">
@@ -64,9 +164,8 @@ var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint' );
 
-// Define paths to ESLint config files:
+// Define path to an ESLint config file:
 var config = resolve( __dirname, '..', '..', '..', '..', 'etc', 'eslint', '.eslintrc.markdown.js' );
-var ignore = resolve( __dirname, '..', '..', '..', '..', 'etc', 'eslint', '.eslintignore' );
 
 // Load a Markdown file:
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.md' );
@@ -74,8 +173,7 @@ var file = readFileSync( fpath );
 
 // Define plugin options:
 var opts = {
-    'config': config,
-    'ignorePath': ignore
+    'config': config
 };
 
 // Lint code blocks:

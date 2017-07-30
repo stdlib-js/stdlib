@@ -20,7 +20,7 @@ function setup() {
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
-	t.equal( typeof rawgit, 'function', 'main export is a function' );
+	t.strictEqual( typeof rawgit, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -35,6 +35,7 @@ tape( 'the function throws an error if provided an invalid `options` argument', 
 		null,
 		void 0,
 		true,
+		false,
 		[],
 		function noop() {}
 	];
@@ -61,6 +62,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 		null,
 		void 0,
 		true,
+		false,
 		[],
 		{},
 		function noop() {}
@@ -110,7 +112,7 @@ tape( 'the function returns a RawGit URL (cdn)', function test( t ) {
 	expected = 'https://cdn.rawgit.com/stdlib-js/stdlib/develop/README.md';
 	actual = rawgit( opts );
 
-	t.equal( actual, expected, 'returns a RawGit URL' );
+	t.strictEqual( actual, expected, 'returns a RawGit URL' );
 	t.end();
 });
 
@@ -125,7 +127,7 @@ tape( 'the function returns a RawGit URL (no cdn)', function test( t ) {
 	expected = 'https://rawgit.com/stdlib-js/stdlib/develop/README.md';
 	actual = rawgit( opts );
 
-	t.equal( actual, expected, 'returns a RawGit URL' );
+	t.strictEqual( actual, expected, 'returns a RawGit URL' );
 	t.end();
 });
 
@@ -141,6 +143,6 @@ tape( 'the function accepts slugs having a dangling `/` and file paths prefixed 
 	expected = 'https://cdn.rawgit.com/stdlib-js/stdlib/develop/README.md';
 	actual = rawgit( opts );
 
-	t.equal( actual, expected, 'returns a RawGit URL' );
+	t.strictEqual( actual, expected, 'returns a RawGit URL' );
 	t.end();
 });
