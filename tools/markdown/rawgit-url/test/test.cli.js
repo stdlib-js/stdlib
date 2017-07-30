@@ -122,7 +122,7 @@ tape( 'when invoked with a `-V` flag, the command-line interface prints the vers
 	}
 });
 
-tape( 'the function returns a RawGit URL for a file hosted in a public Github repository (cdn)', opts, function test( t ) {
+tape( 'the function returns a RawGit URL for a file hosted in a public GitHub repository (cdn)', opts, function test( t ) {
 	var expected;
 	var cmd;
 
@@ -147,7 +147,7 @@ tape( 'the function returns a RawGit URL for a file hosted in a public Github re
 	}
 });
 
-tape( 'the function returns a RawGit URL for a file hosted in a public Github repository (no cdn)', opts, function test( t ) {
+tape( 'the function returns a RawGit URL for a file hosted in a public GitHub repository (no cdn)', opts, function test( t ) {
 	var expected;
 	var cmd;
 
@@ -155,7 +155,7 @@ tape( 'the function returns a RawGit URL for a file hosted in a public Github re
 		process.execPath,
 		fpath,
 		'README.md',
-		'--nocdn',
+		'--no-cdn',
 		'--slug \'stdlib-js/stdlib/38a27c972e29874f1bcd32b94ba4c5cfb283ca61\''
 	];
 	expected = 'https://rawgit.com/stdlib-js/stdlib/38a27c972e29874f1bcd32b94ba4c5cfb283ca61/README.md\n';
