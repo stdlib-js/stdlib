@@ -59,7 +59,7 @@ function transformHTML( html ) {
 * var remark = require( 'remark' );
 * var linter = remark().use( lint ).processSync;
 *
-* var vfile = linter( '``` javascript\nvar beep = \'boop\';\n'```' );
+* var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 */
 function lint( tree, file, options ) {
 	var opts;
