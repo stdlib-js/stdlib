@@ -3,19 +3,20 @@
 
 // MODULES //
 
-var exec = require( 'child_process' ).execSync;
+var exec = require( 'child_process' ).execSync; // eslint-disable-line no-sync
 var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var CLI = require( '@stdlib/tools/cli' );
 var wrap = require( '@stdlib/utils/try-function' );
 var cwd = require( '@stdlib/utils/cwd' );
+var instanceOf = require( '@stdlib/assert/instance-of' );
 var rawgit = require( './../lib' );
 
 
 // FUNCTIONS //
 
 /**
-* Attempts to derive a Github repository slug from a local repository.
+* Attempts to derive a GitHub repository slug from a local repository.
 *
 * @private
 * @returns {string} repository slug
@@ -83,26 +84,27 @@ function main() {
 	});
 	// Get any provided command-line arguments:
 	args = cli.args();
+
 	// Get any provided command-line options:
 	flags = cli.flags();
 
 	opts = {};
 	opts.file = args[ 0 ];
-	if ( flags.nocdn ) {
-		opts.cdn = false;
+	if ( flags.cdn === false ) {
+		opts.cdn = flags.cdn;
 	}
 	if ( flags.slug ) {
 		opts.slug = flags.slug;
 	} else {
 		fcn = wrap( getSlug );
 		tmp = fcn();
-		if ( tmp instanceof Error ) {
+		if ( instanceOf( tmp, Error ) ) {
 			process.exitCode = 1;
-			return console.error( 'Error: %s', '\nError encountered while generating a RawGit URL. If no slug is provided, ensure that the current working directory is a Git repository.\n\n' );
+			return console.error( 'Error: %s', '\nError encountered while generating a RawGit URL. If no slug is provided, ensure that the current working directory is a Git repository.\n\n' ); // eslint-disable-line no-console
 		}
 		opts.slug = tmp;
 	}
-	console.log( rawgit( opts ) );
+	console.log( rawgit( opts ) ); // eslint-disable-line no-console
 } // end FUNCTION main()
 
 main();

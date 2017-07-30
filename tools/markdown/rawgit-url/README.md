@@ -113,14 +113,14 @@ console.log( url );
 ### Usage
 
 ``` bash
-Usage: rawgit [options] file
+Usage: rawgit [options] <file>
 
 Options:
 
   -h,  --help               Print this message.
   -V,  --version            Print the package version.
-       --nocdn              Return a dev/testing URL.
-       --slug slug          Github repository slug (should include branch,
+       --no-cdn             Return a dev/testing URL.
+       --slug slug          GitHub repository slug (should include branch,
                             commit, or tag info).
 ```
 
@@ -172,7 +172,6 @@ To infer a Github repository `slug` from a local `.git` repository, omit the `sl
 $ rawgit docs/assets/web/logo_header.png
 https://cdn.rawgit.com/stdlib-js/stdlib/345a31cb0e0cc534ccedaa91775873f3da2038c2/docs/assets/web/logo_header.png
 ```
-
 
 </section>
 
