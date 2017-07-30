@@ -8,10 +8,10 @@ var HTML_CHARS = /[&<>"']/g;
 // MAIN //
 
 /**
-* Escape special characters in the given HTML string.
+* Escapes special characters in an HTML string.
 *
 * @private
-* @param {string} str - string for which to encode HTML characters
+* @param {string} str - HTML string
 * @returns {string} escaped string
 *
 * @example
@@ -29,9 +29,7 @@ function escapeHTML( str ) {
 	if ( !match ) {
 		return str;
 	}
-
 	out = '';
-	lastIndex = null;
 	while ( match !== null ) {
 		char = match[ 0 ];
 		switch ( char ) {
@@ -52,7 +50,7 @@ function escapeHTML( str ) {
 			break;
 		default:
 		}
-		if ( lastIndex === null ) {
+		if ( lastIndex === void 0 ) {
 			out += str.substring( 0, match.index );
 		} else {
 			out += str.substring( lastIndex+1, match.index );
@@ -63,7 +61,7 @@ function escapeHTML( str ) {
 	}
 	out += str.substring( lastIndex+1, str.length );
 	return out;
-} // end FUNCTION escapeHTML();
+} // end FUNCTION escapeHTML()
 
 
 // EXPORTS //
