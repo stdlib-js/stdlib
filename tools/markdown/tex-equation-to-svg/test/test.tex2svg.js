@@ -10,7 +10,7 @@ var tex2svg = require( './../lib/tex2svg.js' );
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
-	t.equal( typeof tex2svg, 'function', 'main export is a function' );
+	t.strictEqual( typeof tex2svg, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -24,6 +24,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 		null,
 		NaN,
 		true,
+		false,
 		void 0,
 		[],
 		{}
@@ -36,7 +37,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 
 	function badValue( value ) {
 		return function badValue() {
-			tex2svg( 'y = mx+b', value );
+			tex2svg( 'y = mx + b', value );
 		};
 	}
 });
@@ -51,6 +52,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 		null,
 		NaN,
 		true,
+		false,
 		void 0,
 		[],
 		{}
@@ -63,7 +65,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 
 	function badValue( value ) {
 		return function badValue() {
-			tex2svg( 'y = mx+b', {}, value );
+			tex2svg( 'y = mx + b', {}, value );
 		};
 	}
 });
@@ -77,6 +79,7 @@ tape( 'the function throws an error if not provided an input string (no options)
 		null,
 		NaN,
 		true,
+		false,
 		void 0,
 		[],
 		{},
@@ -104,6 +107,7 @@ tape( 'the function throws an error if not provided an input string (options)', 
 		null,
 		NaN,
 		true,
+		false,
 		void 0,
 		[],
 		{},
@@ -132,6 +136,7 @@ tape( 'the function throws an error if provided an options argument which is not
 		null,
 		NaN,
 		true,
+		false,
 		void 0,
 		[],
 		function noop() {}
@@ -144,7 +149,7 @@ tape( 'the function throws an error if provided an options argument which is not
 
 	function badValue( value ) {
 		return function badValue() {
-			tex2svg( 'y = mx+b', value, noop );
+			tex2svg( 'y = mx + b', value, noop );
 		};
 	}
 });
@@ -154,14 +159,14 @@ tape( 'the function throws an error if provided an invalid option', function tes
 	t.end();
 
 	function foo() {
-		tex2svg( 'y = mx+b', {
+		tex2svg( 'y = mx + b', {
 			'ex': null
 		}, noop );
 	}
 });
 
 tape( 'the function returns any errors to the provided callback', function test( t ) {
-	// non-existent LaTeX command...
+	// Non-existent LaTeX command...
 	tex2svg( '\\infinity', clbk );
 
 	function clbk( error ) {
@@ -177,9 +182,9 @@ tape( 'the function converts an input string to an SVG', function test( t ) {
 		if ( error ) {
 			t.ok( false, error.message );
 		}
-		t.equal( typeof svg, 'string', 'returns a string' );
-		t.equal( svg.substring( 0, 4 ), '<svg', 'svg tag' );
-		t.equal( svg.substring( svg.length-6 ), '</svg>', 'closing svg tag' );
+		t.strictEqual( typeof svg, 'string', 'returns a string' );
+		t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
+		t.strictEqual( svg.substring( svg.length-6 ), '</svg>', 'closing svg tag' );
 		t.end();
 	}
 });
@@ -197,9 +202,9 @@ tape( 'the function converts an input string to an SVG (options)', function test
 		if ( error ) {
 			t.ok( false, error.message );
 		}
-		t.equal( typeof svg, 'string', 'returns a string' );
-		t.equal( svg.substring( 0, 4 ), '<svg', 'svg tag' );
-		t.equal( svg.substring( svg.length-6 ), '</svg>', 'closing svg tag' );
+		t.strictEqual( typeof svg, 'string', 'returns a string' );
+		t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
+		t.strictEqual( svg.substring( svg.length-6 ), '</svg>', 'closing svg tag' );
 		t.end();
 	}
 });
