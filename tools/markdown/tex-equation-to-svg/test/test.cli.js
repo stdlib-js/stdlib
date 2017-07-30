@@ -137,17 +137,17 @@ tape( 'the function converts a TeX or LaTeX string to an SVG (no options)', opts
 			t.fail( error.message );
 		} else {
 			svg = stdout.toString();
-			t.equal( typeof svg, 'string', 'returns a string' );
-			t.equal( svg.substring( 0, 4 ), '<svg', 'svg tag' );
-			t.equal( svg.substring( svg.length-7, svg.length-1 ), '</svg>', 'closing svg tag' );
-			t.equal( svg.substring( svg.length-1 ), '\n', 'new line' );
+			t.strictEqual( typeof svg, 'string', 'returns a string' );
+			t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
+			t.strictEqual( svg.substring( svg.length-7, svg.length-1 ), '</svg>', 'closing svg tag' );
+			t.strictEqual( svg.substring( svg.length-1 ), '\n', 'new line' );
 			t.strictEqual( stderr.toString(), '', 'does not print to `stderr`' );
 		}
 		t.end();
 	}
 });
 
-tape( 'the function converts a TeX or LaTeX string to an SVG (no options)', opts, function test( t ) {
+tape( 'the function converts a TeX or LaTeX string to an SVG (options)', opts, function test( t ) {
 	var cmd = [
 		process.execPath,
 		fpath,
@@ -164,10 +164,10 @@ tape( 'the function converts a TeX or LaTeX string to an SVG (no options)', opts
 			t.fail( error.message );
 		} else {
 			svg = stdout.toString();
-			t.equal( typeof svg, 'string', 'returns a string' );
-			t.equal( svg.substring( 0, 4 ), '<svg', 'svg tag' );
-			t.equal( svg.substring( svg.length-7, svg.length-1 ), '</svg>', 'closing svg tag' );
-			t.equal( svg.substring( svg.length-1 ), '\n', 'new line' );
+			t.strictEqual( typeof svg, 'string', 'returns a string' );
+			t.strictEqual( svg.substring( 0, 4 ), '<svg', 'svg tag' );
+			t.strictEqual( svg.substring( svg.length-7, svg.length-1 ), '</svg>', 'closing svg tag' );
+			t.strictEqual( svg.substring( svg.length-1 ), '\n', 'new line' );
 			t.strictEqual( stderr.toString(), '', 'does not print to `stderr`' );
 		}
 		t.end();
