@@ -55,7 +55,7 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 ## Notes
 
-* _The plugin supports __configuration comments__, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a Markdown fenced block.
+* The plugin supports __configuration comments__, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a Markdown fenced block.
 
   ``` text
   ## Heading
