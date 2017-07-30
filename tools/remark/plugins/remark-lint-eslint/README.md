@@ -22,13 +22,12 @@ var remark = require( 'remark' );
 var linter = remark().use( plugin ).procecssSync;
 
 // Lint Markdown:
-var vfile = linter( '``` javascript\nvar beep = \'boop\';\n'```' );
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 ```
 
 The plugin recognizes the following `options`:
 
 * __config__: path to an [ESLint][eslint] configuration file. A configuration path is resolved relative to the current working directory of the calling process.
-* __ignorePath__: path to an [ESLint][eslint] ignore file. An ignore file path is resolved relative to the current working directory of the calling process.
 
 To specify configuration `options`, set the respective properties.
 
@@ -37,15 +36,14 @@ var remark = require( 'remark' );
 
 // Define options:
 var opts = {
-    'config': '/path/to/.eslintrc',
-    'ignorePath': '/path/to/.eslintignore'
+    'config': '/path/to/.eslintrc'
 };
 
 // Create a synchronous Markdown text linter:
 var linter = remark().use( plugin, opts ).procecssSync;
 
 // Lint Markdown:
-var vfile = linter( '``` javascript\nvar beep = \'boop\';\n'```' );
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 ```
 
 </section>
@@ -64,9 +62,8 @@ var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint' );
 
-// Define paths to ESLint config files:
+// Define path to an ESLint config file:
 var config = resolve( __dirname, '..', '..', '..', '..', 'etc', 'eslint', '.eslintrc.markdown.js' );
-var ignore = resolve( __dirname, '..', '..', '..', '..', 'etc', 'eslint', '.eslintignore' );
 
 // Load a Markdown file:
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.md' );
@@ -74,8 +71,7 @@ var file = readFileSync( fpath );
 
 // Define plugin options:
 var opts = {
-    'config': config,
-    'ignorePath': ignore
+    'config': config
 };
 
 // Lint code blocks:

@@ -54,7 +54,6 @@ function transformHTML( html ) {
 * @param {Object} file - file being lint
 * @param {Object} options - options
 * @param {string} [options.config] - path to an ESLint configuration file
-* @param {string} [options.ignorePath] - path to an ESLint ignore file
 *
 * @example
 * var remark = require( 'remark' );
@@ -69,9 +68,6 @@ function lint( tree, file, options ) {
 	opts = {};
 	if ( hasOwnProp( options, 'config' ) ) {
 		opts.configFile = resolve( cwd(), options.config );
-	}
-	if ( hasOwnProp( options, 'ignorePath' ) ) {
-		opts.ignorePath = resolve( cwd(), options.ignorePath );
 	}
 	cli = new Engine( opts );
 	visit( tree, 'code', onNode );
