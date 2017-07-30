@@ -23,8 +23,8 @@
 * var opts = {
 *     'inline': true
 * };
-* var convert = factory( opts, done );
-* convert( 'y = mx + b' );
+* var convert = factory( opts );
+* convert( 'y = mx + b', done );
 *
 * function done( error, svg ) {
 *     if ( error ) {
