@@ -13,7 +13,7 @@ var render = require( './render.js' );
 /**
 * Generates an HTML string for displaying an SVG equation in a GitHub Markdown file.
 *
-* @param {Object} [options] - function options
+* @param {Options} [options] - function options
 * @param {string} [options.className='equation'] - element class name
 * @param {string} [options.align='center'] - element alignment
 * @param {string} [options.raw] - raw equation text
