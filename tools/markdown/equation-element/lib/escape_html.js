@@ -17,7 +17,7 @@ var HTML_CHARS = /[&<>"']/g;
 * @example
 * var str = 'Mr. & Mrs. Smith are <insert adjective>.';
 * var out = escapeHTML( str );
-* // returns
+* // returns 'Mr. &amp; Mrs. Smith are &lt;insert adjective&gt;.'
 */
 function escapeHTML( str ) {
 	var lastIndex;
