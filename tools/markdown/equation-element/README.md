@@ -1,6 +1,6 @@
 # Equation Element
 
-> Generate an HTML string for displaying an SVG equation in a Github Markdown file.
+> Generate an HTML string for displaying an SVG equation in a GitHub Markdown file.
 
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
@@ -23,19 +23,14 @@ var createElement = require( '@stdlib/tools/markdown/equation-element' );
 
 #### createElement( \[options\] )
 
-Generate an HTML `string` for displaying an SVG equation in a Github Markdown file.
+Generates an HTML `string` for displaying an SVG equation in a GitHub Markdown file.
 
 ``` javascript
 var html = createElement();
-/* returns 
-    '<div class="equation" align="center" data-raw-text="" data-equation="">
-       <img src="" alt="">
-       <br>
-     </div>'
-*/
+// returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n    <img src="" alt="">\n    <br>\n</div>'
 ```
 
-The `function` accepts the following `options`:
+The function accepts the following `options`:
 
 * __className__: element class name. Default: `'equation'`.
 * __align__: element alignment. Default: `'center'`.
@@ -48,16 +43,11 @@ Each `option` corresponds an HTML attribute. For example, to set the image sourc
 
 ``` javascript
 var opts = {
-    'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
+    'src': 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg'
 };
 
 var html = createElement( opts );
-/* returns
-    '<div class="equation" align="center" data-raw-text="" data-equation="">
-      <img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">
-      <br>
-    </div>'
-*/
+// returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg" alt="">\n    <br>\n</div>'
 ```
 
 To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `raw` option.
@@ -65,16 +55,11 @@ To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, 
 ``` javascript
 var opts = {
     'raw': '\\Gamma ( n ) = (n-1)!',
-    'src': 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
+    'src': 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg'
 };
 
 var html = createElement( opts );
-/* returns 
-    '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">
-      <img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">
-      <br>
-    </div>'
-*/
+// returns '<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg" alt="">\n    <br>\n</div>'
 ```
 
 </section>
@@ -96,26 +81,21 @@ var html = createElement( opts );
 ## Examples
 
 ``` javascript
-ar createElement = require( '@stdlib/tools/markdown/equation-element' );
+var createElement = require( '@stdlib/tools/markdown/equation-element' );
 
 var opts = {
     'className': 'eqn',
     'align': 'left',
     'raw': '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt',
     'label': 'eq:erf',
-    'src': 'https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg',
+    'src': 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn.svg',
     'alt': 'Error function.'
 };
 
 var html = createElement( opts );
 
 console.log( html );
-/* returns 
-    '<div class="eqn" align="left" data-raw-text="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" data-equation="eq:erf">
-      <img src="https://cdn.rawgit.com/math-io/erf/master/docs/img/eqn.svg" alt="Error function.">
-      <br>
-    </div>'
-*/
+// => '<div class="eqn" align="left" data-raw-text="\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt" data-equation="eq:erf">\n    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn.svg" alt="Error function.">\n    <br>\n</div>'
 ```
 
 </section>
@@ -169,8 +149,11 @@ Options:
 ### Examples
 
 ``` bash
-$ gheqn --raw '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg'
-<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">\n\t<img src="https://cdn.rawgit.com/math-io/gamma/master/docs/img/eqn1.svg" alt="">\n\t<br>\n</div>
+$ gheqn --raw '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg'
+<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg" alt="">
+    <br>
+</div>
 ```
 
 </section>

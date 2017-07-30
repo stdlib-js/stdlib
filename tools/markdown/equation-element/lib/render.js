@@ -10,17 +10,19 @@ var escapeHTML = require( './escape_html.js' );
 /**
 * Renders an HTML string.
 *
-* #### Notes
+* ## Notes
 *
 * Example output:
 *
-*    <div class="equation" align="center" data-raw-text="y = \frac{1}{2}x + 5" data-equation="eq:linear_equation">
-*        <img src="https://cdn.rawgit.com/owner/repo/commit/docs/img/eqn.svg" alt="Equation for a line having slope 1/2 and intercept 5.">
-*        <br>
-*    </div>
+* ``` text
+* <div class="equation" align="center" data-raw-text="y = \frac{1}{2}x + 5" data-equation="eq:linear_equation">
+*     <img src="https://cdn.rawgit.com/owner/repo/commit/docs/img/eqn.svg" alt="Equation for a line having slope 1/2 and intercept 5.">
+*     <br>
+* </div>
+* ```
 *
 * @private
-* @param {Object} opts - render options
+* @param {Options} opts - render options
 * @param {string} opts.className - element class name
 * @param {string} opts.align - element alignment
 * @param {string} opts.raw - raw equation text
