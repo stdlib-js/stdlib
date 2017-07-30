@@ -22,13 +22,13 @@ function setup() {
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
-	t.equal( typeof url, 'function', 'main export is a function' );
+	t.strictEqual( typeof url, 'function', 'main export is a function' );
 	t.end();
 });
 
 tape( 'the function returns a string', function test( t ) {
 	var u = url( setup() );
-	t.equal( typeof u, 'string', 'returns a string' );
+	t.strictEqual( typeof u, 'string', 'returns a string' );
 	t.end();
 });
 
@@ -39,7 +39,7 @@ tape( 'the function returns a RawGit URL (cdn)', function test( t ) {
 	expected = 'https://cdn.rawgit.com/stdlib-js/stdlib/develop/README.md';
 	actual = url( setup() );
 
-	t.equal( actual, expected, 'returns a RawGit URL' );
+	t.strictEqual( actual, expected, 'returns a RawGit URL' );
 	t.end();
 });
 
@@ -54,6 +54,6 @@ tape( 'the function returns a RawGit URL (no cdn)', function test( t ) {
 	expected = 'https://rawgit.com/stdlib-js/stdlib/develop/README.md';
 	actual = url( opts );
 
-	t.equal( actual, expected, 'returns a RawGit URL' );
+	t.strictEqual( actual, expected, 'returns a RawGit URL' );
 	t.end();
 });
