@@ -119,7 +119,7 @@
   },
   "http://en.wikipedia.org/wiki/URI_scheme": {
     "id": "uri",
-    "description": "Wikipedia entry on Uniform Recource Identifiers (URIs) to identify resources in a network.",
+    "description": "Wikipedia entry on Uniform Resource Identifiers (URIs) to identify resources in a network.",
     "short_url": "",
     "keywords": [
       "internet",
