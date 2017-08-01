@@ -121,12 +121,6 @@ $ echo $NODE_PATH
 
 ## Installation
 
-To install development dependencies,
-
-``` bash
-$ make install
-```
-
 To install vendor dependencies (__optional__),
 
 ``` bash
@@ -139,6 +133,12 @@ To install language dependencies (__optional__),
 
 ``` bash
 $ make install-lang-deps
+```
+
+To install development dependencies (e.g., [Node.js][node-js] module dependencies),
+
+``` bash
+$ make install
 ```
 
 To run dependency diagnostics,
