@@ -1,12 +1,12 @@
-# Equations
+# Markdown
 
-> Markdown equation recipes.
+> Markdown recipes.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for managing mathematical equations found in documentation files written in Markdown.
+This directory contains [`make`][make] recipes for managing Markdown files.
 
 </section>
 
