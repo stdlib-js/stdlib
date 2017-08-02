@@ -22,7 +22,7 @@ include $(TOOLS_MAKE_LIB_DIR)/licenses/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/links/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/markdown-equations/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/node/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/notes/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/repl/Makefile
