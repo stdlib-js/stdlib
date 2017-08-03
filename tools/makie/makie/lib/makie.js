@@ -56,7 +56,7 @@ function makie( dirpath, opts, target ) {
 	path = cwd.substring( 0, dirpath.length );
 	if ( path !== dirpath ) {
 		process.exitCode = 1;
-		return console.error( 'In order to execute Makefile commands, you must be either in the Makefile directory or a subdirectory. Current directory: `%s`. Makefile directory: `%s`.', cwd, dirpath );
+		return console.error( 'In order to execute Makefile commands, you must be either in the Makefile directory or a subdirectory. Current directory: `%s`. Makefile directory: `%s`.', cwd, dirpath ); // eslint-disable no-console
 	}
 	// Remove the `dirpath` path (including any beginning slash):
 	path = cwd.substring( dirpath.length+1 );
