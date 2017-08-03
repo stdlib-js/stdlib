@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var createSVGs = require( 'remark-svg-equations' );
+var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-svg-equations' );
 ```
 
 #### createSVGs( options )
@@ -67,7 +67,7 @@ remark.use( createSVGs, opts );
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
 var path = require( 'path' );
-var createSVGs = require( 'remark-svg-equations' );
+var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-svg-equations' );
 
 var fpath;
 var vfile;
