@@ -38,7 +38,7 @@ install-addons: clean-addons
 		cd $$pkg && \
 			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
-		|| echo "Error: failed to build add-on: $$pkg" && exit 0; \
+		|| { echo "Error: failed to build add-on: $$pkg"; exit 0; } \
 	done
 
 .PHONY: install-addons
