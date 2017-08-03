@@ -9,6 +9,7 @@
 * @param {Object} opts - function options
 * @param {Object} opts.plugins - plugins
 * @param {string} target - Makefile target
+* @returns {void}
 *
 * @example
 * var spawn = require( 'child_process' ).spawn;
@@ -31,7 +32,6 @@ function makie( dirpath, opts, target ) {
 	var keys;
 	var path;
 	var key;
-	var err;
 	var cwd;
 	var i;
 
@@ -47,18 +47,16 @@ function makie( dirpath, opts, target ) {
 	}
 	plugin = targets[ target ];
 	if ( plugin === void 0 ) {
-		err = 'Unrecognized/unsupported Makefile target: `' + target + '`.\n';
-		process.stderr.write( err, 'utf8' );
-		return process.exit( 1 );
+		process.exitCode = 1;
+		return console.error( 'Unrecognized/unsupported Makefile target: `%s`.', target ); // eslint-disable-line no-console
 	}
 	cwd = process.cwd();
 
 	// Check that we are within either the Makefile directory or a subdirectory...
 	path = cwd.substring( 0, dirpath.length );
 	if ( path !== dirpath ) {
-		err = 'In order to execute Makefile commands, you must be either in the Makefile directory or a subdirectory. Current directory: `' + cwd + '`. Makefile directory: `' + dirpath + '`.\n';
-		process.stderr.write( err, 'utf8' );
-		return process.exit( 1 );
+		process.exitCode = 1;
+		return console.error( 'In order to execute Makefile commands, you must be either in the Makefile directory or a subdirectory. Current directory: `%s`. Makefile directory: `%s`.', cwd, dirpath );
 	}
 	// Remove the `dirpath` path (including any beginning slash):
 	path = cwd.substring( dirpath.length+1 );
