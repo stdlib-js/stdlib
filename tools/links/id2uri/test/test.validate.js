@@ -37,7 +37,7 @@ tape( 'the function returns an error if provided an options argument which is no
 	t.end();
 });
 
-tape( 'the function returns an error if provided a `loss` option which is not a string', function test( t ) {
+tape( 'the function returns an error if provided a `database` option which is not a string', function test( t ) {
 	var values;
 	var err;
 	var i;
