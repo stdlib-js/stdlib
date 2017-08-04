@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var insertURLs = require( 'remark-html-equation-src-urls' );
+var insertURLs = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equation-src-urls' );
 ```
 
 #### insertURLs( options )
@@ -69,7 +69,7 @@ remark.use( insertURLs, opts );
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
 var path = require( 'path' );
-var insertURLs = require( 'remark-html-equation-src-urls' );
+var insertURLs = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equation-src-urls' );
 
 var fpath;
 var vfile;

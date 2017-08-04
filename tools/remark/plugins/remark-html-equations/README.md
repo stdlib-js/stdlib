@@ -8,7 +8,7 @@
 ## Usage
 
 ``` javascript
-var insertEquations = require( 'remark-html-equations' );
+var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equations' );
 ```
 
 #### insertEquations( options )
@@ -54,7 +54,7 @@ console.log( vfile.contents );
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var insertEquations = require( 'remark-html-equations' );
+var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equations' );
 
 var fpath;
 var opts;
