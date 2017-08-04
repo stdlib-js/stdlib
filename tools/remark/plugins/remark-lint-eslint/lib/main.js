@@ -51,7 +51,7 @@ function transformHTML( html ) {
 * Lints Markdown code blocks using ESLint.
 *
 * @param {Object} tree - abstract syntax tree (AST)
-* @param {Object} file - file being lint
+* @param {Object} file - file being linted
 * @param {Object} options - options
 * @param {string} [options.config] - path to an ESLint configuration file
 *
