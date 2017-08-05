@@ -131,7 +131,7 @@ tape( 'the function inserts a link to a link database', function test( t ) {
 	function onJSON( error, db ) {
 		var expected;
 		if ( error ) {
-			throw error;
+			t.ok( false, 'did not expected an error' );
 		}
 		expected = {
 			'id': 'stdlib',
@@ -175,7 +175,7 @@ tape( 'the created entry will have a period at the end of description even if fo
 	function onJSON( error, db ) {
 		var expected;
 		if ( error ) {
-			throw error;
+			t.ok( false, 'did not expected an error' );
 		}
 		expected = {
 			'id': 'jsdoc',
