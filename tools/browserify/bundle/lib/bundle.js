@@ -19,7 +19,7 @@ var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 * @param {string} [dest] - output file path
 * @param {Callback} clbk - callback to invoke after creating a bundle
 * @throws {TypeError} first argument must be an array of string primitives
-* @throws {TypeError} `dest` argument must be a string primitive
+* @throws {TypeError} the output file path must be a string primitive
 * @throws {TypeError} last argument must be a function
 *
 * @example
