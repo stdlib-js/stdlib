@@ -57,6 +57,7 @@ function bundle( files, dest, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Buffer} bundle - bundle
+	* @returns {void}
 	*/
 	function onBundle( error, bundle ) {
 		var opts;
@@ -80,6 +81,7 @@ function bundle( files, dest, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onWrite( error ) {
 		if ( error ) {
