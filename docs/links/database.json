@@ -1693,6 +1693,16 @@
       "personalname"
     ]
   },
+  "https://en.wikipedia.org/wiki/Golden_ratio": {
+    "id": "golden-ratio",
+    "description": "Wikipedia entry for the golden ratio.",
+    "short_url": "",
+    "keywords": [
+      "golden",
+      "ratio",
+      "phi"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Gumbel_distribution": {
     "id": "gumbel-distribution",
     "description": "Wikipedia entry for the Gumbel distribution.",
