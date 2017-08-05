@@ -3,17 +3,14 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var path = require( 'path' );
-var fs = require( 'fs' );
-var readJSON = require( '@stdlib/fs/read-json' ).sync;
+var proxyquire = require( 'proxyquire' );
 var create = require( './../lib/sync.js' );
 
 
-// SETUP //
+// FIXTURES //
 
-var spath = path.join( __dirname, './fixtures/_database.json' );
-var opath = path.join( __dirname, './fixtures/database_sync.json' );
-fs.writeFileSync( opath, fs.readFileSync( spath ) );
+var EXPECTED = require( './fixtures/expected.json' );
+var EXPECTED2 = require( './fixtures/expected2.json' );
 
 
 // TESTS //
@@ -63,15 +60,19 @@ tape( 'if the function encounters an error when attempting to read a database, t
 });
 
 tape( 'the function inserts a link to a link database', function test( t ) {
-	var expected;
 	var database;
+	var create;
 	var opts;
 	var out;
 	var uri;
-	var db;
 
+	create = proxyquire( './../lib/sync.js', {
+		'fs': {
+			'writeFileSync': mock
+		}
+	});
 	uri = 'http://stdlib.io/';
-	database = './test/fixtures/database_sync.json';
+	database = './test/fixtures/database.json';
 	opts = {
 		'uri': uri,
 		'id': 'stdlib',
@@ -84,34 +85,29 @@ tape( 'the function inserts a link to a link database', function test( t ) {
 		]
 	};
 	out = create( opts );
-	db = readJSON( database );
 	t.strictEqual( out, null, 'returns null' );
-
-	expected = {
-		'id': 'stdlib',
-		'description': 'A standard library for JavaScript and Node.js.',
-		'short_url': '',
-		'keywords': [
-			'standard',
-			'library',
-			'lib'
-		]
-	};
-	t.deepEqual( db[ uri ], expected, 'link has been successfully inserted' );
 	t.end();
+
+	function mock( database, out ) {
+		var db = JSON.parse( out );
+		t.deepEqual( db, EXPECTED, 'link has been successfully inserted' );
+	}
 });
 
 tape( 'the created entry will have a period at the end of description even if forgotten', function test( t ) {
 	var description;
-	var expected;
 	var database;
 	var opts;
 	var out;
 	var uri;
-	var db;
 
+	create = proxyquire( './../lib/sync.js', {
+		'fs': {
+			'writeFileSync': mock
+		}
+	});
 	uri = 'http://usejsdoc.org/';
-	database = './test/fixtures/database_sync.json';
+	database = './test/fixtures/database.json';
 	description = 'The official website of JSDoc';
 	opts = {
 		'uri': uri,
@@ -121,16 +117,12 @@ tape( 'the created entry will have a period at the end of description even if fo
 	};
 	out = create( opts );
 	t.strictEqual( out, null, 'returns null' );
-	db = readJSON( database );
-
-	expected = {
-		'id': 'jsdoc',
-		'description': description+'.',
-		'short_url': '',
-		'keywords': []
-	};
-	t.deepEqual( db[ uri ], expected, 'description ends with a period' );
 	t.end();
+
+	function mock( database, out ) {
+		var db = JSON.parse( out );
+		t.deepEqual( db, EXPECTED2, 'description ends with a period' );
+	}
 });
 
 tape( 'the function returns an error when the link database already contains an entry for the provided URI', function test( t ) {
@@ -140,7 +132,7 @@ tape( 'the function returns an error when the link database already contains an 
 	var uri;
 
 	uri = 'https://www.r-project.org/';
-	database = './test/fixtures/database_async.json';
+	database = './test/fixtures/database.json';
 	opts = {
 		'uri': uri,
 		'id': 'r',
@@ -159,7 +151,7 @@ tape( 'the function returns an error when the link database already contains an 
 	var uri;
 
 	uri = 'https://en.wikipedia.org/wiki/R_Project';
-	database = './test/fixtures/database_sync.json';
+	database = './test/fixtures/database.json';
 	opts = {
 		'uri': uri,
 		'id': 'r',

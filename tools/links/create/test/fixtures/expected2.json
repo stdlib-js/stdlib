@@ -1,14 +1,4 @@
 {
-  "http://stdlib.io/": {
-    "id": "stdlib",
-    "description": "A standard library for JavaScript and Node.js.",
-    "short_url": "",
-    "keywords": [
-      "standard",
-      "library",
-      "lib"
-    ]
-  },
   "http://usejsdoc.org/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",

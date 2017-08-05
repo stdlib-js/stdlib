@@ -9,12 +9,6 @@
       "lib"
     ]
   },
-  "http://usejsdoc.org/": {
-    "id": "jsdoc",
-    "description": "The official website of JSDoc.",
-    "short_url": "",
-    "keywords": []
-  },
   "https://www.r-project.org/": {
     "id": "r",
     "description": "A free software environment for statistical computing and graphics.",
