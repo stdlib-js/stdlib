@@ -38,14 +38,41 @@ tape( 'the function returns an error if provided an options argument which is no
 });
 
 tape( 'the function returns an error if not provided `uri`, `id`, and `description` options', function test( t ) {
+	var values;
 	var opts;
 	var err;
+	var i;
 
-	opts = {
-		'description': 'not enough options'
-	};
-	err = validate( {}, opts );
-	t.equals( err instanceof TypeError, true, 'returns a type error' );
+	values = [
+		{
+			'description': 'A standard library for JavaScript and Node.js.',
+			'id': 'stdlib'
+		},
+		{
+			'uri': 'http://stdlib.io/',
+			'id': 'stdlib'
+		},
+		{
+			'description': 'A standard library for JavaScript and Node.js.',
+			'id': 'stdlib'
+		},
+		{
+			'description': 'A standard library for JavaScript and Node.js.'
+		},
+		{
+			'uri': 'http://stdlib.io/'
+		},
+		{
+			'id': 'stdlib'
+		},
+		{}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		opts = values[ i ];
+		err = validate( {}, opts );
+		t.equals( err instanceof TypeError, true, 'returns a type error' );
+	}
 	t.end();
 });
 
