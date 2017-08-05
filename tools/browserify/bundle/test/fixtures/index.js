@@ -1,5 +1,5 @@
 'use strict';
 
-var exp = require( '@stdlib/math/base/special/exp' );
+var add = require( './add.js' );
 
-console.log( exp( 100.0 ) );
+console.log( add( 100.0, 50.0 ) );
