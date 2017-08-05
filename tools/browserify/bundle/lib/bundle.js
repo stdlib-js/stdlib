@@ -5,6 +5,9 @@
 var debug = require( 'debug' )( 'browserify:bundle' );
 var writeFile = require( 'fs' ).writeFile;
 var browserify = require( 'browserify' );
+var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
+var isFunction = require( '@stdlib/assert/is-function' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 
 
 // MAIN //
@@ -15,6 +18,9 @@ var browserify = require( 'browserify' );
 * @param {StringArray} files - files to bundle
 * @param {string} [dest] - output file path
 * @param {Callback} clbk - callback to invoke after creating a bundle
+* @throws {TypeError} first argument must be an array of string primitives
+* @throws {TypeError} `dest` argument must be a string primitive
+* @throws {TypeError} last argument must be a function
 *
 * @example
 * var files = [ '/foo/bar.js', '/beep/boop.js' ];
@@ -34,11 +40,20 @@ function bundle( files, dest, clbk ) {
 	var cb;
 	var b;
 
+	if ( !isStringArray( files ) ) {
+		throw new TypeError( 'invalid input argument. First argument must be an array of string primitives. Value: `'+files+'`.' );
+	}
 	if ( arguments.length < 3 ) {
 		cb = dest;
 	} else {
+		if ( !isString( dest ) ) {
+			throw new TypeError( 'invalid input argument. Second argument must be a string primitive. Value: `'+dest+'`.' );
+		}
 		out = dest;
 		cb = clbk;
+	}
+	if ( !isFunction( cb ) ) {
+		throw new TypeError( 'invalid input argument. Last argument must be a function. Value: `'+cb+'`.' );
 	}
 	opts = {
 		'transform': [ 'envify' ],
