@@ -4,6 +4,7 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
+var parseJSON = require( '@stdlib/utils/parse-json' );
 var create = require( './../lib/sync.js' );
 
 
@@ -89,7 +90,7 @@ tape( 'the function inserts a link to a link database', function test( t ) {
 	t.end();
 
 	function mock( database, out ) {
-		var db = JSON.parse( out );
+		var db = parseJSON( out );
 		t.deepEqual( db, EXPECTED, 'link has been successfully inserted' );
 	}
 });
@@ -120,7 +121,7 @@ tape( 'the created entry will have a period at the end of description even if fo
 	t.end();
 
 	function mock( database, out ) {
-		var db = JSON.parse( out );
+		var db = parseJSON( out );
 		t.deepEqual( db, EXPECTED2, 'description ends with a period' );
 	}
 });
