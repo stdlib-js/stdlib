@@ -71,7 +71,7 @@ The general format of a REPL text is as follows:
     References
     ----------
     - Nadler, Boaz. 2006. "Design Flaws in the Implementation of the Ziggurat
-      and Monty Python methods (and some remarks on MATLAB randn)." *ArXiv*
+      and Monty Python methods (and some remarks on MATLAB randn)." *arXiv*
       abs/math/0603058 (March).
 
     See Also
@@ -461,7 +461,7 @@ Only include references __if__ usage requires citations. If not required, __remo
     References
     ----------
     - Nadler, Boaz. 2006. "Design Flaws in the Implementation of the Ziggurat
-      and Monty Python methods (and some remarks on MATLAB randn)." *ArXiv*
+      and Monty Python methods (and some remarks on MATLAB randn)." *arXiv*
       abs/math/0603058 (March).
     - McFarland, Christopher D. 2016. "A modified ziggurat algorithm for
       generating exponentially and normally distributed pseudorandom numbers."
