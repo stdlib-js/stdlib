@@ -1896,6 +1896,20 @@
       "logistic"
     ]
   },
+  "https://en.wikipedia.org/wiki/Lucas_number": {
+    "id": "lucas-number",
+    "description": "Wikipedia entry for Lucas numbers, an integer sequence closely related to Fibonacci numbers.",
+    "short_url": "",
+    "keywords": [
+      "lucas",
+      "number theory",
+      "fibonacci",
+      "fibo",
+      "fib",
+      "integer",
+      "sequence"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Marginal_distribution": {
     "id": "marginal-distribution",
     "description": "Wikipedia entry describing marginal distributions.",
