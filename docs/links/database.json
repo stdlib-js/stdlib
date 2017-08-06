@@ -445,6 +445,18 @@
       "language"
     ]
   },
+  "https://arxiv.org/abs/1105.1127": {
+    "id": "@farhi:2011a",
+    "description": "Farhi, Bakir. 2011. \"An explicit formula generating the non-Fibonacci numbers.\" *ArXiv \\[Math.NT\\]* abs/1105.1127 (May): 1-5.",
+    "short_url": "",
+    "keywords": [
+      "fibonacci",
+      "fibo",
+      "number theory",
+      "integers",
+      "sequences"
+    ]
+  },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
     "id": "webkit-bug-7726",
     "description": "Webkit bug report related to the naming of anonymous functions.",
