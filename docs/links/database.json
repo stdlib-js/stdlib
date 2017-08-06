@@ -459,7 +459,7 @@
   },
   "https://arxiv.org/abs/1105.1127": {
     "id": "@farhi:2011a",
-    "description": "Farhi, Bakir. 2011. \"An explicit formula generating the non-Fibonacci numbers.\" *ArXiv \\[Math.NT\\]* abs/1105.1127 (May): 1-5.",
+    "description": "Farhi, Bakir. 2011. \"An explicit formula generating the non-Fibonacci numbers.\" *arXiv \\[Math.NT\\]* abs/1105.1127 (May): 1-5.",
     "short_url": "",
     "keywords": [
       "fibonacci",
