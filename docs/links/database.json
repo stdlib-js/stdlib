@@ -386,6 +386,18 @@
       "ecma"
     ]
   },
+  "http://www.fq.math.ca/Scanned/3-3/gould.pdf": {
+    "id": "@gould:1965a",
+    "description": "Gould, H.W. 1965. \"Non-Fibonacci Numbers.\" *Fibonacci Quarterly*, no. 3: 177–83.",
+    "short_url": "",
+    "keywords": [
+      "fibonacci",
+      "fibo",
+      "integers",
+      "sequences",
+      "number theory"
+    ]
+  },
   "http://www.getty.edu/about/opencontent.html": {
     "id": "getty-open-content",
     "description": "Getty Open Content Program.",
