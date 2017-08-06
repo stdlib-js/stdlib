@@ -49,7 +49,7 @@ void print_results( double elapsed ) {
 /**
 * Returns a clock time.
 *
-* @returns clock time
+* @return clock time
 */
 double tic() {
 	struct timeval now;

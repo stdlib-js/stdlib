@@ -4,6 +4,7 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
+var parseJSON = require( '@stdlib/utils/parse-json' );
 var noop = require( '@stdlib/utils/noop' );
 var create = require( './../lib/async.js' );
 
@@ -131,7 +132,7 @@ tape( 'the function inserts a link to a link database', function test( t ) {
 	}
 
 	function mock( database, out, fopts, onWrite ) {
-		var db = JSON.parse( out );
+		var db = parseJSON( out );
 		t.deepEqual( db, EXPECTED, 'link has been successfully inserted' );
 		onWrite();
 	}
@@ -167,7 +168,7 @@ tape( 'the created entry will have a period at the end of description even if fo
 	}
 
 	function mock( database, out, fopts, onWrite ) {
-		var db = JSON.parse( out );
+		var db = parseJSON( out );
 		t.deepEqual( db, EXPECTED2, 'description ends with a period' );
 		onWrite();
 	}
