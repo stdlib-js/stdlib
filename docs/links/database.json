@@ -2781,6 +2781,20 @@
       "js"
     ]
   },
+  "https://oeis.org/A001690": {
+    "id": "oeis-a001690",
+    "description": "The On-Line Encyclopedia of Integer Sequences (OEIS) entry for non-Fibonacci numbers.",
+    "short_url": "",
+    "keywords": [
+      "fibonacci",
+      "fibo",
+      "fib",
+      "sequences",
+      "integer",
+      "oeis",
+      "number theory"
+    ]
+  },
   "https://opensource.org/licenses/bsd-license.html": {
     "id": "bsd-license",
     "description": "2-Clause BSD License originally developed by the FreeBSD project.",
