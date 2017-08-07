@@ -18,15 +18,15 @@
 ## Usage
 
 ``` javascript
-var TODO = require( '@stdlib/<TODO: module path>' );
+var todo = require( '@stdlib/<TODO: module path>' );
 ```
 
-#### TODO( TODO )
+#### todo( TODO )
 
 TODO
 
 ``` javascript
-var v = TODO( 0.0 );
+var v = todo( 0.0 );
 // returns TODO
 ```
 
@@ -49,9 +49,9 @@ var v = TODO( 0.0 );
 ## Examples
 
 ``` javascript
-var TODO = require( '@stdlib/<TODO: module path>' );
+var todo = require( '@stdlib/<TODO: module path>' );
 
-TODO
+todo();
 ```
 
 </section>
