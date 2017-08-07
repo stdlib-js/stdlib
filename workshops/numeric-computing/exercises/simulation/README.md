@@ -56,7 +56,7 @@
         'fox jumped': ['over'],
         'jumped over': ['the'],
         'over the': ['lazy'],
-        'the lazy': ['cat.']    
+        'the lazy': ['cat.']
     };
     ```
 
