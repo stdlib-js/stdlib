@@ -97,6 +97,8 @@ Including `1` space before a leading brace improves readability.
 
 ##### Bad Example
 
+<!-- eslint-disable space-before-blocks -->
+
 ``` javascript
 // Do not...
 function query(){
@@ -128,6 +130,8 @@ TODO: ESLint rule
 Including `1` space before and after arguments improves readability.
 
 ##### Bad Example
+
+<!-- eslint-disable comma-spacing -->
 
 ``` javascript
 // Do not...
@@ -180,7 +184,7 @@ var foo = bar[ 10 ];
 
   ``` javascript
   // Okay:
-  var foo = myFunction( ( a === b ) ? bar[0] : bar[1] ) );
+  var foo = myFunction( ( a === b ) ? bar[0] : bar[1] );
   ```
 
 ##### Enforcement
@@ -220,7 +224,7 @@ var a = 1 + 1;
   var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
 
   // Okay...
-  var x = (x+y+z)*(t-w-v) + 5;
+  var n = ((x+y+z)*(t-w-v)) + 5;
   ```
 
 ##### Enforcement
@@ -239,6 +243,8 @@ Immediate juxtaposition makes evident what is being affected.
 
 ##### Bad Example
 
+<!-- eslint-disable space-unary-ops, no-plusplus -->
+
 ``` javascript
 // Do not...
 x = ++ y;
@@ -246,6 +252,8 @@ z = z ++;
 ```
 
 ##### Good Example
+
+<!-- eslint-disable no-plusplus -->
 
 ``` javascript
 // Do...
@@ -268,6 +276,8 @@ TODO: ESLint rule
 Including `1` space after comment marks improves readability.
 
 ##### Bad Example
+
+<!-- eslint-disable spaced-comment -->
 
 ``` javascript
 // Do not...
@@ -358,15 +368,15 @@ var svg = d3.select( '.main' ).append( 'svg:svg' ).attr( 'class', 'canvas' ).att
 // Do...
 var svg = d3.select( '.main' )
     .append( 'svg:svg' )
-        .attr( 'class', 'canvas' )
-        .attr( 'data-id', Date.now() )
-        .attr( 'width', 100 )
-        .attr( 'height', 100 );
+    .attr( 'class', 'canvas' )
+    .attr( 'data-id', Date.now() )
+    .attr( 'width', 100 )
+    .attr( 'height', 100 );
 ```
 
 ##### Enforcement
 
-Hard to automatically enforce. Mostly through code review.
+Hard to automatically enforce. Mostly through code review. TODO: partial enforcement via lint rule.
 
 <!-- </rule> -->
 
@@ -472,13 +482,15 @@ Indenting the `case` keyword within `switch` statements results in excessive ind
 
 ##### Bad Example
 
+<!-- eslint-disable indent -->
+
 ``` javascript
 // Do not...
-switch( foo ) {
+switch ( foo ) {
     case 'bar':
         // Do something...
         break;
-    case 'beep';
+    case 'beep':
         // Do something...
         break;
     default:
@@ -490,11 +502,11 @@ switch( foo ) {
 
 ``` javascript
 // Do...
-switch( foo ) {
+switch ( foo ) {
 case 'bar':
     // Do something...
     break;
-case 'beep';
+case 'beep':
     // Do something...
     break;
 default:
@@ -527,20 +539,18 @@ While semicolons are [not required][ecma-262] in most cases due to [automatic se
 
 ##### Bad Example
 
+<!-- eslint-disable semi -->
+
 ``` javascript
 // Do not...
-if ( foo === bar ) {
-    return true
-}
+var bar = foo()
 ```
 
 ##### Good Example
 
 ``` javascript
 // Do...
-if ( foo === bar ) {
-    return true;
-}
+var bar = foo();
 ```
 
 ##### Enforcement
@@ -648,6 +658,8 @@ Adding, removing, and reordering variables is easier. Additionally, `git` diffs 
 
 ##### Bad Example
 
+<!-- eslint-disable one-var -->
+
 ``` javascript
 // Do not...
 var boop = 'hello',
@@ -681,6 +693,8 @@ TODO: ESLint rule
 Declaring variables on separate lines improves readability.
 
 ##### Bad Example
+
+<!-- eslint-disable max-statements-per-line -->
 
 ``` javascript
 // Do not...
@@ -794,6 +808,8 @@ Reserve double quotes for in-string parenthetical references or quotes. Addition
 
 ##### Bad Example
 
+<!-- eslint-disable quotes -->
+
 ``` javascript
 // Do not...
 var str = "Hello";
@@ -848,6 +864,8 @@ TODO: ESLint rule. Code review.
 Instantiation with the `new` operator is unnecessary.
 
 ##### Bad Example
+
+<!-- eslint-disable no-array-constructor -->
 
 ``` javascript
 // Do not...
@@ -1017,21 +1035,23 @@ Splitting `object` properties over multiple lines improves readability.
 
 ##### Bad Example
 
+<!-- eslint-disable object-curly-newline, no-restricted-syntax, object-property-newline, max-statements-per-line -->
+
 ``` javascript
 // Do not...
-var obj = { 'a': null, 'b': 5, 'c': function() { return true; }, 'd': ( foo === bar ) ? foo : bar };
+var obj = { 'a': null, 'b': 5, 'c': function c() { return true; }, 'd': ( foo === bar ) ? foo : bar };
 ```
 
 ##### Good Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do...
-var obj;
-
-obj = {
+var obj = {
     'a': null,
     'b': 5,
-    'c': function() {
+    'c': function c() {
         return true;
     },
     'd': ( foo === bar ) ? foo : bar
@@ -1053,6 +1073,8 @@ Code review.
 For complex `objects`, matching properties and their corresponding values becomes more difficult, thus hindering readability.
 
 ##### Bad Example
+
+<!-- eslint-disable key-spacing -->
 
 ``` javascript
 // Do not...
@@ -1090,6 +1112,8 @@ An object which includes a trailing comma is not valid JSON.
 
 ##### Bad Example
 
+<!-- eslint-disable comma-dangle -->
+
 ``` javascript
 // Do not...
 var obj = {
@@ -1125,6 +1149,8 @@ TODO: ESLint rule
 Unnecessary syntactic sugar. In complex objects, shorthand notation decreases readability. Prefer making key-value pairs explicit.
 
 ##### Bad Example
+
+<!-- eslint-disable object-property-newline, object-shorthand, object-curly-newline -->
 
 ``` javascript
 var foo = 'beep';
@@ -1174,11 +1200,13 @@ Declaring `functions` using [function statements][function-statements], rather t
 
 ##### Bad Example
 
+<!-- eslint-disable func-style, func-names, no-restricted-syntax -->
+
 ``` javascript
 // Do not...
-var beep = function() {
+var beep = function () {
     console.log( 'boop' );
-}
+};
 ```
 
 ##### Good Example
@@ -1245,10 +1273,12 @@ Declaring within loops and conditions may result in repeated function creation, 
 
 ##### Bad Example
 
+<!-- eslint-disable no-restricted-syntax, block-scoped-var -->
+
 ``` javascript
 // Do not...
 function beep( idx, clbk ) {
-    clbk( 'beep'+i );
+    clbk( 'beep'+idx );
 }
 for ( var i = 0; i < 10; i++ ) {
     beep( i, function bop( msg ) {
@@ -1262,7 +1292,7 @@ for ( var i = 0; i < 10; i++ ) {
 ``` javascript
 // Do...
 function beep( idx, clbk ) {
-    clbk( 'beep'+i );
+    clbk( 'beep'+idx );
 }
 function bop( msg ) {
     console.log( msg );
@@ -1274,6 +1304,8 @@ for ( var i = 0; i < 10; i++ ) {
 ```
 
 ##### Bad Example
+
+<!-- eslint-disable no-restricted-syntax, no-loop-func -->
 
 ``` javascript
 // Do not...
@@ -1288,17 +1320,21 @@ for ( var i = 0; i < 10; i++ ) {
 
 ``` javascript
 // Do...
-function onTimeout( idx ) {
-    return function onTimeout() {
+function clbk( idx ) {
+    return onTimeout;
+
+    function onTimeout() {
         console.log( idx );
-    };
+    }
 }
 for ( var i = 0; i < 10; i++ ) {
-    setTimeout( onTimeout( i ), 1000 );
+    setTimeout( clbk( i ), 1000 );
 }
 ```
 
 ##### Bad Example
+
+<!-- eslint-disable no-inner-declarations -->
 
 ``` javascript
 // Do not...
@@ -1340,6 +1376,8 @@ Makes a clear distinction between a `function` declaration and one that is immed
 
 ##### Bad Example
 
+<!-- eslint-skip -->
+
 ``` javascript
 // Do not...
 function init() {
@@ -1348,6 +1386,8 @@ function init() {
 ```
 
 ##### Good Example
+
+<!-- eslint-disable no-restricted-syntax -->
 
 ``` javascript
 // Do...
@@ -1372,6 +1412,8 @@ Reduces noise when first attempting to understand implementation flow, especiall
 
 ##### Bad Example
 
+<!-- eslint-disable no-use-before-define -->
+
 ``` javascript
 // Don't...
 function getEquation( a, b, c ) {
@@ -1387,7 +1429,7 @@ function getEquation( a, b, c ) {
     }
     var d;
 
-    a = 3 * a;
+    a *= 3;
     b = a / 5;
     c = Math.pow( b, 3 );
 
@@ -1404,7 +1446,7 @@ function getEquation( a, b, c ) {
 function getEquation( a, b, c ) {
     var d;
 
-    a = 3 * a;
+    a *= 3;
     b = a / 5;
     c = Math.pow( b, 3 );
 
@@ -1422,7 +1464,7 @@ function getEquation( a, b, c ) {
     function eqn( e ) {
         return e - d + ( 15 * a ) + ( Math.pow( b, 1 / c ) );
     }
-}   
+}
 ```
 
 ##### Enforcement
@@ -1440,6 +1482,8 @@ TODO: ESLint rule
 Function calls introduce additional overhead and, often, functional counterparts do not save space, a frequently cited benefit.
 
 ##### Bad Example
+
+<!-- eslint-disable no-restricted-syntax -->
 
 ``` javascript
 // Do not...
@@ -1473,21 +1517,25 @@ Code review.
 
 (1) They are not needed. (2) The syntax allows too much style variability.
 
+<!-- eslint-disable arrow-body-style, no-restricted-syntax, func-style, arrow-parens, max-statements-per-line -->
+
 ``` javascript
 // No braces:
 var f = x => x + 1;
 
 // Some braces:
-var f = (x, y) => x + y;
+f = (x, y) => x + y;
 
 // Some other braces:
-var f = x => { x += 20; return x.toString(); };
+f = x => { x += 20; return x.toString(); };
 
 // Many braces:
-var f = (x, y) => { x += y; return x.toString(); }
+f = (x, y) => { x += y; return x.toString(); };
 ```
 
 (3) Implicit `returns` can lead to subtle bugs and require a constant mental model as to what is returned and when.
+
+<!-- eslint-skip -->
 
 ``` javascript
 var y = x => x;
@@ -1516,6 +1564,8 @@ z = y( 10 );
 ```
 
 ##### Bad Example
+
+<!-- eslint-disable arrow-body-style, no-restricted-syntax, arrow-parens -->
 
 ``` javascript
 var squared = arr.map( x => x*x );
@@ -1637,13 +1687,15 @@ function cube( value ) {
     v = mult( v, value );
     return v;
 }
-function compute( value ) {
-    return function compute() {
+function deferred( value ) {
+    return compute;
+
+    function compute() {
         return cube( value );
-    };
+    }
 }
 function deferredComputation( value ) {
-    return compute( value );
+    return deferred( value );
 }
 ```
 
@@ -1663,6 +1715,8 @@ Named `functions` are easier to find in stack traces and consequently debug.
 
 ##### Bad Example
 
+<!-- eslint-disable no-restricted-syntax, func-names -->
+
 ``` javascript
 // Do not...
 
@@ -1670,8 +1724,8 @@ function beep( f ) {
     f();
 }
 
-beep( function() {
-   console.log( 'boop' ); 
+beep( function () {
+    console.log( 'boop' );
 });
 ```
 
@@ -1684,7 +1738,7 @@ function beep( f ) {
     f();
 }
 function boop() {
-   console.log( 'boop' ); 
+    console.log( 'boop' );
 }
 
 beep( boop );
@@ -1715,6 +1769,8 @@ Writing JavaScript in [strict mode][strict-mode] discourages bad practices, avoi
 
 ##### Good Example
 
+<!-- eslint-skip -->
+
 ``` javascript
 'use strict';
 
@@ -1725,12 +1781,13 @@ NaN = null; // throws an Error
 
 * Prefer [strict mode][strict-mode] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
 
-    ``` javascript
-    function beep() {
-        'use strict';
-        delete Object.prototype; // throws an Error
-    }
-    ```
+  ``` javascript
+  function beep() {
+      'use strict';
+
+      delete Object.prototype; // throws an Error
+  }
+  ```
 
 ##### Enforcement
 
@@ -1771,7 +1828,7 @@ function fcn() {
 function fcn() {
     var nargs = arguments.length;
     var args = new Array( nargs );
-    var out,
+    var out;
     var i;
 
     for ( i = 0; i < nargs; i++ ) {
@@ -1806,9 +1863,9 @@ function fcn( value, options ) {
     }
     err = validate( options );
     if ( err ) {
-        throw err
+        throw err;
     }
-    ...
+    // ...
 }
 ```
 
@@ -1827,9 +1884,9 @@ function fcn( value, options ) {
     }
     err = validate( opts );
     if ( err ) {
-        throw err
+        throw err;
     }
-    ...
+    // ...
 }
 ```
 
@@ -1900,6 +1957,8 @@ Regular expressions are error prone and difficult to understand without thorough
 
 ##### Good Example
 
+<!-- eslint-disable no-useless-escape -->
+
 ``` javascript
 /**
 * Matches parts of a regular expression string.
@@ -1957,17 +2016,23 @@ Not using them is a common source of bugs.
 
 ##### Bad Example
 
+<!-- eslint-disable curly -->
+
 ``` javascript
 // Do not...
-if ( foo === bar ) return true;
+function beep() {
+    if ( foo === bar ) return true;
+}
 ```
 
 ##### Good Example
 
 ``` javascript
 // Do...
-if ( foo === bar ) {
-    return true;
+function beep() {
+    if ( foo === bar ) {
+        return true;
+    }
 }
 ```
 
@@ -2116,6 +2181,8 @@ Not enforcing type equality is a source of bugs.
 
 ##### Bad Example
 
+<!-- eslint-disable eqeqeq -->
+
 ``` javascript
 // Do not...
 if ( foo != bar ) {
@@ -2189,7 +2256,10 @@ Throw and provide tailored `error` messages if expected conditions are not met. 
 // Don't...
 
 /**
+* Beep boop.
+*
 * @api public
+* @param {Function} clbk - callback
 */
 function boop( clbk ) {
     clbk();
@@ -2202,7 +2272,10 @@ function boop( clbk ) {
 // Do...
 
 /**
+* Beep boop.
+*
 * @api public
+* @param {Function} clbk - callback
 */
 function beep( clbk ) {
     if ( !arguments.length ) {
@@ -2293,6 +2366,8 @@ process.on( 'uncaughtException', onError );
 ```
 
 ##### Okay Example
+
+<!-- eslint-disable no-process-exit -->
 
 ``` javascript
 // Okay...
@@ -2406,10 +2481,10 @@ Fewer characters per line compared to using multiple single-line comment identif
 ``` javascript
 // Do not...
 
-// Beep to go boop.
+// Beep boop.
 //
-// @param {number} x
-// @param {number} y
+// @param {number} x - first argument
+// @param {number} y - second argument
 function beep( x, y ) {
     // Do something...
 }
@@ -2421,10 +2496,10 @@ function beep( x, y ) {
 // Do...
 
 /**
-* Beep to go boop.
+* Beep boop.
 *
-* @param {number} x
-* @param {number} y
+* @param {number} x - first argument
+* @param {number} y - second argument
 */
 function beep( x, y ) {
     // Do something...
@@ -2546,10 +2621,14 @@ Code annotations provide search identifiers.
 
 Use `// FIXME:` to annotate problems.
 
+<!-- eslint-disable no-warning-comments -->
+
 ``` javascript
-// FIXME: misses the case where value is 0. Want to check if value is not numeric.
-if ( !value ) {
-    return false;
+function foo() {
+    // FIXME: misses the case where value is 0. Want to check if value is not numeric.
+    if ( !value ) {
+        return false;
+    }
 }
 ```
 
@@ -2557,9 +2636,10 @@ if ( !value ) {
 
 Use `// TODO:` to annotate tasks.
 
+<!-- eslint-disable no-warning-comments -->
+
 ``` javascript
 function Ctor() {
-
     // TODO: make `name` property value publicly accessible.
     this.name = 'foobar';
 
@@ -2571,6 +2651,8 @@ function Ctor() {
 
 Use `// HACK:` to annotate fragile/non-general solutions.
 
+<!-- eslint-disable no-warning-comments -->
+
 ``` javascript
 // HACK: temporary fix; host and port should be abstracted to another module handling configuration.
 var host = '127.0.0.1';
@@ -2581,6 +2663,8 @@ var port = 7331;
 
 Use `// WARNING:` to annotate possible gotchas/pitfalls.
 
+<!-- eslint-disable no-warning-comments -->
+
 ``` javascript
 // WARNING: shared reference of a mutable object; possible side effects.
 var a = b = {};
@@ -2589,6 +2673,8 @@ var a = b = {};
 ##### OPTIMIZE
 
 Use `// OPTIMIZE:` to annotate code which needs optimizing.
+
+<!-- eslint-disable no-warning-comments -->
 
 ``` javascript
 // OPTIMIZE: use a loop rather than recursion
@@ -2630,7 +2716,6 @@ Doing so helps lessen bracket hell when dealing with long code blocks.
 
 ``` javascript
 function longFunction() {
-    
     // [0] Do first thing.
     firstThing();
 
@@ -2643,7 +2728,7 @@ function longFunction() {
     // ...
 
     // [N-1] Do Nth thing.
-    nthThing(); 
+    nthThing();
 
     return true;
 } // end FUNCTION longFunction()
@@ -2787,12 +2872,17 @@ Named `functions` are easier to find in stack traces and consequently debug.
 
 ##### Bad Example
 
+<!-- eslint-disable no-restricted-syntax, func-names -->
+
 ``` javascript
 // Do not...
 request({
     'method': 'GET',
     'uri': 'http://127.0.0.1'
-}, function( error, response, body ) {
+}, function ( error, response, body ) {
+    if ( error ) {
+        throw error;
+    }
     // Do something...
 });
 ```
@@ -2802,6 +2892,9 @@ request({
 ``` javascript
 // Do...
 function onResponse( error, response, body ) {
+    if ( error ) {
+        throw error;
+    }
     // Do something...
 }
 
@@ -2812,6 +2905,8 @@ request({
 ```
 
 ##### Bad Example
+
+<!-- eslint-disable no-restricted-syntax, arrow-body-style, arrow-parens -->
 
 ``` javascript
 // Do not...
@@ -2950,10 +3045,12 @@ function Robot() {
 
 ``` javascript
 // Do...
-function greet( ctx ) {
-    return function greet() {
+function greeting( ctx ) {
+    return greet;
+
+    function greet() {
         return 'Hello! My name is ' + ctx.name + '.';
-    };
+    }
 }
 
 function Robot() {
@@ -2961,7 +3058,7 @@ function Robot() {
         return new Robot();
     }
     this.name = 'Beep';
-    this.greet = greet( this );
+    this.greet = greeting( this );
     return this;
 }
 ```
@@ -3044,26 +3141,30 @@ Simplifies a class interface.
 
 ##### Bad Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do not...
-Robot.prototype.setName = function( name ) {
+Robot.prototype.setName = function set( name ) {
     if ( typeof name !== 'string' ) {
         throw new Error( 'invalid input value. Name must be a string. Value: `' + name + '`.' );
     }
     this._name = name;
     return this;
-}
+};
 
-Robot.prototype.getName = function() {
+Robot.prototype.getName = function get() {
     return this._name;
-}
+};
 ```
 
 ##### Good Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do...
-Robot.prototype.name = function( name ) {
+Robot.prototype.name = function robotName( name ) {
     if ( !arguments.length ) {
         return this._name;
     }
@@ -3072,7 +3173,7 @@ Robot.prototype.name = function( name ) {
     }
     this._name = name;
     return this;
-}
+};
 ```
 
 ##### Enforcement
@@ -3091,26 +3192,30 @@ While checks do incur computational cost, not providing such checks can entail a
 
 ##### Bad Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do not...
-Stream.prototype.window = function( win ) {
+Stream.prototype.window = function streamWindow( win ) {
     if ( !arguments.length ) {
         return this._window;
     }
     this._window = win;
     return this;
-}
+};
 ```
 
 ##### Good Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do...
-Stream.prototype.window = function( win ) {
+Stream.prototype.window = function streamWindow( win ) {
     if ( !arguments.length ) {
         return this._window;
     }
-    if ( typeof win !== 'number' ||  win !== win ) {
+    if ( typeof win !== 'number' || win !== win ) {
         throw new Error( 'invalid input argument. Window size must be numeric. Value: `' + win + '`.' );
     }
     if ( Math.floor( win ) !== win || win <= 0 ) {
@@ -3118,7 +3223,7 @@ Stream.prototype.window = function( win ) {
     }
     this._window = win;
     return this;
-}
+};
 ```
 
 ##### Enforcement
@@ -3146,6 +3251,8 @@ Returning `this` enables method chaining and creates a [fluent interface][fluent
 
 ##### Good Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 function Robot() {
     if ( !(this instanceof Robot) ) {
@@ -3156,7 +3263,7 @@ function Robot() {
     return this;
 }
 
-Robot.prototype.name = function( name ) {
+Robot.prototype.name = function robotName( name ) {
     if ( !arguments.length ) {
         return this._name;
     }
@@ -3165,9 +3272,9 @@ Robot.prototype.name = function( name ) {
     }
     this._name = name;
     return this;
-}
+};
 
-Robot.prototype.color = function( color ) {
+Robot.prototype.color = function robotColor( color ) {
     if ( !arguments.length ) {
         return this._color;
     }
@@ -3176,7 +3283,7 @@ Robot.prototype.color = function( color ) {
     }
     this._color = color;
     return this;
-}
+};
 
 var robo = new Robot();
 
@@ -3209,6 +3316,8 @@ Code is read more often than it is written. Prefer too much documentation to too
 
 ##### Bad Example
 
+<!-- eslint-disable valid-jsdoc -->
+
 ``` javascript
 // Do not...
 
@@ -3221,6 +3330,8 @@ function autocorr( vector ) {
 ```
 
 ##### Good Example
+
+<!-- eslint-disable valid-jsdoc -->
 
 ``` javascript
 // Do...
@@ -3284,7 +3395,7 @@ var y = ( x >> 0 );
 
 ``` javascript
 // Do...
-var y = Math.floor( x );    
+var y = Math.floor( x );
 ``` 
 
 ##### Notes
@@ -3371,13 +3482,15 @@ Prevents variable leakage.
 
 ##### Good Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do...
-(function() {
+(function foo() {
     'use strict';
 
     var beep = 'boop';
-    ...
+    // ...
 })();
 ```
 
@@ -3397,19 +3510,27 @@ Helps minimize global variable name collisions.
 
 ##### Bad Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do not...
-window.start = function start(){};
+window.start = function start() {
+    // Do something...
+};
 window.name = 'App';
 ```
 
 ##### Good Example
 
+<!-- eslint-disable no-restricted-syntax -->
+
 ``` javascript
 // Do...
 var myApp = {};
 myApp.name = 'App';
-myApp.start = function start(){};
+myApp.start = function start() {
+    // Do something...
+};
 
 window.myApp = myApp;
 ```
