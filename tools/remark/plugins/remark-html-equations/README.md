@@ -15,6 +15,8 @@ var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-htm
 
 Attaches a plugin to a [remark][remark] processor in order to insert Markdown HTML equation elements between equation comments.
 
+<!-- eslint-disable no-useless-escape -->
+
 ``` javascript
 var remark = require( 'remark' );
 

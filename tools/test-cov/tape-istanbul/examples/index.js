@@ -20,7 +20,7 @@ function done( error, coverage ) {
 }
 
 // Specify a glob pattern:
-pattern = __dirname+'/fixtures/**/test*.js';
+pattern = __dirname+'/fixtures/**/test*.js'; // eslint-disable-line no-path-concat
 
 // Set the runner options:
 opts = {

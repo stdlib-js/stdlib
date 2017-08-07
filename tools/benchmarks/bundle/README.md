@@ -103,6 +103,8 @@ function clbk( error, bundle ) {
 
 ## Examples
 
+<!-- eslint-disable no-redeclare -->
+
 ``` javascript
 var join = require( 'path' ).join;
 var bundle = require( '@stdlib/tools/benchmarks/bundle' );

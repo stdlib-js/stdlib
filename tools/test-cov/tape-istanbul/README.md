@@ -50,6 +50,8 @@ runner( pattern, opts, done );
 
 ## Examples
 
+<!-- eslint-disable no-path-concat -->
+
 ``` javascript
 var runner = require( '@stdlib/tools/test-cov/tape-istanbul' );
 

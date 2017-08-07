@@ -33,7 +33,7 @@ function onResults( error, results ) {
     if ( error ) {
         throw error;
     }
-    infer( results, pattern, onInfer ) );
+    infer( results, pattern, onInfer );
 }
 
 function onInfer( error, results ) {

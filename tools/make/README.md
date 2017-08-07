@@ -31,6 +31,8 @@ $ make repl
 
 Annotating source code is a useful means for inlining action items and notes. For example,
 
+<!-- eslint-disable no-warning-comments -->
+
 ``` javascript
 // FIXME: don't release the zalgo!
 function foo( cb ) {
@@ -38,7 +40,7 @@ function foo( cb ) {
         return asyncFcn( cb );
     }
     cb();
-} 
+}
 ```
 
 To retrieve source code annotations,

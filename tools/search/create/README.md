@@ -106,7 +106,7 @@ lunr.tokenizer.registerFunction( tokenizer, 'readme_tokenizer' );
 lunr.tokenizer.load( 'readme_tokenizer' );
 
 create({
-    'dir': '/path/to/stdlib/lib/node_modules/@stdlib' )
+    'dir': '/path/to/stdlib/lib/node_modules/@stdlib'
 }, onCreate );
 
 function onCreate( error, idx ) {

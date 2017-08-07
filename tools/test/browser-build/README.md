@@ -25,6 +25,8 @@ var build = require( '@stdlib/tools/test/browser-build' );
 
 Given a `root` directory from which to search for tests and an output directory, build assets for running tests in a web browser.
 
+<!-- eslint-disable no-redeclare -->
+
 ``` javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
@@ -55,6 +57,8 @@ The function accepts the following `options`:
 
 To provide an alternative glob pattern, set the `pattern` option.
 
+<!-- eslint-disable no-redeclare -->
+
 ``` javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
@@ -80,6 +84,8 @@ function clbk( error, bool ) {
 ```
 
 To mount a bundle on a URL path, set the `mount`option.
+
+<!-- eslint-disable no-redeclare -->
 
 ``` javascript
 var cwd = require( '@stdlib/utils/cwd' );
@@ -122,6 +128,8 @@ function clbk( error, bool ) {
 <section class="examples">
 
 ## Examples
+
+<!-- eslint-disable no-redeclare -->
 
 ``` javascript
 var join = require( 'path' ).join;
