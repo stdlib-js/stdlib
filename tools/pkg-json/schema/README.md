@@ -49,7 +49,7 @@ var json = schema();
 ## Examples
 
 ``` javascript
-var ajv = require( 'ajv' );
+var Ajv = require( 'ajv' );
 var schema = require( '@stdlib/tools/pkg-json/schema' );
 
 var pkg = require( './package.json' );
