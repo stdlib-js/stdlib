@@ -17,7 +17,8 @@ ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 DAVID_FLAGS ?= \
 	--package $(ROOT_PACKAGE_JSON) \
 	--ignore update-notifier \
-	--ignore chai
+	--ignore chai \
+	--ignore debug
 
 
 # TARGETS #
