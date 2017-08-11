@@ -11,9 +11,9 @@
 var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint' );
 ```
 
-#### plugin( tree, file, options )
+#### plugin()
 
-Provided a Markdown abstract syntax `tree`, lints JavaScript code blocks.
+A [remark][remark] plugin, which when provided a Markdown abstract syntax `tree`, lints JavaScript code blocks using the default [ESLint][eslint] configuration.
 
 ``` javascript
 var remark = require( 'remark' );
@@ -25,7 +25,21 @@ var linter = remark().use( plugin ).procecssSync;
 var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 ```
 
-The plugin recognizes the following `options`:
+#### plugin.factory( \[options\] )
+
+Returns a configured [remark][remark] plugin for linting JavaScript code blocks. 
+
+``` javascript
+var remark = require( 'remark' );
+
+// Create a synchronous Markdown text linter:
+var linter = remark().use( plugin.factory() ).procecssSync;
+
+// Lint Markdown:
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
+```
+
+The function recognizes the following `options`:
 
 * __config__: path to an [ESLint][eslint] configuration file. A configuration path is resolved relative to the current working directory of the calling process.
 
@@ -39,8 +53,10 @@ var opts = {
     'config': '/path/to/.eslintrc'
 };
 
+var lint = plugin.factory( opts );
+
 // Create a synchronous Markdown text linter:
-var linter = remark().use( plugin, opts ).procecssSync;
+var linter = remark().use( lint ).procecssSync;
 
 // Lint Markdown:
 var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
@@ -162,7 +178,7 @@ var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint' );
+var factory = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint' ).factory;
 
 // Define path to an ESLint config file:
 var config = resolve( __dirname, '..', '..', '..', '..', 'etc', 'eslint', '.eslintrc.markdown.js' );
@@ -176,8 +192,11 @@ var opts = {
     'config': config
 };
 
+// Create a plugin:
+var plugin = factory( opts );
+
 // Lint code blocks:
-var out = remark().use( plugin, opts ).processSync( file.toString() ); // eslint-disable-line no-sync
+var out = remark().use( plugin ).processSync( file.toString() ); // eslint-disable-line no-sync
 
 console.log( out );
 ```
