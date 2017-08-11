@@ -174,6 +174,8 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 ## Examples
 
+<!-- eslint-disable no-sync -->
+
 ``` javascript
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
@@ -197,7 +199,7 @@ var opts = {
 var plugin = factory( opts );
 
 // Lint code blocks:
-var out = remark().use( plugin ).processSync( file.toString() ); // eslint-disable-line no-sync
+var out = remark().use( plugin ).processSync( file.toString() );
 
 console.log( out );
 ```
