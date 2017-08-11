@@ -53,6 +53,7 @@ var opts = {
     'config': '/path/to/.eslintrc'
 };
 
+// Create a plugin:
 var lint = plugin.factory( opts );
 
 // Create a synchronous Markdown text linter:
