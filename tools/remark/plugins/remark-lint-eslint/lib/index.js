@@ -16,7 +16,14 @@
 
 // MODULES //
 
+var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var plugin = require( './main.js' );
+var factory = require( './factory.js' );
+
+
+// MAIN //
+
+setReadOnly( plugin, 'factory', factory );
 
 
 // EXPORTS //

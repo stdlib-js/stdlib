@@ -11,6 +11,9 @@ var join = require( 'path' ).join;
 var etc = resolve( __dirname, '..', '..', '..' );
 var config = join( etc, 'eslint', '.eslintrc.markdown.js' );
 var eslint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-eslint' );
+var opts = {
+	'config': config
+};
 
 
 // MAIN //
@@ -18,17 +21,7 @@ var eslint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-esli
 /**
 * Plugin.
 */
-var plugin = [
-	[
-		require( eslint ),
-		[
-			'error',
-			{
-				'config': config
-			}
-		]
-	]
-];
+var plugin = [ [ require( eslint ).factory( opts ), [ 'error' ] ] ];
 
 
 // EXPORTS //
