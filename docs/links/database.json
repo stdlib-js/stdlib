@@ -1627,6 +1627,17 @@
       "f"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fibonacci_number": {
+    "id": "fibonacci-number",
+    "description": "Wikipedia entry for Fibonacci numbers.",
+    "short_url": "",
+    "keywords": [
+      "fibonacci",
+      "number",
+      "fibo",
+      "fib"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fibonacci_polynomials": {
     "id": "fibonacci-polynomials",
     "description": "Wikipedia entry for Fibonacci polynomials.",
