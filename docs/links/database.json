@@ -1627,6 +1627,27 @@
       "f"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fibonacci_number": {
+    "id": "fibonacci-number",
+    "description": "Wikipedia entry for Fibonacci numbers.",
+    "short_url": "",
+    "keywords": [
+      "fibonacci",
+      "number",
+      "fibo",
+      "fib"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Fibonacci_polynomials": {
+    "id": "fibonacci-polynomials",
+    "description": "Wikipedia entry for Fibonacci polynomials.",
+    "short_url": "",
+    "keywords": [
+      "fibonacci",
+      "fibo",
+      "polynomial"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fisher_transformation": {
     "id": "fisher-transform",
     "description": "Wikipedia entry for the Fisher Z transformation of the sample correlation coefficient.",
