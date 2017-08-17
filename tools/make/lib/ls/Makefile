@@ -204,6 +204,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_cpp.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/examples_fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/examples_r.mk
