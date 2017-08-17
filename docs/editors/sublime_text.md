@@ -41,6 +41,8 @@ $ subl .
 
 * [__Julia__][sublime-text-julia]: package which provides syntax highlighting for [Julia][julia].
 
+* [__Fortran__][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran].
+
 * [__SublimeLinter3__][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does __not__ contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
   - [__SublimeLinter-eslint__][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files.
@@ -100,11 +102,13 @@ $ subl .
 [sublime-text-pretty-json]: https://github.com/dzhibas/SublimePrettyJson
 [sublime-text-sidebar-enhancements]: https://github.com/SideBarEnhancements-org/SideBarEnhancements
 [sublime-text-julia]: https://github.com/JuliaEditorSupport/Julia-sublime
+[sublime-text-fortran]: https://github.com/315234/SublimeFortran
 
 [eslint]: http://eslint.org/
 [json]: http://www.json.org/
 [editorconfig]: http://editorconfig.org/
 [julia]: https://julialang.org/
+[fortran]: https://en.wikipedia.org/wiki/Fortran
 
 </section>
 
