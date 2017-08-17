@@ -2490,6 +2490,16 @@
       "scripts"
     ]
   },
+  "https://github.com/315234/SublimeFortran": {
+    "id": "sublime-text-fortran",
+    "description": "GitHub repository for a Sublime Text plugin which provides syntax highlighting for Fortran.",
+    "short_url": "",
+    "keywords": [
+      "sublime",
+      "text",
+      "fortran"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
