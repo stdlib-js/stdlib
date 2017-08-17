@@ -41,7 +41,7 @@ $ subl .
 
 * [__Julia__][sublime-text-julia]: package which provides syntax highlighting for [Julia][julia].
 
-* [__Fortran__][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran].
+* [__Fortran__][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
 
 * [__SublimeLinter3__][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does __not__ contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
