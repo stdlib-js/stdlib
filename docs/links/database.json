@@ -1673,6 +1673,16 @@
       "nurse"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fortran": {
+    "id": "fortran",
+    "description": "Wikipedia entry for Fortran, a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing.",
+    "short_url": "",
+    "keywords": [
+      "fortran",
+      "language",
+      "programming"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution": {
     "id": "frechet-distribution",
     "description": "Wikipedia entry for the Fréchet distribution.",
