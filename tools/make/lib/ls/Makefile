@@ -49,6 +49,9 @@ C_TESTS_FIXTURES_PATTERN ?= *.c
 # Define a filename pattern for C++ test fixtures:
 CPP_TESTS_FIXTURES_PATTERN ?= *.cpp
 
+# Define a filename pattern for Fortran test fixtures:
+FORTRAN_TESTS_FIXTURES_PATTERN ?= *.f
+
 # Define a filename pattern for Julia test fixtures:
 JULIA_TESTS_FIXTURES_PATTERN ?= *.jl
 
@@ -71,6 +74,9 @@ C_BENCHMARKS_PATTERN ?= benchmark*.c
 # Define a filename pattern for C++ benchmark files:
 CPP_BENCHMARKS_PATTERN ?= benchmark*.cpp
 
+# Define a filename pattern for Fortran benchmark files:
+FORTRAN_BENCHMARKS_PATTERN ?= benchmark*.f
+
 # Define a filename pattern for Julia benchmark files:
 JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl
 
@@ -92,6 +98,9 @@ C_EXAMPLES_PATTERN ?= *.c
 
 # Define a filename pattern for C++ example files:
 CPP_EXAMPLES_PATTERN ?= *.cpp
+
+# Define a filename pattern for Fortran example files:
+FORTRAN_EXAMPLES_PATTERN ?= *.f
 
 # Define a filename pattern for Julia example files:
 JULIA_EXAMPLES_PATTERN ?= *.jl
