@@ -469,6 +469,15 @@
       "sequences"
     ]
   },
+  "https://arxiv.org/abs/1210.4539": {
+    "id": "@baudin:2012",
+    "description": "Baudin, Michael and Smith, Robert L. 2012. \"A Robust Complex Division in Scilab.\" *arXiv \[cs.MS\\]* abs/1210.4539 (Oct): 1-25.",
+    "short_url": "",
+    "keywords": [
+      "floating-point arithmetic",
+      "computer arithmetic"
+    ]
+  },
   "https://bugs.webkit.org/show_bug.cgi?id=7726": {
     "id": "webkit-bug-7726",
     "description": "Webkit bug report related to the naming of anonymous functions.",
