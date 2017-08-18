@@ -1,4 +1,4 @@
-!> Benchmark `dasum`.
+!> Benchmark `TODO`.
 !
 ! ## Notes
 !
@@ -9,11 +9,9 @@ program bench
   implicit none
   ! ..
   ! Local constants:
-  character(5), parameter :: name = 'dasum' ! if changed, be sure to adjust length
-  integer, parameter :: iterations = 10000000
+  character(4), parameter :: name = 'TODO' ! if changed, be sure to adjust length
+  integer, parameter :: iterations = 1000000
   integer, parameter :: repeats = 3
-  integer, parameter :: min = 1
-  integer, parameter :: max = 6
   ! ..
   ! Run the benchmarks:
   call main()
@@ -61,14 +59,12 @@ contains
   ! ..
   ! Prints benchmarks results.
   !
-  ! @param {integer} iterations - number of iterations
   ! @param {double} elapsed - elapsed time in seconds
   ! ..
-  subroutine print_results( iterations, elapsed )
+  subroutine print_results( elapsed )
     ! ..
     ! Scalar arguments:
     double precision, intent(in) :: elapsed
-    integer, intent(in) :: iterations
     ! ..
     ! Local variables:
     double precision :: rate
@@ -98,48 +94,27 @@ contains
   ! ..
   ! Runs a benchmark.
   !
-  ! @param {integer} iterations - number of iterations
-  ! @param {integer} len - array length
   ! @return {double} elapsed time in seconds
   ! ..
-  double precision function benchmark( iterations, len )
+  double precision function benchmark()
     ! ..
-    ! External functions:
-    interface
-      double precision function dasum( N, dx, stride )
-        double precision :: dx(*)
-        integer :: stride, N
-      end function dasum
-    end interface
-    ! ..
-    ! Scalar arguments:
-    integer, intent(in) :: iterations, len
-    ! ..
-    ! Local scalars:
-    double precision :: elapsed, y, r
+    ! Local variables:
+    double precision :: elapsed, x, y, r
     real :: t1, t2
     integer :: i
-    ! ..
-    ! Local arrays:
-    double precision, allocatable :: x(:)
     ! ..
     ! Intrinsic functions:
     intrinsic random_number, cpu_time
     ! ..
-    ! Allocate arrays:
-    allocate( x(len) )
-    ! ..
-    do i = 1, len
-      call random_number( r )
-      x( i ) = ( r*20000.0d0 ) - 10000.0d0
-    end do
-    ! ..
+    x = 0.0d0
     y = 0.0d0
     ! ..
     call cpu_time( t1 )
     ! ..
     do i = 1, iterations
-      y = dasum( len, x, 1 );
+      call random_number( r )
+      x = r ! TODO
+      y = r ! TODO
       if ( y /= y ) then
         print '(A)', 'should not return NaN'
         exit
@@ -153,10 +128,6 @@ contains
     if ( y /= y ) then
       print '(A)', 'should not return NaN'
     end if
-    ! ..
-    ! Deallocate arrays:
-    deallocate( x )
-    ! ..
     benchmark = elapsed
     return
   end function benchmark
@@ -166,34 +137,26 @@ contains
   subroutine main()
     ! ..
     ! Local variables:
-    integer :: count, iter, len, i, j
-    double precision :: elapsed
     character(len=999) :: str, tmp
+    double precision :: elapsed
+    integer :: i
     ! ..
     ! Intrinsic functions:
     intrinsic adjustl, trim
     ! ..
     call print_version()
-    count = 0
-    do i = min, max
-      len = 10**i
-      iter = iterations / 10**(i-1)
-      do j = 1, repeats
-        count = count + 1
-        ! ..
-        write (str, '(I15)') len
-        tmp = adjustl( str )
-        print '(A,A,A,A)', '# fortran::', name, ':len=', trim( tmp )
-        ! ..
-        elapsed = benchmark( iter, len )
-        ! ..
-        call print_results( iter, elapsed )
-        ! ..
-        write (str, '(I15)') count
-        tmp = adjustl( str )
-        print '(A,A,A)', 'ok ', trim( tmp ), ' benchmark finished'
-      end do
+    do i = 1, repeats
+      ! ..
+      print '(A,A)', '# fortran::', name
+      ! ..
+      elapsed = benchmark()
+      ! ..
+      call print_results( elapsed )
+      ! ..
+      write (str, '(I15)') i
+      tmp = adjustl( str )
+      print '(A,A,A)', 'ok ', trim( tmp ), ' benchmark finished'
     end do
-    call print_summary( count, count )
+    call print_summary( repeats, repeats )
   end subroutine main
 end program bench
