@@ -471,7 +471,7 @@
   },
   "https://arxiv.org/abs/1210.4539": {
     "id": "@baudin:2012",
-    "description": "Baudin, Michael, and Smith, Robert L. 2012. \"A Robust Complex Division in Scilab.\" *arXiv \\[cs.MS\\]* abs/1210.4539 (Oct): 1-25.",
+    "description": "Baudin, Michael, and Robert L. Smith. 2012. \"A Robust Complex Division in Scilab\" abs/1210.4539 (October). <https://arxiv.org/abs/1210.4539>.",
     "short_url": "",
     "keywords": [
       "floating-point",
