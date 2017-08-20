@@ -16,7 +16,7 @@ $ DEBUG=* node ./path/to/docs/api/build-docs/bin/cli
 To view generated docs, open a second terminal and navigate to
 
 ``` bash
-$ cd ./path/to/stdlib/build/develop
+$ cd ./path/to/stdlib/build/www/public
 ```
 
 Once in the build destination directory, run
