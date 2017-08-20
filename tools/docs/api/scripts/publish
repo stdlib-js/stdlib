@@ -22,7 +22,7 @@ project_repo='https://github.com/stdlib-js/stdlib.git'
 project_checkout='develop'
 
 # Documentation repository URL:
-docs_repo='https://github.com/stdlib-js/stdlib-js.github.io.git'
+docs_repo='https://github.com/stdlib-js/www.git'
 
 # Documentation repository name:
 docs_repo_name='origin'
@@ -152,17 +152,12 @@ main() {
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
+
 	echo 'Navigating to temporary build directory...' >&2
 	cd "${tmp_dir}"
 
 	echo 'Cloning project repository...' >&2
 	shallow_clone "${project_repo}" "${project_dir}"
-	if [[ "$?" -ne 0 ]]; then
-		on_error 1
-	fi
-
-	echo 'Cloning documentation repository...' >&2
-	shallow_clone "${docs_repo}" "${docs_dir}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
@@ -176,6 +171,28 @@ main() {
 		echo "Unable to switch to ${project_checkout} in the project repository." >&2
 		on_error 1
 	fi
+
+	echo 'Returning to temporary build directory...' >&2
+	cd "${tmp_dir}"
+
+	echo 'Cloning documentation repository...' >&2
+	shallow_clone "${docs_repo}" "${docs_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	echo 'Navigating to documentation repository...' >&2
+	cd "${docs_dir}"
+
+	echo "Switching to ${docs_checkout}..." >&2
+	git checkout "${docs_checkout}"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Unable to switch to ${docs_checkout} in the documentation repository." >&2
+		on_error 1
+	fi
+
+	echo 'Navigating to project repository...' >&2
+	cd "${project_dir}"
 
 	echo 'Installing project dependencies...' >&2
 	install_node_deps
@@ -193,27 +210,20 @@ main() {
 	echo 'Returning to temporary build directory...' >&2
 	cd "${tmp_dir}"
 
-	echo "If the documentation repository already has ${project_checkout} documentation, remove the documentation..." >&2
-	remove_dir "${docs_dir}/${project_checkout}"
+	echo "If the documentation repository already has ${project_checkout} documentation, remove the existing documentation..." >&2
+	remove_dir "${docs_dir}/public/${project_checkout}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
 
 	echo "Moving ${project_checkout} documentation to documentation repository..." >&2
-	move_dir "${project_build_dir}/${project_checkout}" "${docs_dir}/${project_checkout}"
+	move_dir "${project_build_dir}/www/public/${project_checkout}" "${docs_dir}/public/${project_checkout}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
 
 	echo 'Navigating to documentation repository...' >&2
 	cd "${docs_dir}"
-
-	echo "Switching to ${docs_checkout}..." >&2
-	git checkout "${docs_checkout}"
-	if [[ "$?" -ne 0 ]]; then
-		echo "Unable to switch to ${docs_checkout} in the documentation repository." >&2
-		on_error 1
-	fi
 
 	echo 'Committing files...' >&2
 	git add -A
