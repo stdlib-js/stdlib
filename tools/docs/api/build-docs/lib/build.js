@@ -58,7 +58,8 @@ function build( clbk ) {
 		bopts = {
 			'head': head+'\n<style>'+menu.css+'</style>',
 			'prepend': menu.html,
-			'append': scripts.join( '\n' )
+			'append': scripts.join( '\n' ),
+			'mount': opts.mount
 		};
 
 		buildPkgs( dest, bopts, onBuild );
