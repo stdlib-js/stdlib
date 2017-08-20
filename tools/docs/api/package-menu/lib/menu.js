@@ -71,8 +71,9 @@ function menu( options, clbk ) {
 		subtree.stdlib = subtree.__namespace__; // eslint-disable-line no-underscore-dangle
 		delete subtree.__namespace__; // eslint-disable-line no-underscore-dangle
 
+		opts.mount += '@stdlib/';
 		out = {
-			'html': toFragment( tree, opts ),
+			'html': toFragment( subtree, opts ),
 			'css': toFragment.css
 		};
 		return cb( null, out );
