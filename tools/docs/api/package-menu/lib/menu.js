@@ -72,7 +72,7 @@ function menu( options, clbk ) {
 		delete subtree.__namespace__; // eslint-disable-line no-underscore-dangle
 
 		out = {
-			'html': toFragment( subtree, opts ),
+			'html': toFragment( tree, opts ),
 			'css': toFragment.css
 		};
 		return cb( null, out );

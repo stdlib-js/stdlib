@@ -5,7 +5,7 @@ var menu = require( './../lib' );
 var opts = {
 	'title': 'stdlib',
 	'url': '/',
-	'mount': '/@stdlib/'
+	'mount': '/'
 };
 
 menu( opts, clbk );
