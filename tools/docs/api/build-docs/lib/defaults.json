@@ -1,6 +1,6 @@
 {
 	"title": "stdlib",
 	"url": "https://github.com/stdlib-js/stdlib",
-	"mount": "/@stdlib/",
-	"out": "./build/develop"
+	"mount": "/develop/docs/api/@stdlib/",
+	"out": "./build/www/public/develop/docs/api"
 }
