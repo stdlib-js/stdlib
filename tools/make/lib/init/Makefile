@@ -13,4 +13,3 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 init: init-git-hooks
 
 .PHONY: init
-
