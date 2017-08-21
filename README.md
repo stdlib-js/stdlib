@@ -1,14 +1,24 @@
 
-<div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6746dfdc6e031f695fc56fbefdb16e752c4d2716/docs/assets/logo_header.png" alt="stdlib logo">
-    <br>
-</div>
+<!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="banner">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6746dfdc6e031f695fc56fbefdb16e752c4d2716/docs/assets/logo_header.png" alt="stdlib logo">
+        <br>
+    </div>
+</section>
+
+<!-- /.banner -->
 
 ---
 
 # stdlib
 
 > A standard library for JavaScript and Node.js.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 Stdlib is a standard library for JavaScript and Node.js, with an emphasis on numeric computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more. This is the GitHub repository of stdlib source code and documentation.
 
@@ -99,10 +109,15 @@ See [LICENSE][stdlib-license].
 
 Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
+</section>
 
-<!-- <badges> -->
+<!-- /.intro -->
+
+<!-- Project badges. If badges are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 ---
+
+<section class="badges">
 
 ## Status
 
@@ -143,10 +158,15 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 [![Chat][chat-image]][chat-url]
 
-<!-- </badges> -->
+</section>
 
+<!-- /.badges> -->
+
+<!-- Project sponsors. If sponsors are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 ---
+
+<section class="sponsors">
 
 ## Sponsors
 
@@ -157,7 +177,11 @@ Copyright &copy; 2016-2017. The Stdlib [Authors][stdlib-authors].
     <br>
 </div>
 
+</section>
 
+<!-- /.sponsors -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
