@@ -1883,6 +1883,18 @@
       "knuth"
     ]
   },
+  "https://en.wikipedia.org/wiki/Lanczos_approximation": {
+    "id": "lanczos-approximation",
+    "description": "Wikipedia entry on the Lanczos approximation for the gamma function.",
+    "short_url": "",
+    "keywords": [
+      "gamma",
+      "lanczos",
+      "approximation",
+      "mathematics",
+      "math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Laplace_distribution": {
     "id": "laplace-distribution",
     "description": "Wikipedia entry for the Laplace (double exponential) distribution.",
