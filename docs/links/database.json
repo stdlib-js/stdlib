@@ -1639,6 +1639,17 @@
       "f"
     ]
   },
+  "https://en.wikipedia.org/wiki/Falling_and_rising_factorials": {
+    "id": "falling-and-rising-factorials",
+    "description": "Wikipedia entry for falling and rising factorials.",
+    "short_url": "",
+    "keywords": [
+      "factorial",
+      "falling",
+      "rising",
+      "pochhammer"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fibonacci_number": {
     "id": "fibonacci-number",
     "description": "Wikipedia entry for Fibonacci numbers.",
