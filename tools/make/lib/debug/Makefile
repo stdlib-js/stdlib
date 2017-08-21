@@ -1,5 +1,4 @@
 
-
 # VARIABLES #
 
 # Define command flags:
