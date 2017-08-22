@@ -13,7 +13,7 @@ var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint'
 
 #### plugin()
 
-A [remark][remark] plugin, which when provided a Markdown abstract syntax `tree`, lints JavaScript code blocks using the default [ESLint][eslint] configuration.
+A [remark][remark] plugin which, when provided a Markdown abstract syntax `tree`, lints JavaScript code blocks using the default [ESLint][eslint] configuration.
 
 ``` javascript
 var remark = require( 'remark' );
