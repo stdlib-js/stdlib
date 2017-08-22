@@ -16,7 +16,7 @@ vfile = toVFile.readSync( fpath );
 
 // Specify the output directory for SVG equation files...
 opts = {
-	'dir': './docs/build/img/'
+	'dir': './build/docs/img/'
 };
 
 // Process a Markdown file and generate SVG equation files:
