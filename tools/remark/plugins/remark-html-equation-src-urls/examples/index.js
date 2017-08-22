@@ -1,8 +1,8 @@
 'use strict';
 
+var join = require( 'path' ).join;
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
-var join = require( 'path' ).join;
 var insertURLs = require( './../lib' );
 
 var fpath;
@@ -20,7 +20,7 @@ opts = {
 };
 
 // Insert src URLs into HTML equation elements:
-out = remark().use( insertURLs, opts ).process( vfile );
+out = remark().use( insertURLs, opts ).processSync( vfile );
 
 // Output the results:
 console.log( out.contents );
