@@ -3,13 +3,13 @@
 /**
 * remark plugin to insert HTML equation tags into Markdown documents.
 *
-* @module remark-html-equations
+* @module @stdlib/tools/remark/plugins/remark-html-equations
 *
 * @example
 * var remark = require( 'remark' );
-* var insertEquations = require( 'remark-html-equations' );
+* var insertEquations = require( '@stdlib/tools/remark/plugins/remark-html-equations' );
 *
-* remark.use( insertEquations );
+* var transform = remark.use( insertEquations ).processSync;
 */
 
 // MODULES //
