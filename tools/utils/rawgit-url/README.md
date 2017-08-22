@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var rawgit = require( '@stdlib/tools/utils/rawgit-url' );
+var rawgit = require( '/path/to/@stdlib/tools/utils/rawgit-url' );
 ```
 
 #### rawgit( opts )
@@ -83,7 +83,7 @@ var url = rawgit( opts );
 ## Examples
 
 ``` javascript
-var rawgit = require( '@stdlib/tools/utils/rawgit-url' );
+var rawgit = require( '/path/to/@stdlib/tools/utils/rawgit-url' );
 
 var opts = {
     'cdn': true,
