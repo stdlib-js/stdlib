@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/markdown/rawgit-url",
+  "name": "@stdlib/tools/utils/rawgit-url",
   "version": "0.0.0",
   "description": "Generate a RawGit URL for a file hosted in a public GitHub repository.",
   "author": {

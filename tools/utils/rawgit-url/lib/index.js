@@ -3,7 +3,7 @@
 /**
 * Return a RawGit URL for a file hosted in a public GitHub repository.
 *
-* @module @stdlib/tools/markdown/rawgit-url
+* @module @stdlib/tools/utils/rawgit-url
 *
 * @example
 * var out = rawgit({
