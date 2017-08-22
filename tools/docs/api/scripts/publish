@@ -225,6 +225,13 @@ main() {
 	echo 'Navigating to documentation repository...' >&2
 	cd "${docs_dir}"
 
+	echo 'Pulling latest changes...' >&2
+	git pull "${docs_repo_name}" "${docs_checkout}"
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Unable to pull down latest changes.' >&2
+		on_error 1
+	fi
+
 	echo 'Committing files...' >&2
 	git add -A
 	if [[ "$?" -ne 0 ]]; then
