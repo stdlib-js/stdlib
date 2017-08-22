@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-svg-equations:attacher' );
+var debug = require( 'debug' )( 'remark-write-svg-equations:attacher' );
 var copy = require( '@stdlib/utils/copy' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
@@ -19,7 +19,7 @@ var defaults = require( './defaults.json' );
 * @param {Remark} remark - remark instance
 * @param {Options} [options] - options object
 * @param {string} [options.dir="./docs/img/"] - resource directory
-* @return {Function} transformer
+* @returns {Function} transformer
 */
 function attacher( remark, options ) {
 	var opts = copy( defaults );

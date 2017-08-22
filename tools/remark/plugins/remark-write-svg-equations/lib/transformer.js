@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-svg-equations:transformer' );
+var debug = require( 'debug' )( 'remark-write-svg-equations:transformer' );
 var tex2svg = require( 'tex-equation-to-svg' );
 var mkdirp = require( 'mkdirp' );
 var visit = require( 'unist-util-visit' );
@@ -24,11 +24,12 @@ var RAW = /data-raw-text="([^"]*)"/;
 * Returns a transformer function.
 *
 * @private
-* @param {Options} options - transformer options
-* @param {string} options.dir- resource directory
+* @param {Options} opts - transformer options
+* @param {string} opts.dir- resource directory
 * @returns {Function} transformer function
 */
 function transformerFactory( opts ) {
+	return transformer;
 	/**
 	* Transforms a Markdown file.
 	*
@@ -36,7 +37,7 @@ function transformerFactory( opts ) {
 	* @param {Node} ast - root node
 	* @param {File} file - Virtual file
 	*/
-	return function transformer( ast, file ) {
+	function transformer( ast, file ) {
 		var dirflg;
 
 		debug( 'Processing virtual file...' );
@@ -62,7 +63,10 @@ function transformerFactory( opts ) {
 				debug( 'Raw equation: %s', raw );
 
 				// Check if we may need to create a destination directory...
-				if ( !dirflg ) {
+				if ( dirflg ) {
+					debug( 'Creating SVG...' );
+					tex2svg( raw, onSVG );
+				} else {
 					dir = resolve( file.dirname, opts.dir );
 					debug( 'Output directory: %s', dir );
 
@@ -70,9 +74,6 @@ function transformerFactory( opts ) {
 					mkdirp( dir, onDir );
 
 					dirflg = true;
-				} else {
-					debug( 'Creating SVG...' );
-					tex2svg( raw, onSVG );
 				}
 			}
 
@@ -132,7 +133,7 @@ function transformerFactory( opts ) {
 				debug( 'SVG successfully written to file.' );
 			} // end FUNCTION onWrite()
 		} // end FUNCTION createSVG()
-	}; // end FUNCTION transformer()
+	} // end FUNCTION transformer()
 } // end FUNCTION transformerFactory()
 
 
