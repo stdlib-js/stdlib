@@ -54,12 +54,6 @@ function factory( options ) {
 	* @param {Object} tree - abstract syntax tree (AST)
 	* @param {Object} file - file being linted
 	* @param {Object} options - options
-	*
-	* @example
-	* var remark = require( 'remark' );
-	* var linter = remark().use( lint ).processSync;
-	*
-	* var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 	*/
 	function lint( tree, file ) {
 		visit( tree, 'code', onNode );
