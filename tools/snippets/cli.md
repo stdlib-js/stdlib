@@ -16,7 +16,7 @@
 
 ### Usage
 
-``` bash
+``` text
 Usage: TODO [options]
 
 Options:
