@@ -32,7 +32,7 @@ var insert = require( './insert.js' );
 *
 * @example
 * var opts = {
-*     'uri': 'http://stdlib.io/',
+*     'uri': 'https://stdlib.io/',
 *     'id': 'stdlib',
 *     'description': 'A standard library for JavaScript and Node.js.'
 * };

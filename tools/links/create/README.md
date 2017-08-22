@@ -29,7 +29,7 @@ Creates a link entry in a link database.
 
 ``` javascript
 var opts = {
-    'uri': 'http://stdlib.io',
+    'uri': 'https://stdlib.io',
     'id': 'stdlib',
     'description': 'A standard library for JavaScript and Node.js.'
 };
@@ -56,7 +56,7 @@ To specify keywords which pertain to the link, set the `keywords` option.
 
 ``` javascript
 var opts = {
-    'uri': 'http://stdlib.io',
+    'uri': 'https://stdlib.io',
     'id': 'stdlib',
     'description': 'A standard library for JavaScript and Node.js.',
     'keywords': [
@@ -83,7 +83,7 @@ To insert the link into a particular link database, set the `database` option.
 
 ``` javascript
 var opts = {
-    'uri': 'http://stdlib.io',
+    'uri': 'https://stdlib.io',
     'id': 'stdlib',
     'description': 'A standard library for JavaScript and Node.js.',
     'database': './beep/boop/links.json'
@@ -106,7 +106,7 @@ Synchronously inserts a link into a link database.
 
 ``` javascript
 var opts = {
-    'uri': 'http://stdlib.io',
+    'uri': 'https://stdlib.io',
     'id': 'stdlib',
     'description': 'A standard library for JavaScript and Node.js.'
 };
@@ -146,7 +146,7 @@ The method accepts the same `options` as [`create()`](#create-async) above.
 var create = require( '@stdlib/tools/links/create' );
 
 var opts = {
-    'uri': 'http://stdlib.io',
+    'uri': 'https://stdlib.io',
     'id': 'stdlib',
     'description': 'A standard library for JavaScript and Node.js.',
     'keywords': [
@@ -227,7 +227,7 @@ Options:
 ### Examples
 
 ``` bash
-$ insert-link http://stdlib.io/ --id stdlib --description 'A standard library for JavaScript and Node.js'
+$ insert-link https://stdlib.io/ --id stdlib --description 'A standard library for JavaScript and Node.js'
 ```
 
 </section>

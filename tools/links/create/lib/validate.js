@@ -28,7 +28,7 @@ var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
 * var opts = {};
 * var options = {
 *     'database': '/foo/bar/baz.json',
-*     'uri': 'http://stdlib.io/',
+*     'uri': 'https://stdlib.io/',
 *     'id': 'stdlib',
 *     'description': 'A standard library for JavaScript and Node.js.'
 * };

@@ -71,7 +71,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 	function badValue( value ) {
 		return function badValue() {
 			var opts = {
-				'uri': 'http://stdlib.io/',
+				'uri': 'https://stdlib.io/',
 				'id': 'stdlib',
 				'description': 'A standard library for JavaScript and Node.js.'
 			};
@@ -82,7 +82,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 
 tape( 'if the function encounters an error when attempting to read a database, the function returns the error', function test( t ) {
 	var opts = {
-		'uri': 'http://stdlib.io/',
+		'uri': 'https://stdlib.io/',
 		'id': 'stdlib',
 		'description': 'A standard library for JavaScript and Node.js.',
 		'database': './nonexisting.json'
@@ -109,7 +109,7 @@ tape( 'the function inserts a link to a link database', function test( t ) {
 			'writeFile': mock
 		}
 	});
-	uri = 'http://stdlib.io/';
+	uri = 'https://stdlib.io/';
 	database = './test/fixtures/database.json';
 	opts = {
 		'uri': uri,

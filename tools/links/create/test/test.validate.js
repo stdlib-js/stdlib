@@ -49,7 +49,7 @@ tape( 'the function returns an error if not provided `uri`, `id`, and `descripti
 			'id': 'stdlib'
 		},
 		{
-			'uri': 'http://stdlib.io/',
+			'uri': 'https://stdlib.io/',
 			'id': 'stdlib'
 		},
 		{
@@ -60,7 +60,7 @@ tape( 'the function returns an error if not provided `uri`, `id`, and `descripti
 			'description': 'A standard library for JavaScript and Node.js.'
 		},
 		{
-			'uri': 'http://stdlib.io/'
+			'uri': 'https://stdlib.io/'
 		},
 		{
 			'id': 'stdlib'
@@ -119,7 +119,7 @@ tape( 'the function returns an error if provided a `id` option which is not a st
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, {
-			'uri': 'http://stdlib.io/',
+			'uri': 'https://stdlib.io/',
 			'id': values[ i ],
 			'description': 'A standard library for JavaScript and Node.js.'
 		});
@@ -145,7 +145,7 @@ tape( 'the function returns an error if provided a `description` option which is
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, {
-			'uri': 'http://stdlib.io/',
+			'uri': 'https://stdlib.io/',
 			'id': 'stdlib',
 			'description': values[ i ]
 		});
@@ -171,7 +171,7 @@ tape( 'the function returns an error if provided a `database` option which is no
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, {
-			'uri': 'http://stdlib.io/',
+			'uri': 'https://stdlib.io/',
 			'id': 'stdlib',
 			'description': 'A standard library for JavaScript and Node.js.',
 			'database': values[ i ]
@@ -199,7 +199,7 @@ tape( 'the function returns an error if provided a `keywords` option which is no
 
 	for ( i = 0; i < values.length; i++ ) {
 		err = validate( {}, {
-			'uri': 'http://stdlib.io/',
+			'uri': 'https://stdlib.io/',
 			'id': 'stdlib',
 			'description': 'A standard library for JavaScript and Node.js.',
 			'keywords': values[ i ]
@@ -215,7 +215,7 @@ tape( 'the function returns null if all options are valid', function test( t ) {
 	var err;
 
 	options = {
-		'uri': 'http://stdlib.io/',
+		'uri': 'https://stdlib.io/',
 		'id': 'stdlib',
 		'description': 'A standard library for JavaScript and Node.js.',
 		'database': '/foo/bar/baz.json'
@@ -236,14 +236,14 @@ tape( 'the function ignores unrecognized/unsupported options', function test( t 
 	var err;
 
 	options = {
-		'uri': 'http://stdlib.io/',
+		'uri': 'https://stdlib.io/',
 		'id': 'stdlib',
 		'description': 'A standard library for JavaScript and Node.js.',
 		'beep': true, // misc options
 		'boop': 'bop'
 	};
 	expected = {
-		'uri': 'http://stdlib.io/',
+		'uri': 'https://stdlib.io/',
 		'id': 'stdlib',
 		'description': 'A standard library for JavaScript and Node.js.'
 	};
