@@ -9,7 +9,7 @@ var highlight = require( 'rehype-highlight' );
 var headingSlugs = require( 'remark-slug' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isBuffer = require( '@stdlib/assert/is-buffer' );
-var preprocess = require( './highlight_preprocess.js' );
+var noHighlightText = require( './../../../rehype/plugins/rehype-no-highlight-text' );
 
 
 // VARIABLES //
@@ -24,7 +24,7 @@ var hopts = {
 };
 var hTransform = rehype()
 	.data( 'settings', hopts )
-	.use( preprocess )
+	.use( noHighlightText )
 	.use( highlight )
 	.processSync;
 

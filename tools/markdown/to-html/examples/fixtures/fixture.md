@@ -100,7 +100,7 @@ function clbk( error, result ) {
 
 ### Usage
 
-``` bash
+``` text
 Usage: beep [options]
 
 Options:
