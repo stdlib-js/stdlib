@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/tools/markdown/tex-equation-to-svg",
+  "name": "@stdlib/tools/utils/tex-equation-to-svg",
   "version": "0.0.0",
   "description": "Convert a TeX or LaTeX equation to an SVG.",
   "author": {

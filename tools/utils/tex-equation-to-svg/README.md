@@ -18,7 +18,7 @@
 ## Usage
 
 ``` javascript
-var tex2svg = require( '@stdlib/tools/markdown/tex-equation-to-svg' );
+var tex2svg = require( '@stdlib/tools/utils/tex-equation-to-svg' );
 ```
 
 <a name="tex2svg"></a>
@@ -127,7 +127,7 @@ The factory method accepts the same `options` as [`tex2svg()`](#tex2svg).
 ## Examples
 
 ``` javascript
-var tex2svg = require( '@stdlib/tools/markdown/tex-equation-to-svg' );
+var tex2svg = require( '@stdlib/tools/utils/tex-equation-to-svg' );
 
 var eqn = '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.';
 
