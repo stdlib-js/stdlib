@@ -4,16 +4,28 @@
 
 var remark = require( 'remark' );
 var toHTML = require( 'remark-html' );
+var rehype = require( 'rehype' );
+var highlight = require( 'rehype-highlight' );
 var headingSlugs = require( 'remark-slug' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isBuffer = require( '@stdlib/assert/is-buffer' );
+var preprocess = require( './highlight_preprocess.js' );
 
 
 // VARIABLES //
 
-var transform = remark()
+var mTransform = remark()
 	.use( headingSlugs )
 	.use( toHTML )
+	.processSync;
+
+var hopts = {
+	'fragment': true
+};
+var hTransform = rehype()
+	.data( 'settings', hopts )
+	.use( preprocess )
+	.use( highlight )
 	.processSync;
 
 
@@ -32,13 +44,18 @@ var transform = remark()
 * var html = convert( markdown );
 */
 function convert( markdown ) {
+	var vfile;
 	if (
 		!isString( markdown ) &&
 		!isBuffer( markdown )
 	) {
 		throw new TypeError( 'invalid input argument. Must provide either a string or a Buffer. Value: `'+markdown+'`.' );
 	}
-	return transform( markdown.toString() ).toString();
+	// Convert the Markdown to HTML:
+	vfile = mTransform( markdown.toString() );
+
+	// Syntax highlight the HTML code elements:
+	return hTransform( vfile ).toString();
 } // end FUNCTION convert()
 
 
