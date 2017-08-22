@@ -3,13 +3,13 @@
 /**
 * remark plugin to create SVG equation files from Markdown HTML equation tags.
 *
-* @module remark-write-svg-equations
+* @module @stdlib/tools/remark/plugins/remark-write-svg-equations
 *
 * @example
 * var remark = require( 'remark' );
-* var createSVGs = require( 'remark-write-svg-equations' );
+* var createSVGs = require( '@stdlib/tools/remark/plugins/remark-write-svg-equations' );
 *
-* remark.use( createSVGs );
+* var transform = remark.use( createSVGs ).processSync;
 */
 
 // MODULES //

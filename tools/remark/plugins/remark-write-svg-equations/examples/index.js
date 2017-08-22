@@ -1,8 +1,8 @@
 'use strict';
 
+var join = require( 'path' ).join;
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
-var join = require( 'path' ).join;
 var createSVGs = require( './../lib' );
 
 var fpath;
@@ -16,11 +16,11 @@ vfile = toVFile.readSync( fpath );
 
 // Specify the output directory for SVG equation files...
 opts = {
-	'dir': './doc/img/'
+	'dir': './docs/build/img/'
 };
 
 // Process a Markdown file and generate SVG equation files:
-out = remark().use( createSVGs, opts ).process( vfile );
+out = remark().use( createSVGs, opts ).processSync( vfile );
 
 // Output the processed Markdown file:
 console.log( out.contents );

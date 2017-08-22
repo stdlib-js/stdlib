@@ -3,12 +3,12 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-write-svg-equations:transformer' );
-var tex2svg = require( 'tex-equation-to-svg' );
-var mkdirp = require( 'mkdirp' );
-var visit = require( 'unist-util-visit' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var writeFile = require( 'fs' ).writeFile;
+var mkdirp = require( 'mkdirp' );
+var visit = require( 'unist-util-visit' );
+var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
 
 
 // VARIABLES //
@@ -28,7 +28,7 @@ var RAW = /data-raw-text="([^"]*)"/;
 * @param {string} opts.dir- resource directory
 * @returns {Function} transformer function
 */
-function transformerFactory( opts ) {
+function factory( opts ) {
 	return transformer;
 	/**
 	* Transforms a Markdown file.
@@ -76,7 +76,6 @@ function transformerFactory( opts ) {
 					dirflg = true;
 				}
 			}
-
 			/**
 			* Callback invoked upon attempting to create a destination directory.
 			*
@@ -134,9 +133,9 @@ function transformerFactory( opts ) {
 			} // end FUNCTION onWrite()
 		} // end FUNCTION createSVG()
 	} // end FUNCTION transformer()
-} // end FUNCTION transformerFactory()
+} // end FUNCTION factory()
 
 
 // EXPORTS //
 
-module.exports = transformerFactory;
+module.exports = factory;

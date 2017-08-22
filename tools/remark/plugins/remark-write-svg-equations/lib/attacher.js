@@ -14,14 +14,13 @@ var defaults = require( './defaults.json' );
 // MAIN //
 
 /**
-* Attach a plugin to a remark processor in order to create SVGs for HTML equation elements.
+* Attaches a plugin to a remark processor in order to create SVGs for HTML equation elements.
 *
-* @param {Remark} remark - remark instance
 * @param {Options} [options] - options object
 * @param {string} [options.dir="./docs/img/"] - resource directory
 * @returns {Function} transformer
 */
-function attacher( remark, options ) {
+function attacher( options ) {
 	var opts = copy( defaults );
 
 	// NOTE: cannot use `arguments.length` check, as `options` may be explicitly passed as `undefined`
