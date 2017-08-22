@@ -17,6 +17,7 @@ var files = [
 	'normalize.css',
 	'layout.css',
 	'typography.css',
+	'highlight.css',
 	'misc.css'
 ];
 
