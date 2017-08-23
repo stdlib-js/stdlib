@@ -146,7 +146,7 @@ function onFinish( error, html ) {
 
 ### Usage
 
-``` bash
+``` text
 Usage: readme-to-html [options] file
 
 Options:
