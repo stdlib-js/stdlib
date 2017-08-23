@@ -3,7 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-html-equations:insert_equations' );
-var createElement = require( 'github-markdown-equation-element' );
+var createElement = require( './../../../../markdown/equation-element' );
 
 
 // VARIABLES //
@@ -23,7 +23,7 @@ var RAW = /raw="([^"]*)"/;
 * @private
 * @param {Node} node - reference node
 * @param {number} index - position of `node` in `parent`
-* @param {Node} - parent - parent of `node`
+* @param {Node} parent - parent of `node`
 */
 function insertEquations( node, index, parent ) {
 	var newNode;

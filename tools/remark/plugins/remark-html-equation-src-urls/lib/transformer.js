@@ -5,9 +5,9 @@
 var debug = require( 'debug' )( 'remark-html-equation-src-urls:transformer' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
-var rawgit = require( 'rawgit-url' );
 var visit = require( 'unist-util-visit' );
 var PATH_SEP = require( '@stdlib/string/constants/path-sep' );
+var rawgit = require( './../../../../utils/rawgit-url' );
 var git = require( './git.js' );
 
 
@@ -28,7 +28,7 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 * @param {string} opts.dir- resource directory
 * @returns {Function} transformer function
 */
-function getTransformer( opts ) {
+function factory( opts ) {
 	return transformer;
 	/**
 	* Transforms a Markdown file.
@@ -80,9 +80,9 @@ function getTransformer( opts ) {
 			}
 		}// end FUNCTION insertURLs()
 	} // end FUNCTION transformer()
-} // end FUNCTION getTransformer()
+} // end FUNCTION factory()
 
 
 // EXPORTS //
 
-module.exports = getTransformer;
+module.exports = factory;

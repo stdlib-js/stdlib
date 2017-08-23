@@ -11,14 +11,14 @@ var file;
 var out;
 
 // Load a Markdown file...
-fpath = join( __dirname, 'fixtures/simple.md' );
+fpath = join( __dirname, 'fixtures/simple.txt' );
 opts = {
 	'encoding': 'utf8'
 };
 file = readFileSync( fpath, opts );
 
 // Insert HTML equation elements:
-out = remark().use( insertEquations ).process( file );
+out = remark().use( insertEquations ).processSync( file );
 
 // Print the results:
 console.log( out.contents );

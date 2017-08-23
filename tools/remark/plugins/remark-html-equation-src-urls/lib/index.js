@@ -3,13 +3,13 @@
 /**
 * remark plugin to insert SVG equation rawgit URLs into Markdown HTML equation elements.
 *
-* @module remark-html-equation-src-urls
+* @module @stdlib/tools/remark/plugins/remark-html-equation-src-urls
 *
 * @example
 * var remark = require( 'remark' );
-* var insertURLs = require( 'remark-html-equation-src-urls' );
+* var insertURLs = require( '@stdlib/tools/remark/plugins/remark-html-equation-src-urls' );
 *
-* remark.use( insertURLs );
+* var transform = remark.use( insertURLs ).processSync;
 */
 
 // MODULES //

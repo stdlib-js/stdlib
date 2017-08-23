@@ -14,14 +14,13 @@ var defaults = require( './defaults.json' );
 // MAIN //
 
 /**
-* Attach a plugin to a remark processor in order to insert rawgit URLs for SVG equations into Markdown HTML equation elements.
+* Attaches a plugin to a remark processor in order to insert rawgit URLs for SVG equations into Markdown HTML equation elements.
 *
-* @param {Remark} remark - remark instance
 * @param {Options} [options] - plugin options
 * @param {string} [options.dir="./docs/img/"] - resource directory
 * @returns {Function} transformer
 */
-function attacher( remark, options ) {
+function attacher( options ) {
 	var opts = copy( defaults );
 
 	// NOTE: cannot use `arguments.length` check, as `options` may be explicitly passed as `undefined`

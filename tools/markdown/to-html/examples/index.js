@@ -4,7 +4,7 @@ var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var toHTML = require( './../lib' );
 
-var file = join( __dirname, 'fixtures', 'fixture.md' );
+var file = join( __dirname, 'fixtures', 'fixture.txt' );
 
 file = readFileSync( file, {
 	'encoding': 'utf8'

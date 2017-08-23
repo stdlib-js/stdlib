@@ -1,0 +1,55 @@
+'use strict';
+
+/**
+* Convert a TeX or LaTeX string to an SVG.
+*
+* @module @stdlib/tools/utils/tex-equation-to-svg
+*
+* @example
+* var tex2svg = require( '@stdlib/tools/utils/tex-equation-to-svg' );
+*
+* var eqn = '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.';
+*
+* tex2svg( eqn, done );
+*
+* function done( error, svg ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( svg );
+* }
+*
+* @example
+* var factory = require( '@stdlib/tools/utils/tex-equation-to-svg' ).factory;
+*
+* var opts = {
+*     'inline': true
+* };
+*
+* var convert = factory( opts );
+*
+* convert( 'y = mx + b', done );
+*
+* function done( error, svg ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( svg );
+* }
+*/
+
+// MODULES //
+
+var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
+var tex2svg = require( './tex2svg.js' );
+var factory = require( './factory.js' );
+
+
+// MAIN //
+
+setReadOnly( tex2svg, 'factory', factory );
+
+
+// EXPORTS //
+
+module.exports = tex2svg;

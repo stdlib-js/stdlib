@@ -35,7 +35,9 @@ function git() {
 	dir = dir.toString().match( /(.+)/ )[ 1 ];
 	debug( 'Local repository directory: %s', dir );
 
-	opts = { 'cwd': dir };
+	opts = {
+		'cwd': dir
+	};
 
 	// Get the remote origin:
 	cmd = 'git config --get remote.origin.url';

@@ -26,7 +26,7 @@ str += '<!-- <equation class="equation" label="eq:absolute_value" align="center"
 str += '\n';
 str += '<!-- </equation> -->';
 
-var vfile = remark.use( insertEquations ).process( str );
+var vfile = remark.use( insertEquations ).processSync( str );
 
 console.log( vfile.contents );
 /* => 
@@ -71,7 +71,7 @@ opts = {
 file = readFileSync( fpath, opts );
 
 // Insert HTML equation elements:
-out = remark().use( insertEquations ).process( file );
+out = remark().use( insertEquations ).processSync( file );
 ```
 
 </section>
