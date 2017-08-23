@@ -27,14 +27,14 @@ FIND_SVG_EQUATIONS_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
 
 ifneq ($(OS), Darwin)
-	FIND_SVG_EQUATION_FLAGS := -regextype posix-extended $(FIND_SVG_EQUATION_FLAGS)
+	FIND_SVG_EQUATIONS_FLAGS := -regextype posix-extended $(FIND_SVG_EQUATIONS_FLAGS)
 endif
 
 # Define a command for listing SVG equation files:
-FIND_SVG_EQUATIONS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SVG_EQUATION_FLAGS)
+FIND_SVG_EQUATIONS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SVG_EQUATIONS_FLAGS)
 
 # Define the list of files:
-SVG_EQUATIONS_FILES ?= $(shell $(FIND_SVG_EQUATIONS_CMD))
+SVG_EQUATION_FILES ?= $(shell $(FIND_SVG_EQUATIONS_CMD))
 
 
 # TARGETS #

@@ -125,3 +125,11 @@ markdown-equation-src-urls: $(NODE_MODULES)
 
 .PHONY: markdown-equation-src-urls
 
+
+# Clean SVG equation files.
+#
+# This target removes SVG equation files.
+
+clean-markdown-svg-equations:
+
+.PHONY: clean-markdown-svg-equations
