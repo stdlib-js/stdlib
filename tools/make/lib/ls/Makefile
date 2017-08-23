@@ -171,6 +171,13 @@ R_PATTERN ?= *.R
 R_FILTER ?= .*/.*
 
 
+# Define a filename pattern for SVG equation files:
+SVG_EQUATIONS_PATTERN ?= *.svg
+
+# Define a filepath pattern for SVG equation files:
+SVG_EQUATIONS_FILTER ?= .*/.*
+
+
 # Define a filepath pattern for packages:
 PACKAGES_FILTER ?= .*/.*
 
@@ -224,3 +231,4 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_names.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_namespaces.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_tree.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_installed.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
