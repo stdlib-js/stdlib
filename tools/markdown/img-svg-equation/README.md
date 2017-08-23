@@ -1,6 +1,6 @@
 # Equation Element
 
-> Generate an HTML string for displaying an SVG equation in a GitHub Markdown file.
+> Generate an HTML string for displaying an SVG equation as an image in a GitHub Markdown file.
 
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
@@ -18,12 +18,12 @@
 ## Usage
 
 ``` javascript
-var createElement = require( '@stdlib/tools/markdown/equation-element' );
+var createElement = require( '@stdlib/tools/markdown/img-svg-equation' );
 ```
 
 #### createElement( \[options\] )
 
-Generates an HTML `string` for displaying an SVG equation in a GitHub Markdown file.
+Generates an HTML `string` for displaying an SVG equation as an image in a GitHub Markdown file.
 
 ``` javascript
 var html = createElement();
@@ -81,7 +81,7 @@ var html = createElement( opts );
 ## Examples
 
 ``` javascript
-var createElement = require( '@stdlib/tools/markdown/equation-element' );
+var createElement = require( '@stdlib/tools/markdown/img-svg-equation' );
 
 var opts = {
     'className': 'eqn',

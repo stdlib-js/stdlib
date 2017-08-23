@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/tools/markdown/equation-element",
+  "name": "@stdlib/tools/markdown/img-svg-equation",
   "version": "0.0.0",
-  "description": "Generate an HTML string for displaying an SVG equation in a GitHub Markdown file.",
+  "description": "Generate an HTML string for displaying an SVG equation as an image in a GitHub Markdown file.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -40,6 +40,7 @@
     "latex",
     "tex",
     "render",
+    "image",
     "img",
     "svg",
     "html"

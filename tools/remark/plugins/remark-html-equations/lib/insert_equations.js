@@ -3,7 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'remark-html-equations:insert_equations' );
-var createElement = require( './../../../../markdown/equation-element' );
+var createElement = require( './../../../../markdown/img-svg-equation' );
 
 
 // VARIABLES //
