@@ -14,7 +14,7 @@ var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
 // VARIABLES //
 
 var EQN_START = /<!-- <equation[^>]*> -->/gi;
-var LABEL = /label="([^"]*)"/;
+var LABEL = /label="eq:([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
 
 
