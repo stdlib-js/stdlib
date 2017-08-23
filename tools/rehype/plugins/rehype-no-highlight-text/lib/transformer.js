@@ -39,8 +39,7 @@ function onNode( node, index, parent ) {
 *
 * @private
 * @param {Object} tree - abstract syntax tree (AST)
-* @param {Object} file - file
-* @param {Object} options - options
+* @param {Object} file - virtual file
 */
 function transformer( tree ) {
 	debug( 'Processing a virtual file...' );
