@@ -8,7 +8,7 @@ var createElement = require( './../../../../markdown/equation-element' );
 
 // VARIABLES //
 
-var EQN_START = /<!-- <equation[^>]*> -->/gi;
+var EQN_START = /<!-- <equation.*> -->/gi;
 var EQN_END = /<!-- <\/equation> -->/gi;
 var LABEL = /label="([^"]*)"/;
 var ALT = /alt="([^"]*)"/;
