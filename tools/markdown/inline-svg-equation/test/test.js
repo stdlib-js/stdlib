@@ -171,5 +171,4 @@ tape( 'if not provided an option, the function will set a corresponding HTML att
 	}
 });
 
-// TODO: add test for returning an error
-// TODO: add test for when tex2svg fails (proxyquire)
+// TODO: add test for returning an error (e.g., when tex2svg fails (proxyquire))
