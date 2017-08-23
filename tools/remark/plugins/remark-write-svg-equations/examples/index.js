@@ -11,7 +11,7 @@ var opts;
 var out;
 
 // Load a Markdown file...
-fpath = join( __dirname, 'fixtures/simple.md' );
+fpath = join( __dirname, 'fixtures/simple.txt' );
 vfile = toVFile.readSync( fpath );
 
 // Specify the output directory for SVG equation files...
