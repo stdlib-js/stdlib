@@ -9,7 +9,7 @@
 * var remark = require( 'remark' );
 * var createSVGs = require( '@stdlib/tools/remark/plugins/remark-write-svg-equations' );
 *
-* var transform = remark.use( createSVGs ).processSync;
+* var transform = remark.use( createSVGs ).process;
 */
 
 // MODULES //

@@ -32,109 +32,149 @@ var RAW = /raw="([^"]*)"/;
 function factory( opts ) {
 	return transformer;
 	/**
-	* Transforms a Markdown file.
+	* Transforms a Markdown abstract syntax tree (AST).
 	*
 	* @private
-	* @param {Node} ast - root node
-	* @param {File} file - Virtual file
-	* @param {Callback} next - callback to invoke upon completion
+	* @param {Node} tree - root node of the AST
+	* @param {File} file - virtual file
+	* @param {Callback} clbk - callback to invoke upon completion
+	* @returns {void}
 	*/
-	function transformer( ast, file, next ) {
-		var dirflg;
+	function transformer( tree, file, clbk ) {
+		var nodes;
+		var total;
+		var dir;
+		var idx;
 
-		debug( 'Processing virtual file...' );
-		visit( ast, 'html', generateSVGs );
+		nodes = [];
+
+		debug( 'Processing virtual file: %s', file.path );
+		visit( tree, 'html', visitor );
+
+		total = nodes.length;
+		idx = -1;
+
+		debug( 'Found %d equations.', total );
+		if ( total === 0 ) {
+			return done();
+		}
+		dir = resolve( file.dirname, opts.dir );
+		debug( 'Output directory: %s', dir );
+
+		debug( 'Creating output directory...' );
+		mkdirp( dir, onDir );
 
 		/**
-		* Generate SVGs from Markdown HTML equation elements.
+		* Callback invoked upon finding a matching node.
 		*
 		* @private
-		* @param {Node} node - reference node
+		* @param {Node} node - AST node
 		*/
-		function generateSVGs( node ) {
-			var label;
-			var raw;
-			var dir;
+		function visitor( node ) {
 			if ( EQN_START.test( node.value ) === true ) {
-				debug( 'Found an HTML equation...' );
-
-				label = LABEL.exec( node.value )[ 1 ];
-				debug( 'Equation label: %s', label );
-
-				raw = RAW.exec( node.value )[ 1 ];
-				debug( 'Raw equation: %s', raw );
-
-				// Check if we may need to create a destination directory...
-				if ( dirflg ) {
-					debug( 'Creating SVG...' );
-					tex2svg( raw, onSVG );
-				} else {
-					dir = resolve( file.dirname, opts.dir );
-					debug( 'Output directory: %s', dir );
-
-					debug( 'Creating output directory...' );
-					mkdirp( dir, onDir );
-
-					dirflg = true;
-				}
+				debug( 'Found an HTML equation.' );
+				nodes.push( node );
 			}
-			/**
-			* Callback invoked upon attempting to create a destination directory.
-			*
-			* @private
-			* @param {(Error|null)} error - error object
-			*/
-			function onDir( error ) {
-				if ( error ) {
-					debug( 'Error encountered when attempting to create an output directory: %s', error.message );
-					throw error;
-				}
-				debug( 'Output directory created.' );
+		} // end FUNCTION visitor()
 
-				debug( 'Creating SVG...' );
-				tex2svg( raw, onSVG );
-			} // end FUNCTION onDir()
+		/**
+		* Callback invoked upon attempting to create a destination directory.
+		*
+		* @private
+		* @param {(Error|null)} error - error object
+		* @returns {void}
+		*/
+		function onDir( error ) {
+			if ( error ) {
+				debug( 'Error encountered when attempting to create an output directory: %s', error.message );
+				return done( error );
+			}
+			debug( 'Output directory created.' );
 
-			/**
-			* Callback invoked upon creating an SVG.
-			*
-			* @private
-			* @param {(Error|null)} error - error object
-			* @param {string} svg - SVG string
-			*/
-			function onSVG( error, svg ) {
-				var fopts;
-				var fpath;
-				if ( error ) {
-					debug( 'Error encountered when attempting to create an SVG. File: %s. : %s', file.path, error.message );
-					throw error;
-				}
-				fpath = join( opts.dir, opts.prefix+label+'.svg' );
-				fpath = resolve( file.dirname, fpath );
-				debug( 'Absolute filepath: %s', fpath );
+			debug( 'Creating SVGs...' );
+			next();
+		} // end FUNCTION onDir()
 
-				fopts = {
-					'encoding': 'utf8'
-				};
+		/**
+		* Creates the next SVG.
+		*
+		* @private
+		*/
+		function next() {
+			var raw;
 
-				debug( 'Writing SVG to file...' );
-				writeFile( fpath, svg, fopts, onWrite );
-			} // end FUNCTION onSVG()
+			idx += 1;
+			raw = RAW.exec( nodes[ idx ].value )[ 1 ];
+			debug( 'Raw equation: %s', raw );
 
-			/**
-			* Callback invoked upon writing an SVG to file.
-			*
-			* @param {(Error|null)} error - error object
-			*/
-			function onWrite( error ) {
-				if ( error ) {
-					debug( 'Error encountered when attempting to write an SVG to file: %s', error.message );
-					throw error;
-				}
-				debug( 'SVG successfully written to file.' );
-				next();
-			} // end FUNCTION onWrite()
-		} // end FUNCTION createSVG()
+			tex2svg( raw, onSVG );
+		} // end FUNCTION next()
+
+		/**
+		* Callback invoked upon creating an SVG.
+		*
+		* @private
+		* @param {(Error|null)} error - error object
+		* @param {string} svg - SVG string
+		* @returns {void}
+		*/
+		function onSVG( error, svg ) {
+			var fopts;
+			var fpath;
+			var label;
+
+			if ( error ) {
+				debug( 'Error encountered when attempting to create an SVG. File: %s. : %s', file.path, error.message );
+				return done( error );
+			}
+			label = LABEL.exec( nodes[ idx ].value )[ 1 ];
+			debug( 'Equation label: %s', label );
+
+			fpath = join( opts.dir, opts.prefix+label+'.svg' );
+			fpath = resolve( file.dirname, fpath );
+			debug( 'Absolute filepath: %s', fpath );
+
+			fopts = {
+				'encoding': 'utf8'
+			};
+
+			debug( 'Writing SVG to file...' );
+			writeFile( fpath, svg, fopts, onWrite );
+		} // end FUNCTION onSVG()
+
+		/**
+		* Callback invoked upon writing an SVG to file.
+		*
+		* @param {(Error|null)} error - error object
+		* @returns {void}
+		*/
+		function onWrite( error ) {
+			if ( error ) {
+				debug( 'Error encountered when attempting to write an SVG to file: %s', error.message );
+				return done( error );
+			}
+			debug( 'SVG successfully written to file.' );
+			done();
+		} // end FUNCTION onWrite()
+
+		/**
+		* Callback invoked once finished processing an AST.
+		*
+		* @private
+		* @param {(Error|null)} error - error object
+		* @returns {void}
+		*/
+		function done( error ) {
+			if ( error ) {
+				return clbk( error );
+			}
+			idx += 1;
+			if ( idx === total ) {
+				debug( 'Finished processing virtual file.' );
+				return clbk();
+			}
+			next();
+		} // end FUNCTION done()
 	} // end FUNCTION transformer()
 } // end FUNCTION factory()
 

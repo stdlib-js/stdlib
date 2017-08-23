@@ -18,7 +18,7 @@ Attaches a plugin to a [remark][remark] processor in order to create SVG equatio
 ``` javascript
 var remark = require( 'remark' );
 
-var transform = remark.use( createSVGs ).processSync;
+var transform = remark.use( createSVGs ).process;
 ```
 
 The function accepts the following `options`:
@@ -33,7 +33,7 @@ var opts = {
     'dir': '/path/to/absolute/dir/for/svg/equations'
 };
 
-var transform = remark.use( createSVGs, opts ).processSync;
+var transform = remark.use( createSVGs, opts ).process;
 ```
 
 To specify an alternative filename prefix, set the `prefix` option.
@@ -43,7 +43,7 @@ var opts = {
     'prefix': 'eqn_'
 };
 
-var transform = remark.use( createSVGs, opts ).processSync;
+var transform = remark.use( createSVGs, opts ).process;
 ```
 
 </section>
@@ -83,7 +83,6 @@ var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-write-sv
 var fpath;
 var vfile;
 var opts;
-var out;
 
 // Load a Markdown file...
 fpath = path.join( __dirname, 'fixtures/simple.md' );
@@ -91,14 +90,20 @@ vfile = toVFile.readSync( fpath );
 
 // Specify the output directory for SVG equation files...
 opts = {
-    'dir': './build/docs/img/'
+    'dir': './build/docs/img/',
+    'prefix': ''
 };
 
 // Process a Markdown file and generate SVG equation files:
-out = remark().use( createSVGs, opts ).processSync( vfile );
+remark().use( createSVGs, opts ).process( vfile, done );
 
-// Output the processed Markdown file:
-console.log( out.contents );
+function done( error, out ) {
+    if ( error ) {
+        throw error;
+    }
+    // Output the processed Markdown file:
+    console.log( out.contents );
+}
 ```
 
 </section>
