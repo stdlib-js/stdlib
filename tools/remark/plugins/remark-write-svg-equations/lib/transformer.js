@@ -9,6 +9,7 @@ var writeFile = require( 'fs' ).writeFile;
 var mkdirp = require( 'mkdirp' );
 var visit = require( 'unist-util-visit' );
 var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
+var unescape = require( './unescape.js' ); // eslint-disable-line no-redeclare
 
 
 // VARIABLES //
@@ -60,6 +61,7 @@ function factory( opts ) {
 				debug( 'Equation label: %s', label );
 
 				raw = RAW.exec( node.value )[ 1 ];
+				raw = unescape( raw );
 				debug( 'Raw equation: %s', raw );
 
 				// Check if we may need to create a destination directory...
