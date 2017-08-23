@@ -115,7 +115,7 @@ console.log( html );
 
 ### Usage
 
-``` bash
+``` text
 Usage: gheqn [options]
 
 Options:
