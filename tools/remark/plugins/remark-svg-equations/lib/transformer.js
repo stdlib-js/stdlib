@@ -41,7 +41,7 @@ function transformer( tree, file, clbk ) {
 		return done();
 	}
 	idx = -1;
-	next();
+	return next();
 
 	/**
 	* Callback invoked upon finding a matching node which searches for Markdown equations.
