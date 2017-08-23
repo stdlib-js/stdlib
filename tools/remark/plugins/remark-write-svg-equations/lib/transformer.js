@@ -26,6 +26,7 @@ var RAW = /raw="([^"]*)"/;
 * @private
 * @param {Options} opts - transformer options
 * @param {string} opts.dir- resource directory
+* @param {string} opts.prefix - filename prefix
 * @returns {Function} transformer function
 */
 function factory( opts ) {
