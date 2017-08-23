@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* Generate an HTML string for displaying an SVG equation in a GitHub Markdown file.
+* Generate an HTML string for displaying an SVG equation as an image in a GitHub Markdown file.
 *
 * @module @stdlib/tools/markdown/img-svg-equation
 *

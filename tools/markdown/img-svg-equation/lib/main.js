@@ -11,7 +11,7 @@ var render = require( './render.js' );
 // MAIN //
 
 /**
-* Generates an HTML string for displaying an SVG equation in a GitHub Markdown file.
+* Generates an HTML string for displaying an SVG equation as an image in a GitHub Markdown file.
 *
 * @param {Options} [options] - function options
 * @param {string} [options.className='equation'] - element class name
