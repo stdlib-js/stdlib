@@ -62,7 +62,7 @@ function factory( opts ) {
 		debug( 'Output directory: %s', dir );
 
 		debug( 'Creating output directory...' );
-		mkdirp( dir, onDir );
+		return mkdirp( dir, onDir );
 
 		/**
 		* Callback invoked upon finding a matching node.
