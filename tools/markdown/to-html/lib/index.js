@@ -10,7 +10,14 @@
 *
 * var markdown = '# Beep\n> Boop!';
 *
-* var html = toHTML( markdown );
+* toHTML( markdown, done );
+*
+* function done( error, html ) {
+*     if ( error ) {
+*         throw error;
+*     }
+*     console.log( html );
+* }
 */
 
 // MODULES //

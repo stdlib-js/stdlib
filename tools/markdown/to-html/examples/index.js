@@ -13,5 +13,11 @@ if ( file instanceof Error ) {
 	throw file;
 }
 
-var html = toHTML( file );
-console.log( html );
+toHTML( file, done );
+
+function done( error, html ) {
+	if ( error ) {
+		throw error;
+	}
+	console.log( html );
+}

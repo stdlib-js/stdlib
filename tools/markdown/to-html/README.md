@@ -18,16 +18,23 @@
 ## Usage
 
 ``` javascript
-var toHTML = require( '@stdlib/tools/markdown/to-html' );
+var toHTML = require( '/path/to/@stdlib/tools/markdown/to-html' );
 ```
 
-#### toHTML( markdown )
+#### toHTML( markdown, done )
 
 Converts a Markdown `string` or [`Buffer`][node-buffer] to HTML.
 
 ``` javascript
-var html = toHtml( '# Beep\n\n> Boop!' );
-// returns '<h1 id="beep">Beep</h1>\n\n<blockquote>\n<p>Boop!</p>\n</blockquote>'
+toHtml( '# Beep\n\n> Boop!', done );
+
+function done( error, html ) {
+    if ( error ) {
+        throw error;
+    }
+    console.log( html );
+    // => '<h1 id="beep">Beep</h1>\n\n<blockquote>\n<p>Boop!</p>\n</blockquote>'
+}
 ```
 
 </section>
@@ -51,7 +58,7 @@ var html = toHtml( '# Beep\n\n> Boop!' );
 ``` javascript
 var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var toHTML = require( '@stdlib/tools/markdown/to-html' );
+var toHTML = require( '/path/to/@stdlib/tools/markdown/to-html' );
 
 var file = join( __dirname, 'examples', 'fixtures', 'fixture.md' );
 
@@ -62,8 +69,14 @@ if ( file instanceof Error ) {
     throw file;
 }
 
-var html = toHTML( file );
-console.log( html );
+toHTML( file, done );
+
+function done( error, html ) {
+    if ( error ) {
+        throw error;
+    }
+    console.log( html );
+}
 ```
 
 </section>
