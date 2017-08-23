@@ -9,14 +9,13 @@ var writeFile = require( 'fs' ).writeFile;
 var mkdirp = require( 'mkdirp' );
 var visit = require( 'unist-util-visit' );
 var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
-var unescape = require( './unescape.js' ); // eslint-disable-line no-redeclare
 
 
 // VARIABLES //
 
-var DIV_EQN = /<div class="equation"/g;
-var LABEL = /data-equation="eq:([^"]*)">/;
-var RAW = /data-raw-text="([^"]*)"/;
+var EQN_START = /<!-- <equation[^>]*> -->/gi;
+var LABEL = /label="([^"]*)"/;
+var RAW = /raw="([^"]*)"/;
 
 
 // MAIN //
@@ -54,14 +53,13 @@ function factory( opts ) {
 			var label;
 			var raw;
 			var dir;
-			if ( DIV_EQN.test( node.value ) === true ) {
-				debug( 'Found an HTML equation.' );
+			if ( EQN_START.test( node.value ) === true ) {
+				debug( 'Found an HTML equation...' );
 
 				label = LABEL.exec( node.value )[ 1 ];
 				debug( 'Equation label: %s', label );
 
 				raw = RAW.exec( node.value )[ 1 ];
-				raw = unescape( raw );
 				debug( 'Raw equation: %s', raw );
 
 				// Check if we may need to create a destination directory...
