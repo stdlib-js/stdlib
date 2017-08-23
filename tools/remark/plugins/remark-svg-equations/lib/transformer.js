@@ -32,6 +32,7 @@ function transformer( tree, file, clbk ) {
 	var idx;
 
 	equations = [];
+	idx = -1;
 
 	debug( 'Processing virtual file...' );
 	visit( tree, 'html', visitor );
@@ -41,7 +42,6 @@ function transformer( tree, file, clbk ) {
 	if ( total === 0 ) {
 		return done();
 	}
-	idx = -1;
 	return next();
 
 	/**
