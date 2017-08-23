@@ -11,7 +11,7 @@ var file;
 var out;
 
 // Load a Markdown file...
-fpath = join( __dirname, 'fixtures/simple.md' );
+fpath = join( __dirname, 'fixtures/simple.txt' );
 opts = {
 	'encoding': 'utf8'
 };
