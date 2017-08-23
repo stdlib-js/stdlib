@@ -55,7 +55,11 @@ function factory( opts ) {
 			var url;
 
 			if ( DIV_EQN.test( node.value ) === true ) {
-				label = LABEL.exec( node.value )[ 1 ];
+				label = LABEL.exec( node.value );
+				if ( label === null ) {
+					throw new Error( 'invalid node. Equation element must have a valid label: '+node.value+'.' );
+				}
+				label = label[ 1 ];
 				debug( 'Equation label: %s', label );
 
 				debug( 'File directory: %s', file.dirname );
