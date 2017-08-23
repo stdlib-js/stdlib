@@ -99,12 +99,20 @@ function factory( opts ) {
 		* Creates the next SVG.
 		*
 		* @private
+		* @returns {void}
 		*/
 		function next() {
 			var raw;
+			var err;
 
 			idx += 1;
-			raw = RAW.exec( nodes[ idx ].value )[ 1 ];
+			raw = RAW.exec( nodes[ idx ].value );
+			if ( raw === null ) {
+				debug( 'Invalid node: %s', nodes[ idx ].value );
+				err = new Error( 'invalid node. Equation comments must have valid raw equation text. Node: '+nodes[ idx ].value+'.' );
+				return done( err );
+			}
+			raw = raw[ 1 ];
 			debug( 'Raw equation: %s', raw );
 
 			tex2svg( raw, onSVG );
@@ -127,7 +135,13 @@ function factory( opts ) {
 				debug( 'Error encountered when attempting to create an SVG. File: %s. : %s', file.path, error.message );
 				return done( error );
 			}
-			label = LABEL.exec( nodes[ idx ].value )[ 1 ];
+			label = LABEL.exec( nodes[ idx ].value );
+			if ( label === null ) {
+				debug( 'Invalid node: %s', nodes[ idx ].value );
+				error = new Error( 'invalid node. Equation comments must have valid labels. Node: '+nodes[ idx ].value+'.' );
+				return done( error );
+			}
+			label = label[ 1 ];
 			debug( 'Equation label: %s', label );
 
 			fpath = join( opts.dir, opts.prefix+label+'.svg' );
