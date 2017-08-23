@@ -47,6 +47,7 @@ function factory( opts ) {
 		*
 		* @private
 		* @param {Node} node - reference node
+		* @throws {Error} equation elements must have valid labels
 		*/
 		function visitor( node ) {
 			var fpath;
