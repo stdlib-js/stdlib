@@ -16,7 +16,7 @@ vfile = toVFile.readSync( fpath );
 
 // Specify the directory containing SVG equations:
 opts = {
-	'dir': './docs/img/' // relative to Markdown file
+	'dir': './doc/img/' // relative to Markdown file
 };
 
 // Insert src URLs into HTML equation elements:
