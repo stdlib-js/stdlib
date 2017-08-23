@@ -24,12 +24,23 @@ remark.use( insertURLs );
 The function accepts the following `options`:
 
 * __dir__: directory containing SVG equations. Default: `./docs/img/`.
+* __prefix__: filename prefix. Default: `equation_`.
 
 By default, the plugin attempts to resolve SVG equations relative to each processed Markdown file. The default directory is `./docs/img/`. To specify an alternative directory, including an absolute directory, set the `dir` option.
 
 ``` javascript
 var opts = {
     'dir': '/path/to/absolute/dir/with/svg/equations'
+};
+
+remark.use( insertURLs, opts );
+```
+
+By default, the plugin assumes SVG equation files are prefixed with `equation_`. To specify an alternative prefix, set the `prefix` option.
+
+``` javascript
+var opts = {
+    'prefix': '' // <= no prefix
 };
 
 remark.use( insertURLs, opts );
@@ -54,7 +65,7 @@ remark.use( insertURLs, opts );
   <!-- </equation> -->
   ```
 
-  Here, the implementation would assume that the SVG equation filename is `absolute_value.svg`.
+  Here, the implementation would assume that the SVG equation filename is `equation_absolute_value.svg`, where `equation_` is the default filename prefix.
 
 </section>
 
@@ -82,7 +93,8 @@ vfile = toVFile.readSync( fpath );
 
 // Specify the directory containing SVG equations:
 opts = {
-    'dir': './docs/img/' // relative to Markdown file
+    'dir': './docs/img/', // relative to Markdown file,
+    'prefix': ''          // no prefix 
 };
 
 // Insert src URLs into HTML equation elements:

@@ -26,6 +26,7 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 * @private
 * @param {Options} opts - transformer options
 * @param {string} opts.dir- resource directory
+* @param {string} opts.prefix - filename prefix
 * @returns {Function} transformer function
 */
 function factory( opts ) {
@@ -58,7 +59,7 @@ function factory( opts ) {
 
 				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
 				debug( 'File directory: %s', file.dirname );
-				fpath = join( opts.dir, label+'.svg' );
+				fpath = join( opts.dir, opts.prefix+label+'.svg' );
 				debug( 'SVG filename: %s', fpath );
 
 				fpath = resolve( file.dirname, fpath );
