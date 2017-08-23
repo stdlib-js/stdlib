@@ -44,7 +44,7 @@ var transform = remark.use( createSVGs, opts ).processSync;
 
 ## Notes
 
-* When generating an output filepath, the implementation uses the HTML equation `label` attribute as the SVG filename. For example, given
+* When generating an output filepath, the implementation uses the HTML equation `label` attribute to generate an SVG filename. For example, given
 
   ``` html
   <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
@@ -52,7 +52,7 @@ var transform = remark.use( createSVGs, opts ).processSync;
   <!-- </equation> -->
   ```
 
-  the SVG equation filename would be `absolute_value.svg`.
+  the SVG equation filename would be `equation_absolute_value.svg`, where `equation_` is a prefix defined according to convention.
 
 </section>
 
