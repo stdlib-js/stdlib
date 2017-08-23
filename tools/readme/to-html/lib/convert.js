@@ -39,6 +39,7 @@ var styles = require( './styles.js' );
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+* @returns {void}
 *
 * @example
 * var opts = {
@@ -106,7 +107,7 @@ function convert( file, options, clbk ) {
 		}
 	}
 	debug( 'Reading file...' );
-	readFile( src, onRead );
+	return readFile( src, onRead );
 
 	/**
 	* Callback invoked upon reading a file.
@@ -114,11 +115,9 @@ function convert( file, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Buffer} file - file
+	* @returns {void}
 	*/
 	function onRead( error, file ) {
-		var wopts;
-		var html;
-		var view;
 		if ( error ) {
 			debug( 'Encountered an error when attempting to read file: %s', error.message );
 			return done();
@@ -126,7 +125,25 @@ function convert( file, options, clbk ) {
 		debug( 'Successfully read file.' );
 
 		debug( 'Converting file content to HTML...' );
-		html = toHTML( file );
+		toHTML( file, onHTML );
+	} // end FUNCTION onRead()
+
+	/**
+	* Callback invoked upon converting file content to HTML.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {string} html - result
+	* @returns {void}
+	*/
+	function onHTML( error, html ) {
+		var wopts;
+		var view;
+		if ( error ) {
+			debug( 'Encountered an error when converting file content to HTML: %s', error.message );
+			return done( error );
+		}
+		debug( 'Successfully converted file content to HTML.' );
 
 		if ( !opts.fragment ) {
 			view = {
@@ -152,13 +169,14 @@ function convert( file, options, clbk ) {
 			'encoding': 'utf8'
 		};
 		writeFile( out, html, wopts, onWrite );
-	} // end FUNCTION onRead()
+	} // end FUNCTION onHTML()
 
 	/**
 	* Callback invoked upon writing to file.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onWrite( error ) {
 		if ( error ) {
@@ -175,6 +193,7 @@ function convert( file, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {string} html - rendered HTML
+	* @returns {void}
 	*/
 	function done( error, html ) {
 		if ( error ) {
