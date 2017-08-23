@@ -104,7 +104,7 @@ function factory( opts ) {
 				var fopts;
 				var fpath;
 				if ( error ) {
-					debug( 'Error encountered when attempting to create an SVG: %s', error.message );
+					debug( 'Error encountered when attempting to create an SVG. File: %s. : %s', file.path, error.message );
 					throw error;
 				}
 				fpath = join( opts.dir, label+'.svg' );
