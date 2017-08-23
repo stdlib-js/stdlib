@@ -4,13 +4,14 @@
 
 var debug = require( 'debug' )( 'remark-svg-equations:transformer' );
 var visit = require( 'unist-util-visit' );
-var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
+var toSVG = require( './../../../../markdown/inline-svg-equation' );
 
 
 // VARIABLES //
 
 var EQN_START = /<!-- <equation.*> -->/gi;
 var EQN_END = /<!-- <\/equation> -->/gi;
+var LABEL = /label="([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
 
 
@@ -53,11 +54,21 @@ function transformer( tree, file, clbk ) {
 	* @returns {void}
 	*/
 	function visitor( node, index, parent ) {
+		var label;
 		var raw;
 		var err;
 
 		if ( EQN_START.test( node.value ) === true ) {
 			debug( 'Found an equation...' );
+
+			label = LABEL.exec( node.value );
+			if ( label === null ) {
+				debug( 'Invalid node: %s', node.value );
+				throw new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
+			}
+			label = label[ 1 ];
+			debug( 'Label: %s', label );
+
 			raw = RAW.exec( node.value );
 			if ( raw === null ) {
 				debug( 'Invalid node: %s', node.value );
@@ -70,7 +81,8 @@ function transformer( tree, file, clbk ) {
 			equations.push({
 				'parent': parent,
 				'index': index,
-				'tex': raw
+				'label': label,
+				'raw': raw
 			});
 		}
 	} // end FUNCTION visitor()
@@ -81,10 +93,14 @@ function transformer( tree, file, clbk ) {
 	* @private
 	*/
 	function next() {
+		var opts;
 		idx += 1;
-
+		opts = {
+			'label': equations[ idx ].label,
+			'raw': equations[ idx ].raw
+		};
 		debug( 'Generating an SVG...' );
-		tex2svg( equations[ idx ].tex, onSVG );
+		toSVG( opts, onSVG );
 	} // end FUNCTION next()
 
 	/**
