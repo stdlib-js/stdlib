@@ -16,6 +16,7 @@ var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
 var EQN_START = /<!-- <equation[^>]*> -->/gi;
 var LABEL = /label="eq:([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
+var PREFIX = 'equation_';
 
 
 // MAIN //
@@ -36,8 +37,9 @@ function factory( opts ) {
 	* @private
 	* @param {Node} ast - root node
 	* @param {File} file - Virtual file
+	* @param {Callback} next - callback to invoke upon completion
 	*/
-	function transformer( ast, file ) {
+	function transformer( ast, file, next ) {
 		var dirflg;
 
 		debug( 'Processing virtual file...' );
@@ -107,7 +109,7 @@ function factory( opts ) {
 					debug( 'Error encountered when attempting to create an SVG. File: %s. : %s', file.path, error.message );
 					throw error;
 				}
-				fpath = join( opts.dir, label+'.svg' );
+				fpath = join( opts.dir, PREFIX+label+'.svg' );
 				fpath = resolve( file.dirname, fpath );
 				debug( 'Absolute filepath: %s', fpath );
 
@@ -130,6 +132,7 @@ function factory( opts ) {
 					throw error;
 				}
 				debug( 'SVG successfully written to file.' );
+				next();
 			} // end FUNCTION onWrite()
 		} // end FUNCTION createSVG()
 	} // end FUNCTION transformer()
