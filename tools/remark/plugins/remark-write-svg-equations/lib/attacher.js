@@ -18,6 +18,7 @@ var defaults = require( './defaults.json' );
 *
 * @param {Options} [options] - options object
 * @param {string} [options.dir="./docs/img/"] - resource directory
+* @param {string} [options.prefix="equation_"] - file name prefix
 * @returns {Function} transformer
 */
 function attacher( options ) {
@@ -33,6 +34,12 @@ function attacher( options ) {
 				throw new TypeError( 'invalid option. `dir` option must be a string primitive. Value: `' + options.dir + '`.' );
 			}
 			opts.dir = options.dir;
+		}
+		if ( hasOwnProp( options, 'prefix' ) ) {
+			if ( !isString( options.prefix ) ) {
+				throw new TypeError( 'invalid option. `prefix` option must be a string primitive. Value: `' + options.prefix + '`.' );
+			}
+			opts.prefix = options.prefix;
 		}
 	}
 	debug( 'Attaching a plugin configured with the following options: %s', JSON.stringify( opts ) );

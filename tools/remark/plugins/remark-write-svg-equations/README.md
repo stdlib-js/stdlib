@@ -24,12 +24,23 @@ var transform = remark.use( createSVGs ).processSync;
 The function accepts the following `options`:
 
 * __dir__: output directory for SVG files. Default: `./docs/img/`.
+* __prefix__: filename prefix for each generated SVG. Default: `equation_`.
 
 By default, the plugin attempts to resolve an output directory relative to each processed Markdown file. To specify an alternative directory, including an absolute directory, set the `dir` option.
 
 ``` javascript
 var opts = {
     'dir': '/path/to/absolute/dir/for/svg/equations'
+};
+
+var transform = remark.use( createSVGs, opts ).processSync;
+```
+
+To specify an alternative filename prefix, set the `prefix` option.
+
+``` javascript
+var opts = {
+    'prefix': 'eqn_'
 };
 
 var transform = remark.use( createSVGs, opts ).processSync;
@@ -52,7 +63,7 @@ var transform = remark.use( createSVGs, opts ).processSync;
   <!-- </equation> -->
   ```
 
-  the SVG equation filename would be `equation_absolute_value.svg`, where `equation_` is a prefix defined according to convention.
+  the SVG equation filename would be `equation_absolute_value.svg`, where `equation_` is the default filename prefix.
 
 </section>
 

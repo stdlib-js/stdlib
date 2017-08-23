@@ -1,3 +1,4 @@
 {
-  "dir": "./docs/img/"
+  "dir": "./docs/img/",
+  "prefix": "equation_"
 }
