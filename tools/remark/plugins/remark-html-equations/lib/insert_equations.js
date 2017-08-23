@@ -50,6 +50,7 @@ function insertEquations( node, index, parent ) {
 
 		alt = ALT.exec( node.value );
 		if ( alt === null ) {
+			debug( 'Invalid node: %s', node.value );
 			throw new Error( 'invalid node. Equation comments must have valid alternate text. Node: '+node.value+'.' );
 		}
 		alt = alt[ 1 ];
@@ -57,6 +58,7 @@ function insertEquations( node, index, parent ) {
 
 		raw = RAW.exec( node.value );
 		if ( raw === null ) {
+			debug( 'Invalid node: %s', node.value );
 			throw new Error( 'invalid node. Equation comments must have valid raw equation text. Node: '+node.value+'.' );
 		}
 		raw = raw[ 1 ];
@@ -85,7 +87,7 @@ function insertEquations( node, index, parent ) {
 			parent.children.splice( index+1, 1, newNode );
 		}
 		else {
-			debug( 'Invalid Markdown HTML equation: %s', node.value );
+			debug( 'Invalid node: %s', node.value );
 			throw new Error( 'invalid node. Invalid equation comment. Ensure that the Markdown file includes both starting and ending equation comments. Node: `' + node.value + '`.' );
 		}
 	}
