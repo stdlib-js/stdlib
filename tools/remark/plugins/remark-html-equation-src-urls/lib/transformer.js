@@ -58,6 +58,7 @@ function factory( opts ) {
 			if ( DIV_EQN.test( node.value ) === true ) {
 				label = LABEL.exec( node.value );
 				if ( label === null ) {
+					debug( 'Invalid node: %s', node.value );
 					throw new Error( 'invalid node. Equation element must have a valid label. Node: '+node.value+'.' );
 				}
 				label = label[ 1 ];
