@@ -84,7 +84,7 @@ function insertEquations( node, index, parent ) {
 		// Case 2: replace existing node...
 		else if ( EQN_END.test( parent.children[ index+2 ].value ) ) {
 			debug( 'Replacing existing node...' );
-			parent.children.splice( index+1, 1, newNode );
+			parent.children[ index+1 ] = newNode;
 		}
 		else {
 			debug( 'Invalid node: %s', node.value );
