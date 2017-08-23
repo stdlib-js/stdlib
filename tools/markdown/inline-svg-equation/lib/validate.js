@@ -1,0 +1,71 @@
+'use strict';
+
+// MODULES //
+
+var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var isObject = require( '@stdlib/assert/is-plain-object' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+
+
+// MAIN //
+
+/**
+* Validates function options.
+*
+* @private
+* @param {Object} opts - destination object
+* @param {Options} options - options to validate
+* @param {string} [options.className] - element class name
+* @param {string} [options.align] - element alignment
+* @param {string} [options.raw] - raw equation text
+* @param {string} [options.label] - equation label
+* @returns {(Error|null)} error object or null
+*
+* @example
+* var opts = {};
+* var options = {
+*     'className': 'equation',
+*     'align': 'center',
+*     'raw': '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt'
+*     'label': 'eqn:erf'
+* };
+* var err = validate( opts, options );
+* if ( err ) {
+*     throw err;
+* }
+*/
+function validate( opts, options ) {
+	if ( !isObject( options ) ) {
+		return new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + options + '`.' );
+	}
+	if ( hasOwnProp( options, 'className' ) ) {
+		opts.className = options.className;
+		if ( !isString( opts.className ) ) {
+			return new TypeError( 'invalid option. `className` option must be a string primitive. Option: `' + opts.className + '`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'align' ) ) {
+		opts.align = options.align;
+		if ( !isString( opts.align ) ) {
+			return new TypeError( 'invalid option. `align` option must be a string primitive. Option: `' + opts.align + '`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'raw' ) ) {
+		opts.raw = options.raw;
+		if ( !isString( opts.raw ) ) {
+			return new TypeError( 'invalid option. `raw` option must be a string primitive. Option: `' + opts.raw + '`.' );
+		}
+	}
+	if ( hasOwnProp( options, 'label' ) ) {
+		opts.label = options.label;
+		if ( !isString( opts.label ) ) {
+			return new TypeError( 'invalid option. `label` option must be a string primitive. Option: `' + opts.label + '`.' );
+		}
+	}
+	return null;
+} // end FUNCTION validate()
+
+
+// EXPORTS //
+
+module.exports = validate;
