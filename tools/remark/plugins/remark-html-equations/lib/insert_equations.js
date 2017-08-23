@@ -42,6 +42,7 @@ function insertEquations( node, index, parent ) {
 
 		label = LABEL.exec( node.value );
 		if ( label === null ) {
+			debug( 'Invalid node: %s', node.value );
 			throw new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
 		}
 		label = label[ 1 ];
