@@ -23,7 +23,6 @@ FIND_SVG_EQUATIONS_FLAGS ?= \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
 
 ifneq ($(OS), Darwin)

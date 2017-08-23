@@ -172,7 +172,7 @@ R_FILTER ?= .*/.*
 
 
 # Define a filename pattern for SVG equation files:
-SVG_EQUATIONS_PATTERN ?= *.svg
+SVG_EQUATIONS_PATTERN ?= equation*.svg
 
 # Define a filepath pattern for SVG equation files:
 SVG_EQUATIONS_FILTER ?= .*/.*
