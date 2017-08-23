@@ -32,33 +32,35 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 function factory( opts ) {
 	return transformer;
 	/**
-	* Transforms a Markdown file.
+	* Transforms a Markdown abstract syntax tree (AST).
 	*
 	* @private
-	* @param {Node} ast - root node
-	* @param {File} file - Virtual file
+	* @param {Node} tree - root AST node
+	* @param {File} file - virtual file
 	*/
-	function transformer( ast, file ) {
+	function transformer( tree, file ) {
 		debug( 'Processing virtual file...' );
-		visit( ast, 'html', insertURLs );
+		visit( tree, 'html', visitor );
 
 		/**
-		* Insert SVG equation rawgit URLs in Markdown HTML equation elements.
+		* Callback invoked upon finding a matching node. Inserts SVG equation rawgit URLs in Markdown HTML equation elements.
 		*
 		* @private
 		* @param {Node} node - reference node
 		*/
-		function insertURLs( node ) {
+		function visitor( node ) {
 			var fpath;
 			var rpath;
 			var label;
 			var url;
+
 			if ( DIV_EQN.test( node.value ) === true ) {
 				label = LABEL.exec( node.value )[ 1 ];
 				debug( 'Equation label: %s', label );
 
-				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
 				debug( 'File directory: %s', file.dirname );
+
+				// Get absolute file path of current SVG (note: we assume that the `label` attribute matches the eqn filename):
 				fpath = join( opts.dir, opts.prefix+label+'.svg' );
 				debug( 'SVG filename: %s', fpath );
 
@@ -79,7 +81,7 @@ function factory( opts ) {
 				// Replace `src` attribute in `<img>` tag:
 				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
 			}
-		}// end FUNCTION insertURLs()
+		}// end FUNCTION visitor()
 	} // end FUNCTION transformer()
 } // end FUNCTION factory()
 
