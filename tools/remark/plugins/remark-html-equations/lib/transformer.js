@@ -4,20 +4,20 @@
 
 var debug = require( 'debug' )( 'remark-html-equations:transformer' );
 var visit = require( 'unist-util-visit' );
-var insertEquations = require( './insert_equations.js' );
+var visitor = require( './insert_equations.js' );
 
 
 // MAIN //
 
 /**
-* Transforms a Markdown file.
+* Transforms a Markdown abstract syntax tree (AST).
 *
 * @private
-* @param {Node} ast - root node
+* @param {Node} tree - root AST node
 */
-function transformer( ast ) {
+function transformer( tree ) {
 	debug( 'Processing virtual file...' );
-	visit( ast, 'html', insertEquations );
+	visit( tree, 'html', visitor );
 } // end FUNCTION transformer()
 
 

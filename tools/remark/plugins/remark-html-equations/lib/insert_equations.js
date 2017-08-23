@@ -24,6 +24,10 @@ var RAW = /raw="([^"]*)"/;
 * @param {Node} node - reference node
 * @param {number} index - position of `node` in `parent`
 * @param {Node} parent - parent of `node`
+* @throws {Error} equation comments must have a valid label
+* @throws {Error} equation comments must have valid alternate text
+* @throws {Error} equation comments must have valid raw equation text
+* @throws {Error} equation comments must have starting and ending comments
 */
 function insertEquations( node, index, parent ) {
 	var newNode;
@@ -36,13 +40,25 @@ function insertEquations( node, index, parent ) {
 	if ( EQN_START.test( node.value ) === true ) {
 		debug( 'Found an equation...' );
 
-		label = LABEL.exec( node.value )[ 1 ];
+		label = LABEL.exec( node.value );
+		if ( label === null ) {
+			throw new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
+		}
+		label = label[ 1 ];
 		debug( 'Label: %s', label );
 
-		alt = ALT.exec( node.value )[ 1 ];
+		alt = ALT.exec( node.value );
+		if ( alt === null ) {
+			throw new Error( 'invalid node. Equation comments must have valid alternate text. Node: '+node.value+'.' );
+		}
+		alt = alt[ 1 ];
 		debug( 'Alternate text: %s', alt );
 
-		raw = RAW.exec( node.value )[ 1 ];
+		raw = RAW.exec( node.value );
+		if ( raw === null ) {
+			throw new Error( 'invalid node. Equation comments must have valid raw equation text. Node: '+node.value+'.' );
+		}
+		raw = raw[ 1 ];
 		debug( 'Raw equation: %s', raw );
 
 		opts = {
@@ -69,7 +85,7 @@ function insertEquations( node, index, parent ) {
 		}
 		else {
 			debug( 'Invalid Markdown HTML equation: %s', node.value );
-			throw new Error( 'invalid equation comment. Value: `' + node.value + '`.' );
+			throw new Error( 'invalid node. Invalid equation comment. Ensure that the Markdown file includes both starting and ending equation comments. Node: `' + node.value + '`.' );
 		}
 	}
 } // end FUNCTION insertEquations()
