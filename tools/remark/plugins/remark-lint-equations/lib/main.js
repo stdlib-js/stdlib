@@ -87,7 +87,7 @@ function lint( tree, file, options, clbk ) {
 				msg = pos+'   error   Equation elements must have a TeX string   missing-tex-string';
 				debug( msg );
 				file.message( msg, node );
-				done();
+				return done();
 			}
 		}
 		/**
