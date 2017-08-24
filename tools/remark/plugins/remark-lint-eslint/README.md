@@ -19,7 +19,7 @@ A [remark][remark] plugin which, when provided a Markdown abstract syntax `tree`
 var remark = require( 'remark' );
 
 // Create a synchronous Markdown text linter:
-var linter = remark().use( plugin ).procecssSync;
+var linter = remark().use( plugin ).processSync;
 
 // Lint Markdown:
 var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
@@ -33,7 +33,7 @@ Returns a configured [remark][remark] plugin for linting JavaScript code blocks.
 var remark = require( 'remark' );
 
 // Create a synchronous Markdown text linter:
-var linter = remark().use( plugin.factory() ).procecssSync;
+var linter = remark().use( plugin.factory() ).processSync;
 
 // Lint Markdown:
 var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
@@ -57,7 +57,7 @@ var opts = {
 var lint = plugin.factory( opts );
 
 // Create a synchronous Markdown text linter:
-var linter = remark().use( lint ).procecssSync;
+var linter = remark().use( lint ).processSync;
 
 // Lint Markdown:
 var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );

@@ -51,9 +51,10 @@ function factory( options ) {
 	* Lints Markdown code blocks using ESLint.
 	*
 	* @private
-	* @param {Object} tree - abstract syntax tree (AST)
-	* @param {Object} file - file being linted
+	* @param {Node} tree - abstract syntax tree (AST)
+	* @param {File} file - file being linted
 	* @param {Object} options - options
+	* @param {Callback} clbk - callback
 	*/
 	function lint( tree, file ) {
 		visit( tree, 'code', onNode );
@@ -62,9 +63,9 @@ function factory( options ) {
 		* Callback invoked upon encountering a code block.
 		*
 		* @private
-		* @param {Object} node - AST node
+		* @param {Node} node - AST node
 		* @param {number} idx - position of node in parent
-		* @param {Object} parent - parent AST node
+		* @param {Node} parent - parent AST node
 		* @returns {void}
 		*/
 		function onNode( node, idx, parent ) {
