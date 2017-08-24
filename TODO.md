@@ -5,13 +5,13 @@
     -   add to CI
     -   support reformatting ala `go fmt` => `--fix`
 
-2.  add NPM style [guide](https://github.com/voorhoede/npm-style-guide) with [versioning info](https://github.com/compute-io/contributing#versioning)
+1.  add NPM style [guide](https://github.com/voorhoede/npm-style-guide) with [versioning info](https://github.com/compute-io/contributing#versioning)
 
-3.  determine how to handle internal `@stdlib` links in READMEs
+1.  determine how to handle internal `@stdlib` links in READMEs
 
     => use pkg name as unique identifier and use tools to autoupdate READMEs with desired link (e.g., to GitHub README for pkg or to web docs, etc)
 
-4.  create an `docs/install.md` for developers
+1.  create an `docs/install.md` for developers
 
     -   julia
     -   R
@@ -19,100 +19,73 @@
     -   golang
     -   boost
 
-5.  determine a browser testing strategy
+1.  determine a browser testing strategy
 
     -   could run into memory issues if all numeric tests are run for all functions, etc.
     -   one possibility is to loop through all files and run each individually (browserify, testling, and repeat)
     -   may have to punt browser testing to individual repos (!) => that is too late, as module would already be deployed
 
-6.  std polyfills?
+1.  std polyfills?
 
     -   object-keys
     -   typed-array
     -   ...
 
-7.  how to handle modules with CLIs?
+1.  how to handle modules with CLIs?
 
     -   will want some sort of CLI test framework to test `stdin`, `stdout`, args, etc.
 
-8.  how to handle browser tests for non-browser fcns
+1.  how to handle browser tests for non-browser fcns
 
     -   e.g., `fs` functions like `fs/exists`, or `cwd`
 
-9.  migrate JSDoc; use one of
+1.  migrate JSDoc; use one of
 
     -   [`dox`](https://github.com/tj/dox)
-
     -   [`mrdoc`](https://github.com/mr-doc/mr-doc) (aka `doxx`)
-
     -   [`docco`](https://github.com/jashkenas/docco)
-
     -   [`jsdoc`](https://github.com/jsdoc3/jsdoc)
-
     -   [`documentation.js`](http://documentation.js.org/)
-
-        -   see [turf-www](https://github.com/Turfjs/turf-www) and [turf](https://github.com/Turfjs/turf)
-
+    -   see [turf-www](https://github.com/Turfjs/turf-www) and [turf](https://github.com/Turfjs/turf)
     -   [`jsdoc-parse`](https://github.com/jsdoc2md/jsdoc-parse)
-
     -   [`dmd`](https://github.com/jsdoc2md/dmd)
-
     -   [`jsdox`](https://github.com/sutoiku/jsdox)
-
     -   [`dokker`](https://github.com/oceanhouse21/dokker)
-
     -   [`jsdoc-to-markdown`](https://github.com/jsdoc2md/jsdoc-to-markdown)
-
     -   [`yuidoc`](http://yui.github.io/yuidoc/syntax/index.html)
-
     -   [`groc`](https://github.com/nevir/groc)
-
     -   [`jsduck`](https://github.com/senchalabs/jsduck)
-
     -   [`esdoc`](https://github.com/esdoc/esdoc)
-
     -   [`docker.js`](https://github.com/jbt/docker)
-
     -   [`doctrine`](https://github.com/eslint/doctrine)
-
     -   [`doclets`](https://github.com/lipp/doclets)
-
     -   [`mkdocs`](http://www.mkdocs.org/)
-
     -   [`docpress`](https://github.com/docpress/docpress)
-
     -   [`getdocs`](https://github.com/marijnh/getdocs)
-
     -   [`flow-jsdoc`](https://github.com/Kegsay/flow-jsdoc)
-
     -   [`catharsis`](https://github.com/hegemonic/catharsis)
-
     -   [`doctor`](https://github.com/jdeal/doctor)
-
     -   [`docsify`](https://github.com/QingWei-Li/docsify)
-
     -   [`docute`](https://github.com/egoist/docute)
-
     -   [`sphinx-js`](https://github.com/erikrose/sphinx-js)
-
     -   ...
 
-10. debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
+1.  debug [eval sources](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Debug_eval_sources)
 
     -   [node-inspector](https://github.com/node-inspector/node-inspector)
     -   [source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
 
-11. [livegrep](https://github.com/livegrep/livegrep) for `stdlib`? Maybe have sthg hosted? Would be an advance over GitHub search as GitHub search often shows results which happened far back in commit history, when what you want is results from the current state of the repo.
+1.  [livegrep](https://github.com/livegrep/livegrep) for `stdlib`? Maybe have sthg hosted? Would be an advance over GitHub search as GitHub search often shows results which happened far back in commit history, when what you want is results from the current state of the repo.
 
-12. See [tinycolor](https://github.com/bgrins/TinyColor/blob/master/tinycolor.js)
+1.  See [tinycolor](https://github.com/bgrins/TinyColor/blob/master/tinycolor.js)
 
-13. lint filenames
+1.  lint filenames
 
     -   [eslint plugin](https://github.com/selaux/eslint-plugin-filenames)
 
-14. consider changing `isNumber` to `isNumeric`
+1.  consider changing `isNumber` to `isNumeric`
 
-15. prngs
+1.  prngs
 
     -   [pcg](http://www.pcg-random.org/)
     -   [random123](http://www.deshawresearch.com/downloads/download_random123.cgi/)
@@ -153,87 +126,77 @@
     -   [xorshift-add](https://github.com/MersenneTwister-Lab/XSadd/blob/master/xsadd.c)
     -   [tinyMT32](https://github.com/MersenneTwister-Lab/TinyMT/blob/master/tinymt/tinymt32.c)
 
-16. `Makefile` target to run test fixtures
+1.  `Makefile` target to run test fixtures
 
     -   detect script type; e.g., `R`, `python`, `Julia`, `Golang`, `C`, `C++`, or `JS`
-
-        -   can be as simple as filename extension
-        -   of course, may also want to use a shell script to run tests (`.sh`)
-        -   for files without an extension, assume executable
-
+    -   can be as simple as filename extension
+    -   of course, may also want to use a shell script to run tests (`.sh`)
+    -   for files without an extension, assume executable
     -   run the script
-
-        -   may want to `chmod` the script, so do not need to know the system alias for the runner environment (e.g., Julia => `julia`) and can leverage internal shebang
-
+    -   may want to `chmod` the script, so do not need to know the system alias for the runner environment (e.g., Julia => `julia`) and can leverage internal shebang
     -   if part of CI, would allow continuous testing against an updated fixture space and would also allow continuous testing that fixture runners work
 
-17. should `utils/function-name` support generator functions?
+1.  should `utils/function-name` support generator functions?
 
     -   a separate function?
 
-18. replace `require` statements of external compute modules
+1.  replace `require` statements of external compute modules
 
-19. tests for top-level `tools`; e.g., JSDoc templates, etc
+1.  tests for top-level `tools`; e.g., JSDoc templates, etc
 
-20. deploy `plato` complexity report to gh-pages
+1.  deploy `plato` complexity report to gh-pages
 
     -   similar to JSDoc source docs
 
-21. clean-up cpp test runners
+1.  clean-up cpp test runners
 
     -   `powm1`
     -   `riemann-zeta`
 
-22. `type-of` should check for `toStringTag` support
+1.  `type-of` should check for `toStringTag` support
 
-23. update `utils/tools`
+1.  update `utils/tools`
 
-24. generic `is-finite` util should include note about how differs from global `isFinite`
+1.  generic `is-finite` util should include note about how differs from global `isFinite`
 
-25. create better examples for constants
+1.  create better examples for constants
 
     -   e.g., how and why and in what contexts a constant may be used
-    -   e.g., `float64-max-exponent` => useful for randomly generating numbers across the entire range of possible numbers (sort of, as only 16 decimals => logspace)
+    -   e.g., `float64-max-exponent` => useful for randomly generating numbers across the entire range of possible numbers (sort of, as only 1.  decimals => logspace)
 
-26. investigate [textlint](https://github.com/textlint/textlint)
+1.  investigate [textlint](https://github.com/textlint/textlint)
 
-27. project stats
+1.  project stats
 
     -   use [ndu](https://github.com/groupon/ndu) to visualize dependency size
-
     -   use [disc](https://github.com/hughsk/disc) to visualize browserify output (see also [browserify-size](https://github.com/bendrucker/browserify-size))
-
     -   [cost-of-modules](https://github.com/siddharthkp/cost-of-modules)
-
     -   [get-nps](https://github.com/xtoolkit/get-nps)
-
     -   could do something akin to [issue stats](https://github.com/hstove/issue_stats) but locally and/or only including project modules/repos
-
     -   later project stats can be displayed in a separate webpage
+    -   see visualcinnamon.com for inspiration
 
-        -   see visualcinnamon.com for inspiration
-
-28. FIX: security vulnerability when using `rm -rf` in Makefile rules
+1.  FIX: security vulnerability when using `rm -rf` in Makefile rules
 
     -   due to using environment variables. If one is improperly set, could be catastrophic. Safe delete?
 
-        -   consider [trash](https://github.com/sindresorhus/trash) and [trash-cli](https://github.com/sindresorhus/trash-cli)
+    -   consider [trash](https://github.com/sindresorhus/trash) and [trash-cli](https://github.com/sindresorhus/trash-cli)
 
-            -   No, as Sindre does not provide backward compatibility. Will need to roll our own.
+        -   No, as Sindre does not provide backward compatibility. Will need to roll our own.
 
-29. `Makefile` does not list top-level `examples`; is this intentional?
+1.  `Makefile` does not list top-level `examples`; is this intentional?
 
-30. move test fixture runners into sub-directories based on language
+1.  move test fixture runners into sub-directories based on language
 
     -   e.g., `./fixtures/julia/*`
 
-31. add Saucelabs with zuul (?)
+1.  add Saucelabs with zuul (?)
 
-32. [gh-pages](https://github.com/tschaub/gh-pages)
+1.  [gh-pages](https://github.com/tschaub/gh-pages)
 
-33. may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
+1.  may be useful: [browser-repl](https://github.com/Automattic/browser-repl)
 
-34. module to identify equations in README files
+1.  module to identify equations in README files
 
     -   parse
     -   generate svg
@@ -242,19 +205,16 @@
     -   insert into readme (replace anything already existing)
     -   similar to Makefile test targets, include a target to filter and selectively update README equations
 
-35. jsdoc HTML template
+1.  jsdoc HTML template
 
     -   needs a total refactor
-
     -   browserify pipeline
-
-        -   [mathjax](https://github.com/mathjax/MathJax-node)
-
+    -   [mathjax](https://github.com/mathjax/MathJax-node)
     -   see documentation.js and turf
 
-36. tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
+1.  tailor Mathjax [config](https://github.com/mathjax/MathJax/blob/master/config/default.js)
 
-37. a project reference manager?
+1.  a project reference manager?
 
     -   something akin to bibtex; i.e., a centralized list of references which can be globally referenced (e.g., IEEE754, as the Wikipedia reference, etc)
     -   an individual module, when created, would get the global link included in the README
@@ -282,11 +242,11 @@
     -   does require a separate build step, but can be automated `pre-push` or via `watch` 
     -   how would we distinguish (in markup) between just wanting a link and wanting a full-blown reference citation? => maybe if within a `references` section, similar to `links`
 
-38. consider [standard-version](https://github.com/conventional-changelog/standard-version)
+1.  consider [standard-version](https://github.com/conventional-changelog/standard-version)
 
     -   [changelog-standard](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md)
 
-39. [add](https://github.com/vhf/v8-bailout-reasons) to contribution guidelines
+1.  [add](https://github.com/vhf/v8-bailout-reasons) to contribution guidelines
 
     -   [bluebird](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers)
     -   [optimization killers](https://github.com/zhangchiqing/OptimizationKillers)
@@ -313,17 +273,17 @@
     -   <https://github.com/sq/JSIL/wiki/JavaScript-Performance-For-Madmen>
     -   <http://mp.binaervarianz.de/JS_perf_study_TR_Oct2015.pdf>
 
-40. in all tests (and examples), replace `Math.random` with a seeded `lcg`
+1.  in all tests (and examples), replace `Math.random` with a seeded `lcg`
 
     -   for tests, be sure to record the seed so that failed tests can be debugged
     -   could have seed be an environment variable, so could be set in CI environment
     -   module to get a seed; one method used could be to check env var
 
-41. investigate [nbind](https://github.com/charto/nbind)
+1.  investigate [nbind](https://github.com/charto/nbind)
 
     -   could be useful for, say, Boost bindings
 
-42. Deploy a webhook server to aggregate 3rd party tools notifications (?)
+1.  Deploy a webhook server to aggregate 3rd party tools notifications (?)
 
     -   Travis CI
     -   AppVeyor
@@ -332,35 +292,35 @@
     -   Circle CI
     -   GitHub
 
-43. make Travis and Appveyor build badges the same dimensions
+1.  make Travis and Appveyor build badges the same dimensions
 
     -   currently, Appveyor includes a logo
     -   could use shields.io
 
-44. consider using [svgo](https://github.com/svg/svgo) to minimize eqn svgs
+1.  consider using [svgo](https://github.com/svg/svgo) to minimize eqn svgs
 
-45. C++ style guide => use `*.cpp` and `*.hpp`
+1.  C++ style guide => use `*.cpp` and `*.hpp`
 
-46. find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
+1.  find inspiration for the JS style guide from C++ core [guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
 
     -   include ESLint rules for each (where applicable) guideline
     -   include references (e.g., perf, fast elements, etc)
 
-47. add code climate badge
+1.  add code climate badge
 
-48. consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
+1.  consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
 
     -   markdown linting
 
-        -   [alex](https://github.com/wooorm/alex)
+    -   [alex](https://github.com/wooorm/alex)
 
-        -   [retext-readability](https://github.com/wooorm/retext-readability)
+    -   [retext-readability](https://github.com/wooorm/retext-readability)
 
-        -   [standard-markdown](https://github.com/zeke/standard-markdown)
+    -   [standard-markdown](https://github.com/zeke/standard-markdown)
 
-        -   [retext-lint-code](https://github.com/Qard/remark-lint-code)
+    -   [retext-lint-code](https://github.com/Qard/remark-lint-code)
 
-            -   uses eslint
+        -   uses eslint
 
     -   js code in markdown linting
 
@@ -370,31 +330,31 @@
 
     -   Pep8 for Python, [pycodestyle](https://github.com/PyCQA/pycodestyle), and see [autopep8](https://github.com/hhatto/autopep8) for automatic formatting
 
-49. on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
+1.  on src doc build for `gh-pages`, also do the same for `develop`; e.g., `/docs/src/develop`, which could map to `http://a.b.c/docs/src/develop`
 
     -   would allow a "preview" alongside current prod
     -   will also want src docs for each version
 
-50. investigate whether [bit operators](http://www.netlib.org/fdlibm/e_pow.c) would be better for `is-even` and `is-odd`
+1.  investigate whether [bit operators](http://www.netlib.org/fdlibm/e_pow.c) would be better for `is-even` and `is-odd`
 
-51. browserify transform to load all "man" pages (e.g., readmes or actual `man` pages)
+1.  browserify transform to load all "man" pages (e.g., readmes or actual `man` pages)
 
     -   allow help docs to be loaded into a browser for interactive environments
     -   store in local storage (?) or in-memory
 
-52. load modules into a REPL
+1.  load modules into a REPL
 
     -   man pages can be READMES (or not; may require separate `usage.txt` tailored to REPL env)
 
-        -   can these be dynamically compiled/transformed at runtime, or will startup time be too slow
+    -   can these be dynamically compiled/transformed at runtime, or will startup time be too slow
 
-            -   dynamic would be nice, as then would not need to maintain a separate collection of `man` docs
+        -   dynamic would be nice, as then would not need to maintain a separate collection of `man` docs
 
-                -   need some way of determining which modules are exposed in the REPL (could possibly parse the context files a la browserify, find `require` statements, and build), finding their READMEs, transforming, and then building a hash table for printing in the REPL
+            -   need some way of determining which modules are exposed in the REPL (could possibly parse the context files a la browserify, find `require` statements, and build), finding their READMEs, transforming, and then building a hash table for printing in the REPL
 
     -   `help(blas.copy)` (or `help("blas.dcopy")` or `? blas.dcopy` (like Julia))
 
-        -   with `maps`, should be able to use function reference (symbol) as key
+    -   with `maps`, should be able to use function reference (symbol) as key
 
     -   refs
 
@@ -427,14 +387,15 @@
 
     -   should be able to load a REPL context in a browser
 
-        -   meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
-        -   would allow "sharing" a REPL sequence (work in the terminal; load session to browser; generate page; send link/page; recipient load and can start where sender left off)
+    -   meaning, should be able to fairly seamlessly have a session in a terminal which is "transferred" to a browser context, including shell history and, say, charts (ASCII to an SVG equivalent)
+
+    -   would allow "sharing" a REPL sequence (work in the terminal; load session to browser; generate page; send link/page; recipient load and can start where sender left off)
 
     -   [black-screen](https://github.com/shockone/black-screen) terminal emulator
 
     -   see hyperterm
 
-53. README to man doc (see above)
+1.  README to man doc (see above)
 
     -   cannot directly print a raw README, as will contain markup
     -   will need to transform into plain text
@@ -444,55 +405,55 @@
     -   [linux](http://man7.org/linux/man-pages/man7/man-pages.7.html)
     -   [man-n](https://github.com/man-n/man-n)
 
-54. interactive JSON [editor](https://github.com/tidwall/jd)
+1.  interactive JSON [editor](https://github.com/tidwall/jd)
 
-55. [flatson](https://github.com/brycebaril/flatson)
+1.  [flatson](https://github.com/brycebaril/flatson)
 
-56. REPL incremental [json](https://github.com/simeji/jid)
+1.  REPL incremental [json](https://github.com/simeji/jid)
 
-57. `engines` field
+1.  `engines` field
 
     -   have a script which mines the individual `package.json` engine fields and determines, in aggregate, the supported engine range for all pkgs and assign as the engine range for the "aggregate"
     -   can also lint (search pkg deps, check engine field, and see if compatible)
 
-58. consider adding a license prefix to each file
+1.  consider adding a license prefix to each file
 
     -   [julia](https://github.com/JuliaLang/julia/blob/master/contrib/add_license_to_files.jl)
     -   [license-check](https://github.com/magemello/license-check)
 
-59. intro how-tos
+1.  intro how-tos
 
     -   [gifs](https://github.com/chjj/ttystudio)
 
-60. evaluate using [inch](https://github.com/rrrene/inch) for src code documentation evaluation
+1.  evaluate using [inch](https://github.com/rrrene/inch) for src code documentation evaluation
 
-61. link gitter to slack (prob requires a hook server)
+1.  link gitter to slack (prob requires a hook server)
 
-62. investigate [xonsh](https://github.com/scopatz/xonsh)
+1.  investigate [xonsh](https://github.com/scopatz/xonsh)
 
-63. `list-modules` Makefile recipe
+1.  `list-modules` Makefile recipe
 
     -   can be used in conjunction with dep analysis to see which modules are **not** required by a file, etc; e.g., which modules are not included in a namespace.
 
-64. investigate async but [awaitful](https://github.com/ramitos/apr)
+1.  investigate async but [awaitful](https://github.com/ramitos/apr)
 
-65. `list-required-modules` Makefile recipe
+1.  `list-required-modules` Makefile recipe
 
     -   should analyze `require` graph (ala `browserify`) to determine dependencies
     -   should work for a single file or a directory
     -   for directory, may want to dedupe (flat array), a tree result which states which modules require which modules (similar to a node dependency graph), or, for every found module, the deps for that module (array of arrays)
     -   see automation/package.json item below
 
-66. investigate [npm-publish-please](https://github.com/inikulin/publish-please) and `np` (Sindre)
+1.  investigate [npm-publish-please](https://github.com/inikulin/publish-please) and `np` (Sindre)
 
     -   not sure a separate tool is necessary, but may find inspiration
 
-67. REPL startup file, similar to `startup.m`
+1.  REPL startup file, similar to `startup.m`
 
     -   either command-line option or via a REPL config file
     -   could possibly use `configstore`, or something similar, to cache the config
 
-68. [doctest](https://docs.python.org/2/library/doctest.html)
+1.  [doctest](https://docs.python.org/2/library/doctest.html)
 
     -   [jsdoctest](https://github.com/yamadapc/jsdoctest)
     -   [jsdoced.js](https://github.com/jeromeetienne/jsdoced.js)
@@ -505,7 +466,7 @@
     -   [jsmd](https://github.com/vesln/jsmd)
     -   [doctap](https://github.com/vweevers/doctap)
 
-69. to browser (see tools/simple-http-server)
+1.  to browser (see tools/simple-http-server)
 
     -   [bpipe](https://github.com/Marak/bpipe)
     -   [bcat](https://github.com/kessler/node-bcat)
@@ -522,7 +483,7 @@
     -   [st](https://github.com/isaacs/st)
     -   [chart-stream](https://github.com/watson/chart-stream)
 
-70. cross-platform open browser
+1.  cross-platform open browser
 
     -   [biased-opener](https://github.com/jakub-g/biased-opener)
     -   [opener](https://github.com/domenic/opener)
@@ -533,26 +494,26 @@
     -   [open-url](https://github.com/Jam3/open-url/blob/master/index.js)
     -   [broser](https://github.com/juliangruber/broser)
 
-71. ability to run examples in a browser => Makefile target `examples-browser`
+1.  ability to run examples in a browser => Makefile target `examples-browser`
 
     -   can use `simple-http-server` (or even `disposable-http-server`)
     -   [packify](https://github.com/maxogden/packify)
     -   option to stream to multiple browsers (tabs) in parallel (akin to parallel builds)
 
-72. build step which runs examples in browsers and catches any errors
+1.  build step which runs examples in browsers and catches any errors
 
     -   could possibly listen on `window.onerror` to trap uncaught exceptions
     -   setup similar to `testling`, but without needing `TAP` output; basically, do any errors occur or not
     -   will probably need source maps, otherwise will be difficult to debug
     -   as a half-way measure, could intercept `console` method calls, pipe back to server, and then keep a rolling log cache; when an error is received, could stop running examples and print the cache
 
-73. bring [`glob`](https://github.com/isaacs/node-glob) in-house
+1.  bring [`glob`](https://github.com/isaacs/node-glob) in-house
 
-74. review CoC for more community oriented policies
+1.  review CoC for more community oriented policies
 
     -   add note about right to delete offending comments, etc; e.g., [Chakra core](https://github.com/Microsoft/ChakraCore/blob/master/CODE_OF_CONDUCT.md)
 
-75. add JSDoc style guide to JavaScript style guide
+1.  add JSDoc style guide to JavaScript style guide
 
     -   include annotations
 
@@ -567,7 +528,7 @@
         // returns {'a':[1,2,3]}
 
         // Deep equal (mutation):
-        // x => [ 1, 2, 3, 4, 5 ]
+        // x => [ 1.  2, 3, 4, 5 ]
 
         // Deep equal:
         /* returns
@@ -602,8 +563,8 @@
 
         // Deep approximately equal (matrices):
         /* returns
-             mat[':'] = [ ~3.14       0
-                              0   ~3.14 ]
+             mat[':'] = [ ~3.1.    0
+                              0   ~3.1.  ]
         */
 
         // Wildcard (matrices):
@@ -711,11 +672,11 @@
 
     -   need a convention for client-side and server-side only examples
 
-        -   could use `@browseronly` and `@nodejsonly` special annotations, akin to `@private` and `@public`
+    -   could use `@browseronly` and `@nodejsonly` special annotations, akin to `@private` and `@public`
 
-76. electron ui for creating a `stdlib` bundle (could support rollup, webpack, browserify)
+1.  electron ui for creating a `stdlib` bundle (could support rollup, webpack, browserify)
 
-77. for browser REPL, use a virtual filesystem
+1.  for browser REPL, use a virtual filesystem
 
     -   `fs` and other filesystem methods should remain the same
     -   difference is that files are not written to disk, but to, say, IndexedDB
@@ -729,16 +690,16 @@
     -   [browserFS](https://github.com/jvilk/BrowserFS)
     -   [browser-sync-stream](https://github.com/mafintosh/browser-sync-stream)
 
-78. Add Markdown style guide, including notes about comment annotations, equations, etc.
+1.  Add Markdown style guide, including notes about comment annotations, equations, etc.
 
-79. Add note about ES2015 features in JS style guide
+1.  Add note about ES201.  features in JS style guide
 
     -   Backward compatibility is important
     -   Only use if can polyfill
     -   Must provide a polyfill
     -   No compile steps
 
-80. Function matrix across different environments (equivalents)
+1.  Function matrix across different environments (equivalents)
 
     -   matlab
     -   python
@@ -746,29 +707,29 @@
     -   go
     -   r
 
-81. Add type specs to `@stdlib/types/` folder
+1.  Add type specs to `@stdlib/types/` folder
 
     -   `abstract-ndarray`
     -   `abstract-complex`
     -   etc.
 
-82. Add [git hooks](https://cbednarski.com/articles/makefiles-for-everyone/) to Makefile
+1.  Add [git hooks](https://cbednarski.com/articles/makefiles-for-everyone/) to Makefile
 
     -   will prob want a way to undo setting of hooks (i.e., a reset)
     -   [intro to git hooks](https://www.sitepoint.com/introduction-git-hooks/)
     -   [git pre-push](http://blog.ittybittyapps.com/blog/2013/09/03/git-pre-push/)
 
-83. [mkdirp](https://github.com/sindresorhus/make-dir/blob/master/index.js)
+1.  [mkdirp](https://github.com/sindresorhus/make-dir/blob/master/index.js)
 
-84. C/C++ linting
+1.  C/C++ linting
 
     -   [cpplint](https://github.com/nodejs/node/blob/2b541471dbec18dd15bee5d0cc46d39ca708f5dc/tools/cpplint.py): tied to Google Style Guide
 
-85. Julia linting
+1.  Julia linting
 
     -   [lint.jl](https://github.com/tonyhffong/Lint.jl): no apparent CLI (and very slow :|)
 
-86. doc viewer
+1.  doc viewer
 
     -   modified `SimpleHTTPServer` which serves READMEs converted to HTML
     -   for equations, instead of SVG, use MathJax
@@ -778,13 +739,13 @@
     -   how would we annotate for reactive documents? inline comments? spans?
     -   how would we annotate asides/notes? maybe not necessary for standard module READMEs. Possibly via spans.
 
-87. remark-insert-svg-equation plugin
+1.  remark-insert-svg-equation plugin
 
-88. remark-insert-svg-figure plugin
+1.  remark-insert-svg-figure plugin
 
     -   requires codifying a comment markup syntax, which can take inspiration from how equations are documented in Markdown
 
-89. `make init` target
+1.  `make init` target
 
     -   can setup `makie`
     -   if have `make list-cli-modules`, can use `npm link` to install cli utils
@@ -792,11 +753,11 @@
     -   install deps
     -   run tests, test-coverage, benchmarks, lint, etc
 
-90. add a `run.sh` (`build.sh` ?) file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
+1.  add a `run.sh` (`build.sh` ?) file in `test/fixtures`, which would provide a common entry point for running test fixture runners. Currently, need to know the lang to run. And while the name is the same `runner.*`, the procedure for running the scripts is not. A common entry point would abstract away the differences.
 
     -   Delegating to a script would mean that each script would assume aliases (e.g., use `Rscript` to run R code, etc), but could vary depending on the author/host system. In this case, centralization (e.g., having this knowledge in `make` would make more sense).
 
-91. JS style guide
+1.  JS style guide
 
     -   declare functions using function declarations; also include another note about anon functions
     -   use strict section should add notes re: node vs browser
@@ -817,753 +778,753 @@
     -   [principal of least abstraction](https://github.com/habitat-sh/habitat) => part of "The Stdlib Way" (inspired by The Unix Way)
     -   add note about `if(){return;}else{return;}` being unnecessary indentation
 
-92. README link to "live" (e.g., gh-pages) docs (badge)
+1.  README link to "live" (e.g., gh-pages) docs (badge)
 
     -   may also apply in reverse, going from "live" to source
 
-93. check that JSDoc annotations include `@throws`
+1.  check that JSDoc annotations include `@throws`
 
-94. include READMEs in namespace dirs
+1.  include READMEs in namespace dirs
 
-95. need a convention for defining README examples which are for illustration purposes only and not meant to be run
+1.  need a convention for defining README examples which are for illustration purposes only and not meant to be run
 
     -   e.g., an example which is path dependent and cannot be known ahead of time, as it depends on user environment, etc.
 
-96. proposal: add `stdlib` field to `package.json`
+1.  proposal: add `stdlib` field to `package.json`
 
     -   allowing setting whether a module is browser-only, nodejs-only, etc and whether a module is suitable for a REPL context, etc.
 
-97. proposal: add `@sync` and `@async` JSDoc annotations to document synchronous and asynchronous functions, respectively
+1.  proposal: add `@sync` and `@async` JSDoc annotations to document synchronous and asynchronous functions, respectively
 
-98. investigate [`bpkg`](https://github.com/bpkg/bpkg) as a package manager for `bash` scripts
+1.  investigate [`bpkg`](https://github.com/bpkg/bpkg) as a package manager for `bash` scripts
 
     -   could be useful for test runners, etc.
 
-99. investigate [starscope](https://github.com/eapache/starscope)
-
-100.    review
-
-        -   [ ] crypto
-        -   [x] datasets (~bib)
-        -   [x] fs
-        -   [x] math/base/blas
-        -   [ ] math/base/dist
-        -   [x] math/base/random
-        -   [ ] math/base/special
-        -   [ ] math/base/tools
-        -   [ ] math/base/utils
-        -   [x] math/constants
-        -   [ ] math/statistics
-        -   [ ] math/utils
-        -   [ ] ml
-        -   [ ] namespace
-        -   [x] net
-        -   [ ] plot
-        -   [x] regexp
-        -   [x] repl
-        -   [ ] streams (~)
-        -   [ ] string (~)
-        -   [ ] tools (~)
-        -   [ ] utils
-
-101.    profiling
+1.  investigate [starscope](https://github.com/eapache/starscope)
+
+1.  review
+
+    -   [ ] crypto
+    -   [x] datasets (~bib)
+    -   [x] fs
+    -   [x] math/base/blas
+    -   [ ] math/base/dist
+    -   [x] math/base/random
+    -   [ ] math/base/special
+    -   [ ] math/base/tools
+    -   [ ] math/base/utils
+    -   [x] math/constants
+    -   [ ] math/statistics
+    -   [ ] math/utils
+    -   [ ] ml
+    -   [ ] namespace
+    -   [x] net
+    -   [ ] plot
+    -   [x] regexp
+    -   [x] repl
+    -   [ ] streams (~)
+    -   [ ] string (~)
+    -   [ ] tools (~)
+    -   [ ] utils
+
+1.  profiling
 
-        -   [v8-profiler](https://github.com/node-inspector/v8-profiler)
-        -   [node-inspector](https://github.com/node-inspector/node-inspector)
-        -   [node-webkit-agent](https://github.com/c4milo/node-webkit-agent)
-        -   [node-stackvis](https://github.com/joyent/node-stackvis)
-        -   [devtool](https://github.com/Jam3/devtool) ([blog post](https://mattdesl.svbtle.com/debugging-nodejs-in-chrome-devtools))
-        -   [--prof-process](https://nodejs.org/en/docs/guides/simple-profiling/)
-        -   [v8-profiling](http://thlorenz.com/v8-profiling/)
-        -   [chrome://tracing/](https://rjzaworski.com/2014/12/profiling-node-js-on-linux)
-        -   [v8 profiler docs](https://developers.google.com/v8/profiler_example)
-        -   [v8 perf](https://github.com/thlorenz/v8-perf/issues/4)
-        -   [v8 performance profiling](https://github.com/thlorenz/v8-perf/blob/master/performance-profiling.md#v8-performance-profiling)
-        -   [node-tick](https://github.com/sidorares/node-tick)
-        -   [node-tick-processor](https://github.com/drewfish/node-tick-processor)
-        -   [v8 profiling](https://github.com/thlorenz/v8-profiling)
-        -   `make` recipe
-        -   bring the V8 log processor in-house ([tools](https://github.com/v8/v8/tree/master/tools), [wiki](https://github.com/v8/v8/wiki/V8%20Profiler), [outfile](https://bugs.chromium.org/p/chromium/issues/detail?id=432457), [node-tick](https://github.com/sidorares/node-tick))
-        -   [heatline](https://github.com/indutny/heatline)
+    -   [v8-profiler](https://github.com/node-inspector/v8-profiler)
+    -   [node-inspector](https://github.com/node-inspector/node-inspector)
+    -   [node-webkit-agent](https://github.com/c4milo/node-webkit-agent)
+    -   [node-stackvis](https://github.com/joyent/node-stackvis)
+    -   [devtool](https://github.com/Jam3/devtool) ([blog post](https://mattdesl.svbtle.com/debugging-nodejs-in-chrome-devtools))
+    -   [--prof-process](https://nodejs.org/en/docs/guides/simple-profiling/)
+    -   [v8-profiling](http://thlorenz.com/v8-profiling/)
+    -   [chrome://tracing/](https://rjzaworski.com/2014/12/profiling-node-js-on-linux)
+    -   [v8 profiler docs](https://developers.google.com/v8/profiler_example)
+    -   [v8 perf](https://github.com/thlorenz/v8-perf/issues/4)
+    -   [v8 performance profiling](https://github.com/thlorenz/v8-perf/blob/master/performance-profiling.md#v8-performance-profiling)
+    -   [node-tick](https://github.com/sidorares/node-tick)
+    -   [node-tick-processor](https://github.com/drewfish/node-tick-processor)
+    -   [v8 profiling](https://github.com/thlorenz/v8-profiling)
+    -   `make` recipe
+    -   bring the V8 log processor in-house ([tools](https://github.com/v8/v8/tree/master/tools), [wiki](https://github.com/v8/v8/wiki/V8%20Profiler), [outfile](https://bugs.chromium.org/p/chromium/issues/detail?id=432457), [node-tick](https://github.com/sidorares/node-tick))
+    -   [heatline](https://github.com/indutny/heatline)
 
-102.    [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
+1.  [analyzing the dependency network](http://blog.graphcommons.com/analyzing-the-npm-dependency-network/) => should be able to perform a similar analysis internally
 
-103.    sine browser [example](http://www.thesoftwaresimpleton.com/blog/2016/05/25/sine-wave/)
+1.  sine browser [example](http://www.thesoftwaresimpleton.com/blog/2016/05/25/sine-wave/)
 
-        -   could do something similar for other trigonometric functions
+    -   could do something similar for other trigonometric functions
 
-104.    stability badges
+1.  stability badges
 
-        -   may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, stable, locked, or otherwise
-        -   `package.json` field => `"stdlib":{"stability":"experimental"}`
+    -   may be good to have stability badges for methods / modules in order to indicate if a particular API is experimental, stable, locked, or otherwise
+    -   `package.json` field => `"stdlib":{"stability":"experimental"}`
 
-105.    `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
+1.  `makie` (and `make`) target to initialize a module (copy files from snippets to a destination directory)
 
-106.    use [signed commits](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
+1.  use [signed commits](https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work)
 
-107.    string [similarity](https://github.com/tdebatty/java-string-similarity) measures?
+1.  string [similarity](https://github.com/tdebatty/java-string-similarity) measures?
 
-108.    more [datasets](https://github.com/vega/vega-datasets) => some are not that interesting; others possibly
+1.  more [datasets](https://github.com/vega/vega-datasets) => some are not that interesting; others possibly
 
-109.    write own `deep-equal` algo
+1.  write own `deep-equal` algo
 
-        -   when complete, replace any use of `chai` for testing
+    -   when complete, replace any use of `chai` for testing
 
-110.    evaluate [bithound](https://www.bithound.io/pricing)
+1.  evaluate [bithound](https://www.bithound.io/pricing)
 
-111.    utils/copy
+1.  utils/copy
 
-        -   should `preventExtensions`, `seal`, and `freeze` be extended to `objects` beyond `Object`, `Array`, and class instances?
-        -   `WeakMap` support (?) => not convinced this is viable due to weakly held references; i.e., getting a list of `keys` requires maintaining a separate list.
-        -   `WeakSet` support (?) => see `WeakMap` above
-        -   `Symbol` support => requires the ability to get [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
-        -   [structured-clone-algorithm](http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#safe-passing-of-structured-data)
-        -   `ArrayBuffer` support
-        -   `Blob` support
-        -   `FileList` support
-        -   `ImageData` support
-        -   `ImageBitmap` support
-        -   `File` support
+    -   should `preventExtensions`, `seal`, and `freeze` be extended to `objects` beyond `Object`, `Array`, and class instances?
+    -   `WeakMap` support (?) => not convinced this is viable due to weakly held references; i.e., getting a list of `keys` requires maintaining a separate list.
+    -   `WeakSet` support (?) => see `WeakMap` above
+    -   `Symbol` support => requires the ability to get [primitive value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+    -   [structured-clone-algorithm](http://www.w3.org/html/wg/drafts/html/master/infrastructure.html#safe-passing-of-structured-data)
+    -   `ArrayBuffer` support
+    -   `Blob` support
+    -   `FileList` support
+    -   `ImageData` support
+    -   `ImageBitmap` support
+    -   `File` support
 
-112.    research [pull-streams](https://github.com/pull-stream/pull-stream-docs/blob/master/package.json)
+1.  research [pull-streams](https://github.com/pull-stream/pull-stream-docs/blob/master/package.json)
 
-113.    see [makefile for the frontend](https://github.com/scriptype/Makefile-for-the-Front-End/blob/master/Makefile) for possible inspiration for frontend tasks
+1.  see [makefile for the frontend](https://github.com/scriptype/Makefile-for-the-Front-End/blob/master/Makefile) for possible inspiration for frontend tasks
 
-114.    should `float64-signbit` return a `boolean` (like Julia) or a `1` or `0`?
+1.  should `float64-signbit` return a `boolean` (like Julia) or a `1.  or `0`?
 
-115.    licenses utilities
+1.  licenses utilities
 
-        -   [licensee.js](https://github.com/jslicense/licensee.js)
-        -   [license-checker](https://github.com/davglass/license-checker)
-        -   [.licenserc](https://github.com/licenserc/licenserc-specification/blob/master/licenserc.md)
-        -   [licenserc.js](https://github.com/licenserc/licenserc.js)
-        -   [licensing](https://github.com/3rd-Eden/licensing)
-        -   [licenses](https://github.com/3rd-Eden/licenses)
-        -   [licensecheck](https://github.com/marcello3d/node-licensecheck)
-        -   [nlf](https://github.com/iandotkelly/nlf)
-        -   [license-to-fail](https://github.com/behance/license-to-fail)
-        -   [license-list](https://www.gnu.org/licenses/license-list.en.html)
-        -   as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
-        -   recipe to plot license distribution as a bar plot (?) => could be part of public facing docs
+    -   [licensee.js](https://github.com/jslicense/licensee.js)
+    -   [license-checker](https://github.com/davglass/license-checker)
+    -   [.licenserc](https://github.com/licenserc/licenserc-specification/blob/master/licenserc.md)
+    -   [licenserc.js](https://github.com/licenserc/licenserc.js)
+    -   [licensing](https://github.com/3rd-Eden/licensing)
+    -   [licenses](https://github.com/3rd-Eden/licenses)
+    -   [licensecheck](https://github.com/marcello3d/node-licensecheck)
+    -   [nlf](https://github.com/iandotkelly/nlf)
+    -   [license-to-fail](https://github.com/behance/license-to-fail)
+    -   [license-list](https://www.gnu.org/licenses/license-list.en.html)
+    -   as part of public docs, can generate a list of deps and their licenses; can do the same for `stdlib/lib/**` modules, so that all licenses for the individual mods/deps can be viewed together
+    -   recipe to plot license distribution as a bar plot (?) => could be part of public facing docs
 
-116.    investigate [test-all-versions](https://github.com/watson/test-all-versions)
+1.  investigate [test-all-versions](https://github.com/watson/test-all-versions)
 
-117.    [node-cpp](https://github.com/freezer333/nodecpp-demo)
+1.  [node-cpp](https://github.com/freezer333/nodecpp-demo)
 
-118.    [rr](https://github.com/mozilla/rr): record and replay framework
+1.  [rr](https://github.com/mozilla/rr): record and replay framework
 
-119.    Investigate the concept of [markembed](https://github.com/dominictarr/markembed) for embedding content in Markdown files
+1.  Investigate the concept of [markembed](https://github.com/dominictarr/markembed) for embedding content in Markdown files
 
-120.    Use cases for `remark` plugins:
+1.  Use cases for `remark` plugins:
 
-        -   reference management
-        -   conversion to RST
-        -   conversion to HTML
-        -   figure (static) insertion (similar to equations)
-        -   appending/removing sections en masse
+    -   reference management
+    -   conversion to RST
+    -   conversion to HTML
+    -   figure (static) insertion (similar to equations)
+    -   appending/removing sections en masse
 
-121.    [tangle](https://github.com/worrydream/Tangle)
+1.  [tangle](https://github.com/worrydream/Tangle)
 
-122.    GitHub issues as a [blog](https://github.com/0x00A/blog)
+1.  GitHub issues as a [blog](https://github.com/0x00A/blog)
 
-123.    [sync-request](https://github.com/ForbesLindesay/sync-request) => useful for REPL
+1.  [sync-request](https://github.com/ForbesLindesay/sync-request) => useful for REPL
 
-124.    include a [creditcard](https://github.com/bendrucker/creditcards) validation module?
+1.  include a [creditcard](https://github.com/bendrucker/creditcards) validation module?
 
-125.    adventures / workshoppers
+1.  adventures / workshoppers
 
-        -   [regex-adventure](https://github.com/substack/regex-adventure)
-        -   [workshopper-adventure](https://github.com/workshopper/workshopper-adventure)
-        -   [demo-workshopper](https://github.com/linclark/demo-workshopper)
-        -   [adventure](https://github.com/substack/adventure)
-        -   [learnyounode](https://github.com/workshopper/learnyounode)
-        -   [workshopper-exercise](https://github.com/workshopper/workshopper-exercise)
-        -   [stream-adventure](https://github.com/substack/stream-adventure)
-        -   [functional-javascript](https://github.com/timoxley/functional-javascript-workshop/issues/7)
-        -   [p2p-workshop](https://github.com/mafintosh/p2p-workshop)
-        -   [webgl-workshop](https://github.com/stackgl/webgl-workshop)
+    -   [regex-adventure](https://github.com/substack/regex-adventure)
+    -   [workshopper-adventure](https://github.com/workshopper/workshopper-adventure)
+    -   [demo-workshopper](https://github.com/linclark/demo-workshopper)
+    -   [adventure](https://github.com/substack/adventure)
+    -   [learnyounode](https://github.com/workshopper/learnyounode)
+    -   [workshopper-exercise](https://github.com/workshopper/workshopper-exercise)
+    -   [stream-adventure](https://github.com/substack/stream-adventure)
+    -   [functional-javascript](https://github.com/timoxley/functional-javascript-workshop/issues/7)
+    -   [p2p-workshop](https://github.com/mafintosh/p2p-workshop)
+    -   [webgl-workshop](https://github.com/stackgl/webgl-workshop)
 
-126.    build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service. (note: this means that the `master` branch should never run the dep check to ensure up-to-date dependencies; otherwise, `master` could fail for non-test related reasons)
+1.  build script which reruns the latest commit on `develop` each day => helps ensure, even in the absence of fresh commits, that we are testing the environment, etc. Would need to be a cron job triggered from a remotely hosted service. (note: this means that the `master` branch should never run the dep check to ensure up-to-date dependencies; otherwise, `master` could fail for non-test related reasons)
 
-        -   for dep check, build script which acts similar to greenkeeper => creates/updates branch, if check deps fails, auto-installs, runs full build (tests, examples, etc), and checks if fails.
+    -   for dep check, build script which acts similar to greenkeeper => creates/updates branch, if check deps fails, auto-installs, runs full build (tests, examples, etc), and checks if fails.
 
-127.    plot svg components should have factory methods
+1.  plot svg components should have factory methods
 
-128.    investigate [nfty](https://github.com/dschep/ntfy) for sending desktop notifications for long-running commands (e.g., `Makefile` recipes => would need to check if CI environment)
+1.  investigate [nfty](https://github.com/dschep/ntfy) for sending desktop notifications for long-running commands (e.g., `Makefile` recipes => would need to check if CI environment)
 
-129.    Annotations overlay, 
+1.  Annotations overlay, 
 
-        -   `x` values with text
+    -   `x` values with text
 
-130.    Evaluate [check-build](https://github.com/FGRibreau/check-build)
+1.  Evaluate [check-build](https://github.com/FGRibreau/check-build)
 
-131.    Evaluate [rewind](https://github.com/gilesbowkett/rewind)
+1.  Evaluate [rewind](https://github.com/gilesbowkett/rewind)
 
-132.    [iterables](https://github.com/leebyron/iterall)
+1.  [iterables](https://github.com/leebyron/iterall)
 
-133.    [vmd](https://github.com/yoshuawuyts/vmd)
+1.  [vmd](https://github.com/yoshuawuyts/vmd)
 
-134.    [function-plot](https://github.com/maurizzzio/function-plot)
+1.  [function-plot](https://github.com/maurizzzio/function-plot)
 
-135.    see [webtorrent-desktop](https://github.com/feross/webtorrent-desktop) for electron inspiration
+1.  see [webtorrent-desktop](https://github.com/feross/webtorrent-desktop) for electron inspiration
 
-136.    [30-day challenge](https://github.com/wesbos/JavaScript30) => should be able to do sthg akin using stdlib
+1.  [30-day challenge](https://github.com/wesbos/JavaScript30) => should be able to do sthg akin using stdlib
 
-137.    svg components: move `methods/render.js` to `render/index.js`
+1.  svg components: move `methods/render.js` to `render/index.js`
 
-138.    sparkline rug plot
+1.  sparkline rug plot
 
-139.    review stem and leaf unicode plot
+1.  review stem and leaf unicode plot
 
-140.    add unicode sparklines to namespace => requires abstract interface
+1.  add unicode sparklines to namespace => requires abstract interface
 
-141.    refactor plot electron renderer
+1.  refactor plot electron renderer
 
-142.    ability to "plot" [tables](http://metricsgraphicsjs.org/examples.htm#experimental)?
+1.  ability to "plot" [tables](http://metricsgraphicsjs.org/examples.htm#experimental)?
 
-143.    [heatmap](https://github.com/substack/node-heatmap)
+1.  [heatmap](https://github.com/substack/node-heatmap)
 
-144.    Should plot `autoRender` be "opt-in", rather than "opt-out"?
+1.  Should plot `autoRender` be "opt-in", rather than "opt-out"?
 
-145.    [remarkjs](https://github.com/gnab/remark) for Markdown slide shows for workshop slides?
+1.  [remarkjs](https://github.com/gnab/remark) for Markdown slide shows for workshop slides?
 
-        -   [markdown-to-slides](https://github.com/partageit/markdown-to-slides)
-        -   [cleaver](https://github.com/jdan/cleaver)
+    -   [markdown-to-slides](https://github.com/partageit/markdown-to-slides)
+    -   [cleaver](https://github.com/jdan/cleaver)
 
-146.    Visual intro to [machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+1.  Visual intro to [machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 
-147.    Refactor `make` workshops recipes
+1.  Refactor `make` workshops recipes
 
-148.    [mbtaviz](http://mbtaviz.github.io/) and [Github org](https://github.com/mbtaviz)
+1.  [mbtaviz](http://mbtaviz.github.io/) and [Github org](https://github.com/mbtaviz)
 
-149.    create separate discrete and continuous distribution namespaces (at same level as general `dist` namespace)
+1.  create separate discrete and continuous distribution namespaces (at same level as general `dist` namespace)
 
-150.    Investigate [hyperterm](https://github.com/zeit/hyperterm)
+1.  Investigate [hyperterm](https://github.com/zeit/hyperterm)
 
-151.    For AI inspiration, see [here](https://github.com/umgupta/aima-javascript) and [here](https://github.com/aimacode/aima-javascript)
+1.  For AI inspiration, see [here](https://github.com/umgupta/aima-javascript) and [here](https://github.com/aimacode/aima-javascript)
 
-152.    [trymodule](https://github.com/VictorBjelkholm/trymodule)
+1.  [trymodule](https://github.com/VictorBjelkholm/trymodule)
 
-153.    [testron](https://github.com/shama/testron)
+1.  [testron](https://github.com/shama/testron)
 
-154.    [cssstats](https://github.com/cssstats/cssstats)
+1.  [cssstats](https://github.com/cssstats/cssstats)
 
-155.    [math-input](https://github.com/Khan/math-input) and [mathquill](https://github.com/mathquill/mathquill)
+1.  [math-input](https://github.com/Khan/math-input) and [mathquill](https://github.com/mathquill/mathquill)
 
-156.    For Nightingale's rose dataset, generate an SVG figure with code, rather than use a static image
+1.  For Nightingale's rose dataset, generate an SVG figure with code, rather than use a static image
 
-157.    [bats](https://github.com/sstephenson/bats): bash automated testing; could also be useful for testing CLI scripts or [urchin](https://github.com/tlevine/urchin): shell tests
+1.  [bats](https://github.com/sstephenson/bats): bash automated testing; could also be useful for testing CLI scripts or [urchin](https://github.com/tlevine/urchin): shell tests
 
-158.    investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
+1.  investigate using [now](https://zeit.co/now) for deploying demos requiring a Node.js server
 
-159.    Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
+1.  Google trends [data](https://github.com/GoogleTrends/data) => note, this needs to be under an appropriate license before being used (currently unlicensed)
 
-160.    investigate [iron-node](https://github.com/s-a/iron-node)
+1.  investigate [iron-node](https://github.com/s-a/iron-node)
 
-161.    [Sieve of Eratosthenes](http://www.mahabal.io/eras)
+1.  [Sieve of Eratosthenes](http://www.mahabal.io/eras)
 
-162.    files containing `new Buffer` should `var Buffer = require( 'buffer' ).Buffer`. Note that this will prob require overruling a lint rule against redefining globals.
+1.  files containing `new Buffer` should `var Buffer = require( 'buffer' ).Buffer`. Note that this will prob require overruling a lint rule against redefining globals.
 
-163.    See [casual](https://github.com/boo1ean/casual) for dataset inspiration
+1.  See [casual](https://github.com/boo1ean/casual) for dataset inspiration
 
-164.    GitHub issues [Gantt diagrams](https://github.com/neyric/gh-issues-gantt)
+1.  GitHub issues [Gantt diagrams](https://github.com/neyric/gh-issues-gantt)
 
-165.    [gh-board](https://github.com/philschatz/gh-board) - kaban board using GitHub issues
+1.  [gh-board](https://github.com/philschatz/gh-board) - kaban board using GitHub issues
 
-166.    investigate [docstrings](https://github.com/noffle/docstrings): useful or not?
+1.  investigate [docstrings](https://github.com/noffle/docstrings): useful or not?
 
-167.    For running electron tests, see [atom-test-runner](https://github.com/wooorm/atom-tap-test-runner)
+1.  For running electron tests, see [atom-test-runner](https://github.com/wooorm/atom-tap-test-runner)
 
-168.    Add dev guide for developing on windows
+1.  Add dev guide for developing on windows
 
-169.    add a Makefile (and `makie`) recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
+1.  add a Makefile (and `makie`) recipe to show [disk usage](https://github.com/amio/flaming-disk-usage) for a given directory
 
-170.    see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
+1.  see ava.js for supporting docs (e.g., github templates, build scripts, etc) inspiration
 
-171.    create a bot which tails NPM for math related modules
+1.  create a bot which tails NPM for math related modules
 
-172.    bot which tails RSS feeds of select math repos and each day retrieves
+1.  bot which tails RSS feeds of select math repos and each day retrieves
 
-        -   number of stars/watchers
-        -   number of issues (total, open, closed)
-        -   number of commits
-        -   number of contributors
+    -   number of stars/watchers
+    -   number of issues (total, open, closed)
+    -   number of commits
+    -   number of contributors
 
-173.    investigate [pkgfiles](https://github.com/timoxley/pkgfiles) as a dev tool to determine which files will be published to npm
+1.  investigate [pkgfiles](https://github.com/timoxley/pkgfiles) as a dev tool to determine which files will be published to npm
 
-174.    investigate [slow-deps](https://github.com/nolanlawson/slow-deps) as a dev tool to analyze dependency install times
+1.  investigate [slow-deps](https://github.com/nolanlawson/slow-deps) as a dev tool to analyze dependency install times
 
-175.    consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
+1.  consider including [governance](https://github.com/PowerShell/PowerShell/blob/master/docs/community/governance.md) docs
 
-176.    investigate [jailed](https://github.com/asvd/jailed) for running JS code in sandbox (and also vm2)
+1.  investigate [jailed](https://github.com/asvd/jailed) for running JS code in sandbox (and also vm2)
 
-177.    Non-node [platform](https://github.com/bestiejs/platform.js) detection?
+1.  Non-node [platform](https://github.com/bestiejs/platform.js) detection?
 
-178.    may be worth investigating [klipse](https://github.com/viebel/klipse) for live code editing
+1.  may be worth investigating [klipse](https://github.com/viebel/klipse) for live code editing
 
-179.    See if anything good from [here](https://github.com/panzerdp/voca)
+1.  See if anything good from [here](https://github.com/panzerdp/voca)
 
-180.    [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
+1.  [disk](https://www.backblaze.com/blog/hard-drive-reliability-stats-q1-2016/) [drive](https://www.backblaze.com/b2/hard-drive-test-data.html) [data](https://github.com/poofyleek/tensorblaze)
 
-181.    ability to create a [gist](https://github.com/defunkt/gist) from the repl
+1.  ability to create a [gist](https://github.com/defunkt/gist) from the repl
 
-        -   part of tools
-        -   auto browserify scripts? Or create `package.json` which installs individual pkgs
+    -   part of tools
+    -   auto browserify scripts? Or create `package.json` which installs individual pkgs
 
-182.    `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
+1.  `process` as a `stdlib` util (or some other namespaced) module (or maybe, like `cwd`, the individual props as mods)
 
-183.    Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js/V8 specific
+1.  Add tool to detect whether a function can be [optimized](https://github.com/node-modules/optimized) => note that this is Node.js/V8 specific
 
-184.    [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
+1.  [GNU parallel](https://www.gnu.org/software/parallel/man.html) for distributed tasks
 
-185.    [stdout-stream](https://github.com/mafintosh/stdout-stream)
+1.  [stdout-stream](https://github.com/mafintosh/stdout-stream)
 
-186.    investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
+1.  investigate [vm2](https://github.com/patriksimek/vm2) for sandboxing
 
-187.    For `master`, `develop`, and PRs into `master` and `develop`, run full build sequence; for all other branches, is it necessary to run full sequence or just, say, tests? or maybe for other branches, only run tests, examples, benchmarks for files which changed (similar to `git` push hook)?
+1.  For `master`, `develop`, and PRs into `master` and `develop`, run full build sequence; for all other branches, is it necessary to run full sequence or just, say, tests? or maybe for other branches, only run tests, examples, benchmarks for files which changed (similar to `git` push hook)?
 
-188.    Linter for dirnames (akin to filenames)?
+1.  Linter for dirnames (akin to filenames)?
 
-189.    convert filename linter to use plugin architecture?
+1.  convert filename linter to use plugin architecture?
 
-190.    generate random strings based on a [regular expression](https://github.com/fent/randexp.js)
+1.  generate random strings based on a [regular expression](https://github.com/fent/randexp.js)
 
-191.    timed [tape](https://github.com/diasdavid/timed-tape) tests...useful?
+1.  timed [tape](https://github.com/diasdavid/timed-tape) tests...useful?
 
-        -   once `tape` is brought in-house, could make part of the lib
+    -   once `tape` is brought in-house, could make part of the lib
 
-192.    [match-case](https://github.com/wooorm/match-casing)
+1.  [match-case](https://github.com/wooorm/match-casing)
 
-193.    Consider setting up [jenkins](https://jenkins.io/) for CI (notably Windows)
+1.  Consider setting up [jenkins](https://jenkins.io/) for CI (notably Windows)
 
-194.    investigate [mancy](https://github.com/princejwesley/Mancy)
+1.  investigate [mancy](https://github.com/princejwesley/Mancy)
 
-195.    semver regex
+1.  semver regex
 
-196.    Could this [tutorial](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.zc3kqdimf) (and associated tutorials) be made interactive?
+1.  Could this [tutorial](https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.zc3kqdimf) (and associated tutorials) be made interactive?
 
-197.    [fuzzy search](https://github.com/krisk/Fuse)
+1.  [fuzzy search](https://github.com/krisk/Fuse)
 
-198.    Image datasets
+1.  Image datasets
 
-        -   [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
-        -   [tiny images](https://www.cs.toronto.edu/~kriz/cifar.html)
+    -   [birds](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
+    -   [tiny images](https://www.cs.toronto.edu/~kriz/cifar.html)
 
-199.    [dependencyci](https://dependencyci.com/)
+1.  [dependencyci](https://dependencyci.com/)
 
-200.    Consider replacing `testling` with [tape-run](https://github.com/juliangruber/tape-run)
+1.  Consider replacing `testling` with [tape-run](https://github.com/juliangruber/tape-run)
 
-201.    [ccount](https://www.npmjs.com/package/ccount) but generalized to array-like objects
+1.  [ccount](https://www.npmjs.com/package/ccount) but generalized to array-like objects
 
-202.    [tree](http://linux.die.net/man/1/tree)
+1.  [tree](http://linux.die.net/man/1/tree)
 
-203.    [print-object-as-tree](https://github.com/notatestuser/treeify) utility
+1.  [print-object-as-tree](https://github.com/notatestuser/treeify) utility
 
-204.    Consider something like [credits](https://github.com/stefanjudis/credits-cli)
+1.  Consider something like [credits](https://github.com/stefanjudis/credits-cli)
 
-205.    NLP [data](https://confluence.cornell.edu/display/NLP/Data/) (note: ambiguous licensing)
+1.  NLP [data](https://confluence.cornell.edu/display/NLP/Data/) (note: ambiguous licensing)
 
-206.    Fix SOTU raw text where `\&mash;` was converted to a single hyphen `-`
+1.  Fix SOTU raw text where `\&mash;` was converted to a single hyphen `-`
 
-207.    [ASTExplorer](https://github.com/fkling/astexplorer)
+1.  [ASTExplorer](https://github.com/fkling/astexplorer)
 
-208.    Consider using [shrinkpack](https://github.com/JamieMason/shrinkpack) to create reproducible, more reliable, and faster builds in CI environments
+1.  Consider using [shrinkpack](https://github.com/JamieMason/shrinkpack) to create reproducible, more reliable, and faster builds in CI environments
 
-209.    pkg which can generate an Anscombe dataset
+1.  pkg which can generate an Anscombe dataset
 
-210.    [authors-certificate](https://github.com/berneout/authors-certificate)
+1.  [authors-certificate](https://github.com/berneout/authors-certificate)
 
-211.    FAQ: what is decomposable software?
+1.  FAQ: what is decomposable software?
 
-212.    Electoral college [box scores](https://www.archives.gov/federal-register/electoral-college/scores.html#1789)
+1.  Electoral college [box scores](https://www.archives.gov/federal-register/electoral-college/scores.html#1789)
 
-213.    Electoral college votes [by state](https://www.archives.gov/federal-register/electoral-college/votes/votes_by_state.html)
+1.  Electoral college votes [by state](https://www.archives.gov/federal-register/electoral-college/votes/votes_by_state.html)
 
-214.    `datapackage.json` [schemas](https://github.com/frictionlessdata/schemas)
+1.  `datapackage.json` [schemas](https://github.com/frictionlessdata/schemas)
 
-215.    Does `is-typed-array` need to address symbol [toStringTag](https://github.com/ljharb/is-typed-array/blob/master/index.js)? Ditto for [which-typed-array](https://github.com/ljharb/which-typed-array)?
+1.  Does `is-typed-array` need to address symbol [toStringTag](https://github.com/ljharb/is-typed-array/blob/master/index.js)? Ditto for [which-typed-array](https://github.com/ljharb/which-typed-array)?
 
-        => yes
+    -   yes
 
-216.    single-line-stream
+1.  single-line-stream
 
-217.    [snippet-stream](https://github.com/mafintosh/snippet-stream)
+1.  [snippet-stream](https://github.com/mafintosh/snippet-stream)
 
-218.    [gcc-explorer](https://github.com/mattgodbolt/gcc-explorer)
+1.  [gcc-explorer](https://github.com/mattgodbolt/gcc-explorer)
 
-219.    password datasets [1](https://github.com/skyzyx/bad-passwords) and [2](https://github.com/danielmiessler/SecLists)
+1.  password datasets [1](https://github.com/skyzyx/bad-passwords) and [2](https://github.com/danielmiessler/SecLists)
 
-220.    [is-utf8](https://github.com/wayfind/is-utf8/blob/master/is-utf8.js), [is-valid-utf8](http://stackoverflow.com/questions/28270310/how-to-easily-detect-utf8-encoding-in-the-string), [strip-bom-buf](https://github.com/sindresorhus/strip-bom-buf/blob/master/index.js), [strip-bom-stream](https://github.com/sindresorhus/strip-bom-stream/blob/master/index.js), [has-bom](https://github.com/jonschlinkert/has-bom/blob/master/index.js)
+1.  [is-utf8](https://github.com/wayfind/is-utf8/blob/master/is-utf8.js), [is-valid-utf8](http://stackoverflow.com/questions/28270310/how-to-easily-detect-utf8-encoding-in-the-string), [strip-bom-buf](https://github.com/sindresorhus/strip-bom-buf/blob/master/index.js), [strip-bom-stream](https://github.com/sindresorhus/strip-bom-stream/blob/master/index.js), [has-bom](https://github.com/jonschlinkert/has-bom/blob/master/index.js)
 
-221.    [read-glob](https://github.com/shinnn/node-read-glob)
+1.  [read-glob](https://github.com/shinnn/node-read-glob)
 
-222.    bring `minimist` in-house
+1.  bring `minimist` in-house
 
-        -   <https://github.com/lukeed/mri>
+    -   <https://github.com/lukeed/mri>
 
-223.    bring `JSON.parse` in-house to provide better error messages. Can default to native and, on error, re-parse with userland implementation to provide more extensive error messaging.
+1.  bring `JSON.parse` in-house to provide better error messages. Can default to native and, on error, re-parse with userland implementation to provide more extensive error messaging.
 
-224.    see [static-eval](https://github.com/substack/static-eval)
+1.  see [static-eval](https://github.com/substack/static-eval)
 
-225.    [farmers market geo data](https://catalog.data.gov/dataset/farmers-markets-geographic-data)
+1.  [farmers market geo data](https://catalog.data.gov/dataset/farmers-markets-geographic-data)
 
-226.    [perf](https://github.com/nodejs/node/blob/master/lib/path.js) improvements for `dirname` and `extname`.
+1.  [perf](https://github.com/nodejs/node/blob/master/lib/path.js) improvements for `dirname` and `extname`.
 
-227.    A constrained RegExp [implementation](https://swtch.com/~rsc/regexp/regexp1.html)?
+1.  A constrained RegExp [implementation](https://swtch.com/~rsc/regexp/regexp1.html)?
 
-228.    [noderify](https://github.com/dominictarr/noderify) and [depject](https://github.com/dominictarr/depject) -> static linking for JavaScript
+1.  [noderify](https://github.com/dominictarr/noderify) and [depject](https://github.com/dominictarr/depject) -> static linking for JavaScript
 
-229.    [`fs-walk`](https://github.com/coolaj86/node-walk) (see also [`os.walk`](https://docs.python.org/3/library/os.html#os.walk)); [`fs-walk-folder-tree`](https://github.com/overlookmotel/walk-folder-tree); [`module-walker`](https://github.com/kaelzhang/module-walker)
+1.  [`fs-walk`](https://github.com/coolaj86/node-walk) (see also [`os.walk`](https://docs.python.org/3/library/os.html#os.walk)); [`fs-walk-folder-tree`](https://github.com/overlookmotel/walk-folder-tree); [`module-walker`](https://github.com/kaelzhang/module-walker)
 
-230.    [readdirp](https://github.com/thlorenz/readdirp), mkdirp, rmdirp, etc.
+1.  [readdirp](https://github.com/thlorenz/readdirp), mkdirp, rmdirp, etc.
 
-231.    dependency docs (static site; use simple server)
+1.  dependency docs (static site; use simple server)
 
-232.    mk recipe to read a dep readme and launch in an electron window/browser
+1.  mk recipe to read a dep readme and launch in an electron window/browser
 
-233.    nlp levi dist (see also [damlev](https://github.com/WatchBeam/damlev) and [leven](https://github.com/sindresorhus/leven/blob/master/index.js))
+1.  nlp levi dist (see also [damlev](https://github.com/WatchBeam/damlev) and [leven](https://github.com/sindresorhus/leven/blob/master/index.js))
 
-234.    [travis-deploy-example](https://github.com/bcoe/travis-deploy-example)
+1.  [travis-deploy-example](https://github.com/bcoe/travis-deploy-example)
 
-235.    [reserved words](http://www.javascripter.net/faq/reserved.htm) and [reserved words](https://mathiasbynens.be/notes/reserved-keywords) and [keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
+1.  [reserved words](http://www.javascripter.net/faq/reserved.htm) and [reserved words](https://mathiasbynens.be/notes/reserved-keywords) and [keywords](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar)
 
-236.    a branch (based on `master`) which every month is run against every single Node version since `0.10.0` (may want a separate Jenkins server for this)
+1.  a branch (based on `master`) which every month is run against every single Node version since `0.10.0` (may want a separate Jenkins server for this)
 
-237.    Given an import-require tree, should be able to statically detect cyclic deps and flag
+1.  Given an import-require tree, should be able to statically detect cyclic deps and flag
 
-238.    pkg keyword force/network diagram where edges are pkgs and nodes are keywords
+1.  pkg keyword force/network diagram where edges are pkgs and nodes are keywords
 
-239.    Anything [worthwhile](http://documentcloud.github.io/underscore-contrib)?
+1.  Anything [worthwhile](http://documentcloud.github.io/underscore-contrib)?
 
-240.    [working remotely](https://github.com/lenazun/working-remotely) adapted for project communication
+1.  [working remotely](https://github.com/lenazun/working-remotely) adapted for project communication
 
-241.    [node-help](https://github.com/foundling/node-help): repl docs
+1.  [node-help](https://github.com/foundling/node-help): repl docs
 
-242.    [RFCs docs](https://github.com/yarnpkg/rfcs)
+1.  [RFCs docs](https://github.com/yarnpkg/rfcs)
 
-243.    [envify](https://github.com/hughsk/envify) => when browserifying environment dependent tests to be run in the browser, can use to inline env vars
+1.  [envify](https://github.com/hughsk/envify) => when browserifying environment dependent tests to be run in the browser, can use to inline env vars
 
-244.    [naming conventions](https://github.com/JuliaPraxis/Naming)
+1.  [naming conventions](https://github.com/JuliaPraxis/Naming)
 
-245.    [Tyche](https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf) prng
+1.  [Tyche](https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf) prng
 
-246.    typed array [binary string](https://github.com/AndreasMadsen/binary-view/blob/master/binary-view.js)
+1.  typed array [binary string](https://github.com/AndreasMadsen/binary-view/blob/master/binary-view.js)
 
-247.    [JS interpreter](https://github.com/NeilFraser/JS-Interpreter) and [hotswapping interpreter](https://github.com/thomasballinger/hotswapping-js-interp)
+1.  [JS interpreter](https://github.com/NeilFraser/JS-Interpreter) and [hotswapping interpreter](https://github.com/thomasballinger/hotswapping-js-interp)
 
-248.    [chunkify](https://github.com/compute-io/chunkify), [buffer](https://www.mathworks.com/help/signal/ref/buffer.html), [split](http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.split.html), [splitVec](https://www.mathworks.com/matlabcentral/fileexchange/24255-consecutive-vector-spliter/content/SplitVec.m)
+1.  [chunkify](https://github.com/compute-io/chunkify), [buffer](https://www.mathworks.com/help/signal/ref/buffer.html), [split](http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.split.html), [splitVec](https://www.mathworks.com/matlabcentral/fileexchange/24255-consecutive-vector-spliter/content/SplitVec.m)
 
-249.    should http/s-server support graceful shutdown? If so, should update some of the tests which had to manually close connections
+1.  should http/s-server support graceful shutdown? If so, should update some of the tests which had to manually close connections
 
-250.    [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
+1.  [parseBibTeX](https://github.com/mikolalysenko/bibtex-parser)
 
-251.    [more images](https://github.com/heyalexej/awesome-images): good photos of cats, interesting features for training models, etc
+1.  [more images](https://github.com/heyalexej/awesome-images): good photos of cats, interesting features for training models, etc
 
-252.    git stats
+1.  git stats
 
-        -   [churn](https://gist.github.com/coreyhaines/829932)
-        -   [churn](https://github.com/danmayer/churn)
-        -   [code-maat](https://github.com/adamtornhill/code-maat)
-        -   [GitHub analysis](https://github.com/StephenOTT/GitHub-Analytics)
-        -   [git-quick-stats](https://github.com/arzzen/git-quick-stats/blob/master/git-quick-stats)
+    -   [churn](https://gist.github.com/coreyhaines/829932)
+    -   [churn](https://github.com/danmayer/churn)
+    -   [code-maat](https://github.com/adamtornhill/code-maat)
+    -   [GitHub analysis](https://github.com/StephenOTT/GitHub-Analytics)
+    -   [git-quick-stats](https://github.com/arzzen/git-quick-stats/blob/master/git-quick-stats)
 
-253.    link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
+1.  link [checking](https://github.com/golang/go/blob/master/misc/linkcheck/linkcheck.go)
 
-254.    [lru](https://github.com/rsms/js-lru) and [node-lru](https://github.com/isaacs/node-lru-cache)
+1.  [lru](https://github.com/rsms/js-lru) and [node-lru](https://github.com/isaacs/node-lru-cache)
 
-255.    [commitizen](https://github.com/commitizen/cz-cli): in place of `git commit`
+1.  [commitizen](https://github.com/commitizen/cz-cli): in place of `git commit`
 
-        -   See also [lint](https://github.com/marionebl/conventional-changelog-lint)
-        -   [angular convention](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md)
+    -   See also [lint](https://github.com/marionebl/conventional-changelog-lint)
+    -   [angular convention](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md)
 
-256.    [mem](https://github.com/sindresorhus/mem)
+1.  [mem](https://github.com/sindresorhus/mem)
 
-257.    [once](https://github.com/sindresorhus/onetime/blob/master/index.js)
+1.  [once](https://github.com/sindresorhus/onetime/blob/master/index.js)
 
-258.    [json-depth-stream](https://github.com/indutny/json-depth-stream)
+1.  [json-depth-stream](https://github.com/indutny/json-depth-stream)
 
-259.    [is-iso-8601](https://github.com/ankane/chartkick.js/blob/master/chartkick.js#L59)
+1.  [is-iso-8601](https://github.com/ankane/chartkick.js/blob/master/chartkick.js#L59)
 
-260.    Generate a [diff](https://github.com/FormidableLabs/publish-diff) before publishing to `npm`
+1.  Generate a [diff](https://github.com/FormidableLabs/publish-diff) before publishing to `npm`
 
-261.    loc per language over time (requires investigating repo at each commit; `git log`, extract commit hash, checkout each hash, run script, move to next hash, etc) => use Node to manage async
+1.  loc per language over time (requires investigating repo at each commit; `git log`, extract commit hash, checkout each hash, run script, move to next hash, etc) => use Node to manage async
 
-262.    classifying commits based on commit message [keywords](http://www.inf.usi.ch/faculty/lanza/Downloads/Hatt2008a.pdf)
+1.  classifying commits based on commit message [keywords](http://www.inf.usi.ch/faculty/lanza/Downloads/Hatt2008a.pdf)
 
-263.    Determine a means to distinguish source code, comments, and empty lines when computing SLOC
+1.  Determine a means to distinguish source code, comments, and empty lines when computing SLOC
 
-        -   use to derive a [comment-to-source ratio](https://pdfs.semanticscholar.org/b576/916388512085f74065dd42aa0ffe3690b8f3.pdf)
-        -   can extend to source-to-test ratio
+    -   use to derive a [comment-to-source ratio](https://pdfs.semanticscholar.org/b576/916388512085f74065dd42aa0ffe3690b8f3.pdf)
+    -   can extend to source-to-test ratio
 
-264.    AWK hist fcn
+1.  AWK hist fcn
 
-265.    [colormap](https://github.com/bpostlethwaite/colormap)
+1.  [colormap](https://github.com/bpostlethwaite/colormap)
 
-266.    bring `tape` in-house
+1.  bring `tape` in-house
 
-267.    lint bib for duplicate ids. If identified, need to search for all references using duplicate ids and disambiguate/update
+1.  lint bib for duplicate ids. If identified, need to search for all references using duplicate ids and disambiguate/update
 
-        -   tool to allow searching for author name and return list of refs with identifier so an author can easily find an identifier without needing to search the raw bib file.
-        -   requires bib parser
+    -   tool to allow searching for author name and return list of refs with identifier so an author can easily find an identifier without needing to search the raw bib file.
+    -   requires bib parser
 
-268.    [power-divergence](https://github.com/scipy/scipy/blob/master/scipy/stats/stats.py) and other associated tests
+1.  [power-divergence](https://github.com/scipy/scipy/blob/master/scipy/stats/stats.py) and other associated tests
 
-269.    for each push, run an analysis to determine if any SLOC changed. If only comments and/or docs, don't run unit tests.
+1.  for each push, run an analysis to determine if any SLOC changed. If only comments and/or docs, don't run unit tests.
 
-        => may still want to run linting of docs and, e.g., JSDoc comments
+    -   may still want to run linting of docs and, e.g., JSDoc comments
 
-270.    batch generation of exponential [RVs](http://www.nrbook.com/devroye/Devroye_files/chapter_five.pdf)?
+1.  batch generation of exponential [RVs](http://www.nrbook.com/devroye/Devroye_files/chapter_five.pdf)?
 
-271.    [lowercase](https://github.com/blakeembrey/lower-case/blob/master/lower-case.js), [no-case](https://github.com/blakeembrey/no-case/blob/master/no-case.js), [param-case](https://github.com/blakeembrey/param-case)
+1.  [lowercase](https://github.com/blakeembrey/lower-case/blob/master/lower-case.js), [no-case](https://github.com/blakeembrey/no-case/blob/master/no-case.js), [param-case](https://github.com/blakeembrey/param-case)
 
-272.    life expectancy by [country](https://gist.github.com/ivanku/00d2520ba6d92daf97e50d9ebc6eb4cd)
+1.  life expectancy by [country](https://gist.github.com/ivanku/00d2520ba6d92daf97e50d9ebc6eb4cd)
 
-273.    robust [arithmetic](https://github.com/mikolalysenko/robust-arithmetic-notes)?
+1.  robust [arithmetic](https://github.com/mikolalysenko/robust-arithmetic-notes)?
 
-274.    stable JSON [stringify](https://github.com/substack/json-stable-stringify)
+1.  stable JSON [stringify](https://github.com/substack/json-stable-stringify)
 
-275.    [fuzzyset](https://github.com/Glench/fuzzyset.js)
+1.  [fuzzyset](https://github.com/Glench/fuzzyset.js)
 
-276.    [async-memoize](http://caolan.github.io/async/memoize.js.html#line11)
+1.  [async-memoize](http://caolan.github.io/async/memoize.js.html#line11)
 
-277.    [Sieve of Erastothenes](https://rosettacode.org/wiki/Sieve_of_Eratosthenes#JavaScript), [stack overflow](http://stackoverflow.com/questions/15471291/sieve-of-eratosthenes-algorithm-in-javascript-running-endless-for-large-number), [Sieve of Atkin](https://en.wikipedia.org/wiki/Sieve_of_Atkin), [Sieve of Sundaram](https://en.wikipedia.org/wiki/Sieve_of_Sundaram)
+1.  [Sieve of Erastothenes](https://rosettacode.org/wiki/Sieve_of_Eratosthenes#JavaScript), [stack overflow](http://stackoverflow.com/questions/15471291/sieve-of-eratosthenes-algorithm-in-javascript-running-endless-for-large-number), [Sieve of Atkin](https://en.wikipedia.org/wiki/Sieve_of_Atkin), [Sieve of Sundaram](https://en.wikipedia.org/wiki/Sieve_of_Sundaram)
 
-278.    [prime decomposition](https://en.wikipedia.org/wiki/Integer_factorization#Prime_decomposition)
+1.  [prime decomposition](https://en.wikipedia.org/wiki/Integer_factorization#Prime_decomposition)
 
-279.    fast [algos](http://www.machinedlearnings.com/2011/06/fast-approximate-logarithm-exponential.html), [fastpow](http://fulla.fnal.gov/acml/html/pow.html), [CORDIC](https://en.wikipedia.org/wiki/CORDIC), [trig](http://stackoverflow.com/questions/345085/how-do-trigonometric-functions-work/394512#394512), [math-prims](https://github.com/jhjourdan/SIMD-math-prims), [ACML](http://fulla.fnal.gov/acml/html/Simple.html#Simple), [l2approx](http://krisgarrett.net/papers/l2approx.pdf), [fast approx](http://onlinelibrary.wiley.com/doi/10.1002/spe.4380070212/abstract), [fast and accurate sine and cosine](http://forum.devmaster.net/t/fast-and-accurate-sine-cosine/9648/104), [rosetta commons](https://www.rosettacommons.org/manuals/archive/rosetta_2015.02.57538_user_guide/utilities/d0/da4/fast__math_8hh.html#aa94354bb29c4c2b9d0daacffbcb2990d), [jmonkeyengine](https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-core/src/main/java/com/jme3/math/FastMath.java), [fmath](https://github.com/herumi/fmath/), [fastermath](https://github.com/akohlmey/fastermath), [SkipCTS](https://github.com/mgbellemare/SkipCTS/tree/master/src), see also Julia fastmath
+1.  fast [algos](http://www.machinedlearnings.com/2011/06/fast-approximate-logarithm-exponential.html), [fastpow](http://fulla.fnal.gov/acml/html/pow.html), [CORDIC](https://en.wikipedia.org/wiki/CORDIC), [trig](http://stackoverflow.com/questions/345085/how-do-trigonometric-functions-work/394512#394512), [math-prims](https://github.com/jhjourdan/SIMD-math-prims), [ACML](http://fulla.fnal.gov/acml/html/Simple.html#Simple), [l2approx](http://krisgarrett.net/papers/l2approx.pdf), [fast approx](http://onlinelibrary.wiley.com/doi/10.1002/spe.4380070212/abstract), [fast and accurate sine and cosine](http://forum.devmaster.net/t/fast-and-accurate-sine-cosine/9648/104), [rosetta commons](https://www.rosettacommons.org/manuals/archive/rosetta_2015.02.57538_user_guide/utilities/d0/da4/fast__math_8hh.html#aa94354bb29c4c2b9d0daacffbcb2990d), [jmonkeyengine](https://github.com/jMonkeyEngine/jmonkeyengine/blob/master/jme3-core/src/main/java/com/jme3/math/FastMath.java), [fmath](https://github.com/herumi/fmath/), [fastermath](https://github.com/akohlmey/fastermath), [SkipCTS](https://github.com/mgbellemare/SkipCTS/tree/master/src), see also Julia fastmath
 
-280.    [mobius-function](https://en.wikipedia.org/wiki/M%C3%B6bius_function)
+1.  [mobius-function](https://en.wikipedia.org/wiki/M%C3%B6bius_function)
 
-281.    [phi function](http://stackoverflow.com/questions/1024640/calculating-phik-for-1kn)
+1.  [phi function](http://stackoverflow.com/questions/1024640/calculating-phik-for-1kn)
 
-282.    [chart-csv](https://github.com/watson/chart-csv)
+1.  [chart-csv](https://github.com/watson/chart-csv)
 
-283.    Consider more specialized folders for `base/special` packages (see MATLAB's [functionlist](https://www.mathworks.com/help/matlab/functionlist.html))
+1.  Consider more specialized folders for `base/special` packages (see MATLAB's [functionlist](https://www.mathworks.com/help/matlab/functionlist.html))
 
-284.    [geometric brownian motion](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
+1.  [geometric brownian motion](https://en.wikipedia.org/wiki/Geometric_Brownian_motion)
 
-285.    [allong.es](https://github.com/raganwald/allong.es) and [ramda](http://ramdajs.com/) for functional inspiration
+1.  [allong.es](https://github.com/raganwald/allong.es) and [ramda](http://ramdajs.com/) for functional inspiration
 
-286.    as part of the repo dashboard, a plot of build volatility per branch (pull data from various CI)
+1.  as part of the repo dashboard, a plot of build volatility per branch (pull data from various CI)
 
-287.    [deep-freeze](https://github.com/substack/deep-freeze)
+1.  [deep-freeze](https://github.com/substack/deep-freeze)
 
-288.    [to-source](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L887)
+1.  [to-source](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L887)
 
-289.    data [structures](https://github.com/LukeLin/js-stl)
+1.  data [structures](https://github.com/LukeLin/js-stl)
 
-290.    during decomposition, each pkg has own gh-pages branch and each README HTML should have a tree menu linking to other pkg repo docs. Requires tree menu tool to support a tree having links, rather than inferring from dirs.
+1.  during decomposition, each pkg has own gh-pages branch and each README HTML should have a tree menu linking to other pkg repo docs. Requires tree menu tool to support a tree having links, rather than inferring from dirs.
 
-291.    [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
+1.  [inspect-code](https://github.com/derhuerst/inspect-code) and [vm2](https://github.com/patriksimek/vm2) and [browser-module-sandbox](https://github.com/maxogden/browser-module-sandbox/blob/master/index.js)
 
-292.    compute [bus factor](https://arxiv.org/pdf/1604.06766v1.pdf) over time 
+1.  compute [bus factor](https://arxiv.org/pdf/1604.06766v1.pdf) over time 
 
-293.    compute [degree-of-authorship](https://arxiv.org/pdf/1604.06766v1.pdf)
+1.  compute [degree-of-authorship](https://arxiv.org/pdf/1604.06766v1.pdf)
 
-294.    Integrate [IRHydra](https://github.com/mraleph/irhydra) as part of dev toolset
+1.  Integrate [IRHydra](https://github.com/mraleph/irhydra) as part of dev toolset
 
-295.    Jaccard [similarity](https://github.com/anvaka/git-also/blob/master/lib/computeSimilarities.js) for git commits
+1.  Jaccard [similarity](https://github.com/anvaka/git-also/blob/master/lib/computeSimilarities.js) for git commits
 
-296.    [ulp](https://en.wikipedia.org/wiki/Unit_in_the_last_place), [ulp](https://www.mathworks.com/matlabcentral/answers/135291-can-i-compare-two-numbers-using-unit-in-the-last-place-ulps-in-matlab), [ulp](https://gist.github.com/jfalcou/5154861), [ulp](http://stackoverflow.com/questions/21371063/ulps-calculation-in-goldberg-paper), [float-distance](https://github.com/boostorg/math/blob/develop/include/boost/math/special_functions/next.hpp)
+1.  [ulp](https://en.wikipedia.org/wiki/Unit_in_the_last_place), [ulp](https://www.mathworks.com/matlabcentral/answers/135291-can-i-compare-two-numbers-using-unit-in-the-last-place-ulps-in-matlab), [ulp](https://gist.github.com/jfalcou/5154861), [ulp](http://stackoverflow.com/questions/21371063/ulps-calculation-in-goldberg-paper), [float-distance](https://github.com/boostorg/math/blob/develop/include/boost/math/special_functions/next.hpp)
 
-297.    PRNG [test](https://github.com/dartino/sdk/blob/master/src/shared/random_test.cc) to check for bit correlation
+1.  PRNG [test](https://github.com/dartino/sdk/blob/master/src/shared/random_test.cc) to check for bit correlation
 
-298.    [styledoc](https://github.com/documentationjs/styledoc) for documenting CSS
+1.  [styledoc](https://github.com/documentationjs/styledoc) for documenting CSS
 
-299.    chakra node build
+1.  chakra node build
 
-300.    See [float-hacks](https://github.com/leegao/float-hacks) for possible "fast" and/or approximate math algos
+1.  See [float-hacks](https://github.com/leegao/float-hacks) for possible "fast" and/or approximate math algos
 
-301.    [treemap](https://bl.ocks.org/mbostock/8fe6fa6ed1fa976e5dd76cfa4d816fec) to visualize source
+1.  [treemap](https://bl.ocks.org/mbostock/8fe6fa6ed1fa976e5dd76cfa4d816fec) to visualize source
 
-302.    [configuration store](https://github.com/sethvincent/configuration-store/blob/master/index.js)
+1.  [configuration store](https://github.com/sethvincent/configuration-store/blob/master/index.js)
 
-303.    [binary-extract](https://github.com/juliangruber/binary-extract/blob/master/index.js)
+1.  [binary-extract](https://github.com/juliangruber/binary-extract/blob/master/index.js)
 
-304.    test [images](https://github.com/image-js/test)
+1.  test [images](https://github.com/image-js/test)
 
-305.    [is-online](https://github.com/sindresorhus/is-online/blob/master/index.js)
+1.  [is-online](https://github.com/sindresorhus/is-online/blob/master/index.js)
 
-306.    Compute the [half-life](https://erikbern.com/2016/12/05/the-half-life-of-code.html) of code (months) (see [Julia](https://discourse.julialang.org/t/run-the-half-life-of-code-analysis-on-julia/763)) => interesting extension would be per author
+1.  Compute the [half-life](https://erikbern.com/2016/12/05/the-half-life-of-code.html) of code (months) (see [Julia](https://discourse.julialang.org/t/run-the-half-life-of-code-analysis-on-julia/763)) => interesting extension would be per author
 
-307.    evaluate [fastapprox](https://github.com/whackashoe/fastapprox/tree/master/fastapprox) (see also node [bindings](https://github.com/monkey2000/node-fastapprox/blob/master/src/approx.cc))
+1.  evaluate [fastapprox](https://github.com/whackashoe/fastapprox/tree/master/fastapprox) (see also node [bindings](https://github.com/monkey2000/node-fastapprox/blob/master/src/approx.cc))
 
-308.    See [gitql](https://github.com/cloudson/gitql) and [textql](https://github.com/dinedal/textql)
+1.  See [gitql](https://github.com/cloudson/gitql) and [textql](https://github.com/dinedal/textql)
 
-309.    Another way of determining number of pkgs/tools over time is to clone repo, checkout each commit, and run analysis
+1.  Another way of determining number of pkgs/tools over time is to clone repo, checkout each commit, and run analysis
 
-310.    use git blame to determine loc per auth per pkg
+1.  use git blame to determine loc per auth per pkg
 
-311.    [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
+1.  [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
 
-312.    approx [cbrt](http://www.hackersdelight.org/hdcodetxt/acbrt.c.txt) and fast cbrt
+1.  approx [cbrt](http://www.hackersdelight.org/hdcodetxt/acbrt.c.txt) and fast cbrt
 
-313.    crypto non-crypto hash function [djb2](http://www.cse.yorku.ca/~oz/hash.html) and [here](https://github.com/darkskyapp/string-hash) (may also be interesting to implement others)
+1.  crypto non-crypto hash function [djb2](http://www.cse.yorku.ca/~oz/hash.html) and [here](https://github.com/darkskyapp/string-hash) (may also be interesting to implement others)
 
-314.    Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
+1.  Investigate [vintage-streams](https://github.com/mafintosh/vintage-streams)
 
-315.    regular expression [generation](https://github.com/devongovett/regexgen)
+1.  regular expression [generation](https://github.com/devongovett/regexgen)
 
-316.    ability to search for issues from [CLI](https://github.com/seanzarrin/npm-issues) for deps/pkgs
+1.  ability to search for issues from [CLI](https://github.com/seanzarrin/npm-issues) for deps/pkgs
 
-317.    WYSIWYG Markdown editor for internal rendered Markdown files
+1.  WYSIWYG Markdown editor for internal rendered Markdown files
 
-        -   different rendering modes (GitHub, www, etc)
-        -   save to disk
-        -   load from pkg dir
-        -   communicate over socket (some tasks may be capable of being done entirely client side)
-        -   live linting (md, code blocks)
-        -   eqn rendering
-        -   fig gen
-        -   live code blocks
-        -   see dillinger (joe mccann)
-        -   markdown to JSDoc comment (e.g., for writing up math implementation details in source code)
+    -   different rendering modes (GitHub, www, etc)
+    -   save to disk
+    -   load from pkg dir
+    -   communicate over socket (some tasks may be capable of being done entirely client side)
+    -   live linting (md, code blocks)
+    -   eqn rendering
+    -   fig gen
+    -   live code blocks
+    -   see dillinger (joe mccann)
+    -   markdown to JSDoc comment (e.g., for writing up math implementation details in source code)
 
-318.    Similar [concept](https://github.com/rougier/from-python-to-numpy) once ndarrays?
+1.  Similar [concept](https://github.com/rougier/from-python-to-numpy) once ndarrays?
 
-319.    See [quantifiedcode](https://www.quantifiedcode.com/) ([software map](https://en.wikipedia.org/wiki/Software_map))
+1.  See [quantifiedcode](https://www.quantifiedcode.com/) ([software map](https://en.wikipedia.org/wiki/Software_map))
 
-320.    US/UK spelling [variations](https://github.com/alexcorvi/spelling-variations)
+1.  US/UK spelling [variations](https://github.com/alexcorvi/spelling-variations)
 
-321.    RNN [demo](http://distill.pub/2016/handwriting/), [demo](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/), [tutorial](https://github.com/hardmaru/rnn-tutorial)
+1.  RNN [demo](http://distill.pub/2016/handwriting/), [demo](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/), [tutorial](https://github.com/hardmaru/rnn-tutorial)
 
-322.    ESLint [plugin](https://github.com/amilajack/eslint-plugin-compat) for browser compat
+1.  ESLint [plugin](https://github.com/amilajack/eslint-plugin-compat) for browser compat
 
-323.    [jot](https://github.com/JoshData/jot)
+1.  [jot](https://github.com/JoshData/jot)
 
-324.    [cars dataset](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+1.  [cars dataset](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
-325.    [plain-text-data-to-json](https://github.com/wooorm/plain-text-data-to-json)
+1.  [plain-text-data-to-json](https://github.com/wooorm/plain-text-data-to-json)
 
-326.    [package-use](https://github.com/rvagg/package-use)
+1.  [package-use](https://github.com/rvagg/package-use)
 
-327.    contributor [graphs](https://githubreportcard.reflect.io/)
+1.  contributor [graphs](https://githubreportcard.reflect.io/)
 
-328.    investigate [threads](https://github.com/andywer/threads.js)
+1.  investigate [threads](https://github.com/andywer/threads.js)
 
-329.    [glmatrix](https://github.com/toji/gl-matrix)
+1.  [glmatrix](https://github.com/toji/gl-matrix)
 
-330.    nat lang date/time [parser](https://github.com/olebedev/when)
+1.  nat lang date/time [parser](https://github.com/olebedev/when)
 
-331.    Consider adding Dockerfile(s) (repl, workshop, etc)
+1.  Consider adding Dockerfile(s) (repl, workshop, etc)
 
-        => applies mainly to server based applications
+    -   applies mainly to server based applications
 
-332.    [itermplot](https://github.com/daleroberts/itermplot)
+1.  [itermplot](https://github.com/daleroberts/itermplot)
 
-333.    [diacritics-map](https://github.com/jonschlinkert/diacritics-map)
+1.  [diacritics-map](https://github.com/jonschlinkert/diacritics-map)
 
-334.    problematic [strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+1.  problematic [strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 
-335.    [xstream](https://github.com/staltz/xstream)
+1.  [xstream](https://github.com/staltz/xstream)
 
-336.    fivethirtyeight [data](https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw)
+1.  fivethirtyeight [data](https://github.com/rudeboybert/fivethirtyeight/tree/master/data-raw)
 
-337.    Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
+1.  Blog/tutorial [inspiration](http://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) using gov't data
 
-338.    consider using [Stryker](https://github.com/stryker-mutator/stryker) for mutation testing
+1.  consider using [Stryker](https://github.com/stryker-mutator/stryker) for mutation testing
 
-339.    [syncsplit](https://github.com/mcollina/syncsplit) and [syncthrough](https://github.com/mcollina/syncthrough)
+1.  [syncsplit](https://github.com/mcollina/syncsplit) and [syncthrough](https://github.com/mcollina/syncthrough)
 
-340.    [iterative solvers](https://github.com/JuliaMath/IterativeSolvers.jl)
+1.  [iterative solvers](https://github.com/JuliaMath/IterativeSolvers.jl)
 
-341.    should blas.dasum use [pairwise summation](https://en.wikipedia.org/wiki/Pairwise_summation)?
+1.  should blas.dasum use [pairwise summation](https://en.wikipedia.org/wiki/Pairwise_summation)?
 
-342.    [array-lru](https://github.com/mafintosh/array-lru)
+1.  [array-lru](https://github.com/mafintosh/array-lru)
 
-343.    Fortran style guide
+1.  Fortran style guide
 
-        -   [CCSM](http://www.cesm.ucar.edu/working_groups/Software/dev_guide/dev_guide/node7.html)
-        -   Modern Fortran [examples](http://flibs.sourceforge.net/examples_modern_fortran.html)
+    -   [CCSM](http://www.cesm.ucar.edu/working_groups/Software/dev_guide/dev_guide/node7.html)
+    -   Modern Fortran [examples](http://flibs.sourceforge.net/examples_modern_fortran.html)
 
-344.    [oec](http://atlas.media.mit.edu/en/resources/data/) data
+1.  [oec](http://atlas.media.mit.edu/en/resources/data/) data
 
-345.    bring Buffer polyfill in-house (will either need to include Object polyfill or be paired with a typed array polyfill to support older environments)
+1.  bring Buffer polyfill in-house (will either need to include Object polyfill or be paired with a typed array polyfill to support older environments)
 
-346.    consider [prebuildify](https://github.com/mafintosh/prebuildify) and [node-gyp-build](https://github.com/mafintosh/node-gyp-build)
+1.  consider [prebuildify](https://github.com/mafintosh/prebuildify) and [node-gyp-build](https://github.com/mafintosh/node-gyp-build)
 
-347.    determine feature detection strategy (i.e., when do we rely on an existing (optimized) BLAS implementation? when do we compile ourselves?)
+1.  determine feature detection strategy (i.e., when do we rely on an existing (optimized) BLAS implementation? when do we compile ourselves?)
 
-348.    determine strategy for using existing optimized BLAS
+1.  determine strategy for using existing optimized BLAS
 
-349.    Issue rank [dashboard](https://github.com/mapbox/top-issues)
+1.  Issue rank [dashboard](https://github.com/mapbox/top-issues)
 
-350.    Use of `now` to create a microservice [api](https://github.com/aunyks/newton-api)
+1.  Use of `now` to create a microservice [api](https://github.com/aunyks/newton-api)
 
-351.    WASM at [autodesk](https://www.autodeskresearch.com/blog/look-web-assembly-and-molecular-analysis)
+1.  WASM at [autodesk](https://www.autodeskresearch.com/blog/look-web-assembly-and-molecular-analysis)
 
-352.    [nlp-corpus](https://github.com/nlp-compromise/nlp-corpus)
+1.  [nlp-corpus](https://github.com/nlp-compromise/nlp-corpus)
 
-353.    [data structures](https://github.com/Yomguithereal/mnemonist)
+1.  [data structures](https://github.com/Yomguithereal/mnemonist)
 
-354.    command [exists](https://github.com/mathisonian/command-exists/blob/master/lib/command-exists.js)
+1.  command [exists](https://github.com/mathisonian/command-exists/blob/master/lib/command-exists.js)
 
-355.    [fmt-obj](https://github.com/queckezz/fmt-obj)
+1.  [fmt-obj](https://github.com/queckezz/fmt-obj)
 
-356.    [pretty-format](https://www.npmjs.com/package/pretty-format)
+1.  [pretty-format](https://www.npmjs.com/package/pretty-format)
 
-357.    [memo](https://github.com/feross/memo)
+1.  [memo](https://github.com/feross/memo)
 
-358.    REPL chat bot (could, e.g., use AWS lambda)
+1.  REPL chat bot (could, e.g., use AWS lambda)
 
-        -   similar to `?` or `help`, could have a chat prefix
-        -   or could enter chat mode; to exit, user must type keyword (e.g., "bye", "ttyl", etc)
-        -   translate NL queries to doc searches (e.g., how do I plot in the terminal? how do I set the x-axis label?)
-        -   could rely entirely on local code, but using sthg like AWS would allow collecting usage statistics (e.g., what types are queries are most common, etc)
+    -   similar to `?` or `help`, could have a chat prefix
+    -   or could enter chat mode; to exit, user must type keyword (e.g., "bye", "ttyl", etc)
+    -   translate NL queries to doc searches (e.g., how do I plot in the terminal? how do I set the x-axis label?)
+    -   could rely entirely on local code, but using sthg like AWS would allow collecting usage statistics (e.g., what types are queries are most common, etc)
 
-359.    integrate collection of REPL usage statistics (opt-in)
+1.  integrate collection of REPL usage statistics (opt-in)
 
-        -   provide disclaimer regarding metrics collected, etc
-        -   point to source code so people can inspect themselves
+    -   provide disclaimer regarding metrics collected, etc
+    -   point to source code so people can inspect themselves
 
-360.    kill [processes](https://github.com/sindresorhus/fkill)
+1.  kill [processes](https://github.com/sindresorhus/fkill)
 
-361.    open [datasets](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.is7rq5s3y)
+1.  open [datasets](https://medium.com/startup-grind/fueling-the-ai-gold-rush-7ae438505bc2#.is7rq5s3y)
 
-362.    ML in other [languages](https://burakkanber.com/blog/machine-learning-in-other-languages-introduction/)
+1.  ML in other [languages](https://burakkanber.com/blog/machine-learning-in-other-languages-introduction/)
 
-363.    Seeing [theory](http://students.brown.edu/seeing-theory/)
+1.  Seeing [theory](http://students.brown.edu/seeing-theory/)
 
-364.    [random string](https://github.com/klughammer/node-randomstring)
+1.  [random string](https://github.com/klughammer/node-randomstring)
 
-365.    Stanford JS [crypto](https://github.com/bitwiseshiftleft/sjcl)
+1.  Stanford JS [crypto](https://github.com/bitwiseshiftleft/sjcl)
 
-366.    [spatial index](https://github.com/mourner/geokdbush)
+1.  [spatial index](https://github.com/mourner/geokdbush)
 
-367.    [named-regexp](https://github.com/edvinv/named-js-regexp/blob/master/lib/named-js-regexp.js)
+1.  [named-regexp](https://github.com/edvinv/named-js-regexp/blob/master/lib/named-js-regexp.js)
 
-368.    [load-test](https://github.com/kgryte/load-test)
+1.  [load-test](https://github.com/kgryte/load-test)
 
-369.    [100 exercises](https://github.com/rougier/numpy-100)
+1.  [100 exercises](https://github.com/rougier/numpy-100)
 
-370.    [prngs](https://medium.freecodecamp.com/a-brief-history-of-random-numbers-9498737f5b6c) and [clustering algorithms](https://medium.freecodecamp.com/how-machines-make-sense-of-big-data-an-introduction-to-clustering-algorithms-4bd97d4fbaba)
+1.  [prngs](https://medium.freecodecamp.com/a-brief-history-of-random-numbers-9498737f5b6c) and [clustering algorithms](https://medium.freecodecamp.com/how-machines-make-sense-of-big-data-an-introduction-to-clustering-algorithms-4bd97d4fbaba)
 
-371.    [zlib](https://github.com/nodeca/pako/tree/master/lib/zlib): both JS and native add-on
+1.  [zlib](https://github.com/nodeca/pako/tree/master/lib/zlib): both JS and native add-on
 
-        -   [tar.gz](https://github.com/alanhoff/node-tar.gz)
-        -   [browserify-zlib](https://github.com/devongovett/browserify-zlib)
-        -   [node-tar](https://github.com/npm/node-tar)
-        -   [bzip2](https://en.wikipedia.org/wiki/Bzip2)
+    -   [tar.gz](https://github.com/alanhoff/node-tar.gz)
+    -   [browserify-zlib](https://github.com/devongovett/browserify-zlib)
+    -   [node-tar](https://github.com/npm/node-tar)
+    -   [bzip2](https://en.wikipedia.org/wiki/Bzip2)
 
-372.    [is-gzip](https://github.com/kevva/is-gzip/blob/master/index.js)
+1.  [is-gzip](https://github.com/kevva/is-gzip/blob/master/index.js)
 
-373.    [punycode](https://github.com/bestiejs/punycode.js)
+1.  [punycode](https://github.com/bestiejs/punycode.js)
 
-374.    an interactive [version](http://ww2.amstat.org/publications/jse/v13n2/vonhippel.html)
+1.  an interactive [version](http://ww2.amstat.org/publications/jse/v13n2/vonhippel.html)
 
-375.    in-house prez [framework](https://github.com/jdan/cleaver)
+1.  in-house prez [framework](https://github.com/jdan/cleaver)
 
-376.    investigate [pkg](https://github.com/zeit/pkg) for creating a single binary executable
+1.  investigate [pkg](https://github.com/zeit/pkg) for creating a single binary executable
 
-377.    a built-in terminal-to-gif recorder
+1.  a built-in terminal-to-gif recorder
 
-378.    [headless screenshots](https://github.com/schnerd/chrome-headless-screenshots)
+1.  [headless screenshots](https://github.com/schnerd/chrome-headless-screenshots)
 
-379.    Generating [random integers](http://dimitri.xyz/random-ints-from-random-bits/)
+1.  Generating [random integers](http://dimitri.xyz/random-ints-from-random-bits/)
 
-380.    Add a destroy [method](https://github.com/hunterloftis/stoppable) to http/s servers
+1.  Add a destroy [method](https://github.com/hunterloftis/stoppable) to http/s servers
 
-381.    Browser workshop framework (similar to Google Codelabs)
+1.  Browser workshop framework (similar to Google Codelabs)
 
 * * *
 
@@ -1571,26 +1532,22 @@
 
 1.  simple server
 
-2.  abstract-ndarray
+1.  abstract-ndarray
 
-3.  terminal sparklines
+1.  terminal sparklines
 
     -   toJSON => needs chart spec
-
     -   colors
-
-        -   [ansi-256-colors](https://github.com/jbnicolai/ansi-256-colors)
-        -   would require escaping to work in the browser
-        -   [ansi_up](https://github.com/drudru/ansi_up)
-        -   [ansi-to-html](https://github.com/rburns/ansi-to-html)
-        -   but could also detect env and use ansi escape when in terminal mode and use HTML elsewhere (?) => no, too brittle.
-        -   maybe this should just be a user concern
-
+    -   [ansi-256-colors](https://github.com/jbnicolai/ansi-256-colors)
+    -   would require escaping to work in the browser
+    -   [ansi_up](https://github.com/drudru/ansi_up)
+    -   [ansi-to-html](https://github.com/rburns/ansi-to-html)
+    -   but could also detect env and use ansi escape when in terminal mode and use HTML elsewhere (?) => no, too brittle.
+    -   maybe this should just be a user concern
     -   support ndarrays
+    -   dimension, only 1d?
 
-        -   dimension, only 1d?
-
-4.  basic stream utilities
+1.  basic stream utilities
 
     -   make `utils/debug` a standard stream (cli `name` option; does this module need split and join?)
     -   split => tests
@@ -1618,13 +1575,13 @@
     -   [xhr-write-stream](https://github.com/substack/xhr-write-stream)
     -   [utf8-stream](https://github.com/substack/utf8-stream)
 
-5.  kmeans/dbscan
+1.  kmeans/dbscan
 
-6.  blas routines
+1.  blas routines
 
-7.  all built-in `Math` methods
+1.  all built-in `Math` methods
 
-8.  kde
+1.  kde
 
     -   [scipy](https://github.com/scipy/scipy/blob/v0.17.1/scipy/stats/kde.py#L41-L537)
     -   [smith](https://github.com/Daniel-B-Smith/KDE-for-SciPy)
@@ -1634,13 +1591,13 @@
     -   [scikit-learn](http://scikit-learn.org/stable/modules/density.html)
     -   [wikipedia](https://en.wikipedia.org/wiki/Kernel_density_estimation)
 
-9.  hist
+1.  hist
 
     -   [Matlab deprecates hist and histc](http://www.mathworks.com/help/matlab/creating_plots/replace-discouraged-instances-of-hist-and-histc.html)
     -   [histogram](http://www.mathworks.com/help/matlab/ref/histogram.html)
     -   [histcounts](http://www.mathworks.com/help/matlab/ref/histcounts.html)
 
-10. csv/tsv/dsv
+1.  csv/tsv/dsv
 
     -   [d3-dsv](https://github.com/d3/d3-dsv)
     -   [node-csv](https://github.com/wdavidw/node-csv)
@@ -1656,38 +1613,38 @@
 
 1.  plot cli (requires `split`)
 
-2.  rects
+1.  rects
 
     -   x
     -   y
     -   orientation: vert, horz
     -   width calc'd via `x[i+1]-x[i]`
 
-3.  xAxis, yAxis -> true/false; whether to create or not
+1.  xAxis, yAxis -> true/false; whether to create or not
 
-4.  xExtendedTicks?
+1.  xExtendedTicks?
 
-5.  validation; instead of a sep validator folder, when providing an object, just set the props to validate; also allows moving etc files to prop folders
+1.  validation; instead of a sep validator folder, when providing an object, just set the props to validate; also allows moving etc files to prop folders
 
-6.  line -> area
+1.  line -> area
 
-7.  readme
+1.  readme
 
-8.  svg components: move `methods/render.js` to `render/index.js`
+1.  svg components: move `methods/render.js` to `render/index.js`
 
-9.  refactor plot electron renderer
+1.  refactor plot electron renderer
 
-10. Should plot `autoRender` be "opt-in", rather than "opt-out"?
+1.  Should plot `autoRender` be "opt-in", rather than "opt-out"?
 
-11. plot svg components should have factory methods
+1.  plot svg components should have factory methods
 
-12. provided index to `isDefined`
+1.  provided index to `isDefined`
 
-13. setting properties should only trigger a `change` event when the desired value is different from the existing value
+1.  setting properties should only trigger a `change` event when the desired value is different from the existing value
 
-14. Sort properties/options in alphabetical order
+1.  Sort properties/options in alphabetical order
 
-15. Add intro description to each component (e.g., annotations, defs, ...) stating purpose and use case
+1.  Add intro description to each component (e.g., annotations, defs, ...) stating purpose and use case
 
 * * *
 
@@ -1700,58 +1657,58 @@
 ## Pub
 
 1.  decomposable software
-2.  multiple build systems
-3.  broken math
-4.  backward compatibility (and countertrends)
-5.  The REPL (why matters)
-6.  mining git repos
-7.  open open source reporting
-8.  what can be done at standards level to better facilitate math
+1.  multiple build systems
+1.  broken math
+1.  backward compatibility (and countertrends)
+1.  The REPL (why matters)
+1.  mining git repos
+1.  open open source reporting
+1.  what can be done at standards level to better facilitate math
 
 * * *
 
 ## Modules
 
-6.  incrspace
+1.  incrspace
 
-7.  linspace, logspace, incrspace as generators (?)
+1.  linspace, logspace, incrspace as generators (?)
 
     -   should support option to return data of a specified type; e.g., `float32`, etc.
     -   returned value should be compliant with `abstract-ndarray`
 
-8.  remainder (c) and rem
+1.  remainder (c) and rem
 
-9.  equivalents to various low-level [Julia](http://docs.julialang.org/en/release-0.5/stdlib/math/?highlight=maximum#Base.mod2pi) funcs
+1.  equivalents to various low-level [Julia](http://docs.julialang.org/en/release-0.5/stdlib/math/?highlight=maximum#Base.mod2pi) funcs
 
-10. blas routines
+1.  blas routines
 
-11. [fmod](https://github.com/JuliaLang/openlibm/blob/master/src/e_fmod.c)
+1.  [fmod](https://github.com/JuliaLang/openlibm/blob/master/src/e_fmod.c)
 
-12. [remquo](https://github.com/JuliaLang/openlibm/blob/master/src/s_remquo.c)
+1.  [remquo](https://github.com/JuliaLang/openlibm/blob/master/src/s_remquo.c)
 
-13. [svg2png](https://github.com/domenic/svg2png) without promises and cleaner
+1.  [svg2png](https://github.com/domenic/svg2png) without promises and cleaner
 
     -   [svgexport](https://github.com/shakiba/svgexport)
 
-14. [is-class](https://github.com/miguelmota/is-class/blob/master/is-class.js)
+1.  [is-class](https://github.com/miguelmota/is-class/blob/master/is-class.js)
 
-15. [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
+1.  [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
-16. rem_pio2
+1.  rem_pio2
 
-17. stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
+1.  stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 
-18. [hdbscan](https://github.com/lmcinnes/hdbscan)
+1.  [hdbscan](https://github.com/lmcinnes/hdbscan)
 
-19. number theory fcns (see starred repo)
+1.  number theory fcns (see starred repo)
 
-20. str manip [utils](https://github.com/dleitee/strman)
+1.  str manip [utils](https://github.com/dleitee/strman)
 
-21. Avogadro's number
+1.  Avogadro's number
 
-22. Add credit card fraud [data](https://github.com/ellisvalentiner/credit-card-fraud)
+1.  Add credit card fraud [data](https://github.com/ellisvalentiner/credit-card-fraud)
 
-23. testing for
+1.  testing for
 
     -   `sin`
     -   `ln`
@@ -1759,94 +1716,94 @@
     -   `sqrt`
     -   `tan` 
 
-24. [fibo](https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.62tfusajl)
+1.  [fibo](https://medium.com/javascript-scene/7-surprising-things-i-learned-writing-a-fibonacci-generator-4886a5c87710#.62tfusajl)
 
     -   lookup
 
-25. [scalbn](https://github.com/freebsd/freebsd/blob/master/lib/msun/src/s_scalbn.c)
+1.  [scalbn](https://github.com/freebsd/freebsd/blob/master/lib/msun/src/s_scalbn.c)
 
     -   [cppreference](http://en.cppreference.com/w/c/numeric/math/scalbn)
     -   how would the `FLOAT_RADIX` be supplied?
 
-26. int32-to-uint32
+1.  int32-to-uint32
 
-27. [fast](https://golang.org/src/math/pow.go) pow
+1.  [fast](https://golang.org/src/math/pow.go) pow
 
     -   may need to research
     -   integer variant from V8
 
-28. [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
+1.  [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
 
-29. [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
+1.  [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
 
-30. global var detection
+1.  global var detection
 
-31. feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
+1.  feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
 
-32. port `https-server`
+1.  port `https-server`
 
-33. pipe viewer
+1.  pipe viewer
 
     -   [node-pv](https://github.com/juliangruber/node-pv/blob/master/index.js)
     -   [blog](http://www.catonmat.net/blog/unix-utilities-pipe-viewer/)
 
-34. [downloads-folder](https://github.com/juliangruber/downloads-folder) along with `tmpdir`, `homedir`, etc
+1.  [downloads-folder](https://github.com/juliangruber/downloads-folder) along with `tmpdir`, `homedir`, etc
 
-35. next-tick
+1.  next-tick
 
     -   [polyfill](https://github.com/defunctzombie/node-process/blob/master/browser.js)
 
-36. linux utility equivalents
+1.  linux utility equivalents
 
     -   cat, mv, rm, ls, touch, etc.
     -   allow for swapping out when using browser virtual filesystem, allowing isomorphic apps (although, filesystem data would prob not be copied to browser)
 
-37. [file-type](https://github.com/sindresorhus/file-type)
+1.  [file-type](https://github.com/sindresorhus/file-type)
 
     -   break into separate mods `is-pdf-file`, etc.
 
-38. move `is-uri` main regex to separate module? Would allow for capturing parts of the scheme. Needs evaluating.
+1.  move `is-uri` main regex to separate module? Would allow for capturing parts of the scheme. Needs evaluating.
 
-39. `kmeans` as an `EventEmitter`
+1.  `kmeans` as an `EventEmitter`
 
-40. bring `debug` in-house; see also [diagnostics](https://github.com/bigpipe/diagnostics)
+1.  bring `debug` in-house; see also [diagnostics](https://github.com/bigpipe/diagnostics)
 
-41. [colorscales](https://github.com/bpostlethwaite/colormap)
+1.  [colorscales](https://github.com/bpostlethwaite/colormap)
 
-42. [datasets](https://github.com/fivethirtyeight/data)
+1.  [datasets](https://github.com/fivethirtyeight/data)
 
-43. utility to convert R `DESCRIPTION` files to JSON => would streamline getting test fixture R dependencies
+1.  utility to convert R `DESCRIPTION` files to JSON => would streamline getting test fixture R dependencies
 
     -   [R docs](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#The-DESCRIPTION-file)
     -   [debian control files](https://www.debian.org/doc/debian-policy/ch-controlfields.html)
     -   [debian-control-parser](https://github.com/samcday/node-debian-control-parser)
     -   [readcontrol](https://github.com/evanlucas/node-readcontrol)
 
-44. accumulators
+1.  accumulators
 
     -   [boost src](https://github.com/boostorg/accumulators/blob/develop/include/boost/accumulators/statistics/mean.hpp)
     -   [boost docs](http://www.boost.org/doc/libs/1_61_0/doc/html/accumulators/user_s_guide.html#accumulators.user_s_guide.the_statistical_accumulators_library)
     -   [handystats](http://handystats.readthedocs.io/en/latest/incremental-statistics.html)
 
-45. [discretize](http://www.mathworks.com/help/matlab/ref/discretize.html)
+1.  [discretize](http://www.mathworks.com/help/matlab/ref/discretize.html)
 
-46. [gmm](https://github.com/rreusser/gaussian-mixture-estimator)
+1.  [gmm](https://github.com/rreusser/gaussian-mixture-estimator)
 
-47. incrmkurtosis (windowed)
+1.  incrmkurtosis (windowed)
 
-48. incrmskewness (windowed)
+1.  incrmskewness (windowed)
 
-49. [buffer-indexof](https://github.com/soldair/node-buffer-indexof) and [buffer-split](https://github.com/soldair/node-buffer-split/blob/master/index.js) => see issues
+1.  [buffer-indexof](https://github.com/soldair/node-buffer-indexof) and [buffer-split](https://github.com/soldair/node-buffer-split/blob/master/index.js) => see issues
 
-50. base math `swap` (assume array-like) and generics `swap` (check for array-like)
+1.  base math `swap` (assume array-like) and generics `swap` (check for array-like)
 
-51. [online stats](https://github.com/joshday/OnlineStats.jl)
+1.  [online stats](https://github.com/joshday/OnlineStats.jl)
 
-52. hex to ascii
+1.  hex to ascii
 
-53. arc4 cipher as a stream
+1.  arc4 cipher as a stream
 
-54. `float64-to-hex`
+1.  `float64-to-hex`
 
     -   [double-hex](https://github.com/mikolalysenko/double-hex)
     -   [raw fields of float](http://www.exploringbinary.com/displaying-the-raw-fields-of-a-floating-point-number/)
@@ -1855,37 +1812,37 @@
     -   [Python float.hex](https://docs.python.org/3/library/stdtypes.html#float.hex)
     -   [hex floating-point constants](http://www.exploringbinary.com/hexadecimal-floating-point-constants/)
 
-55. [object inspector](https://github.com/substack/object-inspect); also, Node.js `utils.inspect`
+1.  [object inspector](https://github.com/substack/object-inspect); also, Node.js `utils.inspect`
 
-56. [object diffing](https://github.com/substack/difflet)
+1.  [object diffing](https://github.com/substack/difflet)
 
-57. `random/uuid`; various versions
+1.  `random/uuid`; various versions
 
-58. [custom](https://github.com/Raynos/error) error classes
+1.  [custom](https://github.com/Raynos/error) error classes
 
-59. [S&P 500 dataset](https://github.com/datasets/s-and-p-500)
+1.  [S&P 500 dataset](https://github.com/datasets/s-and-p-500)
 
-60. sort methods, both numeric and general
+1.  sort methods, both numeric and general
 
-61. [is-symbol](https://github.com/ljharb/is-symbol/blob/master/index.js)
+1.  [is-symbol](https://github.com/ljharb/is-symbol/blob/master/index.js)
 
-62. [is-callable](https://github.com/ljharb/is-callable/blob/master/index.js)
+1.  [is-callable](https://github.com/ljharb/is-callable/blob/master/index.js)
 
-63. [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js) and [awesome](https://github.com/keonkim/awesome-bits)
+1.  [bithacks](http://graphics.stanford.edu/~seander/bithacks.html) and [twiddle](https://github.com/mikolalysenko/bit-twiddle/blob/master/twiddle.js) and [awesome](https://github.com/keonkim/awesome-bits)
 
-64. [download](https://github.com/watson/download-to-file)
+1.  [download](https://github.com/watson/download-to-file)
 
-65. [md5](https://github.com/blueimp/JavaScript-MD5/blob/master/js/md5.js)
+1.  [md5](https://github.com/blueimp/JavaScript-MD5/blob/master/js/md5.js)
 
-66. [murmurhash](https://github.com/garycourt/murmurhash-js)
+1.  [murmurhash](https://github.com/garycourt/murmurhash-js)
 
-67. [deque](https://github.com/petkaantonov/deque) and [denque](https://github.com/Salakar/denque)
+1.  [deque](https://github.com/petkaantonov/deque) and [denque](https://github.com/Salakar/denque)
 
-68. date [fcns](https://github.com/date-fns/date-fns) and [zeitgeist](https://github.com/webpapaya/zeitgeist.js)
+1.  date [fcns](https://github.com/date-fns/date-fns) and [zeitgeist](https://github.com/webpapaya/zeitgeist.js)
 
-69. [ulid](https://github.com/oklog/ulid)
+1.  [ulid](https://github.com/oklog/ulid)
 
-70. [titlecase](https://github.com/rvagg/titlecase)
+1.  [titlecase](https://github.com/rvagg/titlecase)
 
 * * *
 
@@ -1897,7 +1854,7 @@
     -   [boost](http://www.boost.org/doc/libs/1_61_0/doc/html/boost_units.html)
     -   [rust](https://github.com/tiffany352/rink-rs)
 
-2.  Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
+1.  Interesting mod => [potrace](https://github.com/tooolbox/node-potrace)
 
 * * *
 
@@ -1919,40 +1876,32 @@
 1.  when testing numeric code, would be interesting to test against multiple platforms (ala test fixtures); e.g., Julia, Python, R, Go, Boost, etc.
 
     -   ability to run against multiple versions of alternative platforms
-
     -   compare results for each alternative platform version
-
-        -   would allow flagging regressions or improvements in the implementations of other platforms
-
+    -   would allow flagging regressions or improvements in the implementations of other platforms
     -   would be part of a comprehensive CI before publishing
-
-        -   suppose could also be done at the individual module level during separation
-
+    -   suppose could also be done at the individual module level during separation
     -   generate plots showing results across all platforms
 
-2.  a tool which reports which paths are **not** imported by a file
+1.  a tool which reports which paths are **not** imported by a file
 
     -   use case is ensuring that modules which should be exported by an aggregate file are exported
 
-3.  for JSDoc docs, ability to run benchmarks for any given method
+1.  for JSDoc docs, ability to run benchmarks for any given method
 
     -   UI button to run benchmark
-
     -   per method/module/etc (similar to having a button to view source)
-
     -   would allow users to test the relatively speed of pathways within a function; e.g., for `erf`, how fast do particular input values compare to other input values?
+    -   note: naive benchmarks would only provide a single value => `erf(10)`; but this approach is flawed. Need to cover a range of values; otherwise, you could be testing a special case!
+    -   would allow another avenue for crowdsourcing benchmarks
 
-        -   note: naive benchmarks would only provide a single value => `erf(10)`; but this approach is flawed. Need to cover a range of values; otherwise, you could be testing a special case!
-        -   would allow another avenue for crowdsourcing benchmarks
-
-4.  if every module wrapped as a stream, then, via linking, terminal becomes a REPL
+1.  if every module wrapped as a stream, then, via linking, terminal becomes a REPL
 
     -   ability to invoke with arg
 
         ```bash
         $ erf 5
         <number>
-        $ erf 5 19 13 1
+        $ erf 5 1.  13 1
         <number>\n<number>\n... (could have option to specify delimiter)
         ```
 
@@ -1965,9 +1914,9 @@
 
     -   may want to prefix with `stdlib-<fcn>` to avoid conflicts with built-ins
 
-        -   tools script could crawl the project and auto create aliases and links
+    -   tools script could crawl the project and auto create aliases and links
 
-5.  for modules like generic stats functions which may accept a variety of inputs requiring tailored implementations, instead of dynamic code generation, another possibility is to dynamically compile static code and write to disk
+1.  for modules like generic stats functions which may accept a variety of inputs requiring tailored implementations, instead of dynamic code generation, another possibility is to dynamically compile static code and write to disk
 
     -   would allow static analysis
     -   easier debugging, as can set breakpoints, etc. => some inspectors support using a pragma to allow debugging `eval`'d code, thus debugging is possible as is; nevertheless, visual inspection is easier if non-compiled
@@ -1998,42 +1947,32 @@ Will need a `tools` directory in individual repositories to
 1.  Populate individual module contributors automatically by extracting author info from `git` commits?
 
     -   main author could be populated based on highest number of commits? most changes? responsible for most lines of code?
+    -   most lines of code may be best heuristic as likely that the author is thus most knowledgeable/owns the most code
+    -   over time the main author could change...is this a problem? => prob not, as the new author should be most familiar with the relevant code
 
-        -   most lines of code may be best heuristic as likely that the author is thus most knowledgeable/owns the most code
-        -   over time the main author could change...is this a problem? => prob not, as the new author should be most familiar with the relevant code
+1.  populate scripts similarly for all modules
 
-2.  populate scripts similarly for all modules
+1.  augment `keywords` with universal project `keywords`
 
-3.  augment `keywords` with universal project `keywords`
+1.  can add `testling` config, if needed
 
-4.  can add `testling` config, if needed
+1.  populate git urls based on destination repo
 
-5.  populate git urls based on destination repo
-
-6.  should be able to scan module code to determine dev and main deps and add them to the `package.json` based on what is installed in the main repo
+1.  should be able to scan module code to determine dev and main deps and add them to the `package.json` based on what is installed in the main repo
 
     -   [dependency-check](https://github.com/maxogden/dependency-check)
-
-        -   uses `node-detective`
-
+    -   uses `node-detective`
     -   [node-detective](https://github.com/substack/node-detective)
-
-        -   apparently relies on outdated mods, but may still work
-
+    -   apparently relies on outdated mods, but may still work
     -   [node-source-walk](https://github.com/mrjoelkemp/node-source-walk)
-
-        -   uses more recent `acorn` version
-
+    -   uses more recent `acorn` version
     -   if a dependency is already included in the `package.json`, keep that dependency, thus allowing local override of a dependency
-
-        -   how will that work in terms of dep install within the context of the larger project?
-        -   [module-deps](https://github.com/substack/module-deps)
-
+    -   how will that work in terms of dep install within the context of the larger project?
+    -   [module-deps](https://github.com/substack/module-deps)
     -   [list-broken-requires](https://github.com/Jam3/list-broken-requires/blob/master/index.js)
-
     -   [detect-import-require](https://github.com/Jam3/detect-import-require)
 
-7.  can updating the version be automated?
+1.  can updating the version be automated?
 
 #### LICENSE
 
@@ -2046,19 +1985,16 @@ Will need a `tools` directory in individual repositories to
 1.  Ideal vs reality
 
     -   @stdmath/base/special/erf
-
-        -   @stdmath/base-special-erf
-
+    -   @stdmath/base-special-erf
     -   @stdmath/generics/special/erf
+    -   @stdmath/generics-special-erf
 
-        -   @stdmath/generics-special-erf
-
-2.  Under the @stdlib scope...
+1.  Under the @stdlib scope...
 
     -   @stdlib/math-base-special-erf
     -   @stdlib/math-base-core-float64-to-binary-string
 
-3.  References on root `global`
+1.  References on root `global`
 
     -   [underscore](https://github.com/jashkenas/underscore/blob/master/underscore.js#L14)
     -   [lodash](https://github.com/lodash/lodash/blob/4.6.1/lodash.js#L369)
