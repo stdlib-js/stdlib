@@ -374,9 +374,15 @@ plugins.push([
 ]);
 
 /**
-* Require list items be indented using spaces.
+* Require list items use tab-size indentation.
 *
 * @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
+*
+* @example
+* <!-- Bad -->
+*
+* * Hello
+* * World
 *
 * @example
 * <!-- Good -->
@@ -396,7 +402,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-list-item-indent' ),
-	[ 'error', 'space' ]
+	[ 'error', 'tab-size' ]
 ]);
 
 /**
