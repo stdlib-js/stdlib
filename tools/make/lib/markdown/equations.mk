@@ -49,12 +49,9 @@ REMARK_EQUATION_SRC_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-html-equat
 REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS ?= '"'dir'"':'"'$(EQUATION_RESOURCES_PATH)'"'
 REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS ?= --use $(REMARK_EQUATION_SRC_URLS_PLUGIN)=$(REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS)
 
-# Define Markdown extensions:
-REMARK_EXT ?= md
-
 # Define command-line options when invoking the remark executable:
 REMARK_FLAGS ?= \
-	--ext $(REMARK_EXT) \
+	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF) \
 	--ignore-path $(REMARK_IGNORE)
 
