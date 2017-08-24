@@ -182,8 +182,7 @@ function factory( opts ) {
 			if ( error ) {
 				return clbk( error );
 			}
-			idx += 1;
-			if ( idx === total ) {
+			if ( idx === total-1 ) {
 				debug( 'Finished processing virtual file.' );
 				return clbk();
 			}
