@@ -29,7 +29,7 @@ var RAW = /raw="([^"]*)"/;
 * @param {Callback} clbk - callback to invoke upon completion
 */
 function lint( tree, file, options, clbk ) {
-	debug( 'Linting file...' );
+	debug( 'Linting file: %s', file.path || '' );
 	visit( tree, 'html', visitor );
 
 	/**
@@ -115,7 +115,7 @@ function lint( tree, file, options, clbk ) {
 	* @private
 	*/
 	function done() {
-		debug( 'Finished linting.' );
+		debug( 'Finished linting: %s', file.path || '' );
 		clbk();
 	} // end FUNCTION done()
 } // end FUNCTION lint()
