@@ -25,11 +25,8 @@ REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 # Define the path to the remark ignore file:
 REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 
-# Define Markdown extensions:
-REMARK_EXT ?= md
-
 # Define the command-line options when invoking the remark executable:
 MARKDOWN_LINT_FLAGS ?= \
-	--ext $(REMARK_EXT) \
+	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF) \
 	--ignore-path $(REMARK_IGNORE)
