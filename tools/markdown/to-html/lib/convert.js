@@ -12,6 +12,7 @@ var isBuffer = require( '@stdlib/assert/is-buffer' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var noHighlightText = require( './../../../rehype/plugins/rehype-no-highlight-text' );
 var insertEquations = require( './../../../remark/plugins/remark-svg-equations' );
+var postProcess = require( './post_process.js' );
 
 
 // VARIABLES //
@@ -95,7 +96,7 @@ function convert( markdown, clbk ) {
 		if ( error ) {
 			return done( error );
 		}
-		done( null, vfile.toString() );
+		done( null, postProcess( vfile.toString() ) );
 	} // end FUNCTION onHTMLTransform()
 
 	/**
