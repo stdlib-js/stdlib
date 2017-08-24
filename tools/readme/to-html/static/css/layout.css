@@ -266,3 +266,12 @@ h2 {
 	display: inline-block;
 	padding: 3px 5px;
 }
+
+/*
+* Equations.
+*/
+
+.readme div.equation {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
