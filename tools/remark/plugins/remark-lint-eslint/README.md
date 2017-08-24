@@ -14,29 +14,29 @@ var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint'
 
 A [remark][remark] plugin which, when provided a Markdown abstract syntax `tree`, lints JavaScript code blocks using the default [ESLint][eslint] configuration.
 
-````javascript
-    var remark = require( 'remark' );
+```javascript
+var remark = require( 'remark' );
 
-    // Create a synchronous Markdown text linter:
-    var linter = remark().use( plugin ).processSync;
+// Create a synchronous Markdown text linter:
+var linter = remark().use( plugin ).processSync;
 
-    // Lint Markdown:
-    var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
-````
+// Lint Markdown:
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
+```
 
 #### plugin.factory( \[options] )
 
 Returns a configured [remark][remark] plugin for linting JavaScript code blocks. 
 
-````javascript
-    var remark = require( 'remark' );
+```javascript
+var remark = require( 'remark' );
 
-    // Create a synchronous Markdown text linter:
-    var linter = remark().use( plugin.factory() ).processSync;
+// Create a synchronous Markdown text linter:
+var linter = remark().use( plugin.factory() ).processSync;
 
-    // Lint Markdown:
-    var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
-````
+// Lint Markdown:
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
+```
 
 The function recognizes the following `options`:
 
@@ -44,23 +44,23 @@ The function recognizes the following `options`:
 
 To specify configuration `options`, set the respective properties.
 
-````javascript
-    var remark = require( 'remark' );
+```javascript
+var remark = require( 'remark' );
 
-    // Define options:
-    var opts = {
-        'config': '/path/to/.eslintrc'
-    };
+// Define options:
+var opts = {
+    'config': '/path/to/.eslintrc'
+};
 
-    // Create a plugin:
-    var lint = plugin.factory( opts );
+// Create a plugin:
+var lint = plugin.factory( opts );
 
-    // Create a synchronous Markdown text linter:
-    var linter = remark().use( lint ).processSync;
+// Create a synchronous Markdown text linter:
+var linter = remark().use( lint ).processSync;
 
-    // Lint Markdown:
-    var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
-````
+// Lint Markdown:
+var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
+```
 
 </section>
 
@@ -80,7 +80,7 @@ To specify configuration `options`, set the respective properties.
 
         <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
 
-        ``` javascript
+        ```javascript
         var x = new Number( 3.14 );
 
         var arr = [ 1, , , 4, 5 ];
@@ -96,7 +96,7 @@ To specify configuration `options`, set the respective properties.
 
         <!-- eslint-disable no-sparse-arrays -->
 
-        ``` javascript
+        ```javascript
         var x = new Number( 3.14 );
 
         var arr = [ 1, , , 4, 5 ];
@@ -104,15 +104,19 @@ To specify configuration `options`, set the respective properties.
 
     Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
 
-    <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+        ## Heading
 
-    ```javascript
-    /* eslint-disable no-new-wrappers */
-    /* eslint-disable no-sparse-arrays */
-    var x = new Number( 3.14 );
+        Beep boop.
 
-    var arr = [ 1, , , 4, 5 ];
-    ```
+        <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+
+        ```javascript
+        /* eslint-disable no-new-wrappers */
+        /* eslint-disable no-sparse-arrays */
+        var x = new Number( 3.14 );
+
+        var arr = [ 1, , , 4, 5 ];
+        ```
 
 -   Configuration comments **only** apply to a code block which follows immediately after. Hence, the plugin does **not** apply the following configuration comment to a subsequent code block.
 
