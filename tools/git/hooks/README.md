@@ -17,6 +17,7 @@ This directory contains [scripts][git-hooks] which execute when certain actions 
 <section class="links">
 
 [git]: https://git-scm.com/
+
 [git-hooks]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
 </section>

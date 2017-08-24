@@ -2,7 +2,6 @@
 
 > Generate an HTML string for inlining an SVG equation in Markdown.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,15 +16,15 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var createElement = require( '@stdlib/tools/markdown/inline-svg-equation' );
 ```
 
-#### createElement( \[options,\] clbk )
+#### createElement( \[options,] clbk )
 
 Generates an HTML `string` for inlining an SVG equation in Markdown.
 
-``` javascript
+```javascript
 createElement( done );
 
 function done( error, out ) {
@@ -39,14 +38,14 @@ function done( error, out ) {
 
 The function accepts the following `options`:
 
-* __className__: element class name. Default: `'equation'`.
-* __align__: element alignment. Default: `'center'`.
-* __raw__: raw equation text.
-* __label__: equation label.
+-   **className**: element class name. Default: `'equation'`.
+-   **align**: element alignment. Default: `'center'`.
+-   **raw**: raw equation text.
+-   **label**: equation label.
 
 To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `raw` option.
 
-``` javascript
+```javascript
 var opts = {
     'raw': '\\Gamma ( n ) = (n-1)!'
 };
@@ -80,7 +79,7 @@ function done( error, out ) {
 
 ## Examples
 
-``` javascript
+```javascript
 var createElement = require( '@stdlib/tools/markdown/inline-svg-equation' );
 
 var opts = {
@@ -104,8 +103,7 @@ function done( error, out ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -117,7 +115,7 @@ function done( error, out ) {
 
 ### Usage
 
-``` text
+```text
 Usage: ghsvgeqn [options]
 
 Options:
@@ -148,9 +146,8 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ ghsvgeqn --raw '\Gamma ( n ) = (n-1)!'
-
 ```
 
 </section>
@@ -174,6 +171,7 @@ $ ghsvgeqn --raw '\Gamma ( n ) = (n-1)!'
 <section class="links">
 
 [tex]: https://en.wikipedia.org/wiki/TeX
+
 [latex]: https://en.wikipedia.org/wiki/LaTeX
 
 </section>

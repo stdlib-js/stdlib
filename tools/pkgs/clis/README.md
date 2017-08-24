@@ -2,20 +2,19 @@
 
 > Find package command-line interfaces (CLIs).
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var findCLIs = require( '@stdlib/tools/pkgs/clis' );
 ```
 
-#### findCLIs( \[options,\] clbk )
+#### findCLIs( \[options,] clbk )
 
 Asynchronously search for package command-line interfaces.
 
-``` javascript
+```javascript
 findCLIs( onCLIs );
 
 function onCLIs( error, files ) {
@@ -28,13 +27,13 @@ function onCLIs( error, files ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
-* __pattern__: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern __must__ end with `package.json`).
-* __ignore__: list of glob patterns used to exclude matches.
+-   **dir**: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
+-   **pattern**: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern **must** end with `package.json`).
+-   **ignore**: list of glob patterns used to exclude matches.
 
 To search from an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/foo/bar/baz'
 };
@@ -51,7 +50,7 @@ function onCLIs( error, files ) {
 
 To provide an alternative include filter, set the `pattern` option.
 
-``` javascript
+```javascript
 var opts = {
     'pattern': '**/foo/**/package.json'
 };
@@ -68,7 +67,7 @@ function onCLIs( error, files ) {
 
 To exclude matches, set the `ignore` option.
 
-``` javascript
+```javascript
 var opts = {
     'ignore': [
         'node_modules/**',
@@ -87,12 +86,11 @@ function onCLIs( error, files ) {
 }
 ```
 
-
-#### findCLIs.sync( \[options\] )
+#### findCLIs.sync( \[options] )
 
 Synchronously searches for package command-line interfaces.
 
-``` javascript
+```javascript
 var files = findCLIs.sync();
 // returns [...]
 ```
@@ -103,25 +101,23 @@ The function accepts the same `options` as `findCLIs()` above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* The implementation resolves command-line interfaces by reading `package.json` files and resolving paths found in the `bin` field. 
-* __No__ attempt is made to ensure that a command-line interface file exists.
-* The implementation __assumes__ that a `bin` field is valid; i.e., either a `string` or an `object`.
+-   The implementation resolves command-line interfaces by reading `package.json` files and resolving paths found in the `bin` field. 
+-   **No** attempt is made to ensure that a command-line interface file exists.
+-   The implementation **assumes** that a `bin` field is valid; i.e., either a `string` or an `object`.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var findCLIs = require( '@stdlib/tools/pkgs/clis' );
 
 findCLIs( onCLIs );
@@ -138,8 +134,7 @@ function onCLIs( error, files ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -149,7 +144,7 @@ function onCLIs( error, files ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: find-pkg-clis [options] [dir]
 
 Options:
@@ -164,29 +159,27 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If not provided a `dir` argument, the current working directory is the search directory.
+-   If not provided a `dir` argument, the current working directory is the search directory.
 
-* To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
+-   To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
-  ``` bash
-  $ find-pkg-clis --ignore=node_modules/** --ignore=build/** --ignore=reports/**
-  ```
+    ```bash
+    $ find-pkg-clis --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+    ```
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ find-pkg-clis
 <filepath>
 <filepath>
@@ -200,7 +193,6 @@ $ find-pkg-clis
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

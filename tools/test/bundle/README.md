@@ -2,7 +2,6 @@
 
 > Bundle test files into a single file using [browserify][browserify].
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,15 +16,15 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var bundle = require( '@stdlib/tools/test/bundle' );
 ```
 
-#### bundle( root, \[options,\] clbk )
+#### bundle( root, \[options,] clbk )
 
 Given a `root` directory from which to search for tests, bundle tests into a single file using [browserify][browserify].
 
-``` javascript
+```javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
 bundle( cwd(), clbk );
@@ -40,12 +39,12 @@ function clbk( error, bundle ) {
 
 The function accepts the following `options`:
 
-* __out__: output file path.
-* __pattern__: glob pattern. Default: `'**/test*.js'`.
+-   **out**: output file path.
+-   **pattern**: glob pattern. Default: `'**/test*.js'`.
 
 To specify an output file path, set the `out` option.
 
-``` javascript
+```javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
 var opts = {
@@ -68,7 +67,7 @@ function clbk( error, bool ) {
 
 To provide an alternative glob pattern, set the `pattern` option.
 
-``` javascript
+```javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
 var opts = {
@@ -105,7 +104,7 @@ function clbk( error, bundle ) {
 
 <!-- eslint-disable no-redeclare -->
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var bundle = require( '@stdlib/tools/test/bundle' );
 
@@ -131,7 +130,7 @@ function onBundle( error, bundle ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -143,7 +142,7 @@ function onBundle( error, bundle ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: test-bundle [options] [dir]
 
 Options:
@@ -163,7 +162,7 @@ Options:
 
 ### Notes
 
-* If not provided a root directory, the root directory is the current working directory. 
+-   If not provided a root directory, the root directory is the current working directory. 
 
 </section>
 
@@ -175,7 +174,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ test-bundle --pattern 'index.js' ./examples/fixtures
 ```
 

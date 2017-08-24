@@ -1,63 +1,59 @@
 # JavaScript Style Guide
 
-> *An opinionated style guide for writing JavaScript.*
-
+> _An opinionated style guide for writing JavaScript._
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-1. [General Principles](#general-principles)
-1. [Whitespace](#whitespace)
-1. [Semicolons](#semicolons)
-1. [Parentheses](#parentheses)
-1. [Variables](#variables)
-1. [Strings](#strings)
-1. [Arrays](#arrays)
-1. [Functions](#functions)
-1. [Strict Mode](#strict-mode)
-1. [Arguments](#arguments)
-1. [Regular Expressions](#regular-expressions)
-1. [Blocks](#blocks)
-1. [Equality](#equality)
-1. [Errors](#errors)
-1. [Comments](#comments)
-1. [Naming](#naming)
-1. [This](#this)
-1. [Classes](#classes)
-1. [Setters and Getters](#setters-and-getters)
-1. [Method Chaining](#method-chaining)
-1. [Documentation](#documentation)
-1. [Performance](#performance)
-1. [Modularity](#modularity)
-1. [Client-side JavaScript](#client-side-javascript)
-1. [Dependencies](#dependencies)
-1. [Additional Resources](#additional-resources)
-1. [License](#license)
-
+1.  [Introduction](#introduction)
+2.  [General Principles](#general-principles)
+3.  [Whitespace](#whitespace)
+4.  [Semicolons](#semicolons)
+5.  [Parentheses](#parentheses)
+6.  [Variables](#variables)
+7.  [Strings](#strings)
+8.  [Arrays](#arrays)
+9.  [Functions](#functions)
+10. [Strict Mode](#strict-mode)
+11. [Arguments](#arguments)
+12. [Regular Expressions](#regular-expressions)
+13. [Blocks](#blocks)
+14. [Equality](#equality)
+15. [Errors](#errors)
+16. [Comments](#comments)
+17. [Naming](#naming)
+18. [This](#this)
+19. [Classes](#classes)
+20. [Setters and Getters](#setters-and-getters)
+21. [Method Chaining](#method-chaining)
+22. [Documentation](#documentation)
+23. [Performance](#performance)
+24. [Modularity](#modularity)
+25. [Client-side JavaScript](#client-side-javascript)
+26. [Dependencies](#dependencies)
+27. [Additional Resources](#additional-resources)
+28. [License](#license)
 
 ## Introduction
 
-Always abide by the __Law of Code Style Consistency__, or, in other words, *when in Rome, do as the Romans do*. 
+Always abide by the **Law of Code Style Consistency**, or, in other words, _when in Rome, do as the Romans do_. 
 
 While the code base to which you want to contribute may be a horrific mess in terms of aesthetic appearance and style, style consistency takes precedent over personal preference and canon. The more consistent a code base is in terms of style, the more readers of the code can focus on what the code does rather than deciphering changes in style.
 
-So, even if your peers commit various *faux pas* outlined below, as long as you are contributing to their code base, abide by their conventions.
+So, even if your peers commit various _faux pas_ outlined below, as long as you are contributing to their code base, abide by their conventions.
 
 A code base--module, repository, application, library, etc--should always appear to have a single author and not be a schizophrenic franken-mess. This stated, for those opportunities where you are the primary author, you should lead by example and write clean, readable, and testable code.
 
 Hopefully, most of the conventions outlined below will help enable you to do so.
 
-
 ## General Principles
 
-* Prefer standards to non-standards.
-* Do one thing and do one thing well.
-* Keep your code clean. Create feature branches for experimental development, extensive annotations, and/or alternative implementations.
-
+-   Prefer standards to non-standards.
+-   Do one thing and do one thing well.
+-   Keep your code clean. Create feature branches for experimental development, extensive annotations, and/or alternative implementations.
 
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Whitespace
 
@@ -69,21 +65,21 @@ Hopefully, most of the conventions outlined below will help enable you to do so.
 
 [Tab indentation][tab-indentation] allows a developer to specify the space indentation equivalent in her editor. For example, in [Sublime Text][sublime-text], you can specify in your user preferences
 
-``` text
+```text
 "tab_width": 4
 ```
 
 ##### Notes
 
-* Even if you must use spaces, __never__ mix tabs and spaces. This is formatting hell, as a simple find-and-replace is useless in the face of such chaos.
+-   Even if you must use spaces, **never** mix tabs and spaces. This is formatting hell, as a simple find-and-replace is useless in the face of such chaos.
 
 ##### Enforcement
 
 This project contains an [`.editorconfig`][editorconfig] file to be used in conjunction with IDE and/or browser plugins.
 
-* [sublime text][sublime-text-editorconfig]
-* [atom][atom-editorconfig]
-* [chrome][chrome-editorconfig]
+-   [sublime text][sublime-text-editorconfig]
+-   [atom][atom-editorconfig]
+-   [chrome][chrome-editorconfig]
 
 <!-- </rule> -->
 
@@ -99,7 +95,7 @@ Including `1` space before a leading brace improves readability.
 
 <!-- eslint-disable space-before-blocks -->
 
-``` javascript
+```javascript
 // Do not...
 function query(){
     // Do something...
@@ -108,7 +104,7 @@ function query(){
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function query() {
     // Do something...
@@ -133,7 +129,7 @@ Including `1` space before and after arguments improves readability.
 
 <!-- eslint-disable comma-spacing -->
 
-``` javascript
+```javascript
 // Do not...
 function test(arg1,arg2,arg3) {
     // Do something...
@@ -142,7 +138,7 @@ function test(arg1,arg2,arg3) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function test( arg1, arg2, arg3 ) {
     // Do something...
@@ -157,35 +153,34 @@ TODO: ESLint rule
 
 <!-- <rule> -->
 
-### Rule: Include spaces around array indices  
+### Rule: Include spaces around array indices
 
 ##### Reason
 
 Including `1` space before and after `array` indices improves readability.
 
-
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var foo = bar[10];
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var foo = bar[ 10 ];
 ```
 
 ##### Notes
 
-* Use discretion when using spaces around `array` indices buried in braces.
+-   Use discretion when using spaces around `array` indices buried in braces.
 
-  ``` javascript
-  // Okay:
-  var foo = myFunction( ( a === b ) ? bar[0] : bar[1] );
-  ```
+    ```javascript
+    // Okay:
+    var foo = myFunction( ( a === b ) ? bar[0] : bar[1] );
+    ```
 
 ##### Enforcement
 
@@ -203,29 +198,29 @@ Including `1` space before and after operators improves readability.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var a=1+1;
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var a = 1 + 1;
 ```
 
 ##### Notes
 
-* Use discretion when operators are contained within complex expressions and `string` concatenation.
+-   Use discretion when operators are contained within complex expressions and `string` concatenation.
 
-  ``` javascript
-  // Okay...
-  var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
+    ```javascript
+    // Okay...
+    var str = 'This is a long string by '+firstName+' '+lastName+', which may keep going and going and...';
 
-  // Okay...
-  var n = ((x+y+z)*(t-w-v)) + 5;
-  ```
+    // Okay...
+    var n = ((x+y+z)*(t-w-v)) + 5;
+    ```
 
 ##### Enforcement
 
@@ -245,7 +240,7 @@ Immediate juxtaposition makes evident what is being affected.
 
 <!-- eslint-disable space-unary-ops, no-plusplus -->
 
-``` javascript
+```javascript
 // Do not...
 x = ++ y;
 z = z ++;
@@ -255,7 +250,7 @@ z = z ++;
 
 <!-- eslint-disable no-plusplus -->
 
-``` javascript
+```javascript
 // Do...
 x = ++y;
 z = z++;
@@ -279,7 +274,7 @@ Including `1` space after comment marks improves readability.
 
 <!-- eslint-disable spaced-comment -->
 
-``` javascript
+```javascript
 // Do not...
 
 //This is a single-line comment.
@@ -292,7 +287,7 @@ Including `1` space after comment marks improves readability.
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 // This is a single-line comment.
@@ -319,7 +314,7 @@ Some IDEs have a tendency to auto-indent based on the previous line, thus pushin
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 
 /*
@@ -331,7 +326,7 @@ Some IDEs have a tendency to auto-indent based on the previous line, thus pushin
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 /*
@@ -357,14 +352,14 @@ Indentation improves readability.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var svg = d3.select( '.main' ).append( 'svg:svg' ).attr( 'class', 'canvas' ).attr( 'data-id', Date.now() ).attr( 'width', 100 ).attr( 'height', 100 );
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var svg = d3.select( '.main' )
     .append( 'svg:svg' )
@@ -390,7 +385,7 @@ Newline is unnecessary.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 if ( foo === bar ) {
     // Do something...
@@ -402,7 +397,7 @@ else {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 if ( foo === bar ) {
     // Do something...
@@ -413,58 +408,57 @@ if ( foo === bar ) {
 
 ##### Notes
 
-* Use discretion when faced with multiple conditions.
+-   Use discretion when faced with multiple conditions.
 
-  ``` javascript
-  // Do...
-  if ( foo === bar ) {
-      // Do something...
-  } else if ( foo === beep ) {
-      // Do something else...
-  } else if ( bar === bar ) {
-      // Do something more...
-  } else {
-      // Do something different...
-  }
+    ```javascript
+    // Do...
+    if ( foo === bar ) {
+        // Do something...
+    } else if ( foo === beep ) {
+        // Do something else...
+    } else if ( bar === bar ) {
+        // Do something more...
+    } else {
+        // Do something different...
+    }
 
-  // Okay...
-  if ( foo === bar ) {
-      // Do something...
-  }
-  else if ( foo === beep ) {
-      // Do something else...
-  }
-  else if ( baz === bar ) {
-      // Do something more...
-  }
-  else {
-      // Do something different...
-  }
-  ```
+    // Okay...
+    if ( foo === bar ) {
+        // Do something...
+    }
+    else if ( foo === beep ) {
+        // Do something else...
+    }
+    else if ( baz === bar ) {
+        // Do something more...
+    }
+    else {
+        // Do something different...
+    }
+    ```
 
-* Use discretion when documenting conditions.
+-   Use discretion when documenting conditions.
 
-  ``` javascript
-  // Okay...
+    ```javascript
+    // Okay...
 
-  // `bar` can only equal `foo` when...
-  if ( foo === bar ) {
-      // Do something...
-  }
-  // `beep` can only equal `foo` when...
-  else if ( foo === beep ) {
-      // Do something else...
-  }
-  // This pathway should rarely be taken...
-  else if ( baz === bar ) {
-      // Do something more...
-  }
-  // `foo` equals `bap`
-  else {
-      // Do something different...
-  }
-  ```
-
+    // `bar` can only equal `foo` when...
+    if ( foo === bar ) {
+        // Do something...
+    }
+    // `beep` can only equal `foo` when...
+    else if ( foo === beep ) {
+        // Do something else...
+    }
+    // This pathway should rarely be taken...
+    else if ( baz === bar ) {
+        // Do something more...
+    }
+    // `foo` equals `bap`
+    else {
+        // Do something different...
+    }
+    ```
 
 ##### Enforcement
 
@@ -484,7 +478,7 @@ Indenting the `case` keyword within `switch` statements results in excessive ind
 
 <!-- eslint-disable indent -->
 
-``` javascript
+```javascript
 // Do not...
 switch ( foo ) {
     case 'bar':
@@ -500,7 +494,7 @@ switch ( foo ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 switch ( foo ) {
 case 'bar':
@@ -522,10 +516,9 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Semicolons
 
@@ -541,14 +534,14 @@ While semicolons are [not required][ecma-262] in most cases due to [automatic se
 
 <!-- eslint-disable semi -->
 
-``` javascript
+```javascript
 // Do not...
 var bar = foo()
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var bar = foo();
 ```
@@ -561,10 +554,9 @@ TODO: ESLint rule
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Parentheses
 
@@ -578,14 +570,14 @@ Including parentheses around the test condition in ternary operators improves re
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var foo = a === b ? a*3 : b/4;
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var foo = ( a === b ) ? a*3 : b/4;
 ```
@@ -598,10 +590,9 @@ TODO
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Variables
 
@@ -615,7 +606,7 @@ Doing so makes variable hoisting explicit.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function myFunction() {
     var foo = 3;
@@ -629,7 +620,7 @@ function myFunction() {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function myFunction() {
     var foo = 3;
@@ -660,7 +651,7 @@ Adding, removing, and reordering variables is easier. Additionally, `git` diffs 
 
 <!-- eslint-disable one-var -->
 
-``` javascript
+```javascript
 // Do not...
 var boop = 'hello',
     beep = false,
@@ -670,7 +661,7 @@ var boop = 'hello',
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var boop = 'hello';
 var beep = false;
@@ -696,7 +687,7 @@ Declaring variables on separate lines improves readability.
 
 <!-- eslint-disable max-statements-per-line -->
 
-``` javascript
+```javascript
 // Do not...
 var beep; var boop;
 var bop; var bap; var i;
@@ -704,7 +695,7 @@ var bop; var bap; var i;
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var beep;
 var boop;
@@ -729,7 +720,7 @@ Visual alignment and thus improved readability.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var beep;
 var foo = 3;
@@ -739,7 +730,7 @@ var bar = null;
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var bar = null;
 var foo = 3;
@@ -763,7 +754,7 @@ Visual alignment and thus improved readability.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var a;
 var foo;
@@ -774,7 +765,7 @@ var bar;
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var foo;
 var bar;
@@ -791,10 +782,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Strings
 
@@ -810,14 +800,14 @@ Reserve double quotes for in-string parenthetical references or quotes. Addition
 
 <!-- eslint-disable quotes -->
 
-``` javascript
+```javascript
 // Do not...
 var str = "Hello";
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var str = 'Hello';
 ```
@@ -838,7 +828,7 @@ Immediate evaluation prevents a template being stored in a variable. Token synta
 
 ##### Notes
 
-* A function which performs string concatenation is equivalently effective.
+-   A function which performs string concatenation is equivalently effective.
 
 ##### Enforcement
 
@@ -848,10 +838,9 @@ TODO: ESLint rule. Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Arrays
 
@@ -867,14 +856,14 @@ Instantiation with the `new` operator is unnecessary.
 
 <!-- eslint-disable no-array-constructor -->
 
-``` javascript
+```javascript
 // Do not...
 var arr = new Array();
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var arr = [];
 ```
@@ -895,7 +884,7 @@ Allows compiler to pre-allocate memory.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var arr = [];
 var i;
@@ -906,7 +895,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var arr = new Array( 100 );
 var i;
@@ -917,20 +906,20 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ##### Notes
 
-* Do __not__ use the `new` operator if the `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
+-   Do **not** use the `new` operator if the `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
 
-  ``` javascript
-  var len = 100000;
-  var arr;
-  var i;
-  arr = new Array( 64000 );
-  for ( i = 0; i < arr.length; i++ ) {
-      arr[ i ] = Math.random();
-  }
-  for ( i = arr.length; i < len; i++ ) {
-      arr.push( Math.random() );
-  }
-  ```
+    ```javascript
+    var len = 100000;
+    var arr;
+    var i;
+    arr = new Array( 64000 );
+    for ( i = 0; i < arr.length; i++ ) {
+        arr[ i ] = Math.random();
+    }
+    for ( i = arr.length; i < len; i++ ) {
+        arr.push( Math.random() );
+    }
+    ```
 
 ##### Enforcement
 
@@ -948,14 +937,14 @@ More explicit and efficient. Additionally, passing the `arguments` object to any
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var args = Array.prototype.slice.call( arguments );
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var nargs = arguments.length;
 var args = new Array( nargs );
@@ -981,7 +970,7 @@ When copying a small `array`, using `Array#slice()` incurs a function overhead w
 
 ##### Small Array Example
 
-``` javascript
+```javascript
 // Do...
 var arr = new Array( 10 );
 var out = new Array( arr.length );
@@ -997,7 +986,7 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ##### Large Array Example
 
-``` javascript
+```javascript
 // Do...
 var arr = new Array( 10000 );
 var out;
@@ -1009,7 +998,6 @@ for ( i = 0; i < arr.length; i++ ) {
 out = arr.slice();
 ```
 
-
 ##### Enforcement
 
 Code review.
@@ -1018,10 +1006,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Objects
 
@@ -1037,7 +1024,7 @@ Splitting `object` properties over multiple lines improves readability.
 
 <!-- eslint-disable object-curly-newline, no-restricted-syntax, object-property-newline, max-statements-per-line -->
 
-``` javascript
+```javascript
 // Do not...
 var obj = { 'a': null, 'b': 5, 'c': function c() { return true; }, 'd': ( foo === bar ) ? foo : bar };
 ```
@@ -1046,7 +1033,7 @@ var obj = { 'a': null, 'b': 5, 'c': function c() { return true; }, 'd': ( foo ==
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do...
 var obj = {
     'a': null,
@@ -1076,7 +1063,7 @@ For complex `objects`, matching properties and their corresponding values become
 
 <!-- eslint-disable key-spacing -->
 
-``` javascript
+```javascript
 // Do not...
 var obj = {
     'prop'     : true,
@@ -1087,7 +1074,7 @@ var obj = {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var obj = {
     'prop': true,
@@ -1114,7 +1101,7 @@ An object which includes a trailing comma is not valid JSON.
 
 <!-- eslint-disable comma-dangle -->
 
-``` javascript
+```javascript
 // Do not...
 var obj = {
     'prop': true,
@@ -1125,7 +1112,7 @@ var obj = {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var obj = {
     'prop': true,
@@ -1152,7 +1139,7 @@ Unnecessary syntactic sugar. In complex objects, shorthand notation decreases re
 
 <!-- eslint-disable object-property-newline, object-shorthand, object-curly-newline -->
 
-``` javascript
+```javascript
 var foo = 'beep';
 var x = true;
 var y = 10;
@@ -1162,7 +1149,7 @@ var obj = { foo, 'baz': 'boop', x, y };
 
 ##### Good Example
 
-``` javascript
+```javascript
 var foo = 'beep';
 var x = true;
 var y = 10;
@@ -1183,10 +1170,9 @@ TODO: ESLint rule. Code review.
 
 <!-- <rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Functions
 
@@ -1202,7 +1188,7 @@ Declaring `functions` using [function statements][function-statements], rather t
 
 <!-- eslint-disable func-style, func-names, no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do not...
 var beep = function () {
     console.log( 'boop' );
@@ -1211,7 +1197,7 @@ var beep = function () {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function beep() {
     console.log( 'boop' );
@@ -1234,7 +1220,7 @@ Minimizes closures and helps to prevent nested callback hell.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function beep() {
     boop();
@@ -1246,7 +1232,7 @@ function beep() {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function beep() {
     boop();
@@ -1275,7 +1261,7 @@ Declaring within loops and conditions may result in repeated function creation, 
 
 <!-- eslint-disable no-restricted-syntax, block-scoped-var -->
 
-``` javascript
+```javascript
 // Do not...
 function beep( idx, clbk ) {
     clbk( 'beep'+idx );
@@ -1289,7 +1275,7 @@ for ( var i = 0; i < 10; i++ ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function beep( idx, clbk ) {
     clbk( 'beep'+idx );
@@ -1307,7 +1293,7 @@ for ( var i = 0; i < 10; i++ ) {
 
 <!-- eslint-disable no-restricted-syntax, no-loop-func -->
 
-``` javascript
+```javascript
 // Do not...
 for ( var i = 0; i < 10; i++ ) {
     setTimeout( function onTimeout() {
@@ -1318,7 +1304,7 @@ for ( var i = 0; i < 10; i++ ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function clbk( idx ) {
     return onTimeout;
@@ -1336,7 +1322,7 @@ for ( var i = 0; i < 10; i++ ) {
 
 <!-- eslint-disable no-inner-declarations -->
 
-``` javascript
+```javascript
 // Do not...
 var i = Math.random() * 20;
 if ( i < 11 ) {
@@ -1349,7 +1335,7 @@ if ( i < 11 ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function bap() {
     // Do something...
@@ -1378,7 +1364,7 @@ Makes a clear distinction between a `function` declaration and one that is immed
 
 <!-- eslint-skip -->
 
-``` javascript
+```javascript
 // Do not...
 function init() {
     // Do something...
@@ -1389,7 +1375,7 @@ function init() {
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do...
 (function init() {
     // Do something...
@@ -1414,7 +1400,7 @@ Reduces noise when first attempting to understand implementation flow, especiall
 
 <!-- eslint-disable no-use-before-define -->
 
-``` javascript
+```javascript
 // Don't...
 function getEquation( a, b, c ) {
     /**
@@ -1441,7 +1427,7 @@ function getEquation( a, b, c ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function getEquation( a, b, c ) {
     var d;
@@ -1485,16 +1471,16 @@ Function calls introduce additional overhead and, often, functional counterparts
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do not...
 var squared = arr.map( function square( value ) {
     return value * value;
 });
 ```
 
-##### Good Example 
+##### Good Example
 
-``` javascript
+```javascript
 var squared = new Array( arr.length );
 
 // Do...
@@ -1519,7 +1505,7 @@ Code review.
 
 <!-- eslint-disable arrow-body-style, no-restricted-syntax, func-style, arrow-parens, max-statements-per-line -->
 
-``` javascript
+```javascript
 // No braces:
 var f = x => x + 1;
 
@@ -1537,7 +1523,7 @@ f = (x, y) => { x += y; return x.toString(); };
 
 <!-- eslint-skip -->
 
-``` javascript
+```javascript
 var y = x => x;
 z = y( 10 );
 // returns 10
@@ -1567,13 +1553,13 @@ z = y( 10 );
 
 <!-- eslint-disable arrow-body-style, no-restricted-syntax, arrow-parens -->
 
-``` javascript
+```javascript
 var squared = arr.map( x => x*x );
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 function square( x ) {
     return x * x;
 }
@@ -1597,7 +1583,7 @@ This follows the Node.js callback convention.
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function clbk( error, value ) {
     if ( error ) {
@@ -1622,8 +1608,7 @@ request({
 
 ##### Notes
 
-* If no errors, the `error` argument should be `null`.
-
+-   If no errors, the `error` argument should be `null`.
 
 ##### Enforcement
 
@@ -1655,7 +1640,7 @@ Avoids nested callback hell.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function deferredComputation( value ) {
     return compute;
@@ -1676,7 +1661,7 @@ function deferredComputation( value ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function mult( x, y ) {
     return x * y;
@@ -1717,7 +1702,7 @@ Named `functions` are easier to find in stack traces and consequently debug.
 
 <!-- eslint-disable no-restricted-syntax, func-names -->
 
-``` javascript
+```javascript
 // Do not...
 
 function beep( f ) {
@@ -1731,7 +1716,7 @@ beep( function () {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 function beep( f ) {
@@ -1752,10 +1737,9 @@ TODO: ESLint rule
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Strict Mode
 
@@ -1771,7 +1755,7 @@ Writing JavaScript in [strict mode][strict-mode] discourages bad practices, avoi
 
 <!-- eslint-skip -->
 
-``` javascript
+```javascript
 'use strict';
 
 NaN = null; // throws an Error
@@ -1779,15 +1763,15 @@ NaN = null; // throws an Error
 
 ##### Notes
 
-* Prefer [strict mode][strict-mode] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
+-   Prefer [strict mode][strict-mode] for a whole script. If not possible, use [strict mode][strict-mode] for each available `function`.
 
-  ``` javascript
-  function beep() {
-      'use strict';
+    ```javascript
+    function beep() {
+        'use strict';
 
-      delete Object.prototype; // throws an Error
-  }
-  ```
+        delete Object.prototype; // throws an Error
+    }
+    ```
 
 ##### Enforcement
 
@@ -1797,10 +1781,9 @@ TODO: ESLint rule
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Arguments
 
@@ -1814,7 +1797,7 @@ Doing so automatically puts the `function` in optimization hell.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function fcn() {
     var out = foo( arguments );
@@ -1823,7 +1806,7 @@ function fcn() {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function fcn() {
     var nargs = arguments.length;
@@ -1854,7 +1837,7 @@ Recycling variables when mentioning `arguments` in a `function` body prevents co
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function fcn( value, options ) {
     var err;
@@ -1871,7 +1854,7 @@ function fcn( value, options ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function fcn( value, options ) {
     var opts;
@@ -1898,10 +1881,9 @@ TODO: ESLint rule
 
 <!-- <rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Regular Expressions
 
@@ -1915,7 +1897,7 @@ Ensures a regular expression is only created once and improves readability.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function beep( str ) {
     if ( /\.+/.test( str ) ) {
@@ -1928,7 +1910,7 @@ beep();
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var RE = /\.+/;
 
@@ -1959,7 +1941,7 @@ Regular expressions are error prone and difficult to understand without thorough
 
 <!-- eslint-disable no-useless-escape -->
 
-``` javascript
+```javascript
 /**
 * Matches parts of a regular expression string.
 * 
@@ -1999,10 +1981,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Blocks
 
@@ -2018,7 +1999,7 @@ Not using them is a common source of bugs.
 
 <!-- eslint-disable curly -->
 
-``` javascript
+```javascript
 // Do not...
 function beep() {
     if ( foo === bar ) return true;
@@ -2027,7 +2008,7 @@ function beep() {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function beep() {
     if ( foo === bar ) {
@@ -2052,7 +2033,7 @@ Avoids unnecessary newline character.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 if ( foo === bar )
 {
@@ -2067,7 +2048,7 @@ function query()
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 if ( foo === bar ) {
     // Do something...
@@ -2094,7 +2075,7 @@ Doing so reduces code branching and indentation.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function foo( value ) {
     var str;
@@ -2109,7 +2090,7 @@ function foo( value ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function foo( value ) {
     if ( value === 'bar' ) {
@@ -2135,7 +2116,7 @@ Reduces code branching and indentation.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 for ( var i = 0; i < 10; i++ ) {
     if ( i !== 5 ) {
@@ -2146,7 +2127,7 @@ for ( var i = 0; i < 10; i++ ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 for ( var i = 0; i < 10; i++ ) {
     if ( i === 5 ) {
@@ -2164,10 +2145,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Equality
 
@@ -2183,7 +2163,7 @@ Not enforcing type equality is a source of bugs.
 
 <!-- eslint-disable eqeqeq -->
 
-``` javascript
+```javascript
 // Do not...
 if ( foo != bar ) {
     // Do something...
@@ -2192,7 +2172,7 @@ if ( foo != bar ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 if ( foo === bar ) {
     // Do something...
@@ -2207,10 +2187,9 @@ TODO: ESLint rule
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Errors
 
@@ -2224,14 +2203,14 @@ Simplifies debugging.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var err = new Error( '1' );
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var err = new TypeError( 'invalid input argument. Window option must be a positive integer. Value: `' + value + '`.' );
 ```
@@ -2252,7 +2231,7 @@ Throw and provide tailored `error` messages if expected conditions are not met. 
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Don't...
 
 /**
@@ -2268,7 +2247,7 @@ function boop( clbk ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 /**
@@ -2301,7 +2280,7 @@ For public facing APIs, dynamic type checking makes contracts explicit, facilita
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function bar( opts ) {
     // What happens if `opts` or `opts.ssl` are not objects???
@@ -2309,9 +2288,9 @@ function bar( opts ) {
 }
 ```
 
-##### Good Example 
-    
-``` javascript
+##### Good Example
+
+```javascript
 // Do...
 function foo( opts ) {
     if ( !isObject( opts ) ) {
@@ -2322,9 +2301,9 @@ function foo( opts ) {
 
 ##### Notes
 
-* When performing dynamic type checks, __always__ include the invalid value in the `error` message. Doing so makes debugging and logging easier.
+-   When performing dynamic type checks, **always** include the invalid value in the `error` message. Doing so makes debugging and logging easier.
 
-    ``` javascript
+    ```javascript
     // Do...
     function bop( len ) {
         if ( !isPositiveInteger( len ) ) {
@@ -2342,8 +2321,8 @@ function foo( opts ) {
 
 ##### Enforcement
 
-* Unit tests
-* Code review
+-   Unit tests
+-   Code review
 
 <!-- </rule> -->
 
@@ -2357,7 +2336,7 @@ Not crashing upon encountering an [`uncaughtException`][uncaught-exception] leav
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // DO NOT...
 function onError( error ) {
     console.error( 'Caught exception. Err: %s', error.message );
@@ -2369,7 +2348,7 @@ process.on( 'uncaughtException', onError );
 
 <!-- eslint-disable no-process-exit -->
 
-``` javascript
+```javascript
 // Okay...
 function onError( error ) {
     console.error( 'Caught exception. Err: %s', error.message );
@@ -2394,7 +2373,7 @@ Designing asynchronous APIs in this fashion matches the [convention][errbacks] f
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function badAsync( clbk ) {
     setTimeout( done, 1000 );
@@ -2406,7 +2385,7 @@ function badAsync( clbk ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function goodAsync( clbk ) {
     setTimeout( done, 1000 );
@@ -2414,7 +2393,7 @@ function goodAsync( clbk ) {
         clbk( null, 'beep' );
     }
 }
-``` 
+```
 
 ##### Enforcement
 
@@ -2432,7 +2411,7 @@ Code review.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 response
     .send( 200 )
@@ -2443,7 +2422,7 @@ response
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 response
     .status( 502 )
@@ -2461,10 +2440,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Comments
 
@@ -2478,7 +2456,7 @@ Fewer characters per line compared to using multiple single-line comment identif
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 
 // Beep boop.
@@ -2492,7 +2470,7 @@ function beep( x, y ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 /**
@@ -2520,10 +2498,9 @@ Code review.
 
 [JSDoc][jsdoc] provides structured source code documentation.
 
-
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function transform( str ) {
     return str + ' has been transformed.';
@@ -2532,7 +2509,7 @@ function transform( str ) {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 /**
@@ -2552,8 +2529,8 @@ function transform( str ) {
 
 ##### Notes
 
-* Be sure to include parameters, parameter types, return types (if any), errors (if any can be thrown), and examples.
-* Use Markdown syntax for extended comments.
+-   Be sure to include parameters, parameter types, return types (if any), errors (if any can be thrown), and examples.
+-   Use Markdown syntax for extended comments.
 
 ##### Enforcement
 
@@ -2571,7 +2548,7 @@ Fewer characters than using multi-line syntax for single-line comments.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 
 /* Set the default value to null. */
@@ -2580,7 +2557,7 @@ var foo = bar || null;
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 
 // Set the default value to null.
@@ -2589,9 +2566,9 @@ var foo = bar || null;
 
 ##### Notes
 
-* In general, prefer placing the comment above the comment subject and place an empty line above the comment.
+-   In general, prefer placing the comment above the comment subject and place an empty line above the comment.
 
-    ``` javascript
+    ```javascript
     // Okay for short comments (sometimes)...
     var foo = bar || null; // bar can be `0`
 
@@ -2623,7 +2600,7 @@ Use `// FIXME:` to annotate problems.
 
 <!-- eslint-disable no-warning-comments -->
 
-``` javascript
+```javascript
 function foo() {
     // FIXME: misses the case where value is 0. Want to check if value is not numeric.
     if ( !value ) {
@@ -2638,7 +2615,7 @@ Use `// TODO:` to annotate tasks.
 
 <!-- eslint-disable no-warning-comments -->
 
-``` javascript
+```javascript
 function Ctor() {
     // TODO: make `name` property value publicly accessible.
     this.name = 'foobar';
@@ -2653,7 +2630,7 @@ Use `// HACK:` to annotate fragile/non-general solutions.
 
 <!-- eslint-disable no-warning-comments -->
 
-``` javascript
+```javascript
 // HACK: temporary fix; host and port should be abstracted to another module handling configuration.
 var host = '127.0.0.1';
 var port = 7331;
@@ -2665,7 +2642,7 @@ Use `// WARNING:` to annotate possible gotchas/pitfalls.
 
 <!-- eslint-disable no-warning-comments -->
 
-``` javascript
+```javascript
 // WARNING: shared reference of a mutable object; possible side effects.
 var a = b = {};
 ```
@@ -2676,7 +2653,7 @@ Use `// OPTIMIZE:` to annotate code which needs optimizing.
 
 <!-- eslint-disable no-warning-comments -->
 
-``` javascript
+```javascript
 // OPTIMIZE: use a loop rather than recursion
 function factorial( x ) {
     if ( x <= 1 ) {
@@ -2690,7 +2667,7 @@ function factorial( x ) {
 
 Use `// NOTE:` to annotate questions, comments, or anything which does not fit under `TODO`, `FIXME`, `HACK`, `WARNING`, `OPTIMIZE` which should be brought to a user's attention.
 
-``` javascript
+```javascript
 // NOTE: consider optimizing this for large arrays (len > 64K).
 var arr = new Array( len );
 for ( var i = 0; i < len; i++ ) {
@@ -2714,7 +2691,7 @@ Doing so helps lessen bracket hell when dealing with long code blocks.
 
 ##### Good Example
 
-``` javascript
+```javascript
 function longFunction() {
     // [0] Do first thing.
     firstThing();
@@ -2742,10 +2719,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Naming
 
@@ -2759,7 +2735,7 @@ Standard JavaScript convention for `functions`, `objects`, instances, and variab
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function testfunction() {
     // Do something...
@@ -2772,7 +2748,7 @@ var reallylongvariablename = 0;
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function testFunction() {
     // Do something...
@@ -2799,7 +2775,7 @@ Standard JavaScript convention for constructors and classes.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function roboRobot() {
     this.name = 'Boop';
@@ -2811,7 +2787,7 @@ var robo = new roboRobot();
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function RoboRobot() {
     this.name = 'Beep';
@@ -2837,7 +2813,7 @@ Standard JavaScript convention when naming private properties.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function Robot() {
     this.__private__ = true;
@@ -2848,7 +2824,7 @@ function Robot() {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function Robot() {
     this._private = true;
@@ -2874,7 +2850,7 @@ Named `functions` are easier to find in stack traces and consequently debug.
 
 <!-- eslint-disable no-restricted-syntax, func-names -->
 
-``` javascript
+```javascript
 // Do not...
 request({
     'method': 'GET',
@@ -2889,7 +2865,7 @@ request({
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function onResponse( error, response, body ) {
     if ( error ) {
@@ -2908,7 +2884,7 @@ request({
 
 <!-- eslint-disable no-restricted-syntax, arrow-body-style, arrow-parens -->
 
-``` javascript
+```javascript
 // Do not...
 var arr = [ 1, 2, 3 ];
 var out = arr.map( x => x * x );
@@ -2916,7 +2892,7 @@ var out = arr.map( x => x * x );
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function square( x ) {
     return x * x;
@@ -2941,28 +2917,28 @@ Standard JavaScript convention when naming constants. Using all capital letters 
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var value = 3.14;
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var VALUE = 3.14;
 ```
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 const value = 3.14;
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 const VALUE = 3.14;
 ```
@@ -2975,10 +2951,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## This
 
@@ -2990,7 +2965,7 @@ Common JavaScript convention when caching a reference to `this`.
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function Robot( name ) {
     var self = this;
@@ -3024,7 +2999,7 @@ The use of `bind` incurs a significant performance penalty (TODO: ref). Appropri
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function greet() {
     return this.name;
@@ -3043,7 +3018,7 @@ function Robot() {
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function greeting( ctx ) {
     return greet;
@@ -3071,10 +3046,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Classes
 
@@ -3086,7 +3060,7 @@ Allows class consumers to alias the class constructor.
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 function Robot() {
     return this;
@@ -3100,7 +3074,7 @@ var robo = createRobot(); // => fails
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 function Robot() {
     if ( !(this instanceof Robot) ) {
@@ -3117,17 +3091,16 @@ var robo = createRobot();
 
 ##### Enforcement
 
-* Unit tests
-* Code review
+-   Unit tests
+-   Code review
 
 <!-- </rule> -->
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Setters and Getters
 
@@ -3143,7 +3116,7 @@ Simplifies a class interface.
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do not...
 Robot.prototype.setName = function set( name ) {
     if ( typeof name !== 'string' ) {
@@ -3162,7 +3135,7 @@ Robot.prototype.getName = function get() {
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do...
 Robot.prototype.name = function robotName( name ) {
     if ( !arguments.length ) {
@@ -3194,7 +3167,7 @@ While checks do incur computational cost, not providing such checks can entail a
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do not...
 Stream.prototype.window = function streamWindow( win ) {
     if ( !arguments.length ) {
@@ -3209,7 +3182,7 @@ Stream.prototype.window = function streamWindow( win ) {
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do...
 Stream.prototype.window = function streamWindow( win ) {
     if ( !arguments.length ) {
@@ -3234,10 +3207,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Method Chaining
 
@@ -3253,7 +3225,7 @@ Returning `this` enables method chaining and creates a [fluent interface][fluent
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 function Robot() {
     if ( !(this instanceof Robot) ) {
         return new Robot();
@@ -3299,10 +3271,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Documentation
 
@@ -3318,7 +3289,7 @@ Code is read more often than it is written. Prefer too much documentation to too
 
 <!-- eslint-disable valid-jsdoc -->
 
-``` javascript
+```javascript
 // Do not...
 
 /**
@@ -3333,7 +3304,7 @@ function autocorr( vector ) {
 
 <!-- eslint-disable valid-jsdoc -->
 
-``` javascript
+```javascript
 // Do...
 
 /**
@@ -3353,11 +3324,11 @@ function autocorr( vector ) {
 
 ##### Notes
 
-* For client-side JavaScript, if you are concerned about file size, build/include a distributable file, stripped of comments and minified. Keep source code annotated.
-* __Always__ include example/demo code that is easily runnable.
-* Do __not__ claim that your code is self-documenting. Your code is not. __Period.__
-* Do __not__ rely on tests as your __sole__ source of documentation. While tests are documentation, annotating your source provides greater insight and a means to explain why you made particular design choices.
-* __Always__ make your documentation __beautiful__. Take as much pride in your documentation as you do in your code.
+-   For client-side JavaScript, if you are concerned about file size, build/include a distributable file, stripped of comments and minified. Keep source code annotated.
+-   **Always** include example/demo code that is easily runnable.
+-   Do **not** claim that your code is self-documenting. Your code is not. **Period.**
+-   Do **not** rely on tests as your **sole** source of documentation. While tests are documentation, annotating your source provides greater insight and a means to explain why you made particular design choices.
+-   **Always** make your documentation **beautiful**. Take as much pride in your documentation as you do in your code.
 
 ##### Enforcement
 
@@ -3367,10 +3338,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Performance
 
@@ -3384,7 +3354,7 @@ Performance optimization, particularly of the premature variety, often comes wit
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var y = ( x >> 0 );
 
@@ -3393,14 +3363,14 @@ var y = ( x >> 0 );
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var y = Math.floor( x );
-``` 
+```
 
 ##### Notes
 
-* Take JSPerf tests with a grain of salt, as results can vary significantly from browser to browser and across browser versions.
+-   Take JSPerf tests with a grain of salt, as results can vary significantly from browser to browser and across browser versions.
 
 ##### Enforcement
 
@@ -3410,10 +3380,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Modularity
 
@@ -3425,24 +3394,23 @@ Testing, debugging, maintainability, composition, focused interfaces, and interc
 
 ##### Notes
 
-* Every file within a Node module should be __less than__ `200` lines of code. The only exceptions are tests files, which are generally 2-3x the length of the files they test. If a file is longer than `200` lines, the code is undoubtedly too complex, not maintainable, hard to test, and needs to be refactored into smaller sub-modules. Ideally, an individual file should __never__ be longer than `80` lines.
-* Prefer only __1__ `function` per file. A file which contains fewer functions is easier to test, read, and maintain. This is particularly __true__ for Node modules.
-* __Always__ bear in mind the single responsibility principle.
-* __Always__ strive for reusability.
+-   Every file within a Node module should be **less than** `200` lines of code. The only exceptions are tests files, which are generally 2-3x the length of the files they test. If a file is longer than `200` lines, the code is undoubtedly too complex, not maintainable, hard to test, and needs to be refactored into smaller sub-modules. Ideally, an individual file should **never** be longer than `80` lines.
+-   Prefer only **1** `function` per file. A file which contains fewer functions is easier to test, read, and maintain. This is particularly **true** for Node modules.
+-   **Always** bear in mind the single responsibility principle.
+-   **Always** strive for reusability.
 
 ##### Enforcement
 
-* Look for parts of an implementation which can be extracted into reusable components.
-* Code review 
+-   Look for parts of an implementation which can be extracted into reusable components.
+-   Code review 
 
 <!-- </rule> -->
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Client-side JavaScript
 
@@ -3454,14 +3422,14 @@ Relying on monolithic libraries, such as jQuery, for DOM manipulation leads to c
 
 ##### Bad Example
 
-``` javascript
+```javascript
 // Do not...
 var el = jQuery( '#main' );
 ```
 
 ##### Good Example
 
-``` javascript
+```javascript
 // Do...
 var el = document.querySelector( '#main' );
 ```
@@ -3484,7 +3452,7 @@ Prevents variable leakage.
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do...
 (function foo() {
     'use strict';
@@ -3512,7 +3480,7 @@ Helps minimize global variable name collisions.
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do not...
 window.start = function start() {
     // Do something...
@@ -3524,7 +3492,7 @@ window.name = 'App';
 
 <!-- eslint-disable no-restricted-syntax -->
 
-``` javascript
+```javascript
 // Do...
 var myApp = {};
 myApp.name = 'App';
@@ -3543,10 +3511,9 @@ Code review.
 
 <!-- </rule-set> -->
 
-
 <!-- <rule-set> -->
 
----
+* * *
 
 ## Dependencies
 
@@ -3556,18 +3523,17 @@ Code review.
 
 ##### Reason
 
-Often, more focused modules are available which can accomplish the same task. In general, be __explicit__ in what you require.
+Often, more focused modules are available which can accomplish the same task. In general, be **explicit** in what you require.
 
 ##### Notes
 
-* In particular, avoid the following libraries:
+-   In particular, avoid the following libraries:
 
-  * underscore
-  * lodash
-  * async
+    -   underscore
+    -   lodash
+    -   async
 
-
-##### Enforcement 
+##### Enforcement
 
 Code review.
 
@@ -3579,25 +3545,25 @@ Code review.
 
 ##### Reason
 
-Any dependency you use becomes __your__ responsibility. Demand the same level of robustness and correctness in your dependencies as you do in your code.
+Any dependency you use becomes **your** responsibility. Demand the same level of robustness and correctness in your dependencies as you do in your code.
 
 ##### Notes
 
-* While GitHub stars and downloads are rough indicators, place more emphasis on the following:
+-   While GitHub stars and downloads are rough indicators, place more emphasis on the following:
 
-  * Code quality
+    -   Code quality
 
-    - conciseness
-    - maintainability
+        -   conciseness
+        -   maintainability
 
-  * Documentation
-    
-    - APIs
-    - examples
+    -   Documentation
 
-  * Test cases
+        -   APIs
+        -   examples
 
-* For most cases, do __not__ place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
+    -   Test cases
+
+-   For most cases, do **not** place much weight on how recently the module was updated. Small, focused, well-written modules should not require much updating.
 
 ##### Enforcement
 
@@ -3607,22 +3573,19 @@ Code review.
 
 <!-- </rule-set> -->
 
-
----
+* * *
 
 ## Additional Resources
 
-* [Airbnb JavaScript Style Guide][airbnb]
-* [Idiomatic.js][idiomatic-js]
-* [Popular Convention][popular-convention]
-* [JavaScript Quality Guide][quality-guide]
-* [Unix Philosophy][unix-philosophy]
-
+-   [Airbnb JavaScript Style Guide][airbnb]
+-   [Idiomatic.js][idiomatic-js]
+-   [Popular Convention][popular-convention]
+-   [JavaScript Quality Guide][quality-guide]
+-   [Unix Philosophy][unix-philosophy]
 
 ## License
 
 This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
-
 
 <section class="links">
 
@@ -3631,9 +3594,11 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 [sublime-text]: http://www.sublimetext.com/
 
 [editorconfig]: http://editorconfig.org/
+
 [sublime-text-editorconfig]: https://github.com/sindresorhus/editorconfig-sublime
 
 [atom-editorconfig]: https://github.com/sindresorhus/atom-editorconfig
+
 [chrome-editorconfig]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
 
 [ecma-262]: http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
@@ -3641,6 +3606,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 [array-fast-elements]: https://github.com/thlorenz/v8-perf/blob/master/data-types.md#fast-elements
 
 [function-statements]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
+
 [function-expressions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 
 [hoisting]: https://github.com/buildfirst/buildfirst/tree/master/ch05/04_hoisting
@@ -3648,7 +3614,9 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 [strict-mode]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 [uncaught-exception]: https://nodejs.org/api/process.html#process_event_uncaughtexception
+
 [errbacks]: https://nodejs.org/api/fs.html
+
 [http-status-codes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 [jsdoc]: http://usejsdoc.org/#Getting_Started
@@ -3658,9 +3626,13 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 [native-dom-equivalents]: http://www.sitepoint.com/jquery-vs-raw-javascript-1-dom-forms/
 
 [airbnb]: https://github.com/airbnb/javascript
+
 [idiomatic-js]: https://github.com/rwaldron/idiomatic.js/
+
 [popular-convention]: http://sideeffect.kr/popularconvention/#javascript
+
 [quality-guide]: https://github.com/bevacqua/js
+
 [unix-philosophy]: http://www.faqs.org/docs/artu/ch01s06.html
 
 [license]: https://creativecommons.org/licenses/by-sa/4.0/

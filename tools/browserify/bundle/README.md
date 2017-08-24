@@ -2,7 +2,6 @@
 
 > Bundle files into a single file using [browserify][browserify].
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,15 +16,15 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var bundle = require( '@stdlib/tools/browserify/bundle' );
 ```
 
-#### bundle( files, \[dest,\] clbk )
+#### bundle( files, \[dest,] clbk )
 
 Bundle files into a single file using [browserify][browserify].
 
-``` javascript
+```javascript
 var files = [
     '/foo/bar.js',
     '/beep/boop.js'
@@ -43,7 +42,7 @@ function clbk( error, bundle ) {
 
 To specify an output file path, provide a `dest` argument.
 
-``` javascript
+```javascript
 var files = [
     '/foo/bar.js',
     '/beep/boop.js'
@@ -76,7 +75,7 @@ function clbk( error ) {
 
 ## Examples
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var bundle = require( '@stdlib/tools/browserify/bundle' );
 
@@ -99,7 +98,7 @@ function onBundle( error, output ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -111,7 +110,7 @@ function onBundle( error, output ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: browserify-bundle [options] file1 file2 ...
 
 Options:
@@ -138,7 +137,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ browserify-bundle ./examples/fixtures/index.js
 ```
 

@@ -2,7 +2,6 @@
 
 > Generate a [RawGit][rawgit] URL for a file hosted in a public GitHub repository.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var rawgit = require( '/path/to/@stdlib/tools/utils/rawgit-url' );
 ```
 
@@ -25,7 +24,7 @@ var rawgit = require( '/path/to/@stdlib/tools/utils/rawgit-url' );
 
 Returns a [RawGit][rawgit] URL for a file hosted in a public GitHub repository.
 
-``` javascript
+```javascript
 var opts = {
     'slug': 'stdlib-js/stdlib/5c53c78310e7c2cb8b3c166555d0fb81a3723f34',
     'file': 'README.md'
@@ -37,23 +36,23 @@ var url = rawgit( opts );
 
 The function accepts the following `options`:
 
-* __slug__: public GitHub repository slug (*required*). The slug should include `owner` and `repo` information and should include either `commit`, `branch`, or `tag` information. For example,
+-   **slug**: public GitHub repository slug (_required_). The slug should include `owner` and `repo` information and should include either `commit`, `branch`, or `tag` information. For example,
 
-  - `stdlib-js/stdlib/5c53c78310e7c2cb8b3c166555d0fb81a3723f34`
-  - `stdlib-js/stdlib/develop`
-  - ...etc.
+    -   `stdlib-js/stdlib/5c53c78310e7c2cb8b3c166555d0fb81a3723f34`
+    -   `stdlib-js/stdlib/develop`
+    -   ...etc.
 
-* __file__: filepath (*required*). For example,
+-   **file**: filepath (_required_). For example,
 
-  - `lib/index.js` 
-  - `./README.md`
-  - ...etc.
+    -   `lib/index.js` 
+    -   `./README.md`
+    -   ...etc.
 
-* __cdn__: `boolean` indicating whether to return a CDN URL. Default: `true`.
+-   **cdn**: `boolean` indicating whether to return a CDN URL. Default: `true`.
 
 By default, the function returns a CDN URL. To return a (non-production) URL for development or testing, set the `cdn` option to `false`.
 
-``` javascript
+```javascript
 var opts = {
     'slug': 'stdlib-js/stdlib/develop',
     'file': 'lib/node_modules/@stdlib/index.js',
@@ -82,7 +81,7 @@ var url = rawgit( opts );
 
 ## Examples
 
-``` javascript
+```javascript
 var rawgit = require( '/path/to/@stdlib/tools/utils/rawgit-url' );
 
 var opts = {
@@ -101,8 +100,7 @@ console.log( url );
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -114,7 +112,7 @@ console.log( url );
 
 ### Usage
 
-``` bash
+```bash
 Usage: rawgit [options] <file>
 
 Options:
@@ -134,24 +132,23 @@ Options:
 
 <section class="notes">
 
-
 ### Notes
 
-* If not provided a `slug`, the module attempts to resolve a `slug` from a local `.git` repository located in the current working directory of the calling process. The `slug` is a combination of `remote.origin.url` and the __current__ Git hash. For example,
+-   If not provided a `slug`, the module attempts to resolve a `slug` from a local `.git` repository located in the current working directory of the calling process. The `slug` is a combination of `remote.origin.url` and the **current** Git hash. For example,
 
-   ``` bash
-   $ git config --get remote.origin.url
-   https://github.com/stdlib-js/stdlib.git
+    ```bash
+    $ git config --get remote.origin.url
+    https://github.com/stdlib-js/stdlib.git
 
-   $ git rev-parse HEAD
-   5c53c78310e7c2cb8b3c166555d0fb81a3723f34
-   ```
+    $ git rev-parse HEAD
+    5c53c78310e7c2cb8b3c166555d0fb81a3723f34
+    ```
 
 becomes
 
-   ``` javascript
-   var slug = 'stdlib-js/stdlib/5c53c78310e7c2cb8b3c166555d0fb81a3723f34';
-   ```
+```javascript
+var slug = 'stdlib-js/stdlib/5c53c78310e7c2cb8b3c166555d0fb81a3723f34';
+```
 
 </section>
 
@@ -163,14 +160,14 @@ becomes
 
 ### Examples
 
-``` bash
+```bash
 $ rawgit README.md --slug 'stdlib-js/stdlib/develop'
 https://cdn.rawgit.com/stdlib-js/stdlib/develop/README.md
 ```
 
 To infer a GitHub repository `slug` from a local `.git` repository, omit the `slug` option.
 
-``` bash
+```bash
 $ rawgit docs/assets/web/logo_header.png
 https://cdn.rawgit.com/stdlib-js/stdlib/345a31cb0e0cc534ccedaa91775873f3da2038c2/docs/assets/web/logo_header.png
 ```

@@ -2,7 +2,6 @@
 
 > Beep boop.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -19,15 +18,15 @@ Hello world!
 
 ## Usage
 
-``` javascript
+```javascript
 var beep = require( '@stdlib/beep/boop' );
 ```
 
-#### beep( str, \[options,\] clbk )
+#### beep( str, \[options,] clbk )
 
 Beep boop.
 
-``` javascript
+```javascript
 beep( 'boop', clbk );
 
 function clbk( error, result ) {
@@ -48,7 +47,7 @@ function clbk( error, result ) {
 
 ## Notes
 
-* Foo bar.
+-   Foo bar.
 
 </section>
 
@@ -60,7 +59,7 @@ function clbk( error, result ) {
 
 ## Examples
 
-``` javascript
+```javascript
 var beep = require( '@stdlib/beep/boop' );
 
 beep( 'boop', clbk );
@@ -79,7 +78,7 @@ function clbk( error, result ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -91,7 +90,7 @@ function clbk( error, result ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: beep [options]
 
 Options:
@@ -110,9 +109,9 @@ Options:
 
 ### Notes
 
-* Bip bap.
-* Bop bup.
-* Bep byp.
+-   Bip bap.
+-   Bop bup.
+-   Bep byp.
 
 </section>
 
@@ -124,7 +123,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ beep
 boop
 ```
@@ -143,7 +142,7 @@ boop
 
 ## References
 
-* Beep (2016). "Boop". See also [here][here]. 
+-   Beep (2016). "Boop". See also [here][here]. 
 
 </section>
 

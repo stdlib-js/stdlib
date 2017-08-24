@@ -2,27 +2,25 @@
 
 > List installed package dependencies.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var pkgs = require( '@stdlib/tools/pkgs/installed' );
 ```
 
-#### pkgs( \[options\], clbk )
+#### pkgs( \[options], clbk )
 
 Generates a list of installed package dependencies. 
 
-``` javascript
+```javascript
 pkgs( onPkgs );
 
 function onPkgs( error, list ) {
@@ -35,13 +33,13 @@ function onPkgs( error, list ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. Default: current working directory.
-* __depth__: search depth. Default: `+infinity` (the entire dependency tree).
-* __dev__: `boolean` indicating whether to include dev dependencies. Default: `true`.
+-   **dir**: root directory from which to search for packages. Default: current working directory.
+-   **depth**: search depth. Default: `+infinity` (the entire dependency tree).
+-   **dev**: `boolean` indicating whether to include dev dependencies. Default: `true`.
 
 By default, the function searches the entire package dependency tree. To limit the search depth, set the `depth` option.
 
-``` javascript
+```javascript
 var opts = {
     'depth': 0 // search only top-level installed packages
 };
@@ -58,7 +56,7 @@ function onPkgs( error, list ) {
 
 To exclude development package dependencies, set the `dev` option to `false`.
 
-``` javascript
+```javascript
 var opts = {
     'dev': false
 };
@@ -77,7 +75,6 @@ function onPkgs( error, list ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -90,8 +87,7 @@ function onPkgs( error, list ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -101,7 +97,7 @@ function onPkgs( error, list ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: installed-pkgs [options] [dir]
 
 Options:
@@ -116,23 +112,21 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If not provided a `dir` argument, the search directory is the current working directory.
+-   If not provided a `dir` argument, the search directory is the current working directory.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ DEBUG=* installed-pkgs
 ...
 ...
@@ -146,7 +140,6 @@ $ DEBUG=* installed-pkgs
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

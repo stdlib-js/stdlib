@@ -2,20 +2,19 @@
 
 > List stdlib namespaces.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var ls = require( '@stdlib/tools/pkgs/namespaces' );
 ```
 
-#### ls( \[options,\] clbk )
+#### ls( \[options,] clbk )
 
 Asynchronously returns a list of stdlib namespaces.
 
-``` javascript
+```javascript
 ls( onList );
 
 function onList( error, names ) {
@@ -28,11 +27,11 @@ function onList( error, names ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for namespaces. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
+-   **dir**: root directory from which to search for namespaces. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
 
 To search from a descendant directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': './@stdlib/math/base'
 };
@@ -47,12 +46,11 @@ function onList( error, names ) {
 }
 ```
 
-
-#### ls.sync( \[options\] )
+#### ls.sync( \[options] )
 
 Synchronously returns a list of stdlib namespaces.
 
-``` javascript
+```javascript
 var names = ls.sync();
 // returns [...]
 ```
@@ -63,23 +61,21 @@ The function accepts the same `options` as `ls()` above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* The function only returns namespaces under the `@stdlib` scope.
+-   The function only returns namespaces under the `@stdlib` scope.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var ls = require( '@stdlib/tools/pkgs/namespaces' );
 
 ls( onList );
@@ -96,8 +92,7 @@ function onList( error, names ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -107,7 +102,7 @@ function onList( error, names ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: stdlib-namespaces [options] [dir]
 
 Options:
@@ -124,7 +119,7 @@ Options:
 
 ### Notes
 
-* If not provided a `dir` argument, the search directory is the current working directory.
+-   If not provided a `dir` argument, the search directory is the current working directory.
 
 </section>
 
@@ -134,7 +129,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ stdlib-namespaces
 <package_name>
 <package_name>
@@ -148,7 +143,6 @@ $ stdlib-namespaces
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

@@ -2,7 +2,6 @@
 
 > Validate a `package.json`.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var isValid = require( '@stdlib/tools/pkg-json/validate' );
 ```
 
@@ -25,7 +24,7 @@ var isValid = require( '@stdlib/tools/pkg-json/validate' );
 
 Validates a `package.json`.
 
-``` javascript
+```javascript
 var pkg = {
     'name': 'beep',
     'version': '0.0.0'
@@ -56,7 +55,7 @@ var errs = isValid.errors;
 
 ## Examples
 
-``` javascript
+```javascript
 var isValid = require( '@stdlib/tools/pkg-json/validate' );
 
 var pkg = require( './package.json' );
@@ -71,7 +70,7 @@ var errs = isValid.errors;
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -83,7 +82,7 @@ var errs = isValid.errors;
 
 ### Usage
 
-``` bash
+```bash
 Usage: validate-package-json [options] [json]
 
 Options:
@@ -102,7 +101,7 @@ Options:
 
 ### Notes
 
-* If successful, the program prints `true` to `stdout`. If not successful, the program prints validation errors to `stderr`.
+-   If successful, the program prints `true` to `stdout`. If not successful, the program prints validation errors to `stderr`.
 
 </section>
 
@@ -114,7 +113,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ validate-package-json "$(cat ./package.json)"
 ```
 

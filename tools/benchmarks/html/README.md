@@ -2,7 +2,6 @@
 
 > Generate an HTML file for running benchmarks.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,15 +16,15 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var build = require( '@stdlib/tools/benchmarks/html' );
 ```
 
-#### build( bundle, \[options,\] clbk )
+#### build( bundle, \[options,] clbk )
 
 Given a `bundle` URL from which to load a benchmarks bundle, returns an HTML file for running benchmarks.
 
-``` javascript
+```javascript
 var bundle = '/foo/bar/bundle.js';
 
 build( bundle, clbk );
@@ -40,12 +39,12 @@ function clbk( error, html ) {
 
 The function accepts the following `options`:
 
-* __out__: output file path.
-* __title__: HTML title. Default: `'Benchmarks'`.
+-   **out**: output file path.
+-   **title**: HTML title. Default: `'Benchmarks'`.
 
 To specify an output file path, set the `out` option.
 
-``` javascript
+```javascript
 var bundle = '/foo/bar/bundle.js';
 
 var opts = {
@@ -79,7 +78,7 @@ function clbk( error ) {
 
 ## Examples
 
-``` javascript
+```javascript
 var build = require( '@stdlib/tools/benchmarks/html' );
 
 build( '/foo/bar/bundle.js', onBuild );
@@ -98,7 +97,7 @@ function onBuild( error, html ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -110,7 +109,7 @@ function onBuild( error, html ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: benchmarks-html [options] url
 
 Options:
@@ -138,7 +137,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ benchmarks-html /foo/bar/beep.js
 ```
 

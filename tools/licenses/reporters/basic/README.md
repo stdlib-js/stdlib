@@ -2,19 +2,17 @@
 
 > Basic license information reporter.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/basic' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/basic' );
 
 Returns (unfiltered) license results.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
@@ -39,7 +37,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -52,8 +49,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -63,7 +59,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-reporter [options]
 
 Options:
@@ -76,30 +72,27 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ licenses | licenses-reporter
 ```
 
 Example output:
 
-``` text
-
+```text
 Package licenses:
 
 path-platform@0.0.1
@@ -117,7 +110,6 @@ resolve@0.4.3
 shell-quote@1.3.3
 ├── package.json: MIT
 └── readme: MIT
-
 ```
 
 </section>
@@ -127,7 +119,6 @@ shell-quote@1.3.3
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

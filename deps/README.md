@@ -10,10 +10,10 @@ This directory is the target directory for installing vendor dependencies (i.e.,
 
 The directory is structured as follows:
 
-* `deps/checksums`: vendor dependency checksums.
-* `deps/test`: vendor dependency installation tests.
-* `deps/tmp`: location for storing dependency downloads.
-* `deps/build`: location for stored dependency builds.
+-   `deps/checksums`: vendor dependency checksums.
+-   `deps/test`: vendor dependency installation tests.
+-   `deps/tmp`: location for storing dependency downloads.
+-   `deps/build`: location for stored dependency builds.
 
 Neither the `tmp` nor `build` directory should be committed to the project repository.
 

@@ -2,7 +2,6 @@
 
 > Return the URI corresponding to a provided id.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,17 +16,17 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var id2uri = require( '@stdlib/tools/links/id2uri' );
 ```
 
 <a name="async"></a>
 
-#### id2uri( id, \[options,\] clbk )
+#### id2uri( id, \[options,] clbk )
 
 Returns the `URI` corresponding to a provided `id`.
 
-``` javascript
+```javascript
 id2uri( 'bibtex', clbk );
 
 function clbk( error, uri ) {
@@ -41,11 +40,11 @@ function clbk( error, uri ) {
 
 The function accepts the following `options`:
 
-* __database__: path to a link database.
+-   **database**: path to a link database.
 
 To use an alternative link database, set the `database` option.
 
-``` javascript
+```javascript
 var opts = {
     'database': './path/to/link/database/json'
 };
@@ -60,12 +59,11 @@ function clbk( error, uri ) {
 }
 ```
 
-
-#### id2uri.sync( id\[, options\] )
+#### id2uri.sync( id\[, options] )
 
 Synchronously returns the `URI` which corresponds to a provided `id`.
 
-``` javascript
+```javascript
 var uri = id2uri.sync( 'bibtex' );
 if ( uri instanceof Error ) {
     throw id;
@@ -86,8 +84,8 @@ The method accepts the same `options` as [`id2uri()`](#async) above.
 
 ## Notes
 
-* If a function is unable to resolve a `URI`, the function returns `null`.
-* A link database is resolved relative to the current working directory of the calling process and should be a [JSON][json] file.
+-   If a function is unable to resolve a `URI`, the function returns `null`.
+-   A link database is resolved relative to the current working directory of the calling process and should be a [JSON][json] file.
 
 </section>
 
@@ -99,7 +97,7 @@ The method accepts the same `options` as [`id2uri()`](#async) above.
 
 ## Examples
 
-``` javascript
+```javascript
 var id2uri = require( '@stdlib/tools/links/id2uri' );
 
 id2uri( 'stdlib', clbk );
@@ -118,7 +116,7 @@ function clbk( error, uri ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -130,7 +128,7 @@ function clbk( error, uri ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: id2uri [options] [<id>]
 
 Options:
@@ -150,7 +148,7 @@ Options:
 
 ### Notes
 
-* If invoked without an id, the CLI will interactively prompt for argument input.
+-   If invoked without an id, the CLI will interactively prompt for argument input.
 
 </section>
 
@@ -162,7 +160,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ id2uri bibtex
 ```
 
@@ -173,7 +171,6 @@ $ id2uri bibtex
 </section>
 
 <!-- /.cli -->
-
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

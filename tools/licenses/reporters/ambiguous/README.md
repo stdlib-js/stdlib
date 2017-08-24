@@ -2,19 +2,17 @@
 
 > Reporter which filters license results for packages having ambiguous license information.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/ambiguous' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/ambiguous' );
 
 Filters licenses results for packages having ambiguous license information.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
@@ -39,7 +37,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -52,8 +49,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -63,7 +59,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-ambiguous [options]
 
 Options:
@@ -76,17 +72,15 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -94,14 +88,13 @@ Options:
 
 To pretty print license results,
 
-``` bash
+```bash
 $ licenses | licenses-ambiguous
 ```
 
 Example output:
 
-``` text
-
+```text
 Packages having ambiguous license information:
 
 fs.realpath@1.0.0
@@ -128,13 +121,12 @@ spdx-expression-parse@1.0.3
 
 To use as part of a pipeline,
 
-``` bash
+```bash
 $ licenses | licenses-ambiguous | cat
 {"id":"...","parents":["..."],...,"licenses":{...}}
 {"id":"...","parents":["..."],...,"licenses":{...}}
 ...
 ```
-
 
 </section>
 
@@ -143,7 +135,6 @@ $ licenses | licenses-ambiguous | cat
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

@@ -2,22 +2,21 @@
 
 > Resolve package dependencies.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var pkgDeps = require( '@stdlib/tools/pkgs/deps' );
 ```
 
 <a name="pkg-deps"></a>
 
-#### pkgDeps( pkgs, \[options,\] clbk )
+#### pkgDeps( pkgs, \[options,] clbk )
 
 Asynchronously resolves package dependencies.
 
-``` javascript
+```javascript
 var pkgs = [ 'tape', 'browserify' ];
 
 pkgDeps( pkgs, clbk );
@@ -32,20 +31,20 @@ function clbk( error, results ) {
 
 Each package is represented by an `object` having the following fields:
 
-* __pkg__: package name, as specified in `pkgs`.
-* __files__: an `array` of module dependencies.
-* __deps__: an `array` of package dependencies.
-* __devDeps__: an `array` of package dev dependencies. Note that this field is __only__ present if `options.dev` is `true`.
+-   **pkg**: package name, as specified in `pkgs`.
+-   **files**: an `array` of module dependencies.
+-   **deps**: an `array` of package dependencies.
+-   **devDeps**: an `array` of package dev dependencies. Note that this field is **only** present if `options.dev` is `true`.
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to resolve packages. May be either an absolute file path or a path relative to the current working directory.
-* __builtins__: `boolean` indicating whether to include built-in package dependencies. Default: `false`.
-* __dev__: `boolean` indicating whether to resolve dev dependencies. Default: `false`.
+-   **dir**: root directory from which to resolve packages. May be either an absolute file path or a path relative to the current working directory.
+-   **builtins**: `boolean` indicating whether to include built-in package dependencies. Default: `false`.
+-   **dev**: `boolean` indicating whether to resolve dev dependencies. Default: `false`.
 
 By default, the function resolves packages relative to the current working directory. To resolve relative to an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/foo/bar/baz'
 };
@@ -62,12 +61,11 @@ function clbk( error, results ) {
 }
 ```
 
-
-#### pkgDeps.sync( pkgs\[, options\] )
+#### pkgDeps.sync( pkgs\[, options] )
 
 Synchronously resolves package dependencies.
 
-``` javascript
+```javascript
 var pkgs = [ 'tape', 'browserify' ];
 
 var results = pkgDeps.sync( pkgs );
@@ -80,12 +78,11 @@ The function accepts the same `options` as [`pkgDeps()`](#pkg-deps) above.
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var resolve = require( 'path' ).resolve;
 var pkgDeps = require( '@stdlib/tools/pkgs/deps' );
 
@@ -110,8 +107,7 @@ function clbk( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -121,7 +117,7 @@ function clbk( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: pkg-deps [options] [<pkg> <pkg> <pkg> ...]
 
 Options:
@@ -138,39 +134,37 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+-   If the split separator is a [regular expression][regexp], ensure that the `split` option is properly **escaped**.
 
-  ``` bash
-  # Not escaped...
-  $ echo -n $'tape\nbrowsery\n' | pkg-deps --split /\r?\n/
+    ```bash
+    # Not escaped...
+    $ echo -n $'tape\nbrowsery\n' | pkg-deps --split /\r?\n/
 
-  # Escaped...
-  $ echo -n $'tape\nbrowserify\n' | pkg-deps --split /\\r?\\n/
-  ```
+    # Escaped...
+    $ echo -n $'tape\nbrowserify\n' | pkg-deps --split /\\r?\\n/
+    ```
 
-* Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
+-   Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ pkg-deps tape browserify
 {...}
 {...}
 ```
 
-``` bash
+```bash
 $ echo -n $'tape\nbrowserify\n' | pkg-deps --split /\\r?\\n/
 {...}
 {...}
@@ -184,10 +178,10 @@ $ echo -n $'tape\nbrowserify\n' | pkg-deps --split /\\r?\\n/
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
 [ndjson]: http://ndjson.org/
 
 </section>

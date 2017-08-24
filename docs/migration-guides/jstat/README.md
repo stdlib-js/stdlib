@@ -2,5 +2,4 @@
 
 > Migration guide for jStat.
 
-
 {{table}}

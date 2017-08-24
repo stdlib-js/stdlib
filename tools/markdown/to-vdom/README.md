@@ -2,7 +2,6 @@
 
 > Convert Markdown to [Virtual DOM][virtual-dom].
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var toVirtualDOM = require( '@stdlib/tools/markdown/to-vdom' );
 ```
 
@@ -25,7 +24,7 @@ var toVirtualDOM = require( '@stdlib/tools/markdown/to-vdom' );
 
 Converts a Markdown `string` or [`Buffer`][node-buffer] to a [Virtual DOM][virtual-dom] tree.
 
-``` javascript
+```javascript
 var vtree = toVirtualDOM( '# Beep\n\n> Boop!' );
 // returns <VTree>
 ```
@@ -48,7 +47,7 @@ var vtree = toVirtualDOM( '# Beep\n\n> Boop!' );
 
 ## Examples
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var toHTML = require( 'vdom-to-html' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
@@ -73,7 +72,7 @@ console.log( toHTML( vtree ) );
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -85,7 +84,7 @@ console.log( toHTML( vtree ) );
 
 ### Usage
 
-``` bash
+```bash
 Usage: markdown-to-vdom [options] [markdown]
 
 Options:
@@ -112,13 +111,13 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ markdown-to-vdom '# Beep\n\n> Boop!'
 ```
 
 To use as a standard stream,
 
-``` bash
+```bash
 $ echo $'# Beep\n\n> Boop!' | markdown-to-vdom
 ```
 
@@ -143,6 +142,7 @@ $ echo $'# Beep\n\n> Boop!' | markdown-to-vdom
 <section class="links">
 
 [node-buffer]: https://nodejs.org/api/buffer.html
+
 [virtual-dom]: https://github.com/Matt-Esch/virtual-dom
 
 </section>

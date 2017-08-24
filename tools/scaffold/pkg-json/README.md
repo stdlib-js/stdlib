@@ -2,7 +2,6 @@
 
 > Create a `package.json`.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,30 +16,30 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var create = require( '@stdlib/tools/scaffold/pkg-json' );
 ```
 
-#### create( \[options\] )
+#### create( \[options] )
 
 Returns a `package.json`.
 
-``` javascript
+```javascript
 var pkg = create();
 // returns <Object>
 ```
 
 The function accepts the following `options`:
 
-* __name__: package [name][package-name]. Package names should be scoped to the `@stdlib` namespace; e.g., `@stdlib/...`.
-* __desc__: package [description][package-description].
-* __keywords__: package [keywords][package-keywords]. The keyword `stdlib` is automatically included in the keyword list and thus does not need to be included.
-* __cmd__: package [command][package-command] for use as a CLI tool.
-* __browser__: browser entry point.
+-   **name**: package [name][package-name]. Package names should be scoped to the `@stdlib` namespace; e.g., `@stdlib/...`.
+-   **desc**: package [description][package-description].
+-   **keywords**: package [keywords][package-keywords]. The keyword `stdlib` is automatically included in the keyword list and thus does not need to be included.
+-   **cmd**: package [command][package-command] for use as a CLI tool.
+-   **browser**: browser entry point.
 
 To return a valid `package.json`, set the `name`, `desc`, and `keywords` options.
 
-``` javascript
+```javascript
 var opts = {
     'name': '@stdlib/math/base/special/erf',
     'desc': 'Error function',
@@ -115,7 +114,7 @@ var pkg = create( opts );
 
 ## Examples
 
-``` javascript
+```javascript
 var create = require( '@stdlib/tools/scaffold/pkg-json' );
 
 var opts = {
@@ -140,10 +139,9 @@ console.dir( pkg );
 
 <!-- /.examples -->
 
-
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -155,7 +153,7 @@ console.dir( pkg );
 
 ### Usage
 
-``` bash
+```bash
 Usage: package-json [options]
 
 Options:
@@ -181,7 +179,7 @@ Options:
 
 ### Notes
 
-* Setting `--space 0` is the equivalent of `--compact`.
+-   Setting `--space 0` is the equivalent of `--compact`.
 
 </section>
 
@@ -193,7 +191,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ package-json
 {
   "name": "{{TODO:name}}",
@@ -234,7 +232,7 @@ $ package-json
 
 To create a valid `package.json`, set the `name`, `desc`, and `keywords` options.
 
-``` bash
+```bash
 $ package-json --name @stdlib/math/base/special/erf --desc 'Error function.' --keywords 'math,mathematics,error,function,erf'
 {
   "name": "@stdlib/math/base/special/erf",
@@ -279,7 +277,7 @@ $ package-json --name @stdlib/math/base/special/erf --desc 'Error function.' --k
 
 To disable pretty printing, set the `compact` option.
 
-``` bash
+```bash
 $ package-json --compact
 {"name":"{{TODO:name}}","version":"0.0.0","description":"{{TODO:description}}","author":{"name":"The Stdlib Authors","url":"https://github.com/stdlib-js/stdlib/graphs/contributors"},"contributors":[{"name":"The Stdlib Authors","url":"https://github.com/stdlib-js/stdlib/graphs/contributors"}],"scripts":{},"main":"./lib","repository":{"type":"git","url":"git://github.com/stdlib-js/stdlib.git"},"homepage":"https://github.com/stdlib-js/stdlib","keywords":["stdlib","{{TODO:keywords}}"],"bugs":{"url":"https://github.com/stdlib-js/stdlib/issues"},"dependencies":{},"devDependencies":{},"engines":{"node":">=0.10.0"},"license":"Apache-2.0"}
 ```
@@ -305,8 +303,11 @@ $ package-json --compact
 <section class="links">
 
 [package-name]: https://docs.npmjs.com/files/package.json#name
+
 [package-description]: https://docs.npmjs.com/files/package.json#description
+
 [package-keywords]: https://docs.npmjs.com/files/package.json#keywords
+
 [package-command]: https://docs.npmjs.com/files/package.json#bin
 
 </section>

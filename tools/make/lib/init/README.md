@@ -25,6 +25,7 @@ This directory contains [`make`][make] recipes for initializing the project deve
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
+
 [git]: https://git-scm.com/
 
 </section>

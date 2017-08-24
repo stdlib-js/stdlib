@@ -2,29 +2,27 @@
 
 > Return a reference corresponding to a citation identifier.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var toReference = require( '@stdlib/tools/bib/citation-reference' );
 ```
 
 <a name="to-reference"></a>
 
-#### toReference( id, \[options,\] clbk )
+#### toReference( id, \[options,] clbk )
 
 Returns a reference corresponding to a citation identifier.
 
-``` javascript
+```javascript
 toReference( '@press1992', clbk );
 
 function clbk( error, reference ) {
@@ -37,12 +35,12 @@ function clbk( error, reference ) {
 
 The function accepts the following `options`:
 
-* __database__: path to a bibliographic database.
-* __csl__: path to a [Citation Style Language][csl] (CSL) file.
+-   **database**: path to a bibliographic database.
+-   **csl**: path to a [Citation Style Language][csl] (CSL) file.
 
 To use a specific bibliographic database, set the `database` option.
 
-``` javascript
+```javascript
 var opts = {
     'database': '/foo/bar/baz/bib.bib'
 };
@@ -59,7 +57,7 @@ function clbk( error, reference ) {
 
 To use a particular [Citation Style Language][csl] (CSL), set the `csl` option.
 
-``` javascript
+```javascript
 var opts = {
     'csl': '/foo/bar/baz/style.csl'
 };
@@ -74,11 +72,11 @@ function clbk( error, reference ) {
 }
 ```
 
-#### toReference.sync( id\[, options\] )
+#### toReference.sync( id\[, options] )
 
 Synchronously return a reference corresponding to a citation identifier.
 
-``` javascript
+```javascript
 var ref = toReference.sync( '@press:1992' );
 // returns '...'
 ```
@@ -89,26 +87,24 @@ The method accepts the same `options` as [`toReference()`](#to-reference) above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* System dependencies:
+-   System dependencies:
 
-  - [pandoc][pandoc]
-  - [pandoc-citeproc][pandoc-citeproc]
+    -   [pandoc][pandoc]
+    -   [pandoc-citeproc][pandoc-citeproc]
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var toReference = require( '@stdlib/tools/bib/citation-reference' );
 
 /* bib.bib
@@ -146,8 +142,7 @@ function clbk( error, reference ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -157,7 +152,7 @@ function clbk( error, reference ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: citation-reference [options] <citation_identifier>
 
 Options:
@@ -176,7 +171,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ citation-reference '@press:1992'
 ...
 ```
@@ -189,12 +184,12 @@ $ citation-reference '@press:1992'
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [csl]: http://citationstyles.org/
 
 [pandoc]: http://pandoc.org/
+
 [pandoc-citeproc]: https://github.com/jgm/pandoc-citeproc
 
 </section>

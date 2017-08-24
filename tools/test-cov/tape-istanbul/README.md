@@ -2,20 +2,19 @@
 
 > [tape][tape] test runner for [Istanbul][istanbul] instrumented source code.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var runner = require( '@stdlib/tools/test-cov/tape-istanbul' );
 ```
 
-#### runner( pattern, \[options,\] clbk )
+#### runner( pattern, \[options,] clbk )
 
 Runs [tape][tape] tests for [Istanbul][istanbul] instrumented source code.
 
-``` javascript
+```javascript
 runner( 'test*.js', done );
 
 function done( error, coverage ) {
@@ -28,12 +27,12 @@ function done( error, coverage ) {
 
 The function accepts the following `options`:
 
-* __global__: global variable containing coverage information. Default: `__coverage__`.
-* __dir__: root directory from which to search for files. May be either a relative or absolute directory path. Relative paths are resolved relative to the current working directory.
+-   **global**: global variable containing coverage information. Default: `__coverage__`.
+-   **dir**: root directory from which to search for files. May be either a relative or absolute directory path. Relative paths are resolved relative to the current working directory.
 
 By default, the function looks for coverage information in a `__coverage__` global variable. To specify an alternative variable, set the `global` option.
 
-``` javascript
+```javascript
 var opts = {
     'global': '$$coverage$$'
 };
@@ -45,14 +44,13 @@ runner( pattern, opts, done );
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
 <!-- eslint-disable no-path-concat -->
 
-``` javascript
+```javascript
 var runner = require( '@stdlib/tools/test-cov/tape-istanbul' );
 
 var pattern;
@@ -78,8 +76,7 @@ runner( pattern, opts, done );
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -89,7 +86,7 @@ runner( pattern, opts, done );
 
 ### Usage
 
-``` bash
+```bash
 Usage: stdlib-tape-istanbul [options] <pattern>
 
 Options:
@@ -109,7 +106,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ stdlib-tape-istanbul 'test*.js'
 ```
 
@@ -121,10 +118,10 @@ $ stdlib-tape-istanbul 'test*.js'
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [tape]: https://github.com/substack/tape
+
 [istanbul]: https://github.com/gotwarlost/istanbul
 
 </section>

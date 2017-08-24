@@ -2,19 +2,17 @@
 
 > Reporter which groups license results by license type.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/group' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/group' );
 
 Groups license results by license type.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
@@ -39,7 +37,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -52,8 +49,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -63,7 +59,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-group [options]
 
 Options:
@@ -76,30 +72,27 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ licenses | licenses-group
 ```
 
 Example output:
 
-``` text
-
+```text
 Package licenses:
 
 Unlicense:
@@ -135,7 +128,6 @@ WTFPL:
 ├── path-is-inside@1.0.1
 ├── opener@1.4.1
 └── sorted-object@2.0.0
-
 ```
 
 </section>
@@ -145,7 +137,6 @@ WTFPL:
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

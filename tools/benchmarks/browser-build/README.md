@@ -2,7 +2,6 @@
 
 > Build assets for running benchmarks in a web browser.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,17 +16,17 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var build = require( '@stdlib/tools/benchmarks/browser-build' );
 ```
 
-#### build( root, output, \[options,\] clbk )
+#### build( root, output, \[options,] clbk )
 
 Given a `root` directory from which to search for benchmarks and an output directory, build assets for running benchmarks in a web browser.
 
 <!-- eslint-disable no-redeclare -->
 
-``` javascript
+```javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
 var root = cwd();
@@ -49,17 +48,17 @@ function clbk( error, bool ) {
 
 The function accepts the following `options`:
 
-* __pattern__: glob pattern. Default: `'**/benchmark*.js'`.
-* __bundle__: output bundle filename. Default: `'benchmark_bundle.js'`.
-* __html__: output HTML filename. Default: `'benchmarks.html'`.
-* __mount__: URL path on which to a mount a bundle. Default: `'/'`.
-* __title__: HTML title. Default: `'Benchmarks'`.
+-   **pattern**: glob pattern. Default: `'**/benchmark*.js'`.
+-   **bundle**: output bundle filename. Default: `'benchmark_bundle.js'`.
+-   **html**: output HTML filename. Default: `'benchmarks.html'`.
+-   **mount**: URL path on which to a mount a bundle. Default: `'/'`.
+-   **title**: HTML title. Default: `'Benchmarks'`.
 
 To provide an alternative glob pattern, set the `pattern` option.
 
 <!-- eslint-disable no-redeclare -->
 
-``` javascript
+```javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
 var root = cwd();
@@ -87,7 +86,7 @@ To mount a bundle on a URL path, set the `mount`option.
 
 <!-- eslint-disable no-redeclare -->
 
-``` javascript
+```javascript
 var cwd = require( '@stdlib/utils/cwd' );
 
 var root = cwd();
@@ -131,7 +130,7 @@ function clbk( error, bool ) {
 
 <!-- eslint-disable no-redeclare -->
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var mkdirp = require( 'mkdirp' ).sync;
@@ -168,7 +167,7 @@ function clbk( error, bool ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -180,7 +179,7 @@ function clbk( error, bool ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: benchmarks-browser-build [options] [dir]
 
 Options:
@@ -205,7 +204,7 @@ Options:
 
 ### Notes
 
-* If not provided a root directory, the root directory is the current working directory. 
+-   If not provided a root directory, the root directory is the current working directory. 
 
 </section>
 
@@ -217,7 +216,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ mkdir ./build && benchmarks-browser-build --pattern 'index.js' --out=./build ./examples/fixtures
 ```
 

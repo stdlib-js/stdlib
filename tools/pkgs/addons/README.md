@@ -2,20 +2,19 @@
 
 > Find [add-ons][node-add-ons].
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var findAddons = require( '@stdlib/tools/pkgs/addons' );
 ```
 
-#### findAddons( \[options,\] clbk )
+#### findAddons( \[options,] clbk )
 
 Asynchronously search for [add-ons][node-add-ons].
 
-``` javascript
+```javascript
 findAddons( onAddons );
 
 function onAddons( error, pkgs ) {
@@ -28,13 +27,13 @@ function onAddons( error, pkgs ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for [add-ons][node-add-ons]. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
-* __pattern__: glob pattern used to find [add-ons][node-add-ons]. Default: `'**/package.json'` (note: pattern __must__ end with `package.json`).
-* __ignore__: list of glob patterns used to exclude matches.
+-   **dir**: root directory from which to search for [add-ons][node-add-ons]. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
+-   **pattern**: glob pattern used to find [add-ons][node-add-ons]. Default: `'**/package.json'` (note: pattern **must** end with `package.json`).
+-   **ignore**: list of glob patterns used to exclude matches.
 
 To search from an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/foo/bar/baz'
 };
@@ -51,7 +50,7 @@ function onAddons( error, pkgs ) {
 
 To provide an alternative include filter, set the `pattern` option.
 
-``` javascript
+```javascript
 var opts = {
     'pattern': '**/foo/**/package.json'
 };
@@ -68,7 +67,7 @@ function onAddons( error, pkgs ) {
 
 To exclude matches, set the `ignore` option.
 
-``` javascript
+```javascript
 var opts = {
     'ignore': [
         'node_modules/**',
@@ -87,12 +86,11 @@ function onAddons( error, pkgs ) {
 }
 ```
 
-
-#### findAddons.sync( \[options\] )
+#### findAddons.sync( \[options] )
 
 Synchronously searches for [add-ons][node-add-ons].
 
-``` javascript
+```javascript
 var pkgs = findAddons.sync();
 // returns [...]
 ```
@@ -103,24 +101,22 @@ The function accepts the same `options` as `findAddons()` above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* The implementation resolves [add-ons][node-add-ons] by resolving package `src` directories and `make` files. 
-* __No__ attempt is made to ensure that a native implementation actually exists.
+-   The implementation resolves [add-ons][node-add-ons] by resolving package `src` directories and `make` files. 
+-   **No** attempt is made to ensure that a native implementation actually exists.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var findAddons = require( '@stdlib/tools/pkgs/addons' );
 
 findAddons( onAddons );
@@ -137,8 +133,7 @@ function onAddons( error, pkgs ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -148,7 +143,7 @@ function onAddons( error, pkgs ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: find-pkg-addons [options] [dir]
 
 Options:
@@ -163,29 +158,27 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If not provided a `dir` argument, the current working directory is the search directory.
+-   If not provided a `dir` argument, the current working directory is the search directory.
 
-* To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
+-   To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
-  ``` bash
-  $ find-pkg-addons --ignore=node_modules/** --ignore=build/** --ignore=reports/**
-  ```
+    ```bash
+    $ find-pkg-addons --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+    ```
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ find-pkg-addons
 <pkg>
 <pkg>
@@ -199,7 +192,6 @@ $ find-pkg-addons
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

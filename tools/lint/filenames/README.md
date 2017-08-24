@@ -2,20 +2,19 @@
 
 > Lint filenames.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var lint = require( '@stdlib/tools/lint/filenames' );
 ```
 
-#### lint( \[options,\] clbk )
+#### lint( \[options,] clbk )
 
 Asynchronously lints filenames.
 
-``` javascript
+```javascript
 lint( onLint );
 
 function onLint( error, names ) {
@@ -28,12 +27,12 @@ function onLint( error, names ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for files. May be either an absolute or relative directory path. Default: current working directory.
-* __pattern__: filename pattern. Default: `'**/*'`.
+-   **dir**: root directory from which to search for files. May be either an absolute or relative directory path. Default: current working directory.
+-   **pattern**: filename pattern. Default: `'**/*'`.
 
 To search from a specific directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': './'
 };
@@ -50,7 +49,7 @@ function onLint( error, names ) {
 
 To limit the filename search to a subset of files, set the `pattern` option.
 
-``` javascript
+```javascript
 var opts = {
     'pattern': '**/*.js'
 };
@@ -65,12 +64,11 @@ function onLint( error, names ) {
 }
 ```
 
-
-#### lint.sync( \[options\] )
+#### lint.sync( \[options] )
 
 Synchronously lints filenames.
 
-``` javascript
+```javascript
 var names = lint.sync();
 // returns [...]
 ```
@@ -81,38 +79,35 @@ The function accepts the same `options` as `lint()` above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* If all filenames are valid, the returned result is an empty `array`.
+-   If all filenames are valid, the returned result is an empty `array`.
 
-* Each failure is returned as an `object` with the following properties:
+-   Each failure is returned as an `object` with the following properties:
 
-  - __name__: filename.
-  - __error__: reason for failure.
+    -   **name**: filename.
+    -   **error**: reason for failure.
 
-  ``` text
-  {
-      "name": "path/to/failing/filename.abc",
-      "error": "filename must be lowercase."
-  }
-  ```
+    ```text
+    {
+        "name": "path/to/failing/filename.abc",
+        "error": "filename must be lowercase."
+    }
+    ```
 
-* Only filenames which fail are returned.
-
+-   Only filenames which fail are returned.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var lint = require( '@stdlib/tools/lint/filenames' );
 
 lint( onLint );
@@ -129,8 +124,7 @@ function onLint( error, names ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -140,7 +134,7 @@ function onLint( error, names ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: lint-filenames [options] [dir]
 
 Options:
@@ -155,35 +149,33 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Filenames which fail are printed to `stderr` as newline-delimited JSON ([NDJSON][ndjson]).
+-   Filenames which fail are printed to `stderr` as newline-delimited JSON ([NDJSON][ndjson]).
 
-* If not provided a `dir` argument, the current working directory is the search directory.
+-   If not provided a `dir` argument, the current working directory is the search directory.
 
-* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+-   If the split separator is a [regular expression][regexp], ensure that the `split` option is properly **escaped**.
 
-  ``` bash
-  # Not escaped...
-  $ <stdout> | lint-filenames --split /\r?\n/
+    ```bash
+    # Not escaped...
+    $ <stdout> | lint-filenames --split /\r?\n/
 
-  # Escaped...
-  $ <stdout> | lint-filenames --split /\\r?\\n/
-  ```
+    # Escaped...
+    $ <stdout> | lint-filenames --split /\\r?\\n/
+    ```
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ lint-filenames
 {...}
 {...}
@@ -192,7 +184,7 @@ $ lint-filenames
 
 To use as part of a [standard stream][standard-stream] pipeline,
 
-``` bash
+```bash
 $ echo -n $'beep.js\ta/b/c.md\tA.js' | lint-filenames --split /\\t/
 {"name":"A.js","error":"filename must be lowercase."}
 ```
@@ -205,11 +197,12 @@ $ echo -n $'beep.js\ta/b/c.md\tA.js' | lint-filenames --split /\\t/
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [ndjson]: http://ndjson.org/
+
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
 [standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 </section>

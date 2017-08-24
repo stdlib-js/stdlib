@@ -10,7 +10,7 @@
 
 ### Usage
 
-``` bash
+```bash
 Usage: <lint> <filepath>
 ```
 
@@ -18,23 +18,21 @@ Usage: <lint> <filepath>
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* The provided `filepath` should be an absolute file path.
+-   The provided `filepath` should be an absolute file path.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ <lint> /absolute/file/path/to/.travis.yml
 ```
 
@@ -45,7 +43,6 @@ $ <lint> /absolute/file/path/to/.travis.yml
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

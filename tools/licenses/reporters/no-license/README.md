@@ -2,19 +2,17 @@
 
 > Reporter which filters license results for packages not having a license.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/no-license' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/no-license' );
 
 Filters licenses results for packages not having a license.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
@@ -39,7 +37,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -52,8 +49,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -63,7 +59,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-no-license [options]
 
 Options:
@@ -76,17 +72,15 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -94,14 +88,13 @@ Options:
 
 To pretty print license results,
 
-``` bash
+```bash
 $ licenses | licenses-no-license
 ```
 
 Example output:
 
-``` text
-
+```text
 Packages missing a license:
 
 single-line-log@0.4.1
@@ -147,12 +140,11 @@ uglify-js@2.2.5
 path-platform@0.0.1
 ├── path: /path/to/node_modules/testling/node_modules/path-platform
 └── repo: https://github.com/tjfontaine/node-path-platform
-
 ```
 
 To use as part of a pipeline,
 
-``` bash
+```bash
 $ licenses | licenses-no-license | cat
 {"id":"...","parents":["..."],...,"licenses":{...}}
 {"id":"...","parents":["..."],...,"licenses":{...}}
@@ -166,7 +158,6 @@ $ licenses | licenses-no-license | cat
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 
