@@ -32,7 +32,7 @@ function transformer( tree, file, clbk ) {
 	var idx;
 
 	equations = [];
-	idx = -1;
+	idx = 0;
 
 	debug( 'Processing virtual file...' );
 	visit( tree, 'html', visitor );
@@ -64,7 +64,8 @@ function transformer( tree, file, clbk ) {
 			label = LABEL.exec( node.value );
 			if ( label === null ) {
 				debug( 'Invalid node: %s', node.value );
-				throw new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
+				err = new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
+				return done( err );
 			}
 			label = label[ 1 ];
 			debug( 'Label: %s', label );
@@ -93,9 +94,7 @@ function transformer( tree, file, clbk ) {
 	* @private
 	*/
 	function next() {
-		var opts;
-		idx += 1;
-		opts = {
+		var opts = {
 			'label': equations[ idx ].label,
 			'raw': equations[ idx ].raw
 		};
