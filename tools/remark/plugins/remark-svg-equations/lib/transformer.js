@@ -32,7 +32,7 @@ function transformer( tree, file, clbk ) {
 	var idx;
 
 	equations = [];
-	idx = -1;
+	idx = 0;
 
 	debug( 'Processing virtual file...' );
 	visit( tree, 'html', visitor );
@@ -94,9 +94,7 @@ function transformer( tree, file, clbk ) {
 	* @private
 	*/
 	function next() {
-		var opts;
-		idx += 1;
-		opts = {
+		var opts = {
 			'label': equations[ idx ].label,
 			'raw': equations[ idx ].raw
 		};
