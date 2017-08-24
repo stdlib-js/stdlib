@@ -139,7 +139,7 @@ plugins.push([
 ]);
 
 /**
-* Require `*` be used as the emphasis marker.
+* Require `_` be used as the emphasis marker.
 *
 * @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
 *
@@ -155,7 +155,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-emphasis-marker' ),
-	[ 'error', '*' ]
+	[ 'error', '_' ]
 ]);
 
 /**
