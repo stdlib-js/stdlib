@@ -27,10 +27,25 @@ var RAW = /raw="([^"]*)"/;
 * @param {File} file - virtual file
 * @param {Object} options - options
 * @param {Callback} clbk - callback to invoke upon completion
+* @returns {void}
 */
-function lint( tree, file, options, clbk ) {
+function linter( tree, file, options, clbk ) {
+	var equations;
+	var total;
+	var idx;
+
+	equations = [];
+	idx = -1;
+
 	debug( 'Linting file: %s', file.path || '' );
 	visit( tree, 'html', visitor );
+
+	total = equations.length;
+	debug( 'Found %d equations.', total );
+	if ( total === 0 ) {
+		return done();
+	}
+	next();
 
 	/**
 	* Callback invoked upon finding a matching node.
@@ -42,54 +57,78 @@ function lint( tree, file, options, clbk ) {
 	* @returns {void}
 	*/
 	function visitor( node, index, parent ) {
+		if ( EQN_START.test( node.value ) === true ) {
+			debug( 'Found an equation...' );
+			equations.push({
+				'node': node,
+				'parent': parent,
+				'index': index
+			});
+		}
+	} // end FUNCTION visitor()
+
+	/**
+	* Lints the next node.
+	*
+	* @private
+	* @returns {void}
+	*/
+	function next() {
+		var parent;
+		var node;
 		var tmp;
 		var msg;
 		var pos;
-		if ( EQN_START.test( node.value ) === true ) {
-			debug( 'Found an equation...' );
+		var i;
 
-			pos = node.position;
-			pos = pos.start.line + ':' + pos.start.column;
-			if (
-				EQN_END.test( parent.children[ index+1 ].value ) ||
-				EQN_END.test( parent.children[ index+2 ].value )
-			) {
-				debug( 'Equation starting comment has a matching ending comment.' );
-			} else {
-				msg = pos+'   error   Equation elements must have matching starting and ending comments   missing-end-comment';
-				debug( msg );
-				file.message( msg, node );
-			}
+		idx += 1;
+		debug( 'Linting equation...' );
 
-			tmp = LABEL.exec( node.value );
-			if ( tmp && tmp[ 1 ] ) {
-				debug( 'Equation has a label: %s', tmp[ 1 ] );
-			} else {
-				msg = pos+'   error   Equation elements must have a label   missing-equation-label';
-				debug( msg );
-				file.message( msg, node );
-			}
+		parent = equations[ idx ].parent;
+		node = equations[ idx ].node;
+		i = equations[ idx ].index;
 
-			tmp = ALT.exec( node.value );
-			if ( tmp && tmp[ 1 ] ) {
-				debug( 'Equation has alternate text: %s', tmp[ 1 ] );
-			} else {
-				msg = pos+'   error   Equation elements must have alternate text   missing-alternate-text';
-				debug( msg );
-				file.message( msg, node );
-			}
-
-			tmp = RAW.exec( node.value );
-			if ( tmp && tmp[ 1 ] ) {
-				debug( 'Equation has a TeX string: %s', tmp[ 1 ] );
-				tex2svg( tmp[ 1 ], onSVG );
-			} else {
-				msg = pos+'   error   Equation elements must have a TeX string   missing-tex-string';
-				debug( msg );
-				file.message( msg, node );
-				return done();
-			}
+		pos = node.position;
+		pos = pos.start.line + ':' + pos.start.column;
+		if (
+			EQN_END.test( parent.children[ i+1 ].value ) ||
+			EQN_END.test( parent.children[ i+2 ].value )
+		) {
+			debug( 'Equation starting comment has a matching ending comment.' );
+		} else {
+			msg = pos+'   error   Equation elements must have matching starting and ending comments   missing-end-comment';
+			debug( msg );
+			file.message( msg, node );
 		}
+
+		tmp = LABEL.exec( node.value );
+		if ( tmp && tmp[ 1 ] ) {
+			debug( 'Equation has a label: %s', tmp[ 1 ] );
+		} else {
+			msg = pos+'   error   Equation elements must have a label   missing-equation-label';
+			debug( msg );
+			file.message( msg, node );
+		}
+
+		tmp = ALT.exec( node.value );
+		if ( tmp && tmp[ 1 ] ) {
+			debug( 'Equation has alternate text: %s', tmp[ 1 ] );
+		} else {
+			msg = pos+'   error   Equation elements must have alternate text   missing-alternate-text';
+			debug( msg );
+			file.message( msg, node );
+		}
+
+		tmp = RAW.exec( node.value );
+		if ( !tmp || !tmp[ 1 ] ) {
+			msg = pos+'   error   Equation elements must have a TeX string   missing-tex-string';
+			debug( msg );
+			file.message( msg, node );
+			return done();
+		}
+		debug( 'Equation has a TeX string: %s', tmp[ 1 ] );
+		return tex2svg( tmp[ 1 ], onSVG );
+
 		/**
 		* Callback invoked upon attempting to render a TeX equation.
 		*
@@ -107,20 +146,25 @@ function lint( tree, file, options, clbk ) {
 			}
 			done();
 		} // end FUNCTION onSVG()
-	} // end FUNCTION visitor()
+	} // end FUNCTION next()
 
 	/**
-	* Callback invoked after processing an AST.
+	* Callback invoked after processing an AST node.
 	*
 	* @private
+	* @returns {void}
 	*/
 	function done() {
-		debug( 'Finished linting: %s', file.path || '' );
-		clbk();
+		if ( idx === total-1 ) {
+			debug( 'Finished linting: %s', file.path || '' );
+			return clbk();
+		}
+		debug( 'Finished linting equation.' );
+		next();
 	} // end FUNCTION done()
-} // end FUNCTION lint()
+} // end FUNCTION linter()
 
 
 // EXPORTS //
 
-module.exports = rule( 'remark-lint:equations', lint );
+module.exports = rule( 'remark-lint:equations', linter );
