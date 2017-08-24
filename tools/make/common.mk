@@ -314,4 +314,3 @@ DEPS_EMSDK_BINARYEN_VERSION ?= master
 
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
-
