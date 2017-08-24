@@ -64,7 +64,8 @@ function transformer( tree, file, clbk ) {
 			label = LABEL.exec( node.value );
 			if ( label === null ) {
 				debug( 'Invalid node: %s', node.value );
-				throw new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
+				err = new Error( 'invalid node. Equation comments must have a valid label. Node: '+node.value+'.' );
+				return done( err );
 			}
 			label = label[ 1 ];
 			debug( 'Label: %s', label );
