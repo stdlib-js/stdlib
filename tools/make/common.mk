@@ -73,6 +73,9 @@ SRC_DOC_GENERATOR ?= jsdoc
 # Define the code coverage service to use:
 COVERAGE_SERVICE ?= codecov
 
+# Define the linter to use when linting Markdown files:
+MARKDOWN_LINTER ?= remark
+
 
 # COMMANDS #
 
