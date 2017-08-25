@@ -260,22 +260,6 @@
       "serialize"
     ]
   },
-  "https://stdlib.io/": {
-    "id": "stdlib",
-    "description": "A standard library for JavaScript and Node.js.",
-    "short_url": "",
-    "keywords": [
-      "standard",
-      "library",
-      "lib",
-      "stdlib",
-      "javascript",
-      "node.js",
-      "node",
-      "node-js",
-      "nodejs"
-    ]
-  },
   "http://testanything.org/tap-version-13-specification.html": {
     "id": "tap",
     "description": "Test Anything Protocol, a protocol for transmission of unit testing results.",
@@ -1355,6 +1339,15 @@
       "probability",
       "statistics",
       "stats"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Bessel_function#Bessel_functions_of_the_first_kind:_J.CE.B1": {
+    "id": "bessel-j0",
+    "description": "Wikipedia entry for Bessel functions of the first kind.",
+    "short_url": "",
+    "keywords": [
+      "bessel",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/Beta_distribution": {
@@ -2933,6 +2926,22 @@
       "package",
       "pkg",
       "manager"
+    ]
+  },
+  "https://stdlib.io/": {
+    "id": "stdlib",
+    "description": "A standard library for JavaScript and Node.js.",
+    "short_url": "",
+    "keywords": [
+      "standard",
+      "library",
+      "lib",
+      "stdlib",
+      "javascript",
+      "node.js",
+      "node",
+      "node-js",
+      "nodejs"
     ]
   },
   "https://tools.ietf.org/html/rfc3986": {
