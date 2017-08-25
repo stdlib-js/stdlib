@@ -1342,7 +1342,7 @@
     ]
   },
   "https://en.wikipedia.org/wiki/Bessel_function": {
-    "id": "bessel-j0",
+    "id": "bessel",
     "description": "Wikipedia entry for Bessel functions.",
     "short_url": "",
     "keywords": [
