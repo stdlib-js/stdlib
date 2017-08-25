@@ -4,7 +4,7 @@
 
 var copy = require( '@stdlib/utils/copy' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var tex2svg = require( './../../../utils/tex-equation-to-svg' );
+var tex2svg = require( '@stdlib/_tools/utils/tex-equation-to-svg' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var render = require( './render.js' );

@@ -21,6 +21,7 @@ FIND_CPP_TESTS_FIXTURES_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*" \

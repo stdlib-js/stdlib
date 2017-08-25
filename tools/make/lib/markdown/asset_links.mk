@@ -8,7 +8,7 @@ MARKDOWN_ASSET_PATH ?=
 GIT_COMMIT_HASH ?= $(shell $(GIT) rev-parse HEAD)
 
 # Define the path to utility for generating asset links:
-RAWGIT_URL ?= $(TOOLS_DIR)/utils/rawgit-url/bin/cli
+RAWGIT_URL ?= $(TOOLS_PKGS_DIR)/utils/rawgit-url/bin/cli
 
 # Define command-line flags to be used when invoking the utility:
 RAWGIT_URL_FLAGS ?= \

@@ -25,7 +25,7 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define a command to list test files:
-FIND_TOOLS_TESTS_CMD ?= find $(find_kernel_prefix) $(TOOLS_DIR) $(FIND_TOOLS_TESTS_FLAGS)
+FIND_TOOLS_TESTS_CMD ?= find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_TESTS_FLAGS)
 
 # Define the list of test files:
 TOOLS_TESTS ?= $(shell $(FIND_TOOLS_TESTS_CMD))
@@ -38,6 +38,6 @@ TOOLS_TESTS ?= $(shell $(FIND_TOOLS_TESTS_CMD))
 # This target prints a newline-delimited list of test files.
 
 list-tools-tests:
-	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(FIND_TOOLS_TESTS_FLAGS) $(find_print_tools_tests_list)
+	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_TESTS_FLAGS) $(find_print_tools_tests_list)
 
 .PHONY: list-tools-tests
