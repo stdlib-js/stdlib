@@ -33,12 +33,12 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* * [X] checked
+* *   [X] checked
 *
 * @example
 * <!-- Good -->
 *
-* * [x] checked
+* *   [x] checked
 */
 plugins.push([
 	require( 'remark-lint-checkbox-character-style' ),
@@ -59,12 +59,12 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* * [x]    checked
+* *   [x]    checked
 *
 * @example
 * <!-- Good -->
 *
-* * [x] checked
+* *   [x] checked
 */
 plugins.push([
 	require( 'remark-lint-checkbox-content-indent' ),
@@ -139,7 +139,7 @@ plugins.push([
 ]);
 
 /**
-* Require `*` be used as the emphasis marker.
+* Require `_` be used as the emphasis marker.
 *
 * @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
 *
@@ -155,7 +155,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-emphasis-marker' ),
-	[ 'error', '*' ]
+	[ 'error', '_' ]
 ]);
 
 /**
@@ -335,14 +335,14 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-*     * Beep
-*     * Boop
+*     *   Beep
+*     *   Boop
 *
 * @example
 * <!-- Good -->
 *
-* * Beep
-* * Boop
+* *   Beep
+* *   Boop
 *
 */
 plugins.push([
@@ -358,14 +358,14 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* * Beep
-*     - Boop
+* *   Beep
+*   -   Boop
 *
 * @example
 * <!-- Good -->
 *
-* * Beep
-*   - Boop
+* *   Beep
+*     -   Boop
 *
 */
 plugins.push([
@@ -374,12 +374,12 @@ plugins.push([
 ]);
 
 /**
-* Require list items be indented using spaces.
+* Require list items use tab-size indentation.
 *
 * @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
 *
 * @example
-* <!-- Good -->
+* <!-- Bad -->
 *
 * * Hello
 * * World
@@ -387,16 +387,22 @@ plugins.push([
 * @example
 * <!-- Good -->
 *
-* * Beep
-*   boop
+* *   Hello
+* *   World
 *
-* * Bop
-*   bip
+* @example
+* <!-- Good -->
+*
+* *   Beep
+*     boop
+*
+* *   Bop
+*     bip
 *
 */
 plugins.push([
 	require( 'remark-lint-list-item-indent' ),
-	[ 'error', 'space' ]
+	[ 'error', 'tab-size' ]
 ]);
 
 /**
@@ -407,26 +413,26 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* * Beep
-* * Boop
+* *   Beep
+* *   Boop
 *
-* * Bop
+* *   Bop
 *
 * @example
 * <!-- Good -->
 *
-* * Beep
-* * Boop
-* * Bop
+* *   Beep
+* *   Boop
+* *   Bop
 *
 * @example
 * <!-- Okay -->
 *
-* * Beep
+* *   Beep
 *
-* * Boop
+* *   Boop
 *
-* * Bop
+* *   Bop
 *
 */
 plugins.push([
@@ -998,7 +1004,7 @@ plugins.push([
 ]);
 
 /**
-* Never allow table indentation.
+* Never allow table indentation. Note that the exception is when a table correspond to a list item.
 *
 * @see [no-table-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-table-indentation}
 *
@@ -1027,7 +1033,7 @@ plugins.push([
 ]);
 
 /**
-* Never allow the use of spaces.
+* Never allow the use of tabs.
 *
 * @see [no-tabs]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-tabs}
 */
@@ -1133,45 +1139,45 @@ plugins.push([
 ]);
 
 /**
-* Require that the horizontal rule style be three consecutive dashes `---`.
+* Require that the horizontal rule style be three consecutive asterisks `---`.
 *
 * @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
 *
 * @example
 * <!-- Bad -->
 *
-* * * *
+* ---
 *
 * @example
 * <!-- Good -->
 *
-* ---
+* * * *
 *
 */
 plugins.push([
 	require( 'remark-lint-rule-style' ),
-	[ 'error', '---' ]
+	[ 'error', '* * *' ]
 ]);
 
 /**
-* Set the strong marker to underscores.
+* Set the strong marker to asterisks.
 *
 * @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
 *
 * @example
 * <!-- Bad -->
 *
-* **Beep**.
+* __Beep__.
 *
 * @example
 * <!-- Good -->
 *
-* __Beep__.
+* **Beep**.
 *
 */
 plugins.push([
 	require( 'remark-lint-strong-marker' ),
-	[ 'error', '_' ]
+	[ 'error', '*' ]
 ]);
 
 /**
@@ -1250,30 +1256,30 @@ plugins.push([
 ]);
 
 /**
-* Prefer that the unordered list marker be an asterisk `*`, but allow discretion to maximize clarity and readability.
+* Require that the unordered list marker be a dash `-`.
 *
 * @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
 *
 * @example
-* <!-- Okay -->
+* <!-- Bad -->
 *
-* * Beep
-* * Boop
+* *   Beep
+* *   Boop
 *
 * @example
 * <!-- Okay -->
 *
-* * Beep
+* -   Beep
 *
-*   - Foo
-*   - Bar
+*     -   Foo
+*     -   Bar
 *
-* * Boop
+* -   Boop
 *
 */
 plugins.push([
 	require( 'remark-lint-unordered-list-marker-style' ),
-	[ 'off', '*' ]
+	[ 'error', '-' ]
 ]);
 
 

@@ -2,7 +2,6 @@
 
 > Convert Markdown to HTML.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var toHTML = require( '/path/to/@stdlib/tools/markdown/to-html' );
 ```
 
@@ -25,7 +24,7 @@ var toHTML = require( '/path/to/@stdlib/tools/markdown/to-html' );
 
 Converts a Markdown `string` or [`Buffer`][node-buffer] to HTML.
 
-``` javascript
+```javascript
 toHtml( '# Beep\n\n> Boop!', done );
 
 function done( error, html ) {
@@ -55,7 +54,7 @@ function done( error, html ) {
 
 ## Examples
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var toHTML = require( '/path/to/@stdlib/tools/markdown/to-html' );
@@ -85,7 +84,7 @@ function done( error, html ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -97,7 +96,7 @@ function done( error, html ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: markdown-to-html [options] [markdown]
 
 Options:
@@ -124,7 +123,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ markdown-to-html '# Beep\n\n> Boop!'
 <h1 id="beep">Beep</h1>
 <blockquote>
@@ -134,7 +133,7 @@ $ markdown-to-html '# Beep\n\n> Boop!'
 
 To use as a standard stream,
 
-``` bash
+```bash
 $ echo $'# Beep\n\n> Boop!' | markdown-to-html
 <h1 id="beep">Beep</h1>
 <blockquote>

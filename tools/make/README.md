@@ -4,28 +4,27 @@
 
 This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make]. 
 
-
 ## Usage
 
 #### Help
 
 To view a list of available `Makefile` targets,
 
-``` bash
+```bash
 $ make help
 ```
 
----
+* * *
 
 #### REPL
 
 To launch a REPL,
 
-``` bash
+```bash
 $ make repl
 ```
 
----
+* * *
 
 #### Notes
 
@@ -33,7 +32,7 @@ Annotating source code is a useful means for inlining action items and notes. Fo
 
 <!-- eslint-disable no-warning-comments -->
 
-``` javascript
+```javascript
 // FIXME: don't release the zalgo!
 function foo( cb ) {
     if ( bar ) {
@@ -45,50 +44,50 @@ function foo( cb ) {
 
 To retrieve source code annotations,
 
-``` bash
+```bash
 $ make notes
 ```
 
 The following annotations are recognized:
 
-* __TODO__: annotates a future task.
-* __FIXME__: annotates a problem.
-* __HACK__: annotates fragile/non-general solutions.
-* __WARNING__: annotates possible pitfalls or gotchas.
-* __OPTIMIZE__: annotates code which needs optimizing.
-* __NOTE__: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
+-   **TODO**: annotates a future task.
+-   **FIXME**: annotates a problem.
+-   **HACK**: annotates fragile/non-general solutions.
+-   **WARNING**: annotates possible pitfalls or gotchas.
+-   **OPTIMIZE**: annotates code which needs optimizing.
+-   **NOTE**: annotates questions, comments, or anything which does not fit under `TODO`/`FIXME`/`HACK`/`WARNING`/`OPTIMIZE` and should be brought to a reader's attention.
 
----
+* * *
 
 #### Files
 
 The `Makefile` exposes several targets (also used internally) for finding project files. For example, to list all project files, excluding `node_modules`, `build`, `reports`, and hidden directories,
 
-``` bash
+```bash
 $ make list-files
 ```
 
 To filter based on a file name or pattern,
 
-``` bash
+```bash
 # List only README.md files...
 $ make FILES_PATTERN=README.md list-files
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List all files in the is-nan utils directory...
 $ make FILES_FILTER=.*/assert/is-nan/.* list-files
 ```
 
-__Notes__:
+**Notes**:
 
-* Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
+-   Most filters should begin with `.*/` and end with `/.*`, as a filter is used as a regular expression to test a file path.
 
-* The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
+-   The `*_PATTERN` and `*_FILTER` environment variables map to `-name` and `-regex` options, respectively, for the `find` command. For certain types of operations, like regular expressions using `|` for alternative matches, you may need to use `*_FILTER` over `*_PATTERN`. For instance,
 
-    ``` bash
+    ```bash
     # List all `R` test fixtures...
     $ make TESTS_FIXTURES_PATTERN=*.R
 
@@ -98,25 +97,24 @@ __Notes__:
 
 The `Makefile` includes the following common recipes for listing different file types...
 
-
 ##### Sources
 
 To list all source files, excluding examples, benchmarks, and tests,
 
-``` bash
+```bash
 $ make list-sources
 ```
 
 To filter based on a file name or pattern,
 
-``` bash
+```bash
 # List only source files having the filename `index.js`...
 $ make SOURCES_PATTERN=index.js list-sources
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List only source files found in a math directory...
 $ make SOURCES_FILTER=.*/math/.* list-sources
 ```
@@ -125,20 +123,20 @@ $ make SOURCES_FILTER=.*/math/.* list-sources
 
 To list all test files,
 
-``` bash
+```bash
 $ make list-tests
 ```
 
 To filter based on a file name or pattern,
 
-``` bash
+```bash
 # List only the main test files...
 $ make TESTS_PATTERN=test.js list-tests
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List only test files in the fs directory...
 $ make TESTS_FILTER=.*/fs/.* list-tests
 ```
@@ -147,20 +145,20 @@ $ make TESTS_FILTER=.*/fs/.* list-tests
 
 To list all test fixture files,
 
-``` bash
+```bash
 $ make list-tests-fixtures
 ```
 
 To filter based on a file name or pattern,
 
-``` bash
+```bash
 # List only the Julia test fixtures...
 $ make TESTS_FIXTURES_PATTERN=*.jl list-tests-fixtures
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List only test fixture files in the base math directory for special functions...
 $ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-tests-fixtures
 ```
@@ -169,20 +167,20 @@ $ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-tests-fixtures
 
 To list all benchmark files,
 
-``` bash
+```bash
 $ make list-benchmarks
 ```
 
 To filter based on a file name or pattern,
 
-``` bash
+```bash
 # List only the main benchmark files...
 $ make BENCHMARKS_PATTERN=benchmark.js list-benchmarks
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List only benchmark files for base special math functions...
 $ make BENCHMARKS_FILTER=.*/math/base/special/.* list-benchmarks
 ```
@@ -191,20 +189,20 @@ $ make BENCHMARKS_FILTER=.*/math/base/special/.* list-benchmarks
 
 To list all examples files,
 
-``` bash
+```bash
 $ make list-examples
 ```
 
 To filter based on a file name or pattern,
 
-``` bash
+```bash
 # List only those examples having a filename `index.js`...
 $ make EXAMPLES_PATTERN=index.js list-examples
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List only the example files for special functions in the base math directory...
 $ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
 ```
@@ -213,66 +211,65 @@ $ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
 
 To list all packages (as absolute paths),
 
-``` bash
+```bash
 $ make list-pkgs
 ```
 
 To filter based on a file path,
 
-``` bash
+```bash
 # List only the special function packages in the base math directory...
 $ make PACKAGES_FILTER=.*/math/base/special/.* list-pkgs
 ```
 
 To list all package names under the `@stdlib` scope,
 
-``` bash
+```bash
 $ make list-pkgs-names
 ```
 
 To list all package names under a `@stdlib` descendant directory,
 
-``` bash
+```bash
 $ make PACKAGES_DIR=./@stdlib/math/base list-pkgs-names
 ```
 
-
----
+* * *
 
 #### Package Examples
 
 To run package examples,
 
-``` bash
+```bash
 $ make examples
 ```
 
 To limit which examples are run, use the same environment variables recognized by `list-examples`.
 
-``` bash
+```bash
 # Only run the examples for special functions in the base math directory...
 $ make EXAMPLES_FILTER=.*/math/base/special/.* EXAMPLES_PATTERN=index.js examples
 ```
 
----
+* * *
 
 #### Unit Tests
 
 To run unit tests,
 
-``` bash
+```bash
 $ make test
 ```
 
 To generate a test summary,
 
-``` bash
+```bash
 $ make test-summary
 ```
 
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
-``` bash
+```bash
 # Run only the main test file for base math utils...
 $ make TESTS_FILTER=.*/math/base/utils/.* TESTS_PATTERN=test.js test
 
@@ -282,59 +279,58 @@ $ make TESTS_FILTER=.*/math/base/blas/.*  test-summary
 
 To run unit tests against specific Node.js versions (assuming [`nvm`][nvm] is installed),
 
-``` bash
+```bash
 $ make test-node-versions
 ```
 
 By default, tests are run against supported Node.js versions. To run against alternative versions, set the `NODE_VERSIONS` environment variable.
 
-``` bash
+```bash
 $ make NODE_VERSIONS='0.10 4 6' TESTS_FILTER=.*/fs/exists/.* test-node-versions
 ```
 
 To run units tests for project tools,
 
-``` bash
+```bash
 $ make tools-test
 ```
 
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
-``` bash
+```bash
 $ make tools-test TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
 ```
-
 
 #### Test Coverage
 
 To generate a test coverage report,
 
-``` bash
+```bash
 $ make test-cov
 ```
 
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
-``` bash
+```bash
 # Generate a coverage report for base math utils...
 $ make TESTS_FILTER=.*/math/base/utils/.* test-cov
 ```
 
 To generate a coverage report for project tools,
 
-``` bash
+```bash
 $ make tools-test-cov
 ```
 
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
-``` bash
+```bash
 $ make tools-test-cov TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
 ```
 
 To view a generated report in a local web browser,
 
-``` bash
+```bash
 $ make view-cov
 ```
 
@@ -342,19 +338,19 @@ $ make view-cov
 
 To run browser tests in a (headless) local web browser,
 
-``` bash
+```bash
 $ make test-browsers
 ```
 
 To run and view the tests in a local web browser,
 
-``` bash
+```bash
 $ make view-browser-tests
 ```
 
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
-``` bash
+```bash
 # Run base math utils tests in a headless local web browser...
 $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 
@@ -362,180 +358,181 @@ $ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
 $ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
 ```
 
----
+* * *
 
 #### Benchmarks
 
 To run benchmarks,
 
-``` bash
+```bash
 $ make benchmark
 ```
 
 To limit which benchmarks are run, use the same environment variables recognized by `list-benchmarks`.
 
-``` bash
+```bash
 # Run only the benchmarks for base special math functions...
 $ make BENCHMARKS_FILTER=.*/math/base/special/.* BENCHMARKS_PATTERN=benchmark.js benchmark
 ```
 
----
+* * *
 
 #### Documentation
 
 To generate documentation from [JSDoc][jsdoc] source code comments,
 
-``` bash
+```bash
 $ make docs-src
 ```
 
 To view the documentation in a local web browser,
 
-``` bash
+```bash
 $ make view-src-docs
 ```
 
----
+* * *
 
 #### Lint
 
 To lint files, including tests, examples, filenames, `package.json`, and Markdown,
 
-``` bash
+```bash
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... BENCHMARKS_FILTER=... MARKDOWN_FILTER=... lint
 ```
 
 To lint only source files,
 
-``` bash
+```bash
 $ make SOURCES_FILTER=... lint-src
 ```
 
 To lint only test files,
 
-``` bash
+```bash
 $ make TESTS_FILTER=... lint-tests
-``` 
+```
 
 To lint only example files,
 
-``` bash
+```bash
 $ make EXAMPLES_FILTER=... lint-examples
 ```
 
 To lint only benchmark files,
 
-``` bash
+```bash
 $ make BENCHMARKS_FILTER=... lint-benchmarks
 ```
 
 To lint only Markdown files,
 
-``` bash
+```bash
 $ make MARKDOWN_FILTER=... lint-markdown
 ```
 
 To lint only JavaScript files,
 
-``` bash
+```bash
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... BENCHMARKS_FILTER=... lint-javascript
 ```
 
 To lint filenames,
 
-``` bash
+```bash
 $ make lint-filenames
 ```
 
 To lint `package.json` files,
 
-``` bash
+```bash
 $ make lint-pkg-json
 ```
 
----
+* * *
 
 #### Complexity
 
 To analyze code complexity,
 
-``` bash
+```bash
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... complexity
 ```
 
 To analyze only source files,
 
-``` bash
+```bash
 $ make SOURCES_FILTER=... complexity-src
 ```
 
 To analyze only test files,
 
-``` bash
+```bash
 $ make TESTS_FILTER=... complexity-tests
-``` 
+```
 
 To analyze only example files,
 
-``` bash
+```bash
 $ make EXAMPLES_FILTER=... complexity-examples
-``` 
+```
 
 To analyze only benchmark files,
 
-``` bash
+```bash
 $ make BENCHMARKS_FILTER=... complexity-benchmarks
 ```
 
 To analyze only JavaScript files,
 
-``` bash
+```bash
 $ make SOURCES_FILTER=... TESTS_FILTER=... EXAMPLES_FILTER=... complexity-javascript
 ```
 
----
+* * *
 
 #### Dependencies
 
 To check whether dependencies are up-to-date,
 
-``` bash
+```bash
 $ make check-deps
 ```
 
 To check licenses of installed package dependencies,
 
-``` bash
+```bash
 $ make check-licenses
 ```
 
----
+* * *
 
 #### Bash Completion
 
 To enable [bash completion][bash-completion] of Makefile targets, add
 
-``` text
+```text
 complete -W "\`find . ! \( -path \"*/node_modules/*\" -prune \) -and \( -name 'Makefile' -o -name '*.mk' \) | xargs grep '^.PHONY: ' | awk '{print $2}'\`" make
 ```
 
-to your `~/.bash_profile` or `~/.bashrc`.  Note that completion is __not__ exhaustive, as the above only includes targets which have been __explicitly__ declared phony targets
+to your `~/.bash_profile` or `~/.bashrc`.  Note that completion is **not** exhaustive, as the above only includes targets which have been **explicitly** declared phony targets
 
-``` text
+```text
 .PHONY: beep-boop
 ```
 
 and does not include targets declared via variables. Excluded targets could be included by mining the Makefile database `make -qp`, but such inclusion has a performance cost and is unnecessary due to the predominant use of `PHONY`.
 
-
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/manual/make.html#Introduction
+
 [jsdoc]: http://usejsdoc.org/
+
 [nvm]: https://github.com/creationix/nvm
+
 [bash-completion]: https://www.gnu.org/software/bash/manual/bashref.html#Programmable-Completion
 
 </section>
 
 <!-- /.links -->
-

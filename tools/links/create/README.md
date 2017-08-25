@@ -2,7 +2,6 @@
 
 > Create a link entry in a link database.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var create = require( '@stdlib/tools/links/create' );
 ```
 
@@ -27,7 +26,7 @@ var create = require( '@stdlib/tools/links/create' );
 
 Creates a link entry in a link database.
 
-``` javascript
+```javascript
 var opts = {
     'uri': 'https://stdlib.io',
     'id': 'stdlib',
@@ -46,15 +45,15 @@ function done( error ) {
 
 The function accepts the following `options`:
 
-* __uri__: link URI.
-* __id__: unique identifier.
-* __description__: link description.
-* __keywords__: array of keywords.
-* __database__: path to a link database.
+-   **uri**: link URI.
+-   **id**: unique identifier.
+-   **description**: link description.
+-   **keywords**: array of keywords.
+-   **database**: path to a link database.
 
 To specify keywords which pertain to the link, set the `keywords` option.
 
-``` javascript
+```javascript
 var opts = {
     'uri': 'https://stdlib.io',
     'id': 'stdlib',
@@ -81,7 +80,7 @@ function done( error ) {
 
 To insert the link into a particular link database, set the `database` option.
 
-``` javascript
+```javascript
 var opts = {
     'uri': 'https://stdlib.io',
     'id': 'stdlib',
@@ -99,12 +98,11 @@ function done( error ) {
 }
 ```
 
-
 #### create.sync( opts )
 
 Synchronously inserts a link into a link database.
 
-``` javascript
+```javascript
 var opts = {
     'uri': 'https://stdlib.io',
     'id': 'stdlib',
@@ -130,7 +128,7 @@ The method accepts the same `options` as [`create()`](#create-async) above.
 
 ## Notes
 
-* A link database should be a [JSON][json] file.
+-   A link database should be a [JSON][json] file.
 
 </section>
 
@@ -142,7 +140,7 @@ The method accepts the same `options` as [`create()`](#create-async) above.
 
 ## Examples
 
-``` javascript
+```javascript
 var create = require( '@stdlib/tools/links/create' );
 
 var opts = {
@@ -179,7 +177,7 @@ create( opts, done );
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -191,7 +189,7 @@ create( opts, done );
 
 ### Usage
 
-``` bash
+```bash
 Usage: insert-link [options] [<uri> --id <id> --desc <description>]
 
 Options:
@@ -214,7 +212,7 @@ Options:
 
 ### Notes
 
-* If invoked without a URI, the CLI will interactively prompt for argument input.
+-   If invoked without a URI, the CLI will interactively prompt for argument input.
 
 </section>
 
@@ -226,7 +224,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ insert-link https://stdlib.io/ --id stdlib --description 'A standard library for JavaScript and Node.js'
 ```
 
@@ -237,7 +235,6 @@ $ insert-link https://stdlib.io/ --id stdlib --description 'A standard library f
 </section>
 
 <!-- /.cli -->
-
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

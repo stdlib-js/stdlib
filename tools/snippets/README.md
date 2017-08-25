@@ -2,7 +2,6 @@
 
 > TODO
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var todo = require( '@stdlib/<TODO: module path>' );
 ```
 
@@ -25,7 +24,7 @@ var todo = require( '@stdlib/<TODO: module path>' );
 
 TODO
 
-``` javascript
+```javascript
 var v = todo( 0.0 );
 // returns TODO
 ```
@@ -48,7 +47,7 @@ var v = todo( 0.0 );
 
 ## Examples
 
-``` javascript
+```javascript
 var todo = require( '@stdlib/<TODO: module path>' );
 
 todo();

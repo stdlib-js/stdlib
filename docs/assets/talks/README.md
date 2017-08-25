@@ -18,8 +18,8 @@ This directory contains assets for talks featuring the project.
 
 ## Notes
 
-* Image assets should be [PNG][png].
-* The recommended image width is `480px`.
+-   Image assets should be [PNG][png].
+-   The recommended image width is `480px`.
 
 </section>
 

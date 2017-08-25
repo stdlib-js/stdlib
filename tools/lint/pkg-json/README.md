@@ -2,20 +2,19 @@
 
 > Lint `package.json` files.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var lint = require( '@stdlib/tools/lint/pkg-json' );
 ```
 
-#### lint( \[options,\] clbk )
+#### lint( \[options,] clbk )
 
 Asynchronously lint `package.json` files.
 
-``` javascript
+```javascript
 lint( done );
 
 function done( error, errs ) {
@@ -32,13 +31,13 @@ function done( error, errs ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
-* __pattern__: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern __must__ end with `package.json`).
-* __ignore__: list of glob patterns used to exclude matches.
+-   **dir**: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
+-   **pattern**: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern **must** end with `package.json`).
+-   **ignore**: list of glob patterns used to exclude matches.
 
 To search from an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/foo/bar/baz'
 };
@@ -59,7 +58,7 @@ function done( error, errs ) {
 
 To provide an alternative include filter, set the `pattern` option.
 
-``` javascript
+```javascript
 var opts = {
     'pattern': '**/foo/**/package.json'
 };
@@ -80,7 +79,7 @@ function done( error, errs ) {
 
 To exclude matches, set the `ignore` option.
 
-``` javascript
+```javascript
 var opts = {
     'ignore': [
         'node_modules/**',
@@ -103,12 +102,11 @@ function done( error, errs ) {
 }
 ```
 
-
-#### lint.sync( \[options\] )
+#### lint.sync( \[options] )
 
 Synchronously lint `package.json` files.
 
-``` javascript
+```javascript
 var errs = lint.sync();
 if ( errs ) {
     console.dir( errs );
@@ -123,19 +121,17 @@ The function accepts the same `options` as `lint()` above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var lint = require( '@stdlib/tools/lint/pkg-json' );
 
 lint( done );
@@ -156,8 +152,7 @@ function done( error, errs ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -167,7 +162,7 @@ function done( error, errs ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: lint-pkg-json [options] [dir]
 
 Options:
@@ -184,43 +179,41 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If part of a [standard stream][standard-stream] pipeline, results are written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]). Otherwise, results are pretty printed by default.
+-   If part of a [standard stream][standard-stream] pipeline, results are written to `stdout` as newline-delimited JSON ([NDJSON][ndjson]). Otherwise, results are pretty printed by default.
 
-* If not provided a `dir` argument, the current working directory is the search directory.
+-   If not provided a `dir` argument, the current working directory is the search directory.
 
-* To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
+-   To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
-  ``` bash
-  $ lint-pkg-json --ignore=node_modules/** --ignore=build/** --ignore=reports/**
-  ```
+    ```bash
+    $ lint-pkg-json --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+    ```
 
-* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+-   If the split separator is a [regular expression][regexp], ensure that the `split` option is properly **escaped**.
 
-  ``` bash
-  # Not escaped...
-  $ <stdout> | lint-pkg-json --split /\r?\n/
+    ```bash
+    # Not escaped...
+    $ <stdout> | lint-pkg-json --split /\r?\n/
 
-  # Escaped...
-  $ <stdout> | lint-pkg-json --split /\\r?\\n/
-  ```
+    # Escaped...
+    $ <stdout> | lint-pkg-json --split /\\r?\\n/
+    ```
 
-* If provided a list of filenames via `stdin`, each filename is resolved relative to the current working directory. To specify an alternative directory, provide a `dir` argument.
+-   If provided a list of filenames via `stdin`, each filename is resolved relative to the current working directory. To specify an alternative directory, provide a `dir` argument.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ lint-pkg-json
 
 /path/to/package.json
@@ -242,7 +235,7 @@ $ lint-pkg-json
 
 To output results as newline-delimited JSON ([NDJSON][ndjson]),
 
-``` bash
+```bash
 $ lint-pkg-json --format ndjson
 {"file":"...","errors":[...]}
 {"file":"...","errors":[...]}
@@ -251,7 +244,7 @@ $ lint-pkg-json --format ndjson
 
 To use as a part of a [standard stream][standard-stream] pipeline,
 
-``` bash
+```bash
 $ echo -n $'./package.json' | lint-pkg-json
 ...
 ```
@@ -264,11 +257,12 @@ $ echo -n $'./package.json' | lint-pkg-json
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [ndjson]: http://ndjson.org/
+
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
 [standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
 </section>

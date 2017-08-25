@@ -2,12 +2,11 @@
 
 > [remark][remark] plugin to lint Markdown equation elements.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var lint = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-equations' );
 ```
 
@@ -17,7 +16,7 @@ Attaches a [remark][remark] plugin which, when provided a Markdown abstract synt
 
 <!-- eslint-disable no-useless-escape -->
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 var str = '<!-- <equation class="equation" label="" align="center" raw="|x| = \begin{cases} x & \textrm{if}}\ x \geq 0 \\ -x & \textrm{{if}\ x < 0\end{cases}" alt=""> -->\n\n<!-- </equation> -->';
@@ -36,13 +35,11 @@ function done( error ) {
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -50,7 +47,7 @@ function done( error ) {
 
 <!-- eslint-disable no-sync -->
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
@@ -74,7 +71,6 @@ function done( error ) {
 </section>
 
 <!-- /.examples -->
-
 
 <section class="links">
 

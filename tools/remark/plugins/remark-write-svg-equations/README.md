@@ -2,12 +2,11 @@
 
 > [remark][remark] plugin to create SVG equation files from Markdown HTML equation tags.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-write-svg-equations' );
 ```
 
@@ -15,7 +14,7 @@ var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-write-sv
 
 Attaches a plugin to a [remark][remark] processor in order to create SVG equation files from Markdown HTML equation tags.
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 var transform = remark.use( createSVGs ).process;
@@ -23,12 +22,12 @@ var transform = remark.use( createSVGs ).process;
 
 The function accepts the following `options`:
 
-* __dir__: output directory for SVG files. Default: `./docs/img/`.
-* __prefix__: filename prefix for each generated SVG. Default: `equation_`.
+-   **dir**: output directory for SVG files. Default: `./docs/img/`.
+-   **prefix**: filename prefix for each generated SVG. Default: `equation_`.
 
 By default, the plugin attempts to resolve an output directory relative to each processed Markdown file. To specify an alternative directory, including an absolute directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/path/to/absolute/dir/for/svg/equations'
 };
@@ -38,7 +37,7 @@ var transform = remark.use( createSVGs, opts ).process;
 
 To specify an alternative filename prefix, set the `prefix` option.
 
-``` javascript
+```javascript
 var opts = {
     'prefix': 'eqn_'
 };
@@ -50,31 +49,29 @@ var transform = remark.use( createSVGs, opts ).process;
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* When generating an output filepath, the implementation uses the HTML equation `label` attribute to generate an SVG filename. For example, given
+-   When generating an output filepath, the implementation uses the HTML equation `label` attribute to generate an SVG filename. For example, given
 
-  ``` html
-  <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
+    ```html
+    <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
 
-  <!-- </equation> -->
-  ```
+    <!-- </equation> -->
+    ```
 
-  the SVG equation filename would be `equation_absolute_value.svg`, where `equation_` is the default filename prefix.
+    the SVG equation filename would be `equation_absolute_value.svg`, where `equation_` is the default filename prefix.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var path = require( 'path' );
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
@@ -109,7 +106,6 @@ function done( error, out ) {
 </section>
 
 <!-- /.examples -->
-
 
 <section class="links">
 

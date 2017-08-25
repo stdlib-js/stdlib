@@ -2,19 +2,17 @@
 
 > List import and require paths.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var ls = require( '@stdlib/tools/import-require' );
 ```
 
@@ -22,7 +20,7 @@ var ls = require( '@stdlib/tools/import-require' );
 
 Searches for import and require paths in a source `string` or [`Buffer`][node-buffer].
 
-``` javascript
+```javascript
 var readFile = require( '@stdlib/fs/read-file' ).sync;
 
 var src = readFile( __filename );
@@ -33,19 +31,18 @@ console.dir( results );
 
 The returned `object` has the following fields:
 
-* __literals__: an `array` of literal `string` import and require paths.
-* __expressions__: an `array` of import and require path expressions.
+-   **literals**: an `array` of literal `string` import and require paths.
+-   **expressions**: an `array` of import and require path expressions.
 
 </section>
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var readFile = require( '@stdlib/fs/read-file' ).sync;
 var ls = require( '@stdlib/tools/import-require' );
 
@@ -63,8 +60,7 @@ console.dir( results.expressions );
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -74,7 +70,7 @@ console.dir( results.expressions );
 
 ### Usage
 
-``` bash
+```bash
 Usage: import-require [options | src]
 
 Options:
@@ -87,17 +83,15 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* May be used as part of a standard stream pipeline or TTY.
+-   May be used as part of a standard stream pipeline or TTY.
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -105,31 +99,28 @@ Options:
 
 To pretty print results,
 
-``` bash
+```bash
 $ import-require "$(cat ./examples/index.js)"
 $ cat ./examples/index.js | import-require
 ```
 
 Example output:
 
-``` text
-
+```text
 Literals:
 ├── ./../lib/stdlib.js
 └── ./../lib
 
 Expressions:
 └── '@stdlib'+'/fs/read-file'
-
 ```
 
 To use as part of a pipeline,
 
-``` bash
+```bash
 $ cat ./examples/index.js | import-require | cat
 {"literals":["./../lib/stdlib.js","./../lib"],"expressions":["\'@stdlib\'+\'/fs/read-file\'"]}
 ```
-
 
 </section>
 
@@ -138,7 +129,6 @@ $ cat ./examples/index.js | import-require | cat
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

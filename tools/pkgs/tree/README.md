@@ -2,20 +2,19 @@
 
 > Generate a stdlib package tree.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var pkgTree = require( '@stdlib/tools/pkgs/tree' );
 ```
 
-#### pkgTree( \[options,\] clbk )
+#### pkgTree( \[options,] clbk )
 
 Asynchronously generates a package tree.
 
-``` javascript
+```javascript
 pkgTree( onTree );
 
 function onTree( error, tree ) {
@@ -28,11 +27,11 @@ function onTree( error, tree ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
+-   **dir**: root directory from which to search for packages. May be either an absolute file path or a path relative to the `stdlib/lib/node_modules/` directory. Default: `/path/to/stdlib/lib/node_modules/`.
 
 To search from a descendant directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': './@stdlib/math/base'
 };
@@ -47,12 +46,11 @@ function onTree( error, tree ) {
 }
 ```
 
-
-#### pkgTree.sync( \[options\] )
+#### pkgTree.sync( \[options] )
 
 Synchronously generates a package tree.
 
-``` javascript
+```javascript
 var tree = pkgTree.sync();
 // returns {...}
 ```
@@ -63,23 +61,21 @@ The function accepts the same `options` as `pkgTree()` above.
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* The function only returns packages under the `@stdlib` scope.
+-   The function only returns packages under the `@stdlib` scope.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var pkgTree = require( '@stdlib/tools/pkgs/tree' );
 
 pkgTree( onTree );
@@ -96,8 +92,7 @@ function onTree( error, tree ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -107,7 +102,7 @@ function onTree( error, tree ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: stdlib-pkg-tree [options] [dir]
 
 Options:
@@ -124,7 +119,7 @@ Options:
 
 ### Notes
 
-* If not provided a `dir` argument, the search directory is the current working directory.
+-   If not provided a `dir` argument, the search directory is the current working directory.
 
 </section>
 
@@ -134,7 +129,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ stdlib-pkg-tree
 ```
 
@@ -145,7 +140,6 @@ $ stdlib-pkg-tree
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

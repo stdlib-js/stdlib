@@ -2,7 +2,6 @@
 
 > Generate an HTML string for displaying an SVG equation as an image in a GitHub Markdown file.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,31 +16,31 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var createElement = require( '@stdlib/tools/markdown/img-svg-equation' );
 ```
 
-#### createElement( \[options\] )
+#### createElement( \[options] )
 
 Generates an HTML `string` for displaying an SVG equation as an image in a GitHub Markdown file.
 
-``` javascript
+```javascript
 var html = createElement();
 // returns '<div class="equation" align="center" data-raw-text="" data-equation="">\n    <img src="" alt="">\n    <br>\n</div>'
 ```
 
 The function accepts the following `options`:
 
-* __className__: element class name. Default: `'equation'`.
-* __align__: element alignment. Default: `'center'`.
-* __raw__: raw equation text.
-* __label__: equation label.
-* __src__: image source URL.
-* __alt__: alternative image text.
+-   **className**: element class name. Default: `'equation'`.
+-   **align**: element alignment. Default: `'center'`.
+-   **raw**: raw equation text.
+-   **label**: equation label.
+-   **src**: image source URL.
+-   **alt**: alternative image text.
 
 Each `option` corresponds an HTML attribute. For example, to set the image source URL, set the `src` option.
 
-``` javascript
+```javascript
 var opts = {
     'src': 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg'
 };
@@ -52,7 +51,7 @@ var html = createElement( opts );
 
 To include a raw equation [TeX][tex] or [LaTeX][latex] `string` in the element, set the `raw` option.
 
-``` javascript
+```javascript
 var opts = {
     'raw': '\\Gamma ( n ) = (n-1)!',
     'src': 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg'
@@ -80,7 +79,7 @@ var html = createElement( opts );
 
 ## Examples
 
-``` javascript
+```javascript
 var createElement = require( '@stdlib/tools/markdown/img-svg-equation' );
 
 var opts = {
@@ -102,8 +101,7 @@ console.log( html );
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -115,7 +113,7 @@ console.log( html );
 
 ### Usage
 
-``` text
+```text
 Usage: gheqn [options]
 
 Options:
@@ -148,7 +146,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ gheqn --raw '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg'
 <div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="">
     <img src="https://cdn.rawgit.com/stdlib-js/stdlib/master/docs/img/eqn1.svg" alt="">
@@ -177,6 +175,7 @@ $ gheqn --raw '\Gamma ( n ) = (n-1)!' --src 'https://cdn.rawgit.com/stdlib-js/st
 <section class="links">
 
 [tex]: https://en.wikipedia.org/wiki/TeX
+
 [latex]: https://en.wikipedia.org/wiki/LaTeX
 
 </section>

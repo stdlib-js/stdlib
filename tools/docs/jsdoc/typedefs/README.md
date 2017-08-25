@@ -17,6 +17,7 @@ This directory contains [JSDoc][jsdoc] type definitions. Type definitions allow 
 <section class="links">
 
 [jsdoc]: http://usejsdoc.org/
+
 [jsdoc-typedef]: http://usejsdoc.org/tags-typedef.html
 
 </section>

@@ -2,7 +2,6 @@
 
 > [JSON schema][json-schema] for `package.json`.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var schema = require( '@stdlib/tools/pkg-json/schema' );
 ```
 
@@ -25,7 +24,7 @@ var schema = require( '@stdlib/tools/pkg-json/schema' );
 
 Returns a [JSON schema][json-schema] for `package.json`.
 
-``` javascript
+```javascript
 var json = schema();
 // returns <Object>
 ```
@@ -48,7 +47,7 @@ var json = schema();
 
 ## Examples
 
-``` javascript
+```javascript
 var Ajv = require( 'ajv' );
 var schema = require( '@stdlib/tools/pkg-json/schema' );
 

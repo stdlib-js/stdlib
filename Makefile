@@ -96,6 +96,33 @@ BUILD_FOLDER ?= build
 # Define the folder name convention for temporary files:
 TMP_FOLDER ?= tmp
 
+# Define filename extension conventions (keep in alphabetical order):
+AWK_FILENAME_EXT ?= awk
+BASH_FILENAME_EXT ?= sh
+BIBTEX_FILENAME_EXT ?= bib
+C_FILENAME_EXT ?= c
+CSL_FILENAME_EXT ?= csl
+CSS_FILENAME_EXT ?= css
+CSV_FILENAME_EXT ?= csv
+CXX_FILENAME_EXT ?= cpp
+FORTRAN_FILENAME_EXT ?= f
+GYP_FILENAME_EXT ?= gyp
+HTML_FILENAME_EXT ?= html
+JAVASCRIPT_FILENAME_EXT ?= js
+JPEG_FILENAME_EXT ?= jpg
+JSON_FILENAME_EXT ?= json
+JULIA_FILENAME_EXT ?= jl
+MAKEFILE_FILENAME_EXT ?= mk
+MARKDOWN_FILENAME_EXT ?= md
+NODEJS_NATIVE_ADDON_FILENAME_EXT ?= node
+PNG_FILENAME_EXT ?= png
+PYTHON_FILENAME_EXT ?= py
+R_FILENAME_EXT ?= R
+SVG_FILENAME_EXT ?= svg
+TEXT_FILENAME_EXT ?= txt
+WEBASSEMBLY_FILENAME_EXT ?= wasm
+YAML_FILENAME_EXT ?= yml
+
 # Define Node paths:
 NODE_PATH ?= $(ROOT_DIR)/lib/node_modules
 NODE_PATH_BENCHMARK ?= $(NODE_PATH)

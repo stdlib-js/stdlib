@@ -2,7 +2,6 @@
 
 > Developer notes.
 
-
 <!-- Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
@@ -15,13 +14,13 @@
 
 To set the title of a terminal tab,
 
-``` bash
+```bash
 $ echo -n -e "\033]0;{{title}}\007"
 ```
 
 To package as a command-line tool, add the following to the platform-specific configuration file for configuring user environments (e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile].
 
-``` bash
+```bash
 tab() {
     echo -n -e "\033]0;$*\007"   
 }
@@ -29,10 +28,9 @@ tab() {
 
 which can then be invoked
 
-``` bash
+```bash
 $ tab title
 ```
-
 
 ### ls
 
@@ -40,17 +38,16 @@ $ tab title
 
 To generate a directory tree,
 
-``` bash
+```bash
 $ ls -R ./root/directory | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/--/|/'
 ```
 
 where
 
-* `-R`: recursively list subdirectories.
-* `s/[^-][^\/]*\//--/g`: replace directory path segments with `--`.
-* `s/^/   /`: indent.
-* `s/--/|/`: replace the first `--` with a vertical bar.
-
+-   `-R`: recursively list subdirectories.
+-   `s/[^-][^\/]*\//--/g`: replace directory path segments with `--`.
+-   `s/^/   /`: indent.
+-   `s/--/|/`: replace the first `--` with a vertical bar.
 
 ### git
 
@@ -58,23 +55,21 @@ where
 
 To list changes without context,
 
-``` bash
+```bash
 $ git diff -U0 | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)'
 ```
 
 which selects for all lines beginning with either a `+` or `-` character and then removes lines listing the filename.
 
-
 #### Search Commits
 
 To search all commits for a particular string,
 
-``` bash
+```bash
 $ git rev-list --all | xargs git grep -F 'string'
 ```
 
 where `-F` indicates to search for a fixed string. To search using a regular expression, use `-P` (see `git grep --help`).
-
 
 ### Find and Replace
 
@@ -82,35 +77,33 @@ where `-F` indicates to search for a fixed string. To search using a regular exp
 
 To perform a multi-file find and replace,
 
-``` bash
+```bash
 $ perl -pi -w -e 's/search/replace/g;' $(find ./search/directory -type f)
 ```
 
 where
 
-* `-e`: execute the command
-* `-w`: write warnings
-* `-p`: execute for each file
-* `-i`: edit in-place
-
+-   `-e`: execute the command
+-   `-w`: write warnings
+-   `-p`: execute for each file
+-   `-i`: edit in-place
 
 If you encounter an error due to too many arguments, use `xargs`.
 
-``` bash
+```bash
 $ find ./search/directory -type f | xargs perl -pi -w -e 's/search/replace/g;'
 ```
 
 If running a search from the top-level directory, be sure to exclude any hidden directories (including `.git`), the top-level `node_modules` directory, and the `./deps` directory from the search. This may require using absolute file paths.
 
-``` bash
+```bash
 $ find "$PWD" -type f -not -path "$PWD/.*" -not -path "$PWD/deps/*" -not -path "$PWD/node_modules/*" | xargs perl -pi -w -e 's/search/replace/g;'
 ```
 
 A few comments:
 
-* For simple cases, [`sed`][sed-find-and-replace] may be faster.
-* Be __very__ careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset __before__ performing on many files. You have been __warned__.
-
+-   For simple cases, [`sed`][sed-find-and-replace] may be faster.
+-   Be **very** careful when performing a multi-file find and in-place replace. Perform dry-runs and confirm expected results on a small file subset **before** performing on many files. You have been **warned**.
 
 ### Reorganization
 
@@ -118,13 +111,13 @@ A few comments:
 
 To move directories from one directory to another directory,
 
-``` bash
+```bash
 $ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/$(basename ${dir})"; done
 ```
 
 To rename multiple directories using a pattern,
 
-``` bash
+```bash
 $ find $PWD/path/to/parent/directory -type d -depth 1 -regex ".*" | while read -r dir; do mv "${dir}" "$PWD/path/to/parent/destination/directory/`echo $(basename ${dir}) | sed s/search/replace/`"; done
 ```
 

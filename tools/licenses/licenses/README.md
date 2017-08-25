@@ -2,27 +2,25 @@
 
 > Resolve licenses.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 ```
 
-#### licenses( \[options\], clbk )
+#### licenses( \[options], clbk )
 
 Reads installed package dependencies and extracts license information from `package.json` files. 
 
-``` javascript
+```javascript
 licenses( onResults );
 
 function onResults( error, results ) {
@@ -35,13 +33,13 @@ function onResults( error, results ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. Default: current working directory.
-* __depth__: search depth. Default: `+infinity` (the entire dependency tree).
-* __dev__: `boolean` indicating whether to include dev dependencies. Default: `true`.
+-   **dir**: root directory from which to search for packages. Default: current working directory.
+-   **depth**: search depth. Default: `+infinity` (the entire dependency tree).
+-   **dev**: `boolean` indicating whether to include dev dependencies. Default: `true`.
 
 By default, the function searches the entire dependency tree. To limit the search depth, set the `depth` option.
 
-``` javascript
+```javascript
 var opts = {
     'depth': 0 // search only top-level installed packages
 };
@@ -58,7 +56,7 @@ function onResults( error, results ) {
 
 To exclude development dependencies, set the `dev` option to `false`.
 
-``` javascript
+```javascript
 var opts = {
     'dev': false
 };
@@ -77,7 +75,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -90,8 +87,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -101,7 +97,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses [options]
 
 Options:
@@ -117,29 +113,26 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* License results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
+-   License results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ DEBUG=* licenses
 {"id":"...","parents":["..."],...,"licenses":{...}}
 {"id":"...","parents":["..."],...,"licenses":{...}}
 ...
 ```
-
 
 </section>
 
@@ -148,7 +141,6 @@ $ DEBUG=* licenses
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

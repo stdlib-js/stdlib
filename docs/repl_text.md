@@ -2,10 +2,9 @@
 
 > A guide for writing REPL texts.
 
-
 Read-eval-print-loop (REPL) texts are plain text documents which provide help information in a REPL context. A typical use case is when a user is performing various actions within a REPL and would like to know how to use a particular function interface. For example,
 
-``` bash
+```bash
 > help( lowercase )
 
 lowercase( str )
@@ -29,12 +28,9 @@ lowercase( str )
     See Also
     --------
     uppercase
-
-
 ```
 
 The above REPL text displays the function interface `lowercase( str )`, as well as provides more detailed information, including input parameter types, return value types, and examples.
-
 
 ## Guide
 
@@ -42,8 +38,7 @@ The above REPL text displays the function interface `lowercase( str )`, as well 
 
 The general format of a REPL text is as follows:
 
-``` text
-
+```text
 {{alias}}( param1, param2, ... )
     A short description.
 
@@ -76,25 +71,21 @@ The general format of a REPL text is as follows:
 
     See Also
     --------
-
-
 ```
 
 ### Spacing
 
-REPL texts should use `4` space indentation. Do __not__ use tab indentation, as tabs are rendered inconsistently across terminals.
-
+REPL texts should use `4` space indentation. Do **not** use tab indentation, as tabs are rendered inconsistently across terminals.
 
 ### Wrapping
 
-REPL texts should __never__ exceed `80` characters in width. Be sure to wrap all text longer than `80` characters.
-
+REPL texts should **never** exceed `80` characters in width. Be sure to wrap all text longer than `80` characters.
 
 ### Interface
 
 An interface may be a primitive constant (e.g., `number`, `string`, `boolean`), an `Object` (e.g., a regular expression), or a `Function`. If an interface is a function, the interface should display all required and optional parameters. If an interface has associated properties and/or methods, document each method and property separately.
 
-``` text
+```text
 foo( bar )
     A short description.
 
@@ -128,30 +119,27 @@ foo.boop( beep )
 
     See Also
     --------
-
-
 ```
 
 A few notes:
 
-* In a function interface, each parameter should be surrounded by `1` space to the left and `1` space to the right.
+-   In a function interface, each parameter should be surrounded by `1` space to the left and `1` space to the right.
 
-  ``` text
-  foo( beep, boop, bop )
-      A short description.
+    ```text
+    foo( beep, boop, bop )
+        A short description.
 
-      ...
-  ```
+        ...
+    ```
 
-* If a function parameter is __optional__, enclose the parameter in square brackets.
+-   If a function parameter is **optional**, enclose the parameter in square brackets.
 
-  ``` text
-  foo( beep[, boop[, bop]] )
-      A short description.
+    ```text
+    foo( beep[, boop[, bop]] )
+        A short description.
 
-      ...
-  ```
-
+        ...
+    ```
 
 ### Description
 
@@ -159,30 +147,29 @@ A few notes:
 
 The short description should be a single sentence written in the simple present tense. For example,
 
-``` text
+```text
 lowercase( str )
     Converts a `string` to lowercase.
 
     ...
 ```
 
-Do __not__ write the description in the declarative mood. For example, avoid
+Do **not** write the description in the declarative mood. For example, avoid
 
-``` text
+```text
 lowercase( str )
     Convert a `string` to lowercase.
 
     ...
 ```
 
-An empty line should __always__ follow the short description.
-
+An empty line should **always** follow the short description.
 
 #### Extended Description
 
 An extended description should include auxiliary information which helps a user understand expected behavior. For example,
 
-``` text
+```text
 dcopy( N, x, strideX, y, strideY )
     Copies values from `x` into `y`.
 
@@ -199,14 +186,13 @@ dcopy( N, x, strideX, y, strideY )
     ...
 ```
 
-Each separate *note* within an extended description should be followed by an empty line.
-
+Each separate _note_ within an extended description should be followed by an empty line.
 
 ##### Lists
 
 To include a list in an extended description, use the following style
 
-``` text
+```text
     ...
 
     This is a list:
@@ -217,12 +203,11 @@ To include a list in an extended description, use the following style
     ...
 ```
 
-
 ### Parameters
 
 The `Parameters` section states the parameter name, the parameter type, and a short description. An empty line should follow each parameter declaration.
 
-``` text
+```text
 pad( str, len[, options] )
     Short description.
 
@@ -252,7 +237,7 @@ pad( str, len[, options] )
 
 To document a variadic interface,
 
-``` text
+```text
 foo( ...args )
     A short description.
 
@@ -266,36 +251,36 @@ foo( ...args )
 
 The following parameter types are supported:
 
-* `any`: if a parameter can be any type.
-* `null`: if a parameter must be `null`.
-* `undefined`: if a parameter must be `undefined`.
-* `string`: if a parameter must be a `string` primitive.
-* `number`: if a parameter must be a `number` primitive.
-* `integer`: if a parameter must be a `number` primitive having an integer value.
-* `boolean`: if a parameter must be a `boolean` primitive.
-* `Function`: if a parameter must be a `function`.
-* `Object`: if a parameter must be an `object`.
-* `Array`: if a parameter must be an `array`.
-* `Array<type>`: if a parameter must be an `array` containing only values of a particular type.
-* `RegExp`: if a parameter must be a regular expression.
-* `Date`: if a parameter must be a `Date` object.
-* `Buffer`: if a parameter must be a Node.js `Buffer` object.
-* `Error`: if a parameter must be an `Error` object.
-* `TypedArray`: if a parameter must be a typed array.
-* `Float64Array`: if a parameter must be a `Float64Array`.
-* `Float32Array`: if a parameter must be a `Float32Array`.
-* `Int32Array`: if a parameter must be an `Int32Array`.
-* `Uint32Array`: if a parameter must be a `Uint32Array`.
-* `Int16Array`: if a parameter must be an `Int16Array`.
-* `Uint16Array`: if a parameter must be a `Uint16Array`.
-* `Int8Array`: if a parameter must be an `Int8Array`.
-* `Uint8Array`: if a parameter must be a `Uint8Array`.
-* `Uint8ClampedArray`: if a parameter must be a `Uint8ClampedArray`.
-* `ArrayBuffer`: if a parameter must be an `ArrayBuffer`.
+-   `any`: if a parameter can be any type.
+-   `null`: if a parameter must be `null`.
+-   `undefined`: if a parameter must be `undefined`.
+-   `string`: if a parameter must be a `string` primitive.
+-   `number`: if a parameter must be a `number` primitive.
+-   `integer`: if a parameter must be a `number` primitive having an integer value.
+-   `boolean`: if a parameter must be a `boolean` primitive.
+-   `Function`: if a parameter must be a `function`.
+-   `Object`: if a parameter must be an `object`.
+-   `Array`: if a parameter must be an `array`.
+-   `Array<type>`: if a parameter must be an `array` containing only values of a particular type.
+-   `RegExp`: if a parameter must be a regular expression.
+-   `Date`: if a parameter must be a `Date` object.
+-   `Buffer`: if a parameter must be a Node.js `Buffer` object.
+-   `Error`: if a parameter must be an `Error` object.
+-   `TypedArray`: if a parameter must be a typed array.
+-   `Float64Array`: if a parameter must be a `Float64Array`.
+-   `Float32Array`: if a parameter must be a `Float32Array`.
+-   `Int32Array`: if a parameter must be an `Int32Array`.
+-   `Uint32Array`: if a parameter must be a `Uint32Array`.
+-   `Int16Array`: if a parameter must be an `Int16Array`.
+-   `Uint16Array`: if a parameter must be a `Uint16Array`.
+-   `Int8Array`: if a parameter must be an `Int8Array`.
+-   `Uint8Array`: if a parameter must be a `Uint8Array`.
+-   `Uint8ClampedArray`: if a parameter must be a `Uint8ClampedArray`.
+-   `ArrayBuffer`: if a parameter must be an `ArrayBuffer`.
 
 For parameters which may be more than one type, use a `|` separator.
 
-``` text
+```text
 foo( value )
     A short description.
 
@@ -311,18 +296,17 @@ In general, avoid specialized and/or uncommon value types; e.g., `NonNegativeInt
 
 A few notes:
 
-* Parameter names should __match__ the parameter names in function and method signatures.
-* If a parameter is __optional__, explicitly state that the parameter is optional __after__ the type declaration.
-* For `Object` parameters, list each required and/or optional `Object` property as a separate parameter.
-* All parameter descriptions should end with a period.
-* If a `function` does not have parameter values, __omit__ this section.
-
+-   Parameter names should **match** the parameter names in function and method signatures.
+-   If a parameter is **optional**, explicitly state that the parameter is optional **after** the type declaration.
+-   For `Object` parameters, list each required and/or optional `Object` property as a separate parameter.
+-   All parameter descriptions should end with a period.
+-   If a `function` does not have parameter values, **omit** this section.
 
 ### Returns
 
 The `Returns` section states the return value name, the return value type, and a short description. An empty line should follow each return value declaration.
 
-``` text
+```text
     ...
 
     Returns
@@ -335,14 +319,14 @@ The `Returns` section states the return value name, the return value type, and a
 
 Conventional names for output values include
 
-* `bool`: for `boolean` return values.
-* `fcn`: for `Function` return values.
-* `out`: for generic return values.
-* `y`: for `number` return values mathematical functions satisfying the form `y = f(x)`.
+-   `bool`: for `boolean` return values.
+-   `fcn`: for `Function` return values.
+-   `out`: for generic return values.
+-   `y`: for `number` return values mathematical functions satisfying the form `y = f(x)`.
 
 For return values which can be more than one type, use a `|` separator.
 
-``` text
+```text
     ...
 
     Returns
@@ -355,17 +339,16 @@ For return values which can be more than one type, use a `|` separator.
 
 A few notes:
 
-* For `Object` return values having a defined structure (e.g., mathematical models), list each `Object` property as a separate return value and separate each property with an empty line.
-* Return value types are the same as for parameters.
-* All return value descriptions should end with a period.
-* If a `function` does not have return values, __omit__ this section.
-
+-   For `Object` return values having a defined structure (e.g., mathematical models), list each `Object` property as a separate return value and separate each property with an empty line.
+-   Return value types are the same as for parameters.
+-   All return value descriptions should end with a period.
+-   If a `function` does not have return values, **omit** this section.
 
 ### Examples
 
 Examples should demonstrate essential behavior.
 
-``` text
+```text
 foo( str )
     A short description.
 
@@ -389,7 +372,7 @@ foo( str )
 
 To delineate examples demonstrating conceptually distinct behavior, use comment headings and separate each example with an empty line.
 
-``` text
+```text
 foo( str )
     A short description.
 
@@ -419,7 +402,7 @@ foo( str )
 
 While single line user input is preferred, multi-line user input is sometimes required. For each line of multi-line input, indicate that a line is a continuation of the previous line by prefixing the line with three periods and a space.
 
-``` text
+```text
 foo( clbk )
     A short description.
 
@@ -443,19 +426,18 @@ foo( clbk )
 
 A few notes:
 
-* Begin each line of user input with a `>` symbol.
-* Place expected output on the line immediately following a line of user input.
-* To indicate silenced output (i.e., a line of user input whose output is suppressed), end a user input line with a semicolon. Note that this includes `Function` declarations.
-* Only declare a variable the first time a variable is used.
-* Where possible, __prefer__ single line user input over multi-line input. The latter is harder for users to copy and paste within a REPL context.
-* A REPL text should __always__ include an `Examples` section.
-
+-   Begin each line of user input with a `>` symbol.
+-   Place expected output on the line immediately following a line of user input.
+-   To indicate silenced output (i.e., a line of user input whose output is suppressed), end a user input line with a semicolon. Note that this includes `Function` declarations.
+-   Only declare a variable the first time a variable is used.
+-   Where possible, **prefer** single line user input over multi-line input. The latter is harder for users to copy and paste within a REPL context.
+-   A REPL text should **always** include an `Examples` section.
 
 ### References
 
-Only include references __if__ usage requires citations. If not required, __remove__ the `References` section. To include citations, place each on a separate line without line separation. For example,
+Only include references **if** usage requires citations. If not required, **remove** the `References` section. To include citations, place each on a separate line without line separation. For example,
 
-``` text
+```text
     ...
 
     References
@@ -473,72 +455,69 @@ Only include references __if__ usage requires citations. If not required, __remo
 
 A few notes:
 
-* Each citation should be a properly formatted citation.
-* Citations are not required to include URLs.
-* Include only __one__ `References` section per REPL text.
-
+-   Each citation should be a properly formatted citation.
+-   Citations are not required to include URLs.
+-   Include only **one** `References` section per REPL text.
 
 ### See Also
 
 The `See Also` section should include related functionality available in a REPL context. Each entry in the section should have a corresponding REPL text and thus be available to a user in a manner similar to the source REPL text.
 
-``` text
+```text
     ...
 
     See Also
     --------
     beep, boop, bar
-
 ```
 
 A few notes:
 
-* Separate each entry with a comma followed by a space.
-* Insert an empty line following the last line containing entries.
-* If a `See Also` section does __not__ contain entries, insert two empty lines following the section header.
-* Include only __one__ `See Also` section per REPL text.
+-   Separate each entry with a comma followed by a space.
+-   Insert an empty line following the last line containing entries.
+-   If a `See Also` section does **not** contain entries, insert two empty lines following the section header.
+-   Include only **one** `See Also` section per REPL text.
 
-
----
+* * *
 
 ## stdlib
 
-* All `stdlib` REPL texts should use an alias placeholder.
+-   All `stdlib` REPL texts should use an alias placeholder.
 
-  ``` text
-  {{alias}}( str )
-      A short description.
+    ```text
+    {{alias}}( str )
+        A short description.
 
-      ...
-      
-      Examples
-      --------
-      > var out = {{alias}}( 'beep' )
-      'boop'
+        ...
+        
+        Examples
+        --------
+        > var out = {{alias}}( 'beep' )
+        'boop'
 
-      ...
-  ```
+        ...
+    ```
 
-  The alias is injected via a separate build process which manages the REPL namespace.
+    The alias is injected via a separate build process which manages the REPL namespace.
 
-* Do __not__ manually add entries to the `See Also` section. Entries are injected via a separate build process which manages the REPL namespace.
+-   Do **not** manually add entries to the `See Also` section. Entries are injected via a separate build process which manages the REPL namespace.
 
-* To reference other REPL functionality, use an alias placeholder which references the package name.
+-   To reference other REPL functionality, use an alias placeholder which references the package name.
 
-  ``` text
-  {{alias}}( x )
-      A short description.
+    ```text
+    {{alias}}( x )
+        A short description.
 
-      ...
-      
-      Examples
-      --------
-      > var out = {{alias}}( {{alias:@stdlib/math/constants/float64-pi}} )
-      10.0
+        ...
+        
+        Examples
+        --------
+        > var out = {{alias}}( {{alias:@stdlib/math/constants/float64-pi}} )
+        10.0
 
-      ...
-  ```
+        ...
+    ```
 
-  External aliases are resolved during a separate build process which manages the REPL namespace. Where possible, limit the use of external aliases unless absolutely necessary.
+    External aliases are resolved during a separate build process which manages the REPL namespace. Where possible, limit the use of external aliases unless absolutely necessary.
 
-* All references should originate from the `stdlib` bibliographic database. Generate reference citations using `make citation` to ensure a consistent bibliographic style.
+-   All references should originate from the `stdlib` bibliographic database. Generate reference citations using `make citation` to ensure a consistent bibliographic style.

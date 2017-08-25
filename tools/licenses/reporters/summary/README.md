@@ -2,19 +2,17 @@
 
 > Reporter which summarizes license results.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/summary' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/summary' );
 
 Summarizes license results.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
@@ -39,7 +37,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -52,8 +49,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -63,7 +59,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-summary [options]
 
 Options:
@@ -76,30 +72,27 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ licenses | licenses-summary
 ```
 
 Example output:
 
-``` text
-
+```text
 License summary:
 
 Dependencies: 925
@@ -141,7 +134,6 @@ Licenses:
 ├── 1 (0%): (MIT AND CC-BY-3.0)
 ├── 1 (0%): Unlicense
 └── 1 (0%): (BSD-2-Clause OR MIT OR Apache-2.0)
-
 ```
 
 </section>
@@ -151,7 +143,6 @@ Licenses:
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

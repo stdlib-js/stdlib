@@ -2,7 +2,6 @@
 
 > Standardize a `package.json` object.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,15 +16,15 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var standardize = require( '@stdlib/tools/pkg-json/standardize' );
 ```
 
-#### standardize( pkg\[, keys\] )
+#### standardize( pkg\[, keys] )
 
 Standardizes a `package.json` object.
 
-``` javascript
+```javascript
 var pkg = {
     'license': 'MIT',
     'name': 'beep'
@@ -37,7 +36,7 @@ var out = standardize( pkg );
 
 To specify an alternative key order, provide an array of `keys`.
 
-``` javascript
+```javascript
 var pkg = {
     'c': 1,
     'b': 2,
@@ -60,7 +59,7 @@ var out = standardize( pkg, keys );
 
 ## Notes
 
-* The implementation relies on engines using insertion order for key ordering. This is __not__ specified by the ECMAScript specification; however, most engines order keys according to insertion order.
+-   The implementation relies on engines using insertion order for key ordering. This is **not** specified by the ECMAScript specification; however, most engines order keys according to insertion order.
 
 </section>
 
@@ -72,7 +71,7 @@ var out = standardize( pkg, keys );
 
 ## Examples
 
-``` javascript
+```javascript
 var standardize = require( '@stdlib/tools/pkg-json/standardize' );
 var pkg = require( './../package.json' );
 
@@ -86,7 +85,7 @@ console.dir( out );
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -98,7 +97,7 @@ console.dir( out );
 
 ### Usage
 
-``` bash
+```bash
 Usage: standardize-json [options] [json]
 
 Options:
@@ -126,14 +125,14 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ standardize-json '{"license":"MIT","name":"beep"}'
 {"name":"beep","license":"MIT"}
 ```
 
 To use as a standard stream,
 
-``` bash
+```bash
 $ echo '{"license":"MIT","name":"beep"}' | standardize-json
 {"name":"beep","license":"MIT"}
 ```

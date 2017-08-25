@@ -2,12 +2,11 @@
 
 > [remark][remark] plugin to lint Markdown JavaScript code blocks using [ESLint][eslint].
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint' );
 ```
 
@@ -15,7 +14,7 @@ var plugin = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-eslint'
 
 A [remark][remark] plugin which, when provided a Markdown abstract syntax `tree`, lints JavaScript code blocks using the default [ESLint][eslint] configuration.
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 // Create a synchronous Markdown text linter:
@@ -25,11 +24,11 @@ var linter = remark().use( plugin ).processSync;
 var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 ```
 
-#### plugin.factory( \[options\] )
+#### plugin.factory( \[options] )
 
 Returns a configured [remark][remark] plugin for linting JavaScript code blocks. 
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 // Create a synchronous Markdown text linter:
@@ -41,11 +40,11 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 The function recognizes the following `options`:
 
-* __config__: path to an [ESLint][eslint] configuration file. A configuration path is resolved relative to the current working directory of the calling process.
+-   **config**: path to an [ESLint][eslint] configuration file. A configuration path is resolved relative to the current working directory of the calling process.
 
 To specify configuration `options`, set the respective properties.
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 // Define options:
@@ -67,101 +66,103 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
 <!--lint disable code-block-style -->
 
-* The plugin supports __configuration comments__, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a fenced code block.
+-   The plugin supports **configuration comments**, which are HTML comments containing [ESLint][eslint] configuration settings located immediately above a fenced code block.
 
-      ## Heading
+        ## Heading
 
-      Beep boop.
+        Beep boop.
 
-      <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+        <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
 
-      ``` javascript
-      var x = new Number( 3.14 );
+        ```javascript
+        var x = new Number( 3.14 );
 
-      var arr = [ 1, , , 4, 5 ];
-      ```
+        var arr = [ 1, , , 4, 5 ];
+        ```
 
-  The plugin supports multiple consecutive comments.
+    The plugin supports multiple consecutive comments.
 
-      ## Heading
+        ## Heading
 
-      Beep boop.
+        Beep boop.
 
-      <!-- eslint-disable no-new-wrappers -->
+        <!-- eslint-disable no-new-wrappers -->
 
-      <!-- eslint-disable no-sparse-arrays -->
+        <!-- eslint-disable no-sparse-arrays -->
 
-      ``` javascript
-      var x = new Number( 3.14 );
+        ```javascript
+        var x = new Number( 3.14 );
 
-      var arr = [ 1, , , 4, 5 ];
-      ```
+        var arr = [ 1, , , 4, 5 ];
+        ```
 
-  Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
+    Prior to linting, the plugin converts the content of each HTML comment to a JavaScript comment and prepends each comment to the content inside the code block. Accordingly, the plugin would transform the above example to
 
-  <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
+        ## Heading
 
-  ``` javascript
-  /* eslint-disable no-new-wrappers */
-  /* eslint-disable no-sparse-arrays */
-  var x = new Number( 3.14 );
+        Beep boop.
 
-  var arr = [ 1, , , 4, 5 ];
-  ```
+        <!-- eslint-disable no-new-wrappers, no-sparse-arrays -->
 
-* Configuration comments __only__ apply to a code block which follows immediately after. Hence, the plugin does __not__ apply the following configuration comment to a subsequent code block.
+        ```javascript
+        /* eslint-disable no-new-wrappers */
+        /* eslint-disable no-sparse-arrays */
+        var x = new Number( 3.14 );
 
-      ## Heading
+        var arr = [ 1, , , 4, 5 ];
+        ```
 
-      <!-- eslint-disable no-new-wrappers -->
+-   Configuration comments **only** apply to a code block which follows immediately after. Hence, the plugin does **not** apply the following configuration comment to a subsequent code block.
 
-      Beep boop.
+        ## Heading
 
-      ``` javascript
-      var x = new Number( 3.14 );
-      ```
+        <!-- eslint-disable no-new-wrappers -->
 
-* The plugin lints each code block separately, and configuration comments are __not__ shared between code blocks. Thus, one must repeat configuration comments for each code block.
+        Beep boop.
 
-      ## Heading
+        ``` javascript
+        var x = new Number( 3.14 );
+        ```
 
-      Beep.
+-   The plugin lints each code block separately, and configuration comments are **not** shared between code blocks. Thus, one must repeat configuration comments for each code block.
 
-      <!-- eslint-disable no-new-wrappers -->
+        ## Heading
 
-      ``` javascript
-      var x = new Number( 3.14 );
-      ```
+        Beep.
 
-      Boop.
+        <!-- eslint-disable no-new-wrappers -->
 
-      <!-- eslint-disable no-new-wrappers -->
+        ``` javascript
+        var x = new Number( 3.14 );
+        ```
 
-      ``` javascript
-      var x = new Number( -3.14 );
-      ```
+        Boop.
 
-* To skip linting for a particular code block, use the __non-standard__ comment `<!-- eslint-skip -->`.
+        <!-- eslint-disable no-new-wrappers -->
 
-      ## Heading
+        ``` javascript
+        var x = new Number( -3.14 );
+        ```
 
-      Beep boop.
+-   To skip linting for a particular code block, use the **non-standard** comment `<!-- eslint-skip -->`.
 
-      <!-- eslint-skip -->
+        ## Heading
 
-      ``` javascript
-      var x = new Number( 3.14 );
-      ```
+        Beep boop.
 
-  For skipped code blocks, the plugin reports neither rule nor syntax errors.
+        <!-- eslint-skip -->
 
+        ``` javascript
+        var x = new Number( 3.14 );
+        ```
+
+    For skipped code blocks, the plugin reports neither rule nor syntax errors.
 
 <!--lint enable code-block-style -->
 
@@ -169,14 +170,13 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ## Examples
 
 <!-- eslint-disable no-sync -->
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
 var remark = require( 'remark' );
@@ -208,10 +208,10 @@ console.log( out );
 
 <!-- /.examples -->
 
-
 <section class="links">
 
 [remark]: https://github.com/wooorm/remark
+
 [eslint]: http://eslint.org/
 
 </section>

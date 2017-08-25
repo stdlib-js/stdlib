@@ -18,7 +18,7 @@ This directory contains project configuration files for both internal and third-
 
 ## Notes
 
-* Configuration files for external tools and environments should be placed in subdirectories. The subdirectory name should correspond to the name of the tool or environment.
+-   Configuration files for external tools and environments should be placed in subdirectories. The subdirectory name should correspond to the name of the tool or environment.
 
 </section>
 

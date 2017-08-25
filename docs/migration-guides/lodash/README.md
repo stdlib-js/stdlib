@@ -2,5 +2,4 @@
 
 > Migration guide for Lodash.
 
-
 {{table}}

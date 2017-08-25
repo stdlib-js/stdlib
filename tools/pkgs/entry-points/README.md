@@ -2,22 +2,21 @@
 
 > Resolve package entry points.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var entryPoints = require( '@stdlib/tools/pkgs/entry-points' );
 ```
 
 <a name="entry-points"></a>
 
-#### entryPoints( pkgs, \[options,\] clbk )
+#### entryPoints( pkgs, \[options,] clbk )
 
 Asynchronously resolves package entry points.
 
-``` javascript
+```javascript
 var pkgs = [ 'tape', 'browserify' ];
 
 entryPoints( pkgs, onEntries );
@@ -32,18 +31,18 @@ function onEntries( error, entries ) {
 
 Each package is represented by an `object` having the following fields:
 
-* __id__: package identifier.
-* __pkg__: package name, as specified in `pkgs`.
-* __dir__: package directory.
-* __entries__: an `array` of package entry points.
+-   **id**: package identifier.
+-   **pkg**: package name, as specified in `pkgs`.
+-   **dir**: package directory.
+-   **entries**: an `array` of package entry points.
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to resolve packages. May be either an absolute file path or a path relative to the current working directory.
+-   **dir**: root directory from which to resolve packages. May be either an absolute file path or a path relative to the current working directory.
 
 By default, the function resolves packages relative to the current working directory. To resolve relative to an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/foo/bar/baz'
 };
@@ -60,12 +59,11 @@ function onEntries( error, entries ) {
 }
 ```
 
-
-#### entryPoints.sync( pkgs\[, options\] )
+#### entryPoints.sync( pkgs\[, options] )
 
 Synchronously resolves package entry points.
 
-``` javascript
+```javascript
 var pkgs = [ 'tape', 'browserify' ];
 
 var entries = entryPoints.sync( pkgs );
@@ -78,12 +76,11 @@ The function accepts the same `options` as [`entryPoints()`](#entry-points) abov
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var resolve = require( 'path' ).resolve;
 var entryPoints = require( '@stdlib/tools/pkgs/entry-points' );
 
@@ -104,8 +101,7 @@ function onEntries( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -115,7 +111,7 @@ function onEntries( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: pkg-entry-points [options] [<pkg> <pkg> <pkg> ...]
 
 Options:
@@ -130,39 +126,37 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+-   If the split separator is a [regular expression][regexp], ensure that the `split` option is properly **escaped**.
 
-  ``` bash
-  # Not escaped...
-  $ echo -n $'tape\nbrowsery\n' | pkg-entry-points --split /\r?\n/
+    ```bash
+    # Not escaped...
+    $ echo -n $'tape\nbrowsery\n' | pkg-entry-points --split /\r?\n/
 
-  # Escaped...
-  $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
-  ```
+    # Escaped...
+    $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
+    ```
 
-* Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
+-   Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ pkg-entry-points tape browserify
 {...}
 {...}
 ```
 
-``` bash
+```bash
 $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
 {...}
 {...}
@@ -176,10 +170,10 @@ $ echo -n $'tape\nbrowserify\n' | pkg-entry-points --split /\\r?\\n/
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
 [ndjson]: http://ndjson.org/
 
 </section>

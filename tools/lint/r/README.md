@@ -10,7 +10,7 @@
 
 ### Usage
 
-``` bash
+```bash
 Usage: <linter.R> <file> <file> <file> ...
 ```
 
@@ -18,23 +18,21 @@ Usage: <linter.R> <file> <file> <file> ...
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Each provided filepath is resolved relative to the current working directory of the calling process.
+-   Each provided filepath is resolved relative to the current working directory of the calling process.
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ <linter.R> ./linter.R
 ```
 
@@ -45,7 +43,6 @@ $ <linter.R> ./linter.R
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

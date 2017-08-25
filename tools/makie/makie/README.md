@@ -2,43 +2,41 @@
 
 > Execute project Makefile commands from anywhere in the project.
 
-
 <section class="intro">
 
 Typically, to execute project `Makefile` commands, you must be in the root project directory. While `make` supports specifying a directory from which to run a `Makefile`, this can be cumbersome, especially if a command expects configuration via environment variables.
 
 This utility provides support for executing a subset of `Makefile` commands from anywhere within the project. The list of supported targets includes:
 
-* `repl`
-* `notes`
-* `examples`
-* `test`
-* `test-cov`
-* `test-summary`
-* `view-cov`
-* `benchmark`
-* `lint-javascript`
-* `lint-markdown`
-* `lint-python`
-* `lint-r`
-* `complexity`
-* `list-pkgs`
-* `list-pkgs-names`
-* `stats-list-contributors`
-* `markdown-asset-link`
+-   `repl`
+-   `notes`
+-   `examples`
+-   `test`
+-   `test-cov`
+-   `test-summary`
+-   `view-cov`
+-   `benchmark`
+-   `lint-javascript`
+-   `lint-markdown`
+-   `lint-python`
+-   `lint-r`
+-   `complexity`
+-   `list-pkgs`
+-   `list-pkgs-names`
+-   `stats-list-contributors`
+-   `markdown-asset-link`
 
-When executing a command, the current working directory is used as a filter. Thus, when invoking the `test` command, __only__ those tests in the current working directory and below will be run.
+When executing a command, the current working directory is used as a filter. Thus, when invoking the `test` command, **only** those tests in the current working directory and below will be run.
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var makie = require( '@stdlib/tools/makie/makie' );
 ```
 
@@ -46,7 +44,7 @@ var makie = require( '@stdlib/tools/makie/makie' );
 
 Executes a Makefile command where the command is identified by a `target` and the Makefile containing the `target` is located in directory `dirpath`.
 
-``` javascript
+```javascript
 var spawn = require( 'child_process' ).spawn;
 
 function plugin( dirpath, cwd, subpath ) {
@@ -65,8 +63,7 @@ makie( '/home/stdlib-js/stdlib', opts, 'test' );
 
 The function accepts the following `options`:
 
-* __plugins__: an `object` whose keys correspond to Makefile targets and whose values are `functions` implementing the plugin interface.
-
+-   **plugins**: an `object` whose keys correspond to Makefile targets and whose values are `functions` implementing the plugin interface.
 
 ### Plugins
 
@@ -76,11 +73,11 @@ Plugins are `functions` which execute a Makefile command.
 
 Executes a Makefile target. A plugin is provided the following arguments:
 
-* __dir__: the Makefile directory provided above.
-* __cwd__: current working directory of the calling process.
-* __subpath__: subdirectory path, if `makie` is called in a subdirectory; otherwise, an empty `string`.
+-   **dir**: the Makefile directory provided above.
+-   **cwd**: current working directory of the calling process.
+-   **subpath**: subdirectory path, if `makie` is called in a subdirectory; otherwise, an empty `string`.
 
-``` javascript
+```javascript
 var spawn = require( 'child_process' ).spawn;
 
 function plugin( dir, cwd ) {
@@ -108,8 +105,7 @@ function plugin( dir, cwd ) {
 
 <!-- /.usage -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -121,13 +117,13 @@ function plugin( dir, cwd ) {
 
 To install the command-line utility, add the following line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Mac OS X), making sure to adjust the path based on your project setup.
 
-``` text
+```text
 alias makie=/path/to/stdlib/tools/bin/makie
 ```
 
 and then
 
-``` bash
+```bash
 $ chmod +x /path/to/stdlib/tools/bin/makie
 ```
 
@@ -137,7 +133,7 @@ $ chmod +x /path/to/stdlib/tools/bin/makie
 
 ### Usage
 
-``` bash
+```bash
 Usage: makie [options] target
 
 Options:
@@ -156,7 +152,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ makie test-cov
 <command_output>
 ```
@@ -168,7 +164,6 @@ $ makie test-cov
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

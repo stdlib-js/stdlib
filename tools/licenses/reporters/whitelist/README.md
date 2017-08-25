@@ -2,19 +2,17 @@
 
 > Reporter which excludes from license results packages which have a license in a provided whitelist.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/whitelist' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/whitelist' );
 
 Excludes licenses results for packages having a license matching an SPDX identifier in a provided `exclude` list.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 var whitelist = [
@@ -53,7 +51,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -66,8 +63,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -77,7 +73,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-whitelist [options]
 
 Options:
@@ -91,17 +87,15 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -109,14 +103,13 @@ Options:
 
 To pretty print license results,
 
-``` bash
+```bash
 $ licenses | licenses-whitelist --exclude 'BSD-3-Clause,BSD-2-Clause'
 ```
 
 Example output:
 
-``` text
-
+```text
 Package license information:
 
 fs.realpath@1.0.0
@@ -143,13 +136,12 @@ spdx-expression-parse@1.0.3
 
 To use as part of a pipeline,
 
-``` bash
+```bash
 $ licenses | licenses-whitelist --exclude 'BSD-3-Clause,BSD-2-Clause' | cat
 {"id":"...","parents":["..."],...,"licenses":{...}}
 {"id":"...","parents":["..."],...,"licenses":{...}}
 ...
 ```
-
 
 </section>
 
@@ -158,7 +150,6 @@ $ licenses | licenses-whitelist --exclude 'BSD-3-Clause,BSD-2-Clause' | cat
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

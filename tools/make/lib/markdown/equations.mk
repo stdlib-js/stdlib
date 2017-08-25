@@ -26,10 +26,10 @@ EQUATION_RESOURCES_PATH ?= ./docs/img/
 REMARK ?= $(BIN_DIR)/remark
 
 # Define the path to the remark configuration file:
-REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
+REMARK_EQUATIONS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
-REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
+REMARK_EQUATIONS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
@@ -49,14 +49,11 @@ REMARK_EQUATION_SRC_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-html-equat
 REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS ?= '"'dir'"':'"'$(EQUATION_RESOURCES_PATH)'"'
 REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS ?= --use $(REMARK_EQUATION_SRC_URLS_PLUGIN)=$(REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS)
 
-# Define Markdown extensions:
-REMARK_EXT ?= md
-
 # Define command-line options when invoking the remark executable:
 REMARK_FLAGS ?= \
-	--ext $(REMARK_EXT) \
-	--rc-path $(REMARK_CONF) \
-	--ignore-path $(REMARK_IGNORE)
+	--ext $(MARKDOWN_FILENAME_EXT) \
+	--rc-path $(REMARK_EQUATIONS_CONF) \
+	--ignore-path $(REMARK_EQUATIONS_IGNORE)
 
 # Define the remark output option:
 REMARK_OUTPUT_FLAG ?= --output

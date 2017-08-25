@@ -2,7 +2,6 @@
 
 > Return the id corresponding to a provided URI.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,17 +16,17 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var uri2id = require( '@stdlib/tools/links/uri2id' );
 ```
 
 <a name="async"></a>
 
-#### uri2id( uri, \[options,\] clbk )
+#### uri2id( uri, \[options,] clbk )
 
 Returns the `id` corresponding to a provided `URI`.
 
-``` javascript
+```javascript
 uri2id( 'http://www.bibtex.org/', clbk );
 
 function clbk( error, id ) {
@@ -41,11 +40,11 @@ function clbk( error, id ) {
 
 The function accepts the following `options`:
 
-* __database__: path to a link database.
+-   **database**: path to a link database.
 
 To use an alternative link database, set the `database` option.
 
-``` javascript
+```javascript
 var opts = {
     'database': './path/to/link/database/json'
 };
@@ -60,12 +59,11 @@ function clbk( error, id ) {
 }
 ```
 
-
-#### uri2id.sync( uri\[, options\] )
+#### uri2id.sync( uri\[, options] )
 
 Synchronously returns the `id` which corresponds to a provided `URI`.
 
-``` javascript
+```javascript
 var id = uri2id.sync( 'http://www.bibtex.org/' );
 if ( id instanceof Error ) {
     throw id;
@@ -86,8 +84,8 @@ The method accepts the same `options` as [`uri2id()`](#async) above.
 
 ## Notes
 
-* If a function is unable to resolve an `id`, the function returns `null`.
-* A link database is resolved relative to the current working directory of the calling process and should be a [JSON][json] file.
+-   If a function is unable to resolve an `id`, the function returns `null`.
+-   A link database is resolved relative to the current working directory of the calling process and should be a [JSON][json] file.
 
 </section>
 
@@ -99,7 +97,7 @@ The method accepts the same `options` as [`uri2id()`](#async) above.
 
 ## Examples
 
-``` javascript
+```javascript
 var uri2id = require( '@stdlib/tools/links/uri2id' );
 
 uri2id( 'https://github.com/stdlib-js/stdlib', clbk );
@@ -118,7 +116,7 @@ function clbk( error, id ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -130,7 +128,7 @@ function clbk( error, id ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: uri2id [options] [<uri>]
 
 Options:
@@ -150,7 +148,7 @@ Options:
 
 ### Notes
 
-* If invoked without a URI, the CLI will interactively prompt for argument input.
+-   If invoked without a URI, the CLI will interactively prompt for argument input.
 
 </section>
 
@@ -162,7 +160,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ uri2id http://www.bibtex.org/
 ```
 
@@ -173,7 +171,6 @@ $ uri2id http://www.bibtex.org/
 </section>
 
 <!-- /.cli -->
-
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

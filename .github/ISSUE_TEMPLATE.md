@@ -1,15 +1,13 @@
-
 <!--lint disable first-heading-level-->
 
 ## Checklist
 
 > Please ensure the following tasks are completed before filing an issue.
 
-* [ ] Read and understood the [Code of Conduct][code-of-conduct].
-* [ ] Searched for existing issues and pull requests.
-* [ ] If this is a general question, searched the [FAQ][faq] for an existing answer.
-* [ ] If this is a feature request, the issue name begins with `RFC: `.
-
+-   [ ] Read and understood the [Code of Conduct][code-of-conduct].
+-   [ ] Searched for existing issues and pull requests.
+-   [ ] If this is a general question, searched the [FAQ][faq] for an existing answer.
+-   [ ] If this is a feature request, the issue name begins with `RFC:`.
 
 ## Description
 
@@ -17,13 +15,11 @@
 
 Encountered an error when .
 
-
 ## Related Issues
 
 > Does this issue (or feature request) have any related issues?
 
 Related issues # , # , and # .
-
 
 ## Questions
 
@@ -31,11 +27,9 @@ Related issues # , # , and # .
 
 No.
 
-
 ## Other
 
 > Any other information relevant to this issue (or feature request)? This may include screenshots, references, stack traces, sample output, and/or implementation notes.
-
 
 #### Demo
 
@@ -43,8 +37,7 @@ No.
 
 For a live demo of the issue, see
 
-* (link)
-
+-   (link)
 
 #### Reproduction
 
@@ -52,10 +45,9 @@ For a live demo of the issue, see
 
 In order to reproduce this bug, do the following:
 
-* a
-* b
-* c
-
+-   a
+-   b
+-   c
 
 #### Expected Results
 
@@ -63,10 +55,9 @@ In order to reproduce this bug, do the following:
 
 The following results are expected:
 
-``` text
+```text
 (insert expected results here)
 ```
-
 
 #### Actual Results
 
@@ -74,10 +65,9 @@ The following results are expected:
 
 The following are the actual results:
 
-``` text
+```text
 (insert actual results here)
 ```
-
 
 #### Environments
 
@@ -85,14 +75,14 @@ The following are the actual results:
 
 The following environments are affected:
 
-* a
-* b
-* c
-
+-   a
+-   b
+-   c
 
 <!-- <links> -->
 
 [code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
+
 [faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
 <!-- </links> -->

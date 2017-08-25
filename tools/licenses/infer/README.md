@@ -2,19 +2,17 @@
 
 > Infer license information from file content.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var infer = require( '@stdlib/tools/licenses/infer' );
 ```
 
@@ -22,7 +20,7 @@ var infer = require( '@stdlib/tools/licenses/infer' );
 
 Infers license information from the content of files found using a provided glob `pattern`.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 var pattern = '{readme*,licen[cs]e*,copying*}';
@@ -48,7 +46,6 @@ function onInfer( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -61,8 +58,7 @@ function onInfer( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -72,7 +68,7 @@ function onInfer( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-infer [options]
 
 Options:
@@ -86,17 +82,15 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -104,14 +98,13 @@ Options:
 
 To pretty print license results,
 
-``` bash
+```bash
 $ licenses | licenses-infer
 ```
 
 Example output:
 
-``` text
-
+```text
 Package license information:
 
 fs.realpath@1.0.0
@@ -138,13 +131,12 @@ spdx-expression-parse@1.0.3
 
 To use as part of a pipeline,
 
-``` bash
+```bash
 $ licenses | licenses-infer | cat
 {"id":"...","parents":["..."],...,"licenses":{...}}
 {"id":"...","parents":["..."],...,"licenses":{...}}
 ...
 ```
-
 
 </section>
 
@@ -153,7 +145,6 @@ $ licenses | licenses-infer | cat
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

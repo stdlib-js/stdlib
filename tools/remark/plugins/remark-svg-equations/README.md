@@ -2,12 +2,11 @@
 
 > [remark][remark] plugin to insert Markdown SVG equations.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-svg-equations' );
 ```
 
@@ -17,7 +16,7 @@ Attaches a plugin to a [remark][remark] processor in order to insert SVG equatio
 
 <!-- eslint-disable no-useless-escape -->
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 var str = 'The absolute value is defined as';
@@ -39,7 +38,7 @@ function done( error, out ) {
 
 The prior example would generate output similar to the following:
 
-``` text
+```text
 The absolute value is defined as
 
 <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
@@ -55,12 +54,11 @@ The absolute value is defined as
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
@@ -92,7 +90,6 @@ function done( error, out ) {
 </section>
 
 <!-- /.examples -->
-
 
 <section class="links">
 

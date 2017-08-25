@@ -4,7 +4,7 @@
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -16,7 +16,7 @@
 
 ### Usage
 
-``` text
+```text
 Usage: TODO [options]
 
 Options:
@@ -43,7 +43,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ TODO
 TODO
 ```

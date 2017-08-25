@@ -2,29 +2,27 @@
 
 > List import and require paths.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var ls = require( '2stdlib/tools/import-require-glob' );
 ```
 
 <a name="ls"></a>
 
-#### ls( \[options\], clbk )
+#### ls( \[options], clbk )
 
 Reads files and lists import and require paths.
 
-``` javascript
+```javascript
 ls( onList );
 
 function onList( error, results ) {
@@ -38,18 +36,18 @@ function onList( error, results ) {
 
 Each file is represented by an `object` with the following fields:
 
-* __file__: file name.
-* __literals__: an `array` of literal `string` import and require paths.
-* __expressions__: an `array` of import and require path expressions.
+-   **file**: file name.
+-   **literals**: an `array` of literal `string` import and require paths.
+-   **expressions**: an `array` of import and require path expressions.
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for files. May be either an absolute or relative directory path. Default: current working directory.
-* __pattern__: file glob pattern. Default: `**/*.js`.
+-   **dir**: root directory from which to search for files. May be either an absolute or relative directory path. Default: current working directory.
+-   **pattern**: file glob pattern. Default: `**/*.js`.
 
 By default, the function will search for files in the current working directory. To specify an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 
 var opts = {
@@ -69,7 +67,7 @@ function onList( error, results ) {
 
 To specify a file glob pattern, set the `pattern` option.
 
-``` javascript
+```javascript
 var opts = {
     'pattern': '**/*.txt'
 };
@@ -84,28 +82,26 @@ function onList( error, results ) {
 }
 ```
 
-#### ls.sync( \[options\] )
+#### ls.sync( \[options] )
 
 Synchronously reads files and lists import and require paths.
 
-``` javascript
+```javascript
 var results = ls.sync();
 // returns [{...},{...},...]
 ```
 
 The function accepts the same `options` as [`ls()`](#ls) above.
 
-
 </section>
 
 <!-- /.usage -->
-
 
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var ls = require( '@stdlib/tools/import-require-glob' );
 
 ls( onList );
@@ -122,8 +118,7 @@ function onList( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -133,7 +128,7 @@ function onList( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: import-require-glob [options] [dirname]
 
 Options:
@@ -147,23 +142,21 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
+-   Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ DEBUG=* import-require-glob
 {"file":"...","literals":[...],"expressions":[...]}
 {"file":"...","literals":[...],"expressions":[...]}
@@ -177,7 +170,6 @@ $ DEBUG=* import-require-glob
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

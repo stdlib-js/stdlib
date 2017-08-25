@@ -1,10 +1,4 @@
 
-# VARIABLES #
-
-# Define the linter to use for Markdown files:
-MARKDOWN_LINTER ?= remark
-
-
 # DEPENDENCIES #
 
 ifeq ($(MARKDOWN_LINTER), remark)

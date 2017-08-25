@@ -2,7 +2,6 @@
 
 > Build API documentation.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var build = require( 'path/to/tools/build-docs' );
 ```
 
@@ -25,7 +24,7 @@ var build = require( 'path/to/tools/build-docs' );
 
 Builds documentation.
 
-``` javascript
+```javascript
 function done( error ) {
     if ( error ) {
         throw error;
@@ -54,7 +53,7 @@ build( done );
 
 ## Examples
 
-``` javascript
+```javascript
 var build = require( 'path/to/tools/build-docs' );
 
 build( clbk );
@@ -73,7 +72,7 @@ function clbk( error ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -85,7 +84,7 @@ function clbk( error ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: build-docs [options]
 
 Options:
@@ -112,7 +111,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ DEBUG=* build-docs
 ```
 

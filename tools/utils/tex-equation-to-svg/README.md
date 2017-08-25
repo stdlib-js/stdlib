@@ -2,7 +2,6 @@
 
 > Convert a [TeX][tex] or [LaTeX][latex] string to an SVG.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,17 +16,17 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var tex2svg = require( '/path/to/@stdlib/tools/utils/tex-equation-to-svg' );
 ```
 
 <a name="tex2svg"></a>
 
-#### tex2svg( str\[, options\], clbk )
+#### tex2svg( str\[, options], clbk )
 
 Converts a [TeX][tex] or [LaTeX][latex] `string` to an SVG.
 
-``` javascript
+```javascript
 var eqn = 'y = mx + b';
 
 tex2svg( eqn, clbk );
@@ -45,14 +44,14 @@ function clbk( error, svg ) {
 
 The function accepts the following `options`:
 
-* __width__: container width in `ex` (used for linebreaking and tags). Default: `100`.
-* __ex__: `ex` size in pixels. Default: `6`.
-* __inline__: `boolean` indicating whether to format an input `string` as an inline equation. Default: `false`.
-* __linebreaks__: `boolean` indicating whether to perform linebreaking. Default: `true`.
+-   **width**: container width in `ex` (used for linebreaking and tags). Default: `100`.
+-   **ex**: `ex` size in pixels. Default: `6`.
+-   **inline**: `boolean` indicating whether to format an input `string` as an inline equation. Default: `false`.
+-   **linebreaks**: `boolean` indicating whether to perform linebreaking. Default: `true`.
 
 By default, the function formats an input `string` as a displayed equation. To format the `string` as a text (inline) equation, set the `inline` option to `true`.
 
-``` javascript
+```javascript
 var eqn = 'y = mx + b';
 
 var opts = {
@@ -69,12 +68,11 @@ function clbk( error, svg ) {
 }
 ```
 
-
 #### tex2svg.factory( options )
 
 Creates a reusable `function`.
 
-``` javascript
+```javascript
 function clbk( error, svg ) {
     if ( error ) {
         throw error;
@@ -106,15 +104,15 @@ The factory method accepts the same `options` as [`tex2svg()`](#tex2svg).
 
 ## Notes
 
-* All [TeX][tex] and [LaTeX][latex] commands should be escaped.
- 
-  ``` javascript
-  // Not escaped:
-  var eqn = 'x = \frac{1}{2}';
+-   All [TeX][tex] and [LaTeX][latex] commands should be escaped.
 
-  // Escaped:
-  eqn = 'x = \\frac{1}{2}';
-  ```
+    ```javascript
+    // Not escaped:
+    var eqn = 'x = \frac{1}{2}';
+
+    // Escaped:
+    eqn = 'x = \\frac{1}{2}';
+    ```
 
 </section>
 
@@ -126,7 +124,7 @@ The factory method accepts the same `options` as [`tex2svg()`](#tex2svg).
 
 ## Examples
 
-``` javascript
+```javascript
 var tex2svg = require( '/path/to/@stdlib/tools/utils/tex-equation-to-svg' );
 
 var eqn = '\\operatorname{erf}(x) = \\frac{2}{\\sqrt\\pi}\\int_0^x e^{-t^2}\\,\\mathrm dt.';
@@ -146,8 +144,7 @@ function done( error, svg ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -159,7 +156,7 @@ function done( error, svg ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: tex2svg [options] <equation>
 
 Options:
@@ -190,7 +187,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ tex2svg '\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt.'
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="24.594ex" ...
 ```
@@ -216,6 +213,7 @@ $ tex2svg '\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm 
 <section class="links">
 
 [tex]: https://en.wikipedia.org/wiki/TeX
+
 [latex]: https://en.wikipedia.org/wiki/LaTeX
 
 </section>

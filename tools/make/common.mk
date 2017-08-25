@@ -73,6 +73,9 @@ SRC_DOC_GENERATOR ?= jsdoc
 # Define the code coverage service to use:
 COVERAGE_SERVICE ?= codecov
 
+# Define the linter to use when linting Markdown files:
+MARKDOWN_LINTER ?= remark
+
 
 # COMMANDS #
 
@@ -311,4 +314,3 @@ DEPS_EMSDK_BINARYEN_VERSION ?= master
 
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
-

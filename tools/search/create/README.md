@@ -2,20 +2,19 @@
 
 > Create a serialized [lunr.js][lunr-js] search index.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var create = require( '@stdlib/tools/search/create' );
 ```
 
-#### create( \[options,\] clbk )
+#### create( \[options,] clbk )
 
 Asynchronously creates a serialized [lunr.js][lunr-js] search index.
 
-``` javascript
+```javascript
 create( onCreate );
 
 function onCreate( error, idx ) {
@@ -28,13 +27,13 @@ function onCreate( error, idx ) {
 
 The function accepts the following `options`:
 
-* __dir__: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
-* __pattern__: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern __must__ end with `package.json`).
-* __ignore__: list of glob patterns used to exclude matches.
+-   **dir**: root directory from which to search for packages. May be either an absolute file path or a path relative to the current working directory. Default: current working directory.
+-   **pattern**: glob pattern used to find packages. Default: `'**/package.json'` (note: pattern **must** end with `package.json`).
+-   **ignore**: list of glob patterns used to exclude matches.
 
 To search for packages from an alternative directory, set the `dir` option.
 
-``` javascript
+```javascript
 var opts = {
     'dir': '/foo/bar/baz'
 };
@@ -51,7 +50,7 @@ function onCreate( error, idx ) {
 
 To provide an alternative include filter, set the `pattern` option.
 
-``` javascript
+```javascript
 var opts = {
     'pattern': '**/foo/**/package.json'
 };
@@ -68,7 +67,7 @@ function onCreate( error, idx ) {
 
 To exclude matches, set the `ignore` option.
 
-``` javascript
+```javascript
 var opts = {
     'ignore': [
         'node_modules/**',
@@ -91,12 +90,11 @@ function onCreate( error, idx ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var lunr = require( 'lunr' );
 var path = require( 'path' );
 var tokenizer = require( '@stdlib/tools/search/create/lib/tokenizer.js' );
@@ -126,8 +124,7 @@ function onCreate( error, idx ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -137,7 +134,7 @@ function onCreate( error, idx ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: create-search [options] [dir]
 
 Options:
@@ -152,29 +149,27 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If not provided a `dir` argument, the current working directory is the search directory.
+-   If not provided a `dir` argument, the current working directory is the search directory.
 
-* To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
+-   To provide multiple exclusion glob patterns, set multiple `--ignore` option arguments.
 
-  ``` bash
-  $ create-search --ignore=node_modules/** --ignore=build/** --ignore=reports/**
-  ```
+    ```bash
+    $ create-search --ignore=node_modules/** --ignore=build/** --ignore=reports/**
+    ```
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ create-search . > search_index.json
 ```
 
@@ -185,7 +180,6 @@ $ create-search . > search_index.json
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

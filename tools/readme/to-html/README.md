@@ -2,7 +2,6 @@
 
 > Convert a package README to HTML.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,15 +16,15 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var convert = require( '@stdlib/tools/readme/to-html' );
 ```
 
-#### convert( filepath, \[options,\] clbk )
+#### convert( filepath, \[options,] clbk )
 
 Converts a package Markdown README file to HTML.
 
-``` javascript
+```javascript
 var file = '/foo/bar/README.md';
 
 convert( file, clbk );
@@ -40,19 +39,19 @@ function clbk( error, html ) {
 
 The function accepts the following `options`:
 
-* __out__: output file path.
-* __fragment__: `boolean` indicating whether to output an HTML fragment. If `true`, all other options beside `out` are ignored.  Default: `false`.
-* __tests__: tests URL.
-* __benchmarks__: benchmarks URL.
-* __source__: source URL.
-* __title__: HTML title.
-* __head__: content to insert into HTML head.
-* __prepend__: content to prepend to HTML body (after navigation).
-* __append__: content to append to HTML body.
+-   **out**: output file path.
+-   **fragment**: `boolean` indicating whether to output an HTML fragment. If `true`, all other options beside `out` are ignored.  Default: `false`.
+-   **tests**: tests URL.
+-   **benchmarks**: benchmarks URL.
+-   **source**: source URL.
+-   **title**: HTML title.
+-   **head**: content to insert into HTML head.
+-   **prepend**: content to prepend to HTML body (after navigation).
+-   **append**: content to append to HTML body.
 
 To specify an output file path, set the `out` option.
 
-``` javascript
+```javascript
 var file = '/foo/bar/README.md';
 
 var opts = {
@@ -68,9 +67,9 @@ function clbk( error ) {
 }
 ```
 
-To generate __only__ an HTML fragment (i.e., equivalent of directly converting a Markdown file to HTML), set the `fragment` option to `true`.
+To generate **only** an HTML fragment (i.e., equivalent of directly converting a Markdown file to HTML), set the `fragment` option to `true`.
 
-``` javascript
+```javascript
 var file = '/foo/bar/README.md';
 
 var opts = {
@@ -107,7 +106,7 @@ To understand how other `options` affect HTML output, see the HTML template in `
 
 ## Examples
 
-``` javascript
+```javascript
 var resolve = require( 'path' ).resolve;
 var convert = require( '@stdlib/tools/readme/to-html' );
 
@@ -134,7 +133,7 @@ function onFinish( error, html ) {
 
 <!-- Section for describing a command-line interface. -->
 
----
+* * *
 
 <section class="cli">
 
@@ -146,7 +145,7 @@ function onFinish( error, html ) {
 
 ### Usage
 
-``` text
+```text
 Usage: readme-to-html [options] file
 
 Options:
@@ -173,7 +172,7 @@ Options:
 
 ### Notes
 
-* If provided the `--fragment` command-line option, all other command-line options affecting HTML output are __ignored__.
+-   If provided the `--fragment` command-line option, all other command-line options affecting HTML output are **ignored**.
 
 </section>
 
@@ -185,7 +184,7 @@ Options:
 
 ### Examples
 
-``` bash
+```bash
 $ readme-to-html ./README.md
 ```
 

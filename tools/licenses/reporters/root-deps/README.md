@@ -2,19 +2,17 @@
 
 > Reporter which filters license results for packages directly depended on by the root package.
 
-
 <section class="intro">
 
 </section>
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var reporter = require( '@stdlib/tools/licenses/reporters/deps' );
 ```
 
@@ -22,7 +20,7 @@ var reporter = require( '@stdlib/tools/licenses/reporters/deps' );
 
 Reporter which filters license results for packages directly depended on by the root package. To include dev dependencies, set `bool` to `true`.
 
-``` javascript
+```javascript
 var licenses = require( '@stdlib/tools/licenses/licenses' );
 
 licenses( onResults );
@@ -39,7 +37,6 @@ function onResults( error, results ) {
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 <!-- ## Examples
@@ -52,8 +49,7 @@ function onResults( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -63,7 +59,7 @@ function onResults( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: licenses-deps [options]
 
 Options:
@@ -77,17 +73,15 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* Use as part of a standard stream pipeline.
+-   Use as part of a standard stream pipeline.
 
 </section>
 
 <!-- /.notes -->
-
 
 <section class="examples">
 
@@ -95,14 +89,13 @@ Options:
 
 To pretty print license results,
 
-``` bash
+```bash
 $ licenses | licenses-deps
 ```
 
 Example output:
 
-``` text
-
+```text
 Package license information:
 
 fs.realpath@1.0.0
@@ -129,13 +122,12 @@ spdx-expression-parse@1.0.3
 
 To use as part of a pipeline,
 
-``` bash
+```bash
 $ licenses | licenses-deps | cat
 {"id":"...","parents":["..."],...,"licenses":{...}}
 {"id":"...","parents":["..."],...,"licenses":{...}}
 ...
 ```
-
 
 </section>
 
@@ -144,7 +136,6 @@ $ licenses | licenses-deps | cat
 </section>
 
 <!-- /.cli -->
-
 
 <section class="links">
 

@@ -16,14 +16,13 @@ If we extend this example to many files across the entire project, we see that a
 
 <!-- /.intro -->
 
-
 <section class="usage">
 
 ## Usage
 
 The database is a [JSON][json] file, where each `key` is a URL specifying the location of a resource accessible via the web and each `value` is an `object` containing the resource `id` and other meta information.
 
-``` text
+```text
 {
     ...
     "http://www.json.org/": {
@@ -33,29 +32,28 @@ The database is a [JSON][json] file, where each `key` is a URL specifying the lo
     },
     ....
 }
-``` 
+```
 
 </section>
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ## Notes
 
-* Before adding a database entry, ensure that the resource is __unique__ and not already present in the database.
-* Before assigning an `id` to a URL, ensure that the `id` is __unique__.
-* Ensure that a URL is [__percent-encoded__][percent-encoding].
+-   Before adding a database entry, ensure that the resource is **unique** and not already present in the database.
+-   Before assigning an `id` to a URL, ensure that the `id` is **unique**.
+-   Ensure that a URL is [**percent-encoded**][percent-encoding].
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="links">
 
 [json]: http://www.json.org/
+
 [percent-encoding]: https://en.wikipedia.org/wiki/Percent-encoding
 
 </section>

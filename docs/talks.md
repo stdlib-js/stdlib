@@ -4,7 +4,6 @@
 
 > Talks featuring stdlib.
 
-
 ## 2016
 
 ### Text Mining with Node.js
@@ -50,7 +49,6 @@
     </a>
     <br>
 </div>
-
 
 ## 2017
 
@@ -114,6 +112,7 @@
 <section class="links">
 
 [kgryte]: https://github.com/kgryte
+
 [planeshifter]: https://github.com/planeshifter
 
 </section>

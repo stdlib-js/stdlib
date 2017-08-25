@@ -18,8 +18,8 @@ This directory contains assets for project sponsors.
 
 ## Notes
 
-* Image assets should be [PNG][png].
-* The image width is based on sponsor level.
+-   Image assets should be [PNG][png].
+-   The image width is based on sponsor level.
 
 <!-- TODO: include dimensions for each level -->
 

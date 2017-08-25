@@ -2,12 +2,11 @@
 
 > [remark][remark] plugin to insert Markdown HTML equation elements.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equations' );
 ```
 
@@ -17,7 +16,7 @@ Attaches a plugin to a [remark][remark] processor in order to insert Markdown HT
 
 <!-- eslint-disable no-useless-escape -->
 
-``` javascript
+```javascript
 var remark = require( 'remark' );
 
 var str = 'The absolute value is defined as';
@@ -47,12 +46,11 @@ console.log( vfile.contents );
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
@@ -77,7 +75,6 @@ out = remark().use( insertEquations ).processSync( file );
 </section>
 
 <!-- /.examples -->
-
 
 <section class="links">
 

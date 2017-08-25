@@ -2,22 +2,21 @@
 
 > List package dependencies.
 
-
 <section class="usage">
 
 ## Usage
 
-``` javascript
+```javascript
 var pkgDeps = require( '@stdlib/tools/pkg-deps' );
 ```
 
 <a name="pkg-deps"></a>
 
-#### pkgDeps( file, \[options,\] clbk )
+#### pkgDeps( file, \[options,] clbk )
 
 Asynchronously lists package dependencies.
 
-``` javascript
+```javascript
 pkgDeps( __filename, clbk );
 
 function clbk( error, results ) {
@@ -30,7 +29,7 @@ function clbk( error, results ) {
 
 The first argument may be either an absolute file path string or an `array` of file paths.
 
-``` javascript
+```javascript
 pkgDeps( [ __filename, __filename ], clbk );
 
 function clbk( error, results ) {
@@ -43,17 +42,17 @@ function clbk( error, results ) {
 
 Each file is represented by an `object` having the following fields:
 
-* __file__: file name.
-* __deps__: an `array` of package dependencies.
+-   **file**: file name.
+-   **deps**: an `array` of package dependencies.
 
 The function accepts the following `options`:
 
-* __builtins__: `boolean` indicating whether to include built-in package dependencies. Default: `true`.
-* __walk__: `boolean` indicating whether to walk relative module dependencies. Default: `true`.
+-   **builtins**: `boolean` indicating whether to include built-in package dependencies. Default: `true`.
+-   **walk**: `boolean` indicating whether to walk relative module dependencies. Default: `true`.
 
 By default, the function walks relative module dependencies to resolve both primary and secondary package dependencies. To only resolve a file's direct package dependencies, set the `walk` option to `false`.
 
-``` javascript
+```javascript
 var opts = {
     'walk': false
 };
@@ -68,12 +67,11 @@ function clbk( error, results ) {
 }
 ```
 
-
-#### pkgDeps.sync( file\[, options\] )
+#### pkgDeps.sync( file\[, options] )
 
 Synchronously lists package dependencies.
 
-``` javascript
+```javascript
 var results = pkgDeps.sync( __filename );
 // returns [...]
 ```
@@ -84,12 +82,11 @@ The function accepts the same `options` as [`pkgDeps()`](#pkg-deps) above.
 
 <!-- /.usage -->
 
-
 <section class="examples">
 
 ## Examples
 
-``` javascript
+```javascript
 var join = require( 'path' ).join;
 var pkgDeps = require( '@stdlib/tools/pkg-deps' );
 
@@ -109,8 +106,7 @@ function clbk( error, results ) {
 
 <!-- /.examples -->
 
-
----
+* * *
 
 <section class="cli">
 
@@ -120,7 +116,7 @@ function clbk( error, results ) {
 
 ### Usage
 
-``` bash
+```bash
 Usage: module-pkg-deps [options] [<file> <file> <file> ...]
 
 Options:
@@ -136,38 +132,36 @@ Options:
 
 <!-- /.usage -->
 
-
 <section class="notes">
 
 ### Notes
 
-* If the split separator is a [regular expression][regexp], ensure that the `split` option is properly __escaped__.
+-   If the split separator is a [regular expression][regexp], ensure that the `split` option is properly **escaped**.
 
-  ``` bash
-  # Not escaped...
-  $ echo -n $'file1\nfile2\n' | module-pkg-deps --split /\r?\n/
+    ```bash
+    # Not escaped...
+    $ echo -n $'file1\nfile2\n' | module-pkg-deps --split /\r?\n/
 
-  # Escaped...
-  $ echo -n $'file1\nfile2\n' | module-pkg-deps --split /\\r?\\n/
-  ```
+    # Escaped...
+    $ echo -n $'file1\nfile2\n' | module-pkg-deps --split /\\r?\\n/
+    ```
 
-* Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
+-   Results are printed to `stdout` as newline-delimited JSON ([NDJSON][ndjson]).
 
 </section>
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
 
-``` bash
+```bash
 $ module-pkg-deps /foo/bar/baz
 {...}
 ```
 
-``` bash
+```bash
 $ echo -n $'/foo/bar/baz\n/beep/boop/bop\n' | module-pkg-deps --split /\\r?\\n/
 {...}
 {...}
@@ -181,10 +175,10 @@ $ echo -n $'/foo/bar/baz\n/beep/boop/bop\n' | module-pkg-deps --split /\\r?\\n/
 
 <!-- /.cli -->
 
-
 <section class="links">
 
 [regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
 [ndjson]: http://ndjson.org/
 
 </section>

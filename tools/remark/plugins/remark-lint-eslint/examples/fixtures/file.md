@@ -2,7 +2,6 @@
 
 > Beep boop.
 
-
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
@@ -17,7 +16,7 @@
 
 ## Usage
 
-``` javascript
+```javascript
 var beep = require( 'beep' );
 ```
 
@@ -25,7 +24,7 @@ var beep = require( 'beep' );
 
 Beep boop.
 
-``` javascript
+```javascript
 var boop = beep( 'boop' );
 // returns 'boop'
 ```
@@ -48,7 +47,7 @@ var boop = beep( 'boop' );
 
 ## Examples
 
-``` javascript
+```javascript
 var beep = require( 'beep' );
 
 console.log( beep( 'boop' ) );
