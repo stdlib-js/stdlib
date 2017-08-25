@@ -104,7 +104,7 @@ markdown-img-equations: $(NODE_MODULES)
 
 # Generate SVG equation files.
 #
-# This target generates SVG equations files from Markdown equation comments.
+# This target generates SVG equation files from Markdown equation comments.
 
 markdown-svg-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
