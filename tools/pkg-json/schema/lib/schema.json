@@ -82,7 +82,7 @@
 		"name": {
 			"description": "package name",
 			"type": "string",
-			"pattern": "^@?[a-z](?:[-\\/]?[a-z0-9]+)*$"
+			"pattern": "^@?[a-z](?:[-\\/]?[_a-z0-9]+)*$"
 		},
 		"version": {
 			"description": "package version",

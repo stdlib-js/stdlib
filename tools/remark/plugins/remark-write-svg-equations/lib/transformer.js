@@ -8,7 +8,7 @@ var join = require( 'path' ).join;
 var writeFile = require( 'fs' ).writeFile;
 var mkdirp = require( 'mkdirp' );
 var visit = require( 'unist-util-visit' );
-var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
+var tex2svg = require( '@stdlib/_tools/utils/tex-equation-to-svg' );
 
 
 // VARIABLES //

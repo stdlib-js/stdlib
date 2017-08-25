@@ -5,7 +5,7 @@
 var debug = require( 'debug' )( 'remark-lint-equations' );
 var rule = require( 'unified-lint-rule' );
 var visit = require( 'unist-util-visit' );
-var tex2svg = require( './../../../../utils/tex-equation-to-svg' );
+var tex2svg = require( '@stdlib/_tools/utils/tex-equation-to-svg' );
 
 
 // VARIABLES //
