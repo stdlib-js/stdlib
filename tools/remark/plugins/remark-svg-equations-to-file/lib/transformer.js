@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-write-svg-equations:transformer' );
+var debug = require( 'debug' )( 'remark-svg-equations-to-file:transformer' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var writeFile = require( 'fs' ).writeFile;

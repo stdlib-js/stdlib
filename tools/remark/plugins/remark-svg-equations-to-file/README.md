@@ -1,18 +1,18 @@
 # SVG Equations
 
-> [remark][remark] plugin to create SVG equation files from Markdown HTML equation tags.
+> [remark][remark] plugin to create SVG equation files from Markdown equation comments.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-write-svg-equations' );
+var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-svg-equations-to-file' );
 ```
 
 #### createSVGs( options )
 
-Attaches a plugin to a [remark][remark] processor in order to create SVG equation files from Markdown HTML equation tags.
+Attaches a plugin to a [remark][remark] processor in order to create SVG equation files from Markdown equation comments.
 
 ```javascript
 var remark = require( 'remark' );
@@ -53,7 +53,7 @@ var transform = remark.use( createSVGs, opts ).process;
 
 ## Notes
 
--   When generating an output filepath, the implementation uses the HTML equation `label` attribute to generate an SVG filename. For example, given
+-   When generating an output filepath, the implementation uses the equation `label` attribute to generate an SVG filename. For example, given
 
     ```html
     <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
@@ -75,7 +75,7 @@ var transform = remark.use( createSVGs, opts ).process;
 var path = require( 'path' );
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
-var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-write-svg-equations' );
+var createSVGs = require( '/path/to/@stdlib/tools/remark/plugins/remark-svg-equations-to-file' );
 
 var fpath;
 var vfile;

@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/tools/remark/plugins/remark-write-svg-equations",
+  "name": "@stdlib/tools/remark/plugins/remark-svg-equations-to-file",
   "version": "0.0.0",
-  "description": "remark plugin to create SVG equation files from Markdown HTML equation tags.",
+  "description": "remark plugin to create SVG equation files from Markdown equation comments.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"

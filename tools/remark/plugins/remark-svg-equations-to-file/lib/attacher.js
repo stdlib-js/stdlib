@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-write-svg-equations:attacher' );
+var debug = require( 'debug' )( 'remark-svg-equations-to-file:attacher' );
 var copy = require( '@stdlib/utils/copy' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
@@ -14,7 +14,7 @@ var defaults = require( './defaults.json' );
 // MAIN //
 
 /**
-* Attaches a plugin to a remark processor in order to create SVGs for HTML equation elements.
+* Attaches a plugin to a remark processor in order to create SVGs for Markdown equation elements.
 *
 * @param {Options} [options] - options object
 * @param {string} [options.dir="./docs/img/"] - resource directory
