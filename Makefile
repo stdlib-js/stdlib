@@ -13,8 +13,14 @@ this_dir := $(patsubst %/,%,$(this_dir))
 # Define the root project directory:
 ROOT_DIR ?= $(this_dir)
 
+# Define the top-level directory containing source files:
+SRC_DIR ?= $(ROOT_DIR)/lib/node_modules
+
 # Define the root tools directory:
 TOOLS_DIR ?= $(ROOT_DIR)/tools
+
+# Define the directory containing tools which are Node.js packages:
+TOOLS_PKGS_DIR ?= $(SRC_DIR)/@stdlib/_tools
 
 # Define the directory containing the entry point for Makefile dependencies:
 TOOLS_MAKE_DIR ?= $(TOOLS_DIR)/make
@@ -59,9 +65,6 @@ NODE_MODULES ?= $(ROOT_DIR)/node_modules
 
 # Define the top-level directory containing node module executables:
 BIN_DIR ?= $(NODE_MODULES)/.bin
-
-# Define the top-level directory containing source files:
-SRC_DIR ?= $(ROOT_DIR)/lib/node_modules
 
 # Define the folder name convention for source files:
 SOURCE_FOLDER ?= lib
