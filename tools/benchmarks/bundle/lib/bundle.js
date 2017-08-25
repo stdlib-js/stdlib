@@ -5,7 +5,7 @@
 var debug = require( 'debug' )( 'benchmarks:bundle' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var bundle = require( './../../../browserify/bundle' );
+var bundle = require( '@stdlib/_tools/browserify/bundle' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
@@ -95,6 +95,7 @@ function build( root, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {StringArray} files - matches
+	* @returns {void}
 	*/
 	function onGlob( error, files ) {
 		if ( error ) {
@@ -117,6 +118,7 @@ function build( root, options, clbk ) {
 	* @private
 	* @param {(Error|null)}  error - error object
 	* @param {Buffer} bundle - bundle
+	* @returns {void}
 	*/
 	function onBundle( error, bundle ) {
 		if ( error ) {
