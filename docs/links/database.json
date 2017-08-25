@@ -1341,9 +1341,9 @@
       "stats"
     ]
   },
-  "https://en.wikipedia.org/wiki/Bessel_function": {
-    "id": "bessel",
-    "description": "Wikipedia entry for Bessel functions.",
+  "https://en.wikipedia.org/wiki/Bessel_function#Bessel_functions_of_the_first_kind:_J.CE.B1": {
+    "id": "bessel-j0",
+    "description": "Wikipedia entry for Bessel functions of the first kind.",
     "short_url": "",
     "keywords": [
       "bessel",
