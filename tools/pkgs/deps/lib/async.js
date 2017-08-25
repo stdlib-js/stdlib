@@ -80,6 +80,7 @@ function pkgDeps( pkgs, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {ObjectArray} results - results
+	* @returns {void}
 	*/
 	function onEntries( error, results ) {
 		if ( error ) {
@@ -96,8 +97,9 @@ function pkgDeps( pkgs, options, clbk ) {
 	* Callback invoked upon resolving package dependencies.
 	*
 	* @private
-	* @{(Error|null)} error - error object
+	* @param {(Error|null)} error - error object
 	* @param {ObjectArray} results - results
+	* @returns {void}
 	*/
 	function onDeps( error, results ) {
 		if ( error ) {
@@ -116,8 +118,9 @@ function pkgDeps( pkgs, options, clbk ) {
 	* Callback invoked upon resolving package dev dependencies.
 	*
 	* @private
-	* @{(Error|null)} error - error object
+	* @param {(Error|null)} error - error object
 	* @param {ObjectArray} results - results
+	* @returns {void}
 	*/
 	function onDevDeps( error, results ) {
 		if ( error ) {
@@ -134,6 +137,7 @@ function pkgDeps( pkgs, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {ObjectArray} results - results
+	* @returns {void}
 	*/
 	function done( error, results ) {
 		if ( error ) {

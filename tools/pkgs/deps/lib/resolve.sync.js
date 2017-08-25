@@ -3,7 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'pkg-deps:sync:resolve' );
-var pkgDeps = require( './../../../modules/pkg-deps' ).sync;
+var pkgDeps = require( '@stdlib/_tools/modules/pkg-deps' ).sync;
 var transform = require( './transform.js' );
 
 

@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'pkg-deps:async:resolve-dev' );
 var glob = require( 'glob' );
-var pkgDeps = require( './../../../modules/pkg-deps' );
+var pkgDeps = require( '@stdlib/_tools/modules/pkg-deps' );
 var transform = require( './transform.js' );
 var setDifference = require( './set_difference.js' );
 
@@ -37,7 +37,7 @@ function resolve( pkgs, options, clbk ) {
 			'realpath': true // absolute paths
 		};
 		debug( 'Glob options: %s', JSON.stringify( gopts ) );
-		glob( options.pattern, gopts, onGlob( i ) );
+		glob( options.pattern, gopts, getClbk1( i ) );
 	}
 
 	/**
@@ -47,17 +47,19 @@ function resolve( pkgs, options, clbk ) {
 	* @param {NonNegativeInteger} idx - index
 	* @returns {Callback} callback
 	*/
-	function onGlob( idx ) {
+	function getClbk1( idx ) {
 		var pkg = pkgs[ idx ].pkg;
 		var k = idx + 1;
+		return onGlob;
 		/**
 		* Callback invoked upon matching files.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {(StringArray|EmptyArray)} files - matched files
+		* @returns {void}
 		*/
-		return function onGlob( error, files ) {
+		function onGlob( error, files ) {
 			var opts;
 			if ( error ) {
 				debug( 'Encountered an error when attempting to match files for package: %s (%d of %d). Error: %s', pkg, k, len, error.message );
@@ -80,9 +82,9 @@ function resolve( pkgs, options, clbk ) {
 				'builtins': options.builtins
 			};
 			debug( 'Resolve options: %s', JSON.stringify( opts ) );
-			pkgDeps( files, opts, onDeps( idx ) );
-		}; // end FUNCTION onGlob()
-	} // end FUNCTION onGlob()
+			pkgDeps( files, opts, getClbk2( idx ) );
+		} // end FUNCTION onGlob()
+	} // end FUNCTION getClbk1()
 
 	/**
 	* Returns a callback to be invoked upon resolving package dependencies.
@@ -91,17 +93,19 @@ function resolve( pkgs, options, clbk ) {
 	* @param {NonNegativeInteger} idx - index
 	* @returns {Callback} callback
 	*/
-	function onDeps( idx ) {
+	function getClbk2( idx ) {
 		var pkg = pkgs[ idx ].pkg;
 		var k = idx + 1;
+		return onDeps;
 		/**
 		* Callback invoked upon resolving dependencies.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {ObjectArray} results - results
+		* @returns {void}
 		*/
-		return function onDeps( error, results ) {
+		function onDeps( error, results ) {
 			if ( error ) {
 				debug( 'Encountered an error when resolving package dev dependencies: %s (%d of %d). Error: %s', pkg, k, len, error.message );
 				return done( error );
@@ -112,17 +116,18 @@ function resolve( pkgs, options, clbk ) {
 			pkgs[ idx ].files = pkgs[ idx ].files.concat( results.files );
 
 			// Only include as dev dependencies dependencies which are not already listed as deps:
-			pkgs[ idx ].devDeps = setDifference( results.deps, pkgs[ idx ].deps );
+			pkgs[ idx ].devDeps = setDifference( results.deps, pkgs[ idx ].deps ); // eslint-disable-line max-len
 
 			done();
-		}; // end FUNCTION onDeps()
-	} // end FUNCTION onDeps()
+		} // end FUNCTION onDeps()
+	} // end FUNCTION getClbk2()
 
 	/**
 	* Callback invoked upon resolving dependencies.
 	*
 	* @private
 	* @param {(Error|null)} [error] - error object
+	* @returns {void}
 	*/
 	function done( error ) {
 		if ( error ) {
@@ -132,7 +137,7 @@ function resolve( pkgs, options, clbk ) {
 		debug( 'Resolved %d of %d packages.', count, len );
 		if ( count === len ) {
 			debug( 'Resolved all packages.' );
-			clbk( null, pkgs );
+			return clbk( null, pkgs );
 		}
 	} // end FUNCTION done()
 } // end FUNCTION resolve()

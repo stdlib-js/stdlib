@@ -3,7 +3,7 @@
 // MODULES //
 
 var debug = require( 'debug' )( 'pkg-deps:async:resolve' );
-var pkgDeps = require( './../../../modules/pkg-deps' );
+var pkgDeps = require( '@stdlib/_tools/modules/pkg-deps' );
 var transform = require( './transform.js' );
 
 
@@ -41,7 +41,7 @@ function resolve( entries, builtins, clbk ) {
 			'dir': entries[ i ].dir
 		};
 		debug( 'Resolving package: %s (%d of %d)...', entries[ i ].pkg, i+1, len );
-		pkgDeps( entries[ i ].entries, opts, onDeps( i ) );
+		pkgDeps( entries[ i ].entries, opts, getClbk( i ) );
 	}
 
 	/**
@@ -51,17 +51,19 @@ function resolve( entries, builtins, clbk ) {
 	* @param {NonNegativeInteger} idx - index
 	* @returns {Callback} callback
 	*/
-	function onDeps( idx ) {
+	function getClbk( idx ) {
 		var pkg = entries[ idx ].pkg;
 		var k = idx + 1;
+		return onDeps;
 		/**
 		* Callback invoked upon resolving dependencies.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {ObjectArray} results - results
+		* @returns {void}
 		*/
-		return function onDeps( error, results ) {
+		function onDeps( error, results ) {
 			if ( error ) {
 				debug( 'Encountered an error when resolving package dependencies: %s (%d of %d). Error: %s', pkg, k, len, error.message );
 				return clbk( error );
@@ -77,8 +79,8 @@ function resolve( entries, builtins, clbk ) {
 			if ( count === len ) {
 				return clbk( null, cache );
 			}
-		}; // end FUNCTION onDeps()
-	} // end FUNCTION onDeps()
+		} // end FUNCTION onDeps()
+	} // end FUNCTION getClbk()
 } // end FUNCTION resolve()
 
 

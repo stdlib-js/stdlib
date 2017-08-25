@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'pkg-deps:sync:resolve-dev' );
 var glob = require( 'glob' ).sync;
-var pkgDeps = require( './../../../modules/pkg-deps' ).sync;
+var pkgDeps = require( '@stdlib/_tools/modules/pkg-deps' ).sync;
 var transform = require( './transform.js' );
 var setDifference = require( './set_difference.js' );
 
