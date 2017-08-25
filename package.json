@@ -159,7 +159,7 @@
     "semver": "^5.3.0",
     "spdx-license-ids": "^2.0.0",
     "tap-spec": "4.x.x",
-    "tap-summary": "^3.0.1",
+    "tap-summary": "^4.0.0",
     "tap-xunit": "^1.4.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "to-vfile": "^2.0.0",
