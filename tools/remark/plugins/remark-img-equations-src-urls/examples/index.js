@@ -14,13 +14,13 @@ var out;
 fpath = join( __dirname, 'fixtures/simple.txt' );
 vfile = toVFile.readSync( fpath );
 
-// Specify the directory containing SVG equations:
+// Specify the directory containing equation images:
 opts = {
 	'dir': './doc/img/', // relative to Markdown file
 	'prefix': ''         // no prefix
 };
 
-// Insert src URLs into HTML equation elements:
+// Insert src URLs:
 out = remark().use( insertURLs, opts ).processSync( vfile );
 
 // Output the results:

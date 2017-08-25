@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-html-equations:insert_equations' );
+var debug = require( 'debug' )( 'remark-img-equations:insert_equations' );
 var createElement = require( './../../../../markdown/img-svg-equation' );
 
 
@@ -18,7 +18,7 @@ var RAW = /raw="([^"]*)"/;
 // MAIN //
 
 /**
-* Inserts an HTML equation element into a Markdown AST.
+* Inserts an image equation element into a Markdown AST.
 *
 * @private
 * @param {Node} node - reference node

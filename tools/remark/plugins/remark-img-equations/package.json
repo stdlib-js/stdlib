@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/tools/remark/plugins/remark-html-equations",
+  "name": "@stdlib/tools/remark/plugins/remark-img-equations",
   "version": "0.0.0",
-  "description": "remark plugin to insert HTML equation elements.",
+  "description": "remark plugin to insert image equation elements.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -26,6 +26,8 @@
     "mdown",
     "html",
     "latex",
+    "image",
+    "img",
     "equations",
     "eqn",
     "eqns",
@@ -34,7 +36,8 @@
     "transform",
     "remark",
     "mdast",
-    "plugin"
+    "plugin",
+    "github"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"

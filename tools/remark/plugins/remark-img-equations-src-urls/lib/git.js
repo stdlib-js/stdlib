@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-html-equation-src-urls:git' );
+var debug = require( 'debug' )( 'remark-img-equations-src-urls:git' );
 var exec = require( 'child_process' ).execSync;
 
 

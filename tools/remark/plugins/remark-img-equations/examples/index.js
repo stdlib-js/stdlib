@@ -17,7 +17,7 @@ opts = {
 };
 file = readFileSync( fpath, opts );
 
-// Insert HTML equation elements:
+// Insert equations:
 out = remark().use( insertEquations ).processSync( file );
 
 // Print the results:

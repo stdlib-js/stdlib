@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-html-equation-src-urls:transformer' );
+var debug = require( 'debug' )( 'remark-img-equations-src-urls:transformer' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var visit = require( 'unist-util-visit' );
@@ -43,7 +43,7 @@ function factory( opts ) {
 		visit( tree, 'html', visitor );
 
 		/**
-		* Callback invoked upon finding a matching node. Inserts SVG equation rawgit URLs in Markdown HTML equation elements.
+		* Callback invoked upon finding a matching node. Inserts rawgit URLs for image equations in Markdown equation elements.
 		*
 		* @private
 		* @param {Node} node - reference node

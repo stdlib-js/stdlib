@@ -1,18 +1,18 @@
-# HTML Equations
+# Image Equations
 
-> [remark][remark] plugin to insert Markdown HTML equation elements.
+> [remark][remark] plugin to insert Markdown image equation elements.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equations' );
+var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-img-equations' );
 ```
 
 #### insertEquations()
 
-Attaches a plugin to a [remark][remark] processor in order to insert Markdown HTML equation elements between equation comments.
+Attaches a plugin to a [remark][remark] processor in order to insert Markdown image equation elements between equation comments.
 
 <!-- eslint-disable no-useless-escape -->
 
@@ -54,7 +54,7 @@ console.log( vfile.contents );
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equations' );
+var insertEquations = require( '/path/to/@stdlib/tools/remark/plugins/remark-img-equations' );
 
 var fpath;
 var opts;
@@ -68,7 +68,7 @@ opts = {
 };
 file = readFileSync( fpath, opts );
 
-// Insert HTML equation elements:
+// Insert equations:
 out = remark().use( insertEquations ).processSync( file );
 ```
 

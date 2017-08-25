@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-html-equations:transformer' );
+var debug = require( 'debug' )( 'remark-img-equations:transformer' );
 var visit = require( 'unist-util-visit' );
 var visitor = require( './insert_equations.js' );
 

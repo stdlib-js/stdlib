@@ -1,13 +1,13 @@
 'use strict';
 
 /**
-* remark plugin to insert HTML equation tags into Markdown documents.
+* remark plugin to insert image equations into Markdown documents.
 *
-* @module @stdlib/tools/remark/plugins/remark-html-equations
+* @module @stdlib/tools/remark/plugins/remark-img-equations
 *
 * @example
 * var remark = require( 'remark' );
-* var insertEquations = require( '@stdlib/tools/remark/plugins/remark-html-equations' );
+* var insertEquations = require( '@stdlib/tools/remark/plugins/remark-img-equations' );
 *
 * var transform = remark.use( insertEquations ).processSync;
 */

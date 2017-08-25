@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/tools/remark/plugins/remark-html-equation-src-urls",
+  "name": "@stdlib/tools/remark/plugins/remark-img-equations-src-urls",
   "version": "0.0.0",
-  "description": "remark plugin to insert SVG equation rawgit URLs into Markdown HTML equation elements.",
+  "description": "remark plugin to insert rawgit URLs for equation images into Markdown equation elements.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -30,11 +30,14 @@
     "eqn",
     "eqns",
     "svg",
+    "image",
+    "img",
     "rawgit",
     "remote",
     "remark",
     "mdast",
-    "plugin"
+    "plugin",
+    "github"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"

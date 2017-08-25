@@ -1,18 +1,18 @@
-# HTML Equation Source URLs
+# Image Equation Source URLs
 
-> [remark][remark] plugin to insert SVG equation [rawgit][rawgit] URLs into Markdown HTML equation elements.
+> [remark][remark] plugin to insert [rawgit][rawgit] URLs for equation images into Markdown equation elements.
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var insertURLs = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equation-src-urls' );
+var insertURLs = require( '/path/to/@stdlib/tools/remark/plugins/remark-img-equations-src-urls' );
 ```
 
 #### insertURLs( options )
 
-Attaches a plugin to a [remark][remark] processor in order to insert SVG equation [rawgit][rawgit] URLs into Markdown HTML equation elements.
+Attaches a plugin to a [remark][remark] processor in order to insert [rawgit][rawgit] URLs for equation images into Markdown equation elements.
 
 ```javascript
 var remark = require( 'remark' );
@@ -22,10 +22,10 @@ remark.use( insertURLs );
 
 The function accepts the following `options`:
 
--   **dir**: directory containing SVG equations. Default: `./docs/img/`.
+-   **dir**: directory containing equation images. Default: `./docs/img/`.
 -   **prefix**: filename prefix. Default: `equation_`.
 
-By default, the plugin attempts to resolve SVG equations relative to each processed Markdown file. The default directory is `./docs/img/`. To specify an alternative directory, including an absolute directory, set the `dir` option.
+By default, the plugin attempts to resolve equation images relative to each processed Markdown file. The default directory is `./docs/img/`. To specify an alternative directory, including an absolute directory, set the `dir` option.
 
 ```javascript
 var opts = {
@@ -35,7 +35,7 @@ var opts = {
 remark.use( insertURLs, opts );
 ```
 
-By default, the plugin assumes SVG equation files are prefixed with `equation_`. To specify an alternative prefix, set the `prefix` option.
+By default, the plugin assumes equation image files are prefixed with `equation_`. To specify an alternative prefix, set the `prefix` option.
 
 ```javascript
 var opts = {
@@ -55,7 +55,9 @@ remark.use( insertURLs, opts );
 
 -   The current working directory of the calling process **must** be part of a git repository.
 
--   When resolving an SVG equation filepath, the implementation **assumes** that the HTML equation `label` attribute corresponds to the SVG equation filename.
+-   The function assumes that image equations are Scalable Vector Graphics (SVG).
+
+-   When resolving an equation image filepath, the implementation **assumes** that the equation comment `label` attribute corresponds to the equation image filename.
 
     ```html
     <!-- <equation class="equation" label="eq:absolute_value" align="center" raw="|x| = \begin{cases} x & \textrm{if}\ x \geq 0 \\ -x & \textrm{if}\ x < 0\end{cases}" alt="Absolute value"> -->
@@ -63,7 +65,7 @@ remark.use( insertURLs, opts );
     <!-- </equation> -->
     ```
 
-    Here, the implementation would assume that the SVG equation filename is `equation_absolute_value.svg`, where `equation_` is the default filename prefix.
+    Here, the implementation would assume that the equation image filename is `equation_absolute_value.svg`, where `equation_` is the default filename prefix.
 
 </section>
 
@@ -77,7 +79,7 @@ remark.use( insertURLs, opts );
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
 var path = require( 'path' );
-var insertURLs = require( '/path/to/@stdlib/tools/remark/plugins/remark-html-equation-src-urls' );
+var insertURLs = require( '/path/to/@stdlib/tools/remark/plugins/remark-img-equations-src-urls' );
 
 var fpath;
 var vfile;
@@ -88,13 +90,13 @@ var out;
 fpath = path.join( __dirname, 'fixtures/simple.md' );
 vfile = toVFile.readSync( fpath );
 
-// Specify the directory containing SVG equations:
+// Specify the directory containing equation images:
 opts = {
     'dir': './docs/img/', // relative to Markdown file,
     'prefix': ''          // no prefix 
 };
 
-// Insert src URLs into HTML equation elements:
+// Insert src URLs:
 out = remark().use( insertURLs, opts ).process( vfile );
 
 // Output the results:
