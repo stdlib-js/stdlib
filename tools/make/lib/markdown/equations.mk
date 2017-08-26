@@ -49,6 +49,11 @@ REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-img-e
 REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_SETTINGS ?= '"'dir'"':'"'$(EQUATION_RESOURCES_PATH)'"'
 REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS ?= --use $(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN)=$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_SETTINGS)
 
+# Define the path to a plugin which resolves package identifiers to URLs:
+REMARK_STDLIB_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-stdlib-urls-github
+REMARK_STDLIB_URLS_PLUGIN_SETTINGS ?=
+REMARK_STDLIB_URLS_PLUGIN_FLAGS ?= --use $(REMARK_STDLIB_URLS_PLUGIN)=$(REMARK_STDLIB_URLS_PLUGIN_SETTINGS)
+
 # Define command-line options when invoking the remark executable:
 REMARK_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
@@ -125,6 +130,19 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 		$(REMARK_OUTPUT_FLAG)
 
 .PHONY: markdown-img-equations-src-urls
+
+
+# Insert repository package URLs.
+#
+# This target resolves package identifiers to GitHub repository URLs and updates Markdown files accordingly.
+
+markdown-stdlib-urls: $(NODE_MODULES)
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+		$(REMARK_FLAGS) \
+		$(REMARK_STDLIB_URLS_GITHUB_PLUGIN_FLAGS) \
+		$(REMARK_OUTPUT_FLAG)
+
+.PHONY: markdown-stdlib-urls
 
 
 # Clean SVG equation files.
