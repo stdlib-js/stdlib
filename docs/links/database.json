@@ -1359,6 +1359,15 @@
       "math"
     ]
   },
+  "https://en.wikipedia.org/wiki/Bessel_function#Bessel_functions_of_the_second_kind:_Y.CE.B1": {
+    "id": "bessel-y",
+    "description": "Wikipedia page for Bessel functions of the second kind.",
+    "short_url": "",
+    "keywords": [
+      "math",
+      "bessel"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Beta_distribution": {
     "id": "beta-distribution",
     "description": "Wikipedia entry for the beta distribution.",
