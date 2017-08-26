@@ -1,0 +1,29 @@
+# Absolute Value
+
+<section class="intro">
+
+Beep [boop][@stdlib/boop].
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+Foo [bar][@stdlib/foo/bar].
+
+</section>
+
+<!-- /.usage -->
+
+<section class="links">
+
+[@stdlib/boop]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/foo/bar]: https://github.com/stdlib-js/stdlib
+
+</section>
+
+<!-- /.links -->
