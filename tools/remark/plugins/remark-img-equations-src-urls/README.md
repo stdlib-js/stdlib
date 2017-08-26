@@ -97,7 +97,7 @@ opts = {
 };
 
 // Insert src URLs:
-out = remark().use( insertURLs, opts ).process( vfile );
+out = remark().use( insertURLs, opts ).processSync( vfile );
 
 // Output the results:
 console.log( out.contents );
