@@ -139,7 +139,7 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 markdown-stdlib-urls: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		$(REMARK_STDLIB_URLS_GITHUB_PLUGIN_FLAGS) \
+		$(REMARK_STDLIB_URLS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)
 
 .PHONY: markdown-stdlib-urls
