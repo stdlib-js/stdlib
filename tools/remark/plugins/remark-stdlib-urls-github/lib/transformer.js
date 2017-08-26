@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-stdlib-links-repo:transformer' );
+var debug = require( 'debug' )( 'remark-stdlib-urls-github:transformer' );
 var visit = require( 'unist-util-visit' );
 var replace = require( '@stdlib/string/replace' );
 
@@ -51,7 +51,7 @@ function factory( opts ) {
 				id = replace( node.identifier, '@', '%40' );
 
 				debug( 'Current URL: %s', node.url );
-				node.url = BASE_URL + opts.branch + '/' + id;
+				node.url = BASE_URL + opts.branch + '/lib/node_modules/' + id;
 
 				debug( 'Resolved URL: %s', node.url );
 			}

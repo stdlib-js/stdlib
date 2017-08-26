@@ -1,4 +1,4 @@
-# Repository Links
+# Repository URLs
 
 > [remark][remark] plugin in order to resolve package identifiers to repository URIs.
 
@@ -7,7 +7,7 @@
 ## Usage
 
 ```javascript
-var links = require( '/path/to/@stdlib/tools/remark/plugins/remark-stdlib-links-github' );
+var links = require( '/path/to/@stdlib/tools/remark/plugins/remark-stdlib-urls-github' );
 ```
 
 #### links( options )
@@ -52,7 +52,7 @@ remark.use( links, opts );
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
 var path = require( 'path' );
-var links = require( '/path/to/@stdlib/tools/remark/plugins/remark-stdlib-links-github' );
+var links = require( '@stdlib/tools/remark/plugins/remark-stdlib-urls-github' );
 
 var fpath;
 var opts;

@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-img-equations-src-urls:attacher' );
+var debug = require( 'debug' )( 'remark-stdlib-urls-github:attacher' );
 var copy = require( '@stdlib/utils/copy' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
