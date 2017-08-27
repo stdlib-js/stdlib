@@ -13,8 +13,8 @@ var git = require( './git.js' );
 
 // VARIABLES //
 
-var DIV_EQN = /<div class="equation"/g;
-var IMG_SOURCE = /(<img src=")([^"]*)(")/g;
+var DIV_EQN = /<div class="equation"/;
+var IMG_SOURCE = /(<img src=")([^"]*)(")/;
 var LABEL = /data-equation="eq:([^"]*)">/;
 
 
