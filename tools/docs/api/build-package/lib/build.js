@@ -179,7 +179,7 @@ function build( pkg, dest, options, clbk ) {
 		bopts.prepend = opts.prepend;
 		bopts.append = opts.append;
 
-		// TODO: support either a provided source URL or attempt to resolve a source URL
+		// TODO: support either a provided source URL or attempt to resolve a source URL. Possibly support providing a source base URL to which a package name is simply appended; e.g., https://github.com/stdlib-js/stdlib/tree/develop/ => https://github.com/stdlib-js/stdlib/tree/develop/@stdlib/foo/bar.
 		bopts.source = 'https://github.com/stdlib-js/stdlib';
 		if ( builds.tests ) {
 			bopts.tests = join( opts.mount, opts.tests.html );
