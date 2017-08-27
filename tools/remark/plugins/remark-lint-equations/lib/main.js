@@ -10,8 +10,8 @@ var tex2svg = require( '@stdlib/_tools/utils/tex-equation-to-svg' );
 
 // VARIABLES //
 
-var EQN_START = /<!-- <equation.*> -->/gi;
-var EQN_END = /<!-- <\/equation> -->/gi;
+var EQN_START = /<!-- <equation.*> -->/;
+var EQN_END = /<!-- <\/equation> -->/;
 var LABEL = /label="([^"]*)"/;
 var ALT = /alt="([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
