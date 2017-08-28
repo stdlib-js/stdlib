@@ -126,7 +126,7 @@ h2 {
 	margin-bottom: 16px;
 }
 
-@media (max-width: 1220px) {
+@media only screen and (max-width: 1220px) {
 	.readme > h1,
 	.readme > h2,
 	.readme > h3,
@@ -144,7 +144,7 @@ h2 {
 	}
 }
 
-@media (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 	.readme > h1,
 	.readme > h2,
 	.readme > h3,
@@ -163,7 +163,7 @@ h2 {
 	}
 }
 
-@media (max-width: 860px) {
+@media only screen and (max-width: 860px) {
 	.main {
 		width: 86%;
 		margin-left: 7%;
@@ -187,7 +187,7 @@ h2 {
 	}
 }
 
-@media (max-width: 720px) {
+@media only screen (max-width: 720px) {
 	.main {
 		width: 96%;
 		margin-left: 2%;
