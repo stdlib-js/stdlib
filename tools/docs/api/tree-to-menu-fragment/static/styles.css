@@ -282,6 +282,7 @@
 /*
 * Highlight a selected list item.
 */
-.menu-list-item-input:checked + label {
-	background-color: #fff;
+.menu li .menu-list-item-input:checked + label > a {
+	color: #5ca2c8;
+	/*background-color: #376d8a;*/
 }
