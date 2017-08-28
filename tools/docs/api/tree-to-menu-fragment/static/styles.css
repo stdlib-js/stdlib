@@ -77,11 +77,11 @@
 	background-color: #1D1F20;
 	background-image: linear-gradient(145deg, #1D1F20, #404348);
 
-	-webkit-transition: all 200ms ease-in;
-	-moz-transition: all 200ms ease-in;
-	-ms-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	-ms-transition: all 100ms ease-in;
+	-o-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
 }
 
 /*
@@ -99,11 +99,11 @@
 
 	cursor: pointer;
 
-	-webkit-transition: all 200ms ease-in;
-	-moz-transition: all 200ms ease-in;
-	-ms-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	-ms-transition: all 100ms ease-in;
+	-o-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
 }
 
 /*
@@ -131,11 +131,11 @@
 * When the input element is selected, translate a "main" element. Assumes that the slideout menu has a sibling with class `.main`.
 */
 .slideout-menu-input:checked ~ .main {
-	-webkit-transition: all 200ms ease-in;
-	-moz-transition: all 200ms ease-in;
-	-ms-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	-ms-transition: all 100ms ease-in;
+	-o-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
 
 	/* Add transform fallbacks for browsers not supporting translate3d. */
 	-webkit-transform: translateX(400px);
