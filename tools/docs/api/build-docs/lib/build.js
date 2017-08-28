@@ -32,12 +32,18 @@ var scripts = require( './scripts.js' );
 * }
 */
 function build( clbk ) {
+	var mopts;
 	var opts;
 	if ( !isFunction( clbk ) ) {
 		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `'+clbk+'`.' );
 	}
 	opts = copy( defaults );
-	menu( opts, onMenu );
+	mopts = {
+		'title': opts.title,
+		'url': opts.url,
+		'mount': opts.mount
+	};
+	menu( mopts, onMenu );
 
 	/**
 	* Callback invoked upon creating a menu fragment.
