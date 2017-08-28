@@ -159,29 +159,55 @@
 * Hide the input elements.
 */
 .menu-section-input,
-.menu-section-list-item-input {
+.menu-list-item-input {
 	display: none;
 }
 
 /*
-* Style menu triggers and top-level list items.
+* Style menu triggers and list items.
 */
-.menu > ul > li > a,
-.menu > ul > li > label > a,
-.menu-section-label {
+.menu-section-label,
+.menu-list-item-label,
+.menu-list-item-label a {
 	display: block;
 	position: relative;
 
+	background-color: transparent;
+}
+
+.menu-section-label,
+.menu-list-item-label a {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	padding-left: 0.8em;
 
 	cursor: pointer;
 
-	color: #85888d;
-
-	background-color: transparent;
 	transition: background-color .15s ease-in-out;
+}
+
+/*
+* Style top-level menu items.
+*/
+.menu > ul > li > label,
+.menu > ul > li > label > a,
+.menu > ul > li > section > label {
+	color: #85888d;
+}
+
+/*
+* Style menu triggers.
+*/
+.menu-section-label {
+	color: #85888d;
+}
+
+/*
+* Style menu tree "leaves". These are the actual navigation elements.
+*/
+.menu-list-item-label,
+.menu-list-item-label a {
+	color: #c7c7c7; /* #fff; */
 }
 
 /*
@@ -201,23 +227,6 @@
 }
 
 /*
-* Style menu tree "leaves". These are the actual navigation elements.
-*/
-.menu-section-list li a {
-	display: block;
-
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left: 0.5em;
-
-	cursor: pointer;
-
-	color: #c7c7c7; /* #fff; */
-
-	background-color: transparent;
-}
-
-/*
 * When a menu section is selected, show the section items.
 */
 .menu-section-input:checked ~ .menu-section-list {
@@ -226,7 +235,7 @@
 }
 
 /*
-* Highlight a selected item.
+* Highlight a selected section.
 */
 .menu-section-input:checked + label,
 .menu-section-label:hover {
@@ -268,4 +277,11 @@
 .menu-section-label:hover:after,
 .menu-section-input:checked + .menu-section-label:after {
 	/*background-color: #313334;*/
+}
+
+/*
+* Highlight a selected list item.
+*/
+.menu-list-item-input:checked + label {
+	background-color: #fff;
 }

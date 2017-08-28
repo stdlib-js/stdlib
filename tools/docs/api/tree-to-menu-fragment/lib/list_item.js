@@ -7,7 +7,7 @@ var replace = require( '@stdlib/string/replace' );
 
 // VARIABLES //
 
-var li = '<li><input class="menu-section-list-item-input" id="menu-list-item-{{id}}" name="menu-list-item-{{id}}" type="checkbox"><label class="menu-section-list-item-label" for="menu-list-item-{{id}}"><a href="{{href}}">{{item}}</a></label></li>';
+var li = '<li><input class="menu-list-item-input" id="menu-list-item-{{id}}" name="menu-list-item" type="radio"><label class="menu-list-item-label" for="menu-list-item-{{id}}"><a href="{{href}}">{{item}}</a></label></li>';
 
 
 // MAIN //
