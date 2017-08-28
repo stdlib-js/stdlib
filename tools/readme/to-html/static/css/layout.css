@@ -187,7 +187,7 @@ h2 {
 	}
 }
 
-@media only screen (max-width: 720px) {
+@media only screen and (max-width: 720px) {
 	.main {
 		width: 96%;
 		margin-left: 2%;
