@@ -145,6 +145,9 @@
 				// Reset the scroll position:
 				document.querySelector( 'body' ).scrollTop = 0;
 
+				// Update the document title:
+				document.title = container.querySelector( 'title' ).innerHTML;
+
 				// Update browser history (note: browser history API available IE10+):
 				if ( bool && history && history.pushState ) {
 					state = {
