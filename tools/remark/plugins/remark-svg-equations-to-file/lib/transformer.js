@@ -13,7 +13,7 @@ var tex2svg = require( '@stdlib/_tools/utils/tex-equation-to-svg' );
 
 // VARIABLES //
 
-var EQN_START = /<!-- <equation.*> -->/gi;
+var EQN_START = /<!-- <equation.*> -->/;
 var LABEL = /label="eq:([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
 

@@ -56,7 +56,7 @@ function build( clbk ) {
 		}
 		dest = resolve( cwd(), opts.out );
 		bopts = {
-			'head': head+'\n<style>'+menu.css+'</style>',
+			'head': head+'\n<style>'+menu.css+'</style>\n<style>\n.slideout-menu {\n\tfont-family: "Lato", "Helvetica Neue";\n\tfont-weight: 200;\n}\n</style>',
 			'prepend': menu.html,
 			'append': scripts.join( '\n' ),
 			'mount': opts.mount

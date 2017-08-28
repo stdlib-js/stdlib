@@ -74,11 +74,18 @@
 	* @param {Object} evt - event object
 	*/
 	function onClick( evt ) {
+		var parent;
 		var target;
 		var href;
 
 		// Prevent the browser from doing its default behavior (e.g., navigating to a new page):
 		evt.preventDefault();
+
+		// Get the parent node:
+		parent = evt.srcElement.parentNode;
+
+		// Update the status of the parent input element:
+		parent.previousSibling.checked = true;
 
 		// Extract the resource name to we can request it manually:
 		target = evt.target || evt.srcElement;

@@ -6,10 +6,12 @@ var getKeys = require( 'object-keys' ).shim();
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 var copy = require( '@stdlib/utils/copy' );
+var minstd = require( '@stdlib/math/base/random/minstd-shuffle' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
 var listItem = require( './list_item.js' );
+var sort = require( './sort.js' );
 
 
 // VARIABLES //
@@ -62,7 +64,7 @@ function menu( tree, options ) {
 	tmp = replace( tmp, '{{href}}', opts.url );
 	str += tmp;
 
-	keys = getKeys( tree ).sort();
+	keys = sort( getKeys( tree ) );
 	str += listStart;
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
@@ -77,7 +79,7 @@ function menu( tree, options ) {
 			} else {
 				v = key;
 			}
-			str += listItem( v, opts.mount+key );
+			str += listItem( v, minstd().toString(), opts.mount+key );
 		}
 	}
 	str += listEnd;
