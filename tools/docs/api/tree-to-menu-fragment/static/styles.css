@@ -122,6 +122,11 @@
 * When the input element is selected, translate a "main" element. Assumes that the slideout menu has a sibling with class `.main`.
 */
 .slideout-menu-input:checked ~ .main {
+	-moz-transition:all 200ms ease-in;
+	-webkit-transition:all 200ms ease-in;
+	-o-transition:all 200ms ease-in;
+	transition:all 200ms ease-in;
+
 	-webkit-transform:translate3d(400px, 0, 0);
 	-moz-transform:translate3d(400px, 0, 0);
 	-o-transform:translate3d(400px, 0, 0);
