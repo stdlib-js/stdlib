@@ -2,9 +2,8 @@
 * Component styles.
 *
 * 1. Hamburger menu.
-* 2. Tabs.
-* 3. Slideout menu.
-* 4. Menu sections.
+* 2. Slideout menu.
+* 3. Menu sections.
 */
 
 /*
@@ -43,12 +42,6 @@
 .hamburger-menu-icon span:nth-child(3) {
 	top: 20px;
 }
-
-/*
-* Tabs.
-*/
-
-
 
 /*
 * Slideout menu.
