@@ -50,7 +50,7 @@ function menu( tree, label, mount ) {
 			} else {
 				v = key;
 			}
-			str += listItem( v, mount+key );
+			str += listItem( v, minstd().toString(), mount+key );
 		}
 	}
 	str += end;

@@ -156,9 +156,10 @@
 }
 
 /*
-* Hide the input element.
+* Hide the input elements.
 */
-.menu-section-input {
+.menu-section-input,
+.menu-section-list-item-input {
 	display: none;
 }
 
@@ -166,6 +167,7 @@
 * Style menu triggers and top-level list items.
 */
 .menu > ul > li > a,
+.menu > ul > li > label > a,
 .menu-section-label {
 	display: block;
 	position: relative;
