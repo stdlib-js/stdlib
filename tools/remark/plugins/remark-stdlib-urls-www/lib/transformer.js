@@ -4,7 +4,6 @@
 
 var debug = require( 'debug' )( 'remark-stdlib-urls-www:transformer' );
 var visit = require( 'unist-util-visit' );
-var replace = require( '@stdlib/string/replace' );
 
 
 // VARIABLES //
@@ -43,15 +42,12 @@ function factory( opts ) {
 		* @param {Node} node - reference node
 		*/
 		function visitor( node ) {
-			var id;
-
 			debug( 'Found a definition: %s', node.identifier );
 			if ( RE_STDLIB.test( node.identifier ) ) {
 				debug( 'Found a package identifier.' );
-				id = replace( node.identifier, '@', '%40' );
 
 				debug( 'Current URL: %s', node.url );
-				node.url = BASE_URL + opts.version + '/docs/api/' + id;
+				node.url = BASE_URL + opts.version + '/docs/api/' + node.identifier;
 
 				debug( 'Resolved URL: %s', node.url );
 			}
