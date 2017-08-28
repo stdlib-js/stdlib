@@ -2,8 +2,9 @@
 * Component styles.
 *
 * 1. Hamburger menu.
-* 2. Slideout menu.
-* 3. Menu sections.
+* 2. Tabs.
+* 3. Slideout menu.
+* 4. Menu sections.
 */
 
 /*
@@ -44,6 +45,12 @@
 }
 
 /*
+* Tabs.
+*/
+
+
+
+/*
 * Slideout menu.
 */
 
@@ -70,8 +77,9 @@
 	background-color: #1D1F20;
 	background-image: linear-gradient(145deg, #1D1F20, #404348);
 
-	-moz-transition: all 200ms ease-in;
 	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
 	-o-transition: all 200ms ease-in;
 	transition: all 200ms ease-in;
 }
@@ -91,8 +99,9 @@
 
 	cursor: pointer;
 
-	-moz-transition: all 200ms ease-in;
 	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
 	-o-transition: all 200ms ease-in;
 	transition: all 200ms ease-in;
 }
@@ -122,15 +131,36 @@
 * When the input element is selected, translate a "main" element. Assumes that the slideout menu has a sibling with class `.main`.
 */
 .slideout-menu-input:checked ~ .main {
-	-moz-transition:all 200ms ease-in;
-	-webkit-transition:all 200ms ease-in;
-	-o-transition:all 200ms ease-in;
-	transition:all 200ms ease-in;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+
+	/* Add transform fallbacks for browsers not supporting translate3d. */
+	-webkit-transform: translateX(400px);
+	-moz-transform: translateX(400px);
+	-ms-transform: translateX(400px);
+	-o-transform: translateX(400px);
+	transform: translateX(400px);
+
+	-webkit-transform: translateZ(0) translateX(400px);
+	-moz-transform: translateZ(0) translateX(400px);
+	-ms-transform: translateZ(0) translateX(400px);
+	-o-transform: translateZ(0) translateX(400px);
+	transform: translateZ(0) translateX(400px);
 
 	-webkit-transform:translate3d(400px, 0, 0);
 	-moz-transform:translate3d(400px, 0, 0);
+	-ms-transform:translate3d(400px, 0, 0);
 	-o-transform:translate3d(400px, 0, 0);
 	transform:translate3d(400px, 0, 0);
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 /*
@@ -183,6 +213,10 @@
 
 	cursor: pointer;
 
+	-webkit-transition: background-color .15s ease-in-out;
+	-moz-transition: background-color .15s ease-in-out;
+	-ms-transition: background-color .15s ease-in-out;
+	-o-transition: background-color .15s ease-in-out;
 	transition: background-color .15s ease-in-out;
 }
 
@@ -253,6 +287,11 @@
 	text-align: center;
 
 	background-color: transparent;
+
+	-webkit-transition: background-color .15s ease-in-out;
+	-moz-transition: background-color .15s ease-in-out;
+	-ms-transition: background-color .15s ease-in-out;
+	-o-transition: background-color .15s ease-in-out;
 	transition: background-color .15s ease-in-out;
 }
 
