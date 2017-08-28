@@ -11,6 +11,9 @@
 * @returns {boolean} comparison result
 */
 function comparator( a, b ) {
+	if ( a === '__namespace__' ) {
+		return -1;
+	}
 	if ( a[ 0 ] === '_' && b[ 0 ] === '_' ) {
 		return comparator( a.substring( 1 ), b.substring( 1 ) );
 	}
