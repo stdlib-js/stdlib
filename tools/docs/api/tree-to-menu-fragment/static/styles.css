@@ -235,14 +235,6 @@
 }
 
 /*
-* Highlight a selected section.
-*/
-.menu-section-input:checked + label,
-.menu-section-label:hover {
-	/*background-color: #313334;*/
-}
-
-/*
 * Use a '+' to indicate more content is available. Align the '+' to the far right of the container.
 */
 .menu-section-label:after,
@@ -272,17 +264,8 @@
 }
 
 /*
-* When hovering over a trigger element, change color.
-*/
-.menu-section-label:hover:after,
-.menu-section-input:checked + .menu-section-label:after {
-	/*background-color: #313334;*/
-}
-
-/*
 * Highlight a selected list item.
 */
 .menu li .menu-list-item-input:checked + label > a {
 	color: #5ca2c8;
-	/*background-color: #376d8a;*/
 }
