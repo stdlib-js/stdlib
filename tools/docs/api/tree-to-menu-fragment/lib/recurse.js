@@ -7,6 +7,7 @@ var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 var minstd = require( '@stdlib/math/base/random/minstd-shuffle' );
 var listItem = require( './list_item.js' );
+var sort = require( './sort.js' );
 
 
 // VARIABLES //
@@ -36,7 +37,7 @@ function menu( tree, label, mount ) {
 	str = replace( begin, '{{id}}', minstd().toString() );
 	str = replace( str, '{{label}}', label );
 
-	keys = getKeys( tree ).sort();
+	keys = sort( getKeys( tree ) );
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
 		v = tree[ key ];

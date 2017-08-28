@@ -10,6 +10,7 @@ var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
 var listItem = require( './list_item.js' );
+var sort = require( './sort.js' );
 
 
 // VARIABLES //
@@ -62,7 +63,7 @@ function menu( tree, options ) {
 	tmp = replace( tmp, '{{href}}', opts.url );
 	str += tmp;
 
-	keys = getKeys( tree ).sort();
+	keys = sort( getKeys( tree ) );
 	str += listStart;
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
