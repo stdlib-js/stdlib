@@ -382,8 +382,8 @@
 */
 .slideout-menu-input:checked ~ .slideout-menu-label > span {
 	height: 1px;
-	color: #85888d;
-	background-color: #85888d;
+	color: #acafb3;
+	background-color: #acafb3;
 
 	/* name | duration | timing function | delay */
 	-webkit-transition: transform 0s ease-in-out 0s;
@@ -471,14 +471,14 @@
 .menu > ul > li > label,
 .menu > ul > li > label > a,
 .menu > ul > li > section > label {
-	color: #85888d;
+	color: #acafb3;
 }
 
 /*
 * Style menu triggers.
 */
 .menu-section-label {
-	color: #85888d;
+	color: #acafb3;
 }
 
 /*
@@ -545,5 +545,5 @@
 * Highlight a selected list item.
 */
 .menu li .menu-list-item-input:checked + label > a {
-	color: #acafb3;
+	color: #5ca2c8;
 }
