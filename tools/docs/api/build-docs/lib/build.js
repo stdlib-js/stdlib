@@ -11,6 +11,7 @@ var menu = require( './../../package-menu' );
 var buildPkgs = require( './../../build-packages' );
 var defaults = require( './defaults.json' );
 var head = require( './head.js' );
+var logo = require( './logo.js' );
 var scripts = require( './scripts.js' );
 
 
@@ -39,7 +40,7 @@ function build( clbk ) {
 	}
 	opts = copy( defaults );
 	mopts = {
-		'title': opts.title,
+		'title': logo,
 		'url': opts.url,
 		'mount': opts.mount
 	};
