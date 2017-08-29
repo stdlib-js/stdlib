@@ -75,11 +75,6 @@ h2 {
 * General class level rules.
 */
 
-.main {
-	width: 87.5%;
-	margin-left: 12.5%;
-}
-
 .top-nav {
 	display: block;
 	width: 100%;
@@ -95,6 +90,15 @@ h2 {
 .top-nav-item {
 	float: right;
 	padding: 0 16px;
+}
+
+.top-nav-item a {
+	display: block;
+}
+
+.main {
+	width: 87.5%;
+	margin-left: 12.5%;
 }
 
 .readme {

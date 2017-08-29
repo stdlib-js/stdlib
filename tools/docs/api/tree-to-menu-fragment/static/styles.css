@@ -52,6 +52,22 @@
 */
 
 /*
+* Hamburger menu container.
+*/
+.hamburger-menu-icon {
+	display: block;
+	float: right;
+	position: relative;
+
+	margin-right: 10px;
+
+	width: 30px;
+	height: 25px;
+
+	cursor: pointer;
+}
+
+/*
 * Style each hamburger menu line.
 */
 .hamburger-menu-icon span {
@@ -62,7 +78,7 @@
 	height: 5px;
 	width: 100%;
 
-	color: #000;
+	color: #000000;
 
 	opacity: 1;
 	background-color: #000;
@@ -115,6 +131,7 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-background,
 .slideout-menu-input ~ .main {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -134,8 +151,9 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-background,
 .slideout-menu-input ~ .main {
-	/* name | duration | timing function */
+	/* name | duration | timing function | delay */
 	-webkit-transition: transform 100ms ease-in;
 	-moz-transition: transform 100ms ease-in;
 	-ms-transition: transform 100ms ease-in;
@@ -174,32 +192,24 @@
 }
 
 /*
-* Initially position the menu off canvas.
+* Specify the menu width.
 */
-.slideout-menu {
+.slideout-menu,
+.slideout-menu-label,
+.slideout-menu-background {
+	width: 400px;
+}
+
+/*
+* Initially position the menu and menu background off canvas.
+*/
+.slideout-menu,
+.slideout-menu-background {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-
-	padding-bottom: 40px;
-
-	z-index: 0;
-
-	width: 400px;
-
-	/*font-family: "Helvetica Neue";*/
-
-	overflow-y: auto;
-
-	background-color: #1D1F20;
-
-	background-image: -webkit-linear-gradient(145deg, #1D1F20, #404348);
-	background-image: -moz-linear-gradient(145deg, #1D1F20, #404348);
-	background-image: -ms-linear-gradient(145deg, #1D1F20, #404348);
-	background-image: -o-linear-gradient(145deg, #1D1F20, #404348);
-	background-image: linear-gradient(145deg, #1D1F20, #404348);
 
 	/* Move the menu into off canvas, adding transform fallbacks for browsers not supporting `translate3d`. Translate the menu `-width`. */
 	-webkit-transform: translateX(-400px); /* -width */
@@ -222,38 +232,68 @@
 }
 
 /*
+* Style the slideout menu background.
+*/
+.slideout-menu-background {
+	z-index: -1;
+
+	background-color: #1D1F20; /* fallback */
+
+	background-image: -webkit-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -moz-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -ms-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -o-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: linear-gradient(145deg, #1D1F20, #404348);
+}
+
+/*
+* Style the slideout menu.
+*/
+.slideout-menu {
+	z-index: 0;
+
+	margin-top: 55px; /* allow space for menu header */
+	padding-top: 0;
+	padding-bottom: 40px;
+
+	overflow-y: auto;
+
+	background-color: transparent;
+}
+
+/*
 * Slideout menu sibling which triggers the slideout.
 */
 .slideout-menu-label {
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 0;
+	left: 0;
 
 	z-index: 500;
 
-	width: 30px;
-	height: 25px;
+	height: 50px;
+	padding-top: 20px;
 
-	cursor: pointer;
+	background-color: transparent;
 
 	/* Initialize the element for hardware acceleration. Add transform fallbacks for browsers not supporting `translate3d`. */
-	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
-	transform: translateX(0);
+	-webkit-transform: translateX(-350px); /* width - hamburger */
+	-moz-transform: translateX(-350px); /* width - hamburger */
+	-ms-transform: translateX(-350px); /* width - hamburger */
+	-o-transform: translateX(-350px); /* width - hamburger */
+	transform: translateX(-350px); /* width - hamburger */
 
-	-webkit-transform: translateZ(0) translateX(0);
-	-moz-transform: translateZ(0) translateX(0);
-	-ms-transform: translateZ(0) translateX(0);
-	-o-transform: translateZ(0) translateX(0);
-	transform: translateZ(0) translateX(0);
+	-webkit-transform: translateZ(0) translateX(-350px); /* width - hamburger */
+	-moz-transform: translateZ(0) translateX(-350px); /* width - hamburger */
+	-ms-transform: translateZ(0) translateX(-350px); /* width - hamburger */
+	-o-transform: translateZ(0) translateX(-350px); /* width - hamburger */
+	transform: translateZ(0) translateX(-350px); /* width - hamburger */
 
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
-	-o-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(-350px, 0, 0); /* width - hamburger */
+	-moz-transform: translate3d(-350px, 0, 0); /* width - hamburger */
+	-ms-transform: translate3d(-350px, 0, 0); /* width - hamburger */
+	-o-transform: translate3d(-350px, 0, 0); /* width - hamburger */
+	transform: translate3d(-350px, 0, 0); /* width - hamburger */
 }
 
 /*
@@ -264,9 +304,70 @@
 }
 
 /*
-* When the input element is selected, make the slideout menu visible.
+* Slideout menu search input element.
 */
-.slideout-menu-input:checked ~ .slideout-menu {
+.slideout-menu-input[name="slideout-menu-search"] {
+	display: block;
+	float: left;
+	position: relative;
+
+	margin-left: 10px;
+
+	height: 25px;
+	width: 340px;
+
+	font-size: 1.1em;
+	font-weight: 200;
+	color: #acafb3;
+
+	background-color: inherit;
+
+	border: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #acafb3; /* fallback */
+	border-bottom-color: rgba(172, 175, 178, 0.3);
+}
+
+.slideout-menu-input[name="slideout-menu-search"]:focus {
+	outline: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.slideout-menu-input[name="slideout-menu-search"]::-webkit-input-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.slideout-menu-input[name="slideout-menu-search"]::-moz-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.slideout-menu-input[name="slideout-menu-search"]::-ms-input-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.slideout-menu-input[name="slideout-menu-search"]::placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+/*
+* When the input element is selected, make the slideout menu and menu background visible.
+*/
+.slideout-menu-input:checked ~ .slideout-menu,
+.slideout-menu-input:checked ~ .slideout-menu-background {
 	/* Add transform fallbacks for browsers not supporting `translate3d`. */
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
@@ -317,12 +418,12 @@
 }
 
 /*
-* When the input element is selected, move the trigger element to ensure the element is still visible.
+* When the input element is selected, move the trigger element to ensure the element is fully visible.
 */
 .slideout-menu-input:checked ~ .slideout-menu-label {
 	/* Fade in the label element to allow the element to reach its final destination in the "background". */
 	-webkit-animation-name: fadein;
-	-webkit-animation-duration: 250ms; /* should be longer than menu transform duration */
+	-webkit-animation-duration: 100ms;
 	-webkit-animation-timing-function: ease-in;
 	-webkit-animation-delay: 0ms;
 	-webkit-animation-direction: normal;
@@ -331,7 +432,7 @@
 	-webkit-animation-play-state: running;
 
 	-moz-animation-name: fadein;
-	-moz-animation-duration: 250ms; /* should be longer than menu transform duration */
+	-moz-animation-duration: 100ms;
 	-moz-animation-timing-function: ease-in;
 	-moz-animation-delay: 0ms;
 	-moz-animation-direction: normal;
@@ -340,7 +441,7 @@
 	-moz-animation-play-state: running;
 
 	-o-animation-name: fadein;
-	-o-animation-duration: 250ms; /* should be longer than menu transform duration */
+	-o-animation-duration: 100ms;
 	-o-animation-timing-function: ease-in;
 	-o-animation-delay: 0ms;
 	-o-animation-direction: normal;
@@ -349,7 +450,7 @@
 	-o-animation-play-state: running;
 
 	animation-name: fadein;
-	animation-duration: 250ms; /* should be longer than menu transform duration */
+	animation-duration: 100ms;
 	animation-timing-function: ease-in;
 	animation-delay: 0ms;
 	animation-direction: normal;
@@ -357,31 +458,32 @@
 	animation-fill-mode: none;
 	animation-play-state: running;
 
-	/* Add transform fallbacks for browsers not supporting `translate3d`. Translate the width of the menu minus the label width minus right padding. */
-	-webkit-transform: translateX(350px);
-	-moz-transform: translateX(350px);
-	-ms-transform: translateX(350px);
-	-o-transform: translateX(350px);
-	transform: translateX(350px);
+	/* Add transform fallbacks for browsers not supporting `translate3d` */
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
 
-	-webkit-transform: translateZ(0) translateX(350px);
-	-moz-transform: translateZ(0) translateX(350px);
-	-ms-transform: translateZ(0) translateX(350px);
-	-o-transform: translateZ(0) translateX(350px);
-	transform: translateZ(0) translateX(350px);
+	-webkit-transform: translateZ(0) translateX(0);
+	-moz-transform: translateZ(0) translateX(0);
+	-ms-transform: translateZ(0) translateX(0);
+	-o-transform: translateZ(0) translateX(0);
+	transform: translateZ(0) translateX(0);
 
-	-webkit-transform: translate3d(350px, 0, 0);
-	-moz-transform: translate3d(350px, 0, 0);
-	-ms-transform: translate3d(350px, 0, 0);
-	-o-transform: translate3d(350px, 0, 0);
-	transform: translate3d(350px, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 /*
 * When the input element is selected, convert the hamburger menu to an `X`.
 */
-.slideout-menu-input:checked ~ .slideout-menu-label > span {
+.slideout-menu-input:checked ~ .slideout-menu-label > .hamburger-menu-icon > span {
 	height: 1px;
+
 	color: #acafb3;
 	background-color: #acafb3;
 
@@ -393,12 +495,12 @@
 	transition: transform 0s ease-in-out 0s;
 }
 
-.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(1),
-.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(4) {
+.slideout-menu-input:checked ~ .slideout-menu-label > .hamburger-menu-icon > span:nth-child(1),
+.slideout-menu-input:checked ~ .slideout-menu-label > .hamburger-menu-icon > span:nth-child(4) {
 	display: none;
 }
 
-.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(2) {
+.slideout-menu-input:checked ~ .slideout-menu-label > .hamburger-menu-icon > span:nth-child(2) {
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -406,7 +508,7 @@
 	transform: rotate(45deg);
 }
 
-.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(3) {
+.slideout-menu-input:checked ~ .slideout-menu-label > .hamburger-menu-icon > span:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
@@ -424,7 +526,7 @@
 .menu-header {
 	color: #fff;
 	border-bottom: 1px solid #2a2d2f;
-	padding: 25px 0 20px 0.8em;
+	padding: 15px 0 15px 0.8em;
 }
 
 /*
