@@ -521,6 +521,14 @@
 }
 
 /*
+* When a menu section is selected, darken the background.
+*/
+.menu-section-input:checked ~ .menu-section-label,
+.menu-section-input:checked ~ .menu-section-list {
+	background-color: #242627;
+}
+
+/*
 * Use a '+' to indicate more content is available. Align the '+' to the far right of the container.
 */
 .menu-section-label:after,
