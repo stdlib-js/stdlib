@@ -424,7 +424,14 @@
 .menu-header {
 	color: #fff;
 	border-bottom: 1px solid #2a2d2f;
-	padding: 20px 0 20px 0.8em;
+	padding: 25px 0 20px 0.8em;
+}
+
+/*
+* Style the menu header title.
+*/
+.menu-header-title {
+	display: block;
 }
 
 /*
