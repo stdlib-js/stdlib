@@ -235,7 +235,7 @@
 * Style the slideout menu background.
 */
 .slideout-menu-background {
-	z-index: -1;
+	z-index: 0;
 
 	background-color: #1D1F20; /* fallback */
 
