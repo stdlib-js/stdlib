@@ -10,7 +10,7 @@
 	{{/head}}
 </head>
 <body>
-	<nav class="top-nav">
+	<nav class="top-nav" role="navigation">
 			<ul class="top-nav-items">
 				{{#source}}
 				<li class="top-nav-item"><a href="{{{source}}}">Source</a></li>
@@ -26,7 +26,7 @@
 	{{#prepend}}
 	{{{.}}}
 	{{/prepend}}
-	<div class="main">
+	<div class="main" role="main">
 		<article class="readme group">
 			{{{readme}}}
 		</article>

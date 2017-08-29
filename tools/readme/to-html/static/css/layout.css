@@ -3,12 +3,14 @@
 *
 * 1. General rules.
 * 2. Class-level rules.
-* 3. Lists.
-* 4. Definition lists.
-* 5. Blockquotes.
-* 6. Horizontal rules.
-* 7. Tables.
-* 8. Code.
+* 3. Media queries.
+* 4. Lists.
+* 5. Definition lists.
+* 6. Blockquotes.
+* 7. Horizontal rules.
+* 8. Tables.
+* 9. Code.
+* 10. Equations.
 */
 
 /*
@@ -126,7 +128,13 @@ h2 {
 	margin-bottom: 16px;
 }
 
-@media (max-width: 1220px) {
+/*
+* Media queries.
+*
+* [1]: https://zellwk.com/blog/media-query-units/
+*/
+
+@media only screen and (max-width: 76.25em) { /* 1220px */
 	.readme > h1,
 	.readme > h2,
 	.readme > h3,
@@ -144,7 +152,7 @@ h2 {
 	}
 }
 
-@media (max-width: 1080px) {
+@media only screen and (max-width: 67.5em) { /* 1080px */
 	.readme > h1,
 	.readme > h2,
 	.readme > h3,
@@ -163,7 +171,7 @@ h2 {
 	}
 }
 
-@media (max-width: 860px) {
+@media only screen and (max-width: 53.75em) { /* 860px */
 	.main {
 		width: 86%;
 		margin-left: 7%;
@@ -187,7 +195,7 @@ h2 {
 	}
 }
 
-@media (max-width: 720px) {
+@media only screen and (max-width: 45em) { /* 720px */
 	.main {
 		width: 96%;
 		margin-left: 2%;

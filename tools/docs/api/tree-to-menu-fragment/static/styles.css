@@ -1,10 +1,51 @@
 /*
 * Component styles.
 *
-* 1. Hamburger menu.
-* 2. Slideout menu.
-* 3. Menu sections.
+* 1. Animations.
+* 2. Hamburger menu.
+* 3. Slideout menu.
+* 4. Menu sections.
 */
+
+/*
+* Animations (IE10+).
+*/
+
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 
 /*
 * Hamburger menu icon.
@@ -25,7 +66,18 @@
 
 	opacity: 1;
 	background-color: #000;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
+
+	-webkit-transform: rotate(0);
+	-moz-transform: rotate(0);
+	-ms-transform: rotate(0);
+	-o-transform: rotate(0);
+	transform: rotate(0);
 }
 
 /*
@@ -40,6 +92,10 @@
 }
 
 .hamburger-menu-icon span:nth-child(3) {
+	top: 10px;
+}
+
+.hamburger-menu-icon span:nth-child(4) {
 	top: 20px;
 }
 
@@ -48,12 +104,82 @@
 */
 
 /*
+* Prevent the back of an element from being visible from the front and vice versa.
+*
+* ## Notes
+*
+* * Helps prevent flickering for some engines when using `translate3d`.
+* * We assume that the slideout menu input element has a sibling with class `.main`.
+* * WARNING: the application of these rules may conflict with existing rules; e.g., if the `.main` element has existing backface visibility rules.
+*
+*/
+.slideout-menu,
+.slideout-menu-label,
+.slideout-menu-input ~ .main {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/*
+* Specify the transition speed.
+*
+* ## Notes
+*
+* * We assume that the slideout menu input element has a sibling with class `.main`.
+* * WARNING: the application of these rules may conflict with existing rules; e.g., if the `.main` element has existing transform transition rules.
+*
+*/
+.slideout-menu,
+.slideout-menu-label,
+.slideout-menu-input ~ .main {
+	/* name | duration | timing function */
+	-webkit-transition: transform 100ms ease-in;
+	-moz-transition: transform 100ms ease-in;
+	-ms-transition: transform 100ms ease-in;
+	-o-transition: transform 100ms ease-in;
+	transition: transform 100ms ease-in;
+}
+
+/*
+* Initialize the render layer to allow for hardware acceleration.
+*
+* ## Notes
+*
+* * We assume that the slideout menu has a sibling with class `.main`.
+* * WARNING: the application of these transforms may conflict with existing transforms; e.g., if the `.main` element has been translated by default.
+*
+*/
+.slideout-menu ~ .main {
+	/* Add transform fallbacks for browsers not supporting `translate3d`. */
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+
+	-webkit-transform: translateZ(0) translateX(0);
+	-moz-transform: translateZ(0) translateX(0);
+	-ms-transform: translateZ(0) translateX(0);
+	-o-transform: translateZ(0) translateX(0);
+	transform: translateZ(0) translateX(0);
+
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/*
 * Initially position the menu off canvas.
 */
 .slideout-menu {
 	position: fixed;
 	top: 0;
-	left: -400px; /* -width */
+	left: 0;
 	right: 0;
 	bottom: 0;
 
@@ -68,12 +194,31 @@
 	overflow-y: auto;
 
 	background-color: #1D1F20;
+
+	background-image: -webkit-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -moz-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -ms-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -o-linear-gradient(145deg, #1D1F20, #404348);
 	background-image: linear-gradient(145deg, #1D1F20, #404348);
 
-	-moz-transition: all 200ms ease-in;
-	-webkit-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
+	/* Move the menu into off canvas, adding transform fallbacks for browsers not supporting `translate3d`. Translate the menu `-width`. */
+	-webkit-transform: translateX(-400px); /* -width */
+	-moz-transform: translateX(-400px); /* -width */
+	-ms-transform: translateX(-400px); /* -width */
+	-o-transform: translateX(-400px); /* -width */
+	transform: translateX(-400px); /* -width */
+
+	-webkit-transform: translateZ(0) translateX(-400px); /* -width */
+	-moz-transform: translateZ(0) translateX(-400px); /* -width */
+	-ms-transform: translateZ(0) translateX(-400px); /* -width */
+	-o-transform: translateZ(0) translateX(-400px); /* -width */
+	transform: translateZ(0) translateX(-400px); /* -width */
+
+	-webkit-transform: translate3d(-400px, 0, 0); /* -width */
+	-moz-transform: translate3d(-400px, 0, 0); /* -width */
+	-ms-transform: translate3d(-400px, 0, 0); /* -width */
+	-o-transform: translate3d(-400px, 0, 0); /* -width */
+	transform: translate3d(-400px, 0, 0); /* -width */
 }
 
 /*
@@ -91,10 +236,24 @@
 
 	cursor: pointer;
 
-	-moz-transition: all 200ms ease-in;
-	-webkit-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
+	/* Initialize the element for hardware acceleration. Add transform fallbacks for browsers not supporting `translate3d`. */
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+
+	-webkit-transform: translateZ(0) translateX(0);
+	-moz-transform: translateZ(0) translateX(0);
+	-ms-transform: translateZ(0) translateX(0);
+	-o-transform: translateZ(0) translateX(0);
+	transform: translateZ(0) translateX(0);
+
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 /*
@@ -108,29 +267,151 @@
 * When the input element is selected, make the slideout menu visible.
 */
 .slideout-menu-input:checked ~ .slideout-menu {
-	left: 0px;
+	/* Add transform fallbacks for browsers not supporting `translate3d`. */
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+
+	-webkit-transform: translateZ(0) translateX(0);
+	-moz-transform: translateZ(0) translateX(0);
+	-ms-transform: translateZ(0) translateX(0);
+	-o-transform: translateZ(0) translateX(0);
+	transform: translateZ(0) translateX(0);
+
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/*
+* When the input element is selected, translate a "main" element.
+*
+* ## Notes
+*
+* * We assume that the slideout menu has a sibling with class `.main`.
+*
+*/
+.slideout-menu-input:checked ~ .main {
+	/* Add transform fallbacks for browsers not supporting `translate3d`. Translate the width of the menu. */
+	-webkit-transform: translateX(400px); /* menu width */
+	-moz-transform: translateX(400px); /* menu width */
+	-ms-transform: translateX(400px); /* menu width */
+	-o-transform: translateX(400px); /* menu width */
+	transform: translateX(400px); /* menu width */
+
+	-webkit-transform: translateZ(0) translateX(400px); /* menu width */
+	-moz-transform: translateZ(0) translateX(400px); /* menu width */
+	-ms-transform: translateZ(0) translateX(400px); /* menu width */
+	-o-transform: translateZ(0) translateX(400px); /* menu width */
+	transform: translateZ(0) translateX(400px); /* menu width */
+
+	-webkit-transform: translate3d(400px, 0, 0); /* menu width */
+	-moz-transform: translate3d(400px, 0, 0); /* menu width */
+	-ms-transform: translate3d(400px, 0, 0); /* menu width */
+	-o-transform: translate3d(400px, 0, 0); /* menu width */
+	transform: translate3d(400px, 0, 0); /* menu width */
 }
 
 /*
 * When the input element is selected, move the trigger element to ensure the element is still visible.
 */
 .slideout-menu-input:checked ~ .slideout-menu-label {
-	left: 410px;
+	/* Fade in the label element to allow the element to reach its final destination in the "background". */
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 250ms; /* should be longer than menu transform duration */
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 0ms;
+	-webkit-animation-direction: normal;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: none;
+	-webkit-animation-play-state: running;
+
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 250ms; /* should be longer than menu transform duration */
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-delay: 0ms;
+	-moz-animation-direction: normal;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-fill-mode: none;
+	-moz-animation-play-state: running;
+
+	-o-animation-name: fadein;
+	-o-animation-duration: 250ms; /* should be longer than menu transform duration */
+	-o-animation-timing-function: ease-in;
+	-o-animation-delay: 0ms;
+	-o-animation-direction: normal;
+	-o-animation-iteration-count: 1;
+	-o-animation-fill-mode: none;
+	-o-animation-play-state: running;
+
+	animation-name: fadein;
+	animation-duration: 250ms; /* should be longer than menu transform duration */
+	animation-timing-function: ease-in;
+	animation-delay: 0ms;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+	animation-fill-mode: none;
+	animation-play-state: running;
+
+	/* Add transform fallbacks for browsers not supporting `translate3d`. Translate the width of the menu minus the label width minus right padding. */
+	-webkit-transform: translateX(350px);
+	-moz-transform: translateX(350px);
+	-ms-transform: translateX(350px);
+	-o-transform: translateX(350px);
+	transform: translateX(350px);
+
+	-webkit-transform: translateZ(0) translateX(350px);
+	-moz-transform: translateZ(0) translateX(350px);
+	-ms-transform: translateZ(0) translateX(350px);
+	-o-transform: translateZ(0) translateX(350px);
+	transform: translateZ(0) translateX(350px);
+
+	-webkit-transform: translate3d(350px, 0, 0);
+	-moz-transform: translate3d(350px, 0, 0);
+	-ms-transform: translate3d(350px, 0, 0);
+	-o-transform: translate3d(350px, 0, 0);
+	transform: translate3d(350px, 0, 0);
 }
 
 /*
-* When the input element is selected, translate a "main" element. Assumes that the slideout menu has a sibling with class `.main`.
+* When the input element is selected, convert the hamburger menu to an `X`.
 */
-.slideout-menu-input:checked ~ .main {
-	-moz-transition:all 200ms ease-in;
-	-webkit-transition:all 200ms ease-in;
-	-o-transition:all 200ms ease-in;
-	transition:all 200ms ease-in;
+.slideout-menu-input:checked ~ .slideout-menu-label > span {
+	height: 1px;
+	color: #acafb3;
+	background-color: #acafb3;
 
-	-webkit-transform:translate3d(400px, 0, 0);
-	-moz-transform:translate3d(400px, 0, 0);
-	-o-transform:translate3d(400px, 0, 0);
-	transform:translate3d(400px, 0, 0);
+	/* name | duration | timing function | delay */
+	-webkit-transition: transform 0s ease-in-out 0s;
+	-moz-transition: transform 0s ease-in-out 0s;
+	-ms-transition: transform 0s ease-in-out 0s;
+	-o-transition: transform 0s ease-in-out 0s;
+	transition: transform 0s ease-in-out 0s;
+}
+
+.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(1),
+.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(4) {
+	display: none;
+}
+
+.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.slideout-menu-input:checked ~ .slideout-menu-label > span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 /*
@@ -143,7 +424,14 @@
 .menu-header {
 	color: #fff;
 	border-bottom: 1px solid #2a2d2f;
-	padding: 20px 0 20px 0.8em;
+	padding: 25px 0 20px 0.8em;
+}
+
+/*
+* Style the menu header title.
+*/
+.menu-header-title {
+	display: block;
 }
 
 /*
@@ -182,8 +470,6 @@
 	padding-left: 0.8em;
 
 	cursor: pointer;
-
-	transition: background-color .15s ease-in-out;
 }
 
 /*
@@ -192,14 +478,14 @@
 .menu > ul > li > label,
 .menu > ul > li > label > a,
 .menu > ul > li > section > label {
-	color: #85888d;
+	color: #acafb3;
 }
 
 /*
 * Style menu triggers.
 */
 .menu-section-label {
-	color: #85888d;
+	color: #acafb3;
 }
 
 /*
@@ -235,6 +521,14 @@
 }
 
 /*
+* When a menu section is selected, darken the background.
+*/
+.menu-section-input:checked ~ .menu-section-label,
+.menu-section-input:checked ~ .menu-section-list {
+	background-color: #242627;
+}
+
+/*
 * Use a '+' to indicate more content is available. Align the '+' to the far right of the container.
 */
 .menu-section-label:after,
@@ -253,7 +547,6 @@
 	text-align: center;
 
 	background-color: transparent;
-	transition: background-color .15s ease-in-out;
 }
 
 /*

@@ -81,14 +81,16 @@
 		// Prevent the browser from doing its default behavior (e.g., navigating to a new page):
 		evt.preventDefault();
 
+		// Get the target element:
+		target = evt.target || evt.srcElement;
+
 		// Get the parent node:
-		parent = evt.srcElement.parentNode;
+		parent = target.parentNode;
 
 		// Update the status of the parent input element:
 		parent.previousSibling.checked = true;
 
 		// Extract the resource name to we can request it manually:
-		target = evt.target || evt.srcElement;
 		href = target.getAttribute( 'href' );
 
 		// Load the resource:
@@ -142,6 +144,9 @@
 
 				// Reset the scroll position:
 				document.querySelector( 'body' ).scrollTop = 0;
+
+				// Update the document title:
+				document.title = container.querySelector( 'title' ).innerHTML;
 
 				// Update browser history (note: browser history API available IE10+):
 				if ( bool && history && history.pushState ) {
