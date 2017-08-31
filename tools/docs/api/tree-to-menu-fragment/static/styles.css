@@ -581,7 +581,7 @@
 */
 .menu > ul > li > label,
 .menu > ul > li > label > a,
-.menu > ul > li > section > label {
+.menu > ul > li > div > label {
 	color: #acafb3;
 }
 
