@@ -20,9 +20,6 @@ using boost::random::uniform_real_distribution;
 using boost::random::uniform_int_distribution;
 using boost::random::mt19937;
 
-// Define a macro to determine the length of a non-empty array:
-#define NUMEL(x) ( sizeof(x) / sizeof( x[0] ) )
-
 // Define a new pseudorandom number generator:
 mt19937 rng;
 
