@@ -84,11 +84,11 @@
 		// Get the target element:
 		target = evt.target || evt.srcElement;
 
-		// Get the parent node:
+		// Get the parent node (we expect it to be a `label` element):
 		parent = target.parentNode;
 
-		// Update the status of the parent input element:
-		parent.previousSibling.checked = true;
+		// Update the status of the control `input` element associated with the `label` (see https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/control):
+		parent.control.checked = true;
 
 		// Extract the resource name to we can request it manually:
 		href = target.getAttribute( 'href' );
