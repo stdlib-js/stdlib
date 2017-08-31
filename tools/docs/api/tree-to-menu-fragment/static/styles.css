@@ -254,7 +254,7 @@
 .slideout-menu {
 	z-index: 0;
 
-	margin-top: 55px; /* allow space for menu header */
+	margin-top: 90px; /* allow space for menu header */
 	padding-top: 0;
 	padding-bottom: 40px;
 
@@ -274,7 +274,7 @@
 	z-index: 500;
 
 	height: 50px;
-	padding-top: 20px;
+	padding-top: 30px;
 
 	background-color: transparent;
 
@@ -306,63 +306,22 @@
 }
 
 /*
-* Slideout menu search input element.
+* Style the menu header wrapper.
 */
-.slideout-menu-input[name="slideout-menu-search"] {
+.slideout-menu-header-wrapper {
 	display: block;
 	float: left;
 	position: relative;
 
-	margin-left: 10px;
-
-	height: 25px;
-	width: 340px;
-
-	font-size: 1.1em;
-	font-weight: 200;
-	color: #acafb3;
-
-	background-color: inherit;
-
-	border: none;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #acafb3; /* fallback */
-	border-bottom-color: rgba(172, 175, 178, 0.3);
+	width: 350px; /* menu width - hamburger */
 }
 
-.slideout-menu-input[name="slideout-menu-search"]:focus {
-	outline: none;
-
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-}
-
-.slideout-menu-input[name="slideout-menu-search"]::-webkit-input-placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
-
-.slideout-menu-input[name="slideout-menu-search"]::-moz-placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
-
-.slideout-menu-input[name="slideout-menu-search"]::-ms-input-placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
-
-.slideout-menu-input[name="slideout-menu-search"]::placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
+/*
+* Style the menu header.
+*/
+.slideout-menu-header {
+	color: #fff;
+	padding-left: 0.8em;
 }
 
 /*
@@ -523,19 +482,57 @@
 */
 
 /*
-* Style the menu header and add a bottom border to delineate the header from menu contents.
+* Menu search input element.
 */
-.menu-header {
-	color: #fff;
-	border-bottom: 1px solid #2a2d2f;
-	padding: 15px 0 15px 0.8em;
+.menu-search[name="menu-search"] {
+	display: block;
+
+	height: 40px;
+	width: 100%;
+
+	padding-left: 1em;
+
+	font-size: 1.1em;
+	font-weight: 200;
+	color: #acafb3;
+
+	background-color: #1f1f1f;
+
+	border: none;
 }
 
-/*
-* Style the menu header title.
-*/
-.menu-header-title {
-	display: block;
+.menu-search[name="menu-search"]:focus {
+	outline: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.menu-search[name="menu-search"]::-webkit-input-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.menu-search[name="menu-search"]::-moz-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.menu-search[name="menu-search"]::-ms-input-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.menu-search[name="menu-search"]::placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
 }
 
 /*

@@ -1,0 +1,21 @@
+<input class="slideout-menu-input" id="slideout-menu-input-root" name="slideout-menu-input-root" type="checkbox">
+<label class="slideout-menu-label" for="slideout-menu-input-root">
+	<a class="slideout-menu-header-wrapper" href="{{href}}">
+		<header class="slideout-menu-header">
+			<span class="slideout-menu-header-title">{{title}}</span>
+		</header>
+	</a>
+	<div class=" hamburger-menu-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</label>
+<div class="slideout-menu-background"></div>
+<nav class="menu slideout-menu" role="navigation">
+	<input class="menu-search" id="menu-search" name="menu-search" type="text" placeholder="Type here to filter menu...">
+	<ul>
+		{{menu}}
+	</ul>
+</nav>
