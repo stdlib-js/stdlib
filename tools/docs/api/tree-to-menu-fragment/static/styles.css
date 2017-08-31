@@ -132,6 +132,7 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-search,
 .slideout-menu-background,
 .slideout-menu-input ~ .main {
 	-webkit-backface-visibility: hidden;
@@ -154,6 +155,7 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-search,
 .slideout-menu-background,
 .slideout-menu-input ~ .main {
 	/* name | duration | timing function | delay */
@@ -199,14 +201,16 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-search,
 .slideout-menu-background {
 	width: 400px;
 }
 
 /*
-* Initially position the menu and menu background off canvas.
+* Initially position the menu, menu search, and menu background off canvas.
 */
 .slideout-menu,
+.slideout-menu-search,
 .slideout-menu-background {
 	position: fixed;
 	top: 0;
@@ -323,12 +327,13 @@
 * Slideout menu search input element.
 */
 .slideout-menu-search[name="slideout-menu-search"] {
-	display: none;
+	display: block;
+
+	z-index: 1;
 
 	height: 40px;
-	width: 100%;
 
-	margin-top: 50px;
+	margin-top: 80px;
 	padding-left: 1em;
 
 	font-size: 1em;
@@ -375,9 +380,10 @@
 }
 
 /*
-* When the input element is selected, make the slideout menu and menu background visible.
+* When the input element is selected, make the slideout menu, menu search, and menu background visible.
 */
 .slideout-menu-input:checked ~ .slideout-menu,
+.slideout-menu-input:checked ~ .slideout-menu-search,
 .slideout-menu-input:checked ~ .slideout-menu-background {
 	/* Add transform fallbacks for browsers not supporting `translate3d`. */
 	-webkit-transform: translateX(0);
@@ -487,13 +493,6 @@
 	-ms-transform: translate3d(0, 0, 0);
 	-o-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-}
-
-/*
-* When the input element is selected, display the menu search element.
-*/
-.slideout-menu-input:checked ~ .slideout-menu-label > .slideout-menu-search {
-	display: block;
 }
 
 /*

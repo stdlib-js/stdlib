@@ -1,18 +1,17 @@
 <input class="slideout-menu-input" id="slideout-menu-input-root" name="slideout-menu-input-root" type="checkbox">
 <label class="slideout-menu-label" for="slideout-menu-input-root">
-	<div class="slideout-menu-header">
-		<a href="{{href}}">
-			<span class="slideout-menu-header-title">{{title}}</span>
-		</a>
-	</div>
-	<div class=" hamburger-menu-icon">
+	<span class="slideout-menu-header">
+		<a class="slideout-menu-header-title" href="{{href}}">{{title}}</a>
+	</span>
+	<span class=" hamburger-menu-icon">
 		<span></span>
 		<span></span>
 		<span></span>
 		<span></span>
-	</div>
-	<input class="slideout-menu-search" id="slideout-menu-search" name="slideout-menu-search" type="text" placeholder="Type here to filter menu...">
+	</span>
 </label>
+<input class="slideout-menu-search" id="slideout-menu-search" name="slideout-menu-search" type="text" placeholder="Type here to filter menu...">
+<label for="slideout-menu-search"></label>
 <div class="slideout-menu-background"></div>
 <nav class="menu slideout-menu" role="navigation">
 	<ul>
