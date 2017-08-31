@@ -238,15 +238,21 @@ void generate( double *x, const unsigned int len, const char *name ) {
 * Main execution sequence.
 */
 int main( void ) {
-	double x[ 1000 ]; // TODO: tailor to fixture data
+	double *x;
 	int len;
 
-	// Henceforth, we must explicitly pass the length to internal functions:
-	len = NUMEL( x );
+	// Define the array length:
+	len = 1000;
+
+	// Allocate an array:
+	x = (double*) malloc( len * sizeof(double) );
 
 	// Generate fixture data:
 	rand_array_f64( x, len, 0.0, 1.0 ); // TODO
 	generate( x, len, "TODO.json" );
+
+	// Free allocated memory:
+	free( x );
 
 	return 0;
 }
