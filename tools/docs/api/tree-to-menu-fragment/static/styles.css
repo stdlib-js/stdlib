@@ -254,7 +254,7 @@
 .slideout-menu {
 	z-index: 0;
 
-	margin-top: 130px; /* allow space for menu header */
+	margin-top: 120px; /* allow space for menu header */
 	padding-top: 0;
 	padding-bottom: 40px;
 
