@@ -254,7 +254,7 @@
 .slideout-menu {
 	z-index: 0;
 
-	margin-top: 90px; /* allow space for menu header */
+	margin-top: 130px; /* allow space for menu header */
 	padding-top: 0;
 	padding-bottom: 40px;
 
@@ -273,7 +273,6 @@
 
 	z-index: 500;
 
-	height: 50px;
 	padding-top: 30px;
 
 	background-color: transparent;
@@ -322,6 +321,61 @@
 .slideout-menu-header {
 	color: #fff;
 	padding-left: 0.8em;
+}
+
+/*
+* Slideout menu search input element.
+*/
+.slideout-menu-search[name="slideout-menu-search"] {
+	display: none;
+
+	height: 40px;
+	width: 100%;
+
+	margin-top: 50px;
+	padding-left: 1em;
+
+	font-size: 1em;
+	font-weight: 200;
+	color: #acafb3;
+
+	background-color: #1f1f1f;
+
+	border: none;
+}
+
+.slideout-menu-search[name="slideout-menu-search"]:focus {
+	outline: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.slideout-menu-search[name="slideout-menu-search"]::-webkit-input-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.slideout-menu-search[name="slideout-menu-search"]::-moz-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.slideout-menu-search[name="slideout-menu-search"]::-ms-input-placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
+}
+
+.slideout-menu-search[name="slideout-menu-search"]::placeholder {
+	font-style: italic;
+	font-weight: 200;
+	color: #acafb3;
 }
 
 /*
@@ -440,6 +494,13 @@
 }
 
 /*
+* When the input element is selected, display the menu search element.
+*/
+.slideout-menu-input:checked ~ .slideout-menu-label > .slideout-menu-search {
+	display: block;
+}
+
+/*
 * When the input element is selected, convert the hamburger menu to an `X`.
 */
 .slideout-menu-input:checked ~ .slideout-menu-label > .hamburger-menu-icon > span {
@@ -480,60 +541,6 @@
 /*
 * Menu.
 */
-
-/*
-* Menu search input element.
-*/
-.menu-search[name="menu-search"] {
-	display: block;
-
-	height: 40px;
-	width: 100%;
-
-	padding-left: 1em;
-
-	font-size: 1.1em;
-	font-weight: 200;
-	color: #acafb3;
-
-	background-color: #1f1f1f;
-
-	border: none;
-}
-
-.menu-search[name="menu-search"]:focus {
-	outline: none;
-
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-}
-
-.menu-search[name="menu-search"]::-webkit-input-placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
-
-.menu-search[name="menu-search"]::-moz-placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
-
-.menu-search[name="menu-search"]::-ms-input-placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
-
-.menu-search[name="menu-search"]::placeholder {
-	font-style: italic;
-	font-weight: 200;
-	color: #acafb3;
-}
 
 /*
 * Ensure that menu sections are adjacent.
