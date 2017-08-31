@@ -306,20 +306,15 @@
 }
 
 /*
-* Style the menu header wrapper.
+* Style the menu header.
 */
-.slideout-menu-header-wrapper {
+.slideout-menu-header {
 	display: block;
 	float: left;
 	position: relative;
 
 	width: 350px; /* menu width - hamburger */
-}
 
-/*
-* Style the menu header.
-*/
-.slideout-menu-header {
 	color: #fff;
 	padding-left: 0.8em;
 }
