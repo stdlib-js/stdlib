@@ -2,17 +2,23 @@
 
 // MODULES //
 
+var resolve = require( 'path' ).resolve;
 var getKeys = require( 'object-keys' ).shim();
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 var minstd = require( '@stdlib/math/base/random/minstd-shuffle' );
 var listItem = require( './list_item.js' );
+var sort = require( './sort.js' );
 
 
 // VARIABLES //
 
-var begin = '<section class="menu-section"><input class="menu-section-input" id="menu-section-{{id}}" name="menu-section-{{id}}" type="checkbox"><label class="menu-section-label" for="menu-section-{{id}}">{{label}}</label><ul class="menu-section-list">';
-var end = '</ul></section>';
+var fpath = resolve( __dirname, '..', 'static', 'section.tmpl' );
+var opts = {
+	'encoding': 'utf8'
+};
+var tmpl = readFileSync( fpath, opts );
 
 
 // MAIN //
@@ -28,15 +34,17 @@ var end = '</ul></section>';
 */
 function menu( tree, label, mount ) {
 	var keys;
+	var out;
 	var str;
 	var key;
 	var v;
 	var i;
 
-	str = replace( begin, '{{id}}', minstd().toString() );
-	str = replace( str, '{{label}}', label );
+	out = replace( tmpl, '{{id}}', minstd().toString() );
+	out = replace( out, '{{label}}', label );
 
-	keys = getKeys( tree ).sort();
+	keys = sort( getKeys( tree ) );
+	str = '';
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
 		v = tree[ key ];
@@ -49,11 +57,10 @@ function menu( tree, label, mount ) {
 			} else {
 				v = key;
 			}
-			str += listItem( v, mount+key );
+			str += listItem( v, minstd().toString(), mount+key );
 		}
 	}
-	str += end;
-	return str;
+	return replace( out, '{{list}}', str );
 } // end FUNCTION menu()
 
 

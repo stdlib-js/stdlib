@@ -35,19 +35,24 @@ REMARK_EQUATIONS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
 
 # Define the path to a plugin which processes Markdown equation comments:
-REMARK_HTML_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-html-equations
-REMARK_HTML_EQUATIONS_PLUGIN_SETTINGS ?=
-REMARK_HTML_EQUATIONS_PLUGIN_FLAGS ?= --use $(REMARK_HTML_EQUATIONS_PLUGIN)=$(REMARK_HTML_EQUATIONS_PLUGIN_SETTINGS)
+REMARK_IMG_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-img-equations
+REMARK_IMG_EQUATIONS_PLUGIN_SETTINGS ?=
+REMARK_IMG_EQUATIONS_PLUGIN_FLAGS ?= --use $(REMARK_IMG_EQUATIONS_PLUGIN)=$(REMARK_IMG_EQUATIONS_PLUGIN_SETTINGS)
 
 # Define the path to a plugin which creates SVG equation files from Markdown equation comments:
-REMARK_SVG_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-write-svg-equations
+REMARK_SVG_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-svg-equations-to-file
 REMARK_SVG_EQUATIONS_PLUGIN_SETTINGS ?= '"'dir'"':'"'$(EQUATION_RESOURCES_PATH)'"'
 REMARK_SVG_EQUATIONS_PLUGIN_FLAGS ?= --use $(REMARK_SVG_EQUATIONS_PLUGIN)=$(REMARK_SVG_EQUATIONS_PLUGIN_SETTINGS)
 
-# Define the path to a plugin which inserts resource URLs into Markdown HTML equation elements:
-REMARK_EQUATION_SRC_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-html-equation-src-urls
-REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS ?= '"'dir'"':'"'$(EQUATION_RESOURCES_PATH)'"'
-REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS ?= --use $(REMARK_EQUATION_SRC_URLS_PLUGIN)=$(REMARK_EQUATION_SRC_URLS_PLUGIN_SETTINGS)
+# Define the path to a plugin which inserts resource URLs into Markdown image equation elements:
+REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-img-equations-src-urls
+REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_SETTINGS ?= '"'dir'"':'"'$(EQUATION_RESOURCES_PATH)'"'
+REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS ?= --use $(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN)=$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_SETTINGS)
+
+# Define the path to a plugin which resolves package identifiers to URLs:
+REMARK_STDLIB_URLS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-stdlib-urls-github
+REMARK_STDLIB_URLS_PLUGIN_SETTINGS ?=
+REMARK_STDLIB_URLS_PLUGIN_FLAGS ?= --use $(REMARK_STDLIB_URLS_PLUGIN)=$(REMARK_STDLIB_URLS_PLUGIN_SETTINGS)
 
 # Define command-line options when invoking the remark executable:
 REMARK_FLAGS ?= \
@@ -65,23 +70,23 @@ REMARK_OUTPUT_FLAG ?= --output
 #
 # This target processes Markdown files containing Markdown equation elements as follows:
 #
-# 1. Files containing equation elements are transformed to include HTML equation elements.
+# 1. Files containing equation comments are transformed to include equation elements.
 # 2. SVG files are generated for each equation.
 # 3. Processed files are committed to source control.
-# 4. Resource URLs are inserted in HTML equation elements.
+# 4. Resource URLs are inserted in image equation elements.
 # 5. Processed files are committed to source control.
 
 markdown-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
+		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_EQUATIONS) && \
 	$(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
+		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_SRC_URLS)
@@ -89,22 +94,22 @@ markdown-equations: $(NODE_MODULES)
 .PHONY: markdown-equations
 
 
-# Generate HTML equation elements.
+# Generate image equation elements.
 #
-# This target transforms Markdown files containing equation comment markup to include HTML equation elements.
+# This target transforms Markdown files containing equation comment markup to include image equation elements.
 
-markdown-html-equations: $(NODE_MODULES)
+markdown-img-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		$(REMARK_HTML_EQUATIONS_PLUGIN_FLAGS) \
+		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)
 
-.PHONY: markdown-html-equations
+.PHONY: markdown-img-equations
 
 
 # Generate SVG equation files.
 #
-# This target generates SVG equations files from Markdown equation elements.
+# This target generates SVG equation files from Markdown equation comments.
 
 markdown-svg-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
@@ -116,15 +121,28 @@ markdown-svg-equations: $(NODE_MODULES)
 
 # Insert resource URLs.
 #
-# This target inserts resource URLs into Markdown HTML equation elements. Note that this target assumes that SVG equation files already exist and have been committed to source control.
+# This target inserts resource URLs into Markdown image equation elements. Note that this target assumes that image equation files already exist and have been committed to source control.
 
-markdown-equation-src-urls: $(NODE_MODULES)
+markdown-img-equations-src-urls: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_FLAGS) \
-		$(REMARK_EQUATION_SRC_URLS_PLUGIN_FLAGS) \
+		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_OUTPUT_FLAG)
 
-.PHONY: markdown-equation-src-urls
+.PHONY: markdown-img-equations-src-urls
+
+
+# Insert repository package URLs.
+#
+# This target resolves package identifiers to GitHub repository URLs and updates Markdown files accordingly.
+
+markdown-stdlib-urls: $(NODE_MODULES)
+	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+		$(REMARK_FLAGS) \
+		$(REMARK_STDLIB_URLS_PLUGIN_FLAGS) \
+		$(REMARK_OUTPUT_FLAG)
+
+.PHONY: markdown-stdlib-urls
 
 
 # Clean SVG equation files.

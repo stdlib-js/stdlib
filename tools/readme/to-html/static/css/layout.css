@@ -3,12 +3,14 @@
 *
 * 1. General rules.
 * 2. Class-level rules.
-* 3. Lists.
-* 4. Definition lists.
-* 5. Blockquotes.
-* 6. Horizontal rules.
-* 7. Tables.
-* 8. Code.
+* 3. Media queries.
+* 4. Lists.
+* 5. Definition lists.
+* 6. Blockquotes.
+* 7. Horizontal rules.
+* 8. Tables.
+* 9. Code.
+* 10. Equations.
 */
 
 /*
@@ -73,12 +75,6 @@ h2 {
 * General class level rules.
 */
 
-.main {
-	width: 87.5%;
-	max-width: 1200px;
-	margin-left: 12.5%;
-}
-
 .top-nav {
 	display: block;
 	width: 100%;
@@ -94,6 +90,15 @@ h2 {
 .top-nav-item {
 	float: right;
 	padding: 0 16px;
+}
+
+.top-nav-item a {
+	display: block;
+}
+
+.main {
+	width: 87.5%;
+	margin-left: 12.5%;
 }
 
 .readme {
@@ -114,6 +119,8 @@ h2 {
 .readme > ul,
 .readme > hr {
 	width: 55%;
+	min-width: 594px;
+	max-width: 720px;
 }
 
 .readme p,
@@ -123,6 +130,97 @@ h2 {
 .readme pre {
 	margin-top: 0;
 	margin-bottom: 16px;
+}
+
+/*
+* Media queries.
+*
+* [1]: https://zellwk.com/blog/media-query-units/
+*/
+
+@media only screen and (max-width: 76.25em) { /* 1220px */
+	.readme > h1,
+	.readme > h2,
+	.readme > h3,
+	.readme > h4,
+	.readme > h5,
+	.readme > h6,
+	.readme > section,
+	.readme > p,
+	.readme > blockquote,
+	.readme > pre,
+	.readme > code,
+	.readme > ul,
+	.readme > hr {
+		width: 66.66666666666%;
+	}
+}
+
+@media only screen and (max-width: 67.5em) { /* 1080px */
+	.readme > h1,
+	.readme > h2,
+	.readme > h3,
+	.readme > h4,
+	.readme > h5,
+	.readme > h6,
+	.readme > section,
+	.readme > p,
+	.readme > blockquote,
+	.readme > pre,
+	.readme > code,
+	.readme > ul,
+	.readme > hr {
+		width: 80%;
+		max-width: 700px;
+	}
+}
+
+@media only screen and (max-width: 53.75em) { /* 860px */
+	.main {
+		width: 86%;
+		margin-left: 7%;
+	}
+
+	.readme > h1,
+	.readme > h2,
+	.readme > h3,
+	.readme > h4,
+	.readme > h5,
+	.readme > h6,
+	.readme > section,
+	.readme > p,
+	.readme > blockquote,
+	.readme > pre,
+	.readme > code,
+	.readme > ul,
+	.readme > hr {
+		width: 96%;
+		max-width: 700px;
+	}
+}
+
+@media only screen and (max-width: 45em) { /* 720px */
+	.main {
+		width: 96%;
+		margin-left: 2%;
+	}
+
+	.readme > h1,
+	.readme > h2,
+	.readme > h3,
+	.readme > h4,
+	.readme > h5,
+	.readme > h6,
+	.readme > section,
+	.readme > p,
+	.readme > blockquote,
+	.readme > pre,
+	.readme > code,
+	.readme > ul,
+	.readme > hr {
+		width: 100%;
+		min-width: 100%;
+	}
 }
 
 /*

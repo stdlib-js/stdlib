@@ -2,23 +2,27 @@
 
 // MODULES //
 
+var resolve = require( 'path' ).resolve;
 var getKeys = require( 'object-keys' ).shim();
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 var copy = require( '@stdlib/utils/copy' );
+var minstd = require( '@stdlib/math/base/random/minstd-shuffle' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var recurse = require( './recurse.js' );
 var listItem = require( './list_item.js' );
+var sort = require( './sort.js' );
 
 
 // VARIABLES //
 
-var begin = '<input class="slideout-menu-input" id="slideout-menu-input-root" name="slideout-menu-input-root" type="checkbox"><label class="slideout-menu-label hamburger-menu-icon" for="slideout-menu-input-root"><span></span><span></span><span></span></label><nav class="menu slideout-menu">';
-var header = '<a class="menu-header-wrapper" href="{{href}}"><header class="menu-header"><span class="menu-header-title">{{title}}</span></header></a>';
-var listStart = '<ul>';
-var listEnd = '</ul>';
-var end = '</nav>';
+var fpath = resolve( __dirname, '..', 'static', 'menu.tmpl' );
+var opts = {
+	'encoding': 'utf8'
+};
+var tmpl = readFileSync( fpath, opts );
 
 
 // MAIN //
@@ -39,6 +43,7 @@ var end = '</nav>';
 function menu( tree, options ) {
 	var opts;
 	var keys;
+	var out;
 	var key;
 	var str;
 	var tmp;
@@ -56,14 +61,11 @@ function menu( tree, options ) {
 			throw err;
 		}
 	}
-	str = begin;
+	out = replace( tmpl, '{{title}}', opts.title );
+	out = replace( out, '{{href}}', opts.url );
 
-	tmp = replace( header, '{{title}}', opts.title );
-	tmp = replace( tmp, '{{href}}', opts.url );
-	str += tmp;
-
-	keys = getKeys( tree ).sort();
-	str += listStart;
+	keys = sort( getKeys( tree ) );
+	str = '';
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
 		v = tree[ key ];
@@ -77,12 +79,10 @@ function menu( tree, options ) {
 			} else {
 				v = key;
 			}
-			str += listItem( v, opts.mount+key );
+			str += listItem( v, minstd().toString(), opts.mount+key );
 		}
 	}
-	str += listEnd;
-	str += end;
-	return str;
+	return replace( out, '{{menu}}', str );
 } // end FUNCTION menu()
 
 

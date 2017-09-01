@@ -6,20 +6,22 @@ var remark = require( 'remark' );
 var toHTML = require( 'remark-html' );
 var rehype = require( 'rehype' );
 var highlight = require( 'rehype-highlight' );
-var headingSlugs = require( 'remark-slug' );
+var headings = require( 'remark-slug' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isBuffer = require( '@stdlib/assert/is-buffer' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var noHighlightText = require( './../../../rehype/plugins/rehype-no-highlight-text' );
-var insertEquations = require( './../../../remark/plugins/remark-svg-equations' );
+var equations = require( './../../../remark/plugins/remark-svg-equations' );
+var linkify = require( './../../../remark/plugins/remark-stdlib-urls-www' );
 var postProcess = require( './post_process.js' );
 
 
 // VARIABLES //
 
 var mTransform = remark()
-	.use( headingSlugs )
-	.use( insertEquations )
+	.use( headings )
+	.use( linkify )
+	.use( equations )
 	.use( toHTML )
 	.process;
 

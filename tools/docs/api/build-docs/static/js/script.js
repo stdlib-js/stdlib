@@ -74,14 +74,23 @@
 	* @param {Object} evt - event object
 	*/
 	function onClick( evt ) {
+		var parent;
 		var target;
 		var href;
 
 		// Prevent the browser from doing its default behavior (e.g., navigating to a new page):
 		evt.preventDefault();
 
-		// Extract the resource name to we can request it manually:
+		// Get the target element:
 		target = evt.target || evt.srcElement;
+
+		// Get the parent node (we expect it to be a `label` element):
+		parent = target.parentNode;
+
+		// Update the status of the control `input` element associated with the `label` (see https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement/control):
+		parent.control.checked = true;
+
+		// Extract the resource name to we can request it manually:
 		href = target.getAttribute( 'href' );
 
 		// Load the resource:
@@ -135,6 +144,9 @@
 
 				// Reset the scroll position:
 				document.querySelector( 'body' ).scrollTop = 0;
+
+				// Update the document title:
+				document.title = container.querySelector( 'title' ).innerHTML;
 
 				// Update browser history (note: browser history API available IE10+):
 				if ( bool && history && history.pushState ) {

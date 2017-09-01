@@ -9,8 +9,8 @@ var toSVG = require( './../../../../markdown/inline-svg-equation' );
 
 // VARIABLES //
 
-var EQN_START = /<!-- <equation.*> -->/gi;
-var EQN_END = /<!-- <\/equation> -->/gi;
+var EQN_START = /<!-- <equation.*> -->/;
+var EQN_END = /<!-- <\/equation> -->/;
 var LABEL = /label="([^"]*)"/;
 var RAW = /raw="([^"]*)"/;
 

@@ -1341,6 +1341,15 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Bernoulli_number": {
+    "id": "bernoulli-number",
+    "description": "Wikipedia entry for the Bernoulli numbers.",
+    "short_url": "",
+    "keywords": [
+      "bernoulli",
+      "number"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Bessel_function#Bessel_functions_of_the_first_kind:_J.CE.B1": {
     "id": "bessel-first-kind",
     "description": "Wikipedia entry for Bessel functions of the first kind.",
@@ -2176,6 +2185,19 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format#Double-double_arithmetic": {
+    "id": "double-double-arithmetic",
+    "description": "Wikipedia entry on double-double arithmetic.",
+    "short_url": "",
+    "keywords": [
+      "floatingpoint",
+      "float",
+      "number",
+      "arithmetic",
+      "precision",
+      "cs"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Quantile_function": {
     "id": "quantile-function",
     "description": "Wikipedia entry for the quantile function of a probability distribution.",
@@ -2412,6 +2434,19 @@
       "probability",
       "continuous",
       "uniform"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Unit_in_the_last_place": {
+    "id": "ulp",
+    "description": "Wikipedia entry on unit in the last place / unit of least precision.",
+    "short_url": "",
+    "keywords": [
+      "cs",
+      "arithmetic",
+      "floatingpoint",
+      "float",
+      "ieee",
+      "standard"
     ]
   },
   "https://en.wikipedia.org/wiki/Valence_%28psychology%29": {

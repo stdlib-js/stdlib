@@ -2,12 +2,18 @@
 
 // MODULES //
 
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var replace = require( '@stdlib/string/replace' );
 
 
 // VARIABLES //
 
-var li = '<li><a href="{{href}}">{{item}}</a></li>';
+var fpath = resolve( __dirname, '..', 'static', 'list_item.tmpl' );
+var opts = {
+	'encoding': 'utf8'
+};
+var tmpl = readFileSync( fpath, opts );
 
 
 // MAIN //
@@ -17,11 +23,13 @@ var li = '<li><a href="{{href}}">{{item}}</a></li>';
 *
 * @private
 * @param {string} item - item
+* @param {PositiveInteger} id - item id
 * @param {string} href - URL
 * @returns {string} HTML fragment
 */
-function listItem( item, href ) {
-	var str = replace( li, '{{item}}', item );
+function listItem( item, id, href ) {
+	var str = replace( tmpl, '{{item}}', item );
+	str = replace( str, '{{id}}', id );
 	return replace( str, '{{href}}', href );
 } // end FUNCTION listItem()
 

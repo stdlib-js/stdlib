@@ -11,6 +11,7 @@ var menu = require( './../../package-menu' );
 var buildPkgs = require( './../../build-packages' );
 var defaults = require( './defaults.json' );
 var head = require( './head.js' );
+var logo = require( './logo.js' );
 var scripts = require( './scripts.js' );
 
 
@@ -32,12 +33,18 @@ var scripts = require( './scripts.js' );
 * }
 */
 function build( clbk ) {
+	var mopts;
 	var opts;
 	if ( !isFunction( clbk ) ) {
 		throw new TypeError( 'invalid input argument. Callback argument must be a function. Value: `'+clbk+'`.' );
 	}
 	opts = copy( defaults );
-	menu( opts, onMenu );
+	mopts = {
+		'title': logo,
+		'url': opts.url,
+		'mount': opts.mount
+	};
+	menu( mopts, onMenu );
 
 	/**
 	* Callback invoked upon creating a menu fragment.
@@ -56,7 +63,7 @@ function build( clbk ) {
 		}
 		dest = resolve( cwd(), opts.out );
 		bopts = {
-			'head': head+'\n<style>'+menu.css+'</style>',
+			'head': head+'\n<style>'+menu.css+'</style>\n<style>\n.slideout-menu {\n\tfont-family: "Lato", "Helvetica Neue";\n\tfont-weight: 200;\n}\n</style>',
 			'prepend': menu.html,
 			'append': scripts.join( '\n' ),
 			'mount': opts.mount
