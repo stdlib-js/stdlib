@@ -86,8 +86,6 @@
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
 	border-radius: 3px;
 
 	-webkit-transform: rotate(0);
@@ -350,8 +348,6 @@
 
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
 	box-shadow: none;
 }
 
