@@ -38,8 +38,8 @@ mt19937 rng;
 * @param end    last value
 */
 void linspace_f64( double *out, const unsigned int len, const double start, const double end ) {
+	unsigned int i;
 	double incr;
-	int i;
 
 	incr = (end-start) / (len-1);
 	for ( i = 0; i < len-1; i++ ) {
@@ -63,8 +63,8 @@ void linspace_f64( double *out, const unsigned int len, const double start, cons
 * @param end    last value
 */
 void linspace_i32( int *out, const unsigned int len, const int start, const int end ) {
+	unsigned int i;
 	int incr;
-	int i;
 
 	incr = (end-start) / (len-1);
 	for ( i = 0; i < len-1; i++ ) {
@@ -82,7 +82,7 @@ void linspace_i32( int *out, const unsigned int len, const int start, const int 
 * @param b    upper bound (exclusive)
 */
 void rand_array_f64( double *out, const unsigned int len, const double a, const double b ) {
-	int i;
+	unsigned int i;
 
 	// Define a uniform distribution for generating pseudorandom numbers:
 	uniform_real_distribution<> randu( a, b );
@@ -101,7 +101,7 @@ void rand_array_f64( double *out, const unsigned int len, const double a, const 
 * @param b    upper bound (exclusive)
 */
 void rand_array_i32( int *out, const unsigned int len, const int a, const int b ) {
-	int i;
+	unsigned int i;
 
 	// Define a uniform distribution for generating pseudorandom numbers:
 	uniform_int_distribution<> randi( a, b );
@@ -119,7 +119,7 @@ void rand_array_i32( int *out, const unsigned int len, const int a, const int b 
 * @param len  array length
 */
 void write_array_f64( FILE *f, const double *x, const unsigned int len ) {
-	int i;
+	unsigned int i;
 
 	for ( i = 0; i < len; i++ ) {
 		fprintf( f, "%.17g", x[ i ] );
@@ -137,7 +137,7 @@ void write_array_f64( FILE *f, const double *x, const unsigned int len ) {
 * @param len  array length
 */
 void write_array_i32( FILE *f, const int *x, const unsigned int len ) {
-	int i;
+	unsigned int i;
 
 	for ( i = 0; i < len; i++ ) {
 		fprintf( f, "%d", x[ i ] );
@@ -204,9 +204,9 @@ void write_data_as_json( FILE *f, const double *x, const double *y, const unsign
 * @param name  output filename
 */
 void generate( double *x, const unsigned int len, const char *name ) {
+	unsigned int i;
 	double *y;
 	FILE *f;
-	int i;
 
 	// Allocate an output array:
 	y = (double*) malloc( len * sizeof(double) ); // TODO
@@ -235,8 +235,8 @@ void generate( double *x, const unsigned int len, const char *name ) {
 * Main execution sequence.
 */
 int main( void ) {
+	unsigned int len;
 	double *x;
-	int len;
 
 	// Define the array length:
 	len = 1000;
