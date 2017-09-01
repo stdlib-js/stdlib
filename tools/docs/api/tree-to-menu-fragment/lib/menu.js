@@ -2,7 +2,9 @@
 
 // MODULES //
 
+var resolve = require( 'path' ).resolve;
 var getKeys = require( 'object-keys' ).shim();
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
 var copy = require( '@stdlib/utils/copy' );
@@ -16,11 +18,11 @@ var sort = require( './sort.js' );
 
 // VARIABLES //
 
-var begin = '<input class="slideout-menu-input" id="slideout-menu-input-root" name="slideout-menu-input-root" type="checkbox"><label class="slideout-menu-label" for="slideout-menu-input-root"><input class="slideout-menu-input" id="slideout-menu-search" name="slideout-menu-search" type="text" placeholder="Filter menu"><div class=" hamburger-menu-icon"><span></span><span></span><span></span><span></span></div></label><div class="slideout-menu-background"></div><nav class="menu slideout-menu" role="navigation">';
-var header = '<a class="menu-header-wrapper" href="{{href}}"><header class="menu-header"><span class="menu-header-title">{{title}}</span></header></a>';
-var listStart = '<ul>';
-var listEnd = '</ul>';
-var end = '</nav>';
+var fpath = resolve( __dirname, '..', 'static', 'menu.tmpl' );
+var opts = {
+	'encoding': 'utf8'
+};
+var tmpl = readFileSync( fpath, opts );
 
 
 // MAIN //
@@ -41,6 +43,7 @@ var end = '</nav>';
 function menu( tree, options ) {
 	var opts;
 	var keys;
+	var out;
 	var key;
 	var str;
 	var tmp;
@@ -58,14 +61,11 @@ function menu( tree, options ) {
 			throw err;
 		}
 	}
-	str = begin;
-
-	tmp = replace( header, '{{title}}', opts.title );
-	tmp = replace( tmp, '{{href}}', opts.url );
-	str += tmp;
+	out = replace( tmpl, '{{title}}', opts.title );
+	out = replace( out, '{{href}}', opts.url );
 
 	keys = sort( getKeys( tree ) );
-	str += listStart;
+	str = '';
 	for ( i = 0; i < keys.length; i++ ) {
 		key = keys[ i ];
 		v = tree[ key ];
@@ -82,9 +82,7 @@ function menu( tree, options ) {
 			str += listItem( v, minstd().toString(), opts.mount+key );
 		}
 	}
-	str += listEnd;
-	str += end;
-	return str;
+	return replace( out, '{{menu}}', str );
 } // end FUNCTION menu()
 
 

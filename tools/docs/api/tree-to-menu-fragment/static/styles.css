@@ -60,6 +60,7 @@
 	position: relative;
 
 	margin-right: 10px;
+	margin-top: 5px;
 
 	width: 30px;
 	height: 25px;
@@ -131,6 +132,7 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-search,
 .slideout-menu-background,
 .slideout-menu-input ~ .main {
 	-webkit-backface-visibility: hidden;
@@ -153,6 +155,7 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-search,
 .slideout-menu-background,
 .slideout-menu-input ~ .main {
 	/* name | duration | timing function | delay */
@@ -198,14 +201,16 @@
 */
 .slideout-menu,
 .slideout-menu-label,
+.slideout-menu-search,
 .slideout-menu-background {
 	width: 400px;
 }
 
 /*
-* Initially position the menu and menu background off canvas.
+* Initially position the menu, menu search, and menu background off canvas.
 */
 .slideout-menu,
+.slideout-menu-search,
 .slideout-menu-background {
 	position: fixed;
 	top: 0;
@@ -254,7 +259,7 @@
 .slideout-menu {
 	z-index: 0;
 
-	margin-top: 55px; /* allow space for menu header */
+	margin-top: 120px; /* allow space for menu header */
 	padding-top: 0;
 	padding-bottom: 40px;
 
@@ -273,8 +278,7 @@
 
 	z-index: 500;
 
-	height: 50px;
-	padding-top: 20px;
+	padding-top: 30px;
 
 	background-color: transparent;
 
@@ -306,32 +310,42 @@
 }
 
 /*
-* Slideout menu search input element.
+* Style the menu header.
 */
-.slideout-menu-input[name="slideout-menu-search"] {
+.slideout-menu-header {
 	display: block;
 	float: left;
 	position: relative;
 
-	margin-left: 10px;
+	width: 350px; /* menu width - hamburger */
 
-	height: 25px;
-	width: 340px;
+	color: #fff;
+	padding-left: 0.8em;
+}
 
-	font-size: 1.1em;
+/*
+* Slideout menu search input element.
+*/
+.slideout-menu-search[name="slideout-menu-search"] {
+	display: block;
+
+	z-index: 1;
+
+	height: 40px;
+
+	margin-top: 80px;
+	padding-left: 1em;
+
+	font-size: 1em;
 	font-weight: 200;
 	color: #acafb3;
 
-	background-color: inherit;
+	background-color: #1f1f1f;
 
 	border: none;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #acafb3; /* fallback */
-	border-bottom-color: rgba(172, 175, 178, 0.3);
 }
 
-.slideout-menu-input[name="slideout-menu-search"]:focus {
+.slideout-menu-search[name="slideout-menu-search"]:focus {
 	outline: none;
 
 	-webkit-box-shadow: none;
@@ -341,34 +355,35 @@
 	box-shadow: none;
 }
 
-.slideout-menu-input[name="slideout-menu-search"]::-webkit-input-placeholder {
+.slideout-menu-search[name="slideout-menu-search"]::-webkit-input-placeholder {
 	font-style: italic;
 	font-weight: 200;
 	color: #acafb3;
 }
 
-.slideout-menu-input[name="slideout-menu-search"]::-moz-placeholder {
+.slideout-menu-search[name="slideout-menu-search"]::-moz-placeholder {
 	font-style: italic;
 	font-weight: 200;
 	color: #acafb3;
 }
 
-.slideout-menu-input[name="slideout-menu-search"]::-ms-input-placeholder {
+.slideout-menu-search[name="slideout-menu-search"]::-ms-input-placeholder {
 	font-style: italic;
 	font-weight: 200;
 	color: #acafb3;
 }
 
-.slideout-menu-input[name="slideout-menu-search"]::placeholder {
+.slideout-menu-search[name="slideout-menu-search"]::placeholder {
 	font-style: italic;
 	font-weight: 200;
 	color: #acafb3;
 }
 
 /*
-* When the input element is selected, make the slideout menu and menu background visible.
+* When the input element is selected, make the slideout menu, menu search, and menu background visible.
 */
 .slideout-menu-input:checked ~ .slideout-menu,
+.slideout-menu-input:checked ~ .slideout-menu-search,
 .slideout-menu-input:checked ~ .slideout-menu-background {
 	/* Add transform fallbacks for browsers not supporting `translate3d`. */
 	-webkit-transform: translateX(0);
@@ -523,22 +538,6 @@
 */
 
 /*
-* Style the menu header and add a bottom border to delineate the header from menu contents.
-*/
-.menu-header {
-	color: #fff;
-	border-bottom: 1px solid #2a2d2f;
-	padding: 15px 0 15px 0.8em;
-}
-
-/*
-* Style the menu header title.
-*/
-.menu-header-title {
-	display: block;
-}
-
-/*
 * Ensure that menu sections are adjacent.
 */
 .menu > ul,
@@ -581,7 +580,7 @@
 */
 .menu > ul > li > label,
 .menu > ul > li > label > a,
-.menu > ul > li > section > label {
+.menu > ul > li > div > label {
 	color: #acafb3;
 }
 
