@@ -192,7 +192,7 @@ void write_data_as_json( FILE *f, const double *x, const double *y, const unsign
 	fprintf( f, "{" );
 	write_named_array_f64( f, "x", x, len );
 	fprintf( f, "," );
-	write_named_array_f64( f, "y", y, len ); // TODO: update or erase this comment
+	write_named_array_f64( f, "expected", y, len ); // TODO: update or erase this comment
 	fprintf( f, "}" );
 }
 
