@@ -42,6 +42,12 @@ function factory( options ) {
 		if ( hasOwnProp( options, 'config' ) ) {
 			opts.configFile = resolve( cwd(), options.config );
 		}
+		if ( hasOwnProp( options, 'ignore' ) ) {
+			opts.ignore = options.ignore;
+		}
+		if ( hasOwnProp( options, 'useEslintrc' ) ) {
+			opts.useEslintrc = options.useEslintrc;
+		}
 		// TODO: add support for other ESLint options
 	}
 	cli = new Engine( opts );
