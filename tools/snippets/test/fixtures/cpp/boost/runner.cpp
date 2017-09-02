@@ -112,6 +112,36 @@ void rand_array_i32( int *out, const unsigned int len, const int a, const int b 
 }
 
 /**
+* Casts an array of integers to an array of doubles.
+*
+* @param out  output array
+* @param x    input array
+* @param len  array length
+*/
+void i32_to_f64( double *out, int *x, unsigned int len ) {
+	unsigned int i;
+
+	for ( i = 0; i < len; i++ ) {
+		out[ i ] = (double) x[ i ];
+	}
+}
+
+/**
+* Casts an array of doubles to an array of integers.
+*
+* @param out  output array
+* @param x    input array
+* @param len  array length
+*/
+void f64_to_i32( int *out, double *x, unsigned int len ) {
+	unsigned int i;
+
+	for ( i = 0; i < len; i++ ) {
+		out[ i ] = (int) x[ i ];
+	}
+}
+
+/**
 * Writes an array of doubles to a file as a series of comma-separated values.
 *
 * @param f    file to write to
