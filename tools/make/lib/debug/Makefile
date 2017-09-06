@@ -36,7 +36,8 @@ assert.%:
 # Note: the list of variables is NOT exhaustive, as the list does not include variables which are built-in. These variables could be included by dumping the Makefile database `make -qp`.
 
 list-variables:
-	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
+	$(QUIET) set -o pipefail ; \
+	find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
 	| xargs grep -e '^[A-Z0-9_]\{1,\} ?=' -e '^[A-Za-z0-9_]\{1,\} :=' \
 	| awk '{print $$1}' \
 	| sed 's/.*:\(.*\)/\1/' \
