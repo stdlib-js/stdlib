@@ -6,7 +6,7 @@
 # This target runs scripts written in Python to generate test fixtures.
 
 test-fixtures-python:
-	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) set -o pipefail ; $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Generating test fixtures: $$file"; \
 		$(PYTHON) $$file || exit 1; \
