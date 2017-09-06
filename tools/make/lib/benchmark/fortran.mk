@@ -6,7 +6,7 @@
 # This target runs a list of Fortran benchmarks in sequential order.
 
 benchmark-fortran:
-	$(QUIET) $(FIND_FORTRAN_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) set -o pipefail ; $(FIND_FORTRAN_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \
