@@ -23,6 +23,7 @@ BROWSER_TEST_FLAGS ?=
 # [1]: https://github.com/substack/testling
 
 view-testling: $(NODE_MODULES)
+	$(QUIET) set -o pipefail ; \
 	NODE_ENV=$(NODE_ENV_TEST) \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_FLAGS) \

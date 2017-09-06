@@ -40,6 +40,7 @@ endif
 # TODO: make robust to long file lists.
 
 test-browsers: $(NODE_MODULES)
+	$(QUIET) set -o pipefail ; \
 	NODE_ENV=$(NODE_ENV_TEST) \
 	NODE_PATH=$(NODE_PATH_TEST) \
 	$(BROWSERIFY) \
