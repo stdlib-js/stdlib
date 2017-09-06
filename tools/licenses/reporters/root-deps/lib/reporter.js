@@ -10,7 +10,7 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 // VARIABLES //
 
-var RE_ID = /(.+)\@([0-9]+\.[0-9]+\.[0-9]+)$/;
+var RE_ID = /(.+)\@([0-9]+\.[0-9]+\.[0-9]+)/; // eslint-disable-line no-useless-escape
 
 
 // MAIN //
