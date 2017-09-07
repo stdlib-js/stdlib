@@ -8,22 +8,22 @@ This document lists domain names which are officially affiliated with the projec
 
 List of active domains:
 
--   stdlib.io: the domain of the website
+-   [stdlib.io](https://stdlib.io): the domain of the website
 
 ## Idle
 
 List of **currently** unused domains:
 
--   stdlib.co
--   stdlibjs.co
--   stdlib.fun
--   stdlibjs.fun
--   stdlib.rocks
--   stdlibjs.rocks
--   stdlib.party
--   stdlibjs.party
--   stdlib.studio
--   stdlibjs.org
+-   [stdlib.co](http://stdlib.co)
+-   [stdlibjs.co](http://stdlibjs.co)
+-   [stdlib.fun](http://stdlib.fun)
+-   [stdlibjs.fun](http://stdlibjs.fun)
+-   [stdlib.rocks](http://stdlib.rocks)
+-   [stdlibjs.rocks](http://stdlibjs.rocks)
+-   [stdlib.party](http://stdlib.party)
+-   [stdlibjs.party](http://stdlibjs.party)
+-   [stdlib.studio](http://stdlib.studio)
+-   [stdlibjs.org](http://stdlibjs.org)
 
 ## Former
 
