@@ -1,7 +1,5 @@
 # Domains
 
-> Domain names associated with the project.
-
 This document lists domain names which are officially affiliated with the project. Any domain name listed here is legitimate and should **not** be flagged as a phishing attempt.
 
 ## Active
