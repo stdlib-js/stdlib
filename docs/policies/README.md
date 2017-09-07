@@ -8,7 +8,7 @@ The following documents set forth the legal policies for the project:
 -   [Copyright][stdlib-copyright]
 -   [License][stdlib-license]
 -   [Privacy Policy][stdlib-privacy-policy]
--   [Terms of Use][stdlib-terms-of-use]
+-   [Terms of Service][stdlib-terms-of-service]
 -   [List of Official Domains][stdlib-domains]
 
 These documents are periodically updated. Please refer to the project [git history][stdlib-git-commit-log] to view the changes.
@@ -23,7 +23,7 @@ These documents are periodically updated. Please refer to the project [git histo
 
 [stdlib-privacy-policy]: https://github.com/stdlib-js/stdlib/blob/develop/PRIVACY.md
 
-[stdlib-terms-of-use]: https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/TERMS_OF_USE.md
+[stdlib-terms-of-service]: https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/TERMS_OF_SERVICE.md
 
 [stdlib-domains]: https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/domains.md
 
