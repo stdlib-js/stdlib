@@ -6,7 +6,7 @@
 # This target runs scripts written in C to generate test fixtures.
 
 test-fixtures-c:
-	$(QUIET) set -o pipefail ; $(FIND_C_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_C_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Generating test fixtures: $$file"; \
 		cd `dirname $$file` && \

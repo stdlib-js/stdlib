@@ -27,8 +27,7 @@ REPL_BROWSER_BUNDLE ?= $(REPL_BROWSER_BUNDLE_OUT)/bundle.js
 # This target starts a browser REPL environment.
 
 repl-browser: $(NODE_MODULES)
-	$(QUIET) set -o pipefail ; \
-	NODE_ENV=$(NODE_ENV_REPL) $(BROWSERIFY) \
+	$(QUIET) NODE_ENV=$(NODE_ENV_REPL) $(BROWSERIFY) \
 		$(REPL_BROWSERIFY_FLAGS) \
 		$(REPL_BROWSER_SRC) \
 	| DEBUG=* $(repl_tmp_http_server) \
