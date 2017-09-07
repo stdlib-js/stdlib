@@ -31,4 +31,10 @@ List of **currently** unused domains:
 
 This is a living document which may be periodically updated. Please refer to the [git history for this document][git-commit-log-domains] to view the changes.
 
+<section class="links">
+
 [git-commit-log-domains]: https://github.com/stdlib-js/stdlib/commits/develop/docs/policies/domains.md
+
+</section>
+
+<!-- /.links -->
