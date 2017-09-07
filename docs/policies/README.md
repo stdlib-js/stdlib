@@ -21,9 +21,9 @@ These documents are periodically updated. Please refer to the project [git histo
 
 [stdlib-license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
 
-[stdlib-privacy-policy]: https://github.com/stdlib-js/stdlib/blob/develop/PRIVACY
+[stdlib-privacy-policy]: https://github.com/stdlib-js/stdlib/blob/develop/PRIVACY.md
 
-[stdlib-terms-of-use]: https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/terms_of_use.md
+[stdlib-terms-of-use]: https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/TERMS_OF_USE.md
 
 [stdlib-domains]: https://github.com/stdlib-js/stdlib/blob/develop/docs/policies/domains.md
 
