@@ -16,6 +16,7 @@ Developing and running stdlib **requires** the following prerequisites:
 
 -   [Git][git]: version control
 -   [GNU make][make]: development utility and task runner
+-   [GNU bash][bash]: an sh-compatible shell
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 -   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 -   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
@@ -282,6 +283,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [git]: http://git-scm.com/
 
 [make]: https://www.gnu.org/software/make
+
+[bash]: https://www.gnu.org/software/bash/
 
 [curl]: http://curl.haxx.se/
 
