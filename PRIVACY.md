@@ -104,6 +104,8 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cc-by-sa-4.0]: https://creativecommons.org/licenses/by-sa/4.0/
+
 </section>
 
 <!-- /.links -->
