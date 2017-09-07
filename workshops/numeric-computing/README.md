@@ -9,7 +9,7 @@
 Running the workshop requires the following prerequisites:
 
 -   [git][git]: version control
--   [GNU Make][gnu-make]: task runner
+-   [GNU Make][make]: task runner
 -   [Node.js][node-js]: JavaScript runtime (version `>=0.10`)
 
 Note, in order to run `make` commands on Windows, you can use [MinGW][mingw], a minimalist GNU for Windows, by adding the application to the `PATH` variable.
@@ -96,7 +96,7 @@ https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exe
 
 [git]: http://git-scm.com/
 
-[gnu-make]: https://www.gnu.org/software/make
+[make]: https://www.gnu.org/software/make
 
 [node-js]: https://nodejs.org/en/
 
