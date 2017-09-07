@@ -1,4 +1,4 @@
-# TERMS OF SERVICE
+# Terms of Service
 
 > Project Terms of Service.
 
