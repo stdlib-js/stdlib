@@ -31,7 +31,7 @@ List of **currently** unused domains:
 
 ## Changes
 
-This is a living document which may be periodically updated. Please refer to the [git history for this document][git-commit-log-domains] to view the changes.
+This is a living document which may be periodically updated. Please refer to the [git history for this document][stdlib-git-commit-log-domains] to view the changes.
 
 ## License
 
@@ -43,7 +43,7 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[git-commit-log-domains]: https://github.com/stdlib-js/stdlib/commits/develop/docs/policies/domains.md
+[stdlib-git-commit-log-domains]: https://github.com/stdlib-js/stdlib/commits/develop/docs/policies/domains.md
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
