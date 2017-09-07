@@ -5,5 +5,6 @@
 	"description": "DESCRIPTION",
 	"require": "REQUIRE",
 	"authors": "AUTHORS",
-	"contributors": "CONTRIBUTORS"
+	"contributors": "CONTRIBUTORS",
+	"privacy": "PRIVACY"
 }
