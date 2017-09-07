@@ -78,7 +78,7 @@ function create( options ) {
 
 	debug( 'Writing updated database to file...' );
 	out = JSON.stringify( out, null, 2 );
-	writeFile( opts.database, out, fopts );
+	writeFile( opts.database, out+'\n', fopts );
 	debug( 'Successfully wrote database to file.' );
 
 	debug( 'Finished.' );

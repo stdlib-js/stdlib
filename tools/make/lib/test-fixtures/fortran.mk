@@ -6,7 +6,7 @@
 # This target runs scripts written in Fortran to generate test fixtures.
 
 test-fixtures-fortran:
-	$(QUIET) set -o pipefail ; $(FIND_FORTRAN_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_FORTRAN_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Generating test fixtures: $$file"; \
 		cd `dirname $$file` && \

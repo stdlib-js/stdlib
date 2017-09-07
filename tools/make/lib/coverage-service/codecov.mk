@@ -33,7 +33,6 @@ endif
 #
 # [1]: https://codecov.io/
 
-coverage-codecov: SHELL := /bin/bash
 coverage-codecov:
 	$(QUIET) $(CODECOV) $(CODECOV_FLAGS) || echo 'Failed to upload coverage reports to Codecov.'
 

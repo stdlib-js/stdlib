@@ -106,7 +106,7 @@ function create( options, clbk ) {
 
 		debug( 'Writing updated database to file...' );
 		out = JSON.stringify( out, null, 2 );
-		writeFile( opts.database, out, fopts, onWrite );
+		writeFile( opts.database, out+'\n', fopts, onWrite );
 	} // end FUNCTION entry()
 
 	/**

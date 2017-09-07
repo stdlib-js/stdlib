@@ -64,7 +64,8 @@ Running stdlib **requires** the following prerequisites:
 
 Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
 
--   [GNU make][gnu-make]: development utility and task runner
+-   [GNU make][make]: development utility and task runner
+-   [GNU bash][bash]: an sh-compatible shell
 -   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 
@@ -228,7 +229,9 @@ Copyright © 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
-[gnu-make]: https://www.gnu.org/software/make
+[make]: https://www.gnu.org/software/make
+
+[bash]: https://www.gnu.org/software/bash/
 
 [curl]: http://curl.haxx.se/
 

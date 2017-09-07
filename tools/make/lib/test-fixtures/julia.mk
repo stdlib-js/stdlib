@@ -6,7 +6,7 @@
 # This target runs scripts written in Julia to generate test fixtures. Note that we assume the scripts can be run using Julia.
 
 test-fixtures-julia:
-	$(QUIET) set -o pipefail ; $(FIND_JULIA_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_JULIA_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Generating test fixtures: $$file"; \
 		$(MAKE_EXECUTABLE) $$file && $$file || exit 1; \

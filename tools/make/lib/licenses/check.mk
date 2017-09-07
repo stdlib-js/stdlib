@@ -3,7 +3,6 @@
 
 # Define the command for checking licenses:
 CHECK_LICENSES ?= \
-	set -o pipefail ; \
 	$(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 		--depth 0 \
@@ -15,7 +14,6 @@ CHECK_LICENSES ?= \
 
 # Define the command for checking licenses for 'production' dependencies:
 CHECK_LICENSES_PRODUCTION ?= \
-	set -o pipefail ; \
 	$(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 		--depth 0 \
