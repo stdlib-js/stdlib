@@ -6,6 +6,12 @@ ifndef VERBOSE
 endif
 
 
+# SHELL #
+
+# Define the `SHELL` variable to avoid issues on systems where the variable may be inherited from the environment (see https://www.gnu.org/prep/standards/html_node/Makefile-Basics.html#Makefile-Basics):
+SHELL = /bin/sh
+
+
 # GENERAL VARIABLES #
 
 # Define supported Node.js versions:
