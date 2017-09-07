@@ -36,14 +36,6 @@ The website may use cookies and other technologies, such as pixels and local sto
 
 We respect browser Do Not Track ("DNT") settings. If you have DNT enabled, we will not set cookies. Some third-party services, such as Google Analytics, may place their own cookies in your browser. This Privacy Policy covers the use of cookies by the project only and not the use of cookies by third parties.
 
-## Data Storage
-
-The project uses third-party vendors and hosting partners, such as Linode and Amazon, for hardware, software, networking, storage, and related technology needed to support the project.
-
-## Data Security
-
-The website uses encryption (HTTPS/TLS) to protect transmitted data. However, no Internet data transmission is completely secure, and, thus, security is not guaranteed. You use the project and its Services at your own risk, and you are responsible for taking reasonable security measures.
-
 ## Disclosure of Log Information
 
 All user information is retained in raw form for such time as deemed appropriate by the project. Raw log data is not shared with third parties, but may be shared in aggregate. For example, we may publish blog posts or reports on website usage.
@@ -53,6 +45,14 @@ We also analyze log data for a variety of reasons, including counting unique vis
 ## Links to Other Websites
 
 The project may contain links to other websites. Any personal information you provide on the linked pages is provided directly to that third party and is subject to that third party's privacy policy. Except as described above, we are not responsible for the content or privacy and security practices and policies of websites to which we link. Links from the project to third parties or to other sites are provided for your convenience. We encourage you to learn about their privacy and security practices and policies before providing them with personal information.
+
+## Data Storage
+
+The project uses third-party vendors and hosting partners, such as Linode and Amazon, for hardware, software, networking, storage, and related technology needed to support the project.
+
+## Data Security
+
+The website uses encryption (HTTPS/TLS) to protect transmitted data. However, no Internet data transmission is completely secure, and, thus, security is not guaranteed. You use the project and its Services at your own risk, and you are responsible for taking reasonable security measures.
 
 ## Jurisdiction
 
