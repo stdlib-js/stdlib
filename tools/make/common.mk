@@ -316,3 +316,25 @@ DEPS_EMSDK_BINARYEN_VERSION ?= master
 
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
+
+# Define the output directory when building Cephes:
+DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cephes
+
+# Define the list of Cephes libraries to build:
+DEPS_CEPHES_LIBS ?= \
+	128bit.tgz \
+	bessel.tgz \
+	c9x-complex.tgz \
+	cmath.tgz \
+	cprob.tgz \
+	ellf.tgz \
+	eval.tgz \
+	ieee.tgz \
+	ldouble.tgz \
+	linalg.tgz \
+	ode.tgz \
+	misc.tgz \
+	polyn.tgz \
+	qfloat.tgz \
+	remes.tgz \
+	single.tgz
