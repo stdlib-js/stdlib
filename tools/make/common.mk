@@ -319,22 +319,22 @@ DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
 
 # Define the list of Cephes libraries to build:
 DEPS_CEPHES_LIBS ?= \
-	128bit.tgz \
-	bessel.tgz \
-	c9x-complex.tgz \
-	cmath.tgz \
-	cprob.tgz \
-	ellf.tgz \
-	eval.tgz \
-	ieee.tgz \
-	ldouble.tgz \
-	linalg.tgz \
-	ode.tgz \
-	misc.tgz \
-	polyn.tgz \
-	qfloat.tgz \
-	remes.tgz \
-	single.tgz
+	128bit \
+	bessel \
+	c9x-complex \
+	cmath \
+	cprob \
+	ellf \
+	eval \
+	ieee \
+	ldouble \
+	linalg \
+	ode \
+	misc \
+	polyn \
+	qfloat \
+	remes \
+	single
 
 # Define the output path when building Cephes:
 DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cephes
