@@ -53,7 +53,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT):
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -62,7 +62,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -71,7 +71,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz $(D
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/c9x-complex.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -80,7 +80,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/c9x-complex.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOW
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/cmath.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -89,7 +89,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/cmath.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -98,7 +98,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -107,7 +107,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(D
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -116,7 +116,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_O
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -125,7 +125,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(D
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -134,7 +134,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | 
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -143,7 +143,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -152,7 +152,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(D
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -161,7 +161,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DE
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -170,7 +170,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -179,7 +179,7 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Download library.
@@ -188,14 +188,14 @@ $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz | $(
 
 $(DEPS_CEPHES_DOWNLOAD_OUT)/single.tgz: | $(DEPS_TMP_DIR) $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Downloading library...' >&2
-	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)/`basename $@` $@
+	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL)`basename $@` $@
 
 
 # Extract library.
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for 128-bit reals.
 
-$(DEPS_CEPHES_BUILD_OUT)/128bit: $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/128bit: $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -205,7 +205,7 @@ $(DEPS_CEPHES_BUILD_OUT)/128bit: $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for Bessel and hypergeometric functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/bessel: $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/bessel: $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -215,17 +215,19 @@ $(DEPS_CEPHES_BUILD_OUT)/bessel: $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for complex type as in C9X standard.
 
-$(DEPS_CEPHES_BUILD_OUT)/c9x-complex: $(DEPS_CEPHES_DOWNLOAD_OUT)/c9x-complex.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/c9x-complex: $(DEPS_CEPHES_DOWNLOAD_OUT)/c9x-complex.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
+	$(QUIET) mv $@/c9x-complex/* $@/
+	$(QUIET) rmdir $@/c9x-complex/
 
 
 # Extract library.
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for double-precision elementary functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/cmath: $(DEPS_CEPHES_DOWNLOAD_OUT)/cmath.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath: $(DEPS_CEPHES_DOWNLOAD_OUT)/cmath.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -235,7 +237,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cmath: $(DEPS_CEPHES_DOWNLOAD_OUT)/cmath.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for probability integrals and their inverses.
 
-$(DEPS_CEPHES_BUILD_OUT)/cprob: $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/cprob: $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -245,7 +247,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cprob: $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for elliptic integrals and elliptic filter calculator.
 
-$(DEPS_CEPHES_BUILD_OUT)/ellf: $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ellf: $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -255,7 +257,7 @@ $(DEPS_CEPHES_BUILD_OUT)/ellf: $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library which is a subset of `cmath.tgz` and used by other functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/eval: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/eval: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -265,7 +267,7 @@ $(DEPS_CEPHES_BUILD_OUT)/eval: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for floating point arithmetic in standard precisions.
 
-$(DEPS_CEPHES_BUILD_OUT)/ieee: $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ieee: $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -275,7 +277,7 @@ $(DEPS_CEPHES_BUILD_OUT)/ieee: $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for IEEE 80-bit extended real elementary functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -285,7 +287,7 @@ $(DEPS_CEPHES_BUILD_OUT)/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for C translations of `eigens`, `lmdif`.
 
-$(DEPS_CEPHES_BUILD_OUT)/linalg: $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/linalg: $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -295,7 +297,7 @@ $(DEPS_CEPHES_BUILD_OUT)/linalg: $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for Fresnel integrals, polylogarithms, Planck radiation formula, Adams-Bashforth-Moulton and Runge-Kutta, solar system integration.
 
-$(DEPS_CEPHES_BUILD_OUT)/misc: $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/misc: $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -305,7 +307,7 @@ $(DEPS_CEPHES_BUILD_OUT)/misc: $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for Fresnel integrals, polylogarithms, Planck radiation formula, Adams-Bashforth-Moulton and Runge-Kutta, solar system integration.
 
-$(DEPS_CEPHES_BUILD_OUT)/ode: $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ode: $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -315,7 +317,7 @@ $(DEPS_CEPHES_BUILD_OUT)/ode: $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for arithmetic on rationals and polynomials.
 
-$(DEPS_CEPHES_BUILD_OUT)/polyn: $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/polyn: $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -325,7 +327,7 @@ $(DEPS_CEPHES_BUILD_OUT)/polyn: $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for 144- or 336-bit precision floating point arithmetic and functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/qfloat: $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/qfloat: $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -335,7 +337,7 @@ $(DEPS_CEPHES_BUILD_OUT)/qfloat: $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for minimax rational approximation.
 
-$(DEPS_CEPHES_BUILD_OUT)/remes: $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/remes: $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -345,7 +347,7 @@ $(DEPS_CEPHES_BUILD_OUT)/remes: $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for 32-bit floating point versions of Cephes functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/single: $(DEPS_CEPHES_DOWNLOAD_OUT)/single.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/single: $(DEPS_CEPHES_DOWNLOAD_OUT)/single.tgz
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
