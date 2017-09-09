@@ -340,5 +340,8 @@ DEPS_CEPHES_LIBS ?= \
 	single
 
 # Define the output path when building Cephes:
-DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cephes
-
+ifeq ($(DEPS_CEPHES_DIST), netlib)
+	DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/netlib_cephes
+else
+	DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cephes
+endif
