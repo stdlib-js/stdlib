@@ -366,7 +366,12 @@ $(DEPS_CEPHES_TEST_OUT):
 # This target compiles a test file for testing an installation.
 
 $(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT)
-	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) $(DEPS_CEPHES_TEST_INSTALL) $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/sindg.c $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/mtherr.c $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/polevl.c -o $(DEPS_CEPHES_TEST_INSTALL_OUT)
+	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) \
+		$(DEPS_CEPHES_TEST_INSTALL) \
+		$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/sindg.c \
+		$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/mtherr.c \
+		$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/polevl.c \
+		-o $(DEPS_CEPHES_TEST_INSTALL_OUT)
 
 
 # Download Cephes.
