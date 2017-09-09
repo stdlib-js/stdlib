@@ -1,12 +1,6 @@
 
 # VARIABLES #
 
-# Define the path to an executable for downloading a remote resource:
-DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
-
-# Define the path to an executable for verifying a download:
-DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
-
 # Define the download URL:
 DEPS_OPENBLAS_URL ?= https://github.com/xianyi/OpenBLAS/archive/v$(DEPS_OPENBLAS_VERSION).tar.gz
 

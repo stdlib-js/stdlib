@@ -1,12 +1,6 @@
 
 # VARIABLES #
 
-# Define the path to an executable for downloading a remote resource:
-DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
-
-# Define the path to an executable for verifying a download:
-DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
-
 # Define the download URL:
 DEPS_BOOST_URL ?= https://sourceforge.net/projects/boost/files/boost/$(DEPS_BOOST_VERSION)/boost_$(deps_boost_version_slug).tar.gz
 
