@@ -30,7 +30,7 @@ DEPS_CEPHES_TEST_DIR ?= $(DEPS_DIR)/test/netlib_cephes
 DEPS_CEPHES_TEST_OUT ?= $(DEPS_CEPHES_TEST_DIR)/build
 
 # Define the path to a test file for checking an installation:
-DEPS_CEPHES_TEST_INSTALL ?= $(DEPS_CEPHES_TEST_DIR)/test_install.cpp
+DEPS_CEPHES_TEST_INSTALL ?= $(DEPS_CEPHES_TEST_DIR)/test_install.c
 
 # Define the output path for a test file:
 DEPS_CEPHES_TEST_INSTALL_OUT ?= $(DEPS_CEPHES_TEST_OUT)/test_install
@@ -366,7 +366,7 @@ $(DEPS_CEPHES_TEST_OUT):
 # This target compiles a test file for testing an installation.
 
 $(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT)
-	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) $(DEPS_CEPHES_TEST_INSTALL) -o $(DEPS_CEPHES_TEST_INSTALL_OUT)
+	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) $(DEPS_CEPHES_TEST_INSTALL) $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/sindg.c $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/mtherr.c $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/polevl.c -o $(DEPS_CEPHES_TEST_INSTALL_OUT)
 
 
 # Download Cephes.
@@ -403,7 +403,7 @@ deps-extract-cephes: $(deps_cephes_build_out)
 
 deps-test-cephes: $(DEPS_CEPHES_TEST_INSTALL_OUT)
 	$(QUIET) echo 'Running tests...' >&2
-	$(QUIET) echo $(DEPS_CEPHES_TEST_INSTALL_OUT)
+	$(QUIET) $(DEPS_CEPHES_TEST_INSTALL_OUT)
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
