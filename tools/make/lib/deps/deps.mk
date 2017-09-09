@@ -17,13 +17,10 @@ DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/cephes.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/wabt.mk
-
-ifeq ($(DEPS_CEPHES_DIST), netlib)
-	include $(TOOLS_MAKE_LIB_DIR)/deps/cephes_netlib.mk
-endif
 
 
 # TARGETS #
