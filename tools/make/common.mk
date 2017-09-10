@@ -320,7 +320,29 @@ DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
 # Define the Cephes distribution to build (netlib, moshier):
 DEPS_CEPHES_DIST ?= netlib
 
-# Define the list of Cephes libraries to build:
+# Define the list of Cephes libraries to build.
+#
+# ## Notes
+#
+# * For `netlib`, the list may include the following libraries:
+#
+#   - 128bit
+#   - bessel
+#   - c9x-complex
+#   - cmath
+#   - cprob
+#   - ellf
+#   - eval
+#   - ieee
+#   - ldouble
+#   - linalg
+#   - ode
+#   - misc
+#   - polyn
+#   - qfloat
+#   - remes
+#   - single
+#
 DEPS_CEPHES_LIBS ?= \
 	128bit \
 	bessel \
