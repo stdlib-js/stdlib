@@ -7,10 +7,17 @@ DEPS_TMP_DIR ?= $(DEPS_DIR)/tmp
 # Define the path for dependency checksums:
 DEPS_CHECKSUMS_DIR ?= $(DEPS_DIR)/checksums
 
+# Define the path to an executable for downloading a remote resource:
+DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
+
+# Define the path to an executable for verifying a download:
+DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
+
 
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/cephes.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/wabt.mk
@@ -38,7 +45,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt
+install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt install-deps-cephes
 
 .PHONY: install-deps
 
@@ -66,7 +73,7 @@ clean-deps-build:
 #
 # This target removes vendor dependency installation tests.
 
-clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests clean-deps-wabt-tests
+clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests clean-deps-wabt-tests clean-deps-cephes-tests
 
 .PHONY: clean-deps-tests
 

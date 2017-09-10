@@ -1,12 +1,6 @@
 
 # VARIABLES #
 
-# Define the path to an executable for downloading a remote resource:
-DEPS_DOWNLOAD_BIN ?= $(TOOLS_DIR)/scripts/download
-
-# Define the path to an executable for verifying a download:
-DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
-
 # Define the path to an executable for checking CMake:
 DEPS_CHECK_CMAKE ?= $(TOOLS_DIR)/scripts/check_cmake
 
