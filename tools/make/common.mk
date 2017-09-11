@@ -317,14 +317,14 @@ DEPS_EMSDK_BINARYEN_VERSION ?= master
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
 
-# Define the Cephes distribution to build (netlib, moshier):
+# Define the Cephes distribution to build (netlib, moshier, cephes-2.8):
 DEPS_CEPHES_DIST ?= netlib
 
 # Define the list of Cephes libraries to build.
 #
 # ## Notes
 #
-# * For `netlib`, the list may include the following libraries:
+# * For the `netlib` distribution, the list may include the following libraries:
 #
 #   - 128bit
 #   - bessel
