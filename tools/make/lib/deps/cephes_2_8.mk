@@ -13,6 +13,9 @@ DEPS_CEPHES_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst -,_,$(subst .,
 # Define the output path when downloading:
 DEPS_CEPHES_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_cephes_basename)
 
+# Define the output path when building:
+deps_cephes_build_out := $(DEPS_CEPHES_BUILD_OUT)/cephes
+
 # Define the path to the directory containing tests:
 DEPS_CEPHES_TEST_DIR ?= $(DEPS_DIR)/test/cephes
 
@@ -41,9 +44,10 @@ $(DEPS_CEPHES_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 #
 # This target extracts a gzipped tar archive.
 
-$(DEPS_CEPHES_BUILD_OUT): $(DEPS_CEPHES_DOWNLOAD_OUT) | $(DEPS_BUILD_DIR)
+$(deps_cephes_build_out): $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Extracting Cephes...' >&2
-	$(QUIET) $(TAR) -zxf $(DEPS_CEPHES_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
+	$(QUIET) $(MKDIR_RECURSIVE) $@
+	$(QUIET) $(TAR) -zxf $(DEPS_CEPHES_DOWNLOAD_OUT) -C $(DEPS_CEPHES_BUILD_OUT)
 
 
 # Create directory for tests.
@@ -58,12 +62,12 @@ $(DEPS_CEPHES_TEST_OUT):
 #
 # This target compiles a test file for testing an installation.
 
-$(DEPS_CEPHES_TEST_INSTALL_OUT): $(DEPS_CEPHES_BUILD_OUT) $(DEPS_CEPHES_TEST_OUT)
+$(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT)
 	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) \
 		$(DEPS_CEPHES_TEST_INSTALL) \
-		$(DEPS_CEPHES_BUILD_OUT)/double/sindg.c \
-		$(DEPS_CEPHES_BUILD_OUT)/double/mtherr.c \
-		$(DEPS_CEPHES_BUILD_OUT)/double/polevl.c \
+		$(deps_cephes_build_out)/double/sindg.c \
+		$(deps_cephes_build_out)/double/mtherr.c \
+		$(deps_cephes_build_out)/double/polevl.c \
 		-o $(DEPS_CEPHES_TEST_INSTALL_OUT)
 
 
@@ -91,7 +95,7 @@ deps-verify-cephes: deps-download-cephes
 #
 # This target extracts a Cephes download.
 
-deps-extract-cephes: $(DEPS_CEPHES_BUILD_OUT)
+deps-extract-cephes: $(deps_cephes_build_out)
 
 .PHONY: deps-extract-cephes
 
