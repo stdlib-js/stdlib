@@ -49,7 +49,7 @@ else
 	fPIC ?= -fPIC
 endif
 
-# List of Cephes source files (e.g., `double/sindg.c double/polyn.c double/mtherr.c`:
+# List of Cephes source files (e.g., `cephes/double/sindg.c cephes/double/polevl.c cephes/double/mtherr.c`:
 src_cephes :=
 
 # List of C targets:
