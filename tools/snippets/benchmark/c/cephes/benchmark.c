@@ -11,6 +11,11 @@
 #define REPEATS 3
 
 /**
+* Define prototypes for external functions.
+*/
+extern double TODO( double x );
+
+/**
 * Prints the TAP version.
 */
 void print_version() {
