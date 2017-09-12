@@ -262,7 +262,7 @@ void generate( double *x, const unsigned int len, const char *name ) {
 		printf( "Error opening file.\n" );
 		exit( 1 );
 	}
-	// Write data as JSON...
+	// Write data as JSON:
 	write_data_as_json( f, x, y, len ); // TODO: tailor to fixture data
 
 	// Close the file:
