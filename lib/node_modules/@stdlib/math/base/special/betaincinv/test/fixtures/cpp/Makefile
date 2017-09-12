@@ -72,7 +72,7 @@ $(cxx_targets): %.out: %.cpp $(BOOST)
 	$(QUIET) $(CXX) $(CXXFLAGS) $(fPIC) -I $(BOOST) -o $@ $< -lm
 
 
-# Generate text fixtures.
+# Generate test fixtures.
 #
 # This target generates test fixtures.
 
