@@ -35,6 +35,12 @@ DEPS_CEPHES_TEST_INSTALL ?= $(DEPS_CEPHES_TEST_DIR)/test_install.c
 # Define the output path for a test file:
 DEPS_CEPHES_TEST_INSTALL_OUT ?= $(DEPS_CEPHES_TEST_OUT)/test_install
 
+# Define a list of source files:
+deps_cephes_src := double/acosh.c double/airy.c double/asin.c double/asinh.c double/atan.c double/atanh.c double/bdtr.c double/beta.c double/btdtr.c double/cbrt.c double/chbevl.c double/chdtr.c double/const.c double/cosh.c double/dawsn.c double/drand.c double/ei.c double/ellie.c double/ellik.c double/ellpe.c double/ellpj.c double/ellpk.c double/exp.c double/exp10.c double/exp2.c double/expn.c double/expx2.c double/fabs.c double/fac.c double/fdtr.c double/fresnl.c double/gamma.c double/gdtr.c double/hyp2f1.c double/hyperg.c double/i0.c double/i1.c double/igami.c double/incbet.c double/incbi.c double/igam.c double/isnan.c double/iv.c double/j0.c double/j1.c double/jn.c double/jv.c double/k0.c double/k1.c double/kn.c double/kolmogorov.c double/log.c double/log2.c double/log10.c double/lrand.c double/nbdtr.c double/ndtr.c double/ndtri.c double/pdtr.c double/polevl.c double/polylog.c double/pow.c double/powi.c double/psi.c double/rgamma.c double/round.c double/shichi.c double/sici.c double/sin.c double/sindg.c double/sinh.c double/spence.c double/stdtr.c double/struve.c double/tan.c double/tandg.c double/tanh.c double/unity.c double/yn.c double/zeta.c double/zetac.c double/sqrt.c double/floor.c double/setprec.c double/mtherr.c
+
+# Resolve a list of source files to absolute filepaths:
+DEPS_CEPHES_SRC ?= $(addprefix $(DEPS_CEPHES_BUILD_OUT)/cephes/,$(deps_cephes_src))
+
 
 # TARGETS #
 
@@ -157,9 +163,7 @@ $(DEPS_CEPHES_TEST_OUT):
 $(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT)
 	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) \
 		$(DEPS_CEPHES_TEST_INSTALL) \
-		$(DEPS_CEPHES_BUILD_OUT)/cephes/double/sindg.c \
-		$(DEPS_CEPHES_BUILD_OUT)/cephes/double/mtherr.c \
-		$(DEPS_CEPHES_BUILD_OUT)/cephes/double/polevl.c \
+		$(DEPS_CEPHES_SRC) \
 		-o $(DEPS_CEPHES_TEST_INSTALL_OUT)
 
 
