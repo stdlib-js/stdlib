@@ -11,7 +11,7 @@ benchmark-c:
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
-		CEPHES=$(DEPS_CEPHES_BUILD_OUT) CEPHES_SRC=$(DEPS_CEPHES_SRC) $(MAKE) && \
+		CEPHES=$(DEPS_CEPHES_BUILD_OUT) CEPHES_SRC="$(DEPS_CEPHES_SRC)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 
@@ -28,7 +28,7 @@ benchmark-c-files:
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
-		CEPHES=$(DEPS_CEPHES_BUILD_OUT) CEPHES_SRC=$(DEPS_CEPHES_SRC) $(MAKE) && \
+		CEPHES=$(DEPS_CEPHES_BUILD_OUT) CEPHES_SRC="$(DEPS_CEPHES_SRC)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 
