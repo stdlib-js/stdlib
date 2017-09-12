@@ -318,7 +318,7 @@ DEPS_EMSDK_BINARYEN_VERSION ?= master
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
 
 # Define the Cephes distribution to build (netlib, moshier, cephes-2.8):
-DEPS_CEPHES_DIST ?= netlib
+DEPS_CEPHES_DIST ?= moshier
 
 # Define the list of Cephes libraries to build.
 #
@@ -343,27 +343,25 @@ DEPS_CEPHES_DIST ?= netlib
 #   - remes
 #   - single
 #
+# * For the `moshier` distribution, the list may include the following libraries:
+#
+#   - 128bit
+#   - double
+#   - ldouble
+#   - qlib
+#   - single
+#
 DEPS_CEPHES_LIBS ?= \
-	128bit \
-	bessel \
-	c9x-complex \
-	cmath \
-	cprob \
-	ellf \
-	eval \
-	ieee \
-	ldouble \
-	linalg \
-	ode \
-	misc \
-	polyn \
-	qfloat \
-	remes \
+	double \
 	single
 
 # Define the output path when building Cephes:
 ifeq ($(DEPS_CEPHES_DIST), netlib)
 	DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/netlib_cephes
 else
+ifeq ($(DEPS_CEPHES_DIST), moshier)
+	DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/moshier_cephes
+else
 	DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cephes
+endif
 endif
