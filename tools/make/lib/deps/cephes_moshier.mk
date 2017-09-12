@@ -109,7 +109,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/128bit: $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz
 $(DEPS_CEPHES_BUILD_OUT)/cephes/double: $(DEPS_CEPHES_DOWNLOAD_OUT)/double.zip
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
-	$(QUIET) $(UNZIP) $< -d $@
+	$(QUIET) $(UNZIP) -q $< -d $@
 
 
 # Extract library.
@@ -119,7 +119,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/double: $(DEPS_CEPHES_DOWNLOAD_OUT)/double.zip
 $(DEPS_CEPHES_BUILD_OUT)/cephes/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.zip
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
-	$(QUIET) $(UNZIP) $< -d $@
+	$(QUIET) $(UNZIP) -q $< -d $@
 
 
 # Extract library.
@@ -129,7 +129,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.zip
 $(DEPS_CEPHES_BUILD_OUT)/cephes/qlib: $(DEPS_CEPHES_DOWNLOAD_OUT)/qlib.zip
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
-	$(QUIET) $(UNZIP) $< -d $@
+	$(QUIET) $(UNZIP) -q $< -d $@
 
 
 # Extract library.
@@ -139,7 +139,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/qlib: $(DEPS_CEPHES_DOWNLOAD_OUT)/qlib.zip
 $(DEPS_CEPHES_BUILD_OUT)/cephes/single: $(DEPS_CEPHES_DOWNLOAD_OUT)/single.zip
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
-	$(QUIET) $(UNZIP) $< -d $@
+	$(QUIET) $(UNZIP) -q $< -d $@
 
 
 # Create directory for tests.
