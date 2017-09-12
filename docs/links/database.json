@@ -417,6 +417,15 @@
       "education"
     ]
   },
+  "http://www.moshier.net/#Cephes": {
+    "id": "cephes",
+    "description": "Moshier's website which provides Cephes distributions.",
+    "short_url": "",
+    "keywords": [
+      "cephes",
+      "math"
+    ]
+  },
   "http://www.yaml.org/": {
     "id": "yaml",
     "description": "Human friendly data serialization standard.",
