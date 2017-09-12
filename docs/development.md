@@ -44,6 +44,7 @@ Assuming the requisite language is present on the host machine, the following la
 The following vendor libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
 -   [Boost][boost]: portable C++ libraries
+-   [Cephes][cephes]: C/C++ special functions math library
 -   [OpenBLAS][openblas]: optimized BLAS library
 -   [Emscripten][emscripten]: LLVM to JavaScript compiler
 -   [WebAssembly Binary Toolkit][wabt]: suite of tools for WebAssembly
@@ -327,6 +328,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [pandoc]: http://pandoc.org/
 
 [boost]: http://www.boost.org/
+
+[cephes]: http://www.moshier.net/#Cephes
 
 [openblas]: https://github.com/xianyi/OpenBLAS
 
