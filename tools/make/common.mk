@@ -354,9 +354,20 @@ DEPS_CEPHES_DIST ?= moshier
 #   - qlib
 #   - single
 #
-DEPS_CEPHES_LIBS ?= \
-	double \
-	single
+ifeq ($(DEPS_CEPHES_DIST), netlib)
+	DEPS_CEPHES_LIBS ?= \
+		bessel \
+		cmath \
+		cprob \
+		polyn \
+		single
+else
+ifeq ($(DEPS_CEPHES_DIST), moshier)
+	DEPS_CEPHES_LIBS ?= \
+		double \
+		single
+endif
+endif
 
 # Define the output path when building Cephes:
 ifeq ($(DEPS_CEPHES_DIST), netlib)
