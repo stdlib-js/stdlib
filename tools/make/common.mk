@@ -103,6 +103,9 @@ MKDIR_RECURSIVE ?= mkdir -p
 # Define the command for extracting tarfiles:
 TAR ?= tar
 
+# Define the command for extracting files compressed in a ZIP archive:
+UNZIP ?= unzip
+
 # Define the command to `cat` a file:
 CAT ?= cat
 
