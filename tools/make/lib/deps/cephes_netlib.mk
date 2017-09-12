@@ -35,6 +35,12 @@ DEPS_CEPHES_TEST_INSTALL ?= $(DEPS_CEPHES_TEST_DIR)/test_install.c
 # Define the output path for a test file:
 DEPS_CEPHES_TEST_INSTALL_OUT ?= $(DEPS_CEPHES_TEST_OUT)/test_install
 
+# Define a list of source files:
+deps_cephes_src := bessel/airy.c bessel/hyp2f1.c bessel/hyperg.c bessel/i0.c bessel/i1.c bessel/iv.c bessel/j0.c bessel/j1.c bessel/jn.c bessel/jv.c bessel/k0.c bessel/k1.c bessel/kn.c bessel/psi.c bessel/struve.c bessel/yn.c cmath/acosh.c cmath/asin.c cmath/asinh.c cmath/atan.c cmath/atanh.c cmath/cbrt.c cmath/chbevl.c cmath/const.c cmath/cosh.c cmath/drand.c cmath/exp.c cmath/exp10.c cmath/exp2.c cmath/fabs.c cmath/floor.c cmath/isnan.c cmath/log.c cmath/log10.c cmath/log2.c cmath/mtherr.c cmath/polevl.c cmath/pow.c cmath/powi.c cmath/round.c cmath/setprec.c cmath/sin.c cmath/sincos.c cmath/sindg.c cmath/sinh.c cmath/sqrt.c cmath/tan.c cmath/tandg.c cmath/tanh.c cmath/unity.c cprob/bdtr.c cprob/btdtr.c cprob/chdtr.c cprob/expx2.c cprob/fdtr.c cprob/gamma.c cprob/gdtr.c cprob/igam.c cprob/igami.c cprob/incbet.c cprob/incbi.c cprob/kolmogorov.c cprob/nbdtr.c cprob/ndtr.c cprob/ndtri.c cprob/pdtr.c cprob/stdtr.c
+
+# Resolve a list of source files to absolute filepaths:
+DEPS_CEPHES_SRC ?= $(addprefix $(DEPS_CEPHES_BUILD_OUT)/cephes/,$(deps_cephes_src))
+
 
 # TARGETS #
 
@@ -205,10 +211,11 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/128bit: $(DEPS_CEPHES_DOWNLOAD_OUT)/128bit.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for Bessel and hypergeometric functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/bessel: $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/bessel: $(DEPS_CEPHES_DOWNLOAD_OUT)/bessel.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval $(DEPS_CEPHES_BUILD_OUT)/cephes/cprob
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
+	$(QUIET) $(CP) $(DEPS_CEPHES_BUILD_OUT)/cephes/cprob/mconf.h $(DEPS_CEPHES_BUILD_OUT)/cephes/bessel/mconf.h
 
 
 # Extract library.
@@ -237,7 +244,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/cmath: $(DEPS_CEPHES_DOWNLOAD_OUT)/cmath.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for probability integrals and their inverses.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/cprob: $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/cprob: $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -247,7 +254,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/cprob: $(DEPS_CEPHES_DOWNLOAD_OUT)/cprob.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for elliptic integrals and elliptic filter calculator.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/ellf: $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ellf: $(DEPS_CEPHES_DOWNLOAD_OUT)/ellf.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -267,7 +274,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/eval: $(DEPS_CEPHES_DOWNLOAD_OUT)/eval.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for floating point arithmetic in standard precisions.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/ieee: $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ieee: $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -277,7 +284,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/ieee: $(DEPS_CEPHES_DOWNLOAD_OUT)/ieee.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for IEEE 80-bit extended real elementary functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -287,7 +294,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/ldouble: $(DEPS_CEPHES_DOWNLOAD_OUT)/ldouble.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for C translations of `eigens`, `lmdif`.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/linalg: $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/linalg: $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -297,7 +304,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/linalg: $(DEPS_CEPHES_DOWNLOAD_OUT)/linalg.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for Fresnel integrals, polylogarithms, Planck radiation formula, Adams-Bashforth-Moulton and Runge-Kutta, solar system integration.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/misc: $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/misc: $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -307,7 +314,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/misc: $(DEPS_CEPHES_DOWNLOAD_OUT)/misc.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for Fresnel integrals, polylogarithms, Planck radiation formula, Adams-Bashforth-Moulton and Runge-Kutta, solar system integration.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/ode: $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/ode: $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -317,7 +324,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/ode: $(DEPS_CEPHES_DOWNLOAD_OUT)/ode.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for arithmetic on rationals and polynomials.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/polyn: $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/polyn: $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -327,7 +334,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/polyn: $(DEPS_CEPHES_DOWNLOAD_OUT)/polyn.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for 144- or 336-bit precision floating point arithmetic and functions.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/qfloat: $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/qfloat: $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -337,7 +344,7 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/qfloat: $(DEPS_CEPHES_DOWNLOAD_OUT)/qfloat.tgz
 #
 # This target extracts a gzipped tar archive of the netlib Cephes library for minimax rational approximation.
 
-$(DEPS_CEPHES_BUILD_OUT)/cephes/remes: $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz
+$(DEPS_CEPHES_BUILD_OUT)/cephes/remes: $(DEPS_CEPHES_DOWNLOAD_OUT)/remes.tgz $(DEPS_CEPHES_BUILD_OUT)/cephes/eval
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $< -C $@
@@ -368,9 +375,7 @@ $(DEPS_CEPHES_TEST_OUT):
 $(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT)
 	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) \
 		$(DEPS_CEPHES_TEST_INSTALL) \
-		$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/sindg.c \
-		$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/mtherr.c \
-		$(DEPS_CEPHES_BUILD_OUT)/cephes/cmath/polevl.c \
+		$(DEPS_CEPHES_SRC) \
 		-o $(DEPS_CEPHES_TEST_INSTALL_OUT)
 
 
