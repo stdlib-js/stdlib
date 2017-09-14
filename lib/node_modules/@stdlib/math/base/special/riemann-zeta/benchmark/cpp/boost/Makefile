@@ -50,7 +50,7 @@ else
 endif
 
 # List of C++ targets:
-cxx_targets := benchmark.boost.out
+cxx_targets := benchmark.out
 
 
 # TARGETS #
