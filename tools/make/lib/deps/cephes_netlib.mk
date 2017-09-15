@@ -36,7 +36,74 @@ DEPS_CEPHES_TEST_INSTALL ?= $(DEPS_CEPHES_TEST_DIR)/test_install.c
 DEPS_CEPHES_TEST_INSTALL_OUT ?= $(DEPS_CEPHES_TEST_OUT)/test_install
 
 # Define a list of source files:
-deps_cephes_src := bessel/airy.c bessel/hyp2f1.c bessel/hyperg.c bessel/i0.c bessel/i1.c bessel/iv.c bessel/j0.c bessel/j1.c bessel/jn.c bessel/jv.c bessel/k0.c bessel/k1.c bessel/kn.c bessel/psi.c bessel/struve.c bessel/yn.c cmath/acosh.c cmath/asin.c cmath/asinh.c cmath/atan.c cmath/atanh.c cmath/cbrt.c cmath/chbevl.c cmath/const.c cmath/cosh.c cmath/drand.c cmath/exp.c cmath/exp10.c cmath/exp2.c cmath/fabs.c cmath/floor.c cmath/isnan.c cmath/log.c cmath/log10.c cmath/log2.c cmath/mtherr.c cmath/polevl.c cmath/pow.c cmath/powi.c cmath/round.c cmath/setprec.c cmath/sin.c cmath/sincos.c cmath/sindg.c cmath/sinh.c cmath/sqrt.c cmath/tan.c cmath/tandg.c cmath/tanh.c cmath/unity.c cprob/bdtr.c cprob/btdtr.c cprob/chdtr.c cprob/expx2.c cprob/fdtr.c cprob/gamma.c cprob/gdtr.c cprob/igam.c cprob/igami.c cprob/incbet.c cprob/incbi.c cprob/kolmogorov.c cprob/nbdtr.c cprob/ndtr.c cprob/ndtri.c cprob/pdtr.c cprob/stdtr.c
+deps_cephes_src := \
+	bessel/airy.c \
+	bessel/hyp2f1.c \
+	bessel/hyperg.c \
+	bessel/i0.c \
+	bessel/i1.c \
+	bessel/iv.c \
+	bessel/j0.c \
+	bessel/j1.c \
+	bessel/jn.c \
+	bessel/jv.c \
+	bessel/k0.c \
+	bessel/k1.c \
+	bessel/kn.c \
+	bessel/psi.c \
+	bessel/struve.c \
+	bessel/yn.c \
+	cmath/acosh.c \
+	cmath/asin.c \
+	cmath/asinh.c \
+	cmath/atan.c \
+	cmath/atanh.c \
+	cmath/cbrt.c \
+	cmath/chbevl.c \
+	cmath/const.c \
+	cmath/cosh.c \
+	cmath/drand.c \
+	cmath/exp.c \
+	cmath/exp10.c \
+	cmath/exp2.c \
+	cmath/fabs.c \
+	cmath/floor.c \
+	cmath/isnan.c \
+	cmath/log.c \
+	cmath/log10.c \
+	cmath/log2.c \
+	cmath/mtherr.c \
+	cmath/polevl.c \
+	cmath/pow.c \
+	cmath/powi.c \
+	cmath/round.c \
+	cmath/setprec.c \
+	cmath/sin.c \
+	cmath/sincos.c \
+	cmath/sindg.c \
+	cmath/sinh.c \
+	cmath/sqrt.c \
+	cmath/tan.c \
+	cmath/tandg.c \
+	cmath/tanh.c \
+	cmath/unity.c \
+	cprob/bdtr.c \
+	cprob/btdtr.c \
+	cprob/chdtr.c \
+	cprob/expx2.c \
+	cprob/fdtr.c \
+	cprob/gamma.c \
+	cprob/gdtr.c \
+	cprob/igam.c \
+	cprob/igami.c \
+	cprob/incbet.c \
+	cprob/incbi.c \
+	cprob/kolmogorov.c \
+	cprob/nbdtr.c \
+	cprob/ndtr.c \
+	cprob/ndtri.c \
+	cprob/pdtr.c \
+	cprob/stdtr.c
 
 # Resolve a list of source files to absolute filepaths:
 DEPS_CEPHES_SRC ?= $(addprefix $(DEPS_CEPHES_BUILD_OUT)/cephes/,$(deps_cephes_src))
