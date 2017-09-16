@@ -6,8 +6,6 @@ var tape = require( 'tape' );
 var resolve = require( 'path' ).resolve;
 var proxyquire = require( 'proxyquire' );
 var noop = require( '@stdlib/utils/noop' );
-var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
-var isArray = require( '@stdlib/assert/is-array' );
 var create = require( './../lib/index.js' );
 
 
@@ -90,11 +88,17 @@ tape( 'if provided a callback argument which is not a function, the function thr
 });
 
 tape( 'the function returns an error to a provided callback if an error is encountered while searching a directory', function test( t ) {
-	var create = proxyquire( './../lib/index.js', {
-		'./../../../pkgs/find': findPkgs
+	var create;
+	var opts;
+
+	create = proxyquire( './../lib/index.js', {
+		'@stdlib/_tools/pkgs/find': findPkgs
 	});
 
-	create({ 'dir': dir }, clbk );
+	opts = {
+		'dir': dir
+	};
+	create( opts, clbk );
 
 	function findPkgs() {
 		var cb = arguments[ arguments.length-1 ];
@@ -111,11 +115,16 @@ tape( 'the function returns an error to a provided callback if an error is encou
 });
 
 tape( 'the function returns an error to a provided callback if none of the README.md files exist', function test( t ) {
-	var create = proxyquire( './../lib/index.js', {
+	var create;
+	var opts;
+
+	create = proxyquire( './../lib/index.js', {
 		'./get_existing.js': getExisting
 	});
-
-	create({ 'dir': dir }, clbk );
+	opts = {
+		'dir': dir
+	};
+	create( opts, clbk );
 
 	function getExisting() {
 		var cb = arguments[ arguments.length-1 ];
@@ -132,11 +141,16 @@ tape( 'the function returns an error to a provided callback if none of the READM
 });
 
 tape( 'the function returns an error to a provided callback if an error is encountered while reading the files', function test( t ) {
-	var create = proxyquire( './../lib/index.js', {
+	var create;
+	var opts;
+
+	create = proxyquire( './../lib/index.js', {
 		'@stdlib/fs/read-file-list': readFileList
 	});
-
-	create({ 'dir': dir }, clbk );
+	opts = {
+		'dir': dir
+	};
+	create( opts, clbk );
 
 	function readFileList() {
 		var cb = arguments[ arguments.length-1 ];

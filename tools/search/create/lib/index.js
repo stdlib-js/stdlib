@@ -7,7 +7,7 @@ var readFileList = require( '@stdlib/fs/read-file-list' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/utils/cwd' );
-var findPkgs = require( './../../../pkgs/find' );
+var findPkgs = require( '@stdlib/_tools/pkgs/find' );
 var createIndex = require( './create_index.js' );
 var getExisting = require( './get_existing.js' );
 var defaults = require( './defaults.json' );
@@ -58,7 +58,8 @@ function createSearchIndex() {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {StringArray} list of package paths
+	* @param {StringArray} pkgs - list of package paths
+	* @returns {void}
 	*/
 	function onPkgs( error, pkgs ) {
 		var i;
@@ -76,7 +77,8 @@ function createSearchIndex() {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {StringArray} list of existing README.md paths
+	* @param {StringArray} readmes - list of existing README.md paths
+	* @returns {void}
 	*/
 	function onReadmes( error, readmes ) {
 		if ( error ) {
@@ -92,7 +94,8 @@ function createSearchIndex() {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
-	* @param {ObjectArray} list of files
+	* @param {ObjectArray} files - list of files
+	* @returns {void}
 	*/
 	function onFiles( error, files ) {
 		var idxs;
@@ -108,6 +111,7 @@ function createSearchIndex() {
 			idxs[ i ] = createIndex( files[ i ] );
 		}
 		idx = idxs.reduce( combine );
+
 		// Note: we have to use `stringify` and `parse` here because of how lunr performs serialization. Specifically, in order to serialize an index, one must recursively call serialization methods (`*.toJSON()`) on nested data structures, which `JSON.stringify()` does automatically.
 		done( null, JSON.parse( JSON.stringify( idx ) ) );
 	} // end FUNCTION onFiles()
@@ -118,6 +122,7 @@ function createSearchIndex() {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Object} idx - serialized search index
+	* @returns {void}
 	*/
 	function done( error, idx ) {
 		if ( error ) {
