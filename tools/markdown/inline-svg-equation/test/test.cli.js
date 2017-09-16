@@ -122,7 +122,7 @@ tape( 'when invoked with a `-V` flag, the command-line interface prints the vers
 	}
 });
 
-tape( 'the function returns an HTML string for inlining an SVG equation in Markdown', opts, function test( t ) {
+tape( 'the command-line interface generates an HTML string for inlining an SVG equation in Markdown', opts, function test( t ) {
 	var expected;
 	var file;
 	var cmd;
