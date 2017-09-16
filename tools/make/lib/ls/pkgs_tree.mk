@@ -5,7 +5,7 @@
 PACKAGES_DIR ?= $(ROOT_DIR)/lib/node_modules
 
 # Define the path of the executable:
-LIST_PACKAGE_TREE ?= $(TOOLS_DIR)/pkgs/tree/bin/cli
+LIST_PACKAGE_TREE ?= $(TOOLS_PKGS_DIR)/pkgs/tree/bin/cli
 
 # Define the command flags:
 LIST_PACKAGE_TREE_FLAGS ?=

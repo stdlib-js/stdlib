@@ -4,7 +4,7 @@
 
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
-var pkgTree = require( './../../../../pkgs/tree' );
+var pkgTree = require( '@stdlib/_tools/pkgs/tree' );
 var toFragment = require( './../../tree-to-menu-fragment' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
