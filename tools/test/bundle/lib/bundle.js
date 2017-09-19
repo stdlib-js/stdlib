@@ -5,7 +5,7 @@
 var debug = require( 'debug' )( 'test:bundle' );
 var glob = require( 'glob' );
 var resolve = require( 'path' ).resolve;
-var bundle = require( '@stdlib/_tools/browserify/bundle' );
+var bundle = require( '@stdlib/_tools/browserify/file-list' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var cwd = require( '@stdlib/utils/cwd' );
