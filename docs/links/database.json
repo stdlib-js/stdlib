@@ -1351,6 +1351,17 @@
       "hypotenuse"
     ]
   },
+  "https://en.wikipedia.org/wiki/Ap%C3%A9ry%27s_constant": {
+    "id": "apery-constant",
+    "description": "Wikipedia entry for Apéry's constant.",
+    "short_url": "",
+    "keywords": [
+      "apery",
+      "riemann",
+      "zeta",
+      "constant"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Arcsine_distribution": {
     "id": "arcsine-distribution",
     "description": "Wikipedia entry for the arcsine distribution.",
