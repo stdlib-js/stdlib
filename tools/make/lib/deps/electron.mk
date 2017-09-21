@@ -46,6 +46,9 @@ deps_electron_prereqs := \
 	$(DEPS_ELECTRON_BUILD_OUT)/cli.js \
 	$(DEPS_ELECTRON_BUILD_OUT)/package.json
 
+# Define the node modules destination directory:
+deps_electron_dest := $(NODE_MODULES)/@stdlib/electron
+
 
 # TARGETS #
 
@@ -151,6 +154,8 @@ deps-test-electron: $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 # This target installs Electron.
 
 install-deps-electron: deps-download-electron deps-verify-electron deps-extract-electron deps-test-electron
+	$(QUIET) $(MKDIR_RECURSIVE) $(deps_electron_dest)
+	$(QUIET) $(CP) -rp $(DEPS_ELECTRON_BUILD_OUT)/* $(deps_electron_dest)
 
 .PHONY: install-deps-electron
 
@@ -161,6 +166,7 @@ install-deps-electron: deps-download-electron deps-verify-electron deps-extract-
 
 clean-deps-electron: clean-deps-electron-tests
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_ELECTRON_BUILD_OUT)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(deps_electron_dest)
 
 .PHONY: clean-deps-electron
 
