@@ -18,6 +18,7 @@ DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
 
 include $(TOOLS_MAKE_LIB_DIR)/deps/boost.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/cephes.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/wabt.mk
@@ -45,7 +46,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs vendor dependencies:
 
-install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt install-deps-cephes
+install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt install-deps-cephes install-deps-electron
 
 .PHONY: install-deps
 
@@ -73,7 +74,7 @@ clean-deps-build:
 #
 # This target removes vendor dependency installation tests.
 
-clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests clean-deps-wabt-tests clean-deps-cephes-tests
+clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests clean-deps-wabt-tests clean-deps-cephes-tests clean-deps-electron-tests
 
 .PHONY: clean-deps-tests
 
