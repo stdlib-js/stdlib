@@ -16,7 +16,7 @@ CODECOV_FLAGS ?= \
 	-f "$(LCOV_INFO)" \
 	-F $(CI_SERVICE) \
 	-F $(shell echo $(OS) | tr '[:upper:]' '[:lower:]') \
-	-F $(shell $(NODE) --version | tr '\.' '_' | (printf 'node_' && $(CAT))) \
+	-F $(shell (command -v $(NODE) >/dev/null 2>&1 && $(NODE) --version || echo '') | tr '\.' '_' | (printf 'node_' && $(CAT))) \
 	-X fix \
 	-Z
 
