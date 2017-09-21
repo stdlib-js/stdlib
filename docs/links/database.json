@@ -1577,6 +1577,17 @@
       "dirname"
     ]
   },
+  "https://en.wikipedia.org/wiki/E_%28mathematical_constant%29": {
+    "id": "eulers-number",
+    "description": "Wikipedia entry for the mathematical constant e.",
+    "short_url": "",
+    "keywords": [
+      "e",
+      "euler",
+      "napier",
+      "constant"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
     "id": "entropy",
     "description": "Wikipedia entry for the concept of entropy from information theory.",
