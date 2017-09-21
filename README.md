@@ -76,6 +76,7 @@ While **not** required to run stdlib, the following dependencies are **required*
 The following vendor libraries can be automatically downloaded and compiled from source using `make`:
 
 -   [OpenBLAS][openblas]: optimized BLAS library
+-   [Electron][electron]: framework for cross-platform desktop applications
 
 ## Installation
 
@@ -250,6 +251,8 @@ Copyright © 2016-2017. The Stdlib [Authors][stdlib-authors].
 [gfortran]: https://gcc.gnu.org/fortran/
 
 [openblas]: https://github.com/xianyi/OpenBLAS
+
+[electron]: https://electron.atom.io/
 
 [webassembly]: http://webassembly.org/
 

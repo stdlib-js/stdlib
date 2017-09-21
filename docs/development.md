@@ -46,6 +46,7 @@ The following vendor libraries can be automatically downloaded and compiled from
 -   [Boost][boost]: portable C++ libraries
 -   [Cephes][cephes]: C/C++ special functions math library
 -   [OpenBLAS][openblas]: optimized BLAS library
+-   [Electron][electron]: framework for cross-platform desktop applications
 -   [Emscripten][emscripten]: LLVM to JavaScript compiler
 -   [WebAssembly Binary Toolkit][wabt]: suite of tools for WebAssembly
 
@@ -332,6 +333,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [cephes]: http://www.moshier.net/#Cephes
 
 [openblas]: https://github.com/xianyi/OpenBLAS
+
+[electron]: https://electron.atom.io/
 
 [emscripten]: http://kripken.github.io/emscripten-site/index.html
 
