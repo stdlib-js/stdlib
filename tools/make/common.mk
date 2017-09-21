@@ -379,3 +379,12 @@ else
 	DEPS_CEPHES_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cephes
 endif
 endif
+
+# Define the Electron version:
+DEPS_ELECTRON_VERSION ?= 1.7.6
+
+# Generate a version slug:
+deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
+
+# Define the output path when building Electron:
+DEPS_ELECTRON_BUILD_OUT ?= $(DEPS_BUILD_DIR)/electron_$(deps_electron_version_slug)
