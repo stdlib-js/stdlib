@@ -13,12 +13,6 @@ DEPS_ELECTRON_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst 
 # Define the output path when downloading:
 DEPS_ELECTRON_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_electron_basename)
 
-# Define the path to the directory containing tests:
-DEPS_ELECTRON_TEST_DIR ?= $(DEPS_DIR)/test/electron
-
-# Define the path to a test file for checking an installation:
-DEPS_ELECTRON_TEST_INSTALL ?= $(DEPS_ELECTRON_TEST_DIR)/test_install.js
-
 
 # TARGETS #
 
@@ -73,9 +67,9 @@ deps-extract-electron: $(DEPS_ELECTRON_BUILD_OUT)
 #
 # This target tests an installation.
 
-deps-test-electron: $(DEPS_ELECTRON_TEST_INSTALL)
+deps-test-electron: $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 	$(QUIET) echo 'Running tests...' >&2
-	$(QUIET) $(NODE) $(DEPS_ELECTRON_TEST_INSTALL)
+	$(QUIET) $(NODE) $< --version >&2
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
