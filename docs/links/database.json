@@ -53,7 +53,7 @@
       "ide"
     ]
   },
-  "http://electron.atom.io/": {
+  "https://electron.atom.io/": {
     "id": "electron",
     "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
     "short_url": "",
