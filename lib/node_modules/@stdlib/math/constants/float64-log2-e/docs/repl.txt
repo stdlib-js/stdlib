@@ -1,0 +1,12 @@
+
+{{alias}}
+    Base 2 logarithm of Euler's number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.4426950408889634
+
+    See Also
+    --------
+
