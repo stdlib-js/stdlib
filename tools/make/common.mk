@@ -388,3 +388,9 @@ deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
 
 # Define the output path when building Electron:
 DEPS_ELECTRON_BUILD_OUT ?= $(DEPS_BUILD_DIR)/electron_$(deps_electron_version_slug)
+
+# Host architecture:
+DEPS_ELECTRON_ARCH := $(shell $(NODE) -e 'console.log( process.arch )' )
+
+# Host platform:
+DEPS_ELECTRON_PLATFORM := $(shell $(NODE) -e 'console.log( process.platform )' )
