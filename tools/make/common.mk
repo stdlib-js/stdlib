@@ -390,7 +390,7 @@ deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
 DEPS_ELECTRON_BUILD_OUT ?= $(DEPS_BUILD_DIR)/electron_$(deps_electron_version_slug)
 
 # Host architecture:
-DEPS_ELECTRON_ARCH := $(shell $(NODE) -e 'console.log( process.arch )' )
+DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE) -e 'console.log( process.arch )')
 
 # Host platform:
-DEPS_ELECTRON_PLATFORM := $(shell $(NODE) -e 'console.log( process.platform )' )
+DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE) -e 'console.log( process.platform )')
