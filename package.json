@@ -67,6 +67,7 @@
     "ajv": "^5.2.2",
     "browser-pack-flat": "^2.5.0",
     "browserify": "^14.0.0",
+    "bundle-collapser": "^1.3.0",
     "chai": "^3.5.0",
     "common-shakeify": "^0.2.0",
     "david": "^11.0.0",
@@ -165,6 +166,7 @@
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "to-vfile": "^2.0.0",
     "uglify-js": "^3.1.1",
+    "uglifyify": "^4.0.3",
     "unified-lint-rule": "^1.0.1",
     "unist-util-visit": "^1.1.0"
   },
