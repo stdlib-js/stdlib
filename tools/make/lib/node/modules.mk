@@ -19,7 +19,7 @@ install-node-modules: $(ROOT_PACKAGE_JSON)
 .PHONY: install-node-modules
 
 
-# Deduplicate node module dependencies.
+# De-duplicate node module dependencies.
 #
 # This target searches the local package tree and attempts to simplify the overall structure by moving dependencies further up the tree, where they can be more effectively shared by multiple dependent packages.
 
