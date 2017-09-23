@@ -1,10 +1,10 @@
 
 # VARIABLES #
 
-# Define the version bump type:
+# Define the version bump type (e.g., pre-patch, patch, pre-minor, minor, pre-major, major, pre-release):
 NPM_VERSION ?=
 
-# Define a commit message when incrementing the project version:
+# Define a git commit message when incrementing the project version:
 NPM_VERSION_MESSAGE ?=
 
 # Define command-line options when incrementing the project version:
@@ -42,8 +42,15 @@ endif
 # Run pre-version tasks.
 #
 # This target runs tasks which should be completed before incrementing the project version.
+#
+# TODO: once we have a `master` branch, swap `develop` for `master`
 
 npm-pre-version: dedupe-node-modules
+	$(QUIET) if [[ "$(shell $(GIT_BRANCH))" != "develop" ]]; then \
+		echo 'Error: invalid operation. New versions should only be performed on the `develop`'; \
+		echo 'branch.'; \
+		exit 1; \
+	fi
 
 .PHONY: npm-pre-version
 
@@ -135,7 +142,9 @@ npm-version: $(npm_version_prerequisite)
 
 npm-post-version:
 	$(QUIET) echo ''
-	$(QUIET) echo 'Incremented version and committed changes. If okay, run:'
+	$(QUIET) echo 'Incremented version and committed changes.'
+	$(QUIET) echo ''
+	$(QUIET) echo 'If okay to publish, run:'
 	$(QUIET) echo ''
 	$(QUIET) echo '  $$ make npm-publish'
 	$(QUIET) echo "  $$ git push origin $(shell $(GIT_BRANCH)) && git push origin --tags"
