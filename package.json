@@ -18,11 +18,9 @@
   "scripts": {
     "repl": "make repl",
     "test": "make test",
-    "test-local": "make test-local",
-    "test-ci": "make test-ci",
     "test-cov": "make test-cov",
-    "test-browsers": "make test-browsers",
-    "coverage": "make coverage"
+    "examples": "make examples",
+    "benchmark": "make benchmark"
   },
   "main": "./lib",
   "repository": {
