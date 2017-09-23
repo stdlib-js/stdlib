@@ -28,7 +28,7 @@ endif
 #
 # This target installs native add-ons. If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
 
-install-addons: clean-addons
+install-node-addons: clean-node-addons
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
@@ -41,14 +41,14 @@ install-addons: clean-addons
 		|| { echo "Error: failed to build add-on: $$pkg"; exit 0; } \
 	done
 
-.PHONY: install-addons
+.PHONY: install-node-addons
 
 
 # Remove add-ons.
 #
 # This target removes all compiled and generated files for native add-ons.
 
-clean-addons:
+clean-node-addons:
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
@@ -59,4 +59,4 @@ clean-addons:
 		cd $$pkg && $(NODE_GYP) clean || exit 1; \
 	done
 
-.PHONY: clean-addons
+.PHONY: clean-node-addons

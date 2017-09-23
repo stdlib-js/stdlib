@@ -5,6 +5,6 @@
 #
 # This target runs the project's install sequence.
 
-install: install-node install-addons
+install: install-node
 
 .PHONY: install
