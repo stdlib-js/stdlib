@@ -19,6 +19,16 @@ install-node-modules: $(ROOT_PACKAGE_JSON)
 .PHONY: install-node-modules
 
 
+# Deduplicate node module dependencies.
+#
+# This target searches the local package tree and attempts to simplify the overall structure by moving dependencies further up the tree, where they can be more effectively shared by multiple dependent packages.
+
+dedupe-node-modules: $(NODE_MODULES)
+	$(QUIET) $(NPM) dedupe
+
+.PHONY: dedupe-node-modules
+
+
 # Remove node module dependencies.
 #
 # This target cleans the `node_modules` directory by removing it entirely.
