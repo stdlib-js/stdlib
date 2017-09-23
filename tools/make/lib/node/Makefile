@@ -1,34 +1,25 @@
 
-# VARIABLES #
-
-# Define the path to the root `package.json`:
-ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
-
-
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/node/addons.mk
+include $(TOOLS_MAKE_LIB_DIR)/node/modules.mk
 
 
 # TARGETS #
 
-# Install node module dependencies.
+# Run Node install sequence.
 #
-# This target installs package dependencies by executing [`npm install`][1]. Packages will be installed in a local `node_modules` directory relative to the project's `package.json` file.
-#
-# [1]: https://docs.npmjs.com/cli/install
+# This target runs the Node install sequence, including installing node module dependencies and compiling native add-ons.
 
-install-node: $(ROOT_PACKAGE_JSON)
-	$(QUIET) $(NPM) install
+install-node: install-node-modules install-node-addons
 
 .PHONY: install-node
 
 
-# Remove node module dependencies.
+# Perform Node clean-up.
 #
-# This target cleans the `node_modules` directory by removing it entirely.
+# This target runs cleanup tasks specific to Node.js, such as removing node module dependencies and removing native add-ons.
 
-clean-node:
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(NODE_MODULES)
+clean-node: clean-node-addons clean-node-modules
 
 .PHONY: clean-node

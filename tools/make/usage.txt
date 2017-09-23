@@ -48,10 +48,12 @@ Usage: make <cmd>
   make check-licenses         Check package dependency licenses.
   make install                Run install sequence.
   make install-node           Run Node install sequence.
+  make install-node-modules   Install Node dependencies.
   make install-node-addons    Install Node add-ons.
   make install-deps           Install vendor dependencies.
   make clean                  Run all cleanup tasks.
-  make clean-node             Remove Node dependencies.
+  make clean-node             Run Node cleanup tasks.
+  make clean-node-modules     Remove Node dependencies.
   make clean-node-addons      Remove Node add-ons.
   make clean-deps             Remove vendor dependencies.
   make inspect.VARIABLE       Print the runtime value of a VARIABLE.

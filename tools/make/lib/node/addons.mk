@@ -28,7 +28,7 @@ endif
 #
 # This target installs native add-ons. If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
 
-install-node-addons: clean-node-addons
+install-node-addons: $(NODE_MODULES) clean-node-addons
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
