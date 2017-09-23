@@ -47,7 +47,7 @@ node_modules="${root_dir}/node_modules"
 # Define the directory path for build artifacts:
 build_dir="${root_dir}/build"
 
-# Define the directory path for vendor dependencies:
+# Define the directory path for external library dependencies:
 deps_dir="${root_dir}/deps"
 
 # Define the directory path for reports:

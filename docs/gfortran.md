@@ -58,7 +58,7 @@ The command options are as follows:
 Other possible options include:
 
 -   `-Wconversion-extra`: warn if source code contains implicit conversion between different types and kinds. Does not imply `-Wconversion`.
--   `-fexternal-blas`: generate calls to BLAS functions for some matrix operations, e.g., `MATMUL`, instead of using internal `gfortran` algorithms, if the size of the matrices involved is larger than a given limit (see `-fblas-matmul-limit`). This may be useful if an optimized vendor BLAS library is available. The BLAS library must be specified at link time.
+-   `-fexternal-blas`: generate calls to BLAS functions for some matrix operations, e.g., `MATMUL`, instead of using internal `gfortran` algorithms, if the size of the matrices involved is larger than a given limit (see `-fblas-matmul-limit`). This may be useful if an optimized BLAS library is available. The BLAS library must be specified at link time.
 -   `-fno-underscoring`: do not transform names of entities specified in Fortran source files by appending underscores. Be careful when using this option, as user-defined names may conflict with a name in a system library.
 -   `-fcheck=bounds`: enable generation of run-time checks for array subscripts and against the declared minimum and maximum values. Also, check array indices for assumed and deferred shape arrays against the actual allocated bounds and ensure that all string lengths are equal for character array constructors without an explicit typespec. Note that generated checks may have a performance cost.
 -   `-o <file>`: save output to a `file`.

@@ -41,7 +41,7 @@ Assuming the requisite language is present on the host machine, the following la
 -   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
 -   [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
 
-The following vendor libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
+The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
 -   [Boost][boost]: portable C++ libraries
 -   [Cephes][cephes]: C/C++ special functions math library
@@ -119,13 +119,13 @@ $ echo $NODE_PATH
 
 ## Installation
 
-To install vendor dependencies (**optional**),
+To install external libraries (**optional**),
 
 ```bash
 $ make install-deps
 ```
 
-While vendor dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numeric computation facilities. Note, however, that installing vendor dependencies may take considerable time (>30 minutes).
+While external library dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numeric computation facilities. Note, however, that installing external library dependencies may take considerable time (>30 minutes).
 
 To install language dependencies (**optional**),
 
@@ -190,7 +190,7 @@ The stdlib source code is organized as follows:
 
 ```text
 bin        executable binaries
-deps       vendor dependencies
+deps       external library dependencies
 docs       top-level documentation
 etc        configuration files
 examples   top-level library examples

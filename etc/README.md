@@ -6,7 +6,7 @@
 
 <section class="intro">
 
-This directory contains project configuration files for both internal and third-party (vendor) tooling.
+This directory contains project configuration files for both internal and third-party (external) tooling.
 
 </section>
 

@@ -50,11 +50,11 @@ Usage: make <cmd>
   make install-node           Run Node install sequence.
   make install-node-modules   Install Node dependencies.
   make install-node-addons    Install Node add-ons.
-  make install-deps           Install vendor dependencies.
+  make install-deps           Install external library dependencies.
   make clean                  Run all cleanup tasks.
   make clean-node             Run Node cleanup tasks.
   make clean-node-modules     Remove Node dependencies.
   make clean-node-addons      Remove Node add-ons.
-  make clean-deps             Remove vendor dependencies.
+  make clean-deps             Remove external library dependencies.
   make inspect.VARIABLE       Print the runtime value of a VARIABLE.
   make assert.VARIABLE        Assert that a VARIABLE is set.

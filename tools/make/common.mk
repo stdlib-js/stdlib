@@ -303,7 +303,7 @@ DEPS_OPENBLAS_NO_LAPACKE ?= 0
 # Attempt to resolve a BLAS directory:
 ifeq ($(BLAS), openblas)
 ifeq (, $(BLAS_DIR))
-	# Use the `wildcard` function to check for the OpenBLAS vendor dependency:
+	# Use the `wildcard` function to check for the OpenBLAS external library:
 	BLAS_DIR := $(wildcard $(DEPS_OPENBLAS_BUILD_OUT))
 endif
 endif

@@ -28,7 +28,7 @@ include $(TOOLS_MAKE_LIB_DIR)/deps/wabt.mk
 
 # Create directory for temporary files.
 #
-# This target creates a directory for storing vendor dependency downloads.
+# This target creates a directory for storing external library downloads.
 
 $(DEPS_TMP_DIR):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_TMP_DIR)
@@ -36,24 +36,24 @@ $(DEPS_TMP_DIR):
 
 # Create directory for dependency builds.
 #
-# This target creates a directory for storing vendor dependencies.
+# This target creates a directory for storing external libraries.
 
 $(DEPS_BUILD_DIR):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_BUILD_DIR)
 
 
-# Install vendor dependencies.
+# Install external libraries.
 #
-# This target installs vendor dependencies:
+# This target installs external library dependencies.
 
 install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt install-deps-cephes install-deps-electron
 
 .PHONY: install-deps
 
 
-# Clean vendor dependencies.
+# Clean external libraries.
 #
-# This target removes vendor dependencies.
+# This target removes external libraries.
 
 clean-deps: clean-deps-downloads clean-deps-build clean-deps-tests
 
@@ -62,7 +62,7 @@ clean-deps: clean-deps-downloads clean-deps-build clean-deps-tests
 
 # Clean builds.
 #
-# This target removes vendor dependency builds.
+# This target removes external library builds.
 
 clean-deps-build:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BUILD_DIR)
@@ -72,7 +72,7 @@ clean-deps-build:
 
 # Clean install tests.
 #
-# This target removes vendor dependency installation tests.
+# This target removes external library installation tests.
 
 clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-emsdk-tests clean-deps-wabt-tests clean-deps-cephes-tests clean-deps-electron-tests
 
@@ -81,7 +81,7 @@ clean-deps-tests: clean-deps-boost-tests clean-deps-openblas-tests clean-deps-em
 
 # Clean downloads.
 #
-# This target removes vendor dependency downloads.
+# This target removes external library downloads.
 
 clean-deps-downloads:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_TMP_DIR)

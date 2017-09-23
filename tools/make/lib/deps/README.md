@@ -1,12 +1,12 @@
 # deps
 
-> Vendor dependency recipes.
+> External library recipes.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for installing, removing, and managing the project's vendor dependencies.
+This directory contains [`make`][make] recipes for installing, removing, and managing the project's external library dependencies.
 
 </section>
 
