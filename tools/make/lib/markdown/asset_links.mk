@@ -5,14 +5,14 @@
 MARKDOWN_ASSET_PATH ?=
 
 # Get the current Git hash:
-GIT_COMMIT_HASH ?= $(shell $(GIT) rev-parse HEAD)
+RAWGIT_COMMIT_HASH ?= $(shell $(GIT_COMMIT_HASH))
 
 # Define the path to utility for generating asset links:
 RAWGIT_URL ?= $(TOOLS_PKGS_DIR)/utils/rawgit-url/bin/cli
 
 # Define command-line flags to be used when invoking the utility:
 RAWGIT_URL_FLAGS ?= \
-	--slug stdlib-js/stdlib/$(GIT_COMMIT_HASH)
+	--slug stdlib-js/stdlib/$(RAWGIT_COMMIT_HASH)
 
 
 # TARGETS #

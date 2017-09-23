@@ -124,6 +124,12 @@ GIT_ADD ?= $(GIT) add
 # Define the command for committing files:
 GIT_COMMIT ?= $(GIT) commit
 
+# Define the command for determining the current commit hash:
+GIT_COMMIT_HASH ?= $(GIT) rev-parse HEAD
+
+# Define the command for determining the current branch:
+GIT_BRANCH ?= $(GIT) rev-parse --abbrev-ref HEAD
+
 # Define the command for CMake:
 CMAKE ?= cmake
 
@@ -207,7 +213,7 @@ else
 endif
 
 
-# VENDOR DEPENDENCIES #
+# EXTERNAL DEPENDENCIES #
 
 # Define the BLAS library to use:
 BLAS ?=
