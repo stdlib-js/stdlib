@@ -21,6 +21,7 @@ stats_npm_tarball := $(stats_npm_tarball_build_out)/$(stats_npm_tarball_basename
 # This target generates an npm gzipped archive.
 
 $(stats_npm_tarball):
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(stats_npm_tarball_build_out)
 	$(QUIET) $(MKDIR_RECURSIVE) $(BUILD_DIR)/npm
 	$(QUIET) $(NPM) pack $(ROOT_DIR) >/dev/null
 	$(QUIET) mv $(ROOT_DIR)/$(stats_npm_tarball_basename) $@
@@ -32,6 +33,5 @@ $(stats_npm_tarball):
 
 stats-npm-tarball-size: $(stats_npm_tarball)
 	$(QUIET) wc -c $(stats_npm_tarball) | awk '{print $$1 OFS "B"}'
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(stats_npm_tarball_build_out)
 
 .PHONY: stats-npm-tarball-size
