@@ -16,11 +16,15 @@
     "stdlib": "./bin/cli"
   },
   "scripts": {
+    "lint": "make lint",
     "repl": "make repl",
     "test": "make test",
     "test-cov": "make test-cov",
     "examples": "make examples",
-    "benchmark": "make benchmark"
+    "benchmark": "make benchmark",
+    "clean": "make clean",
+    "preversion": "npm dedupe",
+    "version": "npm run build && git add -A dist"
   },
   "main": "./lib",
   "repository": {
