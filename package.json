@@ -22,9 +22,7 @@
     "test-cov": "make test-cov",
     "examples": "make examples",
     "benchmark": "make benchmark",
-    "clean": "make clean",
-    "preversion": "npm dedupe",
-    "version": "npm run build && git add -A dist"
+    "clean": "make clean"
   },
   "main": "./lib",
   "repository": {
