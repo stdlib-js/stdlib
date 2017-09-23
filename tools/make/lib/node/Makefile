@@ -5,6 +5,11 @@
 ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 
 
+# DEPENDENCIES #
+
+include $(TOOLS_MAKE_LIB_DIR)/node/addons.mk
+
+
 # TARGETS #
 
 # Install node module dependencies.

@@ -6,7 +6,7 @@
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for managing [Node.js][node-js] environments, including `node_modules` dependencies.
+This directory contains [`make`][make] recipes for managing [Node.js][node-js] environments, including `node_modules` dependencies and Node.js native [add-ons][node-js-add-ons].
 
 </section>
 
@@ -27,6 +27,8 @@ This directory contains [`make`][make] recipes for managing [Node.js][node-js] e
 [make]: https://www.gnu.org/software/make/
 
 [node-js]: https://nodejs.org/en/
+
+[node-js-add-ons]: https://nodejs.org/api/addons.html
 
 </section>
 

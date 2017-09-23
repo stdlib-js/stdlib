@@ -55,7 +55,6 @@ include $(TOOLS_MAKE_LIB_DIR)/help/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/init/Makefile
 
 # Please keep sorted in alphabetical order:
-include $(TOOLS_MAKE_LIB_DIR)/addons/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/benchmark/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/bib/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/complexity/Makefile
