@@ -43,7 +43,7 @@ NPM_TARBALL_BUILD_OUT := $(BUILD_DIR)/npm
 npm_tarball_basename := "stdlib-stdlib-$(shell $(CURRENT_PROJECT_VERSION)).tgz"
 
 # Specify the output npm gzipped archive:
-npm_tarball := $(NPM_TARBALL_BUILD_OUT)/$(npm_tarball_basename)
+NPM_TARBALL ?= $(NPM_TARBALL_BUILD_OUT)/$(npm_tarball_basename)
 
 
 # TARGETS #
@@ -52,7 +52,7 @@ npm_tarball := $(NPM_TARBALL_BUILD_OUT)/$(npm_tarball_basename)
 #
 # This target generates an npm gzipped archive.
 
-$(npm_tarball):
+$(NPM_TARBALL):
 	$(QUIET) $(MKDIR_RECURSIVE) $(NPM_TARBALL_BUILD_OUT)
 	$(QUIET) $(NPM_PACK) $(ROOT_DIR) >/dev/null
 	$(QUIET) mv $(ROOT_DIR)/$(npm_tarball_basename) $@
@@ -62,7 +62,7 @@ $(npm_tarball):
 #
 # This target generates an npm gzipped archive.
 
-npm-tarball: $(npm_tarball)
+npm-tarball: $(NPM_TARBALL)
 
 .PHONY: npm-tarball
 
