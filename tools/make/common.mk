@@ -147,6 +147,9 @@ NODE ?= node
 # Define the command for `npm`:
 NPM ?= npm
 
+# Define the command for generating an npm gzipped archive:
+NPM_PACK ?= npm pack
+
 # Define the command for `julia`:
 JULIA ?= julia
 
@@ -158,6 +161,9 @@ R ?= r
 
 # Define the command for running R script files:
 RSCRIPT ?= Rscript
+
+# Define the command for getting the current project version:
+CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).version )"
 
 
 # COMPILERS #

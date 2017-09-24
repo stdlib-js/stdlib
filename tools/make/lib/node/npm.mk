@@ -36,8 +36,36 @@ ifeq ($(NPM_VERSION), pre-release)
 	npm_version_prerequisite := npm-version-pre-release
 endif
 
+# Specify the output build directory when generating an npm gzipped archive:
+NPM_TARBALL_BUILD_OUT := $(BUILD_DIR)/npm
+
+# Specify the gzipped archive basename:
+npm_tarball_basename := "stdlib-stdlib-$(shell $(CURRENT_PROJECT_VERSION)).tgz"
+
+# Specify the output npm gzipped archive:
+npm_tarball := $(NPM_TARBALL_BUILD_OUT)/$(npm_tarball_basename)
+
 
 # TARGETS #
+
+# Generate an npm tarball.
+#
+# This target generates an npm gzipped archive.
+
+$(npm_tarball):
+	$(QUIET) $(MKDIR_RECURSIVE) $(NPM_TARBALL_BUILD_OUT)
+	$(QUIET) $(NPM_PACK) $(ROOT_DIR) >/dev/null
+	$(QUIET) mv $(ROOT_DIR)/$(npm_tarball_basename) $@
+
+
+# Generate an npm tarball.
+#
+# This target generates an npm gzipped archive.
+
+npm-tarball: $(npm_tarball)
+
+.PHONY: npm-tarball
+
 
 # Run pre-version tasks.
 #
@@ -144,6 +172,8 @@ npm-post-version:
 	$(QUIET) echo ''
 	$(QUIET) echo 'Incremented version and committed changes.'
 	$(QUIET) echo ''
+	$(QUIET) echo "Tarball size: $(shell $(MAKE) -f $(this_file) stats-npm-tarball-size)"
+	$(QUIET) echo ''
 	$(QUIET) echo 'If okay to publish, run:'
 	$(QUIET) echo ''
 	$(QUIET) echo '  $$ make npm-publish'
@@ -151,3 +181,13 @@ npm-post-version:
 	$(QUIET) echo ''
 
 .PHONY: npm-post-version
+
+
+# Remove npm tarball(s).
+#
+# This target removes npm gzipped archives.
+
+clean-npm-tarball:
+	$(QUIET) -rm -f $(NPM_TARBALL_BUILD_OUT)/*.tgz
+
+.PHONY: clean-npm-tarball
