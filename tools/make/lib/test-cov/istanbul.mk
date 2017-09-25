@@ -41,6 +41,7 @@ ISTANBUL_EXCLUDES_FLAGS ?= \
 	-x 'reports/**' \
 	-x 'tmp/**' \
 	-x 'deps/**' \
+	-x 'dist/**' \
 	-x "**/$(SRC_FOLDER)/**" \
 	-x "**/$(TESTS_FOLDER)/**" \
 	-x "**/$(EXAMPLES_FOLDER)/**" \
