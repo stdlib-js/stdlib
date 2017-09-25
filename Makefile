@@ -102,6 +102,9 @@ BUILD_FOLDER ?= build
 # Define the folder name convention for distributable files:
 DIST_FOLDER ?= dist
 
+# Define the folder name convention for scripts:
+SCRIPTS_FOLDER ?= scripts
+
 # Define the folder name convention for temporary files:
 TMP_FOLDER ?= tmp
 
