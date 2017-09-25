@@ -32,6 +32,7 @@ If no recognized module system is present, access bundle contents via the global
 
 ```html
 <script type="text/javascript">
+    // `stdlib` is a global variable...
     var erf = stdlib.erf;
     console.log( erf( 0.5 ) );
 </script>
@@ -47,7 +48,7 @@ If no recognized module system is present, access bundle contents via the global
 
 ## Notes
 
--   Bundles are one of two namespace types: `flat` or `tree`. A `tree` namespace is a nested object namespace which mirrors the project's layout (e.g., `stdlib.math.base.special.erf`. A `flat` namespace uses the global project namespace, where each project package has a unique alias (e.g., `stdlib.base.erf`). Which namespace is preferred depends on personal taste and application context. 
+-   Bundles are one of two namespace types: `flat` or `tree`. A `tree` namespace is a nested object namespace which mirrors the project's layout (e.g., `stdlib.math.base.special.erf`. A `flat` namespace uses the global alias namespace, where each package has a unique alias (e.g., `stdlib.base.erf`). Which namespace is preferred depends on personal taste and application context. 
 
 </section>
 
