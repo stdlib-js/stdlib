@@ -22,7 +22,9 @@
     "test-cov": "make test-cov",
     "examples": "make examples",
     "benchmark": "make benchmark",
-    "clean": "make clean"
+    "clean": "make clean",
+    "check-deps": "make check-deps",
+    "check-licenses": "make check-licenses"
   },
   "main": "./lib",
   "repository": {
