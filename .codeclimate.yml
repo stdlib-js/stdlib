@@ -155,3 +155,4 @@ exclude_paths:
   - "node_modules/**/*"
   - "reports/**/*"
   - "build/**/*"
+  - "dist/**/*"
