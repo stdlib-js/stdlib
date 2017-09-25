@@ -31,6 +31,9 @@ TOOLS_MAKE_LIB_DIR ?= $(TOOLS_MAKE_DIR)/lib
 # Define the root build directory:
 BUILD_DIR ?= $(ROOT_DIR)/build
 
+# Define the root directory for storing distributable files:
+DIST_DIR ?= $(ROOT_DIR)/dist
+
 # Define the root directory for storing temporary files:
 TMP_DIR ?= $(ROOT_DIR)/tmp
 
@@ -95,6 +98,9 @@ CONFIG_FOLDER ?= etc
 
 # Define the folder name convention for build artifacts:
 BUILD_FOLDER ?= build
+
+# Define the folder name convention for distributable files:
+DIST_FOLDER ?= dist
 
 # Define the folder name convention for temporary files:
 TMP_FOLDER ?= tmp
