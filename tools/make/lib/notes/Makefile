@@ -24,6 +24,7 @@ notes:
 	$(QUIET) $(FIND_NOTES) $(FIND_NOTES_FLAGS) $(KEYWORDS) $(FIND_NOTES_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
 		--exclude-dir "$(BUILD_DIR)/*" \
+		--exclude-dir "$(DIST_DIR)/*" \
 		--exclude-dir "$(REPORTS_DIR)/*" \
 		--exclude-dir "$(DEPS_TMP_DIR)/*" \
 		--exclude-dir "$(DEPS_BUILD_DIR)/*" \
