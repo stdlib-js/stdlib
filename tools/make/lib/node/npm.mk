@@ -16,24 +16,32 @@ endif
 # Define the version upgrade prerequisite...
 ifeq ($(NPM_VERSION), pre-patch)
 	npm_version_prerequisite := npm-version-pre-patch
-endif
+else
 ifeq ($(NPM_VERSION), patch)
 	npm_version_prerequisite := npm-version-patch
-endif
+else
 ifeq ($(NPM_VERSION), pre-minor)
 	npm_version_prerequisite := npm-version-pre-minor
-endif
+else
 ifeq ($(NPM_VERSION), minor)
 	npm_version_prerequisite := npm-version-minor
-endif
+else
 ifeq ($(NPM_VERSION), pre-major)
 	npm_version_prerequisite := npm-version-pre-major
-endif
+else
 ifeq ($(NPM_VERSION), major)
 	npm_version_prerequisite := npm-version-major
-endif
+else
 ifeq ($(NPM_VERSION), pre-release)
 	npm_version_prerequisite := npm-version-pre-release
+else
+	npm_version_prerequisite :=
+endif
+endif
+endif
+endif
+endif
+endif
 endif
 
 # Specify the output build directory when generating an npm gzipped archive:
