@@ -53,22 +53,6 @@
       "ide"
     ]
   },
-  "https://electron.atom.io/": {
-    "id": "electron",
-    "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
-    "short_url": "",
-    "keywords": [
-      "electron",
-      "atom",
-      "github",
-      "css",
-      "javascript",
-      "ecmascript",
-      "html",
-      "desktop",
-      "application"
-    ]
-  },
   "http://en.wikipedia.org/wiki/Anagram": {
     "id": "anagram",
     "description": "Wikipedia entry for anagrams.",
@@ -1303,6 +1287,22 @@
       "prng",
       "distribution",
       "dist"
+    ]
+  },
+  "https://electron.atom.io/": {
+    "id": "electron",
+    "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
+    "short_url": "",
+    "keywords": [
+      "electron",
+      "atom",
+      "github",
+      "css",
+      "javascript",
+      "ecmascript",
+      "html",
+      "desktop",
+      "application"
     ]
   },
   "https://en.wikipedia.org/wiki/ASCII": {
@@ -2832,6 +2832,16 @@
       "nodejs",
       "node.js",
       "node-js"
+    ]
+  },
+  "https://github.com/umdjs/umd": {
+    "id": "umd",
+    "description": "GitHub repository which formalizes the design and implementation of the Universal Module Definition (UMD) API for JavaScript modules.",
+    "short_url": "",
+    "keywords": [
+      "umd",
+      "modules",
+      "javascript"
     ]
   },
   "https://github.com/wooorm/remark": {
