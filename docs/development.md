@@ -191,6 +191,7 @@ The stdlib source code is organized as follows:
 ```text
 bin        executable binaries
 deps       external library dependencies
+dist       distributable files
 docs       top-level documentation
 etc        configuration files
 examples   top-level library examples
