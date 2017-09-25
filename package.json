@@ -16,10 +16,12 @@
     "stdlib": "./bin/cli"
   },
   "scripts": {
+    "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
     "test": "make test",
     "test-cov": "make test-cov",
+    "view-cov": "make view-cov",
     "examples": "make examples",
     "benchmark": "make benchmark",
     "clean": "make clean",
