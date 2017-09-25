@@ -135,10 +135,13 @@ engines:
 # [1]: https://docs.codeclimate.com/docs/ratings
 ratings:
   paths:
-    - "lib/**"
-    - "test/**"
-    - "examples/**"
-    - "tools/**"
+    - "lib/**/*"
+    - "test/**/*"
+    - "examples/**/*"
+    - "benchmark/**/*"
+    - "bin/**/*"
+    - "tools/**/*"
+    - "scripts/**/*"
     - "**.sh"
     - "**.js"
     - "**.css"
@@ -152,7 +155,10 @@ ratings:
 #
 # [1]: https://docs.codeclimate.com/docs/excluding-files-and-folders
 exclude_paths:
-  - "node_modules/**/*"
-  - "reports/**/*"
-  - "build/**/*"
-  - "dist/**/*"
+  - "node_modules/"
+  - "reports/"
+  - "build/"
+  - "**/build/"
+  - "dist/"
+  - "tmp/"
+  - "**/tmp/"
