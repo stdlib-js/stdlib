@@ -15,27 +15,27 @@ endif
 
 # Define the version upgrade prerequisite...
 ifeq ($(NPM_VERSION), pre-patch)
-	npm_version_prerequisite := npm-version-pre-patch
+	npm_version_target := npm-version-pre-patch
 else
 ifeq ($(NPM_VERSION), patch)
-	npm_version_prerequisite := npm-version-patch
+	npm_version_target := npm-version-patch
 else
 ifeq ($(NPM_VERSION), pre-minor)
-	npm_version_prerequisite := npm-version-pre-minor
+	npm_version_target := npm-version-pre-minor
 else
 ifeq ($(NPM_VERSION), minor)
-	npm_version_prerequisite := npm-version-minor
+	npm_version_target := npm-version-minor
 else
 ifeq ($(NPM_VERSION), pre-major)
-	npm_version_prerequisite := npm-version-pre-major
+	npm_version_target := npm-version-pre-major
 else
 ifeq ($(NPM_VERSION), major)
-	npm_version_prerequisite := npm-version-major
+	npm_version_target := npm-version-major
 else
 ifeq ($(NPM_VERSION), pre-release)
-	npm_version_prerequisite := npm-version-pre-release
+	npm_version_target := npm-version-pre-release
 else
-	npm_version_prerequisite :=
+	npm_version_target :=
 endif
 endif
 endif
@@ -165,9 +165,11 @@ npm-version-pre-release: npm-pre-version
 #
 # This target runs tasks which should be completed when incrementing the project version and committing version changes to the local repository.
 
-npm-version: $(npm_version_prerequisite)
-	$(QUIET) echo 'TODO: run build'
-	$(QUIET) $(GIT_ADD) -A dist
+npm-version: dist-browser-bundles
+	$(QUIET) $(GIT_ADD) -A dist && \
+		$(GIT_COMMIT) -m 'Update distributable browser bundles' && \
+		$(MAKE) -f $(this_file) $(npm_version_target) && \
+		$(MAKE) -f $(this_file) npm-post-version
 
 .PHONY: npm-version
 
