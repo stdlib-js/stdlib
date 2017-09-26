@@ -1852,6 +1852,17 @@
       "gumbel"
     ]
   },
+  "https://en.wikipedia.org/wiki/Gzip": {
+    "id": "gzip",
+    "description": "Wikipedia entry for gzip, a file format and a software application used for file compression and decompression.",
+    "short_url": "",
+    "keywords": [
+      "gzip",
+      "compression",
+      "file",
+      "format"
+    ]
+  },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
     "id": "ieee754",
     "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
