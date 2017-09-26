@@ -9,7 +9,7 @@ var exec = require( 'child_process' ).execSync;
 // VARIABLES //
 
 // Regular expression to extract a repository slug:
-var RE = /(?:.+github\.com\/)(.+)\.(?:.+)/;
+var RE = /(?:.+github\.com)(?:\/|:)(.+)\.(?:.+)/;
 
 
 // MAIN //
