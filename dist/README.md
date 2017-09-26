@@ -22,13 +22,13 @@ This directory contains distributable files for use in browser environments. Eac
 <script type="text/javascript" src="/path/to/<bundle>.js"></script>
 ```
 
-For example, to include the main un-minified bundle exposing a flat namespace
+where `<bundle>` corresponds to the desired bundle. For example, to include the main un-minified bundle exposing a flat namespace
 
 ```html
 <script type="text/javascript" src="/path/to/stdlib-flat.js"></script>
 ```
 
-If no recognized module system is present, access bundle contents via the global scope. For example, assuming a flat namespace bundle,
+If no recognized module system is present, access bundle contents via the global scope. For example, assuming the flat namespace bundle sourced above,
 
 ```html
 <script type="text/javascript">
@@ -48,7 +48,7 @@ If no recognized module system is present, access bundle contents via the global
 
 ## Notes
 
--   Bundles are one of two namespace types: `flat` or `tree`. A `tree` namespace is a nested object namespace which mirrors the project's layout (e.g., `stdlib.math.base.special.erf`. A `flat` namespace uses the global alias namespace, where each package has a unique alias (e.g., `stdlib.base.erf`). Which namespace is preferred depends on personal taste and application context.
+-   Bundles are one of two namespace types: `flat` or `tree`. A `tree` namespace is a nested object namespace which mirrors the project's layout (e.g., `stdlib.math.base.special.erf`. A `flat` namespace uses the global alias [namespace][@stdlib/namespace], where each package has a unique alias (e.g., `stdlib.base.erf`). Which namespace is preferred depends on personal taste and application context.
 -   Each minified bundle has a corresponding [gzip][gzip]-compressed bundle. The [gzip][gzip] compression level for each compressed bundle is `9`, which is the highest (and most optimal) compression level. Deciding between uncompressed and compressed bundles depends on the application and whether compression is handled elsewhere in the application stack (e.g., [nginx][nginx], [CDN][cdn], _et cetera_).
 
 </section>
@@ -66,6 +66,8 @@ If no recognized module system is present, access bundle contents via the global
 [nginx]: http://nginx.org/en/docs/
 
 [cdn]: https://en.wikipedia.org/wiki/Content_delivery_network
+
+[@stdlib/namespace]: https://github.com/stdlib-js/stdlib
 
 </section>
 
