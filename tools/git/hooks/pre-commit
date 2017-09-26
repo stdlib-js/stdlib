@@ -99,7 +99,7 @@ run_lint() {
 	fi
 
 	# Lint JavaScript source files...
-	files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e 'examples' -e 'test' -e 'benchmark' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e 'examples' -e 'test' -e 'benchmark' -e '^dist/' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
