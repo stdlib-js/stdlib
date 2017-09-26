@@ -162,6 +162,16 @@
       "user"
     ]
   },
+  "http://nginx.org/en/docs/": {
+    "id": "nginx",
+    "description": "Official documentation for nginx, an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server.",
+    "short_url": "",
+    "keywords": [
+      "nginx",
+      "server",
+      "proxy"
+    ]
+  },
   "http://nodejs.org/api/buffer.html": {
     "id": "node-buffer",
     "description": "Node.js documentation for the Buffer class.",
