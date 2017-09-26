@@ -23,6 +23,7 @@ FIND_BENCHMARKS_FLAGS ?= \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(TOOLS_PKGS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(DIST_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \
 	-not -path "$(REPORTS_DIR)/*"
 
