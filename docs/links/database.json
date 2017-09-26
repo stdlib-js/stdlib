@@ -1804,7 +1804,9 @@
     "short_url": "",
     "keywords": [
       "math",
-      "special"
+      "special",
+      "fresnel",
+      "integral"
     ]
   },
   "https://en.wikipedia.org/wiki/Function_composition_%28computer_science%29": {
