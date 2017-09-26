@@ -18,6 +18,11 @@ DIST_BROWSER_BUNDLES_FLAGS ?=
 # This target generates distributable browser bundles.
 
 dist-browser-bundles: $(NODE_MODULES)
+	$(QUIET) echo 'Generating distributable browser bundles...'
 	$(QUIET) $(DIST_BROWSER_BUNDLES) $(DIST_BROWSER_BUNDLES_FLAGS)
+	$(QUIET) for file in $(DIST_DIR)/*.min.js; do \
+		echo "Compressing file: $$file"; \
+		$(GZIP) "$$file" -9 -c > "$$file".gz; \
+	done
 
 .PHONY: dist-browser-bundles
