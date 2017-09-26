@@ -106,6 +106,9 @@ TAR ?= tar
 # Define the command for extracting files compressed in a ZIP archive:
 UNZIP ?= unzip
 
+# Define the command for compressing and decompressing files using Lempel-Ziv coding (LZ77):
+GZIP ?= gzip
+
 # Define the command to `cat` a file:
 CAT ?= cat
 
