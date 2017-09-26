@@ -43,7 +43,7 @@ tmp/
 
 # Packages #
 ############
-# it's better to unpack these files and commit the raw source
+# It is better to unpack these files and commit the raw source
 # git has its own built in compression methods
 *.7z
 *.dmg
@@ -53,6 +53,9 @@ tmp/
 *.rar
 *.tar
 *.zip
+
+# Make an exception for compressed distributable files:
+!dist/*.gz
 
 # Logs and databases #
 ######################
