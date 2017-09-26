@@ -1538,6 +1538,15 @@
       "fcn"
     ]
   },
+  "https://en.wikipedia.org/wiki/Content_delivery_network": {
+    "id": "cdn",
+    "description": "Wikipedia entry for content delivery network (CDN), a geographically distributed network of proxy servers and their data centers.",
+    "short_url": "",
+    "keywords": [
+      "cdn",
+      "content delivery network"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
