@@ -166,7 +166,8 @@ npm-version-pre-release: npm-pre-version
 # This target runs tasks which should be completed when incrementing the project version and committing version changes to the local repository.
 
 npm-version: dist-browser-bundles
-	$(QUIET) $(GIT_ADD) -A dist && \
+	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-installed-logical-tree-json > $(DIST_DIR)/npm_ls.json && \
+		$(GIT_ADD) -A dist && \
 		$(GIT_COMMIT) -m 'Update distributable browser bundles' && \
 		$(MAKE) -f $(this_file) $(npm_version_target) && \
 		$(MAKE) -f $(this_file) npm-post-version
