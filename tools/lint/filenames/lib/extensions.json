@@ -13,6 +13,7 @@
 	".go",
 	".gyp",
 	".gypi",
+	".gz",
 	".h",
 	".hpp",
 	".html",
