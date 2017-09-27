@@ -3138,6 +3138,17 @@
       "mac"
     ]
   },
+  "https://unpkg.com/#/": {
+    "id": "unpkg",
+    "description": "A fast, global content delivery network for everything on npm.",
+    "short_url": "",
+    "keywords": [
+      "npm",
+      "distributable",
+      "dist",
+      "cdn"
+    ]
+  },
   "https://www.apache.org/licenses/LICENSE-2.0": {
     "id": "apache-license",
     "description": "Apache License Version 2.0.",
