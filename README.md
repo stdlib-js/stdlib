@@ -69,7 +69,7 @@ Most functionality in stdlib is implemented exclusively in JavaScript; however, 
 -   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 
-While **not** required to run stdlib, the following dependencies are **required** for automatically downloading vendor libraries:
+While **not** required to run stdlib, the following dependencies are **required** for automatically downloading external libraries:
 
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 
