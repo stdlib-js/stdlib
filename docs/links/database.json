@@ -1798,6 +1798,17 @@
       "frechet"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fresnel_integral": {
+    "id": "fresnel-integral",
+    "description": "Wikipedia entry for Fresnel integral.",
+    "short_url": "",
+    "keywords": [
+      "math",
+      "special",
+      "fresnel",
+      "integral"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Function_composition_%28computer_science%29": {
     "id": "function-composition",
     "description": "Wikipedia entry for function composition.",
