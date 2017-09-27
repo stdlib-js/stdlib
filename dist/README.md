@@ -51,7 +51,6 @@ If no recognized module system is present, access bundle contents via the global
 -   Bundles are one of two namespace types: `flat` or `tree`. A `tree` namespace is a nested object namespace which mirrors the project's layout (e.g., `stdlib.math.base.special.erf`. A `flat` namespace uses the global alias [namespace][@stdlib/namespace], where each package has a unique alias (e.g., `stdlib.base.erf`). Which namespace is preferred depends on personal taste and application context.
 -   Each minified bundle has a corresponding [gzip][gzip]-compressed bundle. The [gzip][gzip] compression level for each compressed bundle is `9`, which is the highest (and most optimal) compression level. Deciding between uncompressed and compressed bundles depends on the application and whether compression is handled elsewhere in the application stack (e.g., [nginx][nginx], [CDN][cdn], _et cetera_).
 
-
 ### Bundles
 
 #### Main
@@ -77,9 +76,17 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 <!-- <bundle-stats files="stdlib-flat.js,stdlib-flat.min.js,stdlib-flat.min.js.gz"> -->
 
+| stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
+| -------------- | ------------------ | --------------------- |
+| 5.415MB        | 920.08kB           | 237.048kB             |
+
 <!-- </bundle-stats> -->
 
 <!-- <bundle-stats files="stdlib-tree.js,stdlib-tree.min.js,stdlib-tree.min.js.gz"> -->
+
+| stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
+| -------------- | ------------------ | --------------------- |
+| 5.434MB        | 932.472kB          | 237.692kB             |
 
 <!-- </bundle-stats> -->
 
@@ -99,6 +106,10 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 ##### Bundle Statistics
 
 <!-- <bundle-stats files="stdlib-datasets-tree.min.js,stdlib-datasets-tree.min.js.gz"> -->
+
+| stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
+| --------------------------- | ------------------------------ |
+| 51.52MB                     | 15.727MB                       |
 
 <!-- </bundle-stats> -->
 
@@ -123,6 +134,10 @@ The REPL bundle, `stdlib-repl`, contains all packages exposed via the project RE
 ##### Bundle Statistics
 
 <!-- <bundle-stats files="stdlib-repl.min.js,stdlib-repl.min.js.gz"> -->
+
+| stdlib-repl.min.js | stdlib-repl.min.js.gz |
+| ------------------ | --------------------- |
+| 57.859MB           | 16.633MB              |
 
 <!-- </bundle-stats> -->
 
