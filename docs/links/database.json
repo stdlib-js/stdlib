@@ -1566,6 +1566,19 @@
       "chi"
     ]
   },
+  "https://en.wikipedia.org/wiki/Cis_%28mathematics%29": {
+    "id": "cis",
+    "description": "Wikipedia entry for cis function.",
+    "short_url": "",
+    "keywords": [
+      "cis",
+      "complex",
+      "exponential",
+      "math",
+      "phasor",
+      "special"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Code_point": {
     "id": "code-point",
     "description": "Wikipedia entry for a code point, a term from character encoding to refer to a numerical value in code space.",
