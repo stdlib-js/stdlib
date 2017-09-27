@@ -10,6 +10,12 @@ DIST_BROWSER_BUNDLES ?= $(NODE) \
 # Define the command-line options to be used when executing the command:
 DIST_BROWSER_BUNDLES_FLAGS ?=
 
+# Define the command for updating distributable browser bundle stats in the dist README:
+UPDATE_DIST_README_BROWSER_BUNDLE_STATS ?= $(NODE) $(TOOLS_PKGS_DIR)/bundle/scripts/update_dist_readme_browser_bundle_stats
+
+# Define the command-line options to be used when executing the command:
+UPDATE_DIST_README_BROWSER_BUNDLE_STATS_FLAGS ?=
+
 
 # TARGETS #
 
@@ -26,3 +32,13 @@ dist-browser-bundles: $(NODE_MODULES)
 	done
 
 .PHONY: dist-browser-bundles
+
+
+# Update browser bundle stats.
+#
+# This target updates a README file documenting distributable browser bundles to include the most recent bundle statistics.
+
+update-dist-readme-browser-bundle-stats:
+	$(QUIET) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS_FLAGS)
+
+.PHONY: update-dist-readme-browser-bundle-stats
