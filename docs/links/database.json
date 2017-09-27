@@ -302,6 +302,16 @@
       "binary"
     ]
   },
+  "http://wiki.commonjs.org/wiki/CommonJS": {
+    "id": "commonjs",
+    "description": "Wiki for the CommonJS specification and working group.",
+    "short_url": "",
+    "keywords": [
+      "commonjs",
+      "modules",
+      "javascript"
+    ]
+  },
   "http://www.2ality.com/2013/05/quirk-array-like-objects.html": {
     "id": "array-like",
     "description": "Blog post by Dr. Axel Rauschmeyer on array-like objects in JavaScript.",
