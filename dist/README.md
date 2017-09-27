@@ -73,9 +73,9 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 </script>
 ```
 
-<div id="main-bundle">
+<!-- <bundle-stats files="stdlib-flat.js,stdlib-tree.js,stdlib-flat.min.js,stdlib-flat.min.js.gz"> -->
 
-</div>
+<!-- </bundle-stats> -->
 
 #### Datasets
 
@@ -90,9 +90,9 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 </script>
 ```
 
-<div id="datasets-bundle">
+<!-- <bundle-stats files="stdlib-datasets-tree.min.js,stdlib-datasets-tree.min.js.gz"> -->
 
-</div>
+<!-- </bundle-stats> -->
 
 #### REPL
 
@@ -112,9 +112,9 @@ The REPL bundle, `stdlib-repl`, contains all packages exposed via the project RE
 </script>
 ```
 
-<div id="repl-bundle">
+<!-- <bundle-stats files="stdlib-repl.min.js,stdlib-repl.min.js.gz"> -->
 
-</div>
+<!-- </bundle-stats> -->
 
 </section>
 
