@@ -73,7 +73,7 @@ While **not** required to run stdlib, the following dependencies are **required*
 
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 
-The following vendor libraries can be automatically downloaded and compiled from source using `make`:
+The following external libraries can be automatically downloaded and compiled from source using `make`:
 
 -   [OpenBLAS][openblas]: optimized BLAS library
 -   [Electron][electron]: framework for cross-platform desktop applications
