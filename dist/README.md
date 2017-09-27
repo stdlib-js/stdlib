@@ -49,7 +49,16 @@ If no recognized module system is present, access bundle contents via the global
 ## Notes
 
 -   Bundles are one of two namespace types: `flat` or `tree`. A `tree` namespace is a nested object namespace which mirrors the project's layout (e.g., `stdlib.math.base.special.erf`. A `flat` namespace uses the global alias [namespace][@stdlib/namespace], where each package has a unique alias (e.g., `stdlib.base.erf`). Which namespace is preferred depends on personal taste and application context.
+
 -   Each minified bundle has a corresponding [gzip][gzip]-compressed bundle. The [gzip][gzip] compression level for each compressed bundle is `9`, which is the highest (and most optimal) compression level. Deciding between uncompressed and compressed bundles depends on the application and whether compression is handled elsewhere in the application stack (e.g., [nginx][nginx], [CDN][cdn], _et cetera_).
+
+-   While you are **strongly** encouraged to **vendor** bundles and host with a [CDN][cdn]/provider which can provide availability **guarantees**, especially for production applications, bundles are available via [unpkg][unpkg] for quick demos, proof-of-concepts, and instructional material. For example,
+
+    ```html
+    <script type="text/javascript" src="https://unpkg.com/@stdlib/stdlib/dist/stdlib-repl.min.js"></script>
+    ```
+
+    Please be mindful that [unpkg][unpkg] is a free, best-effort service relying on donated infrastructure which does **not** provide **any** availability guarantees. Under **no** circumstances should you **abuse** or **misuse** the service. You have been **warned**.
 
 ### Bundles
 
@@ -156,6 +165,8 @@ The REPL bundle, `stdlib-repl`, contains all packages exposed via the project RE
 [nginx]: http://nginx.org/en/docs/
 
 [cdn]: https://en.wikipedia.org/wiki/Content_delivery_network
+
+[unpkg]: https://unpkg.com/#/
 
 [@stdlib/namespace]: https://github.com/stdlib-js/stdlib
 
