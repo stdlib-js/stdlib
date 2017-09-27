@@ -32,5 +32,16 @@
     "node": ">=0.10.0",
     "npm": ">2.7.0"
   },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "license": "Apache-2.0"
 }
