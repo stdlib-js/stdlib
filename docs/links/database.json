@@ -312,6 +312,16 @@
       "javascript"
     ]
   },
+  "http://wiki.commonjs.org/wiki/Packages/1.0": {
+    "id": "commonjs-package-format",
+    "description": "A specification which describes the CommonJS package format, including package.json, for distributing CommonJS programs and libraries.",
+    "short_url": "",
+    "keywords": [
+      "commonjs",
+      "package",
+      "package.json"
+    ]
+  },
   "http://www.2ality.com/2013/05/quirk-array-like-objects.html": {
     "id": "array-like",
     "description": "Blog post by Dr. Axel Rauschmeyer on array-like objects in JavaScript.",
