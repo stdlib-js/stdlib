@@ -3,7 +3,7 @@
 
 // MODULES //
 
-var join = require( 'path' ).join;
+var resolve = require( 'path' ).resolve;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var CLI = require( '@stdlib/tools/cli' );
 var foo = require( './../lib' );
@@ -23,8 +23,8 @@ function main() {
 	// Create a command-line interface:
 	cli = new CLI({
 		'pkg': require( './../package.json' ),
-		'options': require( './opts.json' ),
-		'help': readFileSync( join( __dirname, 'usage.txt' ), {
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
 			'encoding': 'utf8'
 		})
 	});
