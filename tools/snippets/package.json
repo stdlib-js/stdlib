@@ -13,6 +13,12 @@
     }
   ],
   "main": "./lib",
+  "directories": {
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
   "scripts": {},
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
