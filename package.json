@@ -2,6 +2,7 @@
   "name": "@stdlib/stdlib",
   "version": "0.0.24",
   "description": "Standard library.",
+  "license": "Apache-2.0 AND BSL-1.0",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -15,6 +16,7 @@
   "bin": {
     "stdlib": "./bin/cli"
   },
+  "main": "./lib",
   "scripts": {
     "notes": "make notes",
     "lint": "make lint",
@@ -28,23 +30,11 @@
     "check-deps": "make check-deps",
     "check-licenses": "make check-licenses"
   },
-  "main": "./lib",
+  "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"
   },
-  "homepage": "https://github.com/stdlib-js/stdlib",
-  "keywords": [
-    "stdlib",
-    "stdlib-js",
-    "stdlib.js",
-    "js-stdlib",
-    "stdlibjs",
-    "standard",
-    "std",
-    "library",
-    "lib"
-  ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
@@ -190,5 +180,15 @@
     "win32",
     "windows"
   ],
-  "license": "Apache-2.0 AND BSL-1.0"
+  "keywords": [
+    "stdlib",
+    "stdlib-js",
+    "stdlib.js",
+    "js-stdlib",
+    "stdlibjs",
+    "standard",
+    "std",
+    "library",
+    "lib"
+  ]
 }
