@@ -2,6 +2,7 @@
   "name": "{{TODO:name}}",
   "version": "0.0.0",
   "description": "{{TODO:description}}",
+  "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
@@ -46,7 +47,6 @@
     "win32",
     "windows"
   ],
-  "license": "Apache-2.0",
   "keywords": [
     "stdlib",
     "{{TODO:keywords}}"
