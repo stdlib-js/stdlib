@@ -50,5 +50,6 @@
   "keywords": [
     "stdlib",
     "{{TODO:keywords}}"
-  ]
+  ],
+  "__stdlib__": {}
 }
