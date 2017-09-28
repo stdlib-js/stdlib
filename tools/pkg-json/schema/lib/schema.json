@@ -85,6 +85,23 @@
 				"url"
 			]
 		},
+		"license-object": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"type": "string",
+					"pattern": "[a-zA-Z0-9 _\\-\\.]+"
+				},
+				"url": {
+					"$ref": "#/definitions/uri-http"
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"type",
+				"url"
+			]
+		},
 		"keyword": {
 			"type": "string",
 			"pattern": "^[a-z0-9](?:[_\\.\\- ]?[a-z0-9]+)*$"
@@ -263,6 +280,15 @@
 			"description": "package license",
 			"type": "string",
 			"minLength": 1
+		},
+		"licenses": {
+			"description": "package licenses",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/license-object"
+			},
+			"uniqueItems": true,
+			"minItems": 1
 		},
 		"keywords": {
 			"description": "package keywords",

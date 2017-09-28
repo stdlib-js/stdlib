@@ -543,6 +543,42 @@ tape( 'the function returns `false` if provided a package JSON having an invalid
 	t.end();
 });
 
+tape( 'the function returns `false` if provided a package JSON having an invalid `licenses` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_licenses1.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if provided a package JSON having an invalid `licenses` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_licenses2.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if provided a package JSON having an invalid `licenses` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_licenses3.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
 tape( 'the function returns `false` if provided a package JSON having an invalid `main` field', function test( t ) {
 	var bool;
 	var pkg;

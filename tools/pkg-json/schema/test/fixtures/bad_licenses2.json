@@ -70,7 +70,7 @@
   "license": "Apache-2.0",
   "licenses": [
     {
-      "type": "Apache-2.0",
+      "type": 1234,
       "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
   ]
