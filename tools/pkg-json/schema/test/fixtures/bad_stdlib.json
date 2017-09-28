@@ -75,11 +75,5 @@
       "url": "https://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "__stdlib__": {
-    "stability": "stable",
-    "envs": {
-      "node": true,
-      "browser": true
-    }
-  }
+  "__stdlib__": "foo"
 }

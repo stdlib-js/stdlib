@@ -76,10 +76,9 @@
     }
   ],
   "__stdlib__": {
-    "stability": "stable",
     "envs": {
-      "node": true,
-      "browser": true
+      "node": 1234,
+      "browser": 5678
     }
   }
 }

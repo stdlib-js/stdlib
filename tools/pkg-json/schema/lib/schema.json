@@ -148,6 +148,20 @@
 			"type": "string",
 			"minLength": 1
 		},
+		"license": {
+			"description": "package license",
+			"type": "string",
+			"minLength": 1
+		},
+		"licenses": {
+			"description": "package licenses",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/license-object"
+			},
+			"uniqueItems": true,
+			"minItems": 1
+		},
 		"author": {
 			"description": "package author",
 			"$ref": "#/definitions/person"
@@ -279,20 +293,6 @@
 			},
 			"uniqueItems": true
 		},
-		"license": {
-			"description": "package license",
-			"type": "string",
-			"minLength": 1
-		},
-		"licenses": {
-			"description": "package licenses",
-			"type": "array",
-			"items": {
-				"$ref": "#/definitions/license-object"
-			},
-			"uniqueItems": true,
-			"minItems": 1
-		},
 		"keywords": {
 			"description": "package keywords",
 			"type": "array",
@@ -300,6 +300,29 @@
 				"$ref": "#/definitions/keyword"
 			},
 			"uniqueItems": true
+		},
+		"__stdlib__": {
+			"description": "project meta data",
+			"type": "object",
+			"properties": {
+				"stability": {
+					"description": "package stability",
+					"type": "string"
+				},
+				"envs": {
+					"description": "supported environments",
+					"type": "object",
+					"properties": {
+						"node": {
+							"type": "boolean"
+						},
+						"browser": {
+							"type": "boolean"
+						}
+					}
+				}
+			},
+			"required": []
 		}
 	},
 	"required": [

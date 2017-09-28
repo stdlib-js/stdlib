@@ -759,6 +759,42 @@ tape( 'the function returns `false` if provided a package JSON having an invalid
 	t.end();
 });
 
+tape( 'the function returns `false` if provided a package JSON having an invalid `__stdlib__` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_stdlib.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if provided a package JSON having an invalid `__stdlib__` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_stdlib_stability.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if provided a package JSON having an invalid `__stdlib__` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_stdlib_envs.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
 tape( 'the function returns `false` if provided a package JSON having an invalid `version` field', function test( t ) {
 	var bool;
 	var pkg;
