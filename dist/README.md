@@ -95,7 +95,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.437 MB       | 928.328 kB         | 235.76 kB             |
+| 5.373 MB       | 908.61 kB          | 229 kB                |
 
 <!-- </bundle-stats> -->
 
