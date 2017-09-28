@@ -21,5 +21,6 @@
 	"os",
 	"license",
 	"licenses",
-	"keywords"
+	"keywords",
+	"__stdlib__"
 ]
