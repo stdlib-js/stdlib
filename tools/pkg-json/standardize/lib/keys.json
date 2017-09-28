@@ -2,6 +2,8 @@
 	"name",
 	"version",
 	"description",
+	"license",
+	"licenses",
 	"author",
 	"maintainers",
 	"contributors",
@@ -19,8 +21,6 @@
 	"devDependencies",
 	"engines",
 	"os",
-	"license",
-	"licenses",
 	"keywords",
 	"__stdlib__"
 ]
