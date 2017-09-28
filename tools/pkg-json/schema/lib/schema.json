@@ -197,6 +197,9 @@
 			"description": "package directories",
 			"type": "object",
 			"properties": {
+				"benchmark": {
+					"$ref": "#/definitions/path"
+				},
 				"bin": {
 					"$ref": "#/definitions/path"
 				},
