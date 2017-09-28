@@ -87,7 +87,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.354 MB       | 896.212 kB         | 228.395 kB            |
+| 5.343 MB       | 896.223 kB         | 228.396 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -95,7 +95,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.373 MB       | 908.61 kB          | 229 kB                |
+| 5.362 MB       | 908.621 kB         | 229.002 kB            |
 
 <!-- </bundle-stats> -->
 
