@@ -231,7 +231,7 @@ $ make list-pkgs-names
 To list all package names under a `@stdlib` descendant directory,
 
 ```bash
-$ make PACKAGES_DIR=./@stdlib/math/base list-pkgs-names
+$ make SRC_DIR=./@stdlib/math/base list-pkgs-names
 ```
 
 * * *

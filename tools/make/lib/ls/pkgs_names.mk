@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the root directory from which to search for packages:
-PACKAGES_DIR ?= $(ROOT_DIR)/lib/node_modules
-
 # Define the path of the executable:
 LIST_PACKAGE_NAMES ?= $(TOOLS_PKGS_DIR)/pkgs/names/bin/cli
 
@@ -18,6 +15,6 @@ LIST_PACKAGE_NAMES_FLAGS ?=
 # This target prints a list of all package names.
 
 list-pkgs-names: $(LIST_PACKAGE_NAMES) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(LIST_PACKAGE_NAMES) $(LIST_PACKAGE_NAMES_FLAGS) $(PACKAGES_DIR)
+	$(QUIET) $(NODE) $(LIST_PACKAGE_NAMES) $(LIST_PACKAGE_NAMES_FLAGS) $(SRC_DIR)
 
 .PHONY: list-pkgs-names

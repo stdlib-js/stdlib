@@ -75,7 +75,7 @@ function plugin( dir, cwd ) {
 	opts.cwd = dir;
 
 	args = [];
-	args.push( 'PACKAGES_DIR='+cwd );
+	args.push( 'SRC_DIR='+cwd );
 
 	// Target:
 	args.push( 'list-pkgs-names' );

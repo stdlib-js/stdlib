@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the root directory from which to search for packages:
-PACKAGES_DIR ?= $(ROOT_DIR)/lib/node_modules
-
 # Define the path of the executable:
 LIST_PACKAGE_CLIS ?= $(TOOLS_PKGS_DIR)/pkgs/clis/bin/cli
 
@@ -18,6 +15,6 @@ LIST_PACKAGE_CLIS_FLAGS ?=
 # This target prints a list of all package command-line interfaces.
 
 list-pkgs-clis: $(LIST_PACKAGE_CLIS) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(LIST_PACKAGE_CLIS) $(LIST_PACKAGE_CLIS_FLAGS) $(PACKAGES_DIR)
+	$(QUIET) $(NODE) $(LIST_PACKAGE_CLIS) $(LIST_PACKAGE_CLIS_FLAGS) $(SRC_DIR)
 
 .PHONY: list-pkgs-clis
