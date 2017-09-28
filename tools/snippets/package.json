@@ -12,17 +12,13 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
-  "scripts": {},
   "main": "./lib",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"
   },
-  "homepage": "https://github.com/stdlib-js/stdlib",
-  "keywords": [
-    "stdlib",
-    "{{TODO:keywords}}"
-  ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
@@ -43,5 +39,9 @@
     "win32",
     "windows"
   ],
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "keywords": [
+    "stdlib",
+    "{{TODO:keywords}}"
+  ]
 }
