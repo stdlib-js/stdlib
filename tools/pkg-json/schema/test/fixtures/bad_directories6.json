@@ -7,12 +7,6 @@
     "email": "beep@boop.com",
     "url": "https://beep.boop.com"
   },
-  "maintainers": [
-    {
-      "name": "Beep Boop",
-      "email": "beep@boop.com"
-    }
-  ],
   "contributors": [
     {
       "name": "Beep Boop",
@@ -26,15 +20,8 @@
     "test": "make test"
   },
   "main": "./lib",
-  "gypfile": true,
   "directories": {
-    "bin": "./bin",
-    "doc": "./doc",
-    "example": "./examples",
-    "lib": "./lib",
-    "man": "./doc/man",
-    "src": "./src",
-    "test": "./test"
+    "src": ""
   },
   "repository": {
     "type": "git",
@@ -56,10 +43,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "os": [
-    "darwin",
-    "linux",
-    "win32"
-  ],
   "license": "Apache-2.0"
 }

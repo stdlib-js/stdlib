@@ -152,6 +152,35 @@
 			"description": "boolean instructing npm that a package is a binary addon that needs compiling and that npm should invoke node-gyp",
 			"type": "boolean"
 		},
+		"directories": {
+			"description": "package directories",
+			"type": "object",
+			"properties": {
+				"bin": {
+					"$ref": "#/definitions/path"
+				},
+				"doc": {
+					"$ref": "#/definitions/path"
+				},
+				"example": {
+					"$ref": "#/definitions/path"
+				},
+				"lib": {
+					"$ref": "#/definitions/path"
+				},
+				"man": {
+					"$ref": "#/definitions/path"
+				},
+				"src": {
+					"$ref": "#/definitions/path"
+				},
+				"test": {
+					"$ref": "#/definitions/path"
+				}
+			},
+			"additionalProperties": false,
+			"required": []
+		},
 		"scripts": {
 			"description": "package scripts",
 			"$ref": "#/definitions/string-map"
