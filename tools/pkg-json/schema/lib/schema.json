@@ -65,6 +65,20 @@
 			"type": "string",
 			"pattern": "^[a-z0-9](?:[_\\.\\- ]?[a-z0-9]+)*$"
 		},
+		"operating-system": {
+			"type": "string",
+			"enum": [
+				"aix",
+				"darwin",
+				"freebsd",
+				"linux",
+				"macos",
+				"openbsd",
+				"sunos",
+				"win32",
+				"windows"
+			]
+		},
 		"dependency-map": {
 			"$ref": "#/definitions/string-map"
 		},
@@ -194,6 +208,14 @@
 		"engines": {
 			"description": "supported engines",
 			"$ref": "#/definitions/string-map"
+		},
+		"os": {
+			"description": "supported operating systems",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/operating-system"
+			},
+			"uniqueItems": true
 		},
 		"license": {
 			"description": "package license",

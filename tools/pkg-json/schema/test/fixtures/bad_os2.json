@@ -7,12 +7,6 @@
     "email": "beep@boop.com",
     "url": "https://beep.boop.com"
   },
-  "maintainers": [
-    {
-      "name": "Beep Boop",
-      "email": "beep@boop.com"
-    }
-  ],
   "contributors": [
     {
       "name": "Beep Boop",
@@ -26,14 +20,14 @@
     "test": "make test"
   },
   "main": "./lib",
-  "gypfile": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"
   },
   "homepage": "https://github.com/stdlib-js/stdlib",
   "keywords": [
-    "stdlib"
+    "beep",
+    "boop"
   ],
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
@@ -48,9 +42,8 @@
     "node": ">=0.10.0"
   },
   "os": [
-    "darwin",
     "linux",
-    "win32"
+    "linux"
   ],
   "license": "Apache-2.0"
 }
