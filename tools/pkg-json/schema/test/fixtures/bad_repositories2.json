@@ -7,12 +7,6 @@
     "email": "beep@boop.com",
     "url": "https://beep.boop.com"
   },
-  "maintainers": [
-    {
-      "name": "Beep Boop",
-      "email": "beep@boop.com"
-    }
-  ],
   "contributors": [
     {
       "name": "Beep Boop",
@@ -26,16 +20,6 @@
     "test": "make test"
   },
   "main": "./lib",
-  "gypfile": true,
-  "directories": {
-    "bin": "./bin",
-    "doc": "./doc",
-    "example": "./examples",
-    "lib": "./lib",
-    "man": "./doc/man",
-    "src": "./src",
-    "test": "./test"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"
@@ -43,7 +27,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "git://github.com/stdlib-js/stdlib.git"
+      "url": "ftp://github.com/stdlib-js/stdlib.git"
     }
   ],
   "homepage": "https://github.com/stdlib-js/stdlib",
@@ -62,10 +46,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "os": [
-    "darwin",
-    "linux",
-    "win32"
-  ],
   "license": "Apache-2.0"
 }

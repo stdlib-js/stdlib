@@ -61,6 +61,30 @@
 			"type": "string",
 			"pattern": "^git:\/\/"
 		},
+		"repo-object": {
+			"type": "object",
+			"properties": {
+				"type": {
+					"type": "string",
+					"pattern": "[a-zA-Z]"
+				},
+				"url": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/uri-http"
+						},
+						{
+							"$ref": "#/definitions/uri-git"
+						}
+					]
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"type",
+				"url"
+			]
+		},
 		"keyword": {
 			"type": "string",
 			"pattern": "^[a-z0-9](?:[_\\.\\- ]?[a-z0-9]+)*$"
@@ -191,27 +215,16 @@
 		},
 		"repository": {
 			"description": "package repository",
-			"properties": {
-				"type": {
-					"type": "string",
-					"pattern": "[a-zA-Z]"
-				},
-				"url": {
-					"oneOf": [
-						{
-							"$ref": "#/definitions/uri-http"
-						},
-						{
-							"$ref": "#/definitions/uri-git"
-						}
-					]
-				}
+			"$ref": "#/definitions/repo-object"
+		},
+		"repositories": {
+			"description": "package repositories",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/repo-object"
 			},
-			"additionalProperties": false,
-			"required": [
-				"type",
-				"url"
-			]
+			"uniqueItems": true,
+			"minItems": 1
 		},
 		"bugs": {
 			"description": "bug reporting",

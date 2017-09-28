@@ -663,6 +663,42 @@ tape( 'the function returns `false` if provided a package JSON having an invalid
 	t.end();
 });
 
+tape( 'the function returns `false` if provided a package JSON having an invalid `repositories` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_repositories1.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if provided a package JSON having an invalid `repositories` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_repositories2.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
+tape( 'the function returns `false` if provided a package JSON having an invalid `repositories` field', function test( t ) {
+	var bool;
+	var pkg;
+
+	pkg = require( './fixtures/bad_repositories3.json' );
+
+	bool = validate( pkg );
+	t.strictEqual( bool, false, 'returns false' );
+
+	t.end();
+});
+
 tape( 'the function returns `false` if provided a package JSON having an invalid `scripts` field', function test( t ) {
 	var bool;
 	var pkg;
