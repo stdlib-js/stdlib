@@ -64,7 +64,7 @@ If no recognized module system is present, access bundle contents via the global
 
 #### Main
 
-The main bundles, `stdlib-flat` and `stdlib-tree`, contain all packages except for
+The main bundles, `stdlib-flat` and `stdlib-tree`, contain all **browser compatible** packages except for
 
 -   [`@stdlib/repl`][@stdlib/repl]: REPL environment.
 -   [`@stdlib/namespace`][@stdlib/namespace]: global alias namespace.
@@ -124,7 +124,7 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 
 #### REPL
 
-The REPL bundle, `stdlib-repl`, contains all packages exposed via the project REPL and exposes a single `function` which attaches exports to a provided context.
+The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exposed via the project REPL and exposes a single `function` which attaches exports to a provided context.
 
 ```html
 <script type="text/javascript" src="/path/to/stdlib-repl.min.js"></script>
