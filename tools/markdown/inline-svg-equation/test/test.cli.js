@@ -20,7 +20,7 @@ var opts = {
 
 // FIXTURES //
 
-var PKG_VERSION = require('./../package.json' ).version;
+var PKG_VERSION = require( './../package.json' ).version;
 
 
 // TESTS //
