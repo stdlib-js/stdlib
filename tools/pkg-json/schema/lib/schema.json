@@ -10,7 +10,7 @@
 			"pattern": "^\\d+\\.\\d+\\.\\d+"
 		},
 		"person": {
-			"description": "author or contributor",
+			"description": "author, contributor, or maintainer",
 			"oneOf": [
 				{
 					"$ref": "#/definitions/person-object"
@@ -97,6 +97,15 @@
 			"description": "package author",
 			"$ref": "#/definitions/person"
 		},
+		"maintainers": {
+			"description": "package maintainers",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/person"
+			},
+			"uniqueItems": true,
+			"minItems": 1
+		},
 		"contributors": {
 			"description": "package contributors",
 			"type": "array",
@@ -109,14 +118,6 @@
 		"bin": {
 			"description": "package executables",
 			"$ref": "#/definitions/path-map"
-		},
-		"scripts": {
-			"description": "package scripts",
-			"$ref": "#/definitions/string-map"
-		},
-		"gypfile": {
-			"description": "boolean instructing npm that a package is a binary addon that needs compiling and that npm should invoke node-gyp",
-			"type": "boolean"
 		},
 		"main": {
 			"description": "main package entry point",
@@ -132,6 +133,18 @@
 					"$ref": "#/definitions/path-map"
 				}
 			]
+		},
+		"gypfile": {
+			"description": "boolean instructing npm that a package is a binary addon that needs compiling and that npm should invoke node-gyp",
+			"type": "boolean"
+		},
+		"scripts": {
+			"description": "package scripts",
+			"$ref": "#/definitions/string-map"
+		},
+		"homepage": {
+			"description": "package homepage",
+			"$ref": "#/definitions/uri-http"
 		},
 		"repository": {
 			"description": "package repository",
@@ -156,18 +169,6 @@
 				"type",
 				"url"
 			]
-		},
-		"homepage": {
-			"description": "package homepage",
-			"$ref": "#/definitions/uri-http"
-		},
-		"keywords": {
-			"description": "package keywords",
-			"type": "array",
-			"items": {
-				"$ref": "#/definitions/keyword"
-			},
-			"uniqueItems": true
 		},
 		"bugs": {
 			"description": "bug reporting",
@@ -198,6 +199,14 @@
 			"description": "package license",
 			"type": "string",
 			"minLength": 1
+		},
+		"keywords": {
+			"description": "package keywords",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/keyword"
+			},
+			"uniqueItems": true
 		}
 	},
 	"required": [
@@ -206,15 +215,15 @@
 		"description",
 		"author",
 		"contributors",
-		"scripts",
 		"main",
-		"repository",
+		"scripts",
 		"homepage",
-		"keywords",
+		"repository",
 		"bugs",
 		"dependencies",
 		"devDependencies",
 		"engines",
-		"license"
+		"license",
+		"keywords"
 	]
 }

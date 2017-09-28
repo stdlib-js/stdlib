@@ -10,7 +10,7 @@
   "maintainers": [
     {
       "name": "Beep Boop",
-      "email": "beep@boop.com"
+      "email": "boop.com"
     }
   ],
   "contributors": [
@@ -26,7 +26,6 @@
     "test": "make test"
   },
   "main": "./lib",
-  "gypfile": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"

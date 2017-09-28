@@ -11,6 +11,10 @@
     {
       "name": "Beep Boop",
       "email": "beep@boop.com"
+    },
+    {
+      "name": "Beep Boop",
+      "email": "beep@boop.com"
     }
   ],
   "contributors": [
@@ -26,7 +30,6 @@
     "test": "make test"
   },
   "main": "./lib",
-  "gypfile": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/stdlib.git"
