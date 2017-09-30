@@ -38,11 +38,11 @@ sampleWithReplacement,math/random/sample
 sample,math/random/sample
 BayesianClassifer,(planned)
 PerceptronModel,(planned)
-bernoulliDistribution,math/base/dist/bernoulli
-binomial,math/base/dist/binomial
-poisson,math/base/dist/poisson
-chiSquaredDistributionTable,math/base/dist/chisquare
-standardNormalTable,math/base/dist/normal
+bernoulliDistribution,math/base/dists/bernoulli
+binomial,math/base/dists/binomial
+poisson,math/base/dists/poisson
+chiSquaredDistributionTable,math/base/dists/chisquare
+standardNormalTable,math/base/dists/normal
 tTest,math/statistics/ttest
 tTestTwoSample,math/statistics/ttest2
 cumulativeStdNormalProbability,N/A
