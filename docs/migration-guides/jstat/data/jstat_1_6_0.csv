@@ -255,9 +255,9 @@ cubic_spline,(planned)
 gauss_quadrature,(planned)
 PCA,(planned)
 zscore,(planned)
-ztest,math/statistics/ztest
+ztest,math/stats/ztest
 tscore,(planned)
-ttest,math/statistics/ttest
+ttest,math/stats/ttest
 anovafscore,(planned)
 anovaftest,(planned)
 ftest,(planned)
