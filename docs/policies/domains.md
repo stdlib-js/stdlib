@@ -14,6 +14,7 @@ List of active domains:
 
 List of **currently** unused domains:
 
+-   [stdlibjs.com](http://stdlibjs.com)
 -   [stdlib.co](http://stdlib.co)
 -   [stdlibjs.co](http://stdlibjs.co)
 -   [stdlib.fun](http://stdlib.fun)
@@ -23,6 +24,8 @@ List of **currently** unused domains:
 -   [stdlib.party](http://stdlib.party)
 -   [stdlibjs.party](http://stdlibjs.party)
 -   [stdlib.studio](http://stdlib.studio)
+-   [stdlibjs.studio](http://stdlibjs.studio)
+-   [stdlibjs.xyz](http://stdlibjs.xyz)
 -   [stdlibjs.org](http://stdlibjs.org)
 
 ## Former
