@@ -1616,6 +1616,18 @@
       "dirname"
     ]
   },
+  "https://en.wikipedia.org/wiki/Discrete_uniform_distribution": {
+    "id": "discrete-uniform-distribution",
+    "description": "Wikipedia entry for the discrete uniform distribution.",
+    "short_url": "",
+    "keywords": [
+      "discrete",
+      "uniform",
+      "distribution",
+      "dist",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/E_%28mathematical_constant%29": {
     "id": "eulers-number",
     "description": "Wikipedia entry for the mathematical constant e.",
