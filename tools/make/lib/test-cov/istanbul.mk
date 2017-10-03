@@ -53,8 +53,7 @@ ISTANBUL_EXCLUDES_FLAGS ?= \
 ISTANBUL_RSYNC_EXCLUDES_FLAGS ?= \
 	--ignore-existing \
 	--exclude "$(EXAMPLES_FOLDER)/" \
-	--exclude "$(BENCHMARKS_FOLDER)/" \
-	--exclude "$(DOCUMENTATION_FOLDER)/"
+	--exclude "$(BENCHMARKS_FOLDER)/"
 
 # Define the command to instrument source code for code coverage:
 ISTANBUL_INSTRUMENT ?= $(ISTANBUL) instrument
