@@ -1381,6 +1381,16 @@
       "hypotenuse"
     ]
   },
+  "https://en.wikipedia.org/wiki/Anscombe%27s_quartet": {
+    "id": "anscombes-quartet",
+    "description": "Wikipedia entry for Anscombe's quartet.",
+    "short_url": "",
+    "keywords": [
+      "anscombe",
+      "quartet",
+      "dataset"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Ap%C3%A9ry%27s_constant": {
     "id": "apery-constant",
     "description": "Wikipedia entry for Apéry's constant.",
