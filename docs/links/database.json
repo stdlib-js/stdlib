@@ -1840,6 +1840,14 @@
       "frechet"
     ]
   },
+  "https://en.wikipedia.org/wiki/Francis_Anscombe": {
+    "id": "francis-anscombe",
+    "description": "Wikipedia entry for Francis Anscombe, an English statistician.",
+    "short_url": "",
+    "keywords": [
+      "anscombe"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fresnel_integral": {
     "id": "fresnel-integral",
     "description": "Wikipedia entry for Fresnel integral.",
