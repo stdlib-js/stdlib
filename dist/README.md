@@ -87,7 +87,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.39 MB        | 900.815 kB         | 228.987 kB            |
+| 5.416 MB       | 902.728 kB         | 229.356 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -95,7 +95,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.409 MB       | 913.142 kB         | 229.594 kB            |
+| 5.435 MB       | 915.117 kB         | 229.955 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -146,7 +146,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 59.132 MB          | 16.922 MB             |
+| 59.209 MB          | 16.928 MB             |
 
 <!-- </bundle-stats> -->
 
