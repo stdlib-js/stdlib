@@ -39,7 +39,10 @@ node_modules="${root_dir}/node_modules"
 packages_file='package.json'
 
 # Define the pattern for filtering packages based on their file path:
-packages_filter='.*/.*'
+packages_filter="${PACKAGES_FILTER}"
+if [[ -z "${packages_filter}" ]]; then
+	packages_filter='.*/.*'
+fi
 
 
 # FUNCTIONS #
