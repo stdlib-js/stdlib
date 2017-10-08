@@ -28,7 +28,6 @@ for pkg in ${pkgs}; do
 	#   - Compute the number of lines within each file.
 	# * `awk '{}'`
 	#   - Extract the total number of lines.
-	# *
 	FILES_PATTERN="${FILES_PATTERN}" FILES_FILTER="$pkg/.*" "${find_files}" | xargs wc -l | awk -v pkg="$pkg" '
 $2 ~ /^total$/ {
 	print pkg OFS $1
