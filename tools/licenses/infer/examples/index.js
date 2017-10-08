@@ -8,15 +8,15 @@ var pattern = '{readme*,licen[cs]e*,copying*}';
 licenses( onResults );
 
 function onResults( error, results ) {
-    if ( error ) {
-        throw error;
-    }
-    infer( results, pattern, onInfer );
+	if ( error ) {
+		throw error;
+	}
+	infer( results, pattern, onInfer );
 }
 
 function onInfer( error, results ) {
-    if ( error ) {
-        throw error;
-    }
-    console.dir( results );
+	if ( error ) {
+		throw error;
+	}
+	console.dir( results );
 }
