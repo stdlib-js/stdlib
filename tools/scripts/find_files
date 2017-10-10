@@ -26,7 +26,7 @@ node_modules="${root_dir}/node_modules"
 # Define a filename pattern:
 files_pattern="${FILES_PATTERN}"
 if [[ -z "${files_pattern}" ]]; then
-	files_pattern='*.*'
+	files_pattern='*'
 fi
 
 # Define the pattern for filtering files based on their path:
