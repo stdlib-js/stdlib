@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+#
+# Prints the number of bytes per file type in a package.
+#
+# <package_path> <percentage> <total_bytes> <number_of_files> <average> <file_type>
+#
+# Notes:
+#
+# * `README.md` files are included in Markdown statistics.
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to list packages:
+find_pkgs="${root}/tools/scripts/find_packages"
+
+# Define the path to a utility to list files:
+find_files="${root}/tools/scripts/find_files"
+
+# Define the path to a utility to annotate a file statistic stream:
+annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
+
+# Get a list of packages:
+pkgs="$(PACKAGES_FILTER=${PACKAGES_FILTER} ${find_pkgs})"
+
+# For each package, determine the number of bytes...
+for pkg in ${pkgs}; do
+	# * `find_files`
+	#   - Find package files.
+	# * `ls -l`
+	#   - Print file info, which includes number of bytes.
+	# * `awk '{}'`
+	#   - Extract `bytes` and `filename` columns.
+	# * `annotate_file_type`
+	#   - Prefix each result with a file type.
+	# * `awk '{}'`
+	#   - Compute statistics.
+	# * `sort -k2nr`
+	#   - Sort in reverse numeric order based on the computed percentage.
+	FILES_PATTERN="${FILES_PATTERN}" FILES_FILTER="$pkg/.*" "${find_files}" | xargs ls -l | awk '{print $5 OFS $9}' | awk -f "${annotate_file_type}" | awk -v pkg="$pkg" '
+$3 ~ /README\.md$/ {
+	bytes["README"] += $2
+	N["README"] += 1
+}
+
+{
+	bytes[$1] += $2
+	N[$1] += 1
+
+	bytes["total"] += $2
+	N["total"] += 1
+}
+
+END {
+	total = bytes["total"]
+	for (k in bytes) {
+		len = bytes[k];
+		n = N[k]
+		pct = int(len/total*10000)/10000
+		mu = int(len/n*10000)/10000
+		print pkg OFS pct OFS len OFS n OFS mu OFS k
+	}
+}
+' | sort -k2nr
+done

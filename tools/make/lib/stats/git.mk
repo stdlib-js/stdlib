@@ -509,6 +509,28 @@ stats-bytes-per-file-type:
 .PHONY: stats-bytes-per-file-type
 
 
+# Compute bytes per file type per package.
+#
+# This target computes number of bytes per file type per package.
+
+stats-bytes-per-file-type-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/bytes_per_file_type_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/bytes_per_file_type_per_pkg
+
+.PHONY: stats-bytes-per-file-type-per-pkg
+
+
+# Compute bytes per package.
+#
+# This target computes number of bytes per package.
+
+stats-bytes-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/bytes_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/bytes_per_pkg
+
+.PHONY: stats-bytes-per-pkg
+
+
 # Compute basic COCOMO 81.
 #
 # This target computes a basic constructive cost model (COCOMO 81).
@@ -1343,6 +1365,28 @@ stats-num-files-per-file-type:
 	$(QUIET) $(GIT_SCRIPTS_DIR)/num_files_per_file_type
 
 .PHONY: stats-num-files-per-file-type
+
+
+# Compute number of files per file type per package.
+#
+# This target computes the number of files per file type per package.
+
+stats-num-files-per-file-type-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/num_files_per_file_type_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/num_files_per_file_type_per_pkg
+
+.PHONY: stats-num-files-per-file-type-per-pkg
+
+
+# Compute number of files per package.
+#
+# This target computes the number of files per package.
+
+stats-num-files-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/num_files_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/num_files_per_pkg
+
+.PHONY: stats-num-files-per-pkg
 
 
 # Print a list of added and deleted `package.json` files
