@@ -1226,6 +1226,16 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function": {
+    "id": "mdn-async",
+    "description": "MDN entry for async functions.",
+    "short_url": "",
+    "keywords": [
+      "async",
+      "await",
+      "es2017"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*": {
     "id": "mdn-generator-function",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator functions.",
