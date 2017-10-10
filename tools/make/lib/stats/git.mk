@@ -944,7 +944,7 @@ stats-lines-per-file-type:
 
 stats-lines-per-file-type-per-pkg:
 	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lines_per_file_type_per_pkg
-	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) $(GIT_SCRIPTS_DIR)/lines_per_file_type_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/lines_per_file_type_per_pkg
 
 .PHONY: stats-lines-per-file-type-per-pkg
 
