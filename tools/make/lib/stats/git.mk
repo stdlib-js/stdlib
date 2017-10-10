@@ -1279,6 +1279,17 @@ stats-nonempty-lines-per-file-type:
 .PHONY: stats-nonempty-lines-per-file-type
 
 
+# Compute nonempty lines per package.
+#
+# This target computes the number of nonempty lines per package.
+
+stats-nonempty-lines-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/nonempty_lines_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/nonempty_lines_per_pkg
+
+.PHONY: stats-nonempty-lines-per-pkg
+
+
 # Compute number of files.
 #
 # This target computes the number of indexed files.
