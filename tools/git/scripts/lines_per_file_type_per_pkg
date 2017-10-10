@@ -24,7 +24,7 @@ annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
 pkgs="$(PACKAGES_FILTER=${PACKAGES_FILTER} ${find_pkgs})"
 
 # For each package, determine the number of lines...
-for pkg in "${pkgs}"; do
+for pkg in ${pkgs}; do
 	# * `find_files`
 	#   - Find package files.
 	# * `xargs wc -l`
