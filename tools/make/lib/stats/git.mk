@@ -542,6 +542,17 @@ stats-cocomo-81-intermediate:
 .PHONY: stats-cocomo-81-intermediate
 
 
+# Compute intermediate COCOMO 81 per package.
+#
+# This target computes an intermediate constructive cost model (COCOMO 81) per package.
+
+stats-cocomo-81-intermediate-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/cocomo_81_intermediate_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) $(GIT_SCRIPTS_DIR)/cocomo_81_intermediate_per_pkg
+
+.PHONY: stats-cocomo-81-intermediate-per-pkg
+
+
 # Generate a commit interval histogram.
 #
 # This target generates a histogram of commit intervals.
