@@ -938,6 +938,17 @@ stats-lines-per-file-type:
 .PHONY: stats-lines-per-file-type
 
 
+# Compute lines per file type per package.
+#
+# This target computes the number of lines per file type per package.
+
+stats-lines-per-file-type-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/lines_per_file_type_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) $(GIT_SCRIPTS_DIR)/lines_per_file_type_per_pkg
+
+.PHONY: stats-lines-per-file-type-per-pkg
+
+
 # List directory contributors.
 #
 # This target list contributors for a directory and its descendants.
