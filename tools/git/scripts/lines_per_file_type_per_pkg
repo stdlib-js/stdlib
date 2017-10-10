@@ -60,7 +60,6 @@ $3 ~ /README\.md$/ {
 
 END {
 	total = lines["total"]
-	print pkg
 	for (k in lines) {
 		len = lines[k];
 		n = N[k]
