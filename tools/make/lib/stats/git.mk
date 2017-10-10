@@ -1347,7 +1347,7 @@ stats-num-files-per-file-type:
 
 # Compute number of files per file type per package.
 #
-# This target computes the number of indexed files per file type per package.
+# This target computes the number of files per file type per package.
 
 stats-num-files-per-file-type-per-pkg:
 	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/num_files_per_file_type_per_pkg
