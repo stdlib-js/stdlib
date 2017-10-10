@@ -1345,6 +1345,17 @@ stats-num-files-per-file-type:
 .PHONY: stats-num-files-per-file-type
 
 
+# Compute number of files per file type per package.
+#
+# This target computes the number of indexed files per file type per package.
+
+stats-num-files-per-file-type-per-pkg:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/num_files_per_file_type_per_pkg
+	$(QUIET) PACKAGES_FILTER=$(PACKAGES_FILTER) FILES_PATTERN=$(FILES_PATTERN) $(GIT_SCRIPTS_DIR)/num_files_per_file_type_per_pkg
+
+.PHONY: stats-num-files-per-file-type-per-pkg
+
+
 # Print a list of added and deleted `package.json` files
 #
 # This target prints a list of `package.json` files which have been either added or deleted.
