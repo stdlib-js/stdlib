@@ -2,7 +2,7 @@
 # VARIABLES #
 
 # Define a generic filename pattern:
-FILES_PATTERN ?= *.*
+FILES_PATTERN ?= *
 
 # Define a generic filepath pattern:
 FILES_FILTER ?= .*/.*
