@@ -17,7 +17,7 @@ root="$(git rev-parse --show-toplevel)"
 # Define the path to a utility to compute the number of non-empty lines per file:
 nonempty_lines_per_file="${root}/tools/git/scripts/nonempty_lines_per_file"
 
-#
+# Compute the cost model...
 "${nonempty_lines_per_file}" | awk '
 BEGIN {
 	# Model coefficients:

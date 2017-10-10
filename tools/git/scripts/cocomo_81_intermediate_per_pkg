@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Computes an intermediate constructive cost model (COCOMO 81).
+# Computes an intermediate constructive cost model (COCOMO 81) per package.
 #
 # Notes:
 #
@@ -14,11 +14,11 @@
 # Determine root directory:
 root="$(git rev-parse --show-toplevel)"
 
-# Define the path to a utility to compute the number of non-empty lines per file:
-nonempty_lines_per_file="${root}/tools/git/scripts/nonempty_lines_per_file"
+# Define the path to a utility to compute the number of non-empty lines per file type per package:
+nonempty_lines_per_file_type_per_pkg="${root}/tools/git/scripts/nonempty_lines_per_file_type_per_pkg"
 
 # Compute the cost model...
-"${nonempty_lines_per_file}" | awk '
+PACKAGES_FILTER="${PACKAGES_FILTER}" "${nonempty_lines_per_file_type_per_pkg}" | awk '
 BEGIN {
 	# Model coefficients:
 	a_i = 3.2
@@ -55,11 +55,10 @@ BEGIN {
 	salary = 55000
 }
 
-$1 ~ /JavaScript/ {
-	loc += $2
-}
+$6 ~ /JavaScript/ {
+	pkg = $1
+	loc = $3
 
-END {
 	sloc = loc * loc_sf
 	kloc = sloc / 1000
 
@@ -75,10 +74,12 @@ END {
 	# Compute the cost based on developer salary:
 	cost = people_required * salary * development_time/12
 
+	print "package" OFS pkg
 	print "kloc" OFS kloc
 	print "development_time" OFS development_time
 	print "effort_applied" OFS effort_applied
 	print "people_required" OFS people_required
 	print "cost" OFS cost
+	print ""
 }
 '
