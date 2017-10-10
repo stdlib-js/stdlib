@@ -34,6 +34,7 @@ BEGIN {
 }
 
 $6 ~ /JavaScript/ {
+	pkg = $1
 	loc = $3
 
 	sloc = loc * loc_sf
@@ -51,7 +52,7 @@ $6 ~ /JavaScript/ {
 	# Compute the cost based on developer salary:
 	cost = people_required * salary * development_time/12
 
-	print "package" OFS $1
+	print "package" OFS pkg
 	print "kloc" OFS kloc
 	print "development_time" OFS development_time
 	print "effort_applied" OFS effort_applied
