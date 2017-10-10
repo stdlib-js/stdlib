@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Prints the number of files in a package.
+# Prints the number of files per file type in a package.
 #
 # <package_path> <percentage> <total> <file_type>
 #
