@@ -21,7 +21,7 @@ find_files="${root}/tools/scripts/find_files"
 annotate_file_type="${root}/tools/git/scripts/annotate_file_type.awk"
 
 # Get a list of packages:
-pkgs="PACKAGES_FILTER=${PACKAGES_FILTER} ${find_pkgs})"
+pkgs="$(PACKAGES_FILTER=${PACKAGES_FILTER} ${find_pkgs})"
 
 # For each package, determine the number of lines...
 for pkg in "${pkgs}"; do
@@ -60,6 +60,7 @@ $3 ~ /README\.md$/ {
 
 END {
 	total = lines["total"]
+	print pkg
 	for (k in lines) {
 		len = lines[k];
 		n = N[k]
