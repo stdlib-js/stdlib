@@ -148,11 +148,6 @@
 
     -   similar to JSDoc source docs
 
-1.  clean-up cpp test runners
-
-    -   `powm1`
-    -   `riemann-zeta`
-
 1.  `type-of` should check for `toStringTag` support
 
 1.  update `utils/tools`
@@ -738,8 +733,6 @@
     -   gateway to running benchmarks, tests, and examples in-browser
     -   how would we annotate for reactive documents? inline comments? spans?
     -   how would we annotate asides/notes? maybe not necessary for standard module READMEs. Possibly via spans.
-
-1.  remark-insert-svg-equation plugin
 
 1.  remark-insert-svg-figure plugin
 
@@ -1694,7 +1687,6 @@
 
 1.  [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
-1.  rem_pio2
 
 1.  stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 
