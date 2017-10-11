@@ -55,8 +55,8 @@ def print_results(elapsed):
 
 def benchmark():
     """Run the benchmark and print benchmark results."""
-    setup = "from numpy import TODO; from random import random;"
-    stmt = "y = TODO(random())"
+    setup = "import numpy as np; from random import random;"
+    stmt = "y = np.TODO(random())"
 
     t = timeit.Timer(stmt, setup=setup)
 
