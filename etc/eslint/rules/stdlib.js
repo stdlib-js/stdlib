@@ -32,7 +32,7 @@ var rules = {};
 *     return x*x;
 * }
 */
-rules[ 'stdlib/empty-line-before-comment' ] = 'error';
+rules[ 'stdlib/empty-line-before-comment' ] = 'off'; // FIXME
 
 
 // EXPORTS //
