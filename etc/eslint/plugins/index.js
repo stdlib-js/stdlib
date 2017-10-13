@@ -1,10 +1,9 @@
 'use strict';
 
 // ESLint plugins:
-var plugins = [];
-
-// Plugin rules:
-plugins.rules = {};
+var plugins = [
+	'stdlib'
+];
 
 
 // EXPORTS //
