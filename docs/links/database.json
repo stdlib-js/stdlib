@@ -2707,6 +2707,18 @@
       "letters"
     ]
   },
+  "https://eslint.org/docs/developer-guide/working-with-rules": {
+    "id": "eslint-rules",
+    "description": "ESLint documentation for working with rules.",
+    "short_url": "",
+    "keywords": [
+      "eslint",
+      "rules",
+      "linting",
+      "js",
+      "javascript"
+    ]
+  },
   "https://git-scm.com/": {
     "id": "git",
     "description": "The official website for Git, a free and open-source distributed version control system.",
