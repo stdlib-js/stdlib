@@ -1,6 +1,7 @@
 
 # DEPENDENCIES #
 
+include $(TOOLS_MAKE_LIB_DIR)/init/eslint_rules.mk
 include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 
 
@@ -10,6 +11,6 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 #
 # This target performs initialization tasks, such as installing git hooks, etc.
 
-init: init-git-hooks
+init: init-git-hooks init-eslint-stdlib-plugin
 
 .PHONY: init

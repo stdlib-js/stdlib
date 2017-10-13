@@ -20,7 +20,8 @@ var rules = merge(
 	require( './variables.js' ),
 	require( './nodejs.js' ),
 	require( './style.js' ),
-	require( './es2015.js' )
+	require( './es2015.js' ),
+	require( './stdlib.js')
 );
 
 
