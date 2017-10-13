@@ -18,18 +18,20 @@ var rules = {};
 * @example
 * // Bad...
 * function square( x ) {
-*     var x;
+*     var out;
 *     // Square the number:
-*     return x*x;
+*     out = x*x;
+*     return out;
 * }
 *
 * @example
 * // Good...
 * function square( x ) {
-*     var x;
+*     var out;
 *
 *     // Square the number:
-*     return x*x;
+*     out = x*x;
+*     return out;
 * }
 */
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
