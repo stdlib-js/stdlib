@@ -41,10 +41,19 @@ eslint.rules = require( './rules' );
 * Parser options.
 *
 * @name ParserOptions
-* @memberof rules
+* @memberof eslint
 * @type {Object}
 */
 eslint.parserOptions = require( './parser-options' );
+
+/**
+* Plugins.
+*
+* @name Plugins
+* @memberof eslint
+* @type {Object}
+*/
+eslint.plugins = require( './plugins' );
 
 
 // EXPORTS //
