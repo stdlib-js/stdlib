@@ -184,10 +184,6 @@ install() {
 # $1 - Node.js version
 # $2 - log file
 init() {
-	make init >> "$2" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		return 1
-	fi
 	node_version "$1"
 	if [[ "$?" -ne 0 ]]; then
 		return 1
