@@ -34,7 +34,7 @@ var rules = {};
 *     return out;
 * }
 */
-rules[ 'stdlib/empty-line-before-comment' ] = 'off'; // FIXME
+rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 
 // EXPORTS //
