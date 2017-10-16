@@ -14,7 +14,7 @@ machine:
 # Customize the repository after checkout:
 checkout:
   post:
-    - 'make init'
+    - 'git init && make init'
 
 
 # Custom environment dependencies:
