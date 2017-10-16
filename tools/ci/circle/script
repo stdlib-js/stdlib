@@ -179,11 +179,15 @@ install() {
 	return 0
 }
 
-# Initializes the Node.js environment.
+# Initializes the environment.
 #
 # $1 - Node.js version
 # $2 - log file
 init() {
+	make init >> "$2" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
 	node_version "$1"
 	if [[ "$?" -ne 0 ]]; then
 		return 1
@@ -342,7 +346,7 @@ main() {
 	# Start the heartbeat:
 	start_heartbeat "${heartbeat_interval}"
 
-	# Initialize the Node.js environment:
+	# Initialize the environment:
 	init stable "${log_file}"
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
