@@ -107,6 +107,17 @@
     <br>
 </div>
 
+### WebAssembly and the Future of the Web
+
+> [Athan Reines][kgryte], Node.js Interactive, October 2017
+
+<div class="image" align="center">
+    <a title="WebAssembly and the Future of the Web" href="https://www.youtube.com/watch?v=iJL59lh4IJA&list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh&index=36">
+        <img src="" alt="WebAssembly and the Future of the Web at Node.js Interactive, Vancouver 2017">
+    </a>
+    <br>
+</div>
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
