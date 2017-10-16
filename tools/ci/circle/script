@@ -179,6 +179,20 @@ install() {
 	return 0
 }
 
+# Performs development environment initialization tasks.
+#
+# $1 - log file
+dev_init() {
+	echo 'Initializing development environment...' >&2
+	make init >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred during initialization.' >&2
+		return 1
+	fi
+	echo 'Initialization successful.' >&2
+	return 0
+}
+
 # Initializes the environment.
 #
 # $1 - Node.js version
@@ -193,6 +207,10 @@ init() {
 		return 1
 	fi
 	install "$2"
+	if [[ "$?" -ne 0 ]]; then
+		return 1
+	fi
+	dev_init "$2"
 	if [[ "$?" -ne 0 ]]; then
 		return 1
 	fi
