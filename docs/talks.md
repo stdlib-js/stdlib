@@ -113,7 +113,7 @@
 
 <div class="image" align="center">
     <a title="WebAssembly and the Future of the Web" href="https://www.youtube.com/watch?v=iJL59lh4IJA&list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh&index=36">
-        <img src="" alt="WebAssembly and the Future of the Web at Node.js Interactive, Vancouver 2017">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/8f234f4e03a550606f46041e34000c1c206e7f9d/docs/assets/talks/nodejs_interactive_vancouver_2017_athan_reines.png" alt="WebAssembly and the Future of the Web at Node.js Interactive, Vancouver 2017">
     </a>
     <br>
 </div>
