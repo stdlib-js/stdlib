@@ -2568,6 +2568,8 @@ var foo = bar || null;
 
 -   In general, prefer placing the comment above the comment subject and place an empty line above the comment.
 
+    <!-- eslint-disable stdlib/empty-line-before-comment -->
+
     ```javascript
     // Okay for short comments (sometimes)...
     var foo = bar || null; // bar can be `0`
@@ -2579,6 +2581,8 @@ var foo = bar || null;
     // Comment about `bap`...
     var bap = 'bap';
     ```
+
+    <!-- eslint-enable stdlib/empty-line-before-comment -->
 
 ##### Enforcement
 
@@ -3458,6 +3462,7 @@ Prevents variable leakage.
     'use strict';
 
     var beep = 'boop';
+
     // ...
 })();
 ```
