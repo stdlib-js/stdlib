@@ -130,7 +130,7 @@ function clbk( error, reference ) {
         throw error;
     }
     console.log( reference );
-    /*
+    /* e.g., =>
         (Press et al. 1992)
 
         Press, William H., Brian P. Flannery, Saul A. Teukolsky, and William T. Vetterling. 1992. *Numerical Recipes in C: The Art of Scientific Computing, Second Edition*. Cambridge University Press.
@@ -152,7 +152,7 @@ function clbk( error, reference ) {
 
 ### Usage
 
-```bash
+```text
 Usage: citation-reference [options] <citation_identifier>
 
 Options:
