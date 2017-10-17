@@ -2582,7 +2582,6 @@ var foo = bar || null;
     var bap = 'bap';
     ```
 
-    <!-- eslint-enable stdlib/empty-line-before-comment -->
 
 ##### Enforcement
 
