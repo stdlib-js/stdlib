@@ -86,7 +86,7 @@ def benchmark(name, setup, stmt, iterations):
 
 
 def main():
-    """Run the benchmark."""
+    """Run the benchmarks."""
     name = ":TODO"
     setup = "from scipy import TODO; from random import random;"
     stmt = "y = TODO(random())"
