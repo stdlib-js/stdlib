@@ -7,6 +7,7 @@ import timeit
 NAME = "TODO"
 REPEATS = 3
 ITERATIONS = 1000000
+COUNT = [0]  # use a list to allow modification within nested scopes
 
 
 def print_version():
@@ -31,49 +32,67 @@ def print_summary(total, passing):
     print("# ok")
 
 
-def print_results(elapsed):
+def print_results(iterations, elapsed):
     """Print benchmark results.
 
     # Arguments
 
+    * `iterations`: number of iterations
     * `elapsed`: elapsed time (in seconds)
 
     # Examples
 
     ``` python
-    python> print_results(0.131009101868)
+    python> print_results(100000, 0.131009101868)
     ```
     """
-    rate = ITERATIONS / elapsed
+    rate = iterations / elapsed
 
     print("  ---")
-    print("  iterations: " + str(ITERATIONS))
+    print("  iterations: " + str(iterations))
     print("  elapsed: " + str(elapsed))
     print("  rate: " + str(rate))
     print("  ...")
 
 
-def benchmark():
-    """Run the benchmark and print benchmark results."""
-    setup = "from math import TODO; from random import random;"
-    stmt = "y = TODO(random())"
+def benchmark(name, setup, stmt, iterations):
+    """Run the benchmark and print benchmark results.
 
+    # Arguments
+
+    * `name`: benchmark name (suffix)
+    * `setup`: benchmark setup
+    * `stmt`: statement to benchmark
+    * `iterations`: number of iterations
+
+    # Examples
+
+    ``` python
+    python> benchmark("::random", "from random import random;", "y = random()", 1000000)
+    ```
+    """
     t = timeit.Timer(stmt, setup=setup)
 
     print_version()
 
-    for i in xrange(REPEATS):
-        print("# python::" + NAME)
-        elapsed = t.timeit(number=ITERATIONS)
-        print_results(elapsed)
-        print("ok " + str(i+1) + " benchmark finished")
-
-    print_summary(REPEATS, REPEATS)
+    i = 0
+    while i < REPEATS:
+        print("# python::" + NAME + name)
+        COUNT[0] += 1
+        elapsed = t.timeit(number=iterations)
+        print_results(iterations, elapsed)
+        print("ok " + str(COUNT[0]) + " benchmark finished")
+        i += 1
 
 
 def main():
-    """Run the benchmark."""
-    benchmark()
+    """Run the benchmarks."""
+    name = ":TODO"
+    setup = "from math import TODO; from random import random;"
+    stmt = "y = TODO(random())"
+    benchmark(name, setup, stmt, ITERATIONS)
+
+    print_summary(COUNT[0], COUNT[0])
 
 
 if __name__ == "__main__":
