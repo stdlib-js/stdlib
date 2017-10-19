@@ -1,0 +1,48 @@
+
+{{alias}}( shape, strides, offset, order, idx, mode )
+    Converts a linear index in an underlying data buffer to a linear index in an
+    array view.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    offset: integer
+        Location of the first indexed value based on the stride array.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    idx: integer
+        Linear index in an underlying data buffer.
+
+    mode: string
+        Specifies how to handle a linear index which exceeds array dimensions.
+        If equal to 'throw', the function throws an error when a linear index
+        exceeds array dimensions. If equal to 'wrap', the function wraps around
+        a linear index exceeding array dimensions using modulo arithmetic. If
+        equal to 'clamp', the function sets a linear index exceeding array
+        dimensions to either `0` (minimum linear index) or the maximum linear
+        index. Default: 'throw'.
+
+    Returns
+    -------
+    idx: integer
+        Linear index in an array view.
+
+    Examples
+    --------
+    > var d = [ 3, 3, 3 ];
+    > var s = [ 9, -3, 1 ];
+    > var o = 6;
+    > var idx = {{alias}}( d, s, o, 'row-major', 7, 'throw' )
+    1
+
+    See Also
+    --------
+
