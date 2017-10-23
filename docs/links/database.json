@@ -588,6 +588,17 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP": {
+    "id": "mdn-csp",
+    "description": "MDN reference for content security policy (CSP).",
+    "short_url": "",
+    "keywords": [
+      "csp",
+      "content",
+      "security",
+      "policy"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions": {
     "id": "mdn-regexp",
     "description": "Mozilla Developer Network (MDN) documentation for regular expressions in JavaScript.",
