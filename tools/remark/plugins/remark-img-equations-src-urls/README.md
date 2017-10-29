@@ -93,7 +93,7 @@ vfile = toVFile.readSync( fpath );
 // Specify the directory containing equation images:
 opts = {
     'dir': './docs/img/', // relative to Markdown file,
-    'prefix': ''          // no prefix 
+    'prefix': ''          // no prefix
 };
 
 // Insert src URLs:

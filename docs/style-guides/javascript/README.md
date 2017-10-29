@@ -1944,7 +1944,7 @@ Regular expressions are error prone and difficult to understand without thorough
 ```javascript
 /**
 * Matches parts of a regular expression string.
-* 
+*
 * Regular expression: `/^\/((?:\\\/|[^\/])+)\/([imgy]*)$/`
 *
 * `/^\/`
