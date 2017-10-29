@@ -36,6 +36,24 @@ var rules = {};
 */
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
+/**
+* Disallow require() calls of other package's internals.
+*
+* @name no-internal-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var betainc = require( '@stdlib/math/base/special/betainc/lib/index.js' );
+*
+* @example
+* // Good...
+* var betainc = require( '@stdlib/math/base/special/betainc' );
+*/
+rules[ 'stdlib/no-internal-require' ] = 'error';
+
 
 // EXPORTS //
 
