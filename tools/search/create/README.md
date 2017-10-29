@@ -97,7 +97,7 @@ function onCreate( error, idx ) {
 ```javascript
 var lunr = require( 'lunr' );
 var path = require( 'path' );
-var tokenizer = require( '@stdlib/tools/search/create/lib/tokenizer.js' );
+var tokenizer = require( '@stdlib/tools/search/create/lib/tokenizer.js' ); // eslint-disable-line stdlib/no-internal-require
 var create = require( '@stdlib/tools/search/create' );
 
 lunr.tokenizer.registerFunction( tokenizer, 'readme_tokenizer' );
