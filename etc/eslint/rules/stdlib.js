@@ -37,7 +37,7 @@ var rules = {};
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
-* Disallow require() calls of other package's internals.
+* Disallow require() calls of another package's internals.
 *
 * @name no-internal-require
 * @memberof rules
