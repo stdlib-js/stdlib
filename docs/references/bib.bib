@@ -140,6 +140,18 @@
 	year = {2004},
 }
 
+@article{shaw:2006,
+	abstract = {With the current interest in copula methods, and fat-tailed or other non-normal distributions, it is appropriate to investigate technologies for managing marginal distributions of interest. We explore "Student's T distribution, survey its simulation, and present some new techniques for simulation. In particular, for a given real (not necessarily integer) value n of the number of degrees of freedom, we give a pair of power series approximations for the inverse, \\( F{\_}n{\^{}}{\{}-1{\}} \\), of the cumulative distribution function (CDF), \\( F_n \\).We also give some simple and very fast exact and iterative techniques for defining this function when n is an even integer, based on the observation that for such cases the calculation of \\( F{\_}n{\^{}}{\{}-1{\}} \\) amounts to the solution of a reduced-form polynomial equation of degree n-1. We also explain the use of Cornish-Fisher expansions to define the inverse CDF as the composition of the inverse CDF for the normal case with a simple polynomial map. The methods presented are well adapted for use with copula and quasi-Monte-Carlo techniques.},
+	author = {William T. Shaw},
+	journal = {Journal of Computational Finance},
+	keywords = {student's t distribution, inverse CDF, copula},
+	number = {4},
+	pages = {37--73},
+	title = {{Sampling Student's T distribution -- use of the inverse cumulative distribution function}},
+	volume = {9},
+	year = {2006}
+}
+
 @article{khajah:1994,
 	abstract = {We describe a machine independent Fortran subroutine which performs the four basic arithmetic operations with a degree of accuracy prescribed by the user. Tables of Chebyshev expansions of orders 48 and 50 for some basic mathematical functions are obtained as a result of applying this subroutine in conjunction with the recursive formulation of the Tau Method. A recently devised technique for the sharp determination of upper and lower error bounds for Tau Method approximations (see [1]) enables us to find the degree n required to achieve a prescribed accuracy ϵ over a given interval [a,b]. A number of practical illustrations are given.},
 	author = {H.G. Khajah and E.L. Ortiz},
@@ -181,10 +193,10 @@
 
 @unpublished{cao:high,
 	abstract = {This paper presents the design and implementation of several fundamental dense linear algebra (DLA) algorithms in OpenCL. In particular, these are linear system solvers and eigenvalue problem solvers. Further, we give an overview of the clMAGMA library, an open source, high performance OpenCL library that incorporates the developments presented, and in general provides to heterogeneous architectures the DLA functionality of the popular LAPACK library. The LAPACK-compliance and use of OpenCL simplify the use of clMAGMA in applications, while providing them with portably performant DLA. High performance is obtained through use of the high-performance OpenCL BLAS, hardware and OpenCL-specific tuning, and a hybridization methodology where we split the algorithm into computational tasks of various granularities. Execution of those tasks is properly scheduled over the heterogeneous hardware components by minimizing data movements and mapping algorithmic requirements to the architectural strengths of the various heterogeneous hardware components.},
-    author = {Chongxiao Cao and Jack Dongarra and Peng Du and Mark Gates and Piotr Luszczek and Stanimire Tomov},
-    keywords = {gpu, opencl, blas, numeric computing, computation, lapack},
-    note = {netlib},
-    title = {{clMAGMA: High Performance Dense Linear Algebra with OpenCL}},
+	author = {Chongxiao Cao and Jack Dongarra and Peng Du and Mark Gates and Piotr Luszczek and Stanimire Tomov},
+	keywords = {gpu, opencl, blas, numeric computing, computation, lapack},
+	note = {netlib},
+	title = {{clMAGMA: High Performance Dense Linear Algebra with OpenCL}},
 }
 
 @misc{dawson:2013,
@@ -440,7 +452,7 @@
 }
 
 @article{kachitvichyanukul:1985,
-    abstract = {The paper presents an exact, uniformly fast algorithm for generating random variates from the hypergeometric distribution. The overall algorithm framework is acceptance/ rejection and is implemented via composition. Three subdensities are used, one is uniform and the other two are exponential. The algorithm is compared with algorithms based on sampling without replacement, inversion, and aliasing. A comprehensive survey of existing algorithms is also given.},
+	abstract = {The paper presents an exact, uniformly fast algorithm for generating random variates from the hypergeometric distribution. The overall algorithm framework is acceptance/ rejection and is implemented via composition. Three subdensities are used, one is uniform and the other two are exponential. The algorithm is compared with algorithms based on sampling without replacement, inversion, and aliasing. A comprehensive survey of existing algorithms is also given.},
 	author = {Voratas Kachitvichyanukul and Burce Schmeiser},
 	doi = {10.1080/00949658508810839},
 	journal = {Journal of Statistical Computation and Simulation},
@@ -469,7 +481,7 @@
 }
 
 @article{mcfarland:2016,
-    abstract = {The ziggurat algorithm is a very fast rejection sampling method for generating pseudorandom numbers (PRNs) from statistical distributions. In the algorithm, rectangular sampling domains are layered on top of each other (resembling a ziggurat) to encapsulate the desired probability density function. Random values within these layers are sampled and then returned if they lie beneath the graph of the probability density function. Here, we present an implementation where ziggurat layers reside completely beneath the probability density function, thereby eliminating the need for any rejection test within the ziggurat layers. In the new algorithm, small overhanging segments of probability density remain to the right of each ziggurat layer, which can be efficiently sampled with triangularly shaped sampling domains. Median runtimes of the new algorithm for exponential and normal variates is reduced to 58\% and 53\%, respectively (collective range: 41–93\%). An accessible C library, along with extensions into Python and MATLAB/Octave are provided.},
+	abstract = {The ziggurat algorithm is a very fast rejection sampling method for generating pseudorandom numbers (PRNs) from statistical distributions. In the algorithm, rectangular sampling domains are layered on top of each other (resembling a ziggurat) to encapsulate the desired probability density function. Random values within these layers are sampled and then returned if they lie beneath the graph of the probability density function. Here, we present an implementation where ziggurat layers reside completely beneath the probability density function, thereby eliminating the need for any rejection test within the ziggurat layers. In the new algorithm, small overhanging segments of probability density remain to the right of each ziggurat layer, which can be efficiently sampled with triangularly shaped sampling domains. Median runtimes of the new algorithm for exponential and normal variates is reduced to 58\% and 53\%, respectively (collective range: 41–93\%). An accessible C library, along with extensions into Python and MATLAB/Octave are provided.},
 	author = {Christopher D. McFarland},
 	doi = {10.1080/00949655.2015.1060234},
 	journal = {Journal of Statistical Computation and Simulation},
