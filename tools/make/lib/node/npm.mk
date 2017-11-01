@@ -164,6 +164,9 @@ npm-version-pre-release: npm-pre-version
 # Run version tasks.
 #
 # This target runs tasks which should be completed when incrementing the project version and committing version changes to the local repository.
+#
+# TODO: move recipe guts to a script
+# TODO: on version, regenerate SVG equations and update README equation elements
 
 npm-version: dist-browser-bundles update-dist-readme-browser-bundle-stats
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-installed-logical-tree-json > $(DIST_DIR)/npm_ls.json && \
