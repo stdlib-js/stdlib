@@ -217,16 +217,25 @@
 				"bin": {
 					"$ref": "#/definitions/path"
 				},
+				"data": {
+					"$ref": "#/definitions/path"
+				},
 				"doc": {
 					"$ref": "#/definitions/path"
 				},
 				"example": {
 					"$ref": "#/definitions/path"
 				},
+				"include": {
+					"$ref": "#/definitions/path"
+				},
 				"lib": {
 					"$ref": "#/definitions/path"
 				},
 				"man": {
+					"$ref": "#/definitions/path"
+				},
+				"scripts": {
 					"$ref": "#/definitions/path"
 				},
 				"src": {

@@ -30,10 +30,13 @@
   "directories": {
     "benchmark": "./benchmark",
     "bin": "./bin",
+    "data": "./data",
     "doc": "./doc",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
     "man": "./doc/man",
+    "scripts": "./scripts",
     "src": "./src",
     "test": "./test"
   },
