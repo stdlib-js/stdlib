@@ -90,7 +90,7 @@ function main( dir ) {
 		if ( pkg.os ) {
 			debug( 'Current directories: %s.', JSON.stringify( pkg.directories ) );
 		}
-		debug( 'Updating directories' );
+		debug( 'Updating directories.' );
 		pkg.directories = {};
 		for ( j = 0; j < DIR_PATHS.length; j++ ) {
 			dir = DIR_PATHS[ j ];
