@@ -99,8 +99,6 @@ function main( dir ) {
 			}
 		}
 
-		// Check for existence of directories:
-
 		debug( 'Standardizing package data.' );
 		pkg = standardize( pkg );
 
