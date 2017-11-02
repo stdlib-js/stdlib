@@ -35,20 +35,26 @@ var standardize = require( './../standardize' );
 var DIR_KEYS = [
 	'benchmark',
 	'bin',
+	'data',
 	'doc',
 	'example',
+	'include',
 	'lib',
 	'man',
+	'scripts',
 	'src',
 	'test'
 ];
 var DIR_PATHS = [
 	'benchmark',
 	'bin',
+	'data',
 	'docs',
 	'examples',
+	'include',
 	'lib',
 	'man',
+	'scripts',
 	'src',
 	'test'
 ];
@@ -90,7 +96,7 @@ function main( dir ) {
 		if ( pkg.os ) {
 			debug( 'Current directories: %s.', JSON.stringify( pkg.directories ) );
 		}
-		debug( 'Updating directories' );
+		debug( 'Updating directories.' );
 		pkg.directories = {};
 		for ( j = 0; j < DIR_PATHS.length; j++ ) {
 			dir = DIR_PATHS[ j ];
