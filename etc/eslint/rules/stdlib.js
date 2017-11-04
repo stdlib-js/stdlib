@@ -54,6 +54,26 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 */
 rules[ 'stdlib/no-internal-require' ] = 'error';
 
+/**
+* Enforce that typed array constructors are explicitly required.
+*
+* @name require-typed-arrays
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = new Float32Array();
+*
+* @example
+* // Good...
+* var Float32Array = require( '@stdlib/types/array/float32' );
+*
+* var arr = new Float32Array();
+*/
+rules[ 'stdlib/require-typed-arrays' ] = 'error';
+
 
 // EXPORTS //
 
