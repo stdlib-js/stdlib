@@ -54,6 +54,62 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 */
 rules[ 'stdlib/no-internal-require' ] = 'error';
 
+/**
+* Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
+*
+* @name no-redeclare
+* @memberof rules
+* @type {Array}
+* @default [ 'error', { 'builtinGlobals': false, 'globalsWhitelist': [] } ]
+* @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+*
+* @example
+* // Bad...
+* var a = 'beep';
+* // ...
+* var a = 'boop';
+*
+* @example
+* // Good...
+* var a = 'beep';
+* // ...
+* a = 'boop';
+*/
+rules[ 'stdlib/no-redeclare' ] = [ 'error', {
+	'builtinGlobals': true,
+	'globalsWhitelist': [
+		'Float32Array',
+		'Float64Array',
+		'Int8Array',
+		'Int16Array',
+		'Int32Array',
+		'Uint8Array',
+		'Uint8ClampedArray',
+		'Uint16Array',
+		'Uint32Array'
+	]
+}];
+
+/**
+* Enforce that typed array constructors are explicitly required.
+*
+* @name require-typed-arrays
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = new Float32Array();
+*
+* @example
+* // Good...
+* var Float32Array = require( '@stdlib/types/array/float32' );
+*
+* var arr = new Float32Array();
+*/
+rules[ 'stdlib/require-typed-arrays' ] = 'error';
+
 
 // EXPORTS //
 
