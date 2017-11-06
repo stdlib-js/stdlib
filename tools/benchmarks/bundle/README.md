@@ -102,7 +102,7 @@ function clbk( error, bundle ) {
 
 ## Examples
 
-<!-- eslint-disable no-redeclare -->
+<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var join = require( 'path' ).join;
