@@ -1,0 +1,30 @@
+
+{{alias}}( len, shape )
+    Returns a boolean indicating if a buffer length is compatible with a
+    provided shape array.
+
+    Parameters
+    ----------
+    len: integer
+        Buffer length (number of elements).
+
+    shape: ArrayLike
+        Array shape.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a buffer length is compatible with a provided
+        shape array.
+
+    Examples
+    --------
+    > var d = [ 2, 3, 10 ];
+    > var bool = {{alias}}( 60, d )
+    true
+    > bool = {{alias}}( 30, d )
+    false
+
+    See Also
+    --------
+
