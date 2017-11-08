@@ -74,7 +74,7 @@ function print_results( iterations, elapsed )
 end
 
 """
-	benchmark( expr )
+	benchmark( setup, expr )
 
 Run a benchmark.
 
@@ -86,16 +86,17 @@ Run a benchmark.
 
 # Arguments
 
+* `setup`: setup expression
 * `expr`: expression to benchmark
 
 # Examples
 
 ``` julia
-julia> out = benchmark( :( sin( 3.14 ) ) );
+julia> out = benchmark( :(), :( sin( 3.14 ) ) );
 ```
 """
-function benchmark( expr )
-	t = eval( :( BenchmarkTools.@benchmark $expr samples=$samples ) )
+function benchmark( setup, expr )
+	t = eval( :( BenchmarkTools.@benchmark $expr samples=$samples setup=($setup) ) )
 
 	# Compute the total "elapsed" time and convert from nanoseconds to seconds:
 	s = sum( t.times ) / 1.0e9;
@@ -108,26 +109,27 @@ function benchmark( expr )
 end
 
 """
-	bench( name, expr )
+	bench( name, setup, expr )
 
 Run a named benchmark.
 
 # Arguments
 
 * `name`: benchmark name (suffix)
+* `setup`: setup expression
 * `expr`: expression to benchmark
 
 # Examples
 
 ``` julia
-julia> bench( "sin", :( sin( 3.14 ) ) );
+julia> bench( "sin", :(), :( sin( 3.14 ) ) );
 ```
 """
-function bench( name, expr )
+function bench( name, setup, expr )
 	for i in 1:repeats
 		@printf( "# julia::%s\n", name );
 		global count += 1;
-		results = benchmark( expr );
+		results = benchmark( setup, expr );
 		print_results( results[ 1 ], results[ 2 ] );
 		@printf( "ok %d benchmark finished\n", count );
 	end
@@ -148,7 +150,7 @@ function main()
 	print_version();
 
 	# Run benchmark:
-	bench( "TODO", :( TODO ) );
+	bench( "TODO", :(), :( TODO ) );
 
 	print_summary( count, count );
 end
