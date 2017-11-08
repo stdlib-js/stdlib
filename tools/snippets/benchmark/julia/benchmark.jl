@@ -3,8 +3,9 @@
 import BenchmarkTools
 
 # Benchmark variables:
-name = "TODO";
 repeats = 3;
+samples = 1e6;
+count = 0;
 
 """
 	print_version()
@@ -73,7 +74,7 @@ function print_results( iterations, elapsed )
 end
 
 """
-	benchmark()
+	benchmark( expr )
 
 Run a benchmark.
 
@@ -83,14 +84,18 @@ Run a benchmark.
 * The number of iterations is not the true number of iterations. Instead, an 'iteration' is defined as a 'sample', which is a computed estimate for a single evaluation.
 * The elapsed time is in seconds.
 
+# Arguments
+
+* `expr`: expression to benchmark
+
 # Examples
 
 ``` julia
-julia> out = benchmark();
+julia> out = benchmark( :( sin( 3.14 ) ) );
 ```
 """
-function benchmark()
-	t = BenchmarkTools.@benchmark TODO samples=1e6
+function benchmark( expr )
+	t = eval( :( BenchmarkTools.@benchmark $expr samples=$samples ) )
 
 	# Compute the total "elapsed" time and convert from nanoseconds to seconds:
 	s = sum( t.times ) / 1.0e9;
@@ -100,6 +105,32 @@ function benchmark()
 
 	# Return the results:
 	[ iter, s ];
+end
+
+"""
+	bench( name, expr )
+
+Run a named benchmark.
+
+# Arguments
+
+* `name`: benchmark name (suffix)
+* `expr`: expression to benchmark
+
+# Examples
+
+``` julia
+julia> bench( "sin", :( sin( 3.14 ) ) );
+```
+"""
+function bench( name, expr )
+	for i in 1:repeats
+		@printf( "# julia::%s\n", name );
+		global count += 1;
+		results = benchmark( expr );
+		print_results( results[ 1 ], results[ 2 ] );
+		@printf( "ok %d benchmark finished\n", count );
+	end
 end
 
 """
@@ -115,13 +146,11 @@ julia> main();
 """
 function main()
 	print_version();
-	for i in 1:repeats
-		@printf( "# julia::%s\n", name );
-		results = benchmark();
-		print_results( results[ 1 ], results[ 2 ] );
-		@printf( "ok %d benchmark finished\n", i );
-	end
-	print_summary( repeats, repeats );
+
+	# Run benchmark:
+	bench( "TODO", :( TODO ) );
+
+	print_summary( count, count );
 end
 
 main();
