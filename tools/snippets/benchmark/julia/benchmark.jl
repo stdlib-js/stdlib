@@ -149,10 +149,10 @@ julia> main();
 function main()
 	print_version();
 
-	# Run benchmark:
+	name = "TODO";
 	setup = :();
 	stmt = :( TODO );
-	bench( "TODO", setup, stmt );
+	bench( name, setup, stmt );
 
 	print_summary( count, count );
 end
