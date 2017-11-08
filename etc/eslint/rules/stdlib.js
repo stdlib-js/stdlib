@@ -37,6 +37,25 @@ var rules = {};
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
+* Enforce that require() calls have only string literals as parameters.
+*
+* @name no-dynamic-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var pkg = '@stdlib/math/base/special/betainc';
+* var betainc = require( pkg );
+*
+* @example
+* // Good...
+* var betainc = require( '@stdlib/math/base/special/betainc' );
+*/
+rules[ 'stdlib/no-dynamic-require' ] = 'error';
+
+/**
 * Disallow require() calls of another package's internals.
 *
 * @name no-internal-require
