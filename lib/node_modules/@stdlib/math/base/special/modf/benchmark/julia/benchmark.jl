@@ -86,7 +86,7 @@ Run a benchmark.
 # Examples
 
 ``` julia
-julia> benchmark();
+julia> out = benchmark();
 ```
 """
 function benchmark()
