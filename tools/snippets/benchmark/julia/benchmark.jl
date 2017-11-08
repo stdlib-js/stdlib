@@ -150,7 +150,9 @@ function main()
 	print_version();
 
 	# Run benchmark:
-	bench( "TODO", :(), :( TODO ) );
+	setup = :();
+	stmt = :( TODO );
+	bench( "TODO", setup, stmt );
 
 	print_summary( count, count );
 end
