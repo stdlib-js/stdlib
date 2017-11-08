@@ -958,6 +958,29 @@ rules[ 'no-param-reassign' ] = 'off';
 rules[ 'no-proto' ] = 'error';
 
 /**
+* Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared. NOTE: turned off due to custom stdlib/no-redeclare rule which permits overriding of certain globals.
+*
+* @name no-redeclare
+* @memberof rules
+* @type {Array}
+* @default 'off'
+* @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
+*
+* @example
+* // Bad...
+* var a = 'beep';
+* // ...
+* var a = 'boop';
+*
+* @example
+* // Good...
+* var a = 'beep';
+* // ...
+* a = 'boop';
+*/
+rules[ 'no-redeclare' ] = 'off';
+
+/**
 * Do not restrict any object properties.
 *
 * @name no-restricted-properties
