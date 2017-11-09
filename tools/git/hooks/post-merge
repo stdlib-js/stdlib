@@ -55,8 +55,14 @@ clean_node_deps() {
 
 # Installs Node.js module dependencies.
 install_node_deps() {
-	echo 'Installing Node.js module dependencies...'
+	echo 'Installing Node.js module dependencies...' >&2
 	make install
+}
+
+# Performs initialization tasks.
+init() {
+	echo 'Initializing development environment...' >&2
+	make init
 }
 
 # Main execution sequence.
@@ -66,6 +72,7 @@ main() {
 		clean_node_deps
 		install_node_deps
 	fi
+	init
 	cleanup
 	exit 0
 }

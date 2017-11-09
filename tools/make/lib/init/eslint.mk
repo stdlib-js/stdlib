@@ -1,39 +1,67 @@
 
 # VARIABLES #
 
-# Define the entry point of the plugin for custom ESLint rules:
-BUNDLE_ESLINT_ENTRY ?= $(TOOLS_PKGS_DIR)/eslint/rules/scripts/plugin.js
-
 # Define the path to the browserify executable:
 BROWSERIFY ?= $(BIN_DIR)/browserify
 
-# Define the plugin name
-ESLINT_PLUGIN_NAME ?= eslint-plugin-stdlib
+# Define the entry point of the plugin for custom ESLint rules:
+STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_ENTRY ?= $(TOOLS_PKGS_DIR)/eslint/rules/scripts/plugin.js
 
-# Define the output directory for the bundle:
-BUNDLE_ESLINT_OUTDIR ?= $(NODE_MODULES)/$(ESLINT_PLUGIN_NAME)
+# Define the plugin name for custom ESLint rules:
+STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_NAME ?= eslint-plugin-stdlib
 
-# Define the output file for the bundle:
-BUNDLE_ESLINT_OUTFILE ?= $(BUNDLE_ESLINT_OUTDIR)/index.js
+# Define the output directory for the custom ESLint rules plugin bundle:
+STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_OUT ?= $(NODE_MODULES)/$(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_NAME)
+
+# Define the output filename for the custom ESLint rules plugin bundle:
+STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_BUNDLE ?= $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_OUT)/index.js
 
 # Define command-line options to be used when invoking the browserify executable:
-BROWSERIFY_ESLINT_PLUGIN_FLAGS ?= --node --outfile $(BUNDLE_ESLINT_OUTFILE) --standalone $(ESLINT_PLUGIN_NAME)
+BROWSERIFY_STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_FLAGS ?= \
+	--node \
+	--outfile $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_BUNDLE) \
+	--standalone $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_NAME)
+
 
 # TARGETS #
 
-# Creates eslint plugin package directory.
+# Initialize custom ESLint rules.
+#
+# This target bundles a custom ESLint rules plugin as a node module and installs the plugin in the `node_modules` directory.
 
-create-plugin-folder:
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(BUNDLE_ESLINT_OUTDIR)
-	$(QUIET) $(MKDIR_RECURSIVE) $(BUNDLE_ESLINT_OUTDIR)
-
-# Bundles plugin for custom ESLint rules and copies it to the node_modules folder.
-
-init-eslint-stdlib-plugin: $(NODE_MODULES) create-plugin-folder
-	$(QUIET) NODE_ENV=$(NODE_ENV_TEST) \
-	NODE_PATH=$(NODE_PATH_TEST) \
+init-stdlib-custom-eslint-rules-plugin: $(NODE_MODULES)
+	$(QUIET) $(MKDIR_RECURSIVE) $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_OUT)
+	$(QUIET) NODE_PATH=$(NODE_PATH) \
 	$(BROWSERIFY) \
-		$(BUNDLE_ESLINT_ENTRY) \
-		$(BROWSERIFY_ESLINT_PLUGIN_FLAGS)
+		$(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_ENTRY) \
+		$(BROWSERIFY_STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_FLAGS)
 
-.PHONY: init-eslint-stdlib-plugin
+.PHONY: init-stdlib-custom-eslint-rules-plugin
+
+
+# Initialize custom ESLint plugins.
+#
+# This target initializes custom ESLint plugins specific to the project.
+
+init-stdlib-custom-eslint-plugins: init-stdlib-custom-eslint-rules-plugin
+
+.PHONY: init-stdlib-custom-eslint-plugins
+
+
+# Remove custom ESLint rules plugin.
+#
+# This target cleans up a custom ESLint rules plugin by removing the plugin directory.
+
+clean-stdlib-custom-eslint-rules-plugin:
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_OUT)
+
+.PHONY: clean-stdlib-custom-eslint-rules-plugin
+
+
+# Remove custom ESLint plugin directories.
+#
+# This target cleans up custom ESLint plugin directories by removing them entirely.
+
+clean-stdlib-custom-eslint-plugins: clean-stdlib-custom-eslint-rules-plugin
+
+.PHONY: clean-stdlib-custom-eslint-plugins

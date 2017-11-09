@@ -13,7 +13,7 @@ GIT_HOOKS_OUT ?= $(ROOT_DIR)/.git/hooks
 
 # TARGETS #
 
-# Installs git hooks.
+# Install git hooks.
 #
 # This target installs [git hooks][1].
 #
