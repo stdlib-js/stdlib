@@ -161,6 +161,43 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 */
 rules[ 'stdlib/require-typed-arrays' ] = 'error';
 
+/**
+* Enforce that typed array constructors are explicitly required.
+*
+* @name section-headers
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad... (require two trailing slashes)
+*
+* // EXPORTS
+*
+* module.exports = {};
+*
+* @example
+* // Bad... (require a known header type)
+*
+* // EXPRTS //
+*
+* module.exports = {};
+*
+* @example
+* // Bad... (require all uppercase letters)
+*
+* // EXPorts //
+*
+* module.exports = {};
+*
+* @example
+* // Good...
+*
+* // EXPORTS //
+*
+* module.exports = {};
+*/
+rules[ 'stdlib/section-headers' ] = 'error';
 
 // EXPORTS //
 
