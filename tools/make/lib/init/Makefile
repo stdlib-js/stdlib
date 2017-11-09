@@ -9,8 +9,8 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 
 # Perform initialization tasks.
 #
-# This target performs initialization tasks, such as installing git hooks, etc.
+# This target performs initialization tasks, such as installing git hooks, installing custom ESLint plugins, etc.
 
-init: init-git-hooks init-eslint-stdlib-plugin
+init: init-git-hooks init-stdlib-custom-eslint-plugins
 
 .PHONY: init
