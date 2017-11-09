@@ -414,11 +414,15 @@ The reasons are as follows:
 
 This project leverages the Node.js module resolution [algorithm][node-require] to resolve dependencies by name rather than by path. Hence, the project avoids relative require paths. For example,
 
+<!-- eslint-disable stdlib/require-file-extensions -->
+
 ```javascript
 var foo = require( './../../../../../@stdlib/foo' );
 ```
 
 becomes
+
+<!-- eslint-disable stdlib/require-file-extensions -->
 
 ```javascript
 var foo = require( '@stdlib/foo' );
