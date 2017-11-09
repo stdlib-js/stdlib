@@ -110,6 +110,38 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 }];
 
 /**
+* Enforce that require() calls of files end with a whitelisted file extension.
+*
+* @name require-file-extensions
+* @memberof rules
+* @type {Array}
+* @default [ 'error', { 'extensionsWhitelist': [ '.js', '.json', '.node' ] } ]
+*
+* @example
+* // Bad...
+*
+* // Invalid file extension:
+* var readme = require( '@stdlib/types/array/int32/README.md' );
+*
+* // Missing file extension:
+* var debug = require( 'debug/src/browser' );
+*
+* @example
+* // Good...
+*
+* var Int32Array = require( '@stdlib/types/array/int32' );
+*
+* var debug = require( 'debug/src/browser.js' );
+*/
+rules[ 'stdlib/require-file-extensions' ] = [ 'error', {
+	'extensionsWhitelist': [
+		'.js',
+		'.json',
+		'.node'
+	]
+}];
+
+/**
 * Enforce that typed array constructors are explicitly required.
 *
 * @name require-typed-arrays
