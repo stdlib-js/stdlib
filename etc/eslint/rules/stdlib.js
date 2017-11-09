@@ -133,7 +133,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 *
 * var debug = require( 'debug/src/browser.js' );
 */
-rules[ 'stdlib/require-file-extensions' ] = [ 'error', {
+rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all @stdlib/tools packages are moved to @stdlib/_tools
 	'extensionsWhitelist': [
 		'.js',
 		'.json',
