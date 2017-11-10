@@ -172,7 +172,7 @@
       "proxy"
     ]
   },
-  "http://nodejs.org/api/buffer.html": {
+  "https://nodejs.org/api/buffer.html": {
     "id": "node-buffer",
     "description": "Node.js documentation for the Buffer class.",
     "short_url": "",
