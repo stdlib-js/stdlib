@@ -105,7 +105,8 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Uint8Array',
 		'Uint8ClampedArray',
 		'Uint16Array',
-		'Uint32Array'
+		'Uint32Array',
+		'Buffer'
 	]
 }];
 
