@@ -234,8 +234,8 @@ install:
 
   - cmd: echo %PATH%
 
-  # Perform installation tasks:
-  - cmd: '%WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% NODE_GYP_FLAGS="--python %PYTHON% --msvs_version=2015" install'
+  # Perform installation tasks, using `appveyor-retry` to address periodic `npm install` failures:
+  - cmd: 'appveyor-retry %WIN_MAKE% FC=%FC% FORTRAN_COMPILER=%FORTRAN_COMPILER% NODE_GYP_FLAGS="--python %PYTHON% --msvs_version=2015" install'
 
 
 build_script:
