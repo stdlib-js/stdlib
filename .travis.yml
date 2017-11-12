@@ -109,7 +109,8 @@ before_install:
 
 
 install:
-  - "make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install"
+  # Run install tasks via `travis_retry` to address occasional `npm install` failures (see https://docs.travis-ci.com/user/common-build-problems/#travis_retry):
+  - "travis_retry make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install"
 
 
 script:
