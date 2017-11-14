@@ -1,0 +1,22 @@
+
+{{alias}}( arr )
+    Allocates a buffer using an octet array.
+
+    Parameters
+    ----------
+    arr: Array<integer>
+        Array (or array-like object) of octets from which to copy.
+
+    Returns
+    -------
+    out: Buffer
+        Buffer instance.
+
+    Examples
+    --------
+    > var buf = {{alias}}( [ 1, 2, 3, 4 ] )
+    <Buffer>[ 1, 2, 3, 4 ]
+
+    See Also
+    --------
+
