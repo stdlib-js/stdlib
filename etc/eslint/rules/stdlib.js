@@ -97,6 +97,8 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 	'builtinGlobals': true,
 	'globalsWhitelist': [
+		'ArrayBuffer',
+		'Buffer',
 		'Float32Array',
 		'Float64Array',
 		'Int8Array',
@@ -105,8 +107,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Uint8Array',
 		'Uint8ClampedArray',
 		'Uint16Array',
-		'Uint32Array',
-		'Buffer'
+		'Uint32Array'
 	]
 }];
 
