@@ -3,7 +3,7 @@
 	"ignore": [
 		"**/snippets/package.json",
 		"node_modules/**",
-		"build/**",
+		"**/build/**",
 		"reports/**",
 		".git*"
 	]
