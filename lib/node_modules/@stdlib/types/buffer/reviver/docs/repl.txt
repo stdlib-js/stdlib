@@ -1,0 +1,32 @@
+
+{{alias}}( key, value )
+    Revives a JSON-serialized Buffer.
+
+    The serialization format for a Buffer is an object having the following
+    fields:
+
+    - type: value type (Buffer)
+    - data: buffer data as an array of integers
+
+    Parameters
+    ----------
+    key: string
+        Key.
+
+    value: any
+        Value.
+
+    Returns
+    -------
+    out: any
+        Value or Buffer.
+
+    Examples
+    --------
+    > var str = '{"type":"Buffer","data":[5,3]}';
+    > var buf = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    <Buffer>[ 5, 3 ]
+
+    See Also
+    --------
+
