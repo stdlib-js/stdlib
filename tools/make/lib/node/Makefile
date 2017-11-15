@@ -12,7 +12,7 @@ include $(TOOLS_MAKE_LIB_DIR)/node/npm.mk
 #
 # This target runs the Node install sequence, including installing node module dependencies and compiling native add-ons.
 
-install-node: install-node-modules install-node-addons
+install-node: install-node-modules install-node-addons install-deps-electron
 
 .PHONY: install-node
 
