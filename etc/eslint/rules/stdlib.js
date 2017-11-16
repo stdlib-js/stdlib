@@ -97,6 +97,7 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 	'builtinGlobals': true,
 	'globalsWhitelist': [
+		'Array',
 		'ArrayBuffer',
 		'Buffer',
 		'DataView',
