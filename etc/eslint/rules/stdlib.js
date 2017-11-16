@@ -99,6 +99,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 	'globalsWhitelist': [
 		'ArrayBuffer',
 		'Buffer',
+		'DataView',
 		'Float32Array',
 		'Float64Array',
 		'Int8Array',
