@@ -8,7 +8,7 @@ Read-eval-print-loop (REPL) texts are plain text documents which provide help in
 > help( lowercase )
 
 lowercase( str )
-    Converts a `string` to lowercase.
+    Converts a string to lowercase.
 
     Parameters
     ----------
@@ -149,7 +149,7 @@ The short description should be a single sentence written in the simple present 
 
 ```text
 lowercase( str )
-    Converts a `string` to lowercase.
+    Converts a string to lowercase.
 
     ...
 ```
@@ -158,7 +158,7 @@ Do **not** write the description in the declarative mood. For example, avoid
 
 ```text
 lowercase( str )
-    Convert a `string` to lowercase.
+    Convert a string to lowercase.
 
     ...
 ```
@@ -179,7 +179,7 @@ dcopy( N, x, strideX, y, strideY )
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N` is less than or equal to `0`, the function returns `y` unchanged.
+    If `N` is less than or equal to 0, the function returns `y` unchanged.
 
     Parameters
     ----------
@@ -266,6 +266,12 @@ The following parameter types are supported:
 -   `Date`: if a parameter must be a `Date` object.
 -   `Buffer`: if a parameter must be a Node.js `Buffer` object.
 -   `Error`: if a parameter must be an `Error` object.
+-   `TypeError`: if a parameter must be a `TypeError` object.
+-   `SyntaxError`: if a parameter must be a `SyntaxError` object.
+-   `RangeError`: if a parameter must be a `RangeError` object.
+-   `ReferenceError`: if a parameter must be a `ReferenceError` object.
+-   `EvalError`: if a parameter must be an `EvalError` object.
+-   `URIError`: if a parameter must be a `URIError` object.
 -   `TypedArray`: if a parameter must be a typed array.
 -   `Float64Array`: if a parameter must be a `Float64Array`.
 -   `Float32Array`: if a parameter must be a `Float32Array`.
@@ -277,6 +283,7 @@ The following parameter types are supported:
 -   `Uint8Array`: if a parameter must be a `Uint8Array`.
 -   `Uint8ClampedArray`: if a parameter must be a `Uint8ClampedArray`.
 -   `ArrayBuffer`: if a parameter must be an `ArrayBuffer`.
+-   `SharedArrayBuffer`: if a parameter must be a `SharedArrayBuffer`.
 
 For parameters which may be more than one type, use a `|` separator.
 
