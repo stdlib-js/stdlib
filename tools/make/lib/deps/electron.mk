@@ -37,7 +37,8 @@ deps_electron_index := 'var fs = require("fs");var path = require("path");var pa
 deps_electron_cli := '\#!/usr/bin/env node\nvar electron = require("./");var proc = require("child_process");var child = proc.spawn(electron, process.argv.slice(2), {"stdio": "inherit"});child.on("close", function (code) {process.exit(code);});'
 
 # Define the contents of the Electron Node.js `package.json`:
-deps_electron_package_json := '{"name":"@stdlib/electron","bin":{"electron":"cli.js"},"main":"index.js"}'
+deps_electron_package_json := '{"name":"@stdlib/electron","version":"VERSION","bin":{"electron":"cli.js"},"main":"index.js"}'
+deps_electron_package_json := $(subst VERSION,$(DEPS_ELECTRON_VERSION),$(deps_electron_package_json))
 
 # Define the build output prerequisites:
 deps_electron_prereqs := \
