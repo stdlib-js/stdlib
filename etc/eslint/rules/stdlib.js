@@ -100,16 +100,23 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'ArrayBuffer',
 		'Buffer',
 		'DataView',
+		'Error',
+		'EvalError',
 		'Float32Array',
 		'Float64Array',
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
+		'RangeError',
+		'ReferenceError',
 		'SharedArrayBuffer',
+		'SyntaxError',
+		'TypeError',
 		'Uint8Array',
 		'Uint8ClampedArray',
 		'Uint16Array',
-		'Uint32Array'
+		'Uint32Array',
+		'URIError'
 	]
 }];
 
