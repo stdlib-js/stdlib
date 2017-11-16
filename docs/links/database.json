@@ -172,20 +172,6 @@
       "proxy"
     ]
   },
-  "https://nodejs.org/api/buffer.html": {
-    "id": "node-buffer",
-    "description": "Node.js documentation for the Buffer class.",
-    "short_url": "",
-    "keywords": [
-      "node.js",
-      "node-js",
-      "node",
-      "buffer",
-      "binary",
-      "javascript",
-      "ecmascript"
-    ]
-  },
   "http://ocp.hul.harvard.edu/dl/contagion/010164675": {
     "id": "@nightingale:1859a",
     "description": "Library record for Florence Nightingale's polar area diagram of the sanitary history of the British army during the late war with Russia.",
@@ -1028,6 +1014,18 @@
       "set",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer": {
+    "id": "mdn-sharedarraybuffer",
+    "description": "Documentation for SharedArrayBuffer, a constructor returning an object used to represent a generic, fixed-length raw binary data buffer which can be used to create views of shared memory.",
+    "short_url": "",
+    "keywords": [
+      "array",
+      "buffer",
+      "typed array",
+      "shared",
+      "memory"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String": {
@@ -3051,6 +3049,20 @@
       "addons",
       "bindings",
       "binding"
+    ]
+  },
+  "https://nodejs.org/api/buffer.html": {
+    "id": "node-buffer",
+    "description": "Node.js documentation for the Buffer class.",
+    "short_url": "",
+    "keywords": [
+      "node.js",
+      "node-js",
+      "node",
+      "buffer",
+      "binary",
+      "javascript",
+      "ecmascript"
     ]
   },
   "https://nodejs.org/api/errors.html#errors_class_system_error": {
