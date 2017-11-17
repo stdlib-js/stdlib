@@ -2430,6 +2430,17 @@
       "rayleigh"
     ]
   },
+  "https://en.wikipedia.org/wiki/Rounding": {
+    "id": "rounding",
+    "description": "Wikipedia entry on rounding, an operation which replaces a numerical value by another value that is approximately equal to the original number but has a shorter, simpler, or more explicit representation.",
+    "short_url": "",
+    "keywords": [
+      "round",
+      "rounding",
+      "floating-point",
+      "math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Skewness": {
     "id": "skewness",
     "description": "Wikipedia entry for the skewness.",
