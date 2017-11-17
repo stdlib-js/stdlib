@@ -1,0 +1,30 @@
+
+{{alias}}()
+    Returns a list of array data types.
+
+    The output array contains the following data types:
+
+    - float32: single-precision floating-point numbers.
+    - float64: double-precision floating-point numbers.
+    - generic: values of any type.
+    - int16: signed 16-bit integers.
+    - int32: signed 32-bit integers.
+    - int8: signed 8-bit integers.
+    - uint16: unsigned 16-bit integers.
+    - uint32: unsigned 32-bit integers.
+    - uint8: unsigned 8-bit integers.
+    - uint8c: unsigned clamped 8-bit integers.
+
+    Returns
+    -------
+    out: Array<string>
+        List of array data types.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    <Array>
+
+    See Also
+    --------
+
