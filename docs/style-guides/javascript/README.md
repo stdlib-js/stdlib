@@ -906,17 +906,14 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ##### Notes
 
--   Do **not** use the `new` operator if the `array` length is [greater than][array-fast-elements] `64000` due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
+-   Do **not** use the `new` operator if the `array` length is **very large** due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
 
     ```javascript
-    var len = 100000;
     var arr;
     var i;
-    arr = new Array( 64000 );
-    for ( i = 0; i < arr.length; i++ ) {
-        arr[ i ] = Math.random();
-    }
-    for ( i = arr.length; i < len; i++ ) {
+
+    arr = [];
+    for ( i = 0; i < 1e7; i++ ) {
         arr.push( Math.random() );
     }
     ```
@@ -3606,8 +3603,6 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 [chrome-editorconfig]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
 
 [ecma-262]: http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
-
-[array-fast-elements]: https://github.com/thlorenz/v8-perf/blob/master/data-types.md#fast-elements
 
 [function-statements]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
 
