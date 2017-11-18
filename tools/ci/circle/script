@@ -165,6 +165,19 @@ clean_node() {
 	return 0
 }
 
+# Retries a command a maximum number of times.
+#
+# $1 - number of retries
+# $2 - command to retry
+retry() {
+	local code
+	for i in $(seq 1 "$1"); do
+		# By way of operator precedence, the clause after `||` only gets executed if one of the prior commands fails...
+		"$2" && code=0 && break || code="$?" && sleep 15;
+	done
+	return "${code}"
+}
+
 # Performs install tasks.
 #
 # $1 - log file
