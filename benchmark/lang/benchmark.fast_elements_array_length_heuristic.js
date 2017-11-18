@@ -23,7 +23,7 @@ var NAME = 'js-array-length-fast-elements-heuristic';
 *
 * -   https://github.com/v8/v8/blob/2feb99dc8ac75f20d2e5c9c1b343e923476851ea/src/objects/js-array.h#L87-L88
 */
-var MAX_FAST_ELEMENTS_HEURISTIC = 64000|0;
+var MAX_FAST_ELEMENTS_HEURISTIC = 64000|0; // eslint-disable-line id-length
 
 
 // FUNCTIONS //
@@ -140,8 +140,8 @@ function createBenchmark( fcn, len ) {
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
-	} // end FUNCTION benchmark()
-} // end FUNCTION createBenchmark()
+	}
+}
 
 
 // MAIN //
@@ -173,7 +173,7 @@ function main() {
 		f = createBenchmark( copy3, len );
 		bench( NAME+'::dynamic:len='+len, f );
 	}
-} // end FUNCTION main()
+}
 
 main();
 
