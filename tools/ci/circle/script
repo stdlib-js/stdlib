@@ -186,7 +186,22 @@ install() {
 	make FC=gfortran FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error occurred during install.' >&2
-		return 1
+		echo 'Retry 1 of 2...' >&2
+		sleep 15s
+		echo 'Installing...' >&2
+		make FC=gfortran FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Error occurred during install.' >&2
+			echo 'Retry 2 of 2...' >&2
+			sleep 30s
+			echo 'Installing...' >&2
+			make FC=gfortran FORTRAN_COMPILER=gfortran install >> "$1" 2>&1
+			if [[ "$?" -ne 0 ]]; then
+				echo 'Error occurred during install.' >&2
+				echo 'Failed to install 3 times. Aborting install.' >&2
+				return 1
+			fi
+		fi
 	fi
 	echo 'Install successful.' >&2
 	return 0
