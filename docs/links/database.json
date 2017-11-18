@@ -915,6 +915,16 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number": {
+    "id": "mdn-number",
+    "description": "Documentation for the Number constructor.",
+    "short_url": "",
+    "keywords": [
+      "number",
+      "constructor",
+      "javascripty"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object": {
     "id": "mdn-object",
     "description": "Mozilla Developer Network (MDN) documentation for JavaScript objects.",
