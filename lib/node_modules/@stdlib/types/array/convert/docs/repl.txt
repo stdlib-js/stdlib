@@ -1,0 +1,39 @@
+
+{{alias}}( arr, dtype )
+    Converts an input array to an array of a different data type.
+
+    The function supports the following data types:
+
+    - float32: single-precision floating-point numbers.
+    - float64: double-precision floating-point numbers.
+    - generic: values of any type.
+    - int16: signed 16-bit integers.
+    - int32: signed 32-bit integers.
+    - int8: signed 8-bit integers.
+    - uint16: unsigned 16-bit integers.
+    - uint32: unsigned 32-bit integers.
+    - uint8: unsigned 8-bit integers.
+    - uint8c: unsigned clamped 8-bit integers.
+
+    Parameters
+    ----------
+    arr: Array|TypedArray
+        Array to convert.
+
+    dtype: string
+        Output data type.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var out = {{alias}}( arr, 'float32' )
+    <Float32Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
+
