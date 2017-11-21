@@ -1,6 +1,6 @@
 'use strict';
 
-var randn = require( '@stdlib/math/base/random/randn' );
+var randn = require( '@stdlib/random/base/randn' );
 var Plot = require( '@stdlib/plot/ctor' );
 
 var plot;

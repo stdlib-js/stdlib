@@ -1,6 +1,7 @@
 'use strict';
 
-var createRandom = require( '@stdlib/math/base/random/randu' ).factory;
+var createRandom = require( '@stdlib/random/base/randu' ).factory;
+var Uint8Array = require( '@stdlib/types/array/uint8' );
 
 var state;
 var randu;

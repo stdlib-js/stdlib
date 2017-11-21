@@ -802,7 +802,7 @@
     -   [x] fs
     -   [x] math/base/blas
     -   [ ] math/base/dist
-    -   [x] math/base/random
+    -   [x] random/base
     -   [ ] math/base/special
     -   [ ] math/base/tools
     -   [ ] math/base/utils

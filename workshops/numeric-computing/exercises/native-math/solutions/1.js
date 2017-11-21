@@ -2,6 +2,7 @@
 
 var TWO_PI = require( '@stdlib/math/constants/float64-two-pi' );
 var linspace = require( '@stdlib/math/utils/linspace' );
+var Float64Array = require( '@stdlib/types/array/float64' );
 var Plot = require( '@stdlib/plot/ctor' );
 
 var plot;

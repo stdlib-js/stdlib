@@ -1,8 +1,9 @@
 'use strict';
 
 var Plot = require( '@stdlib/plot/ctor' );
-var createRandu = require( '@stdlib/math/base/random/randu' ).factory;
-var createRandn = require( '@stdlib/math/base/random/randn' ).factory;
+var createRandu = require( '@stdlib/random/base/randu' ).factory;
+var createRandn = require( '@stdlib/random/base/randn' ).factory;
+var Float64Array = require( '@stdlib/types/array/float64' );
 
 var sigma;
 var randn;

@@ -14,7 +14,7 @@ alter,(planned)
 create,(planned)
 zeros,(planned)
 ones,(planned)
-rand,math/base/random/*
+rand,random/base/*
 identity,utils/identity-function
 clear,(planned)
 symmetric,(planned)
@@ -59,7 +59,7 @@ arcsine.inv,math/base/dists/arcsine/quantile
 arcsine.mean,math/base/dists/arcsine/mean
 arcsine.median,math/base/dists/arcsine/median
 arcsine.mode,math/base/dists/arcsine/mode
-arcsine.sample,math/base/random/arcsine
+arcsine.sample,random/base/arcsine
 arcsine.variance,math/base/dists/arcsine/variance
 beta,math/base/dists/beta
 beta.pdf,math/base/dists//beta/pdf
@@ -68,7 +68,7 @@ beta.inv,math/base/dists/beta/quantile
 beta.mean,math/base/dists/beta/mean
 beta.median,math/base/dists/beta/median
 beta.mode,math/base/dists/beta/mode
-beta.sample,math/base/random/beta
+beta.sample,random/base/beta
 beta.variance,math/base/dists/beta/variance
 centralF,math/base/dists/f
 centralF.pdf,math/base/dists/f/prd
@@ -76,7 +76,7 @@ centralF.cdf,math/base/dists/f/cdf
 centralF.inv,math/base/dists/f/quantile
 centralF.mean,math/base/dists/f/mean
 centralF.mode,math/base/dists/f/mode
-centralF.sample,math/base/random/f
+centralF.sample,random/base/f
 centralF.variance,math/base/dists/f/variance
 cauchy,math/base/dists/cauchy
 cauchy.pdf,math/base/dists//cauchy/pdf
@@ -84,7 +84,7 @@ cauchy.cdf,math/base/dists//cauchy/cdf
 cauchy.inv,math/base/dists/cauchy/quantile
 cauchy.median,math/base/dists/cauchy/median
 cauchy.mode,math/base/dists/cauchy/mode
-cauchy.sample,math/base/random/cauchy
+cauchy.sample,random/base/cauchy
 cauchy.variance,math/base/dists/cauchy/variance
 chisquare,math/base/dists/chisquare
 chisquare.pdf,math/base/dists/chisquare/pdf
@@ -93,7 +93,7 @@ chisquare.inv,math/base/dists//chisquare/quantile
 chisquare.mean,math/base/dists/chisquare/mean
 chisquare.median,math/base/dists/chisquare/median
 chisquare.mode,math/base/dists/chisquare/mode
-chisquare.sample,math/base/random/chisquare
+chisquare.sample,random/base/chisquare
 chisquare.variance,math/base/dists/chisquare/variance
 exponential,math/base/dists/exponential
 exponential.pdf,math/base/dists/exponential/pdf
@@ -102,7 +102,7 @@ exponential.inv,math/base/dists/exponential/quantile
 exponential.mean,math/base/dists/exponential/mean
 exponential.median,math/base/dists/exponential/median
 exponential.mode,math/base/dists/exponential/mode
-exponential.sample,math/base/random/exponential
+exponential.sample,random/base/exponential
 exponential.variance,math/base/dists/exponential/variance
 gamma,math/base/dists/gamma
 gamma.pdf,math/base/dists/gamma/pdf
@@ -110,7 +110,7 @@ gamma.cdf,math/base/dists/gamma/cdf
 gamma.inv,math/base/dists/gamma/quantile
 gamma.mean,math/base/dists/gamma/mean
 gamma.mode,math/base/dists/gamma/mode
-gamma.sample,math/base/random/gamma
+gamma.sample,random/base/gamma
 gamma.variance,math/base/dists/gamma/variance
 invgamma,math/base/dists/invgamma
 invgamma.pdf,math/base/dists/invgamma/pdf
@@ -118,7 +118,7 @@ invgamma.cdf,math/base/dists/invgamma/cdf
 invgamma.inv,math/base/dists/invgamma/quantile
 invgamma.mean,math/base/dists/invgamma/mean
 invgamma.mode,math/base/dists/invgamma/mode
-invgamma.sample,math/base/random/invgamma
+invgamma.sample,random/base/invgamma
 invgamma.variance,math/base/dists/invgamma/variance
 kumaraswamy,math/base/dists/kumaraswamy
 kumaraswamy.pdf,math/base/dists/kumaraswamy/pdf
@@ -135,7 +135,7 @@ lognormal.inv,math/base/dists/lognormal/quantile
 lognormal.mean,math/base/dists/lognormal/mean
 lognormal.median,math/base/dists/lognormal/median
 lognormal.mode,math/base/dists/lognormal/mode
-lognormal.sample,math/base/random/lognormal
+lognormal.sample,random/base/lognormal
 lognormal.variance,math/base/dists/lognormal/variance
 normal,math/base/dists/normal
 normal.pdf,math/base/dists/normal/pdf
@@ -143,7 +143,7 @@ normal.cdf,math/base/dists/normal/cdf
 normal.inv,math/base/dists/normal/quantile
 normal.mean,math/base/dists/normal/mean
 normal.mode,math/base/dists/normal/mode
-normal.sample,math/base/random/normal
+normal.sample,random/base/normal
 normal.variance,math/base/dists/normal/variance
 pareto,math/base/dists/pareto-type1
 pareto.pdf,math/base/dists/pareto-type1/pdf
@@ -159,7 +159,7 @@ studentt.inv,math/base/dists/t/quantile
 studentt.mean,math/base/dists/t/mean
 studentt.median,math/base/dists/t/median
 studentt.mode,math/base/dists/t/mode
-studentt.sample,math/base/random/t
+studentt.sample,random/base/t
 studentt.variance,math/base/dists/t/variance
 tukey,(planned)
 tukey.cdf,(planned)
@@ -171,7 +171,7 @@ weibull.inv,math/base/dists/weibull/quantile
 weibull.mean,math/base/dists/weibull/mean
 weibull.median,math/base/dists/weibull/median
 weibull.mode,math/base/dists/weibull/mode
-weibull.sample,math/base/random/weibull
+weibull.sample,random/base/weibull
 weibull.variance,math/base/dists/weibull/variance
 uniform,math/base/dists/uniform
 uniform.pdf,math/base/dists/uniform/pdf
@@ -180,7 +180,7 @@ uniform.inv,math/base/dists/uniform/quantile
 uniform.mean,math/base/dists/uniform/mean
 uniform.median,math/base/dists/uniform/median
 uniform.mode,math/base/dists/uniform/mode
-uniform.sample,math/base/random/uniform
+uniform.sample,random/base/uniform
 uniform.variance,math/base/dists/uniform/variance
 binomial,math/base/dists/binomial
 binomial.pdf,math/base/dists/binomial/pdf
@@ -218,8 +218,8 @@ permutation,(planned)
 erf,math/base/special/erf
 erfc,math/base/special/erfc
 erfcinv,math/base/special/erfcinv
-randn,math/base/random/randn
-randg,math/base/random/gamma
+randn,random/base/randn
+randg,random/base/gamma
 add,(planned)
 subtract,(planned)
 divide,(planned)

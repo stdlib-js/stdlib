@@ -1,8 +1,9 @@
+/* eslint-disable vars-on-top */
 'use strict';
 
 var path = require( 'path' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var createRandom = require( '@stdlib/math/base/random/randu' ).factory;
+var createRandom = require( '@stdlib/random/base/randu' ).factory;
 var floor = require( '@stdlib/math/base/special/floor' );
 
 

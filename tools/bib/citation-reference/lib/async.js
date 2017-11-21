@@ -11,7 +11,7 @@ var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var tmpdir = require( '@stdlib/utils/tmpdir' );
 var cwd = require( '@stdlib/utils/cwd' );
-var minstd = require( '@stdlib/math/base/random/minstd' );
+var minstd = require( '@stdlib/random/base/minstd' );
 var readFile = require( '@stdlib/fs/read-file' );
 var defaults = require( './defaults.js' );
 var validate = require( './validate.js' );
@@ -95,6 +95,7 @@ function toReference( id, options, clbk ) {
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onFile( error ) {
 		var opts;
@@ -117,6 +118,7 @@ function toReference( id, options, clbk ) {
 	* @param {(Error|null)} error - error object
 	* @param {Buffer} stdout - standard output
 	* @param {Buffer} stderr - standard error
+	* @returns {void}
 	*/
 	function onExec( error, stdout, stderr ) {
 		var opts;
@@ -143,6 +145,7 @@ function toReference( id, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {(Buffer|string)} data - file contents
+	* @returns {void}
 	*/
 	function onRead( error, data ) {
 		if ( error ) {
@@ -167,6 +170,7 @@ function toReference( id, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {string} reference - reference
+	* @returns {void}
 	*/
 	function done( error, reference ) {
 		if ( error ) {

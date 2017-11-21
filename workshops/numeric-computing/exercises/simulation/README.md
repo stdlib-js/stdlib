@@ -70,15 +70,15 @@
 
 ## Tips
 
--   Use `123456` to seed [randu][@stdlib/math/base/random/randu], thus allowing comparison with solution results.
+-   Use `123456` to seed [randu][@stdlib/random/base/randu], thus allowing comparison with solution results.
 
 -   When processing the training corpus, consider using streams (e.g., [split][@stdlib/streams/utils/split], [join][@stdlib/streams/utils/join], and [transform][@stdlib/streams/utils/transform]) for efficient processing.
 
 -   To select a random element from a list,
 
     ```javascript
-    var randu = require( '@stdlib/math/base/random/randu' );
-    var floor = require( '@stdlib/math/base/random/floor' );
+    var randu = require( '@stdlib/random/base/randu' );
+    var floor = require( '@stdlib/random/base/floor' );
 
     var list = [ 1, 2, 3, 4, 5 ];
 
@@ -105,7 +105,7 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 [markov-chain]: https://en.wikipedia.org/wiki/Markov_chain
 
-[@stdlib/math/base/random/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+[@stdlib/random/base/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/random/base/randu
 
 [@stdlib/streams/utils/split]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/streams/utils/split
 

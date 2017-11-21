@@ -5,6 +5,7 @@ var getKeys = require( 'object-keys' ).shim();
 var Plot = require( '@stdlib/plot/ctor' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
+var Float64Array = require( '@stdlib/types/array/float64' );
 var rmse = require( './2.js' );
 
 /**
@@ -76,7 +77,7 @@ function compute( method ) {
 	var args;
 	var i;
 
-	data = require( './../fixtures/'+method+'/data.json' );
+	data = require( './../fixtures/'+method+'/data.json' ); // eslint-disable-line stdlib/no-dynamic-require
 	keys = getKeys( data );
 	args = [ method ];
 	for ( i = 0; i < keys.length; i++ ) {

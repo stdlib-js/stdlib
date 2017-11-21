@@ -98,7 +98,7 @@ identity,utils/identity-function
 constant,utils/constant-function
 noop,utils/noop
 times,utils/map-function
-random,math/base/random/*
+random,random/base/*
 mixin,utils/merge
 iteratee,N/A
 uniqueId,N/A

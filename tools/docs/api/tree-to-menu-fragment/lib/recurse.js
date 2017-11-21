@@ -7,7 +7,7 @@ var getKeys = require( 'object-keys' ).shim();
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var replace = require( '@stdlib/string/replace' );
-var minstd = require( '@stdlib/math/base/random/minstd-shuffle' );
+var minstd = require( '@stdlib/random/base/minstd-shuffle' );
 var listItem = require( './list_item.js' );
 var sort = require( './sort.js' );
 

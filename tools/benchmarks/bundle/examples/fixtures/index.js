@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var randu = require( '@stdlib/math/base/random/randu' );
+var randu = require( '@stdlib/random/base/randu' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var exp = require( '@stdlib/math/base/special/exp' );
 
@@ -49,7 +49,7 @@ function test( name, fcn ) {
 		}
 	}
 	time = process.hrtime( start );
-	time = time[ 0 ] + time[ 1 ]*1.0e-9;
+	time = time[ 0 ] + (time[ 1 ]*1.0e-9);
 
 	if ( isnan( y ) ) {
 		throw new Error( 'Something went wrong.' );
