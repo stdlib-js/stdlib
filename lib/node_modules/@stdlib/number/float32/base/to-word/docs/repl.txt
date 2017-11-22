@@ -1,0 +1,25 @@
+
+{{alias}}( x )
+    Returns an unsigned 32-bit integer corresponding to the IEEE 754 binary
+    representation of a single-precision floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Single-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 32-bit integer.
+
+    Examples
+    --------
+    > var f32 = {{alias:@stdlib/number/float64/base/to-float32}}( 1.337 )
+    1.3370000123977661
+    > var w = {{alias}}( f32 )
+    1068180177
+
+    See Also
+    --------
+

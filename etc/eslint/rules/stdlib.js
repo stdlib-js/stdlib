@@ -143,7 +143,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 * // Bad...
 *
 * // Invalid file extension:
-* var readme = require( '@stdlib/types/array/int32/README.md' );
+* var readme = require( '@stdlib/array/int32/README.md' );
 *
 * // Missing file extension:
 * var debug = require( 'debug/src/browser' );
@@ -151,7 +151,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 * @example
 * // Good...
 *
-* var Int32Array = require( '@stdlib/types/array/int32' );
+* var Int32Array = require( '@stdlib/array/int32' );
 *
 * var debug = require( 'debug/src/browser.js' );
 */
@@ -177,7 +177,7 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 *
 * @example
 * // Good...
-* var Float32Array = require( '@stdlib/types/array/float32' );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var arr = new Float32Array();
 */

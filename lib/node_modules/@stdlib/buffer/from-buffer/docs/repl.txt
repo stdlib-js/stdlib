@@ -1,0 +1,23 @@
+
+{{alias}}( buffer )
+    Copies buffer data to a new Buffer instance.
+
+    Parameters
+    ----------
+    buffer: Buffer
+        Buffer to copy from.
+
+    Returns
+    -------
+    out: Buffer
+        Buffer instance.
+
+    Examples
+    --------
+    > var b1 = {{alias:@stdlib/buffer/from-array}}( [ 1, 2, 3, 4 ] );
+    > var b2 = {{alias}}( b1 )
+    <Buffer>[ 1, 2, 3, 4 ]
+
+    See Also
+    --------
+

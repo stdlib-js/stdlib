@@ -4,8 +4,8 @@ var linspace = require( '@stdlib/math/utils/linspace' );
 var erf = require( '@stdlib/math/base/special/erf' );
 var randu = require( '@stdlib/random/base/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
-var Float64Array = require( '@stdlib/types/array/float64' );
-var Int32Array = require( '@stdlib/types/array/int32' );
+var Float64Array = require( '@stdlib/array/float64' );
+var Int32Array = require( '@stdlib/array/int32' );
 var Plot = require( '@stdlib/plot/ctor' );
 var ColumnChart = require( '@stdlib/plot/sparklines/unicode/column' );
 
