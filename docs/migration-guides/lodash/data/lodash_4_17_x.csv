@@ -86,9 +86,9 @@ partition,utils/bifurcate
 reduce,utils/reduce
 reduceRight,utils/reduce-right
 reject,(planned)
-sample,math/random
+sample,random/sample
 sampleSize,N/A
-shuffle,math/random
+shuffle,random/shuffle
 size,N/A
 some,utils/any-by
 sortBy,(planned)
