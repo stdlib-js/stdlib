@@ -19,8 +19,8 @@ sortBy,N/A
 groupBy,utils/group-by
 indexBy,(maybe)
 countBy,utils/count-by
-shuffle,math/random/*
-sample,math/random/*
+shuffle,random/shuffle
+sample,random/sample
 toArray,N/A
 size,N/A
 partition,utils/bifurcate

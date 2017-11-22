@@ -5,7 +5,7 @@ var getKeys = require( 'object-keys' ).shim();
 var Plot = require( '@stdlib/plot/ctor' );
 var epsdiff = require( '@stdlib/math/base/utils/float64-epsilon-difference' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
-var Float64Array = require( '@stdlib/types/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 var rmse = require( './2.js' );
 
 var FCNS = {

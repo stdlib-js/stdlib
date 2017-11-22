@@ -1,0 +1,23 @@
+
+{{alias}}( z )
+    Returns the imaginary component of a complex number.
+
+    Parameters
+    ----------
+    z: Complex
+        Complex number.
+
+    Returns
+    -------
+    im: number
+        Imaginary component.
+
+    Examples
+    --------
+    > var z = new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 );
+    > var im = {{alias}}( z )
+    3.0
+
+    See Also
+    --------
+

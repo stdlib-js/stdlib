@@ -6,7 +6,7 @@ var createRandu = require( '@stdlib/random/base/randu' ).factory;
 var createRandn = require( '@stdlib/random/base/randn' ).factory;
 var onlineRegression = require( '@stdlib/ml/online-sgd-regression' );
 var httpServer = require( '@stdlib/tools/disposable-http-server' );
-var Float64Array = require( '@stdlib/types/array/float64' );
+var Float64Array = require( '@stdlib/array/float64' );
 
 var sigma;
 var randn;

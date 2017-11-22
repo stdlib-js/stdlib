@@ -1,0 +1,23 @@
+
+{{alias}}( z )
+    Returns the real component of a complex number.
+
+    Parameters
+    ----------
+    z: Complex
+        Complex number.
+
+    Returns
+    -------
+    re: number
+        Real component.
+
+    Examples
+    --------
+    > var z = new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 );
+    > var re = {{alias}}( z )
+    5.0
+
+    See Also
+    --------
+

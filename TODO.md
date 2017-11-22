@@ -702,7 +702,7 @@
     -   go
     -   r
 
-1.  Add type specs to `@stdlib/types/` folder
+1.  Add type specs to `@stdlib/` folder
 
     -   `abstract-ndarray`
     -   `abstract-complex`
