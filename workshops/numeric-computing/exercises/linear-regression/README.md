@@ -18,7 +18,7 @@
 
     to plot a line over the interval `[0,1]`.
 
--   Using the same model, generate `100` "noisy" `(x,y)` pairs, where `x` is sampled from a [uniform][@stdlib/math/base/random/randu] distribution over the interval `[0,1]` and `y` has [Gaussian][@stdlib/math/base/random/randn] noise with standard deviation `sigma = 2.5`.
+-   Using the same model, generate `100` "noisy" `(x,y)` pairs, where `x` is sampled from a [uniform][@stdlib/random/base/randu] distribution over the interval `[0,1]` and `y` has [Gaussian][@stdlib/random/base/randn] noise with standard deviation `sigma = 2.5`.
 
     ```text
     y_noisy[i] = y[i] + randn()*sigma = 5.0*(randu()*1.0) + 3.0 + randn()*sigma 
@@ -41,7 +41,7 @@
 
 ## Tips
 
--   Use `123456` to seed [randu][@stdlib/math/base/random/randu], thus allowing comparison with solution results.
+-   Use `123456` to seed [randu][@stdlib/random/base/randu], thus allowing comparison with solution results.
 
 ## Testing
 
@@ -61,9 +61,9 @@ When all your solutions succeed, proceed to the [next exercise][next-exercise].
 
 [@stdlib/ml/online-sgd-regression]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ml/online-sgd-regression
 
-[@stdlib/math/base/random/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+[@stdlib/random/base/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/random/base/randu
 
-[@stdlib/math/base/random/randn]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randn
+[@stdlib/random/base/randn]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/random/base/randn
 
 [next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises/
 

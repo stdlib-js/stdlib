@@ -73,8 +73,6 @@ def benchmark(name, setup, stmt, iterations):
     """
     t = timeit.Timer(stmt, setup=setup)
 
-    print_version()
-
     i = 0
     while i < REPEATS:
         print("# python::scipy::" + NAME + name)
@@ -87,6 +85,8 @@ def benchmark(name, setup, stmt, iterations):
 
 def main():
     """Run the benchmarks."""
+    print_version()
+
     name = ":TODO"
     setup = "from scipy import TODO; from random import random;"
     stmt = "y = TODO(random())"

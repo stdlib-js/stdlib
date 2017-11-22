@@ -189,7 +189,7 @@ sum,(planned)
 sumBy,(maybe)
 clamp,(planned)
 inRange,(planned)
-random,math/base/random/*
+random,random/base/*
 assign,utils/merge
 assignIn,(maybe)
 assignInWith,N/A

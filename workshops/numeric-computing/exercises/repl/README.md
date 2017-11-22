@@ -23,7 +23,7 @@
 
 -   Generate a plot of [`erf`][@stdlib/math/base/special/erf] over the interval `[-10,10]`.
 -   Generate a column chart [sparkline][@stdlib/plot/sparklines/unicode/column]. Note that `ColumnChart` is aliased as `Sparkline` in the REPL.
--   Simulate `10000` pseudorandom [uniform][@stdlib/math/base/random/randu] numbers, bin the numbers into `101` **equally** spaced (see [linspace][@stdlib/math/utils/linspace]) bins from `0` to `1`, and generate a sparkline showing the bin counts.
+-   Simulate `10000` pseudorandom [uniform][@stdlib/random/base/randu] numbers, bin the numbers into `101` **equally** spaced (see [linspace][@stdlib/math/utils/linspace]) bins from `0` to `1`, and generate a sparkline showing the bin counts.
 
 ### 3) Scripts
 
@@ -47,7 +47,7 @@ When you have completed all exercises, proceed to the [next exercise][next-exerc
 
 [@stdlib/plot/sparklines/unicode/column]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/plot/sparklines/unicode/column
 
-[@stdlib/math/base/random/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/random/randu
+[@stdlib/random/base/randu]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/random/base/randu
 
 [next-exercise]: https://github.com/stdlib-js/stdlib/blob/develop/workshops/numeric-computing/exercises
 
