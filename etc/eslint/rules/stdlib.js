@@ -56,6 +56,25 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 rules[ 'stdlib/no-dynamic-require' ] = 'error';
 
 /**
+* Enforce that require() expressions are not immediately invoked.
+*
+* @name no-immediate-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var debug = require( 'debug' )( 'stdlib' );
+*
+* @example
+* // Good...
+* var logger = require( 'debug' );
+* var debug = logger( 'stdlib' );
+*/
+rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'object-keys').shim() has been replaced
+
+/**
 * Disallow require() calls of another package's internals.
 *
 * @name no-internal-require
@@ -72,6 +91,28 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 * var betainc = require( '@stdlib/math/base/special/betainc' );
 */
 rules[ 'stdlib/no-internal-require' ] = 'error';
+
+/**
+* Disallow require() calls of another package's internals.
+*
+* @name no-nested-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var special = require( '@stdlib' ).math.base.special;
+*
+* @example
+* // Good...
+* var special = require( '@stdlib/math/base' ).special;
+*
+* @example
+* // Good...
+* var special = require( '@stdlib/math/base/special' );
+*/
+rules[ 'stdlib/no-nested-require' ] = 'error';
 
 /**
 * Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
@@ -164,9 +205,9 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 }];
 
 /**
-* Enforce that typed array constructors are explicitly required.
+* Enforce that specified globals are explicitly required.
 *
-* @name require-typed-arrays
+* @name require-globals
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -181,7 +222,23 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 *
 * var arr = new Float32Array();
 */
-rules[ 'stdlib/require-typed-arrays' ] = 'error';
+rules[ 'stdlib/require-globals' ] = [ 'error', {
+	'globals': [
+		'ArrayBuffer',
+		'Buffer',
+		'DataView',
+		'Float32Array',
+		'Float64Array',
+		'Int8Array',
+		'Int16Array',
+		'Int32Array',
+		'SharedArrayBuffer',
+		'Uint8Array',
+		'Uint8ClampedArray',
+		'Uint16Array',
+		'Uint32Array'
+	]
+}];
 
 /**
 * Enforce that typed array constructors are explicitly required.
