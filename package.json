@@ -71,6 +71,7 @@
     "chai": "^3.5.0",
     "common-shakeify": "^0.4.0",
     "david": "^11.0.0",
+    "doctrine": "^2.0.0",
     "envify": "^4.0.0",
     "eslint": "4.x.x",
     "factor-bundle": "^2.5.0",
