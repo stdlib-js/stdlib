@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if a value is a valid typed array length.
+
+    A valid length property for a typed array instance is any integer value on
+    the interval [0, 2^53-1].
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a valid typed array length.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 5 )
+    true
+    > bool = {{alias}}( 2.0e200 )
+    false
+    > bool = {{alias}}( -3.14 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+
