@@ -19,6 +19,7 @@
   "main": "./lib",
   "directories": {
     "bin": "./bin",
+    "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
