@@ -33,6 +33,7 @@
 	".txt",
 	".wasm",
 	".wast",
+	".wat",
 	".woff",
 	".yml",
 	".xml"
