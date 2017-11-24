@@ -2234,7 +2234,6 @@ Throw and provide tailored `error` messages if expected conditions are not met. 
 /**
 * Beep boop.
 *
-* @api public
 * @param {Function} clbk - callback
 */
 function boop( clbk ) {
@@ -2250,7 +2249,6 @@ function boop( clbk ) {
 /**
 * Beep boop.
 *
-* @api public
 * @param {Function} clbk - callback
 */
 function beep( clbk ) {
