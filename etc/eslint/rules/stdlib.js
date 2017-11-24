@@ -83,7 +83,7 @@ rules[ 'stdlib/jsdoc-check-tag-names' ] = 'error';
 /**
 * Require that JSDoc descriptions start with an uppercase letter and end with a period.
 *
-* @name jsdoc-description-sentence
+* @name jsdoc-leading-description-sentence
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -120,7 +120,7 @@ rules[ 'stdlib/jsdoc-check-tag-names' ] = 'error';
 *     return Math.random();
 * }
 */
-rules[ 'stdlib/jsdoc-description-sentence' ] = 'error';
+rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 
 /**
 * Enforce that require() calls have only string literals as parameters.
