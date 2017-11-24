@@ -32,14 +32,14 @@ DEPS_WABT_TEST_OUT ?= $(DEPS_WABT_TEST_DIR)/build
 DEPS_WABT_TEST_INSTALL ?= $(DEPS_WABT_TEST_DIR)/test_install.wasm
 
 # Define output path for a compiled test file:
-DEPS_WABT_TEST_INSTALL_WAST_OUT ?= $(DEPS_WABT_TEST_OUT)/test.wast
+DEPS_WABT_TEST_INSTALL_WAT_OUT ?= $(DEPS_WABT_TEST_OUT)/test.wat
 DEPS_WABT_TEST_INSTALL_WASM_OUT ?= $(DEPS_WABT_TEST_OUT)/test.wasm
 
-# Define the path to the `wasm2wast` utility:
-WASM2WAST ?= $(DEPS_WABT_BUILD_OUT)/wasm2wast
+# Define the path to the `wasm2wat` utility:
+WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/wasm2wat
 
-# Define the path to the `wast2wasm` utility:
-WAST2WASM ?= $(DEPS_WABT_BUILD_OUT)/wast2wasm
+# Define the path to the `wat2wasm` utility:
+WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/wat2wasm
 
 
 # TARGETS #
@@ -71,21 +71,21 @@ $(DEPS_WABT_TEST_OUT):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_WABT_TEST_OUT)
 
 
-# Compile install WAST test.
+# Compile install WAT test.
 #
-# This target compiles a WAST test file for testing an installation.
+# This target compiles a WAT test file for testing an installation.
 
-$(DEPS_WABT_TEST_INSTALL_WAST_OUT): $(DEPS_WABT_BUILD_OUT) $(DEPS_WABT_TEST_OUT)
-	$(QUIET) $(WASM2WAST) $(DEPS_WABT_TEST_INSTALL) \
-		-o $(DEPS_WABT_TEST_INSTALL_WAST_OUT)
+$(DEPS_WABT_TEST_INSTALL_WAT_OUT): $(DEPS_WABT_BUILD_OUT) $(DEPS_WABT_TEST_OUT)
+	$(QUIET) $(WASM2WAT) $(DEPS_WABT_TEST_INSTALL) \
+		-o $(DEPS_WABT_TEST_INSTALL_WAT_OUT)
 
 
 # Compile install WASM test.
 #
 # This target compiles a WASM test file for testing an installation.
 
-$(DEPS_WABT_TEST_INSTALL_WASM_OUT): $(DEPS_WABT_TEST_INSTALL_WAST_OUT)
-	$(QUIET) $(WAST2WASM) $(DEPS_WABT_TEST_INSTALL_WAST_OUT) \
+$(DEPS_WABT_TEST_INSTALL_WASM_OUT): $(DEPS_WABT_TEST_INSTALL_WAT_OUT)
+	$(QUIET) $(WAT2WASM) $(DEPS_WABT_TEST_INSTALL_WAT_OUT) \
 		-o $(DEPS_WABT_TEST_INSTALL_WASM_OUT)
 
 
@@ -158,7 +158,7 @@ deps-update-wabt: $(DEPS_WABT_BUILD_OUT)
 #
 # This target tests an installation.
 
-deps-test-wabt: $(DEPS_WABT_TEST_INSTALL_WAST_OUT) $(DEPS_WABT_TEST_INSTALL_WASM_OUT)
+deps-test-wabt: $(DEPS_WABT_TEST_INSTALL_WAT_OUT) $(DEPS_WABT_TEST_INSTALL_WASM_OUT)
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
