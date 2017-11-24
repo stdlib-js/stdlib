@@ -37,6 +37,92 @@ var rules = {};
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
+* Require that only allowed JSDoc tags are used.
+*
+* @name jsdoc-check-tag-names
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-check-tag-names' ] = 'error';
+
+/**
+* Require that JSDoc descriptions start with an uppercase letter and end with a period.
+*
+* @name jsdoc-description-sentence
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * returns a pseudo-random number on [0,1]
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Returns a pseudo-random number on [0,1].
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*/
+rules[ 'stdlib/jsdoc-description-sentence' ] = 'error';
+
+/**
 * Enforce that require() calls have only string literals as parameters.
 *
 * @name no-dynamic-require
@@ -93,7 +179,7 @@ rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'o
 rules[ 'stdlib/no-internal-require' ] = 'error';
 
 /**
-* Disallow require() calls of another package's internals.
+* Enforce that one does not use nested property access for `require()` expressions.
 *
 * @name no-nested-require
 * @memberof rules
