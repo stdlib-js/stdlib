@@ -39,7 +39,7 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 /**
 * Require that only allowed JSDoc tags are used.
 *
-* @name jsdoc-check-tag-names
+* @name jsdoc-tag-names
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -78,7 +78,7 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 *     return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-check-tag-names' ] = 'error';
+rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 
 /**
 * Require that JSDoc descriptions start with an uppercase letter and end with a period.
