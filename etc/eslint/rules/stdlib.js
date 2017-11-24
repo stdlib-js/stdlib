@@ -37,7 +37,7 @@ var rules = {};
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
-* Require an empty line before single-line comments.
+* Require that only allowed JSDoc tags are used.
 *
 * @name jsdoc-check-tag-names
 * @memberof rules
@@ -81,7 +81,7 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 rules[ 'stdlib/jsdoc-check-tag-names' ] = 'error';
 
 /**
-* Require an empty line before single-line comments.
+* Require that JSDoc descriptions start with an uppercase letter and end with a period.
 *
 * @name jsdoc-description-sentence
 * @memberof rules
