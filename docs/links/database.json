@@ -2896,6 +2896,7 @@
       "wasm",
       "wabt",
       "wast",
+      "wat",
       "toolkit"
     ]
   },
