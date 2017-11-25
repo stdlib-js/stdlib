@@ -5,6 +5,12 @@
 */
 
 /**
+* An array-like object (excluding string primitives).
+*
+* @typedef {(Array|String|Object)} ArrayLikeObject
+*/
+
+/**
 * A plain object; i.e., either `{}` or an object created via `Object.create( null )`.
 *
 * @typedef {Object} PlainObject
