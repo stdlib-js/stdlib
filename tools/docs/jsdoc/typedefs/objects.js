@@ -31,38 +31,6 @@
 */
 
 /**
-* A node of the abstract syntax tree (AST) from ESTree.
-*
-* @typedef {Object} ASTNode
-*
-* @see [ESTree]{@link https://github.com/estree/estree}
-*/
-
-/**
-* A benchmark instance.
-*
-* @typedef {Object} Benchmark
-*/
-
-/**
-* A spawned process instance.
-*
-* @typedef {Object} Process
-*/
-
-/**
-* A weight vector of model coefficients.
-*
-* @typedef {Object} WeightVector
-*/
-
-/**
-* Window object containing a DOM document.
-*
-* @typedef {Object} Window
-*/
-
-/**
 * An object containing function options.
 *
 * @typedef {PlainObject} Options
