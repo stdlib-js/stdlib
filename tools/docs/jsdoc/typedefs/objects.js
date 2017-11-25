@@ -57,6 +57,12 @@
 */
 
 /**
+* Window object containing a DOM document.
+*
+* @typedef {Object} Window
+*/
+
+/**
 * An object containing function options.
 *
 * @typedef {PlainObject} Options
