@@ -89,6 +89,12 @@
 */
 
 /**
+* An unsigned integer.
+*
+* @typedef {number} uinteger
+*/
+
+/**
 * A number primitive which has an integer value on the interval  `[-2147483648, 2147483647]`. This number may be interpreted by the runtime engine as a 32-bit integer, which may very well be the case after performing bitwise operations; e.g., `3.14|0`.
 *
 * @typedef {number} integer32

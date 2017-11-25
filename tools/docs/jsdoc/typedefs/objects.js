@@ -5,6 +5,12 @@
 */
 
 /**
+* An array-like object (excluding string primitives).
+*
+* @typedef {(Array|String|Object)} ArrayLikeObject
+*/
+
+/**
 * A plain object; i.e., either `{}` or an object created via `Object.create( null )`.
 *
 * @typedef {Object} PlainObject
@@ -22,6 +28,26 @@
 * @typedef {PlainObject} JSON
 *
 * @see [JSON]{@link http://www.json.org/}
+*/
+
+/**
+* A node of the abstract syntax tree (AST) from ESTree.
+*
+* @typedef {Object} ASTNode
+*
+* @see [ESTree]{@link https://github.com/estree/estree}
+*/
+
+/**
+* A benchmark instance.
+*
+* @typedef {Object} Benchmark
+*/
+
+/**
+* A weight vector of model coefficients.
+*
+* @typedef {Object} WeightVector
 */
 
 /**
