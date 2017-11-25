@@ -45,6 +45,12 @@
 */
 
 /**
+* A spawned process instance.
+*
+* @typedef {Object} Process
+*/
+
+/**
 * A weight vector of model coefficients.
 *
 * @typedef {Object} WeightVector
