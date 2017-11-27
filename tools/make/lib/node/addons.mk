@@ -22,10 +22,14 @@ endif
 endif
 
 # Define command-line options for filtering add-ons:
-NODE_ADDONS_PATTERN ?= **/package.json
+ifndef NODE_ADDONS_PATTERN
+	node_addons_pattern := **/package.json
+else
+	node_addons_pattern := "**/$(NODE_ADDONS_PATTERN)/**/package.json"
+endif
 
 # Define command-line flags when listing add-ons:
-install_node_addons_list_addons_flags := "--pattern $(NODE_ADDONS_PATTERN)"
+install_node_addons_list_addons_flags := "--pattern $(node_addons_pattern)"
 
 
 # TARGETS #
