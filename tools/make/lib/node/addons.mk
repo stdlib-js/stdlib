@@ -10,7 +10,7 @@ NODE_GYP ?= $(BIN_DIR)/node-gyp
 # Define command-line options when invoking node-gyp.
 NODE_GYP_FLAGS ?=
 
-# Define
+# Define GYP "defines":
 ifndef NODE_GYP_DEFINES
 	NODE_GYP_DEFINES := fortran_compiler=$(FC)
 ifneq (, $(BLAS))
@@ -21,6 +21,12 @@ endif
 endif
 endif
 
+# Define command-line options for filtering add-ons:
+NODE_ADDONS_PATTERN ?= **/package.json
+
+# Define command-line flags when listing add-ons:
+install_node_addons_list_addons_flags := "--pattern $(NODE_ADDONS_PATTERN)"
+
 
 # TARGETS #
 
@@ -29,7 +35,7 @@ endif
 # This target installs native add-ons. If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
 
 install-node-addons: $(NODE_MODULES) clean-node-addons
-	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
+	$(QUIET) $(MAKE) LIST_PACKAGE_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \
@@ -49,7 +55,7 @@ install-node-addons: $(NODE_MODULES) clean-node-addons
 # This target removes all compiled and generated files for native add-ons.
 
 clean-node-addons:
-	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
+	$(QUIET) $(MAKE) LIST_PACKAGE_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \
