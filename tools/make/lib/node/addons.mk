@@ -21,7 +21,7 @@ endif
 endif
 endif
 
-# Define command-line options for filtering add-ons:
+# Define an add-on package pattern filter:
 ifndef NODE_ADDONS_PATTERN
 	node_addons_pattern := **/package.json
 else
