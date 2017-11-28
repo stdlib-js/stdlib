@@ -15,7 +15,7 @@ var spawn = require( 'child_process' ).spawn;
 */
 function onError( error ) {
 	process.exitCode = 1;
-	console.error( error.message );
+	console.error( error.message ); // eslint-disable-line no-console
 } // end FUNCTION onError()
 
 /**
@@ -28,7 +28,7 @@ function onError( error ) {
 function onFinish( code ) {
 	if ( code !== 0 ) {
 		process.exitCode = code;
-		return console.error( '`make` process exited with code `'+code + '.\n' );
+		return console.error( '`make` process exited with code `'+code + '`.' ); // eslint-disable-line no-console
 	}
 } // end FUNCTION onFinish()
 
