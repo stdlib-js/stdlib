@@ -14,8 +14,8 @@ var spawn = require( 'child_process' ).spawn;
 * @param {Error} error - error object
 */
 function onError( error ) {
-	process.stderr.write( error.message+'\n', 'utf8' );
-	process.exit( 1 );
+	process.exitCode = 1;
+	console.error( error.message );
 } // end FUNCTION onError()
 
 /**
@@ -27,14 +27,9 @@ function onError( error ) {
 */
 function onFinish( code ) {
 	if ( code !== 0 ) {
-		process.stderr.write( '`make` process exited with code `'+code + '.\n' );
-		return process.exit( code );
+		process.exitCode = code;
+		return console.error( '`make` process exited with code `'+code + '.\n' );
 	}
-	// Cannot write to `stdout` and then immediately `exit` as `buffer` may not yet have drained https://github.com/nodejs/node/issues/6456.
-	// process.exit( 0 );
-
-	// HACK: workaround is to use `console.log` and no exit:
-	console.log( '' );
 } // end FUNCTION onFinish()
 
 /**
@@ -79,6 +74,7 @@ function plugin( dir, cwd, subpath ) {
 
 	// Environment variables:
 	if ( subpath ) {
+		subpath = subpath.substring( 17 ); // removes 'lib/node_modules/'
 		args.push( 'PKGS_WASM_PATTERN='+subpath );
 	}
 	// Target:
