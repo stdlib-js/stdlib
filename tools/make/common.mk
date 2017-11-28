@@ -329,6 +329,15 @@ DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 # Define the Emscripten SDK version:
 DEPS_EMSDK_VERSION ?= incoming
 
+# Define the path to Emscripten:
+DEPS_EMSDK_EMSCRIPTEN ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)
+
+# Define the path to the Emscripten C compiler:
+DEPS_EMSDK_EMSCRIPTEN_EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN)/emcc
+
+# Define the path to the Emscripten C++ compiler:
+DEPS_EMSDK_EMSCRIPTEN_EMXX ?= $(DEPS_EMSDK_EMSCRIPTEN)/em++
+
 # Define the Binaryen version:
 DEPS_EMSDK_BINARYEN_VERSION ?= master
 
