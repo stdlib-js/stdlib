@@ -36,6 +36,7 @@ plugins[ 'test-summary' ] = path.join( prefix, 'makie-test-summary' );
 plugins[ 'test-cov' ] = path.join( prefix, 'makie-test-cov' );
 plugins[ 'view-complexity' ] = path.join( prefix, 'makie-view-complexity' );
 plugins[ 'view-cov' ] = path.join( prefix, 'makie-view-cov' );
+plugins[ 'wasm' ] = path.join( prefix, 'makie-wasm' );
 
 
 // EXPORTS //
