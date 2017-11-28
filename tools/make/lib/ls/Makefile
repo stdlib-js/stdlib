@@ -29,6 +29,12 @@ PYTHON_SOURCES_PATTERN ?= *.py
 # Define a filename pattern for R source files:
 R_SOURCES_PATTERN ?= *.R
 
+# Define a filename pattern for WebAssembly source files:
+WASM_SOURCES_PATTERN ?= *.wasm
+
+# Define a filename pattern for WebAssembly source text files:
+WAT_SOURCES_PATTERN ?= *.wat
+
 # Define a filepath pattern for source files:
 SOURCES_FILTER ?= .*/.*
 
@@ -176,6 +182,20 @@ SVG_EQUATIONS_PATTERN ?= equation*.svg
 
 # Define a filepath pattern for SVG equation files:
 SVG_EQUATIONS_FILTER ?= .*/.*
+
+
+# Define a filename pattern for WebAssembly files:
+WASM_PATTERN ?= *.wasm
+
+# Define a filepath pattern for WebAssembly files:
+WASM_FILTER ?= .*/.*
+
+
+# Define a filename pattern for WebAssembly text files:
+WAT_PATTERN ?= *.wat
+
+# Define a filepath pattern for WebAssembly text files:
+WAT_FILTER ?= .*/.*
 
 
 # Define a filepath pattern for packages:
