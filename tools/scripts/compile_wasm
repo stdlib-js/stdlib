@@ -1,0 +1,166 @@
+#!/usr/bin/env bash
+#
+# Script for compiling WebAssembly for a provided absolute package path.
+#
+# Usage: compile_wasm <pkg>
+#
+# Arguments:
+#
+#   pkg      Package directory (absolute path).
+#
+
+
+# VARIABLES #
+
+# Set the package path:
+pkg_path="$1"
+
+# Define the command for running Node.js:
+node_cmd="${NODE}"
+if [[ -z "${node_cmd}" ]]; then
+	node_cmd='node'
+fi
+
+# Define the node path:
+node_path="${NODE_PATH}"
+
+# Define the path to the Emscripten `emcc` compiler:
+emcc_compiler="${EMCC_COMPILER}"
+if [[ -z "${emcc_compiler}" ]]; then
+	emcc_compiler='emcc'
+fi
+
+# Define the path to an executable for converting a WebAssembly binary to the WebAssembly text format:
+wasm_to_wat="${WASM2WAT}"
+if [[ -z "${wasm_to_wat}" ]]; then
+	wasm_to_wat='wasm2wat'
+fi
+
+# Define the folder containing source files:
+src_folder="${SRC_FOLDER}"
+if [[ -z "${src_folder}" ]]; then
+	src_folder='src'
+fi
+
+# Define a list of external `include` directories:
+include="${INCLUDE}"
+
+# Define a list of external source files:
+source_files="${SOURCE_FILES}"
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo '' >&2
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: compile_wasm <pkg>' >&2
+	echo '' >&2
+}
+
+# Resolves external `include` directories.
+#
+# $1 - package directory
+resolve_includes() {
+	local includes
+	local script
+
+	# Generate the script for resolving external include directories:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),{},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve include directories:
+	includes=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${includes}"
+}
+
+# Resolves external source files.
+#
+# $1 - package directory
+resolve_source_files() {
+	local source_files
+	local script
+
+	# Generate the script for resolving external source files:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),{},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve files:
+	source_files=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${source_files}"
+}
+
+# Compiles WebAssembly.
+#
+# $1 - source directory
+compile() {
+	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" INCLUDE="${include}" SOURCE_FILES="${source_files}" make wasm 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error when attempting to compile WebAssembly.' >&2
+		return 1
+	fi
+	echo 'Successfully compiled WebAssembly.' >&2
+	return 0
+}
+
+
+# MAIN #
+
+# Main execution sequence.
+main() {
+	local src_dir="${pkg_path}/${src_folder}"
+
+	if [[ -z "${include}" ]]; then
+		echo 'Resolving external include directories...' >&2
+		include=$(resolve_includes "${pkg_path}")
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	fi
+	if [[ -z "${source_files}" ]]; then
+		echo 'Resolving external source files...' >&2
+		source_files=$(resolve_source_files "${pkg_path}")
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	fi
+	echo 'Compiling WebAssembly...' >&2
+	compile "${src_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	print_success
+	cleanup
+	exit 0
+}
+
+# Handle arguments...
+if [[ "$#" -eq 0 ]]; then
+	usage
+	exit 0
+elif [[ "$#" -gt 1 ]]; then
+	echo 'ERROR: unrecognized arguments. Must provide a package path.' >&2
+	exit 1
+fi
+
+# Run main:
+main
