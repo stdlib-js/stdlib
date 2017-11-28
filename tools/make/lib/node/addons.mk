@@ -46,6 +46,7 @@ install-node-addons: $(NODE_MODULES) clean-node-addons
 		echo ''; \
 		echo "Building add-on: $$pkg"; \
 		cd $$pkg && \
+			NODE_PATH="$(NODE_PATH)" \
 			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| { echo "Error: failed to build add-on: $$pkg"; exit 0; } \
