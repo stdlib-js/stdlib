@@ -25,6 +25,8 @@ This utility provides support for executing a subset of `Makefile` commands from
 -   `list-pkgs-names`
 -   `stats-list-contributors`
 -   `markdown-asset-link`
+-   `install-node-addons`
+-   `wasm`
 
 When executing a command, the current working directory is used as a filter. Thus, when invoking the `test` command, **only** those tests in the current working directory and below will be run.
 
