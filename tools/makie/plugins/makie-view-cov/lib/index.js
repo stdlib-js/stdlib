@@ -14,8 +14,8 @@ var spawn = require( 'child_process' ).spawn;
 * @param {Error} error - error object
 */
 function onError( error ) {
-	process.stderr.write( error.message+'\n', 'utf8' );
-	return process.exit( 1 );
+	process.exitCode = 1;
+	console.error( error.message ); // eslint-disable-line no-console
 } // end FUNCTION onError()
 
 /**
@@ -23,13 +23,13 @@ function onError( error ) {
 *
 * @private
 * @param {number} code - exit code
+* @returns {void}
 */
 function onFinish( code ) {
 	if ( code !== 0 ) {
-		process.stderr.write( '`make` process exited with code `'+code + '.\n' );
-		return process.exit( code );
+		process.exitCode = code;
+		return console.error( 'Child process exited with code `'+code + '`.' ); // eslint-disable-line no-console
 	}
-	process.exit( 0 );
 } // end FUNCTION onFinish()
 
 /**
@@ -56,7 +56,7 @@ function stderr( data ) {
 // MAIN //
 
 /**
-* `makie` plugin to view a test coverage report.
+* Plugin to view a test coverage report.
 *
 * @param {string} dir - Makefile directory
 * @param {string} cwd - current working directory
