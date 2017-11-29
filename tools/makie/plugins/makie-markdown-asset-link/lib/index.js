@@ -15,8 +15,8 @@ var spawn = require( 'child_process' ).spawn;
 * @returns {void}
 */
 function onError( error ) {
-	process.stderr.write( error.message+'\n', 'utf8' );
-	return process.exit( 1 );
+	process.exitCode = 1;
+	console.error( error.message ); // eslint-disable-line no-console
 } // end FUNCTION onError()
 
 /**
@@ -28,14 +28,9 @@ function onError( error ) {
 */
 function onFinish( code ) {
 	if ( code !== 0 ) {
-		process.stderr.write( '`make` process exited with code `'+code + '.\n' );
-		return process.exit( code );
+		process.exitCode = code;
+		return console.error( 'Child process exited with code `'+code + '`.' ); // eslint-disable-line no-console
 	}
-	// Cannot write to `stdout` and then immediately `exit` as `buffer` may not yet have drained https://github.com/nodejs/node/issues/6456.
-	// process.exit( 0 );
-
-	// HACK: workaround is to use `console.log` and no exit:
-	console.log( '' );
 } // end FUNCTION onFinish()
 
 /**
@@ -62,7 +57,7 @@ function stderr( data ) {
 // MAIN //
 
 /**
-* `makie` plugin to generate an asset link for inclusion in Markdown files.
+* Plugin to generate an asset link for inclusion in Markdown files.
 *
 * @param {string} dir - Makefile directory
 * @param {string} cwd - current working directory
