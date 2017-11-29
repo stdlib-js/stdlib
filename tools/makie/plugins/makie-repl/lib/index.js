@@ -8,7 +8,7 @@ var spawn = require( 'child_process' ).spawn;
 // MAIN //
 
 /**
-* `makie` plugin for launching a REPL.
+* Plugin for launching a REPL.
 *
 * @param {string} dir - Makefile directory
 * @param {string} cwd - current working directory
@@ -17,7 +17,6 @@ var spawn = require( 'child_process' ).spawn;
 function plugin( dir, cwd ) {
 	var opts;
 	var args;
-	var proc;
 
 	opts = {};
 	opts.cwd = dir;
@@ -31,7 +30,7 @@ function plugin( dir, cwd ) {
 	// Target:
 	args[ 1 ] = 'repl';
 
-	proc = spawn( 'make', args, opts );
+	spawn( 'make', args, opts );
 } // end FUNCTION plugin()
 
 
