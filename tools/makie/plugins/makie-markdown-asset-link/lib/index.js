@@ -16,7 +16,7 @@ var spawn = require( 'child_process' ).spawn;
 */
 function onError( error ) {
 	process.exitCode = 1;
-	console.error( error.message ); // eslint-disable-line no-console
+	console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
 } // end FUNCTION onError()
 
 /**
