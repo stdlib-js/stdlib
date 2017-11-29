@@ -28,7 +28,7 @@ function onError( error ) {
 function onFinish( code ) {
 	if ( code !== 0 ) {
 		process.exitCode = code;
-		return console.error( '`make` process exited with code `'+code + '`.' ); // eslint-disable-line no-console
+		return console.error( 'Child process exited with code `'+code + '`.' ); // eslint-disable-line no-console
 	}
 } // end FUNCTION onFinish()
 
