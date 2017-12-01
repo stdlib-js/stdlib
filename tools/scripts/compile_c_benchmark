@@ -1,0 +1,328 @@
+#!/usr/bin/env bash
+#
+# Script for compiling a C benchmark.
+#
+# Usage: compile_c_benchmark <filepath>
+#
+# Arguments:
+#
+#   filepath      Benchmark file path.
+#
+#
+# Environment Variables:
+#
+#   OS            Host operating system. Default: `linux`.
+#   NODE          Command for running Node.js. Default: `node`.
+#   NODE_PATH     Path for resolving node modules.
+#   C_COMPILER    C compiler. Default: `gcc`.
+#   BLAS          BLAS library to use.
+#   BLAS_DIR      BLAS library path (if custom).
+#   CEPHES        Cephes mathematical library path.
+#   CEPHES_SRC    Directory containing Cephes source code.
+#   INCLUDE       Includes (e.g., `-I /foo/bar -I /a/b`).
+#   SOURCE_FILES  Source file list.
+#   LIBRARIES     Linked libraries (e.g., `-lopenblas -lpthreads`).
+#   LIBPATH       Library paths (e.g., `-L /foo/bar -L /a/b`).
+#
+
+
+# VARIABLES #
+
+# Set the benchmark file path:
+file_path="$1"
+
+# Define the host operating system:
+os="${OS}"
+if [[ "${os}" = "Darwin" ]]; then
+	os='mac'
+elif [[ "${os}" = "WINNT" ]]; then
+	os='win'
+else
+	os='linux'
+fi
+
+# Define the command for running Node.js:
+node_cmd="${NODE}"
+if [[ -z "${node_cmd}" ]]; then
+	node_cmd='node'
+fi
+
+# Define the node path:
+node_path="${NODE_PATH}"
+
+# Define the path to a C compiler:
+c_compiler="${C_COMPILER}"
+if [[ -z "${c_compiler}" ]]; then
+	c_compiler='gcc'
+fi
+
+# Define the BLAS library to use:
+blas="${BLAS}"
+
+# Define the BLAS directory:
+blas_dir="${BLAS_DIR}"
+
+# Define the path to the Cephes mathematical library:
+cephes="${CEPHES}"
+
+# Define the path to the Cephes source code:
+cephes_src="${CEPHES_SRC}"
+
+# Define a list of `include` directories (e.g., `-I /foo/bar -I /beep/boop/include`):
+include="${INCLUDE}"
+
+# Define a list of source files:
+source_files="${SOURCE_FILES}"
+
+# Define a list of libraries (e.g., `-lopenblas -lpthreads`):
+libraries="${LIBRARIES}"
+
+# Define a list of library paths (e.g., `-L /foo/bar -L /beep/boop`):
+libpath="${LIBPATH}"
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	echo '' >&2
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: compile_c_benchmark <filepath>' >&2
+	echo '' >&2
+}
+
+# Resolves a package path.
+#
+# $1 - source directory
+resolve_pkg_path() {
+	local pkg_path
+	local script
+
+	# Generate the script for resolving a package path:
+	script='"'"var resolve = require('@stdlib/fs/resolve-parent-path').sync; var dirname = require('@stdlib/utils/dirname'); var opts = {'dir':'$1'}; var path = resolve('package.json', opts); console.log(dirname(path));"'"'
+
+	# Resolve package path:
+	pkg_path=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${pkg_path}"
+}
+
+# Resolves a package `manifest.json`.
+#
+# $1 - package path
+resolve_pkg_manifest() {
+	if [[ -e "$1/manifest.json" ]]; then
+		return 0
+	fi
+	return 1
+}
+
+# Resolves `include` directories.
+#
+# $1 - package directory
+resolve_includes() {
+	local includes
+	local script
+	local opts
+
+	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
+	if [[ -n "${blas}" ]]; then
+		opts="{'os':'${os}','blas':'${blas}'}"
+	else
+		opts='{}'
+	fi
+	# Generate the script for resolving `include` directories:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve `include` directories:
+	includes=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	if [[ -n "${blas}" ]]; then
+		if [[ -n "${blas_dir}" ]]; then
+			echo "${includes} -I ${blas_dir}"
+		else
+			echo "${includes}"
+		fi
+	else
+		echo "${includes}"
+	fi
+}
+
+# Resolves source files.
+#
+# $1 - package directory
+resolve_source_files() {
+	local source_files
+	local script
+
+	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
+	if [[ -n "${blas}" ]]; then
+		opts="{'os':'${os}','blas':'${blas}'}"
+	else
+		opts='{}'
+	fi
+	# Generate the script for resolving source files:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve files:
+	source_files=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${source_files}"
+}
+
+# Resolves libraries.
+#
+# $1 - package directory
+resolve_libraries() {
+	local libraries
+	local script
+
+	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
+	if [[ -n "${blas}" ]]; then
+		opts="{'os':'${os}','blas':'${blas}'}"
+	else
+		opts='{}'
+	fi
+	# Generate the script for resolving libraries:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve libraries:
+	libraries=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${libraries}"
+}
+
+# Resolves library paths.
+#
+# $1 - package directory
+resolve_libpaths() {
+	local libpath
+	local script
+
+	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
+	if [[ -n "${blas}" ]]; then
+		opts="{'os':'${os}','blas':'${blas}'}"
+	else
+		opts='{}'
+	fi
+	# Generate the script for resolving library paths:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve library paths:
+	libpath=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	if [[ -n "${blas}" ]]; then
+		if [[ -n "${blas_dir}" ]]; then
+			echo "${libpath} -L ${blas_dir}"
+		else
+			echo "${libpath}"
+		fi
+	else
+		echo "${libpath}"
+	fi
+}
+
+# Compiles benchmark.
+#
+# $1 - source directory
+compile() {
+	cd "$1" && C_COMPILER="${c_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" CEPHES="${cephes}" CEPHES_SRC="${cephes_src}" make 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error when attempting to compile benchmark.' >&2
+		return 1
+	fi
+	echo 'Successfully compiled benchmark.' >&2
+	return 0
+}
+
+
+# MAIN #
+
+# Main execution sequence.
+main() {
+	local pkg_path
+	local manifest
+	local src_dir
+
+	echo 'Resolving package path...' >&2
+	pkg_path=$(resolve_pkg_path "${src_dir}")
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	echo "Package path: ${pkg_path}" >&2
+
+	echo 'Resolving package manifest...' >&2
+	manifest=$(resolve_pkg_manifest $"{pkg_path}")
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Successfully resolved package manifest.' >&2
+		if [[ -z "${include}" ]]; then
+			echo 'Resolving include directories...' >&2
+			include=$(resolve_includes "${pkg_path}")
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		fi
+		if [[ -z "${source_files}" ]]; then
+			echo 'Resolving source files...' >&2
+			source_files=$(resolve_source_files "${pkg_path}")
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		fi
+		if [[ -z "${libraries}" ]]; then
+			echo 'Resolving libraries...' >&2
+			libraries=$(resolve_libraries "${pkg_path}")
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		fi
+		if [[ -z "${libpath}" ]]; then
+			echo 'Resolving library paths...' >&2
+			libpath=$(resolve_libpaths "${pkg_path}")
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		fi
+	else
+		echo 'Unable to resolve package manifest.' >&2
+	fi
+	echo 'Compiling benchmark...' >&2
+	src_dir=$(dirname "${file_path}")
+	compile "${src_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	print_success
+	cleanup
+	exit 0
+}
+
+# Handle arguments...
+if [[ "$#" -eq 0 ]]; then
+	usage
+	exit 0
+elif [[ "$#" -gt 1 ]]; then
+	echo 'ERROR: unrecognized arguments. Must provide a file path.' >&2
+	exit 1
+fi
+
+# Run main:
+main
