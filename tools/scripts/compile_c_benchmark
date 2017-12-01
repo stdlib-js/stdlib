@@ -270,7 +270,7 @@ main() {
 	echo "Package path: ${pkg_path}" >&2
 
 	echo 'Resolving package manifest...' >&2
-	manifest=$(resolve_pkg_manifest $"{pkg_path}")
+	manifest=$(resolve_pkg_manifest "${pkg_path}")
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Successfully resolved package manifest.' >&2
 		if [[ -z "${include}" ]]; then
