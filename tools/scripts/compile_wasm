@@ -62,6 +62,12 @@ include="${INCLUDE}"
 # Define a list of external source files:
 source_files="${SOURCE_FILES}"
 
+# Define a list of libraries (e.g., `-lopenblas -lpthreads`):
+libraries="${LIBRARIES}"
+
+# Define a list of library paths (e.g., `-L /foo/bar -L /beep/boop`):
+libpath="${LIBPATH}"
+
 
 # FUNCTIONS #
 
@@ -97,9 +103,12 @@ usage() {
 resolve_includes() {
 	local includes
 	local script
+	local opts
+
+	opts="{'wasm':true}"
 
 	# Generate the script for resolving external include directories:
-	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),{},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
 
 	# Resolve include directories:
 	includes=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
@@ -113,9 +122,12 @@ resolve_includes() {
 resolve_source_files() {
 	local source_files
 	local script
+	local opts
+
+	opts="{'wasm':true}"
 
 	# Generate the script for resolving external source files:
-	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),{},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
 
 	# Resolve files:
 	source_files=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
@@ -123,11 +135,49 @@ resolve_source_files() {
 	echo "${source_files}"
 }
 
+# Resolves libraries.
+#
+# $1 - package directory
+resolve_libraries() {
+	local libraries
+	local script
+	local opts
+
+	opts="{'wasm':true}"
+
+	# Generate the script for resolving libraries:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve libraries:
+	libraries=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${libraries}"
+}
+
+# Resolves library paths.
+#
+# $1 - package directory
+resolve_libpaths() {
+	local libpath
+	local script
+	local opts
+
+	opts="{'wasm':true}"
+
+	# Generate the script for resolving library paths:
+	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
+
+	# Resolve library paths:
+	libpath=$(eval NODE_PATH="${node_path}" "${node_cmd}" -e "${script}")
+
+	echo "${libpath}"
+}
+
 # Compiles WebAssembly.
 #
 # $1 - source directory
 compile() {
-	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" INCLUDE="${include}" SOURCE_FILES="${source_files}" make wasm 2>&1
+	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile WebAssembly.' >&2
 		return 1
@@ -153,6 +203,20 @@ main() {
 	if [[ -z "${source_files}" ]]; then
 		echo 'Resolving external source files...' >&2
 		source_files=$(resolve_source_files "${pkg_path}")
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	fi
+	if [[ -z "${libraries}" ]]; then
+		echo 'Resolving libraries...' >&2
+		libraries=$(resolve_libraries "${pkg_path}")
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	fi
+	if [[ -z "${libpath}" ]]; then
+		echo 'Resolving library paths...' >&2
+		libpath=$(resolve_libpaths "${pkg_path}")
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
