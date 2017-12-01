@@ -172,6 +172,7 @@ resolve_includes() {
 resolve_source_files() {
 	local source_files
 	local script
+	local opts
 
 	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
 	if [[ -n "${blas}" ]]; then
@@ -194,6 +195,7 @@ resolve_source_files() {
 resolve_libraries() {
 	local libraries
 	local script
+	local opts
 
 	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
 	if [[ -n "${blas}" ]]; then
@@ -216,6 +218,7 @@ resolve_libraries() {
 resolve_libpaths() {
 	local libpath
 	local script
+	local opts
 
 	# WARNING: the following assumes knowledge of the `manifest.json` options for BLAS packages. Were those options to change, the following would need to be updated.
 	if [[ -n "${blas}" ]]; then
