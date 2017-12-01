@@ -190,6 +190,9 @@ install:
   # [3]: https://mingw-w64.org/doku.php
   - cmd: set PATH=C:\msys64\usr\bin;C:\msys64\mingw64\bin;%PATH%
 
+  # Update MSYS2 packages:
+  - cmd: pacman --noconfirm --sync unzip
+
   # Install updated browsers for browser testing:
   # TODO: address 32-bit vs 64-bit installs
   # - cmd: choco upgrade firefox
