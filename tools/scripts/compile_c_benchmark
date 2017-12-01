@@ -18,7 +18,7 @@
 #   BLAS          BLAS library to use.
 #   BLAS_DIR      BLAS library path (if custom).
 #   CEPHES        Cephes mathematical library path.
-#   CEPHES_SRC    Directory containing Cephes source code.
+#   CEPHES_SRC    List of Cephes source files.
 #   INCLUDE       Includes (e.g., `-I /foo/bar -I /a/b`).
 #   SOURCE_FILES  Source file list.
 #   LIBRARIES     Linked libraries (e.g., `-lopenblas -lpthreads`).
@@ -65,7 +65,7 @@ blas_dir="${BLAS_DIR}"
 # Define the path to the Cephes mathematical library:
 cephes="${CEPHES}"
 
-# Define the path to the Cephes source code:
+# List of Cephes source files:
 cephes_src="${CEPHES_SRC}"
 
 # Define a list of `include` directories (e.g., `-I /foo/bar -I /beep/boop/include`):
