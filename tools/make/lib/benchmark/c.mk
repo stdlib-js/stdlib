@@ -23,7 +23,7 @@ benchmark-c:
 		BLAS="$(BLAS)" \
 		BLAS_DIR="$(BLAS_DIR)" \
 		CEPHES="$(DEPS_CEPHES_BUILD_OUT)" \
-		CEPHES_SRC="$(CEPHES_SRC)" \
+		CEPHES_SRC="$(DEPS_CEPHES_SRC)" \
 		"${compile_c_benchmark_bin}" $$file && \
 		$(MAKE) run || exit 1; \
 	done
