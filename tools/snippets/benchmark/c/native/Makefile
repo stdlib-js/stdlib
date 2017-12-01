@@ -46,11 +46,17 @@ else
 	fPIC ?= -fPIC
 endif
 
-# List of includes:
+# List of includes (e.g., `-I /foo/bar -I /beep/boop/include`):
 INCLUDE ?=
 
 # List of source files:
 SOURCE_FILES ?=
+
+# List of libraries (e.g., `-lopenblas -lpthread`):
+LIBRARIES ?=
+
+# List of library paths (e.g., `-L /foo/bar -L /beep/boop`):
+LIBPATH ?=
 
 # List of C targets:
 c_targets := TODO.out
@@ -72,7 +78,7 @@ all: $(c_targets)
 # This target compiles C source files.
 
 $(c_targets): %.out: %.c
-	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< -lm
+	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
 
 
 # Run a benchmark.
