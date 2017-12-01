@@ -8,6 +8,20 @@
 #
 #   pkg      Package directory (absolute path).
 #
+#
+# Environment Variables:
+#
+#   OS              Host operating system. Default: `linux`.
+#   NODE            Command for running Node.js. Default: `node`.
+#   NODE_PATH       Path for resolving node modules.
+#   EMCCC_COMPILER  Emscripten C compiler. Default: `emcc`.
+#   WASM2WAT        Command for converting wasm binary format to text format. Default. `wasm2wat`.
+#   SRC_FOLDER      Folder containing source files. Default: `src`.
+#   INCLUDE         Includes (e.g., `-I /foo/bar -I /a/b`).
+#   SOURCE_FILES    Source file list.
+#   LIBRARIES       Linked libraries (e.g., `-lopenblas -lpthreads`).
+#   LIBPATH         Library paths (e.g., `-L /foo/bar -L /a/b`).
+#
 
 
 # VARIABLES #
