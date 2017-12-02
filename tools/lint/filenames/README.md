@@ -1,4 +1,4 @@
-# Lint Filenames
+# Lint
 
 > Lint filenames.
 
@@ -134,7 +134,7 @@ function onLint( error, filenames ) {
 
 ### Usage
 
-```bash
+```text
 Usage: lint-filenames [options] [dir]
 
 Options:
@@ -157,7 +157,7 @@ Options:
 
 -   If not provided a `dir` argument, the current working directory is the search directory.
 
--   If the split separator is a [regular expression][regexp], ensure that the `split` option is properly **escaped**.
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is properly **escaped**.
 
     ```bash
     # Not escaped...
@@ -201,7 +201,7 @@ $ echo -n $'beep.js\ta/b/c.md\tA.js' | lint-filenames --split /\\t/
 
 [ndjson]: http://ndjson.org/
 
-[regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 [standard-stream]: http://en.wikipedia.org/wiki/Pipeline_%28Unix%29
 
