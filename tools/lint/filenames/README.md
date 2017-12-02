@@ -17,7 +17,7 @@ Asynchronously lints filenames.
 ```javascript
 lint( onLint );
 
-function onLint( error, names ) {
+function onLint( error, filenames ) {
     if ( error ) {
         throw error;
     }
@@ -39,11 +39,11 @@ var opts = {
 
 lint( opts, onLint );
 
-function onLint( error, names ) {
+function onLint( error, filenames ) {
     if ( error ) {
         throw error;
     }
-    console.log( JSON.stringify( names ) );
+    console.log( JSON.stringify( filenames ) );
 }
 ```
 
@@ -56,11 +56,11 @@ var opts = {
 
 lint( opts, onLint );
 
-function onLint( error, names ) {
+function onLint( error, filenames ) {
     if ( error ) {
         throw error;
     }
-    console.log( JSON.stringify( names ) );
+    console.log( JSON.stringify( filenames ) );
 }
 ```
 
@@ -69,7 +69,7 @@ function onLint( error, names ) {
 Synchronously lints filenames.
 
 ```javascript
-var names = lint.sync();
+var filenames = lint.sync();
 // returns [...]
 ```
 
@@ -112,11 +112,11 @@ var lint = require( '@stdlib/tools/lint/filenames' );
 
 lint( onLint );
 
-function onLint( error, names ) {
+function onLint( error, filenames ) {
     if ( error ) {
         throw error;
     }
-    console.log( JSON.stringify( names ) );
+    console.log( JSON.stringify( filenames ) );
 }
 ```
 
