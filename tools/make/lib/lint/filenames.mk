@@ -2,7 +2,7 @@
 # VARIABLES #
 
 # Define the path of the linter executable:
-FILENAME_LINTER ?= $(TOOLS_DIR)/lint/filenames/bin/cli
+FILENAME_LINTER ?= $(TOOLS_PKGS_DIR)/lint/filenames/bin/cli
 
 # Define the command-line options to be used when invoking the executable:
 FILENAME_LINTER_FLAGS ?=
