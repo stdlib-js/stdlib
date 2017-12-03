@@ -134,3 +134,40 @@ bench( pkg+'::lodash:forEachRight', opts, function benchmark( b ) {
 	b.pass( 'benchmark finished' );
 	b.end();
 });
+
+bench( pkg+'::lodash:groupBy', opts, function benchmark( b ) {
+	var vals;
+	var arr;
+	var len;
+	var o;
+	var i;
+	var j;
+
+	function indicator( v ) {
+		return v[ 0 ];
+	}
+
+	vals = [ 'beep', 'boop', 'foo', 'bar', 'woot' ];
+
+	arr = new Array( 100 );
+	len = arr.length;
+	for ( i = 0; i < len; i++ ) {
+		j = floor( randu()*vals.length );
+		arr[ i ] = vals[ j ];
+	}
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		j = floor( randu()*vals.length );
+		arr[ 0 ] = vals[ j ];
+		o = _.groupBy( arr, indicator );
+		if ( typeof o !== 'object' ) {
+			b.fail( 'should return an object' );
+		}
+	}
+	b.toc();
+	if ( typeof o !== 'object' ) {
+		b.fail( 'should return an object' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
