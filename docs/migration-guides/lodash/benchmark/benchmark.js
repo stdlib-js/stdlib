@@ -171,3 +171,35 @@ bench( pkg+'::lodash:groupBy', opts, function benchmark( b ) {
 	b.pass( 'benchmark finished' );
 	b.end();
 });
+
+bench( pkg+'::lodash:keyBy', opts, function benchmark( b ) {
+	var arr;
+	var out;
+	var i;
+
+	function toKey( value ) {
+		return value.name;
+	}
+
+	arr = new Array( 100 );
+	for ( i = 0; i < arr.length; i++ ) {
+		arr[ i ] = {
+			'name': 'v'+i,
+			'value': i
+		};
+	}
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		arr[ 0 ].value = randu();
+		out = _.keyBy( arr, toKey );
+		if ( typeof out !== 'object' ) {
+			b.fail( 'should return an object' );
+		}
+	}
+	b.toc();
+	if ( typeof out !== 'object' ) {
+		b.fail( 'should return an object' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
