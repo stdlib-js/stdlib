@@ -45,6 +45,7 @@ addons:
       - g++-5-multilib
       - gfortran-5
       - gfortran-5-multilib
+      - unzip
 
 
 env:
