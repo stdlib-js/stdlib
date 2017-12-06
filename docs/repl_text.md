@@ -519,7 +519,7 @@ A few notes:
         
         Examples
         --------
-        > var out = {{alias}}( {{alias:@stdlib/math/constants/float64-pi}} )
+        > var out = {{alias}}( {{alias:@stdlib/constants/math/float64-pi}} )
         10.0
 
         ...
