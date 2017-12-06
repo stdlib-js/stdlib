@@ -6,7 +6,7 @@ var debug = require( 'debug' )( 'remark-img-equations-src-urls:transformer' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var visit = require( 'unist-util-visit' );
-var PATH_SEP = require( '@stdlib/string/constants/path-sep' );
+var PATH_SEP = require( '@stdlib/constants/string/path-sep' );
 var rawgit = require( '@stdlib/_tools/utils/rawgit-url' );
 var git = require( './git.js' );
 
@@ -31,6 +31,7 @@ var LABEL = /data-equation="eq:([^"]*)">/;
 */
 function factory( opts ) {
 	return transformer;
+
 	/**
 	* Transforms a Markdown abstract syntax tree (AST).
 	*
