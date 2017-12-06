@@ -1,0 +1,79 @@
+#!/usr/bin/env node
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/tools/cli' );
+var stdin = require( '@stdlib/utils/read-stdin' );
+var RE_EOL = require( '@stdlib/regexp/eol' );
+var reFromString = require( '@stdlib/utils/regexp-from-string' );
+var TODO = require( './../lib' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var flags;
+	var args;
+	var opts;
+	var cli;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	// Get any provided command-line flags:
+	flags = cli.flags();
+
+	// Check if we are receiving data from `stdin`...
+	opts = {};
+	if ( !process.stdin.isTTY ) {
+		if ( flags.split ) {
+			opts.split = reFromString( flags.split );
+		} else {
+			opts.split = RE_EOL;
+		}
+		return stdin( onRead );
+	}
+	console.log( TODO( args[ 0 ] ) ); // eslint-disable-line no-console
+
+	/**
+	* Callback invoked upon reading from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} data - data
+	* @returns {void}
+	*/
+	function onRead( error, data ) {
+		/* eslint-disable no-console */
+		var lines;
+		var i;
+		if ( error ) {
+			process.exitCode = 1;
+			return console.error( 'Error: %s', error.message );
+		}
+		lines = data.toString().split( opts.split );
+		for ( i = 0; i < lines.length; i++ ) {
+			console.log( TODO( lines[ i ] ) );
+		}
+	} // end FUNCTION onRead()
+} // end FUNCTION main()
+
+main();
