@@ -159,6 +159,24 @@ rules[ 'stdlib/new-cap-array' ] = 'error';
 rules[ 'stdlib/new-cap-error' ] = 'error';
 
 /**
+* Enforce that the `RegExp` constructor is invoked with the `new` keyword.
+*
+* @name new-cap-regexp
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var re = RegExp( '[0-9]' );
+*
+* @example
+* // Good...
+* var re = new RegExp( '[0-9]' );
+*/
+rules[ 'stdlib/new-cap-regexp' ] = 'error';
+
+/**
 * Enforce that require() calls have only string literals as parameters.
 *
 * @name no-dynamic-require
