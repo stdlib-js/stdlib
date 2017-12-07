@@ -123,6 +123,24 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 
 /**
+* Enforce that the `Array` constructor is invoked with the `new` keyword.
+*
+* @name new-cap-array
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = Array( 101 );
+*
+* @example
+* // Good...
+* var arr = new Array( 101 );
+*/
+rules[ 'stdlib/new-cap-array' ] = 'error';
+
+/**
 * Enforce that error constructors are invoked with the `new` keyword.
 *
 * @name new-cap-error
