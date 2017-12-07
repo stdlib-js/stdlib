@@ -143,7 +143,12 @@ deps-extract-electron: $(DEPS_ELECTRON_BUILD_OUT)
 
 deps-test-electron: $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 	$(QUIET) echo 'Running tests...' >&2
-	$(QUIET) $(NODE) $< --version >&2
+	$(QUIET) echo ''
+	cat $(DEPS_ELECTRON_BUILD_OUT)/cli.js
+	$(QUIET) echo ''
+	cat $<
+	$(QUIET) echo ''
+	$(NODE) $< --version
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
