@@ -123,6 +123,60 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 
 /**
+* Enforce that the `Array` constructor is invoked with the `new` keyword.
+*
+* @name new-cap-array
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = Array( 101 );
+*
+* @example
+* // Good...
+* var arr = new Array( 101 );
+*/
+rules[ 'stdlib/new-cap-array' ] = 'error';
+
+/**
+* Enforce that error constructors are invoked with the `new` keyword.
+*
+* @name new-cap-error
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var err = Error( 'error message' );
+*
+* @example
+* // Good...
+* var err = new Error( 'error message' );
+*/
+rules[ 'stdlib/new-cap-error' ] = 'error';
+
+/**
+* Enforce that the `RegExp` constructor is invoked with the `new` keyword.
+*
+* @name new-cap-regexp
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var re = RegExp( '[0-9]' );
+*
+* @example
+* // Good...
+* var re = new RegExp( '[0-9]' );
+*/
+rules[ 'stdlib/new-cap-regexp' ] = 'error';
+
+/**
 * Enforce that require() calls have only string literals as parameters.
 *
 * @name no-dynamic-require
