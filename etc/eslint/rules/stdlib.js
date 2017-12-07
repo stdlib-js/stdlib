@@ -123,6 +123,24 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 
 /**
+* Enforce that error constructors are invoked with the `new` keyword.
+*
+* @name new-cap-error
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var err = Error( 'error message' );
+*
+* @example
+* // Good...
+* var err = new Error( 'error message' );
+*/
+rules[ 'stdlib/new-cap-error' ] = 'error';
+
+/**
 * Enforce that require() calls have only string literals as parameters.
 *
 * @name no-dynamic-require
