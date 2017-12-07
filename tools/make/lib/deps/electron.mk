@@ -23,8 +23,12 @@ else
 ifeq ($(DEPS_ELECTRON_PLATFORM), freebsd)
 	deps_electron_path := dist/electron
 else
+ifeq ($(DEPS_ELECTRON_PLATFORM), sunos)
+	deps_electron_path := dist/electron
+else
 ifeq ($(DEPS_ELECTRON_PLATFORM), win32)
 	deps_electron_path := dist/electron.exe
+endif
 endif
 endif
 endif
@@ -143,12 +147,7 @@ deps-extract-electron: $(DEPS_ELECTRON_BUILD_OUT)
 
 deps-test-electron: $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 	$(QUIET) echo 'Running tests...' >&2
-	$(QUIET) echo ''
-	cat $(DEPS_ELECTRON_BUILD_OUT)/cli.js
-	$(QUIET) echo ''
-	cat $<
-	$(QUIET) echo ''
-	$(NODE) $< --version
+	$(QUIET) $(NODE) $< --version >&2
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
