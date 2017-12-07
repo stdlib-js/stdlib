@@ -80,7 +80,7 @@ git:
 
 before_install:
   # Perform platform-specific initialization:
-  - if [[ $TRAVIS_OS_NAME == "linux" ]]; then
+  - if [[ $TRAVIS_OS_NAME = "linux" ]]; then
       mkdir -p $HOME/bin;
       ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
       ln -s /usr/bin/g++-5 $HOME/bin/g++;
