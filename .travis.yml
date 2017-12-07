@@ -32,7 +32,7 @@ os:
   - linux
   - osx
 
-# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Add-ons are Linux-specific.
+# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Add-ons are Linux-specific. Electron requires a virtual display server (xvfb) on Linux.
 addons:
   apt:
     sources:
@@ -45,6 +45,7 @@ addons:
       - g++-5-multilib
       - gfortran-5
       - gfortran-5-multilib
+      - xvfb
       - unzip
 
 
@@ -85,6 +86,8 @@ before_install:
       ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
       ln -s /usr/bin/g++-5 $HOME/bin/g++;
       ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
+      export DISPLAY=':99.0';
+      Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &;
     else
       brew cask uninstall oclint;
       brew update;
