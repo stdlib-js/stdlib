@@ -86,13 +86,15 @@ before_install:
       ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
       ln -s /usr/bin/g++-5 $HOME/bin/g++;
       ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
-      export DISPLAY=':99.0';
-      Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &;
     else
       brew cask uninstall oclint;
       brew update;
       brew install -v gcc;
     fi
+
+  # Configure the virtual display server (needed for electron):
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
 
   # Print debug info:
   - echo "$($CC --version)"
