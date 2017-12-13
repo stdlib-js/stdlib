@@ -5,7 +5,7 @@
 var copy = require( '@stdlib/utils/copy' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var pkg = require( './../../../snippets/package.json' );
-var standardize = require( './../../../pkg-json/standardize' );
+var standardize = require( '@stdlib/_tools/package-json/standardize' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
