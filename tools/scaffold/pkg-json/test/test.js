@@ -4,7 +4,7 @@
 
 var tape = require( 'tape' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
-var isValid = require( './../../../pkg-json/validate' );
+var isValid = require( '@stdlib/_tools/package-json/validate' );
 var create = require( './../lib' );
 
 
