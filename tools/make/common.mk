@@ -414,7 +414,7 @@ endif
 endif
 
 # Define the Electron version:
-DEPS_ELECTRON_VERSION ?= 1.7.6
+DEPS_ELECTRON_VERSION ?= 1.7.9
 
 # Generate a version slug:
 deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
