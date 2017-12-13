@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'lint:pkg-json:linter' );
 var readJSON = require( '@stdlib/fs/read-json' );
-var isValid = require( './../../../pkg-json/validate' );
+var isValid = require( '@stdlib/_tools/package-json/validate' );
 
 
 // MAIN //
@@ -44,6 +44,7 @@ function lint( files, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Object} json - JSON object
+	* @returns {void}
 	*/
 	function onRead( error, json ) {
 		var bool;

@@ -8,7 +8,7 @@ var resolve = require( 'path' ).resolve;
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
 var readJSON = require( '@stdlib/fs/read-json' ).sync;
-var isValid = require( './../../../pkg-json/validate' );
+var isValid = require( '@stdlib/_tools/package-json/validate' );
 var config = require( './config.json' );
 var validate = require( './validate.js' );
 
