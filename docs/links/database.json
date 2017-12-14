@@ -2240,6 +2240,16 @@
       "shannon"
     ]
   },
+  "https://en.wikipedia.org/wiki/Natural_logarithm": {
+    "id": "natural-logarithm",
+    "description": "Wikipedia entry for the natural logarithm.",
+    "short_url": "",
+    "keywords": [
+      "logarithm",
+      " log",
+      " ln"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Negative_binomial_distribution": {
     "id": "negative-binomial-distribution",
     "description": "Wikipedia entry for the negative binomial distribution.",
