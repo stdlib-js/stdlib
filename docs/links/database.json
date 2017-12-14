@@ -2148,6 +2148,17 @@
       "lognormal"
     ]
   },
+  "https://en.wikipedia.org/wiki/Logarithm": {
+    "id": "logarithm",
+    "description": "Wikipedia entry for the logarithm, the inverse operation of exponentiation.",
+    "short_url": "",
+    "keywords": [
+      "log",
+      " logarithm",
+      " exp",
+      " exponentiation"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Logistic_distribution": {
     "id": "logistic-distribution",
     "description": "Wikipedia entry for the logistic distribution.",
