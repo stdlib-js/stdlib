@@ -413,7 +413,7 @@ else
 endif
 endif
 
-# Define the Electron version:
+# Define the Electron version (NOTE: whenever updated, update the `david` configuration file):
 DEPS_ELECTRON_VERSION ?= 1.7.9
 
 # Generate a version slug:

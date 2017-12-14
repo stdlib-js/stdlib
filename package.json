@@ -164,7 +164,7 @@
     "spdx-license-ids": "^2.0.0",
     "tap-spec": "4.x.x",
     "tap-summary": "^4.0.0",
-    "tap-xunit": "^1.4.0",
+    "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "to-vfile": "^2.0.0",
     "uglify-es": "^3.1.1",

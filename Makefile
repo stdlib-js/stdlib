@@ -63,6 +63,9 @@ LOCAL_BIN_DIR ?= $(ROOT_DIR)/bin
 # Define the top-level directory containing vendor dependencies:
 DEPS_DIR ?= $(ROOT_DIR)/deps
 
+# Define the path to the root `package.json`:
+ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
+
 # Define the top-level directory containing node module dependencies:
 NODE_MODULES ?= $(ROOT_DIR)/node_modules
 
