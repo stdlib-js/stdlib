@@ -1610,6 +1610,17 @@
       "point"
     ]
   },
+  "https://en.wikipedia.org/wiki/Common_logarithm": {
+    "id": "common-logarithm",
+    "description": "Wikipedia entry for the common logarithm, which is the logarithm with base 10.",
+    "short_url": "",
+    "keywords": [
+      "log",
+      " logarithm",
+      " common",
+      " base 10"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Constant_function": {
     "id": "constant-function",
     "description": "Wikipedia entry for a constant function (i.e., a function whose output value is the same for every input value).",
