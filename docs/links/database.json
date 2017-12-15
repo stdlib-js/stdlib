@@ -2049,6 +2049,22 @@
       "function"
     ]
   },
+  "https://en.wikipedia.org/wiki/Inverse_trigonometric_functions": {
+    "id": "inverse-trigonmetric",
+    "description": "Wikipedia entry for inverse trigonometric functions.",
+    "short_url": "",
+    "keywords": [
+      "inverse",
+      " trigonometric",
+      " trig",
+      " sine",
+      " cosine",
+      " secant",
+      " cosecent",
+      " tangent",
+      " cotagent"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
     "id": "kumaraswamy-distribution",
     "description": "Wikipedia entry for Kumaraswamy's double bounded distribution.",
