@@ -1945,23 +1945,40 @@ Regular expressions are error prone and difficult to understand without thorough
 * Regular expression: `/^\/((?:\\\/|[^\/])+)\/([imgy]*)$/`
 *
 * `/^\/`
-*   - match a string that begins with a `/`
+*
+* -   match a string that begins with a `/`
+*
 * `()`
-*   - capture
+*
+* -   capture
+*
 * `(?:)+`
-*   - capture, but do not remember, a group of characters which occur one or more times
+*
+* -   capture, but do not remember, a group of characters which occur one or more times
+*
 * `\\\/`
-*   - match the literal `\/`
+*
+* -   match the literal `\/`
+*
 * `|`
-*   - OR
+*
+* -   OR
+*
 * `[^\/]`
-*   - anything which is not the literal `\/`
+*
+* -   anything which is not the literal `\/`
+*
 * `\/`
-*   - match the literal `/`
+*
+* -   match the literal `/`
+*
 * `([imgy]*)`
-*   - capture any characters matching `imgy` occurring zero or more times
+*
+* -   capture any characters matching `imgy` occurring zero or more times
+*
 * `$/`
-*   - string end
+*
+* -   string end
 *
 * @constant
 * @type {RegExp}
@@ -3306,7 +3323,9 @@ function autocorr( vector ) {
 // Do...
 
 /**
-* Calculate the auto-correlation of an input vector. To calculate the auto-correlation using an FFT, the data is padded to have length 2^n, where `n` is the next power of 2 greater than the vector length. For more details, consult {@link http://example.com}.
+* Calculate the auto-correlation of an input vector. To calculate the auto-correlation using an FFT, the data is padded to have length 2^n, where `n` is the next power of 2 greater than the vector length. For more details, consult [link][link].
+*
+* [link]: http://example.com
 *
 * @param {number[]} vector - 1d array
 * @returns {number} auto-correlation
