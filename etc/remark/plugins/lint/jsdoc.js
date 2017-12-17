@@ -32,26 +32,6 @@ plugins.push([
 ]);
 
 /**
-* Prevent checkboxes being followed by too much white-space.
-*
-* @see [checkbox-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-content-indent}
-*
-* @example
-* <!-- Bad -->
-*
-* *   [x]    checked
-*
-* @example
-* <!-- Good -->
-*
-* *   [x] checked
-*/
-plugins.push([
-	require( 'remark-lint-checkbox-content-indent' ),
-	[ 'error' ]
-]);
-
-/**
 * Require `fenced` code block style.
 *
 * @see [code-block-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-code-block-style}
