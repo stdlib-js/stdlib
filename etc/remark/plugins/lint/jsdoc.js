@@ -6,26 +6,6 @@
 var plugins = [ require( 'remark-lint' ) ];
 
 /**
-* Require blockquotes to have `2` character indentation.
-*
-* @see [blockquote-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-blockquote-indentation}
-*
-* @example
-* <!-- Bad -->
-*
-* >   Beep boop.
-*
-* @example
-* <!-- Good -->
-*
-* > Beep boop.
-*/
-plugins.push([
-	require( 'remark-lint-blockquote-indentation' ),
-	[ 'error', 2 ]
-]);
-
-/**
 * Require checkboxes to be either empty (unchecked) or have an `x` (checked).
 *
 * @see [checkbox-character-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-character-style}
