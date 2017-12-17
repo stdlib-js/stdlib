@@ -2006,6 +2006,17 @@
       "format"
     ]
   },
+  "https://en.wikipedia.org/wiki/Horner%27s_method": {
+    "id": "horners-method",
+    "description": "Wikipedia entry for Horner's method, an algorithm for evaluating polynomials.",
+    "short_url": "",
+    "keywords": [
+      "horner",
+      " polynomials",
+      " algorithm",
+      " math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
     "id": "ieee754",
     "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
