@@ -87,7 +87,7 @@ plugins.push([
 * @example
 * <!-- Good -->
 *
-* ``` javascript
+* ```javascript
 * code
 * code
 * code
