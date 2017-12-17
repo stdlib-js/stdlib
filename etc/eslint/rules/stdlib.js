@@ -37,6 +37,65 @@ var rules = {};
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
+* Lint JSDoc descriptions using remark.
+*
+* @name jsdoc-markdown-remark
+* @memberof rules
+* @type {Array}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * ## Methods
+* *
+* * Do this. Do that.
+* *
+* * ## Methods
+* *
+* * Duplicate heading.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * ## Methods
+* *
+* * Do this. Do that.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
+	{
+		'config': require( './../../remark/.remarkrc.jsdoc.js' )
+	}
+];
+
+/**
 * Require that only allowed JSDoc tags are used.
 *
 * @name jsdoc-tag-names
@@ -417,6 +476,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 * module.exports = {};
 */
 rules[ 'stdlib/section-headers' ] = 'error';
+
 
 // EXPORTS //
 
