@@ -37,6 +37,55 @@ var rules = {};
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 
 /**
+* Require blockquotes to have `2` character indentation.
+*
+* @name jsdoc-blockquote-indentation
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 2 ]
+* @see [blockquote-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-blockquote-indentation}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * >   This is a blockquote.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * > This is a blockquote.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-blockquote-indentation' ] = [ 'error', 2 ];
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
@@ -151,7 +200,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * // Bad...
 *
 * /**
-* * returns a pseudo-random number on [0,1]
+* * returns a pseudo-random number on `[0,1]`
 * *
 * * @returns {number} uniform random number
 * *
@@ -167,7 +216,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * // Good...
 *
 * /**
-* * Returns a pseudo-random number on [0,1].
+* * Returns a pseudo-random number on `[0,1]`.
 * *
 * * @returns {number} uniform random number
 * *
