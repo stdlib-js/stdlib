@@ -86,6 +86,55 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 rules[ 'stdlib/jsdoc-blockquote-indentation' ] = [ 'error', 2 ];
 
 /**
+* Prevent checkboxes being followed by too much whitespace.
+*
+* @name jsdoc-checkbox-content-indent
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [checkbox-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-content-indent}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * -   [ ]   Item
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   [ ] Item
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-checkbox-content-indent' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
