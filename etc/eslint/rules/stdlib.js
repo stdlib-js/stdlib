@@ -135,6 +135,57 @@ rules[ 'stdlib/jsdoc-blockquote-indentation' ] = [ 'error', 2 ];
 rules[ 'stdlib/jsdoc-checkbox-content-indent' ] = 'error';
 
 /**
+* Require `fenced` code block style.
+*
+* @name jsdoc-code-block-style
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'fenced' ]
+* @see [code-block-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-code-block-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* *     y = x;
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * ```javascript
+* * y = x;
+* * ```
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
