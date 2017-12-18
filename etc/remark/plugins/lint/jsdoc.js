@@ -32,33 +32,6 @@ plugins.push([
 ]);
 
 /**
-* Require `fenced` code block style.
-*
-* @see [code-block-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-code-block-style}
-*
-* @example
-* <!-- Bad -->
-*
-*
-*     code
-*     code
-*     code
-*
-* @example
-* <!-- Good -->
-*
-* ``` javascript
-* code
-* code
-* code
-* ```
-*/
-plugins.push([
-	require( 'remark-lint-code-block-style' ),
-	[ 'error', 'fenced' ]
-]);
-
-/**
 * Require lowercased definition labels.
 *
 * @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-case}
