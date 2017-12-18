@@ -3,71 +3,24 @@
 
 // MODULES //
 
-var fs = require( 'fs' );
-var path = require( 'path' );
+var join = require( 'path' ).join;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/tools/cli' );
 var readline = require( 'readline' );
-var parseArgs = require( 'minimist' );
-var notifier = require( 'update-notifier' );
-var pkg = require( './../package.json' );
-var opts = require( './opts.json' );
-var main = require( './../lib' );
+var create = require( './../lib' );
 
 
 // FUNCTIONS //
 
 /**
-* Performs initialization tasks.
+* Callback invoked upon receiving a SIGINT (e.g., ctrl+C).
 *
 * @private
-* @example
-* init();
 */
-function init() {
-	var opts;
-
-	// Check if newer versions exist for this package:
-	opts = {
-		'pkg': pkg
-	};
-	notifier( opts ).notify();
-
-	// Set the process title to allow the process to be more easily identified:
-	process.title = pkg.name;
-	process.stdout.on( 'error', process.exit );
-} // end FUNCTION init()
-
-/**
-* Prints usage information.
-*
-* @private
-* @example
-* help();
-* // => '...'
-*/
-function help() {
-	var fpath = path.join( __dirname, 'usage.txt' );
-	fs.createReadStream( fpath )
-		.pipe( process.stdout )
-		.on( 'close', onClose );
-
-	function onClose() {
-		process.exit( 0 );
-	}
-} // end FUNCTION help()
-
-/**
-* Prints the package version.
-*
-* @private
-* @example
-* version();
-* // => '#.#.#'
-*/
-function version() {
-	var msg = pkg.version.toString()+'\n';
-	process.stdout.write( msg, 'utf8' );
-	process.exit( 0 );
-} // end FUNCTION version()
+function onSIGINT() {
+	console.error( '' ); // eslint-disable-line no-console
+	process.exit( 1 );
+} // end FUNCTION onSIGINT()
 
 /**
 * Callback invoked upon completion.
@@ -78,150 +31,157 @@ function version() {
 */
 function done( error ) {
 	if ( error ) {
-		console.error( error.message );
+		console.error( error.message ); // eslint-disable-line no-console
 		return process.exit( 1 );
 	}
-	console.log( 'Success' );
+	console.log( 'Success' ); // eslint-disable-line no-console
 	process.exit( 0 );
 } // end FUNCTION done()
 
 
-// VARIABLES //
-
-var args;
-var rl;
-
-
 // MAIN //
 
-init();
-
-// Parse command-line arguments:
-args = parseArgs( process.argv.slice( 2 ), opts );
-
-if ( args.help ) {
-	return help();
-}
-if ( args.version ) {
-	return version();
-}
-// If we are provided a URI, we assume we are provided other command-line arguments...
-if ( args._[ 0 ] ) {
-	opts = {
-		'uri': args._[ 0 ],
-		'id': args.id,
-		'description': args.desc
-	};
-	if ( args.keywords ) {
-		opts.keywords = args.keywords.split( ',' );
-	}
-	if ( args.database ) {
-		opts.database = args.database;
-	}
-	return main( opts, done );
-}
-// Provide a series of prompts for a user to provide arguments...
-rl = readline.createInterface({
-	'input': process.stdin,
-	'output': process.stdout
-});
-rl.on( 'close', onClose );
-rl.on( 'SIGINT', onSIGINT );
-
-opts = {};
-console.log( '\nPlease provide the following information: \n' );
-rl.question( 'URI: ', uri );
-
 /**
-* Callback invoked upon receiving a URI.
+* Main execution sequence.
 *
 * @private
-* @param {string} answer - user input
 * @returns {void}
 */
-function uri( answer ) {
-	opts.uri = answer;
-	if ( args.id ) {
-		return id( args.id );
-	}
-	rl.question( 'unique identifier (id): ', id );
-} // end FUNCTION uri()
+function main() {
+	/* eslint-disable no-console, no-process-exit */
+	var flags;
+	var args;
+	var opts;
+	var cli;
+	var rl;
 
-/**
-* Callback invoked upon receiving a unique identifier.
-*
-* @private
-* @param {string} answer - user input
-* @returns {void}
-*/
-function id( answer ) {
-	opts.id = answer;
-	if ( args.desc ) {
-		return desc( args.desc );
-	}
-	rl.question( 'description: ', desc );
-} // end FUNCTION id()
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( join( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
 
-/**
-* Callback invoked upon receiving a description.
-*
-* @private
-* @param {string} answer - user input
-* @returns {void}
-*/
-function desc( answer ) {
-	opts.description = answer;
-	if ( args.keywords ) {
-		return keywords( args.keywords );
-	}
-	rl.question( 'keywords (optional): ', keywords );
-} // end FUNCTION desc()
+	// Get any provided command-line arguments:
+	args = cli.args();
 
-/**
-* Callback invoked upon receiving a list of keywords.
-*
-* @private
-* @param {string} answer - user input
-* @returns {void}
-*/
-function keywords( answer ) {
-	if ( answer ) {
-		opts.keywords = answer.split( ',' );
-	}
-	if ( args.database ) {
-		return database( args.database );
-	}
-	rl.question( 'database filepath (optional): ', database );
-} // end FUNCTION keywords()
+	// Get any provided command-line flags:
+	flags = cli.flags();
 
-/**
-* Callback invoked upon receiving a database filepath.
-*
-* @private
-* @param {string} answer - user input
-*/
-function database( answer ) {
-	if ( answer ) {
-		opts.database = answer;
+	// If we are provided a URI, we assume we are provided other command-line arguments...
+	if ( args[ 0 ] ) {
+		opts = {
+			'uri': args[ 0 ],
+			'id': flags.id,
+			'description': flags.desc
+		};
+		if ( flags.keywords ) {
+			opts.keywords = flags.keywords.split( ',' );
+		}
+		if ( flags.database ) {
+			opts.database = flags.database;
+		}
+		return create( opts, done );
 	}
-	rl.close();
-} // end FUNCTION database()
 
-/**
-* Callback invoked once a readline interface closes.
-*
-* @private
-*/
-function onClose() {
-	main( opts, done );
-} // end FUNCTION onClose()
+	// Provide a series of prompts for a user to provide arguments...
+	rl = readline.createInterface({
+		'input': process.stdin,
+		'output': process.stdout
+	});
+	rl.on( 'close', onClose );
+	rl.on( 'SIGINT', onSIGINT );
 
-/**
-* Callback invoked upon receiving a SIGINT (e.g., ctrl+C).
-*
-* @private
-*/
-function onSIGINT() {
-	console.error( '' );
-	process.exit( 1 );
-} // end FUNCTION onSIGINT()
+	opts = {};
+	console.log( '\nPlease provide the following information: \n' );
+	rl.question( 'URI: ', uri );
+
+	/**
+	* Callback invoked upon receiving a URI.
+	*
+	* @private
+	* @param {string} answer - user input
+	* @returns {void}
+	*/
+	function uri( answer ) {
+		opts.uri = answer;
+		if ( flags.id ) {
+			return id( flags.id );
+		}
+		rl.question( 'unique identifier (id): ', id );
+	} // end FUNCTION uri()
+
+	/**
+	* Callback invoked upon receiving a unique identifier.
+	*
+	* @private
+	* @param {string} answer - user input
+	* @returns {void}
+	*/
+	function id( answer ) {
+		opts.id = answer;
+		if ( flags.desc ) {
+			return desc( flags.desc );
+		}
+		rl.question( 'description: ', desc );
+	} // end FUNCTION id()
+
+	/**
+	* Callback invoked upon receiving a description.
+	*
+	* @private
+	* @param {string} answer - user input
+	* @returns {void}
+	*/
+	function desc( answer ) {
+		opts.description = answer;
+		if ( flags.keywords ) {
+			return keywords( flags.keywords );
+		}
+		rl.question( 'keywords (optional): ', keywords );
+	} // end FUNCTION desc()
+
+	/**
+	* Callback invoked upon receiving a list of keywords.
+	*
+	* @private
+	* @param {string} answer - user input
+	* @returns {void}
+	*/
+	function keywords( answer ) {
+		if ( answer ) {
+			opts.keywords = answer.split( ',' );
+		}
+		if ( flags.database ) {
+			return database( flags.database );
+		}
+		rl.question( 'database filepath (optional): ', database );
+	} // end FUNCTION keywords()
+
+	/**
+	* Callback invoked upon receiving a database filepath.
+	*
+	* @private
+	* @param {string} answer - user input
+	*/
+	function database( answer ) {
+		if ( answer ) {
+			opts.database = answer;
+		}
+		rl.close();
+	} // end FUNCTION database()
+
+	/**
+	* Callback invoked once a readline interface closes.
+	*
+	* @private
+	*/
+	function onClose() {
+		create( opts, done );
+	} // end FUNCTION onClose()
+} // end FUNCTION main()
+
+main();
+
