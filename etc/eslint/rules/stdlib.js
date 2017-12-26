@@ -284,6 +284,51 @@ rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 
 /**
+* Require `_` be used as the emphasis marker.
+*
+* @name jsdoc-emphasis-marker
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '_' ]
+* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a *number*.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a _number_.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
