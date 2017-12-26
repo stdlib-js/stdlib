@@ -186,6 +186,55 @@ rules[ 'stdlib/jsdoc-checkbox-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 
 /**
+* Require lowercased definition labels.
+*
+* @name jsdoc-definition-case
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-case}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a [number][Number].
+* *
+* * [Number]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a [number][number].
+* *
+* * [number]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
