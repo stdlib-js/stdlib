@@ -61,30 +61,6 @@ plugins.push([
 ]);
 
 /**
-* Require backticks `\`` be used as the fenced code marker.
-*
-* @see [fenced-code-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
-*
-* @example
-* <!-- Bad -->
-*
-* ~~~ text
-* Code
-* ~~~
-*
-* @example
-* <!-- Good -->
-*
-* ``` text
-* code
-* ```
-*/
-plugins.push([
-	require( 'remark-lint-fenced-code-marker' ),
-	[ 'error', '`' ]
-]);
-
-/**
 * Disable rule requiring a Markdown file to have the file extension `*.md`, as not relevant for JSDoc comments.
 *
 * @see [file-extension]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-file-extension}
