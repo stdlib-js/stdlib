@@ -241,7 +241,7 @@ rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-spacing}
+* @see [definition-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-spacing}
 *
 * @example
 * // Bad...
@@ -290,7 +290,7 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', '_' ]
-* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
+* @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
 *
 * @example
 * // Bad...
