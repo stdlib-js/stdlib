@@ -32,26 +32,6 @@ plugins.push([
 ]);
 
 /**
-* Require lowercased definition labels.
-*
-* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-case}
-*
-* @example
-* <!-- Bad -->
-*
-* [Example]: https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* [example]: https://example.com
-*/
-plugins.push([
-	require( 'remark-lint-definition-case' ),
-	[ 'error' ]
-]);
-
-/**
 * Prevent consecutive whitespace in a definition.
 *
 * @see [definition-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-spacing}
