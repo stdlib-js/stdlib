@@ -32,26 +32,6 @@ plugins.push([
 ]);
 
 /**
-* Prevent consecutive whitespace in a definition.
-*
-* @see [definition-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-spacing}
-*
-* @example
-* <!-- Bad -->
-*
-* [hello   world]: https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* [hello world]: https://example.com
-*/
-plugins.push([
-	require( 'remark-lint-definition-spacing' ),
-	[ 'error' ]
-]);
-
-/**
 * Require `_` be used as the emphasis marker.
 *
 * @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
