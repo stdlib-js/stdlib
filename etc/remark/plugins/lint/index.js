@@ -146,12 +146,12 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* _beep_
+* *beep*
 *
 * @example
 * <!-- Good -->
 *
-* *beep*
+* _beep_
 */
 plugins.push([
 	require( 'remark-lint-emphasis-marker' ),
