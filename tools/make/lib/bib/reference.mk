@@ -5,7 +5,7 @@
 CITATION ?=
 
 # Define the command for returning a citation reference:
-CITATION_REFERENCE ?= $(NODE) $(TOOLS_DIR)/bib/citation-reference/bin/cli
+CITATION_REFERENCE ?= $(NODE) $(TOOLS_PKGS_DIR)/bib/citation-reference/bin/cli
 
 # Define the command-line options to be used when executing the command:
 CITATION_REFERENCE_FLAGS ?= \
