@@ -32,26 +32,6 @@ plugins.push([
 ]);
 
 /**
-* Require `_` be used as the emphasis marker.
-*
-* @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
-*
-* @example
-* <!-- Bad -->
-*
-* _beep_
-*
-* @example
-* <!-- Good -->
-*
-* *beep*
-*/
-plugins.push([
-	require( 'remark-lint-emphasis-marker' ),
-	[ 'error', '_' ]
-]);
-
-/**
 * Require fenced code blocks to have a language flag.
 *
 * @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-flag}
