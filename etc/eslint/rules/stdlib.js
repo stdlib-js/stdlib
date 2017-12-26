@@ -235,6 +235,55 @@ rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 
 /**
+* Prevent consecutive whitespace in a definition.
+*
+* @name jsdoc-definition-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-definition-spacing}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a [number][number   documentation].
+* *
+* * [number   documentation]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a [number][number documentation].
+* *
+* * [number documentation]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
