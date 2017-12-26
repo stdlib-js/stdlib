@@ -329,6 +329,59 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 
 /**
+* Require `\`` be used as the fenced code marker.
+*
+* @name jsdoc-fenced-code-marker
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '`' ]
+* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * ~~~javascript
+* * y = x;
+* * ~~~
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * ```javascript
+* * y = x;
+* * ```
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
