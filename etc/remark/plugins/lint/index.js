@@ -33,12 +33,12 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* *   [X] checked
+* -   [X] checked
 *
 * @example
 * <!-- Good -->
 *
-* *   [x] checked
+* -   [x] checked
 */
 plugins.push([
 	require( 'remark-lint-checkbox-character-style' ),
@@ -59,12 +59,12 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* *   [x]    checked
+* -   [x]    checked
 *
 * @example
 * <!-- Good -->
 *
-* *   [x] checked
+* -   [x] checked
 */
 plugins.push([
 	require( 'remark-lint-checkbox-content-indent' ),
@@ -173,7 +173,7 @@ plugins.push([
 * @example
 * <!-- Good -->
 *
-* ``` text
+* ```text
 * code
 * ```
 */
@@ -195,14 +195,14 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* ~~~ text
+* ~~~text
 * Code
 * ~~~
 *
 * @example
 * <!-- Good -->
 *
-* ``` text
+* ```text
 * code
 * ```
 */
@@ -335,14 +335,14 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-*     *   Beep
-*     *   Boop
+*     -   Beep
+*     -   Boop
 *
 * @example
 * <!-- Good -->
 *
-* *   Beep
-* *   Boop
+* -   Beep
+* -   Boop
 *
 */
 plugins.push([
@@ -358,13 +358,15 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* *   Beep
+* -   Beep
+*
 *   -   Boop
 *
 * @example
 * <!-- Good -->
 *
-* *   Beep
+* -   Beep
+*
 *     -   Boop
 *
 */
@@ -381,22 +383,22 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* * Hello
-* * World
+* - Hello
+* - World
 *
 * @example
 * <!-- Good -->
 *
-* *   Hello
-* *   World
+* -   Hello
+* -   World
 *
 * @example
 * <!-- Good -->
 *
-* *   Beep
+* -   Beep
 *     boop
 *
-* *   Bop
+* -   Bop
 *     bip
 *
 */
@@ -413,26 +415,26 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* *   Beep
-* *   Boop
+* -   Beep
+* -   Boop
 *
-* *   Bop
+* -   Bop
 *
 * @example
 * <!-- Good -->
 *
-* *   Beep
-* *   Boop
-* *   Bop
+* -   Beep
+* -   Boop
+* -   Bop
 *
 * @example
 * <!-- Okay -->
 *
-* *   Beep
+* -   Beep
 *
-* *   Boop
+* -   Boop
 *
-* *   Bop
+* -   Bop
 *
 */
 plugins.push([
@@ -600,7 +602,7 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* *Beep*
+* _Beep_
 *
 * Beep boop.
 *
@@ -944,7 +946,7 @@ plugins.push([
 * @example
 * <!-- Okay -->
 *
-* ``` bash
+* ```bash
 * $ echo beep
 * ```
 */
