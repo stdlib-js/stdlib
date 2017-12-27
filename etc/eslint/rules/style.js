@@ -452,6 +452,26 @@ rules[ 'id-length' ] = [ 'warn', {
 rules[ 'id-match' ] = 'off';
 
 /**
+* Do not allow a newline before an arrow function body.
+*
+* @name implicit-arrow-linebreak
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'beside' ]
+* @see [implicit-arrow-linebreak]{@link https://eslint.org/docs/rules/implicit-arrow-linebreak}
+*
+* @example
+* // Bad...
+* (foo) =>
+*     bar;
+*
+* @example
+* // Okay...
+* (foo) => bar;
+*/
+rules[ 'implicit-arrow-linebreak' ] = [ 'error', 'beside' ];
+
+/**
 * Require tabs, except for `case` statements.
 *
 * @name indent
