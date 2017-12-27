@@ -785,6 +785,17 @@ rules[ 'max-statements' ] = [ 'warn', {
 }];
 
 /**
+* Require multiline comments be "starred" blocks. NOTE: currently disabled as the rule only supports "aligned" starred blocks.
+*
+* @name multiline-comment-style
+* @memberof rules
+* @type {Array}
+* @default [ 'off', 'starred-block' ]
+* @see [multiline-comment-style]{@link https://eslint.org/docs/rules/multiline-comment-style}
+*/
+rules[ 'multiline-comment-style' ] = [ 'off', 'starred-block' ]; // TODO: enable once non-"aligned" blocks are supported
+
+/**
 * Allow same line or multiline ternary expressions.
 *
 * @name multiline-ternary
