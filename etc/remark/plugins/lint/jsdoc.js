@@ -71,16 +71,6 @@ plugins.push([
 ]);
 
 /**
-* Require definitions be placed at the end of a file.
-*
-* @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-definition}
-*/
-plugins.push([
-	require( 'remark-lint-final-definition' ),
-	[ 'error' ]
-]);
-
-/**
 * Disable rule requiring a final newline (see <http://unix.stackexchange.com/questions/18743>), as not relevant to JSDoc comments.
 *
 * @see [final-newline]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-newline}
