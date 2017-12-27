@@ -32,4 +32,5 @@ MARKDOWN_LINT_FLAGS ?= \
 	--ignore-path $(REMARK_IGNORE) \
 	--no-stdout \
 	--no-ignore \
-	--no-config
+	--no-config \
+	--quiet
