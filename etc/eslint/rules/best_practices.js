@@ -358,8 +358,7 @@ rules[ 'no-div-regex' ] = 'error';
 *
 * @name no-else-return
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
 * @see [no-else-return]{@link http://eslint.org/docs/rules/no-else-return}
 *
 * @example
@@ -377,7 +376,9 @@ rules[ 'no-div-regex' ] = 'error';
 * }
 * return y;
 */
-rules[ 'no-else-return' ] = 'error';
+rules[ 'no-else-return' ] = [ 'error', {
+	'allowElseIf': false
+}];
 
 /**
 * Never allow an empty function.
