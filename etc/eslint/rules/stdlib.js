@@ -382,6 +382,59 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
 
 /**
+* Require definitions be placed at the end of the description.
+*
+* @name jsdoc-final-definition
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-definition}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a [number][number].
+* *
+* * [number]: https://example.com
+* *
+* * Additional information.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a [number][number].
+* *
+* * Additional information.
+* *
+* * [number]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
