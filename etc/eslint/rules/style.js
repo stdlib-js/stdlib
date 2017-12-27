@@ -629,7 +629,6 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 * @name lines-between-class-members
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'never' ]
 * @see [lines-between-class-members]{@link https://eslint.org/docs/rules/lines-between-class-members}
 *
 * @example
@@ -647,7 +646,9 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 *     baz() {}
 * }
 */
-rules[ 'lines-between-class-members' ] = [ 'error', 'never' ];
+rules[ 'lines-between-class-members' ] = [ 'error', 'never', {
+	'exceptAfterSingleLine': false
+}];
 
 /**
 * Enforce a maximum depth that blocks can be nested.
