@@ -91,16 +91,6 @@ plugins.push([
 ]);
 
 /**
-* Prevent too many spaces from being used to hard break.
-*
-* @see [hard-break-spaces]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
-*/
-plugins.push([
-	require( 'remark-lint-hard-break-spaces' ),
-	[ 'error' ]
-]);
-
-/**
 * Warn when headings increment by more than 1 level.
 *
 * @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
