@@ -435,6 +435,57 @@ rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
 rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 
 /**
+* Prevent too many spaces from being used to hard break.
+*
+* @name jsdoc-hard-break-spaces
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * Dots represent⋅⋅⋅
+* * spaces.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * Dots represent⋅⋅
+* * spaces.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
