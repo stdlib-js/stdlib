@@ -1525,7 +1525,6 @@ rules[ 'require-jsdoc' ] = [ 'error', {
 * @name semi
 * @memberof rules
 * @type {Array}
-* @default [ 'error', 'always' ]
 * @see [semi]{@link http://eslint.org/docs/rules/semi}
 *
 * @example
@@ -1536,7 +1535,9 @@ rules[ 'require-jsdoc' ] = [ 'error', {
 * // Good...
 * var x = 5;
 */
-rules[ 'semi' ] = [ 'error', 'always' ];
+rules[ 'semi' ] = [ 'error', 'always', {
+	'omitLastInOneLineBlock': false
+}];
 
 /**
 * Require a space after, but not before, a semicolon.
