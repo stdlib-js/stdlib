@@ -29,4 +29,5 @@ REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 MARKDOWN_LINT_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF) \
-	--ignore-path $(REMARK_IGNORE)
+	--ignore-path $(REMARK_IGNORE) \
+	--no-stdout
