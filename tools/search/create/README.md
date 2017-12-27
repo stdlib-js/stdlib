@@ -96,6 +96,8 @@ function onCreate( error, idx ) {
 
 <!-- TODO: Remove internal require -->
 
+<!-- eslint no-undef: "error" -->
+
 <!-- eslint-disable stdlib/no-internal-require -->
 
 ```javascript

@@ -104,6 +104,8 @@ function clbk( error, bundle ) {
 
 <!-- eslint-disable stdlib/no-redeclare -->
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var bundle = require( '@stdlib/tools/test/bundle' );

@@ -176,6 +176,8 @@ var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
 
 <!-- eslint-disable no-sync -->
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;

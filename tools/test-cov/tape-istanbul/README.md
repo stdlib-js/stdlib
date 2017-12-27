@@ -50,6 +50,8 @@ runner( pattern, opts, done );
 
 <!-- eslint-disable no-path-concat -->
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var runner = require( '@stdlib/tools/test-cov/tape-istanbul' );
 

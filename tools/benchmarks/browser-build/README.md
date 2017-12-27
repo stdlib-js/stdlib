@@ -130,6 +130,8 @@ function clbk( error, bool ) {
 
 <!-- eslint-disable stdlib/no-redeclare -->
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var resolve = require( 'path' ).resolve;
