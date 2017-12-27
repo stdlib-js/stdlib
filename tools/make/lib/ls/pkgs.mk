@@ -18,6 +18,7 @@ FIND_PACKAGES_FLAGS ?= \
 	-name "$(PACKAGES_FILE)" \
 	-regex "$(PACKAGES_FILTER)" \
 	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
 	-not -path "$(BUILD_DIR)/*" \
 	-not -path "$(DIST_DIR)/*" \
 	-not -path "$(DEPS_DIR)/*" \
