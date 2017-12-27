@@ -416,6 +416,43 @@ rules[ 'func-style' ] = [ 'error', 'declaration', {
 }];
 
 /**
+* Never allow linebreaks inside parentheses of function parameters or arguments.
+*
+* @name function-paren-newline
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'never' ]
+* @see [function-paren-newline]{@link https://eslint.org/docs/rules/function-paren-newline}
+*
+* @example
+* // Bad...
+* function foo(
+*     x,
+*     y
+* ) {
+*     return x + y;
+* }
+*
+* @example
+* // Bad...
+* console.log(
+*     1,
+*     2
+* );
+*
+* @example
+* // Good...
+* function foo( x, y ) {
+*     return x + y;
+* }
+*
+* @example
+* // Good...
+* console.log( 1, 2 );
+*/
+rules[ 'function-paren-newline' ] = [ 'error', 'never' ];
+
+/**
 * Do not blacklist any identifiers.
 *
 * @name id-blacklist
