@@ -69,6 +69,9 @@ ROOT_PACKAGE_JSON ?= $(ROOT_DIR)/package.json
 # Define the top-level directory containing node module dependencies:
 NODE_MODULES ?= $(ROOT_DIR)/node_modules
 
+# Define the folder name convention for node module dependencies:
+NODE_MODULES_FOLDER ?= node_modules
+
 # Define the top-level directory containing node module executables:
 BIN_DIR ?= $(NODE_MODULES)/.bin
 
