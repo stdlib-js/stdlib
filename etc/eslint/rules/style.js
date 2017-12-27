@@ -598,7 +598,9 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 	'allowObjectStart': true,
 	'allowObjectEnd': true,
 	'allowArrayStart': true,
-	'allowArrayEnd': true
+	'allowArrayEnd': true,
+	'allowClassStart': true,
+	'allowClassEnd': true
 }];
 
 /**
@@ -1119,7 +1121,7 @@ rules[ 'no-unneeded-ternary' ] = [ 'error', {
 * Never allow whitespace before a property.
 *
 * @name no-whitespace-before-property
-* @member rules
+* @memberof rules
 * @type {string}
 * @default 'error'
 * @see [no-whitespace-before-property]{@link http://eslint.org/docs/rules/no-whitespace-before-property}
@@ -1415,30 +1417,35 @@ rules[ 'padded-blocks' ] = [ 'error', 'never' ];
 * return y;
 */
 rules[ 'padding-line-between-statements' ] = [ 'error',
+
 	// Never allow a blank line before a directive...
 	{
 		'blankLine': 'never',
 		'prev': '*',
 		'next': 'directive'
 	},
+
 	// Always require a blank line after a directive...
 	{
 		'blankLine': 'always',
 		'prev': 'directive',
 		'next': '*'
 	},
+
 	// But allow directives to be grouped together...
 	{
 		'blankLine': 'any',
 		'prev': 'directive',
 		'next': 'directive'
 	},
+
 	// Allow discretion when inserting a blank line after `var` declarations...
 	{
 		'blankLine': 'any',
 		'prev': 'var',
 		'next': '*'
 	},
+
 	// Allow discretion when inserting a blank line before `return` statements...
 	{
 		'blankLine': 'any',
