@@ -30,4 +30,6 @@ MARKDOWN_LINT_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF) \
 	--ignore-path $(REMARK_IGNORE) \
-	--no-stdout
+	--no-stdout \
+	--no-ignore \
+	--no-config
