@@ -53,6 +53,9 @@ dist_dir="${root_dir}/dist"
 # Define the directory path for external library dependencies:
 deps_dir="${root_dir}/deps"
 
+# Define the directory path for documentation:
+docs_dir="${root_dir}/docs"
+
 # Define the directory path for reports:
 reports_dir="${root_dir}/reports"
 
@@ -313,9 +316,9 @@ find_tests() {
 
 	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 	if [[ "${kernel}" = "Darwin" ]]; then
-		tests=$(find -E "${root_dir}" -name "${tests_pattern}" -regex "${tests_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*")
+		tests=$(find -E "${root_dir}" -name "${tests_pattern}" -regex "${tests_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${docs_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*")
 	else
-		tests=$(find "${root_dir}" -regextype posix-extended -name "${tests_pattern}" -regex "${tests_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*")
+		tests=$(find "${root_dir}" -regextype posix-extended -name "${tests_pattern}" -regex "${tests_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${docs_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*")
 	fi
 	echo "${tests}"
 }
