@@ -75,6 +75,8 @@ remark.use( insertURLs, opts );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );

@@ -131,6 +131,8 @@ The function accepts the same `options` as `lint()` above.
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var lint = require( '@stdlib/tools/lint/pkg-json' );
 

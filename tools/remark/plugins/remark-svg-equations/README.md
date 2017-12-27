@@ -58,6 +58,8 @@ The absolute value is defined as
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var remark = require( 'remark' );

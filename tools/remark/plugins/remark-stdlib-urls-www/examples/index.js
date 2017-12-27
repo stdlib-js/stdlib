@@ -1,8 +1,8 @@
 'use strict';
 
-var readFileSync = require( 'fs' ).readFileSync;
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var links = require( './../lib' );
 
 var fpath;

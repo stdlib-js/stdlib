@@ -53,6 +53,8 @@ build( done );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var build = require( 'path/to/tools/build-docs' );
 

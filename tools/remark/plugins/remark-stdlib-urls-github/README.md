@@ -48,10 +48,13 @@ remark.use( links, opts );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var toVFile = require( 'to-vfile' );
 var remark = require( 'remark' );
-var path = require( 'path' );
+var join = require( 'path' ).join;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var links = require( '@stdlib/tools/remark/plugins/remark-stdlib-urls-github' );
 
 var fpath;

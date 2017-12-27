@@ -50,6 +50,8 @@ console.log( vfile.contents );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var remark = require( 'remark' );

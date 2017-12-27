@@ -47,6 +47,8 @@ var boop = beep( 'boop' );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var beep = require( 'beep' );
 

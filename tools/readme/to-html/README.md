@@ -106,6 +106,8 @@ To understand how other `options` affect HTML output, see the HTML template in `
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var resolve = require( 'path' ).resolve;
 var convert = require( '@stdlib/tools/readme/to-html' );

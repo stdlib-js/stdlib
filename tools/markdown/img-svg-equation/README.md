@@ -79,6 +79,8 @@ var html = createElement( opts );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var createElement = require( '@stdlib/tools/markdown/img-svg-equation' );
 

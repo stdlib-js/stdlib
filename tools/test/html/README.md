@@ -78,6 +78,8 @@ function clbk( error ) {
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var build = require( '@stdlib/tools/test/html' );
 

@@ -71,6 +71,8 @@ var transform = remark.use( createSVGs, opts ).process;
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var path = require( 'path' );
 var toVFile = require( 'to-vfile' );
