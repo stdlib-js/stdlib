@@ -12,7 +12,6 @@ var rules = {};
 *
 * @name for-direction
 * @memberof rules
-* @typeof rules
 * @type {string}
 * @default 'error'
 * @see [for-direction]{@link http://eslint.org/docs/rules/for-direction}
@@ -32,6 +31,33 @@ var rules = {};
 * }
 */
 rules[ 'for-direction' ] = 'error';
+
+/**
+* Require a `return` statement in property getters.
+*
+* @name 'getter-return'
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [getter-return]{@link https://eslint.org/docs/rules/getter-return}
+*
+* @example
+* // Bad...
+* Object.defineProperty( {}, 'foo', {
+*     'get': function get() {
+*         // No return...
+*     }
+* });
+*
+* @example
+* // Good...
+* Object.defineProperty( {}, 'foo', {
+*     'get': function get() {
+*         return 'bar'
+*     }
+* });
+*/
+rules[ 'getter-return' ] = 'error';
 
 /**
 * Warn when using `await` inside of loops.
