@@ -47,6 +47,8 @@ var v = todo( 0.0 );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var todo = require( '@stdlib/<TODO: module path>' );
 
