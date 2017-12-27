@@ -624,6 +624,32 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 }];
 
 /**
+* Do not allow lines between class members.
+*
+* @name lines-between-class-members
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'never' ]
+* @see [lines-between-class-members]{@link https://eslint.org/docs/rules/lines-between-class-members}
+*
+* @example
+* // Bad...
+* class Foo() {
+*     bar() {}
+*
+*     baz() {}
+* }
+*
+* @example
+* // Okay...
+* class Foo() {
+*     bar() {}
+*     baz() {}
+* }
+*/
+rules[ 'lines-between-class-members' ] = [ 'error', 'never' ];
+
+/**
 * Enforce a maximum depth that blocks can be nested.
 *
 * @name max-depth
