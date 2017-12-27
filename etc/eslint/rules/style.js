@@ -444,7 +444,7 @@ rules[ 'id-length' ] = [ 'warn', {
 * Do not impose draconian name restrictions.
 *
 * @name id-match
-* @memberof id-match
+* @memberof rules
 * @type {string}
 * @default 'off'
 * @see [id-match]{@link http://eslint.org/docs/rules/id-match}
@@ -475,7 +475,7 @@ rules[ 'implicit-arrow-linebreak' ] = [ 'error', 'beside' ];
 * Require tabs, except for `case` statements.
 *
 * @name indent
-* @memberof indent
+* @memberof rules
 * @type {Array}
 * @see [indent]{@link http://eslint.org/docs/rules/indent}
 */
