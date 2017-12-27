@@ -13,7 +13,11 @@ endif
 # This target lints all Markdown files.
 
 lint-markdown: $(NODE_MODULES)
-	$(QUIET) $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(MARKDOWN_FILES)
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $$file || exit 1; \
+	done
 
 .PHONY: lint-markdown
 
@@ -23,6 +27,10 @@ lint-markdown: $(NODE_MODULES)
 # This target lints Markdown files according to a specified file list. Note that we expect `$FILES` to be a Markdown file list.
 
 lint-markdown-files: $(NODE_MODULES)
-	$(QUIET) $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $(FILES)
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $$file || exit 1; \
+	done
 
 .PHONY: lint-markdown-files
