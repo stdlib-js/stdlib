@@ -40,8 +40,7 @@ rules[ 'accessor-pairs' ] = [ 'error', {
 *
 * @name array-callback-return
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
 * @see [array-callback-return]{@link http://eslint.org/docs/rules/array-callback-return}
 *
 * @example
@@ -59,7 +58,9 @@ rules[ 'accessor-pairs' ] = [ 'error', {
 * }
 * var o = [ 1, 2, 3 ].reduce( reduce, {} );
 */
-rules[ 'array-callback-return' ] = 'error';
+rules[ 'array-callback-return' ] = [ 'error', {
+	'allowImplicit': false
+}];
 
 /**
 * Never allow variables to be used outside of the block in which they were defined.
