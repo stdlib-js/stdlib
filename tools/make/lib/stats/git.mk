@@ -872,6 +872,17 @@ stats-deletions-per-weekday:
 .PHONY: stats-deletions-per-weekday
 
 
+# Compute deletions per year.
+#
+# This target computes the number of deletions per year.
+
+stats-deletions-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/deletions_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/deletions_per_year
+
+.PHONY: stats-deletions-per-year
+
+
 # Compute filenames changed.
 #
 # This target prints filename changes.
