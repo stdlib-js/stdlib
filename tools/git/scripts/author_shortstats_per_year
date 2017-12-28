@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# Prints the summary statistics per year per author.
+#
+# <year> <author_first_name> <author_last_name> <num_commits> <files_changed> <additions> <deletions>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the yearly totals.
+# * `sort -k1n`
+#   - Sort the year numerically.
+"${shortstats}" | awk '
+{
+	# Update yearly totals per author:
+	commits[$5,$6,$7] += 1
+	files[$5,$6,$7] += $8
+	additions[$5,$6,$7] += $9
+	deletions[$5,$6,$7] += $10
+}
+END {
+	for (k in commits) {
+		split(k, keys, SUBSEP)
+		print keys[1] OFS keys[2] OFS keys[3] OFS commits[k] OFS files[k] OFS additions[k] OFS deletions[k]
+	}
+}
+' | sort -k1n
