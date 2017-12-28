@@ -300,6 +300,17 @@ stats-author-files-changed-per-weekday:
 .PHONY: stats-author-files-changed-per-weekday
 
 
+# Compute author number of changed files per year.
+#
+# This target computes the number of files changed per year per author.
+
+stats-author-files-changed-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_files_changed_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_files_changed_per_year
+
+.PHONY: stats-author-files-changed-per-year
+
+
 # Compute number of library packages per day per author.
 #
 # This target computes the number of library packages per day per author.
