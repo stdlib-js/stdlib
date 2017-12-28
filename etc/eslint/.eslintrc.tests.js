@@ -53,6 +53,7 @@ eslint.rules[ 'no-restricted-syntax' ] = [ 'error',
 	'DebuggerStatement',
 	'ExperimentalRestProperty',
 	'ExperimentalSpreadProperty',
+
 	// 'FunctionExpression',
 	'LabeledStatement',
 	'RestElement',
