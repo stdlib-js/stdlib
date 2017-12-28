@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#
+# Prints the number of filenames changed per year per author.
+#
+# <year> <author_first_name> <author_last_name> <filenames_changed>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to print filename changes:
+renames="${root}/tools/git/scripts/filename_changes"
+
+# * `renames`
+#   - Print filename changes.
+# * `awk '{}'`
+#   - Tabulate the yearly totals.
+# * `sort -k1n`
+#   - Sort the year numerically.
+"${renames}" | awk '
+{
+	# Update yearly totals per author:
+	lines[$5,$6,$7] += 1
+}
+END {
+	for (k in lines) {
+		split(k, keys, SUBSEP)
+		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
+	}
+}
+' | sort -k1n
