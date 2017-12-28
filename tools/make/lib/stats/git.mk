@@ -58,6 +58,17 @@ stats-additions-per-weekday:
 .PHONY: stats-additions-per-weekday
 
 
+# Compute additions per year.
+#
+# This target computes the number of additions committed per year.
+
+stats-additions-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/additions_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/additions_per_year
+
+.PHONY: stats-additions-per-year
+
+
 # Compute author additions per day.
 #
 # This target computes the number of additions committed per day per author.
