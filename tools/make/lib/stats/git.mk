@@ -256,6 +256,17 @@ stats-author-filename-changes-per-weekday:
 .PHONY: stats-author-filename-changes-per-weekday
 
 
+# Compute number of filenames changed per year per author.
+#
+# This target computes the number of filename changes per year per author.
+
+stats-author-filename-changes-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_filename_changes_per_year
+
+.PHONY: stats-author-filename-changes-per-year
+
+
 # Compute author number of changed files per day.
 #
 # This target computes the number of files changed per day per author.
