@@ -1653,6 +1653,17 @@ stats-shortstats-per-weekday:
 .PHONY: stats-shortstats-per-weekday
 
 
+# Compute summary statistics per year.
+#
+# This target computes summary statistics for each year.
+
+stats-shortstats-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/shortstats_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/shortstats_per_year
+
+.PHONY: stats-shortstats-per-year
+
+
 # Compute additions per commit standard deviation.
 #
 # This target computes the standard deviation of the number of additions per commit.
