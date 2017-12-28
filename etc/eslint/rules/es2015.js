@@ -206,7 +206,7 @@ rules[ 'no-dupe-class-members' ] = 'error';
 * Never allow duplicate `import` statements.
 *
 * @name no-duplicate-imports
-* @member rules
+* @memberof rules
 * @type {Array}
 * @see [no-duplicate-imports]{@link http://eslint.org/docs/rules/no-duplicate-imports}
 */
