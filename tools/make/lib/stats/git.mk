@@ -993,6 +993,17 @@ stats-files-changed-per-weekday:
 .PHONY: stats-files-changed-per-weekday
 
 
+# Compute files changed per year.
+#
+# This target computes the number of files changed per year.
+
+stats-files-changed-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/files_changed_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/files_changed_per_year
+
+.PHONY: stats-files-changed-per-year
+
+
 # Compute number of library packages added per day.
 #
 # This target computes the number of library packages added per day.
