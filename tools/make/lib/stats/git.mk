@@ -443,6 +443,17 @@ stats-author-shortstats-per-month:
 .PHONY: stats-author-shortstats-per-month
 
 
+# Compute author short stats per year.
+#
+# This target computes summary statistic per year per author.
+
+stats-author-shortstats-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_shortstats_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_shortstats_per_year
+
+.PHONY: stats-author-shortstats-per-year
+
+
 # Compute number of tools packages per day per author.
 #
 # This target computes the number of tools packages per day per author.
