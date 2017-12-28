@@ -44,7 +44,7 @@ eslint.rules[ 'no-console' ] = 'off';
 eslint.rules[ 'strict' ] = 'off';
 
 /**
-* Do not require capitalized comments, as we frequently use `// returns` which would leave to significant lint noise.
+* Do not require capitalized comments, as we frequently use `// returns` which would lead to significant lint noise.
 *
 * @private
 */
