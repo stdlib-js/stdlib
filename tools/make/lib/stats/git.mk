@@ -938,6 +938,17 @@ stats-filename-changes-per-weekday:
 .PHONY: stats-filename-changes-per-weekday
 
 
+# Compute filenames changed per year.
+#
+# This target computes the number of filenames changed per year.
+
+stats-filename-changes-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/filename_changes_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/filename_changes_per_year
+
+.PHONY: stats-filename-changes-per-year
+
+
 # Compute files changed per day.
 #
 # This target computes the number of files changed per day.
