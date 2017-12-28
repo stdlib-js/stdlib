@@ -212,6 +212,17 @@ stats-author-deletions-per-weekday:
 .PHONY: stats-author-deletions-per-weekday
 
 
+# Compute author deletions per year.
+#
+# This target computes the number of deletions committed per year per author.
+
+stats-author-deletions-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_deletions_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_deletions_per_year
+
+.PHONY: stats-author-deletions-per-year
+
+
 # Compute number of filenames changed per day per author.
 #
 # This target computes the number of filename changes per day per author.
