@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+#
+# Prints the number of deletions per year per author.
+#
+# <year> <author_first_name> <author_last_name> <deletions>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to generate commit short stats:
+shortstats="${root}/tools/git/scripts/shortstats"
+
+# * `shortstats`
+#   - Get summary statistics for each commit.
+# * `awk '{}'`
+#   - Tabulate the yearly totals.
+# * `sort -k1n`
+#   - Sort the year numerically.
+"${shortstats}" | awk '
+{
+	# Update yearly totals per author:
+	lines[$5,$6,$7] += $10
+}
+END {
+	for (k in lines) {
+		split(k, keys, SUBSEP)
+		print keys[1] OFS keys[2] OFS keys[3] OFS lines[k]
+	}
+}
+' | sort -k1n
