@@ -13,6 +13,7 @@
 -   [Why not change the ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
 -   [What can be done at the standards level to better support numeric computing?](#ecmascript-recommendations)
 -   [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
+-   [Why not submit improvements to existing libraries?](#contributing-to-existing-libraries)
 -   [Backward compatibility?](#backward-compatibility)
 -   [Why use semicolons?](#semicolons)
 -   [Import support?](#import-support)
@@ -286,6 +287,21 @@ To better support numeric computing, standards bodies can do the following:
 -   **Consistency**: package structure, documentation, testing, and code style vary widely, often as artifacts of author taste and eccentricities. By adhering to a single style, library consumers can focus on implementation details, rather than continual and arbitrary style distractions.
 -   **Quality**: packages range from extremely high quality to extremely poor quality, with the distribution of packages skewed toward the latter end of the spectrum. Any reimplementation of existing package functionality is done to ensure the same high standard and quality across all project modules.
 -   **Control**: bringing functionality "in-house" enables control of release cycles, testing, distribution, interface design, and API changes. 
+
+<!-- </faq-question> -->
+
+<!-- <faq-question> -->
+
+* * *
+
+<a name="contributing-to-existing-libraries"></a>
+
+### Why not submit improvements to existing libraries?
+
+-   **Rewrites**: often, our approach and improvements would require a drastic shift in how existing libraries are written. In some cases, incorporating changes would require completely rewriting one or more libraries. And if a rewrite is necessary, a rewritten library differs from a separate implementation in name only.
+-   **Bandwidth**: we do not have the time or resources to both develop the project and actively contribute to any and all existing libraries which might benefit from our improvements. In an ideal world, we would contribute any insights, bug fixes, and improved algorithms to external community libraries; however, we simply lack the bandwidth to do so. As this project is open source, we encourage authors of community libraries to track project development. If someone wants to take our improvements and incorporate them elsewhere, she is free to do so (**subject to the project license**), but this is **not** something we plan on actively pursuing.
+-   **Opportunity Cost**: while we acknowledge that the project may benefit from engaging with authors of existing libraries in terms of knowledge transfer and insight, we also recognize that such efforts entail risk (no guarantee efforts will lead to library inclusion or achieve intended aim) and real costs (allocated time), and, as such, the opportunity cost (along with maintenance burden) of _pushing_ changes to external community libraries is too great.
+-   **Priorities**: based on our experience, authors of external community libraries can be rather opinionated, and we are not interested in engaging in endless developer debate, especially given our rather strong opinions on how things should be done. The more we spend time in debate, the less we can allocate time to project development. Our preference is to focus our attention on those aspects over which we have most control and which achieve the greatest development efficiency.
 
 <!-- </faq-question> -->
 
