@@ -14,6 +14,7 @@
 -   [What can be done at the standards level to better support numeric computing?](#ecmascript-recommendations)
 -   [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 -   [Why not submit improvements to existing libraries?](#contributing-to-existing-libraries)
+-   [Why not aggregate (curate) packages published to npm?](#why-not-curate)
 -   [Backward compatibility?](#backward-compatibility)
 -   [Why use semicolons?](#semicolons)
 -   [Import support?](#import-support)
@@ -302,6 +303,34 @@ To better support numeric computing, standards bodies can do the following:
 -   **Bandwidth**: the demands of the project mean that core project authors do not have the time or resources to both develop the project and actively contribute to any and all existing libraries which might benefit from this project's implementation improvements. In an ideal world, any insights, bug fixes, and improved algorithms included in this project would be pushed to external community libraries; however, the project lacks the bandwidth to do so. As this project is open source, authors of community libraries are encouraged to track project development. If someone wants to take this project's implementation improvements and incorporate them elsewhere, she is free to do so (_subject to the project license_), but this is **not** something the project can actively pursue.
 -   **Opportunity cost**: while the project may benefit from engaging with authors of existing libraries in terms of knowledge transfer and insight, such efforts entail risk (no guarantee efforts will lead to library inclusion or achieve intended aim) and real costs (allocated time), and, as such, the opportunity cost (along with maintenance burden) of _pushing_ changes to external community libraries is too great.
 -   **Priorities**: given the project's rather strong opinions, there exists a strong possibility of endless developer debate (and bikeshedding) when pushing changes to external community libraries. The more time spent in debate, the less time allocated to project development. In general, this project is biased toward focusing attention on those aspects over which project authors have most control and which can best facilitate development efficiency.
+
+<!-- </faq-question> -->
+
+<!-- <faq-question> -->
+
+* * *
+
+<a name="why-not-curate"></a>
+
+### Why not aggregate (curate) packages published to npm?
+
+This project chose to centralize project development and to forgo aggregation/curation for the following reasons:
+
+-   **Security**: centralized development facilitates security patches and updates. In a distributed aggregation development model, patching security vulnerabilities is subject to increased lag and errors, both in terms of communication and resolution.
+-   **Control**: an aggregation model depends on a pull request development cycle, and the model's success depends on developer responsiveness. The latter is by no means guaranteed and resides outside the project's control.
+-   **Immediacy**: no additional tooling is needed for notification of source changes. As all development happens on a single source repository, changes are persisted in the commit history, facilitating code archeology and providing an embedded mechanism for both pushing and pulling change notifications.
+-   **History**: no additional tooling is needed to aggregate and compile a centralized history (changelog) for communicating changes included in a particular release. The ability to even generate a changelog in an aggregation model assumes codification and adoption of, e.g., a particular commit style, which, given significant variation in developer attitude, tastes, and willingness to adopt any one style, is unrealistic.
+-   **Search**: performing a code search is significantly more difficult in an aggregation model, especially given inevitable variation in style and naming conventions.
+-   **Continuous integration**: a centralized development model greatly facilitates testing whether changes in one part of the project affect other parts of the project. Feedback for external effects is more immediate and does not require propagation through a disperse network of curated libraries, each with independently managed build environments and configurations.
+-   **Testing**: a centralized development model better facilitates test coverage metrics, making a clearer delineation between project and external code.
+-   **Tooling**: an aggregation model cannot as readily leverage project tooling for testing, benchmarking, and documentation generation. Furthermore, requiring aggregated libraries to use project tooling would mean a significant amount of code redundancy, as each library would need to independently install and manage project tooling. Centralized development thus minimizes disk usage and redundancy.
+-   **Development efficiency**: centralized development enables efficiencies for refactoring and propagating changes which are not possible (without significant time and resources) in an aggregation model. While, in theory, a decentralized aggregation model distributes **initial** development work/costs across multiple developers, the model is not particularly efficient in distributing maintenance costs across those same (or even different) developers. While a centralized development model _may_ incur a greater **initial** development cost, maintenance costs (e.g., communication overhead, propagation of changes, et cetera) are considerably less. In short, centralized development helps unlock efficiencies of scale.
+-   **Operational efficiency**: from a practical standpoint, an aggregation model, by definition, means significantly longer installation times due to the need for the many HTTP requests which would be required to build an aggregated library.
+-   **Reproducibility**: in a centralized development model, project development always happens on (more or less) the "latest" code. In an aggregation model, which by definition involves dependencies, local development versions can vary significantly due to old/stale node modules and other dependencies. Accordingly, in a centralized model, reproducibility is streamlined (e.g., a `git pull` is faster than `npm clean && npm install`).
+-   **Source of truth**: a centralized development model allows operating on a single source of truth, while an aggregation model requires a search path involving two or more dispersed resources, thus incurring increased search and communication costs.
+-   **Integrity**: a centralized development model helps ensure project integrity. An aggregation model cannot guarantee that aggregated packages will not "drift" in terms of style, organization, tooling, and, most importantly, **quality**.
+
+**Aside**: in the long arc of history for this project, prior to the current project iteration, an aggregation model was both explored and even pursued. The reasons outlined above find their origin in that (often painful) experience.
 
 <!-- </faq-question> -->
 
