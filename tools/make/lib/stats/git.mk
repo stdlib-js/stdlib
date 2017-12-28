@@ -91,6 +91,17 @@ stats-author-additions-per-weekday:
 .PHONY: stats-author-additions-per-weekday
 
 
+# Compute author additions per year.
+#
+# This target computes the number of additions committed per year per author.
+
+stats-author-additions-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_additions_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_additions_per_year
+
+.PHONY: stats-author-additions-per-year
+
+
 # Compute author commit intervals.
 #
 # This target computes the interval between commits for each author.
