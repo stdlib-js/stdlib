@@ -157,6 +157,17 @@ stats-author-commits-per-weekday:
 .PHONY: stats-author-commits-per-weekday
 
 
+# Compute author commits per year.
+#
+# This target computes the number of commits per year per author.
+
+stats-author-commits-per-year:
+	$(QUIET) $(MAKE_EXECUTABLE) $(GIT_SCRIPTS_DIR)/author_commits_per_year
+	$(QUIET) $(GIT_SCRIPTS_DIR)/author_commits_per_year
+
+.PHONY: stats-author-commits-per-year
+
+
 # Compute author days active.
 #
 # This target computes the number of days each author has committed.
