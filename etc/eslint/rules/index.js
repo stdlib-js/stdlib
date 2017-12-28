@@ -1,3 +1,4 @@
+/* eslint-disable function-paren-newline */
 'use strict';
 
 // MODULES //
