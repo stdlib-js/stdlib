@@ -23,7 +23,7 @@ var opts = {
 /**
 * Plugin.
 */
-var plugin = [ [ require( eslint ).factory( opts ), [ 'error' ] ] ];
+var plugin = [ [ require( eslint ).factory( opts ), [ 'error' ] ] ]; // eslint-disable-line stdlib/no-dynamic-require
 
 
 // EXPORTS //

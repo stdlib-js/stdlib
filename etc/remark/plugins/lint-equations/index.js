@@ -16,7 +16,7 @@ var lint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-equati
 /**
 * Plugin.
 */
-var plugin = [ [ require( lint ), [ 'error' ] ] ];
+var plugin = [ [ require( lint ), [ 'error' ] ] ]; // eslint-disable-line stdlib/no-dynamic-require
 
 
 // EXPORTS //
