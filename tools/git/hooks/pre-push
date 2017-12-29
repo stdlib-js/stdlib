@@ -115,6 +115,8 @@ main() {
 		fi
 	fi
 
+	# TODO: run examples found in Markdown files (including CLI examples)
+
 	# Run C benchmark files...
 	files=$(echo "${changed_files}" | grep 'benchmark/.*\.c$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
