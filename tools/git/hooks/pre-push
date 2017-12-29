@@ -111,7 +111,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running examples.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -125,7 +125,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running C benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -137,7 +137,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running C++ benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -149,7 +149,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running Fortran benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -161,7 +161,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running JavaScript benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -173,7 +173,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running Julia benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -185,7 +185,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running Python benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
@@ -197,7 +197,7 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running R benchmarks.' >&2
-			return 1
+			on_error 1
 		fi
 	fi
 
