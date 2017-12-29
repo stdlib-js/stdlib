@@ -157,29 +157,6 @@ plugins.push([
 ]);
 
 /**
-* Prevent unnecessary indentation of list bullets.
-*
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-bullet-indent}
-*
-* @example
-* <!-- Bad -->
-*
-*     *   Beep
-*     *   Boop
-*
-* @example
-* <!-- Good -->
-*
-* *   Beep
-* *   Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-list-item-bullet-indent' ),
-	[ 'error' ]
-]);
-
-/**
 * Require consistent indentation of list items.
 *
 * @see [list-item-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-content-indent}
