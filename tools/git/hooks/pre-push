@@ -115,16 +115,90 @@ main() {
 		fi
 	fi
 
-	# Run JavaScript benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.js$' | tr '\n' ' ')
+	# Run C benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.c$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
-		make FILES="${files}" benchmark-javascript-files > /dev/null >&2
+		echo 'Running C benchmark files...' >&2
+		make FILES="${files}" benchmark-c-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
-			echo 'Encountered an error when running benchmarks.' >&2
+			echo 'Encountered an error when running C benchmarks.' >&2
 			return 1
 		fi
 	fi
+
+	# Run C++ benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.cpp$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running C++ benchmark files...' >&2
+		make FILES="${files}" benchmark-cpp-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running C++ benchmarks.' >&2
+			return 1
+		fi
+	fi
+
+	# Run Fortran benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.f$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running Fortran benchmark files...' >&2
+		make FILES="${files}" benchmark-fortran-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running Fortran benchmarks.' >&2
+			return 1
+		fi
+	fi
+
+	# Run JavaScript benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running JavaScript benchmark files...' >&2
+		make FILES="${files}" benchmark-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running JavaScript benchmarks.' >&2
+			return 1
+		fi
+	fi
+
+	# Run Julia benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.jl$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running Julia benchmark files...' >&2
+		make FILES="${files}" benchmark-julia-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running Julia benchmarks.' >&2
+			return 1
+		fi
+	fi
+
+	# Run Python benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.py$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running Python benchmark files...' >&2
+		make FILES="${files}" benchmark-python-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running Python benchmarks.' >&2
+			return 1
+		fi
+	fi
+
+	# Run R benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.R$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running R benchmark files...' >&2
+		make FILES="${files}" benchmark-r-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running R benchmarks.' >&2
+			return 1
+		fi
+	fi
+
 	# FIXME: re-enable once we have written tooling to support running only those tests involving affected packages.
 	# run_tests
 	# if [[ "$?" -ne 0 ]]; then
