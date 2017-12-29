@@ -486,6 +486,55 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 
 /**
+* Prevent unnecessary indentation of list item bullets.
+*
+* @name jsdoc-list-item-bullet-indent
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-bullet-indent}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* *   -   Item
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Item
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-list-item-bullet-indent' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
