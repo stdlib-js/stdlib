@@ -6,6 +6,8 @@
 
 stdlib will deliver high-quality, performant libraries for numerical computation and become _the_ library for mathematical and scientific computation on the web.
 
+## Themes
+
 The first major theme in support of this vision is multi-dimensional arrays. Development resources will be dedicated to building high-performance engines for matrix and tensor operations. This work will make stdlib the most complete and robust scientific library for use in both web browsers and Node.js.
 
 The second major theme is native implementations for linear algebra. This will entail Native bindings to hardware optimized linear algebra libraries for use in Node.js libraries and applications and WebAssembly implementations for use in web browsers. This work will make stdlib the most performant library for scientific computation on the web.
