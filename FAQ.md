@@ -5,6 +5,7 @@
 > Common answers to common questions.
 
 -   [Why use this project?](#why-use)
+-   [What are the project's core values?](#core-values)
 -   [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
 -   [Why not use R, Python, or Julia?](#other-languages)
 -   [Why not exclusively use native add-ons?](#native-add-ons)
@@ -59,6 +60,22 @@ This project
 7.  provides standard reference implementations
 
 8.  establishes best practice
+
+<!-- </faq-question> -->
+
+<!-- <faq-question> -->
+
+* * *
+
+<a name="core-values"></a>
+
+### What are the project's core values?
+
+-   **Thoroughness**: implementations should be thorough, including testing, benchmarking, and documentation. Algorithms should be researched, studied, and measured. Taking shortcuts is not acceptable. Attention to detail is highly prized. Code should be written well the first time.
+-   **Rigor**: development should be rigorous. High quality code is expected, and authors are expected to strive for excellence.
+-   **Robustness**: implementations should demonstrate an exhaustive understanding of how they can fail.
+-   **Approachability**: user-facing APIs and underlying implementations should be approachable. Interfaces should embrace simplicity. Source code should use the simplest primitives. Documentation should be abundant.
+-   **Integrity**: all aspects of the project--documentation, testing, benchmarking, implementations, tooling--should form a consistent and coherent whole. Code should be of one voice and reflect a single purpose: to write high quality software.
 
 <!-- </faq-question> -->
 
