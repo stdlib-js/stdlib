@@ -88,6 +88,9 @@ run_tests() {
 
 # Main execution sequence.
 main() {
+	local changed_files
+	local files
+
 	has_commits
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
@@ -96,11 +99,28 @@ main() {
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
+
+	# Get the set of changed files (added and modified):
+	changed_files=$(git diff --name-only --diff-filter AM origin/${GIT_CURRENT_BRANCH})
+
+	# Run JavaScript example files:
+	files=$(echo "${changed_files}" | grep 'examples/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running JavaScript example files...' >&2
+		make FILES="${files}" examples-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running examples.' >&2
+			return 1
+		fi
+	fi
+
 	# FIXME: re-enable once we have written tooling to support running only those tests involving affected packages.
 	# run_tests
 	# if [[ "$?" -ne 0 ]]; then
 	# 	on_error 1
 	# fi
+
 	cleanup
 	exit 0
 }
