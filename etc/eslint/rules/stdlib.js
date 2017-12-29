@@ -486,6 +486,48 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 
 /**
+* Require that JSDoc descriptions start with an uppercase letter and end with a period.
+*
+* @name jsdoc-leading-description-sentence
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * returns a pseudo-random number on `[0,1]`
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Returns a pseudo-random number on `[0,1]`.
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*/
+rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
+
+/**
 * Prevent unnecessary indentation of list item bullets.
 *
 * @name jsdoc-list-item-bullet-indent
@@ -636,48 +678,6 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 * }
 */
 rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
-
-/**
-* Require that JSDoc descriptions start with an uppercase letter and end with a period.
-*
-* @name jsdoc-leading-description-sentence
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-*
-* /**
-* * returns a pseudo-random number on `[0,1]`
-* *
-* * @returns {number} uniform random number
-* *
-* * @example
-* * var y = rand();
-* * // e.g., returns 0.5363925252089496
-* *\/
-* function rand() {
-*     return Math.random();
-* }
-*
-* @example
-* // Good...
-*
-* /**
-* * Returns a pseudo-random number on `[0,1]`.
-* *
-* * @returns {number} uniform random number
-* *
-* * @example
-* * var y = rand();
-* * // e.g., returns 0.5363925252089496
-* *\/
-* function rand() {
-*     return Math.random();
-* }
-*/
-rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 
 /**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
