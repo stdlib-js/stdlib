@@ -470,12 +470,12 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* <example.com>
+* <foo@bar.com>
 *
 * @example
 * <!-- Good -->
 *
-* <https://example.com>
+* <mailto:foo@bar.com>
 *
 */
 plugins.push([
