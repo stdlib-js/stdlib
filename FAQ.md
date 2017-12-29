@@ -39,7 +39,7 @@
 
 This project
 
-1.  provides high quality, rigorous, and robust implementations having common licensing, documentation, tooling, and style
+1.  provides high-quality, rigorous, and robust implementations having common licensing, documentation, tooling, and style
 
 2.  provides peer-reviewed portable JavaScript libraries
 
@@ -75,7 +75,7 @@ This project
 -   **Rigor**: development should be rigorous. High quality code is expected, and authors are expected to strive for excellence.
 -   **Robustness**: implementations should demonstrate an exhaustive understanding of how they can fail.
 -   **Approachability**: user-facing APIs and underlying implementations should be approachable. Interfaces should embrace simplicity. Source code should use the simplest primitives. Documentation should be abundant.
--   **Integrity**: all aspects of the project--documentation, testing, benchmarking, implementations, tooling--should form a consistent and coherent whole. Code should be of one voice and reflect a single purpose: to write high quality software.
+-   **Integrity**: all aspects of the project--documentation, testing, benchmarking, implementations, tooling--should form a consistent and coherent whole. Code should be of one voice and reflect a single purpose: to write high-quality software.
 
 <!-- </faq-question> -->
 
@@ -623,7 +623,7 @@ If you have additional ideas, get in touch, and we'll do our best to help!
 
 You should contribute
 
--   if you want to write high quality software
+-   if you want to write high-quality software
 -   if you want to learn underlying algorithms
 -   if you want to learn how to write rigorous and robust implementations
 -   if you want to bring numeric and scientific computing to JavaScript and the Web
