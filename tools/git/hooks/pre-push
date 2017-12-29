@@ -48,7 +48,7 @@ has_commits() {
 	if git branch -r | grep "${GIT_CURRENT_BRANCH}" > /dev/null; then
 		echo 'Remote branch exists.' >&2
 		echo 'Checking for commits to push...' >&2
-		commits=$(git log origin/"${GIT_CURRENT_BRANCH}".."${GIT_CURRENT_BRANCH}" --oneline --)
+		commits=$(git log "${remote}/${GIT_CURRENT_BRANCH}".."${GIT_CURRENT_BRANCH}" --oneline --)
 	else
 		echo 'Remote branch does not exist.' >&2
 		echo 'Checking for commits to push...' >&2
@@ -101,7 +101,7 @@ main() {
 	fi
 
 	# Get the set of changed files (added and modified):
-	changed_files=$(git diff --name-only --diff-filter AM origin/${GIT_CURRENT_BRANCH})
+	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}")
 
 	# Run JavaScript example files:
 	files=$(echo "${changed_files}" | grep 'examples/.*\.js$' | tr '\n' ' ')
@@ -115,6 +115,16 @@ main() {
 		fi
 	fi
 
+	# Run JavaScript benchmark files...
+	files=$(echo "${changed_files}" | grep 'benchmark/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make FILES="${files}" benchmark-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running benchmarks.' >&2
+			return 1
+		fi
+	fi
 	# FIXME: re-enable once we have written tooling to support running only those tests involving affected packages.
 	# run_tests
 	# if [[ "$?" -ne 0 ]]; then
