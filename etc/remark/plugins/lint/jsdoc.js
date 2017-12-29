@@ -267,31 +267,6 @@ plugins.push([
 ]);
 
 /**
-* Require caret in blockquotes.
-*
-* @see [no-blockquote-without-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
-*
-* @example
-* <!-- Bad -->
-*
-* > Beep
-*
-* > boop
-*
-* @example
-* <!-- Good -->
-*
-* > Beep
-* >
-* > boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-blockquote-without-marker' ),
-	[ 'error' ]
-]);
-
-/**
 * Allow consecutive blank lines.
 *
 * @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
