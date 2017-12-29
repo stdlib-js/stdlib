@@ -685,6 +685,59 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 
 /**
+* Require blank lines in blockquotes have a marker.
+*
+* @name jsdoc-no-blockquote-without-marker
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * > This is a...
+* *
+* * > ...blockquote.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * > This is a...
+* * >
+* * > ...blockquote.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
+
+/**
 * Require that only allowed JSDoc tags are used.
 *
 * @name jsdoc-tag-names
