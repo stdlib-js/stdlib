@@ -2,12 +2,13 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-img-equations:insert_equations' );
-var createElement = require( './../../../../markdown/img-svg-equation' );
+var logger = require( 'debug' );
+var createElement = require( '@stdlib/_tools/markdown/img-svg-equation' );
 
 
 // VARIABLES //
 
+var debug = logger( 'remark-img-equations:insert_equations' );
 var EQN_START = /<!-- <equation.*> -->/;
 var EQN_END = /<!-- <\/equation> -->/;
 var LABEL = /label="([^"]*)"/;
@@ -76,6 +77,7 @@ function insertEquations( node, index, parent ) {
 			'type': 'html',
 			'value': html
 		};
+
 		// Case 1: insert new node between equation tags...
 		if ( EQN_END.test( parent.children[ index+1 ].value ) ) {
 			debug( 'Inserting new node...' );
