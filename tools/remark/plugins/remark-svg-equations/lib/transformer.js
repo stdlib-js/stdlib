@@ -2,13 +2,14 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-svg-equations:transformer' );
+var logger = require( 'debug' );
 var visit = require( 'unist-util-visit' );
 var toSVG = require( '@stdlib/_tools/markdown/inline-svg-equation' );
 
 
 // VARIABLES //
 
+var debug = logger( 'remark-svg-equations:transformer' );
 var EQN_START = /<!-- <equation.*> -->/;
 var EQN_END = /<!-- <\/equation> -->/;
 var LABEL = /label="([^"]*)"/;
