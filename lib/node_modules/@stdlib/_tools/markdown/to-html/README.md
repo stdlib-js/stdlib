@@ -54,6 +54,8 @@ function done( error, html ) {
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
