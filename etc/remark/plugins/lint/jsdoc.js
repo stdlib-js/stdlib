@@ -267,27 +267,6 @@ plugins.push([
 ]);
 
 /**
-* Require all links have a protocol.
-*
-* @see [no-auto-link-without-protocol]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
-*
-* @example
-* <!-- Bad -->
-*
-* <example.com>
-*
-* @example
-* <!-- Good -->
-*
-* <https://example.com>
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-auto-link-without-protocol' ),
-	[ 'error' ]
-]);
-
-/**
 * Require caret in blockquotes.
 *
 * @see [no-blockquote-without-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}

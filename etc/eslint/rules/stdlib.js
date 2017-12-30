@@ -636,6 +636,55 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 ];
 
 /**
+* Require angle-bracketed links to include a protocol.
+*
+* @name jsdoc-no-auto-link-without-protocol
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * <foo@bar.com>
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * <mailto:foo@bar.com>
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
+
+/**
 * Require that only allowed JSDoc tags are used.
 *
 * @name jsdoc-tag-names
