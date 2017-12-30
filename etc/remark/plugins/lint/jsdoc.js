@@ -277,29 +277,6 @@ plugins.push([
 ]);
 
 /**
-* Do not allow duplicate definitions.
-*
-* @see [no-duplicate-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo]: https://example.com
-* [foo]: https://github.com
-*
-* @example
-* <!-- Good -->
-*
-* [foo]: https://example.com
-* [bar]: https://github.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-duplicate-definitions' ),
-	[ 'error' ]
-]);
-
-/**
 * Do not allow duplicate headings in different sections.
 *
 * @see [no-duplicate-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
