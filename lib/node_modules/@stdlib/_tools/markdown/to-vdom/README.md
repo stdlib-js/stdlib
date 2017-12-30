@@ -47,6 +47,8 @@ var vtree = toVirtualDOM( '# Beep\n\n> Boop!' );
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var join = require( 'path' ).join;
 var toHTML = require( 'vdom-to-html' );
