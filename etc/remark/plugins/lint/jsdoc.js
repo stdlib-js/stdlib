@@ -277,30 +277,6 @@ plugins.push([
 ]);
 
 /**
-* Do not allow duplicate headings in different sections.
-*
-* @see [no-duplicate-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
-*
-* @example
-* <!-- Bad -->
-*
-* # Beep
-*
-* ## Boop
-*
-* ### Bop
-*
-* ## Beep
-*
-* ### Bop
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-duplicate-headings' ),
-	[ 'error' ]
-]);
-
-/**
 * Do not allow duplicate headings within a section.
 *
 * @see [no-duplicate-headings-in-section]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
