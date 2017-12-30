@@ -4,7 +4,7 @@
 
 var debug = require( 'debug' )( 'remark-svg-equations:transformer' );
 var visit = require( 'unist-util-visit' );
-var toSVG = require( './../../../../markdown/inline-svg-equation' );
+var toSVG = require( '@stdlib/_tools/markdown/inline-svg-equation' );
 
 
 // VARIABLES //
