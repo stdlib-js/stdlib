@@ -59,6 +59,8 @@ function clbk( error, result ) {
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var beep = require( '@stdlib/beep/boop' );
 
