@@ -2727,6 +2727,18 @@
       "standard"
     ]
   },
+  "https://en.wikipedia.org/wiki/Unix_time": {
+    "id": "unix-time",
+    "description": "Wikipedia entry describing system for describing a point in time, defined as the number of seconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970, minus the number of leap seconds that have taken place since then.",
+    "short_url": "",
+    "keywords": [
+      "unix",
+      "time",
+      "timestamp",
+      "ts",
+      "epoch"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Valence_%28psychology%29": {
     "id": "valence",
     "description": "Wikipedia entry for the concept of valence as used in psychology.",
