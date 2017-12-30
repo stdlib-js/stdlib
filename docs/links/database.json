@@ -254,6 +254,16 @@
       "unittest"
     ]
   },
+  "http://tools.ietf.org/html/rfc5988": {
+    "id": "rfc-5988",
+    "description": "An RFC describing web links.",
+    "short_url": "",
+    "keywords": [
+      "web links",
+      "linking",
+      "link header"
+    ]
+  },
   "http://usejsdoc.org/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",
