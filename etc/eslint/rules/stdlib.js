@@ -738,6 +738,56 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 
 /**
+* Do not allow duplicate definitions.
+*
+* @name jsdoc-no-duplicate-definitions
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a [number][number].
+* *
+* * [number]: https://example.com
+* * [number]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a [number][number].
+* *
+* * [number]: https://example.com
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-duplicate-definitions' ] = 'error';
+
+/**
 * Require that only allowed JSDoc tags are used.
 *
 * @name jsdoc-tag-names
