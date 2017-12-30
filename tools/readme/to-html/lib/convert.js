@@ -2,7 +2,7 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'readme-to-html' );
+var logger = require( 'debug' );
 var resolve = require( 'path' ).resolve;
 var writeFile = require( 'fs' ).writeFile;
 var mustache = require( 'mustache' );
@@ -11,11 +11,16 @@ var isFunction = require( '@stdlib/assert/is-function' );
 var readFile = require( '@stdlib/fs/read-file' );
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
-var toHTML = require( './../../../markdown/to-html' );
+var toHTML = require( '@stdlib/_tools/markdown/to-html' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var template = require( './html_template.js' );
 var styles = require( './styles.js' );
+
+
+// VARIABLES //
+
+var debug = logger( 'readme-to-html' );
 
 
 // MAIN //
@@ -156,6 +161,7 @@ function convert( file, options, clbk ) {
 				'append': append,
 				'readme': html
 			};
+
 			// debug( 'Render options: %s', JSON.stringify( view ) );
 			debug( 'Rendering...' );
 			html = mustache.render( template, view );
