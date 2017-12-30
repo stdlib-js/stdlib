@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Converts package README file to HTML.
+# Converts package README files to HTML.
 #
 # This script is called with the following arguments:
 #
@@ -22,11 +22,11 @@ root_dir="$(git rev-parse --show-toplevel)"
 # Define the path to a utility for finding packages:
 find_packages="${root_dir}/tools/scripts/find_packages"
 
-# Define the path to a utility for converting Markdown to HTML:
-to_html="${root_dir}/tools/markdown/to-html/bin/cli"
-
 # Define the path to the source library:
 source_dir="${root_dir}/lib/node_modules"
+
+# Define the path to a utility for converting Markdown to HTML:
+to_html="${source_dir}/@stdlib/_tools/markdown/to-html/bin/cli"
 
 
 # FUNCTIONS #
