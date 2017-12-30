@@ -548,6 +548,69 @@
       "protocol"
     ]
   },
+  "https://developer.github.com/guides/traversing-with-pagination/": {
+    "id": "github-pagination",
+    "description": "GitHub documentation for pagination.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "paginate",
+      "pagination"
+    ]
+  },
+  "https://developer.github.com/v3/": {
+    "id": "github-api",
+    "description": "Documentation for the GitHub API.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api"
+    ]
+  },
+  "https://developer.github.com/v3/#oauth2-token-sent-in-a-header": {
+    "id": "github-oauth2",
+    "description": "GitHub documentation for OAuth2 header token.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "oauth2",
+      "oauth",
+      "token",
+      "header"
+    ]
+  },
+  "https://developer.github.com/v3/#user-agent-required": {
+    "id": "github-user-agent",
+    "description": "GitHub documentation for user agent header.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "useragent"
+    ]
+  },
+  "https://developer.github.com/v3/media/": {
+    "id": "github-media",
+    "description": "GitHub documentation for media types.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "media"
+    ]
+  },
+  "https://developer.github.com/v3/rate_limit/": {
+    "id": "github-rate-limit",
+    "description": "GitHub documentation for rate limits.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "rate limit"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
     "id": "hardware-concurrency",
     "description": "Mozilla Developer Network (MDN) documentation for the hardware concurrency API to retrieve the number of logical processors on the computer.",
@@ -3033,6 +3096,17 @@
       "eslint",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://github.com/settings/tokens/new": {
+    "id": "github-token",
+    "description": "Link for creating a new GitHub token.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "auth",
+      "token",
+      "authorization"
     ]
   },
   "https://github.com/sindresorhus/editorconfig-sublime": {
