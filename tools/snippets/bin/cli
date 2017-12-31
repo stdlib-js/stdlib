@@ -28,6 +28,7 @@ function main() {
 			'encoding': 'utf8'
 		})
 	});
+
 	// Get any provided command-line arguments:
 	args = cli.args();
 
