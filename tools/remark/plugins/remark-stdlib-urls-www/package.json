@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/tools/remark/plugins/remark-stdlib-urls-www",
   "version": "0.0.0",
-  "description": "remark plugin to order to resolve package identifiers to website URIs.",
+  "description": "remark plugin to resolve package identifiers to website URIs.",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"

@@ -1,7 +1,7 @@
 'use strict';
 
 /**
-* remark plugin in order to resolve package identifiers to website URIs.
+* remark plugin to resolve package identifiers to website URIs.
 *
 * @module @stdlib/tools/remark/plugins/remark-stdlib-urls-www
 *

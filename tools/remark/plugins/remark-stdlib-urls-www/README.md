@@ -1,6 +1,6 @@
 # Website URLs
 
-> [remark][remark] plugin in order to resolve package identifiers to website URIs.
+> [remark][remark] plugin to resolve package identifiers to website URIs.
 
 <section class="usage">
 
@@ -12,7 +12,7 @@ var links = require( '/path/to/@stdlib/tools/remark/plugins/remark-stdlib-urls-w
 
 #### links( options )
 
-Attaches a plugin to a [remark][remark] processor in order to resolve package identifiers to website URIs.
+Attaches a plugin to a [remark][remark] processor to resolve package identifiers to website URIs.
 
 ```javascript
 var remark = require( 'remark' );

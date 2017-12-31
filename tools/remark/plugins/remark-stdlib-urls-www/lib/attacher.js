@@ -14,7 +14,7 @@ var defaults = require( './defaults.json' );
 // MAIN //
 
 /**
-* Attaches a plugin to a remark processor in order to resolve package identifiers to website URIs.
+* Attaches a plugin to a remark processor to resolve package identifiers to website URIs.
 *
 * @param {Options} [options] - plugin options
 * @param {string} [options.version="develop"] - documentation version
