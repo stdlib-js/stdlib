@@ -577,6 +577,59 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 rules[ 'stdlib/jsdoc-list-item-bullet-indent' ] = 'error';
 
 /**
+* Prevent mixed indentation in list item content.
+*
+* @name jsdoc-list-item-content-indent
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-content-indent}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * 1.  Item
+* *
+* *      1.  Item
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * 1.  Item
+* *
+* *     1.  Item
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
