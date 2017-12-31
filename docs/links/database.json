@@ -1479,6 +1479,19 @@
       "magnitude"
     ]
   },
+  "https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance": {
+    "id": "algorithms-variance",
+    "description": "Wikipedia entry for good algorithms of calculating the variance.",
+    "short_url": "",
+    "keywords": [
+      "computing",
+      "statistics",
+      "spread",
+      "dispersion",
+      "calculation",
+      "algorithm"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Alpha_max_plus_beta_min_algorithm": {
     "id": "alpha-max-plus-beta-min",
     "description": "Wikipedia entry on the alpha max plus beta min algorithm, a fast approximation for the square root of the sum of two squares.",
