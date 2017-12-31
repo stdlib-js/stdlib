@@ -358,16 +358,16 @@ plugins.push([
 * @example
 * <!-- Bad -->
 *
-* -   Beep
+* 1.  Beep
 *
-*   -   Boop
+*      1.  Boop
 *
 * @example
 * <!-- Good -->
 *
-* -   Beep
+* 1.  Beep
 *
-*     -   Boop
+*     1.  Boop
 *
 */
 plugins.push([
