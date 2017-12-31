@@ -254,35 +254,6 @@ plugins.push([
 ]);
 
 /**
-* Do not allow duplicate headings within a section.
-*
-* @see [no-duplicate-headings-in-section]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
-*
-* @example
-* <!-- Bad -->
-*
-* # Beep
-*
-* ## Boop
-*
-* ## Boop
-*
-* @example
-* <!-- Good -->
-*
-* # Beep
-*
-* ## Boop
-*
-* ## Bop
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-duplicate-headings-in-section' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow emphasis to be used in place of a heading.
 *
 * @see [no-emphasis-as-heading]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-emphasis-as-heading}
