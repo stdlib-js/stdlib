@@ -902,6 +902,65 @@ rules[ 'stdlib/jsdoc-no-duplicate-definitions' ] = 'error';
 rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 
 /**
+* Do not allow duplicate headings in the same section.
+*
+* @name jsdoc-no-duplicate-headings-in-section
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * ## Heading
+* *
+* * ### Subheading
+* *
+* * ### Subheading
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * ## Heading 1
+* *
+* * ### Subheading
+* *
+* * ## Heading 2
+* *
+* * ### Subheading
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
+
+/**
 * Require that only allowed JSDoc tags are used.
 *
 * @name jsdoc-tag-names
