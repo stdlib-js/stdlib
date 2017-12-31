@@ -254,6 +254,16 @@
       "unittest"
     ]
   },
+  "http://tools.ietf.org/html/rfc5988": {
+    "id": "rfc-5988",
+    "description": "An RFC describing web links.",
+    "short_url": "",
+    "keywords": [
+      "web links",
+      "linking",
+      "link header"
+    ]
+  },
   "http://usejsdoc.org/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",
@@ -536,6 +546,69 @@
       "identifier",
       "access",
       "protocol"
+    ]
+  },
+  "https://developer.github.com/guides/traversing-with-pagination/": {
+    "id": "github-pagination",
+    "description": "GitHub documentation for pagination.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "paginate",
+      "pagination"
+    ]
+  },
+  "https://developer.github.com/v3/": {
+    "id": "github-api",
+    "description": "Documentation for the GitHub API.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api"
+    ]
+  },
+  "https://developer.github.com/v3/#oauth2-token-sent-in-a-header": {
+    "id": "github-oauth2",
+    "description": "GitHub documentation for OAuth2 header token.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "oauth2",
+      "oauth",
+      "token",
+      "header"
+    ]
+  },
+  "https://developer.github.com/v3/#user-agent-required": {
+    "id": "github-user-agent",
+    "description": "GitHub documentation for user agent header.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "useragent"
+    ]
+  },
+  "https://developer.github.com/v3/media/": {
+    "id": "github-media",
+    "description": "GitHub documentation for media types.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "media"
+    ]
+  },
+  "https://developer.github.com/v3/rate_limit/": {
+    "id": "github-rate-limit",
+    "description": "GitHub documentation for rate limits.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "api",
+      "rate limit"
     ]
   },
   "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
@@ -2730,6 +2803,18 @@
       "standard"
     ]
   },
+  "https://en.wikipedia.org/wiki/Unix_time": {
+    "id": "unix-time",
+    "description": "Wikipedia entry describing system for describing a point in time, defined as the number of seconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC), Thursday, 1 January 1970, minus the number of leap seconds that have taken place since then.",
+    "short_url": "",
+    "keywords": [
+      "unix",
+      "time",
+      "timestamp",
+      "ts",
+      "epoch"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Valence_%28psychology%29": {
     "id": "valence",
     "description": "Wikipedia entry for the concept of valence as used in psychology.",
@@ -3024,6 +3109,17 @@
       "eslint",
       "javascript",
       "ecmascript"
+    ]
+  },
+  "https://github.com/settings/tokens/new": {
+    "id": "github-token",
+    "description": "Link for creating a new GitHub token.",
+    "short_url": "",
+    "keywords": [
+      "github",
+      "auth",
+      "token",
+      "authorization"
     ]
   },
   "https://github.com/sindresorhus/editorconfig-sublime": {
