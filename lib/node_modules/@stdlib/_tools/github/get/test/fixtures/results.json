@@ -1,0 +1,40 @@
+[
+  {
+    "login": "janedoe",
+    "id": 0,
+    "avatar_url": "https://avatars.githubusercontent.com/u/0?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/janedoe",
+    "html_url": "https://github.com/jandoe",
+    "followers_url": "https://api.github.com/users/janedoe/followers",
+    "following_url": "https://api.github.com/users/janedoe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/janedoe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/janedoe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/janedoe/subscriptions",
+    "organizations_url": "https://api.github.com/users/janedoe/orgs",
+    "repos_url": "https://api.github.com/users/janedoe/repos",
+    "events_url": "https://api.github.com/users/janedoe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/janedoe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  {
+    "login": "johndoe",
+    "id": 1,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/johndoe",
+    "html_url": "https://github.com/johndoe",
+    "followers_url": "https://api.github.com/users/johndoe/followers",
+    "following_url": "https://api.github.com/users/johndoe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/johndoe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/johndoe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/johndoe/subscriptions",
+    "organizations_url": "https://api.github.com/users/johndoe/orgs",
+    "repos_url": "https://api.github.com/users/johndoe/repos",
+    "events_url": "https://api.github.com/users/johndoe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/johndoe/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+ ]
