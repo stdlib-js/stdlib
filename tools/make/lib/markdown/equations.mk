@@ -55,13 +55,13 @@ REMARK_STDLIB_URLS_PLUGIN_SETTINGS ?=
 REMARK_STDLIB_URLS_PLUGIN_FLAGS ?= --use $(REMARK_STDLIB_URLS_PLUGIN)=$(REMARK_STDLIB_URLS_PLUGIN_SETTINGS)
 
 # Define command-line options when invoking the remark executable:
-REMARK_FLAGS ?= \
+REMARK_EQUATIONS_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_EQUATIONS_CONF) \
 	--ignore-path $(REMARK_EQUATIONS_IGNORE)
 
 # Define the remark output option:
-REMARK_OUTPUT_FLAG ?= --output
+REMARK_EQUATIONS_OUTPUT_FLAG ?= --output
 
 
 # TARGETS #
@@ -78,16 +78,16 @@ REMARK_OUTPUT_FLAG ?= --output
 
 markdown-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
+		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG) && \
+		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_EQUATIONS) && \
 	$(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
+		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG) && \
+		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_SRC_URLS)
 
@@ -100,9 +100,9 @@ markdown-equations: $(NODE_MODULES)
 
 markdown-img-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
+		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG)
+		$(REMARK_EQUATIONS_OUTPUT_FLAG)
 
 .PHONY: markdown-img-equations
 
@@ -113,7 +113,7 @@ markdown-img-equations: $(NODE_MODULES)
 
 markdown-svg-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
+		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS)
 
 .PHONY: markdown-svg-equations
@@ -125,9 +125,9 @@ markdown-svg-equations: $(NODE_MODULES)
 
 markdown-img-equations-src-urls: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
+		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG)
+		$(REMARK_EQUATIONS_OUTPUT_FLAG)
 
 .PHONY: markdown-img-equations-src-urls
 
@@ -136,11 +136,13 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 #
 # This target resolves package identifiers to GitHub repository URLs and updates Markdown files accordingly.
 
+# TODO: create separate environment variables for this recipe, rather than using "equations" environment variables
+
 markdown-stdlib-urls: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_FLAGS) \
+		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_STDLIB_URLS_PLUGIN_FLAGS) \
-		$(REMARK_OUTPUT_FLAG)
+		$(REMARK_EQUATIONS_OUTPUT_FLAG)
 
 .PHONY: markdown-stdlib-urls
 
