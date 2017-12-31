@@ -157,29 +157,6 @@ plugins.push([
 ]);
 
 /**
-* Require consistent indentation of list items.
-*
-* @see [list-item-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-content-indent}
-*
-* @example
-* <!-- Bad -->
-*
-* *   Beep
-*   -   Boop
-*
-* @example
-* <!-- Good -->
-*
-* *   Beep
-*     -   Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-list-item-content-indent' ),
-	[ 'error' ]
-]);
-
-/**
 * Require list items use tab-size indentation.
 *
 * @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
