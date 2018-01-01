@@ -7,7 +7,7 @@
 ## Usage
 
 ```javascript
-var run = require( '/path/to/@stdlib/tools/remark/plugins/remark-stdlib-run-javascript-examples' );
+var run = require( '/path/to/@stdlib/tools/remark/plugins/remark-run-javascript-examples' );
 ```
 
 #### run()
@@ -50,7 +50,7 @@ function done( error ) {
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readSync = require( 'to-vfile' ).readSync;
-var run = require( '/path/to/@stdlib/tools/remark/plugins/remark-stdlib-run-javascript-examples' );
+var run = require( '/path/to/@stdlib/tools/remark/plugins/remark-run-javascript-examples' );
 
 // Load a Markdown file:
 var fpath = join( __dirname, 'examples', 'fixtures', 'simple.txt' );

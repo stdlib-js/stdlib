@@ -3,11 +3,11 @@
 /**
 * remark plugin to run JavaScript examples.
 *
-* @module @stdlib/tools/remark/plugins/remark-stdlib-run-javascript-examples
+* @module @stdlib/tools/remark/plugins/remark-run-javascript-examples
 *
 * @example
 * var remark = require( 'remark' );
-* var run = require( '@stdlib/tools/remark/plugins/remark-stdlib-run-javascript-examples' );
+* var run = require( '@stdlib/tools/remark/plugins/remark-run-javascript-examples' );
 *
 * var str = '## Examples\n\n```javascript\nconsole.log( "HELLO WORLD!" );\n```';
 *
