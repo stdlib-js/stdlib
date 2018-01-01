@@ -17,7 +17,7 @@ Attaches a [remark][remark] plugin which, when provided a Markdown abstract synt
 ```javascript
 var remark = require( 'remark' );
 
-var str = '## Examples\n\n```javascript\nconsole.log( "HELLO WORLD!" );\n```';
+var str = '<section class="examples">\n\n## Examples\n\n```javascript\nconsole.log( "HELLO WORLD!" );\n```\n\n</section>\n\n<!-- /.examples -->';
 
 remark().use( run ).process( str, done );
 

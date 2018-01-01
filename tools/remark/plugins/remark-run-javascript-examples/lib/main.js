@@ -15,7 +15,7 @@ var transformer = require( './transformer.js' );
 * @example
 * var remark = require( 'remark' );
 *
-* var str = '## Examples\n\n```javascript\nconsole.log( "HELLO WORLD!" );\n```';
+* var str = '<section class="examples">\n\n## Examples\n\n```javascript\nconsole.log( "HELLO WORLD!" );\n```\n\n</section>\n\n<!-- /.examples -->';
 *
 * remark.use( transformer ).process( str, done );
 * // => 'HELLO WORLD'
