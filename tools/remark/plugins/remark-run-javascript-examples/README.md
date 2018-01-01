@@ -34,6 +34,26 @@ function done( error ) {
 
 <section class="notes">
 
+## Notes
+
+-   When processing a Markdown abstract syntax tree (AST), the plugin scans the tree for `section` elements with the class `examples`. For example,
+
+    <!-- lint disable code-block-style -->
+
+        <section class="examples">
+
+        ## Examples
+
+        ```javascript
+        console.log( 'HELLO WORLD' );
+        ```
+
+        </section>
+
+        <!-- /.examples -->
+
+    Upon finding an examples section, the plugin scans for JavaScript fenced code blocks. For each JavaScript code block, the plugin extracts example code and runs that code in a separate child process.
+
 </section>
 
 <!-- /.notes -->
