@@ -33,13 +33,13 @@ function attacher( options ) {
 		}
 		if ( hasOwnProp( options, 'dir' ) ) {
 			if ( !isString( options.dir ) ) {
-				throw new TypeError( 'invalid option. `dir` option must be a string primitive. Value: `' + options.dir + '`.' );
+				throw new TypeError( 'invalid option. `dir` option must be a string primitive. Option: `' + options.dir + '`.' );
 			}
 			opts.dir = options.dir;
 		}
 		if ( hasOwnProp( options, 'prefix' ) ) {
 			if ( !isString( options.prefix ) ) {
-				throw new TypeError( 'invalid option. `prefix` option must be a string primitive. Value: `' + options.prefix + '`.' );
+				throw new TypeError( 'invalid option. `prefix` option must be a string primitive. Option: `' + options.prefix + '`.' );
 			}
 			opts.prefix = options.prefix;
 		}

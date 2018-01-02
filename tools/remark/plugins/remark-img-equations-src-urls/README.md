@@ -20,7 +20,7 @@ var remark = require( 'remark' );
 remark.use( insertURLs );
 ```
 
-The function accepts the following `options`:
+The plugin accepts the following `options`:
 
 -   **dir**: directory containing equation images. Default: `./docs/img/`.
 -   **prefix**: filename prefix. Default: `equation_`.
