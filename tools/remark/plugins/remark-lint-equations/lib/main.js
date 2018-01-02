@@ -91,8 +91,14 @@ function linter( tree, file, options, clbk ) {
 		pos = node.position;
 		pos = pos.start.line + ':' + pos.start.column;
 		if (
-			EQN_END.test( parent.children[ i+1 ].value ) ||
-			EQN_END.test( parent.children[ i+2 ].value )
+			(
+				parent.children[ i+1 ] &&
+				EQN_END.test( parent.children[ i+1 ].value )
+			) ||
+			(
+				parent.children[ i+2 ] &&
+				EQN_END.test( parent.children[ i+2 ].value )
+			)
 		) {
 			debug( 'Equation starting comment has a matching ending comment.' );
 		} else {
