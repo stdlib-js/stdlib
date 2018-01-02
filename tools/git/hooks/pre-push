@@ -104,7 +104,7 @@ main() {
 	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}")
 
 	# Run JavaScript example files:
-	files=$(echo "${changed_files}" | grep 'examples/.*\.js$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running JavaScript example files...' >&2
 		make FILES="${files}" examples-files > /dev/null >&2

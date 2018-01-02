@@ -121,7 +121,7 @@ run_lint() {
 	fi
 
 	# Lint JavaScript examples files...
-	files=$(echo "${changed_files}" | grep 'examples/.*\.js$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_examples_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
