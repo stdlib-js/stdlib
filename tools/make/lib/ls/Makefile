@@ -250,9 +250,10 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_addons.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_browser_compatible.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_clis.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_installed.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_names.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_namespaces.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_readmes.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_tree.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_installed.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs_wasm.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
