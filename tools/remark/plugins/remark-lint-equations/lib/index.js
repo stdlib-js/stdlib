@@ -3,11 +3,11 @@
 /**
 * remark lint plugin for linting Markdown equation elements.
 *
-* @module @stdlib/tools/remark/plugins/remark-lint-equations
+* @module @stdlib/_tools/remark/plugins/remark-lint-equations
 *
 * @example
 * var remark = require( 'remark' );
-* var lint = require( '@stdlib/tools/remark/plugins/remark-lint-equations' );
+* var lint = require( '@stdlib/_tools/remark/plugins/remark-lint-equations' );
 *
 * var str = '# Beep\n\nBoop.';
 *

@@ -7,7 +7,7 @@
 ## Usage
 
 ```javascript
-var lint = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-equations' );
+var lint = require( '@stdlib/_tools/remark/plugins/remark-lint-equations' );
 ```
 
 #### lint()
@@ -53,7 +53,7 @@ function done( error ) {
 var join = require( 'path' ).join;
 var remark = require( 'remark' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var lint = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-equations' );
+var lint = require( '@stdlib/_tools/remark/plugins/remark-lint-equations' );
 
 // Load a Markdown file:
 var fpath = join( __dirname, 'examples', 'fixtures', 'file.txt' );
