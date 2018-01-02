@@ -56,7 +56,7 @@ var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var lint = require( '/path/to/@stdlib/tools/remark/plugins/remark-lint-equations' );
 
 // Load a Markdown file:
-var fpath = join( __dirname, 'fixtures', 'file.txt' );
+var fpath = join( __dirname, 'examples', 'fixtures', 'file.txt' );
 var file = readFileSync( fpath );
 
 // Lint equations:
