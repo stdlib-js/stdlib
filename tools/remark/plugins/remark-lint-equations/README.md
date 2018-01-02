@@ -23,11 +23,14 @@ var str = '<!-- <equation class="equation" label="" align="center" raw="|x| = \b
 
 remark().use( lint ).process( str, done );
 
-function done( error ) {
+function done( error, file ) {
+    var i;
     if ( error ) {
         throw error;
     }
-    console.log( 'Finished!' );
+    for ( i = 0; i < file.messages.length; i++ ) {
+        console.error( file.messages[ i ].message );
+    }
 }
 ```
 
@@ -62,11 +65,14 @@ var file = readFileSync( fpath );
 // Lint equations:
 remark().use( lint ).process( file.toString(), done );
 
-function done( error ) {
+function done( error, file ) {
+    var i;
     if ( error ) {
         throw error;
     }
-    console.log( 'Finished!' );
+    for ( i = 0; i < file.messages.length; i++ ) {
+        console.error( file.messages[ i ].message );
+    }
 }
 ```
 
