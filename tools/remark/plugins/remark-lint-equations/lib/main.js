@@ -45,7 +45,7 @@ function linter( tree, file, options, clbk ) {
 	if ( total === 0 ) {
 		return done();
 	}
-	next();
+	return next();
 
 	/**
 	* Callback invoked upon finding a matching node.
