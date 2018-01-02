@@ -28,7 +28,7 @@ var transformHTML = require( './transform_html.js' );
 * var plugin = factory();
 * var linter = remark().use( plugin ).processSync;
 *
-* var vfile = linter( '``` javascript\nvar beep = \'boop\';\n```' );
+* var vfile = linter( '```javascript\nvar beep = \'boop\';\n```' );
 */
 function factory( options ) {
 	var opts;
