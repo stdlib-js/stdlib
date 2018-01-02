@@ -10,7 +10,7 @@ var cwd = require( '@stdlib/utils/cwd' );
 
 // VARIABLES //
 
-var debug = logger( 'remark-stdlib-run-javascript-examples:transformer' );
+var debug = logger( 'remark-run-javascript-examples:transformer' );
 var EXAMPLES_BEGIN = '<section class="examples">';
 var EXAMPLES_END = '<!-- /.examples -->';
 var RE_TRAILING_EOL = /\r?\n$/;
