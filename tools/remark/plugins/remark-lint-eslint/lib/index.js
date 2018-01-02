@@ -11,7 +11,7 @@
 *
 * var lint = remark().use( plugin ).processSync;
 *
-* var vfile = lint( '``` javascript\nvar beep = \'boop\';\n```' );
+* var vfile = lint( '```javascript\nvar beep = \'boop\';\n```' );
 */
 
 // MODULES //
