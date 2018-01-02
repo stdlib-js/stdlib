@@ -13,9 +13,13 @@
 *
 * remark().use( lint ).process( str, done );
 *
-* function done( error ) {
+* function done( error, file ) {
+*     var i;
 *     if ( error ) {
 *         throw error;
+*     }
+*     for ( i = 0; i < file.messages.length; i++ ) {
+*         console.error( file.messages[ i ].message );
 *     }
 * }
 */
