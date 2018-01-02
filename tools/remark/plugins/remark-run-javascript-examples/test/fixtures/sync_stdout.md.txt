@@ -1,0 +1,55 @@
+# Beep
+
+<section class="intro">
+
+Beep boop.
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var foo = require( '@stdlib/foo' );
+```
+
+#### foo()
+
+Foo bar.
+
+```javascript
+var y = foo();
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+console.log( '# the plugin supports examples which print to stdout (sync)' );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->
