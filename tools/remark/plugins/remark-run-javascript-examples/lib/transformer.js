@@ -5,6 +5,7 @@
 var exec = require( 'child_process' ).exec;
 var logger = require( 'debug' );
 var replace = require( '@stdlib/string/replace' );
+var cwd = require( '@stdlib/utils/cwd' );
 
 
 // VARIABLES //
@@ -32,7 +33,7 @@ function transformer( tree, file, clbk ) {
 	var FLG;
 	var idx;
 
-	debug( 'Processing file: %s', file.path );
+	debug( 'Processing file: %s', file.path || '' );
 
 	idx = -1;
 	total = tree.children.length;
@@ -83,7 +84,7 @@ function transformer( tree, file, clbk ) {
 
 			// Set the working directory of the script to the file directory:
 			opts = {
-				'cwd': file.dirname
+				'cwd': file.dirname || cwd()
 			};
 
 			debug( 'Executing code block...' );
@@ -107,7 +108,7 @@ function transformer( tree, file, clbk ) {
 			debug( 'Encountered an error when executing code block: %s', error.message );
 
 			// TODO: the generated error is a bit messy. Cleaning-up may require manual modification of the stacktrace(s), etc.
-			error = new Error( 'unexpected error. Encountered an error when executing code block. File: ' + file.path + '. Message: ' + error.message );
+			error = new Error( 'unexpected error. Encountered an error when executing code block. File: ' + (file.path || '') + '. Message: ' + error.message );
 			return done( error );
 		}
 		stdout = stdout.toString();
