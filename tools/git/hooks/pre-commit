@@ -99,7 +99,7 @@ run_lint() {
 	fi
 
 	# Lint JavaScript source files...
-	files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e 'examples' -e 'test' -e 'benchmark' -e '^dist/' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
@@ -110,7 +110,7 @@ run_lint() {
 	fi
 
 	# Lint JavaScript command-line interfaces...
-	files=$(echo "${changed_files}" | grep '\/bin\/cli$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/bin/cli$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
@@ -132,7 +132,7 @@ run_lint() {
 	fi
 
 	# Lint JavaScript test files...
-	files=$(echo "${changed_files}" | grep 'test/.*\.js$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/test/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_tests_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
@@ -143,7 +143,7 @@ run_lint() {
 	fi
 
 	# Lint JavaScript benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.js$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make JAVASCRIPT_LINTER=eslint ESLINT_CONF="${eslint_benchmarks_conf}" FILES="${files}" lint-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then

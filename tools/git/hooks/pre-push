@@ -130,7 +130,7 @@ main() {
 	# TODO: run CLI examples found in Markdown files
 
 	# Run C benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.c$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running C benchmark files...' >&2
 		make FILES="${files}" benchmark-c-files > /dev/null >&2
@@ -142,7 +142,7 @@ main() {
 	fi
 
 	# Run C++ benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.cpp$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.cpp$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running C++ benchmark files...' >&2
 		make FILES="${files}" benchmark-cpp-files > /dev/null >&2
@@ -154,7 +154,7 @@ main() {
 	fi
 
 	# Run Fortran benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.f$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.f$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running Fortran benchmark files...' >&2
 		make FILES="${files}" benchmark-fortran-files > /dev/null >&2
@@ -166,7 +166,7 @@ main() {
 	fi
 
 	# Run JavaScript benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.js$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running JavaScript benchmark files...' >&2
 		make FILES="${files}" benchmark-javascript-files > /dev/null >&2
@@ -178,7 +178,7 @@ main() {
 	fi
 
 	# Run Julia benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.jl$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.jl$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running Julia benchmark files...' >&2
 		make FILES="${files}" benchmark-julia-files > /dev/null >&2
@@ -190,7 +190,7 @@ main() {
 	fi
 
 	# Run Python benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.py$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.py$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running Python benchmark files...' >&2
 		make FILES="${files}" benchmark-python-files > /dev/null >&2
@@ -202,7 +202,7 @@ main() {
 	fi
 
 	# Run R benchmark files...
-	files=$(echo "${changed_files}" | grep 'benchmark/.*\.R$' | tr '\n' ' ')
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.R$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running R benchmark files...' >&2
 		make FILES="${files}" benchmark-r-files > /dev/null >&2
