@@ -115,7 +115,19 @@ main() {
 		fi
 	fi
 
-	# TODO: run examples found in Markdown files (including CLI examples)
+	# Run JavaScript examples in README files:
+	files=$(echo "${changed_files}" | grep 'README.md$' | grep -v '^tools/' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running README JavaScript examples...' >&2
+		make FILES="${files}" markdown-examples-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running README JavaScript examples.' >&2
+			on_error 1
+		fi
+	fi
+
+	# TODO: run CLI examples found in Markdown files
 
 	# Run C benchmark files...
 	files=$(echo "${changed_files}" | grep 'benchmark/.*\.c$' | tr '\n' ' ')
