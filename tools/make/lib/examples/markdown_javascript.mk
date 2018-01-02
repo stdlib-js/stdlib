@@ -1,18 +1,6 @@
 
 # VARIABLES #
 
-# Define the path to the [remark][1] executable.
-#
-# To install remark:
-#     $ npm install remark-cli
-#
-# [1]: https://github.com/wooorm/remark/
-
-REMARK ?= $(BIN_DIR)/remark
-
-# Define the path to the local remark plugins directory:
-REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
-
 # Define the path to the remark configuration file:
 REMARK_RUN_JAVASCRIPT_EXAMPLES_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 

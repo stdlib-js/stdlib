@@ -1,14 +1,8 @@
 
 # VARIABLES #
 
-# Define the path to the [remark][1] executable.
-#
-# To install remark:
-#     $ npm install remark
-#
-# [1]: https://www.npmjs.com/package/remark
-
-MARKDOWN_LINT ?= $(BIN_DIR)/remark
+# Define the path to the path to the executable for linting Markdown files.
+MARKDOWN_LINT ?= $(REMARK)
 
 # Define [remark-lint][1] as the lint plugin.
 #
@@ -16,7 +10,6 @@ MARKDOWN_LINT ?= $(BIN_DIR)/remark
 #     $ npm install remark-lint
 #
 # [1]: https://www.npmjs.com/package/remark-lint
-
 REMARK_LINT_PLUGIN ?= remark-lint
 
 # Define the path to the remark configuration file:

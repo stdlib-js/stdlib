@@ -35,12 +35,6 @@ DEPS_WABT_TEST_INSTALL ?= $(DEPS_WABT_TEST_DIR)/test_install.wasm
 DEPS_WABT_TEST_INSTALL_WAT_OUT ?= $(DEPS_WABT_TEST_OUT)/test.wat
 DEPS_WABT_TEST_INSTALL_WASM_OUT ?= $(DEPS_WABT_TEST_OUT)/test.wasm
 
-# Define the path to the `wasm2wat` utility:
-WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/wasm2wat
-
-# Define the path to the `wat2wasm` utility:
-WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/wat2wasm
-
 
 # TARGETS #
 
@@ -76,7 +70,7 @@ $(DEPS_WABT_TEST_OUT):
 # This target compiles a WAT test file for testing an installation.
 
 $(DEPS_WABT_TEST_INSTALL_WAT_OUT): $(DEPS_WABT_BUILD_OUT) $(DEPS_WABT_TEST_OUT)
-	$(QUIET) $(WASM2WAT) $(DEPS_WABT_TEST_INSTALL) \
+	$(QUIET) $(DEPS_WABT_WASM2WAT) $(DEPS_WABT_TEST_INSTALL) \
 		-o $(DEPS_WABT_TEST_INSTALL_WAT_OUT)
 
 
@@ -85,7 +79,7 @@ $(DEPS_WABT_TEST_INSTALL_WAT_OUT): $(DEPS_WABT_BUILD_OUT) $(DEPS_WABT_TEST_OUT)
 # This target compiles a WASM test file for testing an installation.
 
 $(DEPS_WABT_TEST_INSTALL_WASM_OUT): $(DEPS_WABT_TEST_INSTALL_WAT_OUT)
-	$(QUIET) $(WAT2WASM) $(DEPS_WABT_TEST_INSTALL_WAT_OUT) \
+	$(QUIET) $(DEPS_WABT_WAT2WASM) $(DEPS_WABT_TEST_INSTALL_WAT_OUT) \
 		-o $(DEPS_WABT_TEST_INSTALL_WASM_OUT)
 
 

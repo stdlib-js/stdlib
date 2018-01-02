@@ -7,7 +7,6 @@
 #     $ pip install pycodestyle
 #
 # [1]: https://github.com/PyCQA/pycodestyle
-
 PYCODESTYLE ?= pycodestyle
 
 # Define the path to the pycodestyle configuration file:
