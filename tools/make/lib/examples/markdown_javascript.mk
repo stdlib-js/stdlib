@@ -9,7 +9,7 @@ REMARK_RUN_JAVASCRIPT_EXAMPLES_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 
 # Define the path to a plugin which processes JavaScript examples in Markdown files:
 REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN ?= $(TOOLS_PKGS_DIR)/remark/plugins/remark-run-javascript-examples
-REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN_SETTINGS ?=
+REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN_SETTINGS ?= '"'maxBuffer'"':10485760
 REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN_FLAGS ?= --use $(REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN)=$(REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN_SETTINGS)
 
 # Define command-line options when invoking the remark executable:
