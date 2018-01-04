@@ -30,7 +30,7 @@ REMARK_RUN_JAVASCRIPT_EXAMPLES_FLAGS ?= \
 # This target runs JavaScript examples in Markdown files in sequential order.
 
 markdown-examples-javascript: $(NODE_MODULES)
-	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | grep 'README.md' | grep -v '_tools' | grep -v 'stdlib/tools' | while read -r file; do \
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | grep 'README.md' | grep -v '/_tools/' | grep -v '/stdlib/tools/' | while read -r file; do \
 		echo ""; \
 		echo "Running Markdown JavaScript examples: $$file"; \
 		NODE_ENV=$(NODE_ENV_EXAMPLES) \
