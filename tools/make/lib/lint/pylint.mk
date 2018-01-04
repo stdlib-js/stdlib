@@ -7,7 +7,6 @@
 #     $ pip install pylint
 #
 # [1]: https://github.com/PyCQA/pylint
-
 PYLINT ?= pylint
 
 # Define the path to the Pylint configuration file:

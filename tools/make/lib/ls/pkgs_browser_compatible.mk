@@ -10,7 +10,7 @@ LIST_BROWSER_COMPATIBLE_PACKAGE_NAMES_FLAGS ?=
 
 # TARGETS #
 
-# List browser compatible package names.
+# List browser compatible packages.
 #
 # This target prints a list of all packages which are compatible with browser environments.
 

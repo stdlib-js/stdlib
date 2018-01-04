@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define the path to the browserify executable:
-BROWSERIFY ?= $(BIN_DIR)/browserify
-
 # Define the entry point of the plugin for custom ESLint rules:
 STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_ENTRY ?= $(TOOLS_PKGS_DIR)/eslint/rules/scripts/plugin.js
 

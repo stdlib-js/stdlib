@@ -38,7 +38,7 @@ endif
 endif
 endif
 
-# Define whether the make commands are running on a hosted continuous integration service:
+# Define whether the `make` commands are running on a hosted continuous integration service:
 TRAVIS ?=
 APPVEYOR ?=
 ifeq ($(TRAVIS), true)
@@ -52,7 +52,7 @@ endif
 endif
 
 
-# TOOLS #
+# OPTIONS #
 
 # Define the test runner to use when running JavaScript tests:
 JAVASCRIPT_TEST_RUNNER ?= tape
@@ -167,6 +167,52 @@ RSCRIPT ?= Rscript
 
 # Define the command for getting the current project version:
 CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).version )"
+
+
+# TOOLS #
+
+# Define the path to the [remark][1] executable.
+#
+# To install remark:
+#     $ npm install remark-cli
+#
+# [1]: https://github.com/wooorm/remark/
+REMARK ?= $(BIN_DIR)/remark
+
+# Define the path to the local remark plugins directory:
+REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
+
+# Define the path to the [browserify][1] executable.
+#
+# To install browserify:
+#     $ npm install browserify
+#
+# [1]: https://github.com/browserify/browserify
+BROWSERIFY ?= $(BIN_DIR)/browserify
+
+# Define the path to the `tap-spec` executable.
+#
+# To install tap-spec:
+#     $ npm install tap-spec
+#
+# [1]: https://github.com/scottcorgan/tap-spec
+TAP_REPORTER ?= $(BIN_DIR)/tap-spec
+
+# Define the path to the `tap-summary` executable.
+#
+# To install tap-summary:
+#     $ npm install tap-summary
+#
+# [1]: https://github.com/zoubin/tap-summary
+TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
+
+# Define the path to the `tap-xunit` executable.
+#
+# To install tap-xunit:
+#     $ npm install tap-xunit
+#
+# [1]: https://github.com/aghassemi/tap-xunit
+TAP_XUNIT ?= $(BIN_DIR)/tap-xunit
 
 
 # COMPILERS #

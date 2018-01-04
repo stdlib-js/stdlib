@@ -8,7 +8,7 @@ var resolve = require( 'path' ).resolve;
 // VARIABLES //
 
 var etc = resolve( __dirname, '..', '..', '..' );
-var lint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-equations' );
+var lint = resolve( etc, '..', 'lib', 'node_modules', '@stdlib', '_tools', 'remark', 'plugins', 'remark-lint-equations' );
 
 
 // MAIN //

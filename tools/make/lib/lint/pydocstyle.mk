@@ -7,7 +7,6 @@
 #     $ pip install pydocstyle
 #
 # [1]: https://github.com/PyCQA/pydocstyle
-
 PYDOCSTYLE ?= pydocstyle
 
 # Define the path to the pydocstyle configuration file:

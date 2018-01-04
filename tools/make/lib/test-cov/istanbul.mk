@@ -19,9 +19,6 @@ ifneq ($(OS), Darwin)
 	FIND_ISTANBUL_TEST_DIRS_FLAGS := -regextype posix-extended $(FIND_ISTANBUL_TEST_DIRS_FLAGS)
 endif
 
-# Define the path to the `tap-spec` executable:
-TAP_REPORTER ?= $(BIN_DIR)/tap-spec
-
 # Define the executable for generating a coverage report name:
 COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
 
@@ -31,7 +28,6 @@ COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
 #     $ npm install istanbul
 #
 # [1]: https://github.com/gotwarlost/istanbul
-
 ISTANBUL ?= $(BIN_DIR)/istanbul
 
 # Define which files and directories to exclude from coverage instrumentation:

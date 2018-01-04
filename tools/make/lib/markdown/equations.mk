@@ -16,15 +16,6 @@ GIT_COMMIT_SRC_URLS ?= $(GIT_COMMIT) -m $(GIT_COMMIT_MESSAGE_SRC_URLS)
 # Define the path relative to a processed Markdown file for storing equation resources:
 EQUATION_RESOURCES_PATH ?= ./docs/img/
 
-# Define the path to the [remark][1] executable.
-#
-# To install remark:
-#     $ npm install remark-cli
-#
-# [1]: https://github.com/wooorm/remark/
-
-REMARK ?= $(BIN_DIR)/remark
-
 # Define the path to the remark configuration file:
 REMARK_EQUATIONS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 

@@ -7,7 +7,6 @@
 #     $ npm install david
 #
 # [1]: https://www.npmjs.com/package/david
-
 DAVID ?= $(BIN_DIR)/david
 
 # Define the path to a `package.json` for manually managed node module dependencies:

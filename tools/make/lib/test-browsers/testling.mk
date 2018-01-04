@@ -7,7 +7,6 @@
 #     $ npm install testling
 #
 # [1]: https://github.com/substack/testling
-
 BROWSER_TEST ?= $(BIN_DIR)/testling
 
 # Define command-line options to be used when invoking the testling executable:

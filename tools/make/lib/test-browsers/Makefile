@@ -1,17 +1,11 @@
 
 # VARIABLES #
 
-# Define the path to the browserify executable:
-BROWSERIFY ?= $(BIN_DIR)/browserify
-
 # Define the path to the browserify plugin which allows proxyquire to be run in a browser:
 BROWSERIFY_PROXYQUIRE ?= $(NODE_MODULES)/proxyquire-universal
 
 # Define command-line options to be used when invoking the browserify executable:
 BROWSERIFY_BROWSER_TEST_FLAGS ?= -p $(BROWSERIFY_PROXYQUIRE)
-
-# Define the path to the `tap-spec` executable:
-TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 
 
 # DEPENDENCIES #

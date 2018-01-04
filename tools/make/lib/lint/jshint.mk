@@ -7,7 +7,6 @@
 #     $ npm install jshint
 #
 # [1]: http://jshint.com/
-
 JSHINT ?= $(BIN_DIR)/jshint
 
 # Define the path to the JSHint configuration file:
@@ -22,7 +21,6 @@ JSHINT_IGNORE ?= $(CONFIG_DIR)/jshint/.jshintignore
 #     $ npm install jshint-stylish
 #
 # [1]: https://www.npmjs.com/package/jshint-stylish
-
 JSHINT_REPORTER ?= $(NODE_MODULES)/jshint-stylish
 
 # Define the command-line options to use when invoking the JSHint executable:

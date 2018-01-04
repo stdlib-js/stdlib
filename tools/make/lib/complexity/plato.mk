@@ -7,8 +7,10 @@
 #     $ npm install plato
 #
 # [1]: https://github.com/es-analysis/plato
+PLATO ?= $(BIN_DIR)/plato
 
-JAVASCRIPT_COMPLEXITY ?= $(BIN_DIR)/plato
+# Define the command for determining JavaScript code complexity:
+JAVASCRIPT_COMPLEXITY ?= $(PLATO)
 
 # Define the title of the report:
 PLATO_REPORT_TITLE ?= 'JavaScript Complexity'
