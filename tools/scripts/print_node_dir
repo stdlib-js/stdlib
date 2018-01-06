@@ -18,7 +18,7 @@ var dirname = require( '@stdlib/utils/dirname' );
 *
 * ## Notes
 *
-* * We resolve the directory based on the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node').
+* -   We resolve the directory based on the absolute path of the executable which started the Node.js process (e.g., '/usr/local/bin/node').
 *
 * @private
 * @returns {string} directory path

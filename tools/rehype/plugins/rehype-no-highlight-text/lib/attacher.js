@@ -12,7 +12,7 @@ var transformer = require( './transformer.js' );
 *
 * ## Notes
 *
-* * This plugin should be used *before* applying syntax highlighting.
+* -   This plugin should be used _before_ applying syntax highlighting.
 *
 *
 * @returns {Function} transformer
