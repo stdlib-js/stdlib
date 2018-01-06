@@ -3503,6 +3503,18 @@
       "utility"
     ]
   },
+  "https://www.npmjs.com/package/repl": {
+    "id": "repl-template-lib",
+    "description": "A lightweight template library in NodeJS.",
+    "short_url": "",
+    "keywords": [
+      "template",
+      "engine",
+      "repl",
+      "nodejs",
+      "javascript"
+    ]
+  },
   "https://www.python.org/": {
     "id": "python",
     "description": "The official website of Python, a general purpose programming language.",
