@@ -1385,6 +1385,16 @@
       "ecmascript"
     ]
   },
+  "https://docs.python.org/2/library/simplehttpserver.html": {
+    "id": "python-simplehttpserver",
+    "description": "Documentation for Python's SimpleHTTPServer module.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "server",
+      "http"
+    ]
+  },
   "https://docs.travis-ci.com/user/customizing-the-build": {
     "id": "travis-ci-customing-the-build",
     "description": "Travis CI documentation for customizing a build.",
