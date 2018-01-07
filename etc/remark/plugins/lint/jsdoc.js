@@ -665,16 +665,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow the use of tabs.
-*
-* @see [no-tabs]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-tabs}
-*/
-plugins.push([
-	require( 'remark-lint-no-tabs' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow undefined references.
 *
 * @see [no-undefined-references]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-undefined-references}
