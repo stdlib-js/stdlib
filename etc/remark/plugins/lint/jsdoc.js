@@ -665,35 +665,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow table indentation. Note that the exception is when a table correspond to a list item.
-*
-* @see [no-table-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-table-indentation}
-*
-* @example
-* <!-- Bad -->
-*
-* Beep.
-*
-*     | Beep | Boop |
-*     | ---- | ---- |
-*     | foo  | bar  |
-*
-* @example
-* <!-- Good -->
-*
-* Beep.
-*
-* | Beep | Boop |
-* | ---- | ---- |
-* | foo  | bar  |
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-table-indentation' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow the use of tabs.
 *
 * @see [no-tabs]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-tabs}
@@ -864,56 +835,6 @@ plugins.push([
 plugins.push([
 	require( 'remark-lint-table-cell-padding' ),
 	[ 'error', 'padded' ]
-]);
-
-/**
-* Require table pipe alignment.
-*
-* @see [table-pipe-alignment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-pipe-alignment}
-*
-* @example
-* <!-- Bad -->
-*
-* | Beep | Boop |
-* | -- | -- |
-* | foo | bar |
-*
-* @example
-* <!-- Good -->
-*
-* | Beep | Boop |
-* | ---- | ---- |
-* | foo  | bar  |
-*
-*/
-plugins.push([
-	require( 'remark-lint-table-pipe-alignment' ),
-	[ 'error' ]
-]);
-
-/**
-* Require table rows to be fenced in table pipes.
-*
-* @see [table-pipes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-pipes}
-*
-* @example
-* <!-- Bad -->
-*
-* Beep | Boop
-* ---- | ----
-* foo  | bar
-*
-* @example
-* <!-- Good -->
-*
-* | Beep | Boop |
-* | ---- | ---- |
-* | foo  | bar  |
-*
-*/
-plugins.push([
-	require( 'remark-lint-table-pipes' ),
-	[ 'error' ]
 ]);
 
 /**
