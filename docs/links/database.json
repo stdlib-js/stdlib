@@ -1385,6 +1385,16 @@
       "ecmascript"
     ]
   },
+  "https://docs.python.org/2/library/simplehttpserver.html": {
+    "id": "python-simplehttpserver",
+    "description": "Documentation for Python's SimpleHTTPServer module.",
+    "short_url": "",
+    "keywords": [
+      "python",
+      "server",
+      "http"
+    ]
+  },
   "https://docs.travis-ci.com/user/customizing-the-build": {
     "id": "travis-ci-customing-the-build",
     "description": "Travis CI documentation for customizing a build.",
@@ -3351,6 +3361,34 @@
       "number theory"
     ]
   },
+  "https://oeis.org/wiki/Lucas_polynomials": {
+    "id": "oeis-lucas-polynomials",
+    "description": "The On-Line Encyclopedia of Integer Sequences (OEIS) entry for Lucas (or Cardan) polynomials.",
+    "short_url": "",
+    "keywords": [
+      "lucas",
+      "cardan",
+      "generalization",
+      "sequences",
+      "integer",
+      "oeis",
+      "number theory"
+    ]
+  },
+  "https://oeis.org/wiki/Lucas_triangle": {
+    "id": "oeis-lucas-triangle",
+    "description": "The On-Line Encyclopedia of Integer Sequences (OEIS) entry for the Lucas triangle or (1,2)-Pascal triangle.",
+    "short_url": "",
+    "keywords": [
+      "lucas",
+      "pascal",
+      "triangle",
+      "sequences",
+      "integer",
+      "oeis",
+      "number theory"
+    ]
+  },
   "https://opensource.org/licenses/bsd-license.html": {
     "id": "bsd-license",
     "description": "2-Clause BSD License originally developed by the FreeBSD project.",
@@ -3501,6 +3539,18 @@
       "build",
       "development",
       "utility"
+    ]
+  },
+  "https://www.npmjs.com/package/repl": {
+    "id": "repl-template-lib",
+    "description": "A lightweight template library in NodeJS.",
+    "short_url": "",
+    "keywords": [
+      "template",
+      "engine",
+      "repl",
+      "nodejs",
+      "javascript"
     ]
   },
   "https://www.python.org/": {
