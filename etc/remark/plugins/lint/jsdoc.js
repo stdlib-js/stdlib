@@ -375,40 +375,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow heading indentation.
-*
-* @see [no-heading-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-indent}
-*
-* @example
-* <!-- Bad -->
-*
-* # Beep
-*
-*   ## Beep
-*
-* @example
-* <!-- Bad -->
-*
-* # Beep
-*
-*   Beep boop.
-*
-* @example
-* <!-- Good -->
-*
-* # Beep
-*
-* ## Boop
-*
-* Beep boop.
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-heading-indent' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow paragraphs which appear to be h7+ "headings".
 *
 * @see [no-heading-like-paragraph]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-like-paragraph}
