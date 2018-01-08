@@ -961,6 +961,57 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 
 /**
+* Prevent use of emphasis in place of a heading.
+*
+* @name jsdoc-no-emphasis-as-heading
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * _Boop_
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
+
+/**
 * Prevent indentation of heading content.
 *
 * @name jsdoc-no-heading-content-indent
