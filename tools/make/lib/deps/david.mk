@@ -16,7 +16,8 @@ DAVID_PACKAGE_JSON ?= $(CONFIG_DIR)/david/.pkg.json
 DAVID_FLAGS ?= \
 	--ignore update-notifier \
 	--ignore chai \
-	--ignore debug
+	--ignore debug \
+	--ignore ajv
 
 
 # TARGETS #
