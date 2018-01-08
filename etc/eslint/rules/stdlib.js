@@ -961,6 +961,57 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 
 /**
+* Prevent indentation of headings.
+*
+* @name jsdoc-no-heading-indent
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* *    ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
+
+/**
 * Prevent unneeded indentation before tables.
 *
 * @name jsdoc-no-table-indentation
