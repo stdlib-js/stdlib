@@ -254,31 +254,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow emphasis to be used in place of a heading.
-*
-* @see [no-emphasis-as-heading]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-emphasis-as-heading}
-*
-* @example
-* <!-- Bad -->
-*
-* *Beep*
-*
-* Beep boop.
-*
-* @example
-* <!-- Good -->
-*
-* ## Beep
-*
-* Beep boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-emphasis-as-heading' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow empty URLs in images and links.
 *
 * @see [no-empty-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-empty-url}
