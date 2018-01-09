@@ -360,27 +360,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow literal URLs without angle brackets.
-*
-* @see [no-literal-urls]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-literal-urls}
-*
-* @example
-* <!-- Bad -->
-*
-* https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* <https://example.com>
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-literal-urls' ),
-	[ 'error' ]
-]);
-
-/**
 * Require blank lines between block nodes.
 *
 * @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
