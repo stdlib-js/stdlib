@@ -1208,6 +1208,56 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 
 /**
+* Prevent URLs without angle-brackets from being used.
+*
+* @name jsdoc-no-literal-urls
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Links
+* *
+* * -   http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Links
+* *
+* * -   <http://foo.bar/baz>
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
+
+/**
 * Prevent indentation of paragraph content.
 *
 * @name jsdoc-no-paragraph-content-indent
