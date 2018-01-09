@@ -325,22 +325,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow paragraphs which appear to be h7+ "headings".
-*
-* @see [no-heading-like-paragraph]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-like-paragraph}
-*
-* @example
-* <!-- Bad -->
-*
-* ####### Beep
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-heading-like-paragraph' ),
-	[ 'error' ]
-]);
-
-/**
 * Do not allow punctuation at the end of a heading.
 *
 * @see [no-heading-punctuation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-punctuation}
