@@ -1114,6 +1114,49 @@ rules[ 'stdlib/jsdoc-no-heading-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 
 /**
+* Prevent inline padding of markers.
+*
+* @name jsdoc-no-inline-padding
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop: * beep *.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop: *beep*.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
+
+/**
 * Prevent indentation of paragraph content.
 *
 * @name jsdoc-no-paragraph-content-indent
