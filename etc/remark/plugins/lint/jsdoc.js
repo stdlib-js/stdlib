@@ -376,27 +376,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow inline padding.
-*
-* @see [no-inline-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-inline-padding}
-*
-* @example
-* <!-- Bad -->
-*
-* __ Beep __
-*
-* @example
-* <!-- Good -->
-*
-* __Beep__
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-inline-padding' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow literal URLs without angle brackets.
 *
 * @see [no-literal-urls]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-literal-urls}
