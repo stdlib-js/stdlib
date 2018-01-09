@@ -465,30 +465,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow paragraph indentation.
-*
-* @see [no-paragraph-content-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-paragraph-content-indent}
-*
-* @example
-* <!-- Bad -->
-*
-* # Beep
-*
-*   Boop.
-*
-* @example
-* <!-- Good -->
-*
-* # Beep
-*
-* Boop.
-*/
-plugins.push([
-	require( 'remark-lint-no-paragraph-content-indent' ),
-	[ 'error' ]
-]);
-
-/**
 * Never allow references to be used like URLs.
 *
 * @see [no-reference-like-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-reference-like-url}
