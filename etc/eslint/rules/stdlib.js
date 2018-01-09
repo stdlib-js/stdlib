@@ -1114,6 +1114,57 @@ rules[ 'stdlib/jsdoc-no-heading-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 
 /**
+* Prevent paragraphs which appear to be h7+ "headings".
+*
+* @name jsdoc-no-heading-like-paragraph
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ####### Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
+
+/**
 * Prevent inline padding of markers.
 *
 * @name jsdoc-no-inline-padding
