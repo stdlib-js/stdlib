@@ -453,29 +453,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow undefined references.
-*
-* @see [no-undefined-references]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-undefined-references}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo][]
-*
-* @example
-* <!-- Good -->
-*
-* [foo][]
-*
-* [foo]: https://example.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-undefined-references' ),
-	[ 'error' ]
-]);
-
-/**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
 * @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
