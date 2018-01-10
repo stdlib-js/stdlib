@@ -522,29 +522,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow unused definitions.
-*
-* @see [no-unused-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-unused-definitions}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo]: https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* [foo][foo].
-*
-* [foo]: https://example.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-unused-definitions' ),
-	[ 'error' ]
-]);
-
-/**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
 * @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
