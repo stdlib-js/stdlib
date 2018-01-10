@@ -254,27 +254,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow empty URLs in images and links.
-*
-* @see [no-empty-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-empty-url}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo]()
-*
-* @example
-* <!-- Good -->
-*
-* [foo](https://example.com)
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-empty-url' ),
-	[ 'error']
-]);
-
-/**
 * Disable rule never allowing filenames to begin with an article, as not relevant to JSDoc comments.
 *
 * @see [no-file-name-articles]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-articles}
