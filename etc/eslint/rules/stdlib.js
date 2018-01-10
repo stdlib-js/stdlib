@@ -1352,6 +1352,52 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 
 /**
+* Prevent references from being used like URLs.
+*
+* @name jsdoc-no-reference-like-url
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep [boop](boop).
+* *
+* * [boop]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * [boop]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
+
+/**
 * Prevent unneeded indentation before tables.
 *
 * @name jsdoc-no-table-indentation
