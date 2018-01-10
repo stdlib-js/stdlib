@@ -386,31 +386,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow references to be used like URLs.
-*
-* @see [no-reference-like-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-reference-like-url}
-*
-* @example
-* <!-- Bad -->
-*
-* [Beep](boop).
-*
-* [boop]: https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* [Beep](https://example.com)
-*
-* [boop]: https://github.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-reference-like-url' ),
-	[ 'error' ]
-]);
-
-/**
 * Allow shell commands to be prefixed with `$` symbols.
 *
 * @see [no-shell-dollars]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shell-dollars}
