@@ -1219,7 +1219,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * // Bad...
 *
 * /**
-* * Boop: * beep *.
+* * Boop: _ beep _.
 * *
 * * @return {string} a value
 * *
@@ -1236,7 +1236,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * // Good...
 *
 * /**
-* * Boop: *beep*.
+* * Boop: _beep_.
 * *
 * * @return {string} a value
 * *
