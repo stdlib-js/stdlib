@@ -1403,6 +1403,52 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
 
 /**
+* Forbid unused definitions.
+*
+* @name jsdoc-no-unused-definitions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * [beep]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop [beep][beep].
+* *
+* * [beep]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
+
+/**
 * Require table pipes to be aligned.
 *
 * @name jsdoc-table-pipe-alignment
