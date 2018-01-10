@@ -1012,6 +1012,49 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 
 /**
+* Prevent empty URLs for links and images.
+*
+* @name jsdoc-no-empty-url
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop [beep]().
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop [beep](http://foo.bar/baz).
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
+
+/**
 * Prevent indentation of heading content.
 *
 * @name jsdoc-no-heading-content-indent
@@ -1176,7 +1219,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * // Bad...
 *
 * /**
-* * Boop: * beep *.
+* * Boop: _ beep _.
 * *
 * * @return {string} a value
 * *
@@ -1193,7 +1236,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * // Good...
 *
 * /**
-* * Boop: *beep*.
+* * Boop: _beep_.
 * *
 * * @return {string} a value
 * *
@@ -1206,6 +1249,56 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
+
+/**
+* Prevent URLs without angle-brackets from being used.
+*
+* @name jsdoc-no-literal-urls
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Links
+* *
+* * -   http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Links
+* *
+* * -   <http://foo.bar/baz>
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 
 /**
 * Prevent indentation of paragraph content.
@@ -1257,6 +1350,98 @@ rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
+
+/**
+* Prevent references from being used like URLs.
+*
+* @name jsdoc-no-reference-like-url
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep [boop](boop).
+* *
+* * [boop]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * [boop]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
+
+/**
+* Prevent shortcut reference links.
+*
+* @name jsdoc-no-shortcut-reference-link
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep [boop].
+* *
+* * [boop]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * [boop]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 
 /**
 * Prevent unneeded indentation before tables.
@@ -1351,6 +1536,96 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
+
+/**
+* Prevent references to undefined definitions.
+*
+* @name jsdoc-no-undefined-references
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * [boop]: http://example.com
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
+
+/**
+* Forbid unused definitions.
+*
+* @name jsdoc-no-unused-definitions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * [beep]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop [beep][beep].
+* *
+* * [beep]: http://foo.bar/baz
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 
 /**
 * Require table pipes to be aligned.

@@ -254,27 +254,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow empty URLs in images and links.
-*
-* @see [no-empty-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-empty-url}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo]()
-*
-* @example
-* <!-- Good -->
-*
-* [foo](https://example.com)
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-empty-url' ),
-	[ 'error']
-]);
-
-/**
 * Disable rule never allowing filenames to begin with an article, as not relevant to JSDoc comments.
 *
 * @see [no-file-name-articles]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-articles}
@@ -360,27 +339,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow literal URLs without angle brackets.
-*
-* @see [no-literal-urls]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-literal-urls}
-*
-* @example
-* <!-- Bad -->
-*
-* https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* <https://example.com>
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-literal-urls' ),
-	[ 'error' ]
-]);
-
-/**
 * Require blank lines between block nodes.
 *
 * @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
@@ -428,31 +386,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow references to be used like URLs.
-*
-* @see [no-reference-like-url]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-reference-like-url}
-*
-* @example
-* <!-- Bad -->
-*
-* [Beep](boop).
-*
-* [boop]: https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* [Beep](https://example.com)
-*
-* [boop]: https://github.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-reference-like-url' ),
-	[ 'error' ]
-]);
-
-/**
 * Allow shell commands to be prefixed with `$` symbols.
 *
 * @see [no-shell-dollars]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shell-dollars}
@@ -491,77 +424,6 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-shortcut-reference-image' ),
-	[ 'error' ]
-]);
-
-/**
-* Never allow shortcut reference links.
-*
-* @see [no-shortcut-reference-link]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shortcut-reference-link}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo]
-*
-* [foo]: https://example.com/1.png
-*
-* @example
-* <!-- Good -->
-*
-* [foo][]
-*
-* [foo]: https://example.com/1.png
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-shortcut-reference-link' ),
-	[ 'error' ]
-]);
-
-/**
-* Never allow undefined references.
-*
-* @see [no-undefined-references]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-undefined-references}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo][]
-*
-* @example
-* <!-- Good -->
-*
-* [foo][]
-*
-* [foo]: https://example.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-undefined-references' ),
-	[ 'error' ]
-]);
-
-/**
-* Never allow unused definitions.
-*
-* @see [no-unused-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-unused-definitions}
-*
-* @example
-* <!-- Bad -->
-*
-* [foo]: https://example.com
-*
-* @example
-* <!-- Good -->
-*
-* [foo][foo].
-*
-* [foo]: https://example.com
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-unused-definitions' ),
 	[ 'error' ]
 ]);
 
