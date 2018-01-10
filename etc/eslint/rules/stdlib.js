@@ -1492,6 +1492,50 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
 
 /**
+* Prevent references to undefined definitions.
+*
+* @name jsdoc-no-undefined-references
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep [boop][boop].
+* *
+* * [boop]: http://example.com
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
+
+/**
 * Forbid unused definitions.
 *
 * @name jsdoc-no-unused-definitions
