@@ -74,18 +74,6 @@ check_licenses() {
 	return 0
 }
 
-# Runs tests.
-run_tests() {
-	echo 'Running tests...' >&2
-	make test > /dev/null 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Tests failed. Run `make test` to see the failing tests.' >&2
-		return 1
-	fi
-	echo 'Tests passed.' >&2
-	return 0
-}
-
 # Main execution sequence.
 main() {
 	local changed_files
@@ -213,11 +201,17 @@ main() {
 		fi
 	fi
 
-	# FIXME: re-enable once we have written tooling to support running only those tests involving affected packages.
-	# run_tests
-	# if [[ "$?" -ne 0 ]]; then
-	# 	on_error 1
-	# fi
+	# Run JavaScript test files...
+	files=$(echo "${changed_files}" | grep '/test/.*\.js$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running JavaScript test files...' >&2
+		make FILES="${files}" test-javascript-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running JavaScript tests.' >&2
+			on_error 1
+		fi
+	fi
 
 	cleanup
 	exit 0
