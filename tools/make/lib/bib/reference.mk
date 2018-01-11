@@ -21,10 +21,16 @@ CITATION_REFERENCE_FLAGS ?= \
 
 # TARGETS #
 
-# Return a reference.
+#/
+# Prints a Markdown formatted reference corresponding to a provided citation identifier.
 #
-# This target returns a reference corresponding to a citation identifier.
-
+# @param {string} CITATION - citation identifier prefixed with an `@` symbol (e.g., `@marsaglia:2000a`)
+# @param {string} [CITATION_REFERENCE_DATABASE] - path to a citation reference database (e.g., `/foo/bar/baz/bib.bib`)
+# @param {string} [CITATION_REFERENCE_CSL] - path to a Citation Style Language (CSL) file (e.g., `/foo/bar/baz/style.csl`)
+#
+# @example
+# make make citation-reference CITATION=@marsaglia:2000a
+#/
 citation-reference: $(NODE_MODULES)
 	$(QUIET) $(CITATION_REFERENCE) $(CITATION_REFERENCE_FLAGS) $(CITATION)
 
