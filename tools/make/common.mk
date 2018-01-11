@@ -173,8 +173,11 @@ CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/packag
 
 # Define the path to the [remark][1] executable.
 #
-# To install remark:
-#     $ npm install remark-cli
+# To install `remark`:
+#
+# ```bash
+# $ npm install remark-cli
+# ```
 #
 # [1]: https://github.com/wooorm/remark/
 REMARK ?= $(BIN_DIR)/remark
@@ -184,32 +187,44 @@ REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
 
 # Define the path to the [browserify][1] executable.
 #
-# To install browserify:
-#     $ npm install browserify
+# To install `browserify`:
+#
+# ```bash
+# $ npm install browserify
+# ```
 #
 # [1]: https://github.com/browserify/browserify
 BROWSERIFY ?= $(BIN_DIR)/browserify
 
 # Define the path to the `tap-spec` executable.
 #
-# To install tap-spec:
-#     $ npm install tap-spec
+# To install `tap-spec`:
+#
+# ```bash
+# $ npm install tap-spec
+# ```
 #
 # [1]: https://github.com/scottcorgan/tap-spec
 TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 
 # Define the path to the `tap-summary` executable.
 #
-# To install tap-summary:
-#     $ npm install tap-summary
+# To install `tap-summary`:
+#
+# ```bash
+# $ npm install tap-summary
+# ```
 #
 # [1]: https://github.com/zoubin/tap-summary
 TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
 
 # Define the path to the `tap-xunit` executable.
 #
-# To install tap-xunit:
-#     $ npm install tap-xunit
+# To install `tap-xunit`:
+#
+# ```bash
+# $ npm install tap-xunit
+# ```
 #
 # [1]: https://github.com/aghassemi/tap-xunit
 TAP_XUNIT ?= $(BIN_DIR)/tap-xunit
