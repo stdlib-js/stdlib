@@ -4,7 +4,10 @@
 # Define the path of the [david][1] executable:
 #
 # To install david:
-#     $ npm install david
+#
+# ```bash
+# $ npm install david
+# ```
 #
 # [1]: https://www.npmjs.com/package/david
 DAVID ?= $(BIN_DIR)/david
