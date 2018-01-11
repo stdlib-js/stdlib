@@ -10,31 +10,59 @@ FIND_MAKEFILES_FLAGS ?= \
 
 # TARGETS #
 
-# Print variable value.
+#/
+# Prints the runtime value of a `Makefile` variable.
 #
-# This target prints the runtime value of any variable via `inspect.VARIABLE_NAME`.
-
+# ## Notes
+#
+# -   The rule uses the following format:
+#
+#     ```bash
+#     $ make inspect.<variable>
+#     ```
+#
+# @example
+# make inspect.ROOT_DIR
+#
+# @example
+# make inspect.CC
+#/
 inspect.%:
 	$(QUIET) echo '$*=$($*)'
 
-
-# Assert variable.
+#/
+# Asserts that a `Makefile` variable is set.
 #
-# This target asserts that a variable is set via `assert.VARIABLE_NAME`.
-
+# ## Notes
+#
+# -   The rule uses the following format:
+#
+#     ```bash
+#     $ make assert.<variable>
+#     ```
+#
+# -   If a variable is **not** set, the recipe exits with a non-zero exit code.
+#
+# @example
+# make inspect.CXX
+#/
 assert.%:
 	$(QUIET) if [[ "${${*}}" = "" ]]; then \
 		echo "\nError: You must set the environment variable: ${*}.\n"; \
 		exit 1; \
 	fi
 
-
-# List variable names.
+#/
+# Prints a sorted list of `Makefile` variable names.
 #
-# This target prints a sorted list of Makefile variable names. To remove duplicates, pipe to `uniq`.
+# ## Notes
 #
-# Note: the list of variables is NOT exhaustive, as the list does not include variables which are built-in. These variables could be included by dumping the Makefile database `make -qp`.
-
+# -   The list of variables is **not** exhaustive, as the list does **not** include built-in variables. Built-in variables could be included by dumping the `Makefile` database via `make -qp`.
+# -   To remove duplicates, pipe to `uniq`.
+#
+# @example
+# make list-variables
+#/
 list-variables:
 	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
 	| xargs grep -e '^[A-Z0-9_]\{1,\} ?=' -e '^[A-Za-z0-9_]\{1,\} :=' \
