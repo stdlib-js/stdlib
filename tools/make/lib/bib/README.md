@@ -1,12 +1,12 @@
 # Bibliography
 
-> Bibliography recipes.
+> Bibliography commands.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for managing the project bibliography.
+This directory contains [`make`][make] rules for managing the project bibliography.
 
 </section>
 
@@ -32,7 +32,7 @@ Returns a Markdown formatted reference corresponding to a provided citation iden
 $ make citation-reference CITATION=@marsaglia:2000a
 ```
 
-The recipe recognizes the following environment variables:
+The command recognizes the following environment variables:
 
 -   **CITATION**: citation identifier prefixed with an `@` symbol; e.g., `@marsaglia:2000a`.
 -   **CITATION_REFERENCE_DATABASE**: path to a citation reference database; e.g., `/foo/bar/baz/bib.bib`.
