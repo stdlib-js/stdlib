@@ -1,8 +1,15 @@
+<!-- lint disable first-heading-level -->
+
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6746dfdc6e031f695fc56fbefdb16e752c4d2716/docs/assets/logo_header.png" alt="stdlib logo">
+        <br>
+        <br>
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3025b71f0a3003ee779043e515e690cbd3cb8b74/docs/assets/logo_banner.svg" alt="stdlib logo">
+        <br>
+        <br>
+        <br>
         <br>
     </div>
 </section>
@@ -10,10 +17,6 @@
 <!-- /.banner -->
 
 * * *
-
-# stdlib
-
-> A standard library for JavaScript and Node.js.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -118,32 +121,32 @@ Copyright © 2016-2017. The Stdlib [Authors][stdlib-authors].
 
 #### Version
 
-<!--lint disable no-paragraph-content-indent -->
+<!-- lint disable no-paragraph-content-indent -->
 
 [![git tag][tag-image]][tag-url] [![NPM version][npm-image]][npm-url] [![Node.js version][node-image]][node-url]
 
-<!--lint enable no-paragraph-content-indent -->
+<!-- lint enable no-paragraph-content-indent -->
 
 #### Build
 
 <!-- TODO: distinguish between Linux and Windows code coverage -->
 
-<!--lint disable table-pipe-alignment-->
+<!-- lint disable table-pipe-alignment -->
 
 | OS         | Build (master)                                                                           | Coverage (master)                                                  | Build (develop)                                                                             | Coverage (develop)                                                    |
 | ---------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master]              | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop]              | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
 | Windows    | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
 
-<!--lint enable table-pipe-alignment-->
+<!-- lint enable table-pipe-alignment -->
 
 #### Dependencies
 
-<!--lint disable no-paragraph-content-indent -->
+<!-- lint disable no-paragraph-content-indent -->
 
 [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
 
-<!--lint enable no-paragraph-content-indent -->
+<!-- lint enable no-paragraph-content-indent -->
 
 #### Community
 
