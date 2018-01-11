@@ -41,13 +41,18 @@ endif
 # Define whether the `make` commands are running on a hosted continuous integration service:
 TRAVIS ?=
 APPVEYOR ?=
+CIRCLECI ?=
 ifeq ($(TRAVIS), true)
 	CI_SERVICE ?= travis
 else
 ifeq ($(APPVEYOR), true)
 	CI_SERVICE ?= appveyor
 else
+ifeq ($(CIRCLECI), true)
+	CI_SERVICE ?= circle
+else
 	CI_SERVICE ?= none
+endif
 endif
 endif
 
