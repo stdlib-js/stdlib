@@ -4,7 +4,10 @@
 # Define the path of the executable for [node-gyp][1].
 #
 # To install `node-gyp`:
-#     $ npm install node-gyp
+#
+# ```bash
+# $ npm install node-gyp
+# ```
 #
 # [1]: https://github.com/nodejs/node-gyp
 NODE_GYP ?= $(BIN_DIR)/node-gyp
