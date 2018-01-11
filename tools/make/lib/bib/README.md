@@ -35,8 +35,8 @@ $ make citation-reference CITATION=@marsaglia:2000a
 The recipe recognizes the following environment variables:
 
 -   **CITATION**: citation identifier prefixed with an `@` symbol; e.g., `@marsaglia:2000a`.
--   **CITATION_REFERENCE_DATABASE**: path to a citation reference database.
--   **CITATION_REFERENCE_CSL**: path to a Citation Style Language (CSL) file.
+-   **CITATION_REFERENCE_DATABASE**: path to a citation reference database; e.g., `/foo/bar/baz/bib.bib`.
+-   **CITATION_REFERENCE_CSL**: path to a Citation Style Language (CSL) file; e.g., `/foo/bar/baz/style.csl`.
 
 </section>
 
