@@ -73,7 +73,7 @@ $ make benchmark-c
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/abs/.*`.
 -   **BLAS**: BLAS library name; e.g., `openblas`.
 -   **BLAS_DIR**: BLAS directory.
 -   **C_COMPILER**: C compiler; e.g., `gcc`.
@@ -117,7 +117,7 @@ $ make benchmark-cpp
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/beta/.*`.
 -   **CXX_COMPILER**: C++ compiler; e.g., `g++`.
 
 This recipe is useful when wanting to glob for C++ benchmark files (e.g., run all C++ benchmarks for a particular package).
@@ -157,7 +157,7 @@ $ make benchmark-fortran
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/daxpy/.*`.
 -   **FORTRAN_COMPILER**: Fortran compiler; e.g., `gfortran`.
 
 This recipe is useful when wanting to glob for Fortran benchmark files (e.g., run all Fortran benchmarks for a particular package).
@@ -195,7 +195,7 @@ $ make benchmark-javascript
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/utils/group-by/.*`.
 
 This recipe is useful when wanting to glob for JavaScript benchmark files (e.g., run all JavaScript benchmarks for a particular package).
 
@@ -231,7 +231,7 @@ $ make benchmark-julia
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/erf/.*`.
 
 This recipe is useful when wanting to glob for Julia benchmark files (e.g., run all Julia benchmarks for a particular package).
 
@@ -267,7 +267,7 @@ $ make benchmark-python
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/digamma/.*`.
 
 This recipe is useful when wanting to glob for Python benchmark files (e.g., run all Python benchmarks for a particular package).
 
@@ -303,7 +303,7 @@ $ make benchmark-r
 
 The recipe recognizes the following environment variables:
 
--   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/expm1/.*`.
 
 This recipe is useful when wanting to glob for R benchmark files (e.g., run all R benchmarks for a particular package).
 
