@@ -12,6 +12,42 @@ This directory contains [`make`][make] recipes for generating bundles and other 
 
 <!-- /.intro -->
 
+<!-- Usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```text
+Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
+```
+
+### Commands
+
+#### dist-browser-bundles
+
+Generates distributable browser bundles.
+
+<!-- run-disable -->
+
+```bash
+$ make dist-browser-bundles
+```
+
+#### update-dist-readme-browser-bundle-stats
+
+Updates a README file documenting distributable browser bundles to include the most recent bundle statistics.
+
+<!-- run-disable -->
+
+```bash
+$ make update-dist-readme-browser-bundle-stats
+```
+
+</section>
+
+<!-- /.usage -->
+
 <!-- Section to include notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
