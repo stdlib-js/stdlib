@@ -32,7 +32,7 @@ benchmark: benchmark-javascript
 #
 # ## Notes
 #
-# -   This recipe supports the environment variables supported by each language-specific (`benchmark-<lang>`) prerequisite.
+# -   This rule supports the environment variables supported by each language-specific (`benchmark-<lang>`) prerequisite.
 # -   This recipe is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance.
 #
 #
