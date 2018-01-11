@@ -3,8 +3,11 @@
 
 # Define the path to the [tape][1] executable:
 #
-# To install tape:
-#     $ npm install tape
+# To install `tape`:
+#
+# ```bash
+# $ npm install tape
+# ```
 #
 # [1]: https://github.com/substack/tape
 
