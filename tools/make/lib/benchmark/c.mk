@@ -1,5 +1,5 @@
 
-# VARIABLES
+# VARIABLES #
 
 # Define the path to a script for compiling a C benchmark:
 compile_c_benchmark_bin := $(TOOLS_DIR)/scripts/compile_c_benchmark
