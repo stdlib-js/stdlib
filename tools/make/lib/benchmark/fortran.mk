@@ -12,6 +12,7 @@ benchmark-fortran:
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
 		$(MAKE) && \
+		FORTRAN_COMPILER="$(FC)" \
 		$(MAKE) run || exit 1; \
 	done
 
@@ -29,6 +30,7 @@ benchmark-fortran-files:
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
 		$(MAKE) && \
+		FORTRAN_COMPILER="$(FC)" \
 		$(MAKE) run || exit 1; \
 	done
 
