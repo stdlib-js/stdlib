@@ -12,6 +12,56 @@ This directory contains [`make`][make] recipes for running language benchmarks.
 
 <!-- /.intro -->
 
+<!-- Usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```text
+Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
+```
+
+### C
+
+#### benchmark-c
+
+Runs C benchmarks.
+
+<!-- run-disable -->
+
+```bash
+$ make benchmark-c
+```
+
+The recipe recognizes the following environment variables:
+
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+-   **BLAS**: BLAS library name; e.g., `openblas`.
+-   **BLAS_DIR**: BLAS directory.
+-   **C_COMPILER**: C compiler; e.g., `gcc`.
+
+#### benchmark-c-files
+
+Runs a specified list of C benchmark files.
+
+<!-- run-disable -->
+
+```bash
+$ make benchmark-c-files FILES='/foo/benchmark.c /bar/benchmark.c'
+```
+
+The recipe recognizes the following environment variables:
+
+-   **FILES**: list of C benchmark files.
+-   **BLAS**: BLAS library name; e.g., `openblas`.
+-   **BLAS_DIR**: BLAS directory.
+-   **C_COMPILER**: C compiler; e.g., `gcc`.
+
+</section>
+
+<!-- /.usage -->
+
 <!-- Section to include notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
