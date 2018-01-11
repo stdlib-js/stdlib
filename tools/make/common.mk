@@ -421,32 +421,32 @@ DEPS_CEPHES_DIST ?= moshier
 #
 # ## Notes
 #
-# * For the `netlib` distribution, the list may include the following libraries:
+# -   For the `netlib` distribution, the list may include the following libraries:
 #
-#   - 128bit
-#   - bessel
-#   - c9x-complex
-#   - cmath
-#   - cprob
-#   - ellf
-#   - eval
-#   - ieee
-#   - ldouble
-#   - linalg
-#   - ode
-#   - misc
-#   - polyn
-#   - qfloat
-#   - remes
-#   - single
+#     -   128bit
+#     -   bessel
+#     -   c9x-complex
+#     -   cmath
+#     -   cprob
+#     -   ellf
+#     -   eval
+#     -   ieee
+#     -   ldouble
+#     -   linalg
+#     -   ode
+#     -   misc
+#     -   polyn
+#     -   qfloat
+#     -   remes
+#     -   single
 #
-# * For the `moshier` distribution, the list may include the following libraries:
+# -   For the `moshier` distribution, the list may include the following libraries:
 #
-#   - 128bit
-#   - double
-#   - ldouble
-#   - qlib
-#   - single
+#     -   128bit
+#     -   double
+#     -   ldouble
+#     -   qlib
+#     -   single
 #
 ifeq ($(DEPS_CEPHES_DIST), netlib)
 	DEPS_CEPHES_LIBS ?= \
