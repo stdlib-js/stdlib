@@ -26,6 +26,8 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 ### C
 
+**Note**: C benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
+
 #### benchmark-c
 
 Runs C benchmarks.
