@@ -1,10 +1,11 @@
 
 # VARIABLES #
 
-# Define the [Codecov][1] executable.
+# Define the [Codecov][1] command (see [2][2] and [3][3]).
 #
-# [1]: https://github.com/codecov/codecov-bash
-# [2]: https://github.com/codecov/codecov-python
+# [1]: https://codecov.io/
+# [2]: https://github.com/codecov/codecov-bash
+# [3]: https://github.com/codecov/codecov-python
 ifeq ($(OS), WINNT)
 	CODECOV ?= pip install --user codecov && codecov
 else
@@ -27,15 +28,19 @@ endif
 
 # TARGETS #
 
-# Report coverage statistics.
-#
-# This target sends coverage statistics to [Codecov][1].
+#/
+# Sends coverage statistics to [Codecov][1].
 #
 # [1]: https://codecov.io/
-
+#
+# @param {string} LCOV_INFO - path of the `lcov.info` file which will be sent to the coverage service
+# @param {string} [CI_SERVICE] - continuous integration (CI) service from which the coverage report originates
+# @param {string} [COVERAGE_NAME] - coverage report name
+#
+# @example
+# make coverage-codecov
+#/
 coverage-codecov:
 	$(QUIET) $(CODECOV) $(CODECOV_FLAGS) || echo 'Failed to upload coverage reports to Codecov.'
 
 .PHONY: coverage-codecov
-
-
