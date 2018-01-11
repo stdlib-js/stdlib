@@ -11,7 +11,7 @@ MAKEFLAGS += --warn-undefined-variables
 #
 # ## Notes
 #
-# * We use `bash` so that we can use `pipefail`.
+# -   We use `bash` so that we can use `pipefail`.
 #
 #
 # [1]: https://www.gnu.org/prep/standards/html_node/Makefile-Basics.html#Makefile-Basics
@@ -22,11 +22,11 @@ SHELL := bash
 #
 # ## Notes
 #
-# * `.SHELLFLAGS` was introduced in GNU Make 3.82 and has no effect on the version of GNU Make installed on Mac OS X, which is 3.81.
-# * The `-e` flag causes `bash` to exit immediately if a `bash` executed command fails.
-# * The `-u` flag causes `bash` to exit with an error message if a variable is accessed without being defined.
-# * The `pipefail` option specifies that, if any of the commands in a pipeline fail, the entire pipeline fails. Otherwise the return value of a pipeline is the return value of the last command.
-# * The `-c` flag is in the default value of `.SHELLFLAGS`, which must be preserved, as this is how `make` passes the script to be executed to `bash`.
+# -   `.SHELLFLAGS` was introduced in GNU Make 3.82 and has no effect on the version of GNU Make installed on Mac OS X, which is 3.81.
+# -   The `-e` flag causes `bash` to exit immediately if a `bash` executed command fails.
+# -   The `-u` flag causes `bash` to exit with an error message if a variable is accessed without being defined.
+# -   The `pipefail` option specifies that, if any of the commands in a pipeline fail, the entire pipeline fails. Otherwise the return value of a pipeline is the return value of the last command.
+# -   The `-c` flag is in the default value of `.SHELLFLAGS`, which must be preserved, as this is how `make` passes the script to be executed to `bash`.
 #
 .SHELLFLAGS := -eu -o pipefail -c
 
@@ -34,8 +34,8 @@ SHELL := bash
 #
 # ## Notes
 #
-# * Mentioning this target anywhere in a Makefile prevents a user from re-running make and using an incomplete or invalid target.
-# * When debugging, it may be necessary to comment this line out so the incomplete or invalid target can be inspected.
+# -   Mentioning this target anywhere in a Makefile prevents a user from re-running make and using an incomplete or invalid target.
+# -   When debugging, it may be necessary to comment this line out so the incomplete or invalid target can be inspected.
 #
 # [1]: https://www.gnu.org/software/make/manual/html_node/Special-Targets.html
 .DELETE_ON_ERROR:
