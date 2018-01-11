@@ -38,7 +38,10 @@ DOCUMENTATIONJS_JSON_FLAGS ?= --format json
 # This target generates source HTML documentation from [JSDoc][1]-style comments using [documentation.js][2].
 #
 # To install documentation.js:
-#     $ npm install documentation
+#
+# ```bash
+# $ npm install documentation
+# ```
 #
 # [1]: http://usejsdoc.org/
 # [2]: https://github.com/documentationjs/documentation
@@ -56,7 +59,10 @@ documentationjs-html: $(NODE_MODULES)
 # This target generates JSDoc JSON from [JSDoc][1]-style comments.
 #
 # To install documentation.js:
-#     $ npm install documentation
+#
+# ```bash
+# $ npm install documentation
+# ```
 #
 # [1]: http://usejsdoc.org/
 # [2]: https://github.com/documentationjs/documentation
@@ -94,7 +100,10 @@ clean-documentationjs:
 # This target removes any current documentation and regenerates source HTML documentation from [JSDoc][1]-style comments using [documentation.js][2].
 #
 # To install documentation.js:
-#     $ npm install documentation
+#
+# ```bash
+# $ npm install documentation
+# ```
 #
 # [1]: http://usejsdoc.org/
 # [2]: https://github.com/documentationjs/documentation
