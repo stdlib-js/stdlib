@@ -51,7 +51,7 @@ Runs cross-language benchmarks.
 $ make benchmark-lang
 ```
 
-The recipe recognizes the environment variables for each language-specific recipe documented below.
+The recipe recognizes the environment variables for each language-specific (`benchmark-<lang>`) recipe documented below.
 
 This recipe is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance. 
 
