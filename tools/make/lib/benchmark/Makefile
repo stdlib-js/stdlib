@@ -12,19 +12,38 @@ include $(TOOLS_MAKE_LIB_DIR)/benchmark/r.mk
 
 # TARGETS #
 
-# Run benchmarks.
+#/
+# Runs benchmarks.
 #
-# This target runs benchmarks.
-
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+#
+# @example
+# make benchmark
+#
+# @example
+# make benchmark BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+#/
 benchmark: benchmark-javascript
 
 .PHONY: benchmark
 
-
-# Run cross-language benchmarks.
+#/
+# Runs cross-language benchmarks.
 #
-# This target runs cross-language benchmarks.
-
+# ## Notes
+#
+# -   This recipe supports the environment variables supported by each language-specific (`benchmark-<lang>`) prerequisite.
+# -   This recipe is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance.
+#
+#
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+#
+# @example
+# make benchmark-lang
+#
+# @example
+# make benchmark-lang BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+#/
 benchmark-lang: benchmark-javascript benchmark-julia benchmark-python benchmark-r benchmark-c benchmark-cpp benchmark-fortran
 
 .PHONY: benchmark-lang
