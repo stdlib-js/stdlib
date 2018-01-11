@@ -42,7 +42,6 @@ benchmark-c:
 
 .PHONY: benchmark-c
 
-
 #/
 # Runs a specified list of C benchmarks consecutively.
 #
