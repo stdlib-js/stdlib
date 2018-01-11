@@ -22,6 +22,39 @@ This directory contains [`make`][make] recipes for running language benchmarks.
 Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 ```
 
+### Commands
+
+#### benchmark
+
+Runs benchmarks.
+
+<!-- run-disable -->
+
+```bash
+$ make benchmark
+```
+
+The recipe recognizes the following environment variables:
+
+-   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
+
+This recipe is an **alias** for `benchmark-javascript`, which is documented below.
+
+
+#### benchmark-lang
+
+Runs cross-language benchmarks.
+
+<!-- run-disable -->
+
+```bash
+$ make benchmark-lang
+```
+
+The recipe recognizes the environment variables for each language-specific recipe documented below.
+
+This recipe is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance. 
+
 * * *
 
 ### C
