@@ -26,13 +26,13 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 #### citation-reference
 
-Returns a Markdown formatted reference corresponding to a provided citation identifier.
+Prints a Markdown formatted reference corresponding to a provided citation identifier.
 
 ```bash
 $ make citation-reference CITATION=@marsaglia:2000a
 ```
 
-The command recognizes the following environment variables:
+The command supports the following environment variables:
 
 -   **CITATION**: citation identifier prefixed with an `@` symbol; e.g., `@marsaglia:2000a`.
 -   **CITATION_REFERENCE_DATABASE**: path to a citation reference database; e.g., `/foo/bar/baz/bib.bib`.
