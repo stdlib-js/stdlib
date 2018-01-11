@@ -33,7 +33,7 @@ benchmark: benchmark-javascript
 # ## Notes
 #
 # -   This rule supports the environment variables supported by each language-specific (`benchmark-<lang>`) prerequisite.
-# -   This recipe is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance.
+# -   This rule is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance.
 #
 #
 # @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
