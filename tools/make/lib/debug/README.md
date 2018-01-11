@@ -24,7 +24,7 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 ### Commands
 
-#### inspect.<variable>
+#### inspect.&lt;variable&gt;
 
 Prints the runtime value of a `Makefile` variable.
 
@@ -36,7 +36,7 @@ $ make inspect.CC
 $ make inspect.ROOT_DIR
 ```
 
-#### assert.<variable>
+#### assert.&lt;variable&gt;
 
 Asserts that a `Makefile` variable is set.
 
