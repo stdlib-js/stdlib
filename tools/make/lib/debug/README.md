@@ -54,7 +54,7 @@ Prints a sorted list of `Makefile` variable names.
 $ make list-variables
 ```
 
-To remove duplicates, pipe to `uniq`.
+To remove duplicates, pipe to `uniq`. Note that the list of variables is **not** exhaustive, as the list does **not** include built-in variables.
 
 </section>
 
