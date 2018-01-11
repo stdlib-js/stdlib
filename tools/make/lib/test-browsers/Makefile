@@ -24,8 +24,11 @@ endif
 #
 # This target [browserifies][1] test files (and the [proxyquire-universal][2] plugin), runs unit tests in a local (headless) browser using a specified test runner, and pipes output to a TAP reporter which is expected to be [tap-spec][3].
 #
-# To install browserify, proxyquire-universal, and tap-spec:
-#    $ npm install browserify proxyquire-universal tap-spec
+# To install `browserify`, `proxyquire-universal`, and `tap-spec`:
+#
+# ```bash
+# $ npm install browserify proxyquire-universal tap-spec
+# ```
 #
 # [1]: https://github.com/substack/node-browserify
 # [2]: https://github.com/bendrucker/proxyquire-universal

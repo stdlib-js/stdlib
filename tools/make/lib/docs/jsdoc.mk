@@ -54,7 +54,10 @@ JSDOC_JSON_FLAGS ?= \
 # This target generates source HTML documentation from [JSDoc][1]-style comments using [JSDoc][1].
 #
 # To install JSDoc:
-#     $ npm install jsdoc
+#
+# ```bash
+# $ npm install jsdoc
+# ```
 #
 # [1]: http://usejsdoc.org/
 
@@ -71,7 +74,10 @@ jsdoc-html: $(NODE_MODULES)
 # This target generates JSDoc JSON from [JSDoc][1]-style comments.
 #
 # To install JSDoc:
-#     $ npm install jsdoc
+#
+# ```bash
+# $ npm install jsdoc
+# ```
 #
 # [1]: http://usejsdoc.org/
 
@@ -108,7 +114,10 @@ clean-jsdoc:
 # This target removes any current documentation and regenerates source HTML documentation from [JSDoc][1]-style comments.
 #
 # To install JSDoc:
-#     $ npm install jsdoc
+#
+# ```bash
+# $ npm install jsdoc
+# ```
 #
 # [1]: http://usejsdoc.org/
 
@@ -117,4 +126,3 @@ rebuild-jsdoc-html:
 	$(QUIET) $(MAKE) -f $(this_file) jsdoc-html
 
 .PHONY: rebuild-jsdoc-html
-

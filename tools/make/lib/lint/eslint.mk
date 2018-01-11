@@ -4,7 +4,10 @@
 # Define the path to the [ESLint][1] executable.
 #
 # To install ESLint:
-#     $ npm install eslint
+#
+# ```bash
+# $ npm install eslint
+# ```
 #
 # [1]: http://eslint.org//
 ESLINT ?= $(BIN_DIR)/eslint

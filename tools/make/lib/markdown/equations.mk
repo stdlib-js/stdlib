@@ -61,11 +61,11 @@ REMARK_EQUATIONS_OUTPUT_FLAG ?= --output
 #
 # This target processes Markdown files containing Markdown equation elements as follows:
 #
-# 1. Files containing equation comments are transformed to include equation elements.
-# 2. SVG files are generated for each equation.
-# 3. Processed files are committed to source control.
-# 4. Resource URLs are inserted in image equation elements.
-# 5. Processed files are committed to source control.
+# 1.  Files containing equation comments are transformed to include equation elements.
+# 2.  SVG files are generated for each equation.
+# 3.  Processed files are committed to source control.
+# 4.  Resource URLs are inserted in image equation elements.
+# 5.  Processed files are committed to source control.
 
 markdown-equations: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
@@ -126,7 +126,7 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 # Insert repository package URLs.
 #
 # This target resolves package identifiers to GitHub repository URLs and updates Markdown files accordingly.
-
+#
 # TODO: create separate environment variables for this recipe, rather than using "equations" environment variables
 
 markdown-stdlib-urls: $(NODE_MODULES)

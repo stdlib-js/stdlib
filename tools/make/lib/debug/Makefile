@@ -20,7 +20,7 @@ inspect.%:
 
 # Assert variable.
 #
-# This targets asserts that a variable is set via `assert.VARIABLE_NAME`.
+# This target asserts that a variable is set via `assert.VARIABLE_NAME`.
 
 assert.%:
 	$(QUIET) if [[ "${${*}}" = "" ]]; then \

@@ -7,10 +7,16 @@ CITATION ?=
 # Define the command for returning a citation reference:
 CITATION_REFERENCE ?= $(NODE) $(TOOLS_PKGS_DIR)/bib/citation-reference/bin/cli
 
+# Define the path to a citation reference database:
+CITATION_REFERENCE_DATABASE ?= $(ROOT_DIR)/docs/references/bib.bib
+
+# Define the path to a Citation Style Language (CSL) file:
+CITATION_REFERENCE_CSL ?= $(ROOT_DIR)/docs/references/csl/chicago-author-date.csl
+
 # Define the command-line options to be used when executing the command:
 CITATION_REFERENCE_FLAGS ?= \
-	--database $(ROOT_DIR)/docs/references/bib.bib \
-	--csl $(ROOT_DIR)/docs/references/csl/chicago-author-date.csl
+	--database $(CITATION_REFERENCE_DATABASE) \
+	--csl $(CITATION_REFERENCE_CSL)
 
 
 # TARGETS #

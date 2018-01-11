@@ -38,7 +38,7 @@ dist-browser-bundles: $(NODE_MODULES)
 #
 # This target updates a README file documenting distributable browser bundles to include the most recent bundle statistics.
 
-update-dist-readme-browser-bundle-stats:
+update-dist-readme-browser-bundle-stats: $(NODE_MODULES)
 	$(QUIET) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS_FLAGS)
 
 .PHONY: update-dist-readme-browser-bundle-stats

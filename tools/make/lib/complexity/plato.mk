@@ -4,7 +4,10 @@
 # Define the path to the [plato][1] executable.
 #
 # To install plato:
-#     $ npm install plato
+#
+# ```bash
+# $ npm install plato
+# ```
 #
 # [1]: https://github.com/es-analysis/plato
 PLATO ?= $(BIN_DIR)/plato

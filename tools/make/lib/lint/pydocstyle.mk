@@ -4,7 +4,10 @@
 # Define the path to the [pydocstyle][1] executable.
 #
 # To install pydocstyle:
-#     $ pip install pydocstyle
+#
+# ```bash
+# $ pip install pydocstyle
+# ```
 #
 # [1]: https://github.com/PyCQA/pydocstyle
 PYDOCSTYLE ?= pydocstyle
