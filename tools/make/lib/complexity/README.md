@@ -1,12 +1,12 @@
 # Code Complexity
 
-> Code complexity recipes.
+> Code complexity commands.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for analyzing source code complexity and generating code complexity reports.
+This directory contains [`make`][make] rules for analyzing source code complexity and generating code complexity reports.
 
 </section>
 
