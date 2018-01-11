@@ -1,12 +1,12 @@
 # Debug
 
-> Debug recipes.
+> Debug commands.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for helping debug the [`make`][make] environment and project recipes (e.g., printing the values of environment variables, etc.).
+This directory contains [`make`][make] rules for helping debug the [`make`][make] environment and project rules (e.g., printing the values of environment variables, etc.).
 
 </section>
 
