@@ -171,7 +171,7 @@ CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/packag
 
 # TOOLS #
 
-# Define the path to the [remark][1] executable.
+# Define the path to the [`remark`][1] executable.
 #
 # To install `remark`:
 #
@@ -185,7 +185,7 @@ REMARK ?= $(BIN_DIR)/remark
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
 
-# Define the path to the [browserify][1] executable.
+# Define the path to the [`browserify`][1] executable.
 #
 # To install `browserify`:
 #
@@ -196,7 +196,7 @@ REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
 # [1]: https://github.com/browserify/browserify
 BROWSERIFY ?= $(BIN_DIR)/browserify
 
-# Define the path to the `tap-spec` executable.
+# Define the path to the [`tap-spec`][1] executable.
 #
 # To install `tap-spec`:
 #
@@ -207,7 +207,7 @@ BROWSERIFY ?= $(BIN_DIR)/browserify
 # [1]: https://github.com/scottcorgan/tap-spec
 TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 
-# Define the path to the `tap-summary` executable.
+# Define the path to the [`tap-summary`][1] executable.
 #
 # To install `tap-summary`:
 #
@@ -218,7 +218,7 @@ TAP_REPORTER ?= $(BIN_DIR)/tap-spec
 # [1]: https://github.com/zoubin/tap-summary
 TAP_SUMMARY ?= $(BIN_DIR)/tap-summary
 
-# Define the path to the `tap-xunit` executable.
+# Define the path to the [`tap-xunit`][1] executable.
 #
 # To install `tap-xunit`:
 #
