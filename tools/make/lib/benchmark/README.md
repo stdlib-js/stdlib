@@ -34,7 +34,7 @@ Runs benchmarks.
 $ make benchmark
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/dasum/.*`.
 
@@ -51,7 +51,7 @@ Runs cross-language benchmarks.
 $ make benchmark-lang
 ```
 
-The recipe recognizes the environment variables for each language-specific (`benchmark-<lang>`) recipe documented below.
+The recipe supports the environment variables for each language-specific (`benchmark-<lang>`) recipe documented below.
 
 This recipe is useful when wanting to glob for benchmark files, irrespective of language, for a particular package in order to compare cross-language performance. 
 
@@ -71,7 +71,7 @@ Runs C benchmarks.
 $ make benchmark-c
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/abs/.*`.
 -   **BLAS**: BLAS library name; e.g., `openblas`.
@@ -90,7 +90,7 @@ Runs a specified list of C benchmark files.
 $ make benchmark-c-files FILES='/foo/benchmark.c /bar/benchmark.c'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of C benchmark files.
 -   **BLAS**: BLAS library name; e.g., `openblas`.
@@ -115,7 +115,7 @@ Runs C++ benchmarks.
 $ make benchmark-cpp
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/beta/.*`.
 -   **CXX_COMPILER**: C++ compiler; e.g., `g++`.
@@ -132,7 +132,7 @@ Runs a specified list of C++ benchmark files.
 $ make benchmark-cpp-files FILES='/foo/benchmark.cpp /bar/benchmark.cpp'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of C++ benchmark files.
 -   **CXX_COMPILER**: C++ compiler; e.g., `g++`.
@@ -155,7 +155,7 @@ Runs Fortran benchmarks.
 $ make benchmark-fortran
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/blas/base/daxpy/.*`.
 -   **FORTRAN_COMPILER**: Fortran compiler; e.g., `gfortran`.
@@ -172,7 +172,7 @@ Runs a specified list of Fortran benchmark files.
 $ make benchmark-fortran-files FILES='/foo/benchmark.f /bar/benchmark.f'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of Fortran benchmark files.
 -   **FORTRAN_COMPILER**: Fortran compiler; e.g., `gfortran`.
@@ -193,7 +193,7 @@ Runs JavaScript benchmarks.
 $ make benchmark-javascript
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/utils/group-by/.*`.
 
@@ -209,7 +209,7 @@ Runs a specified list of JavaScript benchmark files.
 $ make benchmark-javascript-files FILES='/foo/benchmark.js /bar/benchmark.js'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of JavaScript benchmark files.
 
@@ -229,7 +229,7 @@ Runs Julia benchmarks.
 $ make benchmark-julia
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/erf/.*`.
 
@@ -245,7 +245,7 @@ Runs a specified list of Julia benchmark files.
 $ make benchmark-julia-files FILES='/foo/benchmark.jl /bar/benchmark.jl'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of Julia benchmark files.
 
@@ -265,7 +265,7 @@ Runs Python benchmarks.
 $ make benchmark-python
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/digamma/.*`.
 
@@ -281,7 +281,7 @@ Runs a specified list of Python benchmark files.
 $ make benchmark-python-files FILES='/foo/benchmark.py /bar/benchmark.py'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of Python benchmark files.
 
@@ -301,7 +301,7 @@ Runs R benchmarks.
 $ make benchmark-r
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **BENCHMARKS_FILTER**: filepath pattern; e.g., `.*/math/base/special/expm1/.*`.
 
@@ -317,7 +317,7 @@ Runs a specified list of R benchmark files.
 $ make benchmark-r-files FILES='/foo/benchmark.R /bar/benchmark.R'
 ```
 
-The recipe recognizes the following environment variables:
+The recipe supports the following environment variables:
 
 -   **FILES**: list of R benchmark files.
 
