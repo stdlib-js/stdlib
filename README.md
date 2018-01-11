@@ -6,7 +6,7 @@
     <div class="image" align="center">
         <br>
         <br>
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3025b71f0a3003ee779043e515e690cbd3cb8b74/docs/assets/logo_banner.svg" alt="stdlib logo">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
         <br>
         <br>
         <br>
