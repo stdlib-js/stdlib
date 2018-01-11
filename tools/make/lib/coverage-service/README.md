@@ -1,12 +1,12 @@
 # Coverage
 
-> Coverage service recipes.
+> Coverage service commands.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for sending coverage reports to third-party services.
+This directory contains [`make`][make] rules for sending coverage reports to third-party services.
 
 </section>
 
