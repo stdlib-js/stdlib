@@ -4,7 +4,10 @@
 # Define the path to the [testling][1] executable.
 #
 # To install testling:
-#     $ npm install testling
+#
+# ```bash
+# $ npm install testling
+# ```
 #
 # [1]: https://github.com/substack/testling
 BROWSER_TEST ?= $(BIN_DIR)/testling
