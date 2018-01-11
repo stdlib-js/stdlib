@@ -520,6 +520,16 @@
       " unit testing"
     ]
   },
+  "https://coveralls.io/": {
+    "id": "coveralls",
+    "description": "A hosted code coverage service.",
+    "short_url": "",
+    "keywords": [
+      "coveralls",
+      " coverage",
+      " unit testing"
+    ]
+  },
   "https://creativecommons.org/licenses/by-sa/4.0/": {
     "id": "cc-by-sa-4.0",
     "description": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.",
