@@ -10,7 +10,7 @@
 # -   This recipe is useful when wanting to glob for Julia benchmark files (e.g., run all Julia benchmarks for a particular package).
 #
 #
-# @param {string} [BENCHMARKS_FILTER] - filepath pattern (e.g., `.*/math/base/special/erf/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/erf/.*`)
 #
 # @example
 # make benchmark-julia

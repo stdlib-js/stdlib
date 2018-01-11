@@ -10,7 +10,7 @@
 # -   This recipe is useful when wanting to glob for JavaScript benchmark files (e.g., run all JavaScript benchmarks for a particular package).
 #
 #
-# @param {string} [BENCHMARKS_FILTER] - filepath pattern (e.g., `.*/utils/group-by/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
 #
 # @example
 # make benchmark-javascript

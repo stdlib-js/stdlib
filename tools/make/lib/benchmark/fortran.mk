@@ -10,7 +10,7 @@
 # -   This recipe is useful when wanting to glob for Fortran benchmark files (e.g., run all Fortran benchmarks for a particular package).
 #
 #
-# @param {string} [BENCHMARKS_FILTER] - filepath pattern (e.g., `.*/blas/base/daxpy/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/daxpy/.*`)
 # @param {string} [FORTRAN_COMPILER] - Fortran compiler (e.g., `gfortran`)
 #
 # @example

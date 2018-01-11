@@ -10,7 +10,7 @@
 # -   This recipe is useful when wanting to glob for C++ benchmark files (e.g., run all C++ benchmarks for a particular package).
 #
 #
-# @param {string} [BENCHMARKS_FILTER] - filepath pattern (e.g., `.*/math/base/special/beta/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/beta/.*`)
 # @param {string} [CXX_COMPILER] - C++ compiler (e.g., `g++`)
 #
 # @example

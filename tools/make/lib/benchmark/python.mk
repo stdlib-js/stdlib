@@ -10,7 +10,7 @@
 # -   This recipe is useful when wanting to glob for Python benchmark files (e.g., run all Python benchmarks for a particular package).
 #
 #
-# @param {string} [BENCHMARKS_FILTER] - filepath pattern (e.g., `.*/math/base/special/digamma/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/digamma/.*`)
 #
 # @example
 # make benchmark-python
