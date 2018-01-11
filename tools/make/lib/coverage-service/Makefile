@@ -11,6 +11,7 @@ LCOV_INFO ?= $(COVERAGE_DIR)/lcov.info
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/coverage-service/codecov.mk
+include $(TOOLS_MAKE_LIB_DIR)/coverage-service/coveralls.mk
 
 
 # TARGETS #
