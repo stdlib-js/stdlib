@@ -19,21 +19,24 @@ UPDATE_CONTRIBUTORS_OUT ?= $(ROOT_DIR)/CONTRIBUTORS
 
 # TARGETS #
 
-# List contributors.
+#/
+# Lists contributors to the project repository.
 #
-# This target lists contributors.
-
+# @example
+# make list-contributors
+#/
 list-contributors:
 	$(QUIET) $(MAKE_EXECUTABLE) $(LIST_CONTRIBUTORS)
 	$(QUIET) $(LIST_CONTRIBUTORS) $(LIST_CONTRIBUTORS_FLAGS)
 
 .PHONY: list-contributors
 
-
-# Update contributors.
+#/
+# Updates the project `CONTRIBUTORS` file.
 #
-# This target updates a CONTRIBUTORS file.
-
+# @example
+# make update-contributors
+#/
 update-contributors:
 	$(QUIET) $(MAKE_EXECUTABLE) $(UPDATE_CONTRIBUTORS)
 	$(QUIET) $(UPDATE_CONTRIBUTORS) $(UPDATE_CONTRIBUTORS_FLAGS) $(UPDATE_CONTRIBUTORS_OUT)
