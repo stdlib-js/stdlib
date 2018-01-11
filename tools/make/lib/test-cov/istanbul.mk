@@ -25,7 +25,10 @@ COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
 # Define the path to the Istanbul executable.
 #
 # To install Istanbul:
-#     $ npm install istanbul
+#
+# ```bash
+# $ npm install istanbul
+# ```
 #
 # [1]: https://github.com/gotwarlost/istanbul
 ISTANBUL ?= $(BIN_DIR)/istanbul
