@@ -4,7 +4,10 @@
 # Define the path to the [pycodestyle][1] executable.
 #
 # To install pycodestyle:
-#     $ pip install pycodestyle
+#
+# ```bash
+# $ pip install pycodestyle
+# ```
 #
 # [1]: https://github.com/PyCQA/pycodestyle
 PYCODESTYLE ?= pycodestyle

@@ -4,7 +4,10 @@
 # Define the path to the [Pylint][1] executable.
 #
 # To install Pylint:
-#     $ pip install pylint
+#
+# ```bash
+# $ pip install pylint
+# ```
 #
 # [1]: https://github.com/PyCQA/pylint
 PYLINT ?= pylint
