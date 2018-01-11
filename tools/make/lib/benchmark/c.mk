@@ -16,6 +16,7 @@ compile_c_benchmark_bin := $(TOOLS_DIR)/scripts/compile_c_benchmark
 # -   This recipe is useful when wanting to glob for C benchmark files (e.g., run all C benchmarks for a particular package).
 #
 #
+# @param {string} [BENCHMARKS_FILTER] - filepath pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {string} [C_COMPILER] - C compiler (e.g., `gcc`)
 # @param {string} [BLAS] - BLAS library name (e.g., `openblas`)
 # @param {string} [BLAS_DIR] - BLAS directory
