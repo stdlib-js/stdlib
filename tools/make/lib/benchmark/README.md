@@ -26,7 +26,7 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 ### C
 
-**Note**: C benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
+> **Note**: C benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
 
 #### benchmark-c
 
@@ -70,7 +70,7 @@ This recipe is useful when wanting to run a list of C benchmark files generated 
 
 ### C++
 
-**Note**: C++ benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
+> **Note**: C++ benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
 
 #### benchmark-cpp
 
@@ -110,7 +110,7 @@ This recipe is useful when wanting to run a list of C++ benchmark files generate
 
 ### Fortran
 
-**Note**: Fortran benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
+> **Note**: Fortran benchmark recipes delegate to local Makefiles which are responsible for actually compiling and running the respective benchmarks.
 
 #### benchmark-fortran
 
