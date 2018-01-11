@@ -29,7 +29,7 @@ CITATION_REFERENCE_FLAGS ?= \
 # @param {string} [CITATION_REFERENCE_CSL] - path to a Citation Style Language (CSL) file (e.g., `/foo/bar/baz/style.csl`)
 #
 # @example
-# make make citation-reference CITATION=@marsaglia:2000a
+# make citation-reference CITATION=@marsaglia:2000a
 #/
 citation-reference: $(NODE_MODULES)
 	$(QUIET) $(CITATION_REFERENCE) $(CITATION_REFERENCE_FLAGS) $(CITATION)
