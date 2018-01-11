@@ -17,13 +17,18 @@ endif
 
 # TARGETS #
 
-# Report coverage statistics.
+#/
+# Sends coverage statistics to a hosted code coverage service.
 #
-# This target sends coverage statistics to a hosted code coverage service.
-
+# @param {string} LCOV_INFO - path of the `lcov.info` file which will be sent to the coverage service
+# @param {string} COVERAGE_SERVICE - code coverage service name
+#
+# @example
+# make coverage
+#/
 coverage:
 ifeq ($(COVERAGE_SERVICE), codecov)
-	$(QUIET) $(MAKE) -f $(this_file) coverage-codecov
+	$(QUIET) CI_SERVICE=$(CI_SERVICE) LCOV_INFO=$(LCOV_INFO) COVERAGE_NAME=$(COVERAGE_NAME) $(MAKE) -f $(this_file) coverage-codecov
 endif
 
 .PHONY: coverage
