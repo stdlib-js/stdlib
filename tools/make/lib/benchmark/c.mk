@@ -23,6 +23,9 @@ compile_c_benchmark_bin := $(TOOLS_DIR)/scripts/compile_c_benchmark
 #
 # @example
 # make benchmark-c
+#
+# @example
+# make benchmark-c BENCHMARKS_FILTER=.*/math/base/special/abs/.*
 #/
 benchmark-c:
 	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
