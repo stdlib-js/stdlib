@@ -11,6 +11,7 @@ benchmark-cpp:
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
+		CXX_COMPILER="$(CXX)" \
 		BOOST=$(DEPS_BOOST_BUILD_OUT) $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
@@ -28,6 +29,7 @@ benchmark-cpp-files:
 		echo "Running benchmark: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
+		CXX_COMPILER="$(CXX)" \
 		BOOST=$(DEPS_BOOST_BUILD_OUT) $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
