@@ -17,10 +17,22 @@ compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 
 # TARGETS #
 
-# Compile WebAssembly artifacts.
+#/
+# Compiles WebAssembly artifacts.
 #
-# This target compiles WebAssembly artifacts. If unable to compile WebAssemby artifacts, the target prints an error message and tries compiling WebAssembly artifacts for the next package.
-
+# ## Notes
+#
+# -   If unable to compile WebAssemby artifacts, the recipe prints an error message and tries compiling WebAssembly artifacts for the next package.
+#
+#
+# @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `**/math/base/special/**/package.json`)
+#
+# @example
+# make wasm
+#
+# @example
+# make wasm PKGS_WASM_PATTERN=**/math/base/special/**/package.json
+#/
 wasm: $(NODE_MODULES)
 	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
@@ -39,11 +51,17 @@ wasm: $(NODE_MODULES)
 
 .PHONY: wasm
 
-
-# Remove WebAssembly artifacts.
+#/
+# Removes all compiled and generated WebAssembly files.
 #
-# This target removes all compiled and generated WebAssembly files.
-
+# @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `**/math/base/special/**/package.json`)
+#
+# @example
+# make clean-wasm
+#
+# @example
+# make clean-wasm PKGS_WASM_PATTERN=**/math/base/special/**/package.json
+#/
 clean-wasm: $(NODE_MODULES)
 	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
