@@ -49,6 +49,9 @@ tab_width = 2
 [*.css]
 indent_style = tab
 
+[*.tex]
+indent_style = tab
+
 [Makefile]
 indent_style = tab
 
