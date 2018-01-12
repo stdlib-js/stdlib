@@ -86,7 +86,7 @@ include $(TOOLS_MAKE_LIB_DIR)/wasm/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/workshops/Makefile
 
 
-# TARGETS #
+# RULES #
 
 # Default target.
 #
