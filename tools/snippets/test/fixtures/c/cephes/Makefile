@@ -1,3 +1,20 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
 
 # VARIABLES #
 
@@ -56,49 +73,66 @@ endif
 c_targets := runner.out
 
 
-# TARGETS #
+# RULES #
 
-# Default target.
+#/
+# Compiles C source files.
 #
-# This target is the default target.
-
+# @param {string} CC - C compiler
+# @param {string} CFLAGS - C compiler flags
+# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+# @param {string} CEPHES_SRC - list of Cephes source files
+#
+# @example
+# make
+#
+# @example
+# make all
+#/
 all: $(c_targets)
 
 .PHONY: all
 
-
-# Compile C source.
+#/
+# Compiles C source files.
 #
-# This target compiles C source files.
-
+# @private
+# @param {string} CC - C compiler
+# @param {string} CFLAGS - C compiler flags
+# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+# @param {string} CEPHES_SRC - list of Cephes source files
+#/
 $(c_targets): %.out: %.c
 	$(QUIET) $(CC) $(CFLAGS) $(fPIC) -o $@ $(CEPHES_SRC) $< -lm
 
-
-# Generate test fixtures.
+#/
+# Generates test fixtures.
 #
-# This target generates test fixtures.
-
+# @example
+# make run
+#/
 run: $(c_targets)
 	$(QUIET) ./$<
 
 .PHONY: run
 
-
-# Perform clean-up.
+#/
+# Removes generated files.
 #
-# This target removes generated files.
-
+# @example
+# make clean
+#/
 clean:
 	$(QUIET) -rm -f *.o *.out
 
 .PHONY: clean
 
-
-# Remove fixtures.
+#/
+# Removes generated test fixtures.
 #
-# This target removes fixture data.
-
+# @example
+# make clean-fixtures
+#/
 clean-fixtures:
 	$(QUIET) -rm -f *.json
 
