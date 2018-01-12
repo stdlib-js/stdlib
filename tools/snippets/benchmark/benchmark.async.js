@@ -1,5 +1,5 @@
 /**
-* @license
+* @license Apache-2.0
 *
 * Copyright (c) 2017 The Stdlib Authors.
 *
