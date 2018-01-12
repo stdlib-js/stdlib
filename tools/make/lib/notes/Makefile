@@ -20,7 +20,7 @@ FIND_NOTES_DIR ?= $(ROOT_DIR)
 #
 # -   Annotated comments will be output along with their associated filename and line number.
 #
-# @param {string} KEYWORDS - pipe-delimited list of keywords identify annotations
+# @param {string} KEYWORDS - pipe-delimited list of keywords identifying annotations
 #
 # @example
 # make notes
