@@ -78,10 +78,10 @@ c_targets := runner.out
 #/
 # Compiles C source files.
 #
-# @param {string} CC - C compiler
-# @param {string} CFLAGS - C compiler flags
-# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
 # @param {string} CEPHES_SRC - list of Cephes source files
+# @param {string} [C_COMPILER] - C compiler
+# @param {string} [CFLAGS] - C compiler flags
+# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
 #
 # @example
 # make
