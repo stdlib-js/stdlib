@@ -13,41 +13,49 @@ FIND_MAKEFILES_FLAGS ?= \
 
 # TARGETS #
 
-# Print Makefile help.
+#/
+# Prints a `Makefile` help message.
 #
-# This target prints a help message and lists available targets.
-
+# @example
+# make help
+#/
 help:
 	$(QUIET) $(CAT) $(MAKE_USAGE)
 
 .PHONY: help
 
-
-# List Makefile targets.
+#/
+# Prints a sorted list of `Makefile` rules.
 #
-# This target lists all Makefile targets.
+# ## Notes
 #
-# Note: the list of targets is NOT exhaustive, as it does not include targets which have not been explicitly declared PHONY targets and does not include targets declared via variables. These targets could be included by dumping the Makefile database `make -qp`, but not seen as necessary due to predominant use of PHONY.
-
-list-targets:
+# -   The list of rules is **not** exhaustive, as the list does **not** include rules which have not been explicitly declared PHONY targets and does **not** include rules declared via variables. These rules could be included by dumping the Makefile database `make -qp`, but this is not seen as necessary due to predominant use of `.PHONY`.
+#
+# @example
+# make list-rules
+#/
+list-rules:
 	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
 	| xargs grep '^.PHONY: ' \
 	| awk '{print $$2}' \
 	| sort
 
-.PHONY: list-targets
+.PHONY: list-rules
 
-
-# List Makefile stats targets.
+#/
+# Prints a sorted list of `Makefile` rules for computing project statistics.
 #
-# This target lists all Makefile targets for computing statistics.
+# ## Notes
 #
-# Note: the list of targets is NOT exhaustive, as it does not include targets which have not been explicitly declared PHONY targets and does not include targets declared via variables. These targets could be included by dumping the Makefile database `make -qp`, but not seen as necessary due to predominant use of PHONY.
-
-list-stats-targets:
+# -   The list of rules is **not** exhaustive, as the list does **not** include rules which have not been explicitly declared PHONY targets and does **not** include rules declared via variables. These rules could be included by dumping the Makefile database `make -qp`, but this is not seen as necessary due to predominant use of `.PHONY`.
+#
+# @example
+# make list-stats-rules
+#/
+list-stats-rules:
 	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
 	| xargs grep '^.PHONY: stats-' \
 	| awk '{print $$2}' \
 	| sort
 
-.PHONY: list-stats-targets
+.PHONY: list-stats-rules
