@@ -79,39 +79,61 @@ LIBPATH ?=
 c_targets := TODO.out
 
 
-# TARGETS #
+# RULES #
 
-# Default target.
+#/
+# Compiles C source files.
 #
-# This target is the default target.
-
+# @param {string} SOURCE_FILES - list of C source files
+# @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
+# @param {string} [LIBRARIES] - list of libraries (e.g., `-lpthread -lblas`)
+# @param {string} [LIBPATH] - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
+# @param {string} [C_COMPILER] - C compiler
+# @param {string} [CFLAGS] - C compiler flags
+# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+#
+# @example
+# make
+#
+# @example
+# make all
+#/
 all: $(c_targets)
 
 .PHONY: all
 
-
-# Compile C source.
+#/
+# Compiles C source files.
 #
-# This target compiles C source files.
-
+# @private
+# @param {string} SOURCE_FILES - list of C source files
+# @param {(string|void)} INCLUDE - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
+# @param {(string|void)} LIBRARIES - list of libraries (e.g., `-lpthread -lblas`)
+# @param {(string|void)} LIBPATH - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
+# @param {string} CC - C compiler
+# @param {string} CFLAGS - C compiler flags
+# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+#/
 $(c_targets): %.out: %.c
 	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
 
-
-# Run a benchmark.
+#/
+# Runs compiled benchmarks.
 #
-# This target runs a benchmark.
-
+# @example
+# make run
+#/
 run: $(c_targets)
 	$(QUIET) ./$<
 
 .PHONY: run
 
-
-# Perform clean-up.
+#/
+# Removes generated files.
 #
-# This target removes generated files.
-
+# @example
+# make clean
+#/
 clean:
 	$(QUIET) -rm -f *.o *.out
 
