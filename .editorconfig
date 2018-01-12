@@ -16,9 +16,7 @@
 # limitations under the License.
 #/
 
-# [EditorConfig][1] configuration file.
-#
-# [1]: http://EditorConfig.org
+# EditorConfig configuration file (see <http://editorconfig.org/>).
 
 # Indicate that this file is a root-level configuration file:
 root = true
