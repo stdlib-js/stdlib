@@ -27,7 +27,7 @@ function license( pkg ) {
 			debug( 'Package follows npm convention: %s.', pkg.license );
 			return [ pkg.license ];
 		}
-		// Neither npm or CommonJS compliant, but exists in the wild:
+		// Neither npm nor CommonJS compliant, but exists in the wild:
 		if ( hasOwnProp( pkg.license, 'type' ) ) {
 			debug( 'Found a `type` field: %s.', pkg.license.type );
 			return [ pkg.license.type ];
@@ -56,7 +56,7 @@ function license( pkg ) {
 				return out;
 			}
 		}
-		// Neither npm or CommonJS compliant, but exists in the wild:
+		// Neither npm nor CommonJS compliant, but exists in the wild:
 		if ( hasOwnProp( pkg.licenses, 'type' ) ) {
 			debug( 'Found a `type` field: %s.', pkg.licenses.type );
 			return [ pkg.licenses.type ];
