@@ -70,39 +70,55 @@ endif
 cxx_targets := benchmark.out
 
 
-# TARGETS #
+# RULES #
 
-# Default target.
+#/
+# Compiles C++ source files.
 #
-# This target is the default target.
-
+# @param {string} BOOST - Boost include directory
+# @param {string} [CXX_COMPILER] - C++ compiler
+# @param {string} [CXXFLAGS] - C++ compiler flags
+# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+#
+# @example
+# make
+#
+# @example
+# make all
+#/
 all: $(cxx_targets)
 
 .PHONY: all
 
-
-# Compile C++ source.
+#/
+# Compiles C++ source files.
 #
-# This target compiles C++ source files.
-
+# @private
+# @param {string} CXX - C++ compiler
+# @param {string} CXXFLAGS - C++ compiler flags
+# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+# @param {string} BOOST - Boost include directory
+#/
 $(cxx_targets): %.out: %.cpp $(BOOST)
 	$(QUIET) $(CXX) $(CXXFLAGS) $(fPIC) -I $(BOOST) -o $@ $< -lm
 
-
-# Run a benchmark.
+#/
+# Runs compiled benchmarks.
 #
-# This target runs a benchmark.
-
+# @example
+# make run
+#/
 run: $(cxx_targets)
 	$(QUIET) ./$<
 
 .PHONY: run
 
-
-# Perform clean-up.
+#/
+# Removes generated files.
 #
-# This target removes generated files.
-
+# @example
+# make clean
+#/
 clean:
 	$(QUIET) -rm -f *.o *.out
 
