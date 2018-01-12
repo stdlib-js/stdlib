@@ -1,12 +1,12 @@
 # Workshops
 
-> Workshop recipes.
+> Workshop commands.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for running project workshops.
+This directory contains [`make`][make] rules for running project workshops.
 
 </section>
 
