@@ -78,39 +78,57 @@ SOURCE_FILES ?=
 f_targets := TODO.out
 
 
-# TARGETS #
+# RULES #
 
-# Default target.
+#/
+# Compiles Fortran source files.
 #
-# This target is the default target.
-
+# @param {string} SOURCE_FILES - list of Fortran source files
+# @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
+# @param {string} [FORTRAN_COMPILER] - Fortran compiler
+# @param {string} [FFLAGS] - Fortran compiler flags
+# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+#
+# @example
+# make
+#
+# @example
+# make all
+#/
 all: $(f_targets)
 
 .PHONY: all
 
-
-# Compile Fortran source.
+#/
+# Compiles Fortran source files.
 #
-# This target compiles Fortran source files.
-
+# @private
+# @param {string} SOURCE_FILES - list of Fortran source files
+# @param {(string|void)} INCLUDE - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
+# @param {string} FC - Fortran compiler
+# @param {string} FFLAGS - Fortran compiler flags
+# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+#/
 $(f_targets): %.out: %.f
 	$(QUIET) $(FC) $(FFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $<
 
-
-# Run a benchmark.
+#/
+# Runs compiled benchmarks.
 #
-# This target runs a benchmark.
-
+# @example
+# make run
+#/
 run: $(f_targets)
 	$(QUIET) ./$<
 
 .PHONY: run
 
-
-# Perform clean-up.
+#/
+# Removes generated files.
 #
-# This target removes generated files.
-
+# @example
+# make clean
+#/
 clean:
 	$(QUIET) -rm -f *.o *.out
 
