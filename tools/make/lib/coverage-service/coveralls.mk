@@ -33,7 +33,7 @@ ifdef COVERALLS_REPO_TOKEN
 endif
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Sends coverage statistics to [Coveralls][1].

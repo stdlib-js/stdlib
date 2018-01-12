@@ -17,7 +17,7 @@ UPDATE_DIST_README_BROWSER_BUNDLE_STATS ?= $(NODE) $(TOOLS_PKGS_DIR)/bundle/scri
 UPDATE_DIST_README_BROWSER_BUNDLE_STATS_FLAGS ?=
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Generates distributable browser bundles.

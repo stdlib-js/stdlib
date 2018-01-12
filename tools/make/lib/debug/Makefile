@@ -8,7 +8,7 @@ FIND_MAKEFILES_FLAGS ?= \
 	-name '*.mk'
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Prints the runtime value of a `Makefile` variable.

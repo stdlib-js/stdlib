@@ -4,7 +4,7 @@
 include $(TOOLS_MAKE_LIB_DIR)/complexity/javascript.mk
 
 
-# TARGETS #
+# RULES #
 
 # Generate a complexity report.
 #

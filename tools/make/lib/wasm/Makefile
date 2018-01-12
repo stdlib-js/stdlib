@@ -15,7 +15,7 @@ pkgs_wasm_list_wasm_flags := "--pattern $(pkgs_wasm_pattern)"
 compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Compiles WebAssembly artifacts.

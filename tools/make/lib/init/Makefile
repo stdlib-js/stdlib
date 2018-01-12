@@ -5,7 +5,7 @@ include $(TOOLS_MAKE_LIB_DIR)/init/eslint.mk
 include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 
 
-# TARGETS #
+# RULES #
 
 # Perform initialization tasks.
 #

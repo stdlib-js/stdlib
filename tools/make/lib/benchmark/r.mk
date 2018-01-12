@@ -1,5 +1,5 @@
 
-# TARGETS #
+# RULES #
 
 #/
 # Runs R benchmarks consecutively.

@@ -17,7 +17,7 @@ UPDATE_CONTRIBUTORS_FLAGS ?=
 UPDATE_CONTRIBUTORS_OUT ?= $(ROOT_DIR)/CONTRIBUTORS
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Lists contributors to the project repository.

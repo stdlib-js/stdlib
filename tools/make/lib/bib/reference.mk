@@ -19,7 +19,7 @@ CITATION_REFERENCE_FLAGS ?= \
 	--csl $(CITATION_REFERENCE_CSL)
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Prints a Markdown formatted reference corresponding to a provided citation identifier.

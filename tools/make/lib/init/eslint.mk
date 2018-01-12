@@ -20,7 +20,7 @@ BROWSERIFY_STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_FLAGS ?= \
 	--standalone $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_NAME)
 
 
-# TARGETS #
+# RULES #
 
 # Initialize custom ESLint rules.
 #

@@ -14,7 +14,7 @@ include $(TOOLS_MAKE_LIB_DIR)/coverage-service/codecov.mk
 include $(TOOLS_MAKE_LIB_DIR)/coverage-service/coveralls.mk
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Sends coverage statistics to a hosted code coverage service.

@@ -1,5 +1,5 @@
 
-# TARGETS #
+# RULES #
 
 # Run the install sequence.
 #

@@ -12,7 +12,7 @@ ifeq ($(JAVASCRIPT_COMPLEXITY_TOOL), plato)
 endif
 
 
-# TARGETS #
+# RULES #
 
 # Analyze code complexity.
 #

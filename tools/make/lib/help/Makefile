@@ -11,7 +11,7 @@ FIND_MAKEFILES_FLAGS ?= \
 	-name '*.mk'
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Prints a `Makefile` help message which includes a list of common commands.

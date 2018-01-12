@@ -11,7 +11,7 @@ GIT_HOOKS ?= $(shell find $(GIT_HOOKS_DIR) -type f | xargs -n 1 basename)
 GIT_HOOKS_OUT ?= $(ROOT_DIR)/.git/hooks
 
 
-# TARGETS #
+# RULES #
 
 # Install git hooks.
 #

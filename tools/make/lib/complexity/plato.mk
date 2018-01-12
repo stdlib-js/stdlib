@@ -27,7 +27,7 @@ JAVASCRIPT_COMPLEXITY_FLAGS ?= \
 	--title $(PLATO_REPORT_TITLE)
 
 
-# TARGETS #
+# RULES #
 
 # View a complexity report.
 #

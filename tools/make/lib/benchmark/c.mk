@@ -5,7 +5,7 @@
 compile_c_benchmark_bin := $(TOOLS_DIR)/scripts/compile_c_benchmark
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Runs C benchmarks consecutively.

@@ -26,7 +26,7 @@ ifdef COVERAGE_NAME
 endif
 
 
-# TARGETS #
+# RULES #
 
 #/
 # Sends coverage statistics to [Codecov][1].
