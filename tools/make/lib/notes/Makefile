@@ -1,9 +1,6 @@
 
 # VARIABLES #
 
-# Define keywords identifying annotations:
-KEYWORDS ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
-
 # Define the command for finding notes:
 FIND_NOTES ?= grep
 
@@ -16,10 +13,18 @@ FIND_NOTES_DIR ?= $(ROOT_DIR)
 
 # RULES #
 
-# Enumerate all annotations.
+#/
+# Searches for annotated comments.
 #
-# This target searches for annotated comments which indicate work that remains to be completed. Annotated comments will be output, along with the filename and line number where they appear.
-
+# ## Notes
+#
+# -   Annotated comments will be output along with their associated filename and line number.
+#
+# @param {string} KEYWORDS - pipe-delimited list of keywords identify annotations
+#
+# @example
+# make notes
+#/
 notes:
 	$(QUIET) $(FIND_NOTES) $(FIND_NOTES_FLAGS) $(KEYWORDS) $(FIND_NOTES_DIR) \
 		--exclude-dir "$(NODE_MODULES)/*" \
