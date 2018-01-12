@@ -72,39 +72,53 @@ endif
 f_targets := benchmark.out
 
 
-# TARGETS #
+# RULES #
 
-# Default target.
+#/
+# Compiles Fortran source files.
 #
-# This target is the default target.
-
+# @param {string} [FORTRAN_COMPILER] - Fortran compiler
+# @param {string} [FFLAGS] - Fortran compiler flags
+# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+#
+# @example
+# make
+#
+# @example
+# make all
+#/
 all: $(f_targets)
 
 .PHONY: all
 
-
-# Compile Fortran source.
+#/
+# Compiles Fortran source files.
 #
-# This target compiles Fortran source files.
-
+# @private
+# @param {string} FC - Fortran compiler
+# @param {string} FFLAGS - Fortran compiler flags
+# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+#/
 $(f_targets): %.out: %.f
 	$(QUIET) $(FC) $(FFLAGS) $(fPIC) -o $@ $<
 
-
-# Run a benchmark.
+#/
+# Runs compiled benchmarks.
 #
-# This target runs a benchmark.
-
+# @example
+# make run
+#/
 run: $(f_targets)
 	$(QUIET) ./$<
 
 .PHONY: run
 
-
-# Perform clean-up.
+#/
+# Removes generated files.
 #
-# This target removes generated files.
-
+# @example
+# make clean
+#/
 clean:
 	$(QUIET) -rm -f *.o *.out
 
