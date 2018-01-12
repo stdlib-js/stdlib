@@ -14,7 +14,7 @@ FIND_MAKEFILES_FLAGS ?= \
 # TARGETS #
 
 #/
-# Prints a `Makefile` help message.
+# Prints a `Makefile` help message which includes a list of common commands.
 #
 # @example
 # make help
