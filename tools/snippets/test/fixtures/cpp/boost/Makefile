@@ -75,7 +75,7 @@ cxx_targets := runner.out
 #/
 # Compiles C++ source files.
 #
-# @param {string} BOOST - Boost source path
+# @param {string} BOOST - Boost include directory
 # @param {string} [CXX_COMPILER] - C++ compiler
 # @param {string} [CXXFLAGS] - C++ compiler flags
 # @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
@@ -97,7 +97,7 @@ all: $(cxx_targets)
 # @param {string} CXX - C++ compiler
 # @param {string} CXXFLAGS - C++ compiler flags
 # @param {(string|void)} fPIC - flag indicating whether to generate position independent code
-# @param {string} BOOST - Boost source path
+# @param {string} BOOST - Boost include directory
 #/
 $(cxx_targets): %.out: %.cpp $(BOOST)
 	$(QUIET) $(CXX) $(CXXFLAGS) $(fPIC) -I $(BOOST) -o $@ $< -lm
