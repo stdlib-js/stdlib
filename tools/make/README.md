@@ -515,7 +515,7 @@ To enable [bash completion][bash-completion] of Makefile targets, add
 complete -W "\`find . ! \( -path \"*/node_modules/*\" -prune \) -and \( -name 'Makefile' -o -name '*.mk' \) | xargs grep '^.PHONY: ' | awk '{print $2}'\`" make
 ```
 
-to your `~/.bash_profile` or `~/.bashrc`.  Note that completion is **not** exhaustive, as the above only includes targets which have been **explicitly** declared phony targets
+to your `~/.bash_profile` or `~/.bashrc`. Note that completion is **not** exhaustive, as the above only includes targets which have been **explicitly** declared phony targets
 
 ```text
 .PHONY: beep-boop
