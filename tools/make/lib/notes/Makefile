@@ -14,7 +14,7 @@ FIND_NOTES_FLAGS ?= -Ern
 FIND_NOTES_DIR ?= $(ROOT_DIR)
 
 
-# TARGETS #
+# RULES #
 
 # Enumerate all annotations.
 #
