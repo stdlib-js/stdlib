@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
-
-#/
+#
 # @license Apache-2.0
 #
 # Copyright (c) 2017 The Stdlib Authors.
@@ -16,7 +15,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#/
 
 # Set the precision to 16 digits:
 options( digits = 16 );
