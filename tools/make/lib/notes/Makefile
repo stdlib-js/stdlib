@@ -44,16 +44,21 @@ FIND_NOTES_DIR ?= $(ROOT_DIR)
 #/
 notes:
 	$(QUIET) $(FIND_NOTES) $(FIND_NOTES_FLAGS) $(KEYWORDS) $(FIND_NOTES_DIR) \
-		--exclude-dir "$(NODE_MODULES)/*" \
-		--exclude-dir "$(BUILD_DIR)/*" \
-		--exclude-dir "$(DIST_DIR)/*" \
-		--exclude-dir "$(REPORTS_DIR)/*" \
-		--exclude-dir "$(DEPS_TMP_DIR)/*" \
-		--exclude-dir "$(DEPS_BUILD_DIR)/*" \
-		--exclude-dir "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-		--exclude "$(this_file)" \
+		--exclude-dir "$(NODE_MODULES)" \
+		--exclude-dir "$(BUILD_DIR)" \
+		--exclude-dir "$(DIST_DIR)" \
+		--exclude-dir "$(REPORTS_DIR)" \
+		--exclude-dir "$(DEPS_TMP_DIR)" \
+		--exclude-dir "$(DEPS_BUILD_DIR)" \
+		--exclude-dir "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)" \
+		--exclude-dir "$(TOOLS_DIR)/snippets" \
 		--exclude "$(ROOT_DIR)/.*" \
 		--exclude "**/$(BUILD_FOLDER)/*" \
+		--exclude "**/$(TMP_FOLDER)/*" \
+		--exclude "**/$(DATA_FOLDER)/*" \
+		--exclude "**/datasets/**/data.js" \
+		--exclude "*.min.js" \
+		--exclude "$(this_file)" \
 		--exclude TODO.md
 
 .PHONY: notes
