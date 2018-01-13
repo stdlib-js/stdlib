@@ -142,7 +142,7 @@ var FOPTS = {
 };
 
 // Snippet template:
-var TEMPLATE = readFileSync( join( __dirname, 'template.txt' ), FOPTS );
+var TEMPLATE = readFileSync( join( __dirname, 'snippet_template.txt' ), FOPTS );
 
 // Output directory:
 var OUT_DIR = resolve( __dirname, '..', 'snippets' );
