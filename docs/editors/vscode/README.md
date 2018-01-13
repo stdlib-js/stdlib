@@ -39,25 +39,25 @@ $ code .
 
 -   [**Fortran**][vscode-fortran]: package which provides syntax highlighting and snippets for [Fortran][fortran]. Once installed, configure [Visual Studio Code][vscode] to always open files having the file extension `*.f` as `Fortran - Modern` in your user or workspace settings.
 
-        ```text
-               ...
-                "files.associations": {
-                    "*.f": "fortran-modern"
-                }
-                ...
-        ```
+    ```text
+            ...
+            "files.associations": {
+                "*.f": "fortran-modern"
+            }
+            ...
+    ```
 
 -   [**Code Spell Checker**][vscode-spell-checker]: A simple source code spell checker. See the [official documentation][vscode-spell-checker-readme] for configuration options.
 
 -   [**ESLint**][vscode-eslint]: extension to integrate [eslint][eslint] into [Visual Studio Code][vscode]. Once installed, you need to configure the extension to use the project [ESLint][eslint] configuration files in your workspace settings.
 
-        ```text
-               ...
-                "eslint.options": {
-                    "configFile": "etc/eslint/.eslintrc.js"
-                },
-                ...
-        ```
+    ```text
+            ...
+            "eslint.options": {
+                "configFile": "etc/eslint/.eslintrc.js"
+            },
+            ...
+    ```
 
 -   [**Path Intellisense**][vscode-path-intellisense]: extension that autocompletes filenames.
 
@@ -65,46 +65,46 @@ $ code .
 
 -   [**TODO Highlight**][vscode-todo-highlight]: extension which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you may configure the extension to your liking in your user or workspace settings, e.g. by specifying the list of keywords to be highlighted.
 
-        ```text
-                ...
-                "todohighlight.keywords": [
-                    {
-                        "text": "FIXME:",
-                        "color": "white",
-                        "backgroundColor": "red",
-                        "isWholeLine": true
-                    },
-                    {
-                        "text": "HACK:",
-                        "color": "darkgreen",
-                        "isWholeLine": true,
-                    },
-                    {
-                        "text": "NOTE:",
-                        "color": "darkgreen",
-                        "backgroundColor": "rgba(0,0,0,.2)",
-                        "overviewRulerColor": "grey",
-                        "isWholeLine": true
-                    },
-                    {
-                        "text": "OPTIMIZE:",
-                        "isWholeLine": true
-                    },
-                    {
-                        "text": "TODO:",
-                        "color": "darkred",
-                        "backgroundColor": "rgba(0,0,0,.2)", 
-                        "isWholeLine": true
-                    },
-                    {
-                        "text": "WARNING:",
-                        "color": "black",
-                        "backgroundColor": "orange",
-                        "isWholeLine": true
-                    }
-                ]
-                ...
-        ```
+    ```text
+            ...
+            "todohighlight.keywords": [
+                {
+                    "text": "FIXME:",
+                    "color": "white",
+                    "backgroundColor": "red",
+                    "isWholeLine": true
+                },
+                {
+                    "text": "HACK:",
+                    "color": "darkgreen",
+                    "isWholeLine": true,
+                },
+                {
+                    "text": "NOTE:",
+                    "color": "darkgreen",
+                    "backgroundColor": "rgba(0,0,0,.2)",
+                    "overviewRulerColor": "grey",
+                    "isWholeLine": true
+                },
+                {
+                    "text": "OPTIMIZE:",
+                    "isWholeLine": true
+                },
+                {
+                    "text": "TODO:",
+                    "color": "darkred",
+                    "backgroundColor": "rgba(0,0,0,.2)", 
+                    "isWholeLine": true
+                },
+                {
+                    "text": "WARNING:",
+                    "color": "black",
+                    "backgroundColor": "orange",
+                    "isWholeLine": true
+                }
+            ]
+            ...
+    ```
 
 <section class="links">
 
