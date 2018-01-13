@@ -39,6 +39,8 @@ $ subl .
 
 -   [**Julia**][sublime-text-julia]: package which provides syntax highlighting for [Julia][julia].
 
+-   [**AWK**][sublime-text-awk]: package which provides syntax highlighting for [AWK][awk].
+
 -   [**Fortran**][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
 
 -   [**SublimeLinter3**][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
@@ -108,6 +110,8 @@ $ subl .
 
 [sublime-text-julia]: https://github.com/JuliaEditorSupport/Julia-sublime
 
+[sublime-text-awk]: https://github.com/JohnNilsson/awk-sublime
+
 [sublime-text-fortran]: https://github.com/315234/SublimeFortran
 
 [eslint]: http://eslint.org/
@@ -117,6 +121,8 @@ $ subl .
 [editorconfig]: http://editorconfig.org/
 
 [julia]: https://julialang.org/
+
+[awk]: https://en.wikipedia.org/wiki/AWK
 
 [fortran]: https://en.wikipedia.org/wiki/Fortran
 
