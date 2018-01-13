@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# A git hook called by `git merge`, which afters when a `git pull` is performed on a local repository.
+# A git hook called by `git merge`, which runs when a `git pull` is performed on a local repository.
 #
 # This hook is called with the following arguments:
 #
