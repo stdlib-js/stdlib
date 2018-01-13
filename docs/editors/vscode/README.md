@@ -31,7 +31,11 @@ $ code .
 
 -   [**Julia**][vscode-julia]: package which provides support for [Julia][julia], including syntax highlighting, snippets, and code completion.
 
+-   [**Python**][vscode-python]: package which provides rich support for [Python][python], including syntax highlighting, snippets, and code completion, among other features.
+
 -   [**AWK**][vscode-awk]: package which provides syntax highlighting for [AWK][awk].
+
+-   [**C/C++**][vscode-cpptools]: official package providing language support for C/C++ to [Visual Studio Code][vscode]. Features include IntelliSense, debugging, and code browsing.
 
 -   [**Fortran**][vscode-fortran]: package which provides syntax highlighting and snippets for [Fortran][fortran]. Once installed, configure [Visual Studio Code][vscode] to always open files having the file extension `*.f` as `Fortran - Modern` in your user or workspace settings.
 
@@ -56,6 +60,8 @@ $ code .
         ```
 
 -   [**Path Intellisense**][vscode-path-intellisense]: extension that autocompletes filenames.
+
+-   [**Runner**][vscode-runner]: package allowing one to run various scripts from the editor.
 
 -   [**TODO Highlight**][vscode-todo-highlight]: extension which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you may configure the extension to your liking in your user or workspace settings, e.g. by specifying the list of keywords to be highlighted.
 
@@ -120,17 +126,25 @@ $ code .
 
 [vscode-json-tools]: https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools#overview
 
+[vscode-python]: https://github.com/Microsoft/vscode-python
+
 [vscode-julia]: https://github.com/JuliaEditorSupport/julia-vscode
 
 [vscode-awk]: https://github.com/luggage66/vscode-awk
 
+[vscode-cpptools]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+
 [vscode-fortran]: https://github.com/Gimly/vscode-fortran
+
+[vscode-runner]: https://github.com/mattn/vscode-runner
 
 [eslint]: http://eslint.org/
 
 [json]: http://www.json.org/
 
 [editorconfig]: http://editorconfig.org/
+
+[python]: https://www.python.org/
 
 [julia]: https://julialang.org/
 
