@@ -55,7 +55,7 @@ $ code .
             ...
             "eslint.options": {
                 "configFile": "etc/eslint/.eslintrc.js"
-            },
+            }
             ...
     ```
 
