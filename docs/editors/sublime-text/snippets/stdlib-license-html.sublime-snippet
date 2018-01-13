@@ -24,7 +24,7 @@ limitations under the License.
     <tabTrigger>stdlib.license</tabTrigger>
 
     <!-- Scope the tab trigger will be active in -->
-    <scope>source.html</scope>
+    <scope>text.html</scope>
 
     <!-- Description to show in the menu -->
     <description>Snippet: HTML license header</description>

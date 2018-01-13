@@ -78,7 +78,7 @@ var LANGS = {
 	},
 	'html': {
 		'trigger': 'stdlib.license',
-		'scope': 'source.html',
+		'scope': 'text.html',
 		'desc': 'Snippet: HTML license header'
 	},
 	'ini': {
