@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[{{SNIPPET}}]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>{{TAB_TRIGGER}}</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>{{SCOPE}}</scope>
+
+    <!-- Description to show in the menu -->
+    <description>{{DESCRIPTION}}</description>
+</snippet>
