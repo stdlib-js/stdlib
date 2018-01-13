@@ -44,92 +44,92 @@ var LANGS = {
 	'awk': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.awk',
-		'desc': 'Snippet: AWK license header'
+		'desc': 'AWK license header'
 	},
 	'c': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.c',
-		'desc': 'Snippet: C license header'
+		'desc': 'C license header'
 	},
 	'cpp': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.c++',
-		'desc': 'Snippet: C++ license header'
+		'desc': 'C++ license header'
 	},
 	'css': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.css',
-		'desc': 'Snippet: CSS license header'
+		'desc': 'CSS license header'
 	},
 	'f': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.modern-fortran',
-		'desc': 'Snippet: Fortran license header (modern)'
+		'desc': 'Fortran license header (modern)'
 	},
 	'gyp': {
 		'trigger': 'stdlib.license.gyp',
 		'scope': '', // gyp
-		'desc': 'Snippet: GYP license header'
+		'desc': 'GYP license header'
 	},
 	'gypi': {
 		'trigger': 'stdlib.license.gypi',
 		'scope': '', // gyp
-		'desc': 'Snippet: GYP include license header'
+		'desc': 'GYP include license header'
 	},
 	'html': {
 		'trigger': 'stdlib.license',
 		'scope': 'text.html',
-		'desc': 'Snippet: HTML license header'
+		'desc': 'HTML license header'
 	},
 	'ini': {
 		'trigger': 'stdlib.license.ini',
 		'scope': '', // ini
-		'desc': 'Snippet: INI license header'
+		'desc': 'INI license header'
 	},
 	'jl': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.julia',
-		'desc': 'Snippet: Julia license header'
+		'desc': 'Julia license header'
 	},
 	'js': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.js',
-		'desc': 'Snippet: JavaScript license header'
+		'desc': 'JavaScript license header'
 	},
 	'md': {
 		'trigger': 'stdlib.license',
 		'scope': 'text.html.markdown',
-		'desc': 'Snippet: Markdown license header'
+		'desc': 'Markdown license header'
 	},
 	'mk': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.makefile',
-		'desc': 'Snippet: Makefile license header'
+		'desc': 'Makefile license header'
 	},
 	'py': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.python',
-		'desc': 'Snippet: Python license header'
+		'desc': 'Python license header'
 	},
 	'r': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.r',
-		'desc': 'Snippet: R license header'
+		'desc': 'R license header'
 	},
 	'sh': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.shell',
-		'desc': 'Snippet: Shell script license header'
+		'desc': 'Shell script license header'
 	},
 	'yml': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.yaml',
-		'desc': 'Snippet: YAML license header'
+		'desc': 'YAML license header'
 	},
 	'default': {
 		'trigger': 'stdlib.license',
 		'scope': '',
-		'desc': 'Snippet: default license header'
+		'desc': 'Default license header'
 	}
 };
 

@@ -25,5 +25,5 @@
     <scope>source.c</scope>
 
     <!-- Description to show in the menu -->
-    <description>Snippet: C license header</description>
+    <description>C license header</description>
 </snippet>

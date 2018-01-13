@@ -25,5 +25,5 @@
     <scope>source.makefile</scope>
 
     <!-- Description to show in the menu -->
-    <description>Snippet: Makefile license header</description>
+    <description>Makefile license header</description>
 </snippet>

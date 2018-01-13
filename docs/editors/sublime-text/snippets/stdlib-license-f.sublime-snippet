@@ -25,5 +25,5 @@
     <scope>source.modern-fortran</scope>
 
     <!-- Description to show in the menu -->
-    <description>Snippet: Fortran license header (modern)</description>
+    <description>Fortran license header (modern)</description>
 </snippet>

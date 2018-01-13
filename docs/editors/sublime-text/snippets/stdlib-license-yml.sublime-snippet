@@ -25,5 +25,5 @@
     <scope>source.yaml</scope>
 
     <!-- Description to show in the menu -->
-    <description>Snippet: YAML license header</description>
+    <description>YAML license header</description>
 </snippet>
