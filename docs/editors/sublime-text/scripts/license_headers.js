@@ -145,7 +145,7 @@ var FOPTS = {
 var TEMPLATE = readFileSync( join( __dirname, 'template.txt' ), FOPTS );
 
 // Output directory:
-var OUT_DIR = resolve( __dirname, '..' );
+var OUT_DIR = resolve( __dirname, '..', 'snippets' );
 
 // License header options:
 var OPTS = {
