@@ -8,7 +8,7 @@
 
 Pre-built binaries are available for download on the Visual Studio Code [homepage][vscode].
 
-To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]. 
+To use [Visual Studio Code][vscode] as a command-line utility, users on MacOS have to run a command to add the [Visual Studio Code][vscode] executable to the `PATH` environment variable (see the official [documentation][vscode-macos-setup]). 
 
 To test the command-line utility,
 
