@@ -2981,6 +2981,18 @@
       "fortran"
     ]
   },
+  "https://github.com/JohnNilsson/awk-sublime": {
+    "id": "sublime-text-awk",
+    "description": "GitHub repository for a Sublime Text plugin which provides syntax highlighting for AWK.",
+    "short_url": "",
+    "keywords": [
+      "awk",
+      " sublime",
+      " text",
+      " editor",
+      " plugin"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
