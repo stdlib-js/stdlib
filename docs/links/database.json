@@ -2993,6 +2993,18 @@
       " plugin"
     ]
   },
+  "https://github.com/JuliaEditorSupport/Julia-sublime": {
+    "id": "sublime-text-julia",
+    "description": "GitHub repository for a Sublime Text plugin which provides syntax highlighting for Julia.",
+    "short_url": "",
+    "keywords": [
+      "julia",
+      " sublime",
+      " text",
+      " editor",
+      " plugin"
+    ]
+  },
   "https://github.com/Matt-Esch/virtual-dom": {
     "id": "virtual-dom",
     "description": "A Virtual DOM and diffing algorithm. The official repository of virtual-dom.",
