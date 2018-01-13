@@ -45,7 +45,7 @@ $ subl .
 
 -   [**SublimeLinter3**][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
-    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files.
+    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files
 
         ```text
                 ...
@@ -61,6 +61,21 @@ $ subl .
                         "excludes": []
                     }
                 ...
+        ```
+
+        and to search the top-level `node_modules` directory for locally installed linter executables. For example, on MacOS,
+
+        ```text
+                ...
+                "paths": {
+                    "linux": [],
+                    "osx": [
+                        "/path/to/stdlib/node_modules/.bin/"
+                    ],
+                    "windows": []
+                }
+                ...
+        },
         ```
 
     -   [**SublimeLinter-annotations**][sublime-text-sublimelinter-annotations]: plugin which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to mark project annotations.
