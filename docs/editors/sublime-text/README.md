@@ -31,6 +31,8 @@ $ subl .
 
 -   [**Package Control**][sublime-text-package-control]: package manager which helps in finding, installing, and keeping installed packages up-to-date. This **should** be installed prior to installing any of the packages subsequently listed here.
 
+-   [**Git**][sublime-text-git]: package which provides [Git][git] integration.
+
 -   [**EditorConfig**][sublime-text-editorconfig]: package for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
 
 -   [**Pretty JSON**][sublime-text-pretty-json]: package for pretty printing and minifying [JSON][json].
@@ -109,6 +111,8 @@ $ subl .
 
 [sublime-text-package-control]: https://packagecontrol.io
 
+[sublime-text-git]: https://github.com/kemayo/sublime-text-git
+
 [sublime-text-sublimelinter3]: https://github.com/SublimeLinter/SublimeLinter3
 
 [sublime-text-sublimelinter-eslint]: https://github.com/roadhump/SublimeLinter-eslint
@@ -128,6 +132,8 @@ $ subl .
 [sublime-text-awk]: https://github.com/JohnNilsson/awk-sublime
 
 [sublime-text-fortran]: https://github.com/315234/SublimeFortran
+
+[git]: https://git-scm.com/
 
 [eslint]: http://eslint.org/
 
