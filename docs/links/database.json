@@ -3135,6 +3135,18 @@
       "browser"
     ]
   },
+  "https://github.com/kemayo/sublime-text-git": {
+    "id": "sublime-text-git",
+    "description": "GitHub repository for a Sublime Text plugin which provides Git integration.",
+    "short_url": "",
+    "keywords": [
+      "git",
+      " sublime",
+      " text",
+      " editor",
+      " plugin"
+    ]
+  },
   "https://github.com/pypa/pip": {
     "id": "pip",
     "description": "A Python package manager. The PyPA recommended tool for installing Python packages.",
