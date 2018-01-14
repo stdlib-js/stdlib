@@ -34,7 +34,7 @@ var licenseHeader = require( '@stdlib/_tools/licenses/header' );
 
 // VARIABLES //
 
-var debug = logger( 'license-headers' );
+var debug = logger( 'sublime-license-header-snippets' );
 
 // SPDX license identifier:
 var SPDX = 'Apache-2.0';
