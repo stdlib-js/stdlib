@@ -421,31 +421,6 @@ plugins.push([
 ]);
 
 /**
-* Never allow shortcut reference images.
-*
-* @see [no-shortcut-reference-image]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shortcut-reference-image}
-*
-* @example
-* <!-- Bad -->
-*
-* ![foo]
-*
-* [foo]: https://example.com/1.png
-*
-* @example
-* <!-- Good -->
-*
-* ![foo][]
-*
-* [foo]: https://example.com/1.png
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-shortcut-reference-image' ),
-	[ 'error' ]
-]);
-
-/**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
 * @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
