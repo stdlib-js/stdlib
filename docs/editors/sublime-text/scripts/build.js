@@ -22,3 +22,6 @@
 
 // Generate license header snippets:
 require( './license_header_snippets.js' );
+
+// Generate completions files:
+require( './sublime_completions.js' );
