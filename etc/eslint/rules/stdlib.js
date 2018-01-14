@@ -1416,6 +1416,52 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 
 /**
+* Prevent shortcut reference images.
+*
+* @name jsdoc-no-shortcut-reference-image
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep ![boop].
+* *
+* * [boop]: http://foo.bar/baz.png
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep ![boop][].
+* *
+* * [boop]: http://foo.bar/baz.png
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
+
+/**
 * Prevent shortcut reference links.
 *
 * @name jsdoc-no-shortcut-reference-link
