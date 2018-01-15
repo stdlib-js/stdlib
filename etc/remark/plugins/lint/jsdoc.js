@@ -322,22 +322,6 @@ plugins.push([
 ]);
 
 /**
-* Do not allow punctuation at the end of a heading.
-*
-* @see [no-heading-punctuation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-punctuation}
-*
-* @example
-* <!-- Bad -->
-*
-* ## Beep.
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-heading-punctuation' ),
-	[ 'error', '.,;:!?' ]
-]);
-
-/**
 * Require blank lines between block nodes.
 *
 * @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
