@@ -1788,6 +1788,51 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 
 /**
+* Require `*` be used as the strong marker.
+*
+* @name jsdoc-strong-marker
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '_' ]
+* @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a __number__.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a **number**.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-strong-marker' ] = [ 'error', '*' ];
+
+/**
 * Require table pipes to be aligned.
 *
 * @name jsdoc-table-pipe-alignment
