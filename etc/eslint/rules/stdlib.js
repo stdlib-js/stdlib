@@ -1226,6 +1226,52 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 
 /**
+* Prevent HTML nodes from being used.
+*
+* @name jsdoc-no-html
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep boop.
+* *
+* * <h2> References </h2>
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * ## References
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-html' ] = 'off';
+
+/**
 * Prevent inline padding of markers.
 *
 * @name jsdoc-no-inline-padding
