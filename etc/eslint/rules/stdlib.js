@@ -1478,9 +1478,9 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * // Bad...
 *
 * /**
-* * Beep [boop](boop).
+* * Beep [boop](baz).
 * *
-* * [boop]: http://foo.bar/baz
+* * [baz]: http://foo.bar/baz
 * *
 * * @return {string} a value
 * *
@@ -1496,9 +1496,9 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * // Good...
 *
 * /**
-* * Beep [boop][boop].
+* * Beep [boop][baz].
 * *
-* * [boop]: http://foo.bar/baz
+* * [baz]: http://foo.bar/baz
 * *
 * * @return {string} a value
 * *
