@@ -23,21 +23,21 @@ $ cd ./path/to/project
 $ code .
 ```
 
-## Packages
+## Extensions
 
--   [**EditorConfig**][vscode-editorconfig]: package for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
+-   [**EditorConfig**][vscode-editorconfig]: extension for using [EditorConfig][editorconfig], which helps define and maintain consistent coding styles between different editors and IDEs.
 
--   [**JSON Tools**][vscode-json-tools]: package for pretty printing and minifying [JSON][json].
+-   [**JSON Tools**][vscode-json-tools]: extension for pretty printing and minifying [JSON][json].
 
--   [**Julia**][vscode-julia]: package which provides support for [Julia][julia], including syntax highlighting, snippets, and code completion.
+-   [**Julia**][vscode-julia]: extension which provides support for [Julia][julia], including syntax highlighting, snippets, and code completion.
 
--   [**Python**][vscode-python]: package which provides rich support for [Python][python], including syntax highlighting, snippets, and code completion, among other features.
+-   [**Python**][vscode-python]: extension which provides rich support for [Python][python], including syntax highlighting, snippets, and code completion, among other features.
 
--   [**AWK**][vscode-awk]: package which provides syntax highlighting for [AWK][awk].
+-   [**AWK**][vscode-awk]: extension which provides syntax highlighting for [AWK][awk].
 
--   [**C/C++**][vscode-cpptools]: official package providing language support for C/C++ to [Visual Studio Code][vscode]. Features include IntelliSense, debugging, and code browsing.
+-   [**C/C++**][vscode-cpptools]: official extension providing language support for C/C++ to [Visual Studio Code][vscode]. Features include IntelliSense, debugging, and code browsing.
 
--   [**Fortran**][vscode-fortran]: package which provides syntax highlighting and snippets for [Fortran][fortran]. Once installed, configure [Visual Studio Code][vscode] to always open files having the file extension `*.f` as `Fortran - Modern` in your user or workspace settings.
+-   [**Fortran**][vscode-fortran]: extension which provides syntax highlighting and snippets for [Fortran][fortran]. Once installed, configure [Visual Studio Code][vscode] to always open files having the file extension `*.f` as `Fortran - Modern` in your user or workspace settings.
 
     ```text
             ...
@@ -61,7 +61,7 @@ $ code .
 
 -   [**Path Intellisense**][vscode-path-intellisense]: extension that autocompletes filenames.
 
--   [**Runner**][vscode-runner]: package allowing one to run various scripts from the editor.
+-   [**Runner**][vscode-runner]: extension allowing one to run various scripts from the editor.
 
 -   [**TODO Highlight**][vscode-todo-highlight]: extension which marks annotations such as `TODO`, `FIXME`, etc. Once installed, you may configure the extension to your liking in your user or workspace settings, e.g. by specifying the list of keywords to be highlighted.
 

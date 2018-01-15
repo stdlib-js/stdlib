@@ -1073,6 +1073,57 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 
 /**
+* Prevent headings from ending with chosen characters.
+*
+* @name jsdoc-no-heading-punctuation
+* @memberof rules
+* @type {string}
+* @default [ 'error', '.,;:!?' ]
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop!
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
+
+/**
 * Prevent indentation of heading content.
 *
 * @name jsdoc-no-heading-content-indent
@@ -1224,6 +1275,52 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
+
+/**
+* Prevent HTML nodes from being used.
+*
+* @name jsdoc-no-html
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep boop.
+* *
+* * <h2> References </h2>
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * ## References
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-html' ] = 'off';
 
 /**
 * Prevent inline padding of markers.
@@ -1381,9 +1478,9 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * // Bad...
 *
 * /**
-* * Beep [boop](boop).
+* * Beep [boop](baz).
 * *
-* * [boop]: http://foo.bar/baz
+* * [baz]: http://foo.bar/baz
 * *
 * * @return {string} a value
 * *
@@ -1399,9 +1496,9 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * // Good...
 *
 * /**
-* * Beep [boop][boop].
+* * Beep [boop][baz].
 * *
-* * [boop]: http://foo.bar/baz
+* * [baz]: http://foo.bar/baz
 * *
 * * @return {string} a value
 * *
@@ -1414,6 +1511,102 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
+
+/**
+* Forbid shell commands to be prefixed with `$` symbols.
+*
+* @name jsdoc-no-shell-dollars
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep boop.
+* *
+* * ``` bash
+* * $ echo beep
+* * ```
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * ``` bash
+* * echo beep
+* * ```
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-shell-dollars' ] = 'off';
+
+/**
+* Prevent shortcut reference images.
+*
+* @name jsdoc-no-shortcut-reference-image
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep ![boop].
+* *
+* * [boop]: http://foo.bar/baz.png
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep ![boop][].
+* *
+* * [boop]: http://foo.bar/baz.png
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 
 /**
 * Prevent shortcut reference links.
@@ -1644,6 +1837,51 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
+
+/**
+* Require `*` be used as the strong marker.
+*
+* @name jsdoc-strong-marker
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '_' ]
+* @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a __number__.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a **number**.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-strong-marker' ] = [ 'error', '*' ];
 
 /**
 * Require table pipes to be aligned.

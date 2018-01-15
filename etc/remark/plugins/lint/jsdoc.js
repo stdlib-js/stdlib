@@ -322,41 +322,6 @@ plugins.push([
 ]);
 
 /**
-* Do not allow punctuation at the end of a heading.
-*
-* @see [no-heading-punctuation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-heading-punctuation}
-*
-* @example
-* <!-- Bad -->
-*
-* ## Beep.
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-heading-punctuation' ),
-	[ 'error', '.,;:!?' ]
-]);
-
-/**
-* Allow HTML.
-*
-* @see [no-html]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-html}
-*
-* @example
-* <!-- Okay -->
-*
-* <section class="intro">
-*
-* Beep boop.
-*
-* </section>
-*/
-plugins.push([
-	require( 'remark-lint-no-html' ),
-	[ 'off' ]
-]);
-
-/**
 * Require blank lines between block nodes.
 *
 * @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
@@ -401,48 +366,6 @@ plugins.push([
 plugins.push([
 	require( 'remark-lint-no-multiple-toplevel-headings' ),
 	[ 'off' ]
-]);
-
-/**
-* Allow shell commands to be prefixed with `$` symbols.
-*
-* @see [no-shell-dollars]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shell-dollars}
-*
-* @example
-* <!-- Okay -->
-*
-* ``` bash
-* $ echo beep
-* ```
-*/
-plugins.push([
-	require( 'remark-lint-no-shell-dollars' ),
-	[ 'off' ]
-]);
-
-/**
-* Never allow shortcut reference images.
-*
-* @see [no-shortcut-reference-image]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shortcut-reference-image}
-*
-* @example
-* <!-- Bad -->
-*
-* ![foo]
-*
-* [foo]: https://example.com/1.png
-*
-* @example
-* <!-- Good -->
-*
-* ![foo][]
-*
-* [foo]: https://example.com/1.png
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-shortcut-reference-image' ),
-	[ 'error' ]
 ]);
 
 /**
