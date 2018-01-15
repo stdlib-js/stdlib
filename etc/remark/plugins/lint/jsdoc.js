@@ -404,23 +404,6 @@ plugins.push([
 ]);
 
 /**
-* Allow shell commands to be prefixed with `$` symbols.
-*
-* @see [no-shell-dollars]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-shell-dollars}
-*
-* @example
-* <!-- Okay -->
-*
-* ``` bash
-* $ echo beep
-* ```
-*/
-plugins.push([
-	require( 'remark-lint-no-shell-dollars' ),
-	[ 'off' ]
-]);
-
-/**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
 * @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
