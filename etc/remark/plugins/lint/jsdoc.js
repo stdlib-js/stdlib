@@ -338,25 +338,6 @@ plugins.push([
 ]);
 
 /**
-* Allow HTML.
-*
-* @see [no-html]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-html}
-*
-* @example
-* <!-- Okay -->
-*
-* <section class="intro">
-*
-* Beep boop.
-*
-* </section>
-*/
-plugins.push([
-	require( 'remark-lint-no-html' ),
-	[ 'off' ]
-]);
-
-/**
 * Require blank lines between block nodes.
 *
 * @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
