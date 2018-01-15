@@ -1416,6 +1416,56 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 
 /**
+* Forbid shell commands to be prefixed with `$` symbols.
+*
+* @name jsdoc-no-shell-dollars
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep boop.
+* *
+* * ``` bash
+* * $ echo beep
+* * ```
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * ``` bash
+* * echo beep
+* * ```
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-shell-dollars' ] = 'off';
+
+/**
 * Prevent shortcut reference images.
 *
 * @name jsdoc-no-shortcut-reference-image
