@@ -1526,7 +1526,7 @@ rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 * /**
 * * Beep boop.
 * *
-* * ``` bash
+* * ```bash
 * * $ echo beep
 * * ```
 * *
@@ -1546,7 +1546,7 @@ rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 * /**
 * * Beep boop.
 * *
-* * ``` bash
+* * ```bash
 * * echo beep
 * * ```
 * *
