@@ -1073,7 +1073,7 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 
 /**
-* Prevent headings from ending with chosen characters.
+* Prevent headings from ending with specified characters.
 *
 * @name jsdoc-no-heading-punctuation
 * @memberof rules
@@ -1277,7 +1277,7 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 
 /**
-* Prevent HTML nodes from being used.
+* Prevent HTML from being used.
 *
 * @name jsdoc-no-html
 * @memberof rules
@@ -1290,7 +1290,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * /**
 * * Beep boop.
 * *
-* * <h2> References </h2>
+* * <h2>References</h2>
 * *
 * * @return {string} a value
 * *
@@ -1526,7 +1526,7 @@ rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 * /**
 * * Beep boop.
 * *
-* * ``` bash
+* * ```bash
 * * $ echo beep
 * * ```
 * *
@@ -1546,7 +1546,7 @@ rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 * /**
 * * Beep boop.
 * *
-* * ``` bash
+* * ```bash
 * * echo beep
 * * ```
 * *
@@ -1844,7 +1844,7 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * @name jsdoc-strong-marker
 * @memberof rules
 * @type {Array}
-* @default [ 'error', '_' ]
+* @default [ 'error', '*' ]
 * @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
 *
 * @example
