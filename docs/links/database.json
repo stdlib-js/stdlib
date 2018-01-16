@@ -3098,6 +3098,18 @@
       "lint"
     ]
   },
+  "https://github.com/SublimeText-Markdown/MarkdownEditing": {
+    "id": "sublime-text-markdownediting",
+    "description": "GitHub repository for a Sublime Text plugin which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown.",
+    "short_url": "",
+    "keywords": [
+      "markdown",
+      " sublime",
+      " text",
+      " editor",
+      " plugin"
+    ]
+  },
   "https://github.com/WebAssembly/wabt": {
     "id": "wabt",
     "description": "The GitHub repository for the WebAssembly Binary Toolkit (WABT), a suite of tools for developing with WebAssembly.",
