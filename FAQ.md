@@ -610,7 +610,7 @@ The approach embraced by this project stands in contrast to more traditional sta
 
 While development happens on a single repository (i.e., a monorepo), the larger aim is to facilitate project decomposition into individual repositories, thus allowing people to fork, customize, and recombine the varied project parts as necessary and, in effect, to easily build their own standard libraries. Accordingly, not only will the project be **decomposable**, but the project will be infinitely **composable** and, in perhaps more philosophical terms, fully support the duality of decomposition and composition.
 
-**Note**: while project build scripts exist to publish each package independently and as separate repositories, the timeline for doing so is undetermined. The timeline is predicated on a fixed project namespace (meaning, once a package is independently published, we cannot revert this action). Upon reaching version `1.0`, the project will have a high probability of being ready for such a commitment.
+**Aside**: while project build scripts exist to publish each package independently and as separate repositories, the timeline for doing so is undetermined. The timeline is predicated on a fixed project namespace (meaning, once a package is independently published, we cannot revert this action). Upon reaching version `1.0`, the project will have a high probability of being ready for such a commitment.
 
 <!-- </faq-question> -->
 
