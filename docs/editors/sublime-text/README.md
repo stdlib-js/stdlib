@@ -45,9 +45,41 @@ $ subl .
 
 -   [**Fortran**][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
 
+-   [**MarkdownEditing][sublime-text-markdownediting]: package which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown. Once installed, configure the package settings as follows:
+
+    ```text
+    {
+        "extensions": [
+            "md"
+        ],
+        "mde.match_header_hashes": false,
+        "mde.list_indent_auto_switch_bullet": true,
+        "mde.list_indent_bullets": ["-", "-", "-"],
+        "mde.auto_increment_ordered_list_number": true,
+        "mde.keep_centered": false,
+        "mde.lint": {
+            "disable": [
+                "md013"
+            ],
+            "md003": "atx",
+            "md004": "-",
+            "md007": 0,
+            "md013": 0,
+            "md026": ".,;:!?",
+            "md029": "any",
+            "md030": {
+                "ul_single": 2,
+                "ol_single": 2,
+                "ul_multi": 2,
+                "ol_multi": 2
+            }
+        },
+    }
+    ```
+
 -   [**SublimeLinter3**][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
-    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files
+    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files:
 
         ```text
                 ...
@@ -126,6 +158,8 @@ $ subl .
 [sublime-text-pretty-json]: https://github.com/dzhibas/SublimePrettyJson
 
 [sublime-text-sidebar-enhancements]: https://github.com/SideBarEnhancements-org/SideBarEnhancements
+
+[sublime-text-markdownediting]: https://github.com/SublimeText-Markdown/MarkdownEditing
 
 [sublime-text-julia]: https://github.com/JuliaEditorSupport/Julia-sublime
 
