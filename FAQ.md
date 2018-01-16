@@ -23,6 +23,7 @@
 -   [ES2015 and beyond?](#es2015)
 -   [Why a monorepo?](#monorepo)
 -   [Why are library packages in a node_modules directory?](#lib-node-modules)
+-   [What is meant by saying the project is "decomposable"?](#decomposable-software)
 -   [How can I support the project?](#supporting)
 -   [Why contribute?](#why-contribute)
 -   [How can I contribute?](#contributing)
@@ -586,6 +587,30 @@ By leveraging `node_modules`, each local `node_modules` dependency
 In short, the module resolution [algorithm][node-require] provides a simple and robust cross-platform solution for managing both external and local module dependencies.
 
 **Aside**: A common objection to the directory structure above is that tools often ignore anything within a `node_modules` folder (e.g., linters, unit test runners, etc). That this project is able to configure tools to recognize files within `node_modules` folders is evidence to the contrary. If a tool cannot be configured otherwise, that is a flaw in the tool, not in the approach.
+
+<!-- </faq-question> -->
+
+<!-- <faq-question> -->
+
+* * *
+
+<a name="decomposable-software"></a>
+
+### What is meant by saying the project is "decomposable"?
+
+This project embraces the software design philosophy of **modular decomposition**; i.e., breaking a complex system into independent parts that are easier to design, understand, implement, and maintain. The project's approach draws inspiration from the Unix philosophy, component-based software engineering, and The Node Way.
+
+When we say that the project is _decomposable_, we mean that **every** package (both core library and tooling) developed within the project is designed and implemented such that each package can be consumed and understood _independently_ of the project. More concretely, every package is required to maintain resource **locality**, containing its own documentation, tests, benchmarks, and examples. Thus, each package can be understood to form a single coherent whole which, provided satisfaction of package dependencies, allows each package to exist independently.
+
+From a practical perspective,
+
+> you should **not** have to install the entire project in order to consume (or customize) only a single part.
+
+The approach embraced by this project stands in contrast to more traditional standard library approaches, including those found in languages such as Python, R, and Julia, where, in order to use a single function, you need to bundle the entire runtime **and** every other standard library function. Instead, this project holds that you should be able to consume only what you need, when you need it, nothing more, nothing less.
+
+While development happens on a single repository (i.e., a monorepo), the larger aim is to facilitate project decomposition into individual repositories, thus allowing people to fork, customize, and recombine the varied project parts as necessary and, in effect, to easily build their own standard libraries. Accordingly, not only will the project be **decomposable**, but the project will be infinitely **composable** and, in perhaps more philosophical terms, fully support the duality of decomposition and composition.
+
+**Note**: while project build scripts exist to publish each package independently and as separate repositories, the timeline for doing so is undetermined. The timeline is predicated on a fixed project namespace (meaning, once a package is independently published, we cannot revert this action). Upon reaching version `1.0`, the project will have a high probability of being ready for such a commitment.
 
 <!-- </faq-question> -->
 

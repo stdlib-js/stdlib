@@ -1055,8 +1055,6 @@
 
 1.  [authors-certificate](https://github.com/berneout/authors-certificate)
 
-1.  FAQ: what is decomposable software?
-
 1.  Electoral college [box scores](https://www.archives.gov/federal-register/electoral-college/scores.html#1789)
 
 1.  Electoral college votes [by state](https://www.archives.gov/federal-register/electoral-college/votes/votes_by_state.html)
