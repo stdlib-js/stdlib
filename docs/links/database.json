@@ -442,7 +442,7 @@
     "short_url": "",
     "keywords": [
       "numpy",
-      " python"
+      "python"
     ]
   },
   "http://www.yaml.org/": {
@@ -525,8 +525,8 @@
     "short_url": "",
     "keywords": [
       "codecov",
-      " coverage",
-      " unit testing"
+      "coverage",
+      "unit testing"
     ]
   },
   "https://coveralls.io/": {
@@ -535,8 +535,8 @@
     "short_url": "",
     "keywords": [
       "coveralls",
-      " coverage",
-      " unit testing"
+      "coverage",
+      "unit testing"
     ]
   },
   "https://creativecommons.org/licenses/by-sa/4.0/": {
@@ -1741,9 +1741,9 @@
     "short_url": "",
     "keywords": [
       "log",
-      " logarithm",
-      " common",
-      " base 10"
+      "logarithm",
+      "common",
+      "base 10"
     ]
   },
   "https://en.wikipedia.org/wiki/Constant_function": {
@@ -2137,9 +2137,9 @@
     "short_url": "",
     "keywords": [
       "horner",
-      " polynomials",
-      " algorithm",
-      " math"
+      "polynomials",
+      "algorithm",
+      "math"
     ]
   },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
@@ -2191,14 +2191,14 @@
     "short_url": "",
     "keywords": [
       "inverse",
-      " trigonometric",
-      " trig",
-      " sine",
-      " cosine",
-      " secant",
-      " cosecent",
-      " tangent",
-      " cotagent"
+      "trigonometric",
+      "trig",
+      "sine",
+      "cosine",
+      "secant",
+      "cosecent",
+      "tangent",
+      "cotagent"
     ]
   },
   "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
@@ -2317,9 +2317,9 @@
     "short_url": "",
     "keywords": [
       "log",
-      " logarithm",
-      " exp",
-      " exponentiation"
+      "logarithm",
+      "exp",
+      "exponentiation"
     ]
   },
   "https://en.wikipedia.org/wiki/Logistic_distribution": {
@@ -2420,8 +2420,8 @@
     "short_url": "",
     "keywords": [
       "logarithm",
-      " log",
-      " ln"
+      "log",
+      "ln"
     ]
   },
   "https://en.wikipedia.org/wiki/Negative_binomial_distribution": {
@@ -2996,10 +2996,10 @@
     "short_url": "",
     "keywords": [
       "awk",
-      " sublime",
-      " text",
-      " editor",
-      " plugin"
+      "sublime",
+      "text",
+      "editor",
+      "plugin"
     ]
   },
   "https://github.com/JuliaEditorSupport/Julia-sublime": {
@@ -3008,10 +3008,10 @@
     "short_url": "",
     "keywords": [
       "julia",
-      " sublime",
-      " text",
-      " editor",
-      " plugin"
+      "sublime",
+      "text",
+      "editor",
+      "plugin"
     ]
   },
   "https://github.com/Matt-Esch/virtual-dom": {
@@ -3113,10 +3113,10 @@
     "short_url": "",
     "keywords": [
       "markdown",
-      " sublime",
-      " text",
-      " editor",
-      " plugin"
+      "sublime",
+      "text",
+      "editor",
+      "plugin"
     ]
   },
   "https://github.com/WebAssembly/wabt": {
@@ -3162,10 +3162,10 @@
     "short_url": "",
     "keywords": [
       "git",
-      " sublime",
-      " text",
-      " editor",
-      " plugin"
+      "sublime",
+      "text",
+      "editor",
+      "plugin"
     ]
   },
   "https://github.com/pypa/pip": {
@@ -3658,8 +3658,7 @@
     "short_url": "",
     "keywords": [
       "scipy",
-      " python",
-      " python"
+      "python"
     ]
   },
   "https://www.sublimetext.com/": {
