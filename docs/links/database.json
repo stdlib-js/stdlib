@@ -3643,6 +3643,16 @@
       "language"
     ]
   },
+  "https://www.scipy.org/scipylib/index.html": {
+    "id": "scipy",
+    "description": "Official homepage for SciPy, a collection of mathematical algorithms and convenience functions built on the Numpy extension of Python.",
+    "short_url": "",
+    "keywords": [
+      "scipy",
+      " python",
+      " python"
+    ]
+  },
   "https://www.sublimetext.com/": {
     "id": "sublime-text",
     "description": "Sublime Text text editor. Official website.",
