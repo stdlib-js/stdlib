@@ -7,6 +7,7 @@
 -   [Why use this project?](#why-use)
 -   [What are the project's core values?](#core-values)
 -   [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
+-   [What are the use cases for numeric computing in JavaScript?](#use-cases)
 -   [Why not use R, Python, or Julia?](#other-languages)
 -   [Why not exclusively use native add-ons?](#native-add-ons)
 -   [What about WebAssembly?](#web-assembly)
@@ -96,6 +97,49 @@ This project
 4.  **Ubiquity**: JavaScript is [ubiquitous][javascript-ubiquity], being supported on nearly any device with a web browser and, now, being pushed as a preferred scripting language in the Internet of Things (IoT) ([Cylon.js][cylon-js], [iot.js][iot-js], [JerryScript][jerryscript], [Johnny-Five][johnny-five]). Thus, if a numeric compute application can run in JavaScript, the broader the potential reach of that application.
 5.  **Distribution**: distributing a numeric compute application is considerably easier when compared to traditional numeric computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
 6.  **Package Management**: Node.js package management is superior to anything available in other numeric computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, the tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numeric computing environments.
+
+<!-- </faq-question> -->
+
+<!-- <faq-question> -->
+
+* * *
+
+<a name="use-cases"></a>
+
+### What are the use cases for numeric computing in JavaScript?
+
+Fundamentally, the use cases for numerical and scientific computing in JavaScript are the same as for any other commonly used language for numerical and scientific computation, such as MATLAB, R, Python, and Julia. For example,
+
+-   perform some sort of statistical analysis, such as computing summary statistics or hypothesis testing.
+-   train and apply a statistical model (e.g., assign a probability as to whether `X` has `Y` given an observation `Z`).
+-   cluster observations into a set of `N` distinct groups.
+-   determine the similarity of two or more datasets (i.e., can we reasonably distinguish `X` from `Y`?).
+-   assign a likelihood to unexpected events (i.e., all things being equal, how often should we expect to see a particular outcome were we to repeat our experiment hundreds, thousands or millions of times?).
+-   perform simulations involving alternative models (e.g., what would the data look like if we change model parameters `a` and `b`?).
+-   extract key "features" accounting for the most variation in observed values.
+-   translate text from one language to another.
+-   generate synthetic speech.
+-   rank documents according to their relevance (e.g., to build a search engine).
+-   recognize and classify objects in images (e.g., does image `I` contain a cat or a dog?).
+-   predict growth and financial returns.
+-   compute the trajectory of spacecraft and flying objects.
+-   determine optimal ticket prices and staffing requirements to maximize revenue.
+-   parse, transform, filter, and aggregate data.
+-   add, subtract, multiply, and divide numbers.
+
+In addition to the above, JavaScript has additional use cases by virtue of its being the _lingua franca_ of the web.
+
+-   offline computation (i.e., an entirely client-side machine learning library does not require a network connection in order to execute commands as is the case, e.g., in the [Jupyter][jupyter] notebook computation model).
+-   rapid prototyping and visualization.
+-   interactive explanations.
+
+The popularity of Node.js due to its ease-of-use and growing ubiquity in the HTTP networking stack affords Node.js additional use cases such as
+
+-   a rapidly prototyped and demo-able Node.js server endpoint which performs natural language processing (NLP) and uses the Amazon Alexa API for a chat bot.
+-   a serverless application which performs a machine learning computation without needing to install and bundle all of, e.g., Python, [NumPy][numpy], and [SciPy][scipy], thus saving time, money, and resources (all by virtue of Node.js' dominance in serverless cloud offerings, such as AWS Lambda, Google Cloud, and Microsoft Azure).
+-   browserless model computation done entirely in JavaScript.
+
+While other languages and platforms exist which _may_ be better suited for specific use cases, particularly those requiring bare metal performance or involving massive data sets, when considered in totality, the opinion of this project is that JavaScript (and Node.js) provides a comparable, if not better, environment for numerical and scientific computation than other competitor environments.  
 
 <!-- </faq-question> -->
 
@@ -739,7 +783,11 @@ See the [contributing guide][contributing-guide].
 
 [numpy]: http://www.numpy.org/
 
+[scipy]: https://www.scipy.org/scipylib/index.html
+
 [scikit-learn]: http://scikit-learn.org/stable/
+
+[jupyter]: http://jupyter.org/
 
 [semver]: http://semver.org/
 
