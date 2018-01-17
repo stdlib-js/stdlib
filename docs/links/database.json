@@ -436,6 +436,15 @@
       "math"
     ]
   },
+  "http://www.numpy.org/": {
+    "id": "numpy",
+    "description": "Official homepage for NumPy, the fundamental package for scientific computing with Python.",
+    "short_url": "",
+    "keywords": [
+      "numpy",
+      " python"
+    ]
+  },
   "http://www.yaml.org/": {
     "id": "yaml",
     "description": "Human friendly data serialization standard.",
