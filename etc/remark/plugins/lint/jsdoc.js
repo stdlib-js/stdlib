@@ -79,26 +79,6 @@ plugins.push([
 ]);
 
 /**
-* Disable rule requiring a Markdown file to have the file extension `*.md`, as not relevant for JSDoc comments.
-*
-* @see [file-extension]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-file-extension}
-*/
-plugins.push([
-	require( 'remark-lint-file-extension' ),
-	[ 'off' ]
-]);
-
-/**
-* Disable rule requiring a final newline (see <http://unix.stackexchange.com/questions/18743>), as not relevant to JSDoc comments.
-*
-* @see [final-newline]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-final-newline}
-*/
-plugins.push([
-	require( 'remark-lint-final-newline' ),
-	[ 'off' ]
-]);
-
-/**
 * Require first heading level be a level `2` heading in JSDoc comments. A level `1` heading is implied.
 *
 * @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
@@ -268,56 +248,6 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-consecutive-blank-lines' ),
-	[ 'off' ]
-]);
-
-/**
-* Disable rule never allowing filenames to begin with an article, as not relevant to JSDoc comments.
-*
-* @see [no-file-name-articles]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-articles}
-*/
-plugins.push([
-	require( 'remark-lint-no-file-name-articles' ),
-	[ 'off' ]
-]);
-
-/**
-* Disable rule never allowing consecutive dashes in filenames, as not relevant to JSDoc comments.
-*
-* @see [no-file-name-consecutive-dashes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-consecutive-dashes}
-*/
-plugins.push([
-	require( 'remark-lint-no-file-name-consecutive-dashes' ),
-	[ 'off' ]
-]);
-
-/**
-* Disable rule never allowing filenames to contain irregular characters, as not relevant to JSDoc comments.
-*
-* @see [no-file-name-irregular-characters]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-irregular-characters}
-*/
-plugins.push([
-	require( 'remark-lint-no-file-name-irregular-characters' ),
-	[ 'off' ]
-]);
-
-/**
-* Disable rule never allowing mixed case filenames, as not relevant to JSDoc comments.
-*
-* @see [no-file-name-mixed-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-mixed-case}
-*/
-plugins.push([
-	require( 'remark-lint-no-file-name-mixed-case' ),
-	[ 'off' ]
-]);
-
-/**
-* Disable rule never allowing filenames to begin or end with dashes, as not relevant to JSDoc comments.
-*
-* @see [no-file-name-outer-dashes]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-file-name-outer-dashes}
-*/
-plugins.push([
-	require( 'remark-lint-no-file-name-outer-dashes' ),
 	[ 'off' ]
 ]);
 
