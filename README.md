@@ -103,7 +103,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2017. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
