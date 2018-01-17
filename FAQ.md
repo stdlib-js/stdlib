@@ -78,6 +78,8 @@ This project
 -   **Approachability**: user-facing APIs and underlying implementations should be approachable. Interfaces should embrace simplicity. Source code should use the simplest primitives. Documentation should be abundant.
 -   **Integrity**: all aspects of the project&mdash;documentation, testing, benchmarking, implementations, tooling&mdash;should form a consistent and coherent whole. Code should be of one voice and reflect a single purpose: to write high-quality software.
 
+<!-- TODO: once the project stabilizes, consider "stability"; e.g., backward compatibility support, etc -->
+
 <!-- </faq-question> -->
 
 <!-- <faq-question> -->
