@@ -20,7 +20,10 @@
 
 // MODULES //
 
-var copy = require( '@stdlib/utils/copy' );
+// FIXME: remove the next line and uncomment the subsequent line once all remark JSDoc ESLint rules are completed
+var copy = require( './../../lib/node_modules/@stdlib/utils/copy' );
+
+// var copy = require( './utils/copy.js' );
 var defaults = require( './.eslintrc.js' );
 
 

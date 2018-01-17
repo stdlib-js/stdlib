@@ -22,7 +22,10 @@
 
 // MODULES //
 
-var merge = require( '@stdlib/utils/merge' );
+// FIXME: remove the next line and uncomment the subsequent line once all remark JSDoc ESLint rules are completed
+var merge = require( './../../../lib/node_modules/@stdlib/utils/merge' );
+
+// var merge = require( './../utils/merge.js' );
 
 
 // MAIN //
