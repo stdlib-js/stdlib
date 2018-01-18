@@ -50,7 +50,7 @@ node_js:
 
 os:
   - linux
-  - osx
+  # - osx
 
 # Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Add-ons are Linux-specific. Electron requires a virtual display server (xvfb) on Linux.
 addons:
