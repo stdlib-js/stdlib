@@ -30,6 +30,6 @@ REPL_LANG_STATS ?= $(TOOLS_DIR)/scripts/repl_lang_stats
 
 stats-repl-lang: $(REPL_LANG_STATS)
 	$(QUIET) $(MAKE_EXECUTABLE) $(REPL_LANG_STATS)
-	$(QUIET) $(REPL_LANG_STATS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REPL_LANG_STATS)
 
 .PHONY: stats-repl-lang

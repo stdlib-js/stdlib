@@ -41,7 +41,7 @@ stats-sloc-javascript: stats-sloc-javascript-src stats-sloc-javascript-tests sta
 # This target calculates source lines of code (SLOC) for only JavaScript source files.
 
 stats-sloc-javascript-src: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
+	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
 
 .PHONY: stats-sloc-javascript-src
 
@@ -51,7 +51,7 @@ stats-sloc-javascript-src: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
 # This target calculates source lines of code (SLOC) for only JavaScript test files.
 
 stats-sloc-javascript-tests: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
+	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
 
 .PHONY: stats-sloc-javascript-tests
 
@@ -61,7 +61,7 @@ stats-sloc-javascript-tests: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
 # This target calculates source lines of code (SLOC) for only JavaScript example files.
 
 stats-sloc-javascript-examples: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
 
 .PHONY: stats-sloc-javascript-examples
 
@@ -71,7 +71,7 @@ stats-sloc-javascript-examples: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
 # This target calculates source lines of code (SLOC) for only JavaScript benchmark files.
 
 stats-sloc-javascript-benchmarks: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS)
 
 .PHONY: stats-sloc-javascript-benchmarks
 
@@ -83,6 +83,6 @@ stats-sloc-javascript-benchmarks: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
 # TODO: address possibility of `$FILES` exceeding maximum allowed shell arguments
 
 stats-sloc-javascript-files: $(JAVASCRIPT_SLOC) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS) $(FILES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_SLOC) $(JAVASCRIPT_SLOC_FLAGS) $(FILES)
 
 .PHONY: stats-sloc-javascript-files

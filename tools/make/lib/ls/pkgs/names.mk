@@ -32,6 +32,6 @@ LIST_PACKAGE_NAMES_FLAGS ?=
 # This target prints a list of all package names.
 
 list-pkgs-names: $(LIST_PACKAGE_NAMES) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(LIST_PACKAGE_NAMES) $(LIST_PACKAGE_NAMES_FLAGS) $(SRC_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMES) $(LIST_PACKAGE_NAMES_FLAGS) $(SRC_DIR)
 
 .PHONY: list-pkgs-names

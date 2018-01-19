@@ -41,7 +41,7 @@ stats-lloc-javascript: stats-lloc-javascript-src stats-lloc-javascript-tests sta
 # This target calculates logical lines of code (LLOC) for only JavaScript source files.
 
 stats-lloc-javascript-src: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
+	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
 
 .PHONY: stats-lloc-javascript-src
 
@@ -51,7 +51,7 @@ stats-lloc-javascript-src: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
 # This target calculates logical lines of code (LLOC) for only JavaScript test files.
 
 stats-lloc-javascript-tests: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
+	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
 
 .PHONY: stats-lloc-javascript-tests
 
@@ -61,7 +61,7 @@ stats-lloc-javascript-tests: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
 # This target calculates logical lines of code (LLOC) for only JavaScript example files.
 
 stats-lloc-javascript-examples: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
 
 .PHONY: stats-lloc-javascript-examples
 
@@ -71,7 +71,7 @@ stats-lloc-javascript-examples: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
 # This target calculates logical lines of code (LLOC) for only JavaScript benchmark files.
 
 stats-lloc-javascript-benchmarks: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS)
 
 .PHONY: stats-lloc-javascript-benchmarks
 
@@ -83,6 +83,6 @@ stats-lloc-javascript-benchmarks: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
 # TODO: address possibility of `$FILES` exceeding maximum allowed shell arguments
 
 stats-lloc-javascript-files: $(JAVASCRIPT_LLOC) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS) $(FILES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(JAVASCRIPT_LLOC) $(JAVASCRIPT_LLOC_FLAGS) $(FILES)
 
 .PHONY: stats-lloc-javascript-files

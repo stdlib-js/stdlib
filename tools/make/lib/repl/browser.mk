@@ -32,7 +32,7 @@ REPL_BROWSER_BUNDLE ?= $(DIST_DIR)/stdlib-repl.min.js
 # This target starts a browser REPL environment.
 
 repl-browser: $(NODE_MODULES) $(REPL_BROWSER_BUNDLE)
-	$(QUIET) $(CAT) $(REPL_BROWSER_BUNDLE) | DEBUG=* $(repl_tmp_http_server) \
+	$(QUIET) $(CAT) $(REPL_BROWSER_BUNDLE) | NODE_PATH="$(NODE_PATH)" DEBUG=* $(repl_tmp_http_server) \
 		--stdin javascript \
 		--open
 
