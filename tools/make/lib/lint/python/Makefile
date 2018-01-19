@@ -18,9 +18,9 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/lint/pycodestyle.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/pydocstyle.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/pylint.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/pycodestyle.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/pydocstyle.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/pylint.mk
 
 
 # RULES #

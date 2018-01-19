@@ -25,7 +25,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/license_headers.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/python.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/r.mk
 
 
