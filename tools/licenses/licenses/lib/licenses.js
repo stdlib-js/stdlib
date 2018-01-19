@@ -88,6 +88,7 @@ function licenses() {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {Object} results - results
+	* @returns {void}
 	*/
 	function onRead( error, results ) {
 		if ( error ) {
@@ -105,6 +106,7 @@ function licenses() {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {(ObjectArray|EmptyArray)} results - results
+	* @returns {void}
 	*/
 	function done( error, results ) {
 		if ( error ) {
