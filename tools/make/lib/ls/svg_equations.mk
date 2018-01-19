@@ -24,14 +24,7 @@ FIND_SVG_EQUATIONS_FLAGS ?= \
 	-name "$(SVG_EQUATIONS_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/**" \
 	-regex "$(SVG_EQUATIONS_FILTER)" \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
+	$(FIND_SVG_EQUATIONS_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
 	FIND_SVG_EQUATIONS_FLAGS := -regextype posix-extended $(FIND_SVG_EQUATIONS_FLAGS)

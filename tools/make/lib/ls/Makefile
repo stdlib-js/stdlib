@@ -260,12 +260,21 @@ FIND_SOURCES_EXCLUDE_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
+# SVG equations exclude flags:
+FIND_SVG_EQUATIONS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
+
 # Tests exclude flags:
 FIND_TESTS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(TOOLS_PKGS_DIR)/*" \
 	-not -path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/*"
+
+# Tests directories exclude flags:
+FIND_TESTS_DIRS_EXCLUDE_FLAGS ?= \
+	$(FIND_COMMON_EXCLUDE_FLAGS) \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*"
 
 # Text fixtures exclude flags:
 FIND_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
