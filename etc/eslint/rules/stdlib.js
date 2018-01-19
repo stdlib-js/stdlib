@@ -1709,6 +1709,57 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 
 /**
+* Require table cell padding.
+*
+* @name jsdoc-table-cell-padding
+* @memberof rules
+* @type {string}
+* @default [ 'error', 'padded' ]
+* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * |Beep|Boop|
+* * |----|----|
+* * |foo |bar |
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * | Beep | Boop |
+* * | ---- | ---- |
+* * | foo  | bar  |
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
+
+/**
 * Prevent unneeded indentation before tables.
 *
 * @name jsdoc-no-table-indentation
