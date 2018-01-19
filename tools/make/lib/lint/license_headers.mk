@@ -74,7 +74,6 @@ lint-license-headers-javascript: lint-license-headers-javascript-src lint-licens
 # Lints license headers in JavaScript source files.
 #
 # @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [SOURCES_PATTERN] - filename pattern (e.g., `*.js`)
 #
 # @example
 # make lint-license-headers-javascript-src
@@ -91,7 +90,6 @@ lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # Lints license headers in JavaScript test files.
 #
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [TESTS_PATTERN] - filename pattern (e.g., `test*.js`)
 #
 # @example
 # make lint-license-headers-javascript-tests
@@ -108,7 +106,6 @@ lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # Lints license headers in JavaScript examples files.
 #
 # @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [EXAMPLES_PATTERN] - filename pattern (e.g., `*.js`)
 #
 # @example
 # make lint-license-headers-javascript-examples
@@ -125,7 +122,6 @@ lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # Lints license headers in JavaScript benchmark files.
 #
 # @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [BENCHMARKS_PATTERN] - filename pattern (e.g., `benchmark*.js`)
 #
 # @example
 # make lint-license-headers-javascript-benchmarks
