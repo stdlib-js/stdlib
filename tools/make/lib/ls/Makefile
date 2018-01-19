@@ -221,23 +221,24 @@ PACKAGES_FILTER ?= .*/.*
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/sources/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
+# Note: keep in alphabetical order
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/cpp.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/examples/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/r.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/sources/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wasm.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wat.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
