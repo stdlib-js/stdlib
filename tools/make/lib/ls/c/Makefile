@@ -18,10 +18,9 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/c.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/cpp.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/fortran.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/javascript.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/julia.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/python.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples/r.mk
+# Note: keep in alphabetical order
+include $(TOOLS_MAKE_LIB_DIR)/ls/c/benchmarks.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/c/examples.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/c/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/c/sources.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/c/tests_fixtures.mk

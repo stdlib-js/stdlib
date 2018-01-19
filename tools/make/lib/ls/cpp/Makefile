@@ -18,10 +18,9 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/c.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/cpp.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/fortran.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/javascript.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/julia.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/python.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests-fixtures/r.mk
+# Note: keep in alphabetical order
+include $(TOOLS_MAKE_LIB_DIR)/ls/cpp/benchmarks.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/cpp/examples.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/cpp/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/cpp/sources.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/cpp/tests_fixtures.mk
