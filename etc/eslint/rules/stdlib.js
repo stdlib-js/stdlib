@@ -353,7 +353,7 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * @memberof rules
 * @type {Array}
 * @default [ 'error', '`' ]
-* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
+* @see [fenced-code-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
 *
 * @example
 * // Bad...
@@ -459,7 +459,7 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
+* @see [hard-break-spaces]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
 *
 * @example
 * // Bad...
@@ -713,7 +713,7 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
+* @see [no-auto-link-without-protocol]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
 *
 * @example
 * // Bad...
@@ -762,7 +762,7 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
+* @see [no-blockquote-without-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
 *
 * @example
 * // Bad...
@@ -815,7 +815,7 @@ rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
+* @see [no-duplicate-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
 *
 * @example
 * // Bad...
@@ -865,7 +865,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-definitions' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
+* @see [no-duplicate-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
 *
 * @example
 * // Bad...
@@ -926,7 +926,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
+* @see [no-duplicate-headings-in-section]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
 *
 * @example
 * // Bad...
