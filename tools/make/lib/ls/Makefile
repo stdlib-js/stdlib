@@ -236,7 +236,8 @@ FIND_COMMON_EXCLUDE_FLAGS ?= \
 FIND_BENCHMARKS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
 	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*"
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FIXTURES_FOLDER)/*"
 
 # Examples exclude flags:
 FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
