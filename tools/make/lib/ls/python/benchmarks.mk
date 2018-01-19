@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_python_benchmarks_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_PYTHON_BENCHMARKS_FLAGS ?= \
 	-type f \
@@ -48,6 +45,6 @@ PYTHON_BENCHMARKS ?= $(shell $(FIND_PYTHON_BENCHMARKS_CMD))
 # This target prints a newline-delimited list of Python benchmark files.
 
 list-benchmarks-python:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PYTHON_BENCHMARKS_FLAGS) $(find_print_python_benchmarks_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PYTHON_BENCHMARKS_FLAGS) $(find_print_list)
 
 .PHONY: list-benchmarks-python

@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_c_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_C_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ C_FILES ?= $(shell $(FIND_C_CMD))
 # This target prints a list of all C files.
 
 list-c-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_C_FLAGS) $(find_print_c_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_C_FLAGS) $(find_print_list)
 
 .PHONY: list-c-files

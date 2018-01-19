@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_fortran_examples_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_FORTRAN_EXAMPLES_FLAGS ?= \
 	-type f \
@@ -50,6 +47,6 @@ FORTRAN_EXAMPLES ?= $(shell $(FIND_FORTRAN_EXAMPLES_CMD))
 # This target prints a newline-delimited list of example files.
 
 list-examples-fortran:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FORTRAN_EXAMPLES_FLAGS) $(find_print_fortran_examples_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FORTRAN_EXAMPLES_FLAGS) $(find_print_list)
 
 .PHONY: list-examples-fortran

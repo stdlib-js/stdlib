@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_tools_tests_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_TOOLS_TESTS_FLAGS ?= \
 	-type f \
@@ -47,6 +44,6 @@ TOOLS_TESTS ?= $(shell $(FIND_TOOLS_TESTS_CMD))
 # This target prints a newline-delimited list of test files.
 
 list-tools-tests:
-	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_TESTS_FLAGS) $(find_print_tools_tests_list)
+	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_TESTS_FLAGS) $(find_print_list)
 
 .PHONY: list-tools-tests

@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_cpp_sources_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_CPP_SOURCES_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ CPP_SOURCES ?= $(shell $(FIND_CPP_SOURCES_CMD))
 # This target prints a newline-delimited list of source files.
 
 list-sources-cpp:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_CPP_SOURCES_FLAGS) $(find_print_cpp_sources_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_CPP_SOURCES_FLAGS) $(find_print_list)
 
 .PHONY: list-sources-cpp

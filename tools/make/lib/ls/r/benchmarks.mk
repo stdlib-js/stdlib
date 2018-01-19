@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_r_benchmarks_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_R_BENCHMARKS_FLAGS ?= \
 	-type f \
@@ -48,6 +45,6 @@ R_BENCHMARKS ?= $(shell $(FIND_R_BENCHMARKS_CMD))
 # This target prints a newline-delimited list of R benchmark files.
 
 list-benchmarks-r:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_R_BENCHMARKS_FLAGS) $(find_print_r_benchmarks_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_R_BENCHMARKS_FLAGS) $(find_print_list)
 
 .PHONY: list-benchmarks-r

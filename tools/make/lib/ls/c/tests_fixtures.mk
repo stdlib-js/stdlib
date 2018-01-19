@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_c_tests_fixtures_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_C_TESTS_FIXTURES_FLAGS ?= \
 	-type f \
@@ -47,6 +44,6 @@ C_TESTS_FIXTURES ?= $(shell $(FIND_C_TESTS_FIXTURES_CMD))
 # This target prints a newline-delimited list of test fixture files.
 
 list-tests-fixtures-c:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_C_TESTS_FIXTURES_FLAGS) $(find_print_c_tests_fixtures_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_C_TESTS_FIXTURES_FLAGS) $(find_print_list)
 
 .PHONY: list-tests-fixtures-c

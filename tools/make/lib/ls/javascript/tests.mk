@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_tests_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_TESTS_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ TESTS ?= $(shell $(FIND_TESTS_CMD))
 # This target prints a newline-delimited list of test files.
 
 list-tests:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS) $(find_print_tests_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FLAGS) $(find_print_list)
 
 .PHONY: list-tests

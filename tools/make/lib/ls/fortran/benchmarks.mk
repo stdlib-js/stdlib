@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_fortran_benchmarks_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_FORTRAN_BENCHMARKS_FLAGS ?= \
 	-type f \
@@ -48,6 +45,6 @@ FORTRAN_BENCHMARKS ?= $(shell $(FIND_FORTRAN_BENCHMARKS_CMD))
 # This target prints a newline-delimited list of Fortran benchmark files.
 
 list-benchmarks-fortran:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FORTRAN_BENCHMARKS_FLAGS) $(find_print_fortran_benchmarks_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FORTRAN_BENCHMARKS_FLAGS) $(find_print_list)
 
 .PHONY: list-benchmarks-fortran

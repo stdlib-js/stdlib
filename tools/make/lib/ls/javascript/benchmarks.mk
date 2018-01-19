@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_benchmarks_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_BENCHMARKS_FLAGS ?= \
 	-type f \
@@ -48,6 +45,6 @@ BENCHMARKS ?= $(shell $(FIND_BENCHMARKS_CMD))
 # This target prints a newline-delimited list of benchmark files.
 
 list-benchmarks:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS) $(find_print_benchmarks_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_FLAGS) $(find_print_list)
 
 .PHONY: list-benchmarks

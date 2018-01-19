@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_markdown_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_MARKDOWN_FLAGS ?= \
 	-type f \
@@ -53,6 +50,6 @@ MARKDOWN_FILES ?= $(shell $(FIND_MARKDOWN_CMD))
 # This target prints a list of all Markdown files, excluding the `node_modules`, `build`, and `reports` directories.
 
 list-markdown-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS) $(find_print_markdown_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_MARKDOWN_FLAGS) $(find_print_list)
 
 .PHONY: list-markdown-files

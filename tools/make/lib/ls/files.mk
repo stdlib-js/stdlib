@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_files_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_FILES_FLAGS ?= \
 	-type f \
@@ -51,6 +48,6 @@ FILES ?= $(shell $(FIND_FILES_CMD))
 # This target prints a list of all files, excluding the `node_modules`, `build`, `reports`, and hidden directories.
 
 list-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_files_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FILES_FLAGS) $(find_print_list)
 
 .PHONY: list-files

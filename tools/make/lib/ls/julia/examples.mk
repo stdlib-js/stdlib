@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_julia_examples_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_JULIA_EXAMPLES_FLAGS ?= \
 	-type f \
@@ -50,6 +47,6 @@ JULIA_EXAMPLES ?= $(shell $(FIND_JULIA_EXAMPLES_CMD))
 # This target prints a newline-delimited list of example files.
 
 list-examples-julia:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_JULIA_EXAMPLES_FLAGS) $(find_print_julia_examples_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_JULIA_EXAMPLES_FLAGS) $(find_print_list)
 
 .PHONY: list-examples-julia

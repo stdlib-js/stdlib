@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_fortran_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_FORTRAN_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ FORTRAN_FILES ?= $(shell $(FIND_FORTRAN_CMD))
 # This target prints a list of all Fortran files.
 
 list-fortran-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FORTRAN_FLAGS) $(find_print_fortran_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_FORTRAN_FLAGS) $(find_print_list)
 
 .PHONY: list-fortran-files

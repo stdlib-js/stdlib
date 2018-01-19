@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_svg_equations_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_SVG_EQUATIONS_FLAGS ?= \
 	-type f \
@@ -54,6 +51,6 @@ SVG_EQUATION_FILES ?= $(shell $(FIND_SVG_EQUATIONS_CMD))
 # This target prints a list of all SVG equation files.
 
 list-svg-equation-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SVG_EQUATIONS_FLAGS) $(find_print_svg_equations_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SVG_EQUATIONS_FLAGS) $(find_print_list)
 
 .PHONY: list-svg-equation-files

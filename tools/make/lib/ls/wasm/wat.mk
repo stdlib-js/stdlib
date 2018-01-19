@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_wat_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_WAT_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ WAT_FILES ?= $(shell $(FIND_WAT_CMD))
 # This target prints a list of all WebAssembly text files.
 
 list-wat-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_WAT_FLAGS) $(find_print_wat_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_WAT_FLAGS) $(find_print_list)
 
 .PHONY: list-wat-files

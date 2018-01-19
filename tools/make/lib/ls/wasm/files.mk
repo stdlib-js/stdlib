@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_wasm_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_WASM_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ WASM_FILES ?= $(shell $(FIND_WASM_CMD))
 # This target prints a list of all WebAssembly files.
 
 list-wasm-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_WASM_FLAGS) $(find_print_wasm_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_WASM_FLAGS) $(find_print_list)
 
 .PHONY: list-wasm-files

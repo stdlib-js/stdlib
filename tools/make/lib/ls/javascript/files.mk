@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_javascript_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_JAVASCRIPT_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ JAVASCRIPT_FILES ?= $(shell $(FIND_JAVASCRIPT_CMD))
 # This target prints a list of all JavaScript files.
 
 list-javascript-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_JAVASCRIPT_FLAGS) $(find_print_javascript_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_JAVASCRIPT_FLAGS) $(find_print_list)
 
 .PHONY: list-javascript-files

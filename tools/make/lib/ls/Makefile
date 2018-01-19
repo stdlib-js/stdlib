@@ -280,6 +280,9 @@ else
 	find_kernel_prefix :=
 endif
 
+# Define a suffix for pretty printing results as a list:
+find_print_list := -exec printf '%s\n' {} \;
+
 
 # DEPENDENCIES #
 

@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_python_tests_fixtures_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_PYTHON_TESTS_FIXTURES_FLAGS ?= \
 	-type f \
@@ -47,6 +44,6 @@ PYTHON_TESTS_FIXTURES ?= $(shell $(FIND_PYTHON_TESTS_FIXTURES_CMD))
 # This target prints a newline-delimited list of test fixture files.
 
 list-tests-fixtures-python:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PYTHON_TESTS_FIXTURES_FLAGS) $(find_print_python_tests_fixtures_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PYTHON_TESTS_FIXTURES_FLAGS) $(find_print_list)
 
 .PHONY: list-tests-fixtures-python

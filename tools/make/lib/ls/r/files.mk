@@ -18,9 +18,6 @@
 
 # VARIABLES #
 
-# Define a suffix for pretty printing results as a list:
-find_print_r_list := -exec printf '%s\n' {} \;
-
 # Define the command flags:
 FIND_R_FLAGS ?= \
 	-type f \
@@ -46,6 +43,6 @@ R_FILES ?= $(shell $(FIND_R_CMD))
 # This target prints a list of all R files.
 
 list-r-files:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_R_FLAGS) $(find_print_r_list)
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_R_FLAGS) $(find_print_list)
 
 .PHONY: list-r-files
