@@ -356,5 +356,6 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/r/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wasm/Makefile
