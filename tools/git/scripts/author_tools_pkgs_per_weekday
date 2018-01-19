@@ -32,7 +32,7 @@ pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
 #   - Tabulate the weekday totals.
 "${pkg_json}" | awk '
 # Skip non-tools `package.json`:
-$9 !~ /^tools\// {
+$9 !~ /^tools\/|\/_tools\// {
 	next
 }
 
