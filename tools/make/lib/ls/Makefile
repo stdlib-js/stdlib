@@ -240,13 +240,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures_r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/benchmarks/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples_c.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples_cpp.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples_fortran.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples_julia.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples_python.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/examples_r.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/examples/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/c.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/fortran.mk
