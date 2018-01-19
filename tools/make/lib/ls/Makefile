@@ -257,7 +257,6 @@ FIND_SOURCES_EXCLUDE_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
 # Text fixtures exclude flags:
