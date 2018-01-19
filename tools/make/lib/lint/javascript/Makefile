@@ -18,8 +18,8 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/lint/jshint.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/eslint.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/jshint.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/eslint.mk
 
 
 # RULES #

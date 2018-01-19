@@ -20,7 +20,7 @@
 
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/javascript.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/julia/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/license_headers.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown/Makefile
