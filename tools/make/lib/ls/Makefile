@@ -219,6 +219,84 @@ WAT_FILTER ?= .*/.*
 PACKAGES_FILTER ?= .*/.*
 
 
+# Benchmark exclude flags:
+FIND_BENCHMARKS_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
+	-not -path "$(DIST_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+# Examples exclude flags:
+FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
+	-not -path "$(DIST_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/fixtures/*"
+
+# Files exclude flags:
+FIND_FILES_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(DIST_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+# Sources exclude flags:
+FIND_SOURCES_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
+	-not -path "$(DIST_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+# Text fixtures exclude flags:
+FIND_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
+	-not -path "$(DIST_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+
 # DEPENDENCIES #
 
 # Note: keep in alphabetical order

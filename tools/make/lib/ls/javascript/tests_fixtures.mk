@@ -35,16 +35,7 @@ FIND_TESTS_FIXTURES_FLAGS ?= \
 	-name "$(TESTS_FIXTURES_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/**" \
 	-regex "$(TESTS_FIXTURES_FILTER)" \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
+	$(FIND_TESTS_FIXTURES_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
 	FIND_TESTS_FIXTURES_FLAGS := -regextype posix-extended $(FIND_TESTS_FIXTURES_FLAGS)

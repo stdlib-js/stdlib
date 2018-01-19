@@ -34,19 +34,7 @@ FIND_JULIA_SOURCES_FLAGS ?= \
 	-type f \
 	-name "$(JULIA_SOURCES_PATTERN)" \
 	-regex "$(SOURCES_FILTER)" \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
+	$(FIND_SOURCES_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
 	FIND_JULIA_SOURCES_FLAGS := -regextype posix-extended $(FIND_JULIA_SOURCES_FLAGS)

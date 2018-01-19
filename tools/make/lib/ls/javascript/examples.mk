@@ -35,16 +35,7 @@ FIND_EXAMPLES_FLAGS ?= \
 	-name "$(EXAMPLES_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/**" \
 	-regex "$(EXAMPLES_FILTER)" \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/fixtures/*"
+	$(FIND_EXAMPLES_EXCLUDE_FLAGS)
 
 
 ifneq ($(OS), Darwin)
