@@ -63,6 +63,12 @@ lint-license-headers-files: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 #/
 # Lints license headers in JavaScript files.
 #
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each context-specific (`lint-license-header-javascript-<context>`) prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained JavaScript files.
+#
+#
 # @example
 # make lint-license-headers-javascript
 #/
