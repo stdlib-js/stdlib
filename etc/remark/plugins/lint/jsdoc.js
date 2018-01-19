@@ -381,31 +381,6 @@ plugins.push([
 ]);
 
 /**
-* Require table padding.
-*
-* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
-*
-* @example
-* <!-- Bad -->
-*
-* |Beep|Boop|
-* |----|----|
-* |foo |bar |
-*
-* @example
-* <!-- Good -->
-*
-* | Beep | Boop |
-* | ---- | ---- |
-* | foo  | bar  |
-*
-*/
-plugins.push([
-	require( 'remark-lint-table-cell-padding' ),
-	[ 'error', 'padded' ]
-]);
-
-/**
 * Require that the unordered list marker be a dash `-`.
 *
 * @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
