@@ -50,8 +50,8 @@ markdown-examples-javascript: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | grep 'README.md' | grep -v '/_tools/' | grep -v '/stdlib/tools/' | while read -r file; do \
 		echo ""; \
 		echo "Running Markdown JavaScript examples: $$file"; \
-		NODE_ENV=$(NODE_ENV_EXAMPLES) \
-		NODE_PATH=$(NODE_PATH_EXAMPLES) \
+		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
 		$(REMARK) $$file \
 			$(REMARK_RUN_JAVASCRIPT_EXAMPLES_FLAGS) \
 			$(REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN_FLAGS) || exit 1; \
@@ -68,8 +68,8 @@ markdown-examples-javascript-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Running Markdown JavaScript examples: $$file"; \
-		NODE_ENV=$(NODE_ENV_EXAMPLES) \
-		NODE_PATH=$(NODE_PATH_EXAMPLES) \
+		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
 		$(REMARK) $$file \
 			$(REMARK_RUN_JAVASCRIPT_EXAMPLES_FLAGS) \
 			$(REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN_FLAGS) || exit 1; \

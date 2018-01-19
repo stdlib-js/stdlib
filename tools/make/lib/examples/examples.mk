@@ -26,8 +26,8 @@ examples: $(NODE_MODULES)
 	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running example: $$file"; \
-		NODE_ENV=$(NODE_ENV_EXAMPLES) \
-		NODE_PATH=$(NODE_PATH_EXAMPLES) \
+		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
 		$(NODE) $$file || exit 1; \
 	done
 
@@ -42,8 +42,8 @@ examples-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Running example: $$file"; \
-		NODE_ENV=$(NODE_ENV_EXAMPLES) \
-		NODE_PATH=$(NODE_PATH_EXAMPLES) \
+		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
 		$(NODE) $$file || exit 1; \
 	done
 
