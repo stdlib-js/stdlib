@@ -222,7 +222,18 @@ PACKAGES_PATTERN ?= package.json
 PACKAGES_FILTER ?= .*/.*
 
 
-# Common exclude flags (Note: order does matter to some degree):
+# Minimum set of exclude flags (Note: order does matter to some degree):
+FIND_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.git/*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+# Common exclude flags that most recipes should use (Note: order does matter to some degree):
 FIND_COMMON_EXCLUDE_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
@@ -253,15 +264,7 @@ FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
 FIND_FILES_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 
 # Markdown exclude flags:
-FIND_MARKDOWN_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.git/*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+FIND_MARKDOWN_EXCLUDE_FLAGS ?= $(FIND_EXCLUDE_FLAGS)
 
 # Packages exclude flags:
 FIND_PACKAGES_EXCLUDE_FLAGS ?= \

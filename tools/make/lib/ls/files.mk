@@ -23,12 +23,7 @@ FIND_FILES_FLAGS ?= \
 	-type f \
 	-name "$(FILES_PATTERN)" \
 	-regex "$(FILES_FILTER)" \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*"
+	$(FIND_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
 	FIND_FILES_FLAGS := -regextype posix-extended $(FIND_FILES_FLAGS)
