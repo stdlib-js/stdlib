@@ -91,7 +91,7 @@ for ( i = 0; i < names.length; i++ ) {
 	text = removePuncutation( text );
 	text = replace( text, RE_LIST_MARKS, '' );
 	text = replace( text, RE_WHITESPACE, '|' );
-	text = replace( text, /\|$/, '' ); // remove final `|` (if present)
+	text = replace( text, /\|$/, '' ); // Remove final `|` (if present)
 
 	debug( 'Storing license text using SPDX identifier: %s.', id );
 	LICENSES[ id ] = {
