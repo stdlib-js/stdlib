@@ -236,9 +236,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/python.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/r.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/sources/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wasm.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wat.mk
