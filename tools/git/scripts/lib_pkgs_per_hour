@@ -44,7 +44,7 @@ $9 !~ /lib\/node_modules\/\@stdlib\// {
 }
 
 # Skip "tools" `package.json`:
-$9 ~ /_tools/ {
+$9 ~ /\/_tools\// {
 	next
 }
 
