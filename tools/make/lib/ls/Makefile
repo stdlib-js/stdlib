@@ -273,6 +273,13 @@ FIND_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(TOOLS_PKGS_DIR)/*"
 
+# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
+ifeq ($(OS), Darwin)
+	find_kernel_prefix := -E
+else
+	find_kernel_prefix :=
+endif
+
 
 # DEPENDENCIES #
 
