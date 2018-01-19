@@ -330,6 +330,13 @@ FIND_TOOLS_TESTS_DIRS_EXCLUDE_FLAGS ?= \
 	-not -path "*/snippets/*" \
 	-not -path "*/make/lib/*"
 
+# Tools tests fixtures exclude flags:
+FIND_TOOLS_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
+	-not -path "$(TOOLS_DIR)/test" \
+	-not -path "$(TOOLS_PKGS_DIR)/test" \
+	-not -path "*/snippets/*" \
+	-not -path "*/make/lib/*"
+
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 ifeq ($(OS), Darwin)
 	find_kernel_prefix := -E
@@ -358,4 +365,5 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests_directories.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wasm/Makefile
