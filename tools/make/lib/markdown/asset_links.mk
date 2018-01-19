@@ -39,6 +39,6 @@ RAWGIT_URL_FLAGS ?= \
 # This target generates an asset link based on the current Git hash for inclusion in a project Markdown file.
 
 markdown-asset-link: $(NODE_MODULES)
-	$(QUIET) $(RAWGIT_URL) $(RAWGIT_URL_FLAGS) $(MARKDOWN_ASSET_PATH)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(RAWGIT_URL) $(RAWGIT_URL_FLAGS) $(MARKDOWN_ASSET_PATH)
 
 .PHONY: markdown-asset-link

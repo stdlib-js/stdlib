@@ -32,7 +32,7 @@ LIST_INSTALLED_PACKAGES_FLAGS ?=
 # This target prints a list of all installed package dependencies.
 
 list-pkgs-installed: $(NODE_MODULES) $(LIST_INSTALLED_PACKAGES)
-	$(QUIET) $(NODE) $(LIST_INSTALLED_PACKAGES) $(LIST_INSTALLED_PACKAGES_FLAGS) $(ROOT_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_INSTALLED_PACKAGES) $(LIST_INSTALLED_PACKAGES_FLAGS) $(ROOT_DIR)
 
 .PHONY: list-pkgs-installed
 

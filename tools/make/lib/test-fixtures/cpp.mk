@@ -28,7 +28,7 @@ test-fixtures-cpp:
 		echo "Generating test fixtures: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
-		BOOST=$(DEPS_BOOST_BUILD_OUT) $(MAKE) && \
+		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 
@@ -45,7 +45,7 @@ test-fixtures-cpp-files:
 		echo "Generating test fixtures: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
-		BOOST=$(DEPS_BOOST_BUILD_OUT) $(MAKE) && \
+		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 

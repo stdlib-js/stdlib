@@ -39,10 +39,10 @@ lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examp
 
 lint-javascript-src:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) $(MAKE) -f $(this_file) jshint-src
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-src
 else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
-	$(QUIET) $(MAKE) -f $(this_file) eslint-src
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-src
 endif
 endif
 
@@ -55,10 +55,10 @@ endif
 
 lint-javascript-tests:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) $(MAKE) -f $(this_file) jshint-tests
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-tests
 else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
-	$(QUIET) $(MAKE) -f $(this_file) eslint-tests
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-tests
 endif
 endif
 
@@ -71,10 +71,10 @@ endif
 
 lint-javascript-examples:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) $(MAKE) -f $(this_file) jshint-examples
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-examples
 else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
-	$(QUIET) $(MAKE) -f $(this_file) eslint-examples
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-examples
 endif
 endif
 
@@ -87,10 +87,10 @@ endif
 
 lint-javascript-benchmarks:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) $(MAKE) -f $(this_file) jshint-benchmarks
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-benchmarks
 else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
-	$(QUIET) $(MAKE) -f $(this_file) eslint-benchmarks
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-benchmarks
 endif
 endif
 
@@ -103,10 +103,10 @@ endif
 
 lint-javascript-files:
 ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) $(MAKE) -f $(this_file) jshint-files
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) jshint-files
 else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
-	$(QUIET) $(MAKE) -f $(this_file) eslint-files
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-files
 endif
 endif
 

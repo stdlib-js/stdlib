@@ -18,8 +18,8 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/lint/codecov.mk
-include $(TOOLS_MAKE_LIB_DIR)/lint/travis.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/conf/codecov.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/conf/travis.mk
 
 
 # RULES #

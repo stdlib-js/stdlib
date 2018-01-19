@@ -39,8 +39,8 @@ benchmark-javascript: $(NODE_MODULES)
 	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
-		NODE_ENV=$(NODE_ENV_BENCHMARK) \
-		NODE_PATH=$(NODE_PATH_BENCHMARK) \
+		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
+		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
 		$(NODE) $$file || exit 1; \
 	done
 
@@ -64,8 +64,8 @@ benchmark-javascript-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
-		NODE_ENV=$(NODE_ENV_BENCHMARK) \
-		NODE_PATH=$(NODE_PATH_BENCHMARK) \
+		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
+		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
 		$(NODE) $$file || exit 1; \
 	done
 

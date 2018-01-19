@@ -32,6 +32,6 @@ LIST_PACKAGE_TREE_FLAGS ?=
 # This target prints a list of all packages as a tree.
 
 list-pkgs-tree: $(LIST_PACKAGE_TREE) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(LIST_PACKAGE_TREE) $(LIST_PACKAGE_TREE_FLAGS) $(SRC_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_TREE) $(LIST_PACKAGE_TREE_FLAGS) $(SRC_DIR)
 
 .PHONY: list-pkgs-tree

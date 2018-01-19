@@ -44,6 +44,11 @@ $9 !~ /lib\/node_modules\/\@stdlib\// {
 	next
 }
 
+# Skip "tools" `package.json`:
+$9 ~ /\/_tools\// {
+	next
+}
+
 # Added a `package.json`:
 $8 == "A" {
 	pkgs[yr] += 1

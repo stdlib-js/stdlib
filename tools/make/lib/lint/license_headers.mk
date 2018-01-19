@@ -55,13 +55,19 @@ lint-license-headers-files: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Linting: $$file"; \
-		NODE_PATH=$(NODE_PATH) $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS) $$file || exit 1; \
+		NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS) $$file || exit 1; \
 	done
 
 .PHONY: lint-license-headers-files
 
 #/
 # Lints license headers in JavaScript files.
+#
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each context-specific (`lint-license-header-javascript-<context>`) prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained JavaScript files.
+#
 #
 # @example
 # make lint-license-headers-javascript
@@ -74,7 +80,6 @@ lint-license-headers-javascript: lint-license-headers-javascript-src lint-licens
 # Lints license headers in JavaScript source files.
 #
 # @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [SOURCES_PATTERN] - filename pattern (e.g., `*.js`)
 #
 # @example
 # make lint-license-headers-javascript-src
@@ -83,7 +88,7 @@ lint-license-headers-javascript: lint-license-headers-javascript-src lint-licens
 # make lint-license-headers-javascript-src SOURCES_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-src
 
@@ -91,7 +96,6 @@ lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # Lints license headers in JavaScript test files.
 #
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [TESTS_PATTERN] - filename pattern (e.g., `test*.js`)
 #
 # @example
 # make lint-license-headers-javascript-tests
@@ -100,7 +104,7 @@ lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-tests TESTS_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-tests
 
@@ -108,7 +112,6 @@ lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # Lints license headers in JavaScript examples files.
 #
 # @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [EXAMPLES_PATTERN] - filename pattern (e.g., `*.js`)
 #
 # @example
 # make lint-license-headers-javascript-examples
@@ -117,7 +120,7 @@ lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-examples EXAMPLES_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-examples
 
@@ -125,7 +128,6 @@ lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # Lints license headers in JavaScript benchmark files.
 #
 # @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/utils/group-by/.*`)
-# @param {string} [BENCHMARKS_PATTERN] - filename pattern (e.g., `benchmark*.js`)
 #
 # @example
 # make lint-license-headers-javascript-benchmarks
@@ -134,6 +136,6 @@ lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-benchmarks BENCHMARKS_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-benchmarks

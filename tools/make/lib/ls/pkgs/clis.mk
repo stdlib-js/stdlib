@@ -32,6 +32,6 @@ LIST_PACKAGE_CLIS_FLAGS ?=
 # This target prints a list of all package command-line interfaces.
 
 list-pkgs-clis: $(LIST_PACKAGE_CLIS) $(NODE_MODULES)
-	$(QUIET) $(NODE) $(LIST_PACKAGE_CLIS) $(LIST_PACKAGE_CLIS_FLAGS) $(SRC_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_CLIS) $(LIST_PACKAGE_CLIS_FLAGS) $(SRC_DIR)
 
 .PHONY: list-pkgs-clis

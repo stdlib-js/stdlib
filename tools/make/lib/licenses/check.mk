@@ -50,7 +50,7 @@ CHECK_LICENSES_PRODUCTION ?= \
 # This target checks the license for each package dependency against a list of permitted licenses.
 
 check-licenses: $(NODE_MODULES)
-	$(QUIET) $(CHECK_LICENSES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(CHECK_LICENSES)
 
 .PHONY: check-licenses
 
@@ -60,6 +60,6 @@ check-licenses: $(NODE_MODULES)
 # This target checks the license for each package dependency against a list of permitted licenses.
 
 check-licenses-production: $(NODE_MODULES)
-	$(QUIET) $(CHECK_LICENSES_PRODUCTION)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(CHECK_LICENSES_PRODUCTION)
 
 .PHONY: check-licenses-production
