@@ -54,7 +54,7 @@ endif
 # TODO: make robust to long file lists.
 
 test-browsers: $(NODE_MODULES)
-	$(QUIET) NODE_ENV=$(NODE_ENV_TEST) \
+	$(QUIET) NODE_ENV="$(NODE_ENV_TEST)" \
 	NODE_PATH="$(NODE_PATH_TEST)" \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_BROWSER_TEST_FLAGS) \
