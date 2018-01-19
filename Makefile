@@ -102,13 +102,19 @@ SRC_FOLDER ?= src
 TESTS_FOLDER ?= test
 
 # Define the folder name convention for test fixtures:
-TESTS_FIXTURES_FOLDER ?= test/fixtures
+TESTS_FIXTURES_FOLDER ?= $(TESTS_FOLDER)/fixtures
 
 # Define the folder name convention for examples files:
 EXAMPLES_FOLDER ?= examples
 
+# Define the folder name convention for examples fixtures:
+EXAMPLES_FIXTURES_FOLDER ?= $(EXAMPLES_FOLDER)/fixtures
+
 # Define the folder name convention for benchmark files:
 BENCHMARKS_FOLDER ?= benchmark
+
+# Define the folder name convention for benchmark fixtures:
+BENCHMARKS_FIXTURES_FOLDER ?= (BENCHMARKS_FOLDER)/fixtures
 
 # Define the folder name convention for executables:
 BIN_FOLDER ?= bin
