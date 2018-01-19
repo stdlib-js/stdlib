@@ -249,6 +249,17 @@ FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
 # Files exclude flags:
 FIND_FILES_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 
+# Markdown exclude flags:
+FIND_MARKDOWN_EXCLUDE_FLAGS ?= \
+	-not -path "$(ROOT_DIR)/.git/*" \
+	-not -path "$(NODE_MODULES)/*" \
+	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(TMP_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
 # Sources exclude flags:
 FIND_SOURCES_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \

@@ -23,14 +23,7 @@ FIND_MARKDOWN_FLAGS ?= \
 	-type f \
 	-name "$(MARKDOWN_PATTERN)" \
 	-regex "$(MARKDOWN_FILTER)" \
-	-not -path "$(ROOT_DIR)/.git/*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(TMP_DIR)/*"
+	$(FIND_MARKDOWN_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
 	FIND_MARKDOWN_FLAGS := -regextype posix-extended $(FIND_MARKDOWN_FLAGS)
