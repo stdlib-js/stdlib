@@ -23,4 +23,6 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/benchmarks.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/examples.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/sources.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/tests_fixtures.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/tools_tests.mk

@@ -228,11 +228,11 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/fortran/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/julia/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/ls/markdown.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/r/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wasm.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/wat.mk

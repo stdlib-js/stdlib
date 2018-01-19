@@ -18,6 +18,5 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests/directories.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests/javascript.mk
-include $(TOOLS_MAKE_LIB_DIR)/ls/tests/tools.mk
+# Note: keep in alphabetical order
+include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/files.mk
