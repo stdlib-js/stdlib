@@ -158,8 +158,8 @@ test-istanbul: $(NODE_MODULES) test-istanbul-instrument
 		echo ''; \
 		echo "Running tests in directory: $$dir"; \
 		echo ''; \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		TEST_MODE=coverage \
 		$(ISTANBUL_TEST_RUNNER) \
 			$(ISTANBUL_TEST_RUNNER_FLAGS) \
@@ -187,8 +187,8 @@ test-istanbul-report: $(NODE_MODULES)
 # This target instruments source code, runs unit tests, and outputs a test coverage report.
 
 test-istanbul-cover: $(NODE_MODULES)
-	$(QUIET) NODE_ENV=$(NODE_ENV_TEST) \
-	NODE_PATH=$(NODE_PATH_TEST) \
+	$(QUIET) NODE_ENV="$(NODE_ENV_TEST)" \
+	NODE_PATH="$(NODE_PATH_TEST)" \
 	$(ISTANBUL_COVER) $(ISTANBUL_COVER_FLAGS) $(JAVASCRIPT_TEST) -- $(JAVASCRIPT_TEST_FLAGS) $(TESTS)
 
 .PHONY: test-istanbul-cover

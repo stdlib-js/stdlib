@@ -31,7 +31,7 @@ endif
 
 test-javascript-cov: clean-javascript-cov
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
-	$(QUIET) $(MAKE) -f $(this_file) test-istanbul
+	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" $(MAKE) -f $(this_file) test-istanbul
 endif
 
 .PHONY: test-javascript-cov

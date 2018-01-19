@@ -28,7 +28,7 @@ test-fixtures-c:
 		echo "Generating test fixtures: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
-		CEPHES=$(DEPS_CEPHES_BUILD_OUT) CEPHES_SRC="$(DEPS_CEPHES_SRC)" $(MAKE) && \
+		CEPHES="$(DEPS_CEPHES_BUILD_OUT)" CEPHES_SRC="$(DEPS_CEPHES_SRC)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 
@@ -45,7 +45,7 @@ test-fixtures-c-files:
 		echo "Generating test fixtures: $$file"; \
 		cd `dirname $$file` && \
 		$(MAKE) clean && \
-		CEPHES=$(DEPS_CEPHES_BUILD_OUT) CEPHES_SRC="$(DEPS_CEPHES_SRC)" $(MAKE) && \
+		CEPHES="$(DEPS_CEPHES_BUILD_OUT)" CEPHES_SRC="$(DEPS_CEPHES_SRC)" $(MAKE) && \
 		$(MAKE) run || exit 1; \
 	done
 

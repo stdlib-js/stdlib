@@ -42,7 +42,7 @@ BROWSER_TEST_FLAGS ?=
 # [1]: https://github.com/substack/testling
 
 view-testling: $(NODE_MODULES)
-	$(QUIET) NODE_ENV=$(NODE_ENV_TEST) \
+	$(QUIET) NODE_ENV="$(NODE_ENV_TEST)" \
 	$(BROWSERIFY) \
 		$(BROWSERIFY_FLAGS) \
 		$(TESTS) \
