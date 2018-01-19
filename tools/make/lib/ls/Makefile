@@ -335,16 +335,13 @@ FIND_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
 
 # Tools packages exclude flags:
 FIND_TOOLS_PACKAGES_EXCLUDE_FLAGS ?= \
+	-not -path "*/snippets/*" \
 	-not -path "*/$(BENCHMARKS_FOLDER)/*" \
 	-not -path "*/$(BIN_FOLDER)/*" \
 	-not -path "*/$(DATA_FOLDER)/*" \
 	-not -path "*/$(DIST_FOLDER)/*" \
 	-not -path "*/$(EXAMPLES_FOLDER)/*" \
-	-not -path "*/$(SOURCE_FOLDER)/*" \
-	-not -path "*/$(SRC_FOLDER)/*" \
-	-not -path "*/$(TESTS_FOLDER)/*" \
 	-not -path "*/$(CONFIG_FOLDER)/*" \
-	-not -path "*/$(DOCUMENTATION_FOLDER)/*" \
 	-not -path "*/$(SCRIPTS_FOLDER)/*"
 
 # Tools tests exclude flags:

@@ -44,6 +44,6 @@ TOOLS_PACKAGES ?= $(shell $(FIND_TOOLS_PACKAGES_CMD))
 # This target prints a list of all packages.
 
 list-tools-pkgs:
-	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_PACKAGES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_PACKAGES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-tools-pkgs
