@@ -18,20 +18,12 @@
 
 # VARIABLES #
 
-# Define a package filename identifier:
-PACKAGES_FILE ?= package.json
-
 # Define the command flags:
 FIND_PACKAGES_FLAGS ?= \
 	-type f \
-	-name "$(PACKAGES_FILE)" \
+	-name "$(PACKAGES_PATTERN)" \
 	-regex "$(PACKAGES_FILTER)" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
+	$(FIND_PACKAGES_EXCLUDE_FLAGS) \
 	-exec dirname {} \;
 
 ifneq ($(OS), Darwin)

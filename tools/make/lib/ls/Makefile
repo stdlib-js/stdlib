@@ -215,11 +215,14 @@ WAT_PATTERN ?= *.wat
 WAT_FILTER ?= .*/.*
 
 
+# Define a filename pattern for identifying packages:
+PACKAGES_PATTERN ?= package.json
+
 # Define a filepath pattern for packages:
 PACKAGES_FILTER ?= .*/.*
 
 
-# Common exclude flags:
+# Common exclude flags (Note: order does matter to some degree):
 FIND_COMMON_EXCLUDE_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
@@ -259,6 +262,22 @@ FIND_MARKDOWN_EXCLUDE_FLAGS ?= \
 	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+# Packages exclude flags:
+FIND_PACKAGES_EXCLUDE_FLAGS ?= \
+	$(FIND_COMMON_EXCLUDE_FLAGS) \
+	-not -path "$(DOCS_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BIN_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(DATA_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(DIST_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SOURCE_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SRC_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
 # Sources exclude flags:
 FIND_SOURCES_EXCLUDE_FLAGS ?= \
