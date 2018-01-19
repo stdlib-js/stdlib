@@ -55,7 +55,7 @@ lint-license-headers-files: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Linting: $$file"; \
-		NODE_PATH=$(NODE_PATH) $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS) $$file || exit 1; \
+		NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS) $$file || exit 1; \
 	done
 
 .PHONY: lint-license-headers-files
@@ -88,7 +88,7 @@ lint-license-headers-javascript: lint-license-headers-javascript-src lint-licens
 # make lint-license-headers-javascript-src SOURCES_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-src
 
@@ -104,7 +104,7 @@ lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-tests TESTS_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-tests
 
@@ -120,7 +120,7 @@ lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-examples EXAMPLES_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-examples
 
@@ -136,6 +136,6 @@ lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-benchmarks BENCHMARKS_FILTER=.*/utils/group-by/.*
 #/
 lint-license-headers-javascript-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH=$(NODE_PATH) $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-javascript-benchmarks
