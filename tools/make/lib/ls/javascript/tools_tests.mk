@@ -23,8 +23,7 @@ FIND_TOOLS_TESTS_FLAGS ?= \
 	-type f \
 	-name "$(TESTS_PATTERN)" \
 	-regex "$(TESTS_FILTER)" \
-	-not -path "*/fixtures/*" \
-	-not -path "*/snippets/*"
+	$(FIND_TOOLS_TESTS_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
 	FIND_TOOLS_TESTS_FLAGS := -regextype posix-extended $(FIND_TOOLS_TESTS_FLAGS)
