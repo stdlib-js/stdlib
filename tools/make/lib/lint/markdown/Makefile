@@ -19,7 +19,7 @@
 # DEPENDENCIES #
 
 ifeq ($(MARKDOWN_LINTER), remark)
-	include $(TOOLS_MAKE_LIB_DIR)/lint/remark.mk
+	include $(TOOLS_MAKE_LIB_DIR)/lint/markdown/remark.mk
 endif
 
 
