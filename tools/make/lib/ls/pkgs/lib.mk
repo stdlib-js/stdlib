@@ -19,22 +19,22 @@
 # VARIABLES #
 
 # Define the command flags:
-FIND_TOOLS_PACKAGES_FLAGS ?= \
+FIND_LIB_PACKAGES_FLAGS ?= \
 	-type f \
 	-name "$(PACKAGES_PATTERN)" \
 	-regex "$(PACKAGES_FILTER)" \
-	$(FIND_TOOLS_PACKAGES_EXCLUDE_FLAGS) \
+	$(FIND_LIB_PACKAGES_EXCLUDE_FLAGS) \
 	-exec dirname {} \;
 
 ifneq ($(OS), Darwin)
-	FIND_TOOLS_PACKAGES_FLAGS := -regextype posix-extended $(FIND_TOOLS_PACKAGES_FLAGS)
+	FIND_LIB_PACKAGES_FLAGS := -regextype posix-extended $(FIND_LIB_PACKAGES_FLAGS)
 endif
 
 # Define a command for listing packages:
-FIND_TOOLS_PACKAGES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TOOLS_PACKAGES_FLAGS)
+FIND_LIB_PACKAGES_CMD ?= find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAGES_FLAGS)
 
 # Define the list of packages:
-TOOLS_PACKAGES ?= $(shell $(FIND_TOOLS_PACKAGES_CMD))
+LIB_PACKAGES ?= $(shell $(FIND_LIB_PACKAGES_CMD))
 
 
 # TARGETS #
@@ -43,7 +43,7 @@ TOOLS_PACKAGES ?= $(shell $(FIND_TOOLS_PACKAGES_CMD))
 #
 # This target prints a list of all packages.
 
-list-tools-pkgs:
-	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_PACKAGES_FLAGS) | xargs printf '%s\n'
+list-lib-pkgs:
+	$(QUIET) find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAGES_FLAGS) | xargs printf '%s\n'
 
-.PHONY: list-tools-pkgs
+.PHONY: list-lib-pkgs

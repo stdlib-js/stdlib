@@ -266,6 +266,21 @@ FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
 # Files exclude flags:
 FIND_FILES_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 
+# Library packages exclude flags:
+FIND_LIB_PACKAGES_EXCLUDE_FLAGS ?= \
+	-not -path "$(TOOLS_PKGS_DIR)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(BIN_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(DATA_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(DIST_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SOURCE_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SRC_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
+
 # Markdown exclude flags:
 FIND_MARKDOWN_EXCLUDE_FLAGS ?= $(FIND_EXCLUDE_FLAGS)
 
