@@ -47,7 +47,7 @@ LINKS_ID2URI_FLAGS ?= \
 # This target creates a link entry in the link database.
 
 links-insert: $(NODE_MODULES)
-	$(QUIET) $(LINKS_INSERT) $(LINKS_INSERT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LINKS_INSERT) $(LINKS_INSERT_FLAGS)
 
 .PHONY: links-insert
 
@@ -57,7 +57,7 @@ links-insert: $(NODE_MODULES)
 # This target resolves a database link identifier from a URI.
 
 links-uri2id: $(NODE_MODULES)
-	$(QUIET) $(LINKS_URI2ID) $(LINKS_URI2ID_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LINKS_URI2ID) $(LINKS_URI2ID_FLAGS)
 
 .PHONY: links-uri2id
 
@@ -67,6 +67,6 @@ links-uri2id: $(NODE_MODULES)
 # This target resolves a database URI from an id.
 
 links-id2uri: $(NODE_MODULES)
-	$(QUIET) $(LINKS_ID2URI) $(LINKS_ID2URI_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LINKS_ID2URI) $(LINKS_ID2URI_FLAGS)
 
 .PHONY: links-id2uri
