@@ -219,82 +219,52 @@ WAT_FILTER ?= .*/.*
 PACKAGES_FILTER ?= .*/.*
 
 
-# Benchmark exclude flags:
-FIND_BENCHMARKS_EXCLUDE_FLAGS ?= \
+# Common exclude flags:
+FIND_COMMON_EXCLUDE_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/.*" \
 	-not -path "$(NODE_MODULES)/*" \
 	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "$(BUILD_DIR)/*" \
+	-not -path "$(DEPS_DIR)/*" \
+	-not -path "$(DIST_DIR)/*" \
+	-not -path "$(REPORTS_DIR)/*" \
 	-not -path "$(TMP_DIR)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+
+# Benchmark exclude flags:
+FIND_BENCHMARKS_EXCLUDE_FLAGS ?= \
+	$(FIND_COMMON_EXCLUDE_FLAGS) \
+	-not -path "$(TOOLS_DIR)/*" \
+	-not -path "$(TOOLS_PKGS_DIR)/*"
 
 # Examples exclude flags:
 FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	$(FIND_COMMON_EXCLUDE_FLAGS) \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/fixtures/*"
+	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FIXTURES_FOLDER)/*"
 
 # Files exclude flags:
-FIND_FILES_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+FIND_FILES_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 
 # Sources exclude flags:
 FIND_SOURCES_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	$(FIND_COMMON_EXCLUDE_FLAGS) \
 	-not -path "$(TOOLS_DIR)/*" \
 	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
 	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
+	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
 # Text fixtures exclude flags:
 FIND_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	$(FIND_COMMON_EXCLUDE_FLAGS) \
 	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+	-not -path "$(TOOLS_PKGS_DIR)/*"
 
 
 # DEPENDENCIES #
