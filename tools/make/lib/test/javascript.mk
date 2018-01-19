@@ -61,8 +61,8 @@ test-javascript-local: $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
 		echo ''; \
 		echo "Running test: $$test"; \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
@@ -80,8 +80,8 @@ test-javascript-files-local: $(NODE_MODULES)
 	$(QUIET) for test in $(FILES); do \
 		echo ''; \
 		echo "Running test: $$test"; \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
@@ -99,8 +99,8 @@ test-javascript-summary: $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
 		echo ''; \
 		echo "Running test: $$test"; \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
@@ -118,8 +118,8 @@ test-javascript-files-summary: $(NODE_MODULES)
 	$(QUIET) for test in $(FILES); do \
 		echo ''; \
 		echo "Running test: $$test"; \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
@@ -135,8 +135,8 @@ test-javascript-files-summary: $(NODE_MODULES)
 
 test-javascript-tap: $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test; \
@@ -151,8 +151,8 @@ test-javascript-tap: $(NODE_MODULES)
 
 test-javascript-files-tap: $(NODE_MODULES)
 	$(QUIET) for test in $(FILES); do \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test; \
@@ -167,8 +167,8 @@ test-javascript-files-tap: $(NODE_MODULES)
 
 test-javascript-xunit: $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
@@ -184,8 +184,8 @@ test-javascript-xunit: $(NODE_MODULES)
 
 test-javascript-files-xunit: $(NODE_MODULES)
 	$(QUIET) for test in $(FILES); do \
-		NODE_ENV=$(NODE_ENV_TEST) \
-		NODE_PATH=$(NODE_PATH_TEST) \
+		NODE_ENV="$(NODE_ENV_TEST)" \
+		NODE_PATH="$(NODE_PATH_TEST)" \
 		$(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
