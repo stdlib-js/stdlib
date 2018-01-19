@@ -59,6 +59,6 @@ dist-browser-bundles: $(NODE_MODULES)
 # make update-dist-readme-browser-bundle-stats
 #/
 update-dist-readme-browser-bundle-stats: $(NODE_MODULES)
-	$(QUIET) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS_FLAGS)
+	$(QUIET) NODE_PATH=$(NODE_PATH) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS) $(UPDATE_DIST_README_BROWSER_BUNDLE_STATS_FLAGS)
 
 .PHONY: update-dist-readme-browser-bundle-stats
