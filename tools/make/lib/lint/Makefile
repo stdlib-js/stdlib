@@ -22,6 +22,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/conf.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/filenames.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/julia.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/license_headers.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/python.mk
@@ -34,7 +35,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/r.mk
 #
 # This target lints all files.
 
-lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-conf lint-pkg-json
+lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-conf lint-pkg-json lint-license-headers
 
 .PHONY: lint
 
