@@ -75,6 +75,9 @@ CPP_TESTS_FIXTURES_PATTERN ?= *.cpp
 # Define a filename pattern for Fortran test fixtures:
 FORTRAN_TESTS_FIXTURES_PATTERN ?= *.f
 
+# Define a filename pattern for JavaScript test fixtures:
+JAVASCRIPT_TESTS_FIXTURES_PATTERN ?= *.js
+
 # Define a filename pattern for Julia test fixtures:
 JULIA_TESTS_FIXTURES_PATTERN ?= *.jl
 

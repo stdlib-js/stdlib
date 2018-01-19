@@ -19,22 +19,22 @@
 # VARIABLES #
 
 # Define the command flags:
-FIND_JAVASCRIPT_TESTS_FIXTURES_FLAGS ?= \
+FIND_TESTS_FIXTURES_FLAGS ?= \
 	-type f \
-	-name "$(JAVASCRIPT_TESTS_FIXTURES_PATTERN)" \
+	-name "$(TESTS_FIXTURES_PATTERN)" \
 	-path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/**" \
 	-regex "$(TESTS_FIXTURES_FILTER)" \
 	$(FIND_TESTS_FIXTURES_EXCLUDE_FLAGS)
 
 ifneq ($(OS), Darwin)
-	FIND_JAVASCRIPT_TESTS_FIXTURES_FLAGS := -regextype posix-extended $(FIND_JAVASCRIPT_TESTS_FIXTURES_FLAGS)
+	FIND_TESTS_FIXTURES_FLAGS := -regextype posix-extended $(FIND_TESTS_FIXTURES_FLAGS)
 endif
 
 # Define a command to list files:
-FIND_JAVASCRIPT_TESTS_FIXTURES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_JAVASCRIPT_TESTS_FIXTURES_FLAGS)
+FIND_TESTS_FIXTURES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS)
 
 # Define the list of files:
-JAVASCRIPT_TESTS_FIXTURES ?= $(shell $(FIND_JAVASCRIPT_TESTS_FIXTURES_CMD))
+TESTS_FIXTURES ?= $(shell $(FIND_TESTS_FIXTURES_CMD))
 
 
 # TARGETS #
@@ -43,7 +43,7 @@ JAVASCRIPT_TESTS_FIXTURES ?= $(shell $(FIND_JAVASCRIPT_TESTS_FIXTURES_CMD))
 #
 # This target prints a newline-delimited list of test fixture files.
 
-list-tests-fixtures-javascript:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_JAVASCRIPT_TESTS_FIXTURES_FLAGS) $(find_print_list)
+list-tests-fixtures:
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TESTS_FIXTURES_FLAGS) $(find_print_list)
 
-.PHONY: list-tests-fixtures-javascript
+.PHONY: list-tests-fixtures
