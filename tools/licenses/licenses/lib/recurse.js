@@ -59,6 +59,7 @@ function recurse( cache, pkg ) {
 		'pkg': pkg.realPath,
 		'repo': getRepo( pkg )
 	};
+
 	// Assemble the real filepath of the package's `package.json`:
 	fpath = join( pkg.realPath, 'package.json' );
 	debug( '%s `package.json`: %s.', id, fpath );

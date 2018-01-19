@@ -36,7 +36,7 @@ function infer( pkgs, pattern, clbk ) {
 			'realpath': true
 		};
 		debug( 'Searching for package files in directory: %s. Pattern: %s.', dir, pattern );
-		glob( dir+'/'+pattern, opts, onGlob( i ) );
+		glob( dir+'/'+pattern, opts, onGlobFactory( i ) );
 	}
 	/**
 	* Returns a callback to be invoked after matching files.
@@ -45,23 +45,26 @@ function infer( pkgs, pattern, clbk ) {
 	* @param {NonNegativeInteger} idx - index
 	* @returns {Callback} callback
 	*/
-	function onGlob( idx ) {
+	function onGlobFactory( idx ) {
 		var pkg = pkgs[ idx ].pkg;
+		return onGlob;
+
 		/**
 		* Callback invoked after matching files.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {(StringArray|EmptyArray)} files - matching files
+		* @returns {void}
 		*/
-		return function onGlob( error, files ) {
+		function onGlob( error, files ) {
 			if ( error ) {
 				debug( 'Encountered an error when searching for files in directory: %s. Error: %s.', pkg, error.message );
 				return clbk( error );
 			}
 			debug( 'Found %d files matching search criteria in directory: %s.', files.length, pkg );
 			readFiles( files, onRead );
-		}; // end FUNCTION onGlob()
+		} // end FUNCTION onGlobFactory()
 
 		/**
 		* Callback invoked upon reading files.
@@ -69,6 +72,7 @@ function infer( pkgs, pattern, clbk ) {
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {Object} files - files
+		* @returns {void}
 		*/
 		function onRead( error, files ) {
 			var licenses;

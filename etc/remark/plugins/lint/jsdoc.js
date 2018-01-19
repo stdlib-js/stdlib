@@ -242,16 +242,6 @@ plugins.push([
 ]);
 
 /**
-* Allow consecutive blank lines.
-*
-* @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
-*/
-plugins.push([
-	require( 'remark-lint-no-consecutive-blank-lines' ),
-	[ 'off' ]
-]);
-
-/**
 * Require blank lines between block nodes.
 *
 * @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
@@ -388,31 +378,6 @@ plugins.push([
 plugins.push([
 	require( 'remark-lint-strong-marker' ),
 	[ 'error', '*' ]
-]);
-
-/**
-* Require table padding.
-*
-* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
-*
-* @example
-* <!-- Bad -->
-*
-* |Beep|Boop|
-* |----|----|
-* |foo |bar |
-*
-* @example
-* <!-- Good -->
-*
-* | Beep | Boop |
-* | ---- | ---- |
-* | foo  | bar  |
-*
-*/
-plugins.push([
-	require( 'remark-lint-table-cell-padding' ),
-	[ 'error', 'padded' ]
 ]);
 
 /**

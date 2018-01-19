@@ -14,6 +14,7 @@ var readFile = require( '@stdlib/fs/read-file' );
 * @private
 * @param {StringArray} files - file list
 * @param {Callback} clbk - callback to invoke after reading files
+* @returns {void}
 */
 function readFiles( files, clbk ) {
 	var count;
@@ -33,7 +34,7 @@ function readFiles( files, clbk ) {
 	debug( 'Reading %d files...', files.length );
 	for ( i = 0; i < files.length; i++ ) {
 		debug( 'Reading file: %s.', files[ i ] );
-		readFile( files[ i ], opts, onRead( i ) );
+		readFile( files[ i ], opts, onReadFactory( i ) );
 	}
 	/**
 	* Returns a callback to be invoked upon reading a file.
@@ -42,15 +43,18 @@ function readFiles( files, clbk ) {
 	* @param {NonNegativeInteger} idx - index
 	* @returns {Callback} callback
 	*/
-	function onRead( idx ) {
+	function onReadFactory( idx ) {
+		return onRead;
+
 		/**
 		* Callback to be invoked upon reading a file.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {(Buffer|string)} data - file content
+		* @returns {void}
 		*/
-		return function onRead( error, data ) {
+		function onRead( error, data ) {
 			if ( error ) {
 				debug( 'Encountered an error while attempting to read file: %s. Error: %s.', files[ idx ], error.message );
 				return clbk( error );
@@ -65,8 +69,8 @@ function readFiles( files, clbk ) {
 				debug( 'Finished reading files.' );
 				clbk( null, out );
 			}
-		}; // end FUNCTION onRead()
-	} // end FUNCTION onRead()
+		} // end FUNCTION onRead()
+	} // end FUNCTION onReadFactory()
 } // end FUNCTION readFiles()
 
 

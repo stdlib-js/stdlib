@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the path of the linter executable:
-PACKAGE_JSON_LINTER ?= $(TOOLS_DIR)/lint/pkg-json/bin/cli
+PACKAGE_JSON_LINTER ?= $(TOOLS_PKGS_DIR)/lint/pkg-json/bin/cli
 
 # Define the command-line options to be used when invoking the executable:
 PACKAGE_JSON_LINTER_FLAGS ?=

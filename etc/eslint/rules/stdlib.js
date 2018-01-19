@@ -353,7 +353,7 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * @memberof rules
 * @type {Array}
 * @default [ 'error', '`' ]
-* @see [definition-case]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
+* @see [fenced-code-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
 *
 * @example
 * // Bad...
@@ -459,7 +459,7 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [final-definition]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
+* @see [hard-break-spaces]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-hard-break-spaces}
 *
 * @example
 * // Bad...
@@ -713,7 +713,7 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
+* @see [no-auto-link-without-protocol]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-auto-link-without-protocol}
 *
 * @example
 * // Bad...
@@ -762,7 +762,7 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
+* @see [no-blockquote-without-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-blockquote-without-marker}
 *
 * @example
 * // Bad...
@@ -809,13 +809,67 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 
 /**
+* Do not allow too many consecutive blank lines.
+*
+* @name jsdoc-no-consecutive-blank-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * ## Methods
+* *
+* *
+* * Discuss methods.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * ## Methods
+* *
+* * Discuss methods.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-consecutive-blank-lines' ] = 'off';
+
+/**
 * Do not allow duplicate definitions.
 *
 * @name jsdoc-no-duplicate-definitions
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
+* @see [no-duplicate-definitions]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-definitions}
 *
 * @example
 * // Bad...
@@ -865,7 +919,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-definitions' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
+* @see [no-duplicate-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings}
 *
 * @example
 * // Bad...
@@ -926,7 +980,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [list-item-bullet-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
+* @see [no-duplicate-headings-in-section]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-duplicate-headings-in-section}
 *
 * @example
 * // Bad...
@@ -1653,6 +1707,57 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
+
+/**
+* Require table cell padding.
+*
+* @name jsdoc-table-cell-padding
+* @memberof rules
+* @type {string}
+* @default [ 'error', 'padded' ]
+* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * |Beep|Boop|
+* * |----|----|
+* * |foo |bar |
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * | Beep | Boop |
+* * | ---- | ---- |
+* * | foo  | bar  |
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
 
 /**
 * Prevent unneeded indentation before tables.
