@@ -26,38 +26,38 @@ FILES_FILTER ?= .*/.*
 
 
 # Define a filename pattern for source files:
-SOURCES_PATTERN ?= *.js
+SOURCES_PATTERN ?= *.$(JAVASCRIPT_FILENAME_EXT)
 
 # Define a filename pattern for C source files:
-C_SOURCES_PATTERN ?= *.c
+C_SOURCES_PATTERN ?= *.$(C_FILENAME_EXT)
 
 # Define a filename pattern for C++ source files:
-CPP_SOURCES_PATTERN ?= *.cpp
+CPP_SOURCES_PATTERN ?= *.$(CPP_FILENAME_EXT)
 
 # Define a filename pattern for Fortran source files:
-FORTRAN_SOURCES_PATTERN ?= *.f
+FORTRAN_SOURCES_PATTERN ?= *.$(FORTRAN_FILENAME_EXT)
 
 # Define a filename pattern for Julia source files:
-JULIA_SOURCES_PATTERN ?= *.jl
+JULIA_SOURCES_PATTERN ?= *.$(JULIA_FILENAME_EXT)
 
 # Define a filename pattern for Python source files:
-PYTHON_SOURCES_PATTERN ?= *.py
+PYTHON_SOURCES_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 
 # Define a filename pattern for R source files:
-R_SOURCES_PATTERN ?= *.R
+R_SOURCES_PATTERN ?= *.$(R_FILENAME_EXT)
 
 # Define a filename pattern for WebAssembly source files:
-WASM_SOURCES_PATTERN ?= *.wasm
+WASM_SOURCES_PATTERN ?= *.$(WASM_FILENAME_EXT)
 
 # Define a filename pattern for WebAssembly source text files:
-WAT_SOURCES_PATTERN ?= *.wat
+WAT_SOURCES_PATTERN ?= *.$(WAT_FILENAME_EXT)
 
 # Define a filepath pattern for source files:
 SOURCES_FILTER ?= .*/.*
 
 
 # Define a filename pattern for test files:
-TESTS_PATTERN ?= test*.js
+TESTS_PATTERN ?= test*.$(JAVASCRIPT_FILENAME_EXT)
 
 # Define a filepath pattern for test files:
 TESTS_FILTER ?= .*/.*
@@ -67,152 +67,152 @@ TESTS_FILTER ?= .*/.*
 TESTS_FIXTURES_PATTERN ?= *.*
 
 # Define a filename pattern for C test fixtures:
-C_TESTS_FIXTURES_PATTERN ?= *.c
+C_TESTS_FIXTURES_PATTERN ?= *.$(C_FILENAME_EXT)
 
 # Define a filename pattern for C++ test fixtures:
-CPP_TESTS_FIXTURES_PATTERN ?= *.cpp
+CPP_TESTS_FIXTURES_PATTERN ?= *.$(CPP_FILENAME_EXT)
 
 # Define a filename pattern for Fortran test fixtures:
-FORTRAN_TESTS_FIXTURES_PATTERN ?= *.f
+FORTRAN_TESTS_FIXTURES_PATTERN ?= *.$(FORTRAN_FILENAME_EXT)
 
 # Define a filename pattern for JavaScript test fixtures:
-JAVASCRIPT_TESTS_FIXTURES_PATTERN ?= *.js
+JAVASCRIPT_TESTS_FIXTURES_PATTERN ?= *.$(JAVASCRIPT_FILENAME_EXT)
 
 # Define a filename pattern for Julia test fixtures:
-JULIA_TESTS_FIXTURES_PATTERN ?= *.jl
+JULIA_TESTS_FIXTURES_PATTERN ?= *.$(JULIA_FILENAME_EXT)
 
 # Define a filename pattern for Python test fixtures:
-PYTHON_TESTS_FIXTURES_PATTERN ?= *.py
+PYTHON_TESTS_FIXTURES_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 
 # Define a filename pattern for R test fixtures:
-R_TESTS_FIXTURES_PATTERN ?= *.R
+R_TESTS_FIXTURES_PATTERN ?= *.$(R_FILENAME_EXT)
 
 # Define a filepath pattern for test fixture files:
 TESTS_FIXTURES_FILTER ?= .*/.*
 
 
 # Define a filename pattern for benchmark files:
-BENCHMARKS_PATTERN ?= benchmark*.js
+BENCHMARKS_PATTERN ?= benchmark*.$(JAVASCRIPT_FILENAME_EXT)
 
 # Define a filename pattern for C benchmark files:
-C_BENCHMARKS_PATTERN ?= benchmark*.c
+C_BENCHMARKS_PATTERN ?= benchmark*.$(C_FILENAME_EXT)
 
 # Define a filename pattern for C++ benchmark files:
-CPP_BENCHMARKS_PATTERN ?= benchmark*.cpp
+CPP_BENCHMARKS_PATTERN ?= benchmark*.$(CPP_FILENAME_EXT)
 
 # Define a filename pattern for Fortran benchmark files:
-FORTRAN_BENCHMARKS_PATTERN ?= benchmark*.f
+FORTRAN_BENCHMARKS_PATTERN ?= benchmark*.$(FORTRAN_FILENAME_EXT)
 
 # Define a filename pattern for Julia benchmark files:
-JULIA_BENCHMARKS_PATTERN ?= benchmark*.jl
+JULIA_BENCHMARKS_PATTERN ?= benchmark*.$(JULIA_FILENAME_EXT)
 
 # Define a filename pattern for Python benchmark files:
-PYTHON_BENCHMARKS_PATTERN ?= benchmark*.py
+PYTHON_BENCHMARKS_PATTERN ?= benchmark*.$(PYTHON_FILENAME_EXT)
 
 # Define a filename pattern for R benchmark files:
-R_BENCHMARKS_PATTERN ?= benchmark*.R
+R_BENCHMARKS_PATTERN ?= benchmark*.$(R_FILENAME_EXT)
 
 # Define a filepath pattern for benchmark files:
 BENCHMARKS_FILTER ?= .*/.*
 
 
 # Define a filename pattern for example files:
-EXAMPLES_PATTERN ?= *.js
+EXAMPLES_PATTERN ?= *.$(JAVASCRIPT_FILENAME_EXT)
 
 # Define a filename pattern for C example files:
-C_EXAMPLES_PATTERN ?= *.c
+C_EXAMPLES_PATTERN ?= *.$(C_FILENAME_EXT)
 
 # Define a filename pattern for C++ example files:
-CPP_EXAMPLES_PATTERN ?= *.cpp
+CPP_EXAMPLES_PATTERN ?= *.$(CPP_FILENAME_EXT)
 
 # Define a filename pattern for Fortran example files:
-FORTRAN_EXAMPLES_PATTERN ?= *.f
+FORTRAN_EXAMPLES_PATTERN ?= *.$(FORTRAN_FILENAME_EXT)
 
 # Define a filename pattern for Julia example files:
-JULIA_EXAMPLES_PATTERN ?= *.jl
+JULIA_EXAMPLES_PATTERN ?= *.$(JULIA_FILENAME_EXT)
 
 # Define a filename pattern for Python example files:
-PYTHON_EXAMPLES_PATTERN ?= *.py
+PYTHON_EXAMPLES_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 
 # Define a filename pattern for R example files:
-R_EXAMPLES_PATTERN ?= *.R
+R_EXAMPLES_PATTERN ?= *.$(R_FILENAME_EXT)
 
 # Define a filepath pattern for example files:
 EXAMPLES_FILTER ?= .*/.*
 
 
 # Define a filename pattern for C files:
-C_PATTERN ?= *.c
+C_PATTERN ?= *.$(C_FILENAME_EXT)
 
 # Define a filepath pattern for C files:
 C_FILTER ?= .*/.*
 
 
 # Define a filename pattern for C++ files:
-CPP_PATTERN ?= *.cpp
+CPP_PATTERN ?= *.$(CPP_FILENAME_EXT)
 
 # Define a filepath pattern for C++ files:
 CPP_FILTER ?= .*/.*
 
 
 # Define a filename pattern for Fortran files:
-FORTRAN_PATTERN ?= *.f
+FORTRAN_PATTERN ?= *.$(FORTRAN_FILENAME_EXT)
 
 # Define a filepath pattern for Fortran files:
 FORTRAN_FILTER ?= .*/.*
 
 
 # Define a filename pattern for JavaScript files:
-JAVASCRIPT_PATTERN ?= *.js
+JAVASCRIPT_PATTERN ?= *.$(JAVASCRIPT_FILENAME_EXT)
 
 # Define a filepath pattern for JavaScript files:
 JAVASCRIPT_FILTER ?= .*/.*
 
 
 # Define a filename pattern for Julia files:
-JULIA_PATTERN ?= *.jl
+JULIA_PATTERN ?= *.$(JULIA_FILENAME_EXT)
 
 # Define a filepath pattern for Julia files:
 JULIA_FILTER ?= .*/.*
 
 
 # Define a filename pattern for Markdown files:
-MARKDOWN_PATTERN ?= *.md
+MARKDOWN_PATTERN ?= *.$(MARKDOWN_FILENAME_EXT)
 
 # Define a filepath pattern for Markdown files:
 MARKDOWN_FILTER ?= .*/.*
 
 
 # Define a filename pattern for Python files:
-PYTHON_PATTERN ?= *.py
+PYTHON_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 
 # Define a filepath pattern for Python files:
 PYTHON_FILTER ?= .*/.*
 
 
 # Define a filename pattern for R files:
-R_PATTERN ?= *.R
+R_PATTERN ?= *.$(R_FILENAME_EXT)
 
 # Define a filepath pattern for R files:
 R_FILTER ?= .*/.*
 
 
 # Define a filename pattern for SVG equation files:
-SVG_EQUATIONS_PATTERN ?= equation*.svg
+SVG_EQUATIONS_PATTERN ?= equation*.$(SVG_FILENAME_EXT)
 
 # Define a filepath pattern for SVG equation files:
 SVG_EQUATIONS_FILTER ?= .*/.*
 
 
 # Define a filename pattern for WebAssembly files:
-WASM_PATTERN ?= *.wasm
+WASM_PATTERN ?= *.$(WASM_FILENAME_EXT)
 
 # Define a filepath pattern for WebAssembly files:
 WASM_FILTER ?= .*/.*
 
 
 # Define a filename pattern for WebAssembly text files:
-WAT_PATTERN ?= *.wat
+WAT_PATTERN ?= *.$(WAT_FILENAME_EXT)
 
 # Define a filepath pattern for WebAssembly text files:
 WAT_FILTER ?= .*/.*
