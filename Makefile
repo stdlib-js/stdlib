@@ -188,6 +188,7 @@ ifdef NODE_ENV
 	NODE_ENV_TEST := $(NODE_ENV)
 	NODE_ENV_WORKSHOPS := $(NODE_ENV)
 else
+	NODE_ENV ?=
 	NODE_ENV_BENCHMARK ?= benchmark
 	NODE_ENV_EXAMPLES ?= examples
 	NODE_ENV_REPL ?= repl
