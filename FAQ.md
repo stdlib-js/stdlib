@@ -111,7 +111,7 @@ This project
 Fundamentally, the use cases for numerical and scientific computing in JavaScript are the same as for any other commonly used language for numerical and scientific computation, such as MATLAB, R, Python, and Julia. For example,
 
 -   perform some sort of statistical analysis, such as computing summary statistics or hypothesis testing.
--   train and apply a statistical model (e.g., assign a probability as to whether `X` has `Y` given an observation `Z`).
+-   train and apply a statistical model (e.g., assign a probability as to whether `A` has characteristic `B` given an observation `Q`).
 -   cluster observations into a set of `N` distinct groups.
 -   determine the similarity of two or more datasets (i.e., can we reasonably distinguish `X` from `Y`?).
 -   assign a likelihood to unexpected events (i.e., all things being equal, how often should we expect to see a particular outcome were we to repeat our experiment hundreds, thousands or millions of times?).
