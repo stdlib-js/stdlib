@@ -20,26 +20,26 @@
 
 # Define the command for checking licenses:
 CHECK_LICENSES ?= \
-	$(LIST_LICENSES) \
+	NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 		--depth 0 \
-	| $(LICENSES_REPORTER_DEPS) \
-	| $(INFER_LICENSES) \
+	| NODE_PATH="$(NODE_PATH)" $(LICENSES_REPORTER_DEPS) \
+	| NODE_PATH="$(NODE_PATH)" $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
-	| $(LICENSES_REPORTER_EXCLUDED) \
+	| NODE_PATH="$(NODE_PATH)" $(LICENSES_REPORTER_EXCLUDED) \
 		--exclude $(LICENSES_WHITELIST)
 
 # Define the command for checking licenses for 'production' dependencies:
 CHECK_LICENSES_PRODUCTION ?= \
-	$(LIST_LICENSES) \
+	NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 		--depth 0 \
 		--no-dev \
-	| $(LICENSES_REPORTER_DEPS) \
+	| NODE_PATH="$(NODE_PATH)" $(LICENSES_REPORTER_DEPS) \
 		--no-dev \
-	| $(INFER_LICENSES) \
+	| NODE_PATH="$(NODE_PATH)" $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
-	| $(LICENSES_REPORTER_EXCLUDED) \
+	| NODE_PATH="$(NODE_PATH)" $(LICENSES_REPORTER_EXCLUDED) \
 		--exclude $(LICENSES_WHITELIST)
 
 
@@ -50,7 +50,7 @@ CHECK_LICENSES_PRODUCTION ?= \
 # This target checks the license for each package dependency against a list of permitted licenses.
 
 check-licenses: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(CHECK_LICENSES)
+	$(QUIET) $(CHECK_LICENSES)
 
 .PHONY: check-licenses
 
@@ -60,6 +60,6 @@ check-licenses: $(NODE_MODULES)
 # This target checks the license for each package dependency against a list of permitted licenses.
 
 check-licenses-production: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(CHECK_LICENSES_PRODUCTION)
+	$(QUIET) $(CHECK_LICENSES_PRODUCTION)
 
 .PHONY: check-licenses-production

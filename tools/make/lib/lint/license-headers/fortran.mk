@@ -46,7 +46,7 @@ lint-license-headers-fortran: lint-license-headers-fortran-src lint-license-head
 # make lint-license-headers-fortran-src SOURCES_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-src
 
@@ -62,7 +62,7 @@ lint-license-headers-fortran-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-fortran-tests TESTS_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-tests
 
@@ -78,7 +78,7 @@ lint-license-headers-fortran-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-fortran-examples EXAMPLES_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-examples
 
@@ -94,6 +94,6 @@ lint-license-headers-fortran-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-fortran-benchmarks BENCHMARKS_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-benchmarks

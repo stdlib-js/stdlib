@@ -46,7 +46,7 @@ lint-license-headers-python: lint-license-headers-python-src lint-license-header
 # make lint-license-headers-python-src SOURCES_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-src
 
@@ -62,7 +62,7 @@ lint-license-headers-python-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-python-tests TESTS_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-tests
 
@@ -78,7 +78,7 @@ lint-license-headers-python-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-python-examples EXAMPLES_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-examples
 
@@ -94,6 +94,6 @@ lint-license-headers-python-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-python-benchmarks BENCHMARKS_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-benchmarks

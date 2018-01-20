@@ -46,7 +46,7 @@ lint-license-headers-c: lint-license-headers-c-src lint-license-headers-c-tests 
 # make lint-license-headers-c-src SOURCES_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-src
 
@@ -62,7 +62,7 @@ lint-license-headers-c-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-c-tests TESTS_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-tests
 
@@ -78,7 +78,7 @@ lint-license-headers-c-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-c-examples EXAMPLES_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-examples
 
@@ -94,6 +94,6 @@ lint-license-headers-c-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-c-benchmarks BENCHMARKS_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-benchmarks

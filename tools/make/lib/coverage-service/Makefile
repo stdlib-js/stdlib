@@ -46,10 +46,10 @@ include $(TOOLS_MAKE_LIB_DIR)/coverage-service/coveralls.mk
 #/
 coverage:
 ifeq ($(COVERAGE_SERVICE), codecov)
-	$(QUIET) LCOV_INFO=$(LCOV_INFO) CI_SERVICE=$(CI_SERVICE) COVERAGE_NAME=$(COVERAGE_NAME) $(MAKE) -f $(this_file) coverage-codecov
+	$(QUIET) LCOV_INFO="$(LCOV_INFO)" CI_SERVICE="$(CI_SERVICE)" COVERAGE_NAME="$(COVERAGE_NAME)" $(MAKE) -f $(this_file) coverage-codecov
 else
 ifeq ($(COVERAGE_SERVICE), coveralls)
-	$(QUIET) LCOV_INFO=$(LCOV_INFO) CI_SERVICE=$(CI_SERVICE) COVERALLS_REPO_TOKEN=$(COVERALLS_REPO_TOKEN) $(MAKE) -f $(this_file) coverage-coveralls
+	$(QUIET) LCOV_INFO="$(LCOV_INFO)" CI_SERVICE="$(CI_SERVICE)" COVERALLS_REPO_TOKEN="$(COVERALLS_REPO_TOKEN)" $(MAKE) -f $(this_file) coverage-coveralls
 endif
 endif
 

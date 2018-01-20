@@ -23,7 +23,7 @@
 # This target lists the license for each package dependency in the package dependency tree.
 
 list-licenses: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 	| $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
@@ -37,7 +37,7 @@ list-licenses: $(NODE_MODULES)
 # This target groups the licenses of package dependencies by license type.
 
 list-licenses-group: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 	| $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
@@ -51,7 +51,7 @@ list-licenses-group: $(NODE_MODULES)
 # This target lists the license for each root package dependency.
 
 list-deps-licenses: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 		--depth 0 \
 	| $(INFER_LICENSES) \
@@ -66,7 +66,7 @@ list-deps-licenses: $(NODE_MODULES)
 # This target lists packages missing license information.
 
 list-missing-licenses: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 	| $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
@@ -80,7 +80,7 @@ list-missing-licenses: $(NODE_MODULES)
 # This target lists packages having ambiguous license information.
 
 list-ambiguous-licenses: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 	| $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
@@ -94,7 +94,7 @@ list-ambiguous-licenses: $(NODE_MODULES)
 # This target lists packages excluded license information.
 
 list-excluded-licenses: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 	| $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \
@@ -109,7 +109,7 @@ list-excluded-licenses: $(NODE_MODULES)
 # This target summaries package dependency license information.
 
 list-licenses-summary: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LIST_LICENSES) \
+	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
 	| $(INFER_LICENSES) \
 		$(INFER_LICENSES_FLAGS) \

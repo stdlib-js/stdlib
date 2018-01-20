@@ -50,7 +50,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/r.mk
 # make lint-license-headers
 #/
 lint-license-headers: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_FILES_CMD) | grep "$(license_header_filter)" | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_FILES_CMD) | grep "$(license_header_filter)" | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers
 

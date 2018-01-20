@@ -46,7 +46,7 @@ lint-license-headers-julia: lint-license-headers-julia-src lint-license-headers-
 # make lint-license-headers-julia-src SOURCES_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_SOURCES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-src
 
@@ -62,7 +62,7 @@ lint-license-headers-julia-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-julia-tests TESTS_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_TESTS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-tests
 
@@ -78,7 +78,7 @@ lint-license-headers-julia-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-julia-examples EXAMPLES_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_EXAMPLES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-examples
 
@@ -94,6 +94,6 @@ lint-license-headers-julia-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-julia-benchmarks BENCHMARKS_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_BENCHMARKS_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-benchmarks
