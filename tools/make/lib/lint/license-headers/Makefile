@@ -24,6 +24,9 @@ LICENSE_HEADER_LINT ?= $(TOOLS_PKGS_DIR)/lint/license-header-file-list/bin/cli
 # Define the command flags:
 LICENSE_HEADER_LINT_FLAGS ?=
 
+# Define a `grep` regex filter to allow only certain file types to be lint:
+license_header_filter := \(\.$(AWK_FILENAME_EXT)\|\.$(C_FILENAME_EXT)\|\.$(C_HEADER_FILENAME_EXT)\|\.$(CPP_FILENAME_EXT)\|\.$(CPP_HEADER_FILENAME_EXT)\|\.$(CSS_FILENAME_EXT)\|\.$(FORTRAN_FILENAME_EXT)\|\.$(GYP_FILENAME_EXT)\|\.$(GYPI_FILENAME_EXT)\|\.$(HTML_FILENAME_EXT)\|\.$(JAVASCRIPT_FILENAME_EXT)\|\.$(JULIA_FILENAME_EXT)\|\.$(MAKEFILE_FILENAME_EXT)\|\.$(MARKDOWN_FILENAME_EXT)\|\.$(PYTHON_FILENAME_EXT)\|\.$(R_FILENAME_EXT)\|\.$(SHELL_FILENAME_EXT)\|\.$(YAML_FILENAME_EXT)\|Makefile\)$$
+
 
 # DEPENDENCIES #
 
@@ -47,7 +50,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/r.mk
 # make lint-license-headers
 #/
 lint-license-headers: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_FILES_CMD) | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FIND_FILES_CMD) | grep "$(license_header_filter)" | $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers
 
