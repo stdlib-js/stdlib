@@ -129,7 +129,7 @@ Fundamentally, the use cases for numerical and scientific computing in JavaScrip
 
 In addition to the above, JavaScript has additional use cases by virtue of its being the _lingua franca_ of the web.
 
--   offline computation (i.e., an entirely client-side machine learning library does not require a network connection in order to execute commands as is the case, e.g., in the [Jupyter][jupyter] notebook computation model).
+-   offline computation in web applications (i.e., an entirely client-side machine learning library does not require a network connection in order to execute commands as is the case, e.g., in the [Jupyter][jupyter] notebook computation model).
 -   rapid prototyping and visualization.
 -   interactive explanations.
 
