@@ -28,7 +28,13 @@ LICENSE_HEADER_LINT_FLAGS ?=
 # DEPENDENCIES #
 
 # Note: keep in alphabetical order
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/c.
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/cpp.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/fortran.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/javascript.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/julia.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/python.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/r.mk
 
 
 # RULES #
