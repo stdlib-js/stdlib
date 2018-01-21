@@ -3362,6 +3362,20 @@
       "error"
     ]
   },
+  "https://nodejs.org/api/fs.html": {
+    "id": "node-fs",
+    "description": "Node.js documentation for filesystem APIs.",
+    "short_url": "",
+    "keywords": [
+      "node-js",
+      "nodejs",
+      "node.js",
+      "fs",
+      "filesystem",
+      "documentation",
+      "docs"
+    ]
+  },
   "https://nodejs.org/api/os.html#os_os_cpus": {
     "id": "node-os",
     "description": "Node.js documentation for the `cpus()` function of the `os` module.",
