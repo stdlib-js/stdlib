@@ -22,10 +22,10 @@
 
 // MODULES //
 
-var writeFileSync = require( 'fs' ).writeFileSync;
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var logger = require( 'debug' );
+var writeFileSync = require( '@stdlib/fs/write-file' ).sync;
 var completions = require( './completions' );
 
 

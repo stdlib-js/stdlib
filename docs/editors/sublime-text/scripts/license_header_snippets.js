@@ -22,12 +22,12 @@
 
 // MODULES //
 
-var writeFileSync = require( 'fs' ).writeFileSync;
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var logger = require( 'debug' );
 var getKeys = require( 'object-keys' ).shim();
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var writeFileSync = require( '@stdlib/fs/write-file' ).sync;
 var replace = require( '@stdlib/string/replace' );
 var licenseHeader = require( '@stdlib/_tools/licenses/header' );
 
