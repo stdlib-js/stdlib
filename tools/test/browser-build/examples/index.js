@@ -5,7 +5,7 @@ var resolve = require( 'path' ).resolve;
 var mkdirp = require( 'mkdirp' ).sync;
 var build = require( './../lib' );
 
-var root = join( __dirname, 'fixtures' ); // eslint-disable-line no-redeclare
+var root = join( __dirname, 'fixtures' ); // eslint-disable-line stdlib/no-redeclare
 var out = resolve( __dirname, '../build' );
 
 var opts = {

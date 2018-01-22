@@ -7,7 +7,7 @@ var resolve = require( 'path' ).resolve;
 
 // VARIABLES //
 
-var root = resolve( __dirname, './../../../../../lib/node_modules/' ); // eslint-disable-line no-redeclare
+var root = resolve( __dirname, './../../../../../lib/node_modules/' ); // eslint-disable-line stdlib/no-redeclare
 
 
 // MAIN //

@@ -3,7 +3,7 @@
 var join = require( 'path' ).join;
 var bundle = require( './../lib' );
 
-var root = join( __dirname, 'fixtures' ); // eslint-disable-line no-redeclare
+var root = join( __dirname, 'fixtures' ); // eslint-disable-line stdlib/no-redeclare
 
 var opts = {
 	'pattern': '*.js'
