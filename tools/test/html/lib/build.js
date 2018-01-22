@@ -9,7 +9,7 @@ var mustache = require( 'mustache' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var writeFile = require( '@stdlib/fs/write-file' );
+var writeFile = require( '@stdlib/fs/write-file' ); // eslint-disable-line stdlib/no-redeclare
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );
@@ -34,6 +34,7 @@ template = readFileSync( template, {
 * @param {string} [options.out] - output file path
 * @param {string} [options.title] - HTML title
 * @param {Callback} clbk - callback to invoke after generating file
+* @returns {void}
 * @throws {TypeError} first argument must be a string
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
@@ -89,7 +90,7 @@ function build( bundle, options, clbk ) {
 
 	if ( !opts.out ) {
 		// Don't release the zaglo...
-		return process.nextTick( onTick( html ) );
+		return process.nextTick( onTickFactory( html ) );
 	}
 	dir = cwd();
 	debug( 'Current working directory: %s', dir );
@@ -111,22 +112,25 @@ function build( bundle, options, clbk ) {
 	* @param {string} html - rendered HTML
 	* @returns {Callback} callback
 	*/
-	function onTick( html ) {
+	function onTickFactory( html ) {
+		return onTick;
+
 		/**
 		* Callback invoked on the next tick.
 		*
 		* @private
 		*/
-		return function onTick() {
+		function onTick() {
 			done( null, html );
-		}; // end FUNCTION onTick()
-	} // end FUNCTION onTick()
+		} // end FUNCTION onTick()
+	} // end FUNCTION onTickFactory()
 
 	/**
 	* Callback invoked upon writing to file.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onWrite( error ) {
 		if ( error ) {
@@ -143,6 +147,7 @@ function build( bundle, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {string} html - rendered HTML
+	* @returns {void}
 	*/
 	function done( error, html ) {
 		if ( error ) {
