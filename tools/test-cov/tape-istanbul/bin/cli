@@ -6,6 +6,7 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var parseArgs = require( 'minimist' );
+var writeFile = require( '@stdlib/fs/write-file' );
 var pkg = require( './../package.json' );
 var opts = require( './opts.json' );
 var runner = require( './../lib' );
@@ -123,5 +124,5 @@ function done( error, coverage ) {
 	opts = {
 		'encoding': 'utf8'
 	};
-	fs.writeFile( out, coverage, opts, onWrite );
+	writeFile( out, coverage, opts, onWrite );
 } // end FUNCTION done()

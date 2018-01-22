@@ -4,11 +4,11 @@
 
 var debug = require( 'debug' )( 'benchmarks:html' );
 var resolve = require( 'path' ).resolve;
-var writeFile = require( 'fs' ).writeFile;
 var mustache = require( 'mustache' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var writeFile = require( '@stdlib/fs/write-file' );
 var cwd = require( '@stdlib/utils/cwd' );
 var copy = require( '@stdlib/utils/copy' );
 var defaults = require( './defaults.json' );

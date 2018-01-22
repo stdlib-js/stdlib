@@ -5,8 +5,8 @@
 var debug = require( 'debug' )( 'remark-svg-equations-to-file:transformer' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
-var writeFile = require( 'fs' ).writeFile;
 var mkdirp = require( 'mkdirp' );
+var writeFile = require( '@stdlib/fs/write-file' );
 var visit = require( 'unist-util-visit' );
 var tex2svg = require( '@stdlib/_tools/utils/tex-equation-to-svg' );
 
