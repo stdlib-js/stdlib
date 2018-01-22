@@ -4,7 +4,6 @@
 
 var debug = require( 'debug' )( 'test:html' );
 var resolve = require( 'path' ).resolve;
-var writeFile = require( 'fs' ).writeFile;
 var mustache = require( 'mustache' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
@@ -38,6 +37,7 @@ template = readFileSync( template, {
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {TypeError} callback argument must be a function
+* @returns {void}
 *
 * @example
 * var bundle = '/foo/bar/bundle.js';
@@ -89,7 +89,7 @@ function build( bundle, options, clbk ) {
 
 	if ( !opts.out ) {
 		// Don't release the zaglo...
-		return process.nextTick( onTick( html ) );
+		return process.nextTick( onTickFactory( html ) );
 	}
 	dir = cwd();
 	debug( 'Current working directory: %s', dir );
@@ -111,22 +111,25 @@ function build( bundle, options, clbk ) {
 	* @param {string} html - rendered HTML
 	* @returns {Callback} callback
 	*/
-	function onTick( html ) {
+	function onTickFactory( html ) {
+		return onTick;
+
 		/**
 		* Callback invoked on the next tick.
 		*
 		* @private
 		*/
-		return function onTick() {
+		function onTick() {
 			done( null, html );
-		}; // end FUNCTION onTick()
-	} // end FUNCTION onTick()
+		} // end FUNCTION onTick()
+	} // end FUNCTION onTickFactory()
 
 	/**
 	* Callback invoked upon writing to file.
 	*
 	* @private
 	* @param {(Error|null)} error - error object
+	* @returns {void}
 	*/
 	function onWrite( error ) {
 		if ( error ) {
@@ -143,6 +146,7 @@ function build( bundle, options, clbk ) {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {string} html - rendered HTML
+	* @returns {void}
 	*/
 	function done( error, html ) {
 		if ( error ) {

@@ -145,7 +145,7 @@ function onBundle( error, bundle ) {
 ### Usage
 
 ```bash
-Usage: test-bundle [options] [dir]
+Usage: test-bundle [options] [<dir>]
 
 Options:
 
