@@ -2318,7 +2318,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 }];
 
 /**
-* Enforce that require() calls of files end with a whitelisted file extension.
+* Enforce that `require()` calls of files end with a whitelisted file extension.
 *
 * @name require-file-extensions
 * @memberof rules
@@ -2354,8 +2354,7 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 *
 * @name require-globals
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
 *
 * @example
 * // Bad...
