@@ -360,27 +360,6 @@ plugins.push([
 ]);
 
 /**
-* Set the strong marker to asterisks.
-*
-* @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
-*
-* @example
-* <!-- Bad -->
-*
-* __Beep__.
-*
-* @example
-* <!-- Good -->
-*
-* **Beep**.
-*
-*/
-plugins.push([
-	require( 'remark-lint-strong-marker' ),
-	[ 'error', '*' ]
-]);
-
-/**
 * Require that the unordered list marker be a dash `-`.
 *
 * @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
