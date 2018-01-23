@@ -332,33 +332,6 @@ plugins.push([
 	[ 'error', '* * *' ]
 ]);
 
-/**
-* Require that the unordered list marker be a dash `-`.
-*
-* @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
-*
-* @example
-* <!-- Bad -->
-*
-* *   Beep
-* *   Boop
-*
-* @example
-* <!-- Okay -->
-*
-* -   Beep
-*
-*     -   Foo
-*     -   Bar
-*
-* -   Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-unordered-list-marker-style' ),
-	[ 'error', '-' ]
-]);
-
 
 // EXPORTS //
 
