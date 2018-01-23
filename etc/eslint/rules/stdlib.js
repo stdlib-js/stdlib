@@ -1284,7 +1284,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 *
 * @name jsdoc-no-heading-punctuation
 * @memberof rules
-* @type {string}
+* @type {Array}
 * @default [ 'error', '.,;:!?' ]
 *
 * @example
