@@ -2183,7 +2183,7 @@ rules[ 'stdlib/new-cap-error' ] = 'error';
 rules[ 'stdlib/new-cap-regexp' ] = 'error';
 
 /**
-* Enforce that require() calls have only string literals as parameters.
+* Enforce that `require()` calls have only string literals as parameters.
 *
 * @name no-dynamic-require
 * @memberof rules
@@ -2202,7 +2202,7 @@ rules[ 'stdlib/new-cap-regexp' ] = 'error';
 rules[ 'stdlib/no-dynamic-require' ] = 'error';
 
 /**
-* Enforce that require() expressions are not immediately invoked.
+* Enforce that `require()` expressions are not immediately invoked.
 *
 * @name no-immediate-require
 * @memberof rules
@@ -2221,7 +2221,7 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'object-keys').shim() has been replaced
 
 /**
-* Disallow require() calls of another package's internals.
+* Disallow `require()` calls of another package's internals.
 *
 * @name no-internal-require
 * @memberof rules
@@ -2266,7 +2266,6 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 * @name no-redeclare
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'builtinGlobals': false, 'globalsWhitelist': [] } ]
 * @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
 *
 * @example
