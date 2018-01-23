@@ -809,12 +809,12 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 
 /**
-* Do not allow too many consecutive blank lines.
+* Do not allow too many consecutive blank lines. NOTE: disabled to allow some discretion in terms of layout and readability.
 *
 * @name jsdoc-no-consecutive-blank-lines
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
 *
 * @example
