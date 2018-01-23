@@ -1127,57 +1127,6 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 
 /**
-* Prevent headings from ending with specified characters.
-*
-* @name jsdoc-no-heading-punctuation
-* @memberof rules
-* @type {string}
-* @default [ 'error', '.,;:!?' ]
-*
-* @example
-* // Bad...
-*
-* /**
-* * Boop beep.
-* *
-* * ## Boop!
-* *
-* * Beep.
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*
-*
-* @example
-* // Good...
-*
-* /**
-* * Boop beep.
-* *
-* * ## Boop
-* *
-* * Beep.
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*/
-rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
-
-/**
 * Prevent indentation of heading content.
 *
 * @name jsdoc-no-heading-content-indent
@@ -1329,6 +1278,57 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
+
+/**
+* Prevent headings from ending with specified characters.
+*
+* @name jsdoc-no-heading-punctuation
+* @memberof rules
+* @type {string}
+* @default [ 'error', '.,;:!?' ]
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop!
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
 
 /**
 * Prevent HTML from being used.
