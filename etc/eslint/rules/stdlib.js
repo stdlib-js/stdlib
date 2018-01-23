@@ -1757,6 +1757,52 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 
 /**
+* Forbid the use of tabs.
+*
+* @name jsdoc-no-tabs
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep.
+* *
+* * -	List item starting with a tab.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep.
+* *
+* * -   List item starting with spaces.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
+
+/**
 * Require table cell padding.
 *
 * @name jsdoc-table-cell-padding
@@ -1806,52 +1852,6 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
-
-/**
-* Forbid the use of tabs.
-*
-* @name jsdoc-no-tabs
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-*
-* /**
-* * Beep.
-* *
-* * -	List item starting with a tab.
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*
-* @example
-* // Good...
-*
-* /**
-* * Beep.
-* *
-* * -   List item starting with spaces.
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*/
-rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
 
 /**
 * Prevent references to undefined definitions.
