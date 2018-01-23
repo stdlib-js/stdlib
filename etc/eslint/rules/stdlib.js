@@ -1567,7 +1567,7 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 
 /**
-* Forbid shell commands to be prefixed with `$` symbols.
+* Allow shell commands to be prefixed with `$` symbols.
 *
 * @name jsdoc-no-shell-dollars
 * @memberof rules
