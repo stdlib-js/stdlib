@@ -2385,7 +2385,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 }];
 
 /**
-* Enforce that typed array constructors are explicitly required.
+* Enforce formatting of section header comments.
 *
 * @name section-headers
 * @memberof rules
