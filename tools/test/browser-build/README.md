@@ -27,7 +27,7 @@ Given a `root` directory from which to search for tests and an output directory,
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var cwd = require( '@stdlib/utils/cwd' );
+var cwd = require( '@stdlib/process/cwd' );
 
 var root = cwd();
 var out = root;
@@ -59,7 +59,7 @@ To provide an alternative glob pattern, set the `pattern` option.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var cwd = require( '@stdlib/utils/cwd' );
+var cwd = require( '@stdlib/process/cwd' );
 
 var root = cwd();
 var out = root;
@@ -87,7 +87,7 @@ To mount a bundle on a URL path, set the `mount`option.
 <!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
-var cwd = require( '@stdlib/utils/cwd' );
+var cwd = require( '@stdlib/process/cwd' );
 
 var root = cwd();
 var out = root;
