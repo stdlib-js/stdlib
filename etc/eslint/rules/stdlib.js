@@ -2180,6 +2180,59 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 
 /**
+* Require that the unordered list marker be a dash `-`.
+*
+* @name jsdoc-unordered-list-marker-style
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '-' ]
+* @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * *   foo
+* * *   bar
+* * *   beep
+* * *   boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   foo
+* * -   bar
+* * -   beep
+* * -   boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
+
+/**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
 *
 * @name new-cap-array
