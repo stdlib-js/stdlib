@@ -1893,6 +1893,59 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 
 /**
+* Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
+*
+* @name jsdoc-ordered-list-marker-value
+* @memberof rules
+* @type {Array}
+* @default [ 'off', 'ordered' ]
+* @see [ordered-list-marker-value]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-value}
+*
+* @example
+* // Okay...
+*
+* /**
+* * Squares a number.
+* *
+* * 1. foo
+* * 1. bar
+* * 1. beep
+* * 1. boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * 1. foo
+* * 2. bar
+* * 3. beep
+* * 4. boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker
@@ -1907,7 +1960,6 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * /**
 * * Squares a __number__.
 * *
-* * @arg {number} x - input number
 * * @return {number} x squared
 * *
 * * @examples
@@ -1924,7 +1976,6 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * /**
 * * Squares a **number**.
 * *
-* * @arg {number} x - input number
 * * @return {number} x squared
 * *
 * * @examples
