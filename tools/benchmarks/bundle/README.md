@@ -25,7 +25,7 @@ var bundle = require( '@stdlib/tools/benchmarks/bundle' );
 Given a `root` directory from which to search for benchmarks, bundle benchmarks into a single file using [browserify][browserify].
 
 ```javascript
-var cwd = require( '@stdlib/utils/cwd' );
+var cwd = require( '@stdlib/process/cwd' );
 
 bundle( cwd(), clbk );
 
@@ -45,7 +45,7 @@ The function accepts the following `options`:
 To specify an output file path, set the `out` option.
 
 ```javascript
-var cwd = require( '@stdlib/utils/cwd' );
+var cwd = require( '@stdlib/process/cwd' );
 
 var opts = {
     'out': '/foo/bar/bundle.js'
@@ -68,7 +68,7 @@ function clbk( error, bool ) {
 To provide an alternative glob pattern, set the `pattern` option.
 
 ```javascript
-var cwd = require( '@stdlib/utils/cwd' );
+var cwd = require( '@stdlib/process/cwd' );
 
 var opts = {
     'pattern': '**/bench.js'
