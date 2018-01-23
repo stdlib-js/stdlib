@@ -1336,7 +1336,7 @@ rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
 * @name jsdoc-no-html
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default 'error'
 *
 * @example
 * // Bad...
@@ -1374,7 +1374,7 @@ rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
 *     return 'boop';
 * }
 */
-rules[ 'stdlib/jsdoc-no-html' ] = 'off';
+rules[ 'stdlib/jsdoc-no-html' ] = 'error';
 
 /**
 * Prevent inline padding of markers.
