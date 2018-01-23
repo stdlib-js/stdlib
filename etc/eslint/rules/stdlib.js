@@ -1942,7 +1942,7 @@ rules[ 'stdlib/jsdoc-strong-marker' ] = [ 'error', '*' ];
 *
 * @name jsdoc-table-cell-padding
 * @memberof rules
-* @type {string}
+* @type {Array}
 * @default [ 'error', 'padded' ]
 * @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
 *
