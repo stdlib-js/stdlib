@@ -312,33 +312,6 @@ plugins.push([
 ]);
 
 /**
-* Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
-*
-* @see [ordered-list-marker-value]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-value}
-*
-* @example
-* <!-- Okay -->
-*
-* 1. Foo
-* 2. Bar
-* 3. Beep
-* 4. Boop
-*
-* @example
-* <!-- Okay -->
-*
-* 1. Foo
-* 1. Bar
-* 1. Beep
-* 1. Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-ordered-list-marker-value' ),
-	[ 'off', 'ordered' ]
-]);
-
-/**
 * Require that the horizontal rule style be three consecutive asterisks `---`.
 *
 * @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
