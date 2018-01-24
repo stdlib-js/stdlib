@@ -2129,6 +2129,50 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 
 /**
+* Require that JSDoc tags follow a specified ordering.
+*
+* @name jsdoc-tag-ordering
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @arg {number} x - input number
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @return {number} x squared
+* * @arg {number} x - input number
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
+
+/**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
 *
 * @name new-cap-array
