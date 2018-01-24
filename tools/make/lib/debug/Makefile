@@ -72,7 +72,7 @@ assert.%:
 # make list-variables
 #/
 list-variables:
-	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
+	$(QUIET) $(FIND_TOOLS_MAKEFILES_CMD) \
 	| xargs grep -e '^[A-Z0-9_]\{1,\} ?=' -e '^[A-Za-z0-9_]\{1,\} :=' \
 	| awk '{print $$1}' \
 	| sed 's/.*:\(.*\)/\1/' \

@@ -46,7 +46,7 @@ help:
 # make list-rules
 #/
 list-rules:
-	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
+	$(QUIET) $(FIND_TOOLS_MAKEFILES_CMD) \
 	| xargs grep '^.PHONY: ' \
 	| awk '{print $$2}' \
 	| sort
@@ -64,7 +64,7 @@ list-rules:
 # make list-stats-rules
 #/
 list-stats-rules:
-	$(QUIET) find $(TOOLS_MAKE_DIR) $(FIND_MAKEFILES_FLAGS) \
+	$(QUIET) $(FIND_TOOLS_MAKEFILES_CMD) \
 	| xargs grep '^.PHONY: stats-' \
 	| awk '{print $$2}' \
 	| sort
