@@ -1033,6 +1033,51 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 
 /**
+* Do not allow JSDoc tags to appear more than once in a JSDoc comment.
+*
+* @name jsdoc-no-duplicate-tags
+* @memberof rules
+* @type {string}
+* @default [ 'error', { 'exceptions': [ 'example', 'param', 'see', 'throws' ] } ]
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-duplicate-tags' ] = 'error';
+
+/**
 * Prevent use of emphasis in place of a heading.
 *
 * @name jsdoc-no-emphasis-as-heading
