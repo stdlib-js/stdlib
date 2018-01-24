@@ -72,7 +72,7 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 * * >   This is a blockquote.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -91,7 +91,7 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 * * > This is a blockquote.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -121,7 +121,7 @@ rules[ 'stdlib/jsdoc-blockquote-indentation' ] = [ 'error', 2 ];
 * * -   [ ]   Item
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -140,7 +140,7 @@ rules[ 'stdlib/jsdoc-blockquote-indentation' ] = [ 'error', 2 ];
 * * -   [ ] Item
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -170,7 +170,7 @@ rules[ 'stdlib/jsdoc-checkbox-content-indent' ] = 'error';
 * *     y = x;
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -191,7 +191,7 @@ rules[ 'stdlib/jsdoc-checkbox-content-indent' ] = 'error';
 * * ```
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -221,7 +221,7 @@ rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 * * [Number]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -240,7 +240,7 @@ rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 * * [number]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -270,7 +270,7 @@ rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 * * [number   documentation]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -289,7 +289,7 @@ rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 * * [number documentation]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -317,7 +317,7 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 * * Squares a *number*.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -334,7 +334,7 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 * * Squares a _number_.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -366,7 +366,7 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * * ~~~
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -387,7 +387,7 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * * ```
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -419,7 +419,7 @@ rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
 * * Additional information.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -440,7 +440,7 @@ rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
 * * [number]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -471,7 +471,7 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * * spaces.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -491,7 +491,7 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * * spaces.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -517,7 +517,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 * /**
 * * returns a pseudo-random number on `[0,1]`
 * *
-* * @return {number} uniform random number
+* * @returns {number} uniform random number
 * *
 * * @example
 * * var y = rand();
@@ -533,7 +533,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 * /**
 * * Returns a pseudo-random number on `[0,1]`.
 * *
-* * @return {number} uniform random number
+* * @returns {number} uniform random number
 * *
 * * @example
 * * var y = rand();
@@ -563,7 +563,7 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 * *   -   Item
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -582,7 +582,7 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
 * * -   Item
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -614,7 +614,7 @@ rules[ 'stdlib/jsdoc-list-item-bullet-indent' ] = 'error';
 * *      1.  Item
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -635,7 +635,7 @@ rules[ 'stdlib/jsdoc-list-item-bullet-indent' ] = 'error';
 * *     1.  Item
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -669,7 +669,7 @@ rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
 * * Duplicate heading.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -690,7 +690,7 @@ rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
 * * Do this. Do that.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -724,7 +724,7 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 * * <foo@bar.com>
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -743,7 +743,7 @@ rules[ 'stdlib/jsdoc-markdown-remark' ] = [ 'error',
 * * <mailto:foo@bar.com>
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -775,7 +775,7 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 * * > ...blockquote.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -796,7 +796,7 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 * * > ...blockquote.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -829,7 +829,7 @@ rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 * * Discuss methods.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -850,7 +850,7 @@ rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 * * Discuss methods.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -881,7 +881,7 @@ rules[ 'stdlib/jsdoc-no-consecutive-blank-lines' ] = 'off';
 * * [number]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -900,7 +900,7 @@ rules[ 'stdlib/jsdoc-no-consecutive-blank-lines' ] = 'off';
 * * [number]: https://example.com
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -936,7 +936,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-definitions' ] = 'error';
 * * Discuss methods.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -961,7 +961,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-definitions' ] = 'error';
 * * Discuss notes.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -995,7 +995,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 * * ### Subheading
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -1020,7 +1020,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 * * ### Subheading
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -1050,7 +1050,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1071,7 +1071,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1097,7 +1097,7 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 * /**
 * * Boop [beep]().
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1114,7 +1114,7 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 * /**
 * * Boop [beep](http://foo.bar/baz).
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1144,7 +1144,7 @@ rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1165,7 +1165,7 @@ rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1195,7 +1195,7 @@ rules[ 'stdlib/jsdoc-no-heading-content-indent' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1216,7 +1216,7 @@ rules[ 'stdlib/jsdoc-no-heading-content-indent' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1246,7 +1246,7 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1267,7 +1267,7 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1297,7 +1297,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1318,7 +1318,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1346,7 +1346,7 @@ rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
 * *
 * * <h2>References</h2>
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1364,7 +1364,7 @@ rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
 * *
 * * ## References
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1390,7 +1390,7 @@ rules[ 'stdlib/jsdoc-no-html' ] = 'error';
 * /**
 * * Boop: _ beep _.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1407,7 +1407,7 @@ rules[ 'stdlib/jsdoc-no-html' ] = 'error';
 * /**
 * * Boop: _beep_.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1437,7 +1437,7 @@ rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 * *
 * * -   http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1457,7 +1457,7 @@ rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 * *
 * * -   <http://foo.bar/baz>
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1487,7 +1487,7 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 * *
 * *    Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1508,7 +1508,7 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 * *
 * * Beep.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1536,7 +1536,7 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * *
 * * [baz]: http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1554,7 +1554,7 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 * *
 * * [baz]: http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1584,7 +1584,7 @@ rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 * * $ echo beep
 * * ```
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1604,7 +1604,7 @@ rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 * * echo beep
 * * ```
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1632,7 +1632,7 @@ rules[ 'stdlib/jsdoc-no-shell-dollars' ] = 'off';
 * *
 * * [boop]: http://foo.bar/baz.png
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1650,7 +1650,7 @@ rules[ 'stdlib/jsdoc-no-shell-dollars' ] = 'off';
 * *
 * * [boop]: http://foo.bar/baz.png
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1678,7 +1678,7 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 * *
 * * [boop]: http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1696,7 +1696,7 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 * *
 * * [boop]: http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1725,7 +1725,7 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 * *   | x   | y    |
 * *   | any | boop |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1744,7 +1744,7 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 * * | x   | y    |
 * * | any | boop |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1772,7 +1772,7 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 * *
 * * -	List item starting with a tab.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1790,7 +1790,7 @@ rules[ 'stdlib/jsdoc-no-table-indentation' ] = 'error';
 * *
 * * -   List item starting with spaces.
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1816,7 +1816,7 @@ rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
 * /**
 * * Beep [boop][boop].
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1834,7 +1834,7 @@ rules[ 'stdlib/jsdoc-no-tabs' ] = 'error';
 * *
 * * [boop]: http://example.com
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1862,7 +1862,7 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 * *
 * * [beep]: http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1880,7 +1880,7 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 * *
 * * [beep]: http://foo.bar/baz
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -1912,7 +1912,7 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * * 1. beep
 * * 1. boop
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -1933,7 +1933,7 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * * 3. beep
 * * 4. boop
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -1960,7 +1960,7 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 * /**
 * * Squares a __number__.
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -1976,7 +1976,7 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 * /**
 * * Squares a **number**.
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2007,7 +2007,7 @@ rules[ 'stdlib/jsdoc-strong-marker' ] = [ 'error', '*' ];
 * * |----|----|
 * * |foo |bar |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -2027,7 +2027,7 @@ rules[ 'stdlib/jsdoc-strong-marker' ] = [ 'error', '*' ];
 * * | ---- | ---- |
 * * | foo  | bar  |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -2056,7 +2056,7 @@ rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
 * * | x | y |
 * * | any | boop |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -2075,7 +2075,7 @@ rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
 * * | x   | y    |
 * * | any | boop |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -2104,7 +2104,7 @@ rules[ 'stdlib/jsdoc-table-pipe-alignment' ] = 'error';
 * * x   | y
 * * any | boop
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -2123,7 +2123,7 @@ rules[ 'stdlib/jsdoc-table-pipe-alignment' ] = 'error';
 * * | x   | y    |
 * * | any | boop |
 * *
-* * @return {string} a value
+* * @returns {string} a value
 * *
 * * @example
 * * var str = beep();
@@ -2150,7 +2150,7 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 * * Squares a number.
 * *
 * * @arg {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2167,7 +2167,7 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 * * Squares a number.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2194,7 +2194,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * * Squares a number.
 * *
 * * @param {number} x - input number
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2210,7 +2210,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * /**
 * * Squares a number.
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * * @param {number} x - input number
 * *
 * * @example
@@ -2243,7 +2243,7 @@ rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
 * * *   beep
 * * *   boop
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2264,7 +2264,7 @@ rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
 * * -   beep
 * * -   boop
 * *
-* * @return {number} x squared
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
