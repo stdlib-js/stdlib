@@ -312,33 +312,6 @@ plugins.push([
 ]);
 
 /**
-* Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
-*
-* @see [ordered-list-marker-value]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-value}
-*
-* @example
-* <!-- Okay -->
-*
-* 1. Foo
-* 2. Bar
-* 3. Beep
-* 4. Boop
-*
-* @example
-* <!-- Okay -->
-*
-* 1. Foo
-* 1. Bar
-* 1. Beep
-* 1. Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-ordered-list-marker-value' ),
-	[ 'off', 'ordered' ]
-]);
-
-/**
 * Require that the horizontal rule style be three consecutive asterisks `---`.
 *
 * @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
@@ -357,54 +330,6 @@ plugins.push([
 plugins.push([
 	require( 'remark-lint-rule-style' ),
 	[ 'error', '* * *' ]
-]);
-
-/**
-* Set the strong marker to asterisks.
-*
-* @see [strong-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-strong-marker}
-*
-* @example
-* <!-- Bad -->
-*
-* __Beep__.
-*
-* @example
-* <!-- Good -->
-*
-* **Beep**.
-*
-*/
-plugins.push([
-	require( 'remark-lint-strong-marker' ),
-	[ 'error', '*' ]
-]);
-
-/**
-* Require that the unordered list marker be a dash `-`.
-*
-* @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
-*
-* @example
-* <!-- Bad -->
-*
-* *   Beep
-* *   Boop
-*
-* @example
-* <!-- Okay -->
-*
-* -   Beep
-*
-*     -   Foo
-*     -   Bar
-*
-* -   Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-unordered-list-marker-style' ),
-	[ 'error', '-' ]
 ]);
 
 

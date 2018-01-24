@@ -809,12 +809,12 @@ rules[ 'stdlib/jsdoc-no-auto-link-without-protocol' ] = 'error';
 rules[ 'stdlib/jsdoc-no-blockquote-without-marker' ] = 'error';
 
 /**
-* Do not allow too many consecutive blank lines.
+* Do not allow too many consecutive blank lines. NOTE: disabled to allow some discretion in terms of layout and readability.
 *
 * @name jsdoc-no-consecutive-blank-lines
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [no-consecutive-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-consecutive-blank-lines}
 *
 * @example
@@ -1127,57 +1127,6 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 
 /**
-* Prevent headings from ending with specified characters.
-*
-* @name jsdoc-no-heading-punctuation
-* @memberof rules
-* @type {string}
-* @default [ 'error', '.,;:!?' ]
-*
-* @example
-* // Bad...
-*
-* /**
-* * Boop beep.
-* *
-* * ## Boop!
-* *
-* * Beep.
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*
-*
-* @example
-* // Good...
-*
-* /**
-* * Boop beep.
-* *
-* * ## Boop
-* *
-* * Beep.
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*/
-rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
-
-/**
 * Prevent indentation of heading content.
 *
 * @name jsdoc-no-heading-content-indent
@@ -1331,12 +1280,63 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 
 /**
+* Prevent headings from ending with specified characters.
+*
+* @name jsdoc-no-heading-punctuation
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '.,;:!?' ]
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop!
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * Beep.
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-heading-punctuation' ] = [ 'error', '.,;:!?' ];
+
+/**
 * Prevent HTML from being used.
 *
 * @name jsdoc-no-html
 * @memberof rules
 * @type {string}
-* @default 'off'
+* @default 'error'
 *
 * @example
 * // Bad...
@@ -1374,7 +1374,7 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 *     return 'boop';
 * }
 */
-rules[ 'stdlib/jsdoc-no-html' ] = 'off';
+rules[ 'stdlib/jsdoc-no-html' ] = 'error';
 
 /**
 * Prevent inline padding of markers.
@@ -1567,7 +1567,7 @@ rules[ 'stdlib/jsdoc-no-paragraph-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-no-reference-like-url' ] = 'error';
 
 /**
-* Forbid shell commands to be prefixed with `$` symbols.
+* Allow shell commands to be prefixed with `$` symbols.
 *
 * @name jsdoc-no-shell-dollars
 * @memberof rules
@@ -1709,58 +1709,7 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
 
 /**
-* Require table cell padding.
-*
-* @name jsdoc-table-cell-padding
-* @memberof rules
-* @type {string}
-* @default [ 'error', 'padded' ]
-* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
-*
-* @example
-* // Bad...
-*
-* /**
-* * Boop beep.
-* *
-* * |Beep|Boop|
-* * |----|----|
-* * |foo |bar |
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*
-* @example
-* // Good...
-*
-* /**
-* * Boop beep.
-* *
-* * | Beep | Boop |
-* * | ---- | ---- |
-* * | foo  | bar  |
-* *
-* * @return {string} a value
-* *
-* * @examples
-* * var str = beep();
-* * // returns 'boop'
-* *\/
-* function beep() {
-*     return 'boop';
-* }
-*/
-rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
-
-/**
-* Prevent unneeded indentation before tables.
+* Prevent unnecessary indentation before tables.
 *
 * @name jsdoc-no-table-indentation
 * @memberof rules
@@ -1944,6 +1893,59 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 
 /**
+* Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
+*
+* @name jsdoc-ordered-list-marker-value
+* @memberof rules
+* @type {Array}
+* @default [ 'off', 'ordered' ]
+* @see [ordered-list-marker-value]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-value}
+*
+* @example
+* // Okay...
+*
+* /**
+* * Squares a number.
+* *
+* * 1. foo
+* * 1. bar
+* * 1. beep
+* * 1. boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * 1. foo
+* * 2. bar
+* * 3. beep
+* * 4. boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker
@@ -1958,7 +1960,6 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * /**
 * * Squares a __number__.
 * *
-* * @arg {number} x - input number
 * * @return {number} x squared
 * *
 * * @examples
@@ -1975,7 +1976,6 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * /**
 * * Squares a **number**.
 * *
-* * @arg {number} x - input number
 * * @return {number} x squared
 * *
 * * @examples
@@ -1987,6 +1987,57 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-strong-marker' ] = [ 'error', '*' ];
+
+/**
+* Require table cell padding.
+*
+* @name jsdoc-table-cell-padding
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'padded' ]
+* @see [table-cell-padding]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-table-cell-padding}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * |Beep|Boop|
+* * |----|----|
+* * |foo |bar |
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * | Beep | Boop |
+* * | ---- | ---- |
+* * | foo  | bar  |
+* *
+* * @return {string} a value
+* *
+* * @examples
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-table-cell-padding' ] = [ 'error', 'padded' ];
 
 /**
 * Require table pipes to be aligned.
@@ -2173,6 +2224,59 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
 
 /**
+* Require that the unordered list marker be a dash `-`.
+*
+* @name jsdoc-unordered-list-marker-style
+* @memberof rules
+* @type {Array}
+* @default [ 'error', '-' ]
+* @see [unordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-unordered-list-marker-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * *   foo
+* * *   bar
+* * *   beep
+* * *   boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   foo
+* * -   bar
+* * -   beep
+* * -   boop
+* *
+* * @return {number} x squared
+* *
+* * @examples
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
+
+/**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
 *
 * @name new-cap-array
@@ -2227,7 +2331,7 @@ rules[ 'stdlib/new-cap-error' ] = 'error';
 rules[ 'stdlib/new-cap-regexp' ] = 'error';
 
 /**
-* Enforce that require() calls have only string literals as parameters.
+* Enforce that `require()` calls have only string literals as parameters.
 *
 * @name no-dynamic-require
 * @memberof rules
@@ -2246,7 +2350,7 @@ rules[ 'stdlib/new-cap-regexp' ] = 'error';
 rules[ 'stdlib/no-dynamic-require' ] = 'error';
 
 /**
-* Enforce that require() expressions are not immediately invoked.
+* Enforce that `require()` expressions are not immediately invoked.
 *
 * @name no-immediate-require
 * @memberof rules
@@ -2265,7 +2369,7 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'object-keys').shim() has been replaced
 
 /**
-* Disallow require() calls of another package's internals.
+* Disallow `require()` calls of another package's internals.
 *
 * @name no-internal-require
 * @memberof rules
@@ -2310,7 +2414,6 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 * @name no-redeclare
 * @memberof rules
 * @type {Array}
-* @default [ 'error', { 'builtinGlobals': false, 'globalsWhitelist': [] } ]
 * @see [no-redeclare]{@link http://eslint.org/docs/rules/no-redeclare}
 *
 * @example
@@ -2363,7 +2466,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 }];
 
 /**
-* Enforce that require() calls of files end with a whitelisted file extension.
+* Enforce that `require()` calls of files end with a whitelisted file extension.
 *
 * @name require-file-extensions
 * @memberof rules
@@ -2399,8 +2502,7 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 *
 * @name require-globals
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
 *
 * @example
 * // Bad...
@@ -2431,7 +2533,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 }];
 
 /**
-* Enforce that typed array constructors are explicitly required.
+* Enforce formatting of section header comments.
 *
 * @name section-headers
 * @memberof rules
