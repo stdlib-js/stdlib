@@ -20,3 +20,4 @@
 
 # Note: keep in alphabetical order
 include $(TOOLS_MAKE_LIB_DIR)/ls/make/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/make/tools_files.mk
