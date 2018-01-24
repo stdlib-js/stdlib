@@ -20,6 +20,8 @@
 
 ifndef VERBOSE
 	QUIET := @
+else
+	QUIET :=
 endif
 
 
