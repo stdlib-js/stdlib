@@ -2696,42 +2696,6 @@ Code review.
 
 <!-- </rule> -->
 
-<!-- <rule> -->
-
-### Rule: Comment closing braces of long code blocks
-
-##### Reason
-
-Doing so helps lessen bracket hell when dealing with long code blocks.
-
-##### Good Example
-
-```javascript
-function longFunction() {
-    // [0] Do first thing.
-    firstThing();
-
-    // [1] Do second thing.
-    secondThing();
-
-    // [2] Do third thing.
-    thirdThing();
-
-    // ...
-
-    // [N-1] Do Nth thing.
-    nthThing();
-
-    return true;
-} // end FUNCTION longFunction()
-```
-
-##### Enforcement
-
-Code review.
-
-<!-- </rule> -->
-
 <!-- </rule-set> -->
 
 <!-- <rule-set> -->
