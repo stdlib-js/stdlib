@@ -517,7 +517,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 * /**
 * * returns a pseudo-random number on `[0,1]`
 * *
-* * @returns {number} uniform random number
+* * @return {number} uniform random number
 * *
 * * @example
 * * var y = rand();
@@ -533,7 +533,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 * /**
 * * Returns a pseudo-random number on `[0,1]`.
 * *
-* * @returns {number} uniform random number
+* * @return {number} uniform random number
 * *
 * * @example
 * * var y = rand();
@@ -2167,7 +2167,7 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 * * Squares a number.
 * *
 * * @param {number} x - input number
-* * @returns {number} x squared
+* * @return {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
