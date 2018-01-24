@@ -2211,7 +2211,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * * Squares a number.
 * *
 * * @return {number} x squared
-* * @para {number} x - input number
+* * @param {number} x - input number
 * *
 * * @example
 * * var y = square( 2.0 );
