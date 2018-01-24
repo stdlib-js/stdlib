@@ -183,6 +183,13 @@ MARKDOWN_PATTERN ?= *.$(MARKDOWN_FILENAME_EXT)
 MARKDOWN_FILTER ?= .*/.*
 
 
+# Define a filename pattern for Makefile files:
+MAKEFILE_PATTERN ?= *.$(MAKEFILE_FILENAME_EXT)
+
+# Define a file pattern for Makefile files:
+MAKEFILE_FILTER ?= .*/.*
+
+
 # Define a filename pattern for Python files:
 PYTHON_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 
@@ -280,6 +287,9 @@ FIND_LIB_PACKAGES_EXCLUDE_FLAGS ?= \
 	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
 	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
+
+# Makefile exclude flags:
+FIND_MAKEFILES_EXCLUDE_FLAGS ?= $(FIND_EXCLUDE_FLAGS)
 
 # Markdown exclude flags:
 FIND_MARKDOWN_EXCLUDE_FLAGS ?= $(FIND_EXCLUDE_FLAGS)
@@ -383,6 +393,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/files.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/fortran/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/javascript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/julia/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/make/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/python/Makefile

@@ -16,15 +16,6 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
-
-# Define command flags:
-FIND_MAKEFILES_FLAGS ?= \
-	-name 'Makefile' \
-	-o \
-	-name '*.mk'
-
-
 # RULES #
 
 #/

@@ -21,12 +21,6 @@
 # Define the path to the Makefile usage text file for displaying help information:
 MAKE_USAGE ?= $(TOOLS_MAKE_DIR)/usage.txt
 
-# Define command flags:
-FIND_MAKEFILES_FLAGS ?= \
-	-name 'Makefile' \
-	-o \
-	-name '*.mk'
-
 
 # RULES #
 
