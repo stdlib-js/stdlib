@@ -52,6 +52,6 @@ function main() {
 	args = cli.args();
 
 	foo( args[ 0 ] ); // TODO: implementation
-} // end FUNCTION main()
+}
 
 main();

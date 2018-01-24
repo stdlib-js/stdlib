@@ -31,7 +31,7 @@ function render( ctx ) {
 	children.push( header( ctx ) );
 
 	return h( ELEMENT, props, children );
-} // end FUNCTION render()
+}
 
 
 // EXPORTS //

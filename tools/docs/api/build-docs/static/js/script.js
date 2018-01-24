@@ -37,7 +37,7 @@
 		for ( i = 0; i < links.length; i++ ) {
 			addClickListener( links[ i ], onClick );
 		}
-	} // end FUNCTION main()
+	}
 
 	/**
 	* Callback invoked upon a change in the active history.
@@ -49,7 +49,7 @@
 		if ( evt.state && evt.state.url ) {
 			load( evt.state.url, false );
 		}
-	} // end FUNCTION onPopState()
+	}
 
 	/**
 	* Adds a `click` event listener.
@@ -65,7 +65,7 @@
 			// Non-standard IE8 and previous versions:
 			el.attachEvent( 'onclick', clbk );
 		}
-	} // end FUNCTION addClickListener()
+	}
 
 	/**
 	* Callback invoked upon a `click` event.
@@ -95,7 +95,7 @@
 
 		// Load the resource:
 		load( href, true );
-	} // end FUNCTION onClick()
+	}
 
 	/**
 	* Loads a resource.
@@ -156,6 +156,6 @@
 					history.pushState( state, '', url );
 				}
 			}
-		} // end FUNCTION onReady()
-	} // end FUNCTION load()
+		}
+	}
 })();

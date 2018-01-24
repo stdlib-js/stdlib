@@ -53,7 +53,7 @@ function merge( dest ) {
 		}
 	}
 	return dest;
-} // end FUNCTION merge()
+}
 
 
 // EXPORTS //

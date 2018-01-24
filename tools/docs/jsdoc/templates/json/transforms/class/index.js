@@ -39,7 +39,7 @@ function transform( node ) {
 		out.constructor.parameters = [];
 	}
 	return out;
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

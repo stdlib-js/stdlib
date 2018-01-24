@@ -43,8 +43,8 @@ function getExisting( files, clbk ) {
 		} else {
 			exists( files[ i ], onDone );
 		}
-	} // end FUNCTION onDone()
-} // end FUNCTION getExisting()
+	}
+}
 
 
 // EXPORTS //

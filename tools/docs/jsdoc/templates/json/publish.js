@@ -35,7 +35,7 @@ function publish( data ) {
 
 	// Write to stdout:
 	console.log( JSON.stringify( root ) );
-} // end FUNCTION publish()
+}
 
 
 // EXPORTS //

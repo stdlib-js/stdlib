@@ -143,7 +143,7 @@ function build( root, output, options, clbk ) {
 
 		debug( 'Creating HTML...' );
 		html( bundle, hopts, onHTML );
-	} // end FUNCTION onBundle()
+	}
 
 	/**
 	* Callback invoked after generating HTML.
@@ -158,7 +158,7 @@ function build( root, output, options, clbk ) {
 		}
 		debug( 'Successfully created HTML.' );
 		done( null, true );
-	} // end FUNCTION onHTML()
+	}
 
 	/**
 	* Callback invoked after completing build tasks.
@@ -172,8 +172,8 @@ function build( root, output, options, clbk ) {
 			return cb( error );
 		}
 		clbk( null, bool );
-	} // end FUNCTION done()
-} // end FUNCTION build()
+	}
+}
 
 
 // EXPORTS //

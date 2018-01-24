@@ -19,7 +19,7 @@ var transformer = require( './transformer.js' );
 */
 function attacher() {
 	return transformer;
-} // end FUNCTION attacher()
+}
 
 
 // EXPORTS //

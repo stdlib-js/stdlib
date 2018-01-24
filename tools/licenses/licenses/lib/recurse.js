@@ -93,7 +93,7 @@ function recurse( cache, pkg ) {
 		debug( 'Finished processing %s dependencies.', id );
 	}
 	return cache;
-} // end FUNCTION recurse()
+}
 
 
 // EXPORTS //

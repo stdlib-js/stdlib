@@ -35,7 +35,7 @@ function render( ctx ) {
 	children = [ label( ctx ) ];
 
 	return h( ELEMENT, props, children );
-} // end FUNCTION render()
+}
 
 
 // EXPORTS //

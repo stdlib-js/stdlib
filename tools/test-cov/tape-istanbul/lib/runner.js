@@ -102,7 +102,7 @@ function runner() {
 			return done( error );
 		}
 		readFiles( files );
-	} // end FUNCTION onGlob()
+	}
 
 	/**
 	* Reads files.
@@ -139,8 +139,8 @@ function runner() {
 			if ( count === files.length ) {
 				compileFiles( cache );
 			}
-		} // end FUNCTION onData()
-	} // end FUNCTION readFiles()
+		}
+	}
 
 	/**
 	* Returns a callback to be invoked upon reading a file.
@@ -163,7 +163,7 @@ function runner() {
 			}
 			clbk( id, data.toString() );
 		}; // end FUNCTION onRead()
-	} // end FUNCTION onRead()
+	}
 
 	/**
 	* Compiles source code.
@@ -181,7 +181,7 @@ function runner() {
 			code[ key ] = compile( key, code[ key ] );
 		}
 		evaluate( code );
-	} // end FUNCTION compileFiles()
+	}
 
 	/**
 	* Evaluates compiled code.
@@ -207,7 +207,7 @@ function runner() {
 			require = createRequire( filename );
 			fcn( require, filename, dirname( filename ) );
 		}
-	} // end FUNCTION evaluate()
+	}
 
 	/**
 	* Callback invoked upon completion.
@@ -220,8 +220,8 @@ function runner() {
 			return clbk( error );
 		}
 		clbk( null, coverage( opts.global ) );
-	} // end FUNCTION done()
-} // end FUNCTION runner()
+	}
+}
 
 
 // EXPORTS //

@@ -39,7 +39,7 @@ function attacher( options ) {
 	}
 	debug( 'Attaching a plugin configured with the following options: %s', JSON.stringify( opts ) );
 	return transformerFactory( opts );
-} // end FUNCTION attacher()
+}
 
 
 // EXPORTS //

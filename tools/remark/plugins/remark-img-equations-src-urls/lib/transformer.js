@@ -89,8 +89,8 @@ function factory( opts ) {
 				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
 			}
 		}// end FUNCTION visitor()
-	} // end FUNCTION transformer()
-} // end FUNCTION factory()
+	}
+}
 
 
 // EXPORTS //

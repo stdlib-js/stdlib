@@ -27,7 +27,7 @@ function render( ctx ) {
 	};
 
 	return h( ELEMENT, props, ctx.item );
-} // end FUNCTION render()
+}
 
 
 // EXPORTS //

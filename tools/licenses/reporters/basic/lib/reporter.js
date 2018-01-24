@@ -9,7 +9,7 @@
 */
 function reporter( results ) {
 	return results;
-} // end FUNCTION reporter()
+}
 
 
 // EXPORTS //

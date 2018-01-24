@@ -64,7 +64,7 @@ function infer( pkgs, pattern, clbk ) {
 			}
 			debug( 'Found %d files matching search criteria in directory: %s.', files.length, pkg );
 			readFiles( files, onRead );
-		} // end FUNCTION onGlobFactory()
+		}
 
 		/**
 		* Callback invoked upon reading files.
@@ -109,9 +109,9 @@ function infer( pkgs, pattern, clbk ) {
 				debug( 'Finished searching package files.' );
 				clbk( null, pkgs );
 			}
-		} // end FUNCTION onRead()
-	} // end FUNCTION onGlob()
-} // end FUNCTION infer()
+		}
+	}
+}
 
 
 // EXPORTS //

@@ -96,7 +96,7 @@ function main() {
 		for ( i = 0; i < lines.length; i++ ) {
 			console.log( TODO( lines[ i ] ) );
 		}
-	} // end FUNCTION onRead()
-} // end FUNCTION main()
+	}
+}
 
 main();

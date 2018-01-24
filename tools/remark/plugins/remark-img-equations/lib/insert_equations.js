@@ -93,7 +93,7 @@ function insertEquations( node, index, parent ) {
 			throw new Error( 'invalid node. Invalid equation comment. Ensure that the Markdown file includes both starting and ending equation comments. Node: `' + node.value + '`.' );
 		}
 	}
-} // end FUNCTION insertEquations()
+}
 
 
 // EXPORTS //

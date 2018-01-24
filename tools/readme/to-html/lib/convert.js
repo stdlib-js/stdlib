@@ -131,7 +131,7 @@ function convert( file, options, clbk ) {
 
 		debug( 'Converting file content to HTML...' );
 		toHTML( file, onHTML );
-	} // end FUNCTION onRead()
+	}
 
 	/**
 	* Callback invoked upon converting file content to HTML.
@@ -175,7 +175,7 @@ function convert( file, options, clbk ) {
 			'encoding': 'utf8'
 		};
 		writeFile( out, html, wopts, onWrite );
-	} // end FUNCTION onHTML()
+	}
 
 	/**
 	* Callback invoked upon writing to file.
@@ -191,7 +191,7 @@ function convert( file, options, clbk ) {
 		}
 		debug( 'Successfully wrote to file.' );
 		done();
-	} // end FUNCTION onWrite()
+	}
 
 	/**
 	* Callback invoked once finished.
@@ -209,8 +209,8 @@ function convert( file, options, clbk ) {
 			return cb( null, html );
 		}
 		cb();
-	} // end FUNCTION done()
-} // end FUNCTION convert()
+	}
+}
 
 
 // EXPORTS //

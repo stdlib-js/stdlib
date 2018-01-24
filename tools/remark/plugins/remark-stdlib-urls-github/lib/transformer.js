@@ -56,8 +56,8 @@ function factory( opts ) {
 				debug( 'Resolved URL: %s', node.url );
 			}
 		}// end FUNCTION visitor()
-	} // end FUNCTION transformer()
-} // end FUNCTION factory()
+	}
+}
 
 
 // EXPORTS //

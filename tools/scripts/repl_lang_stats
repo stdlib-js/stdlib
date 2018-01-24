@@ -56,7 +56,7 @@ function printResults( results ) {
 	str += 'RegExp:     '+results.regexp+'\n';
 	str += 'Constants:  '+results.constants+'\n';
 	console.log( str );
-} // end FUNCTION printResults()
+}
 
 
 // MAIN //
@@ -99,6 +99,6 @@ function main() {
 		}
 	}
 	printResults( stats );
-} // end FUNCTION main()
+}
 
 main();

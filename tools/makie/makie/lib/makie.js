@@ -63,7 +63,7 @@ function makie( dirpath, opts, target ) {
 
 	// Invoke the plugin:
 	plugin( dirpath, cwd, path || '' );
-} // end FUNCTION makie()
+}
 
 
 // EXPORTS //

@@ -18,7 +18,7 @@ var visitor = require( './insert_equations.js' );
 function transformer( tree ) {
 	debug( 'Processing virtual file...' );
 	visit( tree, 'html', visitor );
-} // end FUNCTION transformer()
+}
 
 
 // EXPORTS //

@@ -40,7 +40,7 @@ function scripts() {
 		out[ i ] = '<script type="text/javascript">' + script + '</script>';
 	}
 	return out;
-} // end FUNCTION scripts()
+}
 
 
 // EXPORTS //

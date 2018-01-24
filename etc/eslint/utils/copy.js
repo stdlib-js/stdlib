@@ -33,7 +33,7 @@
 */
 function copy( obj ) {
 	return JSON.parse( JSON.stringify( obj ) );
-} // end FUNCTION copy()
+}
 
 
 // EXPORTS //

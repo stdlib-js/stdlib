@@ -13,7 +13,7 @@ function wrap( src ) {
 	out += src;
 	out += '});';
 	return out;
-} // end FUNCTION wrap()
+}
 
 
 // EXPORTS //

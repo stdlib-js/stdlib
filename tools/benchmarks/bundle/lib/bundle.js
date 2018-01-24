@@ -110,7 +110,7 @@ function build( root, options, clbk ) {
 			return bundle( files, onBundle );
 		}
 		bundle( files, out, onBundle );
-	} // end FUNCTION onGlob()
+	}
 
 	/**
 	* Callback invoked upon creating a bundle.
@@ -129,8 +129,8 @@ function build( root, options, clbk ) {
 			return cb( null, bundle );
 		}
 		cb( null, true );
-	} // end FUNCTION onBundle()
-} // end FUNCTION build()
+	}
+}
 
 
 // EXPORTS //

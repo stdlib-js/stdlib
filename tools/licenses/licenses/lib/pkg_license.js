@@ -68,7 +68,7 @@ function license( pkg ) {
 	}
 	debug( 'Unable to find license information in `package.json`.' );
 	return null;
-} // end FUNCTION license()
+}
 
 
 // EXPORTS //

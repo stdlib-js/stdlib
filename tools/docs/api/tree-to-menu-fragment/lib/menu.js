@@ -83,7 +83,7 @@ function menu( tree, options ) {
 		}
 	}
 	return replace( out, '{{menu}}', str );
-} // end FUNCTION menu()
+}
 
 
 // EXPORTS //

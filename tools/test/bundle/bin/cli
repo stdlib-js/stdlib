@@ -24,7 +24,7 @@ function onBundle( error, bundle ) {
 		throw error;
 	}
 	console.log( bundle.toString() );
-} // end FUNCTION onBundle()
+}
 
 
 // MAIN //
@@ -66,6 +66,6 @@ function main() {
 		root = cwd();
 	}
 	bundle( root, opts, onBundle );
-} // end FUNCTION main()
+}
 
 main();

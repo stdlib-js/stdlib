@@ -37,7 +37,7 @@ function combine( a, b ) {
 		'tokenStore': tokenStore,
 		'pipeline': a.pipeline.slice()
 	};
-} // end FUNCTION combine()
+}
 
 
 // EXPORTS //

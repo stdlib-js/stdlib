@@ -25,7 +25,7 @@ function init() {
 	// Set the process title to allow the process to be more easily identified:
 	process.title = pkg.name;
 	process.stdout.on( 'error', process.exit );
-} // end FUNCTION init()
+}
 
 /**
 * Prints usage information.
@@ -44,7 +44,7 @@ function help() {
 	function onClose() {
 		process.exit( 0 );
 	}
-} // end FUNCTION help()
+}
 
 /**
 * Prints the package version.
@@ -58,7 +58,7 @@ function version() {
 	var msg = pkg.version.toString()+'\n';
 	process.stdout.write( msg, 'utf8' );
 	process.exit( 0 );
-} // end FUNCTION version()
+}
 
 /**
 * Callback invoked after reading `stdin`.
@@ -86,7 +86,7 @@ function onRead( error, data ) {
 		return prettyPrint( results );
 	}
 	printNDJSON( results );
-} // end FUNCTION onRead()
+}
 
 /**
 * Pretty prints results.
@@ -107,7 +107,7 @@ function prettyPrint( results ) {
 		return process.exit( 1 );
 	}
 	console.log( 'All packages have licenses.' );
-} // end FUNCTION prettyPrint()
+}
 
 /**
 * Prints results as newline-delimited JSON (NDJSON).
@@ -120,7 +120,7 @@ function printNDJSON( results ) {
 	for ( i = 0; i < results.length; i++ ) {
 		console.log( JSON.stringify( results[ i ] ) );
 	}
-} // end FUNCTION printNDJSON()
+}
 
 
 // VARIABLES //

@@ -33,7 +33,7 @@ function comparator( a, b ) {
 		return 1;
 	}
 	return 0;
-} // end FUNCTION comparator()
+}
 
 
 // MAIN //
@@ -47,7 +47,7 @@ function comparator( a, b ) {
 */
 function sort( keys ) {
 	return keys.sort( comparator );
-} // end FUNCTION sort()
+}
 
 
 // EXPORTS //

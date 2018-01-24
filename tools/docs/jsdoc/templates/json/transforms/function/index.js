@@ -38,7 +38,7 @@ function transform( node ) {
 		out.parameters = [];
 	}
 	return out;
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

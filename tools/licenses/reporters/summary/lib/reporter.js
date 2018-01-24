@@ -88,7 +88,7 @@ function reporter( results ) {
 		out.totals[ out.licenses[i] ] = names[ out.licenses[i] ].length;
 	}
 	return out;
-} // end FUNCTION reporter()
+}
 
 
 // EXPORTS //

@@ -62,7 +62,7 @@ var processer = {
 function getSectionText( readme, section ) {
 	var out = processer[ section ]( readme );
 	return out.contents;
-} // end FUNCTION getSectionText()
+}
 
 
 // MAIN //
@@ -112,7 +112,7 @@ function createIndex( file ) {
 	idx.tokenizer( lunr.tokenizer.registeredFunctions.readme_tokenizer );
 	idx.add( doc );
 	return idx.toJSON();
-} // end FUNCTION createIndex()
+}
 
 
 // EXPORTS //

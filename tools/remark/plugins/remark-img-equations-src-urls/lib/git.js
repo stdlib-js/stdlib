@@ -66,7 +66,7 @@ function git() {
 		'hslug': hslug
 	};
 	return out;
-} // end FUNCTION git()
+}
 
 
 // EXPORTS //

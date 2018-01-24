@@ -19,7 +19,7 @@ function remove( node, index, parent ) {
 	if ( parent ) {
 		parent.children.splice( index, 1 );
 	}
-} // end FUNCTION remove()
+}
 
 /**
 * Transforms a Markdown file by removing all code blocks and HTML elements.
@@ -30,7 +30,7 @@ function remove( node, index, parent ) {
 function transformer( ast ) {
 	visit( ast, 'code', remove );
 	visit( ast, 'html', remove );
-} // end FUNCTION transformer()
+}
 
 
 // MAIN //
@@ -43,7 +43,7 @@ function transformer( ast ) {
 */
 function attacher() {
 	return transformer;
-} // end FUNCTION attacher()
+}
 
 
 // EXPORTS //

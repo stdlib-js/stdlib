@@ -124,7 +124,7 @@ function run( dest, options, clbk ) {
 
 		debug( 'Starting build...' );
 		build( pkgs, dest, opts, done );
-	} // end FUNCTION onPkgs()
+	}
 
 	/**
 	* Callback invoked upon completing build.
@@ -139,8 +139,8 @@ function run( dest, options, clbk ) {
 		}
 		debug( 'Finished build.' );
 		cb();
-	} // end FUNCTION done()
-} // end FUNCTION run()
+	}
+}
 
 
 // EXPORTS //

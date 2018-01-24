@@ -16,7 +16,7 @@ var spawn = require( 'child_process' ).spawn;
 function onError( error ) {
 	process.exitCode = 1;
 	console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
-} // end FUNCTION onError()
+}
 
 /**
 * Callback invoked upon child process close.
@@ -30,7 +30,7 @@ function onFinish( code ) {
 		process.exitCode = code;
 		return console.error( 'Child process exited with code `'+code + '`.' ); // eslint-disable-line no-console
 	}
-} // end FUNCTION onFinish()
+}
 
 
 // MAIN //
@@ -63,7 +63,7 @@ function plugin( dir, cwd, subpath ) {
 	proc = spawn( 'make', args, opts );
 	proc.on( 'error', onError );
 	proc.on( 'close', onFinish );
-} // end FUNCTION plugin()
+}
 
 
 // EXPORTS //

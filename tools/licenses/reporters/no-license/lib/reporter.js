@@ -16,7 +16,7 @@ function reporter( results ) {
 		}
 	}
 	return out;
-} // end FUNCTION reporter()
+}
 
 
 // EXPORTS //

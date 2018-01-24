@@ -34,7 +34,7 @@ function repo( pkg ) {
 	}
 	debug( 'Unable to find repository URL in `package.json`.' );
 	return null;
-} // end FUNCTION repo()
+}
 
 
 // EXPORTS //

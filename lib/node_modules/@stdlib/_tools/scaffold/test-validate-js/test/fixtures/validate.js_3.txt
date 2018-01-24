@@ -57,7 +57,7 @@ function validate( opts, options ) {
 		}
 	}
 	return null;
-} // end FUNCTION validate()
+}
 
 
 // EXPORTS //

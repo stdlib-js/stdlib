@@ -16,7 +16,7 @@ var spawn = require( 'child_process' ).spawn;
 function onError( error ) {
 	process.exitCode = 1;
 	console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
-} // end FUNCTION onError()
+}
 
 /**
 * Callback invoked upon child process close.
@@ -30,7 +30,7 @@ function onFinish( code ) {
 		process.exitCode = code;
 		return console.error( 'Child process exited with code `'+code + '`.' ); // eslint-disable-line no-console
 	}
-} // end FUNCTION onFinish()
+}
 
 /**
 * Callback invoked upon receiving data from `stdout`.
@@ -40,7 +40,7 @@ function onFinish( code ) {
 */
 function stdout( data ) {
 	process.stdout.write( data );
-} // end FUNCTION stdout()
+}
 
 /**
 * Callback invoked upon receiving data from `stderr`.
@@ -50,7 +50,7 @@ function stdout( data ) {
 */
 function stderr( data ) {
 	process.stderr.write( data );
-} // end FUNCTION stderr()
+}
 
 
 // MAIN //
@@ -81,7 +81,7 @@ function plugin( dir, cwd ) {
 	proc.stdout.on( 'data', stdout );
 	proc.stderr.on( 'data', stderr );
 	proc.on( 'close', onFinish );
-} // end FUNCTION plugin()
+}
 
 
 // EXPORTS //

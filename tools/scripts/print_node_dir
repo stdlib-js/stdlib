@@ -47,6 +47,6 @@ function main() {
 		return dirname( process.execPath );
 	}
 	return resolve( process.execPath, '..', '..' );
-} // end FUNCTION main()
+}
 
 console.log( main() );

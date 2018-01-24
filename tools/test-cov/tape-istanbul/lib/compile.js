@@ -34,7 +34,7 @@ function compile( filename, code ) {
 
 	// Run the compiled code in the current V8 context to generate a wrapped function:
 	return script.runInThisContext();
-} // end FUNCTION compile()
+}
 
 
 // EXPORTS //

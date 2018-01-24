@@ -105,7 +105,7 @@ function build( pkg, dest, options, clbk ) {
 		}
 		debug( 'Successfully created destination directory.' );
 		runTasks();
-	} // end FUNCTION onDir()
+	}
 
 	/**
 	* Executes tasks.
@@ -115,7 +115,7 @@ function build( pkg, dest, options, clbk ) {
 	function runTasks() {
 		buildTests();
 		buildBenchmarks();
-	} // end FUNCTION runTasks()
+	}
 
 	/**
 	* Builds tests.
@@ -136,7 +136,7 @@ function build( pkg, dest, options, clbk ) {
 			'html': opts.tests.html
 		};
 		tests( dir, dest, topts, onTests );
-	} // end FUNCTION buildTests()
+	}
 
 	/**
 	* Builds benchmarks.
@@ -157,7 +157,7 @@ function build( pkg, dest, options, clbk ) {
 			'html': opts.benchmarks.html
 		};
 		benchmarks( dir, dest, topts, onBenchmarks );
-	} // end FUNCTION buildBenchmarks()
+	}
 
 	/**
 	* Builds HTML assets.
@@ -193,7 +193,7 @@ function build( pkg, dest, options, clbk ) {
 		}
 		debug( 'Building HTML assets...' );
 		readmeToHTML( src, bopts, onHTML );
-	} // end FUNCTION buildHTML()
+	}
 
 	/**
 	* Callback invoked after building tests.
@@ -211,7 +211,7 @@ function build( pkg, dest, options, clbk ) {
 		debug( 'Finished building tests.' );
 		builds[ 'tests' ] = bool;
 		onTask();
-	} // end FUNCTION onTests()
+	}
 
 	/**
 	* Callback invoked after building benchmarks.
@@ -229,7 +229,7 @@ function build( pkg, dest, options, clbk ) {
 		debug( 'Finished building benchmarks.' );
 		builds[ 'benchmarks' ] = bool;
 		onTask();
-	} // end FUNCTION onBenchmarks()
+	}
 
 	/**
 	* Callback invoked upon completing a task.
@@ -241,7 +241,7 @@ function build( pkg, dest, options, clbk ) {
 		if ( count === numBuilds ) {
 			buildHTML();
 		}
-	} // end FUNCTION onTask()
+	}
 
 	/**
 	* Callback invoked after building HTML assets.
@@ -257,7 +257,7 @@ function build( pkg, dest, options, clbk ) {
 		}
 		debug( 'Finished building HTML assets.' );
 		done();
-	} // end FUNCTION onHTML()
+	}
 
 	/**
 	* Callback invoked upon completing all build tasks.
@@ -271,8 +271,8 @@ function build( pkg, dest, options, clbk ) {
 			return clbk( error );
 		}
 		clbk();
-	} // end FUNCTION done()
-} // end FUNCTION build()
+	}
+}
 
 
 // EXPORTS //

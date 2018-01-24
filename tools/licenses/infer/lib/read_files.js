@@ -69,9 +69,9 @@ function readFiles( files, clbk ) {
 				debug( 'Finished reading files.' );
 				clbk( null, out );
 			}
-		} // end FUNCTION onRead()
-	} // end FUNCTION onReadFactory()
-} // end FUNCTION readFiles()
+		}
+	}
+}
 
 
 // EXPORTS //

@@ -24,7 +24,7 @@ function toArray( obj ) {
 		out[ i ] = obj[ keys[i] ];
 	}
 	return out;
-} // end FUNCTION toArray()
+}
 
 
 // EXPORTS //

@@ -45,7 +45,7 @@ function styles() {
 		out[ i ] = '<style>' + rules + '</style>';
 	}
 	return out;
-} // end FUNCTION styles()
+}
 
 
 // EXPORTS //

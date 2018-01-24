@@ -14,7 +14,7 @@ function transform( nodes ) {
 		out[ i ] = nodes[ i ];
 	}
 	return out;
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

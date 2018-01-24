@@ -87,7 +87,7 @@ function transformer( tree, file, clbk ) {
 				'raw': raw
 			});
 		}
-	} // end FUNCTION visitor()
+	}
 
 	/**
 	* Generates the next SVG equation.
@@ -103,7 +103,7 @@ function transformer( tree, file, clbk ) {
 		};
 		debug( 'Generating an SVG...' );
 		toSVG( opts, onSVG );
-	} // end FUNCTION next()
+	}
 
 	/**
 	* Callback invoked upon converting TeX to SVG.
@@ -147,7 +147,7 @@ function transformer( tree, file, clbk ) {
 		}
 		debug( 'Finished processing Markdown equation.' );
 		done();
-	} // end FUNCTION onSVG()
+	}
 
 	/**
 	* Callback invoked once finished processing an AST.
@@ -165,8 +165,8 @@ function transformer( tree, file, clbk ) {
 			return clbk( null, tree );
 		}
 		next();
-	} // end FUNCTION done()
-} // end FUNCTION transformer()
+	}
+}
 
 
 // EXPORTS //

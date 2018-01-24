@@ -172,7 +172,7 @@ function createSnippet( content, conf ) {
 	snippet = replace( snippet, '{{TAB_TRIGGER}}', conf.trigger );
 	snippet = replace( snippet, '{{SCOPE}}', conf.scope );
 	return replace( snippet, '{{DESCRIPTION}}', conf.desc );
-} // end FUNCTION createSnippet()
+}
 
 
 // MAIN //
@@ -225,6 +225,6 @@ function main() {
 		debug( 'Successfully generated license header snippet.' );
 	}
 	debug( 'Finished generating snippets.' );
-} // end FUNCTION main()
+}
 
 main();

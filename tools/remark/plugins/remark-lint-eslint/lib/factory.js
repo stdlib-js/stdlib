@@ -131,9 +131,9 @@ function factory( options ) {
 					}
 				}
 			}
-		} // end FUNCTION onNode()
-	} // end FUNCTION lint()
-} // end FUNCTION factory()
+		}
+	}
+}
 
 
 // EXPORTS //

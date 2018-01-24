@@ -30,7 +30,7 @@ function render( ctx ) {
 	children = [ title( ctx ) ];
 
 	return h( ELEMENT, props, children );
-} // end FUNCTION render()
+}
 
 
 // EXPORTS //

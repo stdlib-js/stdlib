@@ -70,7 +70,7 @@ function createSearchIndex() {
 			pkgs[ i ] = path.join( pkgs[ i ], 'README.md' );
 		}
 		getExisting( pkgs, onReadmes );
-	} // end FUNCTION onPkgs()
+	}
 
 	/**
 	* Callback invoked after retrieving existing README.md paths.
@@ -87,7 +87,7 @@ function createSearchIndex() {
 		readFileList( readmes, {
 			'encoding': 'utf-8'
 		}, onFiles );
-	} // end FUNCTION onReadmes()
+	}
 
 	/**
 	* Callback invoked after retrieving file contents.
@@ -114,7 +114,7 @@ function createSearchIndex() {
 
 		// Note: we have to use `stringify` and `parse` here because of how lunr performs serialization. Specifically, in order to serialize an index, one must recursively call serialization methods (`*.toJSON()`) on nested data structures, which `JSON.stringify()` does automatically.
 		done( null, JSON.parse( JSON.stringify( idx ) ) );
-	} // end FUNCTION onFiles()
+	}
 
 	/**
 	* Callback invoked upon completion.
@@ -129,8 +129,8 @@ function createSearchIndex() {
 			return clbk( error );
 		}
 		clbk( null, idx );
-	} // end FUNCTION done()
-} // end FUNCTION createSearchIndex()
+	}
+}
 
 
 // EXPORTS //

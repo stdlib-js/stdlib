@@ -50,7 +50,7 @@ function getSectionNodes( ast, name ) {
 		if ( !scope && type === 'start' ) {
 			scope = parent;
 		}
-	} // end FUNCTION replacer()
+	}
 
 	/**
 	* Tests whether a node is an opening or closing section tag.
@@ -73,8 +73,8 @@ function getSectionNodes( ast, name ) {
 			return 'end';
 		}
 		return null;
-	} // end FUNCTION isSectionTag()
-} // end FUNCTION getSectionNodes()
+	}
+}
 
 
 // MAIN //
@@ -95,7 +95,7 @@ function extractor( name ) {
 	*/
 	function transformer( ast ) {
 		getSectionNodes( ast, name );
-	} // end FUNCTION transformer()
+	}
 
 	/**
 	* Attach a plugin to a remark processor in order to extract the specified section.
@@ -106,7 +106,7 @@ function extractor( name ) {
 	return function attacher() {
 		return transformer;
 	}; // end FUNCTION attacher()
-} // end FUNCTION extractor();
+};
 
 
 // EXPORTS //

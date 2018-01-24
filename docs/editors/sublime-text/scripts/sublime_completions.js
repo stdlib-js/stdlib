@@ -76,6 +76,6 @@ function main() {
 		debug( 'Successfully generated completions file.' );
 	}
 	debug( 'Finished generating completions files.' );
-} // end FUNCTION main()
+}
 
 main();

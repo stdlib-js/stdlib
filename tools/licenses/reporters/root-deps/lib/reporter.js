@@ -80,7 +80,7 @@ function reporter( results, bool ) {
 		}
 	}
 	return out;
-} // end FUNCTION reporter()
+}
 
 
 // EXPORTS //

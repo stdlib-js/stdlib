@@ -75,7 +75,7 @@ function factory( opts ) {
 				debug( 'Found an HTML equation.' );
 				nodes.push( node );
 			}
-		} // end FUNCTION visitor()
+		}
 
 		/**
 		* Callback invoked upon attempting to create a destination directory.
@@ -93,7 +93,7 @@ function factory( opts ) {
 
 			debug( 'Creating SVGs...' );
 			next();
-		} // end FUNCTION onDir()
+		}
 
 		/**
 		* Creates the next SVG.
@@ -116,7 +116,7 @@ function factory( opts ) {
 			debug( 'Raw equation: %s', raw );
 
 			tex2svg( raw, onSVG );
-		} // end FUNCTION next()
+		}
 
 		/**
 		* Callback invoked upon creating an SVG.
@@ -154,7 +154,7 @@ function factory( opts ) {
 
 			debug( 'Writing SVG to file...' );
 			writeFile( fpath, svg, fopts, onWrite );
-		} // end FUNCTION onSVG()
+		}
 
 		/**
 		* Callback invoked upon writing an SVG to file.
@@ -169,7 +169,7 @@ function factory( opts ) {
 			}
 			debug( 'SVG successfully written to file.' );
 			done();
-		} // end FUNCTION onWrite()
+		}
 
 		/**
 		* Callback invoked once finished processing an AST.
@@ -187,9 +187,9 @@ function factory( opts ) {
 				return clbk();
 			}
 			next();
-		} // end FUNCTION done()
-	} // end FUNCTION transformer()
-} // end FUNCTION factory()
+		}
+	}
+}
 
 
 // EXPORTS //

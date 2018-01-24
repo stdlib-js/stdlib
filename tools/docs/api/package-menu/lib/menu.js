@@ -77,8 +77,8 @@ function menu( options, clbk ) {
 			'css': toFragment.css
 		};
 		return cb( null, out );
-	} // end FUNCTION onTree()
-} // end FUNCTION menu()
+	}
+}
 
 
 // EXPORTS //

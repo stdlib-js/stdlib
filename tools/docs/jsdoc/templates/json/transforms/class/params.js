@@ -54,7 +54,7 @@ function filter( node ) {
 		'optional': isOptional,
 		'nullable': isNullable
 	};
-} // end FUNCTION filter()
+}
 
 
 // MAIN //
@@ -74,7 +74,7 @@ function transform( nodes ) {
 		out[ i ] = filter( nodes[ i ] );
 	}
 	return out;
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

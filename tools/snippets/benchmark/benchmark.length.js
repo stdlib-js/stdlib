@@ -67,8 +67,8 @@ function createBenchmark( len ) {
 		}
 		b.pass( 'benchmark finished' );
 		b.end();
-	} // end FUNCTION benchmark()
-} // end FUNCTION createBenchmark()
+	}
+}
 
 
 // MAIN //
@@ -93,6 +93,6 @@ function main() {
 		f = createBenchmark( len );
 		bench( pkg+':len='+len, f );
 	}
-} // end FUNCTION main()
+}
 
 main();

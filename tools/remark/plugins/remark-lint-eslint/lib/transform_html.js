@@ -36,7 +36,7 @@ function transformHTML( html ) {
 		return null;
 	}
 	return '/* ' + html + ' */';
-} // end FUNCTION transformHTML()
+}
 
 
 // EXPORTS //

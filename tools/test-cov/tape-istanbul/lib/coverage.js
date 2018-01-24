@@ -13,7 +13,7 @@ function coverage( name ) {
 		cov = {};
 	}
 	return cov;
-} // end FUNCTION coverage()
+}
 
 
 // EXPORTS //

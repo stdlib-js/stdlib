@@ -61,7 +61,7 @@ function menu( tree, label, mount ) {
 		}
 	}
 	return replace( out, '{{list}}', str );
-} // end FUNCTION menu()
+}
 
 
 // EXPORTS //

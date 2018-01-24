@@ -50,7 +50,7 @@ function createRequire( id ) {
 		try {
 			return module.require( path );
 		} finally {}
-	} // end FUNCTION require()
+	}
 
 	/**
 	* Attempts to resolve a module.
@@ -73,7 +73,7 @@ function createRequire( id ) {
 	require.cache = cache;
 
 	return require;
-} // end FUNCTION createRequire()
+}
 
 
 // EXPORTS //

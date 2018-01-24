@@ -32,7 +32,7 @@ function render() {
 	children = '<span></span><span></span><span></span>';
 
 	return h( ELEMENT, props, children );
-} // end FUNCTION render()
+}
 
 
 // EXPORTS //

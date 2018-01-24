@@ -79,7 +79,7 @@ function transform( parentNode, childNodes, parentLongName ) {
 			transform( out, childNodes, node.longname );
 		}
 	}
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

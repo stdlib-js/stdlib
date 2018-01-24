@@ -98,7 +98,7 @@ function licenses() {
 		debug( 'Successfully read installed packages.' );
 		results = recurse( {}, results );
 		done( null, toArray( results ) );
-	} // end FUNCTION onRead()
+	}
 
 	/**
 	* Callback invoked after resolving licenses.
@@ -115,8 +115,8 @@ function licenses() {
 		}
 		debug( 'Finished resolving licenses.' );
 		clbk( null, results );
-	} // end FUNCTION done()
-} // end FUNCTION licenses()
+	}
+}
 
 
 // EXPORTS //

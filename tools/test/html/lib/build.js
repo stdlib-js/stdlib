@@ -121,8 +121,8 @@ function build( bundle, options, clbk ) {
 		*/
 		function onTick() {
 			done( null, html );
-		} // end FUNCTION onTick()
-	} // end FUNCTION onTickFactory()
+		}
+	}
 
 	/**
 	* Callback invoked upon writing to file.
@@ -138,7 +138,7 @@ function build( bundle, options, clbk ) {
 		}
 		debug( 'Successfully wrote to file.' );
 		done();
-	} // end FUNCTION onWrite()
+	}
 
 	/**
 	* Callback invoked once finished.
@@ -156,8 +156,8 @@ function build( bundle, options, clbk ) {
 			return cb( null, html );
 		}
 		cb();
-	} // end FUNCTION done()
-} // end FUNCTION build()
+	}
+}
 
 
 // EXPORTS //

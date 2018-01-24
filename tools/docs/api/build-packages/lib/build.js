@@ -93,7 +93,7 @@ function build( pkgs, dest, opts, clbk ) {
 
 		debug( 'Building package: %s (%d of %d)', pkg, i+1, len );
 		buildPkg( pkg, out, bopts, getClbk( i ) );
-	} // end FUNCTION next()
+	}
 
 	/**
 	* Returns a callback to be invoked upon building a package.
@@ -120,8 +120,8 @@ function build( pkgs, dest, opts, clbk ) {
 			}
 			debug( 'Successfully built package: %s (%d of %d)', pkg, k, len );
 			done();
-		} // end FUNCTION onBuild()
-	} // end FUNCTION getClbk()
+		}
+	}
 
 	/**
 	* Callback invoked to track build progress.
@@ -141,8 +141,8 @@ function build( pkgs, dest, opts, clbk ) {
 		}
 		// Finished...
 		clbk();
-	} // end FUNCTION done()
-} // end FUNCTION build()
+	}
+}
 
 
 // EXPORTS //

@@ -26,7 +26,7 @@ function init() {
 	// Set the process title to allow the process to be more easily identified:
 	process.title = pkg.name;
 	process.stdout.on( 'error', process.exit );
-} // end FUNCTION init()
+}
 
 /**
 * Prints usage information.
@@ -45,7 +45,7 @@ function help() {
 	function onClose() {
 		process.exit( 0 );
 	}
-} // end FUNCTION help()
+}
 
 /**
 * Prints the package version.
@@ -59,7 +59,7 @@ function version() {
 	var msg = pkg.version.toString()+'\n';
 	process.stdout.write( msg, 'utf8' );
 	process.exit( 0 );
-} // end FUNCTION version()
+}
 
 /**
 * Sort function.
@@ -77,7 +77,7 @@ function comparator( a, b ) {
 		return 1;
 	}
 	return 0;
-} // end FUNCTION comparator()
+}
 
 /**
 * Callback invoked after reading `stdin`.
@@ -146,7 +146,7 @@ function onRead( error, data ) {
 		console.log( '%s %d (%d%%): %s', sym, x, percent, tmp[ i ][ 0 ] );
 	}
 	console.log( '' );
-} // end FUNCTION onRead()
+}
 
 
 // VARIABLES //

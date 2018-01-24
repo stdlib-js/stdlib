@@ -24,7 +24,7 @@ function render( ctx ) {
 		'className': 'menu-header-title'
 	};
 	return h( ELEMENT, props, ctx.title );
-} // end FUNCTION render()
+}
 
 
 // EXPORTS //

@@ -31,7 +31,7 @@ function listItem( item, id, href ) {
 	var str = replace( tmpl, '{{item}}', item );
 	str = replace( str, '{{id}}', id );
 	return replace( str, '{{href}}', href );
-} // end FUNCTION listItem()
+}
 
 
 // EXPORTS //

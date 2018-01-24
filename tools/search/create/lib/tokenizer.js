@@ -28,7 +28,7 @@ function tokenizer( doc ) {
 	doc = removePunctuation( doc );
 	doc = trim( doc );
 	return tokenize( doc );
-} // end FUNCTION tokenizer()
+}
 
 
 // EXPORTS //

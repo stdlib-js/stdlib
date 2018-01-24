@@ -50,7 +50,7 @@ function infer( file ) {
 	}
 	debug( 'Inferred %d licenses.', out.length );
 	return out;
-} // end FUNCTION infer()
+}
 
 
 // EXPORTS //

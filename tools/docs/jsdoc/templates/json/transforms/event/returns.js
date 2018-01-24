@@ -23,7 +23,7 @@ function transform( nodes ) {
 		'type': type,
 		'description': desc
 	};
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

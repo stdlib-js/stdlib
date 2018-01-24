@@ -31,7 +31,7 @@ function plugin( dir, cwd ) {
 	args[ 1 ] = 'repl';
 
 	spawn( 'make', args, opts );
-} // end FUNCTION plugin()
+}
 
 
 // EXPORTS //

@@ -51,7 +51,7 @@ function reporter( results, exclude ) {
 		}
 	}
 	return out;
-} // end FUNCTION reporter()
+}
 
 
 // EXPORTS //

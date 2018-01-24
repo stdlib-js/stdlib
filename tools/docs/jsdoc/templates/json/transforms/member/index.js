@@ -24,7 +24,7 @@ function transform( node ) {
 		'access': node.access || '',
 		'virtual': !!node.virtual
 	};
-} // end FUNCTION transform()
+}
 
 
 // EXPORTS //

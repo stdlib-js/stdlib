@@ -70,7 +70,7 @@ function build( clbk ) {
 		};
 
 		buildPkgs( dest, bopts, onBuild );
-	} // end FUNCTION onMenu()
+	}
 
 	/**
 	* Callback invoked upon building packages.
@@ -85,8 +85,8 @@ function build( clbk ) {
 			return clbk( error );
 		}
 		clbk();
-	} // end FUNCTION onBuild()
-} // end FUNCTION build()
+	}
+}
 
 
 // EXPORTS //

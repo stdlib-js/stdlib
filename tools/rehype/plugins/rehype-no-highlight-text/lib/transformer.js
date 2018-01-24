@@ -29,7 +29,7 @@ function onNode( node, index, parent ) {
 			className.unshift( 'no-highlight' );
 		}
 	}
-} // end FUNCTION onNode()
+}
 
 
 // MAIN //
@@ -44,7 +44,7 @@ function onNode( node, index, parent ) {
 function transformer( tree ) {
 	debug( 'Processing a virtual file...' );
 	visit( tree, 'element', onNode );
-} // end FUNCTION transformer()
+}
 
 
 // EXPORTS //

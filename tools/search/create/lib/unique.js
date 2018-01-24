@@ -12,7 +12,7 @@
 */
 function ascending( a, b ) {
 	return a - b;
-} // end FUNCTION ascending()
+}
 
 
 // UNIQUE //
@@ -47,7 +47,7 @@ function unique( arr ) {
 	// Truncate the array:
 	out.length = j+1;
 	return out;
-} // end FUNCTION unique()
+}
 
 
 // EXPORTS //

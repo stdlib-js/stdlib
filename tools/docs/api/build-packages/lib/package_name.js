@@ -24,7 +24,7 @@ function packageName( dpath ) {
 		return '@stdlib/stdlib';
 	}
 	return dpath.substring( root.length+1 );
-} // end FUNCTION packageName()
+}
 
 
 // EXPORTS //
