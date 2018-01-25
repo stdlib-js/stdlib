@@ -508,8 +508,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 *
 * @name jsdoc-leading-description-sentence
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
 *
 * @example
 * // Bad...
@@ -543,7 +542,9 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 *     return Math.random();
 * }
 */
-rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
+rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
+	'whitelist': [ 'ndarray', 'x-axis', 'y-axis', '`x`', '`x`-value', '`y`', '`y`-value' ]
+}];
 
 /**
 * Prevent unnecessary indentation of list item bullets.
@@ -1031,6 +1032,50 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
+
+/**
+* Do not allow JSDoc tags to appear more than once in a JSDoc comment.
+*
+* @name jsdoc-no-duplicate-tags
+* @memberof rules
+* @type {Array}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-no-duplicate-tags' ] = 'error';
 
 /**
 * Prevent use of emphasis in place of a heading.
