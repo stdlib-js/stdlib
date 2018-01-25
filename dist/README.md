@@ -87,7 +87,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.62 MB        | 1.356 MB           | 299.266 kB            |
+| 6.113 MB       | 1.577 MB           | 351.199 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -95,7 +95,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 5.64 MB        | 1.371 MB           | 299.874 kB            |
+| 6.134 MB       | 1.593 MB           | 352.027 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -118,7 +118,7 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 
 | stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 52.205 MB                   | 15.988 MB                      |
+| 51.85 MB                    | 15.848 MB                      |
 
 <!-- </bundle-stats> -->
 
@@ -146,7 +146,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 59.259 MB          | 16.937 MB             |
+| 59.353 MB          | 16.879 MB             |
 
 <!-- </bundle-stats> -->
 
