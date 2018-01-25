@@ -1037,8 +1037,7 @@ rules[ 'stdlib/jsdoc-no-duplicate-headings-in-section' ] = 'error';
 *
 * @name jsdoc-no-duplicate-tags
 * @memberof rules
-* @type {string}
-* @default [ 'error', { 'exceptions': [ 'example', 'param', 'see', 'throws' ] } ]
+* @type {Array}
 *
 * @example
 * // Bad...
