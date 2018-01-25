@@ -508,8 +508,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 *
 * @name jsdoc-leading-description-sentence
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
 *
 * @example
 * // Bad...
@@ -543,7 +542,9 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 *     return Math.random();
 * }
 */
-rules[ 'stdlib/jsdoc-leading-description-sentence' ] = 'error';
+rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
+	'whitelist': [ 'ndarray', 'x-axis', 'y-axis', '`x`', '`x`-value', '`y`', '`y`-value' ]
+}];
 
 /**
 * Prevent unnecessary indentation of list item bullets.
