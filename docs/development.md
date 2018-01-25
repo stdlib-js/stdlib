@@ -52,7 +52,7 @@ The following external libraries can be automatically downloaded and compiled fr
 
 ## Download
 
-To acquire the source code, first navigate to the parent directory into which you want to place the project git repository.
+To acquire the source code, first navigate to the parent directory into which you want to place the project git repository. Because of this project's heavy reliance on [GNU make][make], the directory path should **not** include spaces.
 
 ```bash
 $ cd /path/to/parent/destination/directory
