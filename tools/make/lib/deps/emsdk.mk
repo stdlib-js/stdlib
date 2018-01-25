@@ -169,8 +169,8 @@ deps-prerequisites-emsdk:
 
 deps-install-emsdk: $(DEPS_EMSDK_BUILD_OUT) deps-prerequisites-emsdk
 	$(QUIET) cd $(DEPS_EMSDK_BUILD_OUT) && $(GIT) pull
-	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk install $(deps_emsdk) $(deps_emsdk_binaryen)
-	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk activate $(deps_emsdk) $(deps_emsdk_binaryen)
+	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk install $(deps_emsdk) $(deps_emsdk_binaryen) --build=Release
+	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk activate $(deps_emsdk) $(deps_emsdk_binaryen) --build=Release
 
 .PHONY: deps-install-emsdk
 
