@@ -1,0 +1,22 @@
+{
+	"boolean": [
+		"help",
+		"version",
+		"print",
+		"symbolic"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"print": [
+			"p"
+		],
+		"symbolic": [
+			"S"
+		]
+	}
+}
