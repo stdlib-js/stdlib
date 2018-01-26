@@ -159,6 +159,20 @@
       "dir"
     ]
   },
+  "http://man7.org/linux/man-pages/man2/getegid.2.html": {
+    "id": "getegid",
+    "description": "Documentation for the function `getegid` for returning the effective group identity of the calling process.",
+    "short_url": "",
+    "keywords": [
+      "man",
+      "linux",
+      "group",
+      "identity",
+      "getegid",
+      "getgid",
+      "permissions"
+    ]
+  },
   "http://man7.org/linux/man-pages/man2/geteuid.2.html": {
     "id": "geteuid",
     "description": "Documentation for the function `geteuid` for returning the effective user identity of the calling process.",
