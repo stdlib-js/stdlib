@@ -1,9 +1,0 @@
-
-Usage: benchmarks-html [options] url
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --title title         HTML title.
-

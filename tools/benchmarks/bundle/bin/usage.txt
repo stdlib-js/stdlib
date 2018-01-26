@@ -1,9 +1,0 @@
-
-Usage: benchmarks-bundle [options] [dir]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-         --pattern glob        Glob pattern.
-
