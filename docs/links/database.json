@@ -148,6 +148,56 @@
       "python"
     ]
   },
+  "http://man7.org/linux/man-pages/man2/chdir.2.html": {
+    "id": "chdir",
+    "description": "Documentation for the `chdir` function to change the working directory of the calling process.",
+    "short_url": "",
+    "keywords": [
+      "chdir",
+      "linux",
+      "man",
+      "dir"
+    ]
+  },
+  "http://man7.org/linux/man-pages/man2/getegid.2.html": {
+    "id": "getegid",
+    "description": "Documentation for the function `getegid` for returning the effective group identity of the calling process.",
+    "short_url": "",
+    "keywords": [
+      "man",
+      "linux",
+      "group",
+      "identity",
+      "getegid",
+      "getgid",
+      "permissions"
+    ]
+  },
+  "http://man7.org/linux/man-pages/man2/geteuid.2.html": {
+    "id": "geteuid",
+    "description": "Documentation for the function `geteuid` for returning the effective user identity of the calling process.",
+    "short_url": "",
+    "keywords": [
+      "man",
+      "linux",
+      "geteuid",
+      "getuid",
+      "user",
+      "identity"
+    ]
+  },
+  "http://man7.org/linux/man-pages/man2/getgid.2.html": {
+    "id": "getgid",
+    "description": "Documentation for the `getgid` function for returning the group identity.",
+    "short_url": "",
+    "keywords": [
+      "linux",
+      "man",
+      "getgid",
+      "group",
+      "identity"
+    ]
+  },
   "http://man7.org/linux/man-pages/man2/getuid.2.html": {
     "id": "getuid",
     "description": "Documentation for the `getuid` function to retrieve a user's identity.",
@@ -157,6 +207,17 @@
       "man",
       "user",
       "id"
+    ]
+  },
+  "http://man7.org/linux/man-pages/man2/umask.2.html": {
+    "id": "umask",
+    "description": "Documentation for the `umask` function to set the file creation mode mask.",
+    "short_url": "",
+    "keywords": [
+      "linux",
+      "man",
+      "umask",
+      "permissions"
     ]
   },
   "http://man7.org/linux/man-pages/man7/environ.7.html": {

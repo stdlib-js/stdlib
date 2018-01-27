@@ -1,0 +1,19 @@
+
+{{alias}}()
+    Returns the numeric group identity of the calling process.
+
+    The function only returns a group identity on POSIX platforms. For all other
+    platforms (e.g., Windows and Android), the function returns `null`.
+
+    Returns
+    -------
+    id: integer|null
+        Numeric group identity.
+
+    Examples
+    --------
+    > var gid = {{alias}}()
+
+    See Also
+    --------
+
