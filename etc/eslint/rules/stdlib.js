@@ -2578,6 +2578,36 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 }];
 
 /**
+* Enforce that `require()` calls follow a specified order.
+*
+* @name require-order
+* @memberof rules
+* @type {Array}
+*
+* @example
+* // Bad...
+* var validate = require( './validate.js' );
+* var math = require( '@stdlib/math' );
+* var debug = require( 'debug' );
+* var fs = require( 'fs' );
+*
+* @example
+* // Good...
+* var fs = require( 'fs' );
+* var debug = require( 'debug' );
+* var math = require( '@stdlib/math' );
+* var validate = require( './validate.js' );
+*/
+rules[ 'stdlib/require-order' ] = [ 'error', {
+	'order': [
+		'builtin',
+		'external',
+		'/^@stdlib/',
+		'path'
+	]
+}];
+
+/**
 * Enforce formatting of section header comments.
 *
 * @name section-headers
