@@ -25,6 +25,7 @@ var BASE_URL = 'https://github.com/stdlib-js/stdlib/tree/';
 */
 function factory( opts ) {
 	return transformer;
+
 	/**
 	* Transforms a Markdown abstract syntax tree (AST).
 	*
@@ -55,7 +56,7 @@ function factory( opts ) {
 
 				debug( 'Resolved URL: %s', node.url );
 			}
-		}// end FUNCTION visitor()
+		}
 	}
 }
 

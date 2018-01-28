@@ -2,9 +2,9 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'remark-img-equations-src-urls:transformer' );
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
+var debug = require( 'debug' )( 'remark-img-equations-src-urls:transformer' );
 var visit = require( 'unist-util-visit' );
 var PATH_SEP = require( '@stdlib/constants/string/path-sep' );
 var rawgit = require( '@stdlib/_tools/utils/rawgit-url' );
@@ -88,7 +88,7 @@ function factory( opts ) {
 				// Replace `src` attribute in `<img>` tag:
 				node.value = node.value.replace( IMG_SOURCE, '$1'+url+'$3' );
 			}
-		}// end FUNCTION visitor()
+		}
 	}
 }
 

@@ -26,6 +26,7 @@ function compile( filename, code ) {
 		'lineOffset': 0,
 		'displayErrors': true
 	};
+
 	// Wrap the source code similar to `require`:
 	code = wrap( code );
 
