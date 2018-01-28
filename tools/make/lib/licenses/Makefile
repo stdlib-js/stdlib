@@ -19,34 +19,34 @@
 # VARIABLES #
 
 # Define the command for listing licenses:
-LIST_LICENSES ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/licenses/bin/cli
+LIST_LICENSES ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/licenses/bin/cli
 
 # Define the command for inferring licenses:
-INFER_LICENSES ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/infer/bin/cli
+INFER_LICENSES ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/infer/bin/cli
 
 # Define the command-line options to be used when inferring licenses:
 INFER_LICENSES_FLAGS ?= --pattern '{readme*,licen[cs]e*,copying*}'
 
 # Define the command for reporting license information:
-LICENSES_REPORTER ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/basic/bin/cli
+LICENSES_REPORTER ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/basic/bin/cli
 
 # Define the command for reporting licenses by license type:
-LICENSES_REPORTER_GROUP ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/group/bin/cli
+LICENSES_REPORTER_GROUP ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/group/bin/cli
 
 # Define the command for reporting root package dependencies:
-LICENSES_REPORTER_DEPS ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/root-deps/bin/cli
+LICENSES_REPORTER_DEPS ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/root-deps/bin/cli
 
 # Define the command for reporting missing licenses:
-LICENSES_REPORTER_NO_LICENSE ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/no-license/bin/cli
+LICENSES_REPORTER_NO_LICENSE ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/no-license/bin/cli
 
 # Define the command for reporting ambiguous licenses:
-LICENSES_REPORTER_AMBIGUOUS ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/ambiguous/bin/cli
+LICENSES_REPORTER_AMBIGUOUS ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/ambiguous/bin/cli
 
 # Define the command for reporting excluded licenses:
-LICENSES_REPORTER_EXCLUDED ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/whitelist/bin/cli
+LICENSES_REPORTER_EXCLUDED ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/whitelist/bin/cli
 
 # Define the command for generating a license summary:
-LICENSES_REPORTER_SUMMARY ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_DIR)/licenses/reporters/summary/bin/cli
+LICENSES_REPORTER_SUMMARY ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/licenses/reporters/summary/bin/cli
 
 
 # DEPENDENCIES #
