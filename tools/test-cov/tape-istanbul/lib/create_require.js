@@ -45,12 +45,15 @@ function createRequire( id ) {
 	*
 	* @private
 	* @param {string} path - module id
+	* @returns {void}
 	*/
 	function require( path ) {
 		try {
 			return module.require( path );
 		} finally {}
 	}
+
+	require.resolve = resolve;
 
 	/**
 	* Attempts to resolve a module.
@@ -59,9 +62,9 @@ function createRequire( id ) {
 	* @param {string} name - module
 	* @returns {string} module filepath
 	*/
-	require.resolve = function resolve( name ) {
+	function resolve( name ) {
 		return resolveFilename( name, module, false );
-	}; // end FUNCTION resolve()
+	}
 
 	// Application entry point:
 	require.main = main;

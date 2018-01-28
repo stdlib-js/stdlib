@@ -23,22 +23,30 @@ function getSectionNodes( ast, name ) {
 	var nodes = [];
 	var scope = null;
 	visit( ast, replacer );
+
 	/**
 	* Replaces AST by the nodes of the specified section.
 	*
 	* @private
 	* @param {Node} node - reference node
 	* @param {number} index - position of `node` in `parent`
-	* @param {Node} - parent - parent of `node`
+	* @param {Node} parent - parent of `node`
 	*/
 	function replacer( node, index, parent ) {
-		var type = isSectionTag( node );
+		var type;
+		var arr;
+
+		type = isSectionTag( node );
 		if ( scope && parent === scope ) {
 			if ( type === 'end' ) {
 				if ( nodes ) {
 					// Replace scope by nodes belonging to the given section...
-					nodes = [ { type: 'root', children: nodes } ];
-					splice.apply( scope.children, [ 0, scope.children.length ].concat( nodes ) );
+					nodes = [{
+						'type': 'root',
+						'children': nodes
+					}];
+					arr = [ 0, scope.children.length ].concat( nodes );
+					splice.apply( scope.children, arr );
 				}
 				scope = null;
 				nodes = [];
@@ -66,7 +74,7 @@ function getSectionNodes( ast, name ) {
 		) {
 			return 'start';
 		}
-		else if (
+		if (
 			node.type === 'html' &&
 			node.value === '<!-- /.'+name+' -->'
 		) {
@@ -84,7 +92,7 @@ function getSectionNodes( ast, name ) {
 *
 * @private
 * @param {string} name - section name
-* @param {Function} remark attacher function
+* @returns {Function} remark attacher function
 */
 function extractor( name ) {
 	/**
@@ -96,6 +104,7 @@ function extractor( name ) {
 	function transformer( ast ) {
 		getSectionNodes( ast, name );
 	}
+	return attacher;
 
 	/**
 	* Attach a plugin to a remark processor in order to extract the specified section.
@@ -103,10 +112,10 @@ function extractor( name ) {
 	* @private
 	* @returns {Function} transformer
 	*/
-	return function attacher() {
+	function attacher() {
 		return transformer;
-	}; // end FUNCTION attacher()
-};
+	}
+}
 
 
 // EXPORTS //

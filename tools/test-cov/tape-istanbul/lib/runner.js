@@ -96,6 +96,7 @@ function runner() {
 	* @private
 	* @param {(Error|null)} error - error object
 	* @param {StringArray} files - absolute filepaths for filenames which matched the glob pattern
+	* @returns {void}
 	*/
 	function onGlob( error, files ) {
 		if ( error ) {
@@ -123,7 +124,7 @@ function runner() {
 		count = 0;
 		cache = {};
 		for ( i = 0; i < files.length; i++ ) {
-			cb = onRead( files[ i ], onData );
+			cb = onReadFactory( files[ i ], onData );
 			readFile( files[ i ], opts, cb );
 		}
 		/**
@@ -148,21 +149,24 @@ function runner() {
 	* @private
 	* @param {string} id - file id
 	* @param {Callback} clbk - callback
+	* @returns {void}
 	*/
-	function onRead( id, clbk ) {
+	function onReadFactory( id, clbk ) {
+		return onRead;
 		/**
 		* Callback invoked upon reading a file.
 		*
 		* @private
 		* @param {(Error|null)} error - error object
 		* @param {(Buffer|string)} data - file content
+		* @returns {void}
 		*/
-		return function onRead( error, data ) {
+		function onRead( error, data ) {
 			if ( error ) {
 				return done( error );
 			}
 			clbk( id, data.toString() );
-		}; // end FUNCTION onRead()
+		}
 	}
 
 	/**
@@ -214,6 +218,7 @@ function runner() {
 	*
 	* @private
 	* @param {Error} [error] - error object
+	* @returns {void}
 	*/
 	function done( error ) {
 		if ( error ) {
