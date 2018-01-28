@@ -28,7 +28,7 @@ var join = require( 'path' ).join;
 
 var etc = resolve( __dirname, '..', '..', '..' );
 var config = join( etc, 'eslint', '.eslintrc.markdown.js' );
-var eslint = resolve( etc, '..', 'tools', 'remark', 'plugins', 'remark-lint-eslint' );
+var eslint = resolve( etc, '..', 'lib', 'node_modules', '@stdlib', '_tools', 'remark', 'plugins', 'remark-lint-eslint' );
 var opts = {
 	'config': config,
 	'ignore': false,
