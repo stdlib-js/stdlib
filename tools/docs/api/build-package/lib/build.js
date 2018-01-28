@@ -2,15 +2,15 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'docs:build-package' );
 var join = require( 'path' ).join;
+var debug = require( 'debug' )( 'docs:build-package' );
 var mkdirp = require( 'mkdirp' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var tests = require( '@stdlib/_tools/tests/browser-build' );
 var benchmarks = require( '@stdlib/_tools/benchmarks/browser-build' );
-var readmeToHTML = require( './../../../../readme/to-html' );
+var readmeToHTML = require( '@stdlib/_tools/readme/to-html' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 
