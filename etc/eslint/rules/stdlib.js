@@ -543,7 +543,7 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
-	'whitelist': [ 'ndarray', 'x-axis', 'y-axis', '`x`', '`x`-value', '`y`', '`y`-value' ]
+	'whitelist': [ 'ndarray', 'rehype', 'remark', 'x-axis', 'y-axis', '`x`', '`x`-value', '`y`', '`y`-value' ]
 }];
 
 /**
