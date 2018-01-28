@@ -37,7 +37,7 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define the executable for generating a coverage report name:
-COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
+COVERAGE_REPORT_NAME ?= $(TOOLS_PKGS_DIR)/test-cov/scripts/coverage_report_name
 
 # Define the path to the Istanbul executable.
 #
@@ -114,7 +114,7 @@ ISTANBUL_REPORT_FLAGS ?= \
 
 # Define the test runner executable for Istanbul instrumented source code:
 ifeq ($(JAVASCRIPT_TEST_RUNNER), tape)
-	ISTANBUL_TEST_RUNNER ?= $(NODE) $(TOOLS_DIR)/test-cov/tape-istanbul/bin/cli
+	ISTANBUL_TEST_RUNNER ?= $(NODE) $(TOOLS_PKGS_DIR)/test-cov/tape-istanbul/bin/cli
 	ISTANBUL_TEST_RUNNER_FLAGS ?= \
 		--dir $(ISTANBUL_INSTRUMENT_OUT) \
 		--global '__coverage__'
