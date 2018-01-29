@@ -210,7 +210,7 @@ CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/packag
 REMARK ?= $(BIN_DIR)/remark
 
 # Define the path to the local remark plugins directory:
-REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
+REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_PKGS_DIR)/remark/plugins
 
 # Define the path to the [`browserify`][1] executable.
 #

@@ -40,7 +40,7 @@ REMARK_EQUATIONS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 REMARK_EQUATIONS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
 
 # Define the path to the local remark plugins directory:
-REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_DIR)/remark/plugins
+REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_PKGS_DIR)/remark/plugins
 
 # Define the path to a plugin which processes Markdown equation comments:
 REMARK_IMG_EQUATIONS_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-img-equations
