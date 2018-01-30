@@ -37,7 +37,8 @@ DAVID_FLAGS ?= \
 	--ignore update-notifier \
 	--ignore chai \
 	--ignore debug \
-	--ignore ajv
+	--ignore ajv \
+	--ignore d3-scale
 
 
 # TARGETS #
