@@ -2511,6 +2511,24 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 }];
 
 /**
+* Never allow `require()` calls of absolute file paths.
+*
+* @name no-require-absolute-path
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var stdlib = require( '/path/to/stdlib' );
+*
+* @example
+* // Good...
+* var stdlib = require( '@stdlib' );
+*/
+rules[ 'stdlib/no-require-absolute-path' ] = 'error';
+
+/**
 * Enforce that `require()` calls of files end with a whitelisted file extension.
 *
 * @name require-file-extensions
