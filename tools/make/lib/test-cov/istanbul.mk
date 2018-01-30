@@ -37,7 +37,7 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define the executable for generating a coverage report name:
-COVERAGE_REPORT_NAME ?= $(TOOLS_PKGS_DIR)/test-cov/scripts/coverage_report_name
+COVERAGE_REPORT_NAME ?= $(TOOLS_DIR)/test-cov/scripts/coverage_report_name
 
 # Define the path to the Istanbul executable.
 #
