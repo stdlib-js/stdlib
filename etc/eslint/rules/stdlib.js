@@ -2600,7 +2600,6 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 */
 rules[ 'stdlib/require-order' ] = [ 'error', {
 	'order': [
-		'/^tape$/',
 		'builtin',
 		'external',
 		'/^@stdlib/',
