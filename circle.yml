@@ -29,7 +29,7 @@ machine:
 
   post:
     # Log metrics in the background in order to monitor resource usage over time:
-    - 'FILE=$CIRCLE_ARTIFACTS/process_metrics.txt; while true; do ps -u ubuntu -eo pid,%cpu,%mem,rss,args,uname -w -w --sort=-%mem >> $FILE; echo "----------" >> $FILE; sleep 1; done':
+    - 'chmod +x ./tools/ci/circle/process_metrics && ./tools/ci/circle/process_metrics':
         background: true
 
 
