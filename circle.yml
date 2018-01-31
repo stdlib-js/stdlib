@@ -27,7 +27,12 @@ machine:
   node:
     version: 8
 
+
+# Customize the environment after repository checkout:
+checkout:
   post:
+    - 'git init'
+
     # Monitor process resource usage:
     - 'chmod +x ./tools/ci/circle/process_metrics && ./tools/ci/circle/process_metrics':
         background: true
@@ -35,12 +40,6 @@ machine:
     # Monitor system resource usage:
     - 'chmod +x ./tools/ci/circle/system_metrics && ./tools/ci/circle/system_metrics':
         background: true
-
-
-# Customize the repository after checkout:
-checkout:
-  post:
-    - 'git init'
 
 
 # Custom environment dependencies:
