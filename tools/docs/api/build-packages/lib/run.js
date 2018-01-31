@@ -2,8 +2,8 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'docs:build-packages:run' );
 var resolve = require( 'path' ).resolve;
+var logger = require( 'debug' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
@@ -12,6 +12,11 @@ var findPkgs = require( '@stdlib/_tools/pkgs/find' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var build = require( './build.js' );
+
+
+// VARIABLES //
+
+var debug = logger( 'docs:build-packages:run' );
 
 
 // MAIN //

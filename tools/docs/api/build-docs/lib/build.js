@@ -2,8 +2,8 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'build-docs:main' );
 var resolve = require( 'path' ).resolve;
+var logger = require( 'debug' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var copy = require( '@stdlib/utils/copy' );
 var cwd = require( '@stdlib/process/cwd' );
@@ -13,6 +13,11 @@ var defaults = require( './defaults.json' );
 var head = require( './head.js' );
 var logo = require( './logo.js' );
 var scripts = require( './scripts.js' );
+
+
+// VARIABLES //
+
+var debug = logger( 'build-docs:main' );
 
 
 // MAIN //

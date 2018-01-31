@@ -2,11 +2,16 @@
 
 // MODULES //
 
-var debug = require( 'debug' )( 'docs:build-packages:build' );
 var join = require( 'path' ).join;
+var logger = require( 'debug' );
 var copy = require( '@stdlib/utils/copy' );
 var buildPkg = require( './../../build-package' );
 var packageName = require( './package_name.js' );
+
+
+// VARIABLES //
+
+var debug = logger( 'docs:build-packages:build' );
 
 
 // MAIN //

@@ -3,7 +3,7 @@
 // MODULES //
 
 var join = require( 'path' ).join;
-var debug = require( 'debug' )( 'docs:build-package' );
+var logger = require( 'debug' );
 var mkdirp = require( 'mkdirp' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
@@ -13,6 +13,11 @@ var benchmarks = require( '@stdlib/_tools/benchmarks/browser-build' );
 var readmeToHTML = require( '@stdlib/_tools/readme/to-html' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
+
+
+// VARIABLES //
+
+var debug = logger( 'docs:build-package' );
 
 
 // MAIN //
