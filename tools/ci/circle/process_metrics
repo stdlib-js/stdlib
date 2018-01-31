@@ -41,7 +41,7 @@ on_error() {
 # $2 - output log file
 poll() {
 	while true; do
-		ps -u ubuntu -eo pid,%cpu,%mem,rss,args,uname -w -w --sort=-%mem >> "$2";
+		ps -u ubuntu eo pid,%cpu,%mem,rss,args,uname -w -w --sort=-%mem >> "$2";
 		echo '----------' >> "$2";
 		sleep "$1";
 	done
