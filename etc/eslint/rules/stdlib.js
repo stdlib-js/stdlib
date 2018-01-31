@@ -2511,6 +2511,42 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 }];
 
 /**
+* Never allow `require()` calls of absolute file paths.
+*
+* @name no-require-absolute-path
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var stdlib = require( '/path/to/stdlib' );
+*
+* @example
+* // Good...
+* var stdlib = require( '@stdlib' );
+*/
+rules[ 'stdlib/no-require-absolute-path' ] = 'error';
+
+/**
+* Never allow unassigned `require()` calls.
+*
+* @name no-unassigned-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* require( '@stdlib' );
+*
+* @example
+* // Good...
+* var stdlib = require( '@stdlib' );
+*/
+rules[ 'stdlib/no-unassigned-require' ] = 'error';
+
+/**
 * Enforce that `require()` calls of files end with a whitelisted file extension.
 *
 * @name require-file-extensions
