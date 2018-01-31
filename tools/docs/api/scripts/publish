@@ -68,7 +68,7 @@ project_build_dir="${project_dir}/build"
 source_dir="${project_dir}/lib/node_modules"
 
 # Define the path to the project utility for building API documentation:
-build_docs="${project_dir}/tools/docs/api/build-docs/bin/cli"
+build_docs="${source_dir}/@stdlib/_tools/docs/api/build-docs/bin/cli"
 
 # Directory into which to clone the documentation repository:
 docs_dir="${tmp_dir}/docs"
