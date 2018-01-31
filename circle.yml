@@ -27,6 +27,11 @@ machine:
   node:
     version: 8
 
+  post:
+    # Log metrics in the background in order to monitor resource usage over time:
+    - 'FILE=$CIRCLE_ARTIFACTS/monitoring_metrics.txt; while true; do ps -u ubuntu eo pid,%cpu,%mem,rss,args,uname --sort=-%mem >> $FILE; echo "----------" >> $FILE; sleep 1; done':
+        background: true
+
 
 # Customize the repository after checkout:
 checkout:
