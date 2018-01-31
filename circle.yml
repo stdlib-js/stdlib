@@ -28,8 +28,12 @@ machine:
     version: 8
 
   post:
-    # Log metrics in the background in order to monitor resource usage over time:
+    # Monitor process resource usage:
     - 'chmod +x ./tools/ci/circle/process_metrics && ./tools/ci/circle/process_metrics':
+        background: true
+
+    # Monitor system resource usage:
+    - 'chmod +x ./tools/ci/circle/system_metrics && ./tools/ci/circle/system_metrics':
         background: true
 
 
