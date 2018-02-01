@@ -28,10 +28,18 @@ machine:
     version: 8
 
 
-# Customize the repository after checkout:
+# Customize the environment after repository checkout:
 checkout:
   post:
     - 'git init'
+
+    # Monitor process resource usage:
+    - 'chmod +x ./tools/ci/circle/process_metrics && ./tools/ci/circle/process_metrics':
+        background: true
+
+    # Monitor system resource usage:
+    - 'chmod +x ./tools/ci/circle/system_metrics && ./tools/ci/circle/system_metrics':
+        background: true
 
 
 # Custom environment dependencies:
