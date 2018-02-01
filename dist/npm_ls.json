@@ -1,11 +1,11 @@
 {
   "name": "@stdlib/stdlib",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "dependencies": {
     "d3-format": {
-      "version": "1.2.1",
+      "version": "1.2.2",
       "from": "d3-format@^1.0.0",
-      "resolved": "https://registry.npmjs.org/d3-format/-/d3-format-1.2.1.tgz"
+      "resolved": "https://registry.npmjs.org/d3-format/-/d3-format-1.2.2.tgz"
     },
     "d3-scale": {
       "version": "1.0.7",
@@ -28,9 +28,9 @@
           "resolved": "https://registry.npmjs.org/d3-color/-/d3-color-1.0.3.tgz"
         },
         "d3-format": {
-          "version": "1.2.1",
+          "version": "1.2.2",
           "from": "d3-format@^1.0.0",
-          "resolved": "https://registry.npmjs.org/d3-format/-/d3-format-1.2.1.tgz"
+          "resolved": "https://registry.npmjs.org/d3-format/-/d3-format-1.2.2.tgz"
         },
         "d3-interpolate": {
           "version": "1.1.6",
@@ -423,9 +423,9 @@
               "resolved": "https://registry.npmjs.org/har-validator/-/har-validator-5.0.3.tgz",
               "dependencies": {
                 "ajv": {
-                  "version": "5.4.0",
+                  "version": "5.5.2",
                   "from": "ajv@^5.1.0",
-                  "resolved": "https://registry.npmjs.org/ajv/-/ajv-5.4.0.tgz",
+                  "resolved": "https://registry.npmjs.org/ajv/-/ajv-5.5.2.tgz",
                   "dependencies": {
                     "co": {
                       "version": "4.6.0",
@@ -719,9 +719,9 @@
               }
             },
             "uuid": {
-              "version": "3.1.0",
+              "version": "3.2.1",
               "from": "uuid@^3.1.0",
-              "resolved": "https://registry.npmjs.org/uuid/-/uuid-3.1.0.tgz"
+              "resolved": "https://registry.npmjs.org/uuid/-/uuid-3.2.1.tgz"
             }
           }
         },
@@ -1273,9 +1273,9 @@
                   "resolved": "https://registry.npmjs.org/registry-auth-token/-/registry-auth-token-3.3.1.tgz",
                   "dependencies": {
                     "rc": {
-                      "version": "1.2.2",
+                      "version": "1.2.4",
                       "from": "rc@^1.1.6",
-                      "resolved": "https://registry.npmjs.org/rc/-/rc-1.2.2.tgz",
+                      "resolved": "https://registry.npmjs.org/rc/-/rc-1.2.4.tgz",
                       "dependencies": {
                         "deep-extend": {
                           "version": "0.4.2",
@@ -1312,9 +1312,9 @@
                   "resolved": "https://registry.npmjs.org/registry-url/-/registry-url-3.1.0.tgz",
                   "dependencies": {
                     "rc": {
-                      "version": "1.2.2",
+                      "version": "1.2.4",
                       "from": "rc@^1.1.6",
-                      "resolved": "https://registry.npmjs.org/rc/-/rc-1.2.2.tgz"
+                      "resolved": "https://registry.npmjs.org/rc/-/rc-1.2.4.tgz"
                     }
                   }
                 },
