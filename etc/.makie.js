@@ -25,7 +25,7 @@ var path = require( 'path' );
 
 // VARIABLES //
 
-var prefix = path.resolve( __dirname, '../tools/makie/plugins' );
+var prefix = path.resolve( __dirname, '../lib/node_modules/@stdlib/_tools/makie/plugins' );
 
 
 // MAIN //
