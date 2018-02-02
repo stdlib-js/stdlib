@@ -35,7 +35,7 @@ fi
 dir=$(dirname "$0")
 
 # Define the path to the `makie` executable:
-makie="${dir}/../makie/makie/bin/cli"
+makie="${dir}/../../lib/node_modules/@stdlib/_tools/makie/makie/bin/cli"
 
 # Define the path to the `makie` configuration file:
 makie_config="${dir}/../../etc/.makie.js"
