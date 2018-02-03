@@ -1991,6 +1991,49 @@ rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 
 /**
+* Enforce that @private tags are not missing in unassigned function declarations.
+*
+* @name jsdoc-private-annotation
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @private
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker
