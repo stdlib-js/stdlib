@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define test runner to use when running JavaScript tests across multiple Node.js versions:
-JAVASCRIPT_TEST_NODE_VERSIONS ?= $(TOOLS_DIR)/test/scripts/test_node_versions
+JAVASCRIPT_TEST_NODE_VERSIONS ?= $(TOOLS_DIR)/tests/scripts/test_node_versions
 
 # Define the command-line options to be used when invoking the versions runner:
 JAVASCRIPT_TEST_NODE_VERSIONS_FLAGS ?= \
