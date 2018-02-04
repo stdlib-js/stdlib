@@ -64,6 +64,13 @@ eslint.rules[ 'no-console' ] = 'off';
 */
 eslint.rules[ 'require-jsdoc' ] = 'off';
 
+/**
+* Do not require `@private` annotations.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
+
 
 // EXPORTS //
 

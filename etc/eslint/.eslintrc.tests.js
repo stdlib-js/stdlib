@@ -113,6 +113,13 @@ eslint.rules[ 'no-restricted-syntax' ] = [ 'error',
 eslint.rules[ 'require-jsdoc' ] = 'off';
 
 /**
+* Do not require `@private` annotations.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
+
+/**
 * Allow the use of `undefined`.
 *
 * @private

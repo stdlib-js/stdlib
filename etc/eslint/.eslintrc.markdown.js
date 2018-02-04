@@ -119,6 +119,13 @@ eslint.rules[ 'no-tabs' ] = 'error';
 eslint.rules[ 'require-jsdoc' ] = 'off';
 
 /**
+* Do not require `@private` annotations.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
+
+/**
 * Allow use of undeclared variables, as variables may be defined in previous code blocks or be implied.
 *
 * @private
