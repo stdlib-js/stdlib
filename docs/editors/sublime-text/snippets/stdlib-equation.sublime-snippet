@@ -1,0 +1,19 @@
+<snippet>
+    <content><!-- <equation class="equation" label="eq:TODO" align="center" raw="TODO" alt="TODO"> -->
+
+<div class="equation" align="center" data-raw-text="TODO" data-equation="eq:TODO">
+	<img src="TODO" alt="TODO">
+	<br>
+</div>
+
+<!-- </equation> --></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.equation</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.html.markdown</scope>
+
+    <!-- Description to show in the menu -->
+    <description>Markdown HTML equation</description>
+</snippet>
