@@ -1,8 +1,8 @@
 <snippet>
-    <content><!-- <equation class="equation" label="eq:$1" align="center" raw="$2" alt="$3"> -->
+    <content><!-- <equation class="equation" label="eq:${1:TODO}" align="center" raw="${2:TODO}" alt="${3:TODO}"> -->
 
-<div class="equation" align="center" data-raw-text="$2" data-equation="eq:$1">
-	<img src="TODO" alt="$3">
+<div class="equation" align="center" data-raw-text="${2:TODO}" data-equation="eq:${1:TODO}">
+	<img src="TODO" alt="${3:TODO}">
 	<br>
 </div>
 
