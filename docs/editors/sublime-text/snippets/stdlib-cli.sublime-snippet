@@ -1,5 +1,5 @@
 <snippet>
-    <content><!-- Section for describing a command-line interface. -->
+    <content><![CDATA[<!-- Section for describing a command-line interface. -->
 
 * * *
 
@@ -51,7 +51,9 @@ TODO
 
 </section>
 
-<!-- /.cli --></content>
+<!-- /.cli -->
+
+]]></content>
 
     <!-- Tab trigger to activate the snippet -->
     <tabTrigger>stdlib.cli</tabTrigger>
