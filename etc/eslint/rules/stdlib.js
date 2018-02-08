@@ -2724,6 +2724,29 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 */
 rules[ 'stdlib/section-headers' ] = 'error';
 
+/**
+* Require section headers to be padded with empty lines.
+*
+* @name section-header-empty-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* // EXPORTS //
+* module.exports = {};
+*
+* @example
+* // Good...
+*
+* // EXPORTS //
+*
+* module.exports = {};
+*/
+rules[ 'stdlib/section-header-empty-lines' ] = 'error';
+
 
 // EXPORTS //
 
