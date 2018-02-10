@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var hasWebAssemblySupport = require( '@stdlib/utils/detect-wasm-support' );
+var hasWebAssemblySupport = require( '@stdlib/assert/has-wasm-support' );
 var pkg = require( './../package.json' ).name;
 var TODO = require( './../lib/wasm.js' );
 
