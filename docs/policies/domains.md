@@ -14,6 +14,7 @@ List of active domains:
 
 List of **currently** unused domains:
 
+-   [stdlib.ai](http://stdlib.ai)
 -   [stdlibjs.com](http://stdlibjs.com)
 -   [stdlib.co](http://stdlib.co)
 -   [stdlibjs.co](http://stdlibjs.co)
