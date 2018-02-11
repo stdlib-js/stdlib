@@ -2156,6 +2156,19 @@
       "geometric"
     ]
   },
+  "https://en.wikipedia.org/wiki/Geometric_mean": {
+    "id": "geometric-mean",
+    "description": "Wikipedia entry for the geometric mean which is defined as the nth root of a product of n numbers.",
+    "short_url": "",
+    "keywords": [
+      "geometric",
+      "mean",
+      "product",
+      "prod",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Given_name": {
     "id": "given-name",
     "description": "Wikipedia entry on given / first names.",
