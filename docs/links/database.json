@@ -1650,6 +1650,19 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Arithmetic_mean": {
+    "id": "arithmetic-mean",
+    "description": "Wikipedia entry for the arithmetic mean.",
+    "short_url": "",
+    "keywords": [
+      "arithmetic",
+      "mean",
+      "average",
+      "avg",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Bernoulli_number": {
     "id": "bernoulli-number",
     "description": "Wikipedia entry for the Bernoulli numbers.",
