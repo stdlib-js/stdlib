@@ -2227,6 +2227,19 @@
       "format"
     ]
   },
+  "https://en.wikipedia.org/wiki/Harmonic_mean": {
+    "id": "harmonic-mean",
+    "description": "Wikipedia entry for the harmonic mean.",
+    "short_url": "",
+    "keywords": [
+      "harmonic",
+      "mean",
+      "avg",
+      "average",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Horner%27s_method": {
     "id": "horners-method",
     "description": "Wikipedia entry for Horner's method, an algorithm for evaluating polynomials.",
