@@ -1848,6 +1848,17 @@
       "content delivery network"
     ]
   },
+  "https://en.wikipedia.org/wiki/Covariance": {
+    "id": "covariance",
+    "description": "Wikipedia entry for covariance, a measure of joint variability of two random variables.",
+    "short_url": "",
+    "keywords": [
+      "covariance",
+      "statistics",
+      "stats",
+      "variance"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
