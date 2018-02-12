@@ -2500,6 +2500,20 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Moving_average": {
+    "id": "moving-average",
+    "description": "Wikipedia entry for a moving average.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "average",
+      "avg",
+      "mean",
+      "moving",
+      "sliding window"
+    ]
+  },
   "https://en.wikipedia.org/wiki/NOP": {
     "id": "nop",
     "description": "Wikipedia entry for the no operation instruction.",
