@@ -2747,6 +2747,42 @@ rules[ 'stdlib/section-headers' ] = 'error';
 */
 rules[ 'stdlib/section-header-empty-lines' ] = 'error';
 
+/**
+* Require variable declarations inside of functions to be ordered by length.
+*
+* @name vars-order
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* function fizzBuzz() {
+*   var i;
+*   var out;
+*
+*   for ( i = 1; i <= 100; i++ ) {
+*     out = ( i % 5 === 0 ) ? "Buzz" : ( i % 3 === 0 ) ? "Fizz" : i;
+*     console.log( out );
+*   }
+* }
+*
+* @example
+* // Good...
+*
+* function fizzBuzz() {
+*   var out;
+*   var i;
+*
+*   for ( i = 1; i <= 100; i++ ) {
+*     out = ( i % 5 === 0 ) ? "Buzz" : ( i % 3 === 0 ) ? "Fizz" : i;
+*     console.log( out );
+*   }
+* }
+*/
+rules[ 'stdlib/vars-order' ] = 'error';
+
 
 // EXPORTS //
 
