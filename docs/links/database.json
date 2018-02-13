@@ -2624,13 +2624,17 @@
   },
   "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient": {
     "id": "pearson-correlation",
-    "description": "Wikipedia entry for the Pearsonc correlation coefficient.",
+    "description": "Wikipedia entry for the Pearson product-moment correlation coefficient, a measure of linear correlation between two variables X and Y.",
     "short_url": "",
     "keywords": [
       "statistics",
       "stats",
       "correlation",
-      "pearson"
+      "pearson",
+      "linear",
+      "pcc",
+      "ppmcc",
+      "coefficient"
     ]
   },
   "https://en.wikipedia.org/wiki/Percent-encoding": {
