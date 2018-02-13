@@ -2572,6 +2572,24 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 rules[ 'stdlib/no-require-absolute-path' ] = 'error';
 
 /**
+* Never allow `require()` calls to explicitly require `index.js` files.
+*
+* @name no-require-indexjs
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var debug = require( 'debug/index.js' );
+*
+* @example
+* // Good...
+* var debug = require( 'debug' );
+*/
+rules[ 'stdlib/no-require-indexjs' ] = 'error';
+
+/**
 * Never allow unassigned `require()` calls.
 *
 * @name no-unassigned-require
@@ -2753,7 +2771,6 @@ rules[ 'stdlib/section-header-empty-lines' ] = 'error';
 * @name vars-order
 * @memberof rules
 * @type {string}
-* @default 'error'
 *
 * @example
 * // Bad...

@@ -71,6 +71,13 @@ eslint.rules[ 'require-jsdoc' ] = 'off';
 */
 eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 
+/**
+* Do not require ordering of variable declarations inside of functions.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/vars-order' ] = 'off';
+
 
 // EXPORTS //
 
