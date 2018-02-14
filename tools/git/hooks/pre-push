@@ -40,6 +40,9 @@ url="$2"
 # Determine the current branch:
 export GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD)
 
+# Determine root directory:
+root=$(git rev-parse --show-toplevel)
+
 
 # FUNCTIONS #
 
@@ -105,7 +108,7 @@ main() {
 	fi
 
 	# Get the set of changed files (added and modified):
-	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}")
+	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\/#")
 
 	# Run JavaScript example files:
 	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
