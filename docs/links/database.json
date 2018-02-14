@@ -1650,6 +1650,19 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Arithmetic_mean": {
+    "id": "arithmetic-mean",
+    "description": "Wikipedia entry for the arithmetic mean.",
+    "short_url": "",
+    "keywords": [
+      "arithmetic",
+      "mean",
+      "average",
+      "avg",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Bernoulli_number": {
     "id": "bernoulli-number",
     "description": "Wikipedia entry for the Bernoulli numbers.",
@@ -1833,6 +1846,17 @@
     "keywords": [
       "cdn",
       "content delivery network"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Covariance": {
+    "id": "covariance",
+    "description": "Wikipedia entry for covariance, a measure of joint variability of two random variables.",
+    "short_url": "",
+    "keywords": [
+      "covariance",
+      "statistics",
+      "stats",
+      "variance"
     ]
   },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
@@ -2156,6 +2180,19 @@
       "geometric"
     ]
   },
+  "https://en.wikipedia.org/wiki/Geometric_mean": {
+    "id": "geometric-mean",
+    "description": "Wikipedia entry for the geometric mean which is defined as the nth root of a product of n numbers.",
+    "short_url": "",
+    "keywords": [
+      "geometric",
+      "mean",
+      "product",
+      "prod",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Given_name": {
     "id": "given-name",
     "description": "Wikipedia entry on given / first names.",
@@ -2199,6 +2236,19 @@
       "compression",
       "file",
       "format"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Harmonic_mean": {
+    "id": "harmonic-mean",
+    "description": "Wikipedia entry for the harmonic mean.",
+    "short_url": "",
+    "keywords": [
+      "harmonic",
+      "mean",
+      "avg",
+      "average",
+      "statistics",
+      "stats"
     ]
   },
   "https://en.wikipedia.org/wiki/Horner%27s_method": {
@@ -2461,6 +2511,20 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Moving_average": {
+    "id": "moving-average",
+    "description": "Wikipedia entry for a moving average.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "average",
+      "avg",
+      "mean",
+      "moving",
+      "sliding window"
+    ]
+  },
   "https://en.wikipedia.org/wiki/NOP": {
     "id": "nop",
     "description": "Wikipedia entry for the no operation instruction.",
@@ -2560,13 +2624,17 @@
   },
   "https://en.wikipedia.org/wiki/Pearson_correlation_coefficient": {
     "id": "pearson-correlation",
-    "description": "Wikipedia entry for the Pearsonc correlation coefficient.",
+    "description": "Wikipedia entry for the Pearson product-moment correlation coefficient, a measure of linear correlation between two variables X and Y.",
     "short_url": "",
     "keywords": [
       "statistics",
       "stats",
       "correlation",
-      "pearson"
+      "pearson",
+      "linear",
+      "pcc",
+      "ppmcc",
+      "coefficient"
     ]
   },
   "https://en.wikipedia.org/wiki/Percent-encoding": {

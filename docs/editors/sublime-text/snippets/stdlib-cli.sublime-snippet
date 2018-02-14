@@ -1,0 +1,66 @@
+<snippet>
+    <content><![CDATA[<!-- Section for describing a command-line interface. -->
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: TODO [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+\$ TODO
+TODO
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.cli</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.html.markdown</scope>
+
+    <!-- Description to show in the menu -->
+    <description>CLI documentation section</description>
+</snippet>

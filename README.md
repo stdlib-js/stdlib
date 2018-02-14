@@ -22,9 +22,9 @@
 
 <section class="intro">
 
-Stdlib is a standard library for JavaScript and Node.js, with an emphasis on numeric computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more. This is the GitHub repository of stdlib source code and documentation.
+stdlib is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
 
-For help developing stdlib, see the [development guide][stdlib-development].
+This is the GitHub repository of stdlib source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
 
 ## Features
 
