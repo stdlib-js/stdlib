@@ -51,7 +51,7 @@ compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 # make wasm PKGS_WASM_PATTERN=**/math/base/special/**/package.json
 #/
 wasm: $(NODE_MODULES)
-	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS="$(pkgs_wasm_list_wasm_flags)" -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
+	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \
@@ -80,7 +80,7 @@ wasm: $(NODE_MODULES)
 # make clean-wasm PKGS_WASM_PATTERN=**/math/base/special/**/package.json
 #/
 clean-wasm: $(NODE_MODULES)
-	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS="$(pkgs_wasm_list_wasm_flags)" -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
+	$(QUIET) $(MAKE) LIST_PACKAGE_WASM_FLAGS=$(pkgs_wasm_list_wasm_flags) -f $(this_file) list-pkgs-wasm | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
 		fi; \
