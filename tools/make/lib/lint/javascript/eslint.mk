@@ -56,11 +56,20 @@ ESLINT_FLAGS ?= \
 # This target lints only JavaScript source files.
 
 eslint-src: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
 	done
+else
+	$(QUIET) EXIT_CODE=0 && $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || { EXIT_CODE=1; exit 0; } \
+	done
+	exit $(EXIT_CODE)
+endif
 
 .PHONY: eslint-src
 

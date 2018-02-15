@@ -40,7 +40,11 @@ KEYWORDS ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
 ifndef FAST_FAIL
 	FAIL_FAST := true
 else
+ifeq ($(FAST_FAIL), 0)
 	FAIL_FAST := false
+else
+	FAIL_FAST := true
+endif
 endif
 
 
