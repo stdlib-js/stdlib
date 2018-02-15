@@ -63,12 +63,11 @@ ifeq ($(FAIL_FAST), true)
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
 	done
 else
-	$(QUIET) EXIT_CODE=0 && $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || { EXIT_CODE=1; exit 0; } \
+		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; \
 	done
-	exit $(EXIT_CODE)
 endif
 
 .PHONY: eslint-src
