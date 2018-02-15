@@ -18,7 +18,6 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/jshint.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/eslint.mk
 
 
@@ -38,12 +37,8 @@ lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examp
 # This target lints only JavaScript source files.
 
 lint-javascript-src:
-ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-src
-else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-src
-endif
 endif
 
 .PHONY: lint-javascript-src
@@ -54,12 +49,8 @@ endif
 # This target lints only JavaScript test files.
 
 lint-javascript-tests:
-ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-tests
-else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-tests
-endif
 endif
 
 .PHONY: lint-javascript-tests
@@ -70,12 +61,8 @@ endif
 # This target lints only JavaScript example files.
 
 lint-javascript-examples:
-ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-examples
-else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-examples
-endif
 endif
 
 .PHONY: lint-javascript-examples
@@ -86,12 +73,8 @@ endif
 # This target lints only JavaScript benchmark files.
 
 lint-javascript-benchmarks:
-ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) jshint-benchmarks
-else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-benchmarks
-endif
 endif
 
 .PHONY: lint-javascript-benchmarks
@@ -102,12 +85,8 @@ endif
 # This target lints JavaScript files. Note that we expect `$FILES` to be a JavaScript file list.
 
 lint-javascript-files:
-ifeq ($(JAVASCRIPT_LINTER), jshint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) jshint-files
-else
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-files
-endif
 endif
 
 .PHONY: lint-javascript-files
