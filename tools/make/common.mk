@@ -36,6 +36,9 @@ LICENSES_WHITELIST ?= 'Apache-2.0,Artistic-2.0,BSD-2-Clause,BSD-3-Clause,BSL-1.0
 # Define keywords identifying source annotations:
 KEYWORDS ?= 'TODO|FIXME|WARNING|HACK|NOTE|OPTIMIZE'
 
+# Indicate whether to "fast" fail when linting, running tests, etc:
+FAST_FAIL ?= 1
+
 
 # ENVIRONMENTS #
 
