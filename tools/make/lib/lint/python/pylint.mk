@@ -64,11 +64,19 @@ endif
 # This target lints only Python source files.
 
 pylint-src:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pylint-src
 
@@ -78,11 +86,19 @@ pylint-src:
 # This target lints only Python test fixture files.
 
 pylint-tests-fixtures:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pylint-tests-fixtures
 
@@ -92,11 +108,19 @@ pylint-tests-fixtures:
 # This target lints only Python example files.
 
 pylint-examples:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pylint-examples
 
@@ -106,11 +130,19 @@ pylint-examples:
 # This target lints only Python benchmark files.
 
 pylint-benchmarks:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pylint-benchmarks
 
@@ -120,10 +152,18 @@ pylint-benchmarks:
 # This target lints Python files. Note that we expect `$FILES` to be a Python file list.
 
 pylint-files:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(PYLINT) $(PYLINT_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pylint-files

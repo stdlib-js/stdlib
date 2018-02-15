@@ -62,11 +62,19 @@ endif
 # This target lints only Python source files.
 
 pydocstyle-src:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting docstrings: $$file"; \
+		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pydocstyle-src
 
@@ -76,11 +84,19 @@ pydocstyle-src:
 # This target lints only Python test fixture files.
 
 pydocstyle-tests-fixtures:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting docstrings: $$file"; \
+		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pydocstyle-tests-fixtures
 
@@ -90,11 +106,19 @@ pydocstyle-tests-fixtures:
 # This target lints only Python example files.
 
 pydocstyle-examples:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting docstrings: $$file"; \
+		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pydocstyle-examples
 
@@ -104,11 +128,19 @@ pydocstyle-examples:
 # This target lints only Python benchmark files.
 
 pydocstyle-benchmarks:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting docstrings: $$file"; \
+		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pydocstyle-benchmarks
 
@@ -118,10 +150,18 @@ pydocstyle-benchmarks:
 # This target lints Python files. Note that we expect `$FILES` to be a Python file list.
 
 pydocstyle-files:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting docstrings: $$file"; \
 		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting docstrings: $$file"; \
+		$(PYDOCSTYLE) $(PYDOCSTYLE_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: pydocstyle-files
