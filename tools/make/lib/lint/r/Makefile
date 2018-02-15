@@ -41,11 +41,19 @@ lint-r: lint-r-src lint-r-tests-fixtures lint-r-examples lint-r-benchmarks
 # This target lints only R source files.
 
 lint-r-src:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_R_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_R_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-r-src
 
@@ -55,11 +63,19 @@ lint-r-src:
 # This target lints only R test fixture files.
 
 lint-r-tests-fixtures:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_R_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_R_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-r-tests-fixtures
 
@@ -69,11 +85,19 @@ lint-r-tests-fixtures:
 # This target lints only R example files.
 
 lint-r-examples:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_R_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_R_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-r-examples
 
@@ -83,11 +107,19 @@ lint-r-examples:
 # This target lints only R benchmark files.
 
 lint-r-benchmarks:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-r-benchmarks
 
@@ -97,11 +129,18 @@ lint-r-benchmarks:
 # This target lints R files. Note that we expect `$FILES` to be a R file list.
 
 lint-r-files:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(R_LINTER) $(R_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-r-files
-
