@@ -78,11 +78,19 @@ endif
 # This target lints only JavaScript test files.
 
 eslint-tests: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_TESTS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_TESTS) $$file; \
+	done
+endif
 
 .PHONY: eslint-tests
 
@@ -92,11 +100,19 @@ eslint-tests: $(NODE_MODULES)
 # This target lints only JavaScript example files.
 
 eslint-examples: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_EXAMPLES) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_EXAMPLES) $$file; \
+	done
+endif
 
 .PHONY: eslint-examples
 
@@ -106,11 +122,19 @@ eslint-examples: $(NODE_MODULES)
 # This target lints only JavaScript benchmark files.
 
 eslint-benchmarks: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_BENCHMARKS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_BENCHMARKS) $$file; \
+	done
+endif
 
 .PHONY: eslint-benchmarks
 
@@ -120,10 +144,18 @@ eslint-benchmarks: $(NODE_MODULES)
 # This target lints JavaScript files. Note that we expect `$FILES` to be a JavaScript file list.
 
 eslint-files: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
 	done
+else
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; \
+	done
+endif
 
 .PHONY: eslint-files
