@@ -41,11 +41,19 @@ lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-ju
 # This target lints only Julia source files.
 
 lint-julia-src:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_JULIA_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_JULIA_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-julia-src
 
@@ -55,11 +63,19 @@ lint-julia-src:
 # This target lints only Julia test fixture files.
 
 lint-julia-tests-fixtures:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_JULIA_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_JULIA_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-julia-tests-fixtures
 
@@ -69,11 +85,19 @@ lint-julia-tests-fixtures:
 # This target lints only Julia example files.
 
 lint-julia-examples:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_JULIA_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_JULIA_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-julia-examples
 
@@ -83,11 +107,19 @@ lint-julia-examples:
 # This target lints only Julia benchmark files.
 
 lint-julia-benchmarks:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-julia-benchmarks
 
@@ -97,11 +129,18 @@ lint-julia-benchmarks:
 # This target lints Julia files. Note that we expect `$FILES` to be a Julia file list.
 
 lint-julia-files:
+ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file || exit 1; \
 	done
+else
+	$(QUIET) for file in $(FILES); do \
+		echo ''; \
+		echo "Linting file: $$file"; \
+		$(JULIA_LINTER) $(JULIA_LINTER_FLAGS) $$file; \
+	done
+endif
 
 .PHONY: lint-julia-files
-
