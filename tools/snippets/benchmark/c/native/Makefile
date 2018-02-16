@@ -20,9 +20,11 @@
 
 ifndef VERBOSE
 	QUIET := @
+else
+	QUIET :=
 endif
 
-# Determine the OS:
+# Determine the OS ([1][1], [2][2]).
 #
 # [1]: https://en.wikipedia.org/wiki/Uname#Examples
 # [2]: http://stackoverflow.com/a/27776822/2225624
@@ -35,6 +37,10 @@ ifneq (, $(findstring MSYS,$(OS)))
 else
 ifneq (, $(findstring CYGWIN,$(OS)))
 	OS := WINNT
+else
+ifneq (, $(findstring Windows_NT,$(OS)))
+	OS := WINNT
+endif
 endif
 endif
 endif
@@ -53,7 +59,7 @@ CFLAGS ?= \
 	-Wall \
 	-pedantic
 
-# Determine whether to generate [position independent code][1]:
+# Determine whether to generate position independent code ([1][1], [2][2]).
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
 # [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
@@ -90,7 +96,7 @@ c_targets := TODO.out
 # @param {string} [LIBPATH] - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
 # @param {string} [C_COMPILER] - C compiler
 # @param {string} [CFLAGS] - C compiler flags
-# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+# @param {(string|void)} [fPIC] - compiler flag indicating whether to generate position independent code
 #
 # @example
 # make
@@ -112,7 +118,7 @@ all: $(c_targets)
 # @param {(string|void)} LIBPATH - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
 # @param {string} CC - C compiler
 # @param {string} CFLAGS - C compiler flags
-# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+# @param {(string|void)} fPIC - compiler flag indicating whether to generate position independent code
 #/
 $(c_targets): %.out: %.c
 	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
