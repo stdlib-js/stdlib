@@ -20,9 +20,11 @@
 
 ifndef VERBOSE
 	QUIET := @
+else
+	QUIET :=
 endif
 
-# Determine the OS:
+# Determine the OS ([1][1], [2][]2).
 #
 # [1]: https://en.wikipedia.org/wiki/Uname#Examples
 # [2]: http://stackoverflow.com/a/27776822/2225624
@@ -35,6 +37,10 @@ ifneq (, $(findstring MSYS,$(OS)))
 else
 ifneq (, $(findstring CYGWIN,$(OS)))
 	OS := WINNT
+else
+ifneq (, $(findstring Windows_NT,$(OS)))
+	OS := WINNT
+endif
 endif
 endif
 endif
@@ -58,7 +64,7 @@ FFLAGS ?= \
 	-fno-underscoring \
 	-pedantic
 
-# Determine whether to generate [position independent code][1]:
+# Determine whether to generate position independent code ([1][1], [2][2]).
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
 # [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
@@ -68,7 +74,7 @@ else
 	fPIC ?= -fPIC
 endif
 
-# List of includes:
+# List of includes (e.g., `-I /foo/bar -I /beep/boop`):
 INCLUDE ?=
 
 # List of Fortran source files:
@@ -87,7 +93,7 @@ f_targets := TODO.out
 # @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
 # @param {string} [FORTRAN_COMPILER] - Fortran compiler
 # @param {string} [FFLAGS] - Fortran compiler flags
-# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+# @param {(string|void)} [fPIC] - compiler flag indicating whether to generate position independent code
 #
 # @example
 # make
@@ -107,7 +113,7 @@ all: $(f_targets)
 # @param {(string|void)} INCLUDE - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
 # @param {string} FC - Fortran compiler
 # @param {string} FFLAGS - Fortran compiler flags
-# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+# @param {(string|void)} fPIC - compiler flag indicating whether to generate position independent code
 #/
 $(f_targets): %.out: %.f
 	$(QUIET) $(FC) $(FFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $<
