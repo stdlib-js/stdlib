@@ -20,12 +20,14 @@
 
 ifndef VERBOSE
 	QUIET := @
+else
+	QUIET :=
 endif
 
 # Specify the path to Boost:
 BOOST ?=
 
-# Determine the OS:
+# Determine the OS ([1][1], [2][2]).
 #
 # [1]: https://en.wikipedia.org/wiki/Uname#Examples
 # [2]: http://stackoverflow.com/a/27776822/2225624
@@ -38,6 +40,10 @@ ifneq (, $(findstring MSYS,$(OS)))
 else
 ifneq (, $(findstring CYGWIN,$(OS)))
 	OS := WINNT
+else
+ifneq (, $(findstring Windows_NT,$(OS)))
+	OS := WINNT
+endif
 endif
 endif
 endif
@@ -56,7 +62,7 @@ CXXFLAGS ?= \
 	-Wall \
 	-pedantic
 
-# Determine whether to generate [position independent code][1]:
+# Determine whether to generate position independent code ([1][1], [2][2]).
 #
 # [1]: https://gcc.gnu.org/onlinedocs/gcc/Code-Gen-Options.html#Code-Gen-Options
 # [2]: http://stackoverflow.com/questions/5311515/gcc-fpic-option
@@ -78,7 +84,7 @@ cxx_targets := benchmark.out
 # @param {string} BOOST - Boost include directory
 # @param {string} [CXX_COMPILER] - C++ compiler
 # @param {string} [CXXFLAGS] - C++ compiler flags
-# @param {(string|void)} [fPIC] - flag indicating whether to generate position independent code
+# @param {(string|void)} [fPIC] - compiler flag indicating whether to generate position independent code
 #
 # @example
 # make
@@ -96,7 +102,7 @@ all: $(cxx_targets)
 # @private
 # @param {string} CXX - C++ compiler
 # @param {string} CXXFLAGS - C++ compiler flags
-# @param {(string|void)} fPIC - flag indicating whether to generate position independent code
+# @param {(string|void)} fPIC - compiler flag indicating whether to generate position independent code
 # @param {string} BOOST - Boost include directory
 #/
 $(cxx_targets): %.out: %.cpp $(BOOST)
