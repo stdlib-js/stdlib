@@ -258,6 +258,10 @@ void generate( double *x, const unsigned int len, const char *name ) {
 
 	// Allocate an output array:
 	y = (double*) malloc( len * sizeof(double) ); // TODO
+	if ( y == NULL ) {
+		printf( "Error allocating memory.\n" );
+		exit( 1 );
+	}
 
 	// Generate fixture data:
 	for ( i = 0; i < len; i++ ) {
@@ -291,6 +295,10 @@ int main( void ) {
 
 	// Allocate an array:
 	x = (double*) malloc( len * sizeof(double) );
+	if ( x == NULL ) {
+		printf( "Error allocating memory.\n" );
+		exit( 1 );
+	}
 
 	// Generate fixture data:
 	rand_array_f64( x, len, 0.0, 1.0 ); // TODO
