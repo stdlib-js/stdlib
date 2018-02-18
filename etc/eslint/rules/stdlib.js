@@ -2629,6 +2629,24 @@ rules[ 'stdlib/no-require-absolute-path' ] = 'error';
 rules[ 'stdlib/no-require-index' ] = 'error';
 
 /**
+* Never allow packages to require themselves.
+*
+* @name no-self-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var self = require( __filename );
+*
+* @example
+* // Good...
+* var other = require( './other.js' );
+*/
+rules[ 'stdlib/no-self-require' ] = 'error';
+
+/**
 * Never allow unassigned `require()` calls.
 *
 * @name no-unassigned-require
