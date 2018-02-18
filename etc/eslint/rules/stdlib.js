@@ -2376,6 +2376,34 @@ rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
 rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 
 /**
+* Enforce that export statements are placed at the end of a file.
+*
+* @name module-exports-last
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var randn = require( './randn.js' );
+*
+* module.exports = randn;
+*
+* var factory = require( './factory.js' );
+*
+* module.exports.factory = factory;
+*
+* @example
+* // Good...
+* var randn = require( './randn.js' );
+* var factory = require( './factory.js' );
+*
+* module.exports = randn;
+* module.exports.factory = factory;
+*/
+rules[ 'stdlib/module-exports-last' ] = 'error';
+
+/**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
 *
 * @name new-cap-array
