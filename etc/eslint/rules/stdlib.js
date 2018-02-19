@@ -2045,6 +2045,52 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 
 /**
+* Enforce conventions for return annotations in JSDoc examples.
+*
+* @name jsdoc-return-annotations
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* * @example
+* * var y = square( 3.0 );
+* * // => 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // => 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-return-annotations' ] = 'error';
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker
@@ -2761,6 +2807,8 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 	]
 }];
 
+/* eslint-disable stdlib/jsdoc-return-annotations */
+
 /**
 * Enforce conventions for return annotations.
 *
@@ -2788,6 +2836,8 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 * // => 'Hello World'
 */
 rules[ 'stdlib/return-annotations' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-return-annotations */
 
 /**
 * Enforce formatting of section header comments.
