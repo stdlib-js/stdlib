@@ -2629,7 +2629,7 @@ rules[ 'stdlib/no-require-absolute-path' ] = 'error';
 rules[ 'stdlib/no-require-index' ] = 'error';
 
 /**
-* Never allow packages to require themselves.
+* Never allow modules to require themselves.
 *
 * @name no-self-require
 * @memberof rules
