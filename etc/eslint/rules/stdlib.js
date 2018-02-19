@@ -2059,6 +2059,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 * *
 * * @param {number} x - input value
 * * @returns {number} x*x
+* *
 * * @example
 * * var y = square( 3.0 );
 * * // => 9.0
@@ -2077,6 +2078,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 * *
 * * @param {number} x - input value
 * * @returns {number} x*x
+* *
 * * @example
 * * var y = square( 3.0 );
 * * // returns 9.0
