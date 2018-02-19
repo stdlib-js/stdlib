@@ -2762,6 +2762,34 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 }];
 
 /**
+* Enforce conventions for return annotations.
+*
+* @name return-annotations
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // => 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*
+* // => null
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // => 'Hello World'
+*/
+rules[ 'stdlib/return-annotations' ] = 'error';
+
+/**
 * Enforce formatting of section header comments.
 *
 * @name section-headers
