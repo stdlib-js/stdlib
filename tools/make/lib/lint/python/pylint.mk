@@ -74,7 +74,7 @@ else
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -96,7 +96,7 @@ else
 	$(QUIET) $(FIND_PYTHON_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -118,7 +118,7 @@ else
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -140,7 +140,7 @@ else
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -162,7 +162,7 @@ else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(PYLINT) $(PYLINT_FLAGS) $$file; \
+		$(PYLINT) $(PYLINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 

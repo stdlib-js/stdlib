@@ -51,7 +51,7 @@ else
 	$(QUIET) $(FIND_R_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -73,7 +73,7 @@ else
 	$(QUIET) $(FIND_R_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -95,7 +95,7 @@ else
 	$(QUIET) $(FIND_R_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -117,7 +117,7 @@ else
 	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -139,7 +139,7 @@ else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(R_LINTER) $(R_LINTER_FLAGS) $$file; \
+		$(R_LINTER) $(R_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
