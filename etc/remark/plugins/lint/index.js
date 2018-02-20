@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable stdlib/jsdoc-return-annotations-marker */
+
 'use strict';
 
 /**
