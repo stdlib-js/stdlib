@@ -2045,6 +2045,52 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 
 /**
+* Enforce conventions for return annotations in JSDoc examples.
+*
+* @name jsdoc-return-annotations
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* * @example
+* * var y = square( 3.0 );
+* * // => 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // => 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-return-annotations' ] = 'error';
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker
@@ -2376,6 +2422,34 @@ rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
 rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 
 /**
+* Enforce that export statements are placed at the end of a file.
+*
+* @name module-exports-last
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var randn = require( './randn.js' );
+*
+* module.exports = randn;
+*
+* var factory = require( './factory.js' );
+*
+* module.exports.factory = factory;
+*
+* @example
+* // Good...
+* var randn = require( './randn.js' );
+* var factory = require( './factory.js' );
+*
+* module.exports = randn;
+* module.exports.factory = factory;
+*/
+rules[ 'stdlib/module-exports-last' ] = 'error';
+
+/**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
 *
 * @name new-cap-array
@@ -2601,6 +2675,24 @@ rules[ 'stdlib/no-require-absolute-path' ] = 'error';
 rules[ 'stdlib/no-require-index' ] = 'error';
 
 /**
+* Never allow modules to require themselves.
+*
+* @name no-self-require
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var self = require( __filename );
+*
+* @example
+* // Good...
+* var other = require( './other.js' );
+*/
+rules[ 'stdlib/no-self-require' ] = 'error';
+
+/**
 * Never allow unassigned `require()` calls.
 *
 * @name no-unassigned-require
@@ -2714,6 +2806,38 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 		'path'
 	]
 }];
+
+/* eslint-disable stdlib/jsdoc-return-annotations */
+
+/**
+* Enforce conventions for return annotations.
+*
+* @name return-annotations
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // => 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*
+* // => null
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // => 'Hello World'
+*/
+rules[ 'stdlib/return-annotations' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-return-annotations */
 
 /**
 * Enforce formatting of section header comments.
