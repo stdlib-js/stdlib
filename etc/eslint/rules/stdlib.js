@@ -2045,9 +2045,9 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 
 /**
-* Enforce conventions for return annotations in JSDoc examples.
+* Enforce marker style conventions for return annotations in JSDoc examples.
 *
-* @name jsdoc-return-annotations
+* @name jsdoc-return-annotations-marker
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -2059,6 +2059,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 * *
 * * @param {number} x - input value
 * * @returns {number} x*x
+* *
 * * @example
 * * var y = square( 3.0 );
 * * // => 9.0
@@ -2077,6 +2078,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 * *
 * * @param {number} x - input value
 * * @returns {number} x*x
+* *
 * * @example
 * * var y = square( 3.0 );
 * * // returns 9.0
@@ -2088,7 +2090,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 *   return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-return-annotations' ] = 'error';
+rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
 
 /**
 * Require `*` be used as the strong marker.
@@ -2807,12 +2809,12 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 	]
 }];
 
-/* eslint-disable stdlib/jsdoc-return-annotations */
+/* eslint-disable stdlib/jsdoc-return-annotations-marker */
 
 /**
-* Enforce conventions for return annotations.
+* Enforce marker style conventions for return annotations.
 *
-* @name return-annotations
+* @name return-annotations-marker
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -2835,9 +2837,51 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 * console.log( 'Hello World' );
 * // => 'Hello World'
 */
-rules[ 'stdlib/return-annotations' ] = 'error';
+rules[ 'stdlib/return-annotations-marker' ] = 'error';
 
-/* eslint-enable stdlib/jsdoc-return-annotations */
+/* eslint-enable stdlib/jsdoc-return-annotations-marker */
+
+/**
+* Enforce that property names in return annotations are quoted.
+*
+* @name return-annotations-quotes
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         a: 1,
+*         b: true,
+*         c: [ 1, 2, 3 ]
+*     }
+* *\/
+*
+* @example
+* // Good...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         'a': 1,
+*         'b': true,
+*         'c': [ 1, 2, 3 ]
+*     }
+* *\/
+*/
+rules[ 'stdlib/return-annotations-quotes' ] = 'error';
 
 /**
 * Enforce formatting of section header comments.

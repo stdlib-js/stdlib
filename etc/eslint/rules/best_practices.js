@@ -37,15 +37,15 @@ var rules = {};
 * // Bad...
 * var obj = {};
 * Object.defineProperty( obj, 'a', {
-*     'set': function set(){}
+*     'set': function set() {}
 * });
 *
 * @example
 * // Good...
 * var obj = {};
 * Object.defineProperty( obj, 'a', {
-*     'set': function set(){},
-*     'get': function get(){}
+*     'set': function set() {},
+*     'get': function get() {}
 * });
 */
 rules[ 'accessor-pairs' ] = [ 'error', {
@@ -122,7 +122,7 @@ rules[ 'block-scoped-var' ] = 'error';
 * @example
 * // Bad...
 * class A {
-*     constructor(){}
+*     constructor() {}
 *     say() {
 *         return 'Hello';
 *     }
@@ -131,7 +131,7 @@ rules[ 'block-scoped-var' ] = 'error';
 * @example
 * // Good...
 * class A {
-*     constructor(){}
+*     constructor() {}
 *     static say() {
 *         return 'Hello';
 *     }
@@ -381,18 +381,22 @@ rules[ 'no-div-regex' ] = 'error';
 *
 * @example
 * // Bad...
-* if ( x === y ) {
-*     return x;
-* } else {
-*     return y;
+* function foo( x, y ) {
+*     if ( x === y ) {
+*         return x;
+*     } else {
+*         return y;
+*     }
 * }
 *
 * @example
 * // Good...
-* if ( x === y ) {
-*     return x;
+* function foo( x, y ) {
+*     if ( x === y ) {
+*         return x;
+*     }
+*     return y;
 * }
-* return y;
 */
 rules[ 'no-else-return' ] = [ 'error', {
 	'allowElseIf': false
@@ -1035,6 +1039,8 @@ rules[ 'no-restricted-properties' ] = 'off';
 */
 rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 
+/* eslint-disable stdlib/jsdoc-return-annotations-marker */
+
 /**
 * Never allow `return await`.
 *
@@ -1051,6 +1057,8 @@ rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 * }
 */
 rules[ 'no-return-await' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-return-annotations-marker */
 
 /**
 * Never allow using `javascript:` in urls.
@@ -1183,12 +1191,14 @@ rules[ 'no-unused-expressions' ] = [ 'error', {
 *
 * @example
 * // Bad...
-* var x = 0;
-* A: while( true ) {
-*     if ( x === 10 ) {
-*         return;
+* function foo() {
+*     var x = 0;
+*     A: while( true ) {
+*         if ( x === 10 ) {
+*             return;
+*         }
+*         x += 1;
 *     }
-*     x += 1;
 * }
 */
 rules[ 'no-unused-labels' ] = 'error';
@@ -1345,6 +1355,8 @@ rules[ 'no-with' ] = 'error';
 */
 rules[ 'radix' ] = [ 'error', 'always' ];
 
+/* eslint-disable stdlib/jsdoc-return-annotations-marker */
+
 /**
 * Always require `async` functions to have an `await` expression.
 *
@@ -1367,6 +1379,8 @@ rules[ 'radix' ] = [ 'error', 'always' ];
 * }
 */
 rules[ 'require-await' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-return-annotations-marker */
 
 /**
 * Always declare variables at the top of their scope to represent hoisting.
