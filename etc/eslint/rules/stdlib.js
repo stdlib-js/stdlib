@@ -2842,6 +2842,48 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 /* eslint-enable stdlib/jsdoc-return-annotations-marker */
 
 /**
+* Enforce that property names in return annotations are quoted.
+*
+* @name return-annotations-quotes
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         a: 1,
+*         b: true,
+*         c: [ 1, 2, 3 ]
+*     }
+* *\/
+*
+* @example
+* // Good...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         'a': 1,
+*         'b': true,
+*         'c': [ 1, 2, 3 ]
+*     }
+* *\/
+*/
+rules[ 'stdlib/return-annotations-quotes' ] = 'error';
+
+/**
 * Enforce formatting of section header comments.
 *
 * @name section-headers
