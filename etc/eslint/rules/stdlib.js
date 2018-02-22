@@ -2881,7 +2881,7 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 *     }
 * *\/
 */
-rules[ 'stdlib/return-annotations-quotes' ] = 'error';
+rules[ 'stdlib/return-annotations-quotes' ] = 'off';
 
 /**
 * Enforce formatting of section header comments.
