@@ -2844,7 +2844,7 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 /**
 * Enforce that property names in return annotations are quoted.
 *
-* @name return-annotations-quotes
+* @name return-annotations-quote-props
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -2881,7 +2881,7 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 *     }
 * *\/
 */
-rules[ 'stdlib/return-annotations-quotes' ] = 'off';
+rules[ 'stdlib/return-annotations-quote-props' ] = 'off';
 
 /**
 * Enforce formatting of section header comments.
