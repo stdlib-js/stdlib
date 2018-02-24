@@ -2093,6 +2093,86 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
 rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
 
 /**
+* Enforce that property names in return annotations inside of example code are quoted using single quotes.
+*
+* @name jsdoc-return-annotations-quote-props
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Converts the first letter of each object key to uppercase.
+* *
+* * @param {Object} obj - source object
+* * @returns {Object} new object
+* *
+* * @example
+* * var obj1 = {
+* *     'aa': 1,
+* *     'bb': 2
+* * };
+* *
+* * var obj2 = capitalizeKeys( obj1 );
+* * // returns { Aa: 1, "Bb": 2 }
+* *\/
+* function capitalizeKeys( obj ) {
+*     var out;
+*     var key;
+*     var k;
+*     out = {};
+*     for ( key in obj ) {
+*         if ( hasOwnProp( obj, key ) ) {
+*             if ( key === '' ) {
+*                 out[ key ] = obj[ key ];
+*             } else {
+*                 k = key.charAt( 0 ).toUpperCase() + key.slice( 1 );
+*                 out[ k ] = obj[ key ];
+*             }
+*         }
+*     }
+*     return out;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Converts the first letter of each object key to uppercase.
+* *
+* * @param {Object} obj - source object
+* * @returns {Object} new object
+* *
+* * @example
+* * var obj1 = {
+* *     'aa': 1,
+* *     'bb': 2
+* * };
+* *
+* * var obj2 = capitalizeKeys( obj1 );
+* * // returns { 'Aa': 1, 'Bb': 2 }
+* *\/
+* function capitalizeKeys( obj ) {
+*     var out;
+*     var key;
+*     var k;
+*     out = {};
+*     for ( key in obj ) {
+*         if ( hasOwnProp( obj, key ) ) {
+*             if ( key === '' ) {
+*                 out[ key ] = obj[ key ];
+*             } else {
+*                 k = key.charAt( 0 ).toUpperCase() + key.slice( 1 );
+*                 out[ k ] = obj[ key ];
+*             }
+*         }
+*     }
+*     return out;
+* }
+*/
+rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker
@@ -2840,6 +2920,52 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 rules[ 'stdlib/return-annotations-marker' ] = 'error';
 
 /* eslint-enable stdlib/jsdoc-return-annotations-marker */
+
+/* eslint-disable stdlib/jsdoc-return-annotations-quote-props */
+
+/**
+* Enforce that property names in return annotations are quoted.
+*
+* @name return-annotations-quote-props
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         a: 1,
+*         b: true,
+*         c: [ 1, 2, 3 ]
+*     }
+* *\/
+*
+* @example
+* // Good...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         'a': 1,
+*         'b': true,
+*         'c': [ 1, 2, 3 ]
+*     }
+* *\/
+*/
+rules[ 'stdlib/return-annotations-quote-props' ] = 'off';
+
+/* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
 
 /**
 * Enforce formatting of section header comments.
