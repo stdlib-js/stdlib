@@ -207,14 +207,18 @@ rules[ 'no-control-regex' ] = 'error';
 *
 * @example
 * // Bad...
-* if ( bool === true ) {
-*     debugger;
-*     return bool;
+* function foo( bool ) {
+*     if ( bool === true ) {
+*         debugger;
+*         return bool;
+*     }
 * }
 *
 * @example
-* if ( bool === true ) {
-*     return bool;
+* function foo( bool ) {
+*     if ( bool === true ) {
+*         return bool;
+*     }
 * }
 */
 rules[ 'no-debugger' ] = 'error';
@@ -714,23 +718,27 @@ rules[ 'no-unreachable' ] = 'error';
 *
 * @example
 * // Bad...
-* try {
-*     return 1;
-* } catch ( err ) {
-*     return 2;
-* } finally {
-*     return 3; // 3 is returned before 1
+* function foo() {
+*     try {
+*         return 1;
+*     } catch ( err ) {
+*         return 2;
+*     } finally {
+*         return 3; // 3 is returned before 1
+*     }
 * }
 *
 * @example
 * // Good...
 * var bool;
-* try {
-*     return 1;
-* } catch ( err ) {
-*     return 2;
-* } finally {
-*     bool = true;
+* function foo() {
+*     try {
+*         return 1;
+*     } catch ( err ) {
+*         return 2;
+*     } finally {
+*         bool = true;
+*     }
 * }
 */
 rules[ 'no-unsafe-finally' ] = 'error';

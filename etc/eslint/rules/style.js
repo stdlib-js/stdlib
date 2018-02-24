@@ -121,11 +121,15 @@ rules[ 'array-element-newline' ] = [ 'off', {
 *
 * @example
 * // Bad...
-* if ( x === 5 ) {return x;}
+* function foo( x ) {
+*     if ( x === 5 ) {return x;}
+* }
 *
 * @example
 * // Good...
-* if ( x === 5 ) { return x; }
+* function foo( x ) {
+*     if ( x === 5 ) { return x; }
+* }
 */
 rules[ 'block-spacing' ] = [ 'error', 'always' ];
 
@@ -139,14 +143,18 @@ rules[ 'block-spacing' ] = [ 'error', 'always' ];
 *
 * @example
 * // Bad...
-* if ( x !== x )
-* {
-*     return NaN;
+* function foo( x ) {
+*     if ( x !== x )
+*     {
+*         return NaN;
+*     }
 * }
 *
 * @example
 * // Bad...
-* if ( x !== x ) { return NaN; }
+* function foo( x ) {
+*     if ( x !== x ) { return NaN; }
+* }
 *
 * @example
 * // Good...
@@ -688,7 +696,7 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 *
 * @example
 * // Bad...
-* class Foo() {
+* class Foo {
 *     bar() {}
 *
 *     baz() {}
@@ -696,7 +704,7 @@ rules[ 'lines-around-comment' ] = [ 'off', {
 *
 * @example
 * // Okay...
-* class Foo() {
+* class Foo {
 *     bar() {}
 *     baz() {}
 * }
@@ -1518,16 +1526,20 @@ rules[ 'padded-blocks' ] = [ 'error', 'never' ];
 *
 * @example
 * // Okay...
-* var x = 5;
-* var y = x * 3;
+* function foo() {
+*     var x = 5;
+*     var y = x * 3;
 *
-* return y;
+*     return y;
+* }
 *
 * @example
 * // Okay...
-* var x = 5;
-* var y = x * 3;
-* return y;
+* function foo( x ) {
+*     var x = 5;
+*     var y = x * 3;
+*     return y;
+* }
 */
 rules[ 'padding-line-between-statements' ] = [ 'error',
 

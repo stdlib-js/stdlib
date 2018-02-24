@@ -40,7 +40,7 @@ else
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $$file; \
+		$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -62,7 +62,7 @@ else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $$file; \
+		$(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
