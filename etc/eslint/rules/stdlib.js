@@ -3009,7 +3009,7 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 *     }
 * *\/
 */
-rules[ 'stdlib/return-annotations-quote-props' ] = 'off';
+rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 
 /* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
 
