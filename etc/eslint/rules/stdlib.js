@@ -347,6 +347,52 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 
 /**
+* Require empty lines before `@example` tags in JSDoc comments.
+*
+* @name jsdoc-empty-line-before-example
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Rounds a numeric value toward positive infinity.
+* *
+* * @param {number} x - input value
+* * @returns {number} rounded value
+* * @example
+* * var v = ceil( -4.2 );
+* * // returns -4.0
+* * @example
+* * var v = ceil( 9.99999 );
+* * // returns 10.0
+* *\/
+* var ceil = Math.ceil;
+*
+* @example
+* // Good...
+*
+* /**
+* * Rounds a numeric value toward positive infinity.
+* *
+* * @param {number} x - input value
+* * @returns {number} rounded value
+* *
+* * @example
+* * var v = ceil( -4.2 );
+* * // returns -4.0
+* *
+* * @example
+* * var v = ceil( 9.99999 );
+* * // returns 10.0
+* *\/
+* var ceil = Math.ceil;
+*/
+rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
+
+/**
 * Require `\`` be used as the fenced code marker.
 *
 * @name jsdoc-fenced-code-marker
@@ -2007,7 +2053,7 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 * @name jsdoc-private-annotation
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'warn'
 *
 * @example
 * // Bad...
@@ -2042,7 +2088,7 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 *     return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-private-annotation' ] = 'error';
+rules[ 'stdlib/jsdoc-private-annotation' ] = 'warn';
 
 /**
 * Enforce marker style conventions for return annotations in JSDoc examples.
@@ -2963,7 +3009,7 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 *     }
 * *\/
 */
-rules[ 'stdlib/return-annotations-quote-props' ] = 'off';
+rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 
 /* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
 
