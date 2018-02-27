@@ -114,7 +114,7 @@ main() {
 	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		echo 'Running JavaScript example files...' >&2
-		make FILES="${files}" examples-files > /dev/null >&2
+		make FILES="${files}" examples-javascript-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Encountered an error when running JavaScript examples.' >&2
