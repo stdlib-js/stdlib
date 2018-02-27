@@ -19,5 +19,5 @@
 # DEPENDENCIES #
 
 include $(TOOLS_MAKE_LIB_DIR)/examples/c.mk
-include $(TOOLS_MAKE_LIB_DIR)/examples/examples.mk
+include $(TOOLS_MAKE_LIB_DIR)/examples/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/markdown.mk
