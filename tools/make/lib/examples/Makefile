@@ -18,5 +18,46 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/examples/examples.mk
+include $(TOOLS_MAKE_LIB_DIR)/examples/c.mk
+include $(TOOLS_MAKE_LIB_DIR)/examples/javascript.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/markdown.mk
+
+
+# RULES #
+
+#/
+# Runs examples.
+#
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+#
+# @example
+# make examples
+#
+# @example
+# make examples EXAMPLES_FILTER=.*/blas/base/dasum/.*
+#/
+examples: examples-javascript
+
+.PHONY: examples
+
+#/
+# Runs cross-language examples.
+#
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each language-specific (`examples-<lang>`) prerequisite.
+# -   This rule is useful when wanting to glob for examples files, irrespective of language, for a particular package in order to compare cross-language example output.
+#
+#
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+#
+# @example
+# make examples-lang
+#
+# @example
+# make examples-lang EXAMPLES_FILTER=.*/blas/base/dasum/.*
+#/
+examples-lang: examples-javascript examples-c
+
+.PHONY: examples-lang
+
