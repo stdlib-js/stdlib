@@ -16,12 +16,6 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
-
-# Define the path to a script for compiling a C++ example:
-compile_cpp_example_bin := $(TOOLS_DIR)/scripts/compile_cpp_example
-
-
 # RULES #
 
 #/
@@ -51,8 +45,8 @@ examples-cpp:
 		NODE="$(NODE)" \
 		NODE_PATH="$(NODE_PATH)" \
 		CXX_COMPILER="$(CXX)" \
-		"${compile_cpp_example_bin}" $$file && \
-		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) run || exit 1; \
+		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) && \
+		$(MAKE) run || exit 1; \
 	done
 
 .PHONY: examples-cpp
@@ -81,8 +75,8 @@ examples-cpp-files:
 		NODE="$(NODE)" \
 		NODE_PATH="$(NODE_PATH)" \
 		CXX_COMPILER="$(CXX)" \
-		"${compile_cpp_example_bin}" $$file && \
-		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) run || exit 1; \
+		BOOST="$(DEPS_BOOST_BUILD_OUT)" $(MAKE) && \
+		$(MAKE) run || exit 1; \
 	done
 
 .PHONY: example-cpp-files
