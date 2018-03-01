@@ -134,6 +134,18 @@ main() {
 		fi
 	fi
 
+	# Run C++ example files...
+	files=$(echo "${changed_files}" | grep '/examples/.*\.cpp$' | grep -v '/examples/fixtures/.*\.cpp$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		echo 'Running C++ example files...' >&2
+		make FILES="${files}" examples-cpp-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Encountered an error when running C++ examples.' >&2
+			on_error 1
+		fi
+	fi
+
 	# Run JavaScript examples in README files:
 	files=$(echo "${changed_files}" | grep 'README.md$' | grep -v '^tools/' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
