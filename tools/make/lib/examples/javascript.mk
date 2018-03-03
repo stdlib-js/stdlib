@@ -22,7 +22,7 @@
 #
 # This target runs a list of examples in sequential order. Note that we assume the examples can be run using Node.js.
 
-examples: $(NODE_MODULES)
+examples-javascript: $(NODE_MODULES)
 	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running example: $$file"; \
@@ -31,14 +31,14 @@ examples: $(NODE_MODULES)
 		$(NODE) $$file || exit 1; \
 	done
 
-.PHONY: examples
+.PHONY: examples-javascript
 
 
 # Run examples.
 #
 # This target runs a specified list of examples in sequential order. Note that we assume the examples can be run using Node.js.
 
-examples-files: $(NODE_MODULES)
+examples-javascript-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Running example: $$file"; \
@@ -47,4 +47,4 @@ examples-files: $(NODE_MODULES)
 		$(NODE) $$file || exit 1; \
 	done
 
-.PHONY: examples-files
+.PHONY: examples-javascript-files
