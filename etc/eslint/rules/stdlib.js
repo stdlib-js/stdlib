@@ -2688,6 +2688,27 @@ rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'o
 rules[ 'stdlib/no-internal-require' ] = 'error';
 
 /**
+* Disallow usage of the global `Math` object.
+*
+* @name no-native-math
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var out = Math.exp( 2.0 );
+* // returns ~7.389
+*
+* @example
+* // Good...
+* var exp = require( '@stdlib/math/base/special/exp' );
+* var out = exp( 2.0 );
+* // returns ~7.389
+*/
+rules[ 'stdlib/no-native-math' ] = 'error';
+
+/**
 * Enforce that one does not use nested property access for `require()` expressions.
 *
 * @name no-nested-require
