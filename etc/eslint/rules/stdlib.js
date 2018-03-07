@@ -2690,7 +2690,7 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 /**
 * Disallow usage of the global `Math` object.
 *
-* @name no-native-math
+* @name no-builtin-math
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -2706,7 +2706,7 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 * var out = exp( 2.0 );
 * // returns ~7.389
 */
-rules[ 'stdlib/no-native-math' ] = 'error';
+rules[ 'stdlib/no-builtin-math' ] = 'error';
 
 /**
 * Enforce that one does not use nested property access for `require()` expressions.
