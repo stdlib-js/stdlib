@@ -40,7 +40,7 @@ namespace addon_TODO {
 	* When called from JavaScript, the function expects TODO arguments:
 	*
 	* * __x__: a number.
-	* * __y__: a number
+	* * __y__: a number.
 	*
 	* @param info   arguments
 	*/

@@ -2453,9 +2453,9 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 
 /**
-* Require that JSDoc tags follow a specified ordering.
+* Require that JSDoc tags follow a specified order.
 *
-* @name jsdoc-tag-ordering
+* @name jsdoc-tag-order
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -2494,7 +2494,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 *     return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
+rules[ 'stdlib/jsdoc-tag-order' ] = 'error';
 
 /**
 * Require that the unordered list marker be a dash `-`.

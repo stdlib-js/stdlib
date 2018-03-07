@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Header file containing function declarations for TODO (summary sentence).
-*/
 #ifndef STDLIB_TODO_H
 #define STDLIB_TODO_H
 
