@@ -2688,6 +2688,43 @@ rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'o
 rules[ 'stdlib/no-internal-require' ] = 'error';
 
 /**
+* Disallow multiple blank lines.
+*
+* @name no-multiple-empty-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* // MAIN //
+*
+*
+* function xlogy( x, y ) {
+*   if ( x === 0.0 && !isnan( y ) ) {
+*     return 0.0;
+*   }
+*
+*
+*   return x * ln( y );
+* }
+*
+* @example
+* // Good...
+*
+* // MAIN //
+*
+* function xlogy( x, y ) {
+*   if ( x === 0.0 && !isnan( y ) ) {
+*     return 0.0;
+*   }
+*   return x * ln( y );
+* }
+*/
+rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
+
+/**
 * Disallow usage of the global `Math` object.
 *
 * @name no-builtin-math
