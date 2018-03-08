@@ -1011,10 +1011,10 @@ rules[ 'no-mixed-spaces-and-tabs' ] = 'error';
 * @name no-multiple-empty-lines
 * @memberof rules
 * @type {Array}
-* @default [ 'error', {'max':2} ]
+* @default [ 'off', {'max':2} ]
 * @see [no-multiple-empty-lines]{@link http://eslint.org/docs/rules/no-multiple-empty-lines}
 */
-rules[ 'no-multiple-empty-lines' ] = [ 'error', {
+rules[ 'no-multiple-empty-lines' ] = [ 'off', {
 	'max': 2,
 	'maxEOF': 1,
 	'maxBOF': 1
