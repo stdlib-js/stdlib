@@ -1,0 +1,27 @@
+
+{{alias}}()
+    Returns a list of ndarray casting modes.
+
+    The output array contains the following modes:
+
+    - 'none': only allow casting between identical types
+    - 'equiv': allow casting between identical and byte swapped types
+    - 'safe': only allow "safe" casts
+    - 'same-kind': allow "safe" casts and casts within the same kind (e.g.,
+    between signed integers or between floats)
+    - 'unsafe': allow casting between all types (including between integers and
+    floats)
+
+    Returns
+    -------
+    out: Array<string>
+        List of ndarray casting modes.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'none', 'equiv', 'safe', 'same-kind', 'unsafe' ]
+
+    See Also
+    --------
+
