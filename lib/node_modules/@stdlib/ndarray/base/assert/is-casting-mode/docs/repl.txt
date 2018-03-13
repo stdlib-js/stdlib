@@ -1,0 +1,35 @@
+
+{{alias}}( value )
+    Tests if an input value is a supported ndarray casting mode.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a supported ndarray casting
+        mode.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'none' )
+    true
+    > bool = {{alias}}( 'equiv' )
+    true
+    > bool = {{alias}}( 'safe' )
+    true
+    > bool = {{alias}}( 'same-kind' )
+    true
+    > bool = {{alias}}( 'unsafe' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+
