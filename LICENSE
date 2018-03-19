@@ -301,3 +301,18 @@ Some software in this archive may be from the book _Methods and Programs for Mat
 
 Stephen L. Moshier
 moshier@na-net.ornl.gov
+
+
+
+ATTRIBUTION
+
+The library contains implementations from the following external libraries, which have their own licenses:
+
+* FreeBSD <https://svnweb.freebsd.org/>
+
+Copyright (C) 2004 by Sun Microsystems, Inc. All rights reserved.
+
+Developed at SunPro, a Sun Microsystems, Inc. business.
+Permission to use, copy, modify, and distribute this
+software is freely granted, provided that this notice
+is preserved.
