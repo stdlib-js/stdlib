@@ -26,6 +26,47 @@
 var rules = {};
 
 /**
+* Require that comments start with an uppercase letter.
+*
+* @name capitalized-comments
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* function square( x ) {
+*     var out;
+*
+*     // square the number:
+*     out = x*x;
+*     return out;
+* }
+*
+* @example
+* // Good...
+* function square( x ) {
+*     var out;
+*
+*     // Square the number:
+*     out = x*x;
+*     return out;
+* }
+*/
+rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
+	'whitelist': [
+		'eslint',
+		'eslint-enable',
+		'eslint-disable',
+		'returns',
+		'e.g.,',
+		'ndarray',
+		'rehype',
+		'remark',
+		'stdlib'
+	]
+} ];
+
+/**
 * Require an empty line before single-line comments.
 *
 * @name empty-line-before-comment
@@ -2453,9 +2494,9 @@ rules[ 'stdlib/jsdoc-table-pipes' ] = 'error';
 rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 
 /**
-* Require that JSDoc tags follow a specified ordering.
+* Require that JSDoc tags follow a specified order.
 *
-* @name jsdoc-tag-ordering
+* @name jsdoc-tag-order
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -2494,7 +2535,7 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 *     return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-tag-ordering' ] = 'error';
+rules[ 'stdlib/jsdoc-tag-order' ] = 'error';
 
 /**
 * Require that the unordered list marker be a dash `-`.
@@ -2686,6 +2727,64 @@ rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'o
 * var betainc = require( '@stdlib/math/base/special/betainc' );
 */
 rules[ 'stdlib/no-internal-require' ] = 'error';
+
+/**
+* Disallow multiple blank lines.
+*
+* @name no-multiple-empty-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* // MAIN //
+*
+*
+* function xlogy( x, y ) {
+*   if ( x === 0.0 && !isnan( y ) ) {
+*     return 0.0;
+*   }
+*
+*
+*   return x * ln( y );
+* }
+*
+* @example
+* // Good...
+*
+* // MAIN //
+*
+* function xlogy( x, y ) {
+*   if ( x === 0.0 && !isnan( y ) ) {
+*     return 0.0;
+*   }
+*   return x * ln( y );
+* }
+*/
+rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
+
+/**
+* Disallow usage of the global `Math` object.
+*
+* @name no-builtin-math
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var out = Math.exp( 2.0 );
+* // returns ~7.389
+*
+* @example
+* // Good...
+* var exp = require( '@stdlib/math/base/special/exp' );
+* var out = exp( 2.0 );
+* // returns ~7.389
+*/
+rules[ 'stdlib/no-builtin-math' ] = 'error';
 
 /**
 * Enforce that one does not use nested property access for `require()` expressions.

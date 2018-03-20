@@ -1,0 +1,56 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/get.c",
+				"./src/get_ptr.c",
+				"./src/iget.c",
+				"./src/iget_ptr.c",
+				"./src/iset.c",
+				"./src/main.c",
+				"./src/set.c",
+				"./src/set_ptr.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/ndarray/base/bytes-per-element",
+				"@stdlib/ndarray/base/dtype-char",
+				"@stdlib/ndarray/base/ind",
+				"@stdlib/ndarray/base/iteration-order",
+				"@stdlib/ndarray/base/minmax-view-buffer-index",
+				"@stdlib/ndarray/base/numel",
+				"@stdlib/ndarray/base/strides2order",
+				"@stdlib/ndarray/dtypes",
+				"@stdlib/ndarray/index-modes",
+				"@stdlib/ndarray/orders"
+			]
+		}
+	]
+}

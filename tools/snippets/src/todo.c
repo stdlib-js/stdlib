@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* TODO.
-*/
 #include <math.h>
 #include "TODO.h"
 
