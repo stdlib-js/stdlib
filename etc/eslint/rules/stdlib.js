@@ -26,6 +26,47 @@
 var rules = {};
 
 /**
+* Require that comments start with an uppercase letter.
+*
+* @name capitalized-comments
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* function square( x ) {
+*     var out;
+*
+*     // square the number:
+*     out = x*x;
+*     return out;
+* }
+*
+* @example
+* // Good...
+* function square( x ) {
+*     var out;
+*
+*     // Square the number:
+*     out = x*x;
+*     return out;
+* }
+*/
+rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
+	'whitelist': [
+		'eslint',
+		'eslint-enable',
+		'eslint-disable',
+		'returns',
+		'e.g.,',
+		'ndarray',
+		'rehype',
+		'remark',
+		'stdlib'
+	]
+} ];
+
+/**
 * Require an empty line before single-line comments.
 *
 * @name empty-line-before-comment
