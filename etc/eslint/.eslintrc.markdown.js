@@ -65,13 +65,6 @@ eslint.rules[ 'no-console' ] = 'off';
 eslint.rules[ 'strict' ] = 'off';
 
 /**
-* Do not require capitalized comments, as we frequently use `// returns` which would lead to significant lint noise.
-*
-* @private
-*/
-eslint.rules[ 'capitalized-comments' ] = 'off';
-
-/**
 * Do not require an end-of-line character in code blocks.
 *
 * @private
