@@ -34,10 +34,10 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5c02c2975fc3542a4c5bc9bea67e9d4a0a3331a9/docs/assets/readme/base_special_math.gif" alt="Demo showcasing special math functions">
     </div>
 
--   35+ statistical distributions.
+-   35+ probability distributions.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing statistical distributions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing probability distributions">
     </div>
 
 -   35+ seedable pseudorandom number generators (PRNGs).
