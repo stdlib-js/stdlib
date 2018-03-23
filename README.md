@@ -30,47 +30,69 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 -   150+ special math functions.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/5c02c2975fc3542a4c5bc9bea67e9d4a0a3331a9/docs/assets/readme/base_special_math.gif" alt="Demo showcasing special math functions">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5c02c2975fc3542a4c5bc9bea67e9d4a0a3331a9/docs/assets/readme/base_special_math.gif" alt="Demo showcasing special math functions">
+    </div>
 
 -   35+ statistical distributions.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing statistical distributions">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing statistical distributions">
+    </div>
 
 -   35+ seedable pseudorandom number generators (PRNGs).
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/604585afe70f33f419a43d891f73c484b0a21126/docs/assets/readme/base_prngs.gif" alt="Demo showcasing PRNGs">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/604585afe70f33f419a43d891f73c484b0a21126/docs/assets/readme/base_prngs.gif" alt="Demo showcasing PRNGs">
+    </div>
 
 -   160+ general utilities for data transformation, functional programming, and asynchronous control flow.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
+    </div>
 
 -   170+ assertion utilities for data validation and feature detection.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
+    </div>
 
 -   50+ sample datasets for testing and development.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/cd0ec30ed9ecc776e30bd9c85d08d46c614c51c2/docs/assets/readme/datasets.gif" alt="Demo showcasing sample datasets">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/cd0ec30ed9ecc776e30bd9c85d08d46c614c51c2/docs/assets/readme/datasets.gif" alt="Demo showcasing sample datasets">
+    </div>
 
 -   A plot API for data visualization and exploratory data analysis.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/ae071998112225a6fb921605565ff767bc854c49/docs/assets/readme/plot.gif" alt="Demo showcasing plot API">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/ae071998112225a6fb921605565ff767bc854c49/docs/assets/readme/plot.gif" alt="Demo showcasing plot API">
+    </div>
 
 -   Native add-ons for interfacing with BLAS libraries, with pure JavaScript fallbacks.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo showcasing BLAS APIs">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo showcasing BLAS APIs">
+    </div>
 
 -   A benchmark framework supporting TAP.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo showcasing benchmark framework">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo showcasing benchmark framework">
+    </div>
 
 -   REPL environment with integrated help and examples.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/3864ae6f86bbc215956c0e667d82d49a6eaca780/docs/assets/readme/repl.gif" alt="Demo showcasing REPL environment">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3864ae6f86bbc215956c0e667d82d49a6eaca780/docs/assets/readme/repl.gif" alt="Demo showcasing REPL environment">
+    </div>
 
 -   Can be bundled using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
+    <div class="image" align="center">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
+    </div>
 
 ## Resources
 
