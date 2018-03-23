@@ -34,7 +34,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 -   35+ statistical distributions.
 
-    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/5c3a0a08996d909d845fa1aef774919eca7d72d5/docs/assets/readme/base_dists.gif" alt="Demo showcasing statistical distributions">
+    <img align="center" src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing statistical distributions">
 
 -   35+ seedable pseudorandom number generators (PRNGs).
 
