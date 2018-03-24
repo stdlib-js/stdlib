@@ -884,6 +884,8 @@ Allows compiler to pre-allocate memory.
 
 ##### Bad Example
 
+<!-- eslint-disable stdlib/no-builtin-math -->
+
 ```javascript
 // Do not...
 var arr = [];
@@ -894,6 +896,8 @@ for ( i = 0; i < 100; i++ ) {
 ```
 
 ##### Good Example
+
+<!-- eslint-disable stdlib/no-builtin-math -->
 
 ```javascript
 // Do...
@@ -907,6 +911,8 @@ for ( i = 0; i < arr.length; i++ ) {
 ##### Notes
 
 -   Do **not** use the `new` operator if the `array` length is **very large** due to how compilers handle "fast" elements. Instead, to ensure "fast" elements,
+
+    <!-- eslint-disable stdlib/no-builtin-math -->
 
     ```javascript
     var arr;
@@ -967,6 +973,8 @@ When copying a small `array`, using `Array#slice()` incurs a function overhead w
 
 ##### Small Array Example
 
+<!-- eslint-disable stdlib/no-builtin-math -->
+
 ```javascript
 // Do...
 var arr = new Array( 10 );
@@ -982,6 +990,8 @@ for ( i = 0; i < arr.length; i++ ) {
 ```
 
 ##### Large Array Example
+
+<!-- eslint-disable stdlib/no-builtin-math -->
 
 ```javascript
 // Do...
@@ -1317,7 +1327,7 @@ for ( var i = 0; i < 10; i++ ) {
 
 ##### Bad Example
 
-<!-- eslint-disable no-inner-declarations -->
+<!-- eslint-disable no-inner-declarations, stdlib/no-builtin-math -->
 
 ```javascript
 // Do not...
@@ -1331,6 +1341,8 @@ if ( i < 11 ) {
 ```
 
 ##### Good Example
+
+<!-- eslint-disable stdlib/no-builtin-math -->
 
 ```javascript
 // Do...
@@ -1395,7 +1407,7 @@ Reduces noise when first attempting to understand implementation flow, especiall
 
 ##### Bad Example
 
-<!-- eslint-disable no-use-before-define -->
+<!-- eslint-disable no-use-before-define, stdlib/no-builtin-math -->
 
 ```javascript
 // Don't...
@@ -1423,6 +1435,8 @@ function getEquation( a, b, c ) {
 ```
 
 ##### Good Example
+
+<!-- eslint-disable stdlib/no-builtin-math -->
 
 ```javascript
 // Do...
@@ -2682,6 +2696,8 @@ function factorial( x ) {
 
 Use `// NOTE:` to annotate questions, comments, or anything which does not fit under `TODO`, `FIXME`, `HACK`, `WARNING`, `OPTIMIZE` which should be brought to a user's attention.
 
+<!-- eslint-disable stdlib/no-builtin-math -->
+
 ```javascript
 // NOTE: consider optimizing this for large arrays (len > 64K).
 var arr = new Array( len );
@@ -3159,7 +3175,7 @@ Stream.prototype.window = function streamWindow( win ) {
 
 ##### Good Example
 
-<!-- eslint-disable no-restricted-syntax -->
+<!-- eslint-disable no-restricted-syntax, stdlib/no-builtin-math -->
 
 ```javascript
 // Do...
@@ -3343,6 +3359,8 @@ var y = ( x >> 0 );
 ```
 
 ##### Good Example
+
+<!-- eslint-disable stdlib/no-builtin-math -->
 
 ```javascript
 // Do...

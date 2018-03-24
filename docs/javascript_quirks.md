@@ -6,6 +6,8 @@
 
 1.  The JavaScript standard ([ECMA-262][ecma-262-math-round]) defines the behavior of `Math.round` such that "ties" (e.g., `1.5` and `-1.5`) are rounded toward `+infinity`.
 
+    <!-- eslint-disable stdlib/no-builtin-math -->
+
     ```javascript
     var x = Math.round( 1.5 );
     // returns 2.0
