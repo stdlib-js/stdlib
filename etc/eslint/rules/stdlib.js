@@ -62,7 +62,8 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 		'ndarray',
 		'rehype',
 		'remark',
-		'stdlib'
+		'stdlib',
+		'throws'
 	]
 } ];
 
@@ -2766,7 +2767,7 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
 
 /**
-* Disallow usage of the global `Math` object.
+* Disallow usage of the built-in global `Math` object.
 *
 * @name no-builtin-math
 * @memberof rules
