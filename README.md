@@ -31,7 +31,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   150+ [special math functions][@stdlib/math/base/special].
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/203839353bc74297fe641207270f7917d2bda560/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
     </div>
 
 -   35+ [probability distributions][@stdlib/stats/base/dists], with support for evaluating probability density functions (PDFs), cumulative distribution functions (CDFs), quantiles, moments, and more.
