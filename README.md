@@ -67,7 +67,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   A [plot API][@stdlib/plot/ctor] for data visualization and exploratory data analysis.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/39d75174b24ea2a84828d9624643776a164478e4/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
     </div>
 
 -   Native add-ons for interfacing with BLAS libraries, with pure JavaScript fallbacks.
