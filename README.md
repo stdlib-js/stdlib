@@ -61,7 +61,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   50+ [sample datasets][@stdlib/datasets] for testing and development.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/f71a38e62247e31dc47d248f6f1b3e434abeb971/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
     </div>
 
 -   A [plot API][@stdlib/plot/ctor] for data visualization and exploratory data analysis.
