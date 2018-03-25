@@ -31,19 +31,19 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   150+ special math functions.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5c02c2975fc3542a4c5bc9bea67e9d4a0a3331a9/docs/assets/readme/base_special_math.gif" alt="Demo showcasing special math functions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
     </div>
 
 -   35+ probability distributions.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing probability distributions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
     </div>
 
 -   35+ seedable pseudorandom number generators (PRNGs).
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/604585afe70f33f419a43d891f73c484b0a21126/docs/assets/readme/base_prngs.gif" alt="Demo showcasing PRNGs">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
     </div>
 
 -   160+ general utilities for data transformation, functional programming, and asynchronous control flow.
@@ -61,13 +61,13 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   50+ sample datasets for testing and development.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/cd0ec30ed9ecc776e30bd9c85d08d46c614c51c2/docs/assets/readme/datasets.gif" alt="Demo showcasing sample datasets">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
     </div>
 
 -   A plot API for data visualization and exploratory data analysis.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/ae071998112225a6fb921605565ff767bc854c49/docs/assets/readme/plot.gif" alt="Demo showcasing plot API">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
     </div>
 
 -   Native add-ons for interfacing with BLAS libraries, with pure JavaScript fallbacks.
