@@ -138,6 +138,8 @@ To install as a library or application dependency,
 $ npm install @stdlib/stdlib
 ```
 
+For distributable bundles for use in browser environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
 * * *
@@ -329,6 +331,8 @@ Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
 [stdlib-source]: https://github.com/stdlib-js/stdlib
+
+[stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
