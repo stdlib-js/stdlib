@@ -37,7 +37,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   35+ [probability distributions][@stdlib/stats/base/dists], with support for evaluating probability density functions (PDFs), cumulative distribution functions (CDFs), quantiles, moments, and more.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e13885087939c064c69aa43ee80ea52710de5591/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
     </div>
 
 -   35+ [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
