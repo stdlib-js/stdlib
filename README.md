@@ -28,46 +28,46 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ## Features
 
--   150+ special math functions.
+-   150+ [special math functions][@stdlib/math/base/special].
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5c02c2975fc3542a4c5bc9bea67e9d4a0a3331a9/docs/assets/readme/base_special_math.gif" alt="Demo showcasing special math functions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/203839353bc74297fe641207270f7917d2bda560/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
     </div>
 
--   35+ probability distributions.
+-   35+ [probability distributions][@stdlib/stats/base/dists], with support for evaluating probability density functions (PDFs), cumulative distribution functions (CDFs), quantiles, moments, and more.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/992f297dd8976eec53f662fa71a60985bd4ed339/docs/assets/readme/base_dists.gif" alt="Demo showcasing probability distributions">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e13885087939c064c69aa43ee80ea52710de5591/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
     </div>
 
--   35+ seedable pseudorandom number generators (PRNGs).
+-   35+ [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/604585afe70f33f419a43d891f73c484b0a21126/docs/assets/readme/base_prngs.gif" alt="Demo showcasing PRNGs">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
     </div>
 
--   160+ general utilities for data transformation, functional programming, and asynchronous control flow.
+-   160+ general [utilities][@stdlib/utils] for data transformation, functional programming, and asynchronous control flow.
 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
     </div>
 
--   170+ assertion utilities for data validation and feature detection.
+-   170+ [assertion utilities][@stdlib/assert] for data validation and feature detection.
 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
     </div>
 
--   50+ sample datasets for testing and development.
+-   50+ [sample datasets][@stdlib/datasets] for testing and development.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/cd0ec30ed9ecc776e30bd9c85d08d46c614c51c2/docs/assets/readme/datasets.gif" alt="Demo showcasing sample datasets">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/f71a38e62247e31dc47d248f6f1b3e434abeb971/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
     </div>
 
--   A plot API for data visualization and exploratory data analysis.
+-   A [plot API][@stdlib/plot/ctor] for data visualization and exploratory data analysis.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/ae071998112225a6fb921605565ff767bc854c49/docs/assets/readme/plot.gif" alt="Demo showcasing plot API">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/39d75174b24ea2a84828d9624643776a164478e4/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
     </div>
 
 -   Native add-ons for interfacing with BLAS libraries, with pure JavaScript fallbacks.
@@ -76,7 +76,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo showcasing BLAS APIs">
     </div>
 
--   A benchmark framework supporting TAP.
+-   A [benchmark framework][@stdlib/bench/harness] supporting TAP.
 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo showcasing benchmark framework">
@@ -137,6 +137,8 @@ To install as a library or application dependency,
 ```bash
 $ npm install @stdlib/stdlib
 ```
+
+For distributable bundles for use in browser environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
@@ -330,11 +332,29 @@ Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-source]: https://github.com/stdlib-js/stdlib
 
+[stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
+
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
 [stdlib-twitter]: https://twitter.com/stdlibjs
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+
+[@stdlib/math/base/special]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special
+
+[@stdlib/stats/base/dists]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists
+
+[@stdlib/random/base]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/random/base
+
+[@stdlib/assert]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/assert
+
+[@stdlib/datasets]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets
+
+[@stdlib/utils]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils
+
+[@stdlib/plot/ctor]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/plot/ctor
+
+[@stdlib/bench/harness]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/bench/harness
 
 </section>
 
