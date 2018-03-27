@@ -618,7 +618,7 @@
                 throw error;
             }
             console.log( data.toString() );
-            // returns '...'
+            // => '...'
         }
         ```
 
