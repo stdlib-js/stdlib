@@ -17,6 +17,7 @@
 -   [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 -   [Why not submit improvements to existing libraries?](#contributing-to-existing-libraries)
 -   [Why not aggregate (curate) packages published to npm?](#why-not-curate)
+-   [Why are built-in JavaScript globals wrapped and imported as packages?](#wrapping-javascript-globals)
 -   [Backward compatibility?](#backward-compatibility)
 -   [Why use semicolons?](#semicolons)
 -   [Import support?](#import-support)
@@ -210,7 +211,7 @@ Despite the disadvantages articulated above, this project **does** include Node.
 
 1.  **Compilation**: as developers who have used [asm.js][asm] to compile C and C++ libraries to run on the Web can attest, the process is not as simple as defining input and output targets. Often pre-compiled code has to be massaged into a form suitable for compilation, which means work is involved, requiring both time and labor.
 2.  **Bundling**: page load times are, and will continue to be, important, especially for business critical applications. The JavaScript community has invested considerable time and effort to both developing tooling and improving the web platform to bundle only code which is actually used and needed. Libraries written in other languages (e.g., [NumPy][numpy]) are not as amenable to modular bundles. Lack of modularity combined with significant size renders many non-JavaScript libraries impractical for web applications.
-3.  **Timescale**: [WebAssembly][wasm] is not likely to be ubiquitous anytime soon (as of 2017, browser implementations exist, but development targeting [WebAssembly][wasm] is not widespread) and a need exists now for numeric computation libraries which work on the Web.
+3.  **Timescale**: [WebAssembly][wasm] is not likely to be ubiquitous anytime soon (as of 2018, browser implementations exist, but development targeting [WebAssembly][wasm] is not widespread) and a need exists now for numeric computation libraries which work on the Web.
 4.  **Monoglot**: developers will still build JavaScript applications and most will, all things being equal, want to use a library written in the same idiom. Using a single language stack reduces cognitive overhead and simplifies application development.
 5.  **Legacy**: [WebAssembly][wasm] is unlikely to replace JavaScript, but, instead, serve a complementary role. JavaScript has a long and decorated history as part of the web platform. Relegating JavaScript to the dust bin would entail breaking the Web, an outcome which has been and will continue to be untenable, thus securing JavaScript's privileged status.
 6.  **Scripting**: [WebAssembly][wasm] does **not** eliminate the need for a scripting language. Even if lower level, performance critical math implementations are [WebAssembly][wasm] compiled C/C++ libraries, a dynamic, loosely typed, interpreted scripting language is still necessary. The iteration cycle when using compiled languages is simply too long when compared to dynamic languages, particularly within the context of interactive analysis. Accordingly, functionality is, and will continue to be, necessary in JavaScript, a scripting language to which, given the size and energy of its community, every other scripting language pales in comparison.
@@ -419,6 +420,26 @@ This project has every intent on maintaining backward compatibility with older N
 1.  With regard to the Node.js [long-term release schedule][node-lts], simply because a Node.js version has reached its end-of-life (EOL), this does not mean that a) the Node.js version is no longer used or b) library authors ought to stop supporting that version. As long as libraries use the simplest, lowest level abstraction, the question as to whether a library should support a legacy Node.js version should never arise. The only time where dropping legacy support may be justified is when supporting native [add-ons][node-add-ons], as maintenance costs can be significantly higher.
 2.  Functionality should not only enable the future, but also allow probing the past. In an ideal world, everyone would use the latest and greatest engine; however, in the real world, not everyone can. Legacy systems abound for very valid and practical reasons; that they will continue to exist is not going to change. To achieve the greatest possible reach, functionality should account for these environments. The best approach for doing so is to use the simplest possible primitives which are most likely to be supported across the widest range of environments.
 3.  Consumers should have control over their migration schedules. In general, library developers are far too quick to drop support for legacy environments, citing maintenance costs, often as a thinly veiled desire to force consumers to upgrade. This parental and cavalier attitude fails to acknowledge the practical realities that many consumers face when building real-world applications. Once real-world applications are deployed in production environments, they assume lives of their own, becoming critical zero downtime components without concern for a library author's desire for evolution. All too frequently, a developer's desire for modernity (and trendiness) creates needless downstream effects, especially in those instances where the cost of maintenance is effectively zero.
+
+<!-- </faq-question> -->
+
+<!-- <faq-question> -->
+
+* * *
+
+<a name="wrapping-javascript-globals"></a>
+
+### Why are built-in JavaScript globals wrapped and imported as packages?
+
+We create packages which wrap built-in JavaScript globals for the following reasons:
+
+1.  **Polyfills**: as we target multiple platforms and strive for backward compatibility, globals as packages allows us to polyfill absent or defective implementations and ensure consistent behavior across environments.
+1.  **Documentation**: globals as packages allows us to ensure consistent and centralized documentation. Our preference is to minimize the amount of "out-of-band" resources consumers and developers alike must consult in order to effectively use and develop the project.
+1.  **Testing**: by applying the same approach to globals as we do to normal package development, such as unit testing and examples, we are able to track and monitor built-in implementations and detect abnormal behavior, thus serving as an early warning system and debugging tool.
+1.  **Mocking**: in addition to testing environment behavior, globals as packages facilitates project development and testing by allowing us to more easily mock built-ins (via dependency injection) and to eliminate unintended side-effects introduced by overwriting globals, even if only temporarily.
+1.  **Benchmarks**: applying the same approach to globals as we do to project-specific packages allows us to better organize benchmarks and track environment performance. As with testing, monitoring the performance of built-ins provides an early warning system and aids in debugging performance related issues.
+
+In general, a core belief of this project is that **all** functionality **should** be exposed in the form of packages. While we are aware that some may criticize this approach due to, e.g., "unnecessary" meta data, thus potentially affecting download times and bundle sizes, we are of the opinion that the benefits greatly outweigh any perceived disadvantages and that most, if not all, of the perceived disadvantages are actually advantages, especially when considering offline development and the affordances of modern tooling such as symbol resolution and inlining.
 
 <!-- </faq-question> -->
 
