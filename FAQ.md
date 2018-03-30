@@ -17,7 +17,7 @@
 -   [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 -   [Why not submit improvements to existing libraries?](#contributing-to-existing-libraries)
 -   [Why not aggregate (curate) packages published to npm?](#why-not-curate)
--   [Why are built-in JavaScript globals wrapped and imported as packages?](#wrapping-javascript-globals)
+-   [Why are built-in JavaScript globals wrapped and imported as packages?](#globals-as-packages)
 -   [Backward compatibility?](#backward-compatibility)
 -   [Why use semicolons?](#semicolons)
 -   [Import support?](#import-support)
@@ -427,7 +427,7 @@ This project has every intent on maintaining backward compatibility with older N
 
 * * *
 
-<a name="wrapping-javascript-globals"></a>
+<a name="globals-as-packages"></a>
 
 ### Why are built-in JavaScript globals wrapped and imported as packages?
 
