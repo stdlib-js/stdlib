@@ -1,0 +1,21 @@
+{
+	"string": [
+		"split",
+		"type",
+		"ymin",
+		"ymax"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"infinities"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}
