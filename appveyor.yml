@@ -165,7 +165,11 @@ matrix:
 
 # Define build artifacts. To download build artifacts for any build, use the following URL template:
 #
-# https://ci.appveyor.com/api/projects/<account>/<project>/artifacts/<artifact_file_path>?all=<boolean>&job=<job>&branch=<branch>
+#   https://ci.appveyor.com/api/projects/<account>/<project>/artifacts/<artifact_file_path>?all=<boolean>&job=<job>&branch=<branch>
+#
+# For example,
+#
+#   https://ci.appveyor.com/api/projects/<account>/stdlib/artifacts/var/log/logs.zip?all=true&job=Environment%3a+nodejs_version%3d9%2c+npm_version%3d%3e2.7.0%2c+BUILD_TASK%3dtest&branch=develop
 
 artifacts:
   # Push entire `log` directory:
