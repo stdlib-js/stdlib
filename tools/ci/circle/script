@@ -85,7 +85,7 @@ reports_dir="${root_dir}/reports"
 tools_dir="${root_dir}/tools"
 
 # Define the directory for project tools which are Node.js packages:
-tools_pkgs_dir="${base_dir}/_tools"
+tools_pkgs_dir="${base_dir}/@stdlib/_tools"
 
 # Define a heartbeat interval to periodically print messages in order to prevent Circle CI from prematurely ending a build due to long running commands:
 heartbeat_interval='30s'
