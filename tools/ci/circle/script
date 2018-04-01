@@ -57,8 +57,11 @@ tests_pattern='test*.js'
 # Define the pattern for filtering tests based on their file path:
 tests_filter='.*/.*'
 
+# Define the folder name for tests:
+tests_folder='test'
+
 # Define the folder name for test fixtures:
-tests_fixtures_folder='fixtures'
+tests_fixtures_folder="${tests_folder}/fixtures"
 
 # Define the directory path of top-level node module dependencies:
 node_modules="${root_dir}/node_modules"
