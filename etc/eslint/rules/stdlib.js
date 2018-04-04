@@ -3152,7 +3152,7 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
-* Require section headers to be padded with empty lines.
+* Enforce that required `stdlib` constants have variable names with all-uppercase letters.
 *
 * @name uppercase-required-constants
 * @memberof rules
