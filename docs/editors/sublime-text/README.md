@@ -45,7 +45,7 @@ $ subl .
 
 -   [**Fortran**][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
 
--   [**MarkdownEditing][sublime-text-markdownediting]: package which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown. Once installed, configure the package settings as follows:
+-   [**MarkdownEditing**][sublime-text-markdownediting]: package which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown. Once installed, configure the package settings as follows:
 
     ```text
     {
