@@ -3152,6 +3152,26 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
+* Enforce that required `stdlib` constants have variable names with all-uppercase letters.
+*
+* @name uppercase-required-constants
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* var eps = require( '@stdlib/constants/math/float64-eps' );
+*
+* @example
+* // Good...
+*
+* var EPS = require( '@stdlib/constants/math/float64-eps' );
+*/
+rules[ 'stdlib/uppercase-required-constants' ] = 'error';
+
+/**
 * Require section headers to be padded with empty lines.
 *
 * @name section-header-empty-lines
