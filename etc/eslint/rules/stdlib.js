@@ -2508,8 +2508,8 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * /**
 * * Squares a number.
 * *
-* * @param {number} x - input number
 * * @returns {number} x squared
+* * @param {number} x - input number
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2525,8 +2525,8 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * /**
 * * Squares a number.
 * *
-* * @returns {number} x squared
 * * @param {number} x - input number
+* * @returns {number} x squared
 * *
 * * @example
 * * var y = square( 2.0 );
@@ -2537,6 +2537,54 @@ rules[ 'stdlib/jsdoc-tag-names' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-tag-order' ] = 'error';
+
+/* eslint-disable stdlib/jsdoc-tag-spacing */
+
+/**
+* Require that JSDoc tags are properly padded with spaces.
+*
+* @name jsdoc-tag-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * @param{number} x - input number
+* *@returns {number }x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-tag-spacing */
 
 /**
 * Require that the unordered list marker be a dash `-`.
@@ -3152,7 +3200,7 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
-* Enforce that required `stdlib` constants have variable names with all-uppercase letters.
+* Enforce that required stdlib constants have uppercase variable names.
 *
 * @name uppercase-required-constants
 * @memberof rules
