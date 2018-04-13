@@ -1,0 +1,135 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+.canvas {
+	display: block;
+	margin: 0 auto;
+}
+
+.graph .hidden {
+	opacity: 0;
+}
+
+/*.annotation .marker {
+	cursor: pointer;
+	opacity: 0.2;
+	fill: #ff0000;
+	stroke: none;
+}
+
+.annotation .vline {
+	stroke: #000;
+	stroke-opacity: 0.2;
+}*/
+
+.annotations .title {
+	display: block;
+	/*font-size: 2em;*/
+	line-height: 2em;
+	padding: 0 10px;
+	/*background-color: #474747;*/
+	/*color: #ffffff;*/
+	font-size: 1.5em;
+	color: #474747;
+}
+
+.legend {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+}
+
+.legend .entry {
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.legend .symbol {
+	display: inline-block;
+	height: 4px;
+	width: 10px;
+	line-height: 0.3em;
+}
+
+.legend .label {
+	margin-left: 10px;
+}
+
+.legend .hidden {
+	opacity: 0.25;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* http://css-tricks.com/guide-responsive-friendly-css-columns/ */
+.multicolumn-1 {
+	-webkit-column-count: 1;
+	   -moz-column-count: 1;
+		-ms-column-count: 1;
+			column-count: 1;
+
+	-webkit-column-width: 150px;
+	   -moz-column-width: 150px;
+		-ms-column-width: 150px;
+			column-width: 150px;
+}
+
+.multicolumn-2 {
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+		-ms-column-count: 2;
+			column-count: 2;
+
+	-webkit-column-width: 150px;
+	   -moz-column-width: 150px;
+		-ms-column-width: 150px;
+			column-width: 150px;
+}
+
+.multicolumn-3 {
+	-webkit-column-count: 3;
+	   -moz-column-count: 3;
+		-ms-column-count: 3;
+			column-count: 3;
+
+	-webkit-column-width: 150px;
+	   -moz-column-width: 150px;
+		-ms-column-width: 150px;
+			column-width: 150px;
+}
+
+.multicolumn-4 {
+	-webkit-column-count: 4;
+	   -moz-column-count: 4;
+		-ms-column-count: 4;
+			column-count: 4;
+
+	-webkit-column-width: 150px;
+	   -moz-column-width: 150px;
+		-ms-column-width: 150px;
+			column-width: 150px;
+}
