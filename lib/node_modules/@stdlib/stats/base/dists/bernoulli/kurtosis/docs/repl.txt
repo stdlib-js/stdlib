@@ -1,0 +1,27 @@
+
+{{alias}}( p )
+    Returns the excess kurtosis of a Bernoulli distribution with success
+    probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~5.111
+    > v = {{alias}}( 0.5 )
+    -2.0
+
+    See Also
+    --------
+
