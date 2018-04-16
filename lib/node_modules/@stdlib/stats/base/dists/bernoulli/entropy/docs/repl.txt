@@ -1,0 +1,27 @@
+
+{{alias}}( p )
+    Returns the entropy of a Bernoulli distribution with success probability
+    `p` (in nats).
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~0.325
+    > v = {{alias}}( 0.5 )
+    ~0.693
+
+    See Also
+    --------
+
