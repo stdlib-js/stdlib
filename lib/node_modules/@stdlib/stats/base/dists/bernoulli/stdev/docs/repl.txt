@@ -1,0 +1,27 @@
+
+{{alias}}( p )
+    Returns the standard deviation of a Bernoulli distribution with success
+    probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~0.3
+    > v = {{alias}}( 0.5 )
+    0.5
+
+    See Also
+    --------
+
