@@ -3200,6 +3200,30 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
+* Enforce that boolean expressions are wrapped in parantheses when used as conditions in a ternary operator.
+*
+* @name ternary-conditional-parantheses
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* var randu = require( '@stdlib/random/base/randu' );
+*
+* var bool = randu() > 0.5 ? 1 : 0;
+*
+* @example
+* // Good...
+*
+* var randu = require( '@stdlib/random/base/randu' );
+*
+* var bool = ( randu() > 0.5 ) ? 1 : 0;
+*/
+rules[ 'stdlib/ternary-conditional-parantheses' ] = 'error';
+
+/**
 * Enforce that required stdlib constants have uppercase variable names.
 *
 * @name uppercase-required-constants
