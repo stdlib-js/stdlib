@@ -3200,9 +3200,9 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
-* Enforce that boolean expressions are wrapped in parantheses when used as conditions in a ternary operator.
+* Enforce that boolean expressions are wrapped in parentheses when used as conditions in a ternary operator.
 *
-* @name ternary-conditional-parantheses
+* @name ternary-condition-parentheses
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -3221,7 +3221,7 @@ rules[ 'stdlib/section-headers' ] = 'error';
 *
 * var bool = ( randu() > 0.5 ) ? 1 : 0;
 */
-rules[ 'stdlib/ternary-conditional-parantheses' ] = 'error';
+rules[ 'stdlib/ternary-condition-parentheses' ] = 'error';
 
 /**
 * Enforce that required stdlib constants have uppercase variable names.
