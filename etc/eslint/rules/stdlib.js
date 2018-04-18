@@ -3200,7 +3200,7 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 rules[ 'stdlib/section-headers' ] = 'error';
 
 /**
-* Enforce that boolean expressions are wrapped in parentheses when used as conditions in a ternary operator.
+* Require parentheses around ternary conditions.
 *
 * @name ternary-condition-parentheses
 * @memberof rules
