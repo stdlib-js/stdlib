@@ -206,6 +206,9 @@ RSCRIPT ?= Rscript
 # Define the command for getting the current project version:
 CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).version )"
 
+# Define the command for getting the project name:
+PROJECT_NAME ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).name )"
+
 
 # TOOLS #
 
