@@ -83,6 +83,7 @@ env:
 
   # Environment variables used to construct build matrix:
   matrix:
+    - BUILD_TASK='test-npm-install'
     - BUILD_TASK='test'
     - BUILD_TASK='benchmark'
     - BUILD_TASK='examples'
