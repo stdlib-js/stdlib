@@ -335,7 +335,7 @@ lint() {
 # $1 - log file
 test_npm_install() {
 	echo 'Testing npm install...' >&2
-	npm install @stdlib/stdlib >> "$1" 2>&1
+	make test-npm-install >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'npm install failed.' >&2
 		return 1
