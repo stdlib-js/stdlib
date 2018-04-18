@@ -330,6 +330,20 @@ lint() {
 	return 0
 }
 
+# Tests the ability to install the project via npm.
+#
+# $1 - log file
+test_npm_install() {
+	echo 'Testing npm install...' >&2
+	npm install @stdlib/stdlib >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'npm install failed.' >&2
+		return 1
+	fi
+	echo 'Successfully performed npm install.' >&2
+	return 0
+}
+
 # Finds test files.
 find_tests() {
 	local kernel
@@ -404,7 +418,7 @@ main() {
 	local len
 	local i
 
-	TASKS=(check_deps check_licenses lint)
+	TASKS=(check_deps check_licenses lint test_npm_install)
 	len="${#TASKS[@]}"
 
 	create_log_file "${log_file}"
@@ -442,6 +456,11 @@ main() {
 			fi
 		elif [[ "${task}" = "lint" ]]; then
 			lint "${log_file}"
+			if [[ "$?" -ne 0 ]]; then
+				on_error 1
+			fi
+		elif [[ "${task}" = "test_npm_install" ]]; then
+			test_npm_install "${log_file}"
 			if [[ "$?" -ne 0 ]]; then
 				on_error 1
 			fi
