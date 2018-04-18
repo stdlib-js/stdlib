@@ -45,7 +45,7 @@ test-npm-install: clean-test-npm-install
 .PHONY: test-npm-install
 
 #/
-# Removes the test installation.
+# Removes the test installation directory.
 #
 # @example
 # make clean-test-npm-install
