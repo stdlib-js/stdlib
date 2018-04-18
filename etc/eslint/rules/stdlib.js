@@ -56,7 +56,9 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 	'whitelist': [
 		'eslint',
 		'eslint-enable',
+		'eslint-enable-next-line',
 		'eslint-disable',
+		'eslint-disable-next-line',
 		'returns',
 		'e.g.,',
 		'ndarray',

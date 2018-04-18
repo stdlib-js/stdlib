@@ -169,6 +169,20 @@ run_examples() {
 	return 0
 }
 
+# Tests whether the project successfully installs via `npm`.
+#
+# $1 - log file
+test_npm_install() {
+	echo 'Testing npm install...' >&2
+	make test-npm-install >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation failed.' >&2
+		return 1
+	fi
+	echo 'Successfully installed.' >&2
+	return 0
+}
+
 # Checks dependencies.
 #
 # $1 - log file
@@ -189,7 +203,12 @@ main() {
 	start_heartbeat "${heartbeat_interval}"
 
 	echo "Task: ${task}." >&2
-	if [[ "${task}" = "test" ]]; then
+	if [[ "${task}" = "test-npm-install" ]]; then
+		test_npm_install "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "test" ]]; then
 		run_tests "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
