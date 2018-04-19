@@ -43,7 +43,7 @@ The command options are as follows:
 -   `-s ASM_JS=1`: generate [asm.js][asm-js].
 -   `-O0`: no optimization. Suitable for initial development.
 -   `-O3`: aggressive optimization. Note that this option increases compilation time and may lead to larger code sizes. Suitable for release.
--   `--memory-init-file <on>`: specifies whether to emit a memory initialization file. If `0`, static initialization is inlined in the generated JavaScript. If `1`, a separate file is generated for memory initialization. This file should be loaded _prior_ to run compiled output. Note that this option **only** applies for `asm.js`. For `wasm`, static memory initialization data is more efficiently included within the [WebAssembly][web-assembly] binary.
+-   `--memory-init-file <on>`: specifies whether to emit a memory initialization file. If `0`, static initialization is inlined in the generated JavaScript. If `1`, a separate file is generated for memory initialization. This file should be loaded _prior_ to running compiled output. Note that this option **only** applies for `asm.js`. For `wasm`, static memory initialization data is more efficiently included within the [WebAssembly][web-assembly] binary.
 -   `-s EXPORTED_FUNCTIONS="['_foo','_bar']"`: list of exported functions. Each function should be prefixed with an underscore; e.g., `foo` => `_foo`. Functions referred to in the list are **not** marked for dead code elimination and will be present in the compiled output.
 -   `-s EXPORTED_RUNTIME_METHODS="['cwrap','setValue','getValue]"`: runtime methods exported on `Module`. Many methods are exported by default and can be safely removed from the export list.
 -   `-s STRICT=1`: do **not** support deprecated build options.
