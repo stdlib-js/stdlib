@@ -1163,7 +1163,7 @@
 
 1.  [json-depth-stream](https://github.com/indutny/json-depth-stream)
 
-1.  [is-iso-8601](https://github.com/ankane/chartkick.js/blob/master/chartkick.js#L59)
+1.  [is-iso-8601](https://github.com/ankane/chartkick.js/blob/master/chartkick.js#L59) (see [here](https://github.com/ankane/chartkick.js/blob/5dcd8b3b027a992715a66898cb6f17cc86be1bbd/src/helpers.js))
 
 1.  Generate a [diff](https://github.com/FormidableLabs/publish-diff) before publishing to `npm`
 
@@ -1742,8 +1742,6 @@
 1.  [S&P 500 dataset](https://github.com/datasets/s-and-p-500)
 
 1.  sort methods, both numeric and general
-
-1.  [is-symbol](https://github.com/ljharb/is-symbol/blob/master/index.js)
 
 1.  [is-callable](https://github.com/ljharb/is-callable/blob/master/index.js)
 
