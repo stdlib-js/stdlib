@@ -129,7 +129,7 @@ isArguments,assert/is-arguments
 isArray,assert/is-array
 isArrayBuffer,assert/is-arraybuffer
 isArrayLike,assert/is-array-like
-isArrayLikeObject,(planned)
+isArrayLikeObject,assert/is-array-like-object
 isBoolean,assert/is-boolean
 isBuffer,assert/is-buffer
 isDate,assert/is-date-object
@@ -269,7 +269,7 @@ truncate,(planned)
 unescape,(planned)
 upperCase,string/uppercase
 upperFirst,(planned)
-words,(planned)
+words,nlp/tokenize
 attempt,utils/try-function
 bindAll,(maybe)
 cond,N/A
