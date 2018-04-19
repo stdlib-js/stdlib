@@ -1616,6 +1616,73 @@ rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 
 /**
+* Require blank lines between block nodes in JSDoc descriptions.
+*
+* @name jsdoc-no-missing-blank-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * # Beep
+* * ## Boop
+* *
+* * Hello World.
+* * -   Foo
+* *     1. Yes
+* *     2. No
+* * -   Bar
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * # Beep
+* *
+* * ## Boop
+* *
+* * Hello World.
+* *
+* * -   Foo
+* *
+* *     1. Yes
+* *
+* *     2. No
+* *
+* * -   Bar
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
+	'exceptTightLists': true
+}];
+
+/**
 * Prevent indentation of paragraph content.
 *
 * @name jsdoc-no-paragraph-content-indent
