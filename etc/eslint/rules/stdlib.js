@@ -648,6 +648,56 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
 }];
 
 /**
+* Require Unix linebreaks.
+*
+* @see [linebreak-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-linebreak-style}
+*/
+rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
+
+/**
+* Require double quotes for link titles.
+*
+* @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * [example](https://example.com (Example))
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * [example](https://example.com "Example")
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-link-title-style' ] = [ 'error', '"' ];
+
+/**
 * Prevent unnecessary indentation of list item bullets.
 *
 * @name jsdoc-list-item-bullet-indent

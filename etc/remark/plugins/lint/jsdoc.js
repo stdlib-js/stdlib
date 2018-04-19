@@ -127,16 +127,6 @@ plugins.push([
 ]);
 
 /**
-* Require Unix linebreaks.
-*
-* @see [linebreak-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-linebreak-style}
-*/
-plugins.push([
-	require( 'remark-lint-linebreak-style' ),
-	[ 'error', 'unix' ]
-]);
-
-/**
 * Require double quotes for link titles.
 *
 * @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
@@ -241,35 +231,6 @@ plugins.push([
 plugins.push([
 	require( 'remark-lint-maximum-line-length' ),
 	[ 'off' ]
-]);
-
-/**
-* Require blank lines between block nodes.
-*
-* @see [no-missing-blank-lines]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-missing-blank-lines}
-*
-* @example
-* <!-- Bad -->
-*
-* # Beep
-* ## Boop
-*
-* @example
-* <!-- Good -->
-*
-* # Beep
-*
-* ## Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-missing-blank-lines' ),
-	[
-		'error',
-		{
-			'exceptTightLists': true
-		}
-	]
 ]);
 
 /**
