@@ -138,7 +138,7 @@ isEmpty,assert/is-empty-object and assert/is-empty-array
 isEqual,(planned)
 isEqualWith,N/A
 isError,assert/is-error
-isFinite,(planned)
+isFinite,assert/is-finite
 isFunction,assert/is-function
 isInteger,assert/is-integer
 isLength,N/A
