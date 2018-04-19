@@ -23,8 +23,6 @@
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var tape = require( 'tape' );
-var AFINN_111 = require( '@stdlib/datasets/afinn-111' );
-var sin = require( '@stdlib/math/base/special/sin' );
 
 
 // VARIABLES //
@@ -43,7 +41,7 @@ tape( 'project contains a distributable file containing datasets (minified)', fu
 	var bundle = require( join( dirpath, 'stdlib-datasets-tree.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.datasets.AFINN_111, 'function', 'is a function' );
-	t.deepEqual( bundle.datasets.AFINN_111(), AFINN_111(), 'returns expected value' );
+	t.equal( typeof bundle.datasets.AFINN_111(), 'object', 'returns expected value' );
 	t.end();
 });
 
@@ -51,7 +49,7 @@ tape( 'project contains a distributable file exposing a "flat" namespace (unmini
 	var bundle = require( join( dirpath, 'stdlib-flat.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
-	t.equal( bundle.base.sin( 3.14 ), sin( 3.14 ), 'returns expected value' );
+	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
 
@@ -59,7 +57,7 @@ tape( 'project contains a distributable file exposing a "flat" namespace (minifi
 	var bundle = require( join( dirpath, 'stdlib-flat.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
-	t.equal( bundle.base.sin( 3.14 ), sin( 3.14 ), 'returns expected value' );
+	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
 
@@ -76,7 +74,7 @@ tape( 'project contains a distributable file exposing a "tree" namespace (unmini
 	t.equal( typeof bundle.math, 'object', 'has member' );
 	t.equal( typeof bundle.math.base, 'object', 'has member' );
 	t.equal( typeof bundle.math.base.special, 'object', 'has member' );
-	t.equal( bundle.math.base.special.sin( 3.14 ), sin( 3.14 ), 'returns expected value' );
+	t.equal( bundle.math.base.special.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
 
@@ -86,6 +84,6 @@ tape( 'project contains a distributable file exposing a "tree" namespace (minifi
 	t.equal( typeof bundle.math, 'object', 'has member' );
 	t.equal( typeof bundle.math.base, 'object', 'has member' );
 	t.equal( typeof bundle.math.base.special, 'object', 'has member' );
-	t.equal( bundle.math.base.special.sin( 3.14 ), sin( 3.14 ), 'returns expected value' );
+	t.equal( bundle.math.base.special.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
