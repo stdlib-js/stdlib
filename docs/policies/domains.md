@@ -14,6 +14,8 @@ List of active domains:
 
 List of **currently** unused domains:
 
+-   [libstd.com](http://libstd.com)
+-   [libstd.org](http://libstd.org)
 -   [stdlib.ai](http://stdlib.ai)
 -   [stdlibjs.com](http://stdlibjs.com)
 -   [stdlib.co](http://stdlib.co)
