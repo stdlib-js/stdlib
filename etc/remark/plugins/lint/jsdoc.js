@@ -127,58 +127,6 @@ plugins.push([
 ]);
 
 /**
-* Require double quotes for link titles.
-*
-* @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
-*
-* @example
-* <!-- Bad -->
-*
-* [example](https://example.com (Example))
-*
-* @example
-* <!-- Good -->
-*
-* [example](https://example.com "Example")
-*/
-plugins.push([
-	require( 'remark-lint-link-title-style' ),
-	[ 'error', '"' ]
-]);
-
-/**
-* Require list items use tab-size indentation.
-*
-* @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
-*
-* @example
-* <!-- Bad -->
-*
-* * Hello
-* * World
-*
-* @example
-* <!-- Good -->
-*
-* *   Hello
-* *   World
-*
-* @example
-* <!-- Good -->
-*
-* *   Beep
-*     boop
-*
-* *   Bop
-*     bip
-*
-*/
-plugins.push([
-	require( 'remark-lint-list-item-indent' ),
-	[ 'error', 'tab-size' ]
-]);
-
-/**
 * Require consistent list item spacing.
 *
 * @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}
@@ -211,26 +159,6 @@ plugins.push([
 plugins.push([
 	require( 'remark-lint-list-item-spacing' ),
 	[ 'error' ]
-]);
-
-/**
-* Require that heading lengths be less than or equal to `80` characters.
-*
-* @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
-*/
-plugins.push([
-	require( 'remark-lint-maximum-heading-length' ),
-	[ 'error', 80 ]
-]);
-
-/**
-* Do not enforce a maximum line length.
-*
-* @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
-*/
-plugins.push([
-	require( 'remark-lint-maximum-line-length' ),
-	[ 'off' ]
 ]);
 
 /**

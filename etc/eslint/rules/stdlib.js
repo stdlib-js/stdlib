@@ -655,6 +655,20 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
 rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
 
 /**
+* Require that heading lengths be less than or equal to `80` characters.
+*
+* @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
+*/
+rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
+
+/**
+* Do not enforce a maximum line length.
+*
+* @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
+*/
+rules[ 'stdlib/jsdoc-maximum-line-length' ] = [ 'off' ];
+
+/**
 * Require double quotes for link titles.
 *
 * @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
@@ -798,6 +812,67 @@ rules[ 'stdlib/jsdoc-list-item-bullet-indent' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
+
+/**
+* Require list items use tab-size indentation.
+*
+* @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * Hello
+* * World
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Hello
+* * -   World
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* *     boop
+* *
+* * -   Bop
+* *     bip
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*/
+rules[ 'stdlib/jsdoc-list-item-indent' ] = [ 'error', 'tab-size' ];
 
 /**
 * Lint JSDoc descriptions using remark.
