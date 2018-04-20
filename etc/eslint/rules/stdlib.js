@@ -545,6 +545,9 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 /**
 * Require first heading level be a level `2` heading in JSDoc comments. A level `1` heading is implied.
 *
+* @name jsdoc-first-heading-level
+* @memberof rules
+* @type {Array}
 * @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
 */
 rules[ 'stdlib/jsdoc-first-heading-level' ] = [ 'error', 2 ];
@@ -603,13 +606,20 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 /**
 * Warn when headings increment by more than 1 level.
 *
+* @name jsdoc-heading-increment
+* @memberof rules
+* @type {string}
+* @default 'warn'
 * @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
 */
-rules[ 'stdlib/jsdoc-heading-increment' ] = [ 'warn' ];
+rules[ 'stdlib/jsdoc-heading-increment' ] = 'warn';
 
 /**
 * Require `atx` heading style.
 *
+* @name jsdoc-heading-style
+* @memberof rules
+* @type {Array}
 * @see [heading-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-style}
 *
 * @example
@@ -712,6 +722,9 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
 /**
 * Require Unix linebreaks.
 *
+* @name jsdoc-jsdoc-linebreak-style
+* @memberof rules
+* @type {Array}
 * @see [linebreak-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-linebreak-style}
 */
 rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
@@ -719,6 +732,9 @@ rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
 /**
 * Require that heading lengths be less than or equal to `80` characters.
 *
+* @name jsdoc-maximum-heading-length
+* @memberof rules
+* @type {Array}
 * @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
 */
 rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
@@ -726,6 +742,10 @@ rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
 /**
 * Do not enforce a maximum line length.
 *
+* @name jsdoc-maximum-line-length
+* @memberof rules
+* @type {string}
+* @default 'off'
 * @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
 */
 rules[ 'stdlib/jsdoc-maximum-line-length' ] = [ 'off' ];
@@ -733,6 +753,9 @@ rules[ 'stdlib/jsdoc-maximum-line-length' ] = [ 'off' ];
 /**
 * Require double quotes for link titles.
 *
+* @name jsdoc-link-title-style
+* @memberof rules
+* @type {Array}
 * @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
 *
 * @example
@@ -878,6 +901,9 @@ rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
 /**
 * Require list items use tab-size indentation.
 *
+* @name jsdoc-list-item-indent
+* @memberof rules
+* @type {Array}
 * @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
 *
 * @example
@@ -939,6 +965,10 @@ rules[ 'stdlib/jsdoc-list-item-indent' ] = [ 'error', 'tab-size' ];
 /**
 * Require consistent list item spacing.
 *
+* @name jsdoc-list-item-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
 * @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}
 *
 * @example
@@ -999,7 +1029,7 @@ rules[ 'stdlib/jsdoc-list-item-indent' ] = [ 'error', 'tab-size' ];
 * *\/
 *
 */
-rules[ 'stdlib/jsdoc-list-item-spacing' ] = [ 'error' ];
+rules[ 'stdlib/jsdoc-list-item-spacing' ] = 'error';
 
 /**
 * Lint JSDoc descriptions using remark.
@@ -1937,6 +1967,10 @@ rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
 /**
 * Allow multiple top-level headings.
 *
+* @name jsdoc-no-multiple-toplevel-heading
+* @memberof rules
+* @type {string}
+* @default 'off'
 * @see [no-multiple-toplevel-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-multiple-toplevel-headings}
 *
 * @example
@@ -1959,7 +1993,7 @@ rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
 *     return 'boop';
 * }
 */
-rules[ 'stdlib/jsdoc-no-multiple-toplevel-headings' ] = [ 'off' ];
+rules[ 'stdlib/jsdoc-no-multiple-toplevel-headings' ] = 'off';
 
 /**
 * Prevent indentation of paragraph content.
