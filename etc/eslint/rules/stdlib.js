@@ -2064,13 +2064,13 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 * /**
 * * Boop beep.
 * *
-* * # Beep
-* * ## Boop
+* * ## Beep
+* * ### Boop
 * *
 * * Hello World.
 * * -   Foo
-* *     1. Yes
-* *     2. No
+* *     1.  Yes
+* *     2.  No
 * * -   Bar
 * *
 * * @returns {string} a value
@@ -2089,17 +2089,16 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 * /**
 * * Boop beep.
 * *
-* * # Beep
+* * ## Beep
 * *
-* * ## Boop
+* * ### Boop
 * *
 * * Hello World.
 * *
 * * -   Foo
+* *     1.  Yes
 * *
-* *     1. Yes
-* *
-* *     2. No
+* *     2.  No
 * *
 * * -   Bar
 * *
