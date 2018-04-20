@@ -81,59 +81,6 @@ plugins.push([
 ]);
 
 /**
-* Require consistent list item spacing.
-*
-* @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}
-*
-* @example
-* <!-- Bad -->
-*
-* *   Beep
-* *   Boop
-*
-* *   Bop
-*
-* @example
-* <!-- Good -->
-*
-* *   Beep
-* *   Boop
-* *   Bop
-*
-* @example
-* <!-- Okay -->
-*
-* *   Beep
-*
-* *   Boop
-*
-* *   Bop
-*
-*/
-plugins.push([
-	require( 'remark-lint-list-item-spacing' ),
-	[ 'error' ]
-]);
-
-/**
-* Allow multiple top-level headings.
-*
-* @see [no-multiple-toplevel-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-multiple-toplevel-headings}
-*
-* @example
-* <!-- Okay -->
-*
-* # Beep
-*
-* # Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-no-multiple-toplevel-headings' ),
-	[ 'off' ]
-]);
-
-/**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
 * @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}

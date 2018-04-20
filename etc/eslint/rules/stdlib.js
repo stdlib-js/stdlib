@@ -937,6 +937,71 @@ rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-list-item-indent' ] = [ 'error', 'tab-size' ];
 
 /**
+* Require consistent list item spacing.
+*
+* @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* * -   Boop
+* *
+* * -   Boop
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* * -   Boop
+* * -   Boop
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Okay...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* *
+* * -   Boop
+* *
+* * -   Boop
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+*/
+rules[ 'stdlib/jsdoc-list-item-spacing' ] = [ 'error' ];
+
+/**
 * Lint JSDoc descriptions using remark.
 *
 * @name jsdoc-markdown-remark
@@ -1868,6 +1933,33 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
 	'exceptTightLists': true
 }];
+
+/**
+* Allow multiple top-level headings.
+*
+* @see [no-multiple-toplevel-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-multiple-toplevel-headings}
+*
+* @example
+* // Okay...
+*
+* /**
+* * Boop beep.
+* *
+* * # Boop
+* *
+* * # Beep.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-multiple-toplevel-headings' ] = [ 'off' ];
 
 /**
 * Prevent indentation of paragraph content.
