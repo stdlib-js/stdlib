@@ -549,6 +549,46 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * @memberof rules
 * @type {Array}
 * @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Beep
+* *
+* * Boop.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * # Beep
+* *
+* * Boop.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
 */
 rules[ 'stdlib/jsdoc-first-heading-level' ] = [ 'error', 2 ];
 
@@ -611,6 +651,47 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 * @type {string}
 * @default 'warn'
 * @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * #### Beep
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * ### Beep
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
 */
 rules[ 'stdlib/jsdoc-heading-increment' ] = 'warn';
 
@@ -736,6 +817,45 @@ rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
 * @memberof rules
 * @type {Array}
 * @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep boop.
+* *
+* * ## Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+* *
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * ## Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+* *
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
 */
 rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
 
@@ -747,6 +867,39 @@ rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
 * @type {string}
 * @default 'off'
 * @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget * dolor. Aenean massa.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
 */
 rules[ 'stdlib/jsdoc-maximum-line-length' ] = [ 'off' ];
 
