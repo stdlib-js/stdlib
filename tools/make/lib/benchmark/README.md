@@ -40,7 +40,6 @@ The command supports the following environment variables:
 
 This command is an **alias** for `benchmark-javascript`, which is documented below.
 
-
 #### benchmark-lang
 
 Runs cross-language benchmarks.
