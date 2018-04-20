@@ -81,52 +81,6 @@ plugins.push([
 ]);
 
 /**
-* Require first heading level be a level `2` heading in JSDoc comments. A level `1` heading is implied.
-*
-* @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
-*/
-plugins.push([
-	require( 'remark-lint-first-heading-level' ),
-	[ 'error', 2 ]
-]);
-
-/**
-* Warn when headings increment by more than 1 level.
-*
-* @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
-*/
-plugins.push([
-	require( 'remark-lint-heading-increment' ),
-	[ 'warn' ]
-]);
-
-/**
-* Require `atx` heading style.
-*
-* @see [heading-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-style}
-*
-* @example
-* <!-- Bad -->
-*
-* Beep
-* ===
-*
-* ## Boop
-*
-* @example
-* <!-- Good -->
-*
-* # Beep
-*
-* ## Boop
-*
-*/
-plugins.push([
-	require( 'remark-lint-heading-style' ),
-	[ 'error', 'atx' ]
-]);
-
-/**
 * Require consistent list item spacing.
 *
 * @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}

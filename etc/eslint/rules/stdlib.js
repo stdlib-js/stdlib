@@ -543,6 +543,13 @@ rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
 rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 
 /**
+* Require first heading level be a level `2` heading in JSDoc comments. A level `1` heading is implied.
+*
+* @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
+*/
+rules[ 'stdlib/jsdoc-first-heading-level' ] = [ 'error', 2 ];
+
+/**
 * Prevent too many spaces from being used to hard break.
 *
 * @name jsdoc-hard-break-spaces
@@ -592,6 +599,61 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
+
+/**
+* Warn when headings increment by more than 1 level.
+*
+* @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
+*/
+rules[ 'stdlib/jsdoc-heading-increment' ] = [ 'warn' ];
+
+/**
+* Require `atx` heading style.
+*
+* @see [heading-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Returns a pseudo-random number on `[0,1]`
+* *
+* * Beep
+* * ===
+* *
+* * ## Boop
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Returns a pseudo-random number on `[0,1]`
+* *
+* * # Beep
+* *
+* * ## Boop
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*/
+rules[ 'stdlib/jsdoc-heading-style' ] = [ 'error', 'atx' ];
 
 /**
 * Require that JSDoc descriptions start with an uppercase letter and end with a period.
