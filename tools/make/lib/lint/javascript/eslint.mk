@@ -46,7 +46,8 @@ ESLINT_IGNORE ?= $(CONFIG_DIR)/eslint/.eslintignore
 
 # Define the command-line options to use when invoking the ESLint executable:
 ESLINT_FLAGS ?= \
-	--ignore-path $(ESLINT_IGNORE)
+	--ignore-path $(ESLINT_IGNORE) \
+	--report-unused-disable-directives
 
 
 # RULES #

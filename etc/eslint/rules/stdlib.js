@@ -543,6 +543,56 @@ rules[ 'stdlib/jsdoc-fenced-code-marker' ] = [ 'error', '`' ];
 rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 
 /**
+* Require first heading level be a level `2` heading in JSDoc comments. A level `1` heading is implied.
+*
+* @name jsdoc-first-heading-level
+* @memberof rules
+* @type {Array}
+* @see [first-heading-level]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-first-heading-level}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * # Beep
+* *
+* * Boop.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Beep
+* *
+* * Boop.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-first-heading-level' ] = [ 'error', 2 ];
+
+/**
 * Prevent too many spaces from being used to hard break.
 *
 * @name jsdoc-hard-break-spaces
@@ -592,6 +642,109 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
+
+/**
+* Warn when headings increment by more than 1 level.
+*
+* @name jsdoc-heading-increment
+* @memberof rules
+* @type {string}
+* @default 'warn'
+* @see [heading-increment]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-increment}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * #### Beep
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Boop
+* *
+* * ### Beep
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-heading-increment' ] = 'warn';
+
+/**
+* Require `atx` heading style.
+*
+* @name jsdoc-heading-style
+* @memberof rules
+* @type {Array}
+* @see [heading-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-heading-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Returns a pseudo-random number on `[0,1]`
+* *
+* * Beep
+* * ===
+* *
+* * ## Boop
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Returns a pseudo-random number on `[0,1]`
+* *
+* * # Beep
+* *
+* * ## Boop
+* *
+* * @returns {number} uniform random number
+* *
+* * @example
+* * var y = rand();
+* * // e.g., returns 0.5363925252089496
+* *\/
+* function rand() {
+*     return Math.random();
+* }
+*/
+rules[ 'stdlib/jsdoc-heading-style' ] = [ 'error', 'atx' ];
 
 /**
 * Require that JSDoc descriptions start with an uppercase letter and end with a period.
@@ -646,6 +799,155 @@ rules[ 'stdlib/jsdoc-leading-description-sentence' ] = [ 'error', {
 		'`y`-value'
 	]
 }];
+
+/**
+* Require Unix linebreaks.
+*
+* @name jsdoc-jsdoc-linebreak-style
+* @memberof rules
+* @type {Array}
+* @see [linebreak-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-linebreak-style}
+*/
+rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
+
+/**
+* Require that heading lengths be less than or equal to `80` characters.
+*
+* @name jsdoc-maximum-heading-length
+* @memberof rules
+* @type {Array}
+* @see [maximum-heading-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-heading-length}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Beep boop.
+* *
+* * ## Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+* *
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * ## Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+* *
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
+
+/**
+* Do not enforce a maximum line length.
+*
+* @name jsdoc-maximum-line-length
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [maximum-line-length]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-maximum-line-length}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget * dolor. Aenean massa.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+*
+* @example
+* // Good...
+*
+* /**
+* * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-maximum-line-length' ] = [ 'off' ];
+
+/**
+* Require double quotes for link titles.
+*
+* @name jsdoc-link-title-style
+* @memberof rules
+* @type {Array}
+* @see [link-title-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-link-title-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * [example](https://example.com (Example))
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * [example](https://example.com "Example")
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-link-title-style' ] = [ 'error', '"' ];
 
 /**
 * Prevent unnecessary indentation of list item bullets.
@@ -748,6 +1050,139 @@ rules[ 'stdlib/jsdoc-list-item-bullet-indent' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-list-item-content-indent' ] = 'error';
+
+/**
+* Require list items use tab-size indentation.
+*
+* @name jsdoc-list-item-indent
+* @memberof rules
+* @type {Array}
+* @see [list-item-indent]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-indent}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * Hello
+* * World
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Hello
+* * -   World
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* *     boop
+* *
+* * -   Bop
+* *     bip
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*/
+rules[ 'stdlib/jsdoc-list-item-indent' ] = [ 'error', 'tab-size' ];
+
+/**
+* Require consistent list item spacing.
+*
+* @name jsdoc-list-item-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [list-item-spacing]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-list-item-spacing}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* * -   Boop
+* *
+* * -   Boop
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* * -   Boop
+* * -   Boop
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+* @example
+* // Okay...
+*
+* /**
+* * Squares a number.
+* *
+* * -   Beep
+* *
+* * -   Boop
+* *
+* * -   Boop
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+*
+*/
+rules[ 'stdlib/jsdoc-list-item-spacing' ] = 'error';
 
 /**
 * Lint JSDoc descriptions using remark.
@@ -1614,6 +2049,103 @@ rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
+
+/**
+* Require blank lines between Markdown block nodes in JSDoc descriptions.
+*
+* @name jsdoc-no-missing-blank-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Beep
+* * ### Boop
+* *
+* * Hello World.
+* * -   Foo
+* *     1. Yes
+* *     2. No
+* * -   Bar
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * ## Beep
+* *
+* * ### Boop
+* *
+* * Hello World.
+* *
+* * - Foo
+* *     1. Yes
+* *
+* *     2. No
+* *
+* * -   Bar
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
+	'exceptTightLists': true
+}];
+
+/**
+* Allow multiple top-level headings.
+*
+* @name jsdoc-no-multiple-toplevel-heading
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [no-multiple-toplevel-headings]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-multiple-toplevel-headings}
+*
+* @example
+* // Okay...
+*
+* /**
+* * Boop beep.
+* *
+* * # Boop
+* *
+* * # Beep.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-multiple-toplevel-headings' ] = 'off';
 
 /**
 * Prevent indentation of paragraph content.

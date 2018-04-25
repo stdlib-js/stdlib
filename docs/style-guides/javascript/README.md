@@ -570,6 +570,8 @@ Including parentheses around the test condition in ternary operators improves re
 
 ##### Bad Example
 
+<!-- eslint-disable stdlib/ternary-condition-parentheses -->
+
 ```javascript
 // Do not...
 var foo = a === b ? a*3 : b/4;
@@ -2607,7 +2609,6 @@ var foo = bar || null;
     // Comment about `bap`...
     var bap = 'bap';
     ```
-
 
 ##### Enforcement
 

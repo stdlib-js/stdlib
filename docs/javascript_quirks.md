@@ -20,7 +20,6 @@
 
     When implementing lower-level math functions which may require rounding, exercise caution when considering whether the built-in rounding behavior is appropriate and ensure that bias is not introduced in computed results.
 
-
 <section class="links">
 
 [ecma-262-math-round]: http://www.ecma-international.org/ecma-262/6.0/#sec-math.round
