@@ -2051,7 +2051,7 @@ rules[ 'stdlib/jsdoc-no-inline-padding' ] = 'error';
 rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 
 /**
-* Require blank lines between block nodes in JSDoc descriptions.
+* Require blank lines between Markdown block nodes in JSDoc descriptions.
 *
 * @name jsdoc-no-missing-blank-lines
 * @memberof rules
