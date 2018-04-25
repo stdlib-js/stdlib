@@ -2095,7 +2095,7 @@ rules[ 'stdlib/jsdoc-no-literal-urls' ] = 'error';
 * *
 * * Hello World.
 * *
-* * -   Foo
+* * - Foo
 * *     1. Yes
 * *
 * *     2. No
