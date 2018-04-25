@@ -3174,6 +3174,47 @@ rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 
 /**
+* Enforce that only variables and functions are assigned to `module.exports`.
+*
+* @name module-exports-assignments
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var normal = require( '@stdlib/random/base/normal' );
+* var beta = require( '@stdlib/random/base/beta' );
+*
+*
+* // EXPORTS //
+*
+* module.exports = {
+*     'normal': normal,
+*     'beta': beta
+* };
+*
+* @example
+* // Good...
+* var normal = require( '@stdlib/random/base/normal' );
+* var beta = require( '@stdlib/random/base/beta' );
+*
+*
+* // VARIABLES //
+*
+* var ns = {
+*     'normal': normal,
+*     'beta': beta
+* };
+*
+*
+* // EXPORTS //
+*
+* module.exports = ns;
+*/
+rules[ 'stdlib/module-exports-assignments' ] = 'error';
+
+/**
 * Enforce that export statements are placed at the end of a file.
 *
 * @name module-exports-last
