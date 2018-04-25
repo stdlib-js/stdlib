@@ -3620,6 +3620,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
+		'Number',
 		'SharedArrayBuffer',
 		'Uint8Array',
 		'Uint8ClampedArray',
