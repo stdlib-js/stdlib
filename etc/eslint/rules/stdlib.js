@@ -556,7 +556,7 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * /**
 * * Boop beep.
 * *
-* * ## Beep
+* * # Beep
 * *
 * * Boop.
 * *
@@ -576,7 +576,7 @@ rules[ 'stdlib/jsdoc-final-definition' ] = 'error';
 * /**
 * * Boop beep.
 * *
-* * # Beep
+* * ## Beep
 * *
 * * Boop.
 * *
