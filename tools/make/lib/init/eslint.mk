@@ -40,11 +40,13 @@ BROWSERIFY_STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_FLAGS ?= \
 # RULES #
 
 #/
-# Initializes custom ESLint rules.
+# Initializes custom [ESLint][eslint] rules.
 #
 # ## Notes
 #
 # -   This rule bundles a custom ESLint rules plugin as a node module and installs the plugin in the project `node_modules` directory.
+#
+# [eslint]: http://eslint.org/
 #
 # @example
 # make init-stdlib-custom-eslint-rules-plugin
@@ -59,7 +61,9 @@ init-stdlib-custom-eslint-rules-plugin: $(NODE_MODULES)
 .PHONY: init-stdlib-custom-eslint-rules-plugin
 
 #/
-# Initializes custom ESLint plugins.
+# Initializes custom [ESLint][eslint] plugins.
+#
+# [eslint]: http://eslint.org/
 #
 # @example
 # make init-stdlib-custom-eslint-plugins
@@ -69,7 +73,9 @@ init-stdlib-custom-eslint-plugins: init-stdlib-custom-eslint-rules-plugin
 .PHONY: init-stdlib-custom-eslint-plugins
 
 #/
-# Removes a custom ESLint rule plugin.
+# Removes a custom [ESLint][eslint] rule plugin.
+#
+# [eslint]: http://eslint.org/
 #
 # @example
 # make clean-stdlib-custom-eslint-rules-plugin
@@ -80,7 +86,9 @@ clean-stdlib-custom-eslint-rules-plugin:
 .PHONY: clean-stdlib-custom-eslint-rules-plugin
 
 #/
-# Removes custom ESLint plugins.
+# Removes custom [ESLint][eslint] plugins.
+#
+# [eslint]: http://eslint.org/
 #
 # @example
 # make clean-stdlib-custom-eslint-plugins

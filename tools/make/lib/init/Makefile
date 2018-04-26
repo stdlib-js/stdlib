@@ -28,6 +28,10 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 #/
 # Performs initialization tasks, such as installing git hooks, installing custom ESLint plugins, etc.
 #
+# ## Notes
+#
+# -  This rule should **always** be invoked in order to initialize the project development environment. If not, various development aids will **not** be initialized, thus hindering project development.
+#
 # @example
 # make init
 #/
