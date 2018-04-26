@@ -26,7 +26,7 @@ include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 # RULES #
 
 #/
-# Performs initialization tasks, such as installing git hooks, installing custom ESLint plugins, etc.
+# Performs initialization tasks, such as installing Git hooks, installing custom lint plugins, etc.
 #
 # ## Notes
 #
