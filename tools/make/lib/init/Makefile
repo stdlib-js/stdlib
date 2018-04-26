@@ -18,16 +18,19 @@
 
 # DEPENDENCIES #
 
+# Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/init/eslint.mk
 include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 
 
 # RULES #
 
-# Perform initialization tasks.
+#/
+# Performs initialization tasks, such as installing git hooks, installing custom ESLint plugins, etc.
 #
-# This target performs initialization tasks, such as installing git hooks, installing custom ESLint plugins, etc.
-
+# @example
+# make init
+#/
 init: init-git-hooks init-stdlib-custom-eslint-plugins
 
 .PHONY: init
