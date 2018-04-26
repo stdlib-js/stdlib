@@ -34,6 +34,8 @@ Performs development initialization tasks.
 $ make init
 ```
 
+* * *
+
 ### ESLint
 
 #### init-stdlib-custom-eslint-rules-plugin
@@ -67,6 +69,8 @@ Removes custom [ESLint][eslint] plugins.
 ```bash
 $ make clean-stdlib-custom-eslint-plugins
 ```
+
+* * *
 
 ### Git
 
