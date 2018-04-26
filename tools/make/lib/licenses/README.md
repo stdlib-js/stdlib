@@ -6,7 +6,7 @@
 
 <section class="intro">
 
-This directory contains [`make`][make] rules for managing project licenses, including those of its dependencies.
+This directory contains [`make`][make] rules for managing project licenses, including those of project dependencies.
 
 </section>
 
