@@ -45,20 +45,23 @@ CHECK_LICENSES_PRODUCTION ?= \
 
 # RULES #
 
-# Check package licenses.
+#/
+# Checks the license for each package dependency against a list of permitted licenses.
 #
-# This target checks the license for each package dependency against a list of permitted licenses.
-
+# @example
+# make check-licenses
+#/
 check-licenses: $(NODE_MODULES)
 	$(QUIET) $(CHECK_LICENSES)
 
 .PHONY: check-licenses
 
-
-# Check production package licenses.
+#/
+# Checks the license for each "production" package dependency against a list of permitted licenses.
 #
-# This target checks the license for each package dependency against a list of permitted licenses.
-
+# @example
+# make check-licenses-production
+#/
 check-licenses-production: $(NODE_MODULES)
 	$(QUIET) $(CHECK_LICENSES_PRODUCTION)
 
