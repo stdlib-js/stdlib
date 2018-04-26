@@ -52,7 +52,7 @@ $ make examples-lang
 
 The command supports the environment variables supported by each language-specific (`examples-<lang>`) command documented below.
 
-This command is useful when wanting to glob for examples files, irrespective of language, for a particular package in order to compare cross-language performance. 
+This command is useful when wanting to glob for examples files, irrespective of language, for a particular package in order to compare cross-language behavior. 
 
 * * *
 
