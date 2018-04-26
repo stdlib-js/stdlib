@@ -30,12 +30,14 @@ GIT_HOOKS_OUT ?= $(ROOT_DIR)/.git/hooks
 
 # RULES #
 
-# Install git hooks.
-#
-# This target installs [git hooks][1].
+#/
+# Installs [git hooks][1].
 #
 # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
-
+#
+# @example
+# make init-git-hooks
+#/
 init-git-hooks:
 	$(QUIET) for file in $(GIT_HOOKS); do \
 		$(CP) $(GIT_HOOKS_DIR)/$$file $(GIT_HOOKS_OUT)/$$file; \
@@ -43,4 +45,3 @@ init-git-hooks:
 	done
 
 .PHONY: init-git-hooks
-
