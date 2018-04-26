@@ -18,6 +18,7 @@
 
 # DEPENDENCIES #
 
+# Note: keep the following in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/examples/c.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/cpp.mk
 include $(TOOLS_MAKE_LIB_DIR)/examples/javascript.mk
