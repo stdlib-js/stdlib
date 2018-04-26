@@ -18,10 +18,12 @@
 
 # RULES #
 
-# List package licenses.
+#/
+# Lists the license for each package dependency in the package dependency tree.
 #
-# This target lists the license for each package dependency in the package dependency tree.
-
+# @example
+# make list-licenses
+#/
 list-licenses: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
@@ -31,11 +33,12 @@ list-licenses: $(NODE_MODULES)
 
 .PHONY: list-licenses
 
-
-# List package licenses by group.
+#/
+# Groups the licenses of package dependencies by license type.
 #
-# This target groups the licenses of package dependencies by license type.
-
+# @example
+# make list-licenses-group
+#/
 list-licenses-group: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
@@ -45,11 +48,12 @@ list-licenses-group: $(NODE_MODULES)
 
 .PHONY: list-licenses-group
 
-
-# List dependency licenses.
+#/
+# Lists the license for each root package dependency.
 #
-# This target lists the license for each root package dependency.
-
+# @example
+# make list-deps-licenses
+#/
 list-deps-licenses: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
@@ -60,11 +64,12 @@ list-deps-licenses: $(NODE_MODULES)
 
 .PHONY: list-deps-licenses
 
-
-# List missing licenses.
+#/
+# Lists package dependencies missing license information.
 #
-# This target lists packages missing license information.
-
+# @example
+# make list-missing-licenses
+#/
 list-missing-licenses: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
@@ -74,11 +79,12 @@ list-missing-licenses: $(NODE_MODULES)
 
 .PHONY: list-missing-licenses
 
-
-# List ambiguous licenses.
+#/
+# Lists package dependencies having ambiguous license information (e.g., conflicting or unknown licenses).
 #
-# This target lists packages having ambiguous license information.
-
+# @example
+# make list-ambiguous-licenses
+#/
 list-ambiguous-licenses: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
@@ -88,11 +94,12 @@ list-ambiguous-licenses: $(NODE_MODULES)
 
 .PHONY: list-ambiguous-licenses
 
-
-# List excluded licenses.
+#/
+# Lists package dependencies having excluded license information (as determined by a license whitelist).
 #
-# This target lists packages excluded license information.
-
+# @example
+# make list-excluded-licenses
+#/
 list-excluded-licenses: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
@@ -103,11 +110,12 @@ list-excluded-licenses: $(NODE_MODULES)
 
 .PHONY: list-excluded-licenses
 
-
-# Generate a license summary.
+#/
+# Prints a summary of package dependency license information.
 #
-# This target summaries package dependency license information.
-
+# @example
+# make list-licenses-summary
+#/
 list-licenses-summary: $(NODE_MODULES)
 	$(QUIET) $(LIST_LICENSES) \
 		--dir $(ROOT_DIR) \
