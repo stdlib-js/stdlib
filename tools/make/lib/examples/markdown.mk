@@ -23,10 +23,17 @@ include $(TOOLS_MAKE_LIB_DIR)/examples/markdown_javascript.mk
 
 # RULES #
 
-# Run examples.
+#/
+# Runs examples found in Markdown files.
 #
-# This target runs examples found in Markdown files.
-
+# @param {string} [MARKDOWN_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+#
+# @example
+# make markdown-examples
+#
+# @example
+# make markdown-examples MARKDOWN_FILTER=.*/strided/common/.*
+#/
 markdown-examples: markdown-examples-javascript
 
 .PHONY: markdown-examples
