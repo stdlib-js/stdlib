@@ -57,7 +57,7 @@ check-licenses: $(NODE_MODULES)
 .PHONY: check-licenses
 
 #/
-# Checks the license for each "production" package dependency against a list of permitted licenses.
+# Checks the license for each "production" (i.e., non-development) package dependency against a list of permitted licenses.
 #
 # @example
 # make check-licenses-production

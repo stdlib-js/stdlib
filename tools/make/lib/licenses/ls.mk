@@ -49,7 +49,7 @@ list-licenses-group: $(NODE_MODULES)
 .PHONY: list-licenses-group
 
 #/
-# Lists the license for each root package dependency.
+# Lists the license for each **root** package dependency.
 #
 # @example
 # make list-deps-licenses
