@@ -30,28 +30,52 @@ UPDATE_LICENSE_HEADERS ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/lic
 
 # RULES #
 
-# Remove license headers.
+#/
+# Removes file license headers.
 #
-# This target removes license headers.
-
+# @param {string} [FILES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [FILES_PATTERN] - filename pattern (e.g., `*.js`)
+#
+# @example
+# make remove-license-headers
+#
+# @example
+# make remove-license-headers FILES_FILTER=.*/math/base/special/abs/.*
+#/
 remove-license-headers: $(NODE_MODULES)
 	$(QUIET) $(FIND_FILES_CMD) | $(REMOVE_LICENSE_HEADERS)
 
 .PHONY: remove-license-headers
 
-# Insert license headers.
+#/
+# Inserts file license headers.
 #
-# This target inserts license headers.
-
+# @param {string} [FILES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [FILES_PATTERN] - filename pattern (e.g., `*.js`)
+#
+# @example
+# make insert-license-headers
+#
+# @example
+# make insert-license-headers FILES_FILTER=.*/math/base/special/abs/.*
+#/
 insert-license-headers: $(NODE_MODULES)
 	$(QUIET) $(FIND_FILES_CMD) | $(INSERT_LICENSE_HEADERS)
 
 .PHONY: insert-license-headers
 
-# Update license headers.
+#/
+# Updates file license headers.
 #
-# This target updates license headers.
-
+# @param {string} [FILES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [FILES_PATTERN] - filename pattern (e.g., `*.js`)
+#
+# @example
+# make update-license-headers
+#
+# @example
+# make update-license-headers FILES_FILTER=.*/math/base/special/abs/.*
+#/
 update-license-headers: $(NODE_MODULES)
 	$(QUIET) $(FIND_FILES_CMD) | $(UPDATE_LICENSE_HEADERS)
 

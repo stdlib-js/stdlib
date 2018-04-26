@@ -39,10 +39,18 @@ BROWSERIFY_STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_FLAGS ?= \
 
 # RULES #
 
-# Initialize custom ESLint rules.
+#/
+# Initializes custom [ESLint][eslint] rules.
 #
-# This target bundles a custom ESLint rules plugin as a node module and installs the plugin in the `node_modules` directory.
-
+# ## Notes
+#
+# -   This rule bundles a custom ESLint rules plugin as a node module and installs the plugin in the project `node_modules` directory.
+#
+# [eslint]: http://eslint.org/
+#
+# @example
+# make init-stdlib-custom-eslint-rules-plugin
+#/
 init-stdlib-custom-eslint-rules-plugin: $(NODE_MODULES)
 	$(QUIET) $(MKDIR_RECURSIVE) $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_OUT)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" \
@@ -52,30 +60,39 @@ init-stdlib-custom-eslint-rules-plugin: $(NODE_MODULES)
 
 .PHONY: init-stdlib-custom-eslint-rules-plugin
 
-
-# Initialize custom ESLint plugins.
+#/
+# Initializes custom [ESLint][eslint] plugins.
 #
-# This target initializes custom ESLint plugins specific to the project.
-
+# [eslint]: http://eslint.org/
+#
+# @example
+# make init-stdlib-custom-eslint-plugins
+#/
 init-stdlib-custom-eslint-plugins: init-stdlib-custom-eslint-rules-plugin
 
 .PHONY: init-stdlib-custom-eslint-plugins
 
-
-# Remove custom ESLint rules plugin.
+#/
+# Removes a custom [ESLint][eslint] rule plugin.
 #
-# This target cleans up a custom ESLint rules plugin by removing the plugin directory.
-
+# [eslint]: http://eslint.org/
+#
+# @example
+# make clean-stdlib-custom-eslint-rules-plugin
+#/
 clean-stdlib-custom-eslint-rules-plugin:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(STDLIB_CUSTOM_ESLINT_RULES_PLUGIN_OUT)
 
 .PHONY: clean-stdlib-custom-eslint-rules-plugin
 
-
-# Remove custom ESLint plugin directories.
+#/
+# Removes custom [ESLint][eslint] plugins.
 #
-# This target cleans up custom ESLint plugin directories by removing them entirely.
-
+# [eslint]: http://eslint.org/
+#
+# @example
+# make clean-stdlib-custom-eslint-plugins
+#/
 clean-stdlib-custom-eslint-plugins: clean-stdlib-custom-eslint-rules-plugin
 
 .PHONY: clean-stdlib-custom-eslint-plugins

@@ -18,10 +18,12 @@
 
 # RULES #
 
-# Run the install sequence.
+#/
+# Runs the project's install sequence.
 #
-# This target runs the project's install sequence.
-
+# @example
+# make install
+#/
 install: install-node
 
 .PHONY: install

@@ -51,6 +51,7 @@ LICENSES_REPORTER_SUMMARY ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/
 
 # DEPENDENCIES #
 
+# Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/licenses/check.mk
 include $(TOOLS_MAKE_LIB_DIR)/licenses/headers.mk
 include $(TOOLS_MAKE_LIB_DIR)/licenses/ls.mk

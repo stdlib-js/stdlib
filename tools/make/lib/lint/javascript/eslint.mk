@@ -26,7 +26,7 @@
 # $ npm install eslint
 # ```
 #
-# [1]: http://eslint.org//
+# [1]: http://eslint.org/
 ESLINT ?= $(BIN_DIR)/eslint
 
 # Define the path to the ESLint configuration file:

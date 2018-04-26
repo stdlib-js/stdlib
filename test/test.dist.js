@@ -49,7 +49,7 @@ tape( 'project contains a distributable file exposing a "flat" namespace (unmini
 	var bundle = require( join( dirpath, 'stdlib-flat.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
-	t.equal( typeof bundle.base.sin( 3.14 ), 'number', 'returns expected value' );
+	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
 
@@ -57,7 +57,7 @@ tape( 'project contains a distributable file exposing a "flat" namespace (minifi
 	var bundle = require( join( dirpath, 'stdlib-flat.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
-	t.equal( typeof bundle.base.sin( 3.14 ), 'number', 'returns expected value' );
+	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
 
@@ -74,7 +74,7 @@ tape( 'project contains a distributable file exposing a "tree" namespace (unmini
 	t.equal( typeof bundle.math, 'object', 'has member' );
 	t.equal( typeof bundle.math.base, 'object', 'has member' );
 	t.equal( typeof bundle.math.base.special, 'object', 'has member' );
-	t.equal( typeof bundle.math.base.special.sin( 3.14 ), 'number', 'returns expected value' );
+	t.equal( bundle.math.base.special.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });
 
@@ -84,6 +84,6 @@ tape( 'project contains a distributable file exposing a "tree" namespace (minifi
 	t.equal( typeof bundle.math, 'object', 'has member' );
 	t.equal( typeof bundle.math.base, 'object', 'has member' );
 	t.equal( typeof bundle.math.base.special, 'object', 'has member' );
-	t.equal( typeof bundle.math.base.special.sin( 3.14 ), 'number', 'returns expected value' );
+	t.equal( bundle.math.base.special.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
 });

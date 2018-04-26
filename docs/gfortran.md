@@ -131,7 +131,7 @@ We can define the prototype for `addsub` in a header file, just like we might fo
 extern "C" {
 #endif
 
-void addsub( const double *, const double *, double * );
+void addsub( const double *x, const double *y, double *sum );
 
 #ifdef __cplusplus
 }

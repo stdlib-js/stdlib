@@ -18,16 +18,23 @@
 
 # DEPENDENCIES #
 
+# Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/init/eslint.mk
 include $(TOOLS_MAKE_LIB_DIR)/init/git_hooks.mk
 
 
 # RULES #
 
-# Perform initialization tasks.
+#/
+# Performs initialization tasks, such as installing Git hooks, installing custom lint plugins, etc.
 #
-# This target performs initialization tasks, such as installing git hooks, installing custom ESLint plugins, etc.
-
+# ## Notes
+#
+# -  This rule should **always** be invoked in order to initialize the project development environment. If not, various development aids will **not** be initialized, thus hindering project development.
+#
+# @example
+# make init
+#/
 init: init-git-hooks init-stdlib-custom-eslint-plugins
 
 .PHONY: init
