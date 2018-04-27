@@ -30,6 +30,11 @@ JULIA_LINTER_FLAGS ?=
 #/
 # Lints Julia files.
 #
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each context-specific (`lint-julia-<context>`) prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained Julia files.
+#
 # @param {string} [JULIA_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [JULIA_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [JULIA_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)

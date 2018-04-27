@@ -27,6 +27,11 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/eslint.mk
 #/
 # Lints JavaScript files.
 #
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each context-specific (`lint-javascript-<context>`) prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained JavaScript files.
+#
 # @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
