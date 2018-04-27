@@ -57,7 +57,7 @@ ESLINT_FLAGS ?= \
 #
 # ## Notes
 #
-# -   This rule is useful when wanting to glob for JavaScript source files (e.g., lint all JavaScript files for a particular package).
+# -   This rule is useful when wanting to glob for JavaScript source files (e.g., lint all JavaScript source files for a particular package).
 #
 # [1]: http://eslint.org/
 #
