@@ -56,7 +56,6 @@ lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examp
 # -   This rule is useful when wanting to glob for JavaScript source files (e.g., lint all JavaScript source files for a particular package).
 #
 # @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [SOURCES_PATTERN] - filename pattern (e.g., `*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -80,7 +79,6 @@ endif
 # -   This rule is useful when wanting to glob for JavaScript test files (e.g., lint all JavaScript test files for a particular package).
 #
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [TESTS_PATTERN] - filename pattern (e.g., `test*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -104,7 +102,6 @@ endif
 # -   This rule is useful when wanting to glob for JavaScript examples files (e.g., lint all JavaScript examples files for a particular package).
 #
 # @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [EXAMPLES_PATTERN] - filename pattern (e.g., `*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -128,7 +125,6 @@ endif
 # -   This rule is useful when wanting to glob for JavaScript benchmark files (e.g., lint all JavaScript benchmark files for a particular package).
 #
 # @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [BENCHMARKS_PATTERN] - filename pattern (e.g., `*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example

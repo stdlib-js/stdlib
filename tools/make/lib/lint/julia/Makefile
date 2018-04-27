@@ -59,7 +59,6 @@ lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-ju
 # -   This rule is useful when wanting to glob for Julia source files (e.g., lint all Julia source files for a particular package).
 #
 # @param {string} [JULIA_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [JULIA_SOURCES_PATTERN] - filename pattern (e.g., `*.jl`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -93,7 +92,6 @@ endif
 # -   This rule is useful when wanting to glob for Julia test fixture files (e.g., lint all Julia test fixture files for a particular package).
 #
 # @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [TESTS_FIXTURES_PATTERN] - filename pattern (e.g., `*.jl`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -127,7 +125,6 @@ endif
 # -   This rule is useful when wanting to glob for Julia examples files (e.g., lint all Julia examples files for a particular package).
 #
 # @param {string} [JULIA_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [JULIA_EXAMPLES_PATTERN] - filename pattern (e.g., `*.jl`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -161,7 +158,6 @@ endif
 # -   This rule is useful when wanting to glob for Julia benchmark files (e.g., lint all Julia benchmark files for a particular package).
 #
 # @param {string} [JULIA_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [JULIA_BENCHMARKS_PATTERN] - filename pattern (e.g., `*.jl`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example

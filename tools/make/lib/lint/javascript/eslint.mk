@@ -63,7 +63,6 @@ ESLINT_FLAGS ?= \
 #
 # @private
 # @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [SOURCES_PATTERN] - filename pattern (e.g., `*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -100,7 +99,6 @@ endif
 #
 # @private
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [TESTS_PATTERN] - filename pattern (e.g., `test*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -137,7 +135,6 @@ endif
 #
 # @private
 # @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [EXAMPLES_PATTERN] - filename pattern (e.g., `*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
@@ -174,7 +171,6 @@ endif
 #
 # @private
 # @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {string} [BENCHMARKS_PATTERN] - filename pattern (e.g., `*.js`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
