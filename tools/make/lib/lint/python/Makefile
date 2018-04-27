@@ -94,7 +94,7 @@ lint-python-src: pylint-src pycodestyle-src pydocstyle-src
 # make lint-python-tests-fixtures
 #
 # @example
-# make lint-python-tests TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make lint-python-tests-fixtures TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
 #/
 lint-python-tests-fixtures: pylint-tests-fixtures pycodestyle-tests-fixtures pydocstyle-tests-fixtures
 
