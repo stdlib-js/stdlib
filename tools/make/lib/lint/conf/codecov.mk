@@ -18,18 +18,20 @@
 
 # VARIABLES #
 
-# Define the path to the [Codecov][1] configuration file:
-#
-# [1]: https://github.com/codecov/support/wiki/Codecov-Yaml
+# Define the path to the Codecov configuration file:
 CODECOV_CONF ?= $(ROOT_DIR)/.codecov.yml
 
 
 # RULES #
 
-# Lint configuration.
+#/
+# Lints a [Codecov][1] configuration file.
 #
-# This target lints a Codecov configuration file.
-
+# [1]: https://github.com/codecov/support/wiki/Codecov-Yaml
+#
+# @example
+# make lint-conf-codecov
+#/
 lint-conf-codecov:
 	$(QUIET) curl -X POST --data-binary @$(CODECOV_CONF) https://codecov.io/validate
 
