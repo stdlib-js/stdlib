@@ -18,7 +18,7 @@ To update [Electron][electron], perform the following steps:
 
 3.  [ ] Update the default `DEPS_ELECTRON_VERSION` Makefile environment variable value to the desired [Electron][electron] version.
 
-4.  [ ] For each [Electron][electron] checksum found in `/deps/checksums`, rename the folder to the desired [Electron][electron] version and update the checksum for each target platform. If [Electron][electron] adds support a new target platform, add the checksum. If [Electron][electron] removes support for a target platform, remove the existing checksum.
+4.  [ ] For each [Electron][electron] checksum found in `/deps/checksums`, rename the folder to the desired [Electron][electron] version and update the checksum for each target platform. If [Electron][electron] adds support for a new target platform, add the checksum. If [Electron][electron] removes support for a target platform, remove the existing checksum.
 
 5.  [ ] Commit the changes.
 
