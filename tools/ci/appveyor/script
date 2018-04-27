@@ -174,7 +174,7 @@ run_examples() {
 # $1 - log file
 test_npm_install() {
 	echo 'Testing npm install...' >&2
-	make VERBOSE=1 test-npm-install >> "$1" 2>&1
+	make TEST_NPM_INSTALL_PKG='@stdlib/stdlib' test-npm-install >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Installation failed.' >&2
 		return 1
