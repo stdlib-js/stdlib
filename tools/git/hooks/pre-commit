@@ -197,6 +197,17 @@ run_lint() {
 		fi
 	fi
 
+	# Lint license headers...
+	files=$(echo "${changed_files}" | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make FILES="${files}" lint-license-headers-files > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'License header lint errors.' >&2
+			return 1
+		fi
+	fi
+
 	# TODO: if datapackage.json, validate via schema
 
 	return 0
