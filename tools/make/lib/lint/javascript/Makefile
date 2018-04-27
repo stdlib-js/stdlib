@@ -31,6 +31,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/eslint.mk
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-javascript
