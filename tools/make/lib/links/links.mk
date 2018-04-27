@@ -42,30 +42,34 @@ LINKS_ID2URI_FLAGS ?= \
 
 # RULES #
 
-# Create a link entry.
+#/
+# Launches an interactive prompt for creating a link entry in the project's link database.
 #
-# This target creates a link entry in the link database.
-
+# @example
+# make links-insert
+#/
 links-insert: $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LINKS_INSERT) $(LINKS_INSERT_FLAGS)
 
 .PHONY: links-insert
 
-
-# Resolve a link id.
+#/
+# Launches an interactive prompt for resolving a link identifier in the project's link database from a URI.
 #
-# This target resolves a database link identifier from a URI.
-
+# @example
+# make links-uri2id
+#/
 links-uri2id: $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LINKS_URI2ID) $(LINKS_URI2ID_FLAGS)
 
 .PHONY: links-uri2id
 
-
-# Resolve a URI.
+#/
+# Launches an interactive prompt for resolving a URI in the project's link database from a link identifier.
 #
-# This target resolves a database URI from an id.
-
+# @example
+# make links-id2uri
+#/
 links-id2uri: $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(LINKS_ID2URI) $(LINKS_ID2URI_FLAGS)
 
