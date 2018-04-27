@@ -18,7 +18,7 @@ Developing and running stdlib **requires** the following prerequisites:
 -   [GNU make][make]: development utility and task runner
 -   [GNU bash][bash]: an sh-compatible shell
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
--   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
+-   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`; although the latest stable version is **strongly** recommended)
 -   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
 
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
