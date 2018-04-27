@@ -26,6 +26,7 @@ Additional folders may include
 
 ```text
 bin/               command-line interface
+etc/               configuration files
 src/               source files requiring compilation
 scripts/           supporting scripts for building and maintaining a package
 ```
@@ -47,7 +48,7 @@ Which additional folders and files to include depends on the type of package and
 
 ### docs
 
-The [documentation][stdlib-snippets] folder includes all documentation beside the `README`. This includes REPL help text (**required**) and documentation assets, such as equation SVGs, plots, and other figures.
+The [documentation][stdlib-snippets] folder includes all documentation beside the `README`. This includes REPL help text (**required**), CLI help text, and documentation assets, such as equation SVGs, plots, and other figures.
 
 ### examples
 
