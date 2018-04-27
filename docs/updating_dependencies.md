@@ -32,11 +32,15 @@ To update `node_modules` dependencies, perform the following steps:
 
 2.  [ ] Remove the dependency. If the dependency is a production dependency,
 
+    <!-- run-disable -->
+
     ```bash
     $ npm uninstall <package> --save
     ```
 
     If the dependency is a development dependency,
+
+    <!-- run-disable -->
 
     ```bash
     $ npm uninstall <package> --save-dev
@@ -46,11 +50,15 @@ To update `node_modules` dependencies, perform the following steps:
 
 3.  [ ] Install the dependency. If the dependency is a production dependency,
 
+    <!-- run-disable -->
+
     ```bash
     $ npm install <package> --save
     ```
 
     If the dependency is a development dependency,
+
+    <!-- run-disable -->
 
     ```bash
     $ npm install <package> --save-dev
