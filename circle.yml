@@ -25,7 +25,7 @@ machine:
 
   # Version of Node.js to use:
   node:
-    version: 8
+    version: 10
 
 
 # Customize the environment after repository checkout:
