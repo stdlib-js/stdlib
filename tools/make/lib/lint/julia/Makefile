@@ -98,7 +98,7 @@ endif
 # make lint-julia-tests-fixtures
 #
 # @example
-# make lint-julia-tests-fixtures TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make lint-julia-tests-fixtures JULIA_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
 #/
 lint-julia-tests-fixtures:
 ifeq ($(FAIL_FAST), true)

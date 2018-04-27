@@ -45,6 +45,7 @@ PYCODESTYLE_FLAGS ?= \
 # [1]: https://github.com/PyCQA/pycodestyle
 #
 # @private
+#
 # @example
 # make check-pycodestyle
 #/
@@ -111,7 +112,7 @@ endif
 # make pycodestyle-tests-fixtures
 #
 # @example
-# make pycodestyle-tests-fixtures TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make pycodestyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
 #/
 pycodestyle-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
