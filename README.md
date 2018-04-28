@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 <!-- lint disable first-heading-level -->
 
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
@@ -112,7 +132,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 Running stdlib **requires** the following prerequisites:
 
 -   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
--   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
+-   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `< 6.0.0`, version `> 2.7.0` and `< 6.0.0`)
 
 Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
 
@@ -133,6 +153,8 @@ The following external libraries can be automatically downloaded and compiled fr
 ## Installation
 
 To install as a library or application dependency,
+
+<!-- run-disable -->
 
 ```bash
 $ npm install @stdlib/stdlib
