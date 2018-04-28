@@ -37,63 +37,63 @@ lint-license-headers-cpp: lint-license-headers-cpp-src lint-license-headers-cpp-
 #/
 # Lints license headers in C++ source files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
+# @param {string} [CPP_SOURCES_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
 #
 # @example
 # make lint-license-headers-cpp-src
 #
 # @example
-# make lint-license-headers-cpp-src SOURCES_FILTER=.*/base/beta/.*
+# make lint-license-headers-cpp-src CPP_SOURCES_FILTER=.*/base/beta/.*
 #/
 lint-license-headers-cpp-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_CPP_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-cpp-src
 
 #/
 # Lints license headers in C++ test files.
 #
-# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
+# @param {string} [CPP_TESTS_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
 #
 # @example
 # make lint-license-headers-cpp-tests
 #
 # @example
-# make lint-license-headers-cpp-tests TESTS_FILTER=.*/base/beta/.*
+# make lint-license-headers-cpp-tests CPP_TESTS_FILTER=.*/base/beta/.*
 #/
 lint-license-headers-cpp-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_CPP_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-cpp-tests
 
 #/
 # Lints license headers in C++ examples files.
 #
-# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
+# @param {string} [CPP_EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
 #
 # @example
 # make lint-license-headers-cpp-examples
 #
 # @example
-# make lint-license-headers-cpp-examples EXAMPLES_FILTER=.*/base/beta/.*
+# make lint-license-headers-cpp-examples CPP_EXAMPLES_FILTER=.*/base/beta/.*
 #/
 lint-license-headers-cpp-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_CPP_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-cpp-examples
 
 #/
 # Lints license headers in C++ benchmark files.
 #
-# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
+# @param {string} [CPP_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/beta/.*`)
 #
 # @example
 # make lint-license-headers-cpp-benchmarks
 #
 # @example
-# make lint-license-headers-cpp-benchmarks BENCHMARKS_FILTER=.*/base/beta/.*
+# make lint-license-headers-cpp-benchmarks CPP_BENCHMARKS_FILTER=.*/base/beta/.*
 #/
 lint-license-headers-cpp-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_CPP_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-cpp-benchmarks

@@ -37,63 +37,63 @@ lint-license-headers-fortran: lint-license-headers-fortran-src lint-license-head
 #/
 # Lints license headers in Fortran source files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [FORTRAN_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 #
 # @example
 # make lint-license-headers-fortran-src
 #
 # @example
-# make lint-license-headers-fortran-src SOURCES_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-src FORTRAN_SOURCES_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_FORTRAN_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-src
 
 #/
 # Lints license headers in Fortran test files.
 #
-# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [FORTRAN_TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 #
 # @example
 # make lint-license-headers-fortran-tests
 #
 # @example
-# make lint-license-headers-fortran-tests TESTS_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-tests FORTRAN_TESTS_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_FORTRAN_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-tests
 
 #/
 # Lints license headers in Fortran examples files.
 #
-# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [FORTRAN_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 #
 # @example
 # make lint-license-headers-fortran-examples
 #
 # @example
-# make lint-license-headers-fortran-examples EXAMPLES_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-examples FORTRAN_EXAMPLES_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_FORTRAN_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-examples
 
 #/
 # Lints license headers in Fortran benchmark files.
 #
-# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [FORTRAN_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 #
 # @example
 # make lint-license-headers-fortran-benchmarks
 #
 # @example
-# make lint-license-headers-fortran-benchmarks BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-benchmarks FORTRAN_BENCHMARKS_FILTER=.*/blas/base/dasum/.*
 #/
 lint-license-headers-fortran-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_FORTRAN_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-fortran-benchmarks

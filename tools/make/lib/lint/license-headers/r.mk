@@ -37,63 +37,63 @@ lint-license-headers-r: lint-license-headers-r-src lint-license-headers-r-tests 
 #/
 # Lints license headers in R source files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
+# @param {string} [R_SOURCES_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
 #
 # @example
 # make lint-license-headers-r-src
 #
 # @example
-# make lint-license-headers-r-src SOURCES_FILTER=.*/base/sin/.*
+# make lint-license-headers-r-src R_SOURCES_FILTER=.*/base/sin/.*
 #/
 lint-license-headers-r-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_R_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-r-src
 
 #/
 # Lints license headers in R test files.
 #
-# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
+# @param {string} [R_TESTS_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
 #
 # @example
 # make lint-license-headers-r-tests
 #
 # @example
-# make lint-license-headers-r-tests TESTS_FILTER=.*/base/sin/.*
+# make lint-license-headers-r-tests R_TESTS_FILTER=.*/base/sin/.*
 #/
 lint-license-headers-r-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_R_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-r-tests
 
 #/
 # Lints license headers in R examples files.
 #
-# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
+# @param {string} [R_EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
 #
 # @example
 # make lint-license-headers-r-examples
 #
 # @example
-# make lint-license-headers-r-examples EXAMPLES_FILTER=.*/base/sin/.*
+# make lint-license-headers-r-examples R_EXAMPLES_FILTER=.*/base/sin/.*
 #/
 lint-license-headers-r-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_R_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-r-examples
 
 #/
 # Lints license headers in R benchmark files.
 #
-# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
+# @param {string} [R_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/sin/.*`)
 #
 # @example
 # make lint-license-headers-r-benchmarks
 #
 # @example
-# make lint-license-headers-r-benchmarks BENCHMARKS_FILTER=.*/base/sin/.*
+# make lint-license-headers-r-benchmarks R_BENCHMARKS_FILTER=.*/base/sin/.*
 #/
 lint-license-headers-r-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-r-benchmarks

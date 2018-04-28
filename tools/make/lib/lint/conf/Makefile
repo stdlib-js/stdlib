@@ -18,16 +18,19 @@
 
 # DEPENDENCIES #
 
+# Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf/codecov.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/conf/travis.mk
 
 
 # RULES #
 
-# Lint configuration files.
+#/
+# Lints configuration files.
 #
-# This target lints configuration files.
-
+# @example
+# make lint-conf
+#/
 lint-conf: lint-conf-travis lint-conf-codecov
 
 .PHONY: lint-conf

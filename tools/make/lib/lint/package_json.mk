@@ -27,10 +27,12 @@ PACKAGE_JSON_LINTER_FLAGS ?=
 
 # RULES #
 
-# Lint package.json.
+#/
+# Lints `package.json` files.
 #
-# This target lints package.json files.
-
+# @example
+# make lint-pkg-json
+#/
 lint-pkg-json:
 	$(QUIET) $(MAKE_EXECUTABLE) $(PACKAGE_JSON_LINTER)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(PACKAGE_JSON_LINTER) $(PACKAGE_JSON_LINTER_FLAGS) $(ROOT_DIR)

@@ -37,63 +37,63 @@ lint-license-headers-c: lint-license-headers-c-src lint-license-headers-c-tests 
 #/
 # Lints license headers in C source files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
+# @param {string} [C_SOURCES_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
 #
 # @example
 # make lint-license-headers-c-src
 #
 # @example
-# make lint-license-headers-c-src SOURCES_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-src C_SOURCES_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_C_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-src
 
 #/
 # Lints license headers in C test files.
 #
-# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
+# @param {string} [C_TESTS_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
 #
 # @example
 # make lint-license-headers-c-tests
 #
 # @example
-# make lint-license-headers-c-tests TESTS_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-tests C_TESTS_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_C_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-tests
 
 #/
 # Lints license headers in C examples files.
 #
-# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
+# @param {string} [C_EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
 #
 # @example
 # make lint-license-headers-c-examples
 #
 # @example
-# make lint-license-headers-c-examples EXAMPLES_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-examples C_EXAMPLES_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_C_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-examples
 
 #/
 # Lints license headers in C benchmark files.
 #
-# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
+# @param {string} [C_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/abs/.*`)
 #
 # @example
 # make lint-license-headers-c-benchmarks
 #
 # @example
-# make lint-license-headers-c-benchmarks BENCHMARKS_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-benchmarks C_BENCHMARKS_FILTER=.*/base/abs/.*
 #/
 lint-license-headers-c-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-c-benchmarks

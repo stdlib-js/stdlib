@@ -18,24 +18,52 @@
 
 # DEPENDENCIES #
 
+# Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/eslint.mk
 
 
 # RULES #
 
-# Check code quality.
+#/
+# Lints JavaScript files.
 #
-# This target lints all JavaScript source code.
-
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each context-specific (`lint-javascript-<context>`) prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained JavaScript files.
+#
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-javascript
+#
+# @example
+# make lint-javascript SOURCES_FILTER=.*/blas/base/dasum/.* TESTS_FILTER=.*/blas/base/dasum/.* EXAMPLES_FILTER=.*/blas/base/dasum/.* BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+#/
 lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examples lint-javascript-benchmarks
 
 .PHONY: lint-javascript
 
-
-# Check source code quality.
+#/
+# Lints JavaScript source files.
 #
-# This target lints only JavaScript source files.
-
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for JavaScript source files (e.g., lint all JavaScript source files for a particular package).
+#
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-javascript-src
+#
+# @example
+# make lint-javascript-src SOURCES_FILTER=.*/math/base/special/abs/.*
+#/
 lint-javascript-src:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-src
@@ -43,11 +71,22 @@ endif
 
 .PHONY: lint-javascript-src
 
-
-# Check test code quality.
+#/
+# Lints JavaScript test files.
 #
-# This target lints only JavaScript test files.
-
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for JavaScript test files (e.g., lint all JavaScript test files for a particular package).
+#
+# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-javascript-tests
+#
+# @example
+# make lint-javascript-tests TESTS_FILTER=.*/math/base/special/abs/.*
+#/
 lint-javascript-tests:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-tests
@@ -55,11 +94,22 @@ endif
 
 .PHONY: lint-javascript-tests
 
-
-# Check example code quality.
+#/
+# Lints JavaScript examples files.
 #
-# This target lints only JavaScript example files.
-
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for JavaScript examples files (e.g., lint all JavaScript examples files for a particular package).
+#
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-javascript-examples
+#
+# @example
+# make lint-javascript-examples EXAMPLES_FILTER=.*/math/base/special/abs/.*
+#/
 lint-javascript-examples:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-examples
@@ -67,11 +117,22 @@ endif
 
 .PHONY: lint-javascript-examples
 
-
-# Check benchmark code quality.
+#/
+# Lints JavaScript benchmark files.
 #
-# This target lints only JavaScript benchmark files.
-
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for JavaScript benchmark files (e.g., lint all JavaScript benchmark files for a particular package).
+#
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-javascript-benchmarks
+#
+# @example
+# make lint-javascript-benchmarks BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+#/
 lint-javascript-benchmarks:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-benchmarks
@@ -79,15 +140,22 @@ endif
 
 .PHONY: lint-javascript-benchmarks
 
-
-# Check JavaScript code quality.
+#/
+# Lints a specified list of JavaScript files.
 #
-# This target lints JavaScript files. Note that we expect `$FILES` to be a JavaScript file list.
-
+# ## Notes
+#
+# -   This rule is useful when wanting to lint a list of JavaScript files generated by some other command (e.g., a list of changed JavaScript files obtained via `git diff`).
+#
+# @param {string} FILES - list of JavaScript file paths
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-javascript-files FILES='/foo/index.js /bar/index.js'
+#/
 lint-javascript-files:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
 	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-files
 endif
 
 .PHONY: lint-javascript-files
-

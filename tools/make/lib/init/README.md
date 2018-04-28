@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # init
 
 > Initialization commands.
@@ -30,6 +50,8 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 Performs development initialization tasks.
 
+<!-- run-disable -->
+
 ```bash
 $ make init
 ```
@@ -42,6 +64,8 @@ $ make init
 
 Initializes custom [ESLint][eslint] rules.
 
+<!-- run-disable -->
+
 ```bash
 $ make init-stdlib-custom-eslint-rules-plugin
 ```
@@ -49,6 +73,8 @@ $ make init-stdlib-custom-eslint-rules-plugin
 #### init-stdlib-custom-eslint-plugins
 
 Initializes custom [ESLint][eslint] plugins.
+
+<!-- run-disable -->
 
 ```bash
 $ make init-stdlib-custom-eslint-plugins
@@ -58,6 +84,8 @@ $ make init-stdlib-custom-eslint-plugins
 
 Removes custom [ESLint][eslint] rules.
 
+<!-- run-disable -->
+
 ```bash
 $ make clean-stdlib-custom-eslint-rules-plugin
 ```
@@ -65,6 +93,8 @@ $ make clean-stdlib-custom-eslint-rules-plugin
 #### clean-stdlib-custom-eslint-plugins
 
 Removes custom [ESLint][eslint] plugins.
+
+<!-- run-disable -->
 
 ```bash
 $ make clean-stdlib-custom-eslint-plugins
@@ -79,6 +109,8 @@ $ make clean-stdlib-custom-eslint-plugins
 > [Git hooks][git-hooks] are triggered before or after specific [Git][git] events, such as committing, pulling, and pushing. These triggers are important in facilitating development, as they automate linting, test running, and more.
 
 Installs [Git hooks][git-hooks].
+
+<!-- run-disable -->
 
 ```bash
 $ make init-git-hooks

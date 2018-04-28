@@ -21,7 +21,8 @@
 /*
 * Script to determine a compatible npm version range based on the current Node.js runtime.
 *
-* Older versions of Node (>=0.10.0 <= 0.12.x) require an updated npm client to handle scoped packages, but should not use npm versions `>=4.0.0`, as more recent npm versions drop explicit backward compatibility support.
+* -   Older versions of Node (>=0.10.0 <= 0.12.x) require an updated npm client to handle scoped packages, but should not use npm versions `>=4.0.0`, as more recent npm versions drop explicit backward compatibility support.
+* -   Older versions of Node (<=5.x) do not have full ES2015/ES6 support.
 */
 'use strict';
 
@@ -47,10 +48,13 @@ function version() {
 	if ( major <= 3 ) {
 		return '>2.7.0 <4.0.0';
 	}
+	if ( major <= 5 ) {
+		return '>2.7.0 <6.0.0';
+	}
 	return '>2.7.0';
 }
 
 
 // MAIN //
 
-console.log( version() );
+console.log( version() ); // eslint-disable-line no-console

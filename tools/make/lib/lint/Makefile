@@ -32,47 +32,77 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/r/Makefile
 
 # RULES #
 
-# Lint.
+#/
+# Lints files.
 #
-# This target lints all files.
-
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each prerequisite.
+# -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained files.
+#
+# @example
+# make lint
+#/
 lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-conf lint-pkg-json lint-license-headers
 
 .PHONY: lint
 
-
-# Check source code quality.
+#/
+# Lints source files.
 #
-# This target lints only source files.
-
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each prerequisite.
+# -   This rule is useful when wanting to glob for source files (e.g., lint all source files for a particular package).
+#
+# @example
+# make lint-src
+#/
 lint-src: lint-javascript-src
 
 .PHONY: lint-src
 
-
-# Check test code quality.
+#/
+# Lints test files.
 #
-# This target lints only test files.
-
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each prerequisite.
+# -   This rule is useful when wanting to glob for test files (e.g., lint all test files for a particular package).
+#
+# @example
+# make lint-tests
+#/
 lint-tests: lint-javascript-tests
 
 .PHONY: lint-tests
 
-
-# Check example code quality.
+#/
+# Lints examples files.
 #
-# This target lints only example files.
-
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each prerequisite.
+# -   This rule is useful when wanting to glob for examples files (e.g., lint all examples files for a particular package).
+#
+# @example
+# make lint-examples
+#/
 lint-examples: lint-javascript-examples
 
 .PHONY: lint-examples
 
-
-# Check benchmark code quality.
+#/
+# Lints benchmark files.
 #
-# This target lints only benchmark files.
-
+# ## Notes
+#
+# -   This rule supports the environment variables supported by each prerequisite.
+# -   This rule is useful when wanting to glob for benchmark files (e.g., lint all benchmark files for a particular package).
+#
+# @example
+# make lint-benchmarks
+#/
 lint-benchmarks: lint-javascript-benchmarks lint-python-benchmarks lint-julia-benchmarks lint-r-benchmarks
 
 .PHONY: lint-benchmarks
-

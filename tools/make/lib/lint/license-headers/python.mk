@@ -37,63 +37,63 @@ lint-license-headers-python: lint-license-headers-python-src lint-license-header
 #/
 # Lints license headers in Python source files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
+# @param {string} [PYTHON_SOURCES_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
 #
 # @example
 # make lint-license-headers-python-src
 #
 # @example
-# make lint-license-headers-python-src SOURCES_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-src PYTHON_SOURCES_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-src
 
 #/
 # Lints license headers in Python test files.
 #
-# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
+# @param {string} [PYTHON_TESTS_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
 #
 # @example
 # make lint-license-headers-python-tests
 #
 # @example
-# make lint-license-headers-python-tests TESTS_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-tests PYTHON_TESTS_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_PYTHON_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-tests
 
 #/
 # Lints license headers in Python examples files.
 #
-# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
+# @param {string} [PYTHON_EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
 #
 # @example
 # make lint-license-headers-python-examples
 #
 # @example
-# make lint-license-headers-python-examples EXAMPLES_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-examples PYTHON_EXAMPLES_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-examples
 
 #/
 # Lints license headers in Python benchmark files.
 #
-# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
+# @param {string} [PYTHON_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/cos/.*`)
 #
 # @example
 # make lint-license-headers-python-benchmarks
 #
 # @example
-# make lint-license-headers-python-benchmarks BENCHMARKS_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-benchmarks PYTHON_BENCHMARKS_FILTER=.*/base/cos/.*
 #/
 lint-license-headers-python-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-python-benchmarks

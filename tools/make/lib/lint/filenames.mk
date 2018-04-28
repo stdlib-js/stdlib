@@ -33,21 +33,24 @@ HEADER_FILENAME_LINTER_FLAGS ?=
 
 # RULES #
 
-# Lint filenames.
+#/
+# Lints filenames.
 #
-# This target lints filenames.
-
+# @example
+# make lint-filenames
+#/
 lint-filenames:
 	$(QUIET) $(MAKE_EXECUTABLE) $(FILENAME_LINTER)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(FILENAME_LINTER) $(FILENAME_LINTER_FLAGS) $(ROOT_DIR)
 
 .PHONY: lint-filenames
 
-
-# Lint header filenames.
+#/
+# Lints header filenames.
 #
-# This target lints header filenames for basename uniqueness.
-
+# @example
+# make lint-header-filenames
+#/
 lint-header-filenames:
 	$(QUIET) $(MAKE_EXECUTABLE) $(HEADER_FILENAME_LINTER)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(HEADER_FILENAME_LINTER) $(HEADER_FILENAME_LINTER_FLAGS) $(ROOT_DIR)

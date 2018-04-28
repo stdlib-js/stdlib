@@ -18,9 +18,7 @@
 
 # VARIABLES #
 
-# Define the path to the [Travis CI][1] configuration file:
-#
-# [1]: https://docs.travis-ci.com/user/customizing-the-build
+# Define the path to the Travis CI configuration file:
 TRAVIS_CONF ?= $(ROOT_DIR)/.travis.yml
 
 # Define the path of the linter executable:
@@ -29,10 +27,14 @@ LINT_TRAVIS_CONF ?= $(TOOLS_DIR)/lint/travis-conf/lint
 
 # RULES #
 
-# Lint configuration.
+#/
+# Lints a [Travis CI][1] configuration file.
 #
-# This target lints a Travis CI configuration file.
-
+# [1]: https://docs.travis-ci.com/user/customizing-the-build
+#
+# @example
+# make lint-conf-travis
+#/
 lint-conf-travis:
 	$(QUIET) $(MAKE_EXECUTABLE) $(LINT_TRAVIS_CONF)
 	$(QUIET) $(LINT_TRAVIS_CONF) $(TRAVIS_CONF)

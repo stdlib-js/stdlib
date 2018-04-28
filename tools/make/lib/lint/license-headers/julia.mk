@@ -37,63 +37,63 @@ lint-license-headers-julia: lint-license-headers-julia-src lint-license-headers-
 #/
 # Lints license headers in Julia source files.
 #
-# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
+# @param {string} [JULIA_SOURCES_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
 #
 # @example
 # make lint-license-headers-julia-src
 #
 # @example
-# make lint-license-headers-julia-src SOURCES_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-src JULIA_SOURCES_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_JULIA_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-src
 
 #/
 # Lints license headers in Julia test files.
 #
-# @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
+# @param {string} [JULIA_TESTS_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
 #
 # @example
 # make lint-license-headers-julia-tests
 #
 # @example
-# make lint-license-headers-julia-tests TESTS_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-tests JULIA_TESTS_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_JULIA_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-tests
 
 #/
 # Lints license headers in Julia examples files.
 #
-# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
+# @param {string} [JULIA_EXAMPLES_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
 #
 # @example
 # make lint-license-headers-julia-examples
 #
 # @example
-# make lint-license-headers-julia-examples EXAMPLES_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-examples JULIA_EXAMPLES_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_JULIA_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-examples
 
 #/
 # Lints license headers in Julia benchmark files.
 #
-# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
+# @param {string} [JULIA_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
 #
 # @example
 # make lint-license-headers-julia-benchmarks
 #
 # @example
-# make lint-license-headers-julia-benchmarks BENCHMARKS_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-benchmarks JULIA_BENCHMARKS_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-julia-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-julia-benchmarks
