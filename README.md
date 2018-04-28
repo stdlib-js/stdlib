@@ -42,7 +42,7 @@ limitations under the License.
 
 <section class="intro">
 
-stdlib is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
 
 This is the GitHub repository of stdlib source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
 
@@ -337,6 +337,8 @@ Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
 [browserify]: https://github.com/substack/node-browserify
 
 [webpack]: https://webpack.js.org/
+
+[ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
