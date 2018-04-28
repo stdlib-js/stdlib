@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # Development
 
 > Development guide for stdlib.
@@ -19,7 +39,7 @@ Developing and running stdlib **requires** the following prerequisites:
 -   [GNU bash][bash]: an sh-compatible shell
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 -   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`; although the latest stable version is **strongly** recommended)
--   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`)
+-   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `< 6.0.0`, version `> 2.7.0` and `< 6.0.0`)
 
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
@@ -54,11 +74,15 @@ The following external libraries can be automatically downloaded and compiled fr
 
 To acquire the source code, first navigate to the parent directory into which you want to place the project git repository. Because of this project's heavy reliance on [GNU make][make], the directory path should **not** include spaces or any other shell meta characters such as `$` or `:`, as these characters will cause [GNU make][make] and the installation process to fail.
 
+<!-- run-disable -->
+
 ```bash
 $ cd /path/to/parent/destination/directory
 ```
 
 Next, clone the repository.
+
+<!-- run-disable -->
 
 ```bash
 $ git clone https://github.com/stdlib-js/stdlib.git
@@ -66,11 +90,15 @@ $ git clone https://github.com/stdlib-js/stdlib.git
 
 If you are wanting to contribute to stdlib, first [fork][github-fork] the repository and amend the previous command.
 
+<!-- run-disable -->
+
 ```bash
 $ git clone https://github.com/<username>/stdlib.git
 ```
 
 where `<username>` is your GitHub username (assuming you are using GitHub to manage public repositories). The repository has a large commit history, leading to slow download times. If you are not interested in code archeology, you can reduce the download time by limiting the clone [depth][git-clone-depth].
+
+<!-- run-disable -->
 
 ```bash
 $ git clone --depth=<depth> https://github.com/<username>/stdlib.git
@@ -80,11 +108,15 @@ where `<depth>` refers to the number of commits you want to download (as few as 
 
 If you are behind a firewall, you may need to use the `https` protocol, rather than the `git` protocol.
 
+<!-- run-disable -->
+
 ```bash
 $ git config --global url."https://".insteadOf git://
 ```
 
 Once you have finished cloning the repository into the destination directory, you should see the folder `stdlib`. To proceed with configuring your environment, navigate to the project folder.
+
+<!-- run-disable -->
 
 ```bash
 $ cd stdlib
@@ -93,6 +125,8 @@ $ cd stdlib
 ## Configuration
 
 Determine the absolute path of the `lib/node_modules` directory within the repository. For example, from the repository directory
+
+<!-- run-disable -->
 
 ```bash
 $ echo $(pwd)/lib/node_modules
@@ -107,11 +141,15 @@ export NODE_PATH=/path/to/stdlib-js/stdlib/lib/node_modules
 
 Once finished, you may need to reload the configuration file in existing shells. For example, in a bash shell,
 
+<!-- run-disable -->
+
 ```bash
 $ source ~/.bash_profile
 ```
 
 To verify that the [`NODE_PATH`][node-path] environment variable is properly set,
+
+<!-- run-disable -->
 
 ```bash
 $ echo $NODE_PATH
@@ -121,6 +159,8 @@ $ echo $NODE_PATH
 
 To install external libraries (**optional**),
 
+<!-- run-disable -->
+
 ```bash
 $ make install-deps
 ```
@@ -129,11 +169,15 @@ While external library dependencies are not always required, installing these de
 
 To install language dependencies (**optional**),
 
+<!-- run-disable -->
+
 ```bash
 $ make install-lang-deps
 ```
 
 To install development dependencies (e.g., [Node.js][node-js] module dependencies),
+
+<!-- run-disable -->
 
 ```bash
 $ make install
@@ -141,11 +185,15 @@ $ make install
 
 To run dependency diagnostics,
 
+<!-- run-disable -->
+
 ```bash
 $ make deps-info
 ```
 
 To initialize the development environment,
+
+<!-- run-disable -->
 
 ```bash
 $ make init
@@ -156,6 +204,8 @@ Initializing the development environment configures git hooks and other bells an
 ## Verification
 
 To verify your environment, run project tests.
+
+<!-- run-disable -->
 
 ```bash
 $ make test
@@ -169,11 +219,15 @@ Note that each of the previous commands may take considerable time (>30 minutes)
 
 If you have previously downloaded stdlib using `git clone`, you can update an existing source tree from the base project directory using `git pull`.
 
+<!-- run-disable -->
+
 ```bash
 $ git pull
 ```
 
 If you are working with a [forked][github-fork] repository and wish to [sync][github-fork-sync] your local repository with the [upstream][git-remotes] project (i.e., incorporate changes from the main project repository into your local repository), assuming you have [configured a remote][github-remote] which points to the upstream repository,
+
+<!-- run-disable -->
 
 ```bash
 $ git fetch upstream
@@ -205,6 +259,8 @@ workshops  workshops
 
 -   Occasionally, new versions of external dependencies may cause conflicts with existing builds. Most of the time, running
 
+    <!-- run-disable -->
+
     ```bash
     $ make clean
     $ make install
@@ -220,17 +276,23 @@ workshops  workshops
 
 To run all project tests,
 
+<!-- run-disable -->
+
 ```bash
 $ make test
 ```
 
 To run select tests,
 
+<!-- run-disable -->
+
 ```bash
 $ make TESTS_FILTER=.*/<pattern>/.* test
 ```
 
 where `<pattern>` is a pattern matching a particular path. For example, to test only base special math functions
+
+<!-- run-disable -->
 
 ```bash
 $ make TESTS_FILTER=.*/math/base/special/.* test
@@ -240,12 +302,16 @@ where the pattern `.*/math/base/special/.*` matches any test file whose absolute
 
 To generate a test coverage report,
 
+<!-- run-disable -->
+
 ```bash
 $ make TESTS_FILTER=.*/<pattern>/.* test-cov
 $ make view-cov
 ```
 
 If you are developing a tool (i.e., code located in the `tools` directory), to run tools tests
+
+<!-- run-disable -->
 
 ```bash
 $ make TESTS_FILTER=.*/<pattern>/.* tools-test
@@ -255,11 +321,15 @@ $ make view-cov
 
 Similarly, to run benchmarks
 
+<!-- run-disable -->
+
 ```bash
 $ make BENCHMARKS_FILTER=.*/<pattern>/.* benchmark
 ```
 
 and examples
+
+<!-- run-disable -->
 
 ```bash
 $ make EXAMPLES_FILTER=.*/<pattern>/.* examples
