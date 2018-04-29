@@ -612,6 +612,30 @@ Lints a [Travis CI][travis-ci-conf] configuration file
 $ make lint-conf-travis
 ```
 
+* * *
+
+### Filenames
+
+#### lint-filenames
+
+Lints filenames.
+
+<!-- run-disable -->
+
+```bash
+$ make lint-filenames
+```
+
+#### lint-header-filenames
+
+Lints header filenames.
+
+<!-- run-disable -->
+
+```bash
+$ make lint-header-filenames
+```
+
 </section>
 
 <!-- /.usage -->
