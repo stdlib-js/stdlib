@@ -566,6 +566,20 @@ This command is useful when wanting to lint a list of Markdown files generated b
 
 * * *
 
+### package.json
+
+#### lint-pkg-json
+
+Lints `package.json` files.
+
+<!-- run-disable -->
+
+```bash
+$ make lint-pkg-json
+```
+
+* * *
+
 ### Configuration Files
 
 #### lint-conf
