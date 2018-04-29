@@ -29,6 +29,8 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/python/pylint.mk
 #/
 # Checks whether Python linters are installed.
 #
+# @private
+#
 # @example
 # make check-python-linters
 #/
