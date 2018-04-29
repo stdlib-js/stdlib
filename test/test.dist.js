@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable no-restricted-syntax */
+
 'use strict';
 
 // MODULES //
@@ -38,14 +40,16 @@ tape( 'distributable files', function test( t ) {
 });
 
 tape( 'project contains a distributable file containing datasets (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-datasets-tree.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.datasets.AFINN_111, 'function', 'is a function' );
-	t.equal( typeof bundle.datasets.AFINN_111(), 'object', 'returns expected value' );
+	t.equal( typeof bundle.datasets.AFINN_111(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
 	t.end();
 });
 
 tape( 'project contains a distributable file exposing a "flat" namespace (unminified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-flat.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
@@ -54,6 +58,7 @@ tape( 'project contains a distributable file exposing a "flat" namespace (unmini
 });
 
 tape( 'project contains a distributable file exposing a "flat" namespace (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-flat.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
@@ -62,6 +67,7 @@ tape( 'project contains a distributable file exposing a "flat" namespace (minifi
 });
 
 tape( 'project contains a distributable file for REPL functionality (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-repl.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.repl, 'function', 'is a function' );
@@ -69,6 +75,7 @@ tape( 'project contains a distributable file for REPL functionality (minified)',
 });
 
 tape( 'project contains a distributable file exposing a "tree" namespace (unminified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-tree.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.math, 'object', 'has member' );
@@ -79,6 +86,7 @@ tape( 'project contains a distributable file exposing a "tree" namespace (unmini
 });
 
 tape( 'project contains a distributable file exposing a "tree" namespace (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-tree.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.math, 'object', 'has member' );
