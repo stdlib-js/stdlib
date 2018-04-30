@@ -341,6 +341,15 @@ test_npm_install() {
 		return 1
 	fi
 	echo 'Successfully performed npm install.' >&2
+
+	echo 'Testing npm install (via GitHub)...' >&2
+	make test-npm-install-github >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'npm install (via GitHub) failed.' >&2
+		return 1
+	fi
+	echo 'Successfully performed npm install (via GitHub).' >&2
+
 	return 0
 }
 
