@@ -36,6 +36,12 @@ heartbeat_interval='30s'
 # Declare a variable for storing the heartbeat process id:
 heartbeat_pid=""
 
+# Define the project name:
+project_name='@stdlib/stdlib'
+
+# Define the project GitHub URL:
+project_github_url='git://github.com/stdlib-js/stdlib.git'
+
 
 # FUNCTIONS #
 
@@ -174,12 +180,21 @@ run_examples() {
 # $1 - log file
 test_npm_install() {
 	echo 'Testing npm install...' >&2
-	make TEST_NPM_INSTALL_PKG='@stdlib/stdlib' test-npm-install >> "$1" 2>&1
+	make TEST_NPM_INSTALL_PKG="${project_name}" test-npm-install >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Installation failed.' >&2
 		return 1
 	fi
 	echo 'Successfully installed.' >&2
+
+	echo 'Testing npm install (via GitHub)...' >&2
+	make TEST_NPM_INSTALL_GITHUB_URL="${project_github_url}" test-npm-install-github >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (via GitHub) failed.' >&2
+		return 1
+	fi
+	echo 'Successfully installed (via GitHub).' >&2
+
 	return 0
 }
 
