@@ -24,6 +24,9 @@ TEST_NPM_INSTALL_DIR ?= $(BUILD_DIR)/test-npm-install
 # Define the package to be test:
 TEST_NPM_INSTALL_PKG ?= $(shell $(PROJECT_NAME))
 
+# Define the repository to be test:
+TEST_NPM_INSTALL_GITHUB_URL ?= $(shell $(PROJECT_GITHUB_URL))
+
 # Define the package version to install:
 TEST_NPM_INSTALL_VERSION ?= latest
 
@@ -43,6 +46,20 @@ test-npm-install: clean-test-npm-install
 		$(NPM) install "$(TEST_NPM_INSTALL_PKG)@$(TEST_NPM_INSTALL_VERSION)"
 
 .PHONY: test-npm-install
+
+#/
+# Tests whether a package can be successfully installed from GitHub via `npm install`.
+#
+# @example
+# make test-npm-install-github
+#/
+test-npm-install-github: clean-test-npm-install
+	$(QUIET) $(MKDIR_RECURSIVE) $(TEST_NPM_INSTALL_DIR) && \
+		cd $(TEST_NPM_INSTALL_DIR) && \
+		echo '{"name":"test-npm-install-github","version":"0.0.0","private":true}' > $(TEST_NPM_INSTALL_DIR)/package.json && \
+		$(NPM) install "$(TEST_NPM_INSTALL_GITHUB_URL)"
+
+.PHONY: test-npm-install-github
 
 #/
 # Removes the test installation directory.
