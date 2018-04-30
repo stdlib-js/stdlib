@@ -209,6 +209,9 @@ CURRENT_PROJECT_VERSION ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/packag
 # Define the command for getting the project name:
 PROJECT_NAME ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).name )"
 
+# Define the command for getting the project GitHub URL:
+PROJECT_GITHUB_URL ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).repository.url )"
+
 
 # TOOLS #
 
