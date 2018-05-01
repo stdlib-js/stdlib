@@ -3332,7 +3332,7 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 * var logger = require( 'debug' );
 * var debug = logger( 'stdlib' );
 */
-rules[ 'stdlib/no-immediate-require' ] = 'off'; // TODO: Enable once require( 'object-keys').shim() has been replaced
+rules[ 'stdlib/no-immediate-require' ] = 'error';
 
 /**
 * Disallow `require()` calls of another package's internals.
