@@ -54,7 +54,6 @@
     "minimist": "^1.2.0",
     "nan": "^2.5.1",
     "node-gyp": "^3.5.0",
-    "object-keys": "^1.0.9",
     "readable-stream": "^2.1.4",
     "resolve": "^1.1.7",
     "system.global": "^2.0.0",
@@ -197,6 +196,7 @@
     "standard",
     "std",
     "library",
-    "lib"
+    "lib",
+    "libstd"
   ]
 }

@@ -21,11 +21,14 @@
 # Define the directory path where the package should be installed:
 TEST_NPM_INSTALL_DIR ?= $(BUILD_DIR)/test-npm-install
 
-# Define the package to be test:
+# Define the package to test:
 TEST_NPM_INSTALL_PKG ?= $(shell $(PROJECT_NAME))
 
-# Define the repository to be test:
+# Define the repository to test:
 TEST_NPM_INSTALL_GITHUB_URL ?= $(shell $(PROJECT_GITHUB_URL))
+
+# Define the repository tag/commit/branch to test:
+TEST_NPM_INSTALL_GITHUB_TAG ?= develop
 
 # Define the package version to install:
 TEST_NPM_INSTALL_VERSION ?= latest
@@ -57,7 +60,7 @@ test-npm-install-github: clean-test-npm-install
 	$(QUIET) $(MKDIR_RECURSIVE) $(TEST_NPM_INSTALL_DIR) && \
 		cd $(TEST_NPM_INSTALL_DIR) && \
 		echo '{"name":"test-npm-install-github","version":"0.0.0","private":true}' > $(TEST_NPM_INSTALL_DIR)/package.json && \
-		$(NPM) install "$(TEST_NPM_INSTALL_GITHUB_URL)"
+		$(NPM) install "$(TEST_NPM_INSTALL_GITHUB_URL)#$(TEST_NPM_INSTALL_GITHUB_TAG)"
 
 .PHONY: test-npm-install-github
 

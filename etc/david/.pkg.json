@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"electron": "1.8.6"
+		"electron": "2.0.0"
 	},
 	"devDependencies":{}
 }
