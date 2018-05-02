@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-This directory contains [`make`][make] rules for initializing the project development environment (e.g., add [Git][git] hooks, installing custom ESLint plugins, etc).
+This directory contains [`make`][make] rules for initializing the project development environment (e.g., adding [Git][git] hooks, installing custom ESLint plugins, etc).
 
 </section>
 
