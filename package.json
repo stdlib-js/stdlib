@@ -196,6 +196,7 @@
     "standard",
     "std",
     "library",
-    "lib"
+    "lib",
+    "libstd"
   ]
 }
