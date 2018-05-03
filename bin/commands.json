@@ -1,29 +1,36 @@
 {
+	"help [command]": {
+		"cmd": "help [command]",
+		"desc": "Print a help message.",
+		"path": ""
+	},
 	"bundle-pkg-list": {
+		"cmd": "bundle-pkg-list",
 		"desc": "Bundle a list of packages into a single file.",
 		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli"
 	},
 	"datasets": {
+		"cmd": "datasets",
 		"desc": "Retrieve a dataset.",
 		"path": "./lib/node_modules/@stdlib/datasets/bin/cli"
 	},
-	"help [command]": {
-		"desc": "Print a help message.",
-		"path": ""
-	},
 	"ls": {
+		"cmd": "ls",
 		"desc": "List package names.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli"
 	},
 	"ls-tree": {
+		"cmd": "ls-tree",
 		"desc": "Show package tree.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli"
 	},
 	"ns": {
+		"cmd": "ns",
 		"desc": "Print namespace.",
 		"path": "./lib/node_modules/@stdlib/namespace/bin/cli"
 	},
 	"repl": {
+		"cmd": "repl",
 		"desc": "Start a REPL.",
 		"path": "./lib/node_modules/@stdlib/repl/bin/cli"
 	}

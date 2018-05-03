@@ -44,6 +44,17 @@ function onError( error ) {
 	console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
 }
 
+/**
+* Finds a command in the command list.
+*
+* @private
+* @param {string} name - command name
+* @returns {(Object|null)} command info
+*/
+function findCommand( name ) {
+	return COMMANDS[ name ] || null;
+}
+
 
 // MAIN //
 
@@ -78,15 +89,15 @@ function main() {
 		if ( args[ 1 ] === void 0 ) {
 			return cli.help();
 		}
-		cmd = COMMANDS[ args[ 1 ] ];
-		if ( cmd === void 0 ) {
+		cmd = findCommand( args[ 1 ] );;
+		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
 		}
 		cmd = resolve( __dirname, '..', cmd.path );
 		subargs = [ cmd, '--help' ];
 	} else {
-		cmd = COMMANDS[ args[ 0 ] ];
-		if ( cmd === void 0 ) {
+		cmd = findCommand( args[ 0 ] );;
+		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
 		}
 		cmd = resolve( __dirname, '..', cmd.path );
