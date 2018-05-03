@@ -9,7 +9,7 @@
 		"cmd": "arch",
 		"desc": "Operating system CPU architecture.",
 		"path": "./lib/node_modules/@stdlib/os/arch/bin/cli",
-		"group": "OS"
+		"group": "System"
 	},
 	{
 		"cmd": "bundle-pkg-list",
@@ -21,7 +21,13 @@
 		"cmd": "configdir",
 		"desc": "Configuration directory path.",
 		"path": "./lib/node_modules/@stdlib/os/configdir/bin/cli",
-		"group": "OS"
+		"group": "System"
+	},
+	{
+		"cmd": "cwd",
+		"desc": "Current working directory.",
+		"path": "./lib/node_modules/@stdlib/process/cwd/bin/cli",
+		"group": "System"
 	},
 	{
 		"cmd": "datasets",
@@ -33,7 +39,7 @@
 		"cmd": "homedir",
 		"desc": "Home directory path.",
 		"path": "./lib/node_modules/@stdlib/os/homedir/bin/cli",
-		"group": "OS"
+		"group": "System"
 	},
 	{
 		"cmd": "ls",
@@ -48,6 +54,12 @@
 		"group": "Meta"
 	},
 	{
+		"cmd": "node-version",
+		"desc": "Node.js version.",
+		"path": "./lib/node_modules/@stdlib/process/node-version/bin/cli",
+		"group": "Meta"
+	},
+	{
 		"cmd": "ns",
 		"desc": "Print namespace.",
 		"path": "./lib/node_modules/@stdlib/namespace/bin/cli",
@@ -57,13 +69,13 @@
 		"cmd": "num-cpus",
 		"desc": "Number of CPUs.",
 		"path": "./lib/node_modules/@stdlib/os/num-cpus/bin/cli",
-		"group": "OS"
+		"group": "System"
 	},
 	{
 		"cmd": "platform",
 		"desc": "Platform.",
 		"path": "./lib/node_modules/@stdlib/os/platform/bin/cli",
-		"group": "OS"
+		"group": "System"
 	},
 	{
 		"cmd": "repl",
@@ -81,6 +93,12 @@
 		"cmd": "tmpdir",
 		"desc": "Directory path for storing temporary files.",
 		"path": "./lib/node_modules/@stdlib/os/tmpdir/bin/cli",
-		"group": "OS"
+		"group": "System"
+	},
+	{
+		"cmd": "umask",
+		"desc": "Process mask.",
+		"path": "./lib/node_modules/@stdlib/process/umask/bin/cli",
+		"group": "System"
 	}
 ]
