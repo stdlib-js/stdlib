@@ -166,7 +166,7 @@ The REPL help bundle, `stdlib-repl-help`, contains REPL help texts for packages 
 <script type="text/javascript" src="/path/to/stdlib-repl-help.min.js"></script>
 <script type="text/javascript">
     // If no recognized module system present, exposed to global scope:
-    var help = stdlib_repl.help;
+    var help = stdlib_repl_help.repl.help;
 
     // Print the help docs:
     console.log( help() );
