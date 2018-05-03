@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # dist
 
 > Distributable files.
@@ -140,6 +160,19 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 </script>
 ```
 
+The REPL help bundle, `stdlib-repl-help`, contains REPL help texts for packages exposed via the project REPL and exposes a single `function` which returns an `object` mapping REPL aliases to help texts. While already included in the REPL bundle, this bundle is exposed separately in the event that one wants to consume the REPL help texts independently of the project REPL.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-repl-help.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var help = stdlib_repl.help;
+
+    // Print the help docs:
+    console.log( help() );
+</script>
+```
+
 ##### Bundle Statistics
 
 <!-- <bundle-stats files="stdlib-repl.min.js,stdlib-repl.min.js.gz"> -->
@@ -147,6 +180,14 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
 | 61.703 MB          | 16.982 MB             |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-repl-help.min.js,stdlib-repl-help.min.js.gz"> -->
+
+| stdlib-repl-help.min.js | stdlib-repl-help.min.js.gz |
+| ----------------------- | -------------------------- |
+|                         |                            |
 
 <!-- </bundle-stats> -->
 
