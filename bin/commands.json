@@ -2,36 +2,43 @@
 	{
 		"cmd": "help [command]",
 		"desc": "Print a help message.",
-		"path": ""
+		"path": "",
+		"group": ""
 	},
 	{
 		"cmd": "bundle-pkg-list",
 		"desc": "Bundle a list of packages into a single file.",
-		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli"
+		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli",
+		"group": ""
 	},
 	{
 		"cmd": "datasets",
 		"desc": "Retrieve a dataset.",
-		"path": "./lib/node_modules/@stdlib/datasets/bin/cli"
+		"path": "./lib/node_modules/@stdlib/datasets/bin/cli",
+		"group": ""
 	},
 	{
 		"cmd": "ls",
 		"desc": "List package names.",
-		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli"
+		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli",
+		"group": ""
 	},
 	{
 		"cmd": "ls-tree",
 		"desc": "Show package tree.",
-		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli"
+		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli",
+		"group": ""
 	},
 	{
 		"cmd": "ns",
 		"desc": "Print namespace.",
-		"path": "./lib/node_modules/@stdlib/namespace/bin/cli"
+		"path": "./lib/node_modules/@stdlib/namespace/bin/cli",
+		"group": ""
 	},
 	{
 		"cmd": "repl",
 		"desc": "Start a REPL.",
-		"path": "./lib/node_modules/@stdlib/repl/bin/cli"
+		"path": "./lib/node_modules/@stdlib/repl/bin/cli",
+		"group": ""
 	}
 ]
