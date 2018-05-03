@@ -1,4 +1,8 @@
 {
+	"bundle-pkg-list": {
+		"desc": "Bundle a list of packages into a single file.",
+		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli"
+	},
 	"datasets": {
 		"desc": "Retrieve a dataset.",
 		"path": "./lib/node_modules/@stdlib/datasets/bin/cli"

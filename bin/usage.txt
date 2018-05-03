@@ -8,6 +8,7 @@ Options:
 Commands:
 
   help [command]               Print a help message.
+  bundle-pkg-list              Bundle a list of packages into a single file.
   datasets                     Retrieve a dataset.
   ls                           List package names.
   ls-tree                      Show package tree.
