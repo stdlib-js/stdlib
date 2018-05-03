@@ -28,7 +28,7 @@ var readFileSync = require( './../lib/node_modules/@stdlib/fs/read-file' ).sync;
 var cwd = require( './../lib/node_modules/@stdlib/process/cwd' );
 var ENV = require( './../lib/node_modules/@stdlib/process/env' );
 var CLI = require( './../lib/node_modules/@stdlib/tools/cli' );
-var COMMANDS = require( './commands.json' );
+var COMMANDS = require( './cli_commands.json' );
 
 
 // FUNCTIONS //
@@ -81,7 +81,7 @@ function main() {
 	// Create a command-line interface:
 	cli = new CLI({
 		'pkg': require( './../package.json' ),
-		'options': require( './opts.json' ),
+		'options': require( './cli_opts.json' ),
 		'help': readFileSync( resolve( __dirname, 'usage.txt' ), {
 			'encoding': 'utf8'
 		})
