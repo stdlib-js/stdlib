@@ -20,5 +20,6 @@ Commands:
   num-cpus                     Number of CPUs.
   platform                     Platform.
   repl                         Start a REPL.
+  sparkline                    Plot a sparkline.
   tmpdir                       Directory path for storing temporary files.
 

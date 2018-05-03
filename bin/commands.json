@@ -72,6 +72,12 @@
 		"group": ""
 	},
 	{
+		"cmd": "sparkline",
+		"desc": "Plot a sparkline.",
+		"path": "./lib/node_modules/@stdlib/plot/sparklines/unicode/bin/cli",
+		"group": "Plot"
+	},
+	{
 		"cmd": "tmpdir",
 		"desc": "Directory path for storing temporary files.",
 		"path": "./lib/node_modules/@stdlib/os/tmpdir/bin/cli",
