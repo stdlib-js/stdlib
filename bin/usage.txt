@@ -1,5 +1,5 @@
 
-Usage: stdlib [options] <command> [args]
+Usage: stdlib [options] <command> [args] [-- <options>]
 
 Options:
 
