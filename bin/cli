@@ -22,141 +22,91 @@
 
 // MODULES //
 
-var fs = require( 'fs' );
-var path = require( 'path' );
+var resolve = require( 'path' ).resolve;
 var spawn = require( 'child_process' ).spawn;
-var parseArgs = require( 'minimist' );
-var notifier = require( 'update-notifier' );
-var pkg = require( './../package.json' );
-var opts = require( './opts.json' );
-var commands = require( './commands.json' );
+var readFileSync = require( './../lib/node_modules/@stdlib/fs/read-file' ).sync;
+var cwd = require( './../lib/node_modules/@stdlib/process/cwd' );
+var ENV = require( './../lib/node_modules/@stdlib/process/env' );
+var CLI = require( './../lib/node_modules/@stdlib/tools/cli' );
+var COMMANDS = require( './commands.json' );
 
 
 // FUNCTIONS //
-
-/**
-* Performs initialization tasks.
-*
-* @private
-* @example
-* init();
-*/
-function init() {
-	var opts;
-
-	// Check if newer versions exist for this package:
-	opts = {
-		'pkg': pkg
-	};
-	notifier( opts ).notify();
-
-	// Set the process title to allow the process to be more easily identified:
-	process.title = pkg.name;
-	process.stdout.on( 'error', process.exit );
-}
-
-/**
-* Prints usage information.
-*
-* @private
-* @example
-* help();
-* // => '...'
-*/
-function help() {
-	var fpath = path.join( __dirname, 'usage.txt' );
-	fs.createReadStream( fpath )
-		.pipe( process.stdout )
-		.on( 'close', onClose );
-
-	function onClose() {
-		process.exit( 0 );
-	}
-}
-
-/**
-* Prints the package version.
-*
-* @private
-* @example
-* version();
-* // => '#.#.#'
-*/
-function version() {
-	var msg = pkg.version.toString()+'\n';
-	process.stdout.write( msg, 'utf8' );
-	process.exit( 0 );
-}
 
 /**
 * Callback invoked upon encountering an error while running a command.
 *
 * @private
 * @param {Error} error - error object
-* @throws {Error} unexpected error
 */
 function onError( error ) {
-	throw error;
+	process.exitCode = 1;
+	console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
 }
-
-
-// VARIABLES //
-
-var args1;
-var args2;
-var proc;
-var cmd;
-var i;
 
 
 // MAIN //
 
-init();
+/**
+* Main execution sequence.
+*
+* @private
+*/
+function main() {
+	var subargs;
+	var args;
+	var opts;
+	var proc;
+	var cli;
+	var cmd;
+	var i;
 
-// Parse command-line arguments:
-args1 = parseArgs( process.argv.slice( 2 ), opts );
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './opts.json' ),
+		'help': readFileSync( resolve( __dirname, 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
 
-if ( args1.version ) {
-	return version();
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	// Extract the command:
+	cmd = args[ 0 ];
+	if ( cmd === 'help' ) {
+		if ( args[ 1 ] === void 0 ) {
+			return cli.help();
+		}
+		cmd = COMMANDS[ args[ 1 ] ];
+		if ( cmd === void 0 ) {
+			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' ) );
+		}
+		cmd = resolve( __dirname, '..', cmd );
+		subargs = [ cmd, '--help' ];
+	} else {
+		cmd = COMMANDS[ cmd ];
+		if ( cmd === void 0 ) {
+			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' ) );
+		}
+		cmd = resolve( __dirname, '..', cmd );
+		subargs = [ cmd ];
+		for ( i = 1; i < args.length; i++ ) {
+			subargs.push( args[ i ] );
+		}
+	}
+
+	// Define sub-process options:
+	opts = {
+		'cwd': cwd(),
+		'env': ENV,
+		'stdio': 'inherit'
+	};
+
+	// Invoke the command in a sub-process:
+	proc = spawn( 'node', subargs, opts );
+	proc.on( 'error', onError );
 }
-cmd = args1._[ 0 ];
 
-opts = {
-	'cwd': process.cwd(),
-	'env': process.env,
-	'stdio': 'inherit'
-};
-if ( cmd === 'help' ) {
-	if ( args1._[1] === void 0 ) {
-		return help();
-	}
-	cmd = commands[ args1._[1] ];
-	if ( cmd === void 0 ) {
-		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
-	}
-	cmd = path.resolve( __dirname, '..', cmd );
-	args2 = new Array( 2 );
-	args2[ 0 ] = cmd;
-	args2[ 1 ] = '--help';
-} else {
-	if (
-		cmd === 'datasets' ||
-		cmd === 'ls' ||
-		cmd === 'ls-tree' ||
-		cmd === 'ns' ||
-		cmd === 'repl'
-	) {
-		cmd = commands[ cmd ];
-		cmd = path.resolve( __dirname, '..', cmd );
-		args2 = new Array( 1 );
-		args2[ 0 ] = cmd;
-	}
-	else {
-		throw new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' );
-	}
-	for ( i = 1; i < args1._.length; i++ ) {
-		args2.push( args1._[ i ] );
-	}
-}
-proc = spawn( 'node', args2, opts );
-proc.on( 'error', onError );
+main();
