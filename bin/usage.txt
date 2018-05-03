@@ -3,6 +3,7 @@ Usage: stdlib [options] <command> [args] [-- <options>]
 
 Options:
 
+  -h,    --help                Print this message.
   -V,    --version             Print the package version.
 
 Commands:
