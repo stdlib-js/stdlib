@@ -45,14 +45,20 @@ function onError( error ) {
 }
 
 /**
-* Finds a command in the command list.
+* Returns command information.
 *
 * @private
-* @param {string} name - command name
+* @param {string} cmd - command
 * @returns {(Object|null)} command info
 */
-function findCommand( name ) {
-	return COMMANDS[ name ] || null;
+function findCommand( cmd ) {
+	var i;
+	for ( i = 0; i < COMMANDS.length; i++ ) {
+		if ( cmd === COMMANDS[ i ].cmd ) {
+			return COMMANDS[ i ];
+		}
+	}
+	return null;
 }
 
 
