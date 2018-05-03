@@ -92,7 +92,7 @@ function main() {
 
 	// Extract the command:
 	if ( args[ 0 ] === 'help' ) {
-		if ( args[ 1 ] === void 0 ) {
+		if ( args.length === 1 ) {
 			return cli.help();
 		}
 		cmd = findCommand( args[ 1 ] );;
