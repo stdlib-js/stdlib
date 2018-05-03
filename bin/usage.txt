@@ -9,10 +9,16 @@ Options:
 Commands:
 
   help [command]               Print a help message.
+  arch                         Operating system CPU architecture.
   bundle-pkg-list              Bundle a list of packages into a single file.
+  configdir                    Configuration directory path.
   datasets                     Retrieve a dataset.
+  homedir                      Home directory path.
   ls                           List package names.
   ls-tree                      Show package tree.
   ns                           Print namespace.
+  num-cpus                     Number of CPUs.
+  platform                     Platform.
   repl                         Start a REPL.
+  tmpdir                       Directory path for storing temporary files.
 

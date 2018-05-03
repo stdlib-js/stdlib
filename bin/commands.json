@@ -9,19 +9,19 @@
 		"cmd": "arch",
 		"desc": "Operating system CPU architecture.",
 		"path": "./lib/node_modules/@stdlib/os/arch/bin/cli",
-		"group": "os"
+		"group": "OS"
 	},
 	{
 		"cmd": "bundle-pkg-list",
 		"desc": "Bundle a list of packages into a single file.",
 		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli",
-		"group": ""
+		"group": "Tools"
 	},
 	{
 		"cmd": "configdir",
 		"desc": "Configuration directory path.",
 		"path": "./lib/node_modules/@stdlib/os/configdir/bin/cli",
-		"group": "os"
+		"group": "OS"
 	},
 	{
 		"cmd": "datasets",
@@ -33,48 +33,48 @@
 		"cmd": "homedir",
 		"desc": "Home directory path.",
 		"path": "./lib/node_modules/@stdlib/os/homedir/bin/cli",
-		"group": "os"
+		"group": "OS"
 	},
 	{
 		"cmd": "ls",
 		"desc": "List package names.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli",
-		"group": ""
+		"group": "Meta"
 	},
 	{
 		"cmd": "ls-tree",
 		"desc": "Show package tree.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli",
-		"group": ""
+		"group": "Meta"
 	},
 	{
 		"cmd": "ns",
 		"desc": "Print namespace.",
 		"path": "./lib/node_modules/@stdlib/namespace/bin/cli",
-		"group": ""
+		"group": "Meta"
 	},
 	{
 		"cmd": "num-cpus",
 		"desc": "Number of CPUs.",
 		"path": "./lib/node_modules/@stdlib/os/num-cpus/bin/cli",
-		"group": "os"
+		"group": "OS"
 	},
 	{
 		"cmd": "platform",
 		"desc": "Platform.",
 		"path": "./lib/node_modules/@stdlib/os/platform/bin/cli",
-		"group": "os"
-	},
-	{
-		"cmd": "tmpdir",
-		"desc": "Directory path for storing temporary files.",
-		"path": "./lib/node_modules/@stdlib/os/tmpdir/bin/cli",
-		"group": "os"
+		"group": "OS"
 	},
 	{
 		"cmd": "repl",
 		"desc": "Start a REPL.",
 		"path": "./lib/node_modules/@stdlib/repl/bin/cli",
 		"group": ""
+	},
+	{
+		"cmd": "tmpdir",
+		"desc": "Directory path for storing temporary files.",
+		"path": "./lib/node_modules/@stdlib/os/tmpdir/bin/cli",
+		"group": "OS"
 	}
 ]
