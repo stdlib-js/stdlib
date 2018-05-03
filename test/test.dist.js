@@ -74,6 +74,14 @@ tape( 'project contains a distributable file for REPL functionality (minified)',
 	t.end();
 });
 
+tape( 'project contains a distributable file for REPL help texts (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-repl-help.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.help, 'function', 'is a function' );
+	t.end();
+});
+
 tape( 'project contains a distributable file exposing a "tree" namespace (unminified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-tree.js' ) );
