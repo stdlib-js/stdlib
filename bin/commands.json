@@ -1,7 +1,17 @@
 {
-	"datasets": "./lib/node_modules/@stdlib/datasets/bin/cli",
-	"ls": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli",
-	"ls-tree": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli",
-	"ns": "./lib/node_modules/@stdlib/namespace/bin/cli",
-	"repl": "./lib/node_modules/@stdlib/repl/bin/cli"
+	"datasets": {
+		"path": "./lib/node_modules/@stdlib/datasets/bin/cli"
+	},
+	"ls": {
+		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli"
+	},
+	"ls-tree": {
+		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli"
+	},
+	"ns": {
+		"path": "./lib/node_modules/@stdlib/namespace/bin/cli"
+	},
+	"repl": {
+		"path": "./lib/node_modules/@stdlib/repl/bin/cli"
+	}
 }

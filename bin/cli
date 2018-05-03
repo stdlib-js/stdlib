@@ -74,23 +74,22 @@ function main() {
 	args = cli.args();
 
 	// Extract the command:
-	cmd = args[ 0 ];
-	if ( cmd === 'help' ) {
+	if ( args[ 0 ] === 'help' ) {
 		if ( args[ 1 ] === void 0 ) {
 			return cli.help();
 		}
 		cmd = COMMANDS[ args[ 1 ] ];
 		if ( cmd === void 0 ) {
-			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' ) );
+			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
 		}
-		cmd = resolve( __dirname, '..', cmd );
+		cmd = resolve( __dirname, '..', cmd.path );
 		subargs = [ cmd, '--help' ];
 	} else {
-		cmd = COMMANDS[ cmd ];
+		cmd = COMMANDS[ args[ 0 ] ];
 		if ( cmd === void 0 ) {
-			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + cmd + '`.' ) );
+			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
 		}
-		cmd = resolve( __dirname, '..', cmd );
+		cmd = resolve( __dirname, '..', cmd.path );
 		subargs = [ cmd ];
 		for ( i = 1; i < args.length; i++ ) {
 			subargs.push( args[ i ] );
