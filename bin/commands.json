@@ -6,16 +6,34 @@
 		"group": ""
 	},
 	{
+		"cmd": "arch",
+		"desc": "Operating system CPU architecture.",
+		"path": "./lib/node_modules/@stdlib/os/arch/bin/cli",
+		"group": "os"
+	},
+	{
 		"cmd": "bundle-pkg-list",
 		"desc": "Bundle a list of packages into a single file.",
 		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli",
 		"group": ""
 	},
 	{
+		"cmd": "configdir",
+		"desc": "Configuration directory path.",
+		"path": "./lib/node_modules/@stdlib/os/configdir/bin/cli",
+		"group": "os"
+	},
+	{
 		"cmd": "datasets",
 		"desc": "Retrieve a dataset.",
 		"path": "./lib/node_modules/@stdlib/datasets/bin/cli",
 		"group": ""
+	},
+	{
+		"cmd": "homedir",
+		"desc": "Home directory path.",
+		"path": "./lib/node_modules/@stdlib/os/homedir/bin/cli",
+		"group": "os"
 	},
 	{
 		"cmd": "ls",
@@ -34,6 +52,24 @@
 		"desc": "Print namespace.",
 		"path": "./lib/node_modules/@stdlib/namespace/bin/cli",
 		"group": ""
+	},
+	{
+		"cmd": "num-cpus",
+		"desc": "Number of CPUs.",
+		"path": "./lib/node_modules/@stdlib/os/num-cpus/bin/cli",
+		"group": "os"
+	},
+	{
+		"cmd": "platform",
+		"desc": "Platform.",
+		"path": "./lib/node_modules/@stdlib/os/platform/bin/cli",
+		"group": "os"
+	},
+	{
+		"cmd": "tmpdir",
+		"desc": "Directory path for storing temporary files.",
+		"path": "./lib/node_modules/@stdlib/os/tmpdir/bin/cli",
+		"group": "os"
 	},
 	{
 		"cmd": "repl",
