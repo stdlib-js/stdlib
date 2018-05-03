@@ -4,21 +4,21 @@ Usage: stdlib [options] <command> [args] [-- <options>]
 Options:
 
   -h,    --help                Print this message.
-  -V,    --version             Print the package version.
+  -V,    --version             Print the version.
 
 Commands:
 
   help [command]               Print a help message.
   arch                         Operating system CPU architecture.
-  bundle-pkg-list              Bundle a list of packages into a single file.
+  bundle-pkg-list              Bundle a list of stdlib packages.
   configdir                    Configuration directory path.
   cwd                          Current working directory.
   datasets                     Retrieve a dataset.
   homedir                      Home directory path.
-  ls                           List package names.
-  ls-tree                      Show package tree.
+  ls                           List stdlib package names.
+  ls-tree                      Show stdlib package tree.
   node-version                 Node.js version.
-  ns                           Print namespace.
+  ns                           Print stdlib namespace.
   num-cpus                     Number of CPUs.
   platform                     Platform.
   repl                         Start a REPL.

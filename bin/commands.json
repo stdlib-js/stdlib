@@ -13,7 +13,7 @@
 	},
 	{
 		"cmd": "bundle-pkg-list",
-		"desc": "Bundle a list of packages into a single file.",
+		"desc": "Bundle a list of stdlib packages.",
 		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli",
 		"group": "Tools"
 	},
@@ -43,13 +43,13 @@
 	},
 	{
 		"cmd": "ls",
-		"desc": "List package names.",
+		"desc": "List stdlib package names.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli",
 		"group": "Meta"
 	},
 	{
 		"cmd": "ls-tree",
-		"desc": "Show package tree.",
+		"desc": "Show stdlib package tree.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli",
 		"group": "Meta"
 	},
@@ -61,7 +61,7 @@
 	},
 	{
 		"cmd": "ns",
-		"desc": "Print namespace.",
+		"desc": "Print stdlib namespace.",
 		"path": "./lib/node_modules/@stdlib/namespace/bin/cli",
 		"group": "Meta"
 	},
