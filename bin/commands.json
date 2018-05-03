@@ -1,17 +1,26 @@
 {
 	"datasets": {
+		"desc": "Retrieve a dataset.",
 		"path": "./lib/node_modules/@stdlib/datasets/bin/cli"
 	},
+	"help [command]": {
+		"desc": "Print a help message.",
+		"path": ""
+	},
 	"ls": {
+		"desc": "List package names.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli"
 	},
 	"ls-tree": {
+		"desc": "Show package tree.",
 		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli"
 	},
 	"ns": {
+		"desc": "Print namespace.",
 		"path": "./lib/node_modules/@stdlib/namespace/bin/cli"
 	},
 	"repl": {
+		"desc": "Start a REPL.",
 		"path": "./lib/node_modules/@stdlib/repl/bin/cli"
 	}
 }
