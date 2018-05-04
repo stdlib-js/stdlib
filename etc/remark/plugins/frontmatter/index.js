@@ -18,15 +18,19 @@
 
 'use strict';
 
-var plugins = [];
+/**
+* Plugin.
+*/
+var plugin = [ require( 'remark-frontmatter' ) ];
 
-plugins = plugins.concat( require( './frontmatter' ) );
-plugins = plugins.concat( require( './lint' ) );
-plugins = plugins.concat( require( './eslint' ) );
-plugins = plugins.concat( require( './lint-equations' ) );
-plugins = plugins.concat( require( './validate-links' ) );
+/**
+* Frontmatter preset.
+*
+* @see [remark-frontmatter]{@link https://github.com/remarkjs/remark-frontmatter}
+*/
+plugin.push( 'yaml' );
 
 
 // EXPORTS //
 
-module.exports = plugins;
+module.exports = plugin;
