@@ -15,7 +15,7 @@
 		"command": "bench",
 		"description": "Run JavaScript benchmark files.",
 		"path": "@stdlib/bench",
-		"group": "utilities"
+		"group": "benchmarking"
 	},
 	{
 		"command": "bundle-pkg-list",
@@ -46,6 +46,30 @@
 		"description": "Retrieve a dataset.",
 		"path": "@stdlib/datasets",
 		"group": "general"
+	},
+	{
+		"command": "day-of-quarter",
+		"description": "Calculate day of quarter.",
+		"path": "@stdlib/time/day-of-quarter",
+		"group": "time"
+	},
+	{
+		"command": "day-of-year",
+		"description": "Calculate day of year.",
+		"path": "@stdlib/time/day-of-year",
+		"group": "time"
+	},
+	{
+		"command": "days-in-month",
+		"description": "Calculate the number of days in a month.",
+		"path": "@stdlib/time/days-in-month",
+		"group": "time"
+	},
+	{
+		"command": "days-in-year",
+		"description": "Calculate the number of days in a year.",
+		"path": "@stdlib/time/days-in-year",
+		"group": "time"
 	},
 	{
 		"command": "ends-with",
@@ -216,6 +240,24 @@
 		"group": "system"
 	},
 	{
+		"command": "hours-in-month",
+		"description": "Calculate the number of hours in a month.",
+		"path": "@stdlib/time/hours-in-month",
+		"group": "time"
+	},
+	{
+		"command": "hours-in-year",
+		"description": "Calculate the number of hours in a year.",
+		"path": "@stdlib/time/hours-in-year",
+		"group": "time"
+	},
+	{
+		"command": "iso-weeks-in-year",
+		"description": "Calculate the number of ISO weeks in a year.",
+		"path": "@stdlib/time/iso-weeks-in-year",
+		"group": "time"
+	},
+	{
 		"command": "is-absolute-path",
 		"description": "Assert an absolute path.",
 		"path": "@stdlib/assert/is-absolute-path",
@@ -354,10 +396,28 @@
 		"group": "meta"
 	},
 	{
+		"command": "minutes-in-month",
+		"description": "Calculate the number of minutes in a month.",
+		"path": "@stdlib/time/minutes-in-month",
+		"group": "time"
+	},
+	{
+		"command": "minutes-in-year",
+		"description": "Calculate the number of minutes in a year.",
+		"path": "@stdlib/time/minutes-in-year",
+		"group": "time"
+	},
+	{
 		"command": "node-version",
 		"description": "Node.js version.",
 		"path": "@stdlib/process/node-version",
 		"group": "meta"
+	},
+	{
+		"command": "now",
+		"description": "Number of seconds since the epoch.",
+		"path": "@stdlib/time/now",
+		"group": "time"
 	},
 	{
 		"command": "ns",
@@ -388,6 +448,12 @@
 		"description": "Platform.",
 		"path": "@stdlib/os/platform",
 		"group": "system"
+	},
+	{
+		"command": "quarter-of-year",
+		"description": "Calculate the quarter of a year.",
+		"path": "@stdlib/time/quarter-of-year",
+		"group": "time"
 	},
 	{
 		"command": "read-dir",
@@ -484,6 +550,18 @@
 		"description": "Right trim a string.",
 		"path": "@stdlib/string/right-trim",
 		"group": "utilities"
+	},
+	{
+		"command": "seconds-in-month",
+		"description": "Calculate the number of seconds in a month.",
+		"path": "@stdlib/time/seconds-in-month",
+		"group": "time"
+	},
+	{
+		"command": "seconds-in-year",
+		"description": "Calculate the number of seconds in a year.",
+		"path": "@stdlib/time/seconds-in-year",
+		"group": "time"
 	},
 	{
 		"command": "sparkline",

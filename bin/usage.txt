@@ -57,6 +57,10 @@ Assert:
   is-uri                          Assert if a value is a URI.
   is-whitespace                   Assert if a value is only whitespace.
 
+Benchmarking:
+
+  bench                           Run JavaScript benchmark files.
+
 Filesystem:
 
   exists                          Test if a file exists.
@@ -90,13 +94,28 @@ System:
   tmpdir                          Directory path for storing temporary files.
   umask                           Process mask.
 
+Time:
+
+  day-of-quarter                  Calculate day of quarter.
+  day-of-year                     Calculate day of year.
+  days-in-month                   Calculate the number of days in a month.
+  days-in-year                    Calculate the number of days in a year.
+  hours-in-month                  Calculate the number of hours in a month.
+  hours-in-year                   Calculate the number of hours in a year.
+  iso-weeks-in-year               Calculate the number of ISO weeks in a year.
+  minutes-in-month                Calculate the number of minutes in a month.
+  minutes-in-year                 Calculate the number of minutes in a year.
+  now                             Number of seconds since the epoch.
+  quarter-of-year                 Calculate the quarter of a year.
+  seconds-in-month                Calculate the number of seconds in a month.
+  seconds-in-year                 Calculate the number of seconds in a year.
+
 Tools:
 
   bundle-pkg-list                 Bundle a list of stdlib packages.
 
 Utilities:
 
-  bench                           Run JavaScript benchmark files.
   capitalize                      Capitalize the first character in a string.
   ends-with                       Test if a string ends with another string.
   from-code-point                 Create a string from code points.
