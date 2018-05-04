@@ -69,7 +69,7 @@ function findCommand( cmd ) {
 * @returns {string} file path
 */
 function getPath( path ) {
-	if ( /@stdlib/.test( path ) ) {
+	if ( /^@stdlib/.test( path ) ) {
 		// WARNING: we assume that CLIs follow the `./bin/cli` convention
 		return resolve( __dirname, '..', 'lib', 'node_modules', path, 'bin', 'cli' );
 	}
