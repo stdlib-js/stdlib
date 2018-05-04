@@ -107,7 +107,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 9.283 MB       | 1.746 MB           | 397.667 kB            |
+| 9.283 MB       | 1.746 MB           | 397.666 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -115,7 +115,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 9.305 MB       | 1.762 MB           | 398.538 kB            |
+| 9.305 MB       | 1.762 MB           | 398.535 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -160,19 +160,6 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 </script>
 ```
 
-The REPL help bundle, `stdlib-repl-help`, contains REPL help texts for packages exposed via the project REPL and exposes a single `function` which returns an `object` mapping REPL aliases to help texts. While already included in the REPL bundle, this bundle is exposed separately in the event that one wants to consume the REPL help texts independently of the project REPL.
-
-```html
-<script type="text/javascript" src="/path/to/stdlib-repl-help.min.js"></script>
-<script type="text/javascript">
-    // If no recognized module system present, exposed to global scope:
-    var help = stdlib_repl_help.repl.help;
-
-    // Print the help docs:
-    console.log( help() );
-</script>
-```
-
 ##### Bundle Statistics
 
 <!-- <bundle-stats files="stdlib-repl.min.js,stdlib-repl.min.js.gz"> -->
@@ -183,11 +170,26 @@ The REPL help bundle, `stdlib-repl-help`, contains REPL help texts for packages 
 
 <!-- </bundle-stats> -->
 
-<!-- <bundle-stats files="stdlib-repl-help.min.js,stdlib-repl-help.min.js.gz"> -->
+#### Help
 
-| stdlib-repl-help.min.js | stdlib-repl-help.min.js.gz |
+The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in the flat namespace and exposes a single `function` which returns an `object` mapping aliases to help texts. While already included in the REPL bundle, this bundle is exposed separately in the event that one wants to independently consume help texts in other contexts.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-flat-help.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var help = stdlib_flat_help.help;
+
+    // Print the help docs:
+    console.log( help() );
+</script>
+```
+
+<!-- <bundle-stats files="stdlib-flat-help.min.js,stdlib-flat-help.min.js.gz"> -->
+
+| stdlib-flat-help.min.js | stdlib-flat-help.min.js.gz |
 | ----------------------- | -------------------------- |
-| 1.727 MB                | 211.36 kB                  |
+| 1.727 MB                | 211.344 kB                 |
 
 <!-- </bundle-stats> -->
 
