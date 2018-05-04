@@ -15,7 +15,7 @@
 		"command": "bench",
 		"description": "Run JavaScript benchmark files.",
 		"path": "@stdlib/bench",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "bundle-pkg-list",
@@ -27,7 +27,7 @@
 		"command": "capitalize",
 		"description": "Capitalize the first character in a string.",
 		"path": "@stdlib/string/capitalize",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "configdir",
@@ -51,19 +51,19 @@
 		"command": "ends-with",
 		"description": "Test if a string ends with another string.",
 		"path": "@stdlib/string/ends-with",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "exists",
 		"description": "Test if a file exists.",
 		"path": "@stdlib/fs/exists",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "from-code-point",
 		"description": "Create a string from code points.",
 		"path": "@stdlib/string/from-code-point",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "has-arraybuffer-support",
@@ -327,19 +327,19 @@
 		"command": "lpad",
 		"description": "Left pad a string.",
 		"path": "@stdlib/string/left-pad",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "ltrim",
 		"description": "Left trim a string.",
 		"path": "@stdlib/string/left-trim",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "lowercase",
 		"description": "Lowercase a string.",
 		"path": "@stdlib/string/lowercase",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "ls",
@@ -375,13 +375,13 @@
 		"command": "padstr",
 		"description": "Pad a string.",
 		"path": "@stdlib/string/pad",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "percent-encode",
 		"description": "Percent-encode a UTF-16 encoded string.",
 		"path": "@stdlib/string/percent-encode",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "platform",
@@ -393,61 +393,61 @@
 		"command": "read-dir",
 		"description": "Read all files in a directory.",
 		"path": "@stdlib/fs/read-dir",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "read-file",
 		"description": "Read a file.",
 		"path": "@stdlib/fs/read-file",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "read-file-list",
 		"description": "Read a list of files.",
 		"path": "@stdlib/fs/read-file-list",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "remove-first",
 		"description": "Remove the first character in a string.",
 		"path": "@stdlib/string/remove-first",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "remove-last",
 		"description": "Remove the last character in a string.",
 		"path": "@stdlib/string/remove-last",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "remove-punctuation",
 		"description": "Remove punctuation characters from a string.",
 		"path": "@stdlib/string/remove-punctuation",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "remove-utf8-bom",
 		"description": "Remove a UTF-8 byte order mark (BOM).",
 		"path": "@stdlib/string/remove-first",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "remove-words",
 		"description": "Remove a list of words from a string.",
 		"path": "@stdlib/string/remove-words",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "rename",
 		"description": "Rename a file.",
 		"path": "@stdlib/fs/rename",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "repstr",
 		"description": "Repeat a string.",
 		"path": "@stdlib/string/repeat",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "repl",
@@ -459,31 +459,31 @@
 		"command": "replace",
 		"description": "Replace search occurrences in a string.",
 		"path": "@stdlib/string/replace",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "resolve-parent-path",
 		"description": "Resolve a path by walking parent directories.",
 		"path": "@stdlib/fs/resolve-parent-path",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "reverse",
 		"description": "Reverse a string.",
 		"path": "@stdlib/string/reverse",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "rpad",
 		"description": "Right pad a string.",
 		"path": "@stdlib/string/right-pad",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "rtrim",
 		"description": "Right trim a string.",
 		"path": "@stdlib/string/right-trim",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "sparkline",
@@ -495,13 +495,13 @@
 		"command": "startcase",
 		"description": "Capitalize each word in a string.",
 		"path": "@stdlib/string/startcase",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "starts-with",
 		"description": "Test if a string starts with another string.",
 		"path": "@stdlib/string/starts-with",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "tmpdir",
@@ -513,7 +513,7 @@
 		"command": "trim",
 		"description": "Trim a string.",
 		"path": "@stdlib/string/trim",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "umask",
@@ -525,24 +525,24 @@
 		"command": "uncapitalize",
 		"description": "Uncapitalize a string.",
 		"path": "@stdlib/string/uncapitalize",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "unlink",
 		"description": "Remove a file.",
 		"path": "@stdlib/fs/unlink",
-		"group": "fs"
+		"group": "filesystem"
 	},
 	{
 		"command": "uppercase",
 		"description": "Uppercase a string.",
 		"path": "@stdlib/string/uppercase",
-		"group": "utils"
+		"group": "utilities"
 	},
 	{
 		"command": "write-file",
 		"description": "Write to file.",
 		"path": "@stdlib/fs/write-file",
-		"group": "fs"
+		"group": "filesystem"
 	}
 ]

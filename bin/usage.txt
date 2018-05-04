@@ -57,7 +57,7 @@ Assert:
   is-uri                          Assert if a value is a URI.
   is-whitespace                   Assert if a value is only whitespace.
 
-Fs:
+Filesystem:
 
   exists                          Test if a file exists.
   read-dir                        Read all files in a directory.
@@ -94,7 +94,7 @@ Tools:
 
   bundle-pkg-list                 Bundle a list of stdlib packages.
 
-Utils:
+Utilities:
 
   bench                           Run JavaScript benchmark files.
   capitalize                      Capitalize the first character in a string.
