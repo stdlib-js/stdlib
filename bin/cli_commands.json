@@ -54,10 +54,262 @@
 		"group": "utils"
 	},
 	{
+		"command": "has-arraybuffer-support",
+		"description": "Detect ArrayBuffer support.",
+		"path": "@stdlib/assert/has-arraybuffer-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-async-await-support",
+		"description": "Detect async/await support.",
+		"path": "@stdlib/assert/has-async-await-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-class-support",
+		"description": "Detect ES6 class support.",
+		"path": "@stdlib/assert/has-class-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-float32array-support",
+		"description": "Detect Float32Array support.",
+		"path": "@stdlib/assert/has-float32array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-float64array-support",
+		"description": "Detect Float64Array support.",
+		"path": "@stdlib/assert/has-float64array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-function-name-support",
+		"description": "Detect function name support.",
+		"path": "@stdlib/assert/has-function-name-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-generator-support",
+		"description": "Detect generator support.",
+		"path": "@stdlib/assert/has-generator-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-int16array-support",
+		"description": "Detect Int16Array support.",
+		"path": "@stdlib/assert/has-int16array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-int32array-support",
+		"description": "Detect Int32Array support.",
+		"path": "@stdlib/assert/has-int32array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-int8array-support",
+		"description": "Detect Int8Array support.",
+		"path": "@stdlib/assert/has-int8array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-map-support",
+		"description": "Detect Map support.",
+		"path": "@stdlib/assert/has-map-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-node-buffer-support",
+		"description": "Detect Node buffer support.",
+		"path": "@stdlib/assert/has-node-buffer-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-proxy-support",
+		"description": "Detect Proxy support.",
+		"path": "@stdlib/assert/has-proxy-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-set-support",
+		"description": "Detect Set support.",
+		"path": "@stdlib/assert/has-set-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-sharedarraybuffer-support",
+		"description": "Detect SharedArrayBuffer support.",
+		"path": "@stdlib/assert/has-sharedarraybuffer-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-symbol-support",
+		"description": "Detect Symbol support.",
+		"path": "@stdlib/assert/has-symbol-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-tostringtag-support",
+		"description": "Detect Symbol.toStringTag support.",
+		"path": "@stdlib/assert/has-tostringtag-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint16array-support",
+		"description": "Detect Uit16Array support.",
+		"path": "@stdlib/assert/has-uint16array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint32array-support",
+		"description": "Detect Uit32Array support.",
+		"path": "@stdlib/assert/has-uint32array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint8array-support",
+		"description": "Detect Uit8Array support.",
+		"path": "@stdlib/assert/has-uint8array-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-uint8clampedarray-support",
+		"description": "Detect Uit8ClampedArray support.",
+		"path": "@stdlib/assert/has-uint8clampedarray-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-wasm-support",
+		"description": "Detect WebAssembly support.",
+		"path": "@stdlib/assert/has-wasm-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-weakmap-support",
+		"description": "Detect WeakMap support.",
+		"path": "@stdlib/assert/has-weakmap-support",
+		"group": "assert"
+	},
+	{
+		"command": "has-weakset-support",
+		"description": "Detect WeakSet support.",
+		"path": "@stdlib/assert/has-weakset-support",
+		"group": "assert"
+	},
+	{
 		"command": "homedir",
 		"description": "Home directory path.",
 		"path": "@stdlib/os/homedir",
 		"group": "system"
+	},
+	{
+		"command": "is-absolute-path",
+		"description": "Assert an absolute path.",
+		"path": "@stdlib/assert/is-absolute-path",
+		"group": "assert"
+	},
+	{
+		"command": "is-alphagram",
+		"description": "Assert if a value is an alphagram.",
+		"path": "@stdlib/assert/is-alphagram",
+		"group": "assert"
+	},
+	{
+		"command": "is-alphanumeric",
+		"description": "Assert if a value is alphanumeric.",
+		"path": "@stdlib/assert/is-alphanumeric",
+		"group": "assert"
+	},
+	{
+		"command": "is-anagram",
+		"description": "Assert if a value is an anagram.",
+		"path": "@stdlib/assert/is-anagram",
+		"group": "assert"
+	},
+	{
+		"command": "is-ascii",
+		"description": "Assert if a value is ASCII.",
+		"path": "@stdlib/assert/is-ascii",
+		"group": "assert"
+	},
+	{
+		"command": "is-binary-string",
+		"description": "Assert if a value is a binary string.",
+		"path": "@stdlib/assert/is-binary-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-capitalized",
+		"description": "Assert if a value is capitalized.",
+		"path": "@stdlib/assert/is-capitalized",
+		"group": "assert"
+	},
+	{
+		"command": "is-digit-string",
+		"description": "Assert if a value is a digit string.",
+		"path": "@stdlib/assert/is-digit-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-email-address",
+		"description": "Assert if a value is an email address.",
+		"path": "@stdlib/assert/is-email-address",
+		"group": "assert"
+	},
+	{
+		"command": "is-hex-string",
+		"description": "Assert if a value is a hexadecimal string.",
+		"path": "@stdlib/assert/is-hex-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-leap-year",
+		"description": "Assert if a leap year.",
+		"path": "@stdlib/assert/is-leap-year",
+		"group": "assert"
+	},
+	{
+		"command": "is-little-endian",
+		"description": "Assert if little endian.",
+		"path": "@stdlib/assert/is-little-endian",
+		"group": "assert"
+	},
+	{
+		"command": "is-lowercase",
+		"description": "Assert if a value is lowercase.",
+		"path": "@stdlib/assert/is-lowercase",
+		"group": "assert"
+	},
+	{
+		"command": "is-regexp-string",
+		"description": "Assert if a value is a regexp string.",
+		"path": "@stdlib/assert/is-regexp-string",
+		"group": "assert"
+	},
+	{
+		"command": "is-unc-path",
+		"description": "Assert a UNC path.",
+		"path": "@stdlib/assert/is-unc-path",
+		"group": "assert"
+	},
+	{
+		"command": "is-uppercase",
+		"description": "Assert if a value is uppercase.",
+		"path": "@stdlib/assert/is-uppercase",
+		"group": "assert"
+	},
+	{
+		"command": "is-uri",
+		"description": "Assert if a value is a URI.",
+		"path": "@stdlib/assert/is-uri",
+		"group": "assert"
+	},
+	{
+		"command": "is-whitespace",
+		"description": "Assert if a value is only whitespace.",
+		"path": "@stdlib/assert/is-whitespace",
+		"group": "assert"
 	},
 	{
 		"command": "lpad",
