@@ -60,13 +60,13 @@
 		"group": "System"
 	},
 	{
-		"cmd": "left-pad",
+		"cmd": "lpad",
 		"desc": "Left pad a string.",
 		"path": "./lib/node_modules/@stdlib/string/left-pad/bin/cli",
 		"group": "Utils"
 	},
 	{
-		"cmd": "left-trim",
+		"cmd": "ltrim",
 		"desc": "Left trim a string.",
 		"path": "./lib/node_modules/@stdlib/string/left-trim/bin/cli",
 		"group": "Utils"
@@ -108,7 +108,7 @@
 		"group": "System"
 	},
 	{
-		"cmd": "pad",
+		"cmd": "padstr",
 		"desc": "Pad a string.",
 		"path": "./lib/node_modules/@stdlib/string/pad/bin/cli",
 		"group": "Utils"
@@ -156,7 +156,7 @@
 		"group": "Utils"
 	},
 	{
-		"cmd": "repeat",
+		"cmd": "repstr",
 		"desc": "Repeat a string.",
 		"path": "./lib/node_modules/@stdlib/string/repeat/bin/cli",
 		"group": "Utils"
@@ -180,13 +180,13 @@
 		"group": "Utils"
 	},
 	{
-		"cmd": "right-pad",
+		"cmd": "rpad",
 		"desc": "Right pad a string.",
 		"path": "./lib/node_modules/@stdlib/string/right-pad/bin/cli",
 		"group": "Utils"
 	},
 	{
-		"cmd": "right-trim",
+		"cmd": "rtrim",
 		"desc": "Right trim a string.",
 		"path": "./lib/node_modules/@stdlib/string/right-trim/bin/cli",
 		"group": "Utils"
