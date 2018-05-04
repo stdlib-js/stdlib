@@ -12,6 +12,12 @@
 		"group": "system"
 	},
 	{
+		"command": "bench",
+		"description": "Run JavaScript benchmark files.",
+		"path": "@stdlib/bench",
+		"group": "utils"
+	},
+	{
 		"command": "bundle-pkg-list",
 		"description": "Bundle a list of stdlib packages.",
 		"path": "@stdlib/_tools/bundle/pkg-list",
@@ -46,6 +52,12 @@
 		"description": "Test if a string ends with another string.",
 		"path": "@stdlib/string/ends-with",
 		"group": "utils"
+	},
+	{
+		"command": "exists",
+		"description": "Test if a file exists.",
+		"path": "@stdlib/fs/exists",
+		"group": "fs"
 	},
 	{
 		"command": "from-code-point",
@@ -378,6 +390,24 @@
 		"group": "system"
 	},
 	{
+		"command": "read-dir",
+		"description": "Read all files in a directory.",
+		"path": "@stdlib/fs/read-dir",
+		"group": "fs"
+	},
+	{
+		"command": "read-file",
+		"description": "Read a file.",
+		"path": "@stdlib/fs/read-file",
+		"group": "fs"
+	},
+	{
+		"command": "read-file-list",
+		"description": "Read a list of files.",
+		"path": "@stdlib/fs/read-file-list",
+		"group": "fs"
+	},
+	{
 		"command": "remove-first",
 		"description": "Remove the first character in a string.",
 		"path": "@stdlib/string/remove-first",
@@ -408,6 +438,12 @@
 		"group": "utils"
 	},
 	{
+		"command": "rename",
+		"description": "Rename a file.",
+		"path": "@stdlib/fs/rename",
+		"group": "fs"
+	},
+	{
 		"command": "repstr",
 		"description": "Repeat a string.",
 		"path": "@stdlib/string/repeat",
@@ -424,6 +460,12 @@
 		"description": "Replace search occurrences in a string.",
 		"path": "@stdlib/string/replace",
 		"group": "utils"
+	},
+	{
+		"command": "resolve-parent-path",
+		"description": "Resolve a path by walking parent directories.",
+		"path": "@stdlib/fs/resolve-parent-path",
+		"group": "fs"
 	},
 	{
 		"command": "reverse",
@@ -486,9 +528,21 @@
 		"group": "utils"
 	},
 	{
+		"command": "unlink",
+		"description": "Remove a file.",
+		"path": "@stdlib/fs/unlink",
+		"group": "fs"
+	},
+	{
 		"command": "uppercase",
 		"description": "Uppercase a string.",
 		"path": "@stdlib/string/uppercase",
 		"group": "utils"
+	},
+	{
+		"command": "write-file",
+		"description": "Write to file.",
+		"path": "@stdlib/fs/write-file",
+		"group": "fs"
 	}
 ]
