@@ -9,31 +9,31 @@
 		"cmd": "arch",
 		"desc": "Operating system CPU architecture.",
 		"pkg": "@stdlib/os/arch",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "bundle-pkg-list",
 		"desc": "Bundle a list of stdlib packages.",
 		"pkg": "@stdlib/_tools/bundle/pkg-list",
-		"group": "Tools"
+		"group": "tools"
 	},
 	{
 		"cmd": "capitalize",
 		"desc": "Capitalize the first character in a string.",
 		"pkg": "@stdlib/string/capitalize",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "configdir",
 		"desc": "Configuration directory path.",
 		"pkg": "@stdlib/os/configdir",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "cwd",
 		"desc": "Current working directory.",
 		"pkg": "@stdlib/process/cwd",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "datasets",
@@ -45,121 +45,121 @@
 		"cmd": "ends-with",
 		"desc": "Test if a string ends with another string.",
 		"pkg": "@stdlib/string/ends-with",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "from-code-point",
 		"desc": "Create a string from a sequence of code points.",
 		"pkg": "@stdlib/string/from-code-point",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "homedir",
 		"desc": "Home directory path.",
 		"pkg": "@stdlib/os/homedir",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "lpad",
 		"desc": "Left pad a string.",
 		"pkg": "@stdlib/string/left-pad",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "ltrim",
 		"desc": "Left trim a string.",
 		"pkg": "@stdlib/string/left-trim",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "lowercase",
 		"desc": "Lowercase a string.",
 		"pkg": "@stdlib/string/lowercase",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "ls",
 		"desc": "List stdlib package names.",
 		"pkg": "@stdlib/_tools/pkgs/names",
-		"group": "Meta"
+		"group": "meta"
 	},
 	{
 		"cmd": "ls-tree",
 		"desc": "Show stdlib package tree.",
 		"pkg": "@stdlib/_tools/pkgs/tree",
-		"group": "Meta"
+		"group": "meta"
 	},
 	{
 		"cmd": "node-version",
 		"desc": "Node.js version.",
 		"pkg": "@stdlib/process/node-version",
-		"group": "Meta"
+		"group": "meta"
 	},
 	{
 		"cmd": "ns",
 		"desc": "Print stdlib namespace.",
 		"pkg": "@stdlib/namespace",
-		"group": "Meta"
+		"group": "meta"
 	},
 	{
 		"cmd": "num-cpus",
 		"desc": "Number of CPUs.",
 		"pkg": "@stdlib/os/num-cpus",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "padstr",
 		"desc": "Pad a string.",
 		"pkg": "@stdlib/string/pad",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "percent-encode",
 		"desc": "Percent-encode a UTF-16 encoded string.",
 		"pkg": "@stdlib/string/percent-encode",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "platform",
 		"desc": "Platform.",
 		"pkg": "@stdlib/os/platform",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "remove-first",
 		"desc": "Remove the first character in a string.",
 		"pkg": "@stdlib/string/remove-first",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "remove-last",
 		"desc": "Remove the last character in a string.",
 		"pkg": "@stdlib/string/remove-last",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "remove-punctuation",
 		"desc": "Remove punctuation characters from a string.",
 		"pkg": "@stdlib/string/remove-punctuation",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "remove-utf8-bom",
 		"desc": "Remove a UTF-8 byte order mark (BOM).",
 		"pkg": "@stdlib/string/remove-first",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "remove-words",
 		"desc": "Remove a list of words from a string.",
 		"pkg": "@stdlib/string/remove-words",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "repstr",
 		"desc": "Repeat a string.",
 		"pkg": "@stdlib/string/repeat",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "repl",
@@ -171,72 +171,72 @@
 		"cmd": "replace",
 		"desc": "Replace search occurrences in a string.",
 		"pkg": "@stdlib/string/replace",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "reverse",
 		"desc": "Reverse a string.",
 		"pkg": "@stdlib/string/reverse",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "rpad",
 		"desc": "Right pad a string.",
 		"pkg": "@stdlib/string/right-pad",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "rtrim",
 		"desc": "Right trim a string.",
 		"pkg": "@stdlib/string/right-trim",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "sparkline",
 		"desc": "Plot a sparkline.",
 		"pkg": "@stdlib/plot/sparklines/unicode",
-		"group": "Plot"
+		"group": "plot"
 	},
 	{
 		"cmd": "startcase",
 		"desc": "Capitalize each word in a string.",
 		"pkg": "@stdlib/string/startcase",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "starts-with",
 		"desc": "Test if a string starts with another string.",
 		"pkg": "@stdlib/string/starts-with",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "tmpdir",
 		"desc": "Directory path for storing temporary files.",
 		"pkg": "@stdlib/os/tmpdir",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "trim",
 		"desc": "Trim a string.",
 		"pkg": "@stdlib/string/trim",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "umask",
 		"desc": "Process mask.",
 		"pkg": "@stdlib/process/umask",
-		"group": "System"
+		"group": "system"
 	},
 	{
 		"cmd": "uncapitalize",
 		"desc": "Uncapitalize a string.",
 		"pkg": "@stdlib/string/uncapitalize",
-		"group": "Utils"
+		"group": "utils"
 	},
 	{
 		"cmd": "uppercase",
 		"desc": "Uppercase a string.",
 		"pkg": "@stdlib/string/uppercase",
-		"group": "Utils"
+		"group": "utils"
 	}
 ]
