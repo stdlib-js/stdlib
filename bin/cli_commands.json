@@ -3,7 +3,7 @@
 		"cmd": "help [command]",
 		"desc": "Print a help message.",
 		"pkg": "",
-		"group": ""
+		"group": "general"
 	},
 	{
 		"cmd": "arch",
@@ -39,7 +39,7 @@
 		"cmd": "datasets",
 		"desc": "Retrieve a dataset.",
 		"pkg": "@stdlib/datasets",
-		"group": ""
+		"group": "general"
 	},
 	{
 		"cmd": "ends-with",
@@ -165,7 +165,7 @@
 		"cmd": "repl",
 		"desc": "Start a REPL.",
 		"pkg": "@stdlib/repl",
-		"group": ""
+		"group": "general"
 	},
 	{
 		"cmd": "replace",
