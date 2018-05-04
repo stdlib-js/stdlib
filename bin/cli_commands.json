@@ -49,7 +49,7 @@
 	},
 	{
 		"command": "from-code-point",
-		"description": "Create a string from a sequence of code points.",
+		"description": "Create a string from code points.",
 		"path": "@stdlib/string/from-code-point",
 		"group": "utils"
 	},
