@@ -3174,47 +3174,6 @@ rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 
 /**
-* Enforce that only variables and functions are assigned to `module.exports`.
-*
-* @name module-exports-assignments
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* var normal = require( '@stdlib/random/base/normal' );
-* var beta = require( '@stdlib/random/base/beta' );
-*
-*
-* // EXPORTS //
-*
-* module.exports = {
-*     'normal': normal,
-*     'beta': beta
-* };
-*
-* @example
-* // Good...
-* var normal = require( '@stdlib/random/base/normal' );
-* var beta = require( '@stdlib/random/base/beta' );
-*
-*
-* // VARIABLES //
-*
-* var ns = {
-*     'normal': normal,
-*     'beta': beta
-* };
-*
-*
-* // EXPORTS //
-*
-* module.exports = ns;
-*/
-rules[ 'stdlib/module-exports-assignments' ] = 'error';
-
-/**
 * Enforce that export statements are placed at the end of a file.
 *
 * @name module-exports-last
@@ -3409,6 +3368,47 @@ rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
 * // returns ~7.389
 */
 rules[ 'stdlib/no-builtin-math' ] = 'error';
+
+/**
+* Enforce that only variables and functions are assigned to `module.exports`.
+*
+* @name no-dynamic-exports
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var normal = require( '@stdlib/random/base/normal' );
+* var beta = require( '@stdlib/random/base/beta' );
+*
+*
+* // EXPORTS //
+*
+* module.exports = {
+*     'normal': normal,
+*     'beta': beta
+* };
+*
+* @example
+* // Good...
+* var normal = require( '@stdlib/random/base/normal' );
+* var beta = require( '@stdlib/random/base/beta' );
+*
+*
+* // VARIABLES //
+*
+* var ns = {
+*     'normal': normal,
+*     'beta': beta
+* };
+*
+*
+* // EXPORTS //
+*
+* module.exports = ns;
+*/
+rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 
 /**
 * Enforce that one does not use nested property access for `require()` expressions.

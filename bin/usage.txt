@@ -1,16 +1,51 @@
 
-Usage: stdlib [options] <command> [args]
+Usage: stdlib [options] <command> [args] [-- <options>]
 
 Options:
 
-  -V,    --version             Print the package version.
+  -h,    --help                Print this message.
+  -V,    --version             Print the version.
 
 Commands:
 
   help [command]               Print a help message.
+  arch                         Operating system CPU architecture.
+  bundle-pkg-list              Bundle a list of stdlib packages.
+  capitalize                   Capitalize the first character in a string.
+  configdir                    Configuration directory path.
+  cwd                          Current working directory.
   datasets                     Retrieve a dataset.
-  ls                           List package names.
-  ls-tree                      Show package tree.
-  ns                           Print namespace.
+  ends-with                    Test if a string ends with another string.
+  from-code-point              Create a string from a sequence of code points.
+  homedir                      Home directory path.
+  lpad                         Left pad a string.
+  ltrim                        Left trim a string.
+  lowercase                    Lowercase a string.
+  ls                           List stdlib package names.
+  ls-tree                      Show stdlib package tree.
+  node-version                 Node.js version.
+  ns                           Print stdlib namespace.
+  num-cpus                     Number of CPUs.
+  padstr                       Pad a string.
+  percent-encode               Percent-encode a UTF-16 encoded string.
+  platform                     Platform.
+  remove-first                 Remove the first character in a string.
+  remove-last                  Remove the last character in a string.
+  remove-punctuation           Remove punctuation characters from a string.
+  remove-utf8-bom              Remove a UTF-8 byte order mark (BOM).
+  remove-words                 Remove a list of words from a string.
+  repstr                       Repeat a string.
   repl                         Start a REPL.
+  replace                      Replace search occurrences in a string.
+  reverse                      Reverse a string.
+  rpad                         Right pad a string.
+  rtrim                        Right trim a string.
+  sparkline                    Plot a sparkline.
+  startcase                    Capitalize each word in a string.
+  starts-with                  Test if a string starts with another string.
+  tmpdir                       Directory path for storing temporary files.
+  trim                         Trim a string.
+  umask                        Process mask.
+  uncapitalize                 Uncapitalize a string.
+  uppercase                    Uppercase a string.
 

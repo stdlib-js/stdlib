@@ -1,0 +1,41 @@
+
+{{alias}}( [out,] re, im, n )
+    Rounds a complex number to the nearest multiple of `10^n`.
+
+    When operating on floating-point numbers in bases other than `2`, rounding
+    to specified digits can be inexact.
+
+    Parameters
+    ----------
+    out: Array|TypedArray|Object (optional)
+        Output array.
+
+    re: number
+        Real component.
+
+    im: number
+        Imaginary component.
+
+    n: integer
+        Integer power of 10.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Real and imaginary components.
+
+    Examples
+    --------
+    > var out = {{alias}}( 5.555, -3.336, -2 )
+    [ 5.56, -3.34 ]
+
+    // Provide an output array:
+    > out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var v = {{alias}}( out, 5.555, -3.336, -2 )
+    <Float64Array>[ 5.56, -3.34 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,242 @@
+[
+	{
+		"cmd": "help [command]",
+		"desc": "Print a help message.",
+		"path": "",
+		"group": ""
+	},
+	{
+		"cmd": "arch",
+		"desc": "Operating system CPU architecture.",
+		"path": "./lib/node_modules/@stdlib/os/arch/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "bundle-pkg-list",
+		"desc": "Bundle a list of stdlib packages.",
+		"path": "./lib/node_modules/@stdlib/_tools/bundle/pkg-list/bin/cli",
+		"group": "Tools"
+	},
+	{
+		"cmd": "capitalize",
+		"desc": "Capitalize the first character in a string.",
+		"path": "./lib/node_modules/@stdlib/string/capitalize/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "configdir",
+		"desc": "Configuration directory path.",
+		"path": "./lib/node_modules/@stdlib/os/configdir/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "cwd",
+		"desc": "Current working directory.",
+		"path": "./lib/node_modules/@stdlib/process/cwd/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "datasets",
+		"desc": "Retrieve a dataset.",
+		"path": "./lib/node_modules/@stdlib/datasets/bin/cli",
+		"group": ""
+	},
+	{
+		"cmd": "ends-with",
+		"desc": "Test if a string ends with another string.",
+		"path": "./lib/node_modules/@stdlib/string/ends-with/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "from-code-point",
+		"desc": "Create a string from a sequence of code points.",
+		"path": "./lib/node_modules/@stdlib/string/from-code-point/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "homedir",
+		"desc": "Home directory path.",
+		"path": "./lib/node_modules/@stdlib/os/homedir/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "lpad",
+		"desc": "Left pad a string.",
+		"path": "./lib/node_modules/@stdlib/string/left-pad/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "ltrim",
+		"desc": "Left trim a string.",
+		"path": "./lib/node_modules/@stdlib/string/left-trim/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "lowercase",
+		"desc": "Lowercase a string.",
+		"path": "./lib/node_modules/@stdlib/string/lowercase/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "ls",
+		"desc": "List stdlib package names.",
+		"path": "./lib/node_modules/@stdlib/_tools/pkgs/names/bin/cli",
+		"group": "Meta"
+	},
+	{
+		"cmd": "ls-tree",
+		"desc": "Show stdlib package tree.",
+		"path": "./lib/node_modules/@stdlib/_tools/pkgs/tree/bin/cli",
+		"group": "Meta"
+	},
+	{
+		"cmd": "node-version",
+		"desc": "Node.js version.",
+		"path": "./lib/node_modules/@stdlib/process/node-version/bin/cli",
+		"group": "Meta"
+	},
+	{
+		"cmd": "ns",
+		"desc": "Print stdlib namespace.",
+		"path": "./lib/node_modules/@stdlib/namespace/bin/cli",
+		"group": "Meta"
+	},
+	{
+		"cmd": "num-cpus",
+		"desc": "Number of CPUs.",
+		"path": "./lib/node_modules/@stdlib/os/num-cpus/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "padstr",
+		"desc": "Pad a string.",
+		"path": "./lib/node_modules/@stdlib/string/pad/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "percent-encode",
+		"desc": "Percent-encode a UTF-16 encoded string.",
+		"path": "./lib/node_modules/@stdlib/string/percent-encode/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "platform",
+		"desc": "Platform.",
+		"path": "./lib/node_modules/@stdlib/os/platform/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "remove-first",
+		"desc": "Remove the first character in a string.",
+		"path": "./lib/node_modules/@stdlib/string/remove-first/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "remove-last",
+		"desc": "Remove the last character in a string.",
+		"path": "./lib/node_modules/@stdlib/string/remove-last/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "remove-punctuation",
+		"desc": "Remove punctuation characters from a string.",
+		"path": "./lib/node_modules/@stdlib/string/remove-punctuation/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "remove-utf8-bom",
+		"desc": "Remove a UTF-8 byte order mark (BOM).",
+		"path": "./lib/node_modules/@stdlib/string/remove-first/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "remove-words",
+		"desc": "Remove a list of words from a string.",
+		"path": "./lib/node_modules/@stdlib/string/remove-words/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "repstr",
+		"desc": "Repeat a string.",
+		"path": "./lib/node_modules/@stdlib/string/repeat/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "repl",
+		"desc": "Start a REPL.",
+		"path": "./lib/node_modules/@stdlib/repl/bin/cli",
+		"group": ""
+	},
+	{
+		"cmd": "replace",
+		"desc": "Replace search occurrences in a string.",
+		"path": "./lib/node_modules/@stdlib/string/replace/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "reverse",
+		"desc": "Reverse a string.",
+		"path": "./lib/node_modules/@stdlib/string/reverse/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "rpad",
+		"desc": "Right pad a string.",
+		"path": "./lib/node_modules/@stdlib/string/right-pad/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "rtrim",
+		"desc": "Right trim a string.",
+		"path": "./lib/node_modules/@stdlib/string/right-trim/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "sparkline",
+		"desc": "Plot a sparkline.",
+		"path": "./lib/node_modules/@stdlib/plot/sparklines/unicode/bin/cli",
+		"group": "Plot"
+	},
+	{
+		"cmd": "startcase",
+		"desc": "Capitalize each word in a string.",
+		"path": "./lib/node_modules/@stdlib/string/startcase/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "starts-with",
+		"desc": "Test if a string starts with another string.",
+		"path": "./lib/node_modules/@stdlib/string/starts-with/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "tmpdir",
+		"desc": "Directory path for storing temporary files.",
+		"path": "./lib/node_modules/@stdlib/os/tmpdir/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "trim",
+		"desc": "Trim a string.",
+		"path": "./lib/node_modules/@stdlib/string/trim/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "umask",
+		"desc": "Process mask.",
+		"path": "./lib/node_modules/@stdlib/process/umask/bin/cli",
+		"group": "System"
+	},
+	{
+		"cmd": "uncapitalize",
+		"desc": "Uncapitalize a string.",
+		"path": "./lib/node_modules/@stdlib/string/uncapitalize/bin/cli",
+		"group": "Utils"
+	},
+	{
+		"cmd": "uppercase",
+		"desc": "Uppercase a string.",
+		"path": "./lib/node_modules/@stdlib/string/uppercase/bin/cli",
+		"group": "Utils"
+	}
+]

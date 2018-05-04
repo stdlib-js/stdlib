@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # dist
 
 > Distributable files.
@@ -87,7 +107,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 9.183 MB       | 1.73 MB            | 393.738 kB            |
+| 9.283 MB       | 1.746 MB           | 397.667 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -95,7 +115,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 9.205 MB       | 1.746 MB           | 394.54 kB             |
+| 9.305 MB       | 1.762 MB           | 398.538 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -118,7 +138,7 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 
 | stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 51.914 MB                   | 15.869 MB                      |
+| 51.923 MB                   | 15.871 MB                      |
 
 <!-- </bundle-stats> -->
 
@@ -140,13 +160,34 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 </script>
 ```
 
+The REPL help bundle, `stdlib-repl-help`, contains REPL help texts for packages exposed via the project REPL and exposes a single `function` which returns an `object` mapping REPL aliases to help texts. While already included in the REPL bundle, this bundle is exposed separately in the event that one wants to consume the REPL help texts independently of the project REPL.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-repl-help.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var help = stdlib_repl_help.repl.help;
+
+    // Print the help docs:
+    console.log( help() );
+</script>
+```
+
 ##### Bundle Statistics
 
 <!-- <bundle-stats files="stdlib-repl.min.js,stdlib-repl.min.js.gz"> -->
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 61.703 MB          | 16.982 MB             |
+| 56.141 MB          | 16.485 MB             |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-repl-help.min.js,stdlib-repl-help.min.js.gz"> -->
+
+| stdlib-repl-help.min.js | stdlib-repl-help.min.js.gz |
+| ----------------------- | -------------------------- |
+| 1.727 MB                | 211.36 kB                  |
 
 <!-- </bundle-stats> -->
 

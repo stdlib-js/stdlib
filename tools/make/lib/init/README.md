@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-This directory contains [`make`][make] rules for initializing the project developer environment (e.g., add [Git][git] hooks, installing custom ESLint plugins, etc).
+This directory contains [`make`][make] rules for initializing the project development environment (e.g., adding [Git][git] hooks, installing custom ESLint plugins, etc).
 
 </section>
 
@@ -46,7 +46,7 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 #### init
 
-> This command should **always** be invoked in order to ensure the project development is properly initialized. Failure to do so will result in the failure of various development aids, including linting, task runners, and more.
+> This command should **always** be invoked in order to ensure the project development environment is properly initialized. Failure to do so will result in the failure of various development aids, including linting, task runners, and more.
 
 Performs development initialization tasks.
 
