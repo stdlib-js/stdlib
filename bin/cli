@@ -54,7 +54,7 @@ function onError( error ) {
 function findCommand( cmd ) {
 	var i;
 	for ( i = 0; i < COMMANDS.length; i++ ) {
-		if ( cmd === COMMANDS[ i ].cmd ) {
+		if ( cmd === COMMANDS[ i ].command ) {
 			return COMMANDS[ i ];
 		}
 	}
@@ -111,13 +111,13 @@ function main() {
 		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
 		}
-		subargs = [ getPath( cmd.pkg ), '--help' ];
+		subargs = [ getPath( cmd.path ), '--help' ];
 	} else {
 		cmd = findCommand( args[ 0 ] );;
 		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
 		}
-		subargs = [ getPath( cmd.pkg ) ];
+		subargs = [ getPath( cmd.path ) ];
 		for ( i = 1; i < args.length; i++ ) {
 			subargs.push( args[ i ] );
 		}
