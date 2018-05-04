@@ -36,6 +36,12 @@
 		"group": "system"
 	},
 	{
+		"command": "convert-path",
+		"description": "Convert between Windows and POSIX paths.",
+		"path": "@stdlib/utils/convert-path",
+		"group": "utilities"
+	},
+	{
 		"command": "cwd",
 		"description": "Current working directory.",
 		"path": "@stdlib/process/cwd",
@@ -366,6 +372,18 @@
 		"group": "assert"
 	},
 	{
+		"command": "js-eval",
+		"description": "Evaluate a JavaScript string.",
+		"path": "@stdlib/utils/js-eval",
+		"group": "utilities"
+	},
+	{
+		"command": "library-manifest",
+		"description": "Load a manifest for compiling source files.",
+		"path": "@stdlib/tools/library-manifest",
+		"group": "meta"
+	},
+	{
 		"command": "lpad",
 		"description": "Left pad a string.",
 		"path": "@stdlib/string/left-pad",
@@ -432,9 +450,21 @@
 		"group": "system"
 	},
 	{
+		"command": "open-url",
+		"description": "Open a URL.",
+		"path": "@stdlib/utils/open-url",
+		"group": "utilities"
+	},
+	{
 		"command": "padstr",
 		"description": "Pad a string.",
 		"path": "@stdlib/string/pad",
+		"group": "utilities"
+	},
+	{
+		"command": "parallel",
+		"description": "Execute scripts in parallel.",
+		"path": "@stdlib/utils/parallel",
 		"group": "utilities"
 	},
 	{
@@ -472,6 +502,18 @@
 		"description": "Read a list of files.",
 		"path": "@stdlib/fs/read-file-list",
 		"group": "filesystem"
+	},
+	{
+		"command": "realmax",
+		"description": "Maximum representable finite value.",
+		"path": "@stdlib/utils/real-max",
+		"group": "utilities"
+	},
+	{
+		"command": "realmin",
+		"description": "Minimum representable finite value.",
+		"path": "@stdlib/utils/real-min",
+		"group": "utilities"
 	},
 	{
 		"command": "remove-first",
@@ -552,6 +594,18 @@
 		"group": "utilities"
 	},
 	{
+		"command": "safeintmax",
+		"description": "Maximum representable safe integer value.",
+		"path": "@stdlib/utils/safe-int-max",
+		"group": "utilities"
+	},
+	{
+		"command": "safeintmin",
+		"description": "Minimum representable safe integer value.",
+		"path": "@stdlib/utils/safe-int-min",
+		"group": "utilities"
+	},
+	{
 		"command": "seconds-in-month",
 		"description": "Calculate the number of seconds in a month.",
 		"path": "@stdlib/time/seconds-in-month",
@@ -562,6 +616,12 @@
 		"description": "Calculate the number of seconds in a year.",
 		"path": "@stdlib/time/seconds-in-year",
 		"group": "time"
+	},
+	{
+		"command": "sizeof",
+		"description": "Size (in bytes) of a numeric data type.",
+		"path": "@stdlib/utils/size-of",
+		"group": "utilities"
 	},
 	{
 		"command": "sparkline",
@@ -582,6 +642,18 @@
 		"group": "utilities"
 	},
 	{
+		"command": "temp-http-server",
+		"description": "Create a temporary HTTP server.",
+		"path": "@stdlib/tools/disposable-http-server",
+		"group": "utilities"
+	},
+	{
+		"command": "timeit",
+		"description": "Time a JavaScript snippet.",
+		"path": "@stdlib/utils/timeit",
+		"group": "benchmarking"
+	},
+	{
 		"command": "tmpdir",
 		"description": "Directory path for storing temporary files.",
 		"path": "@stdlib/os/tmpdir",
@@ -591,6 +663,18 @@
 		"command": "trim",
 		"description": "Trim a string.",
 		"path": "@stdlib/string/trim",
+		"group": "utilities"
+	},
+	{
+		"command": "typemax",
+		"description": "Maximum value for a numeric data type.",
+		"path": "@stdlib/utils/type-max",
+		"group": "utilities"
+	},
+	{
+		"command": "typemin",
+		"description": "Minimum value for a numeric data type.",
+		"path": "@stdlib/utils/type-min",
 		"group": "utilities"
 	},
 	{

@@ -60,6 +60,7 @@ Assert:
 Benchmarking:
 
   bench                           Run JavaScript benchmark files.
+  timeit                          Time a JavaScript snippet.
 
 Filesystem:
 
@@ -74,6 +75,7 @@ Filesystem:
 
 Meta:
 
+  library-manifest                Load a manifest for compiling source files.
   ls                              List stdlib package names.
   ls-tree                         Show stdlib package tree.
   node-version                    Node.js version.
@@ -117,13 +119,19 @@ Tools:
 Utilities:
 
   capitalize                      Capitalize the first character in a string.
+  convert-path                    Convert between Windows and POSIX paths.
   ends-with                       Test if a string ends with another string.
   from-code-point                 Create a string from code points.
+  js-eval                         Evaluate a JavaScript string.
   lowercase                       Lowercase a string.
   lpad                            Left pad a string.
   ltrim                           Left trim a string.
+  open-url                        Open a URL.
   padstr                          Pad a string.
+  parallel                        Execute scripts in parallel.
   percent-encode                  Percent-encode a UTF-16 encoded string.
+  realmax                         Maximum representable finite value.
+  realmin                         Minimum representable finite value.
   remove-first                    Remove the first character in a string.
   remove-last                     Remove the last character in a string.
   remove-punctuation              Remove punctuation characters from a string.
@@ -134,9 +142,15 @@ Utilities:
   reverse                         Reverse a string.
   rpad                            Right pad a string.
   rtrim                           Right trim a string.
+  safeintmax                      Maximum representable safe integer value.
+  safeintmin                      Minimum representable safe integer value.
+  sizeof                          Size (in bytes) of a numeric data type.
   startcase                       Capitalize each word in a string.
   starts-with                     Test if a string starts with another string.
+  temp-http-server                Create a temporary HTTP server.
   trim                            Trim a string.
+  typemax                         Maximum value for a numeric data type.
+  typemin                         Minimum value for a numeric data type.
   uncapitalize                    Uncapitalize a string.
   uppercase                       Uppercase a string.
 
