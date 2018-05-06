@@ -54,11 +54,27 @@ function onError( error ) {
 function findCommand( cmd ) {
 	var i;
 	for ( i = 0; i < COMMANDS.length; i++ ) {
-		if ( cmd === COMMANDS[ i ].cmd ) {
+		if ( cmd === COMMANDS[ i ].command ) {
 			return COMMANDS[ i ];
 		}
 	}
 	return null;
+}
+
+/**
+* Resolves a CLI file path.
+*
+* @private
+* @param {string} path - package name/path
+* @returns {string} file path
+*/
+function getPath( path ) {
+	if ( /^@stdlib/.test( path ) ) {
+		// WARNING: we assume that CLIs follow the `./bin/cli` convention
+		return resolve( __dirname, '..', 'lib', 'node_modules', path, 'bin', 'cli' );
+	}
+	// Assume we are given a path relative to the root directory:
+	return resolve( __dirname, '..', path );
 }
 
 
@@ -99,15 +115,13 @@ function main() {
 		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
 		}
-		cmd = resolve( __dirname, '..', cmd.path );
-		subargs = [ cmd, '--help' ];
+		subargs = [ getPath( cmd.path ), '--help' ];
 	} else {
 		cmd = findCommand( args[ 0 ] );;
 		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
 		}
-		cmd = resolve( __dirname, '..', cmd.path );
-		subargs = [ cmd ];
+		subargs = [ getPath( cmd.path ) ];
 		for ( i = 1; i < args.length; i++ ) {
 			subargs.push( args[ i ] );
 		}

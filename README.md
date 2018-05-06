@@ -160,6 +160,22 @@ To install as a library or application dependency,
 $ npm install @stdlib/stdlib
 ```
 
+To install globally for use as a command-line utility,
+
+<!-- run-disable -->
+
+```bash
+$ npm install -g @stdlib/stdlib
+```
+
+which will expose the `stdlib` command. For example, to see available sub-commands
+
+<!-- run-disable -->
+
+```bash
+$ stdlib help
+```
+
 For distributable bundles for use in browser environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].

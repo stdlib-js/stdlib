@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stdlib",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "description": "Standard library.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
@@ -91,6 +91,7 @@
     "rehype-highlight": "^2.0.1",
     "remark": "^9.0.0",
     "remark-cli": "^5.0.0",
+    "remark-frontmatter": "^1.2.0",
     "remark-html": "^7.0.0",
     "remark-lint": "^6.0.0",
     "remark-lint-blockquote-indentation": "^1.0.0",
@@ -166,11 +167,12 @@
     "tap-summary": "^4.0.0",
     "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "to-vfile": "^2.0.0",
+    "to-vfile": "^3.0.0",
     "uglify-es": "^3.1.1",
     "uglifyify": "^5.0.0",
     "unified-lint-rule": "^1.0.1",
-    "unist-util-visit": "^1.1.0"
+    "unist-util-visit": "^1.1.0",
+    "yaml": "^0.3.0"
   },
   "engines": {
     "node": ">=0.10.0",

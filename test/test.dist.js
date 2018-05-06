@@ -66,21 +66,20 @@ tape( 'project contains a distributable file exposing a "flat" namespace (minifi
 	t.end();
 });
 
+tape( 'project contains a distributable file containing "flat" namespace help texts (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-flat-help.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.help, 'function', 'has member' );
+	t.equal( typeof bundle.help(), 'object', 'returns an object' );
+	t.end();
+});
+
 tape( 'project contains a distributable file for REPL functionality (minified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-repl.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.repl, 'function', 'is a function' );
-	t.end();
-});
-
-tape( 'project contains a distributable file for REPL help texts (minified)', function test( t ) {
-	// eslint-disable-next-line stdlib/no-dynamic-require
-	var bundle = require( join( dirpath, 'stdlib-repl-help.min.js' ) );
-	t.equal( typeof bundle, 'object', 'main export is an object' );
-	t.equal( typeof bundle.repl, 'object', 'has member' );
-	t.equal( typeof bundle.repl.help, 'function', 'has member' );
-	t.equal( typeof bundle.repl.help(), 'object', 'returns an object' );
 	t.end();
 });
 
