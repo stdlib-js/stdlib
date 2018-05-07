@@ -2795,6 +2795,49 @@ rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
 rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 
 /**
+* Require that the horizontal rule style be three consecutive asterisks `* * *`.
+*
+* @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * ---
+* *
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * * * *
+* *
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-rule-style' ] = [ 'error', '* * *' ];
+
+/**
 * Require `*` be used as the strong marker.
 *
 * @name jsdoc-strong-marker

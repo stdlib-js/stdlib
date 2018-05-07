@@ -103,27 +103,6 @@ plugins.push([
 	[ 'error', '.' ]
 ]);
 
-/**
-* Require that the horizontal rule style be three consecutive asterisks `---`.
-*
-* @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
-*
-* @example
-* <!-- Bad -->
-*
-* ---
-*
-* @example
-* <!-- Good -->
-*
-* * * *
-*
-*/
-plugins.push([
-	require( 'remark-lint-rule-style' ),
-	[ 'error', '* * *' ]
-]);
-
 
 // EXPORTS //
 
