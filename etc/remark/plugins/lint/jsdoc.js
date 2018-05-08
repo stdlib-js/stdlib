@@ -51,29 +51,6 @@ plugins.push([
 	]
 ]);
 
-/**
-* Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
-*
-* @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
-*
-* @example
-* <!-- Bad -->
-*
-* 1) Foo
-* 2) Bar
-*
-* @example
-* <!-- Good -->
-*
-* 1. Foo
-* 2. Bar
-*
-*/
-plugins.push([
-	require( 'remark-lint-ordered-list-marker-style' ),
-	[ 'error', '.' ]
-]);
-
 
 // EXPORTS //
 
