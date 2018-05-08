@@ -250,6 +250,9 @@ rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 /**
 * Require fenced code blocks to have a language flag.
 *
+* @name jsdoc-fenced-code-flag
+* @memberof rules
+* @type {Array}
 * @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-flag}
 *
 * @example
@@ -2900,6 +2903,9 @@ rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
 *
+* @name jsdoc-rule-style
+* @memberof rules
+* @type {Array}
 * @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
 *
 * @example
