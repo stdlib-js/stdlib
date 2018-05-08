@@ -248,6 +248,59 @@ rules[ 'stdlib/jsdoc-checkbox-content-indent' ] = 'error';
 rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 
 /**
+* Require fenced code blocks to have a language flag.
+*
+* @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-flag}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * ```
+* * y = x;
+* * ```
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * ```javascript
+* * y = x;
+* * ```
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-fenced-code-flag' ] = [
+	'error', {
+		'allowEmpty': false
+	}
+];
+
+/**
 * Require lowercased definition labels.
 *
 * @name jsdoc-definition-case

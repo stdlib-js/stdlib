@@ -52,35 +52,6 @@ plugins.push([
 ]);
 
 /**
-* Require fenced code blocks to have a language flag.
-*
-* @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-flag}
-*
-* @example
-* <!-- Bad -->
-*
-* ```
-* code
-* ```
-*
-* @example
-* <!-- Good -->
-*
-* ``` text
-* code
-* ```
-*/
-plugins.push([
-	require( 'remark-lint-fenced-code-flag' ),
-	[
-		'error',
-		{
-			'allowEmpty': false
-		}
-	]
-]);
-
-/**
 * Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
 *
 * @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
