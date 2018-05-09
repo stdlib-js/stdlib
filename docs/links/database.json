@@ -1859,6 +1859,17 @@
       "variance"
     ]
   },
+  "https://en.wikipedia.org/wiki/Covariance_matrix": {
+    "id": "covariance-matrix",
+    "description": "Wikipedia entry for covariance matrices.",
+    "short_url": "",
+    "keywords": [
+      "covariance",
+      "matrix",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cumulative_distribution_function": {
     "id": "cdf",
     "description": "Wikipedia entry for the cumulative distribution function.",
