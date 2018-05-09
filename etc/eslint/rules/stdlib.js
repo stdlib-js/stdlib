@@ -250,6 +250,9 @@ rules[ 'stdlib/jsdoc-code-block-style' ] = [ 'error', 'fenced' ];
 /**
 * Require fenced code blocks to have a language flag.
 *
+* @name jsdoc-fenced-code-flag
+* @memberof rules
+* @type {Array}
 * @see [fenced-code-flag]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-flag}
 *
 * @example
@@ -2624,6 +2627,56 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 
 /**
+* Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
+*
+* @name jsdoc-ordered-list-marker-style
+* @memberof rules
+* @type {Array}
+* @see [ordered-list-marker-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-ordered-list-marker-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * 1.  foo
+* * 2)  bar
+* * 3)  beep
+* *
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * 1.  foo
+* * 2.  bar
+* * 3.  beep
+* *
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-ordered-list-marker-style' ] = [ 'error', '.' ];
+
+/**
 * Prefer ordered, but allow discretion when determining appropriate ordered list marker value.
 *
 * @name jsdoc-ordered-list-marker-value
@@ -2850,6 +2903,9 @@ rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
 *
+* @name jsdoc-rule-style
+* @memberof rules
+* @type {Array}
 * @see [rule-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-rule-style}
 *
 * @example
