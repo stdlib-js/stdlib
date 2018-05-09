@@ -2884,6 +2884,16 @@
       "t"
     ]
   },
+  "https://en.wikipedia.org/wiki/Symmetric_matrix": {
+    "id": "symmetric-matrix",
+    "description": "Wikipedia entry for symmetric matrix, a matrix which equals its transpose.",
+    "short_url": "",
+    "keywords": [
+      "linear algebra",
+      "symmetric",
+      "matrix"
+    ]
+  },
   "https://en.wikipedia.org/wiki/TeX": {
     "id": "tex",
     "description": "Wikipedia entry for the TeX typesetting system.",
