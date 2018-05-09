@@ -27,7 +27,6 @@ ROADMAP.md
 .github/
 **/benchmark/
 **/build/
-**/docs/
 **/examples/
 reports/
 support/
@@ -41,6 +40,7 @@ workshops/
 # Only top-level directories:
 /etc/
 /tools/
+/docs/
 
 
 # Node.js #
