@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 <!--lint disable no-duplicate-headings-in-section-->
 
 # Talks
@@ -114,6 +134,17 @@
 <div class="image" align="center">
     <a title="WebAssembly and the Future of the Web" href="https://www.youtube.com/watch?v=iJL59lh4IJA&list=PLfMzBWSH11xa-iNnQG2555lgi4574nZOh&index=36">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/8f234f4e03a550606f46041e34000c1c206e7f9d/docs/assets/talks/nodejs_interactive_vancouver_2017_athan_reines.png" alt="WebAssembly and the Future of the Web at Node.js Interactive, Vancouver 2017">
+    </a>
+    <br>
+</div>
+
+### Node.js Add-ons for High Performance Numeric Computing
+
+> [Athan Reines][kgryte], NodeConf Argentina, October 2017
+
+<div class="image" align="center">
+    <a title="Node.js Add-ons for High Performance Numeric Computing" href="https://www.youtube.com/watch?v=mnvfej28vjk&list=PLdrSld1u9v3bksRXRSmT5G0xSjzruRsVB&index=7">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/2e3bf1763efb19a6927349204f2d8a0c57488aff/docs/assets/talks/nodeconf_argentina_2017_athan_reines.png" alt="Node.js Add-ons for High Performance Numeric Computing at NodeConf Argentina 2017">
     </a>
     <br>
 </div>
