@@ -2784,6 +2784,18 @@
       "math"
     ]
   },
+  "https://en.wikipedia.org/wiki/Skew-symmetric_matrix": {
+    "id": "skew-symmetric-matrix",
+    "description": "Wikipedia entry for skew-symmetric matrices.",
+    "short_url": "",
+    "keywords": [
+      "linear algebra",
+      "symmetric",
+      "matrix",
+      "skew-symmetric",
+      "antisymmetric"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Skewness": {
     "id": "skewness",
     "description": "Wikipedia entry for the skewness.",
