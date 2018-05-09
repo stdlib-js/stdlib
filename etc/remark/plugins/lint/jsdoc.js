@@ -16,40 +16,12 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-quote-props */
-
 'use strict';
 
 /**
 * Lint plugins for linting Markdown in JSDoc comments.
 */
 var plugins = [ require( 'remark-lint' ) ];
-
-/**
-* Require checkboxes to be either empty (unchecked) or have an `x` (checked).
-*
-* @see [checkbox-character-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-character-style}
-*
-* @example
-* <!-- Bad -->
-*
-* *   [X] checked
-*
-* @example
-* <!-- Good -->
-*
-* *   [x] checked
-*/
-plugins.push([
-	require( 'remark-lint-checkbox-character-style' ),
-	[
-		'error',
-		{
-			'checked': 'x',
-			'unchecked': ' '
-		}
-	]
-]);
 
 
 // EXPORTS //

@@ -148,6 +148,60 @@ rules[ 'stdlib/empty-line-before-comment' ] = 'error';
 rules[ 'stdlib/jsdoc-blockquote-indentation' ] = [ 'error', 2 ];
 
 /**
+* Require checkboxes to be either empty (unchecked) or have an `x` (checked).
+*
+* @name jsdoc-checkbox-character-style
+* @memberof rules
+* @type {Array}
+* @see [checkbox-character-style]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-checkbox-character-style}
+*
+* @example
+* // Bad...
+*
+* /**
+* * Squares a number.
+* *
+* * -   [X] Item
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Squares a number.
+* *
+* * -   [x] Item
+* *
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*     return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-checkbox-character-style' ] = [
+	'error',
+	{
+		'checked': 'x',
+		'unchecked': ' '
+	}
+];
+
+/**
 * Prevent checkboxes being followed by too much whitespace.
 *
 * @name jsdoc-checkbox-content-indent
