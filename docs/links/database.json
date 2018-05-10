@@ -2661,6 +2661,17 @@
       "url-encoding"
     ]
   },
+  "https://en.wikipedia.org/wiki/Persymmetric_matrix": {
+    "id": "persymmetric-matrix",
+    "description": "Wikipedia entry for persymmetric matrices.",
+    "short_url": "",
+    "keywords": [
+      "persymmetric",
+      "matrix",
+      "linear algebra",
+      "symmetric"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Poisson_distribution": {
     "id": "poisson-distribution",
     "description": "Wikipedia entry for the Poisson distribution.",
