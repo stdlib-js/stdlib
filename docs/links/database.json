@@ -1761,6 +1761,17 @@
       "cauchy"
     ]
   },
+  "https://en.wikipedia.org/wiki/Centrosymmetric_matrix": {
+    "id": "centrosymmetric-matrix",
+    "description": "Wikipedia entry for centrosymmetric matrices (i.e., matrices symmetric about their center).",
+    "short_url": "",
+    "keywords": [
+      "matrix",
+      "centrosymmetric",
+      "symmetric",
+      "linear algebra"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Chi-squared_distribution": {
     "id": "chisquare-distribution",
     "description": "Wikipedia entry for the chi-squared distribution.",
