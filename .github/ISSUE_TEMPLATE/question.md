@@ -4,7 +4,7 @@ about: Got a question? Ask us on Gitter! 🤗
 
 ---
 
---------------^ Click "Preview"!
+<!-- ----------^ Click "Preview"! -->
 
 GitHub issues are intended for reporting bugs, so we recommend not using this medium for asking general (non-bug related) questions. 😁
 

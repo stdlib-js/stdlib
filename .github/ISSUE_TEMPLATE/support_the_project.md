@@ -4,9 +4,9 @@ about: Want to help support the project? 😍
 
 ---
 
-<!--lint disable first-heading-level-->
+<!-- ----------^ Click "Preview"! -->
 
---------------^ Click "Preview"!
+<!--lint disable first-heading-level-->
 
 ## Support Us
 
