@@ -17,6 +17,7 @@
     "stdlib": "./bin/cli"
   },
   "main": "./lib",
+  "browser": "./dist/stdlib-flat.min.js",
   "directories": {
     "doc": "./docs",
     "example": "./examples",
