@@ -2681,7 +2681,7 @@ rules[ 'stdlib/jsdoc-no-undefined-references' ] = 'error';
 rules[ 'stdlib/jsdoc-no-unused-definitions' ] = 'error';
 
 /**
-* Require ordered lists to use periods (e.g., `1.`, `2.`, etc).
+* Require ordered lists use periods (e.g., `1.`, `2.`, etc).
 *
 * @name jsdoc-ordered-list-marker-style
 * @memberof rules
