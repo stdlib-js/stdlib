@@ -141,7 +141,7 @@ tape( 'when invoked with a `-V` flag, the command-line interface prints the vers
 	}
 });
 
-tape( 'the command-line interface prints the help text for individual commands to `stderr`', function test( t ) {
+tape( 'the command-line interface prints the help text for individual commands to `stderr`', opts, function test( t ) {
 	var command;
 	var idx;
 
