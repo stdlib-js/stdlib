@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stdlib",
-  "version": "0.0.39",
+  "version": "0.0.40",
   "description": "Standard library.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
@@ -17,6 +17,8 @@
     "stdlib": "./bin/cli"
   },
   "main": "./lib",
+  "browser": "./dist/stdlib-flat.min.js",
+  "unpkg": "./dist/stdlib-flat.min.js",
   "directories": {
     "doc": "./docs",
     "example": "./examples",
