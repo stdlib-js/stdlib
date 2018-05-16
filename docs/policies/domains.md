@@ -17,6 +17,7 @@ List of **currently** unused domains:
 -   [libstd.com](http://libstd.com)
 -   [libstd.org](http://libstd.org)
 -   [stdlib.ai](http://stdlib.ai)
+-   [stdlib.app](http://stdlib.app)
 -   [stdlibjs.com](http://stdlibjs.com)
 -   [stdlib.co](http://stdlib.co)
 -   [stdlibjs.co](http://stdlibjs.co)
