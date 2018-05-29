@@ -20,3 +20,4 @@
 
 include $(TOOLS_MAKE_LIB_DIR)/markdown/asset_links.mk
 include $(TOOLS_MAKE_LIB_DIR)/markdown/equations.mk
+include $(TOOLS_MAKE_LIB_DIR)/markdown/namespace_toc.mk
