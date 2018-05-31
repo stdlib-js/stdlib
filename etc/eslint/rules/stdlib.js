@@ -3408,6 +3408,74 @@ rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 rules[ 'stdlib/module-exports-last' ] = 'error';
 
 /**
+* Enforce that packages in a namespace `index.js` file are listed in alphabetical order.
+*
+* @name namespace-index-order
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /*
+* * When adding modules to the namespace, ensure that they are added in alphabetical order * according to module name.
+* *\/
+*
+* // MODULES //
+*
+* var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
+*
+*
+* // MAIN //
+*
+* var ns = {};
+*
+* /**
+* * @name MAX_TYPED_ARRAY_LENGTH
+* * @memberof ns
+* * @see {@link module:@stdlib/constants/array/max-typed-array-length}
+* *\/
+* setReadOnly( ns, 'MAX_TYPED_ARRAY_LENGTH', require( '@stdlib/constants/array/max-typed-array-length' ) );
+*
+* /**
+* * @name MAX_ARRAY_LENGTH
+* * @memberof ns
+* * @see {@link module:@stdlib/constants/array/max-array-length}
+* *\/
+* setReadOnly( ns, 'MAX_ARRAY_LENGTH', require( '@stdlib/constants/array/max-array-length' ) );
+*
+* @example
+* // Good...
+* /*
+* * When adding modules to the namespace, ensure that they are added in alphabetical order * according to module name.
+* *\/
+*
+* // MODULES //
+*
+* var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
+*
+*
+* // MAIN //
+*
+* var ns = {};
+*
+* /**
+* * @name MAX_ARRAY_LENGTH
+* * @memberof ns
+* * @see {@link module:@stdlib/constants/array/max-array-length}
+* *\/
+* setReadOnly( ns, 'MAX_ARRAY_LENGTH', require( '@stdlib/constants/array/max-array-length' ) );
+*
+* /**
+* * @name MAX_TYPED_ARRAY_LENGTH
+* * @memberof ns
+* * @see {@link module:@stdlib/constants/array/max-typed-array-length}
+* *\/
+* setReadOnly( ns, 'MAX_TYPED_ARRAY_LENGTH', require( '@stdlib/constants/array/max-typed-array-length' ) );
+*/
+rules[ 'stdlib/namespace-index-order' ] = 'error';
+
+/**
 * Enforce that the `Array` constructor is invoked with the `new` keyword.
 *
 * @name new-cap-array
