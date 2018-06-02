@@ -18,17 +18,11 @@
 
 # VARIABLES #
 
-# Define the commit message for processing Markdown namespace table of contents:
-GIT_COMMIT_MESSAGE_TOCS ?= 'Process namespace table of contents'
-
 # Define the commit message for adding packages to namespace table of contents:
-GIT_COMMIT_MESSAGE_SRC_URLS ?= 'Insert packages to namespace table of contents'
+GIT_COMMIT_MESSAGE_TOCS ?= 'Update namespace table of contents'
 
-# Define the command to commit staged files after processing Markdown equations:
+# Define the command to commit staged files after updating namespace table of contents:
 GIT_COMMIT_TOCS ?= $(GIT_COMMIT) -m $(GIT_COMMIT_MESSAGE_TOCS)
-
-# Define the command to commit staged files after inserting resource URLs:
-GIT_COMMIT_SRC_URLS ?= $(GIT_COMMIT) -m $(GIT_COMMIT_MESSAGE_SRC_URLS)
 
 # Define the path to the remark configuration file:
 REMARK_TOC_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
@@ -51,26 +45,20 @@ REMARK_TOC_FLAGS ?= \
 	--ignore-path $(REMARK_TOC_IGNORE)
 
 # Define the remark output option:
-REMARK_EQUATIONS_OUTPUT_FLAG ?= --output
+REMARK_TOC_OUTPUT_FLAG ?= --output
 
 
 # TARGETS #
 
-# Process Markdown files containing namespace table of contents.
+# Update table of contents in Markdown files containing namespace table of contents comments.
 #
-# This target processes Markdown files containing Markdown equation elements as follows:
-#
-# 1.  Files containing equation comments are transformed to include equation elements.
-# 2.  SVG files are generated for each equation.
-# 3.  Processed files are committed to source control.
-# 4.  Resource URLs are inserted in image equation elements.
-# 5.  Processed files are committed to source control.
+# Processed files are committed to source control.
 
 markdown-namespace-tocs: $(NODE_MODULES)
 	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_TOC_FLAGS) \
 		$(REMARK_TOC_PLUGIN_FLAGS) \
-		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
+		$(REMARK_TOC_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_TOCS)
 
