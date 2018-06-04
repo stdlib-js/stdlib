@@ -71,6 +71,6 @@ lint-license-headers: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 lint-license-headers-files: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo $$file; \
-	done | grep "$(license_header_filter)" | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	done | grep "$(license_header_filter)" || true | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-files
