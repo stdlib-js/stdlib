@@ -84,6 +84,7 @@ function getPath( path ) {
 * Main execution sequence.
 *
 * @private
+* @returns {void}
 */
 function main() {
 	var subargs;
@@ -111,13 +112,13 @@ function main() {
 		if ( args.length === 1 ) {
 			return cli.help();
 		}
-		cmd = findCommand( args[ 1 ] );;
+		cmd = findCommand( args[ 1 ] );
 		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
 		}
 		subargs = [ getPath( cmd.path ), '--help' ];
 	} else {
-		cmd = findCommand( args[ 0 ] );;
+		cmd = findCommand( args[ 0 ] );
 		if ( cmd === null ) {
 			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
 		}
