@@ -2504,6 +2504,19 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mean_absolute_error": {
+    "id": "mean-absolute-error",
+    "description": "Wikipedia entry for the mean absolute error which is a measure of the difference between two continuous variables.",
+    "short_url": "",
+    "keywords": [
+      "stats",
+      "statistics",
+      "mean",
+      "average",
+      "avg",
+      "error"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Median": {
     "id": "median",
     "description": "Wikipedia entry for the median.",
