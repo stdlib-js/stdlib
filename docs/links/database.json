@@ -1276,6 +1276,18 @@
       "javascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator": {
+    "id": "mdn-iterator-symbol",
+    "description": "Documentation for the symbol which specifies the default iterator for an object.",
+    "short_url": "",
+    "keywords": [
+      "javascript",
+      "symbol",
+      "iterator",
+      "documentation",
+      "docs"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag": {
     "id": "mdn-symbol-tostringtag",
     "description": "Mozilla Developer Network (MDN) documentation for the Symbol.toStringTag property.",
