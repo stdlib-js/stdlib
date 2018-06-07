@@ -71,3 +71,11 @@
 *
 * @see [RegExp]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp}
 */
+
+/**
+* An iterator protocol-compliant object.
+*
+* @typeof {Object} Iterator
+*
+* @see [Iteration protocols]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols}
+*/
