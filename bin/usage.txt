@@ -24,6 +24,7 @@ Assert:
   has-int16array-support          Detect Int16Array support.
   has-int32array-support          Detect Int32Array support.
   has-int8array-support           Detect Int8Array support.
+  has-iterator-symbol-support     Detect Symbol.iterator support.
   has-map-support                 Detect Map support.
   has-node-buffer-support         Detect Node buffer support.
   has-proxy-support               Detect Proxy support.

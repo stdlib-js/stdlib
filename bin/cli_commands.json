@@ -156,6 +156,12 @@
 		"group": "assert"
 	},
 	{
+		"command": "has-iterator-symbol-support",
+		"description": "Detect Symbol.iterator support.",
+		"path": "@stdlib/assert/has-iterator-symbol-support",
+		"group": "assert"
+	},
+	{
 		"command": "has-map-support",
 		"description": "Detect Map support.",
 		"path": "@stdlib/assert/has-map-support",
