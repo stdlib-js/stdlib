@@ -2517,6 +2517,31 @@
       "error"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mean_absolute_percentage_error": {
+    "id": "mean-absolute-percentage-error",
+    "description": "Wikipedia entry for the mean absolute percentage error (MAPE), which is used to access how well a model's forecast compares to actual values.",
+    "short_url": "",
+    "keywords": [
+      "mpe",
+      "mape",
+      "statistics",
+      "stats",
+      "forecasting",
+      "error"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Mean_percentage_error": {
+    "id": "mean-percentage-error",
+    "description": "Wikipedia entry for the mean percentage error (MPE), which is used to assess how well a model's forecast compares to actual values.",
+    "short_url": "",
+    "keywords": [
+      "mpe",
+      "statistics",
+      "stats",
+      "forecasting",
+      "error"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Median": {
     "id": "median",
     "description": "Wikipedia entry for the median.",
