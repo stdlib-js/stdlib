@@ -2516,6 +2516,20 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mean_Directional_Accuracy_%28MDA%29": {
+    "id": "mean-directional-accuracy",
+    "description": "Wikipedia entry for the mean directional accuracy, a measure of prediction accuracy.",
+    "short_url": "",
+    "keywords": [
+      "statistics",
+      "stats",
+      "forecasting",
+      "forecast",
+      "mda",
+      "accuracy",
+      "prediction"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Mean_absolute_error": {
     "id": "mean-absolute-error",
     "description": "Wikipedia entry for the mean absolute error which is a measure of the difference between two continuous variables.",
