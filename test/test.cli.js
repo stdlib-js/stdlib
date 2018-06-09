@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable no-restricted-syntax */
+
 'use strict';
 
 // MODULES //
