@@ -1,0 +1,37 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes the mean
+    arctangent absolute percentage error (MAAPE).
+
+    If provided input values, the accumulator function returns an updated mean
+    arctangent absolute percentage error. If not provided input values, the
+    accumulator function returns the current mean arctangent absolute percentage
+    error.
+
+    Note that, unlike the mean absolute percentage error (MAPE), the mean
+    arctangent absolute percentage error is expressed in radians on the interval
+    [0,π/2].
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    ~0.3218
+    > m = accumulator( 5.0, 2.0 )
+    ~0.6523
+    > m = accumulator()
+    ~0.6523
+
+    See Also
+    --------
+
