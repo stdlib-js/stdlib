@@ -2859,6 +2859,20 @@
       "rayleigh"
     ]
   },
+  "https://en.wikipedia.org/wiki/Residual_sum_of_squares": {
+    "id": "residual-sum-of-squares",
+    "description": "Wikipedia entry for the residual sum of squares, which is the sum of the squares of residuals.",
+    "short_url": "",
+    "keywords": [
+      "rss",
+      "ssr",
+      "sse",
+      "residuals",
+      "model",
+      "statistics",
+      "stats"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Rounding": {
     "id": "rounding",
     "description": "Wikipedia entry on rounding, an operation which replaces a numerical value by another value that is approximately equal to the original number but has a shorter, simpler, or more explicit representation.",
