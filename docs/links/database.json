@@ -710,6 +710,17 @@
       "rate limit"
     ]
   },
+  "https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Generator": {
+    "id": "mdn-generator-object",
+    "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 generator objects.",
+    "short_url": "",
+    "keywords": [
+      "generator",
+      " object",
+      " javascript",
+      " ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware/hardwareConcurrency": {
     "id": "hardware-concurrency",
     "description": "Mozilla Developer Network (MDN) documentation for the hardware concurrency API to retrieve the number of logical processors on the computer.",
