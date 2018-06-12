@@ -2579,6 +2579,19 @@
       "error"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mean_squared_error": {
+    "id": "mean-squared-error",
+    "description": "Wikipedia entry for the mean squared error (MSE).",
+    "short_url": "",
+    "keywords": [
+      "mse",
+      "statistics",
+      "stats",
+      "error",
+      "model",
+      "prediction"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Median": {
     "id": "median",
     "description": "Wikipedia entry for the median.",
