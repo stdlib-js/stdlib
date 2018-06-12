@@ -2897,6 +2897,20 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Root-mean-square_deviation": {
+    "id": "root-mean-squared-error",
+    "description": "Wikipedia entry for the root-mean-squared error, which represents the sample standard deviation of the differences between actual and predicted values.",
+    "short_url": "",
+    "keywords": [
+      "rmse",
+      "rmsd",
+      "mse",
+      "mean squared error",
+      "statistics",
+      "stats",
+      "modeling"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Rounding": {
     "id": "rounding",
     "description": "Wikipedia entry on rounding, an operation which replaces a numerical value by another value that is approximately equal to the original number but has a shorter, simpler, or more explicit representation.",
