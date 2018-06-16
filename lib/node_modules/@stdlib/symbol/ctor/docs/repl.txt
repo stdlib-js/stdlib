@@ -1,0 +1,27 @@
+
+{{alias}}( [description] )
+    Returns a symbol.
+
+    Unlike conventional constructors, this function does **not** support the
+    `new` keyword.
+
+    This function is only supported in environments which support symbols.
+
+    Parameters
+    ----------
+    description: string (optional)
+        Symbol description which can be used for debugging but not to access the
+        symbol itself.
+
+    Returns
+    -------
+    out: symbol
+        Symbol.
+
+    Examples
+    --------
+    > var s = ( {{alias}} ) ? {{alias}}( 'beep' ) : null
+
+    See Also
+    --------
+
