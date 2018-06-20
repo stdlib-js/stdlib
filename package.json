@@ -168,7 +168,7 @@
     "tap-summary": "^4.0.0",
     "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "to-vfile": "^4.0.0",
+    "to-vfile": "^5.0.0",
     "uglify-es": "^3.1.1",
     "uglifyify": "^5.0.0",
     "unified-lint-rule": "^1.0.1",
