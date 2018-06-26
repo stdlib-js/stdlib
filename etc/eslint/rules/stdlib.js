@@ -3327,9 +3327,9 @@ rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
 /* eslint-enable stdlib/jsdoc-tag-spacing */
 
 /**
-* Require that JSDoc tags are properly padded with spaces.
+* Require that JSDoc comments of functions are not missing `@throws` tags.
 *
-* @name jsdoc-throws-annotations
+* @name jsdoc-require-throws-tags
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -3387,7 +3387,7 @@ rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
 *   return deepCopy( value, out, [value], [out], level );
 * }
 */
-rules[ 'stdlib/jsdoc-throws-annotations' ] = 'error';
+rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
 
 /**
 * Require that the unordered list marker be a dash `-`.
