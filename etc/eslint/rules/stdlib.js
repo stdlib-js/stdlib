@@ -2827,6 +2827,69 @@ rules[ 'stdlib/jsdoc-ordered-list-marker-value' ] = [ 'off', 'ordered' ];
 rules[ 'stdlib/jsdoc-private-annotation' ] = 'warn';
 
 /**
+* Require that JSDoc comments of functions are not missing `@throws` tags.
+*
+* @name jsdoc-require-throws-tags
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Copies or deep clones a value to an arbitrary depth.
+* *
+* * @param {*} value - value to copy
+* * @param {NonNegativeInteger} [level=+infinity] - copy depth
+* * @returns {*} value copy
+* *\/
+* function copy( value, level ) {
+*   var out;
+*   if ( arguments.length > 1 ) {
+*     if ( !isNonNegativeInteger( level ) ) {
+*       throw new TypeError( 'invalid input argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
+*     }
+*     if ( level === 0 ) {
+*       return value;
+*     }
+*   } else {
+*     level = PINF;
+*   }
+*   out = ( isArray( value ) ) ? new Array( value.length ) : {};
+*   return deepCopy( value, out, [value], [out], level );
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Copies or deep clones a value to an arbitrary depth.
+* *
+* * @param {*} value - value to copy
+* * @param {NonNegativeInteger} [level=+infinity] - copy depth
+* * @throws {TypeError} second argument must be a nonnegative integer
+* * @returns {*} value copy
+* *\/
+* function copy( value, level ) {
+*   var out;
+*   if ( arguments.length > 1 ) {
+*     if ( !isNonNegativeInteger( level ) ) {
+*       throw new TypeError( 'invalid input argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
+*     }
+*     if ( level === 0 ) {
+*       return value;
+*     }
+*   } else {
+*     level = PINF;
+*   }
+*   out = ( isArray( value ) ) ? new Array( value.length ) : {};
+*   return deepCopy( value, out, [value], [out], level );
+* }
+*/
+rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
+
+/**
 * Enforce marker style conventions for return annotations in JSDoc examples.
 *
 * @name jsdoc-return-annotations-marker
@@ -3327,9 +3390,9 @@ rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
 /* eslint-enable stdlib/jsdoc-tag-spacing */
 
 /**
-* Require that JSDoc comments of functions are not missing `@throws` tags.
+* Require that type definitions of JSDoc tags do not contain any typos.
 *
-* @name jsdoc-require-throws-tags
+* @name jsdoc-typedef-typos
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -3338,56 +3401,37 @@ rules[ 'stdlib/jsdoc-tag-spacing' ] = 'error';
 * // Bad...
 *
 * /**
-* * Copies or deep clones a value to an arbitrary depth.
+* * Squares a number.
 * *
-* * @param {*} value - value to copy
-* * @param {NonNegativeInteger} [level=+infinity] - copy depth
-* * @returns {*} value copy
+* * @param {number} x - input number
+* * @returns {numbr} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
 * *\/
-* function copy( value, level ) {
-*   var out;
-*   if ( arguments.length > 1 ) {
-*     if ( !isNonNegativeInteger( level ) ) {
-*       throw new TypeError( 'invalid input argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
-*     }
-*     if ( level === 0 ) {
-*       return value;
-*     }
-*   } else {
-*     level = PINF;
-*   }
-*   out = ( isArray( value ) ) ? new Array( value.length ) : {};
-*   return deepCopy( value, out, [value], [out], level );
+* function square( x ) {
+*     return x*x;
 * }
 *
 * @example
 * // Good...
 *
 * /**
-* * Copies or deep clones a value to an arbitrary depth.
+* * Squares a number.
 * *
-* * @param {*} value - value to copy
-* * @param {NonNegativeInteger} [level=+infinity] - copy depth
-* * @throws {TypeError} second argument must be a nonnegative integer
-* * @returns {*} value copy
+* * @param {number} x - input number
+* * @returns {number} x squared
+* *
+* * @example
+* * var y = square( 2.0 );
+* * // returns 4.0
 * *\/
-* function copy( value, level ) {
-*   var out;
-*   if ( arguments.length > 1 ) {
-*     if ( !isNonNegativeInteger( level ) ) {
-*       throw new TypeError( 'invalid input argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
-*     }
-*     if ( level === 0 ) {
-*       return value;
-*     }
-*   } else {
-*     level = PINF;
-*   }
-*   out = ( isArray( value ) ) ? new Array( value.length ) : {};
-*   return deepCopy( value, out, [value], [out], level );
+* function square( x ) {
+*     return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
+rules[ 'stdlib/jsdoc-typedef-typos' ] = 'error';
 
 /**
 * Require that the unordered list marker be a dash `-`.
