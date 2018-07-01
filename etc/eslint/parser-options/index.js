@@ -28,11 +28,11 @@ var options = {};
 /**
 * ECMAScript version.
 *
-* @name version
+* @name ecmaVersion
 * @memberof options
 * @type {number}
 */
-options.version = require( './version.js' );
+options.ecmaVersion = require( './version.js' );
 
 /**
 * Source type.

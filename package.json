@@ -73,7 +73,7 @@
     "david": "^11.0.0",
     "doctrine": "^2.0.0",
     "envify": "^4.0.0",
-    "eslint": "4.x.x",
+    "eslint": "5.x.x",
     "factor-bundle": "^2.5.0",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",

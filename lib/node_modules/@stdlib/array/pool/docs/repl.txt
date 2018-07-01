@@ -1,0 +1,345 @@
+
+{{alias}}( [dtype] )
+    Returns an uninitialized typed array from a typed array memory pool.
+
+    Memory is **uninitialized**, which means that the contents of a returned
+    typed array may contain sensitive contents.
+
+    The function supports the following data types:
+
+    - float64: double-precision floating-point numbers (IEEE 754)
+    - float32: single-precision floating-point numbers (IEEE 754)
+    - int32: 32-bit two's complement signed integers
+    - uint32: 32-bit unsigned integers
+    - int16: 16-bit two's complement signed integers
+    - uint16: 16-bit unsigned integers
+    - int8: 8-bit two's complement signed integers
+    - uint8: 8-bit unsigned integers
+    - uint8c: 8-bit unsigned integers clamped to 0-255
+
+    The default typed array data type is `float64`.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr = {{alias}}()
+    <Float64Array>[]
+    > arr = {{alias}}( 'float32' )
+    <Float32Array>[]
+
+
+{{alias}}( length[, dtype] )
+    Returns an uninitialized typed array having a specified length from a typed
+    array memory pool.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <Float64Array>
+    > arr = {{alias}}( 5, 'int32' )
+    <Int32Array>
+
+
+{{alias}}( typedarray[, dtype] )
+    Creates a pooled typed array from another typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate another typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr1 = {{alias}}( [ 0.5, 0.5, 0.5 ] );
+    > var arr2 = {{alias}}( arr1, 'float32' )
+    <Float32Array>[ 0.5, 0.5, 0.5 ]
+
+
+{{alias}}( obj[, dtype] )
+    Creates a pooled typed array from an array-like object.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object from which to generate a typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr1 = [ 0.5, 0.5, 0.5 ];
+    > var arr2 = {{alias}}( arr1, 'float32' )
+    <Float32Array>[ 0.5, 0.5, 0.5 ]
+
+
+{{alias}}.malloc( [dtype] )
+    Returns an uninitialized typed array from a typed array memory pool.
+
+    This method shares the same security vulnerabilities mentioned above.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr = {{alias}}.malloc()
+    <Float64Array>
+    > arr = {{alias}}.malloc( 'float32' )
+    <Float32Array>
+
+
+{{alias}}.malloc( length[, dtype] )
+    Returns a typed array having a specified length from a typed array memory
+    pool.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr = {{alias}}.malloc( 5 )
+    <Float64Array>
+    > arr = {{alias}}.malloc( 5, 'int32' )
+    <Int32Array>
+
+
+{{alias}}.malloc( typedarray[, dtype] )
+    Creates a pooled typed array from another typed array.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate another typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr1 = {{alias}}.malloc( [ 0.5, 0.5, 0.5 ] );
+    > var arr2 = {{alias}}.malloc( arr1, 'float32' )
+    <Float32Array>[ 0.5, 0.5, 0.5 ]
+
+
+{{alias}}.malloc( obj[, dtype] )
+    Creates a pooled typed array from an array-like object.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object from which to generate a typed array.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr1 = [ 0.5, 0.5, 0.5 ];
+    > var arr2 = {{alias}}.malloc( arr1, 'float32' )
+    <Float32Array>[ 0.5, 0.5, 0.5 ]
+
+
+{{alias}}.calloc( [dtype] )
+    Returns a zero-initialized typed array from a typed array memory pool.
+
+    Parameters
+    ----------
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr = {{alias}}.calloc()
+    <Float64Array>[]
+    > arr = {{alias}}.calloc( 'float32' )
+    <Float32Array>[]
+
+
+{{alias}}.calloc( length[, dtype] )
+    Returns a zero-initialized typed array having a specified length from a
+    typed array memory pool.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    dtype: string (optional)
+        Data type. Default: 'float64'.
+
+    Returns
+    -------
+    out: TypedArray|null
+        If the function is unable to allocate a typed array from the typed array
+        pool (e.g., due to insufficient memory), the function returns `null`.
+
+    Examples
+    --------
+    > var arr = {{alias}}.calloc( 5 )
+    <Float64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0 ]
+    > arr = {{alias}}.calloc( 5, 'int32' )
+    <Int32Array>[ 0, 0, 0, 0, 0 ]
+
+
+{{alias}}.free( buf )
+    Frees a typed array or typed array buffer for use in a future allocation.
+
+    Parameters
+    ----------
+    buf: TypedArray|ArrayBuffer
+        Typed array or typed array buffer to free.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <Float64Array>
+    > {{alias}}.free( arr )
+
+
+{{alias}}.clear()
+    Clears the typed array pool allowing garbage collection of previously
+    allocated (and currently free) array buffers.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <Float64Array>
+    > {{alias}}.free( arr );
+    > {{alias}}.clear()
+
+
+{{alias}}.highWaterMark
+    Read-only property returning the pool's high water mark.
+
+    Once a high water mark is reached, typed array allocation fails.
+
+    Examples
+    --------
+    > {{alias}}.highWaterMark
+
+
+{{alias}}.nbytes
+    Read-only property returning the total number of allocated bytes.
+
+    The returned value is the total accumulated value. Hence, anytime a pool
+    must allocate a new array buffer (i.e., more memory), the pool increments
+    this value.
+
+    The only time this value is decremented is when a pool is cleared.
+
+    This behavior means that, while allocated buffers which are never freed may,
+    in fact, be garbage collected, they continue to count against the high water
+    mark limit.
+
+    Accordingly, you should *always* free allocated buffers in order to prevent
+    the pool from believing that non-freed buffers are continually in use.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 5 )
+    <Float64Array>
+    > {{alias}}.nbytes
+
+
+{{alias}}.factory( [options] )
+    Creates a typed array pool.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.highWaterMark: integer (optional)
+        Maximum total memory (in bytes) which can be allocated.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating typed arrays from a typed array memory pool.
+
+    Examples
+    --------
+    > var pool = {{alias}}.factory();
+    > var arr1 = pool( 3, 'float64' )
+    <Float64Array>
+
+    See Also
+    --------
+

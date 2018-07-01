@@ -58,17 +58,6 @@ features.impliedStrict = false;
 */
 features.jsx = false;
 
-/**
-* Do not enable experimental object rest spread.
-*
-* @name experimentalObjectRestSpread
-* @memberof features
-* @type {boolean}
-* @default false
-* @see [experimentalObjectRestSpread]{@link http://eslint.org/docs/user-guide/configuring#specifying-parser-options}
-*/
-features.experimentalObjectRestSpread = false;
-
 
 // EXPORTS //
 
