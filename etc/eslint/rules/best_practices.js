@@ -1348,6 +1348,18 @@ rules[ 'no-warning-comments' ] = [ 'warn', {
 rules[ 'no-with' ] = 'error';
 
 /**
+* Always require that promises are rejected with `Error` objects.
+*
+* @name prefer-promise-reject-errors
+* @memberof rules
+* @type {Array}
+* @see [prefer-promise-reject-errors]{@link https://eslint.org/docs/rules/prefer-promise-reject-errors}
+*/
+rules[ 'prefer-promise-reject-errors' ] = [ 'error', {
+	'allowEmptyReject': false
+}];
+
+/**
 * Always require a `radix` parameter to `parseInt()`.
 *
 * @name radix
