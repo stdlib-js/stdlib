@@ -86,12 +86,20 @@ rules[ 'array-bracket-spacing' ] = [ 'off', 'always', {
 }];
 
 /**
-* Do not enforce line breaks between array elements.
+* Enforce consistent line breaks between array elements.
 *
 * @name array-element-newline
 * @memberof rules
 * @type {Array}
+* @default [ 'error', 'consistent' ]
 * @see [array-element-newline]{@link http://eslint.org/docs/rules/array-element-newline}
+*
+* @example
+* // Bad...
+* var arr = [
+*     1, 2,
+*     3
+* ];
 *
 * @example
 * // Okay...
@@ -105,10 +113,7 @@ rules[ 'array-bracket-spacing' ] = [ 'off', 'always', {
 *     3
 * ];
 */
-rules[ 'array-element-newline' ] = [ 'off', {
-	'multiline': true,
-	'minItems': null
-}];
+rules[ 'array-element-newline' ] = [ 'error', 'consistent' ];
 
 /**
 * Always require spaces in single-line blocks.
@@ -1580,6 +1585,17 @@ rules[ 'padding-line-between-statements' ] = [ 'error',
 		'next': 'return'
 	}
 ];
+
+/**
+* Do not require the use of object spread syntax when using `Object.assign`.
+*
+* @name prefer-object-spread
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [prefer-object-spread]{@link https://eslint.org/docs/rules/prefer-object-spread}
+*/
+rules[ 'prefer-object-spread' ] = 'off';
 
 /**
 * Always quote object literal property names.
