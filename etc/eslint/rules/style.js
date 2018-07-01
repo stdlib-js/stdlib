@@ -764,6 +764,21 @@ rules[ 'max-lines' ] = [ 'warn', {
 }];
 
 /**
+* Warn when a function contains more than `200` source code lines.
+*
+* @name max-lines-per-function
+* @memberof rules
+* @type {Array}
+* @see [max-lines-per-function]{@link http://eslint.org/docs/rules/max-lines-per-function}
+*/
+rules[ 'max-lines-per-function' ] = [ 'warn', {
+	'max': 200,
+	'skipBlankLines': true,
+	'skipComments': true,
+	'IIFEs': true
+}];
+
+/**
 * Limit the number of nested callbacks.
 *
 * @name max-nested-callbacks
