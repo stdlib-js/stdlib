@@ -1,0 +1,35 @@
+
+{{alias}}( x )
+    Relative error exponential.
+
+    When `x` is near zero,
+
+        e^x - 1
+
+    can suffer catastrophic cancellation (i.e., significant loss of precision).
+    This function avoids the loss of precision when `x` is near zero.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    1.0
+    > y = {{alias}}( 1.0 )
+    ~1.718
+    > y = {{alias}}( -1.0 )
+    ~0.632
+    > y = {{alias}}( NaN )
+    NaN
+	
+    See Also
+    --------
+
