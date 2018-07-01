@@ -1310,7 +1310,9 @@ rules[ 'object-curly-newline' ] = [ 'error', {
 		'minProperties': 1,
 		'consistent': true
 	},
-	'ObjectPattern': 'never'
+	'ObjectPattern': 'never',
+	'ImportDeclaration': 'never',
+	'ExportDeclaration': 'never'
 }];
 
 /**
