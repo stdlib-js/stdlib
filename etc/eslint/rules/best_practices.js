@@ -310,6 +310,17 @@ rules[ 'eqeqeq' ] = [ 'error', 'always' ];
 rules[ 'guard-for-in' ] = 'error';
 
 /**
+* Never allow more than one class per file.
+*
+* @name max-classes-per-file
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 1 ]
+* @see [max-classes-per-file]{@link https://eslint.org/docs/rules/max-classes-per-file}
+*/
+rules[ 'max-classes-per-file' ] = [ 'error', 1 ];
+
+/**
 * Never allow `alert`, `confirm`, or `prompt`.
 *
 * @name no-alert
@@ -1335,6 +1346,18 @@ rules[ 'no-warning-comments' ] = [ 'warn', {
 * @see [no-with]{@link http://eslint.org/docs/rules/no-with}
 */
 rules[ 'no-with' ] = 'error';
+
+/**
+* Always require that promises are rejected with `Error` objects.
+*
+* @name prefer-promise-reject-errors
+* @memberof rules
+* @type {Array}
+* @see [prefer-promise-reject-errors]{@link https://eslint.org/docs/rules/prefer-promise-reject-errors}
+*/
+rules[ 'prefer-promise-reject-errors' ] = [ 'error', {
+	'allowEmptyReject': false
+}];
 
 /**
 * Always require a `radix` parameter to `parseInt()`.
