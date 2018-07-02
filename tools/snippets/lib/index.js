@@ -32,7 +32,7 @@
 
 // MODULES //
 
-var TODO = require( './TODO.js' );
+var TODO = require( './main.js' );
 
 
 // EXPORTS //
