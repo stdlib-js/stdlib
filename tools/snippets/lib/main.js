@@ -18,6 +18,8 @@
 
 'use strict';
 
+// MAIN //
+
 /**
 * TODO: description
 *
@@ -29,7 +31,7 @@
 * // returns TODO
 */
 function TODO() {
-
+	// TODO: implementation
 }
 
 
