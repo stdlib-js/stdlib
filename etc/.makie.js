@@ -37,6 +37,7 @@ config.plugins = plugins;
 
 plugins[ 'benchmark' ] = path.join( prefix, 'makie-benchmark' );
 plugins[ 'benchmark-lang' ] = path.join( prefix, 'makie-benchmark-lang' );
+plugins[ 'citation-reference' ] = path.join( prefix, 'makie-citation-reference' );
 plugins[ 'complexity' ] = path.join( prefix, 'makie-complexity' );
 plugins[ 'examples' ] = path.join( prefix, 'makie-examples' );
 plugins[ 'install-node-addons' ] = path.join( prefix, 'makie-install-node-addons' );
@@ -47,6 +48,7 @@ plugins[ 'lint-r' ] = path.join( prefix, 'makie-lint-r' );
 plugins[ 'list-pkgs' ] = path.join( prefix, 'makie-list-pkgs' );
 plugins[ 'list-pkgs-names' ] = path.join( prefix, 'makie-list-pkgs-names' );
 plugins[ 'markdown-asset-link' ] = path.join( prefix, 'makie-markdown-asset-link' );
+plugins[ 'markdown-examples-javascript' ] = path.join( prefix, 'makie-markdown-examples-javascript' );
 plugins[ 'notes' ] = path.join( prefix, 'makie-notes' );
 plugins[ 'repl' ] = path.join( prefix, 'makie-repl' );
 plugins[ 'stats-list-contributors' ] = path.join( prefix, 'makie-stats-list-contributors' );
