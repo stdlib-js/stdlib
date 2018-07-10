@@ -37,7 +37,6 @@ config.plugins = plugins;
 
 plugins[ 'benchmark' ] = path.join( prefix, 'makie-benchmark' );
 plugins[ 'benchmark-lang' ] = path.join( prefix, 'makie-benchmark-lang' );
-plugins[ 'citation-reference' ] = path.join( prefix, 'makie-citation-reference' );
 plugins[ 'complexity' ] = path.join( prefix, 'makie-complexity' );
 plugins[ 'examples' ] = path.join( prefix, 'makie-examples' );
 plugins[ 'install-node-addons' ] = path.join( prefix, 'makie-install-node-addons' );
