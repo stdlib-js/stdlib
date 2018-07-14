@@ -2375,6 +2375,18 @@
       "cotagent"
     ]
   },
+  "https://en.wikipedia.org/wiki/K-means_clustering": {
+    "id": "k-means-clustering",
+    "description": "Wikipedia entry for k-means clustering, an approach for partitioning a set of observations into k clusters.",
+    "short_url": "",
+    "keywords": [
+      "clustering",
+      "machine learning",
+      "ml",
+      "kmeans",
+      "k-means"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Kumaraswamy_distribution": {
     "id": "kumaraswamy-distribution",
     "description": "Wikipedia entry for Kumaraswamy's double bounded distribution.",

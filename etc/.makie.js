@@ -47,6 +47,7 @@ plugins[ 'lint-r' ] = path.join( prefix, 'makie-lint-r' );
 plugins[ 'list-pkgs' ] = path.join( prefix, 'makie-list-pkgs' );
 plugins[ 'list-pkgs-names' ] = path.join( prefix, 'makie-list-pkgs-names' );
 plugins[ 'markdown-asset-link' ] = path.join( prefix, 'makie-markdown-asset-link' );
+plugins[ 'markdown-examples-javascript' ] = path.join( prefix, 'makie-markdown-examples-javascript' );
 plugins[ 'notes' ] = path.join( prefix, 'makie-notes' );
 plugins[ 'repl' ] = path.join( prefix, 'makie-repl' );
 plugins[ 'stats-list-contributors' ] = path.join( prefix, 'makie-stats-list-contributors' );
