@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # Sublime Text
 
 > A guide for using [Sublime Text][sublime-text] for project development.
@@ -38,6 +58,8 @@ $ subl .
 -   [**Pretty JSON**][sublime-text-pretty-json]: package for pretty printing and minifying [JSON][json].
 
 -   [**Sidebar Enhancements**][sublime-text-sidebar-enhancements]: package which provides enhancements for working with files and folders in the Sublime Text sidebar.
+
+-   [**UnicodeMath**][sublime-text-unicode-math]: package for inserting Unicode math and emoji.
 
 -   [**Julia**][sublime-text-julia]: package which provides syntax highlighting for [Julia][julia].
 
@@ -158,6 +180,8 @@ $ subl .
 [sublime-text-pretty-json]: https://github.com/dzhibas/SublimePrettyJson
 
 [sublime-text-sidebar-enhancements]: https://github.com/SideBarEnhancements-org/SideBarEnhancements
+
+[sublime-text-unicode-math]: https://github.com/mvoidex/UnicodeMath
 
 [sublime-text-markdownediting]: https://github.com/SublimeText-Markdown/MarkdownEditing
 
