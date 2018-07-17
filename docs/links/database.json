@@ -3489,6 +3489,18 @@
       "plugin"
     ]
   },
+  "https://github.com/mvoidex/UnicodeMath": {
+    "id": "sublime-text-unicode-math",
+    "description": "Sublime Text plugin for inserting Unicode math symbols and emoji.",
+    "short_url": "",
+    "keywords": [
+      "sublime text",
+      "st3",
+      "sublime",
+      "editor",
+      "plugin"
+    ]
+  },
   "https://github.com/pypa/pip": {
     "id": "pip",
     "description": "A Python package manager. The PyPA recommended tool for installing Python packages.",
