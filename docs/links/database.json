@@ -3491,7 +3491,7 @@
   },
   "https://github.com/mvoidex/UnicodeMath": {
     "id": "sublime-text-unicode-math",
-    "description": "Sublime Text plugin for inserting Unicode math symbols and emoji.",
+    "description": "Sublime Text package for inserting Unicode math symbols and emoji.",
     "short_url": "",
     "keywords": [
       "sublime text",
