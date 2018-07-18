@@ -88,7 +88,7 @@
     "proxyquire-universal": "^1.0.8",
     "proxyquireify": "^3.1.1",
     "read-installed": "^4.0.3",
-    "rehype": "^5.0.0",
+    "rehype": "^6.0.0",
     "rehype-highlight": "^2.0.1",
     "remark": "^9.0.0",
     "remark-cli": "^5.0.0",
