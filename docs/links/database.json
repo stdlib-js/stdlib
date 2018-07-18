@@ -1852,6 +1852,20 @@
       "point"
     ]
   },
+  "https://en.wikipedia.org/wiki/Coefficient_of_variation": {
+    "id": "coefficient-of-variation",
+    "description": "Wikipedia entry for the coefficient of variation (CV), a standardized measure of dispersion of a probability distribution or frequency distribution.",
+    "short_url": "",
+    "keywords": [
+      "cv",
+      "statistics",
+      "stats",
+      "coefficient",
+      "variation",
+      "dispersion",
+      "ratio"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Common_logarithm": {
     "id": "common-logarithm",
     "description": "Wikipedia entry for the common logarithm, which is the logarithm with base 10.",
