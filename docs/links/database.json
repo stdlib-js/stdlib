@@ -2095,6 +2095,21 @@
       "pochhammer"
     ]
   },
+  "https://en.wikipedia.org/wiki/Fano_factor": {
+    "id": "fano-factor",
+    "description": "Wikipedia entry for the Fano factor, a measure of the dispersion of a probability distribution of a Fano noise.",
+    "short_url": "",
+    "keywords": [
+      "fano",
+      "factor",
+      "vmr",
+      "variance",
+      "mean",
+      "statistics",
+      "stats",
+      "physics"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fibonacci_number": {
     "id": "fibonacci-number",
     "description": "Wikipedia entry for Fibonacci numbers.",
