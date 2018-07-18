@@ -2330,6 +2330,20 @@
       "type"
     ]
   },
+  "https://en.wikipedia.org/wiki/Index_of_dispersion": {
+    "id": "variance-to-mean-ratio",
+    "description": "Wikipedia entry for the variance-to-mean ratio (VMR), a measure used to quantify whether a set of observed occurrences are clustered or dispersed compared to a standard statistical model.",
+    "short_url": "",
+    "keywords": [
+      "vmr",
+      "statistics",
+      "stats",
+      "variance",
+      "mean",
+      "ratio",
+      "dispersion"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Inverse_Gamma_distribution": {
     "id": "invgamma-distribution",
     "description": "Wikipedia entry for the inverse gamma distribution.",
