@@ -2296,6 +2296,15 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Hermite_polynomials": {
+    "id": "hermite-polynomials",
+    "description": "Wikipedia entry for Hermite polynomials, a classic orthogonal polynomial sequence.",
+    "short_url": "",
+    "keywords": [
+      "hermite",
+      "polynomial"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Horner%27s_method": {
     "id": "horners-method",
     "description": "Wikipedia entry for Horner's method, an algorithm for evaluating polynomials.",
