@@ -1757,7 +1757,7 @@
   },
   "https://en.wikipedia.org/wiki/Binomial_distribution": {
     "id": "binomial-distribution",
-    "description": "Wikipedia entry for the binomial distribution\"",
+    "description": "Wikipedia entry for the binomial distribution.",
     "short_url": "",
     "keywords": [
       "dist",
@@ -1768,6 +1768,19 @@
       "discrete",
       "binom",
       "binomial"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform": {
+    "id": "box-muller",
+    "description": "Wikipedia entry for the Box-Muller transform to generate standard normal pseudorandom numbers.",
+    "short_url": "",
+    "keywords": [
+      "random",
+      "rng",
+      "prng",
+      "algorithm",
+      "gaussian",
+      "normal"
     ]
   },
   "https://en.wikipedia.org/wiki/Cauchy_distribution": {
@@ -3282,6 +3295,19 @@
       "character"
     ]
   },
+  "https://en.wikipedia.org/wiki/Ziggurat_algorithm": {
+    "id": "ziggurat-algorithm",
+    "description": "Wikipedia entry for the Ziggurat algorithm to generate standard normal pseudorandom numbers.",
+    "short_url": "",
+    "keywords": [
+      "random",
+      "rng",
+      "prng",
+      "algorithm",
+      "gaussian",
+      "normal"
+    ]
+  },
   "https://en.wikipedia.org/wiki/hypergeometric_distribution": {
     "id": "hypergeometric-distribution",
     "description": "Wikipedia entry for the hypergeometric distribution.",
@@ -3459,7 +3485,7 @@
   },
   "https://github.com/SublimeLinter/SublimeLinter-json": {
     "id": "sublime-text-sublimelinter-json",
-    "description": "Plugin for SublimeLinter3 which lints JSON",
+    "description": "Plugin for SublimeLinter3 which lints JSON.",
     "short_url": "",
     "keywords": [
       "sublime",
@@ -3470,7 +3496,7 @@
   },
   "https://github.com/SublimeLinter/SublimeLinter3": {
     "id": "sublime-text-sublimelinter3",
-    "description": "Linting framework for Sublime Text 3",
+    "description": "Linting framework for Sublime Text 3.",
     "short_url": "",
     "keywords": [
       "sublime",
