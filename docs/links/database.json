@@ -1770,6 +1770,19 @@
       "binomial"
     ]
   },
+  "https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform": {
+    "id": "box-muller",
+    "description": "Wikipedia entry for the Box-Muller transform to generate standard normal pseudorandom numbers.",
+    "short_url": "",
+    "keywords": [
+      "random",
+      "rng",
+      "prng",
+      "algorithm",
+      "gaussian",
+      "normal"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Cauchy_distribution": {
     "id": "cauchy-distribution",
     "description": "Wikipedia entry for the Cauchy distribution.",
