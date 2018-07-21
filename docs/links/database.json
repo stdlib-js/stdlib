@@ -3295,6 +3295,19 @@
       "character"
     ]
   },
+  "https://en.wikipedia.org/wiki/Ziggurat_algorithm": {
+    "id": "ziggurat-algorithm",
+    "description": "Wikipedia entry for the Ziggurat algorithm to generate standard normal pseudorandom numbers.",
+    "short_url": "",
+    "keywords": [
+      "random",
+      "rng",
+      "prng",
+      "algorithm",
+      "gaussian",
+      "normal"
+    ]
+  },
   "https://en.wikipedia.org/wiki/hypergeometric_distribution": {
     "id": "hypergeometric-distribution",
     "description": "Wikipedia entry for the hypergeometric distribution.",
