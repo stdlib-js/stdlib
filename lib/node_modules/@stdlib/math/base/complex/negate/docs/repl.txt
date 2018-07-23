@@ -1,0 +1,35 @@
+
+{{alias}}( [out,] re, im )
+    Negates a complex number.
+
+    Parameters
+    ----------
+    out: Array|TypedArray|Object (optional)
+        Output array.
+
+    re: number
+        Real component.
+
+    im: number
+        Imaginary component.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Negated components.
+
+    Examples
+    --------
+    > var out = {{alias}}( -4.2, 5.5 )
+    [ 4.2, -5.5 ]
+
+    // Provide an output array:
+    > out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var v = {{alias}}( out, -4.2, 5.5 )
+    <Float64Array>[ 4.2, -5.5 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------
+
