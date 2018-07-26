@@ -105,6 +105,7 @@ limitations under the License.
     -   [sfmt](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT)
     -   [randamu](https://github.com/PhDP/randamu)
     -   [gsl](https://github.com/ampl/gsl/tree/master/rng)
+    -   [rand_r](https://github.com/lattera/freebsd/blob/master/lib/libc/stdlib/rand.c)
     -   [collection of lcgs](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.3686&rep=rep1&type=pdf)
     -   [Lehmer LCG](https://en.wikipedia.org/wiki/Lehmer_random_number_generator)
     -   [lcgs](https://en.wikipedia.org/wiki/Linear_congruential_generator)
@@ -833,7 +834,7 @@ limitations under the License.
 
 1.  see [makefile for the frontend](https://github.com/scriptype/Makefile-for-the-Front-End/blob/master/Makefile) for possible inspiration for frontend tasks
 
-1.  should `float64-signbit` return a `boolean` (like Julia) or a `1.  or `0`?
+1.  should `float64-signbit` return a `boolean` (like Julia) or a `1`  or `0`?
 
 1.  licenses utilities
 
@@ -1072,6 +1073,8 @@ limitations under the License.
 1.  Consider using [shrinkpack](https://github.com/JamieMason/shrinkpack) to create reproducible, more reliable, and faster builds in CI environments
 
 1.  pkg which can generate an Anscombe dataset
+
+    -   simulator
 
 1.  [authors-certificate](https://github.com/berneout/authors-certificate)
 
