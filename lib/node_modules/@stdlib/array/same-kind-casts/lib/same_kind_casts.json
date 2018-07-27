@@ -1,0 +1,122 @@
+{
+	"float64": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 0,
+		"int16": 0,
+		"int8": 0,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"generic": 1
+	},
+	"float32": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 0,
+		"int16": 0,
+		"int8": 0,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"generic": 1
+	},
+	"int32": {
+		"float64": 1,
+		"float32": 0,
+		"int32": 1,
+		"int16": 1,
+		"int8": 1,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"generic": 1
+	},
+	"int16": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 1,
+		"int16": 1,
+		"int8": 1,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"generic": 1
+	},
+	"int8": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 1,
+		"int16": 1,
+		"int8": 1,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"generic": 1
+	},
+	"uint32": {
+		"float64": 1,
+		"float32": 0,
+		"int32": 0,
+		"int16": 0,
+		"int8": 0,
+		"uint32": 1,
+		"uint16": 1,
+		"uint8": 1,
+		"uint8c": 1,
+		"generic": 1
+	},
+	"uint16": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 1,
+		"int16": 0,
+		"int8": 0,
+		"uint32": 1,
+		"uint16": 1,
+		"uint8": 1,
+		"uint8c": 1,
+		"generic": 1
+	},
+	"uint8": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 1,
+		"int16": 1,
+		"int8": 0,
+		"uint32": 1,
+		"uint16": 1,
+		"uint8": 1,
+		"uint8c": 1,
+		"generic": 1
+	},
+	"uint8c": {
+		"float64": 1,
+		"float32": 1,
+		"int32": 1,
+		"int16": 1,
+		"int8": 0,
+		"uint32": 1,
+		"uint16": 1,
+		"uint8": 1,
+		"uint8c": 1,
+		"generic": 1
+	},
+	"generic": {
+		"float64": 0,
+		"float32": 0,
+		"int32": 0,
+		"int16": 0,
+		"int8": 0,
+		"uint32": 0,
+		"uint16": 0,
+		"uint8": 0,
+		"uint8c": 0,
+		"generic": 1
+	}
+}
