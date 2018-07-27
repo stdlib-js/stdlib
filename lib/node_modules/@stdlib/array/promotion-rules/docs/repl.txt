@@ -1,0 +1,33 @@
+
+{{alias}}( [dtype1, dtype2] )
+    Returns the array data type with the smallest size and closest "kind" to
+    which array data types can be safely cast.
+
+    If not provided data types, the function returns a type promotion table.
+
+    If a data type to which data types can be safely cast does *not* exist (or
+    is not supported), the function returns `-1`.
+
+    If provided an unrecognized data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype1: string (optional)
+        Array data type.
+
+    dtype2: string (optional)
+        Array data type.
+
+    Returns
+    -------
+    out: Object|string|integer|null
+        Promotion rule(s).
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float32', 'int32' )
+    'float64'
+
+    See Also
+    --------
+
