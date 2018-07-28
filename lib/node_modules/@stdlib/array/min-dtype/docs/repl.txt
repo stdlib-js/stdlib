@@ -1,0 +1,34 @@
+
+{{alias}}( value )
+    Returns the minimum array data type of the closest "kind" necessary for
+    storing a provided scalar value.
+
+    The function does *not* provide precision guarantees for non-integer-valued
+    real numbers. In other words, the function returns the smallest possible
+    floating-point (i.e., inexact) data type for storing numbers having
+    decimals.
+
+    Parameters
+    ----------
+    value: any
+        Scalar value.
+
+    Returns
+    -------
+    dt: string
+        Array data type.
+
+    Examples
+    --------
+    > var dt = {{alias}}( 3.141592653589793 )
+    'float32'
+    > dt = {{alias}}( 3 )
+    'uint8'
+    > dt = {{alias}}( -3 )
+    'int8'
+    > dt = {{alias}}( '-3' )
+    'generic'
+
+    See Also
+    --------
+
