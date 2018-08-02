@@ -143,3 +143,21 @@
 *
 * @typedef {NonNegativeNumericArray} ProbabilityArray
 */
+
+/**
+* A 64-bit complex number array, in which the real and imaginary components are each stored as single-precision floating-point numbers.
+*
+* @typedef {Complex64Array} Complex64Array
+*/
+
+/**
+* A 128-bit complex number array, in which the real and imaginary components are each stored as double-precision floating-point numbers.
+*
+* @typedef {Complex128Array} Complex128Array
+*/
+
+/**
+* A complex number array.
+*
+* @typedef {(Complex64Array|Complex128Array)} ComplexArray
+*/
