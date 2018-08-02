@@ -3853,6 +3853,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Number',
 		'Object',
 		'Promise',
+		'Proxy',
 		'RangeError',
 		'ReferenceError',
 		'RegExp',
