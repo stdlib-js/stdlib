@@ -2848,7 +2848,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'warn';
 *   var out;
 *   if ( arguments.length > 1 ) {
 *     if ( !isNonNegativeInteger( level ) ) {
-*       throw new TypeError( 'invalid input argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
+*       throw new TypeError( 'invalid argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
 *     }
 *     if ( level === 0 ) {
 *       return value;
@@ -2875,7 +2875,7 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'warn';
 *   var out;
 *   if ( arguments.length > 1 ) {
 *     if ( !isNonNegativeInteger( level ) ) {
-*       throw new TypeError( 'invalid input argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
+*       throw new TypeError( 'invalid argument. `level` must be a nonnegative integer. Value: `' + level + '`.' );
 *     }
 *     if ( level === 0 ) {
 *       return value;

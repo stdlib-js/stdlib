@@ -2242,7 +2242,7 @@ var err = new Error( '1' );
 
 ```javascript
 // Do...
-var err = new TypeError( 'invalid input argument. Window option must be a positive integer. Value: `' + value + '`.' );
+var err = new TypeError( 'invalid argument. Window option must be a positive integer. Value: `' + value + '`.' );
 ```
 
 ##### Enforcement
@@ -2322,7 +2322,7 @@ function bar( opts ) {
 // Do...
 function foo( opts ) {
     if ( !isObject( opts ) ) {
-        throw new TypeError( 'invalid input argument. Options argument must be an object. Value: `' + opts + '`.' );
+        throw new TypeError( 'invalid argument. Options argument must be an object. Value: `' + opts + '`.' );
     }
 }
 ```
@@ -2335,7 +2335,7 @@ function foo( opts ) {
     // Do...
     function bop( len ) {
         if ( !isPositiveInteger( len ) ) {
-            throw new TypeError( 'invalid input argument. Length must be a positive integer. Value: `' + len + '`.' );
+            throw new TypeError( 'invalid argument. Length must be a positive integer. Value: `' + len + '`.' );
         }
     }
 
@@ -3185,10 +3185,10 @@ Stream.prototype.window = function streamWindow( win ) {
         return this._window;
     }
     if ( typeof win !== 'number' || win !== win ) {
-        throw new Error( 'invalid input argument. Window size must be numeric. Value: `' + win + '`.' );
+        throw new Error( 'invalid argument. Window size must be numeric. Value: `' + win + '`.' );
     }
     if ( Math.floor( win ) !== win || win <= 0 ) {
-        throw new Error( 'invalid input argument. Window size must be a positive integer. Value: `' + win + '`.' );
+        throw new Error( 'invalid argument. Window size must be a positive integer. Value: `' + win + '`.' );
     }
     this._window = win;
     return this;

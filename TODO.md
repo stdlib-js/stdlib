@@ -100,6 +100,7 @@ limitations under the License.
 
 1.  prngs
 
+    -   [Tyche](https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf)
     -   [pcg](http://www.pcg-random.org/)
     -   [random123](http://www.deshawresearch.com/downloads/download_random123.cgi/)
     -   [sfmt](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT)
@@ -1147,8 +1148,6 @@ limitations under the License.
 1.  [envify](https://github.com/hughsk/envify) => when browserifying environment dependent tests to be run in the browser, can use to inline env vars
 
 1.  [naming conventions](https://github.com/JuliaPraxis/Naming)
-
-1.  [Tyche](https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf) prng
 
 1.  typed array [binary string](https://github.com/AndreasMadsen/binary-view/blob/master/binary-view.js)
 
