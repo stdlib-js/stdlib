@@ -18,6 +18,15 @@
 
 'use strict';
 
+// MODULES //
+
+// FIXME: remove the next line and uncomment the subsequent line once all remark JSDoc ESLint rules are completed
+var copy = require( './../../lib/node_modules/@stdlib/utils/copy' );
+
+// var copy = require( './utils/copy.js' );
+var defaults = require( './.eslintrc.js' );
+
+
 // MAIN //
 
 /**
@@ -25,35 +34,7 @@
 *
 * @namespace eslint
 */
-var eslint = {};
-
-/**
-* Root configuration.
-*
-* @name root
-* @memberof eslint
-* @type {boolean}
-* @default true
-*/
-eslint.root = true;
-
-/**
-* Default environments.
-*
-* @name env
-* @memberof eslint
-* @type {Object}
-*/
-eslint.env = require( './env' );
-
-/**
-* Lint rules.
-*
-* @name rules
-* @memberof eslint
-* @type {Object}
-*/
-eslint.rules = require( './rules' );
+var eslint = copy( defaults );
 
 /**
 * Overrides.
@@ -62,25 +43,7 @@ eslint.rules = require( './rules' );
 * @memberof eslint
 * @type {Array}
 */
-eslint.overrides = require( './overrides/repl_namespace.js' );
-
-/**
-* Parser options.
-*
-* @name ParserOptions
-* @memberof eslint
-* @type {Object}
-*/
-eslint.parserOptions = require( './parser-options' );
-
-/**
-* Plugins.
-*
-* @name Plugins
-* @memberof eslint
-* @type {Object}
-*/
-eslint.plugins = require( './plugins' );
+eslint.overrides = require( './overrides' );
 
 
 // EXPORTS //

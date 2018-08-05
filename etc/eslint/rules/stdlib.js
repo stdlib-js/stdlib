@@ -3944,6 +3944,56 @@ rules[ 'stdlib/no-self-require' ] = 'error';
 rules[ 'stdlib/no-unassigned-require' ] = 'error';
 
 /**
+* Enforce that packages are added to a REPL namespace object in alphabetical order according to alias (namespace key). Set by default to `off`, the rule is enabled for namespace files via overriding the default option.
+*
+* @name repl-namespace-order
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+* var ns = [];
+*
+* ns.push({
+*   'alias': 'hasMapSupport',
+*   'path': '@stdlib/assert/has-map-support',
+*   'value': require( '@stdlib/assert/has-map-support' ),
+*   'type': 'Function',
+*   'related': []
+* });
+*
+* ns.push({
+*   'alias': 'hasInt8ArraySupport',
+*   'path': '@stdlib/assert/has-int8array-support',
+*   'value': require( '@stdlib/assert/has-int8array-support' ),
+*   'type': 'Function',
+*   'related': []
+* });
+*
+* @example
+* // Good...
+* var ns = [];
+*
+* ns.push({
+*   'alias': 'hasInt8ArraySupport',
+*   'path': '@stdlib/assert/has-int8array-support',
+*   'value': require( '@stdlib/assert/has-int8array-support' ),
+*   'type': 'Function',
+*   'related': []
+* });
+*
+* ns.push({
+*   'alias': 'hasMapSupport',
+*   'path': '@stdlib/assert/has-map-support',
+*   'value': require( '@stdlib/assert/has-map-support' ),
+*   'type': 'Function',
+*   'related': []
+* });
+*/
+rules[ 'stdlib/repl-namespace-order' ] = 'off';
+
+/**
 * Enforce that `require()` calls of files end with a whitelisted file extension.
 *
 * @name require-file-extensions
