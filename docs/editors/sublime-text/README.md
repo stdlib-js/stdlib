@@ -112,7 +112,7 @@ $ subl .
                             "--ignore-path",
                             "/absolute/file/path/to/stdlib/etc/eslint/.eslintignore",
                             "--config",
-                            "/absolute/file/path/to/stdlib/etc/eslint/.eslintrc.js"
+                            "/absolute/file/path/to/stdlib/.eslintrc.js"
                         ],
                         "excludes": []
                     }
