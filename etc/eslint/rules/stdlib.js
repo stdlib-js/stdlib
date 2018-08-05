@@ -3944,7 +3944,7 @@ rules[ 'stdlib/no-self-require' ] = 'error';
 rules[ 'stdlib/no-unassigned-require' ] = 'error';
 
 /**
-* Enforce that packages are added to a REPL namespace object in alphabetical order according to alias (namespace key). Set by default to `off`, the rule has to be manually enabled for RELP namespace files.
+* Enforce that packages are added to a REPL namespace object in alphabetical order according to alias (namespace key). Set by default to `off`, the rule is enabled for namespace files via overriding the default option.
 *
 * @name repl-namespace-order
 * @memberof rules
