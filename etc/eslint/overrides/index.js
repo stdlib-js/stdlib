@@ -18,6 +18,48 @@
 
 'use strict';
 
+// VARIABLES //
+
+var restrictedSyntaxConfig = [ 'error',
+	'ArrowFunctionExpression',
+	'ClassBody',
+	'ClassDeclaration',
+	'ClassExpression',
+	'DebuggerStatement',
+	'ExperimentalRestProperty',
+	'ExperimentalSpreadProperty',
+
+	// 'FunctionExpression',
+	'LabeledStatement',
+	'RestElement',
+	'SpreadElement',
+	'TaggedTemplateExpression',
+	'TemplateElement',
+	'TemplateLiteral',
+	'WithStatement',
+	'YieldExpression',
+	'JSXIdentifier',
+	'JSXNamespacedName',
+	'JSXMemberExpression',
+	'JSXEmptyExpression',
+	'JSXExpressionContainer',
+	'JSXElement',
+	'JSXClosingElement',
+	'JSXOpeningElement',
+	'JSXAttribute',
+	'JSXSpreadAttribute',
+	'JSXText',
+	'ExportDefaultDeclaration',
+	'ExportNamedDeclaration',
+	'ExportAllDeclaration',
+	'ExportSpecifier',
+	'ImportDeclaration',
+	'ImportSpecifier',
+	'ImportDefaultSpecifier',
+	'ImportNamespaceSpecifier'
+];
+
+
 // MAIN //
 
 /**
@@ -27,10 +69,50 @@
 */
 var overrides = [
 	{
-		'env': {},
 		'files': [ '[a-z].js' ],
 		'rules': {
 			'stdlib/repl-namespace-order': 'error'
+		}
+	},
+	{
+		'files': [ '**/benchmark/*.js' ],
+		'rules': {
+			'no-new-wrappers': 'warn',
+			'max-lines': [ 'warn', {
+				'max': 1000,
+				'skipBlankLines': true,
+				'skipComments': true
+			}],
+			'no-restricted-syntax': restrictedSyntaxConfig,
+			'require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off'
+		}
+	},
+	{
+		'files': [ '**/examples/*.js' ],
+		'rules': {
+			'no-new-wrappers': 'warn',
+			'vars-on-top': 'off',
+			'no-console': 'off',
+			'require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/vars-order': 'off'
+		}
+	},
+	{
+		'files': [ '**/test/*.js' ],
+		'rules': {
+			'no-empty-function': 'off',
+			'no-new-wrappers': 'warn',
+			'max-lines': [ 'warn', {
+				'max': 1000,
+				'skipBlankLines': true,
+				'skipComments': true
+			}],
+			'no-restricted-syntax': restrictedSyntaxConfig,
+			'require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'no-undefined': 'off'
 		}
 	}
 ];
