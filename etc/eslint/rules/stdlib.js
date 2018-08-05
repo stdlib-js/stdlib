@@ -3953,6 +3953,8 @@ rules[ 'stdlib/no-unassigned-require' ] = 'error';
 *
 * @example
 * // Bad...
+* var ns = [];
+*
 * ns.push({
 *   'alias': 'hasMapSupport',
 *   'path': '@stdlib/assert/has-map-support',
@@ -3971,6 +3973,8 @@ rules[ 'stdlib/no-unassigned-require' ] = 'error';
 *
 * @example
 * // Good...
+* var ns = [];
+*
 * ns.push({
 *   'alias': 'hasInt8ArraySupport',
 *   'path': '@stdlib/assert/has-int8array-support',
