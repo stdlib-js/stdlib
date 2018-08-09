@@ -2684,6 +2684,19 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Mersenne_Twister": {
+    "id": "mersenne-twistter",
+    "description": "Wikipedia entry for the Mersenne Twister pseudorandom number generator.",
+    "short_url": "",
+    "keywords": [
+      "prng",
+      "mersenne",
+      "twister",
+      "rng",
+      "pseudorandom",
+      "numbers"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Mode_%28statistics%29": {
     "id": "mode",
     "description": "Wikipedia entry for the mode.",
