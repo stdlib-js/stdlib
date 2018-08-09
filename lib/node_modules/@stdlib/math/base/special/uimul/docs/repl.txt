@@ -1,0 +1,25 @@
+
+{{alias}}( a, b )
+    Performs C-like multiplication of two unsigned 32-bit integers.
+
+    Parameters
+    ----------
+    a: integer
+        Unsigned 32-bit integer.
+
+    b: integer
+        Unsigned 32-bit integer.
+
+    Returns
+    -------
+    out: integer
+        Product.
+
+    Examples
+    --------
+    > var v = {{alias}}( 10>>>0, 4>>>0 )
+    40
+
+    See Also
+    --------
+
