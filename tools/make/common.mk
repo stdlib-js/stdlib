@@ -519,7 +519,7 @@ endif
 endif
 
 # Define the Electron version (NOTE: whenever updated, update the `david` configuration file):
-DEPS_ELECTRON_VERSION ?= 2.0.6
+DEPS_ELECTRON_VERSION ?= 2.0.7
 
 # Generate a version slug:
 deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
