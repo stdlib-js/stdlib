@@ -515,6 +515,18 @@
       "python"
     ]
   },
+  "http://www.speech.cs.cmu.edu/cgi-bin/cmudict#about": {
+    "id": "cmudict",
+    "description": "Website for the Carnegie Mellon Pronouncing Dictionary.",
+    "short_url": "",
+    "keywords": [
+      "dataset",
+      "data",
+      "dictionary",
+      "nlp",
+      "speech"
+    ]
+  },
   "http://www.yaml.org/": {
     "id": "yaml",
     "description": "Human friendly data serialization standard.",
@@ -1577,6 +1589,16 @@
       "html",
       "desktop",
       "application"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/ARPABET": {
+    "id": "arpabet",
+    "description": "Wikipedia article on the ARPABET set of phonetic transcription codes.",
+    "short_url": "",
+    "keywords": [
+      "phonetic",
+      "alphabet",
+      "nlp"
     ]
   },
   "https://en.wikipedia.org/wiki/ASCII": {
