@@ -38,7 +38,8 @@ DAVID_FLAGS ?= \
 	--ignore chai \
 	--ignore debug \
 	--ignore ajv \
-	--ignore d3-scale
+	--ignore d3-scale \
+	--ignore readable-stream
 
 
 # TARGETS #
