@@ -1,0 +1,39 @@
+
+{{alias}}( [options] )
+    Returns datasets from the Carnegie Mellon Pronouncing Dictionary (CMUdict).
+
+    Data includes the following:
+
+    - dict: the main pronouncing dictionary
+    - phones: manners of articulation for each sound
+    - symbols: complete list of ARPABET symbols used by the dictionary
+    - vp: verbal pronunciations of punctuation marks
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.data: string (optional)
+        Dataset name.
+
+    Returns
+    -------
+    out: Object|Array
+        CMUdict dataset.
+
+    Examples
+    --------
+    > var data = {{alias}}();
+    > var dict = data.dict
+    {...}
+    > var phones = data.phones
+    {...}
+    > var symbols = data.symbols
+    [...]
+    > var vp = data.vp
+    {...}
+
+    See Also
+    --------
+
