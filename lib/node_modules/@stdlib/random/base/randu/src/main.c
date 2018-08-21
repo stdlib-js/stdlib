@@ -1,0 +1,205 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// Note: keep project includes in alphabetical order...
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdarg.h>
+#include "stdlib/random/base.h"
+#include "stdlib/random/base/minstd.h"
+#include "stdlib/random/base/minstd_shuffle.h"
+#include "stdlib/random/base/mt19937.h"
+#include "stdlib/random/base/randu.h"
+
+// Define the default PRNG:
+static const enum STDLIB_BASE_RANDOM_RANDU_PRNG STDLIB_BASE_RANDOM_RANDU_DEFAULT = STDLIB_BASE_RANDOM_RANDU_MT19937;
+
+/**
+* Returns a pointer to a dynamically allocated PRNG.
+*
+* ## Notes
+*
+* -   The user is responsible for freeing the allocated memory.
+*
+* @param nargs   number of provided optional arguments
+* @param [prng]  PRNG to allocate
+* @param [seed]  PRNG seed
+* @param [len]   seed array length
+* @return        pointer to a dynamically allocated PRNG or, if unable to allocate memory, a null pointer
+*
+* @example
+* #include <stdlib.h>
+* #include <stdio.h>
+* #include <stdint.h>
+* #include "stdlib/random/base.h"
+* #include "stdlib/random/base/randu.h"
+*
+* // Create a PRNG:
+* struct BasePRNGObject *obj = stdlib_base_random_randu_allocate( 0 );
+* if ( obj == NULL ) {
+*     fprintf( stderr, "Error allocating PRNG.\n" );
+*     exit( 1 );
+* }
+*
+* double r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* // Free allocated memory:
+* stdlib_base_random_randu_free( obj );
+*/
+struct BasePRNGObject * stdlib_base_random_randu_allocate( const int nargs, ... ) {
+	enum STDLIB_BASE_RANDOM_RANDU_PRNG prng;
+	struct BasePRNGObject *obj;
+
+	va_list args;
+	va_start( args, nargs );
+
+	if ( nargs < 1 ) {
+		prng = STDLIB_BASE_RANDOM_RANDU_DEFAULT;
+	} else {
+		prng = va_arg( args, enum STDLIB_BASE_RANDOM_RANDU_PRNG );
+	}
+	if ( prng == STDLIB_BASE_RANDOM_RANDU_MINSTD ) {
+		int32_t seed;
+		if ( nargs > 1 ) {
+			seed = va_arg( args, int32_t );
+		} else {
+			seed = rand();
+		}
+		obj = stdlib_base_random_minstd_allocate( seed );
+	} else if ( prng == STDLIB_BASE_RANDOM_RANDU_MINSTD_SHUFFLE ) {
+		int32_t seed;
+		if ( nargs > 1 ) {
+			seed = va_arg( args, int32_t );
+		} else {
+			seed = rand();
+		}
+		obj = stdlib_base_random_minstd_shuffle_allocate( seed );
+	} else if ( prng == STDLIB_BASE_RANDOM_RANDU_MT19937 ) {
+		int64_t seed_length;
+		uint32_t *seed;
+		if ( nargs < 2 ) {
+			uint32_t tseed[] = { (uint32_t)rand() };
+			seed = tseed;
+			seed_length = 1;
+		} else if ( nargs == 3 ) {
+			seed = va_arg( args, uint32_t * );
+			seed_length = va_arg( args, int64_t );
+		} else {
+			// Incompatible number of arguments...
+			va_end( args );
+			return NULL;
+		}
+		obj = stdlib_base_random_mt19937_allocate( seed, seed_length );
+	} else {
+		// How did we get here? A non-implemented PRNG?
+		obj = NULL;
+	}
+	va_end( args );
+	return obj;
+}
+
+/**
+* Returns a pseudorandom double-precision floating-point number on the interval `[0,1)`.
+*
+* ## Notes
+*
+* -   The function returns `NAN` if provided a `NULL` pointer.
+*
+* @param obj  PRNG object
+* @return     pseudorandom number
+*
+* @example
+* #include <stdlib.h>
+* #include <stdio.h>
+* #include <stdint.h>
+* #include "stdlib/random/base.h"
+* #include "stdlib/random/base/randu.h"
+*
+* // Create a PRNG:
+* struct BasePRNGObject *obj = stdlib_base_random_randu_allocate( 0 );
+* if ( obj == NULL ) {
+*     fprintf( stderr, "Error allocating PRNG.\n" );
+*     exit( 1 );
+* }
+*
+* double r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* // Free allocated memory:
+* stdlib_base_random_randu_free( obj );
+*/
+double stdlib_base_random_randu( struct BasePRNGObject *obj ) {
+	return stdlib_base_prng_normalized( obj );
+}
+
+/**
+* Frees a PRNG's allocated memory.
+*
+* @param obj  PRNG object
+*
+* @example
+* #include <stdlib.h>
+* #include <stdio.h>
+* #include <stdint.h>
+* #include "stdlib/random/base.h"
+* #include "stdlib/random/base/randu.h"
+*
+* // Create a PRNG:
+* struct BasePRNGObject *obj = stdlib_base_random_randu_allocate( 0 );
+* if ( obj == NULL ) {
+*     fprintf( stderr, "Error allocating PRNG.\n" );
+*     exit( 1 );
+* }
+*
+* double r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* r = stdlib_base_random_randu( obj );
+*
+* // ...
+*
+* // Free allocated memory:
+* stdlib_base_random_randu_free( obj );
+*/
+void stdlib_base_random_randu_free( struct BasePRNGObject *obj ) {
+	stdlib_base_prng_free( obj );
+}
