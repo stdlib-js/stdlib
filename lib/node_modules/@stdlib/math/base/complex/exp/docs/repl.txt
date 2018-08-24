@@ -1,0 +1,37 @@
+
+{{alias}}( [out,] re, im )
+    Computes the exponential function of a complex number.
+
+    Parameters
+    ----------
+    out: Array|TypedArray|Object (optional)
+        Output array.
+
+    re: number
+        Real component.
+
+    im: number
+        Imaginary component.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Real and imaginary components.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0, 0.0 )
+    [ 1.0, 0.0 ]
+
+    > y = {{alias}}( 0.0, 1.0 )
+    [ ~0.540, ~0.841 ]
+
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var v = {{alias}}( out, 0.0, 1.0 )
+    <Float64Array>[ ~0.540, ~0.841 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------
+
