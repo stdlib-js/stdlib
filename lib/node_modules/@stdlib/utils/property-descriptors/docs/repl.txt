@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns an object's own property descriptors.
+
+    If provided `null` or `undefined`, the function returns an empty object.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    desc: Object
+        Property descriptors.
+
+    Examples
+    --------
+    > var obj = { 'a': 'b' };
+    > var desc = {{alias}}( obj )
+    { 'a': {...} }
+
+    See Also
+    --------
+
