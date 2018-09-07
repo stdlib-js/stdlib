@@ -24,6 +24,7 @@ ROADMAP.md
 
 # Directories #
 ###############
+.circleci/
 .github/
 **/benchmark/
 **/build/
@@ -98,3 +99,5 @@ appveyor.yml
 .editorconfig
 .codeclimate.yml
 .codecov.yml
+
+.rtlintrc
