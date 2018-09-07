@@ -9,7 +9,19 @@
 	"@stdlib/_tools/repl-txt/rules/section-order": "error",
 	"@stdlib/_tools/repl-txt/rules/section-style": "error",
 	"@stdlib/_tools/repl-txt/rules/see-also": "error",
-	"@stdlib/_tools/repl-txt/rules/tag-description-style": "error",
+	"@stdlib/_tools/repl-txt/rules/tag-description-style": [ "error", {
+		"whitelist": [
+			"ndarray",
+			"p-value",
+			"rehype",
+			"remark",
+			"stdlib",
+			"x-axis",
+			"y-axis",
+			"x-coordinate",
+			"y-coordinate"
+		]
+	}],
 	"@stdlib/_tools/repl-txt/rules/tag-typedef-typos": "error",
 	"@stdlib/_tools/repl-txt/rules/whitelisted-sections": "error"
 }
