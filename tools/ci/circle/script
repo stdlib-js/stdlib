@@ -46,7 +46,7 @@ log_file='/var/log/circle-ci.log'
 
 # Determine the root project directory:
 root_dir=$(dirname "$0")/../../..
-root_dir=$(cd "${root_dir}" && echo $PWD)
+root_dir=$(cd "${root_dir}" && echo "$PWD")
 
 # Define the project source code directory:
 base_dir="${root_dir}/lib/node_modules"
