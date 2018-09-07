@@ -151,7 +151,8 @@ create_dir() {
 #
 # $1 - log file path
 create_log_file() {
-	local owner=$(whoami)
+	local owner
+	owner=$(whoami)
 	echo "Creating an output log file: $1." >&2
 	sudo touch "$1"
 	sudo chown "${owner}:${owner}" "$1"
@@ -374,8 +375,10 @@ find_tests() {
 # $1 - total number of nodes
 # $2 - node index
 allocate_tests() {
+	local tests
+
 	# Keep those tests (rows) where the VM index equals the modulo:
-	local tests=$(find_tests | sort | awk -v "n=$1" -v "i=$2" '{if (NR % n == i) printf "%s ", $0} END {print ""}')
+	tests=$(find_tests | sort | awk -v "n=$1" -v "i=$2" '{if (NR % n == i) printf "%s ", $0} END {print ""}')
 	echo "${tests}"
 }
 
