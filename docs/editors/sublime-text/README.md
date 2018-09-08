@@ -158,6 +158,8 @@ $ subl .
         ```
 
     -   [**SublimeLinter-json**][sublime-text-sublimelinter-json]: plugin which lints [JSON][json].
+    
+    -   [**SublimeLinter-shellcheck**][sublime-text-sublimelinter-shellcheck]: plugin which provides an interface to [shellcheck][shellcheck] for linting files having "Shell-Unix-Generic" syntax (aka Shell Script).  
 
 <section class="links">
 
@@ -174,6 +176,8 @@ $ subl .
 [sublime-text-sublimelinter-annotations]: https://github.com/SublimeLinter/SublimeLinter-annotations
 
 [sublime-text-sublimelinter-json]: https://github.com/SublimeLinter/SublimeLinter-json
+
+[sublime-text-sublimelinter-shellcheck]: https://github.com/SublimeLinter/SublimeLinter-shellcheck
 
 [sublime-text-editorconfig]: https://github.com/sindresorhus/editorconfig-sublime
 
@@ -194,6 +198,8 @@ $ subl .
 [git]: https://git-scm.com/
 
 [eslint]: http://eslint.org/
+
+[shellcheck]: https://github.com/koalaman/shellcheck
 
 [json]: http://www.json.org/
 
