@@ -28,6 +28,31 @@ SHELL_LINTER_FLAGS ?=
 # RULES #
 
 #/
+# Checks whether [shellcheck][1] is installed.
+#
+# [1]: https://github.com/koalaman/shellcheck
+#
+# @private
+#
+# @example
+# make check-shellcheck
+#/
+check-shellcheck:
+ifeq (, $(shell command -v $(SHELLCHECK) 2>/dev/null))
+	$(QUIET) echo ''
+	$(QUIET) echo 'shellcheck is not installed. Please install shellcheck and try again.'
+	$(QUIET) echo 'For install instructions, see https://github.com/koalaman/shellcheck'
+	$(QUIET) echo 'and the project development guide.'
+	$(QUIET) echo ''
+	$(QUIET) exit 1
+else
+	$(QUIET) echo 'shellcheck is installed.'
+	$(QUIET) exit 0
+endif
+
+.PHONY: check-shellcheck
+
+#/
 # Lints shell script files.
 #
 # ## Notes
