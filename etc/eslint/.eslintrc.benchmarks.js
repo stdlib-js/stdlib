@@ -113,7 +113,7 @@ eslint.rules[ 'require-jsdoc' ] = 'off';
 eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 
 /**
-* Do not lint return annotations in JSDoc comments.
+* Do not lint return annotation values in JSDoc comments.
 *
 * @private
 */
