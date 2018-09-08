@@ -120,6 +120,13 @@ eslint.rules[ 'require-jsdoc' ] = 'off';
 eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 
 /**
+* Do not lint return annotation values in JSDoc comments.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off';
+
+/**
 * Allow the use of `undefined`.
 *
 * @private
