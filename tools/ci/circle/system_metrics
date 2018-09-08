@@ -42,7 +42,8 @@ on_error() {
 #   memory_used_in_MB,total_memory_in_MB,percent_used
 #
 memory_usage() {
-	local mem=$(free -m | awk 'NR==2 {printf "%sMB,%sMB,%.2f%%)", $3, $2, $3*100/$2}')
+	local mem
+	mem=$(free -m | awk 'NR==2 {printf "%sMB,%sMB,%.2f%%)", $3, $2, $3*100/$2}')
 	echo "${mem}"
 }
 
@@ -53,13 +54,15 @@ memory_usage() {
 #    disk_used_in_GB,total_disk_space_in_GB,percent_used
 #
 disk_usage() {
-	local disk=$(df -h | awk '$NF=="/" {printf "%dGB,%dGB,%s", $3, $2, $5}')
+	local disk
+	disk=$(df -h | awk '$NF=="/" {printf "%dGB,%dGB,%s", $3, $2, $5}')
 	echo "${disk}"
 }
 
 # Prints the system load average.
 load_avg() {
-	local load=$(top -bn1 | grep load | awk '{printf "%.2f", $(NF-2)}')
+	local load
+	load=$(top -bn1 | grep load | awk '{printf "%.2f", $(NF-2)}')
 	echo "${load}"
 }
 
