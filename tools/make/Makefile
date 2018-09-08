@@ -105,19 +105,25 @@ include $(TOOLS_MAKE_LIB_DIR)/workshops/Makefile
 
 # RULES #
 
+#/
 # Default target.
 #
-# This target is the default target.
-
+# @example
+# make
+#
+# @example
+# make all
+#/
 all: help
 
 .PHONY: all
 
-
-# Perform clean-up.
+#/
+# Runs the project's cleanup sequence.
 #
-# This target runs the project's cleanup sequence.
-
+# @example
+# make clean
+#/
 clean: clean-node clean-deps clean-cov clean-docs
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(BUILD_DIR)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(REPORTS_DIR)
