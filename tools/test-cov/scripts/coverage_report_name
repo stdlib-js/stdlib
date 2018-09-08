@@ -48,7 +48,7 @@ main() {
 	path="${testdir#${base}/}"
 
 	# Slugify the path (basic algorithm):
-	slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+	slug=$(echo "${path}" | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr '[:upper:]' '[:lower:]')
 
 	# Generate a filename:
 	echo "${output}/coverage${slug}.json"
