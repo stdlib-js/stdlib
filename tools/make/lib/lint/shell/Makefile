@@ -25,6 +25,18 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/shell/shellcheck.mk
 # RULES #
 
 #/
+# Checks whether shell script linters are installed.
+#
+# @private
+#
+# @example
+# make check-shell-linters
+#/
+check-shell-linters: check-shellcheck
+
+.PHONY: check-shell-linters
+
+#/
 # Lints shell script files.
 #
 # ## Notes
