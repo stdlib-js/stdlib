@@ -3539,6 +3539,20 @@
       "json"
     ]
   },
+  "https://github.com/SublimeLinter/SublimeLinter-shellcheck": {
+    "id": "sublime-text-sublimelinter-shellcheck",
+    "description": "Sublime Text plugin which provides an interface to shellcheck for linting files having \"Shell-Unix-Generic\" syntax (aka Shell Script).",
+    "short_url": "",
+    "keywords": [
+      "sublime text",
+      "st3",
+      "linter",
+      "shell",
+      "bash",
+      "lint",
+      "shellcheck"
+    ]
+  },
   "https://github.com/SublimeLinter/SublimeLinter3": {
     "id": "sublime-text-sublimelinter3",
     "description": "Linting framework for Sublime Text 3.",
