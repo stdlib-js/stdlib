@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/jsdoc-return-annotations-values, stdlib/jsdoc-return-annotations-marker */
+/* eslint-disable stdlib/jsdoc-return-annotations-marker */
 
 'use strict';
 
@@ -3065,7 +3065,7 @@ rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 *   return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'error';
+rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off';
 
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
