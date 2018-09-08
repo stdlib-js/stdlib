@@ -51,6 +51,7 @@ While not required to run stdlib, the following dependencies **may** be required
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 -   [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
 -   [pandoc][pandoc]: universal document converter (version `>= 1.18`)
+-   [Homebrew][homebrew]: macOS package manager (only **required** on OS X in order to install [shellcheck][shellcheck])
 
 Assuming the requisite language is present on the host machine, the following language libraries can be automatically downloaded and installed using `make` (see [installation](#installation)):
 
@@ -60,7 +61,7 @@ Assuming the requisite language is present on the host machine, the following la
 -   [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
 -   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
 -   [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
--   [shellcheck][shellcheck]: static code analysis for shell scripts (version `>= 0.5.0`)
+-   [shellcheck][shellcheck]: static code analysis for shell scripts (version `>= 0.5.0`; to install on OS X, either install [Homebrew][homebrew] as a prerequisite or install [shellcheck][shellcheck] manually)
 
 The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -401,6 +402,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [cmake]: https://cmake.org/
 
 [pandoc]: http://pandoc.org/
+
+[homebrew]: https://brew.sh/
 
 [boost]: http://www.boost.org/
 
