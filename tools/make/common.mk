@@ -212,6 +212,12 @@ PROJECT_NAME ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).n
 # Define the command for getting the project GitHub URL:
 PROJECT_GITHUB_URL ?= $(NODE) -e "console.log( require( '$(ROOT_DIR)/package.json' ).repository.url )"
 
+# Define the command for determining the host architecture:
+NODE_HOST_ARCH ?= $(NODE) -e 'console.log( process.arch )'
+
+# Define the command for determining the host platform:
+NODE_HOST_PLATFORM ?= $(NODE) -e 'console.log( process.platform )'
+
 
 # TOOLS #
 
@@ -528,7 +534,19 @@ deps_electron_version_slug := $(subst .,_,$(DEPS_ELECTRON_VERSION))
 DEPS_ELECTRON_BUILD_OUT ?= $(DEPS_BUILD_DIR)/electron_$(deps_electron_version_slug)
 
 # Host architecture:
-DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE) -e 'console.log( process.arch )')
+DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_ARCH))
 
 # Host platform:
-DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE) -e 'console.log( process.platform )')
+DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# Define the shellcheck version:
+DEPS_SHELLCHECK_VERSION ?= 0.5.0
+
+# Generate a version slug:
+deps_shellcheck_version_slug := $(subst .,_,$(DEPS_SHELLCHECK_VERSION))
+
+# Define the output path when building shellcheck:
+DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_version_slug)
+
+# Host platform:
+DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))

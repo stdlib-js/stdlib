@@ -38,6 +38,7 @@ include $(TOOLS_MAKE_LIB_DIR)/deps/cephes.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/openblas.mk
+include $(TOOLS_MAKE_LIB_DIR)/deps/shellcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/deps/wabt.mk
 
 
@@ -63,7 +64,7 @@ $(DEPS_BUILD_DIR):
 #
 # This target installs external library dependencies.
 
-install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt install-deps-cephes install-deps-electron
+install-deps: install-deps-boost install-deps-openblas install-deps-emsdk install-deps-wabt install-deps-cephes install-deps-electron install-deps-shellcheck
 
 .PHONY: install-deps
 
