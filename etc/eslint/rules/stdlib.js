@@ -3037,7 +3037,7 @@ rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 * * var y = square( 3.0 );
 * * // returns 12.0
 * *
-* * console.log( square( 2.0 ) );
+* * y = square( 2.0 );
 * * // returns 4.0
 * *\/
 * function square( x ) {
@@ -3057,7 +3057,7 @@ rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 * * // returns 9.0
 * *
 * * y = square( 2.0 );
-* * // => 4.0
+* * // returns 4.0
 * *\/
 * function square( x ) {
 *   return x*x;
