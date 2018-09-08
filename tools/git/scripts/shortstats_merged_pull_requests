@@ -20,6 +20,9 @@
 #
 # <month> <day> <year> <num_files> <additions> <deletions>
 
+# shellcheck disable=SC2034
+
+
 # FUNCTIONS #
 
 # Computes summary statistics.

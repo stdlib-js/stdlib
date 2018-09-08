@@ -26,7 +26,7 @@
 #   - Extract first word.
 # * `awk '{}'`
 #   - Remove commits which use sed syntax.
-# * `tr A-Z a-z`
+# * `tr '[:upper:]' '[:lower:]`
 #   - Convert each word to lowercase.
 # * `sort`
 #   - Sort in lexicographic order.
@@ -50,4 +50,4 @@ git log --pretty=format:'%s' | awk '
 ! /^s\/.+\/.+\/$/ {
 	print $0
 }
-' | tr A-Z a-z | sort | uniq -c | sort -nr
+' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr
