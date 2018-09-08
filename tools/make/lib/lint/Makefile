@@ -28,6 +28,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/package_json.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/r/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/shell/Makefile
 
 
 # RULES #
@@ -43,7 +44,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/r/Makefile
 # @example
 # make lint
 #/
-lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-conf lint-pkg-json lint-license-headers
+lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-shell lint-conf lint-pkg-json lint-license-headers
 
 .PHONY: lint
 
