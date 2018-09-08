@@ -30,10 +30,10 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define a command for listing shell script files:
-FIND_SHELL_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SHELL_FLAGS)
+FIND_SHELL_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_SHELL_FLAGS) | while read -r file; do head -n1 "$$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$$file"; done
 
 # Define the list of files:
-SHELL_FILES ?= $(shell $(FIND_SHELL_CMD) | while read -r file; do head -n1 "$$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$$file"; done)
+SHELL_FILES ?= $(shell $(FIND_SHELL_CMD))
 
 
 # RULES #
