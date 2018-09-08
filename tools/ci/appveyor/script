@@ -20,6 +20,8 @@
 #
 # [1]: https://www.appveyor.com/
 
+# shellcheck disable=SC2181
+
 
 # VARIABLES #
 
@@ -265,6 +267,7 @@ main() {
 trap 'on_error' ERR
 
 # Run in the top-level project directory:
+# shellcheck disable=SC2164,SC2046
 cd $(dirname "$0")/../../..
 
 # Run main:
