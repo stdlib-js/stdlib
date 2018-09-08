@@ -22,6 +22,7 @@
 # VARIABLES #
 
 # Cache provided arguments:
+# shellcheck disable=SC2124
 args="$@"
 
 # Define the command for `node`:
