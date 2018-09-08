@@ -85,7 +85,8 @@ var overrides = [
 			}],
 			'no-restricted-syntax': restrictedSyntaxConfig,
 			'require-jsdoc': 'off',
-			'stdlib/jsdoc-private-annotation': 'off'
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-return-annotations-values': 'off'
 		}
 	},
 	{
@@ -96,6 +97,7 @@ var overrides = [
 			'no-console': 'off',
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-return-annotations-values': 'off',
 			'stdlib/vars-order': 'off'
 		}
 	},
@@ -112,6 +114,7 @@ var overrides = [
 			'no-restricted-syntax': restrictedSyntaxConfig,
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-return-annotations-values': 'off',
 			'no-undefined': 'off'
 		}
 	}

@@ -72,6 +72,13 @@ eslint.rules[ 'require-jsdoc' ] = 'off';
 eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 
 /**
+* Do not lint return annotations in JSDoc comments.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off';
+
+/**
 * Do not require ordering of variable declarations inside of functions.
 *
 * @private
