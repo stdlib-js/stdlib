@@ -60,6 +60,7 @@ Assuming the requisite language is present on the host machine, the following la
 -   [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
 -   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
 -   [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
+-   [shellcheck][shellcheck]: static code analysis for shell scripts (version `>= 0.5.0`)
 
 The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -388,6 +389,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [pydocstyle]: https://github.com/PyCQA/pydocstyle
 
 [lintr]: https://github.com/jimhester/lintr
+
+[shellcheck]: https://github.com/koalaman/shellcheck
 
 [gcc]: http://gcc.gnu.org/
 
