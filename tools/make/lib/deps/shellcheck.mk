@@ -28,12 +28,8 @@ endif
 # Determine the basename for the download:
 deps_shellcheck_basename := $(notdir $(DEPS_SHELLCHECK_URL))
 
-# Define the path to the file containing a checksum verify a download...
-ifeq ($(OS), WINNT)
-	DEPS_SHELLCHECK_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst -,_,$(deps_shellcheck_basename)))/sha256)
-else
-	DEPS_SHELLCHECK_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst -,_,$(deps_shellcheck_basename)))/sha256)
-endif
+# Define the path to the file containing a checksum verify a download:
+DEPS_SHELLCHECK_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst -,_,$(deps_shellcheck_basename)))/sha256)
 
 # Define the output path when downloading:
 DEPS_SHELLCHECK_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_shellcheck_basename)
