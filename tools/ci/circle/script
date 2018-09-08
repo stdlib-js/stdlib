@@ -399,7 +399,7 @@ run_tests() {
 		path="${test#${base_dir}/}"
 
 		# Slugify the path (basic algorithm):
-		slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+		slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr '[:upper:]' '[:lower:]')"
 
 		# Define the output log file path:
 		log_file="$2/test-results.${slug}.xml"
