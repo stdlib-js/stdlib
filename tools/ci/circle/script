@@ -20,7 +20,7 @@
 #
 # [1]: https://circleci.com
 
-# shellcheck disable=SC2181
+# shellcheck disable=SC2181,SC2034,SC1091
 
 
 # DEPENDENCIES #
@@ -394,6 +394,8 @@ run_tests() {
 	local slug
 
 	echo 'Running tests...' >&2
+
+	# shellcheck disable=SC2116
 	for test in $(echo "$1"); do
 		echo "Running test: ${test}" >&2
 
@@ -479,6 +481,7 @@ main() {
 				on_error 1
 			fi
 		fi
+		# shellcheck disable=SC2003
 		i=$(expr "${i}" + "${len}")
 	done
 
