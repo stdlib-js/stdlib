@@ -101,7 +101,7 @@ $ subl .
 
 -   [**SublimeLinter3**][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
-    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files:
+    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files and to set the `NODE_PATH` environment variable upon invoking [ESLint][eslint]:
 
         ```text
                 ...
@@ -114,7 +114,10 @@ $ subl .
                             "--config",
                             "/absolute/file/path/to/stdlib/.eslintrc.js"
                         ],
-                        "excludes": []
+                        "excludes": [],
+                        "env": {
+                            "NODE_PATH": "${folder}/lib/node_modules"
+                        }
                     }
                 ...
         ```
