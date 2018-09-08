@@ -20,6 +20,8 @@
 #
 # [1]: https://circleci.com
 
+# shellcheck disable=SC2181
+
 
 # DEPENDENCIES #
 
