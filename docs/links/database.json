@@ -3626,6 +3626,18 @@
       "plugin"
     ]
   },
+  "https://github.com/koalaman/shellcheck": {
+    "id": "shellcheck",
+    "description": "GitHub repository for shellcheck, a shell script static analysis tool.",
+    "short_url": "",
+    "keywords": [
+      "linter",
+      "lint",
+      "shell",
+      "bash",
+      "static analysis"
+    ]
+  },
   "https://github.com/mvoidex/UnicodeMath": {
     "id": "sublime-text-unicode-math",
     "description": "Sublime Text package for inserting Unicode math symbols and emoji.",
