@@ -116,6 +116,9 @@ COVERAGE_SERVICE ?= codecov
 # Define the linter to use when linting Markdown files:
 MARKDOWN_LINTER ?= remark
 
+# Define the linter to use when linting shell script files:
+SHELL_LINTER ?= shellcheck
+
 
 # COMMANDS #
 

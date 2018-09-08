@@ -16,41 +16,13 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
+# DEPENDENCIES #
 
-# Define the shell script linter:
-SHELL_LINTER ?= $(SHELLCHECK)
-
-# Define the command-line options to be used when invoking the executable:
-SHELL_LINTER_FLAGS ?=
+# Note: keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/lint/shell/shellcheck.mk
 
 
 # RULES #
-
-#/
-# Checks whether [shellcheck][1] is installed.
-#
-# [1]: https://github.com/koalaman/shellcheck
-#
-# @private
-#
-# @example
-# make check-shellcheck
-#/
-check-shellcheck:
-ifeq (, $(shell command -v $(SHELLCHECK) 2>/dev/null))
-	$(QUIET) echo ''
-	$(QUIET) echo 'shellcheck is not installed. Please install shellcheck and try again.'
-	$(QUIET) echo 'For install instructions, see https://github.com/koalaman/shellcheck'
-	$(QUIET) echo 'and the project development guide.'
-	$(QUIET) echo ''
-	$(QUIET) exit 1
-else
-	$(QUIET) echo 'shellcheck is installed.'
-	$(QUIET) exit 0
-endif
-
-.PHONY: check-shellcheck
 
 #/
 # Lints shell script files.
@@ -69,18 +41,8 @@ endif
 # make lint-shell SHELL_FILTER=.*/_tools/.*
 #/
 lint-shell:
-ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(FIND_SHELL_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(SHELL_LINTER) $(SHELL_LINTER_FLAGS) $$file || exit 1; \
-	done
-else
-	$(QUIET) $(FIND_SHELL_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(SHELL_LINTER) $(SHELL_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
-	done
+ifeq ($(SHELL_LINTER), shellcheck)
+	$(QUIET) $(MAKE) -f $(this_file) shellcheck
 endif
 
 .PHONY: lint-shell
@@ -99,18 +61,8 @@ endif
 # make lint-shell-files FILES='/foo/file.sh /bar/file.sh'
 #/
 lint-shell-files:
-ifeq ($(FAIL_FAST), true)
-	$(QUIET) for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(SHELL_LINTER) $(SHELL_LINTER_FLAGS) $$file || exit 1; \
-	done
-else
-	$(QUIET) for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(SHELL_LINTER) $(SHELL_LINTER_FLAGS) $$file || echo 'Linting failed.'; \
-	done
+ifeq ($(SHELL_LINTER), shellcheck)
+	$(QUIET) FILES="$(FILES)" $(MAKE) -f $(this_file) shellcheck-files
 endif
 
 .PHONY: lint-shell-files
