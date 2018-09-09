@@ -117,6 +117,12 @@ var overrides = [
 			'stdlib/jsdoc-return-annotations-values': 'off',
 			'no-undefined': 'off'
 		}
+	},
+	{
+		'files': [ '*.md' ],
+		'rules': {
+			'stdlib/jsdoc-return-annotations-values': 'off'
+		}
 	}
 ];
 
