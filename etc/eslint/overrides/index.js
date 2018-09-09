@@ -121,7 +121,37 @@ var overrides = [
 	{
 		'files': [ '*.md' ],
 		'rules': {
-			'stdlib/jsdoc-return-annotations-values': 'off'
+			'eol-last': 'off',
+			'indent': [ 'error', 4, {
+				'SwitchCase': 0,
+				'VariableDeclarator': 1,
+				'outerIIFEBody': 1,
+				'MemberExpression': 1,
+				'FunctionDeclaration': {
+					'body': 1,
+					'parameters': 'off'
+				},
+				'FunctionExpression': {
+					'body': 1,
+					'parameters': 'off'
+				},
+				'CallExpression': {
+					'arguments': 'off'
+				},
+				'ArrayExpression': 1,
+				'ObjectExpression': 1,
+				'flatTernaryExpressions': true
+			}],
+			'no-console': 'off',
+			'no-sync': 'off',
+			'no-tabs': 'error',
+			'no-undef': 'off',
+			'no-unused-vars': 'off',
+			'require-jsdoc': 'off',
+			'stdlib/jsdoc-private-annotation': 'off',
+			'stdlib/jsdoc-return-annotations-values': 'off',
+			'strict': 'off',
+			'vars-on-top': 'off'
 		}
 	}
 ];
