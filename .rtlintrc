@@ -1,5 +1,5 @@
 {
-	"@stdlib/_tools/repl-txt/rules/code-return-values": "error",
+	"@stdlib/_tools/repl-txt/rules/return-annotation-values": "error",
 	"@stdlib/_tools/repl-txt/rules/code-semicolons": "error",
 	"@stdlib/_tools/repl-txt/rules/has-parameters-section": "error",
 	"@stdlib/_tools/repl-txt/rules/has-alias-signature": "error",
