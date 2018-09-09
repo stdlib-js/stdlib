@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker */
+/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-values */
 
 'use strict';
 
@@ -3065,7 +3065,7 @@ rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
 *   return x*x;
 * }
 */
-rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off';
+rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'error';
 
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
@@ -4221,7 +4221,7 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 * @name return-annotations-values
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 *
 * @example
 * // Bad...
@@ -4239,7 +4239,7 @@ rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 * console.log( 'Hello World' );
 * // returns 'Hello World'
 */
-rules[ 'stdlib/return-annotations-values' ] = 'error';
+rules[ 'stdlib/return-annotations-values' ] = 'off';
 
 /**
 * Enforce formatting of section header comments.
