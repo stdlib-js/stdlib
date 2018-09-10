@@ -359,7 +359,7 @@ var v = foo();
 // returns <number> || null
 ```
 
-indicates that `foo()` may return either a value of type `number` **or** the value `null`. The conventions of deep, approximate, and type equality documented above can be applied to each possible return value.
+indicates that `foo()` may return either a value of type `number` **or** the value `null`. The conventions of deep, approximate, and type equality, as documented above, can be applied to each possible return value.
 
 Similarly, although expected to be a **rare** use case, conditional equality can be applied to printed output. For example,
 
@@ -385,7 +385,7 @@ var v = foo();
 // returns ...
 ```
 
-indicates that `foo()` returns a value (any) of undefined/unspecified type.
+indicates that `foo()` returns a value of undefined/unspecified type (i.e., a value of "any" type).
 
 <!-- run-disable -->
 
@@ -469,12 +469,13 @@ indicates that `foo()` returns a JavaScript `object` having the properties `a` a
 
 Doctest annotations can be extended to command-line interface (CLI) terminal output. Annotations, however, differ as follows:
 
--   Terminal commands should include a command-line prompt. For example,
+-   Preceding terminal commands should include a command-line prompt. For example,
 
     <!-- run-disable -->
 
     ```bash
     $ echo 'beep'
+    beep
     ```
 
     where `$` is the command-line prompt. Including the command-line prompt allows for straightforward identification of commands and expected output.
@@ -484,8 +485,8 @@ Doctest annotations can be extended to command-line interface (CLI) terminal out
     <!-- run-disable -->
 
     ```bash
-    $ echo 'beep'
-    beep
+    $ echo 'boop'
+    boop
     ```
 
     does not require `returns` or `=>` to indicate the expected value. We simply **assume** that whatever is not preceded by a command-line prompt is an expected value.
