@@ -536,7 +536,7 @@ var mat = foo();
 */
 ```
 
-indicates that `foo()` returns a `2x2` matrix whose entire contents when expressed as a linear array (`':'`) equal `1.14`, `-3.14`, `0.00`, and `0.50`.
+indicates that `foo()` returns a `2x2` matrix whose entire contents, when expressed as a linear array (`':'`), equal `1.14`, `-3.14`, `0.00`, and `0.50`.
 
 Less commonly, one may want to assert a sub-matrix. For example,
 
@@ -550,7 +550,7 @@ var mat = foo();
 */
 ```
 
-indicates that `foo()` returns an `NxM` matrix containing a `2x2` sub-matrix beginning with the first row and second column whose contents when expressed as a linear array equal `1.14`, `-3.14`, `0.00`, and `0.50`.
+indicates that `foo()` returns an `NxM` matrix containing a `2x2` sub-matrix beginning with the first row and second column whose contents, when expressed as a linear array, equal `1.14`, `-3.14`, `0.00`, and `0.50`.
 
 Additionally, matrices can include wildcards. For example, 
 
@@ -629,7 +629,8 @@ indicates that the command `foo` prints a JavaScript `number` value.
 
 ### Notes
 
--   For JavaScript doctests, printed output (via `console.log()`) **should be** valid JSON. Valid JSON significantly simplifies the  de-serialization and comparison of expected values. Because of this constraint, authors should think carefully about how and what is printed as expected output. For example, rather than print a large serialized JSON object, one might choose to print particular properties whose serialized expected values are more readily parsed and compiled.
+-   For JavaScript doctests, printed output (via `console.log()`) **should be** valid JSON and/or a canonical serialized string representation. In general, valid JSON significantly simplifies the de-serialization and comparison of expected values. Because of this constraint, authors should think carefully about how and what is printed as expected output. For example, rather than print a large serialized JSON object, one might choose to print particular properties whose serialized expected values are more readily parsed and compiled.
+-   The matrix and ndarray doctest annotations documented above apply **only** to `returns` doctest annotations and **not** printed output. When printing matrices and ndarrays, either serialize as JSON or to a canonical string.
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
