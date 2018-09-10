@@ -127,7 +127,7 @@ swap( x );
 
 indicates that the two-element array to which `x` refers has been mutated after evaluation of the preceding expressions. In this case, as `swap()` returns a `boolean`, the `returns` keyword would not allow us to assert the more salient behavior of array mutation. By using the `<var> =>` convention, we can do so.  
 
-The `e.g.,` and `<var> =>` can be used in combination. For example,
+The `e.g.,` and `<var> =>` prefixes can be used in combination. For example,
 
 <!-- run-disable -->
 
