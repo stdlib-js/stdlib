@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-values */
+
 'use strict';
 
 /**
@@ -4140,8 +4142,6 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 	]
 }];
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker */
-
 /**
 * Enforce marker style conventions for return annotations.
 *
@@ -4169,8 +4169,6 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 * // => 'Hello World'
 */
 rules[ 'stdlib/return-annotations-marker' ] = 'error';
-
-/* eslint-enable stdlib/jsdoc-return-annotations-marker */
 
 /* eslint-disable stdlib/jsdoc-return-annotations-quote-props */
 
@@ -4217,6 +4215,32 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 
 /* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
+
+/**
+* Enforce that return annotation values match actual output.
+*
+* @name return-annotations-values
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // returns 2.0
+*
+* console.log( 'Hello World' );
+* // returns 'hello world'
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*/
+rules[ 'stdlib/return-annotations-values' ] = 'off';
 
 /**
 * Enforce formatting of section header comments.
