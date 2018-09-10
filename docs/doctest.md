@@ -238,9 +238,18 @@ var o = foo();
 // returns { 'a': [ ~1.1, ~2.2, ~3.3 ] }
 ```
 
-indicates that `foo()` returns a JavaScript `object` containing a nested array with the approximate values `1.1`, `2.2`, and `3.3`.
+indicates that `foo()` returns a JavaScript `object` containing a nested array with approximate values `1.1`, `2.2`, and `3.3`. Similarly,
 
-> **Note**: doctest implementors can apply deep approximate equality to printed output; however, printing complex data structures with approximate values should be **discouraged** given the possible difficulties of de-serializing serialized data structures with potentially invalid syntax. Ideally, to reduce the burden on doctest implementations, authors should opt for simpler assertions, preferably of returned, rather than printed, output, where de-serialization is not a concern.
+<!-- run-disable -->
+
+```javascript
+var o = foo();
+
+console.log( JSON.stringify( o ) );
+// => '{ "a": [ ~1.1, ~2.2, ~3.3 ] }'
+```
+
+indicates that a serialized JavaScript `object` containing a nested array with approximate values `1.1`, `2.2`, and `3.3` will be printed to an output destination, e.g., `stdout`.
 
 #### Type Equality
 
