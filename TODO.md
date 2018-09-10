@@ -311,7 +311,7 @@ limitations under the License.
 
 1.  add code climate badge
 
-1.  consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
+1.  consider using tools for linting files other than JavaScript
 
     -   [alex](https://github.com/wooorm/alex)
     -   [retext-readability](https://github.com/wooorm/retext-readability)
@@ -514,7 +514,7 @@ limitations under the License.
         // returns {'a':[1,2,3]}
 
         // Deep equal (mutation):
-        // x => [ 1.  2, 3, 4, 5 ]
+        // x => [ 1, 2, 3, 4, 5 ]
 
         // Deep equal:
         /* returns
@@ -585,6 +585,9 @@ limitations under the License.
         // Type equality instanceof):
         // returns <Foo>
 
+        // Type equality + deep equal:
+        // returns <Float64Array>[ 1, 2, 3 ]
+
         // Wildcard (string):
         // returns '...'
 
@@ -625,10 +628,10 @@ limitations under the License.
         // <boolean>
 
         // Insert figure:
-        // => <figure data=?>
+        // +> <figure data=?>
 
         // Insert figure:
-        // => plot(x, y)
+        // +> plot(x, y)
         ```
 
         ```javascript
