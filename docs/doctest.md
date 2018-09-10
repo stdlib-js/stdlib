@@ -48,7 +48,7 @@ The following guide sets forth doctest conventions for documenting expected beha
 
 A doctest annotation is a syntactically valid language comment consisting of a **marker** and an **expected value**.
 
-> **Note**: most of the following examples will be written in JavaScript which uses C-style comment syntax. While biased toward JavaScript, the doctest annotation convention endeavors to be language agnostic and not limited to any particular comment style. 
+> **Note**: most of the following examples will be written in JavaScript which uses C-style comment syntax. While invariably biased toward JavaScript, the doctest annotation convention endeavors to be language agnostic and not limited to any particular comment style. 
 
 Doctest annotations begin with one of three keyword markers (with limited exceptions documented below):
 
@@ -85,7 +85,7 @@ beep();
 // throws <TypeError>
 ```
 
-annotates that the expression `beep()` should cause a thrown exception (in this case, a JavaScript `TypeError`).
+annotates that the expression `beep()` should throw an exception (in this case, a JavaScript `TypeError`).
 
 Markers may be prefixed with `e.g.,` to indicate that an annotation is exemplary/illustrative. This is useful when a return value is indeterminate. For example,
 
@@ -107,27 +107,27 @@ var arr = foo();
 // returns [...]
 ```
 
-where `returns [...]` indicates a more generic non-empty `array`, this is perhaps less informative than an exemplary return value. Thus, the `e.g.,` prefix affords a comment-style in accordance with doctest convention while allowing author discretion in promoting clarity in the spirit of literate programming in spite of limitations in the doctest format.
+where `returns [...]` indicates a more generic non-empty `array`, this is perhaps less informative than an exemplary return value. Thus, the `e.g.,` prefix affords a comment-style in accordance with doctest convention while allowing author discretion in promoting clarity in the spirit of literate programming and in spite of limitations in the doctest format.
 
 To indicate value mutation, the `=>` annotation marker is preceded by a value reference (variable name). For example,
 
 ```javascript
-function swap( arr ) {
-    var tmp = arr[ 0 ];
-    arr[ 0 ] = arr[ 1 ];
-    arr[ 1 ] = tmp;
+function swap( arr, i, j ) {
+    var tmp = arr[ i ];
+    arr[ i ] = arr[ j ];
+    arr[ j ] = tmp;
     return true;
 }
 
 var x = [ 1, 2 ];
 
-swap( x );
+swap( x, 0, 1 );
 // x => [ 2, 1 ]
 ```
 
-indicates that the two-element array to which `x` refers has been mutated after evaluation of the preceding expressions. In this case, as `swap()` returns a `boolean`, the `returns` keyword would not allow us to assert the more salient behavior of array mutation. By using the `<var> =>` convention, we can do so.  
+indicates that the two-element array to which `x` refers has been mutated after evaluation of the preceding expressions. In this case, as `swap()` returns a `boolean`, the `returns` keyword would not allow us to assert the more salient behavior of array mutation. By using the `{var} =>` convention, we can do so.  
 
-The `e.g.,` and `<var> =>` prefixes can be used in combination. For example,
+The `e.g.,` and `{var} =>` prefixes can be used in combination. For example,
 
 <!-- run-disable -->
 
@@ -136,7 +136,7 @@ foo( x );
 // e.g., x => [ 1, 3, 2 ]
 ```
 
-indicates that `foo()` mutates `x` which, e.g., due to indeterminacy may have the contents `1`, `2`, and `3`, but not necessarily so.
+indicates that `foo()` mutates `x` which, e.g., due to indeterminacy may have the contents `1`, `2`, and `3`, but not necessarily so and not necessarily in the displayed order.
 
 #### Equality
 
