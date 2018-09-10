@@ -531,6 +531,7 @@ For matrices (and, more generally, ndarrays), stdlib uses a "slice" syntax to in
 ```javascript
 var mat = foo();
 /* returns
+
   mat[':'] = [ 1.14,   -3.14,
                0.00,    0.50  ]
 */
@@ -545,6 +546,7 @@ Less commonly, one may want to assert a sub-matrix. For example,
 ```javascript
 var mat = foo();
 /* returns
+
   mat['1:2,2:3'] = [ 1.14,   -3.14,
                      0.00,    0.50  ]
 */
@@ -559,6 +561,7 @@ Additionally, matrices can include wildcards. For example,
 ```javascript
 var mat = foo();
 /* returns
+
   mat[':'] = [ 1.14,   ...,   -3.14,
                0.00,   ...,    0.50,
                 ...,   ...,     ...  ]
@@ -574,6 +577,7 @@ Lastly, similar to other complex data structures, approximate values are demarca
 ```javascript
 var mat = foo();
 /* returns
+
   mat[':'] = [ ~1.14,   ~-3.14,
                 0.00,    ~0.50  ]
 */
@@ -588,6 +592,7 @@ ndarrays extend the conventions for matrices to arbitrary dimensions. For exampl
 ```javascript
 var x = foo();
 /* returns
+
   x[':,:,0'] = [ 1.14,   -3.14,
                  0.00,    0.50  ]
 
