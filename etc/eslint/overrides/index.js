@@ -150,6 +150,7 @@ var overrides = [
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-return-annotations-values': 'off',
+			'stdlib/return-annotations-values': 'off',
 			'strict': 'off',
 			'vars-on-top': 'off'
 		}
