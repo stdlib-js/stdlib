@@ -622,9 +622,6 @@ limitations under the License.
         // {"beep":"boop"}
 
         // Output to terminal:
-        // <error_message>
-
-        // Output to terminal:
         // <boolean>
 
         // Insert figure:
