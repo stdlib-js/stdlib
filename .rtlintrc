@@ -7,7 +7,7 @@
 	"@stdlib/_tools/repl-txt/rules/match-signature": "error",
 	"@stdlib/_tools/repl-txt/rules/resolvable-aliases": "error",
 	"@stdlib/_tools/repl-txt/rules/section-order": "error",
-	"@stdlib/_tools/repl-txt/rules/section-style": "error",
+	"@stdlib/_tools/repl-txt/rules/section-heading-style": "error",
 	"@stdlib/_tools/repl-txt/rules/see-also": "error",
 	"@stdlib/_tools/repl-txt/rules/tag-description-style": [ "error", {
 		"whitelist": [
