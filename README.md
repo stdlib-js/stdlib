@@ -66,13 +66,13 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
     </div>
 
--   160+ general [utilities][@stdlib/utils] for data transformation, functional programming, and asynchronous control flow.
+-   200+ general [utilities][@stdlib/utils] for data transformation, functional programming, and asynchronous control flow.
 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
     </div>
 
--   170+ [assertion utilities][@stdlib/assert] for data validation and feature detection.
+-   200+ [assertion utilities][@stdlib/assert] for data validation and feature detection.
 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
