@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-doctest */
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -530,6 +530,54 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-doctest' ] = 'error';
+
+/**
+* Enforce marker style conventions for return annotations in JSDoc examples.
+*
+* @name jsdoc-doctest-marker
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // => 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // => 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-doctest-marker' ] = 'error';
 
 /**
 * Require `_` be used as the emphasis marker.
@@ -2964,54 +3012,6 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'warn';
 * }
 */
 rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
-
-/**
-* Enforce marker style conventions for return annotations in JSDoc examples.
-*
-* @name jsdoc-return-annotations-marker
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // => 9.0
-* *
-* * console.log( square( 2.0 ) );
-* * // returns 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*
-* @example
-* // Good...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // returns 9.0
-* *
-* * console.log( square( 2.0 ) );
-* * // => 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*/
-rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
 
 /**
 * Enforce that property names in return annotations inside of example code are quoted using single quotes.
