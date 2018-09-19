@@ -125,6 +125,52 @@ rules[ 'stdlib/doctest' ] = 'off';
 */
 rules[ 'stdlib/doctest-marker' ] = 'error';
 
+/* eslint-disable stdlib/jsdoc-doctest-quote-props */
+
+/**
+* Enforce that property names in return annotations are quoted.
+*
+* @name doctest-quote-props
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         a: 1,
+*         b: true,
+*         c: [ 1, 2, 3 ]
+*     }
+* *\/
+*
+* @example
+* // Good...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         'a': 1,
+*         'b': true,
+*         'c': [ 1, 2, 3 ]
+*     }
+* *\/
+*/
+rules[ 'stdlib/doctest-quote-props' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-doctest-quote-props */
+
 /**
 * Require an empty line before single-line comments.
 *
@@ -4194,52 +4240,6 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 		'path'
 	]
 }];
-
-/* eslint-disable stdlib/jsdoc-doctest-quote-props */
-
-/**
-* Enforce that property names in return annotations are quoted.
-*
-* @name return-annotations-quote-props
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* var value = {
-*     'a': 1,
-*     'b': true,
-*     'c': [ 1, 2, 3 ]
-* };
-* var out = copy( value );
-* /* returns
-*     {
-*         a: 1,
-*         b: true,
-*         c: [ 1, 2, 3 ]
-*     }
-* *\/
-*
-* @example
-* // Good...
-* var value = {
-*     'a': 1,
-*     'b': true,
-*     'c': [ 1, 2, 3 ]
-* };
-* var out = copy( value );
-* /* returns
-*     {
-*         'a': 1,
-*         'b': true,
-*         'c': [ 1, 2, 3 ]
-*     }
-* *\/
-*/
-rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
-
-/* eslint-enable stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Enforce formatting of section header comments.
