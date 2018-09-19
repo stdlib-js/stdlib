@@ -3044,7 +3044,7 @@ rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
 /**
 * Enforce that property names in return annotations inside of example code are quoted using single quotes.
 *
-* @name jsdoc-return-annotations-quote-props
+* @name jsdoc-doctest-quote-props
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -3119,7 +3119,7 @@ rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
 *     return out;
 * }
 */
-rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
+rules[ 'stdlib/jsdoc-doctest-quote-props' ] = 'error';
 
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
@@ -4195,7 +4195,7 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 	]
 }];
 
-/* eslint-disable stdlib/jsdoc-return-annotations-quote-props */
+/* eslint-disable stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Enforce that property names in return annotations are quoted.
@@ -4239,7 +4239,7 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 */
 rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 
-/* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
+/* eslint-enable stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Enforce formatting of section header comments.
