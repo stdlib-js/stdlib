@@ -72,6 +72,32 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 } ];
 
 /**
+* Enforce that return annotation values match actual output.
+*
+* @name doctest
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // returns 2.0
+*
+* console.log( 'Hello World' );
+* // returns 'hello world'
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*/
+rules[ 'stdlib/doctest' ] = 'off';
+
+/**
 * Require an empty line before single-line comments.
 *
 * @name empty-line-before-comment
@@ -4214,32 +4240,6 @@ rules[ 'stdlib/return-annotations-marker' ] = 'error';
 rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
 
 /* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
-
-/**
-* Enforce that return annotation values match actual output.
-*
-* @name return-annotations-values
-* @memberof rules
-* @type {string}
-* @default 'off'
-*
-* @example
-* // Bad...
-* var x = 3.0;
-* // returns 2.0
-*
-* console.log( 'Hello World' );
-* // returns 'hello world'
-*
-* @example
-* // Good...
-* var x = 3.0;
-* // returns 3.0
-*
-* console.log( 'Hello World' );
-* // returns 'Hello World'
-*/
-rules[ 'stdlib/return-annotations-values' ] = 'off';
 
 /**
 * Enforce formatting of section header comments.
