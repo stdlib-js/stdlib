@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-values */
+/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -456,6 +456,54 @@ rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
+
+/**
+* Ensure that return annotations in JSDoc examples match the actual output.
+*
+* @name jsdoc-doctest
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 12.0
+* *
+* * y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-doctest' ] = 'error';
 
 /**
 * Require `_` be used as the emphasis marker.
@@ -3018,54 +3066,6 @@ rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
-
-/**
-* Ensure that return annotations in JSDoc examples match the actual output.
-*
-* @name jsdoc-return-annotations-values
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // returns 12.0
-* *
-* * y = square( 2.0 );
-* * // returns 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*
-* @example
-* // Good...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // returns 9.0
-* *
-* * y = square( 2.0 );
-* * // returns 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*/
-rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'error';
 
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
