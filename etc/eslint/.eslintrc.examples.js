@@ -76,14 +76,14 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 *
 * @private
 */
-eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off';
+eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 
 /**
 * Lint return annotation values.
 *
 * @private
 */
-eslint.rules[ 'stdlib/return-annotations-values' ] = 'error';
+eslint.rules[ 'stdlib/doctest' ] = 'error';
 
 /**
 * Do not require ordering of variable declarations inside of functions.
