@@ -98,6 +98,34 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 rules[ 'stdlib/doctest' ] = 'off';
 
 /**
+* Enforce marker style conventions for return annotations.
+*
+* @name doctest-marker
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // => 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*
+* // => null
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // => 'Hello World'
+*/
+rules[ 'stdlib/doctest-marker' ] = 'error';
+
+/**
 * Require an empty line before single-line comments.
 *
 * @name empty-line-before-comment
@@ -4166,34 +4194,6 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 		'path'
 	]
 }];
-
-/**
-* Enforce marker style conventions for return annotations.
-*
-* @name return-annotations-marker
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* var x = 3.0;
-* // => 3.0
-*
-* console.log( 'Hello World' );
-* // returns 'Hello World'
-*
-* // => null
-*
-* @example
-* // Good...
-* var x = 3.0;
-* // returns 3.0
-*
-* console.log( 'Hello World' );
-* // => 'Hello World'
-*/
-rules[ 'stdlib/return-annotations-marker' ] = 'error';
 
 /* eslint-disable stdlib/jsdoc-return-annotations-quote-props */
 
