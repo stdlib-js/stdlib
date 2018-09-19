@@ -1050,7 +1050,7 @@ rules[ 'no-restricted-properties' ] = 'off';
 */
 rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-quote-props */
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Never allow `return await`.
@@ -1069,7 +1069,7 @@ rules[ 'no-return-assign' ] = [ 'error', 'always' ];
 */
 rules[ 'no-return-await' ] = 'error';
 
-/* eslint-enable stdlib/jsdoc-return-annotations-marker stdlib/jsdoc-return-annotations-quote-props */
+/* eslint-enable stdlib/jsdoc-doctest-marker stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Never allow using `javascript:` in urls.
@@ -1378,7 +1378,7 @@ rules[ 'prefer-promise-reject-errors' ] = [ 'error', {
 */
 rules[ 'radix' ] = [ 'error', 'always' ];
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-quote-props */
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Always require `async` functions to have an `await` expression.
@@ -1403,7 +1403,7 @@ rules[ 'radix' ] = [ 'error', 'always' ];
 */
 rules[ 'require-await' ] = 'error';
 
-/* eslint-enable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-quote-props */
+/* eslint-enable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Always declare variables at the top of their scope to represent hoisting.
