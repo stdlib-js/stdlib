@@ -1635,7 +1635,6 @@ limitations under the License.
 
 1.  [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
-
 1.  stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 
 1.  [hdbscan](https://github.com/lmcinnes/hdbscan)
@@ -1675,8 +1674,6 @@ limitations under the License.
 1.  [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
 
 1.  [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
-
-1.  global var detection
 
 1.  feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
 
