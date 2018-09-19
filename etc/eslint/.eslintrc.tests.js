@@ -124,7 +124,7 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 *
 * @private
 */
-eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off';
+eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 
 /**
 * Allow the use of `undefined`.

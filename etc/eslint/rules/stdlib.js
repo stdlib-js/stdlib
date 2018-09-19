@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/jsdoc-return-annotations-marker, stdlib/jsdoc-return-annotations-values */
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -70,6 +70,106 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 		'throws'
 	]
 } ];
+
+/**
+* Enforce that return annotation values match actual output.
+*
+* @name doctest
+* @memberof rules
+* @type {string}
+* @default 'off'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // returns 2.0
+*
+* console.log( 'Hello World' );
+* // returns 'hello world'
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*/
+rules[ 'stdlib/doctest' ] = 'off';
+
+/**
+* Enforce marker style conventions for return annotations.
+*
+* @name doctest-marker
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = 3.0;
+* // => 3.0
+*
+* console.log( 'Hello World' );
+* // returns 'Hello World'
+*
+* // => null
+*
+* @example
+* // Good...
+* var x = 3.0;
+* // returns 3.0
+*
+* console.log( 'Hello World' );
+* // => 'Hello World'
+*/
+rules[ 'stdlib/doctest-marker' ] = 'error';
+
+/* eslint-disable stdlib/jsdoc-doctest-quote-props */
+
+/**
+* Enforce that property names in return annotations are quoted.
+*
+* @name doctest-quote-props
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         a: 1,
+*         b: true,
+*         c: [ 1, 2, 3 ]
+*     }
+* *\/
+*
+* @example
+* // Good...
+* var value = {
+*     'a': 1,
+*     'b': true,
+*     'c': [ 1, 2, 3 ]
+* };
+* var out = copy( value );
+* /* returns
+*     {
+*         'a': 1,
+*         'b': true,
+*         'c': [ 1, 2, 3 ]
+*     }
+* *\/
+*/
+rules[ 'stdlib/doctest-quote-props' ] = 'error';
+
+/* eslint-enable stdlib/jsdoc-doctest-quote-props */
 
 /**
 * Require an empty line before single-line comments.
@@ -456,6 +556,102 @@ rules[ 'stdlib/jsdoc-definition-case' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
+
+/**
+* Ensure that return annotations in JSDoc examples match the actual output.
+*
+* @name jsdoc-doctest
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 12.0
+* *
+* * y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-doctest' ] = 'error';
+
+/**
+* Enforce marker style conventions for return annotations in JSDoc examples.
+*
+* @name jsdoc-doctest-marker
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // => 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * console.log( square( 2.0 ) );
+* * // => 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-doctest-marker' ] = 'error';
 
 /**
 * Require `_` be used as the emphasis marker.
@@ -2892,57 +3088,9 @@ rules[ 'stdlib/jsdoc-private-annotation' ] = 'warn';
 rules[ 'stdlib/jsdoc-require-throws-tags' ] = 'error';
 
 /**
-* Enforce marker style conventions for return annotations in JSDoc examples.
-*
-* @name jsdoc-return-annotations-marker
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // => 9.0
-* *
-* * console.log( square( 2.0 ) );
-* * // returns 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*
-* @example
-* // Good...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // returns 9.0
-* *
-* * console.log( square( 2.0 ) );
-* * // => 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*/
-rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
-
-/**
 * Enforce that property names in return annotations inside of example code are quoted using single quotes.
 *
-* @name jsdoc-return-annotations-quote-props
+* @name jsdoc-doctest-quote-props
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -3017,55 +3165,7 @@ rules[ 'stdlib/jsdoc-return-annotations-marker' ] = 'error';
 *     return out;
 * }
 */
-rules[ 'stdlib/jsdoc-return-annotations-quote-props' ] = 'error';
-
-/**
-* Ensure that return annotations in JSDoc examples match the actual output.
-*
-* @name jsdoc-return-annotations-values
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // returns 12.0
-* *
-* * y = square( 2.0 );
-* * // returns 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*
-* @example
-* // Good...
-* /**
-* * Squares a number.
-* *
-* * @param {number} x - input value
-* * @returns {number} x*x
-* *
-* * @example
-* * var y = square( 3.0 );
-* * // returns 9.0
-* *
-* * y = square( 2.0 );
-* * // returns 4.0
-* *\/
-* function square( x ) {
-*   return x*x;
-* }
-*/
-rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'error';
+rules[ 'stdlib/jsdoc-doctest-quote-props' ] = 'error';
 
 /**
 * Require that the horizontal rule style be three consecutive asterisks `* * *`.
@@ -4141,106 +4241,6 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 		'path'
 	]
 }];
-
-/**
-* Enforce marker style conventions for return annotations.
-*
-* @name return-annotations-marker
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* var x = 3.0;
-* // => 3.0
-*
-* console.log( 'Hello World' );
-* // returns 'Hello World'
-*
-* // => null
-*
-* @example
-* // Good...
-* var x = 3.0;
-* // returns 3.0
-*
-* console.log( 'Hello World' );
-* // => 'Hello World'
-*/
-rules[ 'stdlib/return-annotations-marker' ] = 'error';
-
-/* eslint-disable stdlib/jsdoc-return-annotations-quote-props */
-
-/**
-* Enforce that property names in return annotations are quoted.
-*
-* @name return-annotations-quote-props
-* @memberof rules
-* @type {string}
-* @default 'error'
-*
-* @example
-* // Bad...
-* var value = {
-*     'a': 1,
-*     'b': true,
-*     'c': [ 1, 2, 3 ]
-* };
-* var out = copy( value );
-* /* returns
-*     {
-*         a: 1,
-*         b: true,
-*         c: [ 1, 2, 3 ]
-*     }
-* *\/
-*
-* @example
-* // Good...
-* var value = {
-*     'a': 1,
-*     'b': true,
-*     'c': [ 1, 2, 3 ]
-* };
-* var out = copy( value );
-* /* returns
-*     {
-*         'a': 1,
-*         'b': true,
-*         'c': [ 1, 2, 3 ]
-*     }
-* *\/
-*/
-rules[ 'stdlib/return-annotations-quote-props' ] = 'error';
-
-/* eslint-enable stdlib/jsdoc-return-annotations-quote-props */
-
-/**
-* Enforce that return annotation values match actual output.
-*
-* @name return-annotations-values
-* @memberof rules
-* @type {string}
-* @default 'off'
-*
-* @example
-* // Bad...
-* var x = 3.0;
-* // returns 2.0
-*
-* console.log( 'Hello World' );
-* // returns 'hello world'
-*
-* @example
-* // Good...
-* var x = 3.0;
-* // returns 3.0
-*
-* console.log( 'Hello World' );
-* // returns 'Hello World'
-*/
-rules[ 'stdlib/return-annotations-values' ] = 'off';
 
 /**
 * Enforce formatting of section header comments.
