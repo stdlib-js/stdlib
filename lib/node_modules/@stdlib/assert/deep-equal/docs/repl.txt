@@ -1,0 +1,31 @@
+
+{{alias}}( a, b )
+    Tests for deep equality between two values.
+
+    Parameters
+    ----------
+    a: any
+        First comparison value.
+
+    b: any
+        Second comparison value.
+
+    Returns
+    -------
+    out: bool
+        Boolean indicating if `a` is deep equal to `b`.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ 1, 2, 3 ], [ 1, 2, 3 ] )
+    true
+
+    > bool = {{alias}}( [ 1, 2, 3 ], [ 1, 2, '3' ] )
+    false
+
+    > bool = {{alias}}( { 'a': 2 }, { 'a': [ 2 ] } )
+    false
+
+    See Also
+    --------
+
