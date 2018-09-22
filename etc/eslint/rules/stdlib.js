@@ -3637,6 +3637,52 @@ rules[ 'stdlib/jsdoc-typedef-typos' ] = 'error';
 rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 
 /**
+* Enforce that comments in main export of a package adhere to project conventions and contain correct module paths.
+*
+* @name main-export
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad @stdlib/assert/is-array` main export:
+*
+* /**
+* * Tests if a value is an array.
+* *
+* * @module @stdlib/assert/isarray
+* *
+* * @example
+* * var isArray = require( '@stdlib/assert/is-aray' );
+* *
+* * var bool = isArray( [] );
+* * // returns true
+* *
+* * bool = isArray( {} );
+* * // returns false
+* *\/
+*
+* @example
+* // Good `@stdlib/assert/is-array` main export:
+*
+* /**
+* * Test if a value is an array.
+* *
+* * @module @stdlib/assert/is-array
+* *
+* * @example
+* * var isArray = require( '@stdlib/assert/is-array' );
+* *
+* * var bool = isArray( [] );
+* * // returns true
+* *
+* * bool = isArray( {} );
+* * // returns false
+* *\/
+*/
+rules[ 'stdlib/main-export' ] = 'error';
+
+/**
 * Enforce that export statements are placed at the end of a file.
 *
 * @name module-exports-last
