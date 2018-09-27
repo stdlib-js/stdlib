@@ -3637,9 +3637,9 @@ rules[ 'stdlib/jsdoc-typedef-typos' ] = 'error';
 rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 
 /**
-* Enforce that comments in main export of a package adhere to project conventions and contain correct module paths.
+* Enforce that the JSDoc comment documenting a package's main export adheres to stdlib conventions and contains the correct package path.
 *
-* @name main-export
+* @name jsdoc-main-export
 * @memberof rules
 * @type {string}
 * @default 'error'
@@ -3680,7 +3680,7 @@ rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 * * // returns false
 * *\/
 */
-rules[ 'stdlib/main-export' ] = 'error';
+rules[ 'stdlib/jsdoc-main-export' ] = 'error';
 
 /**
 * Enforce that export statements are placed at the end of a file.
