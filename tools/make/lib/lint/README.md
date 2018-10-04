@@ -618,6 +618,20 @@ $ make lint-pkg-json
 
 * * *
 
+### REPL Help
+
+#### lint-repl-help
+
+Lints REPL help files.
+
+<!-- run-disable -->
+
+```bash
+$ make lint-repl-help
+```
+
+* * *
+
 ### Configuration Files
 
 #### lint-conf
