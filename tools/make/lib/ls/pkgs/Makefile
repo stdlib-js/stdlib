@@ -28,6 +28,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/names.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/namespaces.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/pkgs.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/readmes.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/repl_help.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/tools.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/tree.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/wasm.mk
