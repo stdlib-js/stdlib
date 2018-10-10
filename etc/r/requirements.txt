@@ -2,3 +2,4 @@ lintr
 microbenchmark
 jsonlite
 VGAM
+distr
