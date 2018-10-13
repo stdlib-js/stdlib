@@ -1,0 +1,38 @@
+
+{{alias}}( value, property )
+    Tests if an object's own or inherited property is non-configurable.
+
+    A non-configurable property is a property which cannot be deleted and whose
+    descriptor cannot be changed.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object's own or inherited property is non-
+        configurable.
+
+    Examples
+    --------
+    > var obj = { 'boop': true };
+    > var desc = {};
+    > desc.configurable = false;
+    > desc.enumerable = true;
+    > desc.writable = true;
+    > desc.value = true;
+    > {{alias:@stdlib/utils/define-property}}( obj, 'beep', desc );
+    > var bool = {{alias}}( obj, 'boop' )
+    false
+    > bool = {{alias}}( obj, 'beep' )
+    true
+
+    See Also
+    --------
+

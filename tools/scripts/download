@@ -32,9 +32,9 @@
 url="$1"
 
 # Find a program for downloading a resource:
-CURL=$(which curl 2>/dev/null)
-WGET=$(which wget 2>/dev/null)
-FETCH=$(which fetch 2>/dev/null)
+CURL=$(command -v curl 2>/dev/null)
+WGET=$(command -v wget 2>/dev/null)
+FETCH=$(command -v fetch 2>/dev/null)
 
 # Define a timeout (in seconds):
 timeout=30

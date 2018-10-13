@@ -204,6 +204,13 @@ R_PATTERN ?= *.$(R_FILENAME_EXT)
 R_FILTER ?= .*/.*
 
 
+# Define a filename pattern for shell script files:
+SHELL_PATTERN ?= *.$(SHELL_FILENAME_EXT)
+
+# Define a filepath pattern for shell script files:
+SHELL_FILTER ?= .*/.*
+
+
 # Define a filename pattern for SVG equation files:
 SVG_EQUATIONS_PATTERN ?= equation*.$(SVG_FILENAME_EXT)
 
@@ -398,6 +405,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/markdown/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/r/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/ls/shell/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/svg_equations.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk

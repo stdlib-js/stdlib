@@ -39,6 +39,8 @@
 #   LIBPATH         Library paths (e.g., `-L /foo/bar -L /a/b`).
 #
 
+# shellcheck disable=SC2181,SC2153
+
 
 # VARIABLES #
 

@@ -44,13 +44,14 @@ Developing and running stdlib **requires** the following prerequisites:
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
 -   [Julia][julia]: language for technical computing (version `>= 0.5`)
--   [R][r]: language for statistical computing (version `>= 3.3.3`)
+-   [R][r]: language for statistical computing (version `>= 3.4.0`)
 -   [Python][python]: general purpose language (version `2.7.x`; version `3.x` is **not** supported due to [node-gyp][node-gyp], which is required for compiling native add-ons)
 -   [pip][pip]: Python package manager (version `>= 9.0.0`; **required** for automatically installing Python packages, such as lint tools)
 -   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
 -   [CMake][cmake]: cross-platform build environment (version `>= 3.4.3`)
 -   [pandoc][pandoc]: universal document converter (version `>= 1.18`)
+-   [Homebrew][homebrew]: macOS package manager (only **required** on OS X in order to install [shellcheck][shellcheck])
 
 Assuming the requisite language is present on the host machine, the following language libraries can be automatically downloaded and installed using `make` (see [installation](#installation)):
 
@@ -60,6 +61,7 @@ Assuming the requisite language is present on the host machine, the following la
 -   [pycodestyle][pycodestyle]: Python style guide checker against PEP 8 (version `>= 2.3.1`)
 -   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
 -   [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
+-   [shellcheck][shellcheck]: static code analysis for shell scripts (version `>= 0.5.0`; to install on OS X, either install [Homebrew][homebrew] as a prerequisite or install [shellcheck][shellcheck] manually)
 
 The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -389,6 +391,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 
 [lintr]: https://github.com/jimhester/lintr
 
+[shellcheck]: https://github.com/koalaman/shellcheck
+
 [gcc]: http://gcc.gnu.org/
 
 [clang]: http://clang.llvm.org/
@@ -398,6 +402,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [cmake]: https://cmake.org/
 
 [pandoc]: http://pandoc.org/
+
+[homebrew]: https://brew.sh/
 
 [boost]: http://www.boost.org/
 

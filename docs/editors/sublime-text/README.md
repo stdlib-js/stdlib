@@ -101,7 +101,7 @@ $ subl .
 
 -   [**SublimeLinter3**][sublime-text-sublimelinter3]: package which provides an interactive linting framework for [Sublime Text 3][sublime-text]. The framework does **not** contain any built-in linters. Instead, you must install plugins which provide interfaces to lint executables.
 
-    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files:
+    -   [**SublimeLinter-eslint**][sublime-text-sublimelinter-eslint]: plugin which provides an interface to [ESLint][eslint]. Once installed, you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to use the project [ESLint][eslint] configuration files and to set the `NODE_PATH` environment variable upon invoking [ESLint][eslint]:
 
         ```text
                 ...
@@ -114,7 +114,10 @@ $ subl .
                             "--config",
                             "/absolute/file/path/to/stdlib/.eslintrc.js"
                         ],
-                        "excludes": []
+                        "excludes": [],
+                        "env": {
+                            "NODE_PATH": "${folder}/lib/node_modules"
+                        }
                     }
                 ...
         ```
@@ -158,6 +161,23 @@ $ subl .
         ```
 
     -   [**SublimeLinter-json**][sublime-text-sublimelinter-json]: plugin which lints [JSON][json].
+    
+    -   [**SublimeLinter-shellcheck**][sublime-text-sublimelinter-shellcheck]: plugin which provides an interface to [shellcheck][shellcheck] for linting files having "Shell-Unix-Generic" syntax (aka Shell Script).
+   
+        If [shellcheck][shellcheck] was installed as a local project dependency (e.g., `make install-deps` on non-MacOS platforms per the project development guide), you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to search the top-level `deps` directory for locally installed linter executables. For example, on Linux,
+
+        ```text
+                ...
+                "paths": {
+                    "linux": [
+                        "/path/to/stdlib/deps/build/shellcheck_0_5_0/"
+                    ],
+                    "osx": [],
+                    "windows": []
+                }
+                ...
+        },
+        ```
 
 <section class="links">
 
@@ -174,6 +194,8 @@ $ subl .
 [sublime-text-sublimelinter-annotations]: https://github.com/SublimeLinter/SublimeLinter-annotations
 
 [sublime-text-sublimelinter-json]: https://github.com/SublimeLinter/SublimeLinter-json
+
+[sublime-text-sublimelinter-shellcheck]: https://github.com/SublimeLinter/SublimeLinter-shellcheck
 
 [sublime-text-editorconfig]: https://github.com/sindresorhus/editorconfig-sublime
 
@@ -194,6 +216,8 @@ $ subl .
 [git]: https://git-scm.com/
 
 [eslint]: http://eslint.org/
+
+[shellcheck]: https://github.com/koalaman/shellcheck
 
 [json]: http://www.json.org/
 

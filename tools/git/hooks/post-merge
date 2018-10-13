@@ -24,10 +24,7 @@
 #
 # This hook cannot does __not__ affect the outcome of `git merge` and is not executed if merge fails due to conflicts.
 
-
-# VARIABLES #
-
-is_squash="$1"
+# shellcheck disable=SC2181
 
 
 # FUNCTIONS #
@@ -47,13 +44,16 @@ cleanup() {
 
 # Checks if Node.js module dependencies have changed.
 check_node_deps() {
+	local changed_files
+	local package_json
+
 	echo 'Checking changed files...' >&2
 
 	# Get a list of changed files:
-	local changed_files=$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)
+	changed_files=$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)
 
 	# See if the root `package.json` is one of the files which changed:
-	local package_json=$(echo "${changed_files}" | grep '^package\.json$')
+	package_json=$(echo "${changed_files}" | grep '^package\.json$')
 
 	# If the root `package.json` changed, return a non-zero status...
 	if [[ -n "${package_json}" ]]; then

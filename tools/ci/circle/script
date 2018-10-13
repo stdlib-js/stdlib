@@ -20,6 +20,8 @@
 #
 # [1]: https://circleci.com
 
+# shellcheck disable=SC2181,SC2034,SC1091
+
 
 # DEPENDENCIES #
 
@@ -46,7 +48,7 @@ log_file='/var/log/circle-ci.log'
 
 # Determine the root project directory:
 root_dir=$(dirname "$0")/../../..
-root_dir=$(cd "${root_dir}" && echo $PWD)
+root_dir=$(cd "${root_dir}" && echo "$PWD")
 
 # Define the project source code directory:
 base_dir="${root_dir}/lib/node_modules"
@@ -151,7 +153,8 @@ create_dir() {
 #
 # $1 - log file path
 create_log_file() {
-	local owner=$(whoami)
+	local owner
+	owner=$(whoami)
 	echo "Creating an output log file: $1." >&2
 	sudo touch "$1"
 	sudo chown "${owner}:${owner}" "$1"
@@ -374,8 +377,10 @@ find_tests() {
 # $1 - total number of nodes
 # $2 - node index
 allocate_tests() {
+	local tests
+
 	# Keep those tests (rows) where the VM index equals the modulo:
-	local tests=$(find_tests | sort | awk -v "n=$1" -v "i=$2" '{if (NR % n == i) printf "%s ", $0} END {print ""}')
+	tests=$(find_tests | sort | awk -v "n=$1" -v "i=$2" '{if (NR % n == i) printf "%s ", $0} END {print ""}')
 	echo "${tests}"
 }
 
@@ -389,6 +394,8 @@ run_tests() {
 	local slug
 
 	echo 'Running tests...' >&2
+
+	# shellcheck disable=SC2116
 	for test in $(echo "$1"); do
 		echo "Running test: ${test}" >&2
 
@@ -396,7 +403,7 @@ run_tests() {
 		path="${test#${base_dir}/}"
 
 		# Slugify the path (basic algorithm):
-		slug="$(echo ${path} | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr A-Z a-z)"
+		slug=$(echo "${path}" | sed -e 's/[^[:alnum:]]/_/g' | tr -s '-' | tr '[:upper:]' '[:lower:]')
 
 		# Define the output log file path:
 		log_file="$2/test-results.${slug}.xml"
@@ -474,6 +481,7 @@ main() {
 				on_error 1
 			fi
 		fi
+		# shellcheck disable=SC2003
 		i=$(expr "${i}" + "${len}")
 	done
 

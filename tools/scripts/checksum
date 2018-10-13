@@ -26,6 +26,9 @@
 #   hash               Expected checksum.
 #
 
+# shellcheck disable=SC2181
+
+
 # VARIABLES #
 
 # Checksum type:
@@ -73,16 +76,19 @@ print_checksum() {
 	local num_lines
 	local width
 	local lines
+	local str
 	local len
 	local pos
 
 	width=64 # characters
+
 	len="${#1}"
 	if [[ "${len}" -gt "${width}" ]]; then
-		num_lines=$(("${len}" / "${width}")) # floored
-		lines=$(seq 0 1 "${num_lines}") # total_lines = num_lines + 1
-		for i in "${lines}"; do
-			pos=$((i * "${width}"))
+		str="$1"
+		num_lines=$((len / width)) # floored
+		lines=$(seq 0 1 "${num_lines}")      # total_lines = num_lines + 1
+		for i in ${lines}; do
+			pos=$((i * width))
 			echo "    ${str:${pos}:${width}}"
 		done
 	else
@@ -117,8 +123,9 @@ print_checksum_error() {
 # $1 - file
 # $2 - expected checksum
 verify() {
-	local curr_checksum=$(eval "${cmd} $1 | awk '{ print \$1; }'")
+	local curr_checksum
 
+	curr_checksum=$(eval "${cmd} $1 | awk '{ print \$1; }'")
 	if [[ "${curr_checksum}" != "$2" ]]; then
 		print_checksum_error "$1" "${checksum_type}" "${checksum_program}" "$2" "${curr_checksum}"
 		return 1
@@ -158,10 +165,10 @@ elif [[ $(($#%2)) -eq 1 ]]; then
 fi
 
 # Find a program for computing a SHA256 checksum...
-if [[ -n "$(which sha256sum)" ]]; then
+if [[ -n "$(command -v sha256sum)" ]]; then
 	checksum_program="sha256sum"
 	cmd='sha256sum'
-elif [[ -n "$(which shasum)" ]]; then
+elif [[ -n "$(command -v shasum)" ]]; then
 	checksum_program="shasum"
 	cmd='shasum -a 256'
 fi

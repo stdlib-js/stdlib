@@ -311,7 +311,7 @@ limitations under the License.
 
 1.  add code climate badge
 
-1.  consider using things like [shellcheck](https://github.com/koalaman/shellcheck) for linting files other than JavaScript
+1.  consider using tools for linting files other than JavaScript
 
     -   [alex](https://github.com/wooorm/alex)
     -   [retext-readability](https://github.com/wooorm/retext-readability)
@@ -514,7 +514,7 @@ limitations under the License.
         // returns {'a':[1,2,3]}
 
         // Deep equal (mutation):
-        // x => [ 1.  2, 3, 4, 5 ]
+        // x => [ 1, 2, 3, 4, 5 ]
 
         // Deep equal:
         /* returns
@@ -585,6 +585,9 @@ limitations under the License.
         // Type equality instanceof):
         // returns <Foo>
 
+        // Type equality + deep equal:
+        // returns <Float64Array>[ 1, 2, 3 ]
+
         // Wildcard (string):
         // returns '...'
 
@@ -619,16 +622,13 @@ limitations under the License.
         // {"beep":"boop"}
 
         // Output to terminal:
-        // <error_message>
-
-        // Output to terminal:
         // <boolean>
 
         // Insert figure:
-        // => <figure data=?>
+        // +> <figure data=?>
 
         // Insert figure:
-        // => plot(x, y)
+        // +> plot(x, y)
         ```
 
         ```javascript
@@ -1635,7 +1635,6 @@ limitations under the License.
 
 1.  [ilogb](https://github.com/JuliaLang/openlibm/blob/master/src/s_ilogb.c) and [logb](https://github.com/JuliaLang/openlibm/blob/master/src/s_logb.c), although these may just be `float64-exponent`
 
-
 1.  stream module (e.g., flow-split, flow-join, flow-mean) => /utils /math etc
 
 1.  [hdbscan](https://github.com/lmcinnes/hdbscan)
@@ -1675,8 +1674,6 @@ limitations under the License.
 1.  [fma](https://github.com/JuliaLang/openlibm/blob/master/src/s_fma.c)
 
 1.  [to-number](https://github.com/lodash/lodash/blob/4.1.1-npm-packages/lodash.curry/index.js#L1160)
-
-1.  global var detection
 
 1.  feature detection [utils](https://github.com/williamkapke/node-compat-table/blob/gh-pages/testers.json)
 

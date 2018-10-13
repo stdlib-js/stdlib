@@ -1,0 +1,34 @@
+
+{{alias}}( value, property )
+    Tests if an object's own property is non-enumerable.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object's own property is non-enumerable.
+
+    Examples
+    --------
+    > var obj = { 'boop': true };
+    > var desc = {};
+    > desc.configurable = false;
+    > desc.enumerable = false;
+    > desc.writable = true;
+    > desc.value = 'beep';
+    > {{alias:@stdlib/utils/define-property}}( obj, 'beep', desc );
+    > var bool = {{alias}}( obj, 'boop' )
+    false
+    > bool = {{alias}}( obj, 'beep' )
+    true
+
+    See Also
+    --------
+

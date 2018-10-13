@@ -20,6 +20,8 @@
 #
 # [1]: travis-ci.org
 
+# shellcheck disable=SC2181
+
 
 # VARIABLES #
 

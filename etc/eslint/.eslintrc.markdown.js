@@ -119,6 +119,13 @@ eslint.rules[ 'require-jsdoc' ] = 'off';
 eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 
 /**
+* Do not lint return annotation values in JSDoc comments.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off'; // FIXME: remove this once we can reliably lint Markdown code blocks
+
+/**
 * Allow use of undeclared variables, as variables may be defined in previous code blocks or be implied.
 *
 * @private

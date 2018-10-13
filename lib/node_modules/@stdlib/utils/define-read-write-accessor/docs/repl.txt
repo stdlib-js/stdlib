@@ -1,0 +1,36 @@
+
+{{alias}}( obj, prop, getter, setter )
+    Defines a property having read-write accessors.
+
+    Read-write accessors are enumerable and non-configurable.
+
+    Parameters
+    ----------
+    obj: Object
+        Object on which to define the property.
+
+    prop: string|symbol
+        Property name.
+
+    getter: Function
+        Get accessor.
+
+    setter: Function
+        Set accessor.
+
+    Examples
+    --------
+    > var obj = {};
+    > var name = 'bar';
+    > function getter() { return name + ' foo'; };
+    > function setter( v ) { name = v; };
+    > {{alias}}( obj, 'foo', getter, setter );
+    > obj.foo
+    'bar foo'
+    > obj.foo = 'beep';
+    > obj.foo
+    'beep foo'
+
+    See Also
+    --------
+

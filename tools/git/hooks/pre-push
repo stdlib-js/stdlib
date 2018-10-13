@@ -31,14 +31,15 @@
 # <local ref> <local sha1> <remote ref> <remote sha1>
 # ```
 
+# shellcheck disable=SC2181
+
 
 # VARIABLES #
 
 remote="$1"
-url="$2"
 
 # Determine the current branch:
-export GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD)
+GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD)
 
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
@@ -67,7 +68,7 @@ has_commits() {
 	if git branch -r | grep "${GIT_CURRENT_BRANCH}" > /dev/null; then
 		echo 'Remote branch exists.' >&2
 		echo 'Checking for commits to push...' >&2
-		commits=$(git log "${remote}/${GIT_CURRENT_BRANCH}".."${GIT_CURRENT_BRANCH}" --oneline --)
+		commits=$(git log "${remote}/${GIT_CURRENT_BRANCH}..${GIT_CURRENT_BRANCH}" --oneline --)
 	else
 		echo 'Remote branch does not exist.' >&2
 		echo 'Checking for commits to push...' >&2
@@ -86,6 +87,7 @@ check_licenses() {
 	echo 'Checking licenses...' >&2
 	make check-licenses-production > /dev/null 2>&1
 	if [[ "$?" -ne 0 ]]; then
+		# shellcheck disable=SC2016
 		echo 'Detected dependency licensing issues. Run `make check-licenses-production` to see failing dependency licenses.' >&2
 		return 1
 	fi
@@ -108,7 +110,7 @@ main() {
 	fi
 
 	# Get the set of changed files (added and modified):
-	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\/#")
+	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
 
 	# Run JavaScript example files:
 	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')

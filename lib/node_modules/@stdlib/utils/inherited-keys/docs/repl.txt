@@ -1,0 +1,31 @@
+
+{{alias}}( value[, level] )
+    Returns an array of an object's inherited enumerable property names.
+
+    Name order is not guaranteed, as object key enumeration is not specified
+    according to the ECMAScript specification. In practice, however, most
+    engines use insertion order to sort an object's keys, thus allowing for
+    deterministic extraction.
+
+    If provided `null` or `undefined`, the function returns an empty array.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    level: integer (optional)
+        Inheritance level.
+
+    Returns
+    -------
+    keys: Array
+        List of an object's inherited enumerable property names.
+
+    Examples
+    --------
+    > var keys = {{alias}}( {} )
+
+    See Also
+    --------
+

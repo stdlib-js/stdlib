@@ -18,6 +18,8 @@
 
 # Finds files.
 
+# shellcheck disable=SC2153
+
 
 # VARIABLES #
 

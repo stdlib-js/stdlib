@@ -20,6 +20,9 @@
 #
 # This hook is called with no arguments.
 
+# shellcheck disable=SC2181
+
+
 # VARIABLES #
 
 # Determine root directory:
@@ -30,6 +33,9 @@ lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
 # Define the path to a utility for linting package.json files:
 lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
+
+# Define the path to a utility for linting REPL help files:
+lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
 
 # Define the path to ESLint configuration file for linting examples:
 eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
@@ -58,8 +64,11 @@ cleanup() {
 
 # Checks for non-ASCII filenames (to ensure cross platform portability).
 check_filenames() {
-	local commit=$(git rev-parse --verify HEAD)
+	local num_files
 	local against
+	local commit
+
+	commit=$(git rev-parse --verify HEAD)
 	if [[ -z "${commit}" ]]; then
 		# This is the initial commit, so we diff against an empty tree object:
 		against='4b825dc642cb6eb9a060e54bf8d69288fbee4904'
@@ -67,7 +76,7 @@ check_filenames() {
 		against='HEAD'
 	fi
 	# We exploit the fact that the printable range starts with the space character and ends with the tilde. Note that the use of brackets around a `tr` range is okay here, (for portability to Solaris 10's /usr/bin/tr, it's even required), since the square bracket bytes happen to fall in the designated range.
-	local num_files=$(git diff --cached --name-only --diff-filter=A -z "${against}" | LC_ALL=C tr -d '[ -~]\0' | wc -c)
+	num_files=$(git diff --cached --name-only --diff-filter=A -z "${against}" | LC_ALL=C tr -d '[ -~]\0' | wc -c)
 
 	if [[ "${num_files}" -ne 0 ]]; then
 		echo 'Error: Attempting to add a non-ASCII filename. Non-ASCII filenames limit cross-platform portability. Please rename offending files before committing.' >&2
@@ -110,6 +119,17 @@ run_lint() {
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Package.json lint errors.' >&2
+			return 1
+		fi
+	fi
+
+	# Lint REPL help files...
+	files=$(echo "${changed_files}" | grep 'repl\.txt$' )
+	if [[ -n "${files}" ]]; then
+		echo "${files}" | "${lint_repl_help}" >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'REPL help lint errors.' >&2
 			return 1
 		fi
 	fi
@@ -194,6 +214,23 @@ run_lint() {
 			echo '' >&2
 			echo 'R lint errors.' >&2
 			return 1
+		fi
+	fi
+
+	# Lint shell script files...
+	files=$(echo "${changed_files}" | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make check-shell-linters > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Unable to lint shell script files. Ensure that linters are installed.' >&2
+		else
+			make FILES="${files}" lint-shell-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'Shell script lint errors.' >&2
+				return 1
+			fi
 		fi
 	fi
 

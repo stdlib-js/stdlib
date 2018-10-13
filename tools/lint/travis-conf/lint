@@ -24,6 +24,8 @@
 #
 # [1]: https://docs.travis-ci.com/user/customizing-the-build
 
+# shellcheck disable=SC2181
+
 
 # VARIABLES #
 
@@ -108,11 +110,14 @@ print_success() {
 
 # Main execution sequence.
 main() {
-	local results=$(lint "${file}")
+	local results
+	local errors
+
+	results=$(lint "${file}")
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
-	local errors=$(process "${results}")
+	errors=$(process "${results}")
 	if [[ -n "${errors}" ]]; then
 		print_errors "${errors}"
 		exit 1
