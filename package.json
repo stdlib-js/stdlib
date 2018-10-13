@@ -63,7 +63,8 @@
     "virtual-dom": "^2.1.1"
   },
   "devDependencies": {
-    "acorn": "^5.0.0",
+    "acorn": "^6.0.2",
+    "acorn-walk": "^6.1.0",
     "ajv": "^5.2.2",
     "browser-pack-flat": "^3.0.0",
     "browserify": "^16.1.0",
