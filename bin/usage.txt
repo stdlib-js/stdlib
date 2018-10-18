@@ -86,6 +86,10 @@ Plot:
 
   sparkline                       Plot a sparkline.
 
+Random:
+
+  random-arcsine                  Arcsine distributed pseudorandom numbers.
+
 System:
 
   arch                            Operating system CPU architecture.
