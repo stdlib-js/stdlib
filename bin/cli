@@ -136,15 +136,7 @@ function main() {
 		keys = getKeys( flags );
 		for ( i = 0; i < keys.length; i++ ) {
 			key = keys[ i ];
-			if (
-				(
-					key === 'h' ||
-					key === 'help' ||
-					key === 'V' ||
-					key === 'version'
-				) &&
-				flags[ keys[ i ] ] === false
-			) {
+			if ( key === 'h' || key === 'help' || key === 'V' || key === 'version' ) { // eslint-disable-line max-len
 				continue;
 			}
 			subargs.push( '--'+keys[ i ]+'='+flags[ keys[ i ] ] );
