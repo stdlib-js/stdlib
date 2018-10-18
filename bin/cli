@@ -28,6 +28,7 @@ var readFileSync = require( './../lib/node_modules/@stdlib/fs/read-file' ).sync;
 var cwd = require( './../lib/node_modules/@stdlib/process/cwd' );
 var ENV = require( './../lib/node_modules/@stdlib/process/env' );
 var CLI = require( './../lib/node_modules/@stdlib/tools/cli' );
+var getKeys = require( './../lib/node_modules/@stdlib/utils/keys' );
 var COMMANDS = require( './cli_commands.json' );
 
 
@@ -88,11 +89,14 @@ function getPath( path ) {
 */
 function main() {
 	var subargs;
+	var flags;
+	var keys;
 	var args;
 	var opts;
 	var proc;
 	var cli;
 	var cmd;
+	var key;
 	var i;
 
 	// Create a command-line interface:
@@ -106,6 +110,9 @@ function main() {
 
 	// Get any provided command-line arguments:
 	args = cli.args();
+
+	// Get any provided command-line options:
+	flags = cli.flags();
 
 	// Extract the command:
 	if ( args[ 0 ] === 'help' ) {
@@ -125,6 +132,22 @@ function main() {
 		subargs = [ getPath( cmd.path ) ];
 		for ( i = 1; i < args.length; i++ ) {
 			subargs.push( args[ i ] );
+		}
+		keys = getKeys( flags );
+		for ( i = 0; i < keys.length; i++ ) {
+			key = keys[ i ];
+			if (
+				(
+					key === 'h' ||
+					key === 'help' ||
+					key === 'V' ||
+					key === 'version'
+				) &&
+				flags[ keys[ i ] ] === false
+			) {
+				continue;
+			}
+			subargs.push( '--'+keys[ i ]+'='+flags[ keys[ i ] ] );
 		}
 	}
 
