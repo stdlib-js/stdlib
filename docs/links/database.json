@@ -2947,6 +2947,18 @@
       "fmt"
     ]
   },
+  "https://en.wikipedia.org/wiki/Power_transform#Box-Cox_transformation": {
+    "id": "box-cox-transformation",
+    "description": "Wikipedia entry for the Box-Cox transformation.",
+    "short_url": "",
+    "keywords": [
+      "box-cox",
+      "transformation",
+      "power",
+      "transform",
+      "math"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Probability_density_function": {
     "id": "pdf",
     "description": "Wikipedia entry for the probability density function (PDF).",
