@@ -256,13 +256,34 @@ Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
 ### Gold
 
 <div class="image" align="center">
-    <a href="https://stenci.la/"><img src="https://cdn.rawgit.com/stdlib-js/stdlib/b63028ca3da79b748bca6877c48abc4de664f002/docs/assets/sponsor_logo_stencila.png" alt="stencila logo"></a>
+    <a href="https://stenci.la/"><img src="https://cdn.rawgit.com/stdlib-js/stdlib/f438ecc8fc9320d9eec69070dc5271966a81c873/docs/assets/sponsors/stencila_logo.png" alt="stencila logo"></a>
     <br>
 </div>
 
 </section>
 
 <!-- /.sponsors -->
+
+<!-- Project acknowledgments. If section is included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+* * *
+
+<section class="acknowledgments">
+
+## Acknowledgments
+
+### Build Infrastructure
+
+Test and build infrastructure is generously provided by the following services:
+
+<div class="image" align="center">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/f438ecc8fc9320d9eec69070dc5271966a81c873/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
+    <br>
+</div>
+
+</section>
+
+<!-- /.acknowledgments -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
