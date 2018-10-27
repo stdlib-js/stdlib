@@ -277,7 +277,7 @@ Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
 Test and build infrastructure is generously provided by the following services:
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/f438ecc8fc9320d9eec69070dc5271966a81c873/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3de52540666d1635df046d7e5dd07a1fc5b87d85/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
     <br>
 </div>
 
