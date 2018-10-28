@@ -60,7 +60,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e13885087939c064c69aa43ee80ea52710de5591/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
     </div>
 
--   35+ [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
+-   40+ [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
