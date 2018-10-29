@@ -1,0 +1,26 @@
+
+{{alias}}( key, value )
+    Revives a JSON-serialized pseudorandom number generator (PRNG).
+
+    Parameters
+    ----------
+    key: string
+        Key.
+
+    value: any
+        Value.
+
+    Returns
+    -------
+    out: any
+        Value or PRNG.
+
+    Examples
+    --------
+    > var str = JSON.stringify( {{alias:@stdlib/random/base/mt19937}} );
+    > var r = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    <Function>
+
+    See Also
+    --------
+
