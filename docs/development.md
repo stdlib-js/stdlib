@@ -43,7 +43,7 @@ Developing and running stdlib **requires** the following prerequisites:
 
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
--   [Julia][julia]: language for technical computing (version `>= 0.5`)
+-   [Julia][julia]: language for technical computing (version `>= 0.5` and `<= 0.7`)
 -   [R][r]: language for statistical computing (version `>= 3.4.0`)
 -   [Python][python]: general purpose language (version `2.7.x`; version `3.x` is **not** supported due to [node-gyp][node-gyp], which is required for compiling native add-ons)
 -   [pip][pip]: Python package manager (version `>= 9.0.0`; **required** for automatically installing Python packages, such as lint tools)
