@@ -606,6 +606,54 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-doctest' ] = 'error';
 
 /**
+* Ensure that (only) return annotations for floating-point typed values always contain decimal points.
+*
+* @name jsdoc-doctest-decimal-point
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9
+* *
+* * y = square( 2.0 );
+* * // returns 4
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*
+* @example
+* // Good...
+* /**
+* * Squares a number.
+* *
+* * @param {number} x - input value
+* * @returns {number} x*x
+* *
+* * @example
+* * var y = square( 3.0 );
+* * // returns 9.0
+* *
+* * y = square( 2.0 );
+* * // returns 4.0
+* *\/
+* function square( x ) {
+*   return x*x;
+* }
+*/
+rules[ 'stdlib/jsdoc-doctest-decimal-point' ] = 'error';
+
+/**
 * Enforce marker style conventions for return annotations in JSDoc examples.
 *
 * @name jsdoc-doctest-marker
