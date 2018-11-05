@@ -22,6 +22,7 @@
 
 # Automatically normalize the line endings of any committed text files:
 * text=auto
+/lib/node_modules/@stdlib/utils/parse-dsv/test/js/fixtures/* -text
 
 # Override what is considered "vendored" by GitHub's linguist:
 /deps/** linguist-vendored=false
