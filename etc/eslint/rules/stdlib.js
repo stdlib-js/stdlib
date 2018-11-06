@@ -606,7 +606,7 @@ rules[ 'stdlib/jsdoc-definition-spacing' ] = 'error';
 rules[ 'stdlib/jsdoc-doctest' ] = 'error';
 
 /**
-* Ensure that (only) return annotations for floating-point typed values always contain decimal points.
+* Ensure that only return annotations for real-valued return values always contain decimal points.
 *
 * @name jsdoc-doctest-decimal-point
 * @memberof rules
