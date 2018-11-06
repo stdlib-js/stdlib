@@ -31,6 +31,9 @@ var config = join( etc, 'eslint', '.eslintrc.markdown.js' );
 var eslint = resolve( etc, '..', 'lib', 'node_modules', '@stdlib', '_tools', 'remark', 'plugins', 'remark-lint-eslint' );
 var opts = {
 	'config': config,
+	'rules': {
+		'stdlib/doctest': 'error' // enable otherwise disabled lint rule
+	},
 	'ignore': false,
 	'useEslintrc': false
 };
