@@ -1,0 +1,194 @@
+
+{{alias}}( [options] )
+    Returns a transform stream.
+
+    If a transform function is not provided, the returned stream will be a
+    simple pass through stream.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.transform: Function (optional)
+        Callback to invoke upon receiving a new chunk.
+
+    options.flush: Function (optional)
+        Callback to invoke after receiving all chunks and prior to a stream
+        closing.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to decode strings into Buffer objects when writing.
+        Default: true.
+
+    Returns
+    -------
+    stream: TransformStream
+        Transform stream.
+
+    Examples
+    --------
+    > var s = {{alias}}();
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+
+{{alias}}.factory( [options] )
+    Returns a function for creating transform streams.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to decode strings into Buffer objects when writing.
+        Default: true.
+
+    Returns
+    -------
+    createStream( transform[, flush] ): Function
+        Function for creating transform streams.
+
+    Examples
+    --------
+    > var opts = { 'highWaterMark': 64 };
+    > var createStream = {{alias}}.factory( opts );
+    > function fcn( chunk, enc, cb ) { cb( null, chunk.toString()+'-beep' ); };
+    > var s = createStream( fcn );
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+
+{{alias}}.objectMode( [options] )
+    Returns an "objectMode" transform stream.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.transform: Function (optional)
+        Callback to invoke upon receiving a new chunk.
+
+    options.flush: Function (optional)
+        Callback to invoke after receiving all chunks and prior to a stream
+        closing.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to decode strings into Buffer objects when writing.
+        Default: true.
+
+    Returns
+    -------
+    stream: TransformStream
+        Transform stream operating in "objectMode".
+
+    Examples
+    --------
+    > var s = {{alias}}.objectMode();
+    > s.write( { 'value': 'a' } );
+    > s.write( { 'value': 'b' } );
+    > s.write( { 'value': 'c' } );
+    > s.end();
+
+
+{{alias}}.ctor( [options] )
+    Returns a custom transform stream constructor.
+
+    If provided `transform` and `flush` options, these methods are bound to the
+    constructor prototype.
+
+    If not provided a transform function, the returned constructor creates
+    simple pass through streams.
+
+    The returned constructor accepts the same options as the constructor
+    factory, *except* for the `transform` and `flush` options, which are not
+    supported.
+
+    Any options provided to the constructor *override* options provided to the
+    constructor factory.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.transform: Function (optional)
+        Callback to invoke upon receiving a new chunk.
+
+    options.flush: Function (optional)
+        Callback to invoke after receiving all chunks and prior to a stream
+        closing.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.allowHalfOpen: boolean (optional)
+        Specifies whether a stream should remain open even if one side ends.
+        Default: false.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to decode strings into Buffer objects when writing.
+        Default: true.
+
+    Returns
+    -------
+    ctor: Function
+        Custom transform stream constructor.
+
+    Examples
+    --------
+    > function fcn( chunk, enc, cb ) { cb( null, chunk.toString()+'-beep' ); };
+    > var opts = { 'highWaterMark': 64, 'transform': fcn };
+    > var customStream = {{alias}}.ctor( opts );
+    > var s = customStream();
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+    See Also
+    --------
+
