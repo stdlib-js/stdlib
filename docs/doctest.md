@@ -58,7 +58,7 @@ Doctest annotations begin with one of three keyword markers (with limited except
 
 For example,
 
-<!-- eslint-disable no-useless-concat, stdlib/return-annotations-marker, no-unused-expressions -->
+<!-- eslint-disable no-useless-concat, stdlib/doctest-marker, no-unused-expressions -->
 
 ```javascript
 ('Hello ' + 'world');
