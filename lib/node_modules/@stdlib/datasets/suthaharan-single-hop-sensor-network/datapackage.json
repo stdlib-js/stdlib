@@ -1,0 +1,94 @@
+{
+  "name": "stdlib-datasets-suthaharan-single-hop-sensor-network",
+  "version": "",
+  "title": "Single-Hop Sensor Network",
+  "description": "Labeled wireless sensor network data set collected from a simple single-hop wireless sensor network deployment using TelosB motes.",
+  "resources": [
+    {
+      "name": "suthaharan-single-hop-sensor-network-json",
+      "title": "Single-Hop Sensor Network",
+      "description": "Labeled wireless sensor network data set collected from a simple single-hop wireless sensor network deployment using TelosB motes.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "suthaharan-single-hop-sensor-network-csv",
+      "title": "Single-Hop Sensor Network",
+      "description": "Labeled wireless sensor network data set collected from a simple single-hop wireless sensor network deployment using TelosB motes.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "reading",
+            "title": "Reading",
+            "description": "Reading number.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "mote_id",
+            "title": "Mote ID",
+            "description": "Mote identification number.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "indoor",
+            "title": "Indoor/Outdoor",
+            "description": "Indicator specifying whether a mote is an indoor (1) or an outdoor (0) sensor.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "humidity",
+            "title": "Humidity",
+            "description": "Temperature corrected relative humidity, ranging from 0-100%.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "temperature",
+            "title": "Temperature",
+            "description": "Temperature in degrees Celsius.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "label",
+            "title": "Label",
+            "description": "Indicator specifying whether data is \"normal\" (0) or is influenced by an introduced event (1).",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Labelled Wireless Sensor Network Data Repository (LWSNDR)",
+      "web": "http://www.uncg.edu/cmp/downloads/lwsndr.html"
+    }
+  ],
+  "keywords": [
+    "sensor",
+    "network",
+    "machine learning",
+    "ml",
+    "labeled",
+    "mote",
+    "motes",
+    "outliers",
+    "outlier",
+    "statistics",
+    "stats"
+  ],
+  "license": "ODC-BY-1.0 AND CC-BY-4.0"
+}
