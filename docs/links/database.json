@@ -2345,6 +2345,19 @@
       "phi"
     ]
   },
+  "https://en.wikipedia.org/wiki/Grubbs%27_test_for_outliers": {
+    "id": "grubbs-test",
+    "description": "Wikipedia entry for Grubbs' test for outliers.",
+    "short_url": "",
+    "keywords": [
+      "grubbs",
+      "statistics",
+      "stats",
+      "anomaly detection",
+      "outliers",
+      "outlier"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Gumbel_distribution": {
     "id": "gumbel-distribution",
     "description": "Wikipedia entry for the Gumbel distribution.",
