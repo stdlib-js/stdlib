@@ -48,6 +48,69 @@ tape( 'project contains a distributable file containing datasets (minified)', fu
 	t.end();
 });
 
+tape( 'project contains a distributable file containing non-excluded datasets (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-tree-exclude.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.datasets.AFINN_111, 'function', 'is a function' );
+	t.equal( typeof bundle.datasets.AFINN_111(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
+tape( 'project contains a distributable file containing the CMU pronouncing dictionary (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-cmudict.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.CMUDICT, 'function', 'is a function' );
+	t.equal( typeof bundle.CMUDICT(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
+tape( 'project contains a distributable file containing images (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-img.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.IMG_ACANTHUS_MOLLIS, 'function', 'is a function' );
+	t.equal( typeof bundle.IMG_ACANTHUS_MOLLIS(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
+tape( 'project contains a distributable file containing Moby Dick (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-moby-dick.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.MOBY_DICK, 'function', 'is a function' );
+	t.equal( typeof bundle.MOBY_DICK(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
+tape( 'project contains a distributable file containing SOTU (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-sotu.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.SOTU, 'function', 'is a function' );
+	t.equal( typeof bundle.SOTU(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
+tape( 'project contains a distributable file containing Spam Assassin (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-spam-assassin.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.SPAM_ASSASSIN, 'function', 'is a function' );
+	t.equal( typeof bundle.SPAM_ASSASSIN(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
+tape( 'project contains a distributable file containing Suthaharan\'s single-hop sensor network data (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-suthaharan-single-hop-sensor-network.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.SUTHAHARAN_SINGLE_HOP_SENSOR_NETWORK, 'function', 'is a function' );
+	t.equal( typeof bundle.SUTHAHARAN_SINGLE_HOP_SENSOR_NETWORK(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
 tape( 'project contains a distributable file exposing a "flat" namespace (unminified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-flat.js' ) );
