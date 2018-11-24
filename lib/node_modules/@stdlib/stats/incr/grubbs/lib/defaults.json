@@ -1,0 +1,7 @@
+{
+	"init": 100,
+	"alpha": 0.05,
+	"alternative": "two-sided",
+	"digits": 4,
+	"decision": true
+}

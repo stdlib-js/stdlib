@@ -107,7 +107,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 11.096 MB      | 2.113 MB           | 446.552 kB            |
+| 11.135 MB      | 2.123 MB           | 449.051 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -115,7 +115,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 11.121 MB      | 2.131 MB           | 447.38 kB             |
+| 11.16 MB       | 2.141 MB           | 449.864 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -128,7 +128,84 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 <script type="text/javascript">
     // If no recognized module system present, exposed to global scope:
     var datasets = stdlib_datasets.datasets;
-    console.log( datasets.AFINN_111 );
+    console.log( datasets.AFINN_111() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-tree-exclude`, contains all datasets, except those which have a dedicated bundle, and exposes them as a `tree` namespace. Unless an application depends on these datasets, they should **not** be sourced, and, if needed, consider bundling only those datasets which are necessary.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-tree-exclude.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var datasets = stdlib_datasets_exclude.datasets;
+    console.log( datasets.AFINN_111() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-cmudict`, contains the [CMU Pronouncing Dictionary][@stdlib/datasets/cmudict].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-cmudict.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_cmudict.CMUDICT;
+    console.log( dataset() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-img`, contains images.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-img.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var img = stdlib_datasets_img.IMG_ANCANTHUS_MOLLIS;
+    console.log( img() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-moby-dick`, contains [_Moby Dick_][@stdlib/datasets/moby-dick].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-moby-dick.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_moby_dick.MOBY_DICK;
+    console.log( dataset() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-sotu`, contains [_State of the Union_][@stdlib/datasets/sotu] (SOTU) addresses.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-sotu.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_sotu.SOTU;
+    console.log( dataset() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-spam-assassin`, contains [_Spam Assassin_][@stdlib/datasets/spam-assassin].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-spam-assassin.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_spam_assassin.SPAM_ASSASSIN;
+    console.log( dataset() );
+</script>
+```
+
+The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, contains [Suthaharan's single-hop sensor network data][@stdlib/datasets/suthaharan-single-hop-sensor-network].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-suthaharan-single-hop-sensor-network.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_suthaharan_single_hop_sensor_network.SUTHAHARAN_SINGLE_HOP_SENSOR_NETWORK;
+    console.log( dataset() );
 </script>
 ```
 
@@ -138,7 +215,63 @@ The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes th
 
 | stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 56.047 MB                   | 16.778 MB                      |
+| 57.686 MB                   | 16.873 MB                      |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-tree-exclude.min.js,stdlib-datasets-tree-exclude.min.js.gz"> -->
+
+| stdlib-datasets-tree-exclude.min.js | stdlib-datasets-tree-exclude.min.js.gz |
+| ----------------------------------- | -------------------------------------- |
+| 604.523 kB                          | 157.197 kB                             |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-cmudict.min.js,stdlib-datasets-cmudict.min.js.gz"> -->
+
+| stdlib-datasets-cmudict.min.js | stdlib-datasets-cmudict.min.js.gz |
+| ------------------------------ | --------------------------------- |
+| 4.211 MB                       | 924.561 kB                        |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-img.min.js,stdlib-datasets-img.min.js.gz"> -->
+
+| stdlib-datasets-img.min.js | stdlib-datasets-img.min.js.gz |
+| -------------------------- | ----------------------------- |
+| 3.778 MB                   | 2.795 MB                      |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-moby-dick.min.js,stdlib-datasets-moby-dick.min.js.gz"> -->
+
+| stdlib-datasets-moby-dick.min.js | stdlib-datasets-moby-dick.min.js.gz |
+| -------------------------------- | ----------------------------------- |
+| 1.342 MB                         | 507.439 kB                          |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-sotu.min.js,stdlib-datasets-sotu.min.js.gz"> -->
+
+| stdlib-datasets-sotu.min.js | stdlib-datasets-sotu.min.js.gz |
+| --------------------------- | ------------------------------ |
+| 10.823 MB                   | 3.574 MB                       |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-spam-assassin.min.js,stdlib-datasets-spam-assassin.min.js.gz"> -->
+
+| stdlib-datasets-spam-assassin.min.js | stdlib-datasets-spam-assassin.min.js.gz |
+| ------------------------------------ | --------------------------------------- |
+| 35.694 MB                            | 8.906 MB                                |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-suthaharan-single-hop-sensor-network.min.js,stdlib-datasets-suthaharan-single-hop-sensor-network.min.js.gz"> -->
+
+| stdlib-datasets-suthaharan-single-hop-sensor-network.min.js | stdlib-datasets-suthaharan-single-hop-sensor-network.min.js.gz |
+| ----------------------------------------------------------- | -------------------------------------------------------------- |
+| 1.73 MB                                                     | 113.332 kB                                                     |
 
 <!-- </bundle-stats> -->
 
@@ -166,7 +299,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 61.609 MB          | 17.524 MB             |
+| 63.324 MB          | 17.63 MB              |
 
 <!-- </bundle-stats> -->
 
@@ -189,7 +322,7 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 
 | stdlib-flat-help.min.js | stdlib-flat-help.min.js.gz |
 | ----------------------- | -------------------------- |
-| 2.423 MB                | 268.236 kB                 |
+| 2.453 MB                | 273.257 kB                 |
 
 <!-- </bundle-stats> -->
 
@@ -216,6 +349,16 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 [@stdlib/repl]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/cmudict]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/moby-dick]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/sotu]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/spam-assassin]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/suthaharan-single-hop-sensor-network]: https://github.com/stdlib-js/stdlib
 
 </section>
 
