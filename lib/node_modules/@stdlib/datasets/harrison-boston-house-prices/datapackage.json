@@ -1,0 +1,147 @@
+{
+  "name": "stdlib-datasets-harrison-boston-house-prices",
+  "version": "",
+  "title": "Boston House Prices",
+  "description": "A dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).",
+  "resources": [
+    {
+      "name": "harrison-boston-house-prices-json",
+      "title": "Boston House Prices",
+      "description": "A dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "harrison-boston-house-prices-csv",
+      "title": "Boston House Prices",
+      "description": "A dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "crim",
+            "title": "Per Capita Crime",
+            "description": "Per capita crime rate by town.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "zn",
+            "title": "Large Lots",
+            "description": "Proportion of residential land zoned for lots over 25,000 square feet.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "indus",
+            "title": "Non-retail Business Acres",
+            "description": "Proportion of non-retail business acres per town.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "chas",
+            "title": "Charles River",
+            "description": "Charles River dummy variable (1 if tract bounds river; 0 otherwise).",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "nox",
+            "title": "Nitrus Oxide",
+            "description": "Nitric oxides concentration (parts per 10 million).",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "rm",
+            "title": "Number of Rooms",
+            "description": "Average number of rooms per dwelling.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "age",
+            "title": "Age",
+            "description": "Proportion of owner-occupied units built prior to 1940.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "dis",
+            "title": "Employment Distance",
+            "description": "Weighted distances to five Boston employment centers.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "rad",
+            "title": "Radial Accessibility Index",
+            "description": "Index of accessibility to radial highways.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "tax",
+            "title": "Tax Rate",
+            "description": "Full-value property-tax rate per $10,000.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "ptratio",
+            "title": "Pupil-Teacher Ratio",
+            "description": "Pupil-teacher ratio by town.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "b",
+            "title": "Black Residents",
+            "description": "1000(Bk-0.63)^2 where Bk is the proportion of blacks by town.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "lstat",
+            "title": "Lower Status",
+            "description": "Percent lower status of the population.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "medv",
+            "title": "Median Value",
+            "description": "Median value of owner-occupied homes in $1000's.",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "CMU",
+      "web": "http://lib.stat.cmu.edu/datasets/boston"
+    }
+  ],
+  "keywords": [
+    "house",
+    "home",
+    "prices",
+    "linear regression",
+    "prediction",
+    "boston",
+    "stats",
+    "statistics"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
