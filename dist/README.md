@@ -198,6 +198,17 @@ The dataset bundle, `stdlib-datasets-spam-assassin`, contains [_Spam Assassin_][
 </script>
 ```
 
+The dataset bundle, `stdlib-datasets-suthaharan-multi-hop-sensor-network`, contains [Suthaharan's multi-hop sensor network data][@stdlib/datasets/suthaharan-multi-hop-sensor-network].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_suthaharan_multi_hop_sensor_network.SUTHAHARAN_MULTI_HOP_SENSOR_NETWORK;
+    console.log( dataset() );
+</script>
+```
+
 The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, contains [Suthaharan's single-hop sensor network data][@stdlib/datasets/suthaharan-single-hop-sensor-network].
 
 ```html
@@ -264,6 +275,10 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 | stdlib-datasets-spam-assassin.min.js | stdlib-datasets-spam-assassin.min.js.gz |
 | ------------------------------------ | --------------------------------------- |
 | 35.694 MB                            | 8.906 MB                                |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js,stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js.gz"> -->
 
 <!-- </bundle-stats> -->
 
@@ -357,6 +372,8 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 [@stdlib/datasets/sotu]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/spam-assassin]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/suthaharan-multi-hop-sensor-network]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/suthaharan-single-hop-sensor-network]: https://github.com/stdlib-js/stdlib
 
