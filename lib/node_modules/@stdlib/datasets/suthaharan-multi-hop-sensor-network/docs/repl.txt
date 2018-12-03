@@ -1,0 +1,43 @@
+
+{{alias}}()
+    Returns a dataset consisting of labeled wireless sensor network data set
+    collected from a multi-hop wireless sensor network deployment using TelosB
+    motes.
+
+    Humidity and temperature measurements were collected at 5 second intervals
+    over a six hour period on July 10, 2010.
+
+    Temperature is in degrees Celsius.
+
+    Humidity is temperature corrected relative humidity, ranging from 0-100%.
+
+    The label '0' denotes normal data, and the label '1' denotes an introduced
+    event.
+
+    If a mote was an indoor sensor, the corresponding indicator is '1'. If a
+    mote was an outdoor sensor, the indoor indicator is '0'.
+
+    Returns
+    -------
+    out: Array<Object>
+        Sensor data.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [{...}, {...}, ...]
+
+    References
+    ----------
+    - Suthaharan, Shan, Mohammed Alzahrani, Sutharshan Rajasegarar, Christopher
+    Leckie, and Marimuthu Palaniswami. 2010. "Labelled data collection for
+    anomaly detection in wireless sensor networks." In _Proceedings of the Sixth
+    International Conference on Intelligent Sensors, Sensor Networks and
+    Information Processing (ISSNIP 2010)_. Brisbane, Australia: IEEE.
+
+    * If you use the data for publication or third party consumption, please
+    cite the listed reference.
+
+    See Also
+    --------
+
