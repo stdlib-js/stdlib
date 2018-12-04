@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[@unpublished{id,
+	abstract = {},
+	author = {},
+	keywords = {},
+	note = {},
+	title = {{}},
+	url = {},
+	year = {},
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.unpublished</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX unpublished template</description>
+</snippet>

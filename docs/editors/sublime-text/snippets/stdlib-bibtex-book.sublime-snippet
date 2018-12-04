@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[@book{id,
+	author = {},
+	keywords = {},
+	publisher = {},
+	title = {{}},
+	year = {},
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.book</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX book template</description>
+</snippet>

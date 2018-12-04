@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[@inbook{id,
+    author = {},
+    editor = {},
+    keywords = {},
+    pages = {},
+    publisher = {},
+    title = {{}},
+    url = {},
+    year = {},
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.inbook</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX in-book template</description>
+</snippet>
