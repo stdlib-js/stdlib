@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[@article{id,
+	abstract = {},
+	author = {},
+	doi = {},
+	journal = {},
+	keywords = {},
+	month = {},
+	number = {},
+	pages = {},
+	title = {{}},
+	url = {},
+	volume = {},
+	year = {},
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.article</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX article template</description>
+</snippet>
