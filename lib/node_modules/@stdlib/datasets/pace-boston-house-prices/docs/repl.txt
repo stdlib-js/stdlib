@@ -1,0 +1,69 @@
+
+{{alias}}()
+    Returns a (corrected) dataset derived from information collected by the US
+    Census Service concerning housing in Boston, Massachusetts (1978).
+
+    The data consists of 21 attributes:
+
+    - obs: observation number
+    - town: town name
+    - town_id: town identifier
+    - tract: tract identifier
+    - lon: longitude
+    - lat: latitude
+    - medv: median value of owner-occupied homes in $1000's
+    - cmedv: corrected median value of owner-occupied homes in $1000's
+    - crim: per capita crime rate by town
+    - zn: proportion of residential land zoned for lots over 25,000 square feet
+    - indus: proportion of non-retail business acres per town
+    - chas: Charles River dummy variable (1 if tract bounds river; 0 otherwise)
+    - nox: nitric oxides concentration (parts per 10 million)
+    - rm: average number of rooms per dwelling
+    - age: proportion of owner-occupied units built prior to 1940
+    - dis: weighted distances to five Boston employment centers
+    - rad: index of accessibility to radial highways
+    - tax: full-value property-tax rate per $10,000
+    - ptratio: pupil-teacher ratio by town
+    - b: 1000(Bk-0.63)^2 where Bk is the proportion of blacks by town
+    - lstat: percent lower status of the population
+
+    The dataset can be used to predict two dependent variables: 1) nitrous oxide
+    level and 2) median home value.
+
+    The median home value field seems to be censored at 50.00 (corresponding to
+    a median value of $50,000). Censoring is suggested by the fact that the
+    highest median value of exactly $50,000 is reported in 16 cases, while 15
+    cases have values between $40,000 and $50,000. Values are rounded to the
+    nearest hundred.
+
+    The dataset contains eight corrections to miscoded median values, as
+    documented by Gilley and Pace (1996).
+
+    The dataset augments the original dataset from Harrison and Rubinfeld (1978)
+    by including geo-referencing and spatial estimation for each observation.
+
+    Returns
+    -------
+    out: Array<Object>
+        Boston house prices.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, {...}, ... ]
+
+    References
+    ----------
+    - Harrison, David, and Daniel L Rubinfeld. 1978. "Hedonic housing prices and
+    the demand for clean air." _Journal of Environmental Economics and
+    Management_ 5 (1): 81–102. doi:10.1016/0095-0696(78)90006-2.
+    - Gilley, Otis W., and R.Kelley Pace. 1996. "On the Harrison and Rubinfeld
+    Data." _Journal of Environmental Economics and Management_ 31 (3): 403–5.
+    doi:10.1006/jeem.1996.0052.
+    - Pace, R. Kelley, and Otis W. Gilley. 1997. "Using the Spatial
+    Configuration of the Data to Improve Estimation." _The Journal of Real
+    Estate Finance and Economics_ 14 (3): 333–40. doi:10.1023/A:1007762613901.
+
+    See Also
+    --------
+
