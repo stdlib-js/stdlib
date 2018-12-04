@@ -102,6 +102,15 @@ tape( 'project contains a distributable file containing Spam Assassin (minified)
 	t.end();
 });
 
+tape( 'project contains a distributable file containing Suthaharan\'s multi-hop sensor network data (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.SUTHAHARAN_MULTI_HOP_SENSOR_NETWORK, 'function', 'is a function' );
+	t.equal( typeof bundle.SUTHAHARAN_MULTI_HOP_SENSOR_NETWORK(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
 tape( 'project contains a distributable file containing Suthaharan\'s single-hop sensor network data (minified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-datasets-suthaharan-single-hop-sensor-network.min.js' ) );
