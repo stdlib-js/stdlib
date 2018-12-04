@@ -226,7 +226,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 59.581 MB                   | 17 MB                          |
+| 59.716 MB                   | 17.021 MB                      |
 
 <!-- </bundle-stats> -->
 
@@ -234,7 +234,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-tree-exclude.min.js | stdlib-datasets-tree-exclude.min.js.gz |
 | ----------------------------------- | -------------------------------------- |
-| 604.523 kB                          | 157.197 kB                             |
+| 1.01 MB                             | 212.868 kB                             |
 
 <!-- </bundle-stats> -->
 
@@ -318,7 +318,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 65.285 MB          | 17.766 MB             |
+| 65.424 MB          | 17.793 MB             |
 
 <!-- </bundle-stats> -->
 
@@ -341,7 +341,7 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 
 | stdlib-flat-help.min.js | stdlib-flat-help.min.js.gz |
 | ----------------------- | -------------------------- |
-| 2.48 MB                 | 277.791 kB                 |
+| 2.483 MB                | 279.109 kB                 |
 
 <!-- </bundle-stats> -->
 
