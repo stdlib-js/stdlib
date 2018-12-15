@@ -89,6 +89,8 @@ Plot:
 Random:
 
   random-arcsine                  Arcsine distributed pseudorandom numbers.
+  random-minstd                   Park and Miller LCG pseudorandom numbers.
+  random-mt19937                  32-bit Mersenne Twister pseudorandom numbers.
 
 System:
 

@@ -462,6 +462,18 @@
 		"group": "random"
 	},
 	{
+		"command": "random-minstd",
+		"description": "Park and Miller LCG pseudorandom numbers.",
+		"path": "@stdlib/random/streams/minstd",
+		"group": "random"
+	},
+	{
+		"command": "random-mt19937",
+		"description": "32-bit Mersenne Twister pseudorandom numbers.",
+		"path": "@stdlib/random/streams/mt19937",
+		"group": "random"
+	},
+	{
 		"command": "open-url",
 		"description": "Open a URL.",
 		"path": "@stdlib/utils/open-url",
