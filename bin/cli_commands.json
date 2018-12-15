@@ -492,6 +492,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-randi",
+		"description": "Pseudorandom numbers having integer values.",
+		"path": "@stdlib/random/streams/randi",
+		"group": "random"
+	},
+	{
 		"command": "open-url",
 		"description": "Open a URL.",
 		"path": "@stdlib/utils/open-url",

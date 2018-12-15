@@ -94,6 +94,7 @@ Random:
   random-minstd                   Park and Miller LCG pseudorandom numbers.
   random-minstd-shuffle           Shuffled LCG pseudorandom numbers.
   random-mt19937                  32-bit Mersenne Twister pseudorandom numbers.
+  random-randi                    Pseudorandom numbers having integer values.
 
 System:
 
