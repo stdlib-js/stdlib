@@ -1,0 +1,8 @@
+{
+	"objectMode": false,
+	"encoding": null,
+	"sep": "\n",
+	"copy": true,
+	"siter": 1e308,
+	"normalized": false
+}
