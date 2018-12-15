@@ -462,6 +462,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-improved-ziggurat",
+		"description": "Improved Ziggurat pseudorandom numbers.",
+		"path": "@stdlib/random/streams/improved-ziggurat",
+		"group": "random"
+	},
+	{
 		"command": "random-minstd",
 		"description": "Park and Miller LCG pseudorandom numbers.",
 		"path": "@stdlib/random/streams/minstd",
