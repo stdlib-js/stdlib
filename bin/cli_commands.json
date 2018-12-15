@@ -462,6 +462,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-box-muller",
+		"description": "Box-Muller pseudorandom numbers.",
+		"path": "@stdlib/random/streams/box-muller",
+		"group": "random"
+	},
+	{
 		"command": "random-improved-ziggurat",
 		"description": "Improved Ziggurat pseudorandom numbers.",
 		"path": "@stdlib/random/streams/improved-ziggurat",
