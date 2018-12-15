@@ -468,6 +468,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-minstd-shuffle",
+		"description": "Shuffled LCG pseudorandom numbers.",
+		"path": "@stdlib/random/streams/minstd-shuffle",
+		"group": "random"
+	},
+	{
 		"command": "random-mt19937",
 		"description": "32-bit Mersenne Twister pseudorandom numbers.",
 		"path": "@stdlib/random/streams/mt19937",
