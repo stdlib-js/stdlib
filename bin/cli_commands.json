@@ -498,6 +498,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-randu",
+		"description": "Pseudorandom numbers between 0 and 1.",
+		"path": "@stdlib/random/streams/randu",
+		"group": "random"
+	},
+	{
 		"command": "open-url",
 		"description": "Open a URL.",
 		"path": "@stdlib/utils/open-url",
