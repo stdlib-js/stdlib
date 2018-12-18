@@ -95,6 +95,7 @@ Random:
   random-minstd-shuffle           Shuffled LCG pseudorandom numbers.
   random-mt19937                  32-bit Mersenne Twister pseudorandom numbers.
   random-randi                    Pseudorandom numbers having integer values.
+  random-randn                    Normally distributed pseudorandom numbers.
   random-randu                    Pseudorandom numbers between 0 and 1.
 
 System:
