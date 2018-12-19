@@ -1,0 +1,124 @@
+
+{{alias}}( [options,] clbk )
+    Returns a writable stream for inspecting stream data.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to encode strings as `Buffer` objects before writing
+        data to a returned stream. Default: true.
+
+    options.defaultEncoding: string (optional)
+        Default encoding when not explicitly specified when writing data.
+        Default: 'utf8'.
+
+    clbk: Function
+        Callback to invoke upon receiving data.
+
+    Returns
+    -------
+    stream: WritableStream
+        Writable stream.
+
+    Examples
+    --------
+    > function clbk( chunk, idx ) { console.log( chunk.toString() ); };
+    > var s = {{alias}}( clbk );
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+
+{{alias}}.factory( [options] )
+    Returns a function for creating writable streams for inspecting stream data.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to encode strings as `Buffer` objects before writing
+        data to a returned stream. Default: true.
+
+    options.defaultEncoding: string (optional)
+        Default encoding when not explicitly specified when writing data.
+        Default: 'utf8'.
+
+    Returns
+    -------
+    createStream( clbk ): Function
+        Function for creating writable streams.
+
+    Examples
+    --------
+    > var opts = { 'objectMode': true, 'highWaterMark': 64 };
+    > var createStream = {{alias}}.factory( opts );
+    > function clbk( chunk, idx ) { console.log( chunk.toString() ); };
+    > var s = createStream( clbk );
+    > s.write( 'a' );
+    > s.write( 'b' );
+    > s.write( 'c' );
+    > s.end();
+
+
+{{alias}}.objectMode( [options,] clbk )
+    Returns an "objectMode" writable stream for inspecting stream data.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of objects to store in an internal buffer
+        before ceasing to push downstream.
+
+    options.decodeStrings: boolean (optional)
+        Specifies whether to encode strings as `Buffer` objects before writing
+        data to a returned stream. Default: true.
+
+    options.defaultEncoding: string (optional)
+        Default encoding when not explicitly specified when writing data.
+        Default: 'utf8'.
+
+    clbk: Function
+        Callback to invoke upon receiving data.
+
+    Returns
+    -------
+    stream: WritableStream
+        Writable stream operating in "objectMode".
+
+    Examples
+    --------
+    > function clbk( chunk, idx ) { console.log( chunk.toString() ); };
+    > var s = {{alias}}.objectMode( clbk );
+    > s.write( { 'value': 'a' } );
+    > s.write( { 'value': 'b' } );
+    > s.write( { 'value': 'c' } );
+    > s.end();
+
+    See Also
+    --------
+
