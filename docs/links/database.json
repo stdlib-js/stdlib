@@ -1475,6 +1475,18 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol": {
+    "id": "mdn-iterable-protocol",
+    "description": "MDN documentation for the iterable protocol.",
+    "short_url": "",
+    "keywords": [
+      "iterable",
+      "iterator",
+      "javascript",
+      "es2015",
+      "es6"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol": {
     "id": "mdn-iterator-protocol",
     "description": "Documentation for the iterator protocol.",
