@@ -1475,6 +1475,17 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol": {
+    "id": "mdn-iterator-protocol",
+    "description": "Documentation for the iterator protocol.",
+    "short_url": "",
+    "keywords": [
+      "iterator",
+      "iter",
+      "protocol",
+      "javascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await": {
     "id": "mdn-await",
     "description": "MDN entry for the `await` operator.",
