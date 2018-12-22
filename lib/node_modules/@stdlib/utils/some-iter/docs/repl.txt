@@ -1,0 +1,32 @@
+
+{{alias}}( iterator, n )
+    Tests whether at least `n` iterated values are truthy.
+
+    The function immediately returns upon finding `n` truthy values.
+
+    If provided an iterator which does not return any iterated values, the
+    function returns `false`.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator over which to iterate.
+
+    n: number
+        Minimum number of truthy elements.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if an iterator returns at least `n` truthy
+        elements; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 1, 1, 1 ] );
+    > var bool = {{alias}}( arr, 3 )
+    true
+
+    See Also
+    --------
+
