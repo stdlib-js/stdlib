@@ -108,6 +108,12 @@
 		"group": "assert"
 	},
 	{
+		"command": "has-async-iterator-symbol-support",
+		"description": "Detect Symbol.asyncIterator support.",
+		"path": "@stdlib/assert/has-async-iterator-symbol-support",
+		"group": "assert"
+	},
+	{
 		"command": "has-class-support",
 		"description": "Detect ES6 class support.",
 		"path": "@stdlib/assert/has-class-support",
