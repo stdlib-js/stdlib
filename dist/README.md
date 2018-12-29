@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-This directory contains distributable files for use in browser environments. Each distributable is a standalone [UMD][umd] bundle which, if no recognized module system is present, will expose bundle contents to the global scope.
+This directory contains distributable files for use in browser environments or as shared ("vendored") libraries in server environments. Each distributable is a standalone [UMD][umd] bundle which, if no recognized module system is present, will expose bundle contents to the global scope.
 
 </section>
 
@@ -79,6 +79,8 @@ If no recognized module system is present, access bundle contents via the global
     ```
 
     Please be mindful that [unpkg][unpkg] is a free, best-effort service relying on donated infrastructure which does **not** provide **any** availability guarantees. Under **no** circumstances should you **abuse** or **misuse** the service. You have been **warned**.
+
+-   If you intend on embedding a standalone bundle **within** another bundle, you may need to rename `require` calls within the standalone bundle **before** bundling in order to maintain scoped module resolution. For example, if you plan on using [browserify][browserify] to generate a bundle containing embedded bundles, [browserify][browserify] plugins exist to "de-require" those bundles prior to bundling.
 
 ### Bundles
 
@@ -362,6 +364,8 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 [cdn]: https://en.wikipedia.org/wiki/Content_delivery_network
 
 [unpkg]: https://unpkg.com/#/
+
+[browserify]: https://github.com/browserify/browserify
 
 [@stdlib/namespace]: https://github.com/stdlib-js/stdlib
 

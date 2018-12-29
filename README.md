@@ -176,7 +176,7 @@ which will expose the `stdlib` command. For example, to see available sub-comman
 $ stdlib help
 ```
 
-For distributable bundles for use in browser environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+For distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
