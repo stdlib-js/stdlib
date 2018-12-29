@@ -772,5 +772,11 @@
 		"description": "Write to file.",
 		"path": "@stdlib/fs/write-file",
 		"group": "filesystem"
+	},
+	{
+		"command": "constant-stream",
+		"description": "Stream a constant value.",
+		"path": "@stdlib/streams/node/from-constant",
+		"group": "utilities"
 	}
 ]
