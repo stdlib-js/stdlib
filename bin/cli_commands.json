@@ -778,5 +778,11 @@
 		"description": "Stream a constant value.",
 		"path": "@stdlib/streams/node/from-constant",
 		"group": "utilities"
+	},
+	{
+		"command": "empty-stream",
+		"description": "Empty stream.",
+		"path": "@stdlib/streams/node/empty",
+		"group": "utilities"
 	}
 ]
