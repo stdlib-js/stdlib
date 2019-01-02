@@ -29,7 +29,7 @@
 
 // MODULES //
 
-var getKeys = require( '@stdlib/utils/keys' );
+var propertyNames = require( '@stdlib/utils/property-names' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var isRegExp = require( '@stdlib/assert/is-regexp' );
 var namespace = require( '@stdlib/namespace' );
@@ -89,7 +89,7 @@ function main() {
 		v = NAMESPACE[ i ].value;
 		if ( isFunction( v ) ) {
 			stats.functions += 1;
-			keys = getKeys( v );
+			keys = propertyNames( v );
 			for ( j = 0; j < keys.length; j++ ) {
 				key = keys[ j ];
 				if ( isFunction( v[ key ] ) ) {
