@@ -192,7 +192,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2018. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2019. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
