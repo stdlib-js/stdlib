@@ -247,18 +247,7 @@ Copyright © 2016-2019. The Stdlib [Authors][stdlib-authors].
 
 <!-- Project sponsors. If sponsors are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-* * *
-
 <section class="sponsors">
-
-## Sponsors
-
-### Gold
-
-<div class="image" align="center">
-    <a href="https://stenci.la/"><img src="https://cdn.rawgit.com/stdlib-js/stdlib/f438ecc8fc9320d9eec69070dc5271966a81c873/docs/assets/sponsors/stencila_logo.png" alt="stencila logo"></a>
-    <br>
-</div>
 
 </section>
 
