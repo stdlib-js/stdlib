@@ -516,6 +516,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-uniform",
+		"description": "Uniformly distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/uniform",
+		"group": "random"
+	},
+	{
 		"command": "open-url",
 		"description": "Open a URL.",
 		"path": "@stdlib/utils/open-url",
