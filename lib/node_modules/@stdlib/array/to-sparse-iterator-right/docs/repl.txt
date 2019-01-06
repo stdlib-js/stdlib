@@ -1,0 +1,56 @@
+
+{{alias}}( src[, mapFcn[, thisArg]] )
+    Returns an iterator which iterates from right to left over the elements of a
+    sparse array-like object.
+
+    The returned iterator skips elements which are undefined.
+
+    When invoked, an input function is provided three arguments:
+
+    - value: iterated value
+    - index: iterated value index
+    - src: source array-like object
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    If an environment supports Symbol.iterator, the function explicitly does not
+    not invoke an array's `@@iterator` method, regardless of whether this method
+    is defined. To convert an array to an implementation defined iterator,
+    invoke this method directly.
+
+    Parameters
+    ----------
+    src: ArrayLikeObject
+        Sparse array-like object from which to create the iterator.
+
+    mapFcn: Function (optional)
+        Function to invoke for each iterated value.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it = {{alias}}( [ 1, 2, , 4 ] );
+    > var v = it.next().value
+    4
+    > v = it.next().value
+    2
+
+    See Also
+    --------
+
