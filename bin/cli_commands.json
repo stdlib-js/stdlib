@@ -468,6 +468,18 @@
 		"group": "random"
 	},
 	{
+		"command": "random-beta",
+		"description": "Beta distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/beta",
+		"group": "random"
+	},
+	{
+		"command": "random-betaprime",
+		"description": "Beta prime distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/betaprime",
+		"group": "random"
+	},
+	{
 		"command": "random-box-muller",
 		"description": "Box-Muller pseudorandom numbers.",
 		"path": "@stdlib/random/streams/box-muller",
@@ -519,6 +531,12 @@
 		"command": "random-uniform",
 		"description": "Uniformly distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/uniform",
+		"group": "random"
+	},
+	{
+		"command": "random-weibull",
+		"description": "Weibull distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/weibull",
 		"group": "random"
 	},
 	{
