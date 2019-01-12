@@ -1,0 +1,70 @@
+
+{{alias}}( iterator, fcn[, thisArg] )
+    Returns an iterator which replicates each iterated value according to a
+    provided function.
+
+    The callback function is provided three arguments:
+
+    - value: iterated value
+    - index: source iteration index (zero-based)
+    - n: iteration index (zero-based)
+
+    The callback function is invoked *once* per iterated value of the provided
+    iterator.
+
+    The callback function *must* return an integer value. If the return value is
+    less than or equal to zero, the returned iterator skips an iterated value
+    and invokes the callback for the next iterated value of the provided
+    iterator.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    fcn: Function
+        Function which returns the number of times an iterated value should be
+        replicated.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2, 3, 4 ] );
+    > function f( v, i ) { return i + 1; };
+    > var it2 = {{alias}}( it1, f );
+    > var v = it2.next().value
+    1
+    > v = it2.next().value
+    2
+    > v = it2.next().value
+    2
+    > v = it2.next().value
+    3
+    > v = it2.next().value
+    3
+    > v = it2.next().value
+    3
+    > v = it2.next().value
+    4
+
+    See Also
+    --------
+
