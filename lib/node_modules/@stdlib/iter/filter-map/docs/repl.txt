@@ -1,0 +1,54 @@
+
+{{alias}}( iterator, fcn[, thisArg] )
+    Returns an iterator which both filters and maps a provided iterator's
+    values.
+
+    When invoked, the callback function is provided two arguments:
+
+    - value: iterated value
+    - index: iteration index (zero-based)
+
+    If the callback returns `undefined`, the iterator invokes the function for
+    the next value of the provided iterator; otherwise, the iterator returns
+    the callback's return value.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    fcn: Function
+        Callback function which both filters and maps.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > function f( v ) { if ( v > 2 ) { return v * 10 }; };
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 3, 2, 4 ] );
+    > var it2 = {{alias}}( it1, f );
+    > var v = it2.next().value
+    30
+    > v = it2.next().value
+    40
+
+    See Also
+    --------
+
