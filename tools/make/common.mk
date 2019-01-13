@@ -348,7 +348,7 @@ BLAS_DIR ?=
 DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
 
 # Define the Boost version:
-DEPS_BOOST_VERSION ?= 1.62.0
+DEPS_BOOST_VERSION ?= 1.69.0
 
 # Generate a version slug:
 deps_boost_version_slug := $(subst .,_,$(DEPS_BOOST_VERSION))
