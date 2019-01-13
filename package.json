@@ -161,7 +161,7 @@
     "remark-lint-unordered-list-marker-style": "^1.0.0",
     "remark-slug": "^5.0.0",
     "remark-unlink": "^2.0.0",
-    "remark-validate-links": "^7.0.0",
+    "remark-validate-links": "^8.0.0",
     "remark-vdom": "^7.0.0",
     "semver": "^5.3.0",
     "spdx-license-ids": "^3.0.0",
