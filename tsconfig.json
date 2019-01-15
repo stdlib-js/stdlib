@@ -1,43 +1,43 @@
 {
-    "compilerOptions": {
-        "allowSyntheticDefaultImports": false,
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false,
-        "alwaysStrict": true,
-        "baseUrl": ".",
-        "charset": "utf8",
-        "forceConsistentCasingInFileNames": true,
-        "keyofStringsOnly": false,
-        "lib": [
-            "es5"
-        ],
-        "locale": "en",
-        "module": "commonjs",
-        "moduleResolution": "Node",
-        "newLine": "lf",
-        "noEmit": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": false,
-        "noImplicitThis": true,
-        "noStrictGenericChecks": false,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "paths": {},
-        "pretty": true,
-        "strictBindCallApply": true,
-        "strictFunctionTypes": true,
-        "strictNullChecks": true,
-        "suppressExcessPropertyErrors": false,
-        "suppressImplicitAnyIndexErrors": false,
-        "typeRoots": [ "." ],
-        "types": []
-    },
-    "include": [
-        "**/docs/types/*.d.ts",
-        "**/docs/types/test*.ts"
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "charset": "utf8",
+    "forceConsistentCasingInFileNames": true,
+    "keyofStringsOnly": false,
+    "lib": [
+      "es5"
     ],
-    "exclude": [
-        "/node_modules/"
-    ]
+    "locale": "en",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "newLine": "lf",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {},
+    "pretty": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "typeRoots": [ "." ],
+    "types": []
+  },
+  "include": [
+    "**/docs/types/*.d.ts",
+    "**/docs/types/test*.ts"
+  ],
+  "exclude": [
+    "/node_modules/"
+  ]
 }
