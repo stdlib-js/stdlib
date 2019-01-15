@@ -121,6 +121,11 @@ var LANGS = {
 		'scope': 'source.shell',
 		'desc': 'Shell script license header'
 	},
+	'ts': {
+		'trigger': 'stdlib.license',
+		'scope': 'source.ts',
+		'desc': 'TypeScript license header'
+	},
 	'yml': {
 		'trigger': 'stdlib.license',
 		'scope': 'source.yaml',
