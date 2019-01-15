@@ -62,6 +62,12 @@ TESTS_PATTERN ?= test*.$(JAVASCRIPT_FILENAME_EXT)
 # Define a filepath pattern for test files:
 TESTS_FILTER ?= .*/.*
 
+# Define a filename pattern for TypeScript definition test files:
+TYPESCRIPT_DEFINITIONS_TESTS_PATTERN ?= test*.$(TYPESCRIPT_FILENAME_EXT)
+
+# Define a filepath pattern for TypeScript definition test files:
+TYPESCRIPT_DEFINITIONS_TESTS_FILTER ?= .*/.*
+
 
 # Define a filename pattern for test fixtures:
 TESTS_FIXTURES_PATTERN ?= *.*
@@ -216,6 +222,19 @@ SVG_EQUATIONS_PATTERN ?= equation*.$(SVG_FILENAME_EXT)
 
 # Define a filepath pattern for SVG equation files:
 SVG_EQUATIONS_FILTER ?= .*/.*
+
+
+# Define a filename pattern for TypeScript files:
+TYPESCRIPT_PATTERN ?= *.$(TYPESCRIPT_FILENAME_EXT)
+
+# Define a filepath pattern for TypeScript files:
+TYPESCRIPT_FILTER ?= .*/.*
+
+# Define a filename pattern for TypeScript definition files:
+TYPESCRIPT_DEFINITIONS_PATTERN ?= *.$(TYPESCRIPT_DEFINITION_FILENAME_EXT)
+
+# Define a filepath pattern for TypeScript definition files:
+TYPESCRIPT_DEFINITIONS_FILTER ?= .*/.*
 
 
 # Define a filename pattern for WebAssembly files:
@@ -380,6 +399,12 @@ FIND_TOOLS_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
 	-not -path "*/snippets/*" \
 	-not -path "*/make/lib/*"
 
+# TypeScript definition exclude flags:
+FIND_TYPESCRIPT_DEFINITIONS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
+
+# TypeScript definition tests exclude flags:
+FIND_TYPESCRIPT_DEFINITIONS_TESTS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
+
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 ifeq ($(OS), Darwin)
 	find_kernel_prefix := -E
@@ -411,4 +436,5 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tests_fixtures.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests_directories.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/tools_tests_fixtures.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/typescript/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/ls/wasm/Makefile
