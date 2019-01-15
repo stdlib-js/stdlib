@@ -30,7 +30,7 @@
 # @example
 # make lint-license-headers-typescript
 #/
-lint-license-headers-typescript: lint-license-headers-typescript-src lint-license-headers-typescript-tests lint-license-headers-typescript-examples
+lint-license-headers-typescript: lint-license-headers-typescript-src lint-license-headers-typescript-tests lint-license-headers-typescript-examples lint-license-headers-typescript-declarations
 
 .PHONY: lint-license-headers-typescript
 
@@ -62,7 +62,7 @@ lint-license-headers-typescript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-typescript-tests TYPESCRIPT_TESTS_FILTER=.*/base/erf/.*
 #/
 lint-license-headers-typescript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
-	$(QUIET) $(FIND_TYPESCRIPT_DEFINITIONS_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-typescript-tests
 
@@ -81,3 +81,19 @@ lint-license-headers-typescript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_TYPESCRIPT_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
 
 .PHONY: lint-license-headers-typescript-examples
+
+#/
+# Lints license headers in TypeScript declaration files.
+#
+# @param {string} [TYPESCRIPT_DECLARATIONS_FILTER] - file path pattern (e.g., `.*/base/erf/.*`)
+#
+# @example
+# make lint-license-headers-typescript-declarations
+#
+# @example
+# make lint-license-headers-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=.*/base/erf/.*
+#/
+lint-license-headers-typescript-declarations: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
+	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
+
+.PHONY: lint-license-headers-typescript-declarations

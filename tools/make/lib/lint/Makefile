@@ -30,6 +30,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/python/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/r/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/lint/repl_help.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/shell/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/Makefile
 
 
 # RULES #
@@ -45,7 +46,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/shell/Makefile
 # @example
 # make lint
 #/
-lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-shell lint-conf lint-pkg-json lint-repl-help lint-license-headers
+lint: lint-filenames lint-javascript lint-markdown lint-python lint-julia lint-r lint-shell lint-typescript lint-conf lint-pkg-json lint-repl-help lint-license-headers
 
 .PHONY: lint
 

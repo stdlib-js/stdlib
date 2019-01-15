@@ -140,8 +140,8 @@ SCRIPTS_FOLDER ?= scripts
 # Define the folder name convention for temporary files:
 TMP_FOLDER ?= tmp
 
-# Define the folder name convention for TypeScript definition files:
-TYPESCRIPT_DEFINITIONS_FOLDER ?= $(DOCUMENTATION_FOLDER)/types
+# Define the folder name convention for TypeScript declaration files:
+TYPESCRIPT_DECLARATIONS_FOLDER ?= $(DOCUMENTATION_FOLDER)/types
 
 # Define filename extension conventions (keep in alphabetical order):
 AWK_FILENAME_EXT ?= awk
@@ -172,7 +172,7 @@ SHELL_FILENAME_EXT ?= sh
 SVG_FILENAME_EXT ?= svg
 TEXT_FILENAME_EXT ?= txt
 TYPESCRIPT_FILENAME_EXT ?= ts
-TYPESCRIPT_DEFINITION_FILENAME_EXT ?= d.$(TYPESCRIPT_FILENAME_EXT)
+TYPESCRIPT_DECLARATION_FILENAME_EXT ?= d.$(TYPESCRIPT_FILENAME_EXT)
 WASM_FILENAME_EXT ?= wasm
 WAT_FILENAME_EXT ?= wat
 YAML_FILENAME_EXT ?= yml

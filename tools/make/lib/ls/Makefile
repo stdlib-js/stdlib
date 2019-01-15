@@ -65,11 +65,17 @@ TESTS_PATTERN ?= test*.$(JAVASCRIPT_FILENAME_EXT)
 # Define a filepath pattern for test files:
 TESTS_FILTER ?= .*/.*
 
-# Define a filename pattern for TypeScript definition test files:
-TYPESCRIPT_DEFINITIONS_TESTS_PATTERN ?= test*.$(TYPESCRIPT_FILENAME_EXT)
+# Define a filename pattern for TypeScript test files:
+TYPESCRIPT_TESTS_PATTERN ?= test*.$(TYPESCRIPT_FILENAME_EXT)
 
-# Define a filepath pattern for TypeScript definition test files:
-TYPESCRIPT_DEFINITIONS_TESTS_FILTER ?= .*/.*
+# Define a filepath pattern for TypeScript test files:
+TYPESCRIPT_TESTS_FILTER ?= .*/.*
+
+# Define a filename pattern for TypeScript declaration test files:
+TYPESCRIPT_DECLARATIONS_TESTS_PATTERN ?= test*.$(TYPESCRIPT_FILENAME_EXT)
+
+# Define a filepath pattern for TypeScript declaration test files:
+TYPESCRIPT_DECLARATIONS_TESTS_FILTER ?= .*/.*
 
 
 # Define a filename pattern for test fixtures:
@@ -95,6 +101,9 @@ PYTHON_TESTS_FIXTURES_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 
 # Define a filename pattern for R test fixtures:
 R_TESTS_FIXTURES_PATTERN ?= *.$(R_FILENAME_EXT)
+
+# Define a filename pattern for TypeScript test fixtures:
+TYPESCRIPT_TESTS_FIXTURES_PATTERN ?= *.$(TYPESCRIPT_FILENAME_EXT)
 
 # Define a filepath pattern for test fixture files:
 TESTS_FIXTURES_FILTER ?= .*/.*
@@ -236,11 +245,11 @@ TYPESCRIPT_PATTERN ?= *.$(TYPESCRIPT_FILENAME_EXT)
 # Define a filepath pattern for TypeScript files:
 TYPESCRIPT_FILTER ?= .*/.*
 
-# Define a filename pattern for TypeScript definition files:
-TYPESCRIPT_DEFINITIONS_PATTERN ?= *.$(TYPESCRIPT_DEFINITION_FILENAME_EXT)
+# Define a filename pattern for TypeScript declaration files:
+TYPESCRIPT_DECLARATIONS_PATTERN ?= *.$(TYPESCRIPT_DECLARATION_FILENAME_EXT)
 
-# Define a filepath pattern for TypeScript definition files:
-TYPESCRIPT_DEFINITIONS_FILTER ?= .*/.*
+# Define a filepath pattern for TypeScript declaration files:
+TYPESCRIPT_DECLARATIONS_FILTER ?= .*/.*
 
 
 # Define a filename pattern for WebAssembly files:
