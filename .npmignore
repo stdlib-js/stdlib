@@ -52,6 +52,11 @@ workshops/
 /node_modules/
 
 
+# TypeScript #
+##############
+tsconfig.json
+
+
 # Logs #
 ########
 *.log
