@@ -3529,6 +3529,18 @@
       "dom"
     ]
   },
+  "https://github.com/Microsoft/dtslint": {
+    "id": "dtslint",
+    "description": "GitHub repository for dtslint, a utility for testing TypeScript definition files for style and correctness.",
+    "short_url": "",
+    "keywords": [
+      "typescript",
+      "tslint",
+      "definition files",
+      "ts",
+      "lint"
+    ]
+  },
   "https://github.com/PyCQA/pycodestyle": {
     "id": "pycodestyle",
     "description": "Python style guide checker.",
