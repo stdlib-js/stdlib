@@ -141,7 +141,7 @@ SCRIPTS_FOLDER ?= scripts
 TMP_FOLDER ?= tmp
 
 # Define the folder name convention for type definition files:
-TYPES_FOLDER ?= types
+TYPES_FOLDER ?= $(DOCUMENTATION_FOLDER)/types
 
 # Define filename extension conventions (keep in alphabetical order):
 AWK_FILENAME_EXT ?= awk
