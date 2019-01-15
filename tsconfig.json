@@ -36,5 +36,8 @@
     "include": [
         "**/docs/types/*.d.ts",
         "**/docs/types/test*.ts"
+    ],
+    "exclude": [
+        "/node_modules/"
     ]
 }
