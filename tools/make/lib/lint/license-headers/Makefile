@@ -25,7 +25,7 @@ LICENSE_HEADER_LINT ?= $(TOOLS_PKGS_DIR)/lint/license-header-file-list/bin/cli
 LICENSE_HEADER_LINT_FLAGS ?=
 
 # Define a `grep` regex filter to allow only certain file types to be lint:
-license_header_filter := \(\.$(AWK_FILENAME_EXT)\|\.$(C_FILENAME_EXT)\|\.$(C_HEADER_FILENAME_EXT)\|\.$(CPP_FILENAME_EXT)\|\.$(CPP_HEADER_FILENAME_EXT)\|\.$(CSS_FILENAME_EXT)\|\.$(FORTRAN_FILENAME_EXT)\|\.$(GYP_FILENAME_EXT)\|\.$(GYPI_FILENAME_EXT)\|\.$(HTML_FILENAME_EXT)\|\.$(JAVASCRIPT_FILENAME_EXT)\|\.$(JULIA_FILENAME_EXT)\|\.$(MAKEFILE_FILENAME_EXT)\|\.$(MARKDOWN_FILENAME_EXT)\|\.$(PYTHON_FILENAME_EXT)\|\.$(R_FILENAME_EXT)\|\.$(SHELL_FILENAME_EXT)\|\.$(YAML_FILENAME_EXT)\|Makefile\)$$
+license_header_filter := \(\.$(AWK_FILENAME_EXT)\|\.$(C_FILENAME_EXT)\|\.$(C_HEADER_FILENAME_EXT)\|\.$(CPP_FILENAME_EXT)\|\.$(CPP_HEADER_FILENAME_EXT)\|\.$(CSS_FILENAME_EXT)\|\.$(FORTRAN_FILENAME_EXT)\|\.$(GYP_FILENAME_EXT)\|\.$(GYPI_FILENAME_EXT)\|\.$(HTML_FILENAME_EXT)\|\.$(JAVASCRIPT_FILENAME_EXT)\|\.$(JULIA_FILENAME_EXT)\|\.$(MAKEFILE_FILENAME_EXT)\|\.$(MARKDOWN_FILENAME_EXT)\|\.$(PYTHON_FILENAME_EXT)\|\.$(R_FILENAME_EXT)\|\.$(SHELL_FILENAME_EXT)\|\.$(TYPESCRIPT_FILENAME_EXT)\|\.$(YAML_FILENAME_EXT)\|Makefile\)$$
 
 
 # DEPENDENCIES #
@@ -39,6 +39,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/julia.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/markdown.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/python.mk
 include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/r.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/license-headers/typescript.mk
 
 
 # RULES #
