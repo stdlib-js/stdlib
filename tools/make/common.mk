@@ -101,6 +101,9 @@ JAVASCRIPT_LINTER ?= eslint
 # Define the code coverage instrumentation utility:
 JAVASCRIPT_CODE_INSTRUMENTER ?= istanbul
 
+# Define the linter to use when linting TypeScript definition files:
+TYPESCRIPT_DEFINITION_LINTER ?= dtslint
+
 # Define the browser test runner:
 BROWSER_TEST_RUNNER ?= testling
 
