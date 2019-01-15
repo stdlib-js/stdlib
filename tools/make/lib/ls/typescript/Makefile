@@ -22,3 +22,4 @@
 include $(TOOLS_MAKE_LIB_DIR)/ls/typescript/definitions.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/typescript/definitions_tests.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/typescript/files.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/typescript/sources.mk

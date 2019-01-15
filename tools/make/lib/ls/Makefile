@@ -46,6 +46,9 @@ PYTHON_SOURCES_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 # Define a filename pattern for R source files:
 R_SOURCES_PATTERN ?= *.$(R_FILENAME_EXT)
 
+# Define a filename pattern for R source files:
+TYPESCRIPT_SOURCES_PATTERN ?= *.$(TYPESCRIPT_FILENAME_EXT)
+
 # Define a filename pattern for WebAssembly source files:
 WASM_SOURCES_PATTERN ?= *.$(WASM_FILENAME_EXT)
 
