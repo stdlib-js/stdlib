@@ -146,6 +146,9 @@ PYTHON_EXAMPLES_PATTERN ?= *.$(PYTHON_FILENAME_EXT)
 # Define a filename pattern for R example files:
 R_EXAMPLES_PATTERN ?= *.$(R_FILENAME_EXT)
 
+# Define a filename pattern for TypeScript example files:
+TYPESCRIPT_EXAMPLES_PATTERN ?= *.$(TYPESCRIPT_FILENAME_EXT)
+
 # Define a filepath pattern for example files:
 EXAMPLES_FILTER ?= .*/.*
 
@@ -401,12 +404,6 @@ FIND_TOOLS_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
 	-not -path "$(TOOLS_PKGS_DIR)/test" \
 	-not -path "*/snippets/*" \
 	-not -path "*/make/lib/*"
-
-# TypeScript definition exclude flags:
-FIND_TYPESCRIPT_DEFINITIONS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
-
-# TypeScript definition tests exclude flags:
-FIND_TYPESCRIPT_DEFINITIONS_TESTS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 ifeq ($(OS), Darwin)

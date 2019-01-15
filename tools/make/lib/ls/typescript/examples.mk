@@ -19,32 +19,34 @@
 # VARIABLES #
 
 # Define the command flags:
-FIND_TYPESCRIPT_DEFINITIONS_FLAGS ?= \
+FIND_TYPESCRIPT_EXAMPLES_FLAGS ?= \
 	-type f \
-	-name "$(TYPESCRIPT_DEFINITIONS_PATTERN)" \
-	-path "$(ROOT_DIR)/**/$(TYPESCRIPT_DEFINITIONS_FOLDER)/**" \
-	-regex "$(TYPESCRIPT_DEFINITIONS_FILTER)" \
-	$(FIND_COMMON_EXCLUDE_FLAGS)
+	-name "$(TYPESCRIPT_EXAMPLES_PATTERN)" \
+	-path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/**" \
+	-regex "$(EXAMPLES_FILTER)" \
+	$(FIND_EXAMPLES_EXCLUDE_FLAGS)
 
 
 ifneq ($(OS), Darwin)
-	FIND_TYPESCRIPT_DEFINITIONS_FLAGS := -regextype posix-extended $(FIND_TYPESCRIPT_DEFINITIONS_FLAGS)
+	FIND_TYPESCRIPT_EXAMPLES_FLAGS := -regextype posix-extended $(FIND_TYPESCRIPT_EXAMPLES_FLAGS)
 endif
 
 # Define a command to list example files:
-FIND_TYPESCRIPT_DEFINITIONS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TYPESCRIPT_DEFINITIONS_FLAGS)
+FIND_TYPESCRIPT_EXAMPLES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TYPESCRIPT_EXAMPLES_FLAGS)
 
 # Define the list of example files:
-TYPESCRIPT_DEFINITIONS ?= $(shell $(FIND_TYPESCRIPT_DEFINITIONS_CMD))
+TYPESCRIPT_EXAMPLES ?= $(shell $(FIND_TYPESCRIPT_EXAMPLES_CMD))
+
+# TODO: does not include top-level examples?
 
 
 # TARGETS #
 
-# List TypeScript definition files.
+# List example files.
 #
-# This target prints a newline-delimited list of TypeScript definition files.
+# This target prints a newline-delimited list of example files.
 
-list-typescript-definitions:
-	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TYPESCRIPT_DEFINITIONS_FLAGS) $(find_print_list)
+list-examples-typescript:
+	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TYPESCRIPT_EXAMPLES_FLAGS) $(find_print_list)
 
-.PHONY: list-typescript-definitions
+.PHONY: list-examples-typescript
