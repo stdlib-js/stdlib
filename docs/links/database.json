@@ -2071,6 +2071,17 @@
       "constant"
     ]
   },
+  "https://en.wikipedia.org/wiki/Elliptic_integral": {
+    "id": "elliptic-integral",
+    "description": "Wikipedia entry for elliptic integrals.",
+    "short_url": "",
+    "keywords": [
+      "elliptic",
+      "integrals",
+      "math",
+      "calculus"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Entropy_%28information_theory%29": {
     "id": "entropy",
     "description": "Wikipedia entry for the concept of entropy from information theory.",
