@@ -152,6 +152,10 @@
 	print "SVG" OFS $1 OFS $2
 	next
 }
+/\.ts$/ {
+	print "TypeScript" OFS $1 OFS $2
+	next
+}
 /\.txt$/ {
 	print "plaintext" OFS $1 OFS $2
 	next
