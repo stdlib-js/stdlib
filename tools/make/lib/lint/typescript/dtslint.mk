@@ -30,7 +30,7 @@
 DTSLINT ?= $(BIN_DIR)/dtslint
 
 # Define the path to the TypeScript compiler configuration file:
-DTSLINT_CONF_TSCONFIG ?= $(ROOT_DIR)/tsconfig.json
+DTSLINT_CONF_TSCONFIG ?= $(CONFIG_DIR)/dtslint/tsconfig.json
 
 # Define the path to the TSLint configuration file for linting TypeScript declaration files:
 DTSLINT_CONF_TSLINT ?= $(CONFIG_DIR)/dtslint/tslint.json
