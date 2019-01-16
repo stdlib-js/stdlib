@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
     "lib": [
-      "es5"
+      "ES6"
     ],
     "locale": "en",
     "module": "commonjs",
