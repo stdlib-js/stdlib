@@ -486,9 +486,45 @@
 		"group": "random"
 	},
 	{
+		"command": "random-cauchy",
+		"description": "Cauchy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/cauchy",
+		"group": "random"
+	},
+	{
+		"command": "random-cosine",
+		"description": "Raised cosine distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/cosine",
+		"group": "random"
+	},
+	{
+		"command": "random-gamma",
+		"description": "Gamma distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/gamma",
+		"group": "random"
+	},
+	{
+		"command": "random-gumbel",
+		"description": "Gumbel distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/gumbel",
+		"group": "random"
+	},
+	{
 		"command": "random-improved-ziggurat",
 		"description": "Improved Ziggurat pseudorandom numbers.",
 		"path": "@stdlib/random/streams/improved-ziggurat",
+		"group": "random"
+	},
+	{
+		"command": "random-kumaraswamy",
+		"description": "Kumaraswamy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/kumaraswamy",
+		"group": "random"
+	},
+	{
+		"command": "random-invgamma",
+		"description": "Inverse gamma distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/invgamma",
 		"group": "random"
 	},
 	{
