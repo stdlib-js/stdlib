@@ -70,6 +70,7 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
+		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
 		$(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
@@ -81,6 +82,7 @@ else
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
+		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
 		$(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
@@ -113,6 +115,7 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
+		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
 		$(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
@@ -124,6 +127,7 @@ else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
+		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
 		$(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
