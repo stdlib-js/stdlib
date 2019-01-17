@@ -73,7 +73,7 @@ ifeq ($(FAIL_FAST), true)
 		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
-		$(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
+		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 else
@@ -85,7 +85,7 @@ else
 		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
-		$(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
+		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 endif
@@ -118,7 +118,7 @@ ifeq ($(FAIL_FAST), true)
 		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
-		$(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
+		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 else
@@ -130,7 +130,7 @@ else
 		cd $(ROOT_DIR); \
 		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
 		cd $(DTSLINT_OUT); \
-		$(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
+		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 endif
