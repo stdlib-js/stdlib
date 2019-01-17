@@ -38,9 +38,6 @@ DTSLINT_CONF_TSLINT ?= $(CONFIG_DIR)/dtslint/tslint.json
 # Define the command-line options to use when invoking the dtslint executable:
 DTSLINT_FLAGS ?=
 
-# Define the temporary directory for linting via dtslint:
-DTSLINT_OUT ?= $(BUILD_DIR)/dtslint
-
 
 # RULES #
 
@@ -65,27 +62,27 @@ DTSLINT_OUT ?= $(BUILD_DIR)/dtslint
 #/
 dtslint-declarations: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(MKDIR_RECURSIVE) $(DTSLINT_OUT)
-	$(QUIET) $(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) $(DTSLINT_OUT)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		cd $(ROOT_DIR); \
-		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
-		cd $(DTSLINT_OUT); \
+		dir=$$(dirname $$file); \
+		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
+		cd "$$dir"; \
 		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
+		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 else
-	$(QUIET) $(MKDIR_RECURSIVE) $(DTSLINT_OUT)
-	$(QUIET) $(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) $(DTSLINT_OUT)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		cd $(ROOT_DIR); \
-		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
-		cd $(DTSLINT_OUT); \
-		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
+		dir=$$(dirname $$file); \
+		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
+		cd "$$dir"; \
+		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
+		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 endif
@@ -110,27 +107,27 @@ endif
 #/
 dtslint-files: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(MKDIR_RECURSIVE) $(DTSLINT_OUT)
-	$(QUIET) $(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) $(DTSLINT_OUT)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		cd $(ROOT_DIR); \
-		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
-		cd $(DTSLINT_OUT); \
+		dir=$$(dirname $$file); \
+		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
+		cd "$$dir"; \
 		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
+		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 else
-	$(QUIET) $(MKDIR_RECURSIVE) $(DTSLINT_OUT)
-	$(QUIET) $(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) $(DTSLINT_OUT)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		cd $(ROOT_DIR); \
-		$(CP) -R "$$(dirname $$file)/" $(DTSLINT_OUT); \
-		cd $(DTSLINT_OUT); \
-		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || echo 'Linting failed.'; \
+		dir=$$(dirname $$file); \
+		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
+		cd "$$dir"; \
+		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
+		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 endif
