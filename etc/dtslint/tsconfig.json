@@ -30,7 +30,7 @@
     "strictNullChecks": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    "typeRoots": [ "." ],
+    "typeRoots": [ "./../../lib/node_modules/" ],
     "types": []
   },
   "exclude": [
