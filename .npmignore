@@ -55,6 +55,7 @@ workshops/
 # TypeScript #
 ##############
 tsconfig.json
+tslint.json
 
 
 # Logs #
