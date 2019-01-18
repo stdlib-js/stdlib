@@ -498,6 +498,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-erlang",
+		"description": "Erlang distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/erlang",
+		"group": "random"
+	},
+	{
 		"command": "random-gamma",
 		"description": "Gamma distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/gamma",
@@ -516,15 +522,15 @@
 		"group": "random"
 	},
 	{
-		"command": "random-kumaraswamy",
-		"description": "Kumaraswamy distributed pseudorandom numbers.",
-		"path": "@stdlib/random/streams/kumaraswamy",
-		"group": "random"
-	},
-	{
 		"command": "random-invgamma",
 		"description": "Inverse gamma distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/invgamma",
+		"group": "random"
+	},
+	{
+		"command": "random-kumaraswamy",
+		"description": "Kumaraswamy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/kumaraswamy",
 		"group": "random"
 	},
 	{
@@ -546,6 +552,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-lognormal",
+		"description": "Lognormal distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/lognormal",
+		"group": "random"
+	},
+	{
 		"command": "random-minstd",
 		"description": "Park and Miller LCG pseudorandom numbers.",
 		"path": "@stdlib/random/streams/minstd",
@@ -561,6 +573,12 @@
 		"command": "random-mt19937",
 		"description": "32-bit Mersenne Twister pseudorandom numbers.",
 		"path": "@stdlib/random/streams/mt19937",
+		"group": "random"
+	},
+	{
+		"command": "random-normal",
+		"description": "Normally distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/normal",
 		"group": "random"
 	},
 	{
