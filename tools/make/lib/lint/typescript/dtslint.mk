@@ -70,7 +70,7 @@ ifeq ($(FAIL_FAST), true)
 		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
 		cd "$$dir"; \
 		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
-		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
+		rm "$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 else
@@ -82,7 +82,7 @@ else
 		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
 		cd "$$dir"; \
 		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
-		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
+		rm "$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 endif
@@ -115,7 +115,7 @@ ifeq ($(FAIL_FAST), true)
 		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
 		cd "$$dir"; \
 		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
-		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
+		rm "$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 else
@@ -127,7 +127,7 @@ else
 		$(CP) $(DTSLINT_CONF_TSCONFIG) $(DTSLINT_CONF_TSLINT) "$$dir"; \
 		cd "$$dir"; \
 		NODE_PATH=$(NODE_PATH) $(DTSLINT) $(DTSLINT_FLAGS) || exit 1; \
-		rm "$$dir/$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$dir/$$(basename $(DTSLINT_CONF_TSLINT))"; \
+		rm "$$(basename $(DTSLINT_CONF_TSCONFIG))" "$$(basename $(DTSLINT_CONF_TSLINT))"; \
 	done
 	$(QUIET) cd $(ROOT_DIR)
 endif
