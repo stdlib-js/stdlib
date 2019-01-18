@@ -220,6 +220,8 @@ $(DEPS_CEPHES_BUILD_OUT)/cephes/double: $(DEPS_CEPHES_DOWNLOAD_OUT)/double.zip
 	$(QUIET) echo 'Extracting library...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(UNZIP) -q $< -d $@
+	$(QUIET) mv $@/double/* $@/
+	$(QUIET) rmdir $@/double/
 
 
 # Extract library.
