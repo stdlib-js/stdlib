@@ -1,0 +1,15 @@
+
+Usage: random-erlang [options] <k> <lambda>
+
+Options:
+
+  -h,  --help               Print this message.
+  -V,  --version            Print the package version.
+       --sep sep            Separator used to join streamed data. Default: '\n'.
+  -n,  --iter iterations    Number of pseudorandom numbers.
+       --seed seed          Pseudorandom number generator seed.
+       --state filepath     Path to a file containing the pseudorandom number
+                            generator state.
+       --snapshot filepath  Output file path for saving the pseudorandom number
+                            generator state upon exit.
+
