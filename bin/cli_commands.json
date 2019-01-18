@@ -528,6 +528,24 @@
 		"group": "random"
 	},
 	{
+		"command": "random-laplace",
+		"description": "Laplace distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/laplace",
+		"group": "random"
+	},
+	{
+		"command": "random-levy",
+		"description": "Lévy distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/levy",
+		"group": "random"
+	},
+	{
+		"command": "random-logistic",
+		"description": "Logistic distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/logistic",
+		"group": "random"
+	},
+	{
 		"command": "random-minstd",
 		"description": "Park and Miller LCG pseudorandom numbers.",
 		"path": "@stdlib/random/streams/minstd",
