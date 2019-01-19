@@ -136,7 +136,7 @@
 		"indent": [ true, "tabs", 4 ],
 		"linebreak-style": [ true, "LF" ],
 		"max-classes-per-file": [ true, 1 ],
-		"max-file-line-count": [ true, 300 ],
+		"max-file-line-count": [ true, 1000 ],
 		"max-line-length": [ true,
 			{
 				"limit": 80,
