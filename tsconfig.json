@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "allowSyntheticDefaultImports": false,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "alwaysStrict": true,
-    "baseUrl": ".",
+    "baseUrl": "lib/node_modules",
     "charset": "utf8",
+    "checkJs": true,
     "forceConsistentCasingInFileNames": true,
     "keyofStringsOnly": false,
     "lib": [
@@ -13,7 +15,7 @@
     ],
     "locale": "en",
     "module": "commonjs",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "newLine": "lf",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -38,6 +40,6 @@
     "**/@stdlib/types/*.d.ts"
   ],
   "exclude": [
-    "/node_modules/"
+    "node_modules"
   ]
 }
