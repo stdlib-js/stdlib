@@ -492,15 +492,39 @@
 		"group": "random"
 	},
 	{
+		"command": "random-chi",
+		"description": "Chi distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/chi",
+		"group": "random"
+	},
+	{
+		"command": "random-chisquare",
+		"description": "Chi-square distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/chisquare",
+		"group": "random"
+	},
+	{
 		"command": "random-cosine",
 		"description": "Raised cosine distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/cosine",
 		"group": "random"
 	},
 	{
+		"command": "random-discrete-uniform",
+		"description": "Uniformly distributed pseudorandom integers.",
+		"path": "@stdlib/random/streams/discrete-uniform",
+		"group": "random"
+	},
+	{
 		"command": "random-erlang",
 		"description": "Erlang distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/erlang",
+		"group": "random"
+	},
+	{
+		"command": "random-exponential",
+		"description": "Exponentially distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/exponential",
 		"group": "random"
 	},
 	{
@@ -582,6 +606,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-poisson",
+		"description": "Poisson distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/poisson",
+		"group": "random"
+	},
+	{
 		"command": "random-randi",
 		"description": "Pseudorandom numbers having integer values.",
 		"path": "@stdlib/random/streams/randi",
@@ -597,6 +627,18 @@
 		"command": "random-randu",
 		"description": "Pseudorandom numbers between 0 and 1.",
 		"path": "@stdlib/random/streams/randu",
+		"group": "random"
+	},
+	{
+		"command": "random-Rayleigh",
+		"description": "Rayleigh distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/Rayleigh",
+		"group": "random"
+	},
+	{
+		"command": "random-t",
+		"description": "Student's t distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/t",
 		"group": "random"
 	},
 	{
