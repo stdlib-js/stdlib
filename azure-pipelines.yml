@@ -160,7 +160,7 @@ jobs:
         # Update the global npm installation:
         inputs:
           command: custom
-          customCommand: 'install -g npm@$(NPM_VERSION)'
+          customCommand: 'install -g npm@"$(NPM_VERSION)"'
 
 
       # Print debug information:
