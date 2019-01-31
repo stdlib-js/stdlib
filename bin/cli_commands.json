@@ -468,6 +468,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-bernoulli",
+		"description": "Bernoulli distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/bernoulli",
+		"group": "random"
+	},
+	{
 		"command": "random-beta",
 		"description": "Beta distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/beta",
