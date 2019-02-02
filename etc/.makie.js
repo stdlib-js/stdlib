@@ -44,6 +44,7 @@ plugins[ 'lint-javascript' ] = path.join( prefix, 'makie-lint-javascript' );
 plugins[ 'lint-markdown' ] = path.join( prefix, 'makie-lint-markdown' );
 plugins[ 'lint-python' ] = path.join( prefix, 'makie-lint-python' );
 plugins[ 'lint-r' ] = path.join( prefix, 'makie-lint-r' );
+plugins[ 'lint-typescript-declarations' ] = path.join( prefix, 'makie-lint-typescript-declarations' );
 plugins[ 'list-pkgs' ] = path.join( prefix, 'makie-list-pkgs' );
 plugins[ 'list-pkgs-names' ] = path.join( prefix, 'makie-list-pkgs-names' );
 plugins[ 'markdown-asset-link' ] = path.join( prefix, 'makie-markdown-asset-link' );
