@@ -27,12 +27,17 @@
 	* @returns {string} cleaned text
 	*/
 	function cleanPath( txt ) {
+		var ch;
 		var j;
-		if (
-			txt.charCodeAt( 0 ) === 34 && // "
-			txt.charCodeAt( txt.length-1 ) === 34 // "
-		) {
-			txt = txt.slice( 1, txt.length-1 );
+		if ( txt.charCodeAt( 0 ) === 34 ) {
+			j = 1;
+			for ( j = 1; j < txt.length; j++ ) {
+				ch = txt.charCodeAt( j );
+				if ( ch === 34 ) {
+					txt = txt.slice( 1, j );
+					break;
+				}
+			}
 		}
 		j = txt.indexOf( '/docs/types/' );
 		if ( j >= 0 ) {
@@ -44,6 +49,16 @@
 			}
 		}
 		return txt;
+	}
+
+	/**
+	* Cleans up the document title.
+	*
+	* @private
+	* @param {DOMElement} el - title element
+	*/
+	function cleanTitle( el ) {
+		el.innerHTML = cleanPath( el.innerHTML ) + ' | stdlib';
 	}
 
 	/**
@@ -128,6 +143,9 @@
 	*/
 	function main() {
 		var el;
+
+		el = document.querySelector( 'title' );
+		cleanTitle( el );
 
 		el = document.querySelectorAll( '.tsd-kind-external-module a' );
 		cleanLinks( el );
