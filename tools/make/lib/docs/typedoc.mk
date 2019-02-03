@@ -73,6 +73,9 @@ TYPEDOC_JSON_FLAGS ?= \
 	--name stdlib \
 	--json $(TYPEDOC_JSON)
 
+# Generate a list of web assets:
+typedoc_web_assets ?= $(shell find "$(DOCS_DIR)/assets/web" -type f \( -name \*.png -o -name \*.svg -o -name \*.xml -o -name \*.json -o -name \*.ico \))
+
 
 # TARGETS #
 
@@ -92,6 +95,7 @@ typedoc-html: $(NODE_MODULES) $(TYPEDOC)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(TYPEDOC_HTML_OUT)
 	$(QUIET) $(MKDIR_RECURSIVE) $(TYPEDOC_HTML_OUT)
 	$(QUIET) $(TYPEDOC) $(TYPEDOC_HTML_FLAGS) $(SRC_DIR)
+	$(QUIET) $(CP) $(typedoc_web_assets) $(TYPEDOC_HTML_OUT)
 
 .PHONY: typedoc-html
 
