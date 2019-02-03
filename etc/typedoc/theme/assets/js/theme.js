@@ -58,7 +58,11 @@
 	* @param {DOMElement} el - title element
 	*/
 	function cleanTitle( el ) {
-		el.innerHTML = cleanPath( el.innerHTML ) + ' | stdlib';
+		var txt = cleanPath( el.innerHTML );
+		if ( txt.indexOf( 'stdlib' ) === -1 ) {
+			txt += ' | stdlib';
+		}
+		el.innerHTML = txt;
 	}
 
 	/**
