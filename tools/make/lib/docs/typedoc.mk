@@ -52,7 +52,7 @@ TYPEDOC_HTML_FLAGS ?= \
 	--excludePrivate \
 	--excludeProtected \
 	--includeDeclarations \
-	--exclude **/types/test*.ts \
+	--exclude **/$(TYPESCRIPT_DECLARATIONS_FOLDER)/test*.ts \
 	--name stdlib \
 	--theme default \
 	--hideGenerator \
@@ -69,7 +69,7 @@ TYPEDOC_JSON_FLAGS ?= \
 	--excludePrivate \
 	--excludeProtected \
 	--includeDeclarations \
-	--exclude **/types/test*.ts \
+	--exclude **/$(TYPESCRIPT_DECLARATIONS_FOLDER)/test*.ts \
 	--name stdlib \
 	--json $(TYPEDOC_JSON)
 
