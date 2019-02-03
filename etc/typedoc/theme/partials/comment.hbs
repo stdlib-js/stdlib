@@ -11,7 +11,8 @@
             {{/if}}
             {{#if tags}}
                 {{#each tags}}
-                    {{#ifCond tagName "!==" "example"}}
+                    {{#ifCond tagName "===" "example"}}
+                    {{else}}
                         {{#if @first}}
                              <dl class="tsd-comment-tags">
                         {{/if}}
