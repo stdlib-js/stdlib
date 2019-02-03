@@ -63,7 +63,7 @@
 	*/
 	function cleanHeading( txt ) {
 		if ( txt.indexOf( 'External module' ) === 0 ) {
-			txt = 'Package: ' + cleanPath( txt.slice( 16 ) );
+			txt = 'Package: &commat;stdlib/' + cleanPath( txt.slice( 16 ) );
 		}
 		return txt;
 	}
