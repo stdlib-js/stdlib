@@ -54,7 +54,7 @@ TYPEDOC_HTML_FLAGS ?= \
 	--includeDeclarations \
 	--exclude **/$(TYPESCRIPT_DECLARATIONS_FOLDER)/test*.ts \
 	--name stdlib \
-	--theme default \
+	--theme $(CONFIG_DIR)/typedoc/theme/ \
 	--hideGenerator \
 	--readme $(ROOT_DIR)/README.md \
 	--out $(TYPEDOC_HTML_OUT)
