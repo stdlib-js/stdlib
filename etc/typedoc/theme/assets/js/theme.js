@@ -37,6 +37,11 @@
 		j = txt.indexOf( '/docs/types/' );
 		if ( j >= 0 ) {
 			txt = txt.slice( 0, j );
+		} else {
+			j = txt.indexOf( '/index.d' );
+			if ( j >= 0 ) {
+				txt = txt.slice( 0, j );
+			}
 		}
 		return txt;
 	}
@@ -125,6 +130,9 @@
 		var el;
 
 		el = document.querySelectorAll( '.tsd-kind-external-module a' );
+		cleanLinks( el );
+
+		el = document.querySelectorAll( '.tsd-is-not-exported a' );
 		cleanLinks( el );
 
 		el = document.querySelectorAll( '.tsd-breadcrumb a' );
