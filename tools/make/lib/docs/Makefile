@@ -20,6 +20,7 @@
 
 include $(TOOLS_MAKE_LIB_DIR)/docs/repl.mk
 include $(TOOLS_MAKE_LIB_DIR)/docs/src.mk
+include $(TOOLS_MAKE_LIB_DIR)/docs/typedoc.mk
 
 
 # TARGETS #
