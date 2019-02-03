@@ -95,7 +95,7 @@ typedoc-html: $(NODE_MODULES) $(TYPEDOC)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(TYPEDOC_HTML_OUT)
 	$(QUIET) $(MKDIR_RECURSIVE) $(TYPEDOC_HTML_OUT)
 	$(QUIET) $(TYPEDOC) $(TYPEDOC_HTML_FLAGS) $(SRC_DIR)
-	$(QUIET) $(CP) $(typedoc_web_assets) $(TYPEDOC_HTML_OUT)
+	$(QUIET) $(CP) $(typedoc_web_assets) "$(DOCS_DIR)/assets/logo_white.svg" $(TYPEDOC_HTML_OUT)
 
 .PHONY: typedoc-html
 
