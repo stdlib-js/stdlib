@@ -534,9 +534,21 @@
 		"group": "random"
 	},
 	{
+		"command": "random-f",
+		"description": "F distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/f",
+		"group": "random"
+	},
+	{
 		"command": "random-gamma",
 		"description": "Gamma distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/gamma",
+		"group": "random"
+	},
+	{
+		"command": "random-geometric",
+		"description": "Geometric distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/geometric",
 		"group": "random"
 	},
 	{
