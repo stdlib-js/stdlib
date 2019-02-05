@@ -60,7 +60,7 @@
 	function cleanTitle( el ) {
 		var txt = cleanPath( el.innerHTML );
 		if ( txt.indexOf( 'stdlib' ) === -1 ) {
-			txt += ' | stdlib';
+			txt = 'stdlib | ' + txt;
 		}
 		el.innerHTML = txt;
 	}
