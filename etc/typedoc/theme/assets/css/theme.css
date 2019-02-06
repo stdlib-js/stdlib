@@ -33,8 +33,31 @@
 	vertical-align: bottom;
 }
 
+.bottom-nav {
+	width: 100%;
+	min-height: 5em;
+	margin-top: 10px;
+	padding-top: 40px;
+	font-size: 0.85em;
+}
+
+.bottom-nav a {
+	color: #585858;
+}
+
+.bottom-nav a:hover,
+.bottom-nav a:active {
+	text-decoration: underline;
+}
+
 .center {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.border-top {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e9ecef;
 }
