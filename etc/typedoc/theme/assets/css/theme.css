@@ -32,3 +32,9 @@
 .tsd-page-toolbar .title img {
 	vertical-align: bottom;
 }
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
