@@ -40,11 +40,11 @@ tape( 'the function returns an error if provided an `options` argument which is 
 	values = [
 		'5',
 		5,
+		NaN,
 		true,
 		false,
 		void 0,
 		null,
-		NaN,
 		[],
 		function noop() {}
 	];

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var isObject = require( '@stdlib/assert/is-plain-object' );
+var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 
@@ -43,12 +43,12 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 * }
 */
 function validate( opts, options ) {
-	if ( !isObject( options ) ) {
+	if ( !isPlainObject( options ) ) {
 		return new TypeError( 'invalid argument. Options must be an object. Value: `' + options + '`.' );
 	}
 	if ( hasOwnProp( options, 'TODO' ) ) {
 		opts.TODO = options.TODO;
-		if ( !isObject( opts.TODO ) ) {
+		if ( !isPlainObject( opts.TODO ) ) {
 			return new TypeError( 'invalid option. `TODO` option must be a TODO. Option: `' + opts.TODO + '`.' );
 		}
 	}
