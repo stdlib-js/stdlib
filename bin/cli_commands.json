@@ -624,6 +624,12 @@
 		"group": "random"
 	},
 	{
+		"command": "random-pareto-type1",
+		"description": "Pareto (type 1) distributed pseudorandom numbers.",
+		"path": "@stdlib/random/streams/pareto-type1",
+		"group": "random"
+	},
+	{
 		"command": "random-poisson",
 		"description": "Poisson distributed pseudorandom numbers.",
 		"path": "@stdlib/random/streams/poisson",
