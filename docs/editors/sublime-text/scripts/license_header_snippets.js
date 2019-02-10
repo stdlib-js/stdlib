@@ -25,7 +25,7 @@
 var resolve = require( 'path' ).resolve;
 var join = require( 'path' ).join;
 var logger = require( 'debug' );
-var getKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( '@stdlib/utils/keys' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var writeFileSync = require( '@stdlib/fs/write-file' ).sync;
 var replace = require( '@stdlib/string/replace' );
@@ -197,7 +197,7 @@ function main() {
 	var len;
 	var i;
 
-	keys = getKeys( LANGS );
+	keys = objectKeys( LANGS );
 	len = keys.length;
 
 	debug( 'Generating %d license header snippets...', len );
