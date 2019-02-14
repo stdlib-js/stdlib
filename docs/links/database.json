@@ -1679,6 +1679,17 @@
       "magnitude"
     ]
   },
+  "https://en.wikipedia.org/wiki/Additive_white_Gaussian_noise": {
+    "id": "awgn",
+    "description": "Wikipedia entry for additive white Gaussian noise.",
+    "short_url": "",
+    "keywords": [
+      "noise",
+      "signal",
+      "gaussian",
+      "white"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance": {
     "id": "algorithms-variance",
     "description": "Wikipedia entry for good algorithms of calculating the variance.",
