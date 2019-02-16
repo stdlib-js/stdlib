@@ -2681,6 +2681,18 @@
       "logistic"
     ]
   },
+  "https://en.wikipedia.org/wiki/Logistic_function": {
+    "id": "logistic-function",
+    "description": "Wikipedia entry for the logistic function.",
+    "short_url": "",
+    "keywords": [
+      "math",
+      "sigmoid",
+      "expit",
+      "logistic",
+      "logit"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Lucas_number": {
     "id": "lucas-number",
     "description": "Wikipedia entry for Lucas numbers, an integer sequence closely related to Fibonacci numbers.",
