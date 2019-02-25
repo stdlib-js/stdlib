@@ -3424,6 +3424,19 @@
       "weibull"
     ]
   },
+  "https://en.wikipedia.org/wiki/Weighted_arithmetic_mean": {
+    "id": "weighted-arithmetic-mean",
+    "description": "Wikipedia entry for the weighted arithmetic mean.",
+    "short_url": "",
+    "keywords": [
+      "mean",
+      "weighted",
+      "statistics",
+      "stats",
+      "average",
+      "avg"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Whitespace_character": {
     "id": "whitespace",
     "description": "Wikipedia entry on whitespace characters.",
