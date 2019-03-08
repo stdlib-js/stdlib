@@ -1,0 +1,55 @@
+
+{{alias}}( iterator, [limit,] fcn )
+    Returns an iterator which removes consecutive values that resolve to the
+    same value according to a provided function.
+
+    The provided function is provided five arguments:
+
+    - curr: current source iterated value
+    - sprev: previous source iterated value
+    - dprev: previous downstream iterated value
+    - index: source iteration index (zero-based)
+    - acc: previous resolved value
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    limit: integer (optional)
+        Number of allowed consecutive duplicates. Default: 1.
+
+    fcn: Function
+        Function indicating whether an iterated value is a "duplicate".
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1, 1, 2, 3, 3 ] );
+    > function fcn( v ) { return v; };
+    > var it = {{alias}}( arr, fcn );
+    > var v = it.next().value
+    1
+    > v = it.next().value
+    2
+    > v = it.next().value
+    3
+
+    See Also
+    --------
+
