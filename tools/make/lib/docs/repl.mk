@@ -30,6 +30,9 @@ REPL_BUILD_ALIASES ?= $(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js
 # Define the path to the executable for mapping REPL aliases to package names:
 REPL_BUILD_ALIAS2PKG ?= $(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/build.js
 
+# Define the path to the executable for mapping REPL package names to aliases:
+REPL_BUILD_PKG2ALIAS ?= $(SRC_DIR)/@stdlib/namespace/pkg2alias/scripts/build.js
+
 
 # TARGETS #
 
@@ -37,7 +40,7 @@ REPL_BUILD_ALIAS2PKG ?= $(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/build.js
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg
+repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg repl-pkg2alias
 
 .PHONY: repl-docs
 
@@ -80,3 +83,13 @@ repl-alias2pkg: $(NODE_MODULES) $(REPL_BUILD_ALIAS2PKG)
 	$(QUIET) $(NODE) $(REPL_BUILD_ALIAS2PKG)
 
 .PHONY: repl-alias2pkg
+
+
+# Build the mapping between REPL package names and aliases.
+#
+# This target rebuilds the REPL database.
+
+repl-pkg2alias: $(NODE_MODULES) $(REPL_BUILD_PKG2ALIAS)
+	$(QUIET) $(NODE) $(REPL_BUILD_PKG2ALIAS)
+
+.PHONY: repl-pkg2alias
