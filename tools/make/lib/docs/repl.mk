@@ -24,6 +24,9 @@ REPL_HELP ?= $(SRC_DIR)/@stdlib/repl/help/scripts/build.js
 # Define the path to the executable for aggregating REPL examples:
 REPL_EXAMPLES ?= $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js
 
+# Define the path to the executable for aggregating REPL aliases:
+REPL_ALIASES ?= $(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js
+
 
 # TARGETS #
 
@@ -31,7 +34,7 @@ REPL_EXAMPLES ?= $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-examples
+repl-docs: repl-help repl-examples repl-aliases
 
 .PHONY: repl-docs
 
@@ -54,3 +57,13 @@ repl-examples: $(NODE_MODULES) $(REPL_EXAMPLES)
 	$(QUIET) $(NODE) $(REPL_EXAMPLES)
 
 .PHONY: repl-examples
+
+
+# Aggregate REPL aliases.
+#
+# This target aggregates REPL aliases.
+
+repl-aliases: $(NODE_MODULES) $(REPL_ALIASES)
+	$(QUIET) $(NODE) $(REPL_ALIASES)
+
+.PHONY: repl-aliases
