@@ -22,7 +22,7 @@
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related
+repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-pkg2related
 
 .PHONY: repl-docs
 
@@ -85,3 +85,13 @@ repl-alias2related: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/alias2related/s
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/alias2related/scripts/build.js"
 
 .PHONY: repl-alias2related
+
+
+# Build the mapping between REPL package names and related packages.
+#
+# This target rebuilds the REPL database.
+
+repl-pkg2related: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/pkg2related/scripts/build.js
+	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/pkg2related/scripts/build.js"
+
+.PHONY: repl-pkg2related
