@@ -1,0 +1,21 @@
+
+{{alias}}( pkg )
+    Returns the alias associated with a specified package name.
+
+    Parameters
+    ----------
+    pkg: string
+        Package name.
+
+    Returns
+    -------
+    out: string|null
+        Alias.
+
+    Examples
+    --------
+    > var v = {{alias}}( '@stdlib/math/base/special/sin' )
+
+    See Also
+    --------
+
