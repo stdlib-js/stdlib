@@ -19,13 +19,16 @@
 # VARIABLES #
 
 # Define the path to the executable for generating REPL help docs:
-REPL_HELP ?= $(SRC_DIR)/@stdlib/repl/help/scripts/build.js
+REPL_BUILD_HELP ?= $(SRC_DIR)/@stdlib/repl/help/scripts/build.js
 
 # Define the path to the executable for aggregating REPL examples:
-REPL_EXAMPLES ?= $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js
+REPL_BUILD_EXAMPLES ?= $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js
 
 # Define the path to the executable for aggregating REPL aliases:
-REPL_ALIASES ?= $(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js
+REPL_BUILD_ALIASES ?= $(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js
+
+# Define the path to the executable for mapping REPL aliases to package names:
+REPL_BUILD_ALIAS2PKG ?= $(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/build.js
 
 
 # TARGETS #
@@ -34,7 +37,7 @@ REPL_ALIASES ?= $(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-examples repl-aliases
+repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg
 
 .PHONY: repl-docs
 
@@ -43,8 +46,8 @@ repl-docs: repl-help repl-examples repl-aliases
 #
 # This target generates REPL help documentation.
 
-repl-help: $(NODE_MODULES) $(REPL_HELP)
-	$(QUIET) $(NODE) $(REPL_HELP)
+repl-help: $(NODE_MODULES) $(REPL_BUILD_HELP)
+	$(QUIET) $(NODE) $(REPL_BUILD_HELP)
 
 .PHONY: repl-help
 
@@ -53,8 +56,8 @@ repl-help: $(NODE_MODULES) $(REPL_HELP)
 #
 # This target aggregates REPL examples.
 
-repl-examples: $(NODE_MODULES) $(REPL_EXAMPLES)
-	$(QUIET) $(NODE) $(REPL_EXAMPLES)
+repl-examples: $(NODE_MODULES) $(REPL_BUILD_EXAMPLES)
+	$(QUIET) $(NODE) $(REPL_BUILD_EXAMPLES)
 
 .PHONY: repl-examples
 
@@ -63,7 +66,17 @@ repl-examples: $(NODE_MODULES) $(REPL_EXAMPLES)
 #
 # This target aggregates REPL aliases.
 
-repl-aliases: $(NODE_MODULES) $(REPL_ALIASES)
-	$(QUIET) $(NODE) $(REPL_ALIASES)
+repl-aliases: $(NODE_MODULES) $(REPL_BUILD_ALIASES)
+	$(QUIET) $(NODE) $(REPL_BUILD_ALIASES)
 
 .PHONY: repl-aliases
+
+
+# Build the mapping between REPL aliases and package names.
+#
+# This target rebuilds the REPL database.
+
+repl-alias2pkg: $(NODE_MODULES) $(REPL_BUILD_ALIAS2PKG)
+	$(QUIET) $(NODE) $(REPL_BUILD_ALIAS2PKG)
+
+.PHONY: repl-alias2pkg
