@@ -1,0 +1,22 @@
+
+{{alias}}( pkg )
+    Returns package names related to a specified package name.
+
+    Parameters
+    ----------
+    pkg: string
+        Package name.
+
+    Returns
+    -------
+    out: Array|null
+        Related package names.
+
+    Examples
+    --------
+    > var v = {{alias}}( '@stdlib/math/base/special/sin' )
+    [...]
+
+    See Also
+    --------
+
