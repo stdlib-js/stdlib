@@ -31,7 +31,7 @@ repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg repl-pkg2alias re
 #
 # This target generates REPL help documentation.
 
-repl-help: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/repl/help/scripts/build.js"
+repl-help: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/help/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/help/scripts/build.js"
 
 .PHONY: repl-help
@@ -41,7 +41,7 @@ repl-help: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/repl/help/scripts/build.js"
 #
 # This target aggregates REPL examples.
 
-repl-examples: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js"
+repl-examples: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js"
 
 .PHONY: repl-examples
@@ -51,7 +51,7 @@ repl-examples: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/repl/code-blocks/scripts/buil
 #
 # This target aggregates REPL aliases.
 
-repl-aliases: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js"
+repl-aliases: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/aliases/scripts/build.js"
 
 .PHONY: repl-aliases
@@ -61,7 +61,7 @@ repl-aliases: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/aliases/scripts/buil
 #
 # This target rebuilds the REPL database.
 
-repl-alias2pkg: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/build.js"
+repl-alias2pkg: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/build.js"
 
 .PHONY: repl-alias2pkg
@@ -71,7 +71,7 @@ repl-alias2pkg: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/alias2pkg/scripts/
 #
 # This target rebuilds the REPL database.
 
-repl-pkg2alias: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/pkg2alias/scripts/build.js"
+repl-pkg2alias: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/pkg2alias/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/pkg2alias/scripts/build.js"
 
 .PHONY: repl-pkg2alias
@@ -81,7 +81,7 @@ repl-pkg2alias: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/pkg2alias/scripts/
 #
 # This target rebuilds the REPL database.
 
-repl-alias2related: $(NODE_MODULES) "$(SRC_DIR)/@stdlib/namespace/alias2related/scripts/build.js"
+repl-alias2related: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/alias2related/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/alias2related/scripts/build.js"
 
 .PHONY: repl-alias2related
