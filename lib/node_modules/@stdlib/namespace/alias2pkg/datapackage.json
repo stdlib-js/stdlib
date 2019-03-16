@@ -1,0 +1,56 @@
+{
+  "name": "stdlib-alias2pkg",
+  "version": "",
+  "title": "Standard Library Aliases and Package Names",
+  "description": "A mapping between standard library aliases and package names.",
+  "resources": [
+    {
+      "name": "stdlib-alias2pkg-json",
+      "title": "Standard Library Aliases and Package Names",
+      "description": "A mapping between standard library aliases and package names.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-alias2pkg-csv",
+      "title": "Standard Library Aliases and Package Names",
+      "description": "A mapping between standard library aliases and package names.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "title": "Alias",
+            "description": "Alias.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "pkg",
+            "title": "Package Name",
+            "description": "Package name.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "aliases",
+    "package",
+    "name",
+    "pkg"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
