@@ -1,0 +1,61 @@
+{
+  "name": "stdlib-alias-example",
+  "version": "",
+  "title": "Standard Library Aliases and Examples",
+  "description": "A mapping between standard library aliases and examples.",
+  "resources": [
+    {
+      "name": "stdlib-alias-example-json",
+      "title": "Standard Library Aliases and Examples",
+      "description": "A mapping between standard library aliases and examples.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-alias-example-csv",
+      "title": "Standard Library Aliases and Examples",
+      "description": "A mapping between standard library aliases and examples.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "title": "Alias",
+            "description": "Alias.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "example",
+            "title": "Example",
+            "description": "Example.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "aliases",
+    "example",
+    "eg",
+    "help",
+    "docs",
+    "documentation",
+    "repl",
+    "usage",
+    "demo"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

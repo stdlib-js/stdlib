@@ -1,0 +1,21 @@
+
+{{alias}}( alias )
+    Returns an example associated with a provided alias.
+
+    Parameters
+    ----------
+    alias: string
+        Alias.
+
+    Returns
+    -------
+    out: string|null
+        Example.
+
+    Examples
+    --------
+    > var txt = {{alias}}( '{{alias:@stdlib/math/base/special/sin}}' )
+
+    See Also
+    --------
+
