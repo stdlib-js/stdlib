@@ -47,6 +47,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "acorn-loose": "^6.0.0",
     "d3-format": "^1.0.0",
     "d3-scale": "^1.0.0",
     "d3-shape": "^1.0.0",
