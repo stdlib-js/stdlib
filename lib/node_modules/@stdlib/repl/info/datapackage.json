@@ -1,0 +1,61 @@
+{
+  "name": "stdlib-alias-info",
+  "version": "",
+  "title": "Standard Library Aliases and Abbreviated Help Texts",
+  "description": "A mapping between standard library aliases and abbreviated help texts.",
+  "resources": [
+    {
+      "name": "stdlib-alias-info-json",
+      "title": "Standard Library Aliases and Abbreviated Help Texts",
+      "description": "A mapping between standard library aliases and abbreviated help texts.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-alias-info-csv",
+      "title": "Standard Library Aliases and Abbreviated Help Texts",
+      "description": "A mapping between standard library aliases and abbreviated help texts.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "title": "Alias",
+            "description": "Alias.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "text",
+            "title": "Help Text",
+            "description": "Abbreviated help text.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "aliases",
+    "help",
+    "text",
+    "txt",
+    "docs",
+    "documentation",
+    "repl",
+    "usage",
+    "info"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
