@@ -22,7 +22,7 @@
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-examples repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-pkg2related
+repl-docs: repl-help repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-pkg2related
 
 .PHONY: repl-docs
 
@@ -45,6 +45,26 @@ repl-examples: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/code-blocks/scripts/build.js"
 
 .PHONY: repl-examples
+
+
+# Generate REPL alias signatures.
+#
+# This target generates REPL alias signatures.
+
+repl-signatures: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/signature/scripts/build.js
+	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/signature/scripts/build.js"
+
+.PHONY: repl-signatures
+
+
+# Generate REPL alias typed signatures.
+#
+# This target generates REPL alias typed signatures.
+
+repl-typed-signatures: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/typed-signature/scripts/build.js
+	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/typed-signature/scripts/build.js"
+
+.PHONY: repl-typed-signatures
 
 
 # Aggregate REPL aliases.
