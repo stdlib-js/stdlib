@@ -1,0 +1,64 @@
+{
+  "name": "stdlib-alias-typed-signature",
+  "version": "",
+  "title": "Standard Library Aliases and Typed Signatures",
+  "description": "A mapping between standard library aliases and typed signatures.",
+  "resources": [
+    {
+      "name": "stdlib-alias-typed-signature-json",
+      "title": "Standard Library Aliases and Typed Signatures",
+      "description": "A mapping between standard library aliases and typed signatures.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-alias-typed-signature-csv",
+      "title": "Standard Library Aliases and Typed Signatures",
+      "description": "A mapping between standard library aliases and typed signatures.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "alias",
+            "title": "Alias",
+            "description": "Alias.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "signature",
+            "title": "Typed Signature",
+            "description": "Type signature.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "aliases",
+    "help",
+    "text",
+    "txt",
+    "docs",
+    "documentation",
+    "repl",
+    "usage",
+    "signature",
+    "interface",
+    "api",
+    "typed"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
