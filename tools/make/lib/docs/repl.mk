@@ -22,7 +22,7 @@
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-pkg2related
+repl-docs: repl-help repl-info repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-pkg2related
 
 .PHONY: repl-docs
 
@@ -35,6 +35,16 @@ repl-help: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/help/scripts/build.js
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/help/scripts/build.js"
 
 .PHONY: repl-help
+
+
+# Generate abbreviated REPL help.
+#
+# This target generates abbreviated REPL help documentation.
+
+repl-info: $(NODE_MODULES) $(SRC_DIR)/@stdlib/repl/info/scripts/build.js
+	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/repl/info/scripts/build.js"
+
+.PHONY: repl-info
 
 
 # Aggregate REPL examples.
