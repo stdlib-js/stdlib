@@ -1,0 +1,57 @@
+
+{{alias}}( t, k )
+    Evaluates the moment-generating function (MGF) for a chi-squared
+    distribution with degrees of freedom `k` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `k < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    k: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.4, 2 )
+    ~5.0
+    > y = {{alias}}( -1.0, 5.0 )
+    ~0.0642
+    > y = {{alias}}( 0.0, 10.0 )
+    1.0
+
+
+{{alias}}.factory( k )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    chi-squared distribution with degrees of freedom `k`.
+
+    Parameters
+    ----------
+    k: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 1.0 );
+    > var y = mymgf( 0.2 )
+    ~1.291
+    > y = mymgf( 0.4 )
+    ~2.236
+
+    See Also
+    --------
+
