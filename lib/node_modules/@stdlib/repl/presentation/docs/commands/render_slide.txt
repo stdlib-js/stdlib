@@ -1,0 +1,12 @@
+
+renderSlide()
+    Renders the current presentation slide.
+
+    Examples
+    --------
+    > renderSlide()
+
+    See Also
+    --------
+    load
+
