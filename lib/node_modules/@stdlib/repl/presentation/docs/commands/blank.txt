@@ -1,0 +1,12 @@
+
+blank()
+    Renders a blank screen.
+
+    Examples
+    --------
+    > blank();
+
+    See Also
+    --------
+    next, nextSlide, prev, prevSlide, redraw
+
