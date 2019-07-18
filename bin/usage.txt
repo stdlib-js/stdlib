@@ -11,6 +11,7 @@ Commands:
   help [command]                  Print a help message.
   datasets                        Retrieve a dataset.
   repl                            Start a REPL.
+  repl-presentation               Start a REPL presentation.
 
 Assert:
 

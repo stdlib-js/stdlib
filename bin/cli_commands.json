@@ -792,6 +792,12 @@
 		"group": "general"
 	},
 	{
+		"command": "repl-presentation",
+		"description": "Start a REPL presentation.",
+		"path": "@stdlib/repl/presentation",
+		"group": "general"
+	},
+	{
 		"command": "replace",
 		"description": "Replace search occurrences in a string.",
 		"path": "@stdlib/string/replace",
