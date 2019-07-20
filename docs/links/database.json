@@ -1464,6 +1464,18 @@
       "ecmascript"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis": {
+    "id": "mdn-global-this",
+    "description": "MDN documentation for `globalThis`, a reference to the global object.",
+    "short_url": "",
+    "keywords": [
+      "global",
+      "this",
+      "self",
+      "javascript",
+      "ecmascript"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite": {
     "id": "mdn-is-finite",
     "description": "Mozilla Developer Network (MDN) documentation of the isFinite global JavaScript function.",
