@@ -1,0 +1,16 @@
+
+{{alias}}()
+    Returns an object mapping emoji pictographs to codes.
+
+    Returns
+    -------
+    out: Object
+        An object mapping emoji pictographs to codes.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+
+    See Also
+    --------
+

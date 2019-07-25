@@ -1,0 +1,57 @@
+{
+  "name": "stdlib-datasets-emoji-picto-code",
+  "version": "",
+  "title": "Emoji Pictographs and Codes",
+  "description": "Maps emoji pictographs to codes.",
+  "resources": [
+    {
+      "name": "emoji-picto-code-json",
+      "title": "Emoji Pictographs and Codes",
+      "description": "Maps emoji pictographs to codes.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "emoji-picto-code-csv",
+      "title": "Emoji Pictographs and Codes",
+      "description": "Emoji pictographs and codes.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "emoji",
+            "title": "Emoji",
+            "description": "Emoji pictograph.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "code",
+            "title": "Code",
+            "description": "Emoji code.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "emoji",
+    "code",
+    "pictograph",
+    "picto",
+    "mapping",
+    "table",
+    "hash"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
