@@ -109,7 +109,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 12.977 MB      | 2.518 MB           | 484.299 kB            |
+| 13.174 MB      | 2.559 MB           | 488.571 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -117,7 +117,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 13.004 MB      | 2.537 MB           | 485.238 kB            |
+| 13.201 MB      | 2.579 MB           | 489.483 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -239,7 +239,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 59.747 MB                   | 17.036 MB                      |
+| 61.248 MB                   | 17.181 MB                      |
 
 <!-- </bundle-stats> -->
 
@@ -260,6 +260,10 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 <!-- </bundle-stats> -->
 
 <!-- <bundle-stats files="stdlib-datasets-emoji.min.js,stdlib-datasets-emoji.min.js.gz"> -->
+
+| stdlib-datasets-emoji.min.js | stdlib-datasets-emoji.min.js.gz |
+| ---------------------------- | ------------------------------- |
+| 1.592 MB                     | 162.699 kB                      |
 
 <!-- </bundle-stats> -->
 
@@ -335,7 +339,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 66.573 MB          | 17.866 MB             |
+| 69.64 MB           | 18.122 MB             |
 
 <!-- </bundle-stats> -->
 
@@ -358,7 +362,7 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 
 | stdlib-flat-help.min.js | stdlib-flat-help.min.js.gz |
 | ----------------------- | -------------------------- |
-| 3.012 MB                | 305.754 kB                 |
+| 3.909 MB                | 315.016 kB                 |
 
 <!-- </bundle-stats> -->
 
