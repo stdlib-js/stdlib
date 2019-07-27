@@ -156,6 +156,17 @@ The dataset bundle, `stdlib-datasets-cmudict`, contains the [CMU Pronouncing Dic
 </script>
 ```
 
+The dataset bundle, `stdlib-datasets-emoji`, contains [emoji datasets][@stdlib/datasets/emoji].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-emoji.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_emoji.EMOJI;
+    console.log( dataset() );
+</script>
+```
+
 The dataset bundle, `stdlib-datasets-img`, contains images.
 
 ```html
@@ -245,6 +256,10 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 | stdlib-datasets-cmudict.min.js | stdlib-datasets-cmudict.min.js.gz |
 | ------------------------------ | --------------------------------- |
 | 4.211 MB                       | 924.556 kB                        |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-emoji.min.js,stdlib-datasets-emoji.min.js.gz"> -->
 
 <!-- </bundle-stats> -->
 
@@ -374,6 +389,8 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 [@stdlib/datasets]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/cmudict]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/emoji]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/moby-dick]: https://github.com/stdlib-js/stdlib
 
