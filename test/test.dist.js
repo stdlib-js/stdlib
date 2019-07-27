@@ -66,6 +66,15 @@ tape( 'project contains a distributable file containing the CMU pronouncing dict
 	t.end();
 });
 
+tape( 'project contains a distributable file containing emoji datasets (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-emoji.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.EMOJI, 'function', 'is a function' );
+	t.equal( typeof bundle.EMOJI(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
 tape( 'project contains a distributable file containing images (minified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-datasets-img.min.js' ) );
@@ -143,7 +152,7 @@ tape( 'project contains a distributable file containing "flat" namespace help te
 	var bundle = require( join( dirpath, 'stdlib-flat-help.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.help, 'function', 'has member' );
-	t.equal( typeof bundle.help(), 'object', 'returns an object' );
+	t.equal( typeof bundle.help( 'base.sin' ), 'string', 'returns a string' );
 	t.end();
 });
 
