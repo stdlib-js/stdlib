@@ -176,6 +176,14 @@ which will expose the `stdlib` command. For example, to see available sub-comman
 $ stdlib help
 ```
 
+and to run the [REPL][@stdlib/repl]
+
+<!-- run-disable -->
+
+```bash
+$ stdlib repl
+```
+
 For distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
@@ -405,6 +413,8 @@ Test and build infrastructure is generously provided by the following services:
 [@stdlib/plot/ctor]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/plot/ctor
 
 [@stdlib/bench/harness]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/bench/harness
+
+[@stdlib/repl]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/repl
 
 </section>
 
