@@ -35,17 +35,6 @@ var COMMANDS = require( './cli_commands.json' );
 // FUNCTIONS //
 
 /**
-* Callback invoked upon encountering an error while running a command.
-*
-* @private
-* @param {Error} error - error object
-*/
-function onError( error ) {
-	process.exitCode = 1;
-	console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
-}
-
-/**
 * Returns command information.
 *
 * @private
@@ -153,6 +142,17 @@ function main() {
 	// Invoke the command in a sub-process:
 	proc = spawn( 'node', subargs, opts );
 	proc.on( 'error', onError );
+
+	/**
+	* Callback invoked upon encountering an error while running a command.
+	*
+	* @private
+	* @param {Error} error - error object
+	*/
+	function onError( error ) {
+		console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
+		cli.exit( 1 );
+	}
 }
 
 main();
