@@ -345,7 +345,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 #### Help
 
-The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in the flat namespace and exposes a single `function` which returns an `object` mapping aliases to help texts. While already included in the REPL bundle, this bundle is exposed separately in the event that one wants to independently consume help texts in other contexts.
+The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in the flat namespace and exposes a single `function` which returns help texts corresponding to namespace aliases. While already included in the REPL bundle, this bundle is exposed separately in the event that one wants to independently consume help texts in other contexts.
 
 ```html
 <script type="text/javascript" src="/path/to/stdlib-flat-help.min.js"></script>
@@ -354,7 +354,7 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
     var help = stdlib_flat_help.help;
 
     // Print the help docs:
-    console.log( help() );
+    console.log( help( 'base.sin' ) );
 </script>
 ```
 
