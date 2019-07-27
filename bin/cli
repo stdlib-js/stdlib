@@ -104,6 +104,9 @@ function main() {
 	flags = cli.flags();
 
 	// Extract the command:
+	if ( args.length === 0 ) {
+		return cli.help();
+	}
 	if ( args[ 0 ] === 'help' ) {
 		if ( args.length === 1 ) {
 			return cli.help();
