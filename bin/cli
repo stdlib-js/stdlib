@@ -102,8 +102,14 @@ function main() {
 
 	// Get any provided command-line options:
 	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
 
 	// Extract the command:
+	if ( args.length === 0 ) {
+		return cli.help();
+	}
 	if ( args[ 0 ] === 'help' ) {
 		if ( args.length === 1 ) {
 			return cli.help();
@@ -125,7 +131,12 @@ function main() {
 		keys = getKeys( flags );
 		for ( i = 0; i < keys.length; i++ ) {
 			key = keys[ i ];
-			if ( key === 'h' || key === 'help' || key === 'V' || key === 'version' ) { // eslint-disable-line max-len
+			if (
+				key === 'h' ||
+				key === 'help' ||
+				key === 'V' ||
+				key === 'version'
+			) {
 				continue;
 			}
 			subargs.push( '--'+keys[ i ]+'='+flags[ keys[ i ] ] );
