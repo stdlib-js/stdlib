@@ -104,9 +104,6 @@ function main() {
 	flags = cli.flags();
 
 	// Extract the command:
-	if ( args.length === 0 ) {
-		return cli.help();
-	}
 	if ( args[ 0 ] === 'help' ) {
 		if ( args.length === 1 ) {
 			return cli.help();
@@ -153,8 +150,8 @@ function main() {
 	* @param {Error} error - error object
 	*/
 	function onError( error ) {
+		process.exitCode = 1;
 		console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
-		cli.exit( 1 );
 	}
 }
 
