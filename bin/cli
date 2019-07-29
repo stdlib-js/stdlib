@@ -116,13 +116,13 @@ function main() {
 		}
 		cmd = findCommand( args[ 1 ] );
 		if ( cmd === null ) {
-			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
+			return cli.error( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 1 ] + '`.' ) );
 		}
 		subargs = [ getPath( cmd.path ), '--help' ];
 	} else {
 		cmd = findCommand( args[ 0 ] );
 		if ( cmd === null ) {
-			return onError( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
+			return cli.error( new Error( 'invalid argument. Unrecognized/unsupported command. Value: `' + args[ 0 ] + '`.' ) );
 		}
 		subargs = [ getPath( cmd.path ) ];
 		for ( i = 1; i < args.length; i++ ) {
@@ -161,8 +161,7 @@ function main() {
 	* @param {Error} error - error object
 	*/
 	function onError( error ) {
-		process.exitCode = 1;
-		console.error( 'Error: %s', error.message ); // eslint-disable-line no-console
+		cli.error( error );
 	}
 }
 
