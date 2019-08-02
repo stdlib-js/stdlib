@@ -1,0 +1,25 @@
+
+isWorkspace( name )
+    Returns a boolean indicating whether a specified workspace exists.
+
+    Parameters
+    ----------
+    name: string|RegExp
+        Workspace name or a regular expression.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a workspace exists.
+
+    Examples
+    --------
+    > isWorkspace( 'base' )
+    true
+    > isWorkspace( /^presentation/ )
+    <boolean>
+
+    See Also
+    --------
+    workspace, workspaces
+
