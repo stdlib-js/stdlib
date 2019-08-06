@@ -109,7 +109,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 13.174 MB      | 2.559 MB           | 488.571 kB            |
+| 13.168 MB      | 2.554 MB           | 478.996 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -117,13 +117,13 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 13.201 MB      | 2.579 MB           | 489.483 kB            |
+| 13.195 MB      | 2.573 MB           | 479.918 kB            |
 
 <!-- </bundle-stats> -->
 
 #### Base Special Mathematical Functions
 
-The specialized bundle, `stdlib-math-base-special`, contains low-level special mathematical functions and exposes them as a `flat` namespace. These functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
+The specialized bundle, `stdlib-math-base-special-flat`, contains low-level special mathematical functions and exposes them as a `flat` namespace. These functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
 
 ```html
 <script type="text/javascript" src="/path/to/stdlib-math-base-special-flat.min.js"></script>
@@ -138,11 +138,15 @@ The specialized bundle, `stdlib-math-base-special`, contains low-level special m
 
 <!-- <bundle-stats files="stdlib-math-base-special-flat.min.js,stdlib-math-base-special-flat.min.js.gz"> -->
 
+| stdlib-math-base-special-flat.min.js | stdlib-math-base-special-flat.min.js.gz |
+| ------------------------------------ | --------------------------------------- |
+| 174.823 kB                           | 65.088 kB                               |
+
 <!-- </bundle-stats> -->
 
 #### Base Statistical Distributions
 
-The specialized bundle, `stdlib-stats-base-dists`, contains low-level statistical distribution functions and exposes them as a `flat` namespace. These functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
+The specialized bundle, `stdlib-stats-base-dists-flat`, contains low-level statistical distribution functions and exposes them as a `flat` namespace. These functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
 
 ```html
 <script type="text/javascript" src="/path/to/stdlib-stats-base-dists-flat.min.js"></script>
@@ -156,6 +160,10 @@ The specialized bundle, `stdlib-stats-base-dists`, contains low-level statistica
 ##### Bundle Statistics
 
 <!-- <bundle-stats files="stdlib-stats-base-dists-flat.min.js,stdlib-stats-base-dists-flat.min.js.gz"> -->
+
+| stdlib-stats-base-dists-flat.min.js | stdlib-stats-base-dists-flat.min.js.gz |
+| ----------------------------------- | -------------------------------------- |
+| 247.396 kB                          | 67.984 kB                              |
 
 <!-- </bundle-stats> -->
 
@@ -285,7 +293,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-tree-exclude.min.js | stdlib-datasets-tree-exclude.min.js.gz |
 | ----------------------------------- | -------------------------------------- |
-| 1.01 MB                             | 212.865 kB                             |
+| 1.01 MB                             | 212.893 kB                             |
 
 <!-- </bundle-stats> -->
 
@@ -293,7 +301,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-cmudict.min.js | stdlib-datasets-cmudict.min.js.gz |
 | ------------------------------ | --------------------------------- |
-| 4.211 MB                       | 924.556 kB                        |
+| 4.211 MB                       | 924.583 kB                        |
 
 <!-- </bundle-stats> -->
 
@@ -301,7 +309,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-emoji.min.js | stdlib-datasets-emoji.min.js.gz |
 | ---------------------------- | ------------------------------- |
-| 1.592 MB                     | 162.699 kB                      |
+| 1.592 MB                     | 162.727 kB                      |
 
 <!-- </bundle-stats> -->
 
@@ -317,7 +325,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-moby-dick.min.js | stdlib-datasets-moby-dick.min.js.gz |
 | -------------------------------- | ----------------------------------- |
-| 1.342 MB                         | 507.439 kB                          |
+| 1.342 MB                         | 507.467 kB                          |
 
 <!-- </bundle-stats> -->
 
@@ -341,7 +349,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js | stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js.gz |
 | ---------------------------------------------------------- | ------------------------------------------------------------- |
-| 1.716 MB                                                   | 115.018 kB                                                    |
+| 1.716 MB                                                   | 115.043 kB                                                    |
 
 <!-- </bundle-stats> -->
 
@@ -349,7 +357,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-suthaharan-single-hop-sensor-network.min.js | stdlib-datasets-suthaharan-single-hop-sensor-network.min.js.gz |
 | ----------------------------------------------------------- | -------------------------------------------------------------- |
-| 1.73 MB                                                     | 113.332 kB                                                     |
+| 1.73 MB                                                     | 113.358 kB                                                     |
 
 <!-- </bundle-stats> -->
 
@@ -377,7 +385,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 69.64 MB           | 18.122 MB             |
+| 69.638 MB          | 18.122 MB             |
 
 <!-- </bundle-stats> -->
 
