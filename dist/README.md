@@ -121,6 +121,44 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 <!-- </bundle-stats> -->
 
+#### Base Special Mathematical Functions
+
+The specialized bundle, `stdlib-math-base-special`, contains low-level special mathematical functions and exposes them as a `flat` namespace. These functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-math-base-special-flat.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var erf = stdlib_math_base_special_flat.base.erf;
+    console.log( erf( 0.5 ) );
+</script>
+```
+
+##### Bundle Statistics
+
+<!-- <bundle-stats files="stdlib-math-base-special-flat.min.js,stdlib-math-base-special-flat.min.js.gz"> -->
+
+<!-- </bundle-stats> -->
+
+#### Base Statistical Distributions
+
+The specialized bundle, `stdlib-stats-base-dists`, contains low-level statistical distribution functions and exposes them as a `flat` namespace. These functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-stats-base-dists-flat.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var pdf = stdlib_stats_base_dists.base.dists.normal.pdf;
+    console.log( pdf( 0.5 ) );
+</script>
+```
+
+##### Bundle Statistics
+
+<!-- <bundle-stats files="stdlib-stats-base-dists-flat.min.js,stdlib-stats-base-dists-flat.min.js.gz"> -->
+
+<!-- </bundle-stats> -->
+
 #### Datasets
 
 The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes them as a `tree` namespace. Unless an application depends on these datasets, they should **not** be sourced, and, if needed, consider bundling only those datasets which are necessary.
