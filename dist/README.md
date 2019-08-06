@@ -149,7 +149,7 @@ The specialized bundle, `stdlib-stats-base-dists`, contains low-level statistica
 <script type="text/javascript">
     // If no recognized module system present, exposed to global scope:
     var pdf = stdlib_stats_base_dists.base.dists.normal.pdf;
-    console.log( pdf( 0.5 ) );
+    console.log( pdf( 0.5, 0.0, 1.0 ) );
 </script>
 ```
 
