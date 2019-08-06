@@ -53,7 +53,7 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
     // `stdlib` is a global variable...
-    var erf = stdlib.erf;
+    var erf = stdlib.base.erf;
     console.log( erf( 0.5 ) );
 </script>
 ```
