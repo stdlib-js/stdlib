@@ -115,6 +115,9 @@ jobs:
 
       # Define variable sets which will be used to create separate jobs (one per variable set!):
       matrix:
+        node_v12:
+          NODE_VERSION: '12'
+          NPM_VERSION: '>2.7.0'
         node_v10:
           NODE_VERSION: '10'
           NPM_VERSION: '>2.7.0'
