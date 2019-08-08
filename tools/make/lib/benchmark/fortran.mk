@@ -16,6 +16,12 @@
 # limitations under the License.
 #/
 
+# VARIABLES #
+
+# Define the path to a script for compiling a Fortran benchmark:
+compile_fortran_benchmark_bin := $(TOOLS_DIR)/scripts/compile_fortran_benchmark
+
+
 # RULES #
 
 #/
@@ -40,10 +46,12 @@ benchmark-fortran:
 	$(QUIET) $(FIND_FORTRAN_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
-		cd `dirname $$file` && \
-		$(MAKE) clean && \
-		$(MAKE) && \
+		cd `dirname $$file` && $(MAKE) clean && \
+		OS="$(OS)" \
+		NODE="$(NODE)" \
+		NODE_PATH="$(NODE_PATH)" \
 		FORTRAN_COMPILER="$(FC)" \
+		"${compile_fortran_benchmark_bin}" $$file && \
 		$(MAKE) run || exit 1; \
 	done
 
@@ -68,10 +76,12 @@ benchmark-fortran-files:
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Running benchmark: $$file"; \
-		cd `dirname $$file` && \
-		$(MAKE) clean && \
-		$(MAKE) && \
+		cd `dirname $$file` && $(MAKE) clean && \
+		OS="$(OS)" \
+		NODE="$(NODE)" \
+		NODE_PATH="$(NODE_PATH)" \
 		FORTRAN_COMPILER="$(FC)" \
+		"${compile_fortran_benchmark_bin}" $$file && \
 		$(MAKE) run || exit 1; \
 	done
 
