@@ -136,11 +136,11 @@ The specialized bundle, `stdlib-math-base-special-flat`, contains low-level spec
 
 ##### Bundle Statistics
 
-<!-- <bundle-stats files="stdlib-math-base-special-flat.min.js,stdlib-math-base-special-flat.min.js.gz"> -->
+<!-- <bundle-stats files="stdlib-math-base-special-flat.js,stdlib-math-base-special-flat.min.js,stdlib-math-base-special-flat.min.js.gz"> -->
 
-| stdlib-math-base-special-flat.min.js | stdlib-math-base-special-flat.min.js.gz |
-| ------------------------------------ | --------------------------------------- |
-| 174.823 kB                           | 65.088 kB                               |
+| stdlib-math-base-special-flat.js | stdlib-math-base-special-flat.min.js | stdlib-math-base-special-flat.min.js.gz |
+| -------------------------------- | ------------------------------------ | --------------------------------------- |
+| 1.662 MB                         | 174.823 kB                           | 65.088 kB                               |
 
 <!-- </bundle-stats> -->
 
@@ -159,11 +159,11 @@ The specialized bundle, `stdlib-stats-base-dists-flat`, contains low-level stati
 
 ##### Bundle Statistics
 
-<!-- <bundle-stats files="stdlib-stats-base-dists-flat.min.js,stdlib-stats-base-dists-flat.min.js.gz"> -->
+<!-- <bundle-stats files="stdlib-stats-base-dists-flat.js,stdlib-stats-base-dists-flat.min.js,stdlib-stats-base-dists-flat.min.js.gz"> -->
 
-| stdlib-stats-base-dists-flat.min.js | stdlib-stats-base-dists-flat.min.js.gz |
-| ----------------------------------- | -------------------------------------- |
-| 247.396 kB                          | 67.984 kB                              |
+| stdlib-stats-base-dists-flat.js | stdlib-stats-base-dists-flat.min.js | stdlib-stats-base-dists-flat.min.js.gz |
+| ------------------------------- | ----------------------------------- | -------------------------------------- |
+| 3.255 MB                        | 247.396 kB                          | 67.984 kB                              |
 
 <!-- </bundle-stats> -->
 
