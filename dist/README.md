@@ -213,6 +213,17 @@ The dataset bundle, `stdlib-datasets-emoji`, contains [emoji datasets][@stdlib/d
 </script>
 ```
 
+The dataset bundle, `stdlib-datasets-fivethirtyeight-ffq`, contains _FiveThirtyEight_ [food frequency questionnaire response data][@stdlib/datasets/fivethirtyeight-ffq].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-fivethirtyeight-ffq.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_fivethirtyeight_ffq.FIVETHIRTYEIGHT_FFQ;
+    console.log( dataset() );
+</script>
+```
+
 The dataset bundle, `stdlib-datasets-img`, contains images.
 
 ```html
@@ -310,6 +321,10 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 | stdlib-datasets-emoji.min.js | stdlib-datasets-emoji.min.js.gz |
 | ---------------------------- | ------------------------------- |
 | 1.592 MB                     | 162.727 kB                      |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-fivethirtyeight-ffq.min.js,stdlib-datasets-fivethirtyeight-ffq.min.js.gz"> -->
 
 <!-- </bundle-stats> -->
 
@@ -441,6 +456,8 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 [@stdlib/datasets/cmudict]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/emoji]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/fivethirtyeight-ffq]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/moby-dick]: https://github.com/stdlib-js/stdlib
 
