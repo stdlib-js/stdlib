@@ -2285,6 +2285,17 @@
       "nurse"
     ]
   },
+  "https://en.wikipedia.org/wiki/Food_frequency_questionnaire": {
+    "id": "ffq",
+    "description": "Wikipedia entry for the food frequency questionnaire, a questionnaire used to obtain frequency and, in some cases, portion size information about food and beverage consumption over a specified period of time, typically the past month or year.",
+    "short_url": "",
+    "keywords": [
+      "ffq",
+      "food frequency",
+      "survey",
+      "questionnaire"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Fortran": {
     "id": "fortran",
     "description": "Wikipedia entry for Fortran, a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing.",
