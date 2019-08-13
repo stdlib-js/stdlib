@@ -3533,6 +3533,23 @@
       "javascript"
     ]
   },
+  "https://fivethirtyeight.com/features/you-cant-trust-what-you-read-about-nutrition/": {
+    "id": "fivethirtyeight-nutrition-studies",
+    "description": "FiveThirtyEight article which uses p-hacking to find spurious correlations in Food Frequency Questionnaire (FFQ) data.",
+    "short_url": "",
+    "keywords": [
+      "fivethirtyeight",
+      "538",
+      "p-hacking",
+      "data mining",
+      "correlation",
+      "causation",
+      "ffq",
+      "food frequency",
+      "nutrition",
+      "survey"
+    ]
+  },
   "https://git-scm.com/": {
     "id": "git",
     "description": "The official website for Git, a free and open-source distributed version control system.",
