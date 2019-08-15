@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Returns US birth data from 2000 to 2014, as provided by the Social Security
+    Administration.
+
+    Returns
+    -------
+    out: Array<Object>
+        Birth data.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, ... ]
+
+    See Also
+    --------
+

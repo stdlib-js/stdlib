@@ -1,0 +1,83 @@
+{
+  "name": "stdlib-datasets-ssa-us-births-2000-2014",
+  "version": "",
+  "title": "US Births (2000-2014)",
+  "description": "US birth data from 2000 to 2014.",
+  "resources": [
+    {
+      "name": "ssa-us-births-2000-2014-json",
+      "title": "US Births (2000-2014)",
+      "description": "US birth data from 2000 to 2014.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "ssa-us-births-2000-2014-csv",
+      "title": "US Births (2000-2014)",
+      "description": "US birth data from 2000 to 2014.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "title": "Year",
+            "description": "Year.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "month",
+            "title": "Month",
+            "description": "Month number, where January is denoted by `1`.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "date_of_month",
+            "title": "Date of Month",
+            "description": "Day number of the month.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "day_of_week",
+            "title": "Day of Week",
+            "description": "Day of week, where Monday is `1` and Sunday is `7`.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "births",
+            "title": "Births",
+            "description": "Number of births.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Social Security Administration",
+      "web": "https://www.ssa.gov/data/"
+    }
+  ],
+  "keywords": [
+    "us",
+    "usa",
+    "united states",
+    "ssa",
+    "births",
+    "timeseries",
+    "time-series"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
