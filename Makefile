@@ -143,6 +143,9 @@ TMP_FOLDER ?= tmp
 # Define the folder name convention for TypeScript declaration files:
 TYPESCRIPT_DECLARATIONS_FOLDER ?= $(DOCUMENTATION_FOLDER)/types
 
+# Define the folder name convention for REPL tutorial files:
+TUTORIALS_FOLDER ?= $(DOCUMENTATION_FOLDER)/tutorials
+
 # Define filename extension conventions (keep in alphabetical order):
 AWK_FILENAME_EXT ?= awk
 BASH_FILENAME_EXT ?= sh
