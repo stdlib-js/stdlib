@@ -1,0 +1,8 @@
+
+Usage: cdc-nchs-us-infant-mortality-bw-1915-2013 [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+
