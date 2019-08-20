@@ -208,7 +208,8 @@ DEPENDENCIES
 The library links against the following external libraries, which have their own
 licenses:
 
-* OpenBLAS <https://raw.githubusercontent.com/xianyi/OpenBLAS/def146efed8d5908ea04e22668feeab7099599a0/LICENSE>
+* OpenBLAS <https://raw.githubusercontent.com/xianyi/OpenBLAS/
+def146efed8d5908ea04e22668feeab7099599a0/LICENSE>
 
 Copyright (c) 2011-2014, The OpenBLAS Project
 All rights reserved.
@@ -234,15 +235,16 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
 ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
-USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-* Electron <https://raw.githubusercontent.com/electron/electron/c4cfb3e7110266b9d7ad80e1ae097c4db564501c/LICENSE>
+* Electron <https://raw.githubusercontent.com/electron/electron/
+c4cfb3e7110266b9d7ad80e1ae097c4db564501c/LICENSE>
 
 Copyright (c) 2013-2017 GitHub Inc.
 
@@ -297,7 +299,11 @@ DEALINGS IN THE SOFTWARE.
 
 Copyright (c) 1984-2000 Stephen L. Moshier
 
-Some software in this archive may be from the book _Methods and Programs for Mathematical Functions_ (Prentice-Hall or Simon & Schuster International, 1989) or from the Cephes Mathematical Library, a commercial product. In either event, it is copyrighted by the author. What you see here may be used freely but it comes with no support or guarantee.
+Some software in this archive may be from the book _Methods and Programs for
+Mathematical Functions_ (Prentice-Hall or Simon & Schuster International, 1989)
+or from the Cephes Mathematical Library, a commercial product. In either event,
+it is copyrighted by the author. What you see here may be used freely but it
+comes with no support or guarantee.
 
 Stephen L. Moshier
 moshier@na-net.ornl.gov
@@ -306,7 +312,8 @@ moshier@na-net.ornl.gov
 
 ATTRIBUTION
 
-The library contains implementations from the following external libraries, which have their own licenses:
+The library contains implementations from the following external libraries,
+which have their own licenses:
 
 * FreeBSD <https://svnweb.freebsd.org/>
 
@@ -387,7 +394,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-* StatsFuns.jl <https://raw.githubusercontent.com/JuliaStats/StatsFuns.jl/e66dd973650c375bc1739c820e5b96bb5bd000a8/LICENSE.md>
+* StatsFuns.jl <https://raw.githubusercontent.com/JuliaStats/StatsFuns.jl/
+e66dd973650c375bc1739c820e5b96bb5bd000a8/LICENSE.md>
 
 Copyright (c) 2015: Dahua Lin.
 
@@ -411,7 +419,8 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-* SpecialFunctions.jl <https://raw.githubusercontent.com/JuliaMath/SpecialFunctions.jl/02a173fbe24a61c4b392aec17a9764ac5727feb1/LICENSE>
+* SpecialFunctions.jl <https://raw.githubusercontent.com/JuliaMath/
+SpecialFunctions.jl/02a173fbe24a61c4b392aec17a9764ac5727feb1/LICENSE>
 
 The MIT License (MIT)
 
@@ -438,7 +447,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-* MT19937 <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c>
+* MT19937 <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/
+mt19937ar.c>
 
 Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura,
 All rights reserved.
@@ -461,11 +471,11 @@ are met:
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
 LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
