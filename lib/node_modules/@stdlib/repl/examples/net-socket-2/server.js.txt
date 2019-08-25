@@ -1,0 +1,86 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+var net = require( 'net' );
+var passThrough = require( '@stdlib/streams/node/transform' );
+var stdout = require( '@stdlib/streams/node/stdout' );
+var objectKeys = require( '@stdlib/utils/keys' );
+var REPL = require( './../../lib' );
+
+// Define a counter for keeping track of connections:
+var connections = 0;
+
+// Initialize a socket database:
+var sockets = {};
+
+// Create a pass through stream which pipes to `stdout` as one of its destinations:
+var ostream = passThrough();
+ostream.pipe( stdout );
+
+// Define REPL options, leveraging the fact that a socket connection is a duplex stream:
+var opts = {
+	'output': ostream,
+	'isTTY': true
+};
+
+// Create a new REPL instance:
+var repl = new REPL( opts );
+
+// Listen for when the REPL exits:
+repl.on( 'exit', onExit );
+
+function onExit() {
+	var keys;
+	var key;
+	var i;
+
+	// When a REPL exits, we can close all currently open sockets...
+	keys = objectKeys( sockets );
+	for ( i = 0; i < keys.length; i++ ) {
+		key = keys[ i ];
+		ostream.unpipe( socket );
+		sockets[ key ].end();
+		delete sockets[ key ];
+	}
+}
+
+// Create a new TCP server:
+var server = net.createServer( onSocket );
+
+// Start listening for TCP connections:
+server.listen( 1337 );
+
+function onSocket( socket ) {
+	var id;
+
+	connections += 1;
+	id = connections;
+
+	sockets[ id ] = socket;
+	socket.on( 'end', onEnd );
+
+	// Start streaming REPL data to the socket:
+	ostream.pipe( socket );
+
+	function onEnd() {
+		delete sockets[ id ];
+		ostream.unpipe( socket );
+	}
+}
