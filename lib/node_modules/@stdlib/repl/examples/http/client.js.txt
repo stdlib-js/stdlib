@@ -1,0 +1,55 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+var http = require( 'http' );
+var string2buffer = require( '@stdlib/buffer/from-string' );
+var stdout = require( '@stdlib/streams/node/stdout' );
+
+// Define the command we want to execute:
+var cmd = string2buffer( 'var x = base.sin( 3.14 ); var y = base.cos( x )' );
+
+// Define request options:
+var ropts = {
+	'protocol': 'http:',
+	'host': 'localhost',
+	'port': 7334,         // NOTE: this will need to be adjusted based on server port
+	'method': 'POST',
+	'headers': {
+		'Content-Length': cmd.byteLength
+	}
+};
+
+// Create a new HTTP request and send the command:
+var req = http.request( ropts, onResponse );
+req.on( 'error', onError );
+req.write( cmd );
+req.end();
+
+function onError( error ) {
+	console.error( 'Error: %s', error.message );
+}
+
+function onResponse( res ) {
+	if ( res.statusCode !== 200 ) {
+		console.error( 'Something went wrong.' );
+		return;
+	}
+	res.pipe( stdout );
+}

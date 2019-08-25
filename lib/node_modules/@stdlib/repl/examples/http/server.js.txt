@@ -1,0 +1,86 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+var httpServer = require( '@stdlib/net/http-server' );
+var passThrough = require( '@stdlib/streams/node/transform' );
+var REPL = require( './../../lib' );
+
+// Define server options:
+var sopts = {
+	'port': 7331,
+	'maxport': 9999,
+	'hostname': 'localhost'
+};
+
+// Create a function for creating an HTTP server:
+var createServer = httpServer( sopts, onRequest );
+
+// Start the HTTP server:
+createServer( done );
+
+function done( error, server ) {
+	var addr;
+	if ( error ) {
+		throw error;
+	}
+	// Log the server address so we know on what port we are listening:
+	addr = server.address();
+	console.log( 'Address: %s:%d', addr.address, addr.port );
+}
+
+function onRequest( req, res ) {
+	var istream;
+	var ostream;
+	var ropts;
+	var repl;
+
+	res.setHeader( 'content-type', 'multipart/octet-stream' );
+
+	// Define "pass through" transform streams for handling request and response data:
+	istream = passThrough();
+	ostream = passThrough();
+
+	// Setup the data flow:
+	req.pipe( istream );
+	ostream.pipe( res );
+
+	// Define the REPL options, resetting the welcome message and prompts so that we only stream the evaluated results:
+	ropts = {
+		'input': istream,
+		'output': ostream,
+		'global': true,
+		'welcome': '',
+		'inputPrompt': '',
+		'outputPrompt': '',
+		'padding': 0
+	};
+
+	// Create a new REPL instance:
+	repl = new REPL( ropts );
+
+	// Listen for when the REPL has "drained" its command queue:
+	repl.once( 'drain', onDrain );
+
+	function onDrain() {
+		// Once the REPL drains, we've finished executing commands, so we can end the response and close the REPL:
+		res.end();
+		repl.close();
+	}
+}
