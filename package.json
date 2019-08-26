@@ -27,6 +27,7 @@
   },
   "scripts": {
     "prepublishOnly": "node ./tools/scripts/prepublish",
+    "postpublish": "node ./tools/scripts/postpublish",
     "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
