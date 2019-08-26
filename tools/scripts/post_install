@@ -1,0 +1,76 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var path = require( 'path' );
+var fs = require( 'fs' );
+var logger = require( 'debug' );
+
+
+// VARIABLES //
+
+var debug = logger( 'stdlib:post-install' );
+
+// Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
+var ROOT_DIR = path.resolve( __dirname, '..', '..' );
+
+// Resolve the project package directory:
+var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+*/
+function main() {
+	var list;
+	var odir;
+	var ndir;
+	var i;
+
+	debug( 'Root directory: %s', ROOT_DIR );
+	debug( 'Package directory: %s', PKG_DIR );
+
+	// Rename the `tools` directory, as this conflicts with a project namespace:
+	debug( 'Renaming `tools` directory...' );
+	odir = join( ROOT_DIR, 'tools' );
+	ndir = join( ROOT_DIR, '__tools__' );
+	fs.renameSync( odir, ndir );
+
+	debug( 'Reading package directory...' );
+	list = fs.readdirSync( PKG_DIR );
+
+	debug( 'Moving package directory contents to root directory...' );
+	for ( i = 0; i < list.length; i++ ) {
+		debug( 'Moving `%s`...', list[ i ] );
+		odir = join( PKG_DIR, list[ i ] );
+		ndir = join( ROOT_DIR, list[ i ] );
+		fs.renameSync( odir, ndir );
+	}
+	debug( 'Finished moving package directory contents.' );
+}
+
+main();
