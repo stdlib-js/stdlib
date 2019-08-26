@@ -18,6 +18,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable no-sync */
+
 'use strict';
 
 // MODULES //
@@ -37,6 +39,9 @@ var ROOT_DIR = path.resolve( __dirname, '..', '..' );
 // Resolve the project package directory:
 var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 
+// Define an output file path for storing post-install meta data:
+var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
+
 
 // MAIN //
 
@@ -46,9 +51,11 @@ var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 * @private
 */
 function main() {
+	var opts;
 	var list;
 	var odir;
 	var ndir;
+	var out;
 	var i;
 
 	debug( 'Root directory: %s', ROOT_DIR );
@@ -59,6 +66,7 @@ function main() {
 	odir = path.join( ROOT_DIR, 'tools' );
 	ndir = path.join( ROOT_DIR, '__tools__' );
 	fs.renameSync( odir, ndir );
+	out.push( [ odir, ndir ] );
 
 	debug( 'Reading package directory...' );
 	list = fs.readdirSync( PKG_DIR );
@@ -69,8 +77,16 @@ function main() {
 		odir = path.join( PKG_DIR, list[ i ] );
 		ndir = path.join( ROOT_DIR, list[ i ] );
 		fs.renameSync( odir, ndir );
+		out.push( [ odir, ndir ] );
 	}
 	debug( 'Finished moving package directory contents.' );
+
+	debug( 'Saving changes...' );
+	opts = {
+		'encoding': 'utf8'
+	};
+	fs.writeFileSync( OUTPUT_FILE, JSON.stringify( out )+'\n', opts );
+	debug( 'Finished saving changes.' );
 }
 
 main();
