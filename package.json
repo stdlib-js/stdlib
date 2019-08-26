@@ -26,7 +26,6 @@
     "test": "./test"
   },
   "scripts": {
-    "postinstall": "node ./tools/scripts/post_install",
     "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
