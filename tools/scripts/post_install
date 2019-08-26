@@ -56,8 +56,8 @@ function main() {
 
 	// Rename the `tools` directory, as this conflicts with a project namespace:
 	debug( 'Renaming `tools` directory...' );
-	odir = join( ROOT_DIR, 'tools' );
-	ndir = join( ROOT_DIR, '__tools__' );
+	odir = path.join( ROOT_DIR, 'tools' );
+	ndir = path.join( ROOT_DIR, '__tools__' );
 	fs.renameSync( odir, ndir );
 
 	debug( 'Reading package directory...' );
@@ -66,8 +66,8 @@ function main() {
 	debug( 'Moving package directory contents to root directory...' );
 	for ( i = 0; i < list.length; i++ ) {
 		debug( 'Moving `%s`...', list[ i ] );
-		odir = join( PKG_DIR, list[ i ] );
-		ndir = join( ROOT_DIR, list[ i ] );
+		odir = path.join( PKG_DIR, list[ i ] );
+		ndir = path.join( ROOT_DIR, list[ i ] );
 		fs.renameSync( odir, ndir );
 	}
 	debug( 'Finished moving package directory contents.' );
