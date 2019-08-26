@@ -61,6 +61,8 @@ function main() {
 	debug( 'Root directory: %s', ROOT_DIR );
 	debug( 'Package directory: %s', PKG_DIR );
 
+	out = [];
+
 	// Rename the `tools` directory, as this conflicts with a project namespace:
 	debug( 'Renaming `tools` directory...' );
 	odir = path.join( ROOT_DIR, 'tools' );
