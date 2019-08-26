@@ -31,7 +31,7 @@ var logger = require( 'debug' );
 
 // VARIABLES //
 
-var debug = logger( 'stdlib:post-install' );
+var debug = logger( 'stdlib:pre-publish' );
 
 // Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
 var ROOT_DIR = path.resolve( __dirname, '..', '..' );
@@ -39,8 +39,8 @@ var ROOT_DIR = path.resolve( __dirname, '..', '..' );
 // Resolve the project package directory:
 var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 
-// Define an output file path for storing post-install meta data:
-var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
+// Define an output file path for storing pre-publish meta data:
+var OUTPUT_FILE = path.join( ROOT_DIR, '.prepublish.json' );
 
 
 // MAIN //
