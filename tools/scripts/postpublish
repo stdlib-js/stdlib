@@ -1,0 +1,74 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* eslint-disable no-sync */
+
+'use strict';
+
+// MODULES //
+
+var path = require( 'path' );
+var fs = require( 'fs' );
+var logger = require( 'debug' );
+
+
+// VARIABLES //
+
+var debug = logger( 'stdlib:post-publish' );
+
+// Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
+var ROOT_DIR = path.resolve( __dirname, '..', '..' );
+
+// Resolve the project package directory:
+var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
+
+// Resolve the pre-publish meta data file:
+var PRE_PUBLISH_FILE = path.join( ROOT_DIR, '.prepublish.json' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+*/
+function main() {
+	var paths;
+	var odir;
+	var ndir;
+	var i;
+
+	debug( 'Root directory: %s', ROOT_DIR );
+	debug( 'Package directory: %s', PKG_DIR );
+
+	debug( 'Reading pre-publish meta data...' );
+	paths = require( PRE_PUBLISH_FILE ); // eslint-disable-line no-dynamic-require
+
+	debug( 'Reverting pre-publish changes...' );
+	for ( i = 0; i < paths.length; i++ ) {
+		odir = paths[ i ][ 0 ];
+		ndir = paths[ i ][ 1 ];
+
+		debug( 'Moving `%s`...', ndir );
+		fs.renameSync( ndir, odir );
+	}
+	debug( 'Finished reverting changes.' );
+}
+
+main();
