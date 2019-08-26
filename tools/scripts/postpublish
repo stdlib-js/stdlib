@@ -61,7 +61,7 @@ function main() {
 	paths = require( PRE_PUBLISH_FILE ); // eslint-disable-line no-dynamic-require
 
 	debug( 'Reverting pre-publish changes...' );
-	for ( i = 0; i < paths.length; i++ ) {
+	for ( i = paths.length-1; i >= 0; i-- ) {
 		odir = paths[ i ][ 0 ];
 		ndir = paths[ i ][ 1 ];
 
