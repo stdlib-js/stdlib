@@ -31,6 +31,7 @@ lib/node_modules/**/node_modules/
 docs/**/node_modules/
 reports/
 tmp/
+/__tools__/
 
 # Compiled source #
 ###################
