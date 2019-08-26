@@ -18,6 +18,7 @@
 
 # Files #
 #########
+.prepublish.json
 lib/node_modules/**/tsconfig.json
 lib/node_modules/**/tslint.json
 
