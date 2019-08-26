@@ -26,6 +26,7 @@
     "test": "./test"
   },
   "scripts": {
+    "prepublishOnly": "node ./tools/scripts/prepublish",
     "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
