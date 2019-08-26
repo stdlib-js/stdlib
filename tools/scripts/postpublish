@@ -60,6 +60,7 @@ function main() {
 	debug( 'Reading pre-publish meta data...' );
 	paths = require( PRE_PUBLISH_FILE ); // eslint-disable-line no-dynamic-require
 
+	// WARNING: order matters here as we want the `__tools__` directory to be reverted last (which assumes that, during pre-publish, the directory was the first change!)!!!
 	debug( 'Reverting pre-publish changes...' );
 	for ( i = paths.length-1; i >= 0; i-- ) {
 		odir = paths[ i ][ 0 ];
