@@ -69,7 +69,7 @@ function main() {
 
 	debug( 'Checking execution context...' );
 	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
-		debug( 'Detected non-node_modules dependency context. Aborting post-install execution...' );
+		debug( 'Detected non-node_modules dependency context. Aborting script execution...' );
 		return;
 	}
 	debug( 'Detected node_modules dependency context.' );
