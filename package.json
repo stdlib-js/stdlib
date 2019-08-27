@@ -26,8 +26,8 @@
     "test": "./test"
   },
   "scripts": {
-    "prepublishOnly": "node ./tools/scripts/prepublish",
-    "postpublish": "node ./__tools__/scripts/postpublish",
+    "postinstall": "node ./tools/scripts/postinstall",
+    "preuninstall": "node ./tools/scripts/preuninstall",
     "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
