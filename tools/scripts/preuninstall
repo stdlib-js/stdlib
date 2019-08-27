@@ -38,7 +38,7 @@ var ROOT_DIR = path.resolve( __dirname, '..', '..' );
 var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 
 // Resolve the post-install meta data file:
-var POST_INSTALL_FILE = path.join( ROOT_DIR, '.postinstall.json' );
+var META_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 
 
 // MAIN //
@@ -58,7 +58,7 @@ function main() {
 	debug( 'Package directory: %s', PKG_DIR );
 
 	debug( 'Reading meta data...' );
-	paths = require( POST_INSTALL_FILE ); // eslint-disable-line no-dynamic-require
+	paths = require( META_FILE ); // eslint-disable-line no-dynamic-require
 
 	debug( 'Reverting changes...' );
 	for ( i = 0; i < paths.length; i++ ) {
