@@ -1,0 +1,110 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* eslint-disable no-sync */
+
+'use strict';
+
+// MODULES //
+
+var path = require( 'path' );
+var fs = require( 'fs' );
+var logger = require( 'debug' );
+
+
+// VARIABLES //
+
+var debug = logger( 'stdlib:post-install' );
+
+// Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
+var ROOT_DIR = path.resolve( __dirname, '..', '..' );
+
+// Resolve the project package directory:
+var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
+
+// Resolve the destination directory:
+var DEST_DIR = path.resolve( ROOT_DIR, '..' );
+
+// Define an output file path for storing post-install meta data:
+var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
+
+// Regular expression to detect whether this script is being executed after this package was installed as a node_modules dependency:
+var RE_SCRIPT_CONTEXT = /node_modules\/@stdlib\/stdlib/;
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var stats;
+	var opts;
+	var list;
+	var odir;
+	var ndir;
+	var out;
+	var f;
+	var i;
+
+	debug( 'Checking execution context...' );
+	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
+		debug( 'Detected non-node_modules dependency context. Aborting post-install execution...' );
+		return;
+	}
+	debug( 'Detected node_modules dependency context.' );
+
+	debug( 'Root directory: %s', ROOT_DIR );
+	debug( 'Package directory: %s', PKG_DIR );
+	debug( 'Destination directory: %s', DEST_DIR );
+
+	out = [];
+
+	debug( 'Reading package directory...' );
+	list = fs.readdirSync( PKG_DIR );
+
+	debug( 'Moving package directory contents...' );
+	for ( i = 0; i < list.length; i++ ) {
+		f = list[ i ];
+		odir = path.join( PKG_DIR, f);
+		stats = fs.statSync( odir );
+		if ( stats.isDirectory() === false ) {
+			debug( 'Found a non-directory: %s. Skipping...', f );
+			continue;
+		}
+		debug( 'Moving `%s`...', f );
+		ndir = path.join( DEST_DIR, f );
+		fs.renameSync( odir, ndir );
+		out.push( [ odir, ndir ] );
+	}
+	debug( 'Finished moving package directory contents.' );
+
+	debug( 'Saving changes...' );
+	opts = {
+		'encoding': 'utf8'
+	};
+	fs.writeFileSync( OUTPUT_FILE, JSON.stringify( out )+'\n', opts );
+	debug( 'Finished saving changes.' );
+}
+
+main();

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
 * @license Apache-2.0
 *
@@ -31,7 +29,7 @@ var logger = require( 'debug' );
 
 // VARIABLES //
 
-var debug = logger( 'stdlib:pre-publish' );
+var debug = logger( 'stdlib:pre-uninstall' );
 
 // Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
 var ROOT_DIR = path.resolve( __dirname, '..', '..' );
@@ -39,8 +37,8 @@ var ROOT_DIR = path.resolve( __dirname, '..', '..' );
 // Resolve the project package directory:
 var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 
-// Define an output file path for storing pre-publish meta data:
-var OUTPUT_FILE = path.join( ROOT_DIR, '.prepublish.json' );
+// Resolve the post-install meta data file:
+var POST_INSTALL_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 
 
 // MAIN //
@@ -51,44 +49,26 @@ var OUTPUT_FILE = path.join( ROOT_DIR, '.prepublish.json' );
 * @private
 */
 function main() {
-	var opts;
-	var list;
+	var paths;
 	var odir;
 	var ndir;
-	var out;
 	var i;
 
 	debug( 'Root directory: %s', ROOT_DIR );
 	debug( 'Package directory: %s', PKG_DIR );
 
-	out = [];
+	debug( 'Reading meta data...' );
+	paths = require( POST_INSTALL_FILE ); // eslint-disable-line no-dynamic-require
 
-	// Rename the `tools` directory, as this conflicts with a project namespace:
-	debug( 'Renaming `tools` directory...' );
-	odir = path.join( ROOT_DIR, 'tools' );
-	ndir = path.join( ROOT_DIR, '__tools__' );
-	fs.renameSync( odir, ndir );
-	out.push( [ odir, ndir ] );
+	debug( 'Reverting changes...' );
+	for ( i = 0; i < paths.length; i++ ) {
+		odir = paths[ i ][ 0 ];
+		ndir = paths[ i ][ 1 ];
 
-	debug( 'Reading package directory...' );
-	list = fs.readdirSync( PKG_DIR );
-
-	debug( 'Moving package directory contents to root directory...' );
-	for ( i = 0; i < list.length; i++ ) {
-		debug( 'Moving `%s`...', list[ i ] );
-		odir = path.join( PKG_DIR, list[ i ] );
-		ndir = path.join( ROOT_DIR, list[ i ] );
-		fs.renameSync( odir, ndir );
-		out.push( [ odir, ndir ] );
+		debug( 'Moving `%s`...', ndir );
+		fs.renameSync( ndir, odir );
 	}
-	debug( 'Finished moving package directory contents.' );
-
-	debug( 'Saving changes...' );
-	opts = {
-		'encoding': 'utf8'
-	};
-	fs.writeFileSync( OUTPUT_FILE, JSON.stringify( out )+'\n', opts );
-	debug( 'Finished saving changes.' );
+	debug( 'Finished reverting changes.' );
 }
 
 main();
