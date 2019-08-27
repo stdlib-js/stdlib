@@ -18,7 +18,7 @@
 
 # Files #
 #########
-.prepublish.json
+.postinstall.json
 lib/node_modules/**/tsconfig.json
 lib/node_modules/**/tslint.json
 
@@ -31,7 +31,6 @@ lib/node_modules/**/node_modules/
 docs/**/node_modules/
 reports/
 tmp/
-/__tools__/
 
 # Compiled source #
 ###################

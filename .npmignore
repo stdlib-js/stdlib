@@ -41,7 +41,6 @@ workshops/
 # Only top-level directories:
 /etc/
 /tools/
-/__tools__/
 /docs/
 
 
