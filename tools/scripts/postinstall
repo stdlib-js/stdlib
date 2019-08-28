@@ -33,6 +33,9 @@ var logger = require( 'debug' );
 
 var debug = logger( 'stdlib:post-install' );
 
+// Define the folder name for storing node_modules dependencies:
+var NODE_MODULES = 'node_modules;'
+
 // Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
 var ROOT_DIR = path.resolve( __dirname, '..', '..' );
 
@@ -79,6 +82,15 @@ function main() {
 	debug( 'Destination directory: %s', DEST_DIR );
 
 	out = [];
+
+	debug( 'Checking for root node_modules...' );
+	odir = path.join( ROOT_DIR, NODE_MODULES );
+	if ( fs.existsSync( odir ) ) {
+		debug( 'Detected root node_modules. Moving...' );
+		ndir = path.join( DEST_DIR, NODE_MODULES );
+		fs.renameSync( odir, ndir );
+		out.push( [ odir, ndir ] );
+	}
 
 	debug( 'Reading package directory...' );
 	list = fs.readdirSync( PKG_DIR );
