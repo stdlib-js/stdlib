@@ -46,7 +46,7 @@ var DEST_DIR = path.resolve( ROOT_DIR, '..' );
 var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 
 // Regular expression to detect whether this script is being executed after this package was installed as a node_modules dependency:
-var RE_SCRIPT_CONTEXT = /\/node_modules\/@stdlib\/stdlib\//;
+var RE_SCRIPT_CONTEXT = /[\\\/]node_modules[\\\/]@stdlib[\\\/]stdlib[\\\/]/;
 
 
 // MAIN //
