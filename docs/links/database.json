@@ -4341,6 +4341,17 @@
       "editor"
     ]
   },
+  "https://www.typescriptlang.org/": {
+    "id": "typescript",
+    "description": "Typescript language homepage.",
+    "short_url": "",
+    "keywords": [
+      "typescript",
+      "ts",
+      "docs",
+      "documentation"
+    ]
+  },
   "https://www.w3.org/Graphics/SVG/": {
     "id": "svg",
     "description": "The site of the official W3C SVG working group.",
