@@ -3616,6 +3616,20 @@
       "dom"
     ]
   },
+  "https://github.com/Microsoft/TypeScript-Sublime-Plugin": {
+    "id": "sublime-text-typescript",
+    "description": "Sublime Text package which provides an IO wrapper around TypeScript language services.",
+    "short_url": "",
+    "keywords": [
+      "sublime text",
+      "st3",
+      "editor",
+      "typescript",
+      "ts",
+      "syntax",
+      "highlighting"
+    ]
+  },
   "https://github.com/Microsoft/dtslint": {
     "id": "dtslint",
     "description": "GitHub repository for dtslint, a utility for testing TypeScript definition files for style and correctness.",
