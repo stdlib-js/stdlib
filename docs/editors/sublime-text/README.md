@@ -67,6 +67,8 @@ $ subl .
 
 -   [**Fortran**][sublime-text-fortran]: package which provides syntax highlighting for [Fortran][fortran]. Once installed, configure [Sublime Text][sublime-text] to always open files having the file extension `*.f` as `Fortran (modern)`.
 
+-   [**TypeScript**][sublime-text-typescript]: package which provides an IO wrapper around [TypeScript][typescript] language services.
+
 -   [**MarkdownEditing**][sublime-text-markdownediting]: package which provides syntax highlighting (including for fenced code blocks) and editing features for Markdown. Once installed, configure the package settings as follows:
 
     ```text
@@ -213,6 +215,8 @@ $ subl .
 
 [sublime-text-fortran]: https://github.com/315234/SublimeFortran
 
+[sublime-text-typescript]: https://github.com/Microsoft/TypeScript-Sublime-Plugin
+
 [git]: https://git-scm.com/
 
 [eslint]: http://eslint.org/
@@ -228,6 +232,8 @@ $ subl .
 [awk]: https://en.wikipedia.org/wiki/AWK
 
 [fortran]: https://en.wikipedia.org/wiki/Fortran
+
+[typescript]: https://www.typescriptlang.org/
 
 </section>
 
