@@ -184,7 +184,7 @@ function main() {
 			out.push( [ 'link', odir, ndir ] );
 		}
 	}
-	debug( 'Finished moving package directory contents.' );
+	debug( 'Finished post-install sequence.' );
 
 	debug( 'Saving changes...' );
 	opts = {
