@@ -60,7 +60,7 @@ function main() {
 	debug( 'Package directory: %s', PKG_DIR );
 
 	debug( 'Reading meta data...' );
-	paths = require( META_FILE ); // eslint-disable-line no-dynamic-require
+	paths = require( META_FILE ); // eslint-disable-line stdlib/no-dynamic-require
 
 	debug( 'Reverting changes...' );
 	for ( i = 0; i < paths.length; i++ ) {
