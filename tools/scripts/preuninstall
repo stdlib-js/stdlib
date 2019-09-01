@@ -54,6 +54,7 @@ function main() {
 	var meta;
 	var odir;
 	var ndir;
+	var p;
 	var i;
 
 	debug( 'Root directory: %s', ROOT_DIR );
@@ -69,6 +70,13 @@ function main() {
 
 		debug( 'Moving `%s`...', ndir );
 		fs.renameSync( ndir, odir );
+	}
+	// Delete files after moving, which is based on the assumption that we created (and logged) before performing any moves...
+	for ( i = 0; i < meta.created.length; i++ ) {
+		p = meta.created[ i ];
+
+		debug( 'Deleting `%s`...', p );
+		fs.unlinkSync( p );
 	}
 	debug( 'Finished reverting changes.' );
 }
