@@ -118,7 +118,23 @@ function main() {
 						odir = meta[ i ][ 1 ];
 
 						debug( 'Moving: %s...', path.basename( odir ) );
-						fs.linkSync( odir, ndir );
+						try { // eslint-disable-line max-depth
+							fs.linkSync( odir, ndir );
+						} catch ( error ) {
+							debug( 'Error: %s', error.message );
+							fs.renameSync( odir, ndir );
+						}
+					}
+				} else if ( action === 'move' ) {
+					ndir = meta[ i ][ 2 ];
+					if ( fs.existsSync( ndir ) ) {
+						debug( 'Directory exists: %s', ndir );
+					} else {
+						FLG = true;
+						odir = meta[ i ][ 1 ];
+
+						debug( 'Moving: %s...', path.basename( odir ) );
+						fs.renameSync( odir, ndir );
 					}
 				}
 			}
@@ -156,8 +172,14 @@ function main() {
 			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
-			fs.linkSync( odir, ndir );
-			out.push( [ 'link', odir, ndir ] );
+			try {
+				fs.linkSync( odir, ndir );
+				out.push( [ 'link', odir, ndir ] );
+			} catch ( error ) {
+				debug( 'Error: %s', error.message );
+				fs.renameSync( odir, ndir );
+				out.push( [ 'move', odir, ndir ] );
+			}
 		}
 	} else {
 		debug( 'Creating root node_modules directory...' );
@@ -171,8 +193,14 @@ function main() {
 			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
-			fs.linkSync( odir, ndir );
-			out.push( [ 'link', odir, ndir ] );
+			try {
+				fs.linkSync( odir, ndir );
+				out.push( [ 'link', odir, ndir ] );
+			} catch ( error ) {
+				debug( 'Error: %s', error.message );
+				fs.renameSync( odir, ndir );
+				out.push( [ 'move', odir, ndir ] );
+			}
 		}
 	}
 
@@ -213,8 +241,14 @@ function main() {
 			console.warn( 'WARNING: package conflict. Package directory already exists: %s.', f );
 		} else {
 			debug( 'Moving: %s...', f );
-			fs.linkSync( odir, ndir );
-			out.push( [ 'link', odir, ndir ] );
+			try {
+				fs.linkSync( odir, ndir );
+				out.push( [ 'link', odir, ndir ] );
+			} catch ( error ) {
+				debug( 'Error: %s', error.message );
+				fs.renameSync( odir, ndir );
+				out.push( [ 'move', odir, ndir ] );
+			}
 		}
 	}
 	debug( 'Finished post-install sequence.' );
