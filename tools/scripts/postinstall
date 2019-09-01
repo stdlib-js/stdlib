@@ -57,6 +57,16 @@ var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 // Regular expression to detect whether this script is being executed after this package was installed as a node_modules dependency:
 var RE_SCRIPT_CONTEXT = /[\\/]node_modules[\\/]@stdlib[\\/]stdlib[\\/]/;
 
+// Define the lifecycle hook script:
+var LIFECYCLE_HOOK = [
+	'#!/usr/bin/env node',
+	'',
+	'\'use strict\';',
+	'',
+	'require( \''+PKG_SCRIPT_PATH+'\' );',
+	''
+].join( '\n' );
+
 
 // MAIN //
 
@@ -75,7 +85,6 @@ function main() {
 	var ndir;
 	var meta;
 	var out;
-	var str;
 	var FLG;
 	var p;
 	var f;
@@ -148,14 +157,19 @@ function main() {
 
 		// NOTE: we add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
 		debug( 'Checking for a post-install lifecycle hook...' );
-		p = path.join( odir, '.hooks', 'postinstall' );
+		ndir = path.join( odir, '.hooks' );
+		p = path.join( ndir, 'postinstall' );
 		if ( fs.existsSync( p ) ) {
 			debug( 'Post-install lifecyle hook already exists: %s. Skipping...', p );
 			console.warn( 'WARNING: post-install hook conflict. File already exists: %s.', p );
 		} else {
+			if ( !fs.existsSync( ndir ) ) {
+				debug( 'Creating .hooks directory: %s', ndir );
+				fs.mkdirSync( ndir );
+				out.push( [ 'create', ndir ] );
+			}
 			debug( 'Creating post-install lifecycle hook...' );
-			str = '#!/usr/bin/env node\n\n\'use strict\';\n\nrequire(\''+PKG_SCRIPT_PATH+'\');\n';
-			fs.writeFileSync( p, str, {
+			fs.writeFileSync( p, LIFECYCLE_HOOK, {
 				'encoding': 'utf8'
 			});
 			out.push( [ 'create', p ] );
