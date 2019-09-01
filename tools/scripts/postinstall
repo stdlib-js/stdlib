@@ -64,23 +64,59 @@ var RE_SCRIPT_CONTEXT = /[\\/]node_modules[\\/]@stdlib[\\/]stdlib[\\/]/;
 * @returns {void}
 */
 function main() {
+	var action;
 	var stats;
 	var opts;
 	var list;
 	var odir;
 	var ndir;
+	var meta;
 	var out;
+	var str;
+	var FLG;
+	var p;
 	var f;
 	var i;
 
 	debug( 'Checking package context...' );
-	if ( process.env.npm_package_name !== PKG_NAME ) {
-		debug( 'Detected non-applicable package context: %s. Aborting script execution...', process.env.npm_package_name );
-		return;
-	}
-	debug( 'Detected applicable package context: %s', process.env.npm_package_name );
+	if ( process.env.npm_package_name === PKG_NAME ) {
+		debug( 'Detected applicable package context: %s', process.env.npm_package_name );
+	} else {
+		// If we are here, this script was likely invoked during npm lifecycle hook execution...
+		debug( 'Detected foreign package context: %s', process.env.npm_package_name );
 
-	debug( 'Checking execution context...' );
+		// Check for a meta data file...
+		if ( fs.existsSync( OUTPUT_FILE ) ) {
+			debug( 'Detected meta data file: %s', OUTPUT_FILE );
+			meta = require( OUTPUT_FILE ); // eslint-disable-line stdlib/no-dynamic-require
+
+			debug( 'Checking installation...' );
+			for ( i = 0; i < meta.length; i++ ) {
+				action = meta[ i ][ 0 ];
+				if ( action === 'link' ) {
+					ndir = meta[ i ][ 2 ];
+					if ( fs.existsSync( ndir ) ) {
+						debug( 'Directory exists: %s', ndir );
+					} else {
+						FLG = true;
+						odir = meta[ i ][ 1 ];
+
+						debug( 'Moving: %s...', path.basename( odir ) );
+						fs.linkSync( odir, ndir );
+					}
+				}
+			}
+			if ( FLG ) {
+				debug( 'Re-installation complete.' );
+			} else {
+				debug( 'Installation okay.' );
+			}
+			debug( 'Aborting script execution...' );
+			return;
+		}
+		debug( 'Meta data file does not exist. Proceeding with post-install sequence...' );
+	}
+	debug( 'Checking file system context...' );
 	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
 		debug( 'Detected non-node_modules dependency context. Aborting script execution...' );
 		return;
@@ -100,11 +136,26 @@ function main() {
 		ndir = path.join( DEST_DIR, NODE_MODULES );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.error( 'WARNING: node_modules conflict. Directory already exists.' );
+			console.error( 'WARNING: path conflict. node_modules directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
 			fs.linkSync( odir, ndir );
 			out.push( [ 'link', odir, ndir ] );
+		}
+
+		// NOTE: we add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook.
+		debug( 'Checking for a post-install lifecycle hook...' );
+		p = path.join( odir, '.hooks', 'postinstall' );
+		if ( fs.existsSync( p ) ) {
+			debug( 'Post-install lifecyle hook already exists: %s. Skipping...', p );
+			console.error( 'WARNING: post-install hook conflict. File already exists: %s.', p );
+		} else {
+			debug( 'Creating post-install lifecycle hook...' );
+			str = '#!/usr/bin/env node\n\n\'use strict\';\n\nrequire(\''+__filename+'\');\n'; // eslint-disable-line no-path-concat
+			fs.writeFileSync( p, str, {
+				'encoding': 'utf8'
+			});
+			out.push( [ 'create', p ] );
 		}
 	}
 
