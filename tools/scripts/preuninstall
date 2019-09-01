@@ -51,7 +51,7 @@ var META_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 * @private
 */
 function main() {
-	var paths;
+	var meta;
 	var odir;
 	var ndir;
 	var i;
@@ -60,12 +60,12 @@ function main() {
 	debug( 'Package directory: %s', PKG_DIR );
 
 	debug( 'Reading meta data...' );
-	paths = require( META_FILE ); // eslint-disable-line stdlib/no-dynamic-require
+	meta = require( META_FILE ); // eslint-disable-line stdlib/no-dynamic-require
 
 	debug( 'Reverting changes...' );
-	for ( i = 0; i < paths.length; i++ ) {
-		odir = paths[ i ][ 0 ];
-		ndir = paths[ i ][ 1 ];
+	for ( i = 0; i < meta.moved.length; i++ ) {
+		odir = meta.moved[ i ][ 0 ];
+		ndir = meta.moved[ i ][ 1 ];
 
 		debug( 'Moving `%s`...', ndir );
 		fs.renameSync( ndir, odir );

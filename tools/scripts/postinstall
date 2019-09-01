@@ -81,7 +81,9 @@ function main() {
 	debug( 'Package directory: %s', PKG_DIR );
 	debug( 'Destination directory: %s', DEST_DIR );
 
-	out = [];
+	out = {
+		'moved': []
+	};
 
 	debug( 'Checking for root node_modules...' );
 	odir = path.join( ROOT_DIR, NODE_MODULES );
@@ -89,7 +91,7 @@ function main() {
 		debug( 'Detected root node_modules. Moving...' );
 		ndir = path.join( DEST_DIR, NODE_MODULES );
 		fs.renameSync( odir, ndir );
-		out.push( [ odir, ndir ] );
+		out.moved.push( [ odir, ndir ] );
 	}
 
 	debug( 'Reading package directory...' );
@@ -111,7 +113,7 @@ function main() {
 		} else {
 			debug( 'Moving `%s`...', f );
 			fs.renameSync( odir, ndir );
-			out.push( [ odir, ndir ] );
+			out.moved.push( [ odir, ndir ] );
 		}
 	}
 	debug( 'Finished moving package directory contents.' );
