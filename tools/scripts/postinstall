@@ -94,6 +94,13 @@ function main() {
 	var f;
 	var i;
 
+	debug( 'Checking for global installation...' );
+	if ( process.env.npm_config_global ) {
+		debug( 'Detected global installation.' );
+	} else {
+		debug( 'Detected local installation.' );
+	}
+
 	debug( 'Checking package context...' );
 	if ( process.env.npm_package_name === PKG_NAME ) {
 		debug( 'Detected applicable package context: %s', process.env.npm_package_name );
@@ -118,12 +125,7 @@ function main() {
 						odir = meta[ i ][ 1 ];
 
 						debug( 'Moving: %s...', path.basename( odir ) );
-						try { // eslint-disable-line max-depth
-							fs.linkSync( odir, ndir );
-						} catch ( error ) {
-							debug( 'Error: %s', error.message );
-							fs.renameSync( odir, ndir );
-						}
+						fs.linkSync( odir, ndir );
 					}
 				} else if ( action === 'move' ) {
 					ndir = meta[ i ][ 2 ];
@@ -172,39 +174,22 @@ function main() {
 			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
-			try {
-				fs.linkSync( odir, ndir );
-				out.push( [ 'link', odir, ndir ] );
-			} catch ( error ) {
-				debug( 'Error: %s', error.message );
-				fs.renameSync( odir, ndir );
-				out.push( [ 'move', odir, ndir ] );
-			}
+			fs.renameSync( odir, ndir );
+			out.push( [ 'move', odir, ndir ] );
+
+			debug( 'Creating new root node_modules directory...' );
+			fs.mkdirSync( odir );
+			out.push( [ 'create', odir ] );
 		}
 	} else {
 		debug( 'Creating root node_modules directory...' );
 		fs.mkdirSync( odir );
 
 		// out.push( [ 'create', odir ] ); // NOTE: don't worry about removing this directory during uninstall
-
-		ndir = path.join( DEST_DIR, NODE_MODULES );
-		if ( fs.existsSync( ndir ) ) {
-			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
-		} else {
-			debug( 'Moving node_modules directory...' );
-			try {
-				fs.linkSync( odir, ndir );
-				out.push( [ 'link', odir, ndir ] );
-			} catch ( error ) {
-				debug( 'Error: %s', error.message );
-				fs.renameSync( odir, ndir );
-				out.push( [ 'move', odir, ndir ] );
-			}
-		}
 	}
 
 	debug( 'Checking for a post-install lifecycle hook...' );
+	odir = path.join( ROOT_DIR, NODE_MODULES );
 	ndir = path.join( odir, '.hooks' );
 	p = path.join( ndir, 'postinstall' );
 	if ( fs.existsSync( p ) ) {
@@ -241,14 +226,8 @@ function main() {
 			console.warn( 'WARNING: package conflict. Package directory already exists: %s.', f );
 		} else {
 			debug( 'Moving: %s...', f );
-			try {
-				fs.linkSync( odir, ndir );
-				out.push( [ 'link', odir, ndir ] );
-			} catch ( error ) {
-				debug( 'Error: %s', error.message );
-				fs.renameSync( odir, ndir );
-				out.push( [ 'move', odir, ndir ] );
-			}
+			fs.renameSync( odir, ndir );
+			out.push( [ 'move', odir, ndir ] );
 		}
 	}
 	debug( 'Finished post-install sequence.' );
