@@ -51,6 +51,7 @@ var META_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 * @private
 */
 function main() {
+	var action;
 	var meta;
 	var odir;
 	var ndir;
@@ -64,19 +65,20 @@ function main() {
 	meta = require( META_FILE ); // eslint-disable-line stdlib/no-dynamic-require
 
 	debug( 'Reverting changes...' );
-	for ( i = 0; i < meta.moved.length; i++ ) {
-		odir = meta.moved[ i ][ 0 ];
-		ndir = meta.moved[ i ][ 1 ];
+	for ( i = meta.length-1; i >= 0; i-- ) {
+		action = meta[ i ][ 0 ];
+		if ( action === 'move' ) {
+			odir = meta[ i ][ 1 ];
+			ndir = meta[ i ][ 2 ];
 
-		debug( 'Moving `%s`...', ndir );
-		fs.renameSync( ndir, odir );
-	}
-	// Delete files after moving, which is based on the assumption that we created (and logged) before performing any moves...
-	for ( i = 0; i < meta.created.length; i++ ) {
-		p = meta.created[ i ];
+			debug( 'Moving: %s...', ndir );
+			fs.renameSync( ndir, odir );
+		} else if ( action === 'create' ) {
+			p = meta[ i ][ 1 ];
 
-		debug( 'Deleting `%s`...', p );
-		fs.unlinkSync( p );
+			debug( 'Deleting: %s...', p );
+			fs.unlinkSync( p );
+		}
 	}
 	debug( 'Finished reverting changes.' );
 }

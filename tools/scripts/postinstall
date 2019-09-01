@@ -91,10 +91,7 @@ function main() {
 	debug( 'Package directory: %s', PKG_DIR );
 	debug( 'Destination directory: %s', DEST_DIR );
 
-	out = {
-		'created': [],
-		'moved': []
-	};
+	out = [];
 
 	debug( 'Checking for root node_modules...' );
 	odir = path.join( ROOT_DIR, NODE_MODULES );
@@ -107,7 +104,7 @@ function main() {
 		} else {
 			debug( 'Moving node_modules directory...' );
 			fs.renameSync( odir, ndir );
-			out.moved.push( [ odir, ndir ] );
+			out.push( [ 'move', odir, ndir ] );
 		}
 	}
 
@@ -126,11 +123,11 @@ function main() {
 		ndir = path.join( DEST_DIR, f );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.error( 'WARNING: package conflict. Package directory already exists for `%s`.', f );
+			console.error( 'WARNING: package conflict. Package directory already exists: %s.', f );
 		} else {
-			debug( 'Moving `%s`...', f );
+			debug( 'Moving: %s...', f );
 			fs.renameSync( odir, ndir );
-			out.moved.push( [ odir, ndir ] );
+			out.push( [ 'move', odir, ndir ] );
 		}
 	}
 	debug( 'Finished moving package directory contents.' );
