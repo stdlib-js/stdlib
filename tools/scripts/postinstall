@@ -88,10 +88,16 @@ function main() {
 	debug( 'Checking for root node_modules...' );
 	odir = path.join( ROOT_DIR, NODE_MODULES );
 	if ( fs.existsSync( odir ) ) {
-		debug( 'Detected root node_modules. Moving...' );
+		debug( 'Detected root node_modules.' );
 		ndir = path.join( DEST_DIR, NODE_MODULES );
-		fs.renameSync( odir, ndir );
-		out.moved.push( [ odir, ndir ] );
+		if ( fs.existsSync( ndir ) ) {
+			debug( 'Destination directory already exists: %s. Skipping...', ndir );
+			console.error( 'WARNING: node_modules conflict. Directory already exists.' ); // eslint-disable-line no-console
+		} else {
+			debug( 'Moving node_modules directory...' );
+			fs.renameSync( odir, ndir );
+			out.moved.push( [ odir, ndir ] );
+		}
 	}
 
 	debug( 'Reading package directory...' );
