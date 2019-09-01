@@ -18,7 +18,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable no-sync */
+/* eslint-disable no-sync, no-process-env, no-console */
 
 'use strict';
 
@@ -32,6 +32,9 @@ var logger = require( 'debug' );
 // VARIABLES //
 
 var debug = logger( 'stdlib:post-install' );
+
+// Define the project package name:
+var PKG_NAME = '@stdlib/stdlib';
 
 // Define the folder name for storing node_modules dependencies:
 var NODE_MODULES = 'node_modules';
@@ -70,6 +73,13 @@ function main() {
 	var f;
 	var i;
 
+	debug( 'Checking package context...' );
+	if ( process.env.npm_package_name !== PKG_NAME ) {
+		debug( 'Detected non-applicable package context: %s. Aborting script execution...', process.env.npm_package_name );
+		return;
+	}
+	debug( 'Detected applicable package context: %s', process.env.npm_package_name );
+
 	debug( 'Checking execution context...' );
 	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
 		debug( 'Detected non-node_modules dependency context. Aborting script execution...' );
@@ -92,7 +102,7 @@ function main() {
 		ndir = path.join( DEST_DIR, NODE_MODULES );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.error( 'WARNING: node_modules conflict. Directory already exists.' ); // eslint-disable-line no-console
+			console.error( 'WARNING: node_modules conflict. Directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
 			fs.renameSync( odir, ndir );
@@ -115,7 +125,7 @@ function main() {
 		ndir = path.join( DEST_DIR, f );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.error( 'WARNING: package conflict. Package directory already exists for `%s`.', f ); // eslint-disable-line no-console
+			console.error( 'WARNING: package conflict. Package directory already exists for `%s`.', f );
 		} else {
 			debug( 'Moving `%s`...', f );
 			fs.renameSync( odir, ndir );
