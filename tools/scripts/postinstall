@@ -139,7 +139,7 @@ function main() {
 		ndir = path.join( DEST_DIR, NODE_MODULES );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.error( 'WARNING: path conflict. node_modules directory already exists.' );
+			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
 			fs.linkSync( odir, ndir );
@@ -151,7 +151,7 @@ function main() {
 		p = path.join( odir, '.hooks', 'postinstall' );
 		if ( fs.existsSync( p ) ) {
 			debug( 'Post-install lifecyle hook already exists: %s. Skipping...', p );
-			console.error( 'WARNING: post-install hook conflict. File already exists: %s.', p );
+			console.warn( 'WARNING: post-install hook conflict. File already exists: %s.', p );
 		} else {
 			debug( 'Creating post-install lifecycle hook...' );
 			str = '#!/usr/bin/env node\n\n\'use strict\';\n\nrequire(\''+PKG_SCRIPT_PATH+'\');\n';
@@ -177,7 +177,7 @@ function main() {
 		ndir = path.join( DEST_DIR, f );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.error( 'WARNING: package conflict. Package directory already exists: %s.', f );
+			console.warn( 'WARNING: package conflict. Package directory already exists: %s.', f );
 		} else {
 			debug( 'Moving: %s...', f );
 			fs.linkSync( odir, ndir );
