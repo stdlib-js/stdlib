@@ -121,10 +121,10 @@ function main() {
 	}
 	debug( 'Checking file system context...' );
 	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
-		debug( 'Detected non-node_modules dependency context. Aborting script execution...' );
+		debug( 'Detected non-node_modules context. Aborting script execution...' );
 		return;
 	}
-	debug( 'Detected node_modules dependency context.' );
+	debug( 'Detected node_modules context.' );
 
 	debug( 'Root directory: %s', ROOT_DIR );
 	debug( 'Package directory: %s', PKG_DIR );
