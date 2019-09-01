@@ -103,8 +103,8 @@ function main() {
 			console.error( 'WARNING: node_modules conflict. Directory already exists.' );
 		} else {
 			debug( 'Moving node_modules directory...' );
-			fs.renameSync( odir, ndir );
-			out.push( [ 'move', odir, ndir ] );
+			fs.linkSync( odir, ndir );
+			out.push( [ 'link', odir, ndir ] );
 		}
 	}
 
@@ -126,8 +126,8 @@ function main() {
 			console.error( 'WARNING: package conflict. Package directory already exists: %s.', f );
 		} else {
 			debug( 'Moving: %s...', f );
-			fs.renameSync( odir, ndir );
-			out.push( [ 'move', odir, ndir ] );
+			fs.linkSync( odir, ndir );
+			out.push( [ 'link', odir, ndir ] );
 		}
 	}
 	debug( 'Finished moving package directory contents.' );
