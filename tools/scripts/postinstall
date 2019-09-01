@@ -48,6 +48,9 @@ var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 // Resolve the destination directory:
 var DEST_DIR = path.resolve( ROOT_DIR, '..' );
 
+// Resolve the path of this script within the project (WARNING: this is fragile and likely needs to be updated should this file move!):
+var PKG_SCRIPT_PATH = path.join( PKG_NAME, 'tools', 'scripts', path.basename( __filename ) );
+
 // Define an output file path for storing post-install meta data:
 var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 
@@ -143,7 +146,7 @@ function main() {
 			out.push( [ 'link', odir, ndir ] );
 		}
 
-		// NOTE: we add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook.
+		// NOTE: we add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
 		debug( 'Checking for a post-install lifecycle hook...' );
 		p = path.join( odir, '.hooks', 'postinstall' );
 		if ( fs.existsSync( p ) ) {
@@ -151,7 +154,7 @@ function main() {
 			console.error( 'WARNING: post-install hook conflict. File already exists: %s.', p );
 		} else {
 			debug( 'Creating post-install lifecycle hook...' );
-			str = '#!/usr/bin/env node\n\n\'use strict\';\n\nrequire(\''+__filename+'\');\n'; // eslint-disable-line no-path-concat
+			str = '#!/usr/bin/env node\n\n\'use strict\';\n\nrequire(\''+PKG_SCRIPT_PATH+'\');\n';
 			fs.writeFileSync( p, str, {
 				'encoding': 'utf8'
 			});
