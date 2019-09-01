@@ -104,10 +104,14 @@ function main() {
 			debug( 'Found a non-directory: %s. Skipping...', f );
 			continue;
 		}
-		debug( 'Moving `%s`...', f );
 		ndir = path.join( DEST_DIR, f );
-		fs.renameSync( odir, ndir );
-		out.push( [ odir, ndir ] );
+		if ( fs.existsSync( ndir ) ) {
+			debug( 'Destination directory already exists: %s. Skipping...', ndir );
+		} else {
+			debug( 'Moving `%s`...', f );
+			fs.renameSync( odir, ndir );
+			out.push( [ odir, ndir ] );
+		}
 	}
 	debug( 'Finished moving package directory contents.' );
 
