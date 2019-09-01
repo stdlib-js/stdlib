@@ -162,7 +162,18 @@ function main() {
 	} else {
 		debug( 'Creating root node_modules directory...' );
 		fs.mkdirSync( odir );
-		out.push( [ 'create', odir ] );
+
+		// out.push( [ 'create', odir ] ); // NOTE: don't worry about removing this directory during uninstall
+
+		ndir = path.join( DEST_DIR, NODE_MODULES );
+		if ( fs.existsSync( ndir ) ) {
+			debug( 'Destination directory already exists: %s. Skipping...', ndir );
+			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
+		} else {
+			debug( 'Moving node_modules directory...' );
+			fs.linkSync( odir, ndir );
+			out.push( [ 'link', odir, ndir ] );
+		}
 	}
 
 	debug( 'Checking for a post-install lifecycle hook...' );
@@ -173,7 +184,7 @@ function main() {
 		console.warn( 'WARNING: post-install hook conflict. File already exists: %s.', p );
 	} else {
 		if ( !fs.existsSync( ndir ) ) {
-			debug( 'Creating .hooks directory: %s', ndir );
+			debug( 'Creating hooks directory: %s', ndir );
 			fs.mkdirSync( ndir );
 			out.push( [ 'create', ndir ] );
 		}
