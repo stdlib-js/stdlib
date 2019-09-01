@@ -73,6 +73,10 @@ var LIFECYCLE_HOOK = [
 /**
 * Main execution sequence.
 *
+* ## Notes
+*
+* -   We add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
+*
 * @private
 * @returns {void}
 */
@@ -128,6 +132,7 @@ function main() {
 		}
 		debug( 'Meta data file does not exist. Proceeding with post-install sequence...' );
 	}
+
 	debug( 'Checking file system context...' );
 	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
 		debug( 'Detected non-node_modules context. Aborting script execution...' );
@@ -154,26 +159,29 @@ function main() {
 			fs.linkSync( odir, ndir );
 			out.push( [ 'link', odir, ndir ] );
 		}
+	} else {
+		debug( 'Creating root node_modules directory...' );
+		fs.mkdirSync( odir );
+		out.push( [ 'create', odir ] );
+	}
 
-		// NOTE: we add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
-		debug( 'Checking for a post-install lifecycle hook...' );
-		ndir = path.join( odir, '.hooks' );
-		p = path.join( ndir, 'postinstall' );
-		if ( fs.existsSync( p ) ) {
-			debug( 'Post-install lifecyle hook already exists: %s. Skipping...', p );
-			console.warn( 'WARNING: post-install hook conflict. File already exists: %s.', p );
-		} else {
-			if ( !fs.existsSync( ndir ) ) {
-				debug( 'Creating .hooks directory: %s', ndir );
-				fs.mkdirSync( ndir );
-				out.push( [ 'create', ndir ] );
-			}
-			debug( 'Creating post-install lifecycle hook...' );
-			fs.writeFileSync( p, LIFECYCLE_HOOK, {
-				'encoding': 'utf8'
-			});
-			out.push( [ 'create', p ] );
+	debug( 'Checking for a post-install lifecycle hook...' );
+	ndir = path.join( odir, '.hooks' );
+	p = path.join( ndir, 'postinstall' );
+	if ( fs.existsSync( p ) ) {
+		debug( 'Post-install lifecyle hook already exists: %s. Skipping...', p );
+		console.warn( 'WARNING: post-install hook conflict. File already exists: %s.', p );
+	} else {
+		if ( !fs.existsSync( ndir ) ) {
+			debug( 'Creating .hooks directory: %s', ndir );
+			fs.mkdirSync( ndir );
+			out.push( [ 'create', ndir ] );
 		}
+		debug( 'Creating post-install lifecycle hook...' );
+		fs.writeFileSync( p, LIFECYCLE_HOOK, {
+			'encoding': 'utf8'
+		});
+		out.push( [ 'create', p ] );
 	}
 
 	debug( 'Reading package directory...' );
