@@ -107,6 +107,7 @@ function main() {
 		ndir = path.join( DEST_DIR, f );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s. Skipping...', ndir );
+			console.error( 'WARNING: package conflict. Package directory already exists for `%s`.', f ); // eslint-disable-line no-console
 		} else {
 			debug( 'Moving `%s`...', f );
 			fs.renameSync( odir, ndir );
