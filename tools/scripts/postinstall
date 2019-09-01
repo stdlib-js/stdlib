@@ -75,7 +75,7 @@ var LIFECYCLE_HOOK = [
 *
 * ## Notes
 *
-* -   We add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see https://docs.npmjs.com/cli/install#algorithm). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
+* -   We add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see <https://docs.npmjs.com/cli/install#algorithm>). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
 *
 * @private
 * @returns {void}
