@@ -54,8 +54,8 @@ function main() {
 	var action;
 	var stats;
 	var meta;
-	var odir;
-	var ndir;
+	var op;
+	var np;
 	var p;
 	var i;
 
@@ -68,17 +68,12 @@ function main() {
 	debug( 'Reverting changes...' );
 	for ( i = meta.length-1; i >= 0; i-- ) { // NOTE: reverting changes in reverse order!!!
 		action = meta[ i ][ 0 ];
-		if ( action === 'move' ) {
-			odir = meta[ i ][ 1 ];
-			ndir = meta[ i ][ 2 ];
+		if ( action === 'rename' ) {
+			op = meta[ i ][ 1 ];
+			np = meta[ i ][ 2 ];
 
-			debug( 'Moving: %s...', ndir );
-			fs.renameSync( ndir, odir );
-		} else if ( action === 'link' ) {
-			p = meta[ i ][ 2 ];
-
-			debug( 'Deleting: %s...', p );
-			fs.unlinkSync( p );
+			debug( 'Renaming: %s...', np );
+			fs.renameSync( np, op );
 		} else if ( action === 'create' ) {
 			p = meta[ i ][ 1 ];
 			stats = fs.statSync( p );
