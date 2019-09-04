@@ -224,7 +224,10 @@ function main() {
 	debug( 'Processing packages...' );
 	for ( i = 0; i < pkgs.length; i++ ) {
 		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
-
+		if ( pdir[ 0 ] === '_' ) {
+			debug( 'Package directory is private: %s. Skipping...', pdir );
+			continue;
+		}
 		debug( 'Reading package meta data...' );
 		pkg = require( path.join( pkgs[ i ], 'package.json' ) ); // eslint-disable-line stdlib/no-dynamic-require
 
@@ -271,7 +274,9 @@ function main() {
 	debug( 'Modifying package meta data...' );
 	for ( i = 0; i < pkgs.length; i++ ) {
 		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
-		meta.dependencies[ '@stdlib/'+pdir ] = 'file:../'+pdir;
+		if ( pdir[ 0 ] !== '_' ) {
+			meta.dependencies[ '@stdlib/'+pdir ] = 'file:../'+pdir;
+		}
 	}
 	debug( 'Renaming file...' );
 	f = path.join( ROOT_DIR, '__package__.json' );
