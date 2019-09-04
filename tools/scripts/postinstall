@@ -18,6 +18,36 @@
 * limitations under the License.
 */
 
+/*
+* Script to perform a post-install sequence, allowing users to require/import project packages as documented in the repository documentation.
+*
+* For example,
+*
+* ```javascript
+* var sin = require( '@stdlib/math/base/special/sin' );
+* ```
+*
+* rather than
+*
+* ```javascript
+* var sin = require( '@stdlib/stdlib/lib/node_modules/@stdlib/math/base/special/sin' );
+* ```
+*
+* ## Usage
+*
+* ```bash
+* $ postinstall
+* ```
+*
+* ### Notes
+*
+* -   The script supports the following environment variables:
+*
+*     -   `STDLIB_DRY_RUN`: run script in "dry run" mode (i.e., without creating artifacts).
+*
+* -   The script outputs a `.postinstall.json` file which can be used to revert changes introduced by this script (see `preuninstall`).
+*/
+
 /* eslint-disable no-sync, no-process-env, no-console */
 
 'use strict';
@@ -33,11 +63,8 @@ var logger = require( 'debug' );
 
 var debug = logger( 'stdlib:post-install' );
 
-// Define the project package name:
-var PKG_NAME = '@stdlib/stdlib';
-
-// Define the folder name for storing node_modules dependencies:
-var NODE_MODULES = 'node_modules';
+// Define a flag for specifying whether to run the script in "dry run" mode:
+var DRY_RUN = Boolean( process.env.STDLIB_DRY_RUN );
 
 // Resolve the root project directory (WARNING: this is fragile and likely needs to be updated should this file move!):
 var ROOT_DIR = path.resolve( __dirname, '..', '..' );
@@ -45,11 +72,11 @@ var ROOT_DIR = path.resolve( __dirname, '..', '..' );
 // Resolve the project package directory:
 var PKG_DIR = path.join( ROOT_DIR, 'lib', 'node_modules', '@stdlib' );
 
+// Define the relative path to project packages:
+var RELATIVE_PKG_DIR = path.join( 'stdlib', 'lib', 'node_modules', '@stdlib' );
+
 // Resolve the destination directory:
 var DEST_DIR = path.resolve( ROOT_DIR, '..' );
-
-// Resolve the path of this script within the project (WARNING: this is fragile and likely needs to be updated should this file move!):
-var PKG_SCRIPT_PATH = path.join( PKG_NAME, 'tools', 'scripts', path.basename( __filename ) );
 
 // Define an output file path for storing post-install meta data:
 var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
@@ -57,15 +84,89 @@ var OUTPUT_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 // Regular expression to detect whether this script is being executed after this package was installed as a node_modules dependency:
 var RE_SCRIPT_CONTEXT = /[\\/]node_modules[\\/]@stdlib[\\/]stdlib[\\/]/;
 
-// Define the lifecycle hook script:
-var LIFECYCLE_HOOK = [
-	'#!/usr/bin/env node',
-	'',
-	'\'use strict\';',
-	'',
-	'require( \''+PKG_SCRIPT_PATH+'\' );',
-	''
-].join( '\n' );
+// Define a list of `package.json` fields to extract when generating meta data:
+var PKG_FIELDS = [
+	'name',
+	'version',
+	'description',
+	'license',
+	'author',
+	'contributors',
+	'homepage',
+	'repository',
+	'bugs',
+	'engines',
+	'os',
+	'keywords'
+];
+
+
+// FUNCTIONS //
+
+/**
+* Returns a relative path for resolving a package from a destination directory.
+*
+* @private
+* @param {string} dpath - package directory path (e.g., `'utils/copy'`, `'math/base/special/sin'`, etc)
+* @returns {string} relative path
+*/
+function resolvePkg( dpath ) {
+	var parts;
+	var p;
+	var i;
+
+	// Initialize the relative path:
+	p = '.' + path.sep;
+
+	// Split the directory path in order to determine folder depth:
+	parts = dpath.split( path.sep );
+	for ( i = 0; i < parts.length; i++ ) {
+		p += '..' + path.sep;
+	}
+	// Return the generated path:
+	return path.join( p, RELATIVE_PKG_DIR, dpath );
+}
+
+/**
+* Creates directories from a nested path.
+*
+* @private
+* @param {Array} out - output array for tracking changes
+* @param {string} root - root directory
+* @param {string} dpath - directory path
+* @returns {Array} output array
+*/
+function mkdirp( out, root, dpath ) {
+	var parts;
+	var stats;
+	var p;
+	var i;
+
+	parts = dpath.split( path.sep );
+	p = root;
+	for ( i = 0; i < parts.length; i++ ) {
+		p = path.join( p, parts[ i ] );
+		if ( fs.existsSync( p ) ) {
+			stats = fs.statSync( p );
+			if ( !stats.isDirectory() ) {
+				if ( DRY_RUN ) {
+					console.log( 'Created directory: %s', p );
+				} else {
+					fs.mkdirSync( p );
+				}
+				out.push( [ 'create', p ] );
+			}
+		} else {
+			if ( DRY_RUN ) {
+				console.log( 'Created directory: %s', p );
+			} else {
+				fs.mkdirSync( p );
+			}
+			out.push( [ 'create', p ] );
+		}
+	}
+	return out;
+}
 
 
 // MAIN //
@@ -73,86 +174,35 @@ var LIFECYCLE_HOOK = [
 /**
 * Main execution sequence.
 *
-* ## Notes
-*
-* -   We add a post-install lifecycle hook in order to provide a "workaround" to how `npm install` works (see <https://docs.npmjs.com/cli/install#algorithm>). Namely, upon first running `npm install`, this script will be run after installing the project package. This script subsequently modifies the `node_modules` tree. Upon a subsequent `npm install`, npm will "undo" our modifications (which is not good for us!) as those modifications are not included in the ideal package tree, and npm will not run this script as the package lifecycle event is not triggered. However, npm will run a post-install lifecycle hook, so we install such a hook which simply runs this script.
-*
 * @private
 * @returns {void}
 */
 function main() {
-	var action;
+	var findPkgs;
+	var fopts;
 	var stats;
-	var opts;
-	var list;
-	var odir;
-	var ndir;
 	var meta;
+	var pdir;
+	var ndir;
+	var dirs;
+	var pkgs;
+	var pkg;
 	var out;
-	var FLG;
-	var p;
 	var f;
 	var i;
+	var j;
+	var k;
 
-	debug( 'Checking for global installation...' );
-	if ( process.env.npm_config_global ) {
-		debug( 'Detected global installation.' );
-	} else {
-		debug( 'Detected local installation.' );
-	}
+	fopts = {
+		'encoding': 'utf8'
+	};
 
-	debug( 'Checking package context...' );
-	if ( process.env.npm_package_name === PKG_NAME ) {
-		debug( 'Detected applicable package context: %s', process.env.npm_package_name );
-	} else {
-		// If we are here, this script was likely invoked during npm lifecycle hook execution...
-		debug( 'Detected foreign package context: %s', process.env.npm_package_name );
-
-		// Check for a meta data file...
-		if ( fs.existsSync( OUTPUT_FILE ) ) {
-			debug( 'Detected meta data file: %s', OUTPUT_FILE );
-			meta = require( OUTPUT_FILE ); // eslint-disable-line stdlib/no-dynamic-require
-
-			debug( 'Checking installation...' );
-			for ( i = 0; i < meta.length; i++ ) {
-				action = meta[ i ][ 0 ];
-				if ( action === 'link' ) {
-					ndir = meta[ i ][ 2 ];
-					if ( fs.existsSync( ndir ) ) {
-						debug( 'Directory exists: %s', ndir );
-					} else {
-						FLG = true;
-						odir = meta[ i ][ 1 ];
-
-						debug( 'Moving: %s...', path.basename( odir ) );
-						fs.linkSync( odir, ndir );
-					}
-				} else if ( action === 'move' ) {
-					ndir = meta[ i ][ 2 ];
-					if ( fs.existsSync( ndir ) ) {
-						debug( 'Directory exists: %s', ndir );
-					} else {
-						FLG = true;
-						odir = meta[ i ][ 1 ];
-
-						debug( 'Moving: %s...', path.basename( odir ) );
-						fs.renameSync( odir, ndir );
-					}
-				}
-			}
-			if ( FLG ) {
-				debug( 'Re-installation complete.' );
-			} else {
-				debug( 'Installation okay.' );
-			}
-			debug( 'Aborting script execution...' );
-			return;
-		}
-		debug( 'Meta data file does not exist. Proceeding with post-install sequence...' );
+	if ( DRY_RUN ) {
+		debug( 'Performing a dry run...' );
 	}
 
 	debug( 'Checking file system context...' );
-	if ( !RE_SCRIPT_CONTEXT.test( __filename ) ) {
+	if ( !DRY_RUN && !RE_SCRIPT_CONTEXT.test( __filename ) ) {
 		debug( 'Detected non-node_modules context. Aborting script execution...' );
 		return;
 	}
@@ -164,79 +214,100 @@ function main() {
 
 	out = [];
 
-	debug( 'Checking for root node_modules...' );
-	odir = path.join( ROOT_DIR, NODE_MODULES );
-	if ( fs.existsSync( odir ) ) {
-		debug( 'Detected root node_modules.' );
-		ndir = path.join( DEST_DIR, NODE_MODULES );
+	// Load a package for resolving project packages ('@stdlib/_tools/pkgs/find'):
+	findPkgs = require( path.join( PKG_DIR, '_tools', 'pkgs', 'find' ) ); // eslint-disable-line stdlib/no-dynamic-require
+
+	debug( 'Resolving packages...' );
+	pkgs = findPkgs.sync({
+		'dir': PKG_DIR
+	});
+	debug( 'Found %d packages.', pkgs.length );
+
+	debug( 'Processing packages...' );
+	for ( i = 0; i < pkgs.length; i++ ) {
+		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
+
+		debug( 'Reading package meta data...' );
+		pkg = require( path.join( pkgs[ i ], 'package.json' ) ); // eslint-disable-line stdlib/no-dynamic-require
+
+		debug( 'Package name: %s', pkg.name );
+
+		debug( 'Generating package meta data...' );
+		meta = {};
+		for ( j = 0; j < PKG_FIELDS.length; j++ ) {
+			k = PKG_FIELDS[ j ];
+			if ( pkg.hasOwnProperty( k ) ) { // eslint-disable-line no-prototype-builtins
+				meta[ k ] = pkg[ k ];
+			}
+		}
+		meta.main = path.join( resolvePkg( pdir ), pkg.main );
+		debug( 'Resolved package entry point: %s', meta.main );
+
+		ndir = path.join( DEST_DIR, pdir );
 		if ( fs.existsSync( ndir ) ) {
-			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.warn( 'WARNING: path conflict. node_modules directory already exists.' );
+			debug( 'Destination directory already exists: %s', ndir );
 		} else {
-			debug( 'Moving node_modules directory...' );
-			fs.renameSync( odir, ndir );
-			out.push( [ 'move', odir, ndir ] );
-
-			debug( 'Creating new root node_modules directory...' );
-			fs.mkdirSync( odir );
-			out.push( [ 'create', odir ] );
+			debug( 'Creating destination directory: %s', ndir );
+			mkdirp( out, DEST_DIR, pdir );
 		}
-	} else {
-		debug( 'Creating root node_modules directory...' );
-		fs.mkdirSync( odir );
 
-		// out.push( [ 'create', odir ] ); // NOTE: don't worry about removing this directory during uninstall
-	}
-
-	debug( 'Checking for a post-install lifecycle hook...' );
-	odir = path.join( ROOT_DIR, NODE_MODULES );
-	ndir = path.join( odir, '.hooks' );
-	p = path.join( ndir, 'postinstall' );
-	if ( fs.existsSync( p ) ) {
-		debug( 'Post-install lifecyle hook already exists: %s. Skipping...', p );
-		console.warn( 'WARNING: post-install hook conflict. File already exists: %s.', p );
-	} else {
-		if ( !fs.existsSync( ndir ) ) {
-			debug( 'Creating hooks directory: %s', ndir );
-			fs.mkdirSync( ndir );
-			out.push( [ 'create', ndir ] );
-		}
-		debug( 'Creating post-install lifecycle hook...' );
-		fs.writeFileSync( p, LIFECYCLE_HOOK, {
-			'encoding': 'utf8'
-		});
-		out.push( [ 'create', p ] );
-	}
-
-	debug( 'Reading package directory...' );
-	list = fs.readdirSync( PKG_DIR );
-
-	debug( 'Moving package directory contents...' );
-	for ( i = 0; i < list.length; i++ ) {
-		f = list[ i ];
-		odir = path.join( PKG_DIR, f);
-		stats = fs.statSync( odir );
-		if ( stats.isDirectory() === false ) {
-			debug( 'Found a non-directory: %s. Skipping...', f );
+		f = path.join( ndir, 'package.json' );
+		if ( fs.existsSync( f ) ) {
+			debug( 'Package meta data already exists: %s. Skipping package...', f );
 			continue;
 		}
-		ndir = path.join( DEST_DIR, f );
-		if ( fs.existsSync( ndir ) ) {
-			debug( 'Destination directory already exists: %s. Skipping...', ndir );
-			console.warn( 'WARNING: package conflict. Package directory already exists: %s.', f );
+		debug( 'Writing package meta data...' );
+		if ( DRY_RUN ) {
+			console.log( 'Created file: %s', f );
 		} else {
-			debug( 'Moving: %s...', f );
-			fs.renameSync( odir, ndir );
-			out.push( [ 'move', odir, ndir ] );
+			fs.writeFileSync( f, JSON.stringify( meta )+'\n', fopts );
+		}
+		out.push( [ 'create', f ] );
+
+		debug( 'Finished processing package.' );
+	}
+	debug( 'Reading package meta data...' );
+	pkg = path.join( ROOT_DIR, 'package.json' );
+	meta = require( pkg ); // eslint-disable-line stdlib/no-dynamic-require
+
+	debug( 'Modifying package meta data...' );
+	dirs = fs.readdirSync( PKG_DIR );
+	for ( i = 0; i < dirs.length; i++ ) {
+		f = dirs[ i ];
+		stats = fs.statSync( path.join( PKG_DIR, f ) );
+		if ( stats.isDirectory() ) {
+			meta.dependencies[ '@stdlib/'+f ] = '*';
 		}
 	}
+	debug( 'Renaming file...' );
+	f = path.join( ROOT_DIR, '__package__.json' );
+	if ( DRY_RUN ) {
+		console.log( 'Renamed file: %s => %s', pkg, f );
+	} else {
+		fs.renameSync( pkg, f );
+	}
+	out.push( [ 'rename', pkg, f ] );
+
+	debug( 'Writing package meta data...' );
+	if ( DRY_RUN ) {
+		console.log( 'Modified file: %s', pkg );
+		console.log( 'Meta data: %s', JSON.stringify( meta ) );
+	} else {
+		fs.writeFileSync( pkg, JSON.stringify( meta )+'\n', fopts );
+	}
+	out.push( [ 'create', pkg ] );
+
 	debug( 'Finished post-install sequence.' );
 
 	debug( 'Saving changes...' );
-	opts = {
-		'encoding': 'utf8'
-	};
-	fs.writeFileSync( OUTPUT_FILE, JSON.stringify( out )+'\n', opts );
+	out.push( [ 'create', OUTPUT_FILE ] );
+	if ( DRY_RUN ) {
+		debug( 'Changes: %s', JSON.stringify( out ) );
+		console.log( 'Created file: %s', OUTPUT_FILE );
+	} else {
+		fs.writeFileSync( OUTPUT_FILE, JSON.stringify( out )+'\n', fopts );
+	}
+
 	debug( 'Finished saving changes.' );
 }
 
