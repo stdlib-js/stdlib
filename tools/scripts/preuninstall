@@ -52,6 +52,7 @@ var META_FILE = path.join( ROOT_DIR, '.postinstall.json' );
 */
 function main() {
 	var action;
+	var stats;
 	var meta;
 	var odir;
 	var ndir;
@@ -80,9 +81,16 @@ function main() {
 			fs.unlinkSync( p );
 		} else if ( action === 'create' ) {
 			p = meta[ i ][ 1 ];
-
-			debug( 'Deleting: %s...', p );
-			fs.unlinkSync( p );
+			stats = fs.statSync( p );
+			if ( stats.isFile() ) {
+				debug( 'Deleting file: %s...', p );
+				fs.unlinkSync( p );
+			} else if ( stats.isDirectory() ) {
+				debug( 'Removing directory: %s...', p );
+				fs.rmdirSync( p );
+			} else {
+				debug( 'Error: unexpected file type. Path: %s', p );
+			}
 		}
 	}
 	debug( 'Finished reverting changes.' );
