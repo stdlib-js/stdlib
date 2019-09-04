@@ -241,6 +241,7 @@ function main() {
 				meta[ k ] = pkg[ k ];
 			}
 		}
+		meta.name = ''; // NOTE: we empty out the `name` field due to the presence of slashes in the package names (e.g., `'@stdlib/array/buffer'`; see https://docs.npmjs.com/files/package.json#name)
 		meta.main = path.join( resolvePkg( pdir ), pkg.main );
 		debug( 'Resolved package entry point: %s', meta.main );
 
