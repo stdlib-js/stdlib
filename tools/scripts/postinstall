@@ -276,7 +276,7 @@ function main() {
 		f = dirs[ i ];
 		stats = fs.statSync( path.join( PKG_DIR, f ) );
 		if ( stats.isDirectory() ) {
-			meta.dependencies[ '@stdlib/'+f ] = '*';
+			meta.dependencies[ '@stdlib/'+f ] = 'file:../'+f;
 		}
 	}
 	debug( 'Renaming file...' );
