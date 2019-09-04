@@ -180,11 +180,9 @@ function mkdirp( out, root, dpath ) {
 function main() {
 	var findPkgs;
 	var fopts;
-	var stats;
 	var meta;
 	var pdir;
 	var ndir;
-	var dirs;
 	var pkgs;
 	var pkg;
 	var out;
@@ -271,13 +269,9 @@ function main() {
 	meta = require( pkg ); // eslint-disable-line stdlib/no-dynamic-require
 
 	debug( 'Modifying package meta data...' );
-	dirs = fs.readdirSync( PKG_DIR );
-	for ( i = 0; i < dirs.length; i++ ) {
-		f = dirs[ i ];
-		stats = fs.statSync( path.join( PKG_DIR, f ) );
-		if ( stats.isDirectory() ) {
-			meta.dependencies[ '@stdlib/'+f ] = 'file:../'+f;
-		}
+	for ( i = 0; i < pkgs.length; i++ ) {
+		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
+		meta.dependencies[ '@stdlib/'+pdir ] = 'file:../'+pdir;
 	}
 	debug( 'Renaming file...' );
 	f = path.join( ROOT_DIR, '__package__.json' );
