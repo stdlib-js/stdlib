@@ -241,6 +241,12 @@ function main() {
 				meta[ k ] = pkg[ k ];
 			}
 		}
+		meta.name = '';
+
+		// We need to conform to npm package name conventions (e.g., cannot have `'@stdlib/array/buffer'`; see https://docs.npmjs.com/files/package.json#name):
+		// meta.name = meta.name.split( '/' );
+		// meta.name = meta.name[ 0 ] + '/' + meta.name.slice( 1 ).join( '-' ); // => @stdlib/array-buffer
+
 		meta.main = path.join( resolvePkg( pdir ), pkg.main );
 		debug( 'Resolved package entry point: %s', meta.main );
 
