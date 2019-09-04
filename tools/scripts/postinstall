@@ -241,7 +241,6 @@ function main() {
 				meta[ k ] = pkg[ k ];
 			}
 		}
-		meta.name = ''; // NOTE: we empty out the `name` field due to the presence of slashes in the package names (e.g., `'@stdlib/array/buffer'`; see https://docs.npmjs.com/files/package.json#name)
 		meta.main = path.join( resolvePkg( pdir ), pkg.main );
 		debug( 'Resolved package entry point: %s', meta.main );
 
@@ -276,7 +275,7 @@ function main() {
 	for ( i = 0; i < pkgs.length; i++ ) {
 		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
 		if ( pdir[ 0 ] !== '_' ) {
-			meta.dependencies[ '@stdlib/'+pdir ] = 'file:../'+pdir;
+			meta.dependencies[ '@stdlib/'+pdir.replace( /\//g, '-' ) ] = 'file:../'+pdir;
 		}
 	}
 	debug( 'Renaming file...' );
