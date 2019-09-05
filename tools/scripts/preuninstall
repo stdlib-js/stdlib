@@ -71,20 +71,27 @@ function main() {
 		if ( action === 'rename' ) {
 			op = meta[ i ][ 1 ];
 			np = meta[ i ][ 2 ];
-
-			debug( 'Renaming: %s...', np );
-			fs.renameSync( np, op );
+			if ( fs.existsSync( np ) ) {
+				debug( 'Renaming: %s...', np );
+				fs.renameSync( np, op );
+			} else {
+				debug( 'Path does not exist: %s. Skipping...', np );
+			}
 		} else if ( action === 'create' ) {
 			p = meta[ i ][ 1 ];
-			stats = fs.statSync( p );
-			if ( stats.isFile() ) {
-				debug( 'Deleting file: %s...', p );
-				fs.unlinkSync( p );
-			} else if ( stats.isDirectory() ) {
-				debug( 'Removing directory: %s...', p );
-				fs.rmdirSync( p );
+			if ( fs.existsSync( p ) ) {
+				stats = fs.statSync( p );
+				if ( stats.isFile() ) {
+					debug( 'Deleting file: %s...', p );
+					fs.unlinkSync( p );
+				} else if ( stats.isDirectory() ) {
+					debug( 'Removing directory: %s...', p );
+					fs.rmdirSync( p );
+				} else {
+					debug( 'Error: unexpected file type. Path: %s', p );
+				}
 			} else {
-				debug( 'Error: unexpected file type. Path: %s', p );
+				debug( 'Path does not exist: %s. Skipping...', p );
 			}
 		}
 	}
