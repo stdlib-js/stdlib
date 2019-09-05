@@ -221,6 +221,7 @@ function main() {
 	});
 	debug( 'Found %d packages.', pkgs.length );
 
+	// NOTE: the following creates a "shadow" file tree in the parent directory of the project installation directory. The file tree follows the same folder structure as `PKG_DIR` and only includes `package.json` files which point to the actual implementation packages found in `PKG_DIR`. This allows users to resolve `@stdlib/math/base/special/sin` without having to explicitly walk the project tree. However, some package managers that modify the `node_modules` directory will remove this shadow tree during "pruning" (i.e., `npm` during `npm install`). Accordingly, we have to introduce a workaround later to safeguard against `npm` pruning.
 	debug( 'Processing packages...' );
 	for ( i = 0; i < pkgs.length; i++ ) {
 		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
@@ -241,7 +242,8 @@ function main() {
 				meta[ k ] = pkg[ k ];
 			}
 		}
-		meta.name = ''; // NOTE: we need to empty out the `name` field in order to avoid running afoul of npm package name conventions (e.g., cannot have `'@stdlib/array/buffer'`; see https://docs.npmjs.com/files/package.json#name)
+		// We need to empty out the `name` field in order to avoid running afoul of npm package name conventions (e.g., cannot have `'@stdlib/array/buffer'`; see https://docs.npmjs.com/files/package.json#name):
+		meta.name = '';
 
 		meta.main = path.join( resolvePkg( pdir ), pkg.main );
 		debug( 'Resolved package entry point: %s', meta.main );
@@ -273,11 +275,12 @@ function main() {
 	pkg = path.join( ROOT_DIR, 'package.json' );
 	meta = require( pkg ); // eslint-disable-line stdlib/no-dynamic-require
 
+	// NOTE: the following is a workaround to address `npm` (and possibly other package managers) pruning during tree idealization. We modify the root `package.json` to include the top-level packages (which are often namespaces) as local dependencies (see https://docs.npmjs.com/cli/install and `npm install <folder>`). When `npm` "installs" a local folder, it creates a symlink. During pruning, `npm` removes the shadow tree created earlier and, upon reading the modified package meta data, creates symlinks to the local dependencies. Accordingly, while we lose the shadow tree, we should still retain the ability to walk the project package tree as, e.g., `@stdlib/utils` will resolve to `@stdlib/stdlib/lib/node_modules/@stdlib/utils`.
 	debug( 'Modifying package meta data...' );
 	for ( i = 0; i < pkgs.length; i++ ) {
 		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
-		if ( pdir[ 0 ] !== '_' ) {
-			meta.dependencies[ '@stdlib/'+pdir.replace( /\//g, '-' ) ] = 'file:../'+pdir;
+		if ( pdir[ 0 ] !== '_' && pdir.split( '/' ).length === 1 ) {
+			meta.dependencies[ '@stdlib/'+pdir ] = 'file:./lib/node_modules/@stdlib/'+pdir;
 		}
 	}
 	debug( 'Renaming file...' );
