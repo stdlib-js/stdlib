@@ -87,6 +87,9 @@ function main() {
 				} else if ( stats.isDirectory() ) {
 					debug( 'Removing directory: %s...', p );
 					fs.rmdirSync( p );
+				} else if ( stats.isSymbolicLink() ) {
+					debug( 'Removing symbolic link: %s...', p );
+					fs.unlinkSync( p );
 				} else {
 					debug( 'Error: unexpected file type. Path: %s', p );
 				}
