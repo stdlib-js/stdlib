@@ -20,6 +20,7 @@
 #########
 TODO.md
 ROADMAP.md
+.postinstall.json
 
 # Directories #
 ###############
@@ -45,30 +46,55 @@ workshops/
 /etc/
 /docs/
 
-# Node.js #
-###########
-.npmignore
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.o
+*.so
+*.slo
+*.lo
+*.obj
+*.dylib
+*.lai
+*.la
+*.a
+*.lib
+*.ko
+*.elf
+*.node
 
-# Only top-level node_modules:
-/node_modules/
+# Precompiled headers #
+#######################
+*.gch
+*.pch
 
-# TypeScript #
-##############
-tsconfig.json
-tslint.json
-*.tsbuildinfo
+# Executables #
+###############
+*.exe
+*.out
+*.app
 
-# Python #
-##########
-__pycache__/
-*.py[cod]
-*$py.class
-*.egg-info/
-.ipynb_checkpoints
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# Logs #
-########
+# Make an exception for compressed distributable files:
+!dist/*.gz
+
+# Logs and databases #
+######################
 *.log
+*.sql
+*.sqlite
 
 # OS generated files #
 ######################
@@ -86,10 +112,94 @@ Desktop.ini
 ###################
 *~
 
+# Node.js #
+###########
+.npmignore
+
+# Only top-level node_modules:
+/node_modules/
+
+# TypeScript #
+##############
+tsconfig.json
+tslint.json
+*.tsbuildinfo
+
+# Matlab #
+##########
+*.asv
+*.mex*
+
+# Fortran #
+###########
+*.mod
+
+# R #
+#####
+.Rhistory
+.Rapp.history
+.Rproj.user/
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints
+
+# TeX #
+#######
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.dvi
+*-converted-to.*
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.alg
+*.loa
+acs-*.bib
+*.thm
+*.nav
+*.snm
+*.vrb
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*-concordance.tex
+*.tikz
+*-tikzDictionary
+*.idx
+*.ilg
+*.ind
+*.ist
+
 # Git #
 #######
 .git*
 .mailmap
+
+# Visual Studio #
+#################
+.vscode/
+jsconfig.json
 
 # Utilities #
 #############
