@@ -21,7 +21,6 @@
 TODO.md
 ROADMAP.md
 
-
 # Directories #
 ###############
 .circleci/
@@ -46,7 +45,6 @@ workshops/
 /etc/
 /docs/
 
-
 # Node.js #
 ###########
 .npmignore
@@ -54,17 +52,23 @@ workshops/
 # Only top-level node_modules:
 /node_modules/
 
-
 # TypeScript #
 ##############
 tsconfig.json
 tslint.json
+*.tsbuildinfo
 
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints
 
 # Logs #
 ########
 *.log
-
 
 # OS generated files #
 ######################
@@ -78,17 +82,14 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-
 # Temporary files #
 ###################
 *~
-
 
 # Git #
 #######
 .git*
 .mailmap
-
 
 # Utilities #
 #############
