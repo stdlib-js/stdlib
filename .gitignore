@@ -19,16 +19,11 @@
 # Files #
 #########
 .postinstall.json
-lib/node_modules/**/tsconfig.json
-lib/node_modules/**/tslint.json
-
 
 # Directories #
 ###############
 build/
 downloads/
-lib/node_modules/**/node_modules/
-docs/**/node_modules/
 reports/
 tmp/
 
@@ -103,9 +98,17 @@ Desktop.ini
 # Node.js #
 ###########
 /node_modules/
+lib/node_modules/**/node_modules/
+docs/**/node_modules/
 pids
 *.pid
 *.seed
+
+# Typescript #
+##############
+*.tsbuildinfo
+lib/node_modules/**/tsconfig.json
+lib/node_modules/**/tslint.json
 
 # Matlab #
 ##########
@@ -127,6 +130,7 @@ pids
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
 
 # TeX #
 #######
