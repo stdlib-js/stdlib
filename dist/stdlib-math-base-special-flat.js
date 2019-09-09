@@ -57460,6 +57460,8 @@ var _$sincospi_693 = sincospi;
 * // returns [ NaN, NaN ]
 *
 * @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
 * var out = new Float64Array( 2 );
 *
 * var v = sincospi( out, 0.0 );
