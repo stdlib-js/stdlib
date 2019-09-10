@@ -147,6 +147,8 @@ __pycache__/
 *$py.class
 *.egg-info/
 .ipynb_checkpoints
+setup.cfg
+setup.py
 
 # TeX #
 #######
