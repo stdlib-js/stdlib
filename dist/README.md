@@ -167,6 +167,25 @@ The specialized bundle, `stdlib-stats-base-dists-flat`, contains low-level stati
 
 <!-- </bundle-stats> -->
 
+#### Plot
+
+The specialized bundle, `stdlib-plot-flat`, contains plot functionality and exposes this functionality as a `flat` namespace.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-plot-flat.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var plot = stdlib_plot_flat.plot;
+    plt = plot();
+</script>
+```
+
+##### Bundle Statistics
+
+<!-- <bundle-stats files="stdlib-plot-flat.js,stdlib-plot-flat.min.js,stdlib-plot-flat.min.js.gz"> -->
+
+<!-- </bundle-stats> -->
+
 #### Datasets
 
 The dataset bundle, `stdlib-datasets-tree`, contains all datasets and exposes them as a `tree` namespace. Unless an application depends on these datasets, they should **not** be sourced, and, if needed, consider bundling only those datasets which are necessary.
