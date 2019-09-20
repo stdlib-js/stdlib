@@ -120,9 +120,14 @@ jobs:
       # Print debug info:
       - name: 'Print debug info'
         run: |
+          echo 'Git:'
           git --version
+          echo ''
+          echo 'Node.js:'
           node --version
           node -p 'process.platform + "@" + process.arch'
+          echo ''
+          echo 'npm:'
           npm --version
           npm config get registry
         timeout-minutes: 2
