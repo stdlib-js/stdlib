@@ -67,6 +67,12 @@ jobs:
 
         # Define configuration options for each Node.js version:
         include:
+          - OS: 'ubuntu-latest'
+            PLATFORM: 'linux'
+
+          - OS: 'macOS-latest'
+            PLATFORM: 'macos'
+
           - NODE_VERSION: '12'
             NPM_VERSION: '>2.7.0'
 
@@ -90,6 +96,68 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+      # Install system packages:
+      - name: 'Install system packages'
+        run: |
+          if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
+            sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
+            sudo -E apt-get update -q
+            sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-5 gcc-5-multilib g++-5 g++-5-multilib gfortran-5 gfortran-5-multilib xvfb
+            mkdir -p $HOME/bin;
+            ln -s /usr/bin/gcc-5 $HOME/bin/gcc;
+            ln -s /usr/bin/g++-5 $HOME/bin/g++;
+            ln -s /usr/bin/gfortran-5 $HOME/bin/gfortran;
+          else
+            brew update;
+            brew install -v gcc;
+          fi
+
+      # Configure the virtual display server (needed for electron):
+      - name: 'Configure virtual display server'
+        run: |
+          export DISPLAY=':99.0'
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.NODE_VERSION }}
+        timeout-minutes: 10
+
+      # Print debug info:
+      - name: 'Print debug info'
+        run: |
+          echo 'gcc:'
+          gcc --version
+          echo ''
+          echo 'g++:'
+          g++ --version
+          echo ''
+          echo 'gfortran:'
+          gfortran --version
+          echo ''
+          echo 'Git:'
+          git --version
+          echo ''
+          echo 'Node.js:'
+          file $(which node)
+          node --version
+          node -p 'process.platform + "@" + process.arch'
+          echo ''
+          echo 'npm:'
+          npm --version
+          npm config get registry
+        timeout-minutes: 2
+
+      # Update the npm client (older clients cannot handle scoped modules):
+      - name: 'Update npm'
+        shell: bash
+        run: |
+          npm install -g npm@"${{ matrix.NPM_VERSION }}"
+          npm --version
+        timeout-minutes: 5
+
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v1
@@ -102,32 +170,3 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
-
-      # Install Node.js:
-      - name: 'Install Node.js'
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.NODE_VERSION }}
-        timeout-minutes: 5
-
-      # Update the npm client (older clients cannot handle scoped modules):
-      - name: 'Update npm'
-        shell: bash
-        run: |
-          npm install -g npm@"${{ matrix.NPM_VERSION }}"
-        timeout-minutes: 5
-
-      # Print debug info:
-      - name: 'Print debug info'
-        run: |
-          echo 'Git:'
-          git --version
-          echo ''
-          echo 'Node.js:'
-          node --version
-          node -p 'process.platform + "@" + process.arch'
-          echo ''
-          echo 'npm:'
-          npm --version
-          npm config get registry
-        timeout-minutes: 2
