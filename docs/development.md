@@ -124,39 +124,6 @@ Once you have finished cloning the repository into the destination directory, yo
 $ cd stdlib
 ```
 
-## Configuration
-
-Determine the absolute path of the `lib/node_modules` directory within the repository. For example, from the repository directory
-
-<!-- run-disable -->
-
-```bash
-$ echo $(pwd)/lib/node_modules
-/path/to/stdlib-js/stdlib/lib/node_modules
-```
-
-To allow development tools to resolve library packages, set the [`NODE_PATH`][node-path] environment variable by adding the following line to the platform-specific configuration file for configuring user environments (e.g., [`.bash_profile`][bash-profile], [`.profile`][bash-profile], [`.bashrc`][bash-profile], or some other variant).
-
-```text
-export NODE_PATH=/path/to/stdlib-js/stdlib/lib/node_modules
-```
-
-Once finished, you may need to reload the configuration file in existing shells. For example, in a bash shell,
-
-<!-- run-disable -->
-
-```bash
-$ source ~/.bash_profile
-```
-
-To verify that the [`NODE_PATH`][node-path] environment variable is properly set,
-
-<!-- run-disable -->
-
-```bash
-$ echo $NODE_PATH
-```
-
 ## Installation
 
 To install external libraries (**optional**),
@@ -418,10 +385,6 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [wabt]: https://github.com/WebAssembly/wabt
 
 [node-gyp]: https://github.com/nodejs/node-gyp
-
-[node-path]: https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders
-
-[bash-profile]: http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html
 
 [editorconfig]: http://editorconfig.org/
 
