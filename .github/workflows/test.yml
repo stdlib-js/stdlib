@@ -51,7 +51,7 @@ jobs:
   unit_tests:
 
     # Define a display name:
-    name: "unit tests: ${{ matrix.OS }}"
+    name: "unit tests: OS=${{ matrix.OS }}, NODE_VERSION=${{ NODE_VERSION }}"
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
@@ -59,11 +59,11 @@ jobs:
     # Define the build matrix...
     strategy:
       matrix:
+        # Define the list of Node.js versions on which to run this job:
+        NODE_VERSION: ['0.10', '0.12', '4', '6', '8', '10', 12']
+
         # Define the list of operating systems on which to run this job:
         OS: [ubuntu-latest, macOS-latest]
-
-        # Define the list of Node.js versions on which to run this job:
-        NODE_VERSION: ['12', '10', '8', '6', '4', '0.12', '0.10']
 
         # Define configuration options for each Node.js version:
         include:
