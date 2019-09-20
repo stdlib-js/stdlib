@@ -25,24 +25,24 @@ on:
     branches:
       - develop
       - master
-    paths:
-      # Run workflow for all paths which have a `*.js` file extension:
-      - '*'
+    # paths:
+    #   # Run workflow for all paths which have a `*.js` file extension:
+    #   - '*.js'
 
-      # Run workflow whenever the root `package.json` changes:
-      - '/package.json'
+    #   # Run workflow whenever the root `package.json` changes:
+    #   - '/package.json'
 
-      # Run workflow whenever this file changes:
-      - '/.github/workflows/test.yml'
+    #   # Run workflow whenever this file changes:
+    #   - '/.github/workflows/test.yml'
 
-      # Except for paths within certain folders:
-      - '!*/benchmark/*'
-      - '!*/examples/*'
-      - '!*/scripts/*'
+    #   # Except for paths within certain folders:
+    #   - '!*/benchmark/*'
+    #   - '!*/examples/*'
+    #   - '!*/scripts/*'
 
-      # Except for certain top-level directories:
-      - '!/docs/*'
-      - '!/tools/*'
+    #   # Except for certain top-level directories:
+    #   - '!/docs/*'
+    #   - '!/tools/*'
 
 # Workflow jobs:
 jobs:
@@ -94,7 +94,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v1
         with:
-          # Specify whether to remove untracked files before checking out:
+          # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
           # Limit clone depth to the most recent 100 commits:
