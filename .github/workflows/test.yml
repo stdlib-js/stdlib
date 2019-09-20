@@ -48,7 +48,7 @@ on:
 jobs:
 
   # Define a workflow for running unit tests...
-  unit_tests_linux:
+  unit_tests:
 
     # Define a display name:
     name: "unit tests: ${{ matrix.OS }}"
