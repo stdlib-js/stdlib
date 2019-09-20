@@ -51,7 +51,7 @@ jobs:
   unit_tests:
 
     # Define a display name:
-    name: "unit tests: OS=${{ matrix.OS }}, NODE_VERSION=${{ matrix.NODE_VERSION }}"
+    name: "unit tests: NODE_VERSION=${{ matrix.NODE_VERSION }}, OS=${{ matrix.OS }}"
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
