@@ -27,7 +27,7 @@ on:
       - master
     paths:
       # Run workflow for all paths which have a `*.js` file extension:
-      - '*.js'
+      - '*'
 
       # Run workflow whenever the root `package.json` changes:
       - '/package.json'
