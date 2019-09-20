@@ -29,6 +29,12 @@ on:
       # Run workflow for all paths which have a `*.js` file extension:
       - '*.js'
 
+      # Run workflow whenever the root `package.json` changes:
+      - '/package.json'
+
+      # Run workflow whenever this file changes:
+      - '/.github/workflows/test.yml'
+
       # Except for paths within certain folders:
       - '!*/benchmark/*'
       - '!*/examples/*'
