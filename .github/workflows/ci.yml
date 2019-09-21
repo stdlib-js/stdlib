@@ -201,3 +201,10 @@ jobs:
         shell: bash
         run: |
           make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install
+
+      # Run the build task:
+      - name: "Running ${{ matrix.BUILD_TASK}} task"
+        shell: bash
+        run: |
+          chmod +x ./tools/ci/github/script
+          "./tools/ci/github/script ${{ matrix.BUILD_TASK }}"
