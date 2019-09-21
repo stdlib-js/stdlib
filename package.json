@@ -76,7 +76,7 @@
     "common-shakeify": "^0.6.0",
     "david": "^11.0.0",
     "doctrine": "^3.0.0",
-    "dtslint": "^0.8.0",
+    "dtslint": "^0.9.8",
     "envify": "^4.0.0",
     "eslint": "5.x.x",
     "factor-bundle": "^2.5.0",
