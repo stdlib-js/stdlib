@@ -195,12 +195,14 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+        timeout-minutes: 10
 
       # Perform install sequence (accounting for spurious installation errors, such as network timeouts, which can occasionally happen when running `npm install`):
       - name: 'Perform install sequence'
         shell: bash
         run: |
           make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install
+        timeout-minutes: 15
 
       # Run the build task:
       - name: "Running ${{ matrix.BUILD_TASK}} task"
@@ -208,3 +210,4 @@ jobs:
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
           "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
+        timeout-minutes: 360
