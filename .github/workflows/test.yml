@@ -149,6 +149,7 @@ jobs:
         run: |
           echo 'PATH:'
           echo $PATH
+          echo ''
           echo 'gcc:'
           gcc --version
           echo ''
