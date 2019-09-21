@@ -195,3 +195,9 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+      # Perform install sequence (accounting for spurious installation errors, such as network timeouts, which can occasionally happen when running `npm install`):
+      - name: 'Perform install sequence'
+        shell: bash
+        run: |
+          make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install
