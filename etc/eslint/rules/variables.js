@@ -50,35 +50,6 @@ var rules = {};
 rules[ 'init-declarations' ] = 'off';
 
 /**
-* Address IE8 bug in which the `catch` clause can overwrite a variable in the outer scope.
-*
-* @name no-catch-shadow
-* @memberof rules
-* @type {string}
-* @default 'error'
-* @see [no-catch-shadow]{@link http://eslint.org/docs/rules/no-catch-shadow}
-*
-* @example
-* // Bad...
-* var err = 'x';
-* try {
-*     throw new Error( 'beep' );
-* } catch( err ) {
-*     // Do something...
-* }
-*
-* @example
-* // Good...
-* var err = 'x';
-* try {
-*     throw new Error( 'beep' );
-* } catch( error ) {
-*     // Do something...
-* }
-*/
-rules[ 'no-catch-shadow' ] = 'error';
-
-/**
 * Never allow variables to be deleted; only properties.
 *
 * @name no-delete-var
@@ -130,6 +101,26 @@ rules[ 'no-label-var' ] = 'error';
 rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 
 /**
+* Never allow shadowing of global variable names in a local scope.
+*
+* @name no-shadow
+* @memberof rules
+* @type {Array}
+* @see [no-shadow]{@link http://eslint.org/docs/rules/no-shadow}
+*
+* @example
+* // Okay...
+* var x = 'beep';
+* function foo() {
+*     var x = 'boop';
+* }
+*/
+rules[ 'no-shadow' ] = [ 'error', {
+	'builtinGlobals': true,
+	'hoist': 'functions'
+}];
+
+/**
 * Never allow reassignment of restricted names.
 *
 * @name no-shadow-restricted-names
@@ -145,43 +136,6 @@ rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 * }
 */
 rules[ 'no-shadow-restricted-names' ] = 'error';
-
-/**
-* Allow shadowing of variable names in a local scope.
-*
-* @name no-shadow
-* @memberof rules
-* @type {string}
-* @default 'off'
-* @see [no-shadow]{@link http://eslint.org/docs/rules/no-shadow}
-*
-* @example
-* // Okay...
-* var x = 'beep';
-* function foo() {
-*     var x = 'boop';
-* }
-*/
-rules[ 'no-shadow' ] = 'off';
-
-/**
-* Never allow a variable to be initialized as `undefined`.
-*
-* @name no-undef-init
-* @memberof rules
-* @type {string}
-* @default 'error'
-* @see [no-undef-init]{@link http://eslint.org/docs/rules/no-undef-init}
-*
-* @example
-* // Bad...
-* var x = undefined;
-*
-* @example
-* // Good...
-* var x;
-*/
-rules[ 'no-undef-init' ] = 'error';
 
 /**
 * Never allow undeclared variables.
@@ -201,6 +155,25 @@ rules[ 'no-undef-init' ] = 'error';
 * var x = 5;
 */
 rules[ 'no-undef' ] = 'error';
+
+/**
+* Never allow a variable to be initialized as `undefined`.
+*
+* @name no-undef-init
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-undef-init]{@link http://eslint.org/docs/rules/no-undef-init}
+*
+* @example
+* // Bad...
+* var x = undefined;
+*
+* @example
+* // Good...
+* var x;
+*/
+rules[ 'no-undef-init' ] = 'error';
 
 /**
 * Never allow the use of `undefined`.

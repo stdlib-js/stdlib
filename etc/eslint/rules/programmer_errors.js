@@ -78,6 +78,17 @@ rules[ 'for-direction' ] = 'error';
 rules[ 'getter-return' ] = 'error';
 
 /**
+* Never allow using an async function as a `Promise` executor.
+*
+* @name no-async-promise-executor)
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-async-promise-executor)]{@link https://eslint.org/docs/rules/no-async-promise-executor}
+*/
+rules[ 'no-async-promise-executor' ] = 'error';
+
+/**
 * Warn when using `await` inside of loops.
 *
 * @name no-await-in-loop
@@ -311,25 +322,6 @@ rules[ 'no-dupe-keys' ] = 'error';
 rules[ 'no-duplicate-case' ] = 'error';
 
 /**
-* Never allow empty character classes in regular expression literals.
-*
-* @name no-empty-character-class
-* @memberof rules
-* @type {string}
-* @default 'error'
-* @see [no-empty-character-class]{@link http://eslint.org/docs/rules/no-empty-character-class}
-*
-* @example
-* // Bad...
-* var re = /^abc[]/;
-*
-* @example
-* // Good...
-* var re = /^abc[a-z]/;
-*/
-rules[ 'no-empty-character-class' ] = 'error';
-
-/**
 * Never allow empty block statements, including when using `try/catch`.
 *
 * @name no-empty
@@ -363,6 +355,25 @@ rules[ 'no-empty-character-class' ] = 'error';
 * }
 */
 rules[ 'no-empty' ] = 'error';
+
+/**
+* Never allow empty character classes in regular expression literals.
+*
+* @name no-empty-character-class
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-empty-character-class]{@link http://eslint.org/docs/rules/no-empty-character-class}
+*
+* @example
+* // Bad...
+* var re = /^abc[]/;
+*
+* @example
+* // Good...
+* var re = /^abc[a-z]/;
+*/
+rules[ 'no-empty-character-class' ] = 'error';
 
 /**
 * Never allow reassignment of an exception parameter in a `catch` block.
@@ -485,6 +496,17 @@ rules[ 'no-extra-semi' ] = 'error';
 rules[ 'no-func-assign' ] = 'error';
 
 /**
+* Never allow assigning to imported bindings.
+*
+* @name no-import-assign
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-import-assign]{@link http://eslint.org/docs/rules/no-import-assign}
+*/
+rules[ 'no-import-assign' ] = 'error';
+
+/**
 * Never allow either function or variable declarations within inner block scopes.
 *
 * @name no-inner-declarations
@@ -556,6 +578,25 @@ rules[ 'no-invalid-regexp' ] = 'error';
 * @see [no-irregular-whitespace]{@link http://eslint.org/docs/rules/no-irregular-whitespace}
 */
 rules[ 'no-irregular-whitespace' ] = 'error';
+
+/**
+* Never allow characters which are made with multiple code points in character class syntax.
+*
+* @name no-misleading-character-class
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-misleading-character-class]{@link http://eslint.org/docs/rules/no-misleading-character-class}
+*
+* @example
+* // Bad...
+* var re = /^[👍]$/;
+*
+* @example
+* // Good...
+* var re = /^[👍]$/u;
+*/
+rules[ 'no-misleading-character-class' ] = 'error';
 
 /**
 * Never allow calling of global objects as functions.
@@ -761,6 +802,17 @@ rules[ 'no-unsafe-finally' ] = 'error';
 * var x = 3 - 4;
 */
 rules[ 'no-unsafe-negation' ] = 'error';
+
+/**
+* Never allow assignments that can lead to race conditions due to usage of await or yield.
+*
+* @name require-atomic-updates
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-atomic-updates]{@link http://eslint.org/docs/rules/require-atomic-updates}
+*/
+rules[ 'require-atomic-updates' ] = 'error';
 
 /**
 * Never allow direct comparison with `NaN`.

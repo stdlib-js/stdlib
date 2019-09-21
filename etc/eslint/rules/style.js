@@ -447,6 +447,43 @@ rules[ 'func-style' ] = [ 'error', 'declaration', {
 }];
 
 /**
+* Never allow linebreaks between arguments of a function call.
+*
+* @name function-call-argument-newline
+* @memberof rules
+* @type {Array}
+* @default [ 'error', 'never' ]
+* @see [function-call-argument-newline]{@link https://eslint.org/docs/rules/function-call-argument-newline}
+*
+* @example
+* // Bad...
+* function foo(
+*     x,
+*     y
+* ) {
+*     return x + y;
+* }
+*
+* @example
+* // Bad...
+* console.log(
+*     1,
+*     2
+* );
+*
+* @example
+* // Good...
+* function foo( x, y ) {
+*     return x + y;
+* }
+*
+* @example
+* // Good...
+* console.log( 1, 2 );
+*/
+rules[ 'function-call-argument-newline' ] = [ 'error', 'never' ];
+
+/**
 * Never allow linebreaks inside parentheses of function parameters or arguments.
 *
 * @name function-paren-newline
@@ -805,19 +842,6 @@ rules[ 'max-params' ] = [ 'error', {
 }];
 
 /**
-* Require only `1` statement per line.
-*
-* @name max-statements-per-line
-* @memberof rules
-* @type {Array}
-* @default [ 'error', {'max': 1} ]
-* @see [max-statements-per-line]{@link http://eslint.org/docs/rules/max-statements-per-line}
-*/
-rules[ 'max-statements-per-line' ] = [ 'error', {
-	'max': 1
-}];
-
-/**
 * Warn when a function has more than `100` statements.
 *
 * @name max-statements
@@ -828,6 +852,19 @@ rules[ 'max-statements-per-line' ] = [ 'error', {
 */
 rules[ 'max-statements' ] = [ 'warn', {
 	'max': 100
+}];
+
+/**
+* Require only `1` statement per line.
+*
+* @name max-statements-per-line
+* @memberof rules
+* @type {Array}
+* @default [ 'error', {'max': 1} ]
+* @see [max-statements-per-line]{@link http://eslint.org/docs/rules/max-statements-per-line}
+*/
+rules[ 'max-statements-per-line' ] = [ 'error', {
+	'max': 1
 }];
 
 /**
@@ -871,8 +908,8 @@ rules[ 'new-cap' ] = [ 'error', {
 *
 * @name new-parens
 * @memberof rules
-* @type {string}
-* @default 'error'
+* @type {Array}
+* @default [ 'error', 'always' ]
 * @see [new-parens]{@link http://eslint.org/docs/rules/new-parens}
 *
 * @example
@@ -883,7 +920,7 @@ rules[ 'new-cap' ] = [ 'error', {
 * // Good...
 * var arr = new Array();
 */
-rules[ 'new-parens' ] = 'error';
+rules[ 'new-parens' ] = [ 'error', 'always' ];
 
 /**
 * Do not enforce newlines within chained calls.
@@ -1390,6 +1427,29 @@ rules[ 'object-property-newline' ] = [ 'error', {
 }];
 
 /**
+* Require multiple variable declarations per function or block.
+*
+* @name one-var
+* @memberof rules
+* @type {Array}
+* @see [one-var]{@link http://eslint.org/docs/rules/one-var}
+*
+* @example
+* // Bad...
+* var x, y;
+*
+* @example
+* // Good...
+* var x;
+* var y;
+*/
+rules[ 'one-var' ] = [ 'error', {
+	'var': 'never',
+	'let': 'never',
+	'const': 'never'
+}];
+
+/**
 * Do not require newlines around variable declarations.
 *
 * @name one-var-declaration-per-line
@@ -1413,29 +1473,6 @@ rules[ 'object-property-newline' ] = [ 'error', {
 * var y;
 */
 rules[ 'one-var-declaration-per-line' ] = 'off';
-
-/**
-* Require multiple variable declarations per function or block.
-*
-* @name one-var
-* @memberof rules
-* @type {Array}
-* @see [one-var]{@link http://eslint.org/docs/rules/one-var}
-*
-* @example
-* // Bad...
-* var x, y;
-*
-* @example
-* // Good...
-* var x;
-* var y;
-*/
-rules[ 'one-var' ] = [ 'error', {
-	'var': 'never',
-	'let': 'never',
-	'const': 'never'
-}];
 
 /**
 * Prefer operator shorthand.

@@ -219,6 +219,29 @@ rules[ 'curly' ] = 'error';
 rules[ 'default-case' ] = 'error';
 
 /**
+* Always require default parameters to be last.
+*
+* @name default-param-last
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [default-param-last]{@link http://eslint.org/docs/rules/default-param-last}
+*
+* @example
+* // Bad...
+* function foo( a = 1, b ) {
+*     // No-op...
+* }
+*
+* @example
+* // Good...
+* function foo( b, a = 1 ) {
+*     // No-op...
+* }
+*/
+rules[ 'default-param-last' ] = 'error';
+
+/**
 * Require that a dot be on the same line as a property.
 *
 * @name dot-location
@@ -857,6 +880,25 @@ rules[ 'no-multi-spaces' ] = [ 'error', {
 rules[ 'no-multi-str' ] = 'error';
 
 /**
+* Never allow use the `new` operator without assignment.
+*
+* @name no-new
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-new]{@link http://eslint.org/docs/rules/no-new}
+*
+* @example
+* // Bad...
+* new Foo();
+*
+* @example
+* // Good...
+* var f = new Foo();
+*/
+rules[ 'no-new' ] = 'error';
+
+/**
 * Never allow using the `Function` constructor to create functions.
 *
 * @name no-new-func
@@ -897,23 +939,23 @@ rules[ 'no-new-func' ] = 'error';
 rules[ 'no-new-wrappers' ] = 'error';
 
 /**
-* Never allow use the `new` operator without assignment.
+* Never allow octal literals that begin with a leading zero; e.g., 071 (=> 57).
 *
-* @name no-new
+* @name no-octal
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-new]{@link http://eslint.org/docs/rules/no-new}
+* @see [no-octal]{@link http://eslint.org/docs/rules/no-octal}
 *
 * @example
 * // Bad...
-* new Foo();
+* var num = 071;
 *
 * @example
 * // Good...
-* var f = new Foo();
+* var num = '071';
 */
-rules[ 'no-new' ] = 'error';
+rules[ 'no-octal' ] = 'error';
 
 /**
 * Never allow octal escape sequences, which are deprecated.
@@ -933,25 +975,6 @@ rules[ 'no-new' ] = 'error';
 * var foo = 'Copyright \u00A9';
 */
 rules[ 'no-octal-escape' ] = 'error';
-
-/**
-* Never allow octal literals that begin with a leading zero; e.g., 071 (=> 57).
-*
-* @name no-octal
-* @memberof rules
-* @type {string}
-* @default 'error'
-* @see [no-octal]{@link http://eslint.org/docs/rules/no-octal}
-*
-* @example
-* // Bad...
-* var num = 071;
-*
-* @example
-* // Good...
-* var num = '071';
-*/
-rules[ 'no-octal' ] = 'error';
 
 /**
 * Allow parameter reassignment (although bugs can arise when doing so).
@@ -1234,6 +1257,36 @@ rules[ 'no-unused-labels' ] = 'error';
 rules[ 'no-useless-call' ] = 'error';
 
 /**
+* Never allow unnecessary catch clauses.
+*
+* @name no-useless-catch
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-useless-catch]{@link http://eslint.org/docs/rules/no-useless-catch}
+*
+* @example
+* // Bad...
+* try {
+*     throw new Error( 'beep' );
+* } catch ( err ) {
+*     // Catch is unnecessary if we are just rethrowing...
+*     throw err;
+* }
+*
+* @example
+* // Good...
+* try {
+*     throw new Error( 'beep' );
+* } catch ( err ) {
+*     if ( err instanceof TypeError) {
+*         throw err;
+*     }
+* }
+*/
+rules[ 'no-useless-catch' ] = 'error';
+
+/**
 * Never allow concatenation of two string literals which can be combined as a single literal.
 *
 * @name no-useless-concat
@@ -1348,6 +1401,17 @@ rules[ 'no-warning-comments' ] = [ 'warn', {
 rules[ 'no-with' ] = 'error';
 
 /**
+* Do not require the use of ES2018 named capture groups.
+*
+* @name prefer-named-capture-group
+* @memberof rules
+* @type {string}
+* @default 'off'
+* @see [prefer-named-capture-group]{@link http://eslint.org/docs/rules/prefer-named-capture-group}
+*/
+rules[ 'prefer-named-capture-group' ] = 'off';
+
+/**
 * Always require that promises are rejected with `Error` objects.
 *
 * @name prefer-promise-reject-errors
@@ -1358,6 +1422,25 @@ rules[ 'no-with' ] = 'error';
 rules[ 'prefer-promise-reject-errors' ] = [ 'error', {
 	'allowEmptyReject': false
 }];
+
+/**
+* Always require regular expression literals when not dynamically generating a regular expression.
+*
+* @name prefer-regex-literals
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [prefer-regex-literals]{@link https://eslint.org/docs/rules/prefer-regex-literals}
+*
+* @example
+* // Bad...
+* var re = new RegExp( 'foo' );
+*
+* @example
+* // Good...
+* var re = /foo/;
+*/
+rules[ 'prefer-regex-literals' ] = 'error';
 
 /**
 * Always require a `radix` parameter to `parseInt()`.
@@ -1404,6 +1487,25 @@ rules[ 'radix' ] = [ 'error', 'always' ];
 rules[ 'require-await' ] = 'error';
 
 /* eslint-enable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
+
+/**
+* Always require the `u` flag when a regular expression involves UTF-16 surrogate pairs.
+*
+* @name require-unicode-regexp
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [require-unicode-regexp]{@link http://eslint.org/docs/rules/require-unicode-regexp}
+*
+* @example
+* // Bad...
+* var re = /^[👍]$/;
+*
+* @example
+* // Good...
+* var re = /^[👍]$/u;
+*/
+rules[ 'require-unicode-regexp' ] = 'error';
 
 /**
 * Always declare variables at the top of their scope to represent hoisting.
