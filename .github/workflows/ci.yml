@@ -216,3 +216,11 @@ jobs:
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
           "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 360
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        shell: bash
+        run: |
+          chmod +x $GITHUB_WORKSPACE/tools/ci/github/on_failure
+          "$GITHUB_WORKSPACE/tools/ci/github/on_failure"
+        timeout-minutes: 5
