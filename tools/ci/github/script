@@ -29,7 +29,7 @@
 task="$1"
 
 # Define an output file to store log output:
-log_dir='./var/log'
+log_dir='./tmp/var/log'
 log_file="${log_dir}/ci.log"
 
 # Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
