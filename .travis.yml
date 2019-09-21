@@ -84,7 +84,7 @@ env:
     - LINKER=g++
     - NODE_PATH="$TRAVIS_BUILD_DIR/lib/node_modules"
 
-  # Environment variables used to construct build matrix:
+  # Environment variables used to construct the build matrix:
   matrix:
     - BUILD_TASK='test-npm-install'
     - BUILD_TASK='test'
