@@ -206,5 +206,5 @@ jobs:
       - name: "Running ${{ matrix.BUILD_TASK}} task"
         shell: bash
         run: |
-          chmod +x ./tools/ci/github/script
-          "./tools/ci/github/script ${{ matrix.BUILD_TASK }}"
+          chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
+          "$GITHUB_WORKSPACE/tools/ci/github/script ${{ matrix.BUILD_TASK }}"
