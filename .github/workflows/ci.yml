@@ -219,6 +219,7 @@ jobs:
 
       # View the log file if the previous step fails:
       - name: 'View log file'
+        if: failure()
         shell: bash
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/on_failure
