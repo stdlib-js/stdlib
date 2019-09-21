@@ -78,7 +78,7 @@
     "doctrine": "^3.0.0",
     "dtslint": "^0.9.8",
     "envify": "^4.0.0",
-    "eslint": "5.x.x",
+    "eslint": "^6.4.0",
     "factor-bundle": "^2.5.0",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
