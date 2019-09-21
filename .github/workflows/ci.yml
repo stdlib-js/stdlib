@@ -115,6 +115,7 @@ jobs:
           echo ::set-env name=CXX::g++
           echo ::set-env name=CXX_COMPILER::g++
           echo ::set-env name=LINKER::g++
+          echo ::set-env name=GITHUB::true
         timeout-minutes: 1
 
       # Configure the virtual display server (needed for electron):
