@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: test
+name: CI
 
 # Workflow triggers:
 on:
@@ -47,11 +47,11 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Define a workflow for running unit tests...
-  unit_tests:
+  # Define a workflow for running continuous integration (CI) build tasks on Linux and MacOS...
+  ci_linux_macos:
 
     # Define a display name:
-    name: "unit tests: NODE_VERSION=${{ matrix.NODE_VERSION }}, OS=${{ matrix.OS }}"
+    name: "${{ matrix.BUILD_TASK }}: NODE_VERSION=${{ matrix.NODE_VERSION }}, OS=${{ matrix.OS }}"
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
@@ -63,7 +63,10 @@ jobs:
         NODE_VERSION: ['12', '10', '8', '6', '4', '0.12', '0.10']
 
         # Define the list of operating systems on which to run this job:
-        OS: [ubuntu-latest, macOS-latest]
+        OS: ['ubuntu-latest', 'macOS-latest']
+
+        # Define the list of build tasks:
+        BUILD_TASK: ['test-npm-install', 'test', 'benchmark', 'examples', 'test-coverage']
 
         # Define configuration options for each Node.js version:
         include:
