@@ -210,7 +210,7 @@ jobs:
         timeout-minutes: 15
 
       # Run the build task:
-      - name: "Run build task"
+      - name: 'Run build task'
         shell: bash
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
