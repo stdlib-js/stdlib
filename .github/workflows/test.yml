@@ -115,6 +115,19 @@ jobs:
           fi
         timeout-minutes: 10
 
+      # Set environment variables:
+      - name: 'Set environment variables'
+        shell: bash
+        run: |
+          echo ::set-env name=FC::gfortran
+          echo ::set-env name=FORTRAN_COMPILER::gfortran
+          echo ::set-env name=CC::gcc
+          echo ::set-env name=C_COMPILER::gcc
+          echo ::set-env name=CXX::g++
+          echo ::set-env name=CXX_COMPILER::g++
+          echo ::set-env name=LINKER::g++
+        timeout-minutes: 1
+
       # Configure the virtual display server (needed for electron):
       - name: 'Configure virtual display server'
         shell: bash
