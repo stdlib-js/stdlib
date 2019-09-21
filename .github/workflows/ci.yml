@@ -56,8 +56,12 @@ jobs:
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
 
-    # Define the build matrix...
+    # Define the build matrix strategy...
     strategy:
+      # Specify whether to cancel all in-progress jobs if any matrix job fails:
+      fail-fast: true
+
+      # Define the build matrix:
       matrix:
         # Define the list of build tasks:
         BUILD_TASK: ['test-npm-install', 'test', 'benchmark', 'examples', 'test-coverage']
