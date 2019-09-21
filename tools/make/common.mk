@@ -75,6 +75,7 @@ endif
 TRAVIS ?=
 APPVEYOR ?=
 CIRCLECI ?=
+GITHUB ?=
 ifeq ($(TRAVIS), true)
 	CI_SERVICE ?= travis
 else
@@ -84,7 +85,11 @@ else
 ifeq ($(CIRCLECI), true)
 	CI_SERVICE ?= circle
 else
+ifeq ($(GITHUB), true)
+	CI_SERVICE ?= github
+else
 	CI_SERVICE ?= none
+endif
 endif
 endif
 endif

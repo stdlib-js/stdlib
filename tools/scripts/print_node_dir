@@ -29,15 +29,13 @@
 
 // MODULES //
 
-var resolve = require( 'path' ).resolve;
-var isWindows = require( '@stdlib/assert/is-windows' );
-var dirname = require( '@stdlib/utils/dirname' );
+var path = require( 'path' );
 
 
 // MAIN //
 
 /**
-* Finds the Node.js directory path.
+* Returns the Node.js directory path.
 *
 * ## Notes
 *
@@ -47,10 +45,10 @@ var dirname = require( '@stdlib/utils/dirname' );
 * @returns {string} directory path
 */
 function main() {
-	if ( isWindows ) {
-		return dirname( process.execPath );
+	if ( process.platform === 'win32' ) {
+		return path.dirname( process.execPath );
 	}
-	return resolve( process.execPath, '..', '..' );
+	return path.resolve( process.execPath, '..', '..' );
 }
 
 console.log( main() );
