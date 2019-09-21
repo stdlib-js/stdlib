@@ -207,4 +207,4 @@ jobs:
         shell: bash
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
-          "$GITHUB_WORKSPACE/tools/ci/github/script ${{ matrix.BUILD_TASK }}"
+          "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
