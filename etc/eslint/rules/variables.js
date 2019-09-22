@@ -101,7 +101,7 @@ rules[ 'no-label-var' ] = 'error';
 rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 
 /**
-* Never allow shadowing of global variable names in a local scope.
+* Allow shadowing of global variable names in a local scope.
 *
 * @name no-shadow
 * @memberof rules
@@ -115,10 +115,7 @@ rules[ 'no-restricted-globals' ] = [ 'error', 'event', 'fdescribe' ];
 *     var x = 'boop';
 * }
 */
-rules[ 'no-shadow' ] = [ 'error', {
-	'builtinGlobals': true,
-	'hoist': 'functions'
-}];
+rules[ 'no-shadow' ] = 'off';
 
 /**
 * Never allow reassignment of restricted names.
