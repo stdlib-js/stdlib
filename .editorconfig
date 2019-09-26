@@ -32,6 +32,10 @@ insert_final_newline = true
 [*.js]
 indent_style = tab
 
+# Set properties for TypeScript files:
+[*.ts]
+indent_style = tab
+
 # Set properties for Python files:
 [*.py]
 indent_style = space
