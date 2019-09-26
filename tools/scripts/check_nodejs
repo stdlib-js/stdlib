@@ -42,7 +42,7 @@ if [[ -x "${NODEJS}" ]] && "${NODEJS}" --version >/dev/null; then
 	echo 'Node.js is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please download Node.js version >0.10 (https://nodejs.org/en/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please download Node.js version >=0.10.x (https://nodejs.org/en/; the latest LTS is recommended). Once installed, run the command again.' >&2
 	exit 1
 fi
 
