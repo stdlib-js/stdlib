@@ -47,6 +47,28 @@ $ cd ./path/to/project
 $ subl .
 ```
 
+## Snippets and Completions
+
+Included in this directory are snippets and completions for automating various boilerplate tasks. To install them, determine the location where [Sublime Text][sublime-text] packages are installed. For example, on MacOS,
+
+```text
+/Users/<user>/Library/Application Support/Sublime Text 3/Packages
+```
+
+where `<user>` is your user name. Navigate to the package installation folder,
+
+```bash
+$ cd ./path/to/package/installation/folder
+```
+
+and create a `stdlib` directory
+
+```bash
+$ mkdir stdlib
+```
+
+Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` files to the newly created directory such that all files reside within the top-level `stdlib` directory (i.e., do not copy over the `completions` and `snippets` folders). Once copied to the directory, [Sublime Text][sublime-text] will automatically install them for use within the editor.
+
 ## Packages
 
 -   [**Package Control**][sublime-text-package-control]: package manager which helps in finding, installing, and keeping installed packages up-to-date. This **should** be installed prior to installing any of the packages subsequently listed here.

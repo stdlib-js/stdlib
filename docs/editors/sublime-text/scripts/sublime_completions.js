@@ -34,7 +34,7 @@ var completions = require( './completions' );
 var debug = logger( 'sublime-completions' );
 
 // Output directory:
-var DIR = resolve( __dirname, '..' );
+var DIR = resolve( __dirname, '..', 'completions' );
 
 
 // MAIN //
