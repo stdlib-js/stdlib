@@ -35,3 +35,12 @@ list-pkgs-types: $(LIST_PACKAGE_TYPES) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_TYPES) $(LIST_PACKAGE_TYPES_FLAGS) $(SRC_DIR)
 
 .PHONY: list-pkgs-types
+
+# List all packages without TypeScript declarations.
+#
+# This target prints a newline-delimited list of all packages without TypeScript declarations.
+
+list-pkgs-without-types:
+	$(QUIET) comm -23 <($(MAKE) -f $(this_file) list-lib-pkgs | sort) <($(MAKE) -f $(this_file) list-pkgs-types | sort)
+
+.PHONY: list-pkgs-without-types
