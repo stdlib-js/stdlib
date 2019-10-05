@@ -74,7 +74,7 @@ The following external libraries can be automatically downloaded and compiled fr
 
 ## Download
 
-To acquire the source code, first navigate to the parent directory into which you want to place the project git repository. Because of this project's heavy reliance on [GNU make][make], the directory path should **not** include spaces or any other shell meta characters such as `$` or `:`, as these characters will cause [GNU make][make] and the installation process to fail.
+To acquire the source code, first navigate to the parent directory into which you want to place the project [Git][git] repository. Because of this project's heavy reliance on [GNU make][make], the directory path should **not** include spaces or any other shell meta characters such as `$` or `:`, as these characters will cause [GNU make][make] and the installation process to fail.
 
 <!-- run-disable -->
 
@@ -168,7 +168,7 @@ To initialize the development environment,
 $ make init
 ```
 
-Initializing the development environment configures git hooks and other bells and whistles to aid in development. Git hooks are especially important as they enable automatic linting and testing to ensure that code meets style specifications and does not break.
+Initializing the development environment configures [Git][git] hooks and other bells and whistles to aid in development. Git hooks are especially important as they enable automatic linting and testing to ensure that code meets style specifications and does not break.
 
 ## Verification
 
@@ -235,7 +235,7 @@ workshops  workshops
     $ make install
     ```
 
-    will be enough to resolve these conflicts. Otherwise, remove the git repository, clone, and reinstall.
+    will be enough to resolve these conflicts. Otherwise, remove the [Git][git] repository, clone, and reinstall.
 
 ## Editors
 

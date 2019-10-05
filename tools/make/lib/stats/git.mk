@@ -20,7 +20,7 @@
 
 # VARIABLES #
 
-# Define the path to the directory containing scripts for mining the git repository:
+# Define the path to the directory containing scripts for mining the Git repository:
 GIT_SCRIPTS_DIR ?= $(TOOLS_DIR)/git/scripts
 
 # Define a directory path for when listing contributors:

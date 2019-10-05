@@ -81,9 +81,9 @@ If you want to contribute a new package, be sure to
 
 -   read and follow the [package development guide][stdlib-docs].
 
-If you are unfamiliar with [git][git], the version control system used by GitHub and this project,
+If you are unfamiliar with [Git][git], the version control system used by GitHub and this project,
 
--   see the [git][git] docs.
+-   see the [Git][git] docs.
 -   try a tutorial, such as the [tutorial][github-git-tutorial] provided by GitHub.
 
 Next, take a look around the project, noting the style and organization of documentation, tests, examples, benchmarks, and source implementations. Consistency is highly **prioritized** within stdlib. Thus, the more you are able to match and adhere to project conventions and style, the more likely your contribution will be accepted. While we have done our best to automate linting and style guidelines, such automation is not perfect and cannot adequately capture the inevitable exceptions and nuance to many rules. In short, the more you study existing practice, the better prepared you will be to contribute to stdlib.
@@ -142,7 +142,7 @@ Start making your changes and/or implementing the new feature. Any text you writ
 
 #### Step 4: Commit
 
-Ensure that you have configured [git][git] to know your name and email address.
+Ensure that you have configured [Git][git] to know your name and email address.
 
 ```bash
 $ git config --global user.name "Jane Doe"
@@ -156,14 +156,14 @@ $ git add files/which/changed
 $ git commit
 ```
 
-When writing commit messages, follow the git [style guide][stdlib-style-guides].
+When writing commit messages, follow the Git [style guide][stdlib-style-guides].
 
 #### Step 5: Sync
 
 To incorporate recent changes from the `upstream` repository during development, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold:
 
 1.  interleaved histories make [squashing][git-rewriting-history] commits more difficult
-2.  a standard merge increases the risk of incomplete/broken commits appearing in the git history.
+2.  a standard merge increases the risk of incomplete/broken commits appearing in the [Git][git] history.
 
 An ideal commit history is one in which, at no point in time, is the project in a broken state. While not always possible (mistakes happen), striving for this ideal facilitates time travel and software archeology.
 
@@ -176,7 +176,7 @@ $ git rebase upstream/develop
 
 Tests should accompany **all** bug fixes and features. For guidance on how to write tests, consult existing tests within the project.
 
-**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. If git hooks have been enabled,
+**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. If [Git][git] hooks have been enabled,
 
 ```bash
 $ make init
@@ -218,7 +218,7 @@ $ git commit
 $ git push origin <branch>
 ```
 
-Note that, once a [pull request][github-pull-request] has been made (i.e., your local repository commits have been pushed to a remote server), you should **not** perform any further [rewriting][git-rewriting-history] of git history. If the history needs modification, a contributor will modify the history during the merge process. The rationale for **not** rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
+Note that, once a [pull request][github-pull-request] has been made (i.e., your local repository commits have been pushed to a remote server), you should **not** perform any further [rewriting][git-rewriting-history] of [Git][git] history. If the history needs modification, a contributor will modify the history during the merge process. The rationale for **not** rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
 
 #### Step 9: Land
 
@@ -280,7 +280,7 @@ The project can **never** have enough tests. To address areas lacking sufficient
 
 > By contributing documentation to the project, you are agreeing to release it under the project [license][stdlib-license].
 
-Project documentation is localized within each package. Similar to code, you should modify documentation using [git][git]. Provided you have followed the [development guide][stdlib-development] and enabled git hooks,
+Project documentation is localized within each package. Similar to code, you should modify documentation using [Git][git]. Provided you have followed the [development guide][stdlib-development] and enabled [Git][git] hooks,
 
 ```bash
 $ make init

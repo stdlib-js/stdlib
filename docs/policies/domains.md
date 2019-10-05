@@ -38,7 +38,7 @@ List of **currently** unused domains:
 
 ## Changes
 
-This is a living document which may be periodically updated. Please refer to the [git history for this document][stdlib-git-commit-log-domains] to view the changes.
+This is a living document which may be periodically updated. Please refer to the [Git history for this document][stdlib-git-commit-log-domains] to view the changes.
 
 ## License
 

@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# A git hook called by `git commit`. If this scripts exits with a non-zero status, the commit will be aborted.
+# A Git hook called by `git commit`. If this scripts exits with a non-zero status, the commit will be aborted.
 #
 # This hook is called with no arguments.
 

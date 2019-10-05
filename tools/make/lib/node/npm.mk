@@ -21,7 +21,7 @@
 # Define the version bump type (e.g., pre-patch, patch, pre-minor, minor, pre-major, major, pre-release):
 NPM_VERSION ?=
 
-# Define a git commit message when incrementing the project version:
+# Define a Git commit message when incrementing the project version:
 NPM_VERSION_MESSAGE ?=
 
 # Define command-line options when incrementing the project version:
