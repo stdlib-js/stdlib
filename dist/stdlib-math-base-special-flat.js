@@ -39031,7 +39031,7 @@ var _$ceilb_216 = _$ceilb_215;
 // MAIN //
 
 /**
-* Rounds a numeric value to the nearest number toward positive infinity with \\(N\\) significant figures.
+* Rounds a numeric value to the nearest number toward positive infinity with \\(n\\) significant figures.
 *
 * @param {number} x - input value
 * @param {PositiveInteger} n - number of significant figures
@@ -39137,7 +39137,7 @@ var _$ceilsd_219 = ceilsd;
 'use strict';
 
 /**
-* Round a numeric value to the nearest number toward positive infinity with `N` significant figures.
+* Round a numeric value to the nearest number toward positive infinity with `n` significant figures.
 *
 * @module @stdlib/math/base/special/ceilsd
 *
@@ -55993,7 +55993,7 @@ var _$roundb_658 = _$roundb_659;
 // MAIN //
 
 /**
-* Rounds a numeric value to the nearest number with \\(N\\) significant figures.
+* Rounds a numeric value to the nearest number with \\(n\\) significant figures.
 *
 * @param {number} x - input value
 * @param {PositiveInteger} n - number of significant figures
@@ -56099,7 +56099,7 @@ var _$roundsd_663 = roundsd;
 'use strict';
 
 /**
-* Round a numeric value to the nearest number with `N` significant figures.
+* Round a numeric value to the nearest number with `n` significant figures.
 *
 * @module @stdlib/math/base/special/roundsd
 *
@@ -59093,7 +59093,7 @@ var _$truncb_725 = _$truncb_726;
 // MAIN //
 
 /**
-* Rounds a numeric value to the nearest number toward zero with \\(N\\) significant figures.
+* Rounds a numeric value to the nearest number toward zero with \\(n\\) significant figures.
 *
 * @param {number} x - input value
 * @param {PositiveInteger} n - number of significant figures
@@ -59199,7 +59199,7 @@ var _$truncsd_730 = truncsd;
 'use strict';
 
 /**
-* Round a numeric value to the nearest number toward zero with `N` significant figures.
+* Round a numeric value to the nearest number toward zero with `n` significant figures.
 *
 * @module @stdlib/math/base/special/truncsd
 *
