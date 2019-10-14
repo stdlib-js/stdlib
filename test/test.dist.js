@@ -75,6 +75,15 @@ tape( 'project contains a distributable file containing emoji datasets (minified
 	t.end();
 });
 
+tape( 'project contains a distributable file containing the FiveThirtyEight FFQ dataset (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-fivethirtyeight-ffq.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.FIVETHIRTYEIGHT_FFQ, 'function', 'is a function' );
+	t.equal( typeof bundle.FIVETHIRTYEIGHT_FFQ(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
 tape( 'project contains a distributable file containing images (minified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-datasets-img.min.js' ) );
@@ -156,11 +165,63 @@ tape( 'project contains a distributable file containing "flat" namespace help te
 	t.end();
 });
 
+tape( 'project contains a distributable file containing plotting functions (unminified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-plot-flat.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.plot, 'function', 'has member' );
+	t.end();
+});
+
+tape( 'project contains a distributable file containing plotting functions (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-plot-flat.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.plot, 'function', 'has member' );
+	t.end();
+});
+
+tape( 'project contains a distributable file containing base special mathematical functions (unminified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-math-base-special-flat.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.base, 'object', 'has member' );
+	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
+	t.end();
+});
+
+tape( 'project contains a distributable file containing base special mathematical functions (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-math-base-special-flat.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.base, 'object', 'has member' );
+	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
+	t.end();
+});
+
 tape( 'project contains a distributable file for REPL functionality (minified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-repl.min.js' ) );
 	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.repl, 'function', 'is a function' );
+	t.end();
+});
+
+tape( 'project contains a distributable file containing base statistical distribution functions (unminified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-stats-base-dists-flat.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.base, 'object', 'has member' );
+	t.equal( typeof bundle.base.dists.normal.pdf( 0.5, 0.0, 1.0 ), 'number', 'returns expected value' );
+	t.end();
+});
+
+tape( 'project contains a distributable file containing base statistical distribution functions (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-stats-base-dists-flat.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.base, 'object', 'has member' );
+	t.equal( typeof bundle.base.dists.normal.pdf( 0.5, 0.0, 1.0 ), 'number', 'returns expected value' );
 	t.end();
 });
 
