@@ -186,6 +186,7 @@ function main() {
 	var pkgs;
 	var pkg;
 	var out;
+	var d;
 	var f;
 	var i;
 	var j;
@@ -245,9 +246,14 @@ function main() {
 		// We need to empty out the `name` field in order to avoid running afoul of npm package name conventions (e.g., cannot have `'@stdlib/array/buffer'`; see https://docs.npmjs.com/files/package.json#name):
 		meta.name = '';
 
-		meta.main = path.join( resolvePkg( pdir ), pkg.main );
+		d = resolvePkg( pdir );
+		meta.main = path.join( d, pkg.main );
 		debug( 'Resolved package entry point: %s', meta.main );
 
+		if ( pkg.browser ) {
+			meta.browser = path.join( d, pkg.browser );
+			debug( 'Resolved package browser entry point: %s', meta.browser );
+		}
 		ndir = path.join( DEST_DIR, pdir );
 		if ( fs.existsSync( ndir ) ) {
 			debug( 'Destination directory already exists: %s', ndir );
