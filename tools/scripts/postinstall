@@ -184,6 +184,7 @@ function main() {
 	var pdir;
 	var ndir;
 	var pkgs;
+	var keys;
 	var pkg;
 	var out;
 	var d;
@@ -253,8 +254,20 @@ function main() {
 
 		// Browser entry point:
 		if ( pkg.browser ) {
-			meta.browser = path.join( d, pkg.browser );
-			debug( 'Resolved package browser entry point: %s', meta.browser );
+			if ( typeof pkg.browser === 'string' ) {
+				meta.browser = path.join( d, pkg.browser );
+				debug( 'Resolved package browser entry point: %s', meta.browser );
+			} else if ( typeof pkg.browser === 'object' ) {
+				meta.browser = {};
+				keys = Object.keys( pkg.browser );
+				for ( j = 0; j < keys.length; j++ ) {
+					k = keys[ j ];
+					meta.browser[ k ] = path.join( d, pkg.browser[ k ] );
+					debug( 'Resolved package browser entry point: %s', meta.browser[ k ] );
+				}
+			} else {
+				debug( 'Unrecognized browser field value type: %s. Skipping field...', JSON.stringify( pkg.browser ) );
+			}
 		}
 		// Package type declarations:
 		if ( pkg.types ) {
