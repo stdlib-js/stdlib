@@ -13,6 +13,10 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  },
   "bin": {
     "stdlib": "./bin/cli"
   },
