@@ -45,7 +45,7 @@ function importAll( req ) {
 		HTML_FRAGMENT_CACHE[ pkg ] = req( key );
 	});
 }
-console.log( HTML_FRAGMENT_CACHE );
+
 
 // MAIN //
 
@@ -66,7 +66,6 @@ function App() {
 						exact
 						path="/:version/docs/api/@stdlib/:pkg([a-z0-9/-]*)"
 						render={({ match }) => {
-							console.log( match );
 							// Render the README for the selected package:
 							return (
 								<Fragment>
@@ -84,7 +83,6 @@ function App() {
 						exact
 						path="/:version/docs/api/@stdlib/:pkg*/benchmark.html"
 						render={({ match }) => {
-							console.log( match )
 							const iframe = <iframe className="readme-iframe" src={`https://stdlib.io/develop/docs/api/@stdlib/${match.params.pkg}/benchmark.html`} title="Benchmarks" />;
 							return (
 								<Fragment>
