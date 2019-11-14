@@ -64,7 +64,7 @@ function App() {
 					<SideMenu />
 					<Route
 						exact
-						path="/:version/docs/api/@stdlib/:pkg([a-z0-9/-]*)"
+						path="/:version/docs/api/@stdlib/:pkg([^.]*)"
 						render={({ match }) => {
 							// Render the README for the selected package:
 							return (
