@@ -1,0 +1,88 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.App-logo {
+	height: 40vmin;
+}
+
+.App-header {
+	min-height: 100vh;
+	margin-left: 20%;
+}
+
+#menu-icon {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+
+.drawer-head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sidebar-drawer {
+	width: 350px;
+}
+
+.MuiListItem-root {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.side-menu-link {
+	color: inherit;
+	width: 100%;
+	text-decoration: none;
+}
+
+.side-menu-link:hover {
+	text-decoration: underline;
+}
+
+.side-menu-list-item {
+	padding: 0;
+}
+
+.navbar {
+	position: fixed;
+	top: 30px;
+	right: 2%;
+}
+
+.navbar > a {
+	margin: 5px;
+}
+
+.readme-iframe {
+	width: 75%;
+	min-width: 594px;
+	max-width: 1200px;
+	margin-top: 5vh;
+	height: 75vh;
+}
