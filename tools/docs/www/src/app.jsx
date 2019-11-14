@@ -21,8 +21,8 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import SideMenu from './side_menu.js';
-import Readme from './readme.js';
+import SideMenu from './side_menu.jsx';
+import Readme from './readme.jsx';
 import './css/app.css';
 import './css/reset.css';
 import './css/highlight.css';

@@ -20,7 +20,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app.js';
+import App from './app.jsx';
 import * as serviceWorker from './service_worker.js';
 
 
