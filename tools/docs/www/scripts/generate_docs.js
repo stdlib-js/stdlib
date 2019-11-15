@@ -67,9 +67,10 @@ function onHTML( err ) {
 	if ( err ) {
 		return console.log( err );
 	}
+	console.log( 'Successfully finished generating HTML fragments...' );
 	buildTests( docsPath, {
 		'dir': dir,
-		'mount': 'v0.0.87/docs/api',
+		'mount': '/assets/v0.0.87/',
 		'ignore': [
 			'benchmark/**',
 			'bin/**',
@@ -89,9 +90,10 @@ function onTests( err ) {
 	if ( err ) {
 		return console.log( err );
 	}
+	console.log( 'Successfully finished generating test pages...' );
 	buildBenchmarks( docsPath, {
 		'dir': dir,
-		'mount': 'v0.0.87/docs/api',
+		'mount': '/assets/v0.0.87/',
 		'ignore': [
 			'benchmark/**',
 			'bin/**',
@@ -104,7 +106,14 @@ function onTests( err ) {
 			'test/**',
 			'**/_tools/**'
 		]
-	}, console.log );
+	}, onBenchmarks );
+}
+
+function onBenchmarks( err ) {
+	if ( err ) {
+		return console.log( err );
+	}
+	console.log( 'Successfully finished generating benchmark pages...' );
 }
 
 // Save JSON file to source directory to populate sidebar menu:
