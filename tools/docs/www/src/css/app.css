@@ -29,11 +29,6 @@ body {
 	height: 40vmin;
 }
 
-.App-header {
-	min-height: 100vh;
-	margin-left: 20%;
-}
-
 #menu-icon {
 	position: fixed;
 	top: 20px;
