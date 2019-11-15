@@ -56,11 +56,11 @@ class MenuBar extends Component {
 	}
 
 	handleDrawerOpen = () => {
-		this.setState({ open: true });
+		this.props.onDrawerChange( true );
 	}
 
 	handleDrawerClose = () => {
-		this.setState({ open: false });
+		this.props.onDrawerChange( false );
 	}
 
 	handleClick( path ) {
@@ -68,8 +68,14 @@ class MenuBar extends Component {
 			const active = !prevState[ path ];
 			return {
 				[ path ]: active,
-				activePkg: active ? path.substring( path.lastIndexOf( '/' ) ) : null
+				activePkg: active ? path.substring( path.lastIndexOf( '/' )+1 ) : null
 			}
+		});
+	}
+
+	handlePackageClick( pkg ) {
+		this.setState({
+			activePkg: pkg
 		});
 	}
 
@@ -97,9 +103,10 @@ class MenuBar extends Component {
 								button
 								key={`${pkgPath}-item`}
 								className="side-menu-list-item"
+								onClick={() => this.handlePackageClick( pkg )}
 								style={{
 									paddingLeft: 16 + 10 * level,
-									background: this.state.activePkg === pkg ? 'red' : null
+									color: this.state.activePkg === pkg ? '#5ca2c8' : null
 								}}
 							>
 									{pkg}
@@ -127,7 +134,7 @@ class MenuBar extends Component {
 							className="side-menu-list-item"
 							style={{
 								paddingLeft: 16 + 10 * level,
-								background: this.state.activePkg === pkg ? 'red' : null
+								color: this.state.activePkg === pkg ? '#5ca2c8' : null
 							}}
 						>
 							<b>{pkg}</b>
@@ -237,7 +244,7 @@ class MenuBar extends Component {
 						className="sidebar-drawer"
 						variant="persistent"
 						anchor="left"
-						open={this.state.open}
+						open={this.props.open}
 						classes={{
 							paper: 'sidebar-drawer'
 						}}
