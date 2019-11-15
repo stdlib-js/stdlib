@@ -38,7 +38,7 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
-import packageTree from './assets/v0.0.87/package_tree.json';
+import packageTree from './../public/assets/v0.0.87/package_tree.json';
 import stdlibLogo from './stdlib_logo.svg';
 
 
@@ -48,6 +48,7 @@ class MenuBar extends Component {
 	constructor( props ) {
 		super( props )
 		this.state = {
+			activePkg: null,
 			version: 'v0.0.87',
 			filter: null,
 			found: {}
@@ -63,7 +64,13 @@ class MenuBar extends Component {
 	}
 
 	handleClick( path ) {
-		this.setState( prevState => ( { [ path ]: !prevState[ path ] } ) );
+		this.setState( prevState => {
+			const active = !prevState[ path ];
+			return {
+				[ path ]: active,
+				activePkg: active ? path.substring( path.lastIndexOf( '/' ) ) : null
+			}
+		});
 	}
 
 	renderItems( namespace, path, level ) {
@@ -91,7 +98,8 @@ class MenuBar extends Component {
 								key={`${pkgPath}-item`}
 								className="side-menu-list-item"
 								style={{
-									paddingLeft: 16 + 10 * level
+									paddingLeft: 16 + 10 * level,
+									background: this.state.activePkg === pkg ? 'red' : null
 								}}
 							>
 									{pkg}
@@ -118,7 +126,8 @@ class MenuBar extends Component {
 							onClick={() => this.handleClick( pkgPath )}
 							className="side-menu-list-item"
 							style={{
-								paddingLeft: 16 + 10 * level
+								paddingLeft: 16 + 10 * level,
+								background: this.state.activePkg === pkg ? 'red' : null
 							}}
 						>
 							<b>{pkg}</b>

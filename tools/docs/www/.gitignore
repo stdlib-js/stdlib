@@ -6,7 +6,7 @@
 # testing
 /coverage
 
-/src/assets
+/public/assets/*
 
 # production
 /build

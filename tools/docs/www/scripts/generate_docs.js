@@ -25,6 +25,8 @@ var mkdir = require( 'fs' ).mkdirSync;
 var exists = require( '@stdlib/fs/exists' ).sync;
 var pkgTree = require( '@stdlib/_tools/pkgs/tree' );
 var build = require( '@stdlib/_tools/docs/www/readme-fragment-file-tree' );
+var buildTests = require( '@stdlib/_tools/docs/www/test-bundles' );
+var buildBenchmarks = require( '@stdlib/_tools/docs/www/benchmark-bundles' );
 var version = require( './../../../../package.json' ).version;
 
 
@@ -38,10 +40,11 @@ tree = tree[ '@stdlib' ];
 
 // Create and save HTML fragments:
 
-var docsPath = path.resolve( __dirname, '..', 'src', 'assets', 'v'+version );
+var docsPath = path.resolve( __dirname, '..', 'public', 'assets', 'v'+version );
 
+var dir = path.resolve( __dirname,  './../../../../lib/node_modules' );
 var opts = {
-	'dir': path.resolve( __dirname,  './../../../../lib/node_modules' ),
+	'dir': dir,
 	'ignore': [
 		'benchmark/**',
 		'bin/**',
@@ -58,7 +61,51 @@ var opts = {
 if ( !exists( docsPath ) ) {
 	mkdir( docsPath );
 }
-build( docsPath, opts, console.log );
+build( docsPath, opts, onHTML );
+
+function onHTML( err ) {
+	if ( err ) {
+		return console.log( err );
+	}
+	buildTests( docsPath, {
+		'dir': dir,
+		'mount': 'v0.0.87/docs/api',
+		'ignore': [
+			'benchmark/**',
+			'bin/**',
+			'build/**',
+			'docs/**',
+			'etc/**',
+			'examples/**',
+			'reports/**',
+			'scripts/**',
+			'test/**',
+			'**/_tools/**'
+		]
+	}, onTests );
+}
+
+function onTests( err ) {
+	if ( err ) {
+		return console.log( err );
+	}
+	buildBenchmarks( docsPath, {
+		'dir': dir,
+		'mount': 'v0.0.87/docs/api',
+		'ignore': [
+			'benchmark/**',
+			'bin/**',
+			'build/**',
+			'docs/**',
+			'etc/**',
+			'examples/**',
+			'reports/**',
+			'scripts/**',
+			'test/**',
+			'**/_tools/**'
+		]
+	}, console.log );
+}
 
 // Save JSON file to source directory to populate sidebar menu:
 fs.writeFileSync( path.join( docsPath, 'package_tree.json' ), JSON.stringify( tree, null, 2 ) );
