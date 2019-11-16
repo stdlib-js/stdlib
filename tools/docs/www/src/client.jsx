@@ -19,16 +19,21 @@
 // MODULES //
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './client.jsx';
-import * as serviceWorker from './service_worker.js';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app.jsx';
 
 
 // MAIN //
 
-ReactDOM.hydrate( <App />, document.getElementById( 'root' ) );
+function ClientApp() {
+	return (
+		<BrowserRouter onUpdate={() => window.scrollTo( 0, 0 )} >
+			<App />
+		</BrowserRouter>
+	);
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// EXPORTS //
+
+export default ClientApp;

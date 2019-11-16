@@ -19,16 +19,21 @@
 // MODULES //
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './client.jsx';
-import * as serviceWorker from './service_worker.js';
+import { StaticRouter } from 'react-router-dom';
+import App from './app.jsx';
 
 
 // MAIN //
 
-ReactDOM.hydrate( <App />, document.getElementById( 'root' ) );
+function ServerApp() {
+	return (
+		<StaticRouter>
+			<App />
+		</StaticRouter>
+	);
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// EXPORTS //
+
+export default ServerApp;

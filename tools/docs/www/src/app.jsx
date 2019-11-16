@@ -19,10 +19,9 @@
 // MODULES //
 
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SideMenu from './side_menu.jsx';
-import Readme from './readme.jsx';
 import './css/app.css';
 import './css/reset.css';
 import './css/highlight.css';
@@ -34,27 +33,10 @@ import './css/normalize.css';
 
 // VARIABLES //
 
-const HTML_FRAGMENT_CACHE = {};
-
-
-// FUNCTIONS //
-
-function importAll( req ) {
-	req.keys().forEach( key => {
-		const pkg = key.replace( /.\/(v[0-9]+.[0-9]+.[0-9]+)/, '/$1/docs/api' );
-		HTML_FRAGMENT_CACHE[ pkg ] = req( key );
-	});
-}
+const ReadmePage = () => <div>{`{{ FRAGMENT }}`}</div>;
 
 
 // MAIN //
-
-// See: https://webpack.js.org/guides/dependency-management/#context-module-api
-if ( process.env.NODE_ENV === 'production' ) {
-	importAll( require.context( './../public/assets/', true, /\.html$/, 'lazy' ) );
-} else {
-	importAll( require.context( './../public/assets/', true, /\.html$/ ) );
-}
 
 class App extends Component {
 	constructor( props ) {
@@ -73,76 +55,74 @@ class App extends Component {
 
 	render() {
 		return (
-			<Router onUpdate={() => window.scrollTo( 0, 0 )} >
-				<div className="App">
-					<SideMenu
-						onDrawerChange={this.handleSlideOutChange}
-						open={this.state.slideoutIsOpen}
+			<div className="App">
+				<SideMenu
+					onDrawerChange={this.handleSlideOutChange}
+					open={this.state.slideoutIsOpen}
+				/>
+				<div style={{
+					marginLeft: this.state.slideoutIsOpen ? 350 : 0,
+					transition: 'margin 225ms cubic-bezier(0, 0, 0.2, 1) 0ms'
+				}}>
+				<Switch>
+					<Route
+						exact
+						path="/:version/docs/api/@stdlib/:pkg([^.]*)"
+						render={({ match }) => {
+							// Render the README for the selected package:
+							return (
+								<Fragment>
+									<nav className="navbar">
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
+										<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+									</nav>
+									<ReadmePage />
+								</Fragment>
+							);
+						}}
 					/>
-					<div style={{
-						marginLeft: this.state.slideoutIsOpen ? 350 : 0,
-						transition: 'margin 225ms cubic-bezier(0, 0, 0.2, 1) 0ms'
-					}}>
-					<Switch>
-						<Route
-							exact
-							path="/:version/docs/api/@stdlib/:pkg([^.]*)"
-							render={({ match }) => {
-								// Render the README for the selected package:
-								return (
-									<Fragment>
-										<nav className="navbar">
-											<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
-											<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
-											<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
-										</nav>
-										<Readme key={match.url} html={HTML_FRAGMENT_CACHE[ match.url+'/index.html' ]} />
-									</Fragment>
-								);
-							}}
-						/>
-						<Route
-							exact
-							path="/:version/docs/api/@stdlib/:pkg*/benchmark.html"
-							render={({ match }) => {
-								const iframe = <iframe className="readme-iframe" src={`/assets/${match.params.version}/@stdlib/${match.params.pkg}/benchmark.html`} title="Benchmarks" />;
-								return (
-									<Fragment>
-										<nav className="navbar">
-											<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
-											<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
-											<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
-										</nav>
-										{iframe}
-									</Fragment>
-								);
-							}}
-						/>
-						<Route
-							exact
-							path="/:version/docs/api/@stdlib/:pkg*/test.html"
-							render={({ match }) => {
-								const iframe = <iframe className="readme-iframe" src={`/assets/${match.params.version}/@stdlib/${match.params.pkg}/test.html`} title="Tests" />;
-								return (
-									<Fragment>
-										<nav className="navbar">
-											<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
-											<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
-											<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
-										</nav>
-										{iframe}
-									</Fragment>
-								);
-							}}
-						/>
-						<Route path="/**/*">
-							<iframe className="readme-iframe" src="https://stdlib.io/404.html" title="No match found" />
-						</Route>
-					</Switch>
-					</div>
+					<Route
+						exact
+						path="/:version/docs/api/@stdlib/:pkg*/benchmark.html"
+						render={({ match }) => {
+							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/@stdlib/${match.params.pkg}/benchmark.html?on}/@stdlib/${match.params.pkg}/benchmark.html?fragment=true`} title="Benchmarks" />;
+							return (
+								<Fragment>
+									<nav className="navbar">
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
+										<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+									</nav>
+									{iframe}
+								</Fragment>
+							);
+						}}
+					/>
+					<Route
+						exact
+						path="/:version/docs/api/@stdlib/:pkg*/test.html"
+						render={({ match }) => {
+							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/@stdlib/${match.params.pkg}/test.html?fragment=true`} title="Tests" />;
+							return (
+								<Fragment>
+									<nav className="navbar">
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
+										<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+									</nav>
+									{iframe}
+								</Fragment>
+							);
+						}}
+					/>
+					<Route path="/**/*">
+						<iframe className="readme-iframe" src="https://stdlib.io/404.html" title="No match found" />
+					</Route>
+				</Switch>
 				</div>
-			</Router>
-		);
+			</div>
+		)
 	}
 }
 
