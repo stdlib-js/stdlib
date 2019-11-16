@@ -19,7 +19,6 @@
 // MODULES //
 
 import React, { Component, Fragment } from 'react';
-import { withRouter } from 'react-router-dom';
 import { debounce } from 'throttle-debounce';
 import isObject from '@stdlib/assert/is-object';
 import contains from '@stdlib/assert/contains';
@@ -96,14 +95,8 @@ class MenuBar extends Component {
 							className="side-menu-list-item"
 							onClick={() => {
 								this.handlePackageClick( pkg );
-								this.props.history.push( `/${this.state.version}/docs/api/${pkgPath}` );
-								window.scrollTo( 0, 0 );
-								fetch( `/${this.state.version}/docs/api/${pkgPath}?fragment=true` )
-									.then(res => res.text() )
-									.then( res => {
-										this.props.onReadmeFragment( res );
-									})
-									.catch( err => console.error( err ) )
+								const path = `/${this.state.version}/docs/api/${pkgPath}`;
+								this.props.onReadmeChange( path );
 							}}
 							style={{
 								paddingLeft: 16 + 10 * level,
@@ -128,14 +121,8 @@ class MenuBar extends Component {
 						button
 						onClick={() => {
 							this.handleClick( pkgPath );
-							this.props.history.push( `/${this.state.version}/docs/api/${pkgPath}` );
-							window.scrollTo( 0, 0 );
-							fetch( `/${this.state.version}/docs/api/${pkgPath}?fragment=true` )
-								.then(res => res.text() )
-								.then( res => {
-									this.props.onReadmeFragment( res );
-								})
-								.catch( err => console.error( err ) )
+							const path = `/${this.state.version}/docs/api/${pkgPath}`;
+							this.props.onReadmeChange( path );
 						}}
 						className="side-menu-list-item-namespace"
 						style={{
@@ -284,4 +271,4 @@ class MenuBar extends Component {
 
 // EXPORTS //
 
-export default withRouter( MenuBar );
+export default MenuBar;

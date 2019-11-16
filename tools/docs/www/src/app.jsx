@@ -19,7 +19,7 @@
 // MODULES //
 
 import React, { Component, Fragment } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SideMenu from './side_menu.jsx';
 import './css/app.css';
@@ -33,7 +33,16 @@ import './css/normalize.css';
 
 // VARIABLES //
 
-const ReadmePage = () => <div id="readme-container" className="readme" >{`{{ FRAGMENT }}`}</div>;
+const ReadmePage = () => {
+	return ( <div
+		id="readme-container"
+		className="readme"
+		suppressHydrationWarning
+		dangerouslySetInnerHTML={{__html: '{{ FRAGMENT }}' }}
+	/> );
+};
+
+const HTML_FRAGMENT_CACHE = {};
 
 
 // MAIN //
@@ -55,7 +64,9 @@ class App extends Component {
 
 	replaceReadmeContainer( res ) {
 		const readme = document.getElementById( 'readme-container' );
-		readme.innerHTML = res;
+		if ( readme ) {
+			readme.innerHTML = res;
+		}
 	}
 
 	renderReadme({ match }) {
@@ -73,12 +84,29 @@ class App extends Component {
 		);
 	}
 
+	fetchAndCacheFragment = ( path ) => {
+		this.props.history.push( path );
+		window.scrollTo( 0, 0 );
+		if ( !HTML_FRAGMENT_CACHE[ path ] ) {
+			fetch( `${path}?fragment=true` )
+				.then(res => res.text() )
+				.then( res => {
+					HTML_FRAGMENT_CACHE[ path ] = res;
+					this.replaceReadmeContainer( res );
+				})
+				.catch( err => console.error( err ) )
+		} else {
+			this.replaceReadmeContainer( HTML_FRAGMENT_CACHE[ path ] );
+		}
+	}
+
 	render() {
+		console.log( this.props );
 		return (
 			<div className="App">
 				<SideMenu
 					onDrawerChange={this.handleSlideOutChange}
-					onReadmeFragment={this.replaceReadmeContainer}
+					onReadmeChange={this.fetchAndCacheFragment}
 					open={this.state.slideoutIsOpen}
 				/>
 				<div style={{
@@ -140,4 +168,4 @@ class App extends Component {
 
 // EXPORTS //
 
-export default App;
+export default withRouter( App );

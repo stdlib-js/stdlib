@@ -144,6 +144,7 @@ body {
 	width: 75%;
 	min-width: 594px;
 	max-width: 1200px;
-	margin-top: 5vh;
+	margin-top: 80px;
+	margin-left: 12.5%;
 	height: 75vh;
 }
