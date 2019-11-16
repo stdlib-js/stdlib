@@ -8,36 +8,36 @@ import React from 'react';
 const svg = () => <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="110.25" height="35" viewBox="0, 0, 315, 100">
 <defs>
 	<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="26.041" y1="25.718" x2="49.937" y2="11.918">
-		<stop offset="0" stop-color="#A4681D"></stop>
-		<stop offset="0.31" stop-color="#E18F2F"></stop>
-		<stop offset="1" stop-color="#F0AD3E"></stop>
+		<stop offset="0" stopColor="#A4681D"></stop>
+		<stop offset="0.31" stopColor="#E18F2F"></stop>
+		<stop offset="1" stopColor="#F0AD3E"></stop>
 	</linearGradient>
 	<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="38.798" y1="89.104" x2="74.505" y2="68.488">
-		<stop offset="0" stop-color="#F0AD3E"></stop>
-		<stop offset="0.69" stop-color="#E18F2F"></stop>
-		<stop offset="1" stop-color="#A4681D"></stop>
+		<stop offset="0" stopColor="#F0AD3E"></stop>
+		<stop offset="0.69" stopColor="#E18F2F"></stop>
+		<stop offset="1" stopColor="#A4681D"></stop>
 	</linearGradient>
 	<linearGradient id="Gradient_3" gradientUnits="userSpaceOnUse" x1="11.089" y1="43.804" x2="75.766" y2="43.804">
-		<stop offset="0" stop-color="#006991"></stop>
-		<stop offset="0.25" stop-color="#008BBF"></stop>
-		<stop offset="0.62" stop-color="#008BBF"></stop>
-		<stop offset="1" stop-color="#00AEEF"></stop>
+		<stop offset="0" stopColor="#006991"></stop>
+		<stop offset="0.25" stopColor="#008BBF"></stop>
+		<stop offset="0.62" stopColor="#008BBF"></stop>
+		<stop offset="1" stopColor="#00AEEF"></stop>
 	</linearGradient>
 	<linearGradient id="Gradient_4" gradientUnits="userSpaceOnUse" x1="26.041" y1="25.718" x2="49.937" y2="11.918">
-		<stop offset="0" stop-color="#A4681D"></stop>
-		<stop offset="0.31" stop-color="#E18F2F"></stop>
-		<stop offset="1" stop-color="#F0AD3E"></stop>
+		<stop offset="0" stopColor="#A4681D"></stop>
+		<stop offset="0.31" stopColor="#E18F2F"></stop>
+		<stop offset="1" stopColor="#F0AD3E"></stop>
 	</linearGradient>
 	<linearGradient id="Gradient_5" gradientUnits="userSpaceOnUse" x1="38.798" y1="89.104" x2="74.505" y2="68.488">
-		<stop offset="0" stop-color="#F0AD3E"></stop>
-		<stop offset="0.69" stop-color="#E18F2F"></stop>
-		<stop offset="1" stop-color="#A4681D"></stop>
+		<stop offset="0" stopColor="#F0AD3E"></stop>
+		<stop offset="0.69" stopColor="#E18F2F"></stop>
+		<stop offset="1" stopColor="#A4681D"></stop>
 	</linearGradient>
 	<linearGradient id="Gradient_6" gradientUnits="userSpaceOnUse" x1="11.089" y1="43.804" x2="75.766" y2="43.804">
-		<stop offset="0" stop-color="#006991"></stop>
-		<stop offset="0.25" stop-color="#008BBF"></stop>
-		<stop offset="0.62" stop-color="#008BBF"></stop>
-		<stop offset="1" stop-color="#00AEEF"></stop>
+		<stop offset="0" stopColor="#006991"></stop>
+		<stop offset="0.25" stopColor="#008BBF"></stop>
+		<stop offset="0.62" stopColor="#008BBF"></stop>
+		<stop offset="1" stopColor="#00AEEF"></stop>
 	</linearGradient>
 </defs>
 <g>
