@@ -27,7 +27,7 @@ import App from './app.jsx';
 
 function ServerApp() {
 	return (
-		<StaticRouter location="/v0.0.87/docs/api/@stdlib/assert/contains" context={{}} >
+		<StaticRouter location="/:version/docs/api/@stdlib/:pkg" context={{}} >
 			<App />
 		</StaticRouter>
 	);
