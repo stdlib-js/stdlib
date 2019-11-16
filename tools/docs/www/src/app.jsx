@@ -67,23 +67,6 @@ class App extends Component {
 				<Switch>
 					<Route
 						exact
-						path="/:version/docs/api/@stdlib/:pkg([^.]*)"
-						render={({ match }) => {
-							// Render the README for the selected package:
-							return (
-								<Fragment>
-									<nav className="navbar">
-										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
-										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
-										<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
-									</nav>
-									<ReadmePage />
-								</Fragment>
-							);
-						}}
-					/>
-					<Route
-						exact
 						path="/:version/docs/api/@stdlib/:pkg*/benchmark.html"
 						render={({ match }) => {
 							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html?fragment=true`} title="Benchmarks" />;
@@ -112,6 +95,24 @@ class App extends Component {
 										<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
 									</nav>
 									{iframe}
+								</Fragment>
+							);
+						}}
+					/>
+					<Route
+						exact
+						path="/:version/docs/api/@stdlib/:pkg*(/index.html)?"
+						render={({ match }) => {
+							// Render the README for the selected package:
+							console.log( match );
+							return (
+								<Fragment>
+									<nav className="navbar">
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link>
+										<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
+										<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+									</nav>
+									<ReadmePage />
 								</Fragment>
 							);
 						}}
