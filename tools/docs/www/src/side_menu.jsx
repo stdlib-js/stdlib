@@ -95,9 +95,15 @@ class MenuBar extends Component {
 							key={`${pkgPath}-item`}
 							className="side-menu-list-item"
 							onClick={() => {
-								this.handlePackageClick( pkg )
+								this.handlePackageClick( pkg );
 								this.props.history.push( `/${this.state.version}/docs/api/${pkgPath}` );
 								window.scrollTo( 0, 0 );
+								fetch( `/${this.state.version}/docs/api/${pkgPath}?fragment=true` )
+									.then(res => res.text() )
+									.then( res => {
+										this.props.onReadmeFragment( res );
+									})
+									.catch( err => console.error( err ) )
 							}}
 							style={{
 								paddingLeft: 16 + 10 * level,
@@ -121,9 +127,15 @@ class MenuBar extends Component {
 					<ListItem
 						button
 						onClick={() => {
-							this.handleClick( pkgPath )
+							this.handleClick( pkgPath );
 							this.props.history.push( `/${this.state.version}/docs/api/${pkgPath}` );
 							window.scrollTo( 0, 0 );
+							fetch( `/${this.state.version}/docs/api/${pkgPath}?fragment=true` )
+								.then(res => res.text() )
+								.then( res => {
+									this.props.onReadmeFragment( res );
+								})
+								.catch( err => console.error( err ) )
 						}}
 						className="side-menu-list-item-namespace"
 						style={{

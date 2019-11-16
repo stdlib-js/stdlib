@@ -33,7 +33,7 @@ import './css/normalize.css';
 
 // VARIABLES //
 
-const ReadmePage = () => <div>{`{{ FRAGMENT }}`}</div>;
+const ReadmePage = () => <div id="readme-container" className="readme" >{`{{ FRAGMENT }}`}</div>;
 
 
 // MAIN //
@@ -53,11 +53,17 @@ class App extends Component {
 		});
 	}
 
+	replaceReadmeContainer( res ) {
+		const readme = document.getElementById( 'readme-container' );
+		readme.innerHTML = res;
+	}
+
 	render() {
 		return (
 			<div className="App">
 				<SideMenu
 					onDrawerChange={this.handleSlideOutChange}
+					onReadmeFragment={this.replaceReadmeContainer}
 					open={this.state.slideoutIsOpen}
 				/>
 				<div style={{
