@@ -33,12 +33,13 @@ import './css/normalize.css';
 
 // VARIABLES //
 
-const ReadmePage = () => {
+const ReadmePage = ( props ) => {
+	const html = HTML_FRAGMENT_CACHE[ props.path ] || '{{ FRAGMENT }}';
 	return ( <div
 		id="readme-container"
 		className="readme"
 		suppressHydrationWarning
-		dangerouslySetInnerHTML={{ __html: '{{ FRAGMENT }}' }}
+		dangerouslySetInnerHTML={{ __html: html }}
 	/> );
 };
 
@@ -71,7 +72,6 @@ class App extends Component {
 
 	renderReadme({ match }) {
 		// Render the README for the selected package:
-		console.log( match );
 		return (
 			<Fragment>
 				<nav className="navbar">
@@ -79,7 +79,7 @@ class App extends Component {
 					<Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link>
 					<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
 				</nav>
-				<ReadmePage />
+				<ReadmePage path={match.url} />
 			</Fragment>
 		);
 	}
@@ -101,7 +101,6 @@ class App extends Component {
 	}
 
 	render() {
-		console.log( this.props );
 		return (
 			<div className="App">
 				<SideMenu
