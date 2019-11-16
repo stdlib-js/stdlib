@@ -86,7 +86,7 @@ class App extends Component {
 						exact
 						path="/:version/docs/api/@stdlib/:pkg*/benchmark.html"
 						render={({ match }) => {
-							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/@stdlib/${match.params.pkg}/benchmark.html?on}/@stdlib/${match.params.pkg}/benchmark.html?fragment=true`} title="Benchmarks" />;
+							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html?on}/@stdlib/${match.params.pkg}/benchmark.html?fragment=true`} title="Benchmarks" />;
 							return (
 								<Fragment>
 									<nav className="navbar">
@@ -103,7 +103,7 @@ class App extends Component {
 						exact
 						path="/:version/docs/api/@stdlib/:pkg*/test.html"
 						render={({ match }) => {
-							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/@stdlib/${match.params.pkg}/test.html?fragment=true`} title="Tests" />;
+							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html?fragment=true`} title="Tests" />;
 							return (
 								<Fragment>
 									<nav className="navbar">
