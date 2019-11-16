@@ -25,43 +25,109 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-	height: 40vmin;
-}
-
-#menu-icon {
+#menu-icon-button {
 	position: fixed;
 	top: 20px;
 	left: 20px;
 }
 
-.drawer-head {
+#menu-close-icon {
+	color:#c7c7c7;
+}
+
+#menu-close-icon:hover {
+	color: #bfc4c9;
+}
+
+.side-menu-head {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.sidebar-drawer {
+.side-menu-drawer {
 	width: 350px;
+	background-color: #1D1F20;
+	background-image: -webkit-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -moz-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -ms-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: -o-linear-gradient(145deg, #1D1F20, #404348);
+	background-image: linear-gradient(145deg, #1D1F20, #404348);
 }
 
-.MuiListItem-root {
-	padding-top: 0px;
-	padding-bottom: 0px;
+.side-menu-version-select {
+	color: #acafb3;
+	background: #1f1f1f;
+	border: none;
+	height: 40px;
+	padding-left: 1em;
 }
 
-.side-menu-link {
-	color: inherit;
-	width: 100%;
-	text-decoration: none;
+.side-menu-filter-input {
+	color: #acafb3;
+	background: #1f1f1f;
+	border: none;
+	height: 40px;
+	margin-top: 10px;
+	padding-left: 1em;
 }
 
-.side-menu-link:hover {
-	text-decoration: underline;
+.side-menu-filter-input:hover {
+	color: #bfc4c9;
+}
+
+::-webkit-input-placeholder {
+	font-style: italic;
+}
+:-moz-placeholder {
+	font-style: italic;
+}
+::-moz-placeholder {
+	font-style: italic;
+}
+:-ms-input-placeholder {
+	font-style: italic;
 }
 
 .side-menu-list-item {
-	padding: 0;
+	font-family: "Lato", "Helvetica Neue";
+	font-weight: 200;
+}
+
+.side-menu-list-item.MuiListItem-root,
+.side-menu-list-item-namespace.MuiListItem-root {
+	color: white;
+	text-decoration: none;
+}
+
+.side-menu-list-item.MuiListItem-root:hover {
+	text-decoration: underline;
+}
+
+.side-menu-list-item-namespace {
+	font-family: "Lato", "Helvetica Neue";
+	font-weight: 200;
+	background: #2a2d2f;
+}
+
+.side-menu-list-item-namespace-icon {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	color: #acafb3;
+}
+
+.side-menu-list-item-namespace.MuiListItem-button {
+	background: #2a2d2f;
+}
+
+.side-menu-list-item.MuiListItem-button {
+	background: #242627;
+}
+
+.side-menu-list-wrapper {
+	overflow-y: auto;
+	height: calc(100vh - 140px);
 }
 
 .navbar {
