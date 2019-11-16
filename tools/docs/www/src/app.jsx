@@ -86,7 +86,7 @@ class App extends Component {
 						exact
 						path="/:version/docs/api/@stdlib/:pkg*/benchmark.html"
 						render={({ match }) => {
-							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html?on}/@stdlib/${match.params.pkg}/benchmark.html?fragment=true`} title="Benchmarks" />;
+							const iframe = <iframe className="readme-iframe" src={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html?fragment=true`} title="Benchmarks" />;
 							return (
 								<Fragment>
 									<nav className="navbar">

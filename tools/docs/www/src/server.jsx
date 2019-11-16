@@ -27,7 +27,7 @@ import App from './app.jsx';
 
 function ServerApp() {
 	return (
-		<StaticRouter>
+		<StaticRouter location="/v0.0.87/docs/api/@stdlib/assert/is-boolean-array">
 			<App />
 		</StaticRouter>
 	);

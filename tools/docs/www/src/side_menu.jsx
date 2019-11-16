@@ -34,7 +34,7 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import packageTree from './../public/assets/v0.0.87/package_tree.json';
-import stdlibLogo from './stdlib_logo.svg';
+import Logo from './logo.jsx';
 
 
 // MAIN //
@@ -243,7 +243,7 @@ class MenuBar extends Component {
 						}}
 					>
 						<div className="side-menu-head" >
-							<img src={stdlibLogo} alt="Stdlib Logo" />
+							<Logo />
 							<IconButton aria-label="close drawer" onClick={this.handleDrawerClose} edge="start" >
 								<ChevronRightIcon id="menu-close-icon" />
 							</IconButton>
