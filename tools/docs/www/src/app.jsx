@@ -116,9 +116,6 @@ class App extends Component {
 							);
 						}}
 					/>
-					<Route path="/**/*">
-						<iframe className="readme-iframe" src="https://stdlib.io/404.html" title="No match found" />
-					</Route>
 				</Switch>
 				</div>
 			</div>
