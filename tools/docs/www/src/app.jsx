@@ -38,7 +38,7 @@ const ReadmePage = () => {
 		id="readme-container"
 		className="readme"
 		suppressHydrationWarning
-		dangerouslySetInnerHTML={{__html: '{{ FRAGMENT }}' }}
+		dangerouslySetInnerHTML={{ __html: '{{ FRAGMENT }}' }}
 	/> );
 };
 
