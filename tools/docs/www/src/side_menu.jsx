@@ -19,7 +19,7 @@
 // MODULES //
 
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { debounce } from 'throttle-debounce';
 import isObject from '@stdlib/assert/is-object';
 import contains from '@stdlib/assert/contains';
@@ -29,15 +29,10 @@ import ListItem from '@material-ui/core/ListItem';
 import Collapse from '@material-ui/core/Collapse';
 import Drawer from '@material-ui/core/Drawer';
 import MenuIcon from '@material-ui/icons/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
-import TextField from '@material-ui/core/TextField';
-import Select from '@material-ui/core/Select';
 import packageTree from './../public/assets/v0.0.87/package_tree.json';
 import stdlibLogo from './stdlib_logo.svg';
 
@@ -95,23 +90,22 @@ class MenuBar extends Component {
 				}
 				return (
 					<div key={pkgPath}>
-						<Link
-							className="side-menu-link"
-							to={`/${this.state.version}/docs/api/${pkgPath}`}
+						<ListItem
+							button
+							key={`${pkgPath}-item`}
+							className="side-menu-list-item"
+							onClick={() => {
+								this.handlePackageClick( pkg )
+								this.props.history.push( `/${this.state.version}/docs/api/${pkgPath}` );
+								window.scrollTo( 0, 0 );
+							}}
+							style={{
+								paddingLeft: 16 + 10 * level,
+								color: this.state.activePkg === pkg ? '#5ca2c8' : null
+							}}
 						>
-							<ListItem
-								button
-								key={`${pkgPath}-item`}
-								className="side-menu-list-item"
-								onClick={() => this.handlePackageClick( pkg )}
-								style={{
-									paddingLeft: 16 + 10 * level,
-									color: this.state.activePkg === pkg ? '#5ca2c8' : null
-								}}
-							>
-									{pkg}
-							</ListItem>
-						</Link>
+								{pkg}
+						</ListItem>
 					</div>
 				)
 			}
@@ -124,28 +118,27 @@ class MenuBar extends Component {
 			}
 			return (
 				<div key={pkgPath} >
-					<Link
-						to={`/${this.state.version}/docs/api/${pkgPath}`}
-						className="side-menu-link"
+					<ListItem
+						button
+						onClick={() => {
+							this.handleClick( pkgPath )
+							this.props.history.push( `/${this.state.version}/docs/api/${pkgPath}` );
+							window.scrollTo( 0, 0 );
+						}}
+						className="side-menu-list-item-namespace"
+						style={{
+							paddingLeft: 16 + 10 * level,
+							color: this.state.activePkg === pkg ? '#5ca2c8' : null
+						}}
 					>
-						<ListItem
-							button
-							onClick={() => this.handleClick( pkgPath )}
-							className="side-menu-list-item"
-							style={{
-								paddingLeft: 16 + 10 * level,
-								color: this.state.activePkg === pkg ? '#5ca2c8' : null
-							}}
-						>
-							<b>{pkg}</b>
-							<span style={{ position: 'absolute', 'top': 5, 'right': 10 }}>
-								{this.state[ pkgPath ] ?
-									<ExpandLess /> :
-									<ExpandMore />
-								}
-							</span>
-						</ListItem>
-					</Link>
+						{pkg}
+						<span className="side-menu-list-item-namespace-icon" >
+							{this.state[ pkgPath ] ?
+								<RemoveIcon style={{ fontSize: 14 }} /> :
+								<AddIcon style={{ fontSize: 14 }} />
+							}
+						</span>
+					</ListItem>
 					<Collapse
 						in={this.state[ pkgPath ]}
 						timeout="auto"
@@ -235,46 +228,37 @@ class MenuBar extends Component {
 					aria-label="open drawer"
 					onClick={this.handleDrawerOpen}
 					edge="start"
-					id="menu-icon"
+					id="menu-icon-button"
 				>
-					<MenuIcon />
+					<MenuIcon id="menu-icon" />
 				</IconButton>
 				<div>
 					<Drawer
-						className="sidebar-drawer"
+						className="side-menu-drawer"
 						variant="persistent"
 						anchor="left"
 						open={this.props.open}
 						classes={{
-							paper: 'sidebar-drawer'
+							paper: 'side-menu-drawer'
 						}}
 					>
-						<div className="drawer-head" >
+						<div className="side-menu-head" >
 							<img src={stdlibLogo} alt="Stdlib Logo" />
-							<IconButton onClick={this.handleDrawerClose} >
-								<ChevronRightIcon />
+							<IconButton aria-label="close drawer" onClick={this.handleDrawerClose} edge="start" >
+								<ChevronRightIcon id="menu-close-icon" />
 							</IconButton>
 						</div>
-						<FormControl style={{ marginLeft: '25px', marginRight: '25px' }}>
-							<InputLabel shrink >
-								Version
-							</InputLabel>
-							<Select
-								value={this.state.version}
-								onChange={this.selectVersion}
-							>
-								<MenuItem value={'v0.0.87'}>v0.0.87</MenuItem>
-							</Select>
-						</FormControl>
-						<TextField
-							label="Filter"
-							margin="normal"
-							style={{ marginLeft: '25px', marginRight: '25px' }}
+						<select className="side-menu-version-select" id="lang" onChange={this.selectVersion} value={this.state.version}>
+							<option value="v0.0.87">v0.0.87</option>
+						</select>
+						<input
+							className="side-menu-filter-input"
+							type="text"
 							onChange={this.handleFilterChange}
 							placeholder="Type here to filter menu..."
 						/>
-						<div style={{ overflowY: 'auto', height: 'calc(100vh - 180px)' }}>
-							<List>
+						<div className="side-menu-list-wrapper" >
+							<List disablePadding >
 								{this.renderItems( packageTree, '@stdlib', 0 )}
 							</List>
 						</div>
@@ -288,4 +272,4 @@ class MenuBar extends Component {
 
 // EXPORTS //
 
-export default MenuBar;
+export default withRouter( MenuBar );

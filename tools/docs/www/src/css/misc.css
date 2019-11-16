@@ -24,10 +24,6 @@ body {
 	overflow-x: hidden;
 }
 
-img {
-	background-color: #fff;
-}
-
 .main {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
