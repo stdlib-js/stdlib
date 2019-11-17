@@ -20,9 +20,6 @@
 
 import React, { Component, Fragment } from 'react';
 import { debounce } from 'throttle-debounce';
-import isObject from '@stdlib/assert/is-object';
-import contains from '@stdlib/assert/contains';
-import objectKeys from '@stdlib/utils/keys';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Collapse from '@material-ui/core/Collapse';
@@ -32,7 +29,6 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import packageTree from './../public/assets/v0.0.87/package_tree.json';
 import Logo from './logo.jsx';
 
 
@@ -43,7 +39,6 @@ class MenuBar extends Component {
 		super( props )
 		this.state = {
 			activePkg: null,
-			version: 'v0.0.87',
 			filter: null,
 			found: {}
 		};
@@ -74,16 +69,16 @@ class MenuBar extends Component {
 	}
 
 	renderItems( namespace, path, level ) {
-		const keys = objectKeys( namespace );
+		const keys = Object.keys( namespace );
 		return keys.map( ( pkg ) => {
 			const pkgPath =`${path}/${pkg}`;
 			if ( pkg === '__namespace__' ) {
 				return null;
 			}
-			if ( !isObject( namespace[ pkg ] ) ) {
+			if ( typeof namespace[ pkg ] !== 'object' ) {
 				// Case: Individual package
 				if (
-					this.state.filter && !contains( pkgPath, this.state.filter )
+					this.state.filter && !pkgPath.includes( this.state.filter )
 				) {
 					return null;
 				}
@@ -95,7 +90,7 @@ class MenuBar extends Component {
 							className="side-menu-list-item"
 							onClick={() => {
 								this.handlePackageClick( pkg );
-								const path = `/${this.state.version}/docs/api/${pkgPath}`;
+								const path = `/${this.props.version}/docs/api/${pkgPath}`;
 								this.props.onReadmeChange( path );
 							}}
 							style={{
@@ -121,7 +116,7 @@ class MenuBar extends Component {
 						button
 						onClick={() => {
 							this.handleClick( pkgPath );
-							const path = `/${this.state.version}/docs/api/${pkgPath}`;
+							const path = `/${this.props.version}/docs/api/${pkgPath}`;
 							this.props.onReadmeChange( path );
 						}}
 						className="side-menu-list-item-namespace"
@@ -150,12 +145,6 @@ class MenuBar extends Component {
 		} )
 	}
 
-	selectVersion = ( event ) => {
-		this.setState({
-			version: event.target.value
-		});
-	}
-
 	handleFilterChange = ( event ) => {
 		const newFilter = event.target.value;
 		this.setState({
@@ -171,8 +160,8 @@ class MenuBar extends Component {
 	applyFilterChange = () => {
 		if ( this.state.filter ) {
 			const found = {};
-			this.checkFilter( found, packageTree, '@stdlib', this.state.filter );
-			const keys = objectKeys( found );
+			this.checkFilter( found, this.props.packageTree, '@stdlib', this.state.filter );
+			const keys = Object.keys( found );
 			const newState = {};
 			for ( let i = 0; i < keys.length; i++ ) {
 				newState[ keys[ i ] ] = true;
@@ -182,7 +171,7 @@ class MenuBar extends Component {
 				found
 			});
 		} else {
-			const keys = objectKeys( this.state.found );
+			const keys = Object.keys( this.state.found );
 			const newState = {};
 			for ( let i = 0; i < keys.length; i++ ) {
 				newState[ keys[ i ] ] = false;
@@ -195,15 +184,15 @@ class MenuBar extends Component {
 	}
 
 	checkFilter( state, docs, path, filter ) {
-		const keys = objectKeys( docs );
+		const keys = Object.keys( docs );
 		let matched = false;
 		for ( let i = 0; i < keys.length; i++ ) {
 			const pkg = keys[ i ];
-			if ( !isObject( docs[ pkg ] ) ) {
-				if ( contains( pkg, filter ) ) {
+			if ( typeof docs[ pkg ] !== 'object' ) {
+				if ( pkg.includes( filter ) ) {
 					matched = true;
 				}
-			} else if ( contains( pkg, filter ) ) {
+			} else if ( pkg.includes( filter ) ) {
 				matched = true;
 				state[ path+'/'+pkg ] = true;
 			} else {
@@ -247,7 +236,7 @@ class MenuBar extends Component {
 								<ChevronRightIcon id="menu-close-icon" />
 							</IconButton>
 						</div>
-						<select className="side-menu-version-select" id="lang" onChange={this.selectVersion} value={this.state.version}>
+						<select className="side-menu-version-select" id="lang" onChange={this.props.onVersionChange} value={this.state.version}>
 							<option value="v0.0.87">v0.0.87</option>
 						</select>
 						<input
@@ -258,7 +247,10 @@ class MenuBar extends Component {
 						/>
 						<div className="side-menu-list-wrapper" >
 							<List disablePadding >
-								{this.renderItems( packageTree, '@stdlib', 0 )}
+								{ this.props.packageTree ?
+									this.renderItems( this.props.packageTree, '@stdlib', 0 ) :
+									null
+								}
 							</List>
 						</div>
 					</Drawer>
