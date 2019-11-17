@@ -55,10 +55,6 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 // makes for a smoother build process.
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 
-const imageInlineSizeLimit = parseInt(
-	process.env.IMAGE_INLINE_SIZE_LIMIT || '10000'
-);
-
 const STDLIB_PATH = './../../../../lib/node_modules';
 
 // style files regexes
@@ -135,12 +131,6 @@ module.exports = function(webpackEnv) {
 		].filter(Boolean);
 		if (preProcessor) {
 			loaders.push(
-				{
-					loader: require.resolve('resolve-url-loader'),
-					options: {
-						sourceMap: isEnvProduction && shouldUseSourceMap,
-					},
-				},
 				{
 					loader: require.resolve(preProcessor),
 					options: {
@@ -375,17 +365,6 @@ module.exports = function(webpackEnv) {
 						{
 							test: [ /\.html$/ ],
 							loader: require.resolve('html-loader')
-						},
-						// "url" loader works like "file" loader except that it embeds assets
-						// smaller than specified limit in bytes as data URLs to avoid requests.
-						// A missing `test` is equivalent to a match.
-						{
-							test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-							loader: require.resolve('url-loader'),
-							options: {
-								limit: imageInlineSizeLimit,
-								name: 'static/media/[name].[hash:8].[ext]',
-							},
 						},
 						// Process application JS with Babel.
 						// The preset includes JSX, Flow, TypeScript, and some ESnext features.
