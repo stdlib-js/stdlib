@@ -22,7 +22,8 @@
 REMARK_RUN_JAVASCRIPT_EXAMPLES_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
-REMARK_RUN_JAVASCRIPT_EXAMPLES_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
+# REMARK_RUN_JAVASCRIPT_EXAMPLES_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
+REMARK_RUN_JAVASCRIPT_EXAMPLES_IGNORE ?= $(ROOT)/.remarkignore
 
 # Define the path to a plugin which processes JavaScript examples in Markdown files:
 REMARK_RUN_JAVASCRIPT_EXAMPLES_PLUGIN ?= $(TOOLS_PKGS_DIR)/remark/plugins/remark-run-javascript-examples

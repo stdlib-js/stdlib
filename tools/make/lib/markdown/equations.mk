@@ -37,7 +37,8 @@ EQUATION_RESOURCES_PATH ?= ./docs/img/
 REMARK_EQUATIONS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
-REMARK_EQUATIONS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
+# REMARK_EQUATIONS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
+REMARK_EQUATIONS_IGNORE ?= $(ROOT)/.remarkignore
 
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_PKGS_DIR)/remark/plugins

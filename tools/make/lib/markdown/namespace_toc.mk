@@ -28,7 +28,8 @@ GIT_COMMIT_TOCS ?= $(GIT_COMMIT) -m $(GIT_COMMIT_MESSAGE_TOCS)
 REMARK_TOC_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
-REMARK_TOC_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore
+# REMARK_TOC_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
+REMARK_TOC_IGNORE ?= $(ROOT)/.remarkignore
 
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_PKGS_DIR)/remark/plugins

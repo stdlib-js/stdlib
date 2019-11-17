@@ -16,24 +16,16 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
+# Directories #
+###############
+build/
+downloads/
+reports/
+tmp/
+.git
 
-# Define the path to the path to the executable for linting Markdown files.
-MARKDOWN_LINT ?= $(REMARK)
+# Only the top-level node_modules directory:
+/node_modules/
 
-# Define the path to the remark configuration file:
-REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
-
-# Define the path to the remark ignore file:
-# REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
-REMARK_IGNORE ?= $(ROOT)/.remarkignore
-
-# Define the command-line options when invoking the remark executable:
-MARKDOWN_LINT_FLAGS ?= \
-	--ext $(MARKDOWN_FILENAME_EXT) \
-	--rc-path $(REMARK_CONF) \
-	--ignore-path $(REMARK_IGNORE) \
-	--no-stdout \
-	--no-ignore \
-	--no-config \
-	--quiet
+# Nested node_modules directories below the project node_modules directory:
+lib/node_modules/**/node_modules/
