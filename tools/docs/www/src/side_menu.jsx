@@ -20,6 +20,7 @@
 
 import React, { Component, Fragment } from 'react';
 import { debounce } from 'throttle-debounce';
+import { Link } from 'react-router-dom';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Collapse from '@material-ui/core/Collapse';
@@ -231,7 +232,9 @@ class MenuBar extends Component {
 						}}
 					>
 						<div className="side-menu-head" >
-							<Logo />
+							<Link to="/">
+								<Logo />
+							</Link>
 							<IconButton aria-label="close drawer" onClick={this.handleDrawerClose} edge="start" >
 								<ChevronRightIcon id="menu-close-icon" />
 							</IconButton>

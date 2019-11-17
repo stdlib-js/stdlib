@@ -31,18 +31,28 @@ body {
 	left: 20px;
 }
 
+#stdlib-logo {
+	opacity: 0.9;
+}
+
+#stdlib-logo:hover{
+	opacity: 1;
+}
+
 #menu-close-icon {
 	color:#c7c7c7;
 }
 
 #menu-close-icon:hover {
 	color: #bfc4c9;
+	box-shadow: 20px;
 }
 
 .side-menu-head {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	padding-left: 10px;
 }
 
 .side-menu-drawer {

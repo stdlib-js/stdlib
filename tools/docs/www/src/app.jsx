@@ -22,6 +22,7 @@ import React, { Component, Fragment } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SideMenu from './side_menu.jsx';
+import WelcomePage from './welcome_page.jsx';
 import VERSIONS from './versions.json';
 import './css/app.css';
 import './css/reset.css';
@@ -54,7 +55,7 @@ class App extends Component {
 		super( props );
 
 		this.state = {
-			slideoutIsOpen: false,
+			slideoutIsOpen: true,
 			version: VERSIONS[ 0 ],
 			packageTree: null,
 			packageResources: {}
@@ -89,7 +90,7 @@ class App extends Component {
 				<nav className="navbar">
 					{ hasBenchmarks ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link> : null}
 					{ hasTests ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link> : null}
-					<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+					{ resources ? <a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a> : null}
 				</nav>
 				<ReadmePage path={match.url} />
 			</Fragment>
@@ -187,7 +188,7 @@ class App extends Component {
 										<nav className="navbar">
 											{ hasBenchmarks ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link> : null}
 											{ hasTests ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link> : null}
-											<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+											{ resources ? <a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a> : null}
 										</nav>
 										{iframe}
 									</Fragment>
@@ -212,7 +213,7 @@ class App extends Component {
 										<nav className="navbar">
 											{ hasBenchmarks ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link> : null}
 											{ hasTests ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link> : null}
-											<a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a>
+											{ resources ? <a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a> : null}
 										</nav>
 										{iframe}
 									</Fragment>
@@ -229,6 +230,9 @@ class App extends Component {
 							path="/:version/docs/api/@stdlib/:pkg*"
 							render={this.renderReadme}
 						/>
+						<Route exact path="/" >
+							<WelcomePage />
+						</Route>
 					</Switch>
 				</div>
 			</div>

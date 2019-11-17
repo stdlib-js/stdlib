@@ -23,7 +23,7 @@ import React from 'react';
 
 // MAIN //
 
-const svg = () => <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="110.25" height="35" viewBox="0, 0, 315, 100">
+const svg = () => <svg id="stdlib-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="110.25" height="35" viewBox="0, 0, 315, 100">
 <defs>
 	<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="26.041" y1="25.718" x2="49.937" y2="11.918">
 		<stop offset="0" stopColor="#A4681D"></stop>
