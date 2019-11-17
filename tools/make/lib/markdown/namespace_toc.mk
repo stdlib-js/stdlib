@@ -34,7 +34,7 @@ REMARK_TOC_IGNORE ?= $(ROOT_DIR)/.remarkignore
 # Define the path to the local remark plugins directory:
 REMARK_LOCAL_PLUGINS_DIR ?= $(TOOLS_PKGS_DIR)/remark/plugins
 
-# Define the path to a plugin which processes Markdown equation comments:
+# Define the path to a plugin which processes Markdown table of contents comments:
 REMARK_TOC_PLUGIN ?= $(REMARK_LOCAL_PLUGINS_DIR)/remark-namespace-toc
 REMARK_TOC_PLUGIN_SETTINGS ?=
 REMARK_TOC_PLUGIN_FLAGS ?= --use $(REMARK_TOC_PLUGIN)=$(REMARK_TOC_PLUGIN_SETTINGS)
