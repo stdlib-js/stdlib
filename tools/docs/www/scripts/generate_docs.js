@@ -1,4 +1,3 @@
-
 /**
 * @license Apache-2.0
 *
@@ -16,6 +15,8 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
+'use strict';
 
 // MODULES //
 
@@ -38,9 +39,13 @@ var tree = pkgTree.sync();
 // Index one level into the tree:
 tree = tree[ '@stdlib' ];
 
+// Hide internal tools from user-facing documentation:
+delete tree[ '_tools' ];
+
 // Create and save HTML fragments:
 
-var docsPath = path.resolve( __dirname, '..', 'public', 'assets', 'v'+version );
+var assetPath = path.resolve( __dirname, '..', 'public', 'assets' );
+var docsPath = path.resolve( assetPath, 'v'+version );
 
 var dir = path.resolve( __dirname,  './../../../../lib/node_modules' );
 var opts = {
@@ -117,4 +122,4 @@ function onBenchmarks( err ) {
 }
 
 // Save JSON file to source directory to populate sidebar menu:
-fs.writeFileSync( path.join( docsPath, 'package_tree.json' ), JSON.stringify( tree, null, 2 ) );
+fs.writeFileSync( path.join( docsPath, 'package_tree.json' ), JSON.stringify( tree ) );
