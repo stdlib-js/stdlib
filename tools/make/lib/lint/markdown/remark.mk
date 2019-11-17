@@ -26,7 +26,7 @@ REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
 # REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
-REMARK_IGNORE ?= $(ROOT)/.remarkignore
+REMARK_IGNORE ?= $(ROOT_DIR)/.remarkignore
 
 # Define the command-line options when invoking the remark executable:
 MARKDOWN_LINT_FLAGS ?= \
