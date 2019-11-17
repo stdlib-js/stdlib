@@ -24,11 +24,9 @@
 
 'use strict';
 
-const fs = require('fs');
 const isWsl = require('is-wsl');
 const path = require('path');
 const webpack = require('webpack');
-const resolve = require('resolve');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -46,7 +44,6 @@ const paths = require('./paths');
 const modules = require('./modules');
 const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
-const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 
 const postcssNormalize = require('postcss-normalize');
 
@@ -595,12 +592,6 @@ module.exports = function(webpackEnv) {
 					};
 				},
 			}),
-			// Moment.js is an extremely popular library that bundles large locale files
-			// by default due to how Webpack interprets its code. This is a practical
-			// solution that requires the user to opt into importing specific locales.
-			// https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
-			// You can remove this if you don't use Moment.js:
-			new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 			// Generate a service worker script that will precache, and keep up to date,
 			// the HTML & assets that are part of the Webpack build.
 			isEnvProduction &&
