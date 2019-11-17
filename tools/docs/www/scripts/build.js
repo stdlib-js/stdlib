@@ -74,7 +74,9 @@ const config = configFactory('production');
 const { checkBrowsers } = require('react-dev-utils/browsersHelper');
 checkBrowsers(paths.appPath, isInteractive)
 	.then(() => {
-		// First, read the current file sizes in build directory.
+		// First delete assets directory to not measure sizes of docs:
+		fs.emptyDirSync( path.join( paths.appBuild, 'assets' ) );
+		// Read the current file sizes in build directory.
 		// This lets us display how much they changed later.
 		return measureFileSizesBeforeBuild(paths.appBuild);
 	})
@@ -128,17 +130,9 @@ checkBrowsers(paths.appPath, isInteractive)
 			);
 		},
 		err => {
-			const tscCompileOnError = process.env.TSC_COMPILE_ON_ERROR === 'true';
-			if (tscCompileOnError) {
-				console.log(chalk.yellow(
-					'Compiled with the following type errors (you may want to check these before deploying your app):\n'
-				));
-				printBuildError(err);
-			} else {
-				console.log(chalk.red('Failed to compile.\n'));
-				printBuildError(err);
-				process.exit(1);
-			}
+			console.log(chalk.red('Failed to compile.\n'));
+			printBuildError(err);
+			process.exit(1);
 		}
 	)
 	.catch(err => {
