@@ -134,8 +134,8 @@ a:active {
 	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.readme pre,
-.readme code {
+.readme > section > pre,
+.readme > section > code {
 	font-size: 14px;
 }
 
