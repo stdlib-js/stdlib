@@ -23,6 +23,7 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var flattenObject = require( '@stdlib/utils/flatten-object' );
+var merge = require( '@stdlib/utils/merge' );
 var objectKeys = require( '@stdlib/utils/keys' );
 var exists = require( '@stdlib/fs/exists' ).sync;
 var version = require( './../../../../package.json' ).version;
@@ -34,9 +35,17 @@ var tree = require( '../public/assets/v'+version+'/package_tree.json' );
 var docsPath = path.resolve( __dirname, '..', 'public', 'assets', 'v'+version );
 
 // Create object with information on each package about whether it has benchmarks and tests:
-var paths = flattenObject( tree, {
-	'delimiter': '/'
-});
+var opts = {
+	'delimiter': '/',
+	'depth': 0
+};
+var paths = flattenObject( tree, opts );
+
+// Create paths for all namespaces, sub-namespaces and packages:
+while ( opts.depth <= 6 ) {
+	paths = merge( paths, flattenObject( tree, opts ) );
+	opts.depth += 1;
+}
 
 var keys = objectKeys( paths );
 
