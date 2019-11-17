@@ -18,16 +18,21 @@
 
 // MODULES //
 
-import React from 'react';
+import React, { Fragment } from 'react';
 
 
 // MAIN //
 
 const WelcomePage = () => {
 	return (
-		<div className="readme" >
-			<h2><code>stdlib</code> project documentation</h2>
-		</div>
+		<Fragment>
+			<nav className="navbar">
+				<a href="https://stdlib.io/">Go to project website</a>
+			</nav>
+			<div className="readme" >
+				<h2><code>stdlib</code> project documentation</h2>
+			</div>
+		</Fragment>
 	);
 };
 

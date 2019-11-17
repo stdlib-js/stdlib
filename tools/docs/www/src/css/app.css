@@ -53,6 +53,8 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .side-menu-drawer {
