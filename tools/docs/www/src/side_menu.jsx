@@ -20,7 +20,7 @@
 
 import React, { Component, Fragment } from 'react';
 import { debounce } from 'throttle-debounce';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Collapse from '@material-ui/core/Collapse';
@@ -44,6 +44,16 @@ class MenuBar extends Component {
 			filter: '',
 			found: {}
 		};
+	}
+
+	componentDidUpdate() {
+		const history = this.props.history;
+		const pathname = history.location.pathname;
+		if ( !pathname.endsWith( this.state.activePkg ) ) {
+			this.setState({
+				activePkg: pathname.substring( pathname.indexOf( '@stdlib' ) )
+			});
+		}
 	}
 
 	handleDrawerOpen = () => {
@@ -281,4 +291,4 @@ class MenuBar extends Component {
 
 // EXPORTS //
 
-export default MenuBar;
+export default withRouter( MenuBar );
