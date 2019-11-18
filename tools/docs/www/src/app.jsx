@@ -83,13 +83,14 @@ class App extends Component {
 		const resources = this.state.packageResources[ match.params.pkg ];
 		const hasTests = resources && resources.test;
 		const hasBenchmarks = resources && resources.benchmark;
+		const fullPkgPath = `/${match.params.version}/docs/api/@stdlib/${match.params.pkg}`;
 
 		// Render the README for the selected package:
 		return (
 			<Fragment>
 				<nav className="navbar">
-					{ hasBenchmarks ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link> : null}
-					{ hasTests ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link> : null}
+					{ hasBenchmarks ? <Link to={`${fullPkgPath}/benchmark.html`}>Benchmarks</Link> : null}
+					{ hasTests ? <Link to={`${fullPkgPath}/test.html`}>Tests</Link> : null}
 					{ resources ? <a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a> : null}
 				</nav>
 				<ReadmePage path={match.url} />
@@ -183,11 +184,13 @@ class App extends Component {
 								} else {
 									iframe = <h2><code>{match.params.pkg}</code> does not have any benchmarks.</h2>;
 								}
+								const fullPkgPath = `/${match.params.version}/docs/api/@stdlib/${match.params.pkg}`;
 								return (
 									<Fragment>
 										<nav className="navbar">
-											{ hasBenchmarks ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link> : null}
-											{ hasTests ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link> : null}
+											<Link to={fullPkgPath} >Back to README</Link>
+											{ hasBenchmarks ? <Link to={`${fullPkgPath}/benchmark.html`}>Benchmarks</Link> : null}
+											{ hasTests ? <Link to={`${fullPkgPath}/test.html`}>Tests</Link> : null}
 											{ resources ? <a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a> : null}
 										</nav>
 										{iframe}
@@ -208,11 +211,13 @@ class App extends Component {
 								} else {
 									iframe = <h2><code>{match.params.pkg}</code> does not have any tests.</h2>;
 								}
+								const fullPkgPath = `/${match.params.version}/docs/api/@stdlib/${match.params.pkg}`;
 								return (
 									<Fragment>
 										<nav className="navbar">
-											{ hasBenchmarks ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/benchmark.html`}>Benchmarks</Link> : null}
-											{ hasTests ? <Link to={`/${match.params.version}/docs/api/@stdlib/${match.params.pkg}/test.html`}>Tests</Link> : null}
+											<Link to={fullPkgPath} >Back to README</Link>
+											{ hasBenchmarks ? <Link to={`${fullPkgPath}/benchmark.html`}>Benchmarks</Link> : null}
+											{ hasTests ? <Link to={`${fullPkgPath}/test.html`}>Tests</Link> : null}
 											{ resources ? <a href={`https://github.com/stdlib-js/stdlib/tree/${match.params.version}/lib/node_modules/@stdlib/${match.params.pkg}`}>Source</a> : null}
 										</nav>
 										{iframe}
