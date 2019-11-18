@@ -108,7 +108,8 @@ class MenuBar extends Component {
 			// Case: Namespace package
 			if (
 				this.state.filter &&
-				!this.state.found[ pkgPath ]
+				!this.state.found[ pkgPath ] &&
+				!path.endsWith( this.state.filter )
 			) {
 				// Case: Filter does not match package or parent namespace
 				return null;
