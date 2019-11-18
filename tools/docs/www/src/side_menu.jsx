@@ -58,14 +58,14 @@ class MenuBar extends Component {
 			const active = !prevState[ path ];
 			return {
 				[ path ]: active,
-				activePkg: active ? path.substring( path.lastIndexOf( '/' )+1 ) : null
+				activePkg: path
 			}
 		});
 	}
 
-	handlePackageClick( pkg ) {
+	handlePackageClick( pkgPath ) {
 		this.setState({
-			activePkg: pkg
+			activePkg: pkgPath
 		});
 	}
 
@@ -90,13 +90,13 @@ class MenuBar extends Component {
 							key={`${pkgPath}-item`}
 							className="side-menu-list-item"
 							onClick={() => {
-								this.handlePackageClick( pkg );
+								this.handlePackageClick( pkgPath );
 								const path = `/${this.props.version}/docs/api/${pkgPath}`;
 								this.props.onReadmeChange( path );
 							}}
 							style={{
 								paddingLeft: 16 + 10 * level,
-								color: this.state.activePkg === pkg ? '#5ca2c8' : null
+								color: this.state.activePkg === pkgPath ? '#5ca2c8' : null
 							}}
 						>
 								{pkg}
@@ -123,7 +123,7 @@ class MenuBar extends Component {
 						className="side-menu-list-item-namespace"
 						style={{
 							paddingLeft: 16 + 10 * level,
-							color: this.state.activePkg === pkg ? '#5ca2c8' : null
+							color: this.state.activePkg === pkgPath ? '#5ca2c8' : null
 						}}
 					>
 						{pkg}

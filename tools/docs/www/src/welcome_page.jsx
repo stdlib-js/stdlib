@@ -27,7 +27,7 @@ const WelcomePage = () => {
 	return (
 		<Fragment>
 			<nav className="navbar">
-				<a href="https://stdlib.io/">Go to project website</a>
+				<a href="https://stdlib.io/">stdlib.io</a>
 			</nav>
 			<div className="readme" >
 				<h2><code>stdlib</code> project documentation</h2>
