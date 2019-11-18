@@ -31,6 +31,7 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
 import ClearIcon from '@material-ui/icons/Clear';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import VERSIONS from './versions.json';
 import Logo from './logo.jsx';
 
 
@@ -276,8 +277,12 @@ class MenuBar extends Component {
 								<ChevronRightIcon id="menu-close-icon" />
 							</IconButton>
 						</div>
-						<select className="side-menu-version-select" id="lang" onChange={this.props.onVersionChange} value={this.state.version}>
-							<option value="v0.0.87">v0.0.87</option>
+						<select
+							className="side-menu-version-select"
+							onChange={this.props.onVersionChange}
+							value={this.props.version}
+						>
+							{VERSIONS.map( ( val, key ) => <option key={key} value={val}>{val}</option> )}
 						</select>
 						<div className="side-menu-filter" >
 							<input

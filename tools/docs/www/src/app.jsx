@@ -23,7 +23,6 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SideMenu from './side_menu.jsx';
 import WelcomePage from './welcome_page.jsx';
-import VERSIONS from './versions.json';
 import './css/app.css';
 import './css/reset.css';
 import './css/highlight.css';
@@ -54,9 +53,11 @@ class App extends Component {
 	constructor( props ) {
 		super( props );
 
+		const pathname = props.history.location.pathname;
+		const version = pathname.substring( 1, pathname.indexOf( '/docs' ) );
 		this.state = {
 			slideoutIsOpen: true,
-			version: VERSIONS[ 0 ],
+			version: version,
 			packageTree: null,
 			packageResources: {}
 		};
@@ -150,6 +151,9 @@ class App extends Component {
 	}
 
 	selectVersion = ( event ) => {
+		let pathname = this.props.history.location.pathname;
+		pathname = pathname.replace( this.state.version, event.target.value );
+		this.props.history.push( pathname );
 		this.setState({
 			version: event.target.value
 		}, this.fetchJSONFiles );
