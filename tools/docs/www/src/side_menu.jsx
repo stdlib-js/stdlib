@@ -34,6 +34,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Logo from './logo.jsx';
 
 
+// VARIABLES //
+
+const RE_FORWARD_SLASH = /\//g;
+
+
 // MAIN //
 
 class MenuBar extends Component {
@@ -50,9 +55,16 @@ class MenuBar extends Component {
 		const history = this.props.history;
 		const pathname = history.location.pathname;
 		if ( !pathname.endsWith( this.state.activePkg ) ) {
-			this.setState({
-				activePkg: pathname.substring( pathname.indexOf( '@stdlib' ) )
-			});
+			const packagePath = pathname.substring( pathname.indexOf( '@stdlib' ) );
+			const newState = {
+				[ packagePath ]: true,
+				activePkg: packagePath
+			};
+			let match;
+			while ( ( match = RE_FORWARD_SLASH.exec( packagePath) ) !== null ) {
+				newState[ packagePath.substring( 0, match.index ) ] = true;
+			}
+			this.setState( newState );
 		}
 	}
 
