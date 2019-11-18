@@ -29,6 +29,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
+import ClearIcon from '@material-ui/icons/Clear';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Logo from './logo.jsx';
 
@@ -40,7 +41,7 @@ class MenuBar extends Component {
 		super( props )
 		this.state = {
 			activePkg: null,
-			filter: null,
+			filter: '',
 			found: {}
 		};
 	}
@@ -109,6 +110,7 @@ class MenuBar extends Component {
 				this.state.filter &&
 				!this.state.found[ pkgPath ]
 			) {
+				// Case: Filter does not match package or parent namespace
 				return null;
 			}
 			return (
@@ -172,16 +174,21 @@ class MenuBar extends Component {
 				found
 			});
 		} else {
-			const keys = Object.keys( this.state.found );
-			const newState = {};
-			for ( let i = 0; i < keys.length; i++ ) {
-				newState[ keys[ i ] ] = false;
-			}
-			this.setState({
-				...newState,
-				found: {}
-			});
+			this.resetFilter();
 		}
+	}
+
+	resetFilter = () => {
+		const keys = Object.keys( this.state.found );
+		const newState = {};
+		for ( let i = 0; i < keys.length; i++ ) {
+			newState[ keys[ i ] ] = false;
+		}
+		this.setState({
+			...newState,
+			filter: '',
+			found: {}
+		});
 	}
 
 	checkFilter( state, docs, path, filter ) {
@@ -242,12 +249,19 @@ class MenuBar extends Component {
 						<select className="side-menu-version-select" id="lang" onChange={this.props.onVersionChange} value={this.state.version}>
 							<option value="v0.0.87">v0.0.87</option>
 						</select>
-						<input
-							className="side-menu-filter-input"
-							type="text"
-							onChange={this.handleFilterChange}
-							placeholder="Type here to filter menu..."
-						/>
+						<div className="side-menu-filter" >
+							<input
+								className="side-menu-filter-input"
+								type="text"
+								onChange={this.handleFilterChange}
+								value={this.state.filter}
+								placeholder="Type here to filter menu..."
+							/>
+							{ this.state.filter ? <ClearIcon
+								className="side-menu-filter-clear"
+								onClick={this.resetFilter}
+							/> : null }
+						</div>
 						<div className="side-menu-list-wrapper" >
 							<List disablePadding >
 								{ this.props.packageTree ?

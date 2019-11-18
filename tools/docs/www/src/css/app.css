@@ -75,16 +75,33 @@ body {
 	padding-left: 1em;
 }
 
+.side-menu-filter {
+	position: relative;
+}
+
 .side-menu-filter-input {
 	color: #acafb3;
 	background: #1f1f1f;
 	border: none;
 	height: 40px;
 	margin-top: 10px;
+	width: 100%;
 	padding-left: 1em;
 }
 
 .side-menu-filter-input:hover {
+	color: #bfc4c9;
+}
+
+.side-menu-filter-clear {
+	position: absolute;
+	top: 18px;
+	right: 4px;
+	color: #acafb3;
+	cursor: pointer;
+}
+
+.side-menu-filter-clear:hover {
 	color: #bfc4c9;
 }
 
