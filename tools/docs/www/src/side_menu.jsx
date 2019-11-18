@@ -37,6 +37,7 @@ import Logo from './logo.jsx';
 // VARIABLES //
 
 const RE_FORWARD_SLASH = /\//g;
+const COLLAPSE_TRANSITION_TIMEOUT = 500;
 
 
 // MAIN //
@@ -51,7 +52,7 @@ class MenuBar extends Component {
 		};
 	}
 
-	componentDidUpdate() {
+	componentDidUpdate( _, prevState ) {
 		const history = this.props.history;
 		const pathname = history.location.pathname;
 		if ( !pathname.endsWith( this.state.activePkg ) ) {
@@ -65,6 +66,14 @@ class MenuBar extends Component {
 				newState[ packagePath.substring( 0, match.index ) ] = true;
 			}
 			this.setState( newState );
+		}
+		if ( this.state.activePkg !== prevState.activePkg ) {
+			const elems = document.getElementsByClassName( 'active-package' );
+			if ( elems.length > 0 ) {
+				setTimeout( () => {
+					elems[ 0 ].scrollIntoViewIfNeeded();
+				}, COLLAPSE_TRANSITION_TIMEOUT );
+			}
 		}
 	}
 
@@ -111,15 +120,14 @@ class MenuBar extends Component {
 						<ListItem
 							button
 							key={`${pkgPath}-item`}
-							className="side-menu-list-item"
+							className={`side-menu-list-item ${this.state.activePkg === pkgPath ? 'active-package' : ''}`}
 							onClick={() => {
 								this.handlePackageClick( pkgPath );
 								const path = `/${this.props.version}/docs/api/${pkgPath}`;
 								this.props.onReadmeChange( path );
 							}}
 							style={{
-								paddingLeft: 16 + 10 * level,
-								color: this.state.activePkg === pkgPath ? '#5ca2c8' : null
+								paddingLeft: 16 + 10 * level
 							}}
 						>
 								{pkg}
@@ -145,10 +153,9 @@ class MenuBar extends Component {
 							const path = `/${this.props.version}/docs/api/${pkgPath}`;
 							this.props.onReadmeChange( path );
 						}}
-						className="side-menu-list-item-namespace"
+						className={`side-menu-list-item-namespace ${this.state.activePkg === pkgPath ? 'active-package' : ''}`}
 						style={{
-							paddingLeft: 16 + 10 * level,
-							color: this.state.activePkg === pkgPath ? '#5ca2c8' : null
+							paddingLeft: 16 + 10 * level
 						}}
 					>
 						{pkg}
@@ -161,7 +168,7 @@ class MenuBar extends Component {
 					</ListItem>
 					<Collapse
 						in={this.state[ pkgPath ]}
-						timeout="auto"
+						timeout={COLLAPSE_TRANSITION_TIMEOUT}
 						unmountOnExit
 					>
 						{this.renderItems( namespace[ pkg ], pkgPath, level+1 )}

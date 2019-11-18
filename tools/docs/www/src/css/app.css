@@ -160,6 +160,10 @@ body {
 	height: calc(100vh - 140px);
 }
 
+.active-package {
+	color: #5ca2c8 !important;
+}
+
 .navbar {
 	position: fixed;
 	top: 30px;
