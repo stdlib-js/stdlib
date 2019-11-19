@@ -30,7 +30,7 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import IconButton from '@material-ui/core/IconButton';
 import ClearIcon from '@material-ui/icons/Clear';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import VERSIONS from './versions.json';
 import Logo from './logo.jsx';
 
@@ -270,11 +270,11 @@ class MenuBar extends Component {
 						}}
 					>
 						<div className="side-menu-head" >
-							<Link to="/">
+							<Link to={`/${this.props.version}/docs/api`}>
 								<Logo />
 							</Link>
 							<IconButton aria-label="close drawer" onClick={this.handleDrawerClose} edge="start" >
-								<ChevronRightIcon id="menu-close-icon" />
+								<ChevronLeftIcon id="menu-close-icon" />
 							</IconButton>
 						</div>
 						<select

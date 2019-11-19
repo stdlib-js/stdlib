@@ -239,8 +239,8 @@ class App extends Component {
 							path="/:version/docs/api/@stdlib/:pkg*"
 							render={this.renderReadme}
 						/>
-						<Route exact path="/" >
-							<WelcomePage />
+						<Route exact path="/:version/docs/api" >
+							<WelcomePage version={this.state.version} />
 						</Route>
 					</Switch>
 				</div>
