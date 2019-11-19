@@ -270,7 +270,7 @@ class MenuBar extends Component {
 						}}
 					>
 						<div className="side-menu-head" >
-							<Link to={`/${this.props.version}/docs/api`}>
+							<Link to={`/${this.props.version}`}>
 								<Logo />
 							</Link>
 							<IconButton aria-label="close drawer" onClick={this.handleDrawerClose} edge="start" >

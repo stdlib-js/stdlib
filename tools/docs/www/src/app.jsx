@@ -23,6 +23,7 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import SideMenu from './side_menu.jsx';
 import WelcomePage from './welcome_page.jsx';
+import VERSIONS from './versions.json';
 import './css/app.css';
 import './css/reset.css';
 import './css/highlight.css';
@@ -53,8 +54,13 @@ class App extends Component {
 	constructor( props ) {
 		super( props );
 
-		const pathname = props.history.location.pathname;
-		const version = pathname.substring( 1, pathname.indexOf( '/docs' ) );
+		let pathname = props.history.location.pathname;
+		let version = pathname.substring( 1, pathname.indexOf( '/docs' ) );
+		if ( !VERSIONS.includes( version ) ) {
+			pathname = pathname.replace( version, VERSIONS[ 0 ] );
+			this.props.history.push( pathname );
+			version = VERSIONS[ 0 ];
+		}
 		this.state = {
 			slideoutIsOpen: true,
 			version: version,
@@ -239,7 +245,7 @@ class App extends Component {
 							path="/:version/docs/api/@stdlib/:pkg*"
 							render={this.renderReadme}
 						/>
-						<Route exact path="/:version/docs/api" >
+						<Route exact path="/:version?" >
 							<WelcomePage version={this.state.version} />
 						</Route>
 					</Switch>
