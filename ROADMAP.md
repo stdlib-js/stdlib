@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2019 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # Roadmap
 
 > Project roadmap.
@@ -22,10 +42,10 @@ Last, the final theme is documentation. Part of this effort will be continuing t
 
 ### Multi-dimensional Arrays
 
--   `ndarray` data structure
--   generalized `ndarray` API
--   engine for element-wise operations
--   engine for axis-wise operations
+-   broadcasting semantics
+-   ndarray engine for element-wise operations
+-   ndarray engine for axis-wise operations
+-   add vectorized array APIs
 
 ### Native Implementations
 
@@ -39,14 +59,13 @@ Last, the final theme is documentation. Part of this effort will be continuing t
 -   Additional chart types (bar, column, histogram)
 -   ASCII engine
 -   Canvas engine (including PNG output)
--   CLI
 
 ### Automation
 
--   Continuous integration environments
+-   Performance improvements to continuous integration environments
 -   Browser testing
 -   Package scaffolding tools
--   Linters (REPL text, JSDoc examples, and more)
+-   Package decomposition (independent package publishing)
 
 ### Documentation
 
