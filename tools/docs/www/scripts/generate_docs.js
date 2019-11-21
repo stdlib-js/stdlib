@@ -34,16 +34,16 @@ var version = require( './../../../../package.json' ).version;
 // MAIN //
 
 // Create tree of packages of `stdlib`:
-var tree = pkgTree.sync();
+var tree = pkgTree.sync({
+	'ignore': [
+		'_tools/**'
+	]
+});
 
 // Index one level into the tree:
 tree = tree[ '@stdlib' ];
 
-// Hide internal tools from user-facing documentation:
-delete tree[ '_tools' ];
-
 // Create and save HTML fragments:
-
 var assetPath = path.resolve( __dirname, '..', 'public', 'assets' );
 var docsPath = path.resolve( assetPath, 'v'+version );
 
