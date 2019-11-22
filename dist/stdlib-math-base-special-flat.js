@@ -11774,6 +11774,8 @@ var _$sincos_690 = sincos;
 * // returns [ NaN, NaN ]
 *
 * @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
 * var out = new Float64Array( 2 );
 *
 * var v = sincos( out, 0.0 );
@@ -47766,25 +47768,27 @@ var _$fresnel_357 = fresnel;
 * @returns {(Array|TypedArray|Object)} S(x) and C(x)
 *
 * @example
-* var fresnel = require( '@stdlib/math/base/special/fresnel' );
-*
 * var v = fresnel( 0.0 );
 * // returns [ 0.0, 0.0 ]
 *
-* v = fresnel( 1.0 );
+* @example
+* var v = fresnel( 1.0 );
 * // returns [ ~0.438, ~0.780 ]
 *
-* v = fresnel( Infinity );
+* @example
+* var v = fresnel( Infinity );
 * // returns [ ~0.5, ~0.5 ]
 *
-* v = fresnel( -Infinity );
+* @example
+* var v = fresnel( -Infinity );
 * // returns [ ~-0.5, ~-0.5 ]
 *
-* v = fresnel( NaN );
+* @example
+* var v = fresnel( NaN );
 * // returns [ NaN, NaN ]
 *
 * @example
-* var fresnel = require( '@stdlib/math/base/special/fresnel' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var out = new Float64Array( 2 );
 *
