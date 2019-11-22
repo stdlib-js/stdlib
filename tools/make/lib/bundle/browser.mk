@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the command for generating distributable browser bundles:
-DIST_BROWSER_BUNDLES ?= $(NODE) \
+DIST_BROWSER_BUNDLES ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
 	--max_old_space_size=4096 \
 	--expose_gc \
 	$(TOOLS_PKGS_DIR)/bundle/scripts/dist_browser_bundles
