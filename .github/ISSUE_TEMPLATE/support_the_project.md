@@ -22,9 +22,12 @@ You can help in the following ways:
 If you want to be a sponsor 🤗, you can donate to one or more of the following:
 
 -   Athan's [Patreon][patreon-stdlib]: <https://www.patreon.com/athan>
+-   Athan's [GitHub][github-stdlib]: <https://github.com/sponsors/kgryte>
 
 Thank you for your support!
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
 [patreon-stdlib]: https://www.patreon.com/athan
+
+[github-stdlib]: https://github.com/sponsors/kgryte
