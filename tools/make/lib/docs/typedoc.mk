@@ -57,6 +57,7 @@ TYPEDOC_HTML_FLAGS ?= \
 	--theme $(CONFIG_DIR)/typedoc/theme/ \
 	--hideGenerator \
 	--readme $(CONFIG_DIR)/typedoc/index.md \
+	--gaID 'UA-105890493-1' \
 	--out $(TYPEDOC_HTML_OUT)
 
 # Define command-line options to be used when invoking the TypeDoc executable to generate TypeDoc JSON:
