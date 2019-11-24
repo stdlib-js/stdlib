@@ -23,6 +23,7 @@
   "main": "./lib",
   "browser": "./dist/stdlib-flat.min.js",
   "unpkg": "./dist/stdlib-flat.min.js",
+  "jsdelivr": "./dist/stdlib-flat.min.js",
   "directories": {
     "doc": "./docs",
     "example": "./examples",
