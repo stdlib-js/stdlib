@@ -56,7 +56,7 @@ TYPEDOC_HTML_FLAGS ?= \
 	--name stdlib \
 	--theme $(CONFIG_DIR)/typedoc/theme/ \
 	--hideGenerator \
-	--readme $(ROOT_DIR)/README.md \
+	--readme $(CONFIG_DIR)/typedoc/index.md \
 	--out $(TYPEDOC_HTML_OUT)
 
 # Define command-line options to be used when invoking the TypeDoc executable to generate TypeDoc JSON:
