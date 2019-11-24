@@ -94,7 +94,7 @@ typedoc_web_assets ?= $(shell find "$(DOCS_DIR)/assets/web" -type f \( -name \*.
 typedoc-html: $(NODE_MODULES) $(TYPEDOC)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(TYPEDOC_HTML_OUT)
 	$(QUIET) $(MKDIR_RECURSIVE) $(TYPEDOC_HTML_OUT)
-	$(QUIET) $(TYPEDOC) $(TYPEDOC_HTML_FLAGS) $(SRC_DIR)
+	$(QUIET) $(NODE) --max_old_space_size=10240 $(TYPEDOC) $(TYPEDOC_HTML_FLAGS) $(SRC_DIR)
 	$(QUIET) $(CP) $(typedoc_web_assets) "$(DOCS_DIR)/assets/logo_white.svg" $(TYPEDOC_HTML_OUT)
 
 .PHONY: typedoc-html
