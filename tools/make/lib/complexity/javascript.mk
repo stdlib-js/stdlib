@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the output directory:
-JAVASCRIPT_COMPLEXITY_DIR ?= $(COMPLEXITY_DIR)/javascript
+JAVASCRIPT_COMPLEXITY_OUT ?= $(COMPLEXITY_DIR)/javascript
 
 
 # DEPENDENCIES #
@@ -31,80 +31,126 @@ endif
 
 # RULES #
 
-# Analyze code complexity.
-#
-# This target analyzes all JavaScript source code.
+#/
+# Analyzes code complexity for all JavaScript code.
 #
 # TODO: address bash argument length errors
-
+#
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
+#
+# @example
+# make complexity-javascript
+#
+# @example
+# make complexity-javascript JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 complexity-javascript: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES) $(TESTS) $(EXAMPLES) $(BENCHMARKS)
 
 .PHONY: complexity-javascript
 
-
-# Analyze source code complexity.
-#
-# This target analyzes only JavaScript source files.
+#/
+# Analyzes code complexity for JavaScript source code.
 #
 # TODO: address bash argument length errors
-
+#
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
+#
+# @example
+# make complexity-javascript-src
+#
+# @example
+# make complexity-javascript-src JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 complexity-javascript-src: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(SOURCES)
 
 .PHONY: complexity-javascript-src
 
-
-# Analyze test code complexity.
-#
-# This target analyzes only JavaScript test files.
+#/
+# Analyzes code complexity for JavaScript test files.
 #
 # TODO: address bash argument length errors
-
+#
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
+#
+# @example
+# make complexity-javascript-tests
+#
+# @example
+# make complexity-javascript-tests JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 complexity-javascript-tests: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(TESTS)
 
 .PHONY: complexity-javascript-tests
 
-
-# Analyze example code complexity.
-#
-# This target analyzes only JavaScript example files.
+#/
+# Analyzes code complexity for JavaScript example files.
 #
 # TODO: address bash argument length errors
-
+#
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
+#
+# @example
+# make complexity-javascript-examples
+#
+# @example
+# make complexity-javascript-examples JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 complexity-javascript-examples: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(EXAMPLES)
 
 .PHONY: complexity-javascript-examples
 
-
-# Analyze benchmark code complexity.
-#
-# This target analyzes only JavaScript benchmark files.
+#/
+# Analyzes code complexity for JavaScript benchmark files.
 #
 # TODO: address bash argument length errors
-
+#
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
+#
+# @example
+# make complexity-javascript-benchmarks
+#
+# @example
+# make complexity-javascript-benchmarks JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 complexity-javascript-benchmarks: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(BENCHMARKS)
 
 .PHONY: complexity-javascript-benchmarks
 
-
-# Analyze code complexity.
+#/
+# Analyzes code complexity for a list of JavaScript files.
 #
-# This target analyzes JavaScript code complexity. Note that we expect `$FILES` to be a JavaScript file list.
-
+# TODO: address bash argument length errors
+#
+# @param {string} FILES - list of JavaScript file paths
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
+#
+# @example
+# make complexity-javascript-files FILES='/foo/bar.js /beep/boop.js'
+#
+# @example
+# make complexity-javascript-files FILES='/foo/bar.js /beep/boop.js' JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 complexity-javascript-files: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(FILES)
 
 .PHONY: complexity-javascript-files
 
-
-# View a complexity report.
+#/
+# Opens an HTML JavaScript complexity report in a local web browser.
 #
-# This target opens an HTML JavaScript complexity report in a local web browser.
-
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory containing an HTML JavaScript complexity report
+#
+# @example
+# make view-javascript-complexity
+#
+# @example
+# make view-javascript-complexity JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 view-javascript-complexity:
 ifeq ($(JAVASCRIPT_COMPLEXITY_TOOL), plato)
 	$(QUIET) $(MAKE) -f $(this_file) view-plato-report
@@ -112,12 +158,18 @@ endif
 
 .PHONY: view-javascript-complexity
 
-
-# Remove a complexity directory.
+#/
+# Removes an output complexity directory.
 #
-# This target cleans up a JavaScript complexity directory by removing it entirely.
-
+# @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory to be removed
+#
+# @example
+# make clean-javascript-complexity
+#
+# @example
+# make clean-javascript-complexity JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
+#/
 clean-javascript-complexity:
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JAVASCRIPT_COMPLEXITY_DIR)
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(JAVASCRIPT_COMPLEXITY_OUT)
 
 .PHONY: clean-javascript-complexity
