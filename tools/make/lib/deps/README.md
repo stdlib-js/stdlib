@@ -100,7 +100,33 @@ Removes compiled [Boost][boost] installation tests.
 
 ```bash
 $ make clean-deps-boost-tests
-``` 
+```
+
+#### Cephes
+
+##### install-deps-cephes
+
+Installs [Cephes][cephes].
+
+```bash
+$ make install-deps-cephes
+```
+
+##### clean-deps-cephes
+
+Removes an installed [Cephes][cephes] distribution.
+
+```bash
+$ make clean-deps-cephes
+```
+
+##### clean-deps-cephes-tests
+
+Removes compiled [Cephes][cephes] installation tests.
+
+```bash
+$ make clean-deps-cephes-tests
+```
 
 </section>
 
@@ -121,6 +147,8 @@ $ make clean-deps-boost-tests
 [make]: https://www.gnu.org/software/make/
 
 [boost]: http://www.boost.org/
+
+[cephes]: http://www.moshier.net/#Cephes
 
 </section>
 
