@@ -20,17 +20,91 @@ limitations under the License.
 
 # deps
 
-> External library recipes.
+> Commands for managing external libraries.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-This directory contains [`make`][make] recipes for installing, removing, and managing the project's external library dependencies.
+This directory contains [`make`][make] rules for installing, removing, and managing the project's external library dependencies.
 
 </section>
 
 <!-- /.intro -->
+
+<!-- Usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```text
+Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
+```
+
+### Commands
+
+#### Boost
+
+##### deps-download-boost
+
+Downloads a [Boost][boost] distribution.
+
+```bash
+$ make deps-download-boost
+```
+
+##### deps-verify-boost
+
+Verifies a downloaded [Boost][boost] distribution.
+
+```bash
+$ make deps-verify-boost
+```
+
+##### deps-extract-boost
+
+Extracts a downloaded [Boost][boost] distribution.
+
+```bash
+$ make deps-extract-boost
+```
+
+##### deps-test-boost
+
+Tests an installed [Boost][boost] distribution.
+
+```bash
+$ make deps-test-boost
+```
+
+##### install-deps-boost
+
+Installs [Boost][boost].
+
+```bash
+$ make install-deps-boost
+```
+
+##### clean-deps-boost
+
+Removes an installed [Boost][boost] distribution.
+
+```bash
+$ make clean-deps-boost
+```
+
+##### clean-deps-boost-tests
+
+Removes compiled [Boost][boost] installation tests.
+
+```bash
+$ make clean-deps-boost-tests
+``` 
+
+</section>
+
+<!-- /.usage -->
 
 <!-- Section to include notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -45,6 +119,8 @@ This directory contains [`make`][make] recipes for installing, removing, and man
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
+
+[boost]: http://www.boost.org/
 
 </section>
 
