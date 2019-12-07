@@ -82,6 +82,7 @@ $(DEPS_BOOST_TEST_INSTALL_OUT): $(DEPS_BOOST_BUILD_OUT) $(DEPS_BOOST_TEST_OUT)
 #/
 # Downloads a Boost distribution.
 #
+# @private
 # @example
 # make deps-download-boost
 #/
@@ -92,6 +93,7 @@ deps-download-boost: $(DEPS_BOOST_DOWNLOAD_OUT)
 #/
 # Verifies a downloaded Boost distribution.
 #
+# @private
 # @example
 # make deps-verify-boost
 #/
@@ -104,6 +106,7 @@ deps-verify-boost: deps-download-boost
 #/
 # Extracts a downloaded Boost distribution.
 #
+# @private
 # @example
 # make deps-extract-boost
 #/
@@ -114,6 +117,7 @@ deps-extract-boost: $(DEPS_BOOST_BUILD_OUT)
 #/
 # Tests an installed Boost distribution.
 #
+# @private
 # @example
 # make deps-test-boost
 #/

@@ -138,79 +138,88 @@ deps_cephes_src := \
 DEPS_CEPHES_SRC ?= $(addprefix $(deps_cephes_build_out)/,$(deps_cephes_src))
 
 
-# TARGETS #
+# RULES #
 
-# Download.
+#/
+# Downloads a Cephes distribution.
 #
-# This target downloads a Cephes distribution.
-
+# @private
+#/
 $(DEPS_CEPHES_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading Cephes...' >&2
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_CEPHES_URL) $(DEPS_CEPHES_DOWNLOAD_OUT)
 
-
-# Extract.
+#/
+# Extracts a Cephes distribution gzipped tar archive.
 #
-# This target extracts a gzipped tar archive.
-
+# @private
+#/
 $(deps_cephes_build_out): $(DEPS_CEPHES_DOWNLOAD_OUT)
 	$(QUIET) echo 'Extracting Cephes...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $@
 	$(QUIET) $(TAR) -zxf $(DEPS_CEPHES_DOWNLOAD_OUT) -C $(DEPS_CEPHES_BUILD_OUT)
 
-
-# Create directory for tests.
+#/
+# Creates a directory for storing compiled tests for testing an installed Cephes distribution.
 #
-# This target creates a directory for storing compiled tests.
-
+# @private
+#/
 $(DEPS_CEPHES_TEST_OUT):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_CEPHES_TEST_OUT)
 
-
-# Compile install test.
+#/
+# Compiles a test file for testing a Cephes distribution installation.
 #
-# This target compiles a test file for testing an installation.
-
+# @private
+#/
 $(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT)
 	$(QUIET) $(CC) -I $(DEPS_CEPHES_BUILD_OUT) \
 		$(DEPS_CEPHES_TEST_INSTALL) \
 		$(DEPS_CEPHES_SRC) \
 		-o $(DEPS_CEPHES_TEST_INSTALL_OUT)
 
-
-# Download Cephes.
+#/
+# Downloads a Cephes distribution.
 #
-# This target downloads a Cephes distribution.
-
+# @private
+# @example
+# make deps-download-cephes
+#/
 deps-download-cephes: $(DEPS_CEPHES_DOWNLOAD_OUT)
 
 .PHONY: deps-download-cephes
 
-
-# Verify download.
+#/
+# Verifies a downloaded Cephes distribution.
 #
-# This targets verifies a download.
-
+# @private
+# @example
+# make deps-verify-cephes
+#/
 deps-verify-cephes: deps-download-cephes
 	$(QUIET) echo 'Verifying download...' >&2
 	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_CEPHES_DOWNLOAD_OUT) $(DEPS_CEPHES_CHECKSUM) >&2
 
 .PHONY: deps-verify-cephes
 
-
-# Extract Cephes.
+#/
+# Extracts a downloaded Cephes distribution.
 #
-# This target extracts a Cephes download.
-
+# @private
+# @example
+# make deps-extract-cephes
+#/
 deps-extract-cephes: $(deps_cephes_build_out)
 
 .PHONY: deps-extract-cephes
 
-
-# Test install.
+#/
+# Tests a Cephes installation.
 #
-# This target tests an installation.
-
+# @private
+# @example
+# make deps-test-cephes
+#/
 deps-test-cephes: $(DEPS_CEPHES_TEST_INSTALL_OUT)
 	$(QUIET) echo 'Running tests...' >&2
 	$(QUIET) $(DEPS_CEPHES_TEST_INSTALL_OUT)

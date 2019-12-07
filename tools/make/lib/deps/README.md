@@ -46,38 +46,6 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 #### Boost
 
-##### deps-download-boost
-
-Downloads a [Boost][boost] distribution.
-
-```bash
-$ make deps-download-boost
-```
-
-##### deps-verify-boost
-
-Verifies a downloaded [Boost][boost] distribution.
-
-```bash
-$ make deps-verify-boost
-```
-
-##### deps-extract-boost
-
-Extracts a downloaded [Boost][boost] distribution.
-
-```bash
-$ make deps-extract-boost
-```
-
-##### deps-test-boost
-
-Tests an installed [Boost][boost] distribution.
-
-```bash
-$ make deps-test-boost
-```
-
 ##### install-deps-boost
 
 Installs [Boost][boost].
