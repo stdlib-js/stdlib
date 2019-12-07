@@ -43,75 +43,80 @@ DEPS_BOOST_TEST_INSTALL ?= $(DEPS_BOOST_TEST_DIR)/test_install.cpp
 DEPS_BOOST_TEST_INSTALL_OUT ?= $(DEPS_BOOST_TEST_OUT)/test_install
 
 
-# TARGETS #
+# RULES #
 
-# Download.
+#/
+# Downloads a Boost distribution.
 #
-# This target downloads a Boost distribution.
-
+# @private
+#/
 $(DEPS_BOOST_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading Boost...' >&2
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_BOOST_URL) $(DEPS_BOOST_DOWNLOAD_OUT)
 
-
-# Extract.
+#/
+# Extracts a gzipped tar archive.
 #
-# This target extracts a gzipped tar archive.
-
+# @private
+#/
 $(DEPS_BOOST_BUILD_OUT): $(DEPS_BOOST_DOWNLOAD_OUT) | $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Boost...' >&2
 	$(QUIET) $(TAR) -zxf $(DEPS_BOOST_DOWNLOAD_OUT) -C $(DEPS_BUILD_DIR)
 
-
-# Create directory for tests.
+#/
+# Creates a directory for storing compiled tests.
 #
-# This target creates a directory for storing compiled tests.
-
+# @private
+#/
 $(DEPS_BOOST_TEST_OUT):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_BOOST_TEST_OUT)
 
-
-# Compile install test.
+#/
+# Compiles a test file for testing an installation.
 #
-# This target compiles a test file for testing an installation.
-
+# @private
+#/
 $(DEPS_BOOST_TEST_INSTALL_OUT): $(DEPS_BOOST_BUILD_OUT) $(DEPS_BOOST_TEST_OUT)
 	$(QUIET) $(CXX) -I $(DEPS_BOOST_BUILD_OUT) $(DEPS_BOOST_TEST_INSTALL) -o $(DEPS_BOOST_TEST_INSTALL_OUT)
 
-
-# Download Boost.
+#/
+# Downloads a Boost distribution.
 #
-# This target downloads a Boost distribution.
-
+# @example
+# make deps-download-boost
+#/
 deps-download-boost: $(DEPS_BOOST_DOWNLOAD_OUT)
 
 .PHONY: deps-download-boost
 
-
-# Verify download.
+#/
+# Verifies a downloaded Boost distribution.
 #
-# This targets verifies a download.
-
+# @example
+# make deps-verify-boost
+#/
 deps-verify-boost: deps-download-boost
 	$(QUIET) echo 'Verifying download...' >&2
 	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_BOOST_DOWNLOAD_OUT) $(DEPS_BOOST_CHECKSUM) >&2
 
 .PHONY: deps-verify-boost
 
-
-# Extract Boost.
+#/
+# Extracts a downloaded Boost distribution.
 #
-# This target extracts a Boost download.
-
+# @example
+# make deps-extract-boost
+#/
 deps-extract-boost: $(DEPS_BOOST_BUILD_OUT)
 
 .PHONY: deps-extract-boost
 
-
-# Test install.
+#/
+# Tests an installed Boost distribution.
 #
-# This target tests an installation.
-
+# @example
+# make deps-test-boost
+#/
 deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
 	$(QUIET) echo 'Running tests...' >&2
 	$(QUIET) echo 1 2 3 | $(DEPS_BOOST_TEST_INSTALL_OUT)
@@ -120,30 +125,37 @@ deps-test-boost: $(DEPS_BOOST_TEST_INSTALL_OUT)
 
 .PHONY: deps-test-boost
 
-
-# Install Boost.
+#/
+# Installs Boost.
 #
-# This target installs Boost.
-
+# @example
+# make install-deps-boost
+#/
 install-deps-boost: deps-download-boost deps-verify-boost deps-extract-boost deps-test-boost
 
 .PHONY: install-deps-boost
 
-
-# Clean Boost.
+#/
+# Removes an installed Boost distribution.
 #
-# This target removes a Boost distribution (but does not remove a Boost download if one exists).
-
+# ## Notes
+#
+# -   The rule does **not** remove a Boost download (if one exists).
+#
+# @example
+# make clean-deps-boost
+#/
 clean-deps-boost: clean-deps-boost-tests
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_BUILD_OUT)
 
 .PHONY: clean-deps-boost
 
-
-# Clean tests.
+#/
+# Removes compiled Boost installation tests.
 #
-# This targets remove installation tests.
-
+# @example
+# make clean-deps-boost-tests
+#/
 clean-deps-boost-tests:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_BOOST_TEST_OUT)
 
