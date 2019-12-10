@@ -1489,12 +1489,16 @@ rules[ 'require-await' ] = 'error';
 /* eslint-enable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
 
 /**
-* Always require the `u` flag when a regular expression involves UTF-16 surrogate pairs.
+* Always require the `u` flag on a regular expression.
+*
+* ## Notes
+*
+* -   With the `u` flag set, regular expressions handle UTF-16 surrogate pairs correctly.
 *
 * @name require-unicode-regexp
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [require-unicode-regexp]{@link http://eslint.org/docs/rules/require-unicode-regexp}
 *
 * @example
@@ -1505,7 +1509,7 @@ rules[ 'require-await' ] = 'error';
 * // Good...
 * var re = /^[👍]$/u;
 */
-rules[ 'require-unicode-regexp' ] = 'error';
+rules[ 'require-unicode-regexp' ] = 'off';
 
 /**
 * Always declare variables at the top of their scope to represent hoisting.
