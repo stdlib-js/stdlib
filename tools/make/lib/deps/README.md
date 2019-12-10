@@ -70,6 +70,8 @@ Removes compiled [Boost][boost] installation tests.
 $ make clean-deps-boost-tests
 ```
 
+* * *
+
 #### Cephes
 
 ##### install-deps-cephes
