@@ -1489,7 +1489,7 @@ rules[ 'require-await' ] = 'error';
 /* eslint-enable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest-quote-props */
 
 /**
-* Always require the `u` flag on a regular expression.
+* Don't require the `u` flag on a regular expression.
 *
 * ## Notes
 *
