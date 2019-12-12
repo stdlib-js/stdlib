@@ -44,7 +44,7 @@ median,(planned)
 cumsum,(planned)
 cumprod,(planned)
 diff,(planned)
-rank,(planned)
+rank,@stdlib/stats/ranks
 mode,(planned)
 range,(planned)
 variance,(planned)
