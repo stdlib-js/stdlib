@@ -21,7 +21,7 @@ zeros,(planned)
 ones,(planned)
 rand,@stdlib/random/base/*
 copy,@stdlib/utils/copy
-identity,@stdlib/utils/identity-function
+identity,(planned)
 seq,@stdlib/math/utils/linspace
 arange,@stdlib/math/utils/incrspace
 clear,(planned)
