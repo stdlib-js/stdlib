@@ -114,7 +114,7 @@ gamma.cdf,@stdlib/stats/base/dists/gamma/cdf
 gamma.inv,@stdlib/stats/base/dists/gamma/quantile
 gamma.mean,@stdlib/stats/base/dists/gamma/mean
 gamma.mode,@stdlib/stats/base/dists/gamma/mode
-gamma.sample,random/base/gamma
+gamma.sample,@stdlib/random/base/gamma
 gamma.variance,@stdlib/stats/base/dists/gamma/variance
 invgamma,@stdlib/stats/base/dists/invgamma
 invgamma.pdf,@stdlib/stats/base/dists/invgamma/pdf
