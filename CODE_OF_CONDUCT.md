@@ -18,7 +18,7 @@ Anyone who violates this Code of Conduct will be reprimanded and possibly banned
 
 We expect all community participants, including paid and unpaid contributors, sponsors, users, and affiliated members, to abide by this Code of Conduct at **all** times in **all** community venues, online and in person, and in one-on-one communications.
 
-This Code of Conduct covers the usage of the project, as well as the project website, project related events, and any other affiliated services. This Code of Conduct and its related policies also applies to behavior **outside** the scope of community activities, including but not limited to GitHub repositories, IRC channels, social media, mailing lists, and public events.
+This Code of Conduct covers the usage of the project, as well as the project website, project related events, and any other affiliated services. This Code of Conduct and its related policies also applies to behavior **outside** the scope of community activities, including but not limited to GitHub repositories, IRC channels, social media, mailing lists, and public events, when such behavior has the potential to adversely affect the safety and well-being of community members either through threats of violence or targeted harassment as pertains to gender identity, sexual orientation, ability, ethnicity, religion, age, physical appearance, body size, race, or other personal characteristics.
 
 This Code of Conduct is in addition to, and does **not** in any way nullify or invalidate, any other terms or conditions related to use of the project.
 
@@ -100,7 +100,7 @@ All complaints will be reviewed and investigated and will result in a response t
 
 If an accused person is part of the reporting team, they will recuse themselves from handling your incident. If the reporter is a reporting team member, the complaint will be handled by a different member of the reporting team.
 
-Note that we reserve the right to reject any report we believe to have been made in bad faith. Reports intended to silence legitimate criticism may be ignored without response.
+Note that we reserve the right to reject any report we believe to have been made in bad faith. Reports intended to silence legitimate criticism or differences in opinion may be ignored without response.
 
 Further details of specific enforcement policies may be posted separately.
 
