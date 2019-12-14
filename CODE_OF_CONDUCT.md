@@ -1,10 +1,16 @@
+<!--
+
+@license CC-BY-SA-4.0
+
+-->
+
 # Code of Conduct
 
 > A Code of Conduct to foster a more open, positive, welcoming, and friendly community.
 
 This project is not simply a collection of technologies, but also a community.
 
-This Code of Conduct outlines our expectations for everyone who participates inside and outside our community, as well as the consequences for unacceptable behavior.
+This Code of Conduct outlines (1) our expectations for everyone who participates inside our community, (2) our expectations for everyone who participates outside our community when an individual is representing the project and/or our community (including, but not limited to, conferences, trade shows, other public events, mailing lists, social media, IRC channels, and GitHub repositories), and (3) the consequences for unacceptable behavior.
 
 Anyone who violates this Code of Conduct will be reprimanded and possibly banned from the community.
 
