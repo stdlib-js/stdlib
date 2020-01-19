@@ -328,13 +328,13 @@ Test and build infrastructure is generously provided by the following services:
 
 [coverage-url-develop]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib/develop.svg
+[dependencies-image]: https://david-dm.org/stdlib-js/stdlib/develop/status.svg
 
 [dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop
 
-[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
+[dev-dependencies-image]: https://david-dm.org/stdlib-js/stdlib/develop/dev-status.svg
 
-[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
+[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop?type=dev
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 
