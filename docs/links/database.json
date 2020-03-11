@@ -426,6 +426,17 @@
       "cite"
     ]
   },
+  "http://www.boost.org/": {
+    "id": "boost",
+    "description": "Homepage for Boost, a collection of free portable C++ libraries.",
+    "short_url": "",
+    "keywords": [
+      "c++",
+      "math",
+      "special functions",
+      "reference implementations"
+    ]
+  },
   "http://www.ecma-international.org/ecma-262/5.1": {
     "id": "ecma-262",
     "description": "ECMAScript language specification.",

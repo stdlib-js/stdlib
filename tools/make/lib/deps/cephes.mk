@@ -31,33 +31,40 @@ endif
 endif
 
 
-# TARGETS #
+# Rules #
 
-# Install Cephes.
+#/
+# Installs Cephes.
 #
-# This target installs Cephes.
-
+# @example
+# make install-deps-cephes
+#/
 install-deps-cephes: deps-download-cephes deps-verify-cephes deps-extract-cephes deps-test-cephes
 
 .PHONY: install-deps-cephes
 
-
-# Clean Cephes.
+#/
+# Removes an installed Cephes distribution.
 #
-# This target removes a Cephes distribution (but does not remove downloaded Cephes libraries if they exist).
-
+# ## Notes
+#
+# -   This rule does **not** remove downloaded Cephes libraries (if they exist).
+#
+# @example
+# make clean-deps-cephes
+#/
 clean-deps-cephes: clean-deps-cephes-tests
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_CEPHES_BUILD_OUT)
 
 .PHONY: clean-deps-cephes
 
-
-# Clean tests.
+#/
+# Removes compiled Cephes installation tests.
 #
-# This targets remove installation tests.
-
+# @example
+# make clean-deps-cephes-tests
+#/
 clean-deps-cephes-tests:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_CEPHES_TEST_OUT)
 
 .PHONY: clean-deps-cephes-tests
-

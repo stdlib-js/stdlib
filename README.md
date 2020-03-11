@@ -26,7 +26,9 @@ limitations under the License.
     <div class="image" align="center">
         <br>
         <br>
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
+        <a href="https://stdlib.io/" />
+            <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
+        </a>
         <br>
         <br>
         <br>
@@ -328,13 +330,13 @@ Test and build infrastructure is generously provided by the following services:
 
 [coverage-url-develop]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib/develop.svg
+[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib
 
 [dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop
 
-[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib/develop.svg
+[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib
 
-[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop#info=devDependencies
+[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop?type=dev
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 
