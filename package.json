@@ -92,7 +92,7 @@
     "mathjax-node": "^2.0.1",
     "mathjax-node-sre": "^3.0.0",
     "mkdirp": "^0.5.1",
-    "mustache": "^3.0.0",
+    "mustache": "^4.0.0",
     "parse-link-header": "^1.0.1",
     "plato": "^1.5.0",
     "proxyquire": "^2.0.0",
