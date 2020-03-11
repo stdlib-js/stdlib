@@ -40,7 +40,8 @@ DAVID_FLAGS ?= \
 	--ignore ajv \
 	--ignore d3-scale \
 	--ignore readable-stream \
-	--ignore mkdirp
+	--ignore mkdirp \
+	--ignore semver
 
 
 # TARGETS #
