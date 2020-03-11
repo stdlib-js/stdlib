@@ -180,7 +180,7 @@
     "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "to-vfile": "^6.0.0",
-    "typedoc": "^0.15.0",
+    "typedoc": "^0.16.11",
     "uglify-es": "^3.1.1",
     "uglifyify": "^5.0.0",
     "unified-lint-rule": "^1.0.1",
