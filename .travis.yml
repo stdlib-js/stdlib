@@ -33,6 +33,7 @@ sudo: true
 node_js:
   # Node.js
   - 'node'
+  - '13'
   - '12'
   - '11'
   - '10'

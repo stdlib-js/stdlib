@@ -50,6 +50,9 @@ environment:
 
   matrix:
     # Install tests:
+    - nodejs_version: '13'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'test-npm-install'
     - nodejs_version: '12'
       npm_version: '>2.7.0'
       BUILD_TASK: 'test-npm-install'
@@ -85,6 +88,9 @@ environment:
       BUILD_TASK: 'test-npm-install'
 
     # Unit tests:
+    - nodejs_version: '13'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'test'
     - nodejs_version: '12'
       npm_version: '>2.7.0'
       BUILD_TASK: 'test'
@@ -120,6 +126,9 @@ environment:
       BUILD_TASK: 'test'
 
     # Examples:
+    - nodejs_version: '13'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'examples'
     - nodejs_version: '12'
       npm_version: '>2.7.0'
       BUILD_TASK: 'examples'
@@ -155,6 +164,9 @@ environment:
       BUILD_TASK: 'examples'
 
     # Test coverage:
+    - nodejs_version: '13'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'test-coverage'
     - nodejs_version: '12'
       npm_version: '>2.7.0'
       BUILD_TASK: 'test-coverage'
@@ -190,6 +202,9 @@ environment:
       BUILD_TASK: 'test-coverage'
 
     # Benchmarks:
+    - nodejs_version: '13'
+      npm_version: '>2.7.0'
+      BUILD_TASK: 'benchmark'
     - nodejs_version: '12'
       npm_version: '>2.7.0'
       BUILD_TASK: 'benchmark'
