@@ -109,7 +109,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-flat.js | stdlib-flat.min.js | stdlib-flat.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 13.348 MB      | 2.608 MB           | 488.603 kB            |
+| 13.353 MB      | 2.61 MB            | 489.275 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -117,7 +117,7 @@ The excluded packages can significantly inflate bundle size, and, if desired, sh
 
 | stdlib-tree.js | stdlib-tree.min.js | stdlib-tree.min.js.gz |
 | -------------- | ------------------ | --------------------- |
-| 13.375 MB      | 2.627 MB           | 489.53 kB             |
+| 13.38 MB       | 2.63 MB            | 490.197 kB            |
 
 <!-- </bundle-stats> -->
 
@@ -186,7 +186,7 @@ The specialized bundle, `stdlib-plot-flat`, contains plot functionality and expo
 
 | stdlib-plot-flat.js | stdlib-plot-flat.min.js | stdlib-plot-flat.min.js.gz |
 | ------------------- | ----------------------- | -------------------------- |
-| 1.656 MB            | 314.136 kB              | 85.444 kB                  |
+| 1.664 MB            | 315.186 kB              | 85.725 kB                  |
 
 <!-- </bundle-stats> -->
 
@@ -319,7 +319,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-tree.min.js | stdlib-datasets-tree.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 63.959 MB                   | 17.453 MB                      |
+| 63.995 MB                   | 17.466 MB                      |
 
 <!-- </bundle-stats> -->
 
@@ -327,7 +327,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-tree-exclude.min.js | stdlib-datasets-tree-exclude.min.js.gz |
 | ----------------------------------- | -------------------------------------- |
-| 2.223 MB                            | 320.715 kB                             |
+| 2.223 MB                            | 320.735 kB                             |
 
 <!-- </bundle-stats> -->
 
@@ -335,7 +335,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-cmudict.min.js | stdlib-datasets-cmudict.min.js.gz |
 | ------------------------------ | --------------------------------- |
-| 4.212 MB                       | 924.711 kB                        |
+| 4.212 MB                       | 924.733 kB                        |
 
 <!-- </bundle-stats> -->
 
@@ -343,7 +343,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-emoji.min.js | stdlib-datasets-emoji.min.js.gz |
 | ---------------------------- | ------------------------------- |
-| 1.593 MB                     | 162.854 kB                      |
+| 1.593 MB                     | 162.876 kB                      |
 
 <!-- </bundle-stats> -->
 
@@ -351,7 +351,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-fivethirtyeight-ffq.min.js | stdlib-datasets-fivethirtyeight-ffq.min.js.gz |
 | ------------------------------------------ | --------------------------------------------- |
-| 1.59 MB                                    | 186.587 kB                                    |
+| 1.59 MB                                    | 186.608 kB                                    |
 
 <!-- </bundle-stats> -->
 
@@ -367,7 +367,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-moby-dick.min.js | stdlib-datasets-moby-dick.min.js.gz |
 | -------------------------------- | ----------------------------------- |
-| 1.343 MB                         | 507.585 kB                          |
+| 1.343 MB                         | 507.604 kB                          |
 
 <!-- </bundle-stats> -->
 
@@ -375,7 +375,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-sotu.min.js | stdlib-datasets-sotu.min.js.gz |
 | --------------------------- | ------------------------------ |
-| 10.855 MB                   | 3.585 MB                       |
+| 10.891 MB                   | 3.598 MB                       |
 
 <!-- </bundle-stats> -->
 
@@ -383,7 +383,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-spam-assassin.min.js | stdlib-datasets-spam-assassin.min.js.gz |
 | ------------------------------------ | --------------------------------------- |
-| 35.694 MB                            | 8.906 MB                                |
+| 35.695 MB                            | 8.906 MB                                |
 
 <!-- </bundle-stats> -->
 
@@ -391,7 +391,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js | stdlib-datasets-suthaharan-multi-hop-sensor-network.min.js.gz |
 | ---------------------------------------------------------- | ------------------------------------------------------------- |
-| 1.717 MB                                                   | 115.163 kB                                                    |
+| 1.717 MB                                                   | 115.184 kB                                                    |
 
 <!-- </bundle-stats> -->
 
@@ -399,7 +399,7 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 
 | stdlib-datasets-suthaharan-single-hop-sensor-network.min.js | stdlib-datasets-suthaharan-single-hop-sensor-network.min.js.gz |
 | ----------------------------------------------------------- | -------------------------------------------------------------- |
-| 1.731 MB                                                    | 113.481 kB                                                     |
+| 1.731 MB                                                    | 113.5 kB                                                       |
 
 <!-- </bundle-stats> -->
 
@@ -427,7 +427,7 @@ The REPL bundle, `stdlib-repl`, contains all **browser compatible** packages exp
 
 | stdlib-repl.min.js | stdlib-repl.min.js.gz |
 | ------------------ | --------------------- |
-| 72.485 MB          | 18.418 MB             |
+| 72.523 MB          | 18.433 MB             |
 
 <!-- </bundle-stats> -->
 
