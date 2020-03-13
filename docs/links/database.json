@@ -2094,6 +2094,20 @@
       "stats"
     ]
   },
+  "https://en.wikipedia.org/wiki/Dot_product": {
+    "id": "dot-product",
+    "description": "Wikipedia entry for the dot product.",
+    "short_url": "",
+    "keywords": [
+      "dot",
+      "dot product",
+      "linear algebra",
+      "scalar",
+      "scalar product",
+      "vectors",
+      "blas"
+    ]
+  },
   "https://en.wikipedia.org/wiki/E_%28mathematical_constant%29": {
     "id": "eulers-number",
     "description": "Wikipedia entry for the mathematical constant e.",
