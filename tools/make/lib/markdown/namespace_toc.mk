@@ -56,7 +56,7 @@ REMARK_TOC_OUTPUT_FLAG ?= --output
 # Processed files are committed to source control.
 
 markdown-namespace-tocs: $(NODE_MODULES)
-	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_TOC_FLAGS) \
 		$(REMARK_TOC_PLUGIN_FLAGS) \
 		$(REMARK_TOC_OUTPUT_FLAG) && \

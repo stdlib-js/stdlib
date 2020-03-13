@@ -86,14 +86,14 @@ REMARK_EQUATIONS_OUTPUT_FLAG ?= --output
 # 5.  Processed files are committed to source control.
 
 markdown-equations: $(NODE_MODULES)
-	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
 	$(GIT_ADD) && \
 	$(GIT_COMMIT_EQUATIONS) && \
-	$(REMARK) $(MARKDOWN_FILES) \
+	NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
@@ -108,7 +108,7 @@ markdown-equations: $(NODE_MODULES)
 # This target transforms Markdown files containing equation comment markup to include image equation elements.
 
 markdown-img-equations: $(NODE_MODULES)
-	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG)
@@ -121,7 +121,7 @@ markdown-img-equations: $(NODE_MODULES)
 # This target generates SVG equation files from Markdown equation comments.
 
 markdown-svg-equations: $(NODE_MODULES)
-	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS)
 
@@ -133,7 +133,7 @@ markdown-svg-equations: $(NODE_MODULES)
 # This target inserts resource URLs into Markdown image equation elements. Note that this target assumes that image equation files already exist and have been committed to source control.
 
 markdown-img-equations-src-urls: $(NODE_MODULES)
-	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG)
@@ -148,7 +148,7 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 # TODO: create separate environment variables for this recipe, rather than using "equations" environment variables
 
 markdown-stdlib-urls: $(NODE_MODULES)
-	$(QUIET) $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_STDLIB_URLS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG)
