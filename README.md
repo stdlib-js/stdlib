@@ -162,6 +162,12 @@ To install as a library or application dependency,
 $ npm install @stdlib/stdlib
 ```
 
+Once installed, stdlib packages can be individually required/imported to minimize load times and decrease bundle sizes. For example,
+
+```javascript
+var dswap = require( '@stdlib/blas/base/dswap' );
+```
+
 To install globally for use as a command-line utility,
 
 <!-- run-disable -->
