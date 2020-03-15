@@ -1,0 +1,120 @@
+{
+	"options": {
+		"os": "linux",
+		"blas": ""
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"os": "linux",
+			"blas": "",
+			"src": [
+				"./src/sdsdot.f",
+				"./src/sdsdotsub.f",
+				"./src/sdsdot_f.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": []
+		},
+		{
+			"os": "linux",
+			"blas": "openblas",
+			"src": [
+				"./src/sdsdot_cblas.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lopenblas",
+				"-lpthread"
+			],
+			"libpath": [],
+			"dependencies": []
+		},
+		{
+			"os": "mac",
+			"blas": "",
+			"src": [
+				"./src/sdsdot.f",
+				"./src/sdsdotsub.f",
+				"./src/sdsdot_f.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": []
+		},
+		{
+			"os": "mac",
+			"blas": "apple_accelerate_framework",
+			"src": [
+				"./src/sdsdot_cblas.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lblas"
+			],
+			"libpath": [],
+			"dependencies": []
+		},
+		{
+			"os": "mac",
+			"blas": "openblas",
+			"src": [
+				"./src/sdsdot_cblas.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lopenblas",
+				"-lpthread"
+			],
+			"libpath": [],
+			"dependencies": []
+		},
+		{
+			"os": "win",
+			"blas": "",
+			"src": [
+				"./src/sdsdot.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": []
+		}
+	]
+}
