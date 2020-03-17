@@ -127,12 +127,6 @@
 */
 
 /**
-* A multi-dimensional array.
-*
-* @typedef {Object} ndarray
-*/
-
-/**
 * An empty array.
 *
 * @typedef {Array} EmptyArray
