@@ -258,6 +258,19 @@
       "diagram"
     ]
   },
+  "http://oeis.org/A000027": {
+    "id": "oeis-a000027",
+    "description": "The OEIS entry for the sequence of positive integers.",
+    "short_url": "",
+    "keywords": [
+      "positive",
+      "integers",
+      "natural",
+      "whole",
+      "counting",
+      "numbers"
+    ]
+  },
   "http://opendatacommons.org/licenses/by/1.0/": {
     "id": "odc-by-1.0",
     "description": "Open Data Commons Attribution License.",
