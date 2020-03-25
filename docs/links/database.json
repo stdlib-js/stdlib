@@ -4132,6 +4132,18 @@
       "js"
     ]
   },
+  "https://oeis.org/A001477": {
+    "id": "oeis-a001477",
+    "description": "The OEIS entry for the sequence of nonnegative integers.",
+    "short_url": "",
+    "keywords": [
+      "nonnegative",
+      "integers",
+      "sequence",
+      "natural",
+      "numbers"
+    ]
+  },
   "https://oeis.org/A001690": {
     "id": "oeis-a001690",
     "description": "The On-Line Encyclopedia of Integer Sequences (OEIS) entry for non-Fibonacci numbers.",
