@@ -4157,6 +4157,18 @@
       "js"
     ]
   },
+  "https://oeis.org/A000142": {
+    "id": "oeis-a000142",
+    "description": "The OEIS entry for the sequence of factorials.",
+    "short_url": "",
+    "keywords": [
+      "sequence",
+      "seq",
+      "factorials",
+      "integers",
+      "numbers"
+    ]
+  },
   "https://oeis.org/A000578": {
     "id": "oeis-a000578",
     "description": "The OEIS entry for a sequence of cubes.",
