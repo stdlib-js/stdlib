@@ -4157,6 +4157,18 @@
       "js"
     ]
   },
+  "https://oeis.org/A000578": {
+    "id": "oeis-a000578",
+    "description": "The OEIS entry for a sequence of cubes.",
+    "short_url": "",
+    "keywords": [
+      "sequence",
+      "seq",
+      "integers",
+      "cubes",
+      "numbers"
+    ]
+  },
   "https://oeis.org/A001057": {
     "id": "oeis-a001057",
     "description": "The OEIS entry for a canonical enumeration of an interleaved integer sequence.",
