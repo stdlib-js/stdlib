@@ -271,6 +271,19 @@
       "numbers"
     ]
   },
+  "http://oeis.org/A000037": {
+    "id": "oeis-a000037",
+    "description": "The OEIS entry for the sequence of nonsquares.",
+    "short_url": "",
+    "keywords": [
+      "squares",
+      "nonsquares",
+      "sequence",
+      "seq",
+      "integers",
+      "numbers"
+    ]
+  },
   "http://oeis.org/A000290": {
     "id": "oeis-a000290",
     "description": "The OEIS entry for the sequence of squares.",
