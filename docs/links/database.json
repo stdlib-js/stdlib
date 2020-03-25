@@ -4144,6 +4144,17 @@
       "numbers"
     ]
   },
+  "https://oeis.org/A001478": {
+    "id": "oeis-a001478",
+    "description": "The OEIS entry for the sequence of negative integers.",
+    "short_url": "",
+    "keywords": [
+      "sequence",
+      "integers",
+      "numbers",
+      "negative"
+    ]
+  },
   "https://oeis.org/A001489": {
     "id": "oeis-a001489",
     "description": "The OEIS entry for the sequence of nonpositive integers.",
