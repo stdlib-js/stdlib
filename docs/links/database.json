@@ -4132,6 +4132,18 @@
       "js"
     ]
   },
+  "https://oeis.org/A001057": {
+    "id": "oeis-a001057",
+    "description": "The OEIS entry for a canonical enumeration of an interleaved integer sequence.",
+    "short_url": "",
+    "keywords": [
+      "integers",
+      "sequence",
+      "interleaved",
+      "enumeration",
+      "numbers"
+    ]
+  },
   "https://oeis.org/A001477": {
     "id": "oeis-a001477",
     "description": "The OEIS entry for the sequence of nonnegative integers.",
