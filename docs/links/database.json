@@ -4144,6 +4144,17 @@
       "numbers"
     ]
   },
+  "https://oeis.org/A001489": {
+    "id": "oeis-a001489",
+    "description": "The OEIS entry for the sequence of nonpositive integers.",
+    "short_url": "",
+    "keywords": [
+      "nonpositive",
+      "sequence",
+      "integers",
+      "numbers"
+    ]
+  },
   "https://oeis.org/A001690": {
     "id": "oeis-a001690",
     "description": "The On-Line Encyclopedia of Integer Sequences (OEIS) entry for non-Fibonacci numbers.",
