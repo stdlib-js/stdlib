@@ -1,0 +1,64 @@
+
+{{alias}}( iter0, iter1, fcn[, options] )
+    Returns an iterator which invokes a binary function accepting numeric
+    arguments for each iterated value.
+
+    When invoked, the input function is provided two arguments:
+
+    - x: iterated value from first input iterator
+    - y: iterated value from second input iterator
+
+    The length of the returned iterator is equal to the length of the shortest
+    provided iterator. In other words, the returned iterator ends once *one* of
+    the provided iterators ends.
+
+    If provided a numeric value as an iterator argument, the value is broadcast
+    as an infinite iterator which always returns the provided value.
+
+    If an environment supports Symbol.iterator and provided iterators are
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iter0: Object
+        First input iterator.
+
+    iter1: Object
+        Second input iterator.
+
+    fcn: Function
+        Function to invoke for each iterated value.
+
+    options: Object (optional)
+        Options.
+
+    options.invalid: any (optional)
+        Return value when an input iterator yields a non-numeric value. Default:
+        NaN.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it0 = {{alias:@stdlib/random/iter/randu}}();
+    > var it1 = {{alias:@stdlib/random/iter/randu}}();
+    > var it = {{alias}}( it0, it1, {{alias:@stdlib/math/base/special/copysign}} );
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+
