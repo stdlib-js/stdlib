@@ -4169,6 +4169,19 @@
       "numbers"
     ]
   },
+  "https://oeis.org/A000217": {
+    "id": "oeis-a000217",
+    "description": "The OEIS entry for triangular numbers.",
+    "short_url": "",
+    "keywords": [
+      "sequence",
+      "integers",
+      "numbers",
+      "binomial",
+      "triangular",
+      "triangle"
+    ]
+  },
   "https://oeis.org/A000578": {
     "id": "oeis-a000578",
     "description": "The OEIS entry for a sequence of cubes.",
