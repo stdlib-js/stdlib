@@ -3374,6 +3374,17 @@
       "triangular"
     ]
   },
+  "https://en.wikipedia.org/wiki/Triangular_number": {
+    "id": "triangular-number",
+    "description": "Wikipedia entry for triangular numbers.",
+    "short_url": "",
+    "keywords": [
+      "triangular",
+      "number",
+      "binomial",
+      "sequence"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Truncated_normal_distribution": {
     "id": "truncated-normal-distribution",
     "description": "Wikipedia entry for the truncated normal distribution.",
