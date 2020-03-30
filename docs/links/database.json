@@ -3272,6 +3272,18 @@
       "sequences"
     ]
   },
+  "https://en.wikipedia.org/wiki/Squared_triangular_number": {
+    "id": "squared-triangular-number",
+    "description": "Wikipedia entry for squared triangular numbers.",
+    "short_url": "",
+    "keywords": [
+      "triangular",
+      "numbers",
+      "integers",
+      "squared",
+      "sequences"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Standard_deviation": {
     "id": "stdev",
     "description": "Wikipedia entry for the standard deviation.",
