@@ -3260,6 +3260,18 @@
       "root"
     ]
   },
+  "https://en.wikipedia.org/wiki/Square_triangular_number": {
+    "id": "square-triangular-number",
+    "description": "Wikipedia entry for square triangular numbers.",
+    "short_url": "",
+    "keywords": [
+      "triangular",
+      "square",
+      "numbers",
+      "integers",
+      "sequences"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Standard_deviation": {
     "id": "stdev",
     "description": "Wikipedia entry for the standard deviation.",
