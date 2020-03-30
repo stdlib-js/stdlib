@@ -4217,6 +4217,18 @@
       "triangle"
     ]
   },
+  "https://oeis.org/A000537": {
+    "id": "oeis-a000537",
+    "description": "The OEIS entry for squared triangular numbers.",
+    "short_url": "",
+    "keywords": [
+      "triangular",
+      "squared",
+      "numbers",
+      "integers",
+      "sequence"
+    ]
+  },
   "https://oeis.org/A000578": {
     "id": "oeis-a000578",
     "description": "The OEIS entry for a sequence of cubes.",
