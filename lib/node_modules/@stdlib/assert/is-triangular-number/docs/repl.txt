@@ -1,0 +1,78 @@
+
+{{alias}}( value )
+    Tests if a value is a triangular number.
+
+    Return values are not reliable for numbers greater than 1125899906842624.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a triangular number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 36.0 )
+    true
+    > bool = {{alias}}( new Number( 36.0 ) )
+    true
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( -5.0 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a number primitive which is a triangular number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number primitive which is a
+        triangular number.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( 36.0 )
+    true
+    > bool = {{alias}}.isPrimitive( new Number( 36.0 ) )
+    false
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a number object having a value which is a triangular
+    number.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number object having a value which
+        is a triangular number.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( 36.0 )
+    false
+    > bool = {{alias}}.isObject( new Number( 36.0 ) )
+    true
+
+
+    See Also
+    --------
+
