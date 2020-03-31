@@ -1,0 +1,30 @@
+
+{{alias}}( x, y )
+    Interchanges two double-precision floating-point vectors.
+
+    Parameters
+    ----------
+    x: ndarray
+        First input array whose underlying data type is 'float64'.
+
+    y: ndarray
+        Second input array whose underlying data type is 'float64'.
+
+    Returns
+    -------
+    y: ndarray
+        The second input array `y`.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
+    > var y = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
+    > {{alias}}( x, y );
+    > x.data
+    <Float64Array>[ 2.0, 6.0, -1.0, -4.0, 8.0 ]
+    > y.data
+    <Float64Array>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
+
+    See Also
+    --------
+
