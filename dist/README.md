@@ -167,6 +167,24 @@ The specialized bundle, `stdlib-stats-base-dists-flat`, contains low-level stati
 
 <!-- </bundle-stats> -->
 
+#### Iterators
+
+The specialized bundle, `stdlib-iter-flat`, contains iterator utilities and exposes them as a `flat` namespace.
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-iter-flat.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var iterErf = stdlib_iter_flat.iterErf;
+</script>
+```
+
+##### Bundle Statistics
+
+<!-- <bundle-stats files="stdlib-iter-flat.js,stdlib-iter-flat.min.js,stdlib-iter-flat.min.js.gz"> -->
+
+<!-- </bundle-stats> -->
+
 #### Plot
 
 The specialized bundle, `stdlib-plot-flat`, contains plot functionality and exposes this functionality as a `flat` namespace.

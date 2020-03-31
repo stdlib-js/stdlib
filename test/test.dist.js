@@ -165,6 +165,22 @@ tape( 'project contains a distributable file containing "flat" namespace help te
 	t.end();
 });
 
+tape( 'project contains a distributable file containing iterator utilities (unminified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-iter-flat.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.iterErf, 'function', 'has member' );
+	t.end();
+});
+
+tape( 'project contains a distributable file containing iterator utilities (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-iter-flat.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.iterErf, 'function', 'has member' );
+	t.end();
+});
+
 tape( 'project contains a distributable file containing plotting functions (unminified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-plot-flat.js' ) );
