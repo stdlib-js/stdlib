@@ -1,0 +1,44 @@
+
+{{alias}}( x, y )
+    Interchanges two vectors.
+
+    In general, for best performance, especially for large vectors, provide
+    1-dimensional ndarrays whose underlying data type is either 'float64' or
+    'float32'.
+
+    Parameters
+    ----------
+    x: ndarray|ArrayLikeObject
+        First input array.
+
+    y: ndarray|ArrayLikeObject
+        Second input array.
+
+    Returns
+    -------
+    y: ndarray
+        The second input array `y`.
+
+    Examples
+    --------
+    // Using ndarrays...
+    > var x = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
+    > var y = {{alias:@stdlib/ndarray/array}}( new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
+    > {{alias}}( x, y );
+    > x.data
+    <Float64Array>[ 2.0, 6.0, -1.0, -4.0, 8.0 ]
+    > y.data
+    <Float64Array>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
+
+    // Using array-like objects...
+    > x = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
+    > y = [ 2.0, 6.0, -1.0, -4.0, 8.0 ];
+    > {{alias}}( x, y );
+    > x
+    [ 2.0, 6.0, -1.0, -4.0, 8.0 ]
+    > y
+    [ 4.0, 2.0, -3.0, 5.0, -1.0 ]
+
+    See Also
+    --------
+
