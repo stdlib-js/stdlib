@@ -296,6 +296,19 @@
       "numbers"
     ]
   },
+  "http://oeis.org/A005843": {
+    "id": "oeis-a005843",
+    "description": "The OEIS entry for the sequence of nonnegative even integers.",
+    "short_url": "",
+    "keywords": [
+      "oeis",
+      "sequence",
+      "seq",
+      "integers",
+      "numbers",
+      "even"
+    ]
+  },
   "http://oeis.org/A299174": {
     "id": "oeis-a299174",
     "description": "The OEIS entry for the sequence of positive even integers.",
