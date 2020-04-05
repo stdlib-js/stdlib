@@ -296,6 +296,19 @@
       "numbers"
     ]
   },
+  "http://oeis.org/A299174": {
+    "id": "oeis-a299174",
+    "description": "The OEIS entry for the sequence of positive even integers.",
+    "short_url": "",
+    "keywords": [
+      "oeis",
+      "sequence",
+      "integers",
+      "seq",
+      "positive",
+      "numbers"
+    ]
+  },
   "http://opendatacommons.org/licenses/by/1.0/": {
     "id": "odc-by-1.0",
     "description": "Open Data Commons Attribution License.",
