@@ -102,6 +102,15 @@ tape( 'project contains a distributable file containing Moby Dick (minified)', f
 	t.end();
 });
 
+tape( 'project contains a distributable file containing prime numbers (minified)', function test( t ) {
+	// eslint-disable-next-line stdlib/no-dynamic-require
+	var bundle = require( join( dirpath, 'stdlib-datasets-primes-100k.min.js' ) );
+	t.equal( typeof bundle, 'object', 'main export is an object' );
+	t.equal( typeof bundle.PRIMES_100K, 'function', 'is a function' );
+	t.equal( typeof bundle.PRIMES_100K(), 'object', 'returns expected value' ); // eslint-disable-line new-cap
+	t.end();
+});
+
 tape( 'project contains a distributable file containing SOTU (minified)', function test( t ) {
 	// eslint-disable-next-line stdlib/no-dynamic-require
 	var bundle = require( join( dirpath, 'stdlib-datasets-sotu.min.js' ) );
