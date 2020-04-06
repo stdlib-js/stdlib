@@ -287,6 +287,17 @@ The dataset bundle, `stdlib-datasets-moby-dick`, contains [_Moby Dick_][@stdlib/
 </script>
 ```
 
+The dataset bundle, `stdlib-datasets-primes-100k`, contains the first 100,000 [prime numbers][@stdlib/datasets/primes-100k].
+
+```html
+<script type="text/javascript" src="/path/to/stdlib-datasets-primes-100k.min.js"></script>
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var dataset = stdlib_datasets_primes_100k.PRIMES_100K;
+    console.log( dataset() );
+</script>
+```
+
 The dataset bundle, `stdlib-datasets-sotu`, contains [_State of the Union_][@stdlib/datasets/sotu] (SOTU) addresses.
 
 ```html
@@ -386,6 +397,10 @@ The dataset bundle, `stdlib-datasets-suthaharan-single-hop-sensor-network`, cont
 | stdlib-datasets-moby-dick.min.js | stdlib-datasets-moby-dick.min.js.gz |
 | -------------------------------- | ----------------------------------- |
 | 1.343 MB                         | 507.604 kB                          |
+
+<!-- </bundle-stats> -->
+
+<!-- <bundle-stats files="stdlib-datasets-primes-100k.min.js,stdlib-datasets-primes-100k.min.js.gz"> -->
 
 <!-- </bundle-stats> -->
 
@@ -505,6 +520,8 @@ The help bundle, `stdlib-flat-help`, contains help texts for packages exposed in
 [@stdlib/datasets/fivethirtyeight-ffq]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/moby-dick]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/primes-100k]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/datasets/sotu]: https://github.com/stdlib-js/stdlib
 
