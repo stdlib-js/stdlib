@@ -4218,6 +4218,19 @@
       "js"
     ]
   },
+  "https://oeis.org/A000040": {
+    "id": "oeis-a000040",
+    "description": "The OEIS entry for the sequence of prime numbers.",
+    "short_url": "",
+    "keywords": [
+      "oeis",
+      "sequence",
+      "seq",
+      "integers",
+      "numbers",
+      "primes"
+    ]
+  },
   "https://oeis.org/A000142": {
     "id": "oeis-a000142",
     "description": "The OEIS entry for the sequence of factorials.",
