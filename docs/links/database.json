@@ -4340,6 +4340,20 @@
       "number theory"
     ]
   },
+  "https://oeis.org/A002808": {
+    "id": "oeis-a002808",
+    "description": "The OEIS entry for the sequence of composite numbers.",
+    "short_url": "",
+    "keywords": [
+      "oeis",
+      "sequence",
+      "seq",
+      "primes",
+      "composite",
+      "integers",
+      "numbers"
+    ]
+  },
   "https://oeis.org/wiki/Lucas_polynomials": {
     "id": "oeis-lucas-polynomials",
     "description": "The On-Line Encyclopedia of Integer Sequences (OEIS) entry for Lucas (or Cardan) polynomials.",
