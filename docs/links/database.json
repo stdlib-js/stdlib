@@ -2075,6 +2075,17 @@
       "content delivery network"
     ]
   },
+  "https://en.wikipedia.org/wiki/Coprime_integers": {
+    "id": "coprime-integers",
+    "description": "Wikipedia entry for coprime integers.",
+    "short_url": "",
+    "keywords": [
+      "integers",
+      "coprime",
+      "primes",
+      "number theory"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Covariance": {
     "id": "covariance",
     "description": "Wikipedia entry for covariance, a measure of joint variability of two random variables.",
