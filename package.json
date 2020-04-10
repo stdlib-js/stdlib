@@ -65,7 +65,7 @@
     "glob": "^7.0.5",
     "minimist": "^1.2.0",
     "nan": "^2.5.1",
-    "node-gyp": "^3.5.0",
+    "node-gyp": "^6.1.0",
     "readable-stream": "^2.1.4",
     "resolve": "^1.1.7",
     "update-notifier": "^1.0.0",
