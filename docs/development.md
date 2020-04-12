@@ -45,7 +45,7 @@ While not required to run stdlib, the following dependencies **may** be required
 
 -   [Julia][julia]: language for technical computing (version `>= 0.5` and `<= 0.7`)
 -   [R][r]: language for statistical computing (version `>= 3.4.0`)
--   [Python][python]: general purpose language (version `2.7.x`; version `3.x` is **not** supported due to [node-gyp][node-gyp], which is required for compiling native add-ons)
+-   [Python][python]: general purpose language (version `>=2.7.x`)
 -   [pip][pip]: Python package manager (version `>= 9.0.0`; **required** for automatically installing Python packages, such as lint tools)
 -   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
 -   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
@@ -383,8 +383,6 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [emscripten]: http://kripken.github.io/emscripten-site/index.html
 
 [wabt]: https://github.com/WebAssembly/wabt
-
-[node-gyp]: https://github.com/nodejs/node-gyp
 
 [editorconfig]: http://editorconfig.org/
 
