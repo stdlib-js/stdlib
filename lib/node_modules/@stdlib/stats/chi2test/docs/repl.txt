@@ -1,0 +1,80 @@
+
+{{alias}}( x[, options] )
+    Performs a chi-square independence test.
+
+    For a two-way contingency table `x` (represented as a two-dimensional
+    `ndarray` or `array` of `arrays`), the null hypothesis that the joint
+    distribution of the cell counts is the product of the row and column
+    marginals is tested, i.e. whether the row and column variables are
+    independent.
+
+    The function returns an object containing the test statistic, p-value, and
+    decision.
+
+    Parameters
+    ----------
+    x: (MatrixLike|Array<Array>)
+        Two-way table of cell counts.
+
+    options: Object (optional)
+        Options.
+
+    options.alpha: number (optional)
+        Significance level of the hypothesis test. Must be on the interval
+        [0,1]. Default: 0.05.
+
+    options.correct: boolean (optional)
+        Boolean indicating whether to use Yates' continuity correction when
+        provided a 2x2 contingency table. Default: true.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        Test p-value.
+
+    out.statistic: number
+        Test statistic.
+
+    out.df: number
+        Degrees of freedom.
+
+    out.expected: ndarray
+        Expected cell counts.
+
+    out.method: string
+        Test name.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // Provide expected probabilities...
+    > var x = [ [ 20, 30 ], [ 30, 20 ] ];
+    > var out = {{alias}}( x )
+    { 'rejected': false, 'pValue': ~0.072, 'statistic': 3.24, ... }
+    > out.print()
+
+    // Set significance level...
+    > var opts = { 'alpha': 0.1 };
+    > out = {{alias}}( x, opts )
+    { 'rejected': true, 'pValue': ~0.072, 'statistic': 3.24, ... }
+    > out.print()
+
+    // Disable Yates' continuity correction (primarily used with small counts):
+    > opts = { 'correct': false };
+    > out = {{alias}}( x, opts )
+    {...}
+
+    See Also
+    --------
+
