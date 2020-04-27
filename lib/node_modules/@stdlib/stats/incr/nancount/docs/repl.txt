@@ -1,0 +1,28 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally updates a count,
+    ignoring `NaN` values.
+
+    If provided a value, the accumulator function returns an updated count. If
+    not provided a value, the accumulator function returns the current count.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator()
+    0
+    > v = accumulator( 2.0 )
+    1
+    > v = accumulator( -5.0 )
+    2
+    > v = accumulator()
+    2
+
+    See Also
+    --------
+
