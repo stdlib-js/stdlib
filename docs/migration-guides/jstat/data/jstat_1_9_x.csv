@@ -30,14 +30,14 @@ calcRdx,N/A
 isArray,@stdlib/assert/is-array
 isFunction,@stdlib/assert/is-function
 isNumber,@stdlib/assert/is-number
-sum,(planned)
+sum,@stdlib/blas/ext/base/gsumors
 sumsqrd,(planned)
 sumsqerr,(planned)
 sumrow,(planned)
 product,(planned)
-min,(planned)
-max,(planned)
-mean,(planned)
+min,@stdlib/stats/base/min
+max,@stdlib/stats/base/max
+mean,@stdlib/stats/base/meanors
 meansqerr,(planned)
 geomean,(planned)
 median,(planned)
@@ -46,7 +46,7 @@ cumprod,(planned)
 diff,(planned)
 rank,@stdlib/stats/ranks
 mode,(planned)
-range,(planned)
+range,@stdlib/stats/base/range
 variance,(planned)
 pooledvariance,N/A
 deviation,(planned)
