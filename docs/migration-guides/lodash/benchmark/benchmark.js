@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var randu = require( '@stdlib/random/base/randu' );
@@ -31,7 +32,7 @@ var pkg = require( './../package.json' ).name;
 
 // VARIABLES //
 
-var _ = tryRequire( 'lodash' );
+var _ = tryRequire( resolve( __dirname, '..', 'node_modules', 'lodash' ) );
 var opts = {
 	'skip': ( _ instanceof Error )
 };
