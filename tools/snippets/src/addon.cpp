@@ -16,11 +16,8 @@
 * limitations under the License.
 */
 
-/**
-* TODO.
-*/
-#include <nan.h>
 #include "TODO.h"
+#include <nan.h>
 
 /**
 * Add-on namespace.
