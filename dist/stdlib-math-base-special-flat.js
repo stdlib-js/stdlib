@@ -1967,7 +1967,7 @@ var _$abs2_120 = _$abs2_119;
 // MAIN //
 
 /**
-* Tests if a numeric value is `NaN`.
+* Tests if a double-precision floating-point numeric value is `NaN`.
 *
 * @param {number} x - value to test
 * @returns {boolean} boolean indicating whether the value is `NaN`
@@ -2010,7 +2010,7 @@ var _$isnan_104 = isnan;
 'use strict';
 
 /**
-* Test if a numeric value is `NaN`.
+* Test if a double-precision floating-point numeric value is `NaN`.
 *
 * @module @stdlib/math/base/assert/is-nan
 *
@@ -2026,7 +2026,7 @@ var _$isnan_104 = isnan;
 
 // MODULES //
 
-/* removed: var _$isnan_104 = require( './is_nan.js' ); */;
+/* removed: var _$isnan_104 = require( './main.js' ); */;
 
 
 // EXPORTS //
@@ -8326,7 +8326,7 @@ var _$PI_84 = PI;
 // MAIN //
 
 /**
-* Evaluates the arctangent of a quotient of two numbers.
+* Computes the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 *
 * ## Special Cases
 *
@@ -8350,9 +8350,9 @@ var _$PI_84 = PI;
 * \end{align*}
 * ```
 *
-* @param {number} y - numerator
-* @param {number} x - denominator
-* @returns {number} arctangent of `y/x` (in radians)
+* @param {number} y - `x` coordinate
+* @param {number} x - `y` coordinate
+* @returns {number} angle (in radians)
 *
 * @example
 * var v = atan2( 2.0, 2.0 ); // => atan(1.0)
@@ -8429,7 +8429,7 @@ function atan2( y, x ) {
 
 // EXPORTS //
 
-var _$atan2_145 = atan2;
+var _$atan2_146 = atan2;
 
 /**
 * @license Apache-2.0
@@ -8452,7 +8452,7 @@ var _$atan2_145 = atan2;
 'use strict';
 
 /**
-* Evaluate the arctangent of the quotient of two numbers.
+* Compute the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 *
 * @module @stdlib/math/base/special/atan2
 *
@@ -8486,12 +8486,12 @@ var _$atan2_145 = atan2;
 
 // MODULES //
 
-/* removed: var _$atan2_145 = require( './atan2.js' ); */;
+/* removed: var _$atan2_146 = require( './main.js' ); */;
 
 
 // EXPORTS //
 
-var _$atan2_146 = _$atan2_145;
+var _$atan2_145 = _$atan2_146;
 
 /**
 * @license Apache-2.0
@@ -13704,7 +13704,7 @@ var __sc_180 = [ 0.0, 0.0 ]; // WARNING: not thread safe
 // MAIN //
 
 /**
-* Computes the Bessel function of the second kind of order zero.
+* Computes the Bessel function of the second kind of order one.
 *
 * ## Notes
 *
@@ -13810,7 +13810,7 @@ var _$y1_180 = y1;
 'use strict';
 
 /**
-* Compute the Bessel function of the second kind of order zero.
+* Compute the Bessel function of the second kind of order one.
 *
 * @module @stdlib/math/base/special/bessely1
 *
@@ -17018,7 +17018,7 @@ var _$expm1_327 = _$expm1_326;
 // MAIN //
 
 /**
-* Tests if a numeric value is positive zero.
+* Tests if a double-precision floating-point numeric value is positive zero.
 *
 * @param {number} x - value to test
 * @returns {boolean} boolean indicating whether the value is positive zero
@@ -17061,7 +17061,7 @@ var _$isPositiveZero_114 = isPositiveZero;
 'use strict';
 
 /**
-* Test if a numeric value is positive zero.
+* Test if a double-precision floating-point numeric value is positive zero.
 *
 * @module @stdlib/math/base/assert/is-positive-zero
 *
@@ -17077,7 +17077,7 @@ var _$isPositiveZero_114 = isPositiveZero;
 
 // MODULES //
 
-/* removed: var _$isPositiveZero_114 = require( './is_positive_zero.js' ); */;
+/* removed: var _$isPositiveZero_114 = require( './main.js' ); */;
 
 
 // EXPORTS //
@@ -17265,7 +17265,7 @@ var _$max_575 = _$max_576;
 // MAIN //
 
 /**
-* Tests if a numeric value is negative zero.
+* Tests if a double-precision floating-point numeric value is negative zero.
 *
 * @param {number} x - value to test
 * @returns {boolean} boolean indicating whether the value is negative zero
@@ -17308,7 +17308,7 @@ var _$isNegativeZero_108 = isNegativeZero;
 'use strict';
 
 /**
-* Test if a numeric value is negative zero.
+* Test if a double-precision floating-point numeric value is negative zero.
 *
 * @module @stdlib/math/base/assert/is-negative-zero
 *
@@ -17324,7 +17324,7 @@ var _$isNegativeZero_108 = isNegativeZero;
 
 // MODULES //
 
-/* removed: var _$isNegativeZero_108 = require( './is_negative_zero.js' ); */;
+/* removed: var _$isNegativeZero_108 = require( './main.js' ); */;
 
 
 // EXPORTS //
@@ -17640,7 +17640,7 @@ var _$INT32_MAX_93 = INT32_MAX;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_531( x ) {
+function __evalpoly_529( x ) {
 	if ( x === 0.0 ) {
 		return 0.0416666666666666;
 	}
@@ -17650,7 +17650,7 @@ function __evalpoly_531( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_531 = __evalpoly_531;
+var _$evalpoly_529 = __evalpoly_529;
 
 /**
 * @license Apache-2.0
@@ -17689,7 +17689,7 @@ var _$evalpoly_531 = __evalpoly_531;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_532( x ) {
+function __evalpoly_530( x ) {
 	if ( x === 0.0 ) {
 		return -2.7557314351390663e-7;
 	}
@@ -17699,7 +17699,7 @@ function __evalpoly_532( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_532 = __evalpoly_532;
+var _$evalpoly_530 = __evalpoly_530;
 
 /**
 * @license Apache-2.0
@@ -17737,8 +17737,8 @@ var _$evalpoly_532 = __evalpoly_532;
 
 // MODULES //
 
-/* removed: var _$evalpoly_531 = require( './polyval_c13.js' ); */;
-/* removed: var _$evalpoly_532 = require( './polyval_c46.js' ); */;
+/* removed: var _$evalpoly_529 = require( './polyval_c13.js' ); */;
+/* removed: var _$evalpoly_530 = require( './polyval_c46.js' ); */;
 
 
 // MAIN //
@@ -17819,8 +17819,8 @@ function kernelCos( x, y ) {
 
 	z = x * x;
 	w = z * z;
-	r = z * _$evalpoly_531( z );
-	r += w * w * _$evalpoly_532( z );
+	r = z * _$evalpoly_529( z );
+	r += w * w * _$evalpoly_530( z );
 	hz = 0.5 * z;
 	w = 1.0 - hz;
 	return w + ( ((1.0-w) - hz) + ((z*r) - (x*y)) );
@@ -17829,7 +17829,7 @@ function kernelCos( x, y ) {
 
 // EXPORTS //
 
-var _$kernelCos_530 = kernelCos;
+var _$kernelCos_528 = kernelCos;
 
 /**
 * @license Apache-2.0
@@ -17874,12 +17874,12 @@ var _$kernelCos_530 = kernelCos;
 
 // MODULES //
 
-/* removed: var _$kernelCos_530 = require( './kernel_cos.js' ); */;
+/* removed: var _$kernelCos_528 = require( './kernel_cos.js' ); */;
 
 
 // EXPORTS //
 
-var _$kernelCos_529 = _$kernelCos_530;
+var _$kernelCos_527 = _$kernelCos_528;
 
 /**
 * @license Apache-2.0
@@ -17917,12 +17917,12 @@ var _$kernelCos_529 = _$kernelCos_530;
 
 // VARIABLES //
 
-var __S1_534 = -1.66666666666666324348e-01; // 0xBFC55555, 0x55555549
-var __S2_534 = 8.33333333332248946124e-03;  // 0x3F811111, 0x1110F8A6
-var __S3_534 = -1.98412698298579493134e-04; // 0xBF2A01A0, 0x19C161D5
-var __S4_534 = 2.75573137070700676789e-06;  // 0x3EC71DE3, 0x57B1FE7D
-var __S5_534 = -2.50507602534068634195e-08; // 0xBE5AE5E6, 0x8A2B9CEB
-var __S6_534 = 1.58969099521155010221e-10;  // 0x3DE5D93A, 0x5ACFD57C
+var __S1_532 = -1.66666666666666324348e-01; // 0xBFC55555, 0x55555549
+var __S2_532 = 8.33333333332248946124e-03;  // 0x3F811111, 0x1110F8A6
+var __S3_532 = -1.98412698298579493134e-04; // 0xBF2A01A0, 0x19C161D5
+var __S4_532 = 2.75573137070700676789e-06;  // 0x3EC71DE3, 0x57B1FE7D
+var __S5_532 = -2.50507602534068634195e-08; // 0xBE5AE5E6, 0x8A2B9CEB
+var __S6_532 = 1.58969099521155010221e-10;  // 0x3DE5D93A, 0x5ACFD57C
 
 
 // MAIN //
@@ -18003,18 +18003,18 @@ function kernelSin( x, y ) {
 
 	z = x * x;
 	w = z * z;
-	r = __S2_534 + (z * (__S3_534 + (z*__S4_534))) + (z * w * (__S5_534 + (z*__S6_534)));
+	r = __S2_532 + (z * (__S3_532 + (z*__S4_532))) + (z * w * (__S5_532 + (z*__S6_532)));
 	v = z * x;
 	if ( y === 0.0 ) {
-		return x + (v * (__S1_534 + (z*r)));
+		return x + (v * (__S1_532 + (z*r)));
 	}
-	return x - (((z*((0.5*y) - (v*r))) - y) - (v*__S1_534));
+	return x - (((z*((0.5*y) - (v*r))) - y) - (v*__S1_532));
 }
 
 
 // EXPORTS //
 
-var _$kernelSin_534 = kernelSin;
+var _$kernelSin_532 = kernelSin;
 
 /**
 * @license Apache-2.0
@@ -18065,12 +18065,12 @@ var _$kernelSin_534 = kernelSin;
 
 // MODULES //
 
-/* removed: var _$kernelSin_534 = require( './kernel_sin.js' ); */;
+/* removed: var _$kernelSin_532 = require( './kernel_sin.js' ); */;
 
 
 // EXPORTS //
 
-var _$kernelSin_533 = _$kernelSin_534;
+var _$kernelSin_531 = _$kernelSin_532;
 
 /**
 * @license Apache-2.0
@@ -18109,8 +18109,8 @@ var _$kernelSin_533 = _$kernelSin_534;
 // MODULES //
 
 /* removed: var _$getHighWord_762 = require( '@stdlib/number/float64/base/get-high-word' ); */;
-/* removed: var _$kernelCos_529 = require( '@stdlib/math/base/special/kernel-cos' ); */;
-/* removed: var _$kernelSin_533 = require( '@stdlib/math/base/special/kernel-sin' ); */;
+/* removed: var _$kernelCos_527 = require( '@stdlib/math/base/special/kernel-cos' ); */;
+/* removed: var _$kernelSin_531 = require( '@stdlib/math/base/special/kernel-sin' ); */;
 /* removed: var _$rempio2_635 = require( '@stdlib/math/base/special/rempio2' ); */;
 
 
@@ -18185,7 +18185,7 @@ function sin( x ) {
 		if ( ix < __SMALL_HIGH_WORD_684 ) {
 			return x;
 		}
-		return _$kernelSin_533( x, 0.0 );
+		return _$kernelSin_531( x, 0.0 );
 	}
 	// Case: x is NaN or infinity
 	if ( ix >= __EXPONENT_MASK_684 ) {
@@ -18195,13 +18195,13 @@ function sin( x ) {
 	n = _$rempio2_635( x, __Y_684 );
 	switch ( n & 3 ) {
 	case 0:
-		return _$kernelSin_533( __Y_684[ 0 ], __Y_684[ 1 ] );
+		return _$kernelSin_531( __Y_684[ 0 ], __Y_684[ 1 ] );
 	case 1:
-		return _$kernelCos_529( __Y_684[ 0 ], __Y_684[ 1 ] );
+		return _$kernelCos_527( __Y_684[ 0 ], __Y_684[ 1 ] );
 	case 2:
-		return -_$kernelSin_533( __Y_684[ 0 ], __Y_684[ 1 ] );
+		return -_$kernelSin_531( __Y_684[ 0 ], __Y_684[ 1 ] );
 	default:
-		return -_$kernelCos_529( __Y_684[ 0 ], __Y_684[ 1 ] );
+		return -_$kernelCos_527( __Y_684[ 0 ], __Y_684[ 1 ] );
 	}
 }
 
@@ -19754,8 +19754,8 @@ var _$gammaDeltaRatio_379 = _$gammaDeltaRatio_377;
 // MODULES //
 
 /* removed: var _$getHighWord_762 = require( '@stdlib/number/float64/base/get-high-word' ); */;
-/* removed: var _$kernelCos_529 = require( '@stdlib/math/base/special/kernel-cos' ); */;
-/* removed: var _$kernelSin_533 = require( '@stdlib/math/base/special/kernel-sin' ); */;
+/* removed: var _$kernelCos_527 = require( '@stdlib/math/base/special/kernel-cos' ); */;
+/* removed: var _$kernelSin_531 = require( '@stdlib/math/base/special/kernel-sin' ); */;
 /* removed: var _$rempio2_635 = require( '@stdlib/math/base/special/rempio2' ); */;
 
 
@@ -19814,7 +19814,7 @@ function cos( x ) {
 		if ( ix < HIGH_WORD_TWO_NEG_27 ) {
 			return 1.0;
 		}
-		return _$kernelCos_529( x, 0.0 );
+		return _$kernelCos_527( x, 0.0 );
 	}
 	// Case: cos(Inf or NaN) is NaN */
 	if ( ix >= HIGH_WORD_EXPONENT_MASK ) {
@@ -19824,13 +19824,13 @@ function cos( x ) {
 	n = _$rempio2_635( x, buffer );
 	switch ( n & 3 ) {
 	case 0:
-		return _$kernelCos_529( buffer[ 0 ], buffer[ 1 ] );
+		return _$kernelCos_527( buffer[ 0 ], buffer[ 1 ] );
 	case 1:
-		return -_$kernelSin_533( buffer[ 0 ], buffer[ 1 ] );
+		return -_$kernelSin_531( buffer[ 0 ], buffer[ 1 ] );
 	case 2:
-		return -_$kernelCos_529( buffer[ 0 ], buffer[ 1 ] );
+		return -_$kernelCos_527( buffer[ 0 ], buffer[ 1 ] );
 	default:
-		return _$kernelSin_533( buffer[ 0 ], buffer[ 1 ] );
+		return _$kernelSin_531( buffer[ 0 ], buffer[ 1 ] );
 	}
 }
 
@@ -26431,7 +26431,7 @@ var _$gammainc_403 = _$gammainc_401;
 * @param {number} z - function parameter
 * @returns {number} power term prefix
 */
-function __fullIGammaPrefix_483( a, z ) {
+function __fullIGammaPrefix_481( a, z ) {
 	var prefix;
 	var alz;
 
@@ -26462,7 +26462,7 @@ function __fullIGammaPrefix_483( a, z ) {
 
 // EXPORTS //
 
-var _$fullIGammaPrefix_483 = __fullIGammaPrefix_483;
+var _$fullIGammaPrefix_481 = __fullIGammaPrefix_481;
 
 /**
 * @license Apache-2.0
@@ -26603,7 +26603,7 @@ function regularizedGammaPrefix( a, z ) {
 
 // EXPORTS //
 
-var _$regularizedGammaPrefix_491 = regularizedGammaPrefix;
+var _$regularizedGammaPrefix_489 = regularizedGammaPrefix;
 
 /**
 * @license Apache-2.0
@@ -26649,8 +26649,8 @@ var _$regularizedGammaPrefix_491 = regularizedGammaPrefix;
 /* removed: var _$ln_545 = require( '@stdlib/math/base/special/ln' ); */;
 /* removed: var _$FLOAT64_SMALLEST_NORMAL_86 = require( '@stdlib/constants/math/float64-smallest-normal' ); */;
 /* removed: var _$FLOAT64_EPSILON_56 = require( '@stdlib/constants/math/float64-eps' ); */;
-/* removed: var _$fullIGammaPrefix_483 = require( './full_igamma_prefix.js' ); */;
-/* removed: var _$regularizedGammaPrefix_491 = require( './regularized_gamma_prefix.js' ); */;
+/* removed: var _$fullIGammaPrefix_481 = require( './full_igamma_prefix.js' ); */;
+/* removed: var _$regularizedGammaPrefix_489 = require( './regularized_gamma_prefix.js' ); */;
 
 
 // VARIABLES //
@@ -26704,7 +26704,7 @@ function betaSmallBLargeASeries( a, b, x, y, s0, mult, normalized ) {
 	u = -t * lx;
 
 	// And from from 9.2:
-	h = _$regularizedGammaPrefix_491( b, u );
+	h = _$regularizedGammaPrefix_489( b, u );
 	if ( h <= _$FLOAT64_SMALLEST_NORMAL_86 ) {
 		return s0;
 	}
@@ -26712,7 +26712,7 @@ function betaSmallBLargeASeries( a, b, x, y, s0, mult, normalized ) {
 		prefix = h / _$gammaDeltaRatio_379( a, b );
 		prefix /= _$pow_618( t, b );
 	} else {
-		prefix = _$fullIGammaPrefix_483( b, u ) / _$pow_618( t, b );
+		prefix = _$fullIGammaPrefix_481( b, u ) / _$pow_618( t, b );
 	}
 	prefix *= mult;
 
@@ -26769,7 +26769,7 @@ function betaSmallBLargeASeries( a, b, x, y, s0, mult, normalized ) {
 
 // EXPORTS //
 
-var _$betaSmallBLargeASeries_481 = betaSmallBLargeASeries;
+var _$betaSmallBLargeASeries_479 = betaSmallBLargeASeries;
 
 /**
 * @license Apache-2.0
@@ -26841,7 +26841,7 @@ function risingFactorialRatio( a, b, k ) {
 
 // EXPORTS //
 
-var _$risingFactorialRatio_492 = risingFactorialRatio;
+var _$risingFactorialRatio_490 = risingFactorialRatio;
 
 /**
 * @license Apache-2.0
@@ -27344,7 +27344,7 @@ function ibetaPowerTerms( a, b, x, y, normalized ) {
 
 // EXPORTS //
 
-var _$ibetaPowerTerms_486 = ibetaPowerTerms;
+var _$ibetaPowerTerms_484 = ibetaPowerTerms;
 
 /**
 * @license Apache-2.0
@@ -27382,7 +27382,7 @@ var _$ibetaPowerTerms_486 = ibetaPowerTerms;
 // MODULES //
 
 /* removed: var _$continuedFraction_747 = require( '@stdlib/math/base/tools/continued-fraction' ); */;
-/* removed: var _$ibetaPowerTerms_486 = require( './ibeta_power_terms.js' ); */;
+/* removed: var _$ibetaPowerTerms_484 = require( './ibeta_power_terms.js' ); */;
 
 
 // VARIABLES //
@@ -27451,7 +27451,7 @@ function ibetaFraction2( a, b, x, y, normalized, out ) {
 	var fract;
 	var f;
 
-	result = _$ibetaPowerTerms_486( a, b, x, y, normalized );
+	result = _$ibetaPowerTerms_484( a, b, x, y, normalized );
 	if ( out ) {
 		out[ 1 ] = result;
 	}
@@ -27466,7 +27466,7 @@ function ibetaFraction2( a, b, x, y, normalized, out ) {
 
 // EXPORTS //
 
-var _$ibetaFraction2_485 = ibetaFraction2;
+var _$ibetaFraction2_483 = ibetaFraction2;
 
 /**
 * @license Apache-2.0
@@ -27742,7 +27742,7 @@ function binomialCCDF( n, k, x, y ) {
 
 // EXPORTS //
 
-var _$binomialCCDF_482 = binomialCCDF;
+var _$binomialCCDF_480 = binomialCCDF;
 
 /**
 * @license Apache-2.0
@@ -27779,7 +27779,7 @@ var _$binomialCCDF_482 = binomialCCDF;
 
 // MODULES //
 
-/* removed: var _$ibetaPowerTerms_486 = require( './ibeta_power_terms.js' ); */;
+/* removed: var _$ibetaPowerTerms_484 = require( './ibeta_power_terms.js' ); */;
 
 
 // MAIN //
@@ -27803,7 +27803,7 @@ function ibetaAStep( a, b, x, y, k, normalized, out ) {
 	var sum;
 	var i;
 
-	prefix = _$ibetaPowerTerms_486( a, b, x, y, normalized );
+	prefix = _$ibetaPowerTerms_484( a, b, x, y, normalized );
 	if ( out ) {
 		out[ 1 ] = prefix;
 	}
@@ -27826,7 +27826,7 @@ function ibetaAStep( a, b, x, y, k, normalized, out ) {
 
 // EXPORTS //
 
-var _$ibetaAStep_484 = ibetaAStep;
+var _$ibetaAStep_482 = ibetaAStep;
 
 /**
 * @license Apache-2.0
@@ -27998,7 +27998,7 @@ function ibetaSeries( a, b, x, s0, normalized, out, y ) {
 
 // EXPORTS //
 
-var _$ibetaSeries_487 = ibetaSeries;
+var _$ibetaSeries_485 = ibetaSeries;
 
 /* eslint-disable max-statements, max-lines */
 
@@ -28054,13 +28054,13 @@ var _$ibetaSeries_487 = ibetaSeries;
 /* removed: var _$INT32_MAX_93 = require( '@stdlib/constants/math/int32-max' ); */;
 /* removed: var _$HALF_PI_62 = require( '@stdlib/constants/math/float64-half-pi' ); */;
 /* removed: var _$PI_84 = require( '@stdlib/constants/math/float64-pi' ); */;
-/* removed: var _$betaSmallBLargeASeries_481 = require( './beta_small_b_large_a_series.js' ); */;
-/* removed: var _$risingFactorialRatio_492 = require( './rising_factorial_ratio.js' ); */;
-/* removed: var _$ibetaPowerTerms_486 = require( './ibeta_power_terms.js' ); */;
-/* removed: var _$ibetaFraction2_485 = require( './ibeta_fraction2.js'); */;
-/* removed: var _$binomialCCDF_482 = require( './binomial_ccdf.js' ); */;
-/* removed: var _$ibetaAStep_484 = require( './ibeta_a_step.js' ); */;
-/* removed: var _$ibetaSeries_487 = require( './ibeta_series.js' ); */;
+/* removed: var _$betaSmallBLargeASeries_479 = require( './beta_small_b_large_a_series.js' ); */;
+/* removed: var _$risingFactorialRatio_490 = require( './rising_factorial_ratio.js' ); */;
+/* removed: var _$ibetaPowerTerms_484 = require( './ibeta_power_terms.js' ); */;
+/* removed: var _$ibetaFraction2_483 = require( './ibeta_fraction2.js'); */;
+/* removed: var _$binomialCCDF_480 = require( './binomial_ccdf.js' ); */;
+/* removed: var _$ibetaAStep_482 = require( './ibeta_a_step.js' ); */;
+/* removed: var _$ibetaSeries_485 = require( './ibeta_series.js' ); */;
 
 
 // VARIABLES //
@@ -28228,9 +28228,9 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 				if ( invert ) {
 					fract = -( ( normalized ) ? 1.0 : _$beta_182( a, b ) );
 					invert = false;
-					fract = -_$ibetaSeries_487( a, b, x, fract, normalized, out, y );
+					fract = -_$ibetaSeries_485( a, b, x, fract, normalized, out, y );
 				} else {
-					fract = _$ibetaSeries_487( a, b, x, 0, normalized, out, y );
+					fract = _$ibetaSeries_485( a, b, x, 0, normalized, out, y );
 				}
 			} else {
 				tmp = b;
@@ -28246,24 +28246,24 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 					if ( invert ) {
 						fract = -( ( normalized ) ? 1.0 : _$beta_182( a, b ) );
 						invert = false;
-						fract = -_$ibetaSeries_487( a, b, x, fract, normalized, out, y ); // eslint-disable-line max-len
+						fract = -_$ibetaSeries_485( a, b, x, fract, normalized, out, y ); // eslint-disable-line max-len
 					} else {
-						fract = _$ibetaSeries_487( a, b, x, 0, normalized, out, y );
+						fract = _$ibetaSeries_485( a, b, x, 0, normalized, out, y );
 					}
 				} else {
 					// Sidestep on a, and then use the series representation:
 					if ( normalized ) {
 						prefix = 1;
 					} else {
-						prefix = _$risingFactorialRatio_492( a + b, a, 20 );
+						prefix = _$risingFactorialRatio_490( a + b, a, 20 );
 					}
-					fract = _$ibetaAStep_484( a, b, x, y, 20, normalized, out );
+					fract = _$ibetaAStep_482( a, b, x, y, 20, normalized, out );
 					if ( invert ) {
 						fract -= ( ( normalized ) ? 1 : _$beta_182( a, b ) );
 						invert = false;
-						fract = -_$betaSmallBLargeASeries_481( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
+						fract = -_$betaSmallBLargeASeries_479( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
 					} else {
-						fract = _$betaSmallBLargeASeries_481( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
+						fract = _$betaSmallBLargeASeries_479( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
 					}
 				}
 			}
@@ -28271,9 +28271,9 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 			if ( invert ) {
 				fract = -( ( normalized ) ? 1 : _$beta_182( a, b ) );
 				invert = false;
-				fract = -_$ibetaSeries_487( a, b, x, fract, normalized, out, y );
+				fract = -_$ibetaSeries_485( a, b, x, fract, normalized, out, y );
 			} else {
-				fract = _$ibetaSeries_487( a, b, x, 0.0, normalized, out, y );
+				fract = _$ibetaSeries_485( a, b, x, 0.0, normalized, out, y );
 			}
 		} else {
 			tmp = b;
@@ -28289,18 +28289,18 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 				if (invert) {
 					fract = -(( normalized ) ? 1.0 : _$beta_182( a, b ));
 					invert = false;
-					fract = -_$ibetaSeries_487( a, b, x, fract, normalized, out, y );
+					fract = -_$ibetaSeries_485( a, b, x, fract, normalized, out, y );
 				} else {
-					fract = _$ibetaSeries_487( a, b, x, 0.0, normalized, out, y );
+					fract = _$ibetaSeries_485( a, b, x, 0.0, normalized, out, y );
 				}
 			}
 			else if ( a >= 15.0 ) {
 				if ( invert ) {
 					fract = -(( normalized ) ? 1.0 : _$beta_182( a, b ));
 					invert = false;
-					fract = -_$betaSmallBLargeASeries_481( a, b, x, y, fract, 1.0, normalized ); // eslint-disable-line max-len
+					fract = -_$betaSmallBLargeASeries_479( a, b, x, y, fract, 1.0, normalized ); // eslint-disable-line max-len
 				} else {
-					fract = _$betaSmallBLargeASeries_481( a, b, x, y, 0.0, 1.0, normalized ); // eslint-disable-line max-len
+					fract = _$betaSmallBLargeASeries_479( a, b, x, y, 0.0, 1.0, normalized ); // eslint-disable-line max-len
 				}
 			}
 			else {
@@ -28308,15 +28308,15 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 					prefix = 1;
 				} else {
 					// Sidestep to improve errors:
-					prefix = _$risingFactorialRatio_492( a + b, a, 20.0 );
+					prefix = _$risingFactorialRatio_490( a + b, a, 20.0 );
 				}
-				fract = _$ibetaAStep_484( a, b, x, y, 20.0, normalized, out );
+				fract = _$ibetaAStep_482( a, b, x, y, 20.0, normalized, out );
 				if ( invert ) {
 					fract -= ( ( normalized ) ? 1.0 : _$beta_182( a, b ) );
 					invert = false;
-					fract = -_$betaSmallBLargeASeries_481( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
+					fract = -_$betaSmallBLargeASeries_479( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
 				} else {
-					fract = _$betaSmallBLargeASeries_481( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
+					fract = _$betaSmallBLargeASeries_479( a + 20.0, b, x, y, fract, prefix, normalized ); // eslint-disable-line max-len
 				}
 			}
 		}
@@ -28346,7 +28346,7 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 				// Relate to the binomial distribution and use a finite sum:
 				k = a - 1.0;
 				n = b + k;
-				fract = _$binomialCCDF_482( n, k, x, y );
+				fract = _$binomialCCDF_480( n, k, x, y );
 				if ( !normalized ) {
 					fract *= _$beta_182( a, b );
 				}
@@ -28355,9 +28355,9 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 				if ( invert ) {
 					fract = -( ( normalized ) ? 1.0 : _$beta_182( a, b ) );
 					invert = false;
-					fract = -_$ibetaSeries_487( a, b, x, fract, normalized, out, y );
+					fract = -_$ibetaSeries_485( a, b, x, fract, normalized, out, y );
 				} else {
-					fract = _$ibetaSeries_487( a, b, x, 0.0, normalized, out, y );
+					fract = _$ibetaSeries_485( a, b, x, 0.0, normalized, out, y );
 				}
 			}
 			else if ( a > 15.0 ) {
@@ -28370,10 +28370,10 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 				if ( normalized ) {
 					prefix = 1;
 				} else {
-					prefix = _$risingFactorialRatio_492( a + bbar, bbar, n );
+					prefix = _$risingFactorialRatio_490( a + bbar, bbar, n );
 				}
-				fract = _$ibetaAStep_484( bbar, a, y, x, n, normalized );
-				fract = _$betaSmallBLargeASeries_481( a, bbar, x, y, fract, 1.0, normalized ); // eslint-disable-line max-len
+				fract = _$ibetaAStep_482( bbar, a, y, x, n, normalized );
+				fract = _$betaSmallBLargeASeries_479( a, bbar, x, y, fract, 1.0, normalized ); // eslint-disable-line max-len
 				fract /= prefix;
 			}
 			else if ( normalized ) {
@@ -28383,26 +28383,26 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 					n -= 1;
 					bbar += 1;
 				}
-				fract = _$ibetaAStep_484( bbar, a, y, x, n, normalized );
-				fract += _$ibetaAStep_484( a, bbar, x, y, 20.0, normalized );
+				fract = _$ibetaAStep_482( bbar, a, y, x, n, normalized );
+				fract += _$ibetaAStep_482( a, bbar, x, y, 20.0, normalized );
 				if ( invert ) {
 					fract -= 1;
 				}
-				fract = _$betaSmallBLargeASeries_481( a + 20.0, bbar, x, y, fract, 1, normalized ); // eslint-disable-line max-len
+				fract = _$betaSmallBLargeASeries_479( a + 20.0, bbar, x, y, fract, 1, normalized ); // eslint-disable-line max-len
 				if ( invert ) {
 					fract = -fract;
 					invert = false;
 				}
 			}
 			else {
-				fract = _$ibetaFraction2_485( a, b, x, y, normalized, out );
+				fract = _$ibetaFraction2_483( a, b, x, y, normalized, out );
 			}
 		} else {
-			fract = _$ibetaFraction2_485( a, b, x, y, normalized, out );
+			fract = _$ibetaFraction2_483( a, b, x, y, normalized, out );
 		}
 	}
 	if ( out[ 1 ] < 0.0 ) {
-		out[ 1 ] = _$ibetaPowerTerms_486( a, b, x, y, true );
+		out[ 1 ] = _$ibetaPowerTerms_484( a, b, x, y, true );
 	}
 	div = y * x;
 	if ( out[ 1 ] !== 0.0 ) {
@@ -28420,7 +28420,7 @@ function ibetaImp( out, x, a, b, invert, normalized ) {
 
 // EXPORTS //
 
-var _$ibetaImp_489 = ibetaImp;
+var _$ibetaImp_487 = ibetaImp;
 
 /**
 * @license Apache-2.0
@@ -28444,7 +28444,7 @@ var _$ibetaImp_489 = ibetaImp;
 
 // MODULES //
 
-/* removed: var _$ibetaImp_489 = require( './kernel_betainc.js' ); */;
+/* removed: var _$ibetaImp_487 = require( './kernel_betainc.js' ); */;
 
 
 // MAIN //
@@ -28478,15 +28478,15 @@ var _$ibetaImp_489 = ibetaImp;
 */
 function kernelBetainc( out, x, a, b, invert, normalized ) {
 	if ( arguments.length === 5 ) {
-		return _$ibetaImp_489( new Array( 2 ), out, x, a, b, invert );
+		return _$ibetaImp_487( new Array( 2 ), out, x, a, b, invert );
 	}
-	return _$ibetaImp_489( out, x, a, b, invert, normalized );
+	return _$ibetaImp_487( out, x, a, b, invert, normalized );
 }
 
 
 // EXPORTS //
 
-var _$kernelBetainc_490 = kernelBetainc;
+var _$kernelBetainc_488 = kernelBetainc;
 
 /**
 * @license Apache-2.0
@@ -28532,12 +28532,12 @@ var _$kernelBetainc_490 = kernelBetainc;
 
 // MODULES //
 
-/* removed: var _$kernelBetainc_490 = require( './main.js' ); */;
+/* removed: var _$kernelBetainc_488 = require( './main.js' ); */;
 
 
 // EXPORTS //
 
-var _$kernelBetainc_488 = _$kernelBetainc_490;
+var _$kernelBetainc_486 = _$kernelBetainc_488;
 
 /**
 * @license Apache-2.0
@@ -28561,7 +28561,7 @@ var _$kernelBetainc_488 = _$kernelBetainc_490;
 
 // MODULES //
 
-/* removed: var _$kernelBetainc_488 = require( '@stdlib/math/base/special/kernel-betainc' ); */;
+/* removed: var _$kernelBetainc_486 = require( '@stdlib/math/base/special/kernel-betainc' ); */;
 
 
 // VARIABLES //
@@ -28597,7 +28597,7 @@ function betainc( x, a, b, regularized, upper ) {
 	/* eslint-disable no-unneeded-ternary */
 	regularized = ( regularized === false ) ? false : true;
 	upper = ( upper === true ) ? true : false;
-	out = _$kernelBetainc_488( out, x, a, b, upper, regularized );
+	out = _$kernelBetainc_486( out, x, a, b, upper, regularized );
 	return out[ 0 ];
 }
 
@@ -29355,11 +29355,109 @@ var _$SQRT2_91 = SQRT2;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_508( x ) {
+function __evalpoly_506( x ) {
 	if ( x === 0.0 ) {
 		return 0.16666666666666666;
 	}
 	return 0.16666666666666666 + (x * 0.16666666666666666);
+}
+
+
+// EXPORTS //
+
+var _$evalpoly_506 = __evalpoly_506;
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* This is a generated file. Do not edit directly. */
+'use strict';
+
+// MAIN //
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+*
+* @private
+* @param {number} x - value at which to evaluate the polynomial
+* @returns {number} evaluated polynomial
+*/
+function __evalpoly_507( x ) {
+	if ( x === 0.0 ) {
+		return 0.058333333333333334;
+	}
+	return 0.058333333333333334 + (x * (0.06666666666666667 + (x * 0.008333333333333333))); // eslint-disable-line max-len
+}
+
+
+// EXPORTS //
+
+var _$evalpoly_507 = __evalpoly_507;
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* This is a generated file. Do not edit directly. */
+'use strict';
+
+// MAIN //
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+*
+* @private
+* @param {number} x - value at which to evaluate the polynomial
+* @returns {number} evaluated polynomial
+*/
+function __evalpoly_508( x ) {
+	if ( x === 0.0 ) {
+		return 0.0251984126984127;
+	}
+	return 0.0251984126984127 + (x * (0.026785714285714284 + (x * (0.0017857142857142857 + (x * 0.0001984126984126984))))); // eslint-disable-line max-len
 }
 
 
@@ -29406,9 +29504,9 @@ var _$evalpoly_508 = __evalpoly_508;
 */
 function __evalpoly_509( x ) {
 	if ( x === 0.0 ) {
-		return 0.058333333333333334;
+		return 0.012039792768959435;
 	}
-	return 0.058333333333333334 + (x * (0.06666666666666667 + (x * 0.008333333333333333))); // eslint-disable-line max-len
+	return 0.012039792768959435 + (x * (0.010559964726631394 + (x * (-0.0011078042328042327 + (x * (0.0003747795414462081 + (x * 0.0000027557319223985893))))))); // eslint-disable-line max-len
 }
 
 
@@ -29455,9 +29553,9 @@ var _$evalpoly_509 = __evalpoly_509;
 */
 function __evalpoly_510( x ) {
 	if ( x === 0.0 ) {
-		return 0.0251984126984127;
+		return 0.003837005972422639;
 	}
-	return 0.0251984126984127 + (x * (0.026785714285714284 + (x * (0.0017857142857142857 + (x * 0.0001984126984126984))))); // eslint-disable-line max-len
+	return 0.003837005972422639 + (x * (0.00610392115600449 + (x * (-0.0016095979637646305 + (x * (0.0005945867404200738 + (x * (-0.00006270542728876062 + (x * 2.505210838544172e-8))))))))); // eslint-disable-line max-len
 }
 
 
@@ -29504,9 +29602,9 @@ var _$evalpoly_510 = __evalpoly_510;
 */
 function __evalpoly_511( x ) {
 	if ( x === 0.0 ) {
-		return 0.012039792768959435;
+		return 0.0032177478835464946;
 	}
-	return 0.012039792768959435 + (x * (0.010559964726631394 + (x * (-0.0011078042328042327 + (x * (0.0003747795414462081 + (x * 0.0000027557319223985893))))))); // eslint-disable-line max-len
+	return 0.0032177478835464946 + (x * (0.0010898206731540065 + (x * (-0.0012579159844784845 + (x * (0.0006908420797309686 + (x * (-0.00016376804137220805 + (x * (0.0000154012654012654 + (x * 1.6059043836821613e-10))))))))))); // eslint-disable-line max-len
 }
 
 
@@ -29551,60 +29649,11 @@ var _$evalpoly_511 = __evalpoly_511;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_512( x ) {
-	if ( x === 0.0 ) {
-		return 0.003837005972422639;
-	}
-	return 0.003837005972422639 + (x * (0.00610392115600449 + (x * (-0.0016095979637646305 + (x * (0.0005945867404200738 + (x * (-0.00006270542728876062 + (x * 2.505210838544172e-8))))))))); // eslint-disable-line max-len
-}
-
-
-// EXPORTS //
-
-var _$evalpoly_512 = __evalpoly_512;
-
-/**
-* @license Apache-2.0
-*
-* Copyright (c) 2018 The Stdlib Authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
-
-/* This is a generated file. Do not edit directly. */
-'use strict';
-
-// MAIN //
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
 function __evalpoly_513( x ) {
 	if ( x === 0.0 ) {
-		return 0.0032177478835464946;
+		return 0.001743826229834001;
 	}
-	return 0.0032177478835464946 + (x * (0.0010898206731540065 + (x * (-0.0012579159844784845 + (x * (0.0006908420797309686 + (x * (-0.00016376804137220805 + (x * (0.0000154012654012654 + (x * 1.6059043836821613e-10))))))))))); // eslint-disable-line max-len
+	return 0.001743826229834001 + (x * (0.00003353097688001788 + (x * (-0.0007624513544032393 + (x * (0.0006451304695145635 + (x * (-0.000249472580470431 + (x * (0.000049255746366361444 + (x * (-0.0000039851014346715405 + (x * 7.647163731819816e-13))))))))))))); // eslint-disable-line max-len
 }
 
 
@@ -29649,56 +29698,7 @@ var _$evalpoly_513 = __evalpoly_513;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_515( x ) {
-	if ( x === 0.0 ) {
-		return 0.001743826229834001;
-	}
-	return 0.001743826229834001 + (x * (0.00003353097688001788 + (x * (-0.0007624513544032393 + (x * (0.0006451304695145635 + (x * (-0.000249472580470431 + (x * (0.000049255746366361444 + (x * (-0.0000039851014346715405 + (x * 7.647163731819816e-13))))))))))))); // eslint-disable-line max-len
-}
-
-
-// EXPORTS //
-
-var _$evalpoly_515 = __evalpoly_515;
-
-/**
-* @license Apache-2.0
-*
-* Copyright (c) 2018 The Stdlib Authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
-
-/* This is a generated file. Do not edit directly. */
-'use strict';
-
-// MAIN //
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function __evalpoly_516( x ) {
+function __evalpoly_514( x ) {
 	if ( x === 0.0 ) {
 		return 0.0009647274732138864;
 	}
@@ -29708,7 +29708,7 @@ function __evalpoly_516( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_516 = __evalpoly_516;
+var _$evalpoly_514 = __evalpoly_514;
 
 /**
 * @license Apache-2.0
@@ -29747,7 +29747,7 @@ var _$evalpoly_516 = __evalpoly_516;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_517( x ) {
+function __evalpoly_515( x ) {
 	if ( x === 0.0 ) {
 		return 0.0005422926281312969;
 	}
@@ -29757,7 +29757,7 @@ function __evalpoly_517( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_517 = __evalpoly_517;
+var _$evalpoly_515 = __evalpoly_515;
 
 /**
 * @license Apache-2.0
@@ -29799,15 +29799,15 @@ var _$evalpoly_517 = __evalpoly_517;
 /* removed: var _$evalpoly_750 = require( '@stdlib/math/base/tools/evalpoly' ); */;
 /* removed: var _$sqrt_703 = require( '@stdlib/math/base/special/sqrt' ); */;
 /* removed: var _$PI_84 = require( '@stdlib/constants/math/float64-pi' ); */;
-/* removed: var _$evalpoly_508 = require( './polyval_co14.js' ); */;
-/* removed: var _$evalpoly_509 = require( './polyval_co15.js' ); */;
-/* removed: var _$evalpoly_510 = require( './polyval_co16.js' ); */;
-/* removed: var _$evalpoly_511 = require( './polyval_co17.js' ); */;
-/* removed: var _$evalpoly_512 = require( './polyval_co18.js' ); */;
-/* removed: var _$evalpoly_513 = require( './polyval_co19.js' ); */;
-/* removed: var _$evalpoly_515 = require( './polyval_co20.js' ); */;
-/* removed: var _$evalpoly_516 = require( './polyval_co21.js' ); */;
-/* removed: var _$evalpoly_517 = require( './polyval_co22.js' ); */;
+/* removed: var _$evalpoly_506 = require( './polyval_co14.js' ); */;
+/* removed: var _$evalpoly_507 = require( './polyval_co15.js' ); */;
+/* removed: var _$evalpoly_508 = require( './polyval_co16.js' ); */;
+/* removed: var _$evalpoly_509 = require( './polyval_co17.js' ); */;
+/* removed: var _$evalpoly_510 = require( './polyval_co18.js' ); */;
+/* removed: var _$evalpoly_511 = require( './polyval_co19.js' ); */;
+/* removed: var _$evalpoly_513 = require( './polyval_co20.js' ); */;
+/* removed: var _$evalpoly_514 = require( './polyval_co21.js' ); */;
+/* removed: var _$evalpoly_515 = require( './polyval_co22.js' ); */;
 
 
 // VARIABLES //
@@ -29841,15 +29841,15 @@ function inverseStudentsTBodySeries( df, u ) {
 
 	// Figure out what the coefficients are. They depend only on the degrees of freedom (Eq 57 of Shaw):
 	idf = 1.0 / df;
-	c[ 1 ] = _$evalpoly_508( idf );
-	c[ 2 ] = _$evalpoly_509( idf );
-	c[ 3 ] = _$evalpoly_510( idf );
-	c[ 4 ] = _$evalpoly_511( idf );
-	c[ 5 ] = _$evalpoly_512( idf );
-	c[ 6 ] = _$evalpoly_513( idf );
-	c[ 7 ] = _$evalpoly_515( idf );
-	c[ 8 ] = _$evalpoly_516( idf );
-	c[ 9 ] = _$evalpoly_517( idf );
+	c[ 1 ] = _$evalpoly_506( idf );
+	c[ 2 ] = _$evalpoly_507( idf );
+	c[ 3 ] = _$evalpoly_508( idf );
+	c[ 4 ] = _$evalpoly_509( idf );
+	c[ 5 ] = _$evalpoly_510( idf );
+	c[ 6 ] = _$evalpoly_511( idf );
+	c[ 7 ] = _$evalpoly_513( idf );
+	c[ 8 ] = _$evalpoly_514( idf );
+	c[ 9 ] = _$evalpoly_515( idf );
 
 	// Result is then an odd polynomial in v (see Eq 56 of Shaw)...
 	return c0 + ( v*_$evalpoly_750( c, v*v ) );
@@ -29858,7 +29858,7 @@ function inverseStudentsTBodySeries( df, u ) {
 
 // EXPORTS //
 
-var _$inverseStudentsTBodySeries_498 = inverseStudentsTBodySeries;
+var _$inverseStudentsTBodySeries_496 = inverseStudentsTBodySeries;
 
 /**
 * @license Apache-2.0
@@ -29970,7 +29970,7 @@ function inverseStudentsTTailSeries( df, v ) { // eslint-disable-line id-length
 
 // EXPORTS //
 
-var _$inverseStudentsTTailSeries_500 = inverseStudentsTTailSeries;
+var _$inverseStudentsTTailSeries_498 = inverseStudentsTTailSeries;
 
 /**
 * @license Apache-2.0
@@ -30073,7 +30073,7 @@ function inverseStudentsTHill( ndf, u ) {
 
 // EXPORTS //
 
-var _$inverseStudentsTHill_499 = inverseStudentsTHill;
+var _$inverseStudentsTHill_497 = inverseStudentsTHill;
 
 /**
 * @license Apache-2.0
@@ -30123,15 +30123,15 @@ var _$inverseStudentsTHill_499 = inverseStudentsTHill;
 /* removed: var _$sin_683 = require( '@stdlib/math/base/special/sin' ); */;
 /* removed: var _$SQRT2_91 = require( '@stdlib/constants/math/float64-sqrt-two' ); */;
 /* removed: var _$PI_84 = require( '@stdlib/constants/math/float64-pi' ); */;
-/* removed: var _$inverseStudentsTBodySeries_498 = require( './inverse_students_t_body_series.js' ); */;
-/* removed: var _$inverseStudentsTTailSeries_500 = require( './inverse_students_t_tail_series.js' ); */;
-/* removed: var _$inverseStudentsTHill_499 = require( './inverse_students_t_hill.js' ); */;
+/* removed: var _$inverseStudentsTBodySeries_496 = require( './inverse_students_t_body_series.js' ); */;
+/* removed: var _$inverseStudentsTTailSeries_498 = require( './inverse_students_t_tail_series.js' ); */;
+/* removed: var _$inverseStudentsTHill_497 = require( './inverse_students_t_hill.js' ); */;
 
 
 // VARIABLES //
 
 var DF_THRESHOLD = 0x10000000; // 2^28
-var __ONE_THIRD_497 = 1.0 / 3.0;
+var __ONE_THIRD_495 = 1.0 / 3.0;
 var EXP = ( 2.0 * 53.0 ) / 3.0;
 var C = 0.85498797333834849467655443627193;
 
@@ -30203,11 +30203,11 @@ function inverseStudentsT( df, u, v ) {
 		case 6:
 			// We get numeric overflow in this area:
 			if ( u < 1.0e-150 ) {
-				return ( ( invert ) ? -1 : 1 ) * _$inverseStudentsTHill_499( df, u );
+				return ( ( invert ) ? -1 : 1 ) * _$inverseStudentsTHill_497( df, u );
 			}
 			// Newton-Raphson iteration of a polynomial case, choice of seed value is taken from Shaw's online supplement:
 			a = 4.0 * ( u - (u*u) );// 1 - 4 * (u - 0.5f) * (u - 0.5f);
-			b = _$pow_618( a, __ONE_THIRD_497 );
+			b = _$pow_618( a, __ONE_THIRD_495 );
 			p = 6.0 * ( 1.0 + ( C * ( (1.0/b) - 1.0 ) ) );
 			do {
 				p2 = p * p;
@@ -30231,17 +30231,17 @@ function inverseStudentsT( df, u, v ) {
 				// Use a roughly linear scheme to choose between Shaw's tail series and body series:
 				crossover = 0.2742 - ( df * 0.0242143 );
 				if ( u > crossover ) {
-					result = _$inverseStudentsTBodySeries_498( df, u );
+					result = _$inverseStudentsTBodySeries_496( df, u );
 				} else {
-					result = _$inverseStudentsTTailSeries_500( df, u );
+					result = _$inverseStudentsTTailSeries_498( df, u );
 				}
 			} else {
 				// Use Hill's method except in the extreme tails where we use Shaw's tail series. The crossover point is roughly exponential in -df:
 				crossover = _$ldexp_543( 1.0, _$round_652( df / -0.654 ) );
 				if ( u > crossover ) {
-					result = _$inverseStudentsTHill_499( df, u );
+					result = _$inverseStudentsTHill_497( df, u );
 				} else {
-					result = _$inverseStudentsTTailSeries_500( df, u );
+					result = _$inverseStudentsTTailSeries_498( df, u );
 				}
 			}
 		}
@@ -30251,17 +30251,17 @@ function inverseStudentsT( df, u, v ) {
 		// Use a roughly linear scheme to choose between Shaw's tail series and body series:
 		crossover = 0.2742 - ( df * 0.0242143 );
 		if ( u > crossover ) {
-			result = _$inverseStudentsTBodySeries_498( df, u );
+			result = _$inverseStudentsTBodySeries_496( df, u );
 		} else {
-			result = _$inverseStudentsTTailSeries_500( df, u );
+			result = _$inverseStudentsTTailSeries_498( df, u );
 		}
 	} else {
 		// Use Hill's method except in the extreme tails where we use Shaw's tail series. The crossover point is roughly exponential in -df:
 		crossover = _$ldexp_543( 1.0, _$round_652( df / -0.654 ) );
 		if ( u > crossover ) {
-			result = _$inverseStudentsTHill_499( df, u );
+			result = _$inverseStudentsTHill_497( df, u );
 		} else {
-			result = _$inverseStudentsTTailSeries_500( df, u );
+			result = _$inverseStudentsTTailSeries_498( df, u );
 		}
 	}
 	return ( invert ) ? -result : result;
@@ -30270,7 +30270,7 @@ function inverseStudentsT( df, u, v ) {
 
 // EXPORTS //
 
-var _$inverseStudentsT_497 = inverseStudentsT;
+var _$inverseStudentsT_495 = inverseStudentsT;
 
 /**
 * @license Apache-2.0
@@ -30308,7 +30308,7 @@ var _$inverseStudentsT_497 = inverseStudentsT;
 
 // MODULES //
 
-/* removed: var _$inverseStudentsT_497 = require( './inverse_students_t.js' ); */;
+/* removed: var _$inverseStudentsT_495 = require( './inverse_students_t.js' ); */;
 
 
 // MAIN //
@@ -30331,7 +30331,7 @@ function findIBetaInvFromTDist( a, p, py ) {
 	u = p / 2.0;
 	v = 1.0 - u;
 	df = a * 2.0;
-	t = _$inverseStudentsT_497( df, u, v );
+	t = _$inverseStudentsT_495( df, u, v );
 	if ( py ) {
 		py.value = t * t / ( df + ( t*t ) );
 	}
@@ -30341,7 +30341,7 @@ function findIBetaInvFromTDist( a, p, py ) {
 
 // EXPORTS //
 
-var _$findIBetaInvFromTDist_493 = findIBetaInvFromTDist;
+var _$findIBetaInvFromTDist_491 = findIBetaInvFromTDist;
 
 /**
 * @license Apache-2.0
@@ -30389,7 +30389,7 @@ var _$findIBetaInvFromTDist_493 = findIBetaInvFromTDist;
 // VARIABLES //
 
 // Workspaces for the polynomial coefficients:
-var __workspace_526 = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+var __workspace_524 = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 var terms = [ 0.0, 0.0, 0.0, 0.0 ];
 
 
@@ -30431,34 +30431,34 @@ function temme1( a, b, z ) {
 	// Calculate correction terms:
 
 	// See eq following 2.15:
-	__workspace_526[ 0 ] = -B * _$SQRT2_91 / 2;
-	__workspace_526[ 1 ] = ( 1 - (2.0*B) ) / 8.0;
-	__workspace_526[ 2 ] = -(B * _$SQRT2_91 / 48.0);
-	__workspace_526[ 3 ] = -1.0 / 192.0;
-	__workspace_526[ 4 ] = -B * _$SQRT2_91 / 3840.0;
-	__workspace_526[ 5 ] = 0.0;
-	__workspace_526[ 6 ] = 0.0;
-	terms[ 1 ] = _$evalpoly_750( __workspace_526, eta0 );
+	__workspace_524[ 0 ] = -B * _$SQRT2_91 / 2;
+	__workspace_524[ 1 ] = ( 1 - (2.0*B) ) / 8.0;
+	__workspace_524[ 2 ] = -(B * _$SQRT2_91 / 48.0);
+	__workspace_524[ 3 ] = -1.0 / 192.0;
+	__workspace_524[ 4 ] = -B * _$SQRT2_91 / 3840.0;
+	__workspace_524[ 5 ] = 0.0;
+	__workspace_524[ 6 ] = 0.0;
+	terms[ 1 ] = _$evalpoly_750( __workspace_524, eta0 );
 
 	// Eq Following 2.17:
-	__workspace_526[ 0 ] = B * _$SQRT2_91 * ( (3.0*B) - 2.0) / 12.0;
-	__workspace_526[ 1 ] = ( (20.0*B2) - (12.0*B) + 1.0 ) / 128.0;
-	__workspace_526[ 2 ] = B * _$SQRT2_91 * ( (20.0*B) - 1.0) / 960.0;
-	__workspace_526[ 3 ] = ( (16.0*B2) + (30.0*B) - 15.0) / 4608.0;
-	__workspace_526[ 4 ] = B * _$SQRT2_91 * ( (21.0*B) + 32) / 53760.0;
-	__workspace_526[ 5 ] = (-(32.0*B2) + 63.0) / 368640.0;
-	__workspace_526[ 6 ] = -B * _$SQRT2_91 * ( (120.0*B) + 17.0) / 25804480.0;
-	terms[ 2 ] = _$evalpoly_750( __workspace_526, eta0 );
+	__workspace_524[ 0 ] = B * _$SQRT2_91 * ( (3.0*B) - 2.0) / 12.0;
+	__workspace_524[ 1 ] = ( (20.0*B2) - (12.0*B) + 1.0 ) / 128.0;
+	__workspace_524[ 2 ] = B * _$SQRT2_91 * ( (20.0*B) - 1.0) / 960.0;
+	__workspace_524[ 3 ] = ( (16.0*B2) + (30.0*B) - 15.0) / 4608.0;
+	__workspace_524[ 4 ] = B * _$SQRT2_91 * ( (21.0*B) + 32) / 53760.0;
+	__workspace_524[ 5 ] = (-(32.0*B2) + 63.0) / 368640.0;
+	__workspace_524[ 6 ] = -B * _$SQRT2_91 * ( (120.0*B) + 17.0) / 25804480.0;
+	terms[ 2 ] = _$evalpoly_750( __workspace_524, eta0 );
 
 	// Eq Following 2.17:
-	__workspace_526[ 0 ] = B * _$SQRT2_91 * ( (-75*B2) + (80.0*B) - 16.0) / 480.0;
-	__workspace_526[ 1 ] = ( (-1080.0*B3) + (868.0*B2) - (90.0*B) - 45.0) / 9216.0;
-	__workspace_526[ 2 ] = B * _$SQRT2_91 * ( (-1190.0*B2) + (84.0*B) + 373.0) / 53760.0;
-	__workspace_526[ 3 ] = ( (-2240.0*B3)-(2508.0*B2)+(2100.0*B)-165.0 ) / 368640.0;
-	__workspace_526[ 4 ] = 0.0;
-	__workspace_526[ 5 ] = 0.0;
-	__workspace_526[ 6 ] = 0.0;
-	terms[ 3 ] = _$evalpoly_750( __workspace_526, eta0 );
+	__workspace_524[ 0 ] = B * _$SQRT2_91 * ( (-75*B2) + (80.0*B) - 16.0) / 480.0;
+	__workspace_524[ 1 ] = ( (-1080.0*B3) + (868.0*B2) - (90.0*B) - 45.0) / 9216.0;
+	__workspace_524[ 2 ] = B * _$SQRT2_91 * ( (-1190.0*B2) + (84.0*B) + 373.0) / 53760.0;
+	__workspace_524[ 3 ] = ( (-2240.0*B3)-(2508.0*B2)+(2100.0*B)-165.0 ) / 368640.0;
+	__workspace_524[ 4 ] = 0.0;
+	__workspace_524[ 5 ] = 0.0;
+	__workspace_524[ 6 ] = 0.0;
+	terms[ 3 ] = _$evalpoly_750( __workspace_524, eta0 );
 
 	// Bring them together to get a final estimate for eta:
 	eta = _$evalpoly_750( terms, 1.0/a );
@@ -30475,7 +30475,7 @@ function temme1( a, b, z ) {
 
 // EXPORTS //
 
-var _$temme1_526 = temme1;
+var _$temme1_524 = temme1;
 
 /**
 * @license Apache-2.0
@@ -30563,7 +30563,7 @@ function temmeRootFinder( t, a ) {
 
 // EXPORTS //
 
-var _$temmeRootFinder_525 = temmeRootFinder;
+var _$temmeRootFinder_523 = temmeRootFinder;
 
 /**
 * @license Apache-2.0
@@ -30832,7 +30832,7 @@ function newtonRaphsonIterate( fun, guess, min, max, digits, maxIter ) {
 
 // EXPORTS //
 
-var _$newtonRaphsonIterate_502 = newtonRaphsonIterate;
+var _$newtonRaphsonIterate_500 = newtonRaphsonIterate;
 
 /**
 * @license Apache-2.0
@@ -30871,7 +30871,7 @@ var _$newtonRaphsonIterate_502 = newtonRaphsonIterate;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_503( x ) {
+function __evalpoly_501( x ) {
 	if ( x === 0.0 ) {
 		return -1.0;
 	}
@@ -30881,7 +30881,7 @@ function __evalpoly_503( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_503 = __evalpoly_503;
+var _$evalpoly_501 = __evalpoly_501;
 
 /**
 * @license Apache-2.0
@@ -30920,7 +30920,7 @@ var _$evalpoly_503 = __evalpoly_503;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_507( x ) {
+function __evalpoly_505( x ) {
 	if ( x === 0.0 ) {
 		return 1.0;
 	}
@@ -30930,7 +30930,7 @@ function __evalpoly_507( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_507 = __evalpoly_507;
+var _$evalpoly_505 = __evalpoly_505;
 
 /**
 * @license Apache-2.0
@@ -30969,7 +30969,7 @@ var _$evalpoly_507 = __evalpoly_507;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_514( x ) {
+function __evalpoly_512( x ) {
 	if ( x === 0.0 ) {
 		return 1.0;
 	}
@@ -30979,7 +30979,105 @@ function __evalpoly_514( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_514 = __evalpoly_514;
+var _$evalpoly_512 = __evalpoly_512;
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* This is a generated file. Do not edit directly. */
+'use strict';
+
+// MAIN //
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+*
+* @private
+* @param {number} x - value at which to evaluate the polynomial
+* @returns {number} evaluated polynomial
+*/
+function __evalpoly_516( x ) {
+	if ( x === 0.0 ) {
+		return 7.0;
+	}
+	return 7.0 + (x * (-2.0 + (x * (33.0 + (x * (-62.0 + (x * 31.0)))))));
+}
+
+
+// EXPORTS //
+
+var _$evalpoly_516 = __evalpoly_516;
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/* This is a generated file. Do not edit directly. */
+'use strict';
+
+// MAIN //
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+*
+* @private
+* @param {number} x - value at which to evaluate the polynomial
+* @returns {number} evaluated polynomial
+*/
+function __evalpoly_517( x ) {
+	if ( x === 0.0 ) {
+		return 25.0;
+	}
+	return 25.0 + (x * (-52.0 + (x * (-17.0 + (x * (88.0 + (x * (-115.0 + (x * 46.0))))))))); // eslint-disable-line max-len
+}
+
+
+// EXPORTS //
+
+var _$evalpoly_517 = __evalpoly_517;
 
 /**
 * @license Apache-2.0
@@ -31022,7 +31120,7 @@ function __evalpoly_518( x ) {
 	if ( x === 0.0 ) {
 		return 7.0;
 	}
-	return 7.0 + (x * (-2.0 + (x * (33.0 + (x * (-62.0 + (x * 31.0)))))));
+	return 7.0 + (x * (12.0 + (x * (-78.0 + (x * 52.0)))));
 }
 
 
@@ -31069,9 +31167,9 @@ var _$evalpoly_518 = __evalpoly_518;
 */
 function __evalpoly_519( x ) {
 	if ( x === 0.0 ) {
-		return 25.0;
+		return -7.0;
 	}
-	return 25.0 + (x * (-52.0 + (x * (-17.0 + (x * (88.0 + (x * (-115.0 + (x * 46.0))))))))); // eslint-disable-line max-len
+	return -7.0 + (x * (2.0 + (x * (183.0 + (x * (-370.0 + (x * 185.0)))))));
 }
 
 
@@ -31118,9 +31216,9 @@ var _$evalpoly_519 = __evalpoly_519;
 */
 function __evalpoly_520( x ) {
 	if ( x === 0.0 ) {
-		return 7.0;
+		return -533.0;
 	}
-	return 7.0 + (x * (12.0 + (x * (-78.0 + (x * 52.0)))));
+	return -533.0 + (x * (776.0 + (x * (-1835.0 + (x * (10240.0 + (x * (-13525.0 + (x * 5410.0))))))))); // eslint-disable-line max-len
 }
 
 
@@ -31167,9 +31265,9 @@ var _$evalpoly_520 = __evalpoly_520;
 */
 function __evalpoly_521( x ) {
 	if ( x === 0.0 ) {
-		return -7.0;
+		return -1579.0;
 	}
-	return -7.0 + (x * (2.0 + (x * (183.0 + (x * (-370.0 + (x * 185.0)))))));
+	return -1579.0 + (x * (3747.0 + (x * (-3372.0 + (x * (-15821.0 + (x * (45588.0 + (x * (-45213.0 + (x * 15071.0))))))))))); // eslint-disable-line max-len
 }
 
 
@@ -31216,9 +31314,9 @@ var _$evalpoly_521 = __evalpoly_521;
 */
 function __evalpoly_522( x ) {
 	if ( x === 0.0 ) {
-		return -533.0;
+		return 449.0;
 	}
-	return -533.0 + (x * (776.0 + (x * (-1835.0 + (x * (10240.0 + (x * (-13525.0 + (x * 5410.0))))))))); // eslint-disable-line max-len
+	return 449.0 + (x * (-1259.0 + (x * (-769.0 + (x * (6686.0 + (x * (-9260.0 + (x * 3704.0))))))))); // eslint-disable-line max-len
 }
 
 
@@ -31263,17 +31361,17 @@ var _$evalpoly_522 = __evalpoly_522;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_523( x ) {
+function __evalpoly_502( x ) {
 	if ( x === 0.0 ) {
-		return -1579.0;
+		return 63149.0;
 	}
-	return -1579.0 + (x * (3747.0 + (x * (-3372.0 + (x * (-15821.0 + (x * (45588.0 + (x * (-45213.0 + (x * 15071.0))))))))))); // eslint-disable-line max-len
+	return 63149.0 + (x * (-151557.0 + (x * (140052.0 + (x * (-727469.0 + (x * (2239932.0 + (x * (-2251437.0 + (x * 750479.0))))))))))); // eslint-disable-line max-len
 }
 
 
 // EXPORTS //
 
-var _$evalpoly_523 = __evalpoly_523;
+var _$evalpoly_502 = __evalpoly_502;
 
 /**
 * @license Apache-2.0
@@ -31312,17 +31410,17 @@ var _$evalpoly_523 = __evalpoly_523;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_524( x ) {
+function __evalpoly_503( x ) {
 	if ( x === 0.0 ) {
-		return 449.0;
+		return 29233.0;
 	}
-	return 449.0 + (x * (-1259.0 + (x * (-769.0 + (x * (6686.0 + (x * (-9260.0 + (x * 3704.0))))))))); // eslint-disable-line max-len
+	return 29233.0 + (x * (-78755.0 + (x * (105222.0 + (x * (146879.0 + (x * (-1602610.0 + (x * (3195183.0 + (x * (-2554139.0 + (x * 729754.0))))))))))))); // eslint-disable-line max-len
 }
 
 
 // EXPORTS //
 
-var _$evalpoly_524 = __evalpoly_524;
+var _$evalpoly_503 = __evalpoly_503;
 
 /**
 * @license Apache-2.0
@@ -31363,104 +31461,6 @@ var _$evalpoly_524 = __evalpoly_524;
 */
 function __evalpoly_504( x ) {
 	if ( x === 0.0 ) {
-		return 63149.0;
-	}
-	return 63149.0 + (x * (-151557.0 + (x * (140052.0 + (x * (-727469.0 + (x * (2239932.0 + (x * (-2251437.0 + (x * 750479.0))))))))))); // eslint-disable-line max-len
-}
-
-
-// EXPORTS //
-
-var _$evalpoly_504 = __evalpoly_504;
-
-/**
-* @license Apache-2.0
-*
-* Copyright (c) 2018 The Stdlib Authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
-
-/* This is a generated file. Do not edit directly. */
-'use strict';
-
-// MAIN //
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function __evalpoly_505( x ) {
-	if ( x === 0.0 ) {
-		return 29233.0;
-	}
-	return 29233.0 + (x * (-78755.0 + (x * (105222.0 + (x * (146879.0 + (x * (-1602610.0 + (x * (3195183.0 + (x * (-2554139.0 + (x * 729754.0))))))))))))); // eslint-disable-line max-len
-}
-
-
-// EXPORTS //
-
-var _$evalpoly_505 = __evalpoly_505;
-
-/**
-* @license Apache-2.0
-*
-* Copyright (c) 2018 The Stdlib Authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
-
-/* This is a generated file. Do not edit directly. */
-'use strict';
-
-// MAIN //
-
-/**
-* Evaluates a polynomial.
-*
-* ## Notes
-*
-* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
-*
-* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
-*
-*
-* @private
-* @param {number} x - value at which to evaluate the polynomial
-* @returns {number} evaluated polynomial
-*/
-function __evalpoly_506( x ) {
-	if ( x === 0.0 ) {
 		return 1.0;
 	}
 	return 1.0 + (x * (-13.0 + (x * 13.0)));
@@ -31469,7 +31469,7 @@ function __evalpoly_506( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_506 = __evalpoly_506;
+var _$evalpoly_504 = __evalpoly_504;
 
 /**
 * @license Apache-2.0
@@ -31515,28 +31515,28 @@ var _$evalpoly_506 = __evalpoly_506;
 /* removed: var _$sqrt_703 = require( '@stdlib/math/base/special/sqrt' ); */;
 /* removed: var _$sin_683 = require( '@stdlib/math/base/special/sin' ); */;
 /* removed: var _$cos_226 = require( '@stdlib/math/base/special/cos' ); */;
-/* removed: var _$temmeRootFinder_525 = require( './root_finder.js'); */;
-/* removed: var _$newtonRaphsonIterate_502 = require( './newton_raphson.js' ); */;
-/* removed: var _$evalpoly_503 = require( './polyval_co1.js' ); */;
-/* removed: var _$evalpoly_514 = require( './polyval_co2.js' ); */;
-/* removed: var _$evalpoly_518 = require( './polyval_co3.js' ); */;
-/* removed: var _$evalpoly_519 = require( './polyval_co4.js' ); */;
-/* removed: var _$evalpoly_520 = require( './polyval_co5.js' ); */;
-/* removed: var _$evalpoly_521 = require( './polyval_co6.js' ); */;
-/* removed: var _$evalpoly_522 = require( './polyval_co7.js' ); */;
-/* removed: var _$evalpoly_523 = require( './polyval_co8.js' ); */;
-/* removed: var _$evalpoly_524 = require( './polyval_co9.js' ); */;
-/* removed: var _$evalpoly_504 = require( './polyval_co10.js' ); */;
-/* removed: var _$evalpoly_505 = require( './polyval_co11.js' ); */;
-/* removed: var _$evalpoly_506 = require( './polyval_co12.js' ); */;
-/* removed: var _$evalpoly_507 = require( './polyval_co13.js' ); */;
+/* removed: var _$temmeRootFinder_523 = require( './root_finder.js'); */;
+/* removed: var _$newtonRaphsonIterate_500 = require( './newton_raphson.js' ); */;
+/* removed: var _$evalpoly_501 = require( './polyval_co1.js' ); */;
+/* removed: var _$evalpoly_512 = require( './polyval_co2.js' ); */;
+/* removed: var _$evalpoly_516 = require( './polyval_co3.js' ); */;
+/* removed: var _$evalpoly_517 = require( './polyval_co4.js' ); */;
+/* removed: var _$evalpoly_518 = require( './polyval_co5.js' ); */;
+/* removed: var _$evalpoly_519 = require( './polyval_co6.js' ); */;
+/* removed: var _$evalpoly_520 = require( './polyval_co7.js' ); */;
+/* removed: var _$evalpoly_521 = require( './polyval_co8.js' ); */;
+/* removed: var _$evalpoly_522 = require( './polyval_co9.js' ); */;
+/* removed: var _$evalpoly_502 = require( './polyval_co10.js' ); */;
+/* removed: var _$evalpoly_503 = require( './polyval_co11.js' ); */;
+/* removed: var _$evalpoly_504 = require( './polyval_co12.js' ); */;
+/* removed: var _$evalpoly_505 = require( './polyval_co13.js' ); */;
 
 
 // VARIABLES //
 
 // Workspaces for polynomial coefficients:
-var __workspace_527 = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
-var __terms_527 = [ 0.0, 0.0, 0.0, 0.0 ];
+var __workspace_525 = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+var __terms_525 = [ 0.0, 0.0, 0.0, 0.0 ];
 
 
 // MAIN //
@@ -31583,7 +31583,7 @@ function temme2( z, r, theta ) {
 	c = _$cos_226( theta );
 
 	// Now we need to perturb eta0 to get eta, which we do by evaluating the polynomial in 1/r at the bottom of page 151, to do this we first need the error terms e1, e2 e3 which we'll fill into the array "terms".  Since these terms are themselves polynomials, we'll need another array "workspace" to calculate those...
-	__terms_527[ 0 ] = eta0;
+	__terms_525[ 0 ] = eta0;
 
 	// Some powers of sin(theta) cos(theta) that we'll need later:
 	s2 = s * s;
@@ -31597,34 +31597,34 @@ function temme2( z, r, theta ) {
 	sc7 = sc4 * sc3;
 
 	// Calculate e1 and put it in terms[1], see the middle of page 151:
-	__workspace_527[ 0 ] = ((2.0*s2) - 1.0) / ( 3.0*sc );
-	__workspace_527[ 1 ] = -_$evalpoly_503( s2 ) / (36.0*sc2);
-	__workspace_527[ 2 ] = _$evalpoly_514( s2 ) / (1620.0*sc3);
-	__workspace_527[ 3 ] = _$evalpoly_518( s2 ) / (6480.0*sc4);
-	__workspace_527[ 4 ] = _$evalpoly_519( s2 ) / (90720.0*sc5);
-	__workspace_527[ 5 ] = 0.0;
-	__terms_527[ 1 ] = _$evalpoly_750( __workspace_527, eta0 );
+	__workspace_525[ 0 ] = ((2.0*s2) - 1.0) / ( 3.0*sc );
+	__workspace_525[ 1 ] = -_$evalpoly_501( s2 ) / (36.0*sc2);
+	__workspace_525[ 2 ] = _$evalpoly_512( s2 ) / (1620.0*sc3);
+	__workspace_525[ 3 ] = _$evalpoly_516( s2 ) / (6480.0*sc4);
+	__workspace_525[ 4 ] = _$evalpoly_517( s2 ) / (90720.0*sc5);
+	__workspace_525[ 5 ] = 0.0;
+	__terms_525[ 1 ] = _$evalpoly_750( __workspace_525, eta0 );
 
 	// Now evaluate e2 and put it in terms[2]:
-	__workspace_527[ 0 ] = -_$evalpoly_520( s2 ) / (405.0*sc3);
-	__workspace_527[ 1 ] = _$evalpoly_521( s2 ) / (2592.0*sc4);
-	__workspace_527[ 2 ] = -_$evalpoly_522( s2 ) / (204120.0*sc5);
-	__workspace_527[ 3 ] = -_$evalpoly_523( s2 ) / (2099520.0*sc6);
-	__workspace_527[ 4 ] = 0.0;
-	__workspace_527[ 5 ] = 0.0;
-	__terms_527[ 2 ] = _$evalpoly_750( __workspace_527, eta0 );
+	__workspace_525[ 0 ] = -_$evalpoly_518( s2 ) / (405.0*sc3);
+	__workspace_525[ 1 ] = _$evalpoly_519( s2 ) / (2592.0*sc4);
+	__workspace_525[ 2 ] = -_$evalpoly_520( s2 ) / (204120.0*sc5);
+	__workspace_525[ 3 ] = -_$evalpoly_521( s2 ) / (2099520.0*sc6);
+	__workspace_525[ 4 ] = 0.0;
+	__workspace_525[ 5 ] = 0.0;
+	__terms_525[ 2 ] = _$evalpoly_750( __workspace_525, eta0 );
 
 	// And e3, and put it in terms[3]:
-	__workspace_527[ 0 ] = _$evalpoly_524( s2 ) / (102060.0*sc5);
-	__workspace_527[ 1 ] = -_$evalpoly_504( s2 ) / (20995200.0*sc6);
-	__workspace_527[ 2 ] = _$evalpoly_505( s2 ) / (36741600.0*sc7);
-	__workspace_527[ 3 ] = 0.0;
-	__workspace_527[ 4 ] = 0.0;
-	__workspace_527[ 5 ] = 0.0;
-	__terms_527[ 3 ] = _$evalpoly_750( __workspace_527, eta0 );
+	__workspace_525[ 0 ] = _$evalpoly_522( s2 ) / (102060.0*sc5);
+	__workspace_525[ 1 ] = -_$evalpoly_502( s2 ) / (20995200.0*sc6);
+	__workspace_525[ 2 ] = _$evalpoly_503( s2 ) / (36741600.0*sc7);
+	__workspace_525[ 3 ] = 0.0;
+	__workspace_525[ 4 ] = 0.0;
+	__workspace_525[ 5 ] = 0.0;
+	__terms_525[ 3 ] = _$evalpoly_750( __workspace_525, eta0 );
 
 	// Bring the correction terms together to evaluate eta; this is the last equation on page 151:
-	eta = _$evalpoly_750( __terms_527, 1.0/r );
+	eta = _$evalpoly_750( __terms_525, 1.0/r );
 
 	// Now that we have eta we need to back solve for x, we seek the value of x that gives eta in Eq 3.2. The two methods used are described in section 5. Begin by defining a few variables we'll need later:
 	alpha = c / s;
@@ -31634,23 +31634,23 @@ function temme2( z, r, theta ) {
 	// Temme doesn't specify what value to switch on here, but this seems to work pretty well:
 	if ( _$abs_118(eta) < 0.7 ) {
 		// Small eta use the expansion Temme gives in the second equation of section 5, it's a polynomial in eta:
-		__workspace_527[ 0 ] = s2;
-		__workspace_527[ 1 ] = sc;
-		__workspace_527[ 2 ] = (1.0-(2.0*s2)) / 3.0;
-		__workspace_527[ 3 ] = _$evalpoly_506( s2 ) / ( 36.0*sc );
-		__workspace_527[ 4 ] = _$evalpoly_507( s2 ) / ( 270.0*sc2 );
-		__workspace_527[ 5 ] = 0.0;
-		x = _$evalpoly_750( __workspace_527, eta );
+		__workspace_525[ 0 ] = s2;
+		__workspace_525[ 1 ] = sc;
+		__workspace_525[ 2 ] = (1.0-(2.0*s2)) / 3.0;
+		__workspace_525[ 3 ] = _$evalpoly_504( s2 ) / ( 36.0*sc );
+		__workspace_525[ 4 ] = _$evalpoly_505( s2 ) / ( 270.0*sc2 );
+		__workspace_525[ 5 ] = 0.0;
+		x = _$evalpoly_750( __workspace_525, eta );
 	} else {
 		// If eta is large we need to solve Eq 3.2 more directly, begin by getting an initial approximation for x from the last equation on page 155, this is a polynomial in u:
 		u = _$exp_314( lu );
-		__workspace_527[ 0 ] = u;
-		__workspace_527[ 1 ] = alpha;
-		__workspace_527[ 2 ] = 0.0;
-		__workspace_527[ 3 ] = 3.0 * alpha * ((3.0*alpha)+1.0) / 6.0;
-		__workspace_527[ 4 ] = 4.0 * alpha * ((4.0*alpha)+1.0) * ((4.0*alpha)+2.0) / 24.0; // eslint-disable-line max-len
-		__workspace_527[ 5 ] = 5.0 * alpha * ((5.0*alpha)+1.0) * ((5.0*alpha)+2.0) * ((5.0*alpha)+3.0) / 120.0; // eslint-disable-line max-len
-		x = _$evalpoly_750( __workspace_527, u );
+		__workspace_525[ 0 ] = u;
+		__workspace_525[ 1 ] = alpha;
+		__workspace_525[ 2 ] = 0.0;
+		__workspace_525[ 3 ] = 3.0 * alpha * ((3.0*alpha)+1.0) / 6.0;
+		__workspace_525[ 4 ] = 4.0 * alpha * ((4.0*alpha)+1.0) * ((4.0*alpha)+2.0) / 24.0; // eslint-disable-line max-len
+		__workspace_525[ 5 ] = 5.0 * alpha * ((5.0*alpha)+1.0) * ((5.0*alpha)+2.0) * ((5.0*alpha)+3.0) / 120.0; // eslint-disable-line max-len
+		x = _$evalpoly_750( __workspace_525, u );
 
 		// At this point we may or may not have the right answer, Eq-3.2 has two solutions for x for any given eta, however the mapping in 3.2 is 1:1 with the sign of eta and x-sin^2(theta) being the same. So we can check if we have the right root of 3.2, and if not switch x for 1-x.  This transformation is motivated by the fact that the distribution is *almost* symmetric so 1-x will be in the right ball park for the solution:
 		if ( (x-s2)*eta < 0.0 ) {
@@ -31669,17 +31669,17 @@ function temme2( z, r, theta ) {
 	if ( x < lower || x > upper ) {
 		x = (lower+upper) / 2.0;
 	}
-	roots = _$temmeRootFinder_525( -lu, alpha );
+	roots = _$temmeRootFinder_523( -lu, alpha );
 
 	// And iterate:
-	x = _$newtonRaphsonIterate_502( roots, x, lower, upper, 32, 100 );
+	x = _$newtonRaphsonIterate_500( roots, x, lower, upper, 32, 100 );
 	return x;
 }
 
 
 // EXPORTS //
 
-var _$temme2_527 = temme2;
+var _$temme2_525 = temme2;
 
 /**
  * Helpers.
@@ -34486,8 +34486,8 @@ var _$FLOAT64_SMALLEST_SUBNORMAL_87 = FLOAT64_SMALLEST_SUBNORMAL;
 /* removed: var _$ln_545 = require( '@stdlib/math/base/special/ln' ); */;
 /* removed: var _$sqrt_703 = require( '@stdlib/math/base/special/sqrt' ); */;
 /* removed: var _$FLOAT64_SMALLEST_SUBNORMAL_87 = require( '@stdlib/constants/math/float64-smallest-subnormal' ); */;
-/* removed: var _$temmeRootFinder_525 = require( './root_finder.js' ); */;
-/* removed: var _$newtonRaphsonIterate_502 = require( './newton_raphson.js' ); */;
+/* removed: var _$temmeRootFinder_523 = require( './root_finder.js' ); */;
+/* removed: var _$newtonRaphsonIterate_500 = require( './newton_raphson.js' ); */;
 
 
 // MAIN //
@@ -34607,14 +34607,14 @@ function temme3( a, b, p, q ) {
 	lower = (eta < mu) ? cross : 0.0;
 	upper = (eta < mu) ? 1.0 : cross;
 	x = (lower+upper) / 2.0;
-	roots = _$temmeRootFinder_525( u, mu );
-	return _$newtonRaphsonIterate_502( roots, x, lower, upper, 32, 100 );
+	roots = _$temmeRootFinder_523( u, mu );
+	return _$newtonRaphsonIterate_500( roots, x, lower, upper, 32, 100 );
 }
 
 
 // EXPORTS //
 
-var _$temme3_528 = temme3;
+var _$temme3_526 = temme3;
 
 /**
 * @license Apache-2.0
@@ -34836,7 +34836,7 @@ function halleyIterate( fun, guess, minimum, maximum, digits, maxIter ) {
 
 // EXPORTS //
 
-var _$halleyIterate_494 = halleyIterate;
+var _$halleyIterate_492 = halleyIterate;
 
 /**
 * @license Apache-2.0
@@ -34874,7 +34874,7 @@ var _$halleyIterate_494 = halleyIterate;
 
 // MODULES //
 
-/* removed: var _$kernelBetainc_488 = require( '@stdlib/math/base/special/kernel-betainc' ); */;
+/* removed: var _$kernelBetainc_486 = require( '@stdlib/math/base/special/kernel-betainc' ); */;
 /* removed: var _$abs_118 = require( '@stdlib/math/base/special/abs' ); */;
 /* removed: var _$FLOAT64_MAX_75 = require( '@stdlib/constants/math/float64-max' ); */;
 /* removed: var _$FLOAT64_SMALLEST_NORMAL_86 = require( '@stdlib/constants/math/float64-smallest-normal' ); */;
@@ -34882,7 +34882,7 @@ var _$halleyIterate_494 = halleyIterate;
 
 // VARIABLES //
 
-var __out_495 = [ 0.0, 0.0 ]; // WARNING: not thread safe
+var __out_493 = [ 0.0, 0.0 ]; // WARNING: not thread safe
 
 
 // MAIN //
@@ -34914,9 +34914,9 @@ function ibetaRoots( a, b, target, invert ) {
 		var y;
 
 		y = 1.0 - x;
-		__out_495 = _$kernelBetainc_488( __out_495, x, a, b, invert, true );
-		f = __out_495[ 0 ] - target;
-		f1 = __out_495[ 1 ];
+		__out_493 = _$kernelBetainc_486( __out_493, x, a, b, invert, true );
+		f = __out_493[ 0 ] - target;
+		f1 = __out_493[ 1 ];
 		if ( invert ) {
 			f1 = -f1;
 		}
@@ -34944,7 +34944,7 @@ function ibetaRoots( a, b, target, invert ) {
 
 // EXPORTS //
 
-var _$ibetaRoots_495 = ibetaRoots;
+var _$ibetaRoots_493 = ibetaRoots;
 
 /* eslint-disable max-statements, max-lines */
 
@@ -35001,12 +35001,12 @@ var _$ibetaRoots_495 = ibetaRoots;
 /* removed: var _$FLOAT64_SMALLEST_NORMAL_86 = require( '@stdlib/constants/math/float64-smallest-normal' ); */;
 /* removed: var _$HALF_PI_62 = require( '@stdlib/constants/math/float64-half-pi' ); */;
 /* removed: var _$FLOAT64_EPSILON_56 = require( '@stdlib/constants/math/float64-eps' ); */;
-/* removed: var _$findIBetaInvFromTDist_493 = require( './find_ibeta_inv_from_t_dist.js' ); */;
-/* removed: var _$temme1_526 = require( './temme1.js' ); */;
-/* removed: var _$temme2_527 = require( './temme2.js' ); */;
-/* removed: var _$temme3_528 = require( './temme3.js' ); */;
-/* removed: var _$halleyIterate_494 = require( './halley_iterate.js' ); */;
-/* removed: var _$ibetaRoots_495 = require( './ibeta_roots.js' ); */;
+/* removed: var _$findIBetaInvFromTDist_491 = require( './find_ibeta_inv_from_t_dist.js' ); */;
+/* removed: var _$temme1_524 = require( './temme1.js' ); */;
+/* removed: var _$temme2_525 = require( './temme2.js' ); */;
+/* removed: var _$temme3_526 = require( './temme3.js' ); */;
+/* removed: var _$halleyIterate_492 = require( './halley_iterate.js' ); */;
+/* removed: var _$ibetaRoots_493 = require( './ibeta_roots.js' ); */;
 
 
 // VARIABLES //
@@ -35015,7 +35015,7 @@ var DIGITS = 32;
 var MAX_ITERATIONS = 1000;
 
 // Workspace for the polynomial coefficients:
-var __terms_501 = [ 0.0, 0.0, 0.0, 0.0, 0.0 ]; // WARNING: not thread safe
+var __terms_499 = [ 0.0, 0.0, 0.0, 0.0, 0.0 ]; // WARNING: not thread safe
 
 
 // MAIN //
@@ -35118,7 +35118,7 @@ function ibetaInvImp( a, b, p, q ) {
 	if ( b === 0.5 && a >= 0.5 && p !== 1.0 ) {
 		// We have a Student's T distribution:
 		yp = {};
-		x = _$findIBetaInvFromTDist_493( a, p, yp );
+		x = _$findIBetaInvFromTDist_491( a, p, yp );
 		y = yp.value;
 	}
 	else if ( b === 1.0 ) {
@@ -35158,7 +35158,7 @@ function ibetaInvImp( a, b, p, q ) {
 		maxv = _$max_575( a, b );
 		if ( ( _$sqrt_703(minv) > (maxv-minv) ) && minv > 5.0 ) {
 			// When a and b differ by a small amount the curve is quite symmetrical and we can use an error function to approximate the inverse. This is the cheapest of the three Temme expansions, and the calculated value for x will never be much larger than p, so we don't have to worry about cancellation as long as p is small.
-			x = _$temme1_526( a, b, p );
+			x = _$temme1_524( a, b, p );
 			y = 1.0 - x;
 		} else {
 			r = a + b;
@@ -35174,7 +35174,7 @@ function ibetaInvImp( a, b, p, q ) {
 				if ( ppa < 0.0025 && ( a+b ) < 200.0 ) {
 					x = ppa * _$pow_618( a*_$beta_182( a, b ), 1.0/a );
 				} else {
-					x = _$temme2_527( p, r, theta );
+					x = _$temme2_525( p, r, theta );
 				}
 				y = 1.0 - x;
 			} else {
@@ -35202,7 +35202,7 @@ function ibetaInvImp( a, b, p, q ) {
 				}
 			}
 			if ( y > 1.0e-5 ) {
-				x = _$temme3_528( a, b, p, q );
+				x = _$temme3_526( a, b, p, q );
 				y = 1.0 - x;
 			}
 		}
@@ -35275,15 +35275,15 @@ function ibetaInvImp( a, b, p, q ) {
 			a2 = a * a;
 			a3 = a * a2;
 			b2 = b * b;
-			__terms_501[ 0 ] = 0.0;
-			__terms_501[ 1 ] = 1.0;
-			__terms_501[ 2 ] = bm1 / ap1;
+			__terms_499[ 0 ] = 0.0;
+			__terms_499[ 1 ] = 1.0;
+			__terms_499[ 2 ] = bm1 / ap1;
 			ap1 *= ap1;
-			__terms_501[ 3 ] = bm1 * (3.0*a*b + 5.0*b + a2 - a - 4.0) / (2.0 * (a+2.0) * ap1); // eslint-disable-line max-len, no-mixed-operators
+			__terms_499[ 3 ] = bm1 * (3.0*a*b + 5.0*b + a2 - a - 4.0) / (2.0 * (a+2.0) * ap1); // eslint-disable-line max-len, no-mixed-operators
 			ap1 *= (a + 1.0);
-			__terms_501[ 4 ] = bm1 * (33.0*a*b2 + 31.0*b2 + 8.0*a2*b2 - 30.0*a*b - 47.0*b + 11.0*a2*b + 6.0*a3*b + 18.0 + 4.0*a - a3 + a2*a2 - 10.0*a2); // eslint-disable-line max-len, no-mixed-operators
-			__terms_501[ 4 ] /= (3.0 * (a+3.0) * (a+2.0) * ap1);
-			x = _$evalpoly_750( __terms_501, x );
+			__terms_499[ 4 ] = bm1 * (33.0*a*b2 + 31.0*b2 + 8.0*a2*b2 - 30.0*a*b - 47.0*b + 11.0*a2*b + 6.0*a3*b + 18.0 + 4.0*a - a3 + a2*a2 - 10.0*a2); // eslint-disable-line max-len, no-mixed-operators
+			__terms_499[ 4 ] /= (3.0 * (a+3.0) * (a+2.0) * ap1);
+			x = _$evalpoly_750( __terms_499, x );
 		}
 		// Know that result is below the inflection point, so set an upper limit on search...
 		if ( x > xs ) {
@@ -35362,8 +35362,8 @@ function ibetaInvImp( a, b, p, q ) {
 		digits /= 2;
 	}
 	// Now iterate, we can use either p or q as the target here depending on which is smaller:
-	roots = _$ibetaRoots_495( a, b, ( (p < q) ? p : q ), p >= q );
-	x = _$halleyIterate_494( roots, x, lower, upper, digits, MAX_ITERATIONS );
+	roots = _$ibetaRoots_493( a, b, ( (p < q) ? p : q ), p >= q );
+	x = _$halleyIterate_492( roots, x, lower, upper, digits, MAX_ITERATIONS );
 
 	// Tidy up, if we "lower" was too high then zero is the best answer we have:
 	if ( x === lower ) {
@@ -35378,7 +35378,7 @@ function ibetaInvImp( a, b, p, q ) {
 
 // EXPORTS //
 
-var _$ibetaInvImp_501= ibetaInvImp;
+var _$ibetaInvImp_499= ibetaInvImp;
 
 /**
 * @license Apache-2.0
@@ -35423,12 +35423,12 @@ var _$ibetaInvImp_501= ibetaInvImp;
 
 // MODULES //
 
-/* removed: var _$ibetaInvImp_501 = require( './kernel_betaincinv.js' ); */;
+/* removed: var _$ibetaInvImp_499 = require( './kernel_betaincinv.js' ); */;
 
 
 // EXPORTS //
 
-var _$kernelBetaincinv_496 = _$ibetaInvImp_501;
+var _$kernelBetaincinv_494 = _$ibetaInvImp_499;
 
 /**
 * @license Apache-2.0
@@ -35453,7 +35453,7 @@ var _$kernelBetaincinv_496 = _$ibetaInvImp_501;
 // MODULES //
 
 /* removed: var _$isnan_103 = require( '@stdlib/math/base/assert/is-nan' ); */;
-/* removed: var _$kernelBetaincinv_496 = require( '@stdlib/math/base/special/kernel-betaincinv' ); */;
+/* removed: var _$kernelBetaincinv_494 = require( '@stdlib/math/base/special/kernel-betaincinv' ); */;
 
 
 // MAIN //
@@ -35502,9 +35502,9 @@ function betaincinv( p, a, b, upper ) {
 		return NaN;
 	}
 	if ( upper ) {
-		return _$kernelBetaincinv_496( a, b, 1.0 - p, p )[ 0 ];
+		return _$kernelBetaincinv_494( a, b, 1.0 - p, p )[ 0 ];
 	}
-	return _$kernelBetaincinv_496( a, b, p, 1.0 - p )[ 0 ];
+	return _$kernelBetaincinv_494( a, b, p, 1.0 - p )[ 0 ];
 }
 
 
@@ -40009,7 +40009,7 @@ var _$deg2rad_239 = _$deg2rad_238;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_538( x ) {
+function __evalpoly_536( x ) {
 	if ( x === 0.0 ) {
 		return 0.13333333333320124;
 	}
@@ -40019,7 +40019,7 @@ function __evalpoly_538( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_538 = __evalpoly_538;
+var _$evalpoly_536 = __evalpoly_536;
 
 /**
 * @license Apache-2.0
@@ -40058,7 +40058,7 @@ var _$evalpoly_538 = __evalpoly_538;
 * @param {number} x - value at which to evaluate the polynomial
 * @returns {number} evaluated polynomial
 */
-function __evalpoly_537( x ) {
+function __evalpoly_535( x ) {
 	if ( x === 0.0 ) {
 		return 0.05396825397622605;
 	}
@@ -40068,7 +40068,7 @@ function __evalpoly_537( x ) {
 
 // EXPORTS //
 
-var _$evalpoly_537 = __evalpoly_537;
+var _$evalpoly_535 = __evalpoly_535;
 
 /**
 * @license Apache-2.0
@@ -40108,18 +40108,18 @@ var _$evalpoly_537 = __evalpoly_537;
 
 /* removed: var _$getHighWord_762 = require( '@stdlib/number/float64/base/get-high-word' ); */;
 /* removed: var _$setLowWord_773 = require( '@stdlib/number/float64/base/set-low-word' ); */;
-/* removed: var _$evalpoly_538 = require( './polyval_t_odd.js' ); */;
-/* removed: var _$evalpoly_537 = require( './polyval_t_even.js' ); */;
+/* removed: var _$evalpoly_536 = require( './polyval_t_odd.js' ); */;
+/* removed: var _$evalpoly_535 = require( './polyval_t_even.js' ); */;
 
 
 // VARIABLES //
 
-var __PIO4_536 = 7.85398163397448278999e-01;
+var __PIO4_534 = 7.85398163397448278999e-01;
 var PIO4LO = 3.06161699786838301793e-17;
 var T0 = 3.33333333333334091986e-01; // 3FD55555, 55555563
 
 // Absolute value mask: 2147483647 => 0x7fffffff => 01111111111111111111111111111111
-var __HIGH_WORD_ABS_MASK_536 = 0x7fffffff|0; // asm type annotation
+var __HIGH_WORD_ABS_MASK_534 = 0x7fffffff|0; // asm type annotation
 
 
 // MAIN //
@@ -40211,7 +40211,7 @@ function kernelTan( x, y, k ) {
 	hx = _$getHighWord_762( x );
 
 	// High word of |x|:
-	ix = (hx & __HIGH_WORD_ABS_MASK_536)|0; // asm type annotation
+	ix = (hx & __HIGH_WORD_ABS_MASK_534)|0; // asm type annotation
 
 	// Case: |x| >= 0.6744
 	if ( ix >= 0x3FE59428 ) {
@@ -40219,7 +40219,7 @@ function kernelTan( x, y, k ) {
 			x = -x;
 			y = -y;
 		}
-		z = __PIO4_536 - x;
+		z = __PIO4_534 - x;
 		w = PIO4LO - y;
 		x = z + w;
 		y = 0.0;
@@ -40228,8 +40228,8 @@ function kernelTan( x, y, k ) {
 	w = z * z;
 
 	// Break x^5*(T[1]+x^2*T[2]+...) into x^5(T[1]+x^4*T[3]+...+x^20*T[11]) + x^5(x^2*(T[2]+x^4*T[4]+...+x^22*T[12]))...
-	r = _$evalpoly_538( w );
-	v = z * _$evalpoly_537( w );
+	r = _$evalpoly_536( w );
+	v = z * _$evalpoly_535( w );
 	s = z * x;
 	r = y + (z * ((s * (r + v)) + y));
 	r += T0 * s;
@@ -40255,7 +40255,7 @@ function kernelTan( x, y, k ) {
 
 // EXPORTS //
 
-var _$kernelTan_536 = kernelTan;
+var _$kernelTan_534 = kernelTan;
 
 /**
 * @license Apache-2.0
@@ -40300,12 +40300,12 @@ var _$kernelTan_536 = kernelTan;
 
 // MODULES //
 
-/* removed: var _$kernelTan_536 = require( './kernel_tan.js' ); */;
+/* removed: var _$kernelTan_534 = require( './kernel_tan.js' ); */;
 
 
 // EXPORTS //
 
-var _$kernelTan_535 = _$kernelTan_536;
+var _$kernelTan_533 = _$kernelTan_534;
 
 /**
 * @license Apache-2.0
@@ -40344,7 +40344,7 @@ var _$kernelTan_535 = _$kernelTan_536;
 // MODULES //
 
 /* removed: var _$getHighWord_762 = require( '@stdlib/number/float64/base/get-high-word' ); */;
-/* removed: var _$kernelTan_535 = require( '@stdlib/math/base/special/kernel-tan' ); */;
+/* removed: var _$kernelTan_533 = require( '@stdlib/math/base/special/kernel-tan' ); */;
 /* removed: var _$rempio2_635 = require( '@stdlib/math/base/special/rempio2' ); */;
 
 
@@ -40419,7 +40419,7 @@ function tan( x ) {
 		if ( ix < __HIGH_WORD_TWO_NEG_27_708 ) {
 			return x;
 		}
-		return _$kernelTan_535( x, 0.0, 1 );
+		return _$kernelTan_533( x, 0.0, 1 );
 	}
 	// Case: tan(Inf or NaN) is NaN
 	if ( ix >= __HIGH_WORD_EXPONENT_MASK_708 ) {
@@ -40427,7 +40427,7 @@ function tan( x ) {
 	}
 	// Argument reduction needed...
 	n = _$rempio2_635( x, __buffer_708 );
-	return _$kernelTan_535( __buffer_708[ 0 ], __buffer_708[ 1 ], 1-((n&1)<<1) );
+	return _$kernelTan_533( __buffer_708[ 0 ], __buffer_708[ 1 ], 1-((n&1)<<1) );
 }
 
 
@@ -49598,7 +49598,7 @@ function haversin( x ) {
 
 // EXPORTS //
 
-var _$haversin_466 = haversin;
+var _$haversin_467 = haversin;
 
 /**
 * @license Apache-2.0
@@ -49643,12 +49643,12 @@ var _$haversin_466 = haversin;
 
 // MODULES //
 
-/* removed: var _$haversin_466 = require( './haversin.js' ); */;
+/* removed: var _$haversin_467 = require( './main.js' ); */;
 
 
 // EXPORTS //
 
-var _$haversin_467 = _$haversin_466;
+var _$haversin_466 = _$haversin_467;
 
 /**
 * @license Apache-2.0
@@ -49878,7 +49878,7 @@ function hypot( x, y ) {
 
 // EXPORTS //
 
-var _$hypot_470 = hypot;
+var _$hypot_471 = hypot;
 
 /**
 * @license Apache-2.0
@@ -49920,12 +49920,12 @@ var _$hypot_470 = hypot;
 
 // MODULES //
 
-/* removed: var _$hypot_470 = require( './hypot.js' ); */;
+/* removed: var _$hypot_471 = require( './main.js' ); */;
 
 
 // EXPORTS //
 
-var _$hypot_471 = _$hypot_470;
+var _$hypot_470 = _$hypot_471;
 
 /**
 * @license Apache-2.0
@@ -50302,106 +50302,6 @@ var _$imuldw_475 = _$imuldw_476;
 
 'use strict';
 
-// MAIN //
-
-/**
-* Computes an absolute value of a signed 32-bit integer in two's complement format.
-*
-* ## Method
-*
-* -   Assume two's complement format.
-* -   Create a mask by applying a sign propagating right-shift. For negative integers, this results in all `1`'s. For nonnegative integers, this results in all `0`'s.
-* -   XOR the mask with `x`. For negative integers, this is the equivalent of a NOT. For nonnegative integers, this is a no-op.
-* -   Subtract the mask to recover the absolute value. For negative integers, this adds `1`, which is `-x` when using two's complement. For nonnegative integers, this subtracts `0`.
-*
-* @param {integer32} x - integer
-* @returns {integer32} absolute value
-*
-* @example
-* var v = abs( -10|0 );
-* // returns 10
-*/
-function __abs_477( x ) {
-	var mask;
-	var y;
-
-	y = x|0; // asm type annotation
-	mask = ( y >> 31 )|0; // asm type annotation
-	return ((y ^ mask) - mask)|0; // asm type annotation
-}
-
-
-// EXPORTS //
-
-var _$abs_477 = __abs_477;
-
-/**
-* @license Apache-2.0
-*
-* Copyright (c) 2018 The Stdlib Authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
-
-'use strict';
-
-/**
-* Compute an absolute value of a signed 32-bit integer.
-*
-* @module @stdlib/math/base/special/int32-abs
-*
-* @example
-* var absInt32 = require( '@stdlib/math/base/special/int32-abs' );
-*
-* var v = absInt32( -1|0 );
-* // returns 1
-*
-* v = absInt32( 2|0 );
-* // returns 2
-*
-* v = absInt32( 0|0 );
-* // returns 0
-*/
-
-// MODULES //
-
-/* removed: var _$abs_477 = require( './abs.js' ); */;
-
-
-// EXPORTS //
-
-var _$absInt32_478 = _$abs_477;
-
-/**
-* @license Apache-2.0
-*
-* Copyright (c) 2018 The Stdlib Authors.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
-
-'use strict';
-
 /**
 * Computes the multiplicative inverse of `x`.
 *
@@ -50435,7 +50335,7 @@ function inv( x ) {
 
 // EXPORTS //
 
-var _$inv_480 = inv;
+var _$inv_478 = inv;
 
 /**
 * @license Apache-2.0
@@ -50483,12 +50383,12 @@ var _$inv_480 = inv;
 
 // MODULES //
 
-/* removed: var _$inv_480 = require( './inv.js' ); */;
+/* removed: var _$inv_478 = require( './inv.js' ); */;
 
 
 // EXPORTS //
 
-var _$inv_479 = _$inv_480;
+var _$inv_477 = _$inv_478;
 
 /**
 * @license Apache-2.0
@@ -50557,7 +50457,7 @@ function kroneckerDelta( i, j ) {
 
 // EXPORTS //
 
-var _$kroneckerDelta_540 = kroneckerDelta;
+var _$kroneckerDelta_538 = kroneckerDelta;
 
 /**
 * @license Apache-2.0
@@ -50605,12 +50505,112 @@ var _$kroneckerDelta_540 = kroneckerDelta;
 
 // MODULES //
 
-/* removed: var _$kroneckerDelta_540 = require( './kronecker_delta.js' ); */;
+/* removed: var _$kroneckerDelta_538 = require( './kronecker_delta.js' ); */;
 
 
 // EXPORTS //
 
-var _$kroneckerDelta_539 = _$kroneckerDelta_540;
+var _$kroneckerDelta_537 = _$kroneckerDelta_538;
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MAIN //
+
+/**
+* Computes an absolute value of a signed 32-bit integer in two's complement format.
+*
+* ## Method
+*
+* -   Assume two's complement format.
+* -   Create a mask by applying a sign propagating right-shift. For negative integers, this results in all `1`'s. For nonnegative integers, this results in all `0`'s.
+* -   XOR the mask with `x`. For negative integers, this is the equivalent of a NOT. For nonnegative integers, this is a no-op.
+* -   Subtract the mask to recover the absolute value. For negative integers, this adds `1`, which is `-x` when using two's complement. For nonnegative integers, this subtracts `0`.
+*
+* @param {integer32} x - integer
+* @returns {integer32} absolute value
+*
+* @example
+* var v = abs( -10|0 );
+* // returns 10
+*/
+function __abs_540( x ) {
+	var mask;
+	var y;
+
+	y = x|0; // asm type annotation
+	mask = ( y >> 31 )|0; // asm type annotation
+	return ((y ^ mask) - mask)|0; // asm type annotation
+}
+
+
+// EXPORTS //
+
+var _$abs_540 = __abs_540;
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+/**
+* Compute an absolute value of a signed 32-bit integer.
+*
+* @module @stdlib/math/base/special/labs
+*
+* @example
+* var labs = require( '@stdlib/math/base/special/labs' );
+*
+* var v = labs( -1|0 );
+* // returns 1
+*
+* v = labs( 2|0 );
+* // returns 2
+*
+* v = labs( 0|0 );
+* // returns 0
+*/
+
+// MODULES //
+
+/* removed: var _$abs_540 = require( './main.js' ); */;
+
+
+// EXPORTS //
+
+var _$labs_539 = _$abs_540;
 
 /**
 * @license Apache-2.0
@@ -60225,7 +60225,7 @@ _$setReadOnly_789(ns['base'],'ahaversin',_$ahaversin_134);
 _$setReadOnly_789(ns['base'],'asin',_$asin_136);
 _$setReadOnly_789(ns['base'],'asinh',_$asinh_140);
 _$setReadOnly_789(ns['base'],'atan',_$atan_142);
-_$setReadOnly_789(ns['base'],'atan2',_$atan2_146);
+_$setReadOnly_789(ns['base'],'atan2',_$atan2_145);
 _$setReadOnly_789(ns['base'],'atanh',_$atanh_148);
 _$setReadOnly_789(ns['base'],'avercos',_$avercos_150);
 _$setReadOnly_789(ns['base'],'aversin',_$aversin_152);
@@ -60304,19 +60304,19 @@ _$setReadOnly_789(ns['base'],'gcd',_$gcd_459);
 _$setReadOnly_789(ns['base'],'hacovercos',_$hacovercos_461);
 _$setReadOnly_789(ns['base'],'hacoversin',_$hacoversin_463);
 _$setReadOnly_789(ns['base'],'havercos',_$havercos_465);
-_$setReadOnly_789(ns['base'],'haversin',_$haversin_467);
+_$setReadOnly_789(ns['base'],'haversin',_$haversin_466);
 _$setReadOnly_789(ns['base'],'heaviside',_$heaviside_469);
-_$setReadOnly_789(ns['base'],'hypot',_$hypot_471);
+_$setReadOnly_789(ns['base'],'hypot',_$hypot_470);
 _$setReadOnly_789(ns['base'],'imul',_$imul_472);
 _$setReadOnly_789(ns['base'],'imuldw',_$imuldw_475);
-_$setReadOnly_789(ns['base'],'absInt32',_$absInt32_478);
-_$setReadOnly_789(ns['base'],'inv',_$inv_479);
-_$setReadOnly_789(ns['base'],'kernelBetainc',_$kernelBetainc_488);
-_$setReadOnly_789(ns['base'],'kernelBetaincinv',_$kernelBetaincinv_496);
-_$setReadOnly_789(ns['base'],'kernelCos',_$kernelCos_529);
-_$setReadOnly_789(ns['base'],'kernelSin',_$kernelSin_533);
-_$setReadOnly_789(ns['base'],'kernelTan',_$kernelTan_535);
-_$setReadOnly_789(ns['base'],'kroneckerDelta',_$kroneckerDelta_539);
+_$setReadOnly_789(ns['base'],'inv',_$inv_477);
+_$setReadOnly_789(ns['base'],'kernelBetainc',_$kernelBetainc_486);
+_$setReadOnly_789(ns['base'],'kernelBetaincinv',_$kernelBetaincinv_494);
+_$setReadOnly_789(ns['base'],'kernelCos',_$kernelCos_527);
+_$setReadOnly_789(ns['base'],'kernelSin',_$kernelSin_531);
+_$setReadOnly_789(ns['base'],'kernelTan',_$kernelTan_533);
+_$setReadOnly_789(ns['base'],'kroneckerDelta',_$kroneckerDelta_537);
+_$setReadOnly_789(ns['base'],'labs',_$labs_539);
 _$setReadOnly_789(ns['base'],'lcm',_$lcm_541);
 _$setReadOnly_789(ns['base'],'ldexp',_$ldexp_543);
 _$setReadOnly_789(ns['base'],'ln',_$ln_545);

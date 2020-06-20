@@ -5572,7 +5572,7 @@ var _$isNumber_146 = _$isNumber_147;
 // MAIN //
 
 /**
-* Tests if a numeric value is `NaN`.
+* Tests if a double-precision floating-point numeric value is `NaN`.
 *
 * @param {number} x - value to test
 * @returns {boolean} boolean indicating whether the value is `NaN`
@@ -5615,7 +5615,7 @@ var _$isnan_228 = isnan;
 'use strict';
 
 /**
-* Test if a numeric value is `NaN`.
+* Test if a double-precision floating-point numeric value is `NaN`.
 *
 * @module @stdlib/math/base/assert/is-nan
 *
@@ -5631,7 +5631,7 @@ var _$isnan_228 = isnan;
 
 // MODULES //
 
-/* removed: var _$isnan_228 = require( './is_nan.js' ); */;
+/* removed: var _$isnan_228 = require( './main.js' ); */;
 
 
 // EXPORTS //
@@ -17261,11 +17261,11 @@ var M = 8;
 * Copies values from `x` into `y`.
 *
 * @param {PositiveInteger} N - number of values to copy
-* @param {(Array|TypedArray)} x - input array
+* @param {NumericArray} x - input array
 * @param {integer} strideX - `x` stride length
-* @param {(Array|TypedArray)} y - destination array
+* @param {NumericArray} y - destination array
 * @param {integer} strideY - `y` stride length
-* @returns {(Array|TypedArray)} `y`
+* @returns {NumericArray} `y`
 *
 * @example
 * var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
@@ -17361,13 +17361,13 @@ var __M_191 = 8;
 * Copies values from `x` into `y`.
 *
 * @param {PositiveInteger} N - number of values to copy
-* @param {(Array|TypedArray)} x - input array
+* @param {NumericArray} x - input array
 * @param {integer} strideX - `x` stride length
 * @param {NonNegativeInteger} offsetX - starting `x` index
-* @param {(Array|TypedArray)} y - destination array
+* @param {NumericArray} y - destination array
 * @param {integer} strideY - `y` stride length
 * @param {NonNegativeInteger} offsetY - starting `y` index
-* @returns {(Array|TypedArray)} `y`
+* @returns {NumericArray} `y`
 *
 * @example
 * var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
@@ -17450,7 +17450,7 @@ var _$gcopy_191 = __gcopy_191;
 'use strict';
 
 /**
-* Blas level 1 routine to copy values from `x` into `y`.
+* BLAS level 1 routine to copy values from `x` into `y`.
 *
 * @module @stdlib/blas/base/gcopy
 *
@@ -17464,13 +17464,12 @@ var _$gcopy_191 = __gcopy_191;
 * // y => [ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 *
 * @example
-* // Use the `ndarray` interface...
-* var gcopy = require( '@stdlib/blas/base/gcopy' ).ndarray;
+* var gcopy = require( '@stdlib/blas/base/gcopy' );
 *
 * var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
 * var y = [ 6.0, 7.0, 8.0, 9.0, 10.0 ];
 *
-* gcopy( x.length, x, 1, 0, y, 1, 0 );
+* gcopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
 * // y => [ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
 
