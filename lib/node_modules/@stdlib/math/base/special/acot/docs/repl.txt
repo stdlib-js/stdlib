@@ -1,0 +1,35 @@
+
+{{alias}}( x )
+    Computes the inverse hyperbolic cotangent of a number.
+
+    The domain of the inverse hyperbolic cotangent is the union of the intervals
+    (-inf,-1] and [1,inf).
+
+    If provided a value on the open interval (-1,1), the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Inverse hyperbolic cotangent (in radians).
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0 )
+    ~0.5493
+    > y = {{alias}}( 0.0 )
+    NaN
+    > y = {{alias}}( 0.5 )
+    NaN
+    > y = {{alias}}( 1.0 )
+    Infinity
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
