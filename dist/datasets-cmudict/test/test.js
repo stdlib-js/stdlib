@@ -35,7 +35,7 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the function throws an error if the provided an options argument which is not an object', function test( t ) {
+tape( 'the function throws an error if provided an options argument which is not an object', function test( t ) {
 	var values;
 	var i;
 
@@ -62,7 +62,7 @@ tape( 'the function throws an error if the provided an options argument which is
 	}
 });
 
-tape( 'the function throws an error if the provided an invalid option', function test( t ) {
+tape( 'the function throws an error if provided an invalid option', function test( t ) {
 	var values;
 	var i;
 
