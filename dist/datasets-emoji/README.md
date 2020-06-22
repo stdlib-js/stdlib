@@ -125,6 +125,12 @@ Some emoji pictographs may have **multiple** applicable codes.
 
 -   If you intend on embedding a standalone bundle **within** another bundle, you may need to rename `require` calls within the standalone bundle **before** bundling in order to maintain scoped module resolution. For example, if you plan on using [browserify][browserify] to generate a bundle containing embedded bundles, [browserify][browserify] plugins exist to "de-require" those bundles prior to bundling.
 
+-   The bundles in this package expose the following [stdlib][stdlib] packages:
+
+    -   [@stdlib/datasets/emoji][@stdlib/datasets/emoji]
+    -   [@stdlib/datasets/emoji-code-picto][@stdlib/datasets/emoji-code-picto]
+    -   [@stdlib/datasets/emoji-picto-code][@stdlib/datasets/emoji-picto-code]
+
 </section>
 
 <!-- /.notes -->
@@ -179,6 +185,14 @@ If no recognized module system is present, access bundle contents via the global
 <!-- /.examples -->
 
 <section class="links">
+
+[stdlib]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/emoji]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets/emoji
+
+[@stdlib/datasets/emoji-code-picto]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets/emoji-code-picto
+
+[@stdlib/datasets/emoji-picto-code]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets/emoji-picto-code
 
 [umd]: https://github.com/umdjs/umd
 
