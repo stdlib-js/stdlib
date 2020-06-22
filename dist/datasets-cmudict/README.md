@@ -139,6 +139,8 @@ var data = cmudict( opts );
 
 <!-- /.usage -->
 
+* * *
+
 <section class="notes">
 
 ## Notes
@@ -164,6 +166,8 @@ var data = cmudict( opts );
 </section>
 
 <!-- /.notes -->
+
+* * *
 
 <section class="examples">
 
