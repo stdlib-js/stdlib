@@ -155,7 +155,7 @@ var img = images.IMG_NAGASAKI_BOATS();
     -   [@stdlib/datasets/img-acanthus-mollis][@stdlib/datasets/img-acanthus-mollis]
     -   [@stdlib/datasets/img-airplane-from-above][@stdlib/datasets/img-airplane-from-above]
     -   [@stdlib/datasets/img-allium-oreophilum][@stdlib/datasets/img-allium-oreophilum]
-    -   [@stdlib/datasets/mg-black-canyon][@stdlib/datasets/mg-black-canyon]
+    -   [@stdlib/datasets/img-black-canyon][@stdlib/datasets/img-black-canyon]
     -   [@stdlib/datasets/img-dust-bowl-home][@stdlib/datasets/img-dust-bowl-home]
     -   [@stdlib/datasets/img-french-alpine-landscape][@stdlib/datasets/img-french-alpine-landscape]
     -   [@stdlib/datasets/img-locomotion-house-cat][@stdlib/datasets/img-locomotion-house-cat]
