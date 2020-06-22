@@ -63,6 +63,8 @@ In addition, for those emoji supporting skin tones, an element may have the foll
 
 -   **skin_tones**: an `array` of skin tone modifiers based on the Fitzpatrick scale; e.g., `'skin-tone-2'`.
 
+* * *
+
 #### emoji.EMOJI_CODE_PICTO()
 
 Returns an object mapping emoji codes to pictographs.
@@ -79,6 +81,8 @@ p = t[ ':unicorn:' ];
 ```
 
 The returned object only contains emoji presentation pictographs.
+
+* * *
 
 #### emoji.EMOJI_PICTO_CODE()
 
@@ -101,6 +105,8 @@ Some emoji pictographs may have **multiple** applicable codes.
 
 <!-- /.usage -->
 
+* * *
+
 <section class="notes">
 
 ## Notes
@@ -122,6 +128,8 @@ Some emoji pictographs may have **multiple** applicable codes.
 </section>
 
 <!-- /.notes -->
+
+* * *
 
 <section class="examples">
 
