@@ -132,7 +132,7 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
     // If no recognized module system present, exposed to global scope:
-    var dataset = stdlib_datasets_cmudict.FIVETHIRTYEIGHT_FFQ;
+    var dataset = stdlib_datasets_fivethirtyeight_ffq.FIVETHIRTYEIGHT_FFQ;
     console.log( dataset() );
 </script>
 ```
