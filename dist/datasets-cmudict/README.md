@@ -189,7 +189,7 @@ console.dir( cmudict( opts ) );
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="/path/to/@stdlib/dist-datasets-cmudict/bundle.min.js"></script>
+<script type="text/javascript" src="/path/to/@stdlib/dist-datasets-cmudict/build/bundle.min.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope.
