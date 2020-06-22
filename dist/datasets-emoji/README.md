@@ -33,7 +33,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var emoji = require( '@stdlib/datasets/emoji' );
+var emoji = require( '@stdlib/dist-datasets-emoji' );
 ```
 
 #### emoji.EMOJI()
@@ -118,7 +118,7 @@ Some emoji pictographs may have **multiple** applicable codes.
 -   While you are **strongly** encouraged to **vendor** bundles and host with a [CDN][cdn]/provider which can provide availability **guarantees**, especially for production applications, bundles are available via [unpkg][unpkg] for quick demos, proof-of-concepts, and instructional material. For example,
 
     ```html
-    <script type="text/javascript" src="https://unpkg.com/@stdlib/dist-emoji/build/bundle.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@stdlib/dist-datasets-emoji/build/bundle.min.js"></script>
     ```
 
     Please be mindful that [unpkg][unpkg] is a free, best-effort service relying on donated infrastructure which does **not** provide **any** availability guarantees. Under **no** circumstances should you **abuse** or **misuse** the service. You have been **warned**.
@@ -139,7 +139,7 @@ Some emoji pictographs may have **multiple** applicable codes.
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var emoji = require( '@stdlib/dist-emoji' );
+var emoji = require( '@stdlib/dist-datasets-emoji' );
 
 var data;
 var len;
@@ -161,7 +161,7 @@ for ( i = 0; i < 100; i++ ) {
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="/path/to/@stdlib/dist-emoji/build/bundle.min.js"></script>
+<script type="text/javascript" src="/path/to/@stdlib/dist-datasets-emoji/build/bundle.min.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope.
