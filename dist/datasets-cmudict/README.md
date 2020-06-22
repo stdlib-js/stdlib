@@ -163,6 +163,10 @@ var data = cmudict( opts );
 
 -   If you intend on embedding a standalone bundle **within** another bundle, you may need to rename `require` calls within the standalone bundle **before** bundling in order to maintain scoped module resolution. For example, if you plan on using [browserify][browserify] to generate a bundle containing embedded bundles, [browserify][browserify] plugins exist to "de-require" those bundles prior to bundling.
 
+-   The bundles in this package expose the following [stdlib][stdlib] packages:
+
+    -   [@stdlib/datasets/cmudict][@stdlib/datasets/cmudict]
+
 </section>
 
 <!-- /.notes -->
@@ -211,6 +215,10 @@ If no recognized module system is present, access bundle contents via the global
 <!-- /.examples -->
 
 <section class="links">
+
+[stdlib]: https://github.com/stdlib-js/stdlib
+
+[@stdlib/datasets/cmudict]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets/cmudict
 
 [cmudict]: http://www.speech.cs.cmu.edu/cgi-bin/cmudict#about
 
