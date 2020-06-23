@@ -123,6 +123,10 @@ If no recognized module system is present, access bundle contents via the global
 
 [@stdlib/namespace]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/namespace
 
+[@stdlib/repl]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/repl
+
+[@stdlib/datasets]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/datasets
+
 [umd]: https://github.com/umdjs/umd
 
 [gzip]: https://en.wikipedia.org/wiki/Gzip
