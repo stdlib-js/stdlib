@@ -102,6 +102,7 @@ Provides an interface to the dataset aliased according to `name`. Supported data
 var objectKeys = require( '@stdib/utils/keys' );
 
 var props = objectKeys( datasets );
+// returns [ ... ]
 ```
 
 or by reading the [`@stdlib/datasets`][@stdlib/datasets] documentation.
