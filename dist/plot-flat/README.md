@@ -36,7 +36,7 @@ limitations under the License.
 var plot = require( '@stdlib/dist-plot-flat' ).plot;
 ```
 
-#### plot( \[x, y] \[options] )
+#### plot( \[x, y,] \[options] )
 
 Returns a [`plot`][@stdlib/plot/ctor] instance for creating 2-dimensional plots.
 
