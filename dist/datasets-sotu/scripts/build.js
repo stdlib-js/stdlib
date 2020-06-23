@@ -27,21 +27,7 @@
 var resolve = require( 'path' ).resolve;
 var mkdirp = require( 'mkdirp' ).sync;
 var createBundle = require( '@stdlib/_tools/bundle/bundlify' );
-
-
-// VARIABLES //
-
-// Define the bundle:
-var BUNDLE = {
-	'name': 'bundle',
-	'standalone': 'stdlib_datasets_sotu',
-	'namespace': 'flat',
-	'raw': false,
-	'minified': true,
-	'include': [
-		'@stdlib/datasets/sotu'
-	]
-};
+var BUNDLE = require( './../bundle.js' );
 
 
 // FUNCTIONS //

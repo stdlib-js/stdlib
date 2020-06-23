@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
 * @license Apache-2.0
 *
@@ -18,44 +16,23 @@
 * limitations under the License.
 */
 
-/* eslint-disable stdlib/doctest */
-
 'use strict';
-
-// MODULES //
-
-var resolve = require( 'path' ).resolve;
-var mkdirp = require( 'mkdirp' ).sync;
-var createBundle = require( '@stdlib/_tools/bundle/bundlify' );
-var BUNDLE = require( './../bundle.js' );
-
-
-// FUNCTIONS //
-
-/**
-* Callback invoked upon generating a bundle.
-*
-* @private
-* @param {Error} [error] - error object
-*/
-function done( error ) {
-	if ( error ) {
-		throw error;
-	}
-}
-
 
 // MAIN //
 
-/**
-* Main execution sequence.
-*
-* @private
-*/
-function main() {
-	var outDir = resolve( __dirname, '..', 'build' );
-	mkdirp( outDir );
-	createBundle( outDir, BUNDLE, done );
-}
+// Define the bundle:
+var BUNDLE = {
+	'name': 'bundle',
+	'standalone': 'stdlib_datasets_spam_assassin',
+	'namespace': 'flat',
+	'raw': false,
+	'minified': true,
+	'include': [
+		'@stdlib/datasets/spam-assassin'
+	]
+};
 
-main();
+
+// EXPORTS //
+
+module.exports = BUNDLE;

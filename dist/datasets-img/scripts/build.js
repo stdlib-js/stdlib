@@ -27,30 +27,7 @@
 var resolve = require( 'path' ).resolve;
 var mkdirp = require( 'mkdirp' ).sync;
 var createBundle = require( '@stdlib/_tools/bundle/bundlify' );
-
-
-// VARIABLES //
-
-// Define the bundle:
-var BUNDLE = {
-	'name': 'bundle',
-	'standalone': 'stdlib_datasets_img',
-	'namespace': 'flat',
-	'raw': false,
-	'minified': true,
-	'include': [
-		'@stdlib/datasets/img-acanthus-mollis',
-		'@stdlib/datasets/img-airplane-from-above',
-		'@stdlib/datasets/img-allium-oreophilum',
-		'@stdlib/datasets/img-black-canyon',
-		'@stdlib/datasets/img-dust-bowl-home',
-		'@stdlib/datasets/img-french-alpine-landscape',
-		'@stdlib/datasets/img-locomotion-house-cat',
-		'@stdlib/datasets/img-locomotion-nude-male',
-		'@stdlib/datasets/img-march-pastoral',
-		'@stdlib/datasets/img-nagasaki-boats'
-	]
-};
+var BUNDLE = require( './../bundle.js' );
 
 
 // FUNCTIONS //

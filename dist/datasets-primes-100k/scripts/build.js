@@ -27,21 +27,7 @@
 var resolve = require( 'path' ).resolve;
 var mkdirp = require( 'mkdirp' ).sync;
 var createBundle = require( '@stdlib/_tools/bundle/bundlify' );
-
-
-// VARIABLES //
-
-// Define the bundle:
-var BUNDLE = {
-	'name': 'bundle',
-	'standalone': 'stdlib_datasets_primes_100k',
-	'namespace': 'flat',
-	'raw': false,
-	'minified': true,
-	'include': [
-		'@stdlib/datasets/primes-100k'
-	]
-};
+var BUNDLE = require( './../bundle.js' );
 
 
 // FUNCTIONS //
