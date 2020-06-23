@@ -33,7 +33,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var base = require( '@stdlib/dist-math-base-special-flat' );
+var base = require( '@stdlib/dist-math-base-special-flat' ).base;
 ```
 
 #### base.&lt;name&gt;( \[...args] )
