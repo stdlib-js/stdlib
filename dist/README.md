@@ -38,7 +38,7 @@ This directory contains packages exporting distributable files for use in browse
 
 ## Usage
 
-First, install one of packages in this directory containing distributable files. For example, to install the main [stdlib][stdlib] bundle
+First, install one of the packages in this directory containing distributable files. For example, to install the main [stdlib][stdlib] bundle
 
 ```bash
 $ npm install --save @stdlib/dist-flat
