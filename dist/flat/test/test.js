@@ -33,7 +33,6 @@ tape( 'main export is an object', function test( t ) {
 });
 
 tape( 'the object exposes a "flat" namespace', function test( t ) {
-	t.equal( typeof bundle, 'object', 'main export is an object' );
 	t.equal( typeof bundle.base, 'object', 'has member' );
 	t.equal( bundle.base.sin( 3.14 ), 0.0015926529164868282, 'returns expected value' );
 	t.end();
