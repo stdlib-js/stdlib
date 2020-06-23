@@ -145,6 +145,8 @@ If no recognized module system is present, access bundle contents via the global
 
 [@stdlib/math/base/special/erf]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special/erf
 
+[@stdlib/stats/base/dists/normal/pdf]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/base/dists/normal/pdf
+
 [umd]: https://github.com/umdjs/umd
 
 [gzip]: https://en.wikipedia.org/wiki/Gzip
