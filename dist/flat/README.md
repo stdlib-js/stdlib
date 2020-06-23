@@ -72,9 +72,9 @@ Lower-level interfaces which are often tailored to particular argument types and
 
 -   The bundles in this package expose all **browser-compatible** [stdlib][stdlib] packages, **except** the following:
 
-    -   [`@stdlib/repl`][@stdlib/repl]: REPL environment.
-    -   [`@stdlib/namespace`][@stdlib/namespace]: global alias namespace.
-    -   [`@stdlib/datasets/*`][@stdlib/datasets]: datasets.
+    -   [@stdlib/repl][@stdlib/repl]: REPL environment.
+    -   [@stdlib/namespace][@stdlib/namespace]: global alias namespace.
+    -   [@stdlib/datasets/*][@stdlib/datasets]: datasets.
 
     The excluded packages can significantly inflate bundle size, and, if desired, should be bundled and sourced separately.
 
