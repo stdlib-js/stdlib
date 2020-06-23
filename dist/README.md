@@ -38,8 +38,16 @@ This directory contains packages exporting distributable files for use in browse
 
 ## Usage
 
+First, install a distributable package. For example, to install the main [stdlib][stdlib] bundle
+
+```bash
+$ npm install --save @stdlib/dist-flat
+```
+
+To use a bundle in a webpage,
+
 ```html
-<script type="text/javascript" src="/path/to/@stdlib/dist-<pkg>/build/<bundle>.js"></script>
+<script type="text/javascript" src="/path/to/node_modules/@stdlib/dist-<pkg>/build/<bundle>.js"></script>
 ```
 
 where `dist-<pkg>` corresponds to the desired published distributable file package and `<bundle>` corresponds to the desired bundle. For example, to include the main un-minified bundle exposing a flat namespace
@@ -101,6 +109,8 @@ If no recognized module system is present, access bundle contents via the global
 [unpkg]: https://unpkg.com/#/
 
 [browserify]: https://github.com/browserify/browserify
+
+[stdlib]: https://github.com/stdlib-js/stdlib
 
 [@stdlib/namespace]: https://github.com/stdlib-js/stdlib
 
