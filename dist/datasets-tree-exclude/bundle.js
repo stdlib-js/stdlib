@@ -29,6 +29,8 @@ var BUNDLE = {
 	'minified': true,
 	'include': [
 		// WARNING: this list is fragile, as we must manually update the list of what to include as the namespace changes.
+
+		// TODO: we should be able to programmatically generate this list by reading the `bundle.js` files in the various datasets bundle packages, deriving the list of datasets in those packages, and then taking the complement to arrive at this list
 		'@stdlib/datasets/afinn-111',
 		'@stdlib/datasets/afinn-96',
 		'@stdlib/datasets/anscombes-quartet',
