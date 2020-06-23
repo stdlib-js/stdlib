@@ -66,7 +66,7 @@ To discover supported arguments for each iterator API, consult the documentation
 
 ## Notes
 
--   A `flat` namespace uses the global alias [namespace][@stdlib/namespace], where each package has a unique alias (e.g., `iterators.iterErf`).
+-   This package contains bundles exposing a `flat` namespace. A `flat` namespace uses the global alias [namespace][@stdlib/namespace], where each package has a unique alias (e.g., `iterators.iterErf`).
 
 -   This package contains distributable files for use in browser environments or as shared ("vendored") libraries in server environments. Each distributable file is a standalone [UMD][umd] bundle which, if no recognized module system is present, will expose bundle contents to the global scope.
 
