@@ -44,13 +44,21 @@ First, install one of packages in this directory containing distributable files.
 $ npm install --save @stdlib/dist-flat
 ```
 
-To use a bundle in a webpage,
+To use a package's default bundle in a webpage,
+
+```html
+<script type="text/javascript" src="/path/to/node_modules/@stdlib/dist-<pkg>"></script>
+```
+
+where `dist-<pkg>` corresponds to the desired published distributable file package.
+
+To use a specific bundle (e.g., un-minified), include the bundle file path
 
 ```html
 <script type="text/javascript" src="/path/to/node_modules/@stdlib/dist-<pkg>/build/<bundle>.js"></script>
 ```
 
-where `dist-<pkg>` corresponds to the desired published distributable file package and `<bundle>` corresponds to the desired bundle. For example, to include the main un-minified bundle exposing a flat namespace
+where `<bundle>` corresponds to the desired bundle. For example, to include the un-minified bundle found in the package used in the example above
 
 ```html
 <script type="text/javascript" src="/path/to/@stdlib/dist-flat/build/bundle.js"></script>
