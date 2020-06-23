@@ -68,6 +68,8 @@ To discover supported arguments for each exposed API, consult the documentation 
 
 -   This package contains bundles exposing a `flat` namespace. A `flat` namespace uses the global alias [namespace][@stdlib/namespace], where each package has a unique alias (e.g., `base.erf`).
 
+-   Note that functions elide argument validation and error handling, so use these functions with care. Their use can be beneficial in performance sensitive contexts where argument types and formats are known and tested in advance.
+
 -   This package contains distributable files for use in browser environments or as shared ("vendored") libraries in server environments. Each distributable file is a standalone [UMD][umd] bundle which, if no recognized module system is present, will expose bundle contents to the global scope.
 
 -   Each minified bundle has a corresponding [gzip][gzip]-compressed bundle. The [gzip][gzip] compression level for each compressed bundle is `9`, which is the highest (and most optimal) compression level. Deciding between uncompressed and compressed bundles depends on the application and whether compression is handled elsewhere in the application stack (e.g., [nginx][nginx], [CDN][cdn], _et cetera_).
