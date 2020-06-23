@@ -66,7 +66,7 @@ var txt = help( 'base.sin' );
 -   While you are **strongly** encouraged to **vendor** bundles and host with a [CDN][cdn]/provider which can provide availability **guarantees**, especially for production applications, bundles are available via [unpkg][unpkg] for quick demos, proof-of-concepts, and instructional material. For example,
 
     ```html
-    <script type="text/javascript" src="https://unpkg.com/@stdlib/dist-flat-help/build/bundle.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@stdlib/dist-flat-help"></script>
     ```
 
     Please be mindful that [unpkg][unpkg] is a free, best-effort service relying on donated infrastructure which does **not** provide **any** availability guarantees. Under **no** circumstances should you **abuse** or **misuse** the service. You have been **warned**.
