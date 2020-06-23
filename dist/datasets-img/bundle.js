@@ -28,6 +28,7 @@ var BUNDLE = {
 	'raw': false,
 	'minified': true,
 	'include': [
+		// TODO: we should be able to programmatically generate this list based on naming conventions
 		'@stdlib/datasets/img-acanthus-mollis',
 		'@stdlib/datasets/img-airplane-from-above',
 		'@stdlib/datasets/img-allium-oreophilum',
