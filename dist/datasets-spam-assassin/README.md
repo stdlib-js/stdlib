@@ -106,7 +106,7 @@ The `checksum` object contains the following fields:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var corpus = require( '@stdlib/dist-datasets-spam-assassin' );
+var corpus = require( '@stdlib/dist-datasets-spam-assassin' ).SPAM_ASSASSIN;
 
 var data;
 var i;
