@@ -72,7 +72,7 @@ dist-bundles-publish: $(NODE_MODULES) dist-bundles
 		echo ""; \
 		echo "Publishing package: $$pkg"; \
 		cd $$pkg; \
-		$(NPM) publish --access public --dry-run || exit 1; \
+		$(NPM) publish --access public || exit 1; \
 	done
 	$(QUIET) echo 'Finished publishing packages.'
 
