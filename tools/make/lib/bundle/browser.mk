@@ -22,10 +22,6 @@
 DIST_PKG_DIRS ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
 	$(DIST_DIR)/scripts/bundle_dirs.js
 
-# Define the command for listing build scripts for generating distributable bundles:
-DIST_BUILD_SCRIPTS ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
-	$(DIST_DIR)/scripts/bundle_scripts.js
-
 # Define the command for updating distributable package versions:
 DIST_UPDATE_VERSIONS ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
 	$(DIST_DIR)/scripts/update_versions.js
@@ -43,13 +39,13 @@ DIST_VERIFY_VERSIONS ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
 # @example
 # make dist-bundles
 #/
-dist-bundles: $(NODE_MODULES) clean-dist
+dist-bundles: $(NODE_MODULES)
 	$(QUIET) echo 'Generating bundles...'
-	$(QUIET) $(DIST_BUILD_SCRIPTS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ""; \
-		echo "Running build script: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) $$file || exit 1; \
+		echo "Building: $$pkg"; \
+		cd $$pkg; \
+		$(MAKE) NODE_PATH="$(NODE_PATH)" || exit 1; \
 	done
 	$(QUIET) echo 'Compressing bundles...'
 	$(QUIET) for file in $(DIST_DIR)/*/build/*.min.js; do \
@@ -61,12 +57,12 @@ dist-bundles: $(NODE_MODULES) clean-dist
 .PHONY: dist-bundles
 
 #/
-# Publishes distributable bundles to the npm package registry.
+# Publishes packages containing distributable bundles to the npm package registry.
 #
 # @example
-# make publish-dist-bundles
+# make dist-bundles-publish
 #/
-publish-dist-bundles: $(NODE_MODULES) dist-bundles
+dist-bundles-publish: $(NODE_MODULES) dist-bundles
 	$(QUIET) echo 'Updating package versions...'
 	$(QUIET) $(DIST_UPDATE_VERSIONS)
 	$(QUIET) echo 'Verifying package versions...'
@@ -76,11 +72,31 @@ publish-dist-bundles: $(NODE_MODULES) dist-bundles
 		echo ""; \
 		echo "Publishing package: $$pkg"; \
 		cd $$pkg; \
-		$(NPM) publish --access public || exit 1; \
+		$(NPM) publish --access public --dry-run || exit 1; \
 	done
 	$(QUIET) echo 'Finished publishing packages.'
 
-.PHONY: publish-dist-bundles
+.PHONY: dist-bundles-publish
+
+#/
+# Performs a dry run of publishing packages containing distributable bundles to the npm package registry.
+#
+# @example
+# make dist-bundles-publish-dry-run
+#/
+dist-bundles-publish-dry-run: $(NODE_MODULES)
+	$(QUIET) echo '(dry run) Verifying package versions...'
+	$(QUIET) $(DIST_VERIFY_VERSIONS)
+	$(QUIET) echo '(dry run) Publishing packages...'
+	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
+		echo ""; \
+		echo "(dry run) Publishing package: $$pkg"; \
+		cd $$pkg; \
+		$(NPM) publish --access public --dry-run || exit 1; \
+	done
+	$(QUIET) echo '(dry run) Finished publishing packages.'
+
+.PHONY: dist-bundles-publish-dry-run
 
 #/
 # Removes distributable bundle build artifacts.
@@ -93,7 +109,8 @@ clean-dist:
 	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ""; \
 		echo "Removing build artifacts for package: $$pkg"; \
-		rm -rf $$pkg/build || exit 1; \
+		cd $$pkg; \
+		$(MAKE) clean; \
 	done
 	$(QUIET) echo 'Finished removing build artifacts.'
 
