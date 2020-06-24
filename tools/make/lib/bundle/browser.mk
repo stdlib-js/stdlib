@@ -54,7 +54,7 @@ dist-bundles: $(NODE_MODULES) clean-dist
 	$(QUIET) echo 'Compressing bundles...'
 	$(QUIET) for file in $(DIST_DIR)/*/build/*.min.js; do \
 		echo "Compressing file: $$file"; \
-		$(GZIP) "$$file" -9 -c > "$$file".gz; \
+		$(GZIP) "$$file" -9 -c > "$$file".gz || exit 1; \
 	done
 	$(QUIET) echo 'Generated bundles.'
 
