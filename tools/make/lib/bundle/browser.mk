@@ -102,9 +102,9 @@ dist-bundles-publish-dry-run: $(NODE_MODULES)
 # Removes distributable bundle build artifacts.
 #
 # @example
-# make clean-dist
+# make clean-dist-bundles
 #/
-clean-dist:
+clean-dist-bundles:
 	$(QUIET) echo 'Removing build artifacts...'
 	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ""; \
@@ -114,4 +114,4 @@ clean-dist:
 	done
 	$(QUIET) echo 'Finished removing build artifacts.'
 
-.PHONY: clean-dist
+.PHONY: clean-dist-bundles
