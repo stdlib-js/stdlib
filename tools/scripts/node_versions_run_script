@@ -36,7 +36,7 @@
 # VARIABLES #
 
 # Define the Node.js versions:
-versions=(0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 node)
+versions=(0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 node)
 
 # Set a flag indicating whether to perform a fresh install of node module dependencies for each Node.js version:
 install_deps=false
