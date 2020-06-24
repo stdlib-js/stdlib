@@ -43,7 +43,7 @@ DIST_VERIFY_VERSIONS ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
 # @example
 # make dist-bundles
 #/
-dist-bundles: $(NODE_MODULES)
+dist-bundles: $(NODE_MODULES) clean-dist
 	$(QUIET) echo 'Generating distributable bundles...'
 	$(QUIET) $(DIST_BUILD_SCRIPTS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
@@ -64,7 +64,7 @@ dist-bundles: $(NODE_MODULES)
 # @example
 # make publish-dist-bundles
 #/
-publish-dist-bundles: $(NODE_MODULES)
+publish-dist-bundles: dist-bundles
 	$(QUIET) $(DIST_UPDATE_VERSIONS)
 	$(QUIET) $(DIST_VERIFY_VERSIONS)
 	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
@@ -74,5 +74,19 @@ publish-dist-bundles: $(NODE_MODULES)
 		$(NPM) publish --access public || exit 1; \
 	done
 
-
 .PHONY: publish-dist-bundles
+
+#/
+# Removes distributable bundle build artifacts.
+#
+# @example
+# make clean-dist
+#/
+clean-dist:
+	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
+		echo ""; \
+		echo "Removing build artifacts for package: $$pkg"; \
+		rm -rf $$pkg/build || exit 1; \
+	done
+
+.PHONY: clean-dist
