@@ -25,7 +25,6 @@ else
 endif
 
 # Define the command for `node`:
-node := $(NODE)
 ifdef NODE
 	node := $(NODE)
 else
