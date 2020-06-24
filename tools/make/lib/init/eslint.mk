@@ -28,7 +28,7 @@ stdlib_custom_eslint_rules_plugin_name := eslint-plugin-stdlib
 stdlib_custom_eslint_rules_plugin_out := $(NODE_MODULES)/$(stdlib_custom_eslint_rules_plugin_name)
 
 # Define the contents of the custom ESLint rules plugin `package.json`:
-stdlib_custom_eslint_rules_plugin_package_json := '{"name":"@stdlib/PLUGIN_NAME","version":"0.0.0","main":"index.js"}'
+stdlib_custom_eslint_rules_plugin_package_json := '{"name":"PLUGIN_NAME","version":"0.0.0","main":"index.js"}'
 stdlib_custom_eslint_rules_plugin_package_json := $(subst PLUGIN_NAME,$(stdlib_custom_eslint_rules_plugin_name),$(stdlib_custom_eslint_rules_plugin_package_json))
 
 # Define the build output prerequisites:
