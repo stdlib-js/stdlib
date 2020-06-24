@@ -45,7 +45,7 @@ dist-bundles: $(NODE_MODULES)
 		echo ""; \
 		echo "Building: $$pkg"; \
 		cd $$pkg; \
-		$(MAKE) NODE_PATH="$(NODE_PATH)" || exit 1; \
+		$(MAKE) NODE="$(NODE)" NODE_PATH="$(NODE_PATH)" || exit 1; \
 	done
 	$(QUIET) echo 'Compressing bundles...'
 	$(QUIET) for file in $(DIST_DIR)/*/build/*.min.js; do \
@@ -110,7 +110,7 @@ clean-dist:
 		echo ""; \
 		echo "Removing build artifacts for package: $$pkg"; \
 		cd $$pkg; \
-		$(MAKE) clean; \
+		$(MAKE) NODE="$(NODE)" NODE_PATH="$(NODE_PATH)" clean; \
 	done
 	$(QUIET) echo 'Finished removing build artifacts.'
 
