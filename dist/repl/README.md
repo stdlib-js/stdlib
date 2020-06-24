@@ -33,7 +33,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var repl = require( '@stdlib/dist-repl' );
+var repl = require( '@stdlib/dist-repl' ).repl;
 ```
 
 #### repl( ctx )
