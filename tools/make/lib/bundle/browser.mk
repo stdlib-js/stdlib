@@ -64,7 +64,7 @@ dist-bundles: $(NODE_MODULES) clean-dist
 # @example
 # make publish-dist-bundles
 #/
-publish-dist-bundles: dist-bundles
+publish-dist-bundles: $(NODE_MODULES) dist-bundles
 	$(QUIET) $(DIST_UPDATE_VERSIONS)
 	$(QUIET) $(DIST_VERIFY_VERSIONS)
 	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
