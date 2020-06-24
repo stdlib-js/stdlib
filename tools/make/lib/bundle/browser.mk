@@ -56,7 +56,7 @@ dist-bundles: $(NODE_MODULES) clean-dist
 		echo "Compressing file: $$file"; \
 		$(GZIP) "$$file" -9 -c > "$$file".gz || exit 1; \
 	done
-	$(QUIET) echo 'Generated bundles.'
+	$(QUIET) echo 'Finished generating bundles.'
 
 .PHONY: dist-bundles
 
@@ -78,7 +78,7 @@ publish-dist-bundles: $(NODE_MODULES) dist-bundles
 		cd $$pkg; \
 		$(NPM) publish --access public || exit 1; \
 	done
-	$(QUIET) echo 'Published packages.'
+	$(QUIET) echo 'Finished publishing packages.'
 
 .PHONY: publish-dist-bundles
 
@@ -95,6 +95,6 @@ clean-dist:
 		echo "Removing build artifacts for package: $$pkg"; \
 		rm -rf $$pkg/build || exit 1; \
 	done
-	$(QUIET) echo 'Removed build artifacts.'
+	$(QUIET) echo 'Finished removing build artifacts.'
 
 .PHONY: clean-dist
