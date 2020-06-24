@@ -44,17 +44,19 @@ DIST_VERIFY_VERSIONS ?= NODE_PATH="$(NODE_PATH)" $(NODE) \
 # make dist-bundles
 #/
 dist-bundles: $(NODE_MODULES) clean-dist
-	$(QUIET) echo 'Generating distributable bundles...'
+	$(QUIET) echo 'Generating bundles...'
 	$(QUIET) $(DIST_BUILD_SCRIPTS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Running build script: $$file"; \
 		NODE_PATH="$(NODE_PATH)" \
 		$(NODE) $$file || exit 1; \
 	done
+	$(QUIET) echo 'Compressing bundles...'
 	$(QUIET) for file in $(DIST_DIR)/*/build/*.min.js; do \
 		echo "Compressing file: $$file"; \
 		$(GZIP) "$$file" -9 -c > "$$file".gz; \
 	done
+	$(QUIET) echo 'Generated bundles.'
 
 .PHONY: dist-bundles
 
@@ -65,14 +67,18 @@ dist-bundles: $(NODE_MODULES) clean-dist
 # make publish-dist-bundles
 #/
 publish-dist-bundles: $(NODE_MODULES) dist-bundles
+	$(QUIET) echo 'Updating package versions...'
 	$(QUIET) $(DIST_UPDATE_VERSIONS)
+	$(QUIET) echo 'Verifying package versions...'
 	$(QUIET) $(DIST_VERIFY_VERSIONS)
+	$(QUIET) echo 'Publishing packages...'
 	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ""; \
 		echo "Publishing package: $$pkg"; \
 		cd $$pkg; \
 		$(NPM) publish --access public || exit 1; \
 	done
+	$(QUIET) echo 'Published packages.'
 
 .PHONY: publish-dist-bundles
 
@@ -83,10 +89,12 @@ publish-dist-bundles: $(NODE_MODULES) dist-bundles
 # make clean-dist
 #/
 clean-dist:
+	$(QUIET) echo 'Removing build artifacts...'
 	$(QUIET) $(DIST_PKG_DIRS) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ""; \
 		echo "Removing build artifacts for package: $$pkg"; \
 		rm -rf $$pkg/build || exit 1; \
 	done
+	$(QUIET) echo 'Removed build artifacts.'
 
 .PHONY: clean-dist
