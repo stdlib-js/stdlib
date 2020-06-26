@@ -396,7 +396,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
-[stdlib-source]: https://github.com/stdlib-js/stdlib
+[stdlib-source]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib
 
 [stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
 
