@@ -390,9 +390,9 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stdlib/develop/LICENSE
 
-[stdlib-homepage]: https://github.com/stdlib-js/stdlib
+[stdlib-homepage]: https://stdlib.io
 
-[stdlib-documentation]: https://github.com/stdlib-js/stdlib
+[stdlib-documentation]: https://stdlib.io/docs/api
 
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
