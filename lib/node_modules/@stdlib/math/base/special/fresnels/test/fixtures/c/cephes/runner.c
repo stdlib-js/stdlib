@@ -26,9 +26,6 @@
 */
 #include <stdlib.h>
 #include <stdio.h>
-#include <unistd.h>
-#include <math.h>
-#include <sys/time.h>
 
 /**
 * Define prototypes for external functions.
