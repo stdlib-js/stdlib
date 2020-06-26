@@ -104,7 +104,7 @@ run_lint() {
 	# Lint Markdown files...
 	files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
-		make GIT_DIR="${root}/$GIT_DIR" FILES="${files}" lint-markdown-files > /dev/null >&2
+		make FILES="${files}" lint-markdown-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Markdown lint errors.' >&2

@@ -18,10 +18,12 @@
 
 'use strict';
 
+// MAIN //
+
 var plugins = [];
 
 plugins = plugins.concat( require( './lint/jsdoc.js' ) );
-plugins = plugins.concat( require( './lint-equations' ) );
+plugins.push( require( './lint-equations' ) );
 
 
 // EXPORTS //

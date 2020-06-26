@@ -26,10 +26,10 @@ var plugin = [ require( 'remark-validate-links' ) ];
 /**
 * Reference repository.
 *
-* @see [repository]{@link https://github.com/wooorm/remark-validate-links#configuration}
+* @see [repository]{@link https://github.com/remarkjs/remark-validate-links#configuration}
 */
 plugin.push({
-	'repository': ''
+	'repository': 'stdlib-js/stdlib'
 });
 
 

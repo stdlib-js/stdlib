@@ -34,7 +34,7 @@ var lint = resolve( etc, '..', 'lib', 'node_modules', '@stdlib', '_tools', 'rema
 /**
 * Plugin.
 */
-var plugin = [ [ require( lint ), [ 'error' ] ] ]; // eslint-disable-line stdlib/no-dynamic-require
+var plugin = [ require( lint ), [ 'error' ] ]; // eslint-disable-line stdlib/no-dynamic-require
 
 
 // EXPORTS //
