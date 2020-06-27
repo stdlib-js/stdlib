@@ -1,13 +1,5 @@
 <snippet>
-    <content><![CDATA[---
-name: 🚀 Feature Request
-about: I have a suggestion (and may want to help contribute 🙂)!
-
----
-
-<!--lint disable first-heading-level-->
-
-## Checklist
+    <content><![CDATA[## Checklist
 
 > Please ensure the following tasks are completed before submitting a feature request.
 
