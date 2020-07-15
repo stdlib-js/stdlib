@@ -93,6 +93,16 @@ where `-F` indicates to search for a fixed string. To search using a regular exp
 
 ### Find and Replace
 
+#### Exclusion
+
+To exclude paths when using `find`, use membership inversion 
+
+```bash
+$ find -type f -name foo.txt -regextype posix-extended -regex '.*/foo/([^b]+|(b([^a]|$)|ba([^r]|$)))+/.*'
+```
+
+Note that, when passing the above regular expression through Make, the `$` symbol needs to be escaped (e.g., `$$`).
+
 #### Multi-file
 
 To perform a multi-file find and replace,
