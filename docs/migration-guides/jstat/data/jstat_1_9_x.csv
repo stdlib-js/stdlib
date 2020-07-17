@@ -226,7 +226,7 @@ ibeta,@stdlib/math/base/special/betainc
 gammafn,@stdlib/math/base/special/gamma
 gammaln,@stdlib/math/base/special/gammaln
 gammap,@stdlib/math/base/special/gammainc
-lowRegGamma,@stdlib/math/base/special/gamma
+lowRegGamma,@stdlib/math/base/special/gammainc
 gammapinv,@stdlib/math/base/special/gammaincinv
 factorialln,@stdlib/math/base/special/factorialln
 factorial,@stdlib/math/base/special/factorial
