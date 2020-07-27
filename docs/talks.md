@@ -24,48 +24,15 @@ limitations under the License.
 
 > Talks featuring stdlib.
 
-## 2016
+## 2019
 
-### Text Mining with Node.js
+### Open Source Directions: stdlib
 
-> [Philipp Burckhardt][planeshifter], Node.js Interactive Europe 2016
-
-<div class="image" align="center">
-    <a title="Text mining with Node.js" href="https://www.youtube.com/watch?v=r8XOIRebcBU">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5d74307be3b368b498679f3dfbdcbf58d7433d21/docs/assets/nodejs_interactive_2016_philipp_burckhardt.png" alt="Text Mining with Node.js at Node.js Interactive Europe 2016">
-    </a>
-    <br>
-</div>
-
-### Real Time Machine Learning with Node.js
-
-> [Philipp Burckhardt][planeshifter], EmpireNode 2016
+> [Athan Reines][kgryte] and [Philipp Burckhardt][planeshifter], Open Source Directions November 2019
 
 <div class="image" align="center">
-    <a "Real time machine learning with Node.js" href="https://www.youtube.com/watch?v=5Ad3TH8XGSI">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1d0f4c869dbc29b55339fc0561ca05bf385a06b5/docs/assets/empire_node_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at EmpireNode 2016">
-    </a>
-    <br>
-</div>
-
-### Math in V8 is Broken and How We Can Fix It
-
-> [Athan Reines][kgryte], Node.js Interactive US 2016
-
-<div class="image" align="center">
-    <a title="Mathin V8 is broken and how we can fix it" href="https://www.youtube.com/watch?v=03WhsgTpp7g">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_athan_reines.png" alt="Math in V8 is Broken and How We Can Fix It at Node.js Interactive US 2016">
-    </a>
-    <br>
-</div>
-
-### Real Time Machine Learning with Node.js
-
-> [Philipp Burckhardt][planeshifter], Node.js Interactive US 2016
-
-<div class="image" align="center">
-    <a "Real time machine learning with Node.js" href="https://www.youtube.com/watch?v=fK32__vlVAA">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
+    <a title="Open Source Directions: stdlib" href="https://www.youtube.com/watch?v=SYbp_dr8WWo">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/66d46fdc5aa64c904479c36c7ed3b069ecd7039d/docs/assets/talks/open_source_directions_november_2019.png" alt="Open Source Directions: stdlib (November 2019)">
     </a>
     <br>
 </div>
@@ -145,6 +112,52 @@ limitations under the License.
 <div class="image" align="center">
     <a title="Node.js Add-ons for High Performance Numeric Computing" href="https://www.youtube.com/watch?v=mnvfej28vjk&list=PLdrSld1u9v3bksRXRSmT5G0xSjzruRsVB&index=7">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/2e3bf1763efb19a6927349204f2d8a0c57488aff/docs/assets/talks/nodeconf_argentina_2017_athan_reines.png" alt="Node.js Add-ons for High Performance Numeric Computing at NodeConf Argentina 2017">
+    </a>
+    <br>
+</div>
+
+## 2016
+
+### Text Mining with Node.js
+
+> [Philipp Burckhardt][planeshifter], Node.js Interactive Europe 2016
+
+<div class="image" align="center">
+    <a title="Text mining with Node.js" href="https://www.youtube.com/watch?v=r8XOIRebcBU">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5d74307be3b368b498679f3dfbdcbf58d7433d21/docs/assets/nodejs_interactive_2016_philipp_burckhardt.png" alt="Text Mining with Node.js at Node.js Interactive Europe 2016">
+    </a>
+    <br>
+</div>
+
+### Real Time Machine Learning with Node.js
+
+> [Philipp Burckhardt][planeshifter], EmpireNode 2016
+
+<div class="image" align="center">
+    <a "Real time machine learning with Node.js" href="https://www.youtube.com/watch?v=5Ad3TH8XGSI">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1d0f4c869dbc29b55339fc0561ca05bf385a06b5/docs/assets/empire_node_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at EmpireNode 2016">
+    </a>
+    <br>
+</div>
+
+### Math in V8 is Broken and How We Can Fix It
+
+> [Athan Reines][kgryte], Node.js Interactive US 2016
+
+<div class="image" align="center">
+    <a title="Mathin V8 is broken and how we can fix it" href="https://www.youtube.com/watch?v=03WhsgTpp7g">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_athan_reines.png" alt="Math in V8 is Broken and How We Can Fix It at Node.js Interactive US 2016">
+    </a>
+    <br>
+</div>
+
+### Real Time Machine Learning with Node.js
+
+> [Philipp Burckhardt][planeshifter], Node.js Interactive US 2016
+
+<div class="image" align="center">
+    <a "Real time machine learning with Node.js" href="https://www.youtube.com/watch?v=fK32__vlVAA">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
     </a>
     <br>
 </div>
