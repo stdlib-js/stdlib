@@ -47,10 +47,10 @@ diff,(planned)
 rank,@stdlib/stats/ranks
 mode,(planned)
 range,@stdlib/stats/base/range
-variance,(planned)
+variance,@stdlib/stats/base/variance
 pooledvariance,N/A
 deviation,(planned)
-stdev,(planned)
+stdev,@stdlib/stats/base/stdev
 pooledstdev,N/A
 meandev,(planned)
 meddev,(planned)
