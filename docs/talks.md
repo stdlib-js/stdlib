@@ -32,7 +32,7 @@ limitations under the License.
 
 <div class="image" align="center">
     <a title="Open Source Directions: stdlib" href="https://www.youtube.com/watch?v=SYbp_dr8WWo">
-        <img src="" alt="Open Source Directions: stdlib (November 2019)">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/66d46fdc5aa64c904479c36c7ed3b069ecd7039d/docs/assets/open_source_directions_november_2019.png" alt="Open Source Directions: stdlib (November 2019)">
     </a>
     <br>
 </div>
