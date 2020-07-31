@@ -1,0 +1,255 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2020 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+<!--lint disable maximum-heading-length-->
+
+# dmeanstdevpn
+
+> Calculate the [mean][arithmetic-mean] and [standard deviation][standard-deviation] of a double-precision floating-point strided array using a two-pass algorithm.
+
+<section class="intro">
+
+The population [standard deviation][standard-deviation] of a finite size population of size `N` is given by
+
+<!-- <equation class="equation" label="eq:population_standard_deviation" align="center" raw="\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}" alt="Equation for the population standard deviation."> -->
+
+<div class="equation" align="center" data-raw-text="\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}" data-equation="eq:population_standard_deviation">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/8467ec3de1244d48205fbf95404ac53f957b4c5b/lib/node_modules/@stdlib/stats/base/dmeanstdevpn/docs/img/equation_population_standard_deviation.svg" alt="Equation for the population standard deviation.">
+    <br>
+</div>
+
+<!-- </equation> -->
+
+where the population mean is given by
+
+<!-- <equation class="equation" label="eq:population_mean" align="center" raw="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" alt="Equation for the population mean."> -->
+
+<div class="equation" align="center" data-raw-text="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" data-equation="eq:population_mean">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/8467ec3de1244d48205fbf95404ac53f957b4c5b/lib/node_modules/@stdlib/stats/base/dmeanstdevpn/docs/img/equation_population_mean.svg" alt="Equation for the population mean.">
+    <br>
+</div>
+
+<!-- </equation> -->
+
+Often in the analysis of data, the true population [standard deviation][standard-deviation] is not known _a priori_ and must be estimated from a sample drawn from the population distribution. If one attempts to use the formula for the population [standard deviation][standard-deviation], the result is biased and yields an **uncorrected sample standard deviation**. To compute a **corrected sample standard deviation** for a sample of size `n`,
+
+<!-- <equation class="equation" label="eq:corrected_sample_standard_deviation" align="center" raw="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}" alt="Equation for computing a corrected sample standard deviation."> -->
+
+<div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}" data-equation="eq:corrected_sample_standard_deviation">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/8467ec3de1244d48205fbf95404ac53f957b4c5b/lib/node_modules/@stdlib/stats/base/dmeanstdevpn/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for computing a corrected sample standard deviation.">
+    <br>
+</div>
+
+<!-- </equation> -->
+
+where the sample mean is given by
+
+<!-- <equation class="equation" label="eq:sample_mean" align="center" raw="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the sample mean."> -->
+
+<div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:sample_mean">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/8467ec3de1244d48205fbf95404ac53f957b4c5b/lib/node_modules/@stdlib/stats/base/dmeanstdevpn/docs/img/equation_sample_mean.svg" alt="Equation for the sample mean.">
+    <br>
+</div>
+
+<!-- </equation> -->
+
+The use of the term `n-1` is commonly referred to as Bessel's correction. Note, however, that applying Bessel's correction can increase the mean squared error between the sample standard deviation and population standard deviation. Depending on the characteristics of the population distribution, other correction factors (e.g., `n-1.5`, `n+1`, etc) can yield better estimators.
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var dmeanstdevpn = require( '@stdlib/stats/base/dmeanstdevpn' );
+```
+
+#### dmeanstdevpn( N, correction, x, strideX, out, strideOut )
+
+Computes the [mean][arithmetic-mean] and [standard deviation][standard-deviation] of a double-precision floating-point strided array `x` using a two-pass algorithm.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+var out = new Float64Array( 2 );
+
+var v = dmeanstdevpn( x.length, 1, x, 1, out, 1 );
+// returns <Float64Array>[ ~0.3333, ~2.0817 ]
+
+var bool = ( v === out );
+// returns true
+```
+
+The function has the following parameters:
+
+-   **N**: number of indexed elements.
+-   **correction**: degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [standard deviation][standard-deviation] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment. When computing the [standard deviation][standard-deviation] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the corrected sample [standard deviation][standard-deviation], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+-   **x**: input [`Float64Array`][@stdlib/array/float64].
+-   **strideX**: index increment for `x`.
+-   **out**: output [`Float64Array`][@stdlib/array/float64] for storing results.
+-   **strideOut**: index increment for `out`.
+
+The `N` and `stride` parameters determine which elements are accessed at runtime. For example, to compute the [standard deviation][standard-deviation] of every other element in `x`,
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var floor = require( '@stdlib/math/base/special/floor' );
+
+var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
+var out = new Float64Array( 2 );
+var N = floor( x.length / 2 );
+
+var v = dmeanstdevpn( N, 1, x, 2, out, 1 );
+// returns <Float64Array>[ 1.25, 2.5 ]
+```
+
+Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
+
+<!-- eslint-disable stdlib/capitalized-comments -->
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var floor = require( '@stdlib/math/base/special/floor' );
+
+var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
+var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+
+var out0 = new Float64Array( 4 );
+var out1 = new Float64Array( out0.buffer, out0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
+
+var N = floor( x0.length / 2 );
+
+var v = dmeanstdevpn( N, 1, x1, 2, out1, 1 );
+// returns <Float64Array>[ 1.25, 2.5 ]
+```
+
+#### dmeanstdevpn.ndarray( N, correction, x, strideX, offsetX, out, strideOut, offsetOut )
+
+Computes the [mean][arithmetic-mean] and [standard deviation][standard-deviation] of a double-precision floating-point strided array using a two-pass algorithm and alternative indexing semantics.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+
+var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+var out = new Float64Array( 2 );
+
+var v = dmeanstdevpn.ndarray( x.length, 1, x, 1, 0, out, 1, 0 );
+// returns <Float64Array>[ ~0.3333, ~2.0817 ]
+```
+
+The function has the following additional parameters:
+
+-   **offsetX**: starting index for `x`.
+-   **offsetOut**: starting index for `out`.
+
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameters support indexing semantics based on a starting index. For example, to calculate the [mean][arithmetic-mean] and [standard deviation][standard-deviation] for every other value in `x` starting from the second value
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var floor = require( '@stdlib/math/base/special/floor' );
+
+var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
+var out = new Float64Array( 4 );
+var N = floor( x.length / 2 );
+
+var v = dmeanstdevpn.ndarray( N, 1, x, 2, 1, out, 2, 1 );
+// returns <Float64Array>[ 0.0, 1.25, 0.0, 2.5 ]
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   If `N <= 0`, both functions return a [mean][arithmetic-mean] and [standard deviation][standard-deviation] equal to `NaN`.
+-   If `N - c` is less than or equal to `0` (where `c` corresponds to the provided degrees of freedom adjustment), both functions return a [standard deviation][standard-deviation] equal to `NaN`.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var randu = require( '@stdlib/random/base/randu' );
+var round = require( '@stdlib/math/base/special/round' );
+var Float64Array = require( '@stdlib/array/float64' );
+var dmeanstdevpn = require( '@stdlib/stats/base/dmeanstdevpn' );
+
+var out;
+var x;
+var i;
+
+x = new Float64Array( 10 );
+for ( i = 0; i < x.length; i++ ) {
+    x[ i ] = round( (randu()*100.0) - 50.0 );
+}
+console.log( x );
+
+out = new Float64Array( 2 );
+dmeanstdevpn( x.length, 1, x, 1, out, 1 );
+console.log( out );
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
+
+<section class="references">
+
+## References
+
+-   Neely, Peter M. 1966. "Comparison of Several Algorithms for Computation of Means, Standard Deviations and Correlation Coefficients." _Communications of the ACM_ 9 (7). Association for Computing Machinery: 496–99. doi:[10.1145/365719.365958][@neely:1966a].
+-   Schubert, Erich, and Michael Gertz. 2018. "Numerically Stable Parallel Computation of (Co-)Variance." In _Proceedings of the 30th International Conference on Scientific and Statistical Database Management_. New York, NY, USA: Association for Computing Machinery. doi:[10.1145/3221269.3223036][@schubert:2018a].
+
+</section>
+
+<!-- /.references -->
+
+<section class="links">
+
+[arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_mean
+
+[standard-deviation]: https://en.wikipedia.org/wiki/Standard_deviation
+
+[@stdlib/array/float64]: https://github.com/stdlib-js/stdlib
+
+[mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+
+[@neely:1966a]: https://doi.org/10.1145/365719.365958
+
+[@schubert:2018a]: https://doi.org/10.1145/3221269.3223036
+
+</section>
+
+<!-- /.links -->
