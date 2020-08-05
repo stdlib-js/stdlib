@@ -1,0 +1,103 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2020 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/**
+* Interface describing `dnannsum`.
+*/
+interface Routine {
+	/**
+	* Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values.
+	*
+	* @param N - number of indexed elements
+	* @param x - input array
+	* @param strideX - `x` stride length
+	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
+	* @param strideOut - `out` stride length
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+	* var out = new Float64Array( 2 );
+	*
+	* var v = dnannsum( x.length, x, 1, out, 1 );
+	* // returns <Float64Array>[ 1.0, 3 ]
+	*/
+	( N: number, x: Float64Array, strideX: number, out: Float64Array, strideOut: number ): Float64Array; // tslint:disable-line:max-line-length
+
+	/**
+	* Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using alternative indexing semantics.
+	*
+	* @param N - number of indexed elements
+	* @param x - input array
+	* @param strideX - `x` stride length
+	* @param offsetX - `x` starting index
+	* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
+	* @param strideOut - `out` stride length
+	* @param offsetOut - `out` starting index
+	* @returns output array
+	*
+	* @example
+	* var Float64Array = require( `@stdlib/array/float64` );
+	*
+	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+	* var out = new Float64Array( 2 );
+	*
+	* var v = dnannsum( x.length, x, 1, 0, out, 1, 0 );
+	* // returns <Float64Array>[ 1.0, 3 ]
+	*/
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array; // tslint:disable-line:max-line-length
+}
+
+/**
+* Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values.
+*
+* @param N - number of indexed elements
+* @param x - input array
+* @param strideX - `x` stride length
+* @param out - output array whose first element is the sum and whose second element is the number of non-NaN elements
+* @param strideOut - `out` stride length
+* @returns output array
+*
+* @example
+* var Float64Array = require( `@stdlib/array/float64` );
+*
+* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+* var out = new Float64Array( 2 );
+*
+* var v = dnannsum( x.length, x, 1, out, 1 );
+* // returns <Float64Array>[ 1.0, 3 ]
+*
+* @example
+* var Float64Array = require( `@stdlib/array/float64` );
+*
+* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
+* var out = new Float64Array( 2 );
+*
+* var v = dnannsum( x.length, x, 1, 0, out, 1, 0 );
+* // returns <Float64Array>[ 1.0, 3 ]
+*/
+declare var dnannsum: Routine;
+
+
+// EXPORTS //
+
+export = dnannsum;
