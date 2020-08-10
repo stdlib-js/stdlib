@@ -306,7 +306,7 @@ function main() {
 	debug( 'Modifying package meta data...' );
 	for ( i = 0; i < pkgs.length; i++ ) {
 		pdir = pkgs[ i ].slice( PKG_DIR.length+1 ); // +1 to account for trailing `/`
-		if ( pdir[ 0 ] !== '_' && pdir.split( '/' ).length === 1 ) {
+		if ( pdir[ 0 ] !== '_' && pdir.split( path.sep ).length === 1 ) {
 			meta.dependencies[ '@stdlib/'+pdir ] = 'file:./lib/node_modules/@stdlib/'+pdir;
 		}
 	}
