@@ -1,2 +1,2 @@
-julia 0.5
-JSON 0.5
+julia 1.5
+JSON 0.21.0
