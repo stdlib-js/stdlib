@@ -22,13 +22,13 @@
 # filepath. Note that each provided filepath is resolved relative to the current
 # working directory of the calling process.
 
-import Base.Test
+import Test
 import Lint
 
 # Lint each file separately...
-@Base.Test.testset "Lint tests" begin
+Test.@testset "Lint tests" begin
 	for i in 1:length( ARGS )
-		@Base.Test.test isempty( Lint.lintfile( ARGS[ i ] ) );
+		Test.@test isempty( Lint.lintfile( ARGS[ i ] ) );
 	end
 end
 
