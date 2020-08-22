@@ -602,6 +602,18 @@
       "speech"
     ]
   },
+  "http://www.unicode.org/reports/tr29/": {
+    "id": "unicode-text-segmentation",
+    "description": "Unicode Standard Annex for Unicode text segmentation.",
+    "short_url": "",
+    "keywords": [
+      "unicode",
+      "standard",
+      "text",
+      "segmentation",
+      "nlp"
+    ]
+  },
   "http://www.yaml.org/": {
     "id": "yaml",
     "description": "Human friendly data serialization standard.",
