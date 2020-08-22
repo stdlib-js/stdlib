@@ -4447,6 +4447,18 @@
       "nodejs"
     ]
   },
+  "https://tools.ietf.org/html/rfc1952": {
+    "id": "gzip-rfc-1952",
+    "description": "RFC format for the gzip file format.",
+    "short_url": "",
+    "keywords": [
+      "gzip",
+      "compression",
+      "compress",
+      "file",
+      "format"
+    ]
+  },
   "https://tools.ietf.org/html/rfc3986": {
     "id": "rfc-3986",
     "description": "An RFC describing the generic syntax for a URI.",
