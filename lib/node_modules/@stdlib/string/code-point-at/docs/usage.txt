@@ -1,0 +1,9 @@
+
+Usage: code-point-at [options] [<string>] --pos=<index>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -b,    --backward            Backward iteration for low surrogates.
+         --pos index           Position in string.
