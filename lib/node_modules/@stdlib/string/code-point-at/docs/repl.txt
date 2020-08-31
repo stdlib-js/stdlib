@@ -1,0 +1,33 @@
+
+{{alias}}( str, idx[, backward] )
+    Returns a Unicode code point from a string at a specified position.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    idx: integer
+        Position.
+
+    backward: boolean (optional)
+        Backward iteration for low surrogates.
+
+    Returns
+    -------
+    out: integer
+        Unicode code point.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'last man standing', 4 )
+    32
+    > out = {{alias}}( 'presidential election', 8, true )
+    116
+    > out = {{alias}}( 'अनुच्छेद', 2 )
+    2369
+    > out = {{alias}}( '🌷', 1, true )
+    127799
+
+    See Also
+    --------
