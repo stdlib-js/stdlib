@@ -1,0 +1,27 @@
+
+{{alias}}( str, pos )
+    Tests if a position in a string marks the start of a UTF-16 surrogate pair.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    pos: integer
+        Position.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether surrogate pair exists at specified position.
+
+    Examples
+    --------
+    > var out = {{alias}}( '🌷', 0 )
+    true
+    > out = {{alias}}( '🌷', 1 )
+    false
+
+    See Also
+    --------
+
