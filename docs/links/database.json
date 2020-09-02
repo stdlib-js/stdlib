@@ -4303,6 +4303,16 @@
       "numbers"
     ]
   },
+  "https://oeis.org/A000584": {
+    "id": "oeis-a000584",
+    "description": "OEIS sequence for fifth powers.",
+    "short_url": "",
+    "keywords": [
+      "oeis",
+      "sequence",
+      "integers"
+    ]
+  },
   "https://oeis.org/A001057": {
     "id": "oeis-a001057",
     "description": "The OEIS entry for a canonical enumeration of an interleaved integer sequence.",
