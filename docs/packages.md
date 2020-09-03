@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2020 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # Packages
 
 > A guide for creating a stdlib package.
@@ -82,9 +102,9 @@ Once you are ready to begin creating a new package, we recommend the following o
 Throughout the development process, you should use the following commands to run tasks:
 
 ```bash
-$ make EXAMPLES_FILTER=.*/pattern/to/identify/your/package/.* examples
-$ make BENCHMARKS_FILTER=.*/pattern/to/identify/your/package/.* benchmark
-$ make TESTS_FILTER=.*/pattern/to/identify/your/package/.* test
+$ make EXAMPLES_FILTER=".*/pattern/to/identify/your/package/.*" examples
+$ make BENCHMARKS_FILTER=".*/pattern/to/identify/your/package/.*" benchmark
+$ make TESTS_FILTER=".*/pattern/to/identify/your/package/.*" test
 ```
 
 Once a package is complete and tested, you are ready to request that your contribution be reviewed and officially included in stdlib! Hurray! Woot woot!
