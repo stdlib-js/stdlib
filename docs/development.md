@@ -253,7 +253,7 @@ workshops  workshops
     $ git config --add oh-my-zsh.hide-dirty 1
     ```
 
--   Some shells (e.g., [Zsh][zsh]) may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths in quotes. For example, replace
+-   Some shells (e.g., [Zsh][zsh]) may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths, or values which may be interpreted as paths, in quotes. For example, replace
 
     <!-- run-disable -->
 
@@ -289,7 +289,7 @@ To run select tests,
 <!-- run-disable -->
 
 ```bash
-$ make TESTS_FILTER=.*/<pattern>/.* test
+$ make TESTS_FILTER=".*/<pattern>/.*" test
 ```
 
 where `<pattern>` is a pattern matching a particular path. For example, to test only base special math functions
@@ -297,7 +297,7 @@ where `<pattern>` is a pattern matching a particular path. For example, to test 
 <!-- run-disable -->
 
 ```bash
-$ make TESTS_FILTER=.*/math/base/special/.* test
+$ make TESTS_FILTER=".*/math/base/special/.*" test
 ```
 
 where the pattern `.*/math/base/special/.*` matches any test file whose absolute path contains `math/base/special`.
@@ -307,7 +307,7 @@ To generate a test coverage report,
 <!-- run-disable -->
 
 ```bash
-$ make TESTS_FILTER=.*/<pattern>/.* test-cov
+$ make TESTS_FILTER=".*/<pattern>/.*" test-cov
 $ make view-cov
 ```
 
@@ -316,8 +316,8 @@ If you are developing a tool (i.e., code located in the `tools` directory), to r
 <!-- run-disable -->
 
 ```bash
-$ make TESTS_FILTER=.*/<pattern>/.* tools-test
-$ make TESTS_FILTER=.*/<pattern>/.* tools-test-cov
+$ make TESTS_FILTER=".*/<pattern>/.*" tools-test
+$ make TESTS_FILTER=".*/<pattern>/.*" tools-test-cov
 $ make view-cov
 ```
 
@@ -326,7 +326,7 @@ Similarly, to run benchmarks
 <!-- run-disable -->
 
 ```bash
-$ make BENCHMARKS_FILTER=.*/<pattern>/.* benchmark
+$ make BENCHMARKS_FILTER=".*/<pattern>/.*" benchmark
 ```
 
 and examples
@@ -334,7 +334,7 @@ and examples
 <!-- run-disable -->
 
 ```bash
-$ make EXAMPLES_FILTER=.*/<pattern>/.* examples
+$ make EXAMPLES_FILTER=".*/<pattern>/.*" examples
 ```
 
 ## Contributing
