@@ -253,7 +253,7 @@ workshops  workshops
     $ git config --add oh-my-zsh.hide-dirty 1
     ```
 
--   Some shells—zsh, for one—may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths in quotes. For example, replacing
+-   Some shells—zsh, for one—may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths in quotes, for example replacing
 
     <!-- run-disable -->
 
