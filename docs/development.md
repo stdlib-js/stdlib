@@ -253,6 +253,23 @@ workshops  workshops
     $ git config --add oh-my-zsh.hide-dirty 1
     ```
 
+-   Some shells—zsh, for one—may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths in quotes. For example, replacing
+
+    <!-- run-disable -->
+
+    ```bash
+    $ make TESTS_FILTER=.*/<pattern>/.* test
+    ```
+    
+    with
+
+    <!-- run-disable -->
+
+    ```bash
+    $ make TESTS_FILTER=".*/<pattern>/.*" test
+    ```
+    
+
 ## Editors
 
 -   This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome].
