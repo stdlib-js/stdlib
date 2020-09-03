@@ -237,7 +237,7 @@ workshops  workshops
 
     will be enough to resolve these conflicts. Otherwise, remove the [Git][git] repository, clone, and reinstall.
 
--   Some terminal prompts display the current Git branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the stdlib directory by adding to stdlib's Git configuration, if using bash,
+-   Some terminal prompts display the current [Git][git] branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the stdlib directory by adding to stdlib's [Git][git] configuration. For example, if using [GNU bash][bash],
 
     <!-- run-disable -->
 
@@ -245,7 +245,7 @@ workshops  workshops
     $ git config bash.showDirtyState false
     ```
 
-    or if using Oh My Zsh,
+    or if using [Zsh][zsh],
 
     <!-- run-disable -->
 
@@ -253,7 +253,7 @@ workshops  workshops
     $ git config --add oh-my-zsh.hide-dirty 1
     ```
 
--   Some shells—zsh, for one—may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths in quotes, for example replacing
+-   Some shells (e.g., [Zsh][zsh]) may require quotes around environment variables to prevent the shell from expanding paths. If this is the case, wrap paths in quotes. For example, replace
 
     <!-- run-disable -->
 
@@ -360,6 +360,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [make]: https://www.gnu.org/software/make
 
 [bash]: https://www.gnu.org/software/bash/
+
+[zsh]: https://en.wikipedia.org/wiki/Z_shell
 
 [curl]: http://curl.haxx.se/
 
