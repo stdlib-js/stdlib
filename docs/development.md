@@ -134,7 +134,7 @@ To install external libraries (**optional**),
 $ make install-deps
 ```
 
-While external library dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numeric computation facilities. Note, however, that installing external library dependencies may take considerable time (>30 minutes).
+While external library dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numerical computation facilities. Note, however, that installing external library dependencies may take considerable time (>30 minutes).
 
 To install language dependencies (**optional**),
 
@@ -168,7 +168,7 @@ To initialize the development environment,
 $ make init
 ```
 
-Initializing the development environment configures [Git][git] hooks and other bells and whistles to aid in development. Git hooks are especially important as they enable automatic linting and testing to ensure that code meets style specifications and does not break.
+Initializing the development environment configures [Git][git] hooks and other bells and whistles to aid in development. [Git][git] hooks are especially important as they enable automatic linting and testing to ensure that code meets style specifications and does not break.
 
 ## Verification
 
@@ -237,7 +237,7 @@ workshops  workshops
 
     will be enough to resolve these conflicts. Otherwise, remove the [Git][git] repository, clone, and reinstall.
 
--   Some terminal prompts display the current [Git][git] branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the stdlib directory by adding to stdlib's [Git][git] configuration. For example, if using [GNU bash][bash],
+-   Some terminal prompts display the current [Git][git] branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the repository directory by updating the repository's [Git][git] configuration. For example, if using [GNU bash][bash],
 
     <!-- run-disable -->
 
