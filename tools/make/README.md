@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2020 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # Makefile
 
 > Development utility.
@@ -78,7 +98,7 @@ To filter based on a file path,
 
 ```bash
 # List all files in the is-nan utils directory...
-$ make FILES_FILTER=.*/assert/is-nan/.* list-files
+$ make FILES_FILTER=".*/assert/is-nan/.*" list-files
 ```
 
 **Notes**:
@@ -116,7 +136,7 @@ To filter based on a file path,
 
 ```bash
 # List only source files found in a math directory...
-$ make SOURCES_FILTER=.*/math/.* list-sources
+$ make SOURCES_FILTER=".*/math/.*" list-sources
 ```
 
 ##### Tests
@@ -138,7 +158,7 @@ To filter based on a file path,
 
 ```bash
 # List only test files in the fs directory...
-$ make TESTS_FILTER=.*/fs/.* list-tests
+$ make TESTS_FILTER=".*/fs/.*" list-tests
 ```
 
 ##### Test Fixtures
@@ -160,7 +180,7 @@ To filter based on a file path,
 
 ```bash
 # List only test fixture files in the base math directory for special functions...
-$ make TESTS_FIXTURES_FILTER=.*/math/special/.* list-tests-fixtures
+$ make TESTS_FIXTURES_FILTER=".*/math/special/.*" list-tests-fixtures
 ```
 
 ##### Benchmarks
@@ -182,7 +202,7 @@ To filter based on a file path,
 
 ```bash
 # List only benchmark files for base special math functions...
-$ make BENCHMARKS_FILTER=.*/math/base/special/.* list-benchmarks
+$ make BENCHMARKS_FILTER=".*/math/base/special/.*" list-benchmarks
 ```
 
 ##### Examples
@@ -204,7 +224,7 @@ To filter based on a file path,
 
 ```bash
 # List only the example files for special functions in the base math directory...
-$ make EXAMPLES_FILTER=.*/math/base/special/.* list-examples
+$ make EXAMPLES_FILTER=".*/math/base/special/.*" list-examples
 ```
 
 ##### Packages
@@ -219,7 +239,7 @@ To filter based on a file path,
 
 ```bash
 # List only the special function packages in the base math directory...
-$ make PACKAGES_FILTER=.*/math/base/special/.* list-pkgs
+$ make PACKAGES_FILTER=".*/math/base/special/.*" list-pkgs
 ```
 
 To list all package names under the `@stdlib` scope,
@@ -248,7 +268,7 @@ To limit which examples are run, use the same environment variables recognized b
 
 ```bash
 # Only run the examples for special functions in the base math directory...
-$ make EXAMPLES_FILTER=.*/math/base/special/.* EXAMPLES_PATTERN=index.js examples
+$ make EXAMPLES_FILTER=".*/math/base/special/.*" EXAMPLES_PATTERN=index.js examples
 ```
 
 * * *
@@ -271,10 +291,10 @@ To limit which tests are run, use the same environment variables recognized by `
 
 ```bash
 # Run only the main test file for base math utils...
-$ make TESTS_FILTER=.*/math/base/utils/.* TESTS_PATTERN=test.js test
+$ make TESTS_FILTER=".*/math/base/utils/.*" TESTS_PATTERN=test.js test
 
 # Run all blas tests...
-$ make TESTS_FILTER=.*/math/base/blas/.*  test-summary
+$ make TESTS_FILTER=".*/math/base/blas/.*"  test-summary
 ```
 
 To run unit tests against specific Node.js versions (assuming [`nvm`][nvm] is installed),
@@ -286,7 +306,7 @@ $ make test-node-versions
 By default, tests are run against supported Node.js versions. To run against alternative versions, set the `NODE_VERSIONS` environment variable.
 
 ```bash
-$ make NODE_VERSIONS='0.10 4 6' TESTS_FILTER=.*/fs/exists/.* test-node-versions
+$ make NODE_VERSIONS='0.10 4 6' TESTS_FILTER=".*/fs/exists/.*" test-node-versions
 ```
 
 To run units tests for project tools,
@@ -298,7 +318,7 @@ $ make tools-test
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
 ```bash
-$ make tools-test TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
+$ make tools-test TESTS_FILTER=".*/search/.*" TESTS_PATTERN=test.js
 ```
 
 #### Test Coverage
@@ -313,7 +333,7 @@ To limit which tests are run, use the same environment variables recognized by `
 
 ```bash
 # Generate a coverage report for base math utils...
-$ make TESTS_FILTER=.*/math/base/utils/.* test-cov
+$ make TESTS_FILTER=".*/math/base/utils/.*" test-cov
 ```
 
 To generate a coverage report for project tools,
@@ -325,7 +345,7 @@ $ make tools-test-cov
 To limit which tests are run, use the same environment variables recognized by `list-tests`.
 
 ```bash
-$ make tools-test-cov TESTS_FILTER=.*/search/.* TESTS_PATTERN=test.js
+$ make tools-test-cov TESTS_FILTER=".*/search/.*" TESTS_PATTERN=test.js
 ```
 
 To view a generated report in a local web browser,
@@ -352,10 +372,10 @@ To limit which tests are run, use the same environment variables recognized by `
 
 ```bash
 # Run base math utils tests in a headless local web browser...
-$ make TESTS_FILTER=.*/math/base/utils/.* test-browsers
+$ make TESTS_FILTER=".*/math/base/utils/.*" test-browsers
 
 # Run @stdlib utils tests in a local web browser...
-$ make TESTS_FILTER=.*/\@stdlib/utils/.* test-view-browsers
+$ make TESTS_FILTER=".*/\@stdlib/utils/.*" test-view-browsers
 ```
 
 * * *
@@ -372,7 +392,7 @@ To limit which benchmarks are run, use the same environment variables recognized
 
 ```bash
 # Run only the benchmarks for base special math functions...
-$ make BENCHMARKS_FILTER=.*/math/base/special/.* BENCHMARKS_PATTERN=benchmark.js benchmark
+$ make BENCHMARKS_FILTER=".*/math/base/special/.*" BENCHMARKS_PATTERN=benchmark.js benchmark
 ```
 
 * * *
