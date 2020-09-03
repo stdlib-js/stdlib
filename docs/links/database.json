@@ -3618,6 +3618,18 @@
       "character"
     ]
   },
+  "https://en.wikipedia.org/wiki/Z_shell": {
+    "id": "zsh",
+    "description": "Wikipedia for Z shell (Zsh).",
+    "short_url": "",
+    "keywords": [
+      "zsh",
+      "shell",
+      "terminal",
+      "development",
+      "dev"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Ziggurat_algorithm": {
     "id": "ziggurat-algorithm",
     "description": "Wikipedia entry for the Ziggurat algorithm to generate standard normal pseudorandom numbers.",
