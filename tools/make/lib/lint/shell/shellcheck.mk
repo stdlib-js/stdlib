@@ -66,7 +66,7 @@ endif
 # make shellcheck
 #
 # @example
-# make shellcheck SHELL_FILTER=.*/_tools/.*
+# make shellcheck SHELL_FILTER=".*/_tools/.*"
 #/
 shellcheck:
 ifeq ($(FAIL_FAST), true)

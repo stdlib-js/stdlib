@@ -33,7 +33,7 @@
 # make benchmark-python
 #
 # @example
-# make benchmark-python BENCHMARKS_FILTER=.*/math/base/special/digamma/.*
+# make benchmark-python BENCHMARKS_FILTER=".*/math/base/special/digamma/.*"
 #/
 benchmark-python:
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

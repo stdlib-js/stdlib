@@ -43,7 +43,7 @@ lint-license-headers-c: lint-license-headers-c-src lint-license-headers-c-tests 
 # make lint-license-headers-c-src
 #
 # @example
-# make lint-license-headers-c-src C_SOURCES_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-src C_SOURCES_FILTER=".*/base/abs/.*"
 #/
 lint-license-headers-c-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_C_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -59,7 +59,7 @@ lint-license-headers-c-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-c-tests
 #
 # @example
-# make lint-license-headers-c-tests C_TESTS_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-tests C_TESTS_FILTER=".*/base/abs/.*"
 #/
 lint-license-headers-c-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_C_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -75,7 +75,7 @@ lint-license-headers-c-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-c-examples
 #
 # @example
-# make lint-license-headers-c-examples C_EXAMPLES_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-examples C_EXAMPLES_FILTER=".*/base/abs/.*"
 #/
 lint-license-headers-c-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -91,7 +91,7 @@ lint-license-headers-c-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-c-benchmarks
 #
 # @example
-# make lint-license-headers-c-benchmarks C_BENCHMARKS_FILTER=.*/base/abs/.*
+# make lint-license-headers-c-benchmarks C_BENCHMARKS_FILTER=".*/base/abs/.*"
 #/
 lint-license-headers-c-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

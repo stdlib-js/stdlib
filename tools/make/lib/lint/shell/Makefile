@@ -50,7 +50,7 @@ check-shell-linters: check-shellcheck
 # make lint-shell
 #
 # @example
-# make lint-shell SHELL_FILTER=.*/_tools/.*
+# make lint-shell SHELL_FILTER=".*/_tools/.*"
 #/
 lint-shell:
 ifeq ($(SHELL_LINTER), shellcheck)

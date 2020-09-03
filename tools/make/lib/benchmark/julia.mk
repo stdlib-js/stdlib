@@ -33,7 +33,7 @@
 # make benchmark-julia
 #
 # @example
-# make benchmark-julia BENCHMARKS_FILTER=.*/math/base/special/erf/.*
+# make benchmark-julia BENCHMARKS_FILTER=".*/math/base/special/erf/.*"
 #/
 benchmark-julia:
 	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

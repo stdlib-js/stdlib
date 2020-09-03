@@ -27,7 +27,7 @@
 # make lint-license-headers-markdown
 #
 # @example
-# make lint-license-headers-markdown MARKDOWN_FILTER=.*/utils/group-by/.*
+# make lint-license-headers-markdown MARKDOWN_FILTER=".*/utils/group-by/.*"
 #/
 lint-license-headers-markdown: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

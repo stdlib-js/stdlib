@@ -42,7 +42,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/javascript/eslint.mk
 # make lint-javascript
 #
 # @example
-# make lint-javascript SOURCES_FILTER=.*/blas/base/dasum/.* TESTS_FILTER=.*/blas/base/dasum/.* EXAMPLES_FILTER=.*/blas/base/dasum/.* BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make lint-javascript SOURCES_FILTER=".*/blas/base/dasum/.*" TESTS_FILTER=".*/blas/base/dasum/.*" EXAMPLES_FILTER=".*/blas/base/dasum/.*" BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examples lint-javascript-benchmarks
 
@@ -62,7 +62,7 @@ lint-javascript: lint-javascript-src lint-javascript-tests lint-javascript-examp
 # make lint-javascript-src
 #
 # @example
-# make lint-javascript-src SOURCES_FILTER=.*/math/base/special/abs/.*
+# make lint-javascript-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-javascript-src:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
@@ -85,7 +85,7 @@ endif
 # make lint-javascript-tests
 #
 # @example
-# make lint-javascript-tests TESTS_FILTER=.*/math/base/special/abs/.*
+# make lint-javascript-tests TESTS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-javascript-tests:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
@@ -108,7 +108,7 @@ endif
 # make lint-javascript-examples
 #
 # @example
-# make lint-javascript-examples EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make lint-javascript-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-javascript-examples:
 ifeq ($(JAVASCRIPT_LINTER), eslint)
@@ -131,7 +131,7 @@ endif
 # make lint-javascript-benchmarks
 #
 # @example
-# make lint-javascript-benchmarks BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make lint-javascript-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-javascript-benchmarks:
 ifeq ($(JAVASCRIPT_LINTER), eslint)

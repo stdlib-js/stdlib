@@ -40,7 +40,7 @@ UPDATE_LICENSE_HEADERS ?= NODE_PATH="$(NODE_PATH)" $(NODE) $(TOOLS_PKGS_DIR)/lic
 # make remove-license-headers
 #
 # @example
-# make remove-license-headers FILES_FILTER=.*/math/base/special/abs/.*
+# make remove-license-headers FILES_FILTER=".*/math/base/special/abs/.*"
 #/
 remove-license-headers: $(NODE_MODULES)
 	$(QUIET) $(FIND_FILES_CMD) | $(REMOVE_LICENSE_HEADERS)
@@ -57,7 +57,7 @@ remove-license-headers: $(NODE_MODULES)
 # make insert-license-headers
 #
 # @example
-# make insert-license-headers FILES_FILTER=.*/math/base/special/abs/.*
+# make insert-license-headers FILES_FILTER=".*/math/base/special/abs/.*"
 #/
 insert-license-headers: $(NODE_MODULES)
 	$(QUIET) $(FIND_FILES_CMD) | $(INSERT_LICENSE_HEADERS)
@@ -74,7 +74,7 @@ insert-license-headers: $(NODE_MODULES)
 # make update-license-headers
 #
 # @example
-# make update-license-headers FILES_FILTER=.*/math/base/special/abs/.*
+# make update-license-headers FILES_FILTER=".*/math/base/special/abs/.*"
 #/
 update-license-headers: $(NODE_MODULES)
 	$(QUIET) $(FIND_FILES_CMD) | $(UPDATE_LICENSE_HEADERS)

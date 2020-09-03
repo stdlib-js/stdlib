@@ -56,7 +56,7 @@ check-python-linters: check-pylint check-pycodestyle check-pydocstyle
 # make lint-python
 #
 # @example
-# make lint-python PYTHON_SOURCES_FILTER=.*/blas/base/dasum/.* PYTHON_TESTS_FILTER=.*/blas/base/dasum/.* PYTHON_EXAMPLES_FILTER=.*/blas/base/dasum/.* PYTHON_BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make lint-python PYTHON_SOURCES_FILTER=".*/blas/base/dasum/.*" PYTHON_TESTS_FILTER=".*/blas/base/dasum/.*" PYTHON_EXAMPLES_FILTER=".*/blas/base/dasum/.*" PYTHON_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-python: lint-python-src lint-python-tests-fixtures lint-python-examples lint-python-benchmarks
 
@@ -76,7 +76,7 @@ lint-python: lint-python-src lint-python-tests-fixtures lint-python-examples lin
 # make lint-python-src
 #
 # @example
-# make lint-python-src PYTHON_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make lint-python-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-python-src: pylint-src pycodestyle-src pydocstyle-src
 
@@ -96,7 +96,7 @@ lint-python-src: pylint-src pycodestyle-src pydocstyle-src
 # make lint-python-tests-fixtures
 #
 # @example
-# make lint-python-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make lint-python-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-python-tests-fixtures: pylint-tests-fixtures pycodestyle-tests-fixtures pydocstyle-tests-fixtures
 
@@ -116,7 +116,7 @@ lint-python-tests-fixtures: pylint-tests-fixtures pycodestyle-tests-fixtures pyd
 # make lint-python-examples
 #
 # @example
-# make lint-python-examples PYTHON_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make lint-python-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-python-examples: pylint-examples pycodestyle-examples pydocstyle-examples
 
@@ -136,7 +136,7 @@ lint-python-examples: pylint-examples pycodestyle-examples pydocstyle-examples
 # make lint-python-benchmarks
 #
 # @example
-# make lint-python-benchmarks PYTHON_BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make lint-python-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-python-benchmarks: pylint-benchmarks pycodestyle-benchmarks pydocstyle-benchmarks
 

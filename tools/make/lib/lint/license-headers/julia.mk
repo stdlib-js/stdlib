@@ -43,7 +43,7 @@ lint-license-headers-julia: lint-license-headers-julia-src lint-license-headers-
 # make lint-license-headers-julia-src
 #
 # @example
-# make lint-license-headers-julia-src JULIA_SOURCES_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-src JULIA_SOURCES_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-julia-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_JULIA_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -59,7 +59,7 @@ lint-license-headers-julia-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-julia-tests
 #
 # @example
-# make lint-license-headers-julia-tests JULIA_TESTS_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-tests JULIA_TESTS_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-julia-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_JULIA_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -75,7 +75,7 @@ lint-license-headers-julia-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-julia-examples
 #
 # @example
-# make lint-license-headers-julia-examples JULIA_EXAMPLES_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-examples JULIA_EXAMPLES_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-julia-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_JULIA_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -91,7 +91,7 @@ lint-license-headers-julia-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-julia-benchmarks
 #
 # @example
-# make lint-license-headers-julia-benchmarks JULIA_BENCHMARKS_FILTER=.*/base/erf/.*
+# make lint-license-headers-julia-benchmarks JULIA_BENCHMARKS_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-julia-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_JULIA_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

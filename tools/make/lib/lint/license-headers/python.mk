@@ -43,7 +43,7 @@ lint-license-headers-python: lint-license-headers-python-src lint-license-header
 # make lint-license-headers-python-src
 #
 # @example
-# make lint-license-headers-python-src PYTHON_SOURCES_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-src PYTHON_SOURCES_FILTER=".*/base/cos/.*"
 #/
 lint-license-headers-python-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_PYTHON_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -59,7 +59,7 @@ lint-license-headers-python-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-python-tests
 #
 # @example
-# make lint-license-headers-python-tests PYTHON_TESTS_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-tests PYTHON_TESTS_FILTER=".*/base/cos/.*"
 #/
 lint-license-headers-python-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_PYTHON_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -75,7 +75,7 @@ lint-license-headers-python-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-python-examples
 #
 # @example
-# make lint-license-headers-python-examples PYTHON_EXAMPLES_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-examples PYTHON_EXAMPLES_FILTER=".*/base/cos/.*"
 #/
 lint-license-headers-python-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_PYTHON_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -91,7 +91,7 @@ lint-license-headers-python-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-python-benchmarks
 #
 # @example
-# make lint-license-headers-python-benchmarks PYTHON_BENCHMARKS_FILTER=.*/base/cos/.*
+# make lint-license-headers-python-benchmarks PYTHON_BENCHMARKS_FILTER=".*/base/cos/.*"
 #/
 lint-license-headers-python-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_PYTHON_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

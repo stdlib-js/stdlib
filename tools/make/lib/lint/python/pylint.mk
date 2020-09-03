@@ -80,7 +80,7 @@ endif
 # make pylint-src
 #
 # @example
-# make pylint-src PYTHON_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make pylint-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-src:
 ifeq ($(FAIL_FAST), true)
@@ -114,7 +114,7 @@ endif
 # make pylint-tests-fixtures
 #
 # @example
-# make pylint-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make pylint-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -148,7 +148,7 @@ endif
 # make pylint-examples
 #
 # @example
-# make pylint-examples PYTHON_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make pylint-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-examples:
 ifeq ($(FAIL_FAST), true)
@@ -182,7 +182,7 @@ endif
 # make pylint-benchmarks
 #
 # @example
-# make pylint-benchmarks PYTHON_BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make pylint-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 pylint-benchmarks:
 ifeq ($(FAIL_FAST), true)

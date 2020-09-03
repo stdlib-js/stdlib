@@ -35,7 +35,7 @@ endif
 # make lint-markdown
 #
 # @example
-# make lint-markdown MARKDOWN_FILTER=.*/blas/base/dasum/.*
+# make lint-markdown MARKDOWN_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-markdown: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)

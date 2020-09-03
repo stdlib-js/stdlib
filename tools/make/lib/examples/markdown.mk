@@ -32,7 +32,7 @@ include $(TOOLS_MAKE_LIB_DIR)/examples/markdown_javascript.mk
 # make markdown-examples
 #
 # @example
-# make markdown-examples MARKDOWN_FILTER=.*/strided/common/.*
+# make markdown-examples MARKDOWN_FILTER=".*/strided/common/.*"
 #/
 markdown-examples: markdown-examples-javascript
 

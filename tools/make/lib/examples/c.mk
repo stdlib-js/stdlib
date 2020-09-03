@@ -42,7 +42,7 @@ compile_c_example_bin := $(TOOLS_DIR)/scripts/compile_c_example
 # make examples-c
 #
 # @example
-# make examples-c EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make examples-c EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 examples-c:
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

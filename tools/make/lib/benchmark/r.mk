@@ -33,7 +33,7 @@
 # make benchmark-r
 #
 # @example
-# make benchmark-r BENCHMARKS_FILTER=.*/math/base/special/expm1/.*
+# make benchmark-r BENCHMARKS_FILTER=".*/math/base/special/expm1/.*"
 #/
 benchmark-r:
 	$(QUIET) $(FIND_R_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

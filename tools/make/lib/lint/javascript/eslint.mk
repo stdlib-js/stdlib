@@ -69,7 +69,7 @@ ESLINT_FLAGS ?= \
 # make eslint-src
 #
 # @example
-# make eslint-src SOURCES_FILTER=.*/math/base/special/abs/.*
+# make eslint-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 eslint-src: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
@@ -105,7 +105,7 @@ endif
 # make eslint-tests
 #
 # @example
-# make eslint-tests TESTS_FILTER=.*/math/base/special/abs/.*
+# make eslint-tests TESTS_FILTER=".*/math/base/special/abs/.*"
 #/
 eslint-tests: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
@@ -141,7 +141,7 @@ endif
 # make eslint-examples
 #
 # @example
-# make eslint-examples EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make eslint-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 eslint-examples: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
@@ -177,7 +177,7 @@ endif
 # make eslint-benchmarks
 #
 # @example
-# make eslint-benchmarks BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make eslint-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 eslint-benchmarks: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)

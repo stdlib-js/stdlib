@@ -57,7 +57,7 @@ REMARK_RUN_JAVASCRIPT_EXAMPLES_FLAGS ?= \
 # make markdown-examples-javascript
 #
 # @example
-# make markdown-examples-javascript MARKDOWN_FILTER=.*/strided/common/.*
+# make markdown-examples-javascript MARKDOWN_FILTER=".*/strided/common/.*"
 #/
 markdown-examples-javascript: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | grep 'README.md' | grep -v '/_tools/' | grep -v '/stdlib/tools/' | while read -r file; do \

@@ -40,7 +40,7 @@ compile_cpp_example_bin := $(TOOLS_DIR)/scripts/compile_cpp_example
 # make examples-cpp
 #
 # @example
-# make examples-cpp EXAMPLES_FILTER=.*/strided/common/.*
+# make examples-cpp EXAMPLES_FILTER=".*/strided/common/.*"
 #/
 examples-cpp:
 	$(QUIET) $(FIND_CPP_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

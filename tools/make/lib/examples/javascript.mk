@@ -33,7 +33,7 @@
 # make examples-javascript
 #
 # @example
-# make examples-javascript EXAMPLES_FILTER=.*/strided/common/.*
+# make examples-javascript EXAMPLES_FILTER=".*/strided/common/.*"
 #/
 examples-javascript: $(NODE_MODULES)
 	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

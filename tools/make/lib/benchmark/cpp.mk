@@ -34,7 +34,7 @@
 # make benchmark-cpp
 #
 # @example
-# make benchmark-cpp BENCHMARKS_FILTER=.*/math/base/special/beta/.*
+# make benchmark-cpp BENCHMARKS_FILTER=".*/math/base/special/beta/.*"
 #/
 benchmark-cpp:
 	$(QUIET) $(FIND_CPP_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

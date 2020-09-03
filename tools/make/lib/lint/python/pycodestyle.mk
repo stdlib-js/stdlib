@@ -78,7 +78,7 @@ endif
 # make pycodestyle-src
 #
 # @example
-# make pycodestyle-src PYTHON_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make pycodestyle-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-src:
 ifeq ($(FAIL_FAST), true)
@@ -112,7 +112,7 @@ endif
 # make pycodestyle-tests-fixtures
 #
 # @example
-# make pycodestyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make pycodestyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -146,7 +146,7 @@ endif
 # make pycodestyle-examples
 #
 # @example
-# make pycodestyle-examples PYTHON_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make pycodestyle-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-examples:
 ifeq ($(FAIL_FAST), true)
@@ -180,7 +180,7 @@ endif
 # make pycodestyle-benchmarks
 #
 # @example
-# make pycodestyle-benchmarks PYTHON_BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make pycodestyle-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 pycodestyle-benchmarks:
 ifeq ($(FAIL_FAST), true)

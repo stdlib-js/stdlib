@@ -43,7 +43,7 @@ lint-license-headers-fortran: lint-license-headers-fortran-src lint-license-head
 # make lint-license-headers-fortran-src
 #
 # @example
-# make lint-license-headers-fortran-src FORTRAN_SOURCES_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-src FORTRAN_SOURCES_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-license-headers-fortran-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_FORTRAN_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -59,7 +59,7 @@ lint-license-headers-fortran-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-fortran-tests
 #
 # @example
-# make lint-license-headers-fortran-tests FORTRAN_TESTS_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-tests FORTRAN_TESTS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-license-headers-fortran-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_FORTRAN_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -75,7 +75,7 @@ lint-license-headers-fortran-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-fortran-examples
 #
 # @example
-# make lint-license-headers-fortran-examples FORTRAN_EXAMPLES_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-examples FORTRAN_EXAMPLES_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-license-headers-fortran-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_FORTRAN_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -91,7 +91,7 @@ lint-license-headers-fortran-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-fortran-benchmarks
 #
 # @example
-# make lint-license-headers-fortran-benchmarks FORTRAN_BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make lint-license-headers-fortran-benchmarks FORTRAN_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-license-headers-fortran-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_FORTRAN_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

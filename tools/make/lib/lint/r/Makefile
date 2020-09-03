@@ -45,7 +45,7 @@ R_LINTER_FLAGS ?=
 # make lint-r
 #
 # @example
-# make lint-r R_SOURCES_FILTER=.*/blas/base/dasum/.* R_TESTS_FILTER=.*/blas/base/dasum/.* R_EXAMPLES_FILTER=.*/blas/base/dasum/.* R_BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make lint-r R_SOURCES_FILTER=".*/blas/base/dasum/.*" R_TESTS_FILTER=".*/blas/base/dasum/.*" R_EXAMPLES_FILTER=".*/blas/base/dasum/.*" R_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-r: lint-r-src lint-r-tests-fixtures lint-r-examples lint-r-benchmarks
 
@@ -65,7 +65,7 @@ lint-r: lint-r-src lint-r-tests-fixtures lint-r-examples lint-r-benchmarks
 # make lint-r-src
 #
 # @example
-# make lint-r-src R_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make lint-r-src R_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-src:
 ifeq ($(FAIL_FAST), true)
@@ -98,7 +98,7 @@ endif
 # make lint-r-tests-fixtures
 #
 # @example
-# make lint-r-tests-fixtures R_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make lint-r-tests-fixtures R_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -131,7 +131,7 @@ endif
 # make lint-r-examples
 #
 # @example
-# make lint-r-examples R_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make lint-r-examples R_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-examples:
 ifeq ($(FAIL_FAST), true)
@@ -164,7 +164,7 @@ endif
 # make lint-r-benchmarks
 #
 # @example
-# make lint-r-benchmarks R_BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make lint-r-benchmarks R_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-r-benchmarks:
 ifeq ($(FAIL_FAST), true)

@@ -40,7 +40,7 @@ compile_fortran_benchmark_bin := $(TOOLS_DIR)/scripts/compile_fortran_benchmark
 # make benchmark-fortran
 #
 # @example
-# make benchmark-fortran BENCHMARKS_FILTER=.*/blas/base/daxpy/.*
+# make benchmark-fortran BENCHMARKS_FILTER=".*/blas/base/daxpy/.*"
 #/
 benchmark-fortran:
 	$(QUIET) $(FIND_FORTRAN_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \

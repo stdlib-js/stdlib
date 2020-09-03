@@ -43,7 +43,7 @@ lint-license-headers-javascript: lint-license-headers-javascript-src lint-licens
 # make lint-license-headers-javascript-src
 #
 # @example
-# make lint-license-headers-javascript-src SOURCES_FILTER=.*/utils/group-by/.*
+# make lint-license-headers-javascript-src SOURCES_FILTER=".*/utils/group-by/.*"
 #/
 lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -59,7 +59,7 @@ lint-license-headers-javascript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-tests
 #
 # @example
-# make lint-license-headers-javascript-tests TESTS_FILTER=.*/utils/group-by/.*
+# make lint-license-headers-javascript-tests TESTS_FILTER=".*/utils/group-by/.*"
 #/
 lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -75,7 +75,7 @@ lint-license-headers-javascript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-examples
 #
 # @example
-# make lint-license-headers-javascript-examples EXAMPLES_FILTER=.*/utils/group-by/.*
+# make lint-license-headers-javascript-examples EXAMPLES_FILTER=".*/utils/group-by/.*"
 #/
 lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -91,7 +91,7 @@ lint-license-headers-javascript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-javascript-benchmarks
 #
 # @example
-# make lint-license-headers-javascript-benchmarks BENCHMARKS_FILTER=.*/utils/group-by/.*
+# make lint-license-headers-javascript-benchmarks BENCHMARKS_FILTER=".*/utils/group-by/.*"
 #/
 lint-license-headers-javascript-benchmarks: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_BENCHMARKS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

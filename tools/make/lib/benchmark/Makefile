@@ -38,7 +38,7 @@ include $(TOOLS_MAKE_LIB_DIR)/benchmark/r.mk
 # make benchmark
 #
 # @example
-# make benchmark BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make benchmark BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 benchmark: benchmark-javascript
 
@@ -59,7 +59,7 @@ benchmark: benchmark-javascript
 # make benchmark-lang
 #
 # @example
-# make benchmark-lang BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make benchmark-lang BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 benchmark-lang: benchmark-javascript benchmark-julia benchmark-python benchmark-r benchmark-c benchmark-cpp benchmark-fortran
 

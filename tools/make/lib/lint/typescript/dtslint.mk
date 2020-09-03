@@ -58,7 +58,7 @@ DTSLINT_FLAGS ?=
 # make dtslint-declarations
 #
 # @example
-# make dtslint-declarations TYPESCRIPT_DECLARATIONS_FILTER=.*/math/base/special/abs/.*
+# make dtslint-declarations TYPESCRIPT_DECLARATIONS_FILTER=".*/math/base/special/abs/.*"
 #/
 dtslint-declarations: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)

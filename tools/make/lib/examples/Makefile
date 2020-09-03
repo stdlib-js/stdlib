@@ -36,7 +36,7 @@ include $(TOOLS_MAKE_LIB_DIR)/examples/markdown.mk
 # make examples
 #
 # @example
-# make examples EXAMPLES_FILTER=.*/blas/base/dasum/.*
+# make examples EXAMPLES_FILTER=".*/blas/base/dasum/.*"
 #/
 examples: examples-javascript
 
@@ -57,7 +57,7 @@ examples: examples-javascript
 # make examples-lang
 #
 # @example
-# make examples-lang EXAMPLES_FILTER=.*/blas/base/dasum/.*
+# make examples-lang EXAMPLES_FILTER=".*/blas/base/dasum/.*"
 #/
 examples-lang: examples-javascript examples-c examples-cpp
 

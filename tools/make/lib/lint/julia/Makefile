@@ -45,7 +45,7 @@ JULIA_LINTER_FLAGS ?=
 # make lint-julia
 #
 # @example
-# make lint-julia JULIA_SOURCES_FILTER=.*/blas/base/dasum/.* JULIA_TESTS_FILTER=.*/blas/base/dasum/.* JULIA_EXAMPLES_FILTER=.*/blas/base/dasum/.* JULIA_BENCHMARKS_FILTER=.*/blas/base/dasum/.*
+# make lint-julia JULIA_SOURCES_FILTER=".*/blas/base/dasum/.*" JULIA_TESTS_FILTER=".*/blas/base/dasum/.*" JULIA_EXAMPLES_FILTER=".*/blas/base/dasum/.*" JULIA_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-julia-benchmarks
 
@@ -65,7 +65,7 @@ lint-julia: lint-julia-src lint-julia-tests-fixtures lint-julia-examples lint-ju
 # make lint-julia-src
 #
 # @example
-# make lint-julia-src JULIA_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make lint-julia-src JULIA_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-src:
 ifeq ($(FAIL_FAST), true)
@@ -98,7 +98,7 @@ endif
 # make lint-julia-tests-fixtures
 #
 # @example
-# make lint-julia-tests-fixtures JULIA_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make lint-julia-tests-fixtures JULIA_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -131,7 +131,7 @@ endif
 # make lint-julia-examples
 #
 # @example
-# make lint-julia-examples JULIA_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make lint-julia-examples JULIA_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-examples:
 ifeq ($(FAIL_FAST), true)
@@ -164,7 +164,7 @@ endif
 # make lint-julia-benchmarks
 #
 # @example
-# make lint-julia-benchmarks JULIA_BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make lint-julia-benchmarks JULIA_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-julia-benchmarks:
 ifeq ($(FAIL_FAST), true)

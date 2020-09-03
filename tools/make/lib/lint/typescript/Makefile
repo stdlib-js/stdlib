@@ -42,7 +42,7 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/dtslint.mk
 # make lint-typescript
 #
 # @example
-# make lint-typescript TYPESCRIPT_SOURCES_FILTER=.*/blas/base/dasum/.* TYPESCRIPT_TESTS_FILTER=.*/blas/base/dasum/.* TYPESCRIPT_DECLARATIONS_FILTER=.*/blas/base/dasum/.* TYPESCRIPT_EXAMPLES_FILTER=.*/blas/base/dasum/.*
+# make lint-typescript TYPESCRIPT_SOURCES_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_TESTS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_EXAMPLES_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-typescript: lint-typescript-src lint-typescript-tests lint-typescript-examples lint-typescript-declarations
 
@@ -62,7 +62,7 @@ lint-typescript: lint-typescript-src lint-typescript-tests lint-typescript-examp
 # make lint-typescript-src
 #
 # @example
-# make lint-typescript-src TYPESCRIPT_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make lint-typescript-src TYPESCRIPT_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-src:
 ifeq ($(TYPESCRIPT_LINTER), tslint)
@@ -85,7 +85,7 @@ endif
 # make lint-typescript-tests
 #
 # @example
-# make lint-typescript-tests TYPESCRIPT_TESTS_FILTER=.*/math/base/special/abs/.*
+# make lint-typescript-tests TYPESCRIPT_TESTS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-tests:
 ifeq ($(TYPESCRIPT_LINTER), tslint)
@@ -108,7 +108,7 @@ endif
 # make lint-typescript-examples
 #
 # @example
-# make lint-typescript-examples TYPESCRIPT_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make lint-typescript-examples TYPESCRIPT_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-examples:
 ifeq ($(TYPESCRIPT_LINTER), tslint)
@@ -131,7 +131,7 @@ endif
 # make lint-typescript-declarations
 #
 # @example
-# make lint-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=.*/math/base/special/abs/.*
+# make lint-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-declarations:
 ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), dtslint)

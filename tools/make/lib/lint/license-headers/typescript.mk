@@ -43,7 +43,7 @@ lint-license-headers-typescript: lint-license-headers-typescript-src lint-licens
 # make lint-license-headers-typescript-src
 #
 # @example
-# make lint-license-headers-typescript-src TYPESCRIPT_SOURCES_FILTER=.*/base/erf/.*
+# make lint-license-headers-typescript-src TYPESCRIPT_SOURCES_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-typescript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_TYPESCRIPT_SOURCES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -59,7 +59,7 @@ lint-license-headers-typescript-src: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-typescript-tests
 #
 # @example
-# make lint-license-headers-typescript-tests TYPESCRIPT_TESTS_FILTER=.*/base/erf/.*
+# make lint-license-headers-typescript-tests TYPESCRIPT_TESTS_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-typescript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_TESTS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -75,7 +75,7 @@ lint-license-headers-typescript-tests: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-typescript-examples
 #
 # @example
-# make lint-license-headers-typescript-examples TYPESCRIPT_EXAMPLES_FILTER=.*/base/erf/.*
+# make lint-license-headers-typescript-examples TYPESCRIPT_EXAMPLES_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-typescript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_TYPESCRIPT_EXAMPLES_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)
@@ -91,7 +91,7 @@ lint-license-headers-typescript-examples: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 # make lint-license-headers-typescript-declarations
 #
 # @example
-# make lint-license-headers-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=.*/base/erf/.*
+# make lint-license-headers-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=".*/base/erf/.*"
 #/
 lint-license-headers-typescript-declarations: $(LICENSE_HEADER_LINT) $(NODE_MODULES)
 	$(QUIET) $(FIND_TYPESCRIPT_DECLARATIONS_CMD) | NODE_PATH="$(NODE_PATH)" $(NODE) $(LICENSE_HEADER_LINT) $(LICENSE_HEADER_LINT_FLAGS)

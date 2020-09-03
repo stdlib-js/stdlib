@@ -78,7 +78,7 @@ endif
 # make pydocstyle-src
 #
 # @example
-# make pydocstyle-src PYTHON_SOURCES_FILTER=.*/math/base/special/abs/.*
+# make pydocstyle-src PYTHON_SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-src:
 ifeq ($(FAIL_FAST), true)
@@ -112,7 +112,7 @@ endif
 # make pydocstyle-tests-fixtures
 #
 # @example
-# make pydocstyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=.*/math/base/special/abs/.*
+# make pydocstyle-tests-fixtures PYTHON_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-tests-fixtures:
 ifeq ($(FAIL_FAST), true)
@@ -146,7 +146,7 @@ endif
 # make pydocstyle-examples
 #
 # @example
-# make pydocstyle-examples PYTHON_EXAMPLES_FILTER=.*/math/base/special/abs/.*
+# make pydocstyle-examples PYTHON_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-examples:
 ifeq ($(FAIL_FAST), true)
@@ -180,7 +180,7 @@ endif
 # make pydocstyle-benchmarks
 #
 # @example
-# make pydocstyle-benchmarks PYTHON_BENCHMARKS_FILTER=.*/math/base/special/abs/.*
+# make pydocstyle-benchmarks PYTHON_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 pydocstyle-benchmarks:
 ifeq ($(FAIL_FAST), true)
