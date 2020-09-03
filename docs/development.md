@@ -237,6 +237,22 @@ workshops  workshops
 
     will be enough to resolve these conflicts. Otherwise, remove the [Git][git] repository, clone, and reinstall.
 
+-   Some terminal prompts display the current Git branch and its status. Displaying the status may add significant lag to your terminal. You may hide this information within the stdlib directory by adding to stdlib's Git configuration, if using bash,
+
+    <!-- run-disable -->
+
+    ```bash
+    $ git config bash.showDirtyState false
+    ```
+
+    or if using Oh My Zsh,
+
+    <!-- run-disable -->
+
+    ```bash
+    $ git config --add oh-my-zsh.hide-dirty 1
+    ```
+
 ## Editors
 
 -   This repository uses [EditorConfig][editorconfig] to maintain consistent coding styles between different editors and IDEs, including [browsers][editorconfig-chrome].
