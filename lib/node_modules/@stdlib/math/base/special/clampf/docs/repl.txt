@@ -1,0 +1,40 @@
+
+{{alias}}( v, min, max )
+    Restricts a single-precision floating-point number to a specified range.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    v: number
+        Value to restrict.
+
+    min: number
+        Minimum value.
+
+    max: number
+        Maximum value.
+
+    Returns
+    -------
+    y: number
+        Restricted value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14, 0.0, 5.0 )
+    3.14
+    > y = {{alias}}( -3.14, 0.0, 5.0 )
+    0.0
+    > y = {{alias}}( 3.14, 0.0, 3.0 )
+    3.0
+    > y = {{alias}}( -0.0, 0.0, 5.0 )
+    0.0
+    > y = {{alias}}( 0.0, -3.14, -0.0 )
+    -0.0
+    > y = {{alias}}( NaN, 0.0, 5.0 )
+    NaN
+
+    See Also
+    --------
+
