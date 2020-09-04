@@ -1,0 +1,26 @@
+
+{{alias}}( x )
+    Converts an angle from degrees to radians.
+
+    Parameters
+    ----------
+    x: number
+        Angle in degrees.
+
+    Returns
+    -------
+    r: number
+        Angle in radians.
+
+    Examples
+    --------
+    > var r = {{alias}}( 90.0 )
+    ~1.571
+    > r = {{alias}}( -45.0 )
+    ~-0.785
+    > r = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+
