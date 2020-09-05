@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Returns the positive difference between `x` and `y` if `x > y`; otherwise,
+    returns `0`.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Positive difference.
+
+    Examples
+    --------
+    > var v = {{alias}}( 5.9, 3.15 )
+    2.75
+    > v = {{alias}}( 3.14, 4.2 )
+    0.0
+    > v = {{alias}}( 3.14, NaN )
+    NaN
+    > v = {{alias}}( -0.0, +0.0 )
+    +0.0
+
+    See Also
+    --------
+
