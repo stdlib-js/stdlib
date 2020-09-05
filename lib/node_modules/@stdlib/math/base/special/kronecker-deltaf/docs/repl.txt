@@ -1,0 +1,29 @@
+
+{{alias}}( i, j )
+    Evaluates the Kronecker delta.
+
+    If `i == j`, the function returns `1`; otherwise, the function returns zero.
+
+    Parameters
+    ----------
+    i: number
+        Input value.
+
+    j: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14, 0.0 )
+    0.0
+    > y = {{alias}}( 3.14, 3.14 )
+    1.0
+
+    See Also
+    --------
+
