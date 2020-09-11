@@ -72,6 +72,8 @@
     "virtual-dom": "^2.1.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "@types/node": "^13.9.0",
     "ajv": "^5.2.2",
     "browser-pack-flat": "^3.0.0",
@@ -172,12 +174,14 @@
     "remark-unlink": "^2.0.0",
     "remark-validate-links": "^9.0.1",
     "remark-vdom": "^8.0.0",
+    "rollup": "^2.26.11",
     "semver": "^6.0.0",
     "spdx-license-ids": "^3.0.0",
     "tap-spec": "5.x.x",
     "tap-summary": "^4.0.0",
     "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "terser": "^5.3.1",
     "to-vfile": "^6.0.0",
     "typedoc": "^0.16.11",
     "uglify-es": "^3.1.1",
