@@ -74,6 +74,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-virtual": "^2.0.3",
     "@types/node": "^13.9.0",
     "ajv": "^5.2.2",
     "browser-pack-flat": "^3.0.0",
