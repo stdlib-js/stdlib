@@ -358,6 +358,8 @@ NOTE: addressed by BigInt
 
     **Aside:** JavaScript may never have native SIMD support. Instead, SIMD is currently only possible only via [WebAssembly][wasm]. Lack of native JavaScript SIMD support would be unfortunate, as plenty of applications exist (e.g., scripting for purposes of analysis and data manipulation), which would benefit from SIMD operations without requiring a context switch to a lower-level language and additional compilation steps.
 
+1.  **GPGPU**: provide better support for [GPGPU][gpgpu]. Currently, performing general purpose GPU (GPGPU) computing tasks within a browser is only possible via [WebGL][webgl] and awkward usage of shaders, which are designed for generating graphics, not generic number crunching. Additionally, synchronous data transfers between the main thread and the GPU are expensive, debugging support is limited, and reading floating-point textures is not possible without workarounds which encode floating-point numbers into integer outputs (RGBA). While [compute shaders][compute-shaders] and [Vulkan][vulkan] promise better GPGPU support, we are years away from realizing their proposed benefits via JavaScript. Once realized, however, embarrassingly parallel computation tasks and machine learning techniques such as neural networks become more viable and efficient.
+
 <!--
 
 1.  **Parallelism**: add support for lightweight threading (parallelism). Currently, [data parallelism][data-parallelism], i.e., the same operations performed on different subsets of the same data, is only achievable by manual data orchestration and task execution via either [web workers][mdn-web-workers] (browser) or [child processes][node-child-process] (Node.js). While [web workers][mdn-web-workers] support [Transferable Objects][mdn-transferable-objects] thus allowing shared memory access, the same is not true for Node.js. Particularly in Node.js, task parallelism is heavyweight and cumbersome, especially for use cases like parallel computation involving matrix elements (e.g., compare to MATLAB's [`parfor`][matlab-parfor]). The ability to easily distribute data to a worker pool (processors) would provide a significant performance boost to many data analysis tasks.
@@ -365,8 +367,6 @@ NOTE: addressed by BigInt
 NOTE: see https://nodejs.org/api/worker_threads.html
 
 -->
-
-1.  **GPGPU**: provide better support for [GPGPU][gpgpu]. Currently, performing general purpose GPU (GPGPU) computing tasks within a browser is only possible via [WebGL][webgl] and awkward usage of shaders, which are designed for generating graphics, not generic number crunching. Additionally, synchronous data transfers between the main thread and the GPU are expensive, debugging support is limited, and reading floating-point textures is not possible without workarounds which encode floating-point numbers into integer outputs (RGBA). While [compute shaders][compute-shaders] and [Vulkan][vulkan] promise better GPGPU support, we are years away from realizing their proposed benefits via JavaScript. Once realized, however, embarrassingly parallel computation tasks and machine learning techniques such as neural networks become more viable and efficient.
 
 <!-- </faq-question> -->
 
