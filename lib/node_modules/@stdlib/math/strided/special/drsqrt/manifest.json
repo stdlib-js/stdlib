@@ -1,0 +1,75 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/drsqrt.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rsqrt",
+				"@stdlib/strided/base/dmap",
+				"@stdlib/strided/napi/dmap"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/drsqrt.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rsqrt",
+				"@stdlib/strided/base/dmap"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/drsqrt.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/rsqrt",
+				"@stdlib/strided/base/dmap"
+			]
+		}
+	]
+}
