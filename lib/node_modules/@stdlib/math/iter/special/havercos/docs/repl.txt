@@ -1,0 +1,37 @@
+
+{{alias}}( iterator )
+    Returns an iterator which iteratively computes the half-value versed cosine.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var r = {{alias:@stdlib/random/iter/uniform}}( 0.0, 6.28 );
+    > var it = {{alias}}( r );
+    > var v = it.next().value
+    <number>
+    > v = it.next().value
+    <number>
+
+    See Also
+    --------
+
