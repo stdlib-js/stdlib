@@ -183,7 +183,7 @@
     "tap-summary": "^4.0.0",
     "tap-xunit": "^2.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "terser": "^5.3.1",
+    "terser": "^5.5.1",
     "to-vfile": "^6.0.0",
     "typedoc": "^0.16.11",
     "uglify-es": "^3.1.1",
