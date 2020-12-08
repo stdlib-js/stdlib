@@ -1,0 +1,20 @@
+{
+	"string": [
+		"dir",
+		"split"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"builtins",
+		"dev"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}
