@@ -22,7 +22,7 @@
 LIST_PACKAGE_ADDONS ?= $(TOOLS_PKGS_DIR)/pkgs/addons/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_ADDONS_FLAGS ?=
+LIST_PACKAGE_ADDONS_FLAGS ?= --ignore=**/_tools/scaffold/**
 
 
 # TARGETS #
