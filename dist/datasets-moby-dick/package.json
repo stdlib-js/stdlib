@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-moby-dick",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "The text of Moby Dick by Herman Melville as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

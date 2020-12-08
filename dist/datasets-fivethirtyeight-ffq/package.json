@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-fivethirtyeight-ffq",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "FiveThirtyEight reader responses to a food frequency questionnaire (FFQ) as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

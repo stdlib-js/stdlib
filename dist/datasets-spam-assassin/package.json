@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-spam-assassin",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "Spam Assassin public mail corpus as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {
