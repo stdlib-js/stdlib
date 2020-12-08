@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-flat-help",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "Help text for packages exposed in the flat stdlib namespace as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

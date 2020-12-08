@@ -1,0 +1,73 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/sqrtf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/napi/unary"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/sqrtf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": []
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/sqrtf.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [
+				"-lm"
+			],
+			"libpath": [],
+			"dependencies": []
+		}
+	]
+}

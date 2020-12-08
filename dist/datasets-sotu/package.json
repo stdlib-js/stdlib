@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-sotu",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "State of the Union addresses by U.S. Presidents as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

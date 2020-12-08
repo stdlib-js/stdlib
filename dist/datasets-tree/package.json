@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-tree",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "All stdlib datasets exposed as a tree namespace and packaged as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

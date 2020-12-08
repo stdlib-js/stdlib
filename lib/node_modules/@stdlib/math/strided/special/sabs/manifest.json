@@ -1,0 +1,75 @@
+{
+	"options": {
+		"task": "build"
+	},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"task": "build",
+			"src": [
+				"./src/sabs.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/absf",
+				"@stdlib/strided/base/smap",
+				"@stdlib/strided/napi/smap"
+			]
+		},
+		{
+			"task": "examples",
+			"src": [
+				"./src/sabs.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/absf",
+				"@stdlib/strided/base/smap"
+			]
+		},
+		{
+			"task": "benchmark",
+			"src": [
+				"./src/sabs.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/absf",
+				"@stdlib/strided/base/smap"
+			]
+		}
+	]
+}

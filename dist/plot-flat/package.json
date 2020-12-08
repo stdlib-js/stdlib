@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-plot-flat",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "Two-dimensional plotting functionality as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

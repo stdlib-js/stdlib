@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2020 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 <!--lint disable no-heading-punctuation-->
 
 # Frequently Asked Questions
@@ -6,14 +26,14 @@
 
 -   [Why use this project?](#why-use)
 -   [What are the project's core values?](#core-values)
--   [Why numeric computing in JavaScript?](#numeric-computing-in-javascript)
--   [What are the use cases for numeric computing in JavaScript?](#use-cases)
+-   [Why numerical computing in JavaScript?](#numerical-computing-in-javascript)
+-   [What are the use cases for numerical computing in JavaScript?](#use-cases)
 -   [Why not use R, Python, or Julia?](#other-languages)
 -   [Why not exclusively use native add-ons?](#native-add-ons)
 -   [What about WebAssembly?](#web-assembly)
 -   [Why reimplement and provide custom Math implementations?](#custom-math-implementations)
 -   [Why not change the ECMAScript specification to use better Math algorithms?](#ecmascript-math-specification)
--   [What can be done at the standards level to better support numeric computing?](#ecmascript-recommendations)
+-   [What can be done at the standards level to better support numerical computing?](#ecmascript-recommendations)
 -   [Why reimplement module functionality already available on npm?](#reimplementing-existing-packages)
 -   [Why not submit improvements to existing libraries?](#contributing-to-existing-libraries)
 -   [Why not aggregate (curate) packages published to npm?](#why-not-curate)
@@ -50,7 +70,7 @@ This project
 
 4.  provides implementations which work cross-platform (Windows and POSIX), cross-environment (Node.js and web browsers), and cross-context (command-line, REPL, and JavaScript applications)
 
-5.  provides accurate and performant algorithms and implementations for numeric and scientific computing
+5.  provides accurate and performant algorithms and implementations for numerical and scientific computing
 
 6.  increases productivity by
 
@@ -88,16 +108,16 @@ This project
 
 * * *
 
-<a name="numeric-computing-in-javascript"></a>
+<a name="numerical-computing-in-javascript"></a>
 
-### Why numeric computing in JavaScript?
+### Why numerical computing in JavaScript?
 
 1.  **Speed**: JavaScript is fast for a dynamically compiled language. This is largely due to the need for browser vendors to run web applications as fast as possible, thus forcing vendors to make continuous performance improvements and create highly optimized runtime environments.
-2.  **Rendering Engine**: web browsers are performant, highly optimized view engines, supporting a range of rendering modes ([DOM][dom], [canvas][canvas], [WebGL][webgl]). The web browser has become the preferred medium for interactive graphics, with most major numeric computing platforms supporting some form of web browser rendering ([R][shiny], [Python][bokeh], [MATLAB][plotly]). Accordingly, if JavaScript is already being used to render data as a plot, supporting numeric manipulation of that data without requiring language context switching and the additional complexity of establishing bridges between different languages and platforms also makes sense.
-3.  **Community**: JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [communities][stackoverflow-developer-survey]. Giving that community access to better and more intermediate tools for numeric computing enables more potential creative applications and use cases. And further, numeric computing has traditionally been the purview of companies selling expensive software only accessible to industry and large academic institutions. By creating free and open numeric computing tools in JavaScript, numeric computing is democratized and made accessible to a [community][module-counts] which has typically not had access to such tools.
-4.  **Ubiquity**: JavaScript is [ubiquitous][javascript-ubiquity], being supported on nearly any device with a web browser and, now, being pushed as a preferred scripting language in the Internet of Things (IoT) ([Cylon.js][cylon-js], [iot.js][iot-js], [JerryScript][jerryscript], [Johnny-Five][johnny-five]). Thus, if a numeric compute application can run in JavaScript, the broader the potential reach of that application.
-5.  **Distribution**: distributing a numeric compute application is considerably easier when compared to traditional numeric computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
-6.  **Package Management**: Node.js package management is superior to anything available in other numeric computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, the tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numeric computing environments.
+2.  **Rendering Engine**: web browsers are performant, highly optimized view engines, supporting a range of rendering modes ([DOM][dom], [canvas][canvas], [WebGL][webgl]). The web browser has become the preferred medium for interactive graphics, with most major numerical computing platforms supporting some form of web browser rendering ([R][shiny], [Python][bokeh], [MATLAB][plotly]). Accordingly, if JavaScript is already being used to render data as a plot, supporting numerical manipulation of that data without requiring language context switching and the additional complexity of establishing bridges between different languages and platforms also makes sense.
+3.  **Community**: JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [communities][stackoverflow-developer-survey]. Giving that community access to better and more intermediate tools for numerical computing enables more potential creative applications and use cases. And further, numerical computing has traditionally been the purview of companies selling expensive software only accessible to industry and large academic institutions. By creating free and open numerical computing tools in JavaScript, numerical computing is democratized and made accessible to a [community][module-counts] which has typically not had access to such tools.
+4.  **Ubiquity**: JavaScript is [ubiquitous][javascript-ubiquity], being supported on nearly any device with a web browser and, now, being pushed as a preferred scripting language in the Internet of Things (IoT) ([Cylon.js][cylon-js], [iot.js][iot-js], [JerryScript][jerryscript], [Johnny-Five][johnny-five]). Thus, if a numerical compute application can run in JavaScript, the broader the potential reach of that application.
+5.  **Distribution**: distributing a numerical compute application is considerably easier when compared to traditional numerical computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
+6.  **Package Management**: Node.js package management is superior to anything available in other numerical computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numerical computing environments.
 
 <!-- </faq-question> -->
 
@@ -107,7 +127,7 @@ This project
 
 <a name="use-cases"></a>
 
-### What are the use cases for numeric computing in JavaScript?
+### What are the use cases for numerical computing in JavaScript?
 
 Fundamentally, the use cases for numerical and scientific computing in JavaScript are the same as for any other commonly used language for numerical and scientific computation, such as MATLAB, R, Python, and Julia. For example,
 
@@ -156,16 +176,16 @@ You should use JavaScript because
 
 1.  **Language**: you like JavaScript.
 2.  **Simplicity**: you want to minimize language context-switching, reduce build system complexity, and use a smaller stack.
-3.  **Flexibility**: you want flexibility. With the exception of Python and few others, most languages commonly used for numeric computing are ill-suited for general purpose applications (e.g., MATLAB is never used to provide an authentication service). While specialization can mean better support for specialized syntax and libraries, specialization also correlates with reduced flexibility and fewer use cases.
-4.  **Parity**: you recognize that other languages, as languages, have no inherent advantage over JavaScript. With few exceptions, the same criticisms leveled against JavaScript as to why the language is not suitable for numeric computing (e.g., single-threaded, lacks native support for big integers, dynamically compiled, etc) are equally applicable to other languages, such as R and Python. That those languages have risen to prominence is more attributable to chance rather than to comparative advantage.
-5.  **Browsers**: you want to perform numeric computation in a web browser. JavaScript is, and will continue to be, the language of the Web.
+3.  **Flexibility**: you want flexibility. With the exception of Python and few others, most languages commonly used for numerical computing are ill-suited for general purpose applications (e.g., MATLAB is never used to provide an authentication service). While specialization can mean better support for specialized syntax and libraries, specialization also correlates with reduced flexibility and fewer use cases.
+4.  **Parity**: you recognize that other languages, as languages, have no inherent advantage over JavaScript. With few exceptions, the same criticisms leveled against JavaScript as to why the language is not suitable for numerical computing (e.g., single-threaded, lacks native support for big integers, dynamically compiled, etc) are equally applicable to other languages, such as R and Python. That those languages have risen to prominence is more attributable to chance rather than to comparative advantage.
+5.  **Browsers**: you want to perform numerical computation in a web browser. JavaScript is, and will continue to be, the language of the Web.
 6.  **Forward Compatibility**: standards compliant code written now will work in the future. A key mandate when evolving the ECMAScript specification is that new language features must not break the web, thus ensuring that code written in the past continues to work in modern environments. This stands in contrast to language schisms like Python 2 and 3.
-7.  **Edge Computing**: you want to outsource server-side computation to client applications. A numeric compute-enabled client application can analyze data, train models, and generate predictions with shorter latency and lower server costs. Contrary to other languages and environments, a self-contained web application (similar in concept to a pre-compiled binary) which leverages JavaScript for numeric computation does not require persistent server infrastructure or containerization.
-8.  **Node.js**: you want to perform numeric computation in a Node.js application. Node.js is now regularly used by over [98%][node-fortune-500] of Fortune 500 companies (with accelerating industry adoption) and is well-suited for a wide range of applications (including numeric computing) due to its performance and flexibility.
+7.  **Edge Computing**: you want to outsource server-side computation to client applications. A numerical compute-enabled client application can analyze data, train models, and generate predictions with shorter latency and lower server costs. Contrary to other languages and environments, a self-contained web application (similar in concept to a pre-compiled binary) which leverages JavaScript for numerical computation does not require persistent server infrastructure or containerization.
+8.  **Node.js**: you want to perform numerical computation in a Node.js application. Node.js is now regularly used by over [98%][node-fortune-500] of Fortune 500 companies (with accelerating industry adoption) and is well-suited for a wide range of applications (including numerical computing) due to its performance and flexibility.
 9.  **Community**: you want to leverage the continually growing JavaScript and Node.js community. JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [ecosystems][stackoverflow-developer-survey]. Using JavaScript means greater access to help, expertise, and resources, including tutorials, workshops, and education materials.
-10. **Visualization**: you want tighter integration between computation and data visualization. Other languages require intermediary layers to translate computational results into visual artifacts. These layers often involve network requests, longer latency, and increased complexity. Using JavaScript for numeric computation removes the need for intermediaries, allowing immediate and more transparent integration between computation and visualization.
+10. **Visualization**: you want tighter integration between computation and data visualization. Other languages require intermediary layers to translate computational results into visual artifacts. These layers often involve network requests, longer latency, and increased complexity. Using JavaScript for numerical computation removes the need for intermediaries, allowing immediate and more transparent integration between computation and visualization.
 11. **Mad science**: you are interested in mad science applications. Certain applications are only possible in JavaScript due to tight integration between the language and web APIs (e.g., client-based peer-to-peer distributed computing).
-12. **Future**: you want to be part of the future: a future where numeric and scientific computation in JavaScript is not only possible, but also inevitable. 
+12. **Future**: you want to be part of the future: a future where numerical and scientific computation in JavaScript is not only possible, but also inevitable. 
 
 <!-- </faq-question> -->
 
@@ -179,23 +199,15 @@ You should use JavaScript because
 
 Native [add-ons][node-add-ons] have several disadvantages:
 
-1.  **Maintenance**: historically, native [add-ons][node-add-ons] have entailed considerable maintenance costs. Due to a rapidly changing V8 API and a V8 development approach which does not prioritize backward compatibility, each successive Node.js version required rewriting native [add-ons][node-add-ons] to accommodate breaking changes. To address this problem, the Native Abstractions for Node.js project ([NAN][node-nan]) provides a V8 API abstraction layer which [add-ons][node-add-ons] can target, thus allowing an [add-on][node-add-ons] to maintain compatibility between Node.js versions. While [NAN][node-nan] does reduce maintenance costs, costs are not entirely eliminated.
-
-    **Aside**: [NAN][node-nan] is scheduled to be superseded by an [ABI stable API][node-napi], which will provide a similar abstraction layer but also across VMs (e.g., V8 and Chakra).
-
-2.  **Portability**: the primary means for building native [add-ons][node-add-ons] is [node-gyp][node-gyp], a tool which wraps [GYP][gyp] (a deprecated build tool formerly used by the Chromium team) and aims to provide a cross-platform approach for compiling Node.js native [add-ons][node-add-ons]. While [GYP][gyp] is suitable for many native [add-on][node-add-ons] use cases, the tool is less well-suited for building numeric and scientific computing libraries. In particular, [GYP][gyp] is primarily oriented toward compiling C/C++ libraries and applications. This orientation is problematic because numeric computing libraries often require the ability to not only compile C/C++, but also Fortran, CUDA, and other compiled languages. On Linux systems, [GYP][gyp] can leverage the GNU compiler toolchain, including [gfortran][gfortran]; however, [node-gyp][node-gyp]'s reliance on Microsoft Visual Studio (MSVS) [prevents][msvs-fortran-issue] compiling [add-ons][node-add-ons] containing Fortran code on Windows. Furthermore, building [add-ons][node-add-ons] on Windows requires installing Windows [build tools][node-windows-build-tools], and, currently, the [recommended][node-windows-build-tools] means of installation is not backward compatible with Node.js environments prior to version `4`. Lastly, while pre-building binaries is one way to circumvent compilation and portability issues, cross-compilation is neither straightforward nor foolproof and does not obviate the need for portable compilation (see debugging below). 
-
+1.  **Maintenance**: historically, native [add-ons][node-add-ons] have entailed considerable maintenance costs. Due to a rapidly changing V8 API and a V8 development approach which does not prioritize backward compatibility, each successive Node.js version required rewriting native [add-ons][node-add-ons] to accommodate breaking changes. To address initially this problem, the Native Abstractions for Node.js project ([NAN][node-nan]) provided a V8 API abstraction layer which [add-ons][node-add-ons] could target, thus allowing an [add-on][node-add-ons] to maintain compatibility between Node.js versions. While [NAN][node-nan] did reduce maintenance costs, costs were not entirely eliminated. [NAN][node-nan] has been superseded by an [ABI stable API][node-napi] (N-API), which provides a similar abstraction layer but also across VMs (e.g., V8 and Chakra). While N-API significantly reduces native add-on maintenance burden, that burden is not zero.
+2.  **Portability**: the primary means for building native [add-ons][node-add-ons] is [node-gyp][node-gyp], a tool which wraps [GYP][gyp] (a deprecated build tool formerly used by the Chromium team) and aims to provide a cross-platform approach for compiling Node.js native [add-ons][node-add-ons]. While [GYP][gyp] is suitable for many native [add-on][node-add-ons] use cases, the tool is less well-suited for building numerical and scientific computing libraries. In particular, [GYP][gyp] is primarily oriented toward compiling C/C++ libraries and applications. This orientation is problematic because numerical computing libraries often require the ability to not only compile C/C++, but also Fortran, CUDA, and other compiled languages. On Linux systems, [GYP][gyp] can leverage the GNU compiler toolchain, including [gfortran][gfortran]; however, [node-gyp][node-gyp]'s reliance on Microsoft Visual Studio (MSVS) [prevents][msvs-fortran-issue] compiling [add-ons][node-add-ons] containing Fortran code on Windows. Furthermore, building [add-ons][node-add-ons] on Windows requires installing Windows [build tools][node-windows-build-tools], and, currently, the [recommended][node-windows-build-tools] means of installation is not backward compatible with Node.js environments prior to version `4`. Lastly, while pre-building binaries is one way to circumvent compilation and portability issues, cross-compilation is neither straightforward nor foolproof and does not obviate the need for portable compilation (see debugging below). 
 3.  **Web browsers**: native [add-ons][node-add-ons] are not compatible with or portable to web browsers. ([WebAssembly][wasm] will not change this fact.)
-
 4.  **Complexity**: compilation presupposes the existence of compilers (e.g., [gfortran][gfortran]) and other tooling in order to successfully compile, thus often requiring out-of-band installation, setup, and configuration. In short, compilation increases complexity and increases the risk that something can and will go wrong.
-
 5.  **Development**: native Node.js [add-ons][node-add-ons] require significant upfront development costs compared to porting implementations to JavaScript. Creating a native [add-on][node-add-ons] entails more than writing a simple wrapper around an existing C/C++ library; the process involves additional tooling, testing, and development procedures, all requiring time and effort. These costs are acutely apparent during iteration cycles targeting multiple platforms. In comparison, as a higher-level language, JavaScript facilitates faster development, has built-in portability, and has minimized performance costs.
-
-6.  **Bundling**: existing low-level C/C++ and Fortran numeric computing libraries are often large monoliths. Hence, writing a Node.js native [add-on][node-add-ons] which exposes a single function from one of these libraries requires linking to a much larger codebase, resulting in larger bundle sizes, increased network costs, and longer installation times. And while many systems may come with pre-installed numeric computing libraries (e.g., Apple Accelerate Framework), their existence is neither guaranteed nor is detecting their existence trivial.
-
+6.  **Bundling**: existing low-level C/C++ and Fortran numerical computing libraries are often large monoliths. Hence, writing a Node.js native [add-on][node-add-ons] which exposes a single function from one of these libraries requires linking to a much larger codebase, resulting in larger bundle sizes, increased network costs, and longer installation times. And while many systems may come with pre-installed numerical computing libraries (e.g., Apple Accelerate Framework), their existence is neither guaranteed nor is detecting their existence trivial.
 7.  **Debugging**: debugging and instrumentation require separate compilation pathways. JavaScript implementations have the luxury of abundant tooling for dynamic inspection and instrumentation. The same cannot be said for native [add-ons][node-add-ons].
 
-Despite the disadvantages articulated above, this project **does** include Node.js native [add-ons][node-add-ons] and will continue to do so. However, each [add-on][node-add-ons] must include a JavaScript fallback in order to address cross-platform portability. While beneficial, native [add-ons][node-add-ons] are only part of what must be a more comprehensive solution to providing numeric computing facilities to Node.js, JavaScript, and the Web.
+Despite the disadvantages articulated above, this project **does** include Node.js native [add-ons][node-add-ons] and will continue to do so. However, each [add-on][node-add-ons] must include a JavaScript fallback in order to address cross-platform portability. While beneficial, native [add-ons][node-add-ons] are only part of what must be a more comprehensive solution to providing numerical computing facilities to Node.js, JavaScript, and the Web.
 
 <!-- </faq-question> -->
 
@@ -207,11 +219,11 @@ Despite the disadvantages articulated above, this project **does** include Node.
 
 ### What about WebAssembly?
 
-[WebAssembly][wasm] proposes to fundamentally change the web platform by providing a low-level compilation target, which, in the future, will allow any language to be compiled to run on the Web. Once [WebAssembly][wasm] is ubiquitously supported, web developers will be able to use, e.g., a numeric computation library from, not just JavaScript, but any language, including traditional languages, such as R, Python, Julia, and C/C++ (provided the library can compile). While the possibility of using libraries like [NumPy][numpy] and [scikit-learn][scikit-learn] on the Web is exciting, this is not viewed as an existential threat for the following reasons:
+[WebAssembly][wasm] proposes to fundamentally change the web platform by providing a low-level compilation target, which, in the future, will allow any language to be compiled to run on the Web. Once [WebAssembly][wasm] is ubiquitously supported, web developers will be able to use, e.g., a numerical computation library from, not just JavaScript, but any language, including traditional languages, such as R, Python, Julia, and C/C++ (provided the library can compile). While the possibility of using libraries like [NumPy][numpy] and [scikit-learn][scikit-learn] on the Web is exciting, this is not viewed as an existential threat for the following reasons:
 
 1.  **Compilation**: as developers who have used [asm.js][asm] to compile C and C++ libraries to run on the Web can attest, the process is not as simple as defining input and output targets. Often pre-compiled code has to be massaged into a form suitable for compilation, which means work is involved, requiring both time and labor.
 2.  **Bundling**: page load times are, and will continue to be, important, especially for business critical applications. The JavaScript community has invested considerable time and effort to both developing tooling and improving the web platform to bundle only code which is actually used and needed. Libraries written in other languages (e.g., [NumPy][numpy]) are not as amenable to modular bundles. Lack of modularity combined with significant size renders many non-JavaScript libraries impractical for web applications.
-3.  **Timescale**: [WebAssembly][wasm] is not likely to be ubiquitous anytime soon (as of 2018, browser implementations exist, but development targeting [WebAssembly][wasm] is not widespread) and a need exists now for numeric computation libraries which work on the Web.
+3.  **Timescale**: [WebAssembly][wasm] is not likely to be ubiquitous anytime soon (as of 2020, browser implementations widely exist, but development targeting [WebAssembly][wasm] is not widespread) and a need exists now for numerical computation libraries which work on the Web.
 4.  **Monoglot**: developers will still build JavaScript applications and most will, all things being equal, want to use a library written in the same idiom. Using a single language stack reduces cognitive overhead and simplifies application development.
 5.  **Legacy**: [WebAssembly][wasm] is unlikely to replace JavaScript, but, instead, serve a complementary role. JavaScript has a long and decorated history as part of the web platform. Relegating JavaScript to the dust bin would entail breaking the Web, an outcome which has been and will continue to be untenable, thus securing JavaScript's privileged status.
 6.  **Scripting**: [WebAssembly][wasm] does **not** eliminate the need for a scripting language. Even if lower level, performance critical math implementations are [WebAssembly][wasm] compiled C/C++ libraries, a dynamic, loosely typed, interpreted scripting language is still necessary. The iteration cycle when using compiled languages is simply too long when compared to dynamic languages, particularly within the context of interactive analysis. Accordingly, functionality is, and will continue to be, necessary in JavaScript, a scripting language to which, given the size and energy of its community, every other scripting language pales in comparison.
@@ -228,9 +240,9 @@ Despite the disadvantages articulated above, this project **does** include Node.
 
 ### Why reimplement and provide custom Math implementations?
 
-1.  [ECMA-262][ecma-262] does not mandate specific algorithms (only recommends `libm`). Accordingly, JavaScript implementors are free to choose any algorithm, which means that numeric computation results often differ across environments. This renders the standard JavaScript Math library not amenable to reproducible computation.
-2.  [ECMA-262][ecma-262] does not require a minimum [precision][mdn-math]. As a result, JavaScript implementors make non-transparent trade-offs between speed and accuracy, frequently favoring speed above all else. While traditional web applications may not require highly accurate Math results, many numeric computation applications do. And because the implementations are not transparent, debugging accuracy issues in numeric computation applications which use Math built-ins is considerably more difficult.
-3.  Because built-in Math functions are implementation dependent, numeric computation applications are **not** portable. By creating a set of standard Math implementations, we ensure that results on one platform are reproducible on every other platform.
+1.  [ECMA-262][ecma-262] does not mandate specific algorithms (only recommends `libm`). Accordingly, JavaScript implementors are free to choose any algorithm, which means that numerical computation results often differ across environments. This renders the standard JavaScript Math library not amenable to reproducible computation.
+2.  [ECMA-262][ecma-262] does not require a minimum [precision][mdn-math]. As a result, JavaScript implementors make non-transparent trade-offs between speed and accuracy, frequently favoring speed above all else. While traditional web applications may not require highly accurate Math results, many numerical computation applications do. And because the implementations are not transparent, debugging accuracy issues in numerical computation applications which use Math built-ins is considerably more difficult.
+3.  Because built-in Math functions are implementation dependent, numerical computation applications are **not** portable. By creating a set of standard Math implementations, we ensure that results on one platform are reproducible on every other platform.
 4.  Built-in math functions frequently have bugs (see [built_in_math_bugs.md][built-in-math-bugs]).
 5.  Built-in math functions are often buried deep in compiler code and written in languages other than JavaScript. By implementing Math functions purely in JavaScript, the hope is that the underlying algorithms are more transparent, approachable, forkable, and debuggable.
 
@@ -260,11 +272,11 @@ The reasons are as follows:
 
 <!--lint disable list-item-spacing-->
 
-1.  **underspecified standard**: the ECMAScript specification for the standard Math library is underspecified, but not without merit. Namely, underspecification allows those implementing the specification to make trade-offs between speed and precision. Were the specification to mandate a particular algorithm, e.g., for `Math.sin`, implementers would be locked into **always** using a particular implementation. Especially for special functions, different algorithms will yield different results under varying conditions. Thus, to change an underlying algorithm would mean to break backward compatibility. By not committing themselves to any hard backward compatibility constraints, implementors maintain a degree of flexibility, including the ability to use algorithms which cater to a particular user base (gaming versus numeric computing). In which case, underspecification has advantages.   
+1.  **underspecified standard**: the ECMAScript specification for the standard Math library is underspecified, but not without merit. Namely, underspecification allows those implementing the specification to make trade-offs between speed and accuracy. Were the specification to mandate a particular algorithm, e.g., for `Math.sin`, implementers would be locked into **always** using a particular implementation. Especially for special functions, different algorithms will yield different results under varying conditions. Thus, to change an underlying algorithm would mean to break backward compatibility. By not committing themselves to any hard backward compatibility constraints, implementors maintain a degree of flexibility, including the ability to use algorithms which cater to a particular user base (gaming versus numerical computing). In which case, underspecification has advantages.   
 
 2.  **cross-browser variability**: an underspecified standard, however, has disadvantages. Because implementors are free to choose underlying algorithms, relying exclusively on built-in Math functionality renders portability across more than one environment impossible. Even if all implementors happened to use the same underlying algorithm, a developer cannot, _a priori_, **guarantee** or assume that only one algorithm is implemented. The default assumption must be: _if more than one algorithm can exist, more than one algorithm will exist_.
 
-3.  **no single codebase**: unlike other standard libraries (e.g., Golang, Python, Julia, etc), JavaScript does not have a single shared codebase. Each browser manufacturer has their own implementation and independent codebase with varying architecture and organization. More fundamentally, a common _implementation_ does **not** exist; only common _interfaces_ exist. Thus, a developer wanting to write a numerical application must navigate and understand multiple sources of truth. Such expenditures incur significant overhead, especially when wanting to file issues, submit patches, or standardize a particular algorithm. For example, a patch in Chrome does not translate to a patch in Safari. Because each implementor is free to erect a protected castle, those writing numerical algorithms are resigned to treating the standard Math library as a black box and must always cater to the lowest common denominator (which is often the empirically determined slowest and/or least precise algorithm).
+3.  **no single codebase**: unlike other standard libraries (e.g., Golang, Python, Julia, etc), JavaScript does not have a single shared codebase. Each browser manufacturer has their own implementation and independent codebase with varying architecture and organization. More fundamentally, a common _implementation_ does **not** exist; only common _interfaces_ exist. Thus, a developer wanting to write a numerical application must navigate and understand multiple sources of truth. Such expenditures incur significant overhead, especially when wanting to file issues, submit patches, or standardize a particular algorithm. For example, a patch in Chrome does not translate to a patch in all other web browsers. Because each implementor is free to erect a protected castle, those writing numerical algorithms are resigned to treating the standard Math library as a black box and must always cater to the lowest common denominator (which is often the empirically determined slowest and/or least precise algorithm).
 
 4.  **versioning**: a developer does not have the freedom to choose which version of a particular algorithm she is given. In an "evergreen" environment, her application is only guaranteed a consistent interface, not an underlying implementation. Each background update may influence results in subtle ways and introduce bugs and unforeseen variability. A developer relying exclusively on standard library built-ins cannot assume reproducibility upon relaunching a browser. Thus, not only is cross-browser portability problematic, but same-browser-different-version portability is problematic. 
 
@@ -284,7 +296,7 @@ The reasons are as follows:
 
 <!--lint enable list-item-spacing-->
 
-Based on the reasons above, Math is fundamentally broken at the standards and implementation levels. Nevertheless, based on the existence of solid low-level primitives, speed, and ecosystem, this project maintains that JavaScript **is** a viable platform for numeric and mathematical computing. The solution, however, does not entail standardization, but rather the development of independent community-driven solutions which can provide the kind of rigorous, robust, and performant numerical algorithms applications need.
+Based on the reasons above, Math is fundamentally broken at the standards and implementation levels. Nevertheless, based on the existence of solid low-level primitives, speed, and ecosystem, this project maintains that JavaScript **is** a viable platform for numerical and mathematical computing. The solution, however, does not entail standardization, but rather the development of independent community-driven solutions which can provide the kind of rigorous, robust, and performant numerical algorithms applications need.
 
 **Note**: To their credit, browser vendors have tried to improve and standardize their implementations. Their efforts to continue doing so are needed and important, but their improvement does **not** obviate the need for independent community-driven solutions.
 
@@ -296,9 +308,11 @@ Based on the reasons above, Math is fundamentally broken at the standards and im
 
 <a name="ecmascript-recommendations"></a>
 
-### What can be done at the standards level to better support numeric computing?
+### What can be done at the standards level to better support numerical computing?
 
-To better support numeric computing, standards bodies can do the following:
+To better support numerical computing, standards bodies can do the following:
+
+<!--
 
 1.  **64-bit integers**: add support for 64-bit integers. 64-bit integers (both signed and unsigned) are important for the following reasons:
 
@@ -306,19 +320,25 @@ To better support numeric computing, standards bodies can do the following:
     -   **Pseudorandom number generation**. Modern pseudorandom number generators (PRNGs) commonly use 64-bit integers. Hence, lack of native 64-bit integer support prevents implementing more robust PRNGs which have longer periods and better randomness qualities (e.g., [xorshift\*][xorshift*], [PCG][pcg], and [Mersenne twister (64-bit)][mersenne-twister]).
     -   **IDs**. In modern applications, 32-bit integer IDs are rarely enough. 32-bit integers have on the order of `10**9` unique values compared to `10**19` for 64-bit integers. With 64-bit integer support, additional efficient hashing and bit masking algorithms become feasible.
 
-2.  **128-bit integers**: add support for 128-bit integers. 128-bit integers (both signed and unsigned) are important for the following reasons:
+NOTE: addressed by BigInt
+
+1.  **128-bit integers**: add support for 128-bit integers. 128-bit integers (both signed and unsigned) are important for the following reasons:
 
     -   **Cryptography**. 128-bit integers are a common key size for [symmetric ciphers][symmetric-ciphers], and, importantly, 128-bit integers facilitate support for additional cryptographically secure pseudorandom number generators (CSPRNGs).
     -   **Universally unique identifiers**. Universally unique identifiers ([UUIDs][uuid]) are stored as 128-bit values.
     -   **Arbitrary-precision arithmetic**. [Arbitrary-precision arithmetic][arbitrary-precision-arithmetic] is beneficial for high precision applications and in preventing overflow, computing fundamental mathematical constants, and evaluating precision errors in fixed-precision calculations.
 
-3.  **Large arrays**: add support for large arrays. Arrays are currently limited to [`2**32-1`][ecma-262-array-length] (approximately `4` billion) elements. Many applications will never reach this limit; however, as datasets continue to increase in size, the need for larger arrays will become more apparent. For example, consider a `100000 x 100000` dense matrix, which is not uncommon when working with sensor data and trying to find correlations. This matrix will have `10` billion elements. Given current length limitations, one cannot store this data contiguously in a plain JavaScript array, thus resulting in increased cache misses and decreased performance.
+NOTE: addressed by BigInt
+
+-->
+
+1.  **Large arrays**: add support for large arrays. Arrays are currently limited to [`2**32-1`][ecma-262-array-length] (approximately `4` billion) elements. Many applications will never reach this limit; however, as datasets continue to increase in size, the need for larger arrays will become more apparent. For example, consider a `100000 x 100000` dense matrix, which is not uncommon when working with sensor data and trying to find correlations. This matrix will have `10` billion elements. Given current length limitations, one cannot store this data contiguously in a plain JavaScript array, thus resulting in increased cache misses and decreased performance.
 
     **Aside:** typed arrays and, more generally, array-like objects may have as many as [`2**53-1`][ecma-262-tolength] elements. In the case of typed arrays, however, one must allocate memory upon instantiation; thus, growing a typed array as needed, while possible, is neither straightforward nor efficient.
 
-4.  **Boolean arrays**: add support for `boolean` typed arrays. Similar in their nature to numeric typed arrays, `boolean` typed arrays would allow for more compact storage and efficient iteration for array masks which can be applied to, e.g., strided arrays.
+1.  **Boolean arrays**: add support for `boolean` typed arrays. Similar in their nature to numerical typed arrays, `boolean` typed arrays would allow for more compact storage and efficient iteration for array masks which can be applied to, e.g., strided arrays.
 
-5.  **Typed objects**: add support for [typed objects][typed-objects-proposal]. Typed objects would facilitate efficient memory storage of data, which is critical for [performant][five-things-that-make-go-fast] numeric computations. In short,
+1.  **Typed objects**: add support for [typed objects][typed-objects-proposal]. Typed objects would facilitate efficient memory storage of data, which is critical for [performant][five-things-that-make-go-fast] numerical computations. In short,
 
     -   typed objects allow compact data structures and avoid unnecessary indirection
     -   typed objects enable better cache utilization
@@ -326,21 +346,27 @@ To better support numeric computing, standards bodies can do the following:
 
     Complex numbers are a prime example where typed objects would be immensely valuable. Particularly for complex vector arrays, the ability to access adjacent memory locations would result in significant performance benefits.
 
-6.  **Value types**: add support for [value types][typed-objects-explainer]. Value types allow for creating custom types and enabling compiler optimizations. As with [typed objects][typed-objects-proposal], complex numbers are a prime example where value types are valuable, due to value comparison via structural equivalence.
+1.  **Value types**: add support for [value types][typed-objects-explainer]. Value types allow for creating custom types and enabling compiler optimizations. As with [typed objects][typed-objects-proposal], complex numbers are a prime example where value types are valuable, due to value comparison via structural equivalence.
 
-7.  **Operator overloading**: add support for [operator overloading][operator-overloading]. Assuming [typed objects][typed-objects-proposal] and [value types][typed-objects-explainer], a natural extension is [operator overloading][operator-overloading]. Currently, element-wise vector operations and use cases such as matrix multiplication require either verbose OOP semantics (e.g., `M1.mul( M2 )` ) or functional equivalents requiring internal argument validation (e.g., `mul( M1, M2 )`. Contrast JavaScript to languages such as MATLAB or Julia which allow for compact expressions (e.g., `M1 .* M2`). Furthermore, operator overloading has a general appeal beyond vector and matrix operations, such as enabling cleaner `Date` arithmetic. The ability to write compact, and yet expressive, code would significantly broaden the appeal of JavaScript for numeric computing.
+1.  **Operator overloading**: add support for [operator overloading][operator-overloading]. Assuming [typed objects][typed-objects-proposal] and [value types][typed-objects-explainer], a natural extension is [operator overloading][operator-overloading]. Currently, element-wise vector operations and use cases such as matrix multiplication require either verbose OOP semantics (e.g., `M1.mul( M2 )` ) or functional equivalents requiring internal argument validation (e.g., `mul( M1, M2 )`. Contrast JavaScript to languages such as MATLAB or Julia which allow for compact expressions (e.g., `M1 .* M2`). Furthermore, operator overloading has a general appeal beyond vector and matrix operations, such as enabling cleaner `Date` arithmetic. The ability to write compact, and yet expressive, code would significantly broaden the appeal of JavaScript for numerical computing.
 
     **Aside**: vector and matrix operations will require additional operators. For instance, when multiplying matrices, need to distinguish between element-wise multiplication versus the matrix product. In languages such as MATLAB and Julia, element-wise operators include a period (e.g., `M1 .* M2` versus `M1 * M2`).
 
-8.  **Big numbers**: add support for big [integers][julia-bigint], [rationals][golang-big], and [floats][julia-bigfloat]. In addition to cryptography and computing irrational numbers, arbitrary precision arithmetic is useful for algorithms involving double-precision floating-point numbers. Currently, lack of efficient, and relatively performant, big number support limits the scope and types of implemented algorithms, including for basic transcendental functions.
+1.  **Big numbers**: add support for big [integers][julia-bigint], [rationals][golang-big], and [floats][julia-bigfloat]. In addition to cryptography and computing irrational numbers, arbitrary precision arithmetic is useful for algorithms involving double-precision floating-point numbers. Currently, lack of efficient, and relatively performant, big number support limits the scope and types of implemented algorithms, including for basic transcendental functions.
 
-9.  **SIMD**: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][mdn-simd-js] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is **not** particularly well-suited for large vector operations, which are common in numeric computing (e.g., BLAS).
+1.  **SIMD**: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][mdn-simd-js] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is **not** particularly well-suited for large vector operations, which are common in numerical computing (e.g., BLAS).
 
-    **Aside:** JavaScript may never have native SIMD support. Instead, SIMD may be possible only via [WebAssembly][wasm]. Lack of native JavaScript SIMD support would be unfortunate, as plenty of applications exist (e.g., scripting for purposes of analysis and data manipulation), which would benefit from SIMD operations without requiring a context switch to a lower-level language and additional compilation steps.
+    **Aside:** JavaScript may never have native SIMD support. Instead, SIMD is currently only possible only via [WebAssembly][wasm]. Lack of native JavaScript SIMD support would be unfortunate, as plenty of applications exist (e.g., scripting for purposes of analysis and data manipulation), which would benefit from SIMD operations without requiring a context switch to a lower-level language and additional compilation steps.
 
-10. **Parallelism**: add support for lightweight threading (parallelism). Currently, [data parallelism][data-parallelism], i.e., the same operations performed on different subsets of the same data, is only achievable by manual data orchestration and task execution via either [web workers][mdn-web-workers] (browser) or [child processes][node-child-process] (Node.js). While [web workers][mdn-web-workers] support [Transferable Objects][mdn-transferable-objects] thus allowing shared memory access, the same is not true for Node.js. Particularly in Node.js, task parallelism is heavyweight and cumbersome, especially for use cases like parallel computation involving matrix elements (e.g., compare to MATLAB's [`parfor`][matlab-parfor]). The ability to easily distribute data to a worker pool (processors) would provide a significant performance boost to many data analysis tasks.
+1.  **GPGPU**: provide better support for [GPGPU][gpgpu]. Currently, performing general purpose GPU (GPGPU) computing tasks within a browser is only possible via [WebGL][webgl] and awkward usage of shaders, which are designed for generating graphics, not generic number crunching. Additionally, synchronous data transfers between the main thread and the GPU are expensive, debugging support is limited, and reading floating-point textures is not possible without workarounds which encode floating-point numbers into integer outputs (RGBA). While [compute shaders][compute-shaders] and [Vulkan][vulkan] promise better GPGPU support, we are years away from realizing their proposed benefits via JavaScript. Once realized, however, embarrassingly parallel computation tasks and machine learning techniques such as neural networks become more viable and efficient.
 
-11. **GPGPU**: provide better support for [GPGPU][gpgpu]. Currently, performing general purpose GPU (GPGPU) computing tasks within a browser is only possible via [WebGL][webgl] and awkward usage of shaders, which are designed for generating graphics, not generic number crunching. Additionally, synchronous data transfers between the main thread and the GPU are expensive, debugging support is limited, and reading floating-point textures is not possible without workarounds which encode floating-point numbers into integer outputs (RGBA). While [compute shaders][compute-shaders] and [Vulkan][vulkan] promise better GPGPU support, we are years away from realizing their proposed benefits via JavaScript. Once realized, however, embarrassingly parallel computation tasks and machine learning techniques such as neural networks become more viable and efficient.
+<!--
+
+1.  **Parallelism**: add support for lightweight threading (parallelism). Currently, [data parallelism][data-parallelism], i.e., the same operations performed on different subsets of the same data, is only achievable by manual data orchestration and task execution via either [web workers][mdn-web-workers] (browser) or [child processes][node-child-process] (Node.js). While [web workers][mdn-web-workers] support [Transferable Objects][mdn-transferable-objects] thus allowing shared memory access, the same is not true for Node.js. Particularly in Node.js, task parallelism is heavyweight and cumbersome, especially for use cases like parallel computation involving matrix elements (e.g., compare to MATLAB's [`parfor`][matlab-parfor]). The ability to easily distribute data to a worker pool (processors) would provide a significant performance boost to many data analysis tasks.
+
+NOTE: see https://nodejs.org/api/worker_threads.html
+
+-->
 
 <!-- </faq-question> -->
 
@@ -477,6 +503,8 @@ Not at this time. This stance may be reevaluated when the following conditions a
 4.  Inclusion maintains backward compatibility with earlier Node.js versions and non-ES2015 environments.
 5.  Inclusion does not require a transpiler toolchain.
 
+> **UPDATE**: work has begun to explore publishing a version of the project as a collection of ES modules.
+
 #### But what about tree shaking?
 
 Tree shaking (i.e., removing unused symbols) treats the symptom, not the disease. A disciplined emphasis on modularity and crafting implementations which do one thing and do one thing well obviates the need for removing unused symbols.
@@ -554,7 +582,7 @@ var foo = require( './../../../../../@stdlib/foo' );
 
 becomes
 
-<!-- eslint-disable stdlib/require-file-extensions -->
+<!-- eslint-disable stdlib/require-file-extensions, stdlib/no-redeclare -->
 
 ```javascript
 var foo = require( '@stdlib/foo' );
@@ -698,7 +726,7 @@ You can support the project by
 -   helping improve documentation and examples
 -   using the project and offering feedback
 -   filing bug reports and flagging performance regressions
--   advocating for standards committees to add features at the specification level to better enable numeric computing in JavaScript
+-   advocating for standards committees to add features at the specification level to better enable numerical computing in JavaScript
 -   helping promote the project on social media, at your company, and within your networks
 -   providing build and infrastructure support
 -   providing financial support ([Patreon][patreon-stdlib])
@@ -720,7 +748,7 @@ You should contribute
 -   if you want to write high-quality software
 -   if you want to learn underlying algorithms
 -   if you want to learn how to write rigorous and robust implementations
--   if you want to bring numeric and scientific computing to JavaScript and the Web
+-   if you want to bring numerical and scientific computing to JavaScript and the Web
 -   if you want to be part of a dedicated, supportive, and inclusive community
 -   if you believe in what we are doing and want to be a part of it :)
 
@@ -786,9 +814,11 @@ See the [contributing guide][contributing-guide].
 
 [mdn-simd-js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD
 
+<!--
 [mdn-web-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker
 
 [mdn-transferable-objects]: https://developer.mozilla.org/en-US/docs/Web/API/Transferable
+-->
 
 [built-in-math-bugs]: https://github.com/stdlib-js/stdlib/blob/develop/docs/misc/built_in_math_bugs.md
 
@@ -828,7 +858,9 @@ See the [contributing guide][contributing-guide].
 
 [node-require]: https://nodejs.org/api/modules.html
 
+<!--
 [node-child-process]: https://nodejs.org/api/child_process.html
+-->
 
 [modifying-node-path-hack]: https://lostechies.com/derickbailey/2014/02/20/how-i-work-around-the-require-problem-in-nodejs/
 
@@ -842,9 +874,11 @@ See the [contributing guide][contributing-guide].
 
 [ecma-262-asi]: https://www.ecma-international.org/ecma-262/5.1/#sec-7.9
 
+<!--
 [golang-frexp]: https://github.com/golang/go/blob/c007ce824d9a4fccb148f9204e04c23ed2984b71/src/math/frexp.go#L27
 
 [golang-float64bits]: https://github.com/golang/go/blob/964639cc338db650ccadeafb7424bc8ebb2c0f6c/src/math/unsafe.go#L17
+-->
 
 [golang-big]: https://golang.org/pkg/math/big/
 
@@ -852,6 +886,7 @@ See the [contributing guide][contributing-guide].
 
 [julia-bigfloat]: http://docs.julialang.org/en/stable/stdlib/numbers/?highlight=bigfloat#Base.BigFloat
 
+<!--
 [@stdlib/math/base/special/frexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/frexp/lib/frexp.js#L67
 
 [@stdlib/math/base/special/ldexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/ldexp/lib/ldexp.js#L105
@@ -871,6 +906,7 @@ See the [contributing guide][contributing-guide].
 [symmetric-ciphers]: https://en.wikipedia.org/wiki/Symmetric-key_algorithm
 
 [arbitrary-precision-arithmetic]: https://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic
+-->
 
 [mozilla-simd]: https://hacks.mozilla.org/2014/10/introducing-simd-js/
 
@@ -884,9 +920,11 @@ See the [contributing guide][contributing-guide].
 
 [operator-overloading]: https://en.wikipedia.org/wiki/Operator_overloading
 
+<!--
 [data-parallelism]: https://en.wikipedia.org/wiki/Data_parallelism
 
 [matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
+-->
 
 [patreon-stdlib]: https://www.patreon.com/athan
 

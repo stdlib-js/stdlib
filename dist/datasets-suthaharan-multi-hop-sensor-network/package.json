@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-suthaharan-multi-hop-sensor-network",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "Labeled wireless sensor network data set collected from a multi-hop wireless sensor network deployment using TelosB motes as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

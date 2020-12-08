@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-datasets-primes-100k",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "The first 100,000 prime numbers as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

@@ -2610,6 +2610,17 @@
       "type"
     ]
   },
+  "https://en.wikipedia.org/wiki/Identity_function": {
+    "id": "identity-function",
+    "description": "Wikipedia entry for the identity function.",
+    "short_url": "",
+    "keywords": [
+      "identity",
+      "math",
+      "function",
+      "fcn"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Index_of_dispersion": {
     "id": "variance-to-mean-ratio",
     "description": "Wikipedia entry for the variance-to-mean ratio (VMR), a measure used to quantify whether a set of observed occurrences are clustered or dispersed compared to a standard statistical model.",

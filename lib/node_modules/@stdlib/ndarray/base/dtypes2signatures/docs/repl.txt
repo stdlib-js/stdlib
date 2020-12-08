@@ -1,0 +1,29 @@
+
+{{alias}}( dtypes, nin, nout )
+    Transforms a list of array argument data types into a list of signatures.
+
+    Parameters
+    ----------
+    dtypes: Array<string>
+        List of array argument data types.
+
+    nin: integer
+        Number of input array arguments.
+
+    nout: integer
+        Number of output array arguments.
+
+    Returns
+    -------
+    out: Array<string>
+        List of signatures.
+
+    Examples
+    --------
+    > var types = [ 'float64', 'float64', 'float32', 'float32' ];
+    > var out = {{alias}}( types, 1, 1 )
+    [ '(float64) => (float64)', '(float32) => (float32)' ]
+
+    See Also
+    --------
+

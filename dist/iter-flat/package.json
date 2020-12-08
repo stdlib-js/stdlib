@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/dist-iter-flat",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "Iterator utilities as a UMD bundle.",
   "license": "Apache-2.0",
   "author": {

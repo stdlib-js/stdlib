@@ -135,7 +135,7 @@ resolve_includes() {
 	local script
 	local opts
 
-	opts='{}'
+	opts="{'task':'benchmark'}"
 
 	# Generate the script for resolving `include` directories:
 	script='"'"var path = require('path'); var arr = require('@stdlib/tools/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'

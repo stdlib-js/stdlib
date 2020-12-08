@@ -1,0 +1,112 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/b_b.c",
+				"./src/b_d.c",
+				"./src/b_d_as_d_d.c",
+				"./src/b_f.c",
+				"./src/b_f_as_d_d.c",
+				"./src/b_f_as_f_f.c",
+				"./src/b_i.c",
+				"./src/b_i_as_i_i.c",
+				"./src/b_k.c",
+				"./src/b_k_as_k_k.c",
+				"./src/b_t.c",
+				"./src/b_t_as_t_t.c",
+				"./src/b_u.c",
+				"./src/b_u_as_u_u.c",
+
+				"./src/d_d.c",
+				"./src/d_i.c",
+				"./src/d_l.c",
+
+				"./src/f_d.c",
+				"./src/f_d_as_d_d.c",
+				"./src/f_f.c",
+				"./src/f_f_as_d_d.c",
+				"./src/f_i.c",
+				"./src/f_l.c",
+
+				"./src/i_d.c",
+				"./src/i_d_as_d_d.c",
+				"./src/i_i.c",
+				"./src/i_u.c",
+
+				"./src/k_d.c",
+				"./src/k_d_as_d_d.c",
+				"./src/k_f.c",
+				"./src/k_f_as_d_d.c",
+				"./src/k_f_as_f_f.c",
+				"./src/k_i.c",
+				"./src/k_i_as_i_i.c",
+				"./src/k_k.c",
+				"./src/k_t.c",
+				"./src/k_u.c",
+
+				"./src/l_l.c",
+				"./src/l_v.c",
+
+				"./src/s_b.c",
+				"./src/s_d.c",
+				"./src/s_d_as_d_d.c",
+				"./src/s_f.c",
+				"./src/s_f_as_d_d.c",
+				"./src/s_f_as_f_f.c",
+				"./src/s_i.c",
+				"./src/s_i_as_i_i.c",
+				"./src/s_k.c",
+				"./src/s_k_as_k_k.c",
+				"./src/s_s.c",
+				"./src/s_t.c",
+				"./src/s_u.c",
+
+				"./src/t_d.c",
+				"./src/t_d_as_d_d.c",
+				"./src/t_f.c",
+				"./src/t_f_as_d_d.c",
+				"./src/t_f_as_f_f.c",
+				"./src/t_i.c",
+				"./src/t_i_as_i_i.c",
+				"./src/t_t.c",
+				"./src/t_u.c",
+				"./src/t_u_as_u_u.c",
+
+				"./src/u_d.c",
+				"./src/u_d_as_d_d.c",
+				"./src/u_u.c",
+
+				"./src/v_v.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": []
+		}
+	]
+}
