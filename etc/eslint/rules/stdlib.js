@@ -4094,7 +4094,6 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Int16Array',
 		'Int32Array',
 		'Map',
-		'module', // Node.js
 		'Number',
 		'Object',
 		'process', // Node.js
