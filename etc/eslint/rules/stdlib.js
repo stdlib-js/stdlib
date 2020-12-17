@@ -4290,7 +4290,7 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 rules[ 'stdlib/require-globals' ] = [ 'error', {
 	'globals': [
 		'ArrayBuffer',
-		'Buffer',
+		'Buffer', // Node.js
 		'DataView',
 		'Float32Array',
 		'Float64Array',
@@ -4298,6 +4298,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Int16Array',
 		'Int32Array',
 		'Number',
+		'process', // Node.js
 		'SharedArrayBuffer',
 		'Symbol',
 		'Uint8Array',
