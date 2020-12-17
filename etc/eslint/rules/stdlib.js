@@ -4297,6 +4297,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Int8Array',
 		'Int16Array',
 		'Int32Array',
+		'module', // Node.js
 		'Number',
 		'process', // Node.js
 		'SharedArrayBuffer',
