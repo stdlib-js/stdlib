@@ -101,6 +101,7 @@
     "os-browserify": "^0.3.0",
     "parse-link-header": "^1.0.1",
     "plato": "^1.5.0",
+    "process": "^0.11.10",
     "proxyquire": "^2.0.0",
     "proxyquire-universal": "^2.0.0",
     "proxyquireify": "^3.1.1",
