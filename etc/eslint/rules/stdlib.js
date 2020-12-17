@@ -4083,7 +4083,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Array',
 		'ArrayBuffer',
 		'Boolean',
-		'Buffer',
+		'Buffer', // Node.js
 		'DataView',
 		'Date',
 		'Error',
@@ -4096,6 +4096,7 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Map',
 		'Number',
 		'Object',
+		'process', // Node.js
 		'Promise',
 		'Proxy',
 		'RangeError',
