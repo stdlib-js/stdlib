@@ -110,7 +110,7 @@ main() {
 	fi
 
 	# Get the set of changed files (added and modified):
-	changed_files=$(git diff --name-only --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
+	changed_files=$(git diff --name-only --cached --diff-filter AM "${remote}/${GIT_CURRENT_BRANCH}" | sed -e "s#^#${root}\\/#")
 
 	# Run JavaScript example files:
 	files=$(echo "${changed_files}" | grep '/examples/.*\.js$' | grep -v '/examples/fixtures/.*\.js$' | tr '\n' ' ')
