@@ -1,0 +1,13 @@
+
+{{alias}}
+    Absolute pathname of the executable which started the current Node.js
+    process.
+
+    Examples
+    --------
+    > {{alias}}
+    <string>
+
+    See Also
+    --------
+
