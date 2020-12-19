@@ -75,7 +75,7 @@
     "@types/node": "^13.9.0",
     "ajv": "^5.2.2",
     "browser-pack-flat": "^3.0.0",
-    "browserify": "^16.1.0",
+    "browserify": "^17.0.0",
     "bundle-collapser": "^1.3.0",
     "chai": "^3.5.0",
     "common-shakeify": "^0.6.0",
