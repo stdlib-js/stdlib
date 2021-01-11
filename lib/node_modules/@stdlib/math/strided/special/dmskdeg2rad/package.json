@@ -1,0 +1,84 @@
+{
+  "name": "@stdlib/math/strided/special/dmskdeg2rad",
+  "version": "0.0.0",
+  "description": "Convert each element in a double-precision floating-point strided array from degrees to radians according to a strided mask array.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "browser": "./lib/main.js",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "trig",
+    "trigonometry",
+    "geometry",
+    "radians",
+    "degrees",
+    "angle",
+    "convert",
+    "double-precision",
+    "double",
+    "dbl",
+    "float64",
+    "float64array",
+    "vector",
+    "array",
+    "strided",
+    "ndarray",
+    "element-wise",
+    "mask",
+    "masked",
+    "missing",
+    "missing values",
+    "na"
+  ],
+  "__stdlib__": {}
+}
