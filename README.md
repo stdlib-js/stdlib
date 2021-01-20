@@ -208,7 +208,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2020. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
