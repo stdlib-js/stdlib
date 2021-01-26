@@ -894,6 +894,22 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags": {
+    "id": "mdn-regexp-flags",
+    "description": "Mozilla Developer Network (MDN) documentation for regular expression flags in JavaScript.",
+    "short_url": "",
+    "keywords": [
+      "regexp",
+      "regex",
+      "regular",
+      "expressions",
+      "flags",
+      "flag",
+      "javascript",
+      "ecmascript",
+      "js"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes": {
     "id": "mdn-class",
     "description": "Mozilla Developer Network (MDN) documentation for ECMAScript 2015 classes.",
