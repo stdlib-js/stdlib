@@ -48,6 +48,19 @@ stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library
 
 This is the GitHub repository of stdlib source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
 
+## Resources
+
+-   [**Homepage**][stdlib-homepage]
+-   [**Documentation**][stdlib-documentation]
+-   [**Source code**][stdlib-source]
+-   [**Code coverage**][stdlib-code-coverage]
+-   [**FAQ**][stdlib-faq]
+
+### External Resources
+
+-   [**Twitter**][stdlib-twitter]
+-   [**Gitter**][stdlib-gitter]
+
 ## Features
 
 -   150+ [special math functions][@stdlib/math/base/special].
@@ -115,19 +128,6 @@ This is the GitHub repository of stdlib source code and documentation. For help 
     <div class="image" align="center">
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
-
-## Resources
-
--   [**Homepage**][stdlib-homepage]
--   [**Documentation**][stdlib-documentation]
--   [**Source code**][stdlib-source]
--   [**Code coverage**][stdlib-code-coverage]
--   [**FAQ**][stdlib-faq]
-
-### External Resources
-
--   [**Twitter**][stdlib-twitter]
--   [**Gitter**][stdlib-gitter]
 
 ## Prerequisites
 
