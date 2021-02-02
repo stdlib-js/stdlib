@@ -37,6 +37,18 @@ limitations under the License.
     <br>
 </div>
 
+## 2018
+
+### Machine Learning in the Browser
+
+> [Athan Reines][kgryte], ML Conference December 2018
+
+<div class="image"  align="center">
+    <a title="Machine Learning in the Browser" href="https://www.youtube.com/watch?v=FCl1LfV9TB0">
+        <img src="" alt="Machine Learning in the Browser (December 2018)">
+    </a>
+</div>
+
 ## 2017
 
 ### Numeric Computing with Node.js
