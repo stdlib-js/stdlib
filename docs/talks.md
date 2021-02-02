@@ -28,7 +28,7 @@ limitations under the License.
 
 ### Open Source Directions: stdlib
 
-> [Athan Reines][kgryte] and [Philipp Burckhardt][planeshifter], Open Source Directions November 2019
+> [Athan Reines][kgryte] and [Philipp Burckhardt][planeshifter], Open Source Directions, November 2019
 
 <div class="image" align="center">
     <a title="Open Source Directions: stdlib" href="https://www.youtube.com/watch?v=SYbp_dr8WWo">
@@ -41,7 +41,7 @@ limitations under the License.
 
 ### Machine Learning in the Browser
 
-> [Athan Reines][kgryte], ML Conference December 2018
+> [Athan Reines][kgryte], ML Conference, December 2018
 
 <div class="image"  align="center">
     <a title="Machine Learning in the Browser" href="https://www.youtube.com/watch?v=FCl1LfV9TB0">
