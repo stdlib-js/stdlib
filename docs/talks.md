@@ -45,7 +45,7 @@ limitations under the License.
 
 <div class="image"  align="center">
     <a title="Machine Learning in the Browser" href="https://www.youtube.com/watch?v=FCl1LfV9TB0">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1a19da1bc2d2c5db4493ed2b539708cdd8a18709/docs/assets/talks/ml_conference_december_2019_athan_reines.png" alt="Machine Learning in the Browser (December 2018)">
+        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1a19da1bc2d2c5db4493ed2b539708cdd8a18709/docs/assets/talks/ml_conference_2018_athan_reines.png" alt="Machine Learning in the Browser (December 2018)">
     </a>
 </div>
 
