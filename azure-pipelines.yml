@@ -126,7 +126,7 @@ jobs:
           NPM_VERSION: '>2.7.0'
         node_v6:
           NODE_VERSION: '6'
-          NPM_VERSION: '>2.7.0'
+          NPM_VERSION: '>2.7.0 <6.0.0'
         node_v4:
           NODE_VERSION: '4'
           NPM_VERSION: '>2.7.0 <6.0.0'
