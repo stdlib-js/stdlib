@@ -199,8 +199,14 @@ Otherwise, to install as a system library, follow the [download][stdlib-developm
 * * *
 
 ## Contributing
+TLDR:
+```bash
+git clone --depth=1 https://github.com/stdlib-js/stdlib.git # use your username instead of `stdlib-js`
+cd stdlib
+npm install
+```
 
-See the [contributing guidelines][stdlib-contributing].
+For a complete guide, see the [contributing guidelines][stdlib-contributing].
 
 ## License
 
