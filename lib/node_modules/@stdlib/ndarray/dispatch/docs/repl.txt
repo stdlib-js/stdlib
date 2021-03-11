@@ -1,0 +1,87 @@
+
+{{alias}}( fcns, types, data, nargs, nin, nout )
+    Returns an ndarray function interface which performs multiple dispatch.
+
+    An ndarray function interface has the following signature:
+
+      f( x, y, ... )
+
+    where
+
+    - x: ndarray.
+    - y: ndarray.
+    - ...: additional ndarrays.
+
+    The number of parameters is derived from `nargs`, the number of input
+    ndarrays is derived from `nin`, and the number of output ndarrays is derived
+    from `nout`.
+
+    Parameters
+    ----------
+    fcns: Function|ArrayLikeObject<Function>
+        List of ndarray functions. An ndarray function should have the following
+        signature:
+
+          f( arrays, data )
+
+        where
+
+        - arrays: array containing input and output ndarrays.
+        - data: ndarray function data (e.g., a callback).
+
+        For convenience, a single ndarray function may be provided which will be
+        invoked whenever the ndarray argument data types match a sequence of
+        types in `types`. Providing a single ndarray function is particularly
+        convenient for the case where, regardless of array data types,
+        traversing arrays remains the same, but the ndarray function `data`
+        differs (e.g., callbacks which differ based on the array data types).
+
+    types: ArrayLikeObject<string>
+        One-dimensional list of ndarray argument data types.
+
+    data: ArrayLikeObject|null
+        ndarray function data (e.g., callbacks). If `null`, a returned ndarray
+        function interface does **not** provide a `data` argument to an invoked
+        ndarray function.
+
+    nargs: integer
+        Total number of ndarray function interface arguments.
+
+    nin: integer
+        Number of input ndarrays.
+
+    nout: integer
+        Number of output ndarrays.
+
+    Returns
+    -------
+    fcn: Function
+        ndarray function interface.
+
+    Examples
+    --------
+    // Define ndarray argument data types:
+    > var t = [ 'float64', 'float64', 'float32', 'float32' ];
+
+    // Define a list of ndarray function data (callbacks):
+    > var d = [ {{alias:@stdlib/math/base/special/abs}}, {{alias:@stdlib/math/base/special/absf}} ];
+
+    // Create an ndarray function interface for applying unary callbacks:
+    > var f = {{alias}}( {{alias:@stdlib/ndarray/base/unary}}, t, d, 2, 1, 1 );
+
+    // Create an input ndarray:
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var x = {{alias:@stdlib/ndarray/ctor}}( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+
+    // Create an output ndarray:
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var y = {{alias:@stdlib/ndarray/ctor}}( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
+
+    // Compute the element-wise absolute value:
+    > f( x, y );
+    > ybuf
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
+
