@@ -23,6 +23,7 @@
     "src": "./src",
     "test": "./test"
   },
+  "types": "./docs/types",
   "scripts": {},
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
