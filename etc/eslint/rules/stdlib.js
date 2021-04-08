@@ -4290,6 +4290,9 @@ rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all 
 rules[ 'stdlib/require-globals' ] = [ 'error', {
 	'globals': [
 		'ArrayBuffer',
+		'BigInt', // ES11/ES2020
+		'BigInt64Array', // ES11/ES2020
+		'BigUint64Array', // ES11/ES2020
 		'Buffer', // Node.js
 		'DataView',
 		'Float32Array',
@@ -4298,9 +4301,10 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Int16Array',
 		'Int32Array',
 		'Number',
+		'Promise', // ES6/ES2015
 		'process', // Node.js
 		'SharedArrayBuffer',
-		'Symbol',
+		'Symbol', // ES6/ES2015
 		'Uint8Array',
 		'Uint8ClampedArray',
 		'Uint16Array',
