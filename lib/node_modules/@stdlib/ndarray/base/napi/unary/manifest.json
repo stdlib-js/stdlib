@@ -1,0 +1,44 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [
+				"./src/main.c"
+			],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/ndarray/base/napi/addon-arguments",
+				"@stdlib/ndarray/base/function-object",
+				"@stdlib/ndarray/base/unary",
+				"@stdlib/ndarray/ctor",
+				"@stdlib/ndarray/dtypes"
+			]
+		}
+	]
+}
