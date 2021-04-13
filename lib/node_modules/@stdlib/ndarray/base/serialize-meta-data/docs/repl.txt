@@ -1,0 +1,45 @@
+
+{{alias}}( x )
+    Serializes ndarray meta data.
+
+    Meta data format:
+
+    |endianness|dtype|ndims|shape|strides|offset|order|mode|nsubmodes|submodes|
+
+    where
+
+    -  endianness: byte order (1 byte)
+    -  dtype: data type (2 bytes)
+    -  ndims: number of dimensions (8 bytes)
+    -  shape: shape (ndims*8 bytes)
+    -  strides: strides in units of bytes (ndims*8 bytes)
+    -  offset: index offset in units of bytes (8 bytes)
+    -  order: array order (1 byte)
+    -  mode: index mode (1 byte)
+    -  nsubmodes: number of subscript index modes (8 bytes)
+    -  submodes: subscript index modes (nsubmodes*1 bytes)
+
+    Serialization is performed according to host byte order (endianness).
+
+    If the endianness is 1, the byte order is little endian. If the endianness
+    is 0, the byte order is big endian.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: DataView
+        Meta data serialized as a DataView.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    <DataView>
+
+    See Also
+    --------
+
