@@ -1,0 +1,44 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/special/abs",
+				"@stdlib/math/base/special/absf",
+				"@stdlib/math/base/special/labs",
+				"@stdlib/ndarray/base/function-object",
+				"@stdlib/ndarray/base/napi/unary",
+				"@stdlib/ndarray/base/unary",
+				"@stdlib/ndarray/dtypes"
+			]
+		}
+	]
+}
