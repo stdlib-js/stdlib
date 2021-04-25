@@ -22,16 +22,15 @@ const isPositive = ( v: number ): boolean => {
 	return ( v > 0 );
 };
 
-const done = ( error, bool ) => {
+const done = ( error: Error | null, bool: boolean ) => {
 	if ( error ) {
 		throw error;
 	}
-	if ( bool ) {
-		console.log( 'Successfully read at least one file.' );
-	} else {
-		console.log( 'Unable to read any files.' );
+	if ( bool === void 0 ) {
+		throw new Error( '`bool` is not a boolean.' );
 	}
-}
+};
+
 
 // TESTS //
 
@@ -61,7 +60,6 @@ const done = ( error, bool ) => {
 	noneByRightAsync( [ 1, 2, 3 ], 'abc', done ); // $ExpectError
 	noneByRightAsync( [ 1, 2, 3 ], {}, done ); // $ExpectError
 	noneByRightAsync( [ 1, 2, 3 ], [], done ); // $ExpectError
-	noneByRightAsync( [ 1, 2, 3 ], ( x: number ): number => x, done ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a done callback argument which is not a function having a supported signature...
@@ -105,7 +103,6 @@ const done = ( error, bool ) => {
 	noneByRightAsync.factory( false ); // $ExpectError
 	noneByRightAsync.factory( {}, 123 ); // $ExpectError
 	noneByRightAsync.factory( {}, 'abc' ); // $ExpectError
-	noneByRightAsync.factory( {}, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function returned by the `factory` method is provided invalid arguments...
@@ -114,9 +111,7 @@ const done = ( error, bool ) => {
 	fcn1( 12, done ); // $ExpectError
 	fcn1( true, done ); // $ExpectError
 	fcn1( false, done ); // $ExpectError
-	fcn1( '5', done ); // $ExpectError
 	fcn1( {}, done ); // $ExpectError
-	fcn1( ( x: number ): number => x, done ); // $ExpectError
 
 	fcn1( [ 1, 2, 3 ], 12 ); // $ExpectError
 	fcn1( [ 1, 2, 3 ], true ); // $ExpectError
