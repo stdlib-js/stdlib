@@ -1,0 +1,1580 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 2.0
+
+/* tslint:disable:max-line-length */
+/* tslint:disable:max-file-line-count */
+
+import anyByAsync = require( '@stdlib/utils/async/any-by' );
+import anyByRightAsync = require( '@stdlib/utils/async/any-by-right' );
+import bifurcateByAsync = require( '@stdlib/utils/async/bifurcate-by' );
+import composeAsync = require( '@stdlib/utils/async/compose' );
+import countByAsync = require( '@stdlib/utils/async/count-by' );
+import doUntilAsync = require( '@stdlib/utils/async/do-until' );
+import doWhileAsync = require( '@stdlib/utils/async/do-while' );
+import everyByAsync = require( '@stdlib/utils/async/every-by' );
+import everyByRightAsync = require( '@stdlib/utils/async/every-by-right' );
+import forEachAsync = require( '@stdlib/utils/async/for-each' );
+import forEachRightAsync = require( '@stdlib/utils/async/for-each-right' );
+import functionSequenceAsync = require( '@stdlib/utils/async/function-sequence' );
+import groupByAsync = require( '@stdlib/utils/async/group-by' );
+import ifelseAsync = require( '@stdlib/utils/async/if-else' );
+import ifthenAsync = require( '@stdlib/utils/async/if-then' );
+import inmapAsync = require( '@stdlib/utils/async/inmap' );
+import inmapRightAsync = require( '@stdlib/utils/async/inmap-right' );
+import mapFunAsync = require( '@stdlib/utils/async/map-function' );
+import mapKeysAsync = require( '@stdlib/utils/async/map-keys' );
+import mapValuesAsync = require( '@stdlib/utils/async/map-values' );
+import noneByAsync = require( '@stdlib/utils/async/none-by' );
+import noneByRightAsync = require( '@stdlib/utils/async/none-by-right' );
+import reduceAsync = require( '@stdlib/utils/async/reduce' );
+import reduceRightAsync = require( '@stdlib/utils/async/reduce-right' );
+import waterfall = require( '@stdlib/utils/async/series-waterfall' );
+import someByAsync = require( '@stdlib/utils/async/some-by' );
+import someByRightAsync = require( '@stdlib/utils/async/some-by-right' );
+import tabulateByAsync = require( '@stdlib/utils/async/tabulate-by' );
+import trycatchAsync = require( '@stdlib/utils/async/try-catch' );
+import trythenAsync = require( '@stdlib/utils/async/try-then' );
+import untilAsync = require( '@stdlib/utils/async/until' );
+import whileAsync = require( '@stdlib/utils/async/while' );
+
+/**
+* Interface describing the `async` namespace.
+*/
+interface Namespace {
+	/**
+	* Tests whether at least one element in a collection passes a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Successfully read at least one file.' );
+	*     } else {
+	*         console.log( 'Unable to read any files.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.anyByAsync( files, predicate, done );
+	*/
+	anyByAsync: typeof anyByAsync;
+
+	/**
+	* Tests whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Successfully read at least one file.' );
+	*     } else {
+	*         console.log( 'Unable to read any files.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.anyByRightAsync( files, predicate, done );
+	*/
+	anyByRightAsync: typeof anyByRightAsync;
+
+	/**
+	* Splits values into two groups according to a predicate function.
+	*
+	* ## Notes
+	*
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param options.returns - if `values`, values are returned; if `indices`, indices are returned; if `*`, both indices and values are returned (default: 'values')
+	* @param predicate - predicate function specifying which group an element in the input collection belongs to
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.bifurcateByAsync( files, predicate, done );
+	*/
+	bifurcateByAsync: typeof bifurcateByAsync;
+
+	/**
+	* Function composition.
+	*
+	* ## Notes
+	*
+	* -   Returns a composite function. Starting from the right, the composite function evaluates each function and passes the result as the first argument of the next function. The result of the leftmost function is the result of the whole.
+	*
+	* @param f0 - first function to compose
+	* @param f1 - second function to compose
+	* @param f - remaining functions to compose
+	* @returns composite function
+	*
+	* @example
+	* function a( x, next ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         next( null, 2*x );
+	*     }
+	* }
+	*
+	* function b( x, next ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         next( null, x+3 );
+	*     }
+	* }
+	*
+	* function c( x, next ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         next( null, x/5 );
+	*     }
+	* }
+	*
+	* var f = ns.composeAsync( c, b, a );
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	*     // => 3
+	* }
+	*
+	* f( 6, done );
+	*/
+	composeAsync: typeof composeAsync;
+
+	/**
+	* Groups values according to an indicator function and returns group counts.
+	*
+	* ## Notes
+	*
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param indicator - indicator function specifying which group an element in the input collection belongs to
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	*
+	* function indicator( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, 'nonreadable' );
+	*         }
+	*         next( null, 'readable' );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.countByAsync( files, indicator, done );
+	*/
+	countByAsync: typeof countByAsync;
+
+	/**
+	* Invokes a function until a test condition is true.
+	*
+	* @param fcn - function to invoke
+	* @param predicate - function which indicates whether to continue invoking a function
+	* @param done - callback to invoke upon completion
+	* @param thisArg - execution context for the invoked function
+	*
+	* @example
+	* function fcn( i, next ) {
+	*     setTimeout( onTimeout, i );
+	*     function onTimeout() {
+	*         console.log( 'beep: %d', i );
+	*         next();
+	*     }
+	* }
+	*
+	* function predicate( i, clbk ) {
+	*     clbk( null, i >= 5 );
+	* }
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	* }
+	*
+	* ns.doUntilAsync( fcn, predicate, done );
+	*/
+	doUntilAsync: typeof doUntilAsync;
+
+	/**
+	* Invokes a function while a test condition is true.
+	*
+	* @param fcn - function to invoke
+	* @param predicate - function which indicates whether to continue invoking a function
+	* @param done - callback to invoke upon completion
+	* @param thisArg - execution context for the invoked function
+	*
+	* @example
+	* function fcn( i, next ) {
+	*     setTimeout( onTimeout, i );
+	*     function onTimeout() {
+	*         console.log( 'beep: %d', i );
+	*         next();
+	*     }
+	* }
+	*
+	* function predicate( i, clbk ) {
+	*     clbk( null, i < 5 );
+	* }
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	* }
+	*
+	* ns.doWhileAsync( fcn, predicate, done );
+	*/
+	doWhileAsync: typeof doWhileAsync;
+
+	/**
+	* Tests whether all elements in a collection pass a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Successfully read all files.' );
+	*     } else {
+	*         console.log( 'Was unable to read all files.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.everyByAsync( files, predicate, done );
+	*/
+	everyByAsync: typeof everyByAsync;
+
+	/**
+	* Tests whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Successfully read all files.' );
+	*     } else {
+	*         console.log( 'Was unable to read all files.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.everyByRightAsync( files, predicate, done );
+	*/
+	everyByRightAsync: typeof everyByRightAsync;
+
+	/**
+	* Invokes a function once for each element in a collection.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param fcn - function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( 'Successfully read all files.' );
+	* }
+	*
+	* function read( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( error );
+	*         }
+	*         console.log( 'Successfully read file: %s', file );
+	*         next();
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.forEachAsync( files, read, done );
+	*/
+	forEachAsync: typeof forEachAsync;
+
+	/**
+	* Invokes a function once for each element in a collection.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param fcn - function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( 'Successfully read all files.' );
+	* }
+	*
+	* function read( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( error );
+	*         }
+	*         console.log( 'Successfully read file: %s', file );
+	*         next();
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.forEachRightAsync( files, read, done );
+	*/
+	forEachRightAsync: typeof forEachRightAsync;
+
+	/**
+	* Function sequence.
+	*
+	* @param f0 - first function to evaluate
+	* @param f1 - second function to evaluate
+	* @param f - remaining functions to evaluate in sequential order
+	* @returns pipeline function
+	*
+	* @example
+	* function a( x, next ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         next( null, 2*x );
+	*     }
+	* }
+	*
+	* function b( x, next ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         next( null, x+3 );
+	*     }
+	* }
+	*
+	* function c( x, next ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         next( null, x/5 );
+	*     }
+	* }
+	*
+	* var f = ns.functionSequenceAsync( a, b, c );
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	*     // => 3
+	* }
+	*
+	* f( 6, done );
+	*/
+	functionSequenceAsync: typeof functionSequenceAsync;
+
+	/**
+	* Groups values according to an indicator function.
+	*
+	* ## Notes
+	*
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param options.returns - if `values`, values are returned; if `indices`, indices are returned; if `*`, both indices and values are returned (default: 'values')
+	* @param indicator - indicator function specifying which group an element in the input collection belongs to
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	*
+	* function indicator( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, 'nonreadable' );
+	*         }
+	*         next( null, 'readable' );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.groupByAsync( files, indicator, done );
+	*/
+	groupByAsync: typeof groupByAsync;
+
+	/**
+	* If a predicate function returns a truthy value, returns `x`; otherwise, returns `y`.
+	*
+	* @param predicate - predicate function
+	* @param x - value to return if a condition is truthy
+	* @param y - value to return if a condition is falsy
+	* @param done - callback to invoke upon completion
+	*
+	* @example
+	* var randu = require( `@stdlib/random/base/randu` );
+	*
+	* function predicate( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, randu() > 0.5 );
+	*     }
+	* }
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	* ns.ifelseAsync( predicate, 1.0, -1.0, done );
+	*/
+	ifelseAsync: typeof ifelseAsync;
+
+	/**
+	* If a predicate function returns a truthy value, invokes `x`; otherwise, invokes `y`.
+	*
+	* @param predicate - predicate function
+	* @param x - function to invoke if a condition is truthy
+	* @param y - function to invoke if a condition is falsy
+	* @param done - callback to invoke upon completion
+	*
+	* @example
+	* var randu = require( `@stdlib/random/base/randu` );
+	*
+	* function predicate( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, randu() > 0.5 );
+	*     }
+	* }
+	*
+	* function x( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, 1.0 );
+	*     }
+	* }
+	*
+	* function y( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, -1.0 );
+	*     }
+	* }
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	* ns.ifthenAsync( predicate, x, y, done );
+	*/
+	ifthenAsync: typeof ifthenAsync;
+
+	/**
+	* Invokes a function once for each element in a collection and updates a collection in-place.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling. Note, however, that the function may have mutated an input collection during prior invocations, resulting in a partially mutated collection.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param fcn - function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, results ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( results );
+	* }
+	*
+	* function read( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error, data ) {
+	*         if ( error ) {
+	*             return next( error );
+	*         }
+	*         next( null, data );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.inmapAsync( files, read, done );
+	*/
+	inmapAsync: typeof inmapAsync;
+
+	/**
+	* Invokes a function once for each element in a collection and updates a collection in-place.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling. Note, however, that the function may have mutated an input collection during prior invocations, resulting in a partially mutated collection.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param fcn - function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, results ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( results );
+	* }
+	*
+	* function read( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error, data ) {
+	*         if ( error ) {
+	*             return next( error );
+	*         }
+	*         next( null, data );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.inmapRightAsync( files, read, done );
+	*/
+	inmapRightAsync: typeof inmapRightAsync;
+
+	/**
+	* Invokes a function `n` times and returns an array of accumulated function return values.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param fcn - function to invoke
+	* @param n - number of function invocations
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function again (default: false)
+	* @param done - callback to invoke upon invoking a function `n` times
+	* @throws second argument must be a nonnegative integer
+	* @throws must provide valid options
+	*
+	* @example
+	* function fcn( i, next ) {
+	*     setTimeout( onTimeout, i );
+	*     function onTimeout() {
+	*         next( null, i );
+	*     }
+	* }
+	*
+	* function done( error, out ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( JSON.stringify( out ) );
+	*     // => [ 0, 1, 2, 3, 4 ]
+	* }
+	*
+	* ns.mapFunAsync( fcn, 5, done );
+	*/
+	mapFunAsync: typeof mapFunAsync;
+
+	/**
+	* Maps keys from one object to a new object having the same values.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	* -   Iteration and insertion order are **not** guaranteed.
+	* -   The function only operates on own properties, not inherited properties.
+	*
+	*
+	* @param obj - source object
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next own property (default: false)
+	* @param transform - transform function
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function read( key, value, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( value, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, key+':unreadable' );
+	*         }
+	*         next( null, key+':readable' );
+	*     }
+	* }
+	*
+	* // Define a callback which handles errors:
+	* function done( error, out ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( out );
+	* }
+	*
+	* // Create a dictionary of file names:
+	* var files = {
+	*     'file1': './beep.js',
+	*     'file2': './boop.js'
+	* };
+	*
+	* var opts = {
+	*     'series': true
+	* };
+	*
+	* // Process each file in `files`:
+	* ns.mapKeysAsync( files, opts, read, done );
+	*/
+	mapKeysAsync: typeof mapKeysAsync;
+
+	/**
+	* Maps values from one object to a new object having the same keys.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	* -   Iteration and insertion order are **not** guaranteed.
+	* -   The function only operates on own properties, not inherited properties.
+	*
+	*
+	* @param obj - source object
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next own property (default: false)
+	* @param transform - transform function
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var stat = require( `fs` ).stat;
+	*
+	* function getStats( file, next ) {
+	*     stat( file, onStats );
+	*
+	*     function onStats( error, data ) {
+	*         if ( error ) {
+	*             return next( error );
+	*         }
+	*         next( null, data );
+	*     }
+	* }
+	*
+	* // Define a callback which handles errors:
+	* function done( error, out ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( out );
+	* }
+	*
+	* // Create a dictionary of file names:
+	* var files = {
+	*     'file1': './beep.js',
+	*     'file2': './boop.js'
+	* };
+	*
+	* var opts = {
+	*     'series': true
+	* };
+	*
+	* // Process each file in `files`:
+	* ns.mapValuesAsync( files, opts, getStats, done );
+	*/
+	mapValuesAsync: typeof mapValuesAsync;
+
+	/**
+	* Tests whether all elements in a collection fail a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Was unable to read all files.' );
+	*     } else {
+	*         console.log( 'Was able to read at least one file.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.noneByAsync( files, predicate, done );
+	*/
+	noneByAsync: typeof noneByAsync;
+
+	/**
+	* Tests whether all elements in a collection fail a test implemented by a predicate function, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Was unable to read all files.' );
+	*     } else {
+	*         console.log( 'Was able to read at least one file.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.noneByRightAsync( files, predicate, done );
+	*/
+	noneByRightAsync: typeof noneByRightAsync;
+
+	/**
+	* Applies a function against an accumulator and each element in a collection and return the accumulated result.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param initial - initial value
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: true)
+	* @param reducer - function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, acc ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( acc.count );
+	* }
+	*
+	* function read( acc, file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, acc );
+	*         }
+	*         acc.count += 1;
+	*         next( null, acc );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	* var acc = {
+	*     'count': 0
+	* };
+	* ns.reduceAsync( files, acc, read, done );
+	*/
+	reduceAsync: typeof reduceAsync;
+
+	/**
+	* Applies a function against an accumulator and each element in a collection and return the accumulated result, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   If a provided function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param initial - initial value
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: true)
+	* @param reducer - function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, acc ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( acc.count );
+	* }
+	*
+	* function read( acc, file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, acc );
+	*         }
+	*         acc.count += 1;
+	*         next( null, acc );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	* var acc = {
+	*     'count': 0
+	* };
+	* ns.reduceRightAsync( files, acc, read, done );
+	*/
+	reduceRightAsync: typeof reduceRightAsync;
+
+	/**
+	* Executes functions in series, passing the results of one function as arguments to the next function.
+	*
+	* @param fcns - array of functions
+	* @param clbk - callback to invoke upon completion
+	* @param thisArg - function context
+	*
+	* @example
+	* function foo( next ) {
+	*     next( null, 'beep' );
+	* }
+	*
+	* function bar( str, next ) {
+	*     console.log( str );
+	*     // => 'beep'
+	*
+	*     next();
+	* }
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	* }
+	*
+	* var fcns = [ foo, bar ];
+	*
+	* ns.waterfall( fcns, done );
+	*/
+	waterfall: typeof waterfall;
+
+	/**
+	* Tests whether a collection contains at least `n` elements which pass a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param n - number of elements
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws second argument must be a positive integer
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Successfully read some files.' );
+	*     } else {
+	*         console.log( 'Unable to read some files.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.someByAsync( files, 2, predicate, done );
+	*/
+	someByAsync: typeof someByAsync;
+
+	/**
+	* Tests whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.
+	*
+	* ## Notes
+	*
+	* -   If a predicate function calls the provided callback with a truthy error argument, the function suspends execution and immediately calls the `done` callback for subsequent error handling.
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	*
+	* @param collection - input collection
+	* @param n - number of elements
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param predicate - predicate function to invoke for each element in a collection
+	* @param done - function to invoke upon completion
+	* @throws second argument must be a positive integer
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, bool ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     if ( bool ) {
+	*         console.log( 'Successfully read some files.' );
+	*     } else {
+	*         console.log( 'Unable to read some files.' );
+	*     }
+	* }
+	*
+	* function predicate( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, false );
+	*         }
+	*         next( null, true );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.someByRightAsync( files, 2, predicate, done );
+	*/
+	someByRightAsync: typeof someByRightAsync;
+
+	/**
+	* Generates a frequency table according to an indicator function.
+	*
+	* ## Notes
+	*
+	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
+	*
+	* -   The output frequency table is an array of arrays. Each sub-array corresponds to a unique value in the input collection and is structured as follows:
+	*
+	*     -   0: unique value
+	*     -   1: value count
+	*     -   2: frequency percentage
+	*
+	*
+	* @param collection - input collection
+	* @param options - function options
+	* @param options.thisArg - execution context
+	* @param options.limit - maximum number of pending invocations at any one time
+	* @param options.series - boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection (default: false)
+	* @param indicator - function whose return values are used to populate the output frequency table
+	* @param done - function to invoke upon completion
+	* @throws must provide valid options
+	*
+	* @example
+	* var readFile = require( `@stdlib/fs/read-file` );
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	*
+	* function indicator( file, next ) {
+	*     var opts = {
+	*         'encoding': 'utf8'
+	*     };
+	*     readFile( file, opts, onFile );
+	*
+	*     function onFile( error ) {
+	*         if ( error ) {
+	*             return next( null, 'nonreadable' );
+	*         }
+	*         next( null, 'readable' );
+	*     }
+	* }
+	*
+	* var files = [
+	*     './beep.js',
+	*     './boop.js'
+	* ];
+	*
+	* ns.tabulateByAsync( files, indicator, done );
+	*/
+	tabulateByAsync: typeof tabulateByAsync;
+
+	/**
+	* If a function does not return an error, invokes a callback with the function result; otherwise, invokes a callback with a value `y`.
+	*
+	* @param x - function to invoke
+	* @param y - value to return if `x` returns an error
+	* @param done - callback to invoke upon completion
+	*
+	* @example
+	* var randu = require( `@stdlib/random/base/randu` );
+	*
+	* function x( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         if ( randu() > 0.5 ) {
+	*             return clbk( null, 1.0 );
+	*         }
+	*         clbk( new Error( 'beep' ) );
+	*     }
+	* }
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         console.log( error.message );
+	*     }
+	*     console.log( result );
+	* }
+	*
+	* ns.trycatchAsync( x, -1.0, done );
+	*/
+	trycatchAsync: typeof trycatchAsync;
+
+	/**
+	* If a function does not return an error, invokes a callback with the function result; otherwise, invokes a second function `y`.
+	*
+	* @param x - function to invoke
+	* @param y - function to invoke if `x` returns an error
+	* @param done - callback to invoke upon completion
+	*
+	* @example
+	* var randu = require( `@stdlib/random/base/randu` );
+	*
+	* function x( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         if ( randu() > 0.5 ) {
+	*             return clbk( null, 1.0 );
+	*         }
+	*         clbk( new Error( 'beep' ) );
+	*     }
+	* }
+	*
+	* function y( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, -1.0 );
+	*     }
+	* }
+	*
+	* function done( error, result ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( result );
+	* }
+	*
+	* ns.trythenAsync( x, y, done );
+	*/
+	trythenAsync: typeof trythenAsync;
+
+	/**
+	* Invokes a function until a test condition is true.
+	*
+	* @param predicate - function which indicates whether to continue invoking a function
+	* @param fcn - function to invoke
+	* @param done - callback to invoke upon completion
+	* @param thisArg - execution context for the invoked function
+	*
+	* @example
+	* function predicate( i, clbk ) {
+	*     clbk( null, i >= 5 );
+	* }
+	*
+	* function fcn( i, next ) {
+	*     setTimeout( onTimeout, i );
+	*     function onTimeout() {
+	*         console.log( 'beep: %d', i );
+	*         next();
+	*     }
+	* }
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	* }
+	*
+	* ns.untilAsync( predicate, fcn, done );
+	*/
+	untilAsync: typeof untilAsync;
+
+	/**
+	* Invokes a function while a test condition is true.
+	*
+	* @param predicate - function which indicates whether to continue invoking a function
+	* @param fcn - function to invoke
+	* @param done - callback to invoke upon completion
+	* @param thisArg - execution context for the invoked function
+	*
+	* @example
+	* function predicate( i, clbk ) {
+	*     clbk( null, i < 5 );
+	* }
+	*
+	* function fcn( i, next ) {
+	*     setTimeout( onTimeout, i );
+	*     function onTimeout() {
+	*         console.log( 'beep: %d', i );
+	*         next();
+	*     }
+	* }
+	*
+	* function done( error ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	* }
+	*
+	* ns.whileAsync( predicate, fcn, done );
+	*/
+	whileAsync: typeof whileAsync;
+}
+
+/**
+* Standard async utilities.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;
