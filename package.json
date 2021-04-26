@@ -21,9 +21,9 @@
     "stdlib": "./bin/cli"
   },
   "main": "./lib",
-  "browser": "./dist/stdlib-flat.min.js",
-  "unpkg": "./dist/stdlib-flat.min.js",
-  "jsdelivr": "./dist/stdlib-flat.min.js",
+  "browser": {
+    "process": "process/"
+  },
   "directories": {
     "doc": "./docs",
     "example": "./examples",
@@ -95,6 +95,7 @@
     "mustache": "^4.0.0",
     "parse-link-header": "^1.0.1",
     "plato": "^1.5.0",
+    "process": "^0.11.10",
     "proxyquire": "^2.0.0",
     "proxyquire-universal": "^2.0.0",
     "proxyquireify": "^3.1.1",
