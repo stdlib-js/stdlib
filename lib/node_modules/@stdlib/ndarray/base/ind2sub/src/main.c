@@ -45,6 +45,7 @@
 * #include "stdlib/ndarray/base/ind2sub.h"
 * #include "stdlib/ndarray/index_modes.h"
 * #include "stdlib/ndarray/orders.h"
+* #include <stdint.h>
 *
 * int64_t ndims = 2;
 * int64_t shape[] = { 3, 3 };
