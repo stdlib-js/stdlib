@@ -19,7 +19,6 @@
 // TypeScript Version: 2.0
 
 /// <reference types="@stdlib/types"/>
-/// <reference types="node"/>
 
 import { ArrayLike } from '@stdlib/types/array';
 import { Mode, Order } from '@stdlib/types/ndarray';
