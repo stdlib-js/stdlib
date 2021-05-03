@@ -1,0 +1,10 @@
+
+Usage: ghstar [options] slug
+
+Options:
+
+  -h,  --help                Print this message.
+  -V,  --version             Print the package version.
+       --token token         Github access token.
+  -ua, --useragent ua        User agent.
+
