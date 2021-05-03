@@ -1,0 +1,13 @@
+
+Usage: ghrankusers [options] user1 user2 ...
+
+Options:
+
+  -h,  --help                 Print this message.
+  -V,  --version              Print the package version.
+       --token token          Github access token.
+  -ua, --useragent ua         User agent.
+       --method method        Rank method. Default: followers.
+       --format format        Output format: csv or json. Default: csv.
+       --delimiter delimiter  CSV column delimiter. Default: ','.
+
