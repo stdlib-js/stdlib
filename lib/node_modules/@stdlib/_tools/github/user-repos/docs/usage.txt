@@ -1,0 +1,16 @@
+
+Usage: ghuserrepos [options]
+
+Options:
+
+  -h,  --help                    Print this message.
+  -V,  --version                 Print the package version.
+       --token token             Github access token.
+       --username username       Github username.
+  -ua, --useragent ua            User agent.
+       --visibility visibility   Repository visibility: public, private, all.
+       --affiliation affiliation Repository affiliation.
+       --type type               Repository type: forks, public, private, etc.
+       --sort sort               Sort method: full_name, created, pushed, etc.
+       --direction dir           Sort direction: asc, desc.
+
