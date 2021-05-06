@@ -216,7 +216,7 @@ var vals = s.toArray();
 // returns [ 'bar', 'foo' ]
 ```
 
-**Note**: the order of the returned array is reverse stack insertion order (i.e., the "newest" stack elements come before the "oldest" stacks elements).
+**Note**: the order of the returned array is reverse stack insertion order (i.e., the "newest" stack elements come before the "oldest" stack elements).
 
 ##### s.toJSON()
 
@@ -258,6 +258,8 @@ var o = s.toJSON();
 ## Examples
 
 <!-- eslint no-undef: "error" -->
+
+<!-- eslint-disable stdlib/no-redeclare -->
 
 ```javascript
 var Stack = require( '@stdlib/utils/stack' );
