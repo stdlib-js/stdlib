@@ -1,0 +1,12 @@
+
+Usage: ghdeletetoken [options] token_id
+
+Options:
+
+  -h,  --help                      Print this message.
+  -V,  --version                   Print the package version.
+       --username username         Github username.
+       --password password         Github password.
+       --otp password              Github one-time password.
+  -ua, --useragent ua              User agent.
+
