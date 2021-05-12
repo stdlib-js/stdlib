@@ -98,7 +98,7 @@ bool = isSafeInteger.isObject( new Number( 3.0 ) );
 -   An integer valued number is "safe" when the number can be exactly represented as a [double-precision floating-point number][ieee754]. For example,
 
     ```javascript
-    var MAX_SAFE_INTEGER = require( '@stdlib/constants/math/float64-max-safe-integer' );
+    var MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
     // returns 9007199254740991
 
     var x = 9007199254740992;
