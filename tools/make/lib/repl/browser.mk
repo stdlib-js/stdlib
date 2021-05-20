@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the command to create a disposable HTTP server:
-repl_tmp_http_server := $(NODE) $(SRC_DIR)/@stdlib/tools/disposable-http-server/bin/cli
+repl_tmp_http_server := $(NODE) $(SRC_DIR)/@stdlib/net/disposable-http-server/bin/cli
 
 # Define the source file to bundle:
 REPL_BROWSER_BUNDLE ?= $(DIST_DIR)/stdlib-repl.min.js
