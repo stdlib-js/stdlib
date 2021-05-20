@@ -4262,7 +4262,7 @@ rules[ 'stdlib/repl-namespace-order' ] = 'off';
 *
 * var debug = require( 'debug/src/browser.js' );
 */
-rules[ 'stdlib/require-file-extensions' ] = [ 'off', { // TODO: Enable once all @stdlib/tools packages are moved to @stdlib/_tools
+rules[ 'stdlib/require-file-extensions' ] = [ 'error', {
 	'extensionsWhitelist': [
 		'.js',
 		'.json',
