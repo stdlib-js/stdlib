@@ -18,6 +18,9 @@
 
 # Files #
 #########
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTORS
 TODO.md
 ROADMAP.md
 .postinstall.json
