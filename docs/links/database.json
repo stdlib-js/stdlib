@@ -3069,6 +3069,19 @@
       "probability"
     ]
   },
+  "https://en.wikipedia.org/wiki/Norm_%28mathematics%29#Euclidean_norm": {
+    "id": "euclidean-norm",
+    "description": "Wikipedia page for the Euclidean norm.",
+    "short_url": "",
+    "keywords": [
+      "euclidean",
+      "norm",
+      "l2-norm",
+      "square norm",
+      "length",
+      "distance"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Normal_distribution": {
     "id": "normal-distribution",
     "description": "Wikipedia entry for the normal distribution.",
@@ -3409,6 +3422,19 @@
       "speech"
     ]
   },
+  "https://en.wikipedia.org/wiki/Stochastic_gradient_descent": {
+    "id": "stochastic-gradient-descent",
+    "description": "Wikipedia page for stochastic gradient descent (SGD).",
+    "short_url": "",
+    "keywords": [
+      "stochastic gradient descent",
+      "sgd",
+      "minimization",
+      "machine learning",
+      "classification",
+      "regression"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Stop_words": {
     "id": "stopwords",
     "description": "Wikipedia entry on stop words, which are filtered from text for many natural language processing (NLP) tasks.",
@@ -3458,6 +3484,16 @@
       "typesetting",
       "knuth",
       "typography"
+    ]
+  },
+  "https://en.wikipedia.org/wiki/Tikhonov_regularization": {
+    "id": "tikhonov-regularization",
+    "description": "Wikipedia page for Tikhonov regularization.",
+    "short_url": "",
+    "keywords": [
+      "regularization",
+      "regression",
+      "l2-regularization"
     ]
   },
   "https://en.wikipedia.org/wiki/Triangular_distribution": {
