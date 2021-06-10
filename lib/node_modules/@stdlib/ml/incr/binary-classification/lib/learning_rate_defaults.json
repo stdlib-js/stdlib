@@ -1,0 +1,5 @@
+{
+	"basic": [ "basic" ],
+	"constant": [ "constant", 0.02 ],
+	"pegasos": [ "pegasos" ]
+}
