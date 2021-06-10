@@ -31,7 +31,7 @@
         Boolean indicating whether to include an intercept. Default: true.
 
     options.lambda: number (optional)
-        Regularization parameter. Default: 1.0e-3.
+        Regularization parameter. Default: 1.0e-4.
 
     options.learningRate: ArrayLike (optional)
         Learning rate function and associated (optional) parameters. The first

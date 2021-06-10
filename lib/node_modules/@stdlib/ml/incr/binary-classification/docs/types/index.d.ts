@@ -28,22 +28,22 @@ import { ndarray } from '@stdlib/types/ndarray';
 */
 interface Options {
 	/**
-	* Regularization parameter (default: 1.0e-3).
+	* Regularization parameter (default: `1.0e-4`).
 	*/
 	lambda?: number;
 
 	/**
-	* Learning rate function and associated parameters (default: ['basic']).
+	* Learning rate function and associated parameters (default: `['basic']`).
 	*/
 	learningRate?: ArrayLike<any>;
 
 	/**
-	* Loss function (default: 'log').
+	* Loss function (default: `'log'`).
 	*/
 	loss?: 'hinge' | 'log' | 'modifiedHuber' | 'perceptron' | 'squaredHinge';
 
 	/**
-	* Boolean indicating whether to include an intercept (default: true).
+	* Boolean indicating whether to include an intercept (default: `true`).
 	*/
 	intercept?: boolean;
 }
@@ -68,7 +68,7 @@ interface Accumulator {
 	* Predicts the response value for an observation vector `x`.
 	*
 	* @param x - feature vector
-	* @param type - `probability` or `link` (default: 'link')
+	* @param type - `probability` or `link` (default: `'link'`)
 	* @throws first argument must be a one-dimensional ndarray
 	* @throws first argument must be a one-dimensional ndarray whose length matches number of features
 	* @returns response value
@@ -91,8 +91,8 @@ interface Accumulator {
 *
 * @param N - number of features
 * @param options - options object
-* @param options.lambda - regularization parameter (default: `1.0e-3`)
-* @param options.learningRate - learning rate function and associated parameters (default: 'basic')
+* @param options.lambda - regularization parameter (default: `1.0e-4`)
+* @param options.learningRate - learning rate function and associated parameters (default: `['basic']`)
 * @param options.loss - loss function  (default: `'log'`)
 * @param options.intercept - boolean indicating whether to include an intercept (default: `true`)
 * @throws first argument must be a positive integer
