@@ -57,7 +57,7 @@ TMP_DIR ?= $(ROOT_DIR)/tmp
 # Define the root configuration directory:
 CONFIG_DIR ?= $(ROOT_DIR)/etc
 
-# Define the directory for writing reports, including code coverage:
+# Define the directories for writing reports, including code coverage:
 REPORTS_DIR ?= $(ROOT_DIR)/reports
 COVERAGE_DIR ?= $(REPORTS_DIR)/coverage
 COMPLEXITY_DIR ?= $(REPORTS_DIR)/complexity
