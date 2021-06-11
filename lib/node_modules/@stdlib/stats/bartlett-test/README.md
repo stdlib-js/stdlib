@@ -28,10 +28,14 @@ Bartlett's test is used to test the null hypothesis that the variances of k grou
 
 For `k` groups each with `n_i` observations, the test statistic is
 
+<!-- <equation class="equation" label="eq:bartlett-test-statistic" align="center" raw="\chi^2 = \frac{N\ln(S^2) - \sum_{i=0}^{k-1} n_i \ln(S_i^2)}{1 + \frac{1}{3(k-1)}\left(\sum_{i=0}^{k-1} \frac{1}{n_i} - \frac{1}{N}\right)}" alt="Equation for Bartlett's test statistic."> -->
+
 <div class="equation" align="center" data-raw-text="\chi^2 = \frac{N\ln(S^2) - \sum_{i=0}^{k-1} n_i \ln(S_i^2)}{1 + \frac{1}{3(k-1)}\left(\sum_{i=0}^{k-1} \frac{1}{n_i} - \frac{1}{N}\right)}" data-equation="eq:bartlett-test-statistic">
-    <img src="" alt="Equation for Bartlett's test statistic.">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/4b1db4ebd815eb54bf53a3fa132b992604743d9c/lib/node_modules/@stdlib/stats/bartlett-test/docs/img/equation_bartlett-test-statistic.svg" alt="Equation for Bartlett's test statistic.">
     <br>
 </div>
+
+<!-- </equation> -->
 
 where `N` is the total number of observations, `S_i` are the biased group-level variances and `S^2` is a (biased) pooled estimate for the variance. Under the null hypothesis, the test statistic follows a _chi-square_ distribution with `df = k - 1` degrees of freedom.
 
@@ -112,7 +116,7 @@ var groups = [
     'b', 'b', 'b', 'b',
     'c', 'c', 'c', 'c', 'c'
 ];
-out = bartlettTest( arr, {
+var out = bartlettTest( arr, {
     'groups': groups
 });
 ```

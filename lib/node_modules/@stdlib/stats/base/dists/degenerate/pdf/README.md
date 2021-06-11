@@ -29,7 +29,7 @@ Strictly speaking, as a discrete distribution, a [degenerate][degenerate-distrib
 <!-- <equation class="equation" label="eq:degenerate_pdf" align="center" raw="f(x;\mu) = \delta(x-\mu)" alt="Probability density function (PDF) for a degenerate distribution."> -->
 
 <div class="equation" align="center" data-raw-text="f(x;\mu) = \delta(x-\mu)" data-equation="eq:degenerate_pdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/degenerate/pdf/docs/img/equation_degenerate_pdf.svg" alt="Probability density function (PDF) for a degenerate distribution.">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/stats/base/dists/degenerate/pdf/docs/img/equation_degenerate_pdf.svg" alt="Probability density function (PDF) for a degenerate distribution.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ where `delta` is the Dirac delta function.
 <!-- <equation class="equation" label="eq:dirac_delta" align="center" raw="\delta(x) = {\begin{cases}+\infty, & x = 0\\0, & x \neq 0\end{cases}}" alt="Dirac delta function."> -->
 
 <div class="equation" align="center" data-raw-text="\delta(x) = {\begin{cases}+\infty, &amp; x = 0\\0, &amp; x \neq 0\end{cases}}" data-equation="eq:dirac_delta">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/degenerate/pdf/docs/img/equation_dirac_delta.svg" alt="Dirac delta function.">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/stats/base/dists/degenerate/pdf/docs/img/equation_dirac_delta.svg" alt="Dirac delta function.">
     <br>
 </div>
 

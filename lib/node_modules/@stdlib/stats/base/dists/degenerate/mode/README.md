@@ -30,6 +30,11 @@ The [mode][mode] for a [degenerate][degenerate-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:degenerate_mode" align="center" raw="\operatorname{Mode}\left( X \right) = \mu" alt="Mode for a degenerate distribution."> -->
 
+<div class="equation" align="center" data-raw-text="\operatorname{Mode}\left( X \right) = \mu" data-equation="eq:degenerate_mode">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/stats/base/dists/degenerate/mode/docs/img/equation_degenerate_mode.svg" alt="Mode for a degenerate distribution.">
+    <br>
+</div>
+
 <!-- </equation> -->
 
 where `μ` is the constant value of the distribution.

@@ -30,6 +30,11 @@ The [expected value][expected-value] for a [degenerate][degenerate-distribution]
 
 <!-- <equation class="equation" label="eq:degenerate_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \mu" alt="Expected value for a degenerate distribution."> -->
 
+<div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \mu" data-equation="eq:degenerate_expectation">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/stats/base/dists/degenerate/mean/docs/img/equation_degenerate_expectation.svg" alt="Expected value for a degenerate distribution.">
+    <br>
+</div>
+
 <!-- </equation> -->
 
 where `μ` is the constant value of the distribution.
