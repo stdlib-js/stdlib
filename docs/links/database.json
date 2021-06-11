@@ -2494,6 +2494,18 @@
       "gamma"
     ]
   },
+  "https://en.wikipedia.org/wiki/Generalized_linear_model#Link_function": {
+    "id": "generalized-linear-model-link-function",
+    "description": "Wikipedia entry for the link function within the context of a generalized linear model.",
+    "short_url": "",
+    "keywords": [
+      "glm",
+      "regression",
+      "ml",
+      "machine learning",
+      "fit"
+    ]
+  },
   "https://en.wikipedia.org/wiki/Geometric_distribution": {
     "id": "geometric-distribution",
     "description": "Wikipedia entry for the geometric distribution.",
