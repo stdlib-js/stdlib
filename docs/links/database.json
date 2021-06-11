@@ -2624,6 +2624,18 @@
       "math"
     ]
   },
+  "https://en.wikipedia.org/wiki/Huber_loss": {
+    "id": "huber-loss",
+    "description": "Wikipedia entry for the Huber loss function.",
+    "short_url": "",
+    "keywords": [
+      "regression",
+      "machine learning",
+      "ml",
+      "loss function",
+      "classification"
+    ]
+  },
   "https://en.wikipedia.org/wiki/IEEE_floating_point": {
     "id": "ieee754",
     "description": "Wikipedia entry on the IEEE Standard for Floating-Point Arithmetic (754).",
