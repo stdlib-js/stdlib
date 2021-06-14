@@ -1,0 +1,19 @@
+name: benchmark
+
+on:
+  workflow_dispatch:
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+      - name: Install production and development dependencies
+        run: |
+          npm install
+      - name: Run benchmarks
+        run: |
+          npm run benchmark
