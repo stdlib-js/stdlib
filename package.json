@@ -67,7 +67,6 @@
     "node-gyp": "^6.1.0",
     "readable-stream": "^2.1.4",
     "resolve": "^1.1.7",
-    "update-notifier": "^1.0.0",
     "vdom-to-html": "^2.3.0",
     "virtual-dom": "^2.1.1"
   },
