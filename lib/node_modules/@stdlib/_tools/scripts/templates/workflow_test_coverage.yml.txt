@@ -1,0 +1,24 @@
+name: coverage
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+      - name: Install production and development dependencies
+        run: |
+          npm install
+      - name: Calculate test coverage
+        run: |
+          npm run test-cov
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          directory: reports/coverage
+          flags: unittests

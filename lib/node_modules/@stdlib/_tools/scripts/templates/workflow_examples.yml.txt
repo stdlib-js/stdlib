@@ -1,0 +1,19 @@
+name: examples
+
+on:
+  workflow_dispatch:
+
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 15
+      - name: Install production and development dependencies
+        run: |
+          npm install
+      - name: Run examples
+        run: |
+          npm run examples
