@@ -201,7 +201,7 @@ function array(): ndarray {
 {
 	const accumulator = incrBinaryClassification( 2 );
 	const x = array();
-	accumulator.predict( x ); // ExpectType number
+	accumulator.predict( x ); // ExpectType ndarray
 }
 
 // The compiler throws an error if the `predict` method is provided a first argument which is not an ndarray...

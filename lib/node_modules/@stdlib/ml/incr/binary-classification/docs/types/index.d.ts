@@ -84,16 +84,15 @@ interface Accumulator {
 	( x?: ndarray, y?: number ): ndarray;
 
 	/**
-	* Predicts the response value for an observation vector `x`.
+	* Predicts the response value for one or more observation vectors `X`.
 	*
-	* @param x - feature vector
+	* @param X - feature vectors
 	* @param type - `label`, `probability`, or `linear` (default: `'label'`)
-	* @throws first argument must be a one-dimensional ndarray
-	* @throws first argument must be a one-dimensional ndarray whose length matches number of features
+	* @throws first argument must be an ndarray whose last dimension matches number of features
 	* @throws second argument must be compatible with the model loss function
-	* @returns response value
+	* @returns ndarray containing response values
 	*/
-	predict( x: ndarray, type?: 'label' | 'probability' | 'linear' ): number;
+	predict( x: ndarray, type?: 'label' | 'probability' | 'linear' ): ndarray;
 }
 
 /**
@@ -143,6 +142,7 @@ interface Accumulator {
 *
 * // Predict the response value:
 * var yhat = accumulator.predict( x );
+* // returns <ndarray>
 */
 declare function incrBinaryClassification( N: number, options?: Options ): Accumulator; // tslint-disable-line max-line-length
 

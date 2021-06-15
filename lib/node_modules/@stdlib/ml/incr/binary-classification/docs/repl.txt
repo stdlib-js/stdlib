@@ -83,7 +83,7 @@
         Accumulator function.
 
     acc.predict: Function
-        Predicts a response value for a provided observation vector. Provide a
+        Predicts response values for one ore more observation vectors. Provide a
         second argument to specify the prediction type. Must be one of the
         following: 'label', 'probability', or 'linear'. Default: 'label'.
 
@@ -110,7 +110,7 @@
 
     // Predict the response value:
     > var yhat = acc.predict( x )
-    <number>
+    <ndarray>
 
     See Also
     --------
