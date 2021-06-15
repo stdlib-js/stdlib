@@ -34,7 +34,6 @@ DAVID_PACKAGE_JSON ?= $(CONFIG_DIR)/david/.pkg.json
 
 # Define the command-line options to use when invoking the `david` executable:
 DAVID_FLAGS ?= \
-	--ignore update-notifier \
 	--ignore chai \
 	--ignore debug \
 	--ignore ajv \
