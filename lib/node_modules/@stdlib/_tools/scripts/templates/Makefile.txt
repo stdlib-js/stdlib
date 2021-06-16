@@ -280,21 +280,21 @@ endif
 
 # Common exclude flags that most recipes for finding package files should use (Note: order does matter to some degree):
 FIND_COMMON_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/.*" \
+	'!' -path "$(NODE_MODULES)/*" \
+	'!' -path "$(BUILD_DIR)/*" \
+	'!' -path "$(REPORTS_DIR)/*" \
 
 # Define exclusion flags to use when searching for benchmark files:
 FIND_BENCHMARKS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FIXTURES_FOLDER)/*"
+	'!' -path "$(ROOT_DIR)/**/$(BENCHMARKS_FIXTURES_FOLDER)/*"
 
 # Define flags for finding benchmark files:
 FIND_BENCHMARKS_FLAGS ?= \
 	-type f \
 	-name "$(BENCHMARKS_PATTERN)" \
-	-path "$(ROOT_DIR)/**$(BENCHMARKS_FOLDER)/**" \
+	\( -path "$(ROOT_DIR)/$(BENCHMARKS_FOLDER)/**" -o -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/**" \) \
 	-regex "$(BENCHMARKS_FILTER)" \
 	$(FIND_BENCHMARKS_EXCLUDE_FLAGS)
 
@@ -308,13 +308,13 @@ FIND_BENCHMARKS_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_BENCHMARKS_
 # Define exclusion flags to use when searching for examples files:
 FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FIXTURES_FOLDER)/*"
+	'!' -path "$(ROOT_DIR)/**/$(EXAMPLES_FIXTURES_FOLDER)/*"
 
 # Define flags for finding examples files:
 FIND_EXAMPLES_FLAGS ?= \
 	-type f \
 	-name "$(EXAMPLES_PATTERN)" \
-	-path "$(ROOT_DIR)/**$(EXAMPLES_FOLDER)/**" \
+	\( -path "$(ROOT_DIR)/$(EXAMPLES_FOLDER)/**" -o -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/**" \) \
 	-regex "$(EXAMPLES_FILTER)" \
 	$(FIND_EXAMPLES_EXCLUDE_FLAGS)
 
@@ -328,7 +328,7 @@ FIND_EXAMPLES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_EXAMPLES_FLAG
 # Define exclusion flags to use when searching for test files:
 FIND_TESTS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/*"
+	'!' -path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/*"
 
 # Define flags for finding test files:
 FIND_TESTS_FLAGS ?= \

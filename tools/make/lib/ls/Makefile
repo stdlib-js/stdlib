@@ -275,59 +275,59 @@ PACKAGES_FILTER ?= .*/.*
 
 # Minimum set of exclude flags (Note: order does matter to some degree):
 FIND_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.git/*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+	'!' -path "$(ROOT_DIR)/.git/*" \
+	'!' -path "$(NODE_MODULES)/*" \
+	'!' -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	'!' -path "$(BUILD_DIR)/*" \
+	'!' -path "$(REPORTS_DIR)/*" \
+	'!' -path "$(TMP_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
 
 # Common exclude flags that most recipes should use (Note: order does matter to some degree):
 FIND_COMMON_EXCLUDE_FLAGS ?= \
-	-not -path "$(ROOT_DIR)/.*" \
-	-not -path "$(NODE_MODULES)/*" \
-	-not -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
-	-not -path "$(BUILD_DIR)/*" \
-	-not -path "$(DEPS_DIR)/*" \
-	-not -path "$(DIST_DIR)/*" \
-	-not -path "$(REPORTS_DIR)/*" \
-	-not -path "$(TMP_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
+	'!' -path "$(ROOT_DIR)/.*" \
+	'!' -path "$(NODE_MODULES)/*" \
+	'!' -path "$(DOCS_DIR)/**/$(NODE_MODULES_FOLDER)/*" \
+	'!' -path "$(BUILD_DIR)/*" \
+	'!' -path "$(DEPS_DIR)/*" \
+	'!' -path "$(DIST_DIR)/*" \
+	'!' -path "$(REPORTS_DIR)/*" \
+	'!' -path "$(TMP_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BUILD_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(TMP_FOLDER)/*"
 
 # Benchmark exclude flags:
 FIND_BENCHMARKS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FIXTURES_FOLDER)/*"
+	'!' -path "$(TOOLS_DIR)/*" \
+	'!' -path "$(TOOLS_PKGS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BENCHMARKS_FIXTURES_FOLDER)/*"
 
 # Examples exclude flags:
 FIND_EXAMPLES_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FIXTURES_FOLDER)/*"
+	'!' -path "$(TOOLS_DIR)/*" \
+	'!' -path "$(TOOLS_PKGS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(EXAMPLES_FIXTURES_FOLDER)/*"
 
 # Files exclude flags:
 FIND_FILES_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 
 # Library packages exclude flags:
 FIND_LIB_PACKAGES_EXCLUDE_FLAGS ?= \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BIN_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DATA_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DIST_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SOURCE_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SRC_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
+	'!' -path "$(TOOLS_PKGS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BIN_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DATA_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DIST_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SOURCE_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SRC_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
 # Makefile exclude flags:
 FIND_MAKEFILES_EXCLUDE_FLAGS ?= $(FIND_EXCLUDE_FLAGS)
@@ -338,29 +338,29 @@ FIND_MARKDOWN_EXCLUDE_FLAGS ?= $(FIND_EXCLUDE_FLAGS)
 # Packages exclude flags:
 FIND_PACKAGES_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(DOCS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BIN_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DATA_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DIST_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SOURCE_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SRC_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
+	'!' -path "$(DOCS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BIN_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DATA_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DIST_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SOURCE_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SRC_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(CONFIG_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
 # Sources exclude flags:
 FIND_SOURCES_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
-	-not -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
+	'!' -path "$(TOOLS_DIR)/*" \
+	'!' -path "$(TOOLS_PKGS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(EXAMPLES_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(TESTS_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(BENCHMARKS_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(DOCUMENTATION_FOLDER)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(SCRIPTS_FOLDER)/*"
 
 # SVG equations exclude flags:
 FIND_SVG_EQUATIONS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
@@ -368,51 +368,51 @@ FIND_SVG_EQUATIONS_EXCLUDE_FLAGS ?= $(FIND_COMMON_EXCLUDE_FLAGS)
 # Tests exclude flags:
 FIND_TESTS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*" \
-	-not -path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/*"
+	'!' -path "$(TOOLS_DIR)/*" \
+	'!' -path "$(TOOLS_PKGS_DIR)/*" \
+	'!' -path "$(ROOT_DIR)/**/$(TESTS_FIXTURES_FOLDER)/*"
 
 # Tests directories exclude flags:
 FIND_TESTS_DIRS_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*"
+	'!' -path "$(TOOLS_DIR)/*" \
+	'!' -path "$(TOOLS_PKGS_DIR)/*"
 
 # Text fixtures exclude flags:
 FIND_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
 	$(FIND_COMMON_EXCLUDE_FLAGS) \
-	-not -path "$(TOOLS_DIR)/*" \
-	-not -path "$(TOOLS_PKGS_DIR)/*"
+	'!' -path "$(TOOLS_DIR)/*" \
+	'!' -path "$(TOOLS_PKGS_DIR)/*"
 
 # Tools packages exclude flags:
 FIND_TOOLS_PACKAGES_EXCLUDE_FLAGS ?= \
-	-not -path "*/snippets/*" \
-	-not -path "*/$(BENCHMARKS_FOLDER)/*" \
-	-not -path "*/$(BIN_FOLDER)/*" \
-	-not -path "*/$(DATA_FOLDER)/*" \
-	-not -path "*/$(DIST_FOLDER)/*" \
-	-not -path "*/$(EXAMPLES_FOLDER)/*" \
-	-not -path "*/$(CONFIG_FOLDER)/*" \
-	-not -path "*/$(SCRIPTS_FOLDER)/*"
+	'!' -path "*/snippets/*" \
+	'!' -path "*/$(BENCHMARKS_FOLDER)/*" \
+	'!' -path "*/$(BIN_FOLDER)/*" \
+	'!' -path "*/$(DATA_FOLDER)/*" \
+	'!' -path "*/$(DIST_FOLDER)/*" \
+	'!' -path "*/$(EXAMPLES_FOLDER)/*" \
+	'!' -path "*/$(CONFIG_FOLDER)/*" \
+	'!' -path "*/$(SCRIPTS_FOLDER)/*"
 
 # Tools tests exclude flags:
 FIND_TOOLS_TESTS_EXCLUDE_FLAGS ?= \
-	-not -path "*/fixtures/*" \
-	-not -path "*/snippets/*"
+	'!' -path "*/fixtures/*" \
+	'!' -path "*/snippets/*"
 
 # Tools tests directories exclude flags:
 FIND_TOOLS_TESTS_DIRS_EXCLUDE_FLAGS ?= \
-	-not -path "$(TOOLS_DIR)/test" \
-	-not -path "$(TOOLS_PKGS_DIR)/test" \
-	-not -path "*/snippets/*" \
-	-not -path "*/make/lib/*"
+	'!' -path "$(TOOLS_DIR)/test" \
+	'!' -path "$(TOOLS_PKGS_DIR)/test" \
+	'!' -path "*/snippets/*" \
+	'!' -path "*/make/lib/*"
 
 # Tools tests fixtures exclude flags:
 FIND_TOOLS_TESTS_FIXTURES_EXCLUDE_FLAGS ?= \
-	-not -path "$(TOOLS_DIR)/test" \
-	-not -path "$(TOOLS_PKGS_DIR)/test" \
-	-not -path "*/snippets/*" \
-	-not -path "*/make/lib/*"
+	'!' -path "$(TOOLS_DIR)/test" \
+	'!' -path "$(TOOLS_PKGS_DIR)/test" \
+	'!' -path "*/snippets/*" \
+	'!' -path "*/make/lib/*"
 
 # On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 ifeq ($(OS), Darwin)

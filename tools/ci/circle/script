@@ -365,9 +365,9 @@ find_tests() {
 
 	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 	if [[ "${kernel}" = "Darwin" ]]; then
-		tests=$(find -E "${root_dir}" -name "${tests_pattern}" -regex "${tests_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${docs_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*" -not -path "${root_dir}/**/{tests_fixtures_folder}/*")
+		tests=$(find -E "${root_dir}" -name "${tests_pattern}" -regex "${tests_filter}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" '!' -path "${root_dir}/**/{tests_fixtures_folder}/*")
 	else
-		tests=$(find "${root_dir}" -regextype posix-extended -name "${tests_pattern}" -regex "${tests_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${tools_dir}/*" -not -path "${tools_pkgs_dir}/*" -not -path "${deps_dir}/*" -not -path "${docs_dir}/*" -not -path "${build_dir}/*" -not -path "${dist_dir}/*" -not -path "${reports_dir}/*" -not -path "${root_dir}/**/{tests_fixtures_folder}/*")
+		tests=$(find "${root_dir}" -regextype posix-extended -name "${tests_pattern}" -regex "${tests_filter}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${tools_dir}/*" '!' -path "${tools_pkgs_dir}/*" '!' -path "${deps_dir}/*" '!' -path "${docs_dir}/*" '!' -path "${build_dir}/*" '!' -path "${dist_dir}/*" '!' -path "${reports_dir}/*" '!' -path "${root_dir}/**/{tests_fixtures_folder}/*")
 	fi
 	echo "${tests}"
 }
