@@ -62,9 +62,9 @@ main() {
 
 	# On Mac OSX, in order to use `|` and other regular expression operators, we need to use enhanced regular expression syntax (-E); see https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man7/re_format.7.html#//apple_ref/doc/man/7/re_format.
 	if [[ "${kernel}" == "Darwin" ]]; then
-		files=$(find -E "${root_dir}" -type f -name "${files_pattern}" -regex "${files_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${build_dir}/*" -not -path "${reports_dir}/*" -not -path "${root_dir}/**/${build_folder}/*")
+		files=$(find -E "${root_dir}" -type f -name "${files_pattern}" -regex "${files_filter}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${build_dir}/*" '!' -path "${reports_dir}/*" '!' -path "${root_dir}/**/${build_folder}/*")
 	else
-		files=$(find "${root_dir}" -regextype posix-extended -type f -name "${files_pattern}" -regex "${files_filter}" -not -path "${root_dir}/.*" -not -path "${node_modules}/*" -not -path "${build_dir}/*" -not -path "${reports_dir}/*" -not -path "${root_dir}/**/${build_folder}/*")
+		files=$(find "${root_dir}" -regextype posix-extended -type f -name "${files_pattern}" -regex "${files_filter}" '!' -path "${root_dir}/.*" '!' -path "${node_modules}/*" '!' -path "${build_dir}/*" '!' -path "${reports_dir}/*" '!' -path "${root_dir}/**/${build_folder}/*")
 	fi
 	echo "${files}"
 }
