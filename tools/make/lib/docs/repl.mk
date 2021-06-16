@@ -22,7 +22,7 @@
 #
 # This target generates REPL documentation.
 
-repl-docs: repl-help repl-info repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-alias2related repl-pkg2related
+repl-docs: repl-help repl-info repl-examples repl-signatures repl-typed-signatures repl-aliases repl-alias2pkg repl-pkg2alias repl-pkg2standalone repl-alias2related repl-pkg2related
 
 .PHONY: repl-docs
 
@@ -125,3 +125,13 @@ repl-pkg2related: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/pkg2related/scrip
 	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/pkg2related/scripts/build.js"
 
 .PHONY: repl-pkg2related
+
+
+# Build the mapping between REPL package names and standalone package names.
+#
+# This target rebuilds the REPL database.
+
+repl-pkg2standalone: $(NODE_MODULES) $(SRC_DIR)/@stdlib/namespace/pkg2standalone/scripts/build.js
+	$(QUIET) $(NODE) "$(SRC_DIR)/@stdlib/namespace/pkg2standalone/scripts/build.js"
+
+.PHONY: repl-pkg2standalone
