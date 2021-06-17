@@ -1,0 +1,56 @@
+{
+  "name": "stdlib-standalone2pkg",
+  "version": "",
+  "title": "Standard Library Standalone Package Names and Internal Package Names",
+  "description": "A mapping between standard library standalone package names and internal package names.",
+  "resources": [
+    {
+      "name": "stdlib-standalone2pkg-json",
+      "title": "Standard Library Standalone Package Names and Internal Package Names",
+      "description": "A mapping between standard library standalone package names and internal package names.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "stdlib-standalone2pkg-csv",
+      "title": "Standard Library Standalone Package Names and Internal Package Names",
+      "description": "A mapping between standard library standalone package names and internal package names.",
+      "format": "csv",
+      "mediatype": "plain/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "standalone",
+            "title": "Standalone Package Name",
+            "description": "Standalone package name.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "pkg",
+            "title": "Internal Package Name",
+            "description": "Internal package name.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "stdlib",
+    "namespace",
+    "standalone",
+    "package",
+    "name",
+    "pkg"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}
