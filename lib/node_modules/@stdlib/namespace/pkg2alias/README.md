@@ -64,6 +64,15 @@ var v = pkg2alias( 'unrecognized_pkg_beep_boop_bop_bip' );
 
 <section class="notes">
 
+## Notes
+
+-   The function supports providing both internal and standalone package names.
+
+    ```javascript
+    var v = pkg2alias( '@stdlib/math-base-special-sin' );
+    // returns 'base.sin'
+    ```
+
 </section>
 
 <!-- /.notes -->
