@@ -64,6 +64,15 @@ var out = pkg2related( 'unrecognized_pkg_beep_boop_bop_bip' );
 
 <section class="notes">
 
+## Notes
+
+-   The function supports providing both internal and standalone package names.
+
+    ```javascript
+    var out = pkg2related( '@stdlib/math-base-special-sin' );
+    // returns [...]
+    ```
+
 </section>
 
 <!-- /.notes -->
