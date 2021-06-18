@@ -4643,6 +4643,26 @@
       "encoding": "UTF-8",
       "hash": "",
       "path": "./data/2020_donald_j_trump_r.txt"
+    },
+    {
+      "name": "2021-joseph-r-biden-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Joseph R Biden in 2021.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2021_joseph_r_biden_d.json"
+    },
+    {
+      "name": "2021-joseph-r-biden-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Joseph R Biden in 2021.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2021_joseph_r_biden_d.txt"
     }
   ],
   "sources": [
