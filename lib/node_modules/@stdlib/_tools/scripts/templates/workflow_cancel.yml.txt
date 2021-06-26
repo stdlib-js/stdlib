@@ -17,10 +17,11 @@
 #/
 
 # Workflow name:
-name: Cancel Previous Runs
+name: Cancel Workflow Runs
 
 # Workflow triggers:
-on: push
+on:
+  workflow_dispatch:
 
 # Workflow jobs:
 jobs:

@@ -33,13 +33,27 @@ jobs:
         with:
           node-version: 15
       - name: Install production and development dependencies
-        run: |
-          npm install
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 2
+          max_attempts: 3
+          command: npm install
       - name: Calculate test coverage
-        run: |
-          npm run test-cov
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 3
+          max_attempts: 2
+          command: npm run test-cov
       - name: Upload coverage to Codecov
+        id: upload
         uses: codecov/codecov-action@v1
         with:
           directory: reports/coverage
           flags: unittests
+          fail_ci_if_error: true
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+          channel: '#npm-ci'
+        if: failure()

@@ -36,12 +36,18 @@ jobs:
           node-version: 15
       - name: Install production and development dependencies
         id: install
-        run: |
-          npm install
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 2
+          max_attempts: 3
+          command: npm install
       - name: Run tests
         id: tests
-        run: |
-          npm test
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 3
+          max_attempts: 2
+          command: npm test
       - uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
