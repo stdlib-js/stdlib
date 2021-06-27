@@ -85,6 +85,7 @@
     "envify": "^4.0.0",
     "eslint": "^6.4.0",
     "factor-bundle": "^2.5.0",
+    "gh-pages": "^3.2.3",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
     "lunr": "^2.0.0",
