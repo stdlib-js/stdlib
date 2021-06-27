@@ -49,6 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+        timeout-minutes: 15
 
       # Run `publish_packages` script
       - name: Run `publish_packages` script
