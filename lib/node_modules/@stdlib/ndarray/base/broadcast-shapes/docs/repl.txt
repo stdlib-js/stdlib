@@ -8,7 +8,7 @@
     2. one dimension is `1`.
 
     The function returns `null` if provided incompatible shapes (i.e., shapes
-    which cannot be broadcast one another).
+    which cannot be broadcast with one another).
 
     Parameters
     ----------
@@ -17,7 +17,7 @@
 
     Returns
     -------
-    out: Array
+    out: Array|null
         Broadcast shape.
 
     Examples

@@ -174,7 +174,7 @@ var sh = broadcastShapes( [ sh1, sh2 ] );
 
     Accordingly, dimensions of size `0` must be paired with a dimension of size `0` or `1`. In such cases, by the rules above, the size of the corresponding output shape dimension is `0`.
 
--   The function returns `null` if provided incompatible shapes (i.e., shapes which cannot be broadcast one another).
+-   The function returns `null` if provided incompatible shapes (i.e., shapes which cannot be broadcast with one another).
 
     ```javascript
     var sh1 = [ 3, 2 ];
