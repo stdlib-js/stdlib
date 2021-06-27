@@ -28,13 +28,30 @@ on:
 # Workflow jobs:
 jobs:
   publish:
+    # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v1
         with:
           node-version: 15
-      - name: Run script
+        timeout-minutes: 5
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # Run `publish_packages` script
+      - name: Run `publish_packages` script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
