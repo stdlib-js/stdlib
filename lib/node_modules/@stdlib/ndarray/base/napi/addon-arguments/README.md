@@ -157,7 +157,7 @@ napi_value addon( napi_env env, napi_callback_info info ) {
 The function accepts the following arguments:
 
 -   **env**: `[in] napi_env` environment under which the function is invoked.
--   **argv**: `[in] napi_value` ndarray function arguments.
+-   **argv**: `[in] napi_value*` ndarray function arguments.
 -   **nargs**: `[in] int64_t` total number of expected arguments.
 -   **nin**: `[in] int64_t` number of input ndarray arguments.
 -   **arrays**: `[out] struct ndarrays**` destination array for storing pointers to both input and output ndarrays.
