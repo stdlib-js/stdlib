@@ -161,7 +161,7 @@ napi_value addon( napi_env env, napi_callback_info info ) {
 The function accepts the following arguments:
 
 -   **env**: `[in] napi_env` environment under which the function is invoked.
--   **argv**: `[in] napi_value` strided function arguments.
+-   **argv**: `[in] napi_value*` strided function arguments.
 -   **nargs**: `[in] int64_t` total number of expected arguments.
 -   **nin**: `[in] int64_t` number of input strided array arguments.
 -   **arrays**: `[out] uint8_t**` destination array for storing pointers to both input and output strided byte arrays.
