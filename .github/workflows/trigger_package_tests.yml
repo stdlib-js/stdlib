@@ -49,9 +49,9 @@ jobs:
           npm install
         timeout-minutes: 15
 
-      # Run `trigger_workflow_events.js` script:
-      - name: Run `trigger_workflow_events.js` script
+      # Run `trigger_workflow_events` script:
+      - name: Run `trigger_workflow_events` script
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/trigger_workflow_events.js.js
+          node lib/node_modules/@stdlib/_tools/scripts/trigger_workflow_events.js
