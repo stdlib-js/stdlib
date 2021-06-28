@@ -17,17 +17,15 @@
 #/
 
 # Workflow name:
-name: Push Changes to Standalone Package Repositories
+name: Trigger Standalone Package Tests
 
 # Workflow triggers:
 on:
-  push:
-    tags: v[0-9]+.[0-9]+.[0-9]+
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
-  publish:
+  trigger:
     # Define the type of virtual host machine on which to run the job:
     runs-on: ubuntu-latest
 
@@ -51,9 +49,9 @@ jobs:
           npm install
         timeout-minutes: 15
 
-      # Run `publish_packages` script:
-      - name: Run `publish_packages` script
+      # Run `trigger_workflow_events.js` script:
+      - name: Run `trigger_workflow_events.js` script
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js
+          node lib/node_modules/@stdlib/_tools/scripts/trigger_workflow_events.js.js
