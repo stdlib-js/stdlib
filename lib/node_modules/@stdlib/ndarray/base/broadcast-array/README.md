@@ -69,6 +69,7 @@ var y = broadcastArray( x, [ 2, 2, 2 ] );
 -   The function throws an error if a provided [ndarray][@stdlib/ndarray/base/ctor] is [incompatible][@stdlib/ndarray/base/broadcast-shapes] with a provided shape.
 -   The returned [ndarray][@stdlib/ndarray/base/ctor] is a view on the input [ndarray][@stdlib/ndarray/base/ctor] data buffer. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to the view may affect multiple elements. If you need to write to the returned [ndarray][@stdlib/ndarray/base/ctor], copy the [ndarray][@stdlib/ndarray/base/ctor] **before** performing operations which may mutate elements.
 -   The returned [ndarray][@stdlib/ndarray/base/ctor] is a "base" [ndarray][@stdlib/ndarray/base/ctor], and, thus, the returned [ndarray][@stdlib/ndarray/base/ctor] does not perform bounds checking or afford any of the guarantees of the non-base [ndarray][@stdlib/ndarray/ctor] constructor. The primary intent of this function is to broadcast an ndarray-like object within internal implementations and to do so with minimal overhead.
+-   The function always returns a new [ndarray][@stdlib/ndarray/base/ctor] instance even if the input [ndarray][@stdlib/ndarray/base/ctor] shape and the desired shape are the same.
 
 </section>
 
