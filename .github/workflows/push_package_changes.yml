@@ -45,13 +45,13 @@ jobs:
           node-version: 15
         timeout-minutes: 5
 
-      # Install dependencies
+      # Install dependencies:
       - name: Install dependencies
         run: |
           npm install
         timeout-minutes: 15
 
-      # Run `publish_packages` script
+      # Run `publish_packages` script:
       - name: Run `publish_packages` script
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
