@@ -17,6 +17,9 @@
     The function throws an error if a provided ndarray is incompatible with a
     provided shape.
 
+    The function always returns a new ndarray instance even if the input ndarray
+    shape and the desired shape are the same.
+
     Parameters
     ----------
     arr: ndarray

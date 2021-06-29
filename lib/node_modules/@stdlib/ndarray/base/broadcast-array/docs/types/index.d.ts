@@ -31,6 +31,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * -   The function throws an error if a provided ndarray is incompatible with a provided shape.
 * -   The returned array is a view on the input array data buffer. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to the view may affect multiple elements. If you need to write to the returned array, copy the array before performing operations which may mutate elements.
 * -   The returned array is a "base" ndarray, and, thus, the returned array does not perform bounds checking or afford any of the guarantees of the non-base ndarray constructor. The primary intent of this function is to broadcast an ndarray-like object within internal implementations and to do so with minimal overhead.
+* -   The function always returns a new ndarray instance even if the input ndarray shape and the desired shape are the same.
 *
 * @param arr - input array
 * @param shape - desired shape
