@@ -58,7 +58,8 @@ jobs:
       # Define the build matrix:
       matrix:
         # Define the list of build tasks:
-        BUILD_TASK: ['test-npm-install', 'test', 'benchmark', 'examples', 'test-coverage']
+        # BUILD_TASK: ['test-npm-install', 'test', 'benchmark', 'examples', 'test-coverage']
+        BUILD_TASK: ['test-npm-install', 'test', 'benchmark', 'examples']
 
         # Define the list of Node.js versions on which to run this job:
         # NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
