@@ -122,9 +122,7 @@ jobs:
       - name: 'Configure virtual display server'
         shell: bash
         run: |
-          export DISPLAY=':99.0'
-          echo "DISPLAY=':99.0'" >> $GITHUB_ENV
-          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          sudo /usr/bin/Xvfb $DISPLAY -screen 0 1280x768x24 &
         timeout-minutes: 2
 
       # Install Node.js:
