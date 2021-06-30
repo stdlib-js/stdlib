@@ -197,7 +197,7 @@ jobs:
         shell: bash
         run: |
           make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install
-        timeout-minutes: 15
+        timeout-minutes: 30
 
       # Run the build task:
       - name: 'Run build task'
