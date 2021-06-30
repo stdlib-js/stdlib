@@ -63,16 +63,16 @@ jobs:
             PLATFORM: 'macos'
 
           - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <6.0.0'
 
           - NODE_VERSION: '10'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <6.0.0'
 
           - NODE_VERSION: '8'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <6.0.0'
 
           - NODE_VERSION: '6'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <6.0.0'
 
           - NODE_VERSION: '4'
             NPM_VERSION: '>2.7.0 <6.0.0'
