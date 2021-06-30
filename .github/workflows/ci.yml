@@ -61,7 +61,8 @@ jobs:
         BUILD_TASK: ['test-npm-install', 'test', 'benchmark', 'examples', 'test-coverage']
 
         # Define the list of Node.js versions on which to run this job:
-        NODE_VERSION: ['12', '10', '8', '6', '4', '0.12', '0.10']
+        # NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
+        NODE_VERSION: ['16']
 
         # Define the list of operating systems on which to run this job:
         OS: ['ubuntu-latest', 'macOS-latest']
@@ -74,26 +75,32 @@ jobs:
           - OS: 'macOS-latest'
             PLATFORM: 'macos'
 
-          - NODE_VERSION: '12'
+          - NODE_VERSION: '16'
             NPM_VERSION: '>2.7.0'
 
-          - NODE_VERSION: '10'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          # - NODE_VERSION: '14'
+          #   NPM_VERSION: '>2.7.0'
 
-          - NODE_VERSION: '8'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          # - NODE_VERSION: '12'
+          #   NPM_VERSION: '>2.7.0'
 
-          - NODE_VERSION: '6'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          # - NODE_VERSION: '10'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
 
-          - NODE_VERSION: '4'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+          # - NODE_VERSION: '8'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
 
-          - NODE_VERSION: '0.12'
-            NPM_VERSION: '>2.7.0 <4.0.0'
+          # - NODE_VERSION: '6'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
 
-          - NODE_VERSION: '0.10'
-            NPM_VERSION: '>2.7.0 <4.0.0'
+          # - NODE_VERSION: '4'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
+
+          # - NODE_VERSION: '0.12'
+          #   NPM_VERSION: '>2.7.0 <4.0.0'
+
+          # - NODE_VERSION: '0.10'
+          #   NPM_VERSION: '>2.7.0 <4.0.0'
 
     # Define the sequence of job steps...
     steps:
