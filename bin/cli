@@ -27,7 +27,7 @@ var spawn = require( 'child_process' ).spawn;
 var readFileSync = require( './../lib/node_modules/@stdlib/fs/read-file' ).sync;
 var cwd = require( './../lib/node_modules/@stdlib/process/cwd' );
 var ENV = require( './../lib/node_modules/@stdlib/process/env' );
-var CLI = require( './../lib/node_modules/@stdlib/cli' );
+var CLI = require( './../lib/node_modules/@stdlib/cli/ctor' );
 var getKeys = require( './../lib/node_modules/@stdlib/utils/keys' );
 var COMMANDS = require( './cli_commands.json' );
 
