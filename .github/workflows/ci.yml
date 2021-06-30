@@ -100,7 +100,7 @@ jobs:
             ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
           else
             brew update
-            brew install -v gcc
+            brew reinstall gcc
           fi
         timeout-minutes: 10
 
