@@ -123,9 +123,7 @@ jobs:
         shell: bash
         run: |
           if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
-            export DISPLAY=':99.0'
-            echo "DISPLAY=':99.0'" >> $GITHUB_ENV
-            Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+            Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
           fi
         timeout-minutes: 2
 
