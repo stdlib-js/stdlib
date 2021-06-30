@@ -63,7 +63,7 @@ jobs:
             PLATFORM: 'macos'
 
           - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0 <6.0.0'
+            NPM_VERSION: '>2.7.0'
 
           - NODE_VERSION: '10'
             NPM_VERSION: '>2.7.0 <6.0.0'
