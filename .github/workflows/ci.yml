@@ -38,6 +38,18 @@ jobs:
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
 
+    # Define environment variables:
+    env:
+      FC: 'gfortran'
+      FORTRAN_COMPILER: 'gfortran'
+      CC: 'gcc'
+      C_COMPILER: 'gcc'
+      CXX: 'g++'
+      CXX_COMPILER: 'g++'
+      LINKER: 'g++'
+      GITHUB: 'true'
+      DISPLAY: ':99'
+
     # Define the build matrix strategy...
     strategy:
       # Specify whether to cancel all in-progress jobs if any matrix job fails:
@@ -110,24 +122,9 @@ jobs:
         run: |
           if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
             sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0
-            echo "DISPLAY=:0" >> $GITHUB_ENV
             sudo /usr/bin/Xvfb "${{ env.DISPLAY }}" -screen 0 1280x768x24 > /dev/null 2>&1 &
           fi
         timeout-minutes: 10
-
-      # Set environment variables:
-      - name: 'Set environment variables'
-        shell: bash
-        run: |
-          echo "FC=gfortran" >> $GITHUB_ENV
-          echo "FORTRAN_COMPILER=gfortran" >> $GITHUB_ENV
-          echo "CC=gcc" >> $GITHUB_ENV
-          echo "C_COMPILER=gcc" >> $GITHUB_ENV
-          echo "CXX=g++" >> $GITHUB_ENV
-          echo "CXX_COMPILER=g++" >> $GITHUB_ENV
-          echo "LINKER=g++" >> $GITHUB_ENV
-          echo "GITHUB=true" >> $GITHUB_ENV
-        timeout-minutes: 1
 
       # Install Node.js:
       - name: 'Install Node.js'
