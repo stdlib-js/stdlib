@@ -108,14 +108,14 @@ jobs:
       - name: 'Set environment variables'
         shell: bash
         run: |
-          echo ::set-env name=FC::gfortran
-          echo ::set-env name=FORTRAN_COMPILER::gfortran
-          echo ::set-env name=CC::gcc
-          echo ::set-env name=C_COMPILER::gcc
-          echo ::set-env name=CXX::g++
-          echo ::set-env name=CXX_COMPILER::g++
-          echo ::set-env name=LINKER::g++
-          echo ::set-env name=GITHUB::true
+          echo "FC=gfortran" >> $GITHUB_ENV
+          echo "FORTRAN_COMPILER=gfortran" >> $GITHUB_ENV
+          echo "CC=gcc" >> $GITHUB_ENV
+          echo "C_COMPILER=gcc" >> $GITHUB_ENV
+          echo "CXX=g++" >> $GITHUB_ENV
+          echo "CXX_COMPILER=g++" >> $GITHUB_ENV
+          echo "LINKER=g++" >> $GITHUB_ENV
+          echo "GITHUB=true" >> $GITHUB_ENV
         timeout-minutes: 1
 
       # Configure the virtual display server (needed for electron):
@@ -123,7 +123,7 @@ jobs:
         shell: bash
         run: |
           export DISPLAY=':99.0'
-          echo ::set-env name=DISPLAY::':99.0'
+          echo "DISPLAY=':99.0'" >> $GITHUB_ENV
           Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
         timeout-minutes: 2
 
@@ -189,7 +189,7 @@ jobs:
       - name: 'Perform install sequence'
         shell: bash
         run: |
-          make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install || make FC=$FC FORTRAN_COMPILER=$FORTRAN_COMPILER install
+          make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install
         timeout-minutes: 15
 
       # Run the build task:
