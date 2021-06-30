@@ -90,7 +90,8 @@ clean-node-addons:
 		echo ''; \
 		echo "Cleaning add-on: $$pkg"; \
 		cd $$pkg/src && $(MAKE) clean && \
-		cd $$pkg && $(NODE_GYP) clean || exit 1; \
+		cd $$pkg && $(NODE_GYP) clean \
+		|| { echo "Error: failed to clean add-on: $$pkg"; exit 0; } \
 	done
 
 .PHONY: clean-node-addons
