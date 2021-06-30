@@ -123,7 +123,8 @@ jobs:
         shell: bash
         run: |
           if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
-            Xvfb $DISPLAY -screen 0 1024x768x24 > /dev/null 2>&1 &
+            echo "DISPLAY=':0'" >> $GITHUB_ENV
+            Xvfb "${{ env.DISPLAY }}" -screen 0 1024x768x24 > /dev/null 2>&1 &
           fi
         timeout-minutes: 2
 
