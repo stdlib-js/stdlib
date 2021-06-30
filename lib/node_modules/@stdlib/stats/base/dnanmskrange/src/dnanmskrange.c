@@ -63,9 +63,6 @@ double stdlib_strided_dnanmskrange( const int64_t N, const double *X, const int6
 		return 0.0 / 0.0; // NaN
 	}
 	min = v;
-	if ( stdlib_base_is_nan( min ) ) {
-		return 0.0 / 0.0; // NaN
-	}
 	max = min;
 	i += 1;
 	for (; i < N; i++ ) {

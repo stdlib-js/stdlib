@@ -63,9 +63,6 @@ double stdlib_strided_dnanmskmax( const int64_t N, const double *X, const int64_
 		return 0.0 / 0.0; // NaN
 	}
 	max = v;
-	if ( stdlib_base_is_nan( max ) ) {
-		return 0.0 / 0.0; // NaN
-	}
 	i += 1;
 	for (; i < N; i++ ) {
 		ix += strideX;

@@ -63,9 +63,6 @@ float stdlib_strided_snanmskmax( const int64_t N, const float *X, const int64_t 
 		return 0.0f / 0.0f; // NaN
 	}
 	max = v;
-	if ( stdlib_base_is_nanf( max ) ) {
-		return 0.0f / 0.0f; // NaN
-	}
 	i += 1;
 	for (; i < N; i++ ) {
 		ix += strideX;
