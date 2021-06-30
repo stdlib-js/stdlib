@@ -129,29 +129,6 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
-## Prerequisites
-
-Running stdlib **requires** the following prerequisites:
-
--   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
--   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `< 6.0.0`, version `> 2.7.0` and `< 6.0.0`)
-
-Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
-
--   [GNU make][make]: development utility and task runner
--   [GNU bash][bash]: an sh-compatible shell
--   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
--   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
-
-While **not** required to run stdlib, the following dependencies are **required** for automatically downloading external libraries:
-
--   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
-
-The following external libraries can be automatically downloaded and compiled from source using `make`:
-
--   [OpenBLAS][openblas]: optimized BLAS library
--   [Electron][electron]: framework for cross-platform desktop applications
-
 ## Installation
 
 To install as a library or application dependency,
@@ -196,6 +173,29 @@ For distributable bundles for use in browser environments or as shared ("vendore
 
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
+## Prerequisites
+
+Installing and running stdlib for use in [Node.js][node-js] **requires** the following prerequisites:
+
+-   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
+-   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `<= 10.0.0`, version `> 2.7.0` and `< 6.0.0`)
+
+Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
+
+-   [GNU make][make]: development utility and task runner
+-   [GNU bash][bash]: an sh-compatible shell
+-   [gcc & g++][gcc] or [Clang][clang]: C/C++ compilation and linking (g++ version `>= 4.8`; clang version `>= 3.5`, Xcode version `>=8.3.1` on OS X)
+-   [gfortran][gfortran]: Fortran compilation and linking (version `>= 4.8`)
+
+While **not** required to run stdlib, the following dependencies are **required** for automatically downloading external libraries:
+
+-   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
+
+The following external libraries can be automatically downloaded and compiled from source using `make`:
+
+-   [OpenBLAS][openblas]: optimized BLAS library
+-   [Electron][electron]: framework for cross-platform desktop applications
+
 * * *
 
 ## Contributing
@@ -232,24 +232,24 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 <!-- lint enable no-paragraph-content-indent -->
 
-#### Build
+<!-- #### Build -->
 
 <!-- TODO: distinguish between Linux and Windows code coverage -->
 
 <!-- lint disable table-pipe-alignment -->
 
-| OS         | Build (master)                                                                           | Coverage (master)                                                  | Build (develop)                                                                             | Coverage (develop)                                                    |
+<!-- | OS         | Build (master)                                                                           | Coverage (master)                                                  | Build (develop)                                                                             | Coverage (develop)                                                    |
 | ---------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | Linux/OS X | [![Linux/OS X build status (master)][build-image-master]][build-url-master]              | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Linux/OS X build status (develop)][build-image-develop]][build-url-develop]              | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
-| Windows    | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] |
+| Windows    | [![Windows build status (master)][windows-build-image-master]][windows-build-url-master] | [![coverage (master)][coverage-image-master]][coverage-url-master] | [![Windows build status (develop)][windows-build-image-develop]][windows-build-url-develop] | [![coverage (develop)][coverage-image-develop]][coverage-url-develop] | -->
 
 <!-- lint enable table-pipe-alignment -->
 
-#### Dependencies
+<!-- #### Dependencies -->
 
 <!-- lint disable no-paragraph-content-indent -->
 
-[![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url]
+<!-- [![Dependencies][dependencies-image]][dependencies-url] [![DevDependencies][dev-dependencies-image]][dev-dependencies-url] -->
 
 <!-- lint enable no-paragraph-content-indent -->
 
@@ -271,7 +271,7 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 <!-- Project acknowledgments. If section is included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-* * *
+<!-- * * *
 
 <section class="acknowledgments">
 
@@ -286,7 +286,7 @@ Test and build infrastructure is generously provided by the following services:
     <br>
 </div>
 
-</section>
+</section> -->
 
 <!-- /.acknowledgments -->
 
@@ -310,17 +310,17 @@ Test and build infrastructure is generously provided by the following services:
 
 [node-url]: https://github.com/@stdlib-js/stdlib
 
-[build-image-master]: https://img.shields.io/travis/stdlib-js/stdlib/master.svg
+<!-- [build-image-master]: https://img.shields.io/travis/stdlib-js/stdlib/master.svg
 
 [build-url-master]: https://travis-ci.org/stdlib-js/stdlib
 
 [build-image-develop]: https://img.shields.io/travis/stdlib-js/stdlib/develop.svg
 
-[build-url-develop]: https://travis-ci.org/stdlib-js/stdlib
+[build-url-develop]: https://travis-ci.org/stdlib-js/stdlib -->
 
 <!-- FIXME: shields.io AppVeyor badges do not seem to work -->
 
-[windows-build-image-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
+<!-- [windows-build-image-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
 
 [windows-build-url-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
 
@@ -342,7 +342,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib
 
-[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop?type=dev
+[dev-dependencies-url]: https://david-dm.org/stdlib-js/stdlib/develop?type=dev -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 
