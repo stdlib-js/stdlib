@@ -32,6 +32,9 @@ task="$1"
 log_dir='./tmp/var/log'
 log_file="${log_dir}/ci.log"
 
+# Define the number of lines to store as log output:
+log_num_lines=5000
+
 # Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
 heartbeat_interval='30s'
 
@@ -103,9 +106,10 @@ print_success() {
 # Runs unit tests.
 #
 # $1 - log file
+# $2 - number of log lines
 run_tests() {
 	echo 'Running tests...' >&2
-	make test >> "$1" 2>&1
+	make test | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
@@ -117,9 +121,10 @@ run_tests() {
 # Runs test coverage.
 #
 # $1 - log file
+# $2 - number of log lines
 run_test_coverage() {
 	echo 'Running test coverage...' >&2
-	make test-cov >> "$1" 2>&1
+	make test-cov | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
@@ -132,9 +137,10 @@ run_test_coverage() {
 #
 # $1 - report title
 # $2 - log file
+# $3 - number of log lines
 send_coverage() {
 	echo 'Sending coverage report to coverage service...' >&2
-	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
+	make COVERAGE_NAME="$1" coverage | tail -n "$3" >> "$2" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Sending coverage report to coverage service failed.' >&2
 		return 1
@@ -146,9 +152,10 @@ send_coverage() {
 # Runs benchmarks.
 #
 # $1 - log file
+# $2 - number of log lines
 run_benchmarks() {
 	echo 'Running benchmarks...' >&2
-	make benchmark >> "$1" 2>&1
+	make benchmark | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Benchmarks failed.' >&2
 		return 1
@@ -160,9 +167,10 @@ run_benchmarks() {
 # Runs examples.
 #
 # $1 - log file
+# $2 - number of log lines
 run_examples() {
 	echo 'Running examples...' >&2
-	make examples >> "$1" 2>&1
+	make examples | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Examples failed.' >&2
 		return 1
@@ -174,9 +182,10 @@ run_examples() {
 # Tests whether the project successfully installs via `npm`.
 #
 # $1 - log file
+# $2 - number of log lines
 test_npm_install() {
 	echo 'Testing npm install...' >&2
-	make test-npm-install >> "$1" 2>&1
+	make test-npm-install | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Installation failed.' >&2
 		return 1
@@ -184,7 +193,7 @@ test_npm_install() {
 	echo 'Successfully installed.' >&2
 
 	echo 'Testing npm install (via GitHub)...' >&2
-	make test-npm-install-github >> "$1" 2>&1
+	make test-npm-install-github | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Installation (via GitHub) failed.' >&2
 		return 1
@@ -197,9 +206,10 @@ test_npm_install() {
 # Checks dependencies.
 #
 # $1 - log file
+# $2 - number of log lines
 check_deps() {
 	echo 'Checking dependencies...' >&2
-	make check-deps >> "$1" 2>&1
+	make check-deps | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Dependencies are out-of-date.' >&2
 		return 1
@@ -215,36 +225,36 @@ main() {
 
 	echo "Task: ${task}." >&2
 	if [[ "${task}" = "test-npm-install" ]]; then
-		test_npm_install "${log_file}"
+		test_npm_install "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	elif [[ "${task}" = "test" ]]; then
-		run_tests "${log_file}"
+		run_tests "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	elif [[ "${task}" = "benchmark" ]]; then
-		run_benchmarks "${log_file}"
+		run_benchmarks "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	elif [[ "${task}" = "examples" ]]; then
-		run_examples "${log_file}"
+		run_examples "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	elif [[ "${task}" = "test-coverage" ]]; then
-		run_test_coverage "${log_file}"
+		run_test_coverage "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-		send_coverage "unit_test" "${log_file}"
+		send_coverage "unit_test" "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	elif [[ "${task}" = "check-deps" ]]; then
-		check_deps "${log_file}"
+		check_deps "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi

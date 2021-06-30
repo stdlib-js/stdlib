@@ -27,7 +27,7 @@
 log_file='./tmp/var/log/ci.log'
 
 # Define the number of lines of logged output to print:
-tail_num_lines=1000
+tail_num_lines=5000
 
 
 # FUNCTIONS #
@@ -41,7 +41,7 @@ on_error() {
 # Tails a log file.
 #
 # $1 - log file to tail
-# $2 - number of lines to tail
+# $2 - number of lines to print
 tail_output() {
    echo "Printing the last $2 lines of log output..." >&2
    tail -"$2" "$1"
