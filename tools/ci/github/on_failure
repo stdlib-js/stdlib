@@ -27,7 +27,7 @@
 log_file='./tmp/var/log/ci.log'
 
 # Define the number of lines of logged output to print:
-tail_num_lines=5000
+tail_num_lines=1000
 
 
 # FUNCTIONS #
