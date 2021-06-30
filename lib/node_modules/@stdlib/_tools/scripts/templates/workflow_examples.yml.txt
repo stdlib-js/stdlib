@@ -34,7 +34,7 @@ jobs:
           node-version: 15
       - name: Install production and development dependencies
         run: |
-          npm install
+          npm install || npm install || npm install
       - name: Run examples
         run: |
           npm run examples
