@@ -104,7 +104,7 @@ jobs:
           if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
             sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
             sudo -E apt-get update -q
-            sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib xvfb
+            sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
             mkdir -p $HOME/bin
             echo "$HOME/bin" >> $GITHUB_PATH
             ln -s /usr/bin/gcc-9 $HOME/bin/gcc
