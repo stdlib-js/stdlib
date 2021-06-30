@@ -94,7 +94,7 @@ jobs:
             sudo -E apt-get update -q
             sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib xvfb
             mkdir -p $HOME/bin
-            echo ::add-path::$HOME/bin
+            echo $HOME/bin | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
             ln -s /usr/bin/gcc-9 $HOME/bin/gcc
             ln -s /usr/bin/g++-9 $HOME/bin/g++
             ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
