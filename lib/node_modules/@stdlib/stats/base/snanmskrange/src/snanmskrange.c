@@ -63,9 +63,6 @@ float stdlib_strided_snanmskrange( const int64_t N, const float *X, const int64_
 		return 0.0f / 0.0f; // NaN
 	}
 	min = v;
-	if ( stdlib_base_is_nanf( min ) ) {
-		return 0.0f / 0.0f; // NaN
-	}
 	max = min;
 	i += 1;
 	for (; i < N; i++ ) {
