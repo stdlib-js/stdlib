@@ -53,7 +53,7 @@ jobs:
     # Define the build matrix strategy...
     strategy:
       # Specify whether to cancel all in-progress jobs if any matrix job fails:
-      fail-fast: true
+      fail-fast: false
 
       # Define the build matrix:
       matrix:
