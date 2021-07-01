@@ -46,15 +46,41 @@ jobs:
     # Define the sequence of job steps...
     steps:
 
-      # Send notification to Slack:
-      - name: 'Send notification to Slack'
+      # Send success notification to Slack:
+      - name: 'Success notification'
         uses: 8398a7/action-slack@v3
         with:
-          status: "${{ github.event.workflow_run.conclusion }}"
-          fields: repo,message,commit,author,eventName,ref
-          channel: '#build-status'
-          text: "${{ github.event.workflow.name }}"
+          status: "success"
+          fields: repo,message,commit,author,ref
+          text: "${{ github.event.workflow.name }} succeeded"
+          author_name: 'Success'
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        if: always()
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        timeout-minutes: 5
+
+      # Send failure notification to Slack:
+      - name: 'Failure notification'
+        uses: 8398a7/action-slack@v3
+        with:
+          status: "failure"
+          fields: repo,message,commit,author,ref
+          text: "${{ github.event.workflow.name }} failed"
+          author_name: 'Failure'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+        timeout-minutes: 5
+
+      # Send canceled notification to Slack:
+      - name: 'Canceled notification'
+        uses: 8398a7/action-slack@v3
+        with:
+          status: "cancelled"
+          fields: repo,message,commit,author,ref
+          text: "${{ github.event.workflow.name }} was canceled"
+          author_name: 'Canceled'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        if: ${{ github.event.workflow_run.conclusion == 'cancelled' }}
         timeout-minutes: 5
