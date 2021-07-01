@@ -63,7 +63,7 @@ test-javascript-local: $(NODE_MODULES)
 		echo "Running test: $$test"; \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
 		| $(TAP_REPORTER) || exit 1; \
@@ -82,7 +82,7 @@ test-javascript-files-local: $(NODE_MODULES)
 		echo "Running test: $$test"; \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
 		| $(TAP_REPORTER) || exit 1; \
@@ -101,7 +101,7 @@ test-javascript-summary: $(NODE_MODULES)
 		echo "Running test: $$test"; \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
 		| $(TAP_SUMMARY) || exit 1; \
@@ -120,7 +120,7 @@ test-javascript-files-summary: $(NODE_MODULES)
 		echo "Running test: $$test"; \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
 		| $(TAP_SUMMARY) || exit 1; \
@@ -137,7 +137,7 @@ test-javascript-tap: $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test; \
 	done
@@ -153,7 +153,7 @@ test-javascript-files-tap: $(NODE_MODULES)
 	$(QUIET) for test in $(FILES); do \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test; \
 	done
@@ -169,7 +169,7 @@ test-javascript-xunit: $(NODE_MODULES)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
 		| $(TAP_XUNIT) || exit 1; \
@@ -186,7 +186,7 @@ test-javascript-files-xunit: $(NODE_MODULES)
 	$(QUIET) for test in $(FILES); do \
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
-		$(JAVASCRIPT_TEST) \
+		$(NODE) $(NODE_FLAGS_TEST) $(JAVASCRIPT_TEST) \
 			$(JAVASCRIPT_TEST_FLAGS) \
 			$$test \
 		| $(TAP_XUNIT) || exit 1; \
