@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: test_install
+name: test_npm_install
 
 # Workflow triggers:
 on:
@@ -29,7 +29,7 @@ on:
 jobs:
 
   # Define a workflow for testing project installation...
-  test_install:
+  test_npm_install:
 
     # Define a display name:
     name: "NODE_VERSION=${{ matrix.NODE_VERSION }}, OS=${{ matrix.OS }}"
