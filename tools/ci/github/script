@@ -109,7 +109,7 @@ print_success() {
 # $2 - number of log lines
 run_tests() {
 	echo 'Running tests...' >&2
-	make test | tail -n "$2" >> "$1" 2>&1
+	make NODE_FLAGS='--no-deprecation' test | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
@@ -124,7 +124,7 @@ run_tests() {
 # $2 - number of log lines
 run_test_coverage() {
 	echo 'Running test coverage...' >&2
-	make test-cov | tail -n "$2" >> "$1" 2>&1
+	make NODE_FLAGS='--no-deprecation' test-cov | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Tests failed.' >&2
 		return 1
@@ -155,7 +155,7 @@ send_coverage() {
 # $2 - number of log lines
 run_benchmarks() {
 	echo 'Running benchmarks...' >&2
-	make benchmark | tail -n "$2" >> "$1" 2>&1
+	make NODE_FLAGS='--no-deprecation' benchmark | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Benchmarks failed.' >&2
 		return 1
@@ -170,7 +170,7 @@ run_benchmarks() {
 # $2 - number of log lines
 run_examples() {
 	echo 'Running examples...' >&2
-	make examples | tail -n "$2" >> "$1" 2>&1
+	make NODE_FLAGS='--no-deprecation' examples | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Examples failed.' >&2
 		return 1
