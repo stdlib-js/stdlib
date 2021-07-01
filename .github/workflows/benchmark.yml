@@ -201,7 +201,7 @@ jobs:
       - name: 'Perform install sequence'
         shell: bash
         run: |
-          make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install
+          make install || make install
         timeout-minutes: 30
 
       # Run the build task:
@@ -209,7 +209,7 @@ jobs:
         shell: bash
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
-          "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
+          "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
