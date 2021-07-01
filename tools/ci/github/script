@@ -22,6 +22,9 @@
 
 # shellcheck disable=SC2181
 
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
 
 # VARIABLES #
 
