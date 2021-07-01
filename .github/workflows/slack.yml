@@ -38,7 +38,7 @@ jobs:
   notify:
 
     # Define a display name:
-    name: 'Success notification'
+    name: 'Slack notification'
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: 'ubuntu-latest'
