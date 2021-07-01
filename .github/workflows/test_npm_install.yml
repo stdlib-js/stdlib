@@ -192,13 +192,6 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Perform install sequence (accounting for spurious installation errors, such as network timeouts, which can occasionally happen when running `npm install`):
-      - name: 'Perform install sequence'
-        shell: bash
-        run: |
-          make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install || make FC="${{ env.FC }}" FORTRAN_COMPILER="${{ env.FORTRAN_COMPILER }}" install
-        timeout-minutes: 30
-
       # Run the build task:
       - name: 'Run build task'
         shell: bash
