@@ -51,7 +51,7 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: "success"
-          fields: repo,message,commit,author,ref
+          fields: repo,commit,message,author,ref
           text: "${{ github.event.workflow.name }} succeeded"
           author_name: 'Success'
         env:
@@ -64,7 +64,7 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: "failure"
-          fields: repo,message,commit,author,ref
+          fields: repo,commit,message,author,ref
           text: "${{ github.event.workflow.name }} failed"
           author_name: 'Failure'
         env:
@@ -77,7 +77,7 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: "cancelled"
-          fields: repo,message,commit,author,ref
+          fields: repo,commit,message,author,ref
           text: "${{ github.event.workflow.name }} was canceled"
           author_name: 'Canceled'
         env:
