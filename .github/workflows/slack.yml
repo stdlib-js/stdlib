@@ -1,0 +1,60 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: slack
+
+# Workflow triggers:
+on:
+  workflow_run:
+    workflows:
+      - benchmark
+      - examples
+      - test
+      - test_cov
+      - test_npm_install
+    types:
+      - completed
+
+# Workflow jobs:
+jobs:
+
+  # Define a workflow for sending notifications to Slack...
+  notify:
+
+    # Define a display name:
+    name: 'Success notification'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: 'ubuntu-latest'
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Send notification to Slack:
+      - name: 'Send notification to Slack'
+        uses: 8398a7/action-slack@v3
+        with:
+          status: "${{ github.event.workflow_run.conclusion }}"
+          fields: repo,message,commit,author,eventName,ref
+          channel: '#build-status'
+          text: "${{ github.event.workflow.name }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: always()
+        timeout-minutes: 5
