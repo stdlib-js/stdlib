@@ -70,7 +70,7 @@ function array(): ndarray {
 	broadcastArray( ( x: number ): number => x, [ 2, 2, 2 ] ); // $ExpectError
 }
 
-// The compiler throws an error if the function is not provided a second argument which is an array-like object containing array-like objects containing numbers...
+// The compiler throws an error if the function is not provided a second argument which is an array-like object containing numbers...
 {
 	const x = array();
 
