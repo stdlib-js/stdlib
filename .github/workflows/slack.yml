@@ -52,7 +52,7 @@ jobs:
         with:
           status: "success"
           fields: repo,commit,message
-          text: "${{ github.event.workflow.name }} succeeded"
+          text: "**${{ github.event.workflow.name }}** workflow succeeded"
           author_name: 'Success'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
@@ -65,7 +65,7 @@ jobs:
         with:
           status: "failure"
           fields: repo,commit,message
-          text: "${{ github.event.workflow.name }} failed"
+          text: "**${{ github.event.workflow.name }}** workflow failed"
           author_name: 'Failure'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
@@ -78,7 +78,7 @@ jobs:
         with:
           status: "cancelled"
           fields: repo,commit,message
-          text: "${{ github.event.workflow.name }} was canceled"
+          text: "**${{ github.event.workflow.name }}** workflow was canceled"
           author_name: 'Canceled'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
