@@ -32,6 +32,7 @@ on:
       - macos_test
       - macos_test_cov
       - macos_test_npm_install
+      - windows_test_npm_install
     types:
       - completed
 
