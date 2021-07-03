@@ -23,7 +23,7 @@ name: macos_benchmark
 on:
   workflow_run:
     workflows:
-      - test_macos
+      - macos_test
     types:
       - completed
 

@@ -23,7 +23,7 @@ name: linux_benchmark
 on:
   workflow_run:
     workflows:
-      - test_linux
+      - linux_test
     types:
       - completed
 
