@@ -23,10 +23,12 @@ name: slack
 on:
   workflow_run:
     workflows:
-      - benchmark
-      - examples
-      - test
+      - benchmark_linux
+      - benchmark_macos
+      - examples_linux
       - test_cov
+      - test_linux
+      - test_macos
       - test_npm_install_linux
       - test_npm_install_macos
     types:

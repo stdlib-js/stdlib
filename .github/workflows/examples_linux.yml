@@ -17,24 +17,24 @@
 #/
 
 # Workflow name:
-name: benchmark
+name: examples_linux
 
 # Workflow triggers:
 on:
   workflow_run:
     workflows:
-      - test
+      - test_linux
     types:
       - completed
 
 # Workflow jobs:
 jobs:
 
-  # Define a workflow for running benchmarks...
+  # Define a workflow for running examples on Linux...
   on-success:
 
     # Define a display name:
-    name: "NODE_VERSION=${{ matrix.NODE_VERSION }}, OS=${{ matrix.OS }}"
+    name: "NODE_VERSION=${{ matrix.NODE_VERSION }}"
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
@@ -64,21 +64,18 @@ jobs:
       matrix:
 
         # Define the list of build tasks:
-        BUILD_TASK: ['benchmark']
+        BUILD_TASK: ['examples']
 
         # Define the list of Node.js versions on which to run this job:
         NODE_VERSION: ['16', '14', '12']
 
         # Define the list of operating systems on which to run this job:
-        OS: ['ubuntu-latest', 'macOS-latest']
+        OS: ['ubuntu-latest']
 
         # Define configuration options for each Node.js version:
         include:
           - OS: 'ubuntu-latest'
             PLATFORM: 'linux'
-
-          - OS: 'macOS-latest'
-            PLATFORM: 'macos'
 
           - NODE_VERSION: '16'
             NPM_VERSION: '>2.7.0'
@@ -114,29 +111,22 @@ jobs:
       - name: 'Install compilers'
         shell: bash
         run: |
-          if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
-            sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
-            sudo -E apt-get update -q
-            sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
-            mkdir -p $HOME/bin
-            echo "$HOME/bin" >> $GITHUB_PATH
-            ln -s /usr/bin/gcc-9 $HOME/bin/gcc
-            ln -s /usr/bin/g++-9 $HOME/bin/g++
-            ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
-          else
-            brew update
-            brew reinstall gcc
-          fi
+          sudo -E apt-add-repository -y "ppa:ubuntu-toolchain-r/test"
+          sudo -E apt-get update -q
+          sudo -E apt-get -yq --no-install-suggests --no-install-recommends --allow-downgrades --allow-remove-essential --allow-change-held-packages install binutils gcc-9 gcc-9-multilib g++-9 g++-9-multilib gfortran-9 gfortran-9-multilib
+          mkdir -p $HOME/bin
+          echo "$HOME/bin" >> $GITHUB_PATH
+          ln -s /usr/bin/gcc-9 $HOME/bin/gcc
+          ln -s /usr/bin/g++-9 $HOME/bin/g++
+          ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran
         timeout-minutes: 10
 
       # Configure a virtual display server (needed for electron):
-      - name: 'Configure virtual display server (Linux)'
+      - name: 'Configure virtual display server'
         shell: bash
         run: |
-          if [[ ${{ matrix.PLATFORM }} = "linux" ]]; then
-            sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0
-            sudo /usr/bin/Xvfb "${{ env.DISPLAY }}" -screen 0 1280x768x24 > /dev/null 2>&1 &
-          fi
+          sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0
+          sudo /usr/bin/Xvfb "${{ env.DISPLAY }}" -screen 0 1280x768x24 > /dev/null 2>&1 &
         timeout-minutes: 10
 
       # Install Node.js:
