@@ -32,7 +32,7 @@ jobs:
   test_npm_install:
 
     # Define a display name:
-    name: "NODE_VERSION=${{ matrix.NODE_VERSION }}"
+    name: "Node.js v${{ matrix.NODE_VERSION }}"
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
