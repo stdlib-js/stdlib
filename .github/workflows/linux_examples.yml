@@ -17,25 +17,30 @@
 #/
 
 # Workflow name:
-name: test_linux
+name: linux_examples
 
 # Workflow triggers:
 on:
-  push:
-    branches:
-      - develop
+  workflow_run:
+    workflows:
+      - test_linux
+    types:
+      - completed
 
 # Workflow jobs:
 jobs:
 
-  # Define a workflow for running unit tests on Linux...
-  test:
+  # Define a workflow for running examples on Linux...
+  on-success:
 
     # Define a display name:
     name: "NODE_VERSION=${{ matrix.NODE_VERSION }}"
 
     # Define the type of virtual host machine on which to run the job:
     runs-on: ${{ matrix.OS }}
+
+    # Ensure that this job only runs if the antecedent workflow is successful:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     # Define environment variables:
     env:
@@ -59,10 +64,9 @@ jobs:
       matrix:
 
         # Define the list of build tasks:
-        BUILD_TASK: ['test']
+        BUILD_TASK: ['examples']
 
         # Define the list of Node.js versions on which to run this job:
-        # NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
         NODE_VERSION: ['16', '14', '12']
 
         # Define the list of operating systems on which to run this job:
@@ -83,7 +87,7 @@ jobs:
             NPM_VERSION: '>2.7.0'
 
           # - NODE_VERSION: '10'
-          #   NPM_VERSION: '>2.7.0 <7.0.0'
+          #   NPM_VERSION: '>2.7.0 <6.0.0'
 
           # - NODE_VERSION: '8'
           #   NPM_VERSION: '>2.7.0 <6.0.0'
