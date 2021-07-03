@@ -28,7 +28,7 @@ import fromInt64Bytes = require( './index' );
 	fromInt64Bytes( bytes, 2, 1 ); // $ExpectType number
 }
 
-// The compiler throws an error if the function is provided a first argument which is  not a numeric array...
+// The compiler throws an error if the function is provided a first argument which is not a numeric array...
 {
 	fromInt64Bytes( '5', 1, 0 ); // $ExpectError
 	fromInt64Bytes( 5, 1, 0 ); // $ExpectError
@@ -39,7 +39,7 @@ import fromInt64Bytes = require( './index' );
 	fromInt64Bytes( ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is  not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	const bytes = new Uint8Array( 16 );
 	fromInt64Bytes( bytes, '5', 0 ); // $ExpectError
@@ -51,7 +51,7 @@ import fromInt64Bytes = require( './index' );
 	fromInt64Bytes( bytes, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a third argument which is  not a number...
+// The compiler throws an error if the function is provided a third argument which is not a number...
 {
 	const bytes = new Uint8Array( 16 );
 	fromInt64Bytes( bytes, 1, '5' ); // $ExpectError
