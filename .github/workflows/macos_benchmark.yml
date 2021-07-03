@@ -52,7 +52,6 @@ jobs:
       CXX_COMPILER: 'g++'
       LINKER: 'g++'
       GITHUB: 'true'
-      DISPLAY: ':99'
 
     # Define the build matrix strategy...
     strategy:
