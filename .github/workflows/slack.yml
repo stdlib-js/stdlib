@@ -27,7 +27,8 @@ on:
       - examples
       - test
       - test_cov
-      - test_npm_install
+      - test_npm_install_linux
+      - test_npm_install_macos
     types:
       - completed
 
