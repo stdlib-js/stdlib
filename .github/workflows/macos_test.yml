@@ -99,12 +99,17 @@ jobs:
           # - NODE_VERSION: '0.10'
           #   NPM_VERSION: '>2.7.0 <4.0.0'
 
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
     # Define the sequence of job steps...
     steps:
 
       # Install compilers:
       - name: 'Install compilers'
-        shell: bash
         run: |
           brew update
           brew reinstall gcc
@@ -119,7 +124,6 @@ jobs:
 
       # Print debug info:
       - name: 'Print debug info'
-        shell: bash
         run: |
           echo 'PATH:'
           echo $PATH
@@ -148,7 +152,6 @@ jobs:
 
       # Update the npm client (older clients cannot handle scoped modules):
       - name: 'Update npm'
-        shell: bash
         run: |
           npm install -g npm@"${{ matrix.NPM_VERSION }}"
           npm --version
@@ -170,14 +173,12 @@ jobs:
 
       # Perform install sequence (accounting for spurious installation errors, such as network timeouts, which can occasionally happen when running `npm install`):
       - name: 'Perform install sequence'
-        shell: bash
         run: |
           make install || make install
         timeout-minutes: 30
 
       # Run the build task:
       - name: 'Run build task'
-        shell: bash
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
           "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
@@ -186,7 +187,6 @@ jobs:
       # View the log file if the previous step fails:
       - name: 'View log file'
         if: failure()
-        shell: bash
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/on_failure
           "$GITHUB_WORKSPACE/tools/ci/github/on_failure"

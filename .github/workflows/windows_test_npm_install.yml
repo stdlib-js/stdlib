@@ -98,7 +98,7 @@ jobs:
           - NODE_VERSION: '0.10'
             NPM_VERSION: '>2.7.0 <4.0.0'
 
-    # Define defaults:
+    # Set defaults:
     defaults:
       run:
         # Set the default shell to MSYS2:
