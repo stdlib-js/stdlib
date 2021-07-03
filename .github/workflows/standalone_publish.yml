@@ -49,7 +49,7 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 15
         timeout-minutes: 5
