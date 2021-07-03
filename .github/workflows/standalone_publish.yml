@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: Push Changes to Standalone Package Repositories
+name: standalone_publish
 
 # Workflow triggers:
 on:
@@ -36,6 +36,15 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
         timeout-minutes: 10
 
       # Install Node.js:
@@ -46,13 +55,13 @@ jobs:
         timeout-minutes: 5
 
       # Install dependencies:
-      - name: Install dependencies
+      - name: 'Install dependencies'
         run: |
           npm install
         timeout-minutes: 15
 
-      # Run `publish_packages` script:
-      - name: Run `publish_packages` script
+      # Publish standalone packages:
+      - name: 'Publish standalone packages'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |

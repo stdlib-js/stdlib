@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: Trigger Standalone Package Tests
+name: standalone_test
 
 # Workflow triggers:
 on:
@@ -34,6 +34,15 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
         timeout-minutes: 10
 
       # Install Node.js:
@@ -44,13 +53,13 @@ jobs:
         timeout-minutes: 5
 
       # Install dependencies:
-      - name: Install dependencies
+      - name: 'Install dependencies'
         run: |
           npm install
         timeout-minutes: 15
 
-      # Run `trigger_workflow_events` script:
-      - name: Run `trigger_workflow_events` script
+      # Trigger standalone package tests:
+      - name: 'Trigger standalone package tests'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
