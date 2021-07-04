@@ -23,8 +23,11 @@
 
 # VARIABLES #
 
+# Get the name of the build task as the first argument to the build script:
+task="$1"
+
 # Define a file containing log output:
-log_file='./tmp/var/log/ci.log'
+log_file="./tmp/var/log/${task}.log"
 
 # Define the number of lines of logged output to print:
 tail_num_lines=5000

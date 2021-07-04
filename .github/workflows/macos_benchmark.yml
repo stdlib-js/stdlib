@@ -196,7 +196,7 @@ jobs:
         if: failure()
         run: |
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/on_failure
-          "$GITHUB_WORKSPACE/tools/ci/github/on_failure"
+          "$GITHUB_WORKSPACE/tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 5
 
       # Upload the log file:
