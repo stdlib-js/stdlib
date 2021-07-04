@@ -136,7 +136,9 @@ jobs:
 
       # Set NVS location:
       - name: 'Set NVS location'
-        run: echo "NVS_HOME=$HOME/.nvs" >> $GITHUB_ENV
+        run: |
+          echo "NVS_HOME=$HOME/.nvs" >> $GITHUB_ENV
+          echo "NVS_LINK_TO_SYSTEM=1" >> $GITHUB_ENV
         timeout-minutes: 2
 
       # Install Node.js:
