@@ -134,10 +134,14 @@ jobs:
         run: git config --global core.autocrlf input
         timeout-minutes: 2
 
+      # Set NVS location:
+      - name: 'Set NVS location'
+        run: echo "NVS_HOME=$HOME/.nvs" >> $GITHUB_ENV
+        timeout-minutes: 2
+
       # Install Node.js:
       - name: 'Install Node.js'
         run: |
-          echo "NVS_HOME=$HOME/.nvs" >> $GITHUB_ENV
           git clone https://github.com/jasongin/nvs "${{ env.NVS_HOME }}"
           . "${{ env.NVS_HOME }}/nvs.sh" install
           nvs add ${{ matrix.NODE_VERSION }}
