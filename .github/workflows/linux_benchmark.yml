@@ -27,6 +27,9 @@ on:
     types:
       - completed
 
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
 # Workflow jobs:
 jobs:
 
@@ -209,3 +212,17 @@ jobs:
           chmod +x $GITHUB_WORKSPACE/tools/ci/github/on_failure
           "$GITHUB_WORKSPACE/tools/ci/github/on_failure"
         timeout-minutes: 5
+
+      # Upload the log file:
+      - name: 'Upload log file'
+        uses: actions/upload-artifact@v2
+        with:
+          # Define a name for the uploaded artifact (ensuring a unique name for each job):
+          name: ${{ matrix.BUILD_TASK }}-log-v${{ matrix.NODE_VERSION }}-${{ env.PLATFORM }}
+
+          # Specify the path to the file to upload:
+          path: ./tmp/var/log/${{ matrix.BUILD_TASK }}.log
+
+          # Specify the number of days to retain the artifact (default is 90 days):
+          retention-days: 5
+        timeout-minutes: 10

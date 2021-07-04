@@ -33,7 +33,7 @@ task="$1"
 
 # Define an output file to store log output:
 log_dir='./tmp/var/log'
-log_file="${log_dir}/ci.log"
+log_file="${log_dir}/${task}.log"
 
 # Define the number of lines to store as log output:
 log_num_lines=5000
