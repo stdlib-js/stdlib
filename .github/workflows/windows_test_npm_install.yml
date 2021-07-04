@@ -225,6 +225,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
+          cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/script
           "./tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "./tools/ci/github/script" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 360
@@ -233,6 +234,7 @@ jobs:
       - name: 'View log file'
         if: failure()
         run: |
+          cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/on_failure
           "./tools/ci/github/on_failure"
         timeout-minutes: 5
