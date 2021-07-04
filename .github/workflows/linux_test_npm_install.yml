@@ -34,7 +34,7 @@ jobs:
     # Define a display name:
     name: "Node.js v${{ matrix.NODE_VERSION }}"
 
-    # Define the type of virtual host machine on which to run the job:
+    # Define the type of virtual host machine:
     runs-on: ${{ matrix.OS }}
 
     # Define environment variables:

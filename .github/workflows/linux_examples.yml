@@ -66,10 +66,10 @@ jobs:
         # Define the list of build tasks:
         BUILD_TASK: ['examples']
 
-        # Define the list of Node.js versions on which to run this job:
+        # Define the list of Node.js versions:
         NODE_VERSION: ['16', '14', '12']
 
-        # Define the list of operating systems on which to run this job:
+        # Define the list of operating systems:
         OS: ['ubuntu-latest']
 
         # Define configuration options for each Node.js version:

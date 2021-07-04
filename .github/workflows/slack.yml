@@ -45,7 +45,7 @@ jobs:
     # Define a display name:
     name: 'Slack notification'
 
-    # Define the type of virtual host machine on which to run the job:
+    # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'
 
     # Define the sequence of job steps...

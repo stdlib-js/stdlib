@@ -60,11 +60,15 @@ jobs:
         # Define the list of build tasks:
         BUILD_TASK: ['test-npm-install']
 
-        # Define the list of Node.js versions on which to run this job:
+        # Define the list of Node.js versions:
         NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
 
-        # Define the list of operating systems on which to run this job:
+        # Define the list of operating systems:
         OS: ['windows-latest']
+
+        # Define the list of host architectures:
+        ARCHITECTURE:
+          - x64
 
         # Define configuration options for each Node.js version:
         include:
@@ -130,19 +134,15 @@ jobs:
         run: git config --global core.autocrlf input
         timeout-minutes: 2
 
-      # Install Python:
-      - name: 'Install Python'
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-        timeout-minutes: 5
-
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.NODE_VERSION }}
-        timeout-minutes: 5
+        run: |
+          echo "NVS_HOME=$HOME/.nvs" >> $env:GITHUB_ENV
+          git clone https://github.com/jasongin/nvs "$NVS_HOME"
+          . "$NVS_HOME/nvs.sh" install
+          nvs add ${{ matrix.NODE_VERSION }}
+          nvs use ${{ matrix.NODE_VERSION }}
+        timeout-minutes: 15
 
       # Print debug info:
       - name: 'Print debug info'
@@ -181,6 +181,11 @@ jobs:
 
       # Install Windows build tools for compiling Node.js native add-ons.
       #
+      # ## Notes
+      #
+      # -   Installs both Visual Studio Build Tools and Python 3.8.
+      # -   Path to Python executable: `%USERPROFILE%\.windows-build-tools\python38`.
+      #
       # [1]: https://github.com/felixrieseberg/windows-build-tools
       # [2]: https://github.com/nodejs/node-gyp#installation
       - name: 'Install Windows build tools'
@@ -189,7 +194,9 @@ jobs:
 
       # Configure npm:
       - name: 'Configure npm'
-        run: npm config set msvs_version 2017
+        run: |
+          npm config set python "$USERPROFILE/.windows-build-tools/python38"
+          npm config set msvs_version 2017
         timeout-minutes: 2
 
       # Checkout the repository:
