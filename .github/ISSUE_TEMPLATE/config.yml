@@ -24,6 +24,6 @@ contact_links:
     url:  https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
     about: Be sure to consult the FAQ in case we have already answered your question there.
   - name: 👏 Support Us
-    url: https://github.com/stdlib-js/stdlib/blob/develop/.github/ISSUE_TEMPLATE/support_the_project.md
+    url: https://github.com/stdlib-js/stdlib/blob/develop/docs/support_the_project.md
     about: Want to help support the project? 😍
 
