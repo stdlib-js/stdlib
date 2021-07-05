@@ -150,7 +150,13 @@ jobs:
           git clone https://github.com/jasongin/nvs "${{ env.NVS_HOME }}"
           . "${{ env.NVS_HOME }}/nvs.sh" install
           nvs add ${{ matrix.NODE_VERSION }}
+          nvs link ${{ matrix.NODE_VERSION }}
           nvs use ${{ matrix.NODE_VERSION }}
+          cygpath -u $(nvs which ${{ matrix.NODE_VERSION }}) >> $PATH
+          touch $HOME/.bash_profile
+          echo "if [ -f $HOME/.bashrc ]; then . ~/.bashrc; fi" >> $HOME/.bash_profile
+          touch $HOME/.bashrc
+          echo ". ${{ env.NVS_HOME }}/nvs.sh" >> $HOME/.bashrc
         timeout-minutes: 15
 
       # Print debug info:
