@@ -211,7 +211,7 @@ jobs:
       - name: 'Install Windows build tools'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          npm install --global --production windows-build-tools
+          npm install --global --production windows-build-tools --vs2015
         timeout-minutes: 5
 
       # Configure npm:
@@ -219,7 +219,7 @@ jobs:
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           npm config set python "$USERPROFILE/.windows-build-tools/python38"
-          npm config set msvs_version 2017
+          npm config set msvs_version 2015
         timeout-minutes: 2
 
       # Checkout the repository:
