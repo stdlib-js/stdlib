@@ -177,6 +177,7 @@ jobs:
       # Print debug info:
       - name: 'Print debug info'
         run: |
+          source $HOME/.bashrc
           echo 'PATH:'
           echo $PATH
           echo ''
@@ -204,6 +205,7 @@ jobs:
       # Update the npm client (older clients cannot handle scoped modules):
       - name: 'Update npm'
         run: |
+          source $HOME/.bashrc
           npm install -g npm@"${{ matrix.NPM_VERSION }}"
           npm --version
         timeout-minutes: 5
@@ -218,12 +220,15 @@ jobs:
       # [1]: https://github.com/felixrieseberg/windows-build-tools
       # [2]: https://github.com/nodejs/node-gyp#installation
       - name: 'Install Windows build tools'
-        run: npm install --global --production windows-build-tools
+        run: |
+          source $HOME/.bashrc
+          npm install --global --production windows-build-tools
         timeout-minutes: 5
 
       # Configure npm:
       - name: 'Configure npm'
         run: |
+          source $HOME/.bashrc
           npm config set python "$USERPROFILE/.windows-build-tools/python38"
           npm config set msvs_version 2017
         timeout-minutes: 2
@@ -245,6 +250,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
+          source $HOME/.bashrc
           cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/script
           "./tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "./tools/ci/github/script" ${{ matrix.BUILD_TASK }}
@@ -254,6 +260,7 @@ jobs:
       - name: 'View log file'
         if: failure()
         run: |
+          source $HOME/.bashrc
           cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/on_failure
           "./tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
