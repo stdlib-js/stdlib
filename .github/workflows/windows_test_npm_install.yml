@@ -164,20 +164,12 @@ jobs:
           echo ''
           echo 'Adding executable to PATH...'
           cygpath -u $(nvs which ${{ matrix.NODE_VERSION }}) >> $GITHUB_PATH
-          echo ''
-          echo 'Creating .bash_profile...'
-          touch $HOME/.bash_profile
-          echo "if [ -f $HOME/.bashrc ]; then . $HOME/.bashrc; fi" >> $HOME/.bash_profile
-          echo ''
-          echo 'Creating .bashrc...'
-          touch $HOME/.bashrc
-          echo ". ${{ env.NVS_HOME }}/nvs.sh" >> $HOME/.bashrc
         timeout-minutes: 15
 
       # Print debug info:
       - name: 'Print debug info'
         run: |
-          source $HOME/.bashrc
+          . "${{ env.NVS_HOME }}/nvs.sh"
           echo 'PATH:'
           echo $PATH
           echo ''
@@ -205,7 +197,7 @@ jobs:
       # Update the npm client (older clients cannot handle scoped modules):
       - name: 'Update npm'
         run: |
-          source $HOME/.bashrc
+          . "${{ env.NVS_HOME }}/nvs.sh"
           npm install -g npm@"${{ matrix.NPM_VERSION }}"
           npm --version
         timeout-minutes: 5
@@ -221,14 +213,14 @@ jobs:
       # [2]: https://github.com/nodejs/node-gyp#installation
       - name: 'Install Windows build tools'
         run: |
-          source $HOME/.bashrc
+          . "${{ env.NVS_HOME }}/nvs.sh"
           npm install --global --production windows-build-tools
         timeout-minutes: 5
 
       # Configure npm:
       - name: 'Configure npm'
         run: |
-          source $HOME/.bashrc
+          . "${{ env.NVS_HOME }}/nvs.sh"
           npm config set python "$USERPROFILE/.windows-build-tools/python38"
           npm config set msvs_version 2017
         timeout-minutes: 2
@@ -250,7 +242,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
-          source $HOME/.bashrc
+          . "${{ env.NVS_HOME }}/nvs.sh"
           cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/script
           "./tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "./tools/ci/github/script" ${{ matrix.BUILD_TASK }}
@@ -260,7 +252,7 @@ jobs:
       - name: 'View log file'
         if: failure()
         run: |
-          source $HOME/.bashrc
+          . "${{ env.NVS_HOME }}/nvs.sh"
           cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/on_failure
           "./tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
