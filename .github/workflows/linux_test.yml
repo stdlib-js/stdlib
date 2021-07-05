@@ -217,7 +217,7 @@ jobs:
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
-          name: ${{ matrix.BUILD_TASK }}-log-v${{ matrix.NODE_VERSION }}-${{ env.PLATFORM }}
+          name: ${{ matrix.BUILD_TASK }}-log-v${{ matrix.NODE_VERSION }}-${{ matrix.PLATFORM }}
 
           # Specify the path to the file to upload:
           path: ./tmp/var/log/${{ matrix.BUILD_TASK }}.log
