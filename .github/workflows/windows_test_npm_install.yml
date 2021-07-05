@@ -211,15 +211,14 @@ jobs:
       - name: 'Install Windows build tools'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          npm install --global --production windows-build-tools --vs2015
+          choco install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 5
 
       # Configure npm:
       - name: 'Configure npm'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          npm config set python "$USERPROFILE/.windows-build-tools/python27"
-          npm config set msvs_version 2015
+          npm config set msvs_version 2019
         timeout-minutes: 2
 
       # Checkout the repository:
