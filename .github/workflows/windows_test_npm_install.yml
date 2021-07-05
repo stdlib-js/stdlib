@@ -167,7 +167,7 @@ jobs:
           echo ''
           echo 'Creating .bash_profile...'
           touch $HOME/.bash_profile
-          echo "if [ -f $HOME/.bashrc ]; then . ~/.bashrc; fi" >> $HOME/.bash_profile
+          echo "if [ -f $HOME/.bashrc ]; then . $HOME/.bashrc; fi" >> $HOME/.bash_profile
           echo ''
           echo 'Creating .bashrc...'
           touch $HOME/.bashrc
