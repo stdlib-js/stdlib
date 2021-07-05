@@ -151,6 +151,9 @@ jobs:
           . "${{ env.NVS_HOME }}/nvs.sh" install
           nvs add ${{ matrix.NODE_VERSION }}
           nvs use ${{ matrix.NODE_VERSION }}
+          nvs --version
+          nvs which ${{ matrix.NODE_VERSION }}
+          node --version
         timeout-minutes: 15
 
       # Print debug info:
