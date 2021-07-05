@@ -232,13 +232,13 @@ jobs:
         run: |
           echo "NOTIFICATION_STATUS=${{ needs.test_npm_install.result}}" >> $GITHUB_ENV
           if [[ "${{ needs.test_npm_install.result }}" = "success" ]]; then
-            echo "NOTIFICATION_TEXT='**test_npm_install** workflow succeeded" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**test_npm_install** workflow succeeded (macOS)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Success" >> $GITHUB_ENV
           elif [[ "${{ needs.test_npm_install.result }}" = "failure" ]]; then
-            echo "NOTIFICATION_TEXT='**test_npm_install** workflow failed" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**test_npm_install** workflow failed (macOS)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Failure" >> $GITHUB_ENV
           elif [[ "${{ needs.test_npm_install.result }}" = "cancelled" ]]; then
-            echo "NOTIFICATION_TEXT='**test_npm_install** workflow was canceled" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**test_npm_install** workflow was canceled (macOS)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Canceled" >> $GITHUB_ENV
           else
             exit 1

@@ -243,13 +243,13 @@ jobs:
         run: |
           echo "NOTIFICATION_STATUS=${{ needs.benchmark.result}}" >> $GITHUB_ENV
           if [[ "${{ needs.benchmark.result }}" = "success" ]]; then
-            echo "NOTIFICATION_TEXT='**benchmark** workflow succeeded" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**benchmark** workflow succeeded (macOS)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Success" >> $GITHUB_ENV
           elif [[ "${{ needs.benchmark.result }}" = "failure" ]]; then
-            echo "NOTIFICATION_TEXT='**benchmark** workflow failed" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**benchmark** workflow failed (macOS)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Failure" >> $GITHUB_ENV
           elif [[ "${{ needs.benchmark.result }}" = "cancelled" ]]; then
-            echo "NOTIFICATION_TEXT='**benchmark** workflow was canceled" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**benchmark** workflow was canceled (macOS)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Canceled" >> $GITHUB_ENV
           else
             exit 1

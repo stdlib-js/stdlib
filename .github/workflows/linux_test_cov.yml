@@ -257,13 +257,13 @@ jobs:
         run: |
           echo "NOTIFICATION_STATUS=${{ needs.test_cov.result}}" >> $GITHUB_ENV
           if [[ "${{ needs.test_cov.result }}" = "success" ]]; then
-            echo "NOTIFICATION_TEXT='**test_cov** workflow succeeded" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**test_cov** workflow succeeded (linux)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Success" >> $GITHUB_ENV
           elif [[ "${{ needs.test_cov.result }}" = "failure" ]]; then
-            echo "NOTIFICATION_TEXT='**test_cov** workflow failed" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**test_cov** workflow failed (linux)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Failure" >> $GITHUB_ENV
           elif [[ "${{ needs.test_cov.result }}" = "cancelled" ]]; then
-            echo "NOTIFICATION_TEXT='**test_cov** workflow was canceled" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**test_cov** workflow was canceled (linux)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Canceled" >> $GITHUB_ENV
           else
             exit 1

@@ -257,13 +257,13 @@ jobs:
         run: |
           echo "NOTIFICATION_STATUS=${{ needs.examples.result}}" >> $GITHUB_ENV
           if [[ "${{ needs.examples.result }}" = "success" ]]; then
-            echo "NOTIFICATION_TEXT='**examples** workflow succeeded" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**examples** workflow succeeded (linux)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Success" >> $GITHUB_ENV
           elif [[ "${{ needs.examples.result }}" = "failure" ]]; then
-            echo "NOTIFICATION_TEXT='**examples** workflow failed" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**examples** workflow failed (linux)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Failure" >> $GITHUB_ENV
           elif [[ "${{ needs.examples.result }}" = "cancelled" ]]; then
-            echo "NOTIFICATION_TEXT='**examples** workflow was canceled" >> $GITHUB_ENV
+            echo "NOTIFICATION_TEXT='**examples** workflow was canceled (linux)'" >> $GITHUB_ENV
             echo "NOTIFICATION_AUTHOR_NAME=Canceled" >> $GITHUB_ENV
           else
             exit 1
