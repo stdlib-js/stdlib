@@ -1,0 +1,61 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+name: 🚀 Feature Request
+description: I have a suggestion (and may want to help contribute 🙂)!
+title: "[RFC]: "
+labels: [rfc, feature]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Description of the feature request.
+      value: This RFC proposes
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues
+      description: Does this feature request have any related issues?
+      value: "Related issues # , # , and # ."
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions
+      description: Any questions for reviewers?
+      value: No.
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      description: Any other information relevant to this feature request? This may include screenshots, references, sample output, and/or implementation notes.
+      value: No.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please ensure the following tasks are completed before submitting a feature request.
+      options:
+        - label: I have read and understood the [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md).
+          required: true
+        - label: Searched for existing issues and pull requests.
+          required: true
+        - label: The issue name begins with `RFC:`.
+          required: true
