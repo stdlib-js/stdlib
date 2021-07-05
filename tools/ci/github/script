@@ -106,103 +106,48 @@ print_success() {
 	echo 'Success!' >&2
 }
 
-# Runs unit tests.
+# Performs install tasks.
 #
 # $1 - log file
 # $2 - number of log lines
-run_tests() {
-	echo 'Running tests...' >&2
-	make NODE_FLAGS='--no-deprecation' test | tail -n "$2" >> "$1" 2>&1
+install() {
+	echo 'Installing...' >&2
+	make install | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
-		echo 'Tests failed.' >&2
-		return 1
+		echo 'Error occurred during install.' >&2
+		echo 'Retry 1 of 2...' >&2
+		sleep 15s
+		echo 'Installing...' >&2
+		make install | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Error occurred during install.' >&2
+			echo 'Retry 2 of 2...' >&2
+			sleep 30s
+			echo 'Installing...' >&2
+			make install | tail -n "$2" >> "$1" 2>&1
+			if [[ "$?" -ne 0 ]]; then
+				echo 'Error occurred during install.' >&2
+				echo 'Failed to install 3 times. Aborting install.' >&2
+				return 1
+			fi
+		fi
 	fi
-	echo 'Tests passed.' >&2
+	echo 'Install successful.' >&2
 	return 0
 }
 
-# Runs test coverage.
+# Performs development environment initialization tasks.
 #
 # $1 - log file
 # $2 - number of log lines
-run_test_coverage() {
-	echo 'Running test coverage...' >&2
-	make NODE_FLAGS='--no-deprecation' test-cov | tail -n "$2" >> "$1" 2>&1
+dev_init() {
+	echo 'Initializing development environment...' >&2
+	make init | tail -n "$2" >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
-		echo 'Tests failed.' >&2
+		echo 'Error occurred during initialization.' >&2
 		return 1
 	fi
-	echo 'Tests passed.' >&2
-	return 0
-}
-
-# Sends test coverage to coverage service.
-#
-# $1 - report title
-# $2 - log file
-# $3 - number of log lines
-send_coverage() {
-	echo 'Sending coverage report to coverage service...' >&2
-	make COVERAGE_NAME="$1" coverage | tail -n "$3" >> "$2" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Sending coverage report to coverage service failed.' >&2
-		return 1
-	fi
-	echo 'Coverage report sent to coverage service.' >&2
-	return 0
-}
-
-# Runs benchmarks.
-#
-# $1 - log file
-# $2 - number of log lines
-run_benchmarks() {
-	echo 'Running benchmarks...' >&2
-	make NODE_FLAGS='--no-deprecation' benchmark | tail -n "$2" >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Benchmarks failed.' >&2
-		return 1
-	fi
-	echo 'Successfully ran benchmarks.' >&2
-	return 0
-}
-
-# Runs examples.
-#
-# $1 - log file
-# $2 - number of log lines
-run_examples() {
-	echo 'Running examples...' >&2
-	make NODE_FLAGS='--no-deprecation' examples | tail -n "$2" >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Examples failed.' >&2
-		return 1
-	fi
-	echo 'Successfully ran examples.' >&2
-	return 0
-}
-
-# Tests whether the project successfully installs via `npm`.
-#
-# $1 - log file
-# $2 - number of log lines
-test_npm_install() {
-	echo 'Testing npm install...' >&2
-	make test-npm-install | tail -n "$2" >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Installation failed.' >&2
-		return 1
-	fi
-	echo 'Successfully installed.' >&2
-
-	echo 'Testing npm install (via GitHub)...' >&2
-	make test-npm-install-github | tail -n "$2" >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Installation (via GitHub) failed.' >&2
-		return 1
-	fi
-	echo 'Successfully installed (via GitHub).' >&2
-
+	echo 'Initialization successful.' >&2
 	return 0
 }
 
@@ -221,13 +166,235 @@ check_deps() {
 	return 0
 }
 
+# Checks licenses.
+#
+# $1 - log file
+# $2 - number of log lines
+check_licenses() {
+	echo 'Checking licenses...' >&2
+	make check-licenses-production | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Detected dependency licensing issues.' >&2
+		return 1
+	fi
+	echo 'No dependency licensing issues detected.' >&2
+	return 0
+}
+
+# Performs lint tasks.
+#
+# $1 - log file
+# $2 - number of log lines
+lint() {
+	dev_init "$1" "$2"
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting failed as unable to initialize development environment.' >&2
+		return 1
+	fi
+	echo 'Linting filenames...' >&2
+	make lint-filenames | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting filenames failed.' >&2
+		return 1
+	fi
+	make lint-header-filenames | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting filenames failed.' >&2
+		return 1
+	fi
+	echo 'Linting package.json files...' >&2
+	make lint-pkg-json | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Linting package.json failed.' >&2
+		return 1
+	fi
+	# FIXME: linting of Markdown files takes too long; need to speed-up via distributed tasks or only linting files which changed
+	# echo 'Linting Markdown files...' >&2
+	# make lint-markdown | tail -n "$2" >> "$1" 2>&1
+	# if [[ "$?" -ne 0 ]]; then
+	# 	echo 'Linting Markdown failed.' >&2
+	# 	return 1
+	# fi
+	echo 'Linting passed.' >&2
+	return 0
+}
+
+# Tests whether the project successfully installs via `npm`.
+#
+# $1 - log file
+# $2 - number of log lines
+test_npm_install() {
+	echo 'Testing npm install...' >&2
+	make test-npm-install | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install...' >&2
+		make test-npm-install | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed.' >&2
+
+	echo 'Testing npm install (via GitHub)...' >&2
+	make test-npm-install-github | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (via GitHub) failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install (via GitHub)...' >&2
+		make test-npm-install-github | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation (via GitHub) failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed (via GitHub).' >&2
+
+	return 0
+}
+
+# Runs unit tests.
+#
+# $1 - log file
+# $2 - number of log lines
+run_tests() {
+	echo 'Running tests...' >&2
+	make NODE_FLAGS='--no-deprecation' test | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running tests...' >&2
+		make NODE_FLAGS='--no-deprecation' test | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Tests passed.' >&2
+	return 0
+}
+
+# Runs test coverage.
+#
+# $1 - log file
+# $2 - number of log lines
+run_test_coverage() {
+	echo 'Running test coverage...' >&2
+	make NODE_FLAGS='--no-deprecation' test-cov | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running test coverage...' >&2
+		make NODE_FLAGS='--no-deprecation' test-cov | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Tests passed.' >&2
+	return 0
+}
+
+# Sends test coverage to coverage service.
+#
+# $1 - report title
+# $2 - log file
+# $3 - number of log lines
+send_coverage() {
+	echo 'Sending coverage report to coverage service...' >&2
+	make COVERAGE_NAME="$1" coverage | tail -n "$3" >> "$2" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Sending coverage report to coverage service failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Sending coverage report to coverage service...' >&2
+		make COVERAGE_NAME="$1" coverage | tail -n "$3" >> "$2" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Sending coverage report to coverage service failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Coverage report sent to coverage service.' >&2
+	return 0
+}
+
+# Runs benchmarks.
+#
+# $1 - log file
+# $2 - number of log lines
+run_benchmarks() {
+	echo 'Running benchmarks...' >&2
+	make NODE_FLAGS='--no-deprecation' benchmark | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Benchmarks failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running benchmarks...' >&2
+		make NODE_FLAGS='--no-deprecation' benchmark | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Benchmarks failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully ran benchmarks.' >&2
+	return 0
+}
+
+# Runs examples.
+#
+# $1 - log file
+# $2 - number of log lines
+run_examples() {
+	echo 'Running examples...' >&2
+	make NODE_FLAGS='--no-deprecation' examples | tail -n "$2" >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Examples failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running examples...' >&2
+		make NODE_FLAGS='--no-deprecation' examples | tail -n "$2" >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Examples failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully ran examples.' >&2
+	return 0
+}
+
 # Main execution sequence.
 main() {
 	create_log_file "${log_dir}" "${log_file}"
 	start_heartbeat "${heartbeat_interval}"
 
 	echo "Task: ${task}." >&2
-	if [[ "${task}" = "test-npm-install" ]]; then
+	if [[ "${task}" = "install" ]]; then
+		install "${log_file}" "${log_num_lines}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "check_deps" ]]; then
+		check_deps "${log_file}" "${log_num_lines}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "check_licenses" ]]; then
+		check_licenses "${log_file}" "${log_num_lines}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "lint" ]]; then
+		lint "${log_file}" "${log_num_lines}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "test-npm-install" ]]; then
 		test_npm_install "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
@@ -253,11 +420,6 @@ main() {
 			on_error 1
 		fi
 		send_coverage "unit_test" "${log_file}" "${log_num_lines}"
-		if [[ "$?" -ne 0 ]]; then
-			on_error 1
-		fi
-	elif [[ "${task}" = "check-deps" ]]; then
-		check_deps "${log_file}" "${log_num_lines}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
