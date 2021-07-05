@@ -214,6 +214,7 @@ jobs:
       # Upload the log file:
       - name: 'Upload log file'
         uses: actions/upload-artifact@v2
+        if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
           name: ${{ matrix.BUILD_TASK }}-log-v${{ matrix.NODE_VERSION }}-${{ env.PLATFORM }}
