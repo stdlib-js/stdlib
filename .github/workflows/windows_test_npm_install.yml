@@ -170,6 +170,7 @@ jobs:
       - name: 'Print debug info'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh"
+          nvs use ${{ matrix.NODE_VERSION }}
           echo 'PATH:'
           echo $PATH
           echo ''
@@ -198,6 +199,7 @@ jobs:
       - name: 'Update npm'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh"
+          nvs use ${{ matrix.NODE_VERSION }}
           npm install -g npm@"${{ matrix.NPM_VERSION }}"
           npm --version
         timeout-minutes: 5
@@ -214,6 +216,7 @@ jobs:
       - name: 'Install Windows build tools'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh"
+          nvs use ${{ matrix.NODE_VERSION }}
           npm install --global --production windows-build-tools
         timeout-minutes: 5
 
@@ -221,6 +224,7 @@ jobs:
       - name: 'Configure npm'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh"
+          nvs use ${{ matrix.NODE_VERSION }}
           npm config set python "$USERPROFILE/.windows-build-tools/python38"
           npm config set msvs_version 2017
         timeout-minutes: 2
@@ -243,6 +247,7 @@ jobs:
       - name: 'Run build task'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh"
+          nvs use ${{ matrix.NODE_VERSION }}
           cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/script
           "./tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "./tools/ci/github/script" ${{ matrix.BUILD_TASK }}
@@ -253,6 +258,7 @@ jobs:
         if: failure()
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh"
+          nvs use ${{ matrix.NODE_VERSION }}
           cd $GITHUB_WORKSPACE
           chmod +x ./tools/ci/github/on_failure
           "./tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
