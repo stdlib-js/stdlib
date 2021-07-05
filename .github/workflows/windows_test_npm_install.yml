@@ -200,19 +200,11 @@ jobs:
         timeout-minutes: 5
 
       # Install Windows build tools for compiling Node.js native add-ons.
-      #
-      # ## Notes
-      #
-      # -   Installs both Visual Studio Build Tools and Python 3.8.
-      # -   Path to Python executable: `%USERPROFILE%\.windows-build-tools\python38`.
-      #
-      # [1]: https://github.com/felixrieseberg/windows-build-tools
-      # [2]: https://github.com/nodejs/node-gyp#installation
       - name: 'Install Windows build tools'
-        run: |
-          . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          choco install -y visualstudio2019buildtools visualstudio2019-workload-vctools
-        timeout-minutes: 5
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
+        timeout-minutes: 10
 
       # Configure npm:
       - name: 'Configure npm'
