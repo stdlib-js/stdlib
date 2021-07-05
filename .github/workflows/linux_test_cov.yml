@@ -195,22 +195,20 @@ jobs:
       # Perform install sequence (accounting for spurious installation errors, such as network timeouts, which can occasionally happen when running `npm install`):
       - name: 'Perform install sequence'
         run: |
-          make install || make install
+          . "$GITHUB_WORKSPACE/tools/ci/github/script" install
         timeout-minutes: 30
 
       # Run the build task:
       - name: 'Run build task'
         run: |
-          chmod +x $GITHUB_WORKSPACE/tools/ci/github/script
-          "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }} || "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
+          . "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
       - name: 'View log file'
         if: failure()
         run: |
-          chmod +x $GITHUB_WORKSPACE/tools/ci/github/on_failure
-          "$GITHUB_WORKSPACE/tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
+          . "$GITHUB_WORKSPACE/tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 5
 
       # Upload the log file:
