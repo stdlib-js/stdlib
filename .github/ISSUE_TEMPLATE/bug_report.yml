@@ -77,17 +77,38 @@ body:
     attributes:
       label: Version
       description: What version of `stdlib` are you running?
-  - type: textarea
+  - type: dropdown
     id: environments
     attributes:
       label: Environments
-      description: What environments are affected (e.g., `Node v0.4.x`, `Chrome`, `IE 11`)? If Node.js, include the `npm` version, operating system, and any other potentially relevant platform information.
-      value: |
-        The following environments are affected:
-
-        -   a
-        -   b
-        -   c
+      description: What environments are affected?
+      multiple: true
+      options:
+        - N/A
+        - Node.js
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Internet Explorer
+        - Other Browser
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser Version
+      description: If applicable, what browser version(s)?
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js / npm Version
+      description: If applicable, what Node.js / npm version(s)?
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: If applicable, what operating system(s)?
   - type: checkboxes
     id: checklist
     attributes:
