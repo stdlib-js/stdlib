@@ -269,7 +269,7 @@ jobs:
     # Indicate that this job depends on the prior job finishing:
     needs: test_npm_install
 
-    # Always run this job regardless of the outcome of the prior job:
+    # Run this job regardless of the outcome of the prior job:
     if: always()
 
     # Set defaults:
