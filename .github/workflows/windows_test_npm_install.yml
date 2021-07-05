@@ -137,8 +137,8 @@ jobs:
         run: git config --global core.autocrlf input
         timeout-minutes: 2
 
-      # Set NVS location:
-      - name: 'Set NVS location'
+      # Configure NVS:
+      - name: 'Configure NVS'
         run: |
           echo "NVS_HOME=$HOME/.nvs" >> $GITHUB_ENV
           echo "NVS_LINK_TO_SYSTEM=1" >> $GITHUB_ENV
@@ -163,10 +163,7 @@ jobs:
           nvs use ${{ matrix.NODE_VERSION }}
           echo ''
           echo 'Adding executable to PATH...'
-          cygpath -u $(nvs which ${{ matrix.NODE_VERSION }}) >> $PATH
-          echo ''
-          echo 'PATH:'
-          echo $PATH
+          cygpath -u $(nvs which ${{ matrix.NODE_VERSION }}) >> $GITHUB_PATH
           echo ''
           echo 'Creating .bash_profile...'
           touch $HOME/.bash_profile
