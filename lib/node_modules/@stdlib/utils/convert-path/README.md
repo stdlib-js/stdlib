@@ -51,7 +51,7 @@ var p = convertPath( 'C:\\foo\\bar', 'posix' );
 
 The following output path conventions are supported:
 
--   **win32**: Windows path convention; e.g., \`C:\\foo\\bar'.
+-   **win32**: Windows path convention; e.g., `C:\\foo\\bar`.
 -   **mixed**: mixed path convention (Windows volume convention and POSIX path separator); e.g., `C:/foo/bar`.
 -   **posix**: POSIX path convention; e.g., `/c/foo/bar`.
 
@@ -89,7 +89,7 @@ var p2;
 
 p1 = '/c/foo/bar/beep.c';
 p2 = convertPath( p1, 'win32' );
-// returns 'c:\\foo\\bar\\beep.c'
+// returns 'c:\foo\bar\beep.c'
 
 p1 = '/c/foo/bar/beep.c';
 p2 = convertPath( p1, 'mixed' );
@@ -101,7 +101,7 @@ p2 = convertPath( p1, 'posix' );
 
 p1 = 'C:\\\\foo\\bar\\beep.c';
 p2 = convertPath( p1, 'win32' );
-// returns 'C:\\\\foo\\bar\\beep.c'
+// returns 'C:\\foo\bar\beep.c'
 
 p1 = 'C:\\\\foo\\bar\\beep.c';
 p2 = convertPath( p1, 'mixed' );
