@@ -231,8 +231,8 @@ jobs:
       - name: 'Run build task'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          ls $PWD
-          ls $GITHUB_WORKSPACE
+          echo $GITHUB_WORKSPACE
+          make inspect.ROOT_DIR
           . "./tools/ci/github/script" ${{ matrix.BUILD_TASK }}
         timeout-minutes: 360
 
