@@ -230,6 +230,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         env:
+          # Explicitly set computed environment variables:
           TEST_NPM_INSTALL_PKG: '@stdlib/stdlib'
           TEST_NPM_INSTALL_GITHUB_URL: 'https://github.com/stdlib-js/stdlib'
         run: |
