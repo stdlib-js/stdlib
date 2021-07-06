@@ -111,6 +111,20 @@ jobs:
     # Define the sequence of job steps...
     steps:
 
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
       # Install MSYS2:
       - name: 'Install MSYS2'
         uses: msys2/setup-msys2@v2
@@ -125,6 +139,13 @@ jobs:
           install: git make base mingw-w64-x86_64-toolchain
         timeout-minutes: 10
 
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 2
+
       # Configure Git:
       - name: 'Configure Git'
 
@@ -132,13 +153,6 @@ jobs:
         #
         # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
         run: git config --global core.autocrlf input
-        timeout-minutes: 2
-
-      # Initialize log files:
-      - name: 'Initialize log files'
-        run: |
-          mkdir -p "${{ env.LOG_DIR }}"
-          touch "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 2
 
       # Configure NVS:
@@ -216,20 +230,6 @@ jobs:
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
           npm config set msvs_version 2019
         timeout-minutes: 2
-
-      # Checkout the repository:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v2
-        with:
-          # Specify whether to remove untracked files before checking out the repository:
-          clean: false
-
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
-
-          # Specify whether to download Git-LFS files:
-          lfs: false
-        timeout-minutes: 10
 
       # Run the build task:
       - name: 'Run build task'
