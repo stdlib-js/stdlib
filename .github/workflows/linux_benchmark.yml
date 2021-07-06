@@ -56,6 +56,10 @@ jobs:
       LINKER: 'g++'
       GITHUB: 'true'
       DISPLAY: ':99'
+      LOG_DIR: './tmp/var/log'
+      LOG_FILE_INSTALL: "${{ env.LOG_DIR }}/install.log"
+      LOG_FILE_BUILD_TASK: "${{ env.LOG_DIR }}/${{ matrix.BUILD_TASK }}"
+      LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
     strategy:
@@ -115,6 +119,14 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_INSTALL }}"
+          touch "${{ env.LOG_FILE_BUILD_TASK }}"
+        timeout-minutes: 2
 
       # Install compilers:
       - name: 'Install compilers'
@@ -192,23 +204,32 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
-      # Perform install sequence (accounting for spurious installation errors, such as network timeouts, which can occasionally happen when running `npm install`):
+      # Perform install sequence:
       - name: 'Perform install sequence'
         run: |
-          . "$GITHUB_WORKSPACE/tools/ci/github/script" install
+          . "$GITHUB_WORKSPACE/tools/ci/github/script" install "${{ env.LOG_FILE_INSTALL }}"
         timeout-minutes: 30
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} "${{ env.LOG_FILE_INSTALL }}"
+        timeout-minutes: 5
 
       # Run the build task:
       - name: 'Run build task'
         run: |
-         . "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }}
+          . "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
       - name: 'View log file'
         if: failure()
         run: |
-          . "$GITHUB_WORKSPACE/tools/ci/github/on_failure" ${{ matrix.BUILD_TASK }}
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 5
 
       # Upload the log file:
@@ -217,10 +238,10 @@ jobs:
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
-          name: ${{ matrix.BUILD_TASK }}-log-v${{ matrix.NODE_VERSION }}-${{ matrix.PLATFORM }}
+          name: ${{ matrix.BUILD_TASK }}_log_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
 
           # Specify the path to the file to upload:
-          path: ./tmp/var/log/${{ matrix.BUILD_TASK }}.log
+          path: "${{ env.LOG_FILE_BUILD_TASK }}"
 
           # Specify the number of days to retain the artifact (default is 90 days):
           retention-days: 5
@@ -253,16 +274,16 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo "NOTIFICATION_STATUS=${{ needs.benchmark.result}}" >> $GITHUB_ENV
+          echo 'NOTIFICATION_STATUS=${{ needs.benchmark.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.benchmark.result }}" = "success" ]]; then
-            echo "NOTIFICATION_TEXT='**benchmark** workflow succeeded (linux)'" >> $GITHUB_ENV
-            echo "NOTIFICATION_AUTHOR_NAME=Success" >> $GITHUB_ENV
+            echo 'NOTIFICATION_TEXT=**benchmark** workflow succeeded (linux)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
           elif [[ "${{ needs.benchmark.result }}" = "failure" ]]; then
-            echo "NOTIFICATION_TEXT='**benchmark** workflow failed (linux)'" >> $GITHUB_ENV
-            echo "NOTIFICATION_AUTHOR_NAME=Failure" >> $GITHUB_ENV
+            echo 'NOTIFICATION_TEXT=**benchmark** workflow failed (linux)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
           elif [[ "${{ needs.benchmark.result }}" = "cancelled" ]]; then
-            echo "NOTIFICATION_TEXT='**benchmark** workflow was canceled (linux)'" >> $GITHUB_ENV
-            echo "NOTIFICATION_AUTHOR_NAME=Canceled" >> $GITHUB_ENV
+            echo 'NOTIFICATION_TEXT=**benchmark** workflow was canceled (linux)' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
           else
             exit 1
           fi
