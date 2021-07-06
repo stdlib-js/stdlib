@@ -51,7 +51,7 @@ jobs:
       LINKER: 'g++'
       GITHUB: 'true'
       LOG_DIR: '$GITHUB_WORKSPACE\\tmp\\var\\log'
-      LOG_FILE_BUILD_TASK: "$GITHUB_WORKSPACE\\tmp\\var\\log\\${{ matrix.BUILD_TASK }}.log"
+      LOG_FILE_BUILD_TASK: "$GITHUB_WORKSPACE\\\\tmp\\\\var\\\\log\\\\${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
@@ -256,10 +256,10 @@ jobs:
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
-          name: ${{ matrix.BUILD_TASK }}_log_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
+          name: ${{ matrix.BUILD_TASK }}_log_nodejs_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
 
           # Specify the path to the file to upload:
-          path: "${{ env.LOG_FILE_BUILD_TASK }}"
+          path: ${{ env.LOG_FILE_BUILD_TASK }}
 
           # Specify the number of days to retain the artifact (default is 90 days):
           retention-days: 5
