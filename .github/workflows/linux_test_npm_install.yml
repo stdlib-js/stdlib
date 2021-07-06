@@ -52,7 +52,7 @@ jobs:
       GITHUB: 'true'
       DISPLAY: ':99'
       LOG_DIR: './tmp/var/log'
-      LOG_FILE_BUILD_TASK: "${{ env.LOG_DIR }}/${{ matrix.BUILD_TASK }}.log"
+      LOG_FILE_BUILD_TASK: "./tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...

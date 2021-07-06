@@ -51,8 +51,8 @@ jobs:
       LINKER: 'g++'
       GITHUB: 'true'
       LOG_DIR: './tmp/var/log'
-      LOG_FILE_INSTALL: "${{ env.LOG_DIR }}/install.log"
-      LOG_FILE_BUILD_TASK: "${{ env.LOG_DIR }}/${{ matrix.BUILD_TASK }}.log"
+      LOG_FILE_INSTALL: "./tmp/var/log/install.log"
+      LOG_FILE_BUILD_TASK: "./tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
