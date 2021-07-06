@@ -50,8 +50,8 @@ jobs:
       CXX_COMPILER: 'g++'
       LINKER: 'g++'
       GITHUB: 'true'
-      LOG_DIR: './tmp/var/log'
-      LOG_FILE_BUILD_TASK: "./tmp/var/log/${{ matrix.BUILD_TASK }}.log"
+      LOG_DIR: '$GITHUB_WORKSPACE/tmp/var/log'
+      LOG_FILE_BUILD_TASK: "$GITHUB_WORKSPACE/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
