@@ -52,7 +52,7 @@ jobs:
       GITHUB: 'true'
       DISPLAY: ':99'
       LOG_DIR: './tmp/var/log'
-      LOG_FILE_BUILD_TASK: "${{ env.LOG_DIR }}/${{ matrix.BUILD_TASK }}"
+      LOG_FILE_BUILD_TASK: "${{ env.LOG_DIR }}/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
@@ -200,7 +200,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
-          . "$GITHUB_WORKSPACE/tools/ci/github/script" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
