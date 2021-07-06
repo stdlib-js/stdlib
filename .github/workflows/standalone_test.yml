@@ -21,11 +21,18 @@ name: standalone_test
 
 # Workflow triggers:
 on:
+  # Allow the workflow to be manually run:
   workflow_dispatch:
 
 # Workflow jobs:
 jobs:
+
+  # Define a job for triggering test workflows for standalone packages...
   trigger:
+
+    # Define a display name:
+    name: "Trigger Tests"
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
