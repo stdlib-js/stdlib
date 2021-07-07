@@ -41,7 +41,7 @@ on:
       - 'package.json'
 
       # List paths for which changes should *not* trigger this workflow:
-      - '!lib/_tools/**'
+      - '!lib/**/_tools/**'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
