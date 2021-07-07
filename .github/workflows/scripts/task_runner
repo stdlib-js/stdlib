@@ -92,32 +92,24 @@ print_success() {
 	echo 'Success!' >&2
 }
 
-# Performs install tasks.
+# Runs benchmarks.
 #
 # $1 - log file
-install() {
-	echo 'Installing...' >&2
-	make install >> "$1" 2>&1
+benchmark() {
+	echo 'Running benchmarks...' >&2
+	make NODE_FLAGS='--no-deprecation' benchmark >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
-		echo 'Error occurred during install.' >&2
-		echo 'Retry 1 of 2...' >&2
+		echo 'Benchmarks failed.' >&2
+		echo 'Retry 1 of 1...' >&2
 		sleep 15s
-		echo 'Installing...' >&2
-		make install >> "$1" 2>&1
+		echo 'Running benchmarks...' >&2
+		make NODE_FLAGS='--no-deprecation' benchmark >> "$1" 2>&1
 		if [[ "$?" -ne 0 ]]; then
-			echo 'Error occurred during install.' >&2
-			echo 'Retry 2 of 2...' >&2
-			sleep 30s
-			echo 'Installing...' >&2
-			make install >> "$1" 2>&1
-			if [[ "$?" -ne 0 ]]; then
-				echo 'Error occurred during install.' >&2
-				echo 'Failed to install 3 times. Aborting install.' >&2
-				return 1
-			fi
+			echo 'Benchmarks failed.' >&2
+			return 1
 		fi
 	fi
-	echo 'Install successful.' >&2
+	echo 'Successfully ran benchmarks.' >&2
 	return 0
 }
 
@@ -149,12 +141,62 @@ check_licenses() {
 	return 0
 }
 
+# Runs examples.
+#
+# $1 - log file
+examples() {
+	echo 'Running examples...' >&2
+	make NODE_FLAGS='--no-deprecation' examples >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Examples failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running examples...' >&2
+		make NODE_FLAGS='--no-deprecation' examples >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Examples failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully ran examples.' >&2
+	return 0
+}
+
+# Performs install tasks.
+#
+# $1 - log file
+install() {
+	echo 'Installing...' >&2
+	make install >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error occurred during install.' >&2
+		echo 'Retry 1 of 2...' >&2
+		sleep 15s
+		echo 'Installing...' >&2
+		make install >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Error occurred during install.' >&2
+			echo 'Retry 2 of 2...' >&2
+			sleep 30s
+			echo 'Installing...' >&2
+			make install >> "$1" 2>&1
+			if [[ "$?" -ne 0 ]]; then
+				echo 'Error occurred during install.' >&2
+				echo 'Failed to install 3 times. Aborting install.' >&2
+				return 1
+			fi
+		fi
+	fi
+	echo 'Install successful.' >&2
+	return 0
+}
+
 # Performs lint tasks.
 #
 # $1 - log file
 lint() {
 	echo 'Initializing development environment...' >&2
-	make init
+	make init >> "$1" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Linting failed as unable to initialize development environment.' >&2
 		return 1
@@ -186,6 +228,70 @@ lint() {
 	# 	return 1
 	# fi
 	echo 'Linting passed.' >&2
+	return 0
+}
+
+# Runs unit tests.
+#
+# $1 - log file
+tests() {
+	echo 'Running tests...' >&2
+	make NODE_FLAGS='--no-deprecation' test >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running tests...' >&2
+		make NODE_FLAGS='--no-deprecation' test >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Tests passed.' >&2
+	return 0
+}
+
+# Runs test coverage.
+#
+# $1 - log file
+test_coverage() {
+	echo 'Running test coverage...' >&2
+	make NODE_FLAGS='--no-deprecation' test-cov >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Tests failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Running test coverage...' >&2
+		make NODE_FLAGS='--no-deprecation' test-cov >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Tests failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Tests passed.' >&2
+	return 0
+}
+
+# Sends test coverage report to coverage service.
+#
+# $1 - report title
+# $2 - log file
+test_coverage_report() {
+	echo 'Sending coverage report to coverage service...' >&2
+	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Sending coverage report to coverage service failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Sending coverage report to coverage service...' >&2
+		make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Sending coverage report to coverage service failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Coverage report sent to coverage service.' >&2
 	return 0
 }
 
@@ -226,119 +332,15 @@ test_npm_install() {
 	return 0
 }
 
-# Runs unit tests.
-#
-# $1 - log file
-run_tests() {
-	echo 'Running tests...' >&2
-	make NODE_FLAGS='--no-deprecation' test >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Tests failed.' >&2
-		echo 'Retry 1 of 1...' >&2
-		sleep 15s
-		echo 'Running tests...' >&2
-		make NODE_FLAGS='--no-deprecation' test >> "$1" 2>&1
-		if [[ "$?" -ne 0 ]]; then
-			echo 'Tests failed.' >&2
-			return 1
-		fi
-	fi
-	echo 'Tests passed.' >&2
-	return 0
-}
-
-# Runs test coverage.
-#
-# $1 - log file
-run_test_coverage() {
-	echo 'Running test coverage...' >&2
-	make NODE_FLAGS='--no-deprecation' test-cov >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Tests failed.' >&2
-		echo 'Retry 1 of 1...' >&2
-		sleep 15s
-		echo 'Running test coverage...' >&2
-		make NODE_FLAGS='--no-deprecation' test-cov >> "$1" 2>&1
-		if [[ "$?" -ne 0 ]]; then
-			echo 'Tests failed.' >&2
-			return 1
-		fi
-	fi
-	echo 'Tests passed.' >&2
-	return 0
-}
-
-# Sends test coverage to coverage service.
-#
-# $1 - report title
-# $2 - log file
-send_coverage() {
-	echo 'Sending coverage report to coverage service...' >&2
-	make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Sending coverage report to coverage service failed.' >&2
-		echo 'Retry 1 of 1...' >&2
-		sleep 15s
-		echo 'Sending coverage report to coverage service...' >&2
-		make COVERAGE_NAME="$1" coverage >> "$2" 2>&1
-		if [[ "$?" -ne 0 ]]; then
-			echo 'Sending coverage report to coverage service failed.' >&2
-			return 1
-		fi
-	fi
-	echo 'Coverage report sent to coverage service.' >&2
-	return 0
-}
-
-# Runs benchmarks.
-#
-# $1 - log file
-run_benchmarks() {
-	echo 'Running benchmarks...' >&2
-	make NODE_FLAGS='--no-deprecation' benchmark >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Benchmarks failed.' >&2
-		echo 'Retry 1 of 1...' >&2
-		sleep 15s
-		echo 'Running benchmarks...' >&2
-		make NODE_FLAGS='--no-deprecation' benchmark >> "$1" 2>&1
-		if [[ "$?" -ne 0 ]]; then
-			echo 'Benchmarks failed.' >&2
-			return 1
-		fi
-	fi
-	echo 'Successfully ran benchmarks.' >&2
-	return 0
-}
-
-# Runs examples.
-#
-# $1 - log file
-run_examples() {
-	echo 'Running examples...' >&2
-	make NODE_FLAGS='--no-deprecation' examples >> "$1" 2>&1
-	if [[ "$?" -ne 0 ]]; then
-		echo 'Examples failed.' >&2
-		echo 'Retry 1 of 1...' >&2
-		sleep 15s
-		echo 'Running examples...' >&2
-		make NODE_FLAGS='--no-deprecation' examples >> "$1" 2>&1
-		if [[ "$?" -ne 0 ]]; then
-			echo 'Examples failed.' >&2
-			return 1
-		fi
-	fi
-	echo 'Successfully ran examples.' >&2
-	return 0
-}
-
 # Main execution sequence.
 main() {
 	start_heartbeat "${heartbeat_interval}"
 
 	echo "Task: ${task}." >&2
-	if [[ "${task}" = "install" ]]; then
-		install "${log_file}"
+
+	# Note: please keep tasks in alphabetical order...
+	if [[ "${task}" = "benchmark" ]]; then
+		benchmark "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
@@ -352,37 +354,37 @@ main() {
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
+	elif [[ "${task}" = "examples" ]]; then
+		examples "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "install" ]]; then
+		install "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
 	elif [[ "${task}" = "lint" ]]; then
 		lint "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-	elif [[ "${task}" = "test-npm-install" ]]; then
-		test_npm_install "${log_file}"
-		if [[ "$?" -ne 0 ]]; then
-			on_error 1
-		fi
 	elif [[ "${task}" = "test" ]]; then
-		run_tests "${log_file}"
-		if [[ "$?" -ne 0 ]]; then
-			on_error 1
-		fi
-	elif [[ "${task}" = "benchmark" ]]; then
-		run_benchmarks "${log_file}"
-		if [[ "$?" -ne 0 ]]; then
-			on_error 1
-		fi
-	elif [[ "${task}" = "examples" ]]; then
-		run_examples "${log_file}"
+		tests "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
 	elif [[ "${task}" = "test-coverage" ]]; then
-		run_test_coverage "${log_file}"
+		test_coverage "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
-		send_coverage "unit_test" "${log_file}"
+		test_coverage_report "unit_test" "${log_file}"
+		if [[ "$?" -ne 0 ]]; then
+			on_error 1
+		fi
+	elif [[ "${task}" = "test-npm-install" ]]; then
+		test_npm_install "${log_file}"
 		if [[ "$?" -ne 0 ]]; then
 			on_error 1
 		fi
