@@ -72,6 +72,7 @@ pr:
     include:
       - bin
       - data
+      - etc
       - include
       - lib
       - src
@@ -83,9 +84,9 @@ pr:
     exclude:
       - benchmark
       - docs
-      - etc
       - examples
       - snippets
+      - _tools
       - package.json
       - datapackage.json
       - "*.md"
