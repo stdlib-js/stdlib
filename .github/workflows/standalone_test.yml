@@ -30,7 +30,7 @@ concurrency:
   # Specify a group name:
   group: ${{ github.workflow }}
 
-  # Specify whether to cancel any currently workflow in the same concurrency group:
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
   cancel-in-progress: true
 
 # Workflow jobs:
