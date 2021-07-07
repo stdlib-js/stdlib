@@ -28,6 +28,15 @@ on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently workflow in the same concurrency group:
+  cancel-in-progress: true
+
 # Workflow jobs:
 jobs:
 
