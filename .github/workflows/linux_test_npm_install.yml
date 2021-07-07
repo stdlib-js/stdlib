@@ -60,8 +60,8 @@ jobs:
       LINKER: 'g++'
       GITHUB: 'true'
       DISPLAY: ':99'
-      LOG_DIR: '$GITHUB_WORKSPACE/tmp/var/log'
-      LOG_FILE_BUILD_TASK: "$GITHUB_WORKSPACE/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
+      LOG_DIR: "${{ github.workspace }}/tmp/var/log"
+      LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
