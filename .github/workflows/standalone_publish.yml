@@ -50,6 +50,7 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
+
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v2
