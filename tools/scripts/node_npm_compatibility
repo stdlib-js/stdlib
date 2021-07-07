@@ -51,6 +51,9 @@ function version() {
 	if ( major <= 5 ) {
 		return '>2.7.0 <6.0.0';
 	}
+	if ( major <= 10 ) {
+		return '>2.7.0 <7.0.0';
+	}
 	return '>2.7.0';
 }
 

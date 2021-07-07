@@ -24,9 +24,36 @@ on:
   push:
     branches:
       - develop
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/**/bin/**'
+      - 'lib/**/data/**'
+      - 'lib/**/etc/**'
+      - 'lib/**/include/**'
+      - 'lib/**/lib/**'
+      - 'lib/**/src/**'
+      - 'lib/**/test/**'
+
+      - 'lib/**/*.gyp'
+      - 'lib/**/*.gypi'
+      - 'lib/**/manifest.json'
+
+      - 'package.json'
+
+      # List paths for which changes should *not* trigger this workflow:
+      - '!lib/_tools/**'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently workflow in the same concurrency group:
+  cancel-in-progress: true
 
 # Workflow jobs:
 jobs:
@@ -50,9 +77,9 @@ jobs:
       CXX_COMPILER: 'g++'
       LINKER: 'g++'
       GITHUB: 'true'
-      LOG_DIR: '$GITHUB_WORKSPACE/tmp/var/log'
-      LOG_FILE_INSTALL: "$GITHUB_WORKSPACE/tmp/var/log/install.log"
-      LOG_FILE_BUILD_TASK: "$GITHUB_WORKSPACE/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
+      LOG_DIR: "${{ github.workspace }}/tmp/var/log"
+      LOG_FILE_INSTALL: "${{ github.workspace }}/tmp/var/log/install.log"
+      LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
 
     # Define the build matrix strategy...
@@ -220,10 +247,10 @@ jobs:
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
-          name: ${{ matrix.BUILD_TASK }}_log_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
+          name: ${{ matrix.BUILD_TASK }}_log_nodejs_v${{ matrix.NODE_VERSION }}_${{ matrix.PLATFORM }}
 
           # Specify the path to the file to upload:
-          path: "${{ env.LOG_FILE_BUILD_TASK }}"
+          path: ${{ env.LOG_FILE_BUILD_TASK }}
 
           # Specify the number of days to retain the artifact (default is 90 days):
           retention-days: 5

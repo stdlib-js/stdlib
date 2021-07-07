@@ -72,6 +72,7 @@ pr:
     include:
       - bin
       - data
+      - etc
       - include
       - lib
       - src
@@ -83,9 +84,9 @@ pr:
     exclude:
       - benchmark
       - docs
-      - etc
       - examples
       - snippets
+      - _tools
       - package.json
       - datapackage.json
       - "*.md"
@@ -115,15 +116,21 @@ jobs:
 
       # Define variable sets which will be used to create separate jobs (one per variable set!):
       matrix:
+        node_v16:
+          NODE_VERSION: '16'
+          NPM_VERSION: '>2.7.0'
+        node_v14:
+          NODE_VERSION: '14'
+          NPM_VERSION: '>2.7.0'
         node_v12:
           NODE_VERSION: '12'
           NPM_VERSION: '>2.7.0'
         node_v10:
           NODE_VERSION: '10'
-          NPM_VERSION: '>2.7.0'
+          NPM_VERSION: '>2.7.0 <7.0.0'
         node_v8:
           NODE_VERSION: '8'
-          NPM_VERSION: '>2.7.0'
+          NPM_VERSION: '>2.7.0 <6.0.0'
         node_v6:
           NODE_VERSION: '6'
           NPM_VERSION: '>2.7.0 <6.0.0'
