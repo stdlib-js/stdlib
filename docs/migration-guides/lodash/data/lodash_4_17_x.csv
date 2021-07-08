@@ -248,7 +248,7 @@ escape,(planned)
 escapeRegExp,utils/escape-regexp-string
 kebabCase,string/kebabcase
 lowerCase,string/lowercase
-lowerFirst,string/lowerfirst
+lowerFirst,string/uncapitalize
 pad,string/pad
 padEnd,string/right-pad
 padStart,string/left-pad
