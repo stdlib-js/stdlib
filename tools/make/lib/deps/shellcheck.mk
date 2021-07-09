@@ -42,7 +42,7 @@ ifeq ($(DEPS_SHELLCHECK_PLATFORM), darwin)
 	# We assume that `shellcheck` is installed globally:
 	SHELLCHECK ?= shellcheck
 else
-ifeq ($(DEPS_ELECTRON_PLATFORM), win32)
+ifeq ($(DEPS_SHELLCHECK_PLATFORM), win32)
 	SHELLCHECK ?= $(DEPS_SHELLCHECK_BUILD_OUT)/shellcheck.exe
 else
 	SHELLCHECK ?= $(DEPS_SHELLCHECK_BUILD_OUT)/shellcheck
