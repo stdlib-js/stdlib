@@ -216,7 +216,7 @@ hasIn,(planned)
 invert,utils/object-inverse
 invertBy,utils/object-inverse-by
 invoke,N/A
-keys,(planned)
+keys,utils/keys
 keysIn,utils/keys-in
 mapKeys,utils/map-keys
 mapValues,utils/map-values
@@ -246,9 +246,9 @@ deburr,(maybe)
 endsWith,string/ends-with
 escape,(planned)
 escapeRegExp,utils/escape-regexp-string
-kebabCase,(planned)
+kebabCase,string/kebabcase
 lowerCase,string/lowercase
-lowerFirst,(planned)
+lowerFirst,string/uncapitalize
 pad,string/pad
 padEnd,string/right-pad
 padStart,string/left-pad
@@ -268,7 +268,7 @@ trimStart,string/left-trim
 truncate,(planned)
 unescape,(planned)
 upperCase,string/uppercase
-upperFirst,(planned)
+upperFirst,string/capitalize
 words,nlp/tokenize
 attempt,utils/try-function
 bindAll,(maybe)

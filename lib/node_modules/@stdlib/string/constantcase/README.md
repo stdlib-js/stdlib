@@ -1,0 +1,143 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2021 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# constantcase
+
+> Returns a string converted to a constant case.
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var constantcase = require( '@stdlib/string/constantcase' );
+```
+
+#### constantcase( str )
+
+Converts a string to constant case.
+
+```javascript
+var str = constantcase( 'foo bar' );
+// returns 'FOO_BAR'
+
+str = constantcase( 'foo bar baz' );
+// returns 'FOO_BAR_BAZ'
+
+str = constantcase( 'foo_bar' );
+// returns 'FOO_BAR'
+```
+
+</section>
+
+<!-- /.usage -->
+
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+```javascript
+var constantcase = require( '@stdlib/string/constantcase' );
+
+var str = 'Hello World!';
+var out = constantcase( str );
+// returns 'HELLO_WORLD'
+
+str = 'I am a tiny little teapot';
+out = constantcase( str );
+// returns 'I_AM_A_TINY_LITTLE_TEAPOT'
+
+str = 'with big problems';
+out = constantcase( str );
+// returns 'WITH_BIG_PROBLEMS'
+
+str = 'To be, or not to be: that is the question.';
+out = constantcase( str );
+// returns 'TO_BE_OR_NOT_TO_BE_THAT_IS_THE_QUESTION'
+
+str = 'isMobile';
+out = constantcase( str );
+// returns 'IS_MOBILE'
+```
+
+</section>
+
+<!-- /.examples -->
+
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: constantcase [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ constantcase 'hello world'
+HELLO_WORLD
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'beEp booP' | constantcase
+BEEP_BOOP
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
+
+<section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+</section>
+
+<!-- /.links -->
