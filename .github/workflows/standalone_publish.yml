@@ -84,3 +84,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
           node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js
+
+      # Archive list of to be published packages:
+      - name: 'Archive list of to be published packages:'
+        uses: actions/upload-artifact@v2
+        with:
+          name: ordered-pkg-list
+          path: /tmp/stdlib_ordered_pkg_list.json
