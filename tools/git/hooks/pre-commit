@@ -76,7 +76,7 @@ check_filenames() {
 		against='HEAD'
 	fi
 	# We exploit the fact that the printable range starts with the space character and ends with the tilde. Note that the use of brackets around a `tr` range is okay here, (for portability to Solaris 10's /usr/bin/tr, it's even required), since the square bracket bytes happen to fall in the designated range.
-	num_files=$(git diff --cached --name-only --diff-filter=A -z "${against}" | LC_ALL=C tr -d '[ -~]\0' | wc -c)
+	num_files=$(git diff --cached --name-only --diff-filter=ACR -z "${against}" | LC_ALL=C tr -d '[ -~]\0' | wc -c)
 
 	if [[ "${num_files}" -ne 0 ]]; then
 		echo 'Error: Attempting to add a non-ASCII filename. Non-ASCII filenames limit cross-platform portability. Please rename offending files before committing.' >&2
@@ -90,8 +90,8 @@ run_lint() {
 	local changed_files
 	local files
 
-	# Get the set of changed files (added and modified):
-	changed_files=$(git diff --name-only --cached --diff-filter AM)
+	# Get the set of changed files (added, copied, modified, and renamed):
+	changed_files=$(git diff --name-only --cached --diff-filter ACMR)
 
 	# Lint filenames:
 	echo "${changed_files}" | "${lint_filenames}"
