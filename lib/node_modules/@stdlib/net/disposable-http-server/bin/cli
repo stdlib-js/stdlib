@@ -22,211 +22,163 @@
 
 // MODULES //
 
-var fs = require( 'fs' );
-var path = require( 'path' );
-var parseArgs = require( 'minimist' );
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
 var ENV = require( '@stdlib/process/env' );
 var cwd = require( '@stdlib/process/cwd' );
 var stdin = require( '@stdlib/process/read-stdin' );
-var readFileSync = require( '@stdlib/fs/read-file' ).sync;
-var pkg = require( './../package.json' );
-var opts = require( './opts.json' );
 var httpServer = require( './../lib' );
-
-
-// FUNCTIONS //
-
-/**
-* Performs initialization tasks.
-*
-* @private
-* @example
-* init();
-*/
-function init() {
-	// Set the process title to allow the process to be more easily identified:
-	process.title = pkg.name;
-	process.stdout.on( 'error', process.exit );
-}
-
-/**
-* Prints usage information.
-*
-* @private
-* @example
-* help();
-* // => '...'
-*/
-function help() {
-	var fpath = path.join( __dirname, 'usage.txt' );
-	fs.createReadStream( fpath )
-		.pipe( process.stderr )
-		.on( 'close', onClose );
-
-	function onClose() {
-		process.exit( 0 );
-	}
-}
-
-/**
-* Prints the package version.
-*
-* @private
-* @example
-* version();
-* // => '#.#.#'
-*/
-function version() {
-	var msg = pkg.version.toString()+'\n';
-	process.stdout.write( msg, 'utf8' );
-	process.exit( 0 );
-}
-
-/**
-* Writes an error message to `stderr` and then exits.
-*
-* @private
-* @param {string} msg - error message
-*/
-function exit( msg ) {
-	process.stderr.write( msg+'\n', 'utf8' );
-	process.exit( 1 );
-}
-
-
-// VARIABLES //
-
-var fpath;
-var file;
-var args;
-var err;
-var v;
 
 
 // MAIN //
 
-init();
-
-// Parse command-line arguments:
-args = parseArgs( process.argv.slice( 2 ), opts );
-
-if ( args.help ) {
-	return help();
-}
-if ( args.version ) {
-	return version();
-}
-
-opts = {};
-
-v = args.port || ENV.PORT;
-if ( v ) {
-	opts.port = parseInt( v, 10 );
-}
-v = args.maxport || ENV.MAXPORT;
-if ( v ) {
-	opts.maxport = parseInt( v, 10 );
-}
-v = args.hostname || ENV.HOSTNAME;
-if ( v ) {
-	opts.hostname = v;
-}
-v = args.address || ENV.ADDRESS;
-if ( v ) {
-	opts.address = v;
-}
-if ( args.open ) {
-	opts.open = true;
-}
-
-// Load an HTML file...
-if ( args.html ) {
-	fpath = path.resolve( cwd(), args.html );
-	file = readFileSync( fpath );
-	if ( file instanceof Error ) {
-		return exit( file.message );
-	}
-	opts.html = file;
-}
-// Load a JavaScript file...
-if ( args.javascript ) {
-	fpath = path.resolve( cwd(), args.javascript );
-	file = readFileSync( fpath );
-	if ( file instanceof Error ) {
-		return exit( file.message );
-	}
-	opts.javascript = file;
-}
-// Determine if we need to read data from `stdin`...
-if ( args.stdin ) {
-	if ( args.stdin === 'html' ) {
-		return stdin( html );
-	} else if (
-		args.stdin === 'javascript' ||
-		args.stdin === 'js'
-	) {
-		return stdin( javascript );
-	}
-	err = new Error( 'invalid flag. Unrecognized/unsupported `stdin` type: '+args.stdin+'.' );
-	return exit( err.message );
-}
-// If the `stdin` flag has not been set and we're receiving data (i.e., not running in a terminal context), assume a content type based on either an `--html` or `--javascript` flag being set...
-else if ( !process.stdin.isTTY ) {
-	if ( args.html ) {
-		return stdin( javascript );
-	} else if ( args.javascript ) {
-		return stdin( html );
-	}
-	// Neither `--html` or `--javascript` was set...
-	err = new Error( 'invalid invocation. Must specify a `stdin` content type.' );
-	return exit( err.message );
-}
-
-return process.nextTick( next );
-
 /**
-* Callback invoked after attempting to read HTML from `stdin`.
+* Main execution sequence.
 *
 * @private
-* @param {(Error|null)} error - error object
-* @param {Buffer} data - `stdin` data
+* @returns {void}
 */
-function html( error, data ) {
-	if ( error ) {
-		return exit( error.message );
+function main() {
+	var fpath;
+	var flags;
+	var file;
+	var opts;
+	var cli;
+	var err;
+	var v;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
 	}
-	if ( data.toString() === '' ) {
-		error = new Error( 'no input data. Provide either a path to an HTML file or provide HTML via `stdin`.' );
-		return exit( error.message );
+	opts = {};
+
+	v = flags.port || ENV.PORT;
+	if ( v ) {
+		opts.port = parseInt( v, 10 );
 	}
-	opts.html = data;
-	next();
+	v = flags.maxport || ENV.MAXPORT;
+	if ( v ) {
+		opts.maxport = parseInt( v, 10 );
+	}
+	v = flags.hostname || ENV.HOSTNAME;
+	if ( v ) {
+		opts.hostname = v;
+	}
+	v = flags.address || ENV.ADDRESS;
+	if ( v ) {
+		opts.address = v;
+	}
+	if ( flags.open ) {
+		opts.open = true;
+	}
+
+	// Load an HTML file...
+	if ( flags.html ) {
+		fpath = resolve( cwd(), flags.html );
+		file = readFileSync( fpath );
+		if ( file instanceof Error ) {
+			return cli.error( file );
+		}
+		opts.html = file;
+	}
+	// Load a JavaScript file...
+	if ( flags.javascript ) {
+		fpath = resolve( cwd(), flags.javascript );
+		file = readFileSync( fpath );
+		if ( file instanceof Error ) {
+			return cli.error( file );
+		}
+		opts.javascript = file;
+	}
+	// Determine if we need to read data from `stdin`...
+	if ( flags.stdin ) {
+		if ( flags.stdin === 'html' ) {
+			return stdin( html );
+		}
+		if (
+			flags.stdin === 'javascript' ||
+			flags.stdin === 'js'
+		) {
+			return stdin( javascript );
+		}
+		err = new Error( 'invalid flag. Unrecognized/unsupported `stdin` type: '+flags.stdin+'.' );
+		return cli.error( err );
+	}
+	// If the `stdin` flag has not been set and we're receiving data (i.e., not running in a terminal context), assume a content type based on either an `--html` or `--javascript` flag being set...
+	if ( !process.stdin.isTTY ) {
+		if ( flags.html ) {
+			return stdin( javascript );
+		}
+		if ( flags.javascript ) {
+			return stdin( html );
+		}
+		// Neither `--html` or `--javascript` was set...
+		err = new Error( 'invalid invocation. Must specify a `stdin` content type.' );
+		return cli.error( err );
+	}
+
+	return process.nextTick( next );
+
+	/**
+	* Callback invoked after attempting to read HTML from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} data - `stdin` data
+	* @returns {void}
+	*/
+	function html( error, data ) {
+		if ( error ) {
+			return cli.error( error );
+		}
+		if ( data.toString() === '' ) {
+			error = new Error( 'no input data. Provide either a path to an HTML file or provide HTML via `stdin`.' );
+			return cli.error( error );
+		}
+		opts.html = data;
+		next();
+	}
+
+	/**
+	* Callback invoked after attempting to read JavaScript from `stdin`.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {Buffer} data - `stdin` data
+	* @returns {void}
+	*/
+	function javascript( error, data ) {
+		if ( error ) {
+			return cli.error( error );
+		}
+		if ( data.toString() === '' ) {
+			error = new Error( 'no input data. Provide either a path to a JavaScript file or provide JavaScript via `stdin`.' );
+			return cli.error( error );
+		}
+		opts.javascript = data;
+		next();
+	}
+
+	/**
+	* Callback invoked once ready to run an HTTP server.
+	*
+	* @private
+	*/
+	function next() {
+		httpServer( opts );
+	}
 }
 
-/**
-* Callback invoked after attempting to read JavaScript from `stdin`.
-*
-* @private
-* @param {(Error|null)} error - error object
-* @param {Buffer} data - `stdin` data
-*/
-function javascript( error, data ) {
-	if ( error ) {
-		return exit( error.message );
-	}
-	if ( data.toString() === '' ) {
-		error = new Error( 'no input data. Provide either a path to a JavaScript file or provide JavaScript via `stdin`.' );
-		return exit( error.message );
-	}
-	opts.javascript = data;
-	next();
-}
-
-/**
-* Callback invoked once ready to run an HTTP server.
-*
-* @private
-*/
-function next() {
-	httpServer( opts );
-}
+main();
