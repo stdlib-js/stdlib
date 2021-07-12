@@ -86,7 +86,7 @@ jobs:
           node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js
 
       # Archive list of to be published packages:
-      - name: 'Archive list of to be published packages:'
+      - name: 'Archive list of to be published packages'
         uses: actions/upload-artifact@v2
         with:
           name: ordered-pkg-list
