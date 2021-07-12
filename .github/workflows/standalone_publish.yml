@@ -90,4 +90,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ordered-pkg-list
-          path: /tmp/stdlib_ordered_pkg_list.json
+          path: |
+            /tmp/stdlib_ordered_pkg_list.json
+            /tmp/stdlib_published_pkg_list.json
