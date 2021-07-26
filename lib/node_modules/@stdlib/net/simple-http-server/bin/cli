@@ -22,124 +22,87 @@
 
 // MODULES //
 
-var fs = require( 'fs' );
-var path = require( 'path' );
-var parseArgs = require( 'minimist' );
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
 var ENV = require( '@stdlib/process/env' );
 var cwd = require( '@stdlib/process/cwd' );
-var pkg = require( './../package.json' );
-var opts = require( './opts.json' );
 var httpServer = require( './../lib' );
-
-
-// FUNCTIONS //
-
-/**
-* Performs initialization tasks.
-*
-* @private
-* @example
-* init();
-*/
-function init() {
-	// Set the process title to allow the process to be more easily identified:
-	process.title = pkg.name;
-	process.stdout.on( 'error', process.exit );
-}
-
-/**
-* Prints usage information.
-*
-* @private
-* @example
-* help();
-* // => '...'
-*/
-function help() {
-	var fpath = path.join( __dirname, 'usage.txt' );
-	fs.createReadStream( fpath )
-		.pipe( process.stdout )
-		.on( 'close', onClose );
-
-	function onClose() {
-		process.exit( 0 );
-	}
-}
-
-/**
-* Prints the package version.
-*
-* @private
-* @example
-* version();
-* // => '#.#.#'
-*/
-function version() {
-	var msg = pkg.version.toString()+'\n';
-	process.stdout.write( msg, 'utf8' );
-	process.exit( 0 );
-}
-
-
-// VARIABLES //
-
-var args;
-var v;
 
 
 // MAIN //
 
-init();
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var flags;
+	var args;
+	var opts;
+	var cli;
+	var v;
 
-// Parse command-line arguments:
-args = parseArgs( process.argv.slice( 2 ), opts );
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
 
-if ( args.help ) {
-	return help();
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+	args = cli.args();
+
+	opts = {};
+	v = flags.port || ENV.PORT;
+	if ( v ) {
+		opts.port = parseInt( v, 10 );
+	}
+	v = flags.maxport || ENV.MAXPORT;
+	if ( v ) {
+		opts.maxport = parseInt( v, 10 );
+	}
+	v = flags.hostname || ENV.HOSTNAME;
+	if ( v ) {
+		opts.hostname = v;
+	}
+	v = flags.address || ENV.ADDRESS;
+	if ( v ) {
+		opts.address = v;
+	}
+	if ( flags.open ) {
+		opts.open = true;
+	}
+	opts.dir = args[ 0 ] || cwd();
+
+	// Run main:
+	httpServer( opts );
+
+	/*
+	* TODO:
+	*
+	* [3] Accept a `directory`
+	*   => behave like Python SimpleHTTPServer (https://docs.python.org/2/library/simplehttpserver.html and https://docs.python.org/3.5/library/http.server.html)
+	*   => when receiving a request matching the directory path or a subdirectory, look for either an `index.html`, an `index.htm`, a `default.html`, or a `default.htm` in that order
+	*   => if an index HTML file is found, return that file
+	*   => if a request is received for a file ending in `*.js`, if that file is named `bundle.js` and the file does not exist, return a browserified bundle using `index.js` located in the same directory (make the name of this file (index.js) configurable [e.g., allows a browser example to coexist alongside a normal `index.js` file]); otherwise, return the requested file
+	*	 => if a request is received for a file ending in `*.md`, render as GFM
+	*   => for any other file, return the file
+	*   => if no file is requested, return a file/directory (only non-hidden) map (hyperlinked)
+	*
+	* when listing directory contents, give stats, like size?
+	* support providing an extensions map
+	* option to enable GFM rendering (should this be separate pkg?)
+	* option to enable browserifying `index.js`
+	*/
 }
-if ( args.version ) {
-	return version();
-}
 
-opts = {};
-
-v = args.port || ENV.PORT;
-if ( v ) {
-	opts.port = parseInt( v, 10 );
-}
-v = args.maxport || ENV.MAXPORT;
-if ( v ) {
-	opts.maxport = parseInt( v, 10 );
-}
-v = args.hostname || ENV.HOSTNAME;
-if ( v ) {
-	opts.hostname = v;
-}
-v = args.address || ENV.ADDRESS;
-if ( v ) {
-	opts.address = v;
-}
-if ( args.open ) {
-	opts.open = true;
-}
-opts.dir = args._[ 0 ] || cwd();
-
-// Run main:
-httpServer( opts );
-
-
-// TODO
-//
-// [3] Accept a `directory`
-//   => behave like Python SimpleHTTPServer (https://docs.python.org/2/library/simplehttpserver.html and https://docs.python.org/3.5/library/http.server.html)
-//   => when receiving a request matching the directory path or a subdirectory, look for either an `index.html`, an `index.htm`, a `default.html`, or a `default.htm` in that order
-//   => if an index HTML file is found, return that file
-//   => if a request is received for a file ending in `*.js`, if that file is named `bundle.js` and the file does not exist, return a browserified bundle using `index.js` located in the same directory (make the name of this file (index.js) configurable [e.g., allows a browser example to coexist alongside a normal `index.js` file]); otherwise, return the requested file
-//	 => if a request is received for a file ending in `*.md`, render as GFM
-//   => for any other file, return the file
-//   => if no file is requested, return a file/directory (only non-hidden) map (hyperlinked)
-
-// when listing directory contents, give stats, like size?
-// support providing an extensions map
-// option to enable GFM rendering (should this be separate pkg?)
-// option to enable browserifying `index.js`
+main();
