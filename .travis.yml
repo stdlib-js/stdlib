@@ -28,6 +28,12 @@
 # Specify the programming language:
 language: node_js
 
+# Specify the host operating system:
+os: linux
+
+# Specify the Linux distribution:
+dist: xenial
+
 # Specify the list of Node.js versions on which we want to build:
 node_js:
   # Node.js
@@ -53,10 +59,6 @@ node_js:
   # - '0.12'
   # - '0.10'
 
-# Specify the host operating system:
-os:
-  - linux
-
 # Specify which branches should trigger builds:
 branches:
   only:
@@ -67,7 +69,7 @@ git:
   # Set the clone depth, making sure to account for queued builds:
   depth: 100
 
-# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Add-ons are Linux-specific. Electron requires a virtual display server (xvfb) on Linux.
+# Compiling native modules for io.js v3.x.x or Node.js >=v4.0.0 requires a C++11 standard-compliant compiler. Specifically, either gcc >=4.8 or clang >=3.5. Electron requires a virtual display server (xvfb) on Linux.
 addons:
   apt:
     sources:
@@ -108,16 +110,10 @@ jobs:
 # Define steps to be performed before running installation steps:
 before_install:
   # Perform platform-specific initialization:
-  - if [[ $TRAVIS_OS_NAME = "linux" ]]; then
-      mkdir -p $HOME/bin;
-      ln -s /usr/bin/gcc-9 $HOME/bin/gcc;
-      ln -s /usr/bin/g++-9 $HOME/bin/g++;
-      ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran;
-    else
-      brew cask uninstall oclint;
-      brew update;
-      brew install -v gcc;
-    fi
+  - mkdir -p $HOME/bin;
+    ln -s /usr/bin/gcc-9 $HOME/bin/gcc;
+    ln -s /usr/bin/g++-9 $HOME/bin/g++;
+    ln -s /usr/bin/gfortran-9 $HOME/bin/gfortran;
 
   # Configure the virtual display server (needed for electron):
   - export DISPLAY=':99.0'
