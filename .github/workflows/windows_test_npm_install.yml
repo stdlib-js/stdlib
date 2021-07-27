@@ -184,7 +184,7 @@ jobs:
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs add ${{ matrix.NODE_VERSION }}
           echo ''
           echo 'Setting Node.js default executable...'
-          mkdir -p -m 775 /usr/local/bin
+          sudo mkdir -p -m 775 /usr/local/bin
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs link ${{ matrix.NODE_VERSION }}
           echo ''
           echo "Activating Node.js version ${{matrix.NODE_VERSION }}..."
