@@ -32,10 +32,8 @@ dist: xenial
 # Specify the list of Node.js versions on which we want to build:
 node_js:
   # Node.js
-  - 'node'
   - '16'
   - '14'
-  - '12'
 
 # Specify which branches should trigger builds:
 branches:
