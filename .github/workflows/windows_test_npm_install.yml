@@ -181,13 +181,13 @@ jobs:
           . "${{ env.NVS_HOME }}/nvs.sh" install
           echo ''
           echo "Installing Node.js version ${{ matrix.NODE_VERSION }}..."
-          nvs add ${{ matrix.NODE_VERSION }}
+          . "${{ env.NVS_HOME }}/nvs.sh" && nvs add ${{ matrix.NODE_VERSION }}
           echo ''
           echo 'Setting Node.js default executable...'
-          nvs link ${{ matrix.NODE_VERSION }}
+          . "${{ env.NVS_HOME }}/nvs.sh" && nvs link ${{ matrix.NODE_VERSION }}
           echo ''
           echo "Activating Node.js version ${{matrix.NODE_VERSION }}..."
-          nvs use ${{ matrix.NODE_VERSION }}
+          . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
         timeout-minutes: 15
 
       # Print debug info:
