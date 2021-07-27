@@ -19,11 +19,6 @@
 # After changing this file, check it on:
 #
 #   https://config.travis-ci.com/explore
-#
-# Known lint bugs:
-#
-# -   add-ons: https://github.com/travis-ci/travis-yaml/issues/58
-# -   osx: https://github.com/travis-ci/travis-yaml/issues/95
 
 # Specify the programming language:
 language: node_js
