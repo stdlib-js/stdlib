@@ -129,9 +129,13 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
+* * *
+
 ## Installation
 
-To install as a library or application dependency,
+### Complete Library
+
+To install the entire project as a library or application dependency,
 
 <!-- run-disable -->
 
@@ -142,8 +146,53 @@ $ npm install @stdlib/stdlib
 Once installed, stdlib packages can be individually required/imported to minimize load times and decrease bundle sizes. For example,
 
 ```javascript
-var dswap = require( '@stdlib/blas/base/dswap' );
+var ndarray = require( '@stdlib/ndarray/ctor' );
+
+var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
+// returns <ndarray>
 ```
+
+### Individual Packages
+
+stdlib is designed to allow decomposition of the main project into individual packages which can be independently consumed. Accordingly, users of the project can avoid installing all project functionality and only install the exact functionality they need.
+
+To install individual packages, replace forward slashes `/` after `@stdlib/` with hyphens `-`. For example,
+
+<!-- run-disable -->
+
+```bash
+$ npm install @stdlib/ndarray-ctor
+```
+
+Once installed, individual packages can be required/imported. For example,
+
+```javascript
+var ndarray = require( '@stdlib/ndarray-ctor' );
+
+var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
+// returns <ndarray>
+```
+
+### Namespaces
+
+stdlib is comprised of various namespaces (i.e., collections of related functionality united by common themes). For example, to install all stdlib math functionality,
+
+<!-- run-disable -->
+
+```bash
+$ npm install @stdlib/math
+```
+
+Once installed, stdlib packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example,
+
+```javascript
+var sin = require( '@stdlib/math/base/special' );
+
+var v = sin( 3.14 );
+// returns <number>
+```
+
+### Command-line Utility
 
 To install globally for use as a command-line utility,
 
@@ -169,9 +218,13 @@ and to run the [REPL][@stdlib/repl]
 $ stdlib repl
 ```
 
+### Bundles
+
 For distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
+
+* * *
 
 ## Prerequisites
 
