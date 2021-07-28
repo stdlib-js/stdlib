@@ -175,7 +175,7 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 ### Namespaces
 
-stdlib is comprised of various namespaces (i.e., collections of related functionality united by common themes). For example, to install all stdlib math functionality,
+stdlib is comprised of various namespaces (i.e., collections of related functionality united by common themes). For example, to install all math functionality,
 
 <!-- run-disable -->
 
@@ -183,10 +183,10 @@ stdlib is comprised of various namespaces (i.e., collections of related function
 $ npm install @stdlib/math
 ```
 
-Once installed, stdlib packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example,
+Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example,
 
 ```javascript
-var sin = require( '@stdlib/math/base/special' );
+var sin = require( '@stdlib/math/base/special/sin' );
 
 var v = sin( 3.14 );
 // returns <number>
