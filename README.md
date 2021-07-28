@@ -233,7 +233,7 @@ Installing and running stdlib for use in [Node.js][node-js] **requires** the fol
 -   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`)
 -   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `<= 10.x.x`, version `> 2.7.0` and `< 6.0.0`)
 
-Most functionality in stdlib is implemented exclusively in JavaScript; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
+Most functionality in stdlib is implemented in JavaScript and no further prerequisites are required to use stdlib; however, some implementations try to capture performance benefits by using [native bindings][node-js-add-ons] and/or [WebAssembly][webassembly]. While **not** required to run stdlib, as **every** stdlib implementation has a JavaScript fallback, the following dependencies are **required** for building native add-ons, including linking to BLAS and LAPACK libraries:
 
 -   [GNU make][make]: development utility and task runner
 -   [GNU bash][bash]: an sh-compatible shell
