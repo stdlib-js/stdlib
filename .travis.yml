@@ -33,7 +33,6 @@ dist: xenial
 node_js:
   # Node.js
   - '16'
-  - '14'
 
 # Specify which branches should trigger builds:
 branches:
