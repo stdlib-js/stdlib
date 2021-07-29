@@ -218,11 +218,39 @@ and to run the [REPL][@stdlib/repl]
 $ stdlib repl
 ```
 
-### Bundles
+### Browser Bundles
 
 For distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
-Otherwise, to install as a system library, follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
+As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
+
+```bash
+$ npm install @stdlib/dist-math-base-special-flat
+```
+
+and then include the following `<script>` tag in our HTML document
+
+```html
+<script type="text/javascript" src="/path/to/@stdlib/dist-math-base-special-flat/build/bundle.min.js"></script>
+```
+
+making sure to modify the script path based on the local installation directory.
+
+If no recognized module system is present, one can access bundle contents in another `<script>` tag via the global scope.
+
+```html
+<script type="text/javascript">
+    // If no recognized module system present, exposed to global scope:
+    var erf = stdlib_math_base_special_flat.erf;
+    console.log( erf( 0.5 ) );
+</script>
+```
+
+For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+
+### System Library
+
+To install as a system library (e.g., for the purposes of creating custom builds), follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
 * * *
 
