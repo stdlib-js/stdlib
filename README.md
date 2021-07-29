@@ -133,6 +133,44 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ## Installation
 
+### User Stories
+
+-   I want to perform data analysis and data science related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+
+    -   Install the entire project as a [command-line utility](#install_command_line_utility).
+
+-   I am building a web application and plan on using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
+
+    -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
+
+-   I am building a web application and would like to vendor a custom bundle containing various stdlib functionality.
+
+    -   Follow the steps for creating [custom bundles](#install_custom_bundles).
+
+-   I am building a web application and would like to include stdlib functionality by just using a `script` tag.
+
+    -   Install one of the pre-built UMD [browser bundles](#install_browser_bundles) or consume one of the pre-built bundles via a CDN, such as [unpkg][unpkg].
+
+-   I would like to use stdlib functionality in an [Observable][observable] notebook.
+
+    -   Consume one of the pre-built [browser bundles](#install_browser_bundles) via a CDN, such as [unpkg][unpkg].
+
+-   I am building a [Node.js][node-js] server application and am interested in using various functionality found in stdlib.
+
+    -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
+
+-   I am building a web application or [Node.js][node-js] server application and am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
+
+    -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
+
+        For web applications, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
+
+-   I want to hack at stdlib, possibly even creating customized builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
+
+    -   Install the project as a [system library](#install_system_library) by cloning this repository and following the [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
+
+<a name="install_complete_library"></a>
+
 ### Complete Library
 
 To install the entire project as a library or application dependency,
@@ -143,7 +181,7 @@ To install the entire project as a library or application dependency,
 $ npm install @stdlib/stdlib
 ```
 
-Once installed, stdlib packages can be individually required/imported to minimize load times and decrease bundle sizes. For example,
+Once installed, stdlib packages can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/ctor' );
@@ -151,6 +189,19 @@ var ndarray = require( '@stdlib/ndarray/ctor' );
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
 ```
+
+and to use `import`
+
+<!-- run-disable -->
+
+```javascript
+import ndarray from '@stdlib/ndarray/ctor';
+
+var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
+// returns <ndarray>
+```
+
+<a name="install_individual_packages"></a>
 
 ### Individual Packages
 
@@ -173,6 +224,8 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
 ```
 
+<a name="install_namespaces"></a>
+
 ### Namespaces
 
 stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all math functionality found in the top-level `math` namespace,
@@ -193,6 +246,8 @@ var v = sin( 3.14 );
 ```
 
 **Note**: installing nested namespaces found within top-level namespaces (e.g., `math/base`) is **not** supported. Consider installing individual packages or the relevant top-level namespace.
+
+<a name="install_command_line_utility"></a>
 
 ### Command-line Utility
 
@@ -219,6 +274,8 @@ and to run the [REPL][@stdlib/repl]
 ```bash
 $ stdlib repl
 ```
+
+<a name="install_browser_bundles"></a>
 
 ### Browser Bundles
 
@@ -248,7 +305,9 @@ If no recognized module system is present, one can access bundle contents in ano
 </script>
 ```
 
-For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles]. The [guide][stdlib-bundles] includes instructions for consuming via CDNs, such as [unpkg][unpkg].
+
+<a name="install_custom_bundles"></a>
 
 ### Custom Bundles
 
@@ -283,6 +342,8 @@ $ stdlib bundle-pkg-list -- <pkg> <pkg> <pkg> ...
 ```
 
 Upon generating a bundle, the bundle can be loaded via a `<script>` tag as described above for pre-built distributable UMD bundles.
+
+<a name="install_system_library"></a>
 
 ### System Library
 
@@ -496,6 +557,10 @@ Test and build infrastructure is generously provided by the following services:
 [browserify]: https://github.com/substack/node-browserify
 
 [webpack]: https://webpack.js.org/
+
+[unpkg]: https://unpkg.com/#/
+
+[observable]: https://observablehq.com/
 
 [ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 
