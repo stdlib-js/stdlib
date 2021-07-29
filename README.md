@@ -220,7 +220,7 @@ $ stdlib repl
 
 ### Browser Bundles
 
-For distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+For pre-built distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
 
@@ -247,6 +247,30 @@ If no recognized module system is present, one can access bundle contents in ano
 ```
 
 For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+
+### Custom Bundles
+
+To create a custom bundle based on project needs,
+
+1.  follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
+
+2.  navigate to the local installation directory.
+
+3.  run the following command to print help documentation for providing a list of stdlib package names to bundle
+
+    <!-- run-disable -->
+
+    ```bash
+    $ node ./bin/cli bundle-pkg-list -- -h
+    ```
+
+4.  modify and run the above command with the list of packages to bundle
+
+    <!-- run-disable -->
+
+    ```bash
+    $ node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
+    ```
 
 ### System Library
 
