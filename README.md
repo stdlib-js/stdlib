@@ -135,19 +135,19 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ### User Stories
 
--   I want to perform data analysis and data science related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+-   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
--   I am building a web application and plan on using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
+-   I am building a **web application** and plan on using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
 
     -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
 
--   I am building a web application and would like to vendor a custom bundle containing various stdlib functionality.
+-   I am building a **web application** and would like to **vendor** a custom bundle containing various stdlib functionality.
 
     -   Follow the steps for creating [custom bundles](#install_custom_bundles).
 
--   I am building a web application and would like to include stdlib functionality by just using a `script` tag.
+-   I am building a **web application** and would like to include stdlib functionality by just using a `script` tag.
 
     -   Install one of the pre-built UMD [browser bundles](#install_browser_bundles) or consume one of the pre-built bundles via a CDN, such as [unpkg][unpkg].
 
@@ -155,21 +155,21 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
     -   Consume one of the pre-built [browser bundles](#install_browser_bundles) via a CDN, such as [unpkg][unpkg].
 
--   I am building a [Node.js][node-js] server application and am interested in using various functionality found in stdlib.
+-   I am building a [Node.js][node-js] **server application** and am interested in using various functionality found in stdlib.
 
     -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
 
--   I am building a web application or [Node.js][node-js] server application and am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
+-   I am building a **web application** or [Node.js][node-js] **server application** and am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
 
     -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
         For web applications, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
 
--   I am using Deno.
+-   I am using **Deno**.
 
     -   Use [skypack][skypack] to import [individual packages](#install_individual_packages).
 
--   I want to hack at stdlib, possibly even creating customized builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
+-   I want to hack at stdlib, possibly even creating **customized** builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
 
     -   Install the project as a [system library](#install_system_library) by cloning this repository and following the [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
 
