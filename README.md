@@ -272,6 +272,14 @@ To create a custom bundle based on project needs,
     $ node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
     ```
 
+Alternatively, install stdlib as a command-line utility (as described above) and run the following command
+
+<!-- run-disable -->
+
+```bash
+$ stdlib bundle-pkg-list -- <pkg> <pkg> <pkg> ...
+```
+
 ### System Library
 
 To install as a system library (e.g., for the purposes of creating custom builds), follow the [download][stdlib-development], [configuration][stdlib-development], and [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
