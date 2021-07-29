@@ -165,6 +165,10 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
         For web applications, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
 
+-   I am using Deno.
+
+    -   Use [skypack][skypack] to import [individual packages](#install_individual_packages).
+
 -   I want to hack at stdlib, possibly even creating customized builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
 
     -   Install the project as a [system library](#install_system_library) by cloning this repository and following the [installation][stdlib-development] instructions as described in the [development guide][stdlib-development].
@@ -561,6 +565,8 @@ Test and build infrastructure is generously provided by the following services:
 [unpkg]: https://unpkg.com/#/
 
 [observable]: https://observablehq.com/
+
+[skypack]: https://www.skypack.dev/npm/
 
 [ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 
