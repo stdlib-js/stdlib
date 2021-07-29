@@ -220,7 +220,7 @@ $ stdlib repl
 
 ### Browser Bundles
 
-For pre-built distributable bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+For pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
 
 As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
 
@@ -279,6 +279,8 @@ Alternatively, install stdlib as a command-line utility (as described above) and
 ```bash
 $ stdlib bundle-pkg-list -- <pkg> <pkg> <pkg> ...
 ```
+
+Upon generating a bundle, the bundle can be loaded via a `<script>` tag as described above for pre-built distributable UMD bundles.
 
 ### System Library
 
