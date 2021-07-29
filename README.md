@@ -175,7 +175,7 @@ var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 ### Namespaces
 
-stdlib is comprised of various namespaces (i.e., collections of related functionality united by common themes). For example, to install all math functionality,
+stdlib is comprised of various top-level namespaces (i.e., collections of related functionality united by common themes). For example, to install all math functionality found in the top-level `math` namespace,
 
 <!-- run-disable -->
 
@@ -192,9 +192,11 @@ var v = sin( 3.14 );
 // returns <number>
 ```
 
+**Note**: installing nested namespaces found within top-level namespaces (e.g., `math/base`) is **not** supported. Consider installing individual packages or the relevant top-level namespace.
+
 ### Command-line Utility
 
-To install globally for use as a command-line utility,
+To install globally for use as a command-line utility and/or use the [REPL][@stdlib/repl],
 
 <!-- run-disable -->
 
