@@ -90,12 +90,6 @@ plugins:
     config:
       check: all
 
-  # Analyze CSS files using [CSSLint][1].
-  #
-  # [1]: https://docs.codeclimate.com/docs/csslint
-  csslint:
-    enabled: true
-
   # Analyze files using [EditorConfig][1].
   #
   # [1]: https://docs.codeclimate.com/docs/editorconfig
@@ -104,17 +98,6 @@ plugins:
     channel: beta
     config:
       editorconfig: .editorconfig
-
-  # Analyze JavaScript files using [ESLint][1].
-  #
-  # [1]:https://docs.codeclimate.com/docs/eslint
-  eslint:
-    enabled: false  # NOTE: disabled as CodeClimate does not support external configurations or network calls (see https://github.com/codeclimate/codeclimate-eslint/issues/86), and we rely on ESLint plugins which require network access, something CodeClimate does not permit
-    channel: "eslint-6"
-    config:
-      config: .eslintrc.js
-      extensions:
-        - .js
 
   # Analyze source files for annotations using [fixme][1].
   #
@@ -142,24 +125,6 @@ plugins:
   #
   # [1]: https://github.com/nodesecurity/nsp
   nodesecurity:
-    enabled: true
-
-  # Analyze Python files using [Pep8][1].
-  #
-  # [1]: https://www.python.org/dev/peps/pep-0008/
-  pep8:
-    enabled: false  # NOTE: disabled as unable to specify location of configuration file
-
-  # Lint Python files using [Pylint][1].
-  #
-  # [1]: https://docs.codeclimate.com/docs/pylint
-  pylint:
-    enabled: false  # NOTE: disabled as unable to specify location of configuration file
-
-  # Analyze bash files using [shellcheck][1].
-  #
-  # [1]: https://github.com/koalaman/shellcheck
-  shellcheck:
     enabled: true
 
 # Specify which files/folders should be [ignored][1] when performing analyses.
