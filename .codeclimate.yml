@@ -16,10 +16,12 @@
 # limitations under the License.
 #/
 
-# Enable analysis [engines][1].
+version: "2"
+
+# Enable analysis [plugins][1].
 #
 # [1]: https://docs.codeclimate.com/docs/list-of-engines
-engines:
+plugins:
   # Analyze bash files using [shellcheck][1].
   #
   # [1]: https://github.com/koalaman/shellcheck
@@ -44,12 +46,6 @@ engines:
   csslint:
     enabled: true
 
-  # Analyze Sass files using [SCSS lint][1].
-  #
-  # [1]: https://github.com/ivantsepp/codeclimate-scss-lint
-  scss-lint:
-    enabled: false
-
   # Analyze Python files using [Pep8][1].
   #
   # [1]: https://www.python.org/dev/peps/pep-0008/
@@ -61,26 +57,6 @@ engines:
   # [1]: https://github.com/mivok/markdownlint
   markdownlint:
     enabled: false
-
-  # Analyze Golang files using [golint][1].
-  #
-  # [1]: https://github.com/golang/lint
-  golint:
-    enabled: true
-    config:
-      min_confidence: 0.8
-
-  # Audit Golang files for suspicious constructs and potential bugs using [govet][1].
-  #
-  # [1]: https://golang.org/cmd/vet
-  govet:
-    enabled: true
-
-  # Ensure Golang files adhere to the official style using [gofmt][1].
-  #
-  # [1]: https://golang.org/cmd/gofmt
-  gofmt:
-    enabled: true
 
   # Analyze source files for code similarity using [duplication][1].
   #
@@ -109,64 +85,6 @@ engines:
         - OPTIMIZE
         - BUG
         - XXX
-
-  # Disable all other engines:
-  brakeman:
-    enabled: false
-  bundler-audit:
-    enabled: false
-  coffeelint:
-    enabled: false
-  phpcodesniffer:
-    enabled: false
-  phpmd:
-    enabled: false
-  radon:
-    enabled: false
-  rubocop:
-    enabled: false
-  watson:
-    enabled: false
-  foodcritic:
-    enabled: false
-  haxe-checkstyle:
-    enabled: false
-  hlint:
-    enabled: false
-  phan:
-    enabled: false
-  reek:
-    enabled: false
-  rubymotion:
-    enabled: false
-  tailor:
-    enabled: false
-  vint:
-    enabled: false
-  gnu-complexity:
-    enabled: false
-
-
-# Specify which files/folders should have [ratings][1].
-#
-# [1]: https://docs.codeclimate.com/docs/ratings
-ratings:
-  paths:
-    - "lib/**/*"
-    - "test/**/*"
-    - "examples/**/*"
-    - "benchmark/**/*"
-    - "bin/**/*"
-    - "tools/**/*"
-    - "scripts/**/*"
-    - "**.sh"
-    - "**.js"
-    - "**.css"
-    # - "**.scss"
-    # - "**.md"
-    - "**.py"
-    - "**.go"
-
 
 # Specify which files/folders should be [ignored][1] when performing analyses.
 #
