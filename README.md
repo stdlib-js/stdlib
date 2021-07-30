@@ -143,35 +143,43 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
--   I am building a **web application** and plan on using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
+-   I am building a **web application**.
 
-    -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
+    -   I plan on using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
 
--   I am building a **web application** and would like to **vendor** a custom bundle containing various stdlib functionality.
+        -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
 
-    -   Follow the steps for creating [custom bundles](#install_custom_bundles).
+    -   I would like to **vendor** a custom bundle containing various stdlib functionality.
 
--   I am building a **web application** and would like to include stdlib functionality by just using a `script` tag.
+        -   Follow the steps for creating [custom bundles](#install_custom_bundles).
 
-    -   Install one of the pre-built UMD [browser bundles](#install_browser_bundles) or consume one of the pre-built bundles via a CDN, such as [unpkg][unpkg].
+    -   I would like to include stdlib functionality by just using a `script` tag.
 
--   I would like to use stdlib functionality in an [Observable][observable] notebook.
+        -   Install one of the pre-built UMD [browser bundles](#install_browser_bundles) or consume one of the pre-built bundles via a CDN, such as [unpkg][unpkg].
 
-    -   Consume one of the pre-built [browser bundles](#install_browser_bundles) via a CDN, such as [unpkg][unpkg].
+    -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
 
--   I am building a [Node.js][node-js] **server application** and am interested in using various functionality found in stdlib.
+        -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
-    -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
+            Concerning bundling, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
 
--   I am building a **web application** or [Node.js][node-js] **server application** and am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
+-   I am building a [Node.js][node-js] **server application**.
 
-    -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
+    -   I am interested in using various functionality found in stdlib.
 
-        For web applications, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
+        -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
+
+    -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
+
+        -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
 -   I am using **Deno**.
 
     -   Use [skypack][skypack] to import [individual packages](#install_individual_packages).
+
+-   I would like to use stdlib functionality in an [Observable][observable] notebook.
+
+    -   Consume one of the pre-built [browser bundles](#install_browser_bundles) via a CDN, such as [unpkg][unpkg].
 
 -   I want to hack at stdlib, possibly even creating **customized** builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
 
