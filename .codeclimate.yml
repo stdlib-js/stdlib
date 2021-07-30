@@ -22,23 +22,13 @@ version: "2"
 #
 # [1]: https://docs.codeclimate.com/docs/list-of-engines
 plugins:
-  # Analyze bash files using [shellcheck][1].
+  # Analyze C/C++ files using [Cppcheck][1].
   #
-  # [1]: https://github.com/koalaman/shellcheck
-  shellcheck:
+  # [1]: https://docs.codeclimate.com/docs/cppcheck
+  cppcheck:
     enabled: true
-
-  # Analyze JavaScript files using [ESLint][1].
-  #
-  # [1]:https://docs.codeclimate.com/docs/eslint
-  eslint:
-    enabled: true
-
-  # Audit Node.js dependencies for security vulnerabilities using [Node Security][1].
-  #
-  # [1]: https://github.com/nodesecurity/nsp
-  nodesecurity:
-    enabled: true
+    config:
+      check: all
 
   # Analyze CSS files using [CSSLint][1].
   #
@@ -46,29 +36,25 @@ plugins:
   csslint:
     enabled: true
 
-  # Analyze Python files using [Pep8][1].
+  # Analyze files using [EditorConfig][1].
   #
-  # [1]: https://www.python.org/dev/peps/pep-0008/
-  pep8:
+  # [1]: https://docs.codeclimate.com/docs/editorconfig
+  editorconfig:
     enabled: true
-
-  # Analyze Markdown files using [markdownlint][1].
-  #
-  # [1]: https://github.com/mivok/markdownlint
-  markdownlint:
-    enabled: false
-
-  # Analyze source files for code similarity using [duplication][1].
-  #
-  # [1]: https://docs.codeclimate.com/docs/duplication
-  duplication:
-    enabled: true
+    channel: beta
     config:
-      languages:
-        javascript:
-          mass_threshold: 40
-        python:
-          mass_threshold: 32
+      editorconfig: .editorconfig
+
+  # Analyze JavaScript files using [ESLint][1].
+  #
+  # [1]:https://docs.codeclimate.com/docs/eslint
+  eslint:
+    enabled: true
+    channel: "eslint-6"
+    config:
+      config: .eslintrc.js
+      extensions:
+        - .js
 
   # Analyze source files for annotations using [FIXME][1].
   #
@@ -85,6 +71,54 @@ plugins:
         - OPTIMIZE
         - BUG
         - XXX
+
+  # Analyze the complexity of C functions using [GNU Complexity][1].
+  #
+  # [1]: https://docs.codeclimate.com/docs/gnu-complexity
+  gnu-complexity:
+    enabled: true
+
+  # Analyze Markdown files using [markdownlint][1].
+  #
+  # [1]: https://github.com/mivok/markdownlint
+  markdownlint:
+    enabled: false
+
+  # Audit Node.js dependencies for security vulnerabilities using [Node Security][1].
+  #
+  # [1]: https://github.com/nodesecurity/nsp
+  nodesecurity:
+    enabled: true
+
+  # Analyze Python files using [Pep8][1].
+  #
+  # [1]: https://www.python.org/dev/peps/pep-0008/
+  pep8:
+    enabled: true
+
+  # Lint Python files using [Pylint][1].
+  #
+  # [1]: https://docs.codeclimate.com/docs/pylint
+  pylint:
+    enabled: true
+
+  # Analyze bash files using [shellcheck][1].
+  #
+  # [1]: https://github.com/koalaman/shellcheck
+  shellcheck:
+    enabled: true
+
+  # Analyze source files for code similarity using [duplication][1].
+  #
+  # [1]: https://docs.codeclimate.com/docs/duplication
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 40
+        python:
+          mass_threshold: 32
 
 # Specify which files/folders should be [ignored][1] when performing analyses.
 #
