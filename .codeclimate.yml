@@ -60,7 +60,7 @@ plugins:
 
   # Analyze source files for code similarity using [duplication][1].
   #
-  # [1]: https://docs.codeclimate.com/v1.0/docs/duplication
+  # [1]: https://docs.codeclimate.com/docs/duplication
   duplication:
     enabled: true
     config:
@@ -72,9 +72,9 @@ plugins:
 
   # Analyze source files for annotations using [FIXME][1].
   #
-  # [1]: https://docs.codeclimate.com/v1.0/docs/fixme
+  # [1]: https://docs.codeclimate.com/docs/fixme
   fixme:
-    enabled: false
+    enabled: true
     config:
       strings:
         - TODO
@@ -89,7 +89,7 @@ plugins:
 # Specify which files/folders should be [ignored][1] when performing analyses.
 #
 # [1]: https://docs.codeclimate.com/docs/excluding-files-and-folders
-exclude_paths:
+exclude_patterns:
   - "node_modules/"
   - "reports/"
   - "build/"
