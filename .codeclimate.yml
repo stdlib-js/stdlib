@@ -28,7 +28,7 @@ checks:
     config:
       threshold: 4
 
-  # Check boolean logic that may be hard to understand.
+  # Check for boolean logic that may be hard to understand.
   complex-logic:
     enabled: true
     config:
@@ -116,7 +116,7 @@ plugins:
       extensions:
         - .js
 
-  # Analyze source files for annotations using [FIXME][1].
+  # Analyze source files for annotations using [fixme][1].
   #
   # [1]: https://docs.codeclimate.com/docs/fixme
   fixme:
