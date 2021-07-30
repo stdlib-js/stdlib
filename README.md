@@ -50,6 +50,7 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ## Resources
 
+-   [**Installation**](#installation)
 -   [**Homepage**][stdlib-homepage]
 -   [**Documentation**][stdlib-documentation]
 -   [**Source code**][stdlib-source]
