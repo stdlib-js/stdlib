@@ -26,13 +26,13 @@ checks:
   argument-count:
     enabled: true
     config:
-      threshold: 4
+      threshold: 10
 
   # Check for boolean logic that may be hard to understand.
   complex-logic:
     enabled: true
     config:
-      threshold: 4
+      threshold: 10
 
   # Check for excessive lines of code within a single file.
   file-lines:
@@ -44,7 +44,7 @@ checks:
   method-complexity:
     enabled: true
     config:
-      threshold: 5
+      threshold: 10
 
   # Check for classes defined with a high number of functions or methods.
   method-count:
@@ -56,17 +56,17 @@ checks:
   method-lines:
     enabled: true
     config:
-      threshold: 100
+      threshold: 200
 
   # Check for deeply nested control structures like `if` or `case`.
   nested-control-flow:
     enabled: true
     config:
-      threshold: 4
+      threshold: 5
 
   # Check for functions or methods with a high number of return statements.
   return-statements:
-    enabled: true
+    enabled: false  # NOTE: disabled because files such as `validate.js` can have multiple returns, which is intentional and okay.
     config:
       threshold: 5
 
