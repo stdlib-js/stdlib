@@ -109,7 +109,7 @@ plugins:
   #
   # [1]:https://docs.codeclimate.com/docs/eslint
   eslint:
-    enabled: true
+    enabled: false  # NOTE: disabled as CodeClimate does not support external configurations or network calls (see https://github.com/codeclimate/codeclimate-eslint/issues/86), and we rely on ESLint plugins which require network access, something CodeClimate does not permit
     channel: "eslint-6"
     config:
       config: .eslintrc.js
