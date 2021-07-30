@@ -133,6 +133,10 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ## Installation
 
+To accommodate various use cases, stdlib can be consumed in multiple ways. The preferred means of consumption depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
+
+While this project's installation instructions defaults to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
+
 ### User Stories
 
 -   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
@@ -543,6 +547,8 @@ Test and build infrastructure is generously provided by the following services:
 [node-js]: https://nodejs.org/en/
 
 [npm]: https://www.npmjs.com/
+
+[yarn]: https://yarnpkg.com/
 
 [gcc]: http://gcc.gnu.org/
 
