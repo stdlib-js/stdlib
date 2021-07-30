@@ -231,10 +231,21 @@ To install individual packages, replace forward slashes `/` after `@stdlib/` wit
 $ npm install @stdlib/ndarray-ctor
 ```
 
-Once installed, individual packages can be required/imported. For example,
+Once installed, individual packages can be required/imported. For example, to use `require`
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray-ctor' );
+
+var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
+// returns <ndarray>
+```
+
+and to use `import`
+
+<!-- run-disable -->
+
+```javascript
+import ndarray from '@stdlib/ndarray-ctor';
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -252,10 +263,21 @@ stdlib is comprised of various top-level namespaces (i.e., collections of relate
 $ npm install @stdlib/math
 ```
 
-Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example,
+Once installed, packages within a top-level namespace can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
 
 ```javascript
 var sin = require( '@stdlib/math/base/special/sin' );
+
+var v = sin( 3.14 );
+// returns <number>
+```
+
+and to use `import`
+
+<!-- run-disable -->
+
+```javascript
+import sin from '@stdlib/math/base/special/sin';
 
 var v = sin( 3.14 );
 // returns <number>
