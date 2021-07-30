@@ -72,11 +72,11 @@ checks:
 
   # Check for duplicate code which is not identical but shares the same structure (e.g., variable names may differ).
   similar-code:
-    enabled: true
+    enabled: false  # NOTE: disabled because files such as `validate.js` often share similar structure
 
   # Check for duplicate code which is syntactically identical (but may be formatted differently).
   identical-code:
-    enabled: true
+    enabled: false  # NOTE: disabled because numerical C routines often share considerable overlap but are tailored to input dtypes
 
 # Enable analysis [plugins][1].
 #
