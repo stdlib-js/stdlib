@@ -138,12 +138,6 @@ plugins:
   gnu-complexity:
     enabled: true
 
-  # Analyze Markdown files using [markdownlint][1].
-  #
-  # [1]: https://github.com/mivok/markdownlint
-  markdownlint:
-    enabled: false
-
   # Audit Node.js dependencies for security vulnerabilities using [Node Security][1].
   #
   # [1]: https://github.com/nodesecurity/nsp
@@ -154,13 +148,13 @@ plugins:
   #
   # [1]: https://www.python.org/dev/peps/pep-0008/
   pep8:
-    enabled: true
+    enabled: false  # NOTE: disabled as unable to specify location of configuration file
 
   # Lint Python files using [Pylint][1].
   #
   # [1]: https://docs.codeclimate.com/docs/pylint
   pylint:
-    enabled: true
+    enabled: false  # NOTE: disabled as unable to specify location of configuration file
 
   # Analyze bash files using [shellcheck][1].
   #
