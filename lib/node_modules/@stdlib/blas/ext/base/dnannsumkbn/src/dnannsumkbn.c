@@ -63,7 +63,6 @@ double stdlib_strided_dnannsumkbn( const int64_t N, const double *X, const int64
 	} else {
 		ix = 0;
 	}
-	sum = 0.0;
 	c = 0.0;
 	for ( i = 0; i < N; i++ ) {
 		v = X[ ix ];

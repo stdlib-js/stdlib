@@ -48,12 +48,13 @@ float stdlib_strided_snansumkbn2( const int64_t N, const float *X, const int64_t
 	float t;
 	float c;
 
+	sum = 0.0f;
 	if ( N <= 0 ) {
-		return 0.0f;
+		return sum;
 	}
 	if ( N == 1 || stride == 0 ) {
 		if ( stdlib_base_is_nanf( X[ 0 ] ) ) {
-			return 0.0f;
+			return sum;
 		}
 		return X[ 0 ];
 	}
@@ -62,7 +63,6 @@ float stdlib_strided_snansumkbn2( const int64_t N, const float *X, const int64_t
 	} else {
 		ix = 0;
 	}
-	sum = 0.0f;
 	ccs = 0.0f; // second order correction term for lost lower order bits
 	cs = 0.0f; // first order correction term for lost low order bits
 	for ( i = 0; i < N; i++ ) {
