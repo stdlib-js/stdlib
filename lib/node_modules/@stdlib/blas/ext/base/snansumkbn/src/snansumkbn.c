@@ -45,12 +45,13 @@ float stdlib_strided_snansumkbn( const int64_t N, const float *X, const int64_t 
 	float t;
 	float c;
 
+	sum = 0.0f;
 	if ( N <= 0 ) {
-		return 0.0f;
+		return sum;
 	}
 	if ( N == 1 || stride == 0 ) {
 		if ( stdlib_base_is_nanf( X[ 0 ] ) ) {
-			return 0.0f;
+			return sum;
 		}
 		return X[ 0 ];
 	}
@@ -59,7 +60,6 @@ float stdlib_strided_snansumkbn( const int64_t N, const float *X, const int64_t 
 	} else {
 		ix = 0;
 	}
-	sum = 0.0f;
 	c = 0.0f;
 	for ( i = 0; i < N; i++ ) {
 		v = X[ ix ];

@@ -32,6 +32,9 @@ insert_final_newline = true
 [*.js]
 indent_style = tab
 
+[*.js.txt]
+indent_style = tab
+
 # Set properties for TypeScript files:
 [*.ts]
 indent_style = tab
@@ -84,6 +87,11 @@ indent_style = tab
 indent_style = tab
 tab_width = 2
 
+# Set properties for XML files:
+[*.xml]
+indent_style = tab
+tab_width = 2
+
 # Set properties for CSS files:
 [*.css]
 indent_style = tab
@@ -97,6 +105,11 @@ indent_style = tab
 
 # Set properties for Markdown files:
 [*.md]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+[*.md.txt]
 indent_style = space
 indent_size = 4
 trim_trailing_whitespace = false
@@ -118,6 +131,11 @@ indent_size = 2
 
 # Set properties for `datapackage.json` files:
 [datapackage.json]
+indent_style = space
+indent_size = 2
+
+# Set properties for `manifest.json` files:
+[manifest.json]
 indent_style = space
 indent_size = 2
 

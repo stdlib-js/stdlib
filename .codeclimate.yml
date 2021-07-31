@@ -16,89 +16,94 @@
 # limitations under the License.
 #/
 
-# Enable analysis [engines][1].
+version: "2"
+
+# Configure maintainability [checks][1].
+#
+# [1]: https://docs.codeclimate.com/docs/advanced-configuration
+checks:
+  # Check for methods or functions defined with a high number of arguments.
+  argument-count:
+    enabled: true
+    config:
+      threshold: 10
+
+  # Check for boolean logic that may be hard to understand.
+  complex-logic:
+    enabled: true
+    config:
+      threshold: 10
+
+  # Check for excessive lines of code within a single file.
+  file-lines:
+    enabled: true
+    config:
+      threshold: 300
+
+  # Check for functions or methods that may be hard to understand (cognitive complexity).
+  method-complexity:
+    enabled: true
+    config:
+      threshold: 10
+
+  # Check for classes defined with a high number of functions or methods.
+  method-count:
+    enabled: true
+    config:
+      threshold: 20
+
+  # Check for excessive lines of code within a single function or method.
+  method-lines:
+    enabled: true
+    config:
+      threshold: 200
+
+  # Check for deeply nested control structures like `if` or `case`.
+  nested-control-flow:
+    enabled: true
+    config:
+      threshold: 5
+
+  # Check for functions or methods with a high number of return statements.
+  return-statements:
+    enabled: false  # NOTE: disabled because files such as `validate.js` can have multiple returns, which is intentional and okay.
+    config:
+      threshold: 5
+
+  # Check for duplicate code which is not identical but shares the same structure (e.g., variable names may differ).
+  similar-code:
+    enabled: false  # NOTE: disabled because files such as `validate.js` often share similar structure
+
+  # Check for duplicate code which is syntactically identical (but may be formatted differently).
+  identical-code:
+    enabled: false  # NOTE: disabled because numerical C routines often share considerable overlap but are tailored to input dtypes
+
+# Enable analysis [plugins][1].
 #
 # [1]: https://docs.codeclimate.com/docs/list-of-engines
-engines:
-  # Analyze bash files using [shellcheck][1].
+plugins:
+  # Analyze C/C++ files using [Cppcheck][1].
   #
-  # [1]: https://github.com/koalaman/shellcheck
-  shellcheck:
-    enabled: true
-
-  # Analyze JavaScript files using [ESLint][1].
-  #
-  # [1]:https://docs.codeclimate.com/docs/eslint
-  eslint:
-    enabled: true
-
-  # Audit Node.js dependencies for security vulnerabilities using [Node Security][1].
-  #
-  # [1]: https://github.com/nodesecurity/nsp
-  nodesecurity:
-    enabled: true
-
-  # Analyze CSS files using [CSSLint][1].
-  #
-  # [1]: https://docs.codeclimate.com/docs/csslint
-  csslint:
-    enabled: true
-
-  # Analyze Sass files using [SCSS lint][1].
-  #
-  # [1]: https://github.com/ivantsepp/codeclimate-scss-lint
-  scss-lint:
-    enabled: false
-
-  # Analyze Python files using [Pep8][1].
-  #
-  # [1]: https://www.python.org/dev/peps/pep-0008/
-  pep8:
-    enabled: true
-
-  # Analyze Markdown files using [markdownlint][1].
-  #
-  # [1]: https://github.com/mivok/markdownlint
-  markdownlint:
-    enabled: false
-
-  # Analyze Golang files using [golint][1].
-  #
-  # [1]: https://github.com/golang/lint
-  golint:
+  # [1]: https://docs.codeclimate.com/docs/cppcheck
+  cppcheck:
     enabled: true
     config:
-      min_confidence: 0.8
+      check: all
 
-  # Audit Golang files for suspicious constructs and potential bugs using [govet][1].
+  # Analyze files using [EditorConfig][1].
   #
-  # [1]: https://golang.org/cmd/vet
-  govet:
+  # [1]: https://docs.codeclimate.com/docs/editorconfig
+  editorconfig:
     enabled: true
-
-  # Ensure Golang files adhere to the official style using [gofmt][1].
-  #
-  # [1]: https://golang.org/cmd/gofmt
-  gofmt:
-    enabled: true
-
-  # Analyze source files for code similarity using [duplication][1].
-  #
-  # [1]: https://docs.codeclimate.com/v1.0/docs/duplication
-  duplication:
-    enabled: true
+    channel: beta
     config:
-      languages:
-        javascript:
-          mass_threshold: 40
-        python:
-          mass_threshold: 32
+      editorconfig: .editorconfig
 
-  # Analyze source files for annotations using [FIXME][1].
+  # Analyze source files for annotations using [fixme][1].
   #
-  # [1]: https://docs.codeclimate.com/v1.0/docs/fixme
+  # [1]: https://docs.codeclimate.com/docs/fixme
   fixme:
-    enabled: false
+    enabled: true
     config:
       strings:
         - TODO
@@ -110,72 +115,39 @@ engines:
         - BUG
         - XXX
 
-  # Disable all other engines:
-  brakeman:
-    enabled: false
-  bundler-audit:
-    enabled: false
-  coffeelint:
-    enabled: false
-  phpcodesniffer:
-    enabled: false
-  phpmd:
-    enabled: false
-  radon:
-    enabled: false
-  rubocop:
-    enabled: false
-  watson:
-    enabled: false
-  foodcritic:
-    enabled: false
-  haxe-checkstyle:
-    enabled: false
-  hlint:
-    enabled: false
-  phan:
-    enabled: false
-  reek:
-    enabled: false
-  rubymotion:
-    enabled: false
-  tailor:
-    enabled: false
-  vint:
-    enabled: false
+  # Analyze the complexity of C functions using [GNU Complexity][1].
+  #
+  # [1]: https://docs.codeclimate.com/docs/gnu-complexity
   gnu-complexity:
-    enabled: false
+    enabled: true
 
-
-# Specify which files/folders should have [ratings][1].
-#
-# [1]: https://docs.codeclimate.com/docs/ratings
-ratings:
-  paths:
-    - "lib/**/*"
-    - "test/**/*"
-    - "examples/**/*"
-    - "benchmark/**/*"
-    - "bin/**/*"
-    - "tools/**/*"
-    - "scripts/**/*"
-    - "**.sh"
-    - "**.js"
-    - "**.css"
-    # - "**.scss"
-    # - "**.md"
-    - "**.py"
-    - "**.go"
-
+  # Audit Node.js dependencies for security vulnerabilities using [Node Security][1].
+  #
+  # [1]: https://github.com/nodesecurity/nsp
+  nodesecurity:
+    enabled: true
 
 # Specify which files/folders should be [ignored][1] when performing analyses.
 #
 # [1]: https://docs.codeclimate.com/docs/excluding-files-and-folders
-exclude_paths:
+exclude_patterns:
   - "node_modules/"
   - "reports/"
   - "build/"
-  - "**/build/"
+  - "deps/"
   - "dist/"
+  - "docs/"
+  - "etc/"
+  - "test/"
   - "tmp/"
+  - "workshops/"
+  - "**/_tools/"
+  - "**/benchmark/"
+  - "**/build/"
+  - "**/docs/"
+  - "**/etc/"
+  - "**/examples/"
+  - "**/namespace/lib/"
+  - "**/scripts/"
+  - "**/test/"
   - "**/tmp/"
