@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dasumpw( N, x, stride );
 
 	// Print the result:
-	printf( "sumabs: %lf", v );
-	printf( "\n" );
+	printf( "sumabs: %lf\n", v );
 }

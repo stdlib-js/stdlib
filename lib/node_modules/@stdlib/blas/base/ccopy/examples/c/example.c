@@ -36,7 +36,6 @@ int main() {
 
 	// Print the result:
 	for ( int i = 0; i < N; i++ ) {
-		printf( "y[ %i ] = %f + %fj", i, y[ i*2 ], y[ (i*2)+1 ] );
-		printf( "\n" );
+		printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
 	}
 }

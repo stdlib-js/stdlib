@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dnanasum( N, x, stride );
 
 	// Print the result:
-	printf( "sumabs: %lf", v );
-	printf( "\n" );
+	printf( "sumabs: %lf\n", v );
 }

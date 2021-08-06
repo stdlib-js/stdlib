@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dapxsumors( N, 5.0, x, stride );
 
 	// Print the result:
-	printf( "sum: %lf", v );
-	printf( "\n" );
+	printf( "sum: %lf\n", v );
 }

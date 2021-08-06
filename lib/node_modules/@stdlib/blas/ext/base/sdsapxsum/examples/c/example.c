@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_sdsapxsum( N, 5.0f, x, stride );
 
 	// Print the result:
-	printf( "sum: %f", v );
-	printf( "\n" );
+	printf( "sum: %f\n", v );
 }

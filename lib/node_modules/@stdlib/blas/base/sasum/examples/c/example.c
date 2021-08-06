@@ -33,6 +33,5 @@ int main() {
 	float sum = c_sasum( N, x, strideX );
 
 	// Print the result:
-	printf( "sum: %f", sum );
-	printf( "\n" );
+	printf( "sum: %f\n", sum );
 }

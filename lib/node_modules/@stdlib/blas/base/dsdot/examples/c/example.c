@@ -35,6 +35,5 @@ int main() {
 	double d = c_dsdot( N, x, strideX, y, strideY );
 
 	// Print the result:
-	printf( "dot product: %lf", d );
-	printf( "\n" );
+	printf( "dot product: %lf\n", d );
 }

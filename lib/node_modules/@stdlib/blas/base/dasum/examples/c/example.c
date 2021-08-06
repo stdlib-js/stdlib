@@ -33,6 +33,5 @@ int main() {
 	double sum = c_dasum( N, x, strideX );
 
 	// Print the result:
-	printf( "sum: %lf", sum );
-	printf( "\n" );
+	printf( "sum: %lf\n", sum );
 }

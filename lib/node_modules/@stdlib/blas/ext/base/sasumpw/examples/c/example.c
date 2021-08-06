@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_sasumpw( N, x, stride );
 
 	// Print the result:
-	printf( "sumabs: %f", v );
-	printf( "\n" );
+	printf( "sumabs: %f\n", v );
 }

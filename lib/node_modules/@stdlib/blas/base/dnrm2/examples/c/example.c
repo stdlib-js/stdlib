@@ -33,6 +33,5 @@ int main() {
 	double l2 = c_dnrm2( N, x, strideX );
 
 	// Print the result:
-	printf( "L2-norm: %lf", l2 );
-	printf( "\n" );
+	printf( "L2-norm: %lf\n", l2 );
 }

@@ -36,7 +36,6 @@ int main() {
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
-		printf( "y[ %i ] = %f", i, y[ i ] );
-		printf( "\n" );
+		printf( "y[ %i ] = %f\n", i, y[ i ] );
 	}
 }

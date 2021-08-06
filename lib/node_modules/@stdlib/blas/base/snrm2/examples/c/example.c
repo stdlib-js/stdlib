@@ -33,6 +33,5 @@ int main() {
 	float l2 = c_snrm2( N, x, strideX );
 
 	// Print the result:
-	printf( "L2-norm: %f", l2 );
-	printf( "\n" );
+	printf( "L2-norm: %f\n", l2 );
 }

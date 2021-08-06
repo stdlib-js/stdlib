@@ -35,6 +35,5 @@ int main() {
 	float d = c_sdsdot( N, 0.0f, x, strideX, y, strideY );
 
 	// Print the result:
-	printf( "dot product: %f", d );
-	printf( "\n" );
+	printf( "dot product: %f\n", d );
 }
