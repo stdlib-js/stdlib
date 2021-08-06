@@ -91,7 +91,7 @@ endif
 #
 # -   This rule is useful when wanting to glob for Julia test fixture files (e.g., lint all Julia test fixture files for a particular package).
 #
-# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [JULIA_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
