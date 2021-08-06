@@ -20,7 +20,7 @@ limitations under the License.
 
 # smskmap
 
-> C API for registering an N-API module exporting a strided array interface for applying a unary callback accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigning results to elements in a single-precision floating-point strided output array.
+> C API for registering a Node-API module exporting a strided array interface for applying a unary callback accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigning results to elements in a single-precision floating-point strided output array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -120,11 +120,11 @@ static float identityf( const float x ) {
 // ...
 
 /**
-* Receives JavaScript callback invocation data via N-API.
+* Receives JavaScript callback invocation data.
 *
 * @param env    environment under which the function is invoked
 * @param info   callback data
-* @return       N-API value
+* @return       Node-API value
 */
 napi_value addon( napi_env env, napi_callback_info info ) {
     stdlib_strided_napi_smskmap( env, info, identityf );
@@ -146,7 +146,7 @@ void stdlib_strided_napi_smskmap( napi_env env, napi_callback_info info, float (
 
 #### STDLIB_STRIDED_NAPI_MODULE_SMSKMAP( clbk )
 
-Macro for registering an N-API module exporting a strided array interface for applying a unary callback accepting and return single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigning results to elements in a single-precision floating-point strided output array.
+Macro for registering a Node-API module exporting a strided array interface for applying a unary callback accepting and return single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigning results to elements in a single-precision floating-point strided output array.
 
 ```c
 static float scale( const float x ) {
@@ -155,7 +155,7 @@ static float scale( const float x ) {
 
 // ...
 
-// Register an N-API module:
+// Register a Node-API module:
 STDLIB_STRIDED_NAPI_MODULE_SMSKMAP( scale );
 ```
 
@@ -163,7 +163,7 @@ The macro expects the following arguments:
 
 -   **clbk**: `float (*fcn)( float )` unary callback.
 
-When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring N-API module registration.
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
 </section>
 

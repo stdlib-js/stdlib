@@ -24,7 +24,7 @@
 #include <assert.h>
 
 /**
-* Macro for registering an N-API module exporting an ndarray interface for applying a unary callback to an input ndarray.
+* Macro for registering a Node-API module exporting an ndarray interface for applying a unary callback to an input ndarray.
 *
 * @param obj   ndarray function object
 *
@@ -39,7 +39,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_NDARRAY_NAPI_MODULE_UNARY( obj );
 */
 #define STDLIB_NDARRAY_NAPI_MODULE_UNARY( obj )                                \

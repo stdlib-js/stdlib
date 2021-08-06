@@ -25,7 +25,7 @@
 #include <stdlib.h>
 
 /**
-* Validates, extracts, and transforms (to native C types) function arguments provided to an ndarray N-API add-on interface.
+* Validates, extracts, and transforms (to native C types) function arguments provided to an ndarray Node-API add-on interface.
 *
 * ## Notes
 *

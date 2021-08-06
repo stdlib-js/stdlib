@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# N-API ndarray dtype
+# Node-API ndarray dtype
 
 > C API for returning the ndarray [data type][@stdlib/ndarray/dtypes] corresponding to a data type string.
 

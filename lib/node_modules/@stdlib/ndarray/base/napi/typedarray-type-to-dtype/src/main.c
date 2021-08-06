@@ -21,9 +21,9 @@
 #include <node_api.h>
 
 /**
-* Returns the ndarray data type corresponding to an N-API typed array type.
+* Returns the ndarray data type corresponding to a Node-API typed array type.
 *
-* @param vtype  N-API typed array type
+* @param vtype  Node-API typed array type
 * @return       data type
 *
 * @example

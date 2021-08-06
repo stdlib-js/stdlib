@@ -23,7 +23,7 @@
 #include <assert.h>
 
 /**
-* Macro for registering an N-API module exporting an interface invoking a binary function accepting and returning double-precision floating-point numbers.
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting and returning double-precision floating-point numbers.
 *
 * @param fcn   binary function
 *
@@ -34,7 +34,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_MATH_BASE_NAPI_MODULE_DD_D( add );
 */
 #define STDLIB_MATH_BASE_NAPI_MODULE_DD_D( fcn )                               \
@@ -63,7 +63,7 @@
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_dd_d_init )
 
 /**
-* Macro for registering an N-API module exporting an interface invoking a binary function accepting and returning single-precision floating-point numbers.
+* Macro for registering a Node-API module exporting an interface invoking a binary function accepting and returning single-precision floating-point numbers.
 *
 * @param fcn   binary function
 *
@@ -74,7 +74,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_MATH_BASE_NAPI_MODULE_FF_F( addf );
 */
 #define STDLIB_MATH_BASE_NAPI_MODULE_FF_F( fcn )                               \

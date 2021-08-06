@@ -20,7 +20,7 @@ limitations under the License.
 
 # Unary
 
-> C API for registering an N-API module exporting an ndarray interface for applying a unary callback to an input ndarray.
+> C API for registering a Node-API module exporting an ndarray interface for applying a unary callback to an input ndarray.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -119,11 +119,11 @@ static const struct ndarrayFunctionObject obj = {...};
 // ...
 
 /**
-* Receives JavaScript callback invocation data via N-API.
+* Receives JavaScript callback invocation data.
 *
 * @param env    environment under which the function is invoked
 * @param info   callback data
-* @return       N-API value
+* @return       Node-API value
 */
 napi_value addon( napi_env env, napi_callback_info info ) {
     stdlib_ndarray_napi_unary( env, info, &obj );
@@ -145,7 +145,7 @@ void stdlib_ndarray_napi_unary( napi_env env, napi_callback_info info, const str
 
 #### STDLIB_NDARRAY_NAPI_MODULE_UNARY( obj )
 
-Macro for registering an N-API module exporting an ndarray interface for applying a unary callback to an input ndarray.
+Macro for registering a Node-API module exporting an ndarray interface for applying a unary callback to an input ndarray.
 
 ```c
 #include "stdlib/ndarray/base/function_object.h"
@@ -157,7 +157,7 @@ static const struct ndarrayFunctionObject obj = {...};
 
 // ...
 
-// Register an N-API module:
+// Register a Node-API module:
 STDLIB_NDARRAY_NAPI_MODULE_UNARY( obj );
 ```
 
@@ -165,7 +165,7 @@ The macro expects the following arguments:
 
 -   **obj**: `struct ndarrayFunctionObject` ndarray [function object][@stdlib/ndarray/base/function-object].
 
-When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring N-API module registration.
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
 </section>
 

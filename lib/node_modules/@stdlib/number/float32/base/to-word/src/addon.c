@@ -23,12 +23,12 @@
 #include <assert.h>
 
 /**
-* Receives JavaScript callback invocation data via N-API.
+* Receives JavaScript callback invocation data.
 *
 * @private
 * @param env    environment under which the function is invoked
 * @param info   callback data
-* @return       N-API value
+* @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
 	napi_status status;
@@ -75,7 +75,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 }
 
 /**
-* Initializes an N-API module.
+* Initializes a Node-API module.
 *
 * @private
 * @param env      environment under which the function is invoked

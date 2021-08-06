@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/napi",
   "version": "0.0.0",
-  "description": "C APIs for creating N-API ndarray native add-ons.",
+  "description": "C APIs for creating Node-API ndarray native add-ons.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -57,6 +57,7 @@
     "array",
     "napi",
     "n-api",
+    "node-api",
     "addon"
   ],
   "__stdlib__": {}

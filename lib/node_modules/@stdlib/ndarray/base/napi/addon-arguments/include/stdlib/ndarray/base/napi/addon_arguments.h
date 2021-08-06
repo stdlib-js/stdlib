@@ -31,7 +31,7 @@ extern "C" {
 #endif
 
 /**
-* Validates, extracts, and transforms (to native C types) function arguments provided to an ndarray N-API add-on interface.
+* Validates, extracts, and transforms (to native C types) function arguments provided to an ndarray Node-API add-on interface.
 */
 napi_status stdlib_ndarray_napi_addon_arguments( const napi_env env, const napi_value *argv, const int64_t nargs, const int64_t nin, struct ndarray *arrays[], napi_value *err );
 

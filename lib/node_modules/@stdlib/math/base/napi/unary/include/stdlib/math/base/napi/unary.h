@@ -24,7 +24,7 @@
 #include <stdint.h>
 
 /**
-* Macro for registering an N-API module exporting an interface invoking a unary function accepting and returning double-precision floating-point numbers.
+* Macro for registering a Node-API module exporting an interface invoking a unary function accepting and returning double-precision floating-point numbers.
 *
 * @param fcn   unary function
 *
@@ -35,7 +35,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_MATH_BASE_NAPI_MODULE_D_D( scale );
 */
 #define STDLIB_MATH_BASE_NAPI_MODULE_D_D( fcn )                                \
@@ -64,7 +64,7 @@
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_d_d_init )
 
 /**
-* Macro for registering an N-API module exporting an interface invoking a unary function accepting and returning single-precision floating-point numbers.
+* Macro for registering a Node-API module exporting an interface invoking a unary function accepting and returning single-precision floating-point numbers.
 *
 * @param fcn   unary function
 *
@@ -75,7 +75,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_MATH_BASE_NAPI_MODULE_F_F( scale );
 */
 #define STDLIB_MATH_BASE_NAPI_MODULE_F_F( fcn )                                \
@@ -104,7 +104,7 @@
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_f_f_init )
 
 /**
-* Macro for registering an N-API module exporting an interface invoking a unary function accepting and returning 32-bit signed integers.
+* Macro for registering a Node-API module exporting an interface invoking a unary function accepting and returning 32-bit signed integers.
 *
 * @param fcn   unary function
 *
@@ -117,7 +117,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_MATH_BASE_NAPI_MODULE_I_I( scale );
 */
 #define STDLIB_MATH_BASE_NAPI_MODULE_I_I( fcn )                                \

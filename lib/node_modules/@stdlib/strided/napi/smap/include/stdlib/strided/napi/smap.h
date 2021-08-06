@@ -23,7 +23,7 @@
 #include <assert.h>
 
 /**
-* Macro for registering an N-API module exporting a strided array interface for applying a unary callback accepting and return single-precision floating-point numbers to each element in a single-precision floating-point strided input array and assigning results to elements in a single-precision floating-point strided output array.
+* Macro for registering a Node-API module exporting a strided array interface for applying a unary callback accepting and return single-precision floating-point numbers to each element in a single-precision floating-point strided input array and assigning results to elements in a single-precision floating-point strided output array.
 *
 * @param clbk   unary callback
 *
@@ -34,7 +34,7 @@
 *
 * // ...
 *
-* // Register an N-API module:
+* // Register a Node-API module:
 * STDLIB_STRIDED_NAPI_MODULE_SMAP( scale );
 */
 #define STDLIB_STRIDED_NAPI_MODULE_SMAP( clbk )                                \

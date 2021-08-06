@@ -58,6 +58,7 @@
     "fcn",
     "c",
     "n-api",
+    "node-api",
     "napi"
   ],
   "__stdlib__": {}
