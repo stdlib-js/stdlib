@@ -22,6 +22,7 @@ include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/addons.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/browser_compatible.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/clis.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/cmds.mk
+include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/includes.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/installed.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/lib.mk
 include $(TOOLS_MAKE_LIB_DIR)/ls/pkgs/names.mk
