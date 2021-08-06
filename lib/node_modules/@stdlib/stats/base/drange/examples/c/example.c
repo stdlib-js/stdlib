@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_drange( N, x, stride );
 
 	// Print the result:
-	printf( "range: %lf", v );
-	printf( "\n" );
+	printf( "range: %lf\n", v );
 }

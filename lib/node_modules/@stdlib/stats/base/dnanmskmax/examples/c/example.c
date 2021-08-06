@@ -38,6 +38,5 @@ int main() {
 	double v = stdlib_strided_dnanmskmax( N, x, strideX, mask, strideMask );
 
 	// Print the result:
-	printf( "max: %lf", v );
-	printf( "\n" );
+	printf( "max: %lf\n", v );
 }

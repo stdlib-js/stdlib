@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dvarm( N, 4.5, 1, x, stride );
 
 	// Print the result:
-	printf( "sample variance: %lf", v );
-	printf( "\n" );
+	printf( "sample variance: %lf\n", v );
 }

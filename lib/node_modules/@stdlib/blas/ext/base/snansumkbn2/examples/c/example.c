@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_snansumkbn2( N, x, stride );
 
 	// Print the result:
-	printf( "sum: %f", v );
-	printf( "\n" );
+	printf( "sum: %f\n", v );
 }

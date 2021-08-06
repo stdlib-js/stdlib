@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dsnanmeanors( N, x, stride );
 
 	// Print the result:
-	printf( "mean: %f", v );
-	printf( "\n" );
+	printf( "mean: %f\n", v );
 }

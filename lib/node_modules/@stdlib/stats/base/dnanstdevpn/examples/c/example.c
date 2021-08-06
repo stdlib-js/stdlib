@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dnanstdevpn( N, 1, x, stride );
 
 	// Print the result:
-	printf( "sample standard deviation: %lf", v );
-	printf( "\n" );
+	printf( "sample standard deviation: %lf\n", v );
 }

@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dmin( N, x, stride );
 
 	// Print the result:
-	printf( "min: %lf", v );
-	printf( "\n" );
+	printf( "min: %lf\n", v );
 }

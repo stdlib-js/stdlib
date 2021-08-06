@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dnanmaxabs( N, x, stride );
 
 	// Print the result:
-	printf( "maxabs: %lf", v );
-	printf( "\n" );
+	printf( "maxabs: %lf\n", v );
 }

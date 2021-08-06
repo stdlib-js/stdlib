@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dmidrange( N, x, stride );
 
 	// Print the result:
-	printf( "mid-range: %lf", v );
-	printf( "\n" );
+	printf( "mid-range: %lf\n", v );
 }

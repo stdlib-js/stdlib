@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dsemwd( N, 1, x, stride );
 
 	// Print the result:
-	printf( "standard error of the mean: %lf", v );
-	printf( "\n" );
+	printf( "standard error of the mean: %lf\n", v );
 }

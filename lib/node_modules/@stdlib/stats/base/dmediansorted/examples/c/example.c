@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dmediansorted( N, x, stride );
 
 	// Print the result:
-	printf( "median: %lf", v );
-	printf( "\n" );
+	printf( "median: %lf\n", v );
 }

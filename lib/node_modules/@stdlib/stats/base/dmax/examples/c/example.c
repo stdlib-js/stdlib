@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dmax( N, x, stride );
 
 	// Print the result:
-	printf( "max: %lf", v );
-	printf( "\n" );
+	printf( "max: %lf\n", v );
 }

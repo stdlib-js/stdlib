@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dnanminabs( N, x, stride );
 
 	// Print the result:
-	printf( "minabs: %lf", v );
-	printf( "\n" );
+	printf( "minabs: %lf\n", v );
 }

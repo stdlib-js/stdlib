@@ -38,6 +38,5 @@ int main() {
 	double v = stdlib_strided_dnanmskmin( N, x, strideX, mask, strideMask );
 
 	// Print the result:
-	printf( "min: %lf", v );
-	printf( "\n" );
+	printf( "min: %lf\n", v );
 }

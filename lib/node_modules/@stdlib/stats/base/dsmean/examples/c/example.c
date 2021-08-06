@@ -34,6 +34,5 @@ int main() {
 	double v = stdlib_strided_dsmean( N, x, stride );
 
 	// Print the result:
-	printf( "mean: %lf", v );
-	printf( "\n" );
+	printf( "mean: %lf\n", v );
 }
