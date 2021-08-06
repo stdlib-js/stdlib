@@ -130,6 +130,9 @@ MARKDOWN_LINTER ?= remark
 # Define the linter to use when linting shell script files:
 SHELL_LINTER ?= shellcheck
 
+# Define the linter to use when linting C files:
+C_LINTER ?= cppcheck
+
 
 # COMMANDS #
 
@@ -564,3 +567,15 @@ DEPS_SHELLCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/shellcheck_$(deps_shellcheck_vers
 
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# Define the cppcheck version:
+DEPS_CPPCHECK_VERSION ?= 2.5
+
+# Generate a version slug:
+deps_cppcheck_version_slug := $(subst .,_,$(DEPS_CPPCHECK_VERSION))
+
+# Define the output path when building cppcheck:
+DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_slug)
+
+# Host platform:
+DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
