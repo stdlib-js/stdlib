@@ -20,7 +20,6 @@
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
-    "include": "./include",
     "lib": "./lib",
     "src": "./src",
     "test": "./test"
