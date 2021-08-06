@@ -140,13 +140,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --enable=unusedFunction --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --enable=unusedFunction --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
