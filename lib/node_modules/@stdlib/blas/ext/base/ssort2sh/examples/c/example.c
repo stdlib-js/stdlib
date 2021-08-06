@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/ext/base/ssort2sh.h"
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	// Create strided arrays:
@@ -37,6 +38,6 @@ int main() {
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
 		printf( "x[ %i ] = %f\n", i, x[ i ] );
-		printf( "y[ %i ] = %lli\n", i, (int64_t)y[ i ] );
+		printf( "y[ %i ] = %"PRId64"\n", i, (int64_t)y[ i ] );
 	}
 }

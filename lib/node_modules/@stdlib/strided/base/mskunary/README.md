@@ -3415,6 +3415,7 @@ In addition to the variables defined by the `STDLIB_STRIDED_MSKUNARY_LOOP_PREAMB
 #include "stdlib/strided/base/mskunary.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 // Define a callback:
 static double scale( const double x ) {
@@ -3443,7 +3444,7 @@ int main() {
     uint8_t *op1 = out;
     for ( int64_t i = 0; i < shape[0]; i++, op1 += strides[2] ) {
         const double v = *(double *)op1;
-        printf( "out[ %lli ] = %lf\n", i, v );
+        printf( "out[ %"PRId64" ] = %lf\n", i, v );
     }
 }
 ```

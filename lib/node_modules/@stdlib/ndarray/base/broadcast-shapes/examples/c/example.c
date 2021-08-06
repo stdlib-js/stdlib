@@ -19,6 +19,7 @@
 #include "stdlib/ndarray/base/broadcast_shapes.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	int64_t N1 = 4;
@@ -39,7 +40,7 @@ int main() {
 	int64_t i;
 	printf( "shape = ( " );
 	for ( i = 0; i < N1; i++ ) {
-		printf( "%lli", out[ i ] );
+		printf( "%"PRId64"", out[ i ] );
 		if ( i < N1-1 ) {
 			printf( ", " );
 		}

@@ -281,6 +281,7 @@ void stdlib_strided_smskmap( const int64_t N, const float *X, const int64_t stri
 #include "stdlib/strided/base/smskmap.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 // Define a callback:
 static float scale( const float x ) {
@@ -310,7 +311,7 @@ int main() {
 
     // Print the results:
     for ( int64_t i = 0; i < N; i++ ) {
-        printf( "Y[ %lli ] = %f\n", i, Y[ i ] );
+        printf( "Y[ %"PRId64" ] = %f\n", i, Y[ i ] );
     }
 }
 ```

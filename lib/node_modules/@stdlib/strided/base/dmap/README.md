@@ -257,6 +257,7 @@ void stdlib_strided_dmap( const int64_t N, const double *X, const int64_t stride
 #include "stdlib/strided/base/dmap.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 // Define a callback:
 static double scale( const double x ) {
@@ -282,7 +283,7 @@ int main() {
 
     // Print the results:
     for ( int64_t i = 0; i < N; i++ ) {
-        printf( "Y[ %lli ] = %lf\n", i, Y[ i ] );
+        printf( "Y[ %"PRId64" ] = %lf\n", i, Y[ i ] );
     }
 }
 ```

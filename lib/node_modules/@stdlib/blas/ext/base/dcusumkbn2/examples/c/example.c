@@ -19,6 +19,7 @@
 #include "stdlib/blas/ext/base/dcusumkbn2.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	// Create strided arrays:
@@ -37,7 +38,6 @@ int main() {
 
 	// Print the result:
 	for ( int64_t i = 0; i < 8; i++ ) {
-		printf( "y[ %lli ] = %lf", i, y[ i ] );
-		printf( "\n" );
+		printf( "y[ %"PRId64" ] = %lf\n", i, y[ i ] );
 	}
 }

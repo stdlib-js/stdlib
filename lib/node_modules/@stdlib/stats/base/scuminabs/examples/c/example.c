@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/scuminabs.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	// Create strided arrays:
@@ -37,7 +38,6 @@ int main() {
 
 	// Print the result:
 	for ( int64_t i = 0; i < 8; i++ ) {
-		printf( "y[ %lli ] = %f", i, y[ i ] );
-		printf( "\n" );
+		printf( "y[ %"PRId64" ] = %f\n", i, y[ i ] );
 	}
 }

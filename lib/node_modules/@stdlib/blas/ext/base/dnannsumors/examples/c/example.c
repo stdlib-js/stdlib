@@ -19,6 +19,7 @@
 #include "stdlib/blas/ext/base/dnannsumors.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	// Create a strided array:
@@ -38,5 +39,5 @@ int main() {
 
 	// Print the result:
 	printf( "sum: %lf\n", v );
-	printf( "n: %lli\n", n );
+	printf( "n: %"PRId64"\n", n );
 }

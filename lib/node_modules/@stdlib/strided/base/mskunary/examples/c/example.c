@@ -19,6 +19,7 @@
 #include "stdlib/strided/base/mskunary.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 // Define a callback:
 static double scale( const double x ) {
@@ -46,7 +47,7 @@ int main() {
 	// Print the contents of the output array:
 	uint8_t *op1 = out;
 	for ( int64_t i = 0; i < shape[0]; i++, op1 += strides[2] ) {
-		const double v = *(double *)op1;
-		printf( "out[ %lli ] = %lf\n", i, v );
+		const double v = *(double *)op1; // cppcheck-suppress invalidPointerCast
+		printf( "out[ %"PRId64" ] = %lf\n", i, v );
 	}
 }

@@ -18,6 +18,7 @@
 
 #include "stdlib/ndarray/base/minmax_view_buffer_index.h"
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	int64_t ndims = 2;
@@ -28,6 +29,6 @@ int main() {
 
 	stdlib_ndarray_minmax_view_buffer_index( ndims, shape, strides, offset, out );
 
-	printf( "min: %lli\n", out[ 0 ] );
-	printf( "max: %lli\n", out[ 1 ] );
+	printf( "min: %"PRId64"\n", out[ 0 ] );
+	printf( "max: %"PRId64"\n", out[ 1 ] );
 }

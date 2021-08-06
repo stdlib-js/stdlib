@@ -186,6 +186,7 @@ int8_t stdlib_ndarray_shape2strides( int64_t ndims, int64_t *shape, enum STDLIB_
 #include "stdlib/ndarray/base/shape2strides.h"
 #include "stdlib/ndarray/orders.h"
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
     int64_t shape[] = { 2, 3, 10 };
@@ -197,7 +198,7 @@ int main() {
     int i;
     printf( "strides = { " );
     for ( i = 0; i < ndims; i++ ) {
-        printf( "%lli", out[ i ] );
+        printf( "%"PRId64"", out[ i ] );
         if ( i < ndims-1 ) {
             printf( ", " );
         }

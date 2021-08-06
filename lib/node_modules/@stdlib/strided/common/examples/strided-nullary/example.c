@@ -19,6 +19,7 @@
 #include "stdlib/strided/common/nullary.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 // Define a callback:
 static double ones() {
@@ -44,8 +45,7 @@ int main() {
 	// Print the contents of the output array:
 	uint8_t *op1 = out;
 	for ( int64_t i = 0; i < shape[0]; i++, op1 += strides[0] ) {
-		const double v = *(double *)op1;
-		printf( "out[ %lli ] = %lf", i, v );
-		printf( "\n" );
+		const double v = *(double *)op1; // cppcheck-suppress invalidPointerCast
+		printf( "out[ %"PRId64" ] = %lf\n", i, v );
 	}
 }

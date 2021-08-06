@@ -19,6 +19,7 @@
 #include "stdlib/strided/common/quaternary.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 // Define a callback:
 static uint8_t add4( uint8_t x, uint8_t y, uint8_t z, uint8_t w ) {
@@ -49,7 +50,6 @@ int main() {
 	uint8_t *op1 = out;
 	for ( int64_t i = 0; i < shape[0]; i++, op1 += strides[4] ) {
 		const uint8_t v = *(uint8_t *)op1;
-		printf( "out[ %lli ] = %u", i, v );
-		printf( "\n" );
+		printf( "out[ %"PRId64" ] = %u\n", i, v );
 	}
 }

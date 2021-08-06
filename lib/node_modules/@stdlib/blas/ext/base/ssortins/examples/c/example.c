@@ -34,7 +34,6 @@ int main() {
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
-		printf( "x[ %i ] = %f", i, x[ i ] );
-		printf( "\n" );
+		printf( "x[ %i ] = %f\n", i, x[ i ] );
 	}
 }
