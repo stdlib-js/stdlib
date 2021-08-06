@@ -217,6 +217,23 @@ run_lint() {
 		fi
 	fi
 
+	# Lint C files...
+	files=$(echo "${changed_files}" | grep '\.c$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make check-c-linters > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Unable to lint C files. Ensure that linters are installed.' >&2
+		else
+			make FILES="${files}" lint-c-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'C lint errors.' >&2
+				return 1
+			fi
+		fi
+	fi
+
 	# Lint shell script files...
 	files=$(echo "${changed_files}" | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
