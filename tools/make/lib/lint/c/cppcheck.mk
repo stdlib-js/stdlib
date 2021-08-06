@@ -22,7 +22,8 @@
 cppcheck_include_paths := $(TMP_DIR)/__tmp_cppcheck_include_paths__.txt
 
 # Define the command-line options to use when invoking the cppcheck executable:
-CPPCHECK_FLAGS ?= --std=c99 \
+CPPCHECK_FLAGS ?= \
+	--std=c99 \
 	--enable=warning,style,performance,portability,information,missingInclude \
 	--inconclusive \
 	--includes-file=$(cppcheck_include_paths) \
