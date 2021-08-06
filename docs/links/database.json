@@ -8,6 +8,17 @@
       "node.js"
     ]
   },
+  "http://cppcheck.sourceforge.net/": {
+    "id": "cppcheck",
+    "description": "A static analysis tool for C/C++ code.",
+    "short_url": "",
+    "keywords": [
+      "static analysis",
+      "lint",
+      "linter",
+      "c"
+    ]
+  },
   "http://creativecommons.org/licenses/by/4.0/": {
     "id": "cc-by-4.0",
     "description": "Creative Commons Attribution 4.0 International (CC BY 4.0) license.",
