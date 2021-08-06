@@ -46,6 +46,15 @@ eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
 # Define the path to ESLint configuration file for linting benchmarks:
 eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
+# Define the path to cppcheck configuration file for linting examples:
+cppcheck_examples_suppressions_list="${root}/etc/cppcheck/suppressions.examples.txt"
+
+# Define the path to cppcheck configuration file for linting test fixtures:
+cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tests_fixtures.txt"
+
+# Define the path to cppcheck configuration file for linting benchmarks:
+cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
+
 
 # FUNCTIONS #
 
@@ -217,8 +226,8 @@ run_lint() {
 		fi
 	fi
 
-	# Lint C files...
-	files=$(echo "${changed_files}" | grep '\.c$' | tr '\n' ' ')
+	# Lint C source files...
+	files=$(echo "${changed_files}" | grep '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
 	if [[ -n "${files}" ]]; then
 		make check-c-linters > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
@@ -228,7 +237,58 @@ run_lint() {
 			make FILES="${files}" lint-c-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				echo '' >&2
-				echo 'C lint errors.' >&2
+				echo 'C lint errors for source files.' >&2
+				return 1
+			fi
+		fi
+	fi
+
+	# Lint C examples files...
+	files=$(echo "${changed_files}" | grep '/examples/.*\.c$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make check-c-linters > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Unable to lint C files. Ensure that linters are installed.' >&2
+		else
+			make C_LINTER=cppcheck CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}" FILES="${files}" lint-c-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'C lint errors for examples files.' >&2
+				return 1
+			fi
+		fi
+	fi
+
+	# Lint C benchmark files...
+	files=$(echo "${changed_files}" | grep '/benchmark/.*\.c$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make check-c-linters > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Unable to lint C files. Ensure that linters are installed.' >&2
+		else
+			make C_LINTER=cppcheck CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}" FILES="${files}" lint-c-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'C lint errors for benchmark files.' >&2
+				return 1
+			fi
+		fi
+	fi
+
+	# Lint C test fixtures files...
+	files=$(echo "${changed_files}" | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
+	if [[ -n "${files}" ]]; then
+		make check-c-linters > /dev/null >&2
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Unable to lint C files. Ensure that linters are installed.' >&2
+		else
+			make C_LINTER=cppcheck CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}" FILES="${files}" lint-c-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				echo '' >&2
+				echo 'C lint errors for test fixtures files.' >&2
 				return 1
 			fi
 		fi
