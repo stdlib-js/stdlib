@@ -111,6 +111,7 @@ double benchmark( int iterations, int len ) {
 			x[ i ] = ( rand_double() * 20000.0 ) - 10000.0;
 		}
 	}
+	v = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		v = stdlib_strided_dnansumors( len, x, 1 );
