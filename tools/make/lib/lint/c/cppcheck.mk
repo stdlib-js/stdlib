@@ -21,6 +21,18 @@
 # Define the file path for storing a list of package `include` paths:
 cppcheck_include_paths := $(TMP_DIR)/__tmp_cppcheck_include_paths__.txt
 
+# Define the path to a list of warnings to suppress:
+CPPCHECK_SUPPRESSIONS_LIST ?= $(CONFIG_DIR)/cppcheck/suppressions.txt
+
+# Define the path to a list of warnings to suppress for examples:
+CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES ?= $(CONFIG_DIR)/cppcheck/suppressions.examples.txt
+
+# Define the path to a list of warnings to suppress for benchmarks:
+CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS ?= $(CONFIG_DIR)/cppcheck/suppressions.benchmarks.txt
+
+# Define the path to a list of warnings to suppress for test fixtures:
+CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES ?= $(CONFIG_DIR)/cppcheck/suppressions.tests_fixtures.txt
+
 # Define the command-line options to use when invoking the cppcheck executable:
 CPPCHECK_FLAGS ?= \
 	--std=c99 \
@@ -29,10 +41,8 @@ CPPCHECK_FLAGS ?= \
 	--includes-file=$(cppcheck_include_paths) \
 	--language=c \
 	--error-exitcode=1 \
-	--suppress=duplicateExpression \
-	--suppress=missingIncludeSystem \
-	--suppress=unmatchedSuppression \
-	--suppress=variableScope
+	--inline-suppr \
+	--quiet
 
 
 # RULES #
@@ -94,13 +104,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -130,13 +140,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -166,13 +176,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -202,13 +212,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -235,13 +245,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || exit 1; \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || echo 'Linting failed.'; \
 	done
 endif
 
