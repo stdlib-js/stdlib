@@ -39,7 +39,7 @@ Developing and running stdlib **requires** the following prerequisites:
 -   [GNU bash][bash]: an sh-compatible shell
 -   [curl][curl], [wget][wget], or [fetch][fetch] (FreeBSD): utilities for downloading remote resources
 -   [Node.js][node-js]: JavaScript runtime (version `>= 0.10`; although the latest stable version is **strongly** recommended)
--   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `< 6.0.0`, version `> 2.7.0` and `< 6.0.0`)
+-   [npm][npm]: package manager (version `> 2.7.0`; if Node `< 1.0.0`, version `> 2.7.0` and `< 4.0.0`; if Node `< 10.x.x`, version `> 2.7.0` and `< 6.0.0`)
 
 While not required to run stdlib, the following dependencies **may** be required for testing, benchmarking, and general development:
 
@@ -62,6 +62,7 @@ Assuming the requisite language is present on the host machine, the following la
 -   [pydocstyle][pydocstyle]: Python docstring checker against PEP 257 (version `>= 2.0.0`)
 -   [lintr][lintr]: static code analysis for R (version `>= 1.0.0`)
 -   [shellcheck][shellcheck]: static code analysis for shell scripts (version `>= 0.5.0`; to install on OS X, either install [Homebrew][homebrew] as a prerequisite or install [shellcheck][shellcheck] manually)
+-   [cppcheck][cppcheck]: C/C++ static code analysis (version `>= 2.5`).
 
 The following external libraries can be automatically downloaded and compiled from source using `make` (see [installation](#installation)):
 
@@ -394,6 +395,8 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 [lintr]: https://github.com/jimhester/lintr
 
 [shellcheck]: https://github.com/koalaman/shellcheck
+
+[cppcheck]: http://cppcheck.sourceforge.net/
 
 [gcc]: http://gcc.gnu.org/
 
