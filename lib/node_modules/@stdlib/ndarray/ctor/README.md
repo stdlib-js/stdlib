@@ -3330,6 +3330,7 @@ Notes:
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <inttypes.h>
 
 void print_ndarray_contents( const struct ndarray *x ) {
     int64_t i;
@@ -3342,7 +3343,7 @@ void print_ndarray_contents( const struct ndarray *x ) {
             printf( "Unable to resolve data element.\n" );
             exit( 1 );
         }
-        printf( "data[%lld] = %f\n", i, v );
+        printf( "data[%"PRId64"] = %f\n", i, v );
     }
 }
 
@@ -3402,8 +3403,8 @@ int main() {
     x1->flags = stdlib_ndarray_flags( x1 );
 
     printf( "dtype = %u\n", stdlib_ndarray_dtype( x1 ) );
-    printf( "length = %lld\n", stdlib_ndarray_length( x1 ) );
-    printf( "byteLength = %lld\n", stdlib_ndarray_bytelength( x1 ) );
+    printf( "length = %"PRId64"\n", stdlib_ndarray_length( x1 ) );
+    printf( "byteLength = %"PRId64"\n", stdlib_ndarray_bytelength( x1 ) );
     printf( "ltr = %u\n", stdlib_ndarray_dtype_char( stdlib_ndarray_dtype( x1 ) ) );
     printf( "\n" );
 
@@ -3415,8 +3416,8 @@ int main() {
     }
 
     printf( "dtype = %u\n", stdlib_ndarray_dtype( x2 ) );
-    printf( "length = %lld\n", stdlib_ndarray_length( x2 ) );
-    printf( "byteLength = %lld\n", stdlib_ndarray_bytelength( x2 ) );
+    printf( "length = %"PRId64"\n", stdlib_ndarray_length( x2 ) );
+    printf( "byteLength = %"PRId64"\n", stdlib_ndarray_bytelength( x2 ) );
     printf( "ltr = %u\n", stdlib_ndarray_dtype_char( stdlib_ndarray_dtype( x2 ) ) );
     printf( "\n" );
 

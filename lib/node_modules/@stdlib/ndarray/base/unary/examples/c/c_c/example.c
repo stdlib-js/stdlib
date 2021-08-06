@@ -25,6 +25,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <complex.h>
+#include <inttypes.h>
 
 void print_ndarray_contents( const struct ndarray *x ) {
 	float complex v;
@@ -37,7 +38,7 @@ void print_ndarray_contents( const struct ndarray *x ) {
 			fprintf( stderr, "Unable to resolve data element.\n" );
 			exit( EXIT_FAILURE );
 		}
-		fprintf( stdout, "data[%lld] = %f + %fi\n", i, crealf( v ), cimagf( v ) );
+		fprintf( stdout, "data[%"PRId64"] = %f + %fi\n", i, crealf( v ), cimagf( v ) );
 	}
 }
 

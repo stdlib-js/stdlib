@@ -24,6 +24,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <inttypes.h>
 
 void print_ndarray_contents( const struct ndarray *x ) {
 	uint16_t v;
@@ -36,7 +37,7 @@ void print_ndarray_contents( const struct ndarray *x ) {
 			fprintf( stderr, "Unable to resolve data element.\n" );
 			exit( EXIT_FAILURE );
 		}
-		fprintf( stdout, "data[%lld] = %u\n", i, v );
+		fprintf( stdout, "data[%"PRId64"] = %u\n", i, v );
 	}
 }
 

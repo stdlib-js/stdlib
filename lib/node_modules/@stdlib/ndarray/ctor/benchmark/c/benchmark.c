@@ -29,6 +29,7 @@
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
+#include <inttypes.h>
 
 #define NAME "ndarray"
 #define ITERATIONS 1000000
@@ -203,7 +204,7 @@ double benchmark3() {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		buffer[ 0 ] = i % 255;
+		buffer[ 0 ] = i % 255; // cppcheck-suppress unreadVariable
 		v = stdlib_ndarray_data( arr );
 		if ( v[ 0 ] != (i%255) ) {
 			printf( "unexpected result\n" );
@@ -1404,7 +1405,7 @@ double benchmark28() {
 		idx = (int64_t)( (rand_double()*30.0)-15.0 );
 		s = stdlib_ndarray_iget( arr, idx, (void *)&v );
 		if ( s != 0 || v > 6 ) {
-			printf( "unexpected result: idx=%lld, v=%u\n", idx, v );
+			printf( "unexpected result: idx=%"PRId64", v=%u\n", idx, v );
 			break;
 		}
 	}
