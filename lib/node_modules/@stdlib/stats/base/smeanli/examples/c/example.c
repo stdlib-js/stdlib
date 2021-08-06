@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_smeanli( N, x, stride );
 
 	// Print the result:
-	printf( "mean: %f", v );
-	printf( "\n" );
+	printf( "mean: %f\n", v );
 }

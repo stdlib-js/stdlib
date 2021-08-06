@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_smidrange( N, x, stride );
 
 	// Print the result:
-	printf( "mid-range: %f", v );
-	printf( "\n" );
+	printf( "mid-range: %f\n", v );
 }

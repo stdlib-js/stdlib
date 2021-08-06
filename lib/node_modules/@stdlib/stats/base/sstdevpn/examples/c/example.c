@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_sstdevpn( N, 1, x, stride );
 
 	// Print the result:
-	printf( "sample standard deviation: %f", v );
-	printf( "\n" );
+	printf( "sample standard deviation: %f\n", v );
 }

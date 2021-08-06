@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_srange( N, x, stride );
 
 	// Print the result:
-	printf( "range: %f", v );
-	printf( "\n" );
+	printf( "range: %f\n", v );
 }

@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_snanminabs( N, x, stride );
 
 	// Print the result:
-	printf( "minabs: %lf", v );
-	printf( "\n" );
+	printf( "minabs: %f\n", v );
 }

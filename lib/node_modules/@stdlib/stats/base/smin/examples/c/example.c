@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_smin( N, x, stride );
 
 	// Print the result:
-	printf( "min: %f", v );
-	printf( "\n" );
+	printf( "min: %f\n", v );
 }

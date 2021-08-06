@@ -38,6 +38,5 @@ int main() {
 	float v = stdlib_strided_snanmskmax( N, x, strideX, mask, strideMask );
 
 	// Print the result:
-	printf( "max: %f", v );
-	printf( "\n" );
+	printf( "max: %f\n", v );
 }

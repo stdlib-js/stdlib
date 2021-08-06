@@ -38,6 +38,5 @@ int main() {
 	float v = stdlib_strided_smskrange( N, x, strideX, mask, strideMask );
 
 	// Print the result:
-	printf( "range: %f", v );
-	printf( "\n" );
+	printf( "range: %f\n", v );
 }

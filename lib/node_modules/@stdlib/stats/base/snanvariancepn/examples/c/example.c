@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_snanvariancepn( N, 1.0f, x, stride );
 
 	// Print the result:
-	printf( "sample variance: %f", v );
-	printf( "\n" );
+	printf( "sample variance: %f\n", v );
 }

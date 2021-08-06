@@ -38,6 +38,5 @@ int main() {
 	float v = stdlib_strided_snanmskmin( N, x, strideX, mask, strideMask );
 
 	// Print the result:
-	printf( "min: %f", v );
-	printf( "\n" );
+	printf( "min: %f\n", v );
 }

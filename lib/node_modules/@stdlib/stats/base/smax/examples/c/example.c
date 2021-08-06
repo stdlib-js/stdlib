@@ -34,6 +34,5 @@ int main() {
 	float v = stdlib_strided_smax( N, x, stride );
 
 	// Print the result:
-	printf( "max: %f", v );
-	printf( "\n" );
+	printf( "max: %f\n", v );
 }
