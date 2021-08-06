@@ -80,14 +80,14 @@ $(cppcheck_include_paths):
 # [1]: http://cppcheck.sourceforge.net/
 #
 # @private
-# @param {string} [C_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make cppcheck-src
 #
 # @example
-# make cppcheck-src C_SOURCES_FILTER=".*/math/base/special/.*"
+# make cppcheck-src SOURCES_FILTER=".*/math/base/special/.*"
 #/
 cppcheck-src: cppcheck-clean $(cppcheck_include_paths)
 ifeq ($(FAIL_FAST), true)
@@ -116,14 +116,14 @@ endif
 # [1]: http://cppcheck.sourceforge.net/
 #
 # @private
-# @param {string} [C_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make cppcheck-examples
 #
 # @example
-# make cppcheck-examples C_EXAMPLES_FILTER=".*/math/base/special/.*"
+# make cppcheck-examples EXAMPLES_FILTER=".*/math/base/special/.*"
 #/
 cppcheck-examples: cppcheck-clean $(cppcheck_include_paths)
 ifeq ($(FAIL_FAST), true)
@@ -152,14 +152,14 @@ endif
 # [1]: http://cppcheck.sourceforge.net/
 #
 # @private
-# @param {string} [C_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make cppcheck-benchmarks
 #
 # @example
-# make cppcheck-benchmarks C_BENCHMARKS_FILTER=".*/math/base/special/.*"
+# make cppcheck-benchmarks BENCHMARKS_FILTER=".*/math/base/special/.*"
 #/
 cppcheck-benchmarks: cppcheck-clean $(cppcheck_include_paths)
 ifeq ($(FAIL_FAST), true)
@@ -188,14 +188,14 @@ endif
 # [1]: http://cppcheck.sourceforge.net/
 #
 # @private
-# @param {string} [C_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make cppcheck-tests-fixtures
 #
 # @example
-# make cppcheck-tests-fixtures C_TESTS_FIXTURES_FILTER=".*/math/base/special/.*"
+# make cppcheck-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/.*"
 #/
 cppcheck-tests-fixtures: cppcheck-clean $(cppcheck_include_paths)
 ifeq ($(FAIL_FAST), true)

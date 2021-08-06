@@ -43,17 +43,17 @@ check-c-linters: check-cppcheck
 #
 # -   This rule is useful when wanting to glob for files, irrespective of context, for a particular directory in order to lint all contained C files.
 #
-# @param {string} [C_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [C_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [C_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [C_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-c
 #
 # @example
-# make lint-c C_SOURCES_FILTER=".*/blas/base/dasum/.*" C_TESTS_FIXTURES_FILTER=".*/blas/base/dasum/.*" C_EXAMPLES_FILTER=".*/blas/base/dasum/.*" C_BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
+# make lint-c SOURCES_FILTER=".*/blas/base/dasum/.*" TESTS_FIXTURES_FILTER=".*/blas/base/dasum/.*" EXAMPLES_FILTER=".*/blas/base/dasum/.*" BENCHMARKS_FILTER=".*/blas/base/dasum/.*"
 #/
 lint-c: lint-c-src lint-c-examples lint-c-benchmarks lint-c-tests-fixtures
 
@@ -66,14 +66,14 @@ lint-c: lint-c-src lint-c-examples lint-c-benchmarks lint-c-tests-fixtures
 #
 # -   This rule is useful when wanting to glob for C source files (e.g., lint all C source files for a particular package).
 #
-# @param {string} [C_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-c-src
 #
 # @example
-# make lint-c-src C_SOURCES_FILTER=".*/math/base/special/abs/.*"
+# make lint-c-src SOURCES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-c-src:
 ifeq ($(C_LINTER), cppcheck)
@@ -89,14 +89,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for C examples files (e.g., lint all C examples files for a particular package).
 #
-# @param {string} [C_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-c-examples
 #
 # @example
-# make lint-c-examples C_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
+# make lint-c-examples EXAMPLES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-c-examples:
 ifeq ($(C_LINTER), cppcheck)
@@ -112,14 +112,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for C benchmark files (e.g., lint all C benchmark files for a particular package).
 #
-# @param {string} [C_BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [BENCHMARKS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-c-benchmarks
 #
 # @example
-# make lint-c-benchmarks C_BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
+# make lint-c-benchmarks BENCHMARKS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-c-benchmarks:
 ifeq ($(C_LINTER), cppcheck)
@@ -135,14 +135,14 @@ endif
 #
 # -   This rule is useful when wanting to glob for C test fixture files (e.g., lint all C test fixture files for a particular package).
 #
-# @param {string} [C_TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {string} [TESTS_FIXTURES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-c-tests-fixtures
 #
 # @example
-# make lint-c-tests-fixtures C_TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
+# make lint-c-tests-fixtures TESTS_FIXTURES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-c-tests-fixtures:
 ifeq ($(C_LINTER), cppcheck)
