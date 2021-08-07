@@ -16,10 +16,11 @@
 * limitations under the License.
 */
 
+#include "stdlib/random/base/minstd.h"
+#include "stdlib/random/base.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/minstd.h"
+#include <inttypes.h>
 
 int main() {
 	int8_t status;
@@ -43,8 +44,8 @@ int main() {
 	printf( "seed = %d\n", seed );
 
 	printf( "name = %s\n", obj->prng->name );
-	printf( "min = %llu\n", obj->prng->min );
-	printf( "max = %llu\n", obj->prng->max );
+	printf( "min = %"PRIu64"\n", obj->prng->min );
+	printf( "max = %"PRIu64"\n", obj->prng->max );
 
 	printf( "\nPseudorandom integers...\n" );
 	for ( i = 0; i < 10; i++ ) {
@@ -53,7 +54,7 @@ int main() {
 			printf( "Unexpected result.\n" );
 			exit( 1 );
 		}
-		printf( "%llu\n", v );
+		printf( "%"PRIu64"\n", v );
 	}
 
 	printf( "\n" );
