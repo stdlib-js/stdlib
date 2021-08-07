@@ -120,7 +120,7 @@ int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, 
 				idx -= k * s;
 				out[ i ] = shape[ i ] - 1 + k;
 			} else {
-				k = idx / s; // truncates
+				k = idx / s; // cppcheck-suppress zerodivcond // truncates
 				idx -= k * s;
 				out[ i ] = k;
 			}
@@ -135,7 +135,7 @@ int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, 
 			idx -= k * s;
 			out[ i ] = shape[ i ] - 1 + k;
 		} else {
-			k = idx / s; // truncates
+			k = idx / s; // cppcheck-suppress zerodivcond // truncates
 			idx -= k * s;
 			out[ i ] = k;
 		}
