@@ -205,7 +205,7 @@ void write_array_ui32( FILE *f, const unsigned int *x, const unsigned int len ) 
 * @param x    array of integers
 * @param len  array length
 */
-void write_array_i32( FILE *f, const unsigned int *x, const unsigned int len ) {
+void write_array_i32( FILE *f, const int *x, const unsigned int len ) {
 	unsigned int i;
 
 	for ( i = 0; i < len; i++ ) {
