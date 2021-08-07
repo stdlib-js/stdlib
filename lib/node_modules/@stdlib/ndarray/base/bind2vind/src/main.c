@@ -100,7 +100,7 @@ int64_t stdlib_ndarray_bind2vind( int64_t ndims, int64_t *shape, int64_t *stride
 				idx -= k * s;
 				k += shape[ i ] - 1;
 			} else {
-				k = idx / s; // truncates
+				k = idx / s; // cppcheck-suppress zerodivcond // truncates
 				idx -= k * s;
 			}
 			ind += k * llabs( s );
@@ -115,7 +115,7 @@ int64_t stdlib_ndarray_bind2vind( int64_t ndims, int64_t *shape, int64_t *stride
 			idx -= k * s;
 			k += shape[ i ] - 1;
 		} else {
-			k = idx / s; // truncates
+			k = idx / s; // cppcheck-suppress zerodivcond // truncates
 			idx -= k * s;
 		}
 		ind += k * llabs( s );
