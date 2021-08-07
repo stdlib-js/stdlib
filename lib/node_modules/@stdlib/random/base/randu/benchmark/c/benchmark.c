@@ -19,14 +19,14 @@
 /**
 * Benchmark `randu`.
 */
+#include "stdlib/random/base/randu.h"
+#include "stdlib/random/base.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/randu.h"
 
 #define NAME "base/randu"
 #define ITERATIONS 1000000
@@ -95,7 +95,6 @@ double rand_double() {
 * @return elapsed time in seconds
 */
 double benchmark1() {
-	uint32_t seed[1];
 	double elapsed;
 	double t;
 	int i;
@@ -104,7 +103,6 @@ double benchmark1() {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		seed[ 0 ] = i + 1;
 		obj = stdlib_base_random_randu_allocate( 0 );
 		if ( obj == NULL || stdlib_base_prng_normalized_min( obj ) != 0.0 ) {
 			printf( "unexpected result\n" );
