@@ -19,6 +19,7 @@
 #ifndef STDLIB_RANDOM_BASE_H
 #define STDLIB_RANDOM_BASE_H
 
+#include <stdlib.h>
 #include <stdint.h>
 
 /*
