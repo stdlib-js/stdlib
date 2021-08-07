@@ -113,6 +113,7 @@ double benchmark( int iterations, int len ) {
 		}
 		x[ i ] = ( rand_float() * 20000.0f ) - 10000.0f;
 	}
+	v = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		v = stdlib_strided_snanmskmax( len, x, 1, mask, 1 );
