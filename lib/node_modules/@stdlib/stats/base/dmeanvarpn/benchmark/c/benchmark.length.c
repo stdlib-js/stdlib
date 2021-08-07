@@ -107,6 +107,9 @@ double benchmark( int iterations, int len ) {
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double() * 20000.0 ) - 10000.0;
 	}
+	out[ 0 ] = 0.0;
+	out[ 1 ] = 0.0;
+
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
