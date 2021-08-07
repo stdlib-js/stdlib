@@ -99,14 +99,15 @@ double rand_double() {
 */
 double benchmark( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
-	double v;
+	float x[ len ];
+	float v;
 	double t;
 	int i;
 
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = i;
 	}
+	v = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		v = stdlib_strided_smediansorted( len, x, 1 );
