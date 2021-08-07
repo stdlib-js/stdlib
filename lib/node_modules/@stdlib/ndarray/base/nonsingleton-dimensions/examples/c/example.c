@@ -18,10 +18,11 @@
 
 #include "stdlib/ndarray/base/nonsingleton_dimensions.h"
 #include <stdio.h>
+#include <inttypes.h>
 
 int main() {
 	int64_t shape[] = { 10, 3, 1, 1, 5 };
 
 	int64_t n = stdlib_ndarray_nonsingleton_dimensions( 5, shape );
-	printf( "shape: %llux%llux%llux%llux%llu. non-singleton dimensions: %llu\n", shape[ 0 ], shape[ 1 ], shape[ 2 ], shape[ 3 ], shape[ 4 ], n );
+	printf( "shape: %"PRId64"x%"PRId64"x%"PRId64"x%"PRId64"x%"PRId64". non-singleton dimensions: %"PRId64"\n", shape[ 0 ], shape[ 1 ], shape[ 2 ], shape[ 3 ], shape[ 4 ], n );
 }
