@@ -280,14 +280,13 @@ double benchmark5() {
 	}
 	elapsed = tic() - t;
 
+	stdlib_base_random_mt19937_free( obj );
 	if ( state == NULL ) {
 		printf( "unexpected result\n" );
+	} else {
+		free( state->seed );
+		free( state );
 	}
-	stdlib_base_random_mt19937_free( obj );
-
-	free( state->seed );
-	free( state );
-
 	return elapsed;
 }
 
