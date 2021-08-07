@@ -65,26 +65,26 @@ int main() {
 	obj->data = data;
 
 	printf( "name = %s\n", obj->name );
-	printf( "nin = %u\n", obj->nin );
-	printf( "nout = %u\n", obj->nout );
-	printf( "narrays = %u\n", obj->narrays );
-	printf( "nfunctions = %u\n", obj->nfunctions );
+	printf( "nin = %i\n", obj->nin );
+	printf( "nout = %i\n", obj->nout );
+	printf( "narrays = %i\n", obj->narrays );
+	printf( "nfunctions = %i\n", obj->nfunctions );
 
 	// Free allocated memory:
 	stdlib_ndarray_function_free( obj );
 
 	// Use the function interface to create an ndarray function object...
 	struct ndarrayFunctionObject *obj2 = stdlib_ndarray_function_allocate( "unary_ndarray_function_2", 1, 1, functions, 1, types, data );
-	if ( obj == NULL ) {
+	if ( obj2 == NULL ) {
 		fprintf( stderr, "Error allocating memory.\n" );
 		exit( 1 );
 	}
 
 	printf( "name = %s\n", obj2->name );
-	printf( "nin = %u\n", obj2->nin );
-	printf( "nout = %u\n", obj2->nout );
-	printf( "narrays = %u\n", obj2->narrays );
-	printf( "nfunctions = %u\n", obj2->nfunctions );
+	printf( "nin = %i\n", obj2->nin );
+	printf( "nout = %i\n", obj2->nout );
+	printf( "narrays = %i\n", obj2->narrays );
+	printf( "nfunctions = %i\n", obj2->nfunctions );
 
 	// Free allocated memory:
 	stdlib_ndarray_function_free( obj );
