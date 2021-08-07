@@ -98,22 +98,21 @@ double benchmark() {
 	double t;
 	int i;
 
-	double complex z1;
-	double complex z2;
+	double complex z;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		re = ( 100.0*rand_double() ) - 50.0;
 		im = ( 100.0*rand_double() ) - 50.0;
 
-		z2 = cexp( re + I * im );
-		if ( z2 != z2 ) {
+		z = cexp( re + I * im );
+		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( z2 != z2 ) {
+	if ( z != z ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
