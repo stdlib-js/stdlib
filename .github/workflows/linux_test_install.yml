@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: linux_test_npm_install
+name: linux_test_install
 
 # Workflow triggers:
 on:
@@ -41,7 +41,7 @@ concurrency:
 jobs:
 
   # Define a job for testing project installation on Linux...
-  test_npm_install:
+  test_install:
 
     # Define a display name:
     name: "Node.js v${{ matrix.NODE_VERSION }}"
@@ -60,6 +60,7 @@ jobs:
       LINKER: 'g++'
       GITHUB: 'true'
       DISPLAY: ':99'
+      INSTALL_DIR: "${{ github.workspace }}/stdlib"
       LOG_DIR: "${{ github.workspace }}/tmp/var/log"
       LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
@@ -74,10 +75,13 @@ jobs:
       matrix:
 
         # Define the list of build tasks:
-        BUILD_TASK: ['test-npm-install']
+        BUILD_TASK: ['test-install']
 
         # Define the list of Node.js versions on which to run this job:
         NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
+
+        # Define the list of package managers to test:
+        PACKAGE_MANAGER: ['npm']
 
         # Define the list of operating systems on which to run this job:
         OS: ['ubuntu-latest']
@@ -89,24 +93,31 @@ jobs:
 
           - NODE_VERSION: '16'
             NPM_VERSION: '>2.7.0'
+            PNPM_VERSION: '6'
 
           - NODE_VERSION: '14'
             NPM_VERSION: '>2.7.0'
+            PNPM_VERSION: '6'
 
           - NODE_VERSION: '12'
             NPM_VERSION: '>2.7.0'
+            PNPM_VERSION: '6'
 
           - NODE_VERSION: '10'
             NPM_VERSION: '>2.7.0 <7.0.0'
+            PNPM_VERSION: '5'
 
           - NODE_VERSION: '8'
             NPM_VERSION: '>2.7.0 <6.0.0'
+            PNPM_VERSION: '3'
 
           - NODE_VERSION: '6'
             NPM_VERSION: '>2.7.0 <6.0.0'
+            PNPM_VERSION: '2'
 
           - NODE_VERSION: '4'
             NPM_VERSION: '>2.7.0 <6.0.0'
+            PNPM_VERSION: '1'
 
           - NODE_VERSION: '0.12'
             NPM_VERSION: '>2.7.0 <4.0.0'
@@ -122,20 +133,6 @@ jobs:
 
     # Define the sequence of job steps...
     steps:
-
-      # Checkout the repository:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v2
-        with:
-          # Specify whether to remove untracked files before checking out the repository:
-          clean: false
-
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
-
-          # Specify whether to download Git-LFS files:
-          lfs: false
-        timeout-minutes: 10
 
       # Initialize log files:
       - name: 'Initialize log files'
@@ -209,7 +206,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/test_install" "${{ env.INSTALL_DIR }}" ${{ matrix.PACKAGE_MANAGER }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
@@ -245,7 +242,7 @@ jobs:
     runs-on: 'ubuntu-latest'
 
     # Indicate that this job depends on the prior job finishing:
-    needs: test_npm_install
+    needs: test_install
 
     # Run this job regardless of the outcome of the prior job:
     if: always()
@@ -262,15 +259,15 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.test_npm_install.result}}' >> $GITHUB_ENV
-          if [[ "${{ needs.test_npm_install.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_npm_install** workflow succeeded (linux)' >> $GITHUB_ENV
+          echo 'NOTIFICATION_STATUS=${{ needs.test_install.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.test_install.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**test_install** workflow succeeded (linux)' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
-          elif [[ "${{ needs.test_npm_install.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_npm_install** workflow failed (linux)' >> $GITHUB_ENV
+          elif [[ "${{ needs.test_install.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**test_install** workflow failed (linux)' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
-          elif [[ "${{ needs.test_npm_install.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_npm_install** workflow was canceled (linux)' >> $GITHUB_ENV
+          elif [[ "${{ needs.test_install.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**test_install** workflow was canceled (linux)' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
           else
             exit 1
