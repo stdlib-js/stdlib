@@ -21,7 +21,6 @@
 include $(TOOLS_MAKE_LIB_DIR)/node/addons.mk
 include $(TOOLS_MAKE_LIB_DIR)/node/modules.mk
 include $(TOOLS_MAKE_LIB_DIR)/node/npm.mk
-include $(TOOLS_MAKE_LIB_DIR)/node/test_install.mk
 
 
 # TARGETS #
