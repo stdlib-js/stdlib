@@ -43,7 +43,7 @@ heartbeat_pid=""
 
 # FUNCTIONS #
 
-# Defines an error handler.
+# Error handler.
 #
 # $1 - error status
 on_error() {
