@@ -291,6 +291,11 @@ npm_install_global() {
 		echo "Encountered an error when performing post-install cleanup tasks." >> "${log_file}" 2>&1
 		return 1
 	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
 	echo 'Successfully removed global installation...' >> "${log_file}" 2>&1
 	return 0
 }
@@ -322,6 +327,11 @@ npm_install_global_github() {
 	npm uninstall -g "${pkg_name}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when performing post-install cleanup tasks." >> "${log_file}" 2>&1
+		return 1
+	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
 		return 1
 	fi
 	echo 'Successfully removed global installation...' >> "${log_file}" 2>&1
