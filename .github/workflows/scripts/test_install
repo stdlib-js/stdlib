@@ -107,7 +107,7 @@ print_success() {
 	echo 'Success!' >&2
 }
 
-# Performs installation initialization tasks.
+# Performs local installation initialization tasks.
 install_init() {
 	echo 'Creating installation directory...' >&2
 	mkdir -p "${install_dir}" || return 1
@@ -121,7 +121,7 @@ install_init() {
 	return 0
 }
 
-# Tests that an installation works as expected.
+# Tests that a local installation works as expected.
 install_test() {
 	echo 'Testing installation...' >&2
 
@@ -138,7 +138,7 @@ install_test() {
 	return 0
 }
 
-# Performs installation cleanup tasks.
+# Performs local installation cleanup tasks.
 install_clean() {
 	echo 'Removing installation directory...' >&2
 	rm -rf "${install_dir}" || return 1
