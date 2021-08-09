@@ -28,11 +28,11 @@ set -o pipefail
 
 # VARIABLES #
 
-# Get the path to the local installation directory as the first argument to the build script:
-install_dir="$1"
+# Get the name of the desired package manager as the first argument to the build script:
+pm="$1"
 
-# Get the name of the desired package manager as the second argument to the build script:
-pm="$2"
+# Get the path to the local installation directory as the second argument to the build script:
+install_dir="$2"
 
 # Get the path to a log file as the third argument to the build script:
 log_file="$3"
@@ -57,6 +57,9 @@ heartbeat_pid=""
 
 # Get the current working directory:
 working_dir=$(pwd)
+
+# Get the Node.js major version:
+node_major_version=$(node -e 'console.log( require( "process" ).version.substring( 1 ).split( "." )[ 0 ] );' )
 
 
 # FUNCTIONS #
@@ -139,17 +142,6 @@ install_test() {
 	fi
 	echo 'Successfully ran test script.' >&2
 
-	echo 'Creating test script (import global namespace)...' >&2
-	echo 'import stdlib from "@stdlib/stdlib"; console.log( stdlib.math.base.special.sin( 3.14 ) );' > "${install_dir}/script.js"
-
-	echo 'Running test script...' >&2
-	node "${install_dir}/script.js"
-	if [[ "$?" -ne 0 ]]; then
-		echo "Encountered an error when running test script." >&2
-		return 1
-	fi
-	echo 'Successfully ran test script.' >&2
-
 	echo 'Creating test script (require individual package)...' >&2
 	echo 'var sin = require( "@stdlib/math/base/special/sin" ); console.log( sin( 3.14 ) );' > "${install_dir}/script.js"
 
@@ -161,16 +153,30 @@ install_test() {
 	fi
 	echo 'Successfully ran test script.' >&2
 
-	echo 'Creating test script (import individual package)...' >&2
-	echo 'import sin from "@stdlib/math/base/special/sin"; console.log( sin( 3.14 ) );' > "${install_dir}/script.js"
+	# Test `import` syntax on more recent Node.js versions which support ES modules without having to set flags to enable experimental support...
+	if [[ "${node_major_version}" -gt 13 ]]; then
+		echo 'Creating test script (import global namespace)...' >&2
+		echo 'import stdlib from "@stdlib/stdlib"; console.log( stdlib.math.base.special.sin( 3.14 ) );' > "${install_dir}/script.mjs"
 
-	echo 'Running test script...' >&2
-	node "${install_dir}/script.js"
-	if [[ "$?" -ne 0 ]]; then
-		echo "Encountered an error when running test script." >&2
-		return 1
+		echo 'Running test script...' >&2
+		node "${install_dir}/script.mjs"
+		if [[ "$?" -ne 0 ]]; then
+			echo "Encountered an error when running test script." >&2
+			return 1
+		fi
+		echo 'Successfully ran test script.' >&2
+
+		echo 'Creating test script (import individual package)...' >&2
+		echo 'import sin from "@stdlib/math/base/special/sin"; console.log( sin( 3.14 ) );' > "${install_dir}/script.mjs"
+
+		echo 'Running test script...' >&2
+		node "${install_dir}/script.mjs"
+		if [[ "$?" -ne 0 ]]; then
+			echo "Encountered an error when running test script." >&2
+			return 1
+		fi
+		echo 'Successfully ran test script.' >&2
 	fi
-	echo 'Successfully ran test script.' >&2
 	return 0
 }
 
