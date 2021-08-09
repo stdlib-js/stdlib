@@ -172,7 +172,7 @@ npm_install() {
 
 # Installs a package via `npm` from GitHub.
 npm_install_from_github() {
-	init
+	instal_init
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when performing pre-install initialization tasks." >&2
 		return 1
