@@ -338,7 +338,7 @@ test_npm_install() {
 		echo 'Retry 1 of 1...' >&2
 		sleep 15s
 		echo 'Testing npm install (global via GitHub)...' >&2
-		npm_install_global >> "$1" 2>&1
+		npm_install_global_github >> "$1" 2>&1
 		if [[ "$?" -ne 0 ]]; then
 			echo 'Installation (global via GitHub) failed.' >&2
 			return 1
