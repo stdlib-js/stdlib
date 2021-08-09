@@ -234,7 +234,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/test_install" "${{ env.INSTALL_DIR }}" "${{ matrix.PACKAGE_MANAGER }}" "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/test_install" "${{ matrix.PACKAGE_MANAGER }}" "${{ env.INSTALL_DIR }}" "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
