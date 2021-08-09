@@ -59,7 +59,7 @@ heartbeat_pid=""
 working_dir=$(pwd)
 
 # Get the Node.js major version:
-node_major_version=$(node -e 'console.log( require( "process" ).version.substring( 1 ).split( "." )[ 0 ] );' | tr -d '\n' )
+node_major_version=$(node -e 'var proc = ( typeof process !== "undefined" ) ? process : require( "process" ); console.log( proc.version.substring( 1 ).split( "." )[ 0 ] );' | tr -d '\n')
 
 
 # FUNCTIONS #
