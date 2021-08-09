@@ -166,16 +166,17 @@ install_test() {
 		fi
 		echo 'Successfully ran test script.' >&2
 
-		echo 'Creating test script (import individual package)...' >&2
-		echo 'import sin from "@stdlib/math/base/special/sin"; console.log( sin( 3.14 ) );' > "${install_dir}/script.mjs"
+		# FIMXE: uncomment once we've figured out our package.json `exports` strategy...
+		# echo 'Creating test script (import individual package)...' >&2
+		# echo 'import sin from "@stdlib/math/base/special/sin"; console.log( sin( 3.14 ) );' > "${install_dir}/script.mjs"
 
-		echo 'Running test script...' >&2
-		node "${install_dir}/script.mjs"
-		if [[ "$?" -ne 0 ]]; then
-			echo "Encountered an error when running test script." >&2
-			return 1
-		fi
-		echo 'Successfully ran test script.' >&2
+		# echo 'Running test script...' >&2
+		# node "${install_dir}/script.mjs"
+		# if [[ "$?" -ne 0 ]]; then
+		# 	echo "Encountered an error when running test script." >&2
+		# 	return 1
+		# fi
+		# echo 'Successfully ran test script.' >&2
 	fi
 	return 0
 }
