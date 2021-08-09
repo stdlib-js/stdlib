@@ -254,7 +254,7 @@ npm_install_global() {
 		echo "Encountered an error when testing installation." >&2
 		return 1
 	fi
-	npm uninstall -g "${pkg_name}@${pkg_version}"
+	npm uninstall -g "${pkg_name}"
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when performing post-install cleanup tasks." >&2
 		return 1
@@ -274,7 +274,7 @@ npm_install_global_github() {
 		echo "Encountered an error when testing installation." >&2
 		return 1
 	fi
-	npm uninstall -g "${pkg_name}@${pkg_version}"
+	npm uninstall -g "${pkg_name}"
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when performing post-install cleanup tasks." >&2
 		return 1
