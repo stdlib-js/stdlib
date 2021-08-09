@@ -20,4 +20,10 @@
 
 var stdlib = require( './../lib' );
 
-console.log( stdlib );
+// List sub-namespaces:
+var keys = stdlib.utils.objectKeys( stdlib );
+console.log( keys );
+
+// Compute the value of sine:
+var y = stdlib.math.base.special.sin( 3.14 );
+console.log( y );
