@@ -35,6 +35,20 @@ indent_style = tab
 [*.js.txt]
 indent_style = tab
 
+# Set properties for JavaScript ES module files:
+[*.mjs]
+indent_style = tab
+
+[*.mjs.txt]
+indent_style = tab
+
+# Set properties for JavaScript CommonJS files:
+[*.cjs]
+indent_style = tab
+
+[*.cjs.txt]
+indent_style = tab
+
 # Set properties for TypeScript files:
 [*.ts]
 indent_style = tab
