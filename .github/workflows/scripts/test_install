@@ -28,7 +28,7 @@ set -o pipefail
 
 # VARIABLES #
 
-# Get the path to the installation directory as the first argument to the build script:
+# Get the path to the local installation directory as the first argument to the build script:
 install_dir="$1"
 
 # Get the name of the desired package manager as the second argument to the build script:
@@ -107,8 +107,8 @@ print_success() {
 	echo 'Success!' >&2
 }
 
-# Performs initialization tasks.
-init() {
+# Performs installation initialization tasks.
+install_init() {
 	echo 'Creating installation directory...' >&2
 	mkdir -p "${install_dir}" || return 1
 
@@ -116,8 +116,25 @@ init() {
 	cd "${install_dir}" || return 1
 
 	echo 'Creating package.json...' >&2
-	echo '{"name":"test-install","version":"0.0.0","private":true}' > "${install_dir}"/package.json
+	echo '{"name":"test-install","version":"0.0.0","private":true}' > "${install_dir}/package.json"
 
+	return 0
+}
+
+# Tests that an installation works as expected.
+install_test() {
+	echo 'Testing installation...' >&2
+
+	echo 'Creating test script...' >&2
+	echo 'var stdlib = require( "@stdlib/stdlib" ); console.log( stdlib.math.base.special.sin( 3.14 ) );' > "${install_dir}/script.js"
+
+	echo 'Running test script...' >&2
+	node "${install_dir}/script.js"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when running test script." >&2
+		return 1
+	fi
+	echo 'Successfully ran test script.' >&2
 	return 0
 }
 
@@ -130,7 +147,7 @@ install_clean() {
 
 # Installs a package via `npm`.
 npm_install() {
-	init
+	install_init
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when performing pre-install initialization tasks." >&2
 		return 1
@@ -138,6 +155,11 @@ npm_install() {
 	npm install "${pkg_name}@${pkg_version}"
 	if [[ "$?" -ne 0 ]]; then
 		echo "Installation of package ${pkg_name}@${pkg_version} via npm failed." >&2
+		return 1
+	fi
+	install_test
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >&2
 		return 1
 	fi
 	install_clean
@@ -158,6 +180,11 @@ npm_install_from_github() {
 	npm install "${pkg_github_url}#${pkg_github_tag}"
 	if [[ "$?" -ne 0 ]]; then
 		echo "Installation of package ${pkg_github_url}#${pkg_github_tag} via npm failed." >&2
+		return 1
+	fi
+	install_test
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >&2
 		return 1
 	fi
 	install_clean
