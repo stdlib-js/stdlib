@@ -60,7 +60,7 @@ jobs:
       LINKER: 'g++'
       GITHUB: 'true'
       DISPLAY: ':99'
-      INSTALL_DIR: "${{ github.workspace }}/stdlib"
+      INSTALL_DIR: "${{ github.workspace }}/test-install"
       LOG_DIR: "${{ github.workspace }}/tmp/var/log"
       LOG_FILE_BUILD_TASK: "${{ github.workspace }}/tmp/var/log/${{ matrix.BUILD_TASK }}.log"
       LOG_NUM_LINES: 5000
@@ -124,6 +124,20 @@ jobs:
 
           - NODE_VERSION: '0.10'
             NPM_VERSION: '>2.7.0 <4.0.0'
+
+        # Exclude certain matrix combinations:
+        exclude:
+          - NODE_VERSION: '0.12'
+            PACKAGE_MANAGER: 'pnpm'
+
+          - NODE_VERSION: '0.12'
+            PACKAGE_MANAGER: 'yarn'
+
+          - NODE_VERSION: '0.10'
+            PACKAGE_MANAGER: 'pnpm'
+
+          - NODE_VERSION: '0.10'
+            PACKAGE_MANAGER: 'yarn'
 
     # Set defaults:
     defaults:
