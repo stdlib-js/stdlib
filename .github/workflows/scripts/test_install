@@ -177,7 +177,7 @@ install_test() {
 # Performs local installation cleanup tasks.
 install_clean() {
 	echo 'Returning to original directory...' >&2
-	cwd "${working_dir}" || return 1
+	cd "${working_dir}" || return 1
 
 	echo 'Removing installation directory...' >&2
 	rm -rf "${install_dir}" || return 1
