@@ -262,6 +262,26 @@ npm_install_global() {
 	return 0
 }
 
+# Installs a package globally via `npm` from GitHub.
+npm_install_global_github() {
+	npm install "${pkg_github_url}#${pkg_github_tag}"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} as a global package via npm." >&2
+		return 1
+	fi
+	stdlib --help
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when testing installation." >&2
+		return 1
+	fi
+	npm uninstall -g "${pkg_name}@${pkg_version}"
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when performing post-install cleanup tasks." >&2
+		return 1
+	fi
+	return 0
+}
+
 # Tests whether the project successfully installs via `npm`.
 #
 # $1 - log file
@@ -310,6 +330,21 @@ test_npm_install() {
 		fi
 	fi
 	echo 'Successfully installed (global).' >&2
+
+	echo 'Testing npm install (global via GitHub)...' >&2
+	npm_install_global_github >> "$1" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Installation (global via GitHub) failed.' >&2
+		echo 'Retry 1 of 1...' >&2
+		sleep 15s
+		echo 'Testing npm install (global via GitHub)...' >&2
+		npm_install_global >> "$1" 2>&1
+		if [[ "$?" -ne 0 ]]; then
+			echo 'Installation (global via GitHub) failed.' >&2
+			return 1
+		fi
+	fi
+	echo 'Successfully installed (global via GitHub).' >&2
 
 	return 0
 }
