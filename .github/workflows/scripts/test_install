@@ -270,6 +270,11 @@ npm_install_global() {
 		echo "Encountered an error when installing ${pkg_name}@${pkg_version} as a global package via npm." >> "${log_file}" 2>&1
 		return 1
 	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
 	echo "Successfully installed ${pkg_name}@${pkg_version}." >> "${log_file}" 2>&1
 
 	echo 'Testing global installation...' >> "${log_file}" 2>&1
@@ -296,6 +301,11 @@ npm_install_global_github() {
 	npm install "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} as a global package via npm." >> "${log_file}" 2>&1
+		return 1
+	fi
+	npm list -g --depth=0 >> "${log_file}" 2>&1
+	if [[ "$?" -ne 0 ]]; then
+		echo "Encountered an error when attempting to list globally installed packages via npm." >> "${log_file}" 2>&1
 		return 1
 	fi
 	echo "Successfully installed ${pkg_github_url}#${pkg_github_tag}." >> "${log_file}" 2>&1
