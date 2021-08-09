@@ -41,7 +41,7 @@ log_file="$3"
 pkg_name='@stdlib/stdlib'
 
 # Define the package repository:
-pkg_github_url='https://github.com/stdlib-js/stdlib'
+pkg_github_url='git+https://git@github.com/stdlib-js/stdlib.git'
 
 # Define the repository tag/commit/branch to install:
 pkg_github_tag='develop'
