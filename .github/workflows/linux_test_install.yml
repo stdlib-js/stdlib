@@ -44,7 +44,7 @@ jobs:
   test_install:
 
     # Define a display name:
-    name: "Node.js v${{ matrix.NODE_VERSION }}"
+    name: "Node.js v${{ matrix.NODE_VERSION }} - ${{ matrix.PACKAGE_MANAGER }}"
 
     # Define the type of virtual host machine:
     runs-on: ${{ matrix.OS }}
