@@ -42,7 +42,7 @@ if [[ -x "${JULIA}" ]] && "${JULIA}" --version >/dev/null; then
 	echo 'Julia is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please download Julia version >= 0.5 (http://julialang.org/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please download Julia version >= 1.0 (http://julialang.org/). Once installed, run the command again.' >&2
 	exit 1
 fi
 
