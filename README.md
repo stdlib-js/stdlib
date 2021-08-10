@@ -361,7 +361,7 @@ To create a custom bundle based on project needs,
     <!-- run-disable -->
 
     ```bash
-    $ node ./bin/cli bundle-pkg-list -- -h
+    $ NODE_PATH=./lib/node_modules node ./bin/cli bundle-pkg-list -- -h
     ```
 
 4.  modify and run the above command with the list of packages to bundle
@@ -369,7 +369,7 @@ To create a custom bundle based on project needs,
     <!-- run-disable -->
 
     ```bash
-    $ node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
+    $ NODE_PATH=./lib/node_modules node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
     ```
 
 Alternatively, install stdlib as a command-line utility (as described above) and run the following command
