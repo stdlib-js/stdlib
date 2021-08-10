@@ -21,33 +21,30 @@
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 CONTRIBUTORS
+FAQ.md
 TODO.md
 ROADMAP.md
-.postinstall.json
 
 # Directories #
 ###############
 .circleci/
 .github/
-**/benchmark/
-**/build/
-**/examples/
+benchmark/
+build/
+examples/
 reports/
 support/
-**/tmp/
+tmp/
 workshops/
 
 # Ignore test directories, except for testing dependency installation:
-**/test/
+test/
 !/deps/test/
-
-# Ignore top-level tools directory, except for scripts:
-/tools/*
-!/tools/scripts/
 
 # Only top-level directories:
 /etc/
 /docs/
+/tools/
 
 # Compiled source #
 ###################
@@ -90,9 +87,6 @@ workshops/
 *.tar
 *.zip
 
-# Make an exception for compressed distributable files:
-!dist/*.gz
-
 # Logs and databases #
 ######################
 *.log
@@ -118,9 +112,7 @@ Desktop.ini
 # Node.js #
 ###########
 .npmignore
-
-# Only top-level node_modules:
-/node_modules/
+node_modules/
 
 # TypeScript #
 ##############
@@ -213,17 +205,19 @@ jsconfig.json
 .eslintrc*
 .eslintignore
 
+.remarkignore
+
 .pylintrc
 .pycodestyle
 .pydocstyle
 
-.travis.yml
-circle.yml
 appveyor.yml
 azure-pipelines.yml
-
-.editorconfig
+circle.yml
 .codeclimate.yml
 .codecov.yml
+.travis.yml
+
+.editorconfig
 
 .rtlintrc
