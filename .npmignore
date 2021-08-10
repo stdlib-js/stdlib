@@ -29,16 +29,17 @@ ROADMAP.md
 ###############
 .circleci/
 .github/
-benchmark/
-build/
-examples/
+**/benchmark/
+**/build/
+**/dist/
+**/examples/
 reports/
 support/
-tmp/
+**/tmp/
 workshops/
 
 # Ignore test directories, except for testing dependency installation:
-test/
+**/test/
 !/deps/test/
 
 # Only top-level directories:
@@ -112,7 +113,7 @@ Desktop.ini
 # Node.js #
 ###########
 .npmignore
-node_modules/
+**/node_modules/
 
 # TypeScript #
 ##############
