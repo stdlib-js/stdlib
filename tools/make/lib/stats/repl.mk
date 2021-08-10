@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the path to the script for generating REPL language stats:
-REPL_LANG_STATS ?= $(TOOLS_DIR)/scripts/repl_lang_stats
+REPL_LANG_STATS ?= $(TOOLS_PKGS_DIR)/scripts/repl_lang_stats
 
 
 # TARGETS #
