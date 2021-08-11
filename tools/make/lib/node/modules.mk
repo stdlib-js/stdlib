@@ -16,6 +16,12 @@
 # limitations under the License.
 #/
 
+# VARIABLES #
+
+# Define a path to a utility for printing the list of node module dependencies to install:
+print_npm_install_deps := $(TOOLS_PKGS_DIR)/scripts/print_npm_install_deps
+
+
 # RULES #
 
 #/
@@ -23,13 +29,13 @@
 #
 # ## Notes
 #
-# -   Packages will be installed in a local `node_modules` directory relative to the project's `package.json` file.
+# -   Packages are installed in a local `node_modules` directory relative to the project's `package.json` file.
 #
 # @example
 # make install-node-modules
 #/
 install-node-modules: $(ROOT_PACKAGE_JSON)
-	$(QUIET) $(NPM) install
+	$(QUIET) $(NODE) $(print_npm_install_deps) | xargs $(NPM) install --no-save --dry-run
 
 .PHONY: install-node-modules
 
