@@ -162,7 +162,7 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
         -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
-            Concerning bundling, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
+            When bundling, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
 
 -   I am building a [Node.js][node-js] **server application**.
 
