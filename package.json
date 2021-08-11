@@ -31,8 +31,6 @@
     "test": "./test"
   },
   "scripts": {
-    "postinstall": "node ./tools/scripts/postinstall",
-    "preuninstall": "node ./tools/scripts/preuninstall",
     "notes": "make notes",
     "lint": "make lint",
     "repl": "make repl",
