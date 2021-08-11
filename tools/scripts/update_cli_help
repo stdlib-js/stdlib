@@ -37,13 +37,17 @@ var objectKeys = require( '@stdlib/utils/keys' );
 var rpad = require( '@stdlib/string/right-pad' );
 var capitalize = require( '@stdlib/string/capitalize' );
 var writeFile = require( '@stdlib/fs/write-file' ).sync;
-var CLI_COMMANDS = require( './../../bin/cli_commands.json' ); // WARNING: fragile as this may no longer be valid if either this script or the required file moves
+var readJSON = require( '@stdlib/fs/read-json' ).sync;
+var rootDir = require( '@stdlib/_tools/utils/root-dir' );
 
 
 // VARIABLES //
 
 // Logger for debugging:
 var debug = logger( 'update-cli-help' );
+
+// List of CLI commands:
+var CLI_COMMANDS = readJSON( resolve( rootDir(), 'bin/cli_commands.json' ) );
 
 // Minimal usage text template:
 var USAGE_TEXT = [
