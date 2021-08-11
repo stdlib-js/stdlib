@@ -35,7 +35,7 @@ print_npm_install_deps := $(TOOLS_PKGS_DIR)/scripts/print_npm_install_deps
 # make install-node-modules
 #/
 install-node-modules: $(ROOT_PACKAGE_JSON)
-	$(QUIET) $(NODE) $(print_npm_install_deps) | xargs $(NPM) install --no-save --dry-run
+	$(QUIET) $(NODE) $(print_npm_install_deps) | xargs $(NPM) install --no-save
 
 .PHONY: install-node-modules
 
