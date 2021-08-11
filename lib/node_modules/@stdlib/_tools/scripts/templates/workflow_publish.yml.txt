@@ -20,7 +20,9 @@
 name: Publish Package
 
 # Workflow triggers:
-on: push
+on:
+  push:
+    tags: v[0-9]+.[0-9]+.[0-9]+
 
 # Workflow jobs:
 jobs:
@@ -33,11 +35,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 15
-      - name: Increment version
-        run: |
-          git config --local user.email "noreply@stdlib.io"
-          git config --local user.name "stdlib-bot"
-          npm version patch
       - name: Replace all GitHub links to individual packages with npm links
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 sed -Ei 's/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
@@ -49,10 +46,6 @@ jobs:
       - name: Discard any uncommitted changes
         run: |
           git reset --hard
-      - name: Push changes
-        run: |
-          git push origin main
-          git push --tags
       - uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
