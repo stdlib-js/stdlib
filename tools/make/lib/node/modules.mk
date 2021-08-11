@@ -16,34 +16,48 @@
 # limitations under the License.
 #/
 
-# TARGETS #
+# RULES #
 
-# Install node module dependencies.
+#/
+# Installs node module dependencies.
 #
-# This target installs package dependencies by executing [`npm install`][1]. Packages will be installed in a local `node_modules` directory relative to the project's `package.json` file.
+# ## Notes
 #
-# [1]: https://docs.npmjs.com/cli/install
-
+# -   Packages will be installed in a local `node_modules` directory relative to the project's `package.json` file.
+#
+# @example
+# make install-node-modules
+#/
 install-node-modules: $(ROOT_PACKAGE_JSON)
 	$(QUIET) $(NPM) install
 
 .PHONY: install-node-modules
 
-
-# De-duplicate node module dependencies.
+#/
+# De-duplicates node module dependencies.
 #
-# This target searches the local package tree and attempts to simplify the overall structure by moving dependencies further up the tree, where they can be more effectively shared by multiple dependent packages.
-
+# ## Notes
+#
+# -   This recipe searches the local package tree and attempts to simplify the overall structure by moving dependencies further up the tree, where they can be more effectively shared by multiple dependent packages.
+#
+# @example
+# make dedupe-node-modules
+#/
 dedupe-node-modules: $(NODE_MODULES)
 	$(QUIET) $(NPM) dedupe
 
 .PHONY: dedupe-node-modules
 
-
-# Remove node module dependencies.
+#/
+# Removes node module dependencies.
 #
-# This target cleans the `node_modules` directory by removing it entirely.
-
+# ## Notes
+#
+# -   The `node_modules` directory is removed entirely.
+#
+# @example
+# make clean-node-modules
+#/
 clean-node-modules:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(NODE_MODULES)
 
