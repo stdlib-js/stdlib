@@ -1,0 +1,105 @@
+
+{{alias}}( path[, options], predicate, clbk )
+    Asynchronously resolves a path according to a predicate function by walking
+    parent directories.
+
+    When invoked, the predicate function is provided two arguments:
+
+    - `path`: a resolved path
+    - `next`: a callback to be invoked after processing a resolved path
+
+    The `next` callback takes two arguments:
+
+    - `error`: error argument
+    - `result`: test result
+
+    If a provided predicate function calls the `next` callback with a truthy
+    `error` argument, the function suspends execution and immediately calls the
+    `done` callback for subsequent `error` handling.
+
+    The function immediately returns upon encountering a non-falsy `result`
+    value and calls the `done` callback with `null` as the first argument and
+    the resolved path as the second argument.
+
+    If unable to resolve a path, the function returns `null` as the path result.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    path: string
+        Path to resolve.
+
+    options: Object (optional)
+        Options.
+
+    options.dir: string (optional)
+        Base directory from which to search. Default: current working directory.
+
+    predicate: Function
+        The test function to invoke for each resolved path.
+
+    clbk: Function
+        Callback to invoke after resolving a path.
+
+    Examples
+    --------
+    > function predicate( path, next ) {
+    ...     setTimeout( onTimeout, path );
+    ...     function onTimeout() {
+    ...         console.log( path );
+    ...         next( null, false );
+    ...     }
+    ... };
+    > function onPath( error, path ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     } else {
+    ...         console.log( path );
+    ...     }
+    ... };
+    > {{alias}}( 'package.json', predicate, onPath );
+
+
+{{alias}}.sync( path[, options], predicate )
+    Synchronously resolves a path according to a predicate function by walking
+    parent directories.
+
+    The predicate function is provided one argument:
+
+    - `path`: a resolved path
+
+    The function immediately returns upon encountering a truthy return value.
+
+    If unable to resolve a path, the function returns `null` as the path result.
+
+    Parameters
+    ----------
+    path: string
+        Path to resolve.
+
+    options: Object (optional)
+        Options.
+
+    options.dir: string (optional)
+        Base directory from which to search. Default: current working directory.
+
+    predicate: Function
+        The test function to invoke for each resolved path.
+
+    Returns
+    -------
+    out: string|null
+        Resolved path.
+
+    Examples
+    --------
+    > function predicate() { return false; };
+    > var out = {{alias}}.sync( 'package.json', predicate );
+
+    See Also
+    --------
+
