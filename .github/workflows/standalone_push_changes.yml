@@ -74,7 +74,7 @@ jobs:
 
       # Push changes to the packages' repositories:
       - name: 'Push changes to packages'
-        if: steps.changed-packages.outputs.packages !== '[]'
+        if: ${{ steps.changed-packages.outputs.packages !== '[]' }}
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
