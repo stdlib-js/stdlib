@@ -26,8 +26,8 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Define a job for publishing standalone packages...
-  publish:
+  # Define a job for pushing changes to standalone packages...
+  push:
 
     # Define a display name:
     name: "Push Changes to Standalone Packages"
