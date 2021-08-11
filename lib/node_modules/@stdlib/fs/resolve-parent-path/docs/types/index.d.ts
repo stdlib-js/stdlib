@@ -93,7 +93,7 @@ interface ResolveParentPath {
 	* @returns resolved path or null
 	*
 	* @example
-	* var path = resolveParentPath.sync( 'package.json', { 'dir': __dirname });
+	* var path = resolveParentPath.sync( 'package.json', { 'dir': __dirname } );
 	*/
 	sync( path: string, options?: Options ): string | null;
 }
