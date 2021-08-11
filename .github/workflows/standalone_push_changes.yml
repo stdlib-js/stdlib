@@ -17,33 +17,20 @@
 #/
 
 # Workflow name:
-name: standalone_publish
+name: standalone_push_changes
 
 # Workflow triggers:
 on:
   push:
-    tags: v[0-9]+.[0-9]+.[0-9]+
-
-  # Allow the workflow to be manually run:
-  workflow_dispatch:
-
-# Workflow concurrency group:
-concurrency:
-
-  # Specify a group name:
-  group: ${{ github.workflow }}
-
-  # Specify whether to cancel any currently running workflow in the same concurrency group:
-  cancel-in-progress: false
 
 # Workflow jobs:
 jobs:
 
-  # Define a job for publishing standalone packages...
-  publish:
+  # Define a job for pushing changes to standalone packages...
+  push:
 
     # Define a display name:
-    name: "Publish"
+    name: "Push Changes to Standalone Packages"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -58,8 +45,8 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Limit clone depth to the most recent 100 commits:
+          fetch-depth: 100
 
           # Specify whether to download Git-LFS files:
           lfs: false
@@ -78,18 +65,18 @@ jobs:
           make install-node-modules
         timeout-minutes: 15
 
-      # Publish standalone packages:
-      - name: 'Publish standalone packages'
+      # Retrieve list of changed stdlib packages in a push or pull request:
+      - name: 'Retrieve list of changed stdlib packages'
+        id: 'changed-packages'
+        uses: stdlib-js/changed-packages-action@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Push changes to the packages' repositories:
+      - name: 'Push changes to packages'
+        if: ${{ steps.changed-packages.outputs.packages != '[]' }}
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch
-
-      # Archive list of to be published packages:
-      - name: 'Archive list of to be published packages'
-        uses: actions/upload-artifact@v2
-        with:
-          name: ordered-pkg-list
-          path: |
-            /tmp/stdlib_ordered_pkg_list.json
-            /tmp/stdlib_published_pkg_list.json
+          echo "Pushing changes to the following repositories: ${{ steps.changed-packages.outputs.packages }}"
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ join( fromJSON( steps.changed-packages.outputs.packages ), ' ' ) }}
