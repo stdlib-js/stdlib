@@ -372,13 +372,18 @@ To create a custom bundle based on project needs,
     $ NODE_PATH=./lib/node_modules node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
     ```
 
+<!-- FIXME: the following is not possible atm as we don't publish `@stdlib/_tools` which is needed in order for the command-line utility to work!
+
 Alternatively, install stdlib as a command-line utility (as described above) and run the following command
+-->
 
 <!-- run-disable -->
 
+<!--
 ```bash
 $ stdlib bundle-pkg-list -- <pkg> <pkg> <pkg> ...
 ```
+-->
 
 Upon generating a bundle, the bundle can be loaded via a `<script>` tag as described above for pre-built distributable UMD bundles.
 
