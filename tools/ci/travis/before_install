@@ -34,7 +34,7 @@ fi
 dir=$(dirname "$0")
 
 # Define the path to an executable for determining npm version compatibility:
-node_npm_version="${dir}/../../scripts/node_npm_compatibility"
+node_npm_version="${dir}/node_npm_compatibility"
 
 # Determine a compatible npm version range:
 version=$("${cmd}" "${node_npm_version}")
