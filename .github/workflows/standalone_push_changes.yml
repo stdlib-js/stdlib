@@ -62,7 +62,7 @@ jobs:
       # Install dependencies:
       - name: 'Install dependencies'
         run: |
-          npm install
+          make install-node-modules
         timeout-minutes: 15
 
       # Retrieve list of changed stdlib packages in a push or pull request:
@@ -74,6 +74,7 @@ jobs:
 
       # Push changes to the packages' repositories:
       - name: 'Push changes to packages'
+        if: steps.changed-packages.outputs.packages !== '[]'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |

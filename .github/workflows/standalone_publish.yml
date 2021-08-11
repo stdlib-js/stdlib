@@ -75,7 +75,7 @@ jobs:
       # Install dependencies:
       - name: 'Install dependencies'
         run: |
-          npm install
+          make install-node-modules
         timeout-minutes: 15
 
       # Publish standalone packages:
@@ -83,7 +83,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch
 
       # Archive list of to be published packages:
       - name: 'Archive list of to be published packages'
