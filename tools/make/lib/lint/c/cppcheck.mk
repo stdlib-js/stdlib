@@ -78,6 +78,7 @@ endif
 # @private
 #/
 $(cppcheck_include_paths):
+	$(QUIET) $(MKDIR_RECURSIVE) $(TMP_DIR)
 	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-includes > $(cppcheck_include_paths)
 
 #/
