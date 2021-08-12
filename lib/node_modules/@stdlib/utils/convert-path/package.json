@@ -18,6 +18,7 @@
   },
   "main": "./lib",
   "directories": {
+    "benchmark": "./benchmark",
     "bin": "./bin",
     "doc": "./docs",
     "example": "./examples",

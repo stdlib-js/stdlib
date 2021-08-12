@@ -18,6 +18,7 @@
     "process": "process/"
   },
   "directories": {
+    "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"

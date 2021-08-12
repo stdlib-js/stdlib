@@ -16,6 +16,7 @@
   "main": "./lib",
   "browser": "./lib/browser.js",
   "directories": {
+    "doc": "./docs",
     "include": "./include",
     "lib": "./lib",
     "src": "./src",
