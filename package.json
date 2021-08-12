@@ -247,6 +247,18 @@
     "std",
     "library",
     "lib",
-    "libstd"
+    "libstd",
+    "numerical",
+    "numeric",
+    "mathematical",
+    "mathematics",
+    "math",
+    "scientific",
+    "machine learning",
+    "machine-learning",
+    "ml",
+    "ndarray",
+    "numpy",
+    "scipy"
   ]
 }
