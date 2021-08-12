@@ -44,24 +44,34 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 ### Commands
 
-#### dist-browser-bundles
+#### dist-bundles-publish
 
-Generates distributable browser bundles.
+Publishes distributable browser bundles to the `npm` package registry.
 
 <!-- run-disable -->
 
 ```bash
-$ make dist-browser-bundles
+$ make dist-bundles-publish
 ```
 
-#### update-dist-readme-browser-bundle-stats
+#### dist-bundles-publish-dry-run
 
-Updates a README file documenting distributable browser bundles to include the most recent bundle statistics.
+Performs a dry run of publishing packages containing distributable bundles to the `npm` package registry.
 
 <!-- run-disable -->
 
 ```bash
-$ make update-dist-readme-browser-bundle-stats
+$ make dist-bundles-publish-dry-run
+```
+
+#### clean-dist-bundles
+
+Removes distributable bundle build artifacts.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-dist-bundles
 ```
 
 </section>
