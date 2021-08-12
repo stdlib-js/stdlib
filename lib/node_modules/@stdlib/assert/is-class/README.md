@@ -1,0 +1,102 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2021 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# isClass
+
+> Test if a value is a [class][mdn-class].
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var isClass = require( '@stdlib/assert/is-class' );
+```
+
+#### isClass( value )
+
+Tests if a value is a [`class`][mdn-class].
+
+<!-- eslint-disable max-classes-per-file, no-restricted-syntax  -->
+
+```javascript
+var bool = isClass( class Animal {
+    speak() {
+        return this;
+    }
+} );
+// returns true
+
+var Rectangle = class {
+    constructor( height, width ) {
+        this.height = height;
+        this.width = width;
+    }
+};
+
+bool = isClass( Rectangle );
+// returns true
+
+bool = isClass( null );
+// returns false
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+<!-- eslint-disable no-restricted-syntax, no-empty-function -->
+
+```javascript
+var isClass = require( '@stdlib/assert/is-class' );
+
+var bool = isClass( class Person {} );
+// returns true
+
+bool = isClass( function Person() {} );
+// returns false
+
+bool = isClass( [] );
+// returns false
+
+bool = isClass( {} );
+// returns false
+
+bool = isClass( null );
+// returns false
+```
+
+</section>
+
+<!-- /.examples -->
+
+<section class="links">
+
+[mdn-class]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+</section>
+
+<!-- /.links -->
