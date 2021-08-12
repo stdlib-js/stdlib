@@ -29,101 +29,92 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 # Set properties for JavaScript files:
-[*.js]
-indent_style = tab
-
-[*.js.txt]
+[*.{js,js.txt}]
 indent_style = tab
 
 # Set properties for JavaScript ES module files:
-[*.mjs]
-indent_style = tab
-
-[*.mjs.txt]
+[*.{mjs,mjs.txt}]
 indent_style = tab
 
 # Set properties for JavaScript CommonJS files:
-[*.cjs]
+[*.{cjs,cjs.txt}]
 indent_style = tab
 
-[*.cjs.txt]
-indent_style = tab
+# Set properties for JSON files:
+[*.{json,json.txt}]
+indent_style = space
+indent_size = 2
 
 # Set properties for TypeScript files:
 [*.ts]
 indent_style = tab
 
 # Set properties for Python files:
-[*.py]
+[*.{py,py.txt}]
 indent_style = space
 indent_size = 4
 
 # Set properties for Julia files:
-[*.jl]
+[*.{jl,jl.txt}]
 indent_style = tab
 
 # Set properties for R files:
-[*.R]
+[*.{R,R.txt}]
 indent_style = tab
 
 # Set properties for C files:
-[*.c]
+[*.{c,c.txt}]
 indent_style = tab
 
 # Set properties for C header files:
-[*.h]
+[*.{h,h.txt}]
 indent_style = tab
 
 # Set properties for C++ files:
-[*.cpp]
+[*.{cpp,cpp.txt}]
 indent_style = tab
 
 # Set properties for C++ header files:
-[*.hpp]
+[*.{hpp,hpp.txt}]
 indent_style = tab
 
 # Set properties for Fortran files:
-[*.f]
+[*.{f,f.txt}]
 indent_style = space
 indent_size = 2
 insert_final_newline = false
 
 # Set properties for shell files:
-[*.sh]
+[*.{sh,sh.txt}]
 indent_style = tab
 
 # Set properties for AWK files:
-[*.awk]
+[*.{awk,awk.txt}]
 indent_style = tab
 
 # Set properties for HTML files:
-[*.html]
+[*.{html,html.txt}]
 indent_style = tab
 tab_width = 2
 
 # Set properties for XML files:
-[*.xml]
+[*.{xml,xml.txt}]
 indent_style = tab
 tab_width = 2
 
 # Set properties for CSS files:
-[*.css]
+[*.{css,css.txt}]
 indent_style = tab
 
 # Set properties for Makefiles:
 [Makefile]
 indent_style = tab
 
-[*.mk]
+[*.{mk,mk.txt}]
 indent_style = tab
 
 # Set properties for Markdown files:
-[*.md]
-indent_style = space
-indent_size = 4
-trim_trailing_whitespace = false
-
-[*.md.txt]
+[*.{md,md.txt}]
 indent_style = space
 indent_size = 4
 trim_trailing_whitespace = false
@@ -139,7 +130,7 @@ indent_style = space
 indent_size = 4
 
 # Set properties for `package.json` files:
-[package.json]
+[package.{json,json.txt}]
 indent_style = space
 indent_size = 2
 
@@ -164,15 +155,15 @@ indent_style = space
 indent_size = 2
 
 # Set properties for LaTeX files:
-[*.tex]
+[*.{tex,tex.txt}]
 indent_style = tab
 
 # Set properties for LaTeX Bibliography files:
-[*.bib]
+[*.{bib,bib.txt}]
 indent_style = tab
 
 # Set properties for YAML files:
-[*.yml]
+[*.{yml,yml.txt}]
 indent_style = space
 indent_size = 2
 

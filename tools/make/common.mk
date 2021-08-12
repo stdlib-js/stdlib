@@ -170,6 +170,9 @@ CAT ?= cat
 # Define the command to copy files:
 CP ?= cp
 
+# Define the command to move files:
+MV ?= mv
+
 # Define the command to recursively sync directories:
 RSYNC_RECURSIVE ?= rsync -r
 
