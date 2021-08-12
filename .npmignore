@@ -38,12 +38,20 @@ Makefile
 **/examples/
 reports/
 support/
+**/test/
 **/tmp/
 workshops/
 
-# Ignore test directories, except for testing dependency installation:
-**/test/
-!/deps/test/
+# Ignore dev dependency directories:
+/deps/*
+/deps/checksums/*
+/deps/test/*
+
+!/deps/checksums/electron_*
+!/deps/checksums/openblas_*
+
+!/deps/test/electron*
+!/deps/test/openblas*
 
 # Only top-level directories:
 /etc/
