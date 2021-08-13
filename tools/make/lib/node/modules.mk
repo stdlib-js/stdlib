@@ -53,21 +53,6 @@ install-node-modules: $(npm_install_deps_file)
 .PHONY: install-node-modules
 
 #/
-# De-duplicates node module dependencies.
-#
-# ## Notes
-#
-# -   This recipe searches the local package tree and attempts to simplify the overall structure by moving dependencies further up the tree, where they can be more effectively shared by multiple dependent packages.
-#
-# @example
-# make dedupe-node-modules
-#/
-dedupe-node-modules: $(NODE_MODULES)
-	$(QUIET) $(NPM) dedupe
-
-.PHONY: dedupe-node-modules
-
-#/
 # Removes node module dependencies.
 #
 # ## Notes
