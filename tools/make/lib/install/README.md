@@ -359,6 +359,26 @@ Removes compiled [Electron][electron] installation tests.
 $ make clean-deps-electron-tests
 ```
 
+* * *
+
+#### ShellCheck
+
+##### install-deps-shellcheck
+
+Installs [ShellCheck][shellcheck].
+
+```bash
+$ make install-deps-shellcheck
+```
+
+##### clean-deps-shellcheck
+
+Removes an installed [ShellCheck][shellcheck] distribution.
+
+```bash
+$ make clean-deps-shellcheck
+```
+
 </section>
 
 <!-- /.usage -->
@@ -388,6 +408,8 @@ $ make clean-deps-electron-tests
 [node-js]: https://nodejs.org/en/
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
+
+[shellcheck]: https://github.com/koalaman/shellcheck
 
 </section>
 
