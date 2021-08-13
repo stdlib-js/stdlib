@@ -313,6 +313,26 @@ $ make clean-deps-cephes-tests
 
 * * *
 
+#### Cppcheck
+
+##### install-deps-cppcheck
+
+Installs [Cppcheck][cppcheck].
+
+```bash
+$ make install-deps-cppcheck
+```
+
+##### clean-deps-cppcheck
+
+Removes an installed [Cppcheck][cppcheck] distribution.
+
+```bash
+$ make clean-deps-cppcheck
+```
+
+* * *
+
 ### Electron
 
 #### install-deps-electron
@@ -360,6 +380,8 @@ $ make clean-deps-electron-tests
 [boost]: http://www.boost.org/
 
 [cephes]: http://www.moshier.net/#Cephes
+
+[cppcheck]: http://cppcheck.sourceforge.net/
 
 [electron]: https://www.electronjs.org/
 

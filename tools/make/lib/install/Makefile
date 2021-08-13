@@ -36,6 +36,7 @@ DEPS_CHECKSUM_BIN ?= $(TOOLS_DIR)/scripts/checksum
 # Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/install/boost.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/cephes.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/cppcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 
@@ -148,7 +149,7 @@ clean-deps-tests: clean-deps-openblas-tests
 # @example
 # make install-deps-dev
 #/
-install-deps-dev: install-deps-boost install-deps-cephes install-deps-shellcheck
+install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck install-deps-shellcheck
 
 .PHONY: install-deps-dev
 
@@ -158,7 +159,7 @@ install-deps-dev: install-deps-boost install-deps-cephes install-deps-shellcheck
 # @example
 # make clean-deps-dev
 #/
-clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-shellcheck
+clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-deps-shellcheck
 
 .PHONY: clean-deps-dev
 
