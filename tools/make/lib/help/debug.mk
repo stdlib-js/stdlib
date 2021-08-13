@@ -16,6 +16,12 @@
 # limitations under the License.
 #/
 
+# VARIABLES #
+
+# Define the path to an executable for displaying dependency diagnostics info:
+DEPS_DIAGNOSTICS ?= $(TOOLS_DIR)/scripts/deps_info
+
+
 # RULES #
 
 #/
@@ -59,3 +65,14 @@ assert.%:
 		echo "\nError: You must set the environment variable: ${*}.\n"; \
 		exit 1; \
 	fi
+
+#/
+# Prints information regarding installed and/or missing dependencies.
+#
+# @example
+# make deps-diagnostics
+#/
+deps-diagnostics:
+	$(QUIET) $(DEPS_DIAGNOSTICS)
+
+.PHONY: deps-diagnostics
