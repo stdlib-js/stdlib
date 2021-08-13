@@ -20,6 +20,7 @@
 
 # Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/install/boost.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/cephes.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 

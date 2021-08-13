@@ -25,7 +25,7 @@ DEPS_CEPHES_URL ?= http://www.netlib.org/cephes/
 deps_cephes_basename := netlib_cephes
 
 # Define the checksum(s) to verify downloaded libraries:
-DEPS_CEPHES_CHECKSUM ?= $(foreach file,$(DEPS_CEPHES_LIBS),$(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_cephes_basename)_$(file).tgz)/sha256))
+DEPS_CEPHES_CHECKSUM ?= $(foreach file,$(DEPS_CEPHES_LIBS),$(shell $(CAT) $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_cephes_basename)_$(file).tgz)/sha256))
 
 # Define the output directory when downloading:
 DEPS_CEPHES_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_cephes_basename)

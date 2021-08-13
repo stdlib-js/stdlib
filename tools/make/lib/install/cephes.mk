@@ -19,13 +19,13 @@
 # DEPENDENCIES #
 
 ifeq ($(DEPS_CEPHES_DIST), netlib)
-	include $(TOOLS_MAKE_LIB_DIR)/deps/cephes_netlib.mk
+	include $(TOOLS_MAKE_LIB_DIR)/install/cephes_netlib.mk
 else
 ifeq ($(DEPS_CEPHES_DIST), cephes-2.8)
-	include $(TOOLS_MAKE_LIB_DIR)/deps/cephes_2_8.mk
+	include $(TOOLS_MAKE_LIB_DIR)/install/cephes_2_8.mk
 else
 ifeq ($(DEPS_CEPHES_DIST), moshier)
-	include $(TOOLS_MAKE_LIB_DIR)/deps/cephes_moshier.mk
+	include $(TOOLS_MAKE_LIB_DIR)/install/cephes_moshier.mk
 endif
 endif
 endif

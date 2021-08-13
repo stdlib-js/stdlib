@@ -24,8 +24,8 @@ DEPS_CEPHES_URL ?= http://www.moshier.net/cephes-math-28.tar.gz
 # Determine the basename for the download:
 deps_cephes_basename := $(notdir $(DEPS_CEPHES_URL))
 
-# Define the path to the file containing a checksum verify a download:
-DEPS_CEPHES_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst -,_,$(subst .,_,$(deps_cephes_basename)))/sha256)
+# Define the path to the file containing a checksum to verify a download:
+DEPS_CEPHES_CHECKSUM ?= $(shell $(CAT) $(DEPS_CHECKSUMS_DIR)/$(subst -,_,$(subst .,_,$(deps_cephes_basename)))/sha256)
 
 # Define the output path when downloading:
 DEPS_CEPHES_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_cephes_basename)
@@ -182,6 +182,7 @@ $(DEPS_CEPHES_TEST_INSTALL_OUT): $(deps_cephes_build_out) $(DEPS_CEPHES_TEST_OUT
 # Downloads a Cephes distribution.
 #
 # @private
+#
 # @example
 # make deps-download-cephes
 #/
@@ -193,6 +194,7 @@ deps-download-cephes: $(DEPS_CEPHES_DOWNLOAD_OUT)
 # Verifies a downloaded Cephes distribution.
 #
 # @private
+#
 # @example
 # make deps-verify-cephes
 #/
@@ -206,6 +208,7 @@ deps-verify-cephes: deps-download-cephes
 # Extracts a downloaded Cephes distribution.
 #
 # @private
+#
 # @example
 # make deps-extract-cephes
 #/
@@ -217,6 +220,7 @@ deps-extract-cephes: $(deps_cephes_build_out)
 # Tests a Cephes installation.
 #
 # @private
+#
 # @example
 # make deps-test-cephes
 #/
