@@ -182,17 +182,9 @@ Tests should accompany **all** bug fixes and features. For guidance on how to wr
 $ make init
 ```
 
-linting should be automatically triggered prior to each commit. Any [pull requests][github-pull-request] which include failing tests and/or lint errors will **not** be accepted. 
+linting should be automatically triggered prior to each commit, and test execution should be automatically triggered prior to each push.
 
-To run project tests,
-
-```bash
-$ make test
-$ make examples
-$ make benchmark
-```
-
-Note that each of the above tasks can take considerable time (>30 minutes per task).
+Any [pull requests][github-pull-request] which include failing tests and/or lint errors will **not** be accepted.
 
 #### Step 7: Push
 
