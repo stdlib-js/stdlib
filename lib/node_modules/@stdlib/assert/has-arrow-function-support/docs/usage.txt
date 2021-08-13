@@ -1,0 +1,7 @@
+
+Usage: has-arrow-function-support [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.

@@ -32,7 +32,7 @@ var isArrayBufferView = require( '@stdlib/assert/is-arraybuffer-view' );
 
 #### isArrayBufferView( value )
 
-Tests if a value is an [`ArrayBuffer`][mdn-arraybuffer] view such as a [`DataView`][mdn-dataview] or[`TypedArray`][mdn-typed-array].
+Tests if a value is an [`ArrayBuffer`][mdn-arraybuffer] view such as a [`DataView`][mdn-dataview] or [`TypedArray`][mdn-typed-array].
 
 ```javascript
 var Int8Array = require( '@stdlib/array/int8' );
