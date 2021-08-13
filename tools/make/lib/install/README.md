@@ -127,9 +127,37 @@ $ make clean-node-addons
 
 * * *
 
+#### Boost
+
+#### install-deps-boost
+
+Installs [Boost][boost].
+
+```bash
+$ make install-deps-boost
+```
+
+#### clean-deps-boost
+
+Removes an installed [Boost][boost] distribution.
+
+```bash
+$ make clean-deps-boost
+```
+
+#### clean-deps-boost-tests
+
+Removes compiled [Boost][boost] installation tests.
+
+```bash
+$ make clean-deps-boost-tests
+```
+
+* * *
+
 ### Electron
 
-##### install-deps-electron
+#### install-deps-electron
 
 Installs [Electron][electron].
 
@@ -137,7 +165,7 @@ Installs [Electron][electron].
 $ make install-deps-electron
 ```
 
-##### clean-deps-electron
+#### clean-deps-electron
 
 Removes an installed [Electron][electron] distribution.
 
@@ -145,7 +173,7 @@ Removes an installed [Electron][electron] distribution.
 $ make clean-deps-electron
 ```
 
-##### clean-deps-electron-tests
+#### clean-deps-electron-tests
 
 Removes compiled [Electron][electron] installation tests.
 
@@ -171,11 +199,13 @@ $ make clean-deps-electron-tests
 
 [make]: https://www.gnu.org/software/make/
 
+[boost]: http://www.boost.org/
+
+[electron]: https://www.electronjs.org/
+
 [node-js]: https://nodejs.org/en/
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
-
-[electron]: https://www.electronjs.org/
 
 </section>
 

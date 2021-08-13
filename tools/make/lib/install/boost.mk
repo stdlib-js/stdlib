@@ -24,8 +24,8 @@ DEPS_BOOST_URL ?= https://sourceforge.net/projects/boost/files/boost/$(DEPS_BOOS
 # Determine the basename for the download:
 deps_boost_basename := $(notdir $(DEPS_BOOST_URL))
 
-# Define the path to the file containing a checksum verify a download:
-DEPS_BOOST_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_boost_basename))/sha256)
+# Define the path to the file containing a checksum to verify a download:
+DEPS_BOOST_CHECKSUM ?= $(shell $(CAT) $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(deps_boost_basename))/sha256)
 
 # Define the output path when downloading:
 DEPS_BOOST_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_boost_basename)
@@ -55,7 +55,7 @@ $(DEPS_BOOST_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_BOOST_URL) $(DEPS_BOOST_DOWNLOAD_OUT)
 
 #/
-# Extracts a gzipped tar archive.
+# Extracts a Boost gzipped tar archive.
 #
 # @private
 #/
@@ -72,7 +72,7 @@ $(DEPS_BOOST_TEST_OUT):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_BOOST_TEST_OUT)
 
 #/
-# Compiles a test file for testing an installation.
+# Compiles a test file for testing a Boost installation.
 #
 # @private
 #/
@@ -83,6 +83,7 @@ $(DEPS_BOOST_TEST_INSTALL_OUT): $(DEPS_BOOST_BUILD_OUT) $(DEPS_BOOST_TEST_OUT)
 # Downloads a Boost distribution.
 #
 # @private
+#
 # @example
 # make deps-download-boost
 #/
@@ -94,6 +95,7 @@ deps-download-boost: $(DEPS_BOOST_DOWNLOAD_OUT)
 # Verifies a downloaded Boost distribution.
 #
 # @private
+#
 # @example
 # make deps-verify-boost
 #/
@@ -107,6 +109,7 @@ deps-verify-boost: deps-download-boost
 # Extracts a downloaded Boost distribution.
 #
 # @private
+#
 # @example
 # make deps-extract-boost
 #/
@@ -118,6 +121,7 @@ deps-extract-boost: $(DEPS_BOOST_BUILD_OUT)
 # Tests an installed Boost distribution.
 #
 # @private
+#
 # @example
 # make deps-test-boost
 #/

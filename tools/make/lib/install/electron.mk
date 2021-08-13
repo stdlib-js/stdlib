@@ -200,7 +200,7 @@ install-deps-electron: deps-download-electron deps-verify-electron deps-extract-
 #
 # ## Notes
 #
-# -   This recipe does **not** remove an Electron download if one exists.
+# -   The rule does **not** remove an Electron download (if one exists).
 #
 # @example
 # make clean-deps-electron
