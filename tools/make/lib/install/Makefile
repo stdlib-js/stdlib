@@ -42,6 +42,7 @@ include $(TOOLS_MAKE_LIB_DIR)/install/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/openblas.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/shellcheck.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/wabt.mk
 
 
 # RULES #
@@ -172,7 +173,7 @@ clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-dep
 # @example
 # make clean-deps-dev-tests
 #/
-clean-deps-dev-tests: clean-deps-boost-tests clean-deps-cephes-tests
+clean-deps-dev-tests: clean-deps-boost-tests clean-deps-cephes-tests clean-deps-cppcheck-tests clean-deps-shellcheck-tests
 
 .PHONY: clean-deps-dev-tests
 

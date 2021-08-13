@@ -32,6 +32,14 @@ This directory contains [`make`][make] rules for running the project's installat
 
     -   [Install](#install)
     -   [Node.js](#nodejs)
+    -   [Boost](#boost)
+    -   [Cephes](#cephes)
+    -   [Cppcheck](#cppcheck)
+    -   [Electron](#electron)
+    -   [Emscripten SDK](#emscripten-sdk)
+    -   [OpenBLAS](#openblas)
+    -   [ShellCheck](#shellcheck)
+    -   [WebAssembly Binary Toolkit](#wabt)
 
 </section>
 
@@ -48,6 +56,8 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 ```
 
 ### Commands
+
+<a name="install"></a>
 
 #### install
 
@@ -257,7 +267,9 @@ $ make clean-node-addons
 
 * * *
 
-#### Boost
+<a name="boost"></a>
+
+### Boost
 
 #### install-deps-boost
 
@@ -285,9 +297,11 @@ $ make clean-deps-boost-tests
 
 * * *
 
-#### Cephes
+<a name="cephes"></a>
 
-##### install-deps-cephes
+### Cephes
+
+#### install-deps-cephes
 
 Installs [Cephes][cephes].
 
@@ -295,7 +309,7 @@ Installs [Cephes][cephes].
 $ make install-deps-cephes
 ```
 
-##### clean-deps-cephes
+#### clean-deps-cephes
 
 Removes an installed [Cephes][cephes] distribution.
 
@@ -303,7 +317,7 @@ Removes an installed [Cephes][cephes] distribution.
 $ make clean-deps-cephes
 ```
 
-##### clean-deps-cephes-tests
+#### clean-deps-cephes-tests
 
 Removes compiled [Cephes][cephes] installation tests.
 
@@ -313,9 +327,11 @@ $ make clean-deps-cephes-tests
 
 * * *
 
-#### Cppcheck
+<a name="cppcheck"></a>
 
-##### install-deps-cppcheck
+### Cppcheck
+
+#### install-deps-cppcheck
 
 Installs [Cppcheck][cppcheck].
 
@@ -323,7 +339,7 @@ Installs [Cppcheck][cppcheck].
 $ make install-deps-cppcheck
 ```
 
-##### clean-deps-cppcheck
+#### clean-deps-cppcheck
 
 Removes an installed [Cppcheck][cppcheck] distribution.
 
@@ -340,6 +356,8 @@ $ make clean-deps-cppcheck-tests
 ```
 
 * * *
+
+<a name="electron"></a>
 
 ### Electron
 
@@ -369,9 +387,11 @@ $ make clean-deps-electron-tests
 
 * * *
 
-#### Emscripten SDK
+<a name="emscripten-sdk"></a>
 
-##### install-deps-emscripten
+### Emscripten SDK
+
+#### install-deps-emscripten
 
 Installs [Emscripten SDK][emscripten-sdk].
 
@@ -379,7 +399,7 @@ Installs [Emscripten SDK][emscripten-sdk].
 $ make install-deps-emscripten
 ```
 
-##### clean-deps-emscripten
+#### clean-deps-emscripten
 
 Removes an installed [Emscripten SDK][emscripten-sdk] distribution.
 
@@ -396,6 +416,8 @@ $ make clean-deps-emscripten-tests
 ```
 
 * * *
+
+<a name="openblas"></a>
 
 ### OpenBLAS
 
@@ -425,9 +447,11 @@ $ make clean-deps-openblas-tests
 
 * * *
 
-#### ShellCheck
+<a name="shellcheck"></a>
 
-##### install-deps-shellcheck
+### ShellCheck
+
+#### install-deps-shellcheck
 
 Installs [ShellCheck][shellcheck].
 
@@ -435,7 +459,7 @@ Installs [ShellCheck][shellcheck].
 $ make install-deps-shellcheck
 ```
 
-##### clean-deps-shellcheck
+#### clean-deps-shellcheck
 
 Removes an installed [ShellCheck][shellcheck] distribution.
 
@@ -449,6 +473,36 @@ Removes [ShellCheck][shellcheck] installation tests.
 
 ```bash
 $ make clean-deps-shellcheck-tests
+```
+
+* * *
+
+<a name="wabt"></a>
+
+### WebAssembly Binary Toolkit
+
+#### install-deps-wabt
+
+Installs [WebAssembly Binary Toolkit (WABT)][wabt].
+
+```bash
+$ make install-deps-wabt
+```
+
+#### clean-deps-wabt
+
+Removes an installed [WebAssembly Binary Toolkit][wabt] distribution.
+
+```bash
+$ make clean-deps-wabt
+```
+
+#### clean-deps-wabt-tests
+
+Removes [WebAssembly Binary Toolkit][wabt] installation tests.
+
+```bash
+$ make clean-deps-wabt-tests
 ```
 
 </section>
@@ -486,6 +540,8 @@ $ make clean-deps-shellcheck-tests
 [openblas]: https://github.com/xianyi/OpenBLAS
 
 [shellcheck]: https://github.com/koalaman/shellcheck
+
+[wabt]: https://github.com/WebAssembly/wabt
 
 </section>
 
