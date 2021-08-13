@@ -60,7 +60,7 @@ interface Namespace {
 	* var ctor = require( `@stdlib/buffer/ctor` );
 	*
 	* var b = new ctor( [ 1, 2, 3, 4 ] );
-	* // returns <Buffer>
+	* // returns <ns.Buffer>
 	*/
 	Buffer: typeof Buffer;
 
