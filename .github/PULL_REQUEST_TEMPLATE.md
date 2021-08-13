@@ -1,19 +1,5 @@
 Resolves # .
 
-<!--lint disable first-heading-level-->
-
-## Checklist
-
-> Please ensure the following tasks are completed before submitting this pull request.
-
--   [ ] Read, understood, and followed the [contributing guidelines][contributing], including the relevant style guides.
--   [ ] Read and understand the [Code of Conduct][code-of-conduct].
--   [ ] Read and understood the [licensing terms][license].
--   [ ] Searched for existing issues and pull requests **before** submitting this pull request.
--   [ ] Filed an issue (or an issue already existed) **prior to** submitting this pull request.
--   [ ] Rebased onto latest `develop`.
--   [ ] Submitted against `develop` branch.
-
 ## Description
 
 > What is the purpose of this pull request?
@@ -45,16 +31,14 @@ No.
 
 No.
 
+## Checklist
+
+> Please ensure the following tasks are completed before submitting this pull request.
+
+-   [ ] Read, understood, and followed the [contributing guidelines][contributing].
+
 * * *
 
 @stdlib-js/reviewers
 
-<!-- <links> -->
-
 [contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
-
-[code-of-conduct]: https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md
-
-[license]: https://github.com/stdlib-js/stdlib/blob/develop/LICENSE
-
-<!-- </links> -->
