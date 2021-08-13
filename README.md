@@ -422,7 +422,41 @@ The following external libraries can be automatically downloaded and compiled fr
 
 ## Contributing
 
-See the [contributing guidelines][stdlib-contributing].
+First time contributor?
+
+-   See the [contributing guidelines][stdlib-contributing].
+
+Already an expert?
+
+-   Fork the repository.
+
+-   Clone the forked repository
+   
+    ```bash
+    $ git clone --depth=1 https://github.com/<username>/stdlib.git
+    ```
+
+    where `<username>` is your GitHub username.
+
+-   Navigate to the `stdlib` directory
+
+    ```bash
+    $ cd stdlib
+    ```
+
+-   Install dependencies
+
+    ```bash
+    $ make install-node-modules
+    ```
+
+-   Initialize your stdlib development environment
+
+    ```bash
+    $ make init
+    ```
+
+* * *
 
 ## License
 
