@@ -38,6 +38,7 @@ include $(TOOLS_MAKE_LIB_DIR)/install/boost.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/cephes.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/cppcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/openblas.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/shellcheck.mk

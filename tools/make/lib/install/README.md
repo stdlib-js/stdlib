@@ -369,6 +369,34 @@ $ make clean-deps-electron-tests
 
 * * *
 
+#### Emscripten SDK
+
+##### install-deps-emscripten
+
+Installs [Emscripten SDK][emscripten-sdk].
+
+```bash
+$ make install-deps-emscripten
+```
+
+##### clean-deps-emscripten
+
+Removes an installed [Emscripten SDK][emscripten-sdk] distribution.
+
+```bash
+$ make clean-deps-emscripten
+```
+
+#### clean-deps-emscripten-tests
+
+Removes [Emscripten SDK][emscripten-sdk] installation tests.
+
+```bash
+$ make clean-deps-emscripten-tests
+```
+
+* * *
+
 ### OpenBLAS
 
 #### install-deps-openblas
@@ -448,6 +476,8 @@ $ make clean-deps-shellcheck-tests
 [cppcheck]: http://cppcheck.sourceforge.net/
 
 [electron]: https://www.electronjs.org/
+
+[emscripten-sdk]: https://github.com/emscripten-core/emsdk
 
 [node-js]: https://nodejs.org/en/
 
