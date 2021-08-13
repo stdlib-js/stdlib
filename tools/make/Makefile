@@ -74,12 +74,12 @@ include $(TOOLS_MAKE_LIB_DIR)/init/Makefile
 # Please keep sorted in alphabetical order:
 include $(TOOLS_MAKE_LIB_DIR)/benchmark/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/bib/Makefile
-include $(TOOLS_MAKE_LIB_DIR)/bundle/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/complexity/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/contributors/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/coverage-service/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/debug/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/deps/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/dist/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/docs/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/examples/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/install/Makefile

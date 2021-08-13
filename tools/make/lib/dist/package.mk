@@ -22,13 +22,19 @@
 NPM_VERSION ?=
 
 # Define a Git commit message when incrementing the project version:
-NPM_VERSION_MESSAGE ?=
+NPM_VERSION_COMMIT_MESSAGE ?= 'Increment version'
 
-# Define command-line options when incrementing the project version:
-npm_version_flags ?=
-ifdef NPM_VERSION_MESSAGE
-	npm_version_flags += -m $(NPM_VERSION_MESSAGE)
-endif
+# Specify the output build directory when generating a gzipped archive:
+NPM_TARBALL_BUILD_OUT ?= $(BUILD_DIR)/npm
+
+# Specify the gzipped archive basename:
+npm_tarball_basename := "stdlib_v$(shell $(CURRENT_PROJECT_VERSION)).tgz"
+
+# Specify the output gzipped archive basename:
+NPM_TARBALL ?= $(npm_tarball_basename)
+
+# Specify the output gzipped archive file path:
+npm_tarball := $(NPM_TARBALL_BUILD_OUT)/$(NPM_TARBALL)
 
 # Define the version upgrade prerequisite...
 ifeq ($(NPM_VERSION), pre-patch)
@@ -61,51 +67,45 @@ endif
 endif
 endif
 
-# Specify the output build directory when generating an npm gzipped archive:
-NPM_TARBALL_BUILD_OUT := $(BUILD_DIR)/npm
 
-# Specify the gzipped archive basename:
-npm_tarball_basename := "stdlib-stdlib-$(shell $(CURRENT_PROJECT_VERSION)).tgz"
+# RULES #
 
-# Specify the output npm gzipped archive:
-NPM_TARBALL ?= $(NPM_TARBALL_BUILD_OUT)/$(npm_tarball_basename)
-
-
-# TARGETS #
-
-# Generate an npm tarball.
+#/
+# Generates a gzipped archive for publishing to npm.
 #
-# This target generates an npm gzipped archive.
-
-$(NPM_TARBALL):
+# @private
+#/
+$(npm_tarball):
 	$(QUIET) $(MKDIR_RECURSIVE) $(NPM_TARBALL_BUILD_OUT)
 	$(QUIET) $(NPM_PACK) $(ROOT_DIR) >/dev/null
 	$(QUIET) mv $(ROOT_DIR)/$(npm_tarball_basename) $@
 
-
-# Generate an npm tarball.
+#/
+# Generates a gzipped archive for publishing to npm.
 #
-# This target generates an npm gzipped archive.
-
-npm-tarball: $(NPM_TARBALL)
+# @example
+# make npm-tarball
+#/
+npm-tarball: $(npm_tarball)
 
 .PHONY: npm-tarball
 
-
-# Run pre-version tasks.
-#
-# This target runs tasks which should be completed before incrementing the project version.
+#/
+# Performs checks to prevent unintended behavior when attempting to publish to npm.
 #
 # TODO: once we have a `master` branch, swap `develop` for `master`
-
-npm-pre-version: dedupe-node-modules
+#
+# @example
+# make npm-publish-check
+#/
+npm-publish-check:
 	$(QUIET) if [[ "$(shell $(GIT_BRANCH))" != "develop" ]]; then \
 		echo 'Error: invalid operation. New versions should only be performed on the `develop`'; \
 		echo 'branch.'; \
 		exit 1; \
 	fi
 
-.PHONY: npm-pre-version
+.PHONY: npm-publish-check
 
 
 # Run pre-patch tasks.
@@ -185,9 +185,8 @@ npm-version-pre-release: npm-pre-version
 # TODO: move recipe guts to a script
 # TODO: on version, regenerate SVG equations and update README equation elements
 
-npm-version: dist-browser-bundles update-dist-readme-browser-bundle-stats
-	$(QUIET) $(MAKE) -f $(this_file) list-pkgs-installed-logical-tree-json > $(DIST_DIR)/npm_ls.json && \
-		$(GIT_ADD) -A dist && \
+npm-version: dist-browser-bundles
+	$(QUIET) $(GIT_ADD) -A dist && \
 		$(GIT_COMMIT) -m 'Update distributable browser bundles' && \
 		$(MAKE) -f $(this_file) $(npm_version_target) && \
 		$(MAKE) -f $(this_file) npm-post-version
@@ -213,12 +212,12 @@ npm-post-version:
 
 .PHONY: npm-post-version
 
-
+#/
 # Remove npm tarball(s).
 #
 # This target removes npm gzipped archives.
-
+#/
 clean-npm-tarball:
-	$(QUIET) -rm -f $(NPM_TARBALL_BUILD_OUT)/*.tgz
+	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(NPM_TARBALL_BUILD_OUT)/*.tgz
 
 .PHONY: clean-npm-tarball
