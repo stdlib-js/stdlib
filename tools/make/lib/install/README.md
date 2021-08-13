@@ -51,12 +51,142 @@ Usage: make <command> [<ENV_VAR>=<value> <ENV_VAR>=<value> ...]
 
 #### install
 
-Runs the project's install sequence.
+Runs the project's (minimal) install sequence.
 
 <!-- run-disable -->
 
 ```bash
 $ make install
+```
+
+Optional and development dependencies are **not** installed.
+
+#### install-all
+
+Runs the project's full install sequence.
+
+<!-- run-disable -->
+
+```bash
+$ make install-all
+```
+
+**Warning**: only run this command if absolutely necessary. Most project development does **not** require a full installation.
+
+#### install-deps-all
+
+Installs external library dependencies and development dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make install-deps-all
+```
+
+**Warning**: only run this command if absolutely necessary. Most project development does **not** require a full installation of external library dependencies and development dependencies.
+
+#### clean-deps-all
+
+Removes all external library dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-all
+```
+
+#### clean-deps-tests-all
+
+Removes all external library installation test artifacts.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-tests-all
+```
+
+#### install-deps
+
+Installs external library dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make install-deps
+```
+
+**Warning**: only run this command if absolutely necessary.
+
+#### clean-deps
+
+Removes external library dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps
+```
+
+#### clean-deps-tests
+
+Removes external library installation test artifacts.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-tests
+```
+
+#### install-deps-dev
+
+Installs external library dependencies used during development.
+
+<!-- run-disable -->
+
+```bash
+$ make install-deps-dev
+```
+
+**Warning**: only run this command if absolutely necessary (e.g., if needing to test against reference numerical libraries).
+
+#### clean-deps-dev
+
+Removes external library development dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-dev
+```
+
+#### clean-deps-dev-tests
+
+Removes all external development library installation test artifacts.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-dev-tests
+```
+
+#### clean-deps-downloads-all
+
+Removes all external library downloads.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-downloads-all
+```
+
+#### clean-deps-builds-all
+
+Removes all external library build artifacts.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-deps-builds-all
 ```
 
 * * *
@@ -155,6 +285,34 @@ $ make clean-deps-boost-tests
 
 * * *
 
+#### Cephes
+
+##### install-deps-cephes
+
+Installs [Cephes][cephes].
+
+```bash
+$ make install-deps-cephes
+```
+
+##### clean-deps-cephes
+
+Removes an installed [Cephes][cephes] distribution.
+
+```bash
+$ make clean-deps-cephes
+```
+
+##### clean-deps-cephes-tests
+
+Removes compiled [Cephes][cephes] installation tests.
+
+```bash
+$ make clean-deps-cephes-tests
+```
+
+* * *
+
 ### Electron
 
 #### install-deps-electron
@@ -200,6 +358,8 @@ $ make clean-deps-electron-tests
 [make]: https://www.gnu.org/software/make/
 
 [boost]: http://www.boost.org/
+
+[cephes]: http://www.moshier.net/#Cephes
 
 [electron]: https://www.electronjs.org/
 
