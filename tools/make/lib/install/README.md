@@ -26,7 +26,12 @@ limitations under the License.
 
 <section class="intro">
 
-This directory contains [`make`][make] rules for running the project's installation processes.
+This directory contains [`make`][make] rules for running the project's installation processes (e.g., managing [Node.js][node-js] environments, including `node_modules` dependencies and Node.js native [add-ons][node-js-add-ons]).
+
+-   [Commands](#commands)
+
+    -   [Install](#install)
+    -   [Node.js](#nodejs)
 
 </section>
 
@@ -54,6 +59,72 @@ Runs the project's install sequence.
 $ make install
 ```
 
+* * *
+
+<a name="nodejs"></a>
+
+### Node.js
+
+#### install-node
+
+Installs node modules dependencies and compiles native [add-ons][node-js-add-ons].
+
+<!-- run-disable -->
+
+```bash
+$ make install-node
+```
+
+#### clean-node
+
+Runs cleanup tasks specific to Node.js, such as removing node modules dependencies and compiled native [add-ons][node-js-add-ons].
+
+<!-- run-disable -->
+
+```bash
+$ make clean-node
+```
+
+#### install-node-modules
+
+Installs node modules dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make install-node-modules
+```
+
+#### clean-node-modules
+
+Removes node modules dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make clean-node-modules
+```
+
+#### install-node-addons
+
+Compiles Node.js native [add-ons][node-js-add-ons].
+
+<!-- run-disable -->
+
+```bash
+$ make install-node-addons
+```
+
+#### clean-node-addons
+
+Removes Node.js native [add-ons][node-js-add-ons].
+
+<!-- run-disable -->
+
+```bash
+$ make clean-node-addons
+```
+
 </section>
 
 <!-- /.usage -->
@@ -71,6 +142,10 @@ $ make install
 <section class="links">
 
 [make]: https://www.gnu.org/software/make/
+
+[node-js]: https://nodejs.org/en/
+
+[node-js-add-ons]: https://nodejs.org/api/addons.html
 
 </section>
 

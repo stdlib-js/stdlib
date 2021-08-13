@@ -16,6 +16,12 @@
 # limitations under the License.
 #/
 
+# DEPENDENCIES #
+
+# Please keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
+
+
 # RULES #
 
 #/
@@ -24,6 +30,6 @@
 # @example
 # make install
 #/
-install: install-node
+install: install-node clean-deps-electron install-deps-electron
 
 .PHONY: install

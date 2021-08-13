@@ -18,25 +18,37 @@
 
 # DEPENDENCIES #
 
-include $(TOOLS_MAKE_LIB_DIR)/node/addons.mk
-include $(TOOLS_MAKE_LIB_DIR)/node/modules.mk
+# Please keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/install/addons.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/modules.mk
 
 
-# TARGETS #
+# RULES #
 
-# Run Node install sequence.
+#/
+# Runs the Node.js install sequence.
 #
-# This target runs the Node install sequence, including installing node module dependencies and compiling native add-ons.
-
-install-node: install-node-modules install-node-addons clean-deps-electron install-deps-electron
+# ## Notes
+#
+# -   This recipe installs node module dependencies and compiles native add-ons.
+#
+# @example
+# make install-node
+#/
+install-node: install-node-modules install-node-addons
 
 .PHONY: install-node
 
-
-# Perform Node clean-up.
+#/
+# Runs cleanup tasks specific to Node.js.
 #
-# This target runs cleanup tasks specific to Node.js, such as removing node module dependencies and removing native add-ons.
-
+# ## Notes
+#
+# -   This recipe removes node module dependencies and native add-ons.
+#
+# @example
+# make clean-node
+#/
 clean-node: clean-node-addons clean-node-modules
 
 .PHONY: clean-node

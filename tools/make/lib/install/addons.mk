@@ -20,12 +20,6 @@
 
 # Define the path of the executable for [node-gyp][1].
 #
-# To install `node-gyp`:
-#
-# ```bash
-# $ npm install node-gyp
-# ```
-#
 # [1]: https://github.com/nodejs/node-gyp
 NODE_GYP ?= $(BIN_DIR)/node-gyp
 
@@ -54,12 +48,18 @@ endif
 install_node_addons_list_addons_flags := "--pattern $(node_addons_pattern)"
 
 
-# TARGETS #
+# RULES #
 
-# Install add-ons.
+#/
+# Installs Node.js native add-ons.
 #
-# This target installs native add-ons. If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
-
+# ## Notes
+#
+# -   If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
+#
+# @example
+# make install-node-addons
+#/
 install-node-addons: $(NODE_MODULES) clean-node-addons
 	$(QUIET) $(MAKE) LIST_PACKAGE_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
@@ -77,11 +77,12 @@ install-node-addons: $(NODE_MODULES) clean-node-addons
 
 .PHONY: install-node-addons
 
-
-# Remove add-ons.
+#/
+# Removes all compiled and generated files for Node.js native add-ons.
 #
-# This target removes all compiled and generated files for native add-ons.
-
+# @example
+# make clean-node-addons
+#/
 clean-node-addons:
 	$(QUIET) $(MAKE) LIST_PACKAGE_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
