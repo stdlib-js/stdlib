@@ -125,6 +125,34 @@ Removes Node.js native [add-ons][node-js-add-ons].
 $ make clean-node-addons
 ```
 
+* * *
+
+### Electron
+
+##### install-deps-electron
+
+Installs [Electron][electron].
+
+```bash
+$ make install-deps-electron
+```
+
+##### clean-deps-electron
+
+Removes an installed [Electron][electron] distribution.
+
+```bash
+$ make clean-deps-electron
+```
+
+##### clean-deps-electron-tests
+
+Removes compiled [Electron][electron] installation tests.
+
+```bash
+$ make clean-deps-electron-tests
+```
+
 </section>
 
 <!-- /.usage -->
@@ -146,6 +174,8 @@ $ make clean-node-addons
 [node-js]: https://nodejs.org/en/
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
+
+[electron]: https://www.electronjs.org/
 
 </section>
 

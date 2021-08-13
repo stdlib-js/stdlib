@@ -24,8 +24,8 @@ DEPS_ELECTRON_URL ?= https://github.com/electron/electron/releases/download/v$(D
 # Determine the basename for the download:
 deps_electron_basename := $(notdir $(DEPS_ELECTRON_URL))
 
-# Define the path to the file containing a checksum verify a download:
-DEPS_ELECTRON_CHECKSUM ?= $(shell cat $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst -,_,$(deps_electron_basename)))/sha256)
+# Define the path to the file containing a checksum to verify a download:
+DEPS_ELECTRON_CHECKSUM ?= $(shell $(CAT) $(DEPS_CHECKSUMS_DIR)/$(subst .,_,$(subst -,_,$(deps_electron_basename)))/sha256)
 
 # Define the output path when downloading:
 DEPS_ELECTRON_DOWNLOAD_OUT ?= $(DEPS_TMP_DIR)/$(deps_electron_basename)
@@ -72,96 +72,109 @@ deps_electron_prereqs := \
 deps_electron_dest := $(NODE_MODULES)/@stdlib/electron
 
 
-# TARGETS #
+# RULES #
 
-# Download.
+#/
+# Downloads an Electron distribution.
 #
-# This target downloads an Electron distribution.
-
+# @private
+#/
 $(DEPS_ELECTRON_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) echo 'Downloading Electron...' >&2
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_ELECTRON_URL) $(DEPS_ELECTRON_DOWNLOAD_OUT)
 
-
-# Path.
+#/
+# Creates a text file containing the executable path.
 #
-# This target creates a text file containing the executable path.
-
+# @private
+#/
 $(DEPS_ELECTRON_BUILD_OUT)/path.txt: | $(DEPS_BUILD_DIR)
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_ELECTRON_BUILD_OUT)
 	$(QUIET) printf $(deps_electron_path) > $(DEPS_ELECTRON_BUILD_OUT)/path.txt
 
-
-# Main entry point.
+#/
+# Creates the main entry point for a Node.js wrapper package.
 #
-# This target creates the main entry point for the Node.js wrapper package.
-
+# @private
+#/
 $(DEPS_ELECTRON_BUILD_OUT)/index.js: | $(DEPS_BUILD_DIR)
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_ELECTRON_BUILD_OUT)
 	$(QUIET) printf $(deps_electron_index) > $(DEPS_ELECTRON_BUILD_OUT)/index.js
 
-
-# Command-line interface.
+#/
+# Creates a Node.js Electron command-line interface (CLI).
 #
-# This target creates the Node.js Electron command-line interface (CLI).
-
+# @private
+#/
 $(DEPS_ELECTRON_BUILD_OUT)/cli.js: | $(DEPS_BUILD_DIR)
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_ELECTRON_BUILD_OUT)
 	$(QUIET) printf $(deps_electron_cli) > $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 
-
-# Package.json.
+#/
+# Creates an Node.js Electron package meta data file.
 #
-# This target creates the Node.js Electron package meta data file.
-
+# @private
+#/
 $(DEPS_ELECTRON_BUILD_OUT)/package.json: | $(DEPS_BUILD_DIR)
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_ELECTRON_BUILD_OUT)
 	$(QUIET) printf $(deps_electron_package_json) > $(DEPS_ELECTRON_BUILD_OUT)/package.json
 
-
-# Extract.
+#/
+# Extracts a downloaded Electron ZIP archive.
 #
-# This target extracts a ZIP archive.
-
+# @private
+#/
 $(DEPS_ELECTRON_BUILD_OUT): $(DEPS_ELECTRON_DOWNLOAD_OUT) $(deps_electron_prereqs) | $(DEPS_BUILD_DIR)
 	$(QUIET) echo 'Extracting Electron...' >&2
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_ELECTRON_BUILD_OUT)/dist
 	$(QUIET) $(UNZIP) -q $(DEPS_ELECTRON_DOWNLOAD_OUT) -d $@/dist
 
-
-# Download Electron.
+#/
+# Downloads an Electron distribution.
 #
-# This target downloads an Electron distribution.
-
+# @private
+#
+# @example
+# make deps-download-electron
+#/
 deps-download-electron: $(DEPS_ELECTRON_DOWNLOAD_OUT)
 
 .PHONY: deps-download-electron
 
-
-# Verify download.
+#/
+# Verifies a downloaded Electron distribution.
 #
-# This targets verifies a download.
-
+# @private
+#
+# @example
+# make deps-verify-electron
+#/
 deps-verify-electron: deps-download-electron
 	$(QUIET) echo 'Verifying download...' >&2
 	$(QUIET) $(DEPS_CHECKSUM_BIN) $(DEPS_ELECTRON_DOWNLOAD_OUT) $(DEPS_ELECTRON_CHECKSUM) >&2
 
 .PHONY: deps-verify-electron
 
-
-# Extract Electron.
+#/
+# Extracts an Electron download.
 #
-# This target extracts an Electron download.
-
+# @private
+#
+# @example
+# make deps-extract-electron
+#/
 deps-extract-electron: $(DEPS_ELECTRON_BUILD_OUT)
 
 .PHONY: deps-extract-electron
 
-
-# Test install.
+#/
+# Tests an Electron installation.
 #
-# This target tests an installation.
-
+# @private
+#
+# @example
+# make deps-test-electron
+#/
 deps-test-electron: $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 	$(QUIET) echo 'Running tests...' >&2
 	$(QUIET) $(NODE) $< --version >&2
@@ -170,33 +183,40 @@ deps-test-electron: $(DEPS_ELECTRON_BUILD_OUT)/cli.js
 
 .PHONY: deps-test-electron
 
-
-# Install Electron.
+#/
+# Installs Electron.
 #
-# This target installs Electron.
-
+# @example
+# make install-deps-electron
+#/
 install-deps-electron: deps-download-electron deps-verify-electron deps-extract-electron deps-test-electron
 	$(QUIET) $(MKDIR_RECURSIVE) $(deps_electron_dest)
 	$(QUIET) $(CP) -rp $(DEPS_ELECTRON_BUILD_OUT)/* $(deps_electron_dest)
 
 .PHONY: install-deps-electron
 
-
-# Clean Electron.
+#/
+# Removes an Electron distribution.
 #
-# This target removes an Electron distribution (but does not remove an Electron download if one exists).
-
+# ## Notes
+#
+# -   This recipe does **not** remove an Electron download if one exists.
+#
+# @example
+# make clean-deps-electron
+#/
 clean-deps-electron: clean-deps-electron-tests
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_ELECTRON_BUILD_OUT)
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(deps_electron_dest)
 
 .PHONY: clean-deps-electron
 
-
-# Clean tests.
+#/
+# Removes Electron installation test artifacts.
 #
-# This targets remove installation tests.
-
+# @example
+# make clean-deps-electron-tests
+#/
 clean-deps-electron-tests:
 
 .PHONY: clean-deps-electron-tests

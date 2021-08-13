@@ -18,7 +18,8 @@
 
 # DEPENDENCIES #
 
-# Please keep in alphabetical order...
+# Note: keep in alphabetical order...
+include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 
 
