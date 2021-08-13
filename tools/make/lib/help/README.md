@@ -28,6 +28,8 @@ limitations under the License.
 
 This directory contains [`make`][make] rules for printing help information when using [`make`][make], such as the project [`make`][make] usage text, rules, and more.
 
+This directory also contains [`make`][make] rules for helping debug the [`make`][make] environment and project rules (e.g., printing the values of environment variables, etc.).
+
 </section>
 
 <!-- /.intro -->
@@ -71,6 +73,42 @@ $ make list-stats-rules
 ```
 
 The list of rules is **not** exhaustive, as the list does **not** include rules which have not been explicitly declared PHONY targets and does **not** include rules declared via variables.
+
+#### list-variables
+
+Prints a sorted list of `Makefile` variable names.
+
+```bash
+$ make list-variables
+```
+
+To remove duplicates, pipe to `uniq`. Note that the list of variables is **not** exhaustive, as the list does **not** include built-in variables.
+
+* * *
+
+### Debug
+
+#### inspect.&lt;variable&gt;
+
+Prints the runtime value of a `Makefile` variable.
+
+```bash
+$ make inspect.CC
+```
+
+```bash
+$ make inspect.ROOT_DIR
+```
+
+#### assert.&lt;variable&gt;
+
+Asserts that a `Makefile` variable is set.
+
+```bash
+$ make assert.CXX
+```
+
+If a variable is **not** set, the command exits with a non-zero exit code.
 
 </section>
 
