@@ -331,6 +331,14 @@ Removes an installed [Cppcheck][cppcheck] distribution.
 $ make clean-deps-cppcheck
 ```
 
+#### clean-deps-cppcheck-tests
+
+Removes [Cppcheck][cppcheck] installation tests.
+
+```bash
+$ make clean-deps-cppcheck-tests
+```
+
 * * *
 
 ### Electron
@@ -353,10 +361,38 @@ $ make clean-deps-electron
 
 #### clean-deps-electron-tests
 
-Removes compiled [Electron][electron] installation tests.
+Removes [Electron][electron] installation tests.
 
 ```bash
 $ make clean-deps-electron-tests
+```
+
+* * *
+
+### OpenBLAS
+
+#### install-deps-openblas
+
+Installs [OpenBLAS][openblas].
+
+```bash
+$ make install-deps-openblas
+```
+
+#### clean-deps-openblas
+
+Removes an installed [OpenBLAS][openblas] distribution.
+
+```bash
+$ make clean-deps-openblas
+```
+
+#### clean-deps-openblas-tests
+
+Removes compiled [OpenBLAS][openblas] installation tests.
+
+```bash
+$ make clean-deps-openblas-tests
 ```
 
 * * *
@@ -377,6 +413,14 @@ Removes an installed [ShellCheck][shellcheck] distribution.
 
 ```bash
 $ make clean-deps-shellcheck
+```
+
+#### clean-deps-shellcheck-tests
+
+Removes [ShellCheck][shellcheck] installation tests.
+
+```bash
+$ make clean-deps-shellcheck-tests
 ```
 
 </section>
@@ -408,6 +452,8 @@ $ make clean-deps-shellcheck
 [node-js]: https://nodejs.org/en/
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
+
+[openblas]: https://github.com/xianyi/OpenBLAS
 
 [shellcheck]: https://github.com/koalaman/shellcheck
 

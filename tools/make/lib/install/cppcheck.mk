@@ -162,3 +162,13 @@ clean-deps-cppcheck:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_CPPCHECK_BUILD_OUT)
 
 .PHONY: clean-deps-cppcheck
+
+#/
+# Removes `cppcheck` installation test artifacts.
+#
+# @example
+# make clean-deps-cppcheck-tests
+#/
+clean-deps-cppcheck-tests:
+
+.PHONY: clean-deps-cppcheck-tests

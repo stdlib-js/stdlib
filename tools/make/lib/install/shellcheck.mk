@@ -62,7 +62,7 @@ endif
 # RULES #
 
 #/
-# Downloads a shellcheck distribution.
+# Downloads a ShellCheck distribution.
 #
 # @private
 #/
@@ -71,7 +71,7 @@ $(DEPS_SHELLCHECK_DOWNLOAD_OUT): | $(DEPS_TMP_DIR)
 	$(QUIET) $(DEPS_DOWNLOAD_BIN) $(DEPS_SHELLCHECK_URL) $(DEPS_SHELLCHECK_DOWNLOAD_OUT)
 
 #/
-# Extracts a shellcheck archive.
+# Extracts a ShellCheck archive.
 #
 # @private
 #/
@@ -86,7 +86,7 @@ else
 endif
 
 #/
-# Downloads shellcheck.
+# Downloads ShellCheck.
 #
 # @private
 #
@@ -98,7 +98,7 @@ deps-download-shellcheck: $(DEPS_SHELLCHECK_DOWNLOAD_OUT)
 .PHONY: deps-download-shellcheck
 
 #/
-# Verifies a shellcheck download.
+# Verifies a ShellCheck download.
 #
 # @private
 #
@@ -112,7 +112,7 @@ deps-verify-shellcheck: deps-download-shellcheck
 .PHONY: deps-verify-shellcheck
 
 #/
-# Extracts a shellcheck download.
+# Extracts a ShellCheck download.
 #
 # @private
 #
@@ -124,7 +124,7 @@ deps-extract-shellcheck: $(DEPS_SHELLCHECK_BUILD_OUT)
 .PHONY: deps-extract-shellcheck
 
 #/
-# Tests a shellcheck installation.
+# Tests a ShellCheck installation.
 #
 # @private
 #
@@ -140,7 +140,7 @@ deps-test-shellcheck: $(deps_shellcheck_test_prereqs)
 .PHONY: deps-test-shellcheck
 
 #/
-# Installs shellcheck on MacOS.
+# Installs ShellCheck on MacOS.
 #
 # ## Notes
 #
@@ -161,7 +161,7 @@ deps-install-shellcheck-darwin:
 .PHONY: deps-install-shellcheck-darwin
 
 #/
-# Installs shellcheck.
+# Installs ShellCheck.
 #
 # @example
 # make install-deps-shellcheck
@@ -171,7 +171,7 @@ install-deps-shellcheck: $(deps_shellcheck_install_prereqs)
 .PHONY: install-deps-shellcheck
 
 #/
-# Removes a shellcheck distribution (but does not remove a shellcheck download if one exists).
+# Removes a ShellCheck distribution (but does not remove a ShellCheck download if one exists).
 #
 # @example
 # make clean-deps-shellcheck
@@ -180,3 +180,13 @@ clean-deps-shellcheck:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(DEPS_SHELLCHECK_BUILD_OUT)
 
 .PHONY: clean-deps-shellcheck
+
+#/
+# Removes ShellCheck installation test artifacts.
+#
+# @example
+# make clean-deps-shellcheck-tests
+#/
+clean-deps-shellcheck-tests:
+
+.PHONY: clean-deps-shellcheck-tests
