@@ -24,6 +24,7 @@ CONTRIBUTORS
 FAQ.md
 TODO.md
 ROADMAP.md
+package.json.copy
 
 # TODO: once we start compiling native add-ons, we need to remove this exclusion...
 Makefile
