@@ -34,16 +34,16 @@ Woot woot! If you are new to stdlib, welcome! And thanks for your interest! Whil
 
 ### Issues
 
-When filing new issues and commenting on existing issues on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Gitter][stdlib-gitter] channel.
+When filing new [issues][stdlib-issues] and commenting on existing [issues][stdlib-issues] on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Gitter][stdlib-gitter] channel.
 
 **Before** filing a potential bug report,
 
--   Search for existing issues and pull requests.
+-   Search for existing [issues][stdlib-issues] and [pull requests][stdlib-pull-requests].
 -   Try some debugging techniques to help isolate the problem, including logging inputs and outputs.
 
 If the source of the problem is a third party package, file a bug report with the relevant package author, rather than on this repository.
 
-When filing an issue, provide the following, where possible:
+When filing an [issues][stdlib-issues], provide the following, where possible:
 
 -   A description of the issue.
 -   Links to any related issues.
@@ -70,12 +70,18 @@ For instructions on how to setup and configure your environment, be sure to
 
 -   read and follow the [development guide][stdlib-development].
 
+If you had found a bug that you would like to fix,
+
+-   file an [issue][stdlib-issues] on the project GitHub issue [tracker][stdlib-issues] describing the bug as instructed [above](#issues).
+-   wait for feedback.
+-   submit a [pull request][stdlib-pull-requests] with your proposed changes.
+
 If you want to contribute a new feature or a breaking change to stdlib, be sure to
 
 -   consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package.
--   write an RFC (request for comments) detailing the proposed change.
+-   write an RFC (request for comments) detailing the proposed change and submit as an issue on the project GitHub issue tracker.
 -   wait for RFC approval.
--   adhere to the guidance set forth in the RFC.
+-   submit a [pull request][stdlib-pull-requests], making sure to adhere to the guidance set forth in the RFC.
 
 If you want to contribute a new package, be sure to
 
@@ -316,6 +322,10 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+
+[stdlib-issues]: https://github.com/stdlib-js/stdlib/issues
+
+[stdlib-pull-requests]: https://github.com/stdlib-js/stdlib/pulls
 
 [patreon]: https://www.patreon.com/athan
 
