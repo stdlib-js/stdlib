@@ -47,7 +47,8 @@ $(npm_install_deps_file): $(ROOT_PACKAGE_JSON) $(print_npm_install_deps)
 #/
 install-node-modules: $(npm_install_deps_file)
 	$(QUIET) $(MV) "$(ROOT_PACKAGE_JSON)" "$(ROOT_PACKAGE_JSON).copy"
-	$(QUIET) { cat $(npm_install_deps_file) | xargs $(NPM) install --no-save && $(MV) "$(ROOT_PACKAGE_JSON).copy" "$(ROOT_PACKAGE_JSON)"; } || { $(MV) "$(ROOT_PACKAGE_JSON).copy" "$(ROOT_PACKAGE_JSON)" && exit 1; }
+	$(QUIET) echo '{"name":"@stdlib/stdlib","version":"0.0.0"}' > "$(ROOT_PACKAGE_JSON)"
+	$(QUIET) { $(CAT) $(npm_install_deps_file) | xargs $(NPM) install --no-save && $(MV) -f "$(ROOT_PACKAGE_JSON).copy" "$(ROOT_PACKAGE_JSON)"; } || { $(MV) -f "$(ROOT_PACKAGE_JSON).copy" "$(ROOT_PACKAGE_JSON)" && exit 1; }
 
 .PHONY: install-node-modules
 
