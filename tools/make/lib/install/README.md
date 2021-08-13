@@ -38,6 +38,8 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [Electron](#electron)
     -   [Emscripten SDK](#emscripten-sdk)
     -   [OpenBLAS](#openblas)
+    -   [Python](#python)
+    -   [R](#r)
     -   [ShellCheck](#shellcheck)
     -   [WebAssembly Binary Toolkit](#wabt)
 
@@ -443,6 +445,66 @@ Removes compiled [OpenBLAS][openblas] installation tests.
 
 ```bash
 $ make clean-deps-openblas-tests
+```
+
+* * *
+
+<a name="python"></a>
+
+### Python Dependencies
+
+#### install-deps-python
+
+Installs Python dependencies.
+
+```bash
+$ make install-deps-python
+```
+
+#### update-deps-python
+
+Updates Python dependencies.
+
+```bash
+$ make update-deps-python
+```
+
+#### clean-deps-python
+
+Removes an installed Python dependencies.
+
+```bash
+$ make clean-deps-python
+```
+
+* * *
+
+<a name="r"></a>
+
+### R Dependencies
+
+#### install-deps-r
+
+Installs R dependencies.
+
+```bash
+$ make install-deps-r
+```
+
+#### update-deps-r
+
+Updates R dependencies.
+
+```bash
+$ make update-deps-r
+```
+
+#### clean-deps-r
+
+Removes an installed R dependencies.
+
+```bash
+$ make clean-deps-r
 ```
 
 * * *

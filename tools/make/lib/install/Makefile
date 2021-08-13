@@ -41,6 +41,8 @@ include $(TOOLS_MAKE_LIB_DIR)/install/electron.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/emsdk.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/node.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/openblas.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/python_deps.mk
+include $(TOOLS_MAKE_LIB_DIR)/install/r_deps.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/shellcheck.mk
 include $(TOOLS_MAKE_LIB_DIR)/install/wabt.mk
 
@@ -153,7 +155,7 @@ clean-deps-tests: clean-deps-openblas-tests
 # @example
 # make install-deps-dev
 #/
-install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck install-deps-shellcheck
+install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck install-deps-python install-deps-r install-deps-shellcheck
 
 .PHONY: install-deps-dev
 
@@ -163,7 +165,7 @@ install-deps-dev: install-deps-boost install-deps-cephes install-deps-cppcheck i
 # @example
 # make clean-deps-dev
 #/
-clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-deps-shellcheck
+clean-deps-dev: clean-deps-boost clean-deps-cephes clean-deps-cppcheck clean-deps-python clean-deps-r clean-deps-shellcheck
 
 .PHONY: clean-deps-dev
 
