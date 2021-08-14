@@ -4191,6 +4191,16 @@
       "markdown"
     ]
   },
+  "https://jsdelivr.com/": {
+    "id": "jsdelivr",
+    "description": "A content delivery network (CDN) for npm and GitHub.",
+    "short_url": "",
+    "keywords": [
+      "cdn",
+      "npm",
+      "github"
+    ]
+  },
   "https://julialang.org/": {
     "id": "julia",
     "description": "The official website of Julia, a high-level, high-performance dynamic programming language for numerical computing.",
