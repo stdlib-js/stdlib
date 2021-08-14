@@ -21,6 +21,13 @@ name: namespace_declarations
 
 # Workflow triggers:
 on:
+  push:
+    branches:
+      - develop
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/**/types/index.d.ts'
+
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
@@ -86,6 +93,7 @@ jobs:
             @stdlib-js/reviewers
 
           commit-message: 'Update namespace TypeScript declarations'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
             documentation
             automated-pr
