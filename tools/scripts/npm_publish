@@ -1,0 +1,162 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# shellcheck disable=SC2181
+
+# Publishes a new version of the project to the npm package registry.
+#
+# A `version` argument must be one of the following:
+#
+# -   `patch`
+# -   `minor`
+# -   `major`
+#
+# Usage: npm_publish <version> <message>
+#
+# Arguments:
+#
+#   version     version bump type.
+#   message     commit message.
+#
+
+# VARIABLES #
+
+# Set the version bump type:
+version="$1"
+
+# Set the version bump commit message:
+message="$2"
+
+# Determine root directory:
+root_dir="$(git rev-parse --show-toplevel)"
+
+# Get the current Git branch:
+git_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+# Define the project source code directory:
+base_dir="${root_dir}/lib/node_modules"
+
+# Specify the output build directory when generating a gzipped archive:
+npm_tarball_build_out="${root_dir}/build/npm"
+
+# Define a template for the gzipped archive basename:
+npm_tarball_basename='stdlib-stdlib-VERSION.tgz'
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	cleanup
+	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	rm -rf "${npm_tarball_build_out}"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Prints usage information.
+usage() {
+	echo '' >&2
+	echo 'Usage: npm_publish <version> <message>' >&2
+	echo '' >&2
+	echo 'Arguments:' >&2
+	echo '' >&2
+	echo '  version     version bump type.' >&2
+	echo '  message     commit message.' >&2
+	echo '' >&2
+}
+
+# Performs checks to prevent unintended behavior when attempting to publish to npm.
+check() {
+	echo 'Performing checks...' >&2
+	if [[ "${git_branch}" != 'develop' ]]; then
+		echo 'Error: invalid operation. New versions should only be performed on the develop branch.' >&2
+		return 1
+	fi
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo 'Error: invalid operation. Working directory must be clean.' >&2
+		return 1
+	fi
+	echo 'Successfully performed checks.' >&2
+	return 0
+}
+
+# Generates a gzipped archive for publishing to npm.
+create_tarball() {
+	echo 'Generating a gzipped archive for publishing to npm...' >&2
+
+	mdkir -p "${npm_tarball_build_out}"
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error: unexpected error. Unable to create output build directory.' >&2
+		return 1
+	fi
+	npm pack "${root_dir}" >/dev/null
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error: unexpected error. Unable to create a gzipped archive.' >&2
+		return 1
+	fi
+	mv "${root_dir}/${npm_tarball_basename}" "${npm_tarball_build_out}/${npm_tarball_basename}"
+	if [[ "$?" -ne 0 ]]; then
+		echo 'Error: unexpected error. Unable to move gzipped archive to build directory.' >&2
+		return 1
+	fi
+	echo 'Successfully generated a gzipped archive.' >&2
+	return 0
+}
+
+
+# MAIN #
+
+# Main execution sequence.
+main() {
+	check
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+
+	# TODO: run make repl-docs and commit to ensure updated REPL docs
+
+	create_tarball
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	print_success
+	cleanup
+	exit 0
+}
+
+# Handle arguments...
+if [[ "$#" -eq 0 ]]; then
+	usage
+	exit 0
+elif [[ "$#" -gt 2 ]]; then
+	echo 'Error: unrecognized arguments. Must specify a version and message.' >&2
+	exit 1
+fi
+
+# Run main:
+main
