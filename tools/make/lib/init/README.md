@@ -60,44 +60,44 @@ $ make init
 
 ### ESLint
 
-#### init-stdlib-custom-eslint-rules-plugin
+#### init-eslint-rules-plugin
 
 Initializes custom [ESLint][eslint] rules.
 
 <!-- run-disable -->
 
 ```bash
-$ make init-stdlib-custom-eslint-rules-plugin
+$ make init-eslint-rules-plugin
 ```
 
-#### init-stdlib-custom-eslint-plugins
+#### init-eslint-plugins
 
 Initializes custom [ESLint][eslint] plugins.
 
 <!-- run-disable -->
 
 ```bash
-$ make init-stdlib-custom-eslint-plugins
+$ make init-eslint-plugins
 ```
 
-#### clean-stdlib-custom-eslint-rules-plugin
+#### clean-eslint-rules-plugin
 
 Removes custom [ESLint][eslint] rules.
 
 <!-- run-disable -->
 
 ```bash
-$ make clean-stdlib-custom-eslint-rules-plugin
+$ make clean-eslint-rules-plugin
 ```
 
-#### clean-stdlib-custom-eslint-plugins
+#### clean-eslint-plugins
 
 Removes custom [ESLint][eslint] plugins.
 
 <!-- run-disable -->
 
 ```bash
-$ make clean-stdlib-custom-eslint-plugins
+$ make clean-eslint-plugins
 ```
 
 * * *

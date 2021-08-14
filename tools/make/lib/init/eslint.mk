@@ -78,11 +78,11 @@ $(stdlib_custom_eslint_rules_plugin_out)/package.json: $(stdlib_custom_eslint_ru
 # [eslint]: http://eslint.org/
 #
 # @example
-# make init-stdlib-custom-eslint-rules-plugin
+# make init-eslint-rules-plugin
 #/
-init-stdlib-custom-eslint-rules-plugin: clean-stdlib-custom-eslint-rules-plugin $(NODE_MODULES) $(stdlib_custom_eslint_rules_plugin_prereqs)
+init-eslint-rules-plugin: clean-eslint-rules-plugin $(NODE_MODULES) $(stdlib_custom_eslint_rules_plugin_prereqs)
 
-.PHONY: init-stdlib-custom-eslint-rules-plugin
+.PHONY: init-eslint-rules-plugin
 
 #/
 # Initializes custom [ESLint][eslint] plugins.
@@ -90,11 +90,11 @@ init-stdlib-custom-eslint-rules-plugin: clean-stdlib-custom-eslint-rules-plugin 
 # [eslint]: http://eslint.org/
 #
 # @example
-# make init-stdlib-custom-eslint-plugins
+# make init-eslint-plugins
 #/
-init-stdlib-custom-eslint-plugins: init-stdlib-custom-eslint-rules-plugin
+init-eslint-plugins: init-eslint-rules-plugin
 
-.PHONY: init-stdlib-custom-eslint-plugins
+.PHONY: init-eslint-plugins
 
 #/
 # Removes a custom [ESLint][eslint] rule plugin.
@@ -102,12 +102,12 @@ init-stdlib-custom-eslint-plugins: init-stdlib-custom-eslint-rules-plugin
 # [eslint]: http://eslint.org/
 #
 # @example
-# make clean-stdlib-custom-eslint-rules-plugin
+# make clean-eslint-rules-plugin
 #/
-clean-stdlib-custom-eslint-rules-plugin:
+clean-eslint-rules-plugin:
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) $(stdlib_custom_eslint_rules_plugin_out)
 
-.PHONY: clean-stdlib-custom-eslint-rules-plugin
+.PHONY: clean-eslint-rules-plugin
 
 #/
 # Removes custom [ESLint][eslint] plugins.
@@ -115,8 +115,8 @@ clean-stdlib-custom-eslint-rules-plugin:
 # [eslint]: http://eslint.org/
 #
 # @example
-# make clean-stdlib-custom-eslint-plugins
+# make clean-eslint-plugins
 #/
-clean-stdlib-custom-eslint-plugins: clean-stdlib-custom-eslint-rules-plugin
+clean-eslint-plugins: clean-eslint-rules-plugin
 
-.PHONY: clean-stdlib-custom-eslint-plugins
+.PHONY: clean-eslint-plugins
