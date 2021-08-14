@@ -157,17 +157,17 @@ Initializing the development environment configures [Git][git] hooks and other b
 
 ## Verification
 
-To verify your environment, run project tests.
+To verify your environment, run a sample of project tests.
 
 <!-- run-disable -->
 
 ```bash
-$ make test
-$ make examples
-$ make benchmark
+$ make TESTS_FILTER=".*/math/base/special/sin/.*" test
+$ make EXAMPLES_FILTER=".*/math/base/special/sin/.*" examples
+$ make BENCHMARKS_FILTER=".*/math/base/special/sin/.*" benchmark
 ```
 
-Note that each of the previous commands may take considerable time (>30 minutes). If your environment is properly configured, each command should exit without errors.
+If your environment is properly configured, each command should exit without errors.
 
 ## Update
 
