@@ -38,7 +38,7 @@ jobs:
   update:
 
     # Define a display name:
-    name: "Update TypeScript Declarations"
+    name: 'Update TypeScript Declarations'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -87,6 +87,10 @@ jobs:
             This PR
 
             -   updates namespace TypeScript declarations
+
+            * * *
+
+            @stdlib-js/reviewers
 
           commit-message: 'Update namespace TypeScript declarations'
           committer: 'stdlib-bot <noreply@stdlib.io>'

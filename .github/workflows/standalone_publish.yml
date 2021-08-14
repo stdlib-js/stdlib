@@ -43,7 +43,7 @@ jobs:
   publish:
 
     # Define a display name:
-    name: "Publish"
+    name: 'Publish'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

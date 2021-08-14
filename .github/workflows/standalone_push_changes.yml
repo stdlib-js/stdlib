@@ -30,7 +30,7 @@ jobs:
   push:
 
     # Define a display name:
-    name: "Push Changes to Standalone Packages"
+    name: 'Push Changes to Standalone Packages'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
