@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [Rayleigh][rayleigh-distribution] ran
 <!-- <equation class="equation" label="eq:rayleigh_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \sigma \sqrt{\dfrac{\pi}{2}}" alt="Expected value for a Rayleigh distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \sigma \sqrt{\dfrac{\pi}{2}}" data-equation="eq:rayleigh_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/mean/docs/img/equation_rayleigh_expectation.svg" alt="Expected value for a Rayleigh distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/mean/docs/img/equation_rayleigh_expectation.svg" alt="Expected value for a Rayleigh distribution.">
     <br>
 </div>
 

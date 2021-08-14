@@ -31,7 +31,7 @@ To compute the inverse of a one-parameter [Box-Cox transformation][box-cox-trans
 <!-- <equation class="equation" label="eq:inverse_boxcox_transformation_one_parameter" align="center" raw="y = \begin{cases}\frac{x^{\lambda} - 1}{\lambda} & \textrm{if}\ \lambda \neq 0 \\ \ln(x) & \textrm{if}\ \lambda = 0 \end{cases}" alt="Inverse One-Parameter Box-Cox Transformation"> -->
 
 <div class="equation" align="center" data-raw-text="y = \begin{cases}\frac{x^{\lambda} - 1}{\lambda} & \textrm{if}\ \lambda \neq 0 \\ \ln(x) & \textrm{if}\ \lambda = 0 \end{cases}" data-equation="eq:inverse_boxcox_transformation_one_parameter">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1f2eca12bb7f86547d4b5b335364419bac5b97fb/lib/node_modules/@stdlib/math/base/special/boxcoxinv/docs/img/equation_inverse_boxcox_transformation_one_parameter.svg" alt="Inverse One-Parameter Box-Cox Transformation" />
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1f2eca12bb7f86547d4b5b335364419bac5b97fb/lib/node_modules/@stdlib/math/base/special/boxcoxinv/docs/img/equation_inverse_boxcox_transformation_one_parameter.svg" alt="Inverse One-Parameter Box-Cox Transformation" />
     <br>
 </div>
 

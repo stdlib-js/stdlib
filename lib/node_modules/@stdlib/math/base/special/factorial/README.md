@@ -29,7 +29,7 @@ The [factorial][factorial-function] function may be defined as the product
 <!-- <equation class="equation" label="eq:factorial_function" align="center" raw="n! = \prod_{k=1}^n k" alt="Factorial function definition"> -->
 
 <div class="equation" align="center" data-raw-text="n! = \prod_{k=1}^n k" data-equation="eq:factorial_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_factorial_function.svg" alt="Factorial function definition">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_factorial_function.svg" alt="Factorial function definition">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ or according to the recurrence relation
 <!-- <equation class="equation" label="eq:factorial_recurrence_relation" align="center" raw="n! = \begin{cases}1 & \textrm{if } n = 0,\\(n-1)! \times n & \textrm{if } n > 1\end{cases}" alt="Factorial function recurrence relation"> -->
 
 <div class="equation" align="center" data-raw-text="n! = \begin{cases}1 &amp; \textrm{if } n = 0,\\(n-1)! \times n &amp; \textrm{if } n &gt; 1\end{cases}" data-equation="eq:factorial_recurrence_relation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_factorial_recurrence_relation.svg" alt="Factorial function recurrence relation">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_factorial_recurrence_relation.svg" alt="Factorial function recurrence relation">
     <br>
 </div>
 
@@ -51,7 +51,7 @@ Following the convention for an [empty product][empty-product], in all definitio
 <!-- <equation class="equation" label="eq:zero_factorial" align="center" raw="0! = 1" alt="Zero factorial"> -->
 
 <div class="equation" align="center" data-raw-text="0! = 1" data-equation="eq:zero_factorial">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_zero_factorial.svg" alt="Zero factorial">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_zero_factorial.svg" alt="Zero factorial">
     <br>
 </div>
 
@@ -62,7 +62,7 @@ The [Gamma][@stdlib/math/base/special/gamma] function extends the [factorial][fa
 <!-- <equation class="equation" label="eq:factorial_function_and_gamma" align="center" raw="n! = \Gamma(n+1)" alt="Factorial function extension via the Gamma function"> -->
 
 <div class="equation" align="center" data-raw-text="n! = \Gamma(n+1)" data-equation="eq:factorial_function_and_gamma">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_factorial_function_and_gamma.svg" alt="Factorial function extension via the Gamma function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/factorial/docs/img/equation_factorial_function_and_gamma.svg" alt="Factorial function extension via the Gamma function">
     <br>
 </div>
 

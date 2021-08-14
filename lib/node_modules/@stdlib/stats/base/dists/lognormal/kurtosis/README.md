@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [lognormal][lognormal-distribution] random
 <!-- <equation class="equation" label="eq:lognormal_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \exp\left({4\sigma^{2}}\right)+2\exp\left({3\sigma^{2}}\right)+3\exp\left({2\sigma^{2}}\right)-6" alt="Excess kurtosis for a lognormal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \exp\left({4\sigma^{2}}\right)+2\exp\left({3\sigma^{2}}\right)+3\exp\left({2\sigma^{2}}\right)-6" data-equation="eq:lognormal_kurtosis">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/lognormal/kurtosis/docs/img/equation_lognormal_kurtosis.svg" alt="Excess kurtosis for a lognormal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/lognormal/kurtosis/docs/img/equation_lognormal_kurtosis.svg" alt="Excess kurtosis for a lognormal distribution.">
     <br>
 </div>
 

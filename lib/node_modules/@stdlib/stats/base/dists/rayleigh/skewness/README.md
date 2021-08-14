@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Rayleigh][rayleigh-distribution] random variable
 <!-- <equation class="equation" label="eq:rayleigh_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac{2{\sqrt{\pi }}(\pi -3)}{(4-\pi )^{3/2}}" alt="Skewness for a Rayleigh distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac{2{\sqrt{\pi }}(\pi -3)}{(4-\pi )^{3/2}}" data-equation="eq:rayleigh_skewness">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/skewness/docs/img/equation_rayleigh_skewness.svg" alt="Skewness for a Rayleigh distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/skewness/docs/img/equation_rayleigh_skewness.svg" alt="Skewness for a Rayleigh distribution.">
     <br>
 </div>
 

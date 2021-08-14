@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [continuous uniform][uniform-di
 <!-- <equation class="equation" label="eq:uniform_quantile_function" align="center" raw="Q(p) = a + p (b - a)" alt="Quantile function for a continuous uniform distribution."> -->
 
 <div class="equation" align="center" data-raw-text="Q(p) = a + p (b - a)" data-equation="eq:uniform_quantile_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/quantile/docs/img/equation_uniform_quantile_function.svg" alt="Quantile function for a continuous uniform distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/quantile/docs/img/equation_uniform_quantile_function.svg" alt="Quantile function for a continuous uniform distribution.">
     <br>
 </div>
 

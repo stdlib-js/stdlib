@@ -31,7 +31,7 @@ A **square triangular number** is an integer value which is both a [square numbe
 <!-- <equation class="equation" label="eq:triangular_number" align="center" raw="T_n = \frac{n(n+1)}{2}" alt="Triangular number formula."> -->
 
 <div class="equation" align="center" data-raw-text="T_n = \frac{n(n+1)}{2}" data-equation="eq:triangular_number">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/aea1154fd2bf73984e41e9deeaefa0352cd1b978/lib/node_modules/@stdlib/assert/is-square-triangular-number/docs/img/equation_triangular_number.svg" alt="Triangular number formula.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aea1154fd2bf73984e41e9deeaefa0352cd1b978/lib/node_modules/@stdlib/assert/is-square-triangular-number/docs/img/equation_triangular_number.svg" alt="Triangular number formula.">
     <br>
 </div>
 
@@ -44,7 +44,7 @@ By analogy with the square root of `x`, one can define the positive triangular r
 <!-- <equation class="equation" label="eq:triangular_root" align="center" raw="n = \frac{\sqrt{8x+1} - 1}{2}" alt="Triangular root formula."> -->
 
 <div class="equation" align="center" data-raw-text="n = \frac{\sqrt{8x+1} - 1}{2}" data-equation="eq:triangular_root">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/aea1154fd2bf73984e41e9deeaefa0352cd1b978/lib/node_modules/@stdlib/assert/is-square-triangular-number/docs/img/equation_triangular_root.svg" alt="Triangular root formula.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aea1154fd2bf73984e41e9deeaefa0352cd1b978/lib/node_modules/@stdlib/assert/is-square-triangular-number/docs/img/equation_triangular_root.svg" alt="Triangular root formula.">
     <br>
 </div>
 

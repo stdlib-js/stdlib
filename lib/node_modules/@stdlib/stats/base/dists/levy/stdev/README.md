@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [Lévy][levy-distribution] ra
 <!-- <equation class="equation" label="eq:levy_stdev" align="center" raw="\sigma = \infty" alt="Standard deviation for a Lévy distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \infty" data-equation="eq:levy_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/levy/stdev/docs/img/equation_levy_stdev.svg" alt="Standard deviation for a Lévy distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/levy/stdev/docs/img/equation_levy_stdev.svg" alt="Standard deviation for a Lévy distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [discrete uniform][discrete-uniform-distri
 <!-- <equation class="equation" label="eq:discrete_uniform_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" alt="Excess kurtosis for a discrete uniform distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = -\frac{6(n^{2}+1)}{5(n^{2}-1)}" data-equation="eq:discrete_uniform_kurtosis">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/kurtosis/docs/img/equation_discrete_uniform_kurtosis.svg" alt="Excess kurtosis for a discrete uniform distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/discrete-uniform/kurtosis/docs/img/equation_discrete_uniform_kurtosis.svg" alt="Excess kurtosis for a discrete uniform distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [Student's t][t-distribution]
 <!-- <equation class="equation" label="eq:t_stdev" align="center" raw="\sigma = \begin{cases} \sqrt{\tfrac{\nu }{\nu-2}} & \text{ for } \nu > 2 \\ \infty & \text{ for } 1 < \nu \le 2 \end{cases}" alt="Standard deviation for a Student's t distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \begin{cases} \sqrt{\tfrac{\nu }{\nu-2}} &amp; \text{ for } \nu &gt; 2 \\ \infty &amp; \text{ for } 1 &lt; \nu \le 2 \end{cases}" data-equation="eq:t_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/stdev/docs/img/equation_t_stdev.svg" alt="Standard deviation for a Student's t distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/stdev/docs/img/equation_t_stdev.svg" alt="Standard deviation for a Student's t distribution.">
     <br>
 </div>
 

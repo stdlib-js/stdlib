@@ -27,7 +27,7 @@ limitations under the License.
 <!-- <image class="image" align="center" alt="Nightingale's famous polar area diagram."> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/aeef456ddeeb9af2a4d17f11cb0e002fa5e535d6/lib/node_modules/%40stdlib/datasets/nightingales-rose/docs/img/charts.png" alt="Nightingale's famous polar area diagram.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aeef456ddeeb9af2a4d17f11cb0e002fa5e535d6/lib/node_modules/%40stdlib/datasets/nightingales-rose/docs/img/charts.png" alt="Nightingale's famous polar area diagram.">
     <br>
 </div>
 

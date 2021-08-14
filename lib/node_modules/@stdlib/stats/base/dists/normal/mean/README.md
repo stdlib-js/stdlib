@@ -31,7 +31,7 @@ The [expected value][mean] for a [normal][normal-distribution] random variable w
 <!-- <equation class="equation" label="eq:normal_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \mu" alt="Expected value for a normal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \mu" data-equation="eq:normal_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/mean/docs/img/equation_normal_expectation.svg" alt="Expected value for a normal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/mean/docs/img/equation_normal_expectation.svg" alt="Expected value for a normal distribution.">
     <br>
 </div>
 

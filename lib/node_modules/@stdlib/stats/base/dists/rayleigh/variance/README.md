@@ -31,7 +31,7 @@ The [variance][variance] for a [Rayleigh][rayleigh-distribution] random variable
 <!-- <equation class="equation" label="eq:rayleigh_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{4-\pi }{2}\sigma^{2}" alt="Variance for a Rayleigh distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{4-\pi }{2}\sigma^{2}" data-equation="eq:rayleigh_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/variance/docs/img/equation_rayleigh_variance.svg" alt="Variance for a Rayleigh distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/variance/docs/img/equation_rayleigh_variance.svg" alt="Variance for a Rayleigh distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [gamma][gamma-distribution] random va
 <!-- <equation class="equation" label="eq:gamma_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta}" alt="Expected value for a gamma distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\alpha}{\beta}" data-equation="eq:gamma_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/gamma/mean/docs/img/equation_gamma_expectation.svg" alt="Expected value for a gamma distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/gamma/mean/docs/img/equation_gamma_expectation.svg" alt="Expected value for a gamma distribution.">
     <br>
 </div>
 

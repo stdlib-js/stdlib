@@ -31,7 +31,7 @@ The [mode][mode] for a [Student's t][t-distribution] random variable with degree
 <!-- <equation class="equation" label="eq:t_mode" align="center" raw="\operatorname{mode}\left( X \right) = 0" alt="Mode for a Student's t distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = 0" data-equation="eq:t_mode">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/mode/docs/img/equation_t_mode.svg" alt="Mode for a Student's t distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/mode/docs/img/equation_t_mode.svg" alt="Mode for a Student's t distribution.">
     <br>
 </div>
 

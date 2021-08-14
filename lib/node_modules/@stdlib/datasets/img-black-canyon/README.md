@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Black Canyon"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/1d23896443c65382340a9b4dfb5adc7764f8d23b/lib/node_modules/@stdlib/datasets/img-black-canyon/data/image.jpg" alt="Black Canyon">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1d23896443c65382340a9b4dfb5adc7764f8d23b/lib/node_modules/@stdlib/datasets/img-black-canyon/data/image.jpg" alt="Black Canyon">
     <br>
 </div>
 

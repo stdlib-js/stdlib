@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [Student's t][t-distribution] random 
 <!-- <equation class="equation" label="eq:t_expectation" align="center" raw="\mathbb{E}\left[ X \right] = 0" alt="Expected value for a Student's t distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = 0" data-equation="eq:t_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/mean/docs/img/equation_t_expectation.svg" alt="Expected value for a Student's t distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/mean/docs/img/equation_t_expectation.svg" alt="Expected value for a Student's t distribution.">
     <br>
 </div>
 

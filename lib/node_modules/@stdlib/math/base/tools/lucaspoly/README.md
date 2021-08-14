@@ -29,7 +29,7 @@ A [Lucas polynomial][fibonacci-polynomials] is expressed according to the follow
 <!-- <equation class="equation" label="eq:lucas_polynomial" align="center" raw="L_n(x) = \begin{cases}2 & \textrm{if}\ n = 0\\x & \textrm{if}\ n = 1\\x \cdot L_{n-1}(x) + L_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}" alt="Lucas polynomial."> -->
 
 <div class="equation" align="center" data-raw-text="L_n(x) = \begin{cases}2 &amp; \textrm{if}\ n = 0\\x &amp; \textrm{if}\ n = 1\\x \cdot L_{n-1}(x) + L_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:lucas_polynomial">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_lucas_polynomial.svg" alt="Lucas polynomial.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_lucas_polynomial.svg" alt="Lucas polynomial.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ Alternatively, if `L(n,k)` is the coefficient of `x^k` in `L_n(x)`, then
 <!-- <equation class="equation" label="eq:lucas_polynomial_sum" align="center" raw="L_n(x) = \sum_{k = 0}^n L(n,k) x^k" alt="Lucas polynomial expressed as a sum."> -->
 
 <div class="equation" align="center" data-raw-text="L_n(x) = \sum_{k = 0}^n L(n,k) x^k" data-equation="eq:lucas_polynomial_sum">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_lucas_polynomial_sum.svg" alt="Lucas polynomial expressed as a sum.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_lucas_polynomial_sum.svg" alt="Lucas polynomial expressed as a sum.">
     <br>
 </div>
 
@@ -51,7 +51,7 @@ We can extend [Lucas polynomials][fibonacci-polynomials] to negative `n` using t
 <!-- <equation class="equation" label="eq:negalucas_polynomial" align="center" raw="L_{-n}(x) = (-1)^{n} L_n(x)" alt="NegaLucas polynomial."> -->
 
 <div class="equation" align="center" data-raw-text="L_{-n}(x) = (-1)^{n} L_n(x)" data-equation="eq:negalucas_polynomial">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_negalucas_polynomial.svg" alt="NegaLucas polynomial.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/lucaspoly/docs/img/equation_negalucas_polynomial.svg" alt="NegaLucas polynomial.">
     <br>
 </div>
 

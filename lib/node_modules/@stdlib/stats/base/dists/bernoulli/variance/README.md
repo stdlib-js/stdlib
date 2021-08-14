@@ -31,7 +31,7 @@ The [variance][variance] for a [Bernoulli][bernoulli-distribution] random variab
 <!-- <equation class="equation" label="eq:bernoulli_variance" align="center" raw="\operatorname{Var}\left( X \right) = p \left( 1 - p \right)" alt="Variance for a Bernoulli distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = p \left( 1 - p \right)" data-equation="eq:bernoulli_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/bernoulli/variance/docs/img/equation_bernoulli_variance.svg" alt="Variance for a Bernoulli distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/bernoulli/variance/docs/img/equation_bernoulli_variance.svg" alt="Variance for a Bernoulli distribution.">
     <br>
 </div>
 

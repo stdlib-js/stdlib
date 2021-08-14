@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [geometric][geometric-distribution] random
 <!-- <equation class="equation" label="eq:geometric_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 6+{\frac{p^{2}}{1-p}}" alt="Excess kurtosis for a geometric distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 6+{\frac{p^{2}}{1-p}}" data-equation="eq:geometric_kurtosis">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/geometric/kurtosis/docs/img/equation_geometric_kurtosis.svg" alt="Excess kurtosis for a geometric distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/geometric/kurtosis/docs/img/equation_geometric_kurtosis.svg" alt="Excess kurtosis for a geometric distribution.">
     <br>
 </div>
 

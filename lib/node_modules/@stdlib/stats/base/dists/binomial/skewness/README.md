@@ -31,7 +31,7 @@ The [skewness][skewness] for a [binomial][binomial-distribution] random variable
 <!-- <equation class="equation" label="eq:binomial_skewness" align="center" raw="\operatorname{skew}\left( X \right) = \frac {1-2p}{\sqrt{np(1-p)}}" alt="Skewness for a binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = \frac {1-2p}{\sqrt{np(1-p)}}" data-equation="eq:binomial_skewness">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/skewness/docs/img/equation_binomial_skewness.svg" alt="Skewness for a binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/skewness/docs/img/equation_binomial_skewness.svg" alt="Skewness for a binomial distribution.">
     <br>
 </div>
 

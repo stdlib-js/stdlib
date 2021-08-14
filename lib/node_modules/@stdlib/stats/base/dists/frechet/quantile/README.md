@@ -29,7 +29,7 @@ The [quantile function][quantile] for a [Fréchet][frechet-distribution] random 
 <!-- <equation class="equation" label="eq:frechet_quantile" align="center" raw="Q\left( p; \alpha, s, m \right ) = m + s ( -\ln p )^{-\tfrac{1}{\alpha}}" alt="Quantile function for a Fréchet distribution."> -->
 
 <div class="equation" align="center" data-raw-text="Q\left( p; \alpha, s, m \right ) = m + s ( -\ln p )^{-\tfrac{1}{\alpha}}" data-equation="eq:frechet_quantile">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/frechet/quantile/docs/img/equation_frechet_quantile.svg" alt="Quantile function for a Fréchet distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/frechet/quantile/docs/img/equation_frechet_quantile.svg" alt="Quantile function for a Fréchet distribution.">
     <br>
 </div>
 

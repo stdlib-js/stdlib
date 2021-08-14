@@ -31,7 +31,7 @@ The [median][median] for a [binomial][binomial-distribution] random variable is
 <!-- <equation class="equation" label="eq:binomial_median" align="center" raw="\operatorname{Median}\left( X \right) = [ n p ]" alt="Median for a binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = [ n p ]" data-equation="eq:binomial_median">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/median/docs/img/equation_binomial_median.svg" alt="Median for a binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/median/docs/img/equation_binomial_median.svg" alt="Median for a binomial distribution.">
     <br>
 </div>
 

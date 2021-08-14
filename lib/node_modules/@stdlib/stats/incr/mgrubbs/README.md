@@ -34,7 +34,7 @@ For a window of size `W`, the [Grubbs' test][grubbs-test] statistic for a two-si
 <!-- <equation class="equation" label="eq:grubbs_test_statistic" align="center" raw="G = \frac{\max_{i=0,\ldots,W-1} |Y_i - \bar{Y}|}{s}" alt="Grubbs' test statistic."> -->
 
 <div class="equation" align="center" data-raw-text="G = \frac{\max_{i=0,\ldots,W-1} |Y_i - \bar{Y}|}{s}" data-equation="eq:grubbs_test_statistic">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_statistic.svg" alt="Grubbs' test statistic.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_statistic.svg" alt="Grubbs' test statistic.">
     <br>
 </div>
 
@@ -47,7 +47,7 @@ The [Grubbs' test][grubbs-test] statistic for the alternative hypothesis that th
 <!-- <equation class="equation" label="eq:grubbs_test_statistic_min" align="center" raw="G = \frac{\bar{Y} - Y_{\textrm{min}}}{s}" alt="Grubbs' test statistic for testing whether the minimum value is an outlier."> -->
 
 <div class="equation" align="center" data-raw-text="G = \frac{\bar{Y} - Y_{\textrm{min}}}{s}" data-equation="eq:grubbs_test_statistic_min">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_statistic_min.svg" alt="Grubbs' test statistic for testing whether the minimum value is an outlier.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_statistic_min.svg" alt="Grubbs' test statistic for testing whether the minimum value is an outlier.">
     <br>
 </div>
 
@@ -58,7 +58,7 @@ The [Grubbs' test][grubbs-test] statistic for the alternative hypothesis that th
 <!-- <equation class="equation" label="eq:grubbs_test_statistic_max" align="center" raw="G = \frac{Y_{\textrm{max}} - \bar{Y}}{s}" alt="Grubbs' test statistic for testing whether the maximum value is an outlier."> -->
 
 <div class="equation" align="center" data-raw-text="G = \frac{Y_{\textrm{max}} - \bar{Y}}{s}" data-equation="eq:grubbs_test_statistic_max">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_statistic_max.svg" alt="Grubbs' test statistic for testing whether the maximum value is an outlier.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_statistic_max.svg" alt="Grubbs' test statistic for testing whether the maximum value is an outlier.">
     <br>
 </div>
 
@@ -69,7 +69,7 @@ For a two-sided test, the hypothesis that a dataset does **not** contain an outl
 <!-- <equation class="equation" label="eq:grubbs_test_two_sided" align="center" raw="G > \frac{W-1}{\sqrt{W}} \sqrt{\frac{t^2_{\alpha/(2W),W-2}}{W - 2 + t^2_{\alpha/(2W),W-2}}}" alt="Two-sided Grubbs' test."> -->
 
 <div class="equation" align="center" data-raw-text="G > \frac{W-1}{\sqrt{W}} \sqrt{\frac{t^2_{\alpha/(2W),W-2}}{W - 2 + t^2_{\alpha/(2W),W-2}}}" data-equation="eq:grubbs_test_two_sided">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_two_sided.svg" alt="Two-sided Grubbs' test.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_two_sided.svg" alt="Two-sided Grubbs' test.">
     <br>
 </div>
 
@@ -82,7 +82,7 @@ For a one-sided test, the hypothesis that a dataset does **not** contain an outl
 <!-- <equation class="equation" label="eq:grubbs_test_one_sided" align="center" raw="G > \frac{W-1}{\sqrt{W}} \sqrt{\frac{t^2_{\alpha/W,W-2}}{W - 2 + t^2_{\alpha/W,W-2}}}" alt="One-sided Grubbs' test."> -->
 
 <div class="equation" align="center" data-raw-text="G > \frac{W-1}{\sqrt{W}} \sqrt{\frac{t^2_{\alpha/W,W-2}}{W - 2 + t^2_{\alpha/W,W-2}}}" data-equation="eq:grubbs_test_one_sided">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_one_sided.svg" alt="One-sided Grubbs' test.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d157db87026794d6fab579039be09a8916cad4e0/lib/node_modules/@stdlib/stats/incr/mgrubbs/docs/img/equation_grubbs_test_one_sided.svg" alt="One-sided Grubbs' test.">
     <br>
 </div>
 

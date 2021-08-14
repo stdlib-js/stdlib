@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [normal][normal-distribution] 
 <!-- <equation class="equation" label="eq:normal_cdf" align="center" raw="center" data-raw-text="F(x;\mu,\sigma) = \frac{1}{2} \left[ 1 + \operatorname{erf}\left( \frac{x-\mu}{\sigma\sqrt{2}} \right) \right]" alt="Cumulative distribution function for a normal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="center" data-equation="eq:normal_cdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/cdf/docs/img/equation_normal_cdf.svg" alt="Cumulative distribution function for a normal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/cdf/docs/img/equation_normal_cdf.svg" alt="Cumulative distribution function for a normal distribution.">
     <br>
 </div>
 

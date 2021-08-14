@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <equation class="equation" label="eq:epsilon_float32" align="center" raw="\epsilon = b^{-(p-1)}" alt="Epsilon for a single-precision floating-point number."> -->
 
 <div class="equation" align="center" data-raw-text="\epsilon = b^{-(p-1)}" data-equation="eq:epsilon_float32">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/constants/float32/eps/docs/img/equation_epsilon_float32.svg" alt="Epsilon for a single-precision floating-point number.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/constants/float32/eps/docs/img/equation_epsilon_float32.svg" alt="Epsilon for a single-precision floating-point number.">
     <br>
 </div>
 

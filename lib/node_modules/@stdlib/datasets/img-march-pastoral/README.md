@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Sheep in a pastoral setting"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9de351e89085f374156df9f19f4ad7fb2e8eec35/lib/node_modules/@stdlib/datasets/img-march-pastoral/data/image.jpg" alt="Sheep in a pastoral setting">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9de351e89085f374156df9f19f4ad7fb2e8eec35/lib/node_modules/@stdlib/datasets/img-march-pastoral/data/image.jpg" alt="Sheep in a pastoral setting">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [moment-generating function][mgf] for a [gamma][gamma-distribution] random v
 <!-- <equation class="equation" label="eq:gamma_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \left( 1 - \frac{t}{\beta} \right)^{-\alpha}" alt="Moment-generating function (MGF) for a gamma distribution."> -->
 
 <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \left( 1 - \frac{t}{\beta} \right)^{-\alpha}" data-equation="eq:gamma_mgf_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/gamma/mgf/docs/img/equation_gamma_mgf_function.svg" alt="Moment-generating function (MGF) for a gamma distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/gamma/mgf/docs/img/equation_gamma_mgf_function.svg" alt="Moment-generating function (MGF) for a gamma distribution.">
     <br>
 </div>
 

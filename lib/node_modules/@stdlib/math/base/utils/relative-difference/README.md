@@ -29,7 +29,7 @@ The [relative difference][relative-difference] of two real `numbers` is defined 
 <!-- <equation class="equation" label="eq:relative_difference" align="center" raw="\Delta(x,y) = \frac{|x - y|}{|f(x,y)|} = \left|\frac{x - y}{f(x,y)}\right|" alt="Relative difference"> -->
 
 <div class="equation" align="center" data-raw-text="\Delta(x,y) = \frac{|x - y|}{|f(x,y)|} = \left|\frac{x - y}{f(x,y)}\right|" data-equation="eq:relative_difference">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/utils/relative-difference/docs/img/equation_relative_difference.svg" alt="Relative difference">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/utils/relative-difference/docs/img/equation_relative_difference.svg" alt="Relative difference">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ where `|x-y|` is the [absolute difference][@stdlib/math/base/utils/absolute-diff
 <!-- <equation class="equation" label="eq:scale_functions" align="center" raw="\begin{align*}f(x,y) &= \max(|x|, |y|)\\f(x,y) &= \max(x,y)\\ f(x,y) &= \min(|x|,|y|)\\f(x,y) &= \min(x,y) \\f(x,y) &= \frac{|x|+|y|}{2} \\f(x,y) &= \frac{x + y}{2}\end{align*}" alt="Scale functions"> -->
 
 <div class="equation" align="center" data-raw-text="\begin{align*}f(x,y) &amp;= \max(|x|, |y|)\\f(x,y) &amp;= \max(x,y)\\ f(x,y) &amp;= \min(|x|,|y|)\\f(x,y) &amp;= \min(x,y) \\f(x,y) &amp;= \frac{|x|+|y|}{2} \\f(x,y) &amp;= \frac{x + y}{2}\end{align*}" data-equation="eq:scale_functions">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/utils/relative-difference/docs/img/equation_scale_functions.svg" alt="Scale functions">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/utils/relative-difference/docs/img/equation_scale_functions.svg" alt="Scale functions">
     <br>
 </div>
 

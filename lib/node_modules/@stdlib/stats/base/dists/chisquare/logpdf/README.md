@@ -29,7 +29,7 @@ The [probability density function][pdf] (PDF) for a [chi-squared][chisquare-dist
 <!-- <equation class="equation" label="eq:chisquare_pdf" align="center" raw="{\frac{1}{2^{\frac {k}{2}}\Gamma\left({\frac{k}{2}}\right)}}\;x^{{\frac {k}{2}}-1}e^{-{\frac {x}{2}}}" alt="Probability density function (PDF) for a chi-squared distribution."> -->
 
 <div class="equation" align="center" data-raw-text="{\frac{1}{2^{\frac {k}{2}}\Gamma\left({\frac{k}{2}}\right)}}\;x^{{\frac {k}{2}}-1}e^{-{\frac {x}{2}}}" data-equation="eq:chisquare_pdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/logpdf/docs/img/equation_chisquare_pdf.svg" alt="Probability density function (PDF) for a chi-squared distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/logpdf/docs/img/equation_chisquare_pdf.svg" alt="Probability density function (PDF) for a chi-squared distribution.">
     <br>
 </div>
 

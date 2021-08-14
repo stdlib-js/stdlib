@@ -29,7 +29,7 @@ The [mean percentage error][mean-percentage-error] is defined as
 <!-- <equation class="equation" label="eq:mean_percentage_error" align="center" raw="\operatorname{MPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \frac{a_i - f_i}{a_i}" alt="Equation for the mean percentage error."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{MPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \frac{a_i - f_i}{a_i}" data-equation="eq:mean_percentage_error">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/2acedf866c9a4f1353af22f95780535612c5ee06/lib/node_modules/@stdlib/stats/incr/mpe/docs/img/equation_mean_percentage_error.svg" alt="Equation for the mean percentage error.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2acedf866c9a4f1353af22f95780535612c5ee06/lib/node_modules/@stdlib/stats/incr/mpe/docs/img/equation_mean_percentage_error.svg" alt="Equation for the mean percentage error.">
     <br>
 </div>
 

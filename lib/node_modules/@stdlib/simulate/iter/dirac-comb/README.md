@@ -31,7 +31,7 @@ A Dirac comb is represented by the following equation
 <!-- <equation class="equation" label="eq:dirac_comb" align="center" raw="f(t; T, \varphi) = \delta((t-\varphi) \bmod T)" alt="Equation for a Dirac comb."> -->
 
 <div class="equation" align="center" data-raw-text="f(t; T, \varphi) = \delta((t-\varphi) \bmod T)" data-equation="eq:dirac_comb">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/dirac-comb/docs/img/equation_dirac_comb.svg" alt="Equation for a Dirac comb.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/dirac-comb/docs/img/equation_dirac_comb.svg" alt="Equation for a Dirac comb.">
     <br>
 </div>
 

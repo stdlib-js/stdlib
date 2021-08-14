@@ -31,7 +31,7 @@ The [entropy][entropy] (in [nats][nats]) for a [Poisson][poisson-distribution] r
 <!-- <equation class="equation" label="eq:poisson_entropy" align="center" raw="H\left( X \right) = \lambda [1-\log(\lambda )]+e^{-\lambda }\sum_{k=0}^{\infty }{\frac{\lambda ^{k}\log(k!)}{k!}}" alt="Entropy for a Poisson distribution."> -->
 
 <div class="equation" align="center" data-raw-text="H\left( X \right) = \lambda [1-\log(\lambda )]+e^{-\lambda }\sum_{k=0}^{\infty }{\frac{\lambda ^{k}\log(k!)}{k!}}" data-equation="eq:poisson_entropy">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/poisson/entropy/docs/img/equation_poisson_entropy.svg" alt="Entropy for a Poisson distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/poisson/entropy/docs/img/equation_poisson_entropy.svg" alt="Entropy for a Poisson distribution.">
     <br>
 </div>
 

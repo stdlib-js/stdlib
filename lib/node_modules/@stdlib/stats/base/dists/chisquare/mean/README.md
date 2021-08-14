@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [chi-squared][chisquare-distribution]
 <!-- <equation class="equation" label="eq:chisquare_expectation" align="center" raw="\mathbb{E}\left[ X \right] = k" alt="Expected value for a chi-squared distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = k" data-equation="eq:chisquare_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/mean/docs/img/equation_chisquare_expectation.svg" alt="Expected value for a chi-squared distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/mean/docs/img/equation_chisquare_expectation.svg" alt="Expected value for a chi-squared distribution.">
     <br>
 </div>
 

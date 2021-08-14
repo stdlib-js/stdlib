@@ -31,7 +31,7 @@ The [variance][variance] for a [Gumbel][gumbel-distribution] random variable wit
 <!-- <equation class="equation" label="eq:gumbel_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{\pi^{2}}{6}\,\beta^{2}" alt="Variance for a Gumbel distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{\pi^{2}}{6}\,\beta^{2}" data-equation="eq:gumbel_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/gumbel/variance/docs/img/equation_gumbel_variance.svg" alt="Variance for a Gumbel distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/gumbel/variance/docs/img/equation_gumbel_variance.svg" alt="Variance for a Gumbel distribution.">
     <br>
 </div>
 

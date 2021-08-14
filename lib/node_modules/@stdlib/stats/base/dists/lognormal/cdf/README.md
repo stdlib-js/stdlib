@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [lognormal][lognormal-distribu
 <!-- <equation class="equation" label="eq:cdf" align="center" raw="F(x;\mu,\sigma)=\frac12 + \frac12\,\operatorname{erf}\left[\frac{\ln x-\mu}{\sqrt{2}\sigma}\right]" alt="Cumulative distribution function for a lognormal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="F(x;\mu,\sigma)=\frac12 + \frac12\,\operatorname{erf}\left[\frac{\ln x-\mu}{\sqrt{2}\sigma}\right]" data-equation="eq:cdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/lognormal/cdf/docs/img/equation_cdf.svg" alt="Cumulative distribution function for a lognormal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/lognormal/cdf/docs/img/equation_cdf.svg" alt="Cumulative distribution function for a lognormal distribution.">
     <br>
 </div>
 

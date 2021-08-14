@@ -29,7 +29,7 @@ Image of Karl Blossfeldt's gelatin silver print [_Acanthus mollis_][@blossfeldt:
 <!-- <image align="center" src="./data/image.jpg" alt="Acanthus mollis"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/30236137d43c6a0dc458588e66527f6762e10634/lib/node_modules/%40stdlib/datasets/img-acanthus-mollis/data/image.jpg" alt="Acanthus mollis">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@30236137d43c6a0dc458588e66527f6762e10634/lib/node_modules/%40stdlib/datasets/img-acanthus-mollis/data/image.jpg" alt="Acanthus mollis">
     <br>
 </div>
 

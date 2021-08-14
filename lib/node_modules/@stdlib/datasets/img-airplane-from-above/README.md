@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Airplane, viewed from above looking down"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3e637ee13c3e5de3476b7f7f83938466098ae13f/lib/node_modules/@stdlib/datasets/img-airplane-from-above/data/image.jpg" alt="Airplane, viewed from above looking down">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3e637ee13c3e5de3476b7f7f83938466098ae13f/lib/node_modules/@stdlib/datasets/img-airplane-from-above/data/image.jpg" alt="Airplane, viewed from above looking down">
     <br>
 </div>
 

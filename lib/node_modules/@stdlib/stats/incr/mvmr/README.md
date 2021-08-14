@@ -29,7 +29,7 @@ For a window of size `W`, the [unbiased sample variance][sample-variance] is def
 <!-- <equation class="equation" label="eq:unbiased_sample_variance" align="center" raw="s^2 = \frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2" alt="Equation for the unbiased sample variance."> -->
 
 <div class="equation" align="center" data-raw-text="s^2 = \frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2" data-equation="eq:unbiased_sample_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/164b8f1010c4535340eed9ad0b2af32c4a19863c/lib/node_modules/@stdlib/stats/incr/mvmr/docs/img/equation_unbiased_sample_variance.svg" alt="Equation for the unbiased sample variance.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@164b8f1010c4535340eed9ad0b2af32c4a19863c/lib/node_modules/@stdlib/stats/incr/mvmr/docs/img/equation_unbiased_sample_variance.svg" alt="Equation for the unbiased sample variance.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ and the [arithmetic mean][arithmetic-mean] is defined as
 <!-- <equation class="equation" label="eq:arithmetic_mean" align="center" raw="\bar{x} = \frac{1}{W} \sum_{i=0}^{W-1} x_i" alt="Equation for the arithmetic mean."> -->
 
 <div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{W} \sum_{i=0}^{W-1} x_i" data-equation="eq:arithmetic_mean">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/164b8f1010c4535340eed9ad0b2af32c4a19863c/lib/node_modules/@stdlib/stats/incr/mvmr/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@164b8f1010c4535340eed9ad0b2af32c4a19863c/lib/node_modules/@stdlib/stats/incr/mvmr/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
     <br>
 </div>
 
@@ -51,7 +51,7 @@ The [variance-to-mean ratio][variance-to-mean-ratio] (VMR) is thus defined as
 <!-- <equation class="equation" label="eq:variance_to_mean_ratio" align="center" raw="F = \frac{s^2}{\bar{x}}" alt="Equation for the variance-to-mean ratio (VMR)."> -->
 
 <div class="equation" align="center" data-raw-text="F = \frac{s^2}{\bar{x}}" data-equation="eq:variance_to_mean_ratio">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/164b8f1010c4535340eed9ad0b2af32c4a19863c/lib/node_modules/@stdlib/stats/incr/mvmr/docs/img/equation_variance_to_mean_ratio.svg" alt="Equation for the variance-to-mean ratio (VMR).">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@164b8f1010c4535340eed9ad0b2af32c4a19863c/lib/node_modules/@stdlib/stats/incr/mvmr/docs/img/equation_variance_to_mean_ratio.svg" alt="Equation for the variance-to-mean ratio (VMR).">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [lognormal][lognormal-distrib
 <!-- <equation class="equation" label="eq:lognormal_variance" align="center" raw="\sigma = \sqrt{ [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}}) }" alt="Standard deviation for a lognormal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ [\exp({\sigma^{2}})-1] \cdot \exp({2\mu +\sigma^{2}}) }" data-equation="eq:lognormal_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/lognormal/stdev/docs/img/equation_lognormal_variance.svg" alt="Standard deviation for a lognormal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/lognormal/stdev/docs/img/equation_lognormal_variance.svg" alt="Standard deviation for a lognormal distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [median][median] for a [raised cosine][cosine-distribution] random variable 
 <!-- <equation class="equation" label="eq:cosine_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a raised cosine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:cosine_median">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/median/docs/img/equation_cosine_median.svg" alt="Median for a raised cosine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/median/docs/img/equation_cosine_median.svg" alt="Median for a raised cosine distribution.">
     <br>
 </div>
 

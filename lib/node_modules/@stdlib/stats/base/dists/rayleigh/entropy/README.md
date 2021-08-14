@@ -31,7 +31,7 @@ The [differential entropy][entropy] (in [nats][nats]) for a [Rayleigh][rayleigh-
 <!-- <equation class="equation" label="eq:rayleigh_entropy" align="center" raw="h\left( X \right) = 1+\ln \left({\frac {\sigma }{\sqrt {2}}}\right)+{\frac {\gamma }{2}}" alt="Differential entropy for a Rayleigh distribution."> -->
 
 <div class="equation" align="center" data-raw-text="h\left( X \right) = 1+\ln \left({\frac {\sigma }{\sqrt {2}}}\right)+{\frac {\gamma }{2}}" data-equation="eq:rayleigh_entropy">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/entropy/docs/img/equation_rayleigh_entropy.svg" alt="Differential entropy for a Rayleigh distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/entropy/docs/img/equation_rayleigh_entropy.svg" alt="Differential entropy for a Rayleigh distribution.">
     <br>
 </div>
 

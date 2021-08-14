@@ -31,7 +31,7 @@ The [moment-generating function][mgf] for a [Weibull][weibull-distribution] rand
 <!-- <equation class="equation" label="eq:weibull_mgf" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \sum_{n=0}^\infty \frac{t^n\lambda^n}{n!}\Gamma\left(1+\frac{n}{k}\right)" alt="Moment-generating function (MGF) for a Weibull distribution."> -->
 
 <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \sum_{n=0}^\infty \frac{t^n\lambda^n}{n!}\Gamma\left(1+\frac{n}{k}\right)" data-equation="eq:weibull_mgf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/weibull/mgf/docs/img/equation_weibull_mgf.svg" alt="Moment-generating function (MGF) for a Weibull distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/weibull/mgf/docs/img/equation_weibull_mgf.svg" alt="Moment-generating function (MGF) for a Weibull distribution.">
     <br>
 </div>
 

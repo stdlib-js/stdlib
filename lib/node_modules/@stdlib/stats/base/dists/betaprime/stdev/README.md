@@ -31,7 +31,7 @@ The [standard deviation][stdev] for a [beta prime][betaprime-distribution] rando
 <!-- <equation class="equation" label="eq:betaprime_stdev" align="center" raw="\sigma = \sqrt{ \tfrac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}} }" alt="Standard deviation for a beta prime distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ \tfrac{\alpha(\alpha +\beta -1)}{(\beta-2)(\beta-1)^{2}} }" data-equation="eq:betaprime_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/betaprime/stdev/docs/img/equation_betaprime_stdev.svg" alt="Standard deviation for a beta prime distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/betaprime/stdev/docs/img/equation_betaprime_stdev.svg" alt="Standard deviation for a beta prime distribution.">
     <br>
 </div>
 

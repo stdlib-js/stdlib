@@ -31,7 +31,7 @@ The [variance][variance] for a [logistic][logistic-distribution] random variable
 <!-- <equation class="equation" label="eq:logistic_variance" align="center" raw="\operatorname{Var}\left( X \right) = \tfrac{s^{2}\pi^{2}}{3}" alt="Variance for a logistic distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \tfrac{s^{2}\pi^{2}}{3}" data-equation="eq:logistic_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/variance/docs/img/equation_logistic_variance.svg" alt="Variance for a logistic distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/variance/docs/img/equation_logistic_variance.svg" alt="Variance for a logistic distribution.">
     <br>
 </div>
 

@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [Rayleigh][rayleigh-distributi
 <!-- <equation class="equation" label="eq:rayleigh_cdf" align="center" raw="F(x;\sigma) = \begin{cases} 0 & \text{ for } x < 0 \\ 1 - e^{-x^2/2\sigma^2} & \text{ for } x \ge 0 \end{cases}" alt="Cumulative distribution function for a Rayleigh distribution."> -->
 
 <div class="equation" align="center" data-raw-text="F(x;\sigma) = \begin{cases} 0 &amp; \text{ for } x &lt; 0 \\ 1 - e^{-x^2/2\sigma^2} &amp; \text{ for } x \ge 0 \end{cases}" data-equation="eq:rayleigh_cdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/logcdf/docs/img/equation_rayleigh_cdf.svg" alt="Cumulative distribution function for a Rayleigh distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/logcdf/docs/img/equation_rayleigh_cdf.svg" alt="Cumulative distribution function for a Rayleigh distribution.">
     <br>
 </div>
 

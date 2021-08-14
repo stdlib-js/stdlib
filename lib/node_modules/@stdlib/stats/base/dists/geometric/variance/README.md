@@ -31,7 +31,7 @@ The [variance][variance] for a [geometric][geometric-distribution] random variab
 <!-- <equation class="equation" label="eq:geometric_variance" align="center" raw="\operatorname{Var}\left( X \right) = \frac{1-p}{p^{2}}" alt="Variance for a geometric distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \frac{1-p}{p^{2}}" data-equation="eq:geometric_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/geometric/variance/docs/img/equation_geometric_variance.svg" alt="Variance for a geometric distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/geometric/variance/docs/img/equation_geometric_variance.svg" alt="Variance for a geometric distribution.">
     <br>
 </div>
 

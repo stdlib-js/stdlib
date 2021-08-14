@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [beta][beta-distribution] random variable 
 <!-- <equation class="equation" label="eq:beta_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac{6[(\alpha - \beta)^2 (\alpha +\beta + 1) - \alpha \beta (\alpha + \beta + 2)]}{\alpha \beta (\alpha + \beta + 2) (\alpha + \beta + 3)}" alt="Excess kurtosis for a beta distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac{6[(\alpha - \beta)^2 (\alpha +\beta + 1) - \alpha \beta (\alpha + \beta + 2)]}{\alpha \beta (\alpha + \beta + 2) (\alpha + \beta + 3)}" data-equation="eq:beta_kurtosis">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/beta/kurtosis/docs/img/equation_beta_kurtosis.svg" alt="Excess kurtosis for a beta distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/beta/kurtosis/docs/img/equation_beta_kurtosis.svg" alt="Excess kurtosis for a beta distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [standard deviation][stdev] for a [chi-squared][chisquare-distribution] rand
 <!-- <equation class="equation" label="eq:stdev" align="center" raw="\sigma = \sqrt{2k}" alt="Standard deviation for a chi-squared distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{2k}" data-equation="eq:stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/stdev/docs/img/equation_stdev.svg" alt="Standard deviation for a chi-squared distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/stdev/docs/img/equation_stdev.svg" alt="Standard deviation for a chi-squared distribution.">
     <br>
 </div>
 

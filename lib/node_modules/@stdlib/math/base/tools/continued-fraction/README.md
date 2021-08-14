@@ -37,7 +37,7 @@ Evaluates the continued fraction described by the supplied `generator` argument.
 <!-- <equation class="equation" label="eq:continued_fraction_a" align="center" raw="\frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4}+\ldots}}}" alt="Continued fraction without leading b_0 term"> -->
 
 <div class="equation" align="center" data-raw-text="\frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4}+\ldots}}}" data-equation="eq:continued_fraction_a">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/continued-fraction/docs/img/equation_continued_fraction_a.svg" alt="Continued fraction without leading b_0 term">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/continued-fraction/docs/img/equation_continued_fraction_a.svg" alt="Continued fraction without leading b_0 term">
     <br>
 </div>
 
@@ -92,7 +92,7 @@ To evaluate
 <!-- <equation class="equation" label="eq:continued_fraction_b" align="center" raw="b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4}+\ldots}}}" alt="Continued fraction with leading b_0 term"> -->
 
 <div class="equation" align="center" data-raw-text="b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4}+\ldots}}}" data-equation="eq:continued_fraction_b">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/continued-fraction/docs/img/equation_continued_fraction_b.svg" alt="Continued fraction with leading b_0 term">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/continued-fraction/docs/img/equation_continued_fraction_b.svg" alt="Continued fraction with leading b_0 term">
     <br>
 </div>
 

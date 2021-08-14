@@ -29,7 +29,7 @@ Image of Karl Blossfeldt's gelatin silver print [_Allium ostrowskianum_][@blossf
 <!-- <image align="center" src="./data/image.jpg" alt="Allium oreophilum"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/0ecba7517853b9d2285fb7f1cc37745c3f0b335b/lib/node_modules/@stdlib/datasets/img-allium-oreophilum/data/image.jpg" alt="Allium oreophilum">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0ecba7517853b9d2285fb7f1cc37745c3f0b335b/lib/node_modules/@stdlib/datasets/img-allium-oreophilum/data/image.jpg" alt="Allium oreophilum">
     <br>
 </div>
 

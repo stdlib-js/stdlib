@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [Cauchy][cauchy-distribution] r
 <!-- <equation class="equation" label="eq:cauchy_cauchy_quantile_function" align="center" raw="Q(p; x_0,\gamma) = x_0 + \gamma\,\tan\left[\pi\left(p-\tfrac{1}{2}\right)\right]" alt="Quantile function for a Cauchy distribution."> -->
 
 <div class="equation" align="center" data-raw-text="Q(p; x_0,\gamma) = x_0 + \gamma\,\tan\left[\pi\left(p-\tfrac{1}{2}\right)\right]" data-equation="eq:cauchy_cauchy_quantile_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cauchy/quantile/docs/img/equation_cauchy_cauchy_quantile_function.svg" alt="Quantile function for a Cauchy distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cauchy/quantile/docs/img/equation_cauchy_cauchy_quantile_function.svg" alt="Quantile function for a Cauchy distribution.">
     <br>
 </div>
 

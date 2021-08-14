@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [logistic][logistic-distributio
 <!-- <equation class="equation" label="eq:logistic_quantile_function" align="center" raw="Q(p;\mu,s)= \mu + s \ln \left( \frac{p}{1-p} \right )" alt="Quantile function for a logistic distribution."> -->
 
 <div class="equation" align="center" data-raw-text="Q(p;\mu,s)= \mu + s \ln \left( \frac{p}{1-p} \right )" data-equation="eq:logistic_quantile_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/quantile/docs/img/equation_logistic_quantile_function.svg" alt="Quantile function for a logistic distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/quantile/docs/img/equation_logistic_quantile_function.svg" alt="Quantile function for a logistic distribution.">
     <br>
 </div>
 

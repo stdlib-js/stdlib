@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [chi][chi-distribution] random variab
 <!-- <equation class="equation" label="eq:chi_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \sqrt{2}\,\frac{\Gamma((k+1)/2)}{\Gamma(k/2)}" alt="Expected value for a chi distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \sqrt{2}\,\frac{\Gamma((k+1)/2)}{\Gamma(k/2)}" data-equation="eq:chi_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chi/mean/docs/img/equation_chi_expectation.svg" alt="Expected value for a chi distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chi/mean/docs/img/equation_chi_expectation.svg" alt="Expected value for a chi distribution.">
     <br>
 </div>
 

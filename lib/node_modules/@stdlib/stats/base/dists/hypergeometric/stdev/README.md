@@ -31,7 +31,7 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 <!-- <equation class="equation" label="eq:hypergeometric_stdev" align="center" raw="\sigma = \sqrt{ n{K \over N}{(N-K) \over N}{N-n \over N-1} }" alt="Standard deviation for a hypergeometric distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{ n{K \over N}{(N-K) \over N}{N-n \over N-1} }" data-equation="eq:hypergeometric_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/stdev/docs/img/equation_hypergeometric_stdev.svg" alt="Standard deviation for a hypergeometric distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/stdev/docs/img/equation_hypergeometric_stdev.svg" alt="Standard deviation for a hypergeometric distribution.">
     <br>
 </div>
 
