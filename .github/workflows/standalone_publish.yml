@@ -69,7 +69,7 @@ jobs:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
-          node-version: 15
+          node-version: 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
