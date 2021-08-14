@@ -98,7 +98,7 @@ jobs:
       # Perform install sequence (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Perform install sequence'
         run: |
-          npm install || npm install || npm install
+          make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 30
 
       # Run the build task:

@@ -59,10 +59,10 @@ jobs:
           node-version: 15
         timeout-minutes: 5
 
-      # Install dependencies:
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
         run: |
-          make install-node-modules
+          make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
       # Retrieve list of changed stdlib packages in a push or pull request:
