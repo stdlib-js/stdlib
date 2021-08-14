@@ -134,6 +134,8 @@ var v = y.get( 0, 1 );
 
 The output array must be the same data "kind" (i.e., [`ndarray`][@stdlib/ndarray/ctor] or array-like object) as the input array. For example, if `x` is an [`ndarray`][@stdlib/ndarray/ctor], `y` must also be an [`ndarray`][@stdlib/ndarray/ctor]. Similarly, if `x` is an array-like object, `y` must also be an array-like object.
 
+TODO: broadcasting discussion and example(s).
+
 </section>
 
 <!-- /.usage -->
