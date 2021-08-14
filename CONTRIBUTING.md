@@ -70,7 +70,7 @@ For instructions on how to setup and configure your environment, be sure to
 
 -   read and follow the [development guide][stdlib-development].
 
-If you had found a bug that you would like to fix,
+If you have found a bug that you would like to fix,
 
 -   file an [issue][stdlib-issues] on the project GitHub issue [tracker][stdlib-issues] describing the bug as instructed [above](#issues).
 -   wait for feedback.
