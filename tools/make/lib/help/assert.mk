@@ -36,6 +36,8 @@
 #/
 assert.%:
 	$(QUIET) if [[ "${${*}}" = "" ]]; then \
-		echo "\nError: You must set the environment variable: ${*}.\n"; \
+		echo ''; \
+		echo "Error: invalid operation. Must set the environment variable: ${*}."; \
+		echo ''; \
 		exit 1; \
 	fi
