@@ -16,24 +16,21 @@
 # limitations under the License.
 #/
 
+# VARIABLES #
+
+# Define the path to an executable for displaying dependency diagnostics info:
+DEPS_DIAGNOSTICS ?= $(TOOLS_DIR)/scripts/deps_info
+
+
 # RULES #
 
 #/
-# Prints the runtime value of a `Makefile` variable.
-#
-# ## Notes
-#
-# -   The rule uses the following format:
-#
-#     ```bash
-#     $ make inspect.<variable>
-#     ```
+# Prints information regarding installed and/or missing dependencies.
 #
 # @example
-# make inspect.ROOT_DIR
-#
-# @example
-# make inspect.CC
+# make deps-diagnostics
 #/
-inspect.%:
-	$(QUIET) echo '$*=$($*)'
+deps-diagnostics:
+	$(QUIET) $(DEPS_DIAGNOSTICS)
+
+.PHONY: deps-diagnostics

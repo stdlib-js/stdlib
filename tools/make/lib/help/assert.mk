@@ -19,21 +19,23 @@
 # RULES #
 
 #/
-# Prints the runtime value of a `Makefile` variable.
+# Asserts that a `Makefile` variable is set.
 #
 # ## Notes
 #
 # -   The rule uses the following format:
 #
 #     ```bash
-#     $ make inspect.<variable>
+#     $ make assert.<variable>
 #     ```
 #
-# @example
-# make inspect.ROOT_DIR
+# -   If a variable is **not** set, the recipe exits with a non-zero exit code.
 #
 # @example
-# make inspect.CC
+# make assert.CXX
 #/
-inspect.%:
-	$(QUIET) echo '$*=$($*)'
+assert.%:
+	$(QUIET) if [[ "${${*}}" = "" ]]; then \
+		echo "\nError: You must set the environment variable: ${*}.\n"; \
+		exit 1; \
+	fi
