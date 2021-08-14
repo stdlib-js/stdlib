@@ -32,13 +32,21 @@ JSDELIVR_URL_FLAGS ?= \
 	--slug stdlib-js/stdlib/$(JSDELIVR_COMMIT_HASH)
 
 
-# TARGETS #
+# RULES #
 
-# Generate an asset link.
+#/
+# Generates an asset URL for inclusion in a project Markdown file.
 #
-# This target generates an asset link based on the current Git hash for inclusion in a project Markdown file.
-
-markdown-asset-link: $(NODE_MODULES)
+# ## Notes
+#
+# -   The asset URL is derived the current Git hash.
+#
+# @param {string} MARKDOWN_ASSET_PATH - asset file path relative to the project root directory (e.g., `MARKDOWN_ASSET_PATH=./README.md`)
+#
+# @example
+# make markdown-asset-url MARKDOWN_ASSET_PATH='./README.md'
+#/
+markdown-asset-url: $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(JSDELIVR_URL) $(JSDELIVR_URL_FLAGS) $(MARKDOWN_ASSET_PATH)
 
-.PHONY: markdown-asset-link
+.PHONY: markdown-asset-url

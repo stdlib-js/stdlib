@@ -19,49 +19,45 @@
 # VARIABLES #
 
 # Define the path to the remark configuration file:
-REMARK_TOC_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
+REMARK_PKG_URLS_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark ignore file:
-# REMARK_TOC_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
-REMARK_TOC_IGNORE ?= $(ROOT_DIR)/.remarkignore
+# REMARK_PKG_URLS_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
+REMARK_PKG_URLS_IGNORE ?= $(ROOT_DIR)/.remarkignore
 
 # Define the path to a plugin which processes Markdown table of contents comments:
-REMARK_TOC_PLUGIN ?= $(TOOLS_PKGS_DIR)/remark/plugins/remark-namespace-toc
-REMARK_TOC_PLUGIN_SETTINGS ?=
-REMARK_TOC_PLUGIN_FLAGS ?= --use $(REMARK_TOC_PLUGIN)=$(REMARK_TOC_PLUGIN_SETTINGS)
+REMARK_PKG_URLS_PLUGIN ?= $(TOOLS_PKGS_DIR)/remark/plugins/remark-stdlib-urls-github
+REMARK_PKG_URLS_PLUGIN_SETTINGS ?=
+REMARK_PKG_URLS_PLUGIN_FLAGS ?= --use $(REMARK_PKG_URLS_PLUGIN)=$(REMARK_PKG_URLS_PLUGIN_SETTINGS)
 
 # Define command-line options when invoking the remark executable:
-REMARK_TOC_FLAGS ?= \
+REMARK_PKG_URLS_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
-	--rc-path $(REMARK_TOC_CONF) \
-	--ignore-path $(REMARK_TOC_IGNORE)
+	--rc-path $(REMARK_PKG_URLS_CONF) \
+	--ignore-path $(REMARK_PKG_URLS_IGNORE)
 
 # Define the remark output option:
-REMARK_TOC_OUTPUT_FLAG ?= --output
+REMARK_PKG_URLS_OUTPUT_FLAG ?= --output
 
 
 # RULES #
 
 #/
-# Updates the table of contents of namespace Markdown files.
-#
-# ## Notes
-#
-# -   In order to update table of contents, a namespace Markdown file must contain namespace table of contents comments.
+# Updates Markdown files by resolving package identifiers to GitHub repository URLs.
 #
 # @param {string} [MARKDOWN_FILTER] - file path pattern (e.g., `.*/math/base/special/.*`)
 # @param {string} [MARKDOWN_PATTERN] - filename pattern (e.g., `*.md`)
 #
 # @example
-# make markdown-namespace-tocs
+# make markdown-pkg-urls
 #
 # @example
-# make markdown-namespace-tocs MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
-#/
-markdown-namespace-tocs: $(NODE_MODULES) assert-clean-working-directory
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_TOC_FLAGS) \
-		$(REMARK_TOC_PLUGIN_FLAGS) \
-		$(REMARK_TOC_OUTPUT_FLAG)
+# make markdown-pkg-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 
-.PHONY: markdown-namespace-tocs
+markdown-pkg-urls: $(NODE_MODULES) assert-clean-working-directory
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
+		$(REMARK_PKG_URLS_FLAGS) \
+		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
+		$(REMARK_PKG_URLS_OUTPUT_FLAG)
+
+.PHONY: markdown-pkg-urls
