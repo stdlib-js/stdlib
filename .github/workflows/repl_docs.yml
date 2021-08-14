@@ -97,6 +97,7 @@ jobs:
             @stdlib-js/reviewers
 
           commit-message: 'Update REPL namespace'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
             documentation
             automated-pr
