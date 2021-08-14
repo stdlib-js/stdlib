@@ -35,13 +35,13 @@ JSDELIVR_URL_FLAGS ?= \
 # RULES #
 
 #/
-# Generates an asset URL for inclusion in a project Markdown file.
+# Generates an asset URL for inclusion in a Markdown file.
 #
 # ## Notes
 #
 # -   The asset URL is derived the current Git hash.
 #
-# @param {string} MARKDOWN_ASSET_PATH - asset file path relative to the project root directory (e.g., `MARKDOWN_ASSET_PATH=./README.md`)
+# @param {string} MARKDOWN_ASSET_PATH - asset file path relative to the project root directory (e.g., `MARKDOWN_ASSET_PATH='./README.md'`)
 #
 # @example
 # make markdown-asset-url MARKDOWN_ASSET_PATH='./README.md'
