@@ -31,7 +31,7 @@ jobs:
   update:
 
     # Define a display name:
-    name: "Update TypeScript Declarations"
+    name: 'Update TypeScript Declarations'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

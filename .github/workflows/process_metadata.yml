@@ -29,7 +29,7 @@ jobs:
   # Define a job for processing commit message metadata...
   process:
     # Define a display name:
-    name: "Process Metadata"
+    name: 'Process Metadata'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest

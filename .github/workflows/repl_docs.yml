@@ -42,7 +42,7 @@ jobs:
   update:
 
     # Define a display name:
-    name: "Update REPL docs"
+    name: 'Update REPL docs'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
