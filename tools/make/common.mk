@@ -208,9 +208,6 @@ NODE ?= node
 # Define the command for `npm`:
 NPM ?= npm
 
-# Define the command for generating an npm gzipped archive:
-NPM_PACK ?= npm pack
-
 # Define the command for `julia`:
 JULIA ?= julia
 
