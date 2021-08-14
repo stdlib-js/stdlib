@@ -81,6 +81,10 @@ jobs:
 
             -   updates namespace TypeScript declarations
 
+            * * *
+
+            @stdlib-js/reviewers
+
           commit-message: 'Update namespace TypeScript declarations'
           labels: |
             documentation

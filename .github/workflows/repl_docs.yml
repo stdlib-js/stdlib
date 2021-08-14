@@ -92,6 +92,10 @@ jobs:
 
             -   updates the REPL namespace
 
+            * * *
+
+            @stdlib-js/reviewers
+
           commit-message: 'Update REPL namespace'
           labels: |
             documentation
