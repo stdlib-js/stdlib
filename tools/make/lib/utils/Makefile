@@ -31,3 +31,5 @@ assert-clean-working-directory:
 		echo ''; \
 		exit 1; \
 	fi
+
+.PHONY: assert-clean-working-directory
