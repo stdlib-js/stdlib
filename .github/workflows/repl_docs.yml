@@ -86,6 +86,7 @@ jobs:
       - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
         with:
+          branch: update-repl-docs
           commit-message: 'Update REPL namespace'
           title: 'Update REPL namespace'
           body: |

@@ -75,6 +75,7 @@ jobs:
       - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
         with:
+          branch: update-namespace-declarations
           commit-message: 'Update namespace TypeScript declarations'
           title: 'Update namespace TypeScript declarations'
           body: |
