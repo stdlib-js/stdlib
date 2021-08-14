@@ -31,7 +31,7 @@ The [moment-generating function][mgf] for a [chi-squared][chisquare-distribution
 <!-- <equation class="equation" label="eq:chisquare_mgf" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \left( 1 - 2t \right )^{-k/2} \text{ for } t < \tfrac{1}{2}" alt="Moment-generating function (MGF) for a chi-squared distribution."> -->
 
 <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \left( 1 - 2t \right )^{-k/2} \text{ for } t &lt; \tfrac{1}{2}" data-equation="eq:chisquare_mgf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/mgf/docs/img/equation_chisquare_mgf.svg" alt="Moment-generating function (MGF) for a chi-squared distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/mgf/docs/img/equation_chisquare_mgf.svg" alt="Moment-generating function (MGF) for a chi-squared distribution.">
     <br>
 </div>
 

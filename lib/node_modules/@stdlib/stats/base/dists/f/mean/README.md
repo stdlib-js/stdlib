@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [F][f-distribution] random variable w
 <!-- <equation class="equation" label="eq:f_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{d_2}{d_2-2}" alt="Expected value for an F distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{d_2}{d_2-2}" data-equation="eq:f_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/mean/docs/img/equation_f_expectation.svg" alt="Expected value for an F distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/mean/docs/img/equation_f_expectation.svg" alt="Expected value for an F distribution.">
     <br>
 </div>
 

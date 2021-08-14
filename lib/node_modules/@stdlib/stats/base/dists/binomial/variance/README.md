@@ -31,7 +31,7 @@ The [variance][variance] for a [binomial][binomial-distribution] random variable
 <!-- <equation class="equation" label="eq:binomial_variance" align="center" raw="\operatorname{Var}\left[ X \right] = n p (1-p)" alt="Variance for a binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left[ X \right] = n p (1-p)" data-equation="eq:binomial_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/variance/docs/img/equation_binomial_variance.svg" alt="Variance for a binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/variance/docs/img/equation_binomial_variance.svg" alt="Variance for a binomial distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [expected value][mean] for a [logistic][logistic-distribution] random variab
 <!-- <equation class="equation" label="eq:logistic_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \mu" alt="Expected value for a logistic distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \mu" data-equation="eq:logistic_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/mean/docs/img/equation_logistic_expectation.svg" alt="Expected value for a logistic distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/mean/docs/img/equation_logistic_expectation.svg" alt="Expected value for a logistic distribution.">
     <br>
 </div>
 

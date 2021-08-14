@@ -29,7 +29,7 @@ The [versed cosine][versed-cosine] is defined as
 <!-- <equation class="equation" label="eq:vercosine" align="center" raw="\operatorname{vercos}(\theta) = 1 + \cos \theta" alt="Versed cosine."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{vercos}(\theta) = 1 + \cos \theta" data-equation="eq:vercosine">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/vercos/docs/img/equation_vercosine.svg" alt="Versed cosine.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/vercos/docs/img/equation_vercosine.svg" alt="Versed cosine.">
     <br>
 </div>
 

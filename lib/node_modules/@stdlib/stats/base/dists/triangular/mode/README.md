@@ -31,7 +31,7 @@ The [mode][mode] for a [triangular][triangular-distribution] random variable wit
 <!-- <equation class="equation" label="eq:triangular_mode" align="center" raw="\operatorname{mode}\left( X \right) = c" alt="Mode for a triangular distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = c" data-equation="eq:triangular_mode">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/mode/docs/img/equation_triangular_mode.svg" alt="Mode for a triangular distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/mode/docs/img/equation_triangular_mode.svg" alt="Mode for a triangular distribution.">
     <br>
 </div>
 

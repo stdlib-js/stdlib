@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for an [inverse gamma][invgamma-dis
 <!-- <equation class="equation" label="eq:invgamma_stdev" align="center" raw="\sigma = \frac{\beta}{(\alpha-1)\sqrt{\alpha-2}}" alt="Standard deviation for an inverse gamma distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \frac{\beta}{(\alpha-1)\sqrt{\alpha-2}}" data-equation="eq:invgamma_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/invgamma/stdev/docs/img/equation_invgamma_stdev.svg" alt="Standard deviation for an inverse gamma distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/invgamma/stdev/docs/img/equation_invgamma_stdev.svg" alt="Standard deviation for an inverse gamma distribution.">
     <br>
 </div>
 

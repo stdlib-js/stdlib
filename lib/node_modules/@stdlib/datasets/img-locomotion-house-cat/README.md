@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Twenty-four views of a house cat"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/36886e59df0d611b6d80cc6d58c8107d756c01c3/lib/node_modules/@stdlib/datasets/img-locomotion-house-cat/data/image.jpg" alt="Twenty-four views of a house cat">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@36886e59df0d611b6d80cc6d58c8107d756c01c3/lib/node_modules/@stdlib/datasets/img-locomotion-house-cat/data/image.jpg" alt="Twenty-four views of a house cat">
     <br>
 </div>
 

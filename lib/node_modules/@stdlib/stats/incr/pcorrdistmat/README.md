@@ -29,7 +29,7 @@ A [sample Pearson product-moment correlation distance matrix][pearson-correlatio
 <!-- <equation class="equation" label="eq:pearson_distance" align="center" raw="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" alt="Equation for the Pearson product-moment correlation distance."> -->
 
 <div class="equation" align="center" data-raw-text="d_{x,y} = 1 - r_{x,y} = 1 - \frac{\operatorname{cov_n(x,y)}}{\sigma_x \sigma_y}" data-equation="eq:pearson_distance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/27e2a43c70db648bb5bbc3fd0cdee050c25adc0b/lib/node_modules/@stdlib/stats/incr/pcorrdistmat/docs/img/equation_pearson_distance.svg" alt="Equation for the Pearson product-moment correlation distance.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@27e2a43c70db648bb5bbc3fd0cdee050c25adc0b/lib/node_modules/@stdlib/stats/incr/pcorrdistmat/docs/img/equation_pearson_distance.svg" alt="Equation for the Pearson product-moment correlation distance.">
     <br>
 </div>
 

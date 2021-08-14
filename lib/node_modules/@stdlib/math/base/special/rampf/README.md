@@ -29,7 +29,7 @@ The [ramp function][ramp-function] is defined as
 <!-- <equation class="equation" label="eq:ramp_function" align="center" raw="R(x) = \begin{cases} x & \textrm{if}\ x \geq 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}" alt="Ramp function."> -->
 
 <div class="equation" align="center" data-raw-text="R(x) = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:ramp_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/math/base/special/rampf/docs/img/equation_ramp_function.svg" alt="Ramp function.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/math/base/special/rampf/docs/img/equation_ramp_function.svg" alt="Ramp function.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ or, alternatively, in terms of the `max` function
 <!-- <equation class="equation" label="eq:ramp_function_alternative_defn" align="center" raw="R(x) = \operatorname{max}( x, 0 )" alt="Ramp function alternative definition."> -->
 
 <div class="equation" align="center" data-raw-text="R(x) = \operatorname{max}( x, 0 )" data-equation="eq:ramp_function_alternative_defn">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/math/base/special/rampf/docs/img/equation_ramp_function_alternative_defn.svg" alt="Ramp function alternative definition.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/math/base/special/rampf/docs/img/equation_ramp_function_alternative_defn.svg" alt="Ramp function alternative definition.">
     <br>
 </div>
 

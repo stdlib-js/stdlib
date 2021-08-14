@@ -31,7 +31,7 @@ The [moment-generating function][mgf] for an [exponential][exponential-distribut
 <!-- <equation class="equation" label="eq:exponential_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\lambda}{\lambda-t}, \text{ for } t < \lambda" alt="Moment-generating function (MGF) for an exponential distribution."> -->
 
 <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\lambda}{\lambda-t}, \text{ for } t &lt; \lambda" data-equation="eq:exponential_mgf_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/exponential/mgf/docs/img/equation_exponential_mgf_function.svg" alt="Moment-generating function (MGF) for an exponential distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/exponential/mgf/docs/img/equation_exponential_mgf_function.svg" alt="Moment-generating function (MGF) for an exponential distribution.">
     <br>
 </div>
 

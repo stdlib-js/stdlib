@@ -29,7 +29,7 @@ The [probability density function][pdf] (PDF) for a [F][f-distribution] random v
 <!-- <equation class="equation" label="eq:f_pdf" align="center" raw="f(x; d_1,d_2) = \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)}" alt="Probability density function (PDF) for an F distribution."> -->
 
 <div class="equation" align="center" data-raw-text="f(x; d_1,d_2) = \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)}" data-equation="eq:f_pdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/pdf/docs/img/equation_f_pdf.svg" alt="Probability density function (PDF) for an F distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/pdf/docs/img/equation_f_pdf.svg" alt="Probability density function (PDF) for an F distribution.">
     <br>
 </div>
 

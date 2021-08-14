@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Nude male moving place"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/691d650497d47530efa650b2ad6bd6e48cf360fe/lib/node_modules/@stdlib/datasets/img-locomotion-nude-male/data/image.jpg" alt="Nude male moving in place">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@691d650497d47530efa650b2ad6bd6e48cf360fe/lib/node_modules/@stdlib/datasets/img-locomotion-nude-male/data/image.jpg" alt="Nude male moving in place">
     <br>
 </div>
 

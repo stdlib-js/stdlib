@@ -29,7 +29,7 @@ For a window of size `W`, the [mean squared error][mean-squared-error] is define
 <!-- <equation class="equation" label="eq:mean_squared_error" align="center" raw="\operatorname{MSE} = \frac{1}{W} \sum_{i=0}^{W-1} (y_i - x_i)^2" alt="Equation for the mean squared error."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{MSE} = \frac{1}{W} \sum_{i=0}^{W-1} (y_i - x_i)^2" data-equation="eq:mean_squared_error">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9cb3c4a2fcf92ca07ed60c34de1ceda40f75919c/lib/node_modules/@stdlib/stats/incr/mmse/docs/img/equation_mean_squared_error.svg" alt="Equation for the mean squared error.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9cb3c4a2fcf92ca07ed60c34de1ceda40f75919c/lib/node_modules/@stdlib/stats/incr/mmse/docs/img/equation_mean_squared_error.svg" alt="Equation for the mean squared error.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [differential entropy][entropy] (in [nats][nats]) for a [triangular][triangu
 <!-- <equation class="equation" label="eq:triangular_entropy" align="center" raw="h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)" alt="Differential entropy for a triangular distribution."> -->
 
 <div class="equation" align="center" data-raw-text="h\left( X \right) = \frac{1}{2} + \ln \left({\frac{b-a}{2}}\right)" data-equation="eq:triangular_entropy">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/entropy/docs/img/equation_triangular_entropy.svg" alt="Differential entropy for a triangular distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/entropy/docs/img/equation_triangular_entropy.svg" alt="Differential entropy for a triangular distribution.">
     <br>
 </div>
 

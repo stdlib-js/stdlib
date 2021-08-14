@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for an [arcsine][arcsine-distributio
 <!-- <equation class="equation" label="eq:arcsine_cdf" align="center" raw="F(x) = \frac{2}{\pi} \arcsin \left( \sqrt{\frac{x-a}{b-a}} \right)" alt="Cumulative distribution function for an arcsine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="F(x) = \frac{2}{\pi} \arcsin \left( \sqrt{\frac{x-a}{b-a}} \right)" data-equation="eq:arcsine_cdf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/arcsine/logcdf/docs/img/equation_arcsine_cdf.svg" alt="Cumulative distribution function for an arcsine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/arcsine/logcdf/docs/img/equation_arcsine_cdf.svg" alt="Cumulative distribution function for an arcsine distribution.">
     <br>
 </div>
 

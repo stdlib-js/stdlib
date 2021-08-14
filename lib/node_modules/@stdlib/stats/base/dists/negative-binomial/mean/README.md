@@ -31,7 +31,7 @@ The [mean][expected-value] for a [negative binomial][negative-binomial-distribut
 <!-- <equation class="equation" label="eq:negative_binomial_mean" align="center" raw="\mathbb{E} \left[ X \right] = \frac{pr}{1-p}" alt="Mean for a negative binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E} \left[ X \right] = \frac{pr}{1-p}" data-equation="eq:negative_binomial_mean">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/mean/docs/img/equation_negative_binomial_mean.svg" alt="Mean for a negative binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/mean/docs/img/equation_negative_binomial_mean.svg" alt="Mean for a negative binomial distribution.">
     <br>
 </div>
 

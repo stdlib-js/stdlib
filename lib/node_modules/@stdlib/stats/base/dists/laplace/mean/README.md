@@ -31,7 +31,7 @@ The [expected value][mean] for a [Laplace][laplace-distribution] random variable
 <!-- <equation class="equation" label="eq:laplace_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \mu" alt="Expected value for a Laplace distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \mu" data-equation="eq:laplace_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/laplace/mean/docs/img/equation_laplace_expectation.svg" alt="Expected value for a Laplace distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/laplace/mean/docs/img/equation_laplace_expectation.svg" alt="Expected value for a Laplace distribution.">
     <br>
 </div>
 

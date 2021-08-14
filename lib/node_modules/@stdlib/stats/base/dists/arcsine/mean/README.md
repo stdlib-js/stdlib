@@ -31,7 +31,7 @@ The [expected value][expected-value] for an [arcsine][arcsine-distribution] rand
 <!-- <equation class="equation" label="eq:arcsine_expectation" align="center" raw="\mathbb{E}\left[ X \right] = 0.5 \cdot ( a + b )" alt="Expected value for an arcsine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = 0.5 \cdot ( a + b )" data-equation="eq:arcsine_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/arcsine/mean/docs/img/equation_arcsine_expectation.svg" alt="Expected value for an arcsine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/arcsine/mean/docs/img/equation_arcsine_expectation.svg" alt="Expected value for an arcsine distribution.">
     <br>
 </div>
 

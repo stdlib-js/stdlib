@@ -31,7 +31,7 @@ The [median][median] for a [degenerate][degenerate-distribution] random variable
 <!-- <equation class="equation" label="eq:degenerate_median" align="center" raw="\operatorname{Median}\left( X \right) = \mu" alt="Median for a degenerate distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu" data-equation="eq:degenerate_median">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/stats/base/dists/degenerate/median/docs/img/equation_degenerate_median.svg" alt="Median for a degenerate distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9488a06f69a99a22b91882d8b44881fc807708eb/lib/node_modules/@stdlib/stats/base/dists/degenerate/median/docs/img/equation_degenerate_median.svg" alt="Median for a degenerate distribution.">
     <br>
 </div>
 

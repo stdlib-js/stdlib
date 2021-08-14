@@ -31,7 +31,7 @@ The [mode][mode] for a [beta prime][betaprime-distribution] random variable is
 <!-- <equation class="equation" label="eq:betaprime_expectation" align="center" raw="\operatorname{mode}(X) = \begin{cases}\frac{\alpha-1}{\beta+1} & \text{ if } \alpha \ge 1 \\ 0 & \text{ otherwise }\end{cases}" alt="Expected value for a beta prime distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{mode}(X) = \begin{cases}\frac{\alpha-1}{\beta+1} &amp; \text{ if } \alpha \ge 1 \\ 0 &amp; \text{ otherwise }\end{cases}" data-equation="eq:betaprime_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/betaprime/mode/docs/img/equation_betaprime_expectation.svg" alt="Expected value for a beta prime distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/betaprime/mode/docs/img/equation_betaprime_expectation.svg" alt="Expected value for a beta prime distribution.">
     <br>
 </div>
 

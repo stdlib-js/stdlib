@@ -29,7 +29,7 @@ The [arithmetic mean][arithmetic-mean] of absolute values is defined as
 <!-- <equation class="equation" label="eq:arithmetic_mean_absolute_values" align="center" raw="\mu = \frac{1}{n} \sum_{i=0}^{n-1} |x_i|" alt="Equation for the arithmetic mean of absolute values."> -->
 
 <div class="equation" align="center" data-raw-text="\mu = \frac{1}{n} \sum_{i=0}^{n-1} |x_i|" data-equation="eq:arithmetic_mean_absolute_values">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/27e2a43c70db648bb5bbc3fd0cdee050c25adc0b/lib/node_modules/@stdlib/stats/incr/meanabs/docs/img/equation_arithmetic_mean_absolute_values.svg" alt="Equation for the arithmetic mean of absolute values.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@27e2a43c70db648bb5bbc3fd0cdee050c25adc0b/lib/node_modules/@stdlib/stats/incr/meanabs/docs/img/equation_arithmetic_mean_absolute_values.svg" alt="Equation for the arithmetic mean of absolute values.">
     <br>
 </div>
 

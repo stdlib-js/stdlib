@@ -31,7 +31,7 @@ The [median][median] for a [Pareto (Type I)][pareto-distribution] random variabl
 <!-- <equation class="equation" label="eq:pareto_type1_median" align="center" raw="\operatorname{Median}\left( X \right) = \beta \sqrt[\alpha]{2}" alt="Median for a Pareto (Type I) distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \beta \sqrt[\alpha]{2}" data-equation="eq:pareto_type1_median">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/median/docs/img/equation_pareto_type1_median.svg" alt="Median for a Pareto (Type I) distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/median/docs/img/equation_pareto_type1_median.svg" alt="Median for a Pareto (Type I) distribution.">
     <br>
 </div>
 

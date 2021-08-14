@@ -31,7 +31,7 @@ The [differential entropy][entropy] (in [nats][nats]) for a [uniform][uniform-di
 <!-- <equation class="equation" label="eq:uniform_entropy" align="center" raw="h\left( X \right) = \ln(b-a)" alt="Differential entropy for a uniform distribution."> -->
 
 <div class="equation" align="center" data-raw-text="h\left( X \right) = \ln(b-a)" data-equation="eq:uniform_entropy">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/entropy/docs/img/equation_uniform_entropy.svg" alt="Differential entropy for a uniform distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/entropy/docs/img/equation_uniform_entropy.svg" alt="Differential entropy for a uniform distribution.">
     <br>
 </div>
 

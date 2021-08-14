@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [F][f-distribution] random va
 <!-- <equation class="equation" label="eq:f_stdev" align="center" raw="\sigma = \sqrt{2} \tfrac{d_1}{d_2-2} \sqrt{\tfrac{d_1+d_2-2}{d_1 \cdot (d_2-4)}}" alt="Standard deviation for an F distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{2} \tfrac{d_1}{d_2-2} \sqrt{\tfrac{d_1+d_2-2}{d_1 \cdot (d_2-4)}}" data-equation="eq:f_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/stdev/docs/img/equation_f_stdev.svg" alt="Standard deviation for an F distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/stdev/docs/img/equation_f_stdev.svg" alt="Standard deviation for an F distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [entropy][entropy] (in [nats][nats]) for a [binomial][binomial-distribution]
 <!-- <equation class="equation" label="eq:binomial_entropy" align="center" raw="H\left( X \right) = {\frac {1}{2}}\ln{\left(2\pi\,e\,np\,(1-p) \right)}" alt="Entropy for a binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="H\left( X \right) = {\frac {1}{2}}\ln{\left(2\pi\,e\,np\,(1-p) \right)}" data-equation="eq:binomial_entropy">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/entropy/docs/img/equation_binomial_entropy.svg" alt="Entropy for a binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/entropy/docs/img/equation_binomial_entropy.svg" alt="Entropy for a binomial distribution.">
     <br>
 </div>
 

@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="French alpine landscape"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7d36e407ac3bc68e216186cb11b14da2f97be026/lib/node_modules/@stdlib/datasets/img-french-alpine-landscape/data/image.jpg" alt="French alpine landscape">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7d36e407ac3bc68e216186cb11b14da2f97be026/lib/node_modules/@stdlib/datasets/img-french-alpine-landscape/data/image.jpg" alt="French alpine landscape">
     <br>
 </div>
 

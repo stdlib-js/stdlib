@@ -31,7 +31,7 @@ The relative error exponential is defined as
 <!-- <equation class="equation" label="eq:relative_error_exponential" align="center" raw="f(x) = \frac{e^x - 1}{x}" alt="Equation for the relative error exponential."> -->
 
 <div class="equation" align="center" data-raw-text="f(x) = \frac{e^x - 1}{x}" data-equation="eq:relative_error_exponential">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/65a72b6be80b988ebfa5e581849691524b01a533/lib/node_modules/@stdlib/math/base/special/expm1rel/docs/img/equation_relative_error_exponential.svg" alt="Equation for the relative error exponential.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@65a72b6be80b988ebfa5e581849691524b01a533/lib/node_modules/@stdlib/math/base/special/expm1rel/docs/img/equation_relative_error_exponential.svg" alt="Equation for the relative error exponential.">
     <br>
 </div>
 

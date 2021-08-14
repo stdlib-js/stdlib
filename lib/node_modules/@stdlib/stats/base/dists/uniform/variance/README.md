@@ -31,7 +31,7 @@ The [variance][variance] for a [uniform][uniform-distribution] random variable i
 <!-- <equation class="equation" label="eq:uniform_variance" align="center" raw="\operatorname{Var}\left( X \right) = \tfrac{1}{12} \left( b - a \right)^2" alt="Variance for a uniform distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left( X \right) = \tfrac{1}{12} \left( b - a \right)^2" data-equation="eq:uniform_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/variance/docs/img/equation_uniform_variance.svg" alt="Variance for a uniform distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/variance/docs/img/equation_uniform_variance.svg" alt="Variance for a uniform distribution.">
     <br>
 </div>
 

@@ -29,7 +29,7 @@ The [unbiased sample variance][sample-variance] is defined as
 <!-- <equation class="equation" label="eq:unbiased_sample_variance" align="center" raw="s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2" alt="Equation for the unbiased sample variance."> -->
 
 <div class="equation" align="center" data-raw-text="s^2 = \frac{1}{n-1} \sum_{i=0}^{n-1} ( x_i - \bar{x} )^2" data-equation="eq:unbiased_sample_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/23f22c82d255ecbcff53d23b74a7af2a9023fbbb/lib/node_modules/@stdlib/stats/iterators/variance/docs/img/equation_unbiased_sample_variance.svg" alt="Equation for the unbiased sample variance.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@23f22c82d255ecbcff53d23b74a7af2a9023fbbb/lib/node_modules/@stdlib/stats/iterators/variance/docs/img/equation_unbiased_sample_variance.svg" alt="Equation for the unbiased sample variance.">
     <br>
 </div>
 

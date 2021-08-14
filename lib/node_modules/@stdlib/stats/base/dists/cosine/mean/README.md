@@ -31,7 +31,7 @@ The [mean][mean] for a [raised cosine][cosine-distribution] random variable with
 <!-- <equation class="equation" label="eq:cosine_mean" align="center" raw="\mathbb{E}\left[ X \right] = \mu" alt="Mean for a raised cosine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \mu" data-equation="eq:cosine_mean">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/mean/docs/img/equation_cosine_mean.svg" alt="Mean for a raised cosine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/mean/docs/img/equation_cosine_mean.svg" alt="Mean for a raised cosine distribution.">
     <br>
 </div>
 

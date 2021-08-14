@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [logistic][logistic-distribut
 <!-- <equation class="equation" label="eq:logistic_stdev" align="center" raw="\sigma = \tfrac{s\pi}{\sqrt{3}}" alt="Standard deviation for a logistic distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \tfrac{s\pi}{\sqrt{3}}" data-equation="eq:logistic_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/stdev/docs/img/equation_logistic_stdev.svg" alt="Standard deviation for a logistic distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/logistic/stdev/docs/img/equation_logistic_stdev.svg" alt="Standard deviation for a logistic distribution.">
     <br>
 </div>
 

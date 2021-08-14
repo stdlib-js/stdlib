@@ -29,7 +29,7 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 <!-- <equation class="equation" label="eq:arithmetic_mean" align="center" raw="\bar{x} = \frac{1}{W} \sum_{i=0}^{W-1} x_i" alt="Equation for the arithmetic mean."> -->
 
 <div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{W} \sum_{i=0}^{W-1} x_i" data-equation="eq:arithmetic_mean">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/10877053965ff3d0149611583ee50714bb64a8ea/lib/node_modules/@stdlib/stats/incr/mmeanstdev/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@10877053965ff3d0149611583ee50714bb64a8ea/lib/node_modules/@stdlib/stats/incr/mmeanstdev/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ and the [corrected sample standard deviation][standard-deviation] is defined as
 <!-- <equation class="equation" label="eq:corrected_sample_standard_deviation" align="center" raw="s = \sqrt{\frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2}" alt="Equation for the corrected sample standard deviation."> -->
 
 <div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2}" data-equation="eq:corrected_sample_standard_deviation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/10877053965ff3d0149611583ee50714bb64a8ea/lib/node_modules/@stdlib/stats/incr/mmeanstdev/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for the corrected sample standard deviation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@10877053965ff3d0149611583ee50714bb64a8ea/lib/node_modules/@stdlib/stats/incr/mmeanstdev/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for the corrected sample standard deviation.">
     <br>
 </div>
 

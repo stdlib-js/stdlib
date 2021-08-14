@@ -31,7 +31,7 @@ The [differential entropy][entropy] for an [Erlang][erlang-distribution] random 
 <!-- <equation class="equation" label="eq:erlang_entropy" align="center" raw="h\left( X \right) = (1\,-\,k)\psi (k)\,+\,\ln \left[{\frac {\Gamma (k)}{\lambda }}\right]\,+\,k" alt="Differential entropy for an Erlang distribution."> -->
 
 <div class="equation" align="center" data-raw-text="h\left( X \right) = (1\,-\,k)\psi (k)\,+\,\ln \left[{\frac {\Gamma (k)}{\lambda }}\right]\,+\,k" data-equation="eq:erlang_entropy">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/erlang/entropy/docs/img/equation_erlang_entropy.svg" alt="Differential entropy for an Erlang distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/erlang/entropy/docs/img/equation_erlang_entropy.svg" alt="Differential entropy for an Erlang distribution.">
     <br>
 </div>
 

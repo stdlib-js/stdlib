@@ -31,7 +31,7 @@ The [variance][variance] for a [normal][normal-distribution] random variable wit
 <!-- <equation class="equation" label="eq:normal_variance" align="center" raw="\operatorname{Var}\left[ X \right] = \sigma^2" alt="Variance for a normal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Var}\left[ X \right] = \sigma^2" data-equation="eq:normal_variance">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/variance/docs/img/equation_normal_variance.svg" alt="Variance for a normal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/variance/docs/img/equation_normal_variance.svg" alt="Variance for a normal distribution.">
     <br>
 </div>
 

@@ -29,7 +29,7 @@ The [probability mass function][pmf] (PMF) for a [Bernoulli][bernoulli-distribut
 <!-- <equation class="equation" label="eq:bernoulli_pmf" align="center" raw="\Pr(X = x) = \begin{cases} 1-p & \text{ for } x = 0 \\ p & \text{ for } x = 1 \\ 0 & \text{ otherwise } \end{cases}" alt="Probability mass function (PMF) for a Bernoulli distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\Pr(X = x) = \begin{cases} 1-p &amp; \text{ for } x = 0 \\ p &amp; \text{ for } x = 1 \\ 0 &amp; \text{ otherwise } \end{cases}" data-equation="eq:bernoulli_pmf">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/bernoulli/pmf/docs/img/equation_bernoulli_pmf.svg" alt="Probability mass function (PMF) for a Bernoulli distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/bernoulli/pmf/docs/img/equation_bernoulli_pmf.svg" alt="Probability mass function (PMF) for a Bernoulli distribution.">
     <br>
 </div>
 

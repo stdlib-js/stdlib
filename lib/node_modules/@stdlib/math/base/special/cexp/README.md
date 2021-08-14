@@ -29,7 +29,7 @@ The [exponential][exponential-function] function of a complex number is defined 
 <!-- <equation class="equation" label="eq:cexp_function" align="center" raw="\operatorname{exp}(z) = e^{x + i y} = (\exp{x}) (\cos(y) + i \sin(y))" alt="Complex exponential function"> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{exp}(z) = e^{x + i y} = (\exp{x}) (\cos(y) + i \sin(y))" data-equation="eq:cexp_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/f8ac0ad06fc8a10b0cc23ee843282718e8d1bb83/lib/node_modules/@stdlib/math/base/special/cexp/docs/img/equation_cexp_function.svg" alt="Complex exponential function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f8ac0ad06fc8a10b0cc23ee843282718e8d1bb83/lib/node_modules/@stdlib/math/base/special/cexp/docs/img/equation_cexp_function.svg" alt="Complex exponential function">
     <br>
 </div>
 

@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for a [Triangular][triangular-distrib
 <!-- <equation class="equation" label="eq:triangular_quantile_function" align="center" raw="Q(p;a,b,c) = \begin{cases} a + \sqrt{(b-a)(c-a)p} & \text{ for } 0 \le p \le F(c) \\ b - \sqrt{(b-a)(b-c)(1-p)} & \text{ for } F(c) \le p \le 1 \end{cases}" alt="Quantile function for a triangular distribution."> -->
 
 <div class="equation" align="center" data-raw-text="Q(p;a,b,c) = \begin{cases} a + \sqrt{(b-a)(c-a)p} &amp; \text{ for } 0 \le p \le F(c) \\ b - \sqrt{(b-a)(b-c)(1-p)} &amp; \text{ for } F(c) \le p \le 1 \end{cases}" data-equation="eq:triangular_quantile_function">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/quantile/docs/img/equation_triangular_quantile_function.svg" alt="Quantile function for a triangular distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/quantile/docs/img/equation_triangular_quantile_function.svg" alt="Quantile function for a triangular distribution.">
     <br>
 </div>
 

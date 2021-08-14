@@ -31,7 +31,7 @@ The [mode][mode] for a [raised cosine][cosine-distribution] random variable with
 <!-- <equation class="equation" label="eq:cosine_mode" align="center" raw="\operatorname{mode}\left( X \right) = \mu" alt="Mode for a raised cosine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \mu" data-equation="eq:cosine_mode">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/mode/docs/img/equation_cosine_mode.svg" alt="Mode for a raised cosine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/mode/docs/img/equation_cosine_mode.svg" alt="Mode for a raised cosine distribution.">
     <br>
 </div>
 

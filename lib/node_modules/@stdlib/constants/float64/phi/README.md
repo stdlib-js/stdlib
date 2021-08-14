@@ -29,7 +29,7 @@ The [golden ratio][phi] can be defined algebraically as
 <!-- <equation class="equation" label="eq:golden_ratio" align="center" raw="\phi = \frac{1 + \sqrt{5}}{2}" alt="Golden ratio"> -->
 
 <div class="equation" align="center" data-raw-text="\phi = \frac{1 + \sqrt{5}}{2}" data-equation="eq:golden_ratio">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/constants/float64/phi/docs/img/equation_golden_ratio.svg" alt="Golden ratio">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/constants/float64/phi/docs/img/equation_golden_ratio.svg" alt="Golden ratio">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [mean][expected-value] for a [triangular][triangular-distribution] random va
 <!-- <equation class="equation" label="eq:triangular_mean" align="center" raw="\mathbb{E} \left[ X \right] = \frac{a+b+c}{3}" alt="Mean for a triangular distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E} \left[ X \right] = \frac{a+b+c}{3}" data-equation="eq:triangular_mean">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/mean/docs/img/equation_triangular_mean.svg" alt="Mean for a triangular distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/triangular/mean/docs/img/equation_triangular_mean.svg" alt="Mean for a triangular distribution.">
     <br>
 </div>
 

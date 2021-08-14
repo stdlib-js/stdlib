@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Abandoned Dust Bowl Home"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/c7e19fcdd510fff4f65ee916c785eb79d9b184e1/lib/node_modules/@stdlib/datasets/img-dust-bowl-home/data/image.jpg" alt="Abandoned Dust Bowl Home">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c7e19fcdd510fff4f65ee916c785eb79d9b184e1/lib/node_modules/@stdlib/datasets/img-dust-bowl-home/data/image.jpg" alt="Abandoned Dust Bowl Home">
     <br>
 </div>
 

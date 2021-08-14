@@ -31,7 +31,7 @@ A cosine waveform is represented by the following equation
 <!-- <equation class="equation" label="eq:cosine_waveform" align="center" raw="f(t; \tau, a, \varphi) = a \cos \frac{2\pi(t-\varphi)}{\tau}" alt="Equation for a cosine waveform."> -->
 
 <div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = a \cos \frac{2\pi(t-\varphi)}{\tau}" data-equation="eq:cosine_waveform">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/cosine-wave/docs/img/equation_cosine_waveform.svg" alt="Equation for a cosine waveform.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5827c258000edcb03496265cdfd372d686b4c656/lib/node_modules/@stdlib/simulate/iter/cosine-wave/docs/img/equation_cosine_waveform.svg" alt="Equation for a cosine waveform.">
     <br>
 </div>
 

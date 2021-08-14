@@ -29,7 +29,7 @@ limitations under the License.
 <!-- <image align="center" src="./data/image.jpg" alt="Nagasaki boats"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e84f848385973aa0b6546451f571d25b6928be9b/lib/node_modules/@stdlib/datasets/img-nagasaki-boats/data/image.jpg" alt="Nagasaki boats">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e84f848385973aa0b6546451f571d25b6928be9b/lib/node_modules/@stdlib/datasets/img-nagasaki-boats/data/image.jpg" alt="Nagasaki boats">
     <br>
 </div>
 

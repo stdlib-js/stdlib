@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [binomial][binomial-distribution] random v
 <!-- <equation class="equation" label="eq:binomial_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = {\frac {1-6p(1-p)}{np(1-p)}}" alt="Excess kurtosis for a binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = {\frac {1-6p(1-p)}{np(1-p)}}" data-equation="eq:binomial_kurtosis">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/kurtosis/docs/img/equation_binomial_kurtosis.svg" alt="Excess kurtosis for a binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/kurtosis/docs/img/equation_binomial_kurtosis.svg" alt="Excess kurtosis for a binomial distribution.">
     <br>
 </div>
 

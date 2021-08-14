@@ -31,7 +31,7 @@ The [skewness][skewness] for a [F][f-distribution] random variable with numerato
 <!-- <equation class="equation" label="eq:f_skewness" align="center" raw="\operatorname{skew}\left( X \right) =  \frac{(2d_{1}+d_{2}-2){\sqrt{8(d_{2}-4)}}}{(d_{2}-6){\sqrt{d_{1}(d_{1}+d_{2}-2)}}}" alt="Skewness for an F distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) =  \frac{(2d_{1}+d_{2}-2){\sqrt{8(d_{2}-4)}}}{(d_{2}-6){\sqrt{d_{1}(d_{1}+d_{2}-2)}}}" data-equation="eq:f_skewness">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/skewness/docs/img/equation_f_skewness.svg" alt="Skewness for an F distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/f/skewness/docs/img/equation_f_skewness.svg" alt="Skewness for an F distribution.">
     <br>
 </div>
 

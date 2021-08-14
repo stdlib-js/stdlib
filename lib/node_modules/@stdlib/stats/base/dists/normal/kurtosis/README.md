@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for a [normal][normal-distribution] random varia
 <!-- <equation class="equation" label="eq:normal_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = 0" alt="Excess kurtosis for a normal distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = 0" data-equation="eq:normal_kurtosis">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/kurtosis/docs/img/equation_normal_kurtosis.svg" alt="Excess kurtosis for a normal distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/normal/kurtosis/docs/img/equation_normal_kurtosis.svg" alt="Excess kurtosis for a normal distribution.">
     <br>
 </div>
 

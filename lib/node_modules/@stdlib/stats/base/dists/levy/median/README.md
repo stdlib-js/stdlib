@@ -31,7 +31,7 @@ The [median][median] for a [Lévy][levy-distribution] random variable with locat
 <!-- <equation class="equation" label="eq:levy_expectation" align="center" raw="\operatorname{Median}\left( X \right) = \mu + \frac{c}{2(\operatorname{erfcinv}(1/2))^2}" alt="Mode for a Lévy distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \mu + \frac{c}{2(\operatorname{erfcinv}(1/2))^2}" data-equation="eq:levy_expectation">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/levy/median/docs/img/equation_levy_expectation.svg" alt="Mode for a Lévy distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/levy/median/docs/img/equation_levy_expectation.svg" alt="Mode for a Lévy distribution.">
     <br>
 </div>
 

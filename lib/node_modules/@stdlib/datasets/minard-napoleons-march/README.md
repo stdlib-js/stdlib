@@ -27,7 +27,7 @@ limitations under the License.
 <!-- <image class="image" align="center" alt="Napoleon's March"> -->
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/aff3d7765cbe11f4df0c8fef93c02bc4d3ba8874/lib/node_modules/@stdlib/datasets/minard-napoleons-march/docs/img/minard.png" alt="Napoleon's March">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aff3d7765cbe11f4df0c8fef93c02bc4d3ba8874/lib/node_modules/@stdlib/datasets/minard-napoleons-march/docs/img/minard.png" alt="Napoleon's March">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [standard deviation][stdev] for a [binomial][binomial-distribution] random v
 <!-- <equation class="equation" label="eq:binomial_stdev" align="center" raw="\sigma = \sqrt{n p (1-p)}" alt="Standard deviation for a binomial distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{n p (1-p)}" data-equation="eq:binomial_stdev">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/stdev/docs/img/equation_binomial_stdev.svg" alt="Standard deviation for a binomial distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/binomial/stdev/docs/img/equation_binomial_stdev.svg" alt="Standard deviation for a binomial distribution.">
     <br>
 </div>
 
