@@ -98,6 +98,7 @@ include $(TOOLS_MAKE_LIB_DIR)/test-install/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/tools-test/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/tools-test-cov/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/types-cov/Makefile
+include $(TOOLS_MAKE_LIB_DIR)/utils/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/wasm/Makefile
 include $(TOOLS_MAKE_LIB_DIR)/workshops/Makefile
 
