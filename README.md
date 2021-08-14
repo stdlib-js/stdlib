@@ -27,7 +27,7 @@ limitations under the License.
         <br>
         <br>
         <a href="https://stdlib.io/" />
-            <img src="https://cdn.rawgit.com/stdlib-js/stdlib/9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
+            <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
         </a>
         <br>
         <br>
@@ -67,67 +67,67 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 -   150+ [special math functions][@stdlib/math/base/special].
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/203839353bc74297fe641207270f7917d2bda560/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@203839353bc74297fe641207270f7917d2bda560/docs/assets/readme/base_special_math.png" alt="Demo showcasing special math functions">
     </div>
 
 -   35+ [probability distributions][@stdlib/stats/base/dists], with support for evaluating probability density functions (PDFs), cumulative distribution functions (CDFs), quantiles, moments, and more.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e13885087939c064c69aa43ee80ea52710de5591/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e13885087939c064c69aa43ee80ea52710de5591/docs/assets/readme/base_dists.png" alt="Demo showcasing probability distributions">
     </div>
 
 -   40+ [seedable pseudorandom number generators][@stdlib/random/base] (PRNGs).
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@83dcd0fad98883320a8b1efc801b2fc1ed2a003d/docs/assets/readme/base_prngs.png" alt="Demo showcasing PRNGs">
     </div>
 
 -   200+ general [utilities][@stdlib/utils] for data transformation, functional programming, and asynchronous control flow.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e6eeea31e49d6db1b6f57ae59d2988d4b427e285/docs/assets/readme/utils.png" alt="Demo showcasing general utilities">
     </div>
 
 -   200+ [assertion utilities][@stdlib/assert] for data validation and feature detection.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6970c8b4eb546a10712734d225c15863db9b2c92/docs/assets/readme/assert.png" alt="Demo showcasing assertion utilities">
     </div>
 
 -   50+ [sample datasets][@stdlib/datasets] for testing and development.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/f71a38e62247e31dc47d248f6f1b3e434abeb971/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f71a38e62247e31dc47d248f6f1b3e434abeb971/docs/assets/readme/datasets.png" alt="Demo showcasing sample datasets">
     </div>
 
 -   A [plot API][@stdlib/plot/ctor] for data visualization and exploratory data analysis.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/39d75174b24ea2a84828d9624643776a164478e4/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@39d75174b24ea2a84828d9624643776a164478e4/docs/assets/readme/plot.png" alt="Demo showcasing plot API">
     </div>
 
 -   Native add-ons for interfacing with BLAS libraries, with pure JavaScript fallbacks.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo showcasing BLAS APIs">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@efede6af3ef957da08838903b0558441263adf85/docs/assets/readme/base_blas.png" alt="Demo showcasing BLAS APIs">
     </div>
 
 -   A [benchmark framework][@stdlib/bench/harness] supporting TAP.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo showcasing benchmark framework">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4833049f8d1895585bd51ec6fa97b8ca0d37c6fb/docs/assets/readme/benchmark.gif" alt="Demo showcasing benchmark framework">
     </div>
 
 -   REPL environment with integrated help and examples.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3864ae6f86bbc215956c0e667d82d49a6eaca780/docs/assets/readme/repl.gif" alt="Demo showcasing REPL environment">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3864ae6f86bbc215956c0e667d82d49a6eaca780/docs/assets/readme/repl.gif" alt="Demo showcasing REPL environment">
     </div>
 
 -   Can be bundled using [Browserify][browserify], [Webpack][webpack], and other bundlers for use in web browsers.
 
     <div class="image" align="center">
-        <img src="https://cdn.rawgit.com/stdlib-js/stdlib/e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
 * * *
@@ -538,7 +538,7 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 Test and build infrastructure is generously provided by the following services:
 
 <div class="image" align="center">
-    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/3de52540666d1635df046d7e5dd07a1fc5b87d85/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3de52540666d1635df046d7e5dd07a1fc5b87d85/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
     <br>
 </div>
 
