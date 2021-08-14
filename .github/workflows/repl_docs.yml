@@ -86,16 +86,17 @@ jobs:
       - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: update-repl-docs
-          commit-message: 'Update REPL namespace'
           title: 'Update REPL namespace'
           body: |
             This PR
 
             -   updates the REPL namespace
 
+          commit-message: 'Update REPL namespace'
           labels: |
             documentation
             automated-pr
           team-reviewers: |
             stdlib-reviewers
+          branch: update-repl-docs
+          delete-branch: true
