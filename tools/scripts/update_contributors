@@ -20,7 +20,7 @@
 #
 # This script is called with the following arguments:
 #
-# * `$1` - output file path
+# -  `$1`: output file path
 
 
 # VARIABLES #
