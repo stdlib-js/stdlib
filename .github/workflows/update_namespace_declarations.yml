@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: update_namespace_definitions
+name: update_namespace_typescript_declarations
 
 # Workflow triggers:
 on:
@@ -27,11 +27,11 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Define a job for pushing changes to standalone packages...
+  # Define a job for updating namespace TypeScript declarations...
   update:
 
     # Define a display name:
-    name: "Update Namespace Typescript Definitions"
+    name: "Update TypeScript Declarations"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -66,11 +66,24 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Update namespace Typescript definitions:
-      - name: 'Update namespace Typescript definitions'
+      # Update namespace Typescript declarations:
+      - name: 'Update declarations'
         run: |
           make list-pkgs-namespaces | node lib/node_modules/@stdlib/_tools/scripts/create_namespace_types.js
 
-      # Create a pull request with the updated definitions:
-      - name: Create Pull Request
+      # Create a pull request with the updated declarations:
+      - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: 'Update namespace TypeScript declarations'
+          title: 'Update namespace TypeScript declarations'
+          body: |
+            This PR
+
+            -   updates namespace TypeScript declarations
+
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
