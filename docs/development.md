@@ -127,25 +127,7 @@ $ cd stdlib
 
 ## Installation
 
-To install external libraries (**optional**),
-
-<!-- run-disable -->
-
-```bash
-$ make install-deps
-```
-
-While external library dependencies are not always required, installing these dependencies may aid development and unlock performance benefits, especially when developing numerical computation facilities. Note, however, that installing external library dependencies may take considerable time (>30 minutes).
-
-To install language dependencies (**optional**),
-
-<!-- run-disable -->
-
-```bash
-$ make install-lang-deps
-```
-
-To install development dependencies (e.g., [Node.js][node-js] module dependencies),
+To install dependencies (e.g., [Node.js][node-js] module dependencies),
 
 <!-- run-disable -->
 
@@ -158,8 +140,10 @@ To run dependency diagnostics,
 <!-- run-disable -->
 
 ```bash
-$ make deps-info
+$ make deps-diagnostics
 ```
+
+which will check for various development dependencies. Depending on your host system, you may be missing one or more dependencies. For most day-to-day `stdlib` development, these dependencies are not necessary and, thus, you do not need to immediately install them. If you are focusing on certain development areas (e.g., adding new math functionality), you'll be able to install the various dependencies on a case-by-case basis (e.g., requisite C/C++ linters, reference libraries, et cetera) using project tooling. For now, feel free to move along, and, if you get stuck or have questions, feel free to reach out to one of the core project maintainers.
 
 To initialize the development environment,
 
