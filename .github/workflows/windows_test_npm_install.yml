@@ -234,7 +234,8 @@ jobs:
       - name: 'View log file'
         if: failure()
         run: |
-          cat 'C:\ProgramData\chocolatey\logs\chocolatey.log'
+          echo "Printing the last ${{ env.LOG_NUM_LINES }} lines of log output..."
+          tail -${{ env.LOG_NUM_LINES }} 'C:\ProgramData\chocolatey\logs\chocolatey.log'
         timeout-minutes: 5
 
       # Configure npm:
