@@ -46,7 +46,7 @@ release="$1"
 # Set the release commit message:
 message="$2"
 
-# Determine root directory:
+# Determine the root directory:
 root_dir="$(git rev-parse --show-toplevel)"
 
 # Get the current commit hash:
@@ -55,7 +55,7 @@ git_hash="$(git rev-parse HEAD)"
 # Get the current Git branch:
 git_branch="$(git rev-parse --abbrev-ref HEAD)"
 
-# Define the path to the root package.json:
+# Specify the path to the root package.json:
 package_json="${root_dir}/package.json"
 
 # Get the current project version:
@@ -66,7 +66,7 @@ current_version=$(node -e "${script1}" | tr -d '\n' )
 script2="var semver = require( 'semver' ); console.log( semver.inc( '${current_version}', '${release}' ) );"
 release_version=$(node -e "${script2}" | tr -d '\n' )
 
-# Define the project source code directory:
+# Specify the project source code directory:
 base_dir="${root_dir}/lib/node_modules"
 
 # Specify the path to a script for updating package directories meta data:
@@ -75,7 +75,7 @@ update_directories="${base_dir}/_tools/package-json/scripts/update_directories"
 # Specify the output build directory when generating a gzipped archive:
 npm_tarball_build_out="${root_dir}/build/npm"
 
-# Define a template for the gzipped archive basename:
+# Define the gzipped archive basename:
 npm_tarball_basename="stdlib-stdlib-${release_version}.tgz"
 
 
