@@ -20,3 +20,4 @@
 
 # Note: keep in alphabetical order...
 include $(TOOLS_MAKE_LIB_DIR)/dist/bundles.mk
+include $(TOOLS_MAKE_LIB_DIR)/dist/package.mk
