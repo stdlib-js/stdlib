@@ -118,7 +118,7 @@ revert_changes() {
 	git reset --hard "${git_hash}"
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
-		echo 'Error: invalid operation. Encountered an error when attempting to reverting changes.' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to reverting changes.' >&2
 		echo '' >&2
 		return 1
 	fi
