@@ -20,42 +20,63 @@
 
 # Publishes a new version of the project to the npm package registry.
 #
-# A `version` argument must be one of the following:
+# A `release` argument must be one of the following:
 #
 # -   `patch`
 # -   `minor`
 # -   `major`
+# -   `premajor`
+# -   `preminor`
+# -   `prepatch`
+# -   `prerelease`
 #
-# Usage: npm_publish <version> <message>
+# Usage: npm_publish <release> <message>
 #
 # Arguments:
 #
-#   version     version bump type.
+#   release     release type.
 #   message     commit message.
 #
 
 # VARIABLES #
 
-# Set the version bump type:
-version="$1"
+# Set the release type:
+release="$1"
 
-# Set the version bump commit message:
+# Set the release commit message:
 message="$2"
 
 # Determine root directory:
 root_dir="$(git rev-parse --show-toplevel)"
 
+# Get the current commit hash:
+git_hash="$(git rev-parse HEAD)"
+
 # Get the current Git branch:
 git_branch="$(git rev-parse --abbrev-ref HEAD)"
 
+# Define the path to the root package.json:
+package_json="${root_dir}/package.json"
+
+# Get the current project version:
+script1="var pkg = require( '${package_json}' ); console.log( pkg.version );"
+current_version=$(node -e "${script1}" | tr -d '\n' )
+
+# Determine the new project version:
+script2="var semver = require( 'semver' ); console.log( semver.inc( '${current_version}', '${release}' ) );"
+release_version=$(node -e "${script2}" | tr -d '\n' )
+
 # Define the project source code directory:
 base_dir="${root_dir}/lib/node_modules"
+
+# Specify the path to a script for updating package directories meta data:
+update_directories="${base_dir}/_tools/package-json/scripts/update_directories"
 
 # Specify the output build directory when generating a gzipped archive:
 npm_tarball_build_out="${root_dir}/build/npm"
 
 # Define a template for the gzipped archive basename:
-npm_tarball_basename='stdlib-stdlib-VERSION.tgz'
+npm_tarball_basename="stdlib-stdlib-${release_version}.tgz"
 
 
 # FUNCTIONS #
@@ -71,6 +92,7 @@ on_error() {
 # Runs clean-up tasks.
 cleanup() {
 	rm -rf "${npm_tarball_build_out}"
+
 }
 
 # Prints a success message.
@@ -81,27 +103,205 @@ print_success() {
 # Prints usage information.
 usage() {
 	echo '' >&2
-	echo 'Usage: npm_publish <version> <message>' >&2
+	echo 'Usage: npm_publish <release> <message>' >&2
 	echo '' >&2
 	echo 'Arguments:' >&2
 	echo '' >&2
-	echo '  version     version bump type.' >&2
+	echo '  release     release type (patch, minor, major, etc).' >&2
 	echo '  message     commit message.' >&2
 	echo '' >&2
+}
+
+# Reverts changes, resetting repository to its prior state.
+revert_changes() {
+	echo 'Reverting changes...' >&2
+	git reset --hard "${git_hash}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: invalid operation. Encountered an error when attempting to reverting changes.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully reverted changes.' >&2
+	return 0
 }
 
 # Performs checks to prevent unintended behavior when attempting to publish to npm.
 check() {
 	echo 'Performing checks...' >&2
 	if [[ "${git_branch}" != 'develop' ]]; then
-		echo 'Error: invalid operation. New versions should only be performed on the develop branch.' >&2
+		echo '' >&2
+		echo 'Error: invalid operation. Releasing new versions should only be performed on the develop branch.' >&2
+		echo '' >&2
 		return 1
 	fi
 	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
 		echo 'Error: invalid operation. Working directory must be clean.' >&2
+		echo '' >&2
 		return 1
 	fi
 	echo 'Successfully performed checks.' >&2
+	return 0
+}
+
+# Pulls the latest changes from a remote repository.
+update_repository() {
+	echo 'Pulling the latest changes...' >&2
+	git pull origin "${git_branch}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Pulling the latest changes failed. Check for merge conflicts.' >&2
+		echo '' >&2
+		return 1
+	fi
+	return 0
+}
+
+# Checks licenses of dependencies.
+check_licenses() {
+	echo 'Checking dependency licenses...' >&2
+	make check-licenses-production >/dev/null
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Potential incompatible dependency license. Please resolve before publishing. Command: make check-licenses-production.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'No detected licensing issues.' >&2
+	return 0
+}
+
+# Updates package meta data.
+update_package_meta_data() {
+	echo 'Updating package meta data...' >&2
+
+	echo 'Updating directories...' >&2
+	node "${update_directories}" "${base_dir}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating directories meta data.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated directories.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo 'Committing changes...' >&2
+		git add . && git commit -m 'Update directories meta data'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+
+	return 0
+}
+
+# Updates package URLs in Markdown files.
+update_markdown_package_urls() {
+	echo 'Updating package URLs in Markdown files...' >&2
+	make markdown-pkg-urls
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating package URLs in Markdown files.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated Markdown files.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo 'Committing changes...' >&2
+		git add . && git commit -m 'Update package URLs'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+
+	return 0
+}
+
+# Updates the version in the root package.json.
+update_version() {
+	echo 'Updating project version...' >&2
+	sed -i "s/${current_version}/${release_version}/" "${package_json}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating project version.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated version.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo 'Committing changes...' >&2
+		git add . && git commit -m "${message}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	return 0
+}
+
+# Generates and publishes distributable bundles.
+publish_bundles() {
+	echo 'Publishing distributable bundles...' >&2
+	make dist-bundles-publish
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to publish distributable bundles.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully published distributable bundles.' >&2
+
+	echo 'Removing bundle artifacts...' >&2
+	make clean-dist-bundles
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to remove bundles artifacts.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully removed bundled artifacts.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo 'Committing changes...' >&2
+		git add . && git commit -m 'Update dist versions'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+
+	return 0
+}
+
+# Creates (and pushes) a new Git tag.
+create_tag() {
+	echo 'Creating a new tag...' >&2
+	git tag -a "v${release_version}" -m "${message}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to create a new tag.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully created tag.' >&2
 	return 0
 }
 
@@ -111,20 +311,66 @@ create_tarball() {
 
 	mdkir -p "${npm_tarball_build_out}"
 	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
 		echo 'Error: unexpected error. Unable to create output build directory.' >&2
+		echo '' >&2
 		return 1
 	fi
 	npm pack "${root_dir}" >/dev/null
 	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
 		echo 'Error: unexpected error. Unable to create a gzipped archive.' >&2
+		echo '' >&2
 		return 1
 	fi
 	mv "${root_dir}/${npm_tarball_basename}" "${npm_tarball_build_out}/${npm_tarball_basename}"
 	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
 		echo 'Error: unexpected error. Unable to move gzipped archive to build directory.' >&2
+		echo '' >&2
 		return 1
 	fi
 	echo 'Successfully generated a gzipped archive.' >&2
+
+	return 0
+}
+
+# Publishes a tarball to the npm package registry.
+publish() {
+	echo 'Publishing tarball to npm...' >&2
+	npm publish "${npm_tarball_build_out}/${npm_tarball_basename}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to publish to npm.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully published to npm.' >&2
+	return 0
+}
+
+# Updates a remote repository.
+update_remote_repository() {
+	echo 'Pushing tags to remote repository...' >&2
+	git push origin --tags
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to push tags to remote repository.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully pushed tags.' >&2
+
+	echo 'Pushing commits to remote repository...' >&2
+	git push origin "${git_branch}"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when attempting to push commits to remote repository.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully pushed commits.' >&2
+
 	return 0
 }
 
@@ -137,10 +383,49 @@ main() {
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
+	update_repository
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	check_licenses
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	update_package_meta_data
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_markdown_package_urls
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_version
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
 
-	# TODO: run make repl-docs and commit to ensure updated REPL docs
+	# WARNING: at this point, we are at the point of no return and, from this point forward, cannot easily revert changes to the local repository as packages may already be published...
 
+	publish_bundles
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	create_tag
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
 	create_tarball
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	publish
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	update_remote_repository
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
@@ -154,7 +439,9 @@ if [[ "$#" -eq 0 ]]; then
 	usage
 	exit 0
 elif [[ "$#" -gt 2 ]]; then
+	echo '' >&2
 	echo 'Error: unrecognized arguments. Must specify a version and message.' >&2
+	echo '' >&2
 	exit 1
 fi
 
