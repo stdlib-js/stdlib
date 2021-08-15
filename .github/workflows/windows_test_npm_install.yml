@@ -230,6 +230,13 @@ jobs:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10
 
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          cat 'C:\ProgramData\chocolatey\logs\chocolatey.log'
+        timeout-minutes: 5
+
       # Configure npm:
       - name: 'Configure npm'
         run: |
