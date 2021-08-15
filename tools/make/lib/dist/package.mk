@@ -21,7 +21,7 @@
 # Define the path to a script for releasing a new project version:
 NPM_RELEASE ?= $(TOOLS_DIR)/scripts/npm_publish
 
-# Define the version bump type (e.g., pre-patch, patch, pre-minor, minor, pre-major, major, pre-release):
+# Define the version bump type (e.g., prepatch, patch, preminor, minor, premajor, major, prerelease):
 NPM_RELEASE_TYPE ?= patch
 
 # Define a Git commit message when incrementing the project version:
@@ -32,6 +32,9 @@ NPM_RELEASE_COMMIT_MESSAGE ?= 'Features updates and bug fixes'
 
 #/
 # Publishes a new project version to the npm package registry.
+#
+# @param {string} NPM_RELEASE_TYPE - release type (e.g., prepatch, patch, preminor, minor, premajor, major, prerelease)
+# @param {string} NPM_RELEASE_COMMIT_MESSAGE - release message
 #
 # @example
 # make npm-publish
