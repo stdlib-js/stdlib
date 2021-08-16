@@ -30,6 +30,12 @@ The dilogarithm is defined as
 
 <!-- </equation> -->
 
+or alternatively as
+
+<!-- <equation class="equation" label="eq:dilogarithm_alt" align="center" raw="\int _{1}^{v}{\frac {\ln t}{1-t}}dt=\operatorname {Li} _{2}(1-v)." alt="Alternative definition of dilogarithm."> -->
+
+<!-- </equation> -->
+
 </section>
 
 <!-- /.intro -->
