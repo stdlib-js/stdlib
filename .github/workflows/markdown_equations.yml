@@ -80,7 +80,7 @@ jobs:
       # Generate and commit equation SVG files for README.md files:
       - name: 'Generate and commit equation SVG files'
         run: |
-          files=$(${{ join( fromJSON( steps.changed-packages.outputs.packages, '\n' )}} | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )
+          files=$(${{ join( fromJSON( steps.changed-packages.outputs.packages ), '\n' )}} | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )
           echo $files
           make markdown-svg-equations-files FILES=$files
           git config --local user.email "noreply@stdlib.io"
