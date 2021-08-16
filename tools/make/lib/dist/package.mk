@@ -25,7 +25,7 @@ NPM_RELEASE ?= $(TOOLS_DIR)/scripts/npm_publish
 NPM_RELEASE_TYPE ?= patch
 
 # Define a Git commit message when incrementing the project version:
-NPM_RELEASE_COMMIT_MESSAGE ?= 'Features updates and bug fixes'
+NPM_RELEASE_COMMIT_MESSAGE ?= 'Feature updates and bug fixes'
 
 
 # RULES #
