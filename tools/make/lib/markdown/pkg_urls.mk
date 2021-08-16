@@ -79,7 +79,7 @@ markdown-pkg-urls: $(NODE_MODULES)
 # make markdown-pkg-urls-files FILES='/foo/foo.md /foo/bar.md'
 #/
 markdown-pkg-urls-files: $(NODE_MODULES)
-	$(QUIET) echo "$(MARKDOWN_FILES)" | xargs NODE_PATH="$(NODE_PATH)" "$(REMARK)" \
+	$(QUIET) echo "$(FILES)" | xargs NODE_PATH="$(NODE_PATH)" "$(REMARK)" \
 		$(REMARK_PKG_URLS_FLAGS) \
 		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
 		$(REMARK_PKG_URLS_OUTPUT_FLAG)
