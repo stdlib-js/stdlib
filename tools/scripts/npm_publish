@@ -442,6 +442,8 @@ elif [[ "$#" -gt 2 ]]; then
 	echo '' >&2
 	echo 'Error: unrecognized arguments. Must specify a version and message.' >&2
 	echo '' >&2
+	echo "Provided arguments: $*" >&2
+	echo '' >&2
 	exit 1
 fi
 
