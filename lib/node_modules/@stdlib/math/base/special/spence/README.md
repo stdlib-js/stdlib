@@ -22,6 +22,18 @@ limitations under the License.
 
 > [Spence’s function][spence], also known as the dilogarithm.
 
+<section class="intro">
+
+The dilogarithm is defined as
+
+<!-- <equation class="equation" label="eq:dilogarithm" align="center" raw="\operatorname{Li}_{2}(z) = -\int_{0}^{z}{\ln(1-u) \over u}\,du{\text{, }}z\in \mathbb {C}" alt="Dilogarithm."> -->
+
+<!-- </equation> -->
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
