@@ -91,6 +91,7 @@ jobs:
 
       # Insert equation HTML elements with equation source URLs for README.md files:
       - name: 'Insert equation HTML elements with equation source URLs'
+        run: |
           make markdown-img-equations-files FILES=$files
           make markdown-img-equations-src-urls-files FILES=$files
           git add -A
