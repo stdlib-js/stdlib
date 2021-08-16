@@ -16,8 +16,11 @@
   "main": "./lib",
   "directories": {
     "doc": "./docs",
-    "lib": "./lib"
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
   },
+  "types": "./docs/types",
   "scripts": {},
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {

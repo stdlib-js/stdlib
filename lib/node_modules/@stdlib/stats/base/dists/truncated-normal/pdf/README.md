@@ -52,7 +52,57 @@ var pdf = require( '@stdlib/stats/base/dists/truncated-normal/pdf' );
 
 #### pdf( x, a, b, mu, sigma )
 
+Evaluates the probability density function (PDF) for a [truncated normal][truncated-normal-distribution] distribution with lower limit `a`, upper limit `b`, location parameter `mu`, and scale parameter `sigma`.
+
+```javascript
+var y = pdf( 0.9, 0.0, 1.0, 0.0, 1.0 );
+// returns ~0.7795
+
+y = pdf( 0.9, 0.0, 1.0, 0.5, 1.0 );
+// returns ~0.9617
+
+y = pdf( 0.9, -1.0, 1.0, 0.5, 1.0 );
+// returns ~0.5896
+
+y = pdf( 1.4, 0.0, 1.0, 0.0, 1.0 );
+// returns 0.0
+
+y = pdf( -0.9, 0.0, 1.0, 0.0, 1.0 );
+// returns 0.0
+```
+
+If provided `NaN` as any argument, the function returns `NaN`.
+
+```javascript
+var y = pdf( NaN, 0.0, 1.0, 0.5, 2.0 );
+// returns NaN
+
+y = pdf( 0.0, NaN, 1.0, 0.5, 2.0 );
+// returns NaN
+
+y = pdf( 0.0, 0.0, NaN, 0.5, 2.0 );
+// returns NaN
+
+y = pdf( 0.6, 0.0, 1.0, NaN, 2.0 );
+// returns NaN
+
+y = pdf( 0.6, 0.0, 1.0, 0.5, NaN );
+// returns NaN
+```
+
 #### pdf.factory( a, b, mu, sigma )
+
+Returns a function for evaluating the [probability density function][pdf] (PDF) for a [truncated normal][truncated-normal-distribution] distribution.
+
+```javascript
+var myPDF = pdf.factory( 0.0, 1.0, 0.0, 1.0 );
+var y = myPDF( 0.8 );
+// returns ~0.849
+
+myPDF = pdf.factory( 0.0, 1.0, 0.5, 1.0 );
+y = myPDF( 0.8 );
+// returns ~0.996
+```
 
 </section>
 
@@ -65,7 +115,26 @@ var pdf = require( '@stdlib/stats/base/dists/truncated-normal/pdf' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var randu = require( '@stdlib/random/base/randu' );
+var pdf = require( '@stdlib/stats/base/dists/truncated-normal/pdf' );
 
+var sigma;
+var mu;
+var a;
+var b;
+var x;
+var y;
+var i;
+
+for ( i = 0; i < 25; i++ ) {
+    a = ( randu() * 80.0 ) - 40.0;
+    b = a + (randu() * 80.0);
+    x = ( randu() * 40.0 ) + a;
+    mu = ( randu() * 20.0 ) - 10.0;
+    sigma = ( randu() * 10.0 ) + 2.0;
+    y = pdf( x, a, b, mu, sigma );
+    console.log( 'x: %d, a: %d, b: %d, mu: %d, sigma: %d, f(x;a,b,mu,sigma): %d', x.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
+}
 ```
 
 </section>
