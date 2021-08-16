@@ -66,11 +66,17 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
+      # Initialize stdlib development environment:
+      - name: 'Initialize stdlib development environment'
+        run: |
+          make init || make init || make init
+        timeout-minutes: 5
+
       # Update namespace table of contents in README.md files:
       - name: 'Update tables of contents'
         run: |
-          make markdown-namespace-tocs-files FILES="$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )"
-          make markdown-pkg-urls-files FILES="$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )"
+          files=$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' ); make markdown-namespace-tocs-files FILES=$files && make markdown-pkg-urls-files FILES=$files
+        timeout-minutes: 15
 
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
