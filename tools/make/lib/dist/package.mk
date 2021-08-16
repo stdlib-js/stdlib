@@ -40,6 +40,6 @@ NPM_RELEASE_COMMIT_MESSAGE ?= 'Feature updates and bug fixes'
 # make npm-publish
 #/
 npm-publish: $(NODE_MODULES) assert-clean-working-directory
-	$(QUIET) $(NPM_RELEASE) $(NPM_RELEASE_TYPE) $(NPM_RELEASE_COMMIT_MESSAGE)
+	$(QUIET) $(NPM_RELEASE) "$(NPM_RELEASE_TYPE)" "$(NPM_RELEASE_COMMIT_MESSAGE)"
 
 .PHONY: npm-publish
