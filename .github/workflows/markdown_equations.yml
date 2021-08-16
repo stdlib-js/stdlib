@@ -70,19 +70,10 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Retrieve list of changed stdlib packages in a push or pull request:
-      - name: 'Retrieve list of changed stdlib packages'
-        id: 'changed-packages'
-        uses: stdlib-js/changed-packages-action@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       # Generate and commit equation SVG files for README.md files:
       - name: 'Generate and commit equation SVG files'
-        env:
-          CHANGED_PACKAGES: ${{ join( fromJSON( steps.changed-packages.outputs.packages ), '\n' )}}
         run: |
-          files=$( echo "$CHANGED_PACKAGES" | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )
+          files=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep .md | tr '\n' ' ' )
           echo $files
           make markdown-svg-equations-files FILES=$files
           git config --local user.email "noreply@stdlib.io"
