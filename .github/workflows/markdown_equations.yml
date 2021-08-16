@@ -1,0 +1,124 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2021 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: markdown_equations
+
+# Workflow triggers:
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/**/README.md'
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for updating equations in README.md files...
+  update:
+
+    # Define a display name:
+    name: 'Update equations in README.md files'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Retrieve list of changed stdlib packages in a push or pull request:
+      - name: 'Retrieve list of changed stdlib packages'
+        id: 'changed-packages'
+        uses: stdlib-js/changed-packages-action@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Generate and commit equation SVG files for README.md files:
+      - name: 'Generate and commit equation SVG files'
+        run: |
+          files=$(${{ fromJSON( steps.changed-packages.outputs.packages )}} | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )
+          echo $files
+          make markdown-svg-equations-files FILES=$files
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+          git add -A
+          git commit -m "Add equation SVG files"
+        timeout-minutes: 15
+
+      # Insert equation HTML elements with equation source URLs for README.md files:
+      - name: 'Insert equation HTML elements with equation source URLs'
+          make markdown-img-equations-files FILES=$files
+          make markdown-img-equations-src-urls-files FILES=$files
+          git add -A
+          git commit -m "Insert equation HTML elements with equation source URLs"
+        timeout-minutes: 15
+
+      # Create a pull request with the updated equations:
+      - name: 'Create pull request'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: 'Insert equations in README.md files'
+          body: |
+            This PR
+
+            -   inserts equations in README.md files
+
+            * * *
+
+            @stdlib-js/reviewers
+
+          commit-message: 'Insert equations in README.md files'
+          committer: 'stdlib-bot <noreply@stdlib.io>'
+          labels: |
+            documentation
+            automated-pr
+          team-reviewers: |
+            stdlib-reviewers
+          branch: markdown-insert-equations
+          delete-branch: true
+
+
