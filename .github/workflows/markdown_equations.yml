@@ -70,6 +70,12 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
+      # Initialize stdlib development environment:
+      - name: 'Initialize stdlib development environment'
+        run: |
+          make init || make init || make init
+        timeout-minutes: 5
+
       # Generate and commit equation SVG files for README.md files:
       - name: 'Generate and commit equation SVG files'
         run: |
