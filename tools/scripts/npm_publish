@@ -70,7 +70,7 @@ release_version=$(node -e "${script2}" | tr -d '\n' )
 base_dir="${root_dir}/lib/node_modules"
 
 # Specify the path to a script for updating package directories meta data:
-update_directories="${base_dir}/_tools/package-json/scripts/update_directories"
+update_directories="${base_dir}/@stdlib/_tools/package-json/scripts/update_directories"
 
 # Specify the output build directory when generating a gzipped archive:
 npm_tarball_build_out="${root_dir}/build/npm"
