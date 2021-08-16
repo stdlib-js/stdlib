@@ -43,7 +43,7 @@ var incr = ns;
 
 <div class="namespace-toc">
 
--   <span class="signature">[`incrBinaryClassification( [options] )`][@stdlib/ml/incr/binary-classification]</span><span class="delimiter">: </span><span class="description">online binary classification via Stochastic Gradient Descent.</span>
+-   <span class="signature">[`incrBinaryClassification( N[, options] )`][@stdlib/ml/incr/binary-classification]</span><span class="delimiter">: </span><span class="description">incrementally perform binary classification using stochastic gradient descent (SGD).</span>
 -   <span class="signature">[`incrkmeans( k[, ndims][, options] )`][@stdlib/ml/incr/kmeans]</span><span class="delimiter">: </span><span class="description">incrementally partition data into `k` clusters.</span>
 -   <span class="signature">[`incrSGDRegression( [options] )`][@stdlib/ml/incr/sgd-regression]</span><span class="delimiter">: </span><span class="description">online regression via Stochastic Gradient Descent.</span>
 
