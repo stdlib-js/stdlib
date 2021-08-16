@@ -57,9 +57,9 @@ REMARK_PKG_URLS_OUTPUT_FLAG ?= --output
 #
 # @example
 # make markdown-pkg-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
-
+#/
 markdown-pkg-urls: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
+	$(QUIET) echo "$(MARKDOWN_FILES)" | xargs NODE_PATH="$(NODE_PATH)" "$(REMARK)" \
 		$(REMARK_PKG_URLS_FLAGS) \
 		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
 		$(REMARK_PKG_URLS_OUTPUT_FLAG)
@@ -79,7 +79,7 @@ markdown-pkg-urls: $(NODE_MODULES)
 # make markdown-pkg-urls-files FILES='/foo/foo.md /foo/bar.md'
 #/
 markdown-pkg-urls-files: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(FILES) \
+	$(QUIET) echo "$(MARKDOWN_FILES)" | xargs NODE_PATH="$(NODE_PATH)" "$(REMARK)" \
 		$(REMARK_PKG_URLS_FLAGS) \
 		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
 		$(REMARK_PKG_URLS_OUTPUT_FLAG)
