@@ -97,7 +97,9 @@ cleanup() {
 
 # Prints a success message.
 print_success() {
+	echo '' >&2
 	echo 'Success!' >&2
+	echo '' >&2
 }
 
 # Prints usage information.
@@ -123,6 +125,7 @@ revert_changes() {
 		return 1
 	fi
 	echo 'Successfully reverted changes.' >&2
+	echo '' >&2
 	return 0
 }
 
@@ -142,6 +145,7 @@ check() {
 		return 1
 	fi
 	echo 'Successfully performed checks.' >&2
+	echo '' >&2
 	return 0
 }
 
@@ -155,6 +159,23 @@ update_repository() {
 		echo '' >&2
 		return 1
 	fi
+	echo 'Successfully pulled latest changes.' >&2
+	echo '' >&2
+	return 0
+}
+
+# Initializes the development environment.
+init() {
+	echo 'Initializing development environment...' >&2
+	make init
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to initialize development environment.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully initialized development environment.' >&2
+	echo '' >&2
 	return 0
 }
 
@@ -169,6 +190,7 @@ check_licenses() {
 		return 1
 	fi
 	echo 'No detected licensing issues.' >&2
+	echo '' >&2
 	return 0
 }
 
@@ -176,6 +198,7 @@ check_licenses() {
 update_package_meta_data() {
 	echo 'Updating package meta data...' >&2
 
+	echo '' >&2
 	echo 'Updating directories...' >&2
 	node "${update_directories}" "${base_dir}"
 	if [[ "$?" -ne 0 ]]; then
@@ -187,6 +210,7 @@ update_package_meta_data() {
 	echo 'Successfully updated directories.' >&2
 
 	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
 		echo 'Committing changes...' >&2
 		git add . && git commit -m 'Update directories meta data'
 		if [[ "$?" -ne 0 ]]; then
@@ -197,6 +221,7 @@ update_package_meta_data() {
 		fi
 		echo 'Successfully committed changes.' >&2
 	fi
+	echo '' >&2
 
 	return 0
 }
@@ -214,6 +239,7 @@ update_markdown_package_urls() {
 	echo 'Successfully updated Markdown files.' >&2
 
 	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
 		echo 'Committing changes...' >&2
 		git add . && git commit -m 'Update package URLs'
 		if [[ "$?" -ne 0 ]]; then
@@ -224,6 +250,7 @@ update_markdown_package_urls() {
 		fi
 		echo 'Successfully committed changes.' >&2
 	fi
+	echo '' >&2
 
 	return 0
 }
@@ -241,6 +268,7 @@ update_version() {
 	echo 'Successfully updated version.' >&2
 
 	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
 		echo 'Committing changes...' >&2
 		git add . && git commit -m "${message}"
 		if [[ "$?" -ne 0 ]]; then
@@ -251,6 +279,7 @@ update_version() {
 		fi
 		echo 'Successfully committed changes.' >&2
 	fi
+	echo '' >&2
 	return 0
 }
 
@@ -266,6 +295,7 @@ publish_bundles() {
 	fi
 	echo 'Successfully published distributable bundles.' >&2
 
+	echo '' >&2
 	echo 'Removing bundle artifacts...' >&2
 	make clean-dist-bundles
 	if [[ "$?" -ne 0 ]]; then
@@ -277,6 +307,7 @@ publish_bundles() {
 	echo 'Successfully removed bundled artifacts.' >&2
 
 	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
 		echo 'Committing changes...' >&2
 		git add . && git commit -m 'Update dist versions'
 		if [[ "$?" -ne 0 ]]; then
@@ -287,6 +318,7 @@ publish_bundles() {
 		fi
 		echo 'Successfully committed changes.' >&2
 	fi
+	echo '' >&2
 
 	return 0
 }
@@ -302,6 +334,7 @@ create_tag() {
 		return 1
 	fi
 	echo 'Successfully created tag.' >&2
+	echo '' >&2
 	return 0
 }
 
@@ -331,6 +364,7 @@ create_tarball() {
 		return 1
 	fi
 	echo 'Successfully generated a gzipped archive.' >&2
+	echo '' >&2
 
 	return 0
 }
@@ -346,6 +380,7 @@ publish() {
 		return 1
 	fi
 	echo 'Successfully published to npm.' >&2
+	echo '' >&2
 	return 0
 }
 
@@ -361,6 +396,7 @@ update_remote_repository() {
 	fi
 	echo 'Successfully pushed tags.' >&2
 
+	echo '' >&2
 	echo 'Pushing commits to remote repository...' >&2
 	git push origin "${git_branch}"
 	if [[ "$?" -ne 0 ]]; then
@@ -370,6 +406,7 @@ update_remote_repository() {
 		return 1
 	fi
 	echo 'Successfully pushed commits.' >&2
+	echo '' >&2
 
 	return 0
 }
@@ -379,11 +416,16 @@ update_remote_repository() {
 
 # Main execution sequence.
 main() {
+	echo '' >&2
 	check
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
 	update_repository
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	init
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
