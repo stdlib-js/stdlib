@@ -77,6 +77,12 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
       # Update REPL documentation:
       - name: 'Update documentation'
         run: |
@@ -91,10 +97,6 @@ jobs:
             This PR
 
             -   updates the REPL namespace
-
-            * * *
-
-            @stdlib-js/reviewers
 
           commit-message: 'Update REPL namespace'
           committer: 'stdlib-bot <noreply@stdlib.io>'
