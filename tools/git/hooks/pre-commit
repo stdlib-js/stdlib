@@ -68,7 +68,17 @@ on_error() {
 
 # Runs clean-up tasks.
 cleanup() {
+	# Restore stashed changes to the working tree:
+	git stash pop -q
+
 	echo '' >&2
+}
+
+# Runs initialization tasks.
+init() {
+	# Stash any changes to the working tree that are not going to be committed:
+	git stash -q --keep-index
+	return 0
 }
 
 # Checks for non-ASCII filenames (to ensure cross platform portability).
@@ -340,6 +350,10 @@ run_lint() {
 
 # Main execution sequence.
 main() {
+	init
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
 	check_filenames
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
