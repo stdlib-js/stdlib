@@ -88,10 +88,6 @@ jobs:
 
             -   updates namespace TypeScript declarations
 
-            * * *
-
-            @stdlib-js/reviewers
-
           commit-message: 'Update namespace TypeScript declarations'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
