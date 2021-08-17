@@ -59,7 +59,7 @@ REMARK_PKG_URLS_OUTPUT_FLAG ?= --output
 # make markdown-pkg-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
 markdown-pkg-urls: $(NODE_MODULES)
-	$(QUIET) $(FIND_MARKDOWN_CMD) | xargs NODE_PATH="$(NODE_PATH)" "$(REMARK)" \
+	$(QUIET) export NODE_PATH="$(NODE_PATH)" && $(FIND_MARKDOWN_CMD) | xargs "$(REMARK)" \
 		$(REMARK_PKG_URLS_FLAGS) \
 		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
 		$(REMARK_PKG_URLS_OUTPUT_FLAG)
