@@ -26,16 +26,16 @@ on:
       - develop
     paths:
       # List paths for which changes should trigger this workflow:
-      - 'lib/**/README.md'
+      - 'lib/**/*.md'
 
 # Workflow jobs:
 jobs:
 
-  # Define a job for updating equations in README.md files...
+  # Define a job for updating equations in Markdown files...
   update:
 
     # Define a display name:
-    name: 'Update equations in README.md files'
+    name: 'Update equations'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -70,52 +70,51 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Initialize stdlib development environment:
-      - name: 'Initialize stdlib development environment'
+      # Initialize development environment:
+      - name: 'Initialize development environment'
         run: |
-          make init || make init || make init
+          make init
         timeout-minutes: 5
 
-      # Create list of changed Markdown files:
-      - name: 'Create list of changed Markdown files'
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+        timeout-minutes: 5
+
+      # Generate list of changed Markdown files:
+      - name: 'Generate list of changed Markdown files'
         run: |
           echo "::set-output name=files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep .md | tr '\n' ' ')"
         id: changed
 
-      # Generate and commit equation SVG files for README.md files:
-      - name: 'Generate and commit equation SVG files'
+      # Generate SVG equations:
+      - name: 'Generate SVG equations'
         run: |
           make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
-          git config --local user.email "noreply@stdlib.io"
-          git config --local user.name "stdlib-bot"
-          git add -A
-          git commit -m "Add equation SVG files"
+          git add -A && git commit -m "Add SVG equations"
         timeout-minutes: 15
 
-      # Insert equation HTML elements with equation source URLs for README.md files:
-      - name: 'Insert equation HTML elements with equation source URLs'
+      # Update Markdown equation elements:
+      - name: 'Update Markdown equation elements'
         run: |
           make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
           make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
-          git add -A
-          git commit -m "Insert equation HTML elements with equation source URLs"
+          git add -A && git commit -m "Update Markdown equation elements"
         timeout-minutes: 15
 
       # Create a pull request with the updated equations:
       - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
         with:
-          title: 'Insert equations in README.md files'
+          title: 'Update Markdown equation elements'
           body: |
             This PR
 
-            -   inserts equations in README.md files
+            -   updates equation elements found in Markdown files
 
-            * * *
-
-            @stdlib-js/reviewers
-
-          commit-message: 'Insert equations in README.md files'
+          commit-message: 'Update Markdown equation elements'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
             documentation
