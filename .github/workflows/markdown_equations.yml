@@ -76,12 +76,16 @@ jobs:
           make init || make init || make init
         timeout-minutes: 5
 
+      # Create list of changed Markdown files:
+      - name: 'Create list of changed Markdown files'
+        run: |
+          echo "::set-output name=files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep .md | tr '\n' ' ')"
+        id: changed
+
       # Generate and commit equation SVG files for README.md files:
       - name: 'Generate and commit equation SVG files'
         run: |
-          files=$( git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep .md | tr '\n' ' ' )
-          echo $files
-          make markdown-svg-equations-files FILES=$files
+          make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
           git add -A
@@ -91,8 +95,8 @@ jobs:
       # Insert equation HTML elements with equation source URLs for README.md files:
       - name: 'Insert equation HTML elements with equation source URLs'
         run: |
-          make markdown-img-equations-files FILES=$files
-          make markdown-img-equations-src-urls-files FILES=$files
+          make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
+          make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
           git add -A
           git commit -m "Insert equation HTML elements with equation source URLs"
         timeout-minutes: 15
