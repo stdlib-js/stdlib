@@ -99,7 +99,7 @@ var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th 
 var N = floor( x0.length / 2 );
 
 dcusum( N, 0.0, x1, -2, y1, 1 );
-// y0 => <Float64Array>[ 0.0, 0.0, 0.0, 0.0, 4.0, 6.0, 4.0, 5.0 ]
+// y0 => <Float64Array>[ 0.0, 0.0, 0.0, 4.0, 6.0, 4.0, 5.0, 0.0 ]
 ```
 
 #### dcusum.ndarray( N, sum, x, strideX, offsetX, y, strideY, offsetY )
