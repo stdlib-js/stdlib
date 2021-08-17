@@ -131,7 +131,7 @@ function fill( v, i ) {
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 
 gfillBy.ndarray( x.length, x, 1, 0, fill );
-// x => [ 0.0, 1.0, 6.0, -15.0, 20.0, 0.0, -7.0, -24.0 ]
+// x => [ 0.0, 1.0, 6.0, -15.0, 16.0, 0.0, -6.0, -21.0 ]
 ```
 
 The function has the following additional parameters:
