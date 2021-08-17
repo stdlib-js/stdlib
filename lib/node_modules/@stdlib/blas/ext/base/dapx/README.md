@@ -60,7 +60,7 @@ var x = new Float64Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 var N = floor( x.length / 2 );
 
 dapx( N, 5.0, x, 2 );
-// x => <Float64Array>[ 3.0, 1.0, 8.0, -5.0, 9.0, 0.0, 0.0, -3.0 ]
+// x => <Float64Array>[ 3.0, 1.0, 8.0, -5.0, 9.0, 0.0, 4.0, -3.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
