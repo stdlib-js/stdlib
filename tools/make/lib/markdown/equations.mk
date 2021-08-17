@@ -71,7 +71,7 @@ REMARK_EQUATIONS_OUTPUT_FLAG ?= --output
 #     1.  Files containing equation comments are transformed to include equation elements.
 #     2.  SVG files are generated for each equation.
 #     3.  Processed files are committed to source control.
-#     4.  Resource URLs are inserted in image equation elements.
+#     4.  Resource URLs are inserted into image equation elements.
 #     5.  Processed files are committed to source control.
 #
 # -   This rule is useful when wanting to glob for Markdown files (e.g., process all Markdown files for a particular package).
