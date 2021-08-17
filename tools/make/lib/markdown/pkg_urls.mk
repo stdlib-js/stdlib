@@ -59,10 +59,16 @@ REMARK_PKG_URLS_OUTPUT_FLAG ?= --output
 # make markdown-pkg-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
 markdown-pkg-urls: $(NODE_MODULES)
-	$(QUIET) export NODE_PATH="$(NODE_PATH)" && $(FIND_MARKDOWN_CMD) | xargs "$(REMARK)" \
-		$(REMARK_PKG_URLS_FLAGS) \
-		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
-		$(REMARK_PKG_URLS_OUTPUT_FLAG)
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_PKG_URLS_FLAGS) \
+			$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
+			$(REMARK_PKG_URLS_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-pkg-urls
 
@@ -79,9 +85,15 @@ markdown-pkg-urls: $(NODE_MODULES)
 # make markdown-pkg-urls-files FILES='/foo/foo.md /foo/bar.md'
 #/
 markdown-pkg-urls-files: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(FILES) \
-		$(REMARK_PKG_URLS_FLAGS) \
-		$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
-		$(REMARK_PKG_URLS_OUTPUT_FLAG)
+	$(QUIET) for file in $(FILES); do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_PKG_URLS_FLAGS) \
+			$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
+			$(REMARK_PKG_URLS_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-pkg-urls-files
