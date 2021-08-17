@@ -22,7 +22,7 @@
 GIT_COMMIT_EQUATIONS ?= $(GIT_COMMIT) -m 'Process Markdown equations'
 
 # Define the command to commit staged files after inserting resource URLs:
-GIT_COMMIT_SRC_URLS ?= $(GIT_COMMIT) -m 'Insert src urls into equation elements'
+GIT_COMMIT_EQUATIONS_SRC_URLS ?= $(GIT_COMMIT) -m 'Insert src urls into equation elements'
 
 # Define the path relative to a processed Markdown file for storing equation resources:
 EQUATION_RESOURCES_PATH ?= ./docs/img/
@@ -97,7 +97,7 @@ markdown-equations: $(NODE_MODULES) assert-clean-working-directory
 		$(REMARK_EQUATIONS_FLAGS) \
 		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
 		$(REMARK_EQUATIONS_OUTPUT_FLAG) && \
-	$(GIT_ADD) && $(GIT_COMMIT_SRC_URLS)
+	$(GIT_ADD) && $(GIT_COMMIT_EQUATIONS_SRC_URLS)
 
 .PHONY: markdown-equations
 
@@ -118,10 +118,16 @@ markdown-equations: $(NODE_MODULES) assert-clean-working-directory
 # make markdown-img-equations MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
 markdown-img-equations: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_EQUATIONS_FLAGS) \
-		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
-		$(REMARK_EQUATIONS_OUTPUT_FLAG)
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_EQUATIONS_FLAGS) \
+			$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
+			$(REMARK_EQUATIONS_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-img-equations
 
@@ -138,10 +144,16 @@ markdown-img-equations: $(NODE_MODULES)
 # make markdown-img-equations-files FILES='/foo/foo.md /foo/bar.md'
 #/
 markdown-img-equations-files: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(FILES) \
-		$(REMARK_EQUATIONS_FLAGS) \
-		$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
-		$(REMARK_EQUATIONS_OUTPUT_FLAG)
+	$(QUIET) for file in $(FILES); do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_EQUATIONS_FLAGS) \
+			$(REMARK_IMG_EQUATIONS_PLUGIN_FLAGS) \
+			$(REMARK_EQUATIONS_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-img-equations-files
 
@@ -157,9 +169,15 @@ markdown-img-equations-files: $(NODE_MODULES)
 # @example
 # make markdown-svg-equations MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 markdown-svg-equations: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_EQUATIONS_FLAGS) \
-		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS)
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_EQUATIONS_FLAGS) \
+			$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) || exit 1; \
+	done
 
 .PHONY: markdown-svg-equations
 
@@ -175,9 +193,15 @@ markdown-svg-equations: $(NODE_MODULES)
 # @example
 # make markdown-svg-equations-files FILES='/foo/foo.md /foo/bar.md'
 markdown-svg-equations-files: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(FILES) \
-		$(REMARK_EQUATIONS_FLAGS) \
-		$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS)
+	$(QUIET) for file in $(FILES); do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_EQUATIONS_FLAGS) \
+			$(REMARK_SVG_EQUATIONS_PLUGIN_FLAGS) || exit 1; \
+	done
 
 .PHONY: markdown-svg-equations-files
 
@@ -198,10 +222,16 @@ markdown-svg-equations-files: $(NODE_MODULES)
 # @example
 # make markdown-img-equations-src-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 markdown-img-equations-src-urls: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_EQUATIONS_FLAGS) \
-		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
-		$(REMARK_EQUATIONS_OUTPUT_FLAG)
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_EQUATIONS_FLAGS) \
+			$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
+			$(REMARK_EQUATIONS_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-img-equations-src-urls
 
@@ -218,10 +248,16 @@ markdown-img-equations-src-urls: $(NODE_MODULES)
 # @example
 # make markdown-img-equations-src-urls-files FILES='/foo/foo.md /foo/bar.md'
 markdown-img-equations-src-urls-files: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(FILES) \
-		$(REMARK_EQUATIONS_FLAGS) \
-		$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
-		$(REMARK_EQUATIONS_OUTPUT_FLAG)
+	$(QUIET) for file in $(FILES); do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_EQUATIONS_FLAGS) \
+			$(REMARK_IMG_EQUATIONS_SRC_URLS_PLUGIN_FLAGS) \
+			$(REMARK_EQUATIONS_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-img-equations-src-urls-files
 
