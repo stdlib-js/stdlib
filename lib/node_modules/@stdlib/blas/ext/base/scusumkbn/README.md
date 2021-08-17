@@ -99,7 +99,7 @@ var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th 
 var N = floor( x0.length / 2 );
 
 scusumkbn( N, 0.0, x1, -2, y1, 1 );
-// y0 => <Float32Array>[ 0.0, 0.0, 0.0, 0.0, 4.0, 6.0, 4.0, 5.0 ]
+// y0 => <Float32Array>[ 0.0, 0.0, 0.0, 4.0, 6.0, 4.0, 5.0, 0.0 ]
 ```
 
 #### scusumkbn.ndarray( N, sum, x, strideX, offsetX, y, strideY, offsetY )
