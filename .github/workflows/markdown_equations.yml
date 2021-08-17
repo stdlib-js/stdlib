@@ -123,5 +123,3 @@ jobs:
             stdlib-reviewers
           branch: markdown-insert-equations
           delete-branch: true
-
-
