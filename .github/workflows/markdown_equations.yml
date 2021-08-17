@@ -28,9 +28,6 @@ on:
   #     # List paths for which changes should trigger this workflow:
   #     - 'lib/**/*.md'
 
-  # Allow the workflow to be manually run:
-  workflow_dispatch:
-
 # Workflow jobs:
 jobs:
 
