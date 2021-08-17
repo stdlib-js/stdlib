@@ -60,10 +60,16 @@ REMARK_TOC_OUTPUT_FLAG ?= --output
 # make markdown-namespace-tocs MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
 markdown-namespace-tocs: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(MARKDOWN_FILES) \
-		$(REMARK_TOC_FLAGS) \
-		$(REMARK_TOC_PLUGIN_FLAGS) \
-		$(REMARK_TOC_OUTPUT_FLAG)
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_TOC_FLAGS) \
+			$(REMARK_TOC_PLUGIN_FLAGS) \
+			$(REMARK_TOC_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-namespace-tocs
 
@@ -81,9 +87,15 @@ markdown-namespace-tocs: $(NODE_MODULES)
 # make markdown-namespace-tocs-files FILES='/foo/foo.md /foo/bar.md'
 #/
 markdown-namespace-tocs-files: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(REMARK) $(FILES) \
-		$(REMARK_TOC_FLAGS) \
-		$(REMARK_TOC_PLUGIN_FLAGS) \
-		$(REMARK_TOC_OUTPUT_FLAG)
+	$(QUIET) for file in $(FILES); do \
+		echo ""; \
+		echo "Processing file: $$file"; \
+		NODE_PATH="$(NODE_PATH)" \
+		$(NODE) "$(REMARK)" \
+			$$file \
+			$(REMARK_TOC_FLAGS) \
+			$(REMARK_TOC_PLUGIN_FLAGS) \
+			$(REMARK_TOC_OUTPUT_FLAG) || exit 1; \
+	done
 
 .PHONY: markdown-namespace-tocs-files
