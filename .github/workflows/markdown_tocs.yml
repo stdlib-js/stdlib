@@ -27,11 +27,11 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Define a job for updating namespace table of contents in README.md files...
+  # Define a job for updating namespace table of contents...
   update:
 
     # Define a display name:
-    name: 'Update table of contents in README.md files'
+    name: 'Update namespace ToCs'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -66,34 +66,36 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Initialize stdlib development environment:
-      - name: 'Initialize stdlib development environment'
+      # Initialize development environment:
+      - name: 'Initialize development environment'
         run: |
-          make init || make init || make init
+          make init
         timeout-minutes: 5
 
-      # Update namespace table of contents in README.md files:
+      # Generate list of namespace READMEs:
+      - name: 'Generate list of namespace READMEs'
+        run: |
+          echo "::set-output name=files::$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )"
+        id: namespace_files
+
+      # Update namespace table of contents:
       - name: 'Update tables of contents'
         run: |
-          make markdown-namespace-tocs-files FILES="$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )"
-          make markdown-pkg-urls-files FILES="$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )"
+          make markdown-namespace-tocs-files FILES="${{ steps.namespace_files.outputs.files }}"
+          make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
         timeout-minutes: 15
 
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
         uses: peter-evans/create-pull-request@v3
         with:
-          title: 'Update namespace table of contents in README.md files'
+          title: 'Update namespace table of contents'
           body: |
             This PR
 
-            -   updates namespace table of contents in README.md files
+            -   updates namespace table of contents
 
-            * * *
-
-            @stdlib-js/reviewers
-
-          commit-message: 'Update namespace table of contents in README.md files'
+          commit-message: 'Update namespace table of contents'
           committer: 'stdlib-bot <noreply@stdlib.io>'
           labels: |
             documentation
