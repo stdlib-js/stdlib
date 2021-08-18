@@ -229,7 +229,7 @@ update_package_meta_data() {
 # Updates package URLs in Markdown files.
 update_markdown_package_urls() {
 	echo 'Updating package URLs in Markdown files...' >&2
-	make markdown-pkg-urls
+	make markdown-pkg-urls MARKDOWN_FILTER='.*/lib/node_modules/@stdlib/.*'
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Encountered an error when updating package URLs in Markdown files.' >&2
@@ -400,10 +400,23 @@ update_remote_repository() {
 	echo 'Pushing commits to remote repository...' >&2
 	git push origin "${git_branch}"
 	if [[ "$?" -ne 0 ]]; then
-		echo '' >&2
-		echo 'Error: unexpected error. Encountered an error when attempting to push commits to remote repository.' >&2
-		echo '' >&2
-		return 1
+		echo 'Failed to push commits. Pulling down any recent changes...' >&2
+		git pull origin "${git_branch}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Pulling the latest changes failed. Check for merge conflicts.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully pulled latest changes.' >&2
+
+		git push origin "${git_branch}"
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Encountered an error when attempting to push commits to remote repository.' >&2
+			echo '' >&2
+			return 1
+		fi
 	fi
 	echo 'Successfully pushed commits.' >&2
 	echo '' >&2
