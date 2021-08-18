@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="intro">
 
-The inverse or reciprocal of a non-zero complex number `z = a + bi` is defined as
+The inverse (or reciprocal) of a non-zero complex number `z = a + bi` is defined as
 
 <!-- <equation class="equation" label="eq:complex_inverse" align="center" raw="{\frac {1}{z}}=\frac{\bar{z}}{z{\bar{z}}} = \frac{a}{a^{2}+b^{2}} - \frac{b}{a^2+b^2}i." alt="Complex Inverse" > -->
 
