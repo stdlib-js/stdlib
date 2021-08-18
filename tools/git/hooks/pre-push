@@ -39,7 +39,7 @@
 remote="$1"
 
 # Determine the current branch:
-GIT_CURRENT_BRANCH=$(git name-rev --name-only HEAD)
+GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
