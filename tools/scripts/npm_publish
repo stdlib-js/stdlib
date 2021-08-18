@@ -344,7 +344,7 @@ create_tag() {
 create_tarball() {
 	echo 'Generating a gzipped archive for publishing to npm...' >&2
 
-	mdkir -p "${npm_tarball_build_out}"
+	mkdir -p "${npm_tarball_build_out}"
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Unable to create output build directory.' >&2
