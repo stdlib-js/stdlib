@@ -258,6 +258,8 @@ update_markdown_package_urls() {
 # Updates the version in the root package.json.
 update_version() {
 	echo 'Updating project version...' >&2
+	echo "Current version: ${current_version}" >&2
+	echo "Release version: ${release_version}" >&2
 	sed -i '' "s/${current_version}/${release_version}/" "${package_json}"
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
