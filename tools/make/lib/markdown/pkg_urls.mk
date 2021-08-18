@@ -58,17 +58,8 @@ REMARK_PKG_URLS_OUTPUT_FLAG ?= --output
 # @example
 # make markdown-pkg-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
-markdown-pkg-urls: $(NODE_MODULES)
-	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
-		echo ""; \
-		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
-			$$file \
-			$(REMARK_PKG_URLS_FLAGS) \
-			$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
-			$(REMARK_PKG_URLS_OUTPUT_FLAG) || exit 1; \
-	done
+markdown-pkg-urls:
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | xargs sed -i '' 's/^\[@\(stdlib\/[^:]\{1,\}\)\]:.\{1,\}$$/[@\1]: https:\/\/github.com\/stdlib-js\/stdlib\/tree\/develop\/lib\/node_modules\/%40\1/g'
 
 .PHONY: markdown-pkg-urls
 
@@ -84,16 +75,7 @@ markdown-pkg-urls: $(NODE_MODULES)
 # @example
 # make markdown-pkg-urls-files FILES='/foo/foo.md /foo/bar.md'
 #/
-markdown-pkg-urls-files: $(NODE_MODULES)
-	$(QUIET) for file in $(FILES); do \
-		echo ""; \
-		echo "Processing file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" \
-		$(NODE) "$(REMARK)" \
-			$$file \
-			$(REMARK_PKG_URLS_FLAGS) \
-			$(REMARK_PKG_URLS_PLUGIN_FLAGS) \
-			$(REMARK_PKG_URLS_OUTPUT_FLAG) || exit 1; \
-	done
+markdown-pkg-urls-files:
+	$(QUIET) echo $(FILES) | grep '^[\/]\|^[a-zA-Z]:[/\]' | xargs sed -i '' 's/^\[@\(stdlib\/[^:]\{1,\}\)\]:.\{1,\}$$/[@\1]: https:\/\/github.com\/stdlib-js\/stdlib\/tree\/develop\/lib\/node_modules\/%40\1/g'
 
 .PHONY: markdown-pkg-urls-files
