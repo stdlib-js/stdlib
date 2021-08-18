@@ -35,12 +35,15 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 'lts/*'
+        timeout-minutes: 5
       - name: Install production and development dependencies
         run: |
           npm install || npm install || npm install
+        timeout-minutes: 15
       - name: Calculate test coverage
         run: |
           npm run test-cov || npm run test-cov || npm run test-cov
+        timeout-minutes: 15
       - name: Upload coverage to Codecov
         id: upload
         uses: codecov/codecov-action@v1
