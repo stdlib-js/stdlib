@@ -3759,6 +3759,16 @@ rules[ 'stdlib/jsdoc-main-export' ] = 'error';
 rules[ 'stdlib/module-exports-last' ] = 'error';
 
 /**
+* Enforce that a namespace `index.js` exports all packages in the respective namespace directory.
+*
+* @name namespace-export-all
+* @memberof rules
+* @type {string}
+* @default 'error'
+*/
+rules[ 'stdlib/namespace-export-all' ] = 'error';
+
+/**
 * Enforce that packages in a namespace `index.js` file are listed in alphabetical order.
 *
 * @name namespace-index-order
