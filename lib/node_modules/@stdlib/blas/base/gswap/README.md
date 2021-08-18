@@ -54,15 +54,11 @@ The function has the following parameters:
 The `N` and `stride` parameters determine how values from `x` and `y` are accessed at runtime. For example, to swap in reverse order every other value in `x` with the first `N` elements of `y`,
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var y = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
 
-var N = floor( x.length / 2 );
-
-gswap( N, x, -2, y, 1 );
-// x => [ 1.0, 7.0, 3.0, 8.0, 5.0, 9.0 ]
+gswap( 3, x, -2, y, 1 );
+// x => [ 9.0, 2.0, 8.0, 4.0, 7.0, 6.0 ]
 // y => [ 5.0, 3.0, 1.0, 10.0, 11.0, 12.0 ]
 ```
 
@@ -72,7 +68,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -82,10 +77,8 @@ var y0 = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
 // Swap in reverse order every other value from `x1` with `y1`...
-gswap( N, x1, -2, y1, 1 );
+gswap( 3, x1, -2, y1, 1 );
 // x0 => <Float64Array>[ 1.0, 12.0, 3.0, 11.0, 5.0, 10.0 ]
 // y0 => <Float64Array>[ 7.0, 8.0, 9.0, 6.0, 4.0, 2.0 ]
 ```
@@ -112,15 +105,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-gswap.ndarray( N, x, 2, 1, y, -1, y.length-1 );
-// x => <Float64Array>[ 1.0, 12.0, 11.0, 10.0, 5.0, 6.0 ]
+gswap.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
+// x => <Float64Array>[ 1.0, 12.0, 3.0, 11.0, 5.0, 10.0 ]
 // y => <Float64Array>[ 7.0, 8.0, 9.0, 6.0, 4.0, 2.0 ]
 ```
 

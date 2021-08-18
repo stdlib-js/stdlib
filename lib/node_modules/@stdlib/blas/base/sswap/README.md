@@ -57,15 +57,12 @@ The `N` and `stride` parameters determine how values from `x` and `y` are access
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-sswap( N, x, -2, y, 1 );
-// x => <Float32Array>[ 1.0, 7.0, 3.0, 8.0, 5.0, 9.0 ]
+sswap( 3, x, -2, y, 1 );
+// x => <Float32Array>[ 9.0, 2.0, 8.0, 4.0, 7.0, 6.0 ]
 // y => <Float32Array>[ 5.0, 3.0, 1.0, 10.0, 11.0, 12.0 ]
 ```
 
@@ -75,7 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -85,10 +81,8 @@ var y0 = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
 // Swap in reverse order every other value from `x1` with `y1`...
-sswap( N, x1, -2, y1, 1 );
+sswap( 3, x1, -2, y1, 1 );
 // x0 => <Float32Array>[ 1.0, 12.0, 3.0, 11.0, 5.0, 10.0 ]
 // y0 => <Float32Array>[ 7.0, 8.0, 9.0, 6.0, 4.0, 2.0 ]
 ```
@@ -117,15 +111,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-sswap.ndarray( N, x, 2, 1, y, -1, y.length-1 );
-// x => <Float32Array>[ 1.0, 12.0, 11.0, 10.0, 5.0, 6.0 ]
+sswap.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
+// x => <Float32Array>[ 1.0, 12.0, 3.0, 11.0, 5.0, 10.0 ]
 // y => <Float32Array>[ 7.0, 8.0, 9.0, 6.0, 4.0, 2.0 ]
 ```
 
