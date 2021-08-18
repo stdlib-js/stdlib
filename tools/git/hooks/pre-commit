@@ -68,16 +68,11 @@ on_error() {
 
 # Runs clean-up tasks.
 cleanup() {
-	# Restore stashed changes to the working tree:
-	git stash pop -q
-
 	echo '' >&2
 }
 
 # Runs initialization tasks.
 init() {
-	# Stash any changes to the working tree that are not going to be committed:
-	git stash -q --keep-index
 	return 0
 }
 
