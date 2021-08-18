@@ -35,6 +35,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 'lts/*'
+        timeout-minutes: 5
       - name: Replace all GitHub links to individual packages with npm links
         run: |
           find . -type f -name '*.md' -print0 | xargs -0 sed -Ei 's/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
