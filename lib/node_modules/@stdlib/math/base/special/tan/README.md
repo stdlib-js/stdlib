@@ -29,7 +29,7 @@ The [tangent][tangent] is defined as
 <!-- <equation class="equation" label="eq:tangent" align="center" raw="\tan x = \frac{\sin x}{\cos x}" alt="Tangent definition."> -->
 
 <div class="equation" align="center" data-raw-text="\tan x = \frac{\sin x}{\cos x}" data-equation="eq:tangent">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/tan/docs/img/equation_tangent.svg" alt="Tangent definition.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/tan/docs/img/equation_tangent.svg" alt="Tangent definition.">
     <br>
 </div>
 

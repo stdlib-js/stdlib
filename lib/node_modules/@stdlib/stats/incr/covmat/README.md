@@ -29,7 +29,7 @@ A [covariance matrix][covariance-matrix] is an M-by-M matrix whose elements spec
 <!-- <equation class="equation" label="eq:unbiased_sample_covariance_unknown_means" align="center" raw="\operatorname{cov_{jkn}} = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_{ij} - \bar{x}_{jn})(x_{ik} - \bar{x}_{kn})" alt="Equation for the unbiased sample covariance for unknown population means."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{cov_{jkn}} = \frac{1}{n-1} \sum_{i=0}^{n-1} (x_{ij} - \bar{x}_{jn})(x_{ik} - \bar{x}_{kn})" data-equation="eq:unbiased_sample_covariance_unknown_means">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@566f739b0d9a5b720546f84f74de841b8d5e0c54/lib/node_modules/@stdlib/stats/incr/covmat/docs/img/equation_unbiased_sample_covariance_unknown_means.svg" alt="Equation for the unbiased sample covariance for unknown population means.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@49d8cabda84033d55d7b8069f19ee3dd8b8d1496/lib/node_modules/@stdlib/stats/incr/covmat/docs/img/equation_unbiased_sample_covariance_unknown_means.svg" alt="Equation for the unbiased sample covariance for unknown population means.">
     <br>
 </div>
 

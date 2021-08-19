@@ -29,7 +29,7 @@ The [inverse coversed cosine][inverse-coversed-cosine] is defined as
 <!-- <equation class="equation" label="eq:arccovercosine" align="center" raw="\operatorname{acovercos}(\theta) = \arcsin(1+\theta)" alt="Inverse coversed cosine."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{acovercos}(\theta) = \arcsin(1+\theta)" data-equation="eq:arccovercosine">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/acovercos/docs/img/equation_arccovercosine.svg" alt="Inverse coversed cosine.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/acovercos/docs/img/equation_arccovercosine.svg" alt="Inverse coversed cosine.">
     <br>
 </div>
 

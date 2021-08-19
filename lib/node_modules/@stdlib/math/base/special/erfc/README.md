@@ -29,7 +29,7 @@ The [complementary error function][complementary-error-function] is defined as
 <!-- <equation class="equation" label="eq:complementary_error_function" align="center" raw="\operatorname{erfc}(x) = 1 - \operatorname{erf}(x) = \frac{2}{\sqrt\pi} \int_x^{\infty} e^{-t^2}\, dt" alt="Complementary error function."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{erfc}(x) = 1 - \operatorname{erf}(x) = \frac{2}{\sqrt\pi} \int_x^{\infty} e^{-t^2}\, dt" data-equation="eq:complementary_error_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/erfc/docs/img/equation_complementary_error_function.svg" alt="Complementary error function.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/erfc/docs/img/equation_complementary_error_function.svg" alt="Complementary error function.">
     <br>
 </div>
 
@@ -40,7 +40,7 @@ The [complementary error function][complementary-error-function] can also be exp
 <!-- <equation class="equation" label="eq:craigs_formula" align="center" raw="\operatorname{erfc}(x) = \frac{2}{\pi} \int_0^{\frac{\pi}{2}} \exp \left( - \frac{x^2}{\sin^2 \theta} \right) d\theta" alt="Craig's formula of the complementary error function."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{erfc}(x) = \frac{2}{\pi} \int_0^{\frac{\pi}{2}} \exp \left( - \frac{x^2}{\sin^2 \theta} \right) d\theta" data-equation="eq:craigs_formula">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/special/erfc/docs/img/equation_craigs_formula.svg" alt="Craig's formula of the complementary error function.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/math/base/special/erfc/docs/img/equation_craigs_formula.svg" alt="Craig's formula of the complementary error function.">
     <br>
 </div>
 

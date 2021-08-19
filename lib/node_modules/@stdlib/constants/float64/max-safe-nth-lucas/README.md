@@ -36,6 +36,8 @@ var FLOAT64_MAX_SAFE_NTH_LUCAS = require( '@stdlib/constants/float64/max-safe-nt
 
 The maximum [safe][safe-integers] nth [Lucas number][lucas-number] when stored in [double-precision floating-point][ieee754] format.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MAX_SAFE_NTH_LUCAS === 76 );
 // returns true

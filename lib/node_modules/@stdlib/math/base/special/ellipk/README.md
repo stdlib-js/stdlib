@@ -29,7 +29,7 @@ The [complete elliptic integral of the first kind][elliptic-integral] is defined
 <!-- <equation class="equation" label="eq:complete_elliptic_integral_first_kind" align="center" raw="K(m)=\int_0^\tfrac{\pi}{2} \frac{d\theta}{\sqrt{1-m \sin^2\theta}}" alt="Complete elliptic integral of the first kind"> -->
 
 <div class="equation" align="center" data-raw-text="K(m)=\int_0^\tfrac{\pi}{2} \frac{d\theta}{\sqrt{1-m \sin^2\theta}}" data-equation="eq:complete_elliptic_integral_first_kind">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aa6af2c6b1735faf9c62959a48e7ffb5374157ac/lib/node_modules/@stdlib/math/base/special/ellipk/docs/img/equation_complete_elliptic_integral_first_kind.svg" alt="Complete elliptic integral of the first kind">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fa2cf1d471224644251a972f9424f30bde62c2c3/lib/node_modules/@stdlib/math/base/special/ellipk/docs/img/equation_complete_elliptic_integral_first_kind.svg" alt="Complete elliptic integral of the first kind">
     <br>
 </div>
 

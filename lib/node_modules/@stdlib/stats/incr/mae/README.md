@@ -29,7 +29,7 @@ The [mean absolute error][mean-absolute-error] is defined as
 <!-- <equation class="equation" label="eq:mean_absolute_error" align="center" raw="\operatorname{MAE}  = \frac{\sum_{i=0}^{n-1} |y_i - x_i|}{n}" alt="Equation for the mean absolute error."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{MAE}  = \frac{\sum_{i=0}^{n-1} |y_i - x_i|}{n}" data-equation="eq:mean_absolute_error">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@27e2a43c70db648bb5bbc3fd0cdee050c25adc0b/lib/node_modules/@stdlib/stats/incr/mae/docs/img/equation_mean_absolute_error.svg" alt="Equation for the mean absolute error.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@49d8cabda84033d55d7b8069f19ee3dd8b8d1496/lib/node_modules/@stdlib/stats/incr/mae/docs/img/equation_mean_absolute_error.svg" alt="Equation for the mean absolute error.">
     <br>
 </div>
 
