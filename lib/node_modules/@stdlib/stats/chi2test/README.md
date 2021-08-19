@@ -61,7 +61,7 @@ The function accepts the following `options`:
 
 By default, the test is performed at a significance level of `0.05`. To adjust the significance level, set the `alpha` option.
 
-```javascript 
+```javascript
 var x = [
     [ 20, 30 ],
     [ 30, 20 ]
@@ -84,7 +84,7 @@ var out = chi2test( x, opts );
 
 For 2x2 contingency tables, the function by default applies Yates' continuity correction. To disable the continuity correction, set `correct` to `false`.
 
-```javascript 
+```javascript
 var x = [
     [ 20, 30 ],
     [ 30, 20 ]

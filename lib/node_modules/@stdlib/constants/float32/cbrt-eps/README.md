@@ -35,7 +35,7 @@ var FLOAT32_CBRT_EPSILON = require( '@stdlib/constants/float32/cbrt-eps' );
 [Cube root][@stdlib/math/base/special/cbrt] of [single-precision floating-point epsilon][@stdlib/constants/float32/eps].
 
 ```javascript
-var bool = ( FLOAT32_CBRT_EPSILON === 0.004921566601151848 );
+var bool = ( FLOAT32_CBRT_EPSILON === 0.004921566694974899 );
 // returns true
 ```
 

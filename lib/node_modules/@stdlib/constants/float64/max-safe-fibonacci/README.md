@@ -36,6 +36,8 @@ var FLOAT64_MAX_SAFE_FIBONACCI = require( '@stdlib/constants/float64/max-safe-fi
 
 The maximum [safe][safe-integers] [Fibonacci number][fibonacci-number] when stored in [double-precision floating-point][ieee754] format.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MAX_SAFE_FIBONACCI === 8944394323791464 );
 // returns true

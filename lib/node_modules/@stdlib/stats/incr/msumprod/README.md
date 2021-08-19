@@ -29,7 +29,7 @@ For a window of size `W`, the moving sum of products is defined as
 <!-- <equation class="equation" label="eq:moving_sum_product" align="center" raw="s = \sum_{i=0}^{W-1} x_i y_i" alt="Equation for the moving sum of products."> -->
 
 <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{W-1} x_i y_i" data-equation="eq:moving_sum_product">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@27e2a43c70db648bb5bbc3fd0cdee050c25adc0b/lib/node_modules/@stdlib/stats/incr/msumprod/docs/img/equation_moving_sum_product.svg" alt="Equation for the moving sum of products.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@49d8cabda84033d55d7b8069f19ee3dd8b8d1496/lib/node_modules/@stdlib/stats/incr/msumprod/docs/img/equation_moving_sum_product.svg" alt="Equation for the moving sum of products.">
     <br>
 </div>
 

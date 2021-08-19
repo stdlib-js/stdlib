@@ -36,6 +36,8 @@ var FLOAT32_SMALLEST_SUBNORMAL = require( '@stdlib/constants/float32/smallest-su
 
 Smallest positive **denormalized** [single-precision floating-point number][ieee754].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT32_SMALLEST_SUBNORMAL === 1.401298464324817e-45 );
 // returns true

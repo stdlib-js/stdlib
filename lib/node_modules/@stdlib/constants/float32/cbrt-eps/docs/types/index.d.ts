@@ -23,7 +23,7 @@
 *
 * @example
 * var eps = FLOAT32_CBRT_EPSILON;
-* // returns 0.004921566601151848
+* // returns 0.004921566694974899
 */
 declare const FLOAT32_CBRT_EPSILON: number;
 

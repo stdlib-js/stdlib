@@ -36,6 +36,8 @@ var FLOAT64_MIN_BASE2_EXPONENT_SUBNORMAL = require( '@stdlib/constants/float64/m
 
 The minimum biased base 2 exponent for a subnormal [double-precision floating-point number][ieee754].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MIN_BASE2_EXPONENT_SUBNORMAL === -1074 );
 // returns true
