@@ -350,6 +350,7 @@ test_npm_install() {
 		npm_install
 		if [[ "$?" -ne 0 ]]; then
 			echo 'Installation failed.' >&2
+			cat "${working_dir}/npm-debug.log" >&2
 			return 1
 		fi
 	fi
