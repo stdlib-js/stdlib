@@ -366,6 +366,7 @@ test_npm_install() {
 		npm_install_from_github
 		if [[ "$?" -ne 0 ]]; then
 			echo 'Installation (via GitHub) failed.' >&2
+			cat "${working_dir}/npm-debug.log" >&2
 			return 1
 		fi
 	fi
@@ -381,6 +382,7 @@ test_npm_install() {
 		npm_install_global
 		if [[ "$?" -ne 0 ]]; then
 			echo 'Installation (global) failed.' >&2
+			cat "${working_dir}/npm-debug.log" >&2
 			return 1
 		fi
 	fi
@@ -396,6 +398,7 @@ test_npm_install() {
 		npm_install_global_github
 		if [[ "$?" -ne 0 ]]; then
 			echo 'Installation (global via GitHub) failed.' >&2
+			cat "${working_dir}/npm-debug.log" >&2
 			return 1
 		fi
 	fi
