@@ -157,6 +157,14 @@ jobs:
           node-version: ${{ matrix.NODE_VERSION }}
         timeout-minutes: 5
 
+      # Configure Git:
+      - name: 'Configure Git'
+
+        # Force Git to use HTTPS rather than SSH:
+        run: |
+          git config --global url."https://github.com/".insteadOf git@github.com:
+          git config --global url."https://".insteadOf git://
+
       # Print debug info:
       - name: 'Print debug info'
         run: |
