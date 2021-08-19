@@ -29,7 +29,7 @@ The product is defined as
 <!-- <equation class="equation" label="eq:product" align="center" raw="p = \prod_{i=0}^{n-1} x_i" alt="Equation for the product."> -->
 
 <div class="equation" align="center" data-raw-text="p = \prod_{i=0}^{n-1} x_i" data-equation="eq:product">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6c94d07365ffce729683f53370678d8206cd3551/lib/node_modules/@stdlib/stats/iterators/prod/docs/img/equation_product.svg" alt="Equation for the product.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e7ac225deb396ee6d2b4d5fc1a2faa645582349f/lib/node_modules/@stdlib/stats/iter/prod/docs/img/equation_product.svg" alt="Equation for the product.">
     <br>
 </div>
 

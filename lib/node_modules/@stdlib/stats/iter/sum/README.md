@@ -29,7 +29,7 @@ The sum is defined as
 <!-- <equation class="equation" label="eq:sum" align="center" raw="s = \sum_{i=0}^{n-1} x_i" alt="Equation for the sum."> -->
 
 <div class="equation" align="center" data-raw-text="s = \sum_{i=0}^{n-1} x_i" data-equation="eq:sum">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ebb731de562000e17bdb318b29634c9fae7151de/lib/node_modules/@stdlib/stats/iterators/sum/docs/img/equation_sum.svg" alt="Equation for the sum.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e7ac225deb396ee6d2b4d5fc1a2faa645582349f/lib/node_modules/@stdlib/stats/iter/sum/docs/img/equation_sum.svg" alt="Equation for the sum.">
     <br>
 </div>
 
