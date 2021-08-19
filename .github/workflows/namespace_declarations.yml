@@ -21,9 +21,11 @@ name: namespace_declarations
 
 # Workflow triggers:
 on:
-  push:
+  pull_request:
     branches:
       - develop
+    types:
+      - closed
     paths:
       # List paths for which changes should trigger this workflow:
       - 'lib/**/types/index.d.ts'
@@ -39,6 +41,9 @@ jobs:
 
     # Define a display name:
     name: 'Update TypeScript Declarations'
+
+    # Only run this job if the pull request was merged:
+    if: github.event.pull_request.merged == true
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
