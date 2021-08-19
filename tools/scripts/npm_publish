@@ -212,7 +212,7 @@ update_package_meta_data() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add . && git commit -m 'Update directories meta data'
+		git add -A && git commit -m 'Update directories meta data'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -241,7 +241,36 @@ update_markdown_package_urls() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add . && git commit -m 'Update package URLs'
+		git add -A && git commit -m 'Update package URLs'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
+# Updates REPL documentation.
+update_repl_docs() {
+	echo 'Updating REPL documentation...' >&2
+	make repl-docs
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating REPL documentation.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated REPL documentation.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update REPL docs'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -272,7 +301,7 @@ update_version() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add . && git commit -m "${message}"
+		git add -A && git commit -m "${message}"
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -311,7 +340,7 @@ publish_bundles() {
 	if [[ -n "$(git status --porcelain)" ]]; then
 		echo '' >&2
 		echo 'Committing changes...' >&2
-		git add . && git commit -m 'Update dist versions'
+		git add -A && git commit -m 'Update dist versions'
 		if [[ "$?" -ne 0 ]]; then
 			echo '' >&2
 			echo 'Error: unexpected error. Unable to commit changes.' >&2
@@ -454,6 +483,11 @@ main() {
 		on_error 1
 	fi
 	update_markdown_package_urls
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_repl_docs
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
 		on_error 1
