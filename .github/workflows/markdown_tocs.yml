@@ -21,6 +21,12 @@ name: markdown_tocs
 
 # Workflow triggers:
 on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - closed
+
   # Allow the workflow to be manually run:
   workflow_dispatch:
 
@@ -32,6 +38,9 @@ jobs:
 
     # Define a display name:
     name: 'Update namespace ToCs'
+
+    # Only run this job if the pull request was merged:
+    if: github.event.pull_request.merged == true
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
