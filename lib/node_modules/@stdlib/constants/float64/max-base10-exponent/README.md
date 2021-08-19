@@ -36,6 +36,8 @@ var FLOAT64_MAX_BASE10_EXPONENT = require( '@stdlib/constants/float64/max-base10
 
 The maximum base 10 exponent for a [double-precision floating-point number][ieee754].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MAX_BASE10_EXPONENT === 308 );
 // returns true

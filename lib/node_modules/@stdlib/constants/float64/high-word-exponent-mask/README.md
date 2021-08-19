@@ -36,6 +36,8 @@ var FLOAT64_HIGH_WORD_EXPONENT_MASK = require( '@stdlib/constants/float64/high-w
 
 High word mask for the exponent of a [double-precision floating-point number][ieee754]. 
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 // 0x7ff00000 = 2146435072 => 0 11111111111 00000000000000000000
 var bool = ( FLOAT64_HIGH_WORD_EXPONENT_MASK === 0x7ff00000 );

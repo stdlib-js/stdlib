@@ -36,6 +36,8 @@ var FLOAT64_HIGH_WORD_SIGNIFICAND_MASK = require( '@stdlib/constants/float64/hig
 
 High word mask for the significand of a [double-precision floating-point number][ieee754]. 
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 // 0x000fffff = 1048575 => 0 00000000000 11111111111111111111
 var bool = ( FLOAT64_HIGH_WORD_SIGNIFICAND_MASK === 0x000fffff );

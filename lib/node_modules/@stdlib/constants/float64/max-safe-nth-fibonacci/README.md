@@ -36,6 +36,8 @@ var FLOAT64_MAX_SAFE_NTH_FIBONACCI = require( '@stdlib/constants/float64/max-saf
 
 The maximum [safe][safe-integers] nth [Fibonacci number][fibonacci-number] when stored in [double-precision floating-point][ieee754] format.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MAX_SAFE_NTH_FIBONACCI === 78 );
 // returns true

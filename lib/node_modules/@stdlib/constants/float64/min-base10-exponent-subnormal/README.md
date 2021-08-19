@@ -36,6 +36,8 @@ var FLOAT64_MIN_BASE10_EXPONENT_SUBNORMAL = require( '@stdlib/constants/float64/
 
 The minimum base 10 exponent for a subnormal [double-precision floating-point number][ieee754].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MIN_BASE10_EXPONENT_SUBNORMAL === -324 );
 // returns true

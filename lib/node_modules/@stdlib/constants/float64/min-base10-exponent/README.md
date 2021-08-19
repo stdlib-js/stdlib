@@ -36,6 +36,8 @@ var FLOAT64_MIN_BASE10_EXPONENT = require( '@stdlib/constants/float64/min-base10
 
 The minimum base 10 exponent for a normal [double-precision floating-point number][ieee754].
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var bool = ( FLOAT64_MIN_BASE10_EXPONENT === -308 );
 // returns true
