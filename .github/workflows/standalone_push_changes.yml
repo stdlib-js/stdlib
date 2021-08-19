@@ -24,6 +24,12 @@ on:
   push:
     branches:
       - develop
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/node_modules/@stdlib/**'
+
+      # List paths for which changes should *not* trigger this workflow:
+      - '!lib/node_modules/@stdlib/_tools/**'
 
 # Workflow jobs:
 jobs:
