@@ -22,6 +22,8 @@ name: process_metadata
 # Workflow triggers:
 on:
   push:
+    branches:
+      - develop
 
 # Workflow jobs:
 jobs:
