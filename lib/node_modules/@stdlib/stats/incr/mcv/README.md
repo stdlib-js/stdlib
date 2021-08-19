@@ -29,7 +29,7 @@ For a window of size `W`, the [corrected sample standard deviation][standard-dev
 <!-- <equation class="equation" label="eq:corrected_sample_standard_deviation" align="center" raw="s = \sqrt{\frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2}" alt="Equation for the corrected sample standard deviation."> -->
 
 <div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2}" data-equation="eq:corrected_sample_standard_deviation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4cf17e4e25cc2244d5154bd5d251f4bd023748da/lib/node_modules/@stdlib/stats/incr/mcv/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for the corrected sample standard deviation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@eed6b690d7c37249b04544b3f5fd36ad8eb3187f/lib/node_modules/@stdlib/stats/incr/mcv/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for the corrected sample standard deviation.">
     <br>
 </div>
 
@@ -51,7 +51,7 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 <!-- <equation class="equation" label="eq:coefficient_of_variation" align="center" raw="c_v = \frac{s}{\bar{x}}" alt="Equation for the coefficient of variation (CV)."> -->
 
 <div class="equation" align="center" data-raw-text="c_v = \frac{s}{\bar{x}}" data-equation="eq:coefficient_of_variation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@4cf17e4e25cc2244d5154bd5d251f4bd023748da/lib/node_modules/@stdlib/stats/incr/mcv/docs/img/equation_coefficient_of_variation.svg"Equation for the coefficient of variation (CV).">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@eed6b690d7c37249b04544b3f5fd36ad8eb3187f/lib/node_modules/@stdlib/stats/incr/mcv/docs/img/equation_coefficient_of_variation.svg"Equation for the coefficient of variation (CV).">
     <br>
 </div>
 
