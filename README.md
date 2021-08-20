@@ -564,7 +564,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [node-image]: https://img.shields.io/node/v/@stdlib/stdlib.svg
 
-[node-url]: https://github.com/@stdlib-js/stdlib
+[node-url]: https://github.com/stdlib-js/stdlib
 
 <!-- [build-image-master]: https://img.shields.io/travis/stdlib-js/stdlib/master.svg
 
