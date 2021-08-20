@@ -61,12 +61,17 @@ jobs:
       - name: 'Check links'
         uses: stdlib-js/broken-markdown-url-definitions-action@main
         id: results
+        with:
+          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
         timeout-minutes: 120
 
       # Log the results:
       - name: 'Log results'
         run: |
-          echo ${{ steps.results.outputs.links }}
+          echo "Failures: "
+          echo ${{ steps.results.outputs.failures }}
+          echo "Warnings: "
+          echo ${{ steps.results.outputs.warnings }}
           echo Status: ${{ steps.results.outputs.status }}
         timeout-minutes: 2
 
