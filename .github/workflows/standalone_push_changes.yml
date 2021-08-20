@@ -74,20 +74,20 @@ jobs:
         timeout-minutes: 15
 
       # Retrieve list of changed stdlib packages in a push or pull request:
-      - name: 'Retrieve list of changed stdlib packages'
-        id: 'changed-packages'
-        uses: stdlib-js/changed-packages-action@v1
+      - name: 'Find changed packages'
+        id: 'changed_packages'
+        uses: stdlib-js/changed_packages-action@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Push changes to the packages' repositories:
-      - name: 'Push changes to packages'
-        if: ${{ steps.changed-packages.outputs.packages != '[]' }}
+      - name: 'Push changes'
+        if: ${{ steps.changed_packages.outputs.packages != '[]' }}
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          echo "Pushing changes to the following repositories: ${{ steps.changed-packages.outputs.packages }}"
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ join( fromJSON( steps.changed-packages.outputs.packages ), ' ' ) }}
+          echo "Pushing changes to the following repositories: ${{ steps.changed_packages.outputs.packages }}"
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ join( fromJSON( steps.changed_packages.outputs.packages ), ' ' ) }}
 
   # Define a job for sending notifications to Slack...
   slack:
