@@ -138,7 +138,7 @@ This Code of Conduct borrows heavily from
 
 This document may be reused under a [Creative Commons Attribution-ShareAlike License][license].
 
-[git-history]: https://github.com/stdlib-js/stdlib/commits/master/CODE_OF_CONDUCT.md
+[git-history]: https://github.com/stdlib-js/stdlib/commits/develop/CODE_OF_CONDUCT.md
 
 [npm-code-of-conduct]: https://www.npmjs.com/policies/conduct
 
