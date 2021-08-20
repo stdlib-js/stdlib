@@ -53,12 +53,12 @@ jobs:
         timeout-minutes: 10
 
       # Extract commit message metadata:
-      - name: Extract metadata
+      - name: 'Extract metadata'
         id: extract-metadata
         uses: stdlib-js/commit-metadata-action@v1
 
       # Check the commit message metadata for directives to send tweets:
-      - name: Check metadata for directives to send tweets
+      - name: 'Send tweets'
         uses: stdlib-js/metadata-tweet-action@v1
         with:
           metadata: ${{ steps.extract-metadata.outputs.metadata }}
