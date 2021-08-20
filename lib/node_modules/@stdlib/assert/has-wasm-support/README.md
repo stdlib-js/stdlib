@@ -106,7 +106,7 @@ $ has-wasm-support
 
 <section class="links">
 
-[webassembly]: http://webassembly.org/
+[webassembly]: https://webassembly.org/
 
 </section>
 

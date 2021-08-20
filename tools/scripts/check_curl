@@ -42,7 +42,7 @@ if [[ -x "${CURL}" ]] && "${CURL}" --version >/dev/null; then
 	echo 'curl is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please install curl (http://curl.haxx.se/). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please install curl (https://curl.se/). Once installed, run the command again.' >&2
 	exit 1
 fi
 

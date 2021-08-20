@@ -106,11 +106,11 @@ In addition to the above flags, `emcc` should act as a drop-in replacement for `
 
 [gcc]: http://gcc.gnu.org/
 
-[web-assembly]: http://webassembly.org/
+[web-assembly]: https://webassembly.org/
 
 [asm-js]: http://asmjs.org/spec/latest/
 
-[web-assembly-semantics]: http://webassembly.org/docs/semantics/
+[web-assembly-semantics]: https://webassembly.org/docs/semantics/
 
 [web-assembly-examples]: https://github.com/mdn/webassembly-examples/blob/master/wasm-sobel/sobel.js
 

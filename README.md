@@ -556,9 +556,9 @@ Test and build infrastructure is generously provided by the following services:
 
 [npm-image]: https://img.shields.io/npm/v/@stdlib/stdlib.svg
 
-[npm-url]: https://npmjs.org/package/@stdlib/stdlib
+[npm-url]: https://npmjs.com/package/@stdlib/stdlib
 
-[tag-image]: https://img.shields.io/github/tag/stdlib-js/stdlib.svg
+[tag-image]: https://img.shields.io/github/v/tag/stdlib-js/stdlib.svg
 
 [tag-url]: https://github.com/stdlib-js/stdlib/tags
 
@@ -586,15 +586,15 @@ Test and build infrastructure is generously provided by the following services:
 
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
-[make]: https://www.gnu.org/software/make
+[make]: https://www.gnu.org/software/make/
 
 [bash]: https://www.gnu.org/software/bash/
 
-[curl]: http://curl.haxx.se/
+[curl]: https://curl.se/
 
-[wget]: http://www.gnu.org/software/wget
+[wget]: https://www.gnu.org/software/wget/
 
-[fetch]: http://www.freebsd.org/cgi/man.cgi?fetch%281%29
+[fetch]: https://www.freebsd.org/cgi/man.cgi?fetch%281%29
 
 [node-js]: https://nodejs.org/en/
 
@@ -604,15 +604,15 @@ Test and build infrastructure is generously provided by the following services:
 
 [gcc]: http://gcc.gnu.org/
 
-[clang]: http://clang.llvm.org/
+[clang]: https://clang.llvm.org/
 
 [gfortran]: https://gcc.gnu.org/fortran/
 
 [openblas]: https://github.com/xianyi/OpenBLAS
 
-[electron]: https://electron.atom.io/
+[electron]: https://www.electronjs.org/
 
-[webassembly]: http://webassembly.org/
+[webassembly]: https://webassembly.org/
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
 

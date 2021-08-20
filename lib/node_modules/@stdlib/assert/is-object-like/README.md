@@ -68,7 +68,7 @@ bool = isObjectLike.isObjectLikeArray( [] );
 
 ## Notes
 
--   Return values are the same as would be obtained using the built-in [`typeof`][type-of] operator **except** that `null` is [**not**][harmony-proposal] considered an `object`.
+-   Return values are the same as would be obtained using the built-in [`typeof`][type-of] operator **except** that `null` is **not** considered an `object`.
 
     ```javascript
     var bool = ( typeof null === 'object' );
@@ -142,8 +142,6 @@ bool = isObjectLike( function foo() {} );
 <section class="links">
 
 [type-of]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
-
-[harmony-proposal]: http://wiki.ecmascript.org/doku.php?id=harmony:typeof_null
 
 </section>
 

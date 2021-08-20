@@ -42,7 +42,7 @@ if [[ -x "${FETCH}" ]] && "${FETCH}" --version >/dev/null; then
 	echo 'fetch is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please install fetch (http://www.freebsd.org/cgi/man.cgi?fetch%281%29). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please install fetch (https://www.freebsd.org/cgi/man.cgi?fetch%281%29). Once installed, run the command again.' >&2
 	exit 1
 fi
 

@@ -70,7 +70,7 @@ To update `node_modules` dependencies, perform the following steps:
 
 <section class="links">
 
-[electron]: https://electron.atom.io/
+[electron]: https://www.electronjs.org/
 
 [david]: https://david-dm.org/
 

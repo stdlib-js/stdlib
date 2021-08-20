@@ -110,7 +110,7 @@ bool = isNativeFunction( {} );
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
 
-[webassembly]: http://webassembly.org/
+[webassembly]: https://webassembly.org/
 
 </section>
 

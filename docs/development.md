@@ -342,17 +342,17 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 
 [git]: http://git-scm.com/
 
-[make]: https://www.gnu.org/software/make
+[make]: https://www.gnu.org/software/make/
 
 [bash]: https://www.gnu.org/software/bash/
 
 [zsh]: https://en.wikipedia.org/wiki/Z_shell
 
-[curl]: http://curl.haxx.se/
+[curl]: https://curl.se/
 
-[wget]: http://www.gnu.org/software/wget
+[wget]: https://www.gnu.org/software/wget/
 
-[fetch]: http://www.freebsd.org/cgi/man.cgi?fetch%281%29
+[fetch]: https://www.freebsd.org/cgi/man.cgi?fetch%281%29
 
 [node-js]: https://nodejs.org/en/
 
@@ -384,7 +384,7 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 
 [gcc]: http://gcc.gnu.org/
 
-[clang]: http://clang.llvm.org/
+[clang]: https://clang.llvm.org/
 
 [gfortran]: https://gcc.gnu.org/fortran/
 
@@ -400,7 +400,7 @@ For contribution guidelines, see the [contributing guide][stdlib-contributing].
 
 [openblas]: https://github.com/xianyi/OpenBLAS
 
-[electron]: https://electron.atom.io/
+[electron]: https://www.electronjs.org/
 
 [emscripten]: http://kripken.github.io/emscripten-site/index.html
 

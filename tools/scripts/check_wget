@@ -42,7 +42,7 @@ if [[ -x "${WGET}" ]] && "${WGET}" --version >/dev/null; then
 	echo 'wget is installed.' >&2
 	exit 0
 else
-	echo 'ERROR: missing dependency. Please install wget (http://www.gnu.org/software/wget). Once installed, run the command again.' >&2
+	echo 'ERROR: missing dependency. Please install wget (https://www.gnu.org/software/wget/). Once installed, run the command again.' >&2
 	exit 1
 fi
 
