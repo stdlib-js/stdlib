@@ -62,14 +62,11 @@ The `N` and `stride` parameters determine which elements in `x` and `y` are acce
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 var y = new Float32Array( x.length );
 
-var N = floor( x.length / 2 );
-
-var v = scumin( N, x, 2, y, 1 );
+var v = scumin( 4, x, 2, y, 1 );
 // y => <Float32Array>[ 1.0, 1.0, -2.0, -2.0, 0.0, 0.0, 0.0, 0.0 ]
 ```
 
@@ -79,7 +76,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float32Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
@@ -89,10 +85,8 @@ var y0 = new Float32Array( x0.length );
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
-scumin( N, x1, -2, y1, 1 );
-// y0 => <Float32Array>[ 0.0, 0.0, 0.0, 0.0, 4.0, 2.0, -2.0, -2.0 ]
+scumin( 4, x1, -2, y1, 1 );
+// y0 => <Float32Array>[ 0.0, 0.0, 0.0, 4.0, 2.0, -2.0, -2.0, 0.0 ]
 ```
 
 #### scumin.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
@@ -118,14 +112,11 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var y = new Float32Array( x.length );
 
-var N = floor( x.length / 2 );
-
-scumin.ndarray( N, x, 2, 1, y, -1, y.length-1 );
+scumin.ndarray( 4, x, 2, 1, y, -1, y.length-1 );
 // y => <Float32Array>[ 0.0, 0.0, 0.0, 0.0, -2.0, -2.0, -2.0, 1.0 ]
 ```
 
