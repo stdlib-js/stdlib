@@ -31,7 +31,7 @@ The [median][median] for a [Rayleigh][rayleigh-distribution] random variable is
 <!-- <equation class="equation" label="eq:rayleigh_median" align="center" raw="\operatorname{Median}\left( X \right) = \sigma \sqrt{2 \ln(2)}" alt="Median for a Rayleigh distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \sigma \sqrt{2 \ln(2)}" data-equation="eq:rayleigh_median">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/rayleigh/median/docs/img/equation_rayleigh_median.svg" alt="Median for a Rayleigh distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/rayleigh/median/docs/img/equation_rayleigh_median.svg" alt="Median for a Rayleigh distribution.">
     <br>
 </div>
 

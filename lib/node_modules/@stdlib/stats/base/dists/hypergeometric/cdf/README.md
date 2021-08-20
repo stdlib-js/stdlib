@@ -29,7 +29,7 @@ Imagine a scenario with a population of size `N`, of which a subpopulation of si
 <!-- <equation class="equation" label="eq:hypergeometric_cdf" align="center" raw="F(x;N,K,n) =\sum_{i=0}^{\lfloor x \rfloor} \frac{{K \choose i}{N-K \choose n-i}}{{N \choose n}}" alt="Cumulative distribution function for a hypergeometric distribution."> -->
 
 <div class="equation" align="center" data-raw-text="F(x;N,K,n) =\sum_{i=0}^{\lfloor x \rfloor} \frac{{K \choose i}{N-K \choose n-i}}{{N \choose n}}" data-equation="eq:hypergeometric_cdf">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/cdf/docs/img/equation_hypergeometric_cdf.svg" alt="Cumulative distribution function for a hypergeometric distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/hypergeometric/cdf/docs/img/equation_hypergeometric_cdf.svg" alt="Cumulative distribution function for a hypergeometric distribution.">
     <br>
 </div>
 

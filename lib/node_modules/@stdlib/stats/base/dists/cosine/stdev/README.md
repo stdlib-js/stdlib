@@ -31,7 +31,7 @@ The [standard deviation][stdev] for a [raised cosine][cosine-distribution] rando
 <!-- <equation class="equation" label="eq:cosine_stdev" align="center" raw="\sigma = s \sqrt{\left({\frac{1}{3}}-{\frac{2}{\pi^{2}}}\right)}" alt="Standard deviation for a raised cosine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = s \sqrt{\left({\frac{1}{3}}-{\frac{2}{\pi^{2}}}\right)}" data-equation="eq:cosine_stdev">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/stdev/docs/img/equation_cosine_stdev.svg" alt="Standard deviation for a raised cosine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/cosine/stdev/docs/img/equation_cosine_stdev.svg" alt="Standard deviation for a raised cosine distribution.">
     <br>
 </div>
 

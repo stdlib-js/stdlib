@@ -31,7 +31,7 @@ The [excess kurtosis][kurtosis] for an [inverse gamma][invgamma-distribution] ra
 <!-- <equation class="equation" label="eq:invgamma_kurtosis" align="center" raw="\operatorname{Kurt}\left( X \right) = \frac {30\,\alpha -66}{(\alpha -3)(\alpha -4)}" alt="Excess kurtosis for an inverse gamma distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Kurt}\left( X \right) = \frac {30\,\alpha -66}{(\alpha -3)(\alpha -4)}" data-equation="eq:invgamma_kurtosis">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/invgamma/kurtosis/docs/img/equation_invgamma_kurtosis.svg" alt="Excess kurtosis for an inverse gamma distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/invgamma/kurtosis/docs/img/equation_invgamma_kurtosis.svg" alt="Excess kurtosis for an inverse gamma distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [standard deviation][standard-deviation] for a [uniform][uniform-distributio
 <!-- <equation class="equation" label="eq:uniform_stdev" align="center" raw="\sigma = \sqrt{\tfrac{1}{12}} \left( b - a \right)" alt="Standard deviation for a uniform distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\sigma = \sqrt{\tfrac{1}{12}} \left( b - a \right)" data-equation="eq:uniform_stdev">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/stdev/docs/img/equation_uniform_stdev.svg" alt="Standard deviation for a uniform distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/uniform/stdev/docs/img/equation_uniform_stdev.svg" alt="Standard deviation for a uniform distribution.">
     <br>
 </div>
 

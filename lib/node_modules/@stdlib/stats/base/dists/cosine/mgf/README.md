@@ -29,7 +29,7 @@ The [moment-generating function][mgf] for a [raised cosine][cosine-distribution]
 <!-- <equation class="equation" label="eq:cosine_mgf" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{ \pi^{2} \sinh(st) }{ st(\pi^{2}+s^{2}t^{2}) } \,e^{\mu t}" alt="Moment-generating function for a raised cosine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{ \pi^{2} \sinh(st) }{ st(\pi^{2}+s^{2}t^{2}) } \,e^{\mu t}" data-equation="eq:cosine_mgf">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/cosine/mgf/docs/img/equation_cosine_mgf.svg" alt="Moment-generating function for a raised cosine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/cosine/mgf/docs/img/equation_cosine_mgf.svg" alt="Moment-generating function for a raised cosine distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [skewness][skewness] for an [arcsine][arcsine-distribution] random variable 
 <!-- <equation class="equation" label="eq:arcsine_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for an arcsine distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:arcsine_skewness">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/arcsine/skewness/docs/img/equation_arcsine_skewness.svg" alt="Skewness for an arcsine distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/arcsine/skewness/docs/img/equation_arcsine_skewness.svg" alt="Skewness for an arcsine distribution.">
     <br>
 </div>
 

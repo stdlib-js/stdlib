@@ -29,7 +29,7 @@ The [quantile function][quantile-function] for an [exponential][exponential-dist
 <!-- <equation class="equation" label="eq:exponential_quantile_function" align="center" raw="Q(p;\lambda) = \frac{-\ln(1-p)}{\lambda}" alt="Quantile function for an exponential distribution."> -->
 
 <div class="equation" align="center" data-raw-text="Q(p;\lambda) = \frac{-\ln(1-p)}{\lambda}" data-equation="eq:exponential_quantile_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/exponential/quantile/docs/img/equation_exponential_quantile_function.svg" alt="Quantile function for an exponential distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/exponential/quantile/docs/img/equation_exponential_quantile_function.svg" alt="Quantile function for an exponential distribution.">
     <br>
 </div>
 

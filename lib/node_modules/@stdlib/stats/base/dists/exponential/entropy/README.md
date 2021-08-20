@@ -31,7 +31,7 @@ The [differential entropy][entropy] (in [nats][nats]) for an [exponential][expon
 <!-- <equation class="equation" label="eq:exponential_entropy" align="center" raw="h\left( X \right) = 1 − \ln( \lambda )" alt="Differential entropy for an exponential distribution."> -->
 
 <div class="equation" align="center" data-raw-text="h\left( X \right) = 1 − \ln( \lambda )" data-equation="eq:exponential_entropy">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/exponential/entropy/docs/img/equation_exponential_entropy.svg" alt="Differential entropy for an exponential distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/exponential/entropy/docs/img/equation_exponential_entropy.svg" alt="Differential entropy for an exponential distribution.">
     <br>
 </div>
 

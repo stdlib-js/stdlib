@@ -31,7 +31,7 @@ The [skewness][skewness] for a [Student's t][t-distribution] random variable wit
 <!-- <equation class="equation" label="eq:t_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a Student's t distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:t_skewness">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/t/skewness/docs/img/equation_t_skewness.svg" alt="Skewness for a Student's t distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/t/skewness/docs/img/equation_t_skewness.svg" alt="Skewness for a Student's t distribution.">
     <br>
 </div>
 

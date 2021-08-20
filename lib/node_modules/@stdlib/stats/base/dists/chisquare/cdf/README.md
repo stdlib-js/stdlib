@@ -29,7 +29,7 @@ The [cumulative distribution function][cdf] for a [chi-squared][chisquare-distri
 <!-- <equation class="equation" label="eq:chisquare_cdf" align="center" raw="F(x;\,k) = P\left(\frac{x}{2},\,\frac{k}{2}\right)" alt="Cumulative distribution function for a chi-squared distribution."> -->
 
 <div class="equation" align="center" data-raw-text="F(x;\,k) = P\left(\frac{x}{2},\,\frac{k}{2}\right)" data-equation="eq:chisquare_cdf">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/chisquare/cdf/docs/img/equation_chisquare_cdf.svg" alt="Cumulative distribution function for a chi-squared distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/chisquare/cdf/docs/img/equation_chisquare_cdf.svg" alt="Cumulative distribution function for a chi-squared distribution.">
     <br>
 </div>
 

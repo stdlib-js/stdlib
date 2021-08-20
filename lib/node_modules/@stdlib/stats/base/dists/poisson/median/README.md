@@ -31,7 +31,7 @@ The [median][median] for a [Poisson][poisson-distribution] random variable is
 <!-- <equation class="equation" label="eq:poisson_median" align="center" raw="\operatorname{Median}\left( X \right) = \lfloor \lambda+1/3-0.02/\lambda \rfloor " alt="Median for a Poisson distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left( X \right) = \lfloor \lambda+1/3-0.02/\lambda \rfloor " data-equation="eq:poisson_median">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/poisson/median/docs/img/equation_poisson_median.svg" alt="Median for a Poisson distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/median/docs/img/equation_poisson_median.svg" alt="Median for a Poisson distribution.">
     <br>
 </div>
 

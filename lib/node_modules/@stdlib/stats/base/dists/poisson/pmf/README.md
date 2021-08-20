@@ -29,7 +29,7 @@ The [probability mass function][pmf] (PMF) for a [Poisson][poisson-distribution]
 <!-- <equation class="equation" label="eq:poisson_pmf" align="center" raw="f(x;\lambda)=P(X=x;\lambda)=\begin{cases} \tfrac{\lambda^x}{x!}e^{-\lambda} & \text{ for } x = 0,1,2,\ldots \\ 0 & \text{ otherwise} \end{cases}" alt="Probability mass function (PMF) for a Poisson distribution."> -->
 
 <div class="equation" align="center" data-raw-text="f(x;\lambda)=P(X=x;\lambda)=\begin{cases} \tfrac{\lambda^x}{x!}e^{-\lambda} &amp; \text{ for } x = 0,1,2,\ldots \\ 0 &amp; \text{ otherwise} \end{cases}" data-equation="eq:poisson_pmf">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/poisson/pmf/docs/img/equation_poisson_pmf.svg" alt="Probability mass function (PMF) for a Poisson distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/poisson/pmf/docs/img/equation_poisson_pmf.svg" alt="Probability mass function (PMF) for a Poisson distribution.">
     <br>
 </div>
 

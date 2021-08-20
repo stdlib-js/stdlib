@@ -31,7 +31,7 @@ The [median][median] for a [uniform][uniform-distribution] random variable is
 <!-- <equation class="equation" label="eq:uniform_median" align="center" raw="\operatorname{Median}\left[ X \right] = \frac{1}{2} \left( a + b \right)" alt="Median for a uniform distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{Median}\left[ X \right] = \frac{1}{2} \left( a + b \right)" data-equation="eq:uniform_median">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/uniform/median/docs/img/equation_uniform_median.svg" alt="Median for a uniform distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/uniform/median/docs/img/equation_uniform_median.svg" alt="Median for a uniform distribution.">
     <br>
 </div>
 

@@ -31,7 +31,7 @@ The [expected value][mean] for a [Lévy][levy-distribution] random variable with
 <!-- <equation class="equation" label="eq:levy_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \infty" alt="Expected value for a Lévy distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \infty" data-equation="eq:levy_expectation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/levy/mean/docs/img/equation_levy_expectation.svg" alt="Expected value for a Lévy distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/levy/mean/docs/img/equation_levy_expectation.svg" alt="Expected value for a Lévy distribution.">
     <br>
 </div>
 

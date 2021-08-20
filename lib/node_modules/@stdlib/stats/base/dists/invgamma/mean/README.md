@@ -31,7 +31,7 @@ The [expected value][expected-value] for an [inverse-gamma][invgamma-distributio
 <!-- <equation class="equation" label="eq:invgamma_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \frac{\beta}{\alpha-1}" alt="Expected value for an inverse-gamma distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \frac{\beta}{\alpha-1}" data-equation="eq:invgamma_expectation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/invgamma/mean/docs/img/equation_invgamma_expectation.svg" alt="Expected value for an inverse-gamma distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/invgamma/mean/docs/img/equation_invgamma_expectation.svg" alt="Expected value for an inverse-gamma distribution.">
     <br>
 </div>
 
