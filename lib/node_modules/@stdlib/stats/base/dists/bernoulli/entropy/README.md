@@ -31,7 +31,7 @@ The [entropy][entropy] (in [nats][nats]) for a [Bernoulli][bernoulli-distributio
 <!-- <equation class="equation" label="eq:bernoulli_entropy" align="center" raw="H\left( X \right) = -q \ln( q ) - p \ln( p )" alt="Differential entropy for a bernoulli distribution."> -->
 
 <div class="equation" align="center" data-raw-text="H\left( X \right) = -q \ln( q ) - p \ln( p )" data-equation="eq:bernoulli_entropy">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/bernoulli/entropy/docs/img/equation_bernoulli_entropy.svg" alt="Differential entropy for a bernoulli distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/bernoulli/entropy/docs/img/equation_bernoulli_entropy.svg" alt="Differential entropy for a bernoulli distribution.">
     <br>
 </div>
 

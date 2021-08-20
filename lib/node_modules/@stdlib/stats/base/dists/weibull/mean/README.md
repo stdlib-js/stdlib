@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [Weibull][weibull-distribution] rando
 <!-- <equation class="equation" label="eq:weibull_expectation" align="center" raw="\mathbb{E}\left[ X \right] = \lambda \, \Gamma(1+1/k)" alt="Expected value for a Weibull distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \lambda \, \Gamma(1+1/k)" data-equation="eq:weibull_expectation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/weibull/mean/docs/img/equation_weibull_expectation.svg" alt="Expected value for a Weibull distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/weibull/mean/docs/img/equation_weibull_expectation.svg" alt="Expected value for a Weibull distribution.">
     <br>
 </div>
 
