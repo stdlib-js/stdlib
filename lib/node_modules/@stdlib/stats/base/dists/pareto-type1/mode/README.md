@@ -31,7 +31,7 @@ The [mode][mode] for a [Pareto (Type I)][pareto-distribution] random variable wi
 <!-- <equation class="equation" label="eq:pareto_type1_mode" align="center" raw="\operatorname{mode}\left( X \right) = \beta" alt="Mode for a Pareto (Type I) distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\operatorname{mode}\left( X \right) = \beta" data-equation="eq:pareto_type1_mode">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/mode/docs/img/equation_pareto_type1_mode.svg" alt="Mode for a Pareto (Type I) distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/pareto-type1/mode/docs/img/equation_pareto_type1_mode.svg" alt="Mode for a Pareto (Type I) distribution.">
     <br>
 </div>
 
