@@ -277,7 +277,7 @@ var y = invgamma.cdf( 0.8 );
 
 <section class="links">
 
-[invgamma-distribution]: https://en.wikipedia.org/wiki/Inverse_Gamma_distribution
+[invgamma-distribution]: https://en.wikipedia.org/wiki/Inverse-gamma_distribution
 
 [cdf]: https://en.wikipedia.org/wiki/Cumulative_distribution_function
 

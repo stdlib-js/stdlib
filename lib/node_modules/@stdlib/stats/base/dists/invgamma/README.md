@@ -118,7 +118,7 @@ console.log( objectKeys( invgamma ) );
 
 <section class="links">
 
-[invgamma-distribution]: https://en.wikipedia.org/wiki/Inverse_Gamma_distribution
+[invgamma-distribution]: https://en.wikipedia.org/wiki/Inverse-gamma_distribution
 
 <!-- <toc-links> -->
 
