@@ -31,7 +31,7 @@ The [expected value][expected-value] for a [Bernoulli][bernoulli-distribution] r
 <!-- <equation class="equation" label="eq:bernoulli_expectation" align="center" raw="\mathbb{E}\left[ X \right] = p" alt="Expected value for a Bernoulli distribution."> -->
 
 <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = p" data-equation="eq:bernoulli_expectation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/stats/base/dists/bernoulli/mean/docs/img/equation_bernoulli_expectation.svg" alt="Expected value for a Bernoulli distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/bernoulli/mean/docs/img/equation_bernoulli_expectation.svg" alt="Expected value for a Bernoulli distribution.">
     <br>
 </div>
 
