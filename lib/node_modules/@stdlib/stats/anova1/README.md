@@ -148,7 +148,7 @@ table = out.print();
 
 ## Notes
 
--   The calculation for the p value is based on an F distribution as indicated on [this website][penn-state]. 
+-   The calculation for the p value is based on [an F distribution][anova-nist].
 
 </section>
 
@@ -189,7 +189,7 @@ console.log( out.print() );
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays
 
-[penn-state]: https://onlinecourses.science.psu.edu/stat502/node/141
+[anova-nist]: https://www.itl.nist.gov/div898/handbook/ppc/section2/ppc231.htm
 
 </section>
 
