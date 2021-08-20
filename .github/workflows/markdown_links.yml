@@ -40,6 +40,18 @@ jobs:
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
+    # Define environment variables:
+    env:
+      LOG_DIR: "${{ github.workspace }}/tmp/var/log"
+      LOG_FILE_FAILURES: "${{ github.workspace }}/tmp/var/log/failures.json"
+      LOG_FILE_WARNINGS: "${{ github.workspace }}/tmp/var/log/warnings.json"
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
     # Define the sequence of job steps...
     steps:
 
@@ -57,6 +69,14 @@ jobs:
           lfs: false
         timeout-minutes: 10
 
+      # Initialize log files:
+      - name: 'Initialize log files'
+        run: |
+          mkdir -p "${{ env.LOG_DIR }}"
+          touch "${{ env.LOG_FILE_FAILURES }}"
+          touch "${{ env.LOG_FILE_WARNINGS }}"
+        timeout-minutes: 2
+
       # Check for broken links:
       - name: 'Check links'
         uses: stdlib-js/broken-markdown-url-definitions-action@main
@@ -68,11 +88,8 @@ jobs:
       # Log the results:
       - name: 'Log results'
         run: |
-          echo "Failures: "
-          echo ${{ steps.results.outputs.failures }}
-          echo "Warnings: "
-          echo ${{ steps.results.outputs.warnings }}
-          echo Status: ${{ steps.results.outputs.status }}
+          echo "${{ steps.results.outputs.failures }}" >> "${{ env.LOG_FILE_FAILURES }}"
+          echo "${{ steps.results.outputs.warnings }}" >> "${{ env.LOG_FILE_WARNINGS }}"
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
@@ -80,6 +97,31 @@ jobs:
         if: ${{ steps.results.outputs.status }} != 'success'
         run: |
           exit 1
+
+      # View the log file if the previous step fails:
+      - name: 'View log file'
+        if: failure()
+        run: |
+          echo "Printing the list of failures..."
+          cat "${{ env.LOG_FILE_FAILURES }}"
+        timeout-minutes: 5
+
+      # Upload the log files:
+      - name: 'Upload log files'
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          # Define a name for the uploaded artifact:
+          name: results
+
+          # Specify the paths to upload:
+          path: |
+            ${{ env.LOG_FILE_FAILURES }}
+            ${{ env.LOG_FILE_WARNINGS }}
+
+          # Specify the number of days to retain the artifact (default is 90 days):
+          retention-days: 10
+        timeout-minutes: 10
 
   # Define a job for sending notifications to Slack...
   slack:
