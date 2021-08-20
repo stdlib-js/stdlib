@@ -79,14 +79,14 @@ jobs:
         timeout-minutes: 15
 
       # Publish standalone packages:
-      - name: 'Publish standalone packages'
+      - name: 'Publish packages'
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
           node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch
 
       # Archive list of to be published packages:
-      - name: 'Archive list of to be published packages'
+      - name: 'Archive package list'
         uses: actions/upload-artifact@v2
         with:
           name: ordered-pkg-list
