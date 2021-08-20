@@ -2686,7 +2686,7 @@
       "dispersion"
     ]
   },
-  "https://en.wikipedia.org/wiki/Inverse_Gamma_distribution": {
+  "https://en.wikipedia.org/wiki/Inverse-gamma_distribution": {
     "id": "invgamma-distribution",
     "description": "Wikipedia entry for the inverse gamma distribution.",
     "short_url": "",
