@@ -30,6 +30,7 @@
     "lib": "./lib",
     "test": "./test"
   },
+  "types": "./docs/types",
   "scripts": {
     "notes": "make notes",
     "lint": "make lint",
