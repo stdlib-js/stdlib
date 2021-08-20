@@ -144,9 +144,9 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [nodejs-irc]: https://blog.izs.me/2012/08/policy-on-trolling
 
-[citizen-code-of-conduct]: http://citizencodeofconduct.org/
+[citizen-code-of-conduct]: https://github.com/stumpsyn/policies/blob/7caa4699ba74e341a46b3266d4610af477ba2c3d/citizen_code_of_conduct.md
 
-[geek-feminism-code-of-conduct]: https://geekfeminism.org/about/code-of-conduct/
+[geek-feminism-code-of-conduct]: https://geekfeminismdotorg.wordpress.com/about/code-of-conduct/
 
 [contributor-covenant]: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
 

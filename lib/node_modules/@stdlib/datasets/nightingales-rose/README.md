@@ -181,7 +181,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 [polar-area-diagram]: https://en.wikipedia.org/wiki/Polar_area_diagram
 
-[@nightingale:1859a]: http://ocp.hul.harvard.edu/dl/contagion/010164675
+[@nightingale:1859a]: https://curiosity.lib.harvard.edu/contagion/catalog/36-990101646750203941
 
 [csv]: https://tools.ietf.org/html/rfc4180
 

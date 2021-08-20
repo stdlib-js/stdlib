@@ -3632,7 +3632,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [quality-guide]: https://github.com/bevacqua/js
 
-[unix-philosophy]: http://www.faqs.org/docs/artu/ch01s06.html
+[unix-philosophy]: http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
 
 [license]: https://creativecommons.org/licenses/by-sa/4.0/
 
