@@ -17,12 +17,12 @@
 #/
 
 # Workflow name:
-name: broken_markdown_links
+name: markdown_links
 
 # Workflow triggers:
 on:
   schedule:
-    # Run the workflow once a month on the 1st day of every month.
+    # Run the workflow once a month on the 1st day of every month:
     - cron:  "0 0 1 * *"
 
   # Allow the workflow to be manually run:
@@ -32,10 +32,10 @@ on:
 jobs:
 
   # Define a job for detecting broken links in Markdown files...
-  broken_markdown_links:
+  check_links:
 
     # Define a display name:
-    name: 'Detect broken links in Markdown files'
+    name: 'Check links'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -56,14 +56,22 @@ jobs:
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
-      # Run the command to check for broken links:
-      - id: broken-links
+
+      # Check for broken links:
+      - name: 'Check links'
         uses: stdlib-js/broken-markdown-url-definitions-action@main
-      # Print out the results:
-      - run: |
-          echo ${{ steps.broken-links.outputs.links }}
-          echo Status: ${{ steps.broken-links.outputs.status }}
+        id: results
+        timeout-minutes: 120
+
+      # Log the results:
+      - name: 'Log results'
+        run: |
+          echo ${{ steps.results.outputs.links }}
+          echo Status: ${{ steps.results.outputs.status }}
+        timeout-minutes: 2
+
       # Fail the workflow if the status is not "success":
-      - if: ${{ steps.broken-links.outputs.status }} != 'success'
+      - name: 'Check status'
+        if: ${{ steps.results.outputs.status }} != 'success'
         run: |
           exit 1
