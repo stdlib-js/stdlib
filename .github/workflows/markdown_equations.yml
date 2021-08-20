@@ -89,7 +89,7 @@ jobs:
         timeout-minutes: 5
 
       # Generate list of changed Markdown files:
-      - name: 'Generate list of changed Markdown files'
+      - name: 'Find changed Markdown files'
         run: |
           echo "::set-output name=files::$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md | tr '\n' ' ')"
         id: changed
@@ -102,7 +102,7 @@ jobs:
         timeout-minutes: 15
 
       # Update Markdown equation elements:
-      - name: 'Update Markdown equation elements'
+      - name: 'Update equation elements'
         run: |
           make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
           make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"

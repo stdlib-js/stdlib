@@ -56,7 +56,8 @@ workshops/
 
 # Only top-level directories:
 /etc/
-/docs/
+/docs/*
+!/docs/types/*
 /tools/
 
 # Compiled source #

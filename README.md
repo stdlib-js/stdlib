@@ -564,29 +564,11 @@ Test and build infrastructure is generously provided by the following services:
 
 [node-image]: https://img.shields.io/node/v/@stdlib/stdlib.svg
 
-[node-url]: https://github.com/@stdlib-js/stdlib
+[node-url]: https://github.com/stdlib-js/stdlib
 
-<!-- [build-image-master]: https://img.shields.io/travis/stdlib-js/stdlib/master.svg
+<!-- [build-image-develop]: https://img.shields.io/travis/stdlib-js/stdlib/develop.svg
 
-[build-url-master]: https://travis-ci.org/stdlib-js/stdlib
-
-[build-image-develop]: https://img.shields.io/travis/stdlib-js/stdlib/develop.svg
-
-[build-url-develop]: https://travis-ci.org/stdlib-js/stdlib -->
-
-<!-- FIXME: shields.io AppVeyor badges do not seem to work -->
-
-<!-- [windows-build-image-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
-
-[windows-build-url-master]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=master&svg=true
-
-[windows-build-image-develop]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop&svg=true
-
-[windows-build-url-develop]: https://ci.appveyor.com/api/projects/status/github/stdlib-js/stdlib?branch=develop&svg=true
-
-[coverage-image-master]: https://img.shields.io/codecov/c/github/stdlib-js/stdlib/master.svg
-
-[coverage-url-master]: https://codecov.io/github/stdlib-js/stdlib/branch/master
+[build-url-develop]: https://travis-ci.org/stdlib-js/stdlib
 
 [coverage-image-develop]: https://img.shields.io/codecov/c/github/stdlib-js/stdlib/develop.svg
 
@@ -642,7 +624,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [observable]: https://observablehq.com/
 
-[skypack]: https://www.skypack.dev/npm/
+[skypack]: https://www.skypack.dev/view/@stdlib/stdlib
 
 [ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 

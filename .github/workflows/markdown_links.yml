@@ -17,28 +17,25 @@
 #/
 
 # Workflow name:
-name: standalone_push_changes
+name: markdown_links
 
 # Workflow triggers:
 on:
-  push:
-    branches:
-      - develop
-    paths:
-      # List paths for which changes should trigger this workflow:
-      - 'lib/node_modules/@stdlib/**'
+  schedule:
+    # Run the workflow once a month on the 1st day of every month:
+    - cron:  "0 0 1 * *"
 
-      # List paths for which changes should *not* trigger this workflow:
-      - '!lib/node_modules/@stdlib/_tools/**'
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
 
 # Workflow jobs:
 jobs:
 
-  # Define a job for pushing changes to standalone packages...
-  push:
+  # Define a job for detecting broken links in Markdown files...
+  markdown_links:
 
     # Define a display name:
-    name: 'Push Changes to Standalone Packages'
+    name: 'Check links'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -51,43 +48,38 @@ jobs:
         uses: actions/checkout@v2
         with:
           # Specify whether to remove untracked files before checking out the repository:
-          clean: false
+          clean: true
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
 
           # Specify whether to download Git-LFS files:
           lfs: false
         timeout-minutes: 10
 
-      # Install Node.js:
-      - name: 'Install Node.js'
-        uses: actions/setup-node@v2
+      # Check for broken links:
+      - name: 'Check links'
+        uses: stdlib-js/broken-markdown-url-definitions-action@main
+        id: results
         with:
-          node-version: '16' # 'lts/*'
-        timeout-minutes: 5
+          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
+        timeout-minutes: 120
 
-      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
-      - name: 'Install dependencies'
+      # Log the results:
+      - name: 'Log results'
         run: |
-          make install-node-modules || make install-node-modules || make install-node-modules
-        timeout-minutes: 15
+          echo "Failures: "
+          echo ${{ steps.results.outputs.failures }}
+          echo "Warnings: "
+          echo ${{ steps.results.outputs.warnings }}
+          echo Status: ${{ steps.results.outputs.status }}
+        timeout-minutes: 2
 
-      # Retrieve list of changed stdlib packages in a push or pull request:
-      - name: 'Find changed packages'
-        id: 'changed_packages'
-        uses: stdlib-js/changed_packages-action@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Push changes to the packages' repositories:
-      - name: 'Push changes'
-        if: ${{ steps.changed_packages.outputs.packages != '[]' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+      # Fail the workflow if the status is not "success":
+      - name: 'Check status'
+        if: ${{ steps.results.outputs.status }} != 'success'
         run: |
-          echo "Pushing changes to the following repositories: ${{ steps.changed_packages.outputs.packages }}"
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ join( fromJSON( steps.changed_packages.outputs.packages ), ' ' ) }}
+          exit 1
 
   # Define a job for sending notifications to Slack...
   slack:
@@ -99,7 +91,7 @@ jobs:
     runs-on: 'ubuntu-latest'
 
     # Indicate that this job depends on the prior job finishing:
-    needs: push
+    needs: markdown_links
 
     # Run this job regardless of the outcome of the prior job:
     if: always()
@@ -116,15 +108,15 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.push.result}}' >> $GITHUB_ENV
-          if [[ "${{ needs.push.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**standalone_push_changes** workflow succeeded' >> $GITHUB_ENV
+          echo 'NOTIFICATION_STATUS=${{ needs.markdown_links.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.markdown_links.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow succeeded' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
-          elif [[ "${{ needs.push.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**standalone_push_changes** workflow failed' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_links.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow failed' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
-          elif [[ "${{ needs.push.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**standalone_push_changes** workflow was canceled' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_links.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow was canceled' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
           else
             exit 1
