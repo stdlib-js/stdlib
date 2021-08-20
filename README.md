@@ -624,7 +624,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [observable]: https://observablehq.com/
 
-[skypack]: https://www.skypack.dev/npm/
+[skypack]: https://www.skypack.dev/view/@stdlib/stdlib
 
 [ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 
