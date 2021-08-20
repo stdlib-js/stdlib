@@ -58,9 +58,7 @@ jobs:
         timeout-minutes: 10
       # Run the command to check for broken links:
       - id: broken-links
-        uses: stdlib-js/broken-markdown-url-definitions-action@v1.0
-        with:
-          directory: fixtures
+        uses: stdlib-js/broken-markdown-url-definitions-action@main
       # Print out the results:
       - run: |
           echo ${{ steps.broken-links.outputs.links }}
