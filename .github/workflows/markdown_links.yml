@@ -32,7 +32,7 @@ on:
 jobs:
 
   # Define a job for detecting broken links in Markdown files...
-  check_links:
+  markdown_links:
 
     # Define a display name:
     name: 'Check links'
@@ -75,3 +75,58 @@ jobs:
         if: ${{ steps.results.outputs.status }} != 'success'
         run: |
           exit 1
+
+  # Define a job for sending notifications to Slack...
+  slack:
+
+    # Define a display name:
+    name: 'Slack notification'
+
+    # Define the type of virtual host machine:
+    runs-on: 'ubuntu-latest'
+
+    # Indicate that this job depends on the prior job finishing:
+    needs: markdown_links
+
+    # Run this job regardless of the outcome of the prior job:
+    if: always()
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Resolve notification data:
+      - name: 'Resolve notification data'
+        run: |
+          echo 'NOTIFICATION_STATUS=${{ needs.markdown_links.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.markdown_links.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow succeeded' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_links.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow failed' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_links.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_links** workflow was canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+          else
+            exit 1
+          fi
+        timeout-minutes: 5
+
+      # Send notification to Slack:
+      - name: 'Send notification'
+        uses: 8398a7/action-slack@v3
+        if: success()
+        with:
+          status: "${{ env.NOTIFICATION_STATUS }}"
+          fields: repo,commit,message
+          text: "${{ env.NOTIFICATION_TEXT }}"
+          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+        timeout-minutes: 5
