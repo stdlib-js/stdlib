@@ -29,7 +29,7 @@ The [arithmetic mean][arithmetic-mean] is defined as
 <!-- <equation class="equation" label="eq:arithmetic_mean" align="center" raw="\mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the arithmetic mean."> -->
 
 <div class="equation" align="center" data-raw-text="\mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:arithmetic_mean">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8a4fb9c97c7172b527509b7ad621c1f85a667026/lib/node_modules/@stdlib/stats/base/smeanors/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@6c9ade4d7509dfc873ce2dad241f92459a83313b/lib/node_modules/@stdlib/stats/base/smeanors/docs/img/equation_arithmetic_mean.svg" alt="Equation for the arithmetic mean.">
     <br>
 </div>
 
