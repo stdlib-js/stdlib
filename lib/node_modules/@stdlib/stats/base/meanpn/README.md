@@ -181,7 +181,7 @@ console.log( v );
 
 <section class="links">
 
-[arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_meanpn
+[arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_mean
 
 [mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
