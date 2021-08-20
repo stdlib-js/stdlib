@@ -354,7 +354,7 @@ NOTE: addressed by BigInt
 
 1.  **Big numbers**: add support for big [integers][julia-bigint], [rationals][golang-big], and [floats][julia-bigfloat]. In addition to cryptography and computing irrational numbers, arbitrary precision arithmetic is useful for algorithms involving double-precision floating-point numbers. Currently, lack of efficient, and relatively performant, big number support limits the scope and types of implemented algorithms, including for basic transcendental functions.
 
-1.  **SIMD**: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][mdn-simd-js] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is **not** particularly well-suited for large vector operations, which are common in numerical computing (e.g., BLAS).
+1.  **SIMD**: add support for long SIMD. Currently, [proposals][ecmascript-simd] for [SIMD][ecmascript-simd] in JavaScript have focused on [short SIMD][mozilla-simd], which is well-suited for graphics applications. However, [short SIMD][mozilla-simd] is **not** particularly well-suited for large vector operations, which are common in numerical computing (e.g., BLAS).
 
     **Aside:** JavaScript may never have native SIMD support. Instead, SIMD is currently only possible only via [WebAssembly][wasm]. Lack of native JavaScript SIMD support would be unfortunate, as plenty of applications exist (e.g., scripting for purposes of analysis and data manipulation), which would benefit from SIMD operations without requiring a context switch to a lower-level language and additional compilation steps.
 
@@ -664,6 +664,8 @@ In general, far too many developers are oblivious to the module resolution [algo
 
 where `g.js`
 
+<!-- eslint-disable -->
+
 ```javascript
 var beep = require( 'beep' );
 var debug = require( 'debug' );
@@ -811,8 +813,6 @@ See the [contributing guide][contributing-guide].
 [npm]: https://www.npmjs.com/
 
 [mdn-math]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
-
-[mdn-simd-js]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SIMD
 
 <!--
 [mdn-web-workers]: https://developer.mozilla.org/en-US/docs/Web/API/Worker/Worker
