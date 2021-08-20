@@ -217,6 +217,7 @@ npm_install() {
 	npm install "${pkg_name}@${pkg_version}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when installing ${pkg_name}@${pkg_version} via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
 		return 1
 	fi
 	echo "Successfully installed ${pkg_name}@${pkg_version}." >> "${log_file}" 2>&1
@@ -245,6 +246,7 @@ npm_install_from_github() {
 	npm install "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
 		return 1
 	fi
 	echo "Successfully installed ${pkg_github_url}#${pkg_github_tag}." >> "${log_file}" 2>&1
@@ -268,6 +270,7 @@ npm_install_global() {
 	npm install -g "${pkg_name}@${pkg_version}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when installing ${pkg_name}@${pkg_version} as a global package via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
 		return 1
 	fi
 	npm list -g --depth=0 >> "${log_file}" 2>&1
@@ -306,6 +309,7 @@ npm_install_global_github() {
 	npm install "${pkg_github_url}#${pkg_github_tag}" >> "${log_file}" 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo "Encountered an error when installing ${pkg_github_url}#${pkg_github_tag} as a global package via npm." >> "${log_file}" 2>&1
+		cat "${working_dir}/npm-debug.log" >> "${log_file}" 2>&1
 		return 1
 	fi
 	npm list -g --depth=0 >> "${log_file}" 2>&1

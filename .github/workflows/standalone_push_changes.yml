@@ -24,6 +24,12 @@ on:
   push:
     branches:
       - develop
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/node_modules/@stdlib/**'
+
+      # List paths for which changes should *not* trigger this workflow:
+      - '!lib/node_modules/@stdlib/_tools/**'
 
 # Workflow jobs:
 jobs:
@@ -58,7 +64,7 @@ jobs:
       - name: 'Install Node.js'
         uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
+          node-version: '16' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):

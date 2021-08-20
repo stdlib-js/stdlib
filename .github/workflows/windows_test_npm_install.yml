@@ -158,10 +158,13 @@ jobs:
       # Configure Git:
       - name: 'Configure Git'
 
-        # Instruct `git` to convert CRLF line endings (Windows) to LF on commit.
+        # Instruct Git to convert CRLF line endings (Windows) to LF on commit and force Git to use HTTPS rather than SSH.
         #
         # [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#Formatting-and-Whitespace
-        run: git config --global core.autocrlf input
+        run: |
+          git config --global core.autocrlf input
+          git config --global url."https://github.com/".insteadOf git@github.com:
+          git config --global url."https://".insteadOf git://
         timeout-minutes: 2
 
       # Configure NVS:
