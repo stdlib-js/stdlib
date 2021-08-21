@@ -84,7 +84,7 @@ jobs:
       # Generate list of namespace READMEs:
       - name: 'Generate list of namespace READMEs'
         run: |
-          echo "::set-output name=files::$( make list-pkgs-namespaces | sed 's/.*/lib\/node_modules\/&\/README.md/' | tr '\n' ' ' )"
+          echo "::set-output name=files::$( make list-pkgs-namespace-readmes | tr '\n' ' ' )"
         id: namespace_files
 
       # Update namespace table of contents:
