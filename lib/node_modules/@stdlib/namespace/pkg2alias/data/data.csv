@@ -1615,6 +1615,7 @@
 "@stdlib/assert/is-array",isArray
 "@stdlib/assert/is-array-array",isArrayArray
 "@stdlib/assert/is-arraybuffer",isArrayBuffer
+"@stdlib/assert/is-arraybuffer-view",isArrayBufferView
 "@stdlib/assert/is-array-length",isArrayLength
 "@stdlib/assert/is-array-like",isArrayLike
 "@stdlib/assert/is-array-like-object",isArrayLikeObject
@@ -1634,6 +1635,7 @@
 "@stdlib/assert/is-circular",isCircular
 "@stdlib/assert/is-circular-array",isCircularArray
 "@stdlib/assert/is-circular-plain-object",isCircularPlainObject
+"@stdlib/assert/is-class",isClass
 "@stdlib/assert/is-collection",isCollection
 "@stdlib/assert/is-complex",isComplex
 "@stdlib/assert/is-complex64",isComplex64

@@ -1615,6 +1615,7 @@ isArguments
 isArray
 isArrayArray
 isArrayBuffer
+isArrayBufferView
 isArrayLength
 isArrayLike
 isArrayLikeObject
@@ -1634,6 +1635,7 @@ isCentrosymmetricMatrix
 isCircular
 isCircularArray
 isCircularPlainObject
+isClass
 isCollection
 isComplex
 isComplex64
