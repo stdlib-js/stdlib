@@ -226,6 +226,51 @@ update_package_meta_data() {
 	return 0
 }
 
+# Updates namespace table of contents.
+update_namespace_tocs() {
+	local files
+
+	echo 'Updating namespace table of contents...' >&2
+
+	echo '' >&2
+	echo 'Resolving list of namespace READMEs...' >&2
+	files=$(make list-pkgs-namespace-readmes | tr '\n' ' ')
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when resolving a list of namespace READMEs.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully resolved namespace READMEs.' >&2
+
+	echo '' >&2
+	echo 'Updating READMEs...' >&2
+	make FILES="${files}" markdown-namespace-tocs-files
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating namespace READMEs.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated READMEs.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update namespace ToCs'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
 # Updates package URLs in Markdown files.
 update_markdown_package_urls() {
 	echo 'Updating package URLs in Markdown files...' >&2
@@ -478,6 +523,11 @@ main() {
 		on_error 1
 	fi
 	update_package_meta_data
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_namespace_tocs
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
 		on_error 1
