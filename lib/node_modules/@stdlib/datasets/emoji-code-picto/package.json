@@ -20,7 +20,6 @@
   "browser": "./lib/browser.js",
   "directories": {
     "benchmark": "./benchmark",
-    "bin": "./bin",
     "data": "./data",
     "doc": "./docs",
     "example": "./examples",

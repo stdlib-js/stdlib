@@ -21,7 +21,6 @@
     "process": "process/"
   },
   "directories": {
-    "bin": "./bin",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",

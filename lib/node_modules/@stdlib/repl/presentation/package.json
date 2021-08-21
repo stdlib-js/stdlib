@@ -18,7 +18,6 @@
   },
   "main": "./lib",
   "directories": {
-    "bin": "./bin",
     "data": "./data",
     "doc": "./docs",
     "example": "./examples",
