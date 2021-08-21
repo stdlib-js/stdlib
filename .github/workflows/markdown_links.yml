@@ -88,8 +88,8 @@ jobs:
       # Log the results:
       - name: 'Log results'
         run: |
-          echo "${{ steps.results.outputs.failures }}" >> "${{ env.LOG_FILE_FAILURES }}"
-          echo "${{ steps.results.outputs.warnings }}" >> "${{ env.LOG_FILE_WARNINGS }}"
+          echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
+          echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
