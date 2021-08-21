@@ -248,7 +248,14 @@ update_namespace_tocs() {
 	make FILES="${files}" markdown-namespace-tocs-files
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
-		echo 'Error: unexpected error. Encountered an error when updating namespace READMEs.' >&2
+		echo 'Error: unexpected error. Encountered an error when updating namespace README table of contents.' >&2
+		echo '' >&2
+		return 1
+	fi
+	make FILES="${files}" markdown-pkg-urls-files
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating namespace README package URLs.' >&2
 		echo '' >&2
 		return 1
 	fi
