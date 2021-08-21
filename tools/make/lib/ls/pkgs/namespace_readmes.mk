@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2017 The Stdlib Authors.
+# Copyright (c) 2021 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,21 +19,21 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/readmes/bin/cli
+LIST_PACKAGE_NAMESPACE_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/namespace-readmes/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_READMES_FLAGS ?=
+LIST_PACKAGE_NAMESPACE_READMES_FLAGS ?=
 
 
 # RULES #
 
 #/
-# Prints a list of all package READMEs.
+# Prints a list of all namespace package READMEs.
 #
 # @example
-# make list-pkgs-readmes
+# make list-pkgs-namespace-readmes
 #/
-list-pkgs-readmes: $(LIST_PACKAGE_READMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_READMES) $(LIST_PACKAGE_READMES_FLAGS) $(SRC_DIR)
+list-pkgs-namespace-readmes: $(LIST_PACKAGE_NAMESPACE_READMES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMESPACE_READMES) $(LIST_PACKAGE_NAMESPACE_READMES_FLAGS) $(SRC_DIR)
 
-.PHONY: list-pkgs-readmes
+.PHONY: list-pkgs-namespace-readmes
