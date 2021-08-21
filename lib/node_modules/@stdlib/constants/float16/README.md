@@ -27,7 +27,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var constants = require( '@stdlib/constants/float16/' );
+var constants = require( '@stdlib/constants/float16' );
 ```
 
 #### constants
@@ -75,7 +75,7 @@ var c = constants;
 
 ```javascript
 var objectKeys = require( '@stdlib/utils/keys' );
-var constants = require( '@stdlib/constants/float16/' );
+var constants = require( '@stdlib/constants/float16' );
 
 console.log( objectKeys( constants ) );
 ```
