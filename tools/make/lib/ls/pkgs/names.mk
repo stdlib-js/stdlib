@@ -24,14 +24,24 @@ LIST_PACKAGE_NAMES ?= $(TOOLS_PKGS_DIR)/pkgs/names/bin/cli
 # Define the command flags:
 LIST_PACKAGE_NAMES_FLAGS ?=
 
+# Define the directory from which to search for packages:
+LIST_PACKAGE_NAMES_DIR ?= $(SRC_DIR)
 
-# TARGETS #
 
-# List all package names.
+# RULES #
+
+#/
+# Prints a list of all package names.
 #
-# This target prints a list of all package names.
-
+# @param {string} [LIST_PACKAGE_NAMES_DIR] - absolute path of the directory from which to search for packages (default: source directory)
+#
+# @example
+# make list-pkgs-names
+#
+# @example
+# make list-pkgs-names LIST_PACKAGE_NAMES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+#/
 list-pkgs-names: $(LIST_PACKAGE_NAMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMES) $(LIST_PACKAGE_NAMES_FLAGS) $(SRC_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMES) $(LIST_PACKAGE_NAMES_FLAGS) $(LIST_PACKAGE_NAMES_DIR)
 
 .PHONY: list-pkgs-names
