@@ -24,6 +24,9 @@ LIST_PACKAGE_NAMESPACE_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/namespace-readmes/bin/c
 # Define the command flags:
 LIST_PACKAGE_NAMESPACE_READMES_FLAGS ?=
 
+# Define the directory from which to search for namespace READMEs:
+LIST_PACKAGE_NAMESPACE_READMES_DIR ?= $(SRC_DIR)
+
 
 # RULES #
 
@@ -32,8 +35,11 @@ LIST_PACKAGE_NAMESPACE_READMES_FLAGS ?=
 #
 # @example
 # make list-pkgs-namespace-readmes
+#
+# @example
+# make list-pkgs-namespace-readmes LIST_PACKAGE_NAMESPACE_READMES_DIR=$PWD/lib/node_modules/\@stdlib/utils
 #/
 list-pkgs-namespace-readmes: $(LIST_PACKAGE_NAMESPACE_READMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMESPACE_READMES) $(LIST_PACKAGE_NAMESPACE_READMES_FLAGS) $(SRC_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMESPACE_READMES) $(LIST_PACKAGE_NAMESPACE_READMES_FLAGS) $(LIST_PACKAGE_NAMESPACE_READMES_DIR)
 
 .PHONY: list-pkgs-namespace-readmes
