@@ -33,6 +33,8 @@ LIST_PACKAGE_NAMESPACES_DIR ?= $(SRC_DIR)
 #/
 # Prints a list of all package namespaces.
 #
+# @param {string} [LIST_PKGS_NAMESPACES_DIR] - absolute path of the directory from which to search (default: source directory)
+#
 # @example
 # make list-pkgs-namespaces
 #

@@ -37,12 +37,24 @@ FIND_PACKAGES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PACKAGES_FLAG
 PACKAGES ?= $(shell $(FIND_PACKAGES_CMD))
 
 
-# TARGETS #
+# RULES #
 
-# List all packages.
+#/
+# Prints a list of all packages.
 #
-# This target prints a list of all packages, excluding the `node_modules`, `build`, and `reports` directories.
-
+# ## Notes
+#
+# -   This recipe excludes the `node_modules`, `build`, and `reports` directories.
+#/
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+#
+# @example
+# make list-pkgs
+#
+# @example
+# make list-pkgs PACKAGES_FILTER='.*/math/base/special/.*'
+#/
 list-pkgs:
 	$(QUIET) find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_PACKAGES_FLAGS) | xargs printf '%s\n'
 

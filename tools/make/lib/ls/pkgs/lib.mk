@@ -37,12 +37,20 @@ FIND_LIB_PACKAGES_CMD ?= find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAG
 LIB_PACKAGES ?= $(shell $(FIND_LIB_PACKAGES_CMD))
 
 
-# TARGETS #
+# RULES #
 
-# List all packages.
+#/
+# Prints a list of all packages.
 #
-# This target prints a list of all packages.
-
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+#
+# @example
+# make list-lib-pkgs
+#
+# @example
+# make list-lib-pkgs PACKAGES_FILTER='.*/math/base/special/.*'
+#/
 list-lib-pkgs:
 	$(QUIET) find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAGES_FLAGS) | xargs printf '%s\n'
 

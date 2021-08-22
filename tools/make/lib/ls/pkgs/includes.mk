@@ -19,21 +19,29 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_INCLUDES ?= $(TOOLS_PKGS_DIR)/pkgs/includes/bin/cli
+LIST_PKGS_INCLUDES ?= $(TOOLS_PKGS_DIR)/pkgs/includes/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_INCLUDES_FLAGS ?=
+LIST_PKGS_INCLUDES_FLAGS ?=
+
+# Define the directory from which to search for packages:
+LIST_PKGS_INCLUDES_DIR ?= $(SRC_DIR)
 
 
 # RULES #
 
 #/
-# Lists package `include` directories.
+# Prints a list of package `include` directories.
+#
+# @param {string} [LIST_PKGS_INCLUDES_DIR] - absolute path of the directory from which to search (default: source directory)
 #
 # @example
 # make list-pkgs-includes
+#
+# @example
+# make list-pkgs-includes LIST_PKGS_INCLUDES_DIR=$PWD/lib/node_modules/\@stdlib/blas
 #/
-list-pkgs-includes: $(LIST_PACKAGE_INCLUDES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_INCLUDES) $(LIST_PACKAGE_INCLUDES_FLAGS) $(SRC_DIR)
+list-pkgs-includes: $(LIST_PKGS_INCLUDES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PKGS_INCLUDES) $(LIST_PKGS_INCLUDES_FLAGS) $(LIST_PKGS_INCLUDES_DIR)
 
 .PHONY: list-pkgs-includes

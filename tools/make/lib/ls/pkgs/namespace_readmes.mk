@@ -19,13 +19,13 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_NAMESPACE_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/namespace-readmes/bin/cli
+LIST_PKGS_NAMESPACE_READMES ?= $(TOOLS_PKGS_DIR)/pkgs/namespace-readmes/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_NAMESPACE_READMES_FLAGS ?=
+LIST_PKGS_NAMESPACE_READMES_FLAGS ?=
 
 # Define the directory from which to search for namespace READMEs:
-LIST_PACKAGE_NAMESPACE_READMES_DIR ?= $(SRC_DIR)
+LIST_PKGS_NAMESPACE_READMES_DIR ?= $(SRC_DIR)
 
 
 # RULES #
@@ -33,13 +33,15 @@ LIST_PACKAGE_NAMESPACE_READMES_DIR ?= $(SRC_DIR)
 #/
 # Prints a list of all namespace package READMEs.
 #
+# @param {string} [LIST_PKGS_NAMESPACE_READMES_DIR] - absolute path of the directory from which to search (default: source directory)
+#
 # @example
 # make list-pkgs-namespace-readmes
 #
 # @example
-# make list-pkgs-namespace-readmes LIST_PACKAGE_NAMESPACE_READMES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-namespace-readmes LIST_PKGS_NAMESPACE_READMES_DIR=$PWD/lib/node_modules/\@stdlib/utils
 #/
-list-pkgs-namespace-readmes: $(LIST_PACKAGE_NAMESPACE_READMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_NAMESPACE_READMES) $(LIST_PACKAGE_NAMESPACE_READMES_FLAGS) $(LIST_PACKAGE_NAMESPACE_READMES_DIR)
+list-pkgs-namespace-readmes: $(LIST_PKGS_NAMESPACE_READMES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PKGS_NAMESPACE_READMES) $(LIST_PKGS_NAMESPACE_READMES_FLAGS) $(LIST_PKGS_NAMESPACE_READMES_DIR)
 
 .PHONY: list-pkgs-namespace-readmes
