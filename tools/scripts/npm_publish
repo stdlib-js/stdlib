@@ -194,6 +194,21 @@ check_licenses() {
 	return 0
 }
 
+# Checks that the project can be sorted topologically.
+check_toposort() {
+	echo 'Performing a topological sort...' >&2
+	make list-pkgs-toposort >/dev/null
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Unable to perform a topological sort. This is likely due to a dependency cycle. Please resolve before publishing. Command: make list-pkgs-toposort.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully performed a topological sort.' >&2
+	echo '' >&2
+	return 0
+}
+
 # Updates package meta data.
 update_package_meta_data() {
 	echo 'Updating package meta data...' >&2
@@ -526,6 +541,10 @@ main() {
 		on_error 1
 	fi
 	check_licenses
+	if [[ "$?" -ne 0 ]]; then
+		on_error 1
+	fi
+	check_toposort
 	if [[ "$?" -ne 0 ]]; then
 		on_error 1
 	fi
