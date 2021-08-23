@@ -22,7 +22,7 @@
 LIST_PKGS_TOPOSORT ?= $(TOOLS_PKGS_DIR)/pkgs/toposort/bin/cli
 
 # Define the command flags:
-LIST_PKGS_TOPOSORT_FLAGS ?=
+LIST_PKGS_TOPOSORT_FLAGS ?= --ignore '**/_tools/**'
 
 # Define the directory from which to search for packages:
 LIST_PKGS_TOPOSORT_DIR ?= $(SRC_DIR)
