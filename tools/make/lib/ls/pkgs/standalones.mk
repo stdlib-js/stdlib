@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2017 The Stdlib Authors.
+# Copyright (c) 2021 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +19,13 @@
 # VARIABLES #
 
 # Define the path of the executable:
-LIST_PACKAGE_STANDALONES ?= $(TOOLS_PKGS_DIR)/pkgs/standalones/bin/cli
+LIST_PKGS_STANDALONES ?= $(TOOLS_PKGS_DIR)/pkgs/standalones/bin/cli
 
 # Define the command flags:
-LIST_PACKAGE_STANDALONES_FLAGS ?=
+LIST_PKGS_STANDALONES_FLAGS ?=
 
 # Define the directory from which to search for packages:
-LIST_PACKAGE_STANDALONES_DIR ?= $(SRC_DIR)
+LIST_PKGS_STANDALONES_DIR ?= $(SRC_DIR)
 
 
 # RULES #
@@ -33,15 +33,15 @@ LIST_PACKAGE_STANDALONES_DIR ?= $(SRC_DIR)
 #/
 # Prints a list of all standalone package names.
 #
-# @param {string} [LIST_PACKAGE_STANDALONES_DIR] - absolute path of the directory from which to search for packages (default: source directory)
+# @param {string} [LIST_PKGS_STANDALONES_DIR] - absolute path of the directory from which to search for packages (default: source directory)
 #
 # @example
 # make list-pkgs-standalones
 #
 # @example
-# make list-pkgs-standalones LIST_PACKAGE_STANDALONES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-standalones LIST_PKGS_STANDALONES_DIR=$PWD/lib/node_modules/\@stdlib/utils
 #/
-list-pkgs-standalones: $(LIST_PACKAGE_STANDALONES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PACKAGE_STANDALONES) $(LIST_PACKAGE_STANDALONES_FLAGS) $(LIST_PACKAGE_STANDALONES_DIR)
+list-pkgs-standalones: $(LIST_PKGS_STANDALONES) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PKGS_STANDALONES) $(LIST_PKGS_STANDALONES_FLAGS) $(LIST_PKGS_STANDALONES_DIR)
 
 .PHONY: list-pkgs-standalones
