@@ -42,7 +42,7 @@ LIST_PKGS_TYPES_DIR ?= $(SRC_DIR)
 # make list-pkgs-types LIST_PKGS_TYPES_DIR=$PWD/lib/node_modules/\@stdlib/utils
 #/
 list-pkgs-types: $(LIST_PKGS_TYPES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PKGS_TYPES) $(LIST_PKGS_TYPES_FLAGS) $(LIST_PKGS_TYPES_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TYPES)" $(LIST_PKGS_TYPES_FLAGS) "$(LIST_PKGS_TYPES_DIR)"
 
 .PHONY: list-pkgs-types
 

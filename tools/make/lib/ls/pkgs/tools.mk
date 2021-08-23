@@ -31,7 +31,7 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define a command for listing packages:
-FIND_TOOLS_PACKAGES_CMD ?= find $(find_kernel_prefix) $(ROOT_DIR) $(FIND_TOOLS_PACKAGES_FLAGS)
+FIND_TOOLS_PACKAGES_CMD ?= find $(find_kernel_prefix) "$(ROOT_DIR)" $(FIND_TOOLS_PACKAGES_FLAGS)
 
 # Define the list of packages:
 TOOLS_PACKAGES ?= $(shell $(FIND_TOOLS_PACKAGES_CMD))
@@ -52,6 +52,6 @@ TOOLS_PACKAGES ?= $(shell $(FIND_TOOLS_PACKAGES_CMD))
 # make list-tools-pkgs PACKAGES_FILTER='.*/pkgs/.*'
 #/
 list-tools-pkgs:
-	$(QUIET) find $(find_kernel_prefix) $(TOOLS_DIR) $(TOOLS_PKGS_DIR) $(FIND_TOOLS_PACKAGES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) "$(TOOLS_PKGS_DIR)" $(FIND_TOOLS_PACKAGES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-tools-pkgs

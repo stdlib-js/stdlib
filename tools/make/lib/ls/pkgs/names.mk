@@ -42,6 +42,6 @@ LIST_PKGS_NAMES_DIR ?= $(SRC_DIR)
 # make list-pkgs-names LIST_PKGS_NAMES_DIR=$PWD/lib/node_modules/\@stdlib/utils
 #/
 list-pkgs-names: $(LIST_PKGS_NAMES) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) $(LIST_PKGS_NAMES) $(LIST_PKGS_NAMES_FLAGS) $(LIST_PKGS_NAMES_DIR)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_NAMES)" $(LIST_PKGS_NAMES_FLAGS) "$(LIST_PKGS_NAMES_DIR)"
 
 .PHONY: list-pkgs-names

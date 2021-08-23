@@ -52,6 +52,6 @@ LIB_PACKAGES ?= $(shell $(FIND_LIB_PACKAGES_CMD))
 # make list-lib-pkgs PACKAGES_FILTER='.*/math/base/special/.*'
 #/
 list-lib-pkgs:
-	$(QUIET) find $(find_kernel_prefix) $(SRC_DIR) $(FIND_LIB_PACKAGES_FLAGS) | xargs printf '%s\n'
+	$(QUIET) find $(find_kernel_prefix) "$(SRC_DIR)" $(FIND_LIB_PACKAGES_FLAGS) | xargs printf '%s\n'
 
 .PHONY: list-lib-pkgs
