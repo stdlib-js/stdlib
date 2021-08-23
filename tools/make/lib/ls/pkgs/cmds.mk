@@ -39,7 +39,7 @@ LIST_PKGS_CMDS_DIR ?= $(SRC_DIR)
 # make list-pkgs-cmds
 #
 # @example
-# make list-pkgs-cmds LIST_PKGS_CMDS_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-cmds LIST_PKGS_CMDS_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-cmds: $(LIST_PKGS_CMDS) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_CMDS)" $(LIST_PKGS_CMDS_FLAGS) "$(LIST_PKGS_CMDS_DIR)"

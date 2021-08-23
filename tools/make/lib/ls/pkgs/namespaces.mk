@@ -39,7 +39,7 @@ LIST_PACKAGE_NAMESPACES_DIR ?= $(SRC_DIR)
 # make list-pkgs-namespaces
 #
 # @example
-# make list-pkgs-namespaces LIST_PACKAGE_NAMESPACES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-namespaces LIST_PACKAGE_NAMESPACES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-namespaces: $(LIST_PACKAGE_NAMESPACES) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PACKAGE_NAMESPACES)" $(LIST_PACKAGE_NAMESPACES_FLAGS) "$(LIST_PACKAGE_NAMESPACES_DIR)"

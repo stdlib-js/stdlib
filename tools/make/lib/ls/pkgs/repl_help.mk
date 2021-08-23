@@ -39,7 +39,7 @@ LIST_PKGS_REPL_HELP_FILES_DIR ?= $(SRC_DIR)
 # make list-pkgs-repl-help-files
 #
 # @example
-# make list-pkgs-repl-help-files LIST_PKGS_REPL_HELP_FILES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-repl-help-files LIST_PKGS_REPL_HELP_FILES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-repl-help-files: $(LIST_PKGS_REPL_HELP_FILES) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_REPL_HELP_FILES)" $(LIST_PKGS_REPL_HELP_FILES_FLAGS) "$(LIST_PKGS_REPL_HELP_FILES_DIR)"

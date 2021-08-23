@@ -39,7 +39,7 @@ LIST_PKGS_WASM_DIR ?= $(SRC_DIR)
 # make list-pkgs-wasm
 #
 # @example
-# make list-pkgs-wasm LIST_PKGS_WASM_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-wasm LIST_PKGS_WASM_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-wasm: $(LIST_PKGS_WASM) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_WASM)" $(LIST_PKGS_WASM_FLAGS) "$(LIST_PKGS_WASM_DIR)"

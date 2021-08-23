@@ -39,7 +39,7 @@ LIST_PKGS_ADDONS_DIR ?= $(SRC_DIR)
 # make list-pkgs-addons
 #
 # @example
-# make list-pkgs-addons LIST_PKGS_ADDONS_DIR=$PWD/lib/node_modules/\@stdlib/blas
+# make list-pkgs-addons LIST_PKGS_ADDONS_DIR="$PWD/lib/node_modules/\@stdlib/blas"
 #/
 list-pkgs-addons: $(LIST_PKGS_ADDONS) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_ADDONS)" $(LIST_PKGS_ADDONS_FLAGS) "$(LIST_PKGS_ADDONS_DIR)"

@@ -39,7 +39,7 @@ LIST_PKGS_TOPOSORT_DIR ?= $(SRC_DIR)
 # make list-pkgs-toposort
 #
 # @example
-# make list-pkgs-toposort LIST_PKGS_TOPOSORT_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-toposort LIST_PKGS_TOPOSORT_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-toposort: $(LIST_PKGS_TOPOSORT) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TOPOSORT)" $(LIST_PKGS_TOPOSORT_FLAGS) "$(LIST_PKGS_TOPOSORT_DIR)"
@@ -49,15 +49,15 @@ list-pkgs-toposort: $(LIST_PKGS_TOPOSORT) $(NODE_MODULES)
 #/
 # Prints a topological sort of all standalone package names.
 #
-# @param {string} [LIST_PKGS_STANDALONES_TOPOSORT_DIR] - absolute path of the directory from which to search for packages (default: source directory)
+# @param {string} [LIST_PKGS_TOPOSORT_DIR] - absolute path of the directory from which to search for packages (default: source directory)
 #
 # @example
-# make list-pkgs-standalones-toposort
+# make list-pkgs-toposort-standalones
 #
 # @example
-# make list-pkgs-standalones-toposort LIST_PKGS_STANDALONES_TOPOSORT_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-toposort-standalones LIST_PKGS_TOPOSORT_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
-list-pkgs-standalones-toposort: $(LIST_PKGS_TOPOSORT) $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TOPOSORT)" $(LIST_PKGS_TOPOSORT_FLAGS) "$(LIST_PKGS_STANDALONES_TOPOSORT_DIR)" | NODE_PATH="$(NODE_PATH)" $(NODE) "$(TOOLS_PKGS_DIR)/pkgs/name2standalone/bin/cli"
+list-pkgs-toposort-standalones: $(LIST_PKGS_TOPOSORT) $(NODE_MODULES)
+	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TOPOSORT)" $(LIST_PKGS_TOPOSORT_FLAGS) "$(LIST_PKGS_TOPOSORT_DIR)" | NODE_PATH="$(NODE_PATH)" $(NODE) "$(TOOLS_PKGS_DIR)/pkgs/name2standalone/bin/cli"
 
-.PHONY: list-pkgs-standalones-toposort
+.PHONY: list-pkgs-toposort-standalones

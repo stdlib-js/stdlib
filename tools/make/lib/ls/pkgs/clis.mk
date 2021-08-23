@@ -39,7 +39,7 @@ LIST_PKGS_CLIS_DIR ?= $(SRC_DIR)
 # make list-pkgs-clis
 #
 # @example
-# make list-pkgs-clis LIST_PKGS_CLIS_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-clis LIST_PKGS_CLIS_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-clis: $(LIST_PKGS_CLIS) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_CLIS)" $(LIST_PKGS_CLIS_FLAGS) "$(LIST_PKGS_CLIS_DIR)"

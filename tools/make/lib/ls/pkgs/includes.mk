@@ -39,7 +39,7 @@ LIST_PKGS_INCLUDES_DIR ?= $(SRC_DIR)
 # make list-pkgs-includes
 #
 # @example
-# make list-pkgs-includes LIST_PKGS_INCLUDES_DIR=$PWD/lib/node_modules/\@stdlib/blas
+# make list-pkgs-includes LIST_PKGS_INCLUDES_DIR="$PWD/lib/node_modules/\@stdlib/blas"
 #/
 list-pkgs-includes: $(LIST_PKGS_INCLUDES) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_INCLUDES)" $(LIST_PKGS_INCLUDES_FLAGS) "$(LIST_PKGS_INCLUDES_DIR)"

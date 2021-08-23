@@ -39,7 +39,7 @@ LIST_PKGS_BROWSER_COMPATIBLE_DIR ?= $(SRC_DIR)
 # make list-pkgs-browser-compatible
 #
 # @example
-# make list-pkgs-browser-compatible LIST_PKGS_BROWSER_COMPATIBLE_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-browser-compatible LIST_PKGS_BROWSER_COMPATIBLE_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-browser-compatible: $(LIST_PKGS_BROWSER_COMPATIBLE) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_BROWSER_COMPATIBLE)" $(LIST_PKGS_BROWSER_COMPATIBLE_FLAGS) "$(LIST_PKGS_BROWSER_COMPATIBLE_DIR)"

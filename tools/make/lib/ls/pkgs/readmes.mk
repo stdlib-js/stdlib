@@ -39,7 +39,7 @@ LIST_PKGS_READMES_DIR ?= $(SRC_DIR)
 # make list-pkgs-readmes
 #
 # @example
-# make list-pkgs-readmes LIST_PKGS_READMES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-readmes LIST_PKGS_READMES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-readmes: $(LIST_PKGS_READMES) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_READMES)" $(LIST_PKGS_READMES_FLAGS) "$(LIST_PKGS_READMES_DIR)"

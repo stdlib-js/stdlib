@@ -39,7 +39,7 @@ LIST_PKGS_STANDALONES_DIR ?= $(SRC_DIR)
 # make list-pkgs-standalones
 #
 # @example
-# make list-pkgs-standalones LIST_PKGS_STANDALONES_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-standalones LIST_PKGS_STANDALONES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-standalones: $(LIST_PKGS_STANDALONES) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_STANDALONES)" $(LIST_PKGS_STANDALONES_FLAGS) "$(LIST_PKGS_STANDALONES_DIR)"

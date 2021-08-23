@@ -39,7 +39,7 @@ LIST_PKGS_TREE_DIR ?= $(SRC_DIR)
 # make list-pkgs-tree
 #
 # @example
-# make list-pkgs-tree LIST_PKGS_TREE_DIR=$PWD/lib/node_modules/\@stdlib/utils
+# make list-pkgs-tree LIST_PKGS_TREE_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-tree: $(LIST_PKGS_TREE) $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(LIST_PKGS_TREE)" $(LIST_PKGS_TREE_FLAGS) "$(LIST_PKGS_TREE_DIR)"
