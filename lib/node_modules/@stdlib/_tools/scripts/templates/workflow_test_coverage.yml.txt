@@ -40,6 +40,12 @@ jobs:
         run: |
           npm install || npm install || npm install
         timeout-minutes: 15
+      - name: Build native addons if `binding.gyp` exists
+        id: build-addons
+        run: |
+          if [ -f "binding.gyp" ]; then
+            $(npm config get prefix)/lib/node_modules/npm/node_modules/.bin/node-gyp rebuild
+          fi
       - name: Calculate test coverage
         run: |
           npm run test-cov || npm run test-cov || npm run test-cov
