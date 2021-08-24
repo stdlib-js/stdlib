@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2018 The Stdlib Authors.
+# Copyright (c) 2021 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,24 +16,23 @@
 # limitations under the License.
 #/
 
-# VARIABLES #
-
-# Define the path of the linter executable:
-REPL_HELP_LINTER ?= $(TOOLS_PKGS_DIR)/lint/repl-txt/bin/cli
-
-# Define the command-line options to be used when invoking the executable:
-REPL_HELP_LINTER_FLAGS ?=
-
-
 # RULES #
 
 #/
-# Lints REPL help files.
+# Lints the project by ensuring that the project can be topologically sorted.
 #
 # @example
-# make lint-repl-help
+# make lint-toposort
 #/
-lint-repl-help: $(NODE_MODULES)
-	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(REPL_HELP_LINTER)" $(REPL_HELP_LINTER_FLAGS) "$(ROOT_DIR)"
+lint-toposort: $(NODE_MODULES)
+	$(QUIET) if $(MAKE) -f $(this_file) list-pkgs-toposort >/dev/null; then \
+		echo 'Success'; \
+	else \
+		echo ''; \
+		echo 'Failure. Unable to perform a topological sort. This is likely due to a'; \
+		echo 'dependency cycle. Run `make list-pkgs-toposort` to investigate further.'; \
+		echo ''; \
+		exit 1; \
+	fi
 
-.PHONY: lint-repl-help
+.PHONY: lint-toposort
