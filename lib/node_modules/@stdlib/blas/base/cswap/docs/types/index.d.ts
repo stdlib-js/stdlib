@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { Complex64Array } from '@stdlib/types/array';
+
 /**
 * Interface describing `cswap`.
 */
