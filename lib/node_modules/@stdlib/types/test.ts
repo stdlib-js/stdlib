@@ -101,6 +101,91 @@ function factory(): iter.IterableIterator {
 	return createIterableIterator();
 }
 
+/**
+* Returns a complex number array-like object.
+*
+* @returns complex number array-like object
+*/
+function cmplxArray(): array.ComplexArrayLike {
+	const buf: array.TypedArray = new Float64Array( 8 );
+	const obj: array.ComplexArrayLike = {
+		'byteLength': 64,
+		'byteOffset': 0,
+		'BYTES_PER_ELEMENT': 8,
+		'length': 8,
+		'get': ( i: number ): obj.ComplexLike => {
+			return {
+				're': i * 10,
+				'im': i * 10
+			};
+		},
+		'set': ( value: obj.ComplexLike, i?: number ) => {
+			i = ( i ) ? i : 0;
+			buf[ i ] = value.re;
+			buf[ i + 1 ] = value.im;
+		}
+	};
+	return obj;
+}
+
+/**
+* Returns a 64-bit complex number array.
+*
+* @returns 64-bit complex number array
+*/
+function cmplx64Array(): array.Complex64Array {
+	const buf: array.TypedArray = new Float64Array( 8 );
+	const obj: array.Complex64Array = {
+		'byteLength': 64,
+		'byteOffset': 0,
+		'BYTES_PER_ELEMENT': 8,
+		'length': 8,
+		'get': ( i: number ): obj.Complex64 => {
+			return {
+				're': i * 10,
+				'im': i * 10,
+				'byteLength': 8,
+				'BYTES_PER_ELEMENT': 4
+			};
+		},
+		'set': ( value: obj.Complex64, i?: number ) => {
+			i = ( i ) ? i : 0;
+			buf[ i ] = value.re;
+			buf[ i + 1 ] = value.im;
+		}
+	};
+	return obj;
+}
+
+/**
+* Returns a 128-bit complex number array.
+*
+* @returns 128-bit complex number array
+*/
+function cmplx128Array(): array.Complex128Array {
+	const buf: array.TypedArray = new Float64Array( 16 );
+	const obj: array.Complex128Array = {
+		'byteLength': 128,
+		'byteOffset': 0,
+		'BYTES_PER_ELEMENT': 16,
+		'length': 8,
+		'get': ( i: number ): obj.Complex128 => {
+			return {
+				're': i * 10,
+				'im': i * 10,
+				'byteLength': 16,
+				'BYTES_PER_ELEMENT': 8
+			};
+		},
+		'set': ( value: obj.Complex128, i?: number ) => {
+			i = ( i ) ? i : 0;
+			buf[ i ] = value.re;
+			buf[ i + 1 ] = value.im;
+		}
+	};
+	return obj;
+}
+
 
 // TESTS //
 
@@ -133,6 +218,21 @@ function factory(): iter.IterableIterator {
 
 	const t: array.ArrayLike<number> = new Int8Array( 10 );
 	if ( t[ 0 ] !== 1 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const zz: array.ComplexArrayLike = cmplxArray();
+	if ( zz.byteOffset !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const z64: array.Complex64Array = cmplx64Array();
+	if ( z64.byteOffset !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const z128: array.Complex128Array = cmplx128Array();
+	if ( z128.byteOffset !== 0 ) {
 		throw new Error( 'something went wrong' );
 	}
 }
@@ -324,6 +424,26 @@ function factory(): iter.IterableIterator {
 		'im': 1.0
 	};
 	if ( z.re !== 1.0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const z64: obj.Complex64 = {
+		're': 1.0,
+		'im': 1.0,
+		'byteLength': 8,
+		'BYTES_PER_ELEMENT': 4
+	};
+	if ( z64.re !== 1.0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const z128: obj.Complex128 = {
+		're': 1.0,
+		'im': 1.0,
+		'byteLength': 16,
+		'BYTES_PER_ELEMENT': 8
+	};
+	if ( z128.re !== 1.0 ) {
 		throw new Error( 'something went wrong' );
 	}
 }
