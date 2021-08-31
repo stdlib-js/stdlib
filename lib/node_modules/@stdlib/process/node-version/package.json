@@ -17,7 +17,10 @@
     "node-version": "./bin/cli"
   },
   "main": "./lib",
-  "browser": "./lib/browser.js",
+  "browser": {
+    "./lib": "./lib/browser.js",
+    "process": "process/"
+  },
   "directories": {
     "doc": "./docs",
     "example": "./examples",

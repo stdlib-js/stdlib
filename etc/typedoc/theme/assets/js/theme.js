@@ -30,7 +30,6 @@
 		var ch;
 		var j;
 		if ( txt.charCodeAt( 0 ) === 34 ) {
-			j = 1;
 			for ( j = 1; j < txt.length; j++ ) {
 				ch = txt.charCodeAt( j );
 				if ( ch === 34 ) {

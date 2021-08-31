@@ -32,6 +32,8 @@
 * const x: ArrayLike = [ 1, 2, 3 ];
 */
 declare module '@stdlib/types/array' {
+	import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/object';
+
 	/**
 	* An array-like value.
 	*
@@ -78,6 +80,156 @@ declare module '@stdlib/types/array' {
 	* const y: IntegerTypedArray = new Int32Array( 10 );
 	*/
 	type IntegerTypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array; // tslint:disable-line:max-line-length
+
+	/**
+	* A complex number array-like value.
+	*
+	* @example
+	* const buf = new Float64Array( 8 );
+	*
+	* const z: ComplexArrayLike = {
+	*     'byteLength': 64,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'length': 8
+	*     'get': ( i: number ): obj.ComplexLike => {
+	*         return {
+	*             're': i * 10,
+	*             'im': i * 10
+	*         };
+	*     },
+	*     'set': ( value: obj.ComplexLike, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ i ] = value.re;
+	*         buf[ i + 1 ] = value.im;
+	*     }
+	* };
+	*/
+	interface ComplexArrayLike {
+		/**
+		* Length (in bytes) of the array.
+		*/
+		byteLength: number;
+
+		/**
+		* Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
+		*/
+		byteOffset: number;
+
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: number;
+
+		/**
+		* Number of array elements.
+		*/
+		length: number;
+
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): ComplexLike | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<number | ComplexLike> | ComplexArrayLike | ComplexLike, i?: number ): void; // tslint:disable-line:max-line-length
+	}
+
+	/**
+	* 64-bit complex number array.
+	*
+	* @example
+	* const buf = new Float32Array( 8 );
+	*
+	* const z: Complex64Array = {
+	*     'byteLength': 32,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 4,
+	*     'length': 8
+	*     'get': ( i: number ): obj.Complex64 => {
+	*         return {
+	*             're': i * 10,
+	*             'im': i * 10,
+	*             'byteLength': 8,
+	*             'BYTES_PER_ELEMENT': 4
+	*         };
+	*     },
+	*     'set': ( value: obj.ComplexLike, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ i ] = value.re;
+	*         buf[ i + 1 ] = value.im;
+	*     }
+	* };
+	*/
+	interface Complex64Array extends ComplexArrayLike {
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Complex64 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<number | ComplexLike> | Complex64Array | ComplexLike, i?: number ): void; // tslint:disable-line:max-line-length
+	}
+
+	/**
+	* 128-bit complex number array.
+	*
+	* @example
+	* const buf = new Float64Array( 8 );
+	*
+	* const z: Complex128Array = {
+	*     'byteLength': 64,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'length': 8
+	*     'get': ( i: number ): obj.Complex128 => {
+	*         return {
+	*             're': i * 10,
+	*             'im': i * 10,
+	*             'byteLength': 16,
+	*             'BYTES_PER_ELEMENT': 8
+	*         };
+	*     },
+	*     'set': ( value: obj.ComplexLike, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ i ] = value.re;
+	*         buf[ i + 1 ] = value.im;
+	*     }
+	* };
+	*/
+	interface Complex128Array extends ComplexArrayLike {
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Complex128 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<number | ComplexLike> | Complex128Array | ComplexLike, i?: number ): void; // tslint:disable-line:max-line-length
+	}
 }
 
 /**
@@ -522,6 +674,52 @@ declare module '@stdlib/types/object' {
 		* Imaginary component.
 		*/
 		im: number;
+	}
+
+	/**
+	* A 64-bit complex number.
+	*
+	* @example
+	* const x: Complex64 = {
+	*     're': 5.0,
+	*     'im': 3.0,
+	*     'byteLength': 8,
+	*     'BYTES_PER_ELEMENT': 4
+	* };
+	*/
+	interface Complex64 extends ComplexLike {
+		/**
+		* Size (in bytes) of the complex number.
+		*/
+		byteLength: 8;
+
+		/**
+		* Size (in bytes) of each component.
+		*/
+		BYTES_PER_ELEMENT: 4;
+	}
+
+	/**
+	* A 128-bit complex number.
+	*
+	* @example
+	* const x: Complex128 = {
+	*     're': 5.0,
+	*     'im': 3.0,
+	*     'byteLength': 16,
+	*     'BYTES_PER_ELEMENT': 8
+	* };
+	*/
+	interface Complex128 extends ComplexLike {
+		/**
+		* Size (in bytes) of the complex number.
+		*/
+		byteLength: 16;
+
+		/**
+		* Size (in bytes) of each component.
+		*/
+		BYTES_PER_ELEMENT: 8;
 	}
 }
 
