@@ -39,6 +39,24 @@ var dist = degenerate;
 // returns {...}
 ```
 
+The namespace contains the following distribution functions:
+
+<!-- <toc pattern="*+(cdf|pdf|pmf|mgf|quantile)*"> -->
+
+<!-- </toc> -->
+
+The namespace contains the following functions for calculating distribution properties:
+
+<!-- <toc pattern="*+(entropy|kurtosis|mean|median|mode|skewness|stdev|variance)*"> -->
+
+<!-- </toc> -->
+
+The namespace contains a constructor function for creating a degenerate distribution object.
+
+<!-- <toc pattern="*ctor*"> -->
+
+<!-- </toc> -->
+
 </section>
 
 <!-- /.usage -->
