@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# `Object.defineProperties` Support
+# Object.defineProperties Support
 
 > Detect [`Object.defineProperties`][mdn-define-properties] support.
 
