@@ -27,6 +27,9 @@ on:
     types:
       - closed
 
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
 # Workflow jobs:
 jobs:
 
@@ -36,8 +39,8 @@ jobs:
     # Define a display name:
     name: 'Update namespace ToCs'
 
-    # Only run this job if the pull request was merged:
-    if: github.event.pull_request.merged == true
+    # Only run this job if the pull request was merged or triggered manually:
+    if: github.event.pull_request.merged == true || github.event = 'workflow_dispatch'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
