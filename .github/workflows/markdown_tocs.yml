@@ -92,7 +92,7 @@ jobs:
         run: |
           make markdown-namespace-tocs-files FILES="${{ steps.namespace_files.outputs.files }}"
           make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
-        timeout-minutes: 30
+        timeout-minutes: 60
 
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
