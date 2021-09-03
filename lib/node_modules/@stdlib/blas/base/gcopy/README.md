@@ -47,7 +47,7 @@ The function has the following parameters:
 -   **N**: number of values to copy.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: index increment for `x`.
--   **y**: destination [`array`][mdn-array] or [`typed array`][mdn-typed-array].
+-   **y**: destination [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideY**: index increment for `y`.
 
 The `N` and `stride` parameters determine how values from `x` are copied into `y`. For example, to copy in reverse order every other value in `x` into the first `N` elements of `y`,

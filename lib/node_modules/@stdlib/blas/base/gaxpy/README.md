@@ -47,9 +47,9 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **alpha**: `numeric` constant.
--   **x**: input [`array`][mdn-array] or [`typed array`][mdn-typed-array].
+-   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: index increment for `x`.
--   **y**: input [`array`][mdn-array] or [`typed array`][mdn-typed-array].
+-   **y**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideY**: index increment for `y`.
 
 The `N` and `stride` parameters determine which elements in `x` and `y` are accessed at runtime. For example, to multiply every other value in `x` by `alpha` and add the result to the first `N` elements of `y` in reverse order,
