@@ -35,7 +35,7 @@ var ns = require( '@stdlib/math/base/napi' );
 Standard library C APIs for registering a Node-API module exporting interfaces.
 
 ```javascript
-var operators = ns;
+var napi = ns;
 // returns {...}
 ```
 
