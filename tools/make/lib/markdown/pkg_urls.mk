@@ -76,6 +76,6 @@ markdown-pkg-urls:
 # make markdown-pkg-urls-files FILES='/foo/foo.md /foo/bar.md'
 #/
 markdown-pkg-urls-files:
-	$(QUIET) echo $(FILES) | xargs sed -i '' 's/^\[@\(stdlib\/[^:]\{1,\}\)\]:.\{1,\}$$/[@\1]: https:\/\/github.com\/stdlib-js\/stdlib\/tree\/develop\/lib\/node_modules\/%40\1/g'
+	$(QUIET) echo $(FILES) | xargs perl -pi -e 's/^\[@(stdlib\/[^:]{1,})\]:.{1,}$$/[@\1]: https:\/\/github.com\/stdlib-js\/stdlib\/tree\/develop\/lib\/node_modules\/%40\1/g'
 
 .PHONY: markdown-pkg-urls-files
