@@ -126,6 +126,16 @@ Digital image courtesy of the Getty's [Open Content Program][getty-open-content]
 
 <!-- </license> -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="links">
 
 [getty-open-content]: http://www.getty.edu/about/opencontent.html
