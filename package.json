@@ -123,7 +123,7 @@
     "gh-pages": "^3.2.3",
     "istanbul": "^0.4.1",
     "jsdoc": "^3.4.0",
-    "lunr": "^2.0.0",
+    "lunr": "^2.3.9",
     "mathjax-node": "^2.0.1",
     "mathjax-node-sre": "^3.0.0",
     "mkdirp": "^0.5.1",
