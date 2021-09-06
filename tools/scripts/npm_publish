@@ -293,6 +293,35 @@ update_namespace_tocs() {
 	return 0
 }
 
+# Updates related package sections in Markdown files.
+update_markdown_related() {
+	echo 'Updating related package sections in Markdown files...' >&2
+	make markdown-related MARKDOWN_FILTER='.*/lib/node_modules/@stdlib/.*'
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when updating related packages sections in Markdown files.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Successfully updated Markdown files.' >&2
+
+	if [[ -n "$(git status --porcelain)" ]]; then
+		echo '' >&2
+		echo 'Committing changes...' >&2
+		git add -A && git commit -m 'Update related packages'
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo 'Error: unexpected error. Unable to commit changes.' >&2
+			echo '' >&2
+			return 1
+		fi
+		echo 'Successfully committed changes.' >&2
+	fi
+	echo '' >&2
+
+	return 0
+}
+
 # Updates package URLs in Markdown files.
 update_markdown_package_urls() {
 	echo 'Updating package URLs in Markdown files...' >&2
@@ -554,6 +583,11 @@ main() {
 		on_error 1
 	fi
 	update_namespace_tocs
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_markdown_related
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
 		on_error 1

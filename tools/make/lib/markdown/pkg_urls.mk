@@ -59,7 +59,7 @@ REMARK_PKG_URLS_OUTPUT_FLAG ?= --output
 # make markdown-pkg-urls MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
 markdown-pkg-urls:
-	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | xargs sed -i '' 's/^\[@\(stdlib\/[^:]\{1,\}\)\]:.\{1,\}$$/[@\1]: https:\/\/github.com\/stdlib-js\/stdlib\/tree\/develop\/lib\/node_modules\/%40\1/g'
+	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | xargs perl -pi -e 's/^\[@(stdlib\/[^:]{1,})\]:.{1,}$$/[@\1]: https:\/\/github.com\/stdlib-js\/stdlib\/tree\/develop\/lib\/node_modules\/%40\1/g'
 
 .PHONY: markdown-pkg-urls
 
