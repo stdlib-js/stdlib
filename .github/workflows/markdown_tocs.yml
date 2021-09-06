@@ -39,8 +39,8 @@ jobs:
     # Define a display name:
     name: 'Update namespace ToCs'
 
-    # Only run this job if the pull request was merged:
-    if: github.event.pull_request.merged == true
+    # Only run this job if the pull request was merged (or the job was triggered manually):
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -92,7 +92,7 @@ jobs:
         run: |
           make markdown-namespace-tocs-files FILES="${{ steps.namespace_files.outputs.files }}"
           make markdown-pkg-urls-files FILES="${{ steps.namespace_files.outputs.files }}"
-        timeout-minutes: 15
+        timeout-minutes: 60
 
       # Create a pull request with the updated tables of contents:
       - name: 'Create pull request'
