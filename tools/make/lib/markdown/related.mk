@@ -54,12 +54,12 @@ REMARK_RELATED_OUTPUT_FLAG ?= --output
 # @param {string} [MARKDOWN_PATTERN] - filename pattern (e.g., `*.md`)
 #
 # @example
-# make markdown-related-section
+# make markdown-related
 #
 # @example
-# make markdown-related-section MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
+# make markdown-related MARKDOWN_PATTERN='README.md' MARKDOWN_FILTER='.*/math/base/special/.*'
 #/
-markdown-related-section: $(NODE_MODULES)
+markdown-related: $(NODE_MODULES)
 	$(QUIET) $(FIND_MARKDOWN_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ""; \
 		echo "Processing file: $$file"; \
@@ -71,7 +71,7 @@ markdown-related-section: $(NODE_MODULES)
 			$(REMARK_RELATED_OUTPUT_FLAG) || exit 1; \
 	done
 
-.PHONY: markdown-related-section
+.PHONY: markdown-related
 
 #/
 # Updates the related packages section of a specified list of Markdown files.
@@ -84,9 +84,9 @@ markdown-related-section: $(NODE_MODULES)
 # @param {string} FILES - list of files
 #
 # @example
-# make markdown-related-section-files FILES='/foo/foo.md /foo/bar.md'
+# make markdown-related-files FILES='/foo/foo.md /foo/bar.md'
 #/
-markdown-related-section-files: $(NODE_MODULES)
+markdown-related-files: $(NODE_MODULES)
 	$(QUIET) for file in $(FILES); do \
 		echo ""; \
 		echo "Processing file: $$file"; \
@@ -98,4 +98,4 @@ markdown-related-section-files: $(NODE_MODULES)
 			$(REMARK_RELATED_OUTPUT_FLAG) || exit 1; \
 	done
 
-.PHONY: markdown-related-section-files
+.PHONY: markdown-related-files
