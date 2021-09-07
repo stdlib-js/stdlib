@@ -174,7 +174,7 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 ## See Also
 
--   [`@stdlib/datasets/liu-positive-opinion-words-en`][@stdlib/datasets/liu-positive-opinion-words-en]: A list of positive opinion words.
+-   <span class="package-name">[`@stdlib/datasets/liu-positive-opinion-words-en`][@stdlib/datasets/liu-positive-opinion-words-en]</span><span class="delimiter">: </span><span class="description">A list of positive opinion words.</span>
 
 </section>
 

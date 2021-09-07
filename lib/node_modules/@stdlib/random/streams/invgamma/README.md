@@ -529,8 +529,8 @@ $ random-invgamma 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/invgamma`][@stdlib/random/base/invgamma]: inverse gamma distributed pseudorandom numbers.
--   [`@stdlib/random/iter/invgamma`][@stdlib/random/iter/invgamma]: create an iterator for generating pseudorandom numbers drawn from an inverse gamma distribution.
+-   <span class="package-name">[`@stdlib/random/base/invgamma`][@stdlib/random/base/invgamma]</span><span class="delimiter">: </span><span class="description">inverse gamma distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/invgamma`][@stdlib/random/iter/invgamma]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from an inverse gamma distribution.</span>
 
 </section>
 

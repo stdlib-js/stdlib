@@ -529,8 +529,8 @@ $ random-hypergeometric 5 3 2 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/hypergeometric`][@stdlib/random/base/hypergeometric]: hypergeometric distributed pseudorandom numbers.
--   [`@stdlib/random/iter/hypergeometric`][@stdlib/random/iter/hypergeometric]: create an iterator for generating pseudorandom numbers drawn from a hypergeometric distribution.
+-   <span class="package-name">[`@stdlib/random/base/hypergeometric`][@stdlib/random/base/hypergeometric]</span><span class="delimiter">: </span><span class="description">hypergeometric distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/hypergeometric`][@stdlib/random/iter/hypergeometric]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a hypergeometric distribution.</span>
 
 </section>
 

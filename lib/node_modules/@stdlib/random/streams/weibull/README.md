@@ -529,8 +529,8 @@ $ random-weibull 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/weibull`][@stdlib/random/base/weibull]: Weibull distributed pseudorandom numbers.
--   [`@stdlib/random/iter/weibull`][@stdlib/random/iter/weibull]: create an iterator for generating pseudorandom numbers drawn from a Weibull distribution.
+-   <span class="package-name">[`@stdlib/random/base/weibull`][@stdlib/random/base/weibull]</span><span class="delimiter">: </span><span class="description">Weibull distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/weibull`][@stdlib/random/iter/weibull]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Weibull distribution.</span>
 
 </section>
 

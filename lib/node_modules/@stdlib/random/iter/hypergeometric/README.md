@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/hypergeometric`][@stdlib/random/base/hypergeometric]: hypergeometric distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/hypergeometric`][@stdlib/random/base/hypergeometric]</span><span class="delimiter">: </span><span class="description">hypergeometric distributed pseudorandom numbers.</span>
 
 </section>
 

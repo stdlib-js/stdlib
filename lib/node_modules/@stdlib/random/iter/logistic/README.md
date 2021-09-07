@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/logistic`][@stdlib/random/base/logistic]: logistic distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/logistic`][@stdlib/random/base/logistic]</span><span class="delimiter">: </span><span class="description">logistic distributed pseudorandom numbers.</span>
 
 </section>
 

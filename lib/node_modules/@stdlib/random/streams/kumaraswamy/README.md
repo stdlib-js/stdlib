@@ -529,8 +529,8 @@ $ random-kumaraswamy 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/kumaraswamy`][@stdlib/random/base/kumaraswamy]: Kumaraswamy's double bounded distributed pseudorandom numbers.
--   [`@stdlib/random/iter/kumaraswamy`][@stdlib/random/iter/kumaraswamy]: create an iterator for generating pseudorandom numbers drawn from a Kumaraswamy's double bounded distribution.
+-   <span class="package-name">[`@stdlib/random/base/kumaraswamy`][@stdlib/random/base/kumaraswamy]</span><span class="delimiter">: </span><span class="description">Kumaraswamy's double bounded distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/kumaraswamy`][@stdlib/random/iter/kumaraswamy]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Kumaraswamy's double bounded distribution.</span>
 
 </section>
 

@@ -202,7 +202,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/arcsine`][@stdlib/random/base/arcsine]: arcsine distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/arcsine`][@stdlib/random/base/arcsine]</span><span class="delimiter">: </span><span class="description">arcsine distributed pseudorandom numbers.</span>
 
 </section>
 

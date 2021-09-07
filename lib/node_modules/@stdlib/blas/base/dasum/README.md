@@ -191,10 +191,10 @@ console.log( dasum( x.length, x, 1 ) );
 
 ## See Also
 
--   [`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy]: multiply a vector x by a constant and add the result to y.
--   [`@stdlib/blas/base/gasum`][@stdlib/blas/base/gasum]: compute the sum of absolute values (L1 norm).
--   [`@stdlib/blas/base/sasum`][@stdlib/blas/base/sasum]: compute the sum of absolute values (L1 norm).
--   [`@stdlib/blas/ext/base/dsum`][@stdlib/blas/ext/base/dsum]: calculate the sum of double-precision floating-point strided array elements.
+-   <span class="package-name">[`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy]</span><span class="delimiter">: </span><span class="description">multiply a vector x by a constant and add the result to y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/gasum`][@stdlib/blas/base/gasum]</span><span class="delimiter">: </span><span class="description">compute the sum of absolute values (L1 norm).</span>
+-   <span class="package-name">[`@stdlib/blas/base/sasum`][@stdlib/blas/base/sasum]</span><span class="delimiter">: </span><span class="description">compute the sum of absolute values (L1 norm).</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsum`][@stdlib/blas/ext/base/dsum]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements.</span>
 
 </section>
 

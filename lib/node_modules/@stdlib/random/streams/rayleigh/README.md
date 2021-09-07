@@ -529,8 +529,8 @@ $ random-rayleigh 2.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/rayleigh`][@stdlib/random/base/rayleigh]: Rayleigh distributed pseudorandom numbers.
--   [`@stdlib/random/iter/rayleigh`][@stdlib/random/iter/rayleigh]: create an iterator for generating pseudorandom numbers drawn from a Rayleigh distribution.
+-   <span class="package-name">[`@stdlib/random/base/rayleigh`][@stdlib/random/base/rayleigh]</span><span class="delimiter">: </span><span class="description">Rayleigh distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/rayleigh`][@stdlib/random/iter/rayleigh]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Rayleigh distribution.</span>
 
 </section>
 

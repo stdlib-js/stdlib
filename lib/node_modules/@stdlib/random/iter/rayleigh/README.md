@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/rayleigh`][@stdlib/random/base/rayleigh]: Rayleigh distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/rayleigh`][@stdlib/random/base/rayleigh]</span><span class="delimiter">: </span><span class="description">Rayleigh distributed pseudorandom numbers.</span>
 
 </section>
 

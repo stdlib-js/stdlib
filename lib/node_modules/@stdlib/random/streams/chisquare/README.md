@@ -529,8 +529,8 @@ $ random-chisquare 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/chisquare`][@stdlib/random/base/chisquare]: Chi-square distributed pseudorandom numbers.
--   [`@stdlib/random/iter/chisquare`][@stdlib/random/iter/chisquare]: create an iterator for generating pseudorandom numbers drawn from a chi-square distribution.
+-   <span class="package-name">[`@stdlib/random/base/chisquare`][@stdlib/random/base/chisquare]</span><span class="delimiter">: </span><span class="description">Chi-square distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/chisquare`][@stdlib/random/iter/chisquare]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a chi-square distribution.</span>
 
 </section>
 

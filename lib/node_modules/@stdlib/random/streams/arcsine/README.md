@@ -529,8 +529,8 @@ $ random-arcsine 2.0 5.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/arcsine`][@stdlib/random/base/arcsine]: arcsine distributed pseudorandom numbers.
--   [`@stdlib/random/iter/arcsine`][@stdlib/random/iter/arcsine]: create an iterator for generating pseudorandom numbers drawn from an arcsine distribution.
+-   <span class="package-name">[`@stdlib/random/base/arcsine`][@stdlib/random/base/arcsine]</span><span class="delimiter">: </span><span class="description">arcsine distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/arcsine`][@stdlib/random/iter/arcsine]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from an arcsine distribution.</span>
 
 </section>
 

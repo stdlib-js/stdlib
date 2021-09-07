@@ -198,8 +198,8 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/cdc-nchs-us-births-1994-2003`][@stdlib/datasets/cdc-nchs-us-births-1994-2003]: US birth data from 1994 to 2003, as provided by the Center for Disease Control and Prevention's National Center for Health Statistics.
--   [`@stdlib/datasets/ssa-us-births-2000-2014`][@stdlib/datasets/ssa-us-births-2000-2014]: US birth data from 2000 to 2014, as provided by the Social Security Administration.
+-   <span class="package-name">[`@stdlib/datasets/cdc-nchs-us-births-1994-2003`][@stdlib/datasets/cdc-nchs-us-births-1994-2003]</span><span class="delimiter">: </span><span class="description">US birth data from 1994 to 2003, as provided by the Center for Disease Control and Prevention's National Center for Health Statistics.</span>
+-   <span class="package-name">[`@stdlib/datasets/ssa-us-births-2000-2014`][@stdlib/datasets/ssa-us-births-2000-2014]</span><span class="delimiter">: </span><span class="description">US birth data from 2000 to 2014, as provided by the Social Security Administration.</span>
 
 </section>
 

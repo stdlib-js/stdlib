@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/cauchy`][@stdlib/random/base/cauchy]: Cauchy distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/cauchy`][@stdlib/random/base/cauchy]</span><span class="delimiter">: </span><span class="description">Cauchy distributed pseudorandom numbers.</span>
 
 </section>
 

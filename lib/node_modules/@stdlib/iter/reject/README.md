@@ -198,8 +198,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/filter`][@stdlib/iter/filter]: create an iterator which filters the values of another iterator according to a predicate function.
--   [`@stdlib/iter/map`][@stdlib/iter/map]: create an iterator which invokes a function for each iterated value.
+-   <span class="package-name">[`@stdlib/iter/filter`][@stdlib/iter/filter]</span><span class="delimiter">: </span><span class="description">create an iterator which filters the values of another iterator according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/map`][@stdlib/iter/map]</span><span class="delimiter">: </span><span class="description">create an iterator which invokes a function for each iterated value.</span>
 
 </section>
 

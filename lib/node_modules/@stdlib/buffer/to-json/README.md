@@ -116,8 +116,8 @@ console.log( toJSON( buf ) );
 
 ## See Also
 
--   [`@stdlib/array/to-json`][@stdlib/array/to-json]: return a JSON representation of a typed array.
--   [`@stdlib/buffer/reviver`][@stdlib/buffer/reviver]: revive a JSON-serialized Buffer.
+-   <span class="package-name">[`@stdlib/array/to-json`][@stdlib/array/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a typed array.</span>
+-   <span class="package-name">[`@stdlib/buffer/reviver`][@stdlib/buffer/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized Buffer.</span>
 
 </section>
 

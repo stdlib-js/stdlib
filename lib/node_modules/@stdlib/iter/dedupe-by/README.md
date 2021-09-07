@@ -234,8 +234,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/dedupe`][@stdlib/iter/dedupe]: create an iterator which removes consecutive duplicated values.
--   [`@stdlib/iter/unique`][@stdlib/iter/unique]: create an iterator which returns unique values.
+-   <span class="package-name">[`@stdlib/iter/dedupe`][@stdlib/iter/dedupe]</span><span class="delimiter">: </span><span class="description">create an iterator which removes consecutive duplicated values.</span>
+-   <span class="package-name">[`@stdlib/iter/unique`][@stdlib/iter/unique]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values.</span>
 
 </section>
 

@@ -185,8 +185,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/first`][@stdlib/iter/first]: return the first iterated value.
--   [`@stdlib/iter/head`][@stdlib/iter/head]: create an iterator which returns the first `n` values of a provided iterator.
+-   <span class="package-name">[`@stdlib/iter/first`][@stdlib/iter/first]</span><span class="delimiter">: </span><span class="description">return the first iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/head`][@stdlib/iter/head]</span><span class="delimiter">: </span><span class="description">create an iterator which returns the first `n` values of a provided iterator.</span>
 
 </section>
 

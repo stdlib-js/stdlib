@@ -235,8 +235,8 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/harrison-boston-house-prices`][@stdlib/datasets/harrison-boston-house-prices]: A dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).
--   [`@stdlib/datasets/harrison-boston-house-prices-corrected`][@stdlib/datasets/harrison-boston-house-prices-corrected]: A (corrected) dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).
+-   <span class="package-name">[`@stdlib/datasets/harrison-boston-house-prices`][@stdlib/datasets/harrison-boston-house-prices]</span><span class="delimiter">: </span><span class="description">A dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).</span>
+-   <span class="package-name">[`@stdlib/datasets/harrison-boston-house-prices-corrected`][@stdlib/datasets/harrison-boston-house-prices-corrected]</span><span class="delimiter">: </span><span class="description">A (corrected) dataset derived from information collected by the US Census Service concerning housing in Boston, Massachusetts (1978).</span>
 
 </section>
 

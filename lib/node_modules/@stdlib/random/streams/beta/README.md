@@ -529,8 +529,8 @@ $ random-beta 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/beta`][@stdlib/random/base/beta]: beta distributed pseudorandom numbers.
--   [`@stdlib/random/iter/beta`][@stdlib/random/iter/beta]: create an iterator for generating pseudorandom numbers drawn from a beta distribution.
+-   <span class="package-name">[`@stdlib/random/base/beta`][@stdlib/random/base/beta]</span><span class="delimiter">: </span><span class="description">beta distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/beta`][@stdlib/random/iter/beta]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a beta distribution.</span>
 
 </section>
 

@@ -175,9 +175,9 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]: adds a constant to each double-precision floating-point strided array element and computes the sum.
--   [`@stdlib/blas/ext/base/dssum`][@stdlib/blas/ext/base/dssum]: calculate the sum of single-precision floating-point strided array elements using extended accumulation and returning an extended precision result.
--   [`@stdlib/blas/ext/base/sapxsum`][@stdlib/blas/ext/base/sapxsum]: adds a constant to each single-precision floating-point strided array element and computes the sum.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each double-precision floating-point strided array element and computes the sum.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dssum`][@stdlib/blas/ext/base/dssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using extended accumulation and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapxsum`][@stdlib/blas/ext/base/sapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum.</span>
 
 </section>
 

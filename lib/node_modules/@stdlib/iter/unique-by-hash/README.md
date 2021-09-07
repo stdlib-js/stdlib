@@ -216,8 +216,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/unique`][@stdlib/iter/unique]: create an iterator which returns unique values.
--   [`@stdlib/iter/unique-by`][@stdlib/iter/unique-by]: create an iterator which returns unique values according to a predicate function.
+-   <span class="package-name">[`@stdlib/iter/unique`][@stdlib/iter/unique]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values.</span>
+-   <span class="package-name">[`@stdlib/iter/unique-by`][@stdlib/iter/unique-by]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values according to a predicate function.</span>
 
 </section>
 

@@ -156,7 +156,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/female-first-names-en`][@stdlib/datasets/female-first-names-en]: A list of common female first names in English speaking countries.
+-   <span class="package-name">[`@stdlib/datasets/female-first-names-en`][@stdlib/datasets/female-first-names-en]</span><span class="delimiter">: </span><span class="description">A list of common female first names in English speaking countries.</span>
 
 </section>
 

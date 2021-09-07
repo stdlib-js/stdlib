@@ -169,8 +169,8 @@ console.log( x );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/drev`][@stdlib/blas/ext/base/drev]: reverse a double-precision floating-point strided array in-place.
--   [`@stdlib/blas/ext/base/grev`][@stdlib/blas/ext/base/grev]: reverse a strided array in-place.
+-   <span class="package-name">[`@stdlib/blas/ext/base/drev`][@stdlib/blas/ext/base/drev]</span><span class="delimiter">: </span><span class="description">reverse a double-precision floating-point strided array in-place.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/grev`][@stdlib/blas/ext/base/grev]</span><span class="delimiter">: </span><span class="description">reverse a strided array in-place.</span>
 
 </section>
 

@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/levy`][@stdlib/random/base/levy]: Lévy distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/levy`][@stdlib/random/base/levy]</span><span class="delimiter">: </span><span class="description">Lévy distributed pseudorandom numbers.</span>
 
 </section>
 

@@ -196,10 +196,10 @@ console.log( z );
 
 ## See Also
 
--   [`@stdlib/blas/base/ddot`][@stdlib/blas/base/ddot]: calculate the dot product of two double-precision floating-point vectors.
--   [`@stdlib/blas/base/dsdot`][@stdlib/blas/base/dsdot]: calculate the dot product with extended accumulation and result of two single-precision floating-point vectors.
--   [`@stdlib/blas/base/sdsdot`][@stdlib/blas/base/sdsdot]: calculate the dot product of two single-precision floating-point vectors with extended accumulation.
--   [`@stdlib/blas/sdot`][@stdlib/blas/sdot]: calculate the dot product of two single-precision floating-point vectors.
+-   <span class="package-name">[`@stdlib/blas/base/ddot`][@stdlib/blas/base/ddot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/dsdot`][@stdlib/blas/base/dsdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product with extended accumulation and result of two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/sdsdot`][@stdlib/blas/base/sdsdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two single-precision floating-point vectors with extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/blas/sdot`][@stdlib/blas/sdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two single-precision floating-point vectors.</span>
 
 </section>
 

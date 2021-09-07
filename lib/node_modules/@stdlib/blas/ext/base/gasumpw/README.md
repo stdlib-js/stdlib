@@ -185,10 +185,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/base/gasum`][@stdlib/blas/base/gasum]: compute the sum of absolute values (L1 norm).
--   [`@stdlib/blas/ext/base/dasumpw`][@stdlib/blas/ext/base/dasumpw]: calculate the sum of absolute values (L1 norm) of double-precision floating-point strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/gsumpw`][@stdlib/blas/ext/base/gsumpw]: calculate the sum of strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/sasumpw`][@stdlib/blas/ext/base/sasumpw]: calculate the sum of absolute values (L1 norm) of single-precision floating-point strided array elements using pairwise summation.
+-   <span class="package-name">[`@stdlib/blas/base/gasum`][@stdlib/blas/base/gasum]</span><span class="delimiter">: </span><span class="description">compute the sum of absolute values (L1 norm).</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dasumpw`][@stdlib/blas/ext/base/dasumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of absolute values (L1 norm) of double-precision floating-point strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsumpw`][@stdlib/blas/ext/base/gsumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sasumpw`][@stdlib/blas/ext/base/sasumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of absolute values (L1 norm) of single-precision floating-point strided array elements using pairwise summation.</span>
 
 </section>
 

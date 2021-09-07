@@ -529,8 +529,8 @@ $ random-geometric 0.2 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/geometric`][@stdlib/random/base/geometric]: geometric distributed pseudorandom numbers.
--   [`@stdlib/random/iter/geometric`][@stdlib/random/iter/geometric]: create an iterator for generating pseudorandom numbers drawn from a geometric distribution.
+-   <span class="package-name">[`@stdlib/random/base/geometric`][@stdlib/random/base/geometric]</span><span class="delimiter">: </span><span class="description">geometric distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/geometric`][@stdlib/random/iter/geometric]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a geometric distribution.</span>
 
 </section>
 

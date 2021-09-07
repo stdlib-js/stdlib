@@ -174,8 +174,8 @@ console.log( z );
 
 ## See Also
 
--   [`@stdlib/blas/base/dnrm2`][@stdlib/blas/base/dnrm2]: calculate the L2-norm of a double-precision floating-point vector.
--   [`@stdlib/blas/base/snrm2`][@stdlib/blas/base/snrm2]: calculate the L2-norm of a single-precision floating-point vector.
+-   <span class="package-name">[`@stdlib/blas/base/dnrm2`][@stdlib/blas/base/dnrm2]</span><span class="delimiter">: </span><span class="description">calculate the L2-norm of a double-precision floating-point vector.</span>
+-   <span class="package-name">[`@stdlib/blas/base/snrm2`][@stdlib/blas/base/snrm2]</span><span class="delimiter">: </span><span class="description">calculate the L2-norm of a single-precision floating-point vector.</span>
 
 </section>
 

@@ -213,7 +213,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]: normally distributed pseudorandom numbers using the improved Ziggurat method.
+-   <span class="package-name">[`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the improved Ziggurat method.</span>
 
 </section>
 

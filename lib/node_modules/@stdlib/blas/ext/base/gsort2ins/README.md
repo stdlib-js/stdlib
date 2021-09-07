@@ -208,9 +208,9 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsort2ins`][@stdlib/blas/ext/base/dsort2ins]: simultaneously sort two double-precision floating-point strided arrays based on the sort order of the first array using insertion sort.
--   [`@stdlib/blas/ext/base/gsortins`][@stdlib/blas/ext/base/gsortins]: sort a strided array using insertion sort.
--   [`@stdlib/blas/ext/base/ssort2ins`][@stdlib/blas/ext/base/ssort2ins]: simultaneously sort two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsort2ins`][@stdlib/blas/ext/base/dsort2ins]</span><span class="delimiter">: </span><span class="description">simultaneously sort two double-precision floating-point strided arrays based on the sort order of the first array using insertion sort.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsortins`][@stdlib/blas/ext/base/gsortins]</span><span class="delimiter">: </span><span class="description">sort a strided array using insertion sort.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssort2ins`][@stdlib/blas/ext/base/ssort2ins]</span><span class="delimiter">: </span><span class="description">simultaneously sort two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort.</span>
 
 </section>
 

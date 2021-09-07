@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/frechet`][@stdlib/random/base/frechet]: Fréchet distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/frechet`][@stdlib/random/base/frechet]</span><span class="delimiter">: </span><span class="description">Fréchet distributed pseudorandom numbers.</span>
 
 </section>
 

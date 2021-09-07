@@ -195,7 +195,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/replicate`][@stdlib/iter/replicate]: create an iterator which replicates each iterated value a specified number of times.
+-   <span class="package-name">[`@stdlib/iter/replicate`][@stdlib/iter/replicate]</span><span class="delimiter">: </span><span class="description">create an iterator which replicates each iterated value a specified number of times.</span>
 
 </section>
 

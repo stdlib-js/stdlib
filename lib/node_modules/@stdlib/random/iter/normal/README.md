@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/normal`][@stdlib/random/base/normal]: normally distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/normal`][@stdlib/random/base/normal]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers.</span>
 
 </section>
 

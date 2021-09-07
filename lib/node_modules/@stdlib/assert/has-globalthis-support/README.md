@@ -112,7 +112,7 @@ $ has-globalthis-support
 
 ## See Also
 
--   [`@stdlib/utils/global`][@stdlib/utils/global]: return the global object.
+-   <span class="package-name">[`@stdlib/utils/global`][@stdlib/utils/global]</span><span class="delimiter">: </span><span class="description">return the global object.</span>
 
 </section>
 

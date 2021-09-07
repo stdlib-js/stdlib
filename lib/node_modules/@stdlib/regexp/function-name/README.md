@@ -101,7 +101,7 @@ f = fname( function () {} );
 
 ## See Also
 
--   [`@stdlib/utils/function-name`][@stdlib/utils/function-name]: determine a function's name.
+-   <span class="package-name">[`@stdlib/utils/function-name`][@stdlib/utils/function-name]</span><span class="delimiter">: </span><span class="description">determine a function's name.</span>
 
 </section>
 

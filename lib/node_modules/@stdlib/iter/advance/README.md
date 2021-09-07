@@ -162,8 +162,8 @@ var len = iterLength( it2 );
 
 ## See Also
 
--   [`@stdlib/iter/head`][@stdlib/iter/head]: create an iterator which returns the first `n` values of a provided iterator.
--   [`@stdlib/iter/slice`][@stdlib/iter/slice]: create an iterator which returns a subsequence of iterated values from a provided iterator.
+-   <span class="package-name">[`@stdlib/iter/head`][@stdlib/iter/head]</span><span class="delimiter">: </span><span class="description">create an iterator which returns the first `n` values of a provided iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/slice`][@stdlib/iter/slice]</span><span class="delimiter">: </span><span class="description">create an iterator which returns a subsequence of iterated values from a provided iterator.</span>
 
 </section>
 

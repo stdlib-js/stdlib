@@ -529,8 +529,8 @@ $ random-uniform 2.0 5.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/uniform`][@stdlib/random/base/uniform]: uniformly distributed pseudorandom numbers.
--   [`@stdlib/random/iter/uniform`][@stdlib/random/iter/uniform]: create an iterator for generating pseudorandom numbers drawn from a continuous uniform distribution.
+-   <span class="package-name">[`@stdlib/random/base/uniform`][@stdlib/random/base/uniform]</span><span class="delimiter">: </span><span class="description">uniformly distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/uniform`][@stdlib/random/iter/uniform]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a continuous uniform distribution.</span>
 
 </section>
 

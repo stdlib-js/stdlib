@@ -173,10 +173,10 @@ console.log( x );
 
 ## See Also
 
--   [`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy]: multiply a vector x by a constant and add the result to y.
--   [`@stdlib/blas/base/dscal`][@stdlib/blas/base/dscal]: multiply a double-precision floating-point vector by a constant.
--   [`@stdlib/blas/base/gscal`][@stdlib/blas/base/gscal]: multiply a vector by a constant.
--   [`@stdlib/blas/base/saxpy`][@stdlib/blas/base/saxpy]: multiply a vector x by a constant and add the result to y.
+-   <span class="package-name">[`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy]</span><span class="delimiter">: </span><span class="description">multiply a vector x by a constant and add the result to y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/dscal`][@stdlib/blas/base/dscal]</span><span class="delimiter">: </span><span class="description">multiply a double-precision floating-point vector by a constant.</span>
+-   <span class="package-name">[`@stdlib/blas/base/gscal`][@stdlib/blas/base/gscal]</span><span class="delimiter">: </span><span class="description">multiply a vector by a constant.</span>
+-   <span class="package-name">[`@stdlib/blas/base/saxpy`][@stdlib/blas/base/saxpy]</span><span class="delimiter">: </span><span class="description">multiply a vector x by a constant and add the result to y.</span>
 
 </section>
 

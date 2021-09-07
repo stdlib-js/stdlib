@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/negative-binomial`][@stdlib/random/base/negative-binomial]: negative binomial distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/negative-binomial`][@stdlib/random/base/negative-binomial]</span><span class="delimiter">: </span><span class="description">negative binomial distributed pseudorandom numbers.</span>
 
 </section>
 

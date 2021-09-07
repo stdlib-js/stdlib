@@ -134,7 +134,7 @@ Digital image courtesy of the Getty's [Open Content Program][getty-open-content]
 
 ## See Also
 
--   [`@stdlib/datasets/img-locomotion-house-cat`][@stdlib/datasets/img-locomotion-house-cat]: twenty-four views of a house cat.
+-   <span class="package-name">[`@stdlib/datasets/img-locomotion-house-cat`][@stdlib/datasets/img-locomotion-house-cat]</span><span class="delimiter">: </span><span class="description">twenty-four views of a house cat.</span>
 
 </section>
 

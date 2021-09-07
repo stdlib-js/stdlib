@@ -529,8 +529,8 @@ $ random-t 2.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/t`][@stdlib/random/base/t]: Student's t-distributed pseudorandom numbers.
--   [`@stdlib/random/iter/t`][@stdlib/random/iter/t]: create an iterator for generating pseudorandom numbers drawn from a Student's t distribution.
+-   <span class="package-name">[`@stdlib/random/base/t`][@stdlib/random/base/t]</span><span class="delimiter">: </span><span class="description">Student's t-distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/t`][@stdlib/random/iter/t]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Student's t distribution.</span>
 
 </section>
 

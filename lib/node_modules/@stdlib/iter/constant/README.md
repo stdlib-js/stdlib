@@ -178,7 +178,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]: constant function.
+-   <span class="package-name">[`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]</span><span class="delimiter">: </span><span class="description">constant function.</span>
 
 </section>
 

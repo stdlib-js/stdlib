@@ -81,7 +81,7 @@ console.dir( ENV );
 
 ## See Also
 
--   [`@stdlib/process/argv`][@stdlib/process/argv]: array containing command-line arguments passed when launching the calling process.
+-   <span class="package-name">[`@stdlib/process/argv`][@stdlib/process/argv]</span><span class="delimiter">: </span><span class="description">array containing command-line arguments passed when launching the calling process.</span>
 
 </section>
 

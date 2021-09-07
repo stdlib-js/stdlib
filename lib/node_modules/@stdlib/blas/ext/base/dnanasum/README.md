@@ -189,8 +189,8 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/base/dasum`][@stdlib/blas/base/dasum]: compute the sum of absolute values (L1 norm).
--   [`@stdlib/blas/ext/base/dasumpw`][@stdlib/blas/ext/base/dasumpw]: calculate the sum of absolute values (L1 norm) of double-precision floating-point strided array elements using pairwise summation.
+-   <span class="package-name">[`@stdlib/blas/base/dasum`][@stdlib/blas/base/dasum]</span><span class="delimiter">: </span><span class="description">compute the sum of absolute values (L1 norm).</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dasumpw`][@stdlib/blas/ext/base/dasumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of absolute values (L1 norm) of double-precision floating-point strided array elements using pairwise summation.</span>
 
 </section>
 

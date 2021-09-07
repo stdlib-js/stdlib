@@ -118,9 +118,9 @@ console.log( y.data );
 
 ## See Also
 
--   [`@stdlib/blas/base/sswap`][@stdlib/blas/base/sswap]: interchange two single-precision floating-point vectors.
--   [`@stdlib/blas/dswap`][@stdlib/blas/dswap]: interchange two double-precision floating-point vectors.
--   [`@stdlib/blas/gswap`][@stdlib/blas/gswap]: interchange two vectors.
+-   <span class="package-name">[`@stdlib/blas/base/sswap`][@stdlib/blas/base/sswap]</span><span class="delimiter">: </span><span class="description">interchange two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/dswap`][@stdlib/blas/dswap]</span><span class="delimiter">: </span><span class="description">interchange two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/gswap`][@stdlib/blas/gswap]</span><span class="delimiter">: </span><span class="description">interchange two vectors.</span>
 
 </section>
 

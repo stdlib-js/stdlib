@@ -169,10 +169,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]: adds a constant to each double-precision floating-point strided array element and computes the sum.
--   [`@stdlib/blas/ext/base/gapxsumpw`][@stdlib/blas/ext/base/gapxsumpw]: adds a constant to each strided array element and computes the sum using pairwise summation.
--   [`@stdlib/blas/ext/base/gsum`][@stdlib/blas/ext/base/gsum]: calculate the sum of strided array elements.
--   [`@stdlib/blas/ext/base/sapxsum`][@stdlib/blas/ext/base/sapxsum]: adds a constant to each single-precision floating-point strided array element and computes the sum.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each double-precision floating-point strided array element and computes the sum.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gapxsumpw`][@stdlib/blas/ext/base/gapxsumpw]</span><span class="delimiter">: </span><span class="description">adds a constant to each strided array element and computes the sum using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsum`][@stdlib/blas/ext/base/gsum]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapxsum`][@stdlib/blas/ext/base/sapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum.</span>
 
 </section>
 

@@ -133,7 +133,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/math/iter/sequences/primes`][@stdlib/math/iter/sequences/primes]: create an iterator which generates a sequence of prime numbers.
+-   <span class="package-name">[`@stdlib/math/iter/sequences/primes`][@stdlib/math/iter/sequences/primes]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of prime numbers.</span>
 
 </section>
 

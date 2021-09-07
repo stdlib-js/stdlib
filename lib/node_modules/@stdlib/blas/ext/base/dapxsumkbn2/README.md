@@ -180,10 +180,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]: adds a constant to each double-precision floating-point strided array element and computes the sum.
--   [`@stdlib/blas/ext/base/dsumkbn2`][@stdlib/blas/ext/base/dsumkbn2]: calculate the sum of double-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.
--   [`@stdlib/blas/ext/base/gapxsumkbn2`][@stdlib/blas/ext/base/gapxsumkbn2]: adds a constant to each strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.
--   [`@stdlib/blas/ext/base/sapxsumkbn2`][@stdlib/blas/ext/base/sapxsumkbn2]: adds a constant to each single-precision floating-point strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each double-precision floating-point strided array element and computes the sum.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsumkbn2`][@stdlib/blas/ext/base/dsumkbn2]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gapxsumkbn2`][@stdlib/blas/ext/base/gapxsumkbn2]</span><span class="delimiter">: </span><span class="description">adds a constant to each strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapxsumkbn2`][@stdlib/blas/ext/base/sapxsumkbn2]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum using a second-order iterative Kahan–Babuška algorithm.</span>
 
 </section>
 

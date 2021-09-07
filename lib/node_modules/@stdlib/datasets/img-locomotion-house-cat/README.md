@@ -134,7 +134,7 @@ Digital image courtesy of the Getty's [Open Content Program][getty-open-content]
 
 ## See Also
 
--   [`@stdlib/datasets/img-locomotion-nude-male`][@stdlib/datasets/img-locomotion-nude-male]: forty-eight views of a nude male moving in place.
+-   <span class="package-name">[`@stdlib/datasets/img-locomotion-nude-male`][@stdlib/datasets/img-locomotion-nude-male]</span><span class="delimiter">: </span><span class="description">forty-eight views of a nude male moving in place.</span>
 
 </section>
 

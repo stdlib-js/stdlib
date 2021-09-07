@@ -213,8 +213,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/intersection`][@stdlib/iter/intersection]: create an iterator which returns the intersection of two or more iterators.
--   [`@stdlib/iter/unique-by-hash`][@stdlib/iter/unique-by-hash]: create an iterator which returns unique values according to a hash function.
+-   <span class="package-name">[`@stdlib/iter/intersection`][@stdlib/iter/intersection]</span><span class="delimiter">: </span><span class="description">create an iterator which returns the intersection of two or more iterators.</span>
+-   <span class="package-name">[`@stdlib/iter/unique-by-hash`][@stdlib/iter/unique-by-hash]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values according to a hash function.</span>
 
 </section>
 

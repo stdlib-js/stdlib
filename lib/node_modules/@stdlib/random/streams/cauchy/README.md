@@ -529,8 +529,8 @@ $ random-cauchy 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/cauchy`][@stdlib/random/base/cauchy]: Cauchy distributed pseudorandom numbers.
--   [`@stdlib/random/iter/cauchy`][@stdlib/random/iter/cauchy]: create an iterator for generating pseudorandom numbers drawn from a Cauchy distribution.
+-   <span class="package-name">[`@stdlib/random/base/cauchy`][@stdlib/random/base/cauchy]</span><span class="delimiter">: </span><span class="description">Cauchy distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/cauchy`][@stdlib/random/iter/cauchy]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Cauchy distribution.</span>
 
 </section>
 

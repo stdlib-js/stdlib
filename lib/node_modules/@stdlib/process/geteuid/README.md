@@ -80,9 +80,9 @@ if ( uid === 0 ) {
 
 ## See Also
 
--   [`@stdlib/process/getegid`][@stdlib/process/getegid]: return the effective numeric group identity of a calling process.
--   [`@stdlib/process/getgid`][@stdlib/process/getgid]: return the numeric group identity of a calling process.
--   [`@stdlib/process/getuid`][@stdlib/process/getuid]: return the numeric user identity of a calling process.
+-   <span class="package-name">[`@stdlib/process/getegid`][@stdlib/process/getegid]</span><span class="delimiter">: </span><span class="description">return the effective numeric group identity of a calling process.</span>
+-   <span class="package-name">[`@stdlib/process/getgid`][@stdlib/process/getgid]</span><span class="delimiter">: </span><span class="description">return the numeric group identity of a calling process.</span>
+-   <span class="package-name">[`@stdlib/process/getuid`][@stdlib/process/getuid]</span><span class="delimiter">: </span><span class="description">return the numeric user identity of a calling process.</span>
 
 </section>
 

@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/discrete-uniform`][@stdlib/random/base/discrete-uniform]: discrete uniform distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/discrete-uniform`][@stdlib/random/base/discrete-uniform]</span><span class="delimiter">: </span><span class="description">discrete uniform distributed pseudorandom numbers.</span>
 
 </section>
 

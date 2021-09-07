@@ -148,8 +148,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/intersection`][@stdlib/iter/intersection]: create an iterator which returns the intersection of two or more iterators.
--   [`@stdlib/iter/unique`][@stdlib/iter/unique]: create an iterator which returns unique values.
+-   <span class="package-name">[`@stdlib/iter/intersection`][@stdlib/iter/intersection]</span><span class="delimiter">: </span><span class="description">create an iterator which returns the intersection of two or more iterators.</span>
+-   <span class="package-name">[`@stdlib/iter/unique`][@stdlib/iter/unique]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values.</span>
 
 </section>
 

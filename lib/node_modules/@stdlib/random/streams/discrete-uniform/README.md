@@ -529,8 +529,8 @@ $ random-discrete-uniform 2 5 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/discrete-uniform`][@stdlib/random/base/discrete-uniform]: discrete uniform distributed pseudorandom numbers.
--   [`@stdlib/random/iter/discrete-uniform`][@stdlib/random/iter/discrete-uniform]: create an iterator for generating pseudorandom numbers drawn from a discrete uniform distribution.
+-   <span class="package-name">[`@stdlib/random/base/discrete-uniform`][@stdlib/random/base/discrete-uniform]</span><span class="delimiter">: </span><span class="description">discrete uniform distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/discrete-uniform`][@stdlib/random/iter/discrete-uniform]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a discrete uniform distribution.</span>
 
 </section>
 

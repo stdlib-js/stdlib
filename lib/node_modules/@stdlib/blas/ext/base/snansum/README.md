@@ -178,10 +178,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dnansum`][@stdlib/blas/ext/base/dnansum]: calculate the sum of double-precision floating-point strided array elements, ignoring NaN values.
--   [`@stdlib/blas/ext/base/gnansum`][@stdlib/blas/ext/base/gnansum]: calculate the sum of strided array elements, ignoring NaN values.
--   [`@stdlib/stats/base/snanmean`][@stdlib/stats/base/snanmean]: calculate the arithmetic mean of a single-precision floating-point strided array, ignoring NaN values.
--   [`@stdlib/blas/ext/base/ssum`][@stdlib/blas/ext/base/ssum]: calculate the sum of single-precision floating-point strided array elements.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dnansum`][@stdlib/blas/ext/base/dnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gnansum`][@stdlib/blas/ext/base/gnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanmean`][@stdlib/stats/base/snanmean]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssum`][@stdlib/blas/ext/base/ssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements.</span>
 
 </section>
 

@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/erlang`][@stdlib/random/base/erlang]: Erlang distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/erlang`][@stdlib/random/base/erlang]</span><span class="delimiter">: </span><span class="description">Erlang distributed pseudorandom numbers.</span>
 
 </section>
 

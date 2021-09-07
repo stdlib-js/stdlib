@@ -114,7 +114,7 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/buffer/to-json`][@stdlib/buffer/to-json]: return a JSON representation of a Buffer.
+-   <span class="package-name">[`@stdlib/buffer/to-json`][@stdlib/buffer/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a Buffer.</span>
 
 </section>
 

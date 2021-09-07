@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/pareto-type1`][@stdlib/random/base/pareto-type1]: Pareto (Type I) distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/pareto-type1`][@stdlib/random/base/pareto-type1]</span><span class="delimiter">: </span><span class="description">Pareto (Type I) distributed pseudorandom numbers.</span>
 
 </section>
 

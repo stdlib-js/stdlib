@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/gumbel`][@stdlib/random/base/gumbel]: Gumbel distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/gumbel`][@stdlib/random/base/gumbel]</span><span class="delimiter">: </span><span class="description">Gumbel distributed pseudorandom numbers.</span>
 
 </section>
 

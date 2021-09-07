@@ -171,7 +171,7 @@ var arr = str.split( RE_WHITESPACE );
 
 ## See Also
 
--   [`@stdlib/assert/is-whitespace`][@stdlib/assert/is-whitespace]: test whether a string contains only white space characters.
+-   <span class="package-name">[`@stdlib/assert/is-whitespace`][@stdlib/assert/is-whitespace]</span><span class="delimiter">: </span><span class="description">test whether a string contains only white space characters.</span>
 
 </section>
 

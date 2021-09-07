@@ -181,12 +181,12 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsumpw`][@stdlib/blas/ext/base/dsumpw]: calculate the sum of double-precision floating-point strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/gsumpw`][@stdlib/blas/ext/base/gsumpw]: calculate the sum of strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/snansumpw`][@stdlib/blas/ext/base/snansumpw]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values and using pairwise summation.
--   [`@stdlib/blas/ext/base/ssum`][@stdlib/blas/ext/base/ssum]: calculate the sum of single-precision floating-point strided array elements.
--   [`@stdlib/blas/ext/base/ssumkbn2`][@stdlib/blas/ext/base/ssumkbn2]: calculate the sum of single-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.
--   [`@stdlib/blas/ext/base/ssumors`][@stdlib/blas/ext/base/ssumors]: calculate the sum of single-precision floating-point strided array elements using ordinary recursive summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsumpw`][@stdlib/blas/ext/base/dsumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsumpw`][@stdlib/blas/ext/base/gsumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/snansumpw`][@stdlib/blas/ext/base/snansumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values and using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssum`][@stdlib/blas/ext/base/ssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssumkbn2`][@stdlib/blas/ext/base/ssumkbn2]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssumors`][@stdlib/blas/ext/base/ssumors]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using ordinary recursive summation.</span>
 
 </section>
 

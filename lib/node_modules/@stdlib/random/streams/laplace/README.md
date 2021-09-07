@@ -529,8 +529,8 @@ $ random-laplace 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/laplace`][@stdlib/random/base/laplace]: Laplace (double exponential) distributed pseudorandom numbers.
--   [`@stdlib/random/iter/laplace`][@stdlib/random/iter/laplace]: create an iterator for generating pseudorandom numbers drawn from a Laplace distribution.
+-   <span class="package-name">[`@stdlib/random/base/laplace`][@stdlib/random/base/laplace]</span><span class="delimiter">: </span><span class="description">Laplace (double exponential) distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/laplace`][@stdlib/random/iter/laplace]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Laplace distribution.</span>
 
 </section>
 

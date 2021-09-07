@@ -189,9 +189,9 @@ console.log( x );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsortsh`][@stdlib/blas/ext/base/dsortsh]: sort a double-precision floating-point strided array using Shellsort.
--   [`@stdlib/blas/ext/base/gsortsh`][@stdlib/blas/ext/base/gsortsh]: sort a strided array using Shellsort.
--   [`@stdlib/blas/ext/base/ssort2sh`][@stdlib/blas/ext/base/ssort2sh]: simultaneously sort two single-precision floating-point strided arrays based on the sort order of the first array using Shellsort.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsortsh`][@stdlib/blas/ext/base/dsortsh]</span><span class="delimiter">: </span><span class="description">sort a double-precision floating-point strided array using Shellsort.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsortsh`][@stdlib/blas/ext/base/gsortsh]</span><span class="delimiter">: </span><span class="description">sort a strided array using Shellsort.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssort2sh`][@stdlib/blas/ext/base/ssort2sh]</span><span class="delimiter">: </span><span class="description">simultaneously sort two single-precision floating-point strided arrays based on the sort order of the first array using Shellsort.</span>
 
 </section>
 

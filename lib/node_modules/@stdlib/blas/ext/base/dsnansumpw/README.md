@@ -185,10 +185,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dnansumpw`][@stdlib/blas/ext/base/dnansumpw]: calculate the sum of double-precision floating-point strided array elements, ignoring NaN values and using pairwise summation.
--   [`@stdlib/blas/ext/base/dssum`][@stdlib/blas/ext/base/dssum]: calculate the sum of single-precision floating-point strided array elements using extended accumulation and returning an extended precision result.
--   [`@stdlib/blas/ext/base/dssumpw`][@stdlib/blas/ext/base/dssumpw]: calculate the sum of single-precision floating-point strided array elements using pairwise summation with extended accumulation and returning an extended precision result.
--   [`@stdlib/blas/ext/base/snansumpw`][@stdlib/blas/ext/base/snansumpw]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values and using pairwise summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dnansumpw`][@stdlib/blas/ext/base/dnansumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements, ignoring NaN values and using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dssum`][@stdlib/blas/ext/base/dssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using extended accumulation and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dssumpw`][@stdlib/blas/ext/base/dssumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using pairwise summation with extended accumulation and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/snansumpw`][@stdlib/blas/ext/base/snansumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values and using pairwise summation.</span>
 
 </section>
 

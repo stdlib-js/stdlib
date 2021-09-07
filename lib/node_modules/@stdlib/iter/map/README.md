@@ -202,10 +202,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/filter`][@stdlib/iter/filter]: create an iterator which filters the values of another iterator according to a predicate function.
--   [`@stdlib/iter/filter-map`][@stdlib/iter/filter-map]: create an iterator which both filters and maps the values of another iterator.
--   [`@stdlib/iter/for-each`][@stdlib/iter/for-each]: create an iterator which invokes a function for each iterated value before returning the iterated value.
--   [`@stdlib/iter/reject`][@stdlib/iter/reject]: create an iterator which rejects the values of another iterator according to a predicate function.
+-   <span class="package-name">[`@stdlib/iter/filter`][@stdlib/iter/filter]</span><span class="delimiter">: </span><span class="description">create an iterator which filters the values of another iterator according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/filter-map`][@stdlib/iter/filter-map]</span><span class="delimiter">: </span><span class="description">create an iterator which both filters and maps the values of another iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/for-each`][@stdlib/iter/for-each]</span><span class="delimiter">: </span><span class="description">create an iterator which invokes a function for each iterated value before returning the iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/reject`][@stdlib/iter/reject]</span><span class="delimiter">: </span><span class="description">create an iterator which rejects the values of another iterator according to a predicate function.</span>
 
 </section>
 

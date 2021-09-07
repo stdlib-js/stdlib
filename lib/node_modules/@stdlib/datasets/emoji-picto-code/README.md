@@ -156,8 +156,8 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/emoji`][@stdlib/datasets/emoji]: emoji.
--   [`@stdlib/datasets/emoji-code-picto`][@stdlib/datasets/emoji-code-picto]: emoji codes and pictographs.
+-   <span class="package-name">[`@stdlib/datasets/emoji`][@stdlib/datasets/emoji]</span><span class="delimiter">: </span><span class="description">emoji.</span>
+-   <span class="package-name">[`@stdlib/datasets/emoji-code-picto`][@stdlib/datasets/emoji-code-picto]</span><span class="delimiter">: </span><span class="description">emoji codes and pictographs.</span>
 
 </section>
 

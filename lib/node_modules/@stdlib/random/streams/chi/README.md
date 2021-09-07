@@ -529,8 +529,8 @@ $ random-chi 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/chi`][@stdlib/random/base/chi]: Chi distributed pseudorandom numbers.
--   [`@stdlib/random/iter/chi`][@stdlib/random/iter/chi]: create an iterator for generating pseudorandom numbers drawn from a chi distribution.
+-   <span class="package-name">[`@stdlib/random/base/chi`][@stdlib/random/base/chi]</span><span class="delimiter">: </span><span class="description">Chi distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/chi`][@stdlib/random/iter/chi]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a chi distribution.</span>
 
 </section>
 

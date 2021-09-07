@@ -529,8 +529,8 @@ $ random-cosine 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/cosine`][@stdlib/random/base/cosine]: raised cosine distributed pseudorandom numbers.
--   [`@stdlib/random/iter/cosine`][@stdlib/random/iter/cosine]: create an iterator for generating pseudorandom numbers drawn from a raised cosine distribution.
+-   <span class="package-name">[`@stdlib/random/base/cosine`][@stdlib/random/base/cosine]</span><span class="delimiter">: </span><span class="description">raised cosine distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/cosine`][@stdlib/random/iter/cosine]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a raised cosine distribution.</span>
 
 </section>
 

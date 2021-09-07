@@ -176,8 +176,8 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/base/dcopy`][@stdlib/blas/base/dcopy]: copy values from x into y.
--   [`@stdlib/blas/base/scopy`][@stdlib/blas/base/scopy]: copy values from x into y.
+-   <span class="package-name">[`@stdlib/blas/base/dcopy`][@stdlib/blas/base/dcopy]</span><span class="delimiter">: </span><span class="description">copy values from x into y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/scopy`][@stdlib/blas/base/scopy]</span><span class="delimiter">: </span><span class="description">copy values from x into y.</span>
 
 </section>
 

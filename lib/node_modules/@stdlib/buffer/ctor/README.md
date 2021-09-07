@@ -159,7 +159,7 @@ console.log( b );
 
 ## See Also
 
--   [`@stdlib/array/buffer`][@stdlib/array/buffer]: ArrayBuffer.
+-   <span class="package-name">[`@stdlib/array/buffer`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">ArrayBuffer.</span>
 
 </section>
 

@@ -211,8 +211,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/randi`][@stdlib/random/base/randi]: pseudorandom numbers having integer values.
--   [`@stdlib/random/iter/randu`][@stdlib/random/iter/randu]: create an iterator for generating uniformly distributed pseudorandom numbers between 0 and 1.
+-   <span class="package-name">[`@stdlib/random/base/randi`][@stdlib/random/base/randi]</span><span class="delimiter">: </span><span class="description">pseudorandom numbers having integer values.</span>
+-   <span class="package-name">[`@stdlib/random/iter/randu`][@stdlib/random/iter/randu]</span><span class="delimiter">: </span><span class="description">create an iterator for generating uniformly distributed pseudorandom numbers between 0 and 1.</span>
 
 </section>
 

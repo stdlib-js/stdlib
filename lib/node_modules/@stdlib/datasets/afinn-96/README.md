@@ -189,7 +189,7 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 ## See Also
 
--   [`@stdlib/datasets/afinn-111`][@stdlib/datasets/afinn-111]: A list of English words rated for valence.
+-   <span class="package-name">[`@stdlib/datasets/afinn-111`][@stdlib/datasets/afinn-111]</span><span class="delimiter">: </span><span class="description">A list of English words rated for valence.</span>
 
 </section>
 

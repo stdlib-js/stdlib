@@ -190,7 +190,7 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dnanasum`][@stdlib/blas/ext/base/dnanasum]: calculate the sum of absolute values (L1 norm) of double-precision floating-point strided array elements, ignoring NaN values.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dnanasum`][@stdlib/blas/ext/base/dnanasum]</span><span class="delimiter">: </span><span class="description">calculate the sum of absolute values (L1 norm) of double-precision floating-point strided array elements, ignoring NaN values.</span>
 
 </section>
 

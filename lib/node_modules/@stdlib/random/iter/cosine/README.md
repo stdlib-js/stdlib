@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/cosine`][@stdlib/random/base/cosine]: raised cosine distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/cosine`][@stdlib/random/base/cosine]</span><span class="delimiter">: </span><span class="description">raised cosine distributed pseudorandom numbers.</span>
 
 </section>
 

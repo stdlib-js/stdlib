@@ -119,7 +119,7 @@ bool = RE_REGEXP.test( '' );
 
 ## See Also
 
--   [`@stdlib/utils/regexp-from-string`][@stdlib/utils/regexp-from-string]: create a regular expression from a regular expression string.
+-   <span class="package-name">[`@stdlib/utils/regexp-from-string`][@stdlib/utils/regexp-from-string]</span><span class="delimiter">: </span><span class="description">create a regular expression from a regular expression string.</span>
 
 </section>
 

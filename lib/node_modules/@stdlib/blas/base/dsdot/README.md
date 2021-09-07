@@ -208,9 +208,9 @@ console.log( z );
 
 ## See Also
 
--   [`@stdlib/blas/base/ddot`][@stdlib/blas/base/ddot]: calculate the dot product of two double-precision floating-point vectors.
--   [`@stdlib/blas/base/sdot`][@stdlib/blas/base/sdot]: calculate the dot product of two single-precision floating-point vectors.
--   [`@stdlib/blas/base/sdsdot`][@stdlib/blas/base/sdsdot]: calculate the dot product of two single-precision floating-point vectors with extended accumulation.
+-   <span class="package-name">[`@stdlib/blas/base/ddot`][@stdlib/blas/base/ddot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/sdot`][@stdlib/blas/base/sdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/sdsdot`][@stdlib/blas/base/sdsdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two single-precision floating-point vectors with extended accumulation.</span>
 
 </section>
 

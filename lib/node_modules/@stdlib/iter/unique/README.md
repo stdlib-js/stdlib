@@ -141,8 +141,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/unique-by`][@stdlib/iter/unique-by]: create an iterator which returns unique values according to a predicate function.
--   [`@stdlib/iter/unique-by-hash`][@stdlib/iter/unique-by-hash]: create an iterator which returns unique values according to a hash function.
+-   <span class="package-name">[`@stdlib/iter/unique-by`][@stdlib/iter/unique-by]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/unique-by-hash`][@stdlib/iter/unique-by-hash]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values according to a hash function.</span>
 
 </section>
 

@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/weibull`][@stdlib/random/base/weibull]: Weibull distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/weibull`][@stdlib/random/base/weibull]</span><span class="delimiter">: </span><span class="description">Weibull distributed pseudorandom numbers.</span>
 
 </section>
 

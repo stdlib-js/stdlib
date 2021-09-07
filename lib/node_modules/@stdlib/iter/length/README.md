@@ -117,7 +117,7 @@ var len = iterLength( iter );
 
 ## See Also
 
--   [`@stdlib/iter/counter`][@stdlib/iter/counter]: create an iterator which iteratively returns the number of iterated values.
+-   <span class="package-name">[`@stdlib/iter/counter`][@stdlib/iter/counter]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively returns the number of iterated values.</span>
 
 </section>
 

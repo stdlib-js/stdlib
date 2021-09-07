@@ -386,8 +386,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]: normally distributed pseudorandom numbers using the improved Ziggurat method.
--   [`@stdlib/random/base/randu`][@stdlib/random/base/randu]: uniformly distributed pseudorandom numbers between 0 and 1.
+-   <span class="package-name">[`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the improved Ziggurat method.</span>
+-   <span class="package-name">[`@stdlib/random/base/randu`][@stdlib/random/base/randu]</span><span class="delimiter">: </span><span class="description">uniformly distributed pseudorandom numbers between 0 and 1.</span>
 
 </section>
 

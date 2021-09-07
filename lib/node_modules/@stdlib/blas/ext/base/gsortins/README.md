@@ -169,9 +169,9 @@ console.log( x );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsortins`][@stdlib/blas/ext/base/dsortins]: sort a double-precision floating-point strided array using insertion sort.
--   [`@stdlib/blas/ext/base/gsort2ins`][@stdlib/blas/ext/base/gsort2ins]: simultaneously sort two strided arrays based on the sort order of the first array using insertion sort.
--   [`@stdlib/blas/ext/base/ssortins`][@stdlib/blas/ext/base/ssortins]: sort a single-precision floating-point strided array using insertion sort.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsortins`][@stdlib/blas/ext/base/dsortins]</span><span class="delimiter">: </span><span class="description">sort a double-precision floating-point strided array using insertion sort.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsort2ins`][@stdlib/blas/ext/base/gsort2ins]</span><span class="delimiter">: </span><span class="description">simultaneously sort two strided arrays based on the sort order of the first array using insertion sort.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssortins`][@stdlib/blas/ext/base/ssortins]</span><span class="delimiter">: </span><span class="description">sort a single-precision floating-point strided array using insertion sort.</span>
 
 </section>
 

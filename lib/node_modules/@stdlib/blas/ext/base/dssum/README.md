@@ -175,10 +175,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsnansum`][@stdlib/blas/ext/base/dsnansum]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values, using extended accumulation, and returning an extended precision result.
--   [`@stdlib/blas/ext/base/sdssum`][@stdlib/blas/ext/base/sdssum]: calculate the sum of single-precision floating-point strided array elements using extended accumulation.
--   [`@stdlib/blas/ext/base/ssum`][@stdlib/blas/ext/base/ssum]: calculate the sum of single-precision floating-point strided array elements.
--   [`@stdlib/stats/base/dsmean`][@stdlib/stats/base/dsmean]: calculate the arithmetic mean of a single-precision floating-point strided array using extended accumulation and returning an extended precision result.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsnansum`][@stdlib/blas/ext/base/dsnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values, using extended accumulation, and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sdssum`][@stdlib/blas/ext/base/sdssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssum`][@stdlib/blas/ext/base/ssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements.</span>
+-   <span class="package-name">[`@stdlib/stats/base/dsmean`][@stdlib/stats/base/dsmean]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array using extended accumulation and returning an extended precision result.</span>
 
 </section>
 

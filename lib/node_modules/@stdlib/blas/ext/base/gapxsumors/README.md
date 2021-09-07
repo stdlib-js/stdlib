@@ -170,10 +170,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dapxsumors`][@stdlib/blas/ext/base/dapxsumors]: adds a constant to each double-precision floating-point strided array element and computes the sum using ordinary recursive summation.
--   [`@stdlib/blas/ext/base/gapxsum`][@stdlib/blas/ext/base/gapxsum]: adds a constant to each strided array element and computes the sum.
--   [`@stdlib/blas/ext/base/gsumors`][@stdlib/blas/ext/base/gsumors]: calculate the sum of strided array elements using ordinary recursive summation.
--   [`@stdlib/blas/ext/base/sapxsumors`][@stdlib/blas/ext/base/sapxsumors]: adds a constant to each single-precision floating-point strided array element and computes the sum using ordinary recursive summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dapxsumors`][@stdlib/blas/ext/base/dapxsumors]</span><span class="delimiter">: </span><span class="description">adds a constant to each double-precision floating-point strided array element and computes the sum using ordinary recursive summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gapxsum`][@stdlib/blas/ext/base/gapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each strided array element and computes the sum.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsumors`][@stdlib/blas/ext/base/gsumors]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements using ordinary recursive summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapxsumors`][@stdlib/blas/ext/base/sapxsumors]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum using ordinary recursive summation.</span>
 
 </section>
 

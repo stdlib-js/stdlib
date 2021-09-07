@@ -529,8 +529,8 @@ $ random-exponential 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/exponential`][@stdlib/random/base/exponential]: exponentially distributed pseudorandom numbers.
--   [`@stdlib/random/iter/exponential`][@stdlib/random/iter/exponential]: create an iterator for generating pseudorandom numbers drawn from an exponential distribution.
+-   <span class="package-name">[`@stdlib/random/base/exponential`][@stdlib/random/base/exponential]</span><span class="delimiter">: </span><span class="description">exponentially distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/exponential`][@stdlib/random/iter/exponential]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from an exponential distribution.</span>
 
 </section>
 

@@ -163,11 +163,11 @@ console.log( bool );
 
 ## See Also
 
--   [`@stdlib/iter/any`][@stdlib/iter/any]: test whether at least one iterated value is truthy.
--   [`@stdlib/iter/every-by`][@stdlib/iter/every-by]: test whether every iterated value passes a test implemented by a predicate function.
--   [`@stdlib/iter/for-each`][@stdlib/iter/for-each]: create an iterator which invokes a function for each iterated value before returning the iterated value.
--   [`@stdlib/iter/none-by`][@stdlib/iter/none-by]: test whether every iterated value fails a test implemented by a predicate function.
--   [`@stdlib/iter/some-by`][@stdlib/iter/some-by]: test whether at least `n` iterated values pass a test implemented by a predicate function.
+-   <span class="package-name">[`@stdlib/iter/any`][@stdlib/iter/any]</span><span class="delimiter">: </span><span class="description">test whether at least one iterated value is truthy.</span>
+-   <span class="package-name">[`@stdlib/iter/every-by`][@stdlib/iter/every-by]</span><span class="delimiter">: </span><span class="description">test whether every iterated value passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/for-each`][@stdlib/iter/for-each]</span><span class="delimiter">: </span><span class="description">create an iterator which invokes a function for each iterated value before returning the iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/none-by`][@stdlib/iter/none-by]</span><span class="delimiter">: </span><span class="description">test whether every iterated value fails a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/some-by`][@stdlib/iter/some-by]</span><span class="delimiter">: </span><span class="description">test whether at least `n` iterated values pass a test implemented by a predicate function.</span>
 
 </section>
 

@@ -225,9 +225,9 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
--   [`@stdlib/array/to-view-iterator`][@stdlib/array/to-view-iterator]: create an iterator from an array-like object view.
--   [`@stdlib/iter/to-array-view-right`][@stdlib/iter/to-array-view-right]: fill an array-like object view from right to left with values returned from an iterator.
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="package-name">[`@stdlib/array/to-view-iterator`][@stdlib/array/to-view-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view.</span>
+-   <span class="package-name">[`@stdlib/iter/to-array-view-right`][@stdlib/iter/to-array-view-right]</span><span class="delimiter">: </span><span class="description">fill an array-like object view from right to left with values returned from an iterator.</span>
 
 </section>
 

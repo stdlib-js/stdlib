@@ -192,9 +192,9 @@ console.log( dot );
 
 ## See Also
 
--   [`@stdlib/blas/base/ddot`][@stdlib/blas/base/ddot]: calculate the dot product of two double-precision floating-point vectors.
--   [`@stdlib/blas/base/sdot`][@stdlib/blas/base/sdot]: calculate the dot product of two single-precision floating-point vectors.
--   [`@stdlib/blas/gdot`][@stdlib/blas/gdot]: calculate the dot product of two vectors.
+-   <span class="package-name">[`@stdlib/blas/base/ddot`][@stdlib/blas/base/ddot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/sdot`][@stdlib/blas/base/sdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/gdot`][@stdlib/blas/gdot]</span><span class="delimiter">: </span><span class="description">calculate the dot product of two vectors.</span>
 
 </section>
 

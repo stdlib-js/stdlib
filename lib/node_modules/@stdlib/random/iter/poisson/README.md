@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/poisson`][@stdlib/random/base/poisson]: Poisson distributed random numbers.
+-   <span class="package-name">[`@stdlib/random/base/poisson`][@stdlib/random/base/poisson]</span><span class="delimiter">: </span><span class="description">Poisson distributed random numbers.</span>
 
 </section>
 

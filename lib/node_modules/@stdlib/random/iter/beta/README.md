@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/beta`][@stdlib/random/base/beta]: beta distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/beta`][@stdlib/random/base/beta]</span><span class="delimiter">: </span><span class="description">beta distributed pseudorandom numbers.</span>
 
 </section>
 

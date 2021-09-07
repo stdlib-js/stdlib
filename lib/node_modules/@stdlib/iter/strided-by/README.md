@@ -240,9 +240,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/advance`][@stdlib/iter/advance]: advances an iterator.
--   [`@stdlib/iter/nth`][@stdlib/iter/nth]: return the nth iterated value.
--   [`@stdlib/iter/strided`][@stdlib/iter/strided]: create an iterator which steps by a specified amount.
+-   <span class="package-name">[`@stdlib/iter/advance`][@stdlib/iter/advance]</span><span class="delimiter">: </span><span class="description">advances an iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/nth`][@stdlib/iter/nth]</span><span class="delimiter">: </span><span class="description">return the nth iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/strided`][@stdlib/iter/strided]</span><span class="delimiter">: </span><span class="description">create an iterator which steps by a specified amount.</span>
 
 </section>
 

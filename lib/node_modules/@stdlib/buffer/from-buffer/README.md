@@ -121,8 +121,8 @@ for ( i = 0; i < b2.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/buffer/alloc-unsafe`][@stdlib/buffer/alloc-unsafe]: allocate a buffer having a specified number of bytes.
--   [`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]: buffer.
+-   <span class="package-name">[`@stdlib/buffer/alloc-unsafe`][@stdlib/buffer/alloc-unsafe]</span><span class="delimiter">: </span><span class="description">allocate a buffer having a specified number of bytes.</span>
+-   <span class="package-name">[`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]</span><span class="delimiter">: </span><span class="description">Buffer.</span>
 
 </section>
 

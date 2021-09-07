@@ -529,8 +529,8 @@ $ random-erlang 2 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/erlang`][@stdlib/random/base/erlang]: Erlang distributed pseudorandom numbers.
--   [`@stdlib/random/iter/erlang`][@stdlib/random/iter/erlang]: create an iterator for generating pseudorandom numbers drawn from an Erlang distribution.
+-   <span class="package-name">[`@stdlib/random/base/erlang`][@stdlib/random/base/erlang]</span><span class="delimiter">: </span><span class="description">Erlang distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/erlang`][@stdlib/random/iter/erlang]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from an Erlang distribution.</span>
 
 </section>
 

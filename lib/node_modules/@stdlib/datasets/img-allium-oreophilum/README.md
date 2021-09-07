@@ -136,7 +136,7 @@ Digital image courtesy of the Getty's [Open Content Program][getty-open-content]
 
 ## See Also
 
--   [`@stdlib/datasets/img-acanthus-mollis`][@stdlib/datasets/img-acanthus-mollis]: acanthus mollis.
+-   <span class="package-name">[`@stdlib/datasets/img-acanthus-mollis`][@stdlib/datasets/img-acanthus-mollis]</span><span class="delimiter">: </span><span class="description">acanthus mollis.</span>
 
 </section>
 

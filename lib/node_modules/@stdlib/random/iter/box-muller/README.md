@@ -215,7 +215,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/box-muller`][@stdlib/random/base/box-muller]: normally distributed pseudorandom numbers using the Box-Muller transform.
+-   <span class="package-name">[`@stdlib/random/base/box-muller`][@stdlib/random/base/box-muller]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the Box-Muller transform.</span>
 
 </section>
 

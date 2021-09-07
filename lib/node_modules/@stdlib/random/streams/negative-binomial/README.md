@@ -529,8 +529,8 @@ $ random-negative-binomial 20 0.1 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/negative-binomial`][@stdlib/random/base/negative-binomial]: negative binomial distributed pseudorandom numbers.
--   [`@stdlib/random/iter/negative-binomial`][@stdlib/random/iter/negative-binomial]: create an iterator for generating pseudorandom numbers drawn from a negative binomial distribution.
+-   <span class="package-name">[`@stdlib/random/base/negative-binomial`][@stdlib/random/base/negative-binomial]</span><span class="delimiter">: </span><span class="description">negative binomial distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/negative-binomial`][@stdlib/random/iter/negative-binomial]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a negative binomial distribution.</span>
 
 </section>
 

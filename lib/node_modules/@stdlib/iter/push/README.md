@@ -139,8 +139,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/concat`][@stdlib/iter/concat]: create an iterator which iterates over the values of two or more iterators.
--   [`@stdlib/iter/unshift`][@stdlib/iter/unshift]: create an iterator which prepends values to the beginning of a provided iterator.
+-   <span class="package-name">[`@stdlib/iter/concat`][@stdlib/iter/concat]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates over the values of two or more iterators.</span>
+-   <span class="package-name">[`@stdlib/iter/unshift`][@stdlib/iter/unshift]</span><span class="delimiter">: </span><span class="description">create an iterator which prepends values to the beginning of a provided iterator.</span>
 
 </section>
 

@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/gamma`][@stdlib/random/base/gamma]: gamma distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/gamma`][@stdlib/random/base/gamma]</span><span class="delimiter">: </span><span class="description">gamma distributed pseudorandom numbers.</span>
 
 </section>
 

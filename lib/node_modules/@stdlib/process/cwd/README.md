@@ -119,7 +119,7 @@ $ cwd
 
 ## See Also
 
--   [`@stdlib/process/chdir`][@stdlib/process/chdir]: change the current working directory.
+-   <span class="package-name">[`@stdlib/process/chdir`][@stdlib/process/chdir]</span><span class="delimiter">: </span><span class="description">change the current working directory.</span>
 
 </section>
 

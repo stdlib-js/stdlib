@@ -523,10 +523,10 @@ $ random-improved-ziggurat -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]: normally distributed pseudorandom numbers using the improved Ziggurat method.
--   [`@stdlib/random/iter/improved-ziggurat`][@stdlib/random/iter/improved-ziggurat]: create an iterator for generating pseudorandom numbers drawn from a standard normal distribution using the Improved Ziggurat algorithm.
--   [`@stdlib/random/streams/box-muller`][@stdlib/random/streams/box-muller]: create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Box-Muller transform.
--   [`@stdlib/random/streams/randn`][@stdlib/random/streams/randn]: create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution.
+-   <span class="package-name">[`@stdlib/random/base/improved-ziggurat`][@stdlib/random/base/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers using the improved Ziggurat method.</span>
+-   <span class="package-name">[`@stdlib/random/iter/improved-ziggurat`][@stdlib/random/iter/improved-ziggurat]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a standard normal distribution using the Improved Ziggurat algorithm.</span>
+-   <span class="package-name">[`@stdlib/random/streams/box-muller`][@stdlib/random/streams/box-muller]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution using the Box-Muller transform.</span>
+-   <span class="package-name">[`@stdlib/random/streams/randn`][@stdlib/random/streams/randn]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a standard normal distribution.</span>
 
 </section>
 

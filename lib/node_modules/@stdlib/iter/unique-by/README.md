@@ -208,8 +208,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/unique`][@stdlib/iter/unique]: create an iterator which returns unique values.
--   [`@stdlib/iter/unique-by-hash`][@stdlib/iter/unique-by-hash]: create an iterator which returns unique values according to a hash function.
+-   <span class="package-name">[`@stdlib/iter/unique`][@stdlib/iter/unique]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values.</span>
+-   <span class="package-name">[`@stdlib/iter/unique-by-hash`][@stdlib/iter/unique-by-hash]</span><span class="delimiter">: </span><span class="description">create an iterator which returns unique values according to a hash function.</span>
 
 </section>
 

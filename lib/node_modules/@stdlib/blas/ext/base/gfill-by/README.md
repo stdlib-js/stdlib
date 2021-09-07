@@ -208,7 +208,7 @@ console.log( x );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/gfill`][@stdlib/blas/ext/base/gfill]: fill a strided array with a specified scalar constant.
+-   <span class="package-name">[`@stdlib/blas/ext/base/gfill`][@stdlib/blas/ext/base/gfill]</span><span class="delimiter">: </span><span class="description">fill a strided array with a specified scalar constant.</span>
 
 </section>
 

@@ -144,7 +144,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/replicate-by`][@stdlib/iter/replicate-by]: create an iterator which replicates each iterated value according to a provided function.
+-   <span class="package-name">[`@stdlib/iter/replicate-by`][@stdlib/iter/replicate-by]</span><span class="delimiter">: </span><span class="description">create an iterator which replicates each iterated value according to a provided function.</span>
 
 </section>
 

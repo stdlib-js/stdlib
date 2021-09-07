@@ -181,7 +181,7 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 ## See Also
 
--   [`@stdlib/datasets/suthaharan-single-hop-sensor-network`][@stdlib/datasets/suthaharan-single-hop-sensor-network]: labeled wireless sensor network data set collected from a simple single-hop wireless sensor network deployment using TelosB motes.
+-   <span class="package-name">[`@stdlib/datasets/suthaharan-single-hop-sensor-network`][@stdlib/datasets/suthaharan-single-hop-sensor-network]</span><span class="delimiter">: </span><span class="description">labeled wireless sensor network data set collected from a simple single-hop wireless sensor network deployment using TelosB motes.</span>
 
 </section>
 

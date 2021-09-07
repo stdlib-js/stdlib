@@ -529,8 +529,8 @@ $ random-frechet 2.0 5.0 3.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/frechet`][@stdlib/random/base/frechet]: Fréchet distributed pseudorandom numbers.
--   [`@stdlib/random/iter/frechet`][@stdlib/random/iter/frechet]: create an iterator for generating pseudorandom numbers drawn from a Fréchet distribution.
+-   <span class="package-name">[`@stdlib/random/base/frechet`][@stdlib/random/base/frechet]</span><span class="delimiter">: </span><span class="description">Fréchet distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/frechet`][@stdlib/random/iter/frechet]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Fréchet distribution.</span>
 
 </section>
 

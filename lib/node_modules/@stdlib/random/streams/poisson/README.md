@@ -529,8 +529,8 @@ $ random-poisson 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/poisson`][@stdlib/random/base/poisson]: Poisson distributed random numbers.
--   [`@stdlib/random/iter/poisson`][@stdlib/random/iter/poisson]: create an iterator for generating pseudorandom numbers drawn from a Poisson distribution.
+-   <span class="package-name">[`@stdlib/random/base/poisson`][@stdlib/random/base/poisson]</span><span class="delimiter">: </span><span class="description">Poisson distributed random numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/poisson`][@stdlib/random/iter/poisson]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Poisson distribution.</span>
 
 </section>
 

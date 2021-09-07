@@ -179,11 +179,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsnansum`][@stdlib/blas/ext/base/dsnansum]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values, using extended accumulation, and returning an extended precision result.
--   [`@stdlib/blas/ext/base/dnansum`][@stdlib/blas/ext/base/dnansum]: calculate the sum of double-precision floating-point strided array elements, ignoring NaN values.
--   [`@stdlib/blas/ext/base/gnansum`][@stdlib/blas/ext/base/gnansum]: calculate the sum of strided array elements, ignoring NaN values.
--   [`@stdlib/blas/ext/base/sdssum`][@stdlib/blas/ext/base/sdssum]: calculate the sum of single-precision floating-point strided array elements using extended accumulation.
--   [`@stdlib/blas/ext/base/snansum`][@stdlib/blas/ext/base/snansum]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsnansum`][@stdlib/blas/ext/base/dsnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values, using extended accumulation, and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dnansum`][@stdlib/blas/ext/base/dnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gnansum`][@stdlib/blas/ext/base/gnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sdssum`][@stdlib/blas/ext/base/sdssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/snansum`][@stdlib/blas/ext/base/snansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values.</span>
 
 </section>
 

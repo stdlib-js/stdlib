@@ -462,9 +462,9 @@ $ random-randu -n 10 --name mt19937 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/randu`][@stdlib/random/base/randu]: uniformly distributed pseudorandom numbers between 0 and 1.
--   [`@stdlib/random/iter/randu`][@stdlib/random/iter/randu]: create an iterator for generating uniformly distributed pseudorandom numbers between 0 and 1.
--   [`@stdlib/random/streams/randi`][@stdlib/random/streams/randi]: create a readable stream for generating pseudorandom numbers having integer values.
+-   <span class="package-name">[`@stdlib/random/base/randu`][@stdlib/random/base/randu]</span><span class="delimiter">: </span><span class="description">uniformly distributed pseudorandom numbers between 0 and 1.</span>
+-   <span class="package-name">[`@stdlib/random/iter/randu`][@stdlib/random/iter/randu]</span><span class="delimiter">: </span><span class="description">create an iterator for generating uniformly distributed pseudorandom numbers between 0 and 1.</span>
+-   <span class="package-name">[`@stdlib/random/streams/randi`][@stdlib/random/streams/randi]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers having integer values.</span>
 
 </section>
 

@@ -187,8 +187,8 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dnansum`][@stdlib/blas/ext/base/dnansum]: calculate the sum of double-precision floating-point strided array elements, ignoring NaN values.
--   [`@stdlib/blas/ext/base/dsum`][@stdlib/blas/ext/base/dsum]: calculate the sum of double-precision floating-point strided array elements.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dnansum`][@stdlib/blas/ext/base/dnansum]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsum`][@stdlib/blas/ext/base/dsum]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements.</span>
 
 </section>
 

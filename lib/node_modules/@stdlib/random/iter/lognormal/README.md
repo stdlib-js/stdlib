@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/lognormal`][@stdlib/random/base/lognormal]: log-normally distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/lognormal`][@stdlib/random/base/lognormal]</span><span class="delimiter">: </span><span class="description">log-normally distributed pseudorandom numbers.</span>
 
 </section>
 

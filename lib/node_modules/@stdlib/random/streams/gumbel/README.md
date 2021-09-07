@@ -529,8 +529,8 @@ $ random-gumbel 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/gumbel`][@stdlib/random/base/gumbel]: Gumbel distributed pseudorandom numbers.
--   [`@stdlib/random/iter/gumbel`][@stdlib/random/iter/gumbel]: create an iterator for generating pseudorandom numbers drawn from a Gumbel distribution.
+-   <span class="package-name">[`@stdlib/random/base/gumbel`][@stdlib/random/base/gumbel]</span><span class="delimiter">: </span><span class="description">Gumbel distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/gumbel`][@stdlib/random/iter/gumbel]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Gumbel distribution.</span>
 
 </section>
 

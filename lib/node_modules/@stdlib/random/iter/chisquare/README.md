@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/chisquare`][@stdlib/random/base/chisquare]: Chi-square distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/chisquare`][@stdlib/random/base/chisquare]</span><span class="delimiter">: </span><span class="description">Chi-square distributed pseudorandom numbers.</span>
 
 </section>
 

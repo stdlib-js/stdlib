@@ -163,8 +163,8 @@ console.log( x );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dfill`][@stdlib/blas/ext/base/dfill]: fill a double-precision floating-point strided array with a specified scalar constant.
--   [`@stdlib/blas/ext/base/sfill`][@stdlib/blas/ext/base/sfill]: fill a single-precision floating-point strided array with a specified scalar constant.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dfill`][@stdlib/blas/ext/base/dfill]</span><span class="delimiter">: </span><span class="description">fill a double-precision floating-point strided array with a specified scalar constant.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sfill`][@stdlib/blas/ext/base/sfill]</span><span class="delimiter">: </span><span class="description">fill a single-precision floating-point strided array with a specified scalar constant.</span>
 
 </section>
 

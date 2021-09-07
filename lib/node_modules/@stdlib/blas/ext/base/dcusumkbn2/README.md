@@ -202,9 +202,9 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dcusum`][@stdlib/blas/ext/base/dcusum]: calculate the cumulative sum of double-precision floating-point strided array elements.
--   [`@stdlib/blas/ext/base/gcusumkbn2`][@stdlib/blas/ext/base/gcusumkbn2]: calculate the cumulative sum of strided array elements using a second-order iterative Kahan–Babuška algorithm.
--   [`@stdlib/blas/ext/base/scusumkbn2`][@stdlib/blas/ext/base/scusumkbn2]: calculate the cumulative sum of single-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dcusum`][@stdlib/blas/ext/base/dcusum]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of double-precision floating-point strided array elements.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gcusumkbn2`][@stdlib/blas/ext/base/gcusumkbn2]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of strided array elements using a second-order iterative Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/scusumkbn2`][@stdlib/blas/ext/base/scusumkbn2]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of single-precision floating-point strided array elements using a second-order iterative Kahan–Babuška algorithm.</span>
 
 </section>
 

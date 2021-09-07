@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/f`][@stdlib/random/base/f]: F distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/f`][@stdlib/random/base/f]</span><span class="delimiter">: </span><span class="description">F distributed pseudorandom numbers.</span>
 
 </section>
 

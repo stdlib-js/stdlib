@@ -529,8 +529,8 @@ $ random-gamma 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/gamma`][@stdlib/random/base/gamma]: gamma distributed pseudorandom numbers.
--   [`@stdlib/random/iter/gamma`][@stdlib/random/iter/gamma]: create an iterator for generating pseudorandom numbers drawn from a gamma distribution.
+-   <span class="package-name">[`@stdlib/random/base/gamma`][@stdlib/random/base/gamma]</span><span class="delimiter">: </span><span class="description">gamma distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/gamma`][@stdlib/random/iter/gamma]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a gamma distribution.</span>
 
 </section>
 

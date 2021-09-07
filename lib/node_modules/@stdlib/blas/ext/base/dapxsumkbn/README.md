@@ -180,10 +180,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]: adds a constant to each double-precision floating-point strided array element and computes the sum.
--   [`@stdlib/blas/ext/base/dsumkbn`][@stdlib/blas/ext/base/dsumkbn]: calculate the sum of double-precision floating-point strided array elements using an improved Kahan–Babuška algorithm.
--   [`@stdlib/blas/ext/base/gapxsumkbn`][@stdlib/blas/ext/base/gapxsumkbn]: adds a constant to each strided array element and computes the sum using an improved Kahan–Babuška algorithm.
--   [`@stdlib/blas/ext/base/sapxsumkbn`][@stdlib/blas/ext/base/sapxsumkbn]: adds a constant to each single-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dapxsum`][@stdlib/blas/ext/base/dapxsum]</span><span class="delimiter">: </span><span class="description">adds a constant to each double-precision floating-point strided array element and computes the sum.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsumkbn`][@stdlib/blas/ext/base/dsumkbn]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements using an improved Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gapxsumkbn`][@stdlib/blas/ext/base/gapxsumkbn]</span><span class="delimiter">: </span><span class="description">adds a constant to each strided array element and computes the sum using an improved Kahan–Babuška algorithm.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapxsumkbn`][@stdlib/blas/ext/base/sapxsumkbn]</span><span class="delimiter">: </span><span class="description">adds a constant to each single-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.</span>
 
 </section>
 

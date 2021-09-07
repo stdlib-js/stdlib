@@ -157,7 +157,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/male-first-names-en`][@stdlib/datasets/male-first-names-en]: A list of common male first names in English speaking countries.
+-   <span class="package-name">[`@stdlib/datasets/male-first-names-en`][@stdlib/datasets/male-first-names-en]</span><span class="delimiter">: </span><span class="description">A list of common male first names in English speaking countries.</span>
 
 </section>
 

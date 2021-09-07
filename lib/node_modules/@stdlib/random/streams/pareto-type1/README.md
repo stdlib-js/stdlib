@@ -529,8 +529,8 @@ $ random-pareto1 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/pareto-type1`][@stdlib/random/base/pareto-type1]: Pareto (Type I) distributed pseudorandom numbers.
--   [`@stdlib/random/iter/pareto-type1`][@stdlib/random/iter/pareto-type1]: create an iterator for generating pseudorandom numbers drawn from a Pareto (Type I) distribution.
+-   <span class="package-name">[`@stdlib/random/base/pareto-type1`][@stdlib/random/base/pareto-type1]</span><span class="delimiter">: </span><span class="description">Pareto (Type I) distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/pareto-type1`][@stdlib/random/iter/pareto-type1]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Pareto (Type I) distribution.</span>
 
 </section>
 

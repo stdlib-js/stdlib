@@ -529,8 +529,8 @@ $ random-triangular 2.0 5.0 4.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/triangular`][@stdlib/random/base/triangular]: triangular distributed pseudorandom numbers.
--   [`@stdlib/random/iter/triangular`][@stdlib/random/iter/triangular]: create an iterator for generating pseudorandom numbers drawn from a triangular distribution.
+-   <span class="package-name">[`@stdlib/random/base/triangular`][@stdlib/random/base/triangular]</span><span class="delimiter">: </span><span class="description">triangular distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/triangular`][@stdlib/random/iter/triangular]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a triangular distribution.</span>
 
 </section>
 

@@ -184,10 +184,10 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/us-states-abbr`][@stdlib/datasets/us-states-abbr]: A list of US state two-letter abbreviations in alphabetical order according to state name.
--   [`@stdlib/datasets/us-states-capitals`][@stdlib/datasets/us-states-capitals]: A list of US state capitals in alphabetical order according to state name.
--   [`@stdlib/datasets/us-states-capitals-names`][@stdlib/datasets/us-states-capitals-names]: US state capitals and names.
--   [`@stdlib/datasets/us-states-names-capitals`][@stdlib/datasets/us-states-names-capitals]: US state names and capitals.
+-   <span class="package-name">[`@stdlib/datasets/us-states-abbr`][@stdlib/datasets/us-states-abbr]</span><span class="delimiter">: </span><span class="description">A list of US state two-letter abbreviations in alphabetical order according to state name.</span>
+-   <span class="package-name">[`@stdlib/datasets/us-states-capitals`][@stdlib/datasets/us-states-capitals]</span><span class="delimiter">: </span><span class="description">A list of US state capitals in alphabetical order according to state name.</span>
+-   <span class="package-name">[`@stdlib/datasets/us-states-capitals-names`][@stdlib/datasets/us-states-capitals-names]</span><span class="delimiter">: </span><span class="description">US state capitals and names.</span>
+-   <span class="package-name">[`@stdlib/datasets/us-states-names-capitals`][@stdlib/datasets/us-states-names-capitals]</span><span class="delimiter">: </span><span class="description">US state names and capitals.</span>
 
 </section>
 

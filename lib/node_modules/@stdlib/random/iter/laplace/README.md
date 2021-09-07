@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/laplace`][@stdlib/random/base/laplace]: Laplace (double exponential) distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/laplace`][@stdlib/random/base/laplace]</span><span class="delimiter">: </span><span class="description">Laplace (double exponential) distributed pseudorandom numbers.</span>
 
 </section>
 

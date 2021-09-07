@@ -529,8 +529,8 @@ $ random-bernoulli 0.2 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/bernoulli`][@stdlib/random/base/bernoulli]: Bernoulli distributed pseudorandom numbers.
--   [`@stdlib/random/iter/bernoulli`][@stdlib/random/iter/bernoulli]: create an iterator for generating pseudorandom numbers drawn from a Bernoulli distribution.
+-   <span class="package-name">[`@stdlib/random/base/bernoulli`][@stdlib/random/base/bernoulli]</span><span class="delimiter">: </span><span class="description">Bernoulli distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/bernoulli`][@stdlib/random/iter/bernoulli]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Bernoulli distribution.</span>
 
 </section>
 

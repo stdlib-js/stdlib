@@ -175,10 +175,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dsnansumors`][@stdlib/blas/ext/base/dsnansumors]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values, using ordinary recursive summation with extended accumulation, and returning an extended precision result.
--   [`@stdlib/blas/ext/base/dssum`][@stdlib/blas/ext/base/dssum]: calculate the sum of single-precision floating-point strided array elements using extended accumulation and returning an extended precision result.
--   [`@stdlib/blas/ext/base/dsumors`][@stdlib/blas/ext/base/dsumors]: calculate the sum of double-precision floating-point strided array elements using ordinary recursive summation.
--   [`@stdlib/blas/ext/base/ssumors`][@stdlib/blas/ext/base/ssumors]: calculate the sum of single-precision floating-point strided array elements using ordinary recursive summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsnansumors`][@stdlib/blas/ext/base/dsnansumors]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values, using ordinary recursive summation with extended accumulation, and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dssum`][@stdlib/blas/ext/base/dssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using extended accumulation and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsumors`][@stdlib/blas/ext/base/dsumors]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements using ordinary recursive summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssumors`][@stdlib/blas/ext/base/ssumors]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using ordinary recursive summation.</span>
 
 </section>
 

@@ -184,8 +184,8 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy]: multiply a vector x by a constant and add the result to y.
--   [`@stdlib/blas/base/gaxpy`][@stdlib/blas/base/gaxpy]: multiply x by a constant and add the result to y.
+-   <span class="package-name">[`@stdlib/blas/base/daxpy`][@stdlib/blas/base/daxpy]</span><span class="delimiter">: </span><span class="description">multiply a vector x by a constant and add the result to y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/gaxpy`][@stdlib/blas/base/gaxpy]</span><span class="delimiter">: </span><span class="description">multiply x by a constant and add the result to y.</span>
 
 </section>
 

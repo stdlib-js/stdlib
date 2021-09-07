@@ -186,8 +186,8 @@ console.log( '%d of %d', count, N );
 
 ## See Also
 
--   [`@stdlib/iter/flow`][@stdlib/iter/flow]: create a fluent interface for chaining together iterator methods.
--   [`@stdlib/iter/pipeline-thunk`][@stdlib/iter/pipeline-thunk]: create an iterator thunk.
+-   <span class="package-name">[`@stdlib/iter/flow`][@stdlib/iter/flow]</span><span class="delimiter">: </span><span class="description">create a fluent interface for chaining together iterator methods.</span>
+-   <span class="package-name">[`@stdlib/iter/pipeline-thunk`][@stdlib/iter/pipeline-thunk]</span><span class="delimiter">: </span><span class="description">create an iterator thunk.</span>
 
 </section>
 

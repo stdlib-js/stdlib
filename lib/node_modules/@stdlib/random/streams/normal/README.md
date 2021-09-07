@@ -529,8 +529,8 @@ $ random-normal 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/normal`][@stdlib/random/base/normal]: normally distributed pseudorandom numbers.
--   [`@stdlib/random/iter/normal`][@stdlib/random/iter/normal]: create an iterator for generating pseudorandom numbers drawn from a normal distribution.
+-   <span class="package-name">[`@stdlib/random/base/normal`][@stdlib/random/base/normal]</span><span class="delimiter">: </span><span class="description">normally distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/normal`][@stdlib/random/iter/normal]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a normal distribution.</span>
 
 </section>
 

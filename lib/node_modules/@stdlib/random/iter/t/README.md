@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/t`][@stdlib/random/base/t]: Student's t-distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/t`][@stdlib/random/base/t]</span><span class="delimiter">: </span><span class="description">Student's t-distributed pseudorandom numbers.</span>
 
 </section>
 

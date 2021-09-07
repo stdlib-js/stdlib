@@ -529,8 +529,8 @@ $ random-betaprime 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/betaprime`][@stdlib/random/base/betaprime]: beta prime distributed pseudorandom numbers.
--   [`@stdlib/random/iter/betaprime`][@stdlib/random/iter/betaprime]: create an iterator for generating pseudorandom numbers drawn from a beta prime distribution.
+-   <span class="package-name">[`@stdlib/random/base/betaprime`][@stdlib/random/base/betaprime]</span><span class="delimiter">: </span><span class="description">beta prime distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/betaprime`][@stdlib/random/iter/betaprime]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a beta prime distribution.</span>
 
 </section>
 

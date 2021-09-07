@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/triangular`][@stdlib/random/base/triangular]: triangular distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/triangular`][@stdlib/random/base/triangular]</span><span class="delimiter">: </span><span class="description">triangular distributed pseudorandom numbers.</span>
 
 </section>
 

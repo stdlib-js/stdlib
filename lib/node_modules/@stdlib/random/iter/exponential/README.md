@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/exponential`][@stdlib/random/base/exponential]: exponentially distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/exponential`][@stdlib/random/base/exponential]</span><span class="delimiter">: </span><span class="description">exponentially distributed pseudorandom numbers.</span>
 
 </section>
 

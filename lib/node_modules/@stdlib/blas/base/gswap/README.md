@@ -172,10 +172,10 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/base/dswap`][@stdlib/blas/base/dswap]: interchange two double-precision floating-point vectors.
--   [`@stdlib/blas/base/gcopy`][@stdlib/blas/base/gcopy]: copy values from x into y.
--   [`@stdlib/blas/base/sswap`][@stdlib/blas/base/sswap]: interchange two single-precision floating-point vectors.
--   [`@stdlib/blas/gswap`][@stdlib/blas/gswap]: interchange two vectors.
+-   <span class="package-name">[`@stdlib/blas/base/dswap`][@stdlib/blas/base/dswap]</span><span class="delimiter">: </span><span class="description">interchange two double-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/base/gcopy`][@stdlib/blas/base/gcopy]</span><span class="delimiter">: </span><span class="description">copy values from x into y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/sswap`][@stdlib/blas/base/sswap]</span><span class="delimiter">: </span><span class="description">interchange two single-precision floating-point vectors.</span>
+-   <span class="package-name">[`@stdlib/blas/gswap`][@stdlib/blas/gswap]</span><span class="delimiter">: </span><span class="description">interchange two vectors.</span>
 
 </section>
 

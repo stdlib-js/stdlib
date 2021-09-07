@@ -181,8 +181,8 @@ console.log( z );
 
 ## See Also
 
--   [`@stdlib/blas/base/gnrm2`][@stdlib/blas/base/gnrm2]: calculate the L2-norm of a vector.
--   [`@stdlib/blas/base/snrm2`][@stdlib/blas/base/snrm2]: calculate the L2-norm of a single-precision floating-point vector.
+-   <span class="package-name">[`@stdlib/blas/base/gnrm2`][@stdlib/blas/base/gnrm2]</span><span class="delimiter">: </span><span class="description">calculate the L2-norm of a vector.</span>
+-   <span class="package-name">[`@stdlib/blas/base/snrm2`][@stdlib/blas/base/snrm2]</span><span class="delimiter">: </span><span class="description">calculate the L2-norm of a single-precision floating-point vector.</span>
 
 </section>
 

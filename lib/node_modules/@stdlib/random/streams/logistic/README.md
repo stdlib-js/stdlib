@@ -529,8 +529,8 @@ $ random-logistic 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/logistic`][@stdlib/random/base/logistic]: logistic distributed pseudorandom numbers.
--   [`@stdlib/random/iter/logistic`][@stdlib/random/iter/logistic]: create an iterator for generating pseudorandom numbers drawn from a logistic distribution.
+-   <span class="package-name">[`@stdlib/random/base/logistic`][@stdlib/random/base/logistic]</span><span class="delimiter">: </span><span class="description">logistic distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/logistic`][@stdlib/random/iter/logistic]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a logistic distribution.</span>
 
 </section>
 

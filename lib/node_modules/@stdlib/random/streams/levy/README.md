@@ -529,8 +529,8 @@ $ random-levy 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/levy`][@stdlib/random/base/levy]: Lévy distributed pseudorandom numbers.
--   [`@stdlib/random/iter/levy`][@stdlib/random/iter/levy]: create an iterator for generating pseudorandom numbers drawn from a Lévy distribution.
+-   <span class="package-name">[`@stdlib/random/base/levy`][@stdlib/random/base/levy]</span><span class="delimiter">: </span><span class="description">Lévy distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/levy`][@stdlib/random/iter/levy]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Lévy distribution.</span>
 
 </section>
 

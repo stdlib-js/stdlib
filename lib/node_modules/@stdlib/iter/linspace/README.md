@@ -188,12 +188,12 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
--   [`@stdlib/iter/datespace`][@stdlib/iter/datespace]: create an iterator which returns evenly spaced dates over a specified interval.
--   [`@stdlib/iter/incrspace`][@stdlib/iter/incrspace]: create an iterator which returns evenly spaced numbers according to a specified increment.
--   [`@stdlib/iter/logspace`][@stdlib/iter/logspace]: create an iterator which returns evenly spaced numbers on a log scale.
--   [`@stdlib/iter/step`][@stdlib/iter/step]: create an iterator which returns a sequence of numbers according to a specified increment.
--   [`@stdlib/iter/unitspace`][@stdlib/iter/unitspace]: create an iterator which returns numbers incremented by one.
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/datespace`][@stdlib/iter/datespace]</span><span class="delimiter">: </span><span class="description">create an iterator which returns evenly spaced dates over a specified interval.</span>
+-   <span class="package-name">[`@stdlib/iter/incrspace`][@stdlib/iter/incrspace]</span><span class="delimiter">: </span><span class="description">create an iterator which returns evenly spaced numbers according to a specified increment.</span>
+-   <span class="package-name">[`@stdlib/iter/logspace`][@stdlib/iter/logspace]</span><span class="delimiter">: </span><span class="description">create an iterator which returns evenly spaced numbers on a log scale.</span>
+-   <span class="package-name">[`@stdlib/iter/step`][@stdlib/iter/step]</span><span class="delimiter">: </span><span class="description">create an iterator which returns a sequence of numbers according to a specified increment.</span>
+-   <span class="package-name">[`@stdlib/iter/unitspace`][@stdlib/iter/unitspace]</span><span class="delimiter">: </span><span class="description">create an iterator which returns numbers incremented by one.</span>
 
 </section>
 

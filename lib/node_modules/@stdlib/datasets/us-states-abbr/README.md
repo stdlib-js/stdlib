@@ -184,8 +184,8 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/datasets/us-states-capitals`][@stdlib/datasets/us-states-capitals]: A list of US state capitals in alphabetical order according to state name.
--   [`@stdlib/datasets/us-states-names`][@stdlib/datasets/us-states-names]: A list of US state names in alphabetical order.
+-   <span class="package-name">[`@stdlib/datasets/us-states-capitals`][@stdlib/datasets/us-states-capitals]</span><span class="delimiter">: </span><span class="description">A list of US state capitals in alphabetical order according to state name.</span>
+-   <span class="package-name">[`@stdlib/datasets/us-states-names`][@stdlib/datasets/us-states-names]</span><span class="delimiter">: </span><span class="description">A list of US state names in alphabetical order.</span>
 
 </section>
 

@@ -529,8 +529,8 @@ $ random-f 2.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/f`][@stdlib/random/base/f]: F distributed pseudorandom numbers.
--   [`@stdlib/random/iter/f`][@stdlib/random/iter/f]: create an iterator for generating pseudorandom numbers drawn from an F distribution.
+-   <span class="package-name">[`@stdlib/random/base/f`][@stdlib/random/base/f]</span><span class="delimiter">: </span><span class="description">F distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/f`][@stdlib/random/iter/f]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from an F distribution.</span>
 
 </section>
 

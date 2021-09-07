@@ -529,8 +529,8 @@ $ random-lognormal 0.0 1.0 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/lognormal`][@stdlib/random/base/lognormal]: log-normally distributed pseudorandom numbers.
--   [`@stdlib/random/iter/lognormal`][@stdlib/random/iter/lognormal]: create an iterator for generating pseudorandom numbers drawn from a lognormal distribution.
+-   <span class="package-name">[`@stdlib/random/base/lognormal`][@stdlib/random/base/lognormal]</span><span class="delimiter">: </span><span class="description">log-normally distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/lognormal`][@stdlib/random/iter/lognormal]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a lognormal distribution.</span>
 
 </section>
 

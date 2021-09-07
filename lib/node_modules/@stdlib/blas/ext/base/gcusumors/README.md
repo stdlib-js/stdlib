@@ -192,10 +192,10 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dcusumors`][@stdlib/blas/ext/base/dcusumors]: calculate the cumulative sum of double-precision floating-point strided array elements using ordinary recursive summation.
--   [`@stdlib/blas/ext/base/gcusum`][@stdlib/blas/ext/base/gcusum]: calculate the cumulative sum of strided array elements.
--   [`@stdlib/blas/ext/base/gcusumpw`][@stdlib/blas/ext/base/gcusumpw]: calculate the cumulative sum of strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/scusumors`][@stdlib/blas/ext/base/scusumors]: calculate the cumulative sum of single-precision floating-point strided array elements using ordinary recursive summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dcusumors`][@stdlib/blas/ext/base/dcusumors]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of double-precision floating-point strided array elements using ordinary recursive summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gcusum`][@stdlib/blas/ext/base/gcusum]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of strided array elements.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gcusumpw`][@stdlib/blas/ext/base/gcusumpw]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/scusumors`][@stdlib/blas/ext/base/scusumors]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of single-precision floating-point strided array elements using ordinary recursive summation.</span>
 
 </section>
 

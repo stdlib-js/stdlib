@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/kumaraswamy`][@stdlib/random/base/kumaraswamy]: Kumaraswamy's double bounded distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/kumaraswamy`][@stdlib/random/base/kumaraswamy]</span><span class="delimiter">: </span><span class="description">Kumaraswamy's double bounded distributed pseudorandom numbers.</span>
 
 </section>
 

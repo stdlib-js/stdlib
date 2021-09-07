@@ -136,7 +136,7 @@ Digital image courtesy of the Getty's [Open Content Program][getty-open-content]
 
 ## See Also
 
--   [`@stdlib/datasets/img-allium-oreophilum`][@stdlib/datasets/img-allium-oreophilum]: allium oreophilum (pink lily leek).
+-   <span class="package-name">[`@stdlib/datasets/img-allium-oreophilum`][@stdlib/datasets/img-allium-oreophilum]</span><span class="delimiter">: </span><span class="description">allium oreophilum (pink lily leek).</span>
 
 </section>
 

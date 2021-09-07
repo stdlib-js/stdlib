@@ -88,7 +88,7 @@ out = isWhitespace( 123 );
 
 ## See Also
 
--   [`@stdlib/regexp/whitespace`][@stdlib/regexp/whitespace]: return a regular expression to match a white space character.
+-   <span class="package-name">[`@stdlib/regexp/whitespace`][@stdlib/regexp/whitespace]</span><span class="delimiter">: </span><span class="description">return a regular expression to match a white space character.</span>
 
 </section>
 

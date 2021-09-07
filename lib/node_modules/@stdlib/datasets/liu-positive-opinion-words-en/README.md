@@ -173,7 +173,7 @@ The data files (databases) are licensed under an [Open Data Commons Attribution 
 
 ## See Also
 
--   [`@stdlib/datasets/liu-negative-opinion-words-en`][@stdlib/datasets/liu-negative-opinion-words-en]: A list of negative opinion words.
+-   <span class="package-name">[`@stdlib/datasets/liu-negative-opinion-words-en`][@stdlib/datasets/liu-negative-opinion-words-en]</span><span class="delimiter">: </span><span class="description">A list of negative opinion words.</span>
 
 </section>
 

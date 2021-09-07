@@ -529,8 +529,8 @@ $ random-binomial 20 0.1 -n 10 --seed 1234
 
 ## See Also
 
--   [`@stdlib/random/base/binomial`][@stdlib/random/base/binomial]: binomial distributed pseudorandom numbers.
--   [`@stdlib/random/iter/binomial`][@stdlib/random/iter/binomial]: create an iterator for generating pseudorandom numbers drawn from a binomial distribution.
+-   <span class="package-name">[`@stdlib/random/base/binomial`][@stdlib/random/base/binomial]</span><span class="delimiter">: </span><span class="description">binomial distributed pseudorandom numbers.</span>
+-   <span class="package-name">[`@stdlib/random/iter/binomial`][@stdlib/random/iter/binomial]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a binomial distribution.</span>
 
 </section>
 

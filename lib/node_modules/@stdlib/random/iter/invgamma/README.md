@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/invgamma`][@stdlib/random/base/invgamma]: inverse gamma distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/invgamma`][@stdlib/random/base/invgamma]</span><span class="delimiter">: </span><span class="description">inverse gamma distributed pseudorandom numbers.</span>
 
 </section>
 

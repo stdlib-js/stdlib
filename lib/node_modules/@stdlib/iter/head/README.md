@@ -136,8 +136,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/first`][@stdlib/iter/first]: return the first iterated value.
--   [`@stdlib/iter/slice`][@stdlib/iter/slice]: create an iterator which returns a subsequence of iterated values from a provided iterator.
+-   <span class="package-name">[`@stdlib/iter/first`][@stdlib/iter/first]</span><span class="delimiter">: </span><span class="description">return the first iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter/slice`][@stdlib/iter/slice]</span><span class="delimiter">: </span><span class="description">create an iterator which returns a subsequence of iterated values from a provided iterator.</span>
 
 </section>
 

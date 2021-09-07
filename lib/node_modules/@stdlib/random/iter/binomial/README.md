@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/binomial`][@stdlib/random/base/binomial]: binomial distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/binomial`][@stdlib/random/base/binomial]</span><span class="delimiter">: </span><span class="description">binomial distributed pseudorandom numbers.</span>
 
 </section>
 

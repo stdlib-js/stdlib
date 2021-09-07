@@ -197,9 +197,9 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dcusum`][@stdlib/blas/ext/base/dcusum]: calculate the cumulative sum of double-precision floating-point strided array elements.
--   [`@stdlib/blas/ext/base/gcusumors`][@stdlib/blas/ext/base/gcusumors]: calculate the cumulative sum of strided array elements using ordinary recursive summation.
--   [`@stdlib/blas/ext/base/scusumors`][@stdlib/blas/ext/base/scusumors]: calculate the cumulative sum of single-precision floating-point strided array elements using ordinary recursive summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dcusum`][@stdlib/blas/ext/base/dcusum]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of double-precision floating-point strided array elements.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gcusumors`][@stdlib/blas/ext/base/gcusumors]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of strided array elements using ordinary recursive summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/scusumors`][@stdlib/blas/ext/base/scusumors]</span><span class="delimiter">: </span><span class="description">calculate the cumulative sum of single-precision floating-point strided array elements using ordinary recursive summation.</span>
 
 </section>
 

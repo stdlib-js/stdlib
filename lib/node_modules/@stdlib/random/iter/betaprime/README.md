@@ -211,7 +211,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/random/base/betaprime`][@stdlib/random/base/betaprime]: beta prime distributed pseudorandom numbers.
+-   <span class="package-name">[`@stdlib/random/base/betaprime`][@stdlib/random/base/betaprime]</span><span class="delimiter">: </span><span class="description">beta prime distributed pseudorandom numbers.</span>
 
 </section>
 

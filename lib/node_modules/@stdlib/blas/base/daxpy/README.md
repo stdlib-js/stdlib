@@ -184,9 +184,9 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/blas/base/dasum`][@stdlib/blas/base/dasum]: compute the sum of absolute values (L1 norm).
--   [`@stdlib/blas/base/gaxpy`][@stdlib/blas/base/gaxpy]: multiply x by a constant and add the result to y.
--   [`@stdlib/blas/base/saxpy`][@stdlib/blas/base/saxpy]: multiply a vector x by a constant and add the result to y.
+-   <span class="package-name">[`@stdlib/blas/base/dasum`][@stdlib/blas/base/dasum]</span><span class="delimiter">: </span><span class="description">compute the sum of absolute values (L1 norm).</span>
+-   <span class="package-name">[`@stdlib/blas/base/gaxpy`][@stdlib/blas/base/gaxpy]</span><span class="delimiter">: </span><span class="description">multiply x by a constant and add the result to y.</span>
+-   <span class="package-name">[`@stdlib/blas/base/saxpy`][@stdlib/blas/base/saxpy]</span><span class="delimiter">: </span><span class="description">multiply a vector x by a constant and add the result to y.</span>
 
 </section>
 

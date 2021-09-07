@@ -181,12 +181,12 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/blas/ext/base/dssumpw`][@stdlib/blas/ext/base/dssumpw]: calculate the sum of single-precision floating-point strided array elements using pairwise summation with extended accumulation and returning an extended precision result.
--   [`@stdlib/blas/ext/base/dsumpw`][@stdlib/blas/ext/base/dsumpw]: calculate the sum of double-precision floating-point strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/sdsnansumpw`][@stdlib/blas/ext/base/sdsnansumpw]: calculate the sum of single-precision floating-point strided array elements, ignoring NaN values and using pairwise summation with extended accumulation.
--   [`@stdlib/blas/ext/base/sdssum`][@stdlib/blas/ext/base/sdssum]: calculate the sum of single-precision floating-point strided array elements using extended accumulation.
--   [`@stdlib/blas/ext/base/ssumpw`][@stdlib/blas/ext/base/ssumpw]: calculate the sum of single-precision floating-point strided array elements using pairwise summation.
--   [`@stdlib/blas/ext/base/gsumpw`][@stdlib/blas/ext/base/gsumpw]: calculate the sum of strided array elements using pairwise summation.
+-   <span class="package-name">[`@stdlib/blas/ext/base/dssumpw`][@stdlib/blas/ext/base/dssumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using pairwise summation with extended accumulation and returning an extended precision result.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/dsumpw`][@stdlib/blas/ext/base/dsumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of double-precision floating-point strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sdsnansumpw`][@stdlib/blas/ext/base/sdsnansumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements, ignoring NaN values and using pairwise summation with extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sdssum`][@stdlib/blas/ext/base/sdssum]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/ssumpw`][@stdlib/blas/ext/base/ssumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of single-precision floating-point strided array elements using pairwise summation.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gsumpw`][@stdlib/blas/ext/base/gsumpw]</span><span class="delimiter">: </span><span class="description">calculate the sum of strided array elements using pairwise summation.</span>
 
 </section>
 
