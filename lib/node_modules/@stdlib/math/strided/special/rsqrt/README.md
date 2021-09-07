@@ -184,9 +184,9 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/drsqrt`][@stdlib/math/strided/special/drsqrt]: compute the reciprocal square root for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/sqrt`][@stdlib/math/strided/special/sqrt]: compute the principal square root of each element in a strided array.
--   [`@stdlib/math/strided/special/srsqrt`][@stdlib/math/strided/special/srsqrt]: compute the reciprocal square root for each element in a single-precision floating-point strided array.
+-   <span class="package-name">[`@stdlib/math/strided/special/drsqrt`][@stdlib/math/strided/special/drsqrt]</span><span class="delimiter">: </span><span class="description">compute the reciprocal square root for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sqrt`][@stdlib/math/strided/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of each element in a strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/srsqrt`][@stdlib/math/strided/special/srsqrt]</span><span class="delimiter">: </span><span class="description">compute the reciprocal square root for each element in a single-precision floating-point strided array.</span>
 
 </section>
 

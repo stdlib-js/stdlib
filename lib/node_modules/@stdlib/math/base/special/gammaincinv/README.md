@@ -137,10 +137,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]: gamma function.
--   [`@stdlib/math/base/special/gamma1pm1`][@stdlib/math/base/special/gamma1pm1]: compute gamma(x+1) - 1.
--   [`@stdlib/math/base/special/gammainc`][@stdlib/math/base/special/gammainc]: incomplete gamma function.
--   [`@stdlib/math/base/special/gammaln`][@stdlib/math/base/special/gammaln]: natural logarithm of the gamma function.
+-   <span class="package-name">[`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]</span><span class="delimiter">: </span><span class="description">gamma function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gamma1pm1`][@stdlib/math/base/special/gamma1pm1]</span><span class="delimiter">: </span><span class="description">compute gamma(x+1) - 1.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gammainc`][@stdlib/math/base/special/gammainc]</span><span class="delimiter">: </span><span class="description">incomplete gamma function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gammaln`][@stdlib/math/base/special/gammaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the gamma function.</span>
 
 </section>
 

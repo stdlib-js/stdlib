@@ -220,8 +220,8 @@ console.log( 'JSON: %s', JSON.stringify( z ) );
 
 ## See Also
 
--   [`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]: create a complex number.
--   [`@stdlib/complex/float64`][@stdlib/complex/float64]: 128-bit complex number.
+-   <span class="package-name">[`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]</span><span class="delimiter">: </span><span class="description">create a complex number.</span>
+-   <span class="package-name">[`@stdlib/complex/float64`][@stdlib/complex/float64]</span><span class="delimiter">: </span><span class="description">128-bit complex number.</span>
 
 </section>
 

@@ -133,8 +133,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/maxabs`][@stdlib/math/base/special/maxabs]: return the maximum absolute value.
--   [`@stdlib/math/base/special/min`][@stdlib/math/base/special/min]: return the minimum value.
+-   <span class="package-name">[`@stdlib/math/base/special/maxabs`][@stdlib/math/base/special/maxabs]</span><span class="delimiter">: </span><span class="description">return the maximum absolute value.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/min`][@stdlib/math/base/special/min]</span><span class="delimiter">: </span><span class="description">return the minimum value.</span>
 
 </section>
 

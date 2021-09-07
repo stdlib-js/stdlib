@@ -101,8 +101,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cabs2`][@stdlib/math/base/special/cabs2]: compute the squared absolute value of a complex number.
--   [`@stdlib/math/base/special/abs`][@stdlib/math/base/special/abs]: compute the absolute value of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/cabs2`][@stdlib/math/base/special/cabs2]</span><span class="delimiter">: </span><span class="description">compute the squared absolute value of a complex number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/abs`][@stdlib/math/base/special/abs]</span><span class="delimiter">: </span><span class="description">compute the absolute value of a double-precision floating-point number.</span>
 
 </section>
 

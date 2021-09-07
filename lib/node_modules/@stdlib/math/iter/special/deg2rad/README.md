@@ -133,8 +133,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/deg2rad`][@stdlib/math/base/special/deg2rad]: convert an angle from degrees to radians.
--   [`@stdlib/math/iter/special/rad2deg`][@stdlib/math/iter/special/rad2deg]: create an iterator which converts an angle from radians to degrees for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/deg2rad`][@stdlib/math/base/special/deg2rad]</span><span class="delimiter">: </span><span class="description">convert an angle from degrees to radians.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/rad2deg`][@stdlib/math/iter/special/rad2deg]</span><span class="delimiter">: </span><span class="description">create an iterator which converts an angle from radians to degrees for each iterated value.</span>
 
 </section>
 

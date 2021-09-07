@@ -126,7 +126,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/frexp`][@stdlib/math/base/special/frexp]: split a double-precision floating-point number into a normalized fraction and an integer power of two.
+-   <span class="package-name">[`@stdlib/math/base/special/frexp`][@stdlib/math/base/special/frexp]</span><span class="delimiter">: </span><span class="description">split a double-precision floating-point number into a normalized fraction and an integer power of two.</span>
 
 </section>
 

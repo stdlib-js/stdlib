@@ -130,8 +130,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]: natural exponential function.
--   [`@stdlib/math/base/special/expm1`][@stdlib/math/base/special/expm1]: compute exp(x) - 1.
+-   <span class="package-name">[`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]</span><span class="delimiter">: </span><span class="description">natural exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/expm1`][@stdlib/math/base/special/expm1]</span><span class="delimiter">: </span><span class="description">compute exp(x) - 1.</span>
 
 </section>
 

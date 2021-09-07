@@ -191,7 +191,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/special/factorial`][@stdlib/math/iter/special/factorial]: create an iterator which evaluates the factorial function for each iterated value.
+-   <span class="package-name">[`@stdlib/math/iter/special/factorial`][@stdlib/math/iter/special/factorial]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the factorial function for each iterated value.</span>
 
 </section>
 

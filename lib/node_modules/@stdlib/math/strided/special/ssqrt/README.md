@@ -273,10 +273,10 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dsqrt`][@stdlib/math/strided/special/dsqrt]: compute the principal square root for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/scbrt`][@stdlib/math/strided/special/scbrt]: compute the cube root of each element in a single-precision floating-point strided array.
--   [`@stdlib/math/strided/special/sqrt`][@stdlib/math/strided/special/sqrt]: compute the principal square root of each element in a strided array.
--   [`@stdlib/math/strided/special/srsqrt`][@stdlib/math/strided/special/srsqrt]: compute the reciprocal square root for each element in a single-precision floating-point strided array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dsqrt`][@stdlib/math/strided/special/dsqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/scbrt`][@stdlib/math/strided/special/scbrt]</span><span class="delimiter">: </span><span class="description">compute the cube root of each element in a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sqrt`][@stdlib/math/strided/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of each element in a strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/srsqrt`][@stdlib/math/strided/special/srsqrt]</span><span class="delimiter">: </span><span class="description">compute the reciprocal square root for each element in a single-precision floating-point strided array.</span>
 
 </section>
 

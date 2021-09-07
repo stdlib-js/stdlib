@@ -250,8 +250,8 @@ aabeepoo0
 
 ## See Also
 
--   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: left pad a string.
--   [`@stdlib/string/right-pad`][@stdlib/string/right-pad]: right pad a string.
+-   <span class="package-name">[`@stdlib/string/left-pad`][@stdlib/string/left-pad]</span><span class="delimiter">: </span><span class="description">left pad a string.</span>
+-   <span class="package-name">[`@stdlib/string/right-pad`][@stdlib/string/right-pad]</span><span class="delimiter">: </span><span class="description">right pad a string.</span>
 
 </section>
 

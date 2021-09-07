@@ -133,7 +133,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/riemann-zeta`][@stdlib/math/base/special/riemann-zeta]: riemann Zeta function.
+-   <span class="package-name">[`@stdlib/math/base/special/riemann-zeta`][@stdlib/math/base/special/riemann-zeta]</span><span class="delimiter">: </span><span class="description">riemann Zeta function.</span>
 
 </section>
 

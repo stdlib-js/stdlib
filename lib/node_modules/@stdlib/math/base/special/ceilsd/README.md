@@ -95,10 +95,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]: round a double-precision floating-point number toward positive infinity.
--   [`@stdlib/math/base/special/floorsd`][@stdlib/math/base/special/floorsd]: round a numeric value to the nearest number toward negative infinity with N significant figures.
--   [`@stdlib/math/base/special/roundsd`][@stdlib/math/base/special/roundsd]: round a numeric value to the nearest number with N significant figures.
--   [`@stdlib/math/base/special/truncsd`][@stdlib/math/base/special/truncsd]: round a numeric value to the nearest number toward zero with N significant figures.
+-   <span class="package-name">[`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floorsd`][@stdlib/math/base/special/floorsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number toward negative infinity with N significant figures.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/roundsd`][@stdlib/math/base/special/roundsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number with N significant figures.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/truncsd`][@stdlib/math/base/special/truncsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number toward zero with N significant figures.</span>
 
 </section>
 

@@ -96,7 +96,7 @@ for ( i = 1; i < 101; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/log2`][@stdlib/math/base/special/log2]: binary logarithm (base 2).
+-   <span class="package-name">[`@stdlib/math/base/special/log2`][@stdlib/math/base/special/log2]</span><span class="delimiter">: </span><span class="description">binary logarithm (base 2).</span>
 
 </section>
 

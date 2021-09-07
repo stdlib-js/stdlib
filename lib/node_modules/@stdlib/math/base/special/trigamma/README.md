@@ -119,8 +119,8 @@ for ( i = 0; i < 10; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/digamma`][@stdlib/math/base/special/digamma]: digamma function.
--   [`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]: gamma function.
+-   <span class="package-name">[`@stdlib/math/base/special/digamma`][@stdlib/math/base/special/digamma]</span><span class="delimiter">: </span><span class="description">digamma function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]</span><span class="delimiter">: </span><span class="description">gamma function.</span>
 
 </section>
 

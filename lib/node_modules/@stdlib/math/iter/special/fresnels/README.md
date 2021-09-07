@@ -133,8 +133,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/fresnels`][@stdlib/math/base/special/fresnels]: compute the Fresnel integral S(x).
--   [`@stdlib/math/iter/special/fresnelc`][@stdlib/math/iter/special/fresnelc]: create an iterator which computes the Fresnel integral C(x) for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/fresnels`][@stdlib/math/base/special/fresnels]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integral S(x).</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/fresnelc`][@stdlib/math/iter/special/fresnelc]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the Fresnel integral C(x) for each iterated value.</span>
 
 </section>
 

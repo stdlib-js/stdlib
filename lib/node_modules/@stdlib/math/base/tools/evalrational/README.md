@@ -178,7 +178,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/tools/evalpoly`][@stdlib/math/base/tools/evalpoly]: evaluate a polynomial.
+-   <span class="package-name">[`@stdlib/math/base/tools/evalpoly`][@stdlib/math/base/tools/evalpoly]</span><span class="delimiter">: </span><span class="description">evaluate a polynomial.</span>
 
 </section>
 

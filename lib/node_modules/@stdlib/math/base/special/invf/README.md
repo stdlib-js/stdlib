@@ -189,7 +189,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/inv`][@stdlib/math/base/special/inv]: compute the multiplicative inverse of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/inv`][@stdlib/math/base/special/inv]</span><span class="delimiter">: </span><span class="description">compute the multiplicative inverse of a double-precision floating-point number.</span>
 
 </section>
 

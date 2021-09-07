@@ -109,8 +109,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/avercos`][@stdlib/math/base/special/avercos]: compute the inverse versed cosine.
--   [`@stdlib/math/base/special/vercos`][@stdlib/math/base/special/vercos]: compute the versed cosine.
+-   <span class="package-name">[`@stdlib/math/base/special/avercos`][@stdlib/math/base/special/avercos]</span><span class="delimiter">: </span><span class="description">compute the inverse versed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/vercos`][@stdlib/math/base/special/vercos]</span><span class="delimiter">: </span><span class="description">compute the versed cosine.</span>
 
 </section>
 

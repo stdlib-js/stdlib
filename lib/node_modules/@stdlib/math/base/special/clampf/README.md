@@ -218,7 +218,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/clamp`][@stdlib/math/base/special/clamp]: restrict a double-precision floating-point number to a specified range.
+-   <span class="package-name">[`@stdlib/math/base/special/clamp`][@stdlib/math/base/special/clamp]</span><span class="delimiter">: </span><span class="description">restrict a double-precision floating-point number to a specified range.</span>
 
 </section>
 

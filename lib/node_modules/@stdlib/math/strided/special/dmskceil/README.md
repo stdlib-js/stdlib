@@ -300,10 +300,10 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dceil`][@stdlib/math/strided/special/dceil]: round each element in a double-precision floating-point strided array toward positive infinity.
--   [`@stdlib/math/strided/special/dmskfloor`][@stdlib/math/strided/special/dmskfloor]: round each element in a double-precision floating-point strided array toward negative infinity according to a strided mask array.
--   [`@stdlib/math/strided/special/dmsktrunc`][@stdlib/math/strided/special/dmsktrunc]: round each element in a double-precision floating-point strided array toward zero according to a strided mask array.
--   [`@stdlib/math/strided/special/smskceil`][@stdlib/math/strided/special/smskceil]: round each element in a single-precision floating-point strided array toward positive infinity according to a strided mask array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dceil`][@stdlib/math/strided/special/dceil]</span><span class="delimiter">: </span><span class="description">round each element in a double-precision floating-point strided array toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/dmskfloor`][@stdlib/math/strided/special/dmskfloor]</span><span class="delimiter">: </span><span class="description">round each element in a double-precision floating-point strided array toward negative infinity according to a strided mask array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/dmsktrunc`][@stdlib/math/strided/special/dmsktrunc]</span><span class="delimiter">: </span><span class="description">round each element in a double-precision floating-point strided array toward zero according to a strided mask array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/smskceil`][@stdlib/math/strided/special/smskceil]</span><span class="delimiter">: </span><span class="description">round each element in a single-precision floating-point strided array toward positive infinity according to a strided mask array.</span>
 
 </section>
 

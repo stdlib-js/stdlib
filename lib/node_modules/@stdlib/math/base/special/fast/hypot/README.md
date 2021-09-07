@@ -123,7 +123,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/hypot`][@stdlib/math/base/special/hypot]: compute the hypotenuse avoiding overflow and underflow.
+-   <span class="package-name">[`@stdlib/math/base/special/hypot`][@stdlib/math/base/special/hypot]</span><span class="delimiter">: </span><span class="description">compute the hypotenuse avoiding overflow and underflow.</span>
 
 </section>
 

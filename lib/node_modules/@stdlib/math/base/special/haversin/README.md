@@ -97,8 +97,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/havercos`][@stdlib/math/base/special/havercos]: compute the half-value versed cosine.
--   [`@stdlib/math/base/special/versin`][@stdlib/math/base/special/versin]: compute the versed sine.
+-   <span class="package-name">[`@stdlib/math/base/special/havercos`][@stdlib/math/base/special/havercos]</span><span class="delimiter">: </span><span class="description">compute the half-value versed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/versin`][@stdlib/math/base/special/versin]</span><span class="delimiter">: </span><span class="description">compute the versed sine.</span>
 
 </section>
 

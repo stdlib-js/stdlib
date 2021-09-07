@@ -166,7 +166,7 @@ true
 
 ## See Also
 
--   [`@stdlib/string/ends-with`][@stdlib/string/ends-with]: test if a string ends with the characters of another string.
+-   <span class="package-name">[`@stdlib/string/ends-with`][@stdlib/string/ends-with]</span><span class="delimiter">: </span><span class="description">test if a string ends with the characters of another string.</span>
 
 </section>
 

@@ -211,7 +211,7 @@ abc
 
 ## See Also
 
--   [`@stdlib/string/code-point-at`][@stdlib/string/code-point-at]: return a Unicode code point from a string at a specified position.
+-   <span class="package-name">[`@stdlib/string/code-point-at`][@stdlib/string/code-point-at]</span><span class="delimiter">: </span><span class="description">return a Unicode code point from a string at a specified position.</span>
 
 </section>
 

@@ -131,8 +131,8 @@ beep boop
 
 ## See Also
 
--   [`@stdlib/string/trim`][@stdlib/string/trim]: trim whitespace characters from the beginning and end of a string.
--   [`@stdlib/string/right-trim`][@stdlib/string/right-trim]: trim whitespace characters from the end of a string.
+-   <span class="package-name">[`@stdlib/string/trim`][@stdlib/string/trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the beginning and end of a string.</span>
+-   <span class="package-name">[`@stdlib/string/right-trim`][@stdlib/string/right-trim]</span><span class="delimiter">: </span><span class="description">trim whitespace characters from the end of a string.</span>
 
 </section>
 

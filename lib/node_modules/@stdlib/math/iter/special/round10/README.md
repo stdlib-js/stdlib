@@ -136,12 +136,12 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/round10`][@stdlib/math/base/special/round10]: round a numeric value to the nearest power of 10 on a linear scale.
--   [`@stdlib/math/iter/special/ceil10`][@stdlib/math/iter/special/ceil10]: create an iterator which rounds each iterated value to the nearest power of 10 toward positive infinity.
--   [`@stdlib/math/iter/special/floor10`][@stdlib/math/iter/special/floor10]: create an iterator which rounds each iterated value to the nearest power of 10 toward negative infinity.
--   [`@stdlib/math/iter/special/round`][@stdlib/math/iter/special/round]: create an iterator which rounds each iterated value to the nearest integer.
--   [`@stdlib/math/iter/special/round2`][@stdlib/math/iter/special/round2]: create an iterator which rounds each iterated value to the nearest power of two on a linear scale.
--   [`@stdlib/math/iter/special/trunc10`][@stdlib/math/iter/special/trunc10]: create an iterator which rounds each iterated value to the nearest power of 10 toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/round10`][@stdlib/math/base/special/round10]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of 10 on a linear scale.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/ceil10`][@stdlib/math/iter/special/ceil10]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of 10 toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/floor10`][@stdlib/math/iter/special/floor10]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of 10 toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/round`][@stdlib/math/iter/special/round]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest integer.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/round2`][@stdlib/math/iter/special/round2]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of two on a linear scale.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/trunc10`][@stdlib/math/iter/special/trunc10]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of 10 toward zero.</span>
 
 </section>
 

@@ -193,8 +193,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cbrt`][@stdlib/math/base/special/cbrt]: compute the cube root of a double-precision floating-point number.
--   [`@stdlib/math/base/special/rsqrt`][@stdlib/math/base/special/rsqrt]: compute the reciprocal square root of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/cbrt`][@stdlib/math/base/special/cbrt]</span><span class="delimiter">: </span><span class="description">compute the cube root of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/rsqrt`][@stdlib/math/base/special/rsqrt]</span><span class="delimiter">: </span><span class="description">compute the reciprocal square root of a double-precision floating-point number.</span>
 
 </section>
 

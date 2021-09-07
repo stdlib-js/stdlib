@@ -236,8 +236,8 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/math/strided/special/abs-by`][@stdlib/math/strided/special/abs-by]: compute the absolute value of each element retrieved from a strided input array via a callback function and assign each result to an element in a strided output array.
--   [`@stdlib/math/strided/special/abs2`][@stdlib/math/strided/special/abs2]: compute the squared absolute value for each element in a strided array.
+-   <span class="package-name">[`@stdlib/math/strided/special/abs-by`][@stdlib/math/strided/special/abs-by]</span><span class="delimiter">: </span><span class="description">compute the absolute value of each element retrieved from a strided input array via a callback function and assign each result to an element in a strided output array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/abs2`][@stdlib/math/strided/special/abs2]</span><span class="delimiter">: </span><span class="description">compute the squared absolute value for each element in a strided array.</span>
 
 </section>
 

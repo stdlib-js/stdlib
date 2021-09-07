@@ -112,7 +112,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-even`][@stdlib/math/base/assert/is-even]: test if a finite numeric value is an even number.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-even`][@stdlib/math/base/assert/is-even]</span><span class="delimiter">: </span><span class="description">test if a finite numeric value is an even number.</span>
 
 </section>
 

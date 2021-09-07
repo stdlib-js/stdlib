@@ -138,8 +138,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/sinpi`][@stdlib/math/base/special/sinpi]: compute sin(πx).
--   [`@stdlib/math/iter/special/sin`][@stdlib/math/iter/special/sin]: create an iterator which computes the sine of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/sinpi`][@stdlib/math/base/special/sinpi]</span><span class="delimiter">: </span><span class="description">compute sin(πx).</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/sin`][@stdlib/math/iter/special/sin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the sine of each iterated value.</span>
 
 </section>
 

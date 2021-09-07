@@ -94,9 +94,9 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cos`][@stdlib/math/base/special/cos]: compute the cosine of a number.
--   [`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]: compute the sine of a number.
--   [`@stdlib/math/base/special/sincospi`][@stdlib/math/base/special/sincospi]: simultaneously compute the sine and cosine of a number times π.
+-   <span class="package-name">[`@stdlib/math/base/special/cos`][@stdlib/math/base/special/cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sincospi`][@stdlib/math/base/special/sincospi]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of a number times π.</span>
 
 </section>
 

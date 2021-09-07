@@ -193,9 +193,9 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cbrtf`][@stdlib/math/base/special/cbrtf]: compute the cube root of a single-precision floating-point number.
--   [`@stdlib/math/base/special/rsqrtf`][@stdlib/math/base/special/rsqrtf]: compute the reciprocal square root of a single-precision floating-point number.
--   [`@stdlib/math/base/special/sqrt`][@stdlib/math/base/special/sqrt]: compute the principal square root of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/cbrtf`][@stdlib/math/base/special/cbrtf]</span><span class="delimiter">: </span><span class="description">compute the cube root of a single-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/rsqrtf`][@stdlib/math/base/special/rsqrtf]</span><span class="delimiter">: </span><span class="description">compute the reciprocal square root of a single-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sqrt`][@stdlib/math/base/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of a double-precision floating-point number.</span>
 
 </section>
 

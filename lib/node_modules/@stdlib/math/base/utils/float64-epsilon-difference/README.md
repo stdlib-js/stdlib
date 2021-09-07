@@ -169,8 +169,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/utils/absolute-difference`][@stdlib/math/base/utils/absolute-difference]: compute the absolute difference of two real numbers.
--   [`@stdlib/math/base/utils/relative-difference`][@stdlib/math/base/utils/relative-difference]: compute the relative difference of two real numbers.
+-   <span class="package-name">[`@stdlib/math/base/utils/absolute-difference`][@stdlib/math/base/utils/absolute-difference]</span><span class="delimiter">: </span><span class="description">compute the absolute difference of two real numbers.</span>
+-   <span class="package-name">[`@stdlib/math/base/utils/relative-difference`][@stdlib/math/base/utils/relative-difference]</span><span class="delimiter">: </span><span class="description">compute the relative difference of two real numbers.</span>
 
 </section>
 

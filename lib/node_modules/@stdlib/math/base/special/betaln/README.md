@@ -113,9 +113,9 @@ for ( x = 0; x < 10; x++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/beta`][@stdlib/math/base/special/beta]: beta function.
--   [`@stdlib/math/base/special/betainc`][@stdlib/math/base/special/betainc]: incomplete beta function.
--   [`@stdlib/math/base/special/betaincinv`][@stdlib/math/base/special/betaincinv]: inverse incomplete beta function.
+-   <span class="package-name">[`@stdlib/math/base/special/beta`][@stdlib/math/base/special/beta]</span><span class="delimiter">: </span><span class="description">beta function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/betainc`][@stdlib/math/base/special/betainc]</span><span class="delimiter">: </span><span class="description">incomplete beta function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/betaincinv`][@stdlib/math/base/special/betaincinv]</span><span class="delimiter">: </span><span class="description">inverse incomplete beta function.</span>
 
 </section>
 

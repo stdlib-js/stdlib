@@ -144,9 +144,9 @@ beep_boop
 
 ## See Also
 
--   [`@stdlib/string/camelcase`][@stdlib/string/camelcase]: convert a string to camel case.
--   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: convert a string to constant case.
--   [`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]: convert a string to kebab case.
+-   <span class="package-name">[`@stdlib/string/camelcase`][@stdlib/string/camelcase]</span><span class="delimiter">: </span><span class="description">convert a string to camel case.</span>
+-   <span class="package-name">[`@stdlib/string/constantcase`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
+-   <span class="package-name">[`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
 
 </section>
 

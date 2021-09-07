@@ -133,8 +133,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/sqrt1pm1`][@stdlib/math/base/special/sqrt1pm1]: compute sqrt(1 + x) - 1.
--   [`@stdlib/math/iter/special/sqrt`][@stdlib/math/iter/special/sqrt]: create an iterator which computes the principal square root of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/sqrt1pm1`][@stdlib/math/base/special/sqrt1pm1]</span><span class="delimiter">: </span><span class="description">compute sqrt(1 + x) - 1.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/sqrt`][@stdlib/math/iter/special/sqrt]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the principal square root of each iterated value.</span>
 
 </section>
 

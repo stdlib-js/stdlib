@@ -137,10 +137,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]: compute the sine of a number.
--   [`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]: create an iterator which computes the cosine of each iterated value.
--   [`@stdlib/math/iter/special/sinpi`][@stdlib/math/iter/special/sinpi]: create an iterator which computes the sine of each iterated value times π.
--   [`@stdlib/math/iter/special/tan`][@stdlib/math/iter/special/tan]: create an iterator which evaluates the tangent for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the cosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/sinpi`][@stdlib/math/iter/special/sinpi]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the sine of each iterated value times π.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/tan`][@stdlib/math/iter/special/tan]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the tangent for each iterated value.</span>
 
 </section>
 

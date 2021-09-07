@@ -172,8 +172,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/nonfibonacci`][@stdlib/math/base/special/nonfibonacci]: compute the nth non-Fibonacci number.
--   [`@stdlib/math/iter/sequences/fibonacci`][@stdlib/math/iter/sequences/fibonacci]: create an iterator which generates a Fibonacci sequence.
+-   <span class="package-name">[`@stdlib/math/base/special/nonfibonacci`][@stdlib/math/base/special/nonfibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth non-Fibonacci number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/fibonacci`][@stdlib/math/iter/sequences/fibonacci]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Fibonacci sequence.</span>
 
 </section>
 

@@ -136,7 +136,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/binet`][@stdlib/math/base/special/binet]: evaluate Binet's formula extended to real numbers.
+-   <span class="package-name">[`@stdlib/math/base/special/binet`][@stdlib/math/base/special/binet]</span><span class="delimiter">: </span><span class="description">evaluate Binet's formula extended to real numbers.</span>
 
 </section>
 

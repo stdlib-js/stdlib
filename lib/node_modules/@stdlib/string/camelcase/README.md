@@ -135,9 +135,9 @@ beEpBooP
 
 ## See Also
 
--   [`@stdlib/string/constantcase`][@stdlib/string/constantcase]: convert a string to constant case.
--   [`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]: convert a string to kebab case.
--   [`@stdlib/string/snakecase`][@stdlib/string/snakecase]: convert a string to snake case.
+-   <span class="package-name">[`@stdlib/string/constantcase`][@stdlib/string/constantcase]</span><span class="delimiter">: </span><span class="description">convert a string to constant case.</span>
+-   <span class="package-name">[`@stdlib/string/kebabcase`][@stdlib/string/kebabcase]</span><span class="delimiter">: </span><span class="description">convert a string to kebab case.</span>
+-   <span class="package-name">[`@stdlib/string/snakecase`][@stdlib/string/snakecase]</span><span class="delimiter">: </span><span class="description">convert a string to snake case.</span>
 
 </section>
 

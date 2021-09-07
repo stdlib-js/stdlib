@@ -133,7 +133,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/dirichlet-eta`][@stdlib/math/base/special/dirichlet-eta]: dirichlet eta function.
+-   <span class="package-name">[`@stdlib/math/base/special/dirichlet-eta`][@stdlib/math/base/special/dirichlet-eta]</span><span class="delimiter">: </span><span class="description">dirichlet eta function.</span>
 
 </section>
 

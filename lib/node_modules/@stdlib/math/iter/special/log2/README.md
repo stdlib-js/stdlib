@@ -136,11 +136,11 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/log2`][@stdlib/math/base/special/log2]: binary logarithm (base 2).
--   [`@stdlib/math/iter/special/log`][@stdlib/math/iter/special/log]: create an iterator which computes the base `b` logarithm.
--   [`@stdlib/math/iter/special/log10`][@stdlib/math/iter/special/log10]: create an iterator which evaluates the common logarithm (logarithm with base 10) for each iterated value.
--   [`@stdlib/math/iter/special/log1p`][@stdlib/math/iter/special/log1p]: create an iterator which evaluates the natural logarithm of 1+x for each iterated value.
--   [`@stdlib/math/iter/special/pow`][@stdlib/math/iter/special/pow]: create an iterator which evaluates the exponential function.
+-   <span class="package-name">[`@stdlib/math/base/special/log2`][@stdlib/math/base/special/log2]</span><span class="delimiter">: </span><span class="description">binary logarithm (base 2).</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log`][@stdlib/math/iter/special/log]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the base `b` logarithm.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log10`][@stdlib/math/iter/special/log10]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the common logarithm (logarithm with base 10) for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log1p`][@stdlib/math/iter/special/log1p]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1+x for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/pow`][@stdlib/math/iter/special/pow]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the exponential function.</span>
 
 </section>
 

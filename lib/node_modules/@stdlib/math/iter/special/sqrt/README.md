@@ -136,9 +136,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/sqrt`][@stdlib/math/base/special/sqrt]: compute the principal square root of a double-precision floating-point number.
--   [`@stdlib/math/iter/special/cbrt`][@stdlib/math/iter/special/cbrt]: create an iterator which computes the cube root of each iterated value.
--   [`@stdlib/math/iter/special/rsqrt`][@stdlib/math/iter/special/rsqrt]: create an iterator which computes the reciprocal (inverse) square root of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/sqrt`][@stdlib/math/base/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/cbrt`][@stdlib/math/iter/special/cbrt]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the cube root of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/rsqrt`][@stdlib/math/iter/special/rsqrt]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the reciprocal (inverse) square root of each iterated value.</span>
 
 </section>
 

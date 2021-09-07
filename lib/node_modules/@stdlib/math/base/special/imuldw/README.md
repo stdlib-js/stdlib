@@ -96,8 +96,8 @@ for ( i = 0x7FFFFFF0; i < 0x7FFFFFFF; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/imul`][@stdlib/math/base/special/imul]: perform C-like multiplication of two signed 32-bit integers.
--   [`@stdlib/math/base/special/uimuldw`][@stdlib/math/base/special/uimuldw]: compute the double word product of two unsigned 32-bit integers.
+-   <span class="package-name">[`@stdlib/math/base/special/imul`][@stdlib/math/base/special/imul]</span><span class="delimiter">: </span><span class="description">perform C-like multiplication of two signed 32-bit integers.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/uimuldw`][@stdlib/math/base/special/uimuldw]</span><span class="delimiter">: </span><span class="description">compute the double word product of two unsigned 32-bit integers.</span>
 
 </section>
 

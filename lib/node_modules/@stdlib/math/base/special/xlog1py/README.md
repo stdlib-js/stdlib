@@ -100,8 +100,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/log1p`][@stdlib/math/base/special/log1p]: evaluate the natural logarithm of 1+x.
--   [`@stdlib/math/base/special/xlogy`][@stdlib/math/base/special/xlogy]: compute `x * ln(y)` so that the result is `0` if `x = 0`.
+-   <span class="package-name">[`@stdlib/math/base/special/log1p`][@stdlib/math/base/special/log1p]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of 1+x.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/xlogy`][@stdlib/math/base/special/xlogy]</span><span class="delimiter">: </span><span class="description">compute `x * ln(y)` so that the result is `0` if `x = 0`.</span>
 
 </section>
 

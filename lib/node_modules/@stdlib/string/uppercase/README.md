@@ -135,8 +135,8 @@ BEEP
 
 ## See Also
 
--   [`@stdlib/string/capitalize`][@stdlib/string/capitalize]: capitalize the first character in a string.
--   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: convert a string to lowercase.
+-   <span class="package-name">[`@stdlib/string/capitalize`][@stdlib/string/capitalize]</span><span class="delimiter">: </span><span class="description">capitalize the first character in a string.</span>
+-   <span class="package-name">[`@stdlib/string/lowercase`][@stdlib/string/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
 
 </section>
 

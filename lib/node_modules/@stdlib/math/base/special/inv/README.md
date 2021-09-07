@@ -189,7 +189,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/pow`][@stdlib/math/base/special/pow]: exponential function.
+-   <span class="package-name">[`@stdlib/math/base/special/pow`][@stdlib/math/base/special/pow]</span><span class="delimiter">: </span><span class="description">exponential function.</span>
 
 </section>
 

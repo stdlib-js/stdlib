@@ -300,8 +300,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dmskdeg2rad`][@stdlib/math/strided/special/dmskdeg2rad]: convert each element in a double-precision floating-point strided array from degrees to radians according to a strided mask array.
--   [`@stdlib/math/strided/special/sdeg2rad`][@stdlib/math/strided/special/sdeg2rad]: convert each element in a single-precision floating-point strided array from degrees to radians.
+-   <span class="package-name">[`@stdlib/math/strided/special/dmskdeg2rad`][@stdlib/math/strided/special/dmskdeg2rad]</span><span class="delimiter">: </span><span class="description">convert each element in a double-precision floating-point strided array from degrees to radians according to a strided mask array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sdeg2rad`][@stdlib/math/strided/special/sdeg2rad]</span><span class="delimiter">: </span><span class="description">convert each element in a single-precision floating-point strided array from degrees to radians.</span>
 
 </section>
 

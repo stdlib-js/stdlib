@@ -104,7 +104,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/copysign`][@stdlib/math/base/special/copysign]: return a double-precision floating-point number with the magnitude of x and the sign of y.
+-   <span class="package-name">[`@stdlib/math/base/special/copysign`][@stdlib/math/base/special/copysign]</span><span class="delimiter">: </span><span class="description">return a double-precision floating-point number with the magnitude of x and the sign of y.</span>
 
 </section>
 

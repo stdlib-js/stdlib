@@ -165,8 +165,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/betaln`][@stdlib/math/base/special/betaln]: natural logarithm of the beta function.
--   [`@stdlib/math/iter/special/beta`][@stdlib/math/iter/special/beta]: create an iterator which evaluates the beta function.
+-   <span class="package-name">[`@stdlib/math/base/special/betaln`][@stdlib/math/base/special/betaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the beta function.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/beta`][@stdlib/math/iter/special/beta]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the beta function.</span>
 
 </section>
 

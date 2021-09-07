@@ -111,9 +111,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/besselj0`][@stdlib/math/base/special/besselj0]: compute the Bessel function of the first kind of order zero.
--   [`@stdlib/math/base/special/besselj1`][@stdlib/math/base/special/besselj1]: compute the Bessel function of the first kind of order one.
--   [`@stdlib/math/base/special/bessely0`][@stdlib/math/base/special/bessely0]: compute the Bessel function of the second kind of order zero.
+-   <span class="package-name">[`@stdlib/math/base/special/besselj0`][@stdlib/math/base/special/besselj0]</span><span class="delimiter">: </span><span class="description">compute the Bessel function of the first kind of order zero.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/besselj1`][@stdlib/math/base/special/besselj1]</span><span class="delimiter">: </span><span class="description">compute the Bessel function of the first kind of order one.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/bessely0`][@stdlib/math/base/special/bessely0]</span><span class="delimiter">: </span><span class="description">compute the Bessel function of the second kind of order zero.</span>
 
 </section>
 

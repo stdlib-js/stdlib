@@ -136,9 +136,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]: gamma function.
--   [`@stdlib/math/iter/special/gamma1pm1`][@stdlib/math/iter/special/gamma1pm1]: create an iterator which computes `gamma(x+1) - 1` for each iterated value.
--   [`@stdlib/math/iter/special/gammaln`][@stdlib/math/iter/special/gammaln]: create an iterator which evaluates the natural logarithm of the gamma function for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]</span><span class="delimiter">: </span><span class="description">gamma function.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/gamma1pm1`][@stdlib/math/iter/special/gamma1pm1]</span><span class="delimiter">: </span><span class="description">create an iterator which computes `gamma(x+1) - 1` for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/gammaln`][@stdlib/math/iter/special/gammaln]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of the gamma function for each iterated value.</span>
 
 </section>
 

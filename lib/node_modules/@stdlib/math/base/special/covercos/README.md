@@ -97,8 +97,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/coversin`][@stdlib/math/base/special/coversin]: compute the coversed sine.
--   [`@stdlib/math/base/special/vercos`][@stdlib/math/base/special/vercos]: compute the versed cosine.
+-   <span class="package-name">[`@stdlib/math/base/special/coversin`][@stdlib/math/base/special/coversin]</span><span class="delimiter">: </span><span class="description">compute the coversed sine.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/vercos`][@stdlib/math/base/special/vercos]</span><span class="delimiter">: </span><span class="description">compute the versed cosine.</span>
 
 </section>
 

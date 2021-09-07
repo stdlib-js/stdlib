@@ -174,8 +174,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/pow`][@stdlib/math/base/special/pow]: exponential function.
--   [`@stdlib/math/base/special/sqrt`][@stdlib/math/base/special/sqrt]: compute the principal square root of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/pow`][@stdlib/math/base/special/pow]</span><span class="delimiter">: </span><span class="description">exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sqrt`][@stdlib/math/base/special/sqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root of a double-precision floating-point number.</span>
 
 </section>
 

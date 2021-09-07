@@ -136,7 +136,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/dirac-delta`][@stdlib/math/base/special/dirac-delta]: evaluate the Dirac delta function.
+-   <span class="package-name">[`@stdlib/math/base/special/dirac-delta`][@stdlib/math/base/special/dirac-delta]</span><span class="delimiter">: </span><span class="description">evaluate the Dirac delta function.</span>
 
 </section>
 

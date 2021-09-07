@@ -133,9 +133,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/havercos`][@stdlib/math/base/special/havercos]: compute the half-value versed cosine.
--   [`@stdlib/math/iter/special/haversin`][@stdlib/math/iter/special/haversin]: create an iterator which computes the half-value versed sine for each iterated value.
--   [`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]: create an iterator which computes the versed cosine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/havercos`][@stdlib/math/base/special/havercos]</span><span class="delimiter">: </span><span class="description">compute the half-value versed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/haversin`][@stdlib/math/iter/special/haversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the half-value versed sine for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed cosine for each iterated value.</span>
 
 </section>
 

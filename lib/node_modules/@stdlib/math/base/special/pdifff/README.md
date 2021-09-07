@@ -215,7 +215,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/pdiff`][@stdlib/math/base/special/pdiff]: return the positive difference between `x` and `y`.
+-   <span class="package-name">[`@stdlib/math/base/special/pdiff`][@stdlib/math/base/special/pdiff]</span><span class="delimiter">: </span><span class="description">return the positive difference between `x` and `y`.</span>
 
 </section>
 

@@ -133,10 +133,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/bessely1`][@stdlib/math/base/special/bessely1]: compute the Bessel function of the second kind of order one.
--   [`@stdlib/math/iter/special/besselj0`][@stdlib/math/iter/special/besselj0]: create an iterator which evaluates the Bessel function of the first kind of order zero for each iterated value.
--   [`@stdlib/math/iter/special/besselj1`][@stdlib/math/iter/special/besselj1]: create an iterator which evaluates the Bessel function of the first kind of order one for each iterated value.
--   [`@stdlib/math/iter/special/bessely0`][@stdlib/math/iter/special/bessely0]: create an iterator which evaluates the Bessel function of the second kind of order zero for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/bessely1`][@stdlib/math/base/special/bessely1]</span><span class="delimiter">: </span><span class="description">compute the Bessel function of the second kind of order one.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/besselj0`][@stdlib/math/iter/special/besselj0]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the Bessel function of the first kind of order zero for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/besselj1`][@stdlib/math/iter/special/besselj1]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the Bessel function of the first kind of order one for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/bessely0`][@stdlib/math/iter/special/bessely0]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the Bessel function of the second kind of order zero for each iterated value.</span>
 
 </section>
 

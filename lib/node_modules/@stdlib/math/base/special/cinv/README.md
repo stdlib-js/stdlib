@@ -134,7 +134,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/ops/cdiv`][@stdlib/math/base/ops/cdiv]: divide two complex numbers.
+-   <span class="package-name">[`@stdlib/math/base/ops/cdiv`][@stdlib/math/base/ops/cdiv]</span><span class="delimiter">: </span><span class="description">divide two complex numbers.</span>
 
 </section>
 

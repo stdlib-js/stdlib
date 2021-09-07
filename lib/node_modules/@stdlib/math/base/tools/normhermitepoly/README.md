@@ -145,8 +145,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/tools/evalpoly`][@stdlib/math/base/tools/evalpoly]: evaluate a polynomial.
--   [`@stdlib/math/base/tools/hermitepoly`][@stdlib/math/base/tools/hermitepoly]: evaluate a physicist's Hermite polynomial.
+-   <span class="package-name">[`@stdlib/math/base/tools/evalpoly`][@stdlib/math/base/tools/evalpoly]</span><span class="delimiter">: </span><span class="description">evaluate a polynomial.</span>
+-   <span class="package-name">[`@stdlib/math/base/tools/hermitepoly`][@stdlib/math/base/tools/hermitepoly]</span><span class="delimiter">: </span><span class="description">evaluate a physicist's Hermite polynomial.</span>
 
 </section>
 

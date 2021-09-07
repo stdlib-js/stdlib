@@ -97,8 +97,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]: natural logarithm.
--   [`@stdlib/math/base/special/log`][@stdlib/math/base/special/log]: base `b` logarithm.
+-   <span class="package-name">[`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">natural logarithm.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/log`][@stdlib/math/base/special/log]</span><span class="delimiter">: </span><span class="description">base `b` logarithm.</span>
 
 </section>
 

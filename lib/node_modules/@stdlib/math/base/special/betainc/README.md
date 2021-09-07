@@ -130,9 +130,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/beta`][@stdlib/math/base/special/beta]: beta function.
--   [`@stdlib/math/base/special/betaincinv`][@stdlib/math/base/special/betaincinv]: inverse incomplete beta function.
--   [`@stdlib/math/base/special/betaln`][@stdlib/math/base/special/betaln]: natural logarithm of the beta function.
+-   <span class="package-name">[`@stdlib/math/base/special/beta`][@stdlib/math/base/special/beta]</span><span class="delimiter">: </span><span class="description">beta function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/betaincinv`][@stdlib/math/base/special/betaincinv]</span><span class="delimiter">: </span><span class="description">inverse incomplete beta function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/betaln`][@stdlib/math/base/special/betaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the beta function.</span>
 
 </section>
 

@@ -110,10 +110,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]: round a double-precision floating-point number toward positive infinity.
--   [`@stdlib/math/base/special/ceiln`][@stdlib/math/base/special/ceiln]: round a numeric value to the nearest multiple of 10^n toward positive infinity.
--   [`@stdlib/math/base/special/floorb`][@stdlib/math/base/special/floorb]: round a numeric value to the nearest multiple of b^n toward negative infinity.
--   [`@stdlib/math/base/special/roundb`][@stdlib/math/base/special/roundb]: round a numeric value to the nearest multiple of b^n on a linear scale.
+-   <span class="package-name">[`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/ceiln`][@stdlib/math/base/special/ceiln]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floorb`][@stdlib/math/base/special/floorb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/roundb`][@stdlib/math/base/special/roundb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n on a linear scale.</span>
 
 </section>
 

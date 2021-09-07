@@ -184,8 +184,8 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dinv`][@stdlib/math/strided/special/dinv]: compute the multiplicative inverse for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/sinv`][@stdlib/math/strided/special/sinv]: compute the multiplicative inverse for each element in a single-precision floating-point strided array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dinv`][@stdlib/math/strided/special/dinv]</span><span class="delimiter">: </span><span class="description">compute the multiplicative inverse for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sinv`][@stdlib/math/strided/special/sinv]</span><span class="delimiter">: </span><span class="description">compute the multiplicative inverse for each element in a single-precision floating-point strided array.</span>
 
 </section>
 

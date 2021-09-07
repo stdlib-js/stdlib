@@ -91,9 +91,9 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acosh`][@stdlib/math/base/special/acosh]: compute the hyperbolic arccosine of a number.
--   [`@stdlib/math/base/special/asin`][@stdlib/math/base/special/asin]: compute the arcsine of a number.
--   [`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]: compute the hyperbolic arctangent of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/acosh`][@stdlib/math/base/special/acosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/asin`][@stdlib/math/base/special/asin]</span><span class="delimiter">: </span><span class="description">compute the arcsine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a number.</span>
 
 </section>
 

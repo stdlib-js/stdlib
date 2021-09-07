@@ -184,9 +184,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/negafibonacci`][@stdlib/math/base/special/negafibonacci]: compute the nth negaFibonacci number.
--   [`@stdlib/math/iter/sequences/fibonacci`][@stdlib/math/iter/sequences/fibonacci]: create an iterator which generates a Fibonacci sequence.
--   [`@stdlib/math/iter/sequences/nonfibonacci`][@stdlib/math/iter/sequences/nonfibonacci]: create an iterator which generates a non-Fibonacci integer sequence.
+-   <span class="package-name">[`@stdlib/math/base/special/negafibonacci`][@stdlib/math/base/special/negafibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth negaFibonacci number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/fibonacci`][@stdlib/math/iter/sequences/fibonacci]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Fibonacci sequence.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/nonfibonacci`][@stdlib/math/iter/sequences/nonfibonacci]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a non-Fibonacci integer sequence.</span>
 
 </section>
 

@@ -133,10 +133,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/vercos`][@stdlib/math/base/special/vercos]: compute the versed cosine.
--   [`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]: create an iterator which computes the cosine of each iterated value.
--   [`@stdlib/math/iter/special/sin`][@stdlib/math/iter/special/sin]: create an iterator which computes the sine of each iterated value.
--   [`@stdlib/math/iter/special/versin`][@stdlib/math/iter/special/versin]: create an iterator which computes the versed sine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/vercos`][@stdlib/math/base/special/vercos]</span><span class="delimiter">: </span><span class="description">compute the versed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the cosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/sin`][@stdlib/math/iter/special/sin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the sine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/versin`][@stdlib/math/iter/special/versin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed sine for each iterated value.</span>
 
 </section>
 

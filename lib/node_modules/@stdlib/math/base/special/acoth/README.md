@@ -86,10 +86,10 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acosh`][@stdlib/math/base/special/acosh]: compute the hyperbolic arccosine of a number.
--   [`@stdlib/math/base/special/acot`][@stdlib/math/base/special/acot]: compute the inverse cotangent.
--   [`@stdlib/math/base/special/asinh`][@stdlib/math/base/special/asinh]: compute the hyperbolic arcsine of a number.
--   [`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]: compute the hyperbolic arctangent of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/acosh`][@stdlib/math/base/special/acosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/acot`][@stdlib/math/base/special/acot]</span><span class="delimiter">: </span><span class="description">compute the inverse cotangent.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/asinh`][@stdlib/math/base/special/asinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arcsine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a number.</span>
 
 </section>
 

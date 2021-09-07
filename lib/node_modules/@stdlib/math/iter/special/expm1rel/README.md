@@ -133,9 +133,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/expm1rel`][@stdlib/math/base/special/expm1rel]: relative error exponential.
--   [`@stdlib/math/iter/special/exp`][@stdlib/math/iter/special/exp]: create an iterator which evaluates the natural exponential function for each iterated value.
--   [`@stdlib/math/iter/special/expm1`][@stdlib/math/iter/special/expm1]: create an iterator which computes `exp(x) - 1` for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/expm1rel`][@stdlib/math/base/special/expm1rel]</span><span class="delimiter">: </span><span class="description">relative error exponential.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/exp`][@stdlib/math/iter/special/exp]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural exponential function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/expm1`][@stdlib/math/iter/special/expm1]</span><span class="delimiter">: </span><span class="description">create an iterator which computes `exp(x) - 1` for each iterated value.</span>
 
 </section>
 

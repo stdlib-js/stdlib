@@ -168,7 +168,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/floorf`][@stdlib/math/base/special/floorf]: round a single-precision floating-point numeric value toward negative infinity.
+-   <span class="package-name">[`@stdlib/math/base/special/floorf`][@stdlib/math/base/special/floorf]</span><span class="delimiter">: </span><span class="description">round a single-precision floating-point numeric value toward negative infinity.</span>
 
 </section>
 

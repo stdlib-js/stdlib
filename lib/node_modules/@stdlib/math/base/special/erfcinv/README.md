@@ -117,9 +117,9 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/erf`][@stdlib/math/base/special/erf]: error function.
--   [`@stdlib/math/base/special/erfc`][@stdlib/math/base/special/erfc]: complementary error function.
--   [`@stdlib/math/base/special/erfinv`][@stdlib/math/base/special/erfinv]: inverse error function.
+-   <span class="package-name">[`@stdlib/math/base/special/erf`][@stdlib/math/base/special/erf]</span><span class="delimiter">: </span><span class="description">error function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/erfc`][@stdlib/math/base/special/erfc]</span><span class="delimiter">: </span><span class="description">complementary error function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/erfinv`][@stdlib/math/base/special/erfinv]</span><span class="delimiter">: </span><span class="description">inverse error function.</span>
 
 </section>
 

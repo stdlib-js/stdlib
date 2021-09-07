@@ -108,9 +108,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cceil`][@stdlib/math/base/special/cceil]: round a complex number toward positive infinity.
--   [`@stdlib/math/base/special/cfloorn`][@stdlib/math/base/special/cfloorn]: round a complex number to the nearest multiple of 10^n toward negative infinity.
--   [`@stdlib/math/base/special/cround`][@stdlib/math/base/special/cround]: round a complex number to the nearest integer.
+-   <span class="package-name">[`@stdlib/math/base/special/cceil`][@stdlib/math/base/special/cceil]</span><span class="delimiter">: </span><span class="description">round a complex number toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/cfloorn`][@stdlib/math/base/special/cfloorn]</span><span class="delimiter">: </span><span class="description">round a complex number to the nearest multiple of 10^n toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/cround`][@stdlib/math/base/special/cround]</span><span class="delimiter">: </span><span class="description">round a complex number to the nearest integer.</span>
 
 </section>
 

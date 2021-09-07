@@ -87,10 +87,10 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]: natural exponential function.
--   [`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]: natural logarithm.
--   [`@stdlib/math/base/special/log1mexp`][@stdlib/math/base/special/log1mexp]: evaluate the natural logarithm of 1-exp(-|x|).
--   [`@stdlib/math/base/special/log1p`][@stdlib/math/base/special/log1p]: evaluate the natural logarithm of 1+x.
+-   <span class="package-name">[`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]</span><span class="delimiter">: </span><span class="description">natural exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">natural logarithm.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/log1mexp`][@stdlib/math/base/special/log1mexp]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of 1-exp(-|x|).</span>
+-   <span class="package-name">[`@stdlib/math/base/special/log1p`][@stdlib/math/base/special/log1p]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of 1+x.</span>
 
 </section>
 

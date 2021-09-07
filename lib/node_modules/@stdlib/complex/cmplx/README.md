@@ -117,8 +117,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/complex/float64`][@stdlib/complex/float64]: 128-bit complex number.
--   [`@stdlib/complex/float32`][@stdlib/complex/float32]: 64-bit complex number.
+-   <span class="package-name">[`@stdlib/complex/float64`][@stdlib/complex/float64]</span><span class="delimiter">: </span><span class="description">128-bit complex number.</span>
+-   <span class="package-name">[`@stdlib/complex/float32`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
 
 </section>
 

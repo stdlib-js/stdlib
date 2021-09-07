@@ -91,9 +91,9 @@ bool = isCoprime( NaN, NaN );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-composite`][@stdlib/math/base/assert/is-composite]: test if a number is composite.
--   [`@stdlib/math/base/assert/is-prime`][@stdlib/math/base/assert/is-prime]: test if a number is prime.
--   [`@stdlib/math/base/special/gcd`][@stdlib/math/base/special/gcd]: compute the greatest common divisor (gcd).
+-   <span class="package-name">[`@stdlib/math/base/assert/is-composite`][@stdlib/math/base/assert/is-composite]</span><span class="delimiter">: </span><span class="description">test if a number is composite.</span>
+-   <span class="package-name">[`@stdlib/math/base/assert/is-prime`][@stdlib/math/base/assert/is-prime]</span><span class="delimiter">: </span><span class="description">test if a number is prime.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gcd`][@stdlib/math/base/special/gcd]</span><span class="delimiter">: </span><span class="description">compute the greatest common divisor (gcd).</span>
 
 </section>
 

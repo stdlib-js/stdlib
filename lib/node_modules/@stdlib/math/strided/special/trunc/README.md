@@ -173,10 +173,10 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/ceil`][@stdlib/math/strided/special/ceil]: round each element in a strided array toward positive infinity.
--   [`@stdlib/math/strided/special/dtrunc`][@stdlib/math/strided/special/dtrunc]: round each element in a double-precision floating-point strided array toward zero.
--   [`@stdlib/math/strided/special/floor`][@stdlib/math/strided/special/floor]: round each element in a strided array toward negative infinity.
--   [`@stdlib/math/strided/special/strunc`][@stdlib/math/strided/special/strunc]: round each element in a single-precision floating-point strided array toward zero.
+-   <span class="package-name">[`@stdlib/math/strided/special/ceil`][@stdlib/math/strided/special/ceil]</span><span class="delimiter">: </span><span class="description">round each element in a strided array toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/dtrunc`][@stdlib/math/strided/special/dtrunc]</span><span class="delimiter">: </span><span class="description">round each element in a double-precision floating-point strided array toward zero.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/floor`][@stdlib/math/strided/special/floor]</span><span class="delimiter">: </span><span class="description">round each element in a strided array toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/strunc`][@stdlib/math/strided/special/strunc]</span><span class="delimiter">: </span><span class="description">round each element in a single-precision floating-point strided array toward zero.</span>
 
 </section>
 

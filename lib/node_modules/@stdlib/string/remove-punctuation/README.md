@@ -47,23 +47,23 @@ var str = removePunctuation( 'Sun Tzu said: "A leader leads by example not by fo
 
 The function removes the following characters:
 
-|    description   |  value  |
-| :--------------: | :-----: |
-|    Apostrophe    | `` ` `` |
-|      Braces      |  `{ }`  |
-|     Brackets     |  `[ ]`  |
-|       Colon      |   `:`   |
-|       Comma      |   `,`   |
-| Exclamation Mark |   `!`   |
-|  Fraction Slash  |   `/`   |
-|    Guillemets    |  `< >`  |
-|    Parentheses   |  `( )`  |
-|      Period      |   `.`   |
-|     Semicolon    |   `;`   |
-|       Tilde      |   `~`   |
-|   Vertical Bar   |   `|`   |
-|   Question Mark  |   `?`   |
-|  Quotation Marks |  `' "`  |
+|    description   |  value  |     |
+| :--------------: | :-----: | --- |
+|    Apostrophe    | `` ` `` |     |
+|      Braces      |  `{ }`  |     |
+|     Brackets     |  `[ ]`  |     |
+|       Colon      |   `:`   |     |
+|       Comma      |   `,`   |     |
+| Exclamation Mark |   `!`   |     |
+|  Fraction Slash  |   `/`   |     |
+|    Guillemets    |  `< >`  |     |
+|    Parentheses   |  `( )`  |     |
+|      Period      |   `.`   |     |
+|     Semicolon    |   `;`   |     |
+|       Tilde      |   `~`   |     |
+|   Vertical Bar   |    \`   | \`  |
+|   Question Mark  |   `?`   |     |
+|  Quotation Marks |  `' "`  |     |
 
 </section>
 

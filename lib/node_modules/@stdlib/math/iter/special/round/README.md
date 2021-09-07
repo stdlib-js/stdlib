@@ -136,10 +136,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/round`][@stdlib/math/base/special/round]: round a numeric value to the nearest integer.
--   [`@stdlib/math/iter/special/ceil`][@stdlib/math/iter/special/ceil]: create an iterator which rounds each iterated value toward positive infinity.
--   [`@stdlib/math/iter/special/floor`][@stdlib/math/iter/special/floor]: create an iterator which rounds each iterated value toward negative infinity.
--   [`@stdlib/math/iter/special/trunc`][@stdlib/math/iter/special/trunc]: create an iterator which rounds each iterated value toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/round`][@stdlib/math/base/special/round]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest integer.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/ceil`][@stdlib/math/iter/special/ceil]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/floor`][@stdlib/math/iter/special/floor]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/trunc`][@stdlib/math/iter/special/trunc]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value toward zero.</span>
 
 </section>
 

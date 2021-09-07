@@ -111,8 +111,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/complex/real`][@stdlib/complex/real]: return the real component of a complex number.
--   [`@stdlib/complex/reim`][@stdlib/complex/reim]: return the real and imaginary components of a complex number.
+-   <span class="package-name">[`@stdlib/complex/real`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a complex number.</span>
+-   <span class="package-name">[`@stdlib/complex/reim`][@stdlib/complex/reim]</span><span class="delimiter">: </span><span class="description">return the real and imaginary components of a complex number.</span>
 
 </section>
 

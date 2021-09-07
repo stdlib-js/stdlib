@@ -134,11 +134,11 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acoth`][@stdlib/math/base/special/acoth]: compute the inverse hyperbolic cotangent.
--   [`@stdlib/math/iter/special/acosh`][@stdlib/math/iter/special/acosh]: create an iterator which computes the hyperbolic arccosine of each iterated value.
--   [`@stdlib/math/iter/special/acot`][@stdlib/math/iter/special/acot]: create an iterator which computes the inverse cotangent of each iterated value.
--   [`@stdlib/math/iter/special/asinh`][@stdlib/math/iter/special/asinh]: create an iterator which computes the hyperbolic arcsine of each iterated value.
--   [`@stdlib/math/iter/special/atanh`][@stdlib/math/iter/special/atanh]: create an iterator which computes the hyperbolic arctangent of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/acoth`][@stdlib/math/base/special/acoth]</span><span class="delimiter">: </span><span class="description">compute the inverse hyperbolic cotangent.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/acosh`][@stdlib/math/iter/special/acosh]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the hyperbolic arccosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/acot`][@stdlib/math/iter/special/acot]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse cotangent of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/asinh`][@stdlib/math/iter/special/asinh]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the hyperbolic arcsine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/atanh`][@stdlib/math/iter/special/atanh]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the hyperbolic arctangent of each iterated value.</span>
 
 </section>
 

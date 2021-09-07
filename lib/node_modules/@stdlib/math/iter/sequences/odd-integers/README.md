@@ -158,8 +158,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/sequences/even-integers`][@stdlib/math/iter/sequences/even-integers]: create an iterator which generates an interleaved sequence of even integers.
--   [`@stdlib/math/iter/sequences/integers`][@stdlib/math/iter/sequences/integers]: create an iterator which generates an interleaved integer sequence.
+-   <span class="package-name">[`@stdlib/math/iter/sequences/even-integers`][@stdlib/math/iter/sequences/even-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates an interleaved sequence of even integers.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/integers`][@stdlib/math/iter/sequences/integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates an interleaved integer sequence.</span>
 
 </section>
 

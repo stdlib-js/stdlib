@@ -145,10 +145,10 @@ for ( i = 0; i < 79; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/binet`][@stdlib/math/base/special/binet]: evaluate Binet's formula extended to real numbers.
--   [`@stdlib/math/base/special/fibonacci-index`][@stdlib/math/base/special/fibonacci-index]: compute the Fibonacci number index.
--   [`@stdlib/math/base/special/lucas`][@stdlib/math/base/special/lucas]: compute the nth Lucas number.
--   [`@stdlib/math/base/special/negafibonacci`][@stdlib/math/base/special/negafibonacci]: compute the nth negaFibonacci number.
+-   <span class="package-name">[`@stdlib/math/base/special/binet`][@stdlib/math/base/special/binet]</span><span class="delimiter">: </span><span class="description">evaluate Binet's formula extended to real numbers.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/fibonacci-index`][@stdlib/math/base/special/fibonacci-index]</span><span class="delimiter">: </span><span class="description">compute the Fibonacci number index.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/lucas`][@stdlib/math/base/special/lucas]</span><span class="delimiter">: </span><span class="description">compute the nth Lucas number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/negafibonacci`][@stdlib/math/base/special/negafibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth negaFibonacci number.</span>
 
 </section>
 

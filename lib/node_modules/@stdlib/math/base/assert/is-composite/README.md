@@ -88,8 +88,8 @@ bool = isComposite( NaN );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-integer`][@stdlib/math/base/assert/is-integer]: test if a finite double-precision floating-point number is an integer.
--   [`@stdlib/math/base/assert/is-prime`][@stdlib/math/base/assert/is-prime]: test if a number is prime.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-integer`][@stdlib/math/base/assert/is-integer]</span><span class="delimiter">: </span><span class="description">test if a finite double-precision floating-point number is an integer.</span>
+-   <span class="package-name">[`@stdlib/math/base/assert/is-prime`][@stdlib/math/base/assert/is-prime]</span><span class="delimiter">: </span><span class="description">test if a number is prime.</span>
 
 </section>
 

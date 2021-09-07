@@ -114,10 +114,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]: round a double-precision floating-point number toward positive infinity.
--   [`@stdlib/math/base/special/floor`][@stdlib/math/base/special/floor]: round a double-precision floating-point number toward negative infinity.
--   [`@stdlib/math/base/special/roundn`][@stdlib/math/base/special/roundn]: round a numeric value to the nearest multiple of 10^n.
--   [`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]: round a double-precision floating-point number toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/ceil`][@stdlib/math/base/special/ceil]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floor`][@stdlib/math/base/special/floor]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/roundn`][@stdlib/math/base/special/roundn]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward zero.</span>
 
 </section>
 

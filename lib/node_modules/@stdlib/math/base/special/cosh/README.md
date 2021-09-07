@@ -85,9 +85,9 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cos`][@stdlib/math/base/special/cos]: compute the cosine of a number.
--   [`@stdlib/math/base/special/sinh`][@stdlib/math/base/special/sinh]: compute the hyperbolic sine of a number.
--   [`@stdlib/math/base/special/tanh`][@stdlib/math/base/special/tanh]: compute the hyperbolic tangent of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/cos`][@stdlib/math/base/special/cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sinh`][@stdlib/math/base/special/sinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic sine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/tanh`][@stdlib/math/base/special/tanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic tangent of a number.</span>
 
 </section>
 

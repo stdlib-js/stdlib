@@ -300,8 +300,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dinv`][@stdlib/math/strided/special/dinv]: compute the multiplicative inverse for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/smskinv`][@stdlib/math/strided/special/smskinv]: compute the multiplicative inverse for each element in a single-precision floating-point strided array according to a strided mask array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dinv`][@stdlib/math/strided/special/dinv]</span><span class="delimiter">: </span><span class="description">compute the multiplicative inverse for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/smskinv`][@stdlib/math/strided/special/smskinv]</span><span class="delimiter">: </span><span class="description">compute the multiplicative inverse for each element in a single-precision floating-point strided array according to a strided mask array.</span>
 
 </section>
 

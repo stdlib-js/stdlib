@@ -133,8 +133,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cosm1`][@stdlib/math/base/special/cosm1]: compute the cosine of a number minus one.
--   [`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]: create an iterator which computes the cosine of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/cosm1`][@stdlib/math/base/special/cosm1]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number minus one.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the cosine of each iterated value.</span>
 
 </section>
 

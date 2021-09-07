@@ -189,9 +189,9 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/abs`][@stdlib/math/base/special/abs]: compute the absolute value of a double-precision floating-point number.
--   [`@stdlib/math/base/special/abs2f`][@stdlib/math/base/special/abs2f]: compute the squared absolute value of a single-precision floating-point number.
--   [`@stdlib/math/base/special/labs`][@stdlib/math/base/special/labs]: compute an absolute value of a signed 32-bit integer.
+-   <span class="package-name">[`@stdlib/math/base/special/abs`][@stdlib/math/base/special/abs]</span><span class="delimiter">: </span><span class="description">compute the absolute value of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/abs2f`][@stdlib/math/base/special/abs2f]</span><span class="delimiter">: </span><span class="description">compute the squared absolute value of a single-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/labs`][@stdlib/math/base/special/labs]</span><span class="delimiter">: </span><span class="description">compute an absolute value of a signed 32-bit integer.</span>
 
 </section>
 

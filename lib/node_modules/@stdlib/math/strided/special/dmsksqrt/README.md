@@ -300,10 +300,10 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dmskcbrt`][@stdlib/math/strided/special/dmskcbrt]: compute the cube root for each element in a double-precision floating-point strided array according to a strided mask array.
--   [`@stdlib/math/strided/special/dmskrsqrt`][@stdlib/math/strided/special/dmskrsqrt]: compute the reciprocal square root for each element in a double-precision floating-point strided array according to a strided mask array.
--   [`@stdlib/math/strided/special/dsqrt`][@stdlib/math/strided/special/dsqrt]: compute the principal square root for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/smsksqrt`][@stdlib/math/strided/special/smsksqrt]: compute the principal square root for each element in a single-precision floating-point strided array according to a strided mask array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dmskcbrt`][@stdlib/math/strided/special/dmskcbrt]</span><span class="delimiter">: </span><span class="description">compute the cube root for each element in a double-precision floating-point strided array according to a strided mask array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/dmskrsqrt`][@stdlib/math/strided/special/dmskrsqrt]</span><span class="delimiter">: </span><span class="description">compute the reciprocal square root for each element in a double-precision floating-point strided array according to a strided mask array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/dsqrt`][@stdlib/math/strided/special/dsqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/smsksqrt`][@stdlib/math/strided/special/smsksqrt]</span><span class="delimiter">: </span><span class="description">compute the principal square root for each element in a single-precision floating-point strided array according to a strided mask array.</span>
 
 </section>
 

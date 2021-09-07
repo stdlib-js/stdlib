@@ -97,11 +97,11 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceiln`][@stdlib/math/base/special/ceiln]: round a numeric value to the nearest multiple of 10^n toward positive infinity.
--   [`@stdlib/math/base/special/floorn`][@stdlib/math/base/special/floorn]: round a numeric value to the nearest multiple of 10^n toward negative infinity.
--   [`@stdlib/math/base/special/roundn`][@stdlib/math/base/special/roundn]: round a numeric value to the nearest multiple of 10^n.
--   [`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]: round a double-precision floating-point number toward zero.
--   [`@stdlib/math/base/special/truncb`][@stdlib/math/base/special/truncb]: round a numeric value to the nearest multiple of b^n toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/ceiln`][@stdlib/math/base/special/ceiln]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floorn`][@stdlib/math/base/special/floorn]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/roundn`][@stdlib/math/base/special/roundn]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward zero.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/truncb`][@stdlib/math/base/special/truncb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward zero.</span>
 
 </section>
 

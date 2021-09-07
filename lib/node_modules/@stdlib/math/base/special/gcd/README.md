@@ -136,7 +136,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/lcm`][@stdlib/math/base/special/lcm]: compute the least common multiple (lcm).
+-   <span class="package-name">[`@stdlib/math/base/special/lcm`][@stdlib/math/base/special/lcm]</span><span class="delimiter">: </span><span class="description">compute the least common multiple (lcm).</span>
 
 </section>
 

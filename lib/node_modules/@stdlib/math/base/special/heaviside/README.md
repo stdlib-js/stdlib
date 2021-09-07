@@ -155,7 +155,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ramp`][@stdlib/math/base/special/ramp]: evaluate the ramp function.
+-   <span class="package-name">[`@stdlib/math/base/special/ramp`][@stdlib/math/base/special/ramp]</span><span class="delimiter">: </span><span class="description">evaluate the ramp function.</span>
 
 </section>
 

@@ -158,8 +158,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/sequences/fourth-powers`][@stdlib/math/iter/sequences/fourth-powers]: create an iterator which generates a sequence of fourth powers.
--   [`@stdlib/math/iter/sequences/squares`][@stdlib/math/iter/sequences/squares]: create an iterator which generates a sequence of squares.
+-   <span class="package-name">[`@stdlib/math/iter/sequences/fourth-powers`][@stdlib/math/iter/sequences/fourth-powers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of fourth powers.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/squares`][@stdlib/math/iter/sequences/squares]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of squares.</span>
 
 </section>
 

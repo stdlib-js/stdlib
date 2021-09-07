@@ -300,9 +300,9 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dmskabs`][@stdlib/math/strided/special/dmskabs]: compute the absolute value for each element in a double-precision floating-point strided array according to a strided mask array.
--   [`@stdlib/math/strided/special/sabs`][@stdlib/math/strided/special/sabs]: compute the absolute value for each element in a single-precision floating-point strided array.
--   [`@stdlib/math/strided/special/smskabs2`][@stdlib/math/strided/special/smskabs2]: compute the squared absolute value for each element in a single-precision floating-point strided array according to a strided mask array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dmskabs`][@stdlib/math/strided/special/dmskabs]</span><span class="delimiter">: </span><span class="description">compute the absolute value for each element in a double-precision floating-point strided array according to a strided mask array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sabs`][@stdlib/math/strided/special/sabs]</span><span class="delimiter">: </span><span class="description">compute the absolute value for each element in a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/smskabs2`][@stdlib/math/strided/special/smskabs2]</span><span class="delimiter">: </span><span class="description">compute the squared absolute value for each element in a single-precision floating-point strided array according to a strided mask array.</span>
 
 </section>
 

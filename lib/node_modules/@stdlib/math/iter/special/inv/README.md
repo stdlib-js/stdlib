@@ -136,8 +136,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/inv`][@stdlib/math/base/special/inv]: compute the multiplicative inverse of a double-precision floating-point number.
--   [`@stdlib/math/iter/special/pow`][@stdlib/math/iter/special/pow]: create an iterator which evaluates the exponential function.
+-   <span class="package-name">[`@stdlib/math/base/special/inv`][@stdlib/math/base/special/inv]</span><span class="delimiter">: </span><span class="description">compute the multiplicative inverse of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/pow`][@stdlib/math/iter/special/pow]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the exponential function.</span>
 
 </section>
 

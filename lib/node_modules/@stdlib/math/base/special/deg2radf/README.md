@@ -167,7 +167,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/deg2rad`][@stdlib/math/base/special/deg2rad]: convert an angle from degrees to radians.
+-   <span class="package-name">[`@stdlib/math/base/special/deg2rad`][@stdlib/math/base/special/deg2rad]</span><span class="delimiter">: </span><span class="description">convert an angle from degrees to radians.</span>
 
 </section>
 

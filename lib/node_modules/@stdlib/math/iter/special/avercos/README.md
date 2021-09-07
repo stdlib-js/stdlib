@@ -138,9 +138,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/avercos`][@stdlib/math/base/special/avercos]: compute the inverse versed cosine.
--   [`@stdlib/math/iter/special/aversin`][@stdlib/math/iter/special/aversin]: create an iterator which computes the inverse versed sine of each iterated value.
--   [`@stdlib/math/iter/special/versin`][@stdlib/math/iter/special/versin]: create an iterator which computes the versed sine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/avercos`][@stdlib/math/base/special/avercos]</span><span class="delimiter">: </span><span class="description">compute the inverse versed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/aversin`][@stdlib/math/iter/special/aversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse versed sine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/versin`][@stdlib/math/iter/special/versin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed sine for each iterated value.</span>
 
 </section>
 

@@ -108,7 +108,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/falling-factorial`][@stdlib/math/base/special/falling-factorial]: compute the falling factorial.
+-   <span class="package-name">[`@stdlib/math/base/special/falling-factorial`][@stdlib/math/base/special/falling-factorial]</span><span class="delimiter">: </span><span class="description">compute the falling factorial.</span>
 
 </section>
 

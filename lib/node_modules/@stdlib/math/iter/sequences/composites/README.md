@@ -158,9 +158,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/sequences/integers`][@stdlib/math/iter/sequences/integers]: create an iterator which generates an interleaved integer sequence.
--   [`@stdlib/math/iter/sequences/positive-integers`][@stdlib/math/iter/sequences/positive-integers]: create an iterator which generates a positive integer sequence.
--   [`@stdlib/math/iter/sequences/primes`][@stdlib/math/iter/sequences/primes]: create an iterator which generates a sequence of prime numbers.
+-   <span class="package-name">[`@stdlib/math/iter/sequences/integers`][@stdlib/math/iter/sequences/integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates an interleaved integer sequence.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/positive-integers`][@stdlib/math/iter/sequences/positive-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a positive integer sequence.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/primes`][@stdlib/math/iter/sequences/primes]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of prime numbers.</span>
 
 </section>
 

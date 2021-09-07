@@ -71,7 +71,7 @@ bool = isnanf( 5.0 );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-nan`][@stdlib/math/base/assert/is-nan]: test if a double-precision floating-point numeric value is NaN.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-nan`][@stdlib/math/base/assert/is-nan]</span><span class="delimiter">: </span><span class="description">test if a double-precision floating-point numeric value is NaN.</span>
 
 </section>
 

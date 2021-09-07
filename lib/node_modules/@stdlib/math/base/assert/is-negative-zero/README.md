@@ -83,7 +83,7 @@ bool = isNegativeZero( NaN );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-positive-zero`][@stdlib/math/base/assert/is-positive-zero]: test if a double-precision floating-point numeric value is positive zero.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-positive-zero`][@stdlib/math/base/assert/is-positive-zero]</span><span class="delimiter">: </span><span class="description">test if a double-precision floating-point numeric value is positive zero.</span>
 
 </section>
 

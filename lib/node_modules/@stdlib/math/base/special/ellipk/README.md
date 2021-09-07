@@ -131,7 +131,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ellipe`][@stdlib/math/base/special/ellipe]: compute the complete elliptic integral of the second kind.
+-   <span class="package-name">[`@stdlib/math/base/special/ellipe`][@stdlib/math/base/special/ellipe]</span><span class="delimiter">: </span><span class="description">compute the complete elliptic integral of the second kind.</span>
 
 </section>
 

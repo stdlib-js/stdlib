@@ -108,7 +108,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/rising-factorial`][@stdlib/math/base/special/rising-factorial]: compute the rising factorial.
+-   <span class="package-name">[`@stdlib/math/base/special/rising-factorial`][@stdlib/math/base/special/rising-factorial]</span><span class="delimiter">: </span><span class="description">compute the rising factorial.</span>
 
 </section>
 

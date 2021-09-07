@@ -118,8 +118,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/complex/imag`][@stdlib/complex/imag]: return the imaginary component of a complex number.
--   [`@stdlib/complex/real`][@stdlib/complex/real]: return the real component of a complex number.
+-   <span class="package-name">[`@stdlib/complex/imag`][@stdlib/complex/imag]</span><span class="delimiter">: </span><span class="description">return the imaginary component of a complex number.</span>
+-   <span class="package-name">[`@stdlib/complex/real`][@stdlib/complex/real]</span><span class="delimiter">: </span><span class="description">return the real component of a complex number.</span>
 
 </section>
 

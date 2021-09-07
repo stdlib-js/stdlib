@@ -136,8 +136,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/factorial`][@stdlib/math/base/special/factorial]: evaluate a factorial.
--   [`@stdlib/math/iter/special/factorialln`][@stdlib/math/iter/special/factorialln]: create an iterator which evaluates the natural logarithm of the factorial function for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/factorial`][@stdlib/math/base/special/factorial]</span><span class="delimiter">: </span><span class="description">evaluate a factorial.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/factorialln`][@stdlib/math/iter/special/factorialln]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of the factorial function for each iterated value.</span>
 
 </section>
 

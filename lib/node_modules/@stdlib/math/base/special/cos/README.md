@@ -83,10 +83,10 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cospi`][@stdlib/math/base/special/cospi]: compute cos(πx).
--   [`@stdlib/math/base/special/cosm1`][@stdlib/math/base/special/cosm1]: compute the cosine of a number minus one.
--   [`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]: compute the sine of a number.
--   [`@stdlib/math/base/special/tan`][@stdlib/math/base/special/tan]: evaluate the tangent of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/cospi`][@stdlib/math/base/special/cospi]</span><span class="delimiter">: </span><span class="description">compute cos(πx).</span>
+-   <span class="package-name">[`@stdlib/math/base/special/cosm1`][@stdlib/math/base/special/cosm1]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number minus one.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/tan`][@stdlib/math/base/special/tan]</span><span class="delimiter">: </span><span class="description">evaluate the tangent of a number.</span>
 
 </section>
 

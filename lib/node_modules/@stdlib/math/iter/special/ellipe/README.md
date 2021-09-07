@@ -133,8 +133,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ellipe`][@stdlib/math/base/special/ellipe]: compute the complete elliptic integral of the second kind.
--   [`@stdlib/math/iter/special/ellipk`][@stdlib/math/iter/special/ellipk]: create an iterator which computes the complete elliptic integral of the first kind for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/ellipe`][@stdlib/math/base/special/ellipe]</span><span class="delimiter">: </span><span class="description">compute the complete elliptic integral of the second kind.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/ellipk`][@stdlib/math/iter/special/ellipk]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the complete elliptic integral of the first kind for each iterated value.</span>
 
 </section>
 

@@ -165,8 +165,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/atan2`][@stdlib/math/base/special/atan2]: compute the angle in the plane (in radians) between the positive x-axis and the ray from (0,0) to the point (x,y).
--   [`@stdlib/math/iter/special/atan`][@stdlib/math/iter/special/atan]: create an iterator which computes the arctangent of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/atan2`][@stdlib/math/base/special/atan2]</span><span class="delimiter">: </span><span class="description">compute the angle in the plane (in radians) between the positive x-axis and the ray from (0,0) to the point (x,y).</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/atan`][@stdlib/math/iter/special/atan]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the arctangent of each iterated value.</span>
 
 </section>
 

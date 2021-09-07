@@ -138,8 +138,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cospi`][@stdlib/math/base/special/cospi]: compute cos(πx).
--   [`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]: create an iterator which computes the cosine of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/cospi`][@stdlib/math/base/special/cospi]</span><span class="delimiter">: </span><span class="description">compute cos(πx).</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/cos`][@stdlib/math/iter/special/cos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the cosine of each iterated value.</span>
 
 </section>
 

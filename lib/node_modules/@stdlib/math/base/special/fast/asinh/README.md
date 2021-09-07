@@ -115,7 +115,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/asinh`][@stdlib/math/base/special/asinh]: compute the hyperbolic arcsine of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/asinh`][@stdlib/math/base/special/asinh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arcsine of a number.</span>
 
 </section>
 

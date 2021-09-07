@@ -133,9 +133,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/covercos`][@stdlib/math/base/special/covercos]: compute the coversed cosine.
--   [`@stdlib/math/iter/special/coversin`][@stdlib/math/iter/special/coversin]: create an iterator which computes the coversed sine for each iterated value.
--   [`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]: create an iterator which computes the versed cosine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/covercos`][@stdlib/math/base/special/covercos]</span><span class="delimiter">: </span><span class="description">compute the coversed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/coversin`][@stdlib/math/iter/special/coversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the coversed sine for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed cosine for each iterated value.</span>
 
 </section>
 

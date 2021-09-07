@@ -118,10 +118,10 @@ bool = isNonNegativeInteger( NaN );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-integer`][@stdlib/math/base/assert/is-integer]: test if a finite double-precision floating-point number is an integer.
--   [`@stdlib/math/base/assert/is-negative-integer`][@stdlib/math/base/assert/is-negative-integer]: test if a finite double-precision floating-point number is a negative integer.
--   [`@stdlib/math/base/assert/is-nonpositive-integer`][@stdlib/math/base/assert/is-nonpositive-integer]: test if a finite double-precision floating-point number is a nonpositive integer.
--   [`@stdlib/math/base/assert/is-positive-integer`][@stdlib/math/base/assert/is-positive-integer]: test if a finite double-precision floating-point number is a positive integer.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-integer`][@stdlib/math/base/assert/is-integer]</span><span class="delimiter">: </span><span class="description">test if a finite double-precision floating-point number is an integer.</span>
+-   <span class="package-name">[`@stdlib/math/base/assert/is-negative-integer`][@stdlib/math/base/assert/is-negative-integer]</span><span class="delimiter">: </span><span class="description">test if a finite double-precision floating-point number is a negative integer.</span>
+-   <span class="package-name">[`@stdlib/math/base/assert/is-nonpositive-integer`][@stdlib/math/base/assert/is-nonpositive-integer]</span><span class="delimiter">: </span><span class="description">test if a finite double-precision floating-point number is a nonpositive integer.</span>
+-   <span class="package-name">[`@stdlib/math/base/assert/is-positive-integer`][@stdlib/math/base/assert/is-positive-integer]</span><span class="delimiter">: </span><span class="description">test if a finite double-precision floating-point number is a positive integer.</span>
 
 </section>
 

@@ -123,10 +123,10 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/gamma1pm1`][@stdlib/math/base/special/gamma1pm1]: compute gamma(x+1) - 1.
--   [`@stdlib/math/base/special/gammainc`][@stdlib/math/base/special/gammainc]: incomplete gamma function.
--   [`@stdlib/math/base/special/gammaincinv`][@stdlib/math/base/special/gammaincinv]: inverse incomplete gamma function.
--   [`@stdlib/math/base/special/gammaln`][@stdlib/math/base/special/gammaln]: natural logarithm of the gamma function.
+-   <span class="package-name">[`@stdlib/math/base/special/gamma1pm1`][@stdlib/math/base/special/gamma1pm1]</span><span class="delimiter">: </span><span class="description">compute gamma(x+1) - 1.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gammainc`][@stdlib/math/base/special/gammainc]</span><span class="delimiter">: </span><span class="description">incomplete gamma function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gammaincinv`][@stdlib/math/base/special/gammaincinv]</span><span class="delimiter">: </span><span class="description">inverse incomplete gamma function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gammaln`][@stdlib/math/base/special/gammaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the gamma function.</span>
 
 </section>
 

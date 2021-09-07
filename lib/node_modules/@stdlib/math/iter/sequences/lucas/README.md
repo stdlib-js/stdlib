@@ -171,9 +171,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/lucas`][@stdlib/math/base/special/lucas]: compute the nth Lucas number.
--   [`@stdlib/math/iter/sequences/fibonacci`][@stdlib/math/iter/sequences/fibonacci]: create an iterator which generates a Fibonacci sequence.
--   [`@stdlib/math/iter/sequences/negalucas`][@stdlib/math/iter/sequences/negalucas]: create an iterator which generates a negaLucas sequence.
+-   <span class="package-name">[`@stdlib/math/base/special/lucas`][@stdlib/math/base/special/lucas]</span><span class="delimiter">: </span><span class="description">compute the nth Lucas number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/fibonacci`][@stdlib/math/iter/sequences/fibonacci]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a Fibonacci sequence.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/negalucas`][@stdlib/math/iter/sequences/negalucas]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a negaLucas sequence.</span>
 
 </section>
 

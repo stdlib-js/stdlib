@@ -129,8 +129,8 @@ BeEp
 
 ## See Also
 
--   [`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]: uncapitalize the first character of a string.
--   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: convert a string to uppercase.
+-   <span class="package-name">[`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]</span><span class="delimiter">: </span><span class="description">uncapitalize the first character of a string.</span>
+-   <span class="package-name">[`@stdlib/string/uppercase`][@stdlib/string/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
 
 </section>
 

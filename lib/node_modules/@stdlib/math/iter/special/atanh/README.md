@@ -137,10 +137,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]: compute the hyperbolic arctangent of a number.
--   [`@stdlib/math/iter/special/acosh`][@stdlib/math/iter/special/acosh]: create an iterator which computes the hyperbolic arccosine of each iterated value.
--   [`@stdlib/math/iter/special/asinh`][@stdlib/math/iter/special/asinh]: create an iterator which computes the hyperbolic arcsine of each iterated value.
--   [`@stdlib/math/iter/special/atan`][@stdlib/math/iter/special/atan]: create an iterator which computes the arctangent of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/acosh`][@stdlib/math/iter/special/acosh]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the hyperbolic arccosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/asinh`][@stdlib/math/iter/special/asinh]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the hyperbolic arcsine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/atan`][@stdlib/math/iter/special/atan]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the arctangent of each iterated value.</span>
 
 </section>
 

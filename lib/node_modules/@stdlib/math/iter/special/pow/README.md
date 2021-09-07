@@ -165,9 +165,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/pow`][@stdlib/math/base/special/pow]: exponential function.
--   [`@stdlib/math/iter/special/exp`][@stdlib/math/iter/special/exp]: create an iterator which evaluates the natural exponential function for each iterated value.
--   [`@stdlib/math/iter/special/log`][@stdlib/math/iter/special/log]: create an iterator which computes the base `b` logarithm.
+-   <span class="package-name">[`@stdlib/math/base/special/pow`][@stdlib/math/base/special/pow]</span><span class="delimiter">: </span><span class="description">exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/exp`][@stdlib/math/iter/special/exp]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural exponential function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log`][@stdlib/math/iter/special/log]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the base `b` logarithm.</span>
 
 </section>
 

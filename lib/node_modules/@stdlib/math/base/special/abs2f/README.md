@@ -178,8 +178,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/abs2`][@stdlib/math/base/special/abs2]: compute the squared absolute value of a double-precision floating-point number.
--   [`@stdlib/math/base/special/absf`][@stdlib/math/base/special/absf]: compute the absolute value of a single-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/abs2`][@stdlib/math/base/special/abs2]</span><span class="delimiter">: </span><span class="description">compute the squared absolute value of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/absf`][@stdlib/math/base/special/absf]</span><span class="delimiter">: </span><span class="description">compute the absolute value of a single-precision floating-point number.</span>
 
 </section>
 

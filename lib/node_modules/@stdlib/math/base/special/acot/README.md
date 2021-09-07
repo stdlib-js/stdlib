@@ -76,8 +76,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acoth`][@stdlib/math/base/special/acoth]: compute the inverse hyperbolic cotangent.
--   [`@stdlib/math/base/special/atan`][@stdlib/math/base/special/atan]: compute the arctangent of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/acoth`][@stdlib/math/base/special/acoth]</span><span class="delimiter">: </span><span class="description">compute the inverse hyperbolic cotangent.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/atan`][@stdlib/math/base/special/atan]</span><span class="delimiter">: </span><span class="description">compute the arctangent of a number.</span>
 
 </section>
 

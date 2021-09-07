@@ -134,8 +134,8 @@ for ( i = 0; i < 79; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/fibonacci`][@stdlib/math/base/special/fibonacci]: compute the nth Fibonacci number.
--   [`@stdlib/math/base/special/negafibonacci`][@stdlib/math/base/special/negafibonacci]: compute the nth negaFibonacci number.
+-   <span class="package-name">[`@stdlib/math/base/special/fibonacci`][@stdlib/math/base/special/fibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth Fibonacci number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/negafibonacci`][@stdlib/math/base/special/negafibonacci]</span><span class="delimiter">: </span><span class="description">compute the nth negaFibonacci number.</span>
 
 </section>
 

@@ -166,9 +166,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/ops/divide`][@stdlib/math/iter/ops/divide]: create an iterator which performs element-wise division of two or more iterators.
--   [`@stdlib/math/iter/ops/multiply`][@stdlib/math/iter/ops/multiply]: create an iterator which performs element-wise multiplication of two or more iterators.
--   [`@stdlib/math/iter/ops/subtract`][@stdlib/math/iter/ops/subtract]: create an iterator which performs element-wise subtraction of two or more iterators.
+-   <span class="package-name">[`@stdlib/math/iter/ops/divide`][@stdlib/math/iter/ops/divide]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise division of two or more iterators.</span>
+-   <span class="package-name">[`@stdlib/math/iter/ops/multiply`][@stdlib/math/iter/ops/multiply]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise multiplication of two or more iterators.</span>
+-   <span class="package-name">[`@stdlib/math/iter/ops/subtract`][@stdlib/math/iter/ops/subtract]</span><span class="delimiter">: </span><span class="description">create an iterator which performs element-wise subtraction of two or more iterators.</span>
 
 </section>
 

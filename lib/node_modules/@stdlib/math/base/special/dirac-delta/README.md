@@ -109,7 +109,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/kronecker-delta`][@stdlib/math/base/special/kronecker-delta]: evaluate the Kronecker delta.
+-   <span class="package-name">[`@stdlib/math/base/special/kronecker-delta`][@stdlib/math/base/special/kronecker-delta]</span><span class="delimiter">: </span><span class="description">evaluate the Kronecker delta.</span>
 
 </section>
 

@@ -104,8 +104,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/imuldw`][@stdlib/math/base/special/imuldw]: compute the double word product of two signed 32-bit integers.
--   [`@stdlib/math/base/special/uimul`][@stdlib/math/base/special/uimul]: perform C-like multiplication of two unsigned 32-bit integers.
+-   <span class="package-name">[`@stdlib/math/base/special/imuldw`][@stdlib/math/base/special/imuldw]</span><span class="delimiter">: </span><span class="description">compute the double word product of two signed 32-bit integers.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/uimul`][@stdlib/math/base/special/uimul]</span><span class="delimiter">: </span><span class="description">perform C-like multiplication of two unsigned 32-bit integers.</span>
 
 </section>
 

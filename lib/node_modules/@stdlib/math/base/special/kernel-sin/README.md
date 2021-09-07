@@ -110,9 +110,9 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/kernel-cos`][@stdlib/math/base/special/kernel-cos]: compute the cosine of a number on `[-π/4, π/4]`.
--   [`@stdlib/math/base/special/kernel-tan`][@stdlib/math/base/special/kernel-tan]: compute the tangent of a number on `[-π/4, π/4]`.
--   [`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]: compute the sine of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/kernel-cos`][@stdlib/math/base/special/kernel-cos]</span><span class="delimiter">: </span><span class="description">compute the cosine of a number on `[-π/4, π/4]`.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/kernel-tan`][@stdlib/math/base/special/kernel-tan]</span><span class="delimiter">: </span><span class="description">compute the tangent of a number on `[-π/4, π/4]`.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sin`][@stdlib/math/base/special/sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number.</span>
 
 </section>
 

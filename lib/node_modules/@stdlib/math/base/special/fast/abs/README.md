@@ -118,7 +118,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/abs`][@stdlib/math/base/special/abs]: compute the absolute value of a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/abs`][@stdlib/math/base/special/abs]</span><span class="delimiter">: </span><span class="description">compute the absolute value of a double-precision floating-point number.</span>
 
 </section>
 

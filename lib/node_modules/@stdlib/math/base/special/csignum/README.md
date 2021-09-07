@@ -133,7 +133,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/signum`][@stdlib/math/base/special/signum]: evaluate the signum function for a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/signum`][@stdlib/math/base/special/signum]</span><span class="delimiter">: </span><span class="description">evaluate the signum function for a double-precision floating-point number.</span>
 
 </section>
 

@@ -163,7 +163,7 @@ false
 
 ## See Also
 
--   [`@stdlib/string/starts-with`][@stdlib/string/starts-with]: test if a string starts with the characters of another string.
+-   <span class="package-name">[`@stdlib/string/starts-with`][@stdlib/string/starts-with]</span><span class="delimiter">: </span><span class="description">test if a string starts with the characters of another string.</span>
 
 </section>
 

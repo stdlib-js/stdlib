@@ -133,9 +133,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/hacovercos`][@stdlib/math/base/special/hacovercos]: compute the half-value coversed cosine.
--   [`@stdlib/math/iter/special/covercos`][@stdlib/math/iter/special/covercos]: create an iterator which computes the coversed cosine for each iterated value.
--   [`@stdlib/math/iter/special/hacoversin`][@stdlib/math/iter/special/hacoversin]: create an iterator which computes the half-value coversed sine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/hacovercos`][@stdlib/math/base/special/hacovercos]</span><span class="delimiter">: </span><span class="description">compute the half-value coversed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/covercos`][@stdlib/math/iter/special/covercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the coversed cosine for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/hacoversin`][@stdlib/math/iter/special/hacoversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the half-value coversed sine for each iterated value.</span>
 
 </section>
 

@@ -133,8 +133,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/sinc`][@stdlib/math/base/special/sinc]: compute the normalized cardinal sine of a number.
--   [`@stdlib/math/iter/special/sin`][@stdlib/math/iter/special/sin]: create an iterator which computes the sine of each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/sinc`][@stdlib/math/base/special/sinc]</span><span class="delimiter">: </span><span class="description">compute the normalized cardinal sine of a number.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/sin`][@stdlib/math/iter/special/sin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the sine of each iterated value.</span>
 
 </section>
 

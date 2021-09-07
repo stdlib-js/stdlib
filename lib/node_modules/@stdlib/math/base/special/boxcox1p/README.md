@@ -132,9 +132,9 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/boxcox`][@stdlib/math/base/special/boxcox]: compute a one-parameter Box-Cox transformation.
--   [`@stdlib/math/base/special/boxcox1pinv`][@stdlib/math/base/special/boxcox1pinv]: compute the inverse of a one-parameter Box-Cox transformation for 1+x.
--   [`@stdlib/math/base/special/boxcoxinv`][@stdlib/math/base/special/boxcoxinv]: compute the inverse of a one-parameter Box-Cox transformation.
+-   <span class="package-name">[`@stdlib/math/base/special/boxcox`][@stdlib/math/base/special/boxcox]</span><span class="delimiter">: </span><span class="description">compute a one-parameter Box-Cox transformation.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/boxcox1pinv`][@stdlib/math/base/special/boxcox1pinv]</span><span class="delimiter">: </span><span class="description">compute the inverse of a one-parameter Box-Cox transformation for 1+x.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/boxcoxinv`][@stdlib/math/base/special/boxcoxinv]</span><span class="delimiter">: </span><span class="description">compute the inverse of a one-parameter Box-Cox transformation.</span>
 
 </section>
 

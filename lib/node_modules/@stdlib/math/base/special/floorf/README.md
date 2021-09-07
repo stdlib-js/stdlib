@@ -168,8 +168,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceilf`][@stdlib/math/base/special/ceilf]: round a single-precision floating-point number toward positive infinity.
--   [`@stdlib/math/base/special/floor`][@stdlib/math/base/special/floor]: round a double-precision floating-point number toward negative infinity.
+-   <span class="package-name">[`@stdlib/math/base/special/ceilf`][@stdlib/math/base/special/ceilf]</span><span class="delimiter">: </span><span class="description">round a single-precision floating-point number toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floor`][@stdlib/math/base/special/floor]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward negative infinity.</span>
 
 </section>
 

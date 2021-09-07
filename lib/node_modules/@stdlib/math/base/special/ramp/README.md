@@ -192,7 +192,7 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/heaviside`][@stdlib/math/base/special/heaviside]: evaluate the Heaviside function.
+-   <span class="package-name">[`@stdlib/math/base/special/heaviside`][@stdlib/math/base/special/heaviside]</span><span class="delimiter">: </span><span class="description">evaluate the Heaviside function.</span>
 
 </section>
 

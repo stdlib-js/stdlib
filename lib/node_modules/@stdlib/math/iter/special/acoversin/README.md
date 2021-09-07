@@ -138,11 +138,11 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acoversin`][@stdlib/math/base/special/acoversin]: compute the inverse coversed sine.
--   [`@stdlib/math/iter/special/acovercos`][@stdlib/math/iter/special/acovercos]: create an iterator which computes the inverse coversed cosine of each iterated value.
--   [`@stdlib/math/iter/special/aversin`][@stdlib/math/iter/special/aversin]: create an iterator which computes the inverse versed sine of each iterated value.
--   [`@stdlib/math/iter/special/coversin`][@stdlib/math/iter/special/coversin]: create an iterator which computes the coversed sine for each iterated value.
--   [`@stdlib/math/iter/special/versin`][@stdlib/math/iter/special/versin]: create an iterator which computes the versed sine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/acoversin`][@stdlib/math/base/special/acoversin]</span><span class="delimiter">: </span><span class="description">compute the inverse coversed sine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/acovercos`][@stdlib/math/iter/special/acovercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse coversed cosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/aversin`][@stdlib/math/iter/special/aversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse versed sine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/coversin`][@stdlib/math/iter/special/coversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the coversed sine for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/versin`][@stdlib/math/iter/special/versin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed sine for each iterated value.</span>
 
 </section>
 

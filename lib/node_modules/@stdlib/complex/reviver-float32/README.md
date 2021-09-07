@@ -118,9 +118,9 @@ bool = ( w.im === z.im );
 
 ## See Also
 
--   [`@stdlib/complex/float32`][@stdlib/complex/float32]: 64-bit complex number.
--   [`@stdlib/complex/reviver-float64`][@stdlib/complex/reviver-float64]: revive a JSON-serialized 128-bit complex number.
--   [`@stdlib/complex/reviver`][@stdlib/complex/reviver]: revive a JSON-serialized complex number.
+-   <span class="package-name">[`@stdlib/complex/float32`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
+-   <span class="package-name">[`@stdlib/complex/reviver-float64`][@stdlib/complex/reviver-float64]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized 128-bit complex number.</span>
+-   <span class="package-name">[`@stdlib/complex/reviver`][@stdlib/complex/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized complex number.</span>
 
 </section>
 

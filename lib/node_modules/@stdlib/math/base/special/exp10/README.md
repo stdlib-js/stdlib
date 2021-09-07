@@ -83,9 +83,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]: natural exponential function.
--   [`@stdlib/math/base/special/exp2`][@stdlib/math/base/special/exp2]: base 2 exponential function.
--   [`@stdlib/math/base/special/log10`][@stdlib/math/base/special/log10]: common logarithm (base ten).
+-   <span class="package-name">[`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]</span><span class="delimiter">: </span><span class="description">natural exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/exp2`][@stdlib/math/base/special/exp2]</span><span class="delimiter">: </span><span class="description">base 2 exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/log10`][@stdlib/math/base/special/log10]</span><span class="delimiter">: </span><span class="description">common logarithm (base ten).</span>
 
 </section>
 

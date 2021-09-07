@@ -137,10 +137,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/erfcinv`][@stdlib/math/base/special/erfcinv]: inverse complementary error function.
--   [`@stdlib/math/iter/special/erf`][@stdlib/math/iter/special/erf]: create an iterator which evaluates the error function for each iterated value.
--   [`@stdlib/math/iter/special/erfc`][@stdlib/math/iter/special/erfc]: create an iterator which evaluates the complementary error function for each iterated value.
--   [`@stdlib/math/iter/special/erfinv`][@stdlib/math/iter/special/erfinv]: create an iterator which evaluates the inverse error function for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/erfcinv`][@stdlib/math/base/special/erfcinv]</span><span class="delimiter">: </span><span class="description">inverse complementary error function.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/erf`][@stdlib/math/iter/special/erf]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the error function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/erfc`][@stdlib/math/iter/special/erfc]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the complementary error function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/erfinv`][@stdlib/math/iter/special/erfinv]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the inverse error function for each iterated value.</span>
 
 </section>
 

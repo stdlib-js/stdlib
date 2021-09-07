@@ -105,8 +105,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cabs`][@stdlib/math/base/special/cabs]: compute an absolute value of a complex number.
--   [`@stdlib/math/base/special/cphase`][@stdlib/math/base/special/cphase]: compute the argument of a complex number in radians.
+-   <span class="package-name">[`@stdlib/math/base/special/cabs`][@stdlib/math/base/special/cabs]</span><span class="delimiter">: </span><span class="description">compute an absolute value of a complex number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/cphase`][@stdlib/math/base/special/cphase]</span><span class="delimiter">: </span><span class="description">compute the argument of a complex number in radians.</span>
 
 </section>
 

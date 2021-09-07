@@ -145,7 +145,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/factorialln`][@stdlib/math/base/special/factorialln]: evaluate the natural logarithm of the factorial function.
+-   <span class="package-name">[`@stdlib/math/base/special/factorialln`][@stdlib/math/base/special/factorialln]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the factorial function.</span>
 
 </section>
 

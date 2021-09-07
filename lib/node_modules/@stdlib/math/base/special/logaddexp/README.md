@@ -94,8 +94,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]: natural exponential function.
--   [`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]: natural logarithm.
+-   <span class="package-name">[`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]</span><span class="delimiter">: </span><span class="description">natural exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/ln`][@stdlib/math/base/special/ln]</span><span class="delimiter">: </span><span class="description">natural logarithm.</span>
 
 </section>
 

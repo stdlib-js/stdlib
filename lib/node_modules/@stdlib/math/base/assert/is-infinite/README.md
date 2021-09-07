@@ -82,7 +82,7 @@ bool = isInfinite( NaN );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-finite`][@stdlib/math/base/assert/is-finite]: test if a double-precision floating-point numeric value is finite.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-finite`][@stdlib/math/base/assert/is-finite]</span><span class="delimiter">: </span><span class="description">test if a double-precision floating-point numeric value is finite.</span>
 
 </section>
 

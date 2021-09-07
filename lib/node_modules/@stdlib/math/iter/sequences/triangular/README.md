@@ -184,7 +184,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/sequences/squared-triangular`][@stdlib/math/iter/sequences/squared-triangular]: create an iterator which generates a sequence of squared triangular numbers.
+-   <span class="package-name">[`@stdlib/math/iter/sequences/squared-triangular`][@stdlib/math/iter/sequences/squared-triangular]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of squared triangular numbers.</span>
 
 </section>
 

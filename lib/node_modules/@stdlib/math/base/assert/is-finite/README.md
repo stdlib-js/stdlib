@@ -91,7 +91,7 @@ bool = isfinite( NaN );
 
 ## See Also
 
--   [`@stdlib/math/base/assert/is-infinite`][@stdlib/math/base/assert/is-infinite]: test if a double-precision floating-point numeric value is infinite.
+-   <span class="package-name">[`@stdlib/math/base/assert/is-infinite`][@stdlib/math/base/assert/is-infinite]</span><span class="delimiter">: </span><span class="description">test if a double-precision floating-point numeric value is infinite.</span>
 
 </section>
 

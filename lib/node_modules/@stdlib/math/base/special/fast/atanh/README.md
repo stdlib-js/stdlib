@@ -111,7 +111,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]: compute the hyperbolic arctangent of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/atanh`][@stdlib/math/base/special/atanh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arctangent of a number.</span>
 
 </section>
 

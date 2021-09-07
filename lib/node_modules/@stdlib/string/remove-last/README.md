@@ -127,7 +127,7 @@ bee
 
 ## See Also
 
--   [`@stdlib/string/remove-first`][@stdlib/string/remove-first]: remove the first character of a string.
+-   <span class="package-name">[`@stdlib/string/remove-first`][@stdlib/string/remove-first]</span><span class="delimiter">: </span><span class="description">remove the first character of a string.</span>
 
 </section>
 

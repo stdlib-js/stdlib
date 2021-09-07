@@ -109,10 +109,10 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acovercos`][@stdlib/math/base/special/acovercos]: compute the inverse coversed cosine.
--   [`@stdlib/math/base/special/aversin`][@stdlib/math/base/special/aversin]: compute the inverse versed sine.
--   [`@stdlib/math/base/special/coversin`][@stdlib/math/base/special/coversin]: compute the coversed sine.
--   [`@stdlib/math/base/special/versin`][@stdlib/math/base/special/versin]: compute the versed sine.
+-   <span class="package-name">[`@stdlib/math/base/special/acovercos`][@stdlib/math/base/special/acovercos]</span><span class="delimiter">: </span><span class="description">compute the inverse coversed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/aversin`][@stdlib/math/base/special/aversin]</span><span class="delimiter">: </span><span class="description">compute the inverse versed sine.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/coversin`][@stdlib/math/base/special/coversin]</span><span class="delimiter">: </span><span class="description">compute the coversed sine.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/versin`][@stdlib/math/base/special/versin]</span><span class="delimiter">: </span><span class="description">compute the versed sine.</span>
 
 </section>
 

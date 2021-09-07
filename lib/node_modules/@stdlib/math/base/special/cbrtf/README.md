@@ -174,8 +174,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/base/special/cbrt`][@stdlib/math/base/special/cbrt]: compute the cube root of a double-precision floating-point number.
--   [`@stdlib/math/base/special/sqrtf`][@stdlib/math/base/special/sqrtf]: compute the principal square root of a single-precision floating-point number.
+-   <span class="package-name">[`@stdlib/math/base/special/cbrt`][@stdlib/math/base/special/cbrt]</span><span class="delimiter">: </span><span class="description">compute the cube root of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/sqrtf`][@stdlib/math/base/special/sqrtf]</span><span class="delimiter">: </span><span class="description">compute the principal square root of a single-precision floating-point number.</span>
 
 </section>
 

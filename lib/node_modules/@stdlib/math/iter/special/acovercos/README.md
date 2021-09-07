@@ -138,11 +138,11 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acovercos`][@stdlib/math/base/special/acovercos]: compute the inverse coversed cosine.
--   [`@stdlib/math/iter/special/acoversin`][@stdlib/math/iter/special/acoversin]: create an iterator which computes the inverse coversed sine of each iterated value.
--   [`@stdlib/math/iter/special/avercos`][@stdlib/math/iter/special/avercos]: create an iterator which computes the inverse versed cosine of each iterated value.
--   [`@stdlib/math/iter/special/covercos`][@stdlib/math/iter/special/covercos]: create an iterator which computes the coversed cosine for each iterated value.
--   [`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]: create an iterator which computes the versed cosine for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/acovercos`][@stdlib/math/base/special/acovercos]</span><span class="delimiter">: </span><span class="description">compute the inverse coversed cosine.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/acoversin`][@stdlib/math/iter/special/acoversin]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse coversed sine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/avercos`][@stdlib/math/iter/special/avercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the inverse versed cosine of each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/covercos`][@stdlib/math/iter/special/covercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the coversed cosine for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/vercos`][@stdlib/math/iter/special/vercos]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the versed cosine for each iterated value.</span>
 
 </section>
 

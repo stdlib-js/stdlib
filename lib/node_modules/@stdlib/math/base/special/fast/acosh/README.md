@@ -102,7 +102,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/acosh`][@stdlib/math/base/special/acosh]: compute the hyperbolic arccosine of a number.
+-   <span class="package-name">[`@stdlib/math/base/special/acosh`][@stdlib/math/base/special/acosh]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosine of a number.</span>
 
 </section>
 

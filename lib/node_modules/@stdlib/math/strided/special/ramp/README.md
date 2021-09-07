@@ -195,8 +195,8 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dramp`][@stdlib/math/strided/special/dramp]: evaluate the ramp function for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/sramp`][@stdlib/math/strided/special/sramp]: evaluate the ramp function for each element in a single-precision floating-point strided array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dramp`][@stdlib/math/strided/special/dramp]</span><span class="delimiter">: </span><span class="description">evaluate the ramp function for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/sramp`][@stdlib/math/strided/special/sramp]</span><span class="delimiter">: </span><span class="description">evaluate the ramp function for each element in a single-precision floating-point strided array.</span>
 
 </section>
 

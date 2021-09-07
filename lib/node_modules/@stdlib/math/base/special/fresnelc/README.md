@@ -104,8 +104,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/fresnel`][@stdlib/math/base/special/fresnel]: compute the Fresnel integrals S(x) and C(x).
--   [`@stdlib/math/base/special/fresnels`][@stdlib/math/base/special/fresnels]: compute the Fresnel integral S(x).
+-   <span class="package-name">[`@stdlib/math/base/special/fresnel`][@stdlib/math/base/special/fresnel]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integrals S(x) and C(x).</span>
+-   <span class="package-name">[`@stdlib/math/base/special/fresnels`][@stdlib/math/base/special/fresnels]</span><span class="delimiter">: </span><span class="description">compute the Fresnel integral S(x).</span>
 
 </section>
 

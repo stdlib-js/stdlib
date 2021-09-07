@@ -136,11 +136,11 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/trunc2`][@stdlib/math/base/special/trunc2]: round a numeric value to the nearest power of two toward zero.
--   [`@stdlib/math/iter/special/ceil2`][@stdlib/math/iter/special/ceil2]: create an iterator which rounds each iterated value to the nearest power of two toward positive infinity.
--   [`@stdlib/math/iter/special/floor2`][@stdlib/math/iter/special/floor2]: create an iterator which rounds each iterated value to the nearest power of two toward negative infinity.
--   [`@stdlib/math/iter/special/round2`][@stdlib/math/iter/special/round2]: create an iterator which rounds each iterated value to the nearest power of two on a linear scale.
--   [`@stdlib/math/iter/special/trunc`][@stdlib/math/iter/special/trunc]: create an iterator which rounds each iterated value toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/trunc2`][@stdlib/math/base/special/trunc2]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of two toward zero.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/ceil2`][@stdlib/math/iter/special/ceil2]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of two toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/floor2`][@stdlib/math/iter/special/floor2]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of two toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/round2`][@stdlib/math/iter/special/round2]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value to the nearest power of two on a linear scale.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/trunc`][@stdlib/math/iter/special/trunc]</span><span class="delimiter">: </span><span class="description">create an iterator which rounds each iterated value toward zero.</span>
 
 </section>
 

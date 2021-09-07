@@ -133,9 +133,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/digamma`][@stdlib/math/base/special/digamma]: digamma function.
--   [`@stdlib/math/iter/special/gamma`][@stdlib/math/iter/special/gamma]: create an iterator which evaluates the gamma function for each iterated value.
--   [`@stdlib/math/iter/special/trigamma`][@stdlib/math/iter/special/trigamma]: create an iterator which evaluates the trigamma function for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/digamma`][@stdlib/math/base/special/digamma]</span><span class="delimiter">: </span><span class="description">digamma function.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/gamma`][@stdlib/math/iter/special/gamma]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the gamma function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/trigamma`][@stdlib/math/iter/special/trigamma]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the trigamma function for each iterated value.</span>
 
 </section>
 

@@ -118,8 +118,8 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]: gamma function.
--   [`@stdlib/math/base/special/gamma-lanczos-sum`][@stdlib/math/base/special/gamma-lanczos-sum]: calculate the Lanczos sum for the approximation of the gamma function.
+-   <span class="package-name">[`@stdlib/math/base/special/gamma`][@stdlib/math/base/special/gamma]</span><span class="delimiter">: </span><span class="description">gamma function.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/gamma-lanczos-sum`][@stdlib/math/base/special/gamma-lanczos-sum]</span><span class="delimiter">: </span><span class="description">calculate the Lanczos sum for the approximation of the gamma function.</span>
 
 </section>
 

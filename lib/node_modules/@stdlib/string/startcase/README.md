@@ -133,8 +133,8 @@ Beep Boop Foo Bar
 
 ## See Also
 
--   [`@stdlib/string/lowercase`][@stdlib/string/lowercase]: convert a string to lowercase.
--   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: convert a string to uppercase.
+-   <span class="package-name">[`@stdlib/string/lowercase`][@stdlib/string/lowercase]</span><span class="delimiter">: </span><span class="description">convert a string to lowercase.</span>
+-   <span class="package-name">[`@stdlib/string/uppercase`][@stdlib/string/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
 
 </section>
 

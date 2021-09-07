@@ -133,7 +133,7 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/logit`][@stdlib/math/base/special/logit]: logit function.
+-   <span class="package-name">[`@stdlib/math/base/special/logit`][@stdlib/math/base/special/logit]</span><span class="delimiter">: </span><span class="description">logit function.</span>
 
 </section>
 

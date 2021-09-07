@@ -273,8 +273,8 @@ int main() {
 
 ## See Also
 
--   [`@stdlib/math/strided/special/dramp`][@stdlib/math/strided/special/dramp]: evaluate the ramp function for each element in a double-precision floating-point strided array.
--   [`@stdlib/math/strided/special/ramp`][@stdlib/math/strided/special/ramp]: evaluate the ramp function for each element in a strided array.
+-   <span class="package-name">[`@stdlib/math/strided/special/dramp`][@stdlib/math/strided/special/dramp]</span><span class="delimiter">: </span><span class="description">evaluate the ramp function for each element in a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/math/strided/special/ramp`][@stdlib/math/strided/special/ramp]</span><span class="delimiter">: </span><span class="description">evaluate the ramp function for each element in a strided array.</span>
 
 </section>
 

@@ -147,8 +147,8 @@ for ( i = -77; i < 78; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/tools/evalpoly`][@stdlib/math/base/tools/evalpoly]: evaluate a polynomial.
--   [`@stdlib/math/base/tools/lucaspoly`][@stdlib/math/base/tools/lucaspoly]: evaluate a Lucas polynomial.
+-   <span class="package-name">[`@stdlib/math/base/tools/evalpoly`][@stdlib/math/base/tools/evalpoly]</span><span class="delimiter">: </span><span class="description">evaluate a polynomial.</span>
+-   <span class="package-name">[`@stdlib/math/base/tools/lucaspoly`][@stdlib/math/base/tools/lucaspoly]</span><span class="delimiter">: </span><span class="description">evaluate a Lucas polynomial.</span>
 
 </section>
 

@@ -136,11 +136,11 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]: natural exponential function.
--   [`@stdlib/math/iter/special/exp10`][@stdlib/math/iter/special/exp10]: create an iterator which evaluates the base 10 exponential function for each iterated value.
--   [`@stdlib/math/iter/special/exp2`][@stdlib/math/iter/special/exp2]: create an iterator which evaluates the base 2 exponential function for each iterated value.
--   [`@stdlib/math/iter/special/expm1`][@stdlib/math/iter/special/expm1]: create an iterator which computes `exp(x) - 1` for each iterated value.
--   [`@stdlib/math/iter/special/ln`][@stdlib/math/iter/special/ln]: create an iterator which evaluates the natural logarithm for each iterated value.
+-   <span class="package-name">[`@stdlib/math/base/special/exp`][@stdlib/math/base/special/exp]</span><span class="delimiter">: </span><span class="description">natural exponential function.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/exp10`][@stdlib/math/iter/special/exp10]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the base 10 exponential function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/exp2`][@stdlib/math/iter/special/exp2]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the base 2 exponential function for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/expm1`][@stdlib/math/iter/special/expm1]</span><span class="delimiter">: </span><span class="description">create an iterator which computes `exp(x) - 1` for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/ln`][@stdlib/math/iter/special/ln]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm for each iterated value.</span>
 
 </section>
 

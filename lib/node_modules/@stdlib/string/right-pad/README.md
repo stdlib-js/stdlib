@@ -153,8 +153,8 @@ boop%%%%
 
 ## See Also
 
--   [`@stdlib/string/left-pad`][@stdlib/string/left-pad]: left pad a string.
--   [`@stdlib/string/pad`][@stdlib/string/pad]: pad a string.
+-   <span class="package-name">[`@stdlib/string/left-pad`][@stdlib/string/left-pad]</span><span class="delimiter">: </span><span class="description">left pad a string.</span>
+-   <span class="package-name">[`@stdlib/string/pad`][@stdlib/string/pad]</span><span class="delimiter">: </span><span class="description">pad a string.</span>
 
 </section>
 

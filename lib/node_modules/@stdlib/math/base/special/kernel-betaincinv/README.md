@@ -93,7 +93,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/betaincinv`][@stdlib/math/base/special/betaincinv]: inverse incomplete beta function.
+-   <span class="package-name">[`@stdlib/math/base/special/betaincinv`][@stdlib/math/base/special/betaincinv]</span><span class="delimiter">: </span><span class="description">inverse incomplete beta function.</span>
 
 </section>
 

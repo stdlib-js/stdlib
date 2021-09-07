@@ -109,10 +109,10 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceil2`][@stdlib/math/base/special/ceil2]: round a numeric value to the nearest power of two toward positive infinity.
--   [`@stdlib/math/base/special/floor`][@stdlib/math/base/special/floor]: round a double-precision floating-point number toward negative infinity.
--   [`@stdlib/math/base/special/floor10`][@stdlib/math/base/special/floor10]: round a numeric value to the nearest power of 10 toward negative infinity.
--   [`@stdlib/math/base/special/round2`][@stdlib/math/base/special/round2]: round a numeric value to the nearest power of two on a linear scale.
+-   <span class="package-name">[`@stdlib/math/base/special/ceil2`][@stdlib/math/base/special/ceil2]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of two toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floor`][@stdlib/math/base/special/floor]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floor10`][@stdlib/math/base/special/floor10]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of 10 toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/round2`][@stdlib/math/base/special/round2]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of two on a linear scale.</span>
 
 </section>
 

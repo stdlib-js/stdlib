@@ -160,12 +160,12 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/math/iter/sequences/even-integers`][@stdlib/math/iter/sequences/even-integers]: create an iterator which generates an interleaved sequence of even integers.
--   [`@stdlib/math/iter/sequences/integers`][@stdlib/math/iter/sequences/integers]: create an iterator which generates an interleaved integer sequence.
--   [`@stdlib/math/iter/sequences/negative-even-integers`][@stdlib/math/iter/sequences/negative-even-integers]: create an iterator which generates a sequence of negative even integers.
--   [`@stdlib/math/iter/sequences/nonnegative-even-integers`][@stdlib/math/iter/sequences/nonnegative-even-integers]: create an iterator which generates a sequence of nonnegative even integers.
--   [`@stdlib/math/iter/sequences/positive-integers`][@stdlib/math/iter/sequences/positive-integers]: create an iterator which generates a positive integer sequence.
--   [`@stdlib/math/iter/sequences/positive-odd-integers`][@stdlib/math/iter/sequences/positive-odd-integers]: create an iterator which generates a sequence of positive odd integers.
+-   <span class="package-name">[`@stdlib/math/iter/sequences/even-integers`][@stdlib/math/iter/sequences/even-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates an interleaved sequence of even integers.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/integers`][@stdlib/math/iter/sequences/integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates an interleaved integer sequence.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/negative-even-integers`][@stdlib/math/iter/sequences/negative-even-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of negative even integers.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/nonnegative-even-integers`][@stdlib/math/iter/sequences/nonnegative-even-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of nonnegative even integers.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/positive-integers`][@stdlib/math/iter/sequences/positive-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a positive integer sequence.</span>
+-   <span class="package-name">[`@stdlib/math/iter/sequences/positive-odd-integers`][@stdlib/math/iter/sequences/positive-odd-integers]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of positive odd integers.</span>
 
 </section>
 

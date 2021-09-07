@@ -101,11 +101,11 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceilb`][@stdlib/math/base/special/ceilb]: round a numeric value to the nearest multiple of b^n toward positive infinity.
--   [`@stdlib/math/base/special/floorb`][@stdlib/math/base/special/floorb]: round a numeric value to the nearest multiple of b^n toward negative infinity.
--   [`@stdlib/math/base/special/roundb`][@stdlib/math/base/special/roundb]: round a numeric value to the nearest multiple of b^n on a linear scale.
--   [`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]: round a double-precision floating-point number toward zero.
--   [`@stdlib/math/base/special/truncn`][@stdlib/math/base/special/truncn]: round a numeric value to the nearest multiple of 10^n toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/ceilb`][@stdlib/math/base/special/ceilb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floorb`][@stdlib/math/base/special/floorb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/roundb`][@stdlib/math/base/special/roundb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n on a linear scale.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward zero.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/truncn`][@stdlib/math/base/special/truncn]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of 10^n toward zero.</span>
 
 </section>
 

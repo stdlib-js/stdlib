@@ -124,11 +124,11 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/ceil10`][@stdlib/math/base/special/ceil10]: round a numeric value to the nearest power of 10 toward positive infinity.
--   [`@stdlib/math/base/special/floor10`][@stdlib/math/base/special/floor10]: round a numeric value to the nearest power of 10 toward negative infinity.
--   [`@stdlib/math/base/special/round10`][@stdlib/math/base/special/round10]: round a numeric value to the nearest power of 10 on a linear scale.
--   [`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]: round a double-precision floating-point number toward zero.
--   [`@stdlib/math/base/special/trunc2`][@stdlib/math/base/special/trunc2]: round a numeric value to the nearest power of two toward zero.
+-   <span class="package-name">[`@stdlib/math/base/special/ceil10`][@stdlib/math/base/special/ceil10]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of 10 toward positive infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/floor10`][@stdlib/math/base/special/floor10]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of 10 toward negative infinity.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/round10`][@stdlib/math/base/special/round10]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of 10 on a linear scale.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/trunc`][@stdlib/math/base/special/trunc]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward zero.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/trunc2`][@stdlib/math/base/special/trunc2]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of two toward zero.</span>
 
 </section>
 

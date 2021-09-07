@@ -103,7 +103,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/math/base/special/imul`][@stdlib/math/base/special/imul]: perform C-like multiplication of two signed 32-bit integers.
+-   <span class="package-name">[`@stdlib/math/base/special/imul`][@stdlib/math/base/special/imul]</span><span class="delimiter">: </span><span class="description">perform C-like multiplication of two signed 32-bit integers.</span>
 
 </section>
 
