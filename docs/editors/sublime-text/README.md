@@ -185,9 +185,9 @@ Copy the `completions/*.sublime-completions` and `snippets/*.sublime-snippet` fi
         ```
 
     -   [**SublimeLinter-json**][sublime-text-sublimelinter-json]: plugin which lints [JSON][json].
-    
+
     -   [**SublimeLinter-shellcheck**][sublime-text-sublimelinter-shellcheck]: plugin which provides an interface to [shellcheck][shellcheck] for linting files having "Shell-Unix-Generic" syntax (aka Shell Script).
-   
+
         If [shellcheck][shellcheck] was installed as a local project dependency (e.g., `make install-deps` on non-MacOS platforms per the project development guide), you need to configure [SublimeLinter3][sublime-text-sublimelinter3] to search the top-level `deps` directory for locally installed linter executables. For example, on Linux,
 
         ```text

@@ -431,7 +431,7 @@ Already an expert?
 -   Fork the repository.
 
 -   Clone the forked repository
-   
+
     ```bash
     $ git clone --depth=1 https://github.com/<username>/stdlib.git
     ```

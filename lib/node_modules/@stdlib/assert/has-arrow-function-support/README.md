@@ -32,7 +32,7 @@ var hasArrowFunctionSupport = require( '@stdlib/assert/has-arrow-function-suppor
 
 #### hasArrowFunctionSupport()
 
-Detects if a runtime environment supports ES2015 [`arrow functions`][mdn-arrow-function]`such as`( a, b ) => a + b`, `x => x`, or `( x ) => { return x\*x; }\`.
+Detects if a runtime environment supports ES2015 [`arrow functions`][mdn-arrow-function] such as `( a, b ) => a + b`, `x => x`, or `( x ) => { return x*x; }`.
 
 ```javascript
 var bool = hasArrowFunctionSupport();
