@@ -153,8 +153,8 @@ $ echo -n 'beep' | lpad --len 8
 
 ## See Also
 
--   [`@stdlib/string/pad`][@stdlib/string/pad]: pad a string.
--   [`@stdlib/string/right-pad`][@stdlib/string/right-pad]: right pad a string.
+-   <span class="package-name">[`@stdlib/string/pad`][@stdlib/string/pad]</span><span class="delimiter">: </span><span class="description">pad a string.</span>
+-   <span class="package-name">[`@stdlib/string/right-pad`][@stdlib/string/right-pad]</span><span class="delimiter">: </span><span class="description">right pad a string.</span>
 
 </section>
 
