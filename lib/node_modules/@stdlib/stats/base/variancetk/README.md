@@ -222,10 +222,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dvariancetk`][@stdlib/stats/base/dvariancetk]: calculate the variance of a double-precision floating-point strided array using a one-pass textbook algorithm.
--   [`@stdlib/stats/base/nanvariancetk`][@stdlib/stats/base/nanvariancetk]: calculate the variance of a strided array ignoring NaN values and using a one-pass textbook algorithm.
--   [`@stdlib/stats/base/stdevtk`][@stdlib/stats/base/stdevtk]: calculate the standard deviation of a strided array using a one-pass textbook algorithm.
--   [`@stdlib/stats/base/variance`][@stdlib/stats/base/variance]: calculate the variance of a strided array.
+-   <span class="package-name">[`@stdlib/stats/base/dvariancetk`][@stdlib/stats/base/dvariancetk]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array using a one-pass textbook algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvariancetk`][@stdlib/stats/base/nanvariancetk]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values and using a one-pass textbook algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdevtk`][@stdlib/stats/base/stdevtk]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array using a one-pass textbook algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/variance`][@stdlib/stats/base/variance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array.</span>
 
 </section>
 

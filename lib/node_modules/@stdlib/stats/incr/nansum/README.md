@@ -140,8 +140,8 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/nansumabs`][@stdlib/stats/incr/nansumabs]: compute a sum of absolute values incrementally, ignoring NaN values.
--   [`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]: compute a sum incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/nansumabs`][@stdlib/stats/incr/nansumabs]</span><span class="delimiter">: </span><span class="description">compute a sum of absolute values incrementally, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]</span><span class="delimiter">: </span><span class="description">compute a sum incrementally.</span>
 
 </section>
 

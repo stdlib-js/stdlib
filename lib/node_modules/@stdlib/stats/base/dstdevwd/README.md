@@ -229,11 +229,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanstdevwd`][@stdlib/stats/base/dnanstdevwd]: calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/dstdev`][@stdlib/stats/base/dstdev]: calculate the standard deviation of a double-precision floating-point strided array.
--   [`@stdlib/stats/base/dvariancewd`][@stdlib/stats/base/dvariancewd]: calculate the variance of a double-precision floating-point strided array using Welford's algorithm.
--   [`@stdlib/stats/base/sstdevwd`][@stdlib/stats/base/sstdevwd]: calculate the standard deviation of a single-precision floating-point strided array using Welford's algorithm.
--   [`@stdlib/stats/base/stdevwd`][@stdlib/stats/base/stdevwd]: calculate the standard deviation of a strided array using Welford's algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dnanstdevwd`][@stdlib/stats/base/dnanstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/dstdev`][@stdlib/stats/base/dstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/dvariancewd`][@stdlib/stats/base/dvariancewd]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sstdevwd`][@stdlib/stats/base/sstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdevwd`][@stdlib/stats/base/stdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array using Welford's algorithm.</span>
 
 </section>
 

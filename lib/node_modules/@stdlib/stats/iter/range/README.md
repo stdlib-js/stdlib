@@ -114,10 +114,10 @@ console.log( 'Range: %d.', v );
 
 ## See Also
 
--   [`@stdlib/stats/iter/max`][@stdlib/stats/iter/max]: compute the maximum value of all iterated values.
--   [`@stdlib/stats/iter/mean`][@stdlib/stats/iter/mean]: compute the arithmetic mean over all iterated values.
--   [`@stdlib/stats/iter/min`][@stdlib/stats/iter/min]: compute the minimum value of all iterated values.
--   [`@stdlib/stats/iter/mrange`][@stdlib/stats/iter/mrange]: create an iterator which iteratively computes a moving range.
+-   <span class="package-name">[`@stdlib/stats/iter/max`][@stdlib/stats/iter/max]</span><span class="delimiter">: </span><span class="description">compute the maximum value of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mean`][@stdlib/stats/iter/mean]</span><span class="delimiter">: </span><span class="description">compute the arithmetic mean over all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/min`][@stdlib/stats/iter/min]</span><span class="delimiter">: </span><span class="description">compute the minimum value of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mrange`][@stdlib/stats/iter/mrange]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving range.</span>
 
 </section>
 

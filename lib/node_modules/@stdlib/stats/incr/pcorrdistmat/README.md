@@ -207,8 +207,8 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]: compute a sample Pearson product-moment correlation distance.
--   [`@stdlib/stats/incr/pcorrmat`][@stdlib/stats/incr/pcorrmat]: compute a sample Pearson product-moment correlation matrix incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation distance.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/pcorrmat`][@stdlib/stats/incr/pcorrmat]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation matrix incrementally.</span>
 
 </section>
 

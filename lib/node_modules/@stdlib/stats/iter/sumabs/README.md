@@ -124,9 +124,9 @@ console.log( 'sumabs: %d.', s );
 
 ## See Also
 
--   [`@stdlib/stats/iter/meanabs`][@stdlib/stats/iter/meanabs]: compute the arithmetic mean of absolute values for all iterated values.
--   [`@stdlib/stats/iter/msumabs`][@stdlib/stats/iter/msumabs]: create an iterator which iteratively computes a moving sum of absolute values.
--   [`@stdlib/stats/iter/sum`][@stdlib/stats/iter/sum]: compute the sum of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/meanabs`][@stdlib/stats/iter/meanabs]</span><span class="delimiter">: </span><span class="description">compute the arithmetic mean of absolute values for all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/msumabs`][@stdlib/stats/iter/msumabs]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving sum of absolute values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/sum`][@stdlib/stats/iter/sum]</span><span class="delimiter">: </span><span class="description">compute the sum of all iterated values.</span>
 
 </section>
 

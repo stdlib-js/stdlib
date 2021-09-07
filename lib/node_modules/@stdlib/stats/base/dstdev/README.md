@@ -222,10 +222,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanstdev`][@stdlib/stats/base/dnanstdev]: calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values.
--   [`@stdlib/stats/base/dvariance`][@stdlib/stats/base/dvariance]: calculate the variance of a double-precision floating-point strided array.
--   [`@stdlib/stats/base/sstdev`][@stdlib/stats/base/sstdev]: calculate the standard deviation of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/stdev`][@stdlib/stats/base/stdev]: calculate the standard deviation of a strided array.
+-   <span class="package-name">[`@stdlib/stats/base/dnanstdev`][@stdlib/stats/base/dnanstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/dvariance`][@stdlib/stats/base/dvariance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sstdev`][@stdlib/stats/base/sstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdev`][@stdlib/stats/base/stdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array.</span>
 
 </section>
 

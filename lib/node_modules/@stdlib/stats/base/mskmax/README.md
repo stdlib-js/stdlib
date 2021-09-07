@@ -181,11 +181,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dmskmax`][@stdlib/stats/base/dmskmax]: calculate the maximum value of a double-precision floating-point strided array according to a mask.
--   [`@stdlib/stats/base/max`][@stdlib/stats/base/max]: calculate the maximum value of a strided array.
--   [`@stdlib/stats/base/mskmin`][@stdlib/stats/base/mskmin]: calculate the minimum value of a strided array according to a mask.
--   [`@stdlib/stats/base/nanmax`][@stdlib/stats/base/nanmax]: calculate the maximum value of a strided array, ignoring NaN values.
--   [`@stdlib/stats/base/smskmax`][@stdlib/stats/base/smskmax]: calculate the maximum value of a single-precision floating-point strided array according to a mask.
+-   <span class="package-name">[`@stdlib/stats/base/dmskmax`][@stdlib/stats/base/dmskmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a double-precision floating-point strided array according to a mask.</span>
+-   <span class="package-name">[`@stdlib/stats/base/max`][@stdlib/stats/base/max]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/mskmin`][@stdlib/stats/base/mskmin]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a strided array according to a mask.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanmax`][@stdlib/stats/base/nanmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smskmax`][@stdlib/stats/base/smskmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a single-precision floating-point strided array according to a mask.</span>
 
 </section>
 

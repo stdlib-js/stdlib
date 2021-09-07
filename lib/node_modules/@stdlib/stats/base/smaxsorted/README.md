@@ -173,10 +173,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dmaxsorted`][@stdlib/stats/base/dmaxsorted]: calculate the maximum value of a sorted double-precision floating-point strided array.
--   [`@stdlib/stats/base/maxsorted`][@stdlib/stats/base/maxsorted]: calculate the maximum value of a sorted strided array.
--   [`@stdlib/stats/base/smax`][@stdlib/stats/base/smax]: calculate the maximum value of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/sminsorted`][@stdlib/stats/base/sminsorted]: calculate the minimum value of a sorted single-precision floating-point strided array.
+-   <span class="package-name">[`@stdlib/stats/base/dmaxsorted`][@stdlib/stats/base/dmaxsorted]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a sorted double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/maxsorted`][@stdlib/stats/base/maxsorted]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a sorted strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smax`][@stdlib/stats/base/smax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sminsorted`][@stdlib/stats/base/sminsorted]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a sorted single-precision floating-point strided array.</span>
 
 </section>
 

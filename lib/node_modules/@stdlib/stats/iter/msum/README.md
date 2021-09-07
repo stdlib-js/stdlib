@@ -148,8 +148,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]: create an iterator which iteratively computes a moving arithmetic mean.
--   [`@stdlib/stats/iter/sum`][@stdlib/stats/iter/sum]: compute the sum of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving arithmetic mean.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/sum`][@stdlib/stats/iter/sum]</span><span class="delimiter">: </span><span class="description">compute the sum of all iterated values.</span>
 
 </section>
 

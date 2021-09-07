@@ -138,9 +138,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/gmean`][@stdlib/stats/incr/gmean]: compute a geometric mean incrementally.
--   [`@stdlib/stats/incr/mhmean`][@stdlib/stats/incr/mhmean]: compute a moving harmonic mean incrementally.
--   [`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]: compute a moving arithmetic mean incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/gmean`][@stdlib/stats/incr/gmean]</span><span class="delimiter">: </span><span class="description">compute a geometric mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mhmean`][@stdlib/stats/incr/mhmean]</span><span class="delimiter">: </span><span class="description">compute a moving harmonic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean incrementally.</span>
 
 </section>
 

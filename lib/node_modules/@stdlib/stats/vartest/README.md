@@ -260,7 +260,7 @@ table = out.print();
 
 ## See Also
 
--   [`@stdlib/stats/bartlett-test`][@stdlib/stats/bartlett-test]: Bartlett’s test for equal variances.
+-   <span class="package-name">[`@stdlib/stats/bartlett-test`][@stdlib/stats/bartlett-test]</span><span class="delimiter">: </span><span class="description">Bartlett’s test for equal variances.</span>
 
 </section>
 

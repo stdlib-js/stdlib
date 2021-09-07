@@ -197,8 +197,8 @@ var table = out.print();
 
 ## See Also
 
--   [`@stdlib/stats/vartest`][@stdlib/stats/vartest]: two-sample F-test for equal variances
--   [`@stdlib/stats/bartlett-test`][@stdlib/stats/bartlett-test]: Bartlett’s test for equal variances.
+-   <span class="package-name">[`@stdlib/stats/vartest`][@stdlib/stats/vartest]</span><span class="delimiter">: </span><span class="description">two-sample F-test for equal variances</span>
+-   <span class="package-name">[`@stdlib/stats/bartlett-test`][@stdlib/stats/bartlett-test]</span><span class="delimiter">: </span><span class="description">Bartlett’s test for equal variances.</span>
 
 </section>
 

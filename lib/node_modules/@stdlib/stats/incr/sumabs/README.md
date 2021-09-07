@@ -127,9 +127,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/meanabs`][@stdlib/stats/incr/meanabs]: compute an arithmetic mean of absolute values incrementally.
--   [`@stdlib/stats/incr/msumabs`][@stdlib/stats/incr/msumabs]: compute a moving sum of absolute values incrementally.
--   [`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]: compute a sum incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/meanabs`][@stdlib/stats/incr/meanabs]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean of absolute values incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/msumabs`][@stdlib/stats/incr/msumabs]</span><span class="delimiter">: </span><span class="description">compute a moving sum of absolute values incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/sum`][@stdlib/stats/incr/sum]</span><span class="delimiter">: </span><span class="description">compute a sum incrementally.</span>
 
 </section>
 

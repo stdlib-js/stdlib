@@ -222,11 +222,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanvariancewd`][@stdlib/stats/base/dnanvariancewd]: calculate the variance of a double-precision floating-point strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/nanstdevwd`][@stdlib/stats/base/nanstdevwd]: calculate the standard deviation of a strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/nanvariance`][@stdlib/stats/base/nanvariance]: calculate the variance of a strided array ignoring NaN values.
--   [`@stdlib/stats/base/snanvariancewd`][@stdlib/stats/base/snanvariancewd]: calculate the variance of a single-precision floating-point strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/variancewd`][@stdlib/stats/base/variancewd]: calculate the variance of a strided array using Welford's algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dnanvariancewd`][@stdlib/stats/base/dnanvariancewd]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanstdevwd`][@stdlib/stats/base/nanstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvariance`][@stdlib/stats/base/nanvariance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanvariancewd`][@stdlib/stats/base/snanvariancewd]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/variancewd`][@stdlib/stats/base/variancewd]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array using Welford's algorithm.</span>
 
 </section>
 

@@ -227,11 +227,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanstdevwd`][@stdlib/stats/base/dnanstdevwd]: calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/nanstdevwd`][@stdlib/stats/base/nanstdevwd]: calculate the standard deviation of a strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/snanstdev`][@stdlib/stats/base/snanstdev]: calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values.
--   [`@stdlib/stats/base/snanvariancewd`][@stdlib/stats/base/snanvariancewd]: calculate the variance of a single-precision floating-point strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/sstdevwd`][@stdlib/stats/base/sstdevwd]: calculate the standard deviation of a single-precision floating-point strided array using Welford's algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dnanstdevwd`][@stdlib/stats/base/dnanstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanstdevwd`][@stdlib/stats/base/nanstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanstdev`][@stdlib/stats/base/snanstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanvariancewd`][@stdlib/stats/base/snanvariancewd]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sstdevwd`][@stdlib/stats/base/sstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array using Welford's algorithm.</span>
 
 </section>
 

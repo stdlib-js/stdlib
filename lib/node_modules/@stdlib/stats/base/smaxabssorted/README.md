@@ -167,9 +167,9 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dmaxabssorted`][@stdlib/stats/base/dmaxabssorted]: calculate the maximum absolute value of a sorted double-precision floating-point strided array.
--   [`@stdlib/stats/base/smaxabs`][@stdlib/stats/base/smaxabs]: calculate the maximum absolute value of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/smaxsorted`][@stdlib/stats/base/smaxsorted]: calculate the maximum value of a sorted single-precision floating-point strided array.
+-   <span class="package-name">[`@stdlib/stats/base/dmaxabssorted`][@stdlib/stats/base/dmaxabssorted]</span><span class="delimiter">: </span><span class="description">calculate the maximum absolute value of a sorted double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smaxabs`][@stdlib/stats/base/smaxabs]</span><span class="delimiter">: </span><span class="description">calculate the maximum absolute value of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smaxsorted`][@stdlib/stats/base/smaxsorted]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a sorted single-precision floating-point strided array.</span>
 
 </section>
 

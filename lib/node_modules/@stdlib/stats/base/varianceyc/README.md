@@ -221,10 +221,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dvarianceyc`][@stdlib/stats/base/dvarianceyc]: calculate the variance of a double-precision floating-point strided array using a one-pass algorithm proposed by Youngs and Cramer.
--   [`@stdlib/stats/base/nanvarianceyc`][@stdlib/stats/base/nanvarianceyc]: calculate the variance of a strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.
--   [`@stdlib/stats/base/stdevyc`][@stdlib/stats/base/stdevyc]: calculate the standard deviation of a strided array using a one-pass algorithm proposed by Youngs and Cramer.
--   [`@stdlib/stats/base/variance`][@stdlib/stats/base/variance]: calculate the variance of a strided array.
+-   <span class="package-name">[`@stdlib/stats/base/dvarianceyc`][@stdlib/stats/base/dvarianceyc]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array using a one-pass algorithm proposed by Youngs and Cramer.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvarianceyc`][@stdlib/stats/base/nanvarianceyc]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdevyc`][@stdlib/stats/base/stdevyc]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array using a one-pass algorithm proposed by Youngs and Cramer.</span>
+-   <span class="package-name">[`@stdlib/stats/base/variance`][@stdlib/stats/base/variance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array.</span>
 
 </section>
 

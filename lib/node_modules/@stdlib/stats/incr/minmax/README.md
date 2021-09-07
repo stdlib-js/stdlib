@@ -126,10 +126,10 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/max`][@stdlib/stats/incr/max]: compute a maximum value incrementally.
--   [`@stdlib/stats/incr/min`][@stdlib/stats/incr/min]: compute a minimum value incrementally.
--   [`@stdlib/stats/incr/mminmax`][@stdlib/stats/incr/mminmax]: compute a moving minimum and maximum incrementally.
--   [`@stdlib/stats/incr/range`][@stdlib/stats/incr/range]: compute a range incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/max`][@stdlib/stats/incr/max]</span><span class="delimiter">: </span><span class="description">compute a maximum value incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/min`][@stdlib/stats/incr/min]</span><span class="delimiter">: </span><span class="description">compute a minimum value incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mminmax`][@stdlib/stats/incr/mminmax]</span><span class="delimiter">: </span><span class="description">compute a moving minimum and maximum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/range`][@stdlib/stats/incr/range]</span><span class="delimiter">: </span><span class="description">compute a range incrementally.</span>
 
 </section>
 

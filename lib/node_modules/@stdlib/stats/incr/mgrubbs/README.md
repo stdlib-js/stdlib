@@ -251,7 +251,7 @@ for ( i = 0; i < data.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/stats/incr/grubbs`][@stdlib/stats/incr/grubbs]: grubbs' test for outliers.
+-   <span class="package-name">[`@stdlib/stats/incr/grubbs`][@stdlib/stats/incr/grubbs]</span><span class="delimiter">: </span><span class="description">grubbs' test for outliers.</span>
 
 </section>
 

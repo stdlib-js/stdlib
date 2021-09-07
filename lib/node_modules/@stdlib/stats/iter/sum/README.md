@@ -124,9 +124,9 @@ console.log( 'Sum: %d.', s );
 
 ## See Also
 
--   [`@stdlib/stats/iter/mean`][@stdlib/stats/iter/mean]: compute the arithmetic mean over all iterated values.
--   [`@stdlib/stats/iter/msum`][@stdlib/stats/iter/msum]: create an iterator which iteratively computes a moving sum.
--   [`@stdlib/stats/iter/prod`][@stdlib/stats/iter/prod]: compute the product of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/mean`][@stdlib/stats/iter/mean]</span><span class="delimiter">: </span><span class="description">compute the arithmetic mean over all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/msum`][@stdlib/stats/iter/msum]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving sum.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/prod`][@stdlib/stats/iter/prod]</span><span class="delimiter">: </span><span class="description">compute the product of all iterated values.</span>
 
 </section>
 

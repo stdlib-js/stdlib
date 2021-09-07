@@ -189,8 +189,8 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/msum`][@stdlib/stats/incr/msum]: compute a moving sum incrementally.
--   [`@stdlib/stats/incr/prod`][@stdlib/stats/incr/prod]: compute a product incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/msum`][@stdlib/stats/incr/msum]</span><span class="delimiter">: </span><span class="description">compute a moving sum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/prod`][@stdlib/stats/incr/prod]</span><span class="delimiter">: </span><span class="description">compute a product incrementally.</span>
 
 </section>
 

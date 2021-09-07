@@ -303,7 +303,7 @@ console.log( out.print() );
 
 ## See Also
 
--   [`@stdlib/stats/ttest2`][@stdlib/stats/ttest2]: two-sample Student's t-Test.
+-   <span class="package-name">[`@stdlib/stats/ttest2`][@stdlib/stats/ttest2]</span><span class="delimiter">: </span><span class="description">two-sample Student's t-Test.</span>
 
 </section>
 

@@ -214,9 +214,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/stats/incr/covmat`][@stdlib/stats/incr/covmat]: compute an unbiased sample covariance matrix incrementally.
--   [`@stdlib/stats/incr/pcorr`][@stdlib/stats/incr/pcorr]: compute a sample Pearson product-moment correlation coefficient.
--   [`@stdlib/stats/incr/pcorrdistmat`][@stdlib/stats/incr/pcorrdistmat]: compute a sample Pearson product-moment correlation distance matrix incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/covmat`][@stdlib/stats/incr/covmat]</span><span class="delimiter">: </span><span class="description">compute an unbiased sample covariance matrix incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/pcorr`][@stdlib/stats/incr/pcorr]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation coefficient.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/pcorrdistmat`][@stdlib/stats/incr/pcorrdistmat]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation distance matrix incrementally.</span>
 
 </section>
 

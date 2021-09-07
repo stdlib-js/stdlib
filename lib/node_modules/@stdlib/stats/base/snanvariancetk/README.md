@@ -227,11 +227,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanvariancetk`][@stdlib/stats/base/dnanvariancetk]: calculate the variance of a double-precision floating-point strided array ignoring NaN values and using a one-pass textbook algorithm.
--   [`@stdlib/stats/base/nanvariancetk`][@stdlib/stats/base/nanvariancetk]: calculate the variance of a strided array ignoring NaN values and using a one-pass textbook algorithm.
--   [`@stdlib/stats/base/snanstdevtk`][@stdlib/stats/base/snanstdevtk]: calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values and using a one-pass textbook algorithm.
--   [`@stdlib/stats/base/snanvariance`][@stdlib/stats/base/snanvariance]: calculate the variance of a single-precision floating-point strided array ignoring NaN values.
--   [`@stdlib/stats/base/svariancetk`][@stdlib/stats/base/svariancetk]: calculate the variance of a single-precision floating-point strided array using a one-pass textbook algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dnanvariancetk`][@stdlib/stats/base/dnanvariancetk]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array ignoring NaN values and using a one-pass textbook algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvariancetk`][@stdlib/stats/base/nanvariancetk]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values and using a one-pass textbook algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanstdevtk`][@stdlib/stats/base/snanstdevtk]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values and using a one-pass textbook algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanvariance`][@stdlib/stats/base/snanvariance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/svariancetk`][@stdlib/stats/base/svariancetk]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array using a one-pass textbook algorithm.</span>
 
 </section>
 

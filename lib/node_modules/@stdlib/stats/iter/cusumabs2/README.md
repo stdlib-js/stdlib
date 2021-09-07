@@ -145,9 +145,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/cumeanabs2`][@stdlib/stats/iter/cumeanabs2]: create an iterator which iteratively computes a cumulative arithmetic mean of squared absolute values.
--   [`@stdlib/stats/iter/cusumabs`][@stdlib/stats/iter/cusumabs]: create an iterator which iteratively computes a cumulative sum of absolute values.
--   [`@stdlib/stats/iter/sumabs2`][@stdlib/stats/iter/sumabs2]: compute the sum of squared absolute values for all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/cumeanabs2`][@stdlib/stats/iter/cumeanabs2]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative arithmetic mean of squared absolute values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/cusumabs`][@stdlib/stats/iter/cusumabs]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative sum of absolute values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/sumabs2`][@stdlib/stats/iter/sumabs2]</span><span class="delimiter">: </span><span class="description">compute the sum of squared absolute values for all iterated values.</span>
 
 </section>
 

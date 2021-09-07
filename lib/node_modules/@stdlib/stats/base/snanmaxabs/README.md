@@ -172,11 +172,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanmaxabs`][@stdlib/stats/base/dnanmaxabs]: calculate the maximum absolute value of a double-precision floating-point strided array, ignoring NaN values.
--   [`@stdlib/stats/base/nanmaxabs`][@stdlib/stats/base/nanmaxabs]: calculate the maximum absolute value of a strided array, ignoring NaN values.
--   [`@stdlib/stats/base/smaxabs`][@stdlib/stats/base/smaxabs]: calculate the maximum absolute value of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/snanmax`][@stdlib/stats/base/snanmax]: calculate the maximum value of a single-precision floating-point strided array, ignoring NaN values.
--   [`@stdlib/stats/base/snanminabs`][@stdlib/stats/base/snanminabs]: calculate the minimum absolute value of a single-precision floating-point strided array, ignoring NaN values.
+-   <span class="package-name">[`@stdlib/stats/base/dnanmaxabs`][@stdlib/stats/base/dnanmaxabs]</span><span class="delimiter">: </span><span class="description">calculate the maximum absolute value of a double-precision floating-point strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanmaxabs`][@stdlib/stats/base/nanmaxabs]</span><span class="delimiter">: </span><span class="description">calculate the maximum absolute value of a strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smaxabs`][@stdlib/stats/base/smaxabs]</span><span class="delimiter">: </span><span class="description">calculate the maximum absolute value of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanmax`][@stdlib/stats/base/snanmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a single-precision floating-point strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanminabs`][@stdlib/stats/base/snanminabs]</span><span class="delimiter">: </span><span class="description">calculate the minimum absolute value of a single-precision floating-point strided array, ignoring NaN values.</span>
 
 </section>
 

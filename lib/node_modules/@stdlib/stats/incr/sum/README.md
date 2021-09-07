@@ -139,11 +139,11 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/count`][@stdlib/stats/incr/count]: compute a count incrementally.
--   [`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]: compute an arithmetic mean incrementally.
--   [`@stdlib/stats/incr/msum`][@stdlib/stats/incr/msum]: compute a moving sum incrementally.
--   [`@stdlib/stats/incr/prod`][@stdlib/stats/incr/prod]: compute a product incrementally.
--   [`@stdlib/stats/incr/summary`][@stdlib/stats/incr/summary]: compute a statistical summary incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/count`][@stdlib/stats/incr/count]</span><span class="delimiter">: </span><span class="description">compute a count incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/msum`][@stdlib/stats/incr/msum]</span><span class="delimiter">: </span><span class="description">compute a moving sum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/prod`][@stdlib/stats/incr/prod]</span><span class="delimiter">: </span><span class="description">compute a product incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/summary`][@stdlib/stats/incr/summary]</span><span class="delimiter">: </span><span class="description">compute a statistical summary incrementally.</span>
 
 </section>
 

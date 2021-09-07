@@ -182,10 +182,10 @@ for ( i = 0; i < N; i++ ) {
 
 ## See Also
 
--   [`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]: compute an arithmetic mean incrementally.
--   [`@stdlib/stats/incr/meanvar`][@stdlib/stats/incr/meanvar]: compute an arithmetic mean and unbiased sample variance incrementally.
--   [`@stdlib/stats/incr/mmeanstdev`][@stdlib/stats/incr/mmeanstdev]: compute a moving arithmetic mean and corrected sample standard deviation incrementally.
--   [`@stdlib/stats/incr/stdev`][@stdlib/stats/incr/stdev]: compute a corrected sample standard deviation incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/meanvar`][@stdlib/stats/incr/meanvar]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean and unbiased sample variance incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmeanstdev`][@stdlib/stats/incr/mmeanstdev]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean and corrected sample standard deviation incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/stdev`][@stdlib/stats/incr/stdev]</span><span class="delimiter">: </span><span class="description">compute a corrected sample standard deviation incrementally.</span>
 
 </section>
 

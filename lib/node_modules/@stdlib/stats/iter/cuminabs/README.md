@@ -134,9 +134,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/cumaxabs`][@stdlib/stats/iter/cumaxabs]: create an iterator which iteratively computes a cumulative maximum absolute value.
--   [`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]: create an iterator which iteratively computes a cumulative minimum value.
--   [`@stdlib/stats/iter/minabs`][@stdlib/stats/iter/minabs]: compute the minimum absolute value of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/cumaxabs`][@stdlib/stats/iter/cumaxabs]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative maximum absolute value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative minimum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/minabs`][@stdlib/stats/iter/minabs]</span><span class="delimiter">: </span><span class="description">compute the minimum absolute value of all iterated values.</span>
 
 </section>
 

@@ -376,8 +376,8 @@ table = out.print();
 
 ## See Also
 
--   [`@stdlib/stats/ttest`][@stdlib/stats/ttest]: one-sample and paired Student's t-Test.
--   [`@stdlib/stats/ztest`][@stdlib/stats/ztest]: one-sample and paired z-Test.
+-   <span class="package-name">[`@stdlib/stats/ttest`][@stdlib/stats/ttest]</span><span class="delimiter">: </span><span class="description">one-sample and paired Student's t-Test.</span>
+-   <span class="package-name">[`@stdlib/stats/ztest`][@stdlib/stats/ztest]</span><span class="delimiter">: </span><span class="description">one-sample and paired z-Test.</span>
 
 </section>
 

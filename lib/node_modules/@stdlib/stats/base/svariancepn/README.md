@@ -229,11 +229,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dvariancepn`][@stdlib/stats/base/dvariancepn]: calculate the variance of a double-precision floating-point strided array using a two-pass algorithm.
--   [`@stdlib/stats/base/snanvariancepn`][@stdlib/stats/base/snanvariancepn]: calculate the variance of a single-precision floating-point strided array ignoring NaN values and using a two-pass algorithm.
--   [`@stdlib/stats/base/sstdevpn`][@stdlib/stats/base/sstdevpn]: calculate the standard deviation of a single-precision floating-point strided array using a two-pass algorithm.
--   [`@stdlib/stats/base/svariance`][@stdlib/stats/base/svariance]: calculate the variance of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/variancepn`][@stdlib/stats/base/variancepn]: calculate the variance of a strided array using a two-pass algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dvariancepn`][@stdlib/stats/base/dvariancepn]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array using a two-pass algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanvariancepn`][@stdlib/stats/base/snanvariancepn]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array ignoring NaN values and using a two-pass algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sstdevpn`][@stdlib/stats/base/sstdevpn]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array using a two-pass algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/svariance`][@stdlib/stats/base/svariance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/variancepn`][@stdlib/stats/base/variancepn]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array using a two-pass algorithm.</span>
 
 </section>
 

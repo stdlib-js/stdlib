@@ -123,11 +123,11 @@ console.log( 'Mean: %d.', m );
 
 ## See Also
 
--   [`@stdlib/stats/iter/midrange`][@stdlib/stats/iter/midrange]: compute the mid-range of all iterated values.
--   [`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]: create an iterator which iteratively computes a moving arithmetic mean.
--   [`@stdlib/stats/iter/stdev`][@stdlib/stats/iter/stdev]: compute the corrected sample standard deviation over all iterated values.
--   [`@stdlib/stats/iter/sum`][@stdlib/stats/iter/sum]: compute the sum of all iterated values.
--   [`@stdlib/stats/iter/variance`][@stdlib/stats/iter/variance]: compute the unbiased sample variance over all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/midrange`][@stdlib/stats/iter/midrange]</span><span class="delimiter">: </span><span class="description">compute the mid-range of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving arithmetic mean.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/stdev`][@stdlib/stats/iter/stdev]</span><span class="delimiter">: </span><span class="description">compute the corrected sample standard deviation over all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/sum`][@stdlib/stats/iter/sum]</span><span class="delimiter">: </span><span class="description">compute the sum of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/variance`][@stdlib/stats/iter/variance]</span><span class="delimiter">: </span><span class="description">compute the unbiased sample variance over all iterated values.</span>
 
 </section>
 

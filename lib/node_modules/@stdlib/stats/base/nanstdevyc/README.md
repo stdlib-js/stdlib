@@ -221,11 +221,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanstdevyc`][@stdlib/stats/base/dnanstdevyc]: calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.
--   [`@stdlib/stats/base/nanvarianceyc`][@stdlib/stats/base/nanvarianceyc]: calculate the variance of a strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.
--   [`@stdlib/stats/base/nanstdev`][@stdlib/stats/base/nanstdev]: calculate the standard deviation of a strided array ignoring NaN values.
--   [`@stdlib/stats/base/snanstdevyc`][@stdlib/stats/base/snanstdevyc]: calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.
--   [`@stdlib/stats/base/stdevyc`][@stdlib/stats/base/stdevyc]: calculate the standard deviation of a strided array using a one-pass algorithm proposed by Youngs and Cramer.
+-   <span class="package-name">[`@stdlib/stats/base/dnanstdevyc`][@stdlib/stats/base/dnanstdevyc]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvarianceyc`][@stdlib/stats/base/nanvarianceyc]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanstdev`][@stdlib/stats/base/nanstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanstdevyc`][@stdlib/stats/base/snanstdevyc]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values and using a one-pass algorithm proposed by Youngs and Cramer.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdevyc`][@stdlib/stats/base/stdevyc]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array using a one-pass algorithm proposed by Youngs and Cramer.</span>
 
 </section>
 

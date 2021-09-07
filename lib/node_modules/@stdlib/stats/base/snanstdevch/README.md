@@ -230,11 +230,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanstdevch`][@stdlib/stats/base/dnanstdevch]: calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/nanstdevch`][@stdlib/stats/base/nanstdevch]: calculate the standard deviation of a strided array ignoring NaN values and using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/snanstdev`][@stdlib/stats/base/snanstdev]: calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values.
--   [`@stdlib/stats/base/snanvariancech`][@stdlib/stats/base/snanvariancech]: calculate the variance of a single-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/sstdevch`][@stdlib/stats/base/sstdevch]: calculate the standard deviation of a single-precision floating-point strided array using a one-pass trial mean algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dnanstdevch`][@stdlib/stats/base/dnanstdevch]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanstdevch`][@stdlib/stats/base/nanstdevch]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array ignoring NaN values and using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanstdev`][@stdlib/stats/base/snanstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanvariancech`][@stdlib/stats/base/snanvariancech]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sstdevch`][@stdlib/stats/base/sstdevch]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array using a one-pass trial mean algorithm.</span>
 
 </section>
 

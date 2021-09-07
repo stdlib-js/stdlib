@@ -185,8 +185,8 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/sdsmeanors`][@stdlib/stats/base/sdsmeanors]: calculate the arithmetic mean of a single-precision floating-point strided array using ordinary recursive summation with extended accumulation.
--   [`@stdlib/stats/base/sdsnanmean`][@stdlib/stats/base/sdsnanmean]: calculate the arithmetic mean of a single-precision floating-point strided array, ignoring NaN values and using extended accumulation.
+-   <span class="package-name">[`@stdlib/stats/base/sdsmeanors`][@stdlib/stats/base/sdsmeanors]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array using ordinary recursive summation with extended accumulation.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sdsnanmean`][@stdlib/stats/base/sdsnanmean]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array, ignoring NaN values and using extended accumulation.</span>
 
 </section>
 

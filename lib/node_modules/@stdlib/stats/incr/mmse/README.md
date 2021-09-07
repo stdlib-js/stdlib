@@ -140,9 +140,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mrmse`][@stdlib/stats/incr/mrmse]: compute a moving root mean squared error (RMSE) incrementally.
--   [`@stdlib/stats/incr/mrss`][@stdlib/stats/incr/mrss]: compute a moving residual sum of squares (RSS) incrementally.
--   [`@stdlib/stats/incr/mse`][@stdlib/stats/incr/mse]: compute the mean squared error (MSE) incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mrmse`][@stdlib/stats/incr/mrmse]</span><span class="delimiter">: </span><span class="description">compute a moving root mean squared error (RMSE) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mrss`][@stdlib/stats/incr/mrss]</span><span class="delimiter">: </span><span class="description">compute a moving residual sum of squares (RSS) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mse`][@stdlib/stats/incr/mse]</span><span class="delimiter">: </span><span class="description">compute the mean squared error (MSE) incrementally.</span>
 
 </section>
 

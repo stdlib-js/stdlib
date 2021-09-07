@@ -147,9 +147,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/covariance`][@stdlib/stats/incr/covariance]: compute an unbiased sample covariance incrementally.
--   [`@stdlib/stats/incr/mpcorr`][@stdlib/stats/incr/mpcorr]: compute a moving sample Pearson product-moment correlation coefficient incrementally.
--   [`@stdlib/stats/incr/summary`][@stdlib/stats/incr/summary]: compute a statistical summary incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/covariance`][@stdlib/stats/incr/covariance]</span><span class="delimiter">: </span><span class="description">compute an unbiased sample covariance incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mpcorr`][@stdlib/stats/incr/mpcorr]</span><span class="delimiter">: </span><span class="description">compute a moving sample Pearson product-moment correlation coefficient incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/summary`][@stdlib/stats/incr/summary]</span><span class="delimiter">: </span><span class="description">compute a statistical summary incrementally.</span>
 
 </section>
 

@@ -112,10 +112,10 @@ console.log( 'Max: %d.', m );
 
 ## See Also
 
--   [`@stdlib/stats/iter/midrange`][@stdlib/stats/iter/midrange]: compute the mid-range of all iterated values.
--   [`@stdlib/stats/iter/min`][@stdlib/stats/iter/min]: compute the minimum value of all iterated values.
--   [`@stdlib/stats/iter/mmax`][@stdlib/stats/iter/mmax]: create an iterator which iteratively computes a moving maximum value.
--   [`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]: compute the range of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/midrange`][@stdlib/stats/iter/midrange]</span><span class="delimiter">: </span><span class="description">compute the mid-range of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/min`][@stdlib/stats/iter/min]</span><span class="delimiter">: </span><span class="description">compute the minimum value of all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mmax`][@stdlib/stats/iter/mmax]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving maximum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]</span><span class="delimiter">: </span><span class="description">compute the range of all iterated values.</span>
 
 </section>
 

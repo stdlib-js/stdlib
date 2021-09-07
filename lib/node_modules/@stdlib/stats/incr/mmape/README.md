@@ -149,10 +149,10 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mape`][@stdlib/stats/incr/mape]: compute the mean absolute percentage error (MAPE) incrementally.
--   [`@stdlib/stats/incr/mmaape`][@stdlib/stats/incr/mmaape]: compute a moving arctangent mean absolute percentage error (MAAPE) incrementally.
--   [`@stdlib/stats/incr/mmpe`][@stdlib/stats/incr/mmpe]: compute a moving mean percentage error (MPE) incrementally.
--   [`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]: compute a moving arithmetic mean incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mape`][@stdlib/stats/incr/mape]</span><span class="delimiter">: </span><span class="description">compute the mean absolute percentage error (MAPE) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmaape`][@stdlib/stats/incr/mmaape]</span><span class="delimiter">: </span><span class="description">compute a moving arctangent mean absolute percentage error (MAAPE) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmpe`][@stdlib/stats/incr/mmpe]</span><span class="delimiter">: </span><span class="description">compute a moving mean percentage error (MPE) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean incrementally.</span>
 
 </section>
 

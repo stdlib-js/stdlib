@@ -194,9 +194,9 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dmeanli`][@stdlib/stats/base/dmeanli]: calculate the arithmetic mean of a double-precision floating-point strided array using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/smean`][@stdlib/stats/base/smean]: calculate the arithmetic mean of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/smeanlipw`][@stdlib/stats/base/smeanlipw]: calculate the arithmetic mean of a single-precision floating-point strided array using a one-pass trial mean algorithm with pairwise summation.
+-   <span class="package-name">[`@stdlib/stats/base/dmeanli`][@stdlib/stats/base/dmeanli]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a double-precision floating-point strided array using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smean`][@stdlib/stats/base/smean]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smeanlipw`][@stdlib/stats/base/smeanlipw]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array using a one-pass trial mean algorithm with pairwise summation.</span>
 
 </section>
 

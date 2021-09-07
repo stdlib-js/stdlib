@@ -139,10 +139,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/mmax`][@stdlib/stats/iter/mmax]: create an iterator which iteratively computes a moving maximum value.
--   [`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]: create an iterator which iteratively computes a moving arithmetic mean.
--   [`@stdlib/stats/iter/mmin`][@stdlib/stats/iter/mmin]: create an iterator which iteratively computes a moving minimum value.
--   [`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]: compute the range of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/mmax`][@stdlib/stats/iter/mmax]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving maximum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mmean`][@stdlib/stats/iter/mmean]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving arithmetic mean.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mmin`][@stdlib/stats/iter/mmin]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving minimum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]</span><span class="delimiter">: </span><span class="description">compute the range of all iterated values.</span>
 
 </section>
 

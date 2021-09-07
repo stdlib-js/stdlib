@@ -172,10 +172,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanmin`][@stdlib/stats/base/dnanmin]: calculate the minimum value of a double-precision floating-point strided array, ignoring NaN values.
--   [`@stdlib/stats/base/nanmin`][@stdlib/stats/base/nanmin]: calculate the minimum value of a strided array, ignoring NaN values.
--   [`@stdlib/stats/base/smin`][@stdlib/stats/base/smin]: calculate the minimum value of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/snanmax`][@stdlib/stats/base/snanmax]: calculate the maximum value of a single-precision floating-point strided array, ignoring NaN values.
+-   <span class="package-name">[`@stdlib/stats/base/dnanmin`][@stdlib/stats/base/dnanmin]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a double-precision floating-point strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanmin`][@stdlib/stats/base/nanmin]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a strided array, ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smin`][@stdlib/stats/base/smin]</span><span class="delimiter">: </span><span class="description">calculate the minimum value of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanmax`][@stdlib/stats/base/snanmax]</span><span class="delimiter">: </span><span class="description">calculate the maximum value of a single-precision floating-point strided array, ignoring NaN values.</span>
 
 </section>
 

@@ -129,10 +129,10 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]: compute a moving arithmetic mean incrementally.
--   [`@stdlib/stats/incr/mmax`][@stdlib/stats/incr/mmax]: compute a moving maximum incrementally.
--   [`@stdlib/stats/incr/mmin`][@stdlib/stats/incr/mmin]: compute a moving minimum incrementally.
--   [`@stdlib/stats/incr/mrange`][@stdlib/stats/incr/mrange]: compute a moving range incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmax`][@stdlib/stats/incr/mmax]</span><span class="delimiter">: </span><span class="description">compute a moving maximum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmin`][@stdlib/stats/incr/mmin]</span><span class="delimiter">: </span><span class="description">compute a moving minimum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mrange`][@stdlib/stats/incr/mrange]</span><span class="delimiter">: </span><span class="description">compute a moving range incrementally.</span>
 
 </section>
 

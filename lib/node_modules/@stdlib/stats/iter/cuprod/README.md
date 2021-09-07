@@ -146,8 +146,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/cusum`][@stdlib/stats/iter/cusum]: create an iterator which iteratively computes a cumulative sum.
--   [`@stdlib/stats/iter/prod`][@stdlib/stats/iter/prod]: compute the product of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/cusum`][@stdlib/stats/iter/cusum]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative sum.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/prod`][@stdlib/stats/iter/prod]</span><span class="delimiter">: </span><span class="description">compute the product of all iterated values.</span>
 
 </section>
 

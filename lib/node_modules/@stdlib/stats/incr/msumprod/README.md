@@ -140,9 +140,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mprod`][@stdlib/stats/incr/mprod]: compute a moving product incrementally.
--   [`@stdlib/stats/incr/msum`][@stdlib/stats/incr/msum]: compute a moving sum incrementally.
--   [`@stdlib/stats/incr/sumprod`][@stdlib/stats/incr/sumprod]: compute a sum of products incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mprod`][@stdlib/stats/incr/mprod]</span><span class="delimiter">: </span><span class="description">compute a moving product incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/msum`][@stdlib/stats/incr/msum]</span><span class="delimiter">: </span><span class="description">compute a moving sum incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/sumprod`][@stdlib/stats/incr/sumprod]</span><span class="delimiter">: </span><span class="description">compute a sum of products incrementally.</span>
 
 </section>
 

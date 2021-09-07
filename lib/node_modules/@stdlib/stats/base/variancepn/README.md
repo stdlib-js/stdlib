@@ -224,10 +224,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dvariancepn`][@stdlib/stats/base/dvariancepn]: calculate the variance of a double-precision floating-point strided array using a two-pass algorithm.
--   [`@stdlib/stats/base/nanvariancepn`][@stdlib/stats/base/nanvariancepn]: calculate the variance of a strided array ignoring NaN values and using a two-pass algorithm.
--   [`@stdlib/stats/base/stdevpn`][@stdlib/stats/base/stdevpn]: calculate the standard deviation of a strided array using a two-pass algorithm.
--   [`@stdlib/stats/base/variance`][@stdlib/stats/base/variance]: calculate the variance of a strided array.
+-   <span class="package-name">[`@stdlib/stats/base/dvariancepn`][@stdlib/stats/base/dvariancepn]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array using a two-pass algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvariancepn`][@stdlib/stats/base/nanvariancepn]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values and using a two-pass algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdevpn`][@stdlib/stats/base/stdevpn]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array using a two-pass algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/variance`][@stdlib/stats/base/variance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array.</span>
 
 </section>
 

@@ -192,10 +192,10 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dmean`][@stdlib/stats/base/dmean]: calculate the arithmetic mean of a double-precision floating-point strided array.
--   [`@stdlib/stats/base/dnanmeanwd`][@stdlib/stats/base/dnanmeanwd]: calculate the arithmetic mean of a double-precision floating-point strided array, using Welford's algorithm and ignoring NaN values.
--   [`@stdlib/stats/base/meanwd`][@stdlib/stats/base/meanwd]: calculate the arithmetic mean of a strided array using Welford's algorithm.
--   [`@stdlib/stats/base/smeanwd`][@stdlib/stats/base/smeanwd]: calculate the arithmetic mean of a single-precision floating-point strided array using Welford's algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dmean`][@stdlib/stats/base/dmean]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/dnanmeanwd`][@stdlib/stats/base/dnanmeanwd]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a double-precision floating-point strided array, using Welford's algorithm and ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/meanwd`][@stdlib/stats/base/meanwd]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a strided array using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/smeanwd`][@stdlib/stats/base/smeanwd]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a single-precision floating-point strided array using Welford's algorithm.</span>
 
 </section>
 

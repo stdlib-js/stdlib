@@ -149,8 +149,8 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mpcorr`][@stdlib/stats/incr/mpcorr]: compute a moving sample Pearson product-moment correlation coefficient incrementally.
--   [`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]: compute a sample Pearson product-moment correlation distance.
+-   <span class="package-name">[`@stdlib/stats/incr/mpcorr`][@stdlib/stats/incr/mpcorr]</span><span class="delimiter">: </span><span class="description">compute a moving sample Pearson product-moment correlation coefficient incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/pcorrdist`][@stdlib/stats/incr/pcorrdist]</span><span class="delimiter">: </span><span class="description">compute a sample Pearson product-moment correlation distance.</span>
 
 </section>
 

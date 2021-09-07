@@ -136,10 +136,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/cumax`][@stdlib/stats/iter/cumax]: create an iterator which iteratively computes a cumulative maximum value.
--   [`@stdlib/stats/iter/cumean`][@stdlib/stats/iter/cumean]: create an iterator which iteratively computes a cumulative arithmetic mean.
--   [`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]: create an iterator which iteratively computes a cumulative minimum value.
--   [`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]: compute the range of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/cumax`][@stdlib/stats/iter/cumax]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative maximum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/cumean`][@stdlib/stats/iter/cumean]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative arithmetic mean.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative minimum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]</span><span class="delimiter">: </span><span class="description">compute the range of all iterated values.</span>
 
 </section>
 

@@ -225,11 +225,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dnanvariancech`][@stdlib/stats/base/dnanvariancech]: calculate the variance of a double-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/nanstdevch`][@stdlib/stats/base/nanstdevch]: calculate the standard deviation of a strided array ignoring NaN values and using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/nanvariance`][@stdlib/stats/base/nanvariance]: calculate the variance of a strided array ignoring NaN values.
--   [`@stdlib/stats/base/snanvariancech`][@stdlib/stats/base/snanvariancech]: calculate the variance of a single-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.
--   [`@stdlib/stats/base/variancech`][@stdlib/stats/base/variancech]: calculate the variance of a strided array using a one-pass trial mean algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dnanvariancech`][@stdlib/stats/base/dnanvariancech]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanstdevch`][@stdlib/stats/base/nanstdevch]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array ignoring NaN values and using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/nanvariance`][@stdlib/stats/base/nanvariance]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array ignoring NaN values.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanvariancech`][@stdlib/stats/base/snanvariancech]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array ignoring NaN values and using a one-pass trial mean algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/variancech`][@stdlib/stats/base/variancech]</span><span class="delimiter">: </span><span class="description">calculate the variance of a strided array using a one-pass trial mean algorithm.</span>
 
 </section>
 

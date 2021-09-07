@@ -229,11 +229,11 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dstdevwd`][@stdlib/stats/base/dstdevwd]: calculate the standard deviation of a double-precision floating-point strided array using Welford's algorithm.
--   [`@stdlib/stats/base/snanstdevwd`][@stdlib/stats/base/snanstdevwd]: calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values and using Welford's algorithm.
--   [`@stdlib/stats/base/sstdev`][@stdlib/stats/base/sstdev]: calculate the standard deviation of a single-precision floating-point strided array.
--   [`@stdlib/stats/base/stdevwd`][@stdlib/stats/base/stdevwd]: calculate the standard deviation of a strided array using Welford's algorithm.
--   [`@stdlib/stats/base/svariancewd`][@stdlib/stats/base/svariancewd]: calculate the variance of a single-precision floating-point strided array using Welford's algorithm.
+-   <span class="package-name">[`@stdlib/stats/base/dstdevwd`][@stdlib/stats/base/dstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/snanstdevwd`][@stdlib/stats/base/snanstdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array ignoring NaN values and using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/sstdev`][@stdlib/stats/base/sstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/stdevwd`][@stdlib/stats/base/stdevwd]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a strided array using Welford's algorithm.</span>
+-   <span class="package-name">[`@stdlib/stats/base/svariancewd`][@stdlib/stats/base/svariancewd]</span><span class="delimiter">: </span><span class="description">calculate the variance of a single-precision floating-point strided array using Welford's algorithm.</span>
 
 </section>
 

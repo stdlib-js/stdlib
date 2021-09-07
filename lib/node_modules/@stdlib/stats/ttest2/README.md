@@ -269,7 +269,7 @@ table = out.print();
 
 ## See Also
 
--   [`@stdlib/stats/ttest`][@stdlib/stats/ttest]: one-sample and paired Student's t-Test.
+-   <span class="package-name">[`@stdlib/stats/ttest`][@stdlib/stats/ttest]</span><span class="delimiter">: </span><span class="description">one-sample and paired Student's t-Test.</span>
 
 </section>
 

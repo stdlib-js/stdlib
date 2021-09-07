@@ -168,10 +168,10 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/cv`][@stdlib/stats/incr/cv]: compute the coefficient of variation (CV) incrementally.
--   [`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]: compute a moving arithmetic mean incrementally.
--   [`@stdlib/stats/incr/mstdev`][@stdlib/stats/incr/mstdev]: compute a moving corrected sample standard deviation incrementally.
--   [`@stdlib/stats/incr/mvmr`][@stdlib/stats/incr/mvmr]: compute a moving variance-to-mean ratio (VMR) incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/cv`][@stdlib/stats/incr/cv]</span><span class="delimiter">: </span><span class="description">compute the coefficient of variation (CV) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mstdev`][@stdlib/stats/incr/mstdev]</span><span class="delimiter">: </span><span class="description">compute a moving corrected sample standard deviation incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mvmr`][@stdlib/stats/incr/mvmr]</span><span class="delimiter">: </span><span class="description">compute a moving variance-to-mean ratio (VMR) incrementally.</span>
 
 </section>
 

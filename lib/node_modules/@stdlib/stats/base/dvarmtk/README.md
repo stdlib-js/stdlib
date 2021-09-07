@@ -221,7 +221,7 @@ console.log( v );
 
 ## See Also
 
--   [`@stdlib/stats/base/dvarm`][@stdlib/stats/base/dvarm]: calculate the variance of a double-precision floating-point strided array provided a known mean.
+-   <span class="package-name">[`@stdlib/stats/base/dvarm`][@stdlib/stats/base/dvarm]</span><span class="delimiter">: </span><span class="description">calculate the variance of a double-precision floating-point strided array provided a known mean.</span>
 
 </section>
 

@@ -235,7 +235,7 @@ console.log( table );
 
 ## See Also
 
--   [`@stdlib/stats/ztest`][@stdlib/stats/ztest]: one-sample and paired z-Test.
+-   <span class="package-name">[`@stdlib/stats/ztest`][@stdlib/stats/ztest]</span><span class="delimiter">: </span><span class="description">one-sample and paired z-Test.</span>
 
 </section>
 

@@ -180,9 +180,9 @@ console.log( y );
 
 ## See Also
 
--   [`@stdlib/stats/base/cumin`][@stdlib/stats/base/cumin]: calculate the cumulative minimum of a strided array.
--   [`@stdlib/stats/base/dcumax`][@stdlib/stats/base/dcumax]: calculate the cumulative maximum of double-precision floating-point strided array elements.
--   [`@stdlib/stats/base/scumin`][@stdlib/stats/base/scumin]: calculate the cumulative minimum of single-precision floating-point strided array elements.
+-   <span class="package-name">[`@stdlib/stats/base/cumin`][@stdlib/stats/base/cumin]</span><span class="delimiter">: </span><span class="description">calculate the cumulative minimum of a strided array.</span>
+-   <span class="package-name">[`@stdlib/stats/base/dcumax`][@stdlib/stats/base/dcumax]</span><span class="delimiter">: </span><span class="description">calculate the cumulative maximum of double-precision floating-point strided array elements.</span>
+-   <span class="package-name">[`@stdlib/stats/base/scumin`][@stdlib/stats/base/scumin]</span><span class="delimiter">: </span><span class="description">calculate the cumulative minimum of single-precision floating-point strided array elements.</span>
 
 </section>
 

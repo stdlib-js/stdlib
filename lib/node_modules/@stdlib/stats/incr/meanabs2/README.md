@@ -126,10 +126,10 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]: compute an arithmetic mean incrementally.
--   [`@stdlib/stats/incr/meanabs`][@stdlib/stats/incr/meanabs]: compute an arithmetic mean of absolute values incrementally.
--   [`@stdlib/stats/incr/mmeanabs2`][@stdlib/stats/incr/mmeanabs2]: compute a moving arithmetic mean of squared absolute values incrementally.
--   [`@stdlib/stats/incr/sumabs2`][@stdlib/stats/incr/sumabs2]: compute a sum of squared absolute values incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/meanabs`][@stdlib/stats/incr/meanabs]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean of absolute values incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmeanabs2`][@stdlib/stats/incr/mmeanabs2]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean of squared absolute values incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/sumabs2`][@stdlib/stats/incr/sumabs2]</span><span class="delimiter">: </span><span class="description">compute a sum of squared absolute values incrementally.</span>
 
 </section>
 
