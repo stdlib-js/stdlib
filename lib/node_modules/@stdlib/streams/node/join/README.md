@@ -185,7 +185,7 @@ split.end();
 
 ## See Also
 
--   [`@stdlib/streams/node/split`][@stdlib/streams/node/split]: transform stream which splits streamed data.
+-   <span class="package-name">[`@stdlib/streams/node/split`][@stdlib/streams/node/split]</span><span class="delimiter">: </span><span class="description">transform stream which splits streamed data.</span>
 
 </section>
 

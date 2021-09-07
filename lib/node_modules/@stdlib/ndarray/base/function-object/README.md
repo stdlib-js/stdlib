@@ -152,7 +152,7 @@ An `ndarrayFcn` function should return a status code (with `0` indicating succes
 
 <!-- lint disable maximum-heading-length -->
 
-#### stdlib_ndarray_function_allocate( *name, nin, nout, *functions, nfunctions, *types, *data[] )
+#### stdlib_ndarray_function_allocate( _name, nin, nout, _functions, nfunctions, _types, _data\[] )
 
 Returns a pointer to a dynamically allocated ndarray function object.
 
@@ -233,7 +233,7 @@ struct ndarrayFunctionObject * stdlib_ndarray_function_allocate( const char *nam
 
 The function returns a pointer to a dynamically allocated ndarray function or, if unable to allocate memory, a null pointer. The **user** is responsible for freeing the allocated memory.
 
-#### stdlib_ndarray_function_free( *obj )
+#### stdlib_ndarray_function_free( \*obj )
 
 Frees an ndarray function object's allocated memory.
 
@@ -287,7 +287,7 @@ The function accepts the following arguments:
 void stdlib_ndarray_function_free( struct ndarrayFunctionObject *obj )
 ```
 
-#### stdlib_ndarray_function_dispatch_index_of( *obj, *types )
+#### stdlib_ndarray_function_dispatch_index_of( _obj, _types )
 
 Returns the first index of a function whose signature satisfies a provided list of array types.
 

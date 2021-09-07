@@ -181,9 +181,9 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/namespace/alias2related`][@stdlib/namespace/alias2related]: return aliases related to a specified alias.
--   [`@stdlib/namespace/aliases`][@stdlib/namespace/aliases]: standard library aliases.
--   [`@stdlib/namespace/pkg2alias`][@stdlib/namespace/pkg2alias]: return the alias associated with a specified package name.
+-   <span class="package-name">[`@stdlib/namespace/alias2related`][@stdlib/namespace/alias2related]</span><span class="delimiter">: </span><span class="description">return aliases related to a specified alias.</span>
+-   <span class="package-name">[`@stdlib/namespace/aliases`][@stdlib/namespace/aliases]</span><span class="delimiter">: </span><span class="description">standard library aliases.</span>
+-   <span class="package-name">[`@stdlib/namespace/pkg2alias`][@stdlib/namespace/pkg2alias]</span><span class="delimiter">: </span><span class="description">return the alias associated with a specified package name.</span>
 
 </section>
 

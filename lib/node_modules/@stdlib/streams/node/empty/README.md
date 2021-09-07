@@ -211,7 +211,7 @@ $ empty-stream
 
 ## See Also
 
--   [`@stdlib/streams/node/from-constant`][@stdlib/streams/node/from-constant]: create a readable stream which always streams the same value.
+-   <span class="package-name">[`@stdlib/streams/node/from-constant`][@stdlib/streams/node/from-constant]</span><span class="delimiter">: </span><span class="description">create a readable stream which always streams the same value.</span>
 
 </section>
 

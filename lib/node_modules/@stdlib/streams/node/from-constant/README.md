@@ -305,8 +305,8 @@ $ constant-stream 'beep' -n 10
 
 ## See Also
 
--   [`@stdlib/streams/node/from-array`][@stdlib/streams/node/from-array]: create a readable stream from an array-like object.
--   [`@stdlib/streams/node/from-iterator`][@stdlib/streams/node/from-iterator]: create a readable stream from an iterator.
+-   <span class="package-name">[`@stdlib/streams/node/from-array`][@stdlib/streams/node/from-array]</span><span class="delimiter">: </span><span class="description">create a readable stream from an array-like object.</span>
+-   <span class="package-name">[`@stdlib/streams/node/from-iterator`][@stdlib/streams/node/from-iterator]</span><span class="delimiter">: </span><span class="description">create a readable stream from an iterator.</span>
 
 </section>
 

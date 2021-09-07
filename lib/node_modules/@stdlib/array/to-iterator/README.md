@@ -215,10 +215,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
--   [`@stdlib/array/to-circular-iterator`][@stdlib/array/to-circular-iterator]: create an iterator which repeatedly iterates over the elements of an array-like object.
--   [`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]: create an iterator from an array-like object, iterating from right to left.
--   [`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]: create an iterator from a strided array-like object.
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="package-name">[`@stdlib/array/to-circular-iterator`][@stdlib/array/to-circular-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator which repeatedly iterates over the elements of an array-like object.</span>
+-   <span class="package-name">[`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from a strided array-like object.</span>
 
 </section>
 

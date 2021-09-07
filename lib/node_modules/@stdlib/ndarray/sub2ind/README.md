@@ -189,9 +189,9 @@ for ( k = 0; k < shape[ 2 ]; k++ ) {
 
 ## See Also
 
--   [`@stdlib/ndarray/array`][@stdlib/ndarray/array]: multidimensional arrays.
--   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
--   [`@stdlib/ndarray/ind2sub`][@stdlib/ndarray/ind2sub]: convert a linear index to an array of subscripts.
+-   <span class="package-name">[`@stdlib/ndarray/array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray/ind2sub`][@stdlib/ndarray/ind2sub]</span><span class="delimiter">: </span><span class="description">convert a linear index to an array of subscripts.</span>
 
 </section>
 

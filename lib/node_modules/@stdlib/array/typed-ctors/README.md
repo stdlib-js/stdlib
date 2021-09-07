@@ -122,7 +122,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/ctors`][@stdlib/array/ctors]: array constructors.
+-   <span class="package-name">[`@stdlib/array/ctors`][@stdlib/array/ctors]</span><span class="delimiter">: </span><span class="description">array constructors.</span>
 
 </section>
 

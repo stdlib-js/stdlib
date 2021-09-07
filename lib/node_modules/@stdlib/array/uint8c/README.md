@@ -1426,15 +1426,15 @@ console.log( arr );
 
 ## See Also
 
--   [`@stdlib/array/buffer`][@stdlib/array/buffer]: ArrayBuffer.
--   [`@stdlib/array/float32`][@stdlib/array/float32]: Float32Array.
--   [`@stdlib/array/float64`][@stdlib/array/float64]: Float64Array.
--   [`@stdlib/array/int16`][@stdlib/array/int16]: Int16Array.
--   [`@stdlib/array/int32`][@stdlib/array/int32]: Int32Array.
--   [`@stdlib/array/int8`][@stdlib/array/int8]: Int8Array.
--   [`@stdlib/array/uint16`][@stdlib/array/uint16]: Uint16Array.
--   [`@stdlib/array/uint32`][@stdlib/array/uint32]: Uint32Array.
--   [`@stdlib/array/uint8`][@stdlib/array/uint8]: Uint8Array.
+-   <span class="package-name">[`@stdlib/array/buffer`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">ArrayBuffer.</span>
+-   <span class="package-name">[`@stdlib/array/float32`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">Float32Array.</span>
+-   <span class="package-name">[`@stdlib/array/float64`][@stdlib/array/float64]</span><span class="delimiter">: </span><span class="description">Float64Array.</span>
+-   <span class="package-name">[`@stdlib/array/int16`][@stdlib/array/int16]</span><span class="delimiter">: </span><span class="description">Int16Array.</span>
+-   <span class="package-name">[`@stdlib/array/int32`][@stdlib/array/int32]</span><span class="delimiter">: </span><span class="description">Int32Array.</span>
+-   <span class="package-name">[`@stdlib/array/int8`][@stdlib/array/int8]</span><span class="delimiter">: </span><span class="description">Int8Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint16`][@stdlib/array/uint16]</span><span class="delimiter">: </span><span class="description">Uint16Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint32`][@stdlib/array/uint32]</span><span class="delimiter">: </span><span class="description">Uint32Array.</span>
+-   <span class="package-name">[`@stdlib/array/uint8`][@stdlib/array/uint8]</span><span class="delimiter">: </span><span class="description">Uint8Array.</span>
 
 </section>
 

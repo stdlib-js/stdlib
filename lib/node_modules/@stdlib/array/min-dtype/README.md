@@ -125,9 +125,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
--   [`@stdlib/array/promotion-rules`][@stdlib/array/promotion-rules]: return the array data type with the smallest size and closest kind to which array data types can be safely cast.
--   [`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]: return a list of array data types to which a provided array data type can be safely cast.
+-   <span class="package-name">[`@stdlib/array/dtypes`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
+-   <span class="package-name">[`@stdlib/array/promotion-rules`][@stdlib/array/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the array data type with the smallest size and closest kind to which array data types can be safely cast.</span>
+-   <span class="package-name">[`@stdlib/array/safe-casts`][@stdlib/array/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast.</span>
 
 </section>
 

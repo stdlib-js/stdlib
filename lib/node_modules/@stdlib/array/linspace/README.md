@@ -114,8 +114,8 @@ console.log( out.join( '\n' ) );
 
 ## See Also
 
--   [`@stdlib/array/incrspace`][@stdlib/array/incrspace]: generate a linearly spaced numeric array using a provided increment.
--   [`@stdlib/array/logspace`][@stdlib/array/logspace]: generate a logarithmically spaced numeric array.
+-   <span class="package-name">[`@stdlib/array/incrspace`][@stdlib/array/incrspace]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array using a provided increment.</span>
+-   <span class="package-name">[`@stdlib/array/logspace`][@stdlib/array/logspace]</span><span class="delimiter">: </span><span class="description">generate a logarithmically spaced numeric array.</span>
 
 </section>
 

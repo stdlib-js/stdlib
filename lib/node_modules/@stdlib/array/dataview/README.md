@@ -188,8 +188,8 @@ for ( i = 0; i < bytes.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/buffer`][@stdlib/array/buffer]: ArrayBuffer.
--   [`@stdlib/array/typed`][@stdlib/array/typed]: create a typed array.
+-   <span class="package-name">[`@stdlib/array/buffer`][@stdlib/array/buffer]</span><span class="delimiter">: </span><span class="description">ArrayBuffer.</span>
+-   <span class="package-name">[`@stdlib/array/typed`][@stdlib/array/typed]</span><span class="delimiter">: </span><span class="description">create a typed array.</span>
 
 </section>
 

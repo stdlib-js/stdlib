@@ -427,13 +427,13 @@ $ echo -n $'-1\n1\n1\n1\n1\n-1\n-1\n1\n' | sparkline-updown
 
 ## See Also
 
--   [`@stdlib/plot`][@stdlib/plot]: standard library plotting.
--   [`@stdlib/plot/ctor`][@stdlib/plot/ctor]: 2-dimensional plot constructor.
--   [`@stdlib/plot/sparklines/unicode`][@stdlib/plot/sparklines/unicode]: create a Unicode sparkline.
--   [`@stdlib/plot/sparklines/unicode/column`][@stdlib/plot/sparklines/unicode/column]: create a Unicode sparkline column chart.
--   [`@stdlib/plot/sparklines/unicode/line`][@stdlib/plot/sparklines/unicode/line]: create a Unicode sparkline line chart.
--   [`@stdlib/plot/sparklines/unicode/tristate`][@stdlib/plot/sparklines/unicode/tristate]: create a Unicode sparkline tristate chart.
--   [`@stdlib/plot/sparklines/unicode/win-loss`][@stdlib/plot/sparklines/unicode/win-loss]: create a Unicode sparkline win/loss chart.
+-   <span class="package-name">[`@stdlib/plot`][@stdlib/plot]</span><span class="delimiter">: </span><span class="description">standard library plotting.</span>
+-   <span class="package-name">[`@stdlib/plot/ctor`][@stdlib/plot/ctor]</span><span class="delimiter">: </span><span class="description">2-dimensional plot constructor.</span>
+-   <span class="package-name">[`@stdlib/plot/sparklines/unicode`][@stdlib/plot/sparklines/unicode]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline.</span>
+-   <span class="package-name">[`@stdlib/plot/sparklines/unicode/column`][@stdlib/plot/sparklines/unicode/column]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline column chart.</span>
+-   <span class="package-name">[`@stdlib/plot/sparklines/unicode/line`][@stdlib/plot/sparklines/unicode/line]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline line chart.</span>
+-   <span class="package-name">[`@stdlib/plot/sparklines/unicode/tristate`][@stdlib/plot/sparklines/unicode/tristate]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline tristate chart.</span>
+-   <span class="package-name">[`@stdlib/plot/sparklines/unicode/win-loss`][@stdlib/plot/sparklines/unicode/win-loss]</span><span class="delimiter">: </span><span class="description">create a Unicode sparkline win/loss chart.</span>
 
 </section>
 

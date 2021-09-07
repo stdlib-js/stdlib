@@ -1476,7 +1476,7 @@ function onRender( html ) {
 
 ## See Also
 
--   [`@stdlib/plot`][@stdlib/plot]: standard library plotting.
+-   <span class="package-name">[`@stdlib/plot`][@stdlib/plot]</span><span class="delimiter">: </span><span class="description">standard library plotting.</span>
 
 </section>
 

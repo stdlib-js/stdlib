@@ -292,10 +292,10 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
--   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: create an iterator from an array-like object.
--   [`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]: create an iterator from a strided array-like object.
--   [`@stdlib/array/to-view-iterator-right`][@stdlib/array/to-view-iterator-right]: create an iterator from an array-like object view, iterating from right to left.
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="package-name">[`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object.</span>
+-   <span class="package-name">[`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from a strided array-like object.</span>
+-   <span class="package-name">[`@stdlib/array/to-view-iterator-right`][@stdlib/array/to-view-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object view, iterating from right to left.</span>
 
 </section>
 

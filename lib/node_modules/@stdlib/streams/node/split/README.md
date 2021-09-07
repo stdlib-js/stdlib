@@ -201,7 +201,7 @@ stream.end();
 
 ## See Also
 
--   [`@stdlib/streams/node/join`][@stdlib/streams/node/join]: transform stream which joins streamed data.
+-   <span class="package-name">[`@stdlib/streams/node/join`][@stdlib/streams/node/join]</span><span class="delimiter">: </span><span class="description">transform stream which joins streamed data.</span>
 
 </section>
 

@@ -132,10 +132,10 @@ bool = isdtype( 'beep' );
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
--   [`@stdlib/ndarray/array`][@stdlib/ndarray/array]: multidimensional arrays.
--   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
--   [`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]: list of typed array data types.
+-   <span class="package-name">[`@stdlib/array/dtypes`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
+-   <span class="package-name">[`@stdlib/ndarray/array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array data types.</span>
 
 </section>
 

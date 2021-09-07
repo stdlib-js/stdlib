@@ -127,7 +127,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/convert-same`][@stdlib/array/convert-same]: convert an array to the same data type as a second input array.
+-   <span class="package-name">[`@stdlib/array/convert-same`][@stdlib/array/convert-same]</span><span class="delimiter">: </span><span class="description">convert an array to the same data type as a second input array.</span>
 
 </section>
 

@@ -227,7 +227,7 @@ stream.pipe( iStream );
 
 ## See Also
 
--   [`@stdlib/streams/node/from-array`][@stdlib/streams/node/from-array]: create a readable stream from an array-like object.
+-   <span class="package-name">[`@stdlib/streams/node/from-array`][@stdlib/streams/node/from-array]</span><span class="delimiter">: </span><span class="description">create a readable stream from an array-like object.</span>
 
 </section>
 

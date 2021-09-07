@@ -106,7 +106,7 @@ console.log( headerDir );
 
 <!-- lint disable maximum-heading-length -->
 
-#### stdlib_ndarray_napi_addon_arguments( env, argv, nargs, nin, \*arrays[], \*err )
+#### stdlib_ndarray_napi_addon_arguments( env, argv, nargs, nin, \*arrays\[], \*err )
 
 Validates, extracts, and transforms (to native C types) function arguments provided to an ndarray Node-API add-on interface.
 
@@ -184,6 +184,7 @@ The function returns a `napi_status` status code indicating success or failure (
     ```text
     [ ib1, im1, ib2, im2, ..., ob1, om1, ob2, om2, ... ]
     ```
+
     where
 
     -   `ib#` is a data buffer for an input ndarray.

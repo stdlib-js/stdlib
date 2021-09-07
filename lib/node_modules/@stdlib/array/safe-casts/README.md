@@ -127,11 +127,11 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/convert`][@stdlib/array/convert]: convert an array to an array of a different data type.
--   [`@stdlib/array/convert-same`][@stdlib/array/convert-same]: convert an array to the same data type as a second input array.
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
--   [`@stdlib/array/same-kind-casts`][@stdlib/array/same-kind-casts]: return a list of array data types to which a provided array data type can be safely cast or cast within the same kind.
--   [`@stdlib/ndarray/safe-casts`][@stdlib/ndarray/safe-casts]: return a list of ndarray data types to which a provided ndarray data type can be safely cast.
+-   <span class="package-name">[`@stdlib/array/convert`][@stdlib/array/convert]</span><span class="delimiter">: </span><span class="description">convert an array to an array of a different data type.</span>
+-   <span class="package-name">[`@stdlib/array/convert-same`][@stdlib/array/convert-same]</span><span class="delimiter">: </span><span class="description">convert an array to the same data type as a second input array.</span>
+-   <span class="package-name">[`@stdlib/array/dtypes`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
+-   <span class="package-name">[`@stdlib/array/same-kind-casts`][@stdlib/array/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of array data types to which a provided array data type can be safely cast or cast within the same kind.</span>
+-   <span class="package-name">[`@stdlib/ndarray/safe-casts`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
 
 </section>
 

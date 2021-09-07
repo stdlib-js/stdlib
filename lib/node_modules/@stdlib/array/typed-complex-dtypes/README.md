@@ -121,9 +121,9 @@ bool = isdtype( 'beep' );
 
 ## See Also
 
--   [`@stdlib/array/dtypes`][@stdlib/array/dtypes]: list of array data types.
--   [`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]: list of typed array data types.
--   [`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]: list of ndarray data types.
+-   <span class="package-name">[`@stdlib/array/dtypes`][@stdlib/array/dtypes]</span><span class="delimiter">: </span><span class="description">list of array data types.</span>
+-   <span class="package-name">[`@stdlib/array/typed-dtypes`][@stdlib/array/typed-dtypes]</span><span class="delimiter">: </span><span class="description">list of typed array data types.</span>
+-   <span class="package-name">[`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 
 </section>
 

@@ -248,7 +248,7 @@ s1.end();
 
 ## See Also
 
--   [`@stdlib/streams/node/debug`][@stdlib/streams/node/debug]: transform stream for debugging stream pipelines.
+-   <span class="package-name">[`@stdlib/streams/node/debug`][@stdlib/streams/node/debug]</span><span class="delimiter">: </span><span class="description">transform stream for debugging stream pipelines.</span>
 
 </section>
 

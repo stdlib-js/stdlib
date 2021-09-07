@@ -127,9 +127,9 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/ndarray/casting-modes`][@stdlib/ndarray/casting-modes]: list of ndarray casting modes.
--   [`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]: list of ndarray data types.
--   [`@stdlib/ndarray/same-kind-casts`][@stdlib/ndarray/same-kind-casts]: return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same kind.
+-   <span class="package-name">[`@stdlib/ndarray/casting-modes`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="package-name">[`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
+-   <span class="package-name">[`@stdlib/ndarray/same-kind-casts`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same kind.</span>
 
 </section>
 

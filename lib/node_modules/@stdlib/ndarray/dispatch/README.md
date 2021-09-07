@@ -255,8 +255,8 @@ console.log( ybuf );
 
 ## See Also
 
--   [`@stdlib/ndarray/array`][@stdlib/ndarray/array]: multidimensional arrays.
--   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
+-   <span class="package-name">[`@stdlib/ndarray/array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
 
 </section>
 

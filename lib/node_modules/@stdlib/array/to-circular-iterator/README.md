@@ -297,8 +297,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]: create an iterator from an array-like object.
--   [`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]: create an iterator from a strided array-like object.
+-   <span class="package-name">[`@stdlib/array/to-iterator`][@stdlib/array/to-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object.</span>
+-   <span class="package-name">[`@stdlib/array/to-strided-iterator`][@stdlib/array/to-strided-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from a strided array-like object.</span>
 
 </section>
 

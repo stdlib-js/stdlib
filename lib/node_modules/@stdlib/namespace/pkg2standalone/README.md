@@ -185,11 +185,11 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/namespace/alias2pkg`][@stdlib/namespace/alias2pkg]: return the package name associated with a specified alias.
--   [`@stdlib/namespace/alias2standalone`][@stdlib/namespace/alias2standalone]: return the standalone package name associated with a specified alias.
--   [`@stdlib/namespace/aliases`][@stdlib/namespace/aliases]: standard library aliases.
--   [`@stdlib/namespace/pkg2alias`][@stdlib/namespace/pkg2alias]: return the alias associated with a specified package name.
--   [`@stdlib/namespace/pkg2related`][@stdlib/namespace/pkg2related]: return package names related to a specified package name.
+-   <span class="package-name">[`@stdlib/namespace/alias2pkg`][@stdlib/namespace/alias2pkg]</span><span class="delimiter">: </span><span class="description">return the package name associated with a specified alias.</span>
+-   <span class="package-name">[`@stdlib/namespace/alias2standalone`][@stdlib/namespace/alias2standalone]</span><span class="delimiter">: </span><span class="description">return the standalone package name associated with a specified alias.</span>
+-   <span class="package-name">[`@stdlib/namespace/aliases`][@stdlib/namespace/aliases]</span><span class="delimiter">: </span><span class="description">standard library aliases.</span>
+-   <span class="package-name">[`@stdlib/namespace/pkg2alias`][@stdlib/namespace/pkg2alias]</span><span class="delimiter">: </span><span class="description">return the alias associated with a specified package name.</span>
+-   <span class="package-name">[`@stdlib/namespace/pkg2related`][@stdlib/namespace/pkg2related]</span><span class="delimiter">: </span><span class="description">return package names related to a specified package name.</span>
 
 </section>
 

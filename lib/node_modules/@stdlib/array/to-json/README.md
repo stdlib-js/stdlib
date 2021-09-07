@@ -230,7 +230,7 @@ json = toJSON( arr );
 
 ## See Also
 
--   [`@stdlib/array/reviver`][@stdlib/array/reviver]: revive a JSON-serialized typed array.
+-   <span class="package-name">[`@stdlib/array/reviver`][@stdlib/array/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized typed array.</span>
 
 </section>
 

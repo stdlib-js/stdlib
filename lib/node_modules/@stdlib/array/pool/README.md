@@ -445,7 +445,7 @@ console.log( 'nbytes: %d', typedarray.nbytes );
 
 ## See Also
 
--   [`@stdlib/array/typed`][@stdlib/array/typed]: create a typed array.
+-   <span class="package-name">[`@stdlib/array/typed`][@stdlib/array/typed]</span><span class="delimiter">: </span><span class="description">create a typed array.</span>
 
 </section>
 

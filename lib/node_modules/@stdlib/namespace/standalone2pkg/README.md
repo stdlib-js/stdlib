@@ -183,9 +183,9 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   [`@stdlib/namespace/alias2standalone`][@stdlib/namespace/alias2standalone]: return the standalone package name associated with a specified alias.
--   [`@stdlib/namespace/pkg2alias`][@stdlib/namespace/pkg2alias]: return the alias associated with a specified package name.
--   [`@stdlib/namespace/pkg2standalone`][@stdlib/namespace/pkg2standalone]: return the standalone package name associated with a provided internal package name.
+-   <span class="package-name">[`@stdlib/namespace/alias2standalone`][@stdlib/namespace/alias2standalone]</span><span class="delimiter">: </span><span class="description">return the standalone package name associated with a specified alias.</span>
+-   <span class="package-name">[`@stdlib/namespace/pkg2alias`][@stdlib/namespace/pkg2alias]</span><span class="delimiter">: </span><span class="description">return the alias associated with a specified package name.</span>
+-   <span class="package-name">[`@stdlib/namespace/pkg2standalone`][@stdlib/namespace/pkg2standalone]</span><span class="delimiter">: </span><span class="description">return the standalone package name associated with a provided internal package name.</span>
 
 </section>
 

@@ -115,8 +115,8 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/ctors`][@stdlib/array/ctors]: array constructors.
--   [`@stdlib/array/typed-ctors`][@stdlib/array/typed-ctors]: typed array constructors.
+-   <span class="package-name">[`@stdlib/array/ctors`][@stdlib/array/ctors]</span><span class="delimiter">: </span><span class="description">array constructors.</span>
+-   <span class="package-name">[`@stdlib/array/typed-ctors`][@stdlib/array/typed-ctors]</span><span class="delimiter">: </span><span class="description">typed array constructors.</span>
 
 </section>
 

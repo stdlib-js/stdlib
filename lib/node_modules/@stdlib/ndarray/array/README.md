@@ -251,7 +251,7 @@ str = JSON.stringify( arr.toJSON() );
 
 ## See Also
 
--   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
 
 </section>
 

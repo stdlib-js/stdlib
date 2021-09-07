@@ -217,9 +217,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]: create (or fill) an array from an iterator.
--   [`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]: create an iterator from an array-like object, iterating from right to left.
--   [`@stdlib/array/to-sparse-iterator`][@stdlib/array/to-sparse-iterator]: create an iterator from a sparse array-like object.
+-   <span class="package-name">[`@stdlib/array/from-iterator`][@stdlib/array/from-iterator]</span><span class="delimiter">: </span><span class="description">create (or fill) an array from an iterator.</span>
+-   <span class="package-name">[`@stdlib/array/to-iterator-right`][@stdlib/array/to-iterator-right]</span><span class="delimiter">: </span><span class="description">create an iterator from an array-like object, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/array/to-sparse-iterator`][@stdlib/array/to-sparse-iterator]</span><span class="delimiter">: </span><span class="description">create an iterator from a sparse array-like object.</span>
 
 </section>
 

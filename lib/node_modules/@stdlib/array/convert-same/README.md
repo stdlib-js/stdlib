@@ -138,7 +138,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/array/convert`][@stdlib/array/convert]: convert an array to an array of a different data type.
+-   <span class="package-name">[`@stdlib/array/convert`][@stdlib/array/convert]</span><span class="delimiter">: </span><span class="description">convert an array to an array of a different data type.</span>
 
 </section>
 
