@@ -895,7 +895,7 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/array/complex128`][@stdlib/array/complex128]: complex128Array.
+-   [`@stdlib/array/complex128`][@stdlib/array/complex128]: Complex128Array.
 -   [`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]: create a complex number.
 -   [`@stdlib/complex/float32`][@stdlib/complex/float32]: 64-bit complex number.
 

@@ -188,15 +188,15 @@ console.log( arr );
 
 ## See Also
 
--   [`@stdlib/array/float64`][@stdlib/array/float64]: float64Array.
--   [`@stdlib/array/float32`][@stdlib/array/float32]: float32Array.
--   [`@stdlib/array/int32`][@stdlib/array/int32]: int32Array.
--   [`@stdlib/array/uint32`][@stdlib/array/uint32]: uint32Array.
--   [`@stdlib/array/int16`][@stdlib/array/int16]: int16Array.
--   [`@stdlib/array/uint16`][@stdlib/array/uint16]: uint16Array.
--   [`@stdlib/array/int8`][@stdlib/array/int8]: int8Array.
--   [`@stdlib/array/uint8`][@stdlib/array/uint8]: uint8Array.
--   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: uint8ClampedArray.
+-   [`@stdlib/array/float64`][@stdlib/array/float64]: Float64Array.
+-   [`@stdlib/array/float32`][@stdlib/array/float32]: Float32Array.
+-   [`@stdlib/array/int32`][@stdlib/array/int32]: Int32Array.
+-   [`@stdlib/array/uint32`][@stdlib/array/uint32]: Uint32Array.
+-   [`@stdlib/array/int16`][@stdlib/array/int16]: Int16Array.
+-   [`@stdlib/array/uint16`][@stdlib/array/uint16]: Uint16Array.
+-   [`@stdlib/array/int8`][@stdlib/array/int8]: Int8Array.
+-   [`@stdlib/array/uint8`][@stdlib/array/uint8]: Uint8Array.
+-   [`@stdlib/array/uint8c`][@stdlib/array/uint8c]: Uint8ClampedArray.
 
 </section>
 

@@ -232,13 +232,13 @@ for ( i = 0; i < bytes.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]: buffer.
--   [`@stdlib/array/float32`][@stdlib/array/float32]: float32Array.
+-   [`@stdlib/buffer/ctor`][@stdlib/buffer/ctor]: Buffer.
+-   [`@stdlib/array/float32`][@stdlib/array/float32]: Float32Array.
 -   [`@stdlib/array/float64`][@stdlib/array/float64]: Float64Array.
 -   [`@stdlib/array/int16`][@stdlib/array/int16]: Int16Array.
 -   [`@stdlib/array/int32`][@stdlib/array/int32]: Int32Array.
 -   [`@stdlib/array/int8`][@stdlib/array/int8]: Int8Array.
--   [`@stdlib/array/shared-buffer`][@stdlib/array/shared-buffer]: sharedArrayBuffer.
+-   [`@stdlib/array/shared-buffer`][@stdlib/array/shared-buffer]: SharedArrayBuffer.
 -   [`@stdlib/array/uint16`][@stdlib/array/uint16]: Uint16Array.
 -   [`@stdlib/array/uint32`][@stdlib/array/uint32]: Uint32Array.
 -   [`@stdlib/array/uint8`][@stdlib/array/uint8]: Uint8Array.
