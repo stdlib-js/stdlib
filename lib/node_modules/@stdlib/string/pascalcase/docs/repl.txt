@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to Pascal case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Pascal-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'HelloWorld'
+    > out = {{alias}}( 'beep boop' )
+    'BeepBoop'
+
+    See Also
+    --------
