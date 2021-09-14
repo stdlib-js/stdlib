@@ -33,7 +33,7 @@ interface Options {
 /**
 * Generates an acronym for a given string.
 *
-* @param str - string to pad
+* @param str - input string
 * @param options - function options
 * @param options.stopwords - custom stop words
 * @returns generated acronym

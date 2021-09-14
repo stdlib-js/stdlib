@@ -40,7 +40,7 @@ limitations under the License.
 var acronym = require( '@stdlib/string/acronym' );
 ```
 
-#### acronym()
+#### acronym( str[, options] )
 
 Generates an acronym for a given string.
 
@@ -54,9 +54,10 @@ out = acronym( 'Hard-boiled eggs' );
 
 The function accepts the following `options`:
 
--   **stopwords**: `string` array of custom stopwords.
+-   **stopwords**: list of custom stop words. If not specified, the function uses [@stdlib/datasets/stopwords-en][@stdlib/datasets/stopwords-en].
 
-By default, the function uses a list of common English stopwords. To use a custom list, pass an array of stopwords to the `stopwords` option.
+
+By default, the function uses a list of common English stop words. To use a custom list, set the `stopwords` option.
 
 ```javascript
 var out = acronym( 'the quick brown fox', {
@@ -138,7 +139,7 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
-         --stopwords str       Comma-separated list of custom keywords.
+         --stopwords str       Comma-separated list of custom stop words.
 ```
 
 </section>
@@ -183,6 +184,8 @@ QBF
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/datasets/stopwords-en]: https://github.com/stdlib-js/stdlib
 
 </section>
 
