@@ -1,0 +1,28 @@
+{{alias}}( str[, options] )
+    Generates an acronym for a given string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    options: Object (optional)
+        Options.
+
+    options.stopwords: Array<string> (optional)
+        Array of custom stop words.
+
+    Returns
+    -------
+    out: string
+        Acronym for the given string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'the quick brown fox' )
+    'QBF'
+    > out = {{alias}}( 'Hard-boiled eggs' )
+    'HBE'
+
+    See Also
+    --------

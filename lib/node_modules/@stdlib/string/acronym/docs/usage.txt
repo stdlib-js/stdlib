@@ -1,0 +1,8 @@
+
+Usage: acronym [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --stopwords str       Comma-separated list of custom keywords.
