@@ -93,6 +93,10 @@ out = truncate( str, 19, '!' );
 str = 'The quick fox jumps over the lazy dog.';
 out = truncate( str, 16, '...' );
 // returns 'The quick fox...'
+
+str = '🐺 Wolf Brothers 🐺';
+out = truncate( str, 6 );
+// returns '🐺 W...'
 ```
 
 </section>
