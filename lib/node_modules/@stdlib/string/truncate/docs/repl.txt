@@ -1,5 +1,5 @@
 {{alias}}( str, len[, ending] )
-    Truncates a string to a given length.
+    Truncates a string to a specified length.
 
     Parameters
     ----------

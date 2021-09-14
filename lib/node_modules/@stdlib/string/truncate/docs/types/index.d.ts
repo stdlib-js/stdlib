@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* Truncates a string to a given length.
+* Truncates a string to a specified length.
 *
 * @param str - input string
 * @param len - output string length (including ending)

@@ -1,5 +1,8 @@
 {
-	"string": [],
+	"string": [
+		"len",
+		"ending"
+	],
 	"boolean": [
 		"help",
 		"version"

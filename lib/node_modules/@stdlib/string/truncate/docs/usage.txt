@@ -6,4 +6,4 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --len length          String length.
-         --ending str          Custom ending (default: '...').
+         --ending str          Custom ending. Default: '...'.
