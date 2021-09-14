@@ -1,0 +1,9 @@
+
+Usage: truncate [options] [<string>] --len <length>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --len length          String length.
+         --ending str          Custom ending (default: '...').
