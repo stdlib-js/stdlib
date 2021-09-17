@@ -1,0 +1,30 @@
+{{alias}}( str, len[, seq] )
+    Truncates a string in the middle to a specified length.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    len: integer
+        Output string length.
+
+    seq: string (optional)
+        Custom replacement sequence. Default: '...'.
+
+    Returns
+    -------
+    out: string
+        Truncated string.
+
+    Examples
+    --------
+    > var str = 'beep boop';
+    > var out = {{alias}}( str, 5 )
+    'b...p'
+
+    > out = {{alias}}( str, 5, '|' )
+    'be|op'
+
+    See Also
+    --------
