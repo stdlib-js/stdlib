@@ -49,7 +49,7 @@ var out = truncateMiddle( 'beep boop', 7 );
 // returns 'be...op'
 ```
 
-By default, the truncated string uses the replacement sequence `'...'` in the middle. To customize the replacement sequence, provide a `seq` argument:
+By default, the truncated string uses the replacement sequence `'...'`. To customize the replacement sequence, provide a `seq` argument:
 
 ```javascript
 var out = truncateMiddle( 'beep boop', 7, '!' );
@@ -87,7 +87,7 @@ var out = truncateMiddle( str, 15 );
 // returns 'Lorem ... elit.'
 
 str = 'To be or not to be, that is the question';
-out = truncateMiddle( str, 19, '!' );
+out = truncateMiddle( str, 19, '|' );
 // returns 'To be or | question'
 
 str = 'The quick fox jumps over the lazy dog.';
