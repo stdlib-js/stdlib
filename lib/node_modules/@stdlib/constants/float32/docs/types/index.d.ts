@@ -44,7 +44,7 @@ interface Namespace {
 	*
 	* @example
 	* var eps = ns.CBRT_EPS;
-	* // returns 0.004921566601151848
+	* // returns 0.004921566694974899
 	*/
 	CBRT_EPS: typeof CBRT_EPS;
 
