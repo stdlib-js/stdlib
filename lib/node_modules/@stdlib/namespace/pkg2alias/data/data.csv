@@ -1,4 +1,5 @@
 "@stdlib/math/special/abs",abs
+"@stdlib/string/acronym",acronym
 "@stdlib/datasets/afinn-96",AFINN_96
 "@stdlib/datasets/afinn-111",AFINN_111
 "@stdlib/namespace/alias2pkg",alias2pkg
@@ -1202,6 +1203,7 @@
 "@stdlib/buffer/ctor",Buffer
 "@stdlib/buffer/to-json",buffer2json
 "@stdlib/os/byte-order",BYTE_ORDER
+"@stdlib/string/camelcase",camelcase
 "@stdlib/string/capitalize",capitalize
 "@stdlib/utils/capitalize-keys",capitalizeKeys
 "@stdlib/constants/float64/catalan",CATALAN
@@ -1229,6 +1231,7 @@
 "@stdlib/utils/async/compose",composeAsync
 "@stdlib/os/configdir",configdir
 "@stdlib/complex/conj",conj
+"@stdlib/string/constantcase",constantcase
 "@stdlib/utils/constant-function",constantFunction
 "@stdlib/streams/node/from-constant",constantStream
 "@stdlib/utils/constructor-name",constructorName
@@ -2051,6 +2054,7 @@
 "@stdlib/math/iter/special/riemann-zeta",iterZeta
 "@stdlib/streams/node/join",joinStream
 "@stdlib/stats/kde2d",kde2d
+"@stdlib/string/kebabcase",kebabcase
 "@stdlib/utils/key-by",keyBy
 "@stdlib/utils/key-by-right",keyByRight
 "@stdlib/utils/keys-in",keysIn
@@ -2156,6 +2160,7 @@
 "@stdlib/utils/papply-right",papplyRight
 "@stdlib/utils/parallel",parallel
 "@stdlib/utils/parse-json",parseJSON
+"@stdlib/string/pascalcase",pascalcase
 "@stdlib/constants/path/delimiter",PATH_DELIMITER
 "@stdlib/constants/path/delimiter-posix",PATH_DELIMITER_POSIX
 "@stdlib/constants/path/delimiter-win32",PATH_DELIMITER_WIN32
@@ -2373,6 +2378,7 @@
 "@stdlib/utils/shift",shift
 "@stdlib/random/shuffle",shuffle
 "@stdlib/utils/size-of",sizeOf
+"@stdlib/string/snakecase",snakecase
 "@stdlib/utils/some",some
 "@stdlib/utils/some-by",someBy
 "@stdlib/utils/async/some-by",someByAsync
@@ -2463,6 +2469,10 @@
 "@stdlib/streams/node/from-strided-array",stridedArrayStream
 "@stdlib/buffer/from-string",string2buffer
 "@stdlib/ndarray/sub2ind",sub2ind
+"@stdlib/string/substring-after",substringAfter
+"@stdlib/string/substring-after-last",substringAfterLast
+"@stdlib/string/substring-before",substringBefore
+"@stdlib/string/substring-before-last",substringBeforeLast
 "@stdlib/datasets/suthaharan-multi-hop-sensor-network",SUTHAHARAN_MULTI_HOP_SENSOR_NETWORK
 "@stdlib/datasets/suthaharan-single-hop-sensor-network",SUTHAHARAN_SINGLE_HOP_SENSOR_NETWORK
 "@stdlib/symbol/ctor",Symbol
@@ -2476,6 +2486,8 @@
 "@stdlib/nlp/tokenize",tokenize
 "@stdlib/streams/node/transform",transformStream
 "@stdlib/string/trim",trim
+"@stdlib/string/truncate",truncate
+"@stdlib/string/truncate-middle",truncateMiddle
 "@stdlib/utils/try-catch",trycatch
 "@stdlib/utils/async/try-catch",trycatchAsync
 "@stdlib/utils/try-function",tryFunction
