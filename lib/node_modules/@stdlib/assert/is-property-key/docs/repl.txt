@@ -15,11 +15,9 @@
     --------
     > var out = {{alias}}( 'foo' )
     true
-
-    > var out = {{alias}}( 1 )
+    > out = {{alias}}( 1 )
     true
-
-    > var out = {{alias}}( true )
+    > out = {{alias}}( true )
     false
 
     See Also

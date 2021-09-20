@@ -63,6 +63,7 @@ bool = isPropertyKey( 3.14 );
 ## Notes
 
 -   A valid property key is either a string, symbol, or a nonnegative integer. For example, `'beep'`, `Symbol( 'beep' )`, and `3` are all valid property keys.
+-   Only primitive values are considered to be valid property keys. This excludes object wrappers such as `new String( 'beep' )`.
 
 </section>
 
@@ -78,16 +79,19 @@ bool = isPropertyKey( 3.14 );
 
 ```javascript
 var Symbol = require( '@stdlib/symbol/ctor' );
+var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var isPropertyKey = require( '@stdlib/assert/is-property-key' );
 
+var hasSymbols = hasSymbolSupport();
 var bool = isPropertyKey( 'beep' );
 // returns true
 
-bool = isPropertyKey( Symbol( 'beep' ) );
-// returns true
-
-bool = isPropertyKey( Symbol.iterator );
-// returns true
+if ( hasSymbols ) {
+    bool = isPropertyKey( Symbol( 'beep' ) );
+    // returns true
+} else {
+    console.log( 'Environment does not support symbols.' );
+}
 
 bool = isPropertyKey( 37 );
 // returns true

@@ -35,10 +35,6 @@
 * // returns true
 *
 * @example
-* var bool = isPropertyKey( Symbol.iterator );
-* // returns true
-*
-* @example
 * var bool = isPropertyKey( 37 );
 * // returns true
 *
