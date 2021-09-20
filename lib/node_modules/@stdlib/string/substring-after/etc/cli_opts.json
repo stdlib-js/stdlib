@@ -1,6 +1,7 @@
 {
 	"string": [
-		"search"
+		"search",
+    "fromIndex"
 	],
 	"boolean": [
 		"help",

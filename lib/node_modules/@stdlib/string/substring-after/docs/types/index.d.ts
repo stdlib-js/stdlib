@@ -25,6 +25,7 @@
 *
 * @param str - input string
 * @param search - search string
+* @param fromIndex - index at which to start the search (default: 0)
 * @returns substring
 *
 * @example
@@ -42,8 +43,16 @@
 * @example
 * var out = substringAfter( 'beep boop', 'xyz' );
 * // returns ''
+*
+* @example
+* var out = substringAfter( 'beep boop', 'beep', 5 );
+* // returns ''
+*
+* @example
+* var out = substringAfter( 'beep boop beep baz', 'beep', 5 );
+* // returns ' baz'
 */
-declare function substringAfter( str: string, search: string ): string;
+declare function substringAfter( str: string, search: string, fromIndex?: number ): string; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
