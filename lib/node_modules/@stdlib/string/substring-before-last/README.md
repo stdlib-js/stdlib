@@ -61,6 +61,11 @@ out = substringBeforeLast( str, 'Boop' );
 
 <section class="notes">
 
+## Notes
+
+-   If a substring is not present in a provided string, the function returns the input string.
+-   If provided an empty substring, the function returns the input string.
+
 </section>
 
 <!-- /.notes -->

@@ -61,6 +61,11 @@ out = substringBefore( str, 'o' );
 
 <section class="notes">
 
+## Notes
+
+-   If a substring is not present in a provided string, the function returns the input string.
+-   If provided an empty substring, the function returns an empty string.
+
 </section>
 
 <!-- /.notes -->

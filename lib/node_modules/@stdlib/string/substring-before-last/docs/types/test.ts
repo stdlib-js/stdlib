@@ -21,7 +21,7 @@ import substringBeforeLast = require( './index' );
 
 // TESTS //
 
-// The function returns a string
+// The function returns a string...
 {
 	substringBeforeLast( 'beep boop', ' ' ); // $ExpectType string
 	substringBeforeLast( 'beep boop', 'xyz' ); // $ExpectType string

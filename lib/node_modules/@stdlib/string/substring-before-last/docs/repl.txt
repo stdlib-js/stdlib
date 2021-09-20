@@ -20,7 +20,6 @@
     > var str = 'Beep Boop Beep';
     > var out = {{alias}}( str, 'Beep' )
     'Beep Boop '
-
     > out = {{alias}}( str, 'Boop' )
     'Beep '
 
