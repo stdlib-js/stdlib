@@ -25,7 +25,7 @@
 *
 * @param str - input string
 * @param search - search value
-* @param fromIndex - index of last character to be considered beginning of a match (default: `+Infinity`)
+* @param fromIndex - index of last character to be considered beginning of a match (default: `str.length`)
 * @returns substring
 *
 * @example

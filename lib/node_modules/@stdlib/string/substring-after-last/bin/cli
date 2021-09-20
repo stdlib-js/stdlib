@@ -25,7 +25,6 @@
 var resolve = require( 'path' ).resolve;
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var CLI = require( '@stdlib/cli/ctor' );
-var Number = require( '@stdlib/number/ctor' );
 var stdin = require( '@stdlib/process/read-stdin' );
 var stdinStream = require( '@stdlib/streams/node/stdin' );
 var reEOL = require( '@stdlib/regexp/eol' );
@@ -74,8 +73,8 @@ function main() {
 	if ( !stdinStream.isTTY ) {
 		return stdin( onRead );
 	}
-	if ( flags.fromIndex ) {
-		console.log( substringAfterLast( str, flags.search, Number( flags.fromIndex ) ) ); // eslint-disable-line no-console, max-len
+	if ( flags[ 'from-index' ] ) {
+		console.log( substringAfterLast( str, flags.search, parseInt( flags[ 'from-index' ], 10 ) ) ); // eslint-disable-line no-console
 	} else {
 		console.log( substringAfterLast( str, flags.search ) ); // eslint-disable-line no-console
 	}
@@ -89,15 +88,17 @@ function main() {
 	* @returns {void}
 	*/
 	function onRead( error, data ) {
+		var fromIndex;
 		var lines;
 		var i;
 		if ( error ) {
 			return cli.error( error );
 		}
 		lines = data.toString().split( reEOL.REGEXP );
-		if ( flags.fromIndex ) {
+		if ( flags[ 'from-index' ] ) {
+			fromIndex = parseInt( flags[ 'from-index' ], 10 );
 			for ( i = 0; i < lines.length; i++ ) {
-				console.log( substringAfterLast( lines[ i ], flags.search, Number( flags.fromIndex ) ) ); // eslint-disable-line no-console, max-len
+				console.log( substringAfterLast( lines[ i ], flags.search, fromIndex ) ); // eslint-disable-line no-console, max-len
 			}
 		} else {
 			for ( i = 0; i < lines.length; i++ ) {

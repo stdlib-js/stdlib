@@ -12,7 +12,7 @@
 
     fromIndex: integer (optional)
         Index of last character to be considered beginning of a match.
-        Default: `+Infinity`.
+        Default: `str.length`.
 
     Returns
     -------

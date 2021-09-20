@@ -40,7 +40,7 @@ limitations under the License.
 var substringAfter = require( '@stdlib/string/substring-after' );
 ```
 
-#### substringAfter( str, search\[, fromIndex=0] )
+#### substringAfter( str, search\[, fromIndex] )
 
 Returns the part of a string after a specified substring.
 
@@ -53,7 +53,7 @@ out = substringAfter( str, ' ' );
 // returns 'boop'
 ```
 
-By default, the search starts at the beginning of the string. To start the search at a different index, provide a `fromIndex` argument:
+By default, the search starts at the beginning of the string. To start searching from a different index, provide a `fromIndex` argument:
 
 ```javascript
 var str = 'boop baz boop';
@@ -73,7 +73,7 @@ var out = substringAfter( str, 'o', 3 );
 
 -   If a substring is not present in a provided string, the function returns an empty string.
 -   If provided an empty substring, the function returns the input string.
--   If `fromIndex` is lower than `0` or greater than `str.length`, the search starts at index `0` and `str.length`, respectively.
+-   If `fromIndex` is less than `0` or greater than `str.length`, the search starts at index `0` and `str.length`, respectively.
 
 </section>
 
@@ -133,7 +133,7 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --search string       Search string.
-         --fromIndex int       Start index. Default: 0.
+         --from-index int      Start index. Default: 0.
 ```
 
 </section>
