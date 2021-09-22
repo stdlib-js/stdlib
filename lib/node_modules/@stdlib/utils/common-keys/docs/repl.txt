@@ -1,0 +1,22 @@
+{{alias}}( ...obj )
+    Returns the common own property names of two or more objects.
+
+    Parameters
+    ----------
+    obj: ...Object
+        Two or more objects.
+
+    Returns
+    -------
+    out: Array<string>
+        Common keys of objects.
+
+    Examples
+    --------
+    > var obj1 = { 'a': 1, 'b': 2 };
+    > var obj2 = { 'a': 1, 'b': 2, 'c': 3, 'd': 4 };
+    > var keys = {{alias}}( obj1, obj2 )
+    [ 'a', 'b' ]
+
+    See Also
+    --------
