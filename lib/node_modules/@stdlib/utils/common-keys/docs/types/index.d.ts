@@ -25,7 +25,7 @@
 *
 * @param obj1 - first object
 * @param obj2 - second object
-* @param obj - optional additional objects
+* @param obj - additional objects
 * @returns common keys of objects
 *
 * @example
