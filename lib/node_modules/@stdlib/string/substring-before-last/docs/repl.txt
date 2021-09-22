@@ -1,0 +1,27 @@
+{{alias}}( str, search )
+    Returns the part of a string before the last occurrence of a specified
+    substring.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search value.
+
+    Returns
+    -------
+    out: string
+        Substring.
+
+    Examples
+    --------
+    > var str = 'Beep Boop Beep';
+    > var out = {{alias}}( str, 'Beep' )
+    'Beep Boop '
+    > out = {{alias}}( str, 'Boop' )
+    'Beep '
+
+    See Also
+    --------

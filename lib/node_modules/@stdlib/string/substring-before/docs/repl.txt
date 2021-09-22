@@ -1,0 +1,26 @@
+{{alias}}( str, search )
+    Returns the part of a string before a specified substring.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    Returns
+    -------
+    out: string
+        Substring.
+
+    Examples
+    --------
+    > var str = 'beep boop';
+    > var out = {{alias}}( str, ' ' )
+    'beep'
+    > out = {{alias}}( str, 'o' )
+    'beep b'
+
+    See Also
+    --------

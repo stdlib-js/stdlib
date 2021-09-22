@@ -1,0 +1,18 @@
+{
+	"string": [
+		"len",
+		"seq"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

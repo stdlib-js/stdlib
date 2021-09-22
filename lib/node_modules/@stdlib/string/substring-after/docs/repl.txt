@@ -1,0 +1,30 @@
+{{alias}}( str, search[, fromIndex] )
+    Returns the part of a string after a specified substring.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    fromIndex: integer (optional)
+        Index from which to start the search. Default: `0`.
+
+    Returns
+    -------
+    out: string
+        Substring.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!', 'World' )
+    '!'
+    > out = {{alias}}( 'Hello World!', 'Hello ' )
+    'World!'
+    > out = {{alias}}( 'Hello World!', 'l', 5 )
+    'd!'
+
+    See Also
+    --------

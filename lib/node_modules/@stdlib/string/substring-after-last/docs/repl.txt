@@ -1,0 +1,32 @@
+{{alias}}( str, search[, fromIndex] )
+    Returns the part of a string after the last occurrence of a specified
+    substring.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search value.
+
+    fromIndex: integer (optional)
+        Index of last character to be considered beginning of a match.
+        Default: `str.length`.
+
+    Returns
+    -------
+    out: string
+        Substring.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep boop beep baz', 'beep' )
+    ' baz'
+    > out = {{alias}}( 'Hello World!', 'Hello ' )
+    'World!'
+    > out = {{alias}}( 'Hello World!', 'o', 5 )
+    ' World!'
+
+    See Also
+    --------

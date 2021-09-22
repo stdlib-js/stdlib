@@ -58,7 +58,7 @@ interface Namespace {
 }
 
 /**
-* Standard library base math operators.
+* Standard library C APIs for registering a Node-API module exporting interfaces.
 */
 declare var ns: Namespace;
 
