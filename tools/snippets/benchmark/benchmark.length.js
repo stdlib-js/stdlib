@@ -39,9 +39,9 @@ function createBenchmark( len ) {
 	var x;
 	var i;
 
-	x = new Array( len );
+	x = [];
 	for ( i = 0; i < len; i++ ) {
-		x[ i ] = null; // TODO: set values
+		x.push( null ); // TODO: set values
 	}
 	return benchmark;
 
