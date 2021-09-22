@@ -1,10 +1,16 @@
-{{alias}}( ...obj )
+{{alias}}( obj1, obj2[, ...obj] )
     Returns the common own property names of two or more objects.
 
     Parameters
     ----------
-    obj: ...Object
-        Two or more objects.
+    obj1: any
+        First object.
+
+    obj2: any
+        Second object.
+
+    obj: ...any (optional)
+        Additional objects.
 
     Returns
     -------
