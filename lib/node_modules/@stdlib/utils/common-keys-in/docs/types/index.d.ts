@@ -26,7 +26,7 @@
 * @param obj1 - first object
 * @param obj2 - second object
 * @param obj - additional objects
-* @returns common keys of objects
+* @returns common keys
 *
 * @example
 * var obj = {

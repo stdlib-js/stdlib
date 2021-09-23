@@ -15,7 +15,7 @@
     Returns
     -------
     out: Array<string>
-        Common keys of objects.
+        Common keys.
 
     Examples
     --------
