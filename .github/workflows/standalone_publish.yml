@@ -83,7 +83,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
         run: |
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js --patch --skip-toplevel
 
       # Archive list of to be published packages:
       - name: 'Archive package list'
