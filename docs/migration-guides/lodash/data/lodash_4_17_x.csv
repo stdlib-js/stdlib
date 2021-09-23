@@ -240,7 +240,7 @@ valuesIn,utils/values-in
 chain,N/A
 tap,N/A
 thru,N/A
-camelCase,(planned)
+camelCase,string/camelcase
 capitalize,string/capitalize
 deburr,(maybe)
 endsWith,string/ends-with
@@ -255,7 +255,7 @@ padStart,string/left-pad
 parseInt,(planned)
 repeat,string/repeat
 replace,string/replace
-snakeCase,(planned)
+snakeCase,string/snakecase
 split,(planned)
 startCase,string/startcase
 startsWith,string/starts-with
@@ -265,7 +265,7 @@ toUpper,string/uppercase
 trim,string/trim
 trimEnd,string/right-trim
 trimStart,string/left-trim
-truncate,(planned)
+truncate,string/truncate
 unescape,(planned)
 upperCase,string/uppercase
 upperFirst,string/capitalize
