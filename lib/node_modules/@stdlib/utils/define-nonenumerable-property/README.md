@@ -48,7 +48,7 @@ var v = obj.foo;
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   Non-enumerable properties are **writable** and **configurable**.

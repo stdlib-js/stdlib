@@ -66,7 +66,7 @@ v = obj.foo;
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   Non-enumerable read-write accessors are **non-configurable**.

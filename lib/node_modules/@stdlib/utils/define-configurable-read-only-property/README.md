@@ -50,7 +50,7 @@ obj.foo = 'boop';
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   Configurable read-only properties are **enumerable**.

@@ -54,7 +54,7 @@ obj.foo = 'boop';
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   Read-only accessors are **enumerable** and **non-configurable**.

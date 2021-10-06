@@ -55,7 +55,7 @@ var bool = ( val === 'boop' );
 <!-- /.usage -->
 
 <section class="notes">
-    
+
 ## Notes
 
 -   Write-only accessors are **enumerable** and **non-configurable**.
