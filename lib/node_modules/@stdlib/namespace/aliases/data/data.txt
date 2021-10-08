@@ -51,6 +51,7 @@ base.acoth
 base.acovercos
 base.acoversin
 base.add
+base.addf
 base.ahavercos
 base.ahaversin
 base.asin
