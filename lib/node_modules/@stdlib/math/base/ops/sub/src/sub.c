@@ -23,7 +23,7 @@
 *
 * @param x       first number
 * @param y       second number
-* @return        sum
+* @return        result
 *
 * @example
 * double z = stdlib_base_sub( -5.0, 3.0 );
