@@ -50,6 +50,7 @@ base.acot
 base.acoth
 base.acovercos
 base.acoversin
+base.add
 base.ahavercos
 base.ahaversin
 base.asin
@@ -1220,6 +1221,8 @@ CircularBuffer
 close
 CMUDICT
 codePointAt
+commonKeys
+commonKeysIn
 complex
 Complex64
 COMPLEX64_NUM_BYTES
@@ -1695,6 +1698,7 @@ isIterableLike
 isIteratorLike
 isJSON
 isLeapYear
+isLocalhost
 isLowercase
 isMatrixLike
 isMethod
@@ -1753,6 +1757,7 @@ isPrimitiveArray
 isPRNGLike
 isProbability
 isProbabilityArray
+isPropertyKey
 isPrototypeOf
 isRangeError
 isReadableProperty

@@ -50,6 +50,7 @@
 "@stdlib/math/base/special/acoth",base.acoth
 "@stdlib/math/base/special/acovercos",base.acovercos
 "@stdlib/math/base/special/acoversin",base.acoversin
+"@stdlib/math/base/ops/add",base.add
 "@stdlib/math/base/special/ahavercos",base.ahavercos
 "@stdlib/math/base/special/ahaversin",base.ahaversin
 "@stdlib/math/base/special/asin",base.asin
@@ -1220,6 +1221,8 @@
 "@stdlib/fs/close",close
 "@stdlib/datasets/cmudict",CMUDICT
 "@stdlib/string/code-point-at",codePointAt
+"@stdlib/utils/common-keys",commonKeys
+"@stdlib/utils/common-keys-in",commonKeysIn
 "@stdlib/complex/cmplx",complex
 "@stdlib/complex/float32",Complex64
 "@stdlib/constants/complex64/num-bytes",COMPLEX64_NUM_BYTES
@@ -1695,6 +1698,7 @@
 "@stdlib/assert/is-iterator-like",isIteratorLike
 "@stdlib/assert/is-json",isJSON
 "@stdlib/assert/is-leap-year",isLeapYear
+"@stdlib/assert/is-localhost",isLocalhost
 "@stdlib/assert/is-lowercase",isLowercase
 "@stdlib/assert/is-matrix-like",isMatrixLike
 "@stdlib/assert/is-method",isMethod
@@ -1753,6 +1757,7 @@
 "@stdlib/assert/is-prng-like",isPRNGLike
 "@stdlib/assert/is-probability",isProbability
 "@stdlib/assert/is-probability-array",isProbabilityArray
+"@stdlib/assert/is-property-key",isPropertyKey
 "@stdlib/assert/is-prototype-of",isPrototypeOf
 "@stdlib/assert/is-range-error",isRangeError
 "@stdlib/assert/is-readable-property",isReadableProperty
