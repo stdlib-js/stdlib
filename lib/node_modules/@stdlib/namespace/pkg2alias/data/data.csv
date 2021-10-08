@@ -1166,6 +1166,7 @@
 "@stdlib/stats/base/variancewd",base.strided.variancewd
 "@stdlib/stats/base/varianceyc",base.strided.varianceyc
 "@stdlib/math/base/ops/sub",base.sub
+"@stdlib/math/base/ops/subf",base.subf
 "@stdlib/math/base/tools/sum-series",base.sumSeries
 "@stdlib/math/base/special/tan",base.tan
 "@stdlib/math/base/special/tanh",base.tanh

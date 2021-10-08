@@ -1166,6 +1166,7 @@
 "@stdlib/stats/base/variancewd","@stdlib/stats-base-variancewd"
 "@stdlib/stats/base/varianceyc","@stdlib/stats-base-varianceyc"
 "@stdlib/math/base/ops/sub","@stdlib/math-base-ops-sub"
+"@stdlib/math/base/ops/subf","@stdlib/math-base-ops-subf"
 "@stdlib/math/base/tools/sum-series","@stdlib/math-base-tools-sum-series"
 "@stdlib/math/base/special/tan","@stdlib/math-base-special-tan"
 "@stdlib/math/base/special/tanh","@stdlib/math-base-special-tanh"

@@ -1166,6 +1166,7 @@ base.strided.variancetk
 base.strided.variancewd
 base.strided.varianceyc
 base.sub
+base.subf
 base.sumSeries
 base.tan
 base.tanh

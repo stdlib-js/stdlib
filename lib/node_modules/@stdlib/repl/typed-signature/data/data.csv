@@ -2125,6 +2125,7 @@ base.strided.variancewd,"base.strided.variancewd( N:integer, correction:number, 
 base.strided.variancewd.ndarray,"base.strided.variancewd.ndarray( N:integer, correction:number, x:Array|TypedArray, stride:integer, offset:integer )"
 base.strided.varianceyc,"base.strided.varianceyc( N:integer, correction:number, x:Array|TypedArray, stride:integer )"
 base.strided.varianceyc.ndarray,"base.strided.varianceyc.ndarray( N:integer, correction:number, x:Array|TypedArray, stride:integer, offset:integer )"
+base.sub,"base.sub( x:number, y:number )"
 base.sumSeries,"base.sumSeries( generator:Function[, options:Object] )"
 base.tan,"base.tan( x:number )"
 base.tanh,"base.tanh( x:number )"
