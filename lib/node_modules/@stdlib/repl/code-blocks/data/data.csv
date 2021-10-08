@@ -60,6 +60,7 @@ base.acoth,"var y = base.acoth( 2.0 )\ny = base.acoth( 0.0 )\ny = base.acoth( 0.
 base.acovercos,"var y = base.acovercos( -1.5 )\ny = base.acovercos( -0.0 )\n"
 base.acoversin,"var y = base.acoversin( 1.5 )\ny = base.acoversin( 0.0 )\n"
 base.add,"var v = base.add( -1.0, 5.0 )\nv = base.add( 2.0, 5.0 )\nv = base.add( 0.0, 5.0 )\nv = base.add( -0.0, 0.0 )\nv = base.add( NaN, NaN )\n"
+base.addf,"var v = base.addf( -1.0, 5.0 )\nv = base.addf( 2.0, 5.0 )\nv = base.addf( 0.0, 5.0 )\nv = base.addf( -0.0, 0.0 )\nv = base.addf( NaN, NaN )\n"
 base.ahavercos,"var y = base.ahavercos( 0.5 )\ny = base.ahavercos( 0.0 )\n"
 base.ahaversin,"var y = base.ahaversin( 0.5 )\ny = base.ahaversin( 0.0 )\n"
 base.asin,"var y = base.asin( 0.0 )\ny = base.asin( PI/2.0 )\ny = base.asin( -PI/6.0 )\ny = base.asin( NaN )\n"
