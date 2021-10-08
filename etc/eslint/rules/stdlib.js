@@ -3764,9 +3764,9 @@ rules[ 'stdlib/module-exports-last' ] = 'error';
 * @name namespace-export-all
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'warn'
 */
-rules[ 'stdlib/namespace-export-all' ] = 'error';
+rules[ 'stdlib/namespace-export-all' ] = 'warn';
 
 /**
 * Enforce that packages in a namespace `index.js` file are listed in alphabetical order.
