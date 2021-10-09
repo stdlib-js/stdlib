@@ -19,6 +19,13 @@
 // TypeScript Version: 2.0
 
 /**
+* An object mapping break type names to integer values.
+*/
+interface Constants {
+	[key: string]: number;
+}
+
+/**
 * Interface describing grapheme cluster break tooling.
 */
 interface Grapheme {
@@ -78,7 +85,7 @@ interface Grapheme {
 	/**
 	* An object mapping break type names to integer values.
 	*/
-	constants: any;
+	constants: Constants;
 }
 
 /**
