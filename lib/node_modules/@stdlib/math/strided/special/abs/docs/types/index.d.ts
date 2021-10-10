@@ -30,8 +30,10 @@ interface Routine {
 	* Computes the absolute value for each element in `x` and assigns the results to elements in `y`.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - `x` data type
 	* @param x - input array
 	* @param strideX - `x` stride length
+	* @param dtypeY - `y` data type
 	* @param y - destination array
 	* @param strideY - `y` stride length
 	* @returns `y`
@@ -42,18 +44,20 @@ interface Routine {
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* abs( x.length, x, 1, y, 1 );
+	* abs( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<number>, strideX: number, dtypeY: string, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
 
 	/**
 	* Computes the absolute value for each element in `x` and assigns the results to elements in `y` using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - `x` data type
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
+	* @param dtypeY - `y` data type
 	* @param y - destination array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
@@ -65,18 +69,20 @@ interface Routine {
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* abs.ndarray( x.length, x, 1, 0, y, 1, 0 );
+	* abs.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: string, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: string, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
 }
 
 /**
 * Computes the absolute value for each element in `x` and assigns the results to elements in `y`.
 *
 * @param N - number of indexed elements
+* @param dtypeX - `x` data type
 * @param x - input array
 * @param strideX - `x` stride length
+* @param dtypeY - `y` data type
 * @param y - destination array
 * @param strideY - `y` stride length
 * @returns `y`
@@ -87,7 +93,7 @@ interface Routine {
 * var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* abs( x.length, x, 1, y, 1 );
+* abs( x.length, 'float64', x, 1, 'float64', y, 1 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 *
 * @example
@@ -96,7 +102,7 @@ interface Routine {
 * var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* abs.ndarray( x.length, x, 1, 0, y, 1, 0 );
+* abs.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
 declare var abs: Routine;
