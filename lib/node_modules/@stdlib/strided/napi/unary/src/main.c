@@ -31,8 +31,10 @@
 * -   This function expects that the callback `info` argument provides access to the following JavaScript arguments:
 *
 *     -   `N`: number of indexed elements
+*     -   `dtypeX`: `X` data type (enumerated integer)
 *     -   `X`: input array
 *     -   `strideX`: `X` stride length
+*     -   `dtypeY`: `Y` data type (enumerated integer)
 *     -   `Y`: destination array
 *     -   `strideY`: `Y` stride length
 *
@@ -44,14 +46,14 @@ void stdlib_strided_napi_unary( napi_env env, napi_callback_info info, const str
 	napi_status status;
 
 	// Total number of input arguments:
-	int64_t nargs = 5;
+	int64_t nargs = 7;
 
 	// Number of input strided array arguments:
 	int64_t nin = 1;
 
 	// Get callback arguments:
-	size_t argc = 5;
-	napi_value argv[ 5 ];
+	size_t argc = 7;
+	napi_value argv[ 7 ];
 	status = napi_get_cb_info( env, info, &argc, argv, NULL, NULL );
 	assert( status == napi_ok );
 
