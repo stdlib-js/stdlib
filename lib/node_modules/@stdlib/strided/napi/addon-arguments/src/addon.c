@@ -33,14 +33,14 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	napi_status status;
 
 	// Total number of input arguments:
-	int64_t nargs = 5;
+	int64_t nargs = 7;
 
 	// Number of input strided array arguments:
 	int64_t nin = 1;
 
 	// Get callback arguments:
-	size_t argc = 5;
-	napi_value argv[ 5 ];
+	size_t argc = 7;
+	napi_value argv[ 7 ];
 	status = napi_get_cb_info( env, info, &argc, argv, NULL, NULL );
 	assert( status == napi_ok );
 
