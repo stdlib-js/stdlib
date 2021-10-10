@@ -64,10 +64,10 @@ abs( x.length, 'float64', x, 1, 'float64', x, 1 );
 The function accepts the following arguments:
 
 -   **N**: number of indexed elements.
--   **dtypeX**: data type for `x`.
+-   **dtypeX**: [data type][@stdlib/strided/dtypes] for `x`.
 -   **x**: input array-like object.
 -   **strideX**: index increment for `x`.
--   **dtypeY**: data type for `y`.
+-   **dtypeY**: [data type][@stdlib/strided/dtypes] for `y`.
 -   **y**: output array-like object.
 -   **strideY**: index increment for `y`.
 
@@ -201,6 +201,8 @@ for ( i = 0; i < dt.length; i++ ) {
 [absolute-value]: https://en.wikipedia.org/wiki/Absolute_value
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+
+[@stdlib/strided/dtypes]: https://github.com/stdlib-js/stdlib
 
 <!-- <related-links> -->
 
