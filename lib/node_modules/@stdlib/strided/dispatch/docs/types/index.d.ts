@@ -115,9 +115,12 @@ interface Dispatcher {
 	* Invokes a strided array function based on the provided array data type(s).
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -138,25 +141,28 @@ interface Dispatcher {
 	* var types = [ 'float64' ];
 	* var data = [ value ];
 	*
-	* var strided = dispatch( nullary, types, data, 3, 0, 1 );
+	* var strided = dispatch( nullary, types, data, 4, 0, 1 );
 	*
 	* // ...
 	*
 	* var x = new Float64Array( 5 );
 	*
-	* strided( x.length, x, 1 );
+	* strided( x.length, 'float64', x, 1 );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number ): ArrayLike<any> | void;
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data type(s) using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
 	* @param offsetX - starting index for `x`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -179,26 +185,30 @@ interface Dispatcher {
 	* var types = [ 'float64' ];
 	* var data = [ value ];
 	*
-	* var strided = dispatch( nullary, types, data, 4, 0, 1 );
+	* var strided = dispatch( nullary, types, data, 5, 0, 1 );
 	*
 	* // ...
 	*
 	* var x = new Float64Array( 5 );
 	*
-	* strided( x.length, x, 1, 0 );
+	* strided( x.length, 'float64', x, 1, 0 );
 	* // x => <Float64Array>[ 3.14, 3.14, 3.14, 3.14, 3.14 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, offsetX: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, offsetX: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -216,29 +226,33 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64' ];
 	* var data = [ abs ];
 	*
-	* var strided = dispatch( unary, types, data, 5, 1, 1 );
+	* var strided = dispatch( unary, types, data, 7, 1, 1 );
 	*
 	* // ...
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0 ] );
 	* var y = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, y, 1 );
+	* strided( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, y: ArrayLike<any>, strideY: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, dtypeY: string, y: ArrayLike<any>, strideY: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
 	* @param offsetX - starting index for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
 	* @param offsetY - starting index for `y`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -258,29 +272,34 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64' ];
 	* var data = [ abs ];
 	*
-	* var strided = dispatch( unary, types, data, 7, 1, 1 );
+	* var strided = dispatch( unary, types, data, 9, 1, 1 );
 	*
 	* // ...
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0 ] );
 	* var y = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, 0, y, 1, 0 );
+	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, offsetX: number, y: ArrayLike<any>, strideY: number, offsetY: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, offsetY: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
+	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -301,7 +320,7 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64', 'float64' ];
 	* var data = [ add2 ];
 	*
-	* var strided = dispatch( ternary, types, data, 7, 2, 1 );
+	* var strided = dispatch( ternary, types, data, 10, 2, 1 );
 	*
 	* // ...
 	*
@@ -309,25 +328,30 @@ interface Dispatcher {
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	* var z = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, y, 1, z, 1 );
+	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, y: ArrayLike<any>, strideY: number, z: ArrayLike<any>, strideZ: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, dtypeZ: string, z: ArrayLike<any>, strideZ: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
 	* @param offsetX - starting index for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
 	* @param offsetY - starting index for `y`
+	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
 	* @param offsetZ - starting index for `z`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -350,7 +374,7 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64', 'float64' ];
 	* var data = [ add2 ];
 	*
-	* var strided = dispatch( ternary, types, data, 10, 2, 1 );
+	* var strided = dispatch( ternary, types, data, 13, 2, 1 );
 	*
 	* // ...
 	*
@@ -358,24 +382,30 @@ interface Dispatcher {
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	* var z = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, 0, y, 1, 0, z, 1, 0 );
+	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 );
 	* // z => <Float64Array>[ 2.0, 4.0, 6.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, offsetX: number, y: ArrayLike<any>, strideY: number, offsetY: number, z: ArrayLike<any>, strideZ: number, offsetZ: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: string, z: ArrayLike<any>, strideZ: number, offsetZ: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
+	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
+	* @param dtypeW - data type for `w`
 	* @param w - strided array
 	* @param strideW - index increment for `w`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -396,7 +426,7 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64', 'float64', 'float64' ];
 	* var data = [ add3 ];
 	*
-	* var strided = dispatch( quaternary, types, data, 9, 3, 1 );
+	* var strided = dispatch( quaternary, types, data, 13, 3, 1 );
 	*
 	* // ...
 	*
@@ -405,28 +435,34 @@ interface Dispatcher {
 	* var z = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	* var w = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, y, 1, z, 1, w, 1 );
+	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 );
 	* // w => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, y: ArrayLike<any>, strideY: number, z: ArrayLike<any>, strideZ: number, w: ArrayLike<any>, strideW: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, dtypeZ: string, z: ArrayLike<any>, strideZ: number, dtypeW: string, w: ArrayLike<any>, strideW: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
 	* @param offsetX - starting index for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
 	* @param offsetY - starting index for `y`
+	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
 	* @param offsetZ - starting index for `z`
+	* @param dtypeW - data type for `w`
 	* @param w - strided array
 	* @param strideW - index increment for `w`
 	* @param offsetW - starting index for `w`
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -449,7 +485,7 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64', 'float64', 'float64' ];
 	* var data = [ add3 ];
 	*
-	* var strided = dispatch( quaternary, types, data, 13, 3, 1 );
+	* var strided = dispatch( quaternary, types, data, 17, 3, 1 );
 	*
 	* // ...
 	*
@@ -458,25 +494,31 @@ interface Dispatcher {
 	* var z = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	* var w = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, 0, y, 1, 0, z, 1, 0, w, 1, 0 );
+	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 );
 	* // w => <Float64Array>[ 3.0, 6.0, 9.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, offsetX: number, y: ArrayLike<any>, strideY: number, offsetY: number, z: ArrayLike<any>, strideZ: number, offsetZ: number, w: ArrayLike<any>, strideW: number, offsetW: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: string, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: string, w: ArrayLike<any>, strideW: number, offsetW: number ): ArrayLike<any> | void; // tslint:disable-line:max-line-length
 
 	/**
 	* Invokes a strided array function based on the provided array data types.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
+	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
+	* @param dtypeW - data type for `w`
 	* @param w - strided array
 	* @param strideW - index increment for `w`
 	* @param args - array arguments (arrays, strides, and offsets)
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -497,7 +539,7 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
 	* var data = [ add4 ];
 	*
-	* var strided = dispatch( quinary, types, data, 11, 4, 1 );
+	* var strided = dispatch( quinary, types, data, 16, 4, 1 );
 	*
 	* // ...
 	*
@@ -507,29 +549,35 @@ interface Dispatcher {
 	* var w = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	* var u = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, y, 1, z, 1, w, 1, u, 1 );
+	* strided( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 );
 	* // u => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, y: ArrayLike<any>, strideY: number, z: ArrayLike<any>, strideZ: number, w: ArrayLike<any>, strideW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, dtypeZ: string, z: ArrayLike<any>, strideZ: number, dtypeW: string, w: ArrayLike<any>, strideW: number, ...args: Array<ArrayLike<any> | number | string> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
 
 	/**
 	* Invokes a strided array function based on the provided array data types using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - data type for `x`
 	* @param x - strided array
 	* @param strideX - index increment for `x`
 	* @param offsetX - starting index for `x`
+	* @param dtypeY - data type for `y`
 	* @param y - strided array
 	* @param strideY - index increment for `y`
 	* @param offsetY - starting index for `y`
+	* @param dtypeZ - data type for `z`
 	* @param z - strided array
 	* @param strideZ - index increment for `z`
 	* @param offsetZ = starting index for `z`
+	* @param dtypeW - data type for `w`
 	* @param w - strided array
 	* @param strideW - index increment for `w`
 	* @param offsetW - starting index for `w`
 	* @param args - array arguments (arrays, strides, and offsets)
 	* @throws first argument must be an integer
+	* @throws input array data types must be strings
+	* @throws output array data types must be strings
 	* @throws input array arguments must be array-like objects
 	* @throws output array arguments must be array-like objects
 	* @throws input array strides must be integers
@@ -550,7 +598,7 @@ interface Dispatcher {
 	* var types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
 	* var data = [ add4 ];
 	*
-	* var strided = dispatch( quinary, types, data, 16, 4, 1 );
+	* var strided = dispatch( quinary, types, data, 21, 4, 1 );
 	*
 	* // ...
 	*
@@ -560,10 +608,10 @@ interface Dispatcher {
 	* var w = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	* var u = new Float64Array( x.length );
 	*
-	* strided( x.length, x, 1, 0, y, 1, 0, z, 1, 0, w, 1, 0, u, 1, 0 );
+	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 );
 	* // u => <Float64Array>[ 4.0, 8.0, 12.0 ]
 	*/
-	( N: number, x: ArrayLike<any>, strideX: number, offsetX: number, y: ArrayLike<any>, strideY: number, offsetY: number, z: ArrayLike<any>, strideZ: number, offsetZ: number, w: ArrayLike<any>, strideW: number, offsetW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
+	( N: number, dtypeX: string, x: ArrayLike<any>, strideX: number, offsetX: number, dtypeY: string, y: ArrayLike<any>, strideY: number, offsetY: number, dtypeZ: string, z: ArrayLike<any>, strideZ: number, offsetZ: number, dtypeW: string, w: ArrayLike<any>, strideW: number, offsetW: number, ...args: Array<ArrayLike<any> | number> ): ArrayLike<any> | void; // tslint:disable-line:max-line-length unified-signatures
 }
 
 /**
@@ -572,7 +620,7 @@ interface Dispatcher {
 * @param fcns - list of strided array functions
 * @param types - one-dimensional list of strided array argument data types
 * @param data - strided array function data (e.g., callbacks)
-* @param nargs - total number of strided array function interface arguments (including strides and offsets)
+* @param nargs - total number of strided array function interface arguments (including data types, strides, and offsets)
 * @param nin - number of input strided arrays
 * @param nout - number of output strided arrays
 * @throws first argument must be either a function or an array of functions
@@ -600,14 +648,14 @@ interface Dispatcher {
 *     abs
 * ];
 *
-* var strided = dispatch( unary, types, data, 5, 1, 1 );
+* var strided = dispatch( unary, types, data, 7, 1, 1 );
 *
 * // ...
 *
 * var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* strided( x.length, x, 1, y, 1 );
+* strided( x.length, 'float64', x, 1, 'float64', y, 1 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
 declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, types: ArrayLike<string>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length
@@ -618,7 +666,7 @@ declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, t
 * @param fcns - list of strided array functions
 * @param types - one-dimensional list of strided array argument data types
 * @param data - strided array function data (e.g., callbacks)
-* @param nargs - total number of strided array function interface arguments (including strides and offsets)
+* @param nargs - total number of strided array function interface arguments (including data types, strides, and offsets)
 * @param nin - number of input strided arrays
 * @param nout - number of output strided arrays
 * @throws first argument must be either a function or an array of functions
@@ -646,14 +694,14 @@ declare function dispatch( fcns: StridedArrayFcn | ArrayLike<StridedArrayFcn>, t
 *     abs
 * ];
 *
-* var strided = dispatch( unary, types, data, 7, 1, 1 );
+* var strided = dispatch( unary, types, data, 9, 1, 1 );
 *
 * // ...
 *
 * var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* strided( x.length, x, 1, 0, y, 1, 0 );
+* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
 declare function dispatch( fcns: StridedArrayFcnWithOffsets | ArrayLike<StridedArrayFcnWithOffsets>, types: ArrayLike<string>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length unified-signatures
