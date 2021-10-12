@@ -41,10 +41,10 @@
 *     where
 *
 *     -   `N` is the number of elements over which to iterate
-*     -   `id#` is an input strided array data type (enumerated integer)
+*     -   `id#` is an input strided array data type (enumeration constant)
 *     -   `ia#` is an input strided array
 *     -   `is#` is a corresponding input strided array stride (in units of elements)
-*     -   `id#` is an output strided array data type (enumerated integer)
+*     -   `id#` is an output strided array data type (enumeration constant)
 *     -   `oa#` is an output strided array
 *     -   `os#` is a corresponding output strided array stride (in units of elements)
 *

@@ -195,10 +195,10 @@ The function returns a `napi_status` status code indicating success or failure (
     where
 
     -   `N` is the number of elements over which to iterate.
-    -   `id#` is an input strided array [data type][@stdlib/strided/dtypes] (enumerated integer).
+    -   `id#` is an input strided array [data type][@stdlib/strided/dtypes] (enumeration constant).
     -   `ia#` is an input strided array.
     -   `is#` is a corresponding input strided array stride (in units of elements).
-    -   `od#` is an output strided array [data type][@stdlib/strided/dtypes] (enumerated integer).
+    -   `od#` is an output strided array [data type][@stdlib/strided/dtypes] (enumeration constant).
     -   `oa#` is an output strided array.
     -   `os#` is a corresponding output strided array stride (in units of elements).
 
