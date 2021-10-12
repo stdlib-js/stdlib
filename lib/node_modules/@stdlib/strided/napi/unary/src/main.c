@@ -31,10 +31,10 @@
 * -   This function expects that the callback `info` argument provides access to the following JavaScript arguments:
 *
 *     -   `N`: number of indexed elements
-*     -   `dtypeX`: `X` data type (enumerated integer)
+*     -   `dtypeX`: `X` data type (enumeration constant)
 *     -   `X`: input array
 *     -   `strideX`: `X` stride length
-*     -   `dtypeY`: `Y` data type (enumerated integer)
+*     -   `dtypeY`: `Y` data type (enumeration constant)
 *     -   `Y`: destination array
 *     -   `strideY`: `Y` stride length
 *
