@@ -177,7 +177,7 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	dispatch( ( x: number ): number => x, types, data, 7, 1, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an array of strings...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object...
 {
 	const data = [ unary ];
 
@@ -186,9 +186,7 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	dispatch( strided, false, data, 7, 1, 1 ); // $ExpectError
 	dispatch( strided, null, data, 7, 1, 1 ); // $ExpectError
 	dispatch( strided, undefined, data, 7, 1, 1 ); // $ExpectError
-	dispatch( strided, [ 1 ], data, 7, 1, 1 ); // $ExpectError
 	dispatch( strided, {}, data, 7, 1, 1 ); // $ExpectError
-	dispatch( strided, ( x: number ): number => x, data, 7, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not an array-like object or null...
@@ -292,7 +290,7 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	const t5 = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
 	const d5 = [ quaternary ];
 	const f5 = dispatch( strided, t5, d5, 16, 4, 1 );
-	f5( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1,'float64',  w, 1, 'float64', u, 1 ); // $ExpectType void | ArrayLike<any>
+	f5( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64',  w, 1, 'float64', u, 1 ); // $ExpectType void | ArrayLike<any>
 }
 
 // The compiler throws an error if the returned function is provided a first argument which is not a number (1 strided array)...
@@ -311,24 +309,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( [ '1' ], 'float64', x, 1 ); // $ExpectError
 	f( {}, 'float64', x, 1 ); // $ExpectError
 	f( ( x: number ): number => x, 'float64', x, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided a second argument which is not a string (1 strided array)...
-{
-	const types = [ 'float64' ];
-	const data = [ nullary ];
-
-	const x = new Float64Array( 10 );
-
-	const f = dispatch( strided, types, data, 4, 0, 1 );
-	f( x.length, 10, x, 1 ); // $ExpectError
-	f( x.length, true, x, 1 ); // $ExpectError
-	f( x.length, false, x, 1 ); // $ExpectError
-	f( x.length, null, x, 1 ); // $ExpectError
-	f( x.length, undefined, x, 1 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1 ); // $ExpectError
-	f( x.length, {}, x, 1 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a third argument which is not an array-like object (1 strided array)...
@@ -384,25 +364,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided a second argument which is not a string (2 strided arrays)...
-{
-	const types = [ 'float64', 'float64' ];
-	const data = [ unary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-
-	const f = dispatch( strided, types, data, 7, 1, 1 );
-	f( x.length, 10, x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, true, x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, false, x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, null, x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, undefined, x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, {}, x, 1, 'float64', y, 1 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 'float64', y, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a third argument which is not an array-like object (2 strided arrays)...
 {
 	const types = [ 'float64', 'float64' ];
@@ -437,25 +398,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, [ '1' ], 'float64', y, 1 ); // $ExpectError
 	f( x.length, 'float64', x, {}, 'float64', y, 1 ); // $ExpectError
 	f( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided a fifth argument which is not a string (2 strided arrays)...
-{
-	const types = [ 'float64', 'float64' ];
-	const data = [ unary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-
-	const f = dispatch( strided, types, data, 7, 1, 1 );
-	f( x.length, 'float64', x, 1, 10, y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, true, y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, false, y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, null, y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, undefined, y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, [ '1' ], y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, {}, y, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, ( x: number ): number => x, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a sixth argument which is not an array-like object (2 strided arrays)...
@@ -514,26 +456,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided a second argument which is not a string (3 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64' ];
-	const data = [ binary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-
-	const f = dispatch( strided, types, data, 10, 2, 1 );
-	f( x.lenth, 10, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, true, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, false, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, null, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, undefined, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, [ '1' ], x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, {}, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.lenth, ( x: number ): number => x, x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a third argument which is not an array-like object (3 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64' ];
@@ -572,26 +494,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided a fifth argument which is not a string (3 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64' ];
-	const data = [ binary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-
-	const f = dispatch( strided, types, data, 10, 2, 1 );
-	f( x.length, 'float64', x, 1, 10, y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, true, y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, false, y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, null, y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, undefined, y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, [ '1' ], y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, {}, y, 1, 'float64', z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, ( x: number ): number => x, y, 1, 'float64', z, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a sixth argument which is not an array-like object (3 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64' ];
@@ -628,26 +530,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 'float64', y, [ '1' ], 'float64', z, 1 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 'float64', y, {}, 'float64', z, 1 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 'float64', y, ( x: number ): number => x, 'float64', z, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided an eighth argument which is not a string (3 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64' ];
-	const data = [ binary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-
-	const f = dispatch( strided, types, data, 10, 2, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 10, z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, true, z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, false, z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, null, z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, undefined, z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, [ '1' ], z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, {}, z, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, ( x: number ): number => x, z, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a ninth argument which is not an array-like object (3 strided arrays)...
@@ -709,27 +591,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided a second argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 13, 3, 1 );
-	f( x.length, 10, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, true, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, false, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, null, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, undefined, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, {}, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a third argument which is not an array-like object (4 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64' ];
@@ -768,27 +629,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, [ '1' ], 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
 	f( x.length, 'float64', x, {}, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
 	f( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided a fifth argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 13, 3, 1 );
-	f( x.length, 'float64', x, 1, 10, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, true, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, false, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, null, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, undefined, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, [ '1' ], y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, {}, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, ( x: number ): number => x, y, 1, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a sixth argument which is not an array-like object (4 strided arrays)...
@@ -831,27 +671,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 'float64', y, ( x: number ): number => x, 'float64', z, 1, 'float64', w, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided an eighth argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 13, 3, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 10, z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, true, z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, false, z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, null, z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, undefined, z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, [ '1' ], z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, {}, z, 1, 'float64', w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, ( x: number ): number => x, z, 1, 'float64', w, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a ninth argument which is not an array-like object (4 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64' ];
@@ -890,27 +709,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, [ '1' ], 'float64', w, 1 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, {}, 'float64', w, 1 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, ( x: number ): number => x, 'float64', w, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided an eleventh argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 13, 3, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 10, w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, true, w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, false, w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, null, w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, undefined, w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, [ '1' ], w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, {}, w, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, ( x: number ): number => x, w, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a twelfth argument which is not an array-like object (4 strided arrays)...
@@ -975,28 +773,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided a second argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 10, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, true, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, false, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, null, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, undefined, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, {}, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a third argument which is not an array-like object (5 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
@@ -1037,28 +813,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, [ '1' ], 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 	f( x.length, 'float64', x, {}, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 	f( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided a fifth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 'float64', x, 1, 10, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, true, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, false, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, null, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, undefined, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, [ '1' ], y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, {}, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, ( x: number ): number => x, y, 1, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a sixth argument which is not an array-like object (5 strided arrays)...
@@ -1103,28 +857,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 'float64', y, ( x: number ): number => x, 'float64', z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided an eighth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 10, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, true, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, false, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, null, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, undefined, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, [ '1' ], z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, {}, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, ( x: number ): number => x, z, 1, 'float64', w, 1, 'float64', u, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a ninth argument which is not an array-like object (5 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
@@ -1167,28 +899,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, ( x: number ): number => x, w, 1, u, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function is provided an eleventh argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 10, w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, true, w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, false, w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, null, w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', undefined, w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, [ '1' ], w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, {}, w, 1, 'float64', u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, ( x: number ): number => x, w, 1, 'float64', u, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function is provided a twelfth argument which is not an array-like object (5 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
@@ -1229,28 +939,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, [ '1' ], 'float64', u, 1 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, {}, 'float64', u, 1 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, ( x: number ): number => x, 'float64', u, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function is provided a fourteenth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 16, 4, 1 );
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, 10, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, true, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, false, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, null, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, undefined, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, [ '1' ], u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, {}, u, 1 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1, 'float64', w, 1, ( x: number ): number => x, u, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided a fifteenth argument which is not an array-like object (5 strided arrays)...
@@ -1343,24 +1031,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a second argument which is not a string (1 strided array)...
-{
-	const types = [ 'float64' ];
-	const data = [ nullary ];
-
-	const x = new Float64Array( 10 );
-
-	const f = dispatch( strided, types, data, 5, 0, 1 );
-	f( x.length, 10, x, 1, 0 ); // $ExpectError
-	f( x.length, true, x, 1, 0 ); // $ExpectError
-	f( x.length, false, x, 1, 0 ); // $ExpectError
-	f( x.length, null, x, 1, 0 ); // $ExpectError
-	f( x.length, undefined, x, 1, 0 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 0 ); // $ExpectError
-	f( x.length, {}, x, 1, 0 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a third argument which is not an array-like object (1 strided array)...
 {
 	const types = [ 'float64' ];
@@ -1432,25 +1102,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a second argument which is not a string (2 strided arrays)...
-{
-	const types = [ 'float64', 'float64' ];
-	const data = [ unary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-
-	const f = dispatch( strided, types, data, 9, 1, 1 );
-	f( x.length, 10, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, true, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, false, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, null, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, undefined, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, {}, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a third argument which is not an array-like object (2 strided arrays)...
 {
 	const types = [ 'float64', 'float64' ];
@@ -1504,25 +1155,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, [ '1' ], 'float64', y, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, {}, 'float64', y, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function supporting offsets is provided a sixth argument which is not a string (2 strided arrays)...
-{
-	const types = [ 'float64', 'float64' ];
-	const data = [ unary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-
-	const f = dispatch( strided, types, data, 9, 1, 1 );
-	f( x.length, 'float64', x, 1, 0, 10, y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, true, y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, false, y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, null, y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, undefined, y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, [ '1' ], y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, {}, y, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, ( x: number ): number => x, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided a seventh argument which is not an array-like object (2 strided arrays)...
@@ -1600,26 +1232,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a second argument which is not a string (3 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64' ];
-	const data = [ binary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-
-	const f = dispatch( strided, types, data, 13, 2, 1 );
-	f( x.length, 10, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, true, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, false, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, null, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, undefined, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, {}, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a third argument which is not an array-like object (3 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64' ];
@@ -1678,26 +1290,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a sixth argument which is not a string (3 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64' ];
-	const data = [ binary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-
-	const f = dispatch( strided, types, data, 13, 2, 1 );
-	f( x.length, 'float64', x, 1, 0, 10, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, true, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, false, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, null, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, undefined, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, [ '1' ], y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, {}, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, ( x: number ): number => x, y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a seventh argument which is not an array-like object (3 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64' ];
@@ -1754,26 +1346,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, [ '1' ], 'float64', z, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, {}, 'float64', z, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x, 'float64', z, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function supporting offsets is provided a tenth argument which is not a string (3 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64' ];
-	const data = [ binary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-
-	const f = dispatch( strided, types, data, 13, 2, 1 );
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 10, z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, true, z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, false, z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, null, z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, undefined, z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, [ '1' ], z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, {}, z, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, ( x: number ): number => x, z, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided an eleventh argument which is not an array-like object (3 strided arrays)...
@@ -1855,27 +1427,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a second argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 17, 3, 1 );
-	f( x.length, 10, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, true, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, false, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, null, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, undefined, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, {}, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a third argument which is not an array-like object (4 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64' ];
@@ -1935,27 +1486,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, [ '1' ], 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, {}, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function supporting offsets is provided a sixth argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 17, 3, 1 );
-	f( x.length, 'float64', x, 1, 0, 10, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, true, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, false, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, null, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, undefined, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, [ '1' ], y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, {}, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, ( x: number ): number => x, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided a seventh argument which is not an array-like object (4 strided arrays)...
@@ -2019,27 +1549,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x, 'float64', z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a tenth argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 17, 3, 1 );
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 10, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, true, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, false, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, null, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, undefined, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, [ '1' ], z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, {}, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, ( x: number ): number => x, z, 1, 0, 'float64', w, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided an eleventh argument which is not an array-like object (4 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64' ];
@@ -2099,27 +1608,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, [ '1' ], 'float64', w, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, {}, 'float64', w, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, ( x: number ): number => x, 'float64', w, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function supporting offsets is provided a fourteenth argument which is not a string (4 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ ternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-
-	const f = dispatch( strided, types, data, 17, 3, 1 );
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 10, w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, true, w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, false, w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, null, w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, undefined, w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, [ '1' ], w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, {}, w, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, ( x: number ): number => x, w, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided a fifteenth argument which is not an array-like object (4 strided arrays)...
@@ -2205,28 +1693,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a second argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 21, 4, 1 );
-	f( x.length, 10, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, true, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, false, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, null, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, undefined, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, [ '1' ], x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, {}, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, ( x: number ): number => x, x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a third argument which is not an array-like object (5 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
@@ -2289,28 +1755,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, [ '1' ], 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, {}, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function supporting offsets is provided a sixth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 21, 4, 1 );
-	f( x.length, 'float64', x, 1, 0, 10, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, true, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, false, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, null, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, undefined, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, [ '1' ], y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, {}, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, ( x: number ): number => x, y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided a seventh argument which is not an array-like object (5 strided arrays)...
@@ -2377,28 +1821,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x, z, 1, 0, w, 1, 0, u, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a tenth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 21, 4, 1 );
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 10, z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, true, z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, false, z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, null, z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, undefined, z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, [ '1' ], z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, {}, z, 1, 0, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, ( x: number ): number => x, z, 1, 0, w, 1, 0, u, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided an eleventh argument which is not an array-like object (5 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
@@ -2463,28 +1885,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, ( x: number ): number => x, 'float64', w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the returned function supporting offsets is provided a fourteenth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 21, 4, 1 );
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 10, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, true, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, false, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, null, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, undefined, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, [ '1' ], w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, {}, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, ( x: number ): number => x, w, 1, 0, 'float64', u, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the returned function supporting offsets is provided a fifteenth argument which is not an array-like object (5 strided arrays)...
 {
 	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
@@ -2547,28 +1947,6 @@ function stridedWithOffsets( arrays: Array<ArrayLike<any>>, shape: Array<number>
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, [ '1' ], 'float64', u, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, {}, 'float64', u, 1, 0 ); // $ExpectError
 	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, ( x: number ): number => x, 'float64', u, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the returned function supporting offsets is provided an eighteenth argument which is not a string (5 strided arrays)...
-{
-	const types = [ 'float64', 'float64', 'float64', 'float64', 'float64' ];
-	const data = [ quaternary ];
-
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( x.length );
-	const z = new Float64Array( y.length );
-	const w = new Float64Array( z.length );
-	const u = new Float64Array( w.length );
-
-	const f = dispatch( strided, types, data, 21, 4, 1 );
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, 10, u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, true, u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, false, u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, null, u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, undefined, u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, [ '1' ], u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, {}, u, 1, 0 ); // $ExpectError
-	f( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0, 'float64', w, 1, 0, ( x: number ): number => x, u, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function supporting offsets is provided a nineteenth argument which is not an array-like object (5 strided arrays)...
