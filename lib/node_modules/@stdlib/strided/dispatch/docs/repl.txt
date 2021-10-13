@@ -89,7 +89,7 @@
         function `data` differs (e.g., callbacks which differ based on the array
         data types).
 
-    types: ArrayLikeObject<string>
+    types: ArrayLikeObject
         One-dimensional list of strided array argument data types.
 
     data: ArrayLikeObject|null
