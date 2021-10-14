@@ -36,6 +36,9 @@ interface Routine {
 	* @param dtypeY - `y` data type
 	* @param y - destination array
 	* @param strideY - `y` stride length
+	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `y`
 	*
 	* @example
@@ -47,7 +50,7 @@ interface Routine {
 	* abs2( x.length, 'float64', x, 1, 'float64', y, 1 );
 	* // y => <Float64Array>[ 4.0, 1.0, 9.0, 25.0, 16.0 ]
 	*/
-	( N: number, dtypeX: string, x: ArrayLike<number>, strideX: number, dtypeY: string, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
 
 	/**
 	* Computes the squared absolute value for each element in a strided array `x` and assigns the results to elements in a strided array `y` using alternative indexing semantics.
@@ -61,6 +64,9 @@ interface Routine {
 	* @param y - destination array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
+	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {RangeError} seventh argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `y`
 	*
 	* @example
@@ -72,7 +78,7 @@ interface Routine {
 	* abs2.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ 4.0, 1.0, 9.0, 25.0, 16.0 ]
 	*/
-	ndarray( N: number, dtypeX: string, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: string, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
 }
 
 /**
@@ -85,6 +91,9 @@ interface Routine {
 * @param dtypeY - `y` data type
 * @param y - destination array
 * @param strideY - `y` stride length
+* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
 * @returns `y`
 *
 * @example
