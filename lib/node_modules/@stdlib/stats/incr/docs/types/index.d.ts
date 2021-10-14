@@ -2923,7 +2923,7 @@ interface Namespace {
 }
 
 /**
-* Standard library functions for computing statistics incrementally.
+* Incremental statistics.
 */
 declare var ns: Namespace;
 

@@ -508,7 +508,7 @@ interface Namespace {
 }
 
 /**
-* Standard library regular expressions.
+* Regular expressions.
 */
 declare var ns: Namespace;
 

@@ -118,7 +118,7 @@ interface Namespace {
 }
 
 /**
-* Standard library assertion utility tools.
+* Assertion utility tools.
 */
 declare var ns: Namespace;
 

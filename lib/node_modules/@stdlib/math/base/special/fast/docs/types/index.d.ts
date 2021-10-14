@@ -354,7 +354,7 @@ interface Namespace {
 }
 
 /**
-* Standard library fast math special functions.
+* Fast math special functions.
 */
 declare var ns: Namespace;
 

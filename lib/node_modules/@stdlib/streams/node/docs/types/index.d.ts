@@ -956,7 +956,7 @@ interface Namespace {
 }
 
 /**
-* Standard library Node.js streams.
+* Node.js streams.
 */
 declare var ns: Namespace;
 

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/iter/tools",
   "version": "0.0.0",
-  "description": "Standard library math iterator tooling.",
+  "description": "Math iterator tooling.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

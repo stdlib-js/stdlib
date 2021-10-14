@@ -34,7 +34,7 @@ interface Namespace {
 }
 
 /**
-* Standard library string utility tools.
+* String tools.
 */
 declare var ns: Namespace;
 

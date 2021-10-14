@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# String Unicode Constants
+# Unicode Constants
 
-> Standard library string unicode constants.
+> Unicode constants.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var constants = require( '@stdlib/constants/unicode' );
 
 #### constants
 
-Standard library string unicode constants.
+Namespace containing Unicode constants.
 
 ```javascript
 var ns = constants;

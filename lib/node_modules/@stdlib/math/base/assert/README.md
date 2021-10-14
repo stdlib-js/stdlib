@@ -20,7 +20,7 @@ limitations under the License.
 
 # Assert
 
-> Standard library basic mathematical assertion utilities.
+> Base math assertion utilities.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/base/assert' );
 
 #### ns
 
-Standard library basic mathematical assertion utilities.
+Namespace containing "base" (i.e., lower-level) math assertion utilities.
 
 ```javascript
 var o = ns;

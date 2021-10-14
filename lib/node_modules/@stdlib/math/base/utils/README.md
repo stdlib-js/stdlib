@@ -20,7 +20,7 @@ limitations under the License.
 
 # Utils
 
-> Standard library basic mathematical utilities.
+> Base math utilities.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var utils = require( '@stdlib/math/base/utils' );
 
 #### utils
 
-Standard library basic mathematical utilities.
+Namespace for "base" (i.e., lower-level) math utilities.
 
 ```javascript
 var o = utils;

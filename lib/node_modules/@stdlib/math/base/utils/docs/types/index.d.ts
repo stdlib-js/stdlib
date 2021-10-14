@@ -171,7 +171,7 @@ interface Namespace {
 }
 
 /**
-* Standard library basic mathematical utilities.
+* Base math utilities.
 */
 declare var ns: Namespace;
 

@@ -190,7 +190,7 @@ interface Namespace {
 }
 
 /**
-* Standard library incremental machine learning algorithms.
+* Incremental machine learning algorithms.
 */
 declare var ns: Namespace;
 

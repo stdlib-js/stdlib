@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# String Path Constants
+# Path Constants
 
-> Standard library string path constants.
+> Path constants.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var constants = require( '@stdlib/constants/path' );
 
 #### constants
 
-Standard library string path constants.
+Namespace containing path constants.
 
 ```javascript
 var ns = constants;

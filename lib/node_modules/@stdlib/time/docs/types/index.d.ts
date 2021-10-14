@@ -449,7 +449,7 @@ interface Namespace {
 }
 
 /**
-* Standard library time utilities.
+* Time utilities.
 */
 declare var ns: Namespace;
 

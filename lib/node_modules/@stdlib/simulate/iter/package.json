@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/simulate/iter",
   "version": "0.0.0",
-  "description": "Standard library simulation iterators.",
+  "description": "Simulation iterators.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

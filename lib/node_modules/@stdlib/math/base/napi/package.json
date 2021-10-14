@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/napi",
   "version": "0.0.0",
-  "description": "Standard library C APIs for registering a Node-API module exporting interfaces.",
+  "description": "C APIs for registering a Node-API module exporting interfaces.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

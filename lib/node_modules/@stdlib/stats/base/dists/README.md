@@ -20,7 +20,7 @@ limitations under the License.
 
 # Probability Distributions
 
-> Standard library probability distribution modules.
+> Base (i.e., lower-level) probability distribution modules.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var dists = require( '@stdlib/stats/base/dists' );
 
 #### dists
 
-Standard library probability distribution modules.
+Namespace containing "base" (i.e., lower-level) probability distribution modules.
 
 ```javascript
 var distributions = dists;

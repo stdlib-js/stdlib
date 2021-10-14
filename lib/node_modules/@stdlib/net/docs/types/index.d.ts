@@ -128,7 +128,7 @@ interface Namespace {
 }
 
 /**
-* Standard library networking.
+* Networking.
 */
 declare var ns: Namespace;
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # napi
 
-> Standard library C APIs for registering a Node-API module exporting interfaces.
+> C APIs for registering a Node-API module exporting interfaces.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/base/napi' );
 
 #### ns
 
-Standard library C APIs for registering a Node-API module exporting interfaces.
+Namespace for C APIs for registering a Node-API module exporting interfaces.
 
 ```javascript
 var napi = ns;

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Incremental Statistics
 
-> Standard library functions for computing statistics incrementally.
+> Incremental statistics.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/stats/incr' );
 
 #### ns
 
-Standard library functions for computing statistics incrementally.
+Namespace containing functions for computing statistics incrementally.
 
 ```javascript
 var incr = ns;

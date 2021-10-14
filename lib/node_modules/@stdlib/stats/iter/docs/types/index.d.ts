@@ -1314,7 +1314,7 @@ interface Namespace {
 }
 
 /**
-* Standard library functions for computing statistics over iterators.
+* Statistical function iterators.
 */
 declare var ns: Namespace;
 

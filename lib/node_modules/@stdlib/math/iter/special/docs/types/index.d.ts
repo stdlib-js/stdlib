@@ -2877,7 +2877,7 @@ interface Namespace {
 }
 
 /**
-* Standard library math iterators for special functions.
+* Math iterators for special functions.
 */
 declare var ns: Namespace;
 

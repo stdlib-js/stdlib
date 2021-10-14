@@ -20,7 +20,7 @@ limitations under the License.
 
 # Tools
 
-> Standard library string utility tools.
+> String tools.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var tools = require( '@stdlib/string/tools' );
 
 #### tools
 
-Standard library string utility tools.
+Namespace containing string tools.
 
 ```javascript
 var o = tools;

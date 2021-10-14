@@ -848,7 +848,7 @@ interface Namespace {
 }
 
 /**
-* Standard library math iterators for generating sequences.
+* Math iterators for generating sequences.
 */
 declare var ns: Namespace;
 

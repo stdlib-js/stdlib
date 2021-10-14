@@ -94,7 +94,7 @@ interface Namespace {
 }
 
 /**
-* Standard library special math functions.
+* Special math functions.
 */
 declare var ns: Namespace;
 

@@ -1021,7 +1021,7 @@ interface Namespace {
 }
 
 /**
-* Standard library string manipulation functions.
+* String manipulation functions.
 */
 declare var ns: Namespace;
 

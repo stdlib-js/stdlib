@@ -20,7 +20,7 @@ limitations under the License.
 
 # Extended BLAS
 
-> Standard library extended basic linear algebra subprograms (BLAS).
+> Extended basic linear algebra subprograms (BLAS).
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var extblas = require( '@stdlib/blas/ext' );
 
 #### extblas
 
-Standard library extended basic linear algebra subprograms (BLAS).
+Namespace for extended basic linear algebra subprograms (BLAS).
 
 ```javascript
 var o = extblas;

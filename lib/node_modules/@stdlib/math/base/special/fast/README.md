@@ -20,7 +20,7 @@ limitations under the License.
 
 # Special Functions
 
-> Standard library fast math special functions.
+> Fast math special functions.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var fmath = require( '@stdlib/math/base/special/fast' );
 
 #### fmath
 
-Standard library fast math special functions. 
+Namespace containing "fast" math special functions. 
 
 ```javascript
 var fcns = fmath;

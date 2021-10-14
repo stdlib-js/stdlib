@@ -20,7 +20,7 @@ limitations under the License.
 
 # Tools
 
-> Standard library basic mathematical tools.
+> Base math tools.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var tools = require( '@stdlib/math/base/tools' );
 
 #### tools
 
-Standard library basic mathematical tools.
+Namespace containing "base" math tools.
 
 ```javascript
 var o = tools;

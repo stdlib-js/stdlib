@@ -20,7 +20,7 @@ limitations under the License.
 
 # Pseudorandom Number Generator Iterators
 
-> Standard library pseudorandom number generator (PRNG) iterators.
+> Pseudorandom number generator (PRNG) iterators.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/random/iter' );
 
 #### ns
 
-Standard library pseudorandom number generator (PRNG) iterators.
+Namespace containing pseudorandom number generator (PRNG) iterators.
 
 ```javascript
 var iterators = ns;

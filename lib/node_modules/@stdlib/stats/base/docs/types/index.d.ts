@@ -469,7 +469,7 @@ interface Namespace {
 	dcuminabs: typeof dcuminabs;
 
 	/**
-	* Standard library probability distribution modules.
+	* Base probability distribution modules.
 	*/
 	dists: typeof dists;
 
@@ -6025,7 +6025,7 @@ interface Namespace {
 }
 
 /**
-* Standard library base statistical functions.
+* Base (i.e., lower-level) statistical functions.
 */
 declare var ns: Namespace;
 

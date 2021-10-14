@@ -2563,7 +2563,7 @@ interface Namespace {
 	fallingFactorial: typeof fallingFactorial;
 
 	/**
-	* Standard library fast math special functions.
+	* Base fast math special functions.
 	*/
 	fast: typeof fast;
 
@@ -6080,7 +6080,7 @@ interface Namespace {
 }
 
 /**
-* Standard library base special math functions.
+* Base (i.e., lower-level) special math functions.
 */
 declare var ns: Namespace;
 

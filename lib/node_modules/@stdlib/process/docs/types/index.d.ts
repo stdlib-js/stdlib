@@ -216,7 +216,7 @@ interface Namespace {
 }
 
 /**
-* Standard library process utilities.
+* Process utilities.
 */
 declare var ns: Namespace;
 

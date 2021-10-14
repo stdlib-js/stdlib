@@ -155,12 +155,12 @@ interface Namespace {
 	flignerTest: typeof flignerTest;
 
 	/**
-	* Standard library functions for computing statistics incrementally.
+	* Incremental statistics.
 	*/
 	incr: typeof incr;
 
 	/**
-	* Standard library functions for computing statistics over iterators.
+	* Statistical function iterators.
 	*/
 	iterators: typeof iterators;
 
@@ -509,7 +509,7 @@ interface Namespace {
 }
 
 /**
-* Standard library statistical functions.
+* Statistical functions.
 */
 declare var ns: Namespace;
 

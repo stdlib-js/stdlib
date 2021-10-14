@@ -114,7 +114,7 @@ interface Namespace {
 }
 
 /**
-* Standard library base math operators.
+* Base (i.e., lower-level) math operators.
 */
 declare var ns: Namespace;
 

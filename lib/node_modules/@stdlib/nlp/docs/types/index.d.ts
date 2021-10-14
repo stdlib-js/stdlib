@@ -116,7 +116,7 @@ interface Namespace {
 }
 
 /**
-* Standard library natural language processing.
+* Natural language processing.
 */
 declare var ns: Namespace;
 

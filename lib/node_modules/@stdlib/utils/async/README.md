@@ -20,7 +20,7 @@ limitations under the License.
 
 # Async
 
-> Standard library async utilities.
+> Async utilities.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/utils/async' );
 
 #### ns
 
-Standard library async utilities.
+Namespace containing async utilities.
 
 ```javascript
 var o = ns;

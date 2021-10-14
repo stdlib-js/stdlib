@@ -20,7 +20,7 @@ limitations under the License.
 
 # Pseudorandom Number Generators
 
-> Standard library base pseudorandom number generators (PRNGs).
+> Base (i.e., lower-level) pseudorandom number generators (PRNGs).
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var random = require( '@stdlib/random/base' );
 
 #### random
 
-Standard library base pseudorandom number generators (PRNGs).
+Namespace containing "base" (i.e., lower-level) pseudorandom number generators (PRNGs).
 
 ```javascript
 var ns = random;

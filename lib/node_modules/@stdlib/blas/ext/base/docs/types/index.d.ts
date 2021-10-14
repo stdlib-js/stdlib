@@ -3273,7 +3273,7 @@ interface Namespace {
 }
 
 /**
-* Standard library extended basic linear algebra subroutines (BLAS).
+* Base (i.e., lower-level) extensions to basic linear algebra subroutines (BLAS).
 */
 declare var ns: Namespace;
 
