@@ -216,7 +216,7 @@ function array(): ndarray {
 	dispatch( ( x: number ): number => x, types, data, 2, 1, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an array of strings...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object...
 {
 	const data = [ unary ];
 
@@ -225,9 +225,7 @@ function array(): ndarray {
 	dispatch( ndarrayFcn, false, data, 2, 1, 1 ); // $ExpectError
 	dispatch( ndarrayFcn, null, data, 2, 1, 1 ); // $ExpectError
 	dispatch( ndarrayFcn, undefined, data, 2, 1, 1 ); // $ExpectError
-	dispatch( ndarrayFcn, [ 1 ], data, 2, 1, 1 ); // $ExpectError
 	dispatch( ndarrayFcn, {}, data, 2, 1, 1 ); // $ExpectError
-	dispatch( ndarrayFcn, ( x: number ): number => x, data, 2, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not an array-like object or null...

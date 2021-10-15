@@ -288,7 +288,7 @@ interface Dispatcher {
 * @param nin - number of input ndarrays
 * @param nout - number of output ndarrays
 * @throws first argument must be either a function or an array of functions
-* @throws second argument must be an array of strings
+* @throws second argument must be an array-like object
 * @throws third argument must be an array-like object or `null`
 * @throws third and first arguments must have the same number of elements
 * @throws fourth argument must be a positive integer
@@ -326,7 +326,7 @@ interface Dispatcher {
 * fcn( x, y );
 * // ybuf => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
-declare function dispatch( fcns: ndarrayFcn | ArrayLike<ndarrayFcn>, types: ArrayLike<string>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length
+declare function dispatch( fcns: ndarrayFcn | ArrayLike<ndarrayFcn>, types: ArrayLike<any>, data: ArrayLike<any> | null, nargs: number, nin: number, nout: number ): Dispatcher; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
