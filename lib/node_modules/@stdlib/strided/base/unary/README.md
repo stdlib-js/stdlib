@@ -190,6 +190,8 @@ Character codes for data types:
 
 -   **d**: `float64` (double-precision floating-point number).
 -   **f**: `float32` (single-precision floating-point number).
+-   **c**: `complex64` (single-precision floating-point complex number).
+-   **z**: `complex128` (double-precision floating-point complex number).
 -   **s**: `int8` (signed 8-bit integer).
 -   **b**: `uint8` (unsigned 8-bit integer).
 -   **k**: `int16` (signed 16-bit integer).
@@ -198,6 +200,7 @@ Character codes for data types:
 -   **u**: `uint32` (unsigned 32-bit integer).
 -   **l**: `int64` (signed 64-bit integer).
 -   **v**: `uint64` (unsigned 64-bit integer).
+-   **x**: `bool` (boolean).
 
 Function name suffix naming convention:
 
@@ -246,205 +249,7 @@ fy[ i ] = (float)dyi;
 #include "stdlib/strided/base/unary.h"
 ```
 
-#### UnaryFcnFloat32
-
-Function type for a function accepting and returning single-precision floating-point numbers.
-
-```c
-typedef float UnaryFcnFloat32( const float x );
-```
-
-A `UnaryFcnFloat32` function should accept the following arguments:
-
--   **x**: `[in] float` single-precision floating-point number.
-
-The function should return a single-precision floating-point number.
-
-#### UnaryFcnFloat32Int64
-
-Function type for a function which accepts a single-precision floating-point number and returns a signed 64-bit integer.
-
-```c
-typedef int64_t UnaryFcnFloat32Int64( const float x );
-```
-
-A `UnaryFcnFloat32Int64` function should accept the following arguments:
-
--   **x**: `[in] float` single-precision floating-point number.
-
-The function should return a signed 64-bit integer.
-
-#### UnaryFcnFloat32Int32
-
-Function type for a function which accepts a single-precision floating-point number and returns a signed 32-bit integer.
-
-```c
-typedef int32_t UnaryFcnFloat32Int32( const float x );
-```
-
-A `UnaryFcnFloat32Int32` function should accept the following arguments:
-
--   **x**: `[in] float` single-precision floating-point number.
-
-The function should return a signed 32-bit integer.
-
-#### UnaryFcnFloat64
-
-Function type for a function which accepts and returns double-precision floating-point numbers.
-
-```c
-typedef double UnaryFcnFloat64( const double x );
-```
-
-A `UnaryFcnFloat64` function should accept the following arguments:
-
--   **x**: `[in] double` double-precision floating-point number.
-
-The function should return a double-precision floating-point number.
-
-#### UnaryFcnFloat64Int64
-
-Function type for a function which accepts a double-precision floating-point number and returns a signed 64-bit integer.
-
-```c
-typedef int64_t UnaryFcnFloat64Int64( const double x );
-```
-
-A `UnaryFcnFloat64Int64` function should accept the following arguments:
-
--   **x**: `[in] double` double-precision floating-point number.
-
-The function should return a signed 64-bit integer.
-
-#### UnaryFcnFloat64Int32
-
-Function type for a function which accepts a double-precision floating-point number and returns a signed 32-bit integer.
-
-```c
-typedef int32_t UnaryFcnFloat64Int32( const double x );
-```
-
-A `UnaryFcnFloat64Int32` function should accept the following arguments:
-
--   **x**: `[in] double` double-precision floating-point number.
-
-The function should return a signed 32-bit integer.
-
-#### UnaryFcnInt64
-
-Function type for a function which accepts and returns signed 64-bit integers.
-
-```c
-typedef int64_t UnaryFcnInt64( const int64_t x );
-```
-
-A `UnaryFcnInt64` function should accept the following arguments:
-
--   **x**: `[in] int64_t` signed 64-bit integer.
-
-The function should return a signed 64-bit integer.
-
-#### UnaryFcnUint64
-
-Function type for a function which accepts and returns unsigned 64-bit integers.
-
-```c
-typedef uint64_t UnaryFcnUint64( const uint64_t x );
-```
-
-A `UnaryFcnUint64` function should accept the following arguments:
-
--   **x**: `[in] uint64_t` unsigned 64-bit integer.
-
-The function should return an unsigned 64-bit integer.
-
-#### UnaryFcnInt32
-
-Function type for a function which accepts and returns signed 32-bit integers.
-
-```c
-typedef int32_t UnaryFcnInt32( const int32_t x );
-```
-
-A `UnaryFcnInt32` function should accept the following arguments:
-
--   **x**: `[in] int32_t` signed 32-bit integer.
-
-The function should return a signed 32-bit integer.
-
-#### UnaryFcnUint32
-
-Function type for a function which accepts and returns unsigned 32-bit integers.
-
-```c
-typedef uint32_t UnaryFcnUint32( const uint32_t x );
-```
-
-A `UnaryFcnUint32` function should accept the following arguments:
-
--   **x**: `[in] uint32_t` unsigned 32-bit integer.
-
-The function should return an unsigned 32-bit integer.
-
-#### UnaryFcnInt16
-
-Function type for a function which accepts and returns signed 16-bit integers.
-
-```c
-typedef int16_t UnaryFcnInt16( const int16_t x );
-```
-
-A `UnaryFcnInt16` function should accept the following arguments:
-
--   **x**: `[in] int16_t` signed 16-bit integer.
-
-The function should return a signed 16-bit integer.
-
-#### UnaryFcnUint16
-
-Function type for a function which accepts and returns unsigned 16-bit integers.
-
-```c
-typedef uint16_t UnaryFcnUint16( const uint16_t x );
-```
-
-A `UnaryFcnUint16` function should accept the following arguments:
-
--   **x**: `[in] uint16_t` unsigned 16-bit integer.
-
-The function should return an unsigned 16-bit integer.
-
-#### UnaryFcnInt8
-
-Function type for a function which accepts and returns signed 8-bit integers.
-
-```c
-typedef int8_t UnaryFcnInt8( const int8_t x );
-```
-
-A `UnaryFcnInt8` function should accept the following arguments:
-
--   **x**: `[in] int8_t` signed 8-bit integer.
-
-The function should return a signed 8-bit integer.
-
-#### UnaryFcnUint8
-
-Function type for a function which accepts and returns unsigned 8-bit integers.
-
-```c
-typedef uint8_t UnaryFcnUint8( const uint8_t x );
-```
-
-A `UnaryFcnUint8` function should accept the following arguments:
-
--   **x**: `[in] uint8_t` unsigned 8-bit integer.
-
-The function should return an unsigned 8-bit integer.
-
 <!-- NOTE: keep the following in alphabetical order -->
-
-* * *
 
 #### stdlib_strided_b_b( \*arrays[], \*shape, \*strides, \*fcn )
 
@@ -480,10 +285,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_b( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_b_b_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning unsigned 32-bit integers to an unsigned 8-bit integer strided input array, casts the callback's unsigned 32-bit integer return value to an unsigned 8-bit integer, and assigns results to elements in an unsigned 8-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 1 }; // 1 byte per uint8
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+uint32_t scale( const uint32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_b_b_as_u_u( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_b_b_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -520,7 +365,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -560,7 +405,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -600,7 +445,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -640,7 +485,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -680,7 +525,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -720,7 +565,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -760,7 +605,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -800,10 +645,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_b_k_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to an unsigned 8-bit integer strided input array, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a signed 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 2 }; // 1 byte per uint8, 2 bytes per int16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t scale( const int32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_b_k_as_i_i( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_b_k_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_k_as_k_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -840,7 +725,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_k_as_k_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -880,7 +765,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -920,10 +805,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_t_as_t_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_b_t_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning unsigned 32-bit integers to an unsigned 8-bit integer strided input array, casts the callback's unsigned 32-bit integer return value to an unsigned 16-bit integer, and assigns results to elements in an unsigned 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 2 }; // 1 byte per uint8, 2 bytes per uint16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+uint32_t scale( const uint32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_b_t_as_u_u( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_b_t_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_b_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -960,7 +885,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint8_t (*f)(uint8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1000,7 +925,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_b_u_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1040,7 +965,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1076,7 +1001,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64Int32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_d_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1112,7 +1037,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64Int64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int64_t (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_d_l( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1152,7 +1077,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_f_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1192,7 +1117,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_f_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1232,7 +1157,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1272,7 +1197,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_f_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1308,7 +1233,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32Int32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_f_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1344,7 +1269,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32Int64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int64_t (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_f_l( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1384,7 +1309,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_i_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1424,7 +1349,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_i_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1464,7 +1389,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1507,7 +1432,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_i_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1547,7 +1472,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1587,7 +1512,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1627,7 +1552,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1667,7 +1592,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1707,7 +1632,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1747,7 +1672,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1787,7 +1712,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1827,10 +1752,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_k_k_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 16-bit integer strided input array, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a signed 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0, 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 2, 2 }; // 2 bytes per int16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t scale( const int32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_k_k_as_i_i( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_k_k_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1870,10 +1835,53 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_k_t_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 16-bit integer strided input array, casts the callback's signed 32-bit integer return value to an unsigned 16-bit integer, and assigns results to elements in an unsigned 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0, 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 2, 2 }; // 2 bytes per int16, 2 bytes per uint16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t abs( const int32_t x ) {
+    if ( x < 0 ) {
+        return -x;
+    }
+    return x;
+}
+
+// Apply the callback:
+stdlib_strided_k_t_as_i_i( arrays, shape, strides, (void *)abs );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_k_t_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_k_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1913,10 +1921,53 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_k_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_k_u_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 16-bit integer strided input array, casts the callback's signed 32-bit integer return value to an unsigned 32-bit integer, and assigns results to elements in an unsigned 32-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0, 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 2, 4 }; // 2 bytes per int16, 4 bytes per uint32
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t abs( const int32_t x ) {
+    if ( x < 0 ) {
+        return -x;
+    }
+    return x;
+}
+
+// Apply the callback:
+stdlib_strided_k_u_as_i_i( arrays, shape, strides, (void *)abs );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_k_u_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_l_l( \*arrays[], \*shape, \*strides, \*fcn )
@@ -1953,7 +2004,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int64_t (*f)(int64_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_l_l( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -1996,7 +2047,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int64_t (*f)(int64_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_l_v( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2039,7 +2090,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_b( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2079,7 +2130,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2119,7 +2170,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2159,7 +2210,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2199,7 +2250,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2239,7 +2290,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2279,7 +2330,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2319,7 +2370,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2359,10 +2410,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_s_k_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 8-bit integer strided input array, casts the callback's signed 32-bit integer return value to a signed 16-bit integer, and assigns results to elements in a signed 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 2 }; // 1 byte per int8, 2 bytes per int16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t scale( const int32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_s_k_as_i_i( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_s_k_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_k_as_k_k( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2399,7 +2490,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int16_t (*f)(int16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_k_as_k_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2439,10 +2530,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_s( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_s_s_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 8-bit integer strided input array, casts the callback's signed 32-bit integer return value to a signed 8-bit integer, and assigns results to elements in a signed 8-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 1 }; // 1 byte per int8
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t scale( const int32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_s_s_as_i_i( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_s_s_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_t( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2482,10 +2613,53 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_s_t_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 8-bit integer strided input array, casts the callback's signed 32-bit integer return value to an unsigned 16-bit integer, and assigns results to elements in an unsigned 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 2 }; // 1 bytes per int8, 2 bytes per uint16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t abs( const int32_t x ) {
+    if ( x < 0 ) {
+        return -x;
+    }
+    return x;
+}
+
+// Apply the callback:
+stdlib_strided_s_t_as_i_i( arrays, shape, strides, (void *)abs );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_s_t_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_s_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2525,10 +2699,53 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt8` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int8_t (*f)(int8_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_s_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_s_u_as_i_i( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning signed 32-bit integers to a signed 8-bit integer strided input array, casts the callback's signed 32-bit integer return value to an unsigned 32-bit integer, and assigns results to elements in an unsigned 32-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 1, 4 }; // 1 bytes per int8, 2 bytes per uint32
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+int32_t abs( const int32_t x ) {
+    if ( x < 0 ) {
+        return -x;
+    }
+    return x;
+}
+
+// Apply the callback:
+stdlib_strided_s_u_as_i_i( arrays, shape, strides, (void *)abs );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_s_u_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_d( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2565,7 +2782,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2605,7 +2822,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2645,7 +2862,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2685,7 +2902,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_f_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2725,7 +2942,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `float (*f)(float)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2765,7 +2982,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2805,7 +3022,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnInt32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `int32_t (*f)(int32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_i_as_i_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2845,10 +3062,50 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
+```
+
+#### stdlib_strided_t_t_as_u_u( \*arrays[], \*shape, \*strides, \*fcn )
+
+Applies a unary callback accepting and returning unsigned 32-bit integers to an unsigned 16-bit integer strided input array, casts the callback's unsigned 32-bit integer return value to an unsigned 16-bit integer, and assigns results to elements in an unsigned 16-bit integer strided output array.
+
+```c
+#include <stdint.h>
+
+// Create underlying byte arrays:
+uint8_t x[] = { 0, 0, 0, 0, 0, 0 };
+uint8_t out[] = { 0, 0, 0, 0, 0, 0 };
+
+// Define a pointer to an array containing pointers to strided arrays:
+uint8_t *arrays[] = { x, out };
+
+// Define the strides:
+int64_t strides[] = { 2, 2 }; // 2 bytes per uint16
+
+// Define the number of elements over which to iterate:
+int64_t shape[] = { 3 };
+
+// Define a callback:
+uint32_t scale( const uint32_t x ) {
+    return x + 10;
+}
+
+// Apply the callback:
+stdlib_strided_t_t_as_u_u( arrays, shape, strides, (void *)scale );
+```
+
+The function accepts the following arguments:
+
+-   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
+-   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
+-   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
+
+```c
+void stdlib_strided_t_t_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 ```
 
 #### stdlib_strided_t_u( \*arrays[], \*shape, \*strides, \*fcn )
@@ -2885,7 +3142,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint16` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint16_t (*f)(uint16_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2925,7 +3182,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_t_u_as_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -2965,7 +3222,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_u_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -3005,7 +3262,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnFloat64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `double (*f)(double)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_u_d_as_d_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -3045,7 +3302,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint32` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint32_t (*f)(uint32_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_u_u( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
@@ -3085,7 +3342,7 @@ The function accepts the following arguments:
 -   **arrays**: `[inout] uint8_t**` array whose first element is a pointer to a strided input array and whose last element is a pointer to a strided output array.
 -   **shape**: `[in] int64_t*` array whose only element is the number of elements over which to iterate.
 -   **strides**: `[in] int64_t*` array containing strides (in bytes) for each strided array.
--   **fcn**: `[in] void*` a `UnaryFcnUint64` function to apply provided as a `void` pointer.
+-   **fcn**: `[in] void*` a `uint64_t (*f)(uint64_t)` function to apply provided as a `void` pointer.
 
 ```c
 void stdlib_strided_v_v( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );

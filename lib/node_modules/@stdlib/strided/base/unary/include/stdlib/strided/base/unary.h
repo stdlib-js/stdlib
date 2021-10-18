@@ -27,6 +27,7 @@
 
 // Note: keep in alphabetical order...
 #include "unary/b_b.h"
+#include "unary/b_b_as_u_u.h"
 #include "unary/b_d.h"
 #include "unary/b_d_as_d_d.h"
 #include "unary/b_f.h"
@@ -35,9 +36,11 @@
 #include "unary/b_i.h"
 #include "unary/b_i_as_i_i.h"
 #include "unary/b_k.h"
+#include "unary/b_k_as_i_i.h"
 #include "unary/b_k_as_k_k.h"
 #include "unary/b_t.h"
 #include "unary/b_t_as_t_t.h"
+#include "unary/b_t_as_u_u.h"
 #include "unary/b_u.h"
 #include "unary/b_u_as_u_u.h"
 
@@ -65,8 +68,11 @@
 #include "unary/k_i.h"
 #include "unary/k_i_as_i_i.h"
 #include "unary/k_k.h"
+#include "unary/k_k_as_i_i.h"
 #include "unary/k_t.h"
+#include "unary/k_t_as_i_i.h"
 #include "unary/k_u.h"
+#include "unary/k_u_as_i_i.h"
 
 #include "unary/l_l.h"
 #include "unary/l_v.h"
@@ -80,10 +86,14 @@
 #include "unary/s_i.h"
 #include "unary/s_i_as_i_i.h"
 #include "unary/s_k.h"
+#include "unary/s_k_as_i_i.h"
 #include "unary/s_k_as_k_k.h"
 #include "unary/s_s.h"
+#include "unary/s_s_as_i_i.h"
 #include "unary/s_t.h"
+#include "unary/s_t_as_i_i.h"
 #include "unary/s_u.h"
+#include "unary/s_u_as_i_i.h"
 
 #include "unary/t_d.h"
 #include "unary/t_d_as_d_d.h"
@@ -93,6 +103,7 @@
 #include "unary/t_i.h"
 #include "unary/t_i_as_i_i.h"
 #include "unary/t_t.h"
+#include "unary/t_t_as_u_u.h"
 #include "unary/t_u.h"
 #include "unary/t_u_as_u_u.h"
 

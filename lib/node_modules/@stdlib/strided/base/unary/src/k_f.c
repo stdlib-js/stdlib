@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/unary/k_f.h"
-#include "stdlib/strided/base/unary/typedefs.h"
 #include "stdlib/strided/base/unary/macros.h"
 #include <stdint.h>
 
@@ -55,6 +54,7 @@
 * stdlib_strided_k_f( arrays, shape, strides, (void *)scale );
 */
 void stdlib_strided_k_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	UnaryFcnInt16 *f = (UnaryFcnInt16 *)fcn;
+	typedef int16_t func_type( const int16_t x );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_UNARY_LOOP_CLBK( int16_t, float )
 }
