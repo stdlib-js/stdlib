@@ -219,6 +219,35 @@ rules[ 'curly' ] = 'error';
 rules[ 'default-case' ] = 'error';
 
 /**
+* Always require a `default` clause to be last in a `switch` statement.
+*
+* @name default-case-last
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [default-case]{@link http://eslint.org/docs/rules/default-case-last}
+*
+* @example
+* // Bad...
+* switch( foo ) {
+* default:
+*     break;
+* case 1:
+*     break;
+* }
+*
+* @example
+* // Good...
+* switch( foo ) {
+* case 1:
+*     break;
+* default:
+*     break;
+* }
+*/
+rules[ 'default-case-last' ] = 'error';
+
+/**
 * Always require default parameters to be last.
 *
 * @name default-param-last
@@ -1236,6 +1265,25 @@ rules[ 'no-unused-expressions' ] = [ 'error', {
 * }
 */
 rules[ 'no-unused-labels' ] = 'error';
+
+/**
+* Ensure there are no regular expression backreferences that always successfully match zero-length and cannot match anything else.
+*
+* @name no-useless-backreference
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [no-useless-backreference]{@link http://eslint.org/docs/rules/no-useless-backreference}
+*
+* @example
+* // Bad...
+* var RE = /\1(a)/; // forward reference to (a);
+*
+* @example
+* // Good...
+* var RE = /(a)\1/; // reference to (a)
+*/
+rules[ 'no-useless-backreference' ] = 'error';
 
 /**
 * Never allow using `call` or `apply` when a normal function invocation will suffice.

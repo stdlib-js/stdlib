@@ -12,7 +12,7 @@
 
     Returns
     -------
-    out: bool
+    out: boolean
         Boolean indicating if `a` is deep equal to `b`.
 
     Examples
