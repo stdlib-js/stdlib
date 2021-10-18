@@ -28,10 +28,10 @@ var rules = {};
 /**
 * Warn when a callback may be unintentionally called multiple times.
 *
-* @name callback-return
+* @name node/callback-return
 * @memberof rules
 * @type {Array}
-* @see [callback-return]{@link http://eslint.org/docs/rules/callback-return}
+* @see [node/callback-return]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/callback-return.md}
 *
 * @example
 * // Bad...
@@ -51,7 +51,7 @@ var rules = {};
 *     clbk();
 * }
 */
-rules[ 'callback-return' ] = [ 'warn', [
+rules[ 'node/callback-return' ] = [ 'warn', [
 	'callback',
 	'clbk',
 	'cb',
@@ -62,11 +62,11 @@ rules[ 'callback-return' ] = [ 'warn', [
 /**
 * Allow `require` to be used in a nested scope.
 *
-* @name global-require
+* @name node/global-require
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [global-require]{@link http://eslint.org/docs/rules/global-require}
+* @see [node/global-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/global-require.md}
 *
 * @example
 * // Okay...
@@ -77,16 +77,16 @@ rules[ 'callback-return' ] = [ 'warn', [
 *     f = require( 'bar' );
 * }
 */
-rules[ 'global-require' ] = 'off';
+rules[ 'node/global-require' ] = 'off';
 
 /**
 * Always handle callback error arguments.
 *
-* @name handle-callback-err
+* @name node/handle-callback-err
 * @memberof rules
 * @type {Array}
 * @default [ 'error', '^(err|error)$' ]
-* @see [handle-callback-err]{@link http://eslint.org/docs/rules/handle-callback-err}
+* @see [node/handle-callback-err]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/handle-callback-err.md}
 *
 * @example
 * // Bad...
@@ -103,34 +103,15 @@ rules[ 'global-require' ] = 'off';
 *     return clbk();
 * }
 */
-rules[ 'handle-callback-err' ] = [ 'error', '^(err|error)$' ];
-
-/**
-* Warn when using the `Buffer` constructor.
-*
-* @name no-buffer-constructor
-* @memberof rules
-* @type {string}
-* @default 'warn'
-* @see [no-buffer-constructor]{@link http://eslint.org/docs/rules/no-buffer-constructor}
-*
-* @example
-* // Bad...
-* var buf = new Buffer( [ 1, 2, 3 ] );
-*
-* @example
-* // Good...
-* var buf = Buffer.from( [ 1, 2, 3 ] );
-*/
-rules[ 'no-buffer-constructor' ] = 'warn'; // TODO: revisit once all Buffer usage includes support for older Node versions
+rules[ 'node/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 
 /**
 * Only allow `require`d modules to be grouped together.
 *
-* @name no-mixed-requires
+* @name node/no-mixed-requires
 * @memberof rules
 * @type {Array}
-* @see [no-mixed-requires]{@link http://eslint.org/docs/rules/no-mixed-requires}
+* @see [node/no-mixed-requires]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-mixed-requires.md}
 *
 * @example
 * // Good...
@@ -139,7 +120,7 @@ rules[ 'no-buffer-constructor' ] = 'warn'; // TODO: revisit once all Buffer usag
 * var beep = require( '@stdlib/beep' );
 * var bar = require( './bar.js' );
 */
-rules[ 'no-mixed-requires' ] = [ 'error', {
+rules[ 'node/no-mixed-requires' ] = [ 'error', {
 	'grouping': false,
 	'allowCall': true
 }];
@@ -147,11 +128,11 @@ rules[ 'no-mixed-requires' ] = [ 'error', {
 /**
 * Never allow the use of `new require()`.
 *
-* @name no-new-require
+* @name node/no-new-require
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-new-require]{@link http://eslint.org/docs/rules/no-new-require}
+* @see [node/no-new-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-new-require.md}
 *
 * @example
 * // Bad...
@@ -163,16 +144,16 @@ rules[ 'no-mixed-requires' ] = [ 'error', {
 *
 * var foo = new Foo();
 */
-rules[ 'no-new-require' ] = 'error';
+rules[ 'node/no-new-require' ] = 'error';
 
 /**
 * Never allow naive directory and file path concatenation.
 *
-* @name no-path-concat
+* @name node/no-path-concat
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-path-concat]{@link http://eslint.org/docs/rules/no-path-concat}
+* @see [node/no-path-concat]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-path-concat.mdt}
 *
 * @example
 * // Bad...
@@ -183,60 +164,54 @@ rules[ 'no-new-require' ] = 'error';
 * var join = require( 'path' ).join;
 * var foo = require( join( __dirname, 'foo.js' ) );
 */
-rules[ 'no-path-concat' ] = 'error';
+rules[ 'node/no-path-concat' ] = 'error';
 
 /**
 * Discourage use of `process.env()`. Use `@stdlib` package instead.
 *
-* @name no-process-env
+* @name node/no-process-env
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-process-env]{@link http://eslint.org/docs/rules/no-process-env}
+* @see [node/no-process-env]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-env.md}
 */
-rules[ 'no-process-env' ] = 'error';
+rules[ 'node/no-process-env' ] = 'error';
 
 /**
 * Warn when using `process.exit()`.
 *
-* @name no-process-exit
+* @name node/no-process-exit
 * @memberof rules
 * @type {string}
 * @default 'warn'
-* @see [no-process-exit]{@link http://eslint.org/docs/rules/no-process-exit}
+* @see [node/no-process-exit]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-exit.md}
 */
-rules[ 'no-process-exit' ] = 'warn';
+rules[ 'node/no-process-exit' ] = 'warn';
 
 /**
 * Restrict the use of specific modules.
 *
-* @name no-restricted-modules
+* @name node/no-restricted-require
 * @memberof rules
 * @type {Array}
-* @see [no-restricted-modules]{@link http://eslint.org/docs/rules/no-restricted-modules}
+* @see [node/no-restricted-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-require.md}
 */
-rules[ 'no-restricted-modules' ] = [ 'error', {
-	'paths': [
-		'underscore',
-		'lodash',
-		'async'
-	],
-	'patterns': [
-		'lodash*',
-		'async/*'
-	]
-}];
+rules[ 'node/no-restricted-require' ] = [ 'error', [
+	'underscore',
+	'lodash',
+	'async'
+]];
 
 /**
 * Warn when using synchronous methods when an asynchronous version exists.
 *
-* @name no-sync
+* @name node/no-sync
 * @memberof rules
 * @type {string}
 * @default 'warn'
-* @see [no-sync]{@link http://eslint.org/docs/rules/no-sync}
+* @see [node/no-sync]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-sync.md}
 */
-rules[ 'no-sync' ] = 'warn';
+rules[ 'node/no-sync' ] = 'warn';
 
 
 // EXPORTS //
