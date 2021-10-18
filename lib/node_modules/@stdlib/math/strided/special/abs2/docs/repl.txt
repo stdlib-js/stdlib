@@ -63,8 +63,8 @@
 
 {{alias}}.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY )
     Computes the squared absolute value for each element in a strided array `x`
-    and assigns the results to elements in a strided array `y` using
-    alternative indexing semantics.
+    and assigns the results to elements in a strided array `y` using alternative
+    indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
     buffer, the `offsetX` and `offsetY` parameters support indexing semantics
