@@ -1,7 +1,7 @@
 
 {{alias}}( N, dtypeX, x, strideX, dtypeY, y, strideY )
-    Computes the absolute value for each element in `x` and assigns the results
-    to elements in `y`.
+    Computes the absolute value for each element in a strided array `x` and
+    assigns the results to elements in a strided array `y`.
 
     The `N` and `stride` parameters determine which elements in `x` and `y` are
     accessed at runtime.
@@ -14,7 +14,7 @@
     N: integer
         Number of indexed elements.
 
-    dtypeX: string
+    dtypeX: any
         Data type for `x`.
 
     x: ArrayLikeObject
@@ -23,7 +23,7 @@
     strideX: integer
         Index increment for `x`.
 
-    dtypeY: string
+    dtypeY: any
         Data type for `y`.
 
     y: ArrayLikeObject
@@ -62,8 +62,9 @@
 
 
 {{alias}}.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY )
-    Computes the absolute value for each element in `x` and assigns the results
-    to elements in `y` using alternative indexing semantics.
+    Computes the absolute value for each element in a strided array `x` and
+    assigns the results to elements in a strided array `y` using alternative
+    indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
     buffer, the `offsetX` and `offsetY` parameters support indexing semantics
@@ -74,7 +75,7 @@
     N: integer
         Number of indexed elements.
 
-    dtypeX: string
+    dtypeX: any
         Data type for `x`.
 
     x: ArrayLikeObject
@@ -86,7 +87,7 @@
     offsetX: integer
         Starting index for `x`.
 
-    dtypeY: string
+    dtypeY: any
         Data type for `y`.
 
     y: ArrayLikeObject
