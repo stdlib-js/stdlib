@@ -59,6 +59,53 @@ rules[ 'node/callback-return' ] = [ 'warn', [
 	'next'
 ]];
 
+/* eslint-disable -- disable linting due to `import` statements throwing for doctest rules */
+
+/**
+* Enforces use of `module.exports` as the export style over `exports`.
+*
+* @name node/file-extension-in-import
+* @memberof rules
+* @type {Array}
+* @see [node/file-extension-in-import]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md}
+*
+* @example
+* // Bad...
+* import foo from './path/to/a/file';
+*
+* @example
+* // Good...
+* import eslint from 'eslint';
+* import foo from './path/to/a/file.js';
+*/
+rules[ 'node/file-extension-in-import' ] = [ 'error', 'always', {
+	'tryExtensions': [ '.js', '.json', '.node', '.ts' ]
+}];
+
+/* eslint-enable */
+
+/**
+* Enforces use of `module.exports` as the export style over `exports`.
+*
+* @name node/exports-style
+* @memberof rules
+* @type {Array}
+* @see [node/exports-style]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md}
+*
+* @example
+* // Bad...
+* exports.foo = 1;
+* exports.bar = 2;
+*
+* @example
+* // Good...
+* module.exports = {
+*     'foo': 1,
+*     'bar': 2
+* };
+*/
+rules[ 'node/exports-style' ] = [ 'error', 'module.exports' ];
+
 /**
 * Allow `require` to be used in a nested scope.
 *
@@ -104,6 +151,28 @@ rules[ 'node/global-require' ] = 'off';
 * }
 */
 rules[ 'node/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
+
+/**
+* Disallows use of `exports = {}` aside from `module.exports = exports = {}`.
+*
+* @name node/no-exports-assign
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [node/no-exports-assign]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-exports-assign.md}
+*
+* @example
+* // Bad...
+* exports = {};
+*
+* @example
+* // Good...
+* module.exports.foo = 1;
+* exports.bar = 2;
+*
+* module.exports = {};
+*/
+rules[ 'node/no-exports-assign' ] = 'error';
 
 /**
 * Only allow `require`d modules to be grouped together.
@@ -212,6 +281,77 @@ rules[ 'node/no-restricted-require' ] = [ 'error', [
 * @see [node/no-sync]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-sync.md}
 */
 rules[ 'node/no-sync' ] = 'warn';
+
+/**
+* Disallow `bin` files that npm ignores.
+*
+* @name node/no-unpublished-bin
+* @memberof rules
+* @type {Array}
+* @see [node/no-unpublished-bin]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-bin.md}
+*/
+rules[ 'node/no-unpublished-bin' ] = [ 'error' ];
+
+/**
+* Disallows `import` declarations which import private modules.
+*
+* @name node/no-unpublished-import
+* @memberof rules
+* @type {Array}
+* @see [node/no-unpublished-import]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md}
+*/
+rules[ 'node/no-unpublished-import' ] = [ 'error', {
+	'allowModules': [],
+	'tryExtensions': [ '.js', '.json', '.node' ]
+}];
+
+/**
+* Disallows `require()` expressions which import private modules.
+*
+* @name node/no-unpublished-require
+* @memberof rules
+* @type {Array}
+* @see [node/no-unpublished-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md}
+*/
+rules[ 'node/no-unpublished-require' ] = [ 'error', {
+	'allowModules': [],
+	'tryExtensions': [ '.js', '.json', '.node' ]
+}];
+
+/**
+* Makes ESLint come to address `process.exit()` as throw in code path analysis.
+*
+* @name node/process-exit-as-throw
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see [node/process-exit-as-throw]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/process-exit-as-throw.md}
+*/
+rules[ 'node/process-exit-as-throw' ] = 'error';
+
+/**
+* Suggests correct usage of shebang for `bin` files.
+*
+* @name node/shebang
+* @memberof rules
+* @type {Array}
+* @see [node/shebang]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md}
+*/
+rules[ 'node/shebang' ] = [ 'error', {
+	'convertPath': [
+		{
+			'include': [
+				'**/bin/**'
+			],
+			'exclude': [
+				'**/scripts/**'
+			],
+			'replace': [
+				'^bin/(.+)$', 'bin/$1'
+			]
+		}
+	]
+}];
 
 
 // EXPORTS //
