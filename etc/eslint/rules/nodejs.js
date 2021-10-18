@@ -62,7 +62,7 @@ rules[ 'node/callback-return' ] = [ 'warn', [
 /* eslint-disable -- disable linting due to `import` statements throwing for doctest rules */
 
 /**
-* Enforces use of `module.exports` as the export style over `exports`.
+* Enforce use of `module.exports` as the export style over `exports`.
 *
 * @name node/file-extension-in-import
 * @memberof rules
@@ -85,7 +85,7 @@ rules[ 'node/file-extension-in-import' ] = [ 'error', 'always', {
 /* eslint-enable */
 
 /**
-* Enforces use of `module.exports` as the export style over `exports`.
+* Enforce use of `module.exports` as the export style over `exports`.
 *
 * @name node/exports-style
 * @memberof rules
@@ -153,7 +153,7 @@ rules[ 'node/global-require' ] = 'off';
 rules[ 'node/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 
 /**
-* Disallows use of `exports = {}` aside from `module.exports = exports = {}`.
+* Disallow use of `exports = {}` aside from `module.exports = exports = {}`.
 *
 * @name node/no-exports-assign
 * @memberof rules
@@ -258,7 +258,7 @@ rules[ 'node/no-process-env' ] = 'error';
 rules[ 'node/no-process-exit' ] = 'warn';
 
 /**
-* Restrict the use of specific modules.
+* Restrict the use of specific module when loaded by `require()`.
 *
 * @name node/no-restricted-require
 * @memberof rules
@@ -266,6 +266,20 @@ rules[ 'node/no-process-exit' ] = 'warn';
 * @see [node/no-restricted-require]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-require.md}
 */
 rules[ 'node/no-restricted-require' ] = [ 'error', [
+	'underscore',
+	'lodash',
+	'async'
+]];
+
+/**
+* Restrict the use of specific modules when loaded by `import` declarations.
+*
+* @name node/no-restricted-import
+* @memberof rules
+* @type {Array}
+* @see [node/no-restricted-import]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-restricted-import.md}
+*/
+rules[ 'node/no-restricted-import' ] = [ 'error', [
 	'underscore',
 	'lodash',
 	'async'
@@ -293,7 +307,7 @@ rules[ 'node/no-sync' ] = 'warn';
 rules[ 'node/no-unpublished-bin' ] = [ 'error' ];
 
 /**
-* Disallows `import` declarations which import private modules.
+* Disallow `import` declarations which import private modules.
 *
 * @name node/no-unpublished-import
 * @memberof rules
@@ -306,7 +320,7 @@ rules[ 'node/no-unpublished-import' ] = [ 'error', {
 }];
 
 /**
-* Disallows `require()` expressions which import private modules.
+* Disallow `require()` expressions which import private modules.
 *
 * @name node/no-unpublished-require
 * @memberof rules
@@ -319,7 +333,46 @@ rules[ 'node/no-unpublished-require' ] = [ 'error', {
 }];
 
 /**
-* Makes ESLint come to address `process.exit()` as throw in code path analysis.
+* Disallow ECMAScript built-ins unsupported by Node.js version 0.12.
+*
+* @name node/no-unsupported-features/es-builtins
+* @memberof rules
+* @type {Array}
+* @see [node/no-unsupported-features/es-builtins]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-builtins.md}
+*/
+rules[ 'node/no-unsupported-features/es-builtins' ] = [ 'error', {
+	'version': '>=0.12.18',
+	'ignores': []
+}];
+
+/**
+* Disallow ECMAScript syntax unsupported by Node.js version 0.12.
+*
+* @name node/no-unsupported-features/es-syntax
+* @memberof rules
+* @type {Array}
+* @see [node/no-unsupported-features/es-syntax]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md}
+*/
+rules[ 'node/no-unsupported-features/es-syntax' ] = [ 'error', {
+	'version': '>=0.12.18',
+	'ignores': []
+}];
+
+/**
+* Disallow Node.js built-in APIs unsupported by Node.js version 0.12.
+*
+* @name node/no-unsupported-features/node-builtins
+* @memberof rules
+* @type {Array}
+* @see [node/no-unsupported-features/node-builtins]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/node-builtins.md}
+*/
+rules[ 'node/no-unsupported-features/node-builtins' ] = [ 'error', {
+	'version': '>=0.12.18',
+	'ignores': []
+}];
+
+/**
+* Make ESLint come to address `process.exit()` as throw in code path analysis.
 *
 * @name node/process-exit-as-throw
 * @memberof rules
@@ -330,7 +383,7 @@ rules[ 'node/no-unpublished-require' ] = [ 'error', {
 rules[ 'node/process-exit-as-throw' ] = 'error';
 
 /**
-* Suggests correct usage of shebang for `bin` files.
+* Suggest correct usage of shebang for `bin` files.
 *
 * @name node/shebang
 * @memberof rules
