@@ -49,7 +49,7 @@ var abs = require( '@stdlib/math/strided/special/abs' );
 
 #### abs( N, dtypeX, x, strideX, dtypeY, y, strideY )
 
-Computes the [absolute value][absolute-value] for each element in `x` and assigns the results to elements in `y`.
+Computes the [absolute value][absolute-value] for each element in a strided array `x` and assigns the results to elements in a strided array `y`.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -102,7 +102,7 @@ abs( 3, 'float64', x1, -2, 'float64', y1, 1 );
 
 #### abs.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY )
 
-Computes the [absolute value][absolute-value] for each element in `x` and assigns the result to an element in `y` using alternative indexing semantics.
+Computes the [absolute value][absolute-value] for each element in a strided array `x` and assigns the result to an element in a strided array `y` using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

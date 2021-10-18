@@ -44,21 +44,6 @@ import abs = require( './index' );
 	abs( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a string...
-{
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( 10 );
-
-	abs( x.length, 10, x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, true, x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, false, x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, null, x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, undefined, x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, [], x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, {}, x, 1, 'float64', y, 1 ); // $ExpectError
-	abs( x.length, ( x: number ): number => x, x, 1, 'float64', y, 1 ); // $ExpectError
-}
-
 // The compiler throws an error if the function is provided a third argument which is not an array-like object containing numbers...
 {
 	const x = new Float64Array( 10 );
@@ -88,21 +73,6 @@ import abs = require( './index' );
 	abs( x.length, 'float64', x, [], 'float64', y, 1 ); // $ExpectError
 	abs( x.length, 'float64', x, {}, 'float64', y, 1 ); // $ExpectError
 	abs( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided a fifth argument which is not a string...
-{
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( 10 );
-
-	abs( x.length, 'float64', x, 1, 10, y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, true, y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, false, y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, null, y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, undefined, y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, [], y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, {}, y, 1 ); // $ExpectError
-	abs( x.length, 'float64', x, 1, ( x: number ): number => x, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a sixth argument which is not an array-like object containing numbers...
@@ -173,21 +143,6 @@ import abs = require( './index' );
 	abs.ndarray( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a second argument which is not a string...
-{
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( 10 );
-
-	abs.ndarray( x.length, 10, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, true, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, false, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, null, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, undefined, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, [], x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, {}, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, ( x: number ): number => x, x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
-}
-
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not an array-like object containing numbers...
 {
 	const x = new Float64Array( 10 );
@@ -232,21 +187,6 @@ import abs = require( './index' );
 	abs.ndarray( x.length, 'float64', x, 1, [], 'float64', y, 1, 0 ); // $ExpectError
 	abs.ndarray( x.length, 'float64', x, 1, {}, 'float64', y, 1, 0 ); // $ExpectError
 	abs.ndarray( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a string...
-{
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( 10 );
-
-	abs.ndarray( x.length, 'float64', x, 1, 0, 10, y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, true, y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, false, y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, null, y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, undefined, y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, [], y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, {}, y, 1, 0 ); // $ExpectError
-	abs.ndarray( x.length, 'float64', x, 1, 0, ( x: number ): number => x, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a seventh argument which is not an array-like object containing numbers...
