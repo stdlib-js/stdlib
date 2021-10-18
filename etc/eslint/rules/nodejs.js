@@ -153,7 +153,7 @@ rules[ 'node/no-new-require' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-path-concat]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-path-concat.mdt}
+* @see [node/no-path-concat]{@link https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-path-concat.md}
 *
 * @example
 * // Bad...
