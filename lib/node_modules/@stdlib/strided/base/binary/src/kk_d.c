@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/binary/kk_d.h"
-#include "stdlib/strided/base/binary/typedefs.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_kk_d( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_kk_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	BinaryFcnInt16 *f = (BinaryFcnInt16 *)fcn;
+	typedef int16_t func_type( const int16_t x, const int16_t y );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK( int16_t, double )
 }

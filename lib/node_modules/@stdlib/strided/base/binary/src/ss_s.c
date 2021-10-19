@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/binary/ss_s.h"
-#include "stdlib/strided/base/binary/typedefs.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_ss_s( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_ss_s( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	BinaryFcnInt8 *f = (BinaryFcnInt8 *)fcn;
+	typedef int8_t func_type( const int8_t x, const int8_t y );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK( int8_t, int8_t )
 }

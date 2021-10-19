@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/binary/bb_k_as_kk_k.h"
-#include "stdlib/strided/base/binary/typedefs.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_bb_k_as_kk_k( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_bb_k_as_kk_k( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	BinaryFcnInt16 *f = (BinaryFcnInt16 *)fcn;
+	typedef int16_t func_type( const int16_t x, const int16_t y );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK_ARG_CAST( uint8_t, int16_t, int16_t )
 }

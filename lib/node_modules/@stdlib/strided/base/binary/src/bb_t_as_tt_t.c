@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/binary/bb_t_as_tt_t.h"
-#include "stdlib/strided/base/binary/typedefs.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_bb_t_as_tt_t( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_bb_t_as_tt_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	BinaryFcnUint16 *f = (BinaryFcnUint16 *)fcn;
+	typedef uint16_t func_type( const uint16_t x, const uint16_t y );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK_ARG_CAST( uint8_t, uint16_t, uint16_t )
 }

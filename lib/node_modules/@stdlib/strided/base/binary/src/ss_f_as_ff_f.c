@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/binary/ss_f_as_ff_f.h"
-#include "stdlib/strided/base/binary/typedefs.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_ss_f_as_ff_f( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_ss_f_as_ff_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	BinaryFcnFloat32 *f = (BinaryFcnFloat32 *)fcn;
+	typedef float func_type( const float x, const float y );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK_ARG_CAST( int8_t, float, float )
 }

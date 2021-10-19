@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/binary/ss_d_as_dd_d.h"
-#include "stdlib/strided/base/binary/typedefs.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_ss_d_as_dd_d( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_ss_d_as_dd_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	BinaryFcnFloat64 *f = (BinaryFcnFloat64 *)fcn;
+	typedef double func_type( const double x, const double y );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK_ARG_CAST( int8_t, double, double )
 }
