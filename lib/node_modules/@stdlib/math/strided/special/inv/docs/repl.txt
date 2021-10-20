@@ -1,5 +1,5 @@
 
-{{alias}}( N, x, strideX, y, strideY )
+{{alias}}( N, dtypeX, strideX, dtypeY, strideY )
     Computes the multiplicative inverse for each element in a strided array `x`
     and assigns the results to elements in a strided array `y`.
 
@@ -14,11 +14,17 @@
     N: integer
         Number of indexed elements.
 
+    dtypeX: any
+        Data type for `x`.
+
     x: ArrayLikeObject
         Input array.
 
     strideX: integer
         Index increment for `x`.
+
+    dtypeY: any
+        Data type for `y`.
 
     y: ArrayLikeObject
         Destination array.
@@ -36,13 +42,12 @@
     // Standard usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
     > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}( x.length, x, 1, y, 1 )
+    > {{alias}}( x.length, 'float64', x, 1, 'float64', y, 1 )
     <Float64Array>[ -0.05, -1.0, 0.5, 0.25 ]
 
     // Using `N` and `stride` parameters:
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
     > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}( N, x, 2, y, -1 )
+    > {{alias}}( 2, 'float64', x, 2, 'float64', y, -1 )
     <Float64Array>[ 0.5, -0.05, 0.0, 0.0 ]
 
     // Using view offsets:
@@ -50,14 +55,13 @@
     > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, x1, -2, y1, 1 )
+    > {{alias}}( 2, 'float64', x1, -2, 'float64', y1, 1 )
     <Float64Array>[ 0.25, -1.0 ]
     > y0
     <Float64Array>[ 0.0, 0.0, 0.25, -1.0 ]
 
 
-{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
+{{alias}}.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY )
     Computes the multiplicative inverse for each element in a strided array `x`
     and assigns the results to elements in a strided array `y` using alternative
     indexing semantics.
@@ -71,6 +75,9 @@
     N: integer
         Number of indexed elements.
 
+    dtypeX: any
+        Data type for `x`.
+
     x: ArrayLikeObject
         Input array.
 
@@ -79,6 +86,9 @@
 
     offsetX: integer
         Starting index for `x`.
+
+    dtypeY: any
+        Data type for `y`.
 
     y: ArrayLikeObject
         Destination array.
@@ -99,14 +109,13 @@
     // Standard usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
     > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0 )
+    > {{alias}}.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 )
     <Float64Array>[ -0.05, -1.0, 0.5, 0.25 ]
 
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
     > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, x, 2, 1, y, -1, y.length-1 )
+    > {{alias}}.ndarray( 2, 'float64', x, 2, 1, 'float64', y, -1, y.length-1 )
     <Float64Array>[ 0.0, 0.0, 0.25, -1.0 ]
 
     See Also
