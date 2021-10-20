@@ -43,6 +43,7 @@ function main() {
 	var flags;
 	var args;
 	var cli;
+	var n;
 
 	// Create a command-line interface:
 	cli = new CLI({
@@ -58,6 +59,9 @@ function main() {
 	if ( flags.help || flags.version ) {
 		return;
 	}
+	if ( flags.n ) {
+		n = parseInt( flags.n, 10 );
+	}
 
 	// Get any provided command-line arguments:
 	args = cli.args();
@@ -66,7 +70,11 @@ function main() {
 	if ( !stdinStream.isTTY ) {
 		return stdin( onRead );
 	}
-	console.log( removeFirst( args[ 0 ] ) ); // eslint-disable-line no-console
+	if ( n ) {
+		console.log( removeFirst( args[ 0 ], n ) ); // eslint-disable-line no-console
+	} else {
+		console.log( removeFirst( args[ 0 ] ) ); // eslint-disable-line no-console
+	}
 
 	/**
 	* Callback invoked upon reading from `stdin`.
@@ -83,8 +91,14 @@ function main() {
 			return cli.error( error );
 		}
 		lines = data.toString().split( reEOL.REGEXP );
-		for ( i = 0; i < lines.length; i++ ) {
-			console.log( removeFirst( lines[ i ] ) ); // eslint-disable-line no-console
+		if ( n ) {
+			for ( i = 0; i < lines.length; i++ ) {
+				console.log( removeFirst( lines[ i ], n ) ); // eslint-disable-line no-console
+			}
+		} else {
+			for ( i = 0; i < lines.length; i++ ) {
+				console.log( removeFirst( lines[ i ] ) ); // eslint-disable-line no-console
+			}
 		}
 	}
 }

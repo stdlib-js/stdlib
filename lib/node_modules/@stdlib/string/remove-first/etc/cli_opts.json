@@ -3,6 +3,9 @@
 		"help",
 		"version"
 	],
+	"string": [
+		"n"
+	],
 	"alias": {
 		"help": [
 			"h"
