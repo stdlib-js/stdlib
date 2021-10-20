@@ -1,5 +1,5 @@
 
-{{alias}}( N, dtypeX, strideX, dtypeY, strideY )
+{{alias}}( N, dtypeX, x, strideX, dtypeY, y, strideY )
     Computes the multiplicative inverse for each element in a strided array `x`
     and assigns the results to elements in a strided array `y`.
 
