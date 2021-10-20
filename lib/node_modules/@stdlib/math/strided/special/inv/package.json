@@ -21,6 +21,7 @@
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
+    "scripts": "./scripts",
     "src": "./src",
     "test": "./test"
   },
@@ -60,7 +61,6 @@
     "multiplicative",
     "inverse",
     "reciprocal",
-    "number",
     "vector",
     "array",
     "strided",
