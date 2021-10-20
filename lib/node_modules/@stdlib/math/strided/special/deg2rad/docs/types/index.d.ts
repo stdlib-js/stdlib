@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -30,74 +30,89 @@ interface Routine {
 	* Converts each element in a strided array `x` from degrees to radians and assigns the results to elements in a strided array `y`.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - `x` data type
 	* @param x - input array
 	* @param strideX - `x` stride length
+	* @param dtypeY - `y` data type
 	* @param y - destination array
 	* @param strideY - `y` stride length
+	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `y`
 	*
 	* @example
 	* var Float64Array = require( `@stdlib/array/float64` );
 	*
-	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0 ] );
+	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 90.0, 120.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* deg2rad( x.length, x, 1, y, 1 );
-	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.047, ~1.571 ]
+	* deg2rad( x.length, 'float64', x, 1, 'float64', y, 1 );
+	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 	*/
-	( N: number, x: ArrayLike<number>, strideX: number, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
 
 	/**
 	* Converts each element in a strided array `x` from degrees to radians and assigns the results to elements in a strided array `y` using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
+	* @param dtypeX - `x` data type
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
+	* @param dtypeY - `y` data type
 	* @param y - destination array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
+	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {RangeError} seventh argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `y`
 	*
 	* @example
 	* var Float64Array = require( `@stdlib/array/float64` );
 	*
-	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0] );
+	* var x = new Float64Array( [ 0.0, 30.0, 45.0, 90.0, 120.0] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* deg2rad.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.047, ~1.571 ]
+	* deg2rad.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
+	* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 	*/
-	ndarray( N: number, x: ArrayLike<number>, strideX: number, offsetX: number, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
 }
 
 /**
 * Converts each element in a strided array `x` from degrees to radians and assigns the results to elements in a strided array `y`.
 *
 * @param N - number of indexed elements
+* @param dtypeX - `x` data type
 * @param x - input array
 * @param strideX - `x` stride length
+* @param dtypeY - `y` data type
 * @param y - destination array
 * @param strideY - `y` stride length
+* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
 * @returns `y`
 *
 * @example
 * var Float64Array = require( `@stdlib/array/float64` );
 *
-* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0] );
+* var x = new Float64Array( [ 0.0, 30.0, 45.0, 90.0, 120.0] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* deg2rad( x.length, x, 1, y, 1 );
-* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.047, ~1.571 ]
+* deg2rad( x.length, 'float64', x, 1, 'float64', y, 1 );
+* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 *
 * @example
 * var Float64Array = require( `@stdlib/array/float64` );
 *
-* var x = new Float64Array( [ 0.0, 30.0, 45.0, 60.0, 90.0] );
+* var x = new Float64Array( [ 0.0, 30.0, 45.0, 90.0, 120.0] );
 * var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* deg2rad.ndarray( x.length, x, 1, 0, y, 1, 0 );
-* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.047, ~1.571 ]
+* deg2rad.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
+* // y => <Float64Array>[ 0.0, ~0.524, ~0.785, ~1.571, ~2.094 ]
 */
 declare var deg2rad: Routine;
 
