@@ -139,8 +139,8 @@ abs2.ndarray( 3, 'float64', x, 2, 1, 'float64', y, -1, y.length-1 );
 ```javascript
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dtypes = require( '@stdlib/array/dtypes' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
 var abs2 = require( '@stdlib/math/strided/special/abs2' );
 
 var dt;
@@ -150,8 +150,7 @@ var i;
 
 dt = dtypes();
 for ( i = 0; i < dt.length; i++ ) {
-    x = filledarray( 0.0, 10, dt[ i ] );
-    gfillBy( x.length, x, 1, uniform( -10.0, 10.0 ) );
+    x = filledarrayBy( 10, dt[ i ], uniform( 0.0, 10.0 ) );
     console.log( x );
 
     y = filledarray( 0.0, x.length, 'generic' );
