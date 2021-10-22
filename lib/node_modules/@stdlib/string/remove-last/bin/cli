@@ -27,7 +27,7 @@ var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var CLI = require( '@stdlib/cli/ctor' );
 var stdin = require( '@stdlib/process/read-stdin' );
 var stdinStream = require( '@stdlib/streams/node/stdin' );
-var reEOL = require( '@stdlib/regexp/eol' );
+var RE_EOL = require( '@stdlib/regexp/eol' ).REGEXP;
 var removeLast = require( './../lib' );
 
 
@@ -43,6 +43,7 @@ function main() {
 	var flags;
 	var args;
 	var cli;
+	var n;
 
 	// Create a command-line interface:
 	cli = new CLI({
@@ -58,6 +59,9 @@ function main() {
 	if ( flags.help || flags.version ) {
 		return;
 	}
+	if ( flags.n ) {
+		n = parseInt( flags.n, 10 );
+	}
 
 	// Get any provided command-line arguments:
 	args = cli.args();
@@ -66,7 +70,11 @@ function main() {
 	if ( !stdinStream.isTTY ) {
 		return stdin( onRead );
 	}
-	console.log( removeLast( args[ 0 ] ) ); // eslint-disable-line no-console
+	if ( n ) {
+		console.log( removeLast( args[ 0 ], n ) ); // eslint-disable-line no-console
+	} else {
+		console.log( removeLast( args[ 0 ] ) ); // eslint-disable-line no-console
+	}
 
 	/**
 	* Callback invoked upon reading from `stdin`.
@@ -82,9 +90,15 @@ function main() {
 		if ( error ) {
 			return cli.error( error );
 		}
-		lines = data.toString().split( reEOL.REGEXP );
-		for ( i = 0; i < lines.length; i++ ) {
-			console.log( removeLast( lines[ i ] ) ); // eslint-disable-line no-console
+		lines = data.toString().split( RE_EOL );
+		if ( n ) {
+			for ( i = 0; i < lines.length; i++ ) {
+				console.log( removeLast( lines[ i ], n ) ); // eslint-disable-line no-console
+			}
+		} else {
+			for ( i = 0; i < lines.length; i++ ) {
+				console.log( removeLast( lines[ i ] ) ); // eslint-disable-line no-console
+			}
 		}
 	}
 }

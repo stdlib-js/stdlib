@@ -20,7 +20,7 @@ limitations under the License.
 
 # removeFirst
 
-> Remove the first character of a string.
+> Remove the first character(s) of a string.
 
 <section class="usage">
 
@@ -30,7 +30,7 @@ limitations under the License.
 var removeFirst = require( '@stdlib/string/remove-first' );
 ```
 
-#### removeFirst( str )
+#### removeFirst( str\[, n] )
 
 Removes the first character of a `string`.
 
@@ -40,6 +40,16 @@ var out = removeFirst( 'last man standing' );
 
 out = removeFirst( 'Hidden Treasures' );
 // returns 'idden Treasures'
+```
+
+If provided a second argument, the function removes the first `n` characters.
+
+```javascript
+var out = removeFirst( 'foo bar', 4 );
+// returns 'bar'
+
+out = removeFirst( 'foo bar', 10 );
+// returns ''
 ```
 
 </section>
@@ -66,6 +76,15 @@ str = removeFirst( 'javaScript' );
 
 str = removeFirst( 'Hidden Treasures' );
 // returns 'idden Treasures'
+
+str = removeFirst( 'The Last of the Mohicans', 4 );
+// returns 'Last of the Mohicans'
+
+str = removeFirst( '🐶🐮🐷🐰🐸', 2 );
+// returns '🐷🐰🐸'
+
+str = removeFirst( '🐶🐮🐷🐰🐸', 10 );
+// returns ''
 ```
 
 </section>
@@ -89,6 +108,7 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+         --n                   Number of characters to remove. Default: 1.
 ```
 
 </section>
@@ -107,8 +127,9 @@ eep
 To use as a [standard stream][standard-streams],
 
 ```bash
-$ echo -n 'beep' | remove-first
-eep
+$ echo -n 'beep\nboop' | remove-first --n=2
+be
+bo
 ```
 
 </section>

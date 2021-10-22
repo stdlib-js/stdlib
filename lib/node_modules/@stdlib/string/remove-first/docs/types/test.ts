@@ -38,6 +38,18 @@ import removeFirst = require( './index' );
 	removeFirst( ( x: number ): number => x ); // $ExpectError
 }
 
+// The function does not compile if provided a second argument that is not a number...
+{
+	removeFirst( 'abc', true ); // $ExpectError
+	removeFirst( 'abc', false ); // $ExpectError
+	removeFirst( 'abc', null ); // $ExpectError
+	removeFirst( 'abc', undefined ); // $ExpectError
+	removeFirst( 'abc', 'abc' ); // $ExpectError
+	removeFirst( 'abc', [] ); // $ExpectError
+	removeFirst( 'abc', {} ); // $ExpectError
+	removeFirst( 'abc', ( x: number ): number => x ); // $ExpectError
+}
+
 // The function does not compile if provided insufficient arguments...
 {
 	removeFirst(); // $ExpectError
