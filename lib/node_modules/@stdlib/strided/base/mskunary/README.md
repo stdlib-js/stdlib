@@ -163,7 +163,7 @@ mskunary.ndarray( [ x, mask, y ], [ N ], [ 2, 1, -1 ], [ 1, 0, y.length-1 ], abs
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var bernoulli = require( '@stdlib/random/base/bernoulli' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var mskunary = require( '@stdlib/strided/base/mskunary' );
 
 function add10( x ) {
@@ -172,12 +172,10 @@ function add10( x ) {
 
 var N = 10;
 
-var x = filledarray( 0.0, N, 'generic' );
-gfillBy( x.length, x, 1, discreteUniform( -100, 100 ) );
+var x = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( x );
 
-var m = filledarray( 0, N, 'generic' );
-gfillBy( m.length, m, 1, bernoulli( 0.5 ) );
+var m = filledarrayBy( N, 'generic', bernoulli( 0.5 ) );
 console.log( m );
 
 var y = filledarray( 0.0, N, 'generic' );

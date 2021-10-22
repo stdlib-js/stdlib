@@ -180,7 +180,7 @@ ternary.ndarray( [ x, y, z, w ], [ N ], [ 2, 2, 2, -1 ], [ 1, 1, 1, w.length-1 ]
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var ternary = require( '@stdlib/strided/base/ternary' );
 
 function add( x, y, z ) {
@@ -189,16 +189,13 @@ function add( x, y, z ) {
 
 var N = 10;
 
-var x = filledarray( 0.0, N, 'generic' );
-gfillBy( x.length, x, 1, discreteUniform( -100, 100 ) );
+var x = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( x );
 
-var y = filledarray( 0.0, N, 'generic' );
-gfillBy( y.length, y, 1, discreteUniform( -100, 100 ) );
+var y = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( y );
 
-var z = filledarray( 0.0, N, 'generic' );
-gfillBy( z.length, z, 1, discreteUniform( -100, 100 ) );
+var z = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( z );
 
 var w = filledarray( 0.0, N, 'generic' );

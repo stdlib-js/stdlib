@@ -192,7 +192,7 @@ quinary.ndarray( [ x, y, z, w, u, v ], [ N ], [ 2, 2, 2, 2, 2, -1 ], [ 1, 1, 1, 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var quinary = require( '@stdlib/strided/base/quinary' );
 
 function add( x, y, z, w, u ) {
@@ -201,24 +201,19 @@ function add( x, y, z, w, u ) {
 
 var N = 10;
 
-var x = filledarray( 0.0, N, 'generic' );
-gfillBy( x.length, x, 1, discreteUniform( -100, 100 ) );
+var x = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( x );
 
-var y = filledarray( 0.0, N, 'generic' );
-gfillBy( y.length, y, 1, discreteUniform( -100, 100 ) );
+var y = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( y );
 
-var z = filledarray( 0.0, N, 'generic' );
-gfillBy( z.length, z, 1, discreteUniform( -100, 100 ) );
+var z = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( z );
 
-var w = filledarray( 0.0, N, 'generic' );
-gfillBy( w.length, w, 1, discreteUniform( -100, 100 ) );
+var w = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( w );
 
-var u = filledarray( 0.0, N, 'generic' );
-gfillBy( u.length, u, 1, discreteUniform( -100, 100 ) );
+var u = filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) );
 console.log( u );
 
 var v = filledarray( 0.0, N, 'generic' );
