@@ -1,0 +1,24 @@
+{{alias}}( str )
+    Splits a string by its grapheme cluster breaks.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: Array<string>
+        Array of grapheme clusters.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello!' )
+    [ 'H', 'e', 'l', 'l', 'o', '!' ]
+    > out = {{alias}}( '𠮷' )
+    [ '𠮷' ]
+    > out = {{alias}}( '' )
+    []
+
+    See Also
+    --------
