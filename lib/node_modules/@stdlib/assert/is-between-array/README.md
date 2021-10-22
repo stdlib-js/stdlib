@@ -124,17 +124,15 @@ bool = isBetweenArray( arr, 3, 5, 'closed', 'open' );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var isBetweenArray = require( '@stdlib/assert/is-between-array' );
 
-var x;
-var i;
+// Create an array of random numbers:
+var x = filledarrayBy( 100, 'float64', randu );
 
-x = new Float64Array( 100 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = randu();
-}
-console.log( isBetweenArray( x, 0.01, 0.99 ) );
+// Check whether every element resides within the interval [0.01, 0.99]:
+var bool = isBetweenArray( x, 0.01, 0.99 );
+console.log( bool );
 ```
 
 </section>
