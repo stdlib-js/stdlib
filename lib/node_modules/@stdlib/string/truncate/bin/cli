@@ -27,7 +27,7 @@ var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var CLI = require( '@stdlib/cli/ctor' );
 var stdin = require( '@stdlib/process/read-stdin' );
 var stdinStream = require( '@stdlib/streams/node/stdin' );
-var reEOL = require( '@stdlib/regexp/eol' );
+var RE_EOL = require( '@stdlib/regexp/eol' ).REGEXP;
 var truncate = require( './../lib' );
 
 
@@ -89,7 +89,7 @@ function main() {
 		if ( error ) {
 			return cli.error( error );
 		}
-		lines = data.toString().split( reEOL() );
+		lines = data.toString().split( RE_EOL );
 		if ( flags.ending ) {
 			for ( i = 0; i < lines.length; i++ ) {
 				console.log( truncate( lines[ i ], len, flags.ending ) ); // eslint-disable-line no-console
