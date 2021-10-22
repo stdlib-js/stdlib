@@ -1321,6 +1321,7 @@ fastmath.sqrtUint32
 FEMALE_FIRST_NAMES_EN
 FIFO
 filledarray
+filledarrayBy
 find
 FIVETHIRTYEIGHT_FFQ
 flattenArray

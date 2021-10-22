@@ -1321,6 +1321,7 @@
 "@stdlib/datasets/female-first-names-en",FEMALE_FIRST_NAMES_EN
 "@stdlib/utils/fifo",FIFO
 "@stdlib/array/filled",filledarray
+"@stdlib/array/filled-by",filledarrayBy
 "@stdlib/utils/find",find
 "@stdlib/datasets/fivethirtyeight-ffq",FIVETHIRTYEIGHT_FFQ
 "@stdlib/utils/flatten-array",flattenArray
