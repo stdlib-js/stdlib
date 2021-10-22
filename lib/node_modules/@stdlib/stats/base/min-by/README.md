@@ -175,23 +175,15 @@ var v = minBy.ndarray( 3, x, 1, x.length-3, accessor );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var minBy = require( '@stdlib/stats/base/min-by' );
-
-function fill() {
-    return round( ( randu()*100.0 ) - 50.0 );
-}
 
 function accessor( v ) {
     return v * 2.0;
 }
 
-var x = new Float64Array( 10 );
-
-gfillBy( x.length, x, 1, fill );
+var x = filledarrayBy( 10, 'float64', discreteUniform( -50, 50 ) );
 console.log( x );
 
 var v = minBy( x.length, x, 1, accessor );

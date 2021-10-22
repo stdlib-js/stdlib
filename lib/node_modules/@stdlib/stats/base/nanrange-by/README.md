@@ -184,26 +184,23 @@ var v = nanrangeBy.ndarray( 3, x, 1, x.length-3, accessor );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var randu = require( '@stdlib/random/base/randu' );
-var Float64Array = require( '@stdlib/array/float64' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var nanrangeBy = require( '@stdlib/stats/base/nanrange-by' );
 
 function fill() {
     if ( randu() < 0.2 ) {
         return NaN;
     }
-    return round( ( randu()*100.0 ) - 50.0 );
+    return discreteUniform( -50, 50 );
 }
 
 function accessor( v ) {
     return v * 2.0;
 }
 
-var x = new Float64Array( 10 );
-
-gfillBy( x.length, x, 1, fill );
+var x = filledarrayBy( 10, 'float64', fill );
 console.log( x );
 
 var v = nanrangeBy( x.length, x, 1, accessor );

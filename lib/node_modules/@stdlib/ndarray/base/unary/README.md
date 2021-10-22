@@ -126,7 +126,7 @@ Each provided ndarray should be an `object` with the following properties:
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
-var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 var unary = require( '@stdlib/ndarray/base/unary' );
@@ -136,13 +136,9 @@ function scale( x ) {
 }
 
 var N = 10;
-
-var xbuf = filledarray( 0, N, 'generic' );
-gfillBy( xbuf.length, xbuf, 1, discreteUniform( -100, 100 ) );
-
 var x = {
     'dtype': 'generic',
-    'data': xbuf,
+    'data': filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) ),
     'shape': [ 5, 2 ],
     'strides': [ 2, 1 ],
     'offset': 0,
