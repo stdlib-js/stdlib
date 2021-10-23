@@ -18,8 +18,6 @@
 
 // TypeScript Version: 2.0
 
-/// <reference types="@stdlib/types"/>
-
 /**
 * Splits a string by its grapheme cluster breaks.
 *
