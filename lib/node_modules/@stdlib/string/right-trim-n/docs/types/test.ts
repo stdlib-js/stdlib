@@ -16,52 +16,52 @@
 * limitations under the License.
 */
 
-import rightTrimN = require( './index' );
+import rtrimN = require( './index' );
 
 
 // TESTS //
 
 // The function returns a string...
 {
-	rightTrimN( '   abc   ', 3 ); // $ExpectType string
-	rightTrimN( '~~~abc~~~', 3, '~' ); // $ExpectType
+	rtrimN( '   abc   ', 3 ); // $ExpectType string
+	rtrimN( '~~~abc~~~', 3, '~' ); // $ExpectType
 }
 
 // The function does not compile if provided arguments having invalid types...
 {
-	rightTrimN( true, 6 ); // $ExpectError
-	rightTrimN( false, 6 ); // $ExpectError
-	rightTrimN( 3, 6 ); // $ExpectError
-	rightTrimN( [], 6 ); // $ExpectError
-	rightTrimN( {}, 6 ); // $ExpectError
-	rightTrimN( ( x: number ): number => x, 6 ); // $ExpectError
+	rtrimN( true, 6 ); // $ExpectError
+	rtrimN( false, 6 ); // $ExpectError
+	rtrimN( 3, 6 ); // $ExpectError
+	rtrimN( [], 6 ); // $ExpectError
+	rtrimN( {}, 6 ); // $ExpectError
+	rtrimN( ( x: number ): number => x, 6 ); // $ExpectError
 
-	rightTrimN( 'abd', true ); // $ExpectError
-	rightTrimN( 'abd', false ); // $ExpectError
-	rightTrimN( 'abd', 'abc' ); // $ExpectError
-	rightTrimN( 'abd', [], 0 ); // $ExpectError
-	rightTrimN( 'abd', {}, 0 ); // $ExpectError
-	rightTrimN( 'abd', ( x: number ): number => x, 0 ); // $ExpectError
+	rtrimN( 'abd', true ); // $ExpectError
+	rtrimN( 'abd', false ); // $ExpectError
+	rtrimN( 'abd', 'abc' ); // $ExpectError
+	rtrimN( 'abd', [], 0 ); // $ExpectError
+	rtrimN( 'abd', {}, 0 ); // $ExpectError
+	rtrimN( 'abd', ( x: number ): number => x, 0 ); // $ExpectError
 
-	rightTrimN( 'abd', 6, true ); // $ExpectError
-	rightTrimN( 'abd', 6, false ); // $ExpectError
-	rightTrimN( 'abd', 6, 123 ); // $ExpectError
-	rightTrimN( 'abd', 6, {} ); // $ExpectError
-	rightTrimN( 'abd', 6, /[a-z]/ ); // $ExpectError
+	rtrimN( 'abd', 6, true ); // $ExpectError
+	rtrimN( 'abd', 6, false ); // $ExpectError
+	rtrimN( 'abd', 6, 123 ); // $ExpectError
+	rtrimN( 'abd', 6, {} ); // $ExpectError
+	rtrimN( 'abd', 6, /[a-z]/ ); // $ExpectError
 }
 
 // The function does not compile if provided an a third argument which is not a string or an array of strings...
 {
-	rightTrimN( 'abc', 3, true ); // $ExpectError
-	rightTrimN( 'abc', 3, false ); // $ExpectError
-	rightTrimN( 'abc', 3, 123 ); // $ExpectError
-	rightTrimN( 'abc', 3, {} ); // $ExpectError
-	rightTrimN( 'abc', 3, [ true ] ); // $ExpectError
-	rightTrimN( 'abc', 3, ( x: number ): number => x ); // $ExpectError
+	rtrimN( 'abc', 3, true ); // $ExpectError
+	rtrimN( 'abc', 3, false ); // $ExpectError
+	rtrimN( 'abc', 3, 123 ); // $ExpectError
+	rtrimN( 'abc', 3, {} ); // $ExpectError
+	rtrimN( 'abc', 3, [ true ] ); // $ExpectError
+	rtrimN( 'abc', 3, ( x: number ): number => x ); // $ExpectError
 }
 
 // The function does not compile if provided insufficient arguments...
 {
-	rightTrimN(); // $ExpectError
-	rightTrimN( 'abc' ); // $ExpectError
+	rtrimN(); // $ExpectError
+	rtrimN( 'abc' ); // $ExpectError
 }

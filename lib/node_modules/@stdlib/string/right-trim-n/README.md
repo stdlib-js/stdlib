@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# rightTrimN
+# rtrimN
 
-> Trim `n` whitespace characters from the end of a string.
+> Trim `n` characters from the end of a string.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,30 +37,30 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var rightTrimN = require( '@stdlib/string/right-trim-n' );
+var rtrimN = require( '@stdlib/string/right-trim-n' );
 ```
 
-#### rightTrimN( str, n\[, chars] )
+#### rtrimN( str, n\[, chars] )
 
-Trims `n` whitespace characters from the end of a string.
+Trims `n` characters from the end of a string.
 
 ```javascript
 var str = '  foo  ';
-var out = rightTrimN( str, str.length );
+var out = rtrimN( str, str.length );
 // returns '  foo'
 
-out = rightTrimN( str, 1 );
+out = rtrimN( str, 1 );
 // returns '  foo '
 ```
 
-To trim a specific set of characters, provide a string or an array of characters to trim:
+By default, the function trims whitespace characters. To trim a different set of characters instead, provide a string or an array of characters to trim:
 
 ```javascript
 var str = '🐶🐶🐶 Animals 🐶🐶🐶';
-var out = rightTrimN( str, str.length, [ '🐶', ' ' ] );
+var out = rtrimN( str, str.length, [ '🐶', ' ' ] );
 // returns '🐶🐶🐶 Animals'
 
-out = rightTrimN( str, str.length, '🐶 ' );
+out = rtrimN( str, str.length, '🐶 ' );
 // returns '🐶🐶🐶 Animals'
 ```
 
@@ -85,15 +85,15 @@ out = rightTrimN( str, str.length, '🐶 ' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var rightTrimN = require( '@stdlib/string/right-trim-n' );
+var rtrimN = require( '@stdlib/string/right-trim-n' );
 
-var out = rightTrimN( '   Whitespace   ', 3 );
+var out = rtrimN( '   Whitespace   ', 3 );
 // returns '   Whitespace'
 
-out = rightTrimN( '\t\t\tTabs\t\t\t', 2 );
+out = rtrimN( '\t\t\tTabs\t\t\t', 2 );
 // returns '\t\t\tTabs\t'
 
-out = rightTrimN( '~~~CUSTOM~~~', 3, '~' );
+out = rtrimN( '~~~CUSTOM~~~', 3, '~' );
 // returns '~~~CUSTOM'
 ```
 

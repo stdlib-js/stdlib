@@ -1,5 +1,5 @@
 {{alias}}( str, n[, chars] )
-    Trims `n` whitespace characters from the end of a string.
+    Trims `n` characters from the end of a string.
 
     Parameters
     ----------
