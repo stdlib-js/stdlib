@@ -41,7 +41,7 @@ function addon( N: number, dtypeX: number, x: Collection, strideX: number, dtype
 		throw new Error( 'beep' );
 	}
 	for ( i = 0; i < N; i += 1 ) {
-		y[ i * strideX ] = x[ i * strideY ];
+		y[ i * strideY ] = x[ i * strideX ];
 	}
 }
 
@@ -62,7 +62,7 @@ function fallback( N: number, dtypeX: any, x: Collection, strideX: number, dtype
 		throw new Error( 'beep' );
 	}
 	for ( i = 0; i < N; i += 1 ) {
-		y[ i * strideX ] = x[ i * strideY ];
+		y[ i * strideY ] = x[ i * strideX ];
 	}
 }
 
@@ -85,7 +85,7 @@ function fallbackWithOffsets( N: number, dtypeX: any, x: Collection, strideX: nu
 		throw new Error( 'beep' );
 	}
 	for ( i = 0; i < N; i += 1 ) {
-		y[ offsetX + ( i * strideX ) ] = x[ offsetY + ( i * strideY ) ];
+		y[ offsetY + ( i * strideY ) ] = x[ offsetX + ( i * strideX ) ];
 	}
 }
 
