@@ -126,7 +126,7 @@ function fallback( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY )
 }
 
 // Create a dispatch function:
-var f = dispatch( addon, fallback );
+var f = dispatch.ndarray( addon, fallback );
 
 // ...
 
