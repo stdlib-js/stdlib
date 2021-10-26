@@ -27,7 +27,7 @@
 *
 * -   The function returns `0` if provided an unknown/unsupported data type.
 *
-* @param dtype  data type (number)
+* @param dtype  data type (enumeration constant)
 * @return       one letter character abbreviation
 *
 * @example
