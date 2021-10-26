@@ -29,7 +29,7 @@
 * @param strideY  Y stride length
 * @param Z        destination array
 * @param strideZ  Z stride length
-* @param fcn      unary function to apply
+* @param fcn      binary function to apply
 *
 * @example
 * #include "stdlib/strided/base/dmap2.h"
