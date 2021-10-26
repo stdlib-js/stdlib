@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,12 +16,16 @@
 * limitations under the License.
 */
 
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
+*/
+
 #include "stdlib/strided/base/binary/tt_d.h"
 #include "stdlib/strided/base/binary/macros.h"
 #include <stdint.h>
 
 /**
-* Applies a binary callback accepting and returning unsigned 16-bit integers to unsigned 16-bit integer strided input arrays, casts the callback's unsigned 16-bit integer return value to a double-precision floating-point number, and assigns results to elements in a double-precision floating-point strided output array.
+* Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 *
 * @param arrays   array whose first two elements are pointers to strided input arrays and whose last element is a pointer to a strided output array
 * @param shape    array whose only element is the number of elements over which to iterate
@@ -41,13 +45,13 @@
 * uint8_t *arrays[] = { x, y, out };
 *
 * // Define the strides:
-* int64_t strides[] = { 2, 2, 8 }; // 2 bytes per uint16, 8 bytes per double
+* int64_t strides[] = { 2, 2, 8 };
 *
 * // Define the number of elements over which to iterate:
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* uint16_t add( uint16_t x, uint16_t y ) {
+* double add( uint16_t x, uint16_t y ) {
 *     return x + y;
 * }
 *
@@ -55,7 +59,7 @@
 * stdlib_strided_tt_d( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_tt_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	typedef uint16_t func_type( const uint16_t x, const uint16_t y );
+	typedef double func_type( const uint16_t x, const uint16_t y );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_BINARY_LOOP_CLBK( uint16_t, double )
+	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED( uint16_t, uint16_t, double )
 }

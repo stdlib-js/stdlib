@@ -17,7 +17,7 @@
 */
 
 /**
-* Header file containing strided array macros for loops involving "binary" functions or expressions.
+* Header file for strided array macros.
 */
 #ifndef STDLIB_STRIDED_BASE_BINARY_MACROS_H
 #define STDLIB_STRIDED_BASE_BINARY_MACROS_H
