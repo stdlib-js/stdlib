@@ -177,15 +177,15 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 
 -   The function expects that the callback `info` argument provides access to the following JavaScript arguments:
 
-    -   `N`: number of indexed elements.
-    -   `X`: input [`Float64Array`][@stdlib/array/float64].
-    -   `strideX`: `X` stride length.
-    -   `Y`: input [`Float64Array`][@stdlib/array/float64].
-    -   `strideY`: `Y` stride length.
-    -   `Mask`: mask [`Uint8Array`][@stdlib/array/uint8].
-    -   `strideMask`: `Mask` stride length.
-    -   `Z`: destination [`Float64Array`][@stdlib/array/float64].
-    -   `strideZ`: `Z` stride length.
+    -   **N**: number of indexed elements.
+    -   **X**: input [`Float64Array`][@stdlib/array/float64].
+    -   **strideX**: `X` stride length.
+    -   **Y**: input [`Float64Array`][@stdlib/array/float64].
+    -   **strideY**: `Y` stride length.
+    -   **Mask**: mask [`Uint8Array`][@stdlib/array/uint8].
+    -   **strideMask**: `Mask` stride length.
+    -   **Z**: destination [`Float64Array`][@stdlib/array/float64].
+    -   **strideZ**: `Z` stride length.
 
 </section>
 
