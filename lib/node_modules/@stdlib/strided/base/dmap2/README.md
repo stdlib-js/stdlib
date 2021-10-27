@@ -22,7 +22,7 @@ limitations under the License.
 
 # dmap2
 
-> Apply a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assign each result to an element in a double-precision floating-point strided output array.
+> Apply a binary function to double-precision floating-point strided input arrays and assign results to a double-precision floating-point strided output array.
 
 <section class="intro">
 
@@ -40,7 +40,7 @@ var dmap2 = require( '@stdlib/strided/base/dmap2' );
 
 #### dmap2( N, x, strideX, y, strideY, z, strideZ, fcn )
 
-Applies a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assigns each result to an element in a double-precision floating-point strided output array.
+Applies a binary function to double-precision floating-point strided input arrays and assigns results to a double-precision floating-point strided output array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -101,7 +101,7 @@ dmap2( 3, x1, -2, y1, 1, z1, 1, add );
 
 #### dmap2.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, fcn )
 
-Applies a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assigns each result to an element in a double-precision floating-point strided output array using alternative indexing semantics.
+Applies a binary function to double-precision floating-point strided input arrays and assigns results to a double-precision floating-point strided output array using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -203,7 +203,7 @@ console.log( z );
 
 #### stdlib_strided_dmap2( N, \*X, strideX, \*Y, strideY, \*Z, strideZ, fcn )
 
-Applies a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assigns each result to an element in a double-precision floating-point strided output array.
+Applies a binary function to double-precision floating-point strided input arrays and assigns results to a double-precision floating-point strided output array.
 
 ```c
 #include <stdint.h>

@@ -1,9 +1,8 @@
 
 {{alias}}( N, x, sx, y, sy, z, sz, fcn )
-    Applies a binary function accepting and returning single-precision floating-
-    point numbers to corresponding elements in two single-precision floating-
-    point strided input arrays and assigns each result to an element in a
-    single-precision floating-point strided output array.
+    Applies a binary function to single-precision floating-point strided input
+    arrays and assigns results to a single-precision floating-point strided
+    output array.
 
     The `N` and stride parameters determine which strided array elements are
     accessed at runtime.
@@ -70,11 +69,9 @@
 
 
 {{alias}}.ndarray( N, x, sx, ox, y, sy, oy, z, sz, oz, fcn )
-    Applies a binary function accepting and returning single-precision floating-
-    point numbers to corresponding elements in two single-precision floating-
-    point strided input arrays and assigns each result to an element in a
-    single-precision floating-point strided output array using alternative
-    indexing semantics.
+    Applies a binary function to single-precision floating-point strided input
+    arrays and assigns results to a single-precision floating-point strided
+    output array using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
     buffer, the offset parameters support indexing semantics based on starting

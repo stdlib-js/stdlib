@@ -20,7 +20,7 @@
 #include <stdint.h>
 
 /**
-* Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array.
+* Applies a binary function to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array.
 *
 * @param N        number of indexed elements
 * @param X        input array

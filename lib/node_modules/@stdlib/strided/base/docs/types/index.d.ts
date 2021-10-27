@@ -88,7 +88,7 @@ interface Namespace {
 	binary: typeof binary;
 
 	/**
-	* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array and assigns each result to an element in a double-precision floating-point strided output array.
+	* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array and assigns results to a double-precision floating-point strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -127,7 +127,7 @@ interface Namespace {
 	dmap: typeof dmap;
 
 	/**
-	* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array according to a corresponding element in a strided mask array and assigns each result to an element in a double-precision floating-point strided output array.
+	* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array according to a corresponding element in a strided mask array and assigns results to a double-precision floating-point strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -172,7 +172,7 @@ interface Namespace {
 	dmskmap: typeof dmskmap;
 
 	/**
-	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns each result to an element in a strided output array.
+	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -417,7 +417,7 @@ interface Namespace {
 	quinary: typeof quinary;
 
 	/**
-	* Applies a unary function accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array and assigns each result to an element in a single-precision floating-point strided output array.
+	* Applies a unary function accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array and assigns results to a single-precision floating-point strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -456,7 +456,7 @@ interface Namespace {
 	smap: typeof smap;
 
 	/**
-	* Applies a unary function accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigns each result to an element in a single-precision floating-point strided output array.
+	* Applies a unary function accepting and returning single-precision floating-point numbers to each element in a single-precision floating-point strided input array according to a corresponding element in a strided mask array and assigns results to a single-precision floating-point strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array

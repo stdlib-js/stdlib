@@ -118,7 +118,7 @@ type Unary = ( value: number ) => number;
 */
 interface Routine {
 	/**
-	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns each result to an element in a strided output array.
+	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -146,7 +146,7 @@ interface Routine {
 	( N: number, x: Collection, strideX: number, y: Collection, strideY: number, fcn: Unary, clbk: Callback, thisArg?: any ): Collection; // tslint:disable-line:max-line-length
 
 	/**
-	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns each result to an element in a strided output array using alternative indexing semantics.
+	* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -177,7 +177,7 @@ interface Routine {
 }
 
 /**
-* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns each result to an element in a strided output array.
+* Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array.
 *
 * @param N - number of indexed elements
 * @param x - input array

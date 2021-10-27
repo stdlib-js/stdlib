@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Applies a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assigns each result to an element in a double-precision floating-point strided output array.
+* Applies a binary function to double-precision floating-point strided input arrays and assigns results to a double-precision floating-point strided output array.
 */
 void stdlib_strided_dmap2( const int64_t N, const double *X, const int64_t strideX, const double *Y, const int64_t strideY, double *Z, const int64_t strideZ, double (*fcn)( double, double ) );
 

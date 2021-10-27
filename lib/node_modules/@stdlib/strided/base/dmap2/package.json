@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/strided/base/dmap2",
   "version": "0.0.0",
-  "description": "Apply a binary function accepting and returning double-precision floating-point numbers to corresponding elements in two double-precision floating-point strided input arrays and assign each result to an element in a double-precision floating-point strided output array.",
+  "description": "Apply a binary function to double-precision floating-point strided input arrays and assign results to a double-precision floating-point strided output array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

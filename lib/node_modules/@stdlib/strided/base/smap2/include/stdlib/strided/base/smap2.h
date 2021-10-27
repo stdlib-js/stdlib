@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array.
+* Applies a binary function to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array.
 */
 void stdlib_strided_smap2( const int64_t N, const float *X, const int64_t strideX, const float *Y, const int64_t strideY, float *Z, const int64_t strideZ, float (*fcn)( float, float ) );
 

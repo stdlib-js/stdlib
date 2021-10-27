@@ -22,7 +22,7 @@ limitations under the License.
 
 # mapBy
 
-> Apply a unary function to each element retrieved from a strided input array according to a callback function and assign each result to an element in a strided output array.
+> Apply a unary function to each element retrieved from a strided input array according to a callback function and assign results to a strided output array.
 
 <section class="intro">
 
@@ -40,7 +40,7 @@ var mapBy = require( '@stdlib/strided/base/map-by' );
 
 #### mapBy( N, x, strideX, y, strideY, fcn, clbk\[, thisArg] )
 
-Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns each result to an element in a strided output array.
+Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array.
 
 ```javascript
 var abs = require( '@stdlib/math/base/special/abs' );
@@ -140,7 +140,7 @@ mapBy( 3, x1, -2, y1, 1, abs, accessor );
 
 #### mapBy.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, fcn, clbk\[, thisArg] )
 
-Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns each result to an element in a strided output array using alternative indexing semantics.
+Applies a unary function to each element retrieved from a strided input array according to a callback function and assigns results to a strided output array using alternative indexing semantics.
 
 ```javascript
 var abs = require( '@stdlib/math/base/special/abs' );

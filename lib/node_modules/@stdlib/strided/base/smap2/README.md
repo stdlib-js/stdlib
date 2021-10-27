@@ -22,7 +22,7 @@ limitations under the License.
 
 # smap2
 
-> Apply a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assign each result to an element in a single-precision floating-point strided output array.
+> Apply a binary function to single-precision floating-point strided input arrays and assign results to a single-precision floating-point strided output array.
 
 <section class="intro">
 
@@ -40,7 +40,7 @@ var smap2 = require( '@stdlib/strided/base/smap2' );
 
 #### smap2( N, x, strideX, y, strideY, z, strideZ, fcn )
 
-Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array.
+Applies a binary function to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -101,7 +101,7 @@ smap2( 3, x1, -2, y1, 1, z1, 1, addf );
 
 #### smap2.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, fcn )
 
-Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array using alternative indexing semantics.
+Applies a binary function to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array using alternative indexing semantics.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -203,7 +203,7 @@ console.log( z );
 
 #### stdlib_strided_smap2( N, \*X, strideX, \*Y, strideY, \*Z, strideZ, fcn )
 
-Applies a binary function accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns each result to an element in a single-precision floating-point strided output array.
+Applies a binary function to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array.
 
 ```c
 #include <stdint.h>
