@@ -1130,8 +1130,8 @@
 "@stdlib/strided/base/smskmap",base.strided.smskmap
 "@stdlib/stats/base/smskmax",base.strided.smskmax
 "@stdlib/stats/base/smskmin",base.strided.smskmin
-"@stdlib/stats/base/smskrange",base.strided.smskrange
 "@stdlib/math/strided/special/smskramp",base.strided.smskramp
+"@stdlib/stats/base/smskrange",base.strided.smskrange
 "@stdlib/math/strided/special/smskrsqrt",base.strided.smskrsqrt
 "@stdlib/math/strided/special/smsksqrt",base.strided.smsksqrt
 "@stdlib/math/strided/special/smsktrunc",base.strided.smsktrunc
@@ -1194,8 +1194,8 @@
 "@stdlib/stats/base/stdevpn",base.strided.stdevpn
 "@stdlib/stats/base/stdevtk",base.strided.stdevtk
 "@stdlib/stats/base/stdevwd",base.strided.stdevwd
-"@stdlib/math/strided/special/strunc",base.strided.strunc
 "@stdlib/stats/base/stdevyc",base.strided.stdevyc
+"@stdlib/math/strided/special/strunc",base.strided.strunc
 "@stdlib/stats/base/svariance",base.strided.svariance
 "@stdlib/stats/base/svariancech",base.strided.svariancech
 "@stdlib/stats/base/svariancepn",base.strided.svariancepn

@@ -1130,8 +1130,8 @@ base.strided.smskinv
 base.strided.smskmap
 base.strided.smskmax
 base.strided.smskmin
-base.strided.smskrange
 base.strided.smskramp
+base.strided.smskrange
 base.strided.smskrsqrt
 base.strided.smsksqrt
 base.strided.smsktrunc
@@ -1194,8 +1194,8 @@ base.strided.stdevch
 base.strided.stdevpn
 base.strided.stdevtk
 base.strided.stdevwd
-base.strided.strunc
 base.strided.stdevyc
+base.strided.strunc
 base.strided.svariance
 base.strided.svariancech
 base.strided.svariancepn
