@@ -1129,6 +1129,7 @@
 "@stdlib/math/strided/special/smskfloor",base.strided.smskfloor
 "@stdlib/math/strided/special/smskinv",base.strided.smskinv
 "@stdlib/strided/base/smskmap",base.strided.smskmap
+"@stdlib/strided/base/smskmap2",base.strided.smskmap2
 "@stdlib/stats/base/smskmax",base.strided.smskmax
 "@stdlib/stats/base/smskmin",base.strided.smskmin
 "@stdlib/math/strided/special/smskramp",base.strided.smskramp

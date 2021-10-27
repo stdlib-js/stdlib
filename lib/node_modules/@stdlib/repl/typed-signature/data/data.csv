@@ -1525,6 +1525,8 @@ base.strided.dmskinv,"base.strided.dmskinv( N:integer, x:Float64Array, sx:intege
 base.strided.dmskinv.ndarray,"base.strided.dmskinv.ndarray( N:integer, x:Float64Array, sx:integer, ox:integer, m:Float64Array, sm:integer, om:integer, y:Float64Array, sy:integer, oy:integer )"
 base.strided.dmskmap,"base.strided.dmskmap( N:integer, x:Float64Array, sx:integer, m:Uint8Array, sm:integer, y:Float64Array, sy:integer, fcn:Function )"
 base.strided.dmskmap.ndarray,"base.strided.dmskmap.ndarray( N:integer, x:Float64Array, sx:integer, ox:integer, m:Uint8Array, sm:integer, om:integer, y:Float64Array, sy:integer, oy:integer, fcn:Function )"
+base.strided.dmskmap2,"base.strided.dmskmap2( N:integer, x:Float64Array, sx:integer, y:Float64Array, sy:integer, m:Uint8Array, sm:integer, z:Float64Array, sz:integer, fcn:Function )"
+base.strided.dmskmap2.ndarray,"base.strided.dmskmap2.ndarray( N:integer, x:Float64Array, sx:integer, ox:integer, y:Float64Array, sy:integer, oy:integer, m:Uint8Array, sm:integer, om:integer, z:Float64Array, sz:integer, oz:integer, fcn:Function )"
 base.strided.dmskmax,"base.strided.dmskmax( N:integer, x:Float64Array, strideX:integer, mask:Uint8Array, strideMask:integer )"
 base.strided.dmskmax.ndarray,"base.strided.dmskmax.ndarray( N:integer, x:Float64Array, strideX:integer, offsetX:integer, mask:Uint8Array, strideMask:integer, offsetMask:integer )"
 base.strided.dmskmin,"base.strided.dmskmin( N:integer, x:Float64Array, strideX:integer, mask:Uint8Array, strideMask:integer )"

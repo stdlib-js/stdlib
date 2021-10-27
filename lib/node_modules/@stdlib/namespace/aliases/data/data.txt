@@ -1129,6 +1129,7 @@ base.strided.smskdeg2rad
 base.strided.smskfloor
 base.strided.smskinv
 base.strided.smskmap
+base.strided.smskmap2
 base.strided.smskmax
 base.strided.smskmin
 base.strided.smskramp
