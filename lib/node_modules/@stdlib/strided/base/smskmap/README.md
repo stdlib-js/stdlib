@@ -125,7 +125,7 @@ The function accepts the following additional arguments:
 -   **offsetMask**: starting index for `mask`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][@stdlib/array/float32] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to index every other value in `x` starting from the second value and to index the last `N` elements in `y`,
+While [`typed array`][@stdlib/array/float32] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to index every other value in `x` starting from the second value and to index the last `N` elements in `y` in reverse order,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
