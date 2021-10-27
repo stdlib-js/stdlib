@@ -76,7 +76,7 @@ var y = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
 var z = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 dmap2( 3, x, 2, y, -1, z, 1, add );
-// z => <Float64Array>[ 2.0, 0.0, -3.0, 0.0, 0.0, 0.0 ]
+// z => <Float64Array>[ 1.0, -2.0, -4.0, 0.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][@stdlib/array/float64] views.
@@ -96,7 +96,7 @@ var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th 
 var z1 = new Float64Array( z0.buffer, z0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
 dmap2( 3, x1, -2, y1, 1, z1, 1, add );
-// z0 => <Float64Array>[ 0.0, 0.0, -4.0, -1.0, 0.0, 0.0 ]
+// z0 => <Float64Array>[ 0.0, 0.0, -4.0, -1.0, 1.0, 0.0 ]
 ```
 
 #### dmap2.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, z, strideZ, offsetZ, fcn )
@@ -112,7 +112,7 @@ var y = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0 ] );
 var z = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 dmap2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, add );
-// y => <Float64Array>[ 0.0, -1.0, -1.0, -2.0, -2.0 ]
+// z => <Float64Array>[ 0.0, -1.0, -1.0, -2.0, -2.0 ]
 ```
 
 The function accepts the following additional arguments:
@@ -132,7 +132,7 @@ var y = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
 var z = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 dmap2.ndarray( 3, x, 2, 1, y, -1, y.length-1, z, 1, 3, add );
-// z => <Float64Array>[ 0.0, 0.0, 0.0, 1.0, -1.0, -1.0 ]
+// z => <Float64Array>[ 0.0, 0.0, 0.0, 1.0, -1.0, -4.0 ]
 ```
 
 </section>

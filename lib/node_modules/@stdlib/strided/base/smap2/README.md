@@ -76,7 +76,7 @@ var y = new Float32Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
 var z = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 smap2( 3, x, 2, y, -1, z, 1, addf );
-// z => <Float32Array>[ 2.0, 0.0, -3.0, 0.0, 0.0, 0.0 ]
+// z => <Float32Array>[ 1.0, -2.0, -4.0, 1.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][@stdlib/array/float32] views.
@@ -112,7 +112,7 @@ var y = new Float32Array( [ 1.0, 1.0, 2.0, 2.0, 3.0 ] );
 var z = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 smap2.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, addf );
-// y => <Float32Array>[ 0.0, -1.0, -1.0, -2.0, -2.0 ]
+// z => <Float32Array>[ 0.0, -1.0, -1.0, -2.0, -2.0 ]
 ```
 
 The function accepts the following addfitional arguments:
@@ -132,7 +132,7 @@ var y = new Float32Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
 var z = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 smap2.ndarray( 3, x, 2, 1, y, -1, y.length-1, z, 1, 3, addf );
-// z => <Float32Array>[ 0.0, 0.0, 0.0, 1.0, -1.0, -1.0 ]
+// z => <Float32Array>[ 0.0, 0.0, 0.0, 1.0, -1.0, -4.0 ]
 ```
 
 </section>
