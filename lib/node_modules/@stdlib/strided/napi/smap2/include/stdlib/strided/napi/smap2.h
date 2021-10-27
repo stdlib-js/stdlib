@@ -23,7 +23,7 @@
 #include <assert.h>
 
 /**
-* Macro for registering a Node-API module exporting a strided array interface for applying a binary callback accepting and return single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigning results to elements in a single-precision floating-point strided output array.
+* Macro for registering a Node-API module exporting a strided array interface for applying a binary callback to single-precision floating-point strided input arrays and assigning results to a single-precision floating-point strided output array.
 *
 * @param clbk   binary callback
 *
@@ -71,7 +71,7 @@ extern "C" {
 #endif
 
 /**
-* Invokes a strided array interface which applies a binary callback to corresponding elements in two single-precision floating-point strided input arrays and assigns results to elements in a single-precision floating-point strided output array.
+* Invokes a strided array interface which applies a binary callback to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array.
 */
 void stdlib_strided_napi_smap2( napi_env env, napi_callback_info info, float (*fcn)( float, float ) );
 

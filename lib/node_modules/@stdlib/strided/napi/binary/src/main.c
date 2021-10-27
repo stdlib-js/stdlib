@@ -24,7 +24,7 @@
 #include <assert.h>
 
 /**
-* Invokes a strided array interface which applies a binary callback to two input strided arrays based on provided JavaScript arguments.
+* Invokes a strided array interface which applies a binary callback to input strided arrays based on provided JavaScript arguments.
 *
 * ## Notes
 *

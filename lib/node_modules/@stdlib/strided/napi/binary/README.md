@@ -20,7 +20,7 @@ limitations under the License.
 
 # Binary
 
-> C API for registering a Node-API module exporting a strided array interface for applying a binary callback to two input strided arrays.
+> C API for registering a Node-API module exporting a strided array interface for applying a binary callback to input strided arrays.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -106,7 +106,7 @@ console.log( headerDir );
 
 #### stdlib_strided_napi_binary( env, info, \*obj )
 
-Invokes a strided array interface which applies a binary callback to two input strided arrays based on provided JavaScript arguments.
+Invokes a strided array interface which applies a binary callback to input strided arrays based on provided JavaScript arguments.
 
 ```c
 #include "stdlib/strided/base/function_object.h"
@@ -145,7 +145,7 @@ void stdlib_strided_napi_binary( napi_env env, napi_callback_info info, const st
 
 #### STDLIB_STRIDED_NAPI_MODULE_BINARY( obj )
 
-Macro for registering a Node-API module exporting a strided array interface for applying a binary callback to two input strided arrays.
+Macro for registering a Node-API module exporting a strided array interface for applying a binary callback to input strided arrays.
 
 ```c
 #include "stdlib/strided/base/function_object.h"

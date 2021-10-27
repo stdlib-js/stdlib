@@ -20,7 +20,7 @@ limitations under the License.
 
 # smap2
 
-> C API for registering a Node-API module exporting a strided array interface for applying a binary callback accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigning results to elements in a single-precision floating-point strided output array.
+> C API for registering a Node-API module exporting a strided array interface for applying a binary callback to single-precision floating-point strided input arrays and assigning results to a single-precision floating-point strided output array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -106,7 +106,7 @@ console.log( headerDir );
 
 #### stdlib_strided_napi_smap2( env, info, fcn )
 
-Invokes a strided array interface which applies a binary callback accepting and returning single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigns results to elements in a single-precision floating-point strided output array.
+Invokes a strided array interface which applies a binary callback to single-precision floating-point strided input arrays and assigns results to a single-precision floating-point strided output array.
 
 ```c
 #include <node_api.h>
@@ -146,7 +146,7 @@ void stdlib_strided_napi_smap2( napi_env env, napi_callback_info info, float (*f
 
 #### STDLIB_STRIDED_NAPI_MODULE_SMAP2( clbk )
 
-Macro for registering a Node-API module exporting a strided array interface for applying a binary callback accepting and return single-precision floating-point numbers to corresponding elements in two single-precision floating-point strided input arrays and assigning results to elements in a single-precision floating-point strided output array.
+Macro for registering a Node-API module exporting a strided array interface for applying a binary callback to single-precision floating-point strided input arrays and assigning results to a single-precision floating-point strided output array.
 
 ```c
 static float addf( const float x, const float y ) {

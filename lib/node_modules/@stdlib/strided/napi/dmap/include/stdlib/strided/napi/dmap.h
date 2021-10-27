@@ -23,7 +23,7 @@
 #include <assert.h>
 
 /**
-* Macro for registering a Node-API module exporting a strided array interface for applying a unary callback accepting and return double-precision floating-point numbers to each element in a double-precision floating-point strided input array and assigning results to elements in a double-precision floating-point strided output array.
+* Macro for registering a Node-API module exporting a strided array interface for applying a unary callback to a double-precision floating-point strided input array and assigning results to a double-precision floating-point strided output array.
 *
 * @param clbk   unary callback
 *
@@ -71,7 +71,7 @@ extern "C" {
 #endif
 
 /**
-* Invokes a strided array interface which applies a unary callback to each element in a double-precision floating-point strided input array and assigns results to elements in a double-precision floating-point strided output array.
+* Invokes a strided array interface which applies a unary callback to a double-precision floating-point strided input array and assigns results to a double-precision floating-point strided output array.
 */
 void stdlib_strided_napi_dmap( napi_env env, napi_callback_info info, double (*fcn)( double ) );
 
