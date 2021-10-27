@@ -230,7 +230,7 @@ The function accepts the following arguments:
 -   **strideY**: `[in] int64_t` index increment for `Y`.
 -   **Z**: `[out] float*` output array.
 -   **strideZ**: `[in] int64_t` index increment for `Z`.
--   **fcn**: `[in] float (*fcn)( float, float )` unary function to apply.
+-   **fcn**: `[in] float (*fcn)( float, float )` binary function to apply.
 
 ```c
 void stdlib_strided_smap2( const int64_t N, const float *X, const int64_t strideX, const float *Y, const int64_t strideY, float *Z, const int64_t strideZ, float (*fcn)( float, float ) );

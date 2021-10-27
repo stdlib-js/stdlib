@@ -230,7 +230,7 @@ The function accepts the following arguments:
 -   **strideY**: `[in] int64_t` index increment for `Y`.
 -   **Z**: `[out] double*` output array.
 -   **strideZ**: `[in] int64_t` index increment for `Z`.
--   **fcn**: `[in] double (*fcn)( double, double )` unary function to apply.
+-   **fcn**: `[in] double (*fcn)( double, double )` binary function to apply.
 
 ```c
 void stdlib_strided_dmap2( const int64_t N, const double *X, const int64_t strideX, const double *Y, const int64_t strideY, double *Z, const int64_t strideZ, double (*fcn)( double, double ) );
