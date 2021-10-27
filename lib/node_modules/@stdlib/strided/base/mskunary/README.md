@@ -65,16 +65,13 @@ The `shape` and `strides` parameters determine which elements in the strided arr
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
 var mask = new Uint8Array( [ 0, 1, 0, 0, 0, 0 ] );
 var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-var N = floor( x.length / 2 );
-
-mskunary( [ x, mask, y ], [ N ], [ 2, 1, -1 ], abs );
+mskunary( [ x, mask, y ], [ 3 ], [ 2, 1, -1 ], abs );
 // y => <Float64Array>[ 5.0, 0.0, 1.0, 0.0, 0.0, 0.0 ]
 ```
 
@@ -83,7 +80,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 // Initial arrays...
@@ -96,9 +92,7 @@ var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd 
 var m1 = new Uint8Array( m0.buffer, m0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
-mskunary( [ x1, m1, y1 ], [ N ], [ -2, 1, 1 ], abs );
+mskunary( [ x1, m1, y1 ], [ 3 ], [ -2, 1, 1 ], abs );
 // y0 => <Float64Array>[ 0.0, 0.0, 0.0, 6.0, 4.0, 0.0 ]
 ```
 
@@ -130,16 +124,13 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
 var mask = new Uint8Array( [ 0, 1, 0, 0, 0, 0 ] );
 var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-var N = floor( x.length / 2 );
-
-mskunary.ndarray( [ x, mask, y ], [ N ], [ 2, 1, -1 ], [ 1, 0, y.length-1 ], abs );
+mskunary.ndarray( [ x, mask, y ], [ 3 ], [ 2, 1, -1 ], [ 1, 0, y.length-1 ], abs );
 // y => <Float64Array>[ 0.0, 0.0, 0.0, 6.0, 0.0, 2.0 ]
 ```
 

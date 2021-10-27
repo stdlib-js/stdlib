@@ -64,15 +64,12 @@ The `N` and `stride` parameters determine which elements in `x` and `y` are acce
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
 var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-var N = floor( x.length / 2 );
-
-dmap( N, x, 2, y, -1, abs );
+dmap( 3, x, 2, y, -1, abs );
 // y => <Float64Array>[ 5.0, 3.0, 1.0, 0.0, 0.0, 0.0 ]
 ```
 
@@ -80,7 +77,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 // Initial arrays...
@@ -91,9 +87,7 @@ var y0 = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
-dmap( N, x1, -2, y1, 1, abs );
+dmap( 3, x1, -2, y1, 1, abs );
 // y0 => <Float64Array>[ 0.0, 0.0, 0.0, 6.0, 4.0, 2.0 ]
 ```
 
@@ -121,15 +115,12 @@ While [`typed array`][@stdlib/array/float64] views mandate a view offset based o
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
 var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-var N = floor( x.length / 2 );
-
-dmap.ndarray( N, x, 2, 1, y, -1, y.length-1, abs );
+dmap.ndarray( 3, x, 2, 1, y, -1, y.length-1, abs );
 // y => <Float64Array>[ 0.0, 0.0, 0.0, 6.0, 4.0, 2.0 ]
 ```
 

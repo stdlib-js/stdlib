@@ -51,9 +51,8 @@
     <Float32Array>[ 1.0, 2.0, 0.0, 4.0 ]
 
     // Using `N` and `stride` parameters:
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
     > y = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > {{alias}}( N, x, 2, m, 2, y, -1, {{alias:@stdlib/math/base/special/identity}} )
+    > {{alias}}( 2, x, 2, m, 2, y, -1, {{alias:@stdlib/math/base/special/identity}} )
     <Float32Array>[ 0.0, 1.0, 0.0, 0.0 ]
 
     // Using view offsets:
@@ -63,8 +62,7 @@
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var m1 = new {{alias:@stdlib/array/uint8}}( m0.buffer, m0.BYTES_PER_ELEMENT*2 );
     > var y1 = new {{alias:@stdlib/array/float32}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, x1, -2, m1, 1, y1, 1, {{alias:@stdlib/math/base/special/identity}} )
+    > {{alias}}( 2, x1, -2, m1, 1, y1, 1, {{alias:@stdlib/math/base/special/identity}} )
     <Float32Array>[ 0.0, 2.0 ]
     > y0
     <Float32Array>[ 0.0, 0.0, 0.0, 2.0 ]
@@ -133,8 +131,7 @@
     > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
     > y = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, x, 2, 1, m, 1, 2, y, -1, y.length-1, {{alias:@stdlib/math/base/special/identity}} )
+    > {{alias}}.ndarray( 2, x, 2, 1, m, 1, 2, y, -1, y.length-1, {{alias:@stdlib/math/base/special/identity}} )
     <Float32Array>[ 0.0, 0.0, 4.0, 0.0 ]
 
     See Also
