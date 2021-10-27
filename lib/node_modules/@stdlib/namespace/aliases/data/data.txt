@@ -865,6 +865,7 @@ base.strided.dmskdeg2rad
 base.strided.dmskfloor
 base.strided.dmskinv
 base.strided.dmskmap
+base.strided.dmskmap2
 base.strided.dmskmax
 base.strided.dmskmin
 base.strided.dmskramp

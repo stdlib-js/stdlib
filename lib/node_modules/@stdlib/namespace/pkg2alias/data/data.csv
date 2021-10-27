@@ -865,6 +865,7 @@
 "@stdlib/math/strided/special/dmskfloor",base.strided.dmskfloor
 "@stdlib/math/strided/special/dmskinv",base.strided.dmskinv
 "@stdlib/strided/base/dmskmap",base.strided.dmskmap
+"@stdlib/strided/base/dmskmap2",base.strided.dmskmap2
 "@stdlib/stats/base/dmskmax",base.strided.dmskmax
 "@stdlib/stats/base/dmskmin",base.strided.dmskmin
 "@stdlib/math/strided/special/dmskramp",base.strided.dmskramp
