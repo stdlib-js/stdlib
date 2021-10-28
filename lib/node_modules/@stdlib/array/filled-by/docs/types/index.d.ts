@@ -73,14 +73,10 @@ type Callback = Nullary | Unary;
 * @returns filled array
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
-*
 * var arr = filledarrayBy();
 * // returns <Float64Array>
 *
 * @example
-* var randu = require( `@stdlib/random/base/randu` );
-*
 * var arr = filledarrayBy( 'float32' );
 * // returns <Float32Array>
 */
