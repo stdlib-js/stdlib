@@ -1011,6 +1011,8 @@ base.strided.gsumkbn2
 base.strided.gsumors
 base.strided.gsumpw
 base.strided.gswap
+base.strided.mapBy
+base.strided.mapBy2
 base.strided.max
 base.strided.maxabs
 base.strided.maxBy

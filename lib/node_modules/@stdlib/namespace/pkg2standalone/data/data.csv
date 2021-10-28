@@ -1011,6 +1011,8 @@
 "@stdlib/blas/ext/base/gsumors","@stdlib/blas-ext-base-gsumors"
 "@stdlib/blas/ext/base/gsumpw","@stdlib/blas-ext-base-gsumpw"
 "@stdlib/blas/base/gswap","@stdlib/blas-base-gswap"
+"@stdlib/strided/base/map-by","@stdlib/strided-base-map-by"
+"@stdlib/strided/base/map-by2","@stdlib/strided-base-map-by2"
 "@stdlib/stats/base/max","@stdlib/stats-base-max"
 "@stdlib/stats/base/maxabs","@stdlib/stats-base-maxabs"
 "@stdlib/stats/base/max-by","@stdlib/stats-base-max-by"

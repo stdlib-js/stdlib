@@ -1011,6 +1011,8 @@
 "@stdlib/blas/ext/base/gsumors","@stdlib/blas/ext/base/dsumors,@stdlib/blas/ext/base/gnansumors,@stdlib/blas/ext/base/gsum,@stdlib/blas/ext/base/gsumkbn2,@stdlib/blas/ext/base/gsumpw,@stdlib/blas/ext/base/ssumors"
 "@stdlib/blas/ext/base/gsumpw","@stdlib/blas/ext/base/dsumpw,@stdlib/blas/ext/base/gnansumpw,@stdlib/blas/ext/base/gsum,@stdlib/blas/ext/base/gsumkbn2,@stdlib/blas/ext/base/gsumors,@stdlib/blas/ext/base/ssumpw"
 "@stdlib/blas/base/gswap","@stdlib/blas/base/dswap,@stdlib/blas/base/gcopy,@stdlib/blas/base/sswap,@stdlib/blas/gswap"
+"@stdlib/strided/base/map-by","@stdlib/strided/base/map-by2,@stdlib/strided/base/unary"
+"@stdlib/strided/base/map-by2","@stdlib/strided/base/map-by,@stdlib/strided/base/binary"
 "@stdlib/stats/base/max","@stdlib/stats/base/dmax,@stdlib/stats/base/min,@stdlib/stats/base/nanmax,@stdlib/stats/base/smax"
 "@stdlib/stats/base/maxabs","@stdlib/stats/base/dmaxabs,@stdlib/stats/base/max,@stdlib/stats/base/minabs,@stdlib/stats/base/nanmaxabs,@stdlib/stats/base/smaxabs"
 "@stdlib/stats/base/max-by","@stdlib/stats/base/dmax,@stdlib/stats/base/max,@stdlib/stats/base/min-by,@stdlib/stats/base/nanmax-by,@stdlib/stats/base/smax"

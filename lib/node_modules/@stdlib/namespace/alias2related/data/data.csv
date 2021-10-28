@@ -1011,6 +1011,8 @@ base.strided.gsumkbn2,"base.strided.dsumkbn2,base.strided.gnansumkbn2,base.strid
 base.strided.gsumors,"base.strided.dsumors,base.strided.gnansumors,base.strided.gsum,base.strided.gsumkbn2,base.strided.gsumpw,base.strided.ssumors"
 base.strided.gsumpw,"base.strided.dsumpw,base.strided.gnansumpw,base.strided.gsum,base.strided.gsumkbn2,base.strided.gsumors,base.strided.ssumpw"
 base.strided.gswap,"base.strided.dswap,base.strided.gcopy,base.strided.sswap,gswap"
+base.strided.mapBy,"base.strided.mapBy2,base.strided.unary"
+base.strided.mapBy2,"base.strided.mapBy,base.strided.binary"
 base.strided.max,"base.strided.dmax,base.strided.min,base.strided.nanmax,base.strided.smax"
 base.strided.maxabs,"base.strided.dmaxabs,base.strided.max,base.strided.minabs,base.strided.nanmaxabs,base.strided.smaxabs"
 base.strided.maxBy,"base.strided.dmax,base.strided.max,base.strided.minBy,base.strided.nanmaxBy,base.strided.smax"
