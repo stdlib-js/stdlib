@@ -20,7 +20,7 @@ limitations under the License.
 
 # Operators
 
-> Standard library base math operators.
+> Base (i.e., lower-level) math operators.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/base/ops' );
 
 #### ns
 
-Standard library base math operators.
+Namespace for "base" (i.e., lower-level) math operators.
 
 ```javascript
 var operators = ns;

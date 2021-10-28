@@ -3735,7 +3735,7 @@ interface Namespace {
 }
 
 /**
-* Standard library pseudorandom number generator streams.
+* Pseudorandom number generator streams.
 */
 declare var ns: Namespace;
 

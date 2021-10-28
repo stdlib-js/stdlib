@@ -20,7 +20,7 @@ limitations under the License.
 
 # Simulation Iterators
 
-> Standard library simulation iterators.
+> Simulation iterators.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/simulate/iter' );
 
 #### ns
 
-Standard library simulation iterators.
+Namespace containing simulation iterators.
 
 ```javascript
 var iterators = ns;

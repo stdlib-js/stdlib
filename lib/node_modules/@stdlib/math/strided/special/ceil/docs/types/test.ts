@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import ceil = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil( x.length, x, 1, y, 1 ); // $ExpectType ArrayLike<number>
+	ceil( x.length, 'float64', x, 1, 'float64', y, 1 ); // $ExpectType ArrayLike<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -34,75 +34,75 @@ import ceil = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil( '10', x, 1, y, 1 ); // $ExpectError
-	ceil( true, x, 1, y, 1 ); // $ExpectError
-	ceil( false, x, 1, y, 1 ); // $ExpectError
-	ceil( null, x, 1, y, 1 ); // $ExpectError
-	ceil( undefined, x, 1, y, 1 ); // $ExpectError
-	ceil( [], x, 1, y, 1 ); // $ExpectError
-	ceil( {}, x, 1, y, 1 ); // $ExpectError
-	ceil( ( x: number ): number => x, x, 1, y, 1 ); // $ExpectError
+	ceil( '10', 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( true, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( false, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( null, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( undefined, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( [], 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( {}, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a third argument which is not an array-like object containing numbers...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil( x.length, 10, 1, y, 1 ); // $ExpectError
-	ceil( x.length, '10', 1, y, 1 ); // $ExpectError
-	ceil( x.length, true, 1, y, 1 ); // $ExpectError
-	ceil( x.length, false, 1, y, 1 ); // $ExpectError
-	ceil( x.length, null, 1, y, 1 ); // $ExpectError
-	ceil( x.length, undefined, 1, y, 1 ); // $ExpectError
-	ceil( x.length, [ '1' ], 1, y, 1 ); // $ExpectError
-	ceil( x.length, {}, 1, y, 1 ); // $ExpectError
-	ceil( x.length, ( x: number ): number => x, 1, y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', 10, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', '10', 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', true, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', false, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', null, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', undefined, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', [ '1' ], 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', {}, 1, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', ( x: number ): number => x, 1, 'float64', y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a third argument which is not a number...
+// The compiler throws an error if the function is provided a fourth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil( x.length, x, '10', y, 1 ); // $ExpectError
-	ceil( x.length, x, true, y, 1 ); // $ExpectError
-	ceil( x.length, x, false, y, 1 ); // $ExpectError
-	ceil( x.length, x, null, y, 1 ); // $ExpectError
-	ceil( x.length, x, undefined, y, 1 ); // $ExpectError
-	ceil( x.length, x, [], y, 1 ); // $ExpectError
-	ceil( x.length, x, {}, y, 1 ); // $ExpectError
-	ceil( x.length, x, ( x: number ): number => x, y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, '10', 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, true, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, false, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, null, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, undefined, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, [], 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, {}, 'float64', y, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a fourth argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a sixth argument which is not an array-like object containing numbers...
 {
 	const x = new Float64Array( 10 );
 
-	ceil( x.length, x, 1, 10, 1 ); // $ExpectError
-	ceil( x.length, x, 1, '10', 1 ); // $ExpectError
-	ceil( x.length, x, 1, true, 1 ); // $ExpectError
-	ceil( x.length, x, 1, false, 1 ); // $ExpectError
-	ceil( x.length, x, 1, null, 1 ); // $ExpectError
-	ceil( x.length, x, 1, undefined, 1 ); // $ExpectError
-	ceil( x.length, x, 1, [ '1' ], 1 ); // $ExpectError
-	ceil( x.length, x, 1, {}, 1 ); // $ExpectError
-	ceil( x.length, x, 1, ( x: number ): number => x, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', 10, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', '10', 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', true, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', false, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', null, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', undefined, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', [ '1' ], 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', {}, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', ( x: number ): number => x, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a fifth argument which is not a number...
+// The compiler throws an error if the function is provided a seventh argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil( x.length, x, 1, y, '10' ); // $ExpectError
-	ceil( x.length, x, 1, y, true ); // $ExpectError
-	ceil( x.length, x, 1, y, false ); // $ExpectError
-	ceil( x.length, x, 1, y, null ); // $ExpectError
-	ceil( x.length, x, 1, y, undefined ); // $ExpectError
-	ceil( x.length, x, 1, y, [] ); // $ExpectError
-	ceil( x.length, x, 1, y, {} ); // $ExpectError
-	ceil( x.length, x, 1, y, ( x: number ): number => x ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, '10' ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, true ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, false ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, null ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, undefined ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, [] ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, {} ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -112,10 +112,12 @@ import ceil = require( './index' );
 
 	ceil(); // $ExpectError
 	ceil( x.length ); // $ExpectError
-	ceil( x.length, x ); // $ExpectError
-	ceil( x.length, x, 1 ); // $ExpectError
-	ceil( x.length, x, 1, y ); // $ExpectError
-	ceil( x.length, x, 1, y, 1, 10 ); // $ExpectError
+	ceil( x.length, 'float64' ); // $ExpectError
+	ceil( x.length, 'float64', x ); // $ExpectError
+	ceil( x.length, 'float64', x, 1 ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64' ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y ); // $ExpectError
+	ceil( x.length, 'float64', x, 1, 'float64', y, 1, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns an array-like object containing numbers...
@@ -123,7 +125,7 @@ import ceil = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType ArrayLike<number>
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectType ArrayLike<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -131,45 +133,30 @@ import ceil = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil.ndarray( '10', x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( true, x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( false, x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( null, x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( undefined, x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( [], x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( {}, x, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( ( x: number ): number => x, x, 1, 0, y, 1, 0 ); // $ExpectError
+	ceil.ndarray( '10', 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( true, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( false, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( null, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( undefined, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( [], 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( {}, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the `ndarray` method is provided a third argument which is not an array-like object containing numbers...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil.ndarray( x.length, 10, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, '10', 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, true, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, false, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, null, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, undefined, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, [ '1' ], 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, {}, 1, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, ( x: number ): number => x, 1, 0, y, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
-{
-	const x = new Float64Array( 10 );
-	const y = new Float64Array( 10 );
-
-	ceil.ndarray( x.length, x, '10', 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, true, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, false, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, null, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, undefined, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, [], 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, {}, 0, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, ( x: number ): number => x, 0, y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', 10, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', '10', 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', true, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', false, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', null, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', undefined, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', [ '1' ], 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', {}, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', ( x: number ): number => x, 1, 0, 'float64', y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
@@ -177,59 +164,74 @@ import ceil = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil.ndarray( x.length, x, 1, '10', y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, true, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, false, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, null, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, undefined, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, [], y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, {}, y, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, ( x: number ): number => x, y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, '10', 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, true, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, false, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, null, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, undefined, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, [], 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, {}, 0, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, ( x: number ): number => x, 0, 'float64', y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a fifth argument which is not an array-like object containing numbers...
-{
-	const x = new Float64Array( 10 );
-
-	ceil.ndarray( x.length, x, 1, 0, 10, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, '10', 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, true, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, false, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, null, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, undefined, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, [ '1' ], 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, {}, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, ( x: number ): number => x, 1, 0 ); // $ExpectError
-}
-
-// The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a number...
+// The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil.ndarray( x.length, x, 1, 0, y, '10', 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, true, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, false, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, null, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, undefined, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, [], 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, {}, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, ( x: number ): number => x, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, '10', 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, true, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, false, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, null, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, undefined, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, [], 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, {}, 'float64', y, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a seventh argument which is not a number...
+// The compiler throws an error if the `ndarray` method is provided a seventh argument which is not an array-like object containing numbers...
+{
+	const x = new Float64Array( 10 );
+
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', 10, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', '10', 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', true, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', false, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', null, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', undefined, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', [ '1' ], 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', {}, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', ( x: number ): number => x, 1, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `ndarray` method is provided an eighth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	ceil.ndarray( x.length, x, 1, 0, y, 1, '10' ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, true ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, false ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, null ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, undefined ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, [] ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, {} ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, ( x: number ): number => x ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, '10', 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, true, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, false, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, null, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, undefined, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, [], 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, {}, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, ( x: number ): number => x, 0 ); // $ExpectError
+}
+
+// The compiler throws an error if the `ndarray` method is provided a ninth argument which is not a number...
+{
+	const x = new Float64Array( 10 );
+	const y = new Float64Array( 10 );
+
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, '10' ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, true ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, false ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, null ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, undefined ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, [] ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, {} ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -239,10 +241,12 @@ import ceil = require( './index' );
 
 	ceil.ndarray(); // $ExpectError
 	ceil.ndarray( x.length ); // $ExpectError
-	ceil.ndarray( x.length, x ); // $ExpectError
-	ceil.ndarray( x.length, x, 1 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
-	ceil.ndarray( x.length, x, 1, 0, y, 1, 0, 10 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64' ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64' ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1 ); // $ExpectError
+	ceil.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 10 ); // $ExpectError
 }

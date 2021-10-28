@@ -81,7 +81,7 @@ function next(): any {
 	filledarray( 1.0, buf, 8, 2, 'int16' ); // $ExpectType TypedArray
 }
 
-// The compiler throws an error if the function is not provided a valid length, typed array, array-like object, or `ArrayBuffer` argument...
+// The compiler throws an error if the function is not provided a valid length, typed array, array-like object, `ArrayBuffer`, or iterable argument...
 {
 	filledarray( 1.0, false ); // $ExpectError
 	filledarray( 1.0, true ); // $ExpectError
@@ -146,6 +146,13 @@ function next(): any {
 	filledarray( 1.0, buf, {} ); // $ExpectError
 	filledarray( 1.0, buf, ( x: number ): number => x ); // $ExpectError
 
+	filledarray( 1.0, buf, false, 2 ); // $ExpectError
+	filledarray( 1.0, buf, true, 2 ); // $ExpectError
+	filledarray( 1.0, buf, null, 2 ); // $ExpectError
+	filledarray( 1.0, buf, [], 2 ); // $ExpectError
+	filledarray( 1.0, buf, {}, 2 ); // $ExpectError
+	filledarray( 1.0, buf, ( x: number ): number => x, 2 ); // $ExpectError
+
 	filledarray( 1.0, buf, '5', 'float64' ); // $ExpectError
 	filledarray( 1.0, buf, false, 'float64' ); // $ExpectError
 	filledarray( 1.0, buf, true, 'float64' ); // $ExpectError
@@ -154,6 +161,15 @@ function next(): any {
 	filledarray( 1.0, buf, [], 'float64' ); // $ExpectError
 	filledarray( 1.0, buf, {}, 'float64' ); // $ExpectError
 	filledarray( 1.0, buf, ( x: number ): number => x, 'float64' ); // $ExpectError
+
+	filledarray( 1.0, buf, '5', 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, false, 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, true, 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, null, 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, undefined, 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, [], 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, {}, 2, 'float64' ); // $ExpectError
+	filledarray( 1.0, buf, ( x: number ): number => x, 2, 'float64' ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a view length argument which is not a number...
@@ -175,27 +191,6 @@ function next(): any {
 	filledarray( 1.0, buf, 8, [], 'float64' ); // $ExpectError
 	filledarray( 1.0, buf, 8, {}, 'float64' ); // $ExpectError
 	filledarray( 1.0, buf, 8, ( x: number ): number => x, 'float64' ); // $ExpectError
-}
-
-// The compiler throws an error if the function is not provided a third argument which is a number...
-{
-	const buf = new ArrayBuffer( 32 );
-
-	filledarray( 1.0, buf, false ); // $ExpectError
-	filledarray( 1.0, buf, true ); // $ExpectError
-	filledarray( 1.0, buf, null ); // $ExpectError
-	filledarray( 1.0, buf, [] ); // $ExpectError
-	filledarray( 1.0, buf, {} ); // $ExpectError
-	filledarray( 1.0, buf, ( x: number ): number => x ); // $ExpectError
-
-	filledarray( 1.0, buf, '5', 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, false, 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, true, 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, null, 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, undefined, 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, [], 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, {}, 'float64' ); // $ExpectError
-	filledarray( 1.0, buf, ( x: number ): number => x, 'float64' ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided too many arguments...

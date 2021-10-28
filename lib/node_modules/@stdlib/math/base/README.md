@@ -20,7 +20,7 @@ limitations under the License.
 
 # Base Math
 
-> Standard library math base implementations.
+> Base (i.e., lower-level) math functions.
 
 <section class="usage">
 
@@ -32,14 +32,14 @@ var math = require( '@stdlib/math/base' );
 
 #### math
 
-Standard library base math.
+Namespace containing "base" (i.e., lower-level) math functions.
 
 ```javascript
 var ns = math;
 // returns {...}
 ```
 
-The namespace contains the following sub-namespaces:
+The namespace has the following sub-namespaces:
 
 <!-- <toc pattern="*"> -->
 

@@ -31,7 +31,7 @@ type Unary = ( value: number ) => number;
 */
 interface Routine {
 	/**
-	* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array and assigns each result to an element in a double-precision floating-point strided output array.
+	* Applies a unary function to a double-precision floating-point strided input array and assigns results to a double-precision floating-point strided output array.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -57,7 +57,7 @@ interface Routine {
 	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number, fcn: Unary ): Float64Array; // tslint:disable-line:max-line-length
 
 	/**
-	* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array and assigns each result to an element in a double-precision floating-point strided output array using alternative indexing semantics.
+	* Applies a unary function to a double-precision floating-point strided input array and assigns results to a double-precision floating-point strided output array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -86,7 +86,7 @@ interface Routine {
 }
 
 /**
-* Applies a unary function accepting and returning double-precision floating-point numbers to each element in a double-precision floating-point strided input array and assigns each result to an element in a double-precision floating-point strided output array.
+* Applies a unary function to a double-precision floating-point strided input array and assigns results to a double-precision floating-point strided output array.
 *
 * @param N - number of indexed elements
 * @param x - input array

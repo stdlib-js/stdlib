@@ -20,7 +20,7 @@ limitations under the License.
 
 # Operators
 
-> Standard library math operator iterators.
+> Math operator iterators.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/iter/ops' );
 
 #### ns
 
-Standard library math operator iterators.
+Namespace containing math operator iterators.
 
 ```javascript
 var iterators = ns;

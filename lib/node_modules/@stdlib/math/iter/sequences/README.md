@@ -20,7 +20,7 @@ limitations under the License.
 
 # Sequences
 
-> Standard library math iterators for generating sequences.
+> Math iterators for generating sequences.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/iter/sequences' );
 
 #### ns
 
-Standard library math iterators for generating sequences.
+Namespace containing math iterators for generating sequences.
 
 ```javascript
 var iterators = ns;

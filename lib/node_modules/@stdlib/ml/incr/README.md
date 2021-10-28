@@ -20,7 +20,7 @@ limitations under the License.
 
 # Incremental Machine Learning
 
-> Standard library incremental machine learning algorithms.
+> Incremental machine learning algorithms.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/ml/incr' );
 
 #### ns
 
-Standard library incremental machine learning algorithms.
+Namespace containing incremental machine learning algorithms.
 
 ```javascript
 var incr = ns;

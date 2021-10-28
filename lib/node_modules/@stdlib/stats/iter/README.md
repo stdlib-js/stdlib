@@ -20,7 +20,7 @@ limitations under the License.
 
 # Iterator Statistics
 
-> Standard library functions for computing statistics over iterators.
+> Statistical function iterators.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/stats/iter' );
 
 #### ns
 
-Standard library functions for computing statistics over iterators.
+Namespace containing functions for computing statistics over iterators.
 
 ```javascript
 var o = ns;

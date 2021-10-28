@@ -70,11 +70,11 @@ declare function filledarray( dtype?: string ): ArrayOrTypedArray;
 *
 * @example
 * var arr = filledarray( 1.0, 5 );
-* // returns <Float64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0 ]
+* // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 *
 * @example
 * var arr = filledarray( 1.0, 5, 'float32' );
-* // returns <Float32Array>[ 0.0, 0.0, 0.0, 0.0, 0.0 ]
+* // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
 declare function filledarray( value: any, length: number, dtype?: string ): ArrayOrTypedArray; // tslint:disable-line:max-line-length
 
@@ -154,7 +154,6 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: st
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
-*
 */
 declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: string ): TypedArray; // tslint:disable-line:max-line-length
 
@@ -185,7 +184,6 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-*
 */
 declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: string ): TypedArray; // tslint:disable-line:max-line-length
 
@@ -215,7 +213,6 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
-*
 */
 declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: string ): TypedArray; // tslint:disable-line:max-line-length unified-signatures
 

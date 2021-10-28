@@ -21,7 +21,12 @@ import dtypeChar = require( './index' );
 
 // TESTS //
 
-// The function returns a string or null...
+// The function returns a table if not provided a data type string...
+{
+	dtypeChar(); // $ExpectType Table
+}
+
+// The function returns string or null if provided a data type string...
 {
 	dtypeChar( 'float64' ); // $ExpectType string | null
 	dtypeChar( 'generic' ); // $ExpectType string | null
@@ -37,9 +42,4 @@ import dtypeChar = require( './index' );
 	dtypeChar( [] ); // $ExpectError
 	dtypeChar( {} ); // $ExpectError
 	dtypeChar( ( x: number ): number => x ); // $ExpectError
-}
-
-// The function does not compile if provided insufficient arguments...
-{
-	dtypeChar(); // $ExpectError
 }

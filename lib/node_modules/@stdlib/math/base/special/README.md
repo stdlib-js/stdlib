@@ -20,7 +20,7 @@ limitations under the License.
 
 # Special Functions
 
-> Standard library base special math functions.
+> Base (i.e., lower-level) special math functions.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var special = require( '@stdlib/math/base/special' );
 
 #### special
 
-Standard library base special math functions.
+Namespace for "base" (i.e., lower-level) special math functions.
 
 ```javascript
 var fcns = special;

@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/mskunary/s_f_as_f_f.h"
-#include "stdlib/strided/base/mskunary/typedefs.h"
 #include "stdlib/strided/base/mskunary/macros.h"
 #include <stdint.h>
 
@@ -56,6 +55,7 @@
 * stdlib_strided_mask_s_f_as_f_f( arrays, shape, strides, (void *)scale );
 */
 void stdlib_strided_mask_s_f_as_f_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	UnaryFcnFloat32 *f = (UnaryFcnFloat32 *)fcn;
+	typedef float func_type( const float x );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK_ARG_CAST( int8_t, float, float )
 }

@@ -79,3 +79,11 @@
 *
 * @see [Iteration protocols]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols}
 */
+
+/**
+* An iterable protocol-compliant object.
+*
+* @typeof {Object} Iterable
+*
+* @see [Iteration protocols]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols}
+*/

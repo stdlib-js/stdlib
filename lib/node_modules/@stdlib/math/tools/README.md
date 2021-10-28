@@ -20,7 +20,7 @@ limitations under the License.
 
 # Tools
 
-> Standard library math tools.
+> Math tools.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/tools' );
 
 #### ns
 
-Standard library math tools.
+Namespace for math tools.
 
 ```javascript
 var o = ns;

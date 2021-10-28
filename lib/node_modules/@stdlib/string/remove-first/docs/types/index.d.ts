@@ -19,9 +19,10 @@
 // TypeScript Version: 2.0
 
 /**
-* Removes the first character of a string.
+* Removes the first character(s) of a string.
 *
 * @param str - input string
+* @param n - number of characters to remove (default: 1)
 * @returns updated string
 *
 * @example
@@ -39,8 +40,16 @@
 * @example
 * var out = removeFirst( 'Hidden Treasures' );
 * // returns 'idden Treasures'
+*
+* @example
+* var out = removeFirst( '🐶🐮🐷🐰🐸', 2 );
+* // returns '🐷🐰🐸'
+*
+* @example
+* var out = removeFirst( 'foo bar', 4 );
+* // returns 'bar'
 */
-declare function removeFirst( str: string ): string;
+declare function removeFirst( str: string, n?: number ): string;
 
 
 // EXPORTS //

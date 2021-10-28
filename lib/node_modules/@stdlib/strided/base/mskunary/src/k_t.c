@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/mskunary/k_t.h"
-#include "stdlib/strided/base/mskunary/typedefs.h"
 #include "stdlib/strided/base/mskunary/macros.h"
 #include <stdint.h>
 
@@ -59,6 +58,7 @@
 * stdlib_strided_mask_k_t( arrays, shape, strides, (void *)abs );
 */
 void stdlib_strided_mask_k_t( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	UnaryFcnInt16 *f = (UnaryFcnInt16 *)fcn;
+	typedef int16_t func_type( const int16_t x );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_MSKUNARY_LOOP_CLBK( int16_t, uint16_t )
 }

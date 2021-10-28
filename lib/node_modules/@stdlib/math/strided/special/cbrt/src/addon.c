@@ -58,6 +58,10 @@ static StridedArrayFcn functions[] = {
 
 	// uint8 (2)
 	stdlib_strided_b_f_as_f_f,
+	stdlib_strided_b_d_as_d_d,
+
+	// uint8c (2)
+	stdlib_strided_b_f_as_f_f,
 	stdlib_strided_b_d_as_d_d
 };
 
@@ -90,7 +94,11 @@ static int32_t types[] = {
 
 	// uint8 (2)
 	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_FLOAT32,
-	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_FLOAT64
+	STDLIB_STRIDED_UINT8, STDLIB_STRIDED_FLOAT64,
+
+	// uint8c (2)
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_FLOAT32,
+	STDLIB_STRIDED_UINT8C, STDLIB_STRIDED_FLOAT64
 };
 
 // Define a list of strided array function "data" (in this case, callbacks):
@@ -122,6 +130,10 @@ static void *data[] = {
 
 	// uint8 (2)
 	(void *)stdlib_base_cbrtf,
+	(void *)stdlib_base_cbrt,
+
+	// uint8c (2)
+	(void *)stdlib_base_cbrtf,
 	(void *)stdlib_base_cbrt
 };
 
@@ -143,7 +155,7 @@ static const struct StridedFunctionObject obj = {
 	functions,
 
 	// Number of strided array functions:
-	13,
+	15,
 
 	// Array of type "numbers" (as enumerated elsewhere), where the total number of types equals `narrays * nfunctions` and where each set of `narrays` consecutive types (non-overlapping) corresponds to the set of strided array argument types for a corresponding strided array function:
 	types,

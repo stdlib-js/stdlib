@@ -16,29 +16,41 @@
 * limitations under the License.
 */
 
-import removeFirst = require( './index' );
+import removeLast = require( './index' );
 
 
 // TESTS //
 
 // The function returns a string...
 {
-	removeFirst( 'abc' ); // $ExpectType string
+	removeLast( 'abc' ); // $ExpectType string
 }
 
 // The function does not compile if provided a value other than a string...
 {
-	removeFirst( true ); // $ExpectError
-	removeFirst( false ); // $ExpectError
-	removeFirst( null ); // $ExpectError
-	removeFirst( undefined ); // $ExpectError
-	removeFirst( 5 ); // $ExpectError
-	removeFirst( [] ); // $ExpectError
-	removeFirst( {} ); // $ExpectError
-	removeFirst( ( x: number ): number => x ); // $ExpectError
+	removeLast( true ); // $ExpectError
+	removeLast( false ); // $ExpectError
+	removeLast( null ); // $ExpectError
+	removeLast( undefined ); // $ExpectError
+	removeLast( 5 ); // $ExpectError
+	removeLast( [] ); // $ExpectError
+	removeLast( {} ); // $ExpectError
+	removeLast( ( x: number ): number => x ); // $ExpectError
+}
+
+// The function does not compile if provided a second argument that is not a number...
+{
+	removeLast( 'abc', true ); // $ExpectError
+	removeLast( 'abc', false ); // $ExpectError
+	removeLast( 'abc', null ); // $ExpectError
+	removeLast( 'abc', undefined ); // $ExpectError
+	removeLast( 'abc', 'abc' ); // $ExpectError
+	removeLast( 'abc', [] ); // $ExpectError
+	removeLast( 'abc', {} ); // $ExpectError
+	removeLast( 'abc', ( x: number ): number => x ); // $ExpectError
 }
 
 // The function does not compile if provided insufficient arguments...
 {
-	removeFirst(); // $ExpectError
+	removeLast(); // $ExpectError
 }

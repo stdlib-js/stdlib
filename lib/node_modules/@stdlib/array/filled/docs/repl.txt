@@ -97,7 +97,7 @@
     value: any
         Fill value.
 
-    iterable: Object
+    iterable: Iterable
         Iterable from which to generate an array.
 
     dtype: string (optional)

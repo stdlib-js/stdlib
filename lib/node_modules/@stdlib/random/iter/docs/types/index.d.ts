@@ -1209,7 +1209,7 @@ interface Namespace {
 }
 
 /**
-* Standard library pseudorandom number generator iterators.
+* Pseudorandom number generator iterators.
 */
 declare var ns: Namespace;
 

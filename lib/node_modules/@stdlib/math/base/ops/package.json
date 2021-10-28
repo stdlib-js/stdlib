@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/ops",
   "version": "0.0.0",
-  "description": "Standard library base math operators.",
+  "description": "Base (i.e., lower-level) math operators.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

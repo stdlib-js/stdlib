@@ -128,7 +128,7 @@
 		"uint32": "uint32",
 		"uint16": "uint16",
 		"uint8": "uint8",
-		"uint8c": "uint8",
+		"uint8c": "uint8c",
 		"complex64": "complex64",
 		"complex128": "complex128",
 		"binary": -1,

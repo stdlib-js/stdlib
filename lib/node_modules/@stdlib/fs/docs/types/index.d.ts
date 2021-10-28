@@ -412,7 +412,7 @@ interface Namespace {
 }
 
 /**
-* Standard library for interfacing with a fileystem.
+* Filesystem APIs.
 */
 declare var ns: Namespace;
 

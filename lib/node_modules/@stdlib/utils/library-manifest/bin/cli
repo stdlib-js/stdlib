@@ -25,7 +25,7 @@
 var resolve = require( 'path' ).resolve;
 
 // NOTE: we explicitly avoid using `@stdlib/fs/read-file` in this particular package in order to avoid circular dependencies. This should not be problematic as this command-line utility will be executed via Node.js.
-var readFileSync = require( 'fs' ).readFileSync; // eslint-disable-line no-sync
+var readFileSync = require( 'fs' ).readFileSync; // eslint-disable-line node/no-sync
 var CLI = require( '@stdlib/cli/ctor' );
 var manifest = require( './../lib' );
 

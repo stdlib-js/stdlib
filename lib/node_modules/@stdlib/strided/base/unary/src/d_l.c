@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/unary/d_l.h"
-#include "stdlib/strided/base/unary/typedefs.h"
 #include "stdlib/strided/base/unary/macros.h"
 #include <stdint.h>
 
@@ -51,6 +50,7 @@
 * stdlib_strided_d_l( arrays, shape, strides, (void *)llrint );
 */
 void stdlib_strided_d_l( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	UnaryFcnFloat64Int64 *f = (UnaryFcnFloat64Int64 *)fcn;
+	typedef int64_t func_type( const double x );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_UNARY_LOOP_CLBK( double, int64_t )
 }

@@ -87,7 +87,7 @@ interface Namespace {
 	int32: typeof int32;
 
 	/**
-	* Standard string path constants.
+	* Path constants.
 	*/
 	path: typeof path;
 
@@ -112,13 +112,13 @@ interface Namespace {
 	uint32: typeof uint32;
 
 	/**
-	* Standard string unicode constants.
+	* String unicode constants.
 	*/
 	unicode: typeof unicode;
 }
 
 /**
-* Standard library constants.
+* Constants.
 */
 declare var ns: Namespace;
 

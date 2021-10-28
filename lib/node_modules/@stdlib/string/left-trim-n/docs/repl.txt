@@ -1,0 +1,28 @@
+{{alias}}( str, n[, chars] )
+    Trims `n` characters from the beginning of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of characters to trim.
+
+    chars: Array<string>|string (optional)
+        Characters to trim. Default: whitespace characters.
+
+    Returns
+    -------
+    out: string
+        Trimmed string.
+
+    Examples
+    --------
+    > var out = {{alias}}( '  abc  ', 2 )
+    'abc  '
+    > var out = {{alias}}( '!!!abc!!!', 2, '!' )
+    '!abc!!!'
+
+    See Also
+    --------

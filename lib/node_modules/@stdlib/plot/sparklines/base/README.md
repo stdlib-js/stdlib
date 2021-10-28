@@ -20,7 +20,7 @@ limitations under the License.
 
 # Base
 
-> Standard library base sparkline functionality.
+> Base sparkline functionality.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/plot/sparklines/base' );
 
 #### ns
 
-Standard library base sparkline functionality.
+Namespace containing "base" (i.e., lower-level) sparkline functionality.
 
 ```javascript
 var o = ns;

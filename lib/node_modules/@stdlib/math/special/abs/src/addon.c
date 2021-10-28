@@ -108,10 +108,11 @@ static ndarrayFcn functions[] = {
 	stdlib_ndarray_k_f,
 	stdlib_ndarray_k_d,
 
-	// int8 (8)
+	// int8 (9)
 	stdlib_ndarray_s_s,
 	stdlib_ndarray_s_k,
 	stdlib_ndarray_s_i,
+	stdlib_ndarray_s_b,
 	stdlib_ndarray_s_b,
 	stdlib_ndarray_s_t,
 	stdlib_ndarray_s_u,
@@ -132,6 +133,17 @@ static ndarrayFcn functions[] = {
 	// uint8 (7)
 	stdlib_ndarray_b_k,
 	stdlib_ndarray_b_i,
+	stdlib_ndarray_b_b,
+	stdlib_ndarray_b_b,
+	stdlib_ndarray_b_t,
+	stdlib_ndarray_b_u,
+	stdlib_ndarray_b_f,
+	stdlib_ndarray_b_d,
+
+	// uint8c (7)
+	stdlib_ndarray_b_k,
+	stdlib_ndarray_b_i,
+	stdlib_ndarray_b_b,
 	stdlib_ndarray_b_b,
 	stdlib_ndarray_b_t,
 	stdlib_ndarray_b_u,
@@ -161,11 +173,12 @@ static int32_t types[] = {
 	STDLIB_NDARRAY_INT16, STDLIB_NDARRAY_FLOAT32,
 	STDLIB_NDARRAY_INT16, STDLIB_NDARRAY_FLOAT64,
 
-	// int8 (8)
+	// int8 (9)
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_INT8,
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_INT16,
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_INT32,
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_UINT8,
+	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_UINT8C,
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_UINT16,
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_UINT32,
 	STDLIB_NDARRAY_INT8, STDLIB_NDARRAY_FLOAT32,
@@ -182,14 +195,25 @@ static int32_t types[] = {
 	STDLIB_NDARRAY_UINT16, STDLIB_NDARRAY_FLOAT32,
 	STDLIB_NDARRAY_UINT16, STDLIB_NDARRAY_FLOAT64,
 
-	// uint8 (7)
+	// uint8 (8)
 	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_INT16,
 	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_INT32,
 	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_UINT8,
+	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_UINT8C,
 	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_UINT16,
 	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_UINT32,
 	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_FLOAT32,
-	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_FLOAT64
+	STDLIB_NDARRAY_UINT8, STDLIB_NDARRAY_FLOAT64,
+
+	// uint8c (8)
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_INT16,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_INT32,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_UINT8,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_UINT8C,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_UINT16,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_UINT32,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_FLOAT32,
+	STDLIB_NDARRAY_UINT8C, STDLIB_NDARRAY_FLOAT64
 };
 
 // Define a list of ndarray function "data" (in this case, callbacks):
@@ -214,7 +238,8 @@ static void *data[] = {
 	(void *)abs_k,
 	(void *)abs_k,
 
-	// int8 (8)
+	// int8 (9)
+	(void *)abs_s,
 	(void *)abs_s,
 	(void *)abs_s,
 	(void *)abs_s,
@@ -235,7 +260,18 @@ static void *data[] = {
 	(void *)identity_t,
 	(void *)identity_t,
 
-	// uint8 (7)
+	// uint8 (8)
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+	(void *)identity_b,
+
+	// uint8c (8)
+	(void *)identity_b,
 	(void *)identity_b,
 	(void *)identity_b,
 	(void *)identity_b,
@@ -263,7 +299,7 @@ static const struct ndarrayFunctionObject obj = {
 	functions,
 
 	// Number of ndarray functions:
-	34,
+	44,
 
 	// Array of type "numbers" (as enumerated elsewhere), where the total number of types equals `narrays * nfunctions` and where each set of `narrays` consecutive types (non-overlapping) corresponds to the set of ndarray argument types for a corresponding ndarray function:
 	types,

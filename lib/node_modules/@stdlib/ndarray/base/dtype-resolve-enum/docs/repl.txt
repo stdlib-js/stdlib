@@ -1,0 +1,29 @@
+
+{{alias}}( dtype )
+    Returns the enumeration constant associated with a supported data type
+    value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `INT8 == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    dtype: any
+        Data type value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/ndarray/base/dtype-str2enum}}( 'float64' ) )
+    <number>
+
+    See Also
+    --------
+

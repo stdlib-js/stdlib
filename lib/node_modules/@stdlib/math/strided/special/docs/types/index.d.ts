@@ -2642,7 +2642,7 @@ interface Namespace {
 }
 
 /**
-* Standard library strided array special math functions.
+* Strided array special math functions.
 */
 declare var ns: Namespace;
 

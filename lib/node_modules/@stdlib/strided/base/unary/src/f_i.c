@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/strided/base/unary/f_i.h"
-#include "stdlib/strided/base/unary/typedefs.h"
 #include "stdlib/strided/base/unary/macros.h"
 #include <stdint.h>
 
@@ -51,6 +50,7 @@
 * stdlib_strided_f_i( arrays, shape, strides, (void *)lrintf );
 */
 void stdlib_strided_f_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	UnaryFcnFloat32Int32 *f = (UnaryFcnFloat32Int32 *)fcn;
+	typedef int32_t func_type( const float x );
+	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_UNARY_LOOP_CLBK( float, int32_t )
 }

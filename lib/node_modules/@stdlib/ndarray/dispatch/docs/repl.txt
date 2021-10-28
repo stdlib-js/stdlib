@@ -36,7 +36,7 @@
         traversing arrays remains the same, but the ndarray function `data`
         differs (e.g., callbacks which differ based on the array data types).
 
-    types: ArrayLikeObject<string>
+    types: ArrayLikeObject
         One-dimensional list of ndarray argument data types.
 
     data: ArrayLikeObject|null

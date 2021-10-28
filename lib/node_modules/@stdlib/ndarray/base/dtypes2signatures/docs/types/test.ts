@@ -26,7 +26,7 @@ import dtypes2signatures = require( './index' );
 	dtypes2signatures( [ 'float64', 'float64' ], 1, 1 ); // $ExpectType ArrayLike<string>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an array-like object containing strings...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object...
 {
 	dtypes2signatures( 5, 1, 1 ); // $ExpectError
 	dtypes2signatures( true, 1, 1 ); // $ExpectError
@@ -34,7 +34,6 @@ import dtypes2signatures = require( './index' );
 	dtypes2signatures( null, 1, 1 ); // $ExpectError
 	dtypes2signatures( undefined, 1, 1 ); // $ExpectError
 	dtypes2signatures( {}, 1, 1 ); // $ExpectError
-	dtypes2signatures( ( x: number ): number => x, 1, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...

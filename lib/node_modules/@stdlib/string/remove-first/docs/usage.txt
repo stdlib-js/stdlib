@@ -5,3 +5,4 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+         --n                   Number of characters to remove. Default: 1.

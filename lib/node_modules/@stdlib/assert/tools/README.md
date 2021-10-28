@@ -20,7 +20,7 @@ limitations under the License.
 
 # Assert
 
-> Standard library assertion utility tools.
+> Assertion utility tools.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var tools = require( '@stdlib/assert/tools' );
 
 #### tools
 
-Standard library assertion utility tools.
+Namespace for assertion utility tools.
 
 ```javascript
 var o = tools;

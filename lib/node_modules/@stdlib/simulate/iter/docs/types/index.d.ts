@@ -669,7 +669,7 @@ interface Namespace {
 }
 
 /**
-* Standard library simulation iterators.
+* Simulation iterators.
 */
 declare var ns: Namespace;
 

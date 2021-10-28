@@ -20,7 +20,7 @@ limitations under the License.
 
 # BLAS
 
-> Standard library base reference basic linear algebra subprograms (BLAS).
+> Base (i.e., lower-level) basic linear algebra subprograms (BLAS).
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var blas = require( '@stdlib/blas/base' );
 
 #### blas
 
-Base reference basic linear algebra subprograms (BLAS).
+Namespace for "base" (i.e., lower-level) basic linear algebra subprograms (BLAS).
 
 ```javascript
 var o = blas;

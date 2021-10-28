@@ -20,7 +20,7 @@ limitations under the License.
 
 # Special Functions
 
-> Standard library special math functions.
+> Special math functions.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/special' );
 
 #### ns
 
-Standard library special math functions.
+Namespace containing special math functions.
 
 ```javascript
 var o = ns;

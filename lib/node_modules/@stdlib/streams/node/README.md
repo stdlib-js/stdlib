@@ -20,7 +20,7 @@ limitations under the License.
 
 # Node Streams
 
-> Standard library Node.js streams.
+> Node.js streams.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var streams = require( '@stdlib/streams/node' );
 
 #### streams
 
-Standard library Node.js streams.
+Namespace containing Node.js stream functionality.
 
 ```javascript
 var s = streams;

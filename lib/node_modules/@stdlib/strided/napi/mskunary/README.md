@@ -179,13 +179,13 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 
 -   The function expects that the callback `info` argument provides access to the following JavaScript arguments:
 
-    -   `N`: number of indexed elements.
-    -   `X`: input [typed array][mdn-typed-array].
-    -   `strideX`: `X` stride length.
-    -   `Mask`: mask [`Uint8Array`][@stdlib/array/uint8].
-    -   `strideMask`: `Mask` stride length.
-    -   `Y`: destination [typed array][mdn-typed-array].
-    -   `strideY`: `Y` stride length.
+    -   **N**: number of indexed elements.
+    -   **X**: input [typed array][mdn-typed-array].
+    -   **strideX**: `X` stride length.
+    -   **Mask**: mask [`Uint8Array`][@stdlib/array/uint8].
+    -   **strideMask**: `Mask` stride length.
+    -   **Y**: destination [typed array][mdn-typed-array].
+    -   **strideY**: `Y` stride length.
 
 </section>
 

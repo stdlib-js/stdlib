@@ -194,7 +194,7 @@ interface Namespace {
 }
 
 /**
-* Standard library OS utilities.
+* OS utilities.
 */
 declare var ns: Namespace;
 

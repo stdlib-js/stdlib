@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -14,6 +14,10 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
+*/
+
+/*
+* The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
 #ifndef STDLIB_STRIDED_BASE_BINARY_SS_F_H
@@ -29,7 +33,7 @@ extern "C" {
 #endif
 
 /**
-* Applies a binary callback accepting and returning signed 8-bit integers to signed 8-bit integer strided input arrays, casts the callback's signed 8-bit integer return value to a single-precision floating-point number, and assigns results to elements in a single-precision floating-point strided output array.
+* Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 */
 void stdlib_strided_ss_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn );
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Tools
 
-> Standard library math iterator tools.
+> Math iterator tools.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/iter/tools' );
 
 #### ns
 
-Standard library math iterator tools.
+Namespace containing math iterator tools.
 
 ```javascript
 var o = ns;

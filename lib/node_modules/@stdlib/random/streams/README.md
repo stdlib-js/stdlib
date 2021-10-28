@@ -20,7 +20,7 @@ limitations under the License.
 
 # Pseudorandom Number Generator Streams
 
-> Standard library pseudorandom number generator (PRNG) streams.
+> Pseudorandom number generator (PRNG) streams.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/random/streams' );
 
 #### ns
 
-Standard library pseudorandom number generator (PRNG) streams.
+Namespace containing pseudorandom number generator (PRNG) streams.
 
 ```javascript
 var streams = ns;

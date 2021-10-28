@@ -20,7 +20,7 @@ limitations under the License.
 
 # Base Statistics
 
-> Standard library base statistical functions.
+> Base (i.e., lower-level) statistical functions.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var stats = require( '@stdlib/stats/base' );
 
 #### stats
 
-Standard library base statistical functions.
+Namespace containing "base" (i.e., lower-level) statistical functions.
 
 ```javascript
 var ns = stats;

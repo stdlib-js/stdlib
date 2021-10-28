@@ -244,7 +244,7 @@ interface Namespace {
 }
 
 /**
-* Standard library basic mathematical tools.
+* Base math tools.
 */
 declare var ns: Namespace;
 

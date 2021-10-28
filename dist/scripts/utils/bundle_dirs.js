@@ -21,7 +21,7 @@
 // MODULES //
 
 var path = require( 'path' );
-var stat = require( 'fs' ).statSync; // eslint-disable-line no-sync
+var stat = require( 'fs' ).statSync; // eslint-disable-line node/no-sync
 var readDir = require( '@stdlib/fs/read-dir' ).sync;
 var DIST_DIR = require( './dist_dir.js' );
 

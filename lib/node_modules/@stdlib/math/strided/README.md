@@ -20,7 +20,7 @@ limitations under the License.
 
 # Strided
 
-> Standard library strided math functions.
+> Strided array math functions.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var ns = require( '@stdlib/math/strided' );
 
 #### ns
 
-Standard library strided math functions.
+Namespace containing strided array math functions.
 
 ```javascript
 var o = ns;

@@ -19,6 +19,14 @@
 // TypeScript Version: 2.0
 
 /**
+* Interface describing an object mapping data type strings to single letter character abbreviations.
+*/
+interface Table {
+	// Table properties:
+	[key: string]: string;
+}
+
+/**
 * Returns the single letter character abbreviation for an underlying array data type.
 *
 * @param dtype - data type
@@ -32,6 +40,17 @@
 * // returns 'o'
 */
 declare function dtypeChar( dtype: string ): string | null;
+
+/**
+* Returns an object mapping data type strings to single letter character abbreviations.
+*
+* @returns object mapping data type strings to single letter character abbreviations
+*
+* @example
+* var obj = dtypeChar();
+* // returns {...}
+*/
+declare function dtypeChar(): Table;
 
 
 // EXPORTS //
