@@ -1,6 +1,6 @@
 
-{{alias}}( [dtype, ]clbk[, thisArg] )
-    Creates a filled array according to a provided callback function.
+{{alias}}( [dtype] )
+    Creates a filled array.
 
     The function supports the following data types:
 
@@ -22,12 +22,6 @@
     dtype: string (optional)
         Data type. Default: 'float64'.
 
-    clbk: Function
-        Callback function.
-
-    thisArg: any (optional)
-        Callback execution context.
-
     Returns
     -------
     out: TypedArray|Array
@@ -35,9 +29,9 @@
 
     Examples
     --------
-    > var arr = {{alias}}( {{alias:@stdlib/random/base/randu}} )
+    > var arr = {{alias}}()
     <Float64Array>
-    > arr = {{alias}}( 'float32',  {{alias:@stdlib/random/base/randu}} )
+    > arr = {{alias}}( 'float32' )
     <Float32Array>
 
 

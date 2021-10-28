@@ -40,14 +40,12 @@ limitations under the License.
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 ```
 
-#### filledarrayBy( \[dtype, ]clbk\[, thisArg] )
+#### filledarrayBy( \[dtype] )
 
-Creates a filled array according to a provided callback function and having a specified data type `dtype`.
+Creates a filled array having a specified data type `dtype`.
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-
-var arr = filledarrayBy( randu );
+var arr = filledarrayBy();
 // returns <Float64Array>
 ```
 
@@ -67,9 +65,7 @@ The function recognizes the following data types:
 By default, the output array data type is `float64` (i.e., a [typed array][mdn-typed-array]). To specify an alternative data type, provide a `dtype` argument.
 
 ```javascript
-var minstd = require( '@stdlib/random/base/minstd' );
-
-var arr = filledarrayBy( 'int32', minstd );
+var arr = filledarrayBy( 'int32' );
 // returns <Int32Array>
 ```
 

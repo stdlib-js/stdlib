@@ -62,11 +62,8 @@ function clbk( i: number ): number {
 
 // The function returns an array or typed array...
 {
-	filledarrayBy( clbk ); // $ExpectType ArrayOrTypedArray
-	filledarrayBy( clbk, {} ); // $ExpectType ArrayOrTypedArray
-
-	filledarrayBy( 'float32', clbk ); // $ExpectType ArrayOrTypedArray
-	filledarrayBy( 'float32', clbk, {} ); // $ExpectType ArrayOrTypedArray
+	filledarrayBy(); // $ExpectType ArrayOrTypedArray
+	filledarrayBy( 'float32' ); // $ExpectType ArrayOrTypedArray
 
 	filledarrayBy( 10, clbk ); // $ExpectType ArrayOrTypedArray
 	filledarrayBy( 10, clbk, {} ); // $ExpectType ArrayOrTypedArray
@@ -117,24 +114,6 @@ function clbk( i: number ): number {
 
 // The compiler throws an error if a callback function argument is not a function...
 {
-	filledarrayBy( '5' ); // $ExpectError
-	filledarrayBy( 1.0 ); // $ExpectError
-	filledarrayBy( false ); // $ExpectError
-	filledarrayBy( true ); // $ExpectError
-	filledarrayBy( null ); // $ExpectError
-	filledarrayBy( undefined ); // $ExpectError
-	filledarrayBy( [] ); // $ExpectError
-	filledarrayBy( {} ); // $ExpectError
-
-	filledarrayBy( '5', {} ); // $ExpectError
-	filledarrayBy( 1.0, {} ); // $ExpectError
-	filledarrayBy( false, {} ); // $ExpectError
-	filledarrayBy( true, {} ); // $ExpectError
-	filledarrayBy( null, {} ); // $ExpectError
-	filledarrayBy( undefined, {} ); // $ExpectError
-	filledarrayBy( [], {} ); // $ExpectError
-	filledarrayBy( {}, {} ); // $ExpectError
-
 	filledarrayBy( 'float64', '5' ); // $ExpectError
 	filledarrayBy( 'float64', 1.0 ); // $ExpectError
 	filledarrayBy( 'float64', false ); // $ExpectError

@@ -53,21 +53,6 @@ type Unary = ( i: number ) => any;
 type Callback = Nullary | Unary;
 
 /**
-* Creates a filled array according to a provided callback function.
-*
-* @param clbk - callback function
-* @param thisArg - callback function execution context
-* @returns filled array
-*
-* @example
-* var randu = require( `@stdlib/random/base/randu` );
-*
-* var arr = filledarrayBy( randu );
-* // returns <Float64Array>
-*/
-declare function filledarrayBy( clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length
-
-/**
 * Creates a filled array according to a provided callback function and having a specified data type.
 *
 * The function recognizes the following data types:
@@ -84,18 +69,22 @@ declare function filledarrayBy( clbk: Callback, thisArg?: any ): ArrayOrTypedArr
 * -   `generic`: generic JavaScript values
 *
 * @param dtype - data type
-* @param clbk - callback function
-* @param thisArg - callback function execution context
 * @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
 * var randu = require( `@stdlib/random/base/randu` );
 *
-* var arr = filledarrayBy( 'float32', randu );
+* var arr = filledarrayBy();
+* // returns <Float64Array>
+*
+* @example
+* var randu = require( `@stdlib/random/base/randu` );
+*
+* var arr = filledarrayBy( 'float32' );
 * // returns <Float32Array>
 */
-declare function filledarrayBy( dtype: string, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( dtype?: string ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Creates a filled array according to a provided callback function and having a specified `length`.
