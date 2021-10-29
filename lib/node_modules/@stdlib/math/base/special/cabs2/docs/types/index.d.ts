@@ -18,22 +18,27 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { ComplexLike } from '@stdlib/types/object';
+
 /**
-* Computes the squared absolute value of a complex number.
+* Computes the squared absolute value of a double-precision complex floating-point number.
 *
 * ## Notes
 *
 * -   The absolute value of a complex number is its distance from zero.
 *
-* @param re - real component
-* @param im - imaginary component
+* @param z - complex number
 * @returns squared absolute value
 *
 * @example
-* var v = cabs2( 5.0, 3.0 );
+* var Complex128 = require( `@stdlib/complex/float64` );
+*
+* var v = cabs2( new Complex128( 5.0, 3.0 ) );
 * // returns 34.0
 */
-declare function cabs2( re: number, im: number ): number;
+declare function cabs2( z: ComplexLike ): number;
 
 
 // EXPORTS //

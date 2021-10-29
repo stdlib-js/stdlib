@@ -1,16 +1,14 @@
 
-{{alias}}( re, im )
-    Computes the squared absolute value of a complex number.
+{{alias}}( z )
+    Computes the squared absolute value of a double-precision complex floating-
+    point number.
 
     The absolute value of a complex number is its distance from zero.
 
     Parameters
     ----------
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex128
+        Complex number.
 
     Returns
     -------
@@ -19,7 +17,7 @@
 
     Examples
     --------
-    > var y = {{alias}}( 5.0, 3.0 )
+    > var y = {{alias}}( new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 ) )
     34.0
 
     See Also
