@@ -32,10 +32,10 @@ import Complex64 = require( './index' );
 	x.re; // $ExpectType number
 
 	// tslint:disable-next-line:no-unused-expression
-	x.BYTES_PER_ELEMENT; // $ExpectType number
+	x.BYTES_PER_ELEMENT; // $ExpectType 4
 
 	// tslint:disable-next-line:no-unused-expression
-	x.byteLength; // $ExpectType number
+	x.byteLength; // $ExpectType 8
 }
 
 // 64-bit complex number comes with a `toString` method to serialize a complex number as a string...

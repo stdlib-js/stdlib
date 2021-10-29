@@ -58,7 +58,7 @@ declare class Complex128 {
 	* var nbytes = Complex128.BYTES_PER_ELEMENT;
 	* // returns 8
 	*/
-	readonly BYTES_PER_ELEMENT: number;
+	readonly BYTES_PER_ELEMENT: 8;
 
 	/**
 	* Length (in bytes) of a complex number.
@@ -71,7 +71,7 @@ declare class Complex128 {
 	* var nbytes = z.byteLength;
 	* // returns 16
 	*/
-	readonly byteLength: number;
+	readonly byteLength: 16;
 
 	/**
 	* Serializes a complex number as a string.
