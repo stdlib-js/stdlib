@@ -299,7 +299,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 
 -   The C-API functions expect that the callback `info` argument provides access to the following JavaScript arguments:
 
-    -   `x`: input value.
+    -   **x**: input value.
 
 </section>
 
