@@ -23,7 +23,7 @@
 *
 * @param x       first number
 * @param y       second number
-* @return        sum
+* @return        result
 *
 * @example
 * float z = stdlib_base_subf( -5.0f, 3.0f );
