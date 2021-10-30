@@ -235,6 +235,11 @@ function cmplx128Array(): array.Complex128Array {
 	if ( z128.byteOffset !== 0 ) {
 		throw new Error( 'something went wrong' );
 	}
+
+	const zzz: array.ComplexTypedArray = cmplx64Array();
+	if ( zzz.byteOffset !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
 }
 
 // The compiler should not throw an error when using iterator or iterable types...
