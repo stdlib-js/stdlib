@@ -56,6 +56,11 @@ int8_t stdlib_ndarray_minmax_view_buffer_index( int64_t ndims, int64_t *shape, i
 	min = offset;
 	max = offset;
 	for ( i = 0; i < ndims; i++ ) {
+		if ( shape[ i ] == 0 ) {
+			out[ 0 ] = offset;
+			out[ 1 ] = offset;
+			return 0;
+		}
 		s = strides[ i ];
 		if ( s > 0 ) {
 			max += s * ( shape[i]-1 );

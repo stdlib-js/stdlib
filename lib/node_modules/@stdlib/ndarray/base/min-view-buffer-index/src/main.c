@@ -46,8 +46,11 @@ int64_t stdlib_ndarray_min_view_buffer_index( int64_t ndims, int64_t *shape, int
 
 	idx = offset;
 	for ( i = 0; i < ndims; i++ ) {
+		if ( shape[ i ] == 0 ) {
+			return offset;
+		}
 		if ( strides[ i ] < 0 ) {
-			idx += strides[ i ] * (shape[ i ] - 1); // decrements the index
+			idx += strides[ i ] * ( shape[ i ] - 1 ); // decrements the index
 		}
 	}
 	return idx;
