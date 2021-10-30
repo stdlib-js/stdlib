@@ -33,7 +33,7 @@
 * function beep() {
 *     return 'beep';
 * }
-
+*
 * var bool = isArrowFunction( beep );
 * // returns false
 */
