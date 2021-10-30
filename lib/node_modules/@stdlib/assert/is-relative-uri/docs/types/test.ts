@@ -21,10 +21,10 @@ import isRelativeURI = require( './index' );
 
 // TESTS //
 
-// The function returns a string...
+// The function returns a boolean...
 {
-	isRelativeURI( 'https://google.com' ); // $ExpectType
-	isRelativeURI( 'dashboard/admin/' ); // $ExpectType
+	isRelativeURI( 'https://google.com' ); // $ExpectType boolean
+	isRelativeURI( 'dashboard/admin/' ); // $ExpectType boolean
 }
 
 // The compiler throws an error if the function is provided an insufficient number of arguments...

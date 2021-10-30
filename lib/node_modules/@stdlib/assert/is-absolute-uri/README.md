@@ -125,6 +125,7 @@ Options:
 
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
 ```
 
 </section>
@@ -155,6 +156,14 @@ To use as a [standard stream][standard-streams],
 ```bash
 $ echo -n 'https://google.com' | is-absolute-uri
 true
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'https://google.com\tbeep' | is-absolute-uri --split '\t'
+true
+false
 ```
 
 </section>

@@ -1,5 +1,7 @@
 {
-	"string": [],
+	"string": [
+		"split"
+	],
 	"boolean": [
 		"help",
 		"version"

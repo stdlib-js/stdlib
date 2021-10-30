@@ -18,8 +18,6 @@
 
 // TypeScript Version: 2.0
 
-/// <reference types="@stdlib/types"/>
-
 /**
 * Tests whether a value is an absolute URI.
 *
