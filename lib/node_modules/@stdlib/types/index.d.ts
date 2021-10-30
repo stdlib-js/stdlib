@@ -82,6 +82,14 @@ declare module '@stdlib/types/array' {
 	type IntegerTypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array; // tslint:disable-line:max-line-length
 
 	/**
+	* A complex number typed array.
+	*
+	* @example
+	* const x: ComplexTypedArray = new Complex64Array( 10 );
+	*/
+	type ComplexTypedArray = Complex64Array | Complex128Array;
+
+	/**
 	* A complex number array-like value.
 	*
 	* @example
