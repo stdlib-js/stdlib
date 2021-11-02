@@ -1,0 +1,143 @@
+
+{{alias}}( N, x, strideX, y, strideY, fcn )
+    Applies a unary function to a double-precision complex floating-point
+    strided input array and assigns results to a double-precision complex
+    floating-point strided output array.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    y: Complex128Array
+        Destination array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    fcn: Function
+        Unary function to apply.
+
+    Returns
+    -------
+    y: Complex128Array
+        Input array `y`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ];
+    > var x = new {{alias:@stdlib/array/complex128}}( xbuf );
+    > var y = new {{alias:@stdlib/array/complex128}}( x.length );
+    > {{alias}}( x.length, x, 1, y, 1, {{alias:@stdlib/math/base/special/cidentity}} );
+    > var v = y.get( 0 )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    1.0
+    > var im = {{alias:@stdlib/complex/imag}}( v )
+    2.0
+
+    // Using `N` and stride parameters:
+    > y = new {{alias:@stdlib/array/complex128}}( x.length );
+    > {{alias}}( 2, x, 2, y, -1, {{alias:@stdlib/math/base/special/cidentity}} );
+    > v = y.get( 0 )
+    <Complex128>
+    > re = {{alias:@stdlib/complex/real}}( v )
+    5.0
+    > im = {{alias:@stdlib/complex/imag}}( v )
+    6.0
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/complex128}}( xbuf );
+    > var y0 = new {{alias:@stdlib/array/complex128}}( x0.length );
+    > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/complex128}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 2, x1, -2, y1, 1, {{alias:@stdlib/math/base/special/cidentity}} );
+    > v = y1.get( 0 )
+    <Complex128>
+    > re = {{alias:@stdlib/complex/real}}( v )
+    7.0
+    > im = {{alias:@stdlib/complex/imag}}( v )
+    8.0
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, fcn )
+    Applies a unary function to a double-precision complex floating-point
+    strided input array and assigns results to a double-precision complex
+    floating-point strided output array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Complex128Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Complex128Array
+        Destination array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    fcn: Function
+        Unary function to apply.
+
+    Returns
+    -------
+    y: Complex128Array
+        Input array `y`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ];
+    > var x = new {{alias:@stdlib/array/complex128}}( xbuf );
+    > var y = new {{alias:@stdlib/array/complex128}}( x.length );
+    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, {{alias:@stdlib/math/base/special/cidentity}} );
+    > var v = y.get( 0 )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    1.0
+    > var im = {{alias:@stdlib/complex/imag}}( v )
+    2.0
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex128}}( xbuf );
+    > y = new {{alias:@stdlib/array/complex128}}( x.length );
+    > {{alias}}.ndarray( 2, x, 2, 1, y, -1, y.length-1, {{alias:@stdlib/math/base/special/cidentity}} );
+    > v = y.get( y.length-1 )
+    <Complex128>
+    > re = {{alias:@stdlib/complex/real}}( v )
+    3.0
+    > im = {{alias:@stdlib/complex/imag}}( v )
+    4.0
+
+    See Also
+    --------
+
