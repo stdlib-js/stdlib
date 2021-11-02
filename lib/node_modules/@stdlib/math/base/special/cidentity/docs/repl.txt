@@ -1,0 +1,27 @@
+
+{{alias}}( z )
+    Evaluates the identity function for a double-precision complex floating-
+    point number.
+
+    Parameters
+    ----------
+    z: ComplexLike
+        Input value.
+
+    Returns
+    -------
+    v: ComplexLike
+        Input value.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64}}( -1.0, 2.0 ) )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    -1.0
+    > var img = {{alias:@stdlib/complex/imag}}( v )
+    2.0
+
+    See Also
+    --------
+
