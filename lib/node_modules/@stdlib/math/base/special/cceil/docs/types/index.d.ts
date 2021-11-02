@@ -20,41 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { ComplexLike, Complex128 } from '@stdlib/types/object';
 
 /**
-* Rounds a complex number toward positive infinity.
+* Rounds a double-precision complex floating-point number toward positive infinity.
 *
-* @param out - output array
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
+* @param z - input value
+* @returns result
 *
 * @example
-* var Float32Array = require( `@stdlib/array/float32` );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var out = new Float32Array( 2 );
+* var v = cceil( new Complex128( -1.5, 2.5 ) );
+* // returns <Complex128>
 *
-* var v = cceil( out, -4.2, 5.5 );
-* // returns <Float32Array>[ -4.0, 6.0 ]
+* var re = real( v );
+* // returns -1.0
 *
-* var bool = ( v === out );
-* // returns true
+* var im = imag( v );
+* // returns 3.0
 */
-declare function cceil( out: ArrayLike<number>, re: number, im: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Rounds a complex number toward positive infinity.
-*
-* @param re - real component
-* @param im - imaginary component
-* @returns real and imaginary components
-*
-* @example
-* var out = cceil( 5.5, 3.3 );
-* // returns [ 6.0, 4.0 ]
-*/
-declare function cceil( re: number, im: number ): ArrayLike<number>;
+declare function cceil( z: ComplexLike ): Complex128;
 
 
 // EXPORTS //

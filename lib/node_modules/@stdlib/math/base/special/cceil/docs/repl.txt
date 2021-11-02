@@ -1,34 +1,26 @@
 
-{{alias}}( [out,] re, im )
-    Rounds a complex number toward positive infinity.
+{{alias}}( z )
+    Rounds a double-precision complex floating-point number toward positive
+    infinity.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
-
-    re: number
-        Real component.
-
-    im: number
-        Imaginary component.
+    z: Complex
+        Complex number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
-        Real and imaginary components.
+    out: Complex
+        Result.
 
     Examples
     --------
-    > var out = {{alias}}( 5.5, 3.3 )
-    [ 6.0, 4.0 ]
-
-    // Provide an output array:
-    > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 5.5, 3.3 )
-    <Float64Array>[ 6.0, 4.0 ]
-    > var bool = ( v === out )
-    true
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64}}( -1.5, 2.5 ) )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( v )
+    -1.0
+    > var img = {{alias:@stdlib/complex/imag}}( v )
+    3.0
 
     See Also
     --------

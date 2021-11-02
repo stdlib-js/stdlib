@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,53 +16,30 @@
 * limitations under the License.
 */
 
+import Complex128 = require( '@stdlib/complex/float64' );
 import cceil = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of numbers...
+// The function returns a complex number...
 {
-	cceil( 5, 3 ); // $ExpectType ArrayLike<number>
-	cceil( [], 5, 3 ); // $ExpectType ArrayLike<number>
+	cceil( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
-// The compiler throws an error if the function is provided a real component which is not a number...
+// The compiler throws an error if the function is provided a value other than a complex number...
 {
-	cceil( true, 3 ); // $ExpectError
-	cceil( false, 3 ); // $ExpectError
-	cceil( null, 3 ); // $ExpectError
-	cceil( undefined, 3 ); // $ExpectError
-	cceil( '5', 3 ); // $ExpectError
-	cceil( [], 3 ); // $ExpectError
-	cceil( {}, 3 ); // $ExpectError
-	cceil( ( x: number ): number => x, 3 ); // $ExpectError
+	cceil( true ); // $ExpectError
+	cceil( false ); // $ExpectError
+	cceil( null ); // $ExpectError
+	cceil( undefined ); // $ExpectError
+	cceil( '5' ); // $ExpectError
+	cceil( [] ); // $ExpectError
+	cceil( {} ); // $ExpectError
+	cceil( ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an imaginary component which is not a number...
-{
-	cceil( 5, true ); // $ExpectError
-	cceil( 5, false ); // $ExpectError
-	cceil( 5, null ); // $ExpectError
-	cceil( 5, undefined ); // $ExpectError
-	cceil( 5, '5' ); // $ExpectError
-	cceil( 5, [] ); // $ExpectError
-	cceil( 5, {} ); // $ExpectError
-	cceil( 5, ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided an output array which is not array-like...
-{
-	cceil( true, 5, 3 ); // $ExpectError
-	cceil( false, 5, 3 ); // $ExpectError
-	cceil( 'abc', 5, 3 ); // $ExpectError
-	cceil( {}, 5, 3 ); // $ExpectError
-	cceil( ( x: number ): number => x, 5, 3 ); // $ExpectError
-	cceil( 123, 5, 3 ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided insufficient arguments...
+// The function does not compile if provided insufficient arguments...
 {
 	cceil(); // $ExpectError
-	cceil( 2 ); // $ExpectError
 }

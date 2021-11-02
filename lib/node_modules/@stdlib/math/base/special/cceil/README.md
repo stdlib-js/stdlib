@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Ceil
+# cceil
 
-> Round a complex number toward positive infinity.
+> Round a double-precision complex floating-point number toward positive infinity.
 
 <section class="usage">
 
@@ -30,36 +30,23 @@ limitations under the License.
 var cceil = require( '@stdlib/math/base/special/cceil' );
 ```
 
-#### cceil( \[out,] re, im )
+#### cceil( z )
 
-Rounds a `complex` number comprised of a **real** component `re` and an **imaginary** component `im` toward positive infinity.
-
-```javascript
-var v = cceil( -4.2, 5.5 );
-// returns [ -4.0, 6.0 ]
-
-v = cceil( 9.99999, 0.1 );
-// returns [ 10.0, 1.0 ]
-
-v = cceil( 0.0, 0.0 );
-// returns [ 0.0, 0.0 ]
-
-v = cceil( NaN, NaN );
-// returns [ NaN, NaN ]
-```
-
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+Rounds a double-precision complex floating-point number toward positive infinity.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
 
-var out = new Float32Array( 2 );
+var v = cceil( new Complex128( -1.5, 2.5 ) );
+// returns <Complex128>
 
-var v = cceil( out, -4.2, 5.5 );
-// returns <Float32Array>[ -4.0, 6.0 ]
+var re = real( v );
+// returns -1.0
 
-var bool = ( v === out );
-// returns true
+var im = imag( v );
+// returns 3.0
 ```
 
 </section>
@@ -73,32 +60,111 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var uniform = require( '@stdlib/random/base/uniform' );
 var Complex128 = require( '@stdlib/complex/float64' );
-var randu = require( '@stdlib/random/base/randu' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
 var cceil = require( '@stdlib/math/base/special/cceil' );
 
-var re;
-var im;
 var z;
-var o;
-var w;
 var i;
-
 for ( i = 0; i < 100; i++ ) {
-    re = ( randu()*100.0 ) - 50.0;
-    im = ( randu()*100.0 ) - 50.0;
-    z = new Complex128( re, im );
-    o = cceil( real(z), imag(z) );
-    w = new Complex128( o[ 0 ], o[ 1 ] );
-    console.log( 'ceil(%s) = %s', z.toString(), w.toString() );
+    z = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
+    console.log( 'ceil(%s) = %s', z, cceil( z ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cceil.h"
+```
+
+#### stdlib_base_cceil( z )
+
+Rounds a double-precision complex floating-point number toward positive infinity.
+
+```c
+#include <complex.h>
+
+double complex y = stdlib_base_cceil( 2.5-1.5*I );
+// returns 3.0-1.0*I
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] double complex` input value.
+
+```c
+double complex stdlib_base_cceil( const double complex z );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cceil.h"
+#include <stdio.h>
+#include <complex.h>
+
+int main() {
+    double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+
+    double complex v;
+    double complex y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        y = stdlib_base_cceil( v );
+        printf( "cceil(%lf + %lf) = %lf + %lf\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
