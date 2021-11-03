@@ -7,3 +7,4 @@ Options:
   -V,    --version             Print the package version.
          --len length          String length.
          --seq str             Custom replacement sequence. Default: '...'.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

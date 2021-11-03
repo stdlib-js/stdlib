@@ -1,7 +1,8 @@
 {
 	"string": [
 		"len",
-		"seq"
+		"seq",
+		"split"
 	],
 	"boolean": [
 		"help",

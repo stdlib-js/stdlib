@@ -130,6 +130,7 @@ Options:
   -V,    --version             Print the package version.
          --len length          String length.
          --seq str             Custom replacement sequence. Default: '...'.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
 ```
 
 </section>
@@ -139,6 +140,20 @@ Options:
 <!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'Hello, World!\nBeep Boop Baz' | truncate-middle --len 6 --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'Hello, World!\nBeep Boop Baz' | truncate-middle --len 6 --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
 
 </section>
 
@@ -156,6 +171,21 @@ Hel...d!
 
 $ truncate-middle 'Hello, World!' --len 6 --seq '!'
 Hel|d!
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'Hello, World!' | truncate-middle --len 8
+Hel...d!
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'Hello, World!\tBeep Boop' | truncate-middle --split '\t' --len 6 --seq '!'
+Hel|d!
+Bee|op
 ```
 
 </section>
@@ -191,6 +221,10 @@ Hel|d!
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
 

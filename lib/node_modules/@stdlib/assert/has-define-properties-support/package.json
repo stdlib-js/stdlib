@@ -14,7 +14,7 @@
     }
   ],
   "bin": {
-    "has-define-property-support": "./bin/cli"
+    "has-define-properties-support": "./bin/cli"
   },
   "main": "./lib",
   "directories": {

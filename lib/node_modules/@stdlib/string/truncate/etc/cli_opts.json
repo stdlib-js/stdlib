@@ -1,7 +1,8 @@
 {
 	"string": [
 		"len",
-		"ending"
+		"ending",
+		"split"
 	],
 	"boolean": [
 		"help",
