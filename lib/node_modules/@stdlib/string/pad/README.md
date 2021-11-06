@@ -212,11 +212,34 @@ Options:
          --lpad str            String used to left pad. Default: ''.
          --rpad str            String used to right pad. Default: ' '.
          --cright              Center right in the event of a tie.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
 ```
 
 </section>
 
 <!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'beep\nboop' | padstr --len 10 --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'beep\nboop' | padstr --len 10 --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
+</section>
+
+<!-- /.notes -->
 
 <section class="examples">
 
@@ -231,7 +254,15 @@ To use as a [standard stream][standard-streams],
 
 ```bash
 $ echo -n 'beep' | pad --len 9 --lpad a --rpad o
-aabeepoo0
+aabeepooo
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'beep\tboop' | pad --len 9 --lpad a --rpad o --split '\t'
+aabeepooo
+aaboopooo
 ```
 
 </section>
@@ -262,6 +293,8 @@ aabeepoo0
 <section class="links">
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
 
