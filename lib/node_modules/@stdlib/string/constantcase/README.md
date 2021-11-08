@@ -131,7 +131,6 @@ Options:
 
 <!-- /.notes -->
 
-
 <section class="examples">
 
 ### Examples
