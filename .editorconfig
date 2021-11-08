@@ -45,6 +45,10 @@ indent_style = tab
 indent_style = space
 indent_size = 2
 
+# Set properties for `cli_opts.json` files:
+[cli_opts.json]
+indent_style = tab
+
 # Set properties for TypeScript files:
 [*.ts]
 indent_style = tab
