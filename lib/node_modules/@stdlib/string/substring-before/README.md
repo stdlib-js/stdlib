@@ -120,6 +120,7 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --search string       Search string.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.
 ```
 
 </section>
@@ -129,6 +130,20 @@ Options:
 <!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'foo\nbar\nbaz' | substring-before --search a --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'foo\nbar\nbaz' | substring-before --search a --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
 
 </section>
 
@@ -143,6 +158,22 @@ Options:
 ```bash
 $ substring-before abcdefg --search d
 abc
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n $'beep\nboop' | substring-before --search p
+bee
+boo
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n 'beep\tboop' | substring-before --search p --split '\t'
+bee
+boo
 ```
 
 </section>
@@ -180,6 +211,10 @@ abc
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
 
