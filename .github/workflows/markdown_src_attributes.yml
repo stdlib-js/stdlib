@@ -82,7 +82,7 @@ jobs:
         uses: stdlib-js/check-markdown-src-action@main
         id: results
         with:
-          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
+          exclude: /path/to/
         timeout-minutes: 120
 
       # Log the results:
