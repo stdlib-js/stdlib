@@ -79,7 +79,7 @@ jobs:
 
       # Check for broken links:
       - name: 'Check links'
-        uses: stdlib-js/broken-markdown-url-definitions-action@main
+        uses: stdlib-js/check-markdown-link-definitions-action@main
         id: results
         with:
           exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules

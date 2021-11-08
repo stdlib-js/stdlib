@@ -79,7 +79,7 @@ jobs:
 
       # Check for broken `src` attribute URLs:
       - name: 'Check `src` attribute URLs'
-        uses: stdlib-js/broken-markdown-src-action@main
+        uses: stdlib-js/check-markdown-src-action@main
         id: results
         with:
           exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
