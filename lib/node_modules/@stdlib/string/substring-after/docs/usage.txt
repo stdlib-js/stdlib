@@ -7,3 +7,4 @@ Options:
   -V,    --version             Print the package version.
          --search string       Search string.
          --from-index int      Start index. Default: 0.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

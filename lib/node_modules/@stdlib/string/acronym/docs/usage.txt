@@ -6,3 +6,4 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --stopwords str       Comma-separated list of custom stop words.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

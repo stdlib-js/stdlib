@@ -1,5 +1,6 @@
 {
 	"string": [
+		"split",
 		"stopwords"
 	],
 	"boolean": [

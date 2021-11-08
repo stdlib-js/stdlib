@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: markdown_links
+name: markdown_src_attributes
 
 # Workflow triggers:
 on:
@@ -31,11 +31,11 @@ on:
 # Workflow jobs:
 jobs:
 
-  # Define a job for detecting broken links in Markdown files...
-  markdown_links:
+  # Define a job for detecting broken `src` in Markdown files...
+  markdown_src_attributes:
 
     # Define a display name:
-    name: 'Check links'
+    name: 'Check `src` attribute URLs'
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -77,12 +77,12 @@ jobs:
           touch "${{ env.LOG_FILE_WARNINGS }}"
         timeout-minutes: 2
 
-      # Check for broken links:
-      - name: 'Check links'
-        uses: stdlib-js/check-markdown-link-definitions-action@main
+      # Check for broken `src` attribute URLs:
+      - name: 'Check `src` attribute URLs'
+        uses: stdlib-js/check-markdown-src-action@main
         id: results
         with:
-          exclude: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules
+          exclude: /path/to/
         timeout-minutes: 120
 
       # Log the results:
@@ -133,7 +133,7 @@ jobs:
     runs-on: 'ubuntu-latest'
 
     # Indicate that this job depends on the prior job finishing:
-    needs: markdown_links
+    needs: markdown_src_attributes
 
     # Run this job regardless of the outcome of the prior job:
     if: always()
@@ -150,15 +150,15 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.markdown_links.result}}' >> $GITHUB_ENV
-          if [[ "${{ needs.markdown_links.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_links** workflow succeeded' >> $GITHUB_ENV
+          echo 'NOTIFICATION_STATUS=${{ needs.markdown_src_attributes.result}}' >> $GITHUB_ENV
+          if [[ "${{ needs.markdown_src_attributes.result }}" = "success" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_src_attributes** workflow succeeded' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
-          elif [[ "${{ needs.markdown_links.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_links** workflow failed' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_src_attributes.result }}" = "failure" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_src_attributes** workflow failed' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
-          elif [[ "${{ needs.markdown_links.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_links** workflow was canceled' >> $GITHUB_ENV
+          elif [[ "${{ needs.markdown_src_attributes.result }}" = "cancelled" ]]; then
+            echo 'NOTIFICATION_TEXT=**markdown_src_attributes** workflow was canceled' >> $GITHUB_ENV
             echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
           else
             exit 1

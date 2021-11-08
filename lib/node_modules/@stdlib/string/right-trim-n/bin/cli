@@ -105,6 +105,11 @@ function main() {
 			return cli.error( error );
 		}
 		lines = data.toString().split( opts.split );
+
+		// Remove any trailing separators (e.g., trailing newline)...
+		if ( lines[ lines.length-1 ] === '' ) {
+			lines.pop();
+		}
 		if ( chars ) {
 			for ( i = 0; i < lines.length; i++ ) {
 				console.log( rtrimN( lines[ i ], n, chars ) ); // eslint-disable-line no-console
