@@ -45,7 +45,7 @@ The namespace contains the following:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`special`][@stdlib/math/strided/special]</span><span class="delimiter">: </span><span class="description">standard library strided array special math functions.</span>
+-   <span class="signature">[`special`][@stdlib/math/strided/special]</span><span class="delimiter">: </span><span class="description">strided array special math functions.</span>
 
 </div>
 

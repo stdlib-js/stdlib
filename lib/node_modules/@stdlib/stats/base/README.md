@@ -45,7 +45,7 @@ The namespace contains the following sub-namespaces:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`dists`][@stdlib/stats/base/dists]</span><span class="delimiter">: </span><span class="description">standard library probability distribution modules.</span>
+-   <span class="signature">[`dists`][@stdlib/stats/base/dists]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) probability distribution modules.</span>
 
 </div>
 
