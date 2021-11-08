@@ -46,7 +46,7 @@ interface Namespace {
 	special: typeof special;
 
 	/**
-	* Math iterator tooling.
+	* Math iterator tools.
 	*/
 	tools: typeof tools;
 }

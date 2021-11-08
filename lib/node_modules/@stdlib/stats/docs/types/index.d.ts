@@ -509,7 +509,7 @@ interface Namespace {
 }
 
 /**
-* Statistical functions.
+* Standard library statistical functions.
 */
 declare var ns: Namespace;
 

@@ -40,11 +40,11 @@ interface Namespace {
 	* @param fcns - list of strided array functions
 	* @param types - one-dimensional list of strided array argument data types
 	* @param data - strided array function data (e.g., callbacks)
-	* @param nargs - total number of strided array function interface arguments (including strides and offsets)
+	* @param nargs - total number of strided array function interface arguments (including data types, strides, and offsets)
 	* @param nin - number of input strided arrays
 	* @param nout - number of output strided arrays
 	* @throws first argument must be either a function or an array of functions
-	* @throws second argument must be an array of strings
+	* @throws second argument must be an array-like object
 	* @throws third argument must be an array-like object or `null`
 	* @throws third and first arguments must have the same number of elements
 	* @throws fourth argument must be a positive integer
@@ -68,14 +68,14 @@ interface Namespace {
 	*     abs
 	* ];
 	*
-	* var strided = ns.dispatch( unary, types, data, 7, 1, 1 );
+	* var strided = ns.dispatch( unary, types, data, 9, 1, 1 );
 	*
 	* // ...
 	*
 	* var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 	* var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* strided( x.length, x, 1, 0, y, 1, 0 );
+	* strided( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0 );
 	* // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
 	dispatch: typeof dispatch;

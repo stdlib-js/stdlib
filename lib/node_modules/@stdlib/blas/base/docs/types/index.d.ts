@@ -810,7 +810,7 @@ interface Namespace {
 }
 
 /**
-* "Base" (i.e., lower-level) basic linear algebra subprograms (BLAS).
+* Base (i.e., lower-level) basic linear algebra subprograms (BLAS).
 */
 declare var ns: Namespace;
 
