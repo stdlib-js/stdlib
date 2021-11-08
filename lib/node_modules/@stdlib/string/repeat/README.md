@@ -98,20 +98,50 @@ Options:
 
 <!-- /.usage -->
 
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
+
+    ```bash
+    # Not escaped...
+    $ echo -n $'beep\nboop' | repstr --n 3 --split /\r?\n/
+
+    # Escaped...
+    $ echo -n $'beep\nboop' | repstr --n 3 --split /\\r?\\n/
+    ```
+
+-   The implementation ignores trailing delimiters.
+
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ### Examples
 
 ```bash
-$ repstr beep -n 5
+$ repstr beep --n 5
 beepbeepbeepbeepbeep
 ```
 
 To use as a [standard stream][standard-streams],
 
 ```bash
-$ echo -n 'ab' | repstr -n 3
+$ echo -n $'ab' | repstr --n 3
 ababab
+```
+
+By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
+
+```bash
+$ echo -n $'beep\tboop' | repstr --n 3 --split '\t'
+beepbeepbeep
+boopboopboop
 ```
 
 </section>
@@ -141,6 +171,8 @@ ababab
 <section class="links">
 
 [standard-streams]: https://en.wikipedia.org/wiki/Standard_streams
+
+[mdn-regexp]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 <!-- <related-links> -->
 
