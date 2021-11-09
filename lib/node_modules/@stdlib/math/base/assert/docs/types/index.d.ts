@@ -572,7 +572,7 @@ interface Namespace {
 }
 
 /**
-* Base (i.e., lower-level) math assertion utilities.
+* Base mathematical assertion utilities.
 */
 declare var ns: Namespace;
 

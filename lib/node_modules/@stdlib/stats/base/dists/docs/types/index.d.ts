@@ -244,7 +244,7 @@ interface Namespace {
 }
 
 /**
-* Base (i.e., lower-level) probability distribution modules.
+* Base (i.e., lower-level) probability distributions.
 */
 declare var ns: Namespace;
 
