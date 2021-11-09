@@ -45,7 +45,7 @@ The namespace contains the following:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`base`][@stdlib/blas/ext/base]</span><span class="delimiter">: </span><span class="description">standard library extensions to base basic linear algebra subprograms (BLAS).</span>
+-   <span class="signature">[`base`][@stdlib/blas/ext/base]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) extensions to basic linear algebra subprograms (BLAS).</span>
 
 </div>
 

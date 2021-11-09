@@ -45,10 +45,10 @@ The namespace contains the following sub-namespaces:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`ops`][@stdlib/math/iter/ops]</span><span class="delimiter">: </span><span class="description">standard library math operator iterators.</span>
--   <span class="signature">[`sequences`][@stdlib/math/iter/sequences]</span><span class="delimiter">: </span><span class="description">standard library math iterators for generating sequences.</span>
--   <span class="signature">[`special`][@stdlib/math/iter/special]</span><span class="delimiter">: </span><span class="description">standard library math iterators for special functions.</span>
--   <span class="signature">[`tools`][@stdlib/math/iter/tools]</span><span class="delimiter">: </span><span class="description">standard library math iterator tools.</span>
+-   <span class="signature">[`ops`][@stdlib/math/iter/ops]</span><span class="delimiter">: </span><span class="description">math operator iterators.</span>
+-   <span class="signature">[`sequences`][@stdlib/math/iter/sequences]</span><span class="delimiter">: </span><span class="description">math iterators for generating sequences.</span>
+-   <span class="signature">[`special`][@stdlib/math/iter/special]</span><span class="delimiter">: </span><span class="description">math iterators for special functions.</span>
+-   <span class="signature">[`tools`][@stdlib/math/iter/tools]</span><span class="delimiter">: </span><span class="description">math iterator tools.</span>
 
 </div>
 

@@ -45,11 +45,11 @@ The namespace has the following sub-namespaces:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`assert`][@stdlib/math/base/assert]</span><span class="delimiter">: </span><span class="description">standard library basic mathematical assertion utilities.</span>
--   <span class="signature">[`ops`][@stdlib/math/base/ops]</span><span class="delimiter">: </span><span class="description">standard library base math operators.</span>
--   <span class="signature">[`special`][@stdlib/math/base/special]</span><span class="delimiter">: </span><span class="description">standard library base special math functions.</span>
--   <span class="signature">[`tools`][@stdlib/math/base/tools]</span><span class="delimiter">: </span><span class="description">standard library basic mathematical tools.</span>
--   <span class="signature">[`utils`][@stdlib/math/base/utils]</span><span class="delimiter">: </span><span class="description">standard library basic mathematical utilities.</span>
+-   <span class="signature">[`assert`][@stdlib/math/base/assert]</span><span class="delimiter">: </span><span class="description">base math assertion utilities.</span>
+-   <span class="signature">[`ops`][@stdlib/math/base/ops]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) math operators.</span>
+-   <span class="signature">[`special`][@stdlib/math/base/special]</span><span class="delimiter">: </span><span class="description">base (i.e., lower-level) special math functions.</span>
+-   <span class="signature">[`tools`][@stdlib/math/base/tools]</span><span class="delimiter">: </span><span class="description">base math tools.</span>
+-   <span class="signature">[`utils`][@stdlib/math/base/utils]</span><span class="delimiter">: </span><span class="description">base math utilities.</span>
 
 </div>
 
