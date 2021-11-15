@@ -107,6 +107,7 @@
   },
   "devDependencies": {
     "0x": "^4.10.2",
+    "@kaciras/deasync": "^1.0.1",
     "@types/node": "^13.9.0",
     "ajv": "^5.2.2",
     "browser-pack-flat": "^3.0.0",

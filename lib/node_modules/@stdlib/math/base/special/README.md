@@ -290,7 +290,7 @@ Fast algorithms of various special functions, which trade accuracy for increased
 
 <div class="namespace-toc">
 
--   <span class="signature">[`fast`][@stdlib/math/base/special/fast]</span><span class="delimiter">: </span><span class="description">standard library fast math special functions.</span>
+-   <span class="signature">[`fast`][@stdlib/math/base/special/fast]</span><span class="delimiter">: </span><span class="description">fast math special functions.</span>
 
 </div>
 

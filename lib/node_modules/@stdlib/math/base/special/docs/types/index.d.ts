@@ -2559,7 +2559,7 @@ interface Namespace {
 	fallingFactorial: typeof fallingFactorial;
 
 	/**
-	* Base fast math special functions.
+	* Fast math special functions.
 	*/
 	fast: typeof fast;
 

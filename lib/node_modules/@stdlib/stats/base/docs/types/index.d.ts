@@ -469,7 +469,7 @@ interface Namespace {
 	dcuminabs: typeof dcuminabs;
 
 	/**
-	* Base probability distribution modules.
+	* Base (i.e., lower-level) probability distributions.
 	*/
 	dists: typeof dists;
 
