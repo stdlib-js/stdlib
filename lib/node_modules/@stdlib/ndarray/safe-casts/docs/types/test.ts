@@ -28,16 +28,6 @@ import safeCasts = require( './index' );
 	safeCasts( 'float' ); // $ExpectType any
 }
 
-// The function does not compile if provided a value other than a string...
-{
-	safeCasts( 123 ); // $ExpectError
-	safeCasts( true ); // $ExpectError
-	safeCasts( false ); // $ExpectError
-	safeCasts( null ); // $ExpectError
-	safeCasts( {} ); // $ExpectError
-	safeCasts( ( x: number ): number => x ); // $ExpectError
-}
-
 // The function does not compile if provided more than one argument...
 {
 	safeCasts( 'float32', 123 ); // $ExpectError

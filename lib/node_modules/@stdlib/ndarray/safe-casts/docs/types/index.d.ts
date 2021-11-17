@@ -26,14 +26,14 @@
 * -   If not provided an ndarray data type, the function returns a casting table.
 * -   If provided an unrecognized ndarray data type, the function returns `null`.
 *
-* @param dtype - ndarray data type
+* @param dtype - ndarray data type value
 * @returns list of ndarray data types or null
 *
 * @example
 * var list = safeCasts( 'float32' );
 * // returns [...]
 */
-declare function safeCasts( dtype?: string ): any;
+declare function safeCasts( dtype?: any ): any;
 
 
 // EXPORTS //
