@@ -29,26 +29,6 @@ import promotionRules = require( './index' );
 	promotionRules( 'float32', 'foo' ); // $ExpectType string | number | null
 }
 
-// The function does not compile if provided a first argument that is not a string...
-{
-	promotionRules( 123, 'float64' ); // $ExpectError
-	promotionRules( true, 'float64' ); // $ExpectError
-	promotionRules( false, 'float64' ); // $ExpectError
-	promotionRules( null, 'float64' ); // $ExpectError
-	promotionRules( {}, 'float64' ); // $ExpectError
-	promotionRules( ( x: number ): number => x, 'float64' ); // $ExpectError
-}
-
-// The function does not compile if provided a second argument that is not a string...
-{
-	promotionRules( 'int32', 123 ); // $ExpectError
-	promotionRules( 'int32', true ); // $ExpectError
-	promotionRules( 'int32', false ); // $ExpectError
-	promotionRules( 'int32', null ); // $ExpectError
-	promotionRules( 'int32', {} ); // $ExpectError
-	promotionRules( 'int32', ( x: number ): number => x ); // $ExpectError
-}
-
 // The function does not compile if provided more than one argument...
 {
 	promotionRules( 'float32' ); // $ExpectError
