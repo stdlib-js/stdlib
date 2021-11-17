@@ -1,13 +1,13 @@
 
 {{alias}}( dtype )
-    Returns the C data type associated with a provided data type string.
+    Returns the C data type associated with a provided data type value.
 
     If provided an unknown/unsupported data type, the function returns `null`.
 
     Parameters
     ----------
-    dtype: string
-        Data type.
+    dtype: any
+        Data type value.
 
     Returns
     -------

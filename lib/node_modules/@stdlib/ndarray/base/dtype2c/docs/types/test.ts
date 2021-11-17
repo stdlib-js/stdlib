@@ -27,18 +27,6 @@ import dtype2c = require( './index' );
 	dtype2c( 'generic' ); // $ExpectType string | null
 }
 
-// The function does not compile if provided a value other than a string...
-{
-	dtype2c( true ); // $ExpectError
-	dtype2c( false ); // $ExpectError
-	dtype2c( null ); // $ExpectError
-	dtype2c( undefined ); // $ExpectError
-	dtype2c( 5 ); // $ExpectError
-	dtype2c( [] ); // $ExpectError
-	dtype2c( {} ); // $ExpectError
-	dtype2c( ( x: number ): number => x ); // $ExpectError
-}
-
 // The function does not compile if provided insufficient arguments...
 {
 	dtype2c(); // $ExpectError

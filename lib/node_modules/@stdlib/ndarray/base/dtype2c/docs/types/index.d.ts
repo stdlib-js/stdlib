@@ -19,9 +19,9 @@
 // TypeScript Version: 2.0
 
 /**
-* Returns the C data type associated with a provided data type string.
+* Returns the C data type associated with a provided data type value.
 *
-* @param dtype - data type
+* @param dtype - data type value
 * @returns C data type (or null)
 *
 * @example
@@ -31,7 +31,7 @@
 * out = dtype2c( 'generic' );
 * // returns null
 */
-declare function dtype2c( dtype: string ): string | null;
+declare function dtype2c( dtype: any ): string | null;
 
 
 // EXPORTS //

@@ -20,7 +20,7 @@ limitations under the License.
 
 # dtype2c
 
-> Return the C data type associated with a provided [data type][@stdlib/ndarray/dtypes] string.
+> Return the C data type associated with a provided [data type][@stdlib/ndarray/dtypes] value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var dtype2c = require( '@stdlib/ndarray/base/dtype2c' );
 
 #### dtype2c( dtype )
 
-Returns the C data type associated with a provided [data type][@stdlib/ndarray/dtypes] string.
+Returns the C data type associated with a provided [data type][@stdlib/ndarray/dtypes] value.
 
 ```javascript
 var out = dtype2c( 'float64' );
