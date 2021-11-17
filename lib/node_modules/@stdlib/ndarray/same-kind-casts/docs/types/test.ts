@@ -28,16 +28,6 @@ import sameKindCasts = require( './index' );
 	sameKindCasts( 'float' ); // $ExpectType any
 }
 
-// The function does not compile if provided a value other than a string...
-{
-	sameKindCasts( 123 ); // $ExpectError
-	sameKindCasts( true ); // $ExpectError
-	sameKindCasts( false ); // $ExpectError
-	sameKindCasts( null ); // $ExpectError
-	sameKindCasts( {} ); // $ExpectError
-	sameKindCasts( ( x: number ): number => x ); // $ExpectError
-}
-
 // The function does not compile if provided more than one argument...
 {
 	sameKindCasts( 'float32', 123 ); // $ExpectError
