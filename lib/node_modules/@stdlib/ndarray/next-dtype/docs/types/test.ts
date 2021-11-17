@@ -28,16 +28,6 @@ import nextDataType = require( './index' );
 	nextDataType( 'float' ); // $ExpectType any
 }
 
-// The function does not compile if provided a value other than a string...
-{
-	nextDataType( 123 ); // $ExpectError
-	nextDataType( true ); // $ExpectError
-	nextDataType( false ); // $ExpectError
-	nextDataType( null ); // $ExpectError
-	nextDataType( {} ); // $ExpectError
-	nextDataType( ( x: number ): number => x ); // $ExpectError
-}
-
 // The function does not compile if provided more than one argument...
 {
 	nextDataType( 'float32', 123 ); // $ExpectError

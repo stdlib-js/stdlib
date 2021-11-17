@@ -27,14 +27,14 @@
 * -   If a data type does not have a next larger data type or the next larger type is not supported, the function returns `-1`.
 * -   If provided an unrecognized data type, the function returns `null`.
 *
-* @param dtype - ndarray data type
+* @param dtype - ndarray data type value
 * @returns next larger data type(s) or null
 *
 * @example
 * var dt = nextDataType( 'float32' );
 * // returns 'float64'
 */
-declare function nextDataType( dtype?: string ): any;
+declare function nextDataType( dtype?: any ): any;
 
 
 // EXPORTS //
