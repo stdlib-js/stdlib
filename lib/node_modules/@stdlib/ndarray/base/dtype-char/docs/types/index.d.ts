@@ -29,7 +29,7 @@ interface Table {
 /**
 * Returns the single letter character abbreviation for an underlying array data type.
 *
-* @param dtype - data type
+* @param dtype - data type value
 * @returns single letter character abbreviation
 *
 * @example
@@ -39,7 +39,7 @@ interface Table {
 * ch = dtypeChar( 'generic' );
 * // returns 'o'
 */
-declare function dtypeChar( dtype: string ): string | null;
+declare function dtypeChar( dtype: any ): string | null;
 
 /**
 * Returns an object mapping data type strings to single letter character abbreviations.

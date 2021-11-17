@@ -31,15 +31,3 @@ import dtypeChar = require( './index' );
 	dtypeChar( 'float64' ); // $ExpectType string | null
 	dtypeChar( 'generic' ); // $ExpectType string | null
 }
-
-// The function does not compile if provided a value other than a string...
-{
-	dtypeChar( true ); // $ExpectError
-	dtypeChar( false ); // $ExpectError
-	dtypeChar( null ); // $ExpectError
-	dtypeChar( undefined ); // $ExpectError
-	dtypeChar( 5 ); // $ExpectError
-	dtypeChar( [] ); // $ExpectError
-	dtypeChar( {} ); // $ExpectError
-	dtypeChar( ( x: number ): number => x ); // $ExpectError
-}

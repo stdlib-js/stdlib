@@ -59,7 +59,7 @@ var ch = dtypeChar( 'foobar' );
 // returns null
 ```
 
-If not provided a [data type][@stdlib/ndarray/dtypes] string, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to single letter character abbreviations.
+If not provided a [data type][@stdlib/ndarray/dtypes] value, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to single letter character abbreviations.
 
 ```javascript
 var obj = dtypeChar();
