@@ -31,15 +31,3 @@ import dtypeDesc = require( './index' );
 	dtypeDesc( 'float64' ); // $ExpectType string | null
 	dtypeDesc( 'generic' ); // $ExpectType string | null
 }
-
-// The function does not compile if provided a value other than a string...
-{
-	dtypeDesc( true ); // $ExpectError
-	dtypeDesc( false ); // $ExpectError
-	dtypeDesc( null ); // $ExpectError
-	dtypeDesc( undefined ); // $ExpectError
-	dtypeDesc( 5 ); // $ExpectError
-	dtypeDesc( [] ); // $ExpectError
-	dtypeDesc( {} ); // $ExpectError
-	dtypeDesc( ( x: number ): number => x ); // $ExpectError
-}

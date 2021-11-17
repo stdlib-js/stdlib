@@ -29,7 +29,7 @@ interface Table {
 /**
 * Returns the description for a provided data type.
 *
-* @param dtype - data type
+* @param dtype - data type value
 * @returns data type description
 *
 * @example
@@ -39,7 +39,7 @@ interface Table {
 * desc = dtypeDesc( 'generic' );
 * // returns '...'
 */
-declare function dtypeDesc( dtype: string ): string | null;
+declare function dtypeDesc( dtype: any ): string | null;
 
 /**
 * Returns an object mapping data type strings to descriptions.

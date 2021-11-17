@@ -59,7 +59,7 @@ var desc = dtypeDesc( 'foobar' );
 // returns null
 ```
 
-If not provided a [data type][@stdlib/ndarray/dtypes] string, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to descriptions.
+If not provided a [data type][@stdlib/ndarray/dtypes] value, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to descriptions.
 
 ```javascript
 var obj = dtypeDesc();

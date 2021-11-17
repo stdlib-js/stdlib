@@ -2,15 +2,15 @@
 {{alias}}( [dtype] )
     Returns the description for a specified data type.
 
-    If not provided a string data type, the function returns an object mapping
+    If not provided a data type value, the function returns an object mapping
     data type strings to descriptions.
 
     If provided an unknown/unsupported data type, the function returns `null`.
 
     Parameters
     ----------
-    dtype: string (optional)
-        Data type.
+    dtype: any (optional)
+        Data type value.
 
     Returns
     -------
