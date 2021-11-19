@@ -51,14 +51,26 @@ jobs:
         timeout-minutes: 15
       - name: Upload coverage to Codecov
         id: upload
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2
         with:
           directory: reports/coverage
           flags: unittests
           fail_ci_if_error: true
+      - name: Extract coverage value and assign to output
+        id: extract-coverage
+        run: |
+          coverage=`cat reports/coverage/lcov-report/index.html | grep "fraction" | grep -oP '\d+/\d+' | printf %s "$(cat)" | jq -R -s -c 'split("\n")'`
+          echo "::set-output name=coverage::$coverage"
       - uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
+      - name: Send Webhook with status to stdlib backend
+        uses: distributhor/workflow-webhook@v2
+        env:
+          webhook_url: ${{ secrets.STDLIB_COVERAGE_URL }}
+          webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}
+          data: '${{ steps.extract-coverage.outputs.coverage }}'
+        if: ${{ false }}
