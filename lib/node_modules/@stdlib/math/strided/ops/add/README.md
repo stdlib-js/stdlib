@@ -119,7 +119,7 @@ The function accepts the following additional arguments:
 -   **offsetY**: starting index for `y`.
 -   **offsetZ**: starting index for `z`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to index every other value in `x` starting from the second value and to index the last `N` elements in `y`,
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameters support indexing semantics based on starting indices. For example, to index every other value in `x` starting from the second value and to index the last `N` elements in `y` in reverse order,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
