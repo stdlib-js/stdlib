@@ -60,8 +60,3 @@ jobs:
           steps: ${{ toJson(steps) }}
           channel: '#npm-ci'
         if: failure()
-      - name: Send Webhook wih status to stdlib dashboard
-        uses: joelwmale/webhook-action@master
-        with:
-          url: ${{ secrets.STDLIB_WEBHOOK_URL }}
-          body: '{ "event": "build", "owner": "stdlib-js", "repository": "${{ github.event.repository.name }}", "status": "${{ job.status }}" }'
