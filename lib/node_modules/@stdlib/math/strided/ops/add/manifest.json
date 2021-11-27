@@ -31,8 +31,8 @@
 			"libraries": [],
 			"libpath": [],
 			"dependencies": [
-				"@stdlib/math/base/special/add",
-				"@stdlib/math/base/special/addf",
+				"@stdlib/math/base/ops/add",
+				"@stdlib/math/base/ops/addf",
 				"@stdlib/strided/base/function-object",
 				"@stdlib/strided/base/binary",
 				"@stdlib/strided/dtypes",
