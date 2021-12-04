@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { ArrayLike, ComplexTypedArray } from '@stdlib/types/array';
+
+/**
+* Real or complex number array.
+*/
+type RealOrComplexArray = ArrayLike<number> | ComplexTypedArray;
 
 /**
 * Interface describing `add`.
@@ -55,7 +60,7 @@ interface Routine {
 	* add( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 );
 	* // z => <Float64Array>[ -1.0, 3.0, 6.0, -1.0, 9.0 ]
 	*/
-	( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, dtypeZ: any, z: ArrayLike<number>, strideZ: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number ): RealOrComplexArray; // tslint:disable-line:max-line-length
 
 	/**
 	* Adds each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
@@ -89,7 +94,7 @@ interface Routine {
 	* add.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 );
 	* // z => <Float64Array>[ -1.0, 3.0, 6.0, -1.0, 9.0 ]
 	*/
-	ndarray( N: number, dtypeX: any, x: ArrayLike<number>, strideX: number, offsetX: number, dtypeY: any, y: ArrayLike<number>, strideY: number, offsetY: number, dtypeZ: any, z: ArrayLike<number>, strideZ: number, offsetZ: number ): ArrayLike<number>; // tslint:disable-line:max-line-length
+	ndarray( N: number, dtypeX: any, x: RealOrComplexArray, strideX: number, offsetX: number, dtypeY: any, y: RealOrComplexArray, strideY: number, offsetY: number, dtypeZ: any, z: RealOrComplexArray, strideZ: number, offsetZ: number ): RealOrComplexArray; // tslint:disable-line:max-line-length
 }
 
 /**

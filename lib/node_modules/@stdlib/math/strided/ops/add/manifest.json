@@ -33,7 +33,9 @@
 			"dependencies": [
 				"@stdlib/math/base/ops/add",
 				"@stdlib/math/base/ops/addf",
-				"@stdlib/strided/base/function-object",
+				"@stdlib/math/base/ops/cadd",
+        "@stdlib/math/base/ops/caddf",
+        "@stdlib/strided/base/function-object",
 				"@stdlib/strided/base/binary",
 				"@stdlib/strided/dtypes",
 				"@stdlib/strided/napi/binary"

@@ -20,6 +20,8 @@
 
 #include "stdlib/math/base/ops/{{FCN_BASENAME}}.h"
 #include "stdlib/math/base/ops/{{FCN_BASENAME}}f.h"
+#include "stdlib/math/base/ops/c{{FCN_BASENAME}}.h"
+#include "stdlib/math/base/ops/c{{FCN_BASENAME}}f.h"
 #include "stdlib/strided/dtypes.h"
 #include "stdlib/strided/base/function_object.h"
 #include "stdlib/strided/base/binary.h"
