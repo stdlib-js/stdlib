@@ -29,6 +29,6 @@ int main() {
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
 		y = stdlib_base_cceilf( v );
-		printf( "cceilf(%f + %f) = %f + %f\n", crealf( v ), cimagf( v ), crealf( y ), cimagf( y ) );
+		printf( "cceilf(%f + %fi) = %f + %f\n", crealf( v ), cimagf( v ), crealf( y ), cimagf( y ) );
 	}
 }

@@ -24,7 +24,7 @@
 * Rounds a single-precision complex floating-point number toward positive infinity.
 *
 * @param z       number
-* @return        input value
+* @return        result
 *
 * @example
 * float complex y = stdlib_base_cceilf( 3.5f-2.5f*I );

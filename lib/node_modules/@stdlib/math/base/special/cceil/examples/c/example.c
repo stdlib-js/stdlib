@@ -30,6 +30,6 @@ int main() {
 	for ( i = 0; i < 4; i++ ) {
 		v = x[ i ];
 		y = stdlib_base_cceil( v );
-		printf( "cceil(%lf + %lf) = %lf + %lf\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+		printf( "cceil(%lf + %lfi) = %lf + %lfi\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
 	}
 }

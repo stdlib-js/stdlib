@@ -24,7 +24,7 @@
 * Rounds a double-precision complex floating-point number toward positive infinity.
 *
 * @param z       number
-* @return        input value
+* @return        result
 *
 * @example
 * double complex y = stdlib_base_cceil( 3.5-2.5*I );
