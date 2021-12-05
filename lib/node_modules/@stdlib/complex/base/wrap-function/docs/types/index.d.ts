@@ -175,7 +175,7 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * @param fcn - nullary function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example
@@ -214,7 +214,7 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 * @param fcn - function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example
@@ -249,7 +249,7 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * @param fcn - function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example
@@ -284,7 +284,7 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * @param fcn - function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example
@@ -324,7 +324,7 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * @param fcn - function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example
@@ -364,7 +364,7 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * @param fcn - function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example
@@ -404,7 +404,7 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * @param fcn - function to wrap
 * @param nargs - number of arguments
 * @param ctor - complex number constructor
-* @throws {TypeError} second argument must be a nonnegative integer
+* @throws second argument must be a nonnegative integer
 * @returns wrapped function
 *
 * @example

@@ -46,7 +46,7 @@ interface Options {
 * @param dtypes3 - list of supported data types for the output
 * @param options - options
 * @param options.enums - boolean flag indicating whether to return signatures as a list of enumeration constants
-* @throws {TypeError} must provide recognized data types
+* @throws must provide recognized data types
 * @returns strided array containing binary interface signatures
 *
 * @example
