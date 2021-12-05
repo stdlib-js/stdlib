@@ -44,10 +44,10 @@ interface Routine {
 	* @param dtypeZ - `z` data type
 	* @param z - destination array
 	* @param strideZ - `z` stride length
-	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {RangeError} ninth argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
+	* @throws third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws ninth argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `z`
 	*
 	* @example
@@ -78,10 +78,10 @@ interface Routine {
 	* @param z - destination array
 	* @param strideZ - `z` stride length
 	* @param offsetZ - starting index for `z`
-	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {RangeError} seventh argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {RangeError} eleventh argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
+	* @throws third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws seventh argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws eleventh argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `z`
 	*
 	* @example
@@ -110,10 +110,10 @@ interface Routine {
 * @param dtypeZ - `z` data type
 * @param z - destination array
 * @param strideZ - `z` stride length
-* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
-* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
-* @throws {RangeError} ninth argument has insufficient elements based on the associated stride and the number of indexed elements
-* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
+* @throws third argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws ninth argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws unable to resolve a strided array function supporting the provided array argument data types
 * @returns `z`
 *
 * @example
