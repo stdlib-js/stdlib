@@ -36,8 +36,8 @@ type Unary = ( value: any ) => any;
 *
 * @param arrays - array-like object containing one input ndarray and one output ndarray
 * @param fcn - unary callback
-* @throws {Error} arrays must have the same number of dimensions
-* @throws {Error} arrays must have the same shape
+* @throws arrays must have the same number of dimensions
+* @throws arrays must have the same shape
 *
 * @example
 * var Float64Array = require( `@stdlib/array/float64` );
