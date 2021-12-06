@@ -38,7 +38,7 @@ limitations under the License.
 var mul = require( '@stdlib/math/strided/ops/mul' );
 ```
 
-#### mul( N, dtypeX, x, strideX, dtypeY, y, strideY, z, strideZ )
+#### mul( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
 
 Multiplies each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
 
@@ -98,7 +98,7 @@ mul( 3, 'float64', x1, -2, 'float64', y1, 1, 'float64', z1, 1 );
 // z0 => <Float64Array>[ 0.0, 0.0, 0.0, -25.0, 6.0, 0.0 ]
 ```
 
-#### mul.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, z, strideZ, offsetZ )
+#### mul.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, dtypeZ, z, strideZ, offsetZ )
 
 Multiplies each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
 

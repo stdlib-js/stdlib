@@ -38,7 +38,7 @@ limitations under the License.
 var add = require( '@stdlib/math/strided/ops/add' );
 ```
 
-#### add( N, dtypeX, x, strideX, dtypeY, y, strideY, z, strideZ )
+#### add( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
 
 Adds each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z`.
 
@@ -98,7 +98,7 @@ add( 3, 'float64', x1, -2, 'float64', y1, 1, 'float64', z1, 1 );
 // z0 => <Float64Array>[ 0.0, 0.0, 4.0, 0.0, 7.0, 0.0 ]
 ```
 
-#### add.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, z, strideZ, offsetZ )
+#### add.ndarray( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, dtypeZ, z, strideZ, offsetZ )
 
 Adds each element in a strided array `x` to a corresponding element in a strided array `y` and assigns the results to elements in a strided array `z` using alternative indexing semantics.
 
