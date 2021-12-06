@@ -212,14 +212,14 @@ const sigs = [
 	callbacks( obj5, sigs ); // $ExpectError
 }
 
-// The compiler throws an error if provided a second argument which is an array-like object...
+// The compiler throws an error if provided a second argument which is not an array-like object...
 {
-	callbacks( 10, sigs ); // $ExpectError
-	callbacks( true, sigs ); // $ExpectError
-	callbacks( false, sigs ); // $ExpectError
-	callbacks( null, sigs ); // $ExpectError
-	callbacks( undefined, sigs ); // $ExpectError
-	callbacks( {}, sigs ); // $ExpectError
+	callbacks( table, 10 ); // $ExpectError
+	callbacks( table, true ); // $ExpectError
+	callbacks( table, false ); // $ExpectError
+	callbacks( table, null ); // $ExpectError
+	callbacks( table, undefined ); // $ExpectError
+	callbacks( table, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
