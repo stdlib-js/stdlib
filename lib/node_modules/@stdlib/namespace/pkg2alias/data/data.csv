@@ -716,6 +716,7 @@
 "@stdlib/math/base/special/minmaxabs",base.minmaxabs
 "@stdlib/math/base/special/modf",base.modf
 "@stdlib/math/base/ops/mul",base.mul
+"@stdlib/math/base/ops/mulf",base.mulf
 "@stdlib/ndarray/base/ctor",base.ndarray
 "@stdlib/ndarray/base/unary",base.ndarrayUnary
 "@stdlib/math/base/special/negafibonacci",base.negafibonacci

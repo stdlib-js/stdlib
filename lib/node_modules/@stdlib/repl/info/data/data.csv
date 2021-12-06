@@ -114,6 +114,7 @@ base.cinv,"\nbase.cinv( [out:Array|TypedArray|Object,] re:number, im:number )\n 
 base.clamp,"\nbase.clamp( v:number, min:number, max:number )\n    Restricts a double-precision floating-point number to a specified range.\n"
 base.clampf,"\nbase.clampf( v:number, min:number, max:number )\n    Restricts a single-precision floating-point number to a specified range.\n"
 base.cmul,"\nbase.cmul( z1:Complex128, z2:Complex128 )\n    Multiplies two double-precision complex floating-point numbers.\n"
+base.cmulf,"\nbase.cmulf( z1:Complex64, z2:Complex64 )\n    Multiplies two single-precision complex floating-point numbers.\n"
 base.cneg,"\nbase.cneg( [out:Array|TypedArray|Object,] re:number, im:number )\n    Negates a complex number.\n"
 base.continuedFraction,"\nbase.continuedFraction( generator:Function[, options:Object] )\n    Evaluates the continued fraction approximation for the supplied series\n    generator using the modified Lentz algorithm.\n"
 base.copysign,"\nbase.copysign( x:number, y:number )\n    Returns a double-precision floating-point number with the magnitude of `x`\n    and the sign of `y`.\n"
