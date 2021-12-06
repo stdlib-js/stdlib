@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Multiples two double-precision complex floating-point numbers.
+* Multiplies two double-precision complex floating-point numbers.
 */
 double complex stdlib_base_cmul( const double complex z1, const double complex z2 );
 

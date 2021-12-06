@@ -38,7 +38,7 @@ var cmul = require( '@stdlib/math/base/ops/cmul' );
 
 #### cmul( z1, z2 )
 
-Multiples two double-precision complex floating-point numbers.
+Multiplies two double-precision complex floating-point numbers.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64' );

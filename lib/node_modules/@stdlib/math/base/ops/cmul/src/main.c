@@ -20,7 +20,7 @@
 #include <complex.h>
 
 /**
-* Multiples two double-precision complex floating-point numbers.
+* Multiplies two double-precision complex floating-point numbers.
 *
 * @param z1       input value
 * @param z2       input value
