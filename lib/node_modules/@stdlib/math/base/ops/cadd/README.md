@@ -136,7 +136,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] double complex` input value.
 
 ```c
-double complex stdlib_base_cadd( const double complex z, const double complex z );
+double complex stdlib_base_cadd( const double complex z1, const double complex z2 );
 ```
 
 </section>

@@ -22,10 +22,13 @@
 /**
 * Adds two double-precision complex floating-point numbers.
 *
-* @param z1       number
+* @param z1       input value
+* @param z2       input value
 * @return         result
 *
 * @example
+* #include <complex.h>
+*
 * double complex z = 3.5 - 2.5*I;
 *
 * double complex out = stdlib_base_cadd( z, z );

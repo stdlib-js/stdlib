@@ -136,7 +136,7 @@ The function accepts the following arguments:
 -   **z2**: `[in] float complex` input value.
 
 ```c
-float complex stdlib_base_caddf( const float complex z, const float complex z );
+float complex stdlib_base_caddf( const float complex z1, const float complex z2 );
 ```
 
 </section>
