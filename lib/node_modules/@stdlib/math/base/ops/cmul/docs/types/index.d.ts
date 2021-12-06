@@ -20,40 +20,36 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { ComplexLike } from '@stdlib/types/object';
 
 /**
-* Multiplies two complex numbers.
+* Multiplies two double-precision complex floating-point numbers.
 *
-* @param out - output array
-* @param re1 - real component
-* @param im1 - imaginary component
-* @param re2 - real component
-* @param im2 - imaginary component
-* @returns real and imaginary components
+* @param z1 - complex number
+* @param z2 - complex number
+* @returns result
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var out = new Float64Array( 2 );
-* var v = cmul( out, 5.0, 3.0, -2.0, 1.0 );
-* // returns <Float64Array>[ -13.0, -1.0 ]
-*/
-declare function cmul( out: ArrayLike<number>, re1: number, im1: number, re2: number, im2: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Multiplies two complex numbers.
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* @param re1 - real component
-* @param im1 - imaginary component
-* @param re2 - real component
-* @param im2 - imaginary component
-* @returns real and imaginary components
+* var z1 = new Complex128( 5.0, 3.0 );
+* // returns <Complex128>
 *
-* @example
-var v = cmul( 5.0, 3.0, -2.0, 1.0 );
-// returns [ -13.0, -1.0 ]
+* var z2 = new Complex128( -2.0, 1.0 );
+* // returns <Complex128>
+*
+* var out = cmul( z1, z2 );
+* // returns <Complex128>
+*
+* var re = real( out );
+* // returns -13.0
+*
+* var im = imag( out );
+* // returns -1.0
 */
-declare function cmul( re1: number, im1: number, re2: number, im2: number ): ArrayLike<number>; // tslint-disable-line max-line-length
+declare function cmul( z1: ComplexLike, z2: ComplexLike ): ComplexLike;
 
 
 // EXPORTS //

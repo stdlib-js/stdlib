@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,9 +19,11 @@
 /**
 * Benchmark `cmul`.
 */
+#include "stdlib/math/base/ops/cmul.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <time.h>
 #include <complex.h>
 #include <sys/time.h>
 
@@ -112,9 +114,7 @@ double benchmark() {
 		im = ( 1000.0*rand_double() ) - 500.0;
 		z2 = re + im*I;
 
-		re = ( creal(z1)*creal(z2) ) - ( cimag(z1)*cimag(z2) );
-		im = ( creal(z1)*cimag(z2) ) + ( cimag(z1)*creal(z2) );
-		z3 = re + im*I;
+		z3 = stdlib_base_cmul( z1, z2 );
 		if ( z3 != z3 ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -139,7 +139,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::%s\n", NAME );
+		printf( "# c::native::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );

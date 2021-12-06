@@ -20,7 +20,7 @@ import BenchmarkTools
 using Printf
 
 # Benchmark variables:
-name = "multiply";
+name = "cmul";
 repeats = 3;
 
 """
