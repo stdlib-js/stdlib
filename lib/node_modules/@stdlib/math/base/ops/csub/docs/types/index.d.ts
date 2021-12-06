@@ -20,43 +20,36 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { ComplexLike } from '@stdlib/types/object';
 
 /**
-* Subtracts two complex numbers.
+* Subtracts two double-precision complex floating-point numbers.
 *
-* @param out - output array
-* @param re1 - real component
-* @param im1 - imaginary component
-* @param re2 - real component
-* @param im2 - imaginary component
-* @returns real and imaginary components
+* @param z1 - complex number
+* @param z2 - complex number
+* @returns result
 *
 * @example
-* var out = new Array( 2 );
+* var Complex128 = require( `@stdlib/complex/float64` );
+* var real = require( `@stdlib/complex/real` );
+* var imag = require( `@stdlib/complex/imag` );
 *
-* var v = csub( out, 5.0, 3.0, -2.0, 1.0 );
-* // returns [ 7.0, 2.0 ]
+* var z1 = new Complex128( 5.0, 3.0 );
+* // returns <Complex128>
 *
-* var bool = ( v === out );
-* // returns true
+* var z2 = new Complex128( -2.0, 1.0 );
+* // returns <Complex128>
+*
+* var out = csub( z1, z2 );
+* // returns <Complex128>
+*
+* var re = real( out );
+* // returns 7.0
+*
+* var im = imag( out );
+* // returns 2.0
 */
-declare function csub( out: ArrayLike<number>, re1: number, im1: number, re2: number, im2: number ): ArrayLike<number>; // tslint-disable-line max-line-length
-
-/**
-* Subtracts two complex numbers.
-*
-* @param re1 - real component
-* @param im1 - imaginary component
-* @param re2 - real component
-* @param im2 - imaginary component
-* @returns real and imaginary components
-*
-* @example
-var v = csub( 5.0, 3.0, -2.0, 1.0 );
-// returns [ 7.0, 2.0 ]
-*/
-declare function csub( re1: number, im1: number, re2: number, im2: number ): ArrayLike<number>; // tslint-disable-line max-line-length
+declare function csub( z1: ComplexLike, z2: ComplexLike ): ComplexLike;
 
 
 // EXPORTS //

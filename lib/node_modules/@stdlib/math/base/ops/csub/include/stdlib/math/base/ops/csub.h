@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,22 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_OPS_CSUB_H
+#define STDLIB_MATH_BASE_OPS_CSUB_H
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var csub = require( './../lib' );
+#include <complex.h>
 
-var rand;
-var z1;
-var z2;
-var z3;
-var i;
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-rand = discreteUniform( -50, 50 );
-for ( i = 0; i < 100; i++ ) {
-	z1 = new Complex128( rand(), rand() );
-	z2 = new Complex128( rand(), rand() );
-	z3 = csub( z1, z2 );
-	console.log( '(%s) - (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
+/**
+* Subtracts two double-precision complex floating-point numbers.
+*/
+double complex stdlib_base_csub( const double complex z1, const double complex z2 );
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_MATH_BASE_OPS_CSUB_H

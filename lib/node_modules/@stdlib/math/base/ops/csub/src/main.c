@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,22 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/ops/csub.h"
+#include <complex.h>
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var csub = require( './../lib' );
-
-var rand;
-var z1;
-var z2;
-var z3;
-var i;
-
-rand = discreteUniform( -50, 50 );
-for ( i = 0; i < 100; i++ ) {
-	z1 = new Complex128( rand(), rand() );
-	z2 = new Complex128( rand(), rand() );
-	z3 = csub( z1, z2 );
-	console.log( '(%s) - (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
+/**
+* Subtracts two double-precision complex floating-point numbers.
+*
+* @param z1       input value
+* @param z2       input value
+* @return         result
+*
+* @example
+* #include <complex.h>
+*
+* double complex z1 = 5.0 + 3.0*I;
+* double complex z2 = -2.0 + 1.0*I;
+*
+* double complex out = stdlib_base_csub( z1, z2 );
+* // returns 7.0+2.0*I
+*/
+double complex stdlib_base_csub( const double complex z1, const double complex z2 ) {
+	return z1 - z2;
 }
