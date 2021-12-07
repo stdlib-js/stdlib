@@ -20,7 +20,7 @@ import BenchmarkTools
 using Printf
 
 # Benchmark variables:
-name = "abs2";
+name = "cabs2";
 repeats = 3;
 
 """

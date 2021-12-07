@@ -117,7 +117,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_cabs( z )
 
-Computes an [absolute value][absolute-value] of a double-precision complex floating-point number.
+Computes the [absolute value][absolute-value] of a double-precision complex floating-point number.
 
 ```c
 #include <complex.h>
