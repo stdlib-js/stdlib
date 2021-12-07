@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/cabs.h"
+#include <stdio.h>
+#include <complex.h>
 
-var Complex128 = require( '@stdlib/complex/float64' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var cabs = require( './../lib' );
+int main() {
+	// cppcheck-suppress nanInArithmeticExpression
+	double complex x[] = { 3.14+1.0*I, -3.14-1.0*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
 
-// Create a PRNG to generate uniformly distributed pseudorandom integers:
-var rand = discreteUniform( -50, 50 );
-
-// Compute the absolute value for a set of random numbers...
-var z;
-var i;
-for ( i = 0; i < 100; i++ ) {
-	z = new Complex128( rand(), rand() );
-	console.log( 'cabs(%s) = %d', z.toString(), cabs( z ) );
+	double complex v;
+	double y;
+	int i;
+	for ( i = 0; i < 4; i++ ) {
+		v = x[ i ];
+		y = stdlib_base_cabs( v );
+		printf( "f(%lf + %lf) = %lf\n", creal( v ), cimag( v ), y );
+	}
 }

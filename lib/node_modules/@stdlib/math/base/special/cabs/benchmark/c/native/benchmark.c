@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,10 +19,12 @@
 /**
 * Benchmark `cabs`.
 */
+#include "stdlib/math/base/special/cabs.h"
+#include <complex.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <complex.h>
+#include <time.h>
 #include <sys/time.h>
 
 #define NAME "cabs"
@@ -105,7 +107,7 @@ double benchmark() {
 		re = ( 1000.0*rand_double() ) - 500.0;
 		im = ( 1000.0*rand_double() ) - 500.0;
 		z = re + im*I;
-		y = cabs( z );
+		y = stdlib_base_cabs( z );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -130,7 +132,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::%s\n", NAME );
+		printf( "# c::native::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );
