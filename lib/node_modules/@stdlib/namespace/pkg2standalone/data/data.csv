@@ -79,6 +79,7 @@
 "@stdlib/math/base/special/boxcoxinv","@stdlib/math-base-special-boxcoxinv"
 "@stdlib/math/base/special/cabs","@stdlib/math-base-special-cabs"
 "@stdlib/math/base/special/cabs2","@stdlib/math-base-special-cabs2"
+"@stdlib/math/base/special/cabs2f","@stdlib/math-base-special-cabs2f"
 "@stdlib/math/base/special/cabsf","@stdlib/math-base-special-cabsf"
 "@stdlib/math/base/ops/cadd","@stdlib/math-base-ops-cadd"
 "@stdlib/math/base/ops/caddf","@stdlib/math-base-ops-caddf"

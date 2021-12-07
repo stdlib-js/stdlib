@@ -88,6 +88,7 @@ base.boxcox1pinv,"var v = base.boxcox1pinv( 1.0, 2.5 )\nv = base.boxcox1pinv( 4.
 base.boxcoxinv,"var v = base.boxcoxinv( 1.0, 2.5 )\nv = base.boxcoxinv( 4.0, 2.5 )\nv = base.boxcoxinv( 10.0, 2.5 )\nv = base.boxcoxinv( 2.0, 0.0 )\nv = base.boxcoxinv( -1.0, 2.5 )\nv = base.boxcoxinv( 0.0, -1.0 )\nv = base.boxcoxinv( 1.0, NaN )\nv = base.boxcoxinv( NaN, 3.1 )\n"
 base.cabs,"var y = base.cabs( new Complex128( 5.0, 3.0 ) )\n"
 base.cabs2,"var y = base.cabs2( new Complex128( 5.0, 3.0 ) )\n"
+base.cabsf,"var y = base.cabsf( new Complex64( 5.0, 3.0 ) )\n"
 base.cadd,"var z = new Complex128( 5.0, 3.0 )\nvar out = base.cadd( z, z )\nvar re = real( out )\nvar im = imag( out )\n"
 base.caddf,"var z = new Complex64( 5.0, 3.0 )\nvar out = base.caddf( z, z )\nvar re = real( out )\nvar im = imag( out )\n"
 base.cbrt,"var y = base.cbrt( 64.0 )\ny = base.cbrt( 27.0 )\ny = base.cbrt( 0.0 )\ny = base.cbrt( -0.0 )\ny = base.cbrt( -9.0 )\ny = base.cbrt( NaN )\n"

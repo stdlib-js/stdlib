@@ -79,6 +79,7 @@ base.boxcox1pinv
 base.boxcoxinv
 base.cabs
 base.cabs2
+base.cabs2f
 base.cabsf
 base.cadd
 base.caddf

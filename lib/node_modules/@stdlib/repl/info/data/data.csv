@@ -88,6 +88,7 @@ base.boxcox1pinv,"\nbase.boxcox1pinv( y:number, lambda:number )\n    Computes th
 base.boxcoxinv,"\nbase.boxcoxinv( y:number, lambda:number )\n    Computes the inverse of a one-parameter Box-Cox transformation.\n"
 base.cabs,"\nbase.cabs( z:Complex128 )\n    Computes the absolute value of a double-precision complex floating-point\n    number.\n"
 base.cabs2,"\nbase.cabs2( z:Complex128 )\n    Computes the squared absolute value of a double-precision complex floating-\n    point number.\n"
+base.cabsf,"\nbase.cabsf( z:Complex64 )\n    Computes the absolute value of a single-precision complex floating-point\n    number.\n"
 base.cadd,"\nbase.cadd( z1:Complex128, z2:Complex128 )\n    Adds two double-precision complex floating-point numbers.\n"
 base.caddf,"\nbase.caddf( z1:Complex64, z2:Complex64 )\n    Adds two single-precision complex floating-point numbers.\n"
 base.cbrt,"\nbase.cbrt( x:number )\n    Computes the cube root of a double-precision floating-point number.\n"
