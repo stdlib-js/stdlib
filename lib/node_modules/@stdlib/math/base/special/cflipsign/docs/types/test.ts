@@ -42,7 +42,7 @@ import cflipsign = require( './index' );
 	cflipsign( ( x: number ): number => x, 55.0 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a number...
+// The compiler throws an error if the function is provided a second argument which is not a number...
 {
 	const z = new Complex128( 1.0, 2.0 );
 
