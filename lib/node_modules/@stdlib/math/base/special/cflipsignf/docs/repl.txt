@@ -5,7 +5,7 @@
 
     Parameters
     ----------
-    z: Complex
+    z: Complex64
         Complex number.
 
     y: number
@@ -13,7 +13,7 @@
 
     Returns
     -------
-    out: Complex
+    out: Complex64
         Result.
 
     Examples

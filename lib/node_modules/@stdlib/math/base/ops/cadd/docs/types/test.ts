@@ -26,7 +26,7 @@ import cadd = require( './index' );
 {
 	const z = new Complex128( 1.0, 1.0 );
 
-	cadd( z, z ); // $ExpectType ComplexLike
+	cadd( z, z ); // $ExpectType Complex128
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a complex number...

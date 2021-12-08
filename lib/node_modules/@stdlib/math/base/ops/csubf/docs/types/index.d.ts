@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex64 } from '@stdlib/types/object';
 
 /**
 * Subtracts two single-precision complex floating-point numbers.
@@ -49,7 +49,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var im = imag( out );
 * // returns 2.0
 */
-declare function csubf( z1: ComplexLike, z2: ComplexLike ): ComplexLike;
+declare function csubf( z1: Complex64, z2: Complex64 ): Complex64;
 
 
 // EXPORTS //

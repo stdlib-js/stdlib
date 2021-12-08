@@ -26,7 +26,7 @@ import cmulf = require( './index' );
 {
 	const z = new Complex64( 1.0, 1.0 );
 
-	cmulf( z, z ); // $ExpectType ComplexLike
+	cmulf( z, z ); // $ExpectType Complex64
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a complex number...

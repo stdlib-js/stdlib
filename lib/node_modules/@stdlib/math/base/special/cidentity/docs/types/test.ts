@@ -24,7 +24,7 @@ import cidentity = require( './index' );
 
 // The function returns a complex number...
 {
-	cidentity( new Complex128( 1.0, 2.0 ) ); // $ExpectType ComplexLike
+	cidentity( new Complex128( 1.0, 2.0 ) ); // $ExpectType Complex128
 }
 
 // The compiler throws an error if the function is provided a value other than a complex number...

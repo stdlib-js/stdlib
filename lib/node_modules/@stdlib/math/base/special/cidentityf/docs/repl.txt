@@ -5,12 +5,12 @@
 
     Parameters
     ----------
-    z: ComplexLike
+    z: Complex64
         Input value.
 
     Returns
     -------
-    v: ComplexLike
+    v: Complex64
         Input value.
 
     Examples

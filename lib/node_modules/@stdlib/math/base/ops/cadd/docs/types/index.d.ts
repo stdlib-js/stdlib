@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
 * Adds two double-precision complex floating-point numbers.
@@ -46,7 +46,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var im = imag( out );
 * // returns 6.0
 */
-declare function cadd( z1: ComplexLike, z2: ComplexLike ): ComplexLike;
+declare function cadd( z1: Complex128, z2: Complex128 ): Complex128;
 
 
 // EXPORTS //

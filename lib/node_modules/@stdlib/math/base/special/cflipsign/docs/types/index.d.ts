@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike, Complex128 } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
 * Returns a double-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
@@ -43,7 +43,7 @@ import { ComplexLike, Complex128 } from '@stdlib/types/object';
 * var im = imag( v );
 * // returns -5.5
 */
-declare function cflipsign( z: ComplexLike, y: number ): Complex128;
+declare function cflipsign( z: Complex128, y: number ): Complex128;
 
 
 // EXPORTS //

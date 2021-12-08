@@ -26,7 +26,7 @@ import csub = require( './index' );
 {
 	const z = new Complex128( 1.0, 1.0 );
 
-	csub( z, z ); // $ExpectType ComplexLike
+	csub( z, z ); // $ExpectType Complex128
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a complex number...

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex64 } from '@stdlib/types/object';
 
 /**
 * Computes the squared absolute value of a single-precision complex floating-point number.
@@ -38,7 +38,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var v = cabs2f( new Complex64( 5.0, 3.0 ) );
 * // returns 34.0
 */
-declare function cabs2f( z: ComplexLike ): number;
+declare function cabs2f( z: Complex64 ): number;
 
 
 // EXPORTS //
