@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,20 +16,8 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/flipsign.h"
+#include "stdlib/math/base/napi/binary.h"
 
-var randu = require( '@stdlib/random/base/randu' );
-var flipsign = require( './../lib' );
-
-var x;
-var y;
-var z;
-var i;
-
-// Generate random numbers `x` and `y` and flip the sign of `x` only if `y` is negative...
-for ( i = 0; i < 100; i++ ) {
-	x = (randu()*100.0) - 50.0;
-	y = (randu()*10.0) - 5.0;
-	z = flipsign( x, y );
-	console.log( 'x: %d, y: %d => %d', x, y, z );
-}
+// cppcheck-suppress shadowFunction
+STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_flipsign )

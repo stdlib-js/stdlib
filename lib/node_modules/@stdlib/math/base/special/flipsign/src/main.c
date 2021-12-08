@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,67 +16,41 @@
 * limitations under the License.
 */
 
-'use strict';
-
-// MODULES //
-
-var toWords = require( '@stdlib/number/float64/base/to-words' );
-var getHighWord = require( '@stdlib/number/float64/base/get-high-word' );
-var fromWords = require( '@stdlib/number/float64/base/from-words' );
-
-
-// VARIABLES //
+#include "stdlib/math/base/special/flipsign.h"
+#include "stdlib/number/float64/base/to_words.h"
+#include "stdlib/number/float64/base/get_high_word.h"
+#include "stdlib/number/float64/base/from_words.h"
+#include <stdint.h>
 
 // 10000000000000000000000000000000 => 2147483648 => 0x80000000
-var SIGN_MASK = 0x80000000>>>0; // asm type annotation
-
-// High/low words workspace:
-var WORDS = [ 0, 0 ]; // WARNING: not thread safe
-
-
-// MAIN //
+static const uint32_t SIGN_MASK = 0x80000000;
 
 /**
 * Returns a double-precision floating-point number with the magnitude of `x` and the sign of `x*y`.
 *
-* @param {number} x - number from which to derive a magnitude
-* @param {number} y - number from which to derive a sign
-* @returns {number} a double-precision floating-point number
+* @param x       number from which to derive a magnitude
+* @param y       number from which to derive a sign
+* @return        result
 *
 * @example
-* var z = flipsign( -3.14, 10.0 );
-* // returns -3.14
+* double v = stdlib_base_flipsign( -3.0, 10.0 );
+* // returns -3.0
 *
 * @example
-* var z = flipsign( -3.14, -1.0 );
-* // returns 3.14
-*
-* @example
-* var z = flipsign( 1.0, -0.0 );
-* // returns -1.0
-*
-* @example
-* var z = flipsign( -3.14, -0.0 );
-* // returns 3.14
-*
-* @example
-* var z = flipsign( -0.0, 1.0 );
-* // returns -0.0
-*
-* @example
-* var z = flipsign( 0.0, -1.0 );
-* // returns -0.0
+* double v = stdlib_base_flipsign( -3.0, -1.0 );
+* // returns 3.0
 */
-function flipsign( x, y ) {
-	var hx;
-	var hy;
+double stdlib_base_flipsign( const double x, const double y ) {
+	uint32_t hx;
+	uint32_t lx;
+	uint32_t hy;
+	double z;
 
 	// Split `x` into higher and lower order words:
-	toWords( WORDS, x );
-	hx = WORDS[ 0 ];
+	stdlib_base_float64_to_words( x, &hx, &lx );
 
 	// Extract the higher order word from `y`:
-	hy = getHighWord( y );
+	stdlib_base_float64_get_high_word( y, &hy );
 
 	// Leave only the sign bit of `y` turned on (if on):
 	hy &= SIGN_MASK;
@@ -85,10 +59,6 @@ function flipsign( x, y ) {
 	hx ^= hy; // 1^1=0 (flipped), 0^1=1 (flipped), 1^0=1 (unchanged), 0^0=0 (unchanged)
 
 	// Return a new value having the same magnitude as `x`, but with the sign of `x*y`:
-	return fromWords( hx, WORDS[ 1 ] );
+	stdlib_base_float64_from_words( hx, lx, &z );
+	return z;
 }
-
-
-// EXPORTS //
-
-module.exports = flipsign;

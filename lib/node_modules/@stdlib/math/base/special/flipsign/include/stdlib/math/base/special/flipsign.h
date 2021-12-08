@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,20 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+#ifndef STDLIB_MATH_BASE_SPECIAL_FLIPSIGN_H
+#define STDLIB_MATH_BASE_SPECIAL_FLIPSIGN_H
 
-var randu = require( '@stdlib/random/base/randu' );
-var flipsign = require( './../lib' );
+/*
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
+*/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-var x;
-var y;
-var z;
-var i;
+/**
+* Returns a double-precision floating-point number with the magnitude of `x` and the sign of `x*y`.
+*/
+double stdlib_base_flipsign( const double x, const double y );
 
-// Generate random numbers `x` and `y` and flip the sign of `x` only if `y` is negative...
-for ( i = 0; i < 100; i++ ) {
-	x = (randu()*100.0) - 50.0;
-	y = (randu()*10.0) - 5.0;
-	z = flipsign( x, y );
-	console.log( 'x: %d, y: %d => %d', x, y, z );
+#ifdef __cplusplus
 }
+#endif
+
+#endif // !STDLIB_MATH_BASE_SPECIAL_FLIPSIGN_H

@@ -39,10 +39,11 @@ function gen( exp, filepath )
 	len = length( exp );
 
 	x = Array{Float64}( undef, len );
-	y = rand( len ) .- 0.5;
+	y = Array{Float64}( undef, len );
 	z = Array{Float64}( undef, len );
 	for i in eachindex(x)
 		x[i] = (rand()-0.5) * 10^exp[i];
+		y[i] = rand() - 0.5;
 		z[i] = flipsign( x[i], y[i] );
 	end
 
