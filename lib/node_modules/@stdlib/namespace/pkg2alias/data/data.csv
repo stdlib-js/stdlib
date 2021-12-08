@@ -616,6 +616,7 @@
 "@stdlib/math/base/special/fibonacci-index",base.fibonacciIndex
 "@stdlib/math/base/tools/fibpoly",base.fibpoly
 "@stdlib/math/base/special/flipsign",base.flipsign
+"@stdlib/math/base/special/flipsignf",base.flipsignf
 "@stdlib/number/float32/base/to-int32",base.float32ToInt32
 "@stdlib/number/float32/base/to-uint32",base.float32ToUint32
 "@stdlib/number/float64/base/to-float32",base.float64ToFloat32

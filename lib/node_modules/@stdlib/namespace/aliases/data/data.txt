@@ -616,6 +616,7 @@ base.fibonacci
 base.fibonacciIndex
 base.fibpoly
 base.flipsign
+base.flipsignf
 base.float32ToInt32
 base.float32ToUint32
 base.float64ToFloat32
