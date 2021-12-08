@@ -99,6 +99,7 @@ base.ceiln
 base.ceilsd
 base.cexp
 base.cflipsign
+base.cflipsignf
 base.cfloor
 base.cfloorn
 base.cidentity

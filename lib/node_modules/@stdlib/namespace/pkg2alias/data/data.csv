@@ -99,6 +99,7 @@
 "@stdlib/math/base/special/ceilsd",base.ceilsd
 "@stdlib/math/base/special/cexp",base.cexp
 "@stdlib/math/base/special/cflipsign",base.cflipsign
+"@stdlib/math/base/special/cflipsignf",base.cflipsignf
 "@stdlib/math/base/special/cfloor",base.cfloor
 "@stdlib/math/base/special/cfloorn",base.cfloorn
 "@stdlib/math/base/special/cidentity",base.cidentity
