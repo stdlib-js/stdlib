@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/math/base/special/cflipsign.h"
+#include <stdio.h>
+#include <complex.h>
 
-var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var Complex128 = require( '@stdlib/complex/float64' );
-var cflipsign = require( './../lib' );
+int main() {
+	// cppcheck-suppress nanInArithmeticExpression
+	double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
 
-var rand = uniform( -50.0, 50.0 );
-
-var z;
-var y;
-var i;
-for ( i = 0; i < 100; i++ ) {
-	z = new Complex128( rand(), rand() );
-	y = rand();
-	console.log( 'cflipsign(%s, %d) = %s', z, y, cflipsign( z, y ) );
+	double complex v;
+	double complex y;
+	int i;
+	for ( i = 0; i < 4; i++ ) {
+		v = x[ i ];
+		y = stdlib_base_cflipsign( v, -1.0 );
+		printf( "cflipsign(%lf + %lfi, %lf) = %lf + %lfi\n", creal( v ), cimag( v ), -1.0, creal( y ), cimag( y ) );
+	}
 }

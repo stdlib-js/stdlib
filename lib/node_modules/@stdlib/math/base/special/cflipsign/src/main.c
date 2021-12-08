@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,36 +16,27 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
-
-/// <reference types="@stdlib/types"/>
-
-import { ComplexLike, Complex128 } from '@stdlib/types/object';
+#include "stdlib/math/base/special/cflipsign.h"
+#include "stdlib/math/base/assert/is_negative_zero.h"
+#include <complex.h>
 
 /**
 * Returns a double-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
 *
-* @param z - input value
-* @param y - number from which to derive the sign
-* @returns result
+* @param z       input value
+* @param y       number from which to derive the sign
+* @return        result
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
-*
-* var v = cflipsign( new Complex128( -4.2, 5.5 ), -55.0 );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 4.2
-*
-* var im = imag( v );
-* // returns -5.5
+* double complex y = stdlib_base_cflipsign( 3.5-2.5*I, -1.0 );
+* // returns -3.5+2.5*I
 */
-declare function cflipsign( z: ComplexLike, y: number ): Complex128;
-
-
-// EXPORTS //
-
-export = cflipsign;
+double complex stdlib_base_cflipsign( const double complex z, const double y ) {
+	double re = creal( z );
+	double im = cimag( z );
+	if ( y < 0 || stdlib_base_is_negative_zero( y ) ) {
+		re = -re;
+		im = -im;
+	}
+	return re + im*I;
+}
