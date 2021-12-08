@@ -60,15 +60,17 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/base/uniform' );
+var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var Complex128 = require( '@stdlib/complex/float64' );
 var cceil = require( '@stdlib/math/base/special/cceil' );
+
+var rand = uniform( -50.0, 50.0 );
 
 var z;
 var i;
 for ( i = 0; i < 100; i++ ) {
-    z = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
-    console.log( 'ceil(%s) = %s', z, cceil( z ) );
+    z = new Complex128( rand(), rand() );
+    console.log( 'cceil(%s) = %s', z, cceil( z ) );
 }
 ```
 
