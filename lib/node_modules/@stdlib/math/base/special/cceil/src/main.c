@@ -23,11 +23,12 @@
 /**
 * Rounds a double-precision complex floating-point number toward positive infinity.
 *
-* @param z       number
+* @param z       input value
 * @return        result
 *
 * @example
 * double complex y = stdlib_base_cceil( 3.5-2.5*I );
+* // returns 4.0-2.0*I
 */
 double complex stdlib_base_cceil( const double complex z ) {
 	return stdlib_base_ceil( creal( z ) ) + stdlib_base_ceil( cimag( z ) )*I;

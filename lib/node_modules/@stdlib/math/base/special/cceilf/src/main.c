@@ -23,11 +23,12 @@
 /**
 * Rounds a single-precision complex floating-point number toward positive infinity.
 *
-* @param z       number
+* @param z       input value
 * @return        result
 *
 * @example
 * float complex y = stdlib_base_cceilf( 3.5f-2.5f*I );
+* // returns 4.0f-2.0f*I
 */
 float complex stdlib_base_cceilf( const float complex z ) {
 	return stdlib_base_ceilf( crealf( z ) ) + stdlib_base_ceilf( cimagf( z ) )*I;
