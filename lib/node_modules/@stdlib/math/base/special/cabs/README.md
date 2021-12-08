@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Absolute Value
+# cabs
 
 > Compute the [absolute value][absolute-value] of a double-precision [complex][@stdlib/complex/float64] floating-point number.
 

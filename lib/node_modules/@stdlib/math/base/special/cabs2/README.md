@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# abs2
+# cabs2
 
 > Compute the squared [absolute value][absolute-value] of a double-precision [complex][@stdlib/complex/float64] floating-point number.
 

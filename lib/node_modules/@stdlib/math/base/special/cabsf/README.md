@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Absolute Value
+# cabsf
 
 > Compute the [absolute value][absolute-value] of a single-precision [complex][@stdlib/complex/float32] floating-point number.
 
