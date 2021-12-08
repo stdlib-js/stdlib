@@ -108,6 +108,7 @@ base.ceiln,"var y = base.ceiln( 3.14159, -2 )\ny = base.ceiln( 3.14159, 0 )\ny =
 base.ceilsd,"var y = base.ceilsd( 3.14159, 5 )\ny = base.ceilsd( 3.14159, 1 )\ny = base.ceilsd( 12368.0, 2 )\ny = base.ceilsd( 0.0313, 2, 2 )\n"
 base.cexp,"var y = base.cexp( 0.0, 0.0 )\ny = base.cexp( 0.0, 1.0 )\nvar out = new Float64Array( 2 );\nvar v = base.cexp( out, 0.0, 1.0 )\nvar bool = ( v === out )\n"
 base.cflipsign,"var v = base.cflipsign( new Complex128( -4.2, 5.5 ), -9.0 )\nvar re = real( v )\nvar im = imag( v )\n"
+base.cflipsignf,"var v = base.cflipsignf( new Complex64( -4.0, 5.0 ), -9.0 )\nvar re = real( v )\nvar im = imag( v )\n"
 base.cfloor,"var out = base.cfloor( 5.5, 3.3 )\nout = new Float64Array( 2 );\nvar v = base.cfloor( out, 5.5, 3.3 )\nvar bool = ( v === out )\n"
 base.cfloorn,"var out = base.cfloorn( 5.555, -3.333, -2 )\nout = new Float64Array( 2 );\nvar v = base.cfloorn( out, 5.555, -3.333, -2 )\nvar bool = ( v === out )\n"
 base.cidentity,"var v = base.cidentity( new Complex128( -1.0, 2.0 ) )\nvar re = real( v )\nvar img = imag( v )\n"

@@ -108,6 +108,7 @@ base.ceiln,"\nbase.ceiln( x:number, n:integer )\n    Rounds a numeric value to t
 base.ceilsd,"\nbase.ceilsd( x:number, n:integer[, b:integer] )\n    Rounds a numeric value to the nearest number toward positive infinity with\n    `n` significant figures.\n"
 base.cexp,"\nbase.cexp( [out:Array|TypedArray|Object,] re:number, im:number )\n    Computes the exponential function of a complex number.\n"
 base.cflipsign,"\nbase.cflipsign( z:Complex, y:number )\n    Returns a double-precision complex floating-point number with the same\n    magnitude as `z` and the sign of `y*z`.\n"
+base.cflipsignf,"\nbase.cflipsignf( z:Complex, y:number )\n    Returns a single-precision complex floating-point number with the same\n    magnitude as `z` and the sign of `y*z`.\n"
 base.cfloor,"\nbase.cfloor( [out:Array|TypedArray|Object,] re:number, im:number )\n    Rounds a complex number toward negative infinity.\n"
 base.cfloorn,"\nbase.cfloorn( [out:Array|TypedArray|Object,] re:number, im:number, n:integer )\n    Rounds a complex number to the nearest multiple of `10^n` toward negative\n    infinity.\n"
 base.cidentity,"\nbase.cidentity( z:ComplexLike )\n    Evaluates the identity function for a double-precision complex floating-\n    point number.\n"

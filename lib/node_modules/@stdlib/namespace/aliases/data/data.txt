@@ -112,6 +112,7 @@ base.cmulf
 base.cneg
 base.continuedFraction
 base.copysign
+base.copysignf
 base.cos
 base.cosh
 base.cosm1

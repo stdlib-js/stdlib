@@ -112,6 +112,7 @@
 "@stdlib/math/base/ops/cneg",base.cneg
 "@stdlib/math/base/tools/continued-fraction",base.continuedFraction
 "@stdlib/math/base/special/copysign",base.copysign
+"@stdlib/math/base/special/copysignf",base.copysignf
 "@stdlib/math/base/special/cos",base.cos
 "@stdlib/math/base/special/cosh",base.cosh
 "@stdlib/math/base/special/cosm1",base.cosm1
