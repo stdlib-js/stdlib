@@ -180,6 +180,91 @@ The function accepts the following arguments:
 
 ```c
 void stdlib_math_base_napi_ff_f( napi_env env, napi_callback_info info, float (*fcn)( float, float ) );
+```de "stdlib/math/base/napi/binary.h"
+```
+
+#### stdlib_math_base_napi_zz_z( env, info, fcn )
+
+Invokes a binary function accepting and returning double-precision complex floating-point numbers.
+
+```c
+#include <node_api.h>
+#include <complex.h>
+
+// ...
+
+static double complex add( const double complex x, const double complex y ) {
+    double re = creal( x ) + creal( y );
+    double im = cimag( x ) + cimag( y );
+    return re + im*I;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_zz_z( env, info, add );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] double complex (*fcn)( double complex, double complex )` binary function.
+
+```c
+void stdlib_math_base_napi_zz_z( napi_env env, napi_callback_info info, double complex (*fcn)( double complex, double complex ) );
+```
+
+#### stdlib_math_base_napi_cc_c( env, info, fcn )
+
+Invokes a binary function accepting and returning single-precision complex floating-point numbers.
+
+```c
+#include <node_api.h>
+#include <complex.h>
+
+// ...
+
+static float complex add( const float complex x, const float complex y ) {
+    float re = crealf( x ) + crealf( y );
+    float im = cimagf( x ) + cimagf( y );
+    return re + im*I;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_cc_c( env, info, add );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] float complex (*fcn)( float complex, float complex )` binary function.
+
+```c
+void stdlib_math_base_napi_cc_c( napi_env env, napi_callback_info info, float complex (*fcn)( float complex, float complex ) );
 ```
 
 #### STDLIB_MATH_BASE_NAPI_MODULE_DD_D( fcn )
@@ -221,6 +306,56 @@ STDLIB_MATH_BASE_NAPI_MODULE_FF_F( addf );
 The macro expects the following arguments:
 
 -   **fcn**: `float (*fcn)( float, float )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_ZZ_Z( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning double-precision complex floating-point numbers.
+
+```c
+#include <complex.h>
+
+static double complex add( const double complex x, const double complex y ) {
+    double re = creal( x ) + creal( y );
+    double im = cimag( x ) + cimag( y );
+    return re + im*I;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_ZZ_Z( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double complex (*fcn)( double complex, double complex )` binary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_CC_C( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a binary function accepting and returning single-precision complex floating-point numbers.
+
+```c
+#include <complex.h>
+
+static float complex add( const float complex x, const float complex y ) {
+    float re = crealf( x ) + crealf( y );
+    float im = cimagf( x ) + cimagf( y );
+    return re + im*I;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_CC_C( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `float complex (*fcn)( float complex, float complex )` binary function.
 
 When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
