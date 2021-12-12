@@ -23,7 +23,7 @@
 import { ComplexLike } from '@stdlib/types/object';
 
 /**
-* Returns the imaginary component of a complex number.
+* Returns the imaginary component of a double-precision complex floating-point number.
 *
 * @param z - complex number
 * @returns imaginary component
