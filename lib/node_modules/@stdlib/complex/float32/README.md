@@ -185,24 +185,197 @@ var Complex64 = require( '@stdlib/complex/float32' );
 var z = new Complex64( 3.0, -2.0 );
 
 console.log( 'type: %s', typeof z );
-// => type: object
+// => 'type: object'
 
 console.log( 'str: %s', z );
-// => str: 3 - 2i
+// => 'str: 3 - 2i'
 
 console.log( 'real: %d', z.re );
-// => real: 3.0
+// => 'real: 3'
 
 console.log( 'imag: %d', z.im );
-// => imag: -2.0
+// => 'imag: -2'
 
 console.log( 'JSON: %s', JSON.stringify( z ) );
-// => JSON: {"type":"Complex64","re":3,"im":-2}
+// => 'JSON: {"type":"Complex64","re":3,"im":-2}'
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/complex/float32.h"
+```
+
+#### stdlib_complex64( real, imag )
+
+Returns a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] float` real component.
+-   **imag**: `[in] float` imaginary component.
+
+```c
+stdlib_complex64_t stdlib_complex64( const float real, const float imag );
+```
+
+#### stdlib_complex64_t
+
+An opaque type definition for a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
+```
+
+#### stdlib_complex64_parts_t
+
+An opaque type definition for a union for accessing the real and imaginary parts of a single-precision complex floating-point number.
+
+```c
+float realf( const stdlib_complex64_t z ) {
+    stdlib_complex64_parts_t v;
+
+    // Assign a single-precision complex floating-point number:
+    v.value = z;
+
+    // Extract the real component:
+    float re = v.parts[ 0 ];
+
+    return re;
+}
+
+// ...
+
+// Create a complex number:
+stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
+
+// ...
+
+// Access the real component:
+float re = realf( z );
+// returns 5.0f
+```
+
+The union has the following members:
+
+-   **value**: `stdlib_complex64_t` single-precision complex floating-point number.
+
+-   **parts**: `float[]` array having the following elements:
+
+    -   **0**: `float` real component.
+    -   **1**: `float` imaginary component.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/complex/float32.h"
+#include <stdint.h>
+#include <stdio.h>
+
+/**
+* Return the real component of a single-precision complex floating-point number.
+*
+* @param z    complex number
+* @return     real component
+*/
+static float real( const stdlib_complex64_t z ) {
+    stdlib_complex64_parts_t v;
+
+    // Assign a single-precision complex floating-point number:
+    v.value = z;
+
+    // Extract the real component:
+    float re = v.parts[ 0 ];
+
+    return re;
+}
+
+/**
+* Return the imaginary component of a single-precision complex floating-point number.
+*
+* @param z    complex number
+* @return     imaginary component
+*/
+static float imag( const stdlib_complex64_t z ) {
+    stdlib_complex64_parts_t v;
+
+    // Assign a single-precision complex floating-point number:
+    v.value = z;
+
+    // Extract the imaginary component:
+    float im = v.parts[ 1 ];
+
+    return im;
+}
+
+int main() {
+    stdlib_complex64_t x[] = {
+        stdlib_complex64( 5.0f, 2.0f ),
+        stdlib_complex64( -2.0f, 1.0f ),
+        stdlib_complex64( 0.0f, -0.0f ),
+        stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+    };
+
+    stdlib_complex64_t v;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        printf( "%f + %fi\n", real( v ), imag( v ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
