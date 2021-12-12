@@ -1,6 +1,7 @@
 
 {{alias}}( z )
-    Returns the real component of a complex number.
+    Returns the real component of a double-precision complex floating-point
+    number.
 
     Parameters
     ----------
