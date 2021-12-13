@@ -1,15 +1,16 @@
 
 {{alias}}( z )
-    Returns the real and imaginary components of a complex number.
+    Returns the real and imaginary components of a double-precision complex
+    floating-point number.
 
     Parameters
     ----------
-    z: Complex
+    z: Complex128
         Complex number.
 
     Returns
     -------
-    out: Float64Array|Float32Array
+    out: Float64Array
         Array containing the real and imaginary components, respectively.
 
     Examples

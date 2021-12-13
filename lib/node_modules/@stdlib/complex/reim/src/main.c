@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,29 +16,31 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
-
-/// <reference types="@stdlib/types"/>
-
-import { Complex128 } from '@stdlib/types/object';
+#include "stdlib/complex/reim.h"
+#include "stdlib/complex/float64.h"
 
 /**
 * Returns the real and imaginary components of a double-precision complex floating-point number.
 *
-* @param z - complex number
-* @returns real and imaginary components
+* @param z     double-precision complex floating-point number
+* @param re    destination for real component
+* @param im    destination for imaginary component
 *
 * @example
-* var Complex128 = require( `@stdlib/complex/float64` );
+* #include "stdlib/complex/float64.h"
 *
-* var z = new Complex128( 5.0, 3.0 );
+* stdlib_complex128_t z = stdlib_complex128( 5.0, 2.0 );
 *
-* var out = reim( z );
-* // returns <Float64Array>[ 5.0, 3.0 ]
+* // ...
+*
+* double re;
+* double im;
+*
+* stdlib_reim( z, &re, &im );
 */
-declare function reim( z: Complex128 ): Float64Array;
-
-
-// EXPORTS //
-
-export = reim;
+void stdlib_reim( const stdlib_complex128_t z, double *re, double *im ) {
+	stdlib_complex128_parts_t v;
+	v.value = z; // cppcheck-suppress unreadVariable
+	*re = v.parts[ 0 ];
+	*im = v.parts[ 1 ];
+}
