@@ -175,7 +175,7 @@ int main() {
         stdlib_complex128( 3.14, 1.5 ),
         stdlib_complex128( -3.14, 1.5 ),
         stdlib_complex128( 0.0, -0.0 ),
-        stdlib_complex128( 0.0/0.0, 0.0/0.0 ) // cppcheck-suppress nanInArithmeticExpression
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 )
     };
 
     stdlib_complex128_t v;
