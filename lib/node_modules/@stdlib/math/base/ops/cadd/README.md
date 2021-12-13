@@ -122,21 +122,28 @@ for ( i = 0; i < 100; i++ ) {
 Adds two double-precision complex floating-point numbers.
 
 ```c
-#include <complex.h>
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/real.h"
+#include "stdlib/complex/imag.h"
 
-double complex z = 2.5 - 1.5*I;
+stdlib_complex128_t z = stdlib_complex128( 3.0, -2.0 );
 
-double complex out = stdlib_base_cadd( z, z );
-// returns 5.0-3.0*I
+stdlib_complex128_t out = stdlib_base_cadd( z, z );
+
+double re = stdlib_real( out );
+// returns 6.0
+
+double im = stdlib_imag( out );
+// returns -4.0
 ```
 
 The function accepts the following arguments:
 
--   **z1**: `[in] double complex` input value.
--   **z2**: `[in] double complex` input value.
+-   **z1**: `[in] stdlib_complex128_t` input value.
+-   **z2**: `[in] stdlib_complex128_t` input value.
 
 ```c
-double complex stdlib_base_cadd( const double complex z1, const double complex z2 );
+stdlib_complex128_t stdlib_base_cadd( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
 ```
 
 </section>
@@ -159,19 +166,31 @@ double complex stdlib_base_cadd( const double complex z1, const double complex z
 
 ```c
 #include "stdlib/math/base/ops/cadd.h"
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main() {
-    double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+    stdlib_complex128_t x[] = {
+        stdlib_complex128( 3.14, 1.5 ),
+        stdlib_complex128( -3.14, 1.5 ),
+        stdlib_complex128( 0.0, -0.0 ),
+        stdlib_complex128( 0.0/0.0, 0.0/0.0 ) // cppcheck-suppress nanInArithmeticExpression
+    };
 
-    double complex v;
-    double complex y;
+    stdlib_complex128_t v;
+    stdlib_complex128_t y;
+    double re;
+    double im;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
+        stdlib_reim( v, &re, &im );
+        printf( "z = %lf + %lfi\n", re, im );
+
         y = stdlib_base_cadd( v, v );
-        printf( "z = %lf + %lfi\ncadd(z, z) = %lf + %lfi\n", creal( v ), cimag( v ), creal( y ), cimag( y ) );
+        stdlib_reim( y, &re, &im );
+        printf( "cadd(z, z) = %lf + %lfi\n", re, im );
     }
 }
 ```

@@ -16,25 +16,7 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_MATH_BASE_OPS_CADD_H
-#define STDLIB_MATH_BASE_OPS_CADD_H
+#include "stdlib/math/base/ops/cadd.h"
+#include "stdlib/math/base/napi/binary.h"
 
-#include "stdlib/complex/float64.h"
-
-/*
-* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
-*/
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-/**
-* Adds two double-precision complex floating-point numbers.
-*/
-stdlib_complex128_t stdlib_base_cadd( const stdlib_complex128_t z1, const stdlib_complex128_t z2 );
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif // !STDLIB_MATH_BASE_OPS_CADD_H
+STDLIB_MATH_BASE_NAPI_MODULE_ZZ_Z( stdlib_base_cadd )
