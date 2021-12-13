@@ -155,8 +155,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* @example
 	* var Complex64 = require( `@stdlib/complex/float32` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var arr = new Complex64Array( 4 );
 	*
@@ -172,10 +172,10 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // Get the last array element:
 	* var z = arr.get( 3 );
 	*
-	* var re = real( z );
+	* var re = realf( z );
 	* // returns 2.0
 	*
-	* var im = imag( z );
+	* var im = imagf( z );
 	* // returns 2.0
 	*/
 	copyWithin( target: number, start: number, end?: number ): Complex64Array;
@@ -265,18 +265,18 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @throws target array lacks sufficient storage to accommodate source values
 	*
 	* @example
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var arr = new Complex64Array( 10 );
 	*
 	* var z = arr.get( 0 );
 	* // returns <Complex64>
 	*
-	* var re = real( z );
+	* var re = realf( z );
 	* // returns 0.0
 	*
-	* var im = imag( z );
+	* var im = imagf( z );
 	* // returns 0.0
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -284,10 +284,10 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* z = arr.get( 0 );
 	* // returns <Complex64>
 	*
-	* re = real( z );
+	* re = realf( z );
 	* // returns 1.0
 	*
-	* im = imag( z );
+	* im = imagf( z );
 	* // returns -1.0
 	*/
 	set( value: ArrayLike<number | ComplexLike> | Complex64Array | ComplexLike, i?: number ): void; // tslint:disable-line:max-line-length
@@ -482,11 +482,11 @@ interface Constructor {
 	*
 	* @example
 	* var Complex64 = require( `@stdlib/complex/float32` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* function clbk( v ) {
-	*     return new Complex64( real(v)*2.0, imag(v)*2.0 );
+	*     return new Complex64( realf(v)*2.0, imagf(v)*2.0 );
 	* }
 	*
 	* var arr = Complex64Array.from( [ new Complex64( 1.0, 1.0 ) ], clbk );
