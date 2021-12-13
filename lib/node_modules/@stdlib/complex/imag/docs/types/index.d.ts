@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
 * Returns the imaginary component of a double-precision complex floating-point number.
@@ -36,7 +36,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var im = imag( z );
 * // returns 3.0
 */
-declare function imag( z: ComplexLike ): number;
+declare function imag( z: Complex128 ): number;
 
 
 // EXPORTS //

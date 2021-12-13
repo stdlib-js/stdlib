@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
 * Returns the real component of a double-precision complex floating-point number.
@@ -36,7 +36,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var re = real( z );
 * // returns 5.0
 */
-declare function real( z: ComplexLike ): number;
+declare function real( z: Complex128 ): number;
 
 
 // EXPORTS //

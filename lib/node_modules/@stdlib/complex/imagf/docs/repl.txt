@@ -5,7 +5,7 @@
 
     Parameters
     ----------
-    z: Complex
+    z: Complex64
         Complex number.
 
     Returns
