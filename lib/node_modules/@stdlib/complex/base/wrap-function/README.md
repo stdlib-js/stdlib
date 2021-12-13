@@ -86,8 +86,8 @@ The function accepts the following arguments:
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
 var caddf = require( '@stdlib/math/base/ops/caddf' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 var wrap = require( '@stdlib/complex/base/wrap-function' );
 
 var f = wrap( caddf, 2, Complex64 );
@@ -97,10 +97,10 @@ var f = wrap( caddf, 2, Complex64 );
 var z = f( 3.0, 4.0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 7.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 0.0
 
 console.log( '%d + %di', re, im );

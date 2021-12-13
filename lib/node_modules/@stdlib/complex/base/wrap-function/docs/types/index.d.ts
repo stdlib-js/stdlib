@@ -180,8 +180,8 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 * var randu = require( `@stdlib/random/base/randu` );
 *
 * function randComplex() {
@@ -195,10 +195,10 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * var z = f();
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns <number>
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns <number>
 */
 declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
@@ -220,8 +220,8 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
 * var cidentityf = require( `@stdlib/math/base/special/cidentityf` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 *
 * var f = wrap( cidentityf, 1, Complex64 );
 *
@@ -230,10 +230,10 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 * var z = f( 3.0 );
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns 3.0
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns 0.0
 */
 declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
@@ -255,8 +255,8 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
 * var cadd = require( `@stdlib/math/base/ops/cadd` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 *
 * var f = wrap( cadd, 2, Complex64 );
 *
@@ -265,10 +265,10 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * var z = f( 3.0, 4.0 );
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns 7.0
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns 0.0
 */
 declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary; // tslint:disable-line:max-line-length
@@ -289,12 +289,12 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z ) {
-*     var re = real( x ) + real( y ) + real( z );
-*     var im = imag( x ) + imag( y ) + imag( z );
+*     var re = realf( x ) + realf( y ) + realf( z );
+*     var im = imagf( x ) + imagf( y ) + imagf( z );
 *     return new Complex64( re, im );
 * }
 *
@@ -305,10 +305,10 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * var z = f( 3.0, 4.0, 5.0 );
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns 12.0
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns 0.0
 */
 declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary; // tslint:disable-line:max-line-length
@@ -329,12 +329,12 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z, w ) {
-*     var re = real( x ) + real( y ) + real( z ) + real( w );
-*     var im = imag( x ) + imag( y ) + imag( z ) + imag( w );
+*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w );
+*     var im = imagf( x ) + imagf( y ) + imagf( z ) + imagf( w );
 *     return new Complex64( re, im );
 * }
 *
@@ -345,10 +345,10 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * var z = f( 3.0, 4.0, 5.0, 6.0 );
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns 18.0
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns 0.0
 */
 declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary; // tslint:disable-line:max-line-length
@@ -369,12 +369,12 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z, w, v ) {
-*     var re = real( x ) + real( y ) + real( z ) + real( w ) + real( v );
-*     var im = imag( x ) + imag( y ) + imag( z ) + imag( w ) + imag( v );
+*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v );
+*     var im = imagf( x ) + imagf( y ) + imagf( z ) + imagf( w ) + imagf( v );
 *     return new Complex64( re, im );
 * }
 *
@@ -385,10 +385,10 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * var z = f( 3.0, 4.0, 5.0, 6.0, 7.0 );
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns 25.0
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns 0.0
 */
 declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary; // tslint:disable-line:max-line-length
@@ -409,12 +409,12 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 *
 * @example
 * var Complex64 = require( `@stdlib/complex/float32` );
-* var real = require( `@stdlib/complex/real` );
-* var imag = require( `@stdlib/complex/imag` );
+* var realf = require( `@stdlib/complex/realf` );
+* var imagf = require( `@stdlib/complex/imagf` );
 *
 * function add( x, y, z, w, v, t ) {
-*     var re = real( x ) + real( y ) + real( z ) + real( w ) + real( v ) + real( t );
-*     var im = imag( x ) + imag( y ) + imag( z ) + imag( w ) + imag( v ) + imag( t );
+*     var re = realf( x ) + realf( y ) + realf( z ) + realf( w ) + realf( v ) + realf( t );
+*     var im = imagf( x ) + imagf( y ) + imagf( z ) + imagf( w ) + imagf( v ) + imagf( t );
 *     return new Complex64( re, im );
 * }
 *
@@ -425,10 +425,10 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * var z = f( 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 );
 * // returns <Complex64>
 *
-* var re = real( z );
+* var re = realf( z );
 * // returns 33.0
 *
-* var im = imag( z );
+* var im = imagf( z );
 * // returns 0.0
 */
 declare function wrap( fcn: Nary, nargs: number, ctor: Constructor ): WrappedNary; // tslint:disable-line:max-line-length
