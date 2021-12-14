@@ -230,23 +230,6 @@ console.log( 'JSON: %s', JSON.stringify( z ) );
 #include "stdlib/complex/float32.h"
 ```
 
-#### stdlib_complex64( real, imag )
-
-Returns a single-precision complex floating-point number.
-
-```c
-stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
-```
-
-The function accepts the following arguments:
-
--   **real**: `[in] float` real component.
--   **imag**: `[in] float` imaginary component.
-
-```c
-stdlib_complex64_t stdlib_complex64( const float real, const float imag );
-```
-
 #### stdlib_complex64_t
 
 An opaque type definition for a single-precision complex floating-point number.
@@ -292,6 +275,136 @@ The union has the following members:
 
     -   **0**: `float` real component.
     -   **1**: `float` imaginary component.
+
+#### stdlib_complex64( real, imag )
+
+Returns a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64( 5.0f, 2.0f );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] float` real component.
+-   **imag**: `[in] float` imaginary component.
+
+```c
+stdlib_complex64_t stdlib_complex64( const float real, const float imag );
+```
+
+#### stdlib_complex64_from_float32( real )
+
+Converts a single-precision floating-point number to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64_from_float32( 5.0f );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] float` real component.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_float32( const float real );
+```
+
+#### stdlib_complex64_from_float64( real )
+
+Converts a double-precision floating-point number to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64_from_float64( 5.0 );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] double` real component.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_float64( const double real );
+```
+
+#### stdlib_complex64_from_complex64( z )
+
+Converts (copies) a single-precision complex floating-point number to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z1 = stdlib_complex64( 5.0f, 3.0f );
+stdlib_complex64_t z2 = stdlib_complex64_from_complex64( z1 );
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] stdlib_complex64_t` single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_complex64( const stdlib_complex64_t z );
+```
+
+#### stdlib_complex64_from_int8( real )
+
+Converts a signed 8-bit integer to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64_from_int8( 5 );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] int8_t` real component.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_int8( const int8_t real );
+```
+
+#### stdlib_complex64_from_uint8( real )
+
+Converts an unsigned 8-bit integer to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64_from_uint8( 5 );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] uint8_t` real component.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_uint8( const uint8_t real );
+```
+
+#### stdlib_complex64_from_int16( real )
+
+Converts a signed 16-bit integer to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64_from_int16( 5 );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] int16_t` real component.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_int16( const int16_t real );
+```
+
+#### stdlib_complex64_from_uint16( real )
+
+Converts an unsigned 16-bit integer to a single-precision complex floating-point number.
+
+```c
+stdlib_complex64_t z = stdlib_complex64_from_uint16( 5 );
+```
+
+The function accepts the following arguments:
+
+-   **real**: `[in] uint16_t` real component.
+
+```c
+stdlib_complex64_t stdlib_complex64_from_uint16( const uint16_t real );
+```
 
 </section>
 
