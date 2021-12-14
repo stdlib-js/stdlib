@@ -32,7 +32,9 @@
 			],
 			"libraries": [],
 			"libpath": [],
-			"dependencies": []
+			"dependencies": [
+        "@stdlib/complex/float32"
+      ]
 		}
 	]
 }
