@@ -21,8 +21,8 @@
 */
 
 #include "stdlib/strided/base/binary/{{SIGNATURE}}.h"
-#include "stdlib/strided/base/binary/macros.h"
-#include <stdint.h>{{INCLUDE_COMPLEX}}
+#include "stdlib/strided/base/binary/macros.h"{{INCLUDES}}
+#include <stdint.h>
 
 /**
 * Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
@@ -33,8 +33,8 @@
 * @param fcn      callback
 *
 * @example
-* #include "stdlib/strided/base/binary/{{SIGNATURE}}.h"
-* #include <stdint.h>{{EXAMPLE_INCLUDE_COMPLEX}}
+* #include "stdlib/strided/base/binary/{{SIGNATURE}}.h"{{EXAMPLE_INCLUDES}}
+* #include <stdint.h>
 *
 * // Create underlying byte arrays:
 * uint8_t x[] = { {{INPUT_ARRAY_BYTES_1}} };
@@ -52,7 +52,7 @@
 *
 * // Define a callback:
 * {{CALLBACK_RETURN_TYPE}} add( {{CALLBACK_PARAM_TYPE_1}} x, {{CALLBACK_PARAM_TYPE_2}} y ) {
-*     return x + y;
+*     {{CALLBACK_BODY}}
 * }
 *
 * // Apply the callback:

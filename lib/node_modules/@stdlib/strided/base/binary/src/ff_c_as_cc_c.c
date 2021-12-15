@@ -22,8 +22,8 @@
 
 #include "stdlib/strided/base/binary/ff_c_as_cc_c.h"
 #include "stdlib/strided/base/binary/macros.h"
+#include "stdlib/complex/float32.h"
 #include <stdint.h>
-#include <complex.h>
 
 /**
 * Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
@@ -35,8 +35,8 @@
 *
 * @example
 * #include "stdlib/strided/base/binary/ff_c_as_cc_c.h"
+* #include "stdlib/complex/float32.h"
 * #include <stdint.h>
-* #include <complex.h>
 *
 * // Create underlying byte arrays:
 * uint8_t x[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -53,15 +53,15 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* float complex add( float complex x, float complex y ) {
-*     return x + y;
+* stdlib_complex64_t add( stdlib_complex64_t x, stdlib_complex64_t y ) {
+*     // ...
 * }
 *
 * // Apply the callback:
 * stdlib_strided_ff_c_as_cc_c( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_ff_c_as_cc_c( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	typedef float complex func_type( const float complex x, const float complex y );
+	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x, const stdlib_complex64_t y );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_ARG_CAST( float, float, float complex, float complex, float complex )
+	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_ARG_CAST_FCN( float, float, stdlib_complex64_t, stdlib_complex64_from_float32, stdlib_complex64_from_float32, stdlib_complex64_from_complex64 )
 }
