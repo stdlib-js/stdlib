@@ -17,30 +17,6 @@
 */
 
 #include "stdlib/math/base/ops/caddf.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/reimf.h"
-#include <stdio.h>
+#include "stdlib/math/base/napi/binary.h"
 
-int main() {
-	stdlib_complex64_t x[] = {
-		stdlib_complex64( 3.14f, 1.5f ),
-		stdlib_complex64( -3.14f, 1.5f ),
-		stdlib_complex64( 0.0f, -0.0f ),
-		stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
-	};
-
-	stdlib_complex64_t v;
-	stdlib_complex64_t y;
-	float re;
-	float im;
-	int i;
-	for ( i = 0; i < 4; i++ ) {
-		v = x[ i ];
-		stdlib_reimf( v, &re, &im );
-		printf( "z = %f + %fi\n", re, im );
-
-		y = stdlib_base_caddf( v, v );
-		stdlib_reimf( y, &re, &im );
-		printf( "caddf(z, z) = %f + %fi\n", re, im );
-	}
-}
+STDLIB_MATH_BASE_NAPI_MODULE_CC_C( stdlib_base_caddf )

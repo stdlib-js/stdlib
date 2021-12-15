@@ -42,18 +42,18 @@ Adds two single-precision complex floating-point numbers.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var z = new Complex64( -1.5, 2.5 );
 
 var v = caddf( z, z );
 // returns <Complex64>
 
-var re = real( v );
+var re = realf( v );
 // returns -3.0
 
-var im = imag( v );
+var im = imagf( v );
 // returns 5.0
 ```
 
@@ -122,21 +122,28 @@ for ( i = 0; i < 100; i++ ) {
 Adds two single-precision complex floating-point numbers.
 
 ```c
-#include <complex.h>
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/realf.h"
+#include "stdlib/complex/imagf.h"
 
-float complex z = 2.5f - 1.5f*I;
+stdlib_complex64_t z = stdlib_complex64( 3.0f, -2.0f );
 
-float complex out = stdlib_base_caddf( z, z );
-// returns 5.0f-3.0f*I
+stdlib_complex64_t out = stdlib_base_caddf( z, z );
+
+float re = stdlib_realf( out );
+// returns 6.0f
+
+float im = stdlib_imagf( out );
+// returns -4.0f
 ```
 
 The function accepts the following arguments:
 
--   **z1**: `[in] float complex` input value.
--   **z2**: `[in] float complex` input value.
+-   **z1**: `[in] stdlib_complex64_t` input value.
+-   **z2**: `[in] stdlib_complex64_t` input value.
 
 ```c
-float complex stdlib_base_caddf( const float complex z1, const float complex z2 );
+stdlib_complex64_t stdlib_base_caddf( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
 ```
 
 </section>
@@ -159,19 +166,31 @@ float complex stdlib_base_caddf( const float complex z1, const float complex z2 
 
 ```c
 #include "stdlib/math/base/ops/caddf.h"
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main() {
-    float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+    stdlib_complex64_t x[] = {
+        stdlib_complex64( 3.14f, 1.5f ),
+        stdlib_complex64( -3.14f, 1.5f ),
+        stdlib_complex64( 0.0f, -0.0f ),
+        stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+    };
 
-    float complex v;
-    float complex y;
+    stdlib_complex64_t v;
+    stdlib_complex64_t y;
+    float re;
+    float im;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
+        stdlib_reimf( v, &re, &im );
+        printf( "z = %f + %fi\n", re, im );
+
         y = stdlib_base_caddf( v, v );
-        printf( "z = %f + %fi\ncaddf(z, z) = %f + %fi\n", crealf( v ), cimagf( v ), crealf( y ), cimagf( y ) );
+        stdlib_reimf( y, &re, &im );
+        printf( "caddf(z, z) = %f + %fi\n", re, im );
     }
 }
 ```
