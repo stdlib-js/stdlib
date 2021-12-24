@@ -39,12 +39,19 @@ function clbk( v: any ): any {
 
 // The compiler throws an error if the function is provided a first argument other than a function...
 {
-	mapArguments( true, [ 1, 0, 1 ] ); // $ExpectError
-	mapArguments( false, [ 1, 0, 1 ] ); // $ExpectError
-	mapArguments( 5, [ 1, 0, 1 ] ); // $ExpectError
-	mapArguments( [], [ 1, 0, 1 ] ); // $ExpectError
-	mapArguments( {}, [ 1, 0, 1 ] ); // $ExpectError
-	mapArguments( 'abc', [ 1, 0, 1 ] ); // $ExpectError
+	mapArguments( true, clbk ); // $ExpectError
+	mapArguments( false, clbk ); // $ExpectError
+	mapArguments( 5, clbk ); // $ExpectError
+	mapArguments( [], clbk ); // $ExpectError
+	mapArguments( {}, clbk ); // $ExpectError
+	mapArguments( 'abc', clbk ); // $ExpectError
+
+	mapArguments( true, clbk, {} ); // $ExpectError
+	mapArguments( false, clbk, {} ); // $ExpectError
+	mapArguments( 5, clbk, {} ); // $ExpectError
+	mapArguments( [], clbk, {} ); // $ExpectError
+	mapArguments( {}, clbk, {} ); // $ExpectError
+	mapArguments( 'abc', clbk, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument other than an function...
@@ -56,6 +63,14 @@ function clbk( v: any ): any {
 	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], null ); // $ExpectError
 	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], {} ); // $ExpectError
 	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], [] ); // $ExpectError
+
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], '5', {} ); // $ExpectError
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], true, {} ); // $ExpectError
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], false, {} ); // $ExpectError
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], 123, {} ); // $ExpectError
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], null, {} ); // $ExpectError
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], {}, {} ); // $ExpectError
+	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], [], {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided more than three arguments...
