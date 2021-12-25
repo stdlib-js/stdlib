@@ -3499,6 +3499,7 @@ MONTH_NAMES_EN,"\nMONTH_NAMES_EN()\n    Returns a list of month names (English).
 MONTHS_IN_YEAR,"\nMONTHS_IN_YEAR\n    Number of months in a year.\n"
 moveProperty,"\nmoveProperty( source:Object, prop:string, target:Object )\n    Moves a property from one object to another object.\n"
 namedtypedtuple,"\nnamedtypedtuple( fields:Array<string>[, options:Object] )\n    Returns a named typed tuple factory.\n"
+naryFunction,"\nnaryFunction( fcn:Function, arity:integer[, thisArg:any] )\n    Returns a function that applies a specified number of arguments to a\n    provided function.\n"
 nativeClass,"\nnativeClass( value:any )\n    Returns a string value indicating a specification defined classification of\n    an object.\n"
 ndarray,"\nndarray( dtype:string, buffer:ArrayLikeObject|TypedArray|Buffer, \n  shape:ArrayLikeObject<integer>, strides:ArrayLikeObject<integer>, \n  offset:integer, order:string[, options:Object] )\n    Returns an ndarray.\n"
 ndarray.prototype.byteLength,"\nndarray.prototype.byteLength\n    Size (in bytes) of the array (if known).\n"

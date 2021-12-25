@@ -2158,6 +2158,7 @@ lowess
 lpad
 ltrim
 MALE_FIRST_NAMES_EN
+map2d
 mapArguments
 mapFun
 mapFunAsync
