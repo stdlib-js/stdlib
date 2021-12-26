@@ -54,7 +54,7 @@ function clbk( v: any ): any {
 	mapArguments( 'abc', clbk, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument other than an function...
+// The compiler throws an error if the function is provided a second argument other than a function...
 {
 	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], '5' ); // $ExpectError
 	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], true ); // $ExpectError
