@@ -55,7 +55,7 @@ function clbk( v: any ): any {
 	map2d( {}, clbk, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument other than an function...
+// The compiler throws an error if the function is provided a second argument other than a function...
 {
 	const arr = [
 		[ 1, 2, 3 ],
