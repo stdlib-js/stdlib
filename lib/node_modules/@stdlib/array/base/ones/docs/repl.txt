@@ -1,0 +1,22 @@
+
+{{alias}}( len )
+    Returns a "generic" array filled with ones.
+
+    Parameters
+    ----------
+    len: integer
+        Array length.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( 3 )
+    [ 1.0, 1.0, 1.0 ]
+
+    See Also
+    --------
+
