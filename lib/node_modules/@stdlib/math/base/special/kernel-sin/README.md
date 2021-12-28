@@ -86,13 +86,13 @@ v = kernelSin( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var kernelSin = require( '@stdlib/math/base/special/kernel-sin' );
 
 var x = linspace( -PI/4.0, PI/4.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'kernelSin(%d) = %d', x[ i ], kernelSin( x[ i ], 0.0 ) );
 }

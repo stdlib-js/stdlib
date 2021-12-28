@@ -97,7 +97,7 @@ out = kernelTan( NaN, NaN, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var binomial = require( '@stdlib/random/base/binomial' ).factory;
 var PI = require( '@stdlib/constants/float64/pi' );
 var kernelTan = require( '@stdlib/math/base/special/kernel-tan' );

@@ -92,12 +92,12 @@ v = asinh( Infinity );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var asinh = require( '@stdlib/math/base/special/fast/asinh' );
 
 var x = linspace( -5.0, 5.0, 103 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( asinh( x[ i ] ) );
 }

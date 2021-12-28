@@ -95,12 +95,12 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var fresnel = require( '@stdlib/math/base/special/fresnel' );
 
 var x = linspace( 0.0, 10.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( fresnel( x[ i ] ) );
 }
