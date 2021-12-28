@@ -65,15 +65,14 @@ v = logaddexp( NaN, 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/incrspace' );
+var incrspace = require( '@stdlib/array/base/incrspace' );
 var logaddexp = require( '@stdlib/math/base/special/logaddexp' );
 
-var x;
+var x = incrspace( -100.0, 100.0, 1.0 );
+
 var v;
 var i;
 var j;
-
-x = incrspace( -100.0, 100.0, 1.0 );
 for ( i = 0; i < x.length; i++ ) {
     for ( j = i; j < x.length; j++ ) {
         v = logaddexp( x[ i ], x[ j ] );

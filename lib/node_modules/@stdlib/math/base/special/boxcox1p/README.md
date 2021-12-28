@@ -91,15 +91,15 @@ v = boxcox1p( -1.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/incrspace' );
+var incrspace = require( '@stdlib/array/base/incrspace' );
 var boxcox1p = require( '@stdlib/math/base/special/boxcox1p' );
 
 var x = incrspace( -1.0, 10.0, 1.0 );
 var l = incrspace( -0.5, 5.0, 0.5 );
+
 var b;
 var i;
 var j;
-
 for ( i = 0; i < x.length; i++ ) {
     for ( j = 0; j < l.length; j++ ) {
         b = boxcox1p( x[ i ], l[ j ] );

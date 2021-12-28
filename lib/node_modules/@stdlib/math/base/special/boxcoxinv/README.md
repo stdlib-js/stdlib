@@ -94,15 +94,15 @@ v = boxcoxinv( NaN, 3.1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/incrspace' );
+var incrspace = require( '@stdlib/array/base/incrspace' );
 var boxcoxinv = require( '@stdlib/math/base/special/boxcoxinv' );
 
 var y = incrspace( -1.0, 10.0, 1.0 );
 var l = incrspace( -0.5, 5.0, 0.5 );
+
 var b;
 var i;
 var j;
-
 for ( i = 0; i < y.length; i++ ) {
     for ( j = 0; j < l.length; j++ ) {
         b = boxcoxinv( y[ i ], l[ j ] );
