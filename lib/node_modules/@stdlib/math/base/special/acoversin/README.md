@@ -86,12 +86,12 @@ v = acoversin( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var acoversin = require( '@stdlib/math/base/special/acoversin' );
 
 var x = linspace( 0.0, 2.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( acoversin( x[ i ] ) );
 }

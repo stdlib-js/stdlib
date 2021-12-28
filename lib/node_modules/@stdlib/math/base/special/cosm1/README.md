@@ -61,13 +61,13 @@ v = cosm1( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var cosm1 = require( '@stdlib/math/base/special/cosm1' );
 
 var x = linspace( 0.0, 2.0*PI, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( cosm1( x[ i ] ) );
 }

@@ -94,16 +94,14 @@ v = eta( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var eta = require( '@stdlib/math/base/special/dirichlet-eta' );
 
 var s = linspace( -50.0, 50.0, 200 );
-var v;
-var i;
 
+var i;
 for ( i = 0; i < s.length; i++ ) {
-    v = eta( s[ i ] );
-    console.log( 's: %d, η(s): %d', s[ i ], v );
+    console.log( 's: %d, η(s): %d', s[ i ], eta( s[ i ] ) );
 }
 ```
 

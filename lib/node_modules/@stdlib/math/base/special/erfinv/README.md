@@ -108,16 +108,14 @@ var y = erfinv( -0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var erfinv = require( '@stdlib/math/base/special/erfinv' );
 
 var x = linspace( -1.0, 1.0, 100 );
-var y;
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    y = erfinv( x[ i ] );
-    console.log( 'x: %d, erfinv(x): %d', x[ i ], y );
+    console.log( 'x: %d, erfinv(x): %d', x[ i ], erfinv( x[ i ] ) );
 }
 ```
 

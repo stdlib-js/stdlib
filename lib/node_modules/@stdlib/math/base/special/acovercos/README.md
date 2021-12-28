@@ -86,12 +86,12 @@ v = acovercos( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var acovercos = require( '@stdlib/math/base/special/acovercos' );
 
 var x = linspace( -2.0, 0.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( acovercos( x[ i ] ) );
 }
