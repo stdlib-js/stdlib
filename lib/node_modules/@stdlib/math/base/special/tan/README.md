@@ -76,13 +76,13 @@ v = tan( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var tan = require( '@stdlib/math/base/special/tan' );
 
 var x = linspace( -PI/2.0, PI/2.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( tan( x[ i ] ) );
 }

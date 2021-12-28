@@ -84,17 +84,14 @@ v = zeta( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var zeta = require( '@stdlib/math/base/special/riemann-zeta' );
 
-var s;
-var v;
-var i;
+var s = linspace( -50.0, 50.0, 200 );
 
-s = linspace( -50.0, 50.0, 200 );
+var i;
 for ( i = 0; i < s.length; i++ ) {
-    v = zeta( s[ i ] );
-    console.log( 's: %d, ζ(s): %d', s[ i ], v );
+    console.log( 's: %d, ζ(s): %d', s[ i ], zeta( s[ i ] ) );
 }
 ```
 
