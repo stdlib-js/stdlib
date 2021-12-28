@@ -253,22 +253,6 @@
       "proxy"
     ]
   },
-  "https://curiosity.lib.harvard.edu/contagion/catalog/36-990101646750203941": {
-    "id": "@nightingale:1859a",
-    "description": "Library record for Florence Nightingale's polar area diagram of the sanitary history of the British army during the late war with Russia.",
-    "short_url": "",
-    "keywords": [
-      "visualization",
-      "viz",
-      "plot",
-      "chart",
-      "florence",
-      "nightingale",
-      "polar",
-      "area",
-      "diagram"
-    ]
-  },
   "http://oeis.org/A000027": {
     "id": "oeis-a000027",
     "description": "The OEIS entry for the sequence of positive integers.",
@@ -399,16 +383,6 @@
       "unittest"
     ]
   },
-  "https://datatracker.ietf.org/doc/html/rfc5988": {
-    "id": "rfc-5988",
-    "description": "An RFC describing web links.",
-    "short_url": "",
-    "keywords": [
-      "web links",
-      "linking",
-      "link header"
-    ]
-  },
   "http://usejsdoc.org/": {
     "id": "jsdoc",
     "description": "The official website of JSDoc.",
@@ -430,17 +404,6 @@
       "docs",
       "javascript",
       "types"
-    ]
-  },
-  "https://webassembly.org/": {
-    "id": "webassembly",
-    "description": "Official website for WebAssembly, a portable compilation target for the Web.",
-    "short_url": "",
-    "keywords": [
-      "webassembly",
-      "wasm",
-      "asm",
-      "binary"
     ]
   },
   "http://wiki.commonjs.org/wiki/CommonJS": {
@@ -758,6 +721,22 @@
       "cc0"
     ]
   },
+  "https://curiosity.lib.harvard.edu/contagion/catalog/36-990101646750203941": {
+    "id": "@nightingale:1859a",
+    "description": "Library record for Florence Nightingale's polar area diagram of the sanitary history of the British army during the late war with Russia.",
+    "short_url": "",
+    "keywords": [
+      "visualization",
+      "viz",
+      "plot",
+      "chart",
+      "florence",
+      "nightingale",
+      "polar",
+      "area",
+      "diagram"
+    ]
+  },
   "https://danielmiessler.com/study/url-uri/": {
     "id": "difference-url-uri",
     "description": "Blog post on the difference between URIs and URLs.",
@@ -768,6 +747,16 @@
       "identifier",
       "access",
       "protocol"
+    ]
+  },
+  "https://datatracker.ietf.org/doc/html/rfc5988": {
+    "id": "rfc-5988",
+    "description": "An RFC describing web links.",
+    "short_url": "",
+    "keywords": [
+      "web links",
+      "linking",
+      "link header"
     ]
   },
   "https://developer.github.com/guides/traversing-with-pagination/": {
@@ -1493,6 +1482,18 @@
       "js"
     ]
   },
+  "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map": {
+    "id": "mdn-typedarray-map",
+    "description": "MDN documentation for the `map` method on typed array objects.",
+    "short_url": "",
+    "keywords": [
+      "typedarray",
+      "map",
+      "transform",
+      "mdn",
+      "apply"
+    ]
+  },
   "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError": {
     "id": "mdn-uri-error",
     "description": "Mozilla Developer Network (MDN) documentation for the URIError constructor.",
@@ -1745,22 +1746,6 @@
       "prng",
       "distribution",
       "dist"
-    ]
-  },
-  "https://www.electronjs.org/": {
-    "id": "electron",
-    "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
-    "short_url": "",
-    "keywords": [
-      "electron",
-      "atom",
-      "github",
-      "css",
-      "javascript",
-      "ecmascript",
-      "html",
-      "desktop",
-      "application"
     ]
   },
   "https://en.wikipedia.org/wiki/ARPABET": {
@@ -4653,6 +4638,17 @@
       "cdn"
     ]
   },
+  "https://webassembly.org/": {
+    "id": "webassembly",
+    "description": "Official website for WebAssembly, a portable compilation target for the Web.",
+    "short_url": "",
+    "keywords": [
+      "webassembly",
+      "wasm",
+      "asm",
+      "binary"
+    ]
+  },
   "https://www.apache.org/licenses/LICENSE-2.0": {
     "id": "apache-license",
     "description": "Apache License Version 2.0.",
@@ -4675,6 +4671,22 @@
       "integration",
       "windows",
       "build"
+    ]
+  },
+  "https://www.electronjs.org/": {
+    "id": "electron",
+    "description": "Framework for building desktop applications with JavaScript, HTML, and CSS.",
+    "short_url": "",
+    "keywords": [
+      "electron",
+      "atom",
+      "github",
+      "css",
+      "javascript",
+      "ecmascript",
+      "html",
+      "desktop",
+      "application"
     ]
   },
   "https://www.gnu.org/software/bash/": {
