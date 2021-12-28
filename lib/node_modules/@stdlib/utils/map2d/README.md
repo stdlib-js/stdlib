@@ -59,7 +59,7 @@ var out = map2d( arr, naryFunction( abs, 1 ) );
 
 The applied function is provided the following arguments:
 
--   **value**: argument value.
+-   **value**: array element.
 -   **i**: index of the first dimension.
 -   **j**: index of the second dimension.
 -   **arr**: input array.
