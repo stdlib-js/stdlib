@@ -171,27 +171,22 @@ To test whether the difference in the population means is equal to some other va
 ```javascript
 var normal = require( '@stdlib/random/base/normal' ).factory;
 
-var table;
-var rnorm;
-var out;
-var x;
-var y;
-var i;
-
-rnorm = normal({
+var rnorm = normal({
     'seed': 372
 });
 
-x = new Array( 100 );
+var x = [];
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = rnorm( 2.0, 3.0 );
-}
-y = new Array( 100 );
-for ( i = 0; i < x.length; i++ ) {
-    y[ i ] = rnorm( 1.0, 3.0 );
+    x.push( rnorm( 2.0, 3.0 ) );
 }
 
-out = ttest2( x, y, {
+var y = [];
+for ( i = 0; i < x.length; i++ ) {
+    y.push( rnorm( 1.0, 3.0 ) );
+}
+
+var out = ttest2( x, y, {
     'difference': 1.0,
     'variance': 'equal'
 });
@@ -205,7 +200,7 @@ out = ttest2( x, y, {
     }
 */
 
-table = out.print();
+var table = out.print();
 /* e.g., returns
     Two-sample t-test
 
@@ -231,19 +226,14 @@ table = out.print();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/incrspace' );
+var incrspace = require( '@stdlib/array/base/incrspace' );
 var ttest2 = require( '@stdlib/stats/ttest2' );
 
-var table;
-var out;
-var a;
-var b;
+var a = incrspace( 1, 11, 1 );
+var b = incrspace( 7, 21, 1 );
 
-a = incrspace( 1, 11, 1 );
-b = incrspace( 7, 21, 1 );
-
-out = ttest2( a, b );
-table = out.print();
+var out = ttest2( a, b );
+var table = out.print();
 /* e.g., returns
     Welch two-sample t-test
 
