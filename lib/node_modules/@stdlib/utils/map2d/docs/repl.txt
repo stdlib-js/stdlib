@@ -12,7 +12,7 @@
 
     Parameters
     ----------
-    arr: ArrayLikeObject<ArrayLikeObject>>
+    arr: ArrayLikeObject<ArrayLikeObject>
         Input array of arrays.
 
     fcn: Function
