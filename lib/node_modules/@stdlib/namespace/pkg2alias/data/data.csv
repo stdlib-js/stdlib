@@ -2158,12 +2158,14 @@
 "@stdlib/string/left-pad",lpad
 "@stdlib/string/left-trim",ltrim
 "@stdlib/datasets/male-first-names-en",MALE_FIRST_NAMES_EN
+"@stdlib/utils/map",map
 "@stdlib/utils/map2d",map2d
 "@stdlib/utils/map-arguments",mapArguments
 "@stdlib/utils/map-function",mapFun
 "@stdlib/utils/async/map-function",mapFunAsync
 "@stdlib/utils/map-keys",mapKeys
 "@stdlib/utils/async/map-keys",mapKeysAsync
+"@stdlib/utils/map-right",mapRight
 "@stdlib/utils/map-values",mapValues
 "@stdlib/utils/async/map-values",mapValuesAsync
 "@stdlib/utils/mask-arguments",maskArguments

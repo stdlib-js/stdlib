@@ -3467,6 +3467,7 @@ lowess,"\nlowess( x:Array<number>, y:Array<number>[, options:Object] )\n    Loca
 lpad,"\nlpad( str:string, len:integer[, pad:string] )\n    Left pads a `string` such that the padded `string` has a length of at least\n    `len`.\n"
 ltrim,"\nltrim( str:string )\n    Trims whitespace from the beginning of a `string`.\n"
 MALE_FIRST_NAMES_EN,"\nMALE_FIRST_NAMES_EN()\n    Returns a list of common male first names in English speaking countries.\n"
+map2d,"\nmap2d( arr:ArrayLikeObject<ArrayLikeObject>, fcn:Function[, thisArg:any] )\n    Applies a function to each nested element in an array of arrays and assigns\n    the result to a nested element in a new array of arrays.\n"
 mapArguments,"\nmapArguments( fcn:Function, clbk:Function[, thisArg:any] )\n    Returns a function that applies arguments to a provided function after\n    transforming arguments according to a callback function.\n"
 mapFun,"\nmapFun( fcn:Function, n:integer[, thisArg:any] )\n    Invokes a function `n` times and returns an array of accumulated function\n    return values.\n"
 mapFunAsync,"\nmapFunAsync( fcn:Function, n:integer, [options:Object,] done:Function )\n    Invokes a function `n` times and returns an array of accumulated function\n    return values.\n"
