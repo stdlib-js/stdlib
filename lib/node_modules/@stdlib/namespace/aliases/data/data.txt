@@ -2160,6 +2160,7 @@ ltrim
 MALE_FIRST_NAMES_EN
 map
 map2d
+map3d
 mapArguments
 mapFun
 mapFunAsync

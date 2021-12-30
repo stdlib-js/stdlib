@@ -2160,6 +2160,7 @@
 "@stdlib/datasets/male-first-names-en","@stdlib/datasets-male-first-names-en"
 "@stdlib/utils/map","@stdlib/utils-map"
 "@stdlib/utils/map2d","@stdlib/utils-map2d"
+"@stdlib/utils/map3d","@stdlib/utils-map3d"
 "@stdlib/utils/map-arguments","@stdlib/utils-map-arguments"
 "@stdlib/utils/map-function","@stdlib/utils-map-function"
 "@stdlib/utils/async/map-function","@stdlib/utils-async-map-function"
