@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if a value is an empty collection.
+
+    A collection is defined as an array, typed array, or an array-like object
+    (excluding strings and functions).
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is an empty collection.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [] )
+    true
+    > bool = {{alias}}( { 'length': 0 } )
+    true
+    > bool = {{alias}}( [ 1, 2, 3 ] )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+
