@@ -2162,6 +2162,7 @@ map
 map2d
 map3d
 map4d
+map5d
 mapArguments
 mapFun
 mapFunAsync

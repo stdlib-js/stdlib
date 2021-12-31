@@ -2162,6 +2162,7 @@
 "@stdlib/utils/map2d","@stdlib/utils-map2d"
 "@stdlib/utils/map3d","@stdlib/utils-map3d"
 "@stdlib/utils/map4d","@stdlib/utils-map4d"
+"@stdlib/utils/map5d","@stdlib/utils-map5d"
 "@stdlib/utils/map-arguments","@stdlib/utils-map-arguments"
 "@stdlib/utils/map-function","@stdlib/utils-map-function"
 "@stdlib/utils/async/map-function","@stdlib/utils-async-map-function"
