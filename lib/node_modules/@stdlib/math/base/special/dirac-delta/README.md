@@ -86,12 +86,12 @@ v = diracDelta( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var diracDelta = require( '@stdlib/math/base/special/dirac-delta' );
 
 var x = linspace( -1.0, 1.0, 101 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'dirac(%d) = %d', x[ i ], diracDelta( x[ i ] ) );
 }

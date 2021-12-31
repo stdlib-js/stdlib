@@ -62,16 +62,14 @@ y = log1mexp( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/incrspace' );
+var incrspace = require( '@stdlib/array/base/incrspace' );
 var log1mexp = require( '@stdlib/math/base/special/log1mexp' );
 
 var x = incrspace( -10.0, 10.0, 0.01 );
-var v;
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    v = log1mexp( x[ i ] );
-    console.log( 'x: %d, f(x): %d', x[ i ], v );
+    console.log( 'x: %d, f(x): %d', x[ i ], log1mexp( x[ i ] ) );
 }
 ```
 

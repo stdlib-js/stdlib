@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/complex/conj",
   "version": "0.0.0",
-  "description": "Return the complex conjugate of a complex number.",
+  "description": "Return the complex conjugate of a double-precision complex floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

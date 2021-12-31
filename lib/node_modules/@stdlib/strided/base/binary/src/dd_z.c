@@ -22,8 +22,8 @@
 
 #include "stdlib/strided/base/binary/dd_z.h"
 #include "stdlib/strided/base/binary/macros.h"
+#include "stdlib/complex/float64.h"
 #include <stdint.h>
-#include <complex.h>
 
 /**
 * Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
@@ -36,7 +36,6 @@
 * @example
 * #include "stdlib/strided/base/binary/dd_z.h"
 * #include <stdint.h>
-* #include <complex.h>
 *
 * // Create underlying byte arrays:
 * uint8_t x[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -53,7 +52,7 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* double complex add( double x, double y ) {
+* double add( double x, double y ) {
 *     return x + y;
 * }
 *
@@ -61,7 +60,7 @@
 * stdlib_strided_dd_z( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_dd_z( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	typedef double complex func_type( const double x, const double y );
+	typedef double func_type( const double x, const double y );
 	func_type *f = (func_type *)fcn;
-	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED( double, double, double complex )
+	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_RET_CAST_FCN( double, double, stdlib_complex128_t, stdlib_complex128_from_float64 )
 }

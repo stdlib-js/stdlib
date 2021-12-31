@@ -68,16 +68,14 @@ v = gammaln( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var gammaln = require( '@stdlib/math/base/special/gammaln' );
 
 var x = linspace( -10.0, 10.0, 100 );
-var v;
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    v = gammaln( x[ i ] );
-    console.log( 'x: %d, f(x): %d', x[ i ], v );
+    console.log( 'x: %d, f(x): %d', x[ i ], gammaln( x[ i ] ) );
 }
 ```
 

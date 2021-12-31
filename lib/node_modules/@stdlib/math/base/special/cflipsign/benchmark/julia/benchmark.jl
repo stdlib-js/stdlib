@@ -20,7 +20,7 @@ import BenchmarkTools
 using Printf
 
 # Benchmark variables:
-name = "flipsign";
+name = "cflipsign";
 repeats = 3;
 
 """

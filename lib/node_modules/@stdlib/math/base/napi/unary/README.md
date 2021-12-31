@@ -182,6 +182,166 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_f_f( napi_env env, napi_callback_info info, float (*fcn)( float ) );
 ```
 
+#### stdlib_math_base_napi_z_z( env, info, fcn )
+
+Invokes a unary function accepting and returning double-precision complex floating-point numbers.
+
+```c
+#include "stdlib/complex/float64.h"
+#include <node_api.h>
+
+// ...
+
+static stdlib_complex128_t identity( const stdlib_complex128_t x ) {
+    return x;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_z_z( env, info, identity );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] stdlib_complex128_t (*fcn)( stdlib_complex128_t )` unary function.
+
+```c
+void stdlib_math_base_napi_z_z( napi_env env, napi_callback_info info, stdlib_complex128_t (*fcn)( stdlib_complex128_t ) );
+```
+
+#### stdlib_math_base_napi_z_d( env, info, fcn )
+
+Invokes a unary function accepting a double-precision complex floating-point number and returning a double-precision floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+#include <node_api.h>
+
+// ...
+
+static double fcn( const stdlib_complex128_t x ) {
+    // ...
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_z_d( env, info, fcn );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] double (*fcn)( stdlib_complex128_t )` unary function.
+
+```c
+void stdlib_math_base_napi_z_d( napi_env env, napi_callback_info info, double (*fcn)( stdlib_complex128_t ) );
+```
+
+#### stdlib_math_base_napi_c_c( env, info, fcn )
+
+Invokes a unary function accepting and returning single-precision complex floating-point numbers.
+
+```c
+#include "stdlib/complex/float32.h"
+#include <node_api.h>
+
+// ...
+
+static stdlib_complex64_t identity( const stdlib_complex64_t x ) {
+    return x;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_c_c( env, info, identity );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] stdlib_complex64_t (*fcn)( stdlib_complex64_t )` unary function.
+
+```c
+void stdlib_math_base_napi_c_c( napi_env env, napi_callback_info info, stdlib_complex64_t (*fcn)( stdlib_complex64_t ) );
+```
+
+#### stdlib_math_base_napi_c_f( env, info, fcn )
+
+Invokes a unary function accepting a single-precision complex floating-point number and returning a single-precision floating-point number.
+
+```c
+#include "stdlib/complex/float32.h"
+#include <node_api.h>
+
+// ...
+
+static float fcn( const stdlib_complex64_t x ) {
+    // ...
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_c_f( env, info, fcn );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] float (*fcn)( stdlib_complex64_t )` unary function.
+
+```c
+void stdlib_math_base_napi_c_f( napi_env env, napi_callback_info info, float (*fcn)( stdlib_complex64_t ) );
+```
+
 #### stdlib_math_base_napi_i_i( env, info, fcn )
 
 Invokes a unary function accepting and returning 32-bit signed integers.
@@ -261,6 +421,116 @@ STDLIB_MATH_BASE_NAPI_MODULE_F_F( scale );
 The macro expects the following arguments:
 
 -   **fcn**: `float (*fcn)( float )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning double-precision complex floating-point numbers.
+
+```c
+#include "stdlib/complex/float64.h"
+#include "stdlib/complex/reim.h"
+
+static stdlib_complex128_t scale( const stdlib_complex128_t x ) {
+    double re;
+    double im;
+
+    stdlib_reim( x, &re, &im );
+
+    re *= 10.0;
+    im *= 10.0;
+
+    return stdlib_complex128( re, im );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_Z_Z( scale );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_complex128_t (*fcn)( stdlib_complex128_t )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_Z_D( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting a double-precision complex floating-point number and returning a double-precision floating-point number.
+
+```c
+#include "stdlib/complex/float64.h"
+
+static double fcn( const stdlib_complex128_t x ) {
+    // ...
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_Z_D( fcn );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double (*fcn)( stdlib_complex128_t )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_C_C( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning single-precision complex floating-point numbers.
+
+```c
+#include "stdlib/complex/float32.h"
+#include "stdlib/complex/reimf.h"
+
+static stdlib_complex64_t scale( const stdlib_complex64_t x ) {
+    float re;
+    float im;
+
+    stdlib_reimf( x, &re, &im );
+
+    re *= 10.0f;
+    im *= 10.0f;
+
+    return stdlib_complex64( re, im );
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_C_C( scale );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `stdlib_complex64_t (*fcn)( stdlib_complex64_t )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_C_F( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting a single-precision complex floating-point number and returning a single-precision floating-point number.
+
+```c
+#include "stdlib/complex/float32.h"
+
+static float fcn( const stdlib_complex64_t x ) {
+    // ...
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_C_F( fcn );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `float (*fcn)( stdlib_complex64_t )` unary function.
 
 When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 

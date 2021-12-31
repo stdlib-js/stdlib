@@ -39,7 +39,7 @@ import cceilf = require( './index' );
 	cceilf( ( x: number ): number => x ); // $ExpectError
 }
 
-// The function does not compile if provided insufficient arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	cceilf(); // $ExpectError
 }

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex64 } from '@stdlib/types/object';
 
 /**
 * Evaluates the identity function for single-precision complex floating-point number.
@@ -42,7 +42,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var im = imag( v );
 * // returns 2.0
 */
-declare function cidentityf( z: ComplexLike ): ComplexLike;
+declare function cidentityf( z: Complex64 ): Complex64;
 
 
 // EXPORTS //

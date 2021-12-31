@@ -1,40 +1,32 @@
 
-{{alias}}( [out,] re1, im1, re2, im2 )
-    Multiplies two complex numbers.
+{{alias}}( z1, z2 )
+    Multiplies two double-precision complex floating-point numbers.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
+    z1: Complex128
+        Complex number.
 
-    re1: number
-        Real component.
-
-    im1: number
-        Imaginary component.
-
-    re2: number
-        Real component.
-
-    im2: number
-        Imaginary component.
+    z2: Complex128
+        Complex number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
-        Array containing the real and imaginary components of the result.
+    out: Complex128
+        Result.
 
     Examples
     --------
-    > var out = {{alias}}( 5.0, 3.0, -2.0, 1.0 )
-    [ -13.0, -1.0 ]
-
-    // Provide an output array:
-    > var out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var v = {{alias}}( out, 5.0, 3.0, -2.0, 1.0 )
-    <Float64Array>[ -13.0, -1.0 ]
-    > var bool = ( v === out )
-    true
+    > var z1 = new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 )
+    <Complex128>
+    > var z2 = new {{alias:@stdlib/complex/float64}}( -2.0, 1.0 )
+    <Complex128>
+    > var out = {{alias}}( z1, z2 )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( out )
+    -13.0
+    > var im = {{alias:@stdlib/complex/imag}}( out )
+    -1.0
 
     See Also
     --------

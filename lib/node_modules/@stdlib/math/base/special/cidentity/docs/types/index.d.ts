@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
 * Evaluates the identity function for double-precision complex floating-point number.
@@ -42,7 +42,7 @@ import { ComplexLike } from '@stdlib/types/object';
 * var im = imag( v );
 * // returns 2.0
 */
-declare function cidentity( z: ComplexLike ): ComplexLike;
+declare function cidentity( z: Complex128 ): Complex128;
 
 
 // EXPORTS //

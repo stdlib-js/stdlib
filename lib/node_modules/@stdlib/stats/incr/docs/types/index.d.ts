@@ -322,8 +322,8 @@ interface Namespace {
 	* Returns an accumulator function which incrementally computes an exponentially weighted variance.
 	*
 	* @param alpha - smoothing factor
-	* @throws {TypeError} must provide a nonnegative number
-	* @throws {RangeError} must be on the interval `[0,1]`
+	* @throws must provide a nonnegative number
+	* @throws must be on the interval `[0,1]`
 	* @returns accumulator function
 	*
 	* @example

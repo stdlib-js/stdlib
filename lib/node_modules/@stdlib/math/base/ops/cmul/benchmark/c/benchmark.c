@@ -25,7 +25,7 @@
 #include <complex.h>
 #include <sys/time.h>
 
-#define NAME "multiply"
+#define NAME "cmul"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
@@ -77,9 +77,9 @@ double tic() {
 }
 
 /**
-* Generates a random double on the interval [0,1].
+* Generates a random number on the interval [0,1].
 *
-* @return random double
+* @return random number
 */
 double rand_double() {
 	int r = rand();

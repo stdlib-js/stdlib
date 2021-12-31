@@ -93,7 +93,7 @@ y2 = y[ 1 ];
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var rempio2 = require( '@stdlib/math/base/special/rempio2' );
 
 var x = linspace( 0.0, 100.0, 100 );

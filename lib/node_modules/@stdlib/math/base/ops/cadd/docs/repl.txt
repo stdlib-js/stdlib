@@ -1,40 +1,30 @@
 
-{{alias}}( [out,] re1, im1, re2, im2 )
-    Adds two complex numbers.
+{{alias}}( z1, z2 )
+    Adds two double-precision complex floating-point numbers.
 
     Parameters
     ----------
-    out: Array|TypedArray|Object (optional)
-        Output array.
+    z1: Complex128
+        Complex number.
 
-    re1: number
-        Real component.
-
-    im1: number
-        Imaginary component.
-
-    re2: number
-        Real component.
-
-    im2: number
-        Imaginary component.
+    z2: Complex128
+        Complex number.
 
     Returns
     -------
-    out: Array|TypedArray|Object
-        Real and imaginary components.
+    out: Complex128
+        Result.
 
     Examples
     --------
-    > var y = {{alias}}( 5.0, 3.0, -2.0, 1.0 )
-    [ 3.0, 4.0 ]
-
-    // Provide an output array:
-    > var out = new {{alias:@stdlib/array/float32}}( 2 );
-    > y = {{alias}}( out, 5.0, 3.0, -2.0, 1.0 )
-    <Float32Array>[ 3.0, 4.0 ]
-    > var bool = ( y === out )
-    true
+    > var z = new {{alias:@stdlib/complex/float64}}( 5.0, 3.0 )
+    <Complex128>
+    > var out = {{alias}}( z, z )
+    <Complex128>
+    > var re = {{alias:@stdlib/complex/real}}( out )
+    10.0
+    > var im = {{alias:@stdlib/complex/imag}}( out )
+    6.0
 
     See Also
     --------

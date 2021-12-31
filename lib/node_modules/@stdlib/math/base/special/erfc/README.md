@@ -94,16 +94,14 @@ var y = erfc( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var erfc = require( '@stdlib/math/base/special/erfc' );
 
 var x = linspace( -10.0, 10.0, 100 );
-var y;
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    y = erfc( x[ i ] );
-    console.log( 'x: %d, erfc(x): %d', x[ i ], y );
+    console.log( 'x: %d, erfc(x): %d', x[ i ], erfc( x[ i ] ) );
 }
 ```
 

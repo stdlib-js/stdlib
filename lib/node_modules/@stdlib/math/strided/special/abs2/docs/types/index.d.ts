@@ -36,9 +36,9 @@ interface Routine {
 	* @param dtypeY - `y` data type
 	* @param y - destination array
 	* @param strideY - `y` stride length
-	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
+	* @throws third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `y`
 	*
 	* @example
@@ -64,9 +64,9 @@ interface Routine {
 	* @param y - destination array
 	* @param strideY - `y` stride length
 	* @param offsetY - starting index for `y`
-	* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {RangeError} seventh argument has insufficient elements based on the associated stride and the number of indexed elements
-	* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
+	* @throws third argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws seventh argument has insufficient elements based on the associated stride and the number of indexed elements
+	* @throws unable to resolve a strided array function supporting the provided array argument data types
 	* @returns `y`
 	*
 	* @example
@@ -91,9 +91,9 @@ interface Routine {
 * @param dtypeY - `y` data type
 * @param y - destination array
 * @param strideY - `y` stride length
-* @throws {RangeError} third argument has insufficient elements based on the associated stride and the number of indexed elements
-* @throws {RangeError} sixth argument has insufficient elements based on the associated stride and the number of indexed elements
-* @throws {TypeError} unable to resolve a strided array function supporting the provided array argument data types
+* @throws third argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws sixth argument has insufficient elements based on the associated stride and the number of indexed elements
+* @throws unable to resolve a strided array function supporting the provided array argument data types
 * @returns `y`
 *
 * @example

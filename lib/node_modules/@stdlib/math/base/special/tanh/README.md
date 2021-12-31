@@ -62,12 +62,12 @@ v = tanh( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var tanh = require( '@stdlib/math/base/special/tanh' );
 
 var x = linspace( -4.0, 4.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( tanh( x[ i ] ) );
 }

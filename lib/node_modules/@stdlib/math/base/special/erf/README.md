@@ -84,16 +84,14 @@ var y = erf( -0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var erf = require( '@stdlib/math/base/special/erf' );
 
 var x = linspace( -10.0, 10.0, 100 );
-var y;
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    y = erf( x[ i ] );
-    console.log( 'x: %d, erf(x): %d', x[ i ], y );
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
 }
 ```
 

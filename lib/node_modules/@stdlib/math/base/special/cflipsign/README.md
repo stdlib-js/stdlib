@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# Flipsign
+# cflipsign
 
-> Return a complex number with the same magnitude as `z` and the sign of `y*z`.
+> Return a double-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -40,33 +40,23 @@ limitations under the License.
 var cflipsign = require( '@stdlib/math/base/special/cflipsign' );
 ```
 
-#### cflipsign( \[out,] re, im, y )
+#### cflipsign( z, y )
 
-Returns a complex number with the same magnitude as `z` and the sign of `y*z`.
-
-```javascript
-var v = cflipsign( -4.2, 5.5, -4 );
-// returns [ 4.2, -5.5 ]
-
-v = cflipsign( 0.0, 0.0, 5 );
-// returns [ 0.0, 0.0 ]
-
-v = cflipsign( NaN, NaN, 6 );
-// returns [ NaN, NaN ]
-```
-
-By default, the function returns real and imaginary components as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
+Returns a double-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Complex128 = require( '@stdlib/complex/float64' );
+var real = require( '@stdlib/complex/real' );
+var imag = require( '@stdlib/complex/imag' );
 
-var out = new Float64Array( 2 );
+var v = cflipsign( new Complex128( -4.2, 5.5 ), -1.0 );
+// returns <Complex128>
 
-var v = cflipsign( out, -4.2, 5.5, 77 );
-// returns <Float64Array>[ -4.2, 5.5 ]
+var re = real( v );
+// returns 4.2
 
-var bool = ( v === out );
-// returns true
+var im = imag( v );
+// returns -5.5
 ```
 
 </section>
@@ -90,34 +80,116 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var Complex128 = require( '@stdlib/complex/float64' );
-var randu = require( '@stdlib/random/base/randu' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
 var cflipsign = require( '@stdlib/math/base/special/cflipsign' );
 
-var re;
-var im;
-var z;
-var o;
-var w;
-var i;
-var y;
+var rand = uniform( -50.0, 50.0 );
 
+var z;
+var y;
+var i;
 for ( i = 0; i < 100; i++ ) {
-    re = ( randu()*100.0 ) - 50.0;
-    im = ( randu()*100.0 ) - 50.0;
-    y = ( randu()*100.0 ) - 50.0;
-    z = new Complex128( re, im );
-    o = cflipsign( real(z), imag(z), y );
-    w = new Complex128( o[ 0 ], o[ 1 ] );
-    console.log( 'flipsign(%s) = %s', z.toString(), w.toString() );
+    z = new Complex128( rand(), rand() );
+    y = rand();
+    console.log( 'cflipsign(%s, %d) = %s', z, y, cflipsign( z, y ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/cflipsign.h"
+```
+
+#### stdlib_base_cflipsign( z, y )
+
+Returns a double-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
+
+```c
+#include <complex.h>
+
+double complex y = stdlib_base_cflipsign( 2.5-1.5*I, -1.0 );
+// returns -2.5+1.5*I
+```
+
+The function accepts the following arguments:
+
+-   **z**: `[in] double complex` input value.
+-   **y**: `[in] double` number from which to derive the sign.
+
+```c
+double complex stdlib_base_cflipsign( const double complex z, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/cflipsign.h"
+#include <stdio.h>
+#include <complex.h>
+
+int main() {
+    double complex x[] = { 3.14+1.5*I, -3.14-1.5*I, 0.0+0.0*I, 0.0/0.0+0.0/0.0*I };
+
+    double complex v;
+    double complex y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        v = x[ i ];
+        y = stdlib_base_cflipsign( v, -1.0 );
+        printf( "cflipsign(%lf + %lfi, %lf) = %lf + %lfi\n", creal( v ), cimag( v ), -1.0, creal( y ), cimag( y ) );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

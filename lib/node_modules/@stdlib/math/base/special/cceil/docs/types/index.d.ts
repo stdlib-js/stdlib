@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike, Complex128 } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
 * Rounds a double-precision complex floating-point number toward positive infinity.
@@ -42,7 +42,7 @@ import { ComplexLike, Complex128 } from '@stdlib/types/object';
 * var im = imag( v );
 * // returns 3.0
 */
-declare function cceil( z: ComplexLike ): Complex128;
+declare function cceil( z: Complex128 ): Complex128;
 
 
 // EXPORTS //

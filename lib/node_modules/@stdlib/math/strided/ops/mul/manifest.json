@@ -1,0 +1,45 @@
+{
+	"options": {},
+	"fields": [
+		{
+			"field": "src",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "include",
+			"resolve": true,
+			"relative": true
+		},
+		{
+			"field": "libraries",
+			"resolve": false,
+			"relative": false
+		},
+		{
+			"field": "libpath",
+			"resolve": true,
+			"relative": false
+		}
+	],
+	"confs": [
+		{
+			"src": [],
+			"include": [
+				"./include"
+			],
+			"libraries": [],
+			"libpath": [],
+			"dependencies": [
+				"@stdlib/math/base/ops/mul",
+				"@stdlib/math/base/ops/mulf",
+				"@stdlib/math/base/ops/cmul",
+        "@stdlib/math/base/ops/cmulf",
+        "@stdlib/strided/base/function-object",
+				"@stdlib/strided/base/binary",
+				"@stdlib/strided/dtypes",
+				"@stdlib/strided/napi/binary"
+			]
+		}
+	]
+}

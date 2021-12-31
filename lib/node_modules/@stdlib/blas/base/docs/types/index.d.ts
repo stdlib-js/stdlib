@@ -63,8 +63,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -74,16 +74,16 @@ interface Namespace {
 	* var z = y.get( 0 );
 	* // returns <Complex64>
 	*
-	* var re = real( z );
+	* var re = realf( z );
 	* // returns 1.0
 	*
-	* var im = imag( z );
+	* var im = imagf( z );
 	* // returns 2.0
 	*
 	* @example
 	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -93,10 +93,10 @@ interface Namespace {
 	* var z = y.get( 0 );
 	* // returns <Complex64>
 	*
-	* var re = real( z );
+	* var re = realf( z );
 	* // returns 1.0
 	*
-	* var im = imag( z );
+	* var im = imagf( z );
 	* // returns 2.0
 	*/
 	ccopy: typeof ccopy;
@@ -113,8 +113,8 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -124,25 +124,25 @@ interface Namespace {
 	* var z = y.get( 0 );
 	* // returns <Complex64>
 	*
-	* var re = real( z );
+	* var re = realf( z );
 	* // returns 1.0
 	*
-	* var im = imag( z );
+	* var im = imagf( z );
 	* // returns 2.0
 	*
 	* z = x.get( 0 );
 	* // returns <Complex64>
 	*
-	* re = real( z );
+	* re = realf( z );
 	* // returns 7.0
 	*
-	* im = imag( z );
+	* im = imagf( z );
 	* // returns 8.0
 	*
 	* @example
 	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var real = require( `@stdlib/complex/real` );
-	* var imag = require( `@stdlib/complex/imag` );
+	* var realf = require( `@stdlib/complex/realf` );
+	* var imagf = require( `@stdlib/complex/imagf` );
 	*
 	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -152,19 +152,19 @@ interface Namespace {
 	* var z = y.get( 0 );
 	* // returns <Complex64>
 	*
-	* var re = real( z );
+	* var re = realf( z );
 	* // returns 1.0
 	*
-	* var im = imag( z );
+	* var im = imagf( z );
 	* // returns 2.0
 	*
 	* z = x.get( 0 );
 	* // returns <Complex64>
 	*
-	* re = real( z );
+	* re = realf( z );
 	* // returns 7.0
 	*
-	* im = imag( z );
+	* im = imagf( z );
 	* // returns 8.0
 	*/
 	cswap: typeof cswap;

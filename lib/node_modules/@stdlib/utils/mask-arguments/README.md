@@ -1,0 +1,170 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2021 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# maskArguments
+
+> Create a function that invokes a provided function according to an argument mask.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var maskArguments = require( '@stdlib/utils/mask-arguments' );
+```
+
+#### maskArguments( fcn, mask\[, thisArg] )
+
+Returns a `function` that invokes a provided function according to an argument `mask`.
+
+```javascript
+function foo( a, b ) {
+    return [ a, b ];
+}
+
+var bar = maskArguments( foo, [ 1, 0, 1 ] );
+
+var out = bar( 1, 2, 3 );
+// returns [ 1, 3 ]
+```
+
+To set the `this` context when invoking the provided function, provide a `thisArg`.
+
+<!-- eslint-disable no-restricted-syntax -->
+
+```javascript
+function Foo() {
+    this.x = 1;
+    this.y = 2;
+}
+
+Foo.prototype.scale = function scale( a, b ) {
+    return [ this.x*a, this.y*b ];
+};
+
+var ctx = {
+    'x': 10,
+    'y': 20
+};
+
+var foo = new Foo();
+
+var bar = maskArguments( foo.scale, [ 1, 0, 1 ], ctx );
+
+var out = bar( 1, 2, 3 );
+// returns [ 10, 60 ]
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   Only those arguments having a truthy mask value are applied to a provided function.
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var filledarrayBy = require( '@stdlib/array/filled-by' );
+var Uint8Array = require( '@stdlib/array/uint8' );
+var add = require( '@stdlib/math/base/ops/add' );
+var maskArguments = require( '@stdlib/utils/mask-arguments' );
+
+function fill( i ) {
+    return i;
+}
+
+// Create a data array:
+var x = filledarrayBy( 10, 'float64', fill );
+
+// Create a mask array:
+var mask = new Uint8Array( x.length );
+
+// "Unmask" the first element:
+mask[ 0 ] = 1;
+
+// Compute the sum of consecutive elements...
+var f;
+var i;
+for ( i = 1; i < x.length; i++ ) {
+    // "Unmask" the next element:
+    mask[ i ] = 1;
+
+    // Compute the sum:
+    f = maskArguments( add, mask );
+    console.log( 'sum(x_%d, x_%d) = %d', i-1, i, f.apply( null, x ) );
+
+    // Update the mask:
+    mask[ i-1 ] = 0;
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

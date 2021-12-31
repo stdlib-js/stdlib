@@ -66,12 +66,12 @@ var v = acos( -3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var acos = require( '@stdlib/math/base/special/acos' );
 
 var x = linspace( -1.0, 1.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( acos( x[ i ] ) );
 }

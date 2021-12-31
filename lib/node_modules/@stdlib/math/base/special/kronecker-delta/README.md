@@ -79,12 +79,12 @@ v = kroneckerDelta( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var kroneckerDelta = require( '@stdlib/math/base/special/kronecker-delta' );
 
 var x = linspace( -1.0, 1.0, 101 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'kronecker(%d,%d) = %d', x[ i ], 0.0, kroneckerDelta( x[ i ], 0.0 ) );
 }

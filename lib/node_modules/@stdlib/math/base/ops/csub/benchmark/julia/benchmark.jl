@@ -20,7 +20,7 @@ import BenchmarkTools
 using Printf
 
 # Benchmark variables:
-name = "subtract";
+name = "csub";
 repeats = 3;
 
 """

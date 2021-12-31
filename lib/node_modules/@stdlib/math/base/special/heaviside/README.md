@@ -132,12 +132,12 @@ v = heaviside( 0.0, 'right-continuous' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var heaviside = require( '@stdlib/math/base/special/heaviside' );
 
 var x = linspace( -10.0, 10.0, 101 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'H(%d) = %d', x[ i ], heaviside( x[ i ] ) );
 }

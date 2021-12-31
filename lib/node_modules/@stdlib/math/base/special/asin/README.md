@@ -60,12 +60,12 @@ var v = asin( -3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var asin = require( '@stdlib/math/base/special/asin' );
 
 var x = linspace( -1.0, 1.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( asin( x[ i ] ) );
 }

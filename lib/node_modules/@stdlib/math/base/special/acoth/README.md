@@ -63,12 +63,12 @@ v = acoth( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var acoth = require( '@stdlib/math/base/special/acoth' );
 
 var x = linspace( 1.0, 5.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( acoth( x[ i ] ) );
 }

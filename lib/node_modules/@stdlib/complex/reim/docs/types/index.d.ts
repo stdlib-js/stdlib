@@ -20,10 +20,10 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ComplexLike } from '@stdlib/types/object';
+import { Complex128 } from '@stdlib/types/object';
 
 /**
-* Returns the real and imaginary components of a complex number.
+* Returns the real and imaginary components of a double-precision complex floating-point number.
 *
 * @param z - complex number
 * @returns real and imaginary components
@@ -35,16 +35,8 @@ import { ComplexLike } from '@stdlib/types/object';
 *
 * var out = reim( z );
 * // returns <Float64Array>[ 5.0, 3.0 ]
-*
-* @example
-* var Complex64 = require( `@stdlib/complex/float32` );
-*
-* var z = new Complex64( 5.0, 3.0 );
-*
-* var out = reim( z );
-* // returns <Float32Array>[ 5.0, 3.0 ]
 */
-declare function reim( z: ComplexLike ): Float64Array | Float32Array;
+declare function reim( z: Complex128 ): Float64Array;
 
 
 // EXPORTS //

@@ -25,7 +25,7 @@
 #include <complex.h>
 #include <sys/time.h>
 
-#define NAME "add"
+#define NAME "cadd"
 #define ITERATIONS 1000000
 #define REPEATS 3
 

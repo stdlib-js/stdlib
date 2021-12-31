@@ -36,8 +36,8 @@ Copies values from `x` into `y`.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -47,10 +47,10 @@ ccopy( x.length, x, 1, y, 1 );
 var z = y.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 1.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 2.0
 ```
 
@@ -67,8 +67,8 @@ The `N` and `stride` parameters determine how values from `x` are copied into `y
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var floor = require( '@stdlib/math/base/special/floor' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -80,10 +80,10 @@ ccopy( N, x, -2, y, 1 );
 var z = y.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 5.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 6.0
 ```
 
@@ -93,9 +93,8 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var floor = require( '@stdlib/math/base/special/floor' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 // Initial arrays...
 var x0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -105,18 +104,16 @@ var y0 = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var x1 = new Complex64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Complex64Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
-var N = floor( x0.length / 2 );
-
 // Copy in reverse order every other value from `x1` into `y1`...
-ccopy( N, x1, -2, y1, 1 );
+ccopy( 2, x1, -2, y1, 1 );
 
 var z = y0.get( 2 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 7.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 8.0
 ```
 
@@ -126,8 +123,8 @@ Copies values from `x` into `y` using alternative indexing semantics.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -137,10 +134,10 @@ ccopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
 var z = y.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 1.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 2.0
 ```
 
@@ -153,24 +150,21 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var floor = require( '@stdlib/math/base/special/floor' );
-var real = require( '@stdlib/complex/real' );
-var imag = require( '@stdlib/complex/imag' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
-var N = floor( x.length / 2 );
-
-ccopy.ndarray( N, x, 2, 1, y, -1, y.length-1 );
+ccopy.ndarray( 2, x, 2, 1, y, -1, y.length-1 );
 
 var z = y.get( y.length-1 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 3.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns 4.0
 ```
 

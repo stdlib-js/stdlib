@@ -131,17 +131,14 @@ var v = factorialln( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var incrspace = require( '@stdlib/array/incrspace' );
+var incrspace = require( '@stdlib/array/base/incrspace' );
 var factorialln = require( '@stdlib/math/base/special/factorialln' );
 
-var x;
-var v;
-var i;
+var x = incrspace( -10.0, 50.0, 0.5 );
 
-x = incrspace( -10.0, 50.0, 0.5 );
+var i;
 for ( i = 0; i < x.length; i++ ) {
-    v = factorialln( x[ i ] );
-    console.log( 'x: %d, f(x): %d', x[ i ], v );
+    console.log( 'x: %d, f(x): %d', x[ i ], factorialln( x[ i ] ) );
 }
 ```
 

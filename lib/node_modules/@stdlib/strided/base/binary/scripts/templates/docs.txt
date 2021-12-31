@@ -2,8 +2,8 @@
 
 Applies a binary callback to strided input array elements and assigns results to elements in a strided output array.
 
-```c
-#include <stdint.h>{{INCLUDE_COMPLEX}}
+```c{{INCLUDES}}
+#include <stdint.h>
 
 // Create underlying byte arrays:
 uint8_t x[] = { {{INPUT_ARRAY_BYTES_1}} };
@@ -21,7 +21,7 @@ int64_t shape[] = { {{N}} };
 
 // Define a callback:
 {{CALLBACK_RETURN_TYPE}} add( {{CALLBACK_PARAM_TYPE_1}} x, {{CALLBACK_PARAM_TYPE_2}} y ) {
-    return x + y;
+    {{CALLBACK_BODY}}
 }
 
 // Apply the callback:

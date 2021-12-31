@@ -1,0 +1,37 @@
+
+{{alias}}( fcn, arity[, thisArg] )
+    Returns a function that applies a specified number of arguments to a
+    provided function.
+
+    The returned function *always* invokes the wrapped function with a specified
+    number of arguments, even when the returned function is provided fewer
+    arguments.
+
+    The value for the missing arguments is equal to `undefined`.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    arity: integer
+        Number of arguments.
+
+    thisArg: any (optional)
+        Function context.
+
+    Returns
+    -------
+    out: Function
+        Function wrapper.
+
+    Examples
+    --------
+    > function foo( a, b, c ) { return [ a, b, c ]; };
+    > var bar = {{alias}}( foo, 2 );
+    > var out = bar( 1, 2, 3 )
+    [ 1, 2, undefined ]
+
+    See Also
+    --------
+

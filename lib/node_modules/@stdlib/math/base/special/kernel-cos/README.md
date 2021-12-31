@@ -80,13 +80,13 @@ v = kernelCos( NaN, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var kernelCos = require( '@stdlib/math/base/special/kernel-cos' );
 
 var x = linspace( -PI/4.0, PI/4.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'kernelCos(%d) = %d', x[ i ], kernelCos( x[ i ], 0.0 ) );
 }

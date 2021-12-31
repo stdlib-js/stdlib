@@ -51,7 +51,7 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* int32_t add( uint16_t x, uint16_t y ) {
+* uint16_t add( uint16_t x, uint16_t y ) {
 *     return x + y;
 * }
 *
@@ -59,7 +59,7 @@
 * stdlib_strided_tt_i( arrays, shape, strides, (void *)add );
 */
 void stdlib_strided_tt_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
-	typedef int32_t func_type( const uint16_t x, const uint16_t y );
+	typedef uint16_t func_type( const uint16_t x, const uint16_t y );
 	func_type *f = (func_type *)fcn;
 	STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED( uint16_t, uint16_t, int32_t )
 }

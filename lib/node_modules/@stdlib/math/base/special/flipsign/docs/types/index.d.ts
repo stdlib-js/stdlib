@@ -26,20 +26,20 @@
 * @returns a double-precision floating-point number
 *
 * @example
-* var z = flipsign( -3.14, 10.0 );
-* // returns -3.14
+* var z = flipsign( -3.0, 10.0 );
+* // returns -3.0
 *
 * @example
-* var z = flipsign( -3.14, -1.0 );
-* // returns 3.14
+* var z = flipsign( -3.0, -1.0 );
+* // returns 3.0
 *
 * @example
 * var z = flipsign( 1.0, -0.0 );
 * // returns -1.0
 *
 * @example
-* var z = flipsign( -3.14, -0.0 );
-* // returns 3.14
+* var z = flipsign( -3.0, -0.0 );
+* // returns 3.0
 *
 * @example
 * var z = flipsign( -0.0, 1.0 );

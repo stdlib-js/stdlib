@@ -1,0 +1,34 @@
+
+{{alias}}( fcn, mask[, thisArg] )
+    Returns a function that applies arguments to a provided function according
+    to a specified mask.
+
+    Only those arguments having a truthy mask value are applied to a provided
+    function.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    mask: ArrayLikeObject
+        Mask array.
+
+    thisArg: any (optional)
+        Function context.
+
+    Returns
+    -------
+    out: Function
+        Function wrapper.
+
+    Examples
+    --------
+    > function foo( a, b ) { return [ a, b ]; };
+    > var bar = {{alias}}( foo, [ 1, 0, 1 ] );
+    > var out = bar( 1, 2, 3 )
+    [ 1, 3 ]
+
+    See Also
+    --------
+

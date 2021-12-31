@@ -56,13 +56,13 @@ v = sin( -3.141592653589793/6.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var TWO_PI = require( '@stdlib/constants/float64/two-pi' );
 var sin = require( '@stdlib/math/base/special/sin' );
 
 var x = linspace( 0.0, TWO_PI, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( sin( x[ i ] ) );
 }

@@ -21,13 +21,13 @@ import add = require( './index' );
 
 // TESTS //
 
-// The function returns an array-like object containing numbers...
+// The function returns an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
 
-	add( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectType ArrayLike<number>
+	add( x.length, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectType RealOrComplexArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -46,7 +46,7 @@ import add = require( './index' );
 	add( ( x: number ): number => x, 'float64', x, 1, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a third argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a third argument which is not an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
@@ -79,7 +79,7 @@ import add = require( './index' );
 	add( x.length, 'float64', x, ( x: number ): number => x, 'float64', y, 1, 'float64', z, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a sixth argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a sixth argument which is not an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
@@ -111,7 +111,7 @@ import add = require( './index' );
 	add( x.length, 'float64', x, 1, 'float64', y, ( x: number ): number => x, 'float64', z, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a ninth argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a ninth argument which is not an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
@@ -161,13 +161,13 @@ import add = require( './index' );
 	add( x.length, 'float64', x, 1, 'float64', y, 1, z, 1, 10 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns an array-like object containing numbers...
+// Attached to main export is an `ndarray` method which returns an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
 
-	add.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectType ArrayLike<number>
+	add.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectType RealOrComplexArray
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -186,7 +186,7 @@ import add = require( './index' );
 	add.ndarray( ( x: number ): number => x, 'float64', x, 1, 0, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a third argument which is not an array-like object containing numbers...
+// The compiler throws an error if the `ndarray` method is provided a third argument which is not an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
@@ -235,7 +235,7 @@ import add = require( './index' );
 	add.ndarray( x.length, 'float64', x, 1, ( x: number ): number => x, 'float64', y, 1, 0, 'float64', z, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a seventh argument which is not an array-like object containing numbers...
+// The compiler throws an error if the `ndarray` method is provided a seventh argument which is not an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const z = new Float64Array( 10 );
@@ -283,7 +283,7 @@ import add = require( './index' );
 	add.ndarray( x.length, 'float64', x, 1, 0, 'float64', y, 1, ( x: number ): number => x, 'float64', z, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided an eleventh argument which is not an array-like object containing numbers...
+// The compiler throws an error if the `ndarray` method is provided an eleventh argument which is not an array-like object or complex typed array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );

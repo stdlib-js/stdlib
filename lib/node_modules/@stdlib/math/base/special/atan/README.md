@@ -59,12 +59,12 @@ v = atan( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
+var linspace = require( '@stdlib/array/base/linspace' );
 var atan = require( '@stdlib/math/base/special/atan' );
 
 var x = linspace( -1000.0, 1000.0, 100 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( atan( x[ i ] ) );
 }
