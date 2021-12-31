@@ -1,8 +1,8 @@
 
 {{alias}}( arr, fcn[, thisArg] )
-    Applies a function to each nested element in a four-dimensional nested
-    array and assigns the result to a nested element in a new four-dimensional
-    nested array.
+    Applies a function to each nested element in a four-dimensional nested array
+    and assigns the result to a nested element in a new four-dimensional nested
+    array.
 
     The applied function is provided the following arguments:
 
