@@ -1734,6 +1734,8 @@ isDateObject
 isDigitString
 isEmailAddress
 isEmptyArray
+isEmptyArrayLikeObject
+isEmptyCollection
 isEmptyObject
 isEmptyString
 isEnumerableProperty

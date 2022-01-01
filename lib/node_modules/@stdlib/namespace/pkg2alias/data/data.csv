@@ -1734,6 +1734,8 @@
 "@stdlib/assert/is-digit-string",isDigitString
 "@stdlib/assert/is-email-address",isEmailAddress
 "@stdlib/assert/is-empty-array",isEmptyArray
+"@stdlib/assert/is-empty-array-like-object",isEmptyArrayLikeObject
+"@stdlib/assert/is-empty-collection",isEmptyCollection
 "@stdlib/assert/is-empty-object",isEmptyObject
 "@stdlib/assert/is-empty-string",isEmptyString
 "@stdlib/assert/is-enumerable-property",isEnumerableProperty
