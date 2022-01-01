@@ -16,44 +16,112 @@
 * limitations under the License.
 */
 
+import array = require( '@stdlib/ndarray/array' );
 import reduce = require( './index' );
 
-const sum = ( acc: number, value: number ): number => {
+/**
+* Callback function.
+*
+* @param acc - accumulated value
+* @param v - array element
+* @returns result
+*/
+function clbk( acc: number, value: number ): number {
 	return acc + value;
-};
+}
 
 
 // TESTS //
 
-// The function returns the accumulated value...
+// The function returns the accumulated value when provided a collection...
 {
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, sum ); // $ExpectType any
-	reduce( [ -1, 1, 2 ], 100, sum ); // $ExpectType any
-	reduce( [ -1, 1, 2 ], 0, sum, {} ); // $ExpectType any
+	reduce( [ 0, 1, 1, NaN, 2 ], 0, clbk ); // $ExpectType any
+	reduce( [ -1, 1, 2 ], 100, clbk ); // $ExpectType any
+	reduce( [ -1, 1, 2 ], 0, clbk, {} ); // $ExpectType any
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a collection...
+// The function returns the accumulated value when provided an ndarray...
 {
-	reduce( 2, 0, sum ); // $ExpectError
-	reduce( false, 0, sum ); // $ExpectError
-	reduce( true, 0, sum ); // $ExpectError
-	reduce( {}, 0, sum ); // $ExpectError
+	const arr = array( [ 1, 2, 3, 4, 5, 6 ] );
+
+	reduce( arr, 0, clbk ); // $ExpectType any
+	reduce( arr, 100, clbk ); // $ExpectType any
+	reduce( arr, 0, clbk, {} ); // $ExpectType any
 }
 
-// The compiler throws an error if the function is provided a third argument which is not a function...
+// The compiler throws an error if the function is provided a first argument which is not a collection or ndarray...
 {
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, 2 ); // $ExpectError
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, false ); // $ExpectError
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, true ); // $ExpectError
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, 'abc' ); // $ExpectError
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, {} ); // $ExpectError
-	reduce( [ 0, 1, 1, NaN, 2 ], 0, [] ); // $ExpectError
+	reduce( 2, 0, clbk ); // $ExpectError
+	reduce( false, 0, clbk ); // $ExpectError
+	reduce( true, 0, clbk ); // $ExpectError
+	reduce( null, 0, clbk ); // $ExpectError
+	reduce( {}, 0, clbk ); // $ExpectError
+
+	reduce( 2, 0, clbk, {} ); // $ExpectError
+	reduce( false, 0, clbk, {} ); // $ExpectError
+	reduce( true, 0, clbk, {} ); // $ExpectError
+	reduce( null, 0, clbk, {} ); // $ExpectError
+	reduce( {}, 0, clbk, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an invalid number of arguments...
+// The compiler throws an error if the function is provided a third argument which is not a function with a supported signature...
 {
+	const arr1 = [ 0, 1, 1, NaN, 2 ];
+
+	reduce( arr1, 0, 'abc' ); // $ExpectError
+	reduce( arr1, 0, 2 ); // $ExpectError
+	reduce( arr1, 0, false ); // $ExpectError
+	reduce( arr1, 0, true ); // $ExpectError
+	reduce( arr1, 0, null ); // $ExpectError
+	reduce( arr1, 0, {} ); // $ExpectError
+	reduce( arr1, 0, [] ); // $ExpectError
+
+	reduce( arr1, 0, 'abc', {} ); // $ExpectError
+	reduce( arr1, 0, 2, {} ); // $ExpectError
+	reduce( arr1, 0, false, {} ); // $ExpectError
+	reduce( arr1, 0, true, {} ); // $ExpectError
+	reduce( arr1, 0, null, {} ); // $ExpectError
+	reduce( arr1, 0, {}, {} ); // $ExpectError
+	reduce( arr1, 0, [], {} ); // $ExpectError
+
+	reduce( arr1, 0, ( x: number, y: number, z: number, w: number ): number => x + y + z + w ); // $ExpectError
+	reduce( arr1, 0, ( x: number, y: number, z: number, w: number ): number => x + y + z + w, {} ); // $ExpectError
+
+	const arr2 = array( [ 0, 1, 1, NaN, 2 ] );
+
+	reduce( arr2, 0, 'abc' ); // $ExpectError
+	reduce( arr2, 0, 2 ); // $ExpectError
+	reduce( arr2, 0, false ); // $ExpectError
+	reduce( arr2, 0, true ); // $ExpectError
+	reduce( arr2, 0, null ); // $ExpectError
+	reduce( arr2, 0, {} ); // $ExpectError
+	reduce( arr2, 0, [] ); // $ExpectError
+
+	reduce( arr2, 0, 'abc', {} ); // $ExpectError
+	reduce( arr2, 0, 2, {} ); // $ExpectError
+	reduce( arr2, 0, false, {} ); // $ExpectError
+	reduce( arr2, 0, true, {} ); // $ExpectError
+	reduce( arr2, 0, null, {} ); // $ExpectError
+	reduce( arr2, 0, {}, {} ); // $ExpectError
+	reduce( arr2, 0, [], {} ); // $ExpectError
+
+	reduce( arr2, 0, ( x: number, y: number, z: number, w: number ): number => x + y + z + w ); // $ExpectError
+	reduce( arr2, 0, ( x: number, y: number, z: number, w: number ): number => x + y + z + w, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	const arr1 = [ 1, 2, 3 ];
+
 	reduce(); // $ExpectError
-	reduce( [ 1, 2, 3 ] ); // $ExpectError
-	reduce( [ 1, 2, 3 ], 0 ); // $ExpectError
-	reduce( [ 1, 2, 3 ], 0, sum, {}, 3 ); // $ExpectError
+	reduce( arr1 ); // $ExpectError
+	reduce( arr1, 0 ); // $ExpectError
+	reduce( arr1, 0, clbk, {}, 3 ); // $ExpectError
+
+	const arr2 = array( [ 1, 2, 3 ] );
+
+	reduce(); // $ExpectError
+	reduce( arr2 ); // $ExpectError
+	reduce( arr2, 0 ); // $ExpectError
+	reduce( arr2, 0, clbk, {}, 3 ); // $ExpectError
 }
