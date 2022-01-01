@@ -72,5 +72,5 @@ jobs:
         env:
           webhook_url: ${{ secrets.STDLIB_COVERAGE_URL }}
           webhook_secret: ${{ secrets.STDLIB_WEBHOOK_SECRET }}
-          data: '${{ steps.extract-coverage.outputs.coverage }}'
+          data: '{ "coverage": ${{ steps.extract-coverage.outputs.coverage }}, "run_id": "${{ github.run_id }}" }'
         if: ${{ false }}
