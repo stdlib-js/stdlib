@@ -95,7 +95,7 @@
     "d3-format": "^1.0.0",
     "d3-scale": "^1.0.0",
     "d3-shape": "^1.0.0",
-    "d3-time-format": "^2.0.0",
+    "d3-time-format": "^4.1.0",
     "debug": "^2.6.9",
     "glob": "^7.0.5",
     "minimist": "^1.2.0",
