@@ -20,7 +20,7 @@ limitations under the License.
 
 # reduce
 
-> Apply a function against an accumulator and each element in a array and return the accumulated result.
+> Apply a function against an accumulator and each element in an array and return the accumulated result.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
