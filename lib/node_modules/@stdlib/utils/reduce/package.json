@@ -70,6 +70,10 @@
     "typed array",
     "typed",
     "array",
-    "array-like"
+    "array-like",
+    "ndarray",
+    "tensor",
+    "matrix",
+    "vector"
   ]
 }
