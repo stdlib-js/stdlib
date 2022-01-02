@@ -2389,6 +2389,7 @@
 "@stdlib/regexp/dirname-posix",reDirnamePosix
 "@stdlib/regexp/dirname-windows",reDirnameWindows
 "@stdlib/utils/reduce",reduce
+"@stdlib/utils/reduce2d",reduce2d
 "@stdlib/utils/async/reduce",reduceAsync
 "@stdlib/utils/reduce-right",reduceRight
 "@stdlib/utils/async/reduce-right",reduceRightAsync
