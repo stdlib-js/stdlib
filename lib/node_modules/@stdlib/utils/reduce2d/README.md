@@ -101,6 +101,10 @@ var cnt = ctx.count;
 
 <section class="notes">
 
+## Notes
+
+-   The function **requires** an array-like object containing an `initial` value for the accumulator for each reduction. The number of `initial` values must equal the size of the outermost input array dimension.
+
 </section>
 
 <!-- /.notes -->
