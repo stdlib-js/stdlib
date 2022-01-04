@@ -46,13 +46,15 @@ Returns a list of array data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+// returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
 ```
 
 The output `array` contains the following data types:
 
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
+-   `complex64`: single-precision complex floating-point numbers.
+-   `complex128`: double-precision complex floating-point numbers.
 -   `generic`: values of any type.
 -   `int16`: signed 16-bit integers.
 -   `int32`: signed 32-bit integers.
