@@ -73,7 +73,7 @@ type Binary = ( value: any, index: number ) => any;
 * @param n - iteration count
 * @returns iterator value
 */
-type Tertiary = ( value: any, index: number, n: number ) => any;
+type Ternary = ( value: any, index: number, n: number ) => any;
 
 /**
 * Map function invoked for each iterated value.
@@ -95,7 +95,7 @@ type Quaternary = ( value: any, index: number, n: number, src: ArrayLike<any> ) 
 * @param src - source array-like object
 * @returns iterator value
 */
-type MapFunction = Nullary | Unary | Binary | Tertiary | Quaternary;
+type MapFunction = Nullary | Unary | Binary | Ternary | Quaternary;
 
 /**
 * Returns an iterator which repeatedly iterates over each element in an array-like object.
