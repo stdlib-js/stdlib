@@ -1,0 +1,29 @@
+
+{{alias}}( a, b )
+    Tests if two arguments have the same native class.
+
+    Parameters
+    ----------
+    a: any
+        First input value.
+
+    b: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments have the same native class.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 3.14, new Number( 3.14 ) )
+    true
+    > bool = {{alias}}( 'beep', 'boop' )
+    true
+    > bool = {{alias}}( {}, [] )
+    false
+
+    See Also
+    --------
+
