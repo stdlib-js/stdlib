@@ -46,7 +46,7 @@ If provided a `dtype` argument, returns a list of array [data types][@stdlib/arr
 
 ```javascript
 var out = sameKindCasts( 'float64' );
-// e.g., returns [ 'float64', 'float32', 'generic' ]
+// e.g., returns [ 'float64', 'float32', 'complex64', 'complex128', 'generic' ]
 ```
 
 If not provided a `dtype` argument, the function returns a casting table.
