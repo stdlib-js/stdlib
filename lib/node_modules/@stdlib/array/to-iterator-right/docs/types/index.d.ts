@@ -58,7 +58,7 @@ type Binary = ( value: any, index: number ) => any;
 * @param src - source array-like object
 * @returns iterator value
 */
-type Tertiary = ( value: any, index: number, src: ArrayLike<any> ) => any;
+type Ternary = ( value: any, index: number, src: ArrayLike<any> ) => any;
 
 /**
 * Map function invoked for each iterated value.
@@ -68,7 +68,7 @@ type Tertiary = ( value: any, index: number, src: ArrayLike<any> ) => any;
 * @param src - source array-like object
 * @returns iterator value
 */
-type MapFunction = Nullary | Unary | Binary | Tertiary;
+type MapFunction = Nullary | Unary | Binary | Ternary;
 
 /**
 * Returns an iterator which iterates from right to left over each element in an array-like object.
