@@ -1,0 +1,49 @@
+
+{{alias}}( x )
+    Converts an ndarray-like to an object likely to have the same "shape".
+
+    The returned object has the following properties:
+
+    - ref: reference to the original ndarray-like object.
+    - dtype: underlying data type.
+    - data: data buffer.
+    - length: number of elements.
+    - shape: array dimensions.
+    - strides: array strides.
+    - offset: index offset.
+    - order: order.
+    - accessors: boolean indicating whether the data buffer uses accessors for
+      getting and setting elements.
+    - getter: accessor for retrieving a data buffer element.
+    - setter: accessor for setting a data buffer element.
+
+    The getter accessor accepts two arguments:
+
+    - data: data buffer.
+    - idx: element index.
+
+    The setter accessor accepts three arguments:
+
+    - data: data buffer.
+    - idx: element index.
+    - value: value to set.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: Object
+        Object containing ndarray meta data.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( arr )
+    {...}
+
+    See Also
+    --------
+
