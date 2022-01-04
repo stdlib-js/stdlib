@@ -1,7 +1,7 @@
 
 {{alias}}( src[, begin[, end]][, mapFcn[, thisArg]] )
-    Returns an iterator which iterates over the elements of an array-like
-    object view.
+    Returns an iterator which iterates over the elements of an array-like object
+    view.
 
     When invoked, an input function is provided four arguments:
 
