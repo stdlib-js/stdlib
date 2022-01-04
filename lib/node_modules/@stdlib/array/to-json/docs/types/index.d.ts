@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray } from '@stdlib/types/array';
+import { TypedArray, ComplexTypedArray } from '@stdlib/types/array';
+
+/**
+* Typed array data type.
+*/
+type dtype = 'Float64Array' | 'Float32Array' | 'Int32Array' | 'Uint32Array' | 'Int16Array' | 'Uint16Array' | 'Int8Array' | 'Uint8Array' | 'Uint8ClampedArray' | 'Complex64Array' | 'Complex128Array'; // tslint:disable-line:max-line-length
 
 /**
 * JSON representation of typed array.
@@ -29,7 +34,7 @@ interface JSONRepresentation {
 	/**
 	* Typed array type.
 	*/
-	type: 'Float64Array' | 'Float32Array' | 'Int32Array' | 'Uint32Array' | 'Int16Array' | 'Uint16Array' | 'Int8Array' | 'Uint8Array' | 'Uint8ClampedArray'; // tslint:disable-line:max-line-length
+	type: dtype;
 
 	/**
 	* Typed array data as a generic array.
@@ -56,7 +61,7 @@ interface JSONRepresentation {
 * var json = toJSON( arr );
 * // returns { 'type': 'Float64Array', 'data': [ 5.0, 3.0 ] }
 */
-declare function toJSON( arr: TypedArray ): JSONRepresentation;
+declare function toJSON( arr: TypedArray | ComplexTypedArray ): JSONRepresentation; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
