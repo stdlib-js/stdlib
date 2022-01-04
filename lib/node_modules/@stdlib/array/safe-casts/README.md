@@ -46,7 +46,7 @@ If provided a `dtype` argument, returns a list of array [data types][@stdlib/arr
 
 ```javascript
 var out = safeCasts( 'float32' );
-// e.g., returns [ 'float32', 'float64', 'generic' ]
+// e.g., returns [ 'float32', 'float64', 'complex64', 'complex128', 'generic' ]
 ```
 
 If not provided a `dtype` argument, the function returns a casting table.
