@@ -57,6 +57,8 @@ The function recognizes the following data types:
 
 -   `float64`: double-precision floating-point numbers (IEEE 754)
 -   `float32`: single-precision floating-point numbers (IEEE 754)
+-   `complex128`: double-precision complex floating-point numbers
+-   `complex64`: single-precision complex floating-point numbers
 -   `int32`: 32-bit two's complement signed integers
 -   `uint32`: 32-bit unsigned integers
 -   `int16`: 16-bit two's complement signed integers
@@ -364,10 +366,10 @@ pool.free( arr );
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var typedarraypool = require( '@stdlib/array/pool' ).factory;
+var typedarraypool = require( '@stdlib/array/pool' );
 
 // Create a typed array pool which can allocate at most 1GB:
-var typedarray = typedarraypool({
+var typedarray = typedarraypool.factory({
     'highWaterMark': 1e9
 });
 
