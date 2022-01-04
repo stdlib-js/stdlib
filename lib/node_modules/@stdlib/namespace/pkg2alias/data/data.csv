@@ -1846,6 +1846,8 @@
 "@stdlib/assert/is-relative-path",isRelativePath
 "@stdlib/assert/is-safe-integer",isSafeInteger
 "@stdlib/assert/is-safe-integer-array",isSafeIntegerArray
+"@stdlib/assert/is-same-native-class",isSameNativeClass
+"@stdlib/assert/is-same-type",isSameType
 "@stdlib/assert/is-same-value",isSameValue
 "@stdlib/assert/is-same-value-zero",isSameValueZero
 "@stdlib/assert/is-sharedarraybuffer",isSharedArrayBuffer

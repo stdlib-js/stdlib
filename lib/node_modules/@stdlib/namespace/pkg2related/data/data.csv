@@ -1846,6 +1846,8 @@
 "@stdlib/assert/is-relative-path","@stdlib/assert/is-absolute-path"
 "@stdlib/assert/is-safe-integer","@stdlib/assert/is-integer,@stdlib/assert/is-number"
 "@stdlib/assert/is-safe-integer-array","@stdlib/assert/is-array,@stdlib/assert/is-safe-integer"
+"@stdlib/assert/is-same-native-class","@stdlib/assert/is-same-type,@stdlib/assert/is-same-value,@stdlib/assert/is-strict-equal"
+"@stdlib/assert/is-same-type","@stdlib/assert/is-same-native-class,@stdlib/assert/is-same-value,@stdlib/assert/is-strict-equal"
 "@stdlib/assert/is-same-value","@stdlib/assert/is-same-value-zero,@stdlib/assert/is-strict-equal"
 "@stdlib/assert/is-same-value-zero","@stdlib/assert/is-same-value,@stdlib/assert/is-strict-equal"
 "@stdlib/assert/is-sharedarraybuffer","@stdlib/assert/is-arraybuffer,@stdlib/assert/is-typed-array"

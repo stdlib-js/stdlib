@@ -1846,6 +1846,8 @@ isRegExpString
 isRelativePath
 isSafeInteger
 isSafeIntegerArray
+isSameNativeClass
+isSameType
 isSameValue
 isSameValueZero
 isSharedArrayBuffer
