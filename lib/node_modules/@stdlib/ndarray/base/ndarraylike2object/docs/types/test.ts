@@ -51,7 +51,7 @@ function array(): ndarray {
 
 // TESTS //
 
-// The function returns a ndarray object...
+// The function returns an ndarray object...
 {
 	const x = array();
 	ndarraylike2object( x ); // $ExpectType ndarrayObject

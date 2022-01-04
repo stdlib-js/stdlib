@@ -17,6 +17,17 @@
     - getter: accessor for retrieving a data buffer element.
     - setter: accessor for setting a data buffer element.
 
+    The getter accessor accepts two arguments:
+
+    - data: data buffer.
+    - idx: element index.
+
+    The setter accessor accepts three arguments:
+
+    - data: data buffer.
+    - idx: element index.
+    - value: value to set.
+
     Parameters
     ----------
     x: ndarray

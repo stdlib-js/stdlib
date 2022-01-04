@@ -76,6 +76,17 @@ var obj = ndarraylike2object( arr );
     -   **getter**: accessor for retrieving a data buffer element.
     -   **setter**: accessor for setting a data buffer element.
 
+-   The getter accessor accepts two arguments:
+
+    -   **data**: data buffer.
+    -   **idx**: element index.
+
+-   The setter accessor accepts three arguments:
+
+    -   **data**: data buffer.
+    -   **idx**: element index.
+    -   **value**: value to set.
+
 -   This function is intended as a potential performance optimization. In V8, for example, even if two objects share common properties, if those properties were added in different orders or if one object has additional properties not shared by the other object, then those objects will have different "hidden" classes. If a function is provided many objects having different "shapes", some JavaScript VMs (e.g., V8) will consider the function "megamorphic" and fail to perform various runtime optimizations. Accordingly, the intent of this function is to standardize the "shape" of the object holding [`ndarray`][@stdlib/ndarray/ctor] meta data to ensure that internal functions operating on ndarrays are provided consistent argument "shapes".
 
 </section>
