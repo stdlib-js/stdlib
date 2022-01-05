@@ -385,7 +385,11 @@ update_version() {
 	echo 'Updating project version...' >&2
 	echo "Current version: ${current_version}" >&2
 	echo "Release version: ${release_version}" >&2
-	sed -i '' "s/${current_version}/${release_version}/" "${package_json}"
+	if [[ "$OSTYPE" == "darwin"* ]]; then
+		sed -i '' "s/${current_version}/${release_version}/" "${package_json}"
+	else
+		sed -i "s/${current_version}/${release_version}/" "${package_json}"
+	fi
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Encountered an error when updating project version.' >&2
