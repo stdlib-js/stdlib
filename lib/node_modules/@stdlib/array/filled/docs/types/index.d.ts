@@ -20,14 +20,14 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
 import { IterableIterator } from '@stdlib/types/iter';
 
 /**
 * Array or typed array.
 */
-type ArrayOrTypedArray = Array<any> | TypedArray;
+type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 
 /**
 * Creates a filled array.
@@ -36,6 +36,8 @@ type ArrayOrTypedArray = Array<any> | TypedArray;
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -155,7 +157,7 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: st
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: string ): TypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: string ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -185,7 +187,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: string ): TypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: string ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -214,7 +216,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: string ): TypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: string ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 
 // EXPORTS //

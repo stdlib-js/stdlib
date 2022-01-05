@@ -71,14 +71,14 @@ function next(): any {
 	filledarray( 1.0, it, 'uint8c' ); // $ExpectType ArrayOrTypedArray
 
 	const buf = new ArrayBuffer( 32 );
-	filledarray( 1.0, buf ); // $ExpectType TypedArray
-	filledarray( 1.0, buf, 'uint32' ); // $ExpectType TypedArray
+	filledarray( 1.0, buf ); // $ExpectType RealOrComplexTypedArray
+	filledarray( 1.0, buf, 'uint32' ); // $ExpectType RealOrComplexTypedArray
 
-	filledarray( 1.0, buf, 8 ); // $ExpectType TypedArray
-	filledarray( 1.0, buf, 8, 'uint16' ); // $ExpectType TypedArray
+	filledarray( 1.0, buf, 8 ); // $ExpectType RealOrComplexTypedArray
+	filledarray( 1.0, buf, 8, 'uint16' ); // $ExpectType RealOrComplexTypedArray
 
-	filledarray( 1.0, buf, 8, 2 ); // $ExpectType TypedArray
-	filledarray( 1.0, buf, 8, 2, 'int16' ); // $ExpectType TypedArray
+	filledarray( 1.0, buf, 8, 2 ); // $ExpectType RealOrComplexTypedArray
+	filledarray( 1.0, buf, 8, 2, 'int16' ); // $ExpectType RealOrComplexTypedArray
 }
 
 // The compiler throws an error if the function is not provided a valid length, typed array, array-like object, `ArrayBuffer`, or iterable argument...

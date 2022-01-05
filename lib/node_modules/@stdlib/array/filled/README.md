@@ -53,6 +53,8 @@ The function recognizes the following data types:
 
 -   `float64`: double-precision floating-point numbers (IEEE 754)
 -   `float32`: single-precision floating-point numbers (IEEE 754)
+-   `complex128`: double-precision complex floating-point numbers
+-   `complex64`: single-precision complex floating-point numbers
 -   `int32`: 32-bit two's complement signed integers
 -   `uint32`: 32-bit unsigned integers
 -   `int16`: 16-bit two's complement signed integers
@@ -178,13 +180,13 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var dtypes = require( '@stdlib/array/dtypes' );
+var dtypes = require( '@stdlib/array/typed-dtypes' );
 var filledarray = require( '@stdlib/array/filled' );
 
 // Generate a random number:
 var r = discreteUniform( 0, 100 );
 
-// Get the list of supported array data types:
+// Get a list of array data types:
 var dt = dtypes();
 
 // Generate filled arrays...
