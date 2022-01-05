@@ -385,7 +385,11 @@ update_version() {
 	echo 'Updating project version...' >&2
 	echo "Current version: ${current_version}" >&2
 	echo "Release version: ${release_version}" >&2
-	sed -i '' "s/${current_version}/${release_version}/" "${package_json}"
+	if [[ "$OSTYPE" == "darwin"* ]]; then
+		sed -i '' "s/${current_version}/${release_version}/" "${package_json}"
+	else
+		sed -i "s/${current_version}/${release_version}/" "${package_json}"
+	fi
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Encountered an error when updating project version.' >&2
@@ -408,6 +412,46 @@ update_version() {
 	fi
 	echo '' >&2
 	return 0
+}
+
+# Updates the `@stdlib` dependencies in the root package.json to their latest versions.
+update_internal_dependencies() {
+	echo 'Updating `@stdlib` dependency versions...' >&2
+	echo 'Getting list of `@stdlib` dependencies...' >&2
+	dependencies="$(
+		jq -r '
+			.dependencies |
+			to_entries |
+			map(select(.key | startswith("@stdlib/"))) |
+			map(.key) |
+			join(" ")
+		' "${package_json}"
+	)"
+	if [[ "$?" -ne 0 ]]; then
+		echo '' >&2
+		echo 'Error: unexpected error. Encountered an error when getting list of `@stdlib` dependencies.' >&2
+		echo '' >&2
+		return 1
+	fi
+	echo 'Retrieving latest versions for `@stdlib` dependencies...' >&2
+	for dependency in ${dependencies}; do
+		pkgVersion="$(npm view "${dependency}" version)"
+		echo "Updating ${dependency} to ${pkgVersion} in ${package_json}..." >&2
+		echo "s/\"${dependency}\":[^,]*/\"${dependency}\": \"${pkgVersion}\"/"	>&2
+		if [[ "$OSTYPE" == "darwin"* ]]; then
+			sed -i '' "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
+		else
+			sed -i "s%\"${dependency}\":[^,]*%\"${dependency}\": \"${pkgVersion}\"%" "${package_json}"
+		fi
+		if [[ "$?" -ne 0 ]]; then
+			echo '' >&2
+			echo "Error: unexpected error. Encountered an error when updating ${dependency}." >&2
+			echo '' >&2
+			return 1
+		fi
+		echo "Updated version for ${dependency}: ${pkgVersion}" >&2
+	done
+	echo 'Successfully updated dependency versions.' >&2
 }
 
 # Generates and publishes distributable bundles.
@@ -603,6 +647,11 @@ main() {
 		on_error 1
 	fi
 	update_version
+	if [[ "$?" -ne 0 ]]; then
+		revert_changes
+		on_error 1
+	fi
+	update_internal_dependencies
 	if [[ "$?" -ne 0 ]]; then
 		revert_changes
 		on_error 1
