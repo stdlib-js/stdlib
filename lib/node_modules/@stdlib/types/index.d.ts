@@ -24,12 +24,12 @@
 * @example
 * import * as array from `@stdlib/types/array`;
 *
-* const x: array.ArrayLike = [ 1, 2, 3 ];
+* const x: array.ArrayLike<number> = [ 1, 2, 3 ];
 *
 * @example
 * import { ArrayLike } from `@stdlib/types/array`;
 *
-* const x: ArrayLike = [ 1, 2, 3 ];
+* const x: ArrayLike<number> = [ 1, 2, 3 ];
 */
 declare module '@stdlib/types/array' {
 	import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/object';
@@ -64,6 +64,15 @@ declare module '@stdlib/types/array' {
 	type NumericArray = Array<number> | TypedArray;
 
 	/**
+	* An array or typed array.
+	*
+	* @example
+	* const x: ArrayOrTypedArray = [ 1, 2, 3 ];
+	* const y: ArrayOrTypedArray = new Float64Array( 10 );
+	*/
+	type ArrayOrTypedArray = Array<any> | TypedArray;
+
+	/**
 	* A typed array.
 	*
 	* @example
@@ -82,12 +91,38 @@ declare module '@stdlib/types/array' {
 	type IntegerTypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array; // tslint:disable-line:max-line-length
 
 	/**
+	* A floating-point typed array.
+	*
+	* @example
+	* const x: FloatTypedArray = new Float64Array( 10 );
+	* const y: FloatTypedArray = new Float32Array( 10 );
+	*/
+	type FloatTypedArray = Float32Array | Float64Array;
+
+	/**
 	* A complex number typed array.
 	*
 	* @example
 	* const x: ComplexTypedArray = new Complex64Array( 10 );
 	*/
 	type ComplexTypedArray = Complex64Array | Complex128Array;
+
+	/**
+	* A real or complex array.
+	*
+	* @example
+	* const x: RealOrComplexArray = new Float64Array( 10 );
+	* const y: RealOrComplexArray = [ 1, 2, 3 ];
+	*/
+	type RealOrComplexArray = NumericArray | ComplexTypedArray;
+
+	/**
+	* A real or complex typed array.
+	*
+	* @example
+	* const x: RealOrComplexTypedArray = new Float64Array( 10 );
+	*/
+	type RealOrComplexTypedArray = TypedArray | ComplexTypedArray;
 
 	/**
 	* A complex number array-like value.
