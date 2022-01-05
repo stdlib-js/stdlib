@@ -109,7 +109,7 @@ type BinaryFcn = ( value: any, next: Callback ) => void;
 * @param index - collection index
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type TertiaryFcn = ( value: any, index: number, next: Callback ) => void;
+type TernaryFcn = ( value: any, index: number, next: Callback ) => void;
 
 /**
 * Function invoked for each element in a collection.
@@ -129,7 +129,7 @@ type QuaternaryFcn = ( value: any, index: number, collection: Collection, next: 
 * @param collection - input collection
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type Fcn = BinaryFcn | TertiaryFcn | QuaternaryFcn;
+type Fcn = BinaryFcn | TernaryFcn | QuaternaryFcn;
 
 /**
 * Invokes the provided function for each element in a collection and updates a collection in-place.

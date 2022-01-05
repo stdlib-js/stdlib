@@ -54,7 +54,7 @@ type Binary = ( value: any, index: number ) => any;
 * @param collection - input collection
 * @returns updated element
 */
-type Tertiary = ( value: any, index: number, collection: Collection ) => any;
+type Ternary = ( value: any, index: number, collection: Collection ) => any;
 
 /**
 * Returns an updated collection element.
@@ -64,7 +64,7 @@ type Tertiary = ( value: any, index: number, collection: Collection ) => any;
 * @param collection - input collection
 * @returns updated element
 */
-type Callback = Nullary | Unary | Binary | Tertiary;
+type Callback = Nullary | Unary | Binary | Ternary;
 
 /**
 * Invokes a function once for each element in a collection and updates the collection in-place, iterating from right to left.

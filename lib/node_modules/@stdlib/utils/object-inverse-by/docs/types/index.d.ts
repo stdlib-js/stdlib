@@ -60,7 +60,7 @@ type Binary = ( key: string, value: any ) => string;
 * @param obj - the input object
 * @returns key in inverted object
 */
-type Tertiary = ( key: string, value: any, obj: any ) => string;
+type Ternary = ( key: string, value: any, obj: any ) => string;
 
 /**
 * Returns a value for an object element that can be serialized as an object key.
@@ -70,7 +70,7 @@ type Tertiary = ( key: string, value: any, obj: any ) => string;
 * @param obj - the input object
 * @returns key in inverted object
 */
-type Transform = Nullary | Unary | Binary | Tertiary;
+type Transform = Nullary | Unary | Binary | Ternary;
 
 /**
 * Inverts an object, such that keys become values and values become keys, according to a transform function.

@@ -72,7 +72,7 @@ type Binary = ( value: number, index: number ) => void;
 * @param index - tuple index
 * @param field - tuple field name
 */
-type Tertiary = ( value: number, index: number, field: string ) => void;
+type Ternary = ( value: number, index: number, field: string ) => void;
 
 /**
 * Function invoked for each tuple element.
@@ -92,7 +92,7 @@ type Quaternary = ( value: any, index: number, field: string, tuple: Tuple ) => 
 * @param field - tuple field name
 * @param tuple - tuple on which the method is invoked
 */
-type Callback = Nullary | Unary | Binary | Tertiary | Quaternary;
+type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
 
 /**
 * Predicate function which tests tuple elements.
@@ -126,7 +126,7 @@ type BinaryPredicate = ( value: number, index: number ) => boolean;
 * @param field - tuple field name
 * @returns boolean indicating whether tuple element passes a test
 */
-type TertiaryPredicate = ( value: number, index: number, field: string ) => boolean; // tslint-disable-line max-line-length
+type TernaryPredicate = ( value: number, index: number, field: string ) => boolean; // tslint-disable-line max-line-length
 
 /**
 * Predicate function which tests tuple elements.
@@ -148,7 +148,7 @@ type QuaternaryPredicate = ( value: any, index: number, field: string, tuple: Tu
 * @param tuple - tuple on which the method is invoked
 * @returns boolean indicating whether tuple element passes a test
 */
-type PredicateFunction = NullaryPredicate | UnaryPredicate | BinaryPredicate | TertiaryPredicate | QuaternaryPredicate; // tslint-disable-line max-line-length
+type PredicateFunction = NullaryPredicate | UnaryPredicate | BinaryPredicate | TernaryPredicate | QuaternaryPredicate; // tslint-disable-line max-line-length
 
 /**
 * Function applied against an accumulator.
@@ -182,7 +182,7 @@ type BinaryReducer = ( acc: any, value: number ) => any;
 * @param index - tuple index
 * @returns value assigned to the accumulator
 */
-type TertiaryReducer = ( acc: any, value: number, index: number ) => any;
+type TernaryReducer = ( acc: any, value: number, index: number ) => any;
 
 /**
 * Function applied against an accumulator.
@@ -217,7 +217,7 @@ type QuinaryReducer = ( acc: any, value: number, index: number, field: string, t
 * @param tuple - tuple on which the method is invoked
 * @returns value assigned to the accumulator
 */
-type Reducer = NullaryReducer | UnaryReducer | BinaryReducer | TertiaryReducer | QuaternaryReducer | QuinaryReducer; // tslint-disable-line max-line-length
+type Reducer = NullaryReducer | UnaryReducer | BinaryReducer | TernaryReducer | QuaternaryReducer | QuinaryReducer; // tslint-disable-line max-line-length
 
 /**
 * Function which specifies the sort order.
@@ -269,7 +269,7 @@ type FactoryBinary = ( value: number, index: number ) => number;
 * @param field - tuple field
 * @returns transformed value
 */
-type FactoryTertiary = ( value: number, index: number, field: string ) => number; // tslint-disable-line max-line-length
+type FactoryTernary = ( value: number, index: number, field: string ) => number;
 
 /**
 * Callback invoked for each source element.
@@ -279,7 +279,7 @@ type FactoryTertiary = ( value: number, index: number, field: string ) => number
 * @param field - tuple field
 * @returns transformed value
 */
-type FactoryCallback = FactoryNullary | FactoryUnary | FactoryBinary | FactoryTertiary; // tslint-disable-line max-line-length
+type FactoryCallback = FactoryNullary | FactoryUnary | FactoryBinary | FactoryTernary; // tslint-disable-line max-line-length
 
 /**
 * Callback invoked for each field.

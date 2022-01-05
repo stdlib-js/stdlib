@@ -109,7 +109,7 @@ type BinaryTransform = ( value: any, next: Callback ) => void;
 * @param value - object value corresponding to `key`
 * @param next - a callback to be invoked after processing an object `value`
 */
-type TertiaryTransform = ( value: any, index: number, next: Callback ) => void;
+type TernaryTransform = ( value: any, index: number, next: Callback ) => void;
 
 /**
 * Transform function.
@@ -129,7 +129,7 @@ type QuaternaryTransform = ( value: any, index: number, obj: any, next: Callback
 * @param obj - the input object
 * @param next - a callback to be invoked after processing an object `value`
 */
-type Transform = Unary | BinaryTransform | TertiaryTransform | QuaternaryTransform; // tslint-disable-line max-line-length
+type Transform = Unary | BinaryTransform | TernaryTransform | QuaternaryTransform; // tslint-disable-line max-line-length
 
 /**
 * Maps keys from one object to a new object having the same values.

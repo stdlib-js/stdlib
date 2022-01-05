@@ -54,7 +54,7 @@ type BinaryPredicate = ( value: any, index: number ) => boolean;
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type TertiaryPredicate = ( value: any, index: number, collection: Collection ) => boolean; // tslint-disable-line max-line-length
+type TernaryPredicate = ( value: any, index: number, collection: Collection ) => boolean; // tslint-disable-line max-line-length
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -64,7 +64,7 @@ type TertiaryPredicate = ( value: any, index: number, collection: Collection ) =
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Predicate = NullaryPredicate | UnaryPredicate | BinaryPredicate | TertiaryPredicate; // tslint-disable-line max-line-length
+type Predicate = NullaryPredicate | UnaryPredicate | BinaryPredicate | TernaryPredicate; // tslint-disable-line max-line-length
 
 /**
 * Function invoked for each collection element passing a test.
@@ -93,7 +93,7 @@ type Binary = ( value: any, index: number ) => void;
 * @param index - collection index
 * @param collection - input collection
 */
-type Tertiary = ( value: any, index: number, collection: Collection ) => void;
+type Ternary = ( value: any, index: number, collection: Collection ) => void;
 
 /**
 * Function invoked for each collection element passing a test.
@@ -102,7 +102,7 @@ type Tertiary = ( value: any, index: number, collection: Collection ) => void;
 * @param index - collection index
 * @param collection - input collection
 */
-type Callback = Nullary | Unary | Binary | Tertiary;
+type Callback = Nullary | Unary | Binary | Ternary;
 
 /**
 * While a test condition is true, invokes a function once for each element in a collection, iterating from right to left.

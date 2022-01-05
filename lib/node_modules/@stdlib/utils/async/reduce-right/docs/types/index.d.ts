@@ -77,7 +77,7 @@ type Callback = Nullary | Unary | Binary;
 * @param value - collection value
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type TertiaryReducer = ( accumulator: any, value: any, next: Callback ) => void;
+type TernaryReducer = ( accumulator: any, value: any, next: Callback ) => void;
 
 /**
 * Reducer function invoked for each element in a collection.
@@ -109,7 +109,7 @@ type QuinaryReducer = ( accumulator: any, value: any, index: number, collection:
 * @param collection - the input collection
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type Reducer = TertiaryReducer | QuaternaryReducer | QuinaryReducer;
+type Reducer = TernaryReducer | QuaternaryReducer | QuinaryReducer;
 
 /**
 *  Applies a function against an accumulator and each element in a collection and return the accumulated result.

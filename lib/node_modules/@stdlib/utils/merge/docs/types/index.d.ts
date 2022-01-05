@@ -52,7 +52,7 @@ type Binary = ( a: any, b: any ) => any;
 * @param key - object key
 * @returns merged value
 */
-type Tertiary = ( a: any, b: any, key: string | symbol ) => any;
+type Ternary = ( a: any, b: any, key: string | symbol ) => any;
 
 /**
 * Merge strategy.
@@ -62,7 +62,7 @@ type Tertiary = ( a: any, b: any, key: string | symbol ) => any;
 * @param key - object key
 * @returns merged value
 */
-type MergeStrategy = Nullary | Unary | Binary | Tertiary;
+type MergeStrategy = Nullary | Unary | Binary | Ternary;
 
 /**
 * Merges objects into a target object.

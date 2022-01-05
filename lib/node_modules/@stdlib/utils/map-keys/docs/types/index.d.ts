@@ -50,7 +50,7 @@ type Binary = ( key: string, value: any ) => string | symbol;
 * @param obj - the input object
 * @returns new key
 */
-type Tertiary = ( key: string, value: any, obj: any ) => string | symbol;
+type Ternary = ( key: string, value: any, obj: any ) => string | symbol;
 
 /**
 * Returns an object key.
@@ -60,7 +60,7 @@ type Tertiary = ( key: string, value: any, obj: any ) => string | symbol;
 * @param obj - the input object
 * @returns new key
 */
-type Transform = Nullary | Unary | Binary | Tertiary;
+type Transform = Nullary | Unary | Binary | Ternary;
 
 /**
 * Maps keys from one object to a new object having the same values.

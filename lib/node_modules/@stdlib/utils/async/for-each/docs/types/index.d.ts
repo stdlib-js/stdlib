@@ -76,7 +76,7 @@ type Binary = ( value: any, next: Callback ) => void;
 * @param index - collection index
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type Tertiary = ( value: any, index: number, next: Callback ) => void;
+type Ternary = ( value: any, index: number, next: Callback ) => void;
 
 /**
 * Function invoked for each element in a collection.
@@ -96,7 +96,7 @@ type Quaternary = ( value: any, index: number, collection: Collection, next: Cal
 * @param collection - input collection
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type Fcn = Binary | Tertiary | Quaternary;
+type Fcn = Binary | Ternary | Quaternary;
 
 /**
 * Function which invokes the provided function once for each element in a collection.

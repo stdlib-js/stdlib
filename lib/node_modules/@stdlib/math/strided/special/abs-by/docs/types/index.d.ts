@@ -54,7 +54,7 @@ type Binary = ( value: any, idx: number ) => number | void;
 * @param xi - strided index (offsetX + idx*strideX)
 * @returns accessed value
 */
-type Tertiary = ( value: any, idx: number, xi: number ) => number | void;
+type Ternary = ( value: any, idx: number, xi: number ) => number | void;
 
 /**
 * Returns an accessed value.
@@ -103,7 +103,7 @@ type Senary = ( value: any, idx: number, xi: number, yi: number, x: Collection, 
 * @param y - output array
 * @returns accessed value
 */
-type Callback = Nullary | Unary | Binary | Tertiary | Quaternary | Quinary | Senary; // tslint-disable-line max-line-length
+type Callback = Nullary | Unary | Binary | Ternary | Quaternary | Quinary | Senary; // tslint-disable-line max-line-length
 
 /**
 * Interface describing `absBy`.

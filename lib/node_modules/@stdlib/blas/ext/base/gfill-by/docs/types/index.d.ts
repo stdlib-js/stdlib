@@ -54,7 +54,7 @@ type Binary = ( value: any, aidx: number ) => any;
 * @param sidx - strided index (offset + aidx*stride)
 * @returns fill value
 */
-type Tertiary = ( value: any, aidx: number, sidx: number ) => any;
+type Ternary = ( value: any, aidx: number, sidx: number ) => any;
 
 /**
 * Returns a fill value.
@@ -76,7 +76,7 @@ type Quaternary = ( value: any, aidx: number, sidx: number, array: Collection ) 
 * @param array - input array
 * @returns fill value
 */
-type Callback = Nullary | Unary | Binary | Tertiary | Quaternary;
+type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
 
 /**
 * Interface describing `gfillBy`.

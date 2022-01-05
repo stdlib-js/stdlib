@@ -113,7 +113,7 @@ type BinaryIndicator = ( value: any, next: Callback ) => void;
 * @param index - collection index
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type TertiaryIndicator = ( value: any, index: number, next: Callback ) => void;
+type TernaryIndicator = ( value: any, index: number, next: Callback ) => void;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -133,7 +133,7 @@ type QuaternaryIndicator = ( value: any, index: number, collection: Collection, 
 * @param collection - input collection
 * @param next - a callback to be invoked after processing a collection `value`
 */
-type Indicator = Unary | BinaryIndicator | TertiaryIndicator | QuaternaryIndicator; // tslint-disable-line max-line-length
+type Indicator = Unary | BinaryIndicator | TernaryIndicator | QuaternaryIndicator; // tslint-disable-line max-line-length
 
 /**
 * Invokes an indicator function for each element in a collection.

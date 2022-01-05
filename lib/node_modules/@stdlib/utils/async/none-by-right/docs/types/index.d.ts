@@ -85,7 +85,7 @@ type BinaryPredicate = ( value: any, next: Callback ) => void;
 * @param index - collection index
 * @param next - callback which should be called once the `predicate` function has finished processing a collection `value`
 */
-type TertiaryPredicate = ( value: any, index: number, next: Callback ) => void;
+type TernaryPredicate = ( value: any, index: number, next: Callback ) => void;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -105,7 +105,7 @@ type QuaternaryPredicate = ( value: any, index: number, collection: Collection, 
 * @param collection - input collection
 * @param next - callback which should be called once the `predicate` function has finished processing a collection `value`
 */
-type Predicate = BinaryPredicate | TertiaryPredicate | QuaternaryPredicate;
+type Predicate = BinaryPredicate | TernaryPredicate | QuaternaryPredicate;
 
 /**
 * Tests whether all elements in a collection fail a test implemented by a predicate function, iterating from right to left.

@@ -81,7 +81,7 @@ type Binary = ( debug: Function, chunk: any ) => void;
 * @param chunk - data chunk
 * @param idx - chunk index
 */
-type Tertiary = ( debug: Function, chunk: any, idx: number ) => void;
+type Ternary = ( debug: Function, chunk: any, idx: number ) => void;
 
 /**
 * Callback function invoked upon receiving data.
@@ -90,7 +90,7 @@ type Tertiary = ( debug: Function, chunk: any, idx: number ) => void;
 * @param chunk - data chunk
 * @param idx - chunk index
 */
-type Callback = Nullary | Unary | Binary | Tertiary;
+type Callback = Nullary | Unary | Binary | Ternary;
 
 /**
 * Interface defining a stream constructor which is both "newable" and "callable".
