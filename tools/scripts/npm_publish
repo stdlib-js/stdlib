@@ -417,11 +417,10 @@ update_version() {
 # Updates the `@stdlib` dependencies in the root package.json to their latest versions.
 update_internal_dependencies() {
 	echo 'Updating `@stdlib` dependency versions...' >&2
-	echo 'Getting list of `@stdlib` dependencies from package.json file...' >&2
+	echo 'Getting list of `@stdlib` dependencies...' >&2
 	dependencies="$(
 		node list_stdlib_dependencies.js
 	)"
-	echo "Found ${dependencies} @stdlib dependencies." >&2
 	if [[ "$?" -ne 0 ]]; then
 		echo '' >&2
 		echo 'Error: unexpected error. Encountered an error when getting list of `@stdlib` dependencies.' >&2
