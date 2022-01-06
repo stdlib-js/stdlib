@@ -20,14 +20,14 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
 import { IterableIterator } from '@stdlib/types/iter';
 
 /**
 * Array or typed array.
 */
-type ArrayOrTypedArray = Array<any> | TypedArray;
+type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 
 /**
 * Nullary callback function.
@@ -59,6 +59,8 @@ type Callback = Nullary | Unary;
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -105,6 +107,8 @@ declare function filledarrayBy( length: number, clbk: Callback, thisArg?: any ):
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -152,6 +156,8 @@ declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -203,6 +209,8 @@ declare function filledarrayBy( iterable: IterableIterator, callback: Callback, 
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -253,7 +261,7 @@ declare function filledarrayBy( iterable: IterableIterator, dtype: string, callb
 * var arr = filledarrayBy( buf, 8, 2, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, clbk: Callback, thisArg?: any ): TypedArray; // tslint:disable-line:max-line-length
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -262,6 +270,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -292,7 +302,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * var arr = filledarrayBy( buf, 8, 2, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, dtype: string, clbk: Callback, thisArg?: any ): TypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, dtype: string, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -315,7 +325,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * var arr = filledarrayBy( buf, 8, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: Callback, thisArg?: any ): TypedArray; // tslint:disable-line:max-line-length
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -324,6 +334,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: C
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -353,7 +365,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: C
 * var arr = filledarrayBy( buf, 8, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: string, clbk: Callback, thisArg?: any ): TypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: string, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -375,7 +387,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: 
 * var arr = filledarrayBy( buf, constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: any ): TypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -384,6 +396,8 @@ declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: a
 *
 * -   `float64`: double-precision floating-point numbers (IEEE 754)
 * -   `float32`: single-precision floating-point numbers (IEEE 754)
+* -   `complex128`: double-precision complex floating-point numbers
+* -   `complex64`: single-precision complex floating-point numbers
 * -   `int32`: 32-bit two's complement signed integers
 * -   `uint32`: 32-bit unsigned integers
 * -   `int16`: 16-bit two's complement signed integers
@@ -412,7 +426,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: a
 * var arr = filledarrayBy( buf, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, dtype: string, clbk: Callback, thisArg?: any ): TypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, dtype: string, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 
 // EXPORTS //

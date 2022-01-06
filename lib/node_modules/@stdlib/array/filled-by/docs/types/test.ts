@@ -93,23 +93,23 @@ function clbk( i: number ): number {
 	filledarrayBy( it, 'uint8c', clbk, {} ); // $ExpectType ArrayOrTypedArray
 
 	const buf = new ArrayBuffer( 32 );
-	filledarrayBy( buf, clbk ); // $ExpectType TypedArray
-	filledarrayBy( buf, clbk, {} ); // $ExpectType TypedArray
+	filledarrayBy( buf, clbk ); // $ExpectType RealOrComplexTypedArray
+	filledarrayBy( buf, clbk, {} ); // $ExpectType RealOrComplexTypedArray
 
-	filledarrayBy( buf, 'uint32', clbk ); // $ExpectType TypedArray
-	filledarrayBy( buf, 'uint32', clbk, {} ); // $ExpectType TypedArray
+	filledarrayBy( buf, 'uint32', clbk ); // $ExpectType RealOrComplexTypedArray
+	filledarrayBy( buf, 'uint32', clbk, {} ); // $ExpectType RealOrComplexTypedArray
 
-	filledarrayBy( buf, 8, clbk ); // $ExpectType TypedArray
-	filledarrayBy( buf, 8, clbk, {} ); // $ExpectType TypedArray
+	filledarrayBy( buf, 8, clbk ); // $ExpectType RealOrComplexTypedArray
+	filledarrayBy( buf, 8, clbk, {} ); // $ExpectType RealOrComplexTypedArray
 
-	filledarrayBy( buf, 8, 'uint16', clbk ); // $ExpectType TypedArray
-	filledarrayBy( buf, 8, 'uint16', clbk, {} ); // $ExpectType TypedArray
+	filledarrayBy( buf, 8, 'uint16', clbk ); // $ExpectType RealOrComplexTypedArray
+	filledarrayBy( buf, 8, 'uint16', clbk, {} ); // $ExpectType RealOrComplexTypedArray
 
-	filledarrayBy( buf, 8, 2, clbk ); // $ExpectType TypedArray
-	filledarrayBy( buf, 8, 2, clbk, {} ); // $ExpectType TypedArray
+	filledarrayBy( buf, 8, 2, clbk ); // $ExpectType RealOrComplexTypedArray
+	filledarrayBy( buf, 8, 2, clbk, {} ); // $ExpectType RealOrComplexTypedArray
 
-	filledarrayBy( buf, 8, 2, 'int16', clbk ); // $ExpectType TypedArray
-	filledarrayBy( buf, 8, 2, 'int16', clbk, {} ); // $ExpectType TypedArray
+	filledarrayBy( buf, 8, 2, 'int16', clbk ); // $ExpectType RealOrComplexTypedArray
+	filledarrayBy( buf, 8, 2, 'int16', clbk, {} ); // $ExpectType RealOrComplexTypedArray
 }
 
 // The compiler throws an error if a callback function argument is not a function...
