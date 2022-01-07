@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Interface describing `gcopy`.
@@ -43,7 +43,7 @@ interface Routine {
 	* gcopy( x.length, x, 1, y, 1 );
 	* // y => [ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	( N: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray; // tslint:disable-line:max-line-length
+	( N: number, x: Collection, strideX: number, y: Collection, strideY: number ): Collection; // tslint:disable-line:max-line-length
 
 	/**
 	* Copies values from `x` into `y` using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* gcopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => [ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Collection, strideX: number, offsetX: number, y: Collection, strideY: number, offsetY: number ): Collection; // tslint:disable-line:max-line-length
 }
 
 /**
