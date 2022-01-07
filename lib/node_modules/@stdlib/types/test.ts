@@ -260,6 +260,20 @@ function cmplx128Array(): array.Complex128Array {
 	if ( v4[ 0 ] !== 0.0 ) {
 		throw new Error( 'something went wrong' );
 	}
+
+	const v5buf: array.ArrayLike<number> = new Float64Array( 10 );
+	const v5: array.AccessorArrayLike<number> = {
+		'length': 10,
+		'data': v5buf,
+		'get': ( i: number ): number => v5buf[ i ],
+		'set': ( value: number, i?: number ): void => {
+			v5buf[ i || 0 ] = value;
+			return;
+		}
+	};
+	if ( v5.length !== 10 ) {
+		throw new Error( 'something went wrong' );
+	}
 }
 
 // The compiler should not throw an error when using iterator or iterable types...
