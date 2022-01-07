@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Interface describing `gfill`.
@@ -41,7 +41,7 @@ interface Routine {
 	* gfill( x.length, 5.0, x, 1 );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	( N: number, alpha: number, x: NumericArray, stride: number ): NumericArray;
+	( N: number, alpha: any, x: Collection, stride: number ): Collection;
 
 	/**
 	* Fills a strided array with a specified scalar value using alternative indexing semantics.
@@ -59,7 +59,7 @@ interface Routine {
 	* gfill.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, stride: number, offset: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, alpha: any, x: Collection, stride: number, offset: number ): Collection; // tslint:disable-line:max-line-length
 }
 
 /**
