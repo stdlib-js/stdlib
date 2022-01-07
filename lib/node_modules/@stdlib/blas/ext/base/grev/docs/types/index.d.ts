@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Interface describing `grev`.
@@ -40,7 +40,7 @@ interface Routine {
 	* grev( x.length, x, 1 );
 	* // x => [ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	( N: number, x: NumericArray, stride: number ): NumericArray;
+	( N: number, x: Collection, stride: number ): Collection;
 
 	/**
 	* Reverses a strided array in-place. using alternative indexing semantics.
@@ -57,7 +57,7 @@ interface Routine {
 	* grev.ndarray( x.length, x, 1, 0 );
 	* // x => [ -3.0, -1.0, 0.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): NumericArray; // tslint:disable-line:max-line-length
+	ndarray( N: number, x: Collection, stride: number, offset: number ): Collection; // tslint:disable-line:max-line-length
 }
 
 /**
