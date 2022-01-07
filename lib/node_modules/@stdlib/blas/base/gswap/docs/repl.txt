@@ -15,13 +15,13 @@
     N: integer
         Number of values to swap.
 
-    x: Array<number>|TypedArray
+    x: ArrayLikeObject
         First input array.
 
     strideX: integer
         Index increment for `x`.
 
-    y: Array<number>|TypedArray
+    y: ArrayLikeObject
         Second input array.
 
     strideY: integer
@@ -29,7 +29,7 @@
 
     Returns
     -------
-    y: Array<number>|TypedArray
+    y: ArrayLikeObject
         Input array `y`.
 
     Examples
@@ -71,7 +71,7 @@
     N: integer
         Number of values to swap.
 
-    x: Array<number>|TypedArray
+    x: ArrayLikeObject
         First input array.
 
     strideX: integer
@@ -80,7 +80,7 @@
     offsetX: integer
         Starting index for `x`.
 
-    y: Array<number>|TypedArray
+    y: ArrayLikeObject
         Second input array.
 
     strideY: integer
@@ -91,7 +91,7 @@
 
     Returns
     -------
-    y: Array<number>|TypedArray
+    y: ArrayLikeObject
         Input array `y`.
 
     Examples

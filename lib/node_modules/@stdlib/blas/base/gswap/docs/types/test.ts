@@ -21,12 +21,12 @@ import gswap = require( './index' );
 
 // TESTS //
 
-// The function returns a numeric array...
+// The function returns a collection...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gswap( x.length, x, 1, y, 1 ); // $ExpectType NumericArray
+	gswap( x.length, x, 1, y, 1 ); // $ExpectType Collection
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -44,20 +44,17 @@ import gswap = require( './index' );
 	gswap( ( x: number ): number => x, x, 1, y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a numeric array...
+// The compiler throws an error if the function is provided a second argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
 	gswap( x.length, 10, 1, y, 1 ); // $ExpectError
-	gswap( x.length, '10', 1, y, 1 ); // $ExpectError
 	gswap( x.length, true, 1, y, 1 ); // $ExpectError
 	gswap( x.length, false, 1, y, 1 ); // $ExpectError
 	gswap( x.length, null, 1, y, 1 ); // $ExpectError
 	gswap( x.length, undefined, 1, y, 1 ); // $ExpectError
-	gswap( x.length, [ '1' ], 1, y, 1 ); // $ExpectError
 	gswap( x.length, {}, 1, y, 1 ); // $ExpectError
-	gswap( x.length, ( x: number ): number => x, 1, y, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
@@ -75,19 +72,16 @@ import gswap = require( './index' );
 	gswap( x.length, x, ( x: number ): number => x, y, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a fourth argument which is not a numeric array...
+// The compiler throws an error if the function is provided a fourth argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 
 	gswap( x.length, x, 1, 10, 1 ); // $ExpectError
-	gswap( x.length, x, 1, '10', 1 ); // $ExpectError
 	gswap( x.length, x, 1, true, 1 ); // $ExpectError
 	gswap( x.length, x, 1, false, 1 ); // $ExpectError
 	gswap( x.length, x, 1, null, 1 ); // $ExpectError
 	gswap( x.length, x, 1, undefined, 1 ); // $ExpectError
-	gswap( x.length, x, 1, [ '1' ], 1 ); // $ExpectError
 	gswap( x.length, x, 1, {}, 1 ); // $ExpectError
-	gswap( x.length, x, 1, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not a number...
@@ -118,12 +112,12 @@ import gswap = require( './index' );
 	gswap( x.length, x, 1, y, 1, 10 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns a numeric array...
+// Attached to main export is an `ndarray` method which returns a collection...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gswap.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType NumericArray
+	gswap.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType Collection
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -141,20 +135,17 @@ import gswap = require( './index' );
 	gswap.ndarray( ( x: number ): number => x, x, 1, 0, y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a second argument which is not a numeric array...
+// The compiler throws an error if the `ndarray` method is provided a second argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
 	gswap.ndarray( x.length, 10, 1, 0, y, 1, 0 ); // $ExpectError
-	gswap.ndarray( x.length, '10', 1, 0, y, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, true, 1, 0, y, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, false, 1, 0, y, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, null, 1, 0, y, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, undefined, 1, 0, y, 1, 0 ); // $ExpectError
-	gswap.ndarray( x.length, [ '1' ], 1, 0, y, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, {}, 1, 0, y, 1, 0 ); // $ExpectError
-	gswap.ndarray( x.length, ( x: number ): number => x, 1, 0, y, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
@@ -187,19 +178,16 @@ import gswap = require( './index' );
 	gswap.ndarray( x.length, x, 1, ( x: number ): number => x, y, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a numeric array...
+// The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a collection...
 {
 	const x = new Float64Array( 10 );
 
 	gswap.ndarray( x.length, x, 1, 0, 10, 1, 0 ); // $ExpectError
-	gswap.ndarray( x.length, x, 1, 0, '10', 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, x, 1, 0, true, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, x, 1, 0, false, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, x, 1, 0, null, 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, x, 1, 0, undefined, 1, 0 ); // $ExpectError
-	gswap.ndarray( x.length, x, 1, 0, [ '1' ], 1, 0 ); // $ExpectError
 	gswap.ndarray( x.length, x, 1, 0, {}, 1, 0 ); // $ExpectError
-	gswap.ndarray( x.length, x, 1, 0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a number...
