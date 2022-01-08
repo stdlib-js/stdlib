@@ -35,6 +35,11 @@ declare module '@stdlib/types/array' {
 	import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/object';
 
 	/**
+	* Data type.
+	*/
+	type DataType = 'float64' | 'float32' | 'int32' | 'int16' | 'int8' | 'uint32' | 'uint16' | 'uint8' | 'uint8c' | 'complex64' | 'complex128' | 'generic'; // tslint:disable-line:max-line-length
+
+	/**
 	* An array-like value.
 	*
 	* @example
