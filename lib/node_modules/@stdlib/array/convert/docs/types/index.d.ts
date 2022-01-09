@@ -20,18 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
-
-/**
-* Array data type.
-*/
-type DataType = 'float32' | 'float64' | 'generic' | 'int16' | 'int32' | 'int8' | 'uint16' | 'uint32' | 'uint8' | 'uint8c';  // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Array or typed array.
 */
-type ArrayOrTypedArray = Array<any> | TypedArray;
+type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 
 /**
 * Converts an array to an array of a different data type.

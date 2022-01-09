@@ -112,7 +112,9 @@ def main():
         "int8",
         "uint32",
         "uint16",
-        "uint8"
+        "uint8",
+        "complex64",
+        "complex128"
     ]
     iters = ITERATIONS
     n = 1
