@@ -42,14 +42,14 @@ var convertArraySame = require( '@stdlib/array/convert-same' );
 
 #### convertArraySame( x, y )
 
-Converts an `array` to the same data type as a second input `array`.
+Converts an array to the same data type as a second input array.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
+var x = [ 1.0, 2.0, 3.0 ];
 var y = new Float32Array( 0 );
 
-var x = [ 1.0, 2.0, 3.0 ];
 var out = convertArraySame( x, y );
 // returns <Float32Array>[ 1.0, 2.0, 3.0 ]
 ```
@@ -58,6 +58,8 @@ The function supports input arrays having the following data types:
 
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
+-   `complex64`: single-precision complex floating-point numbers.
+-   `complex128`: double-precision complex floating-point numbers.
 -   `generic`: values of any type.
 -   `int16`: signed 16-bit integers.
 -   `int32`: signed 32-bit integers.
@@ -90,30 +92,23 @@ The function supports input arrays having the following data types:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var dtypes = require( '@stdlib/array/dtypes' );
 var ctors = require( '@stdlib/array/ctors' );
-var randu = require( '@stdlib/random/base/randu' );
-var floor = require( '@stdlib/math/base/special/floor' );
 var convertArraySame = require( '@stdlib/array/convert-same' );
 
 // Create a generic array:
-var x = [];
-var i;
-for ( i = 0; i < 5; i++ ) {
-    x.push( floor( randu()*1.0e25 ) - 5.0e24 );
-}
+var arr = filledarrayBy( 5, 'generic', discreteUniform( -100, 100 ) );
 
 // Get a list of array data types:
 var DTYPES = dtypes();
 
 // Convert the generic array to each array data type:
-var ctor;
 var out;
-var y;
+var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-    ctor = ctors( DTYPES[ i ] );
-    y = new ctor( 0 );
-    out = convertArraySame( x, y );
+    out = convertArraySame( arr, new ctors( DTYPES[ i ] )( 0 ) );
     console.log( out );
 }
 ```

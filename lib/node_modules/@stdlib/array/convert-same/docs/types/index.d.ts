@@ -20,14 +20,13 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
-
 
 /**
 * Array or typed array.
 */
-type ArrayOrTypedArray = Array<any> | TypedArray;
+type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 
 /**
 * Converts an array to the same data type as a second input array.
@@ -39,13 +38,13 @@ type ArrayOrTypedArray = Array<any> | TypedArray;
 * @example
 * var Float64Array = require( `@stdlib/array/float64` );
 *
+* var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var y = new Float64Array( 0 );
 *
-* var x = [ 1.0, 2.0, 3.0, 4.0 ];
 * var out = convertSame( x, y );
 * // returns <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
 */
-declare function convertSame( x: Collection, y: ArrayOrTypedArray ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function convertSame( x: Collection, y: ArrayOrTypedArray ): ArrayOrTypedArray; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
