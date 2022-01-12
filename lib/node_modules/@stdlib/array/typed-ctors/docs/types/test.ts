@@ -18,6 +18,7 @@
 
 import ctors = require( './index' );
 
+
 // TESTS //
 
 // The function returns a function or null..

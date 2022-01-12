@@ -53,6 +53,8 @@ The function returns constructors for the following data types:
 
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
+-   `complex64`: single-precision complex floating-point numbers.
+-   `complex128`: double-precision complex floating-point numbers.
 -   `int16`: signed 16-bit integers.
 -   `int32`: signed 32-bit integers.
 -   `int8`: signed 8-bit integers.
