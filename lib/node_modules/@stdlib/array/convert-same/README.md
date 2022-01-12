@@ -108,7 +108,7 @@ var DTYPES = dtypes();
 var out;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
-    out = convertArraySame( arr, new ctors( DTYPES[ i ] )( 0 ) );
+    out = convertArraySame( arr, new ( ctors( DTYPES[ i ] ) )( 0 ) );
     console.log( out );
 }
 ```
