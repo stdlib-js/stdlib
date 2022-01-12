@@ -63,9 +63,24 @@ var len = arr.length;
 // returns 10
 ```
 
+#### Complex64Array( complexarray )
+
+Creates a 64-bit complex number array from another complex number array.
+
+```javascript
+var arr1 = new Complex64Array( [ 1.0, -1.0, 2.0, -2.0 ] ); // [ re, im, re, im ]
+// returns <Complex64Array>
+
+var arr2 = new Complex64Array( arr1 );
+// returns <Complex64Array>
+
+var len = arr2.length;
+// returns 2
+```
+
 #### Complex64Array( typedarray )
 
-Creates a 64-bit complex number array from a [typed array][@stdlib/array/typed] containing interleaves real and imaginary components.
+Creates a 64-bit complex number array from a [typed array][@stdlib/array/typed] containing interleaved real and imaginary components.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -82,7 +97,7 @@ var len = arr.length;
 
 #### Complex64Array( obj )
 
-Creates a 64-bit complex number array from an array-like `object` or iterable.
+Creates a 64-bit complex number array from an array-like object or iterable.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
@@ -242,7 +257,7 @@ var len = arr.length;
 
 #### Complex64Array.from( src\[, clbk\[, thisArg]] )
 
-Creates a new 64-bit complex number array from an array-like `object` or an iterable.
+Creates a new 64-bit complex number array from an array-like object or an iterable.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
@@ -262,7 +277,7 @@ len = arr.length;
 // returns 1
 ```
 
-The iterator returned by an iterable must return either a complex number or an array-like `object` containing a real and imaginary component.
+The iterator returned by an iterable must return either a complex number or an array-like object containing a real and imaginary component.
 
 ```javascript
 var ITERATOR_SYMBOL = require( '@stdlib/symbol/iterator' );
@@ -326,7 +341,7 @@ if ( ITERATOR_SYMBOL === null ) {
 }
 ```
 
-To invoke a function for each `src` value, provide a callback function. If `src` is an iterable or an array-like `object` containing complex numbers, the callback must return either a complex number
+To invoke a function for each `src` value, provide a callback function. If `src` is an iterable or an array-like object containing complex numbers, the callback must return either a complex number
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
@@ -357,7 +372,7 @@ var im = imagf( z );
 // returns -2.0
 ```
 
-or an array-like `object` containing real and imaginary components
+or an array-like object containing real and imaginary components
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -406,7 +421,7 @@ im = imagf( z );
 // returns -4.0
 ```
 
-If `src` is an array-like `object` containing interleaved real and imaginary components, the callback is invoked for each component and should return the transformed component value.
+If `src` is an array-like object containing interleaved real and imaginary components, the callback is invoked for each component and should return the transformed component value.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -440,8 +455,8 @@ var im = imagf( z );
 
 A callback function is provided two arguments:
 
--   `value`: source value
--   `index`: source index
+-   **value**: source value.
+-   **index**: source index.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -507,6 +522,8 @@ Copies a sequence of elements within the array starting at `start` and ending at
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 4 );
 
@@ -517,29 +534,55 @@ arr.set( new Complex64( 3.0, -3.0 ), 2 );
 arr.set( new Complex64( 4.0, -4.0 ), 3 );
 
 // Get the first array element:
-var z = arr.get( [ 0.0, 0.0 ], 0 );
-// returns [ 1.0, -1.0 ]
+var z = arr.get( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 1.0
+
+var im = imagf( z );
+// returns -1.0
 
 // Get the second array element:
-z = arr.get( [ 0.0, 0.0 ], 1 );
-// returns [ 2.0, -2.0 ]
+z = arr.get( 1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 2.0
+
+im = imagf( z );
+// returns -2.0
 
 // Copy the last two elements to the first two elements:
 arr.copyWithin( 0, 2 );
 
 // Get the first array element:
-z = arr.get( [ 0.0, 0.0 ], 0 );
-// returns [ 3.0, -3.0 ]
+z = arr.get( 0 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 3.0
+
+im = imagf( z );
+// returns -3.0
 
 // Get the second array element:
-z = arr.get( [ 0.0, 0.0 ], 1 );
-// returns [ 4.0, -4.0 ]
+z = arr.get( 1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 4.0
+
+im = imagf( z );
+// returns -4.0
 ```
 
 By default, `end` equals the number of array elements (i.e., one more than the last array index). To limit the sequence length, provide an `end` argument.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 4 );
 
@@ -550,29 +593,55 @@ arr.set( new Complex64( 3.0, -3.0 ), 2 );
 arr.set( new Complex64( 4.0, -4.0 ), 3 );
 
 // Get the third array element:
-var z = arr.get( [ 0.0, 0.0 ], 2 );
-// returns [ 3.0, -3.0 ]
+var z = arr.get( 2 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 3.0
+
+var im = imagf( z );
+// returns -3.0
 
 // Get the last array element:
-z = arr.get( [ 0.0, 0.0 ], 3 );
-// returns [ 4.0, -4.0 ]
+z = arr.get( 3 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 4.0
+
+im = imagf( z );
+// returns -4.0
 
 // Copy the first two elements to the last two elements:
 arr.copyWithin( 2, 0, 2 );
 
 // Get the third array element:
-z = arr.get( [ 0.0, 0.0 ], 2 );
-// returns [ 1.0, -1.0 ]
+z = arr.get( 2 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 1.0
+
+im = imagf( z );
+// returns -1.0
 
 // Get the last array element:
-z = arr.get( [ 0.0, 0.0 ], 3 );
-// returns [ 2.0, -2.0 ]
+z = arr.get( 3 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 2.0
+
+im = imagf( z );
+// returns -2.0
 ```
 
 When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last array element. The following example achieves the same behavior as the previous example:
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 4 );
 
@@ -583,23 +652,47 @@ arr.set( new Complex64( 3.0, -3.0 ), 2 );
 arr.set( new Complex64( 4.0, -4.0 ), 3 );
 
 // Get the third array element:
-var z = arr.get( [ 0.0, 0.0 ], 2 );
-// returns [ 3.0, -3.0 ]
+var z = arr.get( 2 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 3.0
+
+var im = imagf( z );
+// returns -3.0
 
 // Get the last array element:
-z = arr.get( [ 0.0, 0.0 ], 3 );
-// returns [ 4.0, -4.0 ]
+z = arr.get( 3 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 4.0
+
+im = imagf( z );
+// returns -4.0
 
 // Copy the first two elements to the last two elements using negative indices:
 arr.copyWithin( -2, -4, -2 );
 
 // Get the third array element:
-z = arr.get( [ 0.0, 0.0 ], 2 );
-// returns [ 1.0, -1.0 ]
+z = arr.get( 2 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 1.0
+
+im = imagf( z );
+// returns -1.0
 
 // Get the last array element:
-z = arr.get( [ 0.0, 0.0 ], 3 );
-// returns [ 2.0, -2.0 ]
+z = arr.get( 3 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 2.0
+
+im = imagf( z );
+// returns -2.0
 ```
 
 <a name="method-entries"></a>
@@ -657,7 +750,7 @@ var bool = it.next().done;
 
 <a name="method-get"></a>
 
-#### Complex64Array.prototype.get( \[out,] i )
+#### Complex64Array.prototype.get( i )
 
 Returns an array element located at position (index) `i`.
 
@@ -681,25 +774,6 @@ var im = imagf( z );
 // returns -1.0
 ```
 
-By default, the method returns a [64-bit complex number][@stdlib/complex/float32]. To return real and imaginary components separately, provide an array-like `object` as the first argument.
-
-```javascript
-var arr = new Complex64Array( 10 );
-
-// Set the first element:
-arr.set( [ 1.0, -1.0 ], 0 );
-
-// Define an output array:
-var out = [ 0.0, 0.0 ];
-
-// Get the first element:
-var z = arr.get( out, 0 );
-// returns [ 1.0, -1.0 ]
-
-var bool = ( out === z );
-// returns true
-```
-
 If provided an out-of-bounds index, the method returns `undefined`.
 
 ```javascript
@@ -707,14 +781,6 @@ var arr = new Complex64Array( 10 );
 
 var z = arr.get( 100 );
 // returns undefined
-
-var out = [ 0.0, 0.0 ];
-
-z = arr.get( out, 100 );
-// returns undefined
-
-var bool = ( out === z );
-// returns false
 ```
 
 <a name="method-set"></a>
@@ -725,44 +791,74 @@ Sets one or more array elements.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 10 );
 
 // Get the first element:
-var z = arr.get( [ 0.0, 0.0 ], 0 );
-// returns [ 0.0, 0.0 ]
+var z = arr.get( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 0.0
+
+var im = imagf( z );
+// returns 0.0
 
 // Set the first element:
 arr.set( new Complex64( 1.0, -1.0 ) );
 
 // Get the first element:
-z = arr.get( [ 0.0, 0.0 ], 0 );
-// returns [ 1.0, -1.0 ]
+z = arr.get( 0 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 1.0
+
+im = imagf( z );
+// returns -1.0
 ```
 
 By default, the method sets array elements starting at position (index) `i = 0`. To set elements starting elsewhere in the array, provide an index argument `i`.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 10 );
 
 // Get the fifth element:
-var z = arr.get( [ 0.0, 0.0 ], 4 );
-// returns [ 0.0, 0.0 ]
+var z = arr.get( 4 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 0.0
+
+var im = imagf( z );
+// returns 0.0
 
 // Set the fifth element:
 arr.set( new Complex64( 1.0, -1.0 ), 4 );
 
 // Get the fifth element:
-z = arr.get( [ 0.0, 0.0 ], 4 );
-// returns [ 1.0, -1.0 ]
+z = arr.get( 4 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 1.0
+
+im = imagf( z );
+// returns -1.0
 ```
 
-In addition to providing a complex number, to set one or more array elements, provide an array-like `object` containing either complex numbers
+In addition to providing a complex number, to set one or more array elements, provide an array-like object containing either complex numbers
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -777,14 +873,22 @@ var buf = [
 arr.set( buf, 4 );
 
 // Get the sixth element:
-var z = arr.get( [ 0.0, 0.0 ], 5 );
-// returns [ 2.0, -2.0 ]
+var z = arr.get( 5 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 2.0
+
+var im = imagf( z );
+// returns -2.0
 ```
 
 or interleaved real and imaginary components
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
+var realf = require( '@stdlib/complex/realf' );
+var imagf = require( '@stdlib/complex/imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -795,8 +899,14 @@ var buf = new Float32Array( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ] );
 arr.set( buf, 4 );
 
 // Get the sixth element:
-var z = arr.get( [ 0.0, 0.0 ], 5 );
-// returns [ 2.0, -2.0 ]
+var z = arr.get( 5 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 2.0
+
+var im = imagf( z );
+// returns -2.0
 ```
 
 A few notes:
@@ -843,15 +953,12 @@ var Complex64 = require( '@stdlib/complex/float32' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Complex64Array = require( '@stdlib/array/complex64' );
 
-var arr;
-var out;
-
 // Create a complex array by specifying a length:
-out = new Complex64Array( 3 );
+var out = new Complex64Array( 3 );
 console.log( out );
 
 // Create a complex array from an array of complex numbers:
-arr = [
+var arr = [
     new Complex64( 1.0, -1.0 ),
     new Complex64( -3.14, 3.14 ),
     new Complex64( 0.5, 0.5 )
