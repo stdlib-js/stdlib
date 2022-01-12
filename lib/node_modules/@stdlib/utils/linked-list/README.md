@@ -352,14 +352,8 @@ v = list.pop();
 ```javascript
 var linkedList = require( '@stdlib/utils/linked-list' );
 
-var list;
-var iter;
-var len;
-var v;
-var i;
-
 // Create a new linked list:
-list = linkedList();
+var list = linkedList();
 
 // Add some values to the list:
 list.push( 'foo' );
@@ -368,14 +362,14 @@ list.push( 'beep' );
 list.push( 'boop' );
 
 // Peek at the first and last list values:
-v = list.first().value;
+var v = list.first().value;
 // returns 'foo'
 
 v = list.last().value;
 // returns 'boop'
 
 // Inspect the list length:
-len = list.length;
+var len = list.length;
 // returns 4
 
 // Remove the last list value:
@@ -387,7 +381,8 @@ len = list.length;
 // returns 3
 
 // Iterate over the list:
-iter = list.iterator();
+var iter = list.iterator();
+var i;
 for ( i = 0; i < len; i++ ) {
     console.log( 'List value #%d: %s', i+1, iter.next().value );
 }
