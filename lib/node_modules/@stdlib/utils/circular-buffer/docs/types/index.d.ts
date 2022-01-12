@@ -161,7 +161,7 @@ declare class CircularBuffer {
 	iterator( niters?: number ): IterableIterator;
 
 	/**
-	* Circular buffer length (capacity).
+	* Circular buffer length (i.e., capacity).
 	*
 	* @example
 	* var b = new CircularBuffer( 4 );
