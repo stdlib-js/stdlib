@@ -25,7 +25,7 @@
 *
 * @example
 * var list = dtypes();
-* // returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+* // e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex128', 'complex64' ]
 */
 declare function dtypes(): Array<string>;
 
