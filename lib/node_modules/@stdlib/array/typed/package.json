@@ -70,6 +70,8 @@
     "int8array",
     "uint8array",
     "uint8clampedarray",
+    "complex64array",
+    "complex128array",
     "float64",
     "double",
     "precision",
@@ -91,6 +93,8 @@
     "uint8c",
     "clamped",
     "short",
-    "long"
+    "long",
+    "complex",
+    "cmplx"
   ]
 }

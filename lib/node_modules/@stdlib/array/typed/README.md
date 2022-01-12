@@ -53,6 +53,8 @@ The function recognizes the following data types:
 
 -   `float64`: double-precision floating-point numbers (IEEE 754)
 -   `float32`: single-precision floating-point numbers (IEEE 754)
+-   `complex128`: double-precision complex floating-point numbers
+-   `complex64`: single-precision complex floating-point numbers
 -   `int32`: 32-bit two's complement signed integers
 -   `uint32`: 32-bit unsigned integers
 -   `int16`: 16-bit two's complement signed integers
@@ -97,7 +99,7 @@ var arr3 = typedarray( arr1, 'int32' );
 
 #### typedarray( obj\[, dtype] )
 
-Creates a [typed array][mdn-typed-array] from an array-like `object` or iterable.
+Creates a [typed array][mdn-typed-array] from an array-like object or iterable.
 
 ```javascript
 var arr1 = typedarray( [ 0.5, 0.5, 0.5 ] );
@@ -106,6 +108,8 @@ var arr1 = typedarray( [ 0.5, 0.5, 0.5 ] );
 var arr2 = typedarray( [ 0.5, 0.5, 0.5 ], 'float32' );
 // returns <Float32Array>[ 0.5, 0.5, 0.5 ]
 ```
+
+If `dtype` is complex number data type and an array-like object contains interleaved real and imaginary components, the array-like object must have a length which is a multiple of two.
 
 #### typedarray( buffer\[, byteOffset\[, length]]\[, dtype] )
 
@@ -142,6 +146,10 @@ var arr6 = typedarray( buf, 10, 4, 'int16' );
 
 <section class="notes">
 
+## Notes
+
+-   When providing a complex number array, if `dtype` is unspecified or the specified data type is not a complex number data type, the returned array contains interleaved real and imaginary components.
+
 </section>
 
 <!-- /.notes -->
@@ -158,10 +166,9 @@ var arr6 = typedarray( buf, 10, 4, 'int16' );
 var randu = require( '@stdlib/random/base/randu' );
 var typedarray = require( '@stdlib/array/typed' );
 
-var arr;
-var i;
+var arr = typedarray( 100, 'float64' );
 
-arr = typedarray( 100, 'float64' );
+var i;
 for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = randu() * 100.0;
 }

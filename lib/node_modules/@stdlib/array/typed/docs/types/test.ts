@@ -23,10 +23,10 @@ import typedarray = require( './index' );
 
 // The function returns a typed array..
 {
-	typedarray(); // $ExpectType TypedArray
-	typedarray( 'float32' ); // $ExpectType TypedArray
-	typedarray( 10, 'float32' ); // $ExpectType TypedArray
-	typedarray( [ 1, 2, 3 ], 'int32' ); // $ExpectType TypedArray
+	typedarray(); // $ExpectType RealOrComplexTypedArray
+	typedarray( 'float32' ); // $ExpectType RealOrComplexTypedArray
+	typedarray( 10, 'float32' ); // $ExpectType RealOrComplexTypedArray
+	typedarray( [ 1, 2, 3 ], 'int32' ); // $ExpectType RealOrComplexTypedArray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a data type, number, array-like object, or typed array...
