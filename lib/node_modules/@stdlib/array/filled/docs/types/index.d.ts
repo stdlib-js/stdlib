@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
 import { IterableIterator } from '@stdlib/types/iter';
 
@@ -48,7 +48,6 @@ type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 * -   `generic`: generic JavaScript values
 *
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -59,7 +58,7 @@ type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
 * var arr = filledarray( 'float32' );
 * // returns <Float32Array>
 */
-declare function filledarray( dtype?: string ): ArrayOrTypedArray;
+declare function filledarray( dtype?: DataType ): ArrayOrTypedArray;
 
 /**
 * Creates a filled array having a specified `length`.
@@ -67,7 +66,6 @@ declare function filledarray( dtype?: string ): ArrayOrTypedArray;
 * @param value - fill value
 * @param length - array length
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -78,7 +76,7 @@ declare function filledarray( dtype?: string ): ArrayOrTypedArray;
 * var arr = filledarray( 1.0, 5, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, length: number, dtype?: string ): ArrayOrTypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, length: number, dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Creates a filled array from another `array`.
@@ -86,7 +84,6 @@ declare function filledarray( value: any, length: number, dtype?: string ): Arra
 * @param value - fill value
 * @param array - typed array or array-like object
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -97,7 +94,7 @@ declare function filledarray( value: any, length: number, dtype?: string ): Arra
 * var arr = filledarray( 1.0, [ 5.0, -3.0, 2.0 ], 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, array: Collection, dtype?: string ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, array: Collection, dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Creates a filled array from an iterable.
@@ -105,7 +102,6 @@ declare function filledarray( value: any, array: Collection, dtype?: string ): A
 * @param value - fill value
 * @param iterable - iterable
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -126,7 +122,7 @@ declare function filledarray( value: any, array: Collection, dtype?: string ): A
 * var arr = filledarray( 1.0, it, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, iterable: IterableIterator, dtype?: string ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, iterable: IterableIterator, dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -140,7 +136,6 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: st
 * @param byteOffset - byte offset
 * @param length - view length
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -157,7 +152,7 @@ declare function filledarray( value: any, iterable: IterableIterator, dtype?: st
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: string ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: DataType ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -170,7 +165,6 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * @param buffer - `ArrayBuffer`
 * @param byteOffset - byte offset
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -187,7 +181,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: string ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
+declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: number, dtype?: DataType ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer`.
@@ -199,7 +193,6 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * @param value - fill value
 * @param buffer - `ArrayBuffer`
 * @param dtype - data type (default: 'float64')
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -216,7 +209,7 @@ declare function filledarray( value: any, buffer: ArrayBuffer, byteOffset: numbe
 * var arr = filledarray( 1.0, buf, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: string ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarray( value: any, buffer: ArrayBuffer, dtype?: DataType ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 
 // EXPORTS //
