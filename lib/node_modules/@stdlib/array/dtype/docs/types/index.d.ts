@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray } from '@stdlib/types/array';
 
 /**
 * Returns the data type of an array.
@@ -39,7 +39,7 @@ import { TypedArray } from '@stdlib/types/array';
 * var dt = dtype( 'beep' );
 * // returns null
 */
-declare function dtype( value: TypedArray | Array<any> ): string | null;
+declare function dtype( value: Array<any> | RealOrComplexTypedArray ): string | null; // tslint-disable-line max-line-length
 
 
 // EXPORTS //

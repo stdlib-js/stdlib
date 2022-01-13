@@ -18,6 +18,7 @@
 
 import dtype = require( './index' );
 
+
 // TESTS //
 
 // The function returns a string or null..
