@@ -274,6 +274,21 @@ function cmplx128Array(): array.Complex128Array {
 	if ( v5.length !== 10 ) {
 		throw new Error( 'something went wrong' );
 	}
+
+	const v6: array.IntegerTypedArray = new Int32Array( 10 );
+	if ( v6[ 0 ] !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v7: array.SignedIntegerTypedArray = new Int32Array( 10 );
+	if ( v7[ 0 ] !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
+
+	const v8: array.UnsignedIntegerTypedArray = new Uint32Array( 10 );
+	if ( v8[ 0 ] !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
 }
 
 // The compiler should not throw an error when using iterator or iterable types...

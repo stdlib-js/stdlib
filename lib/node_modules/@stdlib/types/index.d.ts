@@ -45,6 +45,26 @@ declare module '@stdlib/types/array' {
 	type RealDataType = 'float64' | 'float32' | 'int32' | 'int16' | 'int8' | 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // tslint:disable-line:max-line-length
 
 	/**
+	* Data type for floating-point typed arrays.
+	*/
+	type FloatDataType = 'float64' | 'float32';
+
+	/**
+	* Data type for integer typed arrays.
+	*/
+	type IntegerDataType = 'int32' | 'int16' | 'int8' | 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // tslint:disable-line:max-line-length
+
+	/**
+	* Data type for signed integer typed arrays.
+	*/
+	type SignedIntegerDataType = 'int32' | 'int16' | 'int8';
+
+	/**
+	* Data type for unsigned integer typed arrays.
+	*/
+	type UnsignedIntegerDataType = 'uint32' | 'uint16' | 'uint8' | 'uint8c';
+
+	/**
 	* Data type for complex number typed arrays.
 	*/
 	type ComplexDataType = 'complex64' | 'complex128';
@@ -152,6 +172,22 @@ declare module '@stdlib/types/array' {
 	* const y: IntegerTypedArray = new Int32Array( 10 );
 	*/
 	type IntegerTypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array; // tslint:disable-line:max-line-length
+
+	/**
+	* A signed integer typed array.
+	*
+	* @example
+	* const x: SignedIntegerTypedArray = new Int32Array( 10 );
+	*/
+	type SignedIntegerTypedArray = Int8Array | Int16Array | Int32Array;
+
+	/**
+	* An unsigned integer typed array.
+	*
+	* @example
+	* const x: UnsignedIntegerTypedArray = new Uint32Array( 10 );
+	*/
+	type UnsignedIntegerTypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array; // tslint:disable-line:max-line-length
 
 	/**
 	* A floating-point typed array.
