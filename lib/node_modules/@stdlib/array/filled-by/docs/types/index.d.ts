@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
 import { IterableIterator } from '@stdlib/types/iter';
 
@@ -71,7 +71,6 @@ type Callback = Nullary | Unary;
 * -   `generic`: generic JavaScript values
 *
 * @param dtype - data type
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -82,7 +81,7 @@ type Callback = Nullary | Unary;
 * var arr = filledarrayBy( 'float32' );
 * // returns <Float32Array>
 */
-declare function filledarrayBy( dtype?: string ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( dtype?: DataType ): ArrayOrTypedArray; // tslint:disable-line:unified-signatures
 
 /**
 * Creates a filled array according to a provided callback function and having a specified `length`.
@@ -122,7 +121,6 @@ declare function filledarrayBy( length: number, clbk: Callback, thisArg?: any ):
 * @param dtype - data type
 * @param clbk - callback function
 * @param thisArg - callback function execution context
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -131,7 +129,7 @@ declare function filledarrayBy( length: number, clbk: Callback, thisArg?: any ):
 * var arr = filledarrayBy( 5, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( length: number, dtype: string, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( length: number, dtype: DataType, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Creates a filled array from another `array` according to a provided callback function.
@@ -171,7 +169,6 @@ declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any
 * @param dtype - data type
 * @param clbk - callback function
 * @param thisArg - callback function execution context
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -180,7 +177,7 @@ declare function filledarrayBy( array: Collection, clbk: Callback, thisArg?: any
 * var arr = filledarrayBy( [ 5.0, -3.0, 2.0 ], 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( array: Collection, dtype: string, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( array: Collection, dtype: DataType, clbk: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Creates a filled array from an iterable according to a callback function.
@@ -224,7 +221,6 @@ declare function filledarrayBy( iterable: IterableIterator, callback: Callback, 
 * @param dtype - data type
 * @param clbk - callback function
 * @param thisArg - callback function execution context
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -237,7 +233,7 @@ declare function filledarrayBy( iterable: IterableIterator, callback: Callback, 
 * var arr = filledarrayBy( it, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( iterable: IterableIterator, dtype: string, callback: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( iterable: IterableIterator, dtype: DataType, callback: Callback, thisArg?: any ): ArrayOrTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -291,7 +287,6 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * @param dtype - data type
 * @param clbk - callback function
 * @param thisArg - callback function execution context
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -302,7 +297,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length:
 * var arr = filledarrayBy( buf, 8, 2, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, dtype: string, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, length: number, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -354,7 +349,6 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: C
 * @param dtype - data type
 * @param clbk - callback function
 * @param thisArg - callback function execution context
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -365,7 +359,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, clbk: C
 * var arr = filledarrayBy( buf, 8, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: string, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, byteOffset: number, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 /**
 * Returns a filled typed array view of an `ArrayBuffer` according to a provided callback function.
@@ -415,7 +409,6 @@ declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: a
 * @param dtype - data type
 * @param clbk - callback function
 * @param thisArg - callback function execution context
-* @throws must provide a recognized data type
 * @returns filled array
 *
 * @example
@@ -426,7 +419,7 @@ declare function filledarrayBy( buffer: ArrayBuffer, clbk: Callback, thisArg?: a
 * var arr = filledarrayBy( buf, 'float64', constantFunction( 1.0 ) );
 * // returns <Float64Array>[ 1.0, 1.0, 1.0, 1.0 ]
 */
-declare function filledarrayBy( buffer: ArrayBuffer, dtype: string, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
+declare function filledarrayBy( buffer: ArrayBuffer, dtype: DataType, clbk: Callback, thisArg?: any ): RealOrComplexTypedArray; // tslint:disable-line:max-line-length unified-signatures
 
 
 // EXPORTS //
