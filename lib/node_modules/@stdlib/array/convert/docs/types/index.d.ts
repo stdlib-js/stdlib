@@ -20,13 +20,181 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealOrComplexTypedArray, DataType } from '@stdlib/types/array';
+import { RealOrComplexTypedArray, Complex128Array, Complex64Array, DataType } from '@stdlib/types/array';
 import { Collection } from '@stdlib/types/object';
 
 /**
 * Array or typed array.
 */
 type ArrayOrTypedArray = Array<any> | RealOrComplexTypedArray;
+
+/**
+* Converts an array to a `Float64Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'float64' );
+* // returns <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+*/
+declare function convert( x: Collection, dtype: 'float64' ): Float64Array;
+
+/**
+* Converts an array to a `Float32Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'float32' );
+* // returns <Float32Array>[ 1.0, 2.0, 3.0, 4.0 ]
+*/
+declare function convert( x: Collection, dtype: 'float32' ): Float32Array;
+
+/**
+* Converts an array to an `Int32Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'int32' );
+* // returns <Int32Array>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'int32' ): Int32Array;
+
+/**
+* Converts an array to an `Int16Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'int16' );
+* // returns <Int16Array>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'int16' ): Int16Array;
+
+/**
+* Converts an array to an `Int8Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'int8' );
+* // returns <Int8Array>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'int8' ): Int8Array;
+
+/**
+* Converts an array to a `Uint32Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'uint32' );
+* // returns <Uint32Array>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'uint32' ): Uint32Array;
+
+/**
+* Converts an array to a `Uint16Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'uint16' );
+* // returns <Uint16Array>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'uint16' ): Uint16Array;
+
+/**
+* Converts an array to a `Uint8Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'uint8' );
+* // returns <Uint8Array>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'uint8' ): Uint8Array;
+
+/**
+* Converts an array to a `Uint8ClampedArray`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'uint8c' );
+* // returns <Uint8ClampedArray>[ 1, 2, 3, 4 ]
+*/
+declare function convert( x: Collection, dtype: 'uint8c' ): Uint8ClampedArray;
+
+/**
+* Converts an array to a `Complex128Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'complex128' );
+* // returns <Complex128>
+*/
+declare function convert( x: Collection, dtype: 'complex128' ): Complex128Array;
+
+/**
+* Converts an array to a `Complex64Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'complex64' );
+* // returns <Complex64>
+*/
+declare function convert( x: Collection, dtype: 'complex64' ): Complex64Array;
+
+/**
+* Converts an array to an `Array`.
+*
+* @param x - array to convert
+* @param dtype - output data type
+* @returns output array
+*
+* @example
+* var arr = [ 1.0, 2.0, 3.0, 4.0 ];
+* var out = convert( arr, 'generic' );
+* // returns [ 1.0, 2.0, 3.0, 4.0 ]
+*/
+declare function convert( x: Collection, dtype: 'generic' ): Array<any>;
 
 /**
 * Converts an array to an array of a different data type.

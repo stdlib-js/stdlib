@@ -23,8 +23,17 @@ import convert = require( './index' );
 
 // The function returns an array or typed array...
 {
-	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int32' ); // $ExpectType ArrayOrTypedArray
-	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'float32' ); // $ExpectType ArrayOrTypedArray
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'float64' ); // $ExpectType Float64Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'float32' ); // $ExpectType Float32Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int32' ); // $ExpectType Int32Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int16' ); // $ExpectType Int16Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'int8' ); // $ExpectType Int8Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'uint32' ); // $ExpectType Uint32Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'uint16' ); // $ExpectType Uint16Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'uint8' ); // $ExpectType Uint8Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'uint8c' ); // $ExpectType Uint8ClampedArray
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'complex128' ); // $ExpectType Complex128Array
+	convert( [ 1.0, 2.0, 3.0, 4.0 ], 'complex64' ); // $ExpectType Complex64Array
 }
 
 // The compiler throws an error if the function is provided a first argument which is not array-like...
