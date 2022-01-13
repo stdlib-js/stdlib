@@ -180,7 +180,7 @@ arr = filledarray( 1, buf, 10, 4, 'int16' );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var dtypes = require( '@stdlib/array/typed-dtypes' );
+var dtypes = require( '@stdlib/array/typed-real-dtypes' );
 var filledarray = require( '@stdlib/array/filled' );
 
 // Generate a random number:
