@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { TypedArray, ComplexTypedArray } from '@stdlib/types/array';
+import { RealOrComplexTypedArray } from '@stdlib/types/array';
 
 /**
 * Typed array data type.
@@ -61,7 +61,7 @@ interface JSONRepresentation {
 * var json = toJSON( arr );
 * // returns { 'type': 'Float64Array', 'data': [ 5.0, 3.0 ] }
 */
-declare function toJSON( arr: TypedArray | ComplexTypedArray ): JSONRepresentation; // tslint:disable-line:max-line-length
+declare function toJSON( arr: RealOrComplexTypedArray ): JSONRepresentation;
 
 
 // EXPORTS //
