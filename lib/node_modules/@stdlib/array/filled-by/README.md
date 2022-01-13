@@ -206,7 +206,7 @@ arr = filledarrayBy( buf, 10, 4, 'int16', clbk );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var dtypes = require( '@stdlib/array/typed-dtypes' );
+var dtypes = require( '@stdlib/array/typed-real-dtypes' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 
 // Create a pseudorandom number generator:
