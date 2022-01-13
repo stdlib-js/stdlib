@@ -18,6 +18,10 @@
 
 // TypeScript Version: 2.0
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/array';
+
 /**
 * Returns a list of array data types.
 *
@@ -27,7 +31,7 @@
 * var list = dtypes();
 * // returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex64', 'complex128' ]
 */
-declare function dtypes(): Array<string>;
+declare function dtypes(): Array<DataType>;
 
 
 // EXPORTS //
