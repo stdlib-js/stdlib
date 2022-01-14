@@ -296,7 +296,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 /**
 * Interface defining a 64-bit complex number array constructor which is both "newable" and "callable".
 */
-interface Constructor {
+interface Complex64ArrayConstructor {
 	/**
 	* 64-bit complex number array constructor.
 	*
@@ -580,7 +580,7 @@ interface Constructor {
 * var len = arr.length;
 * // returns 2
 */
-declare var ctor: Constructor;
+declare var ctor: Complex64ArrayConstructor;
 
 
 // EXPORTS //
