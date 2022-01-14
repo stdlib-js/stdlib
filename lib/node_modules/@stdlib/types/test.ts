@@ -294,6 +294,11 @@ function cmplx128Array(): array.Complex128Array {
 	if ( v9[ 0 ] !== 0 ) {
 		throw new Error( 'something went wrong' );
 	}
+
+	const v10: array.RealTypedArray = new Uint32Array( 10 );
+	if ( v10[ 0 ] !== 0 ) {
+		throw new Error( 'something went wrong' );
+	}
 }
 
 // The compiler should not throw an error when using iterator or iterable types...
